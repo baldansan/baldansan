@@ -2,7 +2,7 @@
 
 **Project:** Buunduu Surtsgaay  
 **Checkpoint date:** May 2026  
-**Status:** MVP demo complete; Phase 2 closed — ready for Phase 3 (Supabase)
+**Status:** MVP demo complete; Phase 2 closed; Phase 3 Step 1 (schema planning) complete
 
 ---
 
@@ -105,10 +105,20 @@ Lesson pages are **data-driven** via dynamic segments. Content lives under `cont
 
 ---
 
+## Phase 3 Step 1 — Supabase schema planning completed
+
+- SQL migration: `supabase/migrations/001_initial_schema.sql` (8 tables, indexes, `updated_at` triggers)
+- Docs: `DATABASE_SCHEMA.md`, `supabase/README.md`, `supabase/SEED_PLAN.md`
+- App unchanged: no Supabase client, auth, or UI/route changes; Lessons 1–3 still from local TypeScript
+
+---
+
 ## Next recommended tasks
 
-1. Dynamic `/courses/[courseId]` route (optional)
-2. Supabase schema + seed from `content/`
+1. Create Supabase project and run `001_initial_schema.sql` in SQL Editor
+2. Seed HSK5 + Lessons 1–3 per `supabase/SEED_PLAN.md`
+3. Dynamic `/courses/[courseId]` route (optional)
+4. Supabase client + replace `lib/content.ts` reads (Phase 3 later steps)
 3. Shared `AppHeader` component
 4. Real video provider
 

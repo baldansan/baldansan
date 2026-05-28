@@ -54,11 +54,18 @@ Phased roadmap from MVP demo to production product.
 
 **Goal:** Persistent, queryable content and progress.
 
-**Tasks:**
-- Design tables: `courses`, `lessons`, `subtitles`, `vocabulary`, `quiz_questions`, `user_progress`, `user_vocabulary`
-- Seed DB from MVP mock data
-- Replace `data/*.ts` reads with Supabase client (server or RSC)
-- Store lesson completion %, quiz scores, learned vocabulary per user (anonymous or authenticated)
+**Phase 3 Step 1 — Completed:** Supabase schema planning (no app connection yet).
+
+- `supabase/migrations/001_initial_schema.sql` — `courses`, `lessons`, `subtitle_lines`, `vocabulary_words`, `quiz_questions`, `user_lesson_progress`, `user_vocabulary_progress`, `user_quiz_attempts`
+- `DATABASE_SCHEMA.md`, `supabase/README.md`, `supabase/SEED_PLAN.md`
+- RLS deferred to Phase 4 (commented in SQL)
+
+**Remaining tasks:**
+- Create Supabase project; run migration in SQL Editor
+- Seed DB from `content/courses/hsk5/` (Lessons 1–3) per `supabase/SEED_PLAN.md`
+- Add `@supabase/supabase-js` and env configuration
+- Replace `lib/content.ts` / catalog reads with Supabase (server or RSC)
+- Store lesson completion %, quiz scores, learned vocabulary per user (after auth in Phase 4)
 
 **Exit criteria:** Content edits happen in DB; progress survives page refresh for logged-in users.
 

@@ -96,12 +96,20 @@ Templates and AI prompt: [templates/](./templates/) (including [lesson-content-p
 - [PROJECT_CHECKPOINT.md](./PROJECT_CHECKPOINT.md) — MVP v1 status, limitations, next tasks
 - [DEVELOPMENT_PLAN.md](./DEVELOPMENT_PLAN.md) — Phased roadmap
 
+## Phase 3 Supabase planning
+
+Schema and seed documentation only — the app still uses local `content/` files (no Supabase client yet).
+
+- [DATABASE_SCHEMA.md](./DATABASE_SCHEMA.md) — tables, columns, relationships
+- [supabase/README.md](./supabase/README.md) — migrations folder and how to run SQL in Supabase
+- [supabase/SEED_PLAN.md](./supabase/SEED_PLAN.md) — mapping local lessons 1–3 to database rows
+
 ## Next development steps
 
 See [DEVELOPMENT_PLAN.md](./DEVELOPMENT_PLAN.md) for the full roadmap. Immediate priorities:
 
 1. ~~Real lesson data structure~~ ✅ Phase 2 (closed)
-2. **Supabase** for courses, lessons, vocabulary, progress ← Phase 3
+2. **Supabase** — create project, run migration, seed content ← Phase 3 (schema planned)
 3. Authentication and user progress persistence
 4. Admin tools for content upload
 5. Membership / payments
