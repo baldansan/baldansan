@@ -6,7 +6,10 @@ import { lessonPreviewPath } from "@/lib/lesson-publish";
 import { analyzeLessonQaFromCounts } from "@/lib/admin/lesson-qa";
 import { getAdminPublishStatus } from "@/lib/admin/lesson-status";
 import { BulkImportEditor } from "@/components/admin/bulk-import-editor";
+import { ImportQaSummary } from "@/components/admin/import-qa-summary";
+import { LessonPromptGenerator } from "@/components/admin/lesson-prompt-generator";
 import { PublishingControls } from "@/components/admin/publishing-controls";
+import type { ImportQaStatus } from "@/lib/admin/import-qa";
 import { LessonQaBadge } from "@/components/admin/lesson-qa-badge";
 import { SubtitleEditor } from "@/components/admin/subtitle-editor";
 import { VocabularyEditor } from "@/components/admin/vocabulary-editor";
@@ -38,6 +41,14 @@ export function LessonEditForm({ lesson, initialCompleteness }: Props) {
   const [quizMeta, setQuizMeta] = useState(lesson.quizCount);
   const [editorReload, setEditorReload] = useState(0);
   const [completeness, setCompleteness] = useState(initialCompleteness);
+  const [qaPublishReady, setQaPublishReady] = useState(
+    initialCompleteness.readyToPublish
+  );
+
+  const handleQaReadiness = useCallback((ready: boolean, _status: ImportQaStatus) => {
+    setQaPublishReady(ready);
+    setCompleteness((prev) => ({ ...prev, readyToPublish: ready }));
+  }, []);
 
   const refreshMetaCounts = useCallback(async () => {
     const result = await getLessonMetadataCounts(lesson.id);
@@ -66,11 +77,7 @@ export function LessonEditForm({ lesson, initialCompleteness }: Props) {
 
   const hasAnyContent =
     subtitleCount > 0 || vocabActual > 0 || quizActual > 0;
-  const readyToPublish =
-    qa.hasMetadata &&
-    subtitleCount > 0 &&
-    vocabActual > 0 &&
-    quizActual > 0;
+  const readyToPublish = qaPublishReady;
 
   useEffect(() => {
     setCompleteness({
@@ -173,6 +180,14 @@ export function LessonEditForm({ lesson, initialCompleteness }: Props) {
           <LessonFormFields values={values} readOnly />
         </div>
       </section>
+
+      <ImportQaSummary
+        lesson={lesson}
+        reloadToken={editorReload}
+        onReadinessChange={handleQaReadiness}
+      />
+
+      <LessonPromptGenerator lesson={lesson} />
 
       <BulkImportEditor
         lessonId={lesson.id}

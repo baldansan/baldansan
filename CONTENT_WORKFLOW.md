@@ -44,6 +44,18 @@ On **`/admin/lessons/{id}/edit`**:
 
 Requires admin policies ([002_admin_content_policies.sql](./supabase/policies/002_admin_content_policies.sql)).
 
+### Prompt generator + QA assistant (Step 10)
+
+On **`/admin/lessons/{id}/edit`**:
+
+1. **Import QA summary** — live checks (HSK distribution, duplicates, quiz mismatches, publish readiness).
+2. **Lesson content prompt generator** — copy-ready ChatGPT prompt from lesson metadata.
+3. **Bulk import** — validate (errors block, warnings allow) → import.
+
+Workflow: **Create draft** → **Generate prompt** → **ChatGPT JSON** → **Validate** → **Import** → **QA** → **Preview** (`?preview=admin`) → **Publish**.
+
+See [LESSON_PROMPT_TEMPLATE.md](./LESSON_PROMPT_TEMPLATE.md) and [LESSON_IMPORT_FORMAT.md](./LESSON_IMPORT_FORMAT.md).
+
 ### Bulk import from ChatGPT JSON (Step 9)
 
 On **`/admin/lessons/{id}/edit`** → **Bulk import content**:

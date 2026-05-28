@@ -68,7 +68,7 @@ function completenessFromLesson(lesson: Awaited<ReturnType<typeof getLessonById>
     readyToPublish:
       qa.hasMetadata &&
       qa.subtitleCount > 0 &&
-      qa.vocabularyActual > 0 &&
-      qa.quizActual > 0,
+      qa.vocabularyActual >= 5 &&
+      qa.quizActual >= 3,
   };
 }

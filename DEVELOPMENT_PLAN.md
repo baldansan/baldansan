@@ -204,6 +204,13 @@ Phased roadmap from MVP demo to production product.
 
 **Phase 5 Step 9 — Completed:** Bulk JSON import for subtitles, vocabulary, and quiz.
 
+**Phase 5 Step 10 — Completed:** Lesson content prompt generator and import QA assistant.
+
+- [components/admin/lesson-prompt-generator.tsx](./components/admin/lesson-prompt-generator.tsx)
+- [components/admin/import-qa-summary.tsx](./components/admin/import-qa-summary.tsx)
+- [LESSON_PROMPT_TEMPLATE.md](./LESSON_PROMPT_TEMPLATE.md)
+- Stronger bulk import validation (errors vs warnings)
+
 - [lib/supabase/admin-import.ts](./lib/supabase/admin-import.ts) — parse, validate, `bulkImportLessonContent`
 - [components/admin/bulk-import-editor.tsx](./components/admin/bulk-import-editor.tsx) on lesson edit page
 - [LESSON_IMPORT_FORMAT.md](./LESSON_IMPORT_FORMAT.md)
@@ -226,7 +233,8 @@ Phased roadmap from MVP demo to production product.
 | 7 | Quiz editor | ✅ Completed |
 | 8 | Publish/unpublish workflow | ✅ Completed |
 | 9 | Bulk import lesson content from JSON/ChatGPT output | ✅ Completed |
-| 10 | Import prompt generator / lesson content template | Next |
+| 10 | Prompt generator + import QA assistant | ✅ Completed |
+| 11 | Admin lesson metadata edit/save and publish readiness polish | Next |
 
 **Exit criteria:** New lesson published through admin UI without deploying code.
 

@@ -61,20 +61,27 @@ export function BulkImportEditor({ lessonId, onImportSuccess }: Props) {
   const [busy, setBusy] = useState<"validate" | "import" | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [success, setSuccess] = useState<string | null>(null);
+  const [warnings, setWarnings] = useState<string[]>([]);
 
   const handleValidate = useCallback(() => {
     setError(null);
     setSuccess(null);
+    setWarnings([]);
     setBusy("validate");
     const result = parseAndValidateLessonImport(rawJson);
     setBusy(null);
     setValidation(result);
+    setWarnings(result.warnings);
     if (!result.valid) {
       setError(result.errors.join(" "));
       return;
     }
+    const warnNote =
+      result.warnings.length > 0
+        ? ` (${result.warnings.length} warning(s) — import allowed)`
+        : "";
     setSuccess(
-      `Validation OK: ${result.counts.subtitles} subtitles, ${result.counts.vocabulary} vocabulary, ${result.counts.quizQuestions} quiz.`
+      `Validation OK: ${result.counts.subtitles} subtitles, ${result.counts.vocabulary} vocabulary, ${result.counts.quizQuestions} quiz.${warnNote}`
     );
   }, [rawJson]);
 
@@ -85,6 +92,8 @@ export function BulkImportEditor({ lessonId, onImportSuccess }: Props) {
 
     const result = parseAndValidateLessonImport(rawJson);
     setValidation(result);
+
+    setWarnings(result.warnings);
 
     if (!result.valid) {
       setBusy(null);
@@ -117,6 +126,7 @@ export function BulkImportEditor({ lessonId, onImportSuccess }: Props) {
     setValidation(null);
     setError(null);
     setSuccess(null);
+    setWarnings([]);
   }
 
   return (
@@ -177,10 +187,32 @@ export function BulkImportEditor({ lessonId, onImportSuccess }: Props) {
 
         {validation?.valid ? (
           <p className="text-sm text-emerald-800">
-            Ready: {validation.counts.subtitles} subtitles ·{" "}
+            Ready to import: {validation.counts.subtitles} subtitles ·{" "}
             {validation.counts.vocabulary} vocabulary ·{" "}
             {validation.counts.quizQuestions} quiz questions
           </p>
+        ) : null}
+
+        {validation && !validation.valid && validation.errors.length > 0 ? (
+          <div className="rounded-xl bg-red-50 px-4 py-3 text-sm text-red-800 ring-1 ring-red-200">
+            <p className="font-semibold">Errors (import blocked)</p>
+            <ul className="mt-2 max-h-32 list-inside list-disc overflow-auto">
+              {validation.errors.map((msg) => (
+                <li key={msg}>{msg}</li>
+              ))}
+            </ul>
+          </div>
+        ) : null}
+
+        {warnings.length > 0 ? (
+          <div className="rounded-xl bg-amber-50 px-4 py-3 text-sm text-amber-900 ring-1 ring-amber-200">
+            <p className="font-semibold">Warnings (import allowed)</p>
+            <ul className="mt-2 max-h-32 list-inside list-disc overflow-auto">
+              {warnings.map((msg) => (
+                <li key={msg}>{msg}</li>
+              ))}
+            </ul>
+          </div>
         ) : null}
 
         <AdminAlert error={error} success={success} />

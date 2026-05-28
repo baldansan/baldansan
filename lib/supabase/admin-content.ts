@@ -405,8 +405,8 @@ export async function getLessonCompleteness(
     const readyToPublish =
       hasMetadata &&
       subtitleCount > 0 &&
-      vocabularyCount > 0 &&
-      quizCount > 0;
+      vocabularyCount >= 5 &&
+      quizCount >= 3;
 
     return {
       data: {

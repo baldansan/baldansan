@@ -1,3 +1,4 @@
+import { analyzeImportPayloadExtras } from "@/lib/admin/import-qa";
 import { isCurrentUserAdmin } from "@/lib/supabase/admin";
 import { refreshLessonCounts } from "@/lib/supabase/admin-content";
 import { hasSupabaseConfig, supabase } from "@/lib/supabase/client";
@@ -76,8 +77,10 @@ export type BulkImportOptions = {
 };
 
 export type ImportValidationResult = {
+  /** True when there are no blocking errors (warnings allowed). */
   valid: boolean;
   errors: string[];
+  warnings: string[];
   payload: LessonImportPayload;
   counts: {
     subtitles: number;
@@ -187,6 +190,7 @@ export function validateLessonImportPayload(
   raw: Record<string, unknown>
 ): ImportValidationResult {
   const errors: string[] = [];
+  const warnings: string[] = [];
   const subtitlesRaw = asArray(
     raw.subtitles ?? raw.subtitleLines,
     "subtitles",
@@ -203,6 +207,7 @@ export function validateLessonImportPayload(
     return {
       valid: false,
       errors,
+      warnings,
       payload: EMPTY_PAYLOAD,
       counts: { subtitles: 0, vocabulary: 0, quizQuestions: 0 },
     };
@@ -304,17 +309,6 @@ export function validateLessonImportPayload(
     if (options.length < 2) {
       errors.push(`quizQuestions[${index}]: at least 2 options required.`);
     }
-    if (
-      type === "multiple_choice" &&
-      correctAnswer &&
-      options.length >= 2 &&
-      !options.includes(correctAnswer)
-    ) {
-      errors.push(
-        `quizQuestions[${index}]: correctAnswer should match one of the options.`
-      );
-    }
-
     if (type && question && correctAnswer && options.length >= 2) {
       quizQuestions.push({
         type,
@@ -332,9 +326,18 @@ export function validateLessonImportPayload(
     quizQuestions,
   };
 
+  const extras = analyzeImportPayloadExtras(payload);
+  for (const msg of extras.errors) {
+    if (!errors.includes(msg)) errors.push(msg);
+  }
+  for (const msg of extras.warnings) {
+    if (!warnings.includes(msg)) warnings.push(msg);
+  }
+
   return {
     valid: errors.length === 0,
     errors,
+    warnings,
     payload,
     counts: {
       subtitles: subtitles.length,
@@ -500,6 +503,7 @@ export function parseAndValidateLessonImport(
     return {
       valid: false,
       errors: [parsed.error ?? "Invalid JSON."],
+      warnings: [],
       payload: EMPTY_PAYLOAD,
       counts: { subtitles: 0, vocabulary: 0, quizQuestions: 0 },
       parseError: parsed.error ?? undefined,

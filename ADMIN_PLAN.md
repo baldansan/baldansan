@@ -98,7 +98,8 @@ See [CONTENT_WORKFLOW.md](./CONTENT_WORKFLOW.md):
 | 7 | Quiz editor | ✅ Completed |
 | 8 | Publish/unpublish workflow | ✅ Completed |
 | 9 | Bulk import from JSON/ChatGPT | ✅ Completed |
-| 10 | Import prompt generator / lesson content template | Next |
+| 10 | Prompt generator + import QA assistant | ✅ Completed |
+| 11 | Admin metadata edit + publish polish | Next |
 
 Step 3: [lib/admin/lesson-qa.ts](./lib/admin/lesson-qa.ts), `/admin/lessons` QA dashboard.
 

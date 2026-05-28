@@ -63,8 +63,8 @@ export function PublishingControls({ lesson, initialCompleteness }: Props) {
 
       {!canPublish ? (
         <p className="mt-4 rounded-xl bg-amber-50 px-4 py-3 text-sm text-amber-900 ring-1 ring-amber-200">
-          Publish хийхийн өмнө subtitle, vocabulary, quiz бүрэн байх
-          шаардлагатай.
+          Publish хийхийн өмнө metadata, subtitles, ≥5 vocabulary, ≥3 quiz,
+          quiz answer match, Mongolian translations бүрэн байх шаардлагатай.
         </p>
       ) : null}
 

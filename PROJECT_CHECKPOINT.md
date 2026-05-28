@@ -16,7 +16,19 @@ Phase 5 Publish workflow added: draft/available/archived visibility, admin publi
 | UI | `lesson-unavailable.tsx`, `publishing-controls.tsx`, admin preview `?preview=admin` |
 | API | `updateLessonStatus`, `getLessonCompleteness` |
 
-**Next:** Phase 5 Step 10 — Import prompt generator / lesson content template.
+**Next:** Phase 5 Step 11 — Admin metadata edit and publish readiness polish.
+
+---
+
+## Phase 5 Step 10 — Prompt generator + QA assistant — **Completed**
+
+Phase 5 Step 10: Lesson content prompt generator and import QA assistant added.
+
+| Area | Deliverable |
+|------|-------------|
+| UI | `lesson-prompt-generator`, `import-qa-summary` on lesson edit |
+| Logic | [lib/admin/lesson-prompt.ts](./lib/admin/lesson-prompt.ts), [lib/admin/import-qa.ts](./lib/admin/import-qa.ts) |
+| Docs | [LESSON_PROMPT_TEMPLATE.md](./LESSON_PROMPT_TEMPLATE.md) |
 
 ---
 
