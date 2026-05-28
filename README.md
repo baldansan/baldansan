@@ -133,13 +133,16 @@ Helpers: [lib/supabase/auth.ts](./lib/supabase/auth.ts). Header shows **Нэвт
 
 - [ADMIN_PLAN.md](./ADMIN_PLAN.md) — admin CMS roadmap and security
 - [CONTENT_WORKFLOW.md](./CONTENT_WORKFLOW.md) — create → publish → verify workflow
+- [LESSON_IMPORT_FORMAT.md](./LESSON_IMPORT_FORMAT.md) — bulk JSON import format (ChatGPT paste)
 - [supabase/admin/README.md](./supabase/admin/README.md) — run `001_admin_profiles_setup.sql`, bootstrap admin user
 
 **Routes:** `/admin` · `/admin/lessons` · `/admin/lessons/new` · `/admin/lessons/1/edit` (example)
 
 **Admin editors:** `/admin/lessons/new` (draft metadata) · `/admin/lessons/{id}/edit` (subtitle, vocabulary, quiz CRUD).
 
-**Next step:** Phase 5 Step 9 — Bulk import lesson content from JSON/ChatGPT output.
+**Bulk import:** `/admin/lessons/{id}/edit` → paste JSON (subtitles, vocabulary, quiz) → validate → import.
+
+**Next step:** Phase 5 Step 10 — Import prompt generator / lesson content template.
 
 ## Documentation
 

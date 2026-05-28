@@ -16,6 +16,7 @@ import {
 type Props = {
   lessonId: string;
   onCountsUpdated?: (actual: number, meta: number) => void;
+  reloadToken?: number;
 };
 
 const emptyForm = {
@@ -27,7 +28,11 @@ const emptyForm = {
   orderIndex: "",
 };
 
-export function QuizEditor({ lessonId, onCountsUpdated }: Props) {
+export function QuizEditor({
+  lessonId,
+  onCountsUpdated,
+  reloadToken = 0,
+}: Props) {
   const [items, setItems] = useState<AdminQuizQuestion[]>([]);
   const [form, setForm] = useState(emptyForm);
   const [loading, setLoading] = useState(true);
@@ -51,7 +56,7 @@ export function QuizEditor({ lessonId, onCountsUpdated }: Props) {
 
   useEffect(() => {
     load();
-  }, [load]);
+  }, [load, reloadToken]);
 
   useEffect(() => {
     if (items.length === 0) return;

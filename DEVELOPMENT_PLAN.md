@@ -202,6 +202,12 @@ Phased roadmap from MVP demo to production product.
 
 **Phase 5 Step 8 — Completed:** Publish/unpublish workflow.
 
+**Phase 5 Step 9 — Completed:** Bulk JSON import for subtitles, vocabulary, and quiz.
+
+- [lib/supabase/admin-import.ts](./lib/supabase/admin-import.ts) — parse, validate, `bulkImportLessonContent`
+- [components/admin/bulk-import-editor.tsx](./components/admin/bulk-import-editor.tsx) on lesson edit page
+- [LESSON_IMPORT_FORMAT.md](./LESSON_IMPORT_FORMAT.md)
+
 - `getPublicLessonsByCourseId` / `getPublicLessonById` — public catalog filters `available` only
 - `/lessons/{id}?preview=admin` — admin preview for draft/archived
 - `components/lesson-unavailable.tsx` — public unavailable state
@@ -219,7 +225,8 @@ Phased roadmap from MVP demo to production product.
 | 6 | Vocabulary editor | ✅ Completed |
 | 7 | Quiz editor | ✅ Completed |
 | 8 | Publish/unpublish workflow | ✅ Completed |
-| 9 | Bulk import lesson content from JSON/ChatGPT output | Next |
+| 9 | Bulk import lesson content from JSON/ChatGPT output | ✅ Completed |
+| 10 | Import prompt generator / lesson content template | Next |
 
 **Exit criteria:** New lesson published through admin UI without deploying code.
 

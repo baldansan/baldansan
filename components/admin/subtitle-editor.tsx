@@ -16,6 +16,7 @@ import {
 type Props = {
   lessonId: string;
   onSubtitleCountChange?: (count: number) => void;
+  reloadToken?: number;
 };
 
 const emptyForm = {
@@ -27,7 +28,11 @@ const emptyForm = {
   orderIndex: "",
 };
 
-export function SubtitleEditor({ lessonId, onSubtitleCountChange }: Props) {
+export function SubtitleEditor({
+  lessonId,
+  onSubtitleCountChange,
+  reloadToken = 0,
+}: Props) {
   const [items, setItems] = useState<AdminSubtitleLine[]>([]);
   const [form, setForm] = useState(emptyForm);
   const [loading, setLoading] = useState(true);
@@ -57,7 +62,7 @@ export function SubtitleEditor({ lessonId, onSubtitleCountChange }: Props) {
 
   useEffect(() => {
     load();
-  }, [load]);
+  }, [load, reloadToken]);
 
   function validate(): string | null {
     if (!form.startTime.trim() || !form.endTime.trim()) {

@@ -6,6 +6,7 @@ import { lessonPath } from "@/lib/content";
 import { lessonPreviewPath } from "@/lib/lesson-publish";
 import { analyzeLessonQaFromCounts } from "@/lib/admin/lesson-qa";
 import { getAdminPublishStatus } from "@/lib/admin/lesson-status";
+import { BulkImportEditor } from "@/components/admin/bulk-import-editor";
 import { PublishingControls } from "@/components/admin/publishing-controls";
 import { LessonQaBadge } from "@/components/admin/lesson-qa-badge";
 import { SubtitleEditor } from "@/components/admin/subtitle-editor";
@@ -36,6 +37,8 @@ export function LessonEditForm({ lesson, initialCompleteness }: Props) {
   const [vocabMeta, setVocabMeta] = useState(lesson.vocabularyCount);
   const [quizActual, setQuizActual] = useState(lesson.quizQuestions.length);
   const [quizMeta, setQuizMeta] = useState(lesson.quizCount);
+  const [editorReload, setEditorReload] = useState(0);
+  const [completeness, setCompleteness] = useState(initialCompleteness);
 
   const refreshMetaCounts = useCallback(async () => {
     const result = await getLessonMetadataCounts(lesson.id);
@@ -61,6 +64,33 @@ export function LessonEditForm({ lesson, initialCompleteness }: Props) {
 
   const vocabMismatch = vocabActual !== vocabMeta;
   const quizMismatch = quizActual !== quizMeta;
+
+  const hasAnyContent =
+    subtitleCount > 0 || vocabActual > 0 || quizActual > 0;
+  const readyToPublish =
+    qa.hasMetadata &&
+    subtitleCount > 0 &&
+    vocabActual > 0 &&
+    quizActual > 0;
+
+  useEffect(() => {
+    setCompleteness({
+      hasMetadata: qa.hasMetadata,
+      subtitleCount,
+      vocabularyCount: vocabActual,
+      quizCount: quizActual,
+      readyToPublish,
+    });
+  }, [qa.hasMetadata, subtitleCount, vocabActual, quizActual, readyToPublish]);
+
+  const handleImportSuccess = useCallback(() => {
+    setEditorReload((n) => n + 1);
+    void refreshMetaCounts();
+  }, [refreshMetaCounts]);
+
+  const handleSubtitleCountChange = useCallback((count: number) => {
+    setSubtitleCount(count);
+  }, []);
 
   const handleVocabCounts = useCallback(
     (_actual: number, _meta: number) => {
@@ -95,6 +125,19 @@ export function LessonEditForm({ lesson, initialCompleteness }: Props) {
           ) : null}
         </div>
       </div>
+
+      {publishStatus === "draft" && !hasAnyContent ? (
+        <div className="rounded-xl bg-amber-50 px-4 py-3 text-sm text-amber-900 ring-1 ring-amber-200">
+          Ноорог хичээл — контент байхгүй. Bulk import эсвэл доорх editor-оор
+          subtitle, vocabulary, quiz нэмнэ үү.
+        </div>
+      ) : null}
+
+      {readyToPublish ? (
+        <div className="rounded-xl bg-emerald-50 px-4 py-3 text-sm text-emerald-900 ring-1 ring-emerald-200">
+          Ready to publish — metadata, subtitle, vocabulary, quiz бүрэн байна.
+        </div>
+      ) : null}
 
       <div className="flex flex-wrap gap-2 text-sm">
         <span className="rounded-full bg-slate-100 px-3 py-1 ring-1 ring-slate-200">
@@ -132,22 +175,30 @@ export function LessonEditForm({ lesson, initialCompleteness }: Props) {
         </div>
       </section>
 
+      <BulkImportEditor
+        lessonId={lesson.id}
+        onImportSuccess={handleImportSuccess}
+      />
+
       <SubtitleEditor
         lessonId={lesson.id}
-        onSubtitleCountChange={setSubtitleCount}
+        onSubtitleCountChange={handleSubtitleCountChange}
+        reloadToken={editorReload}
       />
 
       <VocabularyEditor
         lessonId={lesson.id}
         onCountsUpdated={handleVocabCounts}
+        reloadToken={editorReload}
       />
 
-      <QuizEditor lessonId={lesson.id} onCountsUpdated={handleQuizCounts} />
-
-      <PublishingControls
-        lesson={lesson}
-        initialCompleteness={initialCompleteness}
+      <QuizEditor
+        lessonId={lesson.id}
+        onCountsUpdated={handleQuizCounts}
+        reloadToken={editorReload}
       />
+
+      <PublishingControls lesson={lesson} initialCompleteness={completeness} />
 
       <section className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:p-6">
         <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">

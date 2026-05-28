@@ -44,6 +44,16 @@ On **`/admin/lessons/{id}/edit`**:
 
 Requires admin policies ([002_admin_content_policies.sql](./supabase/policies/002_admin_content_policies.sql)).
 
+### Bulk import from ChatGPT JSON (Step 9)
+
+On **`/admin/lessons/{id}/edit`** → **Bulk import content**:
+
+1. Paste JSON with `subtitles`, `vocabulary`, `quizQuestions` (aliases supported — see [LESSON_IMPORT_FORMAT.md](./LESSON_IMPORT_FORMAT.md))
+2. **Validate JSON** — check counts and field errors
+3. Choose **Append** (add after existing rows) or **Replace** (delete this lesson’s child rows first)
+4. **Import content** — writes to `subtitle_lines`, `vocabulary_words`, `quiz_questions`; refreshes vocab/quiz counts on `lessons`
+5. Use manual editors below for fixes; then QA → Publish
+
 ---
 
 See also: [ADMIN_PLAN.md](./ADMIN_PLAN.md), [CONTENT_AUTHORING_GUIDE.md](./CONTENT_AUTHORING_GUIDE.md) (developer/local authoring today).

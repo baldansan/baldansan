@@ -18,6 +18,7 @@ const HSK_LEVELS = ["HSK1", "HSK2", "HSK3", "HSK4", "HSK5", "HSK6"] as const;
 type Props = {
   lessonId: string;
   onCountsUpdated?: (actual: number, meta: number) => void;
+  reloadToken?: number;
 };
 
 const emptyForm = {
@@ -30,7 +31,11 @@ const emptyForm = {
   orderIndex: "",
 };
 
-export function VocabularyEditor({ lessonId, onCountsUpdated }: Props) {
+export function VocabularyEditor({
+  lessonId,
+  onCountsUpdated,
+  reloadToken = 0,
+}: Props) {
   const [items, setItems] = useState<AdminVocabularyWord[]>([]);
   const [form, setForm] = useState(emptyForm);
   const [loading, setLoading] = useState(true);
@@ -54,7 +59,7 @@ export function VocabularyEditor({ lessonId, onCountsUpdated }: Props) {
 
   useEffect(() => {
     load();
-  }, [load]);
+  }, [load, reloadToken]);
 
   useEffect(() => {
     if (items.length === 0) return;

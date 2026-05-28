@@ -16,7 +16,19 @@ Phase 5 Publish workflow added: draft/available/archived visibility, admin publi
 | UI | `lesson-unavailable.tsx`, `publishing-controls.tsx`, admin preview `?preview=admin` |
 | API | `updateLessonStatus`, `getLessonCompleteness` |
 
-**Next:** Phase 5 Step 9 — Bulk import lesson content from JSON/ChatGPT output.
+**Next:** Phase 5 Step 10 — Import prompt generator / lesson content template.
+
+---
+
+## Phase 5 Step 9 — Bulk JSON import — **Completed**
+
+Phase 5 Step 9: Bulk JSON import for subtitles, vocabulary, and quiz content added.
+
+| Area | Deliverable |
+|------|-------------|
+| API | `lib/supabase/admin-import.ts` — append/replace import |
+| UI | `components/admin/bulk-import-editor.tsx` on lesson edit |
+| Docs | [LESSON_IMPORT_FORMAT.md](./LESSON_IMPORT_FORMAT.md) |
 
 ---
 
