@@ -128,14 +128,29 @@ Lesson pages are **data-driven** via dynamic segments. Content lives under `cont
 - Lesson and HSK5 pages use `dynamic = "force-dynamic"` so DB edits appear on refresh
 - Minimal warning: `Supabase content fetch failed; using local fallback.`
 
+**Phase 3 Step 6 — Lesson 4 Supabase-first seed prepared:**
+
+- `supabase/seed/002_seed_hsk5_lesson_4.sql` — lesson 4 metadata, 5 subtitles, 10 vocabulary, 5 quiz
+- No local `lesson-4.ts`; Lesson 4 appears only after running seed with Supabase env configured
+- `verify_hsk5_seed.sql` updated for 4 lessons
+
+**Next Improvement Batch — UX polish and Supabase lesson flow:**
+
+Next Improvement Batch: course detail now renders Supabase lesson list including Lesson 4, vocabulary filters support HSK1–HSK5, and quiz results can link to the next lesson.
+
+- `/courses/hsk5` uses `getLessonsByCourseId("hsk5")` for all lessons; stats computed from lesson data
+- Lesson cards show title, subtitle, counts, status badge, Start/Locked
+- Vocabulary filters: All, HSK1–HSK5 (shown when present in lesson vocabulary)
+- Quiz result screen: “Next lesson” when another lesson exists in course order
+- Shared `AppHeader` for consistent nav (Brand `/`, Courses `/courses`, Demo `/lessons/1`, Profile `#`)
+
 ---
 
 ## Next recommended tasks
 
 1. Phase 4: Supabase Auth + persist progress
 2. Dynamic `/courses/[courseId]` route (optional)
-3. Shared `AppHeader` component
-4. Real video provider
+3. Real video provider
 
 See [DEVELOPMENT_PLAN.md](./DEVELOPMENT_PLAN.md).
 

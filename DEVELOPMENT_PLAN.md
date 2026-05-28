@@ -70,6 +70,18 @@ Phased roadmap from MVP demo to production product.
 - `getContentSource()` for internal verification; standardized fallback warning
 - No auth or progress writes yet
 
+**Phase 3 Step 6 — Completed:** Lesson 4 Supabase-first seed file prepared.
+
+- `supabase/seed/002_seed_hsk5_lesson_4.sql` — DB-only lesson (no new routes or local content file)
+- Validates adding lessons via database without copying page components
+
+**Phase 3 improvements — Completed:** Next Improvement Batch (UX polish and Supabase lesson flow).
+
+- HSK5 course detail renders full lesson list from `getLessonsByCourseId` with dynamic stats and improved lesson cards
+- Vocabulary filters support HSK1–HSK5 when words exist in the lesson
+- Quiz results link to the next lesson in course order when available
+- Shared `AppHeader` for consistent navigation across pages
+
 **Remaining tasks (Phase 4+):**
 - Store lesson completion %, quiz scores, learned vocabulary per user (Phase 4 auth)
 

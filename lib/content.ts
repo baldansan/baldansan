@@ -187,3 +187,15 @@ export async function getAllLessonIds(): Promise<string[]> {
 export function getAllLessonIdsSync(): string[] {
   return getLocalAllLessonIds();
 }
+
+/** Next lesson in course order, or null when this is the last lesson. */
+export function findNextLessonId(
+  lessonId: string,
+  lessons: LessonContent[]
+): string | null {
+  const index = lessons.findIndex((lesson) => lesson.id === lessonId);
+  if (index < 0 || index >= lessons.length - 1) {
+    return null;
+  }
+  return lessons[index + 1].id;
+}

@@ -1,63 +1,52 @@
-# Supabase seed — HSK5 Lessons 1–3
+# Supabase seed — HSK5
 
-SQL seed data for the Buunduu Surtsgaay database. Mirrors local content in `content/courses/hsk5/lessons/lesson-{1,2,3}.ts`.
+SQL seed data for the Buunduu Surtsgaay database.
 
-The Next.js app is **not** connected to Supabase yet. Running this seed only populates the remote database; the app still loads lessons from TypeScript files.
+With `.env.local` configured, the app loads lessons **Supabase-first** via `lib/content.ts`. Lessons 1–3 also exist as local TypeScript fallbacks. **Lesson 4 is Supabase-only** (no `lesson-4.ts` file).
 
 ## Files
 
 | File | Purpose |
 |------|---------|
-| `001_seed_hsk5_lessons.sql` | Inserts course, lessons, subtitles, vocabulary, quiz |
+| `001_seed_hsk5_lessons.sql` | Course `hsk5` + Lessons 1–3 (subtitles, vocabulary, quiz) |
+| `002_seed_hsk5_lesson_4.sql` | Lesson 4 only — Supabase-first pipeline test |
 | `verify_hsk5_seed.sql` | `SELECT` queries to confirm row counts |
-| `_generate-seed.mjs` | Optional: regenerate `001_seed_hsk5_lessons.sql` after content edits (`node supabase/seed/_generate-seed.mjs`) |
+| `_generate-seed.mjs` | Optional: regenerate `001` from local lesson 1–3 data |
 
 ## Prerequisite
 
-Run the schema migration first:
+1. [supabase/migrations/001_initial_schema.sql](../migrations/001_initial_schema.sql)
+2. `001_seed_hsk5_lessons.sql` (course + lessons 1–3)
 
-1. [supabase/migrations/001_initial_schema.sql](../migrations/001_initial_schema.sql) in Supabase **SQL Editor**
+## How to run seeds
 
-Tables must exist before seeding.
+1. Supabase Dashboard → **SQL Editor**
+2. Run `001_seed_hsk5_lessons.sql` (if not already done)
+3. Run `002_seed_hsk5_lesson_4.sql`
+4. Run `verify_hsk5_seed.sql` to confirm counts
 
-## How to run the seed
+`002` is idempotent: upserts lesson `4`, deletes and re-inserts only lesson 4 child rows. Lessons 1–3 are untouched.
 
-1. Open [Supabase Dashboard](https://supabase.com/dashboard) → your project → **SQL Editor**.
-2. Open `001_seed_hsk5_lessons.sql` from this repo.
-3. Paste the full file and click **Run**.
-4. Confirm success (no errors; transaction commits).
+## Row counts after both seeds
 
-Safe to re-run: course and lessons use `ON CONFLICT` upserts; child rows for lessons `1`, `2`, `3` are deleted and re-inserted.
-
-## What gets populated
-
-| Table | Rows after seed |
-|-------|-----------------|
+| Table | Total |
+|-------|-------|
 | `courses` | 1 (`hsk5`) |
-| `lessons` | 3 (`1`, `2`, `3`) |
-| `subtitle_lines` | 16 (4 + 6 + 6) |
-| `vocabulary_words` | 29 (5 + 12 + 12) |
-| `quiz_questions` | 15 (5 per lesson) |
+| `lessons` | 4 (`1`–`4`) |
+| `subtitle_lines` | 21 (4+6+6+5) |
+| `vocabulary_words` | 39 (5+12+12+10) |
+| `quiz_questions` | 20 (5 per lesson) |
 
-## Intentionally empty
+## Test Lesson 4 in the app
 
-These tables are **not** modified by the seed:
+Requires `.env.local` and `npm run dev`:
 
-- `user_lesson_progress`
-- `user_vocabulary_progress`
-- `user_quiz_attempts`
+- `/courses/hsk5` — Lesson 4 in list
+- `/lessons/4`, `/lessons/4/watch`, `/lessons/4/vocabulary`, `/lessons/4/quiz`
 
-They will be used after authentication (Phase 4).
-
-## Verify
-
-Run [verify_hsk5_seed.sql](./verify_hsk5_seed.sql) in the SQL Editor and check:
-
-- `courses`: 1 row
-- `lessons`: 3 rows, `status = available`
-- Per-lesson counts: lesson `1` → 4 / 5 / 5; lesson `2` → 6 / 12 / 5; lesson `3` → 6 / 12 / 5 (subtitles / vocabulary / quiz)
+Without Supabase env, `/lessons/4` shows **Lesson not found** (no local fallback for lesson 4).
 
 ## Related docs
 
-- [../SEED_PLAN.md](../SEED_PLAN.md) — field mapping and checklist
-- [../../DATABASE_SCHEMA.md](../../DATABASE_SCHEMA.md) — table reference
+- [../SEED_PLAN.md](../SEED_PLAN.md)
+- [../../DATABASE_SCHEMA.md](../../DATABASE_SCHEMA.md)

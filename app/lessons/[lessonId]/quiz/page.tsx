@@ -1,5 +1,9 @@
 import { notFound } from "next/navigation";
-import { getLessonById } from "@/lib/content";
+import {
+  findNextLessonId,
+  getLessonById,
+  getLessonsByCourseId,
+} from "@/lib/content";
 import { LessonQuizClient } from "./quiz-client";
 
 type PageProps = {
@@ -16,5 +20,8 @@ export default async function LessonQuizPage({ params }: PageProps) {
     notFound();
   }
 
-  return <LessonQuizClient lesson={lesson} />;
+  const courseLessons = await getLessonsByCourseId(lesson.courseId);
+  const nextLessonId = findNextLessonId(lessonId, courseLessons);
+
+  return <LessonQuizClient lesson={lesson} nextLessonId={nextLessonId} />;
 }

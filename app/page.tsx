@@ -1,27 +1,10 @@
 import Link from "next/link";
+import { AppHeader } from "@/components/app-header";
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-emerald-50/40 via-white to-white text-slate-900">
-      <header className="mx-auto flex w-full max-w-5xl items-center justify-between px-4 py-4 sm:px-6">
-        <Link
-          href="/"
-          className="text-sm font-semibold tracking-tight text-slate-900 sm:text-base"
-        >
-          Buunduu Surtsgaay
-        </Link>
-        <nav className="flex items-center gap-3 text-xs text-slate-600 sm:gap-5 sm:text-sm">
-          <Link href="/courses" className="transition-colors hover:text-emerald-600">
-            Courses
-          </Link>
-          <Link href="/lessons/1" className="transition-colors hover:text-emerald-600">
-            Demo
-          </Link>
-          <a href="#" className="transition-colors hover:text-emerald-600">
-            Profile
-          </a>
-        </nav>
-      </header>
+      <AppHeader />
 
       <main className="mx-auto flex w-full max-w-5xl flex-col gap-6 px-4 pb-10 pt-2 sm:gap-8 sm:px-6">
         <section className="rounded-3xl bg-white p-6 shadow-sm ring-1 ring-slate-200 sm:p-8">

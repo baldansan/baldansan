@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useMemo, useState } from "react";
+import { AppHeader } from "@/components/app-header";
 import {
   lessonPath,
   lessonQuizPath,
@@ -10,8 +11,10 @@ import {
 import type { LessonContent } from "@/types/lesson-content";
 import type { VocabularyFilter } from "@/types/lesson";
 
-const filters: { id: VocabularyFilter; label: string }[] = [
+const allFilters: { id: VocabularyFilter; label: string }[] = [
   { id: "all", label: "All" },
+  { id: "HSK1", label: "HSK1" },
+  { id: "HSK2", label: "HSK2" },
   { id: "HSK3", label: "HSK3" },
   { id: "HSK4", label: "HSK4" },
   { id: "HSK5", label: "HSK5" },
@@ -25,6 +28,13 @@ export function LessonVocabularyClient({ lesson }: Props) {
   const [search, setSearch] = useState("");
   const [filter, setFilter] = useState<VocabularyFilter>("all");
   const [learned, setLearned] = useState<Set<string>>(new Set());
+
+  const visibleFilters = useMemo(() => {
+    const levels = new Set(lesson.vocabulary.map((word) => word.hskLevel));
+    return allFilters.filter(
+      (item) => item.id === "all" || levels.has(item.id)
+    );
+  }, [lesson.vocabulary]);
 
   const filteredWords = useMemo(() => {
     const query = search.trim().toLowerCase();
@@ -54,25 +64,7 @@ export function LessonVocabularyClient({ lesson }: Props) {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-emerald-50/40 via-white to-white text-slate-900">
-      <header className="mx-auto flex w-full max-w-5xl items-center justify-between px-4 py-4 sm:px-6">
-        <Link
-          href="/"
-          className="text-sm font-semibold tracking-tight text-slate-900 sm:text-base"
-        >
-          Buunduu Surtsgaay
-        </Link>
-        <nav className="flex items-center gap-3 text-xs sm:gap-5 sm:text-sm">
-          <Link href="/courses" className="font-medium text-emerald-600">
-            Courses
-          </Link>
-          <Link href="/lessons/1" className="text-slate-600 transition-colors hover:text-emerald-600">
-            Demo
-          </Link>
-          <a href="#" className="text-slate-600 transition-colors hover:text-emerald-600">
-            Profile
-          </a>
-        </nav>
-      </header>
+      <AppHeader />
 
       <main className="mx-auto flex w-full max-w-5xl flex-col gap-6 px-4 pb-10 pt-2 sm:gap-8 sm:px-6">
         <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
@@ -115,15 +107,15 @@ export function LessonVocabularyClient({ lesson }: Props) {
             className="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-900 outline-none ring-emerald-500 placeholder:text-slate-400 focus:border-emerald-300 focus:ring-2"
           />
           <div className="mt-3 flex flex-wrap gap-2">
-            {filters.map((item) => (
+            {visibleFilters.map((item) => (
               <button
                 key={item.id}
                 type="button"
                 onClick={() => setFilter(item.id)}
                 className={
                   filter === item.id
-                    ? "flex-1 rounded-full bg-emerald-500 px-3 py-2 text-sm font-semibold text-white"
-                    : "flex-1 rounded-full border border-emerald-200 bg-emerald-50 px-3 py-2 text-sm font-semibold text-emerald-700 transition-colors hover:bg-emerald-100"
+                    ? "rounded-full bg-emerald-500 px-3 py-2 text-sm font-semibold text-white"
+                    : "rounded-full border border-emerald-200 bg-emerald-50 px-3 py-2 text-sm font-semibold text-emerald-700 transition-colors hover:bg-emerald-100"
                 }
               >
                 {item.label}
