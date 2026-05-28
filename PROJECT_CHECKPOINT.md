@@ -2,7 +2,7 @@
 
 **Project:** Buunduu Surtsgaay  
 **Checkpoint date:** May 2026  
-**Status:** MVP demo complete; Phase 2 closed; Phase 3 Step 4 (Supabase read-only) complete
+**Status:** MVP demo complete; Phase 2 closed; Phase 3 Step 5 (Supabase-first) complete
 
 ---
 
@@ -119,7 +119,14 @@ Lesson pages are **data-driven** via dynamic segments. Content lives under `cont
 - `.env.example` for `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_ANON_KEY`
 - No auth, no progress writes, no UI/route changes
 
-**Phase 3 Step 4 cleanup:** Temporary Supabase debug logs removed after successful read-only connection test. Minimal `[content]` warnings remain on query failure only.
+**Phase 3 Step 4 cleanup:** Temporary Supabase debug logs removed after successful read-only connection test.
+
+**Phase 3 Step 5 — Supabase-first production mode completed** with local fallback:
+
+- Unified Supabase-first helpers in `lib/content.ts` (`withSupabaseFallback`, `withSupabaseListFallback`)
+- `getContentSource()` / `getConfiguredContentMode()` for internal source detection (not shown in UI)
+- Lesson and HSK5 pages use `dynamic = "force-dynamic"` so DB edits appear on refresh
+- Minimal warning: `Supabase content fetch failed; using local fallback.`
 
 ---
 

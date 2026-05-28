@@ -6,6 +6,8 @@ type PageProps = {
   params: Promise<{ lessonId: string }>;
 };
 
+export const dynamic = "force-dynamic";
+
 export default async function LessonQuizPage({ params }: PageProps) {
   const { lessonId } = await params;
   const lesson = await getLessonById(lessonId);

@@ -6,6 +6,9 @@ function lessonButtonLabel(status: LessonContentStatus) {
   return status === "available" ? "Start" : "Locked";
 }
 
+/** Fetch course and lessons from Supabase on each request when env is configured. */
+export const dynamic = "force-dynamic";
+
 export default async function Hsk5CoursePage() {
   const course = await getCourseContentById("hsk5");
   const lessons = await getLessonsByCourseId("hsk5");

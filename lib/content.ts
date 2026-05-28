@@ -18,6 +18,27 @@ const coursesContentById: Record<string, CourseContent> = {
   hsk5: hsk5Course,
 };
 
+/** Last resolved source for a content fetch (server-only; not shown in UI). */
+export type ContentSource = "supabase" | "local";
+
+let lastContentSource: ContentSource = "local";
+
+const FALLBACK_WARNING =
+  "Supabase content fetch failed; using local fallback.";
+
+function warnSupabaseFallback(context: string, error?: unknown) {
+  console.warn(`[content] ${FALLBACK_WARNING}`, { context, error });
+}
+
+export function getContentSource(): ContentSource {
+  return lastContentSource;
+}
+
+/** Whether Supabase env is configured (intended primary source when true). */
+export function getConfiguredContentMode(): ContentSource {
+  return hasSupabaseConfig ? "supabase" : "local";
+}
+
 export function lessonPath(lessonId: string) {
   return `/lessons/${lessonId}`;
 }
@@ -60,24 +81,57 @@ export function getLocalAllLessonIds(): string[] {
   return allLessons.map((lesson) => lesson.id);
 }
 
+/**
+ * Supabase-first: returns fetcher result when defined; otherwise local fallback.
+ */
 async function withSupabaseFallback<T>(
-  label: string,
+  context: string,
   fetcher: () => Promise<T | undefined>,
   fallback: () => T | undefined
 ): Promise<T | undefined> {
   if (!hasSupabaseConfig) {
+    lastContentSource = "local";
     return fallback();
   }
 
   try {
     const result = await fetcher();
     if (result !== undefined) {
+      lastContentSource = "supabase";
       return result;
     }
   } catch (error) {
-    console.warn(`[content] Supabase ${label} failed, using local fallback.`, error);
+    warnSupabaseFallback(context, error);
   }
 
+  lastContentSource = "local";
+  return fallback();
+}
+
+/**
+ * Supabase-first: returns non-empty Supabase list; otherwise local fallback.
+ */
+async function withSupabaseListFallback<T>(
+  context: string,
+  fetcher: () => Promise<T[]>,
+  fallback: () => T[]
+): Promise<T[]> {
+  if (!hasSupabaseConfig) {
+    lastContentSource = "local";
+    return fallback();
+  }
+
+  try {
+    const result = await fetcher();
+    if (result.length > 0) {
+      lastContentSource = "supabase";
+      return result;
+    }
+  } catch (error) {
+    warnSupabaseFallback(context, error);
+  }
+
+  lastContentSource = "local";
   return fallback();
 }
 
@@ -94,23 +148,11 @@ export async function getLessonById(
 export async function getLessonsByCourseId(
   courseId: string
 ): Promise<LessonContent[]> {
-  if (!hasSupabaseConfig) {
-    return getLocalLessonsByCourseId(courseId);
-  }
-
-  try {
-    const lessons = await getSupabaseLessonsByCourseId(courseId);
-    if (lessons.length > 0) {
-      return lessons;
-    }
-  } catch (error) {
-    console.warn(
-      `[content] Supabase getLessonsByCourseId(${courseId}) failed, using local fallback.`,
-      error
-    );
-  }
-
-  return getLocalLessonsByCourseId(courseId);
+  return withSupabaseListFallback(
+    `getLessonsByCourseId(${courseId})`,
+    () => getSupabaseLessonsByCourseId(courseId),
+    () => getLocalLessonsByCourseId(courseId)
+  );
 }
 
 export async function getCourseContentById(
@@ -134,20 +176,11 @@ export async function getCourseById(
 }
 
 export async function getAllLessonIds(): Promise<string[]> {
-  if (!hasSupabaseConfig) {
-    return getLocalAllLessonIds();
-  }
-
-  try {
-    const ids = await getSupabaseLessonIds();
-    if (ids.length > 0) {
-      return ids;
-    }
-  } catch (error) {
-    console.warn("[content] Supabase getAllLessonIds failed, using local fallback.", error);
-  }
-
-  return getLocalAllLessonIds();
+  return withSupabaseListFallback(
+    "getAllLessonIds",
+    () => getSupabaseLessonIds(),
+    () => getLocalAllLessonIds()
+  );
 }
 
 /** Sync lesson ids for static generation at build time (local content). */

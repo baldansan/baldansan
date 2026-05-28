@@ -13,6 +13,9 @@ type PageProps = {
   params: Promise<{ lessonId: string }>;
 };
 
+/** Fetch lesson from Supabase on each request when env is configured. */
+export const dynamic = "force-dynamic";
+
 export function generateStaticParams() {
   return getAllLessonIdsSync().map((lessonId) => ({ lessonId }));
 }

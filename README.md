@@ -106,8 +106,6 @@ Templates and AI prompt: [templates/](./templates/) (including [lesson-content-p
 
 ## Supabase read-only setup
 
-The app can load HSK5 lesson content from Supabase when env vars are set. Without them, it uses local TypeScript files (same as before).
-
 1. Copy [.env.example](./.env.example) to `.env.local`
 2. Paste your **Project URL** and **anon public** key from Supabase → Project Settings → API
 3. Restart the dev server: `npm run dev`
@@ -117,9 +115,31 @@ NEXT_PUBLIC_SUPABASE_URL=https://your-project.supabase.co
 NEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-key
 ```
 
-**Fallback:** If either variable is missing, or a Supabase read fails, `lib/content.ts` serves data from `content/courses/hsk5/lessons/*.ts`. The app does not crash.
+**Never commit `.env.local`** — it is gitignored (`.env*` with `!.env.example`).
 
 Read-only only — no auth, no progress writes to the database yet.
+
+## Content source behavior
+
+| Condition | Source |
+|-----------|--------|
+| `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_ANON_KEY` set | **Supabase-first** — courses, lessons, subtitles, vocabulary, quiz |
+| Env missing | **Local** — `content/courses/hsk5/lessons/*.ts` |
+| Env set but query fails or returns no rows | **Local fallback** — minimal server warning only |
+
+Helpers in `lib/content.ts`: `getCourseById`, `getCourseContentById`, `getLessonsByCourseId`, `getLessonById` (used by lesson detail, watch, vocabulary, quiz).
+
+### Verify Supabase-first mode
+
+1. Ensure `.env.local` is configured and `npm run dev` is running.
+2. In Supabase SQL Editor, update Lesson 1 metadata, for example:
+   ```sql
+   update lessons set subtitle = 'TEST from Supabase' where id = '1';
+   ```
+3. Open [http://localhost:3000/lessons/1](http://localhost:3000/lessons/1) and confirm the subtitle under the title shows `TEST from Supabase`.
+4. Restore the original subtitle when done.
+
+**Note:** The hero line uses `lessons.subtitle`. The “Subtitle preview” cards use the first rows from `subtitle_lines`, not `lessons.subtitle`.
 
 ## Next development steps
 
@@ -128,7 +148,8 @@ See [DEVELOPMENT_PLAN.md](./DEVELOPMENT_PLAN.md) for the full roadmap. Immediate
 1. ~~Real lesson data structure~~ ✅ Phase 2 (closed)
 2. ~~Supabase schema + seed~~ ✅ (manual SQL)
 3. ~~Supabase read-only in app~~ ✅ Phase 3 Step 4
-4. Authentication and user progress persistence
-5. Admin tools for content upload
-6. Membership / payments
-7. Mobile app (Expo)
+4. ~~Supabase-first production mode~~ ✅ Phase 3 Step 5
+5. Authentication and user progress persistence
+6. Admin tools for content upload
+7. Membership / payments
+8. Mobile app (Expo)

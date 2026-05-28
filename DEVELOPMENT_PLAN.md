@@ -63,12 +63,14 @@ Phased roadmap from MVP demo to production product.
 
 **Phase 3 Step 4 — Completed:** Read-only Supabase integration with local fallback (debug logs removed after connection test).
 
-- `@supabase/supabase-js`, `lib/supabase/client.ts`, `lib/supabase/content.ts`
-- `lib/content.ts` — async `getLessonById`, `getLessonsByCourseId`, `getCourseContentById`, `getCourseById`
-- `.env.example`; server-side fetch on lesson/course pages
+**Phase 3 Step 5 — Completed:** Supabase-first production mode with local fallback.
+
+- All public content helpers try Supabase when env is configured; empty/failed queries fall back to local files
+- `force-dynamic` on HSK5 and lesson routes so content updates without rebuild
+- `getContentSource()` for internal verification; standardized fallback warning
 - No auth or progress writes yet
 
-**Remaining tasks (Phase 3 / 4):**
+**Remaining tasks (Phase 4+):**
 - Store lesson completion %, quiz scores, learned vocabulary per user (Phase 4 auth)
 
 **Exit criteria:** Content edits happen in DB; progress survives page refresh for logged-in users.
