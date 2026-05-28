@@ -90,8 +90,13 @@ Phased roadmap from MVP demo to production product.
 
 - Mongolian branding, empty/error states, HSK5 lesson search, vocabulary result feedback, quiz progress bar, lesson not found polish
 
+**Phase 3 UX/progress prototype — Completed:** localStorage progress.
+
+- `lib/progress.ts` for lesson status, vocabulary learned words, and quiz results on this device
+- Phase 4 will migrate this to Supabase Auth + user progress tables
+
 **Remaining tasks (Phase 4+):**
-- Store lesson completion %, quiz scores, learned vocabulary per user (Phase 4 auth)
+- Supabase Auth; migrate localStorage progress to `user_progress` tables
 
 **Exit criteria:** Content edits happen in DB; progress survives page refresh for logged-in users.
 

@@ -162,11 +162,18 @@ Next Improvement Batch: course detail now renders Supabase lesson list including
 - Quiz: question progress bar; empty quiz state
 - Lesson not found: HSK5 + Courses back buttons
 
+**Local user progress persistence added** with localStorage for lessons, vocabulary, and quiz results.
+
+- `lib/progress.ts` — lesson status, learned words, quiz results (device-only)
+- Lesson detail: Not started / Started / Completed; Watch marks started; quiz ≥70% marks completed
+- Vocabulary learned state persists across refresh
+- Quiz saves results and best score; course page reads completed count from localStorage
+
 ---
 
 ## Next recommended tasks
 
-1. Phase 4: Supabase Auth + persist progress
+1. Phase 4: Supabase Auth + migrate progress to database
 2. Dynamic `/courses/[courseId]` route (optional)
 3. Real video provider
 

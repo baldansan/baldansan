@@ -1,7 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
+import { LocalProgressNote } from "@/components/local-progress-note";
 import { AppHeader } from "@/components/app-header";
 import { BottomNav } from "@/components/bottom-nav";
 import { EmptyState } from "@/components/empty-state";
@@ -11,6 +12,13 @@ import {
   lessonVocabularyPath,
   lessonWatchPath,
 } from "@/lib/content";
+import {
+  getQuizResult,
+  markLessonCompleted,
+  PASSING_QUIZ_PERCENT,
+  saveQuizResult,
+  type QuizResult,
+} from "@/lib/progress";
 import type { LessonContent } from "@/types/lesson-content";
 
 function getResultMessage(percent: number) {
@@ -32,6 +40,7 @@ export function LessonQuizClient({ lesson, nextLessonId }: Props) {
   const [revealed, setRevealed] = useState(false);
   const [correctCount, setCorrectCount] = useState(0);
   const [finished, setFinished] = useState(false);
+  const [savedResult, setSavedResult] = useState<QuizResult | null>(null);
 
   const current = lesson.quizQuestions[currentIndex];
   const isCorrect = selected === current?.correctAnswer;
@@ -45,6 +54,21 @@ export function LessonQuizClient({ lesson, nextLessonId }: Props) {
     () => (total > 0 ? Math.round((correctCount / total) * 100) : 0),
     [correctCount, total]
   );
+
+  useEffect(() => {
+    setSavedResult(getQuizResult(lesson.id));
+  }, [lesson.id]);
+
+  useEffect(() => {
+    if (!finished || total === 0) return;
+
+    const result = saveQuizResult(lesson.id, correctCount, total, percent);
+    setSavedResult(result);
+
+    if (percent >= PASSING_QUIZ_PERCENT) {
+      markLessonCompleted(lesson.id);
+    }
+  }, [finished, lesson.id, correctCount, total, percent]);
 
   function handleSelect(option: string) {
     if (!current || revealed) return;
@@ -154,6 +178,17 @@ export function LessonQuizClient({ lesson, nextLessonId }: Props) {
             <p className="mt-4 text-base font-medium text-slate-800">
               {getResultMessage(percent)}
             </p>
+            {savedResult ? (
+              <p className="mt-3 text-sm text-slate-600">
+                Best score: {savedResult.bestPercentage}%
+                {percent < savedResult.bestPercentage
+                  ? ` · This attempt: ${percent}%`
+                  : null}
+              </p>
+            ) : null}
+            <div className="mt-3">
+              <LocalProgressNote />
+            </div>
 
             <div className="mt-6 flex flex-col gap-3">
               <button

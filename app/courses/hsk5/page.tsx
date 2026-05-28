@@ -2,6 +2,7 @@ import Link from "next/link";
 import { AppHeader } from "@/components/app-header";
 import { BottomNav } from "@/components/bottom-nav";
 import { getCourseContentById, getLessonsByCourseId } from "@/lib/content";
+import { Hsk5CourseProgress } from "@/components/hsk5-course-progress";
 import { Hsk5LessonList } from "./hsk5-lesson-list";
 
 /** Fetch course and lessons from Supabase on each request when env is configured. */
@@ -26,10 +27,7 @@ export default async function Hsk5CoursePage() {
     { label: `${totalQuizQuestions} quiz questions` },
   ];
 
-  const { completed } = course.progress;
-  const progressTotal = totalLessons > 0 ? totalLessons : course.progress.total;
-  const progressPercent =
-    progressTotal > 0 ? Math.round((completed / progressTotal) * 100) : 0;
+  const lessonIds = lessons.map((lesson) => lesson.id);
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-emerald-50/40 via-white to-white text-slate-900">
@@ -71,21 +69,7 @@ export default async function Hsk5CoursePage() {
           ))}
         </section>
 
-        <section className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-emerald-200 sm:p-6">
-          <h2 className="text-lg font-semibold text-slate-900">Таны ахиц</h2>
-          <p className="mt-1 text-sm text-slate-600">
-            {completed} / {progressTotal} lessons completed
-          </p>
-          <div className="mt-4 h-2.5 w-full overflow-hidden rounded-full bg-slate-100">
-            <div
-              className="h-full rounded-full bg-emerald-500 transition-all"
-              style={{ width: `${progressPercent}%` }}
-            />
-          </div>
-          <p className="mt-2 text-sm font-medium text-emerald-700">
-            {progressPercent}%
-          </p>
-        </section>
+        <Hsk5CourseProgress lessonIds={lessonIds} />
 
         <section className="flex flex-col gap-4">
           <h2 className="text-xl font-semibold text-slate-900">Хичээлүүд</h2>

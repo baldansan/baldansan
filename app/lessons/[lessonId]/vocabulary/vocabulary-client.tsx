@@ -1,7 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
+import { LocalProgressNote } from "@/components/local-progress-note";
 import { AppHeader } from "@/components/app-header";
 import { BottomNav } from "@/components/bottom-nav";
 import { EmptyState } from "@/components/empty-state";
@@ -10,6 +11,11 @@ import {
   lessonQuizPath,
   lessonWatchPath,
 } from "@/lib/content";
+import {
+  getLearnedWords,
+  toggleLearnedWord,
+  vocabularyWordKey,
+} from "@/lib/progress";
 import type { LessonContent } from "@/types/lesson-content";
 import type { VocabularyFilter } from "@/types/lesson";
 
@@ -30,6 +36,10 @@ export function LessonVocabularyClient({ lesson }: Props) {
   const [search, setSearch] = useState("");
   const [filter, setFilter] = useState<VocabularyFilter>("all");
   const [learned, setLearned] = useState<Set<string>>(new Set());
+
+  useEffect(() => {
+    setLearned(new Set(getLearnedWords(lesson.id)));
+  }, [lesson.id]);
 
   const visibleFilters = useMemo(() => {
     const levels = new Set(lesson.vocabulary.map((word) => word.hskLevel));
@@ -57,16 +67,9 @@ export function LessonVocabularyClient({ lesson }: Props) {
     setFilter("all");
   }
 
-  function toggleLearned(id: string) {
-    setLearned((prev) => {
-      const next = new Set(prev);
-      if (next.has(id)) {
-        next.delete(id);
-      } else {
-        next.add(id);
-      }
-      return next;
-    });
+  function handleToggleLearned(wordKey: string) {
+    const next = toggleLearnedWord(lesson.id, wordKey);
+    setLearned(new Set(next));
   }
 
   return (
@@ -110,6 +113,9 @@ export function LessonVocabularyClient({ lesson }: Props) {
           <p className="mt-3 text-sm leading-6 text-slate-600">
             Эхлээд HSK түвшнээр шүүж, дараа нь Mark as learned дарж давтаарай.
           </p>
+          <div className="mt-2">
+            <LocalProgressNote />
+          </div>
         </section>
 
         <section className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:p-6">
@@ -175,10 +181,11 @@ export function LessonVocabularyClient({ lesson }: Props) {
             />
           ) : (
             filteredWords.map((word) => {
-              const isLearned = learned.has(word.id);
+              const key = vocabularyWordKey(word);
+              const isLearned = learned.has(key);
               return (
                 <article
-                  key={word.id}
+                  key={key}
                   className={
                     isLearned
                       ? "rounded-2xl bg-emerald-50/80 p-5 ring-2 ring-emerald-300 sm:p-6"
@@ -205,7 +212,7 @@ export function LessonVocabularyClient({ lesson }: Props) {
 
                   <button
                     type="button"
-                    onClick={() => toggleLearned(word.id)}
+                    onClick={() => handleToggleLearned(key)}
                     className={
                       isLearned
                         ? "mt-4 w-full rounded-full bg-emerald-600 px-4 py-2.5 text-sm font-semibold text-white ring-2 ring-emerald-400"

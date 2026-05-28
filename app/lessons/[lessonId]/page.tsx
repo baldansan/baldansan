@@ -3,12 +3,13 @@ import { notFound } from "next/navigation";
 import { AppHeader } from "@/components/app-header";
 import { BottomNav } from "@/components/bottom-nav";
 import { LessonPathCard } from "@/components/lesson-path-card";
+import { LessonProgressCard } from "@/components/lesson-progress-card";
+import { WatchLessonLink } from "@/components/watch-lesson-link";
 import {
   getAllLessonIdsSync,
   getLessonById,
   lessonQuizPath,
   lessonVocabularyPath,
-  lessonWatchPath,
   coursePath,
 } from "@/lib/content";
 
@@ -63,12 +64,12 @@ export default async function LessonDetailPage({ params }: PageProps) {
             </p>
           </div>
           <div className="mt-4 flex justify-center sm:justify-start">
-            <Link
-              href={lessonWatchPath(lesson.id)}
+            <WatchLessonLink
+              lessonId={lesson.id}
               className="rounded-full bg-emerald-500 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-emerald-600"
             >
               Watch lesson
-            </Link>
+            </WatchLessonLink>
           </div>
         </section>
 
@@ -150,17 +151,7 @@ export default async function LessonDetailPage({ params }: PageProps) {
           </div>
         </section>
 
-        <section className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-emerald-200 sm:p-6">
-          <h2 className="text-lg font-semibold text-slate-900">Таны ахиц</h2>
-          <p className="mt-1 text-sm text-slate-600">Lesson status: Not started</p>
-          <div className="mt-4 h-2.5 w-full overflow-hidden rounded-full bg-slate-100">
-            <div
-              className="h-full rounded-full bg-emerald-500 transition-all"
-              style={{ width: "0%" }}
-            />
-          </div>
-          <p className="mt-2 text-sm font-medium text-emerald-700">Progress: 0%</p>
-        </section>
+        <LessonProgressCard lessonId={lesson.id} />
       </main>
 
       <BottomNav />

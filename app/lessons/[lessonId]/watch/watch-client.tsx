@@ -1,7 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { markLessonStarted } from "@/lib/progress";
 import { AppHeader } from "@/components/app-header";
 import { BottomNav } from "@/components/bottom-nav";
 import {
@@ -50,6 +51,10 @@ type Props = {
 
 export function LessonWatchClient({ lesson }: Props) {
   const [mode, setMode] = useState<SubtitleMode>("both");
+
+  useEffect(() => {
+    markLessonStarted(lesson.id);
+  }, [lesson.id]);
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-emerald-50/40 via-white to-white text-slate-900">
