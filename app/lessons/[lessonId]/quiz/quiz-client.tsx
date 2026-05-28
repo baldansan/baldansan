@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useMemo, useState } from "react";
 import { AppHeader } from "@/components/app-header";
+import { BottomNav } from "@/components/bottom-nav";
 import {
   coursePath,
   lessonPath,
@@ -12,9 +13,9 @@ import {
 import type { LessonContent } from "@/types/lesson-content";
 
 function getResultMessage(percent: number) {
-  if (percent >= 80) return "Маш сайн байна!";
-  if (percent >= 50) return "Дахиад нэг давтаад үзье.";
-  return "Vocabulary хэсгээ дахин үзвэл илүү сайн.";
+  if (percent >= 90) return "Маш сайн! Дараагийн хичээл рүү орж болно.";
+  if (percent >= 70) return "Сайн байна. Алдсан үгээ vocabulary хэсгээс давтаарай.";
+  return "Дахиад нэг удаа үзээд quiz-ээ давтаарай.";
 }
 
 type Props = {
@@ -85,7 +86,7 @@ export function LessonQuizClient({ lesson, nextLessonId }: Props) {
     <div className="min-h-screen bg-gradient-to-b from-emerald-50/40 via-white to-white text-slate-900">
       <AppHeader />
 
-      <main className="mx-auto flex w-full max-w-5xl flex-col gap-6 px-4 pb-10 pt-2 sm:gap-8 sm:px-6">
+      <main className="mx-auto flex w-full max-w-5xl flex-col gap-6 px-4 pb-24 pt-2 sm:gap-8 sm:px-6 md:pb-10">
         <div className="flex flex-col gap-2 sm:flex-row sm:flex-wrap sm:gap-4">
           <Link
             href={lessonPath(lesson.id)}
@@ -229,6 +230,8 @@ export function LessonQuizClient({ lesson, nextLessonId }: Props) {
           )
         )}
       </main>
+
+      <BottomNav />
     </div>
   );
 }

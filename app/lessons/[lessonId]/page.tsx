@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { AppHeader } from "@/components/app-header";
+import { BottomNav } from "@/components/bottom-nav";
+import { LessonPathCard } from "@/components/lesson-path-card";
 import {
   getAllLessonIdsSync,
   getLessonById,
@@ -35,7 +37,7 @@ export default async function LessonDetailPage({ params }: PageProps) {
     <div className="min-h-screen bg-gradient-to-b from-emerald-50/40 via-white to-white text-slate-900">
       <AppHeader />
 
-      <main className="mx-auto flex w-full max-w-5xl flex-col gap-6 px-4 pb-10 pt-2 sm:gap-8 sm:px-6">
+      <main className="mx-auto flex w-full max-w-5xl flex-col gap-6 px-4 pb-24 pt-2 sm:gap-8 sm:px-6 md:pb-10">
         <Link
           href={coursePath(lesson.courseId)}
           className="inline-flex w-fit items-center text-sm font-medium text-slate-600 transition-colors hover:text-emerald-600"
@@ -51,6 +53,8 @@ export default async function LessonDetailPage({ params }: PageProps) {
             {lesson.subtitle}
           </p>
         </section>
+
+        <LessonPathCard lessonId={lesson.id} />
 
         <section className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:p-6">
           <div className="flex aspect-video w-full items-center justify-center rounded-xl bg-slate-100 ring-1 ring-slate-200">
@@ -158,6 +162,8 @@ export default async function LessonDetailPage({ params }: PageProps) {
           <p className="mt-2 text-sm font-medium text-emerald-700">Progress: 0%</p>
         </section>
       </main>
+
+      <BottomNav />
     </div>
   );
 }

@@ -144,6 +144,15 @@ Next Improvement Batch: course detail now renders Supabase lesson list including
 - Quiz result screen: “Next lesson” when another lesson exists in course order
 - Shared `AppHeader` for consistent nav (Brand `/`, Courses `/courses`, Demo `/lessons/1`, Profile `#`)
 
+**Learning UX polish batch completed:** lesson path, watch tips, vocabulary learned state, quiz result messages, course summary, and mobile nav.
+
+- Lesson detail: compact Lesson path card (Watch → Vocabulary → Quiz)
+- Watch: practice tip card; placeholder “Үг хадгалах” on subtitle cards (no DB write)
+- Vocabulary: prominent learned count, study tip, clear Mark as learned / Learned ✓ states
+- Quiz results: tiered messages at 90% / 70%; Next lesson button retained
+- HSK5 course: summary card from loaded lesson totals
+- `BottomNav` on main learning pages (mobile only)
+
 ---
 
 ## Next recommended tasks

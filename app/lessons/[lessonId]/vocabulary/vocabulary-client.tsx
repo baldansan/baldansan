@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useMemo, useState } from "react";
 import { AppHeader } from "@/components/app-header";
+import { BottomNav } from "@/components/bottom-nav";
 import {
   lessonPath,
   lessonQuizPath,
@@ -66,7 +67,7 @@ export function LessonVocabularyClient({ lesson }: Props) {
     <div className="min-h-screen bg-gradient-to-b from-emerald-50/40 via-white to-white text-slate-900">
       <AppHeader />
 
-      <main className="mx-auto flex w-full max-w-5xl flex-col gap-6 px-4 pb-10 pt-2 sm:gap-8 sm:px-6">
+      <main className="mx-auto flex w-full max-w-5xl flex-col gap-6 px-4 pb-24 pt-2 sm:gap-8 sm:px-6 md:pb-10">
         <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
           <Link
             href={lessonPath(lesson.id)}
@@ -89,8 +90,19 @@ export function LessonVocabularyClient({ lesson }: Props) {
           <p className="mt-2 text-base text-slate-600">
             Үг бүрийг pinyin, Монгол утга, жишээ өгүүлбэртэй сур.
           </p>
-          <p className="mt-3 text-sm font-medium text-emerald-700">
-            Learned: {learned.size} / {lesson.vocabulary.length}
+          <div className="mt-4 rounded-2xl bg-emerald-50 px-4 py-3 ring-1 ring-emerald-200">
+            <p className="text-xs font-semibold uppercase tracking-wide text-emerald-700">
+              Learned
+            </p>
+            <p className="mt-1 text-2xl font-bold text-emerald-800">
+              {learned.size}{" "}
+              <span className="text-lg font-semibold text-emerald-600">
+                / {lesson.vocabulary.length}
+              </span>
+            </p>
+          </div>
+          <p className="mt-3 text-sm leading-6 text-slate-600">
+            Эхлээд HSK түвшнээр шүүж, дараа нь Mark as learned дарж давтаарай.
           </p>
         </section>
 
@@ -164,8 +176,8 @@ export function LessonVocabularyClient({ lesson }: Props) {
                     onClick={() => toggleLearned(word.id)}
                     className={
                       isLearned
-                        ? "mt-4 w-full rounded-full border border-emerald-300 bg-white px-4 py-2.5 text-sm font-semibold text-emerald-700 transition-colors hover:bg-emerald-50"
-                        : "mt-4 w-full rounded-full bg-emerald-500 px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-emerald-600"
+                        ? "mt-4 w-full rounded-full bg-emerald-600 px-4 py-2.5 text-sm font-semibold text-white ring-2 ring-emerald-400"
+                        : "mt-4 w-full rounded-full border-2 border-emerald-500 bg-white px-4 py-2.5 text-sm font-semibold text-emerald-700 transition-colors hover:bg-emerald-50"
                     }
                   >
                     {isLearned ? "Learned ✓" : "Mark as learned"}
@@ -191,6 +203,8 @@ export function LessonVocabularyClient({ lesson }: Props) {
           </Link>
         </section>
       </main>
+
+      <BottomNav />
     </div>
   );
 }

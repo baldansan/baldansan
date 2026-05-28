@@ -82,6 +82,10 @@ Phased roadmap from MVP demo to production product.
 - Quiz results link to the next lesson in course order when available
 - Shared `AppHeader` for consistent navigation across pages
 
+**Phase 3 UX polish — Completed:** Learning UX polish batch.
+
+- Lesson path card, watch practice tips, vocabulary learned UI, quiz result tiers, course summary card, mobile `BottomNav`
+
 **Remaining tasks (Phase 4+):**
 - Store lesson completion %, quiz scores, learned vocabulary per user (Phase 4 auth)
 
