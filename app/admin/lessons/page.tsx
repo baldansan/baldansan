@@ -1,14 +1,14 @@
 import { AdminLessonsList } from "@/components/admin/admin-lessons-list";
-import { getLessonsByCourseId } from "@/lib/content";
+import { getHsk5LessonsWithQa } from "@/lib/admin/lesson-qa";
 
 export const dynamic = "force-dynamic";
 
 export const metadata = {
-  title: "Admin lessons — Buunduu Surtsgaay",
+  title: "Lesson Management — Admin",
 };
 
 export default async function AdminLessonsPage() {
-  const lessons = await getLessonsByCourseId("hsk5");
+  const reports = await getHsk5LessonsWithQa();
 
-  return <AdminLessonsList lessons={lessons} />;
+  return <AdminLessonsList reports={reports} />;
 }

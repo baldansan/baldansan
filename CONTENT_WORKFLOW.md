@@ -1,6 +1,23 @@
 # Content workflow — lesson upload (planned)
 
-Future workflow for admins publishing lessons through the Phase 5 admin UI. **No admin UI exists yet** — this describes the intended process after Steps 3–8.
+Future workflow for admins publishing lessons through the Phase 5 admin UI. **Write/publish is not enabled yet** — use the QA dashboard before going live.
+
+---
+
+## Content QA before publish
+
+Admins should use **`/admin/lessons`** (Lesson Management QA dashboard) to verify each lesson before publishing:
+
+| Check | QA rule |
+|-------|---------|
+| Metadata | Title, Chinese title, description, duration present |
+| Subtitles | At least one timed subtitle line |
+| Vocabulary | At least one word; count matches metadata `vocabulary_count` |
+| Quiz | At least one question; count matches metadata `quiz_count` |
+
+QA badge **Complete** means all checks pass. **Needs review** lists warnings (e.g. “No subtitles”, “Count mismatch”). Preview public routes from the QA table before setting `available`.
+
+---
 
 See also: [ADMIN_PLAN.md](./ADMIN_PLAN.md), [CONTENT_AUTHORING_GUIDE.md](./CONTENT_AUTHORING_GUIDE.md) (developer/local authoring today).
 

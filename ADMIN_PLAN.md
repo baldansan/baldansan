@@ -3,7 +3,8 @@
 Admin content management: plan, UI foundation, and future Supabase writes with RLS.
 
 **Phase 5 Step 1 — Completed:** Admin foundation (UI shell, read-only forms).  
-**Phase 5 Step 2 — Completed:** `admin_profiles` SQL setup, `lib/supabase/admin.ts`, `AdminGuard` on all `/admin` routes. **No content writes.**
+**Phase 5 Step 2 — Completed:** `admin_profiles` + `AdminGuard`.  
+**Phase 5 Step 3 — Completed:** Lesson Management QA dashboard + edit previews. **No content writes.**
 
 ---
 
@@ -88,13 +89,15 @@ See [CONTENT_WORKFLOW.md](./CONTENT_WORKFLOW.md):
 |------|--------|--------|
 | 1 | Admin foundation and dashboard shell | ✅ Completed |
 | 2 | Admin role table + manual admin setup + protected `/admin` | ✅ Completed |
-| 3 | Admin lesson list with safe Supabase read and admin-only access | Next |
-| 4 | Lesson create/edit form with safe draft mode (writes) | Planned |
+| 3 | Admin lesson list + content QA dashboard | ✅ Completed |
+| 4 | Lesson create draft write | Next |
 | 5 | Subtitle editor | Planned |
 | 6 | Vocabulary editor | Planned |
 | 7 | Quiz editor | Planned |
 | 8 | Publish/unpublish workflow | Planned |
 | 9 | Phase 5 final audit | Planned |
+
+Step 3: [lib/admin/lesson-qa.ts](./lib/admin/lesson-qa.ts), `/admin/lessons` QA dashboard.
 
 **Exit criteria:** New lesson published via admin without SQL seeds or app deploy.
 

@@ -190,14 +190,21 @@ Phased roadmap from MVP demo to production product.
 - [components/admin/admin-guard.tsx](./components/admin/admin-guard.tsx) — wraps all `/admin` routes via layout
 - No content CRUD writes yet
 
+**Phase 5 Step 3 — Completed:** Admin lesson list + content QA dashboard.
+
+- [lib/admin/lesson-qa.ts](./lib/admin/lesson-qa.ts) — full lesson fetch, completeness analysis
+- `/admin/lessons` — summary cards, QA table, search/status/QA filters, preview links
+- `/admin` dashboard — Content QA, needs review counts
+- `/admin/lessons/[id]/edit` — read-only subtitle/vocab/quiz previews
+
 **Phase 5 roadmap:**
 
 | Step | Focus | Status |
 |------|--------|--------|
 | 1 | Admin foundation and dashboard shell | ✅ Completed |
 | 2 | Admin role table + manual admin setup + protected admin access | ✅ Completed |
-| 3 | Admin lesson list with safe Supabase read and admin-only access | Next |
-| 4 | Lesson create/edit with safe draft writes | Planned |
+| 3 | Admin lesson list + content QA dashboard | ✅ Completed |
+| 4 | Lesson create draft write | Next |
 | 5 | Subtitle editor | Planned |
 | 6 | Vocabulary editor | Planned |
 | 7 | Quiz editor | Planned |

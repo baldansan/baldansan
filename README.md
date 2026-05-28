@@ -135,7 +135,7 @@ Helpers: [lib/supabase/auth.ts](./lib/supabase/auth.ts). Header shows **Нэвт
 
 **Routes:** `/admin` · `/admin/lessons` · `/admin/lessons/new` · `/admin/lessons/1/edit` (example)
 
-**Next step:** Phase 5 Step 3 — Admin lesson list with safe Supabase read.
+**Next step:** Phase 5 Step 4 — Lesson create draft write.
 
 ## Documentation
 

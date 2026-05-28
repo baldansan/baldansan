@@ -4,10 +4,16 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { AdminCard } from "@/components/admin/admin-card";
 import { AdminSectionTitle } from "@/components/admin/admin-section-title";
+import { AdminSummaryCard } from "@/components/admin/admin-summary-card";
 import { getCurrentUser, hasSupabaseConfig } from "@/lib/supabase/auth";
+import type { LessonQaSummary } from "@/lib/admin/lesson-qa";
 import type { AuthUser } from "@/types/auth";
 
-export function AdminDashboard() {
+type Props = {
+  summary: LessonQaSummary;
+};
+
+export function AdminDashboard({ summary }: Props) {
   const [user, setUser] = useState<AuthUser | null>(null);
 
   useEffect(() => {
@@ -32,34 +38,50 @@ export function AdminDashboard() {
         ) : null}
       </section>
 
+      <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
+        <AdminSummaryCard
+          label="Needs review"
+          value={summary.needsReviewCount}
+        />
+        <AdminSummaryCard label="Complete" value={summary.completeCount} />
+        <AdminSummaryCard label="Available" value={summary.availableCount} />
+        <AdminSummaryCard label="Total lessons" value={summary.totalLessons} />
+      </div>
+
       <AdminSectionTitle
         title="Хэсгүүд"
-        description="Дараагийн алхмуудад subtitle, vocabulary, quiz засварлагч нэмэгдэнэ."
+        description="Content QA-аар publish-ийн өмнө subtitle, vocabulary, quiz шалгана."
       />
 
       <div className="grid gap-4 sm:grid-cols-2">
         <AdminCard
+          title="Content QA"
+          description={`${summary.totalLessons} хичээл — metadata, subtitle, vocabulary, quiz бүрэн байдлыг шалгах.`}
+          href="/admin/lessons"
+        />
+        <AdminCard
+          title="Lessons needing review"
+          description={`${summary.needsReviewCount} хичээл засах эсвэл контент нэмэх шаардлагатай.`}
+          href="/admin/lessons"
+        />
+        <AdminCard
+          title="Available lessons"
+          description={`${summary.availableCount} нийтлэгдсэн хичээл public route дээр.`}
+          href="/admin/lessons"
+        />
+        <AdminCard
+          title="Next action: Create lesson draft"
+          description="Шинэ хичээлийн metadata skeleton — save дараагийн алхамд."
+          href="/admin/lessons/new"
+        />
+        <AdminCard
           title="Хичээлүүд"
-          description="HSK5 хичээлүүдийг жагсаах, засах, шинээр үүсгэх (UI skeleton)."
-          href="/admin/lessons"
-        />
-        <AdminCard
-          title="Ноорог контент"
-          description="Ноорог статустай хичээлүүд — publish workflow дараагийн алхам."
-          href="/admin/lessons"
-        />
-        <AdminCard
-          title="Нийтлэгдсэн хичээл"
-          description="available статустай хичээлүүдийг хянах."
+          description="Бүх хичээлийн QA хүснэгт, preview холбоос."
           href="/admin/lessons"
         />
         <AdminCard
           title="Upload workflow"
-          description="Контент нэмэх алхам: metadata → subtitle → vocabulary → quiz → preview → publish."
-        />
-        <AdminCard
-          title="Content quality checklist"
-          description="Subtitle, vocabulary тоо, quiz тоо, public route шалгалт publish-ийн өмнө."
+          description="metadata → subtitle → vocabulary → quiz → preview → publish"
         />
       </div>
 
@@ -71,7 +93,7 @@ export function AdminDashboard() {
               href="/admin/lessons"
               className="font-medium text-emerald-700 hover:text-emerald-800"
             >
-              Хичээл удирдах →
+              Content QA →
             </Link>
           </li>
           <li>

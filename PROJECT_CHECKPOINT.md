@@ -2,7 +2,21 @@
 
 **Project:** Buunduu Surtsgaay (Бөөндөө Сурцгаая)  
 **Checkpoint date:** May 2026  
-**Status:** Phase 4 **completed**; Phase 5 Step 2 **completed** — protected admin access
+**Status:** Phase 4 **completed**; Phase 5 Step 3 **completed** — admin content QA dashboard
+
+---
+
+## Phase 5 Step 3 — Admin lesson list + QA — **Completed**
+
+Lesson Management QA at `/admin/lessons`; edit page content previews. No writes.
+
+| Area | Deliverable |
+|------|-------------|
+| QA logic | [lib/admin/lesson-qa.ts](./lib/admin/lesson-qa.ts) |
+| UI | [components/admin/admin-lessons-list.tsx](./components/admin/admin-lessons-list.tsx), summary cards, QA badges |
+| Edit preview | Subtitle / vocabulary / quiz read-only sections |
+
+**Next:** Phase 5 Step 4 — Lesson create draft write.
 
 ---
 
