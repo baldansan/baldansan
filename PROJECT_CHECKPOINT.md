@@ -2,7 +2,7 @@
 
 **Project:** Buunduu Surtsgaay  
 **Checkpoint date:** May 2026  
-**Status:** MVP demo complete; Phase 2 closed; Phase 3 Step 1 (schema planning) complete
+**Status:** MVP demo complete; Phase 2 closed; Phase 3 Step 4 (Supabase read-only) complete
 
 ---
 
@@ -105,20 +105,26 @@ Lesson pages are **data-driven** via dynamic segments. Content lives under `cont
 
 ---
 
-## Phase 3 Step 1 — Supabase schema planning completed
+## Phase 3 — Supabase
 
-- SQL migration: `supabase/migrations/001_initial_schema.sql` (8 tables, indexes, `updated_at` triggers)
-- Docs: `DATABASE_SCHEMA.md`, `supabase/README.md`, `supabase/SEED_PLAN.md`
-- App unchanged: no Supabase client, auth, or UI/route changes; Lessons 1–3 still from local TypeScript
+**Step 1:** Schema planning — `supabase/migrations/001_initial_schema.sql`, docs.
+
+**Step 3:** Seed SQL — `supabase/seed/001_seed_hsk5_lessons.sql` (Lessons 1–3).
+
+**Step 4 — Supabase read-only integration completed:**
+
+- `@supabase/supabase-js`, `lib/supabase/client.ts`, `lib/supabase/content.ts`
+- `lib/content.ts` async helpers: Supabase first, local fallback on missing env or errors
+- Lesson pages fetch on server; watch/vocabulary/quiz use server + client split
+- `.env.example` for `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_ANON_KEY`
+- No auth, no progress writes, no UI/route changes
 
 ---
 
 ## Next recommended tasks
 
-1. Create Supabase project and run `001_initial_schema.sql` in SQL Editor
-2. Seed HSK5 + Lessons 1–3 per `supabase/SEED_PLAN.md`
-3. Dynamic `/courses/[courseId]` route (optional)
-4. Supabase client + replace `lib/content.ts` reads (Phase 3 later steps)
+1. Phase 4: Supabase Auth + persist progress
+2. Dynamic `/courses/[courseId]` route (optional)
 3. Shared `AppHeader` component
 4. Real video provider
 

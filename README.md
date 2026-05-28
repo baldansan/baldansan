@@ -43,7 +43,8 @@ content/courses/hsk5/        # Course + per-lesson content
   lessons/lesson-1.ts …
 templates/                   # Lesson import templates + AI prompt
 data/courses.ts              # Course catalog mock data
-lib/content.ts               # getLessonById, getLessonsByCourseId, …
+lib/content.ts               # getLessonById, getLessonsByCourseId, … (Supabase + local fallback)
+lib/supabase/                # Supabase client + read-only content helpers
 types/                       # course.ts, lesson.ts, lesson-content.ts
 ```
 
@@ -98,19 +99,36 @@ Templates and AI prompt: [templates/](./templates/) (including [lesson-content-p
 
 ## Phase 3 Supabase planning
 
-Schema and seed documentation only — the app still uses local `content/` files (no Supabase client yet).
-
 - [DATABASE_SCHEMA.md](./DATABASE_SCHEMA.md) — tables, columns, relationships
 - [supabase/README.md](./supabase/README.md) — migrations folder and how to run SQL in Supabase
 - [supabase/SEED_PLAN.md](./supabase/SEED_PLAN.md) — mapping local lessons 1–3 to database rows
+- [supabase/seed/README.md](./supabase/seed/README.md) — seed SQL for Lessons 1–3
+
+## Supabase read-only setup
+
+The app can load HSK5 lesson content from Supabase when env vars are set. Without them, it uses local TypeScript files (same as before).
+
+1. Copy [.env.example](./.env.example) to `.env.local`
+2. Paste your **Project URL** and **anon public** key from Supabase → Project Settings → API
+3. Restart the dev server: `npm run dev`
+
+```env
+NEXT_PUBLIC_SUPABASE_URL=https://your-project.supabase.co
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-key
+```
+
+**Fallback:** If either variable is missing, or a Supabase read fails, `lib/content.ts` serves data from `content/courses/hsk5/lessons/*.ts`. The app does not crash.
+
+Read-only only — no auth, no progress writes to the database yet.
 
 ## Next development steps
 
 See [DEVELOPMENT_PLAN.md](./DEVELOPMENT_PLAN.md) for the full roadmap. Immediate priorities:
 
 1. ~~Real lesson data structure~~ ✅ Phase 2 (closed)
-2. **Supabase** — create project, run migration, seed content ← Phase 3 (schema planned)
-3. Authentication and user progress persistence
-4. Admin tools for content upload
-5. Membership / payments
-6. Mobile app (Expo)
+2. ~~Supabase schema + seed~~ ✅ (manual SQL)
+3. ~~Supabase read-only in app~~ ✅ Phase 3 Step 4
+4. Authentication and user progress persistence
+5. Admin tools for content upload
+6. Membership / payments
+7. Mobile app (Expo)

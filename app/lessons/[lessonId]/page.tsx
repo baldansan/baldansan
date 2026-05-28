@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import {
-  getAllLessonIds,
+  getAllLessonIdsSync,
   getLessonById,
   lessonQuizPath,
   lessonVocabularyPath,
@@ -14,12 +14,12 @@ type PageProps = {
 };
 
 export function generateStaticParams() {
-  return getAllLessonIds().map((lessonId) => ({ lessonId }));
+  return getAllLessonIdsSync().map((lessonId) => ({ lessonId }));
 }
 
 export default async function LessonDetailPage({ params }: PageProps) {
   const { lessonId } = await params;
-  const lesson = getLessonById(lessonId);
+  const lesson = await getLessonById(lessonId);
 
   if (!lesson) {
     notFound();

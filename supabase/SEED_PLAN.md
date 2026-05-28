@@ -1,6 +1,10 @@
 # Seed plan — local content → Supabase
 
-This document describes how existing TypeScript content will be inserted into the database **in a later Phase 3 step**. No seed scripts or DB writes exist yet.
+This document describes how existing TypeScript content maps to the database.
+
+**Phase 3 Step 3:** Seed SQL created — `supabase/seed/001_seed_hsk5_lessons.sql` (run manually in Supabase SQL Editor).
+
+**Phase 3 Step 4:** The Next.js app reads from Supabase when `.env.local` is configured; otherwise it uses local TypeScript files.
 
 ## Source files
 

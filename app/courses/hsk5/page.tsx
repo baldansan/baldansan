@@ -6,9 +6,9 @@ function lessonButtonLabel(status: LessonContentStatus) {
   return status === "available" ? "Start" : "Locked";
 }
 
-export default function Hsk5CoursePage() {
-  const course = getCourseContentById("hsk5");
-  const lessons = getLessonsByCourseId("hsk5");
+export default async function Hsk5CoursePage() {
+  const course = await getCourseContentById("hsk5");
+  const lessons = await getLessonsByCourseId("hsk5");
 
   if (!course) {
     return null;

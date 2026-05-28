@@ -54,18 +54,22 @@ Phased roadmap from MVP demo to production product.
 
 **Goal:** Persistent, queryable content and progress.
 
-**Phase 3 Step 1 — Completed:** Supabase schema planning (no app connection yet).
+**Phase 3 Step 1 — Completed:** Supabase schema planning.
 
-- `supabase/migrations/001_initial_schema.sql` — `courses`, `lessons`, `subtitle_lines`, `vocabulary_words`, `quiz_questions`, `user_lesson_progress`, `user_vocabulary_progress`, `user_quiz_attempts`
-- `DATABASE_SCHEMA.md`, `supabase/README.md`, `supabase/SEED_PLAN.md`
+- `supabase/migrations/001_initial_schema.sql`, `DATABASE_SCHEMA.md`, `supabase/README.md`, `supabase/SEED_PLAN.md`
 - RLS deferred to Phase 4 (commented in SQL)
 
-**Remaining tasks:**
-- Create Supabase project; run migration in SQL Editor
-- Seed DB from `content/courses/hsk5/` (Lessons 1–3) per `supabase/SEED_PLAN.md`
-- Add `@supabase/supabase-js` and env configuration
-- Replace `lib/content.ts` / catalog reads with Supabase (server or RSC)
-- Store lesson completion %, quiz scores, learned vocabulary per user (after auth in Phase 4)
+**Phase 3 Step 3 — Completed:** Seed SQL for HSK5 Lessons 1–3 (`supabase/seed/001_seed_hsk5_lessons.sql`).
+
+**Phase 3 Step 4 — Completed:** Read-only Supabase integration with local fallback.
+
+- `@supabase/supabase-js`, `lib/supabase/client.ts`, `lib/supabase/content.ts`
+- `lib/content.ts` — async `getLessonById`, `getLessonsByCourseId`, `getCourseContentById`, `getCourseById`
+- `.env.example`; server-side fetch on lesson/course pages
+- No auth or progress writes yet
+
+**Remaining tasks (Phase 3 / 4):**
+- Store lesson completion %, quiz scores, learned vocabulary per user (Phase 4 auth)
 
 **Exit criteria:** Content edits happen in DB; progress survives page refresh for logged-in users.
 
