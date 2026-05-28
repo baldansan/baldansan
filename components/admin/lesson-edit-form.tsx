@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { useCallback, useEffect, useState } from "react";
-import { lessonPath } from "@/lib/content";
 import { lessonPreviewPath } from "@/lib/lesson-publish";
 import { analyzeLessonQaFromCounts } from "@/lib/admin/lesson-qa";
 import { getAdminPublishStatus } from "@/lib/admin/lesson-status";
@@ -201,29 +200,51 @@ export function LessonEditForm({ lesson, initialCompleteness }: Props) {
       <PublishingControls lesson={lesson} initialCompleteness={completeness} />
 
       <section className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:p-6">
-        <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-          <button
-            type="button"
-            disabled
-            className="cursor-not-allowed rounded-full bg-slate-200 px-6 py-3 text-sm font-semibold text-slate-500"
-          >
-            Update lesson — coming soon
-          </button>
+        <h2 className="text-base font-semibold text-slate-900">Preview links</h2>
+        <p className="mt-1 text-sm text-slate-600">
+          {publishStatus === "available"
+            ? "Нийтлэгдсэн хичээл — public preview."
+            : "Ноорог/архив — ?preview=admin (зөвхөн admin)."}
+        </p>
+        <div className="mt-4 flex flex-col gap-2 sm:flex-row sm:flex-wrap">
           <Link
-            href={
-              publishStatus === "available"
-                ? lessonPath(lesson.id)
-                : lessonPreviewPath(lesson.id, { adminPreview: true })
-            }
-            className="inline-flex justify-center rounded-full border border-emerald-200 bg-emerald-50 px-6 py-3 text-sm font-semibold text-emerald-800 transition-colors hover:bg-emerald-100"
+            href={lessonPreviewPath(lesson.id, {
+              adminPreview: publishStatus !== "available",
+            })}
+            className="inline-flex justify-center rounded-full border border-emerald-200 bg-emerald-50 px-5 py-2.5 text-sm font-semibold text-emerald-800 transition-colors hover:bg-emerald-100"
           >
-            {publishStatus === "available"
-              ? "Preview public lesson →"
-              : "Admin preview lesson →"}
+            Lesson detail
+          </Link>
+          <Link
+            href={lessonPreviewPath(lesson.id, {
+              adminPreview: publishStatus !== "available",
+              subpath: "watch",
+            })}
+            className="inline-flex justify-center rounded-full border border-emerald-200 bg-emerald-50 px-5 py-2.5 text-sm font-semibold text-emerald-800 transition-colors hover:bg-emerald-100"
+          >
+            Watch
+          </Link>
+          <Link
+            href={lessonPreviewPath(lesson.id, {
+              adminPreview: publishStatus !== "available",
+              subpath: "vocabulary",
+            })}
+            className="inline-flex justify-center rounded-full border border-emerald-200 bg-emerald-50 px-5 py-2.5 text-sm font-semibold text-emerald-800 transition-colors hover:bg-emerald-100"
+          >
+            Vocabulary
+          </Link>
+          <Link
+            href={lessonPreviewPath(lesson.id, {
+              adminPreview: publishStatus !== "available",
+              subpath: "quiz",
+            })}
+            className="inline-flex justify-center rounded-full border border-emerald-200 bg-emerald-50 px-5 py-2.5 text-sm font-semibold text-emerald-800 transition-colors hover:bg-emerald-100"
+          >
+            Quiz
           </Link>
           <Link
             href="/admin/lessons"
-            className="inline-flex justify-center rounded-full border border-slate-200 px-6 py-3 text-sm font-medium text-slate-700 transition-colors hover:border-emerald-200 hover:text-emerald-700"
+            className="inline-flex justify-center rounded-full border border-slate-200 px-5 py-2.5 text-sm font-medium text-slate-700 transition-colors hover:border-emerald-200 hover:text-emerald-700"
           >
             ← Content QA
           </Link>

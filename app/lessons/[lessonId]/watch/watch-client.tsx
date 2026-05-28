@@ -6,11 +6,7 @@ import { markLessonStartedSmart } from "@/lib/progress";
 import { AdminPreviewBanner } from "@/components/admin-preview-banner";
 import { AppHeader } from "@/components/app-header";
 import { BottomNav } from "@/components/bottom-nav";
-import {
-  lessonPath,
-  lessonQuizPath,
-  lessonVocabularyPath,
-} from "@/lib/content";
+import { lessonPreviewPath } from "@/lib/lesson-publish";
 import type { LessonContent } from "@/types/lesson-content";
 import type { SubtitleMode, TimedSubtitle } from "@/types/lesson";
 
@@ -65,7 +61,7 @@ export function LessonWatchClient({ lesson, adminPreview = false }: Props) {
       <main className="mx-auto flex w-full max-w-5xl flex-col gap-6 px-4 pb-24 pt-2 sm:gap-8 sm:px-6 md:pb-10">
         {adminPreview ? <AdminPreviewBanner /> : null}
         <Link
-          href={lessonPath(lesson.id)}
+          href={lessonPreviewPath(lesson.id, { adminPreview })}
           className="inline-flex w-fit items-center text-sm font-medium text-slate-600 transition-colors hover:text-emerald-600"
         >
           ← Lesson detail руу буцах
@@ -150,13 +146,19 @@ export function LessonWatchClient({ lesson, adminPreview = false }: Props) {
 
         <section className="flex flex-col gap-3 sm:flex-row">
           <Link
-            href={lessonVocabularyPath(lesson.id)}
+            href={lessonPreviewPath(lesson.id, {
+              adminPreview,
+              subpath: "vocabulary",
+            })}
             className="flex-1 rounded-full border border-emerald-200 bg-emerald-50 px-5 py-3 text-center text-sm font-semibold text-emerald-700 transition-colors hover:bg-emerald-100"
           >
             Vocabulary
           </Link>
           <Link
-            href={lessonQuizPath(lesson.id)}
+            href={lessonPreviewPath(lesson.id, {
+              adminPreview,
+              subpath: "quiz",
+            })}
             className="flex-1 rounded-full bg-emerald-500 px-5 py-3 text-center text-sm font-semibold text-white transition-colors hover:bg-emerald-600"
           >
             Quiz

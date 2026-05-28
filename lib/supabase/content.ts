@@ -1,5 +1,6 @@
 import { hsk5Course } from "@/content/courses/hsk5";
 import { hasSupabaseConfig, supabase } from "@/lib/supabase/client";
+import type { SupabaseClient } from "@supabase/supabase-js";
 import type { Course } from "@/types/course";
 import type {
   CourseContent,
@@ -312,14 +313,11 @@ async function fetchSupabaseLessonsByCourse(
   return (data as DbLesson[]).map(mapLessonRowToSummary);
 }
 
-export async function getSupabaseLessonById(
-  lessonId: string
+export async function getSupabaseLessonByIdWithClient(
+  lessonId: string,
+  client: SupabaseClient
 ): Promise<LessonContent | undefined> {
-  if (!hasSupabaseConfig || !supabase) {
-    return undefined;
-  }
-
-  const { data: lesson, error: lessonError } = await supabase
+  const { data: lesson, error: lessonError } = await client
     .from("lessons")
     .select(
       "id, course_id, title, chinese_title, subtitle, description, duration, vocabulary_count, quiz_count, status, order_index"
@@ -331,21 +329,21 @@ export async function getSupabaseLessonById(
   if (!lesson) return undefined;
 
   const [subtitlesResult, vocabularyResult, quizResult] = await Promise.all([
-    supabase
+    client
       .from("subtitle_lines")
       .select(
         "lesson_id, start_time, end_time, chinese, pinyin, mongolian, order_index"
       )
       .eq("lesson_id", lessonId)
       .order("order_index", { ascending: true }),
-    supabase
+    client
       .from("vocabulary_words")
       .select(
         "id, lesson_id, chinese, pinyin, mongolian, hsk_level, example_chinese, example_mongolian, order_index"
       )
       .eq("lesson_id", lessonId)
       .order("order_index", { ascending: true }),
-    supabase
+    client
       .from("quiz_questions")
       .select(
         "id, lesson_id, type, question, options, correct_answer, explanation, order_index"
@@ -364,6 +362,16 @@ export async function getSupabaseLessonById(
     (vocabularyResult.data ?? []) as DbVocabularyWord[],
     (quizResult.data ?? []) as DbQuizQuestion[]
   );
+}
+
+export async function getSupabaseLessonById(
+  lessonId: string
+): Promise<LessonContent | undefined> {
+  if (!hasSupabaseConfig || !supabase) {
+    return undefined;
+  }
+
+  return getSupabaseLessonByIdWithClient(lessonId, supabase);
 }
 
 /** Maps `chinese` → `vocabulary_words.id` for progress writes when lesson content is local fallback. */

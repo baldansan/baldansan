@@ -7,11 +7,7 @@ import { AdminPreviewBanner } from "@/components/admin-preview-banner";
 import { AppHeader } from "@/components/app-header";
 import { BottomNav } from "@/components/bottom-nav";
 import { EmptyState } from "@/components/empty-state";
-import {
-  lessonPath,
-  lessonQuizPath,
-  lessonWatchPath,
-} from "@/lib/content";
+import { lessonPreviewPath } from "@/lib/lesson-publish";
 import { enrichVocabularyWithDbIds } from "@/lib/supabase/content";
 import {
   getLearnedWordsSmart,
@@ -129,13 +125,13 @@ export function LessonVocabularyClient({
         {adminPreview ? <AdminPreviewBanner /> : null}
         <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
           <Link
-            href={lessonPath(lesson.id)}
+            href={lessonPreviewPath(lesson.id, { adminPreview })}
             className="inline-flex w-fit items-center text-sm font-medium text-slate-600 transition-colors hover:text-emerald-600"
           >
             ← Lesson detail
           </Link>
           <Link
-            href={lessonWatchPath(lesson.id)}
+            href={lessonPreviewPath(lesson.id, { adminPreview, subpath: "watch" })}
             className="inline-flex w-fit items-center text-sm font-medium text-emerald-700 transition-colors hover:text-emerald-600"
           >
             Watch lesson →
@@ -208,7 +204,7 @@ export function LessonVocabularyClient({
               description="Энэ хичээлд үгийн жагсаалт одоогоор байхгүй байна."
               action={
                 <Link
-                  href={lessonPath(lesson.id)}
+                  href={lessonPreviewPath(lesson.id, { adminPreview })}
                   className="rounded-full bg-emerald-500 px-5 py-2 text-sm font-semibold text-white transition-colors hover:bg-emerald-600"
                 >
                   Back to lesson
@@ -281,13 +277,16 @@ export function LessonVocabularyClient({
 
         <section className="flex flex-col gap-3 sm:flex-row">
           <Link
-            href={lessonWatchPath(lesson.id)}
+            href={lessonPreviewPath(lesson.id, { adminPreview, subpath: "watch" })}
             className="flex-1 rounded-full border border-emerald-200 bg-emerald-50 px-5 py-3 text-center text-sm font-semibold text-emerald-700 transition-colors hover:bg-emerald-100"
           >
             Watch lesson
           </Link>
           <Link
-            href={lessonQuizPath(lesson.id)}
+            href={lessonPreviewPath(lesson.id, {
+              adminPreview,
+              subpath: "quiz",
+            })}
             className="flex-1 rounded-full bg-emerald-500 px-5 py-3 text-center text-sm font-semibold text-white transition-colors hover:bg-emerald-600"
           >
             Quiz

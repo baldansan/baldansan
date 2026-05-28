@@ -11,11 +11,16 @@ export function isPublicLesson(lesson: LessonContent): boolean {
   return getLessonPublishStatus(lesson) === "available";
 }
 
+export type LessonPreviewSubpath = "watch" | "vocabulary" | "quiz";
+
 export function lessonPreviewPath(
   lessonId: string,
-  options?: { adminPreview?: boolean }
+  options?: { adminPreview?: boolean; subpath?: LessonPreviewSubpath }
 ): string {
-  const base = `/lessons/${lessonId}`;
+  let base = `/lessons/${lessonId}`;
+  if (options?.subpath) {
+    base += `/${options.subpath}`;
+  }
   if (options?.adminPreview) {
     return `${base}?preview=admin`;
   }

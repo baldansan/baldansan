@@ -7,12 +7,8 @@ import { AdminPreviewBanner } from "@/components/admin-preview-banner";
 import { AppHeader } from "@/components/app-header";
 import { BottomNav } from "@/components/bottom-nav";
 import { EmptyState } from "@/components/empty-state";
-import {
-  coursePath,
-  lessonPath,
-  lessonVocabularyPath,
-  lessonWatchPath,
-} from "@/lib/content";
+import { coursePath } from "@/lib/content";
+import { lessonPreviewPath } from "@/lib/lesson-publish";
 import {
   getQuizResultSmart,
   markLessonCompletedSmart,
@@ -143,19 +139,22 @@ export function LessonQuizClient({
         {adminPreview ? <AdminPreviewBanner /> : null}
         <div className="flex flex-col gap-2 sm:flex-row sm:flex-wrap sm:gap-4">
           <Link
-            href={lessonPath(lesson.id)}
+            href={lessonPreviewPath(lesson.id, { adminPreview })}
             className="inline-flex w-fit text-sm font-medium text-slate-600 transition-colors hover:text-emerald-600"
           >
             ← Lesson detail
           </Link>
           <Link
-            href={lessonWatchPath(lesson.id)}
+            href={lessonPreviewPath(lesson.id, {
+              adminPreview,
+              subpath: "watch",
+            })}
             className="inline-flex w-fit text-sm font-medium text-emerald-700 transition-colors hover:text-emerald-600"
           >
             Watch lesson
           </Link>
           <Link
-            href={lessonVocabularyPath(lesson.id)}
+            href={lessonPreviewPath(lesson.id, { adminPreview, subpath: "vocabulary" })}
             className="inline-flex w-fit text-sm font-medium text-emerald-700 transition-colors hover:text-emerald-600"
           >
             Vocabulary
@@ -178,13 +177,13 @@ export function LessonQuizClient({
             action={
               <>
                 <Link
-                  href={lessonPath(lesson.id)}
+                  href={lessonPreviewPath(lesson.id, { adminPreview })}
                   className="rounded-full bg-emerald-500 px-5 py-2 text-sm font-semibold text-white transition-colors hover:bg-emerald-600"
                 >
                   Back to lesson
                 </Link>
                 <Link
-                  href={lessonVocabularyPath(lesson.id)}
+                  href={lessonPreviewPath(lesson.id, { adminPreview, subpath: "vocabulary" })}
                   className="rounded-full border border-emerald-200 bg-emerald-50 px-5 py-2 text-sm font-semibold text-emerald-700 transition-colors hover:bg-emerald-100"
                 >
                   Review vocabulary
@@ -223,20 +222,23 @@ export function LessonQuizClient({
                 Restart quiz
               </button>
               <Link
-                href={lessonVocabularyPath(lesson.id)}
+                href={lessonPreviewPath(lesson.id, { adminPreview, subpath: "vocabulary" })}
                 className="w-full rounded-full bg-emerald-500 px-5 py-3 text-center text-sm font-semibold text-white transition-colors hover:bg-emerald-600"
               >
                 Review vocabulary
               </Link>
               <Link
-                href={lessonWatchPath(lesson.id)}
+                href={lessonPreviewPath(lesson.id, {
+              adminPreview,
+              subpath: "watch",
+            })}
                 className="w-full rounded-full border border-emerald-200 bg-emerald-50 px-5 py-3 text-center text-sm font-semibold text-emerald-700 transition-colors hover:bg-emerald-100"
               >
                 Watch lesson
               </Link>
               {nextLessonId ? (
                 <Link
-                  href={lessonPath(nextLessonId)}
+                  href={lessonPreviewPath(nextLessonId, { adminPreview })}
                   className="w-full rounded-full bg-emerald-500 px-5 py-3 text-center text-sm font-semibold text-white transition-colors hover:bg-emerald-600"
                 >
                   Next lesson

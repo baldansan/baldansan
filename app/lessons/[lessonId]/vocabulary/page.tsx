@@ -28,6 +28,7 @@ export default async function LessonVocabularyPage({
         lessonId={lessonId}
         courseId={access.lesson.courseId}
         showAdminLink={access.showAdminLink}
+        showAdminPreviewLink={access.showAdminPreviewLink}
       />
     );
   }

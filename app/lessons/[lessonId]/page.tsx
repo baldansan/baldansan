@@ -7,12 +7,8 @@ import { LessonPathCard } from "@/components/lesson-path-card";
 import { LessonProgressCard } from "@/components/lesson-progress-card";
 import { LessonUnavailable } from "@/components/lesson-unavailable";
 import { WatchLessonLink } from "@/components/watch-lesson-link";
-import {
-  getAllLessonIdsSync,
-  lessonQuizPath,
-  lessonVocabularyPath,
-  coursePath,
-} from "@/lib/content";
+import { getAllLessonIdsSync, coursePath } from "@/lib/content";
+import { lessonPreviewPath } from "@/lib/lesson-publish";
 import { resolveLessonPageAccess } from "@/lib/lesson-public-access";
 
 type PageProps = {
@@ -45,6 +41,7 @@ export default async function LessonDetailPage({
         lessonId={lessonId}
         courseId={access.lesson.courseId}
         showAdminLink={access.showAdminLink}
+        showAdminPreviewLink={access.showAdminPreviewLink}
       />
     );
   }
@@ -74,7 +71,7 @@ export default async function LessonDetailPage({
           </p>
         </section>
 
-        <LessonPathCard lessonId={lesson.id} />
+        <LessonPathCard lessonId={lesson.id} adminPreview={adminPreview} />
 
         <section className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:p-6">
           <div className="flex aspect-video w-full items-center justify-center rounded-xl bg-slate-100 ring-1 ring-slate-200">
@@ -85,6 +82,7 @@ export default async function LessonDetailPage({
           <div className="mt-4 flex justify-center sm:justify-start">
             <WatchLessonLink
               lessonId={lesson.id}
+              adminPreview={adminPreview}
               className="rounded-full bg-emerald-500 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-emerald-600"
             >
               Watch lesson
@@ -137,7 +135,10 @@ export default async function LessonDetailPage({
           </ul>
           <div className="mt-4 flex justify-end">
             <Link
-              href={lessonVocabularyPath(lesson.id)}
+              href={lessonPreviewPath(lesson.id, {
+                adminPreview,
+                subpath: "vocabulary",
+              })}
               className="rounded-full border border-emerald-200 bg-emerald-50 px-5 py-2 text-sm font-semibold text-emerald-700 transition-colors hover:bg-emerald-100"
             >
               Бүх үгс харах
@@ -162,7 +163,10 @@ export default async function LessonDetailPage({
           </ul>
           <div className="mt-4 flex justify-end">
             <Link
-              href={lessonQuizPath(lesson.id)}
+              href={lessonPreviewPath(lesson.id, {
+                adminPreview,
+                subpath: "quiz",
+              })}
               className="rounded-full bg-emerald-500 px-5 py-2 text-sm font-semibold text-white transition-colors hover:bg-emerald-600"
             >
               Quiz эхлэх

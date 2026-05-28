@@ -33,6 +33,7 @@ export default async function LessonQuizPage({
         lessonId={lessonId}
         courseId={access.lesson.courseId}
         showAdminLink={access.showAdminLink}
+        showAdminPreviewLink={access.showAdminPreviewLink}
       />
     );
   }

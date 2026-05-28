@@ -2,17 +2,20 @@ import Link from "next/link";
 import { AppHeader } from "@/components/app-header";
 import { BottomNav } from "@/components/bottom-nav";
 import { coursePath } from "@/lib/content";
+import { lessonPreviewPath } from "@/lib/lesson-publish";
 
 type Props = {
   lessonId: string;
   courseId?: string;
   showAdminLink?: boolean;
+  showAdminPreviewLink?: boolean;
 };
 
 export function LessonUnavailable({
   lessonId,
   courseId = "hsk5",
   showAdminLink = false,
+  showAdminPreviewLink = false,
 }: Props) {
   return (
     <div className="min-h-screen bg-gradient-to-b from-emerald-50/40 via-white to-white text-slate-900">
@@ -34,6 +37,14 @@ export function LessonUnavailable({
             >
               Back to course
             </Link>
+            {showAdminPreviewLink ? (
+              <Link
+                href={lessonPreviewPath(lessonId, { adminPreview: true })}
+                className="inline-flex justify-center rounded-full bg-emerald-500 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-emerald-600"
+              >
+                Admin preview ашиглах
+              </Link>
+            ) : null}
             {showAdminLink ? (
               <Link
                 href={`/admin/lessons/${lessonId}/edit`}

@@ -1,5 +1,6 @@
 import { getCurrentUser } from "@/lib/supabase/auth";
 import { hasSupabaseConfig, supabase } from "@/lib/supabase/client";
+import type { SupabaseClient } from "@supabase/supabase-js";
 
 export type AdminProfile = {
   user_id: string;
@@ -14,15 +15,16 @@ export function isAdminRole(role: string | null | undefined): boolean {
   return ADMIN_ROLES.has(role.toLowerCase());
 }
 
-export async function getAdminProfileByUserId(
+async function getAdminProfileByUserIdWithClient(
+  client: SupabaseClient,
   userId: string
 ): Promise<AdminProfile | null> {
-  if (!supabase || !hasSupabaseConfig || !userId) {
+  if (!userId) {
     return null;
   }
 
   try {
-    const { data, error } = await supabase
+    const { data, error } = await client
       .from("admin_profiles")
       .select("user_id, role, created_at")
       .eq("user_id", userId)
@@ -40,6 +42,16 @@ export async function getAdminProfileByUserId(
   } catch {
     return null;
   }
+}
+
+export async function getAdminProfileByUserId(
+  userId: string
+): Promise<AdminProfile | null> {
+  if (!supabase || !hasSupabaseConfig || !userId) {
+    return null;
+  }
+
+  return getAdminProfileByUserIdWithClient(supabase, userId);
 }
 
 export async function getCurrentAdminProfile(): Promise<AdminProfile | null> {

@@ -6,12 +6,7 @@ import { AdminSummaryCard } from "@/components/admin/admin-summary-card";
 import { LessonQaBadge } from "@/components/admin/lesson-qa-badge";
 import { LessonStatusBadge } from "@/components/admin/lesson-status-badge";
 import { EmptyState } from "@/components/empty-state";
-import {
-  lessonPath,
-  lessonQuizPath,
-  lessonVocabularyPath,
-  lessonWatchPath,
-} from "@/lib/content";
+import { lessonPath } from "@/lib/content";
 import { lessonPreviewPath } from "@/lib/lesson-publish";
 import {
   getAdminPublishStatus,
@@ -220,19 +215,28 @@ export function AdminLessonsList({ reports }: Props) {
                           </Link>
                         )}
                         <Link
-                          href={lessonWatchPath(lesson.id)}
+                          href={lessonPreviewPath(lesson.id, {
+                            adminPreview: publishStatus !== "available",
+                            subpath: "watch",
+                          })}
                           className="text-slate-600 hover:text-emerald-700"
                         >
                           Watch
                         </Link>
                         <Link
-                          href={lessonVocabularyPath(lesson.id)}
+                          href={lessonPreviewPath(lesson.id, {
+                            adminPreview: publishStatus !== "available",
+                            subpath: "vocabulary",
+                          })}
                           className="text-slate-600 hover:text-emerald-700"
                         >
                           Vocabulary
                         </Link>
                         <Link
-                          href={lessonQuizPath(lesson.id)}
+                          href={lessonPreviewPath(lesson.id, {
+                            adminPreview: publishStatus !== "available",
+                            subpath: "quiz",
+                          })}
                           className="text-slate-600 hover:text-emerald-700"
                         >
                           Quiz
