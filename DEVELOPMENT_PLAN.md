@@ -61,7 +61,7 @@ Phased roadmap from MVP demo to production product.
 
 **Phase 3 Step 3 — Completed:** Seed SQL for HSK5 Lessons 1–3 (`supabase/seed/001_seed_hsk5_lessons.sql`).
 
-**Phase 3 Step 4 — Completed:** Read-only Supabase integration with local fallback.
+**Phase 3 Step 4 — Completed:** Read-only Supabase integration with local fallback (debug logs removed after connection test).
 
 - `@supabase/supabase-js`, `lib/supabase/client.ts`, `lib/supabase/content.ts`
 - `lib/content.ts` — async `getLessonById`, `getLessonsByCourseId`, `getCourseContentById`, `getCourseById`

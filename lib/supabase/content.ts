@@ -282,27 +282,10 @@ export async function getSupabaseLessonsByCourseId(
   return (data as DbLesson[]).map(mapLessonRowToSummary);
 }
 
-function supabaseErrorMessage(error: unknown): string {
-  if (error && typeof error === "object" && "message" in error) {
-    return String(error.message);
-  }
-  return String(error);
-}
-
 export async function getSupabaseLessonById(
   lessonId: string
 ): Promise<LessonContent | undefined> {
-  console.log("[supabase-debug] getSupabaseLessonById called", {
-    lessonId,
-    hasSupabaseConfig,
-  });
-
   if (!hasSupabaseConfig || !supabase) {
-    console.log("[supabase-debug] getSupabaseLessonById skipped (no config/client)", {
-      lessonId,
-      hasSupabaseConfig,
-      willUseLocalFallback: true,
-    });
     return undefined;
   }
 
@@ -314,21 +297,8 @@ export async function getSupabaseLessonById(
     .eq("id", lessonId)
     .maybeSingle();
 
-  if (lessonError) {
-    console.log("[supabase-debug] getSupabaseLessonById lesson query failed", {
-      lessonId,
-      error: supabaseErrorMessage(lessonError),
-      willUseLocalFallback: true,
-    });
-    throw lessonError;
-  }
-  if (!lesson) {
-    console.log("[supabase-debug] getSupabaseLessonById no row found", {
-      lessonId,
-      willUseLocalFallback: true,
-    });
-    return undefined;
-  }
+  if (lessonError) throw lessonError;
+  if (!lesson) return undefined;
 
   const [subtitlesResult, vocabularyResult, quizResult] = await Promise.all([
     supabase
@@ -354,39 +324,9 @@ export async function getSupabaseLessonById(
       .order("order_index", { ascending: true }),
   ]);
 
-  if (subtitlesResult.error) {
-    console.log("[supabase-debug] getSupabaseLessonById related query failed", {
-      lessonId,
-      query: "subtitle_lines",
-      error: supabaseErrorMessage(subtitlesResult.error),
-      willUseLocalFallback: true,
-    });
-    throw subtitlesResult.error;
-  }
-  if (vocabularyResult.error) {
-    console.log("[supabase-debug] getSupabaseLessonById related query failed", {
-      lessonId,
-      query: "vocabulary_words",
-      error: supabaseErrorMessage(vocabularyResult.error),
-      willUseLocalFallback: true,
-    });
-    throw vocabularyResult.error;
-  }
-  if (quizResult.error) {
-    console.log("[supabase-debug] getSupabaseLessonById related query failed", {
-      lessonId,
-      query: "quiz_questions",
-      error: supabaseErrorMessage(quizResult.error),
-      willUseLocalFallback: true,
-    });
-    throw quizResult.error;
-  }
-
-  console.log("[supabase-debug] getSupabaseLessonById success", {
-    lessonId,
-    subtitle: (lesson as DbLesson).subtitle ?? "(empty)",
-    willUseLocalFallback: false,
-  });
+  if (subtitlesResult.error) throw subtitlesResult.error;
+  if (vocabularyResult.error) throw vocabularyResult.error;
+  if (quizResult.error) throw quizResult.error;
 
   return mapFullLesson(
     lesson as DbLesson,

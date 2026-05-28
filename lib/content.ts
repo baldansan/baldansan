@@ -60,101 +60,35 @@ export function getLocalAllLessonIds(): string[] {
   return allLessons.map((lesson) => lesson.id);
 }
 
-function contentDebugId(label: string): string | undefined {
-  const match = label.match(/\(([^)]+)\)/);
-  return match?.[1];
-}
-
 async function withSupabaseFallback<T>(
   label: string,
   fetcher: () => Promise<T | undefined>,
   fallback: () => T | undefined
 ): Promise<T | undefined> {
-  const debugId = contentDebugId(label);
-
   if (!hasSupabaseConfig) {
-    console.log("[supabase-debug] content fallback (no Supabase config)", {
-      label,
-      id: debugId,
-      hasSupabaseConfig: false,
-      source: "local",
-    });
     return fallback();
   }
 
   try {
     const result = await fetcher();
     if (result !== undefined) {
-      const lessonResult = result as LessonContent;
-      console.log("[supabase-debug] content using Supabase data", {
-        label,
-        id: debugId,
-        hasSupabaseConfig: true,
-        source: "supabase",
-        ...(label.startsWith("getLessonById(")
-          ? { subtitle: lessonResult.subtitle ?? "(empty)" }
-          : {}),
-      });
       return result;
     }
-
-    console.log("[supabase-debug] content fallback (Supabase returned no data)", {
-      label,
-      id: debugId,
-      hasSupabaseConfig: true,
-      source: "local",
-    });
   } catch (error) {
-    const message =
-      error && typeof error === "object" && "message" in error
-        ? String(error.message)
-        : String(error);
-    console.log("[supabase-debug] content fallback (Supabase query failed)", {
-      label,
-      id: debugId,
-      hasSupabaseConfig: true,
-      source: "local",
-      error: message,
-    });
-    console.warn(`[content] Supabase ${label} failed, using local fallback.`, {
-      message,
-    });
+    console.warn(`[content] Supabase ${label} failed, using local fallback.`, error);
   }
 
-  const localResult = fallback();
-  if (label.startsWith("getLessonById(")) {
-    const localLesson = localResult as LessonContent | undefined;
-    console.log("[supabase-debug] content local fallback payload", {
-      label,
-      id: debugId,
-      subtitle: localLesson?.subtitle ?? "(empty)",
-    });
-  }
-  return localResult;
+  return fallback();
 }
 
 export async function getLessonById(
   lessonId: string
 ): Promise<LessonContent | undefined> {
-  console.log("[supabase-debug] getLessonById called", {
-    lessonId,
-    hasSupabaseConfig,
-  });
-
-  const lesson = await withSupabaseFallback(
+  return withSupabaseFallback(
     `getLessonById(${lessonId})`,
     () => getSupabaseLessonById(lessonId),
     () => getLocalLessonById(lessonId)
   );
-
-  console.log("[supabase-debug] getLessonById resolved", {
-    lessonId,
-    hasSupabaseConfig,
-    subtitle: lesson?.subtitle ?? "(empty)",
-    found: Boolean(lesson),
-  });
-
-  return lesson;
 }
 
 export async function getLessonsByCourseId(

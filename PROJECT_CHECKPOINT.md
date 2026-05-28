@@ -119,6 +119,8 @@ Lesson pages are **data-driven** via dynamic segments. Content lives under `cont
 - `.env.example` for `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_ANON_KEY`
 - No auth, no progress writes, no UI/route changes
 
+**Phase 3 Step 4 cleanup:** Temporary Supabase debug logs removed after successful read-only connection test. Minimal `[content]` warnings remain on query failure only.
+
 ---
 
 ## Next recommended tasks
