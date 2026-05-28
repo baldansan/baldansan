@@ -1,8 +1,15 @@
 "use client";
 
 import Link from "next/link";
+import { useParams } from "next/navigation";
 import { useMemo, useState } from "react";
-import { lesson1Vocabulary } from "@/data/lessons";
+import { LessonNotFound } from "@/components/lesson-not-found";
+import {
+  getLessonById,
+  lessonPath,
+  lessonQuizPath,
+  lessonWatchPath,
+} from "@/lib/content";
 import type { VocabularyFilter } from "@/types/lesson";
 
 const filters: { id: VocabularyFilter; label: string }[] = [
@@ -11,15 +18,18 @@ const filters: { id: VocabularyFilter; label: string }[] = [
   { id: "HSK5", label: "HSK5" },
 ];
 
-export default function Lesson1VocabularyPage() {
-  const vocab = lesson1Vocabulary;
+export default function LessonVocabularyPage() {
+  const params = useParams();
+  const lessonId = typeof params.lessonId === "string" ? params.lessonId : "";
+  const lesson = getLessonById(lessonId);
   const [search, setSearch] = useState("");
   const [filter, setFilter] = useState<VocabularyFilter>("all");
   const [learned, setLearned] = useState<Set<string>>(new Set());
 
   const filteredWords = useMemo(() => {
+    if (!lesson) return [];
     const query = search.trim().toLowerCase();
-    return vocab.words.filter((word) => {
+    return lesson.vocabulary.filter((word) => {
       const matchesFilter = filter === "all" || word.hskLevel === filter;
       if (!matchesFilter) return false;
       if (!query) return true;
@@ -29,7 +39,7 @@ export default function Lesson1VocabularyPage() {
         word.mongolian.toLowerCase().includes(query)
       );
     });
-  }, [vocab.words, search, filter]);
+  }, [lesson, search, filter]);
 
   function toggleLearned(id: string) {
     setLearned((prev) => {
@@ -41,6 +51,10 @@ export default function Lesson1VocabularyPage() {
       }
       return next;
     });
+  }
+
+  if (!lesson) {
+    return <LessonNotFound />;
   }
 
   return (
@@ -68,13 +82,13 @@ export default function Lesson1VocabularyPage() {
       <main className="mx-auto flex w-full max-w-5xl flex-col gap-6 px-4 pb-10 pt-2 sm:gap-8 sm:px-6">
         <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
           <Link
-            href={vocab.backHref}
+            href={lessonPath(lesson.id)}
             className="inline-flex w-fit items-center text-sm font-medium text-slate-600 transition-colors hover:text-emerald-600"
           >
             ← Lesson detail
           </Link>
           <Link
-            href={vocab.watchHref}
+            href={lessonWatchPath(lesson.id)}
             className="inline-flex w-fit items-center text-sm font-medium text-emerald-700 transition-colors hover:text-emerald-600"
           >
             Watch lesson →
@@ -83,11 +97,13 @@ export default function Lesson1VocabularyPage() {
 
         <section>
           <h1 className="text-2xl font-bold tracking-tight sm:text-3xl">
-            {vocab.title}
+            Vocabulary — {lesson.title} {lesson.chineseTitle}
           </h1>
-          <p className="mt-2 text-base text-slate-600">{vocab.subtitle}</p>
+          <p className="mt-2 text-base text-slate-600">
+            Үг бүрийг pinyin, Монгол утга, жишээ өгүүлбэртэй сур.
+          </p>
           <p className="mt-3 text-sm font-medium text-emerald-700">
-            Learned: {learned.size} / {vocab.words.length}
+            Learned: {learned.size} / {lesson.vocabulary.length}
           </p>
         </section>
 
@@ -175,13 +191,13 @@ export default function Lesson1VocabularyPage() {
 
         <section className="flex flex-col gap-3 sm:flex-row">
           <Link
-            href={vocab.watchHref}
+            href={lessonWatchPath(lesson.id)}
             className="flex-1 rounded-full border border-emerald-200 bg-emerald-50 px-5 py-3 text-center text-sm font-semibold text-emerald-700 transition-colors hover:bg-emerald-100"
           >
             Watch lesson
           </Link>
           <Link
-            href={vocab.quizHref}
+            href={lessonQuizPath(lesson.id)}
             className="flex-1 rounded-full bg-emerald-500 px-5 py-3 text-center text-sm font-semibold text-white transition-colors hover:bg-emerald-600"
           >
             Quiz

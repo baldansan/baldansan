@@ -1,13 +1,20 @@
 import Link from "next/link";
-import { hsk5CourseDetail, hsk5Lessons } from "@/data/lessons";
-import type { Lesson } from "@/types/lesson";
+import { getCourseContentById, getLessonsByCourseId, lessonPath } from "@/lib/content";
+import type { LessonContentStatus } from "@/types/lesson-content";
 
-function lessonButtonLabel(status: Lesson["status"]) {
-  return status === "start" ? "Start" : "Locked";
+function lessonButtonLabel(status: LessonContentStatus) {
+  return status === "available" ? "Start" : "Locked";
 }
 
 export default function Hsk5CoursePage() {
-  const { completed, total } = hsk5CourseDetail.progress;
+  const course = getCourseContentById("hsk5");
+  const lessons = getLessonsByCourseId("hsk5");
+
+  if (!course) {
+    return null;
+  }
+
+  const { completed, total } = course.progress;
   const progressPercent = total > 0 ? Math.round((completed / total) * 100) : 0;
 
   return (
@@ -43,15 +50,15 @@ export default function Hsk5CoursePage() {
         <section className="rounded-3xl bg-white p-6 shadow-sm ring-1 ring-slate-200 sm:p-8">
           <p className="text-sm font-medium text-emerald-600">HSK5</p>
           <h1 className="mt-1 text-3xl font-bold tracking-tight sm:text-4xl">
-            {hsk5CourseDetail.title}
+            {course.title}
           </h1>
           <p className="mt-3 max-w-2xl text-base leading-7 text-slate-600 sm:text-lg">
-            {hsk5CourseDetail.subtitle}
+            {course.subtitle}
           </p>
         </section>
 
         <section className="grid grid-cols-2 gap-3 sm:grid-cols-4">
-          {hsk5CourseDetail.stats.map((stat) => (
+          {course.stats.map((stat) => (
             <p
               key={stat.label}
               className="rounded-2xl bg-white px-3 py-3 text-center text-sm font-medium text-slate-700 shadow-sm ring-1 ring-slate-200 sm:px-4"
@@ -79,7 +86,7 @@ export default function Hsk5CoursePage() {
 
         <section className="flex flex-col gap-4">
           <h2 className="text-xl font-semibold text-slate-900">Хичээлүүд</h2>
-          {hsk5Lessons.map((lesson) => (
+          {lessons.map((lesson) => (
             <article
               key={lesson.id}
               className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:p-6"
@@ -93,20 +100,20 @@ export default function Hsk5CoursePage() {
 
               <div className="mt-4 flex flex-wrap gap-2 text-xs text-slate-600">
                 <span className="rounded-lg bg-slate-50 px-2.5 py-1 ring-1 ring-slate-200">
-                  {lesson.durationMin} min
+                  {lesson.duration}
                 </span>
                 <span className="rounded-lg bg-slate-50 px-2.5 py-1 ring-1 ring-slate-200">
-                  {lesson.vocabulary} vocabulary
+                  {lesson.vocabularyCount} vocabulary
                 </span>
                 <span className="rounded-lg bg-slate-50 px-2.5 py-1 ring-1 ring-slate-200">
-                  {lesson.quizQuestions} quiz questions
+                  {lesson.quizCount} quiz questions
                 </span>
               </div>
 
               <div className="mt-4 flex justify-end">
-                {lesson.status === "start" && lesson.href ? (
+                {lesson.status === "available" ? (
                   <Link
-                    href={lesson.href}
+                    href={lessonPath(lesson.id)}
                     className="rounded-full bg-emerald-500 px-5 py-2 text-sm font-semibold text-white transition-colors hover:bg-emerald-600"
                   >
                     {lessonButtonLabel(lesson.status)}

@@ -1,8 +1,15 @@
 "use client";
 
 import Link from "next/link";
+import { useParams } from "next/navigation";
 import { useState } from "react";
-import { lesson1Watch } from "@/data/lessons";
+import { LessonNotFound } from "@/components/lesson-not-found";
+import {
+  getLessonById,
+  lessonPath,
+  lessonQuizPath,
+  lessonVocabularyPath,
+} from "@/lib/content";
 import type { SubtitleMode, TimedSubtitle } from "@/types/lesson";
 
 const modes: { id: SubtitleMode; label: string }[] = [
@@ -37,9 +44,15 @@ function SubtitleLines({
   );
 }
 
-export default function Lesson1WatchPage() {
-  const watch = lesson1Watch;
+export default function LessonWatchPage() {
+  const params = useParams();
+  const lessonId = typeof params.lessonId === "string" ? params.lessonId : "";
+  const lesson = getLessonById(lessonId);
   const [mode, setMode] = useState<SubtitleMode>("both");
+
+  if (!lesson) {
+    return <LessonNotFound />;
+  }
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-emerald-50/40 via-white to-white text-slate-900">
@@ -65,7 +78,7 @@ export default function Lesson1WatchPage() {
 
       <main className="mx-auto flex w-full max-w-5xl flex-col gap-6 px-4 pb-10 pt-2 sm:gap-8 sm:px-6">
         <Link
-          href={watch.backHref}
+          href={lessonPath(lesson.id)}
           className="inline-flex w-fit items-center text-sm font-medium text-slate-600 transition-colors hover:text-emerald-600"
         >
           ← Lesson detail руу буцах
@@ -73,19 +86,21 @@ export default function Lesson1WatchPage() {
 
         <section>
           <h1 className="text-2xl font-bold tracking-tight sm:text-3xl">
-            {watch.title}
+            Watch — {lesson.title} {lesson.chineseTitle}
           </h1>
-          <p className="mt-2 text-base text-slate-600">{watch.subtitle}</p>
+          <p className="mt-2 text-base text-slate-600">
+            Subtitle mode сонгоод, сонсож уншаарай.
+          </p>
         </section>
 
         <section className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:p-6">
           <div className="flex aspect-video w-full items-center justify-center rounded-xl bg-slate-100 ring-1 ring-slate-200">
             <p className="text-sm font-medium text-slate-500">
-              {watch.videoPlaceholder}
+              {lesson.videoPlaceholder}
             </p>
           </div>
           <p className="mt-3 text-center text-sm font-medium text-slate-600">
-            {watch.currentTime} / {watch.totalTime}
+            00:00 / {lesson.watchTotalTime}
           </p>
         </section>
 
@@ -110,7 +125,7 @@ export default function Lesson1WatchPage() {
         </section>
 
         <section className="flex flex-col gap-3">
-          {watch.timedSubtitles.map((line, index) => (
+          {lesson.timedSubtitles.map((line, index) => (
             <article
               key={`${line.start}-${line.chinese}`}
               className={
@@ -131,13 +146,13 @@ export default function Lesson1WatchPage() {
 
         <section className="flex flex-col gap-3 sm:flex-row">
           <Link
-            href={watch.vocabularyHref}
+            href={lessonVocabularyPath(lesson.id)}
             className="flex-1 rounded-full border border-emerald-200 bg-emerald-50 px-5 py-3 text-center text-sm font-semibold text-emerald-700 transition-colors hover:bg-emerald-100"
           >
             Vocabulary
           </Link>
           <Link
-            href={watch.quizHref}
+            href={lessonQuizPath(lesson.id)}
             className="flex-1 rounded-full bg-emerald-500 px-5 py-3 text-center text-sm font-semibold text-white transition-colors hover:bg-emerald-600"
           >
             Quiz

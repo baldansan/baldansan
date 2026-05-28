@@ -1,8 +1,16 @@
 "use client";
 
 import Link from "next/link";
+import { useParams } from "next/navigation";
 import { useMemo, useState } from "react";
-import { lesson1Quiz } from "@/data/lessons";
+import { LessonNotFound } from "@/components/lesson-not-found";
+import {
+  coursePath,
+  getLessonById,
+  lessonPath,
+  lessonVocabularyPath,
+  lessonWatchPath,
+} from "@/lib/content";
 
 function getResultMessage(percent: number) {
   if (percent >= 80) return "Маш сайн байна!";
@@ -10,9 +18,11 @@ function getResultMessage(percent: number) {
   return "Vocabulary хэсгээ дахин үзвэл илүү сайн.";
 }
 
-export default function Lesson1QuizPage() {
-  const quiz = lesson1Quiz;
-  const total = quiz.questions.length;
+export default function LessonQuizPage() {
+  const params = useParams();
+  const lessonId = typeof params.lessonId === "string" ? params.lessonId : "";
+  const lesson = getLessonById(lessonId);
+  const total = lesson?.quizQuestions.length ?? 0;
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selected, setSelected] = useState<string | null>(null);
@@ -20,7 +30,7 @@ export default function Lesson1QuizPage() {
   const [correctCount, setCorrectCount] = useState(0);
   const [finished, setFinished] = useState(false);
 
-  const current = quiz.questions[currentIndex];
+  const current = lesson?.quizQuestions[currentIndex];
   const isCorrect = selected === current?.correctAnswer;
 
   const percent = useMemo(
@@ -29,7 +39,7 @@ export default function Lesson1QuizPage() {
   );
 
   function handleSelect(option: string) {
-    if (revealed) return;
+    if (!current || revealed) return;
     setSelected(option);
     setRevealed(true);
     if (option === current.correctAnswer) {
@@ -56,7 +66,7 @@ export default function Lesson1QuizPage() {
   }
 
   function optionClass(option: string) {
-    if (!revealed) {
+    if (!revealed || !current) {
       return selected === option
         ? "w-full rounded-xl bg-emerald-500 px-4 py-3 text-left text-sm font-semibold text-white ring-2 ring-emerald-400"
         : "w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-left text-sm text-slate-800 transition-colors hover:border-emerald-200 hover:bg-emerald-50";
@@ -68,6 +78,10 @@ export default function Lesson1QuizPage() {
       return "w-full rounded-xl bg-red-50 px-4 py-3 text-left text-sm font-semibold text-red-700 ring-2 ring-red-300";
     }
     return "w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-left text-sm text-slate-500";
+  }
+
+  if (!lesson) {
+    return <LessonNotFound />;
   }
 
   return (
@@ -95,19 +109,19 @@ export default function Lesson1QuizPage() {
       <main className="mx-auto flex w-full max-w-5xl flex-col gap-6 px-4 pb-10 pt-2 sm:gap-8 sm:px-6">
         <div className="flex flex-col gap-2 sm:flex-row sm:flex-wrap sm:gap-4">
           <Link
-            href={quiz.backHref}
+            href={lessonPath(lesson.id)}
             className="inline-flex w-fit text-sm font-medium text-slate-600 transition-colors hover:text-emerald-600"
           >
             ← Lesson detail
           </Link>
           <Link
-            href={quiz.watchHref}
+            href={lessonWatchPath(lesson.id)}
             className="inline-flex w-fit text-sm font-medium text-emerald-700 transition-colors hover:text-emerald-600"
           >
             Watch lesson
           </Link>
           <Link
-            href={quiz.vocabularyHref}
+            href={lessonVocabularyPath(lesson.id)}
             className="inline-flex w-fit text-sm font-medium text-emerald-700 transition-colors hover:text-emerald-600"
           >
             Vocabulary
@@ -116,9 +130,11 @@ export default function Lesson1QuizPage() {
 
         <section>
           <h1 className="text-2xl font-bold tracking-tight sm:text-3xl">
-            {quiz.title}
+            Quiz — {lesson.title} {lesson.chineseTitle}
           </h1>
-          <p className="mt-2 text-base text-slate-600">{quiz.subtitle}</p>
+          <p className="mt-2 text-base text-slate-600">
+            Сурсан үг, өгүүлбэрээ шалгаарай.
+          </p>
         </section>
 
         {finished ? (
@@ -141,19 +157,19 @@ export default function Lesson1QuizPage() {
                 Restart quiz
               </button>
               <Link
-                href={quiz.vocabularyHref}
+                href={lessonVocabularyPath(lesson.id)}
                 className="w-full rounded-full bg-emerald-500 px-5 py-3 text-center text-sm font-semibold text-white transition-colors hover:bg-emerald-600"
               >
                 Review vocabulary
               </Link>
               <Link
-                href={quiz.watchHref}
+                href={lessonWatchPath(lesson.id)}
                 className="w-full rounded-full border border-emerald-200 bg-emerald-50 px-5 py-3 text-center text-sm font-semibold text-emerald-700 transition-colors hover:bg-emerald-100"
               >
                 Watch lesson
               </Link>
               <Link
-                href={quiz.courseHref}
+                href={coursePath(lesson.courseId)}
                 className="w-full rounded-full border border-slate-200 bg-white px-5 py-3 text-center text-sm font-semibold text-slate-700 transition-colors hover:bg-slate-50"
               >
                 Back to course
@@ -161,67 +177,69 @@ export default function Lesson1QuizPage() {
             </div>
           </section>
         ) : (
-          <>
-            <p className="text-sm font-medium text-emerald-700">
-              Question {currentIndex + 1} / {total}
-            </p>
-
-            <section className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:p-6">
-              <p className="text-xs font-medium uppercase tracking-wide text-slate-500">
-                {current.type === "cloze" ? "Cloze blank" : "Multiple choice"}
+          current && (
+            <>
+              <p className="text-sm font-medium text-emerald-700">
+                Question {currentIndex + 1} / {total}
               </p>
-              <h2 className="mt-2 text-lg font-semibold leading-snug text-slate-900 sm:text-xl">
-                {current.question}
-              </h2>
 
-              <div className="mt-5 flex flex-col gap-2">
-                {current.options.map((option) => (
-                  <button
-                    key={option}
-                    type="button"
-                    onClick={() => handleSelect(option)}
-                    disabled={revealed}
-                    className={optionClass(option)}
-                  >
-                    {option}
-                  </button>
-                ))}
-              </div>
+              <section className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:p-6">
+                <p className="text-xs font-medium uppercase tracking-wide text-slate-500">
+                  {current.type === "cloze" ? "Cloze blank" : "Multiple choice"}
+                </p>
+                <h2 className="mt-2 text-lg font-semibold leading-snug text-slate-900 sm:text-xl">
+                  {current.question}
+                </h2>
 
-              {revealed && (
-                <div
-                  className={
-                    isCorrect
-                      ? "mt-4 rounded-xl bg-emerald-50 p-4 ring-1 ring-emerald-200"
-                      : "mt-4 rounded-xl bg-red-50 p-4 ring-1 ring-red-200"
-                  }
-                >
-                  <p
+                <div className="mt-5 flex flex-col gap-2">
+                  {current.options.map((option) => (
+                    <button
+                      key={option}
+                      type="button"
+                      onClick={() => handleSelect(option)}
+                      disabled={revealed}
+                      className={optionClass(option)}
+                    >
+                      {option}
+                    </button>
+                  ))}
+                </div>
+
+                {revealed && (
+                  <div
                     className={
                       isCorrect
-                        ? "text-sm font-semibold text-emerald-800"
-                        : "text-sm font-semibold text-red-800"
+                        ? "mt-4 rounded-xl bg-emerald-50 p-4 ring-1 ring-emerald-200"
+                        : "mt-4 rounded-xl bg-red-50 p-4 ring-1 ring-red-200"
                     }
                   >
-                    {isCorrect ? "Зөв!" : "Буруу"}
-                  </p>
-                  <p className="mt-2 text-sm leading-6 text-slate-700">
-                    {current.explanation}
-                  </p>
-                </div>
-              )}
+                    <p
+                      className={
+                        isCorrect
+                          ? "text-sm font-semibold text-emerald-800"
+                          : "text-sm font-semibold text-red-800"
+                      }
+                    >
+                      {isCorrect ? "Зөв!" : "Буруу"}
+                    </p>
+                    <p className="mt-2 text-sm leading-6 text-slate-700">
+                      {current.explanation}
+                    </p>
+                  </div>
+                )}
 
-              {revealed && (
-                <button
-                  type="button"
-                  onClick={handleNext}
-                  className="mt-5 w-full rounded-full bg-emerald-500 px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-emerald-600"
-                >
-                  {currentIndex < total - 1 ? "Next" : "See results"}
-                </button>
-              )}
-            </section>
-          </>
+                {revealed && (
+                  <button
+                    type="button"
+                    onClick={handleNext}
+                    className="mt-5 w-full rounded-full bg-emerald-500 px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-emerald-600"
+                  >
+                    {currentIndex < total - 1 ? "Next" : "See results"}
+                  </button>
+                )}
+              </section>
+            </>
+          )
         )}
       </main>
     </div>

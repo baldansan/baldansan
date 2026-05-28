@@ -18,18 +18,20 @@ Phased roadmap from MVP demo to production product.
 
 ---
 
-## Phase 2: Real lesson data structure
+## Phase 2: Real lesson data structure — **Completed**
 
 **Goal:** Replace ad-hoc mocks with a maintainable content model.
 
-**Tasks:**
-- Define schemas for Course, Lesson, SubtitleLine, VocabularyWord, QuizQuestion
-- Move content to JSON files or MDX under `content/` (or similar)
-- Support multiple lessons per course without duplicating page files
-- Introduce dynamic routes: `/lessons/[lessonId]`, `/courses/[courseId]`
-- Keep UI unchanged; swap data source only
+**Delivered:**
+- `LessonContent` type in `types/lesson-content.ts`
+- Per-lesson files under `content/courses/hsk5/lessons/` (lesson-1, lesson-2, lesson-3)
+- `lib/content.ts` helpers: `getLessonById`, `getLessonsByCourseId`, `getCourseById`, path helpers
+- Dynamic routes: `/lessons/[lessonId]`, `/watch`, `/vocabulary`, `/quiz`
+- `generateStaticParams` for lessons 1–3; `notFound` + Lesson not found UI
+- Existing URLs unchanged (`/lessons/1`, etc.)
+- Removed duplicated `app/lessons/1/` pages and `data/lessons.ts`
 
-**Exit criteria:** Adding Lesson 2 requires data + route param only, not copying entire page folders.
+**Exit criteria:** ✅ Adding a lesson is a new content file + registry entry, not copying page folders.
 
 ---
 
@@ -121,7 +123,7 @@ Phased roadmap from MVP demo to production product.
 ## Suggested order after MVP
 
 ```
-Phase 2 (data structure)
+Phase 2 (data structure) ✅
     → Phase 3 (Supabase)
     → Phase 4 (Auth)
     → Phase 5 (Admin)
@@ -133,16 +135,16 @@ Phases 5 and 6 can be reordered depending on business priority (content velocity
 
 ---
 
-## Reference: MVP routes (frozen at v1)
+## Reference: MVP routes
 
 ```
 /
 /courses
 /courses/hsk5
-/lessons/1
-/lessons/1/watch
-/lessons/1/vocabulary
-/lessons/1/quiz
+/lessons/[lessonId]          # e.g. /lessons/1
+/lessons/[lessonId]/watch
+/lessons/[lessonId]/vocabulary
+/lessons/[lessonId]/quiz
 ```
 
-Do not remove these routes without a migration plan and redirects.
+Lesson 1–3 URLs remain valid. Do not remove without redirects.

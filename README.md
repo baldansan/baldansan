@@ -2,7 +2,7 @@
 
 A Mongolian–Chinese language learning web app. Users learn Chinese through short video lessons, subtitles, vocabulary, and quizzes.
 
-**MVP v1** is a static demo with mock data—no database or authentication yet.
+**MVP v1** is a static demo with mock data—no database or authentication yet. **Phase 2** adds dynamic lesson routes (`/lessons/[lessonId]`) backed by `content/` files.
 
 ## Tech stack
 
@@ -29,21 +29,21 @@ A Mongolian–Chinese language learning web app. Users learn Chinese through sho
 | `/` | Landing page |
 | `/courses` | Course list |
 | `/courses/hsk5` | HSK5 course detail & lessons |
-| `/lessons/1` | Lesson 1 detail |
-| `/lessons/1/watch` | Watch lesson with subtitles |
-| `/lessons/1/vocabulary` | Vocabulary list |
-| `/lessons/1/quiz` | Interactive quiz |
+| `/lessons/[lessonId]` | Lesson detail (e.g. `/lessons/1`) |
+| `/lessons/[lessonId]/watch` | Watch lesson with subtitles |
+| `/lessons/[lessonId]/vocabulary` | Vocabulary list |
+| `/lessons/[lessonId]/quiz` | Interactive quiz |
 
 ## Project structure (MVP)
 
 ```
-app/                    # Pages (App Router)
-data/
-  courses.ts            # Course mock data
-  lessons.ts            # Lessons, watch, vocabulary, quiz mock data
-types/
-  course.ts             # Course types
-  lesson.ts             # Lesson, vocabulary, quiz types
+app/                         # Pages (App Router)
+  lessons/[lessonId]/        # Dynamic lesson routes
+content/courses/hsk5/        # Course + per-lesson content
+  lessons/lesson-1.ts …
+data/courses.ts              # Course catalog mock data
+lib/content.ts               # getLessonById, getLessonsByCourseId, …
+types/                       # course.ts, lesson.ts, lesson-content.ts
 ```
 
 ## How to run locally
@@ -88,7 +88,7 @@ Or from Home: **Demo lesson үзэх** or the demo card → `/lessons/1`.
 
 See [DEVELOPMENT_PLAN.md](./DEVELOPMENT_PLAN.md) for the full roadmap. Immediate priorities:
 
-1. Real lesson data structure (JSON or CMS-ready schema)
+1. ~~Real lesson data structure~~ ✅ Phase 2
 2. Supabase for courses, lessons, vocabulary, progress
 3. Authentication and user progress persistence
 4. Admin tools for content upload

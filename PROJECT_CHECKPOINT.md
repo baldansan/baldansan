@@ -1,14 +1,20 @@
-# Project Checkpoint — MVP v1
+# Project Checkpoint — MVP v1 + Phase 2
 
 **Project:** Buunduu Surtsgaay  
 **Checkpoint date:** May 2026  
-**Status:** MVP demo complete — static mock data, full navigation flow
+**Status:** MVP demo complete; Phase 2 dynamic lesson routing complete
 
 ---
 
 ## MVP v1 status
 
-The web app demonstrates a complete learner journey for **Lesson 1 (爱的细节)** inside the **HSK5 Short Drama Chinese** course. All primary routes build successfully and link to each other. State is held in React client components only (subtitle mode, vocabulary learned, quiz progress)—nothing is persisted to a server or database.
+The web app demonstrates a complete learner journey for **Lesson 1 (爱的细节)** inside the **HSK5 Short Drama Chinese** course. All primary routes build successfully and link to each other. State is held in React client components only—nothing is persisted to a server or database.
+
+---
+
+## Phase 2 status — **Completed**
+
+Lesson pages are **data-driven** via dynamic segments. Content lives under `content/courses/hsk5/lessons/` with helpers in `lib/content.ts`. Adding a lesson means a new content file (e.g. `lesson-4.ts`) and registering it in `content/courses/hsk5/lessons/index.ts`—no new page folders.
 
 ---
 
@@ -19,60 +25,33 @@ The web app demonstrates a complete learner journey for **Lesson 1 (爱的细节
 | `/` | `app/page.tsx` | Server |
 | `/courses` | `app/courses/page.tsx` | Server |
 | `/courses/hsk5` | `app/courses/hsk5/page.tsx` | Server |
-| `/lessons/1` | `app/lessons/1/page.tsx` | Server |
-| `/lessons/1/watch` | `app/lessons/1/watch/page.tsx` | Client |
-| `/lessons/1/vocabulary` | `app/lessons/1/vocabulary/page.tsx` | Client |
-| `/lessons/1/quiz` | `app/lessons/1/quiz/page.tsx` | Client |
+| `/lessons/[lessonId]` | `app/lessons/[lessonId]/page.tsx` | Server |
+| `/lessons/[lessonId]/watch` | `app/lessons/[lessonId]/watch/page.tsx` | Client |
+| `/lessons/[lessonId]/vocabulary` | `app/lessons/[lessonId]/vocabulary/page.tsx` | Client |
+| `/lessons/[lessonId]/quiz` | `app/lessons/[lessonId]/quiz/page.tsx` | Client |
+| Invalid lesson | `app/lessons/[lessonId]/not-found.tsx` | Server |
+
+**Static params:** lessons `1`, `2`, `3` pre-rendered at build time.
 
 ---
 
 ## Completed features
 
-### Landing (`/`)
-- Mongolian hero copy and CTAs
-- Feature cards (video, vocabulary, quiz)
-- Clickable demo lesson card
-- Header: brand, Courses, Demo, Profile (placeholder)
+(Unchanged UX from MVP v1; data layer refactored.)
 
-### Courses (`/courses`)
-- Three courses (HSK4, HSK5, Taobao)
-- HSK4/HSK5 link to `/courses/hsk5`
-- Taobao “Coming soon” disabled
+### Content & helpers
+- `LessonContent` model: subtitles, vocabulary, quiz, metadata, status
+- `getLessonById`, `getLessonsByCourseId`, `getCourseById`, `getCourseContentById`
+- Path helpers: `lessonPath`, `lessonWatchPath`, etc.
 
-### HSK5 course (`/courses/hsk5`)
-- Course hero, stats, progress (0/20)
-- Lesson list (3 lessons; only Lesson 1 unlocked)
-- Lesson 1 → `/lessons/1`
+### Lessons
+- **Lesson 1** — full content (same as MVP)
+- **Lesson 2 & 3** — placeholder content; **locked** on course page (disabled Start)
+- Manual URL to `/lessons/2` still renders placeholder pages
 
-### Lesson 1 (`/lessons/1`)
-- Video placeholder and section previews
-- Links to watch, vocabulary, quiz
-- Back to `/courses/hsk5`
-
-### Watch (`/lessons/1/watch`)
-- Video placeholder with duration `00:00 / 08:00`
-- Subtitle mode: Chinese, Mongolian, Both
-- 4 timed subtitle lines
-- Links to vocabulary and quiz
-
-### Vocabulary (`/lessons/1/vocabulary`)
-- 5 words with examples and HSK badges
-- Search (Chinese, pinyin, Mongolian)
-- Filter: All, HSK4, HSK5
-- Mark as learned (in-memory)
-- Learned count display
-
-### Quiz (`/lessons/1/quiz`)
-- 5 questions (multiple choice + cloze)
-- One question at a time, progress indicator
-- Correct/incorrect feedback + explanation
-- Result screen with score bands and messages
-- Restart quiz; links to vocabulary, watch, course
-
-### Navigation (polished)
-- Home CTAs and demo card wired
-- Header brand → `/`, Demo → `/lessons/1`
-- Consistent back links and cross-links between lesson sub-pages
+### Navigation
+- All `/lessons/1/*` URLs still work via `[lessonId]`
+- Course detail reads lesson list from shared content
 
 ---
 
@@ -80,61 +59,53 @@ The web app demonstrates a complete learner journey for **Lesson 1 (爱的细节
 
 | File | Contents |
 |------|----------|
-| `data/courses.ts` | `courses` — HSK4, HSK5, Taobao course list |
-| `data/lessons.ts` | `hsk5CourseDetail`, `hsk5Lessons`, `lesson1Detail`, `lesson1Watch`, `lesson1Vocabulary`, `lesson1Quiz` |
+| `data/courses.ts` | Course catalog (HSK4, HSK5, Taobao) |
+| `content/courses/hsk5/index.ts` | HSK5 course detail (stats, progress) |
+| `content/courses/hsk5/lessons/lesson-1.ts` | Full Lesson 1 content |
+| `content/courses/hsk5/lessons/lesson-2.ts` | Placeholder Lesson 2 |
+| `content/courses/hsk5/lessons/lesson-3.ts` | Placeholder Lesson 3 |
+| `content/courses/hsk5/lessons/index.ts` | Lesson registry |
+| `lib/content.ts` | Data access helpers |
 
 ## Type definitions
 
 | File | Types |
 |------|-------|
 | `types/course.ts` | `Course`, `CourseStatus` |
-| `types/lesson.ts` | `Lesson`, `LessonDetail`, `LessonWatch`, `LessonVocabulary`, `LessonQuiz`, `VocabularyWord`, `QuizQuestion`, subtitle/vocabulary helpers |
+| `types/lesson.ts` | Subtitle, vocabulary, quiz UI types |
+| `types/lesson-content.ts` | `LessonContent`, `CourseContent` |
+
+**Removed:** `data/lessons.ts`, `app/lessons/1/**` (replaced by dynamic routes).
 
 ---
 
 ## Known limitations
 
-- **No real video** — placeholders only; no player integration
-- **No database** — all content is hard-coded in `data/`
-- **No authentication** — Profile nav is `#`; no user accounts
-- **No persistence** — quiz scores, learned words, and progress reset on refresh
-- **Single lesson path** — only Lesson 1 is fully implemented; Lessons 2–3 are locked UI only
-- **HSK4 / Taobao** — HSK4 routes to HSK5 course; Taobao is disabled
-- **No admin** — content cannot be edited without code changes
-- **No payments** — no membership or paywall
-- **No i18n system** — Mongolian/Chinese copy is inline in components and data
-- **Duplicated header** — same nav markup on each page (no shared layout component yet)
+- **No real video** — placeholders only
+- **No database** — TypeScript content files
+- **No authentication** — Profile is `#`
+- **No persistence** — progress resets on refresh
+- **Course routes** — only `/courses/hsk5` is content-backed; catalog still in `data/courses.ts`
+- **Locked lessons** — disabled on course page; direct URL still works for dev
+- **Duplicated header** — per-page nav markup
 
 ---
 
 ## Next recommended tasks
 
-### Short term
-1. Extract shared `AppHeader` component to reduce duplication
-2. Define a single lesson JSON schema and migrate mock data
-3. Add Lessons 2–3 pages or dynamic `[lessonId]` route stub
-4. Integrate a real video provider (e.g. Mux, Vimeo, or self-hosted)
+1. Dynamic `/courses/[courseId]` route (optional)
+2. Supabase schema + seed from `content/`
+3. Shared `AppHeader` component
+4. Real video provider
 
-### Medium term
-5. Supabase tables: courses, lessons, subtitles, vocabulary, quiz_questions
-6. Load lesson pages from API or server components + DB
-7. Auth (Supabase Auth or similar) and save progress per user
-
-### Long term
-8. Admin dashboard for uploading videos and editing subtitles/vocabulary
-9. Stripe or local payment for subscriptions
-10. Expo mobile app sharing API with the web backend
-
-See [DEVELOPMENT_PLAN.md](./DEVELOPMENT_PLAN.md) for phased milestones.
+See [DEVELOPMENT_PLAN.md](./DEVELOPMENT_PLAN.md).
 
 ---
 
 ## Verification
 
-Last verified with:
-
 ```bash
 npm run build
 ```
 
-All MVP routes should appear as static pages in the build output.
+Expect static routes for `/lessons/1`, `/lessons/2`, `/lessons/3` and sub-pages.
