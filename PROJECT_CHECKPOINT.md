@@ -18,7 +18,7 @@ Audited routes, navigation, Supabase-first helpers, localStorage progress, UI em
 | Progress | `lib/progress.ts` SSR-safe; vocabulary/quiz/lesson state on device |
 | UI | Green/white cards; empty states; lesson not found polished |
 
-**Recommended next:** Phase 4 Step 5 — Persist quiz attempts to Supabase.
+**Recommended next:** Phase 4 Step 6 — Merge/migrate localStorage progress after login.
 
 **Phase 4 Step 1: Auth and RLS policy planning completed.**
 
@@ -34,7 +34,10 @@ Audited routes, navigation, Supabase-first helpers, localStorage progress, UI em
 **Phase 4 Step 4: Authenticated vocabulary learned state persistence added using `user_vocabulary_progress`, with localStorage fallback for guests.**
 
 - `lib/supabase/vocabulary-progress.ts`, vocabulary `dbId` from Supabase content
-- Quiz attempts still localStorage-only
+**Phase 4 Step 5: Authenticated quiz attempts persistence added using `user_quiz_attempts`, with localStorage fallback for guests.**
+
+- `lib/supabase/quiz-attempts.ts`, `saveQuizResultSmart` / `getAllQuizResultsSmart`
+- Profile and review show account quiz results when signed in
 
 - [AUTH_PLAN.md](./AUTH_PLAN.md) — Auth + migration roadmap (Steps 1–7)
 - [supabase/policies/001_auth_rls_policies.sql](./supabase/policies/001_auth_rls_policies.sql) — planned RLS (review before run)

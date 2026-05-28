@@ -728,3 +728,152 @@ export async function getAccountVocabularyLearnedCount(
 
   return data.filter((row) => isLearnedVocabularyStatus(row.status)).length;
 }
+
+export async function getQuizResultSmart(
+  lessonId: string
+): Promise<QuizResult | null> {
+  const local = getQuizResult(lessonId);
+
+  const { getCurrentUser } = await import("@/lib/supabase/auth");
+  const { data: user } = await getCurrentUser();
+  if (!user?.id) {
+    return local;
+  }
+
+  const {
+    aggregateAttemptsToQuizResult,
+    getUserQuizAttemptsByLesson,
+  } = await import("@/lib/supabase/quiz-attempts");
+  const { data, error } = await getUserQuizAttemptsByLesson(user.id, lessonId);
+
+  if (error) {
+    console.warn(
+      "[progress] Supabase quiz fetch failed; using local.",
+      error
+    );
+    return local;
+  }
+
+  if (!data?.length) {
+    return local;
+  }
+
+  const fromSupabase = aggregateAttemptsToQuizResult(data);
+  if (!fromSupabase) {
+    return local;
+  }
+
+  if (!local) {
+    return fromSupabase;
+  }
+
+  return {
+    score: fromSupabase.score,
+    total: fromSupabase.total,
+    percentage: fromSupabase.percentage,
+    bestPercentage: Math.max(
+      local.bestPercentage,
+      fromSupabase.bestPercentage
+    ),
+    updatedAt: fromSupabase.updatedAt,
+  };
+}
+
+export async function saveQuizResultSmart(
+  lessonId: string,
+  score: number,
+  total: number,
+  percentage: number,
+  answers: Record<string, unknown> = {}
+): Promise<QuizResult> {
+  const localResult = saveQuizResult(lessonId, score, total, percentage);
+
+  const { getCurrentUser, hasSupabaseConfig } = await import(
+    "@/lib/supabase/auth"
+  );
+  const { data: user, error: authError } = await getCurrentUser();
+
+  if (!user?.id) {
+    if (hasSupabaseConfig) {
+      console.warn(
+        "[progress] Quiz save skipped: no signed-in user.",
+        authError ?? "Session not found"
+      );
+    }
+    return localResult;
+  }
+
+  const { saveSupabaseQuizAttempt } = await import(
+    "@/lib/supabase/quiz-attempts"
+  );
+  const { error } = await saveSupabaseQuizAttempt(
+    user.id,
+    lessonId,
+    score,
+    total,
+    percentage,
+    answers
+  );
+
+  if (error) {
+    console.warn(
+      "[progress] Supabase quiz write failed; local saved.",
+      error
+    );
+    return localResult;
+  }
+
+  const mergedBest = Math.max(localResult.bestPercentage, percentage);
+  return {
+    ...localResult,
+    bestPercentage: mergedBest,
+  };
+}
+
+export async function getAllQuizResultsSmart(): Promise<QuizResultEntry[]> {
+  const local = getAllQuizResults();
+
+  const { getCurrentUser } = await import("@/lib/supabase/auth");
+  const { data: user } = await getCurrentUser();
+  if (!user?.id) {
+    return local;
+  }
+
+  const { getUserQuizAttempts, groupQuizAttemptsToEntries } = await import(
+    "@/lib/supabase/quiz-attempts"
+  );
+  const { data, error } = await getUserQuizAttempts(user.id);
+
+  if (error) {
+    console.warn(
+      "[progress] Supabase quiz list fetch failed; using local.",
+      error
+    );
+    return local;
+  }
+
+  if (!data?.length) {
+    return local;
+  }
+
+  const fromSupabase = groupQuizAttemptsToEntries(data);
+  if (fromSupabase.length === 0) {
+    return local;
+  }
+
+  const lessonIds = new Set(fromSupabase.map((entry) => entry.lessonId));
+  const merged = [...fromSupabase];
+
+  for (const entry of local) {
+    if (!lessonIds.has(entry.lessonId)) {
+      merged.push(entry);
+    }
+  }
+
+  return merged.sort(
+    (a, b) =>
+      new Date(b.result.updatedAt).getTime() -
+      new Date(a.result.updatedAt).getTime()
+  );
+}
+

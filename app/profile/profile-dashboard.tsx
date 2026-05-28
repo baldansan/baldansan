@@ -14,7 +14,7 @@ import {
   countStartedLessons,
   getAccountLessonProgressSummary,
   getAccountVocabularyLearnedCount,
-  getAllQuizResults,
+  getAllQuizResultsSmart,
   getLastActiveLessonId,
   getTotalLearnedWords,
   hasAnyProgress,
@@ -56,7 +56,8 @@ export function ProfileDashboard() {
       setCompletedCount(countCompletedLessonsAll());
       setStartedCount(countStartedLessons());
       setLearnedWords(getTotalLearnedWords());
-      setQuizResults(getAllQuizResults());
+      const quizEntries = await getAllQuizResultsSmart();
+      setQuizResults(quizEntries);
       setLastActiveLessonId(getLastActiveLessonId());
 
       let user: AuthUser | null = null;
@@ -79,7 +80,12 @@ export function ProfileDashboard() {
         summary && (summary.completed > 0 || summary.started > 0)
       );
       const accountHasVocab = Boolean(vocabCount && vocabCount > 0);
-      setHasProgress(localHasProgress || accountHasProgress || accountHasVocab);
+      setHasProgress(
+        localHasProgress ||
+          accountHasProgress ||
+          accountHasVocab ||
+          quizEntries.length > 0
+      );
 
       setReady(true);
     }
@@ -288,8 +294,16 @@ export function ProfileDashboard() {
             {quizResults.length > 0 ? (
               <section className="flex flex-col gap-4">
                 <h2 className="text-lg font-semibold text-slate-900">
-                  Recent quiz results
+                  {authUser
+                    ? "Аккаунттай холбогдсон quiz үр дүн"
+                    : "Recent quiz results"}
                 </h2>
+                {authUser ? (
+                  <p className="text-sm text-slate-600">
+                    Нэвтэрсэн үед quiz оролдлого Supabase-д хадгалагдана. Энэ
+                    төхөөрөмж дээрх үр дүн мөн хадгалагдсан хэвээр байна.
+                  </p>
+                ) : null}
                 {quizResults.map(({ lessonId, result }) => (
                   <article
                     key={lessonId}

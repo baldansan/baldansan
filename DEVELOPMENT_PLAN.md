@@ -139,7 +139,11 @@ Phased roadmap from MVP demo to production product.
 
 - [lib/supabase/vocabulary-progress.ts](./lib/supabase/vocabulary-progress.ts), `dbId` on Supabase vocabulary in [lib/supabase/content.ts](./lib/supabase/content.ts)
 - Mark/unmark learned → `user_vocabulary_progress`; review/profile use smart helpers
-- Quiz attempts still device-only
+
+**Phase 4 Step 5 — Completed:** Authenticated quiz attempts persistence.
+
+- [lib/supabase/quiz-attempts.ts](./lib/supabase/quiz-attempts.ts), smart helpers in [lib/progress.ts](./lib/progress.ts)
+- Each quiz finish → `insert` into `user_quiz_attempts` + localStorage mirror; latest/best aggregated per lesson
 
 **Phase 4 roadmap:**
 
@@ -149,8 +153,8 @@ Phased roadmap from MVP demo to production product.
 | 2 ✅ | Auth helpers + login/signup UI |
 | 3 ✅ | Persist lesson progress to Supabase |
 | 4 ✅ | Persist vocabulary learned state to Supabase |
-| 5 | Persist quiz attempts to Supabase — **Next** |
-| 6 | Migrate / merge localStorage progress after login |
+| 5 ✅ | Persist quiz attempts to Supabase |
+| 6 | Migrate / merge localStorage progress after login — **Next** |
 | 7 | Phase 4 final audit |
 
 **Exit criteria:** Sign up, sign in, progress survives across devices and page refresh in Supabase.

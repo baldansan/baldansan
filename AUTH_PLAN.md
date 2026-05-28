@@ -2,7 +2,7 @@
 
 This document explains how **Supabase Auth** and **Row Level Security (RLS)** will move the app from device-only `localStorage` progress to real per-user progress in PostgreSQL.
 
-**Phase 4 Step 4 (current):** vocabulary learned state persists to Supabase for signed-in users; quiz attempts remain localStorage-only until Step 5.
+**Phase 4 Step 5 (current):** quiz attempts persist to Supabase for signed-in users; Step 6 will merge localStorage after login.
 
 **Before production auth progress writes:** run [supabase/policies/001_auth_rls_policies.sql](./supabase/policies/001_auth_rls_policies.sql) in the Supabase SQL Editor. The app does not execute SQL automatically.
 
@@ -113,8 +113,8 @@ From [001_initial_schema.sql](./supabase/migrations/001_initial_schema.sql):
 | **2** | Auth helpers + login/signup UI | ✅ Completed |
 | **3** | Persist lesson progress to Supabase | ✅ Completed |
 | **4** | Persist vocabulary learned state to Supabase | ✅ Completed |
-| **5** | Persist quiz attempts to Supabase | **Next** |
-| **6** | Migrate / merge localStorage progress after login | Planned |
+| **5** | Persist quiz attempts to Supabase | ✅ Completed |
+| **6** | Migrate / merge localStorage progress after login | **Next** |
 | **7** | Phase 4 final audit | Planned |
 
 ### Step 2 — Auth helpers + login/signup UI ✅
@@ -132,7 +132,7 @@ From [001_initial_schema.sql](./supabase/migrations/001_initial_schema.sql):
 - [lib/progress.ts](./lib/progress.ts) — `markLessonStartedSmart` / `markLessonCompletedSmart` (Supabase when logged in + always localStorage)
 - Course (`/courses/hsk5`), lesson cards, quiz ≥70%, watch link/page write lesson rows to `user_lesson_progress`
 - Profile shows **Аккаунттай холбогдсон ахиц** when signed in; device progress note kept
-- **Quiz attempt rows** still localStorage-only (planned Step 5)
+- Quiz attempts: Step 5 ✅
 - Apply RLS manually: `supabase/policies/001_auth_rls_policies.sql`
 
 ### Step 4 — Vocabulary progress in Supabase ✅
@@ -140,12 +140,11 @@ From [001_initial_schema.sql](./supabase/migrations/001_initial_schema.sql):
 - [lib/supabase/vocabulary-progress.ts](./lib/supabase/vocabulary-progress.ts) — CRUD on `user_vocabulary_progress` via `vocabulary_word_id` (`dbId` on [VocabularyWord](./types/lesson.ts))
 - [lib/progress.ts](./lib/progress.ts) — `getLearnedWordsSmart`, `toggleLearnedWordSmart`, `getAllLearnedWordsSmart`
 - Vocabulary + review pages read/write Supabase when logged in; localStorage always mirrored
-- **Quiz attempts** still localStorage-only (Step 5)
+### Step 5 — Quiz attempts in Supabase ✅
 
-### Step 5 — Quiz attempts in Supabase
-
-- Finish quiz → `insert` into `user_quiz_attempts`
-- Profile/review quiz summaries from DB
+- [lib/supabase/quiz-attempts.ts](./lib/supabase/quiz-attempts.ts) — `getUserQuizAttempts`, `saveSupabaseQuizAttempt`, aggregate latest/best per lesson
+- [lib/progress.ts](./lib/progress.ts) — `saveQuizResultSmart`, `getQuizResultSmart`, `getAllQuizResultsSmart`
+- Quiz finish → `insert` into `user_quiz_attempts` + localStorage; profile/review read Supabase when logged in
 
 ### Step 6 — localStorage migration
 

@@ -10,7 +10,7 @@ import { lessonPath, lessonVocabularyPath } from "@/lib/content";
 import { getCurrentUser, hasSupabaseConfig } from "@/lib/supabase/auth";
 import {
   getAllLearnedWordsSmart,
-  getAllQuizResults,
+  getAllQuizResultsSmart,
   getLastActiveLessonId,
   vocabularyWordKey,
   type LearnedWordEntry,
@@ -107,7 +107,7 @@ export function ReviewDashboard({ lessons }: Props) {
         }))
       );
       setLearnedEntries(entries);
-      setQuizResults(getAllQuizResults());
+      setQuizResults(await getAllQuizResultsSmart());
       setLastActiveLessonId(getLastActiveLessonId());
       setReady(true);
     }
@@ -206,7 +206,7 @@ export function ReviewDashboard({ lessons }: Props) {
         {quizResults.length > 0 ? (
           <section className="flex flex-col gap-4">
             <h2 className="text-lg font-semibold text-slate-900">
-              Quiz review summary
+              {isLoggedIn ? "Аккаунттай холбогдсон quiz" : "Quiz review summary"}
             </h2>
             {quizResults.map(({ lessonId, result }) => (
               <article

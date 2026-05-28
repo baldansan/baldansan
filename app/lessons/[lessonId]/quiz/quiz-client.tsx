@@ -13,10 +13,10 @@ import {
   lessonWatchPath,
 } from "@/lib/content";
 import {
-  getQuizResult,
+  getQuizResultSmart,
   markLessonCompletedSmart,
   PASSING_QUIZ_PERCENT,
-  saveQuizResult,
+  saveQuizResultSmart,
   type QuizResult,
 } from "@/lib/progress";
 import type { LessonContent } from "@/types/lesson-content";
@@ -56,18 +56,30 @@ export function LessonQuizClient({ lesson, nextLessonId }: Props) {
   );
 
   useEffect(() => {
-    setSavedResult(getQuizResult(lesson.id));
+    async function load() {
+      setSavedResult(await getQuizResultSmart(lesson.id));
+    }
+    void load();
   }, [lesson.id]);
 
   useEffect(() => {
     if (!finished || total === 0) return;
 
-    const result = saveQuizResult(lesson.id, correctCount, total, percent);
-    setSavedResult(result);
+    async function save() {
+      const result = await saveQuizResultSmart(
+        lesson.id,
+        correctCount,
+        total,
+        percent
+      );
+      setSavedResult(result);
 
-    if (percent >= PASSING_QUIZ_PERCENT) {
-      void markLessonCompletedSmart(lesson.id);
+      if (percent >= PASSING_QUIZ_PERCENT) {
+        void markLessonCompletedSmart(lesson.id);
+      }
     }
+
+    void save();
   }, [finished, lesson.id, correctCount, total, percent]);
 
   function handleSelect(option: string) {

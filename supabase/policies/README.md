@@ -37,7 +37,7 @@ Prerequisites:
 - Lesson content: Supabase-first read via anon key + [lib/supabase/content.ts](../../lib/supabase/content.ts).
 - Lesson progress (signed in): [lib/supabase/progress.ts](../../lib/supabase/progress.ts) + smart helpers in [lib/progress.ts](../../lib/progress.ts); always mirrored to localStorage.
 - Vocabulary learned (signed in): [lib/supabase/vocabulary-progress.ts](../../lib/supabase/vocabulary-progress.ts) + localStorage mirror.
-- Quiz attempts: **localStorage** only until Step 5.
+- Quiz attempts (signed in): [lib/supabase/quiz-attempts.ts](../../lib/supabase/quiz-attempts.ts) + localStorage mirror.
 
 ## Related docs
 
