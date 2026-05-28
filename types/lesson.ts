@@ -55,7 +55,7 @@ export type VocabularyWord = {
   exampleMongolian: string;
 };
 
-export type VocabularyFilter = "all" | "HSK4" | "HSK5";
+export type VocabularyFilter = "all" | "HSK3" | "HSK4" | "HSK5";
 
 export type LessonVocabulary = {
   title: string;

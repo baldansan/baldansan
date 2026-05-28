@@ -102,7 +102,7 @@ export const lessonTemplate: LessonContent = {
       chinese: "REPLACE_词",
       pinyin: "REPLACE_pinyin",
       mongolian: "REPLACE_утга",
-      hskLevel: "HSK4", // HSK3 | HSK4 | HSK5
+      hskLevel: "HSK4", // HSK3 | HSK4 | HSK5 (vocabulary page filters)
       exampleChinese: "REPLACE_例句中文。",
       exampleMongolian: "REPLACE_Жишээ Монгол.",
     },

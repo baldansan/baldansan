@@ -2,7 +2,7 @@
 
 **Project:** Buunduu Surtsgaay  
 **Checkpoint date:** May 2026  
-**Status:** MVP demo complete; Phase 2 dynamic lesson routing complete
+**Status:** MVP demo complete; Phase 2 closed — ready for Phase 3 (Supabase)
 
 ---
 
@@ -16,11 +16,19 @@ The web app demonstrates a complete learner journey for **Lesson 1 (爱的细节
 
 Lesson pages are **data-driven** via dynamic segments. Content lives under `content/courses/hsk5/lessons/` with helpers in `lib/content.ts`. Adding a lesson means a new content file (e.g. `lesson-4.ts`) and registering it in `content/courses/hsk5/lessons/index.ts`—no new page folders.
 
-**Phase 2 Step 2:** Lesson 2 content pipeline validated with available Lesson 2 data (6 subtitles, 12 vocabulary, 5 quiz questions). Lesson 1 unchanged; Lesson 3 remains locked.
+**Phase 2 Step 2:** Lesson 2 content pipeline validated with available Lesson 2 data.
 
 **Phase 2 Step 3:** Lesson import templates and content authoring guide completed (`templates/`, `CONTENT_AUTHORING_GUIDE.md`).
 
-**Phase 2 Step 4:** Lesson 3 added using the import template (6 subtitles, 12 vocabulary, 5 quiz; status available). Lessons 1–2 unchanged.
+**Phase 2 Step 4:** Lesson 3 added using the import template (6 subtitles, 12 vocabulary, 5 quiz; status available).
+
+**Phase 2 Final Audit completed:** dynamic lesson structure verified for Lessons 1–3, HSK3/4/5 vocabulary filtering supported, templates aligned with current data model. Lesson 1 counts corrected to match arrays (5 vocabulary, 5 quiz).
+
+| Lesson | vocabularyCount | quizCount | status |
+|--------|-----------------|-----------|--------|
+| 1 | 5 | 5 | available |
+| 2 | 12 | 5 | available |
+| 3 | 12 | 5 | available |
 
 ---
 

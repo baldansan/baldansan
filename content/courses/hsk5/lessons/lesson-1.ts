@@ -10,8 +10,8 @@ export const lesson1: LessonContent = {
   description:
     "Хайрын жижиг деталь, халамж, ойлголцлын тухай богино хичээл.",
   duration: "8 min",
-  vocabularyCount: 20,
-  quizCount: 10,
+  vocabularyCount: 5,
+  quizCount: 5,
   status: "available",
   videoPlaceholder: "Video lesson placeholder",
   watchTotalTime: "08:00",

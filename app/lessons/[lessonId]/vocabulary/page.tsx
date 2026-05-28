@@ -14,6 +14,7 @@ import type { VocabularyFilter } from "@/types/lesson";
 
 const filters: { id: VocabularyFilter; label: string }[] = [
   { id: "all", label: "All" },
+  { id: "HSK3", label: "HSK3" },
   { id: "HSK4", label: "HSK4" },
   { id: "HSK5", label: "HSK5" },
 ];
@@ -119,7 +120,7 @@ export default function LessonVocabularyPage() {
             onChange={(e) => setSearch(e.target.value)}
             className="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-900 outline-none ring-emerald-500 placeholder:text-slate-400 focus:border-emerald-300 focus:ring-2"
           />
-          <div className="mt-3 flex gap-2">
+          <div className="mt-3 flex flex-wrap gap-2">
             {filters.map((item) => (
               <button
                 key={item.id}

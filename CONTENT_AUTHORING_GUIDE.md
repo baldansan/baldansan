@@ -150,6 +150,7 @@ Before publishing, verify:
 - [ ] `id` is unique and matches filename / URL
 - [ ] `vocabularyCount === vocabulary.length`
 - [ ] `quizCount === quizQuestions.length`
+- [ ] `hskLevel` is `HSK3`, `HSK4`, or `HSK5` (vocabulary filters: All, HSK3, HSK4, HSK5)
 - [ ] Every vocabulary `id` is unique within the lesson
 - [ ] Every quiz `correctAnswer` matches an `options` entry exactly
 - [ ] `subtitlePreview` has 1–2 entries (typically from start of `timedSubtitles`)
@@ -165,6 +166,14 @@ Before publishing, verify:
 | [templates/lesson-import-template.ts](./templates/lesson-import-template.ts) | TypeScript starter with comments |
 | [templates/lesson-import-template.json](./templates/lesson-import-template.json) | JSON draft / ChatGPT output |
 | [templates/lesson-content-prompt.md](./templates/lesson-content-prompt.md) | Copy-paste AI authoring prompt |
+
+---
+
+## Phase 2 final audit (reference)
+
+Phase 2 Final Audit completed: dynamic lesson structure verified for Lessons 1–3, HSK3/4/5 vocabulary filtering supported, templates aligned with current data model.
+
+Invalid lesson ids (e.g. `/lessons/999`) show the **Lesson not found** page with a link back to `/courses/hsk5`.
 
 ---
 

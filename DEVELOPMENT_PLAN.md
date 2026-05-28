@@ -44,6 +44,10 @@ Phased roadmap from MVP demo to production product.
 
 **Phase 2 Step 4 — Completed:** Lesson 3 added using the import template (`content/courses/hsk5/lessons/lesson-3.ts`, status `available`).
 
+**Phase 2 Final Audit — Completed:** Data/route/template consistency verified; HSK3 vocabulary filter added; Lesson 1 metadata counts aligned with content arrays. **Phase 2 is closed** — proceed to Phase 3.
+
+> Phase 2 Final Audit completed: dynamic lesson structure verified for Lessons 1–3, HSK3/4/5 vocabulary filtering supported, templates aligned with current data model.
+
 ---
 
 ## Phase 3: Supabase database

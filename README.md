@@ -2,7 +2,7 @@
 
 A Mongolian–Chinese language learning web app. Users learn Chinese through short video lessons, subtitles, vocabulary, and quizzes.
 
-**MVP v1** is a static demo with mock data—no database or authentication yet. **Phase 2** adds dynamic lesson routes (`/lessons/[lessonId]`) backed by `content/` files.
+**MVP v1** is a static demo with mock data—no database or authentication yet. **Phase 2** (complete) adds dynamic lesson routes (`/lessons/[lessonId]`) backed by `content/` files. Lessons 1–3 are available on the HSK5 course.
 
 ## Tech stack
 
@@ -100,8 +100,8 @@ Templates and AI prompt: [templates/](./templates/) (including [lesson-content-p
 
 See [DEVELOPMENT_PLAN.md](./DEVELOPMENT_PLAN.md) for the full roadmap. Immediate priorities:
 
-1. ~~Real lesson data structure~~ ✅ Phase 2
-2. Supabase for courses, lessons, vocabulary, progress
+1. ~~Real lesson data structure~~ ✅ Phase 2 (closed)
+2. **Supabase** for courses, lessons, vocabulary, progress ← Phase 3
 3. Authentication and user progress persistence
 4. Admin tools for content upload
 5. Membership / payments
