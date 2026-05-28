@@ -11,6 +11,7 @@ import {
   lessonQuizPath,
   lessonWatchPath,
 } from "@/lib/content";
+import { enrichVocabularyWithDbIds } from "@/lib/supabase/content";
 import {
   getLearnedWordsSmart,
   toggleLearnedWordSmart,
@@ -36,10 +37,30 @@ export function LessonVocabularyClient({ lesson }: Props) {
   const [search, setSearch] = useState("");
   const [filter, setFilter] = useState<VocabularyFilter>("all");
   const [learned, setLearned] = useState<Set<string>>(new Set());
+  const [vocabulary, setVocabulary] = useState(lesson.vocabulary);
+
+  useEffect(() => {
+    let cancelled = false;
+
+    async function loadVocabulary() {
+      const enriched = await enrichVocabularyWithDbIds(
+        lesson.id,
+        lesson.vocabulary
+      );
+      if (!cancelled) {
+        setVocabulary(enriched);
+      }
+    }
+
+    void loadVocabulary();
+    return () => {
+      cancelled = true;
+    };
+  }, [lesson.id, lesson.vocabulary]);
 
   useEffect(() => {
     async function refresh() {
-      const keys = await getLearnedWordsSmart(lesson.id, lesson.vocabulary);
+      const keys = await getLearnedWordsSmart(lesson.id, vocabulary);
       setLearned(new Set(keys));
     }
 
@@ -50,18 +71,18 @@ export function LessonVocabularyClient({ lesson }: Props) {
     void refresh();
     window.addEventListener("focus", onFocus);
     return () => window.removeEventListener("focus", onFocus);
-  }, [lesson.id, lesson.vocabulary]);
+  }, [lesson.id, vocabulary]);
 
   const visibleFilters = useMemo(() => {
-    const levels = new Set(lesson.vocabulary.map((word) => word.hskLevel));
+    const levels = new Set(vocabulary.map((word) => word.hskLevel));
     return allFilters.filter(
       (item) => item.id === "all" || levels.has(item.id)
     );
-  }, [lesson.vocabulary]);
+  }, [vocabulary]);
 
   const filteredWords = useMemo(() => {
     const query = search.trim().toLowerCase();
-    return lesson.vocabulary.filter((word) => {
+    return vocabulary.filter((word) => {
       const matchesFilter = filter === "all" || word.hskLevel === filter;
       if (!matchesFilter) return false;
       if (!query) return true;
@@ -71,7 +92,7 @@ export function LessonVocabularyClient({ lesson }: Props) {
         word.mongolian.toLowerCase().includes(query)
       );
     });
-  }, [lesson, search, filter]);
+  }, [vocabulary, search, filter]);
 
   function resetFilters() {
     setSearch("");
@@ -126,7 +147,7 @@ export function LessonVocabularyClient({ lesson }: Props) {
             <p className="mt-1 text-2xl font-bold text-emerald-800">
               {learned.size}{" "}
               <span className="text-lg font-semibold text-emerald-600">
-                / {lesson.vocabulary.length}
+                / {vocabulary.length}
               </span>
             </p>
           </div>
@@ -167,12 +188,12 @@ export function LessonVocabularyClient({ lesson }: Props) {
             ))}
           </div>
           <p className="mt-3 text-sm font-medium text-slate-600">
-            Showing {filteredWords.length} / {lesson.vocabulary.length} words
+            Showing {filteredWords.length} / {vocabulary.length} words
           </p>
         </section>
 
         <section className="flex flex-col gap-4">
-          {lesson.vocabulary.length === 0 ? (
+          {vocabulary.length === 0 ? (
             <EmptyState
               title="No vocabulary found"
               description="Энэ хичээлд үгийн жагсаалт одоогоор байхгүй байна."

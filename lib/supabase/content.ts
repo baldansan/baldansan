@@ -155,7 +155,7 @@ function mapFullLesson(
     timedSubtitles,
     vocabulary: vocabulary.map((word) => ({
       id: `${row.id}-vocab-${word.order_index}`,
-      dbId: word.id,
+      dbId: Number(word.id),
       chinese: word.chinese,
       pinyin: word.pinyin ?? "",
       mongolian: word.mongolian,
@@ -335,6 +335,52 @@ export async function getSupabaseLessonById(
     (vocabularyResult.data ?? []) as DbVocabularyWord[],
     (quizResult.data ?? []) as DbQuizQuestion[]
   );
+}
+
+/** Maps `chinese` → `vocabulary_words.id` for progress writes when lesson content is local fallback. */
+export async function getVocabularyDbIdMapForLesson(
+  lessonId: string
+): Promise<Map<string, number>> {
+  if (!hasSupabaseConfig || !supabase) {
+    return new Map();
+  }
+
+  const { data, error } = await supabase
+    .from("vocabulary_words")
+    .select("id, chinese")
+    .eq("lesson_id", lessonId);
+
+  if (error) {
+    throw error;
+  }
+
+  const map = new Map<string, number>();
+  for (const row of data ?? []) {
+    map.set(row.chinese as string, Number(row.id));
+  }
+  return map;
+}
+
+export async function enrichVocabularyWithDbIds<
+  T extends { chinese: string; dbId?: number },
+>(lessonId: string, words: T[]): Promise<T[]> {
+  if (words.length === 0 || words.every((word) => word.dbId != null)) {
+    return words;
+  }
+
+  try {
+    const map = await getVocabularyDbIdMapForLesson(lessonId);
+    if (map.size === 0) {
+      return words;
+    }
+
+    return words.map((word) => ({
+      ...word,
+      dbId: word.dbId ?? map.get(word.chinese),
+    }));
+  } catch {
+    return words;
+  }
 }
 
 export async function getSupabaseLessonIds(): Promise<string[]> {

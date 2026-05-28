@@ -45,13 +45,17 @@ export async function getSession(): Promise<AuthResult<Session>> {
 }
 
 export async function getCurrentUser(): Promise<AuthResult<AuthUser>> {
-  const { data: session, error } = await getSession();
+  if (!supabase) {
+    return notConfigured();
+  }
+
+  const { data, error } = await supabase.auth.getUser();
   if (error) {
-    return { data: null, error };
+    return { data: null, error: toErrorMessage(error) };
   }
 
   return {
-    data: mapUser(session?.user ?? null),
+    data: mapUser(data.user),
     error: null,
   };
 }

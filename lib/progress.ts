@@ -213,6 +213,14 @@ export type LessonVocabSnapshot = {
   vocabulary: VocabularyWordProgressInput[];
 };
 
+function toVocabularyDbId(value: number | undefined): number | null {
+  if (value == null) {
+    return null;
+  }
+  const id = Number(value);
+  return Number.isFinite(id) ? id : null;
+}
+
 function mergeLearnedKeysForLesson(
   lessonWords: VocabularyWordProgressInput[],
   localKeys: string[],
@@ -222,8 +230,9 @@ function mergeLearnedKeysForLesson(
 
   for (const word of lessonWords) {
     const key = vocabularyWordKey(word);
-    if (word.dbId != null) {
-      if (learnedDbIds.has(word.dbId)) {
+    const dbId = toVocabularyDbId(word.dbId);
+    if (dbId != null) {
+      if (learnedDbIds.has(dbId)) {
         keys.add(key);
       }
     } else if (localKeys.includes(key)) {
@@ -233,7 +242,7 @@ function mergeLearnedKeysForLesson(
 
   for (const key of localKeys) {
     const word = lessonWords.find((item) => vocabularyWordKey(item) === key);
-    if (!word?.dbId) {
+    if (toVocabularyDbId(word?.dbId) == null) {
       keys.add(key);
     }
   }
@@ -493,6 +502,21 @@ export async function getAccountLessonProgressSummary(
   };
 }
 
+async function resolveVocabularyWordDbId(
+  lessonId: string,
+  word: VocabularyWordProgressInput
+): Promise<number | null> {
+  const { normalizeVocabularyWordDbId, lookupVocabularyWordDbId } =
+    await import("@/lib/supabase/vocabulary-progress");
+
+  const existing = normalizeVocabularyWordDbId(word.dbId);
+  if (existing != null) {
+    return existing;
+  }
+
+  return lookupVocabularyWordDbId(lessonId, word.chinese);
+}
+
 export async function getLearnedWordsSmart(
   lessonId: string,
   lessonWords: VocabularyWordProgressInput[] = []
@@ -505,7 +529,13 @@ export async function getLearnedWordsSmart(
     return localKeys;
   }
 
-  const hasDbIds = lessonWords.some((word) => word.dbId != null);
+  const { enrichVocabularyWithDbIds } = await import("@/lib/supabase/content");
+  const enrichedWords = await enrichVocabularyWithDbIds(
+    lessonId,
+    lessonWords
+  );
+
+  const hasDbIds = enrichedWords.some((word) => word.dbId != null);
   if (!hasDbIds) {
     return localKeys;
   }
@@ -523,7 +553,7 @@ export async function getLearnedWordsSmart(
 
   if (error) {
     const lessonDbIds = new Set(
-      lessonWords
+      enrichedWords
         .map((word) => word.dbId)
         .filter((id): id is number => id != null)
     );
@@ -544,10 +574,11 @@ export async function getLearnedWordsSmart(
   const learnedDbIds = new Set(
     (data ?? [])
       .filter((row) => isLearnedVocabularyStatus(row.status))
-      .map((row) => row.vocabulary_word_id)
+      .map((row) => Number(row.vocabulary_word_id))
+      .filter((id) => Number.isFinite(id))
   );
 
-  return mergeLearnedKeysForLesson(lessonWords, localKeys, learnedDbIds);
+  return mergeLearnedKeysForLesson(enrichedWords, localKeys, learnedDbIds);
 }
 
 export async function toggleLearnedWordSmart(
@@ -558,9 +589,26 @@ export async function toggleLearnedWordSmart(
   const localNext = toggleLearnedWord(lessonId, key);
   const isNowLearned = localNext.includes(key);
 
-  const { getCurrentUser } = await import("@/lib/supabase/auth");
-  const { data: user } = await getCurrentUser();
-  if (!user?.id || word.dbId == null) {
+  const { getCurrentUser, hasSupabaseConfig } = await import(
+    "@/lib/supabase/auth"
+  );
+  const { data: user, error: authError } = await getCurrentUser();
+
+  if (!user?.id) {
+    if (hasSupabaseConfig) {
+      console.warn(
+        "[progress] Vocabulary save skipped: no signed-in user.",
+        authError ?? "Session not found"
+      );
+    }
+    return localNext;
+  }
+
+  const dbId = await resolveVocabularyWordDbId(lessonId, word);
+  if (dbId == null) {
+    console.warn(
+      "[progress] Vocabulary save skipped: no vocabulary_word_id for this lesson word."
+    );
     return localNext;
   }
 
@@ -569,7 +617,7 @@ export async function toggleLearnedWordSmart(
   );
   const { error } = await toggleSupabaseWordLearned(
     user.id,
-    word.dbId,
+    dbId,
     isNowLearned
   );
   if (error) {

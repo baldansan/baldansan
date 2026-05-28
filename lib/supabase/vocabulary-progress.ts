@@ -30,6 +30,38 @@ export function isLearnedVocabularyStatus(status: string): boolean {
   return status === "learned";
 }
 
+export function normalizeVocabularyWordDbId(
+  value: number | string | undefined | null
+): number | null {
+  if (value == null) {
+    return null;
+  }
+  const id = typeof value === "number" ? value : Number(value);
+  return Number.isFinite(id) ? id : null;
+}
+
+export async function lookupVocabularyWordDbId(
+  lessonId: string,
+  chinese: string
+): Promise<number | null> {
+  if (!supabase) {
+    return null;
+  }
+
+  const { data, error } = await supabase
+    .from("vocabulary_words")
+    .select("id")
+    .eq("lesson_id", lessonId)
+    .eq("chinese", chinese)
+    .maybeSingle();
+
+  if (error || !data) {
+    return null;
+  }
+
+  return normalizeVocabularyWordDbId(data.id as number | string);
+}
+
 export async function getUserVocabularyProgress(
   userId: string
 ): Promise<VocabularyProgressResult<UserVocabularyProgressRow[]>> {
@@ -98,13 +130,18 @@ export async function markSupabaseWordLearned(
     return notConfigured();
   }
 
+  const wordId = normalizeVocabularyWordDbId(vocabularyWordId);
+  if (wordId == null) {
+    return { data: null, error: "Invalid vocabulary_word_id" };
+  }
+
   const now = new Date().toISOString();
   const { data, error } = await supabase
     .from("user_vocabulary_progress")
     .upsert(
       {
         user_id: userId,
-        vocabulary_word_id: vocabularyWordId,
+        vocabulary_word_id: wordId,
         status: "learned",
         learned_at: now,
         updated_at: now,
@@ -130,11 +167,16 @@ export async function unmarkSupabaseWordLearned(
     return notConfigured();
   }
 
+  const wordId = normalizeVocabularyWordDbId(vocabularyWordId);
+  if (wordId == null) {
+    return { data: null, error: "Invalid vocabulary_word_id" };
+  }
+
   const { error } = await supabase
     .from("user_vocabulary_progress")
     .delete()
     .eq("user_id", userId)
-    .eq("vocabulary_word_id", vocabularyWordId);
+    .eq("vocabulary_word_id", wordId);
 
   return {
     data: null,

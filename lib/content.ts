@@ -138,20 +138,56 @@ async function withSupabaseListFallback<T>(
 export async function getLessonById(
   lessonId: string
 ): Promise<LessonContent | undefined> {
-  return withSupabaseFallback(
+  const lesson = await withSupabaseFallback(
     `getLessonById(${lessonId})`,
     () => getSupabaseLessonById(lessonId),
     () => getLocalLessonById(lessonId)
   );
+
+  if (!lesson) {
+    return undefined;
+  }
+
+  if (!hasSupabaseConfig) {
+    return lesson;
+  }
+
+  const { enrichVocabularyWithDbIds } = await import(
+    "@/lib/supabase/content"
+  );
+  const vocabulary = await enrichVocabularyWithDbIds(
+    lesson.id,
+    lesson.vocabulary
+  );
+
+  return { ...lesson, vocabulary };
 }
 
 export async function getLessonsByCourseId(
   courseId: string
 ): Promise<LessonContent[]> {
-  return withSupabaseListFallback(
+  const lessons = await withSupabaseListFallback(
     `getLessonsByCourseId(${courseId})`,
     () => getSupabaseLessonsByCourseId(courseId),
     () => getLocalLessonsByCourseId(courseId)
+  );
+
+  if (!hasSupabaseConfig) {
+    return lessons;
+  }
+
+  const { enrichVocabularyWithDbIds } = await import(
+    "@/lib/supabase/content"
+  );
+
+  return Promise.all(
+    lessons.map(async (lesson) => ({
+      ...lesson,
+      vocabulary: await enrichVocabularyWithDbIds(
+        lesson.id,
+        lesson.vocabulary
+      ),
+    }))
   );
 }
 
