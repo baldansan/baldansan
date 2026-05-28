@@ -2,6 +2,8 @@
 
 Admins publish lessons through the Phase 5 admin UI. Public learners only see lessons with **`status = available`**.
 
+**Preferred workflow:** Use **`/admin/lesson-builder`** for the guided draft → prompt → import → QA → preview → backup → publish checklist. See [LESSON_BUILDER_WORKFLOW.md](./LESSON_BUILDER_WORKFLOW.md).
+
 ---
 
 ## Content QA before publish

@@ -80,8 +80,9 @@ export function AdminDashboard({ summary }: Props) {
           href="/admin/lessons"
         />
         <AdminCard
-          title="Upload workflow"
-          description="metadata → subtitle → vocabulary → quiz → preview → publish"
+          title="Lesson Builder"
+          description="Prompt → Import → QA → Backup → Publish workflow"
+          href="/admin/lesson-builder"
         />
       </div>
 
@@ -94,6 +95,14 @@ export function AdminDashboard({ summary }: Props) {
               className="font-medium text-emerald-700 hover:text-emerald-800"
             >
               Content QA →
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/admin/lesson-builder"
+              className="font-medium text-emerald-700 hover:text-emerald-800"
+            >
+              Lesson Builder →
             </Link>
           </li>
           <li>

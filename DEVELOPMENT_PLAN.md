@@ -223,12 +223,13 @@ Phased roadmap from MVP demo to production product.
 - [components/admin/lesson-duplicate-card.tsx](./components/admin/lesson-duplicate-card.tsx), [lesson-restore-card.tsx](./components/admin/lesson-restore-card.tsx)
 - Bulk import replace confirmation + [LESSON_BACKUP_RESTORE.md](./LESSON_BACKUP_RESTORE.md)
 
-**Next:** Phase 5 Step 14 — Lesson package generator / full lesson builder workflow.
+**Phase 5 Step 14 — Completed:** Guided Lesson Builder workflow.
 
-- [components/admin/lesson-prompt-generator.tsx](./components/admin/lesson-prompt-generator.tsx)
-- [components/admin/import-qa-summary.tsx](./components/admin/import-qa-summary.tsx)
-- [LESSON_PROMPT_TEMPLATE.md](./LESSON_PROMPT_TEMPLATE.md)
-- Stronger bulk import validation (errors vs warnings)
+- [app/admin/lesson-builder/page.tsx](./app/admin/lesson-builder/page.tsx) — guided admin workflow page
+- [components/admin/lesson-builder-workflow.tsx](./components/admin/lesson-builder-workflow.tsx), [lesson-builder-checklist.tsx](./components/admin/lesson-builder-checklist.tsx), [lesson-package-summary.tsx](./components/admin/lesson-package-summary.tsx)
+- [LESSON_BUILDER_WORKFLOW.md](./LESSON_BUILDER_WORKFLOW.md)
+
+**Next:** Phase 5 Step 15 — Media/video placeholder and lesson asset management. Or Phase 5 Final Audit.
 
 - [lib/supabase/admin-import.ts](./lib/supabase/admin-import.ts) — parse, validate, `bulkImportLessonContent`
 - [components/admin/bulk-import-editor.tsx](./components/admin/bulk-import-editor.tsx) on lesson edit page
@@ -256,7 +257,9 @@ Phased roadmap from MVP demo to production product.
 | 11 | Admin lesson metadata edit/save | ✅ Completed |
 | 12 | Lesson JSON export and backup tools | ✅ Completed |
 | 13 | Lesson duplicate, restore, destructive import safety | ✅ Completed |
-| 14 | Lesson package generator / full lesson builder | Next |
+| 14 | Lesson package generator / full lesson builder | ✅ Completed |
+
+**Next (Phase 5):** Step 15 — Media/video placeholder and lesson asset management. Or Phase 5 Final Audit.
 
 **Exit criteria:** New lesson published through admin UI without deploying code.
 

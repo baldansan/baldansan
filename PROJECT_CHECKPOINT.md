@@ -2,7 +2,21 @@
 
 **Project:** Buunduu Surtsgaay (Бөөндөө Сурцгаая)  
 **Checkpoint date:** May 2026  
-**Status:** Phase 4 **completed**; Phase 5 Step 13 duplicate/restore/safety **completed**
+**Status:** Phase 4 **completed**; Phase 5 Step 14 Lesson Builder workflow **completed**
+
+---
+
+## Phase 5 Step 14 — Guided Lesson Builder workflow — **Completed**
+
+Phase 5 Step 14: Guided Lesson Builder workflow added.
+
+| Area | Deliverable |
+|------|-------------|
+| Route | `/admin/lesson-builder` |
+| UI | `lesson-builder-workflow`, `lesson-builder-checklist`, `lesson-package-summary` |
+| Docs | [LESSON_BUILDER_WORKFLOW.md](./LESSON_BUILDER_WORKFLOW.md) |
+
+**Next:** Phase 5 Step 15 — Media/video placeholder and lesson asset management. Or Phase 5 Final Audit.
 
 ---
 
@@ -15,8 +29,6 @@ Phase 5 Step 13: Lesson duplicate, restore, and destructive import safety tools 
 | API | `duplicateLesson`, `restoreLessonFromBackup` |
 | UI | `lesson-duplicate-card`, `lesson-restore-card`, bulk import replace confirmation |
 | Docs | [LESSON_BACKUP_RESTORE.md](./LESSON_BACKUP_RESTORE.md) |
-
-**Next:** Phase 5 Step 14 — Lesson package generator / full lesson builder workflow.
 
 ---
 

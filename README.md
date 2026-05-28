@@ -133,13 +133,14 @@ Helpers: [lib/supabase/auth.ts](./lib/supabase/auth.ts). Header shows **Нэвт
 
 - [ADMIN_PLAN.md](./ADMIN_PLAN.md) — admin CMS roadmap and security
 - [CONTENT_WORKFLOW.md](./CONTENT_WORKFLOW.md) — create → publish → verify workflow
+- [LESSON_BUILDER_WORKFLOW.md](./LESSON_BUILDER_WORKFLOW.md) — guided Lesson Builder (draft → publish)
 - [LESSON_IMPORT_FORMAT.md](./LESSON_IMPORT_FORMAT.md) — bulk JSON import format (ChatGPT paste)
 - [LESSON_EXPORT_FORMAT.md](./LESSON_EXPORT_FORMAT.md) — full lesson JSON backup export
 - [LESSON_BACKUP_RESTORE.md](./LESSON_BACKUP_RESTORE.md) — duplicate, restore, replace safety
 - [LESSON_PROMPT_TEMPLATE.md](./LESSON_PROMPT_TEMPLATE.md) — master ChatGPT prompt for lesson JSON
 - [supabase/admin/README.md](./supabase/admin/README.md) — run `001_admin_profiles_setup.sql`, bootstrap admin user
 
-**Routes:** `/admin` · `/admin/lessons` · `/admin/lessons/new` · `/admin/lessons/1/edit` (example)
+**Routes:** `/admin` · `/admin/lesson-builder` · `/admin/lessons` · `/admin/lessons/new` · `/admin/lessons/1/edit` (example)
 
 **Admin editors:** `/admin/lessons/new` (draft metadata) · `/admin/lessons/{id}/edit` (metadata save, subtitle, vocabulary, quiz CRUD).
 
@@ -151,7 +152,9 @@ Helpers: [lib/supabase/auth.ts](./lib/supabase/auth.ts). Header shows **Нэвт
 
 **Duplicate & restore:** copy lesson to new draft ID; restore backup JSON with append/replace (confirmation required for replace).
 
-**Next step:** Phase 5 Step 14 — Lesson package generator / full lesson builder workflow.
+**Lesson Builder:** `/admin/lesson-builder` — select lesson, workflow checklist, QA summary, quick links to edit/preview/export/publish.
+
+**Next step:** Phase 5 Step 15 — Media/video placeholder and lesson asset management. Or Phase 5 Final Audit.
 
 ## Documentation
 

@@ -102,7 +102,9 @@ See [CONTENT_WORKFLOW.md](./CONTENT_WORKFLOW.md):
 | 11 | Admin lesson metadata edit/save | ✅ Completed |
 | 12 | Lesson JSON export and backup tools | ✅ Completed |
 | 13 | Lesson duplicate, restore, destructive import safety | ✅ Completed |
-| 14 | Lesson package generator / full lesson builder | Next |
+| 14 | Lesson package generator / full lesson builder | ✅ Completed |
+
+Step 14: [LESSON_BUILDER_WORKFLOW.md](./LESSON_BUILDER_WORKFLOW.md), `/admin/lesson-builder`, `lesson-builder-checklist`, `lesson-package-summary`.
 
 Step 3: [lib/admin/lesson-qa.ts](./lib/admin/lesson-qa.ts), `/admin/lessons` QA dashboard.
 
