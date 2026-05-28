@@ -19,11 +19,20 @@ export function generateStaticParams() {
 
 export default async function LessonDetailPage({ params }: PageProps) {
   const { lessonId } = await params;
+  console.log("[supabase-debug] LessonDetailPage request", { lessonId });
+
   const lesson = await getLessonById(lessonId);
 
   if (!lesson) {
     notFound();
   }
+
+  console.log("[supabase-debug] LessonDetailPage rendering", {
+    lessonId,
+    subtitle: lesson.subtitle,
+    subtitlePreviewCount: lesson.subtitlePreview.length,
+    timedSubtitlesCount: lesson.timedSubtitles.length,
+  });
 
   const vocabularyPreview = lesson.vocabulary.slice(0, 3);
 
