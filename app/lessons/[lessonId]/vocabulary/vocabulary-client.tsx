@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import { LocalProgressNote } from "@/components/local-progress-note";
+import { AdminPreviewBanner } from "@/components/admin-preview-banner";
 import { AppHeader } from "@/components/app-header";
 import { BottomNav } from "@/components/bottom-nav";
 import { EmptyState } from "@/components/empty-state";
@@ -31,9 +32,13 @@ const allFilters: { id: VocabularyFilter; label: string }[] = [
 
 type Props = {
   lesson: LessonContent;
+  adminPreview?: boolean;
 };
 
-export function LessonVocabularyClient({ lesson }: Props) {
+export function LessonVocabularyClient({
+  lesson,
+  adminPreview = false,
+}: Props) {
   const [search, setSearch] = useState("");
   const [filter, setFilter] = useState<VocabularyFilter>("all");
   const [learned, setLearned] = useState<Set<string>>(new Set());
@@ -121,6 +126,7 @@ export function LessonVocabularyClient({ lesson }: Props) {
       <AppHeader />
 
       <main className="mx-auto flex w-full max-w-5xl flex-col gap-6 px-4 pb-24 pt-2 sm:gap-8 sm:px-6 md:pb-10">
+        {adminPreview ? <AdminPreviewBanner /> : null}
         <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
           <Link
             href={lessonPath(lesson.id)}

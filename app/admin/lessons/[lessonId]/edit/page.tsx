@@ -1,7 +1,12 @@
 import Link from "next/link";
 import { LessonEditForm } from "@/components/admin/lesson-edit-form";
 import { EmptyState } from "@/components/empty-state";
+import { analyzeLessonQa } from "@/lib/admin/lesson-qa";
 import { getLessonById } from "@/lib/content";
+import {
+  getLessonCompleteness,
+  type LessonCompleteness,
+} from "@/lib/supabase/admin-content";
 
 export const dynamic = "force-dynamic";
 
@@ -35,5 +40,35 @@ export default async function AdminEditLessonPage({ params }: Props) {
     );
   }
 
-  return <LessonEditForm lesson={lesson} />;
+  const completenessResult = await getLessonCompleteness(lessonId);
+  const initialCompleteness: LessonCompleteness =
+    completenessResult.data ?? completenessFromLesson(lesson);
+
+  return (
+    <LessonEditForm lesson={lesson} initialCompleteness={initialCompleteness} />
+  );
+}
+
+function completenessFromLesson(lesson: Awaited<ReturnType<typeof getLessonById>>) {
+  if (!lesson) {
+    return {
+      hasMetadata: false,
+      subtitleCount: 0,
+      vocabularyCount: 0,
+      quizCount: 0,
+      readyToPublish: false,
+    };
+  }
+  const qa = analyzeLessonQa(lesson);
+  return {
+    hasMetadata: qa.hasMetadata,
+    subtitleCount: qa.subtitleCount,
+    vocabularyCount: qa.vocabularyActual,
+    quizCount: qa.quizActual,
+    readyToPublish:
+      qa.hasMetadata &&
+      qa.subtitleCount > 0 &&
+      qa.vocabularyActual > 0 &&
+      qa.quizActual > 0,
+  };
 }

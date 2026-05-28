@@ -2,7 +2,7 @@ import Link from "next/link";
 import { AppHeader } from "@/components/app-header";
 import { CoursesHsk5Progress } from "@/components/courses-hsk5-progress";
 import { courses } from "@/data/courses";
-import { getLessonsByCourseId } from "@/lib/content";
+import { getPublicLessonsByCourseId } from "@/lib/content";
 import type { Course } from "@/types/course";
 
 function statusLabel(status: Course["status"]) {
@@ -12,7 +12,7 @@ function statusLabel(status: Course["status"]) {
 export const dynamic = "force-dynamic";
 
 export default async function CoursesPage() {
-  const hsk5Lessons = await getLessonsByCourseId("hsk5");
+  const hsk5Lessons = await getPublicLessonsByCourseId("hsk5");
   const hsk5LessonIds = hsk5Lessons.map((lesson) => lesson.id);
 
   return (

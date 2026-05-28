@@ -46,6 +46,24 @@ export type LessonCounts = {
   quizCount: number;
 };
 
+export type LessonCompleteness = {
+  hasMetadata: boolean;
+  subtitleCount: number;
+  vocabularyCount: number;
+  quizCount: number;
+  readyToPublish: boolean;
+};
+
+const VALID_LESSON_STATUSES: AdminContentStatus[] = [
+  "draft",
+  "available",
+  "archived",
+];
+
+function isValidLessonStatus(status: string): status is AdminContentStatus {
+  return (VALID_LESSON_STATUSES as string[]).includes(status);
+}
+
 export type CreateDraftLessonInput = {
   id: string;
   courseId: string;
@@ -102,8 +120,7 @@ export type CreateQuizQuestionInput = {
 const NOT_CONFIGURED_MESSAGE =
   "Supabase is not configured. Add NEXT_PUBLIC_SUPABASE_URL and NEXT_PUBLIC_SUPABASE_ANON_KEY to .env.local.";
 
-const RLS_HINT =
-  "Admin write policy may not be enabled. Run/review admin content policies.";
+const RLS_HINT = "Admin update policy may not be enabled.";
 
 function notConfigured<T>(): AdminContentResult<T> {
   return { data: null, error: NOT_CONFIGURED_MESSAGE };
@@ -280,6 +297,129 @@ export async function updateLessonMetadata(
     return { data: { id: lessonId }, error: null };
   } catch {
     return { data: null, error: "Хичээл шинэчлэхэд алдаа гарлаа." };
+  }
+}
+
+export async function updateLessonStatus(
+  lessonId: string,
+  status: AdminContentStatus
+): Promise<AdminContentResult<{ id: string; status: AdminContentStatus }>> {
+  if (!supabase || !hasSupabaseConfig) {
+    return notConfigured();
+  }
+
+  if (!isValidLessonStatus(status)) {
+    return { data: null, error: "Буруу статус: draft, available, archived л зөвшөөрнө." };
+  }
+
+  const gate = await requireAdmin();
+  if (gate.error) {
+    return { data: null, error: gate.error };
+  }
+
+  try {
+    const { error } = await supabase
+      .from("lessons")
+      .update({ status })
+      .eq("id", lessonId);
+
+    if (error) {
+      return { data: null, error: formatWriteError(error) };
+    }
+
+    return { data: { id: lessonId, status }, error: null };
+  } catch {
+    return { data: null, error: "Статус шинэчлэхэд алдаа гарлаа." };
+  }
+}
+
+function lessonHasMetadata(row: {
+  title: string | null;
+  chinese_title: string | null;
+  description: string | null;
+  duration: string | null;
+}): boolean {
+  return Boolean(
+    row.title?.trim() &&
+      row.chinese_title?.trim() &&
+      row.description?.trim() &&
+      row.duration?.trim()
+  );
+}
+
+export async function getLessonCompleteness(
+  lessonId: string
+): Promise<AdminContentResult<LessonCompleteness>> {
+  if (!supabase || !hasSupabaseConfig) {
+    return notConfigured();
+  }
+
+  const gate = await requireAdmin();
+  if (gate.error) {
+    return { data: null, error: gate.error };
+  }
+
+  try {
+    const { data: lesson, error: lessonError } = await supabase
+      .from("lessons")
+      .select("title, chinese_title, description, duration")
+      .eq("id", lessonId)
+      .maybeSingle();
+
+    if (lessonError) {
+      return { data: null, error: formatWriteError(lessonError) };
+    }
+    if (!lesson) {
+      return { data: null, error: "Хичээл олдсонгүй." };
+    }
+
+    const [subtitles, vocabulary, quiz] = await Promise.all([
+      supabase
+        .from("subtitle_lines")
+        .select("id", { count: "exact", head: true })
+        .eq("lesson_id", lessonId),
+      supabase
+        .from("vocabulary_words")
+        .select("id", { count: "exact", head: true })
+        .eq("lesson_id", lessonId),
+      supabase
+        .from("quiz_questions")
+        .select("id", { count: "exact", head: true })
+        .eq("lesson_id", lessonId),
+    ]);
+
+    if (subtitles.error) {
+      return { data: null, error: formatWriteError(subtitles.error) };
+    }
+    if (vocabulary.error) {
+      return { data: null, error: formatWriteError(vocabulary.error) };
+    }
+    if (quiz.error) {
+      return { data: null, error: formatWriteError(quiz.error) };
+    }
+
+    const hasMetadata = lessonHasMetadata(lesson);
+    const subtitleCount = subtitles.count ?? 0;
+    const vocabularyCount = vocabulary.count ?? 0;
+    const quizCount = quiz.count ?? 0;
+    const readyToPublish =
+      hasMetadata &&
+      subtitleCount > 0 &&
+      vocabularyCount > 0 &&
+      quizCount > 0;
+
+    return {
+      data: {
+        hasMetadata,
+        subtitleCount,
+        vocabularyCount,
+        quizCount,
+        readyToPublish,
+      },
+      error: null,
+    };
+  } catch {
+    return { data: null, error: "Бүрэн байдлыг шалгахад алдаа гарлаа." };
   }
 }
 

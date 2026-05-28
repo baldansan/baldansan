@@ -1,6 +1,6 @@
-# Content workflow — lesson upload (planned)
+# Content workflow — lesson upload
 
-Future workflow for admins publishing lessons through the Phase 5 admin UI. **Write/publish is not enabled yet** — use the QA dashboard before going live.
+Admins publish lessons through the Phase 5 admin UI. Public learners only see lessons with **`status = available`**.
 
 ---
 
@@ -29,11 +29,20 @@ On **`/admin/lessons/{id}/edit`**:
 2. **Vocabulary editor** — add/delete `vocabulary_words` (HSK level, examples); updates `lessons.vocabulary_count`
 3. **Quiz editor** — add/delete `quiz_questions` (options one per line); updates `lessons.quiz_count`
 4. Use **Content QA** (`/admin/lessons`) to verify completeness before publish
-5. **Preview** public routes: `/lessons/{id}`, `/watch`, `/vocabulary`, `/quiz`
+5. **Preview** — available: `/lessons/{id}`; draft/archived: `/lessons/{id}?preview=admin` (admin only)
+6. **Publishing controls** on edit page — Publish / Move to draft / Archive
 
-**Publish** (set `status = available`) — Step 8, not automated in UI yet.
+### Publish / unpublish / archive (Step 8)
 
-Requires admin **INSERT/DELETE** policies on child tables ([002_admin_content_policies.sql](./supabase/policies/002_admin_content_policies.sql)).
+| Action | DB `lessons.status` | Public visibility |
+|--------|----------------------|-------------------|
+| Publish | `available` | Shown on `/courses/hsk5` and `/lessons/{id}` |
+| Move to draft | `draft` | Hidden; admin preview only |
+| Archive | `archived` | Hidden; admin preview only |
+
+**Publish** requires metadata + at least one subtitle, vocabulary word, and quiz question. Draft and Archive do not.
+
+Requires admin policies ([002_admin_content_policies.sql](./supabase/policies/002_admin_content_policies.sql)).
 
 ---
 

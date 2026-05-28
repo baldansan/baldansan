@@ -3,7 +3,10 @@
 import Link from "next/link";
 import { useCallback, useEffect, useState } from "react";
 import { lessonPath } from "@/lib/content";
+import { lessonPreviewPath } from "@/lib/lesson-publish";
 import { analyzeLessonQaFromCounts } from "@/lib/admin/lesson-qa";
+import { getAdminPublishStatus } from "@/lib/admin/lesson-status";
+import { PublishingControls } from "@/components/admin/publishing-controls";
 import { LessonQaBadge } from "@/components/admin/lesson-qa-badge";
 import { SubtitleEditor } from "@/components/admin/subtitle-editor";
 import { VocabularyEditor } from "@/components/admin/vocabulary-editor";
@@ -12,14 +15,19 @@ import {
   lessonToFormValues,
   LessonFormFields,
 } from "@/components/admin/lesson-form-fields";
-import { getLessonMetadataCounts } from "@/lib/supabase/admin-content";
+import {
+  getLessonMetadataCounts,
+  type LessonCompleteness,
+} from "@/lib/supabase/admin-content";
 import type { LessonContent } from "@/types/lesson-content";
 
 type Props = {
   lesson: LessonContent;
+  initialCompleteness: LessonCompleteness;
 };
 
-export function LessonEditForm({ lesson }: Props) {
+export function LessonEditForm({ lesson, initialCompleteness }: Props) {
+  const publishStatus = getAdminPublishStatus(lesson);
   const values = lessonToFormValues(lesson);
   const [subtitleCount, setSubtitleCount] = useState(
     lesson.timedSubtitles.length
@@ -136,6 +144,11 @@ export function LessonEditForm({ lesson }: Props) {
 
       <QuizEditor lessonId={lesson.id} onCountsUpdated={handleQuizCounts} />
 
+      <PublishingControls
+        lesson={lesson}
+        initialCompleteness={initialCompleteness}
+      />
+
       <section className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:p-6">
         <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
           <button
@@ -146,10 +159,16 @@ export function LessonEditForm({ lesson }: Props) {
             Update lesson — coming soon
           </button>
           <Link
-            href={lessonPath(lesson.id)}
+            href={
+              publishStatus === "available"
+                ? lessonPath(lesson.id)
+                : lessonPreviewPath(lesson.id, { adminPreview: true })
+            }
             className="inline-flex justify-center rounded-full border border-emerald-200 bg-emerald-50 px-6 py-3 text-sm font-semibold text-emerald-800 transition-colors hover:bg-emerald-100"
           >
-            Preview public lesson →
+            {publishStatus === "available"
+              ? "Preview public lesson →"
+              : "Admin preview lesson →"}
           </Link>
           <Link
             href="/admin/lessons"

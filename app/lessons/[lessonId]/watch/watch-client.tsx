@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { markLessonStartedSmart } from "@/lib/progress";
+import { AdminPreviewBanner } from "@/components/admin-preview-banner";
 import { AppHeader } from "@/components/app-header";
 import { BottomNav } from "@/components/bottom-nav";
 import {
@@ -47,9 +48,10 @@ function SubtitleLines({
 
 type Props = {
   lesson: LessonContent;
+  adminPreview?: boolean;
 };
 
-export function LessonWatchClient({ lesson }: Props) {
+export function LessonWatchClient({ lesson, adminPreview = false }: Props) {
   const [mode, setMode] = useState<SubtitleMode>("both");
 
   useEffect(() => {
@@ -61,6 +63,7 @@ export function LessonWatchClient({ lesson }: Props) {
       <AppHeader />
 
       <main className="mx-auto flex w-full max-w-5xl flex-col gap-6 px-4 pb-24 pt-2 sm:gap-8 sm:px-6 md:pb-10">
+        {adminPreview ? <AdminPreviewBanner /> : null}
         <Link
           href={lessonPath(lesson.id)}
           className="inline-flex w-fit items-center text-sm font-medium text-slate-600 transition-colors hover:text-emerald-600"

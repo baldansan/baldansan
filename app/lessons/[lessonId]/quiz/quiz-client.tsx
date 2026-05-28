@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { LocalProgressNote } from "@/components/local-progress-note";
+import { AdminPreviewBanner } from "@/components/admin-preview-banner";
 import { AppHeader } from "@/components/app-header";
 import { BottomNav } from "@/components/bottom-nav";
 import { EmptyState } from "@/components/empty-state";
@@ -30,9 +31,14 @@ function getResultMessage(percent: number) {
 type Props = {
   lesson: LessonContent;
   nextLessonId: string | null;
+  adminPreview?: boolean;
 };
 
-export function LessonQuizClient({ lesson, nextLessonId }: Props) {
+export function LessonQuizClient({
+  lesson,
+  nextLessonId,
+  adminPreview = false,
+}: Props) {
   const total = lesson.quizQuestions.length;
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -134,6 +140,7 @@ export function LessonQuizClient({ lesson, nextLessonId }: Props) {
       <AppHeader />
 
       <main className="mx-auto flex w-full max-w-5xl flex-col gap-6 px-4 pb-24 pt-2 sm:gap-8 sm:px-6 md:pb-10">
+        {adminPreview ? <AdminPreviewBanner /> : null}
         <div className="flex flex-col gap-2 sm:flex-row sm:flex-wrap sm:gap-4">
           <Link
             href={lessonPath(lesson.id)}

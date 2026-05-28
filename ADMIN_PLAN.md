@@ -96,8 +96,8 @@ See [CONTENT_WORKFLOW.md](./CONTENT_WORKFLOW.md):
 | 5 | Subtitle editor | ✅ Completed |
 | 6 | Vocabulary editor | ✅ Completed |
 | 7 | Quiz editor | ✅ Completed |
-| 8 | Publish/unpublish workflow | Next |
-| 9 | Phase 5 final audit | Planned |
+| 8 | Publish/unpublish workflow | ✅ Completed |
+| 9 | Bulk import from JSON/ChatGPT | Next |
 
 Step 3: [lib/admin/lesson-qa.ts](./lib/admin/lesson-qa.ts), `/admin/lessons` QA dashboard.
 

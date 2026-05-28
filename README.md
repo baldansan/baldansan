@@ -127,7 +127,9 @@ Helpers: [lib/supabase/auth.ts](./lib/supabase/auth.ts). Header shows **Нэвт
 
 ## Admin content management roadmap
 
-**`/admin`** requires login and a row in `admin_profiles` (see setup below). Lesson list is read-only; create/edit forms have **save disabled** — no content writes yet.
+**`/admin`** requires login and a row in `admin_profiles` (see setup below). Admins manage draft lessons, edit subtitles/vocabulary/quiz, and publish when complete.
+
+**Lesson statuses** (`lessons.status`): `draft` (hidden from public), `available` (published), `archived` (hidden).
 
 - [ADMIN_PLAN.md](./ADMIN_PLAN.md) — admin CMS roadmap and security
 - [CONTENT_WORKFLOW.md](./CONTENT_WORKFLOW.md) — create → publish → verify workflow
@@ -137,7 +139,7 @@ Helpers: [lib/supabase/auth.ts](./lib/supabase/auth.ts). Header shows **Нэвт
 
 **Admin editors:** `/admin/lessons/new` (draft metadata) · `/admin/lessons/{id}/edit` (subtitle, vocabulary, quiz CRUD).
 
-**Next step:** Phase 5 Step 8 — Publish/unpublish workflow.
+**Next step:** Phase 5 Step 9 — Bulk import lesson content from JSON/ChatGPT output.
 
 ## Documentation
 

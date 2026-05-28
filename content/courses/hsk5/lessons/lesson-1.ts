@@ -13,6 +13,7 @@ export const lesson1: LessonContent = {
   vocabularyCount: 5,
   quizCount: 5,
   status: "available",
+  publishStatus: "available",
   videoPlaceholder: "Video lesson placeholder",
   watchTotalTime: "08:00",
   subtitlePreview: [

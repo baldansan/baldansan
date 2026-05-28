@@ -198,7 +198,14 @@ Phased roadmap from MVP demo to production product.
 
 - [lib/supabase/admin-content.ts](./lib/supabase/admin-content.ts) — child table CRUD + `refreshLessonCounts`
 - [components/admin/subtitle-editor.tsx](./components/admin/subtitle-editor.tsx), [vocabulary-editor.tsx](./components/admin/vocabulary-editor.tsx), [quiz-editor.tsx](./components/admin/quiz-editor.tsx)
-- `/admin/lessons/[id]/edit` — full content editing (metadata update still later)
+- `/admin/lessons/[id]/edit` — full content editing + publishing controls
+
+**Phase 5 Step 8 — Completed:** Publish/unpublish workflow.
+
+- `getPublicLessonsByCourseId` / `getPublicLessonById` — public catalog filters `available` only
+- `/lessons/{id}?preview=admin` — admin preview for draft/archived
+- `components/lesson-unavailable.tsx` — public unavailable state
+- `updateLessonStatus` / `getLessonCompleteness` in [lib/supabase/admin-content.ts](./lib/supabase/admin-content.ts)
 
 **Phase 5 roadmap:**
 
@@ -211,8 +218,8 @@ Phased roadmap from MVP demo to production product.
 | 5 | Subtitle editor | ✅ Completed |
 | 6 | Vocabulary editor | ✅ Completed |
 | 7 | Quiz editor | ✅ Completed |
-| 8 | Publish/unpublish workflow | Next |
-| 9 | Phase 5 final audit | Planned |
+| 8 | Publish/unpublish workflow | ✅ Completed |
+| 9 | Bulk import lesson content from JSON/ChatGPT output | Next |
 
 **Exit criteria:** New lesson published through admin UI without deploying code.
 

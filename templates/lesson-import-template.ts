@@ -11,7 +11,7 @@
  * 3. Replace every REPLACE_* placeholder with real content
  * 4. Register in content/courses/hsk5/lessons/index.ts (if new lesson file)
  * 5. Match vocabularyCount / quizCount to actual array lengths
- * 6. Set status: "available" | "locked"
+ * 6. Set status: "available" | "locked" and publishStatus: "draft" | "available" | "archived"
  *
  * Type reference: types/lesson-content.ts (LessonContent)
  * =============================================================================
@@ -51,6 +51,7 @@ export const lessonTemplate: LessonContent = {
 
   /** "available" = Start button active | "locked" = disabled on course page */
   status: "locked",
+  publishStatus: "draft",
 
   videoPlaceholder: "Video lesson placeholder",
 

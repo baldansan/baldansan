@@ -7,8 +7,10 @@ import {
   getSupabaseLessonById,
   getSupabaseLessonIds,
   getSupabaseLessonsByCourseId,
+  getSupabasePublicLessonsByCourseId,
 } from "@/lib/supabase/content";
 import { hasSupabaseConfig } from "@/lib/supabase/client";
+import { isPublicLesson } from "@/lib/lesson-publish";
 import type { Course } from "@/types/course";
 import type { CourseContent, LessonContent } from "@/types/lesson-content";
 
@@ -163,6 +165,47 @@ export async function getLessonById(
   return { ...lesson, vocabulary };
 }
 
+/** Public lesson fetch; undefined if draft or archived. */
+export async function getPublicLessonById(
+  lessonId: string
+): Promise<LessonContent | undefined> {
+  const lesson = await getLessonById(lessonId);
+  if (!lesson || !isPublicLesson(lesson)) {
+    return undefined;
+  }
+  return lesson;
+}
+
+/** Public course list: only lessons with publish status `available`. */
+export async function getPublicLessonsByCourseId(
+  courseId: string
+): Promise<LessonContent[]> {
+  const lessons = await withSupabaseListFallback(
+    `getPublicLessonsByCourseId(${courseId})`,
+    () => getSupabasePublicLessonsByCourseId(courseId),
+    () => getLocalLessonsByCourseId(courseId).filter(isPublicLesson)
+  );
+
+  if (!hasSupabaseConfig) {
+    return lessons;
+  }
+
+  const { enrichVocabularyWithDbIds } = await import(
+    "@/lib/supabase/content"
+  );
+
+  return Promise.all(
+    lessons.map(async (lesson) => ({
+      ...lesson,
+      vocabulary: await enrichVocabularyWithDbIds(
+        lesson.id,
+        lesson.vocabulary
+      ),
+    }))
+  );
+}
+
+/** Admin / internal: all lessons including draft and archived. */
 export async function getLessonsByCourseId(
   courseId: string
 ): Promise<LessonContent[]> {

@@ -2,7 +2,21 @@
 
 **Project:** Buunduu Surtsgaay (Бөөндөө Сурцгаая)  
 **Checkpoint date:** May 2026  
-**Status:** Phase 4 **completed**; Phase 5 content editors **completed**
+**Status:** Phase 4 **completed**; Phase 5 publish workflow **completed**
+
+---
+
+## Phase 5 Step 8 — Publish / unpublish workflow — **Completed**
+
+Phase 5 Publish workflow added: draft/available/archived visibility, admin publish controls, and public unavailable state.
+
+| Area | Deliverable |
+|------|-------------|
+| Public helpers | `getPublicLessonsByCourseId`, `getPublicLessonById`, `resolveLessonPageAccess` |
+| UI | `lesson-unavailable.tsx`, `publishing-controls.tsx`, admin preview `?preview=admin` |
+| API | `updateLessonStatus`, `getLessonCompleteness` |
+
+**Next:** Phase 5 Step 9 — Bulk import lesson content from JSON/ChatGPT output.
 
 ---
 
@@ -14,8 +28,6 @@ Admins add child content on `/admin/lessons/[lessonId]/edit` via Supabase (admin
 |------|-------------|
 | API | [lib/supabase/admin-content.ts](./lib/supabase/admin-content.ts) — CRUD + count refresh |
 | UI | `subtitle-editor`, `vocabulary-editor`, `quiz-editor` |
-
-**Next:** Phase 5 Step 8 — Publish/unpublish workflow.
 
 ---
 

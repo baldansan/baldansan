@@ -1,20 +1,23 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { AdminPreviewBanner } from "@/components/admin-preview-banner";
 import { AppHeader } from "@/components/app-header";
 import { BottomNav } from "@/components/bottom-nav";
 import { LessonPathCard } from "@/components/lesson-path-card";
 import { LessonProgressCard } from "@/components/lesson-progress-card";
+import { LessonUnavailable } from "@/components/lesson-unavailable";
 import { WatchLessonLink } from "@/components/watch-lesson-link";
 import {
   getAllLessonIdsSync,
-  getLessonById,
   lessonQuizPath,
   lessonVocabularyPath,
   coursePath,
 } from "@/lib/content";
+import { resolveLessonPageAccess } from "@/lib/lesson-public-access";
 
 type PageProps = {
   params: Promise<{ lessonId: string }>;
+  searchParams: Promise<{ preview?: string }>;
 };
 
 /** Fetch lesson from Supabase on each request when env is configured. */
@@ -24,14 +27,29 @@ export function generateStaticParams() {
   return getAllLessonIdsSync().map((lessonId) => ({ lessonId }));
 }
 
-export default async function LessonDetailPage({ params }: PageProps) {
+export default async function LessonDetailPage({
+  params,
+  searchParams,
+}: PageProps) {
   const { lessonId } = await params;
-  const lesson = await getLessonById(lessonId);
+  const { preview } = await searchParams;
+  const access = await resolveLessonPageAccess(lessonId, { preview });
 
-  if (!lesson) {
+  if (access.kind === "not_found") {
     notFound();
   }
 
+  if (access.kind === "unavailable") {
+    return (
+      <LessonUnavailable
+        lessonId={lessonId}
+        courseId={access.lesson.courseId}
+        showAdminLink={access.showAdminLink}
+      />
+    );
+  }
+
+  const { lesson, adminPreview } = access;
   const vocabularyPreview = lesson.vocabulary.slice(0, 3);
 
   return (
@@ -39,6 +57,7 @@ export default async function LessonDetailPage({ params }: PageProps) {
       <AppHeader />
 
       <main className="mx-auto flex w-full max-w-5xl flex-col gap-6 px-4 pb-24 pt-2 sm:gap-8 sm:px-6 md:pb-10">
+        {adminPreview ? <AdminPreviewBanner /> : null}
         <Link
           href={coursePath(lesson.courseId)}
           className="inline-flex w-fit items-center text-sm font-medium text-slate-600 transition-colors hover:text-emerald-600"

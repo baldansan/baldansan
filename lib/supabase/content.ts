@@ -5,6 +5,7 @@ import type {
   CourseContent,
   LessonContent,
   LessonContentStatus,
+  LessonPublishStatus,
 } from "@/types/lesson-content";
 import type { QuizQuestion, QuizQuestionType } from "@/types/lesson";
 
@@ -80,8 +81,15 @@ function durationToWatchTime(duration: string | null): string {
   return `${minutes}:00`;
 }
 
+function normalizePublishStatus(status: string): LessonPublishStatus {
+  if (status === "available" || status === "archived" || status === "draft") {
+    return status;
+  }
+  return "draft";
+}
+
 function parseLessonStatus(status: string): LessonContentStatus {
-  return status === "available" ? "available" : "locked";
+  return normalizePublishStatus(status) === "available" ? "available" : "locked";
 }
 
 function parseOptions(options: unknown): string[] {
@@ -115,6 +123,7 @@ function mapLessonRowToSummary(row: DbLesson): LessonContent {
     vocabularyCount: row.vocabulary_count,
     quizCount: row.quiz_count,
     status: parseLessonStatus(row.status),
+    publishStatus: normalizePublishStatus(row.status),
     videoPlaceholder: VIDEO_PLACEHOLDER,
     watchTotalTime: durationToWatchTime(row.duration),
     subtitlePreview: [],
@@ -149,6 +158,7 @@ function mapFullLesson(
     vocabularyCount: row.vocabulary_count,
     quizCount: row.quiz_count,
     status: parseLessonStatus(row.status),
+    publishStatus: normalizePublishStatus(row.status),
     videoPlaceholder: VIDEO_PLACEHOLDER,
     watchTotalTime: durationToWatchTime(row.duration),
     subtitlePreview,
@@ -267,15 +277,34 @@ export async function getSupabaseCourseContentById(
 export async function getSupabaseLessonsByCourseId(
   courseId: string
 ): Promise<LessonContent[]> {
+  return fetchSupabaseLessonsByCourse(courseId, false);
+}
+
+/** Public catalog: only `status = available` lessons. */
+export async function getSupabasePublicLessonsByCourseId(
+  courseId: string
+): Promise<LessonContent[]> {
+  return fetchSupabaseLessonsByCourse(courseId, true);
+}
+
+async function fetchSupabaseLessonsByCourse(
+  courseId: string,
+  publicOnly: boolean
+): Promise<LessonContent[]> {
   if (!hasSupabaseConfig || !supabase) return [];
 
-  const { data, error } = await supabase
+  let query = supabase
     .from("lessons")
     .select(
       "id, course_id, title, chinese_title, subtitle, description, duration, vocabulary_count, quiz_count, status, order_index"
     )
-    .eq("course_id", courseId)
-    .order("order_index", { ascending: true });
+    .eq("course_id", courseId);
+
+  if (publicOnly) {
+    query = query.eq("status", "available");
+  }
+
+  const { data, error } = await query.order("order_index", { ascending: true });
 
   if (error) throw error;
   if (!data?.length) return [];

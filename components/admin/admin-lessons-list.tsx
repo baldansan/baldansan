@@ -12,12 +12,14 @@ import {
   lessonVocabularyPath,
   lessonWatchPath,
 } from "@/lib/content";
+import { lessonPreviewPath } from "@/lib/lesson-publish";
 import {
+  getAdminPublishStatus,
   matchesStatusFilter,
-  toAdminContentStatus,
   type AdminStatusFilter,
 } from "@/lib/admin/lesson-status";
 import {
+  isPublishReady,
   summarizeLessonQa,
   type LessonQaReport,
   type LessonQaSummary,
@@ -42,7 +44,7 @@ export function AdminLessonsList({ reports }: Props) {
     const q = query.trim().toLowerCase();
     return reports.filter((report) => {
       const { lesson } = report;
-      if (!matchesStatusFilter(lesson.status, statusFilter)) return false;
+      if (!matchesStatusFilter(lesson, statusFilter)) return false;
       if (qaFilter !== "all" && report.qaStatus !== qaFilter) return false;
       if (!q) return true;
       return (
@@ -145,6 +147,7 @@ export function AdminLessonsList({ reports }: Props) {
                 <th className="px-3 py-3">Lesson</th>
                 <th className="px-3 py-3">Status</th>
                 <th className="px-3 py-3">QA</th>
+                <th className="hidden px-3 py-3 sm:table-cell">Ready</th>
                 <th className="hidden px-3 py-3 md:table-cell">Counts</th>
                 <th className="hidden px-3 py-3 lg:table-cell">Warnings</th>
                 <th className="px-3 py-3">Links</th>
@@ -153,6 +156,8 @@ export function AdminLessonsList({ reports }: Props) {
             <tbody className="divide-y divide-slate-100">
               {filtered.map((report) => {
                 const { lesson } = report;
+                const publishStatus = getAdminPublishStatus(lesson);
+                const publishReady = isPublishReady(report);
                 return (
                   <tr key={lesson.id} className="align-top hover:bg-emerald-50/30">
                     <td className="px-3 py-3 font-mono text-xs">{lesson.id}</td>
@@ -162,10 +167,19 @@ export function AdminLessonsList({ reports }: Props) {
                       <p className="mt-1 text-xs text-slate-400">{lesson.duration}</p>
                     </td>
                     <td className="px-3 py-3">
-                      <LessonStatusBadge status={lesson.status} />
+                      <LessonStatusBadge status={publishStatus} />
                     </td>
                     <td className="px-3 py-3">
                       <LessonQaBadge status={report.qaStatus} />
+                    </td>
+                    <td className="hidden px-3 py-3 sm:table-cell">
+                      {publishReady ? (
+                        <span className="inline-flex rounded-full bg-emerald-50 px-2.5 py-0.5 text-xs font-medium text-emerald-800 ring-1 ring-emerald-200">
+                          Publish-ready
+                        </span>
+                      ) : (
+                        <span className="text-xs text-slate-400">—</span>
+                      )}
                     </td>
                     <td className="hidden px-3 py-3 text-xs text-slate-600 md:table-cell">
                       <p>Meta: {report.hasMetadata ? "✓" : "—"}</p>
@@ -188,12 +202,23 @@ export function AdminLessonsList({ reports }: Props) {
                     </td>
                     <td className="px-3 py-3">
                       <div className="flex min-w-[7rem] flex-col gap-0.5 text-xs font-medium">
-                        <Link
-                          href={lessonPath(lesson.id)}
-                          className="text-slate-600 hover:text-emerald-700"
-                        >
-                          Preview
-                        </Link>
+                        {publishStatus === "available" ? (
+                          <Link
+                            href={lessonPath(lesson.id)}
+                            className="text-slate-600 hover:text-emerald-700"
+                          >
+                            Public preview
+                          </Link>
+                        ) : (
+                          <Link
+                            href={lessonPreviewPath(lesson.id, {
+                              adminPreview: true,
+                            })}
+                            className="text-amber-800 hover:text-amber-900"
+                          >
+                            Admin preview
+                          </Link>
+                        )}
                         <Link
                           href={lessonWatchPath(lesson.id)}
                           className="text-slate-600 hover:text-emerald-700"

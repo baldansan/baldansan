@@ -1,5 +1,5 @@
 import { getLessonById, getLessonsByCourseId } from "@/lib/content";
-import { toAdminContentStatus } from "@/lib/admin/lesson-status";
+import { getAdminPublishStatus } from "@/lib/admin/lesson-status";
 import type { LessonContent } from "@/types/lesson-content";
 
 export type LessonQaStatus = "complete" | "needs_review";
@@ -157,7 +157,7 @@ export function summarizeLessonQa(reports: LessonQaReport[]): LessonQaSummary {
   let completeCount = 0;
 
   for (const report of reports) {
-    const status = toAdminContentStatus(report.lesson.status);
+    const status = getAdminPublishStatus(report.lesson);
     if (status === "available") availableCount += 1;
     else if (status === "archived") archivedCount += 1;
     else draftCount += 1;
@@ -193,4 +193,14 @@ export async function getHsk5LessonsWithQa(): Promise<LessonQaReport[]> {
   }
 
   return reports.sort((a, b) => Number(a.lesson.id) - Number(b.lesson.id));
+}
+
+/** Matches publish validation: metadata + subtitles + vocabulary + quiz. */
+export function isPublishReady(report: LessonQaReport): boolean {
+  return (
+    report.hasMetadata &&
+    report.subtitleCount > 0 &&
+    report.vocabularyActual > 0 &&
+    report.quizActual > 0
+  );
 }

@@ -1,4 +1,9 @@
-import type { LessonContentStatus } from "@/types/lesson-content";
+import { getLessonPublishStatus } from "@/lib/lesson-publish";
+import type {
+  LessonContent,
+  LessonContentStatus,
+  LessonPublishStatus,
+} from "@/types/lesson-content";
 
 /** Planned publish statuses (DB Step 2+). `locked` maps to draft in admin UI for now. */
 export type AdminContentStatus = "draft" | "available" | "archived";
@@ -6,12 +11,16 @@ export type AdminContentStatus = "draft" | "available" | "archived";
 export type AdminStatusFilter = "all" | AdminContentStatus;
 
 export function toAdminContentStatus(
-  status: LessonContentStatus | string
+  status: LessonContentStatus | LessonPublishStatus | string
 ): AdminContentStatus {
   if (status === "available") return "available";
   if (status === "archived") return "archived";
   if (status === "draft") return "draft";
   return "draft";
+}
+
+export function getAdminPublishStatus(lesson: LessonContent): AdminContentStatus {
+  return toAdminContentStatus(getLessonPublishStatus(lesson));
 }
 
 export function adminStatusLabel(status: AdminContentStatus): string {
@@ -26,9 +35,9 @@ export function adminStatusLabel(status: AdminContentStatus): string {
 }
 
 export function matchesStatusFilter(
-  lessonStatus: LessonContentStatus | string,
+  lesson: LessonContent,
   filter: AdminStatusFilter
 ): boolean {
   if (filter === "all") return true;
-  return toAdminContentStatus(lessonStatus) === filter;
+  return getAdminPublishStatus(lesson) === filter;
 }

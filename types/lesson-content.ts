@@ -7,6 +7,9 @@ import type {
 
 export type LessonContentStatus = "available" | "locked";
 
+/** Database publish status (admin workflow). */
+export type LessonPublishStatus = "draft" | "available" | "archived";
+
 export type LessonContent = {
   id: string;
   courseId: string;
@@ -18,6 +21,8 @@ export type LessonContent = {
   vocabularyCount: number;
   quizCount: number;
   status: LessonContentStatus;
+  /** Raw publish status from Supabase; local lessons use `status` only. */
+  publishStatus: LessonPublishStatus;
   videoPlaceholder: string;
   watchTotalTime: string;
   subtitlePreview: SubtitleExample[];

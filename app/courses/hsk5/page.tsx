@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { AppHeader } from "@/components/app-header";
 import { BottomNav } from "@/components/bottom-nav";
-import { getCourseContentById, getLessonsByCourseId } from "@/lib/content";
+import { getCourseContentById, getPublicLessonsByCourseId } from "@/lib/content";
 import { Hsk5CourseProgress } from "@/components/hsk5-course-progress";
 import { Hsk5LessonList } from "./hsk5-lesson-list";
 
@@ -10,7 +10,7 @@ export const dynamic = "force-dynamic";
 
 export default async function Hsk5CoursePage() {
   const course = await getCourseContentById("hsk5");
-  const lessons = await getLessonsByCourseId("hsk5");
+  const lessons = await getPublicLessonsByCourseId("hsk5");
 
   if (!course) {
     return null;
