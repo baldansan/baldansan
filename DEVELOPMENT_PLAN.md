@@ -95,6 +95,11 @@ Phased roadmap from MVP demo to production product.
 - `lib/progress.ts` for lesson status, vocabulary learned words, and quiz results on this device
 - Phase 4 will migrate this to Supabase Auth + user progress tables
 
+**Phase 3 local progress UX — Completed:** Learning dashboard profile page.
+
+- `/profile` dashboard from localStorage (stats, continue learning, recent quiz results)
+- Profile link in header and mobile bottom nav
+
 **Remaining tasks (Phase 4+):**
 - Supabase Auth; migrate localStorage progress to `user_progress` tables
 

@@ -21,6 +21,7 @@ type ProgressStore = {
   lessons: Record<string, LessonProgress>;
   vocabulary: Record<string, string[]>;
   quizzes: Record<string, QuizResult>;
+  lastActiveLessonId?: string;
 };
 
 const defaultLessonProgress = (): LessonProgress => ({
@@ -46,6 +47,7 @@ function readStore(): ProgressStore {
       lessons: parsed.lessons ?? {},
       vocabulary: parsed.vocabulary ?? {},
       quizzes: parsed.quizzes ?? {},
+      lastActiveLessonId: parsed.lastActiveLessonId,
     };
   } catch {
     return { lessons: {}, vocabulary: {}, quizzes: {} };
@@ -76,6 +78,7 @@ export function markLessonStarted(lessonId: string): void {
     status: "started",
     startedAt: current.startedAt ?? new Date().toISOString(),
   };
+  store.lastActiveLessonId = lessonId;
   writeStore(store);
 }
 
@@ -90,6 +93,7 @@ export function markLessonCompleted(lessonId: string): void {
     startedAt: current.startedAt ?? new Date().toISOString(),
     completedAt: new Date().toISOString(),
   };
+  store.lastActiveLessonId = lessonId;
   writeStore(store);
 }
 
@@ -114,6 +118,7 @@ export function toggleLearnedWord(lessonId: string, wordKey: string): string[] {
 
   const next = [...current];
   store.vocabulary[lessonId] = next;
+  store.lastActiveLessonId = lessonId;
   writeStore(store);
   return next;
 }
@@ -150,6 +155,7 @@ export function saveQuizResult(
   };
 
   store.quizzes[lessonId] = result;
+  store.lastActiveLessonId = lessonId;
   writeStore(store);
   return result;
 }
@@ -190,4 +196,62 @@ export function lessonProgressPercent(status: LessonStatus): number {
 /** Stable key for vocabulary progress (id preferred, chinese fallback). */
 export function vocabularyWordKey(word: { id: string; chinese: string }): string {
   return word.id || word.chinese;
+}
+
+export function getAllLessonProgress(): Record<string, LessonProgress> {
+  return readStore().lessons;
+}
+
+export type QuizResultEntry = {
+  lessonId: string;
+  result: QuizResult;
+};
+
+export function getAllQuizResults(): QuizResultEntry[] {
+  const store = readStore();
+  return Object.entries(store.quizzes)
+    .map(([lessonId, result]) => ({ lessonId, result }))
+    .sort(
+      (a, b) =>
+        new Date(b.result.updatedAt).getTime() -
+        new Date(a.result.updatedAt).getTime()
+    );
+}
+
+export function getTotalLearnedWords(): number {
+  const store = readStore();
+  return Object.values(store.vocabulary).reduce(
+    (sum, words) => sum + words.length,
+    0
+  );
+}
+
+export function getLastActiveLessonId(): string | null {
+  const store = readStore();
+  return store.lastActiveLessonId ?? null;
+}
+
+export function countStartedLessons(): number {
+  const lessons = getAllLessonProgress();
+  return Object.values(lessons).filter((lesson) => lesson.status === "started")
+    .length;
+}
+
+export function countCompletedLessonsAll(): number {
+  const lessons = getAllLessonProgress();
+  return Object.values(lessons).filter(
+    (lesson) => lesson.status === "completed"
+  ).length;
+}
+
+export function hasAnyProgress(): boolean {
+  const store = readStore();
+  const hasLesson = Object.values(store.lessons).some(
+    (lesson) => lesson.status !== "not_started"
+  );
+  const hasVocab = Object.values(store.vocabulary).some(
+    (words) => words.length > 0
+  );
+  const hasQuiz = Object.keys(store.quizzes).length > 0;
+  return hasLesson || hasVocab || hasQuiz;
 }

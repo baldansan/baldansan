@@ -169,6 +169,11 @@ Next Improvement Batch: course detail now renders Supabase lesson list including
 - Vocabulary learned state persists across refresh
 - Quiz saves results and best score; course page reads completed count from localStorage
 
+**Learning dashboard profile page added** using localStorage progress.
+
+- `/profile` — Миний суралцах ахиц dashboard (completed/started lessons, learned words, quiz history)
+- Continue learning card from last active lesson; Header and BottomNav Profile → `/profile`
+
 ---
 
 ## Next recommended tasks

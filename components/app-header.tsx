@@ -2,7 +2,7 @@ import Link from "next/link";
 import { BrandLogo } from "@/components/brand-logo";
 
 type Props = {
-  active?: "courses" | "demo";
+  active?: "courses" | "demo" | "profile";
 };
 
 export function AppHeader({ active }: Props) {
@@ -30,12 +30,16 @@ export function AppHeader({ active }: Props) {
         >
           Demo
         </Link>
-        <a
-          href="#"
-          className="text-slate-600 transition-colors hover:text-emerald-600"
+        <Link
+          href="/profile"
+          className={
+            active === "profile"
+              ? "font-medium text-emerald-600"
+              : "text-slate-600 transition-colors hover:text-emerald-600"
+          }
         >
           Profile
-        </a>
+        </Link>
       </nav>
     </header>
   );

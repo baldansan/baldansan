@@ -4,7 +4,7 @@ const items = [
   { href: "/", label: "Home" },
   { href: "/courses", label: "Courses" },
   { href: "/lessons/1", label: "Demo" },
-  { href: "#", label: "Profile" },
+  { href: "/profile", label: "Profile" },
 ] as const;
 
 export function BottomNav() {
@@ -14,27 +14,16 @@ export function BottomNav() {
       aria-label="Mobile navigation"
     >
       <ul className="mx-auto flex max-w-5xl items-stretch justify-around px-2 py-2">
-        {items.map((item) =>
-          item.href === "#" ? (
-            <li key={item.label} className="flex-1">
-              <a
-                href={item.href}
-                className="flex flex-col items-center justify-center rounded-lg px-2 py-2 text-xs font-medium text-slate-600 transition-colors hover:text-emerald-600"
-              >
-                {item.label}
-              </a>
-            </li>
-          ) : (
-            <li key={item.label} className="flex-1">
-              <Link
-                href={item.href}
-                className="flex flex-col items-center justify-center rounded-lg px-2 py-2 text-xs font-medium text-slate-600 transition-colors hover:text-emerald-600"
-              >
-                {item.label}
-              </Link>
-            </li>
-          )
-        )}
+        {items.map((item) => (
+          <li key={item.label} className="flex-1">
+            <Link
+              href={item.href}
+              className="flex flex-col items-center justify-center rounded-lg px-2 py-2 text-xs font-medium text-slate-600 transition-colors hover:text-emerald-600"
+            >
+              {item.label}
+            </Link>
+          </li>
+        ))}
       </ul>
     </nav>
   );
