@@ -16,6 +16,8 @@ The web app demonstrates a complete learner journey for **Lesson 1 (爱的细节
 
 Lesson pages are **data-driven** via dynamic segments. Content lives under `content/courses/hsk5/lessons/` with helpers in `lib/content.ts`. Adding a lesson means a new content file (e.g. `lesson-4.ts`) and registering it in `content/courses/hsk5/lessons/index.ts`—no new page folders.
 
+**Phase 2 Step 2:** Lesson 2 content pipeline validated with available Lesson 2 data (6 subtitles, 12 vocabulary, 5 quiz questions). Lesson 1 unchanged; Lesson 3 remains locked.
+
 ---
 
 ## Completed pages
@@ -46,8 +48,8 @@ Lesson pages are **data-driven** via dynamic segments. Content lives under `cont
 
 ### Lessons
 - **Lesson 1** — full content (same as MVP)
-- **Lesson 2 & 3** — placeholder content; **locked** on course page (disabled Start)
-- Manual URL to `/lessons/2` still renders placeholder pages
+- **Lesson 2** — full available content (你真的懂我吗？)
+- **Lesson 3** — placeholder; **locked** on course page (disabled Start)
 
 ### Navigation
 - All `/lessons/1/*` URLs still work via `[lessonId]`

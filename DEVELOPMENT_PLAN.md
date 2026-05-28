@@ -33,6 +33,8 @@ Phased roadmap from MVP demo to production product.
 
 **Exit criteria:** ✅ Adding a lesson is a new content file + registry entry, not copying page folders.
 
+**Phase 2 Step 2:** Lesson 2 content pipeline validated with available Lesson 2 data—no new routes or page components; update `content/courses/hsk5/lessons/lesson-2.ts` only.
+
 ---
 
 ## Phase 3: Supabase database
