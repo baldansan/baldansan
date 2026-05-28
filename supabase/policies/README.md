@@ -7,6 +7,7 @@ This folder holds **planned** Row Level Security (RLS) SQL for Phase 4. It is se
 | File | Purpose |
 |------|---------|
 | [001_auth_rls_policies.sql](./001_auth_rls_policies.sql) | Enable RLS + policies for content (public read) and progress (user-private) |
+| [002_admin_content_policies.sql](./002_admin_content_policies.sql) | **Planned** — `admin_profiles`, status-filtered public read, admin content CRUD |
 
 ## What policies do
 
@@ -39,8 +40,13 @@ Prerequisites:
 - Vocabulary learned (signed in): [lib/supabase/vocabulary-progress.ts](../../lib/supabase/vocabulary-progress.ts) + localStorage mirror.
 - Quiz attempts (signed in): [lib/supabase/quiz-attempts.ts](../../lib/supabase/quiz-attempts.ts) + localStorage mirror.
 
+## Phase 5 admin policies
+
+[002_admin_content_policies.sql](./002_admin_content_policies.sql) is **not** ready to run until Phase 5 Step 2 review. It may **replace** `001`’s `using (true)` content `SELECT` policies with status-filtered reads. Bootstrap admins: [supabase/admin/README.md](../admin/README.md).
+
 ## Related docs
 
 - [AUTH_PLAN.md](../../AUTH_PLAN.md) — full Phase 4 roadmap
+- [ADMIN_PLAN.md](../../ADMIN_PLAN.md) — Phase 5 admin roadmap
 - [DATABASE_SCHEMA.md](../../DATABASE_SCHEMA.md) — tables and Auth/RLS section
 - [supabase/README.md](../README.md) — migrations and seeds

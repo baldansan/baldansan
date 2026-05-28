@@ -170,17 +170,34 @@ Phased roadmap from MVP demo to production product.
 
 ---
 
-## Phase 5: Admin content management / lesson upload — **Next**
+## Phase 5: Admin content management / lesson upload — **In progress**
 
-**Goal:** Non-developers can publish and manage lesson content (admin workflow).
+**Goal:** Non-developers can publish and manage lesson content (admin workflow) without SQL seeds or code deploys.
 
-**Tasks:**
-- Admin role in Supabase (RLS policies)
-- Admin UI: upload video, edit subtitles (timeline), vocabulary, quiz
-- Optional: bulk import from spreadsheet or SRT/VTT subtitles
-- Preview mode before publish
+**Phase 5 Step 1 — Completed:** Admin workflow planning.
 
-**Exit criteria:** New lesson published without deploying code.
+- [ADMIN_PLAN.md](./ADMIN_PLAN.md) — why admin CMS, security, roadmap
+- [CONTENT_WORKFLOW.md](./CONTENT_WORKFLOW.md) — draft → publish → verify workflow
+- [supabase/policies/002_admin_content_policies.sql](./supabase/policies/002_admin_content_policies.sql) — planned `admin_profiles` + content admin RLS (do not auto-run)
+- [supabase/admin/README.md](./supabase/admin/README.md) — manual admin bootstrap
+- [DATABASE_SCHEMA.md](./DATABASE_SCHEMA.md) — Admin content management plan section
+- No admin UI, no upload forms, no user-facing route changes
+
+**Phase 5 roadmap:**
+
+| Step | Focus | Status |
+|------|--------|--------|
+| 1 | Admin workflow planning | ✅ Completed |
+| 2 | Admin role model + RLS policy design / schema for draft·archived | Next |
+| 3 | Admin dashboard shell | Planned |
+| 4 | Lesson create/edit form | Planned |
+| 5 | Subtitle editor | Planned |
+| 6 | Vocabulary editor | Planned |
+| 7 | Quiz editor | Planned |
+| 8 | Publish/unpublish workflow | Planned |
+| 9 | Phase 5 final audit | Planned |
+
+**Exit criteria:** New lesson published through admin UI without deploying code.
 
 ---
 

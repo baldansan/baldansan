@@ -6,6 +6,8 @@ This document explains how **Supabase Auth** and **Row Level Security (RLS)** wi
 
 **Production requirement:** run [supabase/policies/001_auth_rls_policies.sql](./supabase/policies/001_auth_rls_policies.sql) in the Supabase SQL Editor before relying on authenticated progress in production. The app does not execute SQL automatically.
 
+**Phase 5 note:** Phase 5 will introduce **admin role checks** for content management (`admin_profiles` + [supabase/policies/002_admin_content_policies.sql](./supabase/policies/002_admin_content_policies.sql)). Learner auth and progress policies from Phase 4 stay separate; see [ADMIN_PLAN.md](./ADMIN_PLAN.md).
+
 ---
 
 ## What Supabase Auth will do

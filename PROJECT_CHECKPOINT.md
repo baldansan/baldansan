@@ -2,7 +2,23 @@
 
 **Project:** Buunduu Surtsgaay (Бөөндөө Сурцгаая)  
 **Checkpoint date:** May 2026  
-**Status:** Phase 4 **completed** — Supabase Auth, account progress, localStorage fallback + merge
+**Status:** Phase 4 **completed**; Phase 5 Step 1 **started** — admin content management planning
+
+---
+
+## Phase 5 Step 1 — Admin content management planning — **Completed**
+
+Planning and documentation only (no admin UI, no route changes).
+
+| Deliverable | Path |
+|-------------|------|
+| Admin roadmap | [ADMIN_PLAN.md](./ADMIN_PLAN.md) |
+| Lesson upload workflow | [CONTENT_WORKFLOW.md](./CONTENT_WORKFLOW.md) |
+| Admin RLS (planned SQL) | [supabase/policies/002_admin_content_policies.sql](./supabase/policies/002_admin_content_policies.sql) |
+| Bootstrap admin guide | [supabase/admin/README.md](./supabase/admin/README.md) |
+| Schema/docs updates | [DATABASE_SCHEMA.md](./DATABASE_SCHEMA.md), [DEVELOPMENT_PLAN.md](./DEVELOPMENT_PLAN.md), [AUTH_PLAN.md](./AUTH_PLAN.md), [README.md](./README.md) |
+
+**Next:** Phase 5 Step 2 — Admin role model + RLS policy setup (apply `admin_profiles`, status migration, test policies).
 
 ---
 

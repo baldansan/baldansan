@@ -2,7 +2,7 @@
 
 A Mongolian–Chinese language learning web app. Users learn Chinese through short video lessons, subtitles, vocabulary, and quizzes.
 
-**Phase 3 (current):** Supabase-first lesson content with local fallback, dynamic lessons 1–4, and **device-local** progress (localStorage). No authentication or database progress writes yet — that is **Phase 4**.
+**Current:** Supabase-first lesson content with local fallback, dynamic lessons 1–4, **Supabase Auth**, and account progress (localStorage backup). **Phase 5** (admin content management) is in planning — Step 1 complete.
 
 ## Tech stack
 
@@ -123,12 +123,21 @@ Helpers: [lib/supabase/auth.ts](./lib/supabase/auth.ts). Header shows **Нэвт
 
 **Guest fallback:** Progress works without login in `localStorage`. After login, use **Profile → Account руу хадгалах** to merge guest progress into the account.
 
-**Next:** Phase 5 — Admin content management / lesson upload workflow.
+## Admin roadmap (Phase 5 — planning)
+
+Admins will manage lessons in Supabase (no SQL seeds required for new content). Step 1 is docs and policy design only.
+
+- [ADMIN_PLAN.md](./ADMIN_PLAN.md) — admin CMS roadmap and security
+- [CONTENT_WORKFLOW.md](./CONTENT_WORKFLOW.md) — create → publish → verify workflow
+- [supabase/admin/README.md](./supabase/admin/README.md) — grant admin manually (`admin_profiles`)
+
+**Next step:** Phase 5 Step 2 — Admin role model + RLS SQL setup.
 
 ## Documentation
 
 - [PROJECT_CHECKPOINT.md](./PROJECT_CHECKPOINT.md) — status & Phase 4 audit
-- [DEVELOPMENT_PLAN.md](./DEVELOPMENT_PLAN.md) — roadmap (Phase 5 next)
+- [DEVELOPMENT_PLAN.md](./DEVELOPMENT_PLAN.md) — roadmap (Phase 5 in progress)
+- [ADMIN_PLAN.md](./ADMIN_PLAN.md) — Phase 5 admin planning
 - [DATABASE_SCHEMA.md](./DATABASE_SCHEMA.md) — schema + Auth/RLS plan
 - [AUTH_PLAN.md](./AUTH_PLAN.md) — Phase 4 auth details
 - [CONTENT_AUTHORING_GUIDE.md](./CONTENT_AUTHORING_GUIDE.md) — content workflow

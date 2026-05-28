@@ -214,10 +214,62 @@ Full narrative: [AUTH_PLAN.md](./AUTH_PLAN.md).
 
 ---
 
+## Admin content management plan (Phase 5)
+
+**Goal:** Let admins create and publish lessons in Supabase without SQL seeds or app deploys. **Step 1** is planning only; no admin UI yet.
+
+### `admin_profiles` table (planned)
+
+| Column | Role |
+|--------|------|
+| `user_id` | PK, FK → `auth.users(id)` — who is an admin |
+| `role` | Default `'admin'` |
+| `created_at` | Audit |
+
+Grant access manually: [supabase/admin/README.md](./supabase/admin/README.md).
+
+Admin check (RLS and app):
+
+```sql
+exists (select 1 from public.admin_profiles where user_id = auth.uid())
+```
+
+Planned helper: `public.is_admin()` in [supabase/policies/002_admin_content_policies.sql](./supabase/policies/002_admin_content_policies.sql).
+
+### Content write permissions
+
+| Role | Content tables | Progress tables |
+|------|----------------|-----------------|
+| **anon / guest** | `SELECT` published rows only (`lessons.status = 'available'`, children via parent lesson) | No access |
+| **Authenticated learner** | Same public read; no content writes | Own rows only (`001` policies) |
+| **Admin** | `INSERT` / `UPDATE` / `DELETE` on `courses`, `lessons`, `subtitle_lines`, `vocabulary_words`, `quiz_questions` | Unchanged — admins are learners too for progress |
+
+Regular users must not insert or update lesson content via the client, even with a valid JWT.
+
+### Draft / publish flow (planned statuses)
+
+| `lessons.status` | Visibility |
+|------------------|------------|
+| `draft` | Admin only — edit and preview |
+| `available` | Public catalog and lesson routes (current seeds) |
+| `archived` | Hidden from learners; admin may retain for support |
+
+Today migration 001 also uses `locked` on lessons for “not yet startable” on the course card. Step 2 will document migration from `locked` → `draft` or keep both semantics.
+
+Workflow: [CONTENT_WORKFLOW.md](./CONTENT_WORKFLOW.md). Narrative: [ADMIN_PLAN.md](./ADMIN_PLAN.md).
+
+**Apply order:** Run `001` first for learner progress. Run `002` only after admin role bootstrap and UI are ready; may require dropping `001`’s `using (true)` content `SELECT` policies in favor of status-filtered policies in `002`.
+
+---
+
 ## Related docs
 
 - [supabase/README.md](./supabase/README.md) — how to run the migration
 - [supabase/policies/README.md](./supabase/policies/README.md) — RLS policy files
 - [AUTH_PLAN.md](./AUTH_PLAN.md) — Phase 4 auth roadmap
+- [ADMIN_PLAN.md](./ADMIN_PLAN.md) — Phase 5 admin roadmap
+- [CONTENT_WORKFLOW.md](./CONTENT_WORKFLOW.md) — lesson upload workflow
+- [supabase/admin/README.md](./supabase/admin/README.md) — grant admin manually
+- [supabase/policies/002_admin_content_policies.sql](./supabase/policies/002_admin_content_policies.sql) — planned admin RLS
 - [supabase/SEED_PLAN.md](./supabase/SEED_PLAN.md) — seeding Lessons 1–3
-- [DEVELOPMENT_PLAN.md](./DEVELOPMENT_PLAN.md) — Phase 3–4 timeline
+- [DEVELOPMENT_PLAN.md](./DEVELOPMENT_PLAN.md) — Phase 3–5 timeline
