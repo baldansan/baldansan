@@ -124,13 +124,18 @@ Phased roadmap from MVP demo to production product.
 - Public content: `SELECT` only; progress: `auth.uid() = user_id`
 - No auth UI, no progress writes, localStorage unchanged
 
+**Phase 4 Step 2 — Completed:** Auth helpers + login/signup UI.
+
+- [lib/supabase/auth.ts](./lib/supabase/auth.ts), `/login`, `/signup`, [components/auth-status.tsx](./components/auth-status.tsx)
+- Profile auth section; no Supabase progress writes; RLS not applied yet
+
 **Phase 4 roadmap:**
 
 | Step | Focus |
 |------|--------|
 | 1 ✅ | Auth planning + RLS policy design |
-| 2 | Auth helpers + login/signup UI — **Next** |
-| 3 | Persist lesson progress to Supabase |
+| 2 ✅ | Auth helpers + login/signup UI |
+| 3 | Persist lesson progress to Supabase — **Next** |
 | 4 | Persist vocabulary learned state to Supabase |
 | 5 | Persist quiz attempts to Supabase |
 | 6 | Migrate / merge localStorage progress after login |

@@ -56,7 +56,7 @@ High-level UX (Step 2):
 4. Authenticated Supabase client used for progress reads/writes.
 5. **Sign out** → session cleared; app may fall back to local-only progress or prompt sign-in.
 
-No auth UI in Step 1.
+Step 1 delivered planning only. **Step 2 delivers auth UI** (no progress writes yet).
 
 ---
 
@@ -107,20 +107,22 @@ From [001_initial_schema.sql](./supabase/migrations/001_initial_schema.sql):
 
 | Step | Focus | Status |
 |------|--------|--------|
-| **1** | Auth planning + RLS policy design | ✅ Planning (this doc + `supabase/policies/`) |
-| **2** | Auth helpers + login/signup UI | Next |
-| **3** | Persist lesson progress to Supabase | Planned |
+| **1** | Auth planning + RLS policy design | ✅ Completed |
+| **2** | Auth helpers + login/signup UI | ✅ Completed |
+| **3** | Persist lesson progress to Supabase | **Next** |
 | **4** | Persist vocabulary learned state to Supabase | Planned |
 | **5** | Persist quiz attempts to Supabase | Planned |
 | **6** | Migrate / merge localStorage progress after login | Planned |
 | **7** | Phase 4 final audit | Planned |
 
-### Step 2 — Auth helpers + login/signup UI
+### Step 2 — Auth helpers + login/signup UI ✅
 
-- `lib/supabase` auth client (browser session)
-- Sign up / sign in / sign out components or pages
-- Wire Profile link to real account state
-- Still no progress writes until Step 3+
+- [lib/supabase/auth.ts](./lib/supabase/auth.ts) — `getCurrentUser`, `getSession`, `signInWithEmail`, `signUpWithEmail`, `signOut`, `onAuthStateChange`
+- [types/auth.ts](./types/auth.ts) — `AuthUser`
+- Pages: `/login`, `/signup`
+- [components/auth-status.tsx](./components/auth-status.tsx) in header (Нэвтрэх / email / Гарах)
+- Profile shows logged-in email or login CTA
+- **No** Supabase progress writes; **no** RLS applied yet; localStorage unchanged
 
 ### Step 3 — Lesson progress in Supabase
 

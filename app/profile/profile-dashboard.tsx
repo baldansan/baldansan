@@ -7,6 +7,8 @@ import { BottomNav } from "@/components/bottom-nav";
 import { EmptyState } from "@/components/empty-state";
 import { LocalProgressNote } from "@/components/local-progress-note";
 import { lessonPath } from "@/lib/content";
+import { getCurrentUser, hasSupabaseConfig } from "@/lib/supabase/auth";
+import type { AuthUser } from "@/types/auth";
 import {
   countCompletedLessonsAll,
   countStartedLessons,
@@ -38,15 +40,24 @@ export function ProfileDashboard() {
   const [lastActiveLessonId, setLastActiveLessonId] = useState<string | null>(
     null
   );
+  const [authUser, setAuthUser] = useState<AuthUser | null>(null);
 
   useEffect(() => {
-    function refresh() {
+    async function refresh() {
       setHasProgress(hasAnyProgress());
       setCompletedCount(countCompletedLessonsAll());
       setStartedCount(countStartedLessons());
       setLearnedWords(getTotalLearnedWords());
       setQuizResults(getAllQuizResults());
       setLastActiveLessonId(getLastActiveLessonId());
+
+      if (hasSupabaseConfig) {
+        const { data } = await getCurrentUser();
+        setAuthUser(data);
+      } else {
+        setAuthUser(null);
+      }
+
       setReady(true);
     }
 
@@ -82,6 +93,36 @@ export function ProfileDashboard() {
           <div className="mt-3">
             <LocalProgressNote />
           </div>
+          <p className="mt-3 text-sm leading-6 text-slate-600">
+            Одоогоор ахиц энэ төхөөрөмж дээр хадгалагдаж байна. Дараагийн алхамд
+            аккаунттай холбож хадгална.
+          </p>
+        </section>
+
+        <section className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:p-6">
+          {authUser ? (
+            <>
+              <h2 className="text-lg font-semibold text-slate-900">
+                Нэвтэрсэн хэрэглэгч
+              </h2>
+              <p className="mt-2 text-sm text-slate-600">{authUser.email}</p>
+            </>
+          ) : (
+            <>
+              <h2 className="text-lg font-semibold text-slate-900">
+                Одоогоор нэвтрээгүй байна.
+              </h2>
+              <p className="mt-2 text-sm text-slate-600">
+                Нэвтэрсний дараа ахицаа аккаунтаар хадгалах бэлэн болно.
+              </p>
+              <Link
+                href="/login"
+                className="mt-4 inline-flex rounded-full bg-emerald-500 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-emerald-600"
+              >
+                Нэвтрэх →
+              </Link>
+            </>
+          )}
         </section>
 
         {!hasProgress ? (

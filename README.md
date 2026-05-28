@@ -36,6 +36,8 @@ A Mongolian–Chinese language learning web app. Users learn Chinese through sho
 | `/lessons/[lessonId]/quiz` | Quiz |
 | `/profile` | Learning dashboard |
 | `/review` | Daily review |
+| `/login` | Sign in |
+| `/signup` | Sign up |
 
 Examples: `/lessons/1`, `/lessons/4/quiz`. Invalid IDs (e.g. `/lessons/999`) show lesson not found.
 
@@ -101,15 +103,25 @@ Without Supabase, lessons **1–3** load from `content/` files. Lesson **4** nee
 2. Register local lessons in `content/courses/hsk5/lessons/index.ts`
 3. See [CONTENT_AUTHORING_GUIDE.md](./CONTENT_AUTHORING_GUIDE.md)
 
-## Auth roadmap (Phase 4)
+## Auth setup (Phase 4)
 
-Planning is complete for Supabase Auth and Row Level Security. The app still uses **localStorage** for progress; do not run RLS SQL until auth UI is ready.
+Requires Supabase project with **Auth** enabled and env vars in `.env.local`:
 
-- [AUTH_PLAN.md](./AUTH_PLAN.md) — login flow, localStorage migration, Steps 1–7
-- [supabase/policies/README.md](./supabase/policies/README.md) — planned RLS policies
-- [supabase/policies/001_auth_rls_policies.sql](./supabase/policies/001_auth_rls_policies.sql) — review before applying in Supabase
+```env
+NEXT_PUBLIC_SUPABASE_URL=https://your-project.supabase.co
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-key
+```
 
-**Next:** Phase 4 Step 2 — auth helpers + login/signup UI.
+**Pages:** [/login](http://localhost:3000/login) · [/signup](http://localhost:3000/signup)
+
+Helpers: [lib/supabase/auth.ts](./lib/supabase/auth.ts). Header shows **Нэвтрэх** or signed-in email + **Гарах**.
+
+Progress is still **localStorage-only** until Phase 4 Steps 3–6. Do not run [RLS policies](./supabase/policies/001_auth_rls_policies.sql) until progress writes are implemented and tested.
+
+- [AUTH_PLAN.md](./AUTH_PLAN.md) — full roadmap
+- [supabase/policies/README.md](./supabase/policies/README.md) — RLS (planned)
+
+**Next:** Phase 4 Step 3 — persist lesson progress to Supabase when logged in.
 
 ## Documentation
 

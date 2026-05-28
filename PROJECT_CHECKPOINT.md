@@ -18,9 +18,14 @@ Audited routes, navigation, Supabase-first helpers, localStorage progress, UI em
 | Progress | `lib/progress.ts` SSR-safe; vocabulary/quiz/lesson state on device |
 | UI | Green/white cards; empty states; lesson not found polished |
 
-**Recommended next:** Phase 4 Step 2 — Auth helpers + login/signup UI.
+**Recommended next:** Phase 4 Step 3 — Persist lesson progress to Supabase.
 
 **Phase 4 Step 1: Auth and RLS policy planning completed.**
+
+**Phase 4 Step 2: Auth helpers and login/signup UI added. Progress remains localStorage-only.**
+
+- `lib/supabase/auth.ts`, `/login`, `/signup`, `AuthStatus` in header
+- Profile shows auth state; lesson/vocab/quiz progress not written to Supabase yet
 
 - [AUTH_PLAN.md](./AUTH_PLAN.md) — Auth + migration roadmap (Steps 1–7)
 - [supabase/policies/001_auth_rls_policies.sql](./supabase/policies/001_auth_rls_policies.sql) — planned RLS (review before run)
@@ -42,6 +47,8 @@ Audited routes, navigation, Supabase-first helpers, localStorage progress, UI em
 | `/lessons/[lessonId]/quiz` | Quiz + results |
 | `/profile` | Learning dashboard (localStorage) |
 | `/review` | Daily review (learned words + quiz summary) |
+| `/login` | Email/password sign in |
+| `/signup` | Email/password sign up |
 | `/lessons/999` (invalid) | Lesson not found UI |
 
 Lessons **1–3** have local content files; **Lesson 4** is Supabase-seeded when env is configured (`002_seed_hsk5_lesson_4.sql`). All use the same dynamic routes.
