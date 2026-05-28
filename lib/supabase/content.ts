@@ -304,23 +304,38 @@ export async function getSupabaseCourseContentById(
 export async function getSupabaseLessonsByCourseId(
   courseId: string
 ): Promise<LessonContent[]> {
-  return fetchSupabaseLessonsByCourse(courseId, false);
+  if (!hasSupabaseConfig || !supabase) return [];
+  return getSupabaseLessonsByCourseIdWithClient(courseId, supabase);
+}
+
+export async function getSupabaseLessonsByCourseIdWithClient(
+  courseId: string,
+  client: SupabaseClient,
+  options?: { publicOnly?: boolean }
+): Promise<LessonContent[]> {
+  return fetchSupabaseLessonsByCourse(
+    courseId,
+    options?.publicOnly ?? false,
+    client
+  );
 }
 
 /** Public catalog: only `status = available` lessons. */
 export async function getSupabasePublicLessonsByCourseId(
   courseId: string
 ): Promise<LessonContent[]> {
-  return fetchSupabaseLessonsByCourse(courseId, true);
+  if (!hasSupabaseConfig || !supabase) return [];
+  return getSupabaseLessonsByCourseIdWithClient(courseId, supabase, {
+    publicOnly: true,
+  });
 }
 
 async function fetchSupabaseLessonsByCourse(
   courseId: string,
-  publicOnly: boolean
+  publicOnly: boolean,
+  client: SupabaseClient
 ): Promise<LessonContent[]> {
-  if (!hasSupabaseConfig || !supabase) return [];
-
-  let query = supabase
+  let query = client
     .from("lessons")
     .select(LESSON_ROW_SELECT)
     .eq("course_id", courseId);

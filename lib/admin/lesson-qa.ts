@@ -1,4 +1,3 @@
-import { getLessonById, getLessonsByCourseId } from "@/lib/content";
 import { getAdminPublishStatus } from "@/lib/admin/lesson-status";
 import {
   getLessonMediaWarnings,
@@ -203,21 +202,6 @@ export function summarizeLessonQa(reports: LessonQaReport[]): LessonQaSummary {
   };
 }
 
-export async function getHsk5LessonsWithQa(): Promise<LessonQaReport[]> {
-  const summaries = await getLessonsByCourseId("hsk5");
-  const reports: LessonQaReport[] = [];
-
-  for (const summary of summaries) {
-    const lesson = await getLessonById(summary.id);
-    if (lesson) {
-      reports.push(analyzeLessonQa(lesson));
-    }
-  }
-
-  return reports.sort((a, b) => Number(a.lesson.id) - Number(b.lesson.id));
-}
-
-/** Matches publish validation: metadata + subtitles + vocabulary + quiz. */
 export function isPublishReady(report: LessonQaReport): boolean {
   return (
     report.hasMetadata &&

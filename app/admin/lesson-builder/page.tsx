@@ -1,5 +1,5 @@
 import { LessonBuilderWorkflow } from "@/components/admin/lesson-builder-workflow";
-import { getHsk5LessonsWithQa } from "@/lib/admin/lesson-qa";
+import { getHsk5LessonsWithQa } from "@/lib/admin/lesson-fetch";
 
 export const dynamic = "force-dynamic";
 

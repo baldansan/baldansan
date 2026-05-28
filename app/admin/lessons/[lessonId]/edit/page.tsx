@@ -1,8 +1,8 @@
 import Link from "next/link";
 import { LessonEditForm } from "@/components/admin/lesson-edit-form";
 import { EmptyState } from "@/components/empty-state";
+import { getAdminLessonById } from "@/lib/admin/lesson-fetch";
 import { analyzeLessonQa } from "@/lib/admin/lesson-qa";
-import { getLessonById } from "@/lib/content";
 import {
   getAdminLessonMetadataById,
   getLessonCompleteness,
@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: Props) {
 
 export default async function AdminEditLessonPage({ params }: Props) {
   const { lessonId } = await params;
-  const lesson = await getLessonById(lessonId);
+  const lesson = await getAdminLessonById(lessonId);
 
   if (!lesson) {
     return (
@@ -59,7 +59,9 @@ export default async function AdminEditLessonPage({ params }: Props) {
   );
 }
 
-function completenessFromLesson(lesson: Awaited<ReturnType<typeof getLessonById>>) {
+function completenessFromLesson(
+  lesson: Awaited<ReturnType<typeof getAdminLessonById>>
+) {
   if (!lesson) {
     return {
       hasMetadata: false,

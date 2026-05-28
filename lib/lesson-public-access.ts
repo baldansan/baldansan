@@ -1,10 +1,8 @@
-import { getLessonById, getLocalLessonById } from "@/lib/content";
+import { getAdminLessonById } from "@/lib/admin/lesson-fetch";
+import { getLessonById } from "@/lib/content";
 import { getLessonPublishStatus } from "@/lib/lesson-publish";
 import { isAdminPreviewParam } from "@/lib/preview-params";
 import { isCurrentUserAdminServer } from "@/lib/supabase/admin-server";
-import { getSupabaseLessonByIdWithClient } from "@/lib/supabase/content";
-import { hasSupabaseConfig } from "@/lib/supabase/client";
-import { createServerSupabaseClient } from "@/lib/supabase/server";
 import type { LessonContent, LessonPublishStatus } from "@/types/lesson-content";
 
 export type LessonPageAccess =
@@ -18,48 +16,28 @@ export type LessonPageAccess =
     }
   | { kind: "ok"; lesson: LessonContent; adminPreview: boolean };
 
-async function loadLessonForAdminPreview(
-  lessonId: string
-): Promise<LessonContent | undefined> {
-  if (!hasSupabaseConfig) {
-    return getLocalLessonById(lessonId);
-  }
-
-  const client = await createServerSupabaseClient();
-  if (!client) {
-    return getLessonById(lessonId);
-  }
-
-  try {
-    const lesson = await getSupabaseLessonByIdWithClient(lessonId, client);
-    if (lesson) {
-      return lesson;
-    }
-  } catch {
-    // Fall through to default loader.
-  }
-
-  return getLessonById(lessonId);
-}
-
 export async function resolveLessonPageAccess(
   lessonId: string,
   options?: { preview?: string | string[] }
 ): Promise<LessonPageAccess> {
   const wantsAdminPreview = isAdminPreviewParam(options?.preview);
+  const isAdmin = await isCurrentUserAdminServer();
 
   let lesson = await getLessonById(lessonId);
+
+  if (!lesson && isAdmin) {
+    lesson = await getAdminLessonById(lessonId);
+  }
 
   if (!lesson) {
     return { kind: "not_found" };
   }
 
   const publishStatus = getLessonPublishStatus(lesson);
-  const isAdmin = await isCurrentUserAdminServer();
   const adminPreview = wantsAdminPreview && isAdmin;
 
   if (adminPreview) {
-    const fullLesson = await loadLessonForAdminPreview(lessonId);
+    const fullLesson = await getAdminLessonById(lessonId);
     if (fullLesson) {
       lesson = fullLesson;
     }
@@ -67,6 +45,13 @@ export async function resolveLessonPageAccess(
   }
 
   if (publishStatus !== "available") {
+    if (isAdmin) {
+      const adminLesson = await getAdminLessonById(lessonId);
+      if (adminLesson) {
+        lesson = adminLesson;
+      }
+    }
+
     return {
       kind: "unavailable",
       lesson,

@@ -1,5 +1,6 @@
 import { AdminDashboard } from "@/components/admin/admin-dashboard";
-import { getHsk5LessonsWithQa, summarizeLessonQa } from "@/lib/admin/lesson-qa";
+import { getHsk5LessonsWithQa } from "@/lib/admin/lesson-fetch";
+import { summarizeLessonQa } from "@/lib/admin/lesson-qa";
 
 export const dynamic = "force-dynamic";
 
