@@ -2,9 +2,9 @@
 
 This document explains how **Supabase Auth** and **Row Level Security (RLS)** will move the app from device-only `localStorage` progress to real per-user progress in PostgreSQL.
 
-**Phase 4 Step 6 (current):** local guest progress can be merged into Supabase account after login via Profile sync card.
+**Phase 4 — Completed (May 2026):** Auth UI, Supabase progress writes (lessons, vocabulary, quiz), localStorage fallback, and Profile merge/sync after login.
 
-**Before production auth progress writes:** run [supabase/policies/001_auth_rls_policies.sql](./supabase/policies/001_auth_rls_policies.sql) in the Supabase SQL Editor. The app does not execute SQL automatically.
+**Production requirement:** run [supabase/policies/001_auth_rls_policies.sql](./supabase/policies/001_auth_rls_policies.sql) in the Supabase SQL Editor before relying on authenticated progress in production. The app does not execute SQL automatically.
 
 ---
 
@@ -115,7 +115,7 @@ From [001_initial_schema.sql](./supabase/migrations/001_initial_schema.sql):
 | **4** | Persist vocabulary learned state to Supabase | ✅ Completed |
 | **5** | Persist quiz attempts to Supabase | ✅ Completed |
 | **6** | Migrate / merge localStorage progress after login | ✅ Completed |
-| **7** | Phase 4 final audit | **Next** |
+| **7** | Phase 4 final audit | ✅ Completed |
 
 ### Step 2 — Auth helpers + login/signup UI ✅
 
@@ -152,10 +152,12 @@ From [001_initial_schema.sql](./supabase/migrations/001_initial_schema.sql):
 - Merge lessons (max status), vocabulary (`vocabulary_word_id`), quiz (insert if no remote or better best %)
 - `clearLocalProgressAfterSync()` after successful merge; “Дараа” dismisses without deleting local
 
-### Step 7 — Phase 4 audit
+### Step 7 — Phase 4 audit ✅
 
-- Routes, RLS verification, signed-in vs signed-out behavior
-- Docs and build
+- Routes: `/login`, `/signup`, `/profile`, `/review`, lessons 1–4 + sub-routes; build passes
+- Auth UI: header login/logout; profile account + sync card
+- Security: `.env*` gitignored; anon key only in client; no service_role in app code
+- Docs updated; RLS SQL must still be applied in Supabase for production
 
 ---
 

@@ -118,15 +118,17 @@ Helpers: [lib/supabase/auth.ts](./lib/supabase/auth.ts). Header shows **Нэвт
 
 **Lesson progress**, **vocabulary learned**, and **quiz attempts** persist to Supabase when signed in, with localStorage always updated as backup. Run [RLS policies](./supabase/policies/001_auth_rls_policies.sql) in Supabase before production auth progress writes.
 
-- [AUTH_PLAN.md](./AUTH_PLAN.md) — full roadmap
-- [supabase/policies/README.md](./supabase/policies/README.md) — RLS (planned)
+- [AUTH_PLAN.md](./AUTH_PLAN.md) — Phase 4 auth + RLS (completed)
+- [supabase/policies/README.md](./supabase/policies/README.md) — apply RLS before production
 
-**Next:** Phase 4 Step 7 — Phase 4 final audit.
+**Guest fallback:** Progress works without login in `localStorage`. After login, use **Profile → Account руу хадгалах** to merge guest progress into the account.
+
+**Next:** Phase 5 — Admin content management / lesson upload workflow.
 
 ## Documentation
 
-- [PROJECT_CHECKPOINT.md](./PROJECT_CHECKPOINT.md) — status & Phase 3 audit
-- [DEVELOPMENT_PLAN.md](./DEVELOPMENT_PLAN.md) — roadmap (Phase 4 in progress)
+- [PROJECT_CHECKPOINT.md](./PROJECT_CHECKPOINT.md) — status & Phase 4 audit
+- [DEVELOPMENT_PLAN.md](./DEVELOPMENT_PLAN.md) — roadmap (Phase 5 next)
 - [DATABASE_SCHEMA.md](./DATABASE_SCHEMA.md) — schema + Auth/RLS plan
 - [AUTH_PLAN.md](./AUTH_PLAN.md) — Phase 4 auth details
 - [CONTENT_AUTHORING_GUIDE.md](./CONTENT_AUTHORING_GUIDE.md) — content workflow

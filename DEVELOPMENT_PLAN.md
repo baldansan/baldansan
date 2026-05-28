@@ -114,7 +114,7 @@ Phased roadmap from MVP demo to production product.
 
 ---
 
-## Phase 4: Authentication + Supabase user progress — **In progress**
+## Phase 4: Authentication + Supabase user progress — **Completed**
 
 **Goal:** Personal accounts and real progress persisted in Supabase (`user_*` progress tables).
 
@@ -150,6 +150,8 @@ Phased roadmap from MVP demo to production product.
 - [lib/supabase/progress-sync.ts](./lib/supabase/progress-sync.ts), [components/progress-sync-card.tsx](./components/progress-sync-card.tsx) on `/profile`
 - Guest device progress offered for one-way merge into account; local cleared after success
 
+**Phase 4 Step 7 — Completed:** Final audit (routes, auth UI, progress paths, security, docs, build).
+
 **Phase 4 roadmap:**
 
 | Step | Focus |
@@ -160,21 +162,17 @@ Phased roadmap from MVP demo to production product.
 | 4 ✅ | Persist vocabulary learned state to Supabase |
 | 5 ✅ | Persist quiz attempts to Supabase |
 | 6 ✅ | Migrate / merge localStorage progress after login |
-| 7 | Phase 4 final audit — **Next** |
+| 7 ✅ | Phase 4 final audit |
 
-**Exit criteria:** Sign up, sign in, progress survives across devices and page refresh in Supabase.
+**Exit criteria:** Met — sign up, sign in, progress persists to Supabase when RLS is applied; localStorage remains as backup and guest fallback.
 
-**Tasks (remaining):**
-- Supabase Auth (email, OAuth, or phone as needed)
-- Apply RLS when auth + writes are ready
-- Migrate `lib/progress.ts` localStorage data to progress tables
-- Wire Profile (`/profile`) to authenticated user progress
+**Production note:** Apply [supabase/policies/001_auth_rls_policies.sql](./supabase/policies/001_auth_rls_policies.sql) in Supabase before production auth progress writes.
 
 ---
 
-## Phase 5: Admin content upload
+## Phase 5: Admin content management / lesson upload — **Next**
 
-**Goal:** Non-developers can publish lessons.
+**Goal:** Non-developers can publish and manage lesson content (admin workflow).
 
 **Tasks:**
 - Admin role in Supabase (RLS policies)

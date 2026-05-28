@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { AppHeader } from "@/components/app-header";
 import { getSession, hasSupabaseConfig, signUpWithEmail } from "@/lib/supabase/auth";
+import { resetProgressSyncDismiss } from "@/lib/supabase/progress-sync";
 
 export function SignupForm() {
   const [email, setEmail] = useState("");
@@ -38,7 +39,11 @@ export function SignupForm() {
     }
 
     const { data: session } = await getSession();
-    setHasSession(Boolean(session));
+    const signedIn = Boolean(session);
+    if (signedIn) {
+      resetProgressSyncDismiss();
+    }
+    setHasSession(signedIn);
     setSuccess(true);
   }
 

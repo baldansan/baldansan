@@ -17,7 +17,7 @@ Without RLS, a leaked anon key could let clients read or write any user's progre
 
 ## When to run
 
-**Run `supabase/policies/001_auth_rls_policies.sql` before enabling production auth lesson progress writes** (Phase 4 Step 3). The app does not execute this SQL automatically.
+**Run `supabase/policies/001_auth_rls_policies.sql` before production use of authenticated progress writes** (lessons, vocabulary, quiz). The app does not execute this SQL automatically.
 
 Prerequisites:
 

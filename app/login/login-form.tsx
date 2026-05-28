@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { AppHeader } from "@/components/app-header";
 import { getCurrentUser, hasSupabaseConfig, signInWithEmail } from "@/lib/supabase/auth";
+import { resetProgressSyncDismiss } from "@/lib/supabase/progress-sync";
 
 export function LoginForm() {
   const router = useRouter();
@@ -46,6 +47,7 @@ export function LoginForm() {
     }
 
     if (data) {
+      resetProgressSyncDismiss();
       router.push("/profile");
       router.refresh();
     }
