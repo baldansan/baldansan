@@ -1,0 +1,148 @@
+# Development Plan — Buunduu Surtsgaay
+
+Phased roadmap from MVP demo to production product.
+
+---
+
+## Phase 1: MVP demo — **Completed**
+
+**Goal:** Prove the learning flow and UI with mock data.
+
+**Delivered:**
+- Landing, courses, HSK5 course detail, Lesson 1 detail
+- Watch (subtitle modes), vocabulary (search/filter/learned), quiz (interactive)
+- Polished navigation across all routes
+- TypeScript types and mock data in `data/` + `types/`
+
+**Exit criteria:** ✅ User can complete Home → Course → Lesson → Watch → Vocabulary → Quiz without broken links.
+
+---
+
+## Phase 2: Real lesson data structure
+
+**Goal:** Replace ad-hoc mocks with a maintainable content model.
+
+**Tasks:**
+- Define schemas for Course, Lesson, SubtitleLine, VocabularyWord, QuizQuestion
+- Move content to JSON files or MDX under `content/` (or similar)
+- Support multiple lessons per course without duplicating page files
+- Introduce dynamic routes: `/lessons/[lessonId]`, `/courses/[courseId]`
+- Keep UI unchanged; swap data source only
+
+**Exit criteria:** Adding Lesson 2 requires data + route param only, not copying entire page folders.
+
+---
+
+## Phase 3: Supabase database
+
+**Goal:** Persistent, queryable content and progress.
+
+**Tasks:**
+- Design tables: `courses`, `lessons`, `subtitles`, `vocabulary`, `quiz_questions`, `user_progress`, `user_vocabulary`
+- Seed DB from MVP mock data
+- Replace `data/*.ts` reads with Supabase client (server or RSC)
+- Store lesson completion %, quiz scores, learned vocabulary per user (anonymous or authenticated)
+
+**Exit criteria:** Content edits happen in DB; progress survives page refresh for logged-in users.
+
+---
+
+## Phase 4: Authentication
+
+**Goal:** Personal accounts and protected progress.
+
+**Tasks:**
+- Supabase Auth (email, OAuth, or phone as needed)
+- Profile page (`/profile`) — settings, progress summary
+- Middleware or layout guards for member-only lessons (if applicable)
+- Link `user_progress` to `auth.users`
+
+**Exit criteria:** Sign up, sign in, see own progress across devices.
+
+---
+
+## Phase 5: Admin content upload
+
+**Goal:** Non-developers can publish lessons.
+
+**Tasks:**
+- Admin role in Supabase (RLS policies)
+- Admin UI: upload video, edit subtitles (timeline), vocabulary, quiz
+- Optional: bulk import from spreadsheet or SRT/VTT subtitles
+- Preview mode before publish
+
+**Exit criteria:** New lesson published without deploying code.
+
+---
+
+## Phase 6: Payment / membership
+
+**Goal:** Monetize courses and gate premium content.
+
+**Tasks:**
+- Define free vs paid courses/lessons
+- Integrate payment provider (Stripe, QPay, etc.)
+- Subscription or one-time purchase model
+- Entitlement checks on lesson routes
+- Receipt and membership status on profile
+
+**Exit criteria:** Paying user unlocks HSK5+ content; free tier remains usable.
+
+---
+
+## Phase 7: Mobile app with Expo
+
+**Goal:** Native iOS/Android experience sharing the same backend.
+
+**Tasks:**
+- Expo (React Native) app scaffold
+- Reuse Supabase client and auth
+- Screens: courses, lesson player, vocabulary, quiz (parity with web)
+- Offline-friendly vocabulary review (optional)
+- App Store / Play Store release pipeline
+
+**Exit criteria:** Core lesson flow works on mobile against production Supabase.
+
+---
+
+## Cross-cutting concerns (all phases)
+
+| Area | Notes |
+|------|--------|
+| **Design system** | Shared header, buttons, cards; consider shadcn/ui later |
+| **i18n** | Mongolian UI strings; structured keys when content grows |
+| **Analytics** | Lesson completion, quiz scores, drop-off |
+| **SEO** | Metadata per course/lesson page |
+| **Performance** | Video CDN, image optimization |
+| **Testing** | E2E for critical flows (Playwright) |
+
+---
+
+## Suggested order after MVP
+
+```
+Phase 2 (data structure)
+    → Phase 3 (Supabase)
+    → Phase 4 (Auth)
+    → Phase 5 (Admin)
+    → Phase 6 (Payments)
+    → Phase 7 (Expo)
+```
+
+Phases 5 and 6 can be reordered depending on business priority (content velocity vs revenue).
+
+---
+
+## Reference: MVP routes (frozen at v1)
+
+```
+/
+/courses
+/courses/hsk5
+/lessons/1
+/lessons/1/watch
+/lessons/1/vocabulary
+/lessons/1/quiz
+```
+
+Do not remove these routes without a migration plan and redirects.
