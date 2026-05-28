@@ -32,6 +32,28 @@ export function AdminAlert({
   );
 }
 
+export function AdminToolGroup({
+  title,
+  description,
+  children,
+}: {
+  title: string;
+  description?: string;
+  children: ReactNode;
+}) {
+  return (
+    <div className="flex flex-col gap-4">
+      <div className="border-b border-slate-200 pb-3">
+        <h2 className="text-lg font-semibold text-slate-900">{title}</h2>
+        {description ? (
+          <p className="mt-1 text-sm text-slate-600">{description}</p>
+        ) : null}
+      </div>
+      <div className="flex flex-col gap-4">{children}</div>
+    </div>
+  );
+}
+
 export function AdminEditorSection({
   title,
   description,

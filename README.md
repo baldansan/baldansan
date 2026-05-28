@@ -135,6 +135,7 @@ Helpers: [lib/supabase/auth.ts](./lib/supabase/auth.ts). Header shows **Нэвт
 - [CONTENT_WORKFLOW.md](./CONTENT_WORKFLOW.md) — create → publish → verify workflow
 - [LESSON_IMPORT_FORMAT.md](./LESSON_IMPORT_FORMAT.md) — bulk JSON import format (ChatGPT paste)
 - [LESSON_EXPORT_FORMAT.md](./LESSON_EXPORT_FORMAT.md) — full lesson JSON backup export
+- [LESSON_BACKUP_RESTORE.md](./LESSON_BACKUP_RESTORE.md) — duplicate, restore, replace safety
 - [LESSON_PROMPT_TEMPLATE.md](./LESSON_PROMPT_TEMPLATE.md) — master ChatGPT prompt for lesson JSON
 - [supabase/admin/README.md](./supabase/admin/README.md) — run `001_admin_profiles_setup.sql`, bootstrap admin user
 
@@ -148,7 +149,9 @@ Helpers: [lib/supabase/auth.ts](./lib/supabase/auth.ts). Header shows **Нэвт
 
 **Export backup:** `/admin/lessons/{id}/edit` → generate/copy/download JSON backup (metadata + content; re-import via bulk import).
 
-**Next step:** Phase 5 Step 13 — Content duplicate/restore or media placeholder workflow.
+**Duplicate & restore:** copy lesson to new draft ID; restore backup JSON with append/replace (confirmation required for replace).
+
+**Next step:** Phase 5 Step 14 — Lesson package generator / full lesson builder workflow.
 
 ## Documentation
 

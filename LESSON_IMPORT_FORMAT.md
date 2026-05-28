@@ -129,6 +129,17 @@ Maps to `quiz_questions`. After import, `lessons.quiz_count` is refreshed.
 
 Replace never touches other lessons or user progress tables.
 
+### Replace mode safety (Step 13)
+
+On the admin UI, **Replace** requires:
+
+1. Checkbox: *Би энэ үйлдлийг ойлгож байна.*
+2. Warning that the action may be irreversible
+3. Hint to **Export lesson backup** first
+4. Display of **existing** subtitle/vocabulary/quiz counts before import
+
+Exported lesson JSON with a `lesson` block is still valid — only content arrays are imported (metadata ignored unless using **Restore from backup**).
+
 ---
 
 ## Full example

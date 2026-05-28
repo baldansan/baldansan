@@ -84,6 +84,21 @@ On **`/admin/lessons/{id}/edit`** → **Export lesson backup**:
 
 See [LESSON_EXPORT_FORMAT.md](./LESSON_EXPORT_FORMAT.md).
 
+### Safe workflow (Step 13)
+
+Recommended order:
+
+1. **Create / import** content → manual fixes
+2. **Content QA** + prompt/import QA
+3. **Export backup** before publish or any **Replace** import/restore
+4. **Publish** when QA passes
+
+**Duplicate lesson** — copy full lesson to a new draft ID (e.g. Lesson 5 → Lesson 6).
+
+**Restore from backup** — paste export JSON into current lesson (append or replace; replace needs confirmation).
+
+Before large **Replace** operations: export backup. See [LESSON_BACKUP_RESTORE.md](./LESSON_BACKUP_RESTORE.md).
+
 ---
 
 See also: [ADMIN_PLAN.md](./ADMIN_PLAN.md), [CONTENT_AUTHORING_GUIDE.md](./CONTENT_AUTHORING_GUIDE.md) (developer/local authoring today).

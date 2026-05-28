@@ -5,8 +5,11 @@ import { useCallback, useEffect, useState } from "react";
 import { lessonPreviewPath } from "@/lib/lesson-publish";
 import { analyzeLessonQaFromCounts } from "@/lib/admin/lesson-qa";
 import { getAdminPublishStatus } from "@/lib/admin/lesson-status";
+import { AdminToolGroup } from "@/components/admin/admin-editor-ui";
 import { BulkImportEditor } from "@/components/admin/bulk-import-editor";
+import { LessonDuplicateCard } from "@/components/admin/lesson-duplicate-card";
 import { LessonExportCard } from "@/components/admin/lesson-export-card";
+import { LessonRestoreCard } from "@/components/admin/lesson-restore-card";
 import { ImportQaSummary } from "@/components/admin/import-qa-summary";
 import { LessonPromptGenerator } from "@/components/admin/lesson-prompt-generator";
 import { PublishingControls } from "@/components/admin/publishing-controls";
@@ -115,13 +118,13 @@ export function LessonEditForm({
   );
 
   return (
-    <div className="flex flex-col gap-6">
+    <div className="flex flex-col gap-8">
       <div>
         <h1 className="text-2xl font-bold text-slate-900">
           Хичээл засах · {lesson.id}
         </h1>
         <p className="mt-2 text-sm text-slate-600">
-          Metadata засах, bulk import, subtitle / vocabulary / quiz editors.
+          Metadata, import/export, restore, duplicate, manual editors, publish.
         </p>
         <div className="mt-3 flex flex-wrap items-center gap-2">
           <LessonQaBadge status={qa.qaStatus} />
@@ -170,60 +173,89 @@ export function LessonEditForm({
           Quiz: {quizActual} / meta {quizMeta}
           {quizMismatch ? " · Count mismatch" : ""}
         </span>
-        {!vocabMismatch && !quizMismatch && vocabActual > 0 && quizActual > 0 ? (
-          <span className="text-xs text-slate-500">Counts synced after save</span>
-        ) : null}
       </div>
 
-      <LessonMetadataEditor
-        lesson={lesson}
-        orderIndex={orderIndex}
-        vocabActual={vocabActual}
-        quizActual={quizActual}
-        vocabMeta={vocabMeta}
-        quizMeta={quizMeta}
-        contentReadyForPublish={qaPublishReady}
-        onSaved={() => void refreshMetaCounts()}
-        onCountsRefreshed={(vocab, quiz) => {
-          setVocabMeta(vocab);
-          setQuizMeta(quiz);
-        }}
-      />
+      <AdminToolGroup
+        title="Metadata"
+        description="Гарчиг, статус, order index — Supabase-д хадгална."
+      >
+        <LessonMetadataEditor
+          lesson={lesson}
+          orderIndex={orderIndex}
+          vocabActual={vocabActual}
+          quizActual={quizActual}
+          vocabMeta={vocabMeta}
+          quizMeta={quizMeta}
+          contentReadyForPublish={qaPublishReady}
+          onSaved={() => void refreshMetaCounts()}
+          onCountsRefreshed={(vocab, quiz) => {
+            setVocabMeta(vocab);
+            setQuizMeta(quiz);
+          }}
+        />
+      </AdminToolGroup>
 
-      <ImportQaSummary
-        lesson={lesson}
-        reloadToken={editorReload}
-        onReadinessChange={handleQaReadiness}
-      />
+      <AdminToolGroup
+        title="Content QA & prompts"
+        description="Import-ийн өмнө болон дараа шалгана."
+      >
+        <ImportQaSummary
+          lesson={lesson}
+          reloadToken={editorReload}
+          onReadinessChange={handleQaReadiness}
+        />
+        <LessonPromptGenerator lesson={lesson} />
+      </AdminToolGroup>
 
-      <LessonPromptGenerator lesson={lesson} />
+      <AdminToolGroup
+        title="Import, export & safety"
+        description="Backup → import/restore → duplicate. Replace өмнө export хийнэ үү."
+      >
+        <BulkImportEditor
+          lessonId={lesson.id}
+          onImportSuccess={handleImportSuccess}
+        />
+        <LessonExportCard lessonId={lesson.id} />
+        <LessonRestoreCard
+          lessonId={lesson.id}
+          orderIndex={orderIndex}
+          onRestoreSuccess={handleImportSuccess}
+        />
+        <LessonDuplicateCard
+          sourceLessonId={lesson.id}
+          courseId={lesson.courseId}
+          sourceTitle={lesson.title}
+          sourceChineseTitle={lesson.chineseTitle}
+        />
+      </AdminToolGroup>
 
-      <BulkImportEditor
-        lessonId={lesson.id}
-        onImportSuccess={handleImportSuccess}
-      />
+      <AdminToolGroup
+        title="Manual editors"
+        description="Мөр бүрээр subtitle, vocabulary, quiz засварлана."
+      >
+        <SubtitleEditor
+          lessonId={lesson.id}
+          onSubtitleCountChange={handleSubtitleCountChange}
+          reloadToken={editorReload}
+        />
+        <VocabularyEditor
+          lessonId={lesson.id}
+          onCountsUpdated={handleVocabCounts}
+          reloadToken={editorReload}
+        />
+        <QuizEditor
+          lessonId={lesson.id}
+          onCountsUpdated={handleQuizCounts}
+          reloadToken={editorReload}
+        />
+      </AdminToolGroup>
 
-      <LessonExportCard lessonId={lesson.id} />
-
-      <SubtitleEditor
-        lessonId={lesson.id}
-        onSubtitleCountChange={handleSubtitleCountChange}
-        reloadToken={editorReload}
-      />
-
-      <VocabularyEditor
-        lessonId={lesson.id}
-        onCountsUpdated={handleVocabCounts}
-        reloadToken={editorReload}
-      />
-
-      <QuizEditor
-        lessonId={lesson.id}
-        onCountsUpdated={handleQuizCounts}
-        reloadToken={editorReload}
-      />
-
-      <PublishingControls lesson={lesson} initialCompleteness={completeness} />
+      <AdminToolGroup title="Publish" description="Нийтлэх / ноорог / архив.">
+        <PublishingControls
+          lesson={lesson}
+          initialCompleteness={completeness}
+        />
+      </AdminToolGroup>
 
       <section className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:p-6">
         <h2 className="text-base font-semibold text-slate-900">Preview links</h2>

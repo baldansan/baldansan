@@ -2,7 +2,21 @@
 
 **Project:** Buunduu Surtsgaay (Бөөндөө Сурцгаая)  
 **Checkpoint date:** May 2026  
-**Status:** Phase 4 **completed**; Phase 5 Step 12 export/backup **completed**
+**Status:** Phase 4 **completed**; Phase 5 Step 13 duplicate/restore/safety **completed**
+
+---
+
+## Phase 5 Step 13 — Duplicate, restore, import safety — **Completed**
+
+Phase 5 Step 13: Lesson duplicate, restore, and destructive import safety tools added.
+
+| Area | Deliverable |
+|------|-------------|
+| API | `duplicateLesson`, `restoreLessonFromBackup` |
+| UI | `lesson-duplicate-card`, `lesson-restore-card`, bulk import replace confirmation |
+| Docs | [LESSON_BACKUP_RESTORE.md](./LESSON_BACKUP_RESTORE.md) |
+
+**Next:** Phase 5 Step 14 — Lesson package generator / full lesson builder workflow.
 
 ---
 
@@ -15,8 +29,6 @@ Phase 5 Step 12: Lesson JSON export and backup tools added.
 | API | `getLessonExportPayload`, `buildLessonExportJson` in [lib/supabase/admin-export.ts](./lib/supabase/admin-export.ts) |
 | UI | `lesson-export-card` on `/admin/lessons/{id}/edit` |
 | Docs | [LESSON_EXPORT_FORMAT.md](./LESSON_EXPORT_FORMAT.md) |
-
-**Next:** Phase 5 Step 13 — Content duplicate/restore or media placeholder workflow.
 
 ---
 

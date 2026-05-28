@@ -441,6 +441,29 @@ function lessonHasMetadata(row: {
   );
 }
 
+export type LessonContentRowCounts = {
+  subtitles: number;
+  vocabulary: number;
+  quizQuestions: number;
+};
+
+export async function getLessonContentRowCounts(
+  lessonId: string
+): Promise<AdminContentResult<LessonContentRowCounts>> {
+  const result = await getLessonCompleteness(lessonId);
+  if (result.error || !result.data) {
+    return { data: null, error: result.error };
+  }
+  return {
+    data: {
+      subtitles: result.data.subtitleCount,
+      vocabulary: result.data.vocabularyCount,
+      quizQuestions: result.data.quizCount,
+    },
+    error: null,
+  };
+}
+
 export async function getLessonCompleteness(
   lessonId: string
 ): Promise<AdminContentResult<LessonCompleteness>> {

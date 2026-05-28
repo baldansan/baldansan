@@ -1,7 +1,7 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { useCallback, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import {
   AdminAlert,
   AdminEditorSection,
@@ -13,6 +13,10 @@ import {
   type BulkImportMode,
   type ImportValidationResult,
 } from "@/lib/supabase/admin-import";
+import {
+  getLessonContentRowCounts,
+  type LessonContentRowCounts,
+} from "@/lib/supabase/admin-content";
 
 const EXAMPLE_JSON = `{
   "subtitles": [
@@ -62,6 +66,21 @@ export function BulkImportEditor({ lessonId, onImportSuccess }: Props) {
   const [error, setError] = useState<string | null>(null);
   const [success, setSuccess] = useState<string | null>(null);
   const [warnings, setWarnings] = useState<string[]>([]);
+  const [existingCounts, setExistingCounts] =
+    useState<LessonContentRowCounts | null>(null);
+  const [replaceConfirmed, setReplaceConfirmed] = useState(false);
+
+  useEffect(() => {
+    let cancelled = false;
+    void getLessonContentRowCounts(lessonId).then((result) => {
+      if (!cancelled && result.data) {
+        setExistingCounts(result.data);
+      }
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, [lessonId]);
 
   const handleValidate = useCallback(() => {
     setError(null);
@@ -88,6 +107,12 @@ export function BulkImportEditor({ lessonId, onImportSuccess }: Props) {
   async function handleImport() {
     setError(null);
     setSuccess(null);
+
+    if (mode === "replace" && !replaceConfirmed) {
+      setError("Replace үйлдлийг баталгаажуулна уу.");
+      return;
+    }
+
     setBusy("import");
 
     const result = parseAndValidateLessonImport(rawJson);
@@ -118,6 +143,9 @@ export function BulkImportEditor({ lessonId, onImportSuccess }: Props) {
         : "Import амжилттай боллоо."
     );
     onImportSuccess?.();
+    void getLessonContentRowCounts(lessonId).then((r) => {
+      if (r.data) setExistingCounts(r.data);
+    });
     router.refresh();
   }
 
@@ -127,6 +155,7 @@ export function BulkImportEditor({ lessonId, onImportSuccess }: Props) {
     setError(null);
     setSuccess(null);
     setWarnings([]);
+    setReplaceConfirmed(false);
   }
 
   return (
@@ -168,7 +197,10 @@ export function BulkImportEditor({ lessonId, onImportSuccess }: Props) {
               type="radio"
               name={`import-mode-${lessonId}`}
               checked={mode === "append"}
-              onChange={() => setMode("append")}
+              onChange={() => {
+                setMode("append");
+                setReplaceConfirmed(false);
+              }}
               className="text-emerald-600 focus:ring-emerald-500"
             />
             Append to existing content
@@ -184,6 +216,39 @@ export function BulkImportEditor({ lessonId, onImportSuccess }: Props) {
             Replace existing content
           </label>
         </fieldset>
+
+        {existingCounts ? (
+          <p className="text-sm text-slate-600">
+            Одоогийн контент: {existingCounts.subtitles} subtitles ·{" "}
+            {existingCounts.vocabulary} vocabulary ·{" "}
+            {existingCounts.quizQuestions} quiz
+          </p>
+        ) : null}
+
+        {mode === "replace" ? (
+          <div className="space-y-3 rounded-xl bg-amber-50 px-4 py-3 text-sm text-amber-900 ring-1 ring-amber-200">
+            <p>
+              Replace нь одоогийн subtitle/vocabulary/quiz-г устгаад шинэ JSON-аар
+              солино.
+            </p>
+            <p>
+              Энэ үйлдэл буцаах боломжгүй байж магадгүй. Export backup хийсэн
+              эсэхээ шалгана уу.
+            </p>
+            <p className="font-medium text-amber-950">
+              Эхлээд Export lesson backup хийхийг зөвлөж байна.
+            </p>
+            <label className="flex cursor-pointer items-start gap-2">
+              <input
+                type="checkbox"
+                checked={replaceConfirmed}
+                onChange={(e) => setReplaceConfirmed(e.target.checked)}
+                className="mt-0.5 text-emerald-600 focus:ring-emerald-500"
+              />
+              <span>Би энэ үйлдлийг ойлгож байна.</span>
+            </label>
+          </div>
+        ) : null}
 
         {validation?.valid ? (
           <p className="text-sm text-emerald-800">
@@ -228,7 +293,11 @@ export function BulkImportEditor({ lessonId, onImportSuccess }: Props) {
           </button>
           <button
             type="button"
-            disabled={busy !== null || !rawJson.trim()}
+            disabled={
+              busy !== null ||
+              !rawJson.trim() ||
+              (mode === "replace" && !replaceConfirmed)
+            }
             onClick={handleImport}
             className="rounded-full bg-emerald-500 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-emerald-600 disabled:cursor-not-allowed disabled:bg-slate-200 disabled:text-slate-500"
           >

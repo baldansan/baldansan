@@ -101,7 +101,8 @@ See [CONTENT_WORKFLOW.md](./CONTENT_WORKFLOW.md):
 | 10 | Prompt generator + import QA assistant | ✅ Completed |
 | 11 | Admin lesson metadata edit/save | ✅ Completed |
 | 12 | Lesson JSON export and backup tools | ✅ Completed |
-| 13 | Content duplicate/restore or media placeholder | Next |
+| 13 | Lesson duplicate, restore, destructive import safety | ✅ Completed |
+| 14 | Lesson package generator / full lesson builder | Next |
 
 Step 3: [lib/admin/lesson-qa.ts](./lib/admin/lesson-qa.ts), `/admin/lessons` QA dashboard.
 

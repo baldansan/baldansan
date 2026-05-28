@@ -217,7 +217,13 @@ Phased roadmap from MVP demo to production product.
 - [components/admin/lesson-export-card.tsx](./components/admin/lesson-export-card.tsx) on lesson edit page
 - [LESSON_EXPORT_FORMAT.md](./LESSON_EXPORT_FORMAT.md)
 
-**Next:** Phase 5 Step 13 — Content duplicate/restore tools or media placeholder workflow.
+**Phase 5 Step 13 — Completed:** Lesson duplicate, restore, and destructive import safety.
+
+- [lib/supabase/admin-duplicate.ts](./lib/supabase/admin-duplicate.ts), [admin-restore.ts](./lib/supabase/admin-restore.ts)
+- [components/admin/lesson-duplicate-card.tsx](./components/admin/lesson-duplicate-card.tsx), [lesson-restore-card.tsx](./components/admin/lesson-restore-card.tsx)
+- Bulk import replace confirmation + [LESSON_BACKUP_RESTORE.md](./LESSON_BACKUP_RESTORE.md)
+
+**Next:** Phase 5 Step 14 — Lesson package generator / full lesson builder workflow.
 
 - [components/admin/lesson-prompt-generator.tsx](./components/admin/lesson-prompt-generator.tsx)
 - [components/admin/import-qa-summary.tsx](./components/admin/import-qa-summary.tsx)
@@ -249,7 +255,8 @@ Phased roadmap from MVP demo to production product.
 | 10 | Prompt generator + import QA assistant | ✅ Completed |
 | 11 | Admin lesson metadata edit/save | ✅ Completed |
 | 12 | Lesson JSON export and backup tools | ✅ Completed |
-| 13 | Content duplicate/restore or media placeholder | Next |
+| 13 | Lesson duplicate, restore, destructive import safety | ✅ Completed |
+| 14 | Lesson package generator / full lesson builder | Next |
 
 **Exit criteria:** New lesson published through admin UI without deploying code.
 

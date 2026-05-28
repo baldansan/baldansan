@@ -96,7 +96,18 @@ Rows are sorted by `order_index` in Supabase (export order matches playback/list
 
 ## Re-import content
 
-Paste the same JSON (or a subset) into **Bulk import content** on the same or another lesson edit page.
+Paste the same JSON (or a subset) into **Bulk import content** or **Restore from backup JSON** on the lesson edit page.
+
+### Restore workflow
+
+1. **Export** backup from the lesson (or use a saved `lesson-{id}-backup.json`)
+2. Edit content offline if needed (keep import-compatible fields)
+3. On **`/admin/lessons/{id}/edit`** → **Restore from backup JSON**
+4. **Parse backup** → review summary (source id, counts, `exportedAt`)
+5. Choose **content only** or **metadata + content**, **Append** or **Replace**
+6. For **Replace**: confirm checkbox; export again first if unsure
+
+See [LESSON_BACKUP_RESTORE.md](./LESSON_BACKUP_RESTORE.md).
 
 | Block | Bulk import behavior |
 |-------|----------------------|
