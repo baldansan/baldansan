@@ -104,6 +104,10 @@ Phased roadmap from MVP demo to production product.
 
 - `getLessonStatus`, `getCompletedLessonIds`; client continue/progress sections from localStorage
 
+**Phase 3 local review UX — Completed:** Daily review page.
+
+- `/review` with `getAllLearnedWords()`, quiz summaries, vocabulary grouped by lesson from Supabase/local content
+
 **Remaining tasks (Phase 4+):**
 - Supabase Auth; migrate localStorage progress to `user_progress` tables
 

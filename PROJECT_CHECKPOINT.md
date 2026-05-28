@@ -180,6 +180,12 @@ Next Improvement Batch: course detail now renders Supabase lesson list including
 - Courses: HSK5 card shows Completed X / total, progress bar, Continue button
 - `/courses/hsk5`: lesson cards show Not started / Started / Completed; Continue / Review / Start actions
 
+**Daily review page added** using localStorage learned vocabulary and quiz summaries.
+
+- `/review` — Давтах үгс: learned words by lesson, quiz summary, continue learning CTA
+- Header: Review link; BottomNav: Review replaces Demo
+- Vocabulary learned button: “Review-д нэмэгдсэн ✓”
+
 ---
 
 ## Next recommended tasks

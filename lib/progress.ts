@@ -226,6 +226,28 @@ export function getTotalLearnedWords(): number {
   );
 }
 
+export type LearnedWordEntry = {
+  lessonId: string;
+  wordKey: string;
+};
+
+export function getAllLearnedWords(): LearnedWordEntry[] {
+  const store = readStore();
+  const entries: LearnedWordEntry[] = [];
+
+  for (const [lessonId, wordKeys] of Object.entries(store.vocabulary)) {
+    for (const wordKey of wordKeys) {
+      entries.push({ lessonId, wordKey });
+    }
+  }
+
+  return entries.sort((a, b) => {
+    const lessonOrder = Number(a.lessonId) - Number(b.lessonId);
+    if (lessonOrder !== 0) return lessonOrder;
+    return a.wordKey.localeCompare(b.wordKey);
+  });
+}
+
 export function getLastActiveLessonId(): string | null {
   const store = readStore();
   return store.lastActiveLessonId ?? null;

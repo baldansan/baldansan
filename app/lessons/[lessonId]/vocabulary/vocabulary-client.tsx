@@ -219,7 +219,7 @@ export function LessonVocabularyClient({ lesson }: Props) {
                         : "mt-4 w-full rounded-full border-2 border-emerald-500 bg-white px-4 py-2.5 text-sm font-semibold text-emerald-700 transition-colors hover:bg-emerald-50"
                     }
                   >
-                    {isLearned ? "Learned ✓" : "Mark as learned"}
+                    {isLearned ? "Review-д нэмэгдсэн ✓" : "Mark as learned"}
                   </button>
                 </article>
               );
