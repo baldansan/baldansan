@@ -1,0 +1,42 @@
+# Supabase RLS policies — Buunduu Surtsgaay
+
+This folder holds **planned** Row Level Security (RLS) SQL for Phase 4. It is separate from `migrations/` so schema (Step 1) can stay stable while auth policies are reviewed.
+
+## Files
+
+| File | Purpose |
+|------|---------|
+| [001_auth_rls_policies.sql](./001_auth_rls_policies.sql) | Enable RLS + policies for content (public read) and progress (user-private) |
+
+## What policies do
+
+- **Content tables** (`courses`, `lessons`, `subtitle_lines`, `vocabulary_words`, `quiz_questions`): anyone with the anon key can **read** lesson data. No client writes.
+- **Progress tables** (`user_lesson_progress`, `user_vocabulary_progress`, `user_quiz_attempts`): only **signed-in** users can read/write rows where `user_id = auth.uid()`.
+
+Without RLS, a leaked anon key could let clients read or write any user's progress. RLS enforces privacy at the database layer.
+
+## When to run
+
+**Do not run `001_auth_rls_policies.sql` until:**
+
+1. Supabase Auth is configured on the project.
+2. Phase 4 Step 2 (auth helpers + login/signup UI) is ready to test.
+3. You understand that enabling RLS on content tables **without** the public `SELECT` policies will break the app's read-only Supabase content fetches.
+
+### How to apply later
+
+1. Open Supabase Dashboard → **SQL Editor**.
+2. Paste and review [001_auth_rls_policies.sql](./001_auth_rls_policies.sql).
+3. Run in a staging project first.
+4. Verify with the checklist at the bottom of the SQL file.
+
+## Current app behavior (unchanged in Step 1)
+
+- Lesson content: Supabase-first read via anon key + [lib/supabase/content.ts](../../lib/supabase/content.ts).
+- Progress: **localStorage** only via [lib/progress.ts](../../lib/progress.ts) — not written to Supabase yet.
+
+## Related docs
+
+- [AUTH_PLAN.md](../../AUTH_PLAN.md) — full Phase 4 roadmap
+- [DATABASE_SCHEMA.md](../../DATABASE_SCHEMA.md) — tables and Auth/RLS section
+- [supabase/README.md](../README.md) — migrations and seeds

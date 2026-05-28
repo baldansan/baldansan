@@ -101,14 +101,21 @@ Without Supabase, lessons **1–3** load from `content/` files. Lesson **4** nee
 2. Register local lessons in `content/courses/hsk5/lessons/index.ts`
 3. See [CONTENT_AUTHORING_GUIDE.md](./CONTENT_AUTHORING_GUIDE.md)
 
+## Auth roadmap (Phase 4)
+
+Planning is complete for Supabase Auth and Row Level Security. The app still uses **localStorage** for progress; do not run RLS SQL until auth UI is ready.
+
+- [AUTH_PLAN.md](./AUTH_PLAN.md) — login flow, localStorage migration, Steps 1–7
+- [supabase/policies/README.md](./supabase/policies/README.md) — planned RLS policies
+- [supabase/policies/001_auth_rls_policies.sql](./supabase/policies/001_auth_rls_policies.sql) — review before applying in Supabase
+
+**Next:** Phase 4 Step 2 — auth helpers + login/signup UI.
+
 ## Documentation
 
 - [PROJECT_CHECKPOINT.md](./PROJECT_CHECKPOINT.md) — status & Phase 3 audit
-- [DEVELOPMENT_PLAN.md](./DEVELOPMENT_PLAN.md) — roadmap (Phase 4: Auth + Supabase progress)
-- [DATABASE_SCHEMA.md](./DATABASE_SCHEMA.md) — schema
+- [DEVELOPMENT_PLAN.md](./DEVELOPMENT_PLAN.md) — roadmap (Phase 4 in progress)
+- [DATABASE_SCHEMA.md](./DATABASE_SCHEMA.md) — schema + Auth/RLS plan
+- [AUTH_PLAN.md](./AUTH_PLAN.md) — Phase 4 auth details
 - [CONTENT_AUTHORING_GUIDE.md](./CONTENT_AUTHORING_GUIDE.md) — content workflow
 - [supabase/README.md](./supabase/README.md) — migrations & seeds
-
-## Next phase
-
-**Phase 4:** Supabase Auth and migrate localStorage progress to `user_progress` tables so progress syncs across devices for signed-in users.

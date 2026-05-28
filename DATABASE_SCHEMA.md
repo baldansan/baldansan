@@ -167,18 +167,57 @@ These tables are empty until authentication exists. `user_id` is `uuid` without 
 
 ---
 
-## Security (deferred)
+## Security (migration 001)
 
-Row Level Security is **not** enabled in Step 1. Comments in the migration note that **Phase 4** will:
+Row Level Security is **not** enabled in [001_initial_schema.sql](./supabase/migrations/001_initial_schema.sql). Policies are planned separately in [supabase/policies/001_auth_rls_policies.sql](./supabase/policies/001_auth_rls_policies.sql).
 
-- Enable RLS on content and progress tables
-- Restrict progress rows to `auth.uid() = user_id`
-- Define public read policies for published courses/lessons
+---
+
+## Phase 4 Auth and RLS plan
+
+**Goal:** Signed-in users persist progress in Supabase; lesson content stays publicly readable.
+
+### Content tables — public read-only
+
+| Table | Client access |
+|-------|----------------|
+| `courses` | `SELECT` for `anon` and `authenticated` |
+| `lessons` | `SELECT` for everyone |
+| `subtitle_lines` | `SELECT` for everyone |
+| `vocabulary_words` | `SELECT` for everyone |
+| `quiz_questions` | `SELECT` for everyone |
+
+No `INSERT` / `UPDATE` / `DELETE` policies for clients. Content changes stay in SQL seeds / admin tools.
+
+The app continues to use the anon key for Supabase-first **read-only** content ([lib/supabase/content.ts](./lib/supabase/content.ts)).
+
+### Progress tables — private per `user_id`
+
+| Table | Policies (authenticated only) |
+|-------|-------------------------------|
+| `user_lesson_progress` | `SELECT` / `INSERT` / `UPDATE` / `DELETE` where `auth.uid() = user_id` |
+| `user_vocabulary_progress` | `SELECT` / `INSERT` / `UPDATE` / `DELETE` where `auth.uid() = user_id` |
+| `user_quiz_attempts` | `SELECT` / `INSERT` only (immutable attempt log) |
+
+`auth.uid()` comes from the Supabase JWT after login. RLS blocks reading or writing another user's rows even if `user_id` is guessed.
+
+### Schema follow-up (Step 2, not Step 1)
+
+- `user_id` is `uuid` today without FK to `auth.users(id)`.
+- Phase 4 Step 2 may add `references auth.users(id) on delete cascade` and `not null` after auth testing.
+
+### localStorage during Phase 4 rollout
+
+Until Steps 3–6 ship, [lib/progress.ts](./lib/progress.ts) remains the only progress store. Do not run RLS SQL until auth UI and writes are ready to test (see [supabase/policies/README.md](./supabase/policies/README.md)).
+
+Full narrative: [AUTH_PLAN.md](./AUTH_PLAN.md).
 
 ---
 
 ## Related docs
 
 - [supabase/README.md](./supabase/README.md) — how to run the migration
+- [supabase/policies/README.md](./supabase/policies/README.md) — RLS policy files
+- [AUTH_PLAN.md](./AUTH_PLAN.md) — Phase 4 auth roadmap
 - [supabase/SEED_PLAN.md](./supabase/SEED_PLAN.md) — seeding Lessons 1–3
 - [DEVELOPMENT_PLAN.md](./DEVELOPMENT_PLAN.md) — Phase 3–4 timeline

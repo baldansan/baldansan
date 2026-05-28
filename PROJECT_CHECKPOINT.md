@@ -18,7 +18,14 @@ Audited routes, navigation, Supabase-first helpers, localStorage progress, UI em
 | Progress | `lib/progress.ts` SSR-safe; vocabulary/quiz/lesson state on device |
 | UI | Green/white cards; empty states; lesson not found polished |
 
-**Recommended next:** Phase 4 — Supabase Auth + persist user progress in database.
+**Recommended next:** Phase 4 Step 2 — Auth helpers + login/signup UI.
+
+**Phase 4 Step 1: Auth and RLS policy planning completed.**
+
+- [AUTH_PLAN.md](./AUTH_PLAN.md) — Auth + migration roadmap (Steps 1–7)
+- [supabase/policies/001_auth_rls_policies.sql](./supabase/policies/001_auth_rls_policies.sql) — planned RLS (review before run)
+- [supabase/policies/README.md](./supabase/policies/README.md) — when/how to apply policies
+- [DATABASE_SCHEMA.md](./DATABASE_SCHEMA.md) — Phase 4 Auth and RLS section
 
 ---
 

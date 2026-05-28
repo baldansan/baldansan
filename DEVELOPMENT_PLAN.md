@@ -114,17 +114,35 @@ Phased roadmap from MVP demo to production product.
 
 ---
 
-## Phase 4: Authentication + Supabase user progress — **Next**
+## Phase 4: Authentication + Supabase user progress — **In progress**
 
-**Goal:** Personal accounts and real progress persisted in Supabase (`user_progress` tables).
+**Goal:** Personal accounts and real progress persisted in Supabase (`user_*` progress tables).
 
-**Tasks:**
-- Supabase Auth (email, OAuth, or phone as needed)
-- Migrate `lib/progress.ts` localStorage data to `user_progress` (and related) tables
-- Enable RLS policies; wire Profile (`/profile`) to authenticated user progress
-- Middleware or layout guards for member-only lessons (if applicable)
+**Phase 4 Step 1 — Completed:** Auth planning + RLS policy design.
+
+- [AUTH_PLAN.md](./AUTH_PLAN.md), [supabase/policies/001_auth_rls_policies.sql](./supabase/policies/001_auth_rls_policies.sql)
+- Public content: `SELECT` only; progress: `auth.uid() = user_id`
+- No auth UI, no progress writes, localStorage unchanged
+
+**Phase 4 roadmap:**
+
+| Step | Focus |
+|------|--------|
+| 1 ✅ | Auth planning + RLS policy design |
+| 2 | Auth helpers + login/signup UI — **Next** |
+| 3 | Persist lesson progress to Supabase |
+| 4 | Persist vocabulary learned state to Supabase |
+| 5 | Persist quiz attempts to Supabase |
+| 6 | Migrate / merge localStorage progress after login |
+| 7 | Phase 4 final audit |
 
 **Exit criteria:** Sign up, sign in, progress survives across devices and page refresh in Supabase.
+
+**Tasks (remaining):**
+- Supabase Auth (email, OAuth, or phone as needed)
+- Apply RLS when auth + writes are ready
+- Migrate `lib/progress.ts` localStorage data to progress tables
+- Wire Profile (`/profile`) to authenticated user progress
 
 ---
 

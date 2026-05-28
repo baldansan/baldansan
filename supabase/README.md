@@ -7,6 +7,8 @@ This directory holds **database schema and migration SQL** for Buunduu Surtsgaay
 | Path | Purpose |
 |------|---------|
 | `migrations/001_initial_schema.sql` | Initial PostgreSQL tables, indexes, and `updated_at` triggers |
+| `policies/001_auth_rls_policies.sql` | **Planned** RLS for Phase 4 — review before running |
+| `policies/README.md` | When to apply auth policies |
 | `SEED_PLAN.md` | How local TypeScript content maps to rows (for a future seed step) |
 
 ## App status
@@ -34,8 +36,9 @@ Optional: store the same file in Supabase **Migrations** if you use `supabase db
 ## Documentation
 
 - [DATABASE_SCHEMA.md](../DATABASE_SCHEMA.md) — table purposes and relationships
+- [AUTH_PLAN.md](../AUTH_PLAN.md) — Phase 4 auth and progress roadmap
 - [SEED_PLAN.md](./SEED_PLAN.md) — seeding Lessons 1–3 from local content
-- [DEVELOPMENT_PLAN.md](../DEVELOPMENT_PLAN.md) — full Phase 3 roadmap
+- [DEVELOPMENT_PLAN.md](../DEVELOPMENT_PLAN.md) — full roadmap
 
 ## Next steps (after Step 1)
 
