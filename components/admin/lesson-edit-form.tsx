@@ -1,41 +1,72 @@
 "use client";
 
 import Link from "next/link";
+import { useCallback, useEffect, useState } from "react";
 import { lessonPath } from "@/lib/content";
-import { analyzeLessonQa } from "@/lib/admin/lesson-qa";
+import { analyzeLessonQaFromCounts } from "@/lib/admin/lesson-qa";
 import { LessonQaBadge } from "@/components/admin/lesson-qa-badge";
+import { SubtitleEditor } from "@/components/admin/subtitle-editor";
+import { VocabularyEditor } from "@/components/admin/vocabulary-editor";
+import { QuizEditor } from "@/components/admin/quiz-editor";
 import {
   lessonToFormValues,
   LessonFormFields,
 } from "@/components/admin/lesson-form-fields";
+import { getLessonMetadataCounts } from "@/lib/supabase/admin-content";
 import type { LessonContent } from "@/types/lesson-content";
 
 type Props = {
   lesson: LessonContent;
 };
 
-function PreviewSection({
-  title,
-  children,
-}: {
-  title: string;
-  children: React.ReactNode;
-}) {
-  return (
-    <section className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:p-6">
-      <h2 className="text-base font-semibold text-slate-900">{title}</h2>
-      <div className="mt-3">{children}</div>
-    </section>
-  );
-}
-
 export function LessonEditForm({ lesson }: Props) {
   const values = lessonToFormValues(lesson);
-  const qa = analyzeLessonQa(lesson);
+  const [subtitleCount, setSubtitleCount] = useState(
+    lesson.timedSubtitles.length
+  );
+  const [vocabActual, setVocabActual] = useState(lesson.vocabulary.length);
+  const [vocabMeta, setVocabMeta] = useState(lesson.vocabularyCount);
+  const [quizActual, setQuizActual] = useState(lesson.quizQuestions.length);
+  const [quizMeta, setQuizMeta] = useState(lesson.quizCount);
 
-  const previewSubtitles = lesson.timedSubtitles.slice(0, 3);
-  const previewVocabulary = lesson.vocabulary.slice(0, 5);
-  const previewQuiz = lesson.quizQuestions.slice(0, 3);
+  const refreshMetaCounts = useCallback(async () => {
+    const result = await getLessonMetadataCounts(lesson.id);
+    if (result.data) {
+      setVocabActual(result.data.vocabularyCount);
+      setVocabMeta(result.data.metaVocabulary);
+      setQuizActual(result.data.quizCount);
+      setQuizMeta(result.data.metaQuiz);
+    }
+  }, [lesson.id]);
+
+  useEffect(() => {
+    refreshMetaCounts();
+  }, [refreshMetaCounts]);
+
+  const qa = analyzeLessonQaFromCounts(lesson, {
+    subtitleCount,
+    vocabularyActual: vocabActual,
+    quizActual: quizActual,
+    vocabularyMeta: vocabMeta,
+    quizMeta: quizMeta,
+  });
+
+  const vocabMismatch = vocabActual !== vocabMeta;
+  const quizMismatch = quizActual !== quizMeta;
+
+  const handleVocabCounts = useCallback(
+    (_actual: number, _meta: number) => {
+      refreshMetaCounts();
+    },
+    [refreshMetaCounts]
+  );
+
+  const handleQuizCounts = useCallback(
+    (_actual: number, _meta: number) => {
+      refreshMetaCounts();
+    },
+    [refreshMetaCounts]
+  );
 
   return (
     <div className="flex flex-col gap-6">
@@ -44,7 +75,8 @@ export function LessonEditForm({ lesson }: Props) {
           Хичээл засах · {lesson.id}
         </h1>
         <p className="mt-2 text-sm text-slate-600">
-          Унших горим — контент preview. Хадгалах идэвхгүй.
+          Metadata preview + subtitle / vocabulary / quiz editors. Lesson metadata
+          update still coming soon.
         </p>
         <div className="mt-3 flex flex-wrap items-center gap-2">
           <LessonQaBadge status={qa.qaStatus} />
@@ -56,88 +88,53 @@ export function LessonEditForm({ lesson }: Props) {
         </div>
       </div>
 
-      <PreviewSection title="Metadata preview">
-        <LessonFormFields values={values} readOnly />
-      </PreviewSection>
-
-      <PreviewSection
-        title={`Subtitle lines (${qa.subtitleCount} total)`}
-      >
-        {previewSubtitles.length === 0 ? (
-          <p className="text-sm text-amber-800">No subtitles yet</p>
-        ) : (
-          <ul className="space-y-2 text-sm text-slate-700">
-            {previewSubtitles.map((line, i) => (
-              <li
-                key={`${line.start}-${i}`}
-                className="rounded-lg bg-slate-50 px-3 py-2 ring-1 ring-slate-100"
-              >
-                <span className="font-mono text-xs text-slate-500">
-                  {line.start} – {line.end}
-                </span>
-                <p className="mt-1">{line.chinese}</p>
-                <p className="text-xs text-slate-500">{line.mongolian}</p>
-              </li>
-            ))}
-          </ul>
-        )}
-        {qa.subtitleCount > 3 ? (
-          <p className="mt-2 text-xs text-slate-500">
-            + {qa.subtitleCount - 3} more lines
-          </p>
+      <div className="flex flex-wrap gap-2 text-sm">
+        <span className="rounded-full bg-slate-100 px-3 py-1 ring-1 ring-slate-200">
+          Subtitles: {subtitleCount}
+        </span>
+        <span
+          className={`rounded-full px-3 py-1 ring-1 ${
+            vocabMismatch
+              ? "bg-amber-50 text-amber-900 ring-amber-200"
+              : "bg-emerald-50 text-emerald-800 ring-emerald-200"
+          }`}
+        >
+          Vocabulary: {vocabActual} / meta {vocabMeta}
+          {vocabMismatch ? " · Count mismatch" : ""}
+        </span>
+        <span
+          className={`rounded-full px-3 py-1 ring-1 ${
+            quizMismatch
+              ? "bg-amber-50 text-amber-900 ring-amber-200"
+              : "bg-emerald-50 text-emerald-800 ring-emerald-200"
+          }`}
+        >
+          Quiz: {quizActual} / meta {quizMeta}
+          {quizMismatch ? " · Count mismatch" : ""}
+        </span>
+        {!vocabMismatch && !quizMismatch && vocabActual > 0 && quizActual > 0 ? (
+          <span className="text-xs text-slate-500">Counts synced after save</span>
         ) : null}
-      </PreviewSection>
+      </div>
 
-      <PreviewSection
-        title={`Vocabulary (${qa.vocabularyActual} / meta ${lesson.vocabularyCount})`}
-      >
-        {previewVocabulary.length === 0 ? (
-          <p className="text-sm text-amber-800">No vocabulary yet</p>
-        ) : (
-          <ul className="space-y-1 text-sm text-slate-700">
-            {previewVocabulary.map((word, i) => (
-              <li key={`${word.chinese}-${i}`}>
-                <span className="font-medium">{word.chinese}</span>
-                {word.pinyin ? (
-                  <span className="text-slate-500"> · {word.pinyin}</span>
-                ) : null}
-                {word.hskLevel ? (
-                  <span className="ml-1 text-xs text-emerald-700">
-                    {word.hskLevel}
-                  </span>
-                ) : null}
-              </li>
-            ))}
-          </ul>
-        )}
-        {qa.vocabularyActual > 5 ? (
-          <p className="mt-2 text-xs text-slate-500">
-            + {qa.vocabularyActual - 5} more words
-          </p>
-        ) : null}
-      </PreviewSection>
+      <section className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:p-6">
+        <h2 className="text-base font-semibold text-slate-900">Metadata preview</h2>
+        <div className="mt-3">
+          <LessonFormFields values={values} readOnly />
+        </div>
+      </section>
 
-      <PreviewSection
-        title={`Quiz (${qa.quizActual} / meta ${lesson.quizCount})`}
-      >
-        {previewQuiz.length === 0 ? (
-          <p className="text-sm text-amber-800">No quiz questions yet</p>
-        ) : (
-          <ol className="list-decimal space-y-2 pl-5 text-sm text-slate-700">
-            {previewQuiz.map((q, i) => (
-              <li key={`quiz-${i}`}>
-                <p>{q.question}</p>
-                <p className="text-xs text-slate-500">{q.type}</p>
-              </li>
-            ))}
-          </ol>
-        )}
-        {qa.quizActual > 3 ? (
-          <p className="mt-2 text-xs text-slate-500">
-            + {qa.quizActual - 3} more questions
-          </p>
-        ) : null}
-      </PreviewSection>
+      <SubtitleEditor
+        lessonId={lesson.id}
+        onSubtitleCountChange={setSubtitleCount}
+      />
+
+      <VocabularyEditor
+        lessonId={lesson.id}
+        onCountsUpdated={handleVocabCounts}
+      />
+
+      <QuizEditor lessonId={lesson.id} onCountsUpdated={handleQuizCounts} />
 
       <section className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:p-6">
         <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">

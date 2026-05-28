@@ -2,7 +2,20 @@
 
 **Project:** Buunduu Surtsgaay (Бөөндөө Сурцгаая)  
 **Checkpoint date:** May 2026  
-**Status:** Phase 4 **completed**; Phase 5 Step 4 **completed** — draft lesson create
+**Status:** Phase 4 **completed**; Phase 5 content editors **completed**
+
+---
+
+## Phase 5 Big Batch — Subtitle / vocabulary / quiz editors — **Completed**
+
+Admins add child content on `/admin/lessons/[lessonId]/edit` via Supabase (admin RLS). `refreshLessonCounts` syncs vocab/quiz metadata.
+
+| Area | Deliverable |
+|------|-------------|
+| API | [lib/supabase/admin-content.ts](./lib/supabase/admin-content.ts) — CRUD + count refresh |
+| UI | `subtitle-editor`, `vocabulary-editor`, `quiz-editor` |
+
+**Next:** Phase 5 Step 8 — Publish/unpublish workflow.
 
 ---
 

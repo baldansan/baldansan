@@ -19,9 +19,21 @@ QA badge **Complete** means all checks pass. **Needs review** lists warnings (e.
 
 ### Create draft metadata (Step 4)
 
-Admins can create draft lesson metadata from **`/admin/lessons/new`** → **Save draft** → row in `lessons` with `vocabulary_count` / `quiz_count` = 0, default `status = draft`. Redirects to `/admin/lessons/{id}/edit` for preview.
+Admins can create draft lesson metadata from **`/admin/lessons/new`** → **Save draft** → row in `lessons` with `vocabulary_count` / `quiz_count` = 0, default `status = draft`. Redirects to `/admin/lessons/{id}/edit`.
 
-**Next:** subtitle, vocabulary, and quiz editors (Steps 5–7). Requires admin content **INSERT** policies on `lessons` (see [supabase/policies/002_admin_content_policies.sql](./supabase/policies/002_admin_content_policies.sql) or run lesson policies from SQL Editor).
+### Add content on edit page (Steps 5–7)
+
+On **`/admin/lessons/{id}/edit`**:
+
+1. **Subtitle editor** — add/delete `subtitle_lines` (start/end, chinese, pinyin, mongolian, order)
+2. **Vocabulary editor** — add/delete `vocabulary_words` (HSK level, examples); updates `lessons.vocabulary_count`
+3. **Quiz editor** — add/delete `quiz_questions` (options one per line); updates `lessons.quiz_count`
+4. Use **Content QA** (`/admin/lessons`) to verify completeness before publish
+5. **Preview** public routes: `/lessons/{id}`, `/watch`, `/vocabulary`, `/quiz`
+
+**Publish** (set `status = available`) — Step 8, not automated in UI yet.
+
+Requires admin **INSERT/DELETE** policies on child tables ([002_admin_content_policies.sql](./supabase/policies/002_admin_content_policies.sql)).
 
 ---
 

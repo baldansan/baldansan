@@ -5,7 +5,8 @@ Admin content management: plan, UI foundation, and future Supabase writes with R
 **Phase 5 Step 1 — Completed:** Admin foundation (UI shell, read-only forms).  
 **Phase 5 Step 2 — Completed:** `admin_profiles` + `AdminGuard`.  
 **Phase 5 Step 3 — Completed:** Lesson Management QA dashboard + edit previews.  
-**Phase 5 Step 4 — Completed:** Draft lesson metadata create (`/admin/lessons/new` → Supabase `lessons`). Subtitle/vocab/quiz writes not yet.
+**Phase 5 Step 4 — Completed:** Draft lesson metadata create.  
+**Big batch — Completed:** Subtitle, vocabulary, and quiz editors on `/admin/lessons/[id]/edit` (admin RLS writes).
 
 ---
 
@@ -24,7 +25,7 @@ Lesson content is **seeded by SQL** and **read from Supabase** (with local fallb
 | Content source | `supabase/seed/*.sql` + optional `content/courses/hsk5/lessons/*.ts` |
 | Learner app | Supabase-first read via [lib/content.ts](./lib/content.ts) |
 | Progress | Phase 4 — auth + `user_*` tables + localStorage |
-| Admin UI | `/admin` shell, lesson list (read), form skeletons (no write) |
+| Admin UI | QA dashboard, draft create, subtitle/vocab/quiz editors on edit page |
 | Admin role | `admin_profiles` + `AdminGuard`; header Admin link for admins only |
 
 ---
@@ -47,11 +48,11 @@ Lesson content is **seeded by SQL** and **read from Supabase** (with local fallb
 |---------|-------|--------|
 | Dashboard | `/admin` | Shell + cards |
 | Lesson list | `/admin/lessons` | Read from `getLessonsByCourseId("hsk5")` |
-| New lesson | `/admin/lessons/new` | Form skeleton, save disabled |
-| Edit lesson | `/admin/lessons/[id]/edit` | Load lesson, save disabled |
-| Subtitles | TBD | Step 5 |
-| Vocabulary | TBD | Step 6 |
-| Quiz | TBD | Step 7 |
+| New lesson | `/admin/lessons/new` | Save draft → `lessons` |
+| Edit lesson | `/admin/lessons/[id]/edit` | Metadata preview + child editors |
+| Subtitles | Edit page | Add/delete `subtitle_lines` |
+| Vocabulary | Edit page | Add/delete `vocabulary_words` + count sync |
+| Quiz | Edit page | Add/delete `quiz_questions` + count sync |
 
 Logged-out users see login prompt. Logged-in non-admins see access denied. Admins see full admin UI.
 
@@ -92,10 +93,10 @@ See [CONTENT_WORKFLOW.md](./CONTENT_WORKFLOW.md):
 | 2 | Admin role table + manual admin setup + protected `/admin` | ✅ Completed |
 | 3 | Admin lesson list + content QA dashboard | ✅ Completed |
 | 4 | Lesson create draft write | ✅ Completed |
-| 5 | Subtitle editor | Next |
-| 6 | Vocabulary editor | Planned |
-| 7 | Quiz editor | Planned |
-| 8 | Publish/unpublish workflow | Planned |
+| 5 | Subtitle editor | ✅ Completed |
+| 6 | Vocabulary editor | ✅ Completed |
+| 7 | Quiz editor | ✅ Completed |
+| 8 | Publish/unpublish workflow | Next |
 | 9 | Phase 5 final audit | Planned |
 
 Step 3: [lib/admin/lesson-qa.ts](./lib/admin/lesson-qa.ts), `/admin/lessons` QA dashboard.

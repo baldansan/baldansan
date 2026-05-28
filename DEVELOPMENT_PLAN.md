@@ -194,9 +194,11 @@ Phased roadmap from MVP demo to production product.
 
 **Phase 5 Step 4 — Completed:** Admin draft lesson creation.
 
-- [lib/supabase/admin-content.ts](./lib/supabase/admin-content.ts) — `createDraftLesson`, `getNextLessonOrderIndex`
-- `/admin/lessons/new` — working Save draft → Supabase `lessons` insert (admin + RLS)
-- No subtitle / vocabulary / quiz writes yet
+**Phase 5 Steps 5–7 — Completed (big batch):** Subtitle, vocabulary, quiz editors.
+
+- [lib/supabase/admin-content.ts](./lib/supabase/admin-content.ts) — child table CRUD + `refreshLessonCounts`
+- [components/admin/subtitle-editor.tsx](./components/admin/subtitle-editor.tsx), [vocabulary-editor.tsx](./components/admin/vocabulary-editor.tsx), [quiz-editor.tsx](./components/admin/quiz-editor.tsx)
+- `/admin/lessons/[id]/edit` — full content editing (metadata update still later)
 
 **Phase 5 roadmap:**
 
@@ -206,11 +208,10 @@ Phased roadmap from MVP demo to production product.
 | 2 | Admin role table + manual admin setup + protected admin access | ✅ Completed |
 | 3 | Admin lesson list + content QA dashboard | ✅ Completed |
 | 4 | Lesson create draft write | ✅ Completed |
-| 5 | Subtitle editor | Next |
-| 5 | Subtitle editor | Planned |
-| 6 | Vocabulary editor | Planned |
-| 7 | Quiz editor | Planned |
-| 8 | Publish/unpublish workflow | Planned |
+| 5 | Subtitle editor | ✅ Completed |
+| 6 | Vocabulary editor | ✅ Completed |
+| 7 | Quiz editor | ✅ Completed |
+| 8 | Publish/unpublish workflow | Next |
 | 9 | Phase 5 final audit | Planned |
 
 **Exit criteria:** New lesson published through admin UI without deploying code.

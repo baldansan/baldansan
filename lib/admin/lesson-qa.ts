@@ -36,6 +36,70 @@ function hasLessonMetadata(lesson: LessonContent): boolean {
   );
 }
 
+export function analyzeLessonQaFromCounts(
+  lesson: LessonContent,
+  counts: {
+    subtitleCount: number;
+    vocabularyActual: number;
+    quizActual: number;
+    vocabularyMeta?: number;
+    quizMeta?: number;
+  }
+): LessonQaReport {
+  const snapshot: LessonContent = {
+    ...lesson,
+    vocabularyCount: counts.vocabularyMeta ?? lesson.vocabularyCount,
+    quizCount: counts.quizMeta ?? lesson.quizCount,
+    timedSubtitles:
+      counts.subtitleCount > 0
+        ? [
+            {
+              start: "00:00:00",
+              end: "00:00:01",
+              chinese: "—",
+              pinyin: "",
+              mongolian: "—",
+            },
+          ]
+        : [],
+    vocabulary:
+      counts.vocabularyActual > 0
+        ? [
+            {
+              id: "qa",
+              chinese: "—",
+              pinyin: "",
+              mongolian: "—",
+              hskLevel: "HSK5",
+              exampleChinese: "",
+              exampleMongolian: "",
+            },
+          ]
+        : [],
+    quizQuestions:
+      counts.quizActual > 0
+        ? [
+            {
+              id: "qa",
+              type: "multiple_choice",
+              question: "—",
+              options: ["—"],
+              correctAnswer: "—",
+              explanation: "",
+            },
+          ]
+        : [],
+  };
+
+  const report = analyzeLessonQa(snapshot);
+  return {
+    ...report,
+    subtitleCount: counts.subtitleCount,
+    vocabularyActual: counts.vocabularyActual,
+    quizActual: counts.quizActual,
+  };
+}
+
 export function analyzeLessonQa(lesson: LessonContent): LessonQaReport {
   const subtitleCount = lesson.timedSubtitles?.length ?? 0;
   const vocabularyActual = lesson.vocabulary?.length ?? 0;

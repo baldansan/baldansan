@@ -135,9 +135,9 @@ Helpers: [lib/supabase/auth.ts](./lib/supabase/auth.ts). Header shows **Нэвт
 
 **Routes:** `/admin` · `/admin/lessons` · `/admin/lessons/new` · `/admin/lessons/1/edit` (example)
 
-**Draft create:** `/admin/lessons/new` saves lesson metadata to Supabase (requires admin RLS on `lessons`).
+**Admin editors:** `/admin/lessons/new` (draft metadata) · `/admin/lessons/{id}/edit` (subtitle, vocabulary, quiz CRUD).
 
-**Next step:** Phase 5 Step 5 — Subtitle editor.
+**Next step:** Phase 5 Step 8 — Publish/unpublish workflow.
 
 ## Documentation
 
