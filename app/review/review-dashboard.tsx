@@ -11,7 +11,6 @@ import {
   getAllLearnedWords,
   getAllQuizResults,
   getLastActiveLessonId,
-  getTotalLearnedWords,
   vocabularyWordKey,
   type LearnedWordEntry,
   type QuizResultEntry,
@@ -103,8 +102,6 @@ export function ReviewDashboard({ lessons }: Props) {
     return () => window.removeEventListener("focus", refresh);
   }, []);
 
-  const totalLearned = getTotalLearnedWords();
-
   if (!ready) {
     return (
       <div className="min-h-screen bg-gradient-to-b from-emerald-50/40 via-white to-white text-slate-900">
@@ -136,7 +133,9 @@ export function ReviewDashboard({ lessons }: Props) {
 
         <section className="grid grid-cols-2 gap-3 sm:grid-cols-2">
           <div className="rounded-2xl bg-white p-4 text-center shadow-sm ring-1 ring-emerald-200">
-            <p className="text-2xl font-bold text-emerald-700">{totalLearned}</p>
+            <p className="text-2xl font-bold text-emerald-700">
+              {learnedEntries.length}
+            </p>
             <p className="mt-1 text-xs font-medium text-slate-600">
               Learned vocabulary
             </p>

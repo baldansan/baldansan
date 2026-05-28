@@ -1,200 +1,102 @@
-# Project Checkpoint — MVP v1 + Phase 2
+# Project Checkpoint — Buunduu Surtsgaay
 
-**Project:** Buunduu Surtsgaay  
+**Project:** Buunduu Surtsgaay (Бөөндөө Сурцгаая)  
 **Checkpoint date:** May 2026  
-**Status:** MVP demo complete; Phase 2 closed; Phase 3 Step 5 (Supabase-first) complete
+**Status:** Phase 3 **completed** — Supabase-first content, local fallback, device-local progress UX
 
 ---
 
-## MVP v1 status
+## Phase 3 Final Audit — **Completed**
 
-The web app demonstrates a complete learner journey for **Lesson 1 (爱的细节)** inside the **HSK5 Short Drama Chinese** course. All primary routes build successfully and link to each other. State is held in React client components only—nothing is persisted to a server or database.
+Audited routes, navigation, Supabase-first helpers, localStorage progress, UI empty states, and documentation. Build passes; `.env.local` gitignored.
 
----
+| Area | Result |
+|------|--------|
+| Routes | `/` through `/review`, lessons 1–4 + sub-routes; `/lessons/999` → not found |
+| Navigation | `AppHeader` + `BottomNav`; Profile/Review links; lesson path, next lesson, continue flow |
+| Supabase | `lib/content.ts` Supabase-first + fallback; no debug logs; keys only via env |
+| Progress | `lib/progress.ts` SSR-safe; vocabulary/quiz/lesson state on device |
+| UI | Green/white cards; empty states; lesson not found polished |
 
-## Phase 2 status — **Completed**
-
-Lesson pages are **data-driven** via dynamic segments. Content lives under `content/courses/hsk5/lessons/` with helpers in `lib/content.ts`. Adding a lesson means a new content file (e.g. `lesson-4.ts`) and registering it in `content/courses/hsk5/lessons/index.ts`—no new page folders.
-
-**Phase 2 Step 2:** Lesson 2 content pipeline validated with available Lesson 2 data.
-
-**Phase 2 Step 3:** Lesson import templates and content authoring guide completed (`templates/`, `CONTENT_AUTHORING_GUIDE.md`).
-
-**Phase 2 Step 4:** Lesson 3 added using the import template (6 subtitles, 12 vocabulary, 5 quiz; status available).
-
-**Phase 2 Final Audit completed:** dynamic lesson structure verified for Lessons 1–3, HSK3/4/5 vocabulary filtering supported, templates aligned with current data model. Lesson 1 counts corrected to match arrays (5 vocabulary, 5 quiz).
-
-| Lesson | vocabularyCount | quizCount | status |
-|--------|-----------------|-----------|--------|
-| 1 | 5 | 5 | available |
-| 2 | 12 | 5 | available |
-| 3 | 12 | 5 | available |
+**Recommended next:** Phase 4 — Supabase Auth + persist user progress in database.
 
 ---
 
-## Completed pages
+## Current routes
 
-| Route | File | Server / Client |
-|-------|------|-----------------|
-| `/` | `app/page.tsx` | Server |
-| `/courses` | `app/courses/page.tsx` | Server |
-| `/courses/hsk5` | `app/courses/hsk5/page.tsx` | Server |
-| `/lessons/[lessonId]` | `app/lessons/[lessonId]/page.tsx` | Server |
-| `/lessons/[lessonId]/watch` | `app/lessons/[lessonId]/watch/page.tsx` | Client |
-| `/lessons/[lessonId]/vocabulary` | `app/lessons/[lessonId]/vocabulary/page.tsx` | Client |
-| `/lessons/[lessonId]/quiz` | `app/lessons/[lessonId]/quiz/page.tsx` | Client |
-| Invalid lesson | `app/lessons/[lessonId]/not-found.tsx` | Server |
+| Route | Description |
+|-------|-------------|
+| `/` | Landing + continue learning |
+| `/courses` | Course catalog |
+| `/courses/hsk5` | HSK5 course (dynamic lesson list, local progress) |
+| `/lessons/[lessonId]` | Lesson detail |
+| `/lessons/[lessonId]/watch` | Watch + subtitles |
+| `/lessons/[lessonId]/vocabulary` | Vocabulary (HSK1–HSK5 filters) |
+| `/lessons/[lessonId]/quiz` | Quiz + results |
+| `/profile` | Learning dashboard (localStorage) |
+| `/review` | Daily review (learned words + quiz summary) |
+| `/lessons/999` (invalid) | Lesson not found UI |
 
-**Static params:** lessons `1`, `2`, `3` pre-rendered at build time.
-
----
-
-## Completed features
-
-(Unchanged UX from MVP v1; data layer refactored.)
-
-### Content & helpers
-- `LessonContent` model: subtitles, vocabulary, quiz, metadata, status
-- `getLessonById`, `getLessonsByCourseId`, `getCourseById`, `getCourseContentById`
-- Path helpers: `lessonPath`, `lessonWatchPath`, etc.
-
-### Lessons
-- **Lesson 1** — full content (same as MVP)
-- **Lesson 2** — full available content (你真的懂我吗？)
-- **Lesson 3** — full available content (我只是想照顾你)
-
-### Navigation
-- All `/lessons/1/*` URLs still work via `[lessonId]`
-- Course detail reads lesson list from shared content
+Lessons **1–3** have local content files; **Lesson 4** is Supabase-seeded when env is configured (`002_seed_hsk5_lesson_4.sql`). All use the same dynamic routes.
 
 ---
 
-## Mock data files
+## Phase 3 delivered (summary)
 
-| File | Contents |
-|------|----------|
-| `data/courses.ts` | Course catalog (HSK4, HSK5, Taobao) |
-| `content/courses/hsk5/index.ts` | HSK5 course detail (stats, progress) |
-| `content/courses/hsk5/lessons/lesson-1.ts` | Full Lesson 1 content |
-| `content/courses/hsk5/lessons/lesson-2.ts` | Placeholder Lesson 2 |
-| `content/courses/hsk5/lessons/lesson-3.ts` | Placeholder Lesson 3 |
-| `content/courses/hsk5/lessons/index.ts` | Lesson registry |
-| `lib/content.ts` | Data access helpers |
+### Database & content
+- Schema: `supabase/migrations/001_initial_schema.sql`
+- Seeds: Lessons 1–3 (`001`), Lesson 4 (`002`)
+- Supabase-first read in `lib/content.ts` with local fallback
+- `force-dynamic` on course/lesson pages when using Supabase
 
-## Type definitions
+### Learning UX
+- Lesson path, HSK5 search, quiz next-lesson, tiered result messages
+- Mongolian branding; shared `AppHeader` / `BottomNav`
+- `lib/progress.ts`: lesson status, learned vocabulary, quiz results (localStorage)
+- Continue flow on Home, Courses, HSK5 detail
+- `/profile` dashboard; `/review` learned-words page
 
-| File | Types |
-|------|-------|
-| `types/course.ts` | `Course`, `CourseStatus` |
-| `types/lesson.ts` | Subtitle, vocabulary, quiz UI types |
-| `types/lesson-content.ts` | `LessonContent`, `CourseContent` |
+### Lessons (content availability)
 
-**Removed:** `data/lessons.ts`, `app/lessons/1/**` (replaced by dynamic routes).
+| Lesson | Local file | Supabase seed | status |
+|--------|------------|---------------|--------|
+| 1 | yes | yes | available |
+| 2 | yes | yes | available |
+| 3 | yes | yes | available |
+| 4 | no | yes (when seeded) | available |
 
 ---
 
-## Known limitations
+## Architecture (quick reference)
+
+```
+app/                    # App Router pages
+content/courses/hsk5/   # Local lesson 1–3
+lib/content.ts          # Supabase-first + fallback
+lib/progress.ts         # Device-local progress (Phase 4 → Supabase)
+lib/supabase/           # Client + read-only content
+components/             # AppHeader, BottomNav, empty states, progress UI
+```
+
+---
+
+## Known limitations (post–Phase 3)
 
 - **No real video** — placeholders only
-- **No database** — TypeScript content files
-- **No authentication** — Profile is `#`
-- **No persistence** — progress resets on refresh
-- **Course routes** — only `/courses/hsk5` is content-backed; catalog still in `data/courses.ts`
-- **Locked lessons** — disabled on course page; direct URL still works for dev
-- **Duplicated header** — per-page nav markup
+- **No Supabase progress writes** — progress is localStorage on this device only
+- **No authentication** — Phase 4
+- **Lesson 4** — requires Supabase seed (no `lesson-4.ts` local file)
+- **Course catalog** — `data/courses.ts` metadata; HSK5 detail from `getLessonsByCourseId`
+- **Fallback warning** — server console only when Supabase fetch fails (`[content]` warn)
 
 ---
 
-## Phase 3 — Supabase
+## Documentation index
 
-**Step 1:** Schema planning — `supabase/migrations/001_initial_schema.sql`, docs.
-
-**Step 3:** Seed SQL — `supabase/seed/001_seed_hsk5_lessons.sql` (Lessons 1–3).
-
-**Step 4 — Supabase read-only integration completed:**
-
-- `@supabase/supabase-js`, `lib/supabase/client.ts`, `lib/supabase/content.ts`
-- `lib/content.ts` async helpers: Supabase first, local fallback on missing env or errors
-- Lesson pages fetch on server; watch/vocabulary/quiz use server + client split
-- `.env.example` for `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_ANON_KEY`
-- No auth, no progress writes, no UI/route changes
-
-**Phase 3 Step 4 cleanup:** Temporary Supabase debug logs removed after successful read-only connection test.
-
-**Phase 3 Step 5 — Supabase-first production mode completed** with local fallback:
-
-- Unified Supabase-first helpers in `lib/content.ts` (`withSupabaseFallback`, `withSupabaseListFallback`)
-- `getContentSource()` / `getConfiguredContentMode()` for internal source detection (not shown in UI)
-- Lesson and HSK5 pages use `dynamic = "force-dynamic"` so DB edits appear on refresh
-- Minimal warning: `Supabase content fetch failed; using local fallback.`
-
-**Phase 3 Step 6 — Lesson 4 Supabase-first seed prepared:**
-
-- `supabase/seed/002_seed_hsk5_lesson_4.sql` — lesson 4 metadata, 5 subtitles, 10 vocabulary, 5 quiz
-- No local `lesson-4.ts`; Lesson 4 appears only after running seed with Supabase env configured
-- `verify_hsk5_seed.sql` updated for 4 lessons
-
-**Next Improvement Batch — UX polish and Supabase lesson flow:**
-
-Next Improvement Batch: course detail now renders Supabase lesson list including Lesson 4, vocabulary filters support HSK1–HSK5, and quiz results can link to the next lesson.
-
-- `/courses/hsk5` uses `getLessonsByCourseId("hsk5")` for all lessons; stats computed from lesson data
-- Lesson cards show title, subtitle, counts, status badge, Start/Locked
-- Vocabulary filters: All, HSK1–HSK5 (shown when present in lesson vocabulary)
-- Quiz result screen: “Next lesson” when another lesson exists in course order
-- Shared `AppHeader` for consistent nav (Brand `/`, Courses `/courses`, Demo `/lessons/1`, Profile `#`)
-
-**Learning UX polish batch completed:** lesson path, watch tips, vocabulary learned state, quiz result messages, course summary, and mobile nav.
-
-- Lesson detail: compact Lesson path card (Watch → Vocabulary → Quiz)
-- Watch: practice tip card; placeholder “Үг хадгалах” on subtitle cards (no DB write)
-- Vocabulary: prominent learned count, study tip, clear Mark as learned / Learned ✓ states
-- Quiz results: tiered messages at 90% / 70%; Next lesson button retained
-- HSK5 course: summary card from loaded lesson totals
-- `BottomNav` on main learning pages (mobile only)
-
-**Real app feel polish completed:** branding, empty states, lesson search, vocabulary result count, quiz progress bar.
-
-- Brand display: **Бөөндөө Сурцгаая** (primary) + Buunduu Surtsgaay (secondary) in header and home
-- Shared `EmptyState` for lesson not found, no lessons, no vocabulary, no quiz
-- HSK5 course: client-side lesson search by title, chineseTitle, subtitle, description
-- Vocabulary: “Showing X / Y words”, reset filters empty state
-- Quiz: question progress bar; empty quiz state
-- Lesson not found: HSK5 + Courses back buttons
-
-**Local user progress persistence added** with localStorage for lessons, vocabulary, and quiz results.
-
-- `lib/progress.ts` — lesson status, learned words, quiz results (device-only)
-- Lesson detail: Not started / Started / Completed; Watch marks started; quiz ≥70% marks completed
-- Vocabulary learned state persists across refresh
-- Quiz saves results and best score; course page reads completed count from localStorage
-
-**Learning dashboard profile page added** using localStorage progress.
-
-- `/profile` — Миний суралцах ахиц dashboard (completed/started lessons, learned words, quiz history)
-- Continue learning card from last active lesson; Header and BottomNav Profile → `/profile`
-
-**Continue learning flow added** on Home, Courses, and Course Detail using localStorage progress.
-
-- Home: continue last lesson or start HSK5; completed lesson count when available
-- Courses: HSK5 card shows Completed X / total, progress bar, Continue button
-- `/courses/hsk5`: lesson cards show Not started / Started / Completed; Continue / Review / Start actions
-
-**Daily review page added** using localStorage learned vocabulary and quiz summaries.
-
-- `/review` — Давтах үгс: learned words by lesson, quiz summary, continue learning CTA
-- Header: Review link; BottomNav: Review replaces Demo
-- Vocabulary learned button: “Review-д нэмэгдсэн ✓”
-
----
-
-## Next recommended tasks
-
-1. Phase 4: Supabase Auth + migrate progress to database
-2. Dynamic `/courses/[courseId]` route (optional)
-3. Real video provider
-
-See [DEVELOPMENT_PLAN.md](./DEVELOPMENT_PLAN.md).
+- [DEVELOPMENT_PLAN.md](./DEVELOPMENT_PLAN.md) — phased roadmap (Phase 4 next)
+- [DATABASE_SCHEMA.md](./DATABASE_SCHEMA.md) — tables
+- [CONTENT_AUTHORING_GUIDE.md](./CONTENT_AUTHORING_GUIDE.md) — add lessons
+- [supabase/README.md](./supabase/README.md) — migrations & seed
 
 ---
 
@@ -204,4 +106,4 @@ See [DEVELOPMENT_PLAN.md](./DEVELOPMENT_PLAN.md).
 npm run build
 ```
 
-Expect static routes for `/lessons/1`, `/lessons/2`, `/lessons/3` and sub-pages.
+Expect routes: `/`, `/courses`, `/courses/hsk5`, `/lessons/[lessonId]/*`, `/profile`, `/review`.

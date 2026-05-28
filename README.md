@@ -1,8 +1,8 @@
-# Buunduu Surtsgaay
+# Buunduu Surtsgaay (Бөөндөө Сурцгаая)
 
 A Mongolian–Chinese language learning web app. Users learn Chinese through short video lessons, subtitles, vocabulary, and quizzes.
 
-**MVP v1** is a static demo with mock data—no database or authentication yet. **Phase 2** (complete) adds dynamic lesson routes (`/lessons/[lessonId]`) backed by `content/` files. Lessons 1–3 are available on the HSK5 course.
+**Phase 3 (current):** Supabase-first lesson content with local fallback, dynamic lessons 1–4, and **device-local** progress (localStorage). No authentication or database progress writes yet — that is **Phase 4**.
 
 ## Tech stack
 
@@ -10,42 +10,49 @@ A Mongolian–Chinese language learning web app. Users learn Chinese through sho
 - TypeScript
 - Tailwind CSS 4
 - React 19
+- Supabase (read-only content when configured)
 
-## Current MVP features
+## Current features
 
-- **Landing page** — hero, feature cards, demo lesson card
-- **Courses** — course list with availability status
-- **HSK5 course detail** — stats, progress card, lesson list
-- **Lesson 1 detail** — video preview, subtitle/vocabulary/quiz previews
-- **Watch** — video placeholder, subtitle mode toggle (Chinese / Mongolian / Both)
-- **Vocabulary** — search, HSK filter, mark-as-learned (client state)
-- **Quiz** — 5 questions, feedback, explanations, result screen
-- **Navigation** — end-to-end demo flow across all pages
+- **Landing** — branding, continue learning from last lesson
+- **Courses** — catalog; HSK5 shows local progress when available
+- **HSK5 course** — dynamic lesson list (1–4 from Supabase or 1–3 local), search, progress bar
+- **Lesson flow** — detail, watch (subtitle modes), vocabulary (HSK1–HSK5 filters), quiz (progress bar, next lesson)
+- **Progress (this device)** — lesson started/completed, learned words, quiz scores via `lib/progress.ts`
+- **Profile** (`/profile`) — dashboard: stats, quiz history, continue learning
+- **Review** (`/review`) — learned words grouped by lesson, quiz summary
+- **Navigation** — header (Courses, Demo, Review, Profile); mobile bottom nav on learning pages
 
-## Current routes
+## Routes
 
 | Route | Description |
 |-------|-------------|
-| `/` | Landing page |
+| `/` | Home |
 | `/courses` | Course list |
-| `/courses/hsk5` | HSK5 course detail & lessons |
-| `/lessons/[lessonId]` | Lesson detail (e.g. `/lessons/1`) |
-| `/lessons/[lessonId]/watch` | Watch lesson with subtitles |
-| `/lessons/[lessonId]/vocabulary` | Vocabulary list |
-| `/lessons/[lessonId]/quiz` | Interactive quiz |
+| `/courses/hsk5` | HSK5 course detail |
+| `/lessons/[lessonId]` | Lesson detail |
+| `/lessons/[lessonId]/watch` | Watch |
+| `/lessons/[lessonId]/vocabulary` | Vocabulary |
+| `/lessons/[lessonId]/quiz` | Quiz |
+| `/profile` | Learning dashboard |
+| `/review` | Daily review |
 
-## Project structure (MVP)
+Examples: `/lessons/1`, `/lessons/4/quiz`. Invalid IDs (e.g. `/lessons/999`) show lesson not found.
+
+## Project structure
 
 ```
 app/                         # Pages (App Router)
   lessons/[lessonId]/        # Dynamic lesson routes
-content/courses/hsk5/        # Course + per-lesson content
-  lessons/lesson-1.ts …
-templates/                   # Lesson import templates + AI prompt
-data/courses.ts              # Course catalog mock data
-lib/content.ts               # getLessonById, getLessonsByCourseId, … (Supabase + local fallback)
-lib/supabase/                # Supabase client + read-only content helpers
-types/                       # course.ts, lesson.ts, lesson-content.ts
+  profile/                   # Local progress dashboard
+  review/                    # Learned words review
+content/courses/hsk5/        # Local lessons 1–3
+lib/content.ts               # Supabase-first + local fallback
+lib/progress.ts              # localStorage progress (Phase 4 → Supabase)
+lib/supabase/                # Client + read-only content
+supabase/migrations/         # Schema
+supabase/seed/               # HSK5 lessons 1–4 SQL
+components/                  # AppHeader, BottomNav, shared UI
 ```
 
 ## How to run locally
@@ -53,103 +60,55 @@ types/                       # course.ts, lesson.ts, lesson-content.ts
 **Requirements:** Node.js 20+ and npm.
 
 ```bash
-# Install dependencies
 npm install
-
-# Start development server
 npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000).
 
-**Other commands:**
-
 ```bash
 npm run build   # Production build
-npm run start   # Run production server (after build)
+npm run start   # After build
 npm run lint    # ESLint
 ```
 
-## Suggested demo flow
-
-1. Home → **Эхлэх** → Courses  
-2. **HSK5 Short Drama Chinese** → Course detail  
-3. Lesson 1 **Start** → Lesson detail  
-4. **Watch lesson** → Subtitle modes  
-5. **Vocabulary** → Search, filter, mark learned  
-6. **Quiz** → Complete quiz → Review results  
-
-Or from Home: **Demo lesson үзэх** or the demo card → `/lessons/1`.
-
-## Adding new lessons
-
-Lessons are **data files only** — no new routes or page components.
-
-1. Copy [templates/lesson-import-template.ts](./templates/lesson-import-template.ts) to `content/courses/hsk5/lessons/lesson-N.ts`
-2. Register in [content/courses/hsk5/lessons/index.ts](./content/courses/hsk5/lessons/index.ts)
-3. Follow [CONTENT_AUTHORING_GUIDE.md](./CONTENT_AUTHORING_GUIDE.md) for testing and git workflow
-
-Templates and AI prompt: [templates/](./templates/) (including [lesson-content-prompt.md](./templates/lesson-content-prompt.md)).
-
-## Documentation
-
-- [CONTENT_AUTHORING_GUIDE.md](./CONTENT_AUTHORING_GUIDE.md) — how to add or unlock lessons
-- [PROJECT_CHECKPOINT.md](./PROJECT_CHECKPOINT.md) — MVP v1 status, limitations, next tasks
-- [DEVELOPMENT_PLAN.md](./DEVELOPMENT_PLAN.md) — Phased roadmap
-
-## Phase 3 Supabase planning
-
-- [DATABASE_SCHEMA.md](./DATABASE_SCHEMA.md) — tables, columns, relationships
-- [supabase/README.md](./supabase/README.md) — migrations folder and how to run SQL in Supabase
-- [supabase/SEED_PLAN.md](./supabase/SEED_PLAN.md) — mapping local lessons 1–3 to database rows
-- [supabase/seed/README.md](./supabase/seed/README.md) — seed SQL for Lessons 1–3
-
-## Supabase read-only setup
+## Supabase setup (optional, recommended)
 
 1. Copy [.env.example](./.env.example) to `.env.local`
-2. Paste your **Project URL** and **anon public** key from Supabase → Project Settings → API
-3. Restart the dev server: `npm run dev`
+2. Add **Project URL** and **anon public** key from Supabase → Settings → API
+3. Run migrations and seed SQL from [supabase/README.md](./supabase/README.md)
+4. Restart dev server
 
 ```env
 NEXT_PUBLIC_SUPABASE_URL=https://your-project.supabase.co
 NEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-key
 ```
 
-**Never commit `.env.local`** — it is gitignored (`.env*` with `!.env.example`).
+**Never commit `.env.local`** — gitignored via `.env*`.
 
-Read-only only — no auth, no progress writes to the database yet.
+Without Supabase, lessons **1–3** load from `content/` files. Lesson **4** needs the database seed.
 
-## Content source behavior
+## Suggested demo flow
 
-| Condition | Source |
-|-----------|--------|
-| `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_ANON_KEY` set | **Supabase-first** — courses, lessons, subtitles, vocabulary, quiz |
-| Env missing | **Local** — `content/courses/hsk5/lessons/*.ts` |
-| Env set but query fails or returns no rows | **Local fallback** — minimal server warning only |
+1. Home → continue or **HSK5** → `/courses/hsk5`
+2. Start/Continue a lesson → Watch → Vocabulary (mark learned) → Quiz (≥70% completes lesson)
+3. **Profile** — see stats; **Review** — see saved words
+4. Header **Demo** → `/lessons/1` for quick access
 
-Helpers in `lib/content.ts`: `getCourseById`, `getCourseContentById`, `getLessonsByCourseId`, `getLessonById` (used by lesson detail, watch, vocabulary, quiz).
+## Adding new lessons
 
-### Verify Supabase-first mode
+1. Add seed SQL or local file under `content/courses/hsk5/lessons/`
+2. Register local lessons in `content/courses/hsk5/lessons/index.ts`
+3. See [CONTENT_AUTHORING_GUIDE.md](./CONTENT_AUTHORING_GUIDE.md)
 
-1. Ensure `.env.local` is configured and `npm run dev` is running.
-2. In Supabase SQL Editor, update Lesson 1 metadata, for example:
-   ```sql
-   update lessons set subtitle = 'TEST from Supabase' where id = '1';
-   ```
-3. Open [http://localhost:3000/lessons/1](http://localhost:3000/lessons/1) and confirm the subtitle under the title shows `TEST from Supabase`.
-4. Restore the original subtitle when done.
+## Documentation
 
-**Note:** The hero line uses `lessons.subtitle`. The “Subtitle preview” cards use the first rows from `subtitle_lines`, not `lessons.subtitle`.
+- [PROJECT_CHECKPOINT.md](./PROJECT_CHECKPOINT.md) — status & Phase 3 audit
+- [DEVELOPMENT_PLAN.md](./DEVELOPMENT_PLAN.md) — roadmap (Phase 4: Auth + Supabase progress)
+- [DATABASE_SCHEMA.md](./DATABASE_SCHEMA.md) — schema
+- [CONTENT_AUTHORING_GUIDE.md](./CONTENT_AUTHORING_GUIDE.md) — content workflow
+- [supabase/README.md](./supabase/README.md) — migrations & seeds
 
-## Next development steps
+## Next phase
 
-See [DEVELOPMENT_PLAN.md](./DEVELOPMENT_PLAN.md) for the full roadmap. Immediate priorities:
-
-1. ~~Real lesson data structure~~ ✅ Phase 2 (closed)
-2. ~~Supabase schema + seed~~ ✅ (manual SQL)
-3. ~~Supabase read-only in app~~ ✅ Phase 3 Step 4
-4. ~~Supabase-first production mode~~ ✅ Phase 3 Step 5
-5. Authentication and user progress persistence
-6. Admin tools for content upload
-7. Membership / payments
-8. Mobile app (Expo)
+**Phase 4:** Supabase Auth and migrate localStorage progress to `user_progress` tables so progress syncs across devices for signed-in users.

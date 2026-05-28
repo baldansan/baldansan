@@ -50,9 +50,9 @@ Phased roadmap from MVP demo to production product.
 
 ---
 
-## Phase 3: Supabase database
+## Phase 3: Supabase database — **Completed**
 
-**Goal:** Persistent, queryable content and progress.
+**Goal:** Persistent, queryable content and device-local learning UX (Supabase content; progress on device until Phase 4).
 
 **Phase 3 Step 1 — Completed:** Supabase schema planning.
 
@@ -108,24 +108,23 @@ Phased roadmap from MVP demo to production product.
 
 - `/review` with `getAllLearnedWords()`, quiz summaries, vocabulary grouped by lesson from Supabase/local content
 
-**Remaining tasks (Phase 4+):**
-- Supabase Auth; migrate localStorage progress to `user_progress` tables
+**Phase 3 Final Audit — Completed:** Routes, navigation, Supabase-first + fallback, localStorage progress, docs aligned. Ready to close Phase 3.
 
-**Exit criteria:** Content edits happen in DB; progress survives page refresh for logged-in users.
+**Exit criteria (Phase 3):** ✅ Content loadable from Supabase with local fallback; Lessons 1–4 via dynamic routes; local progress on device; profile, continue flow, and review page working.
 
 ---
 
-## Phase 4: Authentication
+## Phase 4: Authentication + Supabase user progress — **Next**
 
-**Goal:** Personal accounts and protected progress.
+**Goal:** Personal accounts and real progress persisted in Supabase (`user_progress` tables).
 
 **Tasks:**
 - Supabase Auth (email, OAuth, or phone as needed)
-- Profile page (`/profile`) — settings, progress summary
+- Migrate `lib/progress.ts` localStorage data to `user_progress` (and related) tables
+- Enable RLS policies; wire Profile (`/profile`) to authenticated user progress
 - Middleware or layout guards for member-only lessons (if applicable)
-- Link `user_progress` to `auth.users`
 
-**Exit criteria:** Sign up, sign in, see own progress across devices.
+**Exit criteria:** Sign up, sign in, progress survives across devices and page refresh in Supabase.
 
 ---
 
