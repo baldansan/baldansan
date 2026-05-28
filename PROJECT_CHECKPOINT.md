@@ -20,6 +20,8 @@ Lesson pages are **data-driven** via dynamic segments. Content lives under `cont
 
 **Phase 2 Step 3:** Lesson import templates and content authoring guide completed (`templates/`, `CONTENT_AUTHORING_GUIDE.md`).
 
+**Phase 2 Step 4:** Lesson 3 added using the import template (6 subtitles, 12 vocabulary, 5 quiz; status available). Lessons 1–2 unchanged.
+
 ---
 
 ## Completed pages
@@ -51,7 +53,7 @@ Lesson pages are **data-driven** via dynamic segments. Content lives under `cont
 ### Lessons
 - **Lesson 1** — full content (same as MVP)
 - **Lesson 2** — full available content (你真的懂我吗？)
-- **Lesson 3** — placeholder; **locked** on course page (disabled Start)
+- **Lesson 3** — full available content (我只是想照顾你)
 
 ### Navigation
 - All `/lessons/1/*` URLs still work via `[lessonId]`

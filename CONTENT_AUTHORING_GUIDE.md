@@ -183,4 +183,4 @@ Before publishing, verify:
 |------|-----|--------|
 | `lesson-1.ts` | 1 | available |
 | `lesson-2.ts` | 2 | available |
-| `lesson-3.ts` | 3 | locked (placeholder — ready for Step 3 content) |
+| `lesson-3.ts` | 3 | available |

@@ -42,6 +42,8 @@ Phased roadmap from MVP demo to production product.
 - `templates/lesson-content-prompt.md` — copy-paste AI prompt
 - `CONTENT_AUTHORING_GUIDE.md` — workflow, test URLs, git steps
 
+**Phase 2 Step 4 — Completed:** Lesson 3 added using the import template (`content/courses/hsk5/lessons/lesson-3.ts`, status `available`).
+
 ---
 
 ## Phase 3: Supabase database
