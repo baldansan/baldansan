@@ -17,6 +17,12 @@ Admins should use **`/admin/lessons`** (Lesson Management QA dashboard) to verif
 
 QA badge **Complete** means all checks pass. **Needs review** lists warnings (e.g. “No subtitles”, “Count mismatch”). Preview public routes from the QA table before setting `available`.
 
+### Create draft metadata (Step 4)
+
+Admins can create draft lesson metadata from **`/admin/lessons/new`** → **Save draft** → row in `lessons` with `vocabulary_count` / `quiz_count` = 0, default `status = draft`. Redirects to `/admin/lessons/{id}/edit` for preview.
+
+**Next:** subtitle, vocabulary, and quiz editors (Steps 5–7). Requires admin content **INSERT** policies on `lessons` (see [supabase/policies/002_admin_content_policies.sql](./supabase/policies/002_admin_content_policies.sql) or run lesson policies from SQL Editor).
+
 ---
 
 See also: [ADMIN_PLAN.md](./ADMIN_PLAN.md), [CONTENT_AUTHORING_GUIDE.md](./CONTENT_AUTHORING_GUIDE.md) (developer/local authoring today).

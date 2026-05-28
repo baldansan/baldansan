@@ -2,7 +2,20 @@
 
 **Project:** Buunduu Surtsgaay (Бөөндөө Сурцгаая)  
 **Checkpoint date:** May 2026  
-**Status:** Phase 4 **completed**; Phase 5 Step 3 **completed** — admin content QA dashboard
+**Status:** Phase 4 **completed**; Phase 5 Step 4 **completed** — draft lesson create
+
+---
+
+## Phase 5 Step 4 — Draft lesson create — **Completed**
+
+Admins save lesson metadata from `/admin/lessons/new` to Supabase `lessons` (draft, counts 0).
+
+| Area | Deliverable |
+|------|-------------|
+| Writes | [lib/supabase/admin-content.ts](./lib/supabase/admin-content.ts) — `createDraftLesson` (anon + admin RLS) |
+| UI | [components/admin/lesson-create-form.tsx](./components/admin/lesson-create-form.tsx) |
+
+**Next:** Phase 5 Step 5 — Subtitle editor.
 
 ---
 

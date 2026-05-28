@@ -10,6 +10,7 @@ export function toAdminContentStatus(
 ): AdminContentStatus {
   if (status === "available") return "available";
   if (status === "archived") return "archived";
+  if (status === "draft") return "draft";
   return "draft";
 }
 

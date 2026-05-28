@@ -12,6 +12,7 @@ export type LessonFormValues = {
   description: string;
   duration: string;
   status: AdminContentStatus;
+  orderIndex: string;
   vocabularyCount: string;
   quizCount: string;
 };
@@ -25,6 +26,7 @@ export const emptyLessonFormValues: LessonFormValues = {
   description: "",
   duration: "",
   status: "draft",
+  orderIndex: "",
   vocabularyCount: "0",
   quizCount: "0",
 };
@@ -42,6 +44,7 @@ export function lessonToFormValues(lesson: LessonContent): LessonFormValues {
     description: lesson.description,
     duration: lesson.duration,
     status,
+    orderIndex: "",
     vocabularyCount: String(lesson.vocabularyCount),
     quizCount: String(lesson.quizCount),
   };
@@ -51,12 +54,22 @@ type Props = {
   values: LessonFormValues;
   readOnly?: boolean;
   onChange?: (values: LessonFormValues) => void;
+  /** Show order index field (create lesson). */
+  showOrderIndex?: boolean;
+  /** Hide vocab/quiz count on create (always 0 in DB). */
+  hideCounts?: boolean;
 };
 
 const inputClass =
   "mt-1 w-full rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm text-slate-900 outline-none focus:border-emerald-400 focus:ring-2 focus:ring-emerald-100 disabled:bg-slate-50 disabled:text-slate-500";
 
-export function LessonFormFields({ values, readOnly = false, onChange }: Props) {
+export function LessonFormFields({
+  values,
+  readOnly = false,
+  onChange,
+  showOrderIndex = false,
+  hideCounts = false,
+}: Props) {
   function update<K extends keyof LessonFormValues>(
     key: K,
     value: LessonFormValues[K]
@@ -149,6 +162,25 @@ export function LessonFormFields({ values, readOnly = false, onChange }: Props) 
           <option value="archived">archived</option>
         </select>
       </label>
+      {showOrderIndex ? (
+        <label className="block text-sm font-medium text-slate-700">
+          Order index
+          <input
+            className={inputClass}
+            type="number"
+            min={1}
+            value={values.orderIndex}
+            disabled={readOnly}
+            onChange={(e) => update("orderIndex", e.target.value)}
+            placeholder="5"
+          />
+          <span className="mt-1 block text-xs text-slate-500">
+            Хоосон бол курс доторх дараагийн дугаар автоматаар.
+          </span>
+        </label>
+      ) : null}
+      {!hideCounts ? (
+        <>
       <label className="block text-sm font-medium text-slate-700">
         Vocabulary count
         <input
@@ -171,6 +203,8 @@ export function LessonFormFields({ values, readOnly = false, onChange }: Props) 
           onChange={(e) => update("quizCount", e.target.value)}
         />
       </label>
+        </>
+      ) : null}
     </div>
   );
 }

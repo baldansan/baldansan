@@ -4,7 +4,8 @@ Admin content management: plan, UI foundation, and future Supabase writes with R
 
 **Phase 5 Step 1 — Completed:** Admin foundation (UI shell, read-only forms).  
 **Phase 5 Step 2 — Completed:** `admin_profiles` + `AdminGuard`.  
-**Phase 5 Step 3 — Completed:** Lesson Management QA dashboard + edit previews. **No content writes.**
+**Phase 5 Step 3 — Completed:** Lesson Management QA dashboard + edit previews.  
+**Phase 5 Step 4 — Completed:** Draft lesson metadata create (`/admin/lessons/new` → Supabase `lessons`). Subtitle/vocab/quiz writes not yet.
 
 ---
 
@@ -90,8 +91,8 @@ See [CONTENT_WORKFLOW.md](./CONTENT_WORKFLOW.md):
 | 1 | Admin foundation and dashboard shell | ✅ Completed |
 | 2 | Admin role table + manual admin setup + protected `/admin` | ✅ Completed |
 | 3 | Admin lesson list + content QA dashboard | ✅ Completed |
-| 4 | Lesson create draft write | Next |
-| 5 | Subtitle editor | Planned |
+| 4 | Lesson create draft write | ✅ Completed |
+| 5 | Subtitle editor | Next |
 | 6 | Vocabulary editor | Planned |
 | 7 | Quiz editor | Planned |
 | 8 | Publish/unpublish workflow | Planned |

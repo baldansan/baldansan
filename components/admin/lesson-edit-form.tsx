@@ -64,7 +64,7 @@ export function LessonEditForm({ lesson }: Props) {
         title={`Subtitle lines (${qa.subtitleCount} total)`}
       >
         {previewSubtitles.length === 0 ? (
-          <p className="text-sm text-amber-800">No subtitles</p>
+          <p className="text-sm text-amber-800">No subtitles yet</p>
         ) : (
           <ul className="space-y-2 text-sm text-slate-700">
             {previewSubtitles.map((line, i) => (
@@ -92,7 +92,7 @@ export function LessonEditForm({ lesson }: Props) {
         title={`Vocabulary (${qa.vocabularyActual} / meta ${lesson.vocabularyCount})`}
       >
         {previewVocabulary.length === 0 ? (
-          <p className="text-sm text-amber-800">No vocabulary</p>
+          <p className="text-sm text-amber-800">No vocabulary yet</p>
         ) : (
           <ul className="space-y-1 text-sm text-slate-700">
             {previewVocabulary.map((word, i) => (
@@ -121,7 +121,7 @@ export function LessonEditForm({ lesson }: Props) {
         title={`Quiz (${qa.quizActual} / meta ${lesson.quizCount})`}
       >
         {previewQuiz.length === 0 ? (
-          <p className="text-sm text-amber-800">No quiz questions</p>
+          <p className="text-sm text-amber-800">No quiz questions yet</p>
         ) : (
           <ol className="list-decimal space-y-2 pl-5 text-sm text-slate-700">
             {previewQuiz.map((q, i) => (

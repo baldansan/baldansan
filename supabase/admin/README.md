@@ -2,7 +2,7 @@
 
 How to enable **admin** access for Phase 5 content management. The app checks `admin_profiles` via the anon key + user JWT ([lib/supabase/admin.ts](../../lib/supabase/admin.ts)).
 
-**App status (Step 2):** `/admin` routes require login **and** an `admin_profiles` row. Non-admins see “Admin эрх шаардлагатай”. **No lesson content writes** yet.
+**App status:** `/admin` requires login **and** `admin_profiles`. **Draft lesson create** at `/admin/lessons/new` inserts into `lessons` when admin INSERT policies are enabled ([002](../policies/002_admin_content_policies.sql)). Subtitle/vocabulary/quiz not yet.
 
 ---
 

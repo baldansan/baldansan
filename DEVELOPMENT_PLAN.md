@@ -192,10 +192,11 @@ Phased roadmap from MVP demo to production product.
 
 **Phase 5 Step 3 — Completed:** Admin lesson list + content QA dashboard.
 
-- [lib/admin/lesson-qa.ts](./lib/admin/lesson-qa.ts) — full lesson fetch, completeness analysis
-- `/admin/lessons` — summary cards, QA table, search/status/QA filters, preview links
-- `/admin` dashboard — Content QA, needs review counts
-- `/admin/lessons/[id]/edit` — read-only subtitle/vocab/quiz previews
+**Phase 5 Step 4 — Completed:** Admin draft lesson creation.
+
+- [lib/supabase/admin-content.ts](./lib/supabase/admin-content.ts) — `createDraftLesson`, `getNextLessonOrderIndex`
+- `/admin/lessons/new` — working Save draft → Supabase `lessons` insert (admin + RLS)
+- No subtitle / vocabulary / quiz writes yet
 
 **Phase 5 roadmap:**
 
@@ -204,7 +205,8 @@ Phased roadmap from MVP demo to production product.
 | 1 | Admin foundation and dashboard shell | ✅ Completed |
 | 2 | Admin role table + manual admin setup + protected admin access | ✅ Completed |
 | 3 | Admin lesson list + content QA dashboard | ✅ Completed |
-| 4 | Lesson create draft write | Next |
+| 4 | Lesson create draft write | ✅ Completed |
+| 5 | Subtitle editor | Next |
 | 5 | Subtitle editor | Planned |
 | 6 | Vocabulary editor | Planned |
 | 7 | Quiz editor | Planned |
