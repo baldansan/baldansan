@@ -101,6 +101,9 @@ export function LessonVocabularyClient({ lesson }: Props) {
 
   async function handleToggleLearned(word: VocabularyWord) {
     const key = vocabularyWordKey(word);
+    const enrichedWord =
+      vocabulary.find((item) => vocabularyWordKey(item) === key) ?? word;
+
     const nextSet = new Set(learned);
     if (nextSet.has(key)) {
       nextSet.delete(key);
@@ -109,7 +112,7 @@ export function LessonVocabularyClient({ lesson }: Props) {
     }
     setLearned(nextSet);
 
-    const next = await toggleLearnedWordSmart(lesson.id, word);
+    const next = await toggleLearnedWordSmart(lesson.id, enrichedWord);
     setLearned(new Set(next));
   }
 

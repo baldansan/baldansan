@@ -121,7 +121,7 @@ Helpers: [lib/supabase/auth.ts](./lib/supabase/auth.ts). Header shows **Нэвт
 - [AUTH_PLAN.md](./AUTH_PLAN.md) — full roadmap
 - [supabase/policies/README.md](./supabase/policies/README.md) — RLS (planned)
 
-**Next:** Phase 4 Step 6 — merge localStorage progress into Supabase after login.
+**Next:** Phase 4 Step 7 — Phase 4 final audit.
 
 ## Documentation
 

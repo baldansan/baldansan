@@ -26,6 +26,35 @@ function toErrorMessage(error: { message: string } | null): string | null {
   return error?.message ?? null;
 }
 
+async function resolveWriteUserId(): Promise<{
+  userId: string | null;
+  error: string | null;
+}> {
+  if (!supabase) {
+    return { userId: null, error: NOT_CONFIGURED_MESSAGE };
+  }
+
+  const { data: sessionData, error: sessionError } =
+    await supabase.auth.getSession();
+  let writeUserId = sessionData.session?.user?.id ?? null;
+
+  if (!writeUserId) {
+    const { data: userData, error: userError } = await supabase.auth.getUser();
+    writeUserId = userData.user?.id ?? null;
+    if (!writeUserId) {
+      return {
+        userId: null,
+        error:
+          toErrorMessage(userError) ??
+          toErrorMessage(sessionError) ??
+          "Not authenticated",
+      };
+    }
+  }
+
+  return { userId: writeUserId, error: null };
+}
+
 export function isLearnedVocabularyStatus(status: string): boolean {
   return status === "learned";
 }
@@ -135,27 +164,36 @@ export async function markSupabaseWordLearned(
     return { data: null, error: "Invalid vocabulary_word_id" };
   }
 
+  const { userId: writeUserId, error: authError } = await resolveWriteUserId();
+  if (!writeUserId) {
+    return { data: null, error: authError };
+  }
+
   const now = new Date().toISOString();
-  const { data, error } = await supabase
-    .from("user_vocabulary_progress")
-    .upsert(
-      {
-        user_id: userId,
-        vocabulary_word_id: wordId,
-        status: "learned",
-        learned_at: now,
-        updated_at: now,
-      },
-      { onConflict: "user_id,vocabulary_word_id" }
-    )
-    .select(
-      "user_id, vocabulary_word_id, status, learned_at, updated_at"
-    )
-    .single();
+  const { error } = await supabase.from("user_vocabulary_progress").upsert(
+    {
+      user_id: writeUserId,
+      vocabulary_word_id: wordId,
+      status: "learned",
+      learned_at: now,
+      updated_at: now,
+    },
+    { onConflict: "user_id,vocabulary_word_id" }
+  );
+
+  if (error) {
+    return { data: null, error: toErrorMessage(error) };
+  }
 
   return {
-    data: data as UserVocabularyProgressRow | null,
-    error: toErrorMessage(error),
+    data: {
+      user_id: writeUserId,
+      vocabulary_word_id: wordId,
+      status: "learned",
+      learned_at: now,
+      updated_at: now,
+    },
+    error: null,
   };
 }
 
@@ -172,10 +210,15 @@ export async function unmarkSupabaseWordLearned(
     return { data: null, error: "Invalid vocabulary_word_id" };
   }
 
+  const { userId: writeUserId, error: authError } = await resolveWriteUserId();
+  if (!writeUserId) {
+    return { data: null, error: authError };
+  }
+
   const { error } = await supabase
     .from("user_vocabulary_progress")
     .delete()
-    .eq("user_id", userId)
+    .eq("user_id", writeUserId)
     .eq("vocabulary_word_id", wordId);
 
   return {

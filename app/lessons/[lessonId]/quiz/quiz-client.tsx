@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { LocalProgressNote } from "@/components/local-progress-note";
 import { AppHeader } from "@/components/app-header";
 import { BottomNav } from "@/components/bottom-nav";
@@ -41,6 +41,7 @@ export function LessonQuizClient({ lesson, nextLessonId }: Props) {
   const [correctCount, setCorrectCount] = useState(0);
   const [finished, setFinished] = useState(false);
   const [savedResult, setSavedResult] = useState<QuizResult | null>(null);
+  const persistAttemptRef = useRef(false);
 
   const current = lesson.quizQuestions[currentIndex];
   const isCorrect = selected === current?.correctAnswer;
@@ -63,7 +64,10 @@ export function LessonQuizClient({ lesson, nextLessonId }: Props) {
   }, [lesson.id]);
 
   useEffect(() => {
-    if (!finished || total === 0) return;
+    if (!finished || total === 0 || persistAttemptRef.current) {
+      return;
+    }
+    persistAttemptRef.current = true;
 
     async function save() {
       const result = await saveQuizResultSmart(
@@ -75,7 +79,7 @@ export function LessonQuizClient({ lesson, nextLessonId }: Props) {
       setSavedResult(result);
 
       if (percent >= PASSING_QUIZ_PERCENT) {
-        void markLessonCompletedSmart(lesson.id);
+        await markLessonCompletedSmart(lesson.id);
       }
     }
 
@@ -107,6 +111,7 @@ export function LessonQuizClient({ lesson, nextLessonId }: Props) {
     setRevealed(false);
     setCorrectCount(0);
     setFinished(false);
+    persistAttemptRef.current = false;
   }
 
   function optionClass(option: string) {

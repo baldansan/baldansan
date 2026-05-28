@@ -145,6 +145,11 @@ Phased roadmap from MVP demo to production product.
 - [lib/supabase/quiz-attempts.ts](./lib/supabase/quiz-attempts.ts), smart helpers in [lib/progress.ts](./lib/progress.ts)
 - Each quiz finish → `insert` into `user_quiz_attempts` + localStorage mirror; latest/best aggregated per lesson
 
+**Phase 4 Step 6 — Completed:** Merge localStorage progress after login.
+
+- [lib/supabase/progress-sync.ts](./lib/supabase/progress-sync.ts), [components/progress-sync-card.tsx](./components/progress-sync-card.tsx) on `/profile`
+- Guest device progress offered for one-way merge into account; local cleared after success
+
 **Phase 4 roadmap:**
 
 | Step | Focus |
@@ -154,8 +159,8 @@ Phased roadmap from MVP demo to production product.
 | 3 ✅ | Persist lesson progress to Supabase |
 | 4 ✅ | Persist vocabulary learned state to Supabase |
 | 5 ✅ | Persist quiz attempts to Supabase |
-| 6 | Migrate / merge localStorage progress after login — **Next** |
-| 7 | Phase 4 final audit |
+| 6 ✅ | Migrate / merge localStorage progress after login |
+| 7 | Phase 4 final audit — **Next** |
 
 **Exit criteria:** Sign up, sign in, progress survives across devices and page refresh in Supabase.
 

@@ -134,25 +134,46 @@ export async function saveSupabaseQuizAttempt(
     return notConfigured();
   }
 
-  const { data, error } = await supabase
-    .from("user_quiz_attempts")
-    .insert({
-      user_id: userId,
-      lesson_id: lessonId,
-      score,
-      total,
-      percentage,
-      answers,
-    })
-    .select(
-      "id, user_id, lesson_id, score, total, percentage, answers, created_at"
-    )
-    .single();
+  let writeUserId: string | null = null;
 
-  return {
-    data: data as UserQuizAttemptRow | null,
-    error: toErrorMessage(error),
-  };
+  const { data: sessionData, error: sessionError } =
+    await supabase.auth.getSession();
+  writeUserId = sessionData.session?.user?.id ?? null;
+
+  if (!writeUserId) {
+    const { data: userData, error: userError } = await supabase.auth.getUser();
+    writeUserId = userData.user?.id ?? null;
+    if (!writeUserId) {
+      return {
+        data: null,
+        error:
+          toErrorMessage(userError) ??
+          toErrorMessage(sessionError) ??
+          "Not authenticated",
+      };
+    }
+  }
+
+  if (writeUserId !== userId) {
+    console.warn(
+      "[progress] Quiz insert using session user id (caller id mismatch)."
+    );
+  }
+
+  const { error } = await supabase.from("user_quiz_attempts").insert({
+    user_id: writeUserId,
+    lesson_id: lessonId,
+    score,
+    total,
+    percentage,
+    answers,
+  });
+
+  if (error) {
+    return { data: null, error: toErrorMessage(error) };
+  }
+
+  return { data: null, error: null };
 }
 
 export { hasSupabaseConfig };

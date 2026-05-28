@@ -49,14 +49,55 @@ export async function getCurrentUser(): Promise<AuthResult<AuthUser>> {
     return notConfigured();
   }
 
+  const { data: sessionData, error: sessionError } =
+    await supabase.auth.getSession();
+  if (sessionData.session?.user) {
+    return {
+      data: mapUser(sessionData.session.user),
+      error: null,
+    };
+  }
+
   const { data, error } = await supabase.auth.getUser();
   if (error) {
-    return { data: null, error: toErrorMessage(error) };
+    return {
+      data: null,
+      error: toErrorMessage(error) ?? toErrorMessage(sessionError),
+    };
   }
 
   return {
     data: mapUser(data.user),
     error: null,
+  };
+}
+
+/** User id from the active Supabase session (for RLS writes). */
+export async function getAuthenticatedUserId(): Promise<{
+  userId: string | null;
+  error: string | null;
+}> {
+  if (!supabase) {
+    return { userId: null, error: NOT_CONFIGURED_MESSAGE };
+  }
+
+  const { data: sessionData, error: sessionError } =
+    await supabase.auth.getSession();
+  if (sessionData.session?.user?.id) {
+    return { userId: sessionData.session.user.id, error: null };
+  }
+
+  const { data, error: userError } = await supabase.auth.getUser();
+  if (data.user?.id) {
+    return { userId: data.user.id, error: null };
+  }
+
+  return {
+    userId: null,
+    error:
+      toErrorMessage(userError) ??
+      toErrorMessage(sessionError) ??
+      "Session not found",
   };
 }
 

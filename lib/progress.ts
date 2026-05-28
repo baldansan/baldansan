@@ -342,6 +342,21 @@ export function hasAnyProgress(): boolean {
   return hasLesson || hasVocab || hasQuiz;
 }
 
+/** Clears lesson, vocabulary, and quiz data from localStorage (keeps last active lesson). */
+export function clearLocalProgressAfterSync(): void {
+  if (!isBrowser()) {
+    return;
+  }
+
+  const store = readStore();
+  writeStore({
+    lessons: {},
+    vocabulary: {},
+    quizzes: {},
+    lastActiveLessonId: store.lastActiveLessonId,
+  });
+}
+
 export type LessonProgressSource = "supabase" | "local";
 
 function buildLocalLessonStatusMap(
@@ -523,9 +538,9 @@ export async function getLearnedWordsSmart(
 ): Promise<string[]> {
   const localKeys = getLearnedWords(lessonId);
 
-  const { getCurrentUser } = await import("@/lib/supabase/auth");
-  const { data: user } = await getCurrentUser();
-  if (!user?.id) {
+  const { getAuthenticatedUserId } = await import("@/lib/supabase/auth");
+  const { userId } = await getAuthenticatedUserId();
+  if (!userId) {
     return localKeys;
   }
 
@@ -547,7 +562,7 @@ export async function getLearnedWordsSmart(
   } = await import("@/lib/supabase/vocabulary-progress");
 
   let { data, error } = await getUserVocabularyProgressByLesson(
-    user.id,
+    userId,
     lessonId
   );
 
@@ -557,7 +572,7 @@ export async function getLearnedWordsSmart(
         .map((word) => word.dbId)
         .filter((id): id is number => id != null)
     );
-    const all = await getUserVocabularyProgress(user.id);
+    const all = await getUserVocabularyProgress(userId);
     if (all.error) {
       console.warn(
         "[progress] Supabase vocabulary fetch failed; using local.",
@@ -589,25 +604,32 @@ export async function toggleLearnedWordSmart(
   const localNext = toggleLearnedWord(lessonId, key);
   const isNowLearned = localNext.includes(key);
 
-  const { getCurrentUser, hasSupabaseConfig } = await import(
+  const { getAuthenticatedUserId, hasSupabaseConfig } = await import(
     "@/lib/supabase/auth"
   );
-  const { data: user, error: authError } = await getCurrentUser();
+  const { userId, error: authError } = await getAuthenticatedUserId();
+  const hasUser = Boolean(userId);
 
-  if (!user?.id) {
+  if (!userId) {
     if (hasSupabaseConfig) {
       console.warn(
         "[progress] Vocabulary save skipped: no signed-in user.",
-        authError ?? "Session not found"
+        authError ?? "Session not found",
+        `hasUser=${hasUser}`,
+        `hasDbId=${word.dbId != null}`
       );
     }
     return localNext;
   }
 
   const dbId = await resolveVocabularyWordDbId(lessonId, word);
-  if (dbId == null) {
+  const hasDbId = dbId != null;
+
+  if (!hasDbId) {
     console.warn(
-      "[progress] Vocabulary save skipped: no vocabulary_word_id for this lesson word."
+      "[progress] Vocabulary save skipped: no vocabulary_word_id for this lesson word.",
+      `hasUser=${hasUser}`,
+      `hasDbId=${hasDbId}`
     );
     return localNext;
   }
@@ -616,14 +638,16 @@ export async function toggleLearnedWordSmart(
     "@/lib/supabase/vocabulary-progress"
   );
   const { error } = await toggleSupabaseWordLearned(
-    user.id,
+    userId,
     dbId,
     isNowLearned
   );
   if (error) {
     console.warn(
       "[progress] Supabase vocabulary write failed; local saved.",
-      error
+      error,
+      `hasUser=${hasUser}`,
+      `hasDbId=${hasDbId}`
     );
   }
 
@@ -635,9 +659,9 @@ export async function getAllLearnedWordsSmart(
 ): Promise<LearnedWordEntry[]> {
   const local = getAllLearnedWords();
 
-  const { getCurrentUser } = await import("@/lib/supabase/auth");
-  const { data: user } = await getCurrentUser();
-  if (!user?.id) {
+  const { getAuthenticatedUserId } = await import("@/lib/supabase/auth");
+  const { userId } = await getAuthenticatedUserId();
+  if (!userId) {
     return local;
   }
 
@@ -660,7 +684,7 @@ export async function getAllLearnedWordsSmart(
   const { getUserVocabularyProgress, isLearnedVocabularyStatus } = await import(
     "@/lib/supabase/vocabulary-progress"
   );
-  const { data, error } = await getUserVocabularyProgress(user.id);
+  const { data, error } = await getUserVocabularyProgress(userId);
   if (error) {
     console.warn(
       "[progress] Supabase vocabulary list fetch failed; using local.",
@@ -788,12 +812,12 @@ export async function saveQuizResultSmart(
 ): Promise<QuizResult> {
   const localResult = saveQuizResult(lessonId, score, total, percentage);
 
-  const { getCurrentUser, hasSupabaseConfig } = await import(
+  const { getAuthenticatedUserId, hasSupabaseConfig } = await import(
     "@/lib/supabase/auth"
   );
-  const { data: user, error: authError } = await getCurrentUser();
+  const { userId, error: authError } = await getAuthenticatedUserId();
 
-  if (!user?.id) {
+  if (!userId) {
     if (hasSupabaseConfig) {
       console.warn(
         "[progress] Quiz save skipped: no signed-in user.",
@@ -807,7 +831,7 @@ export async function saveQuizResultSmart(
     "@/lib/supabase/quiz-attempts"
   );
   const { error } = await saveSupabaseQuizAttempt(
-    user.id,
+    userId,
     lessonId,
     score,
     total,
@@ -817,7 +841,7 @@ export async function saveQuizResultSmart(
 
   if (error) {
     console.warn(
-      "[progress] Supabase quiz write failed; local saved.",
+      "[progress] Supabase quiz insert failed; local saved.",
       error
     );
     return localResult;

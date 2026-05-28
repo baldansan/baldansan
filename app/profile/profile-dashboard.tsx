@@ -6,6 +6,7 @@ import { AppHeader } from "@/components/app-header";
 import { BottomNav } from "@/components/bottom-nav";
 import { EmptyState } from "@/components/empty-state";
 import { LocalProgressNote } from "@/components/local-progress-note";
+import { ProgressSyncCard } from "@/components/progress-sync-card";
 import { lessonPath } from "@/lib/content";
 import { getCurrentUser, hasSupabaseConfig } from "@/lib/supabase/auth";
 import type { AuthUser } from "@/types/auth";
@@ -49,6 +50,7 @@ export function ProfileDashboard() {
   const [accountVocabCount, setAccountVocabCount] = useState<number | null>(
     null
   );
+  const [syncRefreshKey, setSyncRefreshKey] = useState(0);
 
   useEffect(() => {
     async function refresh() {
@@ -93,7 +95,7 @@ export function ProfileDashboard() {
     refresh();
     window.addEventListener("focus", refresh);
     return () => window.removeEventListener("focus", refresh);
-  }, []);
+  }, [syncRefreshKey]);
 
   if (!ready) {
     return (
@@ -135,6 +137,12 @@ export function ProfileDashboard() {
             </p>
           )}
         </section>
+
+        {authUser ? (
+          <ProgressSyncCard
+            onSynced={() => setSyncRefreshKey((key) => key + 1)}
+          />
+        ) : null}
 
         <section className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:p-6">
           {authUser ? (
