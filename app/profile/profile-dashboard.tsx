@@ -9,6 +9,7 @@ import { LocalProgressNote } from "@/components/local-progress-note";
 import { ProgressSyncCard } from "@/components/progress-sync-card";
 import { lessonPath } from "@/lib/content";
 import { getCurrentUser, hasSupabaseConfig } from "@/lib/supabase/auth";
+import { isCurrentUserAdmin } from "@/lib/supabase/admin";
 import type { AuthUser } from "@/types/auth";
 import {
   countCompletedLessonsAll,
@@ -45,6 +46,7 @@ export function ProfileDashboard() {
     null
   );
   const [authUser, setAuthUser] = useState<AuthUser | null>(null);
+  const [isAdmin, setIsAdmin] = useState(false);
   const [accountSummary, setAccountSummary] =
     useState<AccountLessonProgressSummary | null>(null);
   const [accountVocabCount, setAccountVocabCount] = useState<number | null>(
@@ -68,6 +70,7 @@ export function ProfileDashboard() {
         user = data;
       }
       setAuthUser(user);
+      setIsAdmin(user ? await isCurrentUserAdmin() : false);
 
       let summary: AccountLessonProgressSummary | null = null;
       let vocabCount: number | null = null;
@@ -144,22 +147,6 @@ export function ProfileDashboard() {
           />
         ) : null}
 
-        {authUser ? (
-          <section className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:p-6">
-            <h2 className="text-lg font-semibold text-slate-900">Content admin</h2>
-            <p className="mt-2 text-sm text-slate-600">
-              Контент удирдах admin хэсэг. Admin эрхийг дараагийн алхамд
-              баталгаажуулна.
-            </p>
-            <Link
-              href="/admin"
-              className="mt-4 inline-flex rounded-full border border-emerald-200 bg-emerald-50 px-5 py-2.5 text-sm font-semibold text-emerald-800 transition-colors hover:bg-emerald-100"
-            >
-              Admin самбар →
-            </Link>
-          </section>
-        ) : null}
-
         <section className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:p-6">
           {authUser ? (
             <>
@@ -167,6 +154,17 @@ export function ProfileDashboard() {
                 Нэвтэрсэн хэрэглэгч
               </h2>
               <p className="mt-2 text-sm text-slate-600">{authUser.email}</p>
+              <p className="mt-2 text-sm font-medium text-slate-700">
+                {isAdmin ? "Admin эрхтэй хэрэглэгч" : "Энгийн хэрэглэгч"}
+              </p>
+              {isAdmin ? (
+                <Link
+                  href="/admin"
+                  className="mt-4 inline-flex rounded-full border border-emerald-200 bg-emerald-50 px-5 py-2.5 text-sm font-semibold text-emerald-800 transition-colors hover:bg-emerald-100"
+                >
+                  Admin самбар →
+                </Link>
+              ) : null}
             </>
           ) : (
             <>

@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { AdminAuthGate } from "@/components/admin/admin-auth-gate";
 import { LessonEditForm } from "@/components/admin/lesson-edit-form";
 import { EmptyState } from "@/components/empty-state";
 import { getLessonById } from "@/lib/content";
@@ -36,9 +35,5 @@ export default async function AdminEditLessonPage({ params }: Props) {
     );
   }
 
-  return (
-    <AdminAuthGate>
-      <LessonEditForm lesson={lesson} />
-    </AdminAuthGate>
-  );
+  return <LessonEditForm lesson={lesson} />;
 }

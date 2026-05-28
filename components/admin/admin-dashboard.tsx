@@ -2,13 +2,19 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { AdminAuthGate } from "@/components/admin/admin-auth-gate";
 import { AdminCard } from "@/components/admin/admin-card";
 import { AdminSectionTitle } from "@/components/admin/admin-section-title";
 import { getCurrentUser, hasSupabaseConfig } from "@/lib/supabase/auth";
 import type { AuthUser } from "@/types/auth";
 
-function DashboardContent({ user }: { user: AuthUser }) {
+export function AdminDashboard() {
+  const [user, setUser] = useState<AuthUser | null>(null);
+
+  useEffect(() => {
+    if (!hasSupabaseConfig) return;
+    getCurrentUser().then(({ data }) => setUser(data));
+  }, []);
+
   return (
     <div className="flex flex-col gap-6">
       <section>
@@ -19,10 +25,11 @@ function DashboardContent({ user }: { user: AuthUser }) {
           Контент удирдах суурь хэсэг. Одоогоор зөвхөн унших горим — Supabase руу
           бичих идэвхгүй.
         </p>
-        <p className="mt-2 rounded-xl bg-amber-50 px-4 py-3 text-sm text-amber-900 ring-1 ring-amber-200">
-          Admin эрх шалгах хэсгийг дараагийн алхамд идэвхжүүлнэ. Одоо нэвтэрсэн
-          хэрэглэгч: {user.email ?? user.id}
-        </p>
+        {user ? (
+          <p className="mt-2 text-sm text-slate-600">
+            Нэвтэрсэн: {user.email ?? user.id}
+          </p>
+        ) : null}
       </section>
 
       <AdminSectionTitle
@@ -38,7 +45,7 @@ function DashboardContent({ user }: { user: AuthUser }) {
         />
         <AdminCard
           title="Ноорог контент"
-          description="Ноорог статустай хичээлүүд — Step 4-өөс publish workflow."
+          description="Ноорог статустай хичээлүүд — publish workflow дараагийн алхам."
           href="/admin/lessons"
         />
         <AdminCard
@@ -48,7 +55,7 @@ function DashboardContent({ user }: { user: AuthUser }) {
         />
         <AdminCard
           title="Upload workflow"
-          description="Контент нэмэх алхам: metadata → subtitle → vocabulary → quiz → preview → publish. Дэлгэрэнгүй CONTENT_WORKFLOW.md."
+          description="Контент нэмэх алхам: metadata → subtitle → vocabulary → quiz → preview → publish."
         />
         <AdminCard
           title="Content quality checklist"
@@ -86,26 +93,5 @@ function DashboardContent({ user }: { user: AuthUser }) {
         </ul>
       </section>
     </div>
-  );
-}
-
-function AdminDashboardInner() {
-  const [user, setUser] = useState<AuthUser | null>(null);
-
-  useEffect(() => {
-    if (!hasSupabaseConfig) return;
-    getCurrentUser().then(({ data }) => setUser(data));
-  }, []);
-
-  if (!user) return null;
-
-  return <DashboardContent user={user} />;
-}
-
-export function AdminDashboard() {
-  return (
-    <AdminAuthGate>
-      <AdminDashboardInner />
-    </AdminAuthGate>
   );
 }

@@ -1,4 +1,3 @@
-import { AdminAuthGate } from "@/components/admin/admin-auth-gate";
 import { AdminLessonsList } from "@/components/admin/admin-lessons-list";
 import { getLessonsByCourseId } from "@/lib/content";
 
@@ -11,9 +10,5 @@ export const metadata = {
 export default async function AdminLessonsPage() {
   const lessons = await getLessonsByCourseId("hsk5");
 
-  return (
-    <AdminAuthGate>
-      <AdminLessonsList lessons={lessons} />
-    </AdminAuthGate>
-  );
+  return <AdminLessonsList lessons={lessons} />;
 }

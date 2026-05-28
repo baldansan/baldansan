@@ -8,22 +8,34 @@ import {
   onAuthStateChange,
   signOut,
 } from "@/lib/supabase/auth";
+import { isCurrentUserAdmin } from "@/lib/supabase/admin";
 import type { AuthUser } from "@/types/auth";
 
 export function AuthStatus() {
   const router = useRouter();
   const [user, setUser] = useState<AuthUser | null>(null);
+  const [isAdmin, setIsAdmin] = useState(false);
   const [loading, setLoading] = useState(true);
   const [signingOut, setSigningOut] = useState(false);
 
   useEffect(() => {
     let mounted = true;
 
+    async function refreshAdminFlag() {
+      const admin = await isCurrentUserAdmin();
+      if (mounted) setIsAdmin(admin);
+    }
+
     async function loadUser() {
       const { data } = await getCurrentUser();
       if (mounted) {
         setUser(data);
         setLoading(false);
+      }
+      if (data) {
+        await refreshAdminFlag();
+      } else if (mounted) {
+        setIsAdmin(false);
       }
     }
 
@@ -40,6 +52,11 @@ export function AuthStatus() {
           : null
       );
       setLoading(false);
+      if (session?.user) {
+        refreshAdminFlag();
+      } else {
+        setIsAdmin(false);
+      }
     });
 
     return () => {
@@ -68,12 +85,14 @@ export function AuthStatus() {
   if (user) {
     return (
       <div className="flex flex-col items-end gap-1 sm:flex-row sm:items-center sm:gap-2">
-        <Link
-          href="/admin"
-          className="rounded-full border border-slate-200 px-2.5 py-1 text-xs font-medium text-slate-600 transition-colors hover:border-emerald-200 hover:text-emerald-700"
-        >
-          Admin
-        </Link>
+        {isAdmin ? (
+          <Link
+            href="/admin"
+            className="rounded-full border border-emerald-200 bg-emerald-50 px-2.5 py-1 text-xs font-medium text-emerald-800 transition-colors hover:bg-emerald-100"
+          >
+            Admin
+          </Link>
+        ) : null}
         <span
           className="max-w-[8rem] truncate text-xs text-slate-600 sm:max-w-[10rem]"
           title={user.email}

@@ -180,16 +180,23 @@ Phased roadmap from MVP demo to production product.
 - [supabase/policies/002_admin_content_policies.sql](./supabase/policies/002_admin_content_policies.sql) — planned RLS (do not auto-run)
 - Routes: `/admin`, `/admin/lessons`, `/admin/lessons/new`, `/admin/lessons/[id]/edit`
 - `components/admin/*` — dashboard, lesson list (read), form skeletons (disabled save)
-- Header **Admin** link + Profile content admin card (logged-in only)
+- Header **Admin** link (admins only); Profile role label + admin shortcut
 - Learner routes unchanged; Supabase-first + local fallback unchanged
+
+**Phase 5 Step 2 — Completed:** Admin role setup and protected admin access.
+
+- [supabase/admin/001_admin_profiles_setup.sql](./supabase/admin/001_admin_profiles_setup.sql) — `admin_profiles` + RLS (run in SQL Editor)
+- [lib/supabase/admin.ts](./lib/supabase/admin.ts) — `getCurrentAdminProfile`, `isCurrentUserAdmin`
+- [components/admin/admin-guard.tsx](./components/admin/admin-guard.tsx) — wraps all `/admin` routes via layout
+- No content CRUD writes yet
 
 **Phase 5 roadmap:**
 
 | Step | Focus | Status |
 |------|--------|--------|
 | 1 | Admin foundation and dashboard shell | ✅ Completed |
-| 2 | Admin role table + manual admin setup + protected admin access | Next |
-| 3 | Admin lesson list enhancements (preview, draft filter with DB statuses) | Planned |
+| 2 | Admin role table + manual admin setup + protected admin access | ✅ Completed |
+| 3 | Admin lesson list with safe Supabase read and admin-only access | Next |
 | 4 | Lesson create/edit with safe draft writes | Planned |
 | 5 | Subtitle editor | Planned |
 | 6 | Vocabulary editor | Planned |

@@ -127,15 +127,15 @@ Helpers: [lib/supabase/auth.ts](./lib/supabase/auth.ts). Header shows **Нэвт
 
 ## Admin content management roadmap
 
-Logged-in users can open **`/admin`** (dashboard shell). Lesson list reads from Supabase-first helpers; create/edit forms are UI skeletons with **save disabled** — no database writes yet.
+**`/admin`** requires login and a row in `admin_profiles` (see setup below). Lesson list is read-only; create/edit forms have **save disabled** — no content writes yet.
 
 - [ADMIN_PLAN.md](./ADMIN_PLAN.md) — admin CMS roadmap and security
 - [CONTENT_WORKFLOW.md](./CONTENT_WORKFLOW.md) — create → publish → verify workflow
-- [supabase/admin/README.md](./supabase/admin/README.md) — future `admin_profiles` bootstrap
+- [supabase/admin/README.md](./supabase/admin/README.md) — run `001_admin_profiles_setup.sql`, bootstrap admin user
 
 **Routes:** `/admin` · `/admin/lessons` · `/admin/lessons/new` · `/admin/lessons/1/edit` (example)
 
-**Next step:** Phase 5 Step 2 — Admin role setup and protected admin access.
+**Next step:** Phase 5 Step 3 — Admin lesson list with safe Supabase read.
 
 ## Documentation
 

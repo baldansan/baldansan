@@ -2,7 +2,22 @@
 
 **Project:** Buunduu Surtsgaay (Бөөндөө Сурцгаая)  
 **Checkpoint date:** May 2026  
-**Status:** Phase 4 **completed**; Phase 5 Step 1 **completed** — admin foundation
+**Status:** Phase 4 **completed**; Phase 5 Step 2 **completed** — protected admin access
+
+---
+
+## Phase 5 Step 2 — Admin role setup — **Completed**
+
+Admin routes protected with `AdminGuard` + `admin_profiles` lookup. No content writes.
+
+| Area | Deliverable |
+|------|-------------|
+| SQL | [supabase/admin/001_admin_profiles_setup.sql](./supabase/admin/001_admin_profiles_setup.sql) |
+| Helpers | [lib/supabase/admin.ts](./lib/supabase/admin.ts) |
+| UI gate | [components/admin/admin-guard.tsx](./components/admin/admin-guard.tsx) |
+| Nav | Admin header link + profile status (admins only) |
+
+**Next:** Phase 5 Step 3 — Admin lesson list with safe Supabase read.
 
 ---
 

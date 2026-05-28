@@ -2,7 +2,8 @@
 
 Admin content management: plan, UI foundation, and future Supabase writes with RLS.
 
-**Phase 5 Step 1 — Completed (May 2026):** Admin foundation — planning docs, `/admin` dashboard shell, lesson list, create/edit form skeletons (read-only / disabled save). **No database writes.**
+**Phase 5 Step 1 — Completed:** Admin foundation (UI shell, read-only forms).  
+**Phase 5 Step 2 — Completed:** `admin_profiles` SQL setup, `lib/supabase/admin.ts`, `AdminGuard` on all `/admin` routes. **No content writes.**
 
 ---
 
@@ -22,7 +23,7 @@ Lesson content is **seeded by SQL** and **read from Supabase** (with local fallb
 | Learner app | Supabase-first read via [lib/content.ts](./lib/content.ts) |
 | Progress | Phase 4 — auth + `user_*` tables + localStorage |
 | Admin UI | `/admin` shell, lesson list (read), form skeletons (no write) |
-| Admin role | Not enforced yet — any logged-in user can open `/admin` |
+| Admin role | `admin_profiles` + `AdminGuard`; header Admin link for admins only |
 
 ---
 
@@ -50,7 +51,7 @@ Lesson content is **seeded by SQL** and **read from Supabase** (with local fallb
 | Vocabulary | TBD | Step 6 |
 | Quiz | TBD | Step 7 |
 
-Logged-out users see login prompt. Logged-in users see dashboard; role check message shown until Step 2.
+Logged-out users see login prompt. Logged-in non-admins see access denied. Admins see full admin UI.
 
 ---
 
@@ -86,8 +87,8 @@ See [CONTENT_WORKFLOW.md](./CONTENT_WORKFLOW.md):
 | Step | Focus | Status |
 |------|--------|--------|
 | 1 | Admin foundation and dashboard shell | ✅ Completed |
-| 2 | Admin role table + manual admin setup + protected `/admin` | Next |
-| 3 | Admin lesson list with Supabase read (enhance filters/preview) | Planned |
+| 2 | Admin role table + manual admin setup + protected `/admin` | ✅ Completed |
+| 3 | Admin lesson list with safe Supabase read and admin-only access | Next |
 | 4 | Lesson create/edit form with safe draft mode (writes) | Planned |
 | 5 | Subtitle editor | Planned |
 | 6 | Vocabulary editor | Planned |
@@ -105,4 +106,6 @@ See [CONTENT_WORKFLOW.md](./CONTENT_WORKFLOW.md):
 - [supabase/admin/README.md](./supabase/admin/README.md)
 - [supabase/policies/002_admin_content_policies.sql](./supabase/policies/002_admin_content_policies.sql)
 - `app/admin/` — routes
-- `components/admin/` — UI components
+- `components/admin/admin-guard.tsx` — login + admin gate
+- `lib/supabase/admin.ts` — `isCurrentUserAdmin()`, profile fetch
+- `supabase/admin/001_admin_profiles_setup.sql` — run in Supabase SQL Editor
