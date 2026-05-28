@@ -2,7 +2,20 @@
 
 **Project:** Buunduu Surtsgaay (Бөөндөө Сурцгаая)  
 **Checkpoint date:** May 2026  
-**Status:** Phase 4 **completed**; Phase 5 publish workflow **completed**
+**Status:** Phase 4 **completed**; Phase 5 Step 11 metadata edit/save **completed**
+
+---
+
+## Phase 5 Step 11 — Admin lesson metadata edit/save — **Completed**
+
+Phase 5 Step 11: Admin lesson metadata edit/save added.
+
+| Area | Deliverable |
+|------|-------------|
+| API | `updateLessonMetadata`, `validateUpdateLessonMetadataInput`, `getAdminLessonMetadataById`, `refreshLessonCounts` |
+| UI | `lesson-metadata-editor` on `/admin/lessons/{id}/edit` — save metadata, refresh counts, preview |
+
+**Next:** Phase 5 Step 12 — Publish readiness polish / export backup tools.
 
 ---
 
@@ -15,8 +28,6 @@ Phase 5 Publish workflow added: draft/available/archived visibility, admin publi
 | Public helpers | `getPublicLessonsByCourseId`, `getPublicLessonById`, `resolveLessonPageAccess` |
 | UI | `lesson-unavailable.tsx`, `publishing-controls.tsx`, admin preview `?preview=admin` |
 | API | `updateLessonStatus`, `getLessonCompleteness` |
-
-**Next:** Phase 5 Step 11 — Admin metadata edit and publish readiness polish.
 
 ---
 

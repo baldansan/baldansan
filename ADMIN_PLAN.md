@@ -99,7 +99,8 @@ See [CONTENT_WORKFLOW.md](./CONTENT_WORKFLOW.md):
 | 8 | Publish/unpublish workflow | ✅ Completed |
 | 9 | Bulk import from JSON/ChatGPT | ✅ Completed |
 | 10 | Prompt generator + import QA assistant | ✅ Completed |
-| 11 | Admin metadata edit + publish polish | Next |
+| 11 | Admin lesson metadata edit/save | ✅ Completed |
+| 12 | Publish readiness polish / export backup | Next |
 
 Step 3: [lib/admin/lesson-qa.ts](./lib/admin/lesson-qa.ts), `/admin/lessons` QA dashboard.
 

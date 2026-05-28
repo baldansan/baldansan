@@ -206,6 +206,13 @@ Phased roadmap from MVP demo to production product.
 
 **Phase 5 Step 10 — Completed:** Lesson content prompt generator and import QA assistant.
 
+**Phase 5 Step 11 — Completed:** Admin lesson metadata edit/save.
+
+- [lib/supabase/admin-content.ts](./lib/supabase/admin-content.ts) — `updateLessonMetadata`, `validateUpdateLessonMetadataInput`, `getAdminLessonMetadataById`, `refreshLessonCounts`
+- [components/admin/lesson-metadata-editor.tsx](./components/admin/lesson-metadata-editor.tsx) on `/admin/lessons/{id}/edit`
+
+**Next:** Phase 5 Step 12 — Publish readiness polish and content version safety, or CSV/JSON export and backup tools.
+
 - [components/admin/lesson-prompt-generator.tsx](./components/admin/lesson-prompt-generator.tsx)
 - [components/admin/import-qa-summary.tsx](./components/admin/import-qa-summary.tsx)
 - [LESSON_PROMPT_TEMPLATE.md](./LESSON_PROMPT_TEMPLATE.md)
@@ -234,7 +241,8 @@ Phased roadmap from MVP demo to production product.
 | 8 | Publish/unpublish workflow | ✅ Completed |
 | 9 | Bulk import lesson content from JSON/ChatGPT output | ✅ Completed |
 | 10 | Prompt generator + import QA assistant | ✅ Completed |
-| 11 | Admin lesson metadata edit/save and publish readiness polish | Next |
+| 11 | Admin lesson metadata edit/save | ✅ Completed |
+| 12 | Publish readiness polish / CSV-JSON export backup | Next |
 
 **Exit criteria:** New lesson published through admin UI without deploying code.
 

@@ -77,13 +77,29 @@ export type CreateDraftLessonInput = {
 };
 
 export type UpdateLessonMetadataInput = {
-  title?: string;
-  chineseTitle?: string;
+  title: string;
+  chineseTitle: string;
   subtitle?: string;
   description?: string;
   duration?: string;
-  status?: AdminContentStatus;
-  orderIndex?: number;
+  status: AdminContentStatus;
+  orderIndex: number;
+  vocabularyCount: number;
+  quizCount: number;
+};
+
+export type AdminLessonMetadataRow = {
+  id: string;
+  course_id: string;
+  title: string;
+  chinese_title: string | null;
+  subtitle: string | null;
+  description: string | null;
+  duration: string | null;
+  status: string;
+  order_index: number;
+  vocabulary_count: number;
+  quiz_count: number;
 };
 
 export type CreateSubtitleLineInput = {
@@ -254,6 +270,84 @@ export async function createDraftLesson(
   }
 }
 
+export function validateUpdateLessonMetadataInput(
+  input: UpdateLessonMetadataInput
+): AdminContentResult<UpdateLessonMetadataInput> {
+  const title = input.title?.trim() ?? "";
+  const chineseTitle = input.chineseTitle?.trim() ?? "";
+
+  if (!title) {
+    return { data: null, error: "Title заавал." };
+  }
+  if (!chineseTitle) {
+    return { data: null, error: "Chinese title заавал." };
+  }
+  if (!isValidLessonStatus(input.status)) {
+    return {
+      data: null,
+      error: "Status: draft, available, archived л сонгоно уу.",
+    };
+  }
+  if (!Number.isFinite(input.orderIndex) || input.orderIndex < 1) {
+    return { data: null, error: "Order index 1-ээс эхлэх тоо байх ёстой." };
+  }
+  if (!Number.isFinite(input.vocabularyCount) || input.vocabularyCount < 0) {
+    return { data: null, error: "Vocabulary count 0 буюу түүнээс их байх ёстой." };
+  }
+  if (!Number.isFinite(input.quizCount) || input.quizCount < 0) {
+    return { data: null, error: "Quiz count 0 буюу түүнээс их байх ёстой." };
+  }
+
+  return {
+    data: {
+      title,
+      chineseTitle,
+      subtitle: input.subtitle?.trim() ?? "",
+      description: input.description?.trim() ?? "",
+      duration: input.duration?.trim() ?? "",
+      status: input.status,
+      orderIndex: Math.floor(input.orderIndex),
+      vocabularyCount: Math.floor(input.vocabularyCount),
+      quizCount: Math.floor(input.quizCount),
+    },
+    error: null,
+  };
+}
+
+export async function getAdminLessonMetadataById(
+  lessonId: string
+): Promise<AdminContentResult<AdminLessonMetadataRow>> {
+  if (!supabase || !hasSupabaseConfig) {
+    return notConfigured();
+  }
+
+  const gate = await requireAdmin();
+  if (gate.error) {
+    return { data: null, error: gate.error };
+  }
+
+  try {
+    const { data, error } = await supabase
+      .from("lessons")
+      .select(
+        "id, course_id, title, chinese_title, subtitle, description, duration, status, order_index, vocabulary_count, quiz_count"
+      )
+      .eq("id", lessonId)
+      .maybeSingle();
+
+    if (error) {
+      return { data: null, error: formatWriteError(error) };
+    }
+    if (!data) {
+      return { data: null, error: "Хичээл олдсонгүй." };
+    }
+
+    return { data: data as AdminLessonMetadataRow, error: null };
+  } catch {
+    return { data: null, error: "Metadata уншихад алдаа гарлаа." };
+  }
+}
+
 export async function updateLessonMetadata(
   lessonId: string,
   input: UpdateLessonMetadataInput
@@ -267,27 +361,27 @@ export async function updateLessonMetadata(
     return { data: null, error: gate.error };
   }
 
-  const patch: Record<string, string | number> = {};
-  if (input.title !== undefined) patch.title = input.title.trim();
-  if (input.chineseTitle !== undefined) {
-    patch.chinese_title = input.chineseTitle.trim();
+  const validated = validateUpdateLessonMetadataInput(input);
+  if (validated.error || !validated.data) {
+    return { data: null, error: validated.error ?? "Validation failed." };
   }
-  if (input.subtitle !== undefined) patch.subtitle = input.subtitle.trim() || "";
-  if (input.description !== undefined) {
-    patch.description = input.description.trim() || "";
-  }
-  if (input.duration !== undefined) patch.duration = input.duration.trim() || "";
-  if (input.status !== undefined) patch.status = input.status;
-  if (input.orderIndex !== undefined) patch.order_index = input.orderIndex;
 
-  if (Object.keys(patch).length === 0) {
-    return { data: { id: lessonId }, error: null };
-  }
+  const v = validated.data;
 
   try {
     const { error } = await supabase
       .from("lessons")
-      .update(patch)
+      .update({
+        title: v.title,
+        chinese_title: v.chineseTitle,
+        subtitle: v.subtitle || null,
+        description: v.description || null,
+        duration: v.duration || null,
+        status: v.status,
+        order_index: v.orderIndex,
+        vocabulary_count: v.vocabularyCount,
+        quiz_count: v.quizCount,
+      })
       .eq("id", lessonId);
 
     if (error) {

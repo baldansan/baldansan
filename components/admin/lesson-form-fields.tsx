@@ -1,7 +1,8 @@
 "use client";
 
-import type { LessonContent } from "@/types/lesson-content";
+import { getAdminPublishStatus } from "@/lib/admin/lesson-status";
 import type { AdminContentStatus } from "@/lib/admin/lesson-status";
+import type { LessonContent } from "@/types/lesson-content";
 
 export type LessonFormValues = {
   id: string;
@@ -31,10 +32,10 @@ export const emptyLessonFormValues: LessonFormValues = {
   quizCount: "0",
 };
 
-export function lessonToFormValues(lesson: LessonContent): LessonFormValues {
-  const status: AdminContentStatus =
-    lesson.status === "available" ? "available" : "draft";
-
+export function lessonToFormValues(
+  lesson: LessonContent,
+  options?: { orderIndex?: number }
+): LessonFormValues {
   return {
     id: lesson.id,
     courseId: lesson.courseId,
@@ -43,8 +44,9 @@ export function lessonToFormValues(lesson: LessonContent): LessonFormValues {
     subtitle: lesson.subtitle,
     description: lesson.description,
     duration: lesson.duration,
-    status,
-    orderIndex: "",
+    status: getAdminPublishStatus(lesson),
+    orderIndex:
+      options?.orderIndex != null ? String(options.orderIndex) : "",
     vocabularyCount: String(lesson.vocabularyCount),
     quizCount: String(lesson.quizCount),
   };
@@ -58,6 +60,8 @@ type Props = {
   showOrderIndex?: boolean;
   /** Hide vocab/quiz count on create (always 0 in DB). */
   hideCounts?: boolean;
+  /** Lock ID / course on edit page. */
+  lockIds?: boolean;
 };
 
 const inputClass =
@@ -69,6 +73,7 @@ export function LessonFormFields({
   onChange,
   showOrderIndex = false,
   hideCounts = false,
+  lockIds = false,
 }: Props) {
   function update<K extends keyof LessonFormValues>(
     key: K,
@@ -85,7 +90,7 @@ export function LessonFormFields({
         <input
           className={inputClass}
           value={values.id}
-          disabled={readOnly}
+          disabled={readOnly || lockIds}
           onChange={(e) => update("id", e.target.value)}
           placeholder="5"
         />
@@ -95,7 +100,7 @@ export function LessonFormFields({
         <input
           className={inputClass}
           value={values.courseId}
-          disabled={readOnly}
+          disabled={readOnly || lockIds}
           onChange={(e) => update("courseId", e.target.value)}
           placeholder="hsk5"
         />
@@ -175,7 +180,9 @@ export function LessonFormFields({
             placeholder="5"
           />
           <span className="mt-1 block text-xs text-slate-500">
-            Хоосон бол курс доторх дараагийн дугаар автоматаар.
+            {lockIds
+              ? "Курсын дарааллын дугаар (заавал)."
+              : "Хоосон бол курс доторх дараагийн дугаар автоматаар."}
           </span>
         </label>
       ) : null}

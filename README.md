@@ -127,7 +127,7 @@ Helpers: [lib/supabase/auth.ts](./lib/supabase/auth.ts). Header shows **Нэвт
 
 ## Admin content management roadmap
 
-**`/admin`** requires login and a row in `admin_profiles` (see setup below). Admins manage draft lessons, edit subtitles/vocabulary/quiz, and publish when complete.
+**`/admin`** requires login and a row in `admin_profiles` (see setup below). Admins manage draft lessons, **edit lesson metadata** (title, status, counts, order), edit subtitles/vocabulary/quiz, and publish when complete.
 
 **Lesson statuses** (`lessons.status`): `draft` (hidden from public), `available` (published), `archived` (hidden).
 
@@ -139,11 +139,13 @@ Helpers: [lib/supabase/auth.ts](./lib/supabase/auth.ts). Header shows **Нэвт
 
 **Routes:** `/admin` · `/admin/lessons` · `/admin/lessons/new` · `/admin/lessons/1/edit` (example)
 
-**Admin editors:** `/admin/lessons/new` (draft metadata) · `/admin/lessons/{id}/edit` (subtitle, vocabulary, quiz CRUD).
+**Admin editors:** `/admin/lessons/new` (draft metadata) · `/admin/lessons/{id}/edit` (metadata save, subtitle, vocabulary, quiz CRUD).
+
+**Metadata edit:** `/admin/lessons/{id}/edit` → edit fields → **Save metadata** / **Refresh counts** → preview at `/lessons/{id}?preview=admin`.
 
 **Bulk import:** `/admin/lessons/{id}/edit` → generate ChatGPT prompt → paste JSON → validate → import → QA summary.
 
-**Next step:** Phase 5 Step 11 — Admin lesson metadata edit/save and publish polish.
+**Next step:** Phase 5 Step 12 — Publish readiness polish / CSV-JSON export backup.
 
 ## Documentation
 

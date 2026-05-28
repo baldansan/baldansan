@@ -14,10 +14,7 @@ import { LessonQaBadge } from "@/components/admin/lesson-qa-badge";
 import { SubtitleEditor } from "@/components/admin/subtitle-editor";
 import { VocabularyEditor } from "@/components/admin/vocabulary-editor";
 import { QuizEditor } from "@/components/admin/quiz-editor";
-import {
-  lessonToFormValues,
-  LessonFormFields,
-} from "@/components/admin/lesson-form-fields";
+import { LessonMetadataEditor } from "@/components/admin/lesson-metadata-editor";
 import {
   getLessonMetadataCounts,
   type LessonCompleteness,
@@ -26,12 +23,16 @@ import type { LessonContent } from "@/types/lesson-content";
 
 type Props = {
   lesson: LessonContent;
+  orderIndex: number;
   initialCompleteness: LessonCompleteness;
 };
 
-export function LessonEditForm({ lesson, initialCompleteness }: Props) {
+export function LessonEditForm({
+  lesson,
+  orderIndex,
+  initialCompleteness,
+}: Props) {
   const publishStatus = getAdminPublishStatus(lesson);
-  const values = lessonToFormValues(lesson);
   const [subtitleCount, setSubtitleCount] = useState(
     lesson.timedSubtitles.length
   );
@@ -119,8 +120,7 @@ export function LessonEditForm({ lesson, initialCompleteness }: Props) {
           Хичээл засах · {lesson.id}
         </h1>
         <p className="mt-2 text-sm text-slate-600">
-          Metadata preview + subtitle / vocabulary / quiz editors. Lesson metadata
-          update still coming soon.
+          Metadata засах, bulk import, subtitle / vocabulary / quiz editors.
         </p>
         <div className="mt-3 flex flex-wrap items-center gap-2">
           <LessonQaBadge status={qa.qaStatus} />
@@ -174,12 +174,20 @@ export function LessonEditForm({ lesson, initialCompleteness }: Props) {
         ) : null}
       </div>
 
-      <section className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:p-6">
-        <h2 className="text-base font-semibold text-slate-900">Metadata preview</h2>
-        <div className="mt-3">
-          <LessonFormFields values={values} readOnly />
-        </div>
-      </section>
+      <LessonMetadataEditor
+        lesson={lesson}
+        orderIndex={orderIndex}
+        vocabActual={vocabActual}
+        quizActual={quizActual}
+        vocabMeta={vocabMeta}
+        quizMeta={quizMeta}
+        contentReadyForPublish={qaPublishReady}
+        onSaved={() => void refreshMetaCounts()}
+        onCountsRefreshed={(vocab, quiz) => {
+          setVocabMeta(vocab);
+          setQuizMeta(quiz);
+        }}
+      />
 
       <ImportQaSummary
         lesson={lesson}

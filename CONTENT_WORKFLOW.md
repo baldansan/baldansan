@@ -21,6 +21,14 @@ QA badge **Complete** means all checks pass. **Needs review** lists warnings (e.
 
 Admins can create draft lesson metadata from **`/admin/lessons/new`** → **Save draft** → row in `lessons` with `vocabulary_count` / `quiz_count` = 0, default `status = draft`. Redirects to `/admin/lessons/{id}/edit`.
 
+After draft creation, admins can **edit and save metadata** on **`/admin/lessons/{id}/edit`** before adding or importing content:
+
+- Fields: title, chinese_title, subtitle, description, duration, status (`draft` / `available` / `archived`), order_index, vocabulary_count, quiz_count
+- **Save metadata** — writes to Supabase via `updateLessonMetadata` (anon key + admin JWT + RLS)
+- **Refresh counts** — syncs `vocabulary_count` / `quiz_count` from actual child rows
+- Count mismatch warnings when metadata counts differ from DB row counts
+- Status `available` shows a non-blocking warning if content is incomplete; stricter checks remain on **Publishing controls**
+
 ### Add content on edit page (Steps 5–7)
 
 On **`/admin/lessons/{id}/edit`**:

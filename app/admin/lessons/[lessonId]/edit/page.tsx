@@ -4,6 +4,7 @@ import { EmptyState } from "@/components/empty-state";
 import { analyzeLessonQa } from "@/lib/admin/lesson-qa";
 import { getLessonById } from "@/lib/content";
 import {
+  getAdminLessonMetadataById,
   getLessonCompleteness,
   type LessonCompleteness,
 } from "@/lib/supabase/admin-content";
@@ -44,8 +45,17 @@ export default async function AdminEditLessonPage({ params }: Props) {
   const initialCompleteness: LessonCompleteness =
     completenessResult.data ?? completenessFromLesson(lesson);
 
+  const metaResult = await getAdminLessonMetadataById(lessonId);
+  const orderIndex =
+    metaResult.data?.order_index ??
+    (Number.isFinite(Number(lessonId)) ? Number(lessonId) : 1);
+
   return (
-    <LessonEditForm lesson={lesson} initialCompleteness={initialCompleteness} />
+    <LessonEditForm
+      lesson={lesson}
+      orderIndex={orderIndex}
+      initialCompleteness={initialCompleteness}
+    />
   );
 }
 
