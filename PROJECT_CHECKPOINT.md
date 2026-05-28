@@ -2,23 +2,23 @@
 
 **Project:** Buunduu Surtsgaay (Бөөндөө Сурцгаая)  
 **Checkpoint date:** May 2026  
-**Status:** Phase 4 **completed**; Phase 5 Step 1 **started** — admin content management planning
+**Status:** Phase 4 **completed**; Phase 5 Step 1 **completed** — admin foundation
 
 ---
 
-## Phase 5 Step 1 — Admin content management planning — **Completed**
+## Phase 5 Admin Foundation — **Completed**
 
-Planning and documentation only (no admin UI, no route changes).
+Admin planning docs, dashboard shell, lesson management UI, and lesson editor skeleton. No Supabase content writes.
 
-| Deliverable | Path |
-|-------------|------|
-| Admin roadmap | [ADMIN_PLAN.md](./ADMIN_PLAN.md) |
-| Lesson upload workflow | [CONTENT_WORKFLOW.md](./CONTENT_WORKFLOW.md) |
-| Admin RLS (planned SQL) | [supabase/policies/002_admin_content_policies.sql](./supabase/policies/002_admin_content_policies.sql) |
-| Bootstrap admin guide | [supabase/admin/README.md](./supabase/admin/README.md) |
-| Schema/docs updates | [DATABASE_SCHEMA.md](./DATABASE_SCHEMA.md), [DEVELOPMENT_PLAN.md](./DEVELOPMENT_PLAN.md), [AUTH_PLAN.md](./AUTH_PLAN.md), [README.md](./README.md) |
+| Area | Deliverable |
+|------|-------------|
+| Docs | [ADMIN_PLAN.md](./ADMIN_PLAN.md), [CONTENT_WORKFLOW.md](./CONTENT_WORKFLOW.md), [supabase/admin/README.md](./supabase/admin/README.md), `002_admin_content_policies.sql` |
+| Routes | `/admin`, `/admin/lessons`, `/admin/lessons/new`, `/admin/lessons/[lessonId]/edit` |
+| UI | `components/admin/*` — header, cards, lesson list (read), forms (save disabled) |
+| Nav | Header Admin link (logged-in); Profile content admin card |
+| Safety | No DB writes; no service_role in client |
 
-**Next:** Phase 5 Step 2 — Admin role model + RLS policy setup (apply `admin_profiles`, status migration, test policies).
+**Next:** Phase 5 Step 2 — Admin role setup and protected admin access.
 
 ---
 
@@ -86,6 +86,10 @@ Audited routes, navigation, Supabase-first helpers, localStorage progress, UI em
 | `/review` | Review learned words + quiz summary |
 | `/login` | Sign in |
 | `/signup` | Sign up |
+| `/admin` | Admin dashboard shell |
+| `/admin/lessons` | Lesson list (read-only) |
+| `/admin/lessons/new` | New lesson form skeleton |
+| `/admin/lessons/[lessonId]/edit` | Edit lesson form skeleton |
 
 ---
 

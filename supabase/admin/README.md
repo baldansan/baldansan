@@ -2,6 +2,8 @@
 
 How to grant **admin** access for Phase 5 content management. The app does not promote users to admin automatically.
 
+**App status (Step 1):** `/admin` UI exists for logged-in users. **Admin role is not enforced yet** — Step 2 will add `admin_profiles` and gate write access. **No content writes** from the client until RLS and server-safe actions are in place.
+
 ---
 
 ## How `admin_profiles` works

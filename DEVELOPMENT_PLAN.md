@@ -174,23 +174,23 @@ Phased roadmap from MVP demo to production product.
 
 **Goal:** Non-developers can publish and manage lesson content (admin workflow) without SQL seeds or code deploys.
 
-**Phase 5 Step 1 — Completed:** Admin workflow planning.
+**Phase 5 Step 1 — Completed:** Admin foundation (docs + UI shell, no DB writes).
 
-- [ADMIN_PLAN.md](./ADMIN_PLAN.md) — why admin CMS, security, roadmap
-- [CONTENT_WORKFLOW.md](./CONTENT_WORKFLOW.md) — draft → publish → verify workflow
-- [supabase/policies/002_admin_content_policies.sql](./supabase/policies/002_admin_content_policies.sql) — planned `admin_profiles` + content admin RLS (do not auto-run)
-- [supabase/admin/README.md](./supabase/admin/README.md) — manual admin bootstrap
-- [DATABASE_SCHEMA.md](./DATABASE_SCHEMA.md) — Admin content management plan section
-- No admin UI, no upload forms, no user-facing route changes
+- [ADMIN_PLAN.md](./ADMIN_PLAN.md), [CONTENT_WORKFLOW.md](./CONTENT_WORKFLOW.md), [supabase/admin/README.md](./supabase/admin/README.md)
+- [supabase/policies/002_admin_content_policies.sql](./supabase/policies/002_admin_content_policies.sql) — planned RLS (do not auto-run)
+- Routes: `/admin`, `/admin/lessons`, `/admin/lessons/new`, `/admin/lessons/[id]/edit`
+- `components/admin/*` — dashboard, lesson list (read), form skeletons (disabled save)
+- Header **Admin** link + Profile content admin card (logged-in only)
+- Learner routes unchanged; Supabase-first + local fallback unchanged
 
 **Phase 5 roadmap:**
 
 | Step | Focus | Status |
 |------|--------|--------|
-| 1 | Admin workflow planning | ✅ Completed |
-| 2 | Admin role model + RLS policy design / schema for draft·archived | Next |
-| 3 | Admin dashboard shell | Planned |
-| 4 | Lesson create/edit form | Planned |
+| 1 | Admin foundation and dashboard shell | ✅ Completed |
+| 2 | Admin role table + manual admin setup + protected admin access | Next |
+| 3 | Admin lesson list enhancements (preview, draft filter with DB statuses) | Planned |
+| 4 | Lesson create/edit with safe draft writes | Planned |
 | 5 | Subtitle editor | Planned |
 | 6 | Vocabulary editor | Planned |
 | 7 | Quiz editor | Planned |

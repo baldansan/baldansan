@@ -68,6 +68,12 @@ export function AuthStatus() {
   if (user) {
     return (
       <div className="flex flex-col items-end gap-1 sm:flex-row sm:items-center sm:gap-2">
+        <Link
+          href="/admin"
+          className="rounded-full border border-slate-200 px-2.5 py-1 text-xs font-medium text-slate-600 transition-colors hover:border-emerald-200 hover:text-emerald-700"
+        >
+          Admin
+        </Link>
         <span
           className="max-w-[8rem] truncate text-xs text-slate-600 sm:max-w-[10rem]"
           title={user.email}

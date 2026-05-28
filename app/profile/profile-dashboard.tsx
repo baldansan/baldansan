@@ -144,6 +144,22 @@ export function ProfileDashboard() {
           />
         ) : null}
 
+        {authUser ? (
+          <section className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:p-6">
+            <h2 className="text-lg font-semibold text-slate-900">Content admin</h2>
+            <p className="mt-2 text-sm text-slate-600">
+              Контент удирдах admin хэсэг. Admin эрхийг дараагийн алхамд
+              баталгаажуулна.
+            </p>
+            <Link
+              href="/admin"
+              className="mt-4 inline-flex rounded-full border border-emerald-200 bg-emerald-50 px-5 py-2.5 text-sm font-semibold text-emerald-800 transition-colors hover:bg-emerald-100"
+            >
+              Admin самбар →
+            </Link>
+          </section>
+        ) : null}
+
         <section className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:p-6">
           {authUser ? (
             <>

@@ -2,7 +2,7 @@
 
 A Mongolian–Chinese language learning web app. Users learn Chinese through short video lessons, subtitles, vocabulary, and quizzes.
 
-**Current:** Supabase-first lesson content with local fallback, dynamic lessons 1–4, **Supabase Auth**, and account progress (localStorage backup). **Phase 5** (admin content management) is in planning — Step 1 complete.
+**Current:** Supabase-first lesson content with local fallback, dynamic lessons 1–4, **Supabase Auth**, account progress, and **admin UI shell** at `/admin` (read-only; no content writes yet).
 
 ## Tech stack
 
@@ -38,6 +38,8 @@ A Mongolian–Chinese language learning web app. Users learn Chinese through sho
 | `/review` | Daily review |
 | `/login` | Sign in |
 | `/signup` | Sign up |
+| `/admin` | Admin dashboard (logged-in; read-only shell) |
+| `/admin/lessons` | Lesson management list |
 
 Examples: `/lessons/1`, `/lessons/4/quiz`. Invalid IDs (e.g. `/lessons/999`) show lesson not found.
 
@@ -123,15 +125,17 @@ Helpers: [lib/supabase/auth.ts](./lib/supabase/auth.ts). Header shows **Нэвт
 
 **Guest fallback:** Progress works without login in `localStorage`. After login, use **Profile → Account руу хадгалах** to merge guest progress into the account.
 
-## Admin roadmap (Phase 5 — planning)
+## Admin content management roadmap
 
-Admins will manage lessons in Supabase (no SQL seeds required for new content). Step 1 is docs and policy design only.
+Logged-in users can open **`/admin`** (dashboard shell). Lesson list reads from Supabase-first helpers; create/edit forms are UI skeletons with **save disabled** — no database writes yet.
 
 - [ADMIN_PLAN.md](./ADMIN_PLAN.md) — admin CMS roadmap and security
 - [CONTENT_WORKFLOW.md](./CONTENT_WORKFLOW.md) — create → publish → verify workflow
-- [supabase/admin/README.md](./supabase/admin/README.md) — grant admin manually (`admin_profiles`)
+- [supabase/admin/README.md](./supabase/admin/README.md) — future `admin_profiles` bootstrap
 
-**Next step:** Phase 5 Step 2 — Admin role model + RLS SQL setup.
+**Routes:** `/admin` · `/admin/lessons` · `/admin/lessons/new` · `/admin/lessons/1/edit` (example)
+
+**Next step:** Phase 5 Step 2 — Admin role setup and protected admin access.
 
 ## Documentation
 
