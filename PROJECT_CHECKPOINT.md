@@ -174,6 +174,12 @@ Next Improvement Batch: course detail now renders Supabase lesson list including
 - `/profile` — Миний суралцах ахиц dashboard (completed/started lessons, learned words, quiz history)
 - Continue learning card from last active lesson; Header and BottomNav Profile → `/profile`
 
+**Continue learning flow added** on Home, Courses, and Course Detail using localStorage progress.
+
+- Home: continue last lesson or start HSK5; completed lesson count when available
+- Courses: HSK5 card shows Completed X / total, progress bar, Continue button
+- `/courses/hsk5`: lesson cards show Not started / Started / Completed; Continue / Review / Start actions
+
 ---
 
 ## Next recommended tasks

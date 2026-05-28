@@ -1,13 +1,20 @@
 import Link from "next/link";
 import { AppHeader } from "@/components/app-header";
+import { CoursesHsk5Progress } from "@/components/courses-hsk5-progress";
 import { courses } from "@/data/courses";
+import { getLessonsByCourseId } from "@/lib/content";
 import type { Course } from "@/types/course";
 
 function statusLabel(status: Course["status"]) {
   return status === "available" ? "Available" : "Coming soon";
 }
 
-export default function CoursesPage() {
+export const dynamic = "force-dynamic";
+
+export default async function CoursesPage() {
+  const hsk5Lessons = await getLessonsByCourseId("hsk5");
+  const hsk5LessonIds = hsk5Lessons.map((lesson) => lesson.id);
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-emerald-50/40 via-white to-white text-slate-900">
       <AppHeader active="courses" />
@@ -47,6 +54,10 @@ export default function CoursesPage() {
                   {course.vocabulary} vocabulary
                 </span>
               </div>
+
+              {course.id === "hsk5" ? (
+                <CoursesHsk5Progress lessonIds={hsk5LessonIds} />
+              ) : null}
 
               <div className="mt-4 flex items-center justify-between gap-3">
                 <span

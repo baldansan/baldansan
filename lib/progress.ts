@@ -231,6 +231,18 @@ export function getLastActiveLessonId(): string | null {
   return store.lastActiveLessonId ?? null;
 }
 
+export function getLessonStatus(lessonId: string): LessonStatus {
+  return getLessonProgress(lessonId).status;
+}
+
+export function getCompletedLessonIds(): string[] {
+  const lessons = getAllLessonProgress();
+  return Object.entries(lessons)
+    .filter(([, progress]) => progress.status === "completed")
+    .map(([lessonId]) => lessonId)
+    .sort((a, b) => Number(a) - Number(b));
+}
+
 export function countStartedLessons(): number {
   const lessons = getAllLessonProgress();
   return Object.values(lessons).filter((lesson) => lesson.status === "started")

@@ -100,6 +100,10 @@ Phased roadmap from MVP demo to production product.
 - `/profile` dashboard from localStorage (stats, continue learning, recent quiz results)
 - Profile link in header and mobile bottom nav
 
+**Phase 3 learning UX improvement — Completed:** Continue learning flow on Home, Courses, and HSK5 course detail.
+
+- `getLessonStatus`, `getCompletedLessonIds`; client continue/progress sections from localStorage
+
 **Remaining tasks (Phase 4+):**
 - Supabase Auth; migrate localStorage progress to `user_progress` tables
 

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { AppHeader } from "@/components/app-header";
+import { HomeContinueSection } from "@/components/home-continue-section";
 import { BRAND_NAME_EN, BRAND_NAME_MN } from "@/lib/brand";
 
 export default function Home() {
@@ -37,6 +38,8 @@ export default function Home() {
             </Link>
           </div>
         </section>
+
+        <HomeContinueSection />
 
         <section className="grid gap-4 sm:grid-cols-3">
           <article className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200">
