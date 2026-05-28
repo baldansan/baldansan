@@ -4,9 +4,9 @@ import { AdminPreviewBanner } from "@/components/admin-preview-banner";
 import { AppHeader } from "@/components/app-header";
 import { BottomNav } from "@/components/bottom-nav";
 import { LessonPathCard } from "@/components/lesson-path-card";
+import { LessonDetailMediaSection } from "@/components/lesson-media-display";
 import { LessonProgressCard } from "@/components/lesson-progress-card";
 import { LessonUnavailable } from "@/components/lesson-unavailable";
-import { WatchLessonLink } from "@/components/watch-lesson-link";
 import { getAllLessonIdsSync, coursePath } from "@/lib/content";
 import { lessonPreviewPath } from "@/lib/lesson-publish";
 import { resolveLessonPageAccess } from "@/lib/lesson-public-access";
@@ -73,22 +73,7 @@ export default async function LessonDetailPage({
 
         <LessonPathCard lessonId={lesson.id} adminPreview={adminPreview} />
 
-        <section className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:p-6">
-          <div className="flex aspect-video w-full items-center justify-center rounded-xl bg-slate-100 ring-1 ring-slate-200">
-            <p className="text-sm font-medium text-slate-500">
-              {lesson.videoPlaceholder}
-            </p>
-          </div>
-          <div className="mt-4 flex justify-center sm:justify-start">
-            <WatchLessonLink
-              lessonId={lesson.id}
-              adminPreview={adminPreview}
-              className="rounded-full bg-emerald-500 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-emerald-600"
-            >
-              Watch lesson
-            </WatchLessonLink>
-          </div>
-        </section>
+        <LessonDetailMediaSection lesson={lesson} adminPreview={adminPreview} />
 
         <section className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:p-6">
           <h2 className="text-lg font-semibold text-slate-900">Subtitle preview</h2>

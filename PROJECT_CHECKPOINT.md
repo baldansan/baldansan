@@ -2,7 +2,22 @@
 
 **Project:** Buunduu Surtsgaay (Бөөндөө Сурцгаая)  
 **Checkpoint date:** May 2026  
-**Status:** Phase 4 **completed**; Phase 5 Step 14 Lesson Builder workflow **completed**
+**Status:** Phase 4 **completed**; Phase 5 Step 15 media metadata foundation **completed**
+
+---
+
+## Phase 5 Step 15 — Lesson media/video metadata — **Completed**
+
+Phase 5 Step 15: Lesson media/video metadata management foundation added.
+
+| Area | Deliverable |
+|------|-------------|
+| Migration | `002_lesson_media_fields.sql` |
+| Admin | `lesson-media-editor`, `updateLessonMedia` |
+| Public | `lesson-media-display` on detail + watch pages |
+| Docs | [MEDIA_WORKFLOW.md](./MEDIA_WORKFLOW.md) |
+
+**Next:** Phase 5 Step 16 — Supabase Storage upload for lesson media. Or Phase 5 Final Audit.
 
 ---
 
@@ -15,8 +30,6 @@ Phase 5 Step 14: Guided Lesson Builder workflow added.
 | Route | `/admin/lesson-builder` |
 | UI | `lesson-builder-workflow`, `lesson-builder-checklist`, `lesson-package-summary` |
 | Docs | [LESSON_BUILDER_WORKFLOW.md](./LESSON_BUILDER_WORKFLOW.md) |
-
-**Next:** Phase 5 Step 15 — Media/video placeholder and lesson asset management. Or Phase 5 Final Audit.
 
 ---
 

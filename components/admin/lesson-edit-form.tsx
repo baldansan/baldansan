@@ -19,6 +19,7 @@ import { SubtitleEditor } from "@/components/admin/subtitle-editor";
 import { VocabularyEditor } from "@/components/admin/vocabulary-editor";
 import { QuizEditor } from "@/components/admin/quiz-editor";
 import { LessonMetadataEditor } from "@/components/admin/lesson-metadata-editor";
+import { LessonMediaEditor } from "@/components/admin/lesson-media-editor";
 import {
   getLessonMetadataCounts,
   type LessonCompleteness,
@@ -193,6 +194,13 @@ export function LessonEditForm({
             setQuizMeta(quiz);
           }}
         />
+      </AdminToolGroup>
+
+      <AdminToolGroup
+        title="Media"
+        description="Video, thumbnail, audio URL metadata — upload ирээдүйд Storage ашиглана."
+      >
+        <LessonMediaEditor lesson={lesson} />
       </AdminToolGroup>
 
       <AdminToolGroup

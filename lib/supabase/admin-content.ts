@@ -88,6 +88,14 @@ export type UpdateLessonMetadataInput = {
   quizCount: number;
 };
 
+export type UpdateLessonMediaInput = {
+  videoUrl?: string;
+  thumbnailUrl?: string;
+  audioUrl?: string;
+  sourceNote?: string;
+  mediaStatus: "missing" | "pending" | "ready";
+};
+
 export type AdminLessonMetadataRow = {
   id: string;
   course_id: string;
@@ -100,6 +108,11 @@ export type AdminLessonMetadataRow = {
   order_index: number;
   vocabulary_count: number;
   quiz_count: number;
+  video_url: string | null;
+  thumbnail_url: string | null;
+  audio_url: string | null;
+  source_note: string | null;
+  media_status: string;
 };
 
 export type CreateSubtitleLineInput = {
@@ -330,7 +343,7 @@ export async function getAdminLessonMetadataById(
     const { data, error } = await supabase
       .from("lessons")
       .select(
-        "id, course_id, title, chinese_title, subtitle, description, duration, status, order_index, vocabulary_count, quiz_count"
+        "id, course_id, title, chinese_title, subtitle, description, duration, status, order_index, vocabulary_count, quiz_count, video_url, thumbnail_url, audio_url, source_note, media_status"
       )
       .eq("id", lessonId)
       .maybeSingle();
@@ -392,6 +405,114 @@ export async function updateLessonMetadata(
   } catch {
     return { data: null, error: "Хичээл шинэчлэхэд алдаа гарлаа." };
   }
+}
+
+const VALID_MEDIA_STATUSES = ["missing", "pending", "ready"] as const;
+
+function isValidMediaStatus(
+  status: string
+): status is UpdateLessonMediaInput["mediaStatus"] {
+  return (VALID_MEDIA_STATUSES as readonly string[]).includes(status);
+}
+
+export function validateUpdateLessonMediaInput(
+  input: UpdateLessonMediaInput
+): {
+  data: UpdateLessonMediaInput | null;
+  error: string | null;
+  warnings: string[];
+} {
+  if (!isValidMediaStatus(input.mediaStatus)) {
+    return {
+      data: null,
+      error: "media_status must be missing, pending, or ready.",
+      warnings: [],
+    };
+  }
+
+  const warnings: string[] = [];
+  const checkUrl = (label: string, value?: string) => {
+    const trimmed = value?.trim();
+    if (trimmed && !/^https?:\/\//i.test(trimmed)) {
+      warnings.push(`${label} should start with http:// or https://`);
+    }
+  };
+
+  checkUrl("Video URL", input.videoUrl);
+  checkUrl("Thumbnail URL", input.thumbnailUrl);
+  checkUrl("Audio URL", input.audioUrl);
+
+  return {
+    data: {
+      videoUrl: input.videoUrl?.trim() || undefined,
+      thumbnailUrl: input.thumbnailUrl?.trim() || undefined,
+      audioUrl: input.audioUrl?.trim() || undefined,
+      sourceNote: input.sourceNote?.trim() || undefined,
+      mediaStatus: input.mediaStatus,
+    },
+    error: null,
+    warnings,
+  };
+}
+
+export async function updateLessonMedia(
+  lessonId: string,
+  input: UpdateLessonMediaInput
+): Promise<AdminContentResult<{ id: string; warnings?: string[] }>> {
+  if (!supabase || !hasSupabaseConfig) {
+    return notConfigured();
+  }
+
+  const gate = await requireAdmin();
+  if (gate.error) {
+    return { data: null, error: gate.error };
+  }
+
+  const validated = validateUpdateLessonMediaInput(input);
+  if (!validated.data) {
+    return { data: null, error: validated.error ?? "Validation failed." };
+  }
+
+  const v = validated.data;
+
+  try {
+    const { error } = await supabase
+      .from("lessons")
+      .update({
+        video_url: v.videoUrl || null,
+        thumbnail_url: v.thumbnailUrl || null,
+        audio_url: v.audioUrl || null,
+        source_note: v.sourceNote || null,
+        media_status: v.mediaStatus,
+      })
+      .eq("id", lessonId);
+
+    if (error) {
+      return { data: null, error: formatWriteError(error) };
+    }
+
+    return {
+      data: {
+        id: lessonId,
+        warnings: validated.warnings.length > 0 ? validated.warnings : undefined,
+      },
+      error: null,
+    };
+  } catch {
+    return { data: null, error: "Media metadata хадгалахад алдаа гарлаа." };
+  }
+}
+
+export async function clearLessonMedia(
+  lessonId: string
+): Promise<AdminContentResult<{ id: string }>> {
+  return updateLessonMedia(lessonId, {
+    videoUrl: "",
+    thumbnailUrl: "",
+    audioUrl: "",
+    sourceNote: "",
+    mediaStatus: "missing",
+  });
 }
 
 export async function updateLessonStatus(

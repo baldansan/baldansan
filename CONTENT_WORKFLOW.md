@@ -4,6 +4,8 @@ Admins publish lessons through the Phase 5 admin UI. Public learners only see le
 
 **Preferred workflow:** Use **`/admin/lesson-builder`** for the guided draft → prompt → import → QA → preview → backup → publish checklist. See [LESSON_BUILDER_WORKFLOW.md](./LESSON_BUILDER_WORKFLOW.md).
 
+**Media metadata (Step 15):** Before publish, add video/thumbnail/audio URLs on the edit page and set `media_status` to `ready`. See [MEDIA_WORKFLOW.md](./MEDIA_WORKFLOW.md).
+
 ---
 
 ## Content QA before publish

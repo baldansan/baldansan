@@ -103,6 +103,9 @@ See [CONTENT_WORKFLOW.md](./CONTENT_WORKFLOW.md):
 | 12 | Lesson JSON export and backup tools | ✅ Completed |
 | 13 | Lesson duplicate, restore, destructive import safety | ✅ Completed |
 | 14 | Lesson package generator / full lesson builder | ✅ Completed |
+| 15 | Media/video metadata foundation | ✅ Completed |
+
+Step 15: [MEDIA_WORKFLOW.md](./MEDIA_WORKFLOW.md), `002_lesson_media_fields.sql`, `lesson-media-editor`, public media display.
 
 Step 14: [LESSON_BUILDER_WORKFLOW.md](./LESSON_BUILDER_WORKFLOW.md), `/admin/lesson-builder`, `lesson-builder-checklist`, `lesson-package-summary`.
 

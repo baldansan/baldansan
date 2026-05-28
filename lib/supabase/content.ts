@@ -18,14 +18,8 @@ const DEFAULT_QUIZ_TYPES = [
 
 const VIDEO_PLACEHOLDER = "Video lesson placeholder";
 
-type DbCourse = {
-  id: string;
-  title: string;
-  description: string | null;
-  level: string | null;
-  status: string;
-  order_index: number;
-};
+const LESSON_ROW_SELECT =
+  "id, course_id, title, chinese_title, subtitle, description, duration, vocabulary_count, quiz_count, status, order_index, video_url, thumbnail_url, audio_url, source_note, media_status";
 
 type DbLesson = {
   id: string;
@@ -39,7 +33,37 @@ type DbLesson = {
   quiz_count: number;
   status: string;
   order_index: number;
+  video_url?: string | null;
+  thumbnail_url?: string | null;
+  audio_url?: string | null;
+  source_note?: string | null;
+  media_status?: string | null;
 };
+
+type DbCourse = {
+  id: string;
+  title: string;
+  description: string | null;
+  level: string | null;
+  status: string;
+  order_index: number;
+};
+
+function mapLessonMediaFields(row: DbLesson) {
+  const videoUrl = row.video_url?.trim();
+  const thumbnailUrl = row.thumbnail_url?.trim();
+  const audioUrl = row.audio_url?.trim();
+  const sourceNote = row.source_note?.trim();
+  const mediaStatus = row.media_status?.trim() || "missing";
+
+  return {
+    videoUrl: videoUrl || undefined,
+    thumbnailUrl: thumbnailUrl || undefined,
+    audioUrl: audioUrl || undefined,
+    sourceNote: sourceNote || undefined,
+    mediaStatus,
+  };
+}
 
 type DbSubtitleLine = {
   lesson_id: string;
@@ -127,6 +151,7 @@ function mapLessonRowToSummary(row: DbLesson): LessonContent {
     publishStatus: normalizePublishStatus(row.status),
     videoPlaceholder: VIDEO_PLACEHOLDER,
     watchTotalTime: durationToWatchTime(row.duration),
+    ...mapLessonMediaFields(row),
     subtitlePreview: [],
     timedSubtitles: [],
     vocabulary: [],
@@ -162,6 +187,7 @@ function mapFullLesson(
     publishStatus: normalizePublishStatus(row.status),
     videoPlaceholder: VIDEO_PLACEHOLDER,
     watchTotalTime: durationToWatchTime(row.duration),
+    ...mapLessonMediaFields(row),
     subtitlePreview,
     timedSubtitles,
     vocabulary: vocabulary.map((word) => ({
@@ -296,9 +322,7 @@ async function fetchSupabaseLessonsByCourse(
 
   let query = supabase
     .from("lessons")
-    .select(
-      "id, course_id, title, chinese_title, subtitle, description, duration, vocabulary_count, quiz_count, status, order_index"
-    )
+    .select(LESSON_ROW_SELECT)
     .eq("course_id", courseId);
 
   if (publicOnly) {
@@ -319,9 +343,7 @@ export async function getSupabaseLessonByIdWithClient(
 ): Promise<LessonContent | undefined> {
   const { data: lesson, error: lessonError } = await client
     .from("lessons")
-    .select(
-      "id, course_id, title, chinese_title, subtitle, description, duration, vocabulary_count, quiz_count, status, order_index"
-    )
+    .select(LESSON_ROW_SELECT)
     .eq("id", lessonId)
     .maybeSingle();
 

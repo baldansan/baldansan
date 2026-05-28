@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useMemo, useState } from "react";
 import { AdminSummaryCard } from "@/components/admin/admin-summary-card";
+import { MediaStatusBadge } from "@/components/admin/media-status-badge";
 import { LessonQaBadge } from "@/components/admin/lesson-qa-badge";
 import { LessonStatusBadge } from "@/components/admin/lesson-status-badge";
 import { EmptyState } from "@/components/empty-state";
@@ -69,11 +70,19 @@ export function AdminLessonsList({ reports }: Props) {
         </Link>
       </div>
 
-      <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
+      <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-8">
         <AdminSummaryCard label="Total lessons" value={summary.totalLessons} />
         <AdminSummaryCard label="Available" value={summary.availableCount} />
         <AdminSummaryCard label="Draft" value={summary.draftCount} />
         <AdminSummaryCard label="Archived" value={summary.archivedCount} />
+        <AdminSummaryCard
+          label="Media ready"
+          value={summary.mediaReadyCount}
+        />
+        <AdminSummaryCard
+          label="Media missing"
+          value={summary.mediaMissingCount}
+        />
         <AdminSummaryCard
           label="Total vocabulary"
           value={summary.totalVocabulary}
@@ -141,6 +150,7 @@ export function AdminLessonsList({ reports }: Props) {
                 <th className="px-3 py-3">ID</th>
                 <th className="px-3 py-3">Lesson</th>
                 <th className="px-3 py-3">Status</th>
+                <th className="px-3 py-3">Media</th>
                 <th className="px-3 py-3">QA</th>
                 <th className="hidden px-3 py-3 sm:table-cell">Ready</th>
                 <th className="hidden px-3 py-3 md:table-cell">Counts</th>
@@ -163,6 +173,9 @@ export function AdminLessonsList({ reports }: Props) {
                     </td>
                     <td className="px-3 py-3">
                       <LessonStatusBadge status={publishStatus} />
+                    </td>
+                    <td className="px-3 py-3">
+                      <MediaStatusBadge status={lesson.mediaStatus} />
                     </td>
                     <td className="px-3 py-3">
                       <LessonQaBadge status={report.qaStatus} />

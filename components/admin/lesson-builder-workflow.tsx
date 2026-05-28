@@ -5,6 +5,7 @@ import { useCallback, useEffect, useMemo, useState } from "react";
 import { LessonBuilderChecklist } from "@/components/admin/lesson-builder-checklist";
 import { LessonPackageSummary } from "@/components/admin/lesson-package-summary";
 import { LessonQaBadge } from "@/components/admin/lesson-qa-badge";
+import { MediaStatusBadge } from "@/components/admin/media-status-badge";
 import { LessonStatusBadge } from "@/components/admin/lesson-status-badge";
 import {
   analyzeStoredLessonContent,
@@ -13,6 +14,7 @@ import {
 import { getAdminPublishStatus } from "@/lib/admin/lesson-status";
 import type { LessonQaReport } from "@/lib/admin/lesson-qa";
 import { lessonPreviewPath } from "@/lib/lesson-publish";
+import { hasVideoUrl } from "@/lib/lesson-media";
 import {
   getQuizQuestionsByLessonId,
   getSubtitleLinesByLessonId,
@@ -220,6 +222,18 @@ export function LessonBuilderWorkflow({ reports }: Props) {
                 <dt className="text-slate-500">Quiz</dt>
                 <dd className="text-slate-900">
                   {qaReport?.quizCount ?? selectedReport.quizActual}
+                </dd>
+              </div>
+              <div>
+                <dt className="text-slate-500">Media status</dt>
+                <dd>
+                  <MediaStatusBadge status={selectedLesson.mediaStatus} />
+                </dd>
+              </div>
+              <div>
+                <dt className="text-slate-500">Video URL</dt>
+                <dd className="text-slate-900">
+                  {hasVideoUrl(selectedLesson) ? "Present" : "Missing"}
                 </dd>
               </div>
               <div>

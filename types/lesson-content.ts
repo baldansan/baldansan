@@ -10,6 +10,9 @@ export type LessonContentStatus = "available" | "locked";
 /** Database publish status (admin workflow). */
 export type LessonPublishStatus = "draft" | "available" | "archived";
 
+/** Admin media workflow flag on lessons table. */
+export type LessonMediaStatus = "missing" | "pending" | "ready";
+
 export type LessonContent = {
   id: string;
   courseId: string;
@@ -25,6 +28,16 @@ export type LessonContent = {
   publishStatus: LessonPublishStatus;
   videoPlaceholder: string;
   watchTotalTime: string;
+  /** External video URL when set in Supabase. */
+  videoUrl?: string;
+  /** Cover/thumbnail image URL. */
+  thumbnailUrl?: string;
+  /** Optional audio resource URL. */
+  audioUrl?: string;
+  /** Admin note about media source. */
+  sourceNote?: string;
+  /** missing | pending | ready */
+  mediaStatus?: LessonMediaStatus | string;
   subtitlePreview: SubtitleExample[];
   timedSubtitles: TimedSubtitle[];
   vocabulary: VocabularyWord[];

@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { markLessonStartedSmart } from "@/lib/progress";
+import { LessonWatchMediaSection } from "@/components/lesson-media-display";
 import { AdminPreviewBanner } from "@/components/admin-preview-banner";
 import { AppHeader } from "@/components/app-header";
 import { BottomNav } from "@/components/bottom-nav";
@@ -76,16 +77,7 @@ export function LessonWatchClient({ lesson, adminPreview = false }: Props) {
           </p>
         </section>
 
-        <section className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:p-6">
-          <div className="flex aspect-video w-full items-center justify-center rounded-xl bg-slate-100 ring-1 ring-slate-200">
-            <p className="text-sm font-medium text-slate-500">
-              {lesson.videoPlaceholder}
-            </p>
-          </div>
-          <p className="mt-3 text-center text-sm font-medium text-slate-600">
-            00:00 / {lesson.watchTotalTime}
-          </p>
-        </section>
+        <LessonWatchMediaSection lesson={lesson} />
 
         <section className="rounded-2xl bg-emerald-50/70 p-4 ring-1 ring-emerald-200 sm:p-5">
           <p className="text-xs font-semibold uppercase tracking-wide text-emerald-700">

@@ -134,6 +134,7 @@ Helpers: [lib/supabase/auth.ts](./lib/supabase/auth.ts). Header shows **Нэвт
 - [ADMIN_PLAN.md](./ADMIN_PLAN.md) — admin CMS roadmap and security
 - [CONTENT_WORKFLOW.md](./CONTENT_WORKFLOW.md) — create → publish → verify workflow
 - [LESSON_BUILDER_WORKFLOW.md](./LESSON_BUILDER_WORKFLOW.md) — guided Lesson Builder (draft → publish)
+- [MEDIA_WORKFLOW.md](./MEDIA_WORKFLOW.md) — lesson media URL metadata (video, thumbnail, audio)
 - [LESSON_IMPORT_FORMAT.md](./LESSON_IMPORT_FORMAT.md) — bulk JSON import format (ChatGPT paste)
 - [LESSON_EXPORT_FORMAT.md](./LESSON_EXPORT_FORMAT.md) — full lesson JSON backup export
 - [LESSON_BACKUP_RESTORE.md](./LESSON_BACKUP_RESTORE.md) — duplicate, restore, replace safety
@@ -154,7 +155,9 @@ Helpers: [lib/supabase/auth.ts](./lib/supabase/auth.ts). Header shows **Нэвт
 
 **Lesson Builder:** `/admin/lesson-builder` — select lesson, workflow checklist, QA summary, quick links to edit/preview/export/publish.
 
-**Next step:** Phase 5 Step 15 — Media/video placeholder and lesson asset management. Or Phase 5 Final Audit.
+**Media metadata:** `/admin/lessons/{id}/edit` → Lesson media — video/thumbnail/audio URLs, media status. See [MEDIA_WORKFLOW.md](./MEDIA_WORKFLOW.md).
+
+**Next step:** Phase 5 Step 16 — Supabase Storage upload for lesson media. Or Phase 5 Final Audit.
 
 ## Documentation
 

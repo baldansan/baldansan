@@ -229,7 +229,14 @@ Phased roadmap from MVP demo to production product.
 - [components/admin/lesson-builder-workflow.tsx](./components/admin/lesson-builder-workflow.tsx), [lesson-builder-checklist.tsx](./components/admin/lesson-builder-checklist.tsx), [lesson-package-summary.tsx](./components/admin/lesson-package-summary.tsx)
 - [LESSON_BUILDER_WORKFLOW.md](./LESSON_BUILDER_WORKFLOW.md)
 
-**Next:** Phase 5 Step 15 — Media/video placeholder and lesson asset management. Or Phase 5 Final Audit.
+**Phase 5 Step 15 — Completed:** Lesson media/video metadata foundation.
+
+- [supabase/migrations/002_lesson_media_fields.sql](./supabase/migrations/002_lesson_media_fields.sql) — video_url, thumbnail_url, audio_url, source_note, media_status
+- [components/admin/lesson-media-editor.tsx](./components/admin/lesson-media-editor.tsx), [lib/supabase/admin-content.ts](./lib/supabase/admin-content.ts) — `updateLessonMedia`
+- [components/lesson-media-display.tsx](./components/lesson-media-display.tsx) — public detail + watch media sections
+- [MEDIA_WORKFLOW.md](./MEDIA_WORKFLOW.md)
+
+**Next:** Phase 5 Step 16 — Supabase Storage upload for lesson media. Or Phase 5 Final Audit.
 
 - [lib/supabase/admin-import.ts](./lib/supabase/admin-import.ts) — parse, validate, `bulkImportLessonContent`
 - [components/admin/bulk-import-editor.tsx](./components/admin/bulk-import-editor.tsx) on lesson edit page
@@ -258,8 +265,9 @@ Phased roadmap from MVP demo to production product.
 | 12 | Lesson JSON export and backup tools | ✅ Completed |
 | 13 | Lesson duplicate, restore, destructive import safety | ✅ Completed |
 | 14 | Lesson package generator / full lesson builder | ✅ Completed |
+| 15 | Media/video metadata foundation | ✅ Completed |
 
-**Next (Phase 5):** Step 15 — Media/video placeholder and lesson asset management. Or Phase 5 Final Audit.
+**Next (Phase 5):** Step 16 — Supabase Storage upload for lesson media. Or Phase 5 Final Audit.
 
 **Exit criteria:** New lesson published through admin UI without deploying code.
 

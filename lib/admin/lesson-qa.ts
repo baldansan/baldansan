@@ -1,5 +1,10 @@
 import { getLessonById, getLessonsByCourseId } from "@/lib/content";
 import { getAdminPublishStatus } from "@/lib/admin/lesson-status";
+import {
+  getLessonMediaWarnings,
+  isMediaReady,
+  normalizeMediaStatus,
+} from "@/lib/lesson-media";
 import type { LessonContent } from "@/types/lesson-content";
 
 export type LessonQaStatus = "complete" | "needs_review";
@@ -25,6 +30,8 @@ export type LessonQaSummary = {
   totalQuizQuestions: number;
   needsReviewCount: number;
   completeCount: number;
+  mediaReadyCount: number;
+  mediaMissingCount: number;
 };
 
 function hasLessonMetadata(lesson: LessonContent): boolean {
@@ -126,6 +133,8 @@ export function analyzeLessonQa(lesson: LessonContent): LessonQaReport {
     warnings.push("Count mismatch");
   }
 
+  warnings.push(...getLessonMediaWarnings(lesson));
+
   const qaStatus: LessonQaStatus =
     hasMetadata &&
     subtitleCount > 0 &&
@@ -155,6 +164,8 @@ export function summarizeLessonQa(reports: LessonQaReport[]): LessonQaSummary {
   let totalQuizQuestions = 0;
   let needsReviewCount = 0;
   let completeCount = 0;
+  let mediaReadyCount = 0;
+  let mediaMissingCount = 0;
 
   for (const report of reports) {
     const status = getAdminPublishStatus(report.lesson);
@@ -167,6 +178,15 @@ export function summarizeLessonQa(reports: LessonQaReport[]): LessonQaSummary {
 
     if (report.qaStatus === "complete") completeCount += 1;
     else needsReviewCount += 1;
+
+    if (isMediaReady(report.lesson)) {
+      mediaReadyCount += 1;
+    } else if (
+      normalizeMediaStatus(report.lesson.mediaStatus) === "missing" ||
+      !report.lesson.videoUrl?.trim()
+    ) {
+      mediaMissingCount += 1;
+    }
   }
 
   return {
@@ -178,6 +198,8 @@ export function summarizeLessonQa(reports: LessonQaReport[]): LessonQaSummary {
     totalQuizQuestions,
     needsReviewCount,
     completeCount,
+    mediaReadyCount,
+    mediaMissingCount,
   };
 }
 
