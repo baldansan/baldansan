@@ -41,6 +41,7 @@ app/                         # Pages (App Router)
   lessons/[lessonId]/        # Dynamic lesson routes
 content/courses/hsk5/        # Course + per-lesson content
   lessons/lesson-1.ts …
+templates/                   # Lesson import templates + AI prompt
 data/courses.ts              # Course catalog mock data
 lib/content.ts               # getLessonById, getLessonsByCourseId, …
 types/                       # course.ts, lesson.ts, lesson-content.ts
@@ -79,8 +80,19 @@ npm run lint    # ESLint
 
 Or from Home: **Demo lesson үзэх** or the demo card → `/lessons/1`.
 
+## Adding new lessons
+
+Lessons are **data files only** — no new routes or page components.
+
+1. Copy [templates/lesson-import-template.ts](./templates/lesson-import-template.ts) to `content/courses/hsk5/lessons/lesson-N.ts`
+2. Register in [content/courses/hsk5/lessons/index.ts](./content/courses/hsk5/lessons/index.ts)
+3. Follow [CONTENT_AUTHORING_GUIDE.md](./CONTENT_AUTHORING_GUIDE.md) for testing and git workflow
+
+Templates and AI prompt: [templates/](./templates/) (including [lesson-content-prompt.md](./templates/lesson-content-prompt.md)).
+
 ## Documentation
 
+- [CONTENT_AUTHORING_GUIDE.md](./CONTENT_AUTHORING_GUIDE.md) — how to add or unlock lessons
 - [PROJECT_CHECKPOINT.md](./PROJECT_CHECKPOINT.md) — MVP v1 status, limitations, next tasks
 - [DEVELOPMENT_PLAN.md](./DEVELOPMENT_PLAN.md) — Phased roadmap
 

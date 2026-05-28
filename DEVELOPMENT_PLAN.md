@@ -35,6 +35,13 @@ Phased roadmap from MVP demo to production product.
 
 **Phase 2 Step 2:** Lesson 2 content pipeline validated with available Lesson 2 data—no new routes or page components; update `content/courses/hsk5/lessons/lesson-2.ts` only.
 
+**Phase 2 Step 3 — Completed:** Lesson import templates and content authoring guide.
+
+- `templates/lesson-import-template.ts` — commented TypeScript starter
+- `templates/lesson-import-template.json` — JSON draft structure
+- `templates/lesson-content-prompt.md` — copy-paste AI prompt
+- `CONTENT_AUTHORING_GUIDE.md` — workflow, test URLs, git steps
+
 ---
 
 ## Phase 3: Supabase database

@@ -18,6 +18,8 @@ Lesson pages are **data-driven** via dynamic segments. Content lives under `cont
 
 **Phase 2 Step 2:** Lesson 2 content pipeline validated with available Lesson 2 data (6 subtitles, 12 vocabulary, 5 quiz questions). Lesson 1 unchanged; Lesson 3 remains locked.
 
+**Phase 2 Step 3:** Lesson import templates and content authoring guide completed (`templates/`, `CONTENT_AUTHORING_GUIDE.md`).
+
 ---
 
 ## Completed pages

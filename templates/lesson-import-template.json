@@ -1,0 +1,74 @@
+{
+  "_comment": "Copy this structure when drafting lessons in JSON. Convert to lesson-N.ts before adding to the app. Do not import this file in Next.js.",
+  "lesson": {
+    "id": "REPLACE_ID",
+    "courseId": "hsk5",
+    "title": "Lesson N",
+    "chineseTitle": "REPLACE_中文标题",
+    "subtitle": "REPLACE_Монгол subtitle",
+    "description": "REPLACE_Монгол description",
+    "duration": "9 min",
+    "vocabularyCount": 12,
+    "quizCount": 5,
+    "status": "locked",
+    "videoPlaceholder": "Video lesson placeholder",
+    "watchTotalTime": "09:00"
+  },
+  "subtitlePreview": [
+    {
+      "chinese": "REPLACE_中文",
+      "pinyin": "REPLACE_Pinyin",
+      "mongolian": "REPLACE_Монгол"
+    }
+  ],
+  "timedSubtitles": [
+    {
+      "start": "00:00",
+      "end": "00:03",
+      "chinese": "你真的懂我吗？",
+      "pinyin": "Nǐ zhēn de dǒng wǒ ma?",
+      "mongolian": "Чи намайг үнэхээр ойлгодог уу?"
+    },
+    {
+      "start": "00:04",
+      "end": "00:07",
+      "chinese": "REPLACE_下一句",
+      "pinyin": "REPLACE_pinyin",
+      "mongolian": "REPLACE_mongolian"
+    }
+  ],
+  "vocabulary": [
+    {
+      "id": "word_id_slug",
+      "chinese": "词",
+      "pinyin": "cí",
+      "mongolian": "утга",
+      "hskLevel": "HSK4",
+      "exampleChinese": "例句中文。",
+      "exampleMongolian": "Жишээ Монгол."
+    }
+  ],
+  "quizQuestions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "question": "“词” гэдэг үгийн зөв утга аль вэ?",
+      "options": ["зөв хариулт", "буруу 1", "буруу 2", "буруу 3"],
+      "correctAnswer": "зөв хариулт",
+      "explanation": "Тайлбар энд."
+    },
+    {
+      "id": "q2",
+      "type": "cloze",
+      "question": "我____这就是爱。",
+      "options": ["以为", "理解", "照顾", "细节"],
+      "correctAnswer": "以为",
+      "explanation": "“我以为这就是爱。” = Би үүнийг л хайр гэж бодсон."
+    }
+  ],
+  "quizTypes": [
+    "Multiple choice",
+    "Cloze blank",
+    "Match Chinese to Mongolian"
+  ]
+}
