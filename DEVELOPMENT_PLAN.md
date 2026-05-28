@@ -129,14 +129,21 @@ Phased roadmap from MVP demo to production product.
 - [lib/supabase/auth.ts](./lib/supabase/auth.ts), `/login`, `/signup`, [components/auth-status.tsx](./components/auth-status.tsx)
 - Profile auth section; no Supabase progress writes; RLS not applied yet
 
+**Phase 4 Step 3 — Completed:** Authenticated lesson progress persistence.
+
+- [lib/supabase/progress.ts](./lib/supabase/progress.ts), smart helpers in [lib/progress.ts](./lib/progress.ts)
+- `user_lesson_progress` upsert on watch/quiz pass; localStorage always updated; guests unchanged
+- Run [supabase/policies/001_auth_rls_policies.sql](./supabase/policies/001_auth_rls_policies.sql) before production auth writes
+- Vocabulary and quiz attempts still device-only
+
 **Phase 4 roadmap:**
 
 | Step | Focus |
 |------|--------|
 | 1 ✅ | Auth planning + RLS policy design |
 | 2 ✅ | Auth helpers + login/signup UI |
-| 3 | Persist lesson progress to Supabase — **Next** |
-| 4 | Persist vocabulary learned state to Supabase |
+| 3 ✅ | Persist lesson progress to Supabase |
+| 4 | Persist vocabulary learned state to Supabase — **Next** |
 | 5 | Persist quiz attempts to Supabase |
 | 6 | Migrate / merge localStorage progress after login |
 | 7 | Phase 4 final audit |

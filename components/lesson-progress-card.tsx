@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { LocalProgressNote } from "@/components/local-progress-note";
 import {
-  getLessonProgress,
+  getLessonStatusSmart,
   lessonProgressPercent,
   lessonStatusLabel,
   type LessonStatus,
@@ -17,13 +17,17 @@ export function LessonProgressCard({ lessonId }: Props) {
   const [status, setStatus] = useState<LessonStatus>("not_started");
 
   useEffect(() => {
-    function refresh() {
-      setStatus(getLessonProgress(lessonId).status);
+    async function refresh() {
+      setStatus(await getLessonStatusSmart(lessonId));
     }
 
-    refresh();
-    window.addEventListener("focus", refresh);
-    return () => window.removeEventListener("focus", refresh);
+    const onFocus = () => {
+      void refresh();
+    };
+
+    void refresh();
+    window.addEventListener("focus", onFocus);
+    return () => window.removeEventListener("focus", onFocus);
   }, [lessonId]);
 
   const progressPercent = lessonProgressPercent(status);

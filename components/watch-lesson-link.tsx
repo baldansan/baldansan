@@ -3,7 +3,7 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
 import { lessonWatchPath } from "@/lib/content";
-import { markLessonStarted } from "@/lib/progress";
+import { markLessonStartedSmart } from "@/lib/progress";
 
 type Props = {
   lessonId: string;
@@ -15,7 +15,9 @@ export function WatchLessonLink({ lessonId, className, children }: Props) {
   return (
     <Link
       href={lessonWatchPath(lessonId)}
-      onClick={() => markLessonStarted(lessonId)}
+      onClick={() => {
+        void markLessonStartedSmart(lessonId);
+      }}
       className={className}
     >
       {children}

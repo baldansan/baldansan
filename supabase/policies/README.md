@@ -17,10 +17,12 @@ Without RLS, a leaked anon key could let clients read or write any user's progre
 
 ## When to run
 
-**Do not run `001_auth_rls_policies.sql` until:**
+**Run `supabase/policies/001_auth_rls_policies.sql` before enabling production auth lesson progress writes** (Phase 4 Step 3). The app does not execute this SQL automatically.
+
+Prerequisites:
 
 1. Supabase Auth is configured on the project.
-2. Phase 4 Step 2 (auth helpers + login/signup UI) is ready to test.
+2. Auth helpers + login/signup UI are in place (Step 2).
 3. You understand that enabling RLS on content tables **without** the public `SELECT` policies will break the app's read-only Supabase content fetches.
 
 ### How to apply later
@@ -30,10 +32,11 @@ Without RLS, a leaked anon key could let clients read or write any user's progre
 3. Run in a staging project first.
 4. Verify with the checklist at the bottom of the SQL file.
 
-## Current app behavior (unchanged in Step 1)
+## Current app behavior
 
 - Lesson content: Supabase-first read via anon key + [lib/supabase/content.ts](../../lib/supabase/content.ts).
-- Progress: **localStorage** only via [lib/progress.ts](../../lib/progress.ts) — not written to Supabase yet.
+- Lesson progress (signed in): [lib/supabase/progress.ts](../../lib/supabase/progress.ts) + smart helpers in [lib/progress.ts](../../lib/progress.ts); always mirrored to localStorage.
+- Vocabulary and quiz attempts: **localStorage** only until Steps 4–5.
 
 ## Related docs
 

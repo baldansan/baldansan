@@ -289,3 +289,163 @@ export function hasAnyProgress(): boolean {
   const hasQuiz = Object.keys(store.quizzes).length > 0;
   return hasLesson || hasVocab || hasQuiz;
 }
+
+export type LessonProgressSource = "supabase" | "local";
+
+function buildLocalLessonStatusMap(
+  lessonIds: string[]
+): Record<string, LessonStatus> {
+  const map: Record<string, LessonStatus> = {};
+  for (const lessonId of lessonIds) {
+    map[lessonId] = getLessonStatus(lessonId);
+  }
+  return map;
+}
+
+export function countCompletedFromStatusMap(
+  lessonIds: string[],
+  byLesson: Record<string, LessonStatus>
+): number {
+  return lessonIds.filter((lessonId) => byLesson[lessonId] === "completed")
+    .length;
+}
+
+export function countStartedFromStatusMap(
+  byLesson: Record<string, LessonStatus>
+): number {
+  return Object.values(byLesson).filter((status) => status === "started")
+    .length;
+}
+
+export async function getLessonProgressMapSmart(
+  lessonIds: string[]
+): Promise<{
+  byLesson: Record<string, LessonStatus>;
+  source: LessonProgressSource;
+}> {
+  const byLesson = buildLocalLessonStatusMap(lessonIds);
+
+  const { getCurrentUser } = await import("@/lib/supabase/auth");
+  const { data: user } = await getCurrentUser();
+  if (!user?.id) {
+    return { byLesson, source: "local" };
+  }
+
+  const { getUserLessonProgress, normalizeLessonStatus } = await import(
+    "@/lib/supabase/progress"
+  );
+  const { data, error } = await getUserLessonProgress(user.id);
+  if (error) {
+    console.warn(
+      "[progress] Supabase lesson progress fetch failed; using local.",
+      error
+    );
+    return { byLesson, source: "local" };
+  }
+
+  if (!data?.length) {
+    return { byLesson, source: "local" };
+  }
+
+  const merged = { ...byLesson };
+  for (const row of data) {
+    if (lessonIds.includes(row.lesson_id)) {
+      merged[row.lesson_id] = normalizeLessonStatus(row.status);
+    }
+  }
+  return { byLesson: merged, source: "supabase" };
+}
+
+export async function getLessonStatusSmart(
+  lessonId: string
+): Promise<LessonStatus> {
+  const { byLesson } = await getLessonProgressMapSmart([lessonId]);
+  return byLesson[lessonId] ?? "not_started";
+}
+
+export async function markLessonStartedSmart(lessonId: string): Promise<void> {
+  markLessonStarted(lessonId);
+
+  const { getCurrentUser } = await import("@/lib/supabase/auth");
+  const { data: user } = await getCurrentUser();
+  if (!user?.id) {
+    return;
+  }
+
+  const { markSupabaseLessonStarted } = await import("@/lib/supabase/progress");
+  const { error } = await markSupabaseLessonStarted(user.id, lessonId);
+  if (error) {
+    console.warn(
+      "[progress] Supabase lesson started write failed; local saved.",
+      error
+    );
+  }
+}
+
+export async function markLessonCompletedSmart(lessonId: string): Promise<void> {
+  markLessonCompleted(lessonId);
+
+  const { getCurrentUser } = await import("@/lib/supabase/auth");
+  const { data: user } = await getCurrentUser();
+  if (!user?.id) {
+    return;
+  }
+
+  const { markSupabaseLessonCompleted } = await import(
+    "@/lib/supabase/progress"
+  );
+  const { error } = await markSupabaseLessonCompleted(user.id, lessonId);
+  if (error) {
+    console.warn(
+      "[progress] Supabase lesson completed write failed; local saved.",
+      error
+    );
+  }
+}
+
+export type AccountLessonProgressSummary = {
+  completed: number;
+  started: number;
+  completedLessonIds: string[];
+  startedLessonIds: string[];
+};
+
+export async function getAccountLessonProgressSummary(
+  userId: string
+): Promise<AccountLessonProgressSummary | null> {
+  const { getUserLessonProgress, normalizeLessonStatus } = await import(
+    "@/lib/supabase/progress"
+  );
+  const { data, error } = await getUserLessonProgress(userId);
+  if (error || !data) {
+    if (error) {
+      console.warn(
+        "[progress] Supabase account lesson progress fetch failed.",
+        error
+      );
+    }
+    return null;
+  }
+
+  const completedLessonIds: string[] = [];
+  const startedLessonIds: string[] = [];
+
+  for (const row of data) {
+    const status = normalizeLessonStatus(row.status);
+    if (status === "completed") {
+      completedLessonIds.push(row.lesson_id);
+    } else if (status === "started") {
+      startedLessonIds.push(row.lesson_id);
+    }
+  }
+
+  completedLessonIds.sort((a, b) => Number(a) - Number(b));
+  startedLessonIds.sort((a, b) => Number(a) - Number(b));
+
+  return {
+    completed: completedLessonIds.length,
+    started: startedLessonIds.length,
+    completedLessonIds,
+    startedLessonIds,
+  };
+}

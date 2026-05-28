@@ -2,7 +2,9 @@
 
 This document explains how **Supabase Auth** and **Row Level Security (RLS)** will move the app from device-only `localStorage` progress to real per-user progress in PostgreSQL.
 
-**Phase 4 Step 1 (current):** planning and SQL policy design only — no login UI, no database writes yet.
+**Phase 4 Step 3 (current):** lesson progress persists to Supabase for signed-in users; vocabulary and quiz attempts remain localStorage-only until Steps 4–5.
+
+**Before production auth progress writes:** run [supabase/policies/001_auth_rls_policies.sql](./supabase/policies/001_auth_rls_policies.sql) in the Supabase SQL Editor. The app does not execute SQL automatically.
 
 ---
 
@@ -109,8 +111,8 @@ From [001_initial_schema.sql](./supabase/migrations/001_initial_schema.sql):
 |------|--------|--------|
 | **1** | Auth planning + RLS policy design | ✅ Completed |
 | **2** | Auth helpers + login/signup UI | ✅ Completed |
-| **3** | Persist lesson progress to Supabase | **Next** |
-| **4** | Persist vocabulary learned state to Supabase | Planned |
+| **3** | Persist lesson progress to Supabase | ✅ Completed |
+| **4** | Persist vocabulary learned state to Supabase | **Next** |
 | **5** | Persist quiz attempts to Supabase | Planned |
 | **6** | Migrate / merge localStorage progress after login | Planned |
 | **7** | Phase 4 final audit | Planned |
@@ -124,10 +126,14 @@ From [001_initial_schema.sql](./supabase/migrations/001_initial_schema.sql):
 - Profile shows logged-in email or login CTA
 - **No** Supabase progress writes; **no** RLS applied yet; localStorage unchanged
 
-### Step 3 — Lesson progress in Supabase
+### Step 3 — Lesson progress in Supabase ✅
 
-- Replace or mirror `markLessonStarted` / `markLessonCompleted` with `user_lesson_progress`
-- Course and lesson UI read from DB when logged in
+- [lib/supabase/progress.ts](./lib/supabase/progress.ts) — `getUserLessonProgress`, `upsertUserLessonProgress`, `markSupabaseLessonStarted` / `markSupabaseLessonCompleted`
+- [lib/progress.ts](./lib/progress.ts) — `markLessonStartedSmart` / `markLessonCompletedSmart` (Supabase when logged in + always localStorage)
+- Course (`/courses/hsk5`), lesson cards, quiz ≥70%, watch link/page write lesson rows to `user_lesson_progress`
+- Profile shows **Аккаунттай холбогдсон ахиц** when signed in; device progress note kept
+- **Vocabulary** and **quiz attempt rows** still localStorage-only (planned Steps 4–5)
+- Apply RLS manually: `supabase/policies/001_auth_rls_policies.sql`
 
 ### Step 4 — Vocabulary progress in Supabase
 

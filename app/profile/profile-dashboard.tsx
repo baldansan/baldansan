@@ -12,10 +12,12 @@ import type { AuthUser } from "@/types/auth";
 import {
   countCompletedLessonsAll,
   countStartedLessons,
+  getAccountLessonProgressSummary,
   getAllQuizResults,
   getLastActiveLessonId,
   getTotalLearnedWords,
   hasAnyProgress,
+  type AccountLessonProgressSummary,
   type QuizResultEntry,
 } from "@/lib/progress";
 
@@ -41,22 +43,35 @@ export function ProfileDashboard() {
     null
   );
   const [authUser, setAuthUser] = useState<AuthUser | null>(null);
+  const [accountSummary, setAccountSummary] =
+    useState<AccountLessonProgressSummary | null>(null);
 
   useEffect(() => {
     async function refresh() {
-      setHasProgress(hasAnyProgress());
+      const localHasProgress = hasAnyProgress();
       setCompletedCount(countCompletedLessonsAll());
       setStartedCount(countStartedLessons());
       setLearnedWords(getTotalLearnedWords());
       setQuizResults(getAllQuizResults());
       setLastActiveLessonId(getLastActiveLessonId());
 
+      let user: AuthUser | null = null;
       if (hasSupabaseConfig) {
         const { data } = await getCurrentUser();
-        setAuthUser(data);
-      } else {
-        setAuthUser(null);
+        user = data;
       }
+      setAuthUser(user);
+
+      let summary: AccountLessonProgressSummary | null = null;
+      if (user?.id) {
+        summary = await getAccountLessonProgressSummary(user.id);
+      }
+      setAccountSummary(summary);
+
+      const accountHasProgress = Boolean(
+        summary && (summary.completed > 0 || summary.started > 0)
+      );
+      setHasProgress(localHasProgress || accountHasProgress);
 
       setReady(true);
     }
@@ -88,15 +103,23 @@ export function ProfileDashboard() {
             Миний суралцах ахиц
           </h1>
           <p className="mt-2 text-base text-slate-600">
-            Энэ төхөөрөмж дээр хадгалагдсан ахиц.
+            {authUser
+              ? "Аккаунт болон энэ төхөөрөмж дээрх ахиц."
+              : "Энэ төхөөрөмж дээр хадгалагдсан ахиц."}
           </p>
           <div className="mt-3">
             <LocalProgressNote />
           </div>
-          <p className="mt-3 text-sm leading-6 text-slate-600">
-            Одоогоор ахиц энэ төхөөрөмж дээр хадгалагдаж байна. Дараагийн алхамд
-            аккаунттай холбож хадгална.
-          </p>
+          {authUser ? (
+            <p className="mt-3 text-sm leading-6 text-slate-600">
+              Энэ төхөөрөмж дээр хадгалагдсан ахиц мөн хадгалагдсан хэвээр байна.
+            </p>
+          ) : (
+            <p className="mt-3 text-sm leading-6 text-slate-600">
+              Нэвтэрсний дараа хичээлийн ахицыг аккаунтаар хадгална. Одоогоор зөвхөн
+              энэ төхөөрөмж дээр хадгалагдана.
+            </p>
+          )}
         </section>
 
         <section className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:p-6">
@@ -113,7 +136,7 @@ export function ProfileDashboard() {
                 Одоогоор нэвтрээгүй байна.
               </h2>
               <p className="mt-2 text-sm text-slate-600">
-                Нэвтэрсний дараа ахицаа аккаунтаар хадгалах бэлэн болно.
+                Нэвтэрсний дараа хичээлийн ахицыг аккаунтаар хадгална.
               </p>
               <Link
                 href="/login"
@@ -124,6 +147,51 @@ export function ProfileDashboard() {
             </>
           )}
         </section>
+
+        {authUser && accountSummary ? (
+          <section className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-emerald-200 sm:p-6">
+            <h2 className="text-lg font-semibold text-slate-900">
+              Аккаунттай холбогдсон ахиц
+            </h2>
+            <div className="mt-4 grid grid-cols-2 gap-3">
+              <div className="rounded-xl bg-emerald-50/80 p-4 text-center ring-1 ring-emerald-200">
+                <p className="text-2xl font-bold text-emerald-700">
+                  {accountSummary.completed}
+                </p>
+                <p className="mt-1 text-xs font-medium text-slate-600">
+                  Дууссан хичээл
+                </p>
+              </div>
+              <div className="rounded-xl bg-emerald-50/80 p-4 text-center ring-1 ring-emerald-200">
+                <p className="text-2xl font-bold text-emerald-700">
+                  {accountSummary.started}
+                </p>
+                <p className="mt-1 text-xs font-medium text-slate-600">
+                  Эхэлсэн хичээл
+                </p>
+              </div>
+            </div>
+            {accountSummary.completedLessonIds.length > 0 ? (
+              <div className="mt-4">
+                <p className="text-sm font-medium text-slate-700">
+                  Дууссан хичээлүүд
+                </p>
+                <ul className="mt-2 flex flex-wrap gap-2">
+                  {accountSummary.completedLessonIds.map((lessonId) => (
+                    <li key={lessonId}>
+                      <Link
+                        href={lessonPath(lessonId)}
+                        className="inline-flex rounded-full bg-emerald-500 px-3 py-1.5 text-xs font-semibold text-white transition-colors hover:bg-emerald-600"
+                      >
+                        Lesson {lessonId}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ) : null}
+          </section>
+        ) : null}
 
         {!hasProgress ? (
           <EmptyState

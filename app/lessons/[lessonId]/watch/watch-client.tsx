@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { markLessonStarted } from "@/lib/progress";
+import { markLessonStartedSmart } from "@/lib/progress";
 import { AppHeader } from "@/components/app-header";
 import { BottomNav } from "@/components/bottom-nav";
 import {
@@ -53,7 +53,7 @@ export function LessonWatchClient({ lesson }: Props) {
   const [mode, setMode] = useState<SubtitleMode>("both");
 
   useEffect(() => {
-    markLessonStarted(lesson.id);
+    void markLessonStartedSmart(lesson.id);
   }, [lesson.id]);
 
   return (

@@ -4,7 +4,10 @@ import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import { EmptyState } from "@/components/empty-state";
 import { lessonPath } from "@/lib/content";
-import { getLessonStatus, type LessonStatus } from "@/lib/progress";
+import {
+  getLessonProgressMapSmart,
+  type LessonStatus,
+} from "@/lib/progress";
 import type { LessonContent, LessonContentStatus } from "@/types/lesson-content";
 
 function localStatusLabel(status: LessonStatus): string {
@@ -64,17 +67,19 @@ export function Hsk5LessonList({ lessons }: Props) {
   >({});
 
   useEffect(() => {
-    function refresh() {
-      const next: Record<string, LessonStatus> = {};
-      for (const lesson of lessons) {
-        next[lesson.id] = getLessonStatus(lesson.id);
-      }
-      setLocalStatusByLesson(next);
+    async function refresh() {
+      const lessonIds = lessons.map((lesson) => lesson.id);
+      const { byLesson } = await getLessonProgressMapSmart(lessonIds);
+      setLocalStatusByLesson(byLesson);
     }
 
-    refresh();
-    window.addEventListener("focus", refresh);
-    return () => window.removeEventListener("focus", refresh);
+    const onFocus = () => {
+      void refresh();
+    };
+
+    void refresh();
+    window.addEventListener("focus", onFocus);
+    return () => window.removeEventListener("focus", onFocus);
   }, [lessons]);
 
   const filteredLessons = useMemo(

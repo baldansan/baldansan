@@ -18,14 +18,18 @@ Audited routes, navigation, Supabase-first helpers, localStorage progress, UI em
 | Progress | `lib/progress.ts` SSR-safe; vocabulary/quiz/lesson state on device |
 | UI | Green/white cards; empty states; lesson not found polished |
 
-**Recommended next:** Phase 4 Step 3 — Persist lesson progress to Supabase.
+**Recommended next:** Phase 4 Step 4 — Persist vocabulary learned state to Supabase.
 
 **Phase 4 Step 1: Auth and RLS policy planning completed.**
 
-**Phase 4 Step 2: Auth helpers and login/signup UI added. Progress remains localStorage-only.**
+**Phase 4 Step 2: Auth helpers and login/signup UI added.**
 
-- `lib/supabase/auth.ts`, `/login`, `/signup`, `AuthStatus` in header
-- Profile shows auth state; lesson/vocab/quiz progress not written to Supabase yet
+**Phase 4 Step 3: Authenticated lesson progress persistence added using `user_lesson_progress`, with localStorage fallback for guests.**
+
+- `lib/supabase/progress.ts`, `markLessonStartedSmart` / `markLessonCompletedSmart`
+- Signed-in: lesson started/completed → Supabase + localStorage; course/profile read Supabase when available
+- Vocabulary and quiz attempts still localStorage-only
+- Run `supabase/policies/001_auth_rls_policies.sql` before production auth progress writes
 
 - [AUTH_PLAN.md](./AUTH_PLAN.md) — Auth + migration roadmap (Steps 1–7)
 - [supabase/policies/001_auth_rls_policies.sql](./supabase/policies/001_auth_rls_policies.sql) — planned RLS (review before run)

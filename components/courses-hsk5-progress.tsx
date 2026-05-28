@@ -4,8 +4,9 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { lessonPath } from "@/lib/content";
 import {
-  countCompletedLessons,
+  countCompletedFromStatusMap,
   getLastActiveLessonId,
+  getLessonProgressMapSmart,
   hasAnyProgress,
 } from "@/lib/progress";
 
@@ -24,17 +25,22 @@ export function CoursesHsk5Progress({ lessonIds }: Props) {
   const total = lessonIds.length;
 
   useEffect(() => {
-    function refresh() {
+    async function refresh() {
       const has = hasAnyProgress();
       setShow(has);
-      setCompleted(countCompletedLessons(lessonIds));
+      const { byLesson } = await getLessonProgressMapSmart(lessonIds);
+      setCompleted(countCompletedFromStatusMap(lessonIds, byLesson));
       setLastActiveLessonId(getLastActiveLessonId());
       setReady(true);
     }
 
-    refresh();
-    window.addEventListener("focus", refresh);
-    return () => window.removeEventListener("focus", refresh);
+    const onFocus = () => {
+      void refresh();
+    };
+
+    void refresh();
+    window.addEventListener("focus", onFocus);
+    return () => window.removeEventListener("focus", onFocus);
   }, [lessonIds]);
 
   if (!ready || !show || total === 0) {

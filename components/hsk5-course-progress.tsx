@@ -2,7 +2,10 @@
 
 import { useEffect, useState } from "react";
 import { LocalProgressNote } from "@/components/local-progress-note";
-import { countCompletedLessons } from "@/lib/progress";
+import {
+  countCompletedFromStatusMap,
+  getLessonProgressMapSmart,
+} from "@/lib/progress";
 
 type Props = {
   lessonIds: string[];
@@ -13,13 +16,18 @@ export function Hsk5CourseProgress({ lessonIds }: Props) {
   const [completed, setCompleted] = useState(0);
 
   useEffect(() => {
-    function refresh() {
-      setCompleted(countCompletedLessons(lessonIds));
+    async function refresh() {
+      const { byLesson } = await getLessonProgressMapSmart(lessonIds);
+      setCompleted(countCompletedFromStatusMap(lessonIds, byLesson));
     }
 
-    refresh();
-    window.addEventListener("focus", refresh);
-    return () => window.removeEventListener("focus", refresh);
+    const onFocus = () => {
+      void refresh();
+    };
+
+    void refresh();
+    window.addEventListener("focus", onFocus);
+    return () => window.removeEventListener("focus", onFocus);
   }, [lessonIds]);
 
   const progressPercent =

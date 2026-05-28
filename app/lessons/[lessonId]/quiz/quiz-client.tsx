@@ -14,7 +14,7 @@ import {
 } from "@/lib/content";
 import {
   getQuizResult,
-  markLessonCompleted,
+  markLessonCompletedSmart,
   PASSING_QUIZ_PERCENT,
   saveQuizResult,
   type QuizResult,
@@ -66,7 +66,7 @@ export function LessonQuizClient({ lesson, nextLessonId }: Props) {
     setSavedResult(result);
 
     if (percent >= PASSING_QUIZ_PERCENT) {
-      markLessonCompleted(lesson.id);
+      void markLessonCompletedSmart(lesson.id);
     }
   }, [finished, lesson.id, correctCount, total, percent]);
 
