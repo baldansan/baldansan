@@ -194,8 +194,51 @@ export function lessonProgressPercent(status: LessonStatus): number {
 }
 
 /** Stable key for vocabulary progress (id preferred, chinese fallback). */
-export function vocabularyWordKey(word: { id: string; chinese: string }): string {
+export function vocabularyWordKey(word: {
+  id: string;
+  chinese: string;
+  dbId?: number;
+}): string {
   return word.id || word.chinese;
+}
+
+export type VocabularyWordProgressInput = {
+  id: string;
+  chinese: string;
+  dbId?: number;
+};
+
+export type LessonVocabSnapshot = {
+  id: string;
+  vocabulary: VocabularyWordProgressInput[];
+};
+
+function mergeLearnedKeysForLesson(
+  lessonWords: VocabularyWordProgressInput[],
+  localKeys: string[],
+  learnedDbIds: Set<number>
+): string[] {
+  const keys = new Set<string>();
+
+  for (const word of lessonWords) {
+    const key = vocabularyWordKey(word);
+    if (word.dbId != null) {
+      if (learnedDbIds.has(word.dbId)) {
+        keys.add(key);
+      }
+    } else if (localKeys.includes(key)) {
+      keys.add(key);
+    }
+  }
+
+  for (const key of localKeys) {
+    const word = lessonWords.find((item) => vocabularyWordKey(item) === key);
+    if (!word?.dbId) {
+      keys.add(key);
+    }
+  }
+
+  return [...keys];
 }
 
 export function getAllLessonProgress(): Record<string, LessonProgress> {
@@ -448,4 +491,192 @@ export async function getAccountLessonProgressSummary(
     completedLessonIds,
     startedLessonIds,
   };
+}
+
+export async function getLearnedWordsSmart(
+  lessonId: string,
+  lessonWords: VocabularyWordProgressInput[] = []
+): Promise<string[]> {
+  const localKeys = getLearnedWords(lessonId);
+
+  const { getCurrentUser } = await import("@/lib/supabase/auth");
+  const { data: user } = await getCurrentUser();
+  if (!user?.id) {
+    return localKeys;
+  }
+
+  const hasDbIds = lessonWords.some((word) => word.dbId != null);
+  if (!hasDbIds) {
+    return localKeys;
+  }
+
+  const {
+    getUserVocabularyProgress,
+    getUserVocabularyProgressByLesson,
+    isLearnedVocabularyStatus,
+  } = await import("@/lib/supabase/vocabulary-progress");
+
+  let { data, error } = await getUserVocabularyProgressByLesson(
+    user.id,
+    lessonId
+  );
+
+  if (error) {
+    const lessonDbIds = new Set(
+      lessonWords
+        .map((word) => word.dbId)
+        .filter((id): id is number => id != null)
+    );
+    const all = await getUserVocabularyProgress(user.id);
+    if (all.error) {
+      console.warn(
+        "[progress] Supabase vocabulary fetch failed; using local.",
+        all.error
+      );
+      return localKeys;
+    }
+    data = (all.data ?? []).filter((row) =>
+      lessonDbIds.has(row.vocabulary_word_id)
+    );
+    error = null;
+  }
+
+  const learnedDbIds = new Set(
+    (data ?? [])
+      .filter((row) => isLearnedVocabularyStatus(row.status))
+      .map((row) => row.vocabulary_word_id)
+  );
+
+  return mergeLearnedKeysForLesson(lessonWords, localKeys, learnedDbIds);
+}
+
+export async function toggleLearnedWordSmart(
+  lessonId: string,
+  word: VocabularyWordProgressInput
+): Promise<string[]> {
+  const key = vocabularyWordKey(word);
+  const localNext = toggleLearnedWord(lessonId, key);
+  const isNowLearned = localNext.includes(key);
+
+  const { getCurrentUser } = await import("@/lib/supabase/auth");
+  const { data: user } = await getCurrentUser();
+  if (!user?.id || word.dbId == null) {
+    return localNext;
+  }
+
+  const { toggleSupabaseWordLearned } = await import(
+    "@/lib/supabase/vocabulary-progress"
+  );
+  const { error } = await toggleSupabaseWordLearned(
+    user.id,
+    word.dbId,
+    isNowLearned
+  );
+  if (error) {
+    console.warn(
+      "[progress] Supabase vocabulary write failed; local saved.",
+      error
+    );
+  }
+
+  return localNext;
+}
+
+export async function getAllLearnedWordsSmart(
+  lessons: LessonVocabSnapshot[] = []
+): Promise<LearnedWordEntry[]> {
+  const local = getAllLearnedWords();
+
+  const { getCurrentUser } = await import("@/lib/supabase/auth");
+  const { data: user } = await getCurrentUser();
+  if (!user?.id) {
+    return local;
+  }
+
+  const dbIdToEntry = new Map<number, LearnedWordEntry>();
+  for (const lesson of lessons) {
+    for (const word of lesson.vocabulary) {
+      if (word.dbId != null) {
+        dbIdToEntry.set(word.dbId, {
+          lessonId: lesson.id,
+          wordKey: vocabularyWordKey(word),
+        });
+      }
+    }
+  }
+
+  if (dbIdToEntry.size === 0) {
+    return local;
+  }
+
+  const { getUserVocabularyProgress, isLearnedVocabularyStatus } = await import(
+    "@/lib/supabase/vocabulary-progress"
+  );
+  const { data, error } = await getUserVocabularyProgress(user.id);
+  if (error) {
+    console.warn(
+      "[progress] Supabase vocabulary list fetch failed; using local.",
+      error
+    );
+    return local;
+  }
+
+  const entries: LearnedWordEntry[] = [];
+  const seen = new Set<string>();
+
+  for (const row of data ?? []) {
+    if (!isLearnedVocabularyStatus(row.status)) {
+      continue;
+    }
+    const mapped = dbIdToEntry.get(row.vocabulary_word_id);
+    if (!mapped) {
+      continue;
+    }
+    const dedupeKey = `${mapped.lessonId}:${mapped.wordKey}`;
+    if (seen.has(dedupeKey)) {
+      continue;
+    }
+    seen.add(dedupeKey);
+    entries.push(mapped);
+  }
+
+  for (const entry of local) {
+    const lesson = lessons.find((item) => item.id === entry.lessonId);
+    const word = lesson?.vocabulary.find(
+      (item) => vocabularyWordKey(item) === entry.wordKey
+    );
+    if (!word?.dbId) {
+      const dedupeKey = `${entry.lessonId}:${entry.wordKey}`;
+      if (!seen.has(dedupeKey)) {
+        seen.add(dedupeKey);
+        entries.push(entry);
+      }
+    }
+  }
+
+  return entries.sort((a, b) => {
+    const lessonOrder = Number(a.lessonId) - Number(b.lessonId);
+    if (lessonOrder !== 0) return lessonOrder;
+    return a.wordKey.localeCompare(b.wordKey);
+  });
+}
+
+export async function getAccountVocabularyLearnedCount(
+  userId: string
+): Promise<number | null> {
+  const { getUserVocabularyProgress, isLearnedVocabularyStatus } = await import(
+    "@/lib/supabase/vocabulary-progress"
+  );
+  const { data, error } = await getUserVocabularyProgress(userId);
+  if (error || !data) {
+    if (error) {
+      console.warn(
+        "[progress] Supabase account vocabulary count fetch failed.",
+        error
+      );
+    }
+    return null;
+  }
+
+  return data.filter((row) => isLearnedVocabularyStatus(row.status)).length;
 }

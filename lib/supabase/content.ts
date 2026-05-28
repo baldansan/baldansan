@@ -155,6 +155,7 @@ function mapFullLesson(
     timedSubtitles,
     vocabulary: vocabulary.map((word) => ({
       id: `${row.id}-vocab-${word.order_index}`,
+      dbId: word.id,
       chinese: word.chinese,
       pinyin: word.pinyin ?? "",
       mongolian: word.mongolian,

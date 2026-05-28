@@ -47,6 +47,8 @@ export type VocabularyItem = {
 
 export type VocabularyWord = {
   id: string;
+  /** Supabase `vocabulary_words.id` when content is loaded from DB */
+  dbId?: number;
   chinese: string;
   pinyin: string;
   mongolian: string;

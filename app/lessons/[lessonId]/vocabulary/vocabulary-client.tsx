@@ -12,12 +12,12 @@ import {
   lessonWatchPath,
 } from "@/lib/content";
 import {
-  getLearnedWords,
-  toggleLearnedWord,
+  getLearnedWordsSmart,
+  toggleLearnedWordSmart,
   vocabularyWordKey,
 } from "@/lib/progress";
 import type { LessonContent } from "@/types/lesson-content";
-import type { VocabularyFilter } from "@/types/lesson";
+import type { VocabularyFilter, VocabularyWord } from "@/types/lesson";
 
 const allFilters: { id: VocabularyFilter; label: string }[] = [
   { id: "all", label: "All" },
@@ -38,8 +38,19 @@ export function LessonVocabularyClient({ lesson }: Props) {
   const [learned, setLearned] = useState<Set<string>>(new Set());
 
   useEffect(() => {
-    setLearned(new Set(getLearnedWords(lesson.id)));
-  }, [lesson.id]);
+    async function refresh() {
+      const keys = await getLearnedWordsSmart(lesson.id, lesson.vocabulary);
+      setLearned(new Set(keys));
+    }
+
+    const onFocus = () => {
+      void refresh();
+    };
+
+    void refresh();
+    window.addEventListener("focus", onFocus);
+    return () => window.removeEventListener("focus", onFocus);
+  }, [lesson.id, lesson.vocabulary]);
 
   const visibleFilters = useMemo(() => {
     const levels = new Set(lesson.vocabulary.map((word) => word.hskLevel));
@@ -67,8 +78,17 @@ export function LessonVocabularyClient({ lesson }: Props) {
     setFilter("all");
   }
 
-  function handleToggleLearned(wordKey: string) {
-    const next = toggleLearnedWord(lesson.id, wordKey);
+  async function handleToggleLearned(word: VocabularyWord) {
+    const key = vocabularyWordKey(word);
+    const nextSet = new Set(learned);
+    if (nextSet.has(key)) {
+      nextSet.delete(key);
+    } else {
+      nextSet.add(key);
+    }
+    setLearned(nextSet);
+
+    const next = await toggleLearnedWordSmart(lesson.id, word);
     setLearned(new Set(next));
   }
 
@@ -212,7 +232,9 @@ export function LessonVocabularyClient({ lesson }: Props) {
 
                   <button
                     type="button"
-                    onClick={() => handleToggleLearned(key)}
+                    onClick={() => {
+                      void handleToggleLearned(word);
+                    }}
                     className={
                       isLearned
                         ? "mt-4 w-full rounded-full bg-emerald-600 px-4 py-2.5 text-sm font-semibold text-white ring-2 ring-emerald-400"

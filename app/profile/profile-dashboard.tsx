@@ -13,6 +13,7 @@ import {
   countCompletedLessonsAll,
   countStartedLessons,
   getAccountLessonProgressSummary,
+  getAccountVocabularyLearnedCount,
   getAllQuizResults,
   getLastActiveLessonId,
   getTotalLearnedWords,
@@ -45,6 +46,9 @@ export function ProfileDashboard() {
   const [authUser, setAuthUser] = useState<AuthUser | null>(null);
   const [accountSummary, setAccountSummary] =
     useState<AccountLessonProgressSummary | null>(null);
+  const [accountVocabCount, setAccountVocabCount] = useState<number | null>(
+    null
+  );
 
   useEffect(() => {
     async function refresh() {
@@ -63,15 +67,19 @@ export function ProfileDashboard() {
       setAuthUser(user);
 
       let summary: AccountLessonProgressSummary | null = null;
+      let vocabCount: number | null = null;
       if (user?.id) {
         summary = await getAccountLessonProgressSummary(user.id);
+        vocabCount = await getAccountVocabularyLearnedCount(user.id);
       }
       setAccountSummary(summary);
+      setAccountVocabCount(vocabCount);
 
       const accountHasProgress = Boolean(
         summary && (summary.completed > 0 || summary.started > 0)
       );
-      setHasProgress(localHasProgress || accountHasProgress);
+      const accountHasVocab = Boolean(vocabCount && vocabCount > 0);
+      setHasProgress(localHasProgress || accountHasProgress || accountHasVocab);
 
       setReady(true);
     }
@@ -148,30 +156,44 @@ export function ProfileDashboard() {
           )}
         </section>
 
-        {authUser && accountSummary ? (
+        {authUser && (accountSummary || accountVocabCount !== null) ? (
           <section className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-emerald-200 sm:p-6">
             <h2 className="text-lg font-semibold text-slate-900">
               Аккаунттай холбогдсон ахиц
             </h2>
-            <div className="mt-4 grid grid-cols-2 gap-3">
-              <div className="rounded-xl bg-emerald-50/80 p-4 text-center ring-1 ring-emerald-200">
-                <p className="text-2xl font-bold text-emerald-700">
-                  {accountSummary.completed}
-                </p>
-                <p className="mt-1 text-xs font-medium text-slate-600">
-                  Дууссан хичээл
-                </p>
-              </div>
-              <div className="rounded-xl bg-emerald-50/80 p-4 text-center ring-1 ring-emerald-200">
-                <p className="text-2xl font-bold text-emerald-700">
-                  {accountSummary.started}
-                </p>
-                <p className="mt-1 text-xs font-medium text-slate-600">
-                  Эхэлсэн хичээл
-                </p>
-              </div>
+            <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-3">
+              {accountSummary ? (
+                <>
+                  <div className="rounded-xl bg-emerald-50/80 p-4 text-center ring-1 ring-emerald-200">
+                    <p className="text-2xl font-bold text-emerald-700">
+                      {accountSummary.completed}
+                    </p>
+                    <p className="mt-1 text-xs font-medium text-slate-600">
+                      Дууссан хичээл
+                    </p>
+                  </div>
+                  <div className="rounded-xl bg-emerald-50/80 p-4 text-center ring-1 ring-emerald-200">
+                    <p className="text-2xl font-bold text-emerald-700">
+                      {accountSummary.started}
+                    </p>
+                    <p className="mt-1 text-xs font-medium text-slate-600">
+                      Эхэлсэн хичээл
+                    </p>
+                  </div>
+                </>
+              ) : null}
+              {accountVocabCount !== null ? (
+                <div className="rounded-xl bg-emerald-50/80 p-4 text-center ring-1 ring-emerald-200">
+                  <p className="text-2xl font-bold text-emerald-700">
+                    {accountVocabCount}
+                  </p>
+                  <p className="mt-1 text-xs font-medium text-slate-600">
+                    Аккаунтанд хадгалсан үг
+                  </p>
+                </div>
+              ) : null}
             </div>
-            {accountSummary.completedLessonIds.length > 0 ? (
+            {accountSummary && accountSummary.completedLessonIds.length > 0 ? (
               <div className="mt-4">
                 <p className="text-sm font-medium text-slate-700">
                   Дууссан хичээлүүд

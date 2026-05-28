@@ -116,12 +116,12 @@ NEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-key
 
 Helpers: [lib/supabase/auth.ts](./lib/supabase/auth.ts). Header shows **Нэвтрэх** or signed-in email + **Гарах**.
 
-**Lesson progress** (started/completed) persists to Supabase when signed in, with localStorage always updated as backup. **Vocabulary** and **quiz attempts** remain localStorage-only until Phase 4 Steps 4–5. Run [RLS policies](./supabase/policies/001_auth_rls_policies.sql) in Supabase before production auth progress writes.
+**Lesson progress** and **vocabulary learned** state persist to Supabase when signed in, with localStorage always updated as backup. **Quiz attempts** remain localStorage-only until Phase 4 Step 5. Run [RLS policies](./supabase/policies/001_auth_rls_policies.sql) in Supabase before production auth progress writes.
 
 - [AUTH_PLAN.md](./AUTH_PLAN.md) — full roadmap
 - [supabase/policies/README.md](./supabase/policies/README.md) — RLS (planned)
 
-**Next:** Phase 4 Step 4 — persist vocabulary learned state to Supabase when logged in.
+**Next:** Phase 4 Step 5 — persist quiz attempts to Supabase when logged in.
 
 ## Documentation
 

@@ -134,7 +134,12 @@ Phased roadmap from MVP demo to production product.
 - [lib/supabase/progress.ts](./lib/supabase/progress.ts), smart helpers in [lib/progress.ts](./lib/progress.ts)
 - `user_lesson_progress` upsert on watch/quiz pass; localStorage always updated; guests unchanged
 - Run [supabase/policies/001_auth_rls_policies.sql](./supabase/policies/001_auth_rls_policies.sql) before production auth writes
-- Vocabulary and quiz attempts still device-only
+
+**Phase 4 Step 4 — Completed:** Authenticated vocabulary learned state persistence.
+
+- [lib/supabase/vocabulary-progress.ts](./lib/supabase/vocabulary-progress.ts), `dbId` on Supabase vocabulary in [lib/supabase/content.ts](./lib/supabase/content.ts)
+- Mark/unmark learned → `user_vocabulary_progress`; review/profile use smart helpers
+- Quiz attempts still device-only
 
 **Phase 4 roadmap:**
 
@@ -143,8 +148,8 @@ Phased roadmap from MVP demo to production product.
 | 1 ✅ | Auth planning + RLS policy design |
 | 2 ✅ | Auth helpers + login/signup UI |
 | 3 ✅ | Persist lesson progress to Supabase |
-| 4 | Persist vocabulary learned state to Supabase — **Next** |
-| 5 | Persist quiz attempts to Supabase |
+| 4 ✅ | Persist vocabulary learned state to Supabase |
+| 5 | Persist quiz attempts to Supabase — **Next** |
 | 6 | Migrate / merge localStorage progress after login |
 | 7 | Phase 4 final audit |
 

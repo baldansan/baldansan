@@ -7,8 +7,9 @@ import { BottomNav } from "@/components/bottom-nav";
 import { EmptyState } from "@/components/empty-state";
 import { LocalProgressNote } from "@/components/local-progress-note";
 import { lessonPath, lessonVocabularyPath } from "@/lib/content";
+import { getCurrentUser, hasSupabaseConfig } from "@/lib/supabase/auth";
 import {
-  getAllLearnedWords,
+  getAllLearnedWordsSmart,
   getAllQuizResults,
   getLastActiveLessonId,
   vocabularyWordKey,
@@ -60,6 +61,7 @@ export function ReviewDashboard({ lessons }: Props) {
   const [lastActiveLessonId, setLastActiveLessonId] = useState<string | null>(
     null
   );
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   const lessonById = useMemo(
     () => new Map(lessons.map((lesson) => [lesson.id, lesson])),
@@ -90,17 +92,34 @@ export function ReviewDashboard({ lessons }: Props) {
   }, [learnedEntries, lessons, lessonById]);
 
   useEffect(() => {
-    function refresh() {
-      setLearnedEntries(getAllLearnedWords());
+    async function refresh() {
+      if (hasSupabaseConfig) {
+        const { data } = await getCurrentUser();
+        setIsLoggedIn(Boolean(data));
+      } else {
+        setIsLoggedIn(false);
+      }
+
+      const entries = await getAllLearnedWordsSmart(
+        lessons.map((lesson) => ({
+          id: lesson.id,
+          vocabulary: lesson.vocabulary,
+        }))
+      );
+      setLearnedEntries(entries);
       setQuizResults(getAllQuizResults());
       setLastActiveLessonId(getLastActiveLessonId());
       setReady(true);
     }
 
-    refresh();
-    window.addEventListener("focus", refresh);
-    return () => window.removeEventListener("focus", refresh);
-  }, []);
+    const onFocus = () => {
+      void refresh();
+    };
+
+    void refresh();
+    window.addEventListener("focus", onFocus);
+    return () => window.removeEventListener("focus", onFocus);
+  }, [lessons]);
 
   if (!ready) {
     return (
@@ -129,6 +148,14 @@ export function ReviewDashboard({ lessons }: Props) {
           <div className="mt-3">
             <LocalProgressNote />
           </div>
+          <p className="mt-3 text-sm leading-6 text-slate-600">
+            Нэвтэрсэн үед сурсан үгс аккаунттай холбогдож хадгалагдана.
+          </p>
+          {isLoggedIn ? (
+            <p className="mt-1 text-sm text-emerald-700">
+              Та нэвтэрсэн — сурсан үгс Supabase-д хадгалагдана.
+            </p>
+          ) : null}
         </section>
 
         <section className="grid grid-cols-2 gap-3 sm:grid-cols-2">
