@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { BrandLogo } from "@/components/brand-logo";
 
 type Props = {
   active?: "courses" | "demo";
@@ -7,12 +8,7 @@ type Props = {
 export function AppHeader({ active }: Props) {
   return (
     <header className="mx-auto flex w-full max-w-5xl items-center justify-between px-4 py-4 sm:px-6">
-      <Link
-        href="/"
-        className="text-sm font-semibold tracking-tight text-slate-900 sm:text-base"
-      >
-        Buunduu Surtsgaay
-      </Link>
+      <BrandLogo />
       <nav className="flex items-center gap-3 text-xs sm:gap-5 sm:text-sm">
         <Link
           href="/courses"

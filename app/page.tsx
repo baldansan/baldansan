@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { AppHeader } from "@/components/app-header";
+import { BRAND_NAME_EN, BRAND_NAME_MN } from "@/lib/brand";
 
 export default function Home() {
   return (
@@ -8,8 +9,11 @@ export default function Home() {
 
       <main className="mx-auto flex w-full max-w-5xl flex-col gap-6 px-4 pb-10 pt-2 sm:gap-8 sm:px-6">
         <section className="rounded-3xl bg-white p-6 shadow-sm ring-1 ring-slate-200 sm:p-8">
-          <p className="mb-2 text-sm font-medium text-emerald-600">
-            Buunduu Surtsgaay
+          <p className="mb-1 text-lg font-semibold text-emerald-700">
+            {BRAND_NAME_MN}
+          </p>
+          <p className="mb-2 text-xs font-medium text-slate-500">
+            {BRAND_NAME_EN}
           </p>
           <h1 className="text-3xl font-bold leading-tight tracking-tight sm:text-4xl">
             Хятад хэлийг богино бичлэгээр сур

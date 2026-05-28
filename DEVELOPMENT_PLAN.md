@@ -86,6 +86,10 @@ Phased roadmap from MVP demo to production product.
 
 - Lesson path card, watch practice tips, vocabulary learned UI, quiz result tiers, course summary card, mobile `BottomNav`
 
+**Phase 3 UX polish — Completed:** Real app feel polish batch.
+
+- Mongolian branding, empty/error states, HSK5 lesson search, vocabulary result feedback, quiz progress bar, lesson not found polish
+
 **Remaining tasks (Phase 4+):**
 - Store lesson completion %, quiz scores, learned vocabulary per user (Phase 4 auth)
 

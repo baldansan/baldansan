@@ -153,6 +153,15 @@ Next Improvement Batch: course detail now renders Supabase lesson list including
 - HSK5 course: summary card from loaded lesson totals
 - `BottomNav` on main learning pages (mobile only)
 
+**Real app feel polish completed:** branding, empty states, lesson search, vocabulary result count, quiz progress bar.
+
+- Brand display: **Бөөндөө Сурцгаая** (primary) + Buunduu Surtsgaay (secondary) in header and home
+- Shared `EmptyState` for lesson not found, no lessons, no vocabulary, no quiz
+- HSK5 course: client-side lesson search by title, chineseTitle, subtitle, description
+- Vocabulary: “Showing X / Y words”, reset filters empty state
+- Quiz: question progress bar; empty quiz state
+- Lesson not found: HSK5 + Courses back buttons
+
 ---
 
 ## Next recommended tasks

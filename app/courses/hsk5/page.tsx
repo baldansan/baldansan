@@ -1,16 +1,8 @@
 import Link from "next/link";
 import { AppHeader } from "@/components/app-header";
 import { BottomNav } from "@/components/bottom-nav";
-import { getCourseContentById, getLessonsByCourseId, lessonPath } from "@/lib/content";
-import type { LessonContentStatus } from "@/types/lesson-content";
-
-function lessonButtonLabel(status: LessonContentStatus) {
-  return status === "available" ? "Start" : "Locked";
-}
-
-function statusBadgeLabel(status: LessonContentStatus) {
-  return status === "available" ? "Available" : "Locked";
-}
+import { getCourseContentById, getLessonsByCourseId } from "@/lib/content";
+import { Hsk5LessonList } from "./hsk5-lesson-list";
 
 /** Fetch course and lessons from Supabase on each request when env is configured. */
 export const dynamic = "force-dynamic";
@@ -97,76 +89,7 @@ export default async function Hsk5CoursePage() {
 
         <section className="flex flex-col gap-4">
           <h2 className="text-xl font-semibold text-slate-900">Хичээлүүд</h2>
-          {lessons.length === 0 ? (
-            <p className="rounded-2xl bg-white p-6 text-center text-sm text-slate-500 shadow-sm ring-1 ring-slate-200">
-              Хичээл одоогоор байхгүй байна.
-            </p>
-          ) : (
-            lessons.map((lesson) => (
-              <article
-                key={lesson.id}
-                className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:p-6"
-              >
-                <div className="flex flex-wrap items-start justify-between gap-3">
-                  <h3 className="text-lg font-semibold text-slate-900">
-                    {lesson.title} — {lesson.chineseTitle}
-                  </h3>
-                  <span
-                    className={
-                      lesson.status === "available"
-                        ? "rounded-full bg-emerald-50 px-3 py-1 text-xs font-semibold text-emerald-700 ring-1 ring-emerald-200"
-                        : "rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-500 ring-1 ring-slate-200"
-                    }
-                  >
-                    {statusBadgeLabel(lesson.status)}
-                  </span>
-                </div>
-
-                {lesson.subtitle ? (
-                  <p className="mt-2 text-sm font-medium text-slate-700">
-                    {lesson.subtitle}
-                  </p>
-                ) : null}
-
-                {lesson.description && lesson.description !== lesson.subtitle ? (
-                  <p className="mt-2 text-sm leading-6 text-slate-600">
-                    {lesson.description}
-                  </p>
-                ) : null}
-
-                <div className="mt-4 flex flex-wrap gap-2 text-xs text-slate-600">
-                  <span className="rounded-lg bg-slate-50 px-2.5 py-1 ring-1 ring-slate-200">
-                    {lesson.duration}
-                  </span>
-                  <span className="rounded-lg bg-slate-50 px-2.5 py-1 ring-1 ring-slate-200">
-                    {lesson.vocabularyCount} vocabulary
-                  </span>
-                  <span className="rounded-lg bg-slate-50 px-2.5 py-1 ring-1 ring-slate-200">
-                    {lesson.quizCount} quiz questions
-                  </span>
-                </div>
-
-                <div className="mt-4 flex justify-end">
-                  {lesson.status === "available" ? (
-                    <Link
-                      href={lessonPath(lesson.id)}
-                      className="rounded-full bg-emerald-500 px-5 py-2 text-sm font-semibold text-white transition-colors hover:bg-emerald-600"
-                    >
-                      {lessonButtonLabel(lesson.status)}
-                    </Link>
-                  ) : (
-                    <button
-                      type="button"
-                      disabled
-                      className="cursor-not-allowed rounded-full bg-slate-100 px-5 py-2 text-sm font-semibold text-slate-400"
-                    >
-                      {lessonButtonLabel(lesson.status)}
-                    </button>
-                  )}
-                </div>
-              </article>
-            ))
-          )}
+          <Hsk5LessonList lessons={lessons} />
         </section>
       </main>
 

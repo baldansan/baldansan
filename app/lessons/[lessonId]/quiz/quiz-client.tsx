@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useMemo, useState } from "react";
 import { AppHeader } from "@/components/app-header";
 import { BottomNav } from "@/components/bottom-nav";
+import { EmptyState } from "@/components/empty-state";
 import {
   coursePath,
   lessonPath,
@@ -34,6 +35,11 @@ export function LessonQuizClient({ lesson, nextLessonId }: Props) {
 
   const current = lesson.quizQuestions[currentIndex];
   const isCorrect = selected === current?.correctAnswer;
+
+  const questionProgressPercent = useMemo(() => {
+    if (total === 0) return 0;
+    return Math.round(((currentIndex + 1) / total) * 100);
+  }, [currentIndex, total]);
 
   const percent = useMemo(
     () => (total > 0 ? Math.round((correctCount / total) * 100) : 0),
@@ -117,7 +123,28 @@ export function LessonQuizClient({ lesson, nextLessonId }: Props) {
           </p>
         </section>
 
-        {finished ? (
+        {total === 0 ? (
+          <EmptyState
+            title="No quiz questions available"
+            description="Энэ хичээлд quiz асуулт одоогоор байхгүй байна. Vocabulary эсвэл watch хэсгээс үргэлжлүүлнэ үү."
+            action={
+              <>
+                <Link
+                  href={lessonPath(lesson.id)}
+                  className="rounded-full bg-emerald-500 px-5 py-2 text-sm font-semibold text-white transition-colors hover:bg-emerald-600"
+                >
+                  Back to lesson
+                </Link>
+                <Link
+                  href={lessonVocabularyPath(lesson.id)}
+                  className="rounded-full border border-emerald-200 bg-emerald-50 px-5 py-2 text-sm font-semibold text-emerald-700 transition-colors hover:bg-emerald-100"
+                >
+                  Review vocabulary
+                </Link>
+              </>
+            }
+          />
+        ) : finished ? (
           <section className="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-emerald-200 sm:p-8">
             <h2 className="text-xl font-semibold text-slate-900">Үр дүн</h2>
             <p className="mt-4 text-4xl font-bold text-emerald-600">{percent}%</p>
@@ -167,9 +194,17 @@ export function LessonQuizClient({ lesson, nextLessonId }: Props) {
         ) : (
           current && (
             <>
-              <p className="text-sm font-medium text-emerald-700">
-                Question {currentIndex + 1} / {total}
-              </p>
+              <div>
+                <p className="text-sm font-medium text-emerald-700">
+                  Question {currentIndex + 1} / {total}
+                </p>
+                <div className="mt-2 h-2 w-full overflow-hidden rounded-full bg-slate-100">
+                  <div
+                    className="h-full rounded-full bg-emerald-500 transition-all"
+                    style={{ width: `${questionProgressPercent}%` }}
+                  />
+                </div>
+              </div>
 
               <section className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:p-6">
                 <p className="text-xs font-medium uppercase tracking-wide text-slate-500">

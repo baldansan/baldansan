@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useMemo, useState } from "react";
 import { AppHeader } from "@/components/app-header";
 import { BottomNav } from "@/components/bottom-nav";
+import { EmptyState } from "@/components/empty-state";
 import {
   lessonPath,
   lessonQuizPath,
@@ -50,6 +51,11 @@ export function LessonVocabularyClient({ lesson }: Props) {
       );
     });
   }, [lesson, search, filter]);
+
+  function resetFilters() {
+    setSearch("");
+    setFilter("all");
+  }
 
   function toggleLearned(id: string) {
     setLearned((prev) => {
@@ -134,13 +140,39 @@ export function LessonVocabularyClient({ lesson }: Props) {
               </button>
             ))}
           </div>
+          <p className="mt-3 text-sm font-medium text-slate-600">
+            Showing {filteredWords.length} / {lesson.vocabulary.length} words
+          </p>
         </section>
 
         <section className="flex flex-col gap-4">
-          {filteredWords.length === 0 ? (
-            <p className="rounded-2xl bg-white p-6 text-center text-sm text-slate-500 shadow-sm ring-1 ring-slate-200">
-              Үг олдсонгүй.
-            </p>
+          {lesson.vocabulary.length === 0 ? (
+            <EmptyState
+              title="No vocabulary found"
+              description="Энэ хичээлд үгийн жагсаалт одоогоор байхгүй байна."
+              action={
+                <Link
+                  href={lessonPath(lesson.id)}
+                  className="rounded-full bg-emerald-500 px-5 py-2 text-sm font-semibold text-white transition-colors hover:bg-emerald-600"
+                >
+                  Back to lesson
+                </Link>
+              }
+            />
+          ) : filteredWords.length === 0 ? (
+            <EmptyState
+              title="No vocabulary found"
+              description="Хайлт эсвэл HSK шүүлтүүрт тохирох үг олдсонгүй."
+              action={
+                <button
+                  type="button"
+                  onClick={resetFilters}
+                  className="rounded-full border border-emerald-200 bg-emerald-50 px-5 py-2 text-sm font-semibold text-emerald-700 transition-colors hover:bg-emerald-100"
+                >
+                  Reset filters
+                </button>
+              }
+            />
           ) : (
             filteredWords.map((word) => {
               const isLearned = learned.has(word.id);
