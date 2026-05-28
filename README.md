@@ -134,6 +134,7 @@ Helpers: [lib/supabase/auth.ts](./lib/supabase/auth.ts). Header shows **Нэвт
 - [ADMIN_PLAN.md](./ADMIN_PLAN.md) — admin CMS roadmap and security
 - [CONTENT_WORKFLOW.md](./CONTENT_WORKFLOW.md) — create → publish → verify workflow
 - [LESSON_IMPORT_FORMAT.md](./LESSON_IMPORT_FORMAT.md) — bulk JSON import format (ChatGPT paste)
+- [LESSON_EXPORT_FORMAT.md](./LESSON_EXPORT_FORMAT.md) — full lesson JSON backup export
 - [LESSON_PROMPT_TEMPLATE.md](./LESSON_PROMPT_TEMPLATE.md) — master ChatGPT prompt for lesson JSON
 - [supabase/admin/README.md](./supabase/admin/README.md) — run `001_admin_profiles_setup.sql`, bootstrap admin user
 
@@ -145,7 +146,9 @@ Helpers: [lib/supabase/auth.ts](./lib/supabase/auth.ts). Header shows **Нэвт
 
 **Bulk import:** `/admin/lessons/{id}/edit` → generate ChatGPT prompt → paste JSON → validate → import → QA summary.
 
-**Next step:** Phase 5 Step 12 — Publish readiness polish / CSV-JSON export backup.
+**Export backup:** `/admin/lessons/{id}/edit` → generate/copy/download JSON backup (metadata + content; re-import via bulk import).
+
+**Next step:** Phase 5 Step 13 — Content duplicate/restore or media placeholder workflow.
 
 ## Documentation
 

@@ -6,6 +6,7 @@ import { lessonPreviewPath } from "@/lib/lesson-publish";
 import { analyzeLessonQaFromCounts } from "@/lib/admin/lesson-qa";
 import { getAdminPublishStatus } from "@/lib/admin/lesson-status";
 import { BulkImportEditor } from "@/components/admin/bulk-import-editor";
+import { LessonExportCard } from "@/components/admin/lesson-export-card";
 import { ImportQaSummary } from "@/components/admin/import-qa-summary";
 import { LessonPromptGenerator } from "@/components/admin/lesson-prompt-generator";
 import { PublishingControls } from "@/components/admin/publishing-controls";
@@ -201,6 +202,8 @@ export function LessonEditForm({
         lessonId={lesson.id}
         onImportSuccess={handleImportSuccess}
       />
+
+      <LessonExportCard lessonId={lesson.id} />
 
       <SubtitleEditor
         lessonId={lesson.id}

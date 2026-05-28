@@ -132,7 +132,7 @@ export function BulkImportEditor({ lessonId, onImportSuccess }: Props) {
   return (
     <AdminEditorSection
       title="Bulk import content"
-      description="ChatGPT/Cursor-оор үүсгэсэн JSON content-оо энд paste хийнэ."
+      description="ChatGPT/Cursor-оор үүсгэсэн JSON content-оо энд paste хийнэ. Export backup JSON (`lesson`, `exportedAt`) paste хийвэл metadata блокийг үл тооно — зөвхөн subtitles, vocabulary, quizQuestions import хийнэ."
     >
       <div className="flex flex-col gap-4">
         <button

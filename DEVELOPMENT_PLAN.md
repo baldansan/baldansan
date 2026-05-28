@@ -211,7 +211,13 @@ Phased roadmap from MVP demo to production product.
 - [lib/supabase/admin-content.ts](./lib/supabase/admin-content.ts) — `updateLessonMetadata`, `validateUpdateLessonMetadataInput`, `getAdminLessonMetadataById`, `refreshLessonCounts`
 - [components/admin/lesson-metadata-editor.tsx](./components/admin/lesson-metadata-editor.tsx) on `/admin/lessons/{id}/edit`
 
-**Next:** Phase 5 Step 12 — Publish readiness polish and content version safety, or CSV/JSON export and backup tools.
+**Phase 5 Step 12 — Completed:** Lesson JSON export and backup tools.
+
+- [lib/supabase/admin-export.ts](./lib/supabase/admin-export.ts) — `getLessonExportPayload`, `buildLessonExportJson`
+- [components/admin/lesson-export-card.tsx](./components/admin/lesson-export-card.tsx) on lesson edit page
+- [LESSON_EXPORT_FORMAT.md](./LESSON_EXPORT_FORMAT.md)
+
+**Next:** Phase 5 Step 13 — Content duplicate/restore tools or media placeholder workflow.
 
 - [components/admin/lesson-prompt-generator.tsx](./components/admin/lesson-prompt-generator.tsx)
 - [components/admin/import-qa-summary.tsx](./components/admin/import-qa-summary.tsx)
@@ -242,7 +248,8 @@ Phased roadmap from MVP demo to production product.
 | 9 | Bulk import lesson content from JSON/ChatGPT output | ✅ Completed |
 | 10 | Prompt generator + import QA assistant | ✅ Completed |
 | 11 | Admin lesson metadata edit/save | ✅ Completed |
-| 12 | Publish readiness polish / CSV-JSON export backup | Next |
+| 12 | Lesson JSON export and backup tools | ✅ Completed |
+| 13 | Content duplicate/restore or media placeholder | Next |
 
 **Exit criteria:** New lesson published through admin UI without deploying code.
 

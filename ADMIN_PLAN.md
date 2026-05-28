@@ -100,7 +100,8 @@ See [CONTENT_WORKFLOW.md](./CONTENT_WORKFLOW.md):
 | 9 | Bulk import from JSON/ChatGPT | ✅ Completed |
 | 10 | Prompt generator + import QA assistant | ✅ Completed |
 | 11 | Admin lesson metadata edit/save | ✅ Completed |
-| 12 | Publish readiness polish / export backup | Next |
+| 12 | Lesson JSON export and backup tools | ✅ Completed |
+| 13 | Content duplicate/restore or media placeholder | Next |
 
 Step 3: [lib/admin/lesson-qa.ts](./lib/admin/lesson-qa.ts), `/admin/lessons` QA dashboard.
 

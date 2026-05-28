@@ -203,6 +203,15 @@ export function validateLessonImportPayload(
     errors
   );
 
+  if (raw.lesson !== undefined && isRecord(raw.lesson)) {
+    warnings.push(
+      "lesson metadata block is ignored by bulk import; only subtitles, vocabulary, and quizQuestions are imported."
+    );
+  }
+  if (raw.exportedAt !== undefined) {
+    warnings.push("exportedAt is ignored by bulk import.");
+  }
+
   if (errors.length > 0 || !subtitlesRaw || !vocabularyRaw || !quizRaw) {
     return {
       valid: false,

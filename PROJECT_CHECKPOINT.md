@@ -2,7 +2,21 @@
 
 **Project:** Buunduu Surtsgaay (Бөөндөө Сурцгаая)  
 **Checkpoint date:** May 2026  
-**Status:** Phase 4 **completed**; Phase 5 Step 11 metadata edit/save **completed**
+**Status:** Phase 4 **completed**; Phase 5 Step 12 export/backup **completed**
+
+---
+
+## Phase 5 Step 12 — Lesson JSON export and backup — **Completed**
+
+Phase 5 Step 12: Lesson JSON export and backup tools added.
+
+| Area | Deliverable |
+|------|-------------|
+| API | `getLessonExportPayload`, `buildLessonExportJson` in [lib/supabase/admin-export.ts](./lib/supabase/admin-export.ts) |
+| UI | `lesson-export-card` on `/admin/lessons/{id}/edit` |
+| Docs | [LESSON_EXPORT_FORMAT.md](./LESSON_EXPORT_FORMAT.md) |
+
+**Next:** Phase 5 Step 13 — Content duplicate/restore or media placeholder workflow.
 
 ---
 
@@ -14,8 +28,6 @@ Phase 5 Step 11: Admin lesson metadata edit/save added.
 |------|-------------|
 | API | `updateLessonMetadata`, `validateUpdateLessonMetadataInput`, `getAdminLessonMetadataById`, `refreshLessonCounts` |
 | UI | `lesson-metadata-editor` on `/admin/lessons/{id}/edit` — save metadata, refresh counts, preview |
-
-**Next:** Phase 5 Step 12 — Publish readiness polish / export backup tools.
 
 ---
 

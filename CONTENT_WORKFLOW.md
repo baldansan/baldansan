@@ -74,6 +74,16 @@ On **`/admin/lessons/{id}/edit`** → **Bulk import content**:
 4. **Import content** — writes to `subtitle_lines`, `vocabulary_words`, `quiz_questions`; refreshes vocab/quiz counts on `lessons`
 5. Use manual editors below for fixes; then QA → Publish
 
+### Export lesson backup (Step 12)
+
+On **`/admin/lessons/{id}/edit`** → **Export lesson backup**:
+
+1. After import and QA, **Generate export JSON** to snapshot metadata + subtitles + vocabulary + quiz.
+2. **Copy JSON** or **Download JSON** (`lesson-{id}-backup.json`) for safekeeping.
+3. To restore content on the same or another lesson: paste into **Bulk import** (Replace or Append). The `lesson` block in export JSON is ignored by import — use **Save metadata** for title/status changes.
+
+See [LESSON_EXPORT_FORMAT.md](./LESSON_EXPORT_FORMAT.md).
+
 ---
 
 See also: [ADMIN_PLAN.md](./ADMIN_PLAN.md), [CONTENT_AUTHORING_GUIDE.md](./CONTENT_AUTHORING_GUIDE.md) (developer/local authoring today).

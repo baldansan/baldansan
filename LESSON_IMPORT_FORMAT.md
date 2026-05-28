@@ -18,6 +18,10 @@ No file upload — paste only. Uses the same Supabase client + admin RLS as manu
 
 All three keys are optional. Omit a key or use `[]` to skip that section.
 
+### Exported lesson JSON
+
+Exported lesson JSON can be reused for import; the **`lesson`** metadata block and **`exportedAt`** are ignored by content import. Only `subtitles`, `vocabulary`, and `quizQuestions` are read. See [LESSON_EXPORT_FORMAT.md](./LESSON_EXPORT_FORMAT.md).
+
 ### Key aliases
 
 | Canonical | Aliases |
