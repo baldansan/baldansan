@@ -3,6 +3,8 @@
 import Link from "next/link";
 import { useMemo, useState } from "react";
 import { AnalyticsMetricCard } from "@/components/admin/analytics-metric-card";
+import { ImprovementPromptCopyButton } from "@/components/admin/improvement-prompt-card";
+import { buildQuestionImprovementPrompt } from "@/lib/admin/improvement-prompts";
 import { PerformanceBadge } from "@/components/admin/performance-badge";
 import type { QuestionAnalyticsRow } from "@/lib/supabase/admin-analytics";
 
@@ -201,6 +203,10 @@ export function QuestionInsightsView({ overview, initialLessonFilter }: Props) {
                             >
                               Edit
                             </Link>
+                            <ImprovementPromptCopyButton
+                              label="Generate fix prompt"
+                              prompt={buildQuestionImprovementPrompt(row)}
+                            />
                           </div>
                         </td>
                       </tr>
@@ -272,6 +278,7 @@ export function QuestionInsightsView({ overview, initialLessonFilter }: Props) {
                       <th className="px-4 py-3">Attempts</th>
                       <th className="px-4 py-3">Accuracy</th>
                       <th className="px-4 py-3">Review</th>
+                      <th className="px-4 py-3">Actions</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-100">
@@ -293,6 +300,12 @@ export function QuestionInsightsView({ overview, initialLessonFilter }: Props) {
                           ) : (
                             "—"
                           )}
+                        </td>
+                        <td className="px-4 py-3">
+                          <ImprovementPromptCopyButton
+                            label="Generate fix prompt"
+                            prompt={buildQuestionImprovementPrompt(row)}
+                          />
                         </td>
                       </tr>
                     ))}

@@ -262,7 +262,14 @@ Phased roadmap from MVP demo to production product.
 - Extended [lib/supabase/admin-analytics.ts](./lib/supabase/admin-analytics.ts) — question + vocabulary engagement helpers
 - [ADMIN_QUESTION_ANALYTICS.md](./ADMIN_QUESTION_ANALYTICS.md), [ADMIN_VOCABULARY_ANALYTICS.md](./ADMIN_VOCABULARY_ANALYTICS.md)
 
-**Next:** Phase 5 Step 20 — Admin content quality recommendations / AI-assisted improvement workflow. Or Phase 5 Final Audit.
+**Phase 5 Step 20 — Completed:** AI-assisted content improvement prompt workflow.
+
+- [lib/admin/improvement-prompts.ts](./lib/admin/improvement-prompts.ts) — copy-ready improvement prompt builders
+- [components/admin/improvement-prompt-card.tsx](./components/admin/improvement-prompt-card.tsx), [app/admin/prompts/page.tsx](./app/admin/prompts/page.tsx)
+- Integration on lesson edit, analytics, question/vocabulary insights, lesson builder
+- [AI_ASSISTED_CONTENT_WORKFLOW.md](./AI_ASSISTED_CONTENT_WORKFLOW.md)
+
+**Next:** Phase 5 Step 21 — Admin content approval checklist / release readiness workflow. Or Phase 5 Final Audit.
 - [components/admin/bulk-import-editor.tsx](./components/admin/bulk-import-editor.tsx) on lesson edit page
 - [LESSON_IMPORT_FORMAT.md](./LESSON_IMPORT_FORMAT.md)
 
@@ -294,8 +301,9 @@ Phased roadmap from MVP demo to production product.
 | 17 | Admin analytics / content metrics dashboard | ✅ Completed |
 | 18 | Per-lesson learning analytics | ✅ Completed |
 | 19 | Question-level quiz analytics + vocabulary engagement | ✅ Completed |
+| 20 | AI-assisted content improvement prompts | ✅ Completed |
 
-**Next (Phase 5):** Step 20 — Admin content quality recommendations / AI-assisted improvement workflow. Or Phase 5 Final Audit.
+**Next (Phase 5):** Step 21 — Admin content approval checklist / release readiness workflow. Or Phase 5 Final Audit.
 
 **Exit criteria:** New lesson published through admin UI without deploying code.
 

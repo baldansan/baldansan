@@ -108,6 +108,9 @@ See [CONTENT_WORKFLOW.md](./CONTENT_WORKFLOW.md):
 | 17 | Admin analytics / content metrics dashboard | ✅ Completed |
 | 18 | Per-lesson learning analytics | ✅ Completed |
 | 19 | Question-level quiz analytics + vocabulary engagement insights | ✅ Completed |
+| 20 | AI-assisted content improvement prompt workflow | ✅ Completed |
+
+Step 20: [AI_ASSISTED_CONTENT_WORKFLOW.md](./AI_ASSISTED_CONTENT_WORKFLOW.md), `/admin/prompts`, improvement prompt cards on edit/analytics pages. No OpenAI API — copy-ready prompts only.
 
 Step 19: [ADMIN_QUESTION_ANALYTICS.md](./ADMIN_QUESTION_ANALYTICS.md), [ADMIN_VOCABULARY_ANALYTICS.md](./ADMIN_VOCABULARY_ANALYTICS.md), `/admin/analytics/questions`, `/admin/analytics/vocabulary`, detailed quiz `answers` JSON on new attempts.
 

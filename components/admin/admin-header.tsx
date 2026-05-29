@@ -32,6 +32,12 @@ export function AdminHeader({
           Lesson Builder
         </Link>
         <Link
+          href="/admin/prompts"
+          className="text-slate-600 transition-colors hover:text-emerald-600"
+        >
+          Prompts
+        </Link>
+        <Link
           href="/admin/analytics"
           className="text-slate-600 transition-colors hover:text-emerald-600"
         >

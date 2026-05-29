@@ -228,6 +228,13 @@ function buildSteps(
       statusLabel: "Manual — copy prompt in edit page",
       href: editHref,
       hrefLabel: "Open prompt generator →",
+      extraLinks: [
+        { label: "Prompt library →", href: "/admin/prompts" },
+        {
+          label: "Improve with prompts →",
+          href: `${editHref}#content-improvement`,
+        },
+      ],
     },
     {
       number: 3,
@@ -308,7 +315,8 @@ export function LessonBuilderChecklist({
         Workflow checklist
       </h2>
       <p className="mt-1 text-sm text-slate-600">
-        Draft → Prompt → Import → QA → Media → Preview → Backup → Publish
+        Draft → Prompt → Improve → Import → QA → Media → Preview → Backup →
+        Publish
       </p>
 
       {loading ? (

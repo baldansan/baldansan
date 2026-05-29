@@ -92,6 +92,21 @@ Analytics helpers: [lib/supabase/admin-analytics.ts](./lib/supabase/admin-analyt
 
 ---
 
+## Generate fix prompts from difficult questions
+
+On `/admin/analytics/questions`:
+
+1. Find a question with **Needs review** or accuracy below 70%.
+2. Click **Generate fix prompt** in the Actions column.
+3. Paste into ChatGPT/Cursor — response should be JSON with `quizQuestions` array (one item).
+4. Validate and import on `/admin/lessons/{id}/edit`, or edit manually in the quiz editor.
+
+Prompt includes lesson context, current question text, accuracy, and common wrong answers.
+
+See [AI_ASSISTED_CONTENT_WORKFLOW.md](./AI_ASSISTED_CONTENT_WORKFLOW.md).
+
+---
+
 ## Related docs
 
 - [ADMIN_VOCABULARY_ANALYTICS.md](./ADMIN_VOCABULARY_ANALYTICS.md) — vocabulary engagement

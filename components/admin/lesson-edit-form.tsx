@@ -12,6 +12,7 @@ import { LessonExportCard } from "@/components/admin/lesson-export-card";
 import { LessonRestoreCard } from "@/components/admin/lesson-restore-card";
 import { ImportQaSummary } from "@/components/admin/import-qa-summary";
 import { LessonPromptGenerator } from "@/components/admin/lesson-prompt-generator";
+import { LessonImprovementPrompts } from "@/components/admin/lesson-improvement-prompts";
 import { PublishingControls } from "@/components/admin/publishing-controls";
 import type { ImportQaStatus } from "@/lib/admin/import-qa";
 import { LessonQaBadge } from "@/components/admin/lesson-qa-badge";
@@ -234,6 +235,18 @@ export function LessonEditForm({
           onReadinessChange={handleQaReadiness}
         />
         <LessonPromptGenerator lesson={lesson} />
+      </AdminToolGroup>
+
+      <AdminToolGroup
+        title="Content improvement prompts"
+        description="Analytics/QA асуудлаас ChatGPT/Cursor-д paste хийх copy-ready prompt-ууд. AI API дуудахгүй."
+      >
+        <LessonImprovementPrompts
+          lesson={lesson}
+          subtitleCount={subtitleCount}
+          vocabularyCount={vocabActual}
+          quizCount={quizActual}
+        />
       </AdminToolGroup>
 
       <AdminToolGroup

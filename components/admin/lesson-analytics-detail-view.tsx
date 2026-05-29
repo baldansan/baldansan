@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { LessonAnalyticsImprovementSection } from "@/components/admin/lesson-analytics-improvement-section";
 import { AnalyticsMetricCard } from "@/components/admin/analytics-metric-card";
 import { LessonQaBadge } from "@/components/admin/lesson-qa-badge";
 import { MediaStatusBadge } from "@/components/admin/media-status-badge";
@@ -323,6 +324,8 @@ export function LessonAnalyticsDetailView({ detail }: Props) {
           )}
         </div>
       </div>
+
+      <LessonAnalyticsImprovementSection detail={detail} />
 
       <div className="flex flex-wrap gap-2">
         <Link

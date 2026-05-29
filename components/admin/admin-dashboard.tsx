@@ -260,6 +260,11 @@ export function AdminDashboard({ metrics }: Props) {
       >
         <div className="grid gap-4 sm:grid-cols-2">
           <AdminCard
+            title="Prompt library"
+            description="Copy-ready ChatGPT/Cursor prompts for content improvement — no AI API."
+            href="/admin/prompts"
+          />
+          <AdminCard
             title="Learning analytics"
             description={`${metrics.learnerProgress.quizAttempts} quiz attempts · ${metrics.learnerProgress.averageQuizPercentage ?? "—"}% avg · ${metrics.learnerProgress.completedLessonRows} completed`}
             href="/admin/analytics"

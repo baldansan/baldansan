@@ -3,6 +3,8 @@
 import Link from "next/link";
 import { useMemo, useState } from "react";
 import { AnalyticsMetricCard } from "@/components/admin/analytics-metric-card";
+import { ImprovementPromptCopyButton } from "@/components/admin/improvement-prompt-card";
+import { buildVocabularyImprovementPrompt } from "@/lib/admin/improvement-prompts";
 import type {
   VocabularyEngagementLevel,
   VocabularyEngagementRow,
@@ -155,6 +157,12 @@ export function VocabularyInsightsView({
                     >
                       Edit
                     </Link>
+                    {(showAttention || row.engagement === "low" || row.engagement === "none") ? (
+                      <ImprovementPromptCopyButton
+                        label="Generate vocabulary improvement prompt"
+                        prompt={buildVocabularyImprovementPrompt(row)}
+                      />
+                    ) : null}
                   </div>
                 </td>
               </tr>

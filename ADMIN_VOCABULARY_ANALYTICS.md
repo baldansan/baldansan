@@ -82,6 +82,21 @@ Helpers in [lib/supabase/admin-analytics.ts](./lib/supabase/admin-analytics.ts):
 
 ---
 
+## Generate better examples for weak vocabulary
+
+On `/admin/analytics/vocabulary`:
+
+1. Filter by **engagement: none** or **low**, or open **Least learned / never learned**.
+2. Click **Generate vocabulary improvement prompt** on a word row.
+3. Paste into ChatGPT/Cursor — response includes improved `vocabulary` entry and optional `quizQuestions`.
+4. Import via bulk import (append) or update manually in the vocabulary editor.
+
+Prompt includes Chinese, pinyin, Mongolian, HSK level, and learned count context.
+
+See [AI_ASSISTED_CONTENT_WORKFLOW.md](./AI_ASSISTED_CONTENT_WORKFLOW.md).
+
+---
+
 ## Related docs
 
 - [ADMIN_QUESTION_ANALYTICS.md](./ADMIN_QUESTION_ANALYTICS.md) — question-level quiz analytics

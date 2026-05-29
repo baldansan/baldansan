@@ -2,7 +2,25 @@
 
 **Project:** Buunduu Surtsgaay (Бөөндөө Сурцгаая)  
 **Checkpoint date:** May 2026  
-**Status:** Phase 4 **completed**; Phase 5 Step 19 question/vocabulary insights **completed**
+**Status:** Phase 4 **completed**; Phase 5 Step 20 AI-assisted improvement prompts **completed**
+
+---
+
+## Phase 5 Step 20 — AI-assisted content improvement prompts — **Completed**
+
+Phase 5 Step 20: AI-assisted content improvement prompt workflow added.
+
+| Area | Deliverable |
+|------|-------------|
+| Helpers | `lib/admin/improvement-prompts.ts` |
+| UI | `improvement-prompt-card`, `prompt-library-view` |
+| Route | `/admin/prompts` |
+| Integration | Lesson edit, lesson analytics, question/vocabulary insights, dashboard, lesson builder |
+| Docs | [AI_ASSISTED_CONTENT_WORKFLOW.md](./AI_ASSISTED_CONTENT_WORKFLOW.md) |
+
+No OpenAI API — copy-ready prompts only.
+
+**Next:** Phase 5 Step 21 — Content approval checklist. Or Phase 5 Final Audit.
 
 ---
 
