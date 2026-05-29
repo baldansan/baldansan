@@ -2,7 +2,25 @@
 
 **Project:** Buunduu Surtsgaay (Бөөндөө Сурцгаая)  
 **Checkpoint date:** May 2026  
-**Status:** Phase 4 **completed**; Phase 5 Step 21 release readiness workflow **completed**
+**Status:** Phase 4 **completed**; Phase 5 Step 22 Admin Task Center **completed**
+
+---
+
+## Phase 5 Step 22 — Admin Task Center & content review queue — **Completed**
+
+Phase 5 Step 22: Admin Task Center and Content Review Queue added.
+
+| Area | Deliverable |
+|------|-------------|
+| Helpers | `lib/admin/task-generator.ts`, `lib/supabase/admin-tasks.ts` |
+| Route | `/admin/tasks` |
+| UI | Task cards, filters, summary cards |
+| Integration | `/admin`, lesson edit, lesson builder, analytics |
+| Docs | [ADMIN_TASK_CENTER.md](./ADMIN_TASK_CENTER.md) |
+
+Tasks generated from live data — no task persistence table yet.
+
+**Next:** Phase 5 Step 23 — Task persistence, dismiss, assign, due dates. Or Phase 5 Final Audit.
 
 ---
 
@@ -18,7 +36,7 @@ Phase 5 Step 21: Content approval and release readiness workflow added.
 | Integration | `/admin/lessons`, dashboard metrics, lesson builder |
 | Docs | [RELEASE_WORKFLOW.md](./RELEASE_WORKFLOW.md) |
 
-**Next:** Phase 5 Step 22 — Admin notification/reminder system. Or Phase 5 Final Audit.
+**Next:** Phase 5 Step 23 — Task persistence, dismiss, assign, due dates. Or Phase 5 Final Audit.
 
 ---
 

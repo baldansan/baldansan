@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { LessonEditForm } from "@/components/admin/lesson-edit-form";
+import { LessonTasksCard } from "@/components/admin/lesson-tasks-card";
 import { EmptyState } from "@/components/empty-state";
 import {
   getAdminLessonById,
@@ -11,6 +12,7 @@ import {
   getLessonCompleteness,
   type LessonCompleteness,
 } from "@/lib/supabase/admin-content";
+import { getAdminTasksForLesson } from "@/lib/supabase/admin-tasks";
 
 export const dynamic = "force-dynamic";
 
@@ -54,12 +56,17 @@ export default async function AdminEditLessonPage({ params }: Props) {
     orderIndexFromServer ??
     (Number.isFinite(Number(normalizedId)) ? Number(normalizedId) : 1);
 
+  const lessonTasks = await getAdminTasksForLesson(normalizedId);
+
   return (
-    <LessonEditForm
-      lesson={lesson}
-      orderIndex={orderIndex}
-      initialCompleteness={initialCompleteness}
-    />
+    <div className="flex flex-col gap-8">
+      <LessonTasksCard lessonId={normalizedId} tasks={lessonTasks} />
+      <LessonEditForm
+        lesson={lesson}
+        orderIndex={orderIndex}
+        initialCompleteness={initialCompleteness}
+      />
+    </div>
   );
 }
 

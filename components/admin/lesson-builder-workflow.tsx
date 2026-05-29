@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { LessonBuilderChecklist } from "@/components/admin/lesson-builder-checklist";
+import { LessonBuilderTaskReview } from "@/components/admin/lesson-builder-task-review";
 import { LessonPackageSummary } from "@/components/admin/lesson-package-summary";
 import { LessonQaBadge } from "@/components/admin/lesson-qa-badge";
 import { MediaStatusBadge } from "@/components/admin/media-status-badge";
@@ -12,6 +13,7 @@ import {
   type LessonContentQaReport,
 } from "@/lib/admin/import-qa";
 import { getAdminPublishStatus } from "@/lib/admin/lesson-status";
+import type { AdminTask } from "@/lib/admin/task-generator";
 import type { LessonQaReport } from "@/lib/admin/lesson-qa";
 import { lessonPreviewPath } from "@/lib/lesson-publish";
 import { hasVideoUrl, hasThumbnailUrl, hasAudioUrl } from "@/lib/lesson-media";
@@ -23,9 +25,10 @@ import {
 
 type Props = {
   reports: LessonQaReport[];
+  tasks: AdminTask[];
 };
 
-export function LessonBuilderWorkflow({ reports }: Props) {
+export function LessonBuilderWorkflow({ reports, tasks }: Props) {
   const [query, setQuery] = useState("");
   const [selectedId, setSelectedId] = useState<string>(
     reports[0]?.lesson.id ?? ""
@@ -382,6 +385,11 @@ export function LessonBuilderWorkflow({ reports }: Props) {
         lesson={selectedLesson}
         qaReport={qaReport}
         loading={qaLoading}
+      />
+
+      <LessonBuilderTaskReview
+        lessonId={selectedLesson?.id ?? null}
+        tasks={tasks}
       />
     </div>
   );

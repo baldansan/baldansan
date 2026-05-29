@@ -70,6 +70,43 @@ export default async function AdminAnalyticsPage() {
         </div>
       </section>
 
+      <section className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:p-6">
+        <div className="flex flex-wrap items-start justify-between gap-3">
+          <div>
+            <h2 className="text-lg font-semibold text-slate-900">
+              Task center
+            </h2>
+            <p className="mt-1 text-sm text-slate-600">
+              Analytics insights also generate admin tasks (low scores, difficult
+              questions, low vocabulary engagement).
+            </p>
+          </div>
+          <Link
+            href="/admin/tasks"
+            className="inline-flex rounded-full bg-emerald-500 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-emerald-600"
+          >
+            View generated tasks
+          </Link>
+        </div>
+        {quickSummary.difficultQuestionsCount > 0 ||
+        quickSummary.wordsNeverLearnedCount > 0 ? (
+          <p className="mt-3 text-sm text-amber-800">
+            {quickSummary.difficultQuestionsCount > 0
+              ? `${quickSummary.difficultQuestionsCount} difficult question(s). `
+              : ""}
+            {quickSummary.wordsNeverLearnedCount > 0
+              ? `${quickSummary.wordsNeverLearnedCount} word(s) never learned. `
+              : ""}
+            <Link
+              href="/admin/tasks"
+              className="font-semibold text-emerald-700 hover:text-emerald-800"
+            >
+              Open task center →
+            </Link>
+          </p>
+        ) : null}
+      </section>
+
       <section>
         <h2 className="text-lg font-semibold text-slate-900">Deep insights</h2>
         <div className="mt-3 grid gap-3 sm:grid-cols-2">

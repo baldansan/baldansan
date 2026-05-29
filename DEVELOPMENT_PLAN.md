@@ -275,8 +275,16 @@ Phased roadmap from MVP demo to production product.
 - [lib/admin/release-readiness.ts](./lib/admin/release-readiness.ts), [lib/supabase/admin-release.ts](./lib/supabase/admin-release.ts)
 - Release checklist, approval controls, publish gate on edit page
 - [RELEASE_WORKFLOW.md](./RELEASE_WORKFLOW.md)
+- [ADMIN_TASK_CENTER.md](./ADMIN_TASK_CENTER.md)
 
-**Next:** Phase 5 Step 22 — Admin notification/reminder system. Or Phase 5 Final Audit.
+**Phase 5 Step 22 — Completed:** Admin Task Center and content review queue.
+
+- [lib/admin/task-generator.ts](./lib/admin/task-generator.ts), [lib/supabase/admin-tasks.ts](./lib/supabase/admin-tasks.ts)
+- Route `/admin/tasks` — filters, severity, category, lesson search
+- Dashboard, lesson edit, lesson builder, analytics integration
+- [ADMIN_TASK_CENTER.md](./ADMIN_TASK_CENTER.md) — no task DB persistence yet
+
+**Next:** Phase 5 Step 23 — Task persistence, dismiss, assign, due dates. Or Phase 5 Final Audit.
 - [components/admin/bulk-import-editor.tsx](./components/admin/bulk-import-editor.tsx) on lesson edit page
 - [LESSON_IMPORT_FORMAT.md](./LESSON_IMPORT_FORMAT.md)
 
@@ -310,8 +318,9 @@ Phased roadmap from MVP demo to production product.
 | 19 | Question-level quiz analytics + vocabulary engagement | ✅ Completed |
 | 20 | AI-assisted content improvement prompts | ✅ Completed |
 | 21 | Content approval / release readiness | ✅ Completed |
+| 22 | Admin Task Center / content review queue | ✅ Completed |
 
-**Next (Phase 5):** Step 22 — Admin notification/reminder system. Or Phase 5 Final Audit.
+**Next (Phase 5):** Step 23 — Task persistence, dismiss, assign, due dates. Or Phase 5 Final Audit.
 
 **Exit criteria:** New lesson published through admin UI without deploying code.
 

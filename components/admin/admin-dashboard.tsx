@@ -7,15 +7,23 @@ import { AdminCard } from "@/components/admin/admin-card";
 import { AdminDashboardSection } from "@/components/admin/admin-dashboard-section";
 import { AdminMetricCard } from "@/components/admin/admin-metric-card";
 import { AdminRecentActivity } from "@/components/admin/admin-recent-activity";
+import { AdminTaskCenterPreview } from "@/components/admin/admin-task-center-preview";
 import { getCurrentUser, hasSupabaseConfig } from "@/lib/supabase/auth";
+import type { AdminTask, AdminTaskSummary } from "@/lib/admin/task-generator";
 import type { AdminDashboardMetrics } from "@/lib/supabase/admin-analytics";
 import type { AuthUser } from "@/types/auth";
 
 type Props = {
   metrics: AdminDashboardMetrics;
+  taskSummary: AdminTaskSummary;
+  urgentTasks: AdminTask[];
 };
 
-export function AdminDashboard({ metrics }: Props) {
+export function AdminDashboard({
+  metrics,
+  taskSummary,
+  urgentTasks,
+}: Props) {
   const [user, setUser] = useState<AuthUser | null>(null);
 
   useEffect(() => {
@@ -234,6 +242,16 @@ export function AdminDashboard({ metrics }: Props) {
       </AdminDashboardSection>
 
       <AdminDashboardSection
+        title="Task center"
+        description="Actionable content review queue from lessons, QA, media, release, and analytics."
+      >
+        <AdminTaskCenterPreview
+          summary={taskSummary}
+          urgentTasks={urgentTasks}
+        />
+      </AdminDashboardSection>
+
+      <AdminDashboardSection
         title="Needs attention"
         description="Lessons with missing content or media — open edit to fix."
       >
@@ -252,6 +270,12 @@ export function AdminDashboard({ metrics }: Props) {
         description="Jump to common admin workflows."
       >
         <div className="flex flex-wrap gap-2">
+          <Link
+            href="/admin/tasks"
+            className="inline-flex rounded-full bg-emerald-500 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-emerald-600"
+          >
+            Task center
+          </Link>
           <Link
             href="/admin/analytics"
             className="inline-flex rounded-full bg-emerald-500 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-emerald-600"
@@ -296,6 +320,11 @@ export function AdminDashboard({ metrics }: Props) {
         description="Existing workflows — unchanged."
       >
         <div className="grid gap-4 sm:grid-cols-2">
+          <AdminCard
+            title="Task center"
+            description={`${taskSummary.totalTasks} tasks · ${taskSummary.criticalCount} critical · review queue before publish.`}
+            href="/admin/tasks"
+          />
           <AdminCard
             title="Prompt library"
             description="Copy-ready ChatGPT/Cursor prompts for content improvement — no AI API."

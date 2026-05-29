@@ -70,6 +70,8 @@ Workflow: **Create draft** → **Generate prompt** → **ChatGPT JSON** → **Va
 
 See [RELEASE_WORKFLOW.md](./RELEASE_WORKFLOW.md) for approval gates.
 
+Use **[Task Center](./ADMIN_TASK_CENTER.md)** (`/admin/tasks`) daily to review content issues before publishing.
+
 See [LESSON_PROMPT_TEMPLATE.md](./LESSON_PROMPT_TEMPLATE.md) and [LESSON_IMPORT_FORMAT.md](./LESSON_IMPORT_FORMAT.md).
 
 ### Bulk import from ChatGPT JSON (Step 9)

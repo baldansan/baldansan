@@ -74,6 +74,9 @@ Helper: [lib/admin/release-readiness.ts](./lib/admin/release-readiness.ts)
 | `/admin/lessons` | Release / QA badges and filters |
 | `/admin` | Release workflow metrics |
 | `/admin/lesson-builder` | Links to release checklist and approve |
+| `/admin/tasks` | Generated release blockers and ready-to-publish tasks |
+
+**Task Center** ([ADMIN_TASK_CENTER.md](./ADMIN_TASK_CENTER.md)) helps identify release blockers across all lessons before you publish.
 
 API: [lib/supabase/admin-release.ts](./lib/supabase/admin-release.ts) (client + admin JWT, no service_role).
 

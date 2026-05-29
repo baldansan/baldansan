@@ -107,6 +107,15 @@ function buildSteps(
         status: "blocked",
         statusLabel: "Select a lesson first",
       },
+      {
+        number: 9,
+        title: "Task review",
+        description: "Review generated admin tasks",
+        status: "blocked",
+        statusLabel: "Select a lesson first",
+        href: "/admin/tasks",
+        hrefLabel: "Open task center →",
+      },
     ];
   }
 
@@ -291,27 +300,52 @@ function buildSteps(
       href: editHref,
       hrefLabel: "Export backup →",
     },
-    {
-      number: 8,
-      title: "Publish",
-      description: "Publish when QA ready",
-      status: step7Status,
-      statusLabel: step7Label,
-      href: qaReady || publishStatus === "available" ? editHref : undefined,
-      hrefLabel:
-        publishStatus === "available"
-          ? "Manage publish status →"
-          : qaReady
-            ? "Publishing controls →"
-            : undefined,
-      extraLinks: [
-        {
-          label: "Approve for publish →",
-          href: `${editHref}#release-readiness`,
-        },
-      ],
-    },
-  ];
+      {
+        number: 8,
+        title: "Publish",
+        description: "Publish when QA ready",
+        status: step7Status,
+        statusLabel: step7Label,
+        href: qaReady || publishStatus === "available" ? editHref : undefined,
+        hrefLabel:
+          publishStatus === "available"
+            ? "Manage publish status →"
+            : qaReady
+              ? "Publishing controls →"
+              : undefined,
+        extraLinks: [
+          {
+            label: "Approve for publish →",
+            href: `${editHref}#release-readiness`,
+          },
+        ],
+      },
+      {
+        number: 9,
+        title: "Task review",
+        description: "Review generated admin tasks before publish",
+        status:
+          publishStatus === "available"
+            ? "done"
+            : hasContent
+              ? "pending"
+              : "blocked",
+        statusLabel:
+          publishStatus === "available"
+            ? "Published — monitor analytics tasks"
+            : hasContent
+              ? "Check task center for blockers"
+              : "Add content first",
+        href: "/admin/tasks",
+        hrefLabel: "Open task center →",
+        extraLinks: [
+          {
+            label: `Tasks for lesson ${lesson.id} →`,
+            href: `/admin/tasks?lessonId=${encodeURIComponent(lesson.id)}`,
+          },
+        ],
+      },
+    ];
 }
 
 export function LessonBuilderChecklist({

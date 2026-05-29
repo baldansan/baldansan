@@ -1,5 +1,6 @@
 import { LessonBuilderWorkflow } from "@/components/admin/lesson-builder-workflow";
 import { getHsk5LessonsWithQa } from "@/lib/admin/lesson-fetch";
+import { getAdminTasks } from "@/lib/supabase/admin-tasks";
 
 export const dynamic = "force-dynamic";
 
@@ -8,7 +9,10 @@ export const metadata = {
 };
 
 export default async function LessonBuilderPage() {
-  const reports = await getHsk5LessonsWithQa();
+  const [reports, tasks] = await Promise.all([
+    getHsk5LessonsWithQa(),
+    getAdminTasks(),
+  ]);
 
-  return <LessonBuilderWorkflow reports={reports} />;
+  return <LessonBuilderWorkflow reports={reports} tasks={tasks} />;
 }
