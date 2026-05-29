@@ -24,6 +24,7 @@ import {
   type QuizResult,
 } from "@/lib/progress";
 import { buildQuizDetailedAnswer, type QuizDetailedAnswer } from "@/lib/quiz-answers";
+import { enhanceLessonQuizQuestions } from "@/lib/quiz/smart-options";
 import { SpeakerButton } from "@/components/tts/speaker-button";
 import { containsTargetScript, resolveTtsLang } from "@/lib/tts/infer-lang";
 import type { LessonContent } from "@/types/lesson-content";
@@ -45,7 +46,11 @@ export function LessonQuizClient({
   nextLessonId,
   adminPreview = false,
 }: Props) {
-  const total = lesson.quizQuestions.length;
+  const quizQuestions = useMemo(
+    () => enhanceLessonQuizQuestions(lesson.quizQuestions, lesson.vocabulary),
+    [lesson.quizQuestions, lesson.vocabulary]
+  );
+  const total = quizQuestions.length;
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selected, setSelected] = useState<string | null>(null);
@@ -56,7 +61,7 @@ export function LessonQuizClient({
   const [savedResult, setSavedResult] = useState<QuizResult | null>(null);
   const persistAttemptRef = useRef(false);
 
-  const current = lesson.quizQuestions[currentIndex];
+  const current = quizQuestions[currentIndex];
   const isCorrect = selected === current?.correctAnswer;
   const ttsLang = resolveTtsLang({ courseId: lesson.courseId });
 
@@ -391,8 +396,7 @@ export function LessonQuizClient({
         )
       )}
       <LessonMobileStepBar
-        lessonId={lesson.id}
-        courseId={lesson.courseId}
+        lesson={lesson}
         current="quiz"
         adminPreview={adminPreview}
       />

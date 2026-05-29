@@ -1,37 +1,53 @@
-# Korean Hangul ZIP example (text only)
+# Korean Hangul ZIP example — Teach → Practice flow
 
-Minimal files to build a test ZIP for `/admin/import`.
+Minimal **upload-ready** package for `/admin/import`. Follows [KOREAN_LESSON_PACKAGE_SPEC.md](../../../KOREAN_LESSON_PACKAGE_SPEC.md).
+
+## Files (ZIP root)
+
+```
+manifest.json
+lesson.json
+vocabulary.json
+quiz.json
+subtitles.json    (recommended)
+index.html        (teacher reference — optional for import)
+```
 
 ## Build ZIP (PowerShell)
 
 From this folder:
 
 ```powershell
-Compress-Archive -Path manifest.json,lesson.json,vocabulary.json,quiz.json -DestinationPath korean-pre01-example.zip -Force
+Compress-Archive -Path manifest.json,lesson.json,vocabulary.json,quiz.json,subtitles.json,index.html -DestinationPath korean-pre01-example.zip -Force
 ```
 
-## Optional audio folder
+## Lesson flow in this example
 
-To test media upload, add:
+| Step | Source |
+|------|--------|
+| Teach | `subtitles.json` role `teach` |
+| Example | `subtitles.json` + `vocabulary.json` examples |
+| Warning | `subtitles.json` role `warning` |
+| Pronunciation | `subtitles.json` role `pronunciation` + TTS |
+| Check | `quiz.json` `phase: "check"` |
+| Practice | `quiz.json` `phase: "practice"` |
+| Game | App generates from vocabulary (`gameType` rows are **not** imported as quiz) |
 
-```
-audio/
-  sample.mp3
-```
+## quiz.json rules
 
-Set in `lesson.json`:
-
-```json
-"audioFile": "audio/sample.mp3",
-"mediaStatus": "pending"
-```
-
-Re-zip including the `audio` folder.
+- **`type`:** only `multiple_choice` or `cloze`
+- **`gameType`:** author note only — skipped on import
+- **`skillTags`:** same-category distractors (eo/o/u/eu)
 
 ## After import
 
 1. `/admin/import` → upload ZIP → Parse → Import as draft
 2. Preview `/lessons/k-pre-01?preview=admin`
-3. Publish when QA passes
+3. Walk: watch (textbook) → vocabulary → quiz → games
+4. Publish when QA passes
 
-If audio is missing, learners can use **TTS speaker buttons** (see [TTS_PRONUNCIATION_SYSTEM.md](../../../TTS_PRONUNCIATION_SYSTEM.md)).
+## Related
+
+- [KOREAN_LESSON_PACKAGE_SPEC.md](../../../KOREAN_LESSON_PACKAGE_SPEC.md)
+- [LESSON_ZIP_IMPORT_FORMAT.md](../../../LESSON_ZIP_IMPORT_FORMAT.md)
+- [TTS_PRONUNCIATION_SYSTEM.md](../../../TTS_PRONUNCIATION_SYSTEM.md)

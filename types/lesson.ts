@@ -86,6 +86,9 @@ export type QuizQuestion = {
   options: string[];
   correctAnswer: string;
   explanation: string;
+  /** Optional import metadata — used for distractor generation when present. */
+  skillTags?: string[];
+  difficulty?: "easy" | "medium" | "hard";
 };
 
 export type LessonQuiz = {

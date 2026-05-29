@@ -17,7 +17,7 @@
     "status": "draft",
     "orderIndex": 4,
     "mediaStatus": "missing",
-    "sourceNote": "Korean Book 1 PreLesson 05 — audio pending."
+    "sourceNote": "Korean Book 1 PreLesson 05 — audio pending. · lessonType=prelesson"
   },
   "subtitles": [
     {
@@ -62,7 +62,7 @@
       "chinese": "음절",
       "pinyin": "eumjeol",
       "mongolian": "үе — гийгүүлэгч + эгшигийн багц",
-      "hskLevel": "KR1",
+      "hskLevel": "KR-Beginner",
       "exampleChinese": "한 음절",
       "exampleMongolian": "нэг үе"
     },
@@ -71,7 +71,7 @@
       "chinese": "가",
       "pinyin": "ga",
       "mongolian": "ㄱ + ㅏ",
-      "hskLevel": "KR1",
+      "hskLevel": "KR-Beginner",
       "exampleChinese": "가방",
       "exampleMongolian": "цүнх"
     },
@@ -80,7 +80,7 @@
       "chinese": "나",
       "pinyin": "na",
       "mongolian": "ㄴ + ㅏ",
-      "hskLevel": "KR1",
+      "hskLevel": "KR-Beginner",
       "exampleChinese": "나라",
       "exampleMongolian": "улс"
     },
@@ -89,7 +89,7 @@
       "chinese": "다",
       "pinyin": "da",
       "mongolian": "ㄷ + ㅏ",
-      "hskLevel": "KR1",
+      "hskLevel": "KR-Beginner",
       "exampleChinese": "다리",
       "exampleMongolian": "хөл"
     },
@@ -98,7 +98,7 @@
       "chinese": "무",
       "pinyin": "mu",
       "mongolian": "ㅁ + ㅜ",
-      "hskLevel": "KR1",
+      "hskLevel": "KR-Beginner",
       "exampleChinese": "무엇",
       "exampleMongolian": "юу"
     },
@@ -107,7 +107,7 @@
       "chinese": "바",
       "pinyin": "ba",
       "mongolian": "ㅂ + ㅏ",
-      "hskLevel": "KR1",
+      "hskLevel": "KR-Beginner",
       "exampleChinese": "바다",
       "exampleMongolian": "далай"
     },
@@ -116,7 +116,7 @@
       "chinese": "고",
       "pinyin": "go",
       "mongolian": "ㄱ + ㅗ",
-      "hskLevel": "KR1",
+      "hskLevel": "KR-Beginner",
       "exampleChinese": "고기",
       "exampleMongolian": "мах"
     },
@@ -125,7 +125,7 @@
       "chinese": "노",
       "pinyin": "no",
       "mongolian": "ㄴ + ㅗ",
-      "hskLevel": "KR1",
+      "hskLevel": "KR-Beginner",
       "exampleChinese": "노래",
       "exampleMongolian": "дуу"
     },
@@ -134,7 +134,7 @@
       "chinese": "두",
       "pinyin": "du",
       "mongolian": "ㄷ + ㅜ",
-      "hskLevel": "KR1",
+      "hskLevel": "KR-Beginner",
       "exampleChinese": "두",
       "exampleMongolian": "хоёр"
     },
@@ -143,7 +143,7 @@
       "chinese": "수",
       "pinyin": "su",
       "mongolian": "ㅅ + ㅜ",
-      "hskLevel": "KR1",
+      "hskLevel": "KR-Beginner",
       "exampleChinese": "수",
       "exampleMongolian": "ус/тоо"
     },
@@ -152,7 +152,7 @@
       "chinese": "하",
       "pinyin": "ha",
       "mongolian": "ㅎ + ㅏ",
-      "hskLevel": "KR1",
+      "hskLevel": "KR-Beginner",
       "exampleChinese": "하다",
       "exampleMongolian": "хийх"
     },
@@ -161,7 +161,7 @@
       "chinese": "지",
       "pinyin": "ji",
       "mongolian": "ㅈ + ㅣ",
-      "hskLevel": "KR1",
+      "hskLevel": "KR-Beginner",
       "exampleChinese": "지금",
       "exampleMongolian": "одоо"
     },
@@ -170,7 +170,7 @@
       "chinese": "미",
       "pinyin": "mi",
       "mongolian": "ㅁ + ㅣ",
-      "hskLevel": "KR1",
+      "hskLevel": "KR-Beginner",
       "exampleChinese": "미",
       "exampleMongolian": "америк/үгүй"
     },
@@ -179,7 +179,7 @@
       "chinese": "비",
       "pinyin": "bi",
       "mongolian": "ㅂ + ㅣ",
-      "hskLevel": "KR1",
+      "hskLevel": "KR-Beginner",
       "exampleChinese": "비",
       "exampleMongolian": "бороо"
     },
@@ -188,7 +188,7 @@
       "chinese": "시",
       "pinyin": "si",
       "mongolian": "ㅅ + ㅣ",
-      "hskLevel": "KR1",
+      "hskLevel": "KR-Beginner",
       "exampleChinese": "시",
       "exampleMongolian": "цаг/хот"
     }

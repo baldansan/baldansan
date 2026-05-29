@@ -17,7 +17,7 @@
     "status": "draft",
     "orderIndex": 0,
     "mediaStatus": "missing",
-    "sourceNote": "Korean Book 1 PreLesson 01 — audio pending."
+    "sourceNote": "Korean Book 1 PreLesson 01 — audio pending. · lessonType=prelesson"
   },
   "subtitles": [
     {
@@ -62,7 +62,7 @@
       "chinese": "ㅏ",
       "pinyin": "a",
       "mongolian": "эгшиг «а»",
-      "hskLevel": "KR1",
+      "hskLevel": "KR-Beginner",
       "exampleChinese": "아",
       "exampleMongolian": "а"
     },
@@ -71,7 +71,7 @@
       "chinese": "ㅓ",
       "pinyin": "eo",
       "mongolian": "эгшиг «eo» — ө/о завсрын авиа",
-      "hskLevel": "KR1",
+      "hskLevel": "KR-Beginner",
       "exampleChinese": "어",
       "exampleMongolian": "eo"
     },
@@ -80,7 +80,7 @@
       "chinese": "ㅗ",
       "pinyin": "o",
       "mongolian": "эгшиг «о»",
-      "hskLevel": "KR1",
+      "hskLevel": "KR-Beginner",
       "exampleChinese": "오",
       "exampleMongolian": "о"
     },
@@ -89,7 +89,7 @@
       "chinese": "ㅜ",
       "pinyin": "u",
       "mongolian": "эгшиг «у»",
-      "hskLevel": "KR1",
+      "hskLevel": "KR-Beginner",
       "exampleChinese": "우",
       "exampleMongolian": "у"
     },
@@ -98,7 +98,7 @@
       "chinese": "ㅡ",
       "pinyin": "eu",
       "mongolian": "эгшиг «eu» — ы/үгүй эгшигтэй төстэй",
-      "hskLevel": "KR1",
+      "hskLevel": "KR-Beginner",
       "exampleChinese": "으",
       "exampleMongolian": "eu"
     },
@@ -107,7 +107,7 @@
       "chinese": "ㅣ",
       "pinyin": "i",
       "mongolian": "эгшиг «и»",
-      "hskLevel": "KR1",
+      "hskLevel": "KR-Beginner",
       "exampleChinese": "이",
       "exampleMongolian": "и"
     },
@@ -116,7 +116,7 @@
       "chinese": "아",
       "pinyin": "a",
       "mongolian": "эгшиг ㅏ-ийн жишээ",
-      "hskLevel": "KR1",
+      "hskLevel": "KR-Beginner",
       "exampleChinese": "아!",
       "exampleMongolian": "а!"
     },
@@ -125,7 +125,7 @@
       "chinese": "어",
       "pinyin": "eo",
       "mongolian": "эгшиг ㅓ-ийн жишээ",
-      "hskLevel": "KR1",
+      "hskLevel": "KR-Beginner",
       "exampleChinese": "어?",
       "exampleMongolian": "eo?"
     },
@@ -134,7 +134,7 @@
       "chinese": "오",
       "pinyin": "o",
       "mongolian": "эгшиг ㅗ-ийн жишээ",
-      "hskLevel": "KR1",
+      "hskLevel": "KR-Beginner",
       "exampleChinese": "오!",
       "exampleMongolian": "о!"
     },
@@ -143,7 +143,7 @@
       "chinese": "우",
       "pinyin": "u",
       "mongolian": "эгшиг ㅜ-ийн жишээ",
-      "hskLevel": "KR1",
+      "hskLevel": "KR-Beginner",
       "exampleChinese": "우리",
       "exampleMongolian": "бид"
     },
@@ -152,7 +152,7 @@
       "chinese": "으",
       "pinyin": "eu",
       "mongolian": "эгшиг ㅡ-ийн жишээ",
-      "hskLevel": "KR1",
+      "hskLevel": "KR-Beginner",
       "exampleChinese": "음",
       "exampleMongolian": "хм"
     },
@@ -161,7 +161,7 @@
       "chinese": "이",
       "pinyin": "i",
       "mongolian": "эгшиг ㅣ-ийн жишээ",
-      "hskLevel": "KR1",
+      "hskLevel": "KR-Beginner",
       "exampleChinese": "이름",
       "exampleMongolian": "нэр"
     }

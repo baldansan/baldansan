@@ -3,6 +3,7 @@ import type { LessonContent } from "@/types/lesson-content";
 export const lesson2: LessonContent = {
   id: "2",
   courseId: "hsk5",
+  contentType: "video",
   title: "Lesson 2",
   chineseTitle: "你真的懂我吗？",
   subtitle: "Харилцаанд ойлголцол, асуулт, сэтгэл хөдлөлийн хэллэгүүд.",

@@ -7,6 +7,7 @@ import { GameHeader } from "@/components/games/game-header";
 import { GameResultCard } from "@/components/games/game-result-card";
 import { GameShell } from "@/components/games/game-shell";
 import { buildArrangeGameItems } from "@/lib/games/game-data";
+import { resolveGameLabels, type GameLabels } from "@/lib/games/game-lesson-meta";
 import { saveGameResult } from "@/lib/games/game-progress";
 import { SpeakerButton } from "@/components/tts/speaker-button";
 import { resolveTtsLang } from "@/lib/tts/infer-lang";
@@ -16,12 +17,24 @@ type Props = {
   lessonId: string;
   courseId?: string;
   vocabulary: GameVocabItem[];
+  isKorean?: boolean;
+  isPrelesson?: boolean;
+  labels?: GameLabels;
 };
 
-export function ArrangeGameClient({ lessonId, courseId, vocabulary }: Props) {
+export function ArrangeGameClient({
+  lessonId,
+  courseId,
+  vocabulary,
+  isKorean = false,
+  isPrelesson = false,
+  labels: labelsProp,
+}: Props) {
+  const labels = labelsProp ?? resolveGameLabels(isKorean, isPrelesson);
+  const gameContext = { isKorean, isPrelesson };
   const questions = useMemo(
-    () => buildArrangeGameItems(vocabulary),
-    [vocabulary]
+    () => buildArrangeGameItems(vocabulary, 6, gameContext),
+    [vocabulary, isKorean, isPrelesson]
   );
   const [qIndex, setQIndex] = useState(0);
   const [picked, setPicked] = useState<string[]>([]);
@@ -110,10 +123,10 @@ export function ArrangeGameClient({ lessonId, courseId, vocabulary }: Props) {
   if (questions.length === 0) {
     return (
       <GameShell>
-        <GameHeader title="Дараалал" />
+        <GameHeader title={labels.arrangeTitle} />
         <GameEmptyState
           lessonId={lessonId}
-          message="Энэ тоглоомд example sentence хэрэгтэй."
+          message={labels.arrangeEmptyMessage}
         />
       </GameShell>
     );
@@ -122,7 +135,7 @@ export function ArrangeGameClient({ lessonId, courseId, vocabulary }: Props) {
   if (finished) {
     return (
       <GameShell>
-        <GameHeader title="Дараалал" score={score} />
+        <GameHeader title={labels.arrangeTitle} score={score} />
         <GameResultCard
           score={score}
           correct={correctCount}
@@ -139,7 +152,7 @@ export function ArrangeGameClient({ lessonId, courseId, vocabulary }: Props) {
   return (
     <GameShell>
       <GameHeader
-        title="Дараалал"
+        title={labels.arrangeTitle}
         progress={`${qIndex + 1}/${total}`}
         score={score}
       />

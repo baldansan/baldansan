@@ -12,6 +12,7 @@ import {
 } from "@/lib/supabase/content";
 import { hasSupabaseConfig } from "@/lib/supabase/client";
 import { isPublicLesson } from "@/lib/lesson-publish";
+import { enrichLessonContentMeta } from "@/lib/lesson-content-type";
 import { LEARNER_COURSE_PROBE_IDS } from "@/lib/language-track";
 import type { Course } from "@/types/course";
 import type { CourseContent, LessonContent } from "@/types/lesson-content";
@@ -65,9 +66,10 @@ export function coursePath(courseId: string) {
 
 export function getLocalLessonById(lessonId: string): LessonContent | undefined {
   const normalized = normalizeLessonRouteId(lessonId);
-  return allLessons.find(
+  const lesson = allLessons.find(
     (lesson) => canonicalLessonId(lesson.id) === normalized
   );
+  return lesson ? enrichLessonContentMeta(lesson) : undefined;
 }
 
 export function getLocalLessonsByCourseId(courseId: string): LessonContent[] {
@@ -168,7 +170,7 @@ export async function getLessonById(
     lesson.vocabulary
   );
 
-  return { ...lesson, vocabulary };
+  return enrichLessonContentMeta({ ...lesson, vocabulary });
 }
 
 /** Public lesson fetch; undefined if draft or archived. */

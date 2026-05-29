@@ -1,12 +1,14 @@
 {
   "courseId": "korean-1",
-  "title": "PreLesson 01 — Үндсэн эgшиг",
+  "title": "PreLesson 01 — Үндсэн эгшиг",
   "chineseTitle": "기본 모음",
-  "subtitle": "Солонгосын 6 үндсэн эgшиг — а, eo, o, u, eu, i",
-  "description": "Hangul basic vowels for complete beginners.",
-  "duration": "10 min",
+  "subtitle": "Солонгосын 6 үндсэн эгшиг — а, eo, o, u, eu, i",
+  "description": "Багшийн урсгал: эхлээд эгшгийг тайлбарлана, жишээ уншина, монгол сурагчид анхааруулна, дараа нь богино шалгалт ба section дасгал. Quiz/game шууд эхлэхгүй.",
+  "lessonType": "prelesson",
+  "contentType": "textbook",
+  "duration": "15 min",
   "status": "draft",
-  "orderIndex": 0,
+  "orderIndex": 1,
   "mediaStatus": "missing",
-  "sourceNote": "Korean Hangul ZIP example — no audio bundled"
+  "sourceNote": "lessonType=prelesson · Korean Book 1 ZIP example"
 }

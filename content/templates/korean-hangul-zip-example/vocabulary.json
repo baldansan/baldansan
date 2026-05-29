@@ -1,34 +1,68 @@
 [
   {
+    "id": "v001",
     "chinese": "ㅏ",
     "pinyin": "a",
-    "mongolian": "эгшиг «а»",
-    "hskLevel": "KR1",
+    "mongolian": "Солонгос үндсэн эгшиг: a авиа",
+    "hskLevel": "KR-PRE",
+    "lessonSection": "vowels-basic",
+    "skillTags": ["hangul_vowel"],
     "exampleChinese": "아",
-    "exampleMongolian": "а"
+    "exampleMongolian": "а — эгшиг дангаараа"
   },
   {
+    "id": "v002",
     "chinese": "ㅓ",
     "pinyin": "eo",
-    "mongolian": "эгшиг «eo»",
-    "hskLevel": "KR1",
+    "mongolian": "Солонгос үндсэн эгшиг: eo авиа",
+    "hskLevel": "KR-PRE",
+    "lessonSection": "vowels-basic",
+    "skillTags": ["hangul_vowel"],
     "exampleChinese": "어",
-    "exampleMongolian": "eo"
+    "exampleMongolian": "eo — ㅗ (o)-оос ялга"
   },
   {
+    "id": "v003",
     "chinese": "ㅗ",
     "pinyin": "o",
-    "mongolian": "эгшиг «о»",
-    "hskLevel": "KR1",
+    "mongolian": "Солонгос үндсэн эгшиг: o авиа",
+    "hskLevel": "KR-PRE",
+    "lessonSection": "vowels-basic",
+    "skillTags": ["hangul_vowel"],
     "exampleChinese": "오",
     "exampleMongolian": "о"
   },
   {
-    "chinese": "가",
-    "pinyin": "ga",
-    "mongolian": "га (ㄱ+ㅏ)",
-    "hskLevel": "KR1",
-    "exampleChinese": "가방",
-    "exampleMongolian": "цүнх"
+    "id": "v004",
+    "chinese": "ㅜ",
+    "pinyin": "u",
+    "mongolian": "Солонгос үндсэн эгшиг: u авиа",
+    "hskLevel": "KR-PRE",
+    "lessonSection": "vowels-basic",
+    "skillTags": ["hangul_vowel"],
+    "exampleChinese": "우",
+    "exampleMongolian": "u"
+  },
+  {
+    "id": "v005",
+    "chinese": "ㅡ",
+    "pinyin": "eu",
+    "mongolian": "Солонгос үндсэн эгшиг: eu авиа",
+    "hskLevel": "KR-PRE",
+    "lessonSection": "vowels-basic",
+    "skillTags": ["hangul_vowel"],
+    "exampleChinese": "으",
+    "exampleMongolian": "eu — ㅜ (u)-тай бүү андуураарай"
+  },
+  {
+    "id": "v006",
+    "chinese": "ㅣ",
+    "pinyin": "i",
+    "mongolian": "Солонгос үндсэн эгшиг: i авиа",
+    "hskLevel": "KR-PRE",
+    "lessonSection": "vowels-basic",
+    "skillTags": ["hangul_vowel"],
+    "exampleChinese": "이",
+    "exampleMongolian": "i"
   }
 ]

@@ -1,6 +1,8 @@
 import type { SupabaseClient } from "@supabase/supabase-js";
+import { canonicalLessonId, lessonIdQueryCandidates } from "@/lib/lesson-id";
+import { normalizePublishStatus } from "@/lib/lesson-publish";
 import { mapLessonReleaseFields } from "@/lib/supabase/lesson-release-map";
-import { canonicalLessonId } from "@/lib/lesson-id";
+import { enrichLessonContentMeta } from "@/lib/lesson-content-type";
 import type { LessonContent, LessonPublishStatus } from "@/types/lesson-content";
 import type { QuizQuestion, QuizQuestionType } from "@/types/lesson";
 
@@ -24,6 +26,7 @@ type RpcLessonRow = {
   quiz_count: number;
   status: string;
   order_index: number;
+  language?: string | null;
   video_url?: string | null;
   thumbnail_url?: string | null;
   audio_url?: string | null;
@@ -67,13 +70,6 @@ type RpcQuizRow = {
   order_index: number;
 };
 
-function normalizePublishStatus(status: string): LessonPublishStatus {
-  if (status === "available" || status === "archived" || status === "draft") {
-    return status;
-  }
-  return "draft";
-}
-
 function parseOptions(options: unknown): string[] {
   if (!Array.isArray(options)) return [];
   return options.filter((item): item is string => typeof item === "string");
@@ -106,9 +102,10 @@ function mapRpcBundleToLessonContent(
     mongolian: row.mongolian,
   }));
 
-  return {
+  return enrichLessonContentMeta({
     id,
     courseId: lesson.course_id,
+    language: lesson.language?.trim() || undefined,
     title: lesson.title,
     chineseTitle: lesson.chinese_title ?? "",
     subtitle: lesson.subtitle ?? "",
@@ -153,49 +150,61 @@ function mapRpcBundleToLessonContent(
       })
     ),
     quizTypes: DEFAULT_QUIZ_TYPES,
-  };
+  });
 }
 
 export async function fetchAdminLessonBundleViaRpc(
   client: SupabaseClient,
   lessonId: string
 ): Promise<LessonContent | undefined> {
-  const { data, error } = await client.rpc("get_admin_lesson_bundle", {
-    p_id: lessonId,
-  });
+  const candidates = [
+    ...new Set(
+      lessonIdQueryCandidates(lessonId).map((candidate) => String(candidate).trim())
+    ),
+  ];
 
-  if (error) {
-    console.warn("[lesson-fetch] Admin lesson RPC failed", {
-      lessonId,
-      message: error.message,
+  for (const candidate of candidates) {
+    const { data, error } = await client.rpc("get_admin_lesson_bundle", {
+      p_id: candidate,
     });
-    return undefined;
+
+    if (error) {
+      console.warn("[lesson-fetch] Admin lesson RPC failed", {
+        lessonId,
+        candidate,
+        message: error.message,
+      });
+      continue;
+    }
+
+    if (!data || typeof data !== "object") {
+      continue;
+    }
+
+    const bundle = data as {
+      lesson?: RpcLessonRow;
+      subtitles?: RpcSubtitleRow[];
+      vocabulary?: RpcVocabRow[];
+      quiz?: RpcQuizRow[];
+    };
+
+    if (!bundle.lesson) {
+      continue;
+    }
+
+    console.warn("[lesson-fetch] Admin lesson loaded via RPC bundle", {
+      lessonId,
+      candidate,
+      resolvedId: canonicalLessonId(bundle.lesson.id),
+    });
+
+    return mapRpcBundleToLessonContent(
+      bundle.lesson,
+      bundle.subtitles ?? [],
+      bundle.vocabulary ?? [],
+      bundle.quiz ?? []
+    );
   }
 
-  if (!data || typeof data !== "object") {
-    return undefined;
-  }
-
-  const bundle = data as {
-    lesson?: RpcLessonRow;
-    subtitles?: RpcSubtitleRow[];
-    vocabulary?: RpcVocabRow[];
-    quiz?: RpcQuizRow[];
-  };
-
-  if (!bundle.lesson) {
-    return undefined;
-  }
-
-  console.warn("[lesson-fetch] Admin lesson loaded via RPC bundle", {
-    lessonId,
-    resolvedId: canonicalLessonId(bundle.lesson.id),
-  });
-
-  return mapRpcBundleToLessonContent(
-    bundle.lesson,
-    bundle.subtitles ?? [],
-    bundle.vocabulary ?? [],
-    bundle.quiz ?? []
-  );
+  return undefined;
 }

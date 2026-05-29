@@ -428,6 +428,13 @@ export async function parseLessonZip(file: File): Promise<LessonZipValidation> {
 
     const mediaFiles = await extractZipMediaFiles(zip);
 
+    const indexEntry = zip.file("index.html") ?? zip.file("Index.html");
+    if (indexEntry) {
+      warnings.push(
+        "index.html found — teacher reference only; not imported into CMS (use JSON + subtitles for app content)."
+      );
+    }
+
     const pkg: LessonZipPackage = {
       ok: errors.length === 0,
       manifest,

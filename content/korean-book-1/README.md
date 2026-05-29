@@ -39,8 +39,10 @@ Content in this folder is **import-ready draft** content. Fields named `chinese`
 | File | Purpose |
 |------|---------|
 | `course-metadata.json` | Course + lesson reference |
-| `course-setup.sql` | Optional course row INSERT |
-| `check-korean-course.sql` | Verification queries |
+| `course-setup.sql` | Legacy course INSERT (draft status) |
+| `create-korean-course.sql` | **Recommended** course INSERT (`status: available`) |
+| `verify-korean-prelesson.sql` | Post-import verification queries |
+| `korean-prelesson-import-index.md` | Import order, counts, publish priority |
 | `prelesson-hangul.json` | **Legacy** combined Hangul lesson (`k-hangul`) — use 8-file track instead |
 | `scripts/generate-prelessons.mjs` | Regenerate prelesson JSON (dev only) |
 
@@ -61,11 +63,12 @@ Content in this folder is **import-ready draft** content. Fields named `chinese`
 
 ## Quick start
 
-1. Read [KOREAN_PRELESSON_IMPORT_PLAN.md](../../KOREAN_PRELESSON_IMPORT_PLAN.md)
-2. Create course `korean-1` in admin (or run `course-setup.sql`)
-3. Create lessons `k-pre-01` … `k-pre-08`, then `k-01`, `k-02`
-4. Bulk import each JSON on `/admin/lessons/{id}/edit` (**Replace** on first import)
-5. Run [KOREAN_PRELESSON_QA.md](../../KOREAN_PRELESSON_QA.md) checklist
+1. Read [KOREAN_PRELESSON_IMPORT_STEPS.md](../../KOREAN_PRELESSON_IMPORT_STEPS.md) — **step-by-step admin import**
+2. Read [korean-prelesson-import-index.md](./korean-prelesson-import-index.md) — file order + publish priority
+3. Create course `korean-1` (`create-korean-course.sql` or admin)
+4. Create lesson shells `k-pre-01` … `k-pre-08`
+5. Bulk import each JSON on `/admin/lessons/{id}/edit` (**Replace** on first import)
+6. Run [KOREAN_PRELESSON_PUBLISH_QA.md](../../KOREAN_PRELESSON_PUBLISH_QA.md) before publish
 
 ## Tomorrow’s learner path
 

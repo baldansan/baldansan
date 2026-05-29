@@ -13,12 +13,15 @@ type PageProps = {
 
 export default async function MatchGamePage({ searchParams }: PageProps) {
   const { lessonId = "1" } = await searchParams;
-  const { vocabulary, courseId } = await getLessonGameContext(lessonId);
+  const context = await getLessonGameContext(lessonId);
   return (
     <MatchGameClient
       lessonId={lessonId}
-      courseId={courseId}
-      vocabulary={vocabulary}
+      courseId={context.courseId}
+      vocabulary={context.vocabulary}
+      isKorean={context.isKorean}
+      isPrelesson={context.isPrelesson}
+      labels={context.labels}
     />
   );
 }

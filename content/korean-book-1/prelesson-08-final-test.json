@@ -17,7 +17,7 @@
     "status": "draft",
     "orderIndex": 7,
     "mediaStatus": "missing",
-    "sourceNote": "Korean Book 1 PreLesson 08 — final Hangul test, audio pending."
+    "sourceNote": "Korean Book 1 PreLesson 08 — final Hangul test, audio pending. · lessonType=prelesson"
   },
   "subtitles": [
     {
@@ -48,7 +48,7 @@
       "chinese": "한글",
       "pinyin": "hangeul",
       "mongolian": "хангыль (шалгалтын тойм)",
-      "hskLevel": "KR1",
+      "hskLevel": "KR-Beginner",
       "exampleChinese": "한글 테스트",
       "exampleMongolian": "хангылийн шалгалт"
     },
@@ -57,7 +57,7 @@
       "chinese": "테스트",
       "pinyin": "teseuteu",
       "mongolian": "шалгалт",
-      "hskLevel": "KR1",
+      "hskLevel": "KR-Beginner",
       "exampleChinese": "종합 테스트",
       "exampleMongolian": "нэгтгэсэн шалгалт"
     }

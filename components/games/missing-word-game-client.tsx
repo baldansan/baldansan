@@ -9,21 +9,38 @@ import { GameProgressPill } from "@/components/games/game-progress-pill";
 import { GameResultCard } from "@/components/games/game-result-card";
 import { GameShell } from "@/components/games/game-shell";
 import { buildMissingWordItems } from "@/lib/games/game-data";
+import { resolveGameLabels, type GameLabels } from "@/lib/games/game-lesson-meta";
 import { saveGameResult } from "@/lib/games/game-progress";
 import { SpeakerButton } from "@/components/tts/speaker-button";
 import { resolveTtsLang } from "@/lib/tts/infer-lang";
 import type { GameVocabItem } from "@/lib/games/game-types";
 
+function sentenceForTts(sentence: string, answer: string): string {
+  return sentence.replace(/＿＿＿|__/g, answer);
+}
+
 type Props = {
   lessonId: string;
   courseId?: string;
   vocabulary: GameVocabItem[];
+  isKorean?: boolean;
+  isPrelesson?: boolean;
+  labels?: GameLabels;
 };
 
-export function MissingWordGameClient({ lessonId, courseId, vocabulary }: Props) {
+export function MissingWordGameClient({
+  lessonId,
+  courseId,
+  vocabulary,
+  isKorean = false,
+  isPrelesson = false,
+  labels: labelsProp,
+}: Props) {
+  const labels = labelsProp ?? resolveGameLabels(isKorean, isPrelesson);
+  const gameContext = { isKorean, isPrelesson };
   const questions = useMemo(
-    () => buildMissingWordItems(vocabulary),
-    [vocabulary]
+    () => buildMissingWordItems(vocabulary, 8, gameContext),
+    [vocabulary, isKorean, isPrelesson]
   );
   const [index, setIndex] = useState(0);
   const [revealed, setRevealed] = useState(false);
@@ -82,10 +99,10 @@ export function MissingWordGameClient({ lessonId, courseId, vocabulary }: Props)
   if (questions.length === 0) {
     return (
       <GameShell>
-        <GameHeader title="Дутуу үг" />
+        <GameHeader title={labels.missingWordTitle} />
         <GameEmptyState
           lessonId={lessonId}
-          message="Энэ тоглоомд example sentence хэрэгтэй. Үг бүрт жишээ өгүүлбэр нэмэгдсэн эсэхийг шалгана уу."
+          message={labels.missingEmptyMessage}
         />
       </GameShell>
     );
@@ -94,7 +111,7 @@ export function MissingWordGameClient({ lessonId, courseId, vocabulary }: Props)
   if (finished) {
     return (
       <GameShell>
-        <GameHeader title="Дутуу үг" score={score} />
+        <GameHeader title={labels.missingWordTitle} score={score} />
         <GameResultCard
           score={score}
           correct={correctCount}
@@ -111,7 +128,7 @@ export function MissingWordGameClient({ lessonId, courseId, vocabulary }: Props)
   return (
     <GameShell>
       <GameHeader
-        title="Дутуу үг"
+        title={labels.missingWordTitle}
         progress={`${index + 1}/${total}`}
         score={score}
       />
@@ -124,7 +141,7 @@ export function MissingWordGameClient({ lessonId, courseId, vocabulary }: Props)
                 {current.sentence}
               </p>
               <SpeakerButton
-                text={current.sentence.replace(/＿＿＿/g, current.correctAnswer)}
+                text={sentenceForTts(current.sentence, current.correctAnswer)}
                 lang={ttsLang}
                 courseId={courseId}
                 size="sm"

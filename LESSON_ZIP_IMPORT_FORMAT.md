@@ -14,12 +14,15 @@ lesson-package.zip
 ├── lesson.json            (required)
 ├── vocabulary.json        (required)
 ├── quiz.json              (required)
+├── index.html             (optional — teacher HTML reference; not imported)
 ├── subtitles.json         (optional)
 ├── audio/                 (optional)
 │   └── dialogue.mp3
 └── images/                (optional)
     └── cover.png
 ```
+
+**Korean packages:** see [KOREAN_LESSON_PACKAGE_SPEC.md](./KOREAN_LESSON_PACKAGE_SPEC.md) for Teach → Example → Warning → Practice flow, section tags, and `gameType` vs `type` rules.
 
 Alias folder name `image/` is also accepted for images.
 
@@ -116,24 +119,34 @@ At least **one** vocabulary row required.
 
 ## quiz.json (required)
 
-Array (may be empty with warning):
+Array (may be empty with warning).
+
+Supported types: **`multiple_choice`**, **`cloze`** only (same as bulk import).
+
+**Do not** use app game modes as `type`. Rows with **`gameType`** are author notes only — import skips them (games generate from vocabulary in the app).
+
+`correctAnswer` must match one of `options` (for `multiple_choice`).
+
+Optional fields: `lessonSection`, `phase` (`check` | `practice`), `orderIndex`, `skillTags`, `difficulty`, `id`.
 
 ```json
 [
   {
+    "id": "Q001",
     "type": "multiple_choice",
+    "phase": "check",
+    "lessonSection": "vowels-basic",
     "question": "「ㅏ」-ийн romanization аль вэ?",
     "options": ["a", "o", "u", "i"],
     "correctAnswer": "a",
     "explanation": "ㅏ → a",
-    "lessonSection": "recognition"
+    "skillTags": ["hangul_vowel_romanization"],
+    "difficulty": "easy"
   }
 ]
 ```
 
-Supported types: **`multiple_choice`**, **`cloze`** only (same as bulk import).
-
-`correctAnswer` must match one of `options`.
+See [KOREAN_LESSON_PACKAGE_SPEC.md](./KOREAN_LESSON_PACKAGE_SPEC.md) for full Teach → Practice flow.
 
 ---
 

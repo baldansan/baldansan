@@ -1,4 +1,5 @@
--- Korean Book 1 — optional course row
+-- Korean Book 1 — optional course row (legacy)
+-- Prefer: content/korean-book-1/create-korean-course.sql (status: available)
 -- Run manually in Supabase SQL editor. Does not modify schema.
 -- Adjust order_index if it conflicts with existing courses.
 

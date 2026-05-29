@@ -17,7 +17,7 @@
     "status": "draft",
     "orderIndex": 5,
     "mediaStatus": "missing",
-    "sourceNote": "Korean Book 1 PreLesson 06 — audio pending."
+    "sourceNote": "Korean Book 1 PreLesson 06 — audio pending. · lessonType=prelesson"
   },
   "subtitles": [
     {
@@ -62,7 +62,7 @@
       "chinese": "받침",
       "pinyin": "batchim",
       "mongolian": "төгсгөлийн гийгүүлэгч (үеийн доор)",
-      "hskLevel": "KR1",
+      "hskLevel": "KR-Beginner",
       "exampleChinese": "받침이 있어요.",
       "exampleMongolian": "Батчимтай байна."
     },
@@ -71,7 +71,7 @@
       "chinese": "한국",
       "pinyin": "hanguk",
       "mongolian": "Солонгос (улс/хэл)",
-      "hskLevel": "KR1",
+      "hskLevel": "KR-Beginner",
       "exampleChinese": "한국 사람",
       "exampleMongolian": "солонгос хүн"
     },
@@ -80,7 +80,7 @@
       "chinese": "몽골",
       "pinyin": "monggol",
       "mongolian": "Монгол",
-      "hskLevel": "KR1",
+      "hskLevel": "KR-Beginner",
       "exampleChinese": "몽골 사람",
       "exampleMongolian": "монгол хүн"
     },
@@ -89,7 +89,7 @@
       "chinese": "밥",
       "pinyin": "bap",
       "mongolian": "хоол / будаа",
-      "hskLevel": "KR1",
+      "hskLevel": "KR-Beginner",
       "exampleChinese": "밥을 먹어요.",
       "exampleMongolian": "Хоол идье."
     },
@@ -98,7 +98,7 @@
       "chinese": "물",
       "pinyin": "mul",
       "mongolian": "ус",
-      "hskLevel": "KR1",
+      "hskLevel": "KR-Beginner",
       "exampleChinese": "물을 마셔요.",
       "exampleMongolian": "Ус уу."
     },
@@ -107,7 +107,7 @@
       "chinese": "집",
       "pinyin": "jip",
       "mongolian": "байр, гэр",
-      "hskLevel": "KR1",
+      "hskLevel": "KR-Beginner",
       "exampleChinese": "집에 가요.",
       "exampleMongolian": "Гэртээ явъя."
     },
@@ -116,7 +116,7 @@
       "chinese": "일",
       "pinyin": "il",
       "mongolian": "нэг / ажил",
-      "hskLevel": "KR1",
+      "hskLevel": "KR-Beginner",
       "exampleChinese": "일을 해요.",
       "exampleMongolian": "Ажил хий."
     },
@@ -125,7 +125,7 @@
       "chinese": "손",
       "pinyin": "son",
       "mongolian": "гар",
-      "hskLevel": "KR1",
+      "hskLevel": "KR-Beginner",
       "exampleChinese": "손을 씻어요.",
       "exampleMongolian": "Гараа уга."
     },
@@ -134,7 +134,7 @@
       "chinese": "문",
       "pinyin": "mun",
       "mongolian": "хаалга",
-      "hskLevel": "KR1",
+      "hskLevel": "KR-Beginner",
       "exampleChinese": "문을 열어요.",
       "exampleMongolian": "Хаалга нээ."
     },
@@ -143,7 +143,7 @@
       "chinese": "한",
       "pinyin": "han",
       "mongolian": "нэг / солонгос (한)",
-      "hskLevel": "KR1",
+      "hskLevel": "KR-Beginner",
       "exampleChinese": "한국",
       "exampleMongolian": "Солонгос"
     },
@@ -152,7 +152,7 @@
       "chinese": "국",
       "pinyin": "guk",
       "mongolian": "улс",
-      "hskLevel": "KR1",
+      "hskLevel": "KR-Beginner",
       "exampleChinese": "한국",
       "exampleMongolian": "Солонгос"
     },
@@ -161,7 +161,7 @@
       "chinese": "골",
       "pinyin": "gol",
       "mongolian": "гол (몽골)",
-      "hskLevel": "KR1",
+      "hskLevel": "KR-Beginner",
       "exampleChinese": "몽골",
       "exampleMongolian": "Монгол"
     }

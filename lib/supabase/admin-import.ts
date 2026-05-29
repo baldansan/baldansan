@@ -1,4 +1,5 @@
 import { analyzeImportPayloadExtras } from "@/lib/admin/import-qa";
+import type { SupabaseClient } from "@supabase/supabase-js";
 import { isCurrentUserAdmin } from "@/lib/supabase/admin";
 import {
   ADMIN_ACTIVITY_ACTIONS,
@@ -86,6 +87,8 @@ export type NormalizedQuizImport = {
   options: string[];
   correctAnswer: string;
   explanation: string | null;
+  skillTags?: string[];
+  difficulty?: string;
 };
 
 export type LessonImportPayload = {
@@ -98,7 +101,15 @@ export type BulkImportMode = "append" | "replace";
 
 export type BulkImportOptions = {
   mode?: BulkImportMode;
+  /** Server route: authenticated Supabase client from cookies. */
+  client?: SupabaseClient;
+  /** Skip client-side admin gate when route already verified admin. */
+  skipAdminGate?: boolean;
 };
+
+function resolveImportClient(client?: SupabaseClient) {
+  return client ?? supabase;
+}
 
 export type ImportValidationContext = {
   courseId?: string;
@@ -391,12 +402,18 @@ export function validateLessonImportPayload(
             ? options.length === 0 || options.length >= 2
             : options.length >= 2;
       if (canImport) {
+        const skillTags = Array.isArray(item.skillTags)
+          ? item.skillTags.filter((tag): tag is string => typeof tag === "string")
+          : undefined;
+        const difficulty = String(item.difficulty ?? "").trim() || undefined;
         quizQuestions.push({
           type,
           question,
           options,
           correctAnswer,
           explanation,
+          skillTags,
+          difficulty,
         });
       }
     }
@@ -431,10 +448,12 @@ export function validateLessonImportPayload(
 
 async function maxOrderIndex(
   table: "subtitle_lines" | "vocabulary_words" | "quiz_questions",
-  lessonId: string
+  lessonId: string,
+  client?: SupabaseClient
 ): Promise<number> {
-  if (!supabase) return 0;
-  const { data } = await supabase
+  const db = resolveImportClient(client);
+  if (!db) return 0;
+  const { data } = await db
     .from(table)
     .select("order_index")
     .eq("lesson_id", lessonId)
@@ -446,11 +465,13 @@ async function maxOrderIndex(
 
 async function deleteLessonContent(
   lessonId: string,
-  table: "subtitle_lines" | "vocabulary_words" | "quiz_questions"
+  table: "subtitle_lines" | "vocabulary_words" | "quiz_questions",
+  client?: SupabaseClient
 ): Promise<AdminImportResult<null>> {
-  if (!supabase) return notConfigured();
+  const db = resolveImportClient(client);
+  if (!db) return notConfigured();
 
-  const { error } = await supabase.from(table).delete().eq("lesson_id", lessonId);
+  const { error } = await db.from(table).delete().eq("lesson_id", lessonId);
 
   if (error) {
     return { data: null, error: formatWriteError(error) };
@@ -463,13 +484,16 @@ export async function bulkImportLessonContent(
   payload: LessonImportPayload,
   options?: BulkImportOptions
 ): Promise<AdminImportResult<BulkImportSummary>> {
-  if (!supabase || !hasSupabaseConfig) {
+  const db = resolveImportClient(options?.client);
+  if (!db || !hasSupabaseConfig) {
     return notConfigured();
   }
 
-  const gate = await requireAdmin();
-  if (gate.error) {
-    return { data: null, error: gate.error };
+  if (!options?.skipAdminGate) {
+    const gate = await requireAdmin();
+    if (gate.error) {
+      return { data: null, error: gate.error };
+    }
   }
 
   const mode: BulkImportMode = options?.mode ?? "append";
@@ -502,7 +526,7 @@ export async function bulkImportLessonContent(
         "vocabulary_words",
         "quiz_questions",
       ] as const) {
-        const del = await deleteLessonContent(trimmedLessonId, table);
+        const del = await deleteLessonContent(trimmedLessonId, table, options?.client);
         if (del.error) return { data: null, error: del.error };
       }
     }
@@ -512,9 +536,9 @@ export async function bulkImportLessonContent(
     let quizStart = 0;
 
     if (mode === "append") {
-      subtitleStart = await maxOrderIndex("subtitle_lines", trimmedLessonId);
-      vocabStart = await maxOrderIndex("vocabulary_words", trimmedLessonId);
-      quizStart = await maxOrderIndex("quiz_questions", trimmedLessonId);
+      subtitleStart = await maxOrderIndex("subtitle_lines", trimmedLessonId, options?.client);
+      vocabStart = await maxOrderIndex("vocabulary_words", trimmedLessonId, options?.client);
+      quizStart = await maxOrderIndex("quiz_questions", trimmedLessonId, options?.client);
     }
 
     if (payload.subtitles.length > 0) {
@@ -527,7 +551,7 @@ export async function bulkImportLessonContent(
         mongolian: item.mongolian,
         order_index: subtitleStart + i + 1,
       }));
-      const { error } = await supabase.from("subtitle_lines").insert(rows);
+      const { error } = await db.from("subtitle_lines").insert(rows);
       if (error) {
         return { data: null, error: formatWriteError(error) };
       }
@@ -544,7 +568,7 @@ export async function bulkImportLessonContent(
         example_mongolian: item.exampleMongolian,
         order_index: vocabStart + i + 1,
       }));
-      const { error } = await supabase.from("vocabulary_words").insert(rows);
+      const { error } = await db.from("vocabulary_words").insert(rows);
       if (error) {
         return { data: null, error: formatWriteError(error) };
       }
@@ -560,13 +584,15 @@ export async function bulkImportLessonContent(
         explanation: item.explanation,
         order_index: quizStart + i + 1,
       }));
-      const { error } = await supabase.from("quiz_questions").insert(rows);
+      const { error } = await db.from("quiz_questions").insert(rows);
       if (error) {
         return { data: null, error: formatWriteError(error) };
       }
     }
 
-    const refresh = await refreshLessonCounts(trimmedLessonId);
+    const refresh = await refreshLessonCounts(trimmedLessonId, options?.client, {
+      skipAdminGate: options?.skipAdminGate,
+    });
     if (refresh.error) {
       return { data: null, error: refresh.error };
     }

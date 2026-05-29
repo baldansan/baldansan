@@ -125,6 +125,7 @@ Source JSON already in `content/korean-book-1/prelesson-*.json` — convert to Z
 
 ## Related
 
+- [KOREAN_LESSON_PACKAGE_SPEC.md](../KOREAN_LESSON_PACKAGE_SPEC.md) — **Солонгос lesson package бүтэц, section урсгал**
 - [KOREAN_PRELESSON_IMPORT_PLAN.md](../KOREAN_PRELESSON_IMPORT_PLAN.md) — JSON paste import order
 - [LESSON_IMPORT_FORMAT.md](../LESSON_IMPORT_FORMAT.md) — single-lesson JSON bulk paste
 - [MEDIA_UPLOAD_WORKFLOW.md](../MEDIA_UPLOAD_WORKFLOW.md)
