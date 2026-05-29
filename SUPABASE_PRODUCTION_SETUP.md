@@ -186,6 +186,23 @@ Fix all **fail** rows before Vercel deploy. See [supabase/verify/README.md](./su
 5. Upload thumbnail → confirm file in `lesson-media` bucket.
 6. Publish lesson → confirm visible on `/courses/hsk5`.
 7. After Vercel deploy, open `/deployment-check` on production URL — confirm no **fail** rows.
+8. Complete `/admin/launch-candidate` before go-live — export launch report.
+
+---
+
+## 9. Post-launch verification and backups
+
+**Daily (first week):** See [POST_LAUNCH_MONITORING.md](./POST_LAUNCH_MONITORING.md).
+
+| Check | Action |
+|-------|--------|
+| SQL verification | Re-run `supabase/verify/production_verification.sql` if schema or policies changed |
+| Auth URLs | Confirm Site URL and Redirect URLs match production domain |
+| Backups | Export lesson JSON from admin before bulk content changes |
+| Supabase dashboard | Review Auth logs and Database logs for errors |
+| Storage | Spot-check `lesson-media` uploads after admin edits |
+
+**Warning:** Schema migrations are not automatically reversible. Export backups before destructive content or policy changes. See [ROLLBACK_PLAN.md](./ROLLBACK_PLAN.md).
 
 ---
 
@@ -203,4 +220,6 @@ Fix all **fail** rows before Vercel deploy. See [supabase/verify/README.md](./su
 - [supabase/verify/README.md](./supabase/verify/README.md) — production verification SQL
 - [DEPLOYMENT_PLAN.md](./DEPLOYMENT_PLAN.md)
 - [PRODUCTION_CHECKLIST.md](./PRODUCTION_CHECKLIST.md)
+- [POST_LAUNCH_MONITORING.md](./POST_LAUNCH_MONITORING.md)
+- [ROLLBACK_PLAN.md](./ROLLBACK_PLAN.md)
 - [PHASE_5_FINAL_AUDIT.md](./PHASE_5_FINAL_AUDIT.md)

@@ -2,7 +2,23 @@
 
 **Project:** Buunduu Surtsgaay (Бөөндөө Сурцгаая)  
 **Checkpoint date:** May 2026  
-**Status:** Phase 6 Step 5 Security/RLS final audit and launch candidate **completed**
+**Status:** Phase 6 Step 6 Launch candidate final smoke test **completed**
+
+---
+
+## Phase 6 Step 6 — Launch candidate — **Completed**
+
+Phase 6 Step 6: Launch candidate final smoke test and go-live notes added.
+
+| Area | Deliverable |
+|------|-------------|
+| Route | `/admin/launch-candidate` — smoke test, status cards, decision, export |
+| Report | `lib/admin/launch-candidate-report.ts` |
+| Components | launch-status-card, launch-checklist, launch-decision-card, launch-report-export-card |
+| Docs | GO_LIVE_NOTES.md, ROLLBACK_PLAN.md, POST_LAUNCH_MONITORING.md, PHASE_6_LAUNCH_SUMMARY.md |
+| Storage | localStorage `buunduu-launch-candidate` |
+
+**Next:** Production launch sign-off or Phase 7.
 
 ---
 

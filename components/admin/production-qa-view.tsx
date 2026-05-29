@@ -134,7 +134,13 @@ export function ProductionQaView() {
             href="/admin/security-audit"
             className="inline-flex rounded-full border border-emerald-200 bg-white px-4 py-2 text-sm font-semibold text-emerald-800 hover:bg-emerald-50"
           >
-            Open Security / RLS Audit
+            Security / RLS Audit
+          </Link>
+          <Link
+            href="/admin/launch-candidate"
+            className="inline-flex rounded-full border border-emerald-200 bg-white px-4 py-2 text-sm font-semibold text-emerald-800 hover:bg-emerald-50"
+          >
+            Launch Candidate Report
           </Link>
         </div>
       </section>

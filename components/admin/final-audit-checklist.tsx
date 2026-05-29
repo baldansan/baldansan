@@ -171,8 +171,9 @@ const SECTIONS: AuditSection[] = [
       },
       {
         label: "Launch candidate status",
-        status: "needs check",
-        note: "See LAUNCH_CANDIDATE_CHECKLIST.md",
+        status: "ready",
+        href: "/admin/launch-candidate",
+        note: "Final smoke test + go-live decision",
       },
     ],
   },
@@ -346,6 +347,12 @@ export function FinalAuditChecklist() {
             className="inline-flex rounded-full border border-emerald-200 bg-white px-5 py-2.5 text-sm font-semibold text-emerald-800 hover:bg-emerald-50"
           >
             Activity log
+          </Link>
+          <Link
+            href="/admin/launch-candidate"
+            className="inline-flex rounded-full border border-emerald-200 bg-white px-5 py-2.5 text-sm font-semibold text-emerald-800 hover:bg-emerald-50"
+          >
+            Launch Candidate
           </Link>
           <Link
             href="/courses/hsk5"

@@ -9,7 +9,7 @@ Phase 6: production readiness. **Do not deploy until checklists are complete.**
 | 3 | Vercel deployment setup | ✅ Completed |
 | 4 | Production route testing | ✅ Completed |
 | 5 | Security / RLS final audit | ✅ Completed |
-| 6 | Launch candidate | Pending |
+| 6 | Launch candidate | ✅ Completed |
 
 ---
 
@@ -122,7 +122,15 @@ Run after every production deploy alongside `/deployment-check` and `/admin/syst
 3. **Docs:** [SECURITY_RLS_AUDIT.md](./SECURITY_RLS_AUDIT.md), [LAUNCH_CANDIDATE_CHECKLIST.md](./LAUNCH_CANDIDATE_CHECKLIST.md)
 4. **SQL:** Enhanced `production_verification.sql` — security group, content policies, is_admin qualification
 
-**Next step:** Phase 6 Step 6 — Launch candidate final smoke test and go-live notes.
+**Next step:** Phase 6 complete — production launch sign-off per GO_LIVE_NOTES.md.
+
+### Phase 6 Step 6 — Launch candidate final smoke test (completed)
+
+1. **Route:** `/admin/launch-candidate` — status cards, smoke test, go-live decision, export
+2. **Docs:** GO_LIVE_NOTES.md, ROLLBACK_PLAN.md, POST_LAUNCH_MONITORING.md, PHASE_6_LAUNCH_SUMMARY.md
+3. **Storage:** localStorage `buunduu-launch-candidate`
+
+Run before go-live and after every production deploy.
 
 ---
 
