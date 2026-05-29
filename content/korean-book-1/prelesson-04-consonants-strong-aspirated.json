@@ -1,0 +1,310 @@
+{
+  "_meta": {
+    "source": "draft",
+    "needsSourceAudit": true,
+    "sourceStatus": "needs_source_upload",
+    "sourceFileExpected": "Солонгос_Ном_PreLesson_Hangul_한글_Premium_Package.html",
+    "note": "Korean in chinese fields; romanization in pinyin. No HTML source in repo — draft from standard Hangul curriculum."
+  },
+  "lesson": {
+    "id": "k-pre-04",
+    "courseId": "korean-1",
+    "title": "PreLesson 04 — Хүчтэй ба амьсгалтай гийгүүлэгч",
+    "chineseTitle": "쌍자음과 격음",
+    "subtitle": "ㄲ ㄸ ㅃ ㅆ ㅉ ба ㅋ ㅌ ㅍ ㅊ",
+    "description": "Хүчтэй (쌍자음) болон амьсгалтай (격음) гийгүүлэгчийг таних, унших.",
+    "duration": "12 min",
+    "status": "draft",
+    "orderIndex": 3,
+    "mediaStatus": "missing",
+    "sourceNote": "Korean Book 1 PreLesson 04 — audio pending."
+  },
+  "subtitles": [
+    {
+      "start": "00:00",
+      "end": "00:06",
+      "chinese": "쌍자음과 격음을 배웁시다.",
+      "pinyin": "Ssangjaeum-gwa gyeogeum-eul baeupsida.",
+      "mongolian": "Хүчтэй ба амьсгалтай гийгүүлэгч."
+    },
+    {
+      "start": "00:07",
+      "end": "00:14",
+      "chinese": "ㅋ ㅌ ㅍ ㅊ — 격음 (амьсгалтай)",
+      "pinyin": "k, t, p, ch",
+      "mongolian": "Амьсгалтай: ㅋ ㅌ ㅍ ㅊ"
+    },
+    {
+      "start": "00:15",
+      "end": "00:22",
+      "chinese": "ㄲ ㄸ ㅃ ㅆ ㅉ — 쌍자음 (хүчтэй)",
+      "pinyin": "kk, tt, pp, ss, jj",
+      "mongolian": "Хүчтэй: ㄲ ㄸ ㅃ ㅆ ㅉ"
+    },
+    {
+      "start": "00:23",
+      "end": "00:30",
+      "chinese": "카, 타, 파, 차",
+      "pinyin": "ka, ta, pa, cha",
+      "mongolian": "Амьсгалтай жишээ."
+    },
+    {
+      "start": "00:31",
+      "end": "00:38",
+      "chinese": "까, 따, 빠, 싸, 짜",
+      "pinyin": "kka, tta, ppa, ssa, jja",
+      "mongolian": "Хүчтэй жишээ."
+    }
+  ],
+  "vocabulary": [
+    {
+      "id": "kr_p04_k",
+      "chinese": "ㅋ",
+      "pinyin": "k",
+      "mongolian": "амьсгалтай «к»",
+      "hskLevel": "KR1",
+      "exampleChinese": "카",
+      "exampleMongolian": "ka"
+    },
+    {
+      "id": "kr_p04_t",
+      "chinese": "ㅌ",
+      "pinyin": "t",
+      "mongolian": "амьсгалтай «т»",
+      "hskLevel": "KR1",
+      "exampleChinese": "타",
+      "exampleMongolian": "ta"
+    },
+    {
+      "id": "kr_p04_p",
+      "chinese": "ㅍ",
+      "pinyin": "p",
+      "mongolian": "амьсгалтай «п»",
+      "hskLevel": "KR1",
+      "exampleChinese": "파",
+      "exampleMongolian": "pa"
+    },
+    {
+      "id": "kr_p04_ch",
+      "chinese": "ㅊ",
+      "pinyin": "ch",
+      "mongolian": "амьсгалтай «ч»",
+      "hskLevel": "KR1",
+      "exampleChinese": "차",
+      "exampleMongolian": "cha"
+    },
+    {
+      "id": "kr_p04_kk",
+      "chinese": "ㄲ",
+      "pinyin": "kk",
+      "mongolian": "хүчтэй «кк»",
+      "hskLevel": "KR1",
+      "exampleChinese": "까",
+      "exampleMongolian": "kka"
+    },
+    {
+      "id": "kr_p04_tt",
+      "chinese": "ㄸ",
+      "pinyin": "tt",
+      "mongolian": "хүчтэй «тт»",
+      "hskLevel": "KR1",
+      "exampleChinese": "따",
+      "exampleMongolian": "tta"
+    },
+    {
+      "id": "kr_p04_pp",
+      "chinese": "ㅃ",
+      "pinyin": "pp",
+      "mongolian": "хүчтэй «пп»",
+      "hskLevel": "KR1",
+      "exampleChinese": "빠",
+      "exampleMongolian": "ppa"
+    },
+    {
+      "id": "kr_p04_ss",
+      "chinese": "ㅆ",
+      "pinyin": "ss",
+      "mongolian": "хүчтэй «сс»",
+      "hskLevel": "KR1",
+      "exampleChinese": "싸",
+      "exampleMongolian": "ssa"
+    },
+    {
+      "id": "kr_p04_jj",
+      "chinese": "ㅉ",
+      "pinyin": "jj",
+      "mongolian": "хүчтэй «жж»",
+      "hskLevel": "KR1",
+      "exampleChinese": "짜",
+      "exampleMongolian": "jja"
+    },
+    {
+      "id": "kr_p04_ka",
+      "chinese": "카",
+      "pinyin": "ka",
+      "mongolian": "ㅋ + ㅏ",
+      "hskLevel": "KR1",
+      "exampleChinese": "커피",
+      "exampleMongolian": "кофе"
+    },
+    {
+      "id": "kr_p04_cha",
+      "chinese": "차",
+      "pinyin": "cha",
+      "mongolian": "ㅊ + ㅏ",
+      "hskLevel": "KR1",
+      "exampleChinese": "차",
+      "exampleMongolian": "цай"
+    },
+    {
+      "id": "kr_p04_kka",
+      "chinese": "까",
+      "pinyin": "kka",
+      "mongolian": "ㄲ + ㅏ",
+      "hskLevel": "KR1",
+      "exampleChinese": "까만",
+      "exampleMongolian": "хар"
+    },
+    {
+      "id": "kr_p04_ssa",
+      "chinese": "싸",
+      "pinyin": "ssa",
+      "mongolian": "ㅆ + ㅏ",
+      "hskLevel": "KR1",
+      "exampleChinese": "싸다",
+      "exampleMongolian": "хямд"
+    }
+  ],
+  "quizQuestions": [
+    {
+      "id": "p04_r1",
+      "type": "multiple_choice",
+      "question": "「ㅋ」-ийн romanization:",
+      "options": [
+        "k",
+        "g",
+        "kk",
+        "ch"
+      ],
+      "correctAnswer": "k",
+      "explanation": "ㅋ → k (aspirated)"
+    },
+    {
+      "id": "p04_r2",
+      "type": "multiple_choice",
+      "question": "「ㄲ」-ийн romanization:",
+      "options": [
+        "kk",
+        "k",
+        "g",
+        "t"
+      ],
+      "correctAnswer": "kk",
+      "explanation": "ㄲ → kk (tense)"
+    },
+    {
+      "id": "p04_r3",
+      "type": "multiple_choice",
+      "question": "「ㅊ」-ийн romanization:",
+      "options": [
+        "ch",
+        "j",
+        "s",
+        "k"
+      ],
+      "correctAnswer": "ch",
+      "explanation": "ㅊ → ch"
+    },
+    {
+      "id": "p04_rd1",
+      "type": "multiple_choice",
+      "question": "「파」-ийг уншвал:",
+      "options": [
+        "pa",
+        "ba",
+        "ppa",
+        "ha"
+      ],
+      "correctAnswer": "pa",
+      "explanation": "파 = ㅍ+ㅏ"
+    },
+    {
+      "id": "p04_rd2",
+      "type": "multiple_choice",
+      "question": "「짜」-ийг уншвал:",
+      "options": [
+        "jja",
+        "ja",
+        "cha",
+        "ssa"
+      ],
+      "correctAnswer": "jja",
+      "explanation": "짜 = ㅉ+ㅏ"
+    },
+    {
+      "id": "p04_rd3",
+      "type": "multiple_choice",
+      "question": "「싸」-ийг уншвал:",
+      "options": [
+        "ssa",
+        "sa",
+        "cha",
+        "ta"
+      ],
+      "correctAnswer": "ssa",
+      "explanation": "싸 = ㅆ+ㅏ"
+    },
+    {
+      "id": "p04_c1",
+      "type": "multiple_choice",
+      "question": "Амьсгалтай «t» — аль үсэг?",
+      "options": [
+        "ㅌ",
+        "ㄷ",
+        "ㄸ",
+        "ㅅ"
+      ],
+      "correctAnswer": "ㅌ",
+      "explanation": "ㅌ = aspirated t"
+    },
+    {
+      "id": "p04_c2",
+      "type": "multiple_choice",
+      "question": "Хүчтэй «pp» — аль үсэг?",
+      "options": [
+        "ㅃ",
+        "ㅂ",
+        "ㅍ",
+        "ㅁ"
+      ],
+      "correctAnswer": "ㅃ",
+      "explanation": "ㅃ = tense p"
+    },
+    {
+      "id": "p04_m1",
+      "type": "multiple_choice",
+      "question": "「쌍자음」 гэдэг нь:",
+      "options": [
+        "хүчтэй гийгүүлэгч",
+        "амьсгалтай",
+        "эгшиг",
+        "батчим"
+      ],
+      "correctAnswer": "хүчтэй гийгүүлэгч",
+      "explanation": "쌍자음 = double consonant"
+    },
+    {
+      "id": "p04_m2",
+      "type": "multiple_choice",
+      "question": "「격음」 гэдэг нь:",
+      "options": [
+        "амьсгалтай гийгүүлэгч",
+        "хүчтэй",
+        "эгшиг",
+        "үе"
+      ],
+      "correctAnswer": "амьсгалтай гийгүүлэгч",
+      "explanation": "격음 = aspirated"
+    }
+  ]
+}

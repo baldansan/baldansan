@@ -55,7 +55,22 @@ Must be **pass** before public v1.0 learner launch.
 | W3 | Payment not configured | `/pricing` is informational |
 | W4 | Some teacher routes demo-only | Not in v1.0 learner scope |
 | W5 | Migrations 011–018 may be unapplied on prod | B2B pages empty; learner app OK if 001–010 applied |
-| W6 | Mixed EN/MN labels on admin/B2B pages | Core learner nav + lesson flow copy polished |
+| W6 | Some admin/B2B labels remain English | Core learner pages polished MN (mobile UX sprint) |
+
+---
+
+## Mobile route test status (May 2026)
+
+| Area | Code/build | Production manual |
+|------|------------|-------------------|
+| Home, courses, HSK5 | Pass | Recommended |
+| Lesson watch/vocab/quiz | Pass | Recommended |
+| Dashboard, profile, review | Pass | Recommended |
+| Login/signup | Pass | Recommended |
+| Bottom nav labels | Pass (code) | Verify 375px |
+| Horizontal overflow | Pass (code) | Verify on device |
+
+See [MOBILE_UX_POLISH_REPORT.md](./MOBILE_UX_POLISH_REPORT.md) for full mobile checklist.
 
 ---
 

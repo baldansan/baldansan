@@ -1,0 +1,11 @@
+{
+  "packageVersion": "1.0",
+  "courseId": "korean-1",
+  "lessonId": "k-pre-01",
+  "language": "ko-KR",
+  "title": "PreLesson 01 — Үндсэн эгшиг",
+  "mongolianTitle": "Хангыль унших суурь",
+  "source": "Example packaging pipeline",
+  "hasAudio": false,
+  "hasImages": false
+}

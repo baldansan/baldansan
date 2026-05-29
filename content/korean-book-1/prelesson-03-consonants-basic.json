@@ -1,0 +1,337 @@
+{
+  "_meta": {
+    "source": "draft",
+    "needsSourceAudit": true,
+    "sourceStatus": "needs_source_upload",
+    "sourceFileExpected": "Солонгос_Ном_PreLesson_Hangul_한글_Premium_Package.html",
+    "note": "Korean in chinese fields; romanization in pinyin. No HTML source in repo — draft from standard Hangul curriculum."
+  },
+  "lesson": {
+    "id": "k-pre-03",
+    "courseId": "korean-1",
+    "title": "PreLesson 03 — Үндсэн гийгүүлэгч",
+    "chineseTitle": "기본 자음",
+    "subtitle": "10 үндсэн гийгүүлэгч — ㄱ ㄴ ㄷ ㄹ ㅁ ㅂ ㅅ ㅇ ㅈ ㅎ",
+    "description": "Үндсэн гийгүүлэгчийг таних, үеэ унших (가 나 다 라 마 바 사 아 자 하).",
+    "duration": "15 min",
+    "status": "draft",
+    "orderIndex": 2,
+    "mediaStatus": "missing",
+    "sourceNote": "Korean Book 1 PreLesson 03 — audio pending."
+  },
+  "subtitles": [
+    {
+      "start": "00:00",
+      "end": "00:06",
+      "chinese": "기본 자음을 배웁시다.",
+      "pinyin": "Gibon jaeum-eul baeupsida.",
+      "mongolian": "Үндсэн гийгүүлэгчийг суръя."
+    },
+    {
+      "start": "00:07",
+      "end": "00:14",
+      "chinese": "ㄱ g/k, ㄴ n, ㄷ d/t, ㄹ r/l",
+      "pinyin": "g/k, n, d/t, r/l",
+      "mongolian": "Эхний дөрвөн гийгүүлэгч."
+    },
+    {
+      "start": "00:15",
+      "end": "00:22",
+      "chinese": "ㅁ m, ㅂ b/p, ㅅ s, ㅇ ng/-",
+      "pinyin": "m, b/p, s, ng/-",
+      "mongolian": "Дараагийн дөрвөн."
+    },
+    {
+      "start": "00:23",
+      "end": "00:30",
+      "chinese": "ㅈ j, ㅎ h",
+      "pinyin": "j, h",
+      "mongolian": "ㅈ, ㅎ."
+    },
+    {
+      "start": "00:31",
+      "end": "00:38",
+      "chinese": "가, 나, 다, 라, 마, 바, 사, 아, 자, 하",
+      "pinyin": "ga, na, da, ra, ma, ba, sa, a, ja, ha",
+      "mongolian": "Гийгүүлэгч + ㅏ = үе."
+    }
+  ],
+  "vocabulary": [
+    {
+      "id": "kr_p03_g",
+      "chinese": "ㄱ",
+      "pinyin": "g/k",
+      "mongolian": "гийгүүлэгч «г/к»",
+      "hskLevel": "KR1",
+      "exampleChinese": "가",
+      "exampleMongolian": "ga"
+    },
+    {
+      "id": "kr_p03_n",
+      "chinese": "ㄴ",
+      "pinyin": "n",
+      "mongolian": "гийгүүлэгч «н»",
+      "hskLevel": "KR1",
+      "exampleChinese": "나",
+      "exampleMongolian": "na"
+    },
+    {
+      "id": "kr_p03_d",
+      "chinese": "ㄷ",
+      "pinyin": "d/t",
+      "mongolian": "гийгүүлэгч «д/т»",
+      "hskLevel": "KR1",
+      "exampleChinese": "다",
+      "exampleMongolian": "da"
+    },
+    {
+      "id": "kr_p03_r",
+      "chinese": "ㄹ",
+      "pinyin": "r/l",
+      "mongolian": "гийгүүлэгч «р/л»",
+      "hskLevel": "KR1",
+      "exampleChinese": "라",
+      "exampleMongolian": "ra"
+    },
+    {
+      "id": "kr_p03_m",
+      "chinese": "ㅁ",
+      "pinyin": "m",
+      "mongolian": "гийгүүлэгч «м»",
+      "hskLevel": "KR1",
+      "exampleChinese": "마",
+      "exampleMongolian": "ma"
+    },
+    {
+      "id": "kr_p03_b",
+      "chinese": "ㅂ",
+      "pinyin": "b/p",
+      "mongolian": "гийгүүлэгч «б/п»",
+      "hskLevel": "KR1",
+      "exampleChinese": "바",
+      "exampleMongolian": "ba"
+    },
+    {
+      "id": "kr_p03_s",
+      "chinese": "ㅅ",
+      "pinyin": "s",
+      "mongolian": "гийгүүлэгч «с»",
+      "hskLevel": "KR1",
+      "exampleChinese": "사",
+      "exampleMongolian": "sa"
+    },
+    {
+      "id": "kr_p03_ng",
+      "chinese": "ㅇ",
+      "pinyin": "ng/-",
+      "mongolian": "гийгүүлэгч «нг» эсвэл эхний дутuu",
+      "hskLevel": "KR1",
+      "exampleChinese": "아",
+      "exampleMongolian": "a (ㅇ+ㅏ)"
+    },
+    {
+      "id": "kr_p03_j",
+      "chinese": "ㅈ",
+      "pinyin": "j",
+      "mongolian": "гийгүүлэгч «ж»",
+      "hskLevel": "KR1",
+      "exampleChinese": "자",
+      "exampleMongolian": "ja"
+    },
+    {
+      "id": "kr_p03_h",
+      "chinese": "ㅎ",
+      "pinyin": "h",
+      "mongolian": "гийгүүлэгч «х»",
+      "hskLevel": "KR1",
+      "exampleChinese": "하",
+      "exampleMongolian": "ha"
+    },
+    {
+      "id": "kr_p03_ga",
+      "chinese": "가",
+      "pinyin": "ga",
+      "mongolian": "ㄱ + ㅏ",
+      "hskLevel": "KR1",
+      "exampleChinese": "가방",
+      "exampleMongolian": "цүнх"
+    },
+    {
+      "id": "kr_p03_na",
+      "chinese": "나",
+      "pinyin": "na",
+      "mongolian": "ㄴ + ㅏ",
+      "hskLevel": "KR1",
+      "exampleChinese": "나라",
+      "exampleMongolian": "улс"
+    },
+    {
+      "id": "kr_p03_da",
+      "chinese": "다",
+      "pinyin": "da",
+      "mongolian": "ㄷ + ㅏ",
+      "hskLevel": "KR1",
+      "exampleChinese": "다리",
+      "exampleMongolian": "хөл"
+    },
+    {
+      "id": "kr_p03_ba",
+      "chinese": "바",
+      "pinyin": "ba",
+      "mongolian": "ㅂ + ㅏ",
+      "hskLevel": "KR1",
+      "exampleChinese": "바다",
+      "exampleMongolian": "далай"
+    },
+    {
+      "id": "kr_p03_sa",
+      "chinese": "사",
+      "pinyin": "sa",
+      "mongolian": "ㅅ + ㅏ",
+      "hskLevel": "KR1",
+      "exampleChinese": "사람",
+      "exampleMongolian": "хүн"
+    },
+    {
+      "id": "kr_p03_ja",
+      "chinese": "자",
+      "pinyin": "ja",
+      "mongolian": "ㅈ + ㅏ",
+      "hskLevel": "KR1",
+      "exampleChinese": "자동차",
+      "exampleMongolian": "машин"
+    }
+  ],
+  "quizQuestions": [
+    {
+      "id": "p03_r1",
+      "type": "multiple_choice",
+      "question": "「ㄱ」-ийн romanization:",
+      "options": [
+        "g/k",
+        "n",
+        "d/t",
+        "s"
+      ],
+      "correctAnswer": "g/k",
+      "explanation": "ㄱ → g/k"
+    },
+    {
+      "id": "p03_r2",
+      "type": "multiple_choice",
+      "question": "「ㅅ」-ийн romanization:",
+      "options": [
+        "s",
+        "j",
+        "h",
+        "m"
+      ],
+      "correctAnswer": "s",
+      "explanation": "ㅅ → s"
+    },
+    {
+      "id": "p03_r3",
+      "type": "multiple_choice",
+      "question": "「ㅇ」 үеийн эхэнд:",
+      "options": [
+        "дуугүй (дутuu)",
+        "х",
+        "н",
+        "м"
+      ],
+      "correctAnswer": "дуугүй (дутuu)",
+      "explanation": "ㅇ эхэнд = silent"
+    },
+    {
+      "id": "p03_rd1",
+      "type": "multiple_choice",
+      "question": "「가」-ийг уншвал:",
+      "options": [
+        "ga",
+        "na",
+        "da",
+        "ba"
+      ],
+      "correctAnswer": "ga",
+      "explanation": "가 = ㄱ+ㅏ"
+    },
+    {
+      "id": "p03_rd2",
+      "type": "multiple_choice",
+      "question": "「사」-ийг уншвал:",
+      "options": [
+        "sa",
+        "ja",
+        "ha",
+        "ma"
+      ],
+      "correctAnswer": "sa",
+      "explanation": "사 = ㅅ+ㅏ"
+    },
+    {
+      "id": "p03_rd3",
+      "type": "multiple_choice",
+      "question": "「하」-ийг уншвал:",
+      "options": [
+        "ha",
+        "ga",
+        "ja",
+        "ba"
+      ],
+      "correctAnswer": "ha",
+      "explanation": "하 = ㅎ+ㅏ"
+    },
+    {
+      "id": "p03_c1",
+      "type": "multiple_choice",
+      "question": "「ㄴ + ㅏ」 = ?",
+      "options": [
+        "나",
+        "다",
+        "라",
+        "마"
+      ],
+      "correctAnswer": "나",
+      "explanation": "ㄴ+ㅏ=나"
+    },
+    {
+      "id": "p03_c2",
+      "type": "multiple_choice",
+      "question": "「ㅂ + ㅏ」 = ?",
+      "options": [
+        "바",
+        "파",
+        "사",
+        "마"
+      ],
+      "correctAnswer": "바",
+      "explanation": "ㅂ+ㅏ=바"
+    },
+    {
+      "id": "p03_m1",
+      "type": "multiple_choice",
+      "question": "「ㄹ」-ийн romanization:",
+      "options": [
+        "r/l",
+        "n",
+        "g/k",
+        "d/t"
+      ],
+      "correctAnswer": "r/l",
+      "explanation": "ㄹ → r/l"
+    },
+    {
+      "id": "p03_m2",
+      "type": "multiple_choice",
+      "question": "「ㅈ」-ийн romanization:",
+      "options": [
+        "j",
+        "ch",
+        "s",
+        "h"
+      ],
+      "correctAnswer": "j",
+      "explanation": "ㅈ → j"
+    }
+  ]
+}

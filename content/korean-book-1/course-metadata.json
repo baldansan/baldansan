@@ -1,0 +1,110 @@
+{
+  "_comment": "Admin reference — create this course in CMS before importing lessons. Not auto-imported.",
+  "course": {
+    "id": "korean-1",
+    "title": "Korean Book 1",
+    "mongolianTitle": "Монгол хүнд зориулсан Солонгос хэл 1",
+    "publicTitle": "Солонгост ажиллахад хэрэгтэй Солонгос хэл",
+    "level": "Beginner",
+    "status": "draft",
+    "orderIndex": 2,
+    "description": "Солонгос үсэг, үндсэн үг, өгүүлбэр, ажил амьдралд хэрэгтэй хэллэгийг өдөр бүр богино хичээлээр сурах course."
+  },
+  "lessons": [
+    {
+      "suggestedId": "k-pre-01",
+      "orderIndex": 0,
+      "importFile": "prelesson-01-vowels-basic.json",
+      "title": "PreLesson 01 — Үндсэн эгшиг",
+      "chineseTitle": "기본 모음",
+      "publishStatus": "draft",
+      "mediaStatus": "missing"
+    },
+    {
+      "suggestedId": "k-pre-02",
+      "orderIndex": 1,
+      "importFile": "prelesson-02-vowels-y-compound.json",
+      "title": "PreLesson 02 — Нэмэлт эгшиг",
+      "chineseTitle": "이중 모음과 야/여/요/유",
+      "publishStatus": "draft",
+      "mediaStatus": "missing"
+    },
+    {
+      "suggestedId": "k-pre-03",
+      "orderIndex": 2,
+      "importFile": "prelesson-03-consonants-basic.json",
+      "title": "PreLesson 03 — Үндсэн гийгүүлэгч",
+      "chineseTitle": "기본 자음",
+      "publishStatus": "draft",
+      "mediaStatus": "missing"
+    },
+    {
+      "suggestedId": "k-pre-04",
+      "orderIndex": 3,
+      "importFile": "prelesson-04-consonants-strong-aspirated.json",
+      "title": "PreLesson 04 — Хүчтэй ба амьсгалтай гийгүүлэгч",
+      "chineseTitle": "쌍자음과 격음",
+      "publishStatus": "draft",
+      "mediaStatus": "missing"
+    },
+    {
+      "suggestedId": "k-pre-05",
+      "orderIndex": 4,
+      "importFile": "prelesson-05-syllable-building.json",
+      "title": "PreLesson 05 — Үе бүтээх",
+      "chineseTitle": "음절 만들기",
+      "publishStatus": "draft",
+      "mediaStatus": "missing"
+    },
+    {
+      "suggestedId": "k-pre-06",
+      "orderIndex": 5,
+      "importFile": "prelesson-06-batchim.json",
+      "title": "PreLesson 06 — 받침",
+      "chineseTitle": "받침",
+      "publishStatus": "draft",
+      "mediaStatus": "missing"
+    },
+    {
+      "suggestedId": "k-pre-07",
+      "orderIndex": 6,
+      "importFile": "prelesson-07-reading-practice.json",
+      "title": "PreLesson 07 — Унших дасгал",
+      "chineseTitle": "읽기 연습",
+      "publishStatus": "draft",
+      "mediaStatus": "missing"
+    },
+    {
+      "suggestedId": "k-pre-08",
+      "orderIndex": 7,
+      "importFile": "prelesson-08-final-test.json",
+      "title": "PreLesson 08 — 한글 Final Test",
+      "chineseTitle": "한글 종합 테스트",
+      "publishStatus": "draft",
+      "mediaStatus": "missing"
+    },
+    {
+      "suggestedId": "k-01",
+      "orderIndex": 8,
+      "importFile": "lesson-01-sogae.json",
+      "title": "Lesson 01 — 소개",
+      "chineseTitle": "소개",
+      "publishStatus": "draft",
+      "mediaStatus": "missing"
+    },
+    {
+      "suggestedId": "k-02",
+      "orderIndex": 9,
+      "importFile": "lesson-02-hakgyo.json",
+      "title": "Lesson 02 — 학교",
+      "chineseTitle": "학교",
+      "publishStatus": "draft",
+      "mediaStatus": "missing"
+    }
+  ],
+  "_legacy": {
+    "note": "prelesson-hangul.json is a combined single-lesson fallback; prefer k-pre-01 … k-pre-08 for daily teaching.",
+    "suggestedId": "k-hangul",
+    "importFile": "prelesson-hangul.json"
+  }
+}

@@ -2,7 +2,58 @@
 
 **Project:** Buunduu Surtsgaay (Бөөндөө Сурцгаая)  
 **Checkpoint date:** May 2026  
-**Status:** v1.0 Launch Stabilization **completed** (deep sprint) — feature freeze applied for learner launch
+**Status:** v1.0 mobile app-like redesign **completed** before content upload
+
+---
+
+## v1.0 Mobile App-Like Redesign — **Completed**
+
+| Area | Deliverable |
+|------|-------------|
+| Report | [MOBILE_APP_REDESIGN_REPORT.md](./MOBILE_APP_REDESIGN_REPORT.md) |
+| Shell | Centered 430px phone container, soft gray outer background |
+| Nav | Bottom tabs: Нүүр, Давтах, Ханз, Тоглоом, Профайл |
+| Routes | `/home`, `/study`, `/kanji`, `/games`, `/kanji/[vocabId]`, `/games/*` + profile/lesson flow |
+| Components | `components/mobile/mobile-app-shell`, `mobile-bottom-nav`, etc. |
+
+**v1.0 practice games added:** match, translate, missing word, arrange, stroke demo — localStorage scores. See [PRACTICE_GAMES.md](./PRACTICE_GAMES.md).
+
+**Device/browser TTS pronunciation support added** for Korean and Chinese — speaker buttons on vocabulary, subtitles, quiz, games; settings on `/profile`. See [TTS_PRONUNCIATION_SYSTEM.md](./TTS_PRONUNCIATION_SYSTEM.md).
+
+**Admin ZIP lesson package import workflow added** — `/admin/import` for Korean/Chinese ZIP packages (text + optional media). See [LESSON_ZIP_IMPORT_FORMAT.md](./LESSON_ZIP_IMPORT_FORMAT.md).
+
+**Next:** HSK content upload sprint and game data enrichment.
+
+---
+
+## v1.0 Mobile UX Polish — **Completed**
+
+| Area | Deliverable |
+|------|-------------|
+| Report | [MOBILE_UX_POLISH_REPORT.md](./MOBILE_UX_POLISH_REPORT.md) |
+| Global | Sticky header, bottom nav labels, 960px max width, overflow fix |
+| Learner flow | Watch/vocab/quiz touch targets, MN CTAs, video placeholder |
+| Shared UI | `components/ui/page-shell`, `section-card`, `cta-button-row` |
+| Labels | `lib/learner-labels.ts` |
+
+**Next:** HSK4/HSK5 content upload sprint.
+
+---
+
+## v1.0 Launch Sign-off — **Ready for soft launch**
+
+| Area | Deliverable |
+|------|-------------|
+| Sign-off | [V1_LAUNCH_SIGNOFF.md](./V1_LAUNCH_SIGNOFF.md) |
+| Stabilization | [V1_LAUNCH_STABILIZATION.md](./V1_LAUNCH_STABILIZATION.md) |
+| Blockers | [V1_LAUNCH_BLOCKERS.md](./V1_LAUNCH_BLOCKERS.md) |
+| Migrations | [SUPABASE_MIGRATION_STATUS.md](./SUPABASE_MIGRATION_STATUS.md) |
+| Report | [V1_STABILIZATION_REPORT.md](./V1_STABILIZATION_REPORT.md) |
+
+**Production URL:** https://baldansan.vercel.app  
+**Decision:** Ready for soft launch — monitor, collect feedback, bug fixes only.
+
+**Next:** v1.0 soft launch and user feedback collection.
 
 ---
 
@@ -17,9 +68,9 @@
 | QA | `/admin/production-qa` v1.0 learner launch checklist |
 | Polish | Mongolian learner copy; mobile lesson page padding |
 
-**Recommendation:** Needs review — run production manual QA before public launch.
+**Recommendation:** Ready for soft launch — see [V1_LAUNCH_SIGNOFF.md](./V1_LAUNCH_SIGNOFF.md).
 
-**Next:** v1.0 public launch decision or v1.0 bug-fix pass.
+**Next:** v1.0 soft launch and user feedback collection.
 
 ---
 

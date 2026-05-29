@@ -1,0 +1,329 @@
+{
+  "_meta": {
+    "source": "draft",
+    "needsSourceAudit": true,
+    "sourceStatus": "needs_source_upload",
+    "deprecated": true,
+    "supersededBy": "prelesson-01-vowels-basic.json … prelesson-08-final-test.json (k-pre-01 … k-pre-08)",
+    "sourceFileExpected": "Солонгос_Ном_PreLesson_Hangul_한글_Premium_Package.html",
+    "note": "Legacy combined Hangul lesson. Prefer 8-lesson prelesson track. Korean in chinese fields; romanization in pinyin."
+  },
+  "lesson": {
+    "id": "k-hangul",
+    "courseId": "korean-1",
+    "title": "PreLesson — 한글",
+    "chineseTitle": "한글",
+    "subtitle": "Хангыль унших суурь — Lesson 1-ээс өмнө заавал үзэх",
+    "description": "Lesson 1-с өмнө солонгос үсэг, эгшиг, гийгүүлэгч, үе бүтээх, 받침 болон үндсэн дуудлагын дүрмийг сурна.",
+    "duration": "25 min",
+    "status": "draft",
+    "orderIndex": 0,
+    "mediaStatus": "missing",
+    "sourceNote": "Korean Book 1 — Hangul prelesson. Audio/video pending upload."
+  },
+  "subtitlePreview": [
+    {
+      "chinese": "한글은 표음 문자입니다.",
+      "pinyin": "Hangeul-eun pyoeum munja-imnida.",
+      "mongolian": "Хангыль нь дуудлагын бичиг мөн."
+    },
+    {
+      "chinese": "자음과 모음을 합치면 음절이 됩니다.",
+      "pinyin": "Jaeum-gwa moeum-eul hapchimyeon eumjeol-i doemnida.",
+      "mongolian": "Гийгүүлэгч ба эгшигийг нэгтгэвэл үе болно."
+    }
+  ],
+  "subtitles": [
+    {
+      "start": "00:00",
+      "end": "00:05",
+      "chinese": "안녕하세요. 한글 수업입니다.",
+      "pinyin": "Annyeonghaseyo. Hangeul sueop-imnida.",
+      "mongolian": "Сайн байна уу. Энэ бол хангылийн хичээл."
+    },
+    {
+      "start": "00:06",
+      "end": "00:12",
+      "chinese": "한글은 왕세종 대왕이 만든 글자입니다.",
+      "pinyin": "Hangeul-eun Wang Sejong daewang-i mandeun geulja-imnida.",
+      "mongolian": "Хангылийг Ван Сежон их хаан бүтээсэн."
+    },
+    {
+      "start": "00:13",
+      "end": "00:20",
+      "chinese": "모음 ㅏ, ㅓ, ㅗ, ㅜ를 먼저 배웁시다.",
+      "pinyin": "Moeum a, eo, o, u-reul meonjeo baeupsida.",
+      "mongolian": "Эгшиг ㅏ, ㅓ, ㅗ, ㅜ-ийг эхлээд суръя."
+    },
+    {
+      "start": "00:21",
+      "end": "00:28",
+      "chinese": "자음 ㄱ, ㄴ, ㄷ, ㄹ, ㅁ, ㅂ, ㅅ, ㅇ을 배웁니다.",
+      "pinyin": "Jaeum g, n, d, r, m, b, s, ng-eul baeumnida.",
+      "mongolian": "Гийгүүлэгч ㄱ, ㄴ, ㄷ, ㄹ, ㅁ, ㅂ, ㅅ, ㅇ-ийг сурна."
+    },
+    {
+      "start": "00:29",
+      "end": "00:36",
+      "chinese": "가 = ㄱ + ㅏ 입니다.",
+      "pinyin": "Ga = g + a imnida.",
+      "mongolian": "가 = ㄱ + ㅏ юм."
+    },
+    {
+      "start": "00:37",
+      "end": "00:44",
+      "chinese": "받침은 음절 아래에 오는 자음입니다.",
+      "pinyin": "Batchim-eun eumjeol arae-e oneun jaeum-imnida.",
+      "mongolian": "Батчим (받침) нь үеийн доод гийгүүлэгч."
+    }
+  ],
+  "vocabulary": [
+    {
+      "id": "kr_hangul",
+      "chinese": "한글",
+      "pinyin": "hangeul",
+      "mongolian": "хангыль (солонгос үсэг)",
+      "hskLevel": "KR1",
+      "exampleChinese": "한글을 배워요.",
+      "exampleMongolian": "Хангыль суръя."
+    },
+    {
+      "id": "kr_moeum",
+      "chinese": "모음",
+      "pinyin": "moeum",
+      "mongolian": "эгшиг үсэг",
+      "hskLevel": "KR1",
+      "exampleChinese": "모음이 많아요.",
+      "exampleMongolian": "Эгшиг үсэг олон байна."
+    },
+    {
+      "id": "kr_jaeum",
+      "chinese": "자음",
+      "pinyin": "jaeum",
+      "mongolian": "гийгүүлэгч үсэг",
+      "hskLevel": "KR1",
+      "exampleChinese": "자음을 씁니다.",
+      "exampleMongolian": "Гийгүүлэгчийг ашиглана."
+    },
+    {
+      "id": "kr_eumjeol",
+      "chinese": "음절",
+      "pinyin": "eumjeol",
+      "mongolian": "үе (эгшиг + гийгүүлэгчийн багц)",
+      "hskLevel": "KR1",
+      "exampleChinese": "한 음절입니다.",
+      "exampleMongolian": "Нэг үе юм."
+    },
+    {
+      "id": "kr_batchim",
+      "chinese": "받침",
+      "pinyin": "batchim",
+      "mongolian": "батчим (үеийн доод гийгүүлэгч)",
+      "hskLevel": "KR1",
+      "exampleChinese": "받침이 있어요.",
+      "exampleMongolian": "Батчимтай үе байна."
+    },
+    {
+      "id": "kr_vowel_a",
+      "chinese": "ㅏ",
+      "pinyin": "a",
+      "mongolian": "эгшиг «а»",
+      "hskLevel": "KR1",
+      "exampleChinese": "아",
+      "exampleMongolian": "а"
+    },
+    {
+      "id": "kr_vowel_eo",
+      "chinese": "ㅓ",
+      "pinyin": "eo",
+      "mongolian": "эгшиг «ө» (eo)",
+      "hskLevel": "KR1",
+      "exampleChinese": "어",
+      "exampleMongolian": "ө"
+    },
+    {
+      "id": "kr_vowel_o",
+      "chinese": "ㅗ",
+      "pinyin": "o",
+      "mongolian": "эgшиг «о»",
+      "hskLevel": "KR1",
+      "exampleChinese": "오",
+      "exampleMongolian": "о"
+    },
+    {
+      "id": "kr_vowel_u",
+      "chinese": "ㅜ",
+      "pinyin": "u",
+      "mongolian": "эgшиг «у»",
+      "hskLevel": "KR1",
+      "exampleChinese": "우",
+      "exampleMongolian": "у"
+    },
+    {
+      "id": "kr_consonant_g",
+      "chinese": "ㄱ",
+      "pinyin": "g/k",
+      "mongolian": "гийгүүлэгч «г/к»",
+      "hskLevel": "KR1",
+      "exampleChinese": "가",
+      "exampleMongolian": "га"
+    },
+    {
+      "id": "kr_consonant_n",
+      "chinese": "ㄴ",
+      "pinyin": "n",
+      "mongolian": "гийгүүлэгч «н»",
+      "hskLevel": "KR1",
+      "exampleChinese": "나",
+      "exampleMongolian": "на"
+    },
+    {
+      "id": "kr_consonant_d",
+      "chinese": "ㄷ",
+      "pinyin": "d/t",
+      "mongolian": "гийгүүлэгч «д/т»",
+      "hskLevel": "KR1",
+      "exampleChinese": "다",
+      "exampleMongolian": "да"
+    },
+    {
+      "id": "kr_consonant_r",
+      "chinese": "ㄹ",
+      "pinyin": "r/l",
+      "mongolian": "гийгүүлэгч «р/л»",
+      "hskLevel": "KR1",
+      "exampleChinese": "라",
+      "exampleMongolian": "ра"
+    },
+    {
+      "id": "kr_consonant_m",
+      "chinese": "ㅁ",
+      "pinyin": "m",
+      "mongolian": "гийгүүлэгч «м»",
+      "hskLevel": "KR1",
+      "exampleChinese": "마",
+      "exampleMongolian": "ма"
+    },
+    {
+      "id": "kr_consonant_b",
+      "chinese": "ㅂ",
+      "pinyin": "b/p",
+      "mongolian": "гийгүүлэгч «б/п»",
+      "hskLevel": "KR1",
+      "exampleChinese": "바",
+      "exampleMongolian": "ба"
+    },
+    {
+      "id": "kr_consonant_s",
+      "chinese": "ㅅ",
+      "pinyin": "s",
+      "mongolian": "гийгүүлэгч «с»",
+      "hskLevel": "KR1",
+      "exampleChinese": "사",
+      "exampleMongolian": "са"
+    },
+    {
+      "id": "kr_consonant_ng",
+      "chinese": "ㅇ",
+      "pinyin": "ng/-",
+      "mongolian": "гийгүүлэгч «нг» эсвэл эхний дэм (дутуу)",
+      "hskLevel": "KR1",
+      "exampleChinese": "아 (ㅇ + ㅏ)",
+      "exampleMongolian": "ㅇ + ㅏ = а"
+    },
+    {
+      "id": "kr_syllable_ga",
+      "chinese": "가",
+      "pinyin": "ga",
+      "mongolian": "га (ㄱ+ㅏ)",
+      "hskLevel": "KR1",
+      "exampleChinese": "가방",
+      "exampleMongolian": "цүнх (gabang)"
+    },
+    {
+      "id": "kr_syllable_han",
+      "chinese": "한",
+      "pinyin": "han",
+      "mongolian": "хан (ㅎ+ㅏ+ㄴ)",
+      "hskLevel": "KR1",
+      "exampleChinese": "한국",
+      "exampleMongolian": "Солонгос (Hanguk)"
+    }
+  ],
+  "quizQuestions": [
+    {
+      "id": "kh_q1",
+      "type": "multiple_choice",
+      "question": "「한글」 гэдэг үгийн зөв утга аль вэ?",
+      "options": [
+        "солонгос үсэг, хангыль",
+        "япон үсэг",
+        "хятад үсэг",
+        "латин үсэг"
+      ],
+      "correctAnswer": "солонгос үсэг, хангыль",
+      "explanation": "한글 = Солонгосын албан ёсны дуудлагын бичиг."
+    },
+    {
+      "id": "kh_q2",
+      "type": "multiple_choice",
+      "question": "「모음」 гэдэг нь юу вэ?",
+      "options": ["эгшиг үсэг", "гийгүүлэгч", "тоо", "тэмдэг"],
+      "correctAnswer": "эгшиг үсэг",
+      "explanation": "모음 = vowel, эгшиг."
+    },
+    {
+      "id": "kh_q3",
+      "type": "multiple_choice",
+      "question": "「자음」 гэдэг нь юу вэ?",
+      "options": ["гийгүүлэгч үсэг", "эгшиг", "үе", "өгүүлбэр"],
+      "correctAnswer": "гийгүүлэгч үсэг",
+      "explanation": "자음 = consonant."
+    },
+    {
+      "id": "kh_q4",
+      "type": "multiple_choice",
+      "question": "「가」 үеийг хэрхэн бүтээх вэ?",
+      "options": ["ㄱ + ㅏ", "ㄴ + ㅏ", "ㄱ + ㅗ", "ㅁ + ㅏ"],
+      "correctAnswer": "ㄱ + ㅏ",
+      "explanation": "가 = ㄱ (гийгүүлэгч) + ㅏ (эгшиг)."
+    },
+    {
+      "id": "kh_q5",
+      "type": "cloze",
+      "question": "한 ____ 은 표음 문자입니다.",
+      "options": ["글", "국", "사", "교"],
+      "correctAnswer": "글",
+      "explanation": "한글은 표음 문자입니다 = Хангыль нь дуудлагын бичиг."
+    },
+    {
+      "id": "kh_q6",
+      "type": "multiple_choice",
+      "question": "「받침」 гэдэг нь юу вэ?",
+      "options": [
+        "үеийн доод гийгүүлэгч",
+        "эхний эгшиг",
+        "орчуулга",
+        "асуултын тэмдэг"
+      ],
+      "correctAnswer": "үеийн доод гийгүүлэгч",
+      "explanation": "받침 = final consonant in a syllable block."
+    },
+    {
+      "id": "kh_q7",
+      "type": "multiple_choice",
+      "question": "「ㅏ」-ийн romanization аль вэ?",
+      "options": ["a", "o", "u", "i"],
+      "correctAnswer": "a",
+      "explanation": "ㅏ → a"
+    },
+    {
+      "id": "kh_q8",
+      "type": "multiple_choice",
+      "question": "「한국」 дэх 「한」-ийн утга хамгийн ойрхон:",
+      "options": ["Солонгос (Han/Korean)", "Нэг", "Хүн", "Хэл"],
+      "correctAnswer": "Солонгос (Han/Korean)",
+      "explanation": "한국 = Солонгос улс; 한 = Korean/Han."
+    }
+  ]
+}

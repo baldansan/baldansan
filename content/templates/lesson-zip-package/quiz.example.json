@@ -1,0 +1,16 @@
+[
+  {
+    "type": "multiple_choice",
+    "question": "「ㅏ」-ийн romanization аль вэ?",
+    "options": ["a", "o", "u", "i"],
+    "correctAnswer": "a",
+    "explanation": "ㅏ → a"
+  },
+  {
+    "type": "cloze",
+    "question": "Romanization «u» — аль эgшиг? ____",
+    "options": ["ㅜ", "ㅗ", "ㅡ", "ㅣ"],
+    "correctAnswer": "ㅜ",
+    "explanation": "u = ㅜ"
+  }
+]

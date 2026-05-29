@@ -344,6 +344,12 @@ export function LessonBuilderWorkflow({
         </h2>
         <div className="mt-4 flex flex-wrap gap-2">
           <Link
+            href="/admin/import"
+            className="inline-flex rounded-full border border-emerald-200 bg-emerald-50 px-4 py-2 text-sm font-semibold text-emerald-800 transition-colors hover:bg-emerald-100"
+          >
+            ZIP import хийх
+          </Link>
+          <Link
             href="/admin/lessons/new"
             className="inline-flex rounded-full bg-emerald-500 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-emerald-600"
           >

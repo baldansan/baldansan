@@ -10,6 +10,14 @@ import {
 } from "@/lib/progress";
 import { lessonPreviewPath } from "@/lib/lesson-publish";
 import { coursePath } from "@/lib/content";
+import { LEARNER_LESSON } from "@/lib/learner-labels";
+import {
+  CtaButtonRow,
+  ctaOutlineClass,
+  ctaPrimaryClass,
+  ctaSecondaryClass,
+} from "@/components/ui/cta-button-row";
+import { SectionCard } from "@/components/ui/section-card";
 import type { LessonContent } from "@/types/lesson-content";
 
 type Props = {
@@ -59,69 +67,71 @@ export function LessonDetailOverview({
 
   return (
     <>
-      <section className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:p-6">
+      <SectionCard>
         <h2 className="text-lg font-semibold text-slate-900">Хичээлийн алхам</h2>
-        <div className="mt-4 grid gap-3 sm:grid-cols-3">
+        <ol className="mt-4 grid gap-3 sm:grid-cols-3">
           {[
-            { href: watchHref, title: "Хичээл үзэх", desc: "Video + subtitle" },
-            { href: vocabHref, title: "Үгийн сан", desc: `${lesson.vocabularyCount} үг` },
-            { href: quizHref, title: "Quiz", desc: `${lesson.quizCount} асуулт` },
-          ].map((step) => (
-            <Link
-              key={step.title}
-              href={step.href}
-              className="rounded-xl border border-emerald-100 bg-emerald-50/50 p-4 transition-colors hover:bg-emerald-50"
-            >
-              <p className="font-semibold text-emerald-900">{step.title}</p>
-              <p className="mt-1 text-xs text-slate-600">{step.desc}</p>
-            </Link>
+            { step: "1", href: watchHref, title: LEARNER_LESSON.watch, desc: "Видео + хадмал" },
+            {
+              step: "2",
+              href: vocabHref,
+              title: LEARNER_LESSON.vocabulary,
+              desc: `${lesson.vocabularyCount} үг`,
+            },
+            {
+              step: "3",
+              href: quizHref,
+              title: "Quiz",
+              desc: `${lesson.quizCount} асуулт`,
+            },
+          ].map((item) => (
+            <li key={item.step}>
+              <Link
+                href={item.href}
+                className="flex h-full flex-col rounded-xl border border-emerald-100 bg-emerald-50/50 p-4 transition-colors hover:bg-emerald-50"
+              >
+                <span className="text-xs font-bold text-emerald-600">
+                  {item.step}
+                </span>
+                <p className="mt-1 font-semibold text-emerald-900">{item.title}</p>
+                <p className="mt-1 text-xs text-slate-600">{item.desc}</p>
+              </Link>
+            </li>
           ))}
-        </div>
-      </section>
+        </ol>
+      </SectionCard>
 
-      <section className="rounded-2xl bg-emerald-50/60 p-5 ring-1 ring-emerald-100 sm:p-6">
+      <section className="rounded-2xl bg-emerald-50/60 p-5 ring-1 ring-emerald-100 sm:rounded-3xl sm:p-6">
         <h2 className="text-lg font-semibold text-slate-900">Таны ахиц</h2>
-        <div className="mt-3 flex flex-wrap gap-3 text-sm">
-          <span className="rounded-full bg-white px-3 py-1 font-medium text-slate-700 ring-1 ring-slate-200">
+        <div className="mt-3 flex flex-wrap gap-2 text-sm">
+          <span className="rounded-full bg-white px-3 py-1.5 font-medium text-slate-700 ring-1 ring-slate-200">
             {statusLabel(status)}
           </span>
-          <span className="rounded-full bg-white px-3 py-1 font-medium text-slate-700 ring-1 ring-slate-200">
+          <span className="rounded-full bg-white px-3 py-1.5 font-medium text-slate-700 ring-1 ring-slate-200">
             {learnedCount} үг сурсан
           </span>
           {bestScore != null ? (
-            <span className="rounded-full bg-white px-3 py-1 font-medium text-emerald-800 ring-1 ring-emerald-200">
+            <span className="rounded-full bg-white px-3 py-1.5 font-medium text-emerald-800 ring-1 ring-emerald-200">
               Quiz: {bestScore}%
             </span>
           ) : null}
         </div>
       </section>
 
-      <section className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-        <Link
-          href={watchHref}
-          className="inline-flex justify-center rounded-full bg-emerald-500 px-6 py-3 text-sm font-semibold text-white hover:bg-emerald-600"
-        >
-          Хичээл үзэх
+      <CtaButtonRow>
+        <Link href={watchHref} className={ctaPrimaryClass}>
+          {LEARNER_LESSON.watch}
         </Link>
-        <Link
-          href={vocabHref}
-          className="inline-flex justify-center rounded-full border border-emerald-200 bg-emerald-50 px-6 py-3 text-sm font-semibold text-emerald-800 hover:bg-emerald-100"
-        >
-          Үгийн сан
+        <Link href={vocabHref} className={ctaSecondaryClass}>
+          {LEARNER_LESSON.vocabularyStudy}
         </Link>
-        <Link
-          href={quizHref}
-          className="inline-flex justify-center rounded-full border border-slate-200 bg-white px-6 py-3 text-sm font-semibold text-slate-700 hover:border-emerald-200"
-        >
-          Quiz өгөх
+        <Link href={quizHref} className={ctaOutlineClass}>
+          {LEARNER_LESSON.quiz}
         </Link>
-        <Link
-          href={coursePath(lesson.courseId)}
-          className="inline-flex justify-center rounded-full border border-slate-200 px-6 py-3 text-sm font-semibold text-slate-600 hover:border-emerald-200"
-        >
-          Курс руу буцах
+        <Link href={coursePath(lesson.courseId)} className={ctaOutlineClass}>
+          {LEARNER_LESSON.backToCourse}
         </Link>
-      </section>
+      </CtaButtonRow>
     </>
   );
 }

@@ -507,6 +507,49 @@ Phased roadmap from MVP demo to production product.
 
 ---
 
+**Next:** HSK4/HSK5 content upload sprint after mobile app redesign.
+
+---
+
+## v1.0 Mobile App-Like Redesign — **Completed**
+
+- Report — [MOBILE_APP_REDESIGN_REPORT.md](./MOBILE_APP_REDESIGN_REPORT.md)
+- Phone shell (430px), bottom nav (5 tabs), app routes `/home` `/study` `/kanji` `/games`
+- Profile menu redesign; lesson/login/signup in app shell
+- Games hub placeholder → quiz/review links
+- **Practice games (v1.0):** match, translate, missing word, arrange, stroke demo — [PRACTICE_GAMES.md](./PRACTICE_GAMES.md)
+- **Device/browser TTS pronunciation support** for Korean (`ko-KR`) and Chinese (`zh-CN`) — [TTS_PRONUNCIATION_SYSTEM.md](./TTS_PRONUNCIATION_SYSTEM.md)
+- **Admin ZIP lesson package import** — `/admin/import`, [LESSON_ZIP_IMPORT_FORMAT.md](./LESSON_ZIP_IMPORT_FORMAT.md)
+- No schema/RLS changes
+
+**Next:** Korean Book 1 content packaging and import.
+
+---
+
+## v1.0 Mobile UX Polish — **Completed**
+
+- Report — [MOBILE_UX_POLISH_REPORT.md](./MOBILE_UX_POLISH_REPORT.md)
+- Global layout (960px max, overflow fix, light theme)
+- Mobile nav labels; sticky header; touch-friendly CTAs
+- Lesson watch/vocab/quiz mobile polish
+- Shared UI — `components/ui/page-shell`, `section-card`, `cta-button-row`
+- No new features; no schema/RLS changes
+
+**Next:** HSK4/HSK5 content upload sprint.
+
+---
+
+## v1.0 Launch Sign-off — **Ready for soft launch**
+
+- Sign-off doc — [V1_LAUNCH_SIGNOFF.md](./V1_LAUNCH_SIGNOFF.md)
+- Stabilization passed — build, core routes, Mongolian learner copy, launch docs
+- Production URL — https://baldansan.vercel.app
+- Feature freeze remains — bug fixes and content only
+
+**Next:** v1.0 soft launch and user feedback collection.
+
+---
+
 ## v1.0 Launch Stabilization — **Completed**
 
 **Goal:** Stabilize public learner launch at https://baldansan.vercel.app — no new major features.
@@ -518,7 +561,9 @@ Phased roadmap from MVP demo to production product.
 - Migration status — [SUPABASE_MIGRATION_STATUS.md](./SUPABASE_MIGRATION_STATUS.md)
 - Launch blockers — [V1_LAUNCH_BLOCKERS.md](./V1_LAUNCH_BLOCKERS.md), [V1_STABILIZATION_REPORT.md](./V1_STABILIZATION_REPORT.md)
 
-**Next:** v1.0 public launch or targeted bug-fix pass.
+- Launch sign-off — [V1_LAUNCH_SIGNOFF.md](./V1_LAUNCH_SIGNOFF.md)
+
+**Next:** v1.0 soft launch and user feedback collection.
 
 ---
 

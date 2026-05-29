@@ -1,0 +1,301 @@
+{
+  "_meta": {
+    "source": "draft",
+    "needsSourceAudit": true,
+    "sourceStatus": "needs_source_upload",
+    "sourceFileExpected": "Солонгос_Ном_PreLesson_Hangul_한글_Premium_Package.html",
+    "note": "Korean in chinese fields; romanization in pinyin. No HTML source in repo — draft from standard Hangul curriculum."
+  },
+  "lesson": {
+    "id": "k-pre-01",
+    "courseId": "korean-1",
+    "title": "PreLesson 01 — Үндсэн эгшиг",
+    "chineseTitle": "기본 모음",
+    "subtitle": "Солонгосын 6 үндсэн эгшиг — а, eo, o, u, eu, i",
+    "description": "ㅏ ㅓ ㅗ ㅜ ㅡ ㅣ эгшгийг таних, унших, romanization-тай холбох. Эхний өдрийн хангылийн суурь.",
+    "duration": "10 min",
+    "status": "draft",
+    "orderIndex": 0,
+    "mediaStatus": "missing",
+    "sourceNote": "Korean Book 1 PreLesson 01 — audio pending."
+  },
+  "subtitles": [
+    {
+      "start": "00:00",
+      "end": "00:06",
+      "chinese": "기본 모음을 배웁시다.",
+      "pinyin": "Gibon moeum-eul baeupsida.",
+      "mongolian": "Үндсэн эгшгийг суръя."
+    },
+    {
+      "start": "00:07",
+      "end": "00:14",
+      "chinese": "ㅏ, ㅓ, ㅗ, ㅜ, ㅡ, ㅣ",
+      "pinyin": "a, eo, o, u, eu, i",
+      "mongolian": "Зургаан үндсэн эгшиг."
+    },
+    {
+      "start": "00:15",
+      "end": "00:22",
+      "chinese": "아, 어, 오, 우, 으, 이",
+      "pinyin": "a, eo, o, u, eu, i",
+      "mongolian": "Эгшиг дангаараа бичигдэх жишээ."
+    },
+    {
+      "start": "00:23",
+      "end": "00:30",
+      "chinese": "ㅏ는 'a' 소리입니다.",
+      "pinyin": "A-neun 'a' sori-imnida.",
+      "mongolian": "ㅏ нь «а» авиатай."
+    },
+    {
+      "start": "00:31",
+      "end": "00:38",
+      "chinese": "ㅓ는 'eo' 소리입니다. 몽골어 'ө'와 비슷합니다.",
+      "pinyin": "Eo-neun 'eo' sori-imnida.",
+      "mongolian": "ㅓ нь «eo» — монгол «ө»-тэй ойр."
+    }
+  ],
+  "vocabulary": [
+    {
+      "id": "kr_p01_a",
+      "chinese": "ㅏ",
+      "pinyin": "a",
+      "mongolian": "эгшиг «а»",
+      "hskLevel": "KR1",
+      "exampleChinese": "아",
+      "exampleMongolian": "а"
+    },
+    {
+      "id": "kr_p01_eo",
+      "chinese": "ㅓ",
+      "pinyin": "eo",
+      "mongolian": "эгшиг «eo» — ө/о завсрын авиа",
+      "hskLevel": "KR1",
+      "exampleChinese": "어",
+      "exampleMongolian": "eo"
+    },
+    {
+      "id": "kr_p01_o",
+      "chinese": "ㅗ",
+      "pinyin": "o",
+      "mongolian": "эгшиг «о»",
+      "hskLevel": "KR1",
+      "exampleChinese": "오",
+      "exampleMongolian": "о"
+    },
+    {
+      "id": "kr_p01_u",
+      "chinese": "ㅜ",
+      "pinyin": "u",
+      "mongolian": "эгшиг «у»",
+      "hskLevel": "KR1",
+      "exampleChinese": "우",
+      "exampleMongolian": "у"
+    },
+    {
+      "id": "kr_p01_eu",
+      "chinese": "ㅡ",
+      "pinyin": "eu",
+      "mongolian": "эгшиг «eu» — ы/үгүй эгшигтэй төстэй",
+      "hskLevel": "KR1",
+      "exampleChinese": "으",
+      "exampleMongolian": "eu"
+    },
+    {
+      "id": "kr_p01_i",
+      "chinese": "ㅣ",
+      "pinyin": "i",
+      "mongolian": "эгшиг «и»",
+      "hskLevel": "KR1",
+      "exampleChinese": "이",
+      "exampleMongolian": "и"
+    },
+    {
+      "id": "kr_p01_ex_a",
+      "chinese": "아",
+      "pinyin": "a",
+      "mongolian": "эгшиг ㅏ-ийн жишээ",
+      "hskLevel": "KR1",
+      "exampleChinese": "아!",
+      "exampleMongolian": "а!"
+    },
+    {
+      "id": "kr_p01_ex_eo",
+      "chinese": "어",
+      "pinyin": "eo",
+      "mongolian": "эгшиг ㅓ-ийн жишээ",
+      "hskLevel": "KR1",
+      "exampleChinese": "어?",
+      "exampleMongolian": "eo?"
+    },
+    {
+      "id": "kr_p01_ex_o",
+      "chinese": "오",
+      "pinyin": "o",
+      "mongolian": "эгшиг ㅗ-ийн жишээ",
+      "hskLevel": "KR1",
+      "exampleChinese": "오!",
+      "exampleMongolian": "о!"
+    },
+    {
+      "id": "kr_p01_ex_u",
+      "chinese": "우",
+      "pinyin": "u",
+      "mongolian": "эгшиг ㅜ-ийн жишээ",
+      "hskLevel": "KR1",
+      "exampleChinese": "우리",
+      "exampleMongolian": "бид"
+    },
+    {
+      "id": "kr_p01_ex_eu",
+      "chinese": "으",
+      "pinyin": "eu",
+      "mongolian": "эгшиг ㅡ-ийн жишээ",
+      "hskLevel": "KR1",
+      "exampleChinese": "음",
+      "exampleMongolian": "хм"
+    },
+    {
+      "id": "kr_p01_ex_i",
+      "chinese": "이",
+      "pinyin": "i",
+      "mongolian": "эгшиг ㅣ-ийн жишээ",
+      "hskLevel": "KR1",
+      "exampleChinese": "이름",
+      "exampleMongolian": "нэр"
+    }
+  ],
+  "quizQuestions": [
+    {
+      "id": "p01_r1",
+      "type": "multiple_choice",
+      "question": "「ㅏ」-ийн romanization аль вэ?",
+      "options": [
+        "a",
+        "o",
+        "u",
+        "i"
+      ],
+      "correctAnswer": "a",
+      "explanation": "ㅏ → a"
+    },
+    {
+      "id": "p01_r2",
+      "type": "multiple_choice",
+      "question": "「ㅓ」-ийн romanization аль вэ?",
+      "options": [
+        "eo",
+        "a",
+        "o",
+        "u"
+      ],
+      "correctAnswer": "eo",
+      "explanation": "ㅓ → eo"
+    },
+    {
+      "id": "p01_r3",
+      "type": "multiple_choice",
+      "question": "「ㅡ」-ийн romanization аль вэ?",
+      "options": [
+        "eu",
+        "u",
+        "i",
+        "a"
+      ],
+      "correctAnswer": "eu",
+      "explanation": "ㅡ → eu"
+    },
+    {
+      "id": "p01_rd1",
+      "type": "multiple_choice",
+      "question": "「아」-ийг уншвал:",
+      "options": [
+        "a",
+        "o",
+        "eo",
+        "i"
+      ],
+      "correctAnswer": "a",
+      "explanation": "아 = ㅏ эгшиг"
+    },
+    {
+      "id": "p01_rd2",
+      "type": "multiple_choice",
+      "question": "「우」-ийг уншвал:",
+      "options": [
+        "u",
+        "o",
+        "eu",
+        "a"
+      ],
+      "correctAnswer": "u",
+      "explanation": "우 = ㅜ эгшиг"
+    },
+    {
+      "id": "p01_rd3",
+      "type": "multiple_choice",
+      "question": "「이」-ийг уншвал:",
+      "options": [
+        "i",
+        "eu",
+        "a",
+        "o"
+      ],
+      "correctAnswer": "i",
+      "explanation": "이 = ㅣ эгшиг"
+    },
+    {
+      "id": "p01_c1",
+      "type": "multiple_choice",
+      "question": "Romanization «o» — аль Hangul эгшиг вэ?",
+      "options": [
+        "ㅗ",
+        "ㅜ",
+        "ㅏ",
+        "ㅣ"
+      ],
+      "correctAnswer": "ㅗ",
+      "explanation": "o = ㅗ"
+    },
+    {
+      "id": "p01_c2",
+      "type": "multiple_choice",
+      "question": "Romanization «u» — аль Hangul эгшиг вэ?",
+      "options": [
+        "ㅜ",
+        "ㅗ",
+        "ㅡ",
+        "ㅓ"
+      ],
+      "correctAnswer": "ㅜ",
+      "explanation": "u = ㅜ"
+    },
+    {
+      "id": "p01_m1",
+      "type": "multiple_choice",
+      "question": "「ㅓ」-ийн монгол тайлбар хамгийн ойрхон:",
+      "options": [
+        "ө/о завсрын авиа",
+        "огтлол «а»",
+        "«у» авиа",
+        "«и» авиа"
+      ],
+      "correctAnswer": "ө/о завсрын авиа",
+      "explanation": "ㅓ ≈ eo"
+    },
+    {
+      "id": "p01_m2",
+      "type": "multiple_choice",
+      "question": "「ㅡ」-ийн монгол тайлбар:",
+      "options": [
+        "ы/үгүй эгшигтэй төстэй",
+        "«о» авиа",
+        "«а» авиа",
+        "«и» авиа"
+      ],
+      "correctAnswer": "ы/үгүй эгшигтэй төстэй",
+      "explanation": "ㅡ = eu"
+    }
+  ]
+}

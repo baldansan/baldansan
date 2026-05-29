@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { LEARNER_NAV } from "@/lib/learner-labels";
 import { getCurrentUser, hasSupabaseConfig } from "@/lib/supabase/auth";
 
 export type PublicNavActive =
@@ -39,37 +40,34 @@ export function PublicNavLinks({ active, className = "" }: Props) {
 
   return (
     <nav
-      className={`flex flex-wrap items-center justify-end gap-x-3 gap-y-1 text-xs sm:gap-x-4 sm:text-sm ${className}`}
+      className={`flex flex-wrap items-center justify-end gap-x-3 gap-y-1 text-sm ${className}`}
       aria-label="Main"
     >
       <Link href="/courses" className={linkClass(active === "courses")}>
-        Курсууд
+        {LEARNER_NAV.courses}
       </Link>
       {loggedIn ? (
         <>
           <Link href="/dashboard" className={linkClass(active === "dashboard")}>
-            Миний самбар
+            {LEARNER_NAV.dashboard}
           </Link>
           <Link href="/review" className={linkClass(active === "review")}>
-            Давталт
+            {LEARNER_NAV.review}
           </Link>
           <Link href="/profile" className={linkClass(active === "profile")}>
-            Профайл
+            {LEARNER_NAV.profile}
           </Link>
         </>
-      ) : null}
-      <Link
-        href="/schools"
-        className={`hidden lg:inline ${linkClass(active === "help")}`}
-      >
-        Schools
-      </Link>
-      <Link
-        href="/help"
-        className={`hidden sm:inline ${linkClass(active === "help")}`}
-      >
-        Help
-      </Link>
+      ) : (
+        <>
+          <Link href="/onboarding" className={linkClass(active === "help")}>
+            {LEARNER_NAV.onboarding}
+          </Link>
+          <Link href="/help" className={linkClass(active === "help")}>
+            {LEARNER_NAV.help}
+          </Link>
+        </>
+      )}
     </nav>
   );
 }

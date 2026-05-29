@@ -1,19 +1,22 @@
 import Link from "next/link";
 import { PublicPageShell } from "@/components/public-page-shell";
+import { ctaOutlineClass, ctaPrimaryClass } from "@/components/ui/cta-button-row";
 import { PAYMENT_INACTIVE_NOTE, PRICING_PLANS } from "@/lib/content/b2b-copy";
 
 export const metadata = {
-  title: "Pricing — Бөөндөө Сурцгаая",
+  title: "Үнийн санал — Бөөндөө Сурцгаая",
   description:
-    "Free learner, teacher starter, school package, training center — B2B package танилцуулга. Төлбөр идэвхгүй.",
+    "Үнэгүй суралцагч, багшийн, сургуулийн багц — танилцуулга. Төлбөр идэвхгүй.",
 };
 
 export default function PricingPage() {
   return (
     <PublicPageShell active="help">
       <section>
-        <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">Pricing</h1>
-        <p className="mt-2 rounded-xl bg-amber-50 px-4 py-3 text-sm text-amber-900 ring-1 ring-amber-200">
+        <h1 className="text-2xl font-bold tracking-tight sm:text-4xl">
+          Үнийн санал
+        </h1>
+        <p className="mt-3 rounded-xl bg-amber-50 px-4 py-3 text-sm text-amber-900 ring-1 ring-amber-200">
           {PAYMENT_INACTIVE_NOTE}
         </p>
       </section>
@@ -22,7 +25,7 @@ export default function PricingPage() {
         {PRICING_PLANS.map((plan) => (
           <article
             key={plan.name}
-            className={`rounded-2xl p-6 ring-1 ${
+            className={`rounded-2xl p-6 ring-1 sm:rounded-3xl ${
               plan.highlight
                 ? "bg-emerald-50 ring-emerald-200"
                 : "bg-white ring-slate-200 shadow-sm"
@@ -40,41 +43,26 @@ export default function PricingPage() {
         ))}
       </div>
 
-      <section className="rounded-2xl bg-white p-6 ring-1 ring-slate-200">
-        <h2 className="font-semibold text-slate-900">B2B value points</h2>
+      <section className="rounded-2xl bg-white p-6 ring-1 ring-slate-200 sm:rounded-3xl">
+        <h2 className="font-semibold text-slate-900">B2B онцлог</h2>
         <ul className="mt-3 list-inside list-disc space-y-1 text-sm text-slate-600">
-          <li>Lesson package access — HSK5 public + future custom content</li>
-          <li>Student progress — account-level tracking (class view planned)</li>
-          <li>Teacher dashboard — дараагийн шатанд</li>
-          <li>Custom lesson content — admin CMS + B2B partnership</li>
-          <li>School onboarding support — demo, inquiry, setup guidance</li>
+          <li>Хичээлийн багц — HSK5 + ирээдүйн контент</li>
+          <li>Сурагчийн ахиц — account түвшинд</li>
+          <li>Багшийн самбар — дараагийн шатанд</li>
+          <li>Custom контент — admin CMS</li>
+          <li>Сургуулийн onboarding дэмжлэг</li>
         </ul>
       </section>
 
-      <section className="flex flex-wrap gap-3">
-        <Link
-          href="/courses/hsk5"
-          className="rounded-full bg-emerald-500 px-6 py-3 text-sm font-semibold text-white hover:bg-emerald-600"
-        >
-          Start free
+      <section className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+        <Link href="/courses/hsk5" className={ctaPrimaryClass}>
+          Үнэгүй эхлэх
         </Link>
-        <Link
-          href="/schools"
-          className="rounded-full border border-emerald-200 bg-emerald-50 px-6 py-3 text-sm font-semibold text-emerald-800"
-        >
-          School package
+        <Link href="/schools" className={ctaOutlineClass}>
+          Сургуулийн багц
         </Link>
-        <Link
-          href="/school-inquiry"
-          className="rounded-full bg-emerald-500 px-6 py-3 text-sm font-semibold text-white hover:bg-emerald-600"
-        >
-          Request school package
-        </Link>
-        <Link
-          href="/schools"
-          className="rounded-full border border-slate-200 px-6 py-3 text-sm font-semibold text-slate-700 hover:border-emerald-200"
-        >
-          School package info
+        <Link href="/school-inquiry" className={ctaPrimaryClass}>
+          Сургуулийн лавлагаа
         </Link>
       </section>
     </PublicPageShell>

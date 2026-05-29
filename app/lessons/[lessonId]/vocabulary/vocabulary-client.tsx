@@ -2,24 +2,33 @@
 
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
+import { GamePracticeLinks } from "@/components/games/game-practice-links";
 import { EmptyState } from "@/components/empty-state";
 import { LocalProgressNote } from "@/components/local-progress-note";
 import { AdminPreviewBanner } from "@/components/admin-preview-banner";
-import { AppHeader } from "@/components/app-header";
-import { BottomNav } from "@/components/bottom-nav";
 import { LessonMobileStepBar } from "@/components/lesson-mobile-step-bar";
+import { LearnerPageShell } from "@/components/ui/page-shell";
+import {
+  CtaButtonRow,
+  ctaPrimaryClass,
+  ctaSecondaryClass,
+} from "@/components/ui/cta-button-row";
+import { SectionCard } from "@/components/ui/section-card";
 import { lessonPreviewPath } from "@/lib/lesson-publish";
+import { LEARNER_LESSON } from "@/lib/learner-labels";
 import { enrichVocabularyWithDbIds } from "@/lib/supabase/content";
 import {
   getLearnedWordsSmart,
   toggleLearnedWordSmart,
   vocabularyWordKey,
 } from "@/lib/progress";
+import { SpeakerButton } from "@/components/tts/speaker-button";
+import { resolveTtsLang } from "@/lib/tts/infer-lang";
 import type { LessonContent } from "@/types/lesson-content";
 import type { VocabularyFilter, VocabularyWord } from "@/types/lesson";
 
 const allFilters: { id: VocabularyFilter; label: string }[] = [
-  { id: "all", label: "All" },
+  { id: "all", label: "Бүгд" },
   { id: "HSK1", label: "HSK1" },
   { id: "HSK2", label: "HSK2" },
   { id: "HSK3", label: "HSK3" },
@@ -130,199 +139,250 @@ export function LessonVocabularyClient({
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-emerald-50/40 via-white to-white text-slate-900">
-      <AppHeader />
+    <LearnerPageShell activeTab="study">
+      {adminPreview ? <AdminPreviewBanner /> : null}
+      <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
+        <Link
+          href={lessonPreviewPath(lesson.id, { adminPreview })}
+          className="inline-flex w-fit items-center text-sm font-medium text-slate-600 transition-colors hover:text-emerald-600"
+        >
+          ← {LEARNER_LESSON.backToLesson}
+        </Link>
+        <Link
+          href={lessonPreviewPath(lesson.id, { adminPreview, subpath: "watch" })}
+          className="inline-flex w-fit items-center text-sm font-medium text-emerald-700 transition-colors hover:text-emerald-600"
+        >
+          {LEARNER_LESSON.watch} →
+        </Link>
+      </div>
 
-      <main className="mx-auto flex w-full max-w-5xl flex-col gap-6 px-4 pb-32 pt-2 sm:gap-8 sm:px-6 md:pb-10">
-        {adminPreview ? <AdminPreviewBanner /> : null}
-        <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
-          <Link
-            href={lessonPreviewPath(lesson.id, { adminPreview })}
-            className="inline-flex w-fit items-center text-sm font-medium text-slate-600 transition-colors hover:text-emerald-600"
-          >
-            ← Lesson detail
-          </Link>
-          <Link
-            href={lessonPreviewPath(lesson.id, { adminPreview, subpath: "watch" })}
-            className="inline-flex w-fit items-center text-sm font-medium text-emerald-700 transition-colors hover:text-emerald-600"
-          >
-            Хичээл үзэх →
-          </Link>
+      <section>
+        <h1 className="text-xl font-bold leading-snug tracking-tight sm:text-3xl">
+          {LEARNER_LESSON.vocabulary} — {lesson.title}
+        </h1>
+        <p className="mt-1 text-lg text-slate-700">{lesson.chineseTitle}</p>
+        <p className="mt-2 text-sm text-slate-600 sm:text-base">
+          Үг бүрийг pinyin, Монгол утга, жишээ өгүүлбэртэй сур.
+        </p>
+        <div className="mt-4 rounded-2xl bg-emerald-50 px-4 py-3 ring-1 ring-emerald-200 sm:rounded-3xl">
+          <p className="text-xs font-semibold uppercase tracking-wide text-emerald-700">
+            Сурсан
+          </p>
+          <p className="mt-1 text-2xl font-bold text-emerald-800">
+            {learned.size}{" "}
+            <span className="text-lg font-semibold text-emerald-600">
+              / {vocabulary.length}
+            </span>
+          </p>
         </div>
-
-        <section>
-          <h1 className="text-2xl font-bold tracking-tight sm:text-3xl">
-            Үгийн сан — {lesson.title} {lesson.chineseTitle}
-          </h1>
-          <p className="mt-2 text-base text-slate-600">
-            Үг бүрийг pinyin, Монгол утга, жишээ өгүүлбэртэй сур.
-          </p>
-          <div className="mt-4 rounded-2xl bg-emerald-50 px-4 py-3 ring-1 ring-emerald-200">
-            <p className="text-xs font-semibold uppercase tracking-wide text-emerald-700">
-              Learned
-            </p>
-            <p className="mt-1 text-2xl font-bold text-emerald-800">
-              {learned.size}{" "}
-              <span className="text-lg font-semibold text-emerald-600">
-                / {vocabulary.length}
-              </span>
-            </p>
-          </div>
-          <p className="mt-3 text-sm leading-6 text-slate-600">
-            Эхлээд HSK түвшнээр шүүж, дараа нь Mark as learned дарж давтаарай.
-          </p>
-          <div className="mt-2">
-            <LocalProgressNote />
-          </div>
-        </section>
-
-        <section className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:p-6">
-          <label htmlFor="vocab-search" className="sr-only">
-            Search vocabulary
-          </label>
-          <input
-            id="vocab-search"
-            type="search"
-            placeholder="Үг хайх..."
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
-            className="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-900 outline-none ring-emerald-500 placeholder:text-slate-400 focus:border-emerald-300 focus:ring-2"
+        <div className="mt-2">
+          <LocalProgressNote />
+        </div>
+        <div className="mt-4 rounded-2xl bg-purple-50 p-4 ring-1 ring-purple-200">
+          <p className="text-sm font-semibold text-purple-900">Тоглоомоор давтах</p>
+          <GamePracticeLinks
+            lessonId={lesson.id}
+            compact
+            include={["match", "translate"]}
           />
-          <div className="mt-3 flex flex-wrap gap-2">
-            {visibleFilters.map((item) => (
+        </div>
+      </section>
+
+      <SectionCard>
+        <label htmlFor="vocab-search" className="sr-only">
+          Үг хайх
+        </label>
+        <input
+          id="vocab-search"
+          type="search"
+          placeholder="Үг хайх..."
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+          className="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-900 outline-none ring-emerald-500 placeholder:text-slate-400 focus:border-emerald-300 focus:ring-2"
+        />
+        <div className="mt-3 flex flex-wrap gap-2">
+          {visibleFilters.map((item) => (
+            <button
+              key={item.id}
+              type="button"
+              onClick={() => setFilter(item.id)}
+              className={
+                filter === item.id
+                  ? "min-h-[44px] rounded-full bg-emerald-500 px-3 py-2 text-sm font-semibold text-white"
+                  : "min-h-[44px] rounded-full border border-emerald-200 bg-emerald-50 px-3 py-2 text-sm font-semibold text-emerald-700 transition-colors hover:bg-emerald-100"
+              }
+            >
+              {item.label}
+            </button>
+          ))}
+        </div>
+        <p className="mt-3 text-sm font-medium text-slate-600">
+          {LEARNER_LESSON.showingWords(filteredWords.length, vocabulary.length)}
+        </p>
+        {filteredWords.length > 0 ? (
+          <button
+            type="button"
+            onClick={() => void handleMarkAllVisible()}
+            className="mt-3 min-h-[44px] rounded-full border border-emerald-200 bg-white px-4 py-2 text-sm font-semibold text-emerald-800 hover:bg-emerald-50"
+          >
+            Харагдаж буй бүх үгийг сурсан гэж тэмдэглэх
+          </button>
+        ) : null}
+      </SectionCard>
+
+      <section className="flex flex-col gap-4">
+        {vocabulary.length === 0 ? (
+          <EmptyState
+            title="Үгийн сан байхгүй"
+            description="Энэ хичээлд үгийн жагсаалт одоогоор байхгүй байна."
+            action={
+              <Link
+                href={lessonPreviewPath(lesson.id, { adminPreview })}
+                className={ctaPrimaryClass}
+              >
+                {LEARNER_LESSON.backToLesson}
+              </Link>
+            }
+          />
+        ) : filteredWords.length === 0 ? (
+          <EmptyState
+            title="Үг олдсонгүй"
+            description="Хайлт эсвэл HSK шүүлтүүрт тохирох үг олдсонгүй."
+            action={
               <button
-                key={item.id}
                 type="button"
-                onClick={() => setFilter(item.id)}
+                onClick={resetFilters}
+                className="min-h-[44px] rounded-full border border-emerald-200 bg-emerald-50 px-5 py-2 text-sm font-semibold text-emerald-700 transition-colors hover:bg-emerald-100"
+              >
+                Шүүлтүүр цэвэрлэх
+              </button>
+            }
+          />
+        ) : (
+          filteredWords.map((word) => {
+            const key = vocabularyWordKey(word);
+            const isLearned = learned.has(key);
+            const ttsLang = resolveTtsLang({
+              courseId: lesson.courseId,
+              hskLevel: word.hskLevel,
+            });
+            return (
+              <article
+                key={key}
                 className={
-                  filter === item.id
-                    ? "rounded-full bg-emerald-500 px-3 py-2 text-sm font-semibold text-white"
-                    : "rounded-full border border-emerald-200 bg-emerald-50 px-3 py-2 text-sm font-semibold text-emerald-700 transition-colors hover:bg-emerald-100"
+                  isLearned
+                    ? "rounded-2xl bg-emerald-50/80 p-5 ring-2 ring-emerald-300 sm:rounded-3xl sm:p-6"
+                    : "rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:rounded-3xl sm:p-6"
                 }
               >
-                {item.label}
-              </button>
-            ))}
-          </div>
-          <p className="mt-3 text-sm font-medium text-slate-600">
-            Showing {filteredWords.length} / {vocabulary.length} words
-          </p>
-          {filteredWords.length > 0 ? (
-            <button
-              type="button"
-              onClick={() => void handleMarkAllVisible()}
-              className="mt-3 rounded-full border border-emerald-200 bg-white px-4 py-2 text-sm font-semibold text-emerald-800 hover:bg-emerald-50"
-            >
-              Mark all visible as learned
-            </button>
-          ) : null}
-        </section>
-
-        <section className="flex flex-col gap-4">
-          {vocabulary.length === 0 ? (
-            <EmptyState
-              title="No vocabulary found"
-              description="Энэ хичээлд үгийн жагсаалт одоогоор байхгүй байна."
-              action={
-                <Link
-                  href={lessonPreviewPath(lesson.id, { adminPreview })}
-                  className="rounded-full bg-emerald-500 px-5 py-2 text-sm font-semibold text-white transition-colors hover:bg-emerald-600"
-                >
-                  Back to lesson
-                </Link>
-              }
-            />
-          ) : filteredWords.length === 0 ? (
-            <EmptyState
-              title="No vocabulary found"
-              description="Хайлт эсвэл HSK шүүлтүүрт тохирох үг олдсонгүй."
-              action={
-                <button
-                  type="button"
-                  onClick={resetFilters}
-                  className="rounded-full border border-emerald-200 bg-emerald-50 px-5 py-2 text-sm font-semibold text-emerald-700 transition-colors hover:bg-emerald-100"
-                >
-                  Reset filters
-                </button>
-              }
-            />
-          ) : (
-            filteredWords.map((word) => {
-              const key = vocabularyWordKey(word);
-              const isLearned = learned.has(key);
-              return (
-                <article
-                  key={key}
-                  className={
-                    isLearned
-                      ? "rounded-2xl bg-emerald-50/80 p-5 ring-2 ring-emerald-300 sm:p-6"
-                      : "rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:p-6"
-                  }
-                >
-                  <div className="flex items-start justify-between gap-3">
-                    <p className="text-3xl font-bold text-slate-900">
+                <div className="flex items-start justify-between gap-3">
+                  <div className="min-w-0 flex-1">
+                    <p className="text-2xl font-bold text-slate-900 sm:text-3xl">
                       {word.chinese}
                     </p>
+                    <p className="mt-1 text-sm text-emerald-700">{word.pinyin}</p>
+                  </div>
+                  <div className="flex shrink-0 items-start gap-2">
+                    <SpeakerButton
+                      text={word.chinese}
+                      lang={ttsLang}
+                      hskLevel={word.hskLevel}
+                      size="md"
+                    />
                     <span className="shrink-0 rounded-full bg-emerald-50 px-2.5 py-1 text-xs font-medium text-emerald-700 ring-1 ring-emerald-200">
                       {word.hskLevel}
                     </span>
                   </div>
-                  <p className="mt-1 text-sm text-emerald-700">{word.pinyin}</p>
-                  <p className="mt-2 text-sm leading-6 text-slate-600">
-                    {word.mongolian}
-                  </p>
+                </div>
+                <p className="mt-2 text-sm leading-6 text-slate-600 break-words">
+                  {word.mongolian}
+                </p>
 
-                  <div className="mt-4 space-y-2 rounded-xl bg-slate-50 p-4 ring-1 ring-slate-200">
-                    <p className="text-sm text-slate-900">{word.exampleChinese}</p>
-                    <p className="text-sm text-slate-600">{word.exampleMongolian}</p>
+                <div className="mt-4 space-y-2 rounded-xl bg-slate-50 p-4 ring-1 ring-slate-200">
+                  <div className="flex items-start gap-2">
+                    <p className="min-w-0 flex-1 text-sm text-slate-900 break-words">
+                      {word.exampleChinese}
+                    </p>
+                    {word.exampleChinese ? (
+                      <SpeakerButton
+                        text={word.exampleChinese}
+                        lang={ttsLang}
+                        hskLevel={word.hskLevel}
+                        size="sm"
+                        label={`Жишээ уншуулах: ${word.exampleChinese}`}
+                      />
+                    ) : null}
                   </div>
+                  <p className="text-sm text-slate-600 break-words">
+                    {word.exampleMongolian}
+                  </p>
+                </div>
 
-                  <button
-                    type="button"
-                    onClick={() => {
-                      void handleToggleLearned(word);
-                    }}
-                    className={
-                      isLearned
-                        ? "mt-4 w-full rounded-full bg-emerald-600 px-4 py-2.5 text-sm font-semibold text-white ring-2 ring-emerald-400"
-                        : "mt-4 w-full rounded-full border-2 border-emerald-500 bg-white px-4 py-2.5 text-sm font-semibold text-emerald-700 transition-colors hover:bg-emerald-50"
-                    }
+                <button
+                  type="button"
+                  onClick={() => {
+                    void handleToggleLearned(word);
+                  }}
+                  className={
+                    isLearned
+                      ? "mt-4 min-h-[44px] w-full rounded-full bg-emerald-600 px-4 py-2.5 text-sm font-semibold text-white ring-2 ring-emerald-400"
+                      : "mt-4 min-h-[44px] w-full rounded-full border-2 border-emerald-500 bg-white px-4 py-2.5 text-sm font-semibold text-emerald-700 transition-colors hover:bg-emerald-50"
+                  }
+                >
+                  {isLearned
+                    ? LEARNER_LESSON.addedToReview
+                    : LEARNER_LESSON.markLearned}
+                </button>
+                <div className="mt-3 flex flex-wrap gap-2">
+                  <Link
+                    href={`/games/translate?lessonId=${lesson.id}`}
+                    className="min-h-[36px] rounded-full bg-blue-100 px-3 py-1.5 text-xs font-semibold text-blue-800"
                   >
-                    {isLearned ? "Review-д нэмэгдсэн ✓" : "Mark as learned"}
-                  </button>
-                </article>
-              );
-            })
-          )}
-        </section>
+                    Орчуулах тоглох
+                  </Link>
+                  <Link
+                    href={`/games/match?lessonId=${lesson.id}`}
+                    className="min-h-[36px] rounded-full bg-violet-100 px-3 py-1.5 text-xs font-semibold text-violet-800"
+                  >
+                    Холбох тоглох
+                  </Link>
+                  <Link
+                    href={`/kanji/${encodeURIComponent(word.id || word.chinese)}?lessonId=${lesson.id}`}
+                    className="min-h-[36px] rounded-full bg-slate-100 px-3 py-1.5 text-xs font-semibold text-slate-700"
+                  >
+                    Ханз дэлгэрэнгүй
+                  </Link>
+                </div>
+              </article>
+            );
+          })
+        )}
+      </section>
 
-        <section className="flex flex-col gap-3 sm:flex-row">
-          <Link
-            href={lessonPreviewPath(lesson.id, { adminPreview, subpath: "watch" })}
-            className="flex-1 rounded-full border border-emerald-200 bg-emerald-50 px-5 py-3 text-center text-sm font-semibold text-emerald-700 transition-colors hover:bg-emerald-100"
-          >
-            Хичээл үзэх
-          </Link>
-          <Link
-            href={lessonPreviewPath(lesson.id, {
-              adminPreview,
-              subpath: "quiz",
-            })}
-            className="flex-1 rounded-full bg-emerald-500 px-5 py-3 text-center text-sm font-semibold text-white transition-colors hover:bg-emerald-600"
-          >
-            Next: Quiz
-          </Link>
-        </section>
+      <CtaButtonRow>
+        <Link
+          href={lessonPreviewPath(lesson.id, { adminPreview, subpath: "watch" })}
+          className={ctaSecondaryClass}
+        >
+          {LEARNER_LESSON.watch}
+        </Link>
+        <Link
+          href={lessonPreviewPath(lesson.id, {
+            adminPreview,
+            subpath: "quiz",
+          })}
+          className={ctaPrimaryClass}
+        >
+          {LEARNER_LESSON.nextQuiz}
+        </Link>
+      </CtaButtonRow>
 
-        <LessonMobileStepBar
-          lessonId={lesson.id}
-          courseId={lesson.courseId}
-          current="vocabulary"
-          adminPreview={adminPreview}
-        />
-      </main>
-
-      <BottomNav />
-    </div>
+      <LessonMobileStepBar
+        lessonId={lesson.id}
+        courseId={lesson.courseId}
+        current="vocabulary"
+        adminPreview={adminPreview}
+      />
+    </LearnerPageShell>
   );
 }

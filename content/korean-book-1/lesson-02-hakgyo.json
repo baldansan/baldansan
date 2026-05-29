@@ -1,0 +1,393 @@
+{
+  "_meta": {
+    "source": "draft",
+    "needsSourceAudit": true,
+    "sourceFileExpected": "Солонгос_Ном_Lesson02_학교_Premium_Package.html",
+    "grammarFocus": ["이/가", "에", "여기/거기", "있다/없다"],
+    "note": "Draft from beginner textbook patterns; source HTML audit pending."
+  },
+  "lesson": {
+    "id": "k-02",
+    "courseId": "korean-1",
+    "title": "Lesson 02 — 학교",
+    "chineseTitle": "학교",
+    "subtitle": "Сургууль / Байршил ба юм заах",
+    "description": "Сургууль, анги, эд зүйлс, энэ/тэр/тэнд, байршлын particle «에». Ажлын байрны орчинд хэрэглэх богино харилцан яриа.",
+    "duration": "35 min",
+    "status": "draft",
+    "orderIndex": 9,
+    "mediaStatus": "missing",
+    "sourceNote": "Korean Book 1 L02 학교 — audio pending."
+  },
+  "subtitlePreview": [
+    {
+      "chinese": "여기는 교실입니다.",
+      "pinyin": "Yeogi-neun gyosil-imnida.",
+      "mongolian": "Энд анги байна."
+    },
+    {
+      "chinese": "책상 위에 책이 있습니다.",
+      "pinyin": "Chaeksang wie chaeg-i issseumnida.",
+      "mongolian": "Ширээний дээр ном байна."
+    }
+  ],
+  "subtitles": [
+    {
+      "start": "00:00",
+      "end": "00:05",
+      "chinese": "여기는 학교입니다.",
+      "pinyin": "Yeogi-neun hakgyo-imnida.",
+      "mongolian": "Энд сургууль байна."
+    },
+    {
+      "start": "00:06",
+      "end": "00:11",
+      "chinese": "저는 교실에 있습니다.",
+      "pinyin": "Jeoneun gyosil-e issseumnida.",
+      "mongolian": "Би анgid байна."
+    },
+    {
+      "start": "00:12",
+      "end": "00:17",
+      "chinese": "이것은 책입니다. 저것은 가방입니다.",
+      "pinyin": "Igeoseun chaeg-imnida. Jeogeoseun gabang-imnida.",
+      "mongolian": "Энэ ном. Тэр цүнх."
+    },
+    {
+      "start": "00:18",
+      "end": "00:23",
+      "chinese": "책상 위에 컴퓨터가 있습니다.",
+      "pinyin": "Chaeksang wie keompyuteo-ga issseumnida.",
+      "mongolian": "Ширээний дээр компьютер байна."
+    },
+    {
+      "start": "00:24",
+      "end": "00:29",
+      "chinese": "화장실은 어디에 있습니까?",
+      "pinyin": "Hwajangsil-eun eodi-e issseumnikka?",
+      "mongolian": "Жорлон хаана байна?"
+    },
+    {
+      "start": "00:30",
+      "end": "00:35",
+      "chinese": "저기에 있습니다. 2층에 있어요.",
+      "pinyin": "Jeogi-e issseumnida. Icheung-e isseoyo.",
+      "mongolian": "Тэнд байна. 2 давхарт."
+    },
+    {
+      "start": "00:36",
+      "end": "00:41",
+      "chinese": "의자에 앉으세요. 펜이 있습니까?",
+      "pinyin": "Uijae anjeuseyo. Pen-i issseumnikka?",
+      "mongolian": "Сандал дээр суунa уu. Үзэг байна уu?"
+    },
+    {
+      "start": "00:42",
+      "end": "00:47",
+      "chinese": "네, 가방 안에 있습니다.",
+      "pinyin": "Ne, gabang ane issseumnida.",
+      "mongolian": "Тийм, цүнхний дотор байна."
+    },
+    {
+      "start": "00:48",
+      "end": "00:53",
+      "chinese": "창문 옆에 칠판이 있습니다.",
+      "pinyin": "Changmun yeope chilpan-i issseumnida.",
+      "mongolian": "Цонхны хажууд самбар байна."
+    },
+    {
+      "start": "00:54",
+      "end": "00:59",
+      "chinese": "오늘 학교에서 한국어 수업이 있습니다.",
+      "pinyin": "Oneul hakgyo-eseo Hangugeo sueop-i issseumnida.",
+      "mongolian": "Өнөөдөр сургуульд солонгос хэлний хичээл байна."
+    }
+  ],
+  "vocabulary": [
+    {
+      "id": "kr_hakgyo",
+      "chinese": "학교",
+      "pinyin": "hakgyo",
+      "mongolian": "сургууль",
+      "hskLevel": "KR1",
+      "exampleChinese": "학교에 갑니다.",
+      "exampleMongolian": "Сургууль руу явна."
+    },
+    {
+      "id": "kr_gyosil",
+      "chinese": "교실",
+      "pinyin": "gyosil",
+      "mongolian": "анги, өрөө (сургалтын)",
+      "hskLevel": "KR1",
+      "exampleChinese": "교실에 있습니다.",
+      "exampleMongolian": "Анgid байна."
+    },
+    {
+      "id": "kr_chaeg",
+      "chinese": "책",
+      "pinyin": "chaeg",
+      "mongolian": "ном",
+      "hskLevel": "KR1",
+      "exampleChinese": "책을 읽습니다.",
+      "exampleMongolian": "Ном уншина."
+    },
+    {
+      "id": "kr_chaeksang",
+      "chinese": "책상",
+      "pinyin": "chaeksang",
+      "mongolian": "ширээ (сургалтын)",
+      "hskLevel": "KR1",
+      "exampleChinese": "책상 위에 있습니다.",
+      "exampleMongolian": "Ширээний дээр байна."
+    },
+    {
+      "id": "kr_uija",
+      "chinese": "의자",
+      "pinyin": "uija",
+      "mongolian": "сандал, суудал",
+      "hskLevel": "KR1",
+      "exampleChinese": "의자에 앉으세요.",
+      "exampleMongolian": "Сандал дээр суунa уu."
+    },
+    {
+      "id": "kr_gabang",
+      "chinese": "가방",
+      "pinyin": "gabang",
+      "mongolian": "цүнх, сумка",
+      "hskLevel": "KR1",
+      "exampleChinese": "가방 안에 펜이 있습니다.",
+      "exampleMongolian": "Цүнхний дотор үзэг байна."
+    },
+    {
+      "id": "kr_pen",
+      "chinese": "펜",
+      "pinyin": "pen",
+      "mongolian": "үзэг (ручка)",
+      "hskLevel": "KR1",
+      "exampleChinese": "펜이 있습니까?",
+      "exampleMongolian": "Үзэг байна уu?"
+    },
+    {
+      "id": "kr_keompyuteo",
+      "chinese": "컴퓨터",
+      "pinyin": "keompyuteo",
+      "mongolian": "компьютер",
+      "hskLevel": "KR1",
+      "exampleChinese": "컴퓨터가 있습니다.",
+      "exampleMongolian": "Компьютер байна."
+    },
+    {
+      "id": "kr_chilpan",
+      "chinese": "칠판",
+      "pinyin": "chilpan",
+      "mongolian": "самбар (blackboard)",
+      "hskLevel": "KR1",
+      "exampleChinese": "칠판 앞에 서세요.",
+      "exampleMongolian": "Самбарын өмнө зогсонo уu."
+    },
+    {
+      "id": "kr_changmun",
+      "chinese": "창문",
+      "pinyin": "changmun",
+      "mongolian": "цонх",
+      "hskLevel": "KR1",
+      "exampleChinese": "창문 옆에 있습니다.",
+      "exampleMongolian": "Цонхны хажууд."
+    },
+    {
+      "id": "kr_hwajangsil",
+      "chinese": "화장실",
+      "pinyin": "hwajangsil",
+      "mongolian": "жорлон, угаалга",
+      "hskLevel": "KR1",
+      "exampleChinese": "화장실은 어디에 있습니까?",
+      "exampleMongolian": "Жорлон хаана байна?"
+    },
+    {
+      "id": "kr_yeogi",
+      "chinese": "여기",
+      "pinyin": "yeogi",
+      "mongolian": "энд",
+      "hskLevel": "KR1",
+      "exampleChinese": "여기는 교실입니다.",
+      "exampleMongolian": "Энд анги."
+    },
+    {
+      "id": "kr_jeogi",
+      "chinese": "저기",
+      "pinyin": "jeogi",
+      "mongolian": "тэнд (хол)",
+      "hskLevel": "KR1",
+      "exampleChinese": "저기에 있습니다.",
+      "exampleMongolian": "Тэнд байна."
+    },
+    {
+      "id": "kr_eodi",
+      "chinese": "어디",
+      "pinyin": "eodi",
+      "mongolian": "хаана",
+      "hskLevel": "KR1",
+      "exampleChinese": "어디에 있습니까?",
+      "exampleMongolian": "Хаана байна?"
+    },
+    {
+      "id": "kr_igeo",
+      "chinese": "이것",
+      "pinyin": "igeot",
+      "mongolian": "энэ (зүйл)",
+      "hskLevel": "KR1",
+      "exampleChinese": "이것은 책입니다.",
+      "exampleMongolian": "Энэ ном."
+    },
+    {
+      "id": "kr_jeogeo",
+      "chinese": "저것",
+      "pinyin": "jeogeot",
+      "mongolian": "тэр (зүйл, хол)",
+      "hskLevel": "KR1",
+      "exampleChinese": "저것은 가방입니다.",
+      "exampleMongolian": "Тэр цүнх."
+    },
+    {
+      "id": "kr_wi",
+      "chinese": "위",
+      "pinyin": "wi",
+      "mongolian": "дээр",
+      "hskLevel": "KR1",
+      "exampleChinese": "책상 위",
+      "exampleMongolian": "ширээний дээр"
+    },
+    {
+      "id": "kr_an",
+      "chinese": "안",
+      "pinyin": "an",
+      "mongolian": "дотор",
+      "hskLevel": "KR1",
+      "exampleChinese": "가방 안",
+      "exampleMongolian": "цүнхний дотор"
+    },
+    {
+      "id": "kr_issda",
+      "chinese": "있다",
+      "pinyin": "itda",
+      "mongolian": "байх (амьд зүйл/зүйл)",
+      "hskLevel": "KR1",
+      "exampleChinese": "책이 있습니다.",
+      "exampleMongolian": "Ном байна."
+    },
+    {
+      "id": "kr_e_particle",
+      "chinese": "에",
+      "pinyin": "e",
+      "mongolian": "location/time particle (дээр/руу/т)",
+      "hskLevel": "KR1",
+      "exampleChinese": "학교에 있습니다.",
+      "exampleMongolian": "Сургуульд байна."
+    },
+    {
+      "id": "kr_sueop",
+      "chinese": "수업",
+      "pinyin": "sueop",
+      "mongolian": "хичээл (class session)",
+      "hskLevel": "KR1",
+      "exampleChinese": "한국어 수업",
+      "exampleMongolian": "солонгос хэлний хичээл"
+    },
+    {
+      "id": "kr_cheung",
+      "chinese": "층",
+      "pinyin": "cheung",
+      "mongolian": "давхар",
+      "hskLevel": "KR1",
+      "exampleChinese": "2층",
+      "exampleMongolian": "2 давхар"
+    }
+  ],
+  "quizQuestions": [
+    {
+      "id": "k02_q1",
+      "type": "multiple_choice",
+      "question": "「학교」 гэдэг нь:",
+      "options": ["сургууль", "компани", "гэр", "зах"],
+      "correctAnswer": "сургууль",
+      "explanation": "학교 = school."
+    },
+    {
+      "id": "k02_q2",
+      "type": "multiple_choice",
+      "question": "「교실」 гэдэг нь:",
+      "options": ["анги", "жорлон", "гал тогоо", "оффис"],
+      "correctAnswer": "анги",
+      "explanation": "Classroom."
+    },
+    {
+      "id": "k02_q3",
+      "type": "cloze",
+      "question": "책상 ____ 에 책이 있습니다.",
+      "options": ["위", "안", "아래", "옆"],
+      "correctAnswer": "위",
+      "explanation": "위 = on top of."
+    },
+    {
+      "id": "k02_q4",
+      "type": "multiple_choice",
+      "question": "「어디」 гэдэг нь:",
+      "options": ["хаана", "хэн", "юу", "хэзээ"],
+      "correctAnswer": "хаана",
+      "explanation": "Where question word."
+    },
+    {
+      "id": "k02_q5",
+      "type": "multiple_choice",
+      "question": "「여기」 vs 「저기」:",
+      "options": ["энд vs тэнд (хол)", "өчигдөр vs маргааш", "дээр vs доор", "тийм vs үгүй"],
+      "correctAnswer": "энд vs тэнд (хол)",
+      "explanation": "Near vs far demonstratives."
+    },
+    {
+      "id": "k02_q6",
+      "type": "multiple_choice",
+      "question": "「화장실은 어디에 있습니까?」 орчуулга:",
+      "options": [
+        "Жорлон хаана байна?",
+        "Ном хэнд байна?",
+        "Та хэн бэ?",
+        "Хичээл хэзээ?"
+      ],
+      "correctAnswer": "Жорлон хаана байна?",
+      "explanation": "Asking location of restroom."
+    },
+    {
+      "id": "k02_q7",
+      "type": "cloze",
+      "question": "가방 ____ 에 펜이 있습니다.",
+      "options": ["안", "위", "밖", "앞"],
+      "correctAnswer": "안",
+      "explanation": "안 = inside."
+    },
+    {
+      "id": "k02_q8",
+      "type": "multiple_choice",
+      "question": "「있다」-ийн утга:",
+      "options": ["байх", "явах", "унших", "бичих"],
+      "correctAnswer": "байх",
+      "explanation": "To exist / have."
+    },
+    {
+      "id": "k02_q9",
+      "type": "multiple_choice",
+      "question": "「이것은 책입니다」 орчуулга:",
+      "options": ["Энэ ном.", "Тэр цүнх.", "Энд анги.", "Би оюутан."],
+      "correctAnswer": "Энэ ном.",
+      "explanation": "This is a book."
+    },
+    {
+      "id": "k02_q10",
+      "type": "multiple_choice",
+      "question": "「학교에 있습니다」-д 「에」-ийн үүрэг:",
+      "options": ["байршил (at/in)", "topic", "байгаа зүйл", "асуулт"],
+      "correctAnswer": "байршил (at/in)",
+      "explanation": "Location particle."
+    }
+  ]
+}

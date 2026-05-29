@@ -1,0 +1,327 @@
+{
+  "_meta": {
+    "source": "draft",
+    "needsSourceAudit": true,
+    "sourceStatus": "needs_source_upload",
+    "sourceFileExpected": "Солонгос_Ном_PreLesson_Hangul_한글_Premium_Package.html",
+    "note": "Korean in chinese fields; romanization in pinyin. No HTML source in repo — draft from standard Hangul curriculum."
+  },
+  "lesson": {
+    "id": "k-pre-08",
+    "courseId": "korean-1",
+    "title": "PreLesson 08 — 한글 Final Test",
+    "chineseTitle": "한글 종합 테스트",
+    "subtitle": "Хангылийн нэгтгэсэн шалгалт — эгшиг, гийгүүлэгч, үе, батчим",
+    "description": "PreLesson 01–07-ийн нэгтгэсэн шалгалт. 20 асуулт — vowels, consonants, syllables, batchim, reading.",
+    "duration": "20 min",
+    "status": "draft",
+    "orderIndex": 7,
+    "mediaStatus": "missing",
+    "sourceNote": "Korean Book 1 PreLesson 08 — final Hangul test, audio pending."
+  },
+  "subtitles": [
+    {
+      "start": "00:00",
+      "end": "00:08",
+      "chinese": "한글 종합 테스트입니다.",
+      "pinyin": "Hangeul jonghap teseuteu-imnida.",
+      "mongolian": "Хангылийн нэгтгэсэн шалгалт."
+    },
+    {
+      "start": "00:09",
+      "end": "00:16",
+      "chinese": "모음, 자음, 음절, 받침을 확인합니다.",
+      "pinyin": "Moeum, jaeum, eumjeol, batchim-eul hwaginhamnida.",
+      "mongolian": "Эгшиг, гийгүүлэгч, үе, батчим шалгана."
+    },
+    {
+      "start": "00:17",
+      "end": "00:24",
+      "chinese": "천천히 읽고 답하세요.",
+      "pinyin": "Cheoncheonhi ilgo daphaseyo.",
+      "mongolian": "Удаан уншаад хариул."
+    }
+  ],
+  "vocabulary": [
+    {
+      "id": "kr_p08_hangeul",
+      "chinese": "한글",
+      "pinyin": "hangeul",
+      "mongolian": "хангыль (шалгалтын тойм)",
+      "hskLevel": "KR1",
+      "exampleChinese": "한글 테스트",
+      "exampleMongolian": "хангылийн шалгалт"
+    },
+    {
+      "id": "kr_p08_test",
+      "chinese": "테스트",
+      "pinyin": "teseuteu",
+      "mongolian": "шалгалт",
+      "hskLevel": "KR1",
+      "exampleChinese": "종합 테스트",
+      "exampleMongolian": "нэгтгэсэн шалгалт"
+    }
+  ],
+  "quizQuestions": [
+    {
+      "id": "p08_1",
+      "type": "multiple_choice",
+      "question": "「ㅏ」 romanization:",
+      "options": [
+        "a",
+        "o",
+        "u",
+        "i"
+      ],
+      "correctAnswer": "a",
+      "explanation": "Basic vowel"
+    },
+    {
+      "id": "p08_2",
+      "type": "multiple_choice",
+      "question": "「ㅓ」 romanization:",
+      "options": [
+        "eo",
+        "a",
+        "e",
+        "u"
+      ],
+      "correctAnswer": "eo",
+      "explanation": "Basic vowel"
+    },
+    {
+      "id": "p08_3",
+      "type": "multiple_choice",
+      "question": "「ㅑ」 romanization:",
+      "options": [
+        "ya",
+        "yeo",
+        "yo",
+        "a"
+      ],
+      "correctAnswer": "ya",
+      "explanation": "Y vowel"
+    },
+    {
+      "id": "p08_4",
+      "type": "multiple_choice",
+      "question": "「ㅔ」 romanization:",
+      "options": [
+        "e",
+        "ae",
+        "ye",
+        "eo"
+      ],
+      "correctAnswer": "e",
+      "explanation": "Compound vowel"
+    },
+    {
+      "id": "p08_5",
+      "type": "multiple_choice",
+      "question": "「ㄱ」 romanization:",
+      "options": [
+        "g/k",
+        "n",
+        "d/t",
+        "s"
+      ],
+      "correctAnswer": "g/k",
+      "explanation": "Consonant"
+    },
+    {
+      "id": "p08_6",
+      "type": "multiple_choice",
+      "question": "「ㅊ」 romanization:",
+      "options": [
+        "ch",
+        "j",
+        "k",
+        "s"
+      ],
+      "correctAnswer": "ch",
+      "explanation": "Aspirated"
+    },
+    {
+      "id": "p08_7",
+      "type": "multiple_choice",
+      "question": "「ㄲ」 romanization:",
+      "options": [
+        "kk",
+        "k",
+        "g",
+        "t"
+      ],
+      "correctAnswer": "kk",
+      "explanation": "Tense"
+    },
+    {
+      "id": "p08_8",
+      "type": "multiple_choice",
+      "question": "「가」 = ?",
+      "options": [
+        "ㄱ + ㅏ",
+        "ㄴ + ㅏ",
+        "ㄱ + ㅗ",
+        "ㅁ + ㅏ"
+      ],
+      "correctAnswer": "ㄱ + ㅏ",
+      "explanation": "Syllable"
+    },
+    {
+      "id": "p08_9",
+      "type": "multiple_choice",
+      "question": "「무」 = ?",
+      "options": [
+        "ㅁ + ㅜ",
+        "ㅂ + ㅜ",
+        "ㅁ + ㅡ",
+        "ㄴ + ㅜ"
+      ],
+      "correctAnswer": "ㅁ + ㅜ",
+      "explanation": "Syllable"
+    },
+    {
+      "id": "p08_10",
+      "type": "multiple_choice",
+      "question": "「바」-ийг унш:",
+      "options": [
+        "ba",
+        "pa",
+        "ma",
+        "da"
+      ],
+      "correctAnswer": "ba",
+      "explanation": "Reading"
+    },
+    {
+      "id": "p08_11",
+      "type": "multiple_choice",
+      "question": "「한국」 romanization:",
+      "options": [
+        "hanguk",
+        "monggol",
+        "hakgyo",
+        "hangeul"
+      ],
+      "correctAnswer": "hanguk",
+      "explanation": "Word"
+    },
+    {
+      "id": "p08_12",
+      "type": "multiple_choice",
+      "question": "「받침」 гэдэг нь:",
+      "options": [
+        "үеийн доод гийгүүлэгч",
+        "эгшиг",
+        "асуулт",
+        "орчуулга"
+      ],
+      "correctAnswer": "үеийн доод гийгүүлэгч",
+      "explanation": "Batchim"
+    },
+    {
+      "id": "p08_13",
+      "type": "multiple_choice",
+      "question": "「물」-ийн утга:",
+      "options": [
+        "ус",
+        "хоол",
+        "байр",
+        "гар"
+      ],
+      "correctAnswer": "ус",
+      "explanation": "Meaning"
+    },
+    {
+      "id": "p08_14",
+      "type": "multiple_choice",
+      "question": "「짜」-ийг унш:",
+      "options": [
+        "jja",
+        "ja",
+        "cha",
+        "ssa"
+      ],
+      "correctAnswer": "jja",
+      "explanation": "Tense syllable"
+    },
+    {
+      "id": "p08_15",
+      "type": "multiple_choice",
+      "question": "「파」-ийг унш:",
+      "options": [
+        "pa",
+        "ba",
+        "ppa",
+        "ha"
+      ],
+      "correctAnswer": "pa",
+      "explanation": "Aspirated syllable"
+    },
+    {
+      "id": "p08_16",
+      "type": "multiple_choice",
+      "question": "Romanization «yeo» — аль эгшиг?",
+      "options": [
+        "ㅕ",
+        "ㅓ",
+        "ㅔ",
+        "ㅑ"
+      ],
+      "correctAnswer": "ㅕ",
+      "explanation": "Vowel match"
+    },
+    {
+      "id": "p08_17",
+      "type": "multiple_choice",
+      "question": "「ㅇ」 эхэнд:",
+      "options": [
+        "дуугүй",
+        "н",
+        "м",
+        "х"
+      ],
+      "correctAnswer": "дуугүй",
+      "explanation": "Initial ㅇ"
+    },
+    {
+      "id": "p08_18",
+      "type": "cloze",
+      "question": "ㄷ + ㅏ = ____",
+      "options": [
+        "다",
+        "나",
+        "라",
+        "가"
+      ],
+      "correctAnswer": "다",
+      "explanation": "Syllable build"
+    },
+    {
+      "id": "p08_19",
+      "type": "multiple_choice",
+      "question": "「사람」-ийн утга:",
+      "options": [
+        "хүн",
+        "сургууль",
+        "Солонгос",
+        "нэр"
+      ],
+      "correctAnswer": "хүн",
+      "explanation": "Meaning"
+    },
+    {
+      "id": "p08_20",
+      "type": "multiple_choice",
+      "question": "「한글」-ийн утга:",
+      "options": [
+        "солонгос үсэг, хангыль",
+        "сургууль",
+        "хүн",
+        "ус"
+      ],
+      "correctAnswer": "солонгос үсэг, хангыль",
+      "explanation": "Final review"
+    }
+  ]
+}

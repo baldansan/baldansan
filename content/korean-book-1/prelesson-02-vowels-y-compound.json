@@ -1,0 +1,319 @@
+{
+  "_meta": {
+    "source": "draft",
+    "needsSourceAudit": true,
+    "sourceStatus": "needs_source_upload",
+    "sourceFileExpected": "Солонгос_Ном_PreLesson_Hangul_한글_Premium_Package.html",
+    "note": "Korean in chinese fields; romanization in pinyin. No HTML source in repo — draft from standard Hangul curriculum."
+  },
+  "lesson": {
+    "id": "k-pre-02",
+    "courseId": "korean-1",
+    "title": "PreLesson 02 — Нэмэлт эгшиг",
+    "chineseTitle": "이중 모음과 야/여/요/유",
+    "subtitle": "Y-эгшиг ба нийлмэл эгшиг — ya, yeo, yo, yu, ae, e",
+    "description": "ㅑ ㅕ ㅛ ㅠ ㅐ ㅔ ㅒ ㅖ эгшгийг таних, унших, romanization-тай холбох.",
+    "duration": "12 min",
+    "status": "draft",
+    "orderIndex": 1,
+    "mediaStatus": "missing",
+    "sourceNote": "Korean Book 1 PreLesson 02 — audio pending."
+  },
+  "subtitles": [
+    {
+      "start": "00:00",
+      "end": "00:06",
+      "chinese": "이중 모음과 야/여/요/유를 배웁시다.",
+      "pinyin": "Idong moeum-gwa ya/yeo/yo/yu-reul baeupsida.",
+      "mongolian": "Y-эгшиг ба нийлмэл эгшгийг суръя."
+    },
+    {
+      "start": "00:07",
+      "end": "00:14",
+      "chinese": "ㅑ ya, ㅕ yeo, ㅛ yo, ㅠ yu",
+      "pinyin": "ya, yeo, yo, yu",
+      "mongolian": "Дөрвөн Y-эгшиг."
+    },
+    {
+      "start": "00:15",
+      "end": "00:22",
+      "chinese": "ㅐ ae, ㅔ e, ㅒ yae, ㅖ ye",
+      "pinyin": "ae, e, yae, ye",
+      "mongolian": "Дөрвөн нийлмэл эгшиг."
+    },
+    {
+      "start": "00:23",
+      "end": "00:30",
+      "chinese": "야, 여, 요, 유",
+      "pinyin": "ya, yeo, yo, yu",
+      "mongolian": "Y-эгшгийн жишээ үе."
+    },
+    {
+      "start": "00:31",
+      "end": "00:38",
+      "chinese": "애, 에, 얘, 예",
+      "pinyin": "ae, e, yae, ye",
+      "mongolian": "Нийлмэл эгшгийн жишээ."
+    }
+  ],
+  "vocabulary": [
+    {
+      "id": "kr_p02_ya",
+      "chinese": "ㅑ",
+      "pinyin": "ya",
+      "mongolian": "эгшиг «ya»",
+      "hskLevel": "KR1",
+      "exampleChinese": "야",
+      "exampleMongolian": "ya"
+    },
+    {
+      "id": "kr_p02_yeo",
+      "chinese": "ㅕ",
+      "pinyin": "yeo",
+      "mongolian": "эгшиг «yeo»",
+      "hskLevel": "KR1",
+      "exampleChinese": "여",
+      "exampleMongolian": "yeo"
+    },
+    {
+      "id": "kr_p02_yo",
+      "chinese": "ㅛ",
+      "pinyin": "yo",
+      "mongolian": "эгшиг «yo»",
+      "hskLevel": "KR1",
+      "exampleChinese": "요",
+      "exampleMongolian": "yo"
+    },
+    {
+      "id": "kr_p02_yu",
+      "chinese": "ㅠ",
+      "pinyin": "yu",
+      "mongolian": "эгшиг «yu»",
+      "hskLevel": "KR1",
+      "exampleChinese": "유",
+      "exampleMongolian": "yu"
+    },
+    {
+      "id": "kr_p02_ae",
+      "chinese": "ㅐ",
+      "pinyin": "ae",
+      "mongolian": "эгшиг «ae»",
+      "hskLevel": "KR1",
+      "exampleChinese": "애",
+      "exampleMongolian": "ae"
+    },
+    {
+      "id": "kr_p02_e",
+      "chinese": "ㅔ",
+      "pinyin": "e",
+      "mongolian": "эгшиг «e»",
+      "hskLevel": "KR1",
+      "exampleChinese": "에",
+      "exampleMongolian": "e"
+    },
+    {
+      "id": "kr_p02_yae",
+      "chinese": "ㅒ",
+      "pinyin": "yae",
+      "mongolian": "эгшиг «yae»",
+      "hskLevel": "KR1",
+      "exampleChinese": "얘",
+      "exampleMongolian": "yae"
+    },
+    {
+      "id": "kr_p02_ye",
+      "chinese": "ㅖ",
+      "pinyin": "ye",
+      "mongolian": "эгшиг «ye»",
+      "hskLevel": "KR1",
+      "exampleChinese": "예",
+      "exampleMongolian": "ye"
+    },
+    {
+      "id": "kr_p02_ex_ya",
+      "chinese": "야",
+      "pinyin": "ya",
+      "mongolian": "ㅑ + ㅇ = ya",
+      "hskLevel": "KR1",
+      "exampleChinese": "야!",
+      "exampleMongolian": "ya!"
+    },
+    {
+      "id": "kr_p02_ex_yeo",
+      "chinese": "여",
+      "pinyin": "yeo",
+      "mongolian": "ㅕ + ㅇ = yeo",
+      "hskLevel": "KR1",
+      "exampleChinese": "여기",
+      "exampleMongolian": "энд"
+    },
+    {
+      "id": "kr_p02_ex_yo",
+      "chinese": "요",
+      "pinyin": "yo",
+      "mongolian": "ㅛ + ㅇ = yo",
+      "hskLevel": "KR1",
+      "exampleChinese": "오늘",
+      "exampleMongolian": "өнөөдөр"
+    },
+    {
+      "id": "kr_p02_ex_yu",
+      "chinese": "유",
+      "pinyin": "yu",
+      "mongolian": "ㅠ + ㅇ = yu",
+      "hskLevel": "KR1",
+      "exampleChinese": "유학",
+      "exampleMongolian": "гадуур суралцах"
+    },
+    {
+      "id": "kr_p02_ex_ae",
+      "chinese": "애",
+      "pinyin": "ae",
+      "mongolian": "ㅐ + ㅇ = ae",
+      "hskLevel": "KR1",
+      "exampleChinese": "애",
+      "exampleMongolian": "хүүхэд"
+    },
+    {
+      "id": "kr_p02_ex_e",
+      "chinese": "에",
+      "pinyin": "e",
+      "mongolian": "ㅔ + ㅇ = e",
+      "hskLevel": "KR1",
+      "exampleChinese": "에",
+      "exampleMongolian": "-д/-т"
+    }
+  ],
+  "quizQuestions": [
+    {
+      "id": "p02_r1",
+      "type": "multiple_choice",
+      "question": "「ㅑ」-ийн romanization:",
+      "options": [
+        "ya",
+        "yeo",
+        "yo",
+        "a"
+      ],
+      "correctAnswer": "ya",
+      "explanation": "ㅑ → ya"
+    },
+    {
+      "id": "p02_r2",
+      "type": "multiple_choice",
+      "question": "「ㅛ」-ийн romanization:",
+      "options": [
+        "yo",
+        "yu",
+        "o",
+        "yeo"
+      ],
+      "correctAnswer": "yo",
+      "explanation": "ㅛ → yo"
+    },
+    {
+      "id": "p02_r3",
+      "type": "multiple_choice",
+      "question": "「ㅔ」-ийн romanization:",
+      "options": [
+        "e",
+        "ae",
+        "ye",
+        "eo"
+      ],
+      "correctAnswer": "e",
+      "explanation": "ㅔ → e"
+    },
+    {
+      "id": "p02_rd1",
+      "type": "multiple_choice",
+      "question": "「여」-ийг уншвал:",
+      "options": [
+        "yeo",
+        "yo",
+        "ya",
+        "yu"
+      ],
+      "correctAnswer": "yeo",
+      "explanation": "여 = ㅕ"
+    },
+    {
+      "id": "p02_rd2",
+      "type": "multiple_choice",
+      "question": "「요」-ийг уншвал:",
+      "options": [
+        "yo",
+        "yeo",
+        "yu",
+        "ya"
+      ],
+      "correctAnswer": "yo",
+      "explanation": "요 = ㅛ"
+    },
+    {
+      "id": "p02_rd3",
+      "type": "multiple_choice",
+      "question": "「예」-ийг уншвал:",
+      "options": [
+        "ye",
+        "yae",
+        "e",
+        "ae"
+      ],
+      "correctAnswer": "ye",
+      "explanation": "예 = ㅖ"
+    },
+    {
+      "id": "p02_c1",
+      "type": "multiple_choice",
+      "question": "Romanization «yu» — аль эгшиг?",
+      "options": [
+        "ㅠ",
+        "ㅜ",
+        "ㅛ",
+        "ㅕ"
+      ],
+      "correctAnswer": "ㅠ",
+      "explanation": "yu = ㅠ"
+    },
+    {
+      "id": "p02_c2",
+      "type": "multiple_choice",
+      "question": "Romanization «ae» — аль эгшиг?",
+      "options": [
+        "ㅐ",
+        "ㅔ",
+        "ㅒ",
+        "ㅖ"
+      ],
+      "correctAnswer": "ㅐ",
+      "explanation": "ae = ㅐ"
+    },
+    {
+      "id": "p02_m1",
+      "type": "multiple_choice",
+      "question": "「ㅕ」-ийн утга хамгийн ойрхон romanization:",
+      "options": [
+        "yeo",
+        "yo",
+        "ya",
+        "eo"
+      ],
+      "correctAnswer": "yeo",
+      "explanation": "ㅕ = yeo"
+    },
+    {
+      "id": "p02_m2",
+      "type": "multiple_choice",
+      "question": "「ㅒ」 бол 「ㅐ」-ийн Y хувилбар. Romanization:",
+      "options": [
+        "yae",
+        "ye",
+        "ae",
+        "e"
+      ],
+      "correctAnswer": "yae",
+      "explanation": "ㅒ → yae"
+    }
+  ]
+}

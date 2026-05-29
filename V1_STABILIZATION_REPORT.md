@@ -30,6 +30,9 @@ All routes exist in App Router build output. Manual production smoke test still 
 | `/courses/hsk5` | OK | Public lessons only via `getPublicLessonsByCourseId` |
 | `/lessons/1` (+ watch/vocab/quiz) | OK | Access guard + draft unavailable UI |
 | `/review` | OK | Learned words dashboard |
+| `/games` | OK | Practice games hub (local stats) |
+| `/games/match`, `/games/translate`, `/games/missing-word`, `/games/arrange`, `/games/stroke` | OK | Lesson vocabulary mini-games |
+| `/kanji`, `/kanji/[vocabId]` | OK | Character grid + detail |
 | `/dashboard` | OK | Learner stats |
 | `/profile` | OK | Progress + retention |
 | `/login`, `/signup` | OK | Auth forms + `?next=` redirect |
@@ -131,13 +134,37 @@ See [V1_LAUNCH_BLOCKERS.md](./V1_LAUNCH_BLOCKERS.md).
 
 ---
 
+## v1.0 Mobile App-Like Redesign — **Completed**
+
+- Learner-facing mobile app shell redesign completed — see [MOBILE_APP_REDESIGN_REPORT.md](./MOBILE_APP_REDESIGN_REPORT.md)
+- Phone-width centered layout, bottom tab nav, home/study/kanji/games/profile views
+- Lesson flow, login/signup aligned to app shell
+- No new backend features; build verified
+
+**Practice games added** as local front-end learning tools — match, translate, missing word, arrange, stroke demo. Scores in localStorage only. See [PRACTICE_GAMES.md](./PRACTICE_GAMES.md).
+
+**Next:** HSK content upload sprint and game data enrichment.
+
+---
+
+## v1.0 Mobile UX Polish — **Completed**
+
+- Mobile UX polish pass completed — see [MOBILE_UX_POLISH_REPORT.md](./MOBILE_UX_POLISH_REPORT.md)
+- Global layout, nav, footer, lesson flow, quiz/vocab touch targets
+- Mongolian learner labels on core public pages
+- No new features; build verified
+
+**Next:** HSK4/HSK5 content upload sprint after mobile UX polish.
+
+---
+
 ## Recommendation
 
-### **Needs review**
+### **Ready for content upload**
 
-- Codebase and build are stable for v1.0 learner launch
-- **Production manual QA** on https://baldansan.vercel.app is the remaining gate
-- B2B features do not block learner launch
+- Mobile UX polish pass completed (May 2026)
+- Codebase stable; production mobile smoke test recommended
+- See [MOBILE_UX_POLISH_REPORT.md](./MOBILE_UX_POLISH_REPORT.md)
 
 After production QA passes all v1.0 checklist items → **Ready** for public v1.0 announcement.
 

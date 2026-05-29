@@ -3,7 +3,8 @@
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useState } from "react";
-import { AppHeader } from "@/components/app-header";
+import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
+import { MobileCard } from "@/components/mobile/mobile-card";
 import { getSafeRedirectPath } from "@/lib/auth/safe-redirect";
 import { getSession, hasSupabaseConfig, signUpWithEmail } from "@/lib/supabase/auth";
 import { resetProgressSyncDismiss } from "@/lib/supabase/progress-sync";
@@ -56,57 +57,52 @@ export function SignupForm() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-emerald-50/40 via-white to-white text-slate-900">
-      <AppHeader />
+    <MobileAppShell activeTab="profile" showBottomNav={false}>
+      <section className="py-4">
+        <h1 className="text-2xl font-bold tracking-tight text-[var(--app-text)]">
+          Бүртгүүлэх
+        </h1>
+        <p className="mt-2 text-sm text-[var(--app-muted)]">
+          Аккаунт үүсгээд ахицаа хадгалах боломжтой.
+        </p>
+      </section>
 
-      <main className="mx-auto flex w-full max-w-md flex-col gap-6 px-4 py-10 pb-16 sm:px-6">
-        <section>
-          <h1 className="text-3xl font-bold tracking-tight">Бүртгүүлэх</h1>
-          <p className="mt-2 text-sm text-slate-600">
-            Аккаунт үүсгээд ахицаа дараа нь хадгалах боломжтой.
+      {!hasSupabaseConfig ? (
+        <MobileCard className="text-sm text-[var(--app-muted)]">
+          Supabase тохиргоо олдсонгүй. .env.local файлд URL болон anon key
+          нэмнэ үү.
+        </MobileCard>
+      ) : success ? (
+        <MobileCard>
+          <p className="text-sm leading-6 text-[var(--app-text)]">
+            Бүртгэл үүсгэлээ. Имэйл баталгаажуулалт шаардлагатай байж магадгүй.
           </p>
-        </section>
-
-        {!hasSupabaseConfig ? (
-          <section className="rounded-2xl bg-white p-6 text-sm text-slate-600 shadow-sm ring-1 ring-slate-200">
-            Supabase тохиргоо олдсонгүй. .env.local файлд URL болон anon key
-            нэмнэ үү.
-          </section>
-        ) : success ? (
-          <section className="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-emerald-200">
-            <p className="text-sm leading-6 text-slate-700">
-              Бүртгэл үүсгэлээ. Имэйл баталгаажуулалт шаардлагатай байж магадгүй.
-            </p>
-            <div className="mt-4 flex flex-col gap-2">
-              {hasSession ? (
-                <Link
-                  href={nextPath}
-                  className="inline-flex justify-center rounded-full bg-emerald-500 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-emerald-600"
-                >
-                  {nextPath.startsWith("/invite/")
-                    ? "Continue to invitation →"
-                    : "Profile руу очих →"}
-                </Link>
-              ) : (
-                <Link
-                  href={
-                    searchParams.get("next")
-                      ? `/login?next=${encodeURIComponent(searchParams.get("next")!)}`
-                      : "/login"
-                  }
-                  className="inline-flex justify-center rounded-full bg-emerald-500 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-emerald-600"
-                >
-                  Нэвтрэх хуудас руу →
-                </Link>
-              )}
-            </div>
-          </section>
-        ) : (
-          <form
-            onSubmit={handleSubmit}
-            className="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-200"
-          >
-            <label className="block text-sm font-medium text-slate-700">
+          <div className="mt-4">
+            {hasSession ? (
+              <Link
+                href={nextPath}
+                className="inline-flex min-h-[44px] w-full items-center justify-center rounded-full bg-emerald-500 px-6 py-3 text-sm font-semibold text-white"
+              >
+                Профайл руу →
+              </Link>
+            ) : (
+              <Link
+                href={
+                  searchParams.get("next")
+                    ? `/login?next=${encodeURIComponent(searchParams.get("next")!)}`
+                    : "/login"
+                }
+                className="inline-flex min-h-[44px] w-full items-center justify-center rounded-full bg-emerald-500 px-6 py-3 text-sm font-semibold text-white"
+              >
+                Нэвтрэх →
+              </Link>
+            )}
+          </div>
+        </MobileCard>
+      ) : (
+        <MobileCard>
+          <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+            <label className="block text-sm font-medium text-[var(--app-text)]">
               Имэйл
               <input
                 type="email"
@@ -114,11 +110,11 @@ export function SignupForm() {
                 required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="mt-1 w-full rounded-xl border border-slate-200 px-4 py-3 text-sm outline-none ring-emerald-500 focus:border-emerald-300 focus:ring-2"
+                className="mt-1 w-full rounded-xl border border-[var(--app-border)] px-4 py-3 text-sm outline-none focus:border-emerald-300 focus:ring-2 focus:ring-emerald-500"
               />
             </label>
 
-            <label className="mt-4 block text-sm font-medium text-slate-700">
+            <label className="block text-sm font-medium text-[var(--app-text)]">
               Нууц үг
               <input
                 type="password"
@@ -127,11 +123,11 @@ export function SignupForm() {
                 minLength={6}
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                className="mt-1 w-full rounded-xl border border-slate-200 px-4 py-3 text-sm outline-none ring-emerald-500 focus:border-emerald-300 focus:ring-2"
+                className="mt-1 w-full rounded-xl border border-[var(--app-border)] px-4 py-3 text-sm outline-none focus:border-emerald-300 focus:ring-2 focus:ring-emerald-500"
               />
             </label>
 
-            <label className="mt-4 block text-sm font-medium text-slate-700">
+            <label className="block text-sm font-medium text-[var(--app-text)]">
               Нууц үг давтах
               <input
                 type="password"
@@ -140,12 +136,12 @@ export function SignupForm() {
                 minLength={6}
                 value={confirmPassword}
                 onChange={(e) => setConfirmPassword(e.target.value)}
-                className="mt-1 w-full rounded-xl border border-slate-200 px-4 py-3 text-sm outline-none ring-emerald-500 focus:border-emerald-300 focus:ring-2"
+                className="mt-1 w-full rounded-xl border border-[var(--app-border)] px-4 py-3 text-sm outline-none focus:border-emerald-300 focus:ring-2 focus:ring-emerald-500"
               />
             </label>
 
             {error ? (
-              <p className="mt-4 rounded-xl bg-red-50 px-4 py-3 text-sm text-red-800 ring-1 ring-red-200">
+              <p className="rounded-xl bg-red-50 px-4 py-3 text-sm text-red-800 ring-1 ring-red-200">
                 {error}
               </p>
             ) : null}
@@ -153,27 +149,27 @@ export function SignupForm() {
             <button
               type="submit"
               disabled={submitting}
-              className="mt-6 w-full rounded-full bg-emerald-500 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-emerald-600 disabled:opacity-50"
+              className="min-h-[44px] w-full rounded-full bg-emerald-500 px-6 py-3 text-sm font-semibold text-white disabled:opacity-50"
             >
               {submitting ? "Бүртгэж байна..." : "Бүртгүүлэх"}
             </button>
 
-            <p className="mt-4 text-center text-sm text-slate-600">
-              Аль хэдийн бүртгэлтэй юу?{" "}
+            <p className="text-center text-sm text-[var(--app-muted)]">
+              Бүртгэлтэй юу?{" "}
               <Link
                 href={
                   searchParams.get("next")
                     ? `/login?next=${encodeURIComponent(searchParams.get("next")!)}`
                     : "/login"
                 }
-                className="font-medium text-emerald-700 hover:text-emerald-600"
+                className="font-medium text-emerald-700"
               >
                 Нэвтрэх
               </Link>
             </p>
           </form>
-        )}
-      </main>
-    </div>
+        </MobileCard>
+      )}
+    </MobileAppShell>
   );
 }
