@@ -389,7 +389,7 @@ Phased roadmap from MVP demo to production product.
 | 6 | Launch candidate | ✅ Completed |
 | 7 | Production launch sign-off | ✅ Completed |
 
-**Phase 6 complete.** **Next:** Phase 7 Step 2 — Learner dashboard enhancements.
+**Phase 6 complete.** **Next:** Phase 7 Step 4 — Payment/pricing research.
 
 **Exit criteria:** App deployed to Vercel, Supabase production configured, all checklists green, public + admin routes verified.
 
@@ -405,15 +405,30 @@ Phased roadmap from MVP demo to production product.
 - Lesson flow polish (detail, watch, vocabulary, quiz, review, profile)
 - [USER_ONBOARDING.md](./USER_ONBOARDING.md), [PRODUCT_POLISH_PHASE_7.md](./PRODUCT_POLISH_PHASE_7.md)
 
+**Phase 7 Step 2 — Completed:** PWA/mobile app-like experience and offline-friendly polish.
+
+- `manifest.webmanifest`, app icons, metadata, theme color
+- Minimal service worker + `/offline` fallback (no aggressive auth/admin caching)
+- `PwaInstallCard`, mobile bottom nav polish, route loading skeletons
+- Continue learning bar, lesson step navigation, review/dashboard mobile UX
+- [PWA_MOBILE_APP_GUIDE.md](./PWA_MOBILE_APP_GUIDE.md), [MOBILE_UX_CHECKLIST.md](./MOBILE_UX_CHECKLIST.md)
+
+**Phase 7 Step 3 — Completed:** Learner retention — streaks, daily goals, today progress.
+
+- Daily goal (3 actions), streak counter, today progress bar
+- Dashboard `StreakCard`, Profile `LearningConsistencyCard`
+- localStorage retention log + Supabase activity merge (read-only)
+- Future reminders documented in [LEARNING_RETENTION.md](./LEARNING_RETENTION.md)
+
 | Step | Focus | Status |
 |------|--------|--------|
 | 1 | User-facing product polish and onboarding | ✅ Completed |
-| 2 | Learner dashboard enhancements | Pending |
-| 3 | Payment/pricing research | Pending |
-| 4 | School/B2B onboarding | Pending |
-| 5 | Mobile PWA polish | Pending |
+| 2 | PWA/mobile app-like experience and offline-friendly polish | ✅ Completed |
+| 3 | Learner retention: streaks, daily goals, reminders | ✅ Completed |
+| 4 | Payment/pricing research | Pending |
+| 5 | School/B2B onboarding | Pending |
 
-**Next:** Phase 7 Step 2 — Learner dashboard enhancements.
+**Next:** Phase 7 Step 4 — Payment/pricing research.
 
 ---
 

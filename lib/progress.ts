@@ -61,6 +61,15 @@ function writeStore(store: ProgressStore): void {
   window.localStorage.setItem(PROGRESS_STORAGE_KEY, JSON.stringify(store));
 }
 
+function notifyRetentionActivity(
+  type: import("@/lib/learning-retention").LearningActivityType
+): void {
+  if (!isBrowser()) return;
+  void import("@/lib/learning-retention").then((mod) =>
+    mod.recordLearningActivity(type)
+  );
+}
+
 export function getLessonProgress(lessonId: string): LessonProgress {
   const store = readStore();
   return store.lessons[lessonId] ?? defaultLessonProgress();
@@ -82,6 +91,7 @@ export function markLessonStarted(lessonId: string): void {
   };
   store.lastActiveLessonId = lessonId;
   writeStore(store);
+  notifyRetentionActivity("lesson_started");
 }
 
 export function markLessonCompleted(lessonId: string): void {
@@ -97,6 +107,7 @@ export function markLessonCompleted(lessonId: string): void {
   };
   store.lastActiveLessonId = lessonId;
   writeStore(store);
+  notifyRetentionActivity("lesson_completed");
 }
 
 export function getLearnedWords(lessonId: string): string[] {
@@ -111,8 +122,9 @@ export function toggleLearnedWord(lessonId: string, wordKey: string): string[] {
 
   const store = readStore();
   const current = new Set(store.vocabulary[lessonId] ?? []);
+  const wasLearned = current.has(wordKey);
 
-  if (current.has(wordKey)) {
+  if (wasLearned) {
     current.delete(wordKey);
   } else {
     current.add(wordKey);
@@ -122,6 +134,9 @@ export function toggleLearnedWord(lessonId: string, wordKey: string): string[] {
   store.vocabulary[lessonId] = next;
   store.lastActiveLessonId = lessonId;
   writeStore(store);
+  if (!wasLearned) {
+    notifyRetentionActivity("word_learned");
+  }
   return next;
 }
 
@@ -161,6 +176,7 @@ export function saveQuizResult(
   store.quizzes[lessonId] = result;
   store.lastActiveLessonId = lessonId;
   writeStore(store);
+  notifyRetentionActivity("quiz_attempt");
   return result;
 }
 

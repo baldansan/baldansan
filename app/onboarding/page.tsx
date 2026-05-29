@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { PwaInstallCard } from "@/components/pwa-install-card";
 import { PublicPageShell } from "@/components/public-page-shell";
 
 export const metadata = {
@@ -44,6 +45,8 @@ export default function OnboardingPage() {
           Шинэ хэрэглэгчид зориулсан богино заавар.
         </p>
       </section>
+
+      <PwaInstallCard />
 
       <ol className="flex flex-col gap-4">
         {steps.map((step, index) => (

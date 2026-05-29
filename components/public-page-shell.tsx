@@ -23,13 +23,13 @@ export function PublicPageShell({
       <AppHeader active={active} />
       <main
         className={`mx-auto flex w-full max-w-5xl flex-1 flex-col gap-6 px-4 pt-2 sm:gap-8 sm:px-6 ${
-          showBottomNav ? "pb-24 md:pb-10" : "pb-10"
+          showBottomNav ? "pb-28 md:pb-10" : "pb-10"
         } ${mainClassName}`}
       >
         {children}
       </main>
       {showFooter ? <AppFooter /> : null}
-      {showBottomNav ? <BottomNav active={active} /> : null}
+      {showBottomNav ? <BottomNav /> : null}
     </div>
   );
 }

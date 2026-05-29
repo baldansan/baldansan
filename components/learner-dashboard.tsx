@@ -2,7 +2,10 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { DashboardQuickReview } from "@/components/dashboard-quick-review";
 import { EmptyState } from "@/components/empty-state";
+import { PwaInstallCard } from "@/components/pwa-install-card";
+import { StreakCard } from "@/components/streak-card";
 import { LocalProgressNote } from "@/components/local-progress-note";
 import { PublicPageShell } from "@/components/public-page-shell";
 import { lessonPath, lessonVocabularyPath } from "@/lib/content";
@@ -11,6 +14,10 @@ import {
   pickLatestQuizAttempt,
   resolveContinueLearning,
 } from "@/lib/learner-progress";
+import {
+  getLearningRetentionSummarySmart,
+  type LearningRetentionSummary,
+} from "@/lib/learning-retention";
 import { getAllQuizResultsSmart, type QuizResultEntry } from "@/lib/progress";
 import { getCurrentUser, hasSupabaseConfig } from "@/lib/supabase/auth";
 
@@ -31,6 +38,9 @@ export function LearnerDashboard({ hsk5LessonIds }: Props) {
     averageQuizPercent: null as number | null,
   });
   const [latestQuiz, setLatestQuiz] = useState<QuizResultEntry | null>(null);
+  const [retention, setRetention] = useState<LearningRetentionSummary | null>(
+    null
+  );
 
   useEffect(() => {
     async function load() {
@@ -58,6 +68,7 @@ export function LearnerDashboard({ hsk5LessonIds }: Props) {
 
       const quizzes = await getAllQuizResultsSmart();
       setLatestQuiz(pickLatestQuizAttempt(quizzes));
+      setRetention(await getLearningRetentionSummarySmart());
       setReady(true);
     }
 
@@ -113,6 +124,8 @@ export function LearnerDashboard({ hsk5LessonIds }: Props) {
         ) : null}
       </section>
 
+      {retention ? <StreakCard summary={retention} /> : null}
+
       <section className="rounded-2xl bg-emerald-600 p-6 text-white sm:p-8">
         <h2 className="text-lg font-semibold">Continue learning</h2>
         <p className="mt-2 text-sm text-emerald-50">
@@ -125,6 +138,13 @@ export function LearnerDashboard({ hsk5LessonIds }: Props) {
           {continueLabel}
         </Link>
       </section>
+
+      <PwaInstallCard />
+
+      <DashboardQuickReview
+        continueHref={continueHref}
+        latestQuiz={latestQuiz}
+      />
 
       <section className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         {[

@@ -2,7 +2,42 @@
 
 **Project:** Buunduu Surtsgaay (Бөөндөө Сурцгаая)  
 **Checkpoint date:** May 2026  
-**Status:** Phase 7 Step 1 User-facing product polish **completed**
+**Status:** Phase 7 Step 3 Learner retention **completed**
+
+---
+
+## Phase 7 Step 3 — Learner retention (streaks, daily goals) — **Completed**
+
+Phase 7 Step 3: Daily learning goal, streak counter, today progress, daily review CTA, dashboard streak card, profile learning consistency.
+
+| Area | Deliverable |
+|------|-------------|
+| Retention | `lib/learning-retention.ts` — localStorage log, streak/goal logic |
+| Supabase | `lib/supabase/learning-retention.ts` — read merge + future sync types |
+| Dashboard | `StreakCard` — streak, goal progress, daily review |
+| Profile | `LearningConsistencyCard` — week view, longest streak |
+| Hooks | Activity recorded on lesson/vocab/quiz in `lib/progress.ts` |
+| Docs | LEARNING_RETENTION.md |
+
+**Next:** Phase 7 Step 4 — Payment/pricing research.
+
+---
+
+## Phase 7 Step 2 — PWA/mobile app-like experience and offline-friendly polish — **Completed**
+
+Phase 7 Step 2: PWA manifest, install helper, mobile navigation, loading/offline states, learner mobile UX polish added.
+
+| Area | Deliverable |
+|------|-------------|
+| PWA | `manifest.webmanifest`, icons, metadata, minimal service worker |
+| Offline | `/offline`, `public/offline.html` |
+| Install | `PwaInstallCard` on home, dashboard, onboarding |
+| Mobile nav | Bottom nav active states, touch targets, auth-aware items |
+| Loading | Route-level skeletons, global `not-found` |
+| Learner UX | Continue learning bar, lesson step bar, quick review, review collapsible groups |
+| Docs | PWA_MOBILE_APP_GUIDE.md, MOBILE_UX_CHECKLIST.md |
+
+**Next:** Phase 7 Step 3 — Learner retention features: streaks, daily goals, reminders.
 
 ---
 
@@ -17,8 +52,6 @@ Phase 7 Mega Batch: User-facing product polish, onboarding, dashboard, help, fee
 | Nav | Auth-aware header, bottom nav, `AppFooter` |
 | Courses | HSK5 continue learning, extended progress, lesson roadmap badges |
 | Docs | USER_ONBOARDING.md, PRODUCT_POLISH_PHASE_7.md |
-
-**Next:** Phase 7 Step 2 — Learner dashboard enhancements.
 
 ---
 

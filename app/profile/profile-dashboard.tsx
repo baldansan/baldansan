@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { AppHeader } from "@/components/app-header";
 import { BottomNav } from "@/components/bottom-nav";
 import { EmptyState } from "@/components/empty-state";
+import { LearningConsistencyCard } from "@/components/learning-consistency-card";
 import { LocalProgressNote } from "@/components/local-progress-note";
 import { ProgressSyncCard } from "@/components/progress-sync-card";
 import { lessonPath } from "@/lib/content";
@@ -23,6 +24,10 @@ import {
   type AccountLessonProgressSummary,
   type QuizResultEntry,
 } from "@/lib/progress";
+import {
+  getLearningRetentionSummarySmart,
+  type LearningRetentionSummary,
+} from "@/lib/learning-retention";
 
 function formatQuizDate(iso: string): string {
   try {
@@ -53,6 +58,9 @@ export function ProfileDashboard() {
     null
   );
   const [syncRefreshKey, setSyncRefreshKey] = useState(0);
+  const [retention, setRetention] = useState<LearningRetentionSummary | null>(
+    null
+  );
 
   useEffect(() => {
     async function refresh() {
@@ -91,6 +99,8 @@ export function ProfileDashboard() {
           accountHasVocab ||
           quizEntries.length > 0
       );
+
+      setRetention(await getLearningRetentionSummarySmart());
 
       setReady(true);
     }
@@ -178,6 +188,8 @@ export function ProfileDashboard() {
             Open dashboard →
           </Link>
         ) : null}
+
+        {retention ? <LearningConsistencyCard summary={retention} /> : null}
 
         <section className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:p-6">
           {authUser ? (

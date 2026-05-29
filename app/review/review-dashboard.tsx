@@ -64,6 +64,8 @@ export function ReviewDashboard({ lessons, lessonIds }: Props) {
     null
   );
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [hskFilter, setHskFilter] = useState<string>("all");
+  const [collapsed, setCollapsed] = useState<Record<string, boolean>>({});
 
   const lessonById = useMemo(
     () => new Map(lessons.map((lesson) => [lesson.id, lesson])),
@@ -92,6 +94,30 @@ export function ReviewDashboard({ lessons, lessonIds }: Props) {
         entries: groups.get(lessonId) ?? [],
       }));
   }, [learnedEntries, lessons, lessonById]);
+
+  const hskLevels = useMemo(() => {
+    const levels = new Set<string>();
+    for (const group of groupedByLesson) {
+      for (const entry of group.entries) {
+        const word = group.lesson
+          ? resolveWord(group.lesson.vocabulary, entry.wordKey)
+          : null;
+        if (word?.hskLevel) levels.add(word.hskLevel);
+      }
+    }
+    return ["all", ...Array.from(levels).sort()];
+  }, [groupedByLesson]);
+
+  function filteredEntries(
+    lesson: LessonVocabSnapshot | undefined,
+    entries: LearnedWordEntry[]
+  ) {
+    if (hskFilter === "all") return entries;
+    return entries.filter((entry) => {
+      const word = lesson ? resolveWord(lesson.vocabulary, entry.wordKey) : null;
+      return word?.hskLevel === hskFilter;
+    });
+  }
 
   useEffect(() => {
     async function refresh() {
@@ -241,6 +267,25 @@ export function ReviewDashboard({ lessons, lessonIds }: Props) {
             Learned words by lesson
           </h2>
 
+          {learnedEntries.length > 0 ? (
+            <div className="flex flex-wrap gap-2">
+              {hskLevels.map((level) => (
+                <button
+                  key={level}
+                  type="button"
+                  onClick={() => setHskFilter(level)}
+                  className={
+                    hskFilter === level
+                      ? "rounded-full bg-emerald-500 px-3 py-1.5 text-xs font-semibold text-white"
+                      : "rounded-full border border-emerald-200 bg-emerald-50 px-3 py-1.5 text-xs font-semibold text-emerald-800"
+                  }
+                >
+                  {level === "all" ? "All HSK" : level}
+                </button>
+              ))}
+            </div>
+          ) : null}
+
           {learnedEntries.length === 0 ? (
             <EmptyState
               title="Одоогоор review хийх үг алга."
@@ -255,18 +300,36 @@ export function ReviewDashboard({ lessons, lessonIds }: Props) {
               }
             />
           ) : (
-            groupedByLesson.map(({ lessonId, lesson, entries }) => (
+            groupedByLesson.map(({ lessonId, lesson, entries }) => {
+              const visible = filteredEntries(lesson, entries);
+              if (visible.length === 0) return null;
+              const isCollapsed = collapsed[lessonId] ?? false;
+              return (
               <article
                 key={lessonId}
                 className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:p-6"
               >
                 <div className="flex flex-wrap items-start justify-between gap-3">
-                  <h3 className="text-lg font-semibold text-slate-900">
-                    Lesson {lessonId}
-                    {lesson
-                      ? ` — ${lesson.title} ${lesson.chineseTitle}`
-                      : ""}
-                  </h3>
+                  <button
+                    type="button"
+                    onClick={() =>
+                      setCollapsed((prev) => ({
+                        ...prev,
+                        [lessonId]: !isCollapsed,
+                      }))
+                    }
+                    className="text-left"
+                  >
+                    <h3 className="text-lg font-semibold text-slate-900">
+                      Lesson {lessonId}
+                      {lesson
+                        ? ` — ${lesson.title} ${lesson.chineseTitle}`
+                        : ""}{" "}
+                      <span className="text-sm font-normal text-slate-500">
+                        ({visible.length})
+                      </span>
+                    </h3>
+                  </button>
                   <Link
                     href={lessonVocabularyPath(lessonId)}
                     className="text-sm font-medium text-emerald-700 transition-colors hover:text-emerald-600"
@@ -275,8 +338,9 @@ export function ReviewDashboard({ lessons, lessonIds }: Props) {
                   </Link>
                 </div>
 
+                {!isCollapsed ? (
                 <ul className="mt-4 flex flex-col gap-3">
-                  {entries.map((entry) => {
+                  {visible.map((entry) => {
                     const word = lesson
                       ? resolveWord(lesson.vocabulary, entry.wordKey)
                       : null;
@@ -312,8 +376,10 @@ export function ReviewDashboard({ lessons, lessonIds }: Props) {
                     );
                   })}
                 </ul>
+                ) : null}
               </article>
-            ))
+              );
+            })
           )}
         </section>
       </main>

@@ -22,6 +22,8 @@ A Mongolian–Chinese language learning web app. Users learn Chinese through sho
 - **Profile** (`/profile`) — dashboard: stats, quiz history, continue learning
 - **Review** (`/review`) — learned words grouped by lesson, quiz summary
 - **Navigation** — header (Courses, Demo, Review, Profile); mobile bottom nav on learning pages
+- **PWA / mobile** — installable web app (manifest + icons); see [PWA_MOBILE_APP_GUIDE.md](./PWA_MOBILE_APP_GUIDE.md) and [MOBILE_UX_CHECKLIST.md](./MOBILE_UX_CHECKLIST.md)
+- **Retention** — daily goal, streak, today progress; see [LEARNING_RETENTION.md](./LEARNING_RETENTION.md)
 
 ## Routes
 
@@ -34,6 +36,12 @@ A Mongolian–Chinese language learning web app. Users learn Chinese through sho
 | `/lessons/[lessonId]/watch` | Watch |
 | `/lessons/[lessonId]/vocabulary` | Vocabulary |
 | `/lessons/[lessonId]/quiz` | Quiz |
+| `/offline` | Offline fallback page |
+| `/dashboard` | Learner dashboard |
+| `/onboarding` | New learner guide |
+| `/help` | FAQ |
+| `/feedback` | Feedback template |
+| `/pricing` | Pricing placeholder |
 | `/profile` | Learning dashboard |
 | `/review` | Daily review |
 | `/login` | Sign in |
@@ -103,6 +111,17 @@ Without Supabase, lessons **1–3** load from `content/` files. Lesson **4** nee
 2. Start/Continue a lesson → Watch → Vocabulary (mark learned) → Quiz (≥70% completes lesson)
 3. **Profile** — see stats; **Review** — see saved words
 4. Header **Demo** → `/lessons/1` for quick access
+
+## PWA / mobile install
+
+The app can be installed on phone or desktop as a standalone web app (PWA).
+
+- **Manifest:** `public/manifest.webmanifest`
+- **Icons:** `public/icons/` (192, 512, maskable)
+- **Offline:** `/offline` and minimal service worker (navigation fallback only)
+
+Install instructions and offline limitations: [PWA_MOBILE_APP_GUIDE.md](./PWA_MOBILE_APP_GUIDE.md)  
+Mobile QA checklist: [MOBILE_UX_CHECKLIST.md](./MOBILE_UX_CHECKLIST.md)
 
 ## Adding new lessons
 
