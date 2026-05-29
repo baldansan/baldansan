@@ -101,6 +101,9 @@ Run these checks on the **production URL**:
 | `/courses/hsk5` | Available lessons only (drafts hidden) |
 | `/lessons/1` | Public lesson detail |
 | `/admin/system-check` | Admin env + Supabase checks (sign in as admin first) |
+| `/admin/production-qa` | Manual launch QA checklist + export (sign in as admin) |
+
+After deployment, run **`/deployment-check`** and **`/admin/production-qa`**. See [PRODUCTION_ROUTE_TESTING.md](./PRODUCTION_ROUTE_TESTING.md).
 
 Also verify:
 
@@ -121,7 +124,7 @@ Also verify:
    - `https://your-domain.com/**`
    - `https://your-domain.com/login`
    - `https://your-domain.com/profile`
-5. Re-test `/deployment-check`, `/login`, and `/admin/system-check`.
+5. Re-test `/deployment-check`, `/login`, `/admin/system-check`, and `/admin/production-qa`.
 
 ---
 
@@ -153,4 +156,5 @@ Also verify:
 - [DEPLOYMENT_PLAN.md](./DEPLOYMENT_PLAN.md)
 - [PRODUCTION_CHECKLIST.md](./PRODUCTION_CHECKLIST.md)
 - [SUPABASE_PRODUCTION_SETUP.md](./SUPABASE_PRODUCTION_SETUP.md)
-- [supabase/verify/README.md](./supabase/verify/README.md)
+- [PRODUCTION_ROUTE_TESTING.md](./PRODUCTION_ROUTE_TESTING.md)
+- [LAUNCH_QA_REPORT_TEMPLATE.md](./LAUNCH_QA_REPORT_TEMPLATE.md)

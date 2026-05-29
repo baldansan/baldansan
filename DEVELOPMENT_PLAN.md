@@ -372,12 +372,12 @@ Phased roadmap from MVP demo to production product.
 
 **Goal:** Deploy Buunduu Surtsgaay safely to production (Vercel + Supabase) with RLS, auth, storage, and admin CMS verified.
 
-**Phase 6 Step 3 — Completed:** Vercel deployment setup prepared.
+**Phase 6 Step 4 — Completed:** Production route testing and launch QA dashboard.
 
-- [vercel.json](./vercel.json) — minimal Next.js config
-- [.env.example](./.env.example) — safe env template
-- [VERCEL_DEPLOYMENT_GUIDE.md](./VERCEL_DEPLOYMENT_GUIDE.md) — connect, env, deploy, Auth URLs
-- `/deployment-check` — public post-deploy smoke test
+- `/admin/production-qa` — manual checklist with localStorage + export
+- [PRODUCTION_ROUTE_TESTING.md](./PRODUCTION_ROUTE_TESTING.md)
+- [LAUNCH_QA_REPORT_TEMPLATE.md](./LAUNCH_QA_REPORT_TEMPLATE.md)
+- Production URL: https://baldansan.vercel.app
 
 **Phase 6 roadmap:**
 
@@ -386,11 +386,11 @@ Phased roadmap from MVP demo to production product.
 | 1 | Production readiness planning | ✅ Completed |
 | 2 | Supabase production verification | ✅ Completed |
 | 3 | Vercel deployment setup | ✅ Completed |
-| 4 | Production route testing | Pending |
+| 4 | Production route testing | ✅ Completed |
 | 5 | Security / RLS final audit | Pending |
 | 6 | Launch candidate | Pending |
 
-**Next:** Phase 6 Step 4 — Production route testing after first deploy.
+**Next:** Phase 6 Step 5 — Security/RLS final audit and launch candidate.
 
 **Exit criteria:** App deployed to Vercel, Supabase production configured, all checklists green, public + admin routes verified.
 

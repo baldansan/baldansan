@@ -7,7 +7,7 @@ Phase 6: production readiness. **Do not deploy until checklists are complete.**
 | 1 | Production readiness planning | ✅ Completed |
 | 2 | Supabase production verification | ✅ Completed |
 | 3 | Vercel deployment setup | ✅ Completed |
-| 4 | Production route testing | Pending |
+| 4 | Production route testing | ✅ Completed |
 | 5 | Security / RLS final audit | Pending |
 | 6 | Launch candidate | Pending |
 
@@ -100,9 +100,20 @@ Repo prepared for manual Vercel deployment:
 3. **Smoke test:** `/deployment-check` — public post-deploy verification route
 4. **Guide:** [VERCEL_DEPLOYMENT_GUIDE.md](./VERCEL_DEPLOYMENT_GUIDE.md) — connect repo, env vars, deploy, Supabase Auth URLs
 
-**Next step:** Phase 6 Step 4 — Production route testing after first deploy.
+**Next step:** Phase 6 Step 5 — Security/RLS final audit and launch candidate.
 
 Do not deploy until Supabase verification (Step 2) is green.
+
+### Phase 6 Step 4 — Production route testing (completed)
+
+Live launch QA dashboard for https://baldansan.vercel.app:
+
+1. **Route:** `/admin/production-qa` — manual checklist (public, admin, auth, Supabase, CMS)
+2. **Persistence:** localStorage key `buunduu-production-qa`
+3. **Export:** JSON/Markdown QA report from admin UI
+4. **Docs:** [PRODUCTION_ROUTE_TESTING.md](./PRODUCTION_ROUTE_TESTING.md), [LAUNCH_QA_REPORT_TEMPLATE.md](./LAUNCH_QA_REPORT_TEMPLATE.md)
+
+Run after every production deploy alongside `/deployment-check` and `/admin/system-check`.
 
 ---
 
