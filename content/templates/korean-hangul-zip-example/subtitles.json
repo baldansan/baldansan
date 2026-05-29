@@ -1,0 +1,38 @@
+[
+  {
+    "start": "00:00",
+    "end": "00:20",
+    "role": "teach",
+    "lessonSection": "vowels-basic",
+    "chinese": "기본 모음 여섯 개를 배웁시다.",
+    "pinyin": "Gibon moeum yeoseot gae-reul baeupsida.",
+    "mongolian": "Зургаан үндсэн эгшиг суръя. Эхлээд сонсоод, дараа нь бичиж давтана."
+  },
+  {
+    "start": "00:21",
+    "end": "00:35",
+    "role": "example",
+    "lessonSection": "vowels-basic",
+    "chinese": "ㅏ, ㅓ, ㅗ, ㅜ, ㅡ, ㅣ",
+    "pinyin": "a, eo, o, u, eu, i",
+    "mongolian": "ㅏ а · ㅓ eo · ㅗ o · ㅜ u · ㅡ eu · ㅣ i"
+  },
+  {
+    "start": "00:36",
+    "end": "00:50",
+    "role": "warning",
+    "lessonSection": "vowels-basic",
+    "chinese": "ㅓ와 ㅗ를 헷갈리지 마세요.",
+    "pinyin": "Eo-wa o-reul hetgalliji maseyo.",
+    "mongolian": "ㅓ (eo) ба ㅗ (o)-г бүү андуураарай — монгол «ө» vs «о»-той адил анхаарах."
+  },
+  {
+    "start": "00:51",
+    "end": "01:05",
+    "role": "pronunciation",
+    "lessonSection": "vowels-basic",
+    "chinese": "아, 어, 오, 우, 으, 이",
+    "pinyin": "a, eo, o, u, eu, i",
+    "mongolian": "Дуугаар давта: а · eo · о · u · eu · i"
+  }
+]

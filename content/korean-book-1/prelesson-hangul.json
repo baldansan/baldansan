@@ -13,13 +13,13 @@
     "courseId": "korean-1",
     "title": "PreLesson — 한글",
     "chineseTitle": "한글",
-    "subtitle": "Хангыль унших суурь — Lesson 1-ээс өмнө заавал үзэх",
-    "description": "Lesson 1-с өмнө солонгос үсэг, эгшиг, гийгүүлэгч, үе бүтээх, 받침 болон үндсэн дуудлагын дүрмийг сурна.",
+    "subtitle": "Солонгос үсэг унших суурь",
+    "description": "Эгшиг, гийгүүлэгч, үе бүтээх, 받침-ийн суурь.",
     "duration": "25 min",
     "status": "draft",
     "orderIndex": 0,
     "mediaStatus": "missing",
-    "sourceNote": "Korean Book 1 — Hangul prelesson. Audio/video pending upload."
+    "sourceNote": "Korean Book 1 — Hangul prelesson. Audio/video pending upload. · lessonType=prelesson"
   },
   "subtitlePreview": [
     {
@@ -83,7 +83,7 @@
       "chinese": "한글",
       "pinyin": "hangeul",
       "mongolian": "хангыль (солонгос үсэг)",
-      "hskLevel": "KR1",
+      "hskLevel": "KR-Beginner",
       "exampleChinese": "한글을 배워요.",
       "exampleMongolian": "Хангыль суръя."
     },
@@ -92,7 +92,7 @@
       "chinese": "모음",
       "pinyin": "moeum",
       "mongolian": "эгшиг үсэг",
-      "hskLevel": "KR1",
+      "hskLevel": "KR-Beginner",
       "exampleChinese": "모음이 많아요.",
       "exampleMongolian": "Эгшиг үсэг олон байна."
     },
@@ -101,7 +101,7 @@
       "chinese": "자음",
       "pinyin": "jaeum",
       "mongolian": "гийгүүлэгч үсэг",
-      "hskLevel": "KR1",
+      "hskLevel": "KR-Beginner",
       "exampleChinese": "자음을 씁니다.",
       "exampleMongolian": "Гийгүүлэгчийг ашиглана."
     },
@@ -110,7 +110,7 @@
       "chinese": "음절",
       "pinyin": "eumjeol",
       "mongolian": "үе (эгшиг + гийгүүлэгчийн багц)",
-      "hskLevel": "KR1",
+      "hskLevel": "KR-Beginner",
       "exampleChinese": "한 음절입니다.",
       "exampleMongolian": "Нэг үе юм."
     },
@@ -119,7 +119,7 @@
       "chinese": "받침",
       "pinyin": "batchim",
       "mongolian": "батчим (үеийн доод гийгүүлэгч)",
-      "hskLevel": "KR1",
+      "hskLevel": "KR-Beginner",
       "exampleChinese": "받침이 있어요.",
       "exampleMongolian": "Батчимтай үе байна."
     },
@@ -128,7 +128,7 @@
       "chinese": "ㅏ",
       "pinyin": "a",
       "mongolian": "эгшиг «а»",
-      "hskLevel": "KR1",
+      "hskLevel": "KR-Beginner",
       "exampleChinese": "아",
       "exampleMongolian": "а"
     },
@@ -137,7 +137,7 @@
       "chinese": "ㅓ",
       "pinyin": "eo",
       "mongolian": "эгшиг «ө» (eo)",
-      "hskLevel": "KR1",
+      "hskLevel": "KR-Beginner",
       "exampleChinese": "어",
       "exampleMongolian": "ө"
     },
@@ -146,7 +146,7 @@
       "chinese": "ㅗ",
       "pinyin": "o",
       "mongolian": "эgшиг «о»",
-      "hskLevel": "KR1",
+      "hskLevel": "KR-Beginner",
       "exampleChinese": "오",
       "exampleMongolian": "о"
     },
@@ -155,7 +155,7 @@
       "chinese": "ㅜ",
       "pinyin": "u",
       "mongolian": "эgшиг «у»",
-      "hskLevel": "KR1",
+      "hskLevel": "KR-Beginner",
       "exampleChinese": "우",
       "exampleMongolian": "у"
     },
@@ -164,7 +164,7 @@
       "chinese": "ㄱ",
       "pinyin": "g/k",
       "mongolian": "гийгүүлэгч «г/к»",
-      "hskLevel": "KR1",
+      "hskLevel": "KR-Beginner",
       "exampleChinese": "가",
       "exampleMongolian": "га"
     },
@@ -173,7 +173,7 @@
       "chinese": "ㄴ",
       "pinyin": "n",
       "mongolian": "гийгүүлэгч «н»",
-      "hskLevel": "KR1",
+      "hskLevel": "KR-Beginner",
       "exampleChinese": "나",
       "exampleMongolian": "на"
     },
@@ -182,7 +182,7 @@
       "chinese": "ㄷ",
       "pinyin": "d/t",
       "mongolian": "гийгүүлэгч «д/т»",
-      "hskLevel": "KR1",
+      "hskLevel": "KR-Beginner",
       "exampleChinese": "다",
       "exampleMongolian": "да"
     },
@@ -191,7 +191,7 @@
       "chinese": "ㄹ",
       "pinyin": "r/l",
       "mongolian": "гийгүүлэгч «р/л»",
-      "hskLevel": "KR1",
+      "hskLevel": "KR-Beginner",
       "exampleChinese": "라",
       "exampleMongolian": "ра"
     },
@@ -200,7 +200,7 @@
       "chinese": "ㅁ",
       "pinyin": "m",
       "mongolian": "гийгүүлэгч «м»",
-      "hskLevel": "KR1",
+      "hskLevel": "KR-Beginner",
       "exampleChinese": "마",
       "exampleMongolian": "ма"
     },
@@ -209,7 +209,7 @@
       "chinese": "ㅂ",
       "pinyin": "b/p",
       "mongolian": "гийгүүлэгч «б/п»",
-      "hskLevel": "KR1",
+      "hskLevel": "KR-Beginner",
       "exampleChinese": "바",
       "exampleMongolian": "ба"
     },
@@ -218,7 +218,7 @@
       "chinese": "ㅅ",
       "pinyin": "s",
       "mongolian": "гийгүүлэгч «с»",
-      "hskLevel": "KR1",
+      "hskLevel": "KR-Beginner",
       "exampleChinese": "사",
       "exampleMongolian": "са"
     },
@@ -227,7 +227,7 @@
       "chinese": "ㅇ",
       "pinyin": "ng/-",
       "mongolian": "гийгүүлэгч «нг» эсвэл эхний дэм (дутуу)",
-      "hskLevel": "KR1",
+      "hskLevel": "KR-Beginner",
       "exampleChinese": "아 (ㅇ + ㅏ)",
       "exampleMongolian": "ㅇ + ㅏ = а"
     },
@@ -236,7 +236,7 @@
       "chinese": "가",
       "pinyin": "ga",
       "mongolian": "га (ㄱ+ㅏ)",
-      "hskLevel": "KR1",
+      "hskLevel": "KR-Beginner",
       "exampleChinese": "가방",
       "exampleMongolian": "цүнх (gabang)"
     },
@@ -245,7 +245,7 @@
       "chinese": "한",
       "pinyin": "han",
       "mongolian": "хан (ㅎ+ㅏ+ㄴ)",
-      "hskLevel": "KR1",
+      "hskLevel": "KR-Beginner",
       "exampleChinese": "한국",
       "exampleMongolian": "Солонгос (Hanguk)"
     }
@@ -268,7 +268,12 @@
       "id": "kh_q2",
       "type": "multiple_choice",
       "question": "「모음」 гэдэг нь юу вэ?",
-      "options": ["эгшиг үсэг", "гийгүүлэгч", "тоо", "тэмдэг"],
+      "options": [
+        "эгшиг үсэг",
+        "гийгүүлэгч",
+        "тоо",
+        "тэмдэг"
+      ],
       "correctAnswer": "эгшиг үсэг",
       "explanation": "모음 = vowel, эгшиг."
     },
@@ -276,7 +281,12 @@
       "id": "kh_q3",
       "type": "multiple_choice",
       "question": "「자음」 гэдэг нь юу вэ?",
-      "options": ["гийгүүлэгч үсэг", "эгшиг", "үе", "өгүүлбэр"],
+      "options": [
+        "гийгүүлэгч үсэг",
+        "эгшиг",
+        "үе",
+        "өгүүлбэр"
+      ],
       "correctAnswer": "гийгүүлэгч үсэг",
       "explanation": "자음 = consonant."
     },
@@ -284,7 +294,12 @@
       "id": "kh_q4",
       "type": "multiple_choice",
       "question": "「가」 үеийг хэрхэн бүтээх вэ?",
-      "options": ["ㄱ + ㅏ", "ㄴ + ㅏ", "ㄱ + ㅗ", "ㅁ + ㅏ"],
+      "options": [
+        "ㄱ + ㅏ",
+        "ㄴ + ㅏ",
+        "ㄱ + ㅗ",
+        "ㅁ + ㅏ"
+      ],
       "correctAnswer": "ㄱ + ㅏ",
       "explanation": "가 = ㄱ (гийгүүлэгч) + ㅏ (эгшиг)."
     },
@@ -292,7 +307,12 @@
       "id": "kh_q5",
       "type": "cloze",
       "question": "한 ____ 은 표음 문자입니다.",
-      "options": ["글", "국", "사", "교"],
+      "options": [
+        "글",
+        "국",
+        "사",
+        "교"
+      ],
       "correctAnswer": "글",
       "explanation": "한글은 표음 문자입니다 = Хангыль нь дуудлагын бичиг."
     },
@@ -313,7 +333,12 @@
       "id": "kh_q7",
       "type": "multiple_choice",
       "question": "「ㅏ」-ийн romanization аль вэ?",
-      "options": ["a", "o", "u", "i"],
+      "options": [
+        "a",
+        "o",
+        "u",
+        "i"
+      ],
       "correctAnswer": "a",
       "explanation": "ㅏ → a"
     },
@@ -321,7 +346,12 @@
       "id": "kh_q8",
       "type": "multiple_choice",
       "question": "「한국」 дэх 「한」-ийн утга хамгийн ойрхон:",
-      "options": ["Солонгос (Han/Korean)", "Нэг", "Хүн", "Хэл"],
+      "options": [
+        "Солонгос (Han/Korean)",
+        "Нэг",
+        "Хүн",
+        "Хэл"
+      ],
       "correctAnswer": "Солонгос (Han/Korean)",
       "explanation": "한국 = Солонгос улс; 한 = Korean/Han."
     }

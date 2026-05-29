@@ -22,6 +22,8 @@ export type NormalizedZipManifest = {
   source?: string;
   hasAudio?: boolean;
   hasImages?: boolean;
+  contentType?: string;
+  lessonType?: string;
 };
 
 export type NormalizedZipLesson = {
@@ -44,6 +46,8 @@ export type NormalizedZipLesson = {
   thumbnailFile?: string;
   videoFile?: string;
   sourceNote?: string;
+  contentType?: string;
+  lessonType?: string;
 };
 
 export type NormalizedZipVocabulary = {
@@ -65,6 +69,9 @@ export type NormalizedZipQuiz = {
   explanation?: string;
   skillTags?: string[];
   difficulty?: string;
+  lessonSection?: string;
+  phase?: string;
+  orderIndex?: number;
 };
 
 function isRecord(value: unknown): value is Record<string, unknown> {
@@ -143,6 +150,8 @@ export function normalizeZipManifest(
     source: trim(raw.source) || undefined,
     hasAudio: raw.hasAudio === true,
     hasImages: raw.hasImages === true,
+    contentType: trim(raw.contentType ?? raw.content_type) || undefined,
+    lessonType: trim(raw.lessonType ?? raw.lesson_type) || undefined,
   };
 }
 
@@ -206,6 +215,8 @@ export function normalizeZipLesson(
     thumbnailFile: trim(raw.thumbnailFile ?? raw.thumbnail_file) || undefined,
     videoFile: trim(raw.videoFile ?? raw.video_file) || undefined,
     sourceNote: trim(raw.sourceNote ?? raw.source_note) || undefined,
+    contentType: trim(raw.contentType ?? raw.content_type) || undefined,
+    lessonType: trim(raw.lessonType ?? raw.lesson_type) || undefined,
   };
 }
 
@@ -282,6 +293,14 @@ export function normalizeZipQuizRow(
   errors: string[],
   warnings: string[]
 ): NormalizedZipQuiz | null {
+  const gameType = trim(item.gameType ?? item.game_type);
+  if (gameType) {
+    warnings.push(
+      `quiz[${index}]: gameType "${gameType}" is not imported as quiz — app games generate from vocabulary. Remove or keep as author note only.`
+    );
+    return null;
+  }
+
   const id = trim(item.id);
   const type = trim(item.type).toLowerCase().replace(/\s+/g, "_");
   const question = trim(item.question ?? item.prompt);
@@ -305,6 +324,14 @@ export function normalizeZipQuizRow(
     ? item.skillTags.filter((tag): tag is string => typeof tag === "string")
     : undefined;
   const difficulty = trim(item.difficulty) || undefined;
+  const lessonSection =
+    trim(item.lessonSection ?? item.lesson_section ?? item.section) || undefined;
+  const phase = trim(item.phase) || undefined;
+  const orderRaw = item.orderIndex ?? item.order_index;
+  const orderIndex =
+    typeof orderRaw === "number" && Number.isFinite(orderRaw)
+      ? orderRaw
+      : undefined;
 
   if (!skillTags?.length) {
     warnings.push(`quiz[${index}]: skillTags missing.`);
@@ -343,6 +370,9 @@ export function normalizeZipQuizRow(
     explanation: trim(item.explanation) || undefined,
     skillTags,
     difficulty,
+    lessonSection,
+    phase,
+    orderIndex,
   };
 }
 
@@ -390,11 +420,17 @@ export function mapNormalizedQuizToBulkImport(
   rows: NormalizedZipQuiz[]
 ): Record<string, unknown>[] {
   return rows.map((row) => ({
+    id: row.id,
     type: row.type,
     question: row.question,
     options: row.options,
     correctAnswer: row.correctAnswer,
     explanation: row.explanation,
+    skillTags: row.skillTags,
+    difficulty: row.difficulty,
+    lessonSection: row.lessonSection,
+    phase: row.phase,
+    orderIndex: row.orderIndex,
   }));
 }
 
