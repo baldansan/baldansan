@@ -4,6 +4,16 @@ A Mongolian–Chinese language learning web app. Users learn Chinese through sho
 
 **Current:** Supabase-first lesson content with local fallback, **Supabase Auth** + account progress, and **Phase 5 Admin CMS** — full content management, analytics, tasks, activity log, rollback, and release workflow at `/admin`.
 
+## v1.0 learner launch
+
+**Production URL:** https://baldansan.vercel.app
+
+**In scope:** Home, courses, HSK5 lesson flow (watch → vocabulary → quiz), review, dashboard, profile, login/signup, progress save, admin CMS for content fixes.
+
+**Out of scope for v1.0:** Payment, email campaigns, full B2B SaaS, native app.
+
+See [V1_LAUNCH_STABILIZATION.md](./V1_LAUNCH_STABILIZATION.md), [V1_LAUNCH_BLOCKERS.md](./V1_LAUNCH_BLOCKERS.md), [V1_STABILIZATION_REPORT.md](./V1_STABILIZATION_REPORT.md).
+
 ## Tech stack
 
 - [Next.js](https://nextjs.org) 16 (App Router)

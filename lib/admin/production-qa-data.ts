@@ -5,6 +5,7 @@ export type QaCheckStatus = "not_checked" | "pass" | "warning" | "fail";
 
 export type QaCheckSectionId =
   | "public"
+  | "v1"
   | "admin"
   | "auth"
   | "supabase"
@@ -141,6 +142,64 @@ export const QA_CHECKLIST: QaCheckItemDefinition[] = [
     purpose: "Learned words review",
     expected: "Page renders",
     productionPath: "/review",
+  },
+  {
+    id: "public-feedback",
+    section: "public",
+    label: "Feedback",
+    route: "/feedback",
+    purpose: "Feedback page",
+    expected: "Form loads",
+    productionPath: "/feedback",
+  },
+  // v1.0 learner launch
+  {
+    id: "v1-public-routes",
+    section: "v1",
+    label: "Public route pass",
+    purpose: "Core learner routes load on production",
+    expected: "Home, courses, HSK5, lesson 1 flow — no 500 errors",
+    productionPath: "/courses/hsk5",
+  },
+  {
+    id: "v1-auth",
+    section: "v1",
+    label: "Auth pass",
+    purpose: "Login, signup, session persist",
+    expected: "Login works; dashboard accessible after sign-in",
+    productionPath: "/login",
+  },
+  {
+    id: "v1-progress",
+    section: "v1",
+    label: "Progress pass",
+    purpose: "Vocabulary + quiz + lesson progress save",
+    expected: "Guest local + account sync when logged in",
+    productionPath: "/lessons/1/quiz",
+  },
+  {
+    id: "v1-mobile",
+    section: "v1",
+    label: "Mobile pass",
+    purpose: "375px layout on core pages",
+    expected: "No broken nav, readable CTAs, lesson step bar usable",
+    productionPath: "/",
+  },
+  {
+    id: "v1-draft-hidden",
+    section: "v1",
+    label: "Draft lessons hidden",
+    purpose: "Public catalog excludes draft",
+    expected: "Draft not in HSK5 list; direct draft URL shows unavailable",
+    productionPath: "/courses/hsk5",
+  },
+  {
+    id: "v1-no-blockers",
+    section: "v1",
+    label: "No launch blockers",
+    purpose: "Critical blockers from V1_LAUNCH_BLOCKERS.md",
+    expected: "All critical items pass; see V1_STABILIZATION_REPORT.md",
+    productionPath: "/deployment-check",
   },
   // Admin routes
   {
@@ -487,6 +546,7 @@ export const QA_CHECKLIST: QaCheckItemDefinition[] = [
 
 export const QA_SECTION_LABELS: Record<QaCheckSectionId, string> = {
   public: "Public route checklist",
+  v1: "v1.0 learner launch checklist",
   admin: "Admin route checklist",
   auth: "Auth checklist",
   supabase: "Supabase checklist",

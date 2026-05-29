@@ -65,6 +65,7 @@ Use all three together. Automated checks catch connectivity; manual QA catches U
 Checklist sections:
 
 - **Public routes** — learner pages
+- **v1.0 learner launch** — public route, auth, progress, mobile, draft visibility, blockers
 - **Admin routes** — CMS and analytics
 - **Auth** — login, logout, admin guard, Supabase redirects
 - **Supabase** — reads, progress, tasks, activity, storage

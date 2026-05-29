@@ -138,7 +138,7 @@ export function LearnerDashboard({ hsk5LessonIds }: Props) {
       <DashboardEngagementQuickActions />
 
       <section className="rounded-2xl bg-emerald-600 p-6 text-white sm:p-8">
-        <h2 className="text-lg font-semibold">Continue learning</h2>
+        <h2 className="text-lg font-semibold">Үргэлжлүүлэх</h2>
         <p className="mt-2 text-sm text-emerald-50">
           Дараагийн хичээлээ үргэлжлүүлээрэй.
         </p>
@@ -214,13 +214,13 @@ export function LearnerDashboard({ hsk5LessonIds }: Props) {
           href={continueHref}
           className="rounded-full bg-emerald-500 px-5 py-2.5 text-sm font-semibold text-white hover:bg-emerald-600"
         >
-          Continue learning
+          Үргэлжлүүлэх
         </Link>
         <Link
           href={lessonVocabularyPath(hsk5LessonIds[0] ?? "1")}
           className="rounded-full border border-emerald-200 bg-emerald-50 px-5 py-2.5 text-sm font-semibold text-emerald-800 hover:bg-emerald-100"
         >
-          Review vocabulary
+          Үг давтах
         </Link>
         <Link
           href="/courses"

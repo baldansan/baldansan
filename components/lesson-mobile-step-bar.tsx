@@ -49,7 +49,7 @@ export function LessonMobileStepBar({
   const next = nextStep(current);
 
   return (
-    <div className="sticky bottom-20 z-20 -mx-4 border-t border-slate-200 bg-white/95 px-4 py-3 backdrop-blur md:bottom-0">
+    <div className="sticky bottom-20 z-20 -mx-4 border-t border-slate-200 bg-white/95 px-4 py-3 backdrop-blur md:bottom-0 md:static md:mx-0 md:border-0 md:bg-transparent md:px-0 md:py-0">
       <div className="flex gap-1 overflow-x-auto pb-1">
         {STEPS.map((step) => {
           const active = step.id === current;
@@ -73,7 +73,7 @@ export function LessonMobileStepBar({
           href={coursePath(courseId)}
           className="rounded-full border border-slate-200 px-3 py-1.5 text-xs font-semibold text-slate-600"
         >
-          Back to course
+          Курс руу буцах
         </Link>
         {next ? (
           <Link

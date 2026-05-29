@@ -146,7 +146,7 @@ export default async function Home() {
           href="/courses/hsk5"
           className="mt-6 inline-flex rounded-full bg-white px-8 py-3 text-sm font-semibold text-emerald-700 hover:bg-emerald-50"
         >
-          Start learning
+          Суралцаж эхлэх
         </Link>
       </section>
     </PublicPageShell>

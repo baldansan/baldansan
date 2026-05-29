@@ -25,7 +25,7 @@ export function Hsk5ContinueLearning({ lessonIds }: Props) {
 
   return (
     <section className="rounded-2xl bg-emerald-600 p-5 text-white sm:p-6">
-      <h2 className="text-lg font-semibold">Continue learning</h2>
+      <h2 className="text-lg font-semibold">Үргэлжлүүлэх</h2>
       <p className="mt-2 text-sm text-emerald-50">
         Дараагийн хичээл рүү шууд орно.
       </p>

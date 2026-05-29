@@ -54,7 +54,7 @@ const loggedInItems: NavItem[] = [
   },
   {
     href: "/dashboard",
-    label: "Dash",
+    label: "Самбар",
     key: "dashboard",
     match: (p) => p.startsWith("/dashboard"),
   },

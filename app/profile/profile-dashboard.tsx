@@ -326,7 +326,7 @@ export function ProfileDashboard() {
                 href="/courses/hsk5"
                 className="rounded-full bg-emerald-500 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-emerald-600"
               >
-                Start learning
+                Суралцаж эхлэх
               </Link>
             }
           />
@@ -361,7 +361,7 @@ export function ProfileDashboard() {
 
             <section className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-emerald-200 sm:p-6">
               <h2 className="text-lg font-semibold text-slate-900">
-                Continue learning
+                Үргэлжлүүлэх
               </h2>
               <p className="mt-2 text-sm text-slate-600">
                 {lastActiveLessonId

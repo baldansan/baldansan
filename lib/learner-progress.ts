@@ -46,7 +46,7 @@ export async function resolveContinueLearning(
     return {
       lessonId: firstIncomplete,
       href: lessonPath(firstIncomplete),
-      label: status === "started" ? "Continue learning" : "Start learning",
+      label: status === "started" ? "Үргэлжлүүлэх" : "Суралцаж эхлэх",
       reason: "incomplete",
     };
   }
@@ -56,7 +56,7 @@ export async function resolveContinueLearning(
     return {
       lessonId: lastActive,
       href: lessonPath(lastActive),
-      label: "Review last lesson",
+      label: "Сүүлийн хичээлээ үргэлжлүүлэх",
       reason: "last_active",
     };
   }
