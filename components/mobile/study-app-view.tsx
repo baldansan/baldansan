@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
 import { MobileCard } from "@/components/mobile/mobile-card";
 import { MobilePageHeader } from "@/components/mobile/mobile-page-header";
@@ -30,12 +30,40 @@ export function StudyAppView({ lessons }: Props) {
     void load();
   }, [lessons]);
 
+  const completedCount = useMemo(
+    () =>
+      lessons.filter(
+        (l) => (statusByLesson[l.id] ?? "not_started") === "completed"
+      ).length,
+    [lessons, statusByLesson]
+  );
+  const progressPercent =
+    lessons.length > 0
+      ? Math.round((completedCount / lessons.length) * 100)
+      : 0;
+
   return (
     <MobileAppShell activeTab="study">
       <MobilePageHeader
         title="Дасгалжуулалтын төв"
         subtitle="Чадвараа сонгон бататгаж, түвшин ахиарай"
       />
+
+      <div className="app-course-card mb-5 p-4">
+        <p className="text-xs font-semibold uppercase tracking-wide text-orange-100">
+          HSK 5 явц
+        </p>
+        <p className="mt-1 text-2xl font-bold">{progressPercent}%</p>
+        <p className="text-sm text-orange-50">
+          {completedCount}/{lessons.length} хичээл дууссан
+        </p>
+        <div className="mt-3 h-2.5 overflow-hidden rounded-full bg-white/25">
+          <div
+            className="h-full rounded-full bg-white transition-all"
+            style={{ width: `${progressPercent}%` }}
+          />
+        </div>
+      </div>
 
       <Link href="/review" className="mb-5 block">
         <MobileCard className="flex items-center justify-between gap-3">

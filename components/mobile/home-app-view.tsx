@@ -127,8 +127,8 @@ export function HomeAppView({ lessons, courseTitle, courseSubtitle }: Props) {
       </section>
 
       <Link href={continueHref} className="mb-5 block">
-        <MobileCard className="flex items-center gap-3 !p-4">
-          <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-emerald-500 text-xl text-white">
+        <MobileCard className="flex items-center gap-3 !p-4 !shadow-[var(--app-shadow)]">
+          <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-[var(--app-primary)] text-xl text-white shadow-sm">
             ▶
           </div>
           <div className="min-w-0 flex-1">
@@ -160,27 +160,27 @@ export function HomeAppView({ lessons, courseTitle, courseSubtitle }: Props) {
         </div>
       </section>
 
-      <MobileCard className="mb-5 !bg-gradient-to-br from-orange-500 to-orange-600 !border-orange-400 !text-white">
+      <div className="app-course-card mb-5 p-4">
         <p className="text-xs font-semibold uppercase tracking-wide text-orange-100">
           Идэвхтэй курс
         </p>
         <h3 className="mt-1 text-lg font-bold">{courseTitle}</h3>
         <p className="mt-1 text-sm text-orange-50">{courseSubtitle}</p>
         <div className="mt-3 flex items-center gap-2">
-          <span className="rounded-full bg-white/20 px-2.5 py-0.5 text-xs font-semibold">
+          <span className="rounded-full bg-white/25 px-2.5 py-0.5 text-xs font-bold">
             {progressPercent}%
           </span>
           <span className="text-xs text-orange-100">
             {completedCount}/{lessonIds.length} хичээл
           </span>
         </div>
-        <div className="mt-3 h-2 overflow-hidden rounded-full bg-white/25">
+        <div className="mt-3 h-2.5 overflow-hidden rounded-full bg-white/25">
           <div
             className="h-full rounded-full bg-white transition-all"
             style={{ width: `${progressPercent}%` }}
           />
         </div>
-      </MobileCard>
+      </div>
 
       <section>
         <h2 className="mb-3 text-sm font-bold text-[var(--app-text)]">
@@ -198,11 +198,11 @@ export function HomeAppView({ lessons, courseTitle, courseSubtitle }: Props) {
                       🔒
                     </div>
                   ) : state === "active" ? (
-                    <div className="flex h-10 w-10 items-center justify-center rounded-full bg-emerald-500 text-sm font-bold text-white ring-4 ring-emerald-100">
+                    <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[var(--app-primary)] text-sm font-bold text-white ring-4 ring-[var(--app-primary-light)]">
                       {lesson.id}
                     </div>
                   ) : (
-                    <div className="flex h-10 w-10 items-center justify-center rounded-full bg-orange-500 text-sm font-bold text-white">
+                    <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[var(--app-orange)] text-sm font-bold text-white shadow-sm">
                       {lesson.id}
                     </div>
                   )}
@@ -223,7 +223,7 @@ export function HomeAppView({ lessons, courseTitle, courseSubtitle }: Props) {
                   ) : (
                     <Link
                       href={lessonPath(lesson.id)}
-                      className="block rounded-[16px] border border-[var(--app-border)] bg-white p-3 shadow-sm transition-colors active:bg-slate-50"
+                      className="app-card block p-3 transition-colors active:bg-slate-50"
                     >
                       <p className="truncate text-sm font-semibold text-[var(--app-text)]">
                         {lesson.chineseTitle}

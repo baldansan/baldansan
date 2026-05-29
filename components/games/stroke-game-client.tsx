@@ -158,7 +158,7 @@ export function StrokeGameClient({ lessonId, vocabulary }: Props) {
             <button
               type="button"
               onClick={handleNext}
-              className="mt-4 min-h-[44px] w-full rounded-full bg-emerald-500 py-3 text-sm font-semibold text-white"
+              className="mt-4 min-h-[48px] w-full app-btn-primary py-3"
             >
               Дараах
             </button>

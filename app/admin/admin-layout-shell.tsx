@@ -1,7 +1,8 @@
 "use client";
 
-import { AdminHeader } from "@/components/admin/admin-header";
 import { AdminGuard } from "@/components/admin/admin-guard";
+import { AdminSidebar } from "@/components/admin/admin-sidebar";
+import { AdminTopbar } from "@/components/admin/admin-topbar";
 
 export function AdminLayoutShell({
   children,
@@ -9,11 +10,14 @@ export function AdminLayoutShell({
   children: React.ReactNode;
 }) {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-emerald-50/40 via-white to-white text-slate-900">
-      <AdminHeader />
-      <main className="mx-auto flex w-full max-w-5xl flex-col gap-6 px-4 pb-16 pt-2 sm:px-6">
-        <AdminGuard>{children}</AdminGuard>
-      </main>
+    <div className="admin-layout flex min-h-screen">
+      <AdminSidebar />
+      <div className="flex min-w-0 flex-1 flex-col">
+        <AdminTopbar />
+        <main className="admin-main flex-1 overflow-x-hidden">
+          <AdminGuard>{children}</AdminGuard>
+        </main>
+      </div>
     </div>
   );
 }

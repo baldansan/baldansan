@@ -17,10 +17,10 @@ export function MobileAppShell({
   mainClassName = "",
 }: Props) {
   return (
-    <div className="min-h-screen bg-[var(--app-outer)] flex justify-center">
-      <div className="relative flex w-full max-w-[430px] min-h-screen flex-col border-x border-slate-200/70 bg-[var(--app-bg)] shadow-[0_0_40px_rgba(15,23,42,0.08)]">
+    <div className="min-h-screen bg-[var(--app-outer)] flex justify-center px-0 sm:px-4">
+      <div className="app-shell-frame">
         <main
-          className={`flex-1 overflow-x-hidden px-4 pt-4 ${
+          className={`flex-1 overflow-x-hidden px-4 pt-5 ${
             showBottomNav ? "pb-24" : "pb-6"
           } ${mainClassName}`}
         >

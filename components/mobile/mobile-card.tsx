@@ -24,7 +24,7 @@ export function MobileCard({
     <Tag
       type={onClick ? "button" : undefined}
       onClick={onClick}
-      className={`rounded-[20px] border border-[var(--app-border)] bg-[var(--app-card)] shadow-sm ${paddingClass[padding]} ${onClick ? "w-full text-left transition-colors active:bg-slate-50" : ""} ${className}`}
+      className={`app-card ${paddingClass[padding]} ${onClick ? "w-full text-left transition-colors active:bg-slate-50" : ""} ${className}`}
     >
       {children}
     </Tag>

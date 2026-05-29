@@ -17,7 +17,7 @@ export function GameEmptyState({ message, lessonId }: Props) {
         {lessonId ? (
           <Link
             href={`/lessons/${lessonId}/vocabulary`}
-            className="min-h-[44px] rounded-full bg-emerald-500 px-5 py-3 text-sm font-semibold text-white"
+            className="min-h-[44px] app-btn-primary px-5 py-3"
           >
             Үгийн сан үзэх
           </Link>

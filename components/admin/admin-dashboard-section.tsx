@@ -8,11 +8,11 @@ type Props = {
 
 export function AdminDashboardSection({ title, description, children }: Props) {
   return (
-    <section className="flex flex-col gap-4">
+    <section className="admin-panel flex flex-col gap-4 p-5 sm:p-6">
       <div>
-        <h2 className="text-lg font-semibold text-slate-900">{title}</h2>
+        <h2 className="admin-section-title">{title}</h2>
         {description ? (
-          <p className="mt-1 text-sm text-slate-600">{description}</p>
+          <p className="admin-section-desc">{description}</p>
         ) : null}
       </div>
       {children}

@@ -87,7 +87,7 @@ export function ProfileAppView() {
           </p>
           <Link
             href="/login"
-            className="mt-6 inline-flex min-h-[44px] w-full items-center justify-center rounded-full bg-emerald-500 px-6 py-3 text-sm font-semibold text-white"
+            className="mt-6 inline-flex min-h-[44px] w-full items-center justify-center app-btn-primary px-6 py-3"
           >
             Нэвтрэх
           </Link>
@@ -133,15 +133,13 @@ export function ProfileAppView() {
 
       <div className="mb-5 grid grid-cols-2 gap-2">
         {[
-          { label: "Нийт XP", value: completedLessons * 100 },
-          { label: "Сурсан үг", value: learnedWords },
-          { label: "Эзэмшсэн", value: completedLessons },
-          { label: "Сэргэлт", value: streak },
+          { label: "Нийт XP", value: completedLessons * 100, accent: "text-[var(--app-purple-dark)]" },
+          { label: "Сурсан үг", value: learnedWords, accent: "text-[var(--app-primary-dark)]" },
+          { label: "Эзэмшсэн", value: completedLessons, accent: "text-[var(--app-orange-dark)]" },
+          { label: "Сэргэлт", value: streak, accent: "text-[var(--app-blue)]" },
         ].map((stat) => (
           <MobileCard key={stat.label} padding="sm" className="text-center !p-3">
-            <p className="text-lg font-bold text-[var(--app-text)]">
-              {stat.value}
-            </p>
+            <p className={`text-lg font-bold ${stat.accent}`}>{stat.value}</p>
             <p className="text-[10px] text-[var(--app-muted)]">{stat.label}</p>
           </MobileCard>
         ))}

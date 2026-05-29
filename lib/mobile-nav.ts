@@ -24,7 +24,8 @@ export const MOBILE_NAV_ITEMS: MobileNavItem[] = [
     match: (p) =>
       p.startsWith("/study") ||
       p.startsWith("/review") ||
-      p.startsWith("/courses"),
+      p.startsWith("/courses") ||
+      p.startsWith("/lessons"),
   },
   {
     id: "kanji",

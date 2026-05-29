@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { AdminPageHeader } from "@/components/admin/admin-page-header";
 import { LessonEditForm } from "@/components/admin/lesson-edit-form";
 import { LessonActivityCard } from "@/components/admin/lesson-activity-card";
 import { LessonTasksCard } from "@/components/admin/lesson-tasks-card";
@@ -60,7 +61,11 @@ export default async function AdminEditLessonPage({ params }: Props) {
   const lessonTasks = await getAdminTasksForLesson(normalizedId);
 
   return (
-    <div className="flex flex-col gap-8">
+    <div className="flex flex-col gap-6">
+      <AdminPageHeader
+        title={`Edit Lesson ${normalizedId}`}
+        description={lesson.title}
+      />
       <LessonTasksCard lessonId={normalizedId} tasks={lessonTasks} />
       <LessonActivityCard lessonId={normalizedId} />
       <LessonEditForm
