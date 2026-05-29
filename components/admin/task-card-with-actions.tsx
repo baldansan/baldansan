@@ -72,6 +72,7 @@ const categoryLabels: Record<AdminTask["category"], string> = {
   analytics: "Analytics",
   backup: "Backup",
   system: "System",
+  b2b: "B2B",
 };
 
 type Props = {

@@ -59,6 +59,12 @@ export function PublicNavLinks({ active, className = "" }: Props) {
         </>
       ) : null}
       <Link
+        href="/schools"
+        className={`hidden lg:inline ${linkClass(active === "help")}`}
+      >
+        Schools
+      </Link>
+      <Link
         href="/help"
         className={`hidden sm:inline ${linkClass(active === "help")}`}
       >

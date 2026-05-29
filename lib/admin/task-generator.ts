@@ -24,7 +24,8 @@ export type AdminTaskCategory =
   | "release"
   | "analytics"
   | "backup"
-  | "system";
+  | "system"
+  | "b2b";
 
 export type AdminTaskSeverity = "critical" | "warning" | "info" | "success";
 
@@ -67,6 +68,12 @@ export type AdminTaskGeneratorInput = {
   warnings?: string[];
   limitedByRls?: boolean;
   supabaseConfigured?: boolean;
+  b2bCrm?: {
+    newInquiryCount: number;
+    demoScheduledCount: number;
+    pilotOrgCount: number;
+    migrationPending: boolean;
+  };
 };
 
 export type AdminTaskSummary = {
@@ -620,6 +627,69 @@ function generateSystemTasks(
       break;
     }
   }
+
+  generateB2bCrmTasks(tasks, input.b2bCrm);
+}
+
+function generateB2bCrmTasks(
+  tasks: AdminTask[],
+  b2bCrm?: AdminTaskGeneratorInput["b2bCrm"]
+): void {
+  if (!b2bCrm) return;
+
+  if (b2bCrm.migrationPending) {
+    pushTask(tasks, {
+      id: buildTaskKey("b2b", "migration-pending", undefined),
+      category: "b2b",
+      severity: "warning",
+      title: "B2B CRM migration pending",
+      description:
+        "Run supabase/migrations/012_school_organizations_b2b_crm.sql for inquiries and organizations.",
+      actionLabel: "B2B CRM",
+      actionHref: "/admin/b2b",
+      createdFrom: "b2b.migrationPending",
+    });
+    return;
+  }
+
+  if (b2bCrm.newInquiryCount > 0) {
+    pushTask(tasks, {
+      id: buildTaskKey("b2b", "new-inquiries", undefined),
+      category: "b2b",
+      severity: "warning",
+      title: `${b2bCrm.newInquiryCount} new B2B inquir${b2bCrm.newInquiryCount === 1 ? "y" : "ies"} not contacted`,
+      description: "Review and update inquiry status in B2B CRM.",
+      actionLabel: "View inquiries",
+      actionHref: "/admin/b2b/inquiries",
+      createdFrom: "b2b.newInquiry",
+    });
+  }
+
+  if (b2bCrm.demoScheduledCount > 0) {
+    pushTask(tasks, {
+      id: buildTaskKey("b2b", "demo-scheduled", undefined),
+      category: "b2b",
+      severity: "info",
+      title: `${b2bCrm.demoScheduledCount} demo scheduled inquir${b2bCrm.demoScheduledCount === 1 ? "y" : "ies"}`,
+      description: "Follow up after demo and update pipeline status.",
+      actionLabel: "B2B CRM",
+      actionHref: "/admin/b2b",
+      createdFrom: "b2b.demoScheduled",
+    });
+  }
+
+  if (b2bCrm.pilotOrgCount > 0) {
+    pushTask(tasks, {
+      id: buildTaskKey("b2b", "pilot-orgs", undefined),
+      category: "b2b",
+      severity: "info",
+      title: `${b2bCrm.pilotOrgCount} active/pilot organization${b2bCrm.pilotOrgCount === 1 ? "" : "s"}`,
+      description: "Review pilot organizations and member setup.",
+      actionLabel: "Organizations",
+      actionHref: "/admin/b2b/organizations",
+      createdFrom: "b2b.pilotOrg",
+    });
+  }
 }
 
 export function generateAdminTasks(input: AdminTaskGeneratorInput): AdminTask[] {
@@ -685,6 +755,7 @@ export function groupTasksByCategory(
     analytics: [],
     backup: [],
     system: [],
+    b2b: [],
   };
 
   for (const task of tasks) {

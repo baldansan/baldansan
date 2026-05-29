@@ -26,6 +26,12 @@ export function AdminHeader({
           {backLabel}
         </Link>
         <Link
+          href="/admin/b2b"
+          className="text-slate-600 transition-colors hover:text-emerald-600"
+        >
+          B2B CRM
+        </Link>
+        <Link
           href="/admin/activity"
           className="text-slate-600 transition-colors hover:text-emerald-600"
         >

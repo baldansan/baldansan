@@ -25,6 +25,8 @@ A Mongolian–Chinese language learning web app. Users learn Chinese through sho
 - **PWA / mobile** — installable web app (manifest + icons); see [PWA_MOBILE_APP_GUIDE.md](./PWA_MOBILE_APP_GUIDE.md) and [MOBILE_UX_CHECKLIST.md](./MOBILE_UX_CHECKLIST.md)
 - **Retention** — daily goal, streak; [LEARNING_RETENTION.md](./LEARNING_RETENTION.md), [RETENTION_SUPABASE_SYNC.md](./RETENTION_SUPABASE_SYNC.md)
 - **Engagement** — reminders, achievements, weekly report; [ENGAGEMENT_SYSTEM.md](./ENGAGEMENT_SYSTEM.md), [ACHIEVEMENT_RULES.md](./ACHIEVEMENT_RULES.md), [REMINDER_SYSTEM_PLAN.md](./REMINDER_SYSTEM_PLAN.md)
+- **B2B / schools** — school landing, teacher package, demo, inquiry CRM, pilot onboarding, bulk CSV import, invitation links, optional email delivery; [B2B_SCHOOL_PACKAGE.md](./B2B_SCHOOL_PACKAGE.md), [B2B_CRM_WORKFLOW.md](./B2B_CRM_WORKFLOW.md), [ORGANIZATION_ACCOUNTS.md](./ORGANIZATION_ACCOUNTS.md), [TEACHER_ONBOARDING.md](./TEACHER_ONBOARDING.md), [SCHOOL_INQUIRY_WORKFLOW.md](./SCHOOL_INQUIRY_WORKFLOW.md), [B2B_PILOT_ONBOARDING.md](./B2B_PILOT_ONBOARDING.md), [CSV_IMPORT_GUIDE.md](./CSV_IMPORT_GUIDE.md), [BULK_INVITE_WORKFLOW.md](./BULK_INVITE_WORKFLOW.md), [INVITATION_WORKFLOW.md](./INVITATION_WORKFLOW.md), [EMAIL_INVITATION_TEMPLATES.md](./EMAIL_INVITATION_TEMPLATES.md), [INVITATION_EMAIL_DELIVERY.md](./INVITATION_EMAIL_DELIVERY.md), [EMAIL_DELIVERY_SETUP.md](./EMAIL_DELIVERY_SETUP.md)
+- **Classroom** — teacher dashboard, classes, assignments, analytics, reports; [CLASSROOM_WORKFLOW.md](./CLASSROOM_WORKFLOW.md), [CLASSROOM_SCHEMA.md](./CLASSROOM_SCHEMA.md), [TEACHER_ASSIGNMENTS_PLAN.md](./TEACHER_ASSIGNMENTS_PLAN.md), [TEACHER_REPORTING.md](./TEACHER_REPORTING.md)
 
 ## Routes
 
@@ -42,7 +44,35 @@ A Mongolian–Chinese language learning web app. Users learn Chinese through sho
 | `/onboarding` | New learner guide |
 | `/help` | FAQ |
 | `/feedback` | Feedback template |
-| `/pricing` | Pricing placeholder |
+| `/pricing` | Pricing + B2B packages (no payment) |
+| `/schools` | B2B school landing |
+| `/teachers` | Teacher package page |
+| `/demo` | Demo learning flow |
+| `/school-inquiry` | B2B inquiry form (submits to admin CRM) |
+| `/admin/b2b` | Admin B2B CRM |
+| `/admin/b2b/inquiries` | Inquiry pipeline |
+| `/admin/b2b/organizations` | Organization accounts |
+| `/teacher-dashboard` | Teacher overview + analytics |
+| `/teacher/reports` | Class reports + export |
+| `/teacher/classes/{id}` | Classroom detail + analytics |
+| `/teacher/assignments/{id}` | Assignment detail + analytics |
+| `/teacher/classes` | Class list |
+| `/teacher/assignments` | Assignment list |
+| `/teacher/assignments/new` | Create assignment |
+| `/organization` | Organization hub — list memberships |
+| `/organization/{organizationId}` | Organization dashboard |
+| `/organization/{organizationId}/members` | Member management + create invite link |
+| `/organization/{organizationId}/members/import` | Bulk CSV import members |
+| `/organization/{organizationId}/invitations` | Organization invitation list |
+| `/teacher/classes/{classroomId}/students/import` | Bulk CSV import students |
+| `/teacher/classes/{classroomId}/invitations` | Classroom student invitation list |
+| `/organization/{organizationId}/setup` | Pilot setup wizard |
+| `/organization/{organizationId}/dashboard` | Pilot dashboard |
+| `/invite/{token}` | Accept organization or classroom invitation |
+| `/organization/{organizationId}/classrooms` | Organization classrooms |
+| `/organization/{organizationId}/assignments` | Organization assignments |
+| `/organization/{organizationId}/reports` | School admin reports + export |
+| `/my-assignments` | Student assignment inbox |
 | `/profile` | Learning dashboard |
 | `/review` | Daily review |
 | `/login` | Sign in |
@@ -222,7 +252,12 @@ Helpers: [lib/supabase/auth.ts](./lib/supabase/auth.ts). Header shows **Нэвт
 | [`/courses/hsk5`](/courses/hsk5) | HSK5 roadmap + continue learning |
 | [`/help`](/help) | FAQ |
 | [`/feedback`](/feedback) | Feedback template (copy only) |
-| [`/pricing`](/pricing) | Plans placeholder (no payment) |
+| [`/pricing`](/pricing) | Plans + B2B packages (no payment) |
+| [`/schools`](/schools) | B2B school landing |
+| [`/teachers`](/teachers) | Teacher package |
+| [`/demo`](/demo) | Demo learning flow |
+| [`/school-inquiry`](/school-inquiry) | B2B inquiry (submits to admin CRM) |
+| [`/teacher-dashboard`](/teacher-dashboard) | Teacher dashboard preview |
 | [`/review`](/review) | Vocabulary review |
 | [`/profile`](/profile) | Account and progress |
 
