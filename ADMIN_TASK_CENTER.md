@@ -15,7 +15,7 @@ Phase 5 Step 22: in-app content review queue — no external email or push notif
 - Backup reminders before publish
 - System notes (RLS limits, migrations)
 
-Tasks are **generated on each page load** — there is no task database table yet.
+Tasks are **generated on each page load**. **Step 23** adds optional persistence when admins act on tasks — see [ADMIN_TASK_MANAGEMENT.md](./ADMIN_TASK_MANAGEMENT.md).
 
 ---
 
@@ -112,16 +112,18 @@ If RLS blocks progress tables, content/media/release tasks still appear plus a *
 
 ---
 
-## Not persisted (by design)
+## Persistent task workflow (Step 23)
 
-Tasks are **not stored** in the database. Refreshing the page regenerates the queue from current data.
+When an admin **Start**, **Resolve**, **Dismiss**, or **Save details**, the task is upserted into `public.admin_tasks` by stable `task_key`.
 
-**Future (Step 23+):**
+- **Active** filter (default): open + in_progress generated tasks
+- **Dismissed** / **Resolved**: history; hidden from Active
+- Priority, due date, admin note stored on the row
 
-- Mark task done / dismiss
-- Assign to admin user
-- Due dates
-- External notifications (email/push) — out of scope for Step 22
+Full guide: [ADMIN_TASK_MANAGEMENT.md](./ADMIN_TASK_MANAGEMENT.md)  
+Migration: [supabase/migrations/006_admin_tasks.sql](./supabase/migrations/006_admin_tasks.sql)
+
+**Future (Step 24+):** activity log, assignee UI, external notifications.
 
 ---
 

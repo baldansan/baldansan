@@ -49,3 +49,16 @@ See [RELEASE_WORKFLOW.md](../../RELEASE_WORKFLOW.md) in the project root.
 ### Warning
 
 Review migrations before production. Requires admin RLS policies on `lessons` update (existing admin content policies).
+
+---
+
+## Admin tasks (Phase 5 Step 23)
+
+**Migration file:** [../migrations/006_admin_tasks.sql](../migrations/006_admin_tasks.sql)
+
+### Run in Supabase SQL Editor
+
+1. Paste and run `006_admin_tasks.sql` (after `005_*` and admin RLS).
+2. Verify table `public.admin_tasks` and admin-only RLS policies.
+
+See [ADMIN_TASK_MANAGEMENT.md](../../ADMIN_TASK_MANAGEMENT.md).

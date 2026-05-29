@@ -28,8 +28,13 @@ export type AdminTaskCategory =
 
 export type AdminTaskSeverity = "critical" | "warning" | "info" | "success";
 
+export type AdminTaskStatus = "open" | "in_progress" | "resolved" | "dismissed";
+
+export type AdminTaskPriority = "low" | "normal" | "high" | "urgent";
+
 export type AdminTask = {
   id: string;
+  taskKey: string;
   category: AdminTaskCategory;
   severity: AdminTaskSeverity;
   title: string;
@@ -41,6 +46,17 @@ export type AdminTask = {
   secondaryActionLabel?: string;
   secondaryActionHref?: string;
   createdFrom: string;
+  status: AdminTaskStatus;
+  priority: AdminTaskPriority;
+  dueDate?: string | null;
+  adminNote?: string | null;
+  assignedTo?: string | null;
+  resolvedAt?: string | null;
+  dismissedAt?: string | null;
+  /** Still generated from current lesson/analytics data */
+  isGenerated?: boolean;
+  /** Row exists in admin_tasks */
+  isPersisted?: boolean;
 };
 
 export type AdminTaskGeneratorInput = {
@@ -62,6 +78,13 @@ export type AdminTaskSummary = {
   readyToPublishCount: number;
   needsContentCount: number;
   mediaIssuesCount: number;
+  openCount: number;
+  inProgressCount: number;
+  overdueCount: number;
+  urgentCount: number;
+  resolvedCount: number;
+  dismissedCount: number;
+  activeCount: number;
 };
 
 const SEVERITY_RANK: Record<AdminTaskSeverity, number> = {
@@ -82,17 +105,33 @@ function analyticsHref(lessonId: string): string {
   return `/admin/analytics/lessons/${lessonId}`;
 }
 
-function taskId(
+export function buildTaskKey(
   category: AdminTaskCategory,
   slug: string,
   lessonId?: string
 ): string {
-  return [category, lessonId ?? "global", slug].join(":");
+  return `${category}:${slug}:${lessonId ?? "global"}`;
 }
 
-function pushTask(tasks: AdminTask[], task: AdminTask): void {
-  if (!tasks.some((existing) => existing.id === task.id)) {
-    tasks.push(task);
+function pushTask(
+  tasks: AdminTask[],
+  task: Omit<
+    AdminTask,
+    "taskKey" | "status" | "priority" | "isGenerated" | "isPersisted"
+  > &
+    Partial<Pick<AdminTask, "taskKey" | "status" | "priority">>
+): void {
+  const taskKey = task.taskKey ?? task.id;
+  const full: AdminTask = {
+    ...task,
+    id: taskKey,
+    taskKey,
+    status: task.status ?? "open",
+    priority: task.priority ?? "normal",
+    isGenerated: true,
+  };
+  if (!tasks.some((existing) => existing.taskKey === full.taskKey)) {
+    tasks.push(full);
   }
 }
 
@@ -115,7 +154,7 @@ function generateContentTasks(
 
   if (report.subtitleCount === 0) {
     pushTask(tasks, {
-      id: taskId("content", "no-subtitles", lessonId),
+      id: buildTaskKey("content", "no-subtitles", lessonId),
       category: "content",
       severity: "critical",
       title: `Lesson ${lessonId} has no subtitles`,
@@ -130,7 +169,7 @@ function generateContentTasks(
 
   if (report.vocabularyActual === 0) {
     pushTask(tasks, {
-      id: taskId("content", "no-vocabulary", lessonId),
+      id: buildTaskKey("content", "no-vocabulary", lessonId),
       category: "content",
       severity: "critical",
       title: `Lesson ${lessonId} has no vocabulary`,
@@ -143,7 +182,7 @@ function generateContentTasks(
     });
   } else if (report.vocabularyActual < MIN_VOCABULARY_FOR_PUBLISH) {
     pushTask(tasks, {
-      id: taskId("content", "low-vocabulary", lessonId),
+      id: buildTaskKey("content", "low-vocabulary", lessonId),
       category: "content",
       severity: "warning",
       title: `Lesson ${lessonId} vocabulary below minimum`,
@@ -158,7 +197,7 @@ function generateContentTasks(
 
   if (report.quizActual === 0) {
     pushTask(tasks, {
-      id: taskId("content", "no-quiz", lessonId),
+      id: buildTaskKey("content", "no-quiz", lessonId),
       category: "content",
       severity: "critical",
       title: `Lesson ${lessonId} has no quiz questions`,
@@ -171,7 +210,7 @@ function generateContentTasks(
     });
   } else if (report.quizActual < MIN_QUIZ_FOR_PUBLISH) {
     pushTask(tasks, {
-      id: taskId("content", "low-quiz", lessonId),
+      id: buildTaskKey("content", "low-quiz", lessonId),
       category: "content",
       severity: "warning",
       title: `Lesson ${lessonId} quiz below minimum`,
@@ -191,7 +230,7 @@ function generateContentTasks(
       report.quizActual === 0)
   ) {
     pushTask(tasks, {
-      id: taskId("content", "draft-needs-content", lessonId),
+      id: buildTaskKey("content", "draft-needs-content", lessonId),
       category: "content",
       severity: "warning",
       title: `Draft lesson ${lessonId} needs content`,
@@ -215,7 +254,7 @@ function generateQaTasks(tasks: AdminTask[], lesson: LessonContent): void {
 
   if (workflowQa === "failed") {
     pushTask(tasks, {
-      id: taskId("qa", "failed", lessonId),
+      id: buildTaskKey("qa", "failed", lessonId),
       category: "qa",
       severity: "critical",
       title: `Lesson ${lessonId} QA failed`,
@@ -230,7 +269,7 @@ function generateQaTasks(tasks: AdminTask[], lesson: LessonContent): void {
 
   if (releaseStatus === "in_review") {
     pushTask(tasks, {
-      id: taskId("qa", "in-review", lessonId),
+      id: buildTaskKey("qa", "in-review", lessonId),
       category: "qa",
       severity: "info",
       title: `Lesson ${lessonId} in review`,
@@ -256,7 +295,7 @@ function generateQaReviewTask(
   }
 
   pushTask(tasks, {
-    id: taskId("qa", "needs-review", lesson.id),
+    id: buildTaskKey("qa", "needs-review", lesson.id),
     category: "qa",
     severity: "warning",
     title: `Lesson ${lesson.id} needs QA review`,
@@ -278,7 +317,7 @@ function generateMediaTasks(tasks: AdminTask[], report: LessonQaReport): void {
 
   if (mediaStatus === "missing") {
     pushTask(tasks, {
-      id: taskId("media", "missing", lessonId),
+      id: buildTaskKey("media", "missing", lessonId),
       category: "media",
       severity: "warning",
       title: `Lesson ${lessonId} media missing`,
@@ -291,7 +330,7 @@ function generateMediaTasks(tasks: AdminTask[], report: LessonQaReport): void {
     });
   } else if (mediaStatus === "pending") {
     pushTask(tasks, {
-      id: taskId("media", "pending", lessonId),
+      id: buildTaskKey("media", "pending", lessonId),
       category: "media",
       severity: "info",
       title: `Lesson ${lessonId} media pending`,
@@ -306,7 +345,7 @@ function generateMediaTasks(tasks: AdminTask[], report: LessonQaReport): void {
 
   if (publishStatus === "available" && !hasVideoUrl(lesson)) {
     pushTask(tasks, {
-      id: taskId("media", "available-no-video", lessonId),
+      id: buildTaskKey("media", "available-no-video", lessonId),
       category: "media",
       severity: "warning",
       title: `Lesson ${lessonId} published without video`,
@@ -321,7 +360,7 @@ function generateMediaTasks(tasks: AdminTask[], report: LessonQaReport): void {
 
   if (!hasThumbnailUrl(lesson) && hasEnoughContent(report)) {
     pushTask(tasks, {
-      id: taskId("media", "no-thumbnail", lessonId),
+      id: buildTaskKey("media", "no-thumbnail", lessonId),
       category: "media",
       severity: "info",
       title: `Lesson ${lessonId} thumbnail missing`,
@@ -345,7 +384,7 @@ function generateReleaseTasks(tasks: AdminTask[], report: LessonQaReport): void 
 
   if (readiness.readyToApprove && releaseStatus !== "approved") {
     pushTask(tasks, {
-      id: taskId("release", "ready-to-approve", lessonId),
+      id: buildTaskKey("release", "ready-to-approve", lessonId),
       category: "release",
       severity: "warning",
       title: `Lesson ${lessonId} ready to approve`,
@@ -360,7 +399,7 @@ function generateReleaseTasks(tasks: AdminTask[], report: LessonQaReport): void 
 
   if (readiness.readyToPublish && publishStatus !== "available") {
     pushTask(tasks, {
-      id: taskId("release", "ready-to-publish", lessonId),
+      id: buildTaskKey("release", "ready-to-publish", lessonId),
       category: "release",
       severity: "success",
       title: `Lesson ${lessonId} ready to publish`,
@@ -375,7 +414,7 @@ function generateReleaseTasks(tasks: AdminTask[], report: LessonQaReport): void 
 
   if (publishStatus === "available" && releaseStatus !== "published") {
     pushTask(tasks, {
-      id: taskId("release", "available-not-published", lessonId),
+      id: buildTaskKey("release", "available-not-published", lessonId),
       category: "release",
       severity: "warning",
       title: `Lesson ${lessonId} live but release_status not published`,
@@ -393,7 +432,7 @@ function generateReleaseTasks(tasks: AdminTask[], report: LessonQaReport): void 
     (publishStatus === "available" && releaseStatus === "archived")
   ) {
     pushTask(tasks, {
-      id: taskId("release", "status-mismatch", lessonId),
+      id: buildTaskKey("release", "status-mismatch", lessonId),
       category: "release",
       severity: "critical",
       title: `Lesson ${lessonId} status mismatch`,
@@ -422,7 +461,7 @@ function generateBackupTasks(tasks: AdminTask[], report: LessonQaReport): void {
 
   if (readiness.readyToApprove && publishStatus !== "available") {
     pushTask(tasks, {
-      id: taskId("backup", "export-before-publish", lessonId),
+      id: buildTaskKey("backup", "export-before-publish", lessonId),
       category: "backup",
       severity: "info",
       title: `Export backup recommended — lesson ${lessonId}`,
@@ -450,7 +489,7 @@ function generateAnalyticsTasks(
     metrics.quizAttemptCount > 0
   ) {
     pushTask(tasks, {
-      id: taskId("analytics", "low-quiz-score", lessonId),
+      id: buildTaskKey("analytics", "low-quiz-score", lessonId),
       category: "analytics",
       severity: "warning",
       title: `Lesson ${lessonId} low average quiz score`,
@@ -467,7 +506,7 @@ function generateAnalyticsTasks(
 
   if (status === "available" && metrics.quizAttemptCount === 0) {
     pushTask(tasks, {
-      id: taskId("analytics", "no-quiz-attempts", lessonId),
+      id: buildTaskKey("analytics", "no-quiz-attempts", lessonId),
       category: "analytics",
       severity: "info",
       title: `Lesson ${lessonId} has no quiz attempts yet`,
@@ -486,7 +525,7 @@ function generateAnalyticsTasks(
     metrics.completionRate < LOW_COMPLETION_THRESHOLD
   ) {
     pushTask(tasks, {
-      id: taskId("analytics", "low-completion", lessonId),
+      id: buildTaskKey("analytics", "low-completion", lessonId),
       category: "analytics",
       severity: "warning",
       title: `Lesson ${lessonId} low completion rate`,
@@ -503,7 +542,7 @@ function generateAnalyticsTasks(
 
   if (difficultForLesson.length > 0) {
     pushTask(tasks, {
-      id: taskId("analytics", "difficult-questions", lessonId),
+      id: buildTaskKey("analytics", "difficult-questions", lessonId),
       category: "analytics",
       severity: "warning",
       title: `Lesson ${lessonId} has difficult questions`,
@@ -520,7 +559,7 @@ function generateAnalyticsTasks(
 
   if (lowEngagementCount >= 3 && status === "available") {
     pushTask(tasks, {
-      id: taskId("analytics", "low-vocab-engagement", lessonId),
+      id: buildTaskKey("analytics", "low-vocab-engagement", lessonId),
       category: "analytics",
       severity: "warning",
       title: `Lesson ${lessonId} vocabulary low engagement`,
@@ -542,7 +581,7 @@ function generateSystemTasks(
 ): void {
   if (input.limitedByRls) {
     pushTask(tasks, {
-      id: taskId("system", "rls-progress", undefined),
+      id: buildTaskKey("system", "rls-progress", undefined),
       category: "system",
       severity: "warning",
       title: "Learner analytics may be limited",
@@ -556,7 +595,7 @@ function generateSystemTasks(
 
   if (input.supabaseConfigured === false) {
     pushTask(tasks, {
-      id: taskId("system", "no-supabase", undefined),
+      id: buildTaskKey("system", "no-supabase", undefined),
       category: "system",
       severity: "info",
       title: "Supabase not configured",
@@ -569,7 +608,7 @@ function generateSystemTasks(
   for (const warning of input.warnings ?? []) {
     if (warning.toLowerCase().includes("migration")) {
       pushTask(tasks, {
-        id: taskId("system", "migration", undefined),
+        id: buildTaskKey("system", "migration", undefined),
         category: "system",
         severity: "warning",
         title: "Database migration pending",
@@ -716,6 +755,13 @@ export function summarizeAdminTasks(tasks: AdminTask[]): AdminTaskSummary {
     readyToPublishCount,
     needsContentCount,
     mediaIssuesCount,
+    openCount: 0,
+    inProgressCount: 0,
+    overdueCount: 0,
+    urgentCount: 0,
+    resolvedCount: 0,
+    dismissedCount: 0,
+    activeCount: tasks.length,
   };
 }
 

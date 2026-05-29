@@ -142,6 +142,7 @@ Helpers: [lib/supabase/auth.ts](./lib/supabase/auth.ts). Header shows **Нэвт
 - [AI_ASSISTED_CONTENT_WORKFLOW.md](./AI_ASSISTED_CONTENT_WORKFLOW.md) — copy-ready improvement prompts (no AI API)
 - [RELEASE_WORKFLOW.md](./RELEASE_WORKFLOW.md) — content approval and publish readiness checklist
 - [ADMIN_TASK_CENTER.md](./ADMIN_TASK_CENTER.md) — admin content review queue (`/admin/tasks`)
+- [ADMIN_TASK_MANAGEMENT.md](./ADMIN_TASK_MANAGEMENT.md) — persistent task status, priority, due dates
 - [MEDIA_UPLOAD_WORKFLOW.md](./MEDIA_UPLOAD_WORKFLOW.md) — Supabase Storage upload for lesson media
 - [LESSON_IMPORT_FORMAT.md](./LESSON_IMPORT_FORMAT.md) — bulk JSON import format (ChatGPT paste)
 - [LESSON_EXPORT_FORMAT.md](./LESSON_EXPORT_FORMAT.md) — full lesson JSON backup export
@@ -167,7 +168,9 @@ Helpers: [lib/supabase/auth.ts](./lib/supabase/auth.ts). Header shows **Нэвт
 
 **Task center:** `/admin/tasks` — content review queue (missing content, QA, media, release blockers, analytics tasks). See [ADMIN_TASK_CENTER.md](./ADMIN_TASK_CENTER.md).
 
-**Next step:** Phase 5 Step 23 — Task persistence, dismiss, assign, due dates. Or Phase 5 Final Audit.
+**Task management:** dismiss, resolve, priority, due dates, notes on `/admin/tasks` (requires migration `006_admin_tasks.sql`). See [ADMIN_TASK_MANAGEMENT.md](./ADMIN_TASK_MANAGEMENT.md).
+
+**Next step:** Phase 5 Step 24 — Admin activity log and audit trail. Or Phase 5 Final Audit.
 
 ## Documentation
 

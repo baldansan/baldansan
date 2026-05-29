@@ -33,10 +33,11 @@ export default async function AdminTasksPage({ searchParams }: Props) {
       </section>
 
       <AdminTaskCenter
-        tasks={data.tasks}
+        tasks={data.allTasks}
         summary={data.summary}
         warnings={data.warnings}
         initialLessonId={lessonId}
+        persistenceAvailable={data.persistenceAvailable}
       />
     </div>
   );

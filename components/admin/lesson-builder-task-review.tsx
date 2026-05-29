@@ -1,6 +1,7 @@
 import Link from "next/link";
-import { TaskCard } from "@/components/admin/task-card";
+import { TaskCardWithActions } from "@/components/admin/task-card-with-actions";
 import type { AdminTask } from "@/lib/admin/task-generator";
+import { isActiveTask } from "@/lib/admin/task-merge";
 
 type Props = {
   lessonId: string | null;
@@ -9,7 +10,9 @@ type Props = {
 
 export function LessonBuilderTaskReview({ lessonId, tasks }: Props) {
   const lessonTasks = lessonId
-    ? tasks.filter((task) => task.lessonId === lessonId)
+    ? tasks.filter(
+        (task) => task.lessonId === lessonId && isActiveTask(task) && task.isGenerated !== false
+      )
     : [];
 
   return (
@@ -46,8 +49,8 @@ export function LessonBuilderTaskReview({ lessonId, tasks }: Props) {
           </p>
           <ul className="mt-3 flex flex-col gap-3">
             {lessonTasks.slice(0, 5).map((task) => (
-              <li key={task.id}>
-                <TaskCard task={task} />
+              <li key={task.taskKey}>
+                <TaskCardWithActions task={task} compact />
               </li>
             ))}
           </ul>

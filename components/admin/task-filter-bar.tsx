@@ -3,11 +3,27 @@
 import type {
   AdminTask,
   AdminTaskCategory,
+  AdminTaskPriority,
   AdminTaskSeverity,
+  AdminTaskStatus,
 } from "@/lib/admin/task-generator";
+import { isTaskDueThisWeek, isTaskOverdue } from "@/lib/admin/task-merge";
 
 export type TaskCategoryFilter = "all" | AdminTaskCategory;
 export type TaskSeverityFilter = "all" | AdminTaskSeverity;
+export type TaskStatusFilter =
+  | "active"
+  | "open"
+  | "in_progress"
+  | "resolved"
+  | "dismissed"
+  | "all";
+export type TaskPriorityFilter = "all" | AdminTaskPriority;
+export type TaskDueFilter =
+  | "all"
+  | "overdue"
+  | "due_this_week"
+  | "no_due_date";
 export type TaskQuickFilter =
   | "all"
   | "needs_action"
@@ -18,10 +34,16 @@ export type TaskQuickFilter =
 type Props = {
   category: TaskCategoryFilter;
   severity: TaskSeverityFilter;
+  status: TaskStatusFilter;
+  priority: TaskPriorityFilter;
+  dueFilter: TaskDueFilter;
   quickFilter: TaskQuickFilter;
   search: string;
   onCategoryChange: (value: TaskCategoryFilter) => void;
   onSeverityChange: (value: TaskSeverityFilter) => void;
+  onStatusChange: (value: TaskStatusFilter) => void;
+  onPriorityChange: (value: TaskPriorityFilter) => void;
+  onDueFilterChange: (value: TaskDueFilter) => void;
   onQuickFilterChange: (value: TaskQuickFilter) => void;
   onSearchChange: (value: string) => void;
   resultCount: number;
@@ -46,6 +68,30 @@ const severities: { value: TaskSeverityFilter; label: string }[] = [
   { value: "success", label: "Success" },
 ];
 
+const statuses: { value: TaskStatusFilter; label: string }[] = [
+  { value: "active", label: "Active" },
+  { value: "open", label: "Open" },
+  { value: "in_progress", label: "In progress" },
+  { value: "resolved", label: "Resolved" },
+  { value: "dismissed", label: "Dismissed" },
+  { value: "all", label: "All" },
+];
+
+const priorities: { value: TaskPriorityFilter; label: string }[] = [
+  { value: "all", label: "All" },
+  { value: "low", label: "Low" },
+  { value: "normal", label: "Normal" },
+  { value: "high", label: "High" },
+  { value: "urgent", label: "Urgent" },
+];
+
+const dueFilters: { value: TaskDueFilter; label: string }[] = [
+  { value: "all", label: "All due dates" },
+  { value: "overdue", label: "Overdue" },
+  { value: "due_this_week", label: "Due this week" },
+  { value: "no_due_date", label: "No due date" },
+];
+
 const quickFilters: { value: TaskQuickFilter; label: string }[] = [
   { value: "all", label: "All tasks" },
   { value: "needs_action", label: "Needs action" },
@@ -63,10 +109,16 @@ function selectClassName(active: boolean): string {
 export function TaskFilterBar({
   category,
   severity,
+  status,
+  priority,
+  dueFilter,
   quickFilter,
   search,
   onCategoryChange,
   onSeverityChange,
+  onStatusChange,
+  onPriorityChange,
+  onDueFilterChange,
   onQuickFilterChange,
   onSearchChange,
   resultCount,
@@ -109,7 +161,76 @@ export function TaskFilterBar({
           </div>
         </div>
 
-        <div className="grid gap-4 sm:grid-cols-2">
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <div>
+            <label
+              htmlFor="task-status"
+              className="text-xs font-semibold uppercase tracking-wide text-slate-500"
+            >
+              Status
+            </label>
+            <select
+              id="task-status"
+              value={status}
+              onChange={(e) =>
+                onStatusChange(e.target.value as TaskStatusFilter)
+              }
+              className="mt-2 w-full rounded-xl border border-slate-200 px-3 py-2 text-sm outline-none focus:border-emerald-400 focus:ring-2 focus:ring-emerald-100"
+            >
+              {statuses.map((item) => (
+                <option key={item.value} value={item.value}>
+                  {item.label}
+                </option>
+              ))}
+            </select>
+          </div>
+
+          <div>
+            <label
+              htmlFor="task-priority"
+              className="text-xs font-semibold uppercase tracking-wide text-slate-500"
+            >
+              Priority
+            </label>
+            <select
+              id="task-priority"
+              value={priority}
+              onChange={(e) =>
+                onPriorityChange(e.target.value as TaskPriorityFilter)
+              }
+              className="mt-2 w-full rounded-xl border border-slate-200 px-3 py-2 text-sm outline-none focus:border-emerald-400 focus:ring-2 focus:ring-emerald-100"
+            >
+              {priorities.map((item) => (
+                <option key={item.value} value={item.value}>
+                  {item.label}
+                </option>
+              ))}
+            </select>
+          </div>
+
+          <div>
+            <label
+              htmlFor="task-due"
+              className="text-xs font-semibold uppercase tracking-wide text-slate-500"
+            >
+              Due
+            </label>
+            <select
+              id="task-due"
+              value={dueFilter}
+              onChange={(e) =>
+                onDueFilterChange(e.target.value as TaskDueFilter)
+              }
+              className="mt-2 w-full rounded-xl border border-slate-200 px-3 py-2 text-sm outline-none focus:border-emerald-400 focus:ring-2 focus:ring-emerald-100"
+            >
+              {dueFilters.map((item) => (
+                <option key={item.value} value={item.value}>
+                  {item.label}
+                </option>
+              ))}
+            </select>
+          </div>
+
           <div>
             <label
               htmlFor="task-category"
@@ -170,6 +291,9 @@ export function filterAdminTasks(
   options: {
     category: TaskCategoryFilter;
     severity: TaskSeverityFilter;
+    status: TaskStatusFilter;
+    priority: TaskPriorityFilter;
+    dueFilter: TaskDueFilter;
     quickFilter: TaskQuickFilter;
     search: string;
     lessonId?: string;
@@ -182,6 +306,29 @@ export function filterAdminTasks(
       return false;
     }
 
+    if (options.status === "active") {
+      if (task.status === "resolved" || task.status === "dismissed") {
+        return false;
+      }
+      if (task.isGenerated === false) return false;
+    } else if (options.status !== "all" && task.status !== options.status) {
+      return false;
+    }
+
+    if (options.priority !== "all" && task.priority !== options.priority) {
+      return false;
+    }
+
+    if (options.dueFilter === "overdue" && !isTaskOverdue(task)) {
+      return false;
+    }
+    if (options.dueFilter === "due_this_week" && !isTaskDueThisWeek(task)) {
+      return false;
+    }
+    if (options.dueFilter === "no_due_date" && task.dueDate) {
+      return false;
+    }
+
     if (options.category !== "all" && task.category !== options.category) {
       return false;
     }
@@ -191,6 +338,9 @@ export function filterAdminTasks(
     }
 
     if (options.quickFilter === "needs_action") {
+      if (task.status === "resolved" || task.status === "dismissed") {
+        return false;
+      }
       if (task.severity !== "critical" && task.severity !== "warning") {
         return false;
       }
@@ -209,6 +359,7 @@ export function filterAdminTasks(
       task.description,
       task.lessonId ?? "",
       task.lessonTitle ?? "",
+      task.adminNote ?? "",
     ]
       .join(" ")
       .toLowerCase();

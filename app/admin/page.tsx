@@ -1,6 +1,6 @@
 import { AdminDashboard } from "@/components/admin/admin-dashboard";
 import { getAdminDashboardMetrics } from "@/lib/supabase/admin-analytics";
-import { getAdminTaskCenterData } from "@/lib/supabase/admin-tasks";
+import { getDashboardAdminTasks } from "@/lib/supabase/admin-tasks";
 
 export const dynamic = "force-dynamic";
 
@@ -11,20 +11,15 @@ export const metadata = {
 export default async function AdminPage() {
   const [metrics, taskCenter] = await Promise.all([
     getAdminDashboardMetrics(),
-    getAdminTaskCenterData(),
+    getDashboardAdminTasks(5),
   ]);
-
-  const urgentTasks = taskCenter.tasks
-    .filter(
-      (task) => task.severity === "critical" || task.severity === "warning"
-    )
-    .slice(0, 5);
 
   return (
     <AdminDashboard
       metrics={metrics}
       taskSummary={taskCenter.summary}
-      urgentTasks={urgentTasks}
+      activeTasks={taskCenter.activeTasks}
+      taskWarnings={taskCenter.warnings}
     />
   );
 }

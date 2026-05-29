@@ -284,7 +284,14 @@ Phased roadmap from MVP demo to production product.
 - Dashboard, lesson edit, lesson builder, analytics integration
 - [ADMIN_TASK_CENTER.md](./ADMIN_TASK_CENTER.md) — no task DB persistence yet
 
-**Next:** Phase 5 Step 23 — Task persistence, dismiss, assign, due dates. Or Phase 5 Final Audit.
+**Phase 5 Step 23 — Completed:** Persistent admin task management.
+
+- [supabase/migrations/006_admin_tasks.sql](./supabase/migrations/006_admin_tasks.sql)
+- [lib/supabase/admin-task-persistence.ts](./lib/supabase/admin-task-persistence.ts), [lib/admin/task-merge.ts](./lib/admin/task-merge.ts)
+- Dismiss, resolve, start, reopen, priority, due date, admin notes
+- [ADMIN_TASK_MANAGEMENT.md](./ADMIN_TASK_MANAGEMENT.md)
+
+**Next:** Phase 5 Step 24 — Admin activity log and audit trail. Or Phase 5 Final Audit.
 - [components/admin/bulk-import-editor.tsx](./components/admin/bulk-import-editor.tsx) on lesson edit page
 - [LESSON_IMPORT_FORMAT.md](./LESSON_IMPORT_FORMAT.md)
 
@@ -319,8 +326,9 @@ Phased roadmap from MVP demo to production product.
 | 20 | AI-assisted content improvement prompts | ✅ Completed |
 | 21 | Content approval / release readiness | ✅ Completed |
 | 22 | Admin Task Center / content review queue | ✅ Completed |
+| 23 | Persistent admin task management | ✅ Completed |
 
-**Next (Phase 5):** Step 23 — Task persistence, dismiss, assign, due dates. Or Phase 5 Final Audit.
+**Next (Phase 5):** Step 24 — Admin activity log and audit trail. Or Phase 5 Final Audit.
 
 **Exit criteria:** New lesson published through admin UI without deploying code.
 

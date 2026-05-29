@@ -111,8 +111,11 @@ See [CONTENT_WORKFLOW.md](./CONTENT_WORKFLOW.md):
 | 20 | AI-assisted content improvement prompts | ✅ Completed |
 | 21 | Content approval / release readiness workflow | ✅ Completed |
 | 22 | Admin Task Center and content review queue | ✅ Completed |
+| 23 | Persistent admin task management | ✅ Completed |
 
-Step 22: [ADMIN_TASK_CENTER.md](./ADMIN_TASK_CENTER.md), `/admin/tasks`, `task-generator.ts`, dashboard + edit + builder integration. In-app queue only — no task DB yet.
+Step 23: [ADMIN_TASK_MANAGEMENT.md](./ADMIN_TASK_MANAGEMENT.md), [supabase/migrations/006_admin_tasks.sql](./supabase/migrations/006_admin_tasks.sql), dismiss/resolve/priority/due/note on `/admin/tasks`.
+
+Step 22: [ADMIN_TASK_CENTER.md](./ADMIN_TASK_CENTER.md), `/admin/tasks`, `task-generator.ts`, dashboard + edit + builder integration.
 
 Step 21: [RELEASE_WORKFLOW.md](./RELEASE_WORKFLOW.md), [supabase/migrations/005_lesson_release_workflow.sql](./supabase/migrations/005_lesson_release_workflow.sql), release checklist + approval on edit page.
 

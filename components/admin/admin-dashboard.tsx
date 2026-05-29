@@ -16,13 +16,15 @@ import type { AuthUser } from "@/types/auth";
 type Props = {
   metrics: AdminDashboardMetrics;
   taskSummary: AdminTaskSummary;
-  urgentTasks: AdminTask[];
+  activeTasks: AdminTask[];
+  taskWarnings?: string[];
 };
 
 export function AdminDashboard({
   metrics,
   taskSummary,
-  urgentTasks,
+  activeTasks,
+  taskWarnings = [],
 }: Props) {
   const [user, setUser] = useState<AuthUser | null>(null);
 
@@ -247,8 +249,13 @@ export function AdminDashboard({
       >
         <AdminTaskCenterPreview
           summary={taskSummary}
-          urgentTasks={urgentTasks}
+          activeTasks={activeTasks}
         />
+        {taskWarnings.length > 0 ? (
+          <p className="text-xs text-amber-800">
+            {taskWarnings.join(" · ")}
+          </p>
+        ) : null}
       </AdminDashboardSection>
 
       <AdminDashboardSection

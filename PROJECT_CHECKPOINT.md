@@ -2,7 +2,23 @@
 
 **Project:** Buunduu Surtsgaay (Бөөндөө Сурцгаая)  
 **Checkpoint date:** May 2026  
-**Status:** Phase 4 **completed**; Phase 5 Step 22 Admin Task Center **completed**
+**Status:** Phase 4 **completed**; Phase 5 Step 23 persistent admin task management **completed**
+
+---
+
+## Phase 5 Step 23 — Persistent admin task management — **Completed**
+
+Phase 5 Step 23: Persistent admin task management added with status, priority, due dates, notes, and dismiss/resolve workflow.
+
+| Area | Deliverable |
+|------|-------------|
+| Migration | `006_admin_tasks.sql` |
+| Helpers | `admin-task-persistence.ts`, `task-merge.ts` |
+| UI | Status/priority/due/note actions on task cards |
+| Integration | Dashboard overdue/urgent, lesson edit actions |
+| Docs | [ADMIN_TASK_MANAGEMENT.md](./ADMIN_TASK_MANAGEMENT.md) |
+
+**Next:** Phase 5 Step 24 — Admin activity log and audit trail. Or Phase 5 Final Audit.
 
 ---
 
@@ -20,7 +36,7 @@ Phase 5 Step 22: Admin Task Center and Content Review Queue added.
 
 Tasks generated from live data — no task persistence table yet.
 
-**Next:** Phase 5 Step 23 — Task persistence, dismiss, assign, due dates. Or Phase 5 Final Audit.
+**Next:** Phase 5 Step 24 — Admin activity log and audit trail. Or Phase 5 Final Audit.
 
 ---
 
@@ -36,7 +52,7 @@ Phase 5 Step 21: Content approval and release readiness workflow added.
 | Integration | `/admin/lessons`, dashboard metrics, lesson builder |
 | Docs | [RELEASE_WORKFLOW.md](./RELEASE_WORKFLOW.md) |
 
-**Next:** Phase 5 Step 23 — Task persistence, dismiss, assign, due dates. Or Phase 5 Final Audit.
+**Next:** Phase 5 Step 24 — Admin activity log and audit trail. Or Phase 5 Final Audit.
 
 ---
 

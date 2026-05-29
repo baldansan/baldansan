@@ -1,5 +1,7 @@
+"use client";
+
 import Link from "next/link";
-import { TaskCard } from "@/components/admin/task-card";
+import { TaskCardWithActions } from "@/components/admin/task-card-with-actions";
 import type { AdminTask } from "@/lib/admin/task-generator";
 
 type Props = {
@@ -19,8 +21,8 @@ export function LessonTasksCard({ lessonId, tasks }: Props) {
           </h2>
           <p className="mt-1 text-sm text-slate-600">
             {tasks.length === 0
-              ? "No open tasks for this lesson."
-              : `${tasks.length} generated task${tasks.length === 1 ? "" : "s"}.`}
+              ? "No active tasks for this lesson."
+              : `${tasks.length} active task${tasks.length === 1 ? "" : "s"}.`}
           </p>
         </div>
         <Link
@@ -34,8 +36,8 @@ export function LessonTasksCard({ lessonId, tasks }: Props) {
       {topTasks.length > 0 ? (
         <ul className="mt-4 flex flex-col gap-3">
           {topTasks.map((task) => (
-            <li key={task.id}>
-              <TaskCard task={task} />
+            <li key={task.taskKey}>
+              <TaskCardWithActions task={task} compact />
             </li>
           ))}
         </ul>
