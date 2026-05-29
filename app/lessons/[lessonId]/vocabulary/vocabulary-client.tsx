@@ -146,13 +146,13 @@ export function LessonVocabularyClient({
             href={lessonPreviewPath(lesson.id, { adminPreview, subpath: "watch" })}
             className="inline-flex w-fit items-center text-sm font-medium text-emerald-700 transition-colors hover:text-emerald-600"
           >
-            Watch lesson →
+            Хичээл үзэх →
           </Link>
         </div>
 
         <section>
           <h1 className="text-2xl font-bold tracking-tight sm:text-3xl">
-            Vocabulary — {lesson.title} {lesson.chineseTitle}
+            Үгийн сан — {lesson.title} {lesson.chineseTitle}
           </h1>
           <p className="mt-2 text-base text-slate-600">
             Үг бүрийг pinyin, Монгол утга, жишээ өгүүлбэртэй сур.
@@ -301,7 +301,7 @@ export function LessonVocabularyClient({
             href={lessonPreviewPath(lesson.id, { adminPreview, subpath: "watch" })}
             className="flex-1 rounded-full border border-emerald-200 bg-emerald-50 px-5 py-3 text-center text-sm font-semibold text-emerald-700 transition-colors hover:bg-emerald-100"
           >
-            Watch lesson
+            Хичээл үзэх
           </Link>
           <Link
             href={lessonPreviewPath(lesson.id, {

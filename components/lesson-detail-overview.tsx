@@ -18,9 +18,9 @@ type Props = {
 };
 
 function statusLabel(status: LessonStatus): string {
-  if (status === "completed") return "Completed";
-  if (status === "started") return "In progress";
-  return "Not started";
+  if (status === "completed") return "Дууссан";
+  if (status === "started") return "Яваж байна";
+  return "Эхлээгүй";
 }
 
 export function LessonDetailOverview({
@@ -60,12 +60,12 @@ export function LessonDetailOverview({
   return (
     <>
       <section className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:p-6">
-        <h2 className="text-lg font-semibold text-slate-900">Lesson path</h2>
+        <h2 className="text-lg font-semibold text-slate-900">Хичээлийн алхам</h2>
         <div className="mt-4 grid gap-3 sm:grid-cols-3">
           {[
-            { href: watchHref, title: "Watch", desc: "Video + subtitle" },
-            { href: vocabHref, title: "Vocabulary", desc: `${lesson.vocabularyCount} words` },
-            { href: quizHref, title: "Quiz", desc: `${lesson.quizCount} questions` },
+            { href: watchHref, title: "Хичээл үзэх", desc: "Video + subtitle" },
+            { href: vocabHref, title: "Үгийн сан", desc: `${lesson.vocabularyCount} үг` },
+            { href: quizHref, title: "Quiz", desc: `${lesson.quizCount} асуулт` },
           ].map((step) => (
             <Link
               key={step.title}
@@ -80,17 +80,17 @@ export function LessonDetailOverview({
       </section>
 
       <section className="rounded-2xl bg-emerald-50/60 p-5 ring-1 ring-emerald-100 sm:p-6">
-        <h2 className="text-lg font-semibold text-slate-900">Your progress</h2>
+        <h2 className="text-lg font-semibold text-slate-900">Таны ахиц</h2>
         <div className="mt-3 flex flex-wrap gap-3 text-sm">
           <span className="rounded-full bg-white px-3 py-1 font-medium text-slate-700 ring-1 ring-slate-200">
             {statusLabel(status)}
           </span>
           <span className="rounded-full bg-white px-3 py-1 font-medium text-slate-700 ring-1 ring-slate-200">
-            {learnedCount} words learned
+            {learnedCount} үг сурсан
           </span>
           {bestScore != null ? (
             <span className="rounded-full bg-white px-3 py-1 font-medium text-emerald-800 ring-1 ring-emerald-200">
-              Best quiz: {bestScore}%
+              Quiz: {bestScore}%
             </span>
           ) : null}
         </div>
@@ -101,19 +101,19 @@ export function LessonDetailOverview({
           href={watchHref}
           className="inline-flex justify-center rounded-full bg-emerald-500 px-6 py-3 text-sm font-semibold text-white hover:bg-emerald-600"
         >
-          Watch lesson
+          Хичээл үзэх
         </Link>
         <Link
           href={vocabHref}
           className="inline-flex justify-center rounded-full border border-emerald-200 bg-emerald-50 px-6 py-3 text-sm font-semibold text-emerald-800 hover:bg-emerald-100"
         >
-          Study vocabulary
+          Үгийн сан
         </Link>
         <Link
           href={quizHref}
           className="inline-flex justify-center rounded-full border border-slate-200 bg-white px-6 py-3 text-sm font-semibold text-slate-700 hover:border-emerald-200"
         >
-          Take quiz
+          Quiz өгөх
         </Link>
         <Link
           href={coursePath(lesson.courseId)}

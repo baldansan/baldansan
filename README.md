@@ -12,7 +12,9 @@ A Mongolian–Chinese language learning web app. Users learn Chinese through sho
 
 **Out of scope for v1.0:** Payment, email campaigns, full B2B SaaS, native app.
 
-See [V1_LAUNCH_STABILIZATION.md](./V1_LAUNCH_STABILIZATION.md), [V1_LAUNCH_BLOCKERS.md](./V1_LAUNCH_BLOCKERS.md), [V1_STABILIZATION_REPORT.md](./V1_STABILIZATION_REPORT.md).
+**Out of scope for v1.0:** Payment, email campaigns, full B2B SaaS, native app. B2B/classroom routes are **foundation only** — they must not block learner launch.
+
+See [V1_LAUNCH_STABILIZATION.md](./V1_LAUNCH_STABILIZATION.md), [V1_LAUNCH_BLOCKERS.md](./V1_LAUNCH_BLOCKERS.md), [V1_STABILIZATION_REPORT.md](./V1_STABILIZATION_REPORT.md), [SUPABASE_MIGRATION_STATUS.md](./SUPABASE_MIGRATION_STATUS.md).
 
 ## Tech stack
 

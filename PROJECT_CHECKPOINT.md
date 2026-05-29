@@ -2,7 +2,7 @@
 
 **Project:** Buunduu Surtsgaay (Бөөндөө Сурцгаая)  
 **Checkpoint date:** May 2026  
-**Status:** v1.0 Launch Stabilization **completed** — feature freeze applied for public learner launch
+**Status:** v1.0 Launch Stabilization **completed** (deep sprint) — feature freeze applied for learner launch
 
 ---
 

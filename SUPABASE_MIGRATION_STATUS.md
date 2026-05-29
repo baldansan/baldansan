@@ -4,48 +4,60 @@ Track which migrations are applied on production/staging. Run in **numeric order
 
 **Production app:** https://baldansan.vercel.app
 
----
-
-## v1.0 core (required for learner launch)
-
-| # | File | Purpose | Status |
-|---|------|---------|--------|
-| 001 | `001_initial_schema.sql` | Courses, lessons, content tables | Needs check |
-| 002 | `002_lesson_media_fields.sql` | Lesson media columns | Needs check |
-| 003 | `003_lesson_route_status.sql` | Route status helper | Needs check |
-| 004 | `004_admin_lesson_bundle.sql` | Admin lesson bundle RPC | Needs check |
-| 005 | `005_lesson_release_workflow.sql` | Draft/publish workflow | Needs check |
-| 005 | `005_grant_is_admin_rpc.sql` | Grant `is_admin` execute | Needs check |
-| 006 | `006_admin_tasks.sql` | Admin tasks table | Needs check |
-| 007 | `007_admin_activity_log.sql` | Activity log | Needs check |
-| 008 | `008_admin_activity_snapshots.sql` | Rollback snapshots | Needs check |
-| 009 | `009_user_retention.sql` | Streak / daily goal | Needs check |
-| 010 | `010_user_reminders_achievements.sql` | Reminders, achievements | Needs check |
-| — | `admin/001_admin_profiles_setup.sql` | `admin_profiles` + bootstrap | Needs check |
-| — | `policies/002_admin_content_policies.sql` | Content RLS + `is_admin()` | Needs check |
+Do not run SQL from the app automatically — document and verify manually.
 
 ---
 
-## Phase 7 B2B / classroom (optional for v1.0 learner)
+## Required for v1.0 learner launch
 
-Does not block v1.0 if routes degrade gracefully. Required for school/B2B features.
+| # | File | Tables / purpose | v1.0 |
+|---|------|------------------|------|
+| 001 | `001_initial_schema.sql` | `courses`, `lessons`, content child tables, progress | **Required** |
+| 002 | `002_lesson_media_fields.sql` | Lesson media columns | **Required** |
+| 003 | `003_lesson_route_status.sql` | Route status helper | **Required** |
+| 004 | `004_admin_lesson_bundle.sql` | Admin lesson bundle RPC | **Required** |
+| 005 | `005_lesson_release_workflow.sql` | Draft/publish workflow | **Required** |
+| 005 | `005_grant_is_admin_rpc.sql` | Grant `is_admin` execute | **Required** |
+| 006 | `006_admin_tasks.sql` | Admin tasks | Recommended |
+| 007 | `007_admin_activity_log.sql` | Activity log | Recommended |
+| 008 | `008_admin_activity_snapshots.sql` | Rollback snapshots | Recommended |
+| 009 | `009_user_retention.sql` | Streak / daily goal | Recommended |
+| 010 | `010_user_reminders_achievements.sql` | Reminders, achievements | Recommended |
+| — | `admin/001_admin_profiles_setup.sql` | `admin_profiles` bootstrap | **Required** |
+| — | `policies/002_admin_content_policies.sql` | Content RLS | **Required** |
 
-| # | File | Purpose | Status |
-|---|------|---------|--------|
-| 011 | `011_classroom_roles_assignments.sql` | Classrooms, assignments | Needs check |
-| 012 | `012_school_organizations_b2b_crm.sql` | Organizations, inquiries | Needs check |
-| 013 | `013_organization_classrooms_permissions.sql` | Org classrooms, permissions | Needs check |
-| 014 | `014_b2b_pilot_onboarding.sql` | Pilot onboarding wizard | Needs check |
-| 015 | `015_organization_invitations.sql` | Invitation table (spec: invitation links base) | Needs check |
-| 016 | `016_invitation_email_delivery.sql` | Legacy delivery log table | Needs check |
-| 017 | `017_invitation_links_classroom_accept.sql` | Classroom accept + `invitations` view | Needs check |
-| 018 | `018_invitation_email_deliveries.sql` | Current email delivery log | Needs check |
-
-**Note:** Spec name `015_invitation_links.sql` maps to `015_organization_invitations.sql` + `017_invitation_links_classroom_accept.sql`.
+**Minimum learner DB:** 001–005 + admin bootstrap + content policies. 009–010 needed for streak/daily goal without crash (app degrades if missing).
 
 ---
 
-## Admin helper standardization
+## B2B / classroom / invite foundation (optional for v1.0)
+
+Required only for school/B2B routes — **must not block learner launch** if unapplied.
+
+| # | File | Purpose | v1.0 |
+|---|------|---------|------|
+| 011 | `011_classroom_roles_assignments.sql` | Classrooms, assignments | Optional |
+| 012 | `012_school_organizations_b2b_crm.sql` | Organizations, inquiries | Optional |
+| 013 | `013_organization_classrooms_permissions.sql` | Org classrooms, permissions | Optional |
+| 014 | `014_b2b_pilot_onboarding.sql` | Pilot onboarding | Optional |
+| 015 | `015_organization_invitations.sql` | Invitations base | Optional |
+| 016 | `016_invitation_email_delivery.sql` | Legacy delivery log | Optional |
+| 017 | `017_invitation_links_classroom_accept.sql` | Classroom accept + view | Optional |
+| 018 | `018_invitation_email_deliveries.sql` | Email delivery log | Optional |
+
+**Naming note:** `015_invitation_links.sql` (spec) = `015_organization_invitations.sql` + `017_invitation_links_classroom_accept.sql`.
+
+---
+
+## Admin helper — canonical only
+
+Use:
+
+```sql
+public.is_admin(auth.uid()::uuid)
+```
+
+**Never use** ambiguous zero-argument `public.is_admin()` when multiple overloads exist.
 
 Canonical function:
 
@@ -53,51 +65,58 @@ Canonical function:
 public.is_admin(check_user_id uuid default auth.uid())
 ```
 
-Use in RLS policies as:
+---
+
+## Core v1.0 verification SQL
 
 ```sql
-public.is_admin(auth.uid()::uuid)
+-- Content tables
+select exists (select 1 from information_schema.tables where table_schema='public' and table_name='courses') as courses;
+select exists (select 1 from information_schema.tables where table_schema='public' and table_name='lessons') as lessons;
+select exists (select 1 from information_schema.tables where table_schema='public' and table_name='subtitle_lines') as subtitle_lines;
+select exists (select 1 from information_schema.tables where table_schema='public' and table_name='vocabulary_words') as vocabulary_words;
+select exists (select 1 from information_schema.tables where table_schema='public' and table_name='quiz_questions') as quiz_questions;
+
+-- Progress
+select exists (select 1 from information_schema.tables where table_schema='public' and table_name='user_lesson_progress') as user_lesson_progress;
+select exists (select 1 from information_schema.tables where table_schema='public' and table_name='user_vocabulary_progress') as user_vocabulary_progress;
+select exists (select 1 from information_schema.tables where table_schema='public' and table_name='user_quiz_attempts') as user_quiz_attempts;
+
+-- Admin
+select exists (select 1 from information_schema.tables where table_schema='public' and table_name='admin_profiles') as admin_profiles;
+
+-- Counts
+select count(*) as available_lessons from public.lessons where status = 'available';
+
+-- Admin check (when logged in as admin in SQL editor with JWT, or test via app)
+-- select public.is_admin(auth.uid()::uuid) as am_i_admin;
 ```
 
-Drop legacy zero-argument overload if present to avoid ambiguity. Do not run partial policy-drop scripts without recreating all affected policies.
+**Expected:** all `exists` = true for core tables; `available_lessons >= 1`.
 
 ---
 
-## v1.0 verification SQL
-
-Run in Supabase SQL Editor after migrations:
+## B2B optional verification SQL
 
 ```sql
--- Core content
-select count(*) as courses from public.courses;
-select count(*) as available_lessons
-from public.lessons where status = 'available';
-
--- Progress / auth support
-select exists (
-  select 1 from information_schema.tables
-  where table_schema = 'public' and table_name = 'user_lesson_progress'
-) as has_lesson_progress;
-
-select exists (
-  select 1 from information_schema.tables
-  where table_schema = 'public' and table_name = 'admin_profiles'
-) as has_admin_profiles;
-
--- Admin helper
-select public.is_admin(auth.uid()::uuid) as am_i_admin;
-
--- B2B optional (OK if false on learner-only DB)
-select exists (
-  select 1 from information_schema.tables
-  where table_schema = 'public' and table_name = 'organization_invitations'
-) as has_invitations;
+select exists (select 1 from information_schema.tables where table_schema='public' and table_name='teacher_profiles') as teacher_profiles;
+select exists (select 1 from information_schema.tables where table_schema='public' and table_name='student_profiles') as student_profiles;
+select exists (select 1 from information_schema.tables where table_schema='public' and table_name='classrooms') as classrooms;
+select exists (select 1 from information_schema.tables where table_schema='public' and table_name='classroom_students') as classroom_students;
+select exists (select 1 from information_schema.tables where table_schema='public' and table_name='assignments') as assignments;
+select exists (select 1 from information_schema.tables where table_schema='public' and table_name='assignment_results') as assignment_results;
+select exists (select 1 from information_schema.tables where table_schema='public' and table_name='organizations') as organizations;
+select exists (select 1 from information_schema.tables where table_schema='public' and table_name='organization_members') as organization_members;
+select exists (select 1 from information_schema.tables where table_schema='public' and table_name='b2b_inquiries') as b2b_inquiries;
+select exists (select 1 from information_schema.tables where table_schema='public' and table_name='organization_onboarding') as organization_onboarding;
+select exists (select 1 from information_schema.tables where table_schema='public' and table_name='organization_invitations') as invitations;
+select exists (select 1 from information_schema.tables where table_schema='public' and table_name='invitation_email_deliveries') as invitation_email_deliveries;
 ```
 
-**Expected for launch:** `courses > 0`, `available_lessons >= 1`, `has_lesson_progress = true`, `has_admin_profiles = true`.
+OK if false on learner-only production until B2B launch.
 
 ---
 
 ## Full verification script
 
-See [supabase/verify/production_verification.sql](./supabase/verify/production_verification.sql) and [supabase/verify/README.md](./supabase/verify/README.md).
+[supabase/verify/production_verification.sql](./supabase/verify/production_verification.sql)

@@ -43,7 +43,7 @@ export function PublicNavLinks({ active, className = "" }: Props) {
       aria-label="Main"
     >
       <Link href="/courses" className={linkClass(active === "courses")}>
-        Courses
+        Курсууд
       </Link>
       {loggedIn ? (
         <>
@@ -51,10 +51,10 @@ export function PublicNavLinks({ active, className = "" }: Props) {
             Миний самбар
           </Link>
           <Link href="/review" className={linkClass(active === "review")}>
-            Review
+            Давталт
           </Link>
           <Link href="/profile" className={linkClass(active === "profile")}>
-            Profile
+            Профайл
           </Link>
         </>
       ) : null}

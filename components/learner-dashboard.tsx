@@ -226,13 +226,13 @@ export function LearnerDashboard({ hsk5LessonIds }: Props) {
           href="/courses"
           className="rounded-full border border-slate-200 px-5 py-2.5 text-sm font-semibold text-slate-700 hover:border-emerald-200"
         >
-          Courses
+          Курсууд
         </Link>
         <Link
           href="/profile"
           className="rounded-full border border-slate-200 px-5 py-2.5 text-sm font-semibold text-slate-700 hover:border-emerald-200"
         >
-          Profile
+          Профайл
         </Link>
         <Link
           href="/my-assignments"
