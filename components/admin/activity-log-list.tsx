@@ -4,6 +4,7 @@ import {
   EntityTypeBadge,
   formatActivityTime,
 } from "@/components/admin/activity-badge";
+import { activityHasDiffPreview } from "@/lib/admin/admin-activity-diff";
 import {
   formatActivityActor,
   type AdminActivityRow,
@@ -27,10 +28,18 @@ export function ActivityLogList({ rows, compact = false }: Props) {
     <ul className="flex flex-col gap-3">
       {rows.map((row) => (
         <li key={row.id}>
-          <article className="rounded-2xl bg-white p-4 shadow-sm ring-1 ring-slate-200 sm:p-5">
+          <Link
+            href={`/admin/activity/${row.id}`}
+            className="block rounded-2xl bg-white p-4 shadow-sm ring-1 ring-slate-200 transition-colors hover:ring-emerald-200 sm:p-5"
+          >
             <div className="flex flex-wrap items-center gap-2">
               <ActivityBadge action={row.action} />
               <EntityTypeBadge entityType={row.entityType} />
+              {activityHasDiffPreview(row) ? (
+                <span className="inline-flex rounded-full bg-sky-50 px-2.5 py-0.5 text-xs font-semibold text-sky-800 ring-1 ring-sky-200">
+                  Diff available
+                </span>
+              ) : null}
               {row.lessonId ? (
                 <span className="font-mono text-xs text-slate-500">
                   Lesson {row.lessonId}
@@ -49,28 +58,10 @@ export function ActivityLogList({ rows, compact = false }: Props) {
               {formatActivityActor(row)} · {formatActivityTime(row.createdAt)}
             </p>
 
-            {!compact && Object.keys(row.metadata).length > 0 ? (
-              <details className="mt-3">
-                <summary className="cursor-pointer text-xs font-medium text-emerald-700">
-                  Metadata
-                </summary>
-                <pre className="mt-2 overflow-x-auto rounded-lg bg-slate-50 p-3 text-xs text-slate-700">
-                  {JSON.stringify(row.metadata, null, 2)}
-                </pre>
-              </details>
-            ) : null}
-
-            {row.lessonId ? (
-              <div className="mt-3">
-                <Link
-                  href={`/admin/lessons/${row.lessonId}/edit`}
-                  className="text-xs font-semibold text-emerald-700 hover:text-emerald-800"
-                >
-                  Open lesson edit →
-                </Link>
-              </div>
-            ) : null}
-          </article>
+            <p className="mt-3 text-xs font-semibold text-emerald-700">
+              View activity detail →
+            </p>
+          </Link>
         </li>
       ))}
     </ul>

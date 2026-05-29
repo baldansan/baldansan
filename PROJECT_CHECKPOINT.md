@@ -2,7 +2,23 @@
 
 **Project:** Buunduu Surtsgaay (Бөөндөө Сурцгаая)  
 **Checkpoint date:** May 2026  
-**Status:** Phase 4 **completed**; Phase 5 Step 24 admin activity log / audit trail **completed**
+**Status:** Phase 4 **completed**; Phase 5 Step 25 activity diff / rollback preview **completed**
+
+---
+
+## Phase 5 Step 25 — Activity diff / rollback preview — **Completed**
+
+Phase 5 Step 25: Activity diff and rollback preview added.
+
+| Area | Deliverable |
+|------|-------------|
+| Migration | `008_admin_activity_snapshots.sql` |
+| Helpers | `admin-activity-diff.ts`, snapshot fields on `logAdminActivity` |
+| Route | `/admin/activity/[activityId]` — diff + rollback preview (disabled) |
+| Snapshots | Metadata, media, status, release, import, restore, duplicate |
+| Docs | [ADMIN_ACTIVITY_DIFFS.md](./ADMIN_ACTIVITY_DIFFS.md) |
+
+**Next:** Phase 5 Step 26 — Safe rollback execution. Or Phase 5 Final Audit.
 
 ---
 

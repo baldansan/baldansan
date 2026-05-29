@@ -1,11 +1,13 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { activityHasDiffPreview } from "@/lib/admin/admin-activity-diff";
 import {
   ActivityFilterBar,
   filterActivityRowsClient,
   type ActivityActionFilter,
   type ActivityDateFilter,
+  type ActivityDiffFilter,
   type ActivityEntityFilter,
 } from "@/components/admin/activity-filter-bar";
 import { ActivityLogList } from "@/components/admin/activity-log-list";
@@ -31,6 +33,7 @@ export function AdminActivityCenter({
   const [action, setAction] = useState<ActivityActionFilter>("all");
   const [entityType, setEntityType] = useState<ActivityEntityFilter>("all");
   const [dateRange, setDateRange] = useState<ActivityDateFilter>("all");
+  const [diffFilter, setDiffFilter] = useState<ActivityDiffFilter>("all");
   const [lessonId, setLessonId] = useState(initialLessonId);
   const [actor, setActor] = useState("");
   const [search, setSearch] = useState("");
@@ -62,8 +65,14 @@ export function AdminActivityCenter({
       start.setDate(start.getDate() - 30);
       list = list.filter((row) => new Date(row.createdAt) >= start);
     }
-    return filterActivityRowsClient(list, { action, entityType, actor, search });
-  }, [rows, lessonId, dateRange, action, entityType, actor, search]);
+    return filterActivityRowsClient(list, { action, entityType, actor, search }).filter(
+      (row) => {
+        if (diffFilter === "has_diff") return activityHasDiffPreview(row);
+        if (diffFilter === "no_diff") return !activityHasDiffPreview(row);
+        return true;
+      }
+    );
+  }, [rows, lessonId, dateRange, action, entityType, actor, search, diffFilter]);
 
   return (
     <div className="flex flex-col gap-6">
@@ -89,6 +98,7 @@ export function AdminActivityCenter({
         action={action}
         entityType={entityType}
         dateRange={dateRange}
+        diffFilter={diffFilter}
         lessonId={lessonId}
         actor={actor}
         search={search}
@@ -97,6 +107,7 @@ export function AdminActivityCenter({
         onActionChange={setAction}
         onEntityTypeChange={setEntityType}
         onDateRangeChange={setDateRange}
+        onDiffFilterChange={setDiffFilter}
         onLessonIdChange={setLessonId}
         onActorChange={setActor}
         onSearchChange={setSearch}

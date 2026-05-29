@@ -1,3 +1,12 @@
+import {
+  mapActivityLogRow,
+  type AdminActivityRow,
+} from "@/lib/admin/admin-activity-shared";
+import {
+  buildShallowDiffSummary,
+  getActivityDiff,
+  type ActivityDiffResult,
+} from "@/lib/admin/admin-activity-diff";
 import { getCurrentUser } from "@/lib/supabase/auth";
 import { hasSupabaseConfig, supabase } from "@/lib/supabase/client";
 
@@ -9,6 +18,9 @@ export type AdminActivityInput = {
   title: string;
   description?: string;
   metadata?: Record<string, unknown>;
+  beforeSnapshot?: Record<string, unknown>;
+  afterSnapshot?: Record<string, unknown>;
+  diffSummary?: Record<string, unknown>;
 };
 
 export const ADMIN_ACTIVITY_ACTIONS = {
@@ -41,6 +53,9 @@ export const ADMIN_ACTIVITY_ACTIONS = {
   releaseNotesUpdated: "release_notes_updated",
 } as const;
 
+export { getActivityDiff, buildShallowDiffSummary };
+export type { ActivityDiffResult };
+
 /** Best-effort audit log — never throws; does not block caller. */
 export async function logAdminActivity(
   input: AdminActivityInput
@@ -49,6 +64,12 @@ export async function logAdminActivity(
     if (!supabase || !hasSupabaseConfig) return;
 
     const { data: user } = await getCurrentUser();
+
+    const diffSummary =
+      input.diffSummary ??
+      (input.beforeSnapshot || input.afterSnapshot
+        ? buildShallowDiffSummary(input.beforeSnapshot, input.afterSnapshot)
+        : {});
 
     const { error } = await supabase.from("admin_activity_log").insert({
       actor_user_id: user?.id ?? null,
@@ -60,6 +81,9 @@ export async function logAdminActivity(
       title: input.title,
       description: input.description ?? null,
       metadata: input.metadata ?? {},
+      before_snapshot: input.beforeSnapshot ?? null,
+      after_snapshot: input.afterSnapshot ?? null,
+      diff_summary: diffSummary,
     });
 
     if (error) {
@@ -72,6 +96,25 @@ export async function logAdminActivity(
 
 export function logAdminActivityFireAndForget(input: AdminActivityInput): void {
   void logAdminActivity(input);
+}
+
+export async function getAdminActivityById(
+  id: string
+): Promise<AdminActivityRow | null> {
+  try {
+    if (!supabase || !hasSupabaseConfig) return null;
+
+    const { data, error } = await supabase
+      .from("admin_activity_log")
+      .select("*")
+      .eq("id", id)
+      .maybeSingle();
+
+    if (error || !data) return null;
+    return mapActivityLogRow(data as Record<string, unknown>);
+  } catch {
+    return null;
+  }
 }
 
 export function publishActionForStatus(

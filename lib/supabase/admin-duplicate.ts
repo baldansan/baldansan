@@ -1,6 +1,7 @@
 import { isCurrentUserAdmin } from "@/lib/supabase/admin";
 import {
   ADMIN_ACTIVITY_ACTIONS,
+  buildShallowDiffSummary,
   logAdminActivityFireAndForget,
 } from "@/lib/supabase/admin-activity";
 import {
@@ -253,6 +254,38 @@ export async function duplicateLesson(
       lessonId: targetId,
       title: `Lesson duplicated ${sourceId} → ${targetId}`,
       metadata: { sourceLessonId: sourceId },
+      beforeSnapshot: {
+        sourceLessonId: sourceId,
+        subtitleCount: subtitles.length,
+        vocabularyCount: vocabulary.length,
+        quizCount: quizQuestions.length,
+      },
+      afterSnapshot: {
+        targetLessonId: targetId,
+        title,
+        chineseTitle,
+        subtitleCount: subtitles.length,
+        vocabularyCount: vocabularyCount,
+        quizCount: quizCount,
+      },
+      diffSummary: {
+        sourceLessonId: sourceId,
+        targetLessonId: targetId,
+        ...buildShallowDiffSummary(
+          {
+            sourceLessonId: sourceId,
+            subtitleCount: subtitles.length,
+            vocabularyCount: vocabulary.length,
+            quizCount: quizQuestions.length,
+          },
+          {
+            targetLessonId: targetId,
+            subtitleCount: subtitles.length,
+            vocabularyCount: vocabularyCount,
+            quizCount: quizCount,
+          }
+        ),
+      },
     });
 
     return { data: { id: targetId }, error: null };

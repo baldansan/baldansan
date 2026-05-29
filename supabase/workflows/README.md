@@ -75,3 +75,16 @@ See [ADMIN_TASK_MANAGEMENT.md](../../ADMIN_TASK_MANAGEMENT.md).
 2. Verify table `public.admin_activity_log` and admin-only select/insert RLS policies.
 
 See [ADMIN_ACTIVITY_LOG.md](../../ADMIN_ACTIVITY_LOG.md).
+
+---
+
+## Activity snapshots (Phase 5 Step 25)
+
+**Migration file:** [../migrations/008_admin_activity_snapshots.sql](../migrations/008_admin_activity_snapshots.sql)
+
+### Run in Supabase SQL Editor
+
+1. Paste and run `008_admin_activity_snapshots.sql` (after `007_admin_activity_log.sql`).
+2. Verify columns `before_snapshot`, `after_snapshot`, `diff_summary` on `public.admin_activity_log`.
+
+See [ADMIN_ACTIVITY_DIFFS.md](../../ADMIN_ACTIVITY_DIFFS.md).

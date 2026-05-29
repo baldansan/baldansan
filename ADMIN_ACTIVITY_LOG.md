@@ -98,6 +98,17 @@ Hooks are wired in `admin-content.ts`, `admin-import.ts`, `admin-release.ts`, `a
 
 ---
 
+## Snapshots and diff detail (Step 25)
+
+Migration [008_admin_activity_snapshots.sql](./supabase/migrations/008_admin_activity_snapshots.sql) adds:
+
+- `before_snapshot` / `after_snapshot` — shallow JSON state
+- `diff_summary` — changed/added/removed field names
+
+Detail page: `/admin/activity/{id}` — field diff table and rollback preview (disabled). See [ADMIN_ACTIVITY_DIFFS.md](./ADMIN_ACTIVITY_DIFFS.md).
+
+---
+
 ## RLS and security
 
 - RLS enabled on `admin_activity_log`.
@@ -111,7 +122,8 @@ Hooks are wired in `admin-content.ts`, `admin-import.ts`, `admin-release.ts`, `a
 
 1. Open Supabase SQL Editor.
 2. Run [supabase/migrations/007_admin_activity_log.sql](./supabase/migrations/007_admin_activity_log.sql) after migrations `001`–`006`.
-3. Confirm table `public.admin_activity_log` and admin select/insert policies exist.
+3. Run [supabase/migrations/008_admin_activity_snapshots.sql](./supabase/migrations/008_admin_activity_snapshots.sql) for before/after snapshots.
+4. Confirm table `public.admin_activity_log` and admin select/insert policies exist.
 
 See also [supabase/workflows/README.md](./supabase/workflows/README.md).
 
@@ -128,8 +140,7 @@ See also [supabase/workflows/README.md](./supabase/workflows/README.md).
 
 ## Future improvements
 
-- Rollback from activity (restore previous state from metadata snapshots)
-- Before/after diffs on metadata and content edits
+- Safe rollback execution (Step 26) from stored snapshots
 - External notifications (email/Slack) on critical actions
 - Export audit log as CSV for compliance review
 
@@ -139,4 +150,4 @@ See also [supabase/workflows/README.md](./supabase/workflows/README.md).
 
 - [ADMIN_PLAN.md](./ADMIN_PLAN.md) — Phase 5 roadmap
 - [ADMIN_TASK_MANAGEMENT.md](./ADMIN_TASK_MANAGEMENT.md) — task actions that generate log entries
-- [RELEASE_WORKFLOW.md](./RELEASE_WORKFLOW.md) — release/QA actions logged
+- [ADMIN_ACTIVITY_DIFFS.md](./ADMIN_ACTIVITY_DIFFS.md) — snapshots and diff preview

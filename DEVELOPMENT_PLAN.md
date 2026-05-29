@@ -299,7 +299,14 @@ Phased roadmap from MVP demo to production product.
 - Best-effort logging on lesson, content, publish, media, task, release, import, export actions
 - [ADMIN_ACTIVITY_LOG.md](./ADMIN_ACTIVITY_LOG.md)
 
-**Next:** Phase 5 Step 25 — Activity diff/rollback preview. Or Phase 5 Final Audit.
+**Phase 5 Step 25 — Completed:** Activity diff and rollback preview.
+
+- [supabase/migrations/008_admin_activity_snapshots.sql](./supabase/migrations/008_admin_activity_snapshots.sql)
+- Before/after snapshots on metadata, media, status, release, import, restore, duplicate
+- `/admin/activity/{id}` detail page with shallow field diff and disabled rollback preview
+- [ADMIN_ACTIVITY_DIFFS.md](./ADMIN_ACTIVITY_DIFFS.md)
+
+**Next:** Phase 5 Step 26 — Safe rollback execution for lesson metadata/content. Or Phase 5 Final Audit.
 - [components/admin/bulk-import-editor.tsx](./components/admin/bulk-import-editor.tsx) on lesson edit page
 - [LESSON_IMPORT_FORMAT.md](./LESSON_IMPORT_FORMAT.md)
 
@@ -336,8 +343,9 @@ Phased roadmap from MVP demo to production product.
 | 22 | Admin Task Center / content review queue | ✅ Completed |
 | 23 | Persistent admin task management | ✅ Completed |
 | 24 | Admin activity log / audit trail | ✅ Completed |
+| 25 | Activity diff / rollback preview | ✅ Completed |
 
-**Next (Phase 5):** Step 25 — Activity diff/rollback preview. Or Phase 5 Final Audit.
+**Next (Phase 5):** Step 26 — Safe rollback execution for lesson metadata/content. Or Phase 5 Final Audit.
 
 **Exit criteria:** New lesson published through admin UI without deploying code.
 

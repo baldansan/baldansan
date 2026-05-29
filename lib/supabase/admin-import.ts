@@ -2,9 +2,10 @@ import { analyzeImportPayloadExtras } from "@/lib/admin/import-qa";
 import { isCurrentUserAdmin } from "@/lib/supabase/admin";
 import {
   ADMIN_ACTIVITY_ACTIONS,
+  buildShallowDiffSummary,
   logAdminActivityFireAndForget,
 } from "@/lib/supabase/admin-activity";
-import { refreshLessonCounts } from "@/lib/supabase/admin-content";
+import { getLessonCompleteness, refreshLessonCounts } from "@/lib/supabase/admin-content";
 import { hasSupabaseConfig, supabase } from "@/lib/supabase/client";
 
 export type AdminImportResult<T> = {
@@ -418,6 +419,15 @@ export async function bulkImportLessonContent(
   }
 
   try {
+    const beforeCompleteness = await getLessonCompleteness(trimmedLessonId);
+    const beforeSnapshot = beforeCompleteness.data
+      ? {
+          subtitleCount: beforeCompleteness.data.subtitleCount,
+          vocabularyCount: beforeCompleteness.data.vocabularyCount,
+          quizCount: beforeCompleteness.data.quizCount,
+        }
+      : undefined;
+
     if (mode === "replace") {
       for (const table of [
         "subtitle_lines",
@@ -493,6 +503,19 @@ export async function bulkImportLessonContent(
       return { data: null, error: refresh.error };
     }
 
+    const afterCompleteness = await getLessonCompleteness(trimmedLessonId);
+    const afterSnapshot = afterCompleteness.data
+      ? {
+          subtitleCount: afterCompleteness.data.subtitleCount,
+          vocabularyCount: afterCompleteness.data.vocabularyCount,
+          quizCount: afterCompleteness.data.quizCount,
+        }
+      : {
+          subtitleCount: payload.subtitles.length,
+          vocabularyCount: payload.vocabulary.length,
+          quizCount: payload.quizQuestions.length,
+        };
+
     logAdminActivityFireAndForget({
       action: ADMIN_ACTIVITY_ACTIONS.bulkImportCompleted,
       entityType: "lesson",
@@ -504,6 +527,15 @@ export async function bulkImportLessonContent(
         subtitlesInserted: payload.subtitles.length,
         vocabularyInserted: payload.vocabulary.length,
         quizQuestionsInserted: payload.quizQuestions.length,
+      },
+      beforeSnapshot,
+      afterSnapshot,
+      diffSummary: {
+        mode,
+        subtitlesInserted: payload.subtitles.length,
+        vocabularyInserted: payload.vocabulary.length,
+        quizQuestionsInserted: payload.quizQuestions.length,
+        ...buildShallowDiffSummary(beforeSnapshot, afterSnapshot),
       },
     });
 

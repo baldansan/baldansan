@@ -170,9 +170,9 @@ Helpers: [lib/supabase/auth.ts](./lib/supabase/auth.ts). Header shows **Нэвт
 
 **Task management:** dismiss, resolve, priority, due dates, notes on `/admin/tasks` (requires migration `006_admin_tasks.sql`). See [ADMIN_TASK_MANAGEMENT.md](./ADMIN_TASK_MANAGEMENT.md).
 
-**Activity log:** `/admin/activity` — audit trail for admin lesson, content, publish, task, and release actions (requires migration `007_admin_activity_log.sql`). See [ADMIN_ACTIVITY_LOG.md](./ADMIN_ACTIVITY_LOG.md).
+**Activity log:** `/admin/activity` — audit trail with diff detail at `/admin/activity/{id}` (requires migrations `007` + `008`). See [ADMIN_ACTIVITY_LOG.md](./ADMIN_ACTIVITY_LOG.md) and [ADMIN_ACTIVITY_DIFFS.md](./ADMIN_ACTIVITY_DIFFS.md).
 
-**Next step:** Phase 5 Step 25 — Activity diff/rollback preview. Or Phase 5 Final Audit.
+**Next step:** Phase 5 Step 26 — Safe rollback execution. Or Phase 5 Final Audit.
 
 ## Documentation
 
@@ -180,6 +180,7 @@ Helpers: [lib/supabase/auth.ts](./lib/supabase/auth.ts). Header shows **Нэвт
 - [DEVELOPMENT_PLAN.md](./DEVELOPMENT_PLAN.md) — roadmap (Phase 5 in progress)
 - [ADMIN_PLAN.md](./ADMIN_PLAN.md) — Phase 5 admin planning
 - [ADMIN_ACTIVITY_LOG.md](./ADMIN_ACTIVITY_LOG.md) — admin audit trail
+- [ADMIN_ACTIVITY_DIFFS.md](./ADMIN_ACTIVITY_DIFFS.md) — snapshots and diff preview
 - [DATABASE_SCHEMA.md](./DATABASE_SCHEMA.md) — schema + Auth/RLS plan
 - [AUTH_PLAN.md](./AUTH_PLAN.md) — Phase 4 auth details
 - [CONTENT_AUTHORING_GUIDE.md](./CONTENT_AUTHORING_GUIDE.md) — content workflow

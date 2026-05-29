@@ -7,7 +7,10 @@ import type {
   AdminActivityRow,
   AdminActivitySummary,
 } from "@/lib/admin/admin-activity-shared";
-import { formatActivityActor } from "@/lib/admin/admin-activity-shared";
+import {
+  formatActivityActor,
+  mapActivityLogRow,
+} from "@/lib/admin/admin-activity-shared";
 
 export type {
   AdminActivityRow,
@@ -57,22 +60,7 @@ const TASK_ACTIONS = new Set([
 ]);
 
 function mapRow(row: Record<string, unknown>): AdminActivityRow {
-  return {
-    id: String(row.id),
-    actorUserId: row.actor_user_id ? String(row.actor_user_id) : null,
-    actorEmail: row.actor_email ? String(row.actor_email) : null,
-    action: String(row.action),
-    entityType: String(row.entity_type),
-    entityId: row.entity_id ? String(row.entity_id) : null,
-    lessonId: row.lesson_id ? String(row.lesson_id) : null,
-    title: String(row.title),
-    description: row.description ? String(row.description) : null,
-    metadata:
-      row.metadata && typeof row.metadata === "object"
-        ? (row.metadata as Record<string, unknown>)
-        : {},
-    createdAt: String(row.created_at),
-  };
+  return mapActivityLogRow(row);
 }
 
 function startOfTodayIso(): string {
@@ -225,4 +213,60 @@ export async function getRecentAdminActivity(limit = 5): Promise<{
 }> {
   const { rows, warnings } = await fetchActivityRows({ limit });
   return { rows, warnings };
+}
+
+export async function getAdminActivityById(
+  id: string
+): Promise<{ row: AdminActivityRow | null; warnings: string[] }> {
+  if (!hasSupabaseConfig) {
+    return { row: null, warnings: ["Supabase not configured."] };
+  }
+
+  const client = await createServerSupabaseClient();
+  if (!client) {
+    return { row: null, warnings: ["Supabase client unavailable."] };
+  }
+
+  try {
+    const { data, error } = await client
+      .from("admin_activity_log")
+      .select("*")
+      .eq("id", id)
+      .maybeSingle();
+
+    if (error) {
+      const message = error.message ?? "";
+      if (message.includes("admin_activity_log") || message.includes("does not exist")) {
+        return {
+          row: null,
+          warnings: [
+            "Run supabase/migrations/007_admin_activity_log.sql for activity log.",
+          ],
+        };
+      }
+      if (
+        message.includes("before_snapshot") ||
+        message.includes("after_snapshot")
+      ) {
+        return {
+          row: null,
+          warnings: [
+            "Run supabase/migrations/008_admin_activity_snapshots.sql for snapshot columns.",
+          ],
+        };
+      }
+      return { row: null, warnings: [`Activity log error: ${message}`] };
+    }
+
+    if (!data) {
+      return { row: null, warnings: [] };
+    }
+
+    return {
+      row: mapRow(data as Record<string, unknown>),
+      warnings: [],
+    };
+  } catch {
+    return { row: null, warnings: ["Could not load activity detail."] };
+  }
 }

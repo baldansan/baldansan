@@ -113,6 +113,9 @@ See [CONTENT_WORKFLOW.md](./CONTENT_WORKFLOW.md):
 | 22 | Admin Task Center and content review queue | ✅ Completed |
 | 23 | Persistent admin task management | ✅ Completed |
 | 24 | Admin activity log / audit trail | ✅ Completed |
+| 25 | Activity diff / rollback preview | ✅ Completed |
+
+Step 25: [ADMIN_ACTIVITY_DIFFS.md](./ADMIN_ACTIVITY_DIFFS.md), [supabase/migrations/008_admin_activity_snapshots.sql](./supabase/migrations/008_admin_activity_snapshots.sql), `/admin/activity/{id}` detail + diff viewer.
 
 Step 24: [ADMIN_ACTIVITY_LOG.md](./ADMIN_ACTIVITY_LOG.md), [supabase/migrations/007_admin_activity_log.sql](./supabase/migrations/007_admin_activity_log.sql), `/admin/activity`, dashboard + edit + builder integration.
 

@@ -7,6 +7,7 @@ import {
 import { isCurrentUserAdmin } from "@/lib/supabase/admin";
 import {
   ADMIN_ACTIVITY_ACTIONS,
+  buildShallowDiffSummary,
   logAdminActivityFireAndForget,
   publishActionForStatus,
 } from "@/lib/supabase/admin-activity";
@@ -163,6 +164,62 @@ export type AdminLessonMetadataRow = {
   source_note: string | null;
   media_status: string;
 };
+
+function metadataSnapshotFromRow(
+  row: AdminLessonMetadataRow
+): Record<string, unknown> {
+  return {
+    title: row.title,
+    chineseTitle: row.chinese_title,
+    subtitle: row.subtitle,
+    description: row.description,
+    duration: row.duration,
+    status: row.status,
+    orderIndex: row.order_index,
+    vocabularyCount: row.vocabulary_count,
+    quizCount: row.quiz_count,
+  };
+}
+
+function metadataSnapshotFromInput(
+  input: UpdateLessonMetadataInput
+): Record<string, unknown> {
+  return {
+    title: input.title,
+    chineseTitle: input.chineseTitle,
+    subtitle: input.subtitle ?? null,
+    description: input.description ?? null,
+    duration: input.duration ?? null,
+    status: input.status,
+    orderIndex: input.orderIndex,
+    vocabularyCount: input.vocabularyCount,
+    quizCount: input.quizCount,
+  };
+}
+
+function mediaSnapshotFromRow(
+  row: AdminLessonMetadataRow
+): Record<string, unknown> {
+  return {
+    videoUrl: row.video_url,
+    thumbnailUrl: row.thumbnail_url,
+    audioUrl: row.audio_url,
+    sourceNote: row.source_note,
+    mediaStatus: row.media_status,
+  };
+}
+
+function mediaSnapshotFromInput(
+  input: UpdateLessonMediaInput
+): Record<string, unknown> {
+  return {
+    videoUrl: input.videoUrl ?? null,
+    thumbnailUrl: input.thumbnailUrl ?? null,
+    audioUrl: input.audioUrl ?? null,
+    sourceNote: input.sourceNote ?? null,
+    mediaStatus: input.mediaStatus,
+  };
+}
 
 export type CreateSubtitleLineInput = {
   lessonId: string;
@@ -437,6 +494,12 @@ export async function updateLessonMetadata(
 
   const v = validated.data;
 
+  const beforeRow = await getAdminLessonMetadataById(lessonId);
+  const beforeSnapshot = beforeRow.data
+    ? metadataSnapshotFromRow(beforeRow.data)
+    : undefined;
+  const afterSnapshot = metadataSnapshotFromInput(v);
+
   try {
     const { error } = await supabase
       .from("lessons")
@@ -465,6 +528,9 @@ export async function updateLessonMetadata(
       title: `Lesson ${lessonId} metadata updated`,
       description: v.title,
       metadata: { status: v.status, orderIndex: v.orderIndex },
+      beforeSnapshot,
+      afterSnapshot,
+      diffSummary: buildShallowDiffSummary(beforeSnapshot, afterSnapshot),
     });
 
     return { data: { id: lessonId }, error: null };
@@ -541,6 +607,12 @@ export async function updateLessonMedia(
 
   const v = validated.data;
 
+  const beforeRow = await getAdminLessonMetadataById(lessonId);
+  const beforeSnapshot = beforeRow.data
+    ? mediaSnapshotFromRow(beforeRow.data)
+    : undefined;
+  const afterSnapshot = mediaSnapshotFromInput(v);
+
   try {
     const { error } = await supabase
       .from("lessons")
@@ -570,6 +642,9 @@ export async function updateLessonMedia(
         ? `Lesson ${lessonId} media cleared`
         : `Lesson ${lessonId} media updated`,
       metadata: { mediaStatus: v.mediaStatus },
+      beforeSnapshot,
+      afterSnapshot,
+      diffSummary: buildShallowDiffSummary(beforeSnapshot, afterSnapshot),
     });
 
     return {
@@ -613,6 +688,18 @@ export async function updateLessonStatus(
     return { data: null, error: gate.error };
   }
 
+  const beforeResult = await queryLessonById<{ status: string; release_status?: string }>(
+    "status, release_status",
+    lessonId
+  );
+  const beforeSnapshot = beforeResult.data
+    ? {
+        status: beforeResult.data.status,
+        releaseStatus: beforeResult.data.release_status ?? null,
+      }
+    : undefined;
+  const afterSnapshot = { status, releaseStatus: beforeResult.data?.release_status ?? null };
+
   try {
     const { error } = await supabase
       .from("lessons")
@@ -630,6 +717,12 @@ export async function updateLessonStatus(
       lessonId,
       title: `Lesson ${lessonId} status → ${status}`,
       metadata: { status },
+      beforeSnapshot,
+      afterSnapshot: { status, releaseStatus: afterSnapshot.releaseStatus },
+      diffSummary: buildShallowDiffSummary(beforeSnapshot, {
+        status,
+        releaseStatus: afterSnapshot.releaseStatus,
+      }),
     });
 
     return { data: { id: lessonId, status }, error: null };

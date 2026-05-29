@@ -3,11 +3,13 @@
 export type ActivityActionFilter = "all" | string;
 export type ActivityEntityFilter = "all" | string;
 export type ActivityDateFilter = "all" | "today" | "7d" | "30d";
+export type ActivityDiffFilter = "all" | "has_diff" | "no_diff";
 
 type Props = {
   action: ActivityActionFilter;
   entityType: ActivityEntityFilter;
   dateRange: ActivityDateFilter;
+  diffFilter: ActivityDiffFilter;
   lessonId: string;
   actor: string;
   search: string;
@@ -16,6 +18,7 @@ type Props = {
   onActionChange: (value: ActivityActionFilter) => void;
   onEntityTypeChange: (value: ActivityEntityFilter) => void;
   onDateRangeChange: (value: ActivityDateFilter) => void;
+  onDiffFilterChange: (value: ActivityDiffFilter) => void;
   onLessonIdChange: (value: string) => void;
   onActorChange: (value: string) => void;
   onSearchChange: (value: string) => void;
@@ -26,6 +29,7 @@ export function ActivityFilterBar({
   action,
   entityType,
   dateRange,
+  diffFilter,
   lessonId,
   actor,
   search,
@@ -34,6 +38,7 @@ export function ActivityFilterBar({
   onActionChange,
   onEntityTypeChange,
   onDateRangeChange,
+  onDiffFilterChange,
   onLessonIdChange,
   onActorChange,
   onSearchChange,
@@ -123,6 +128,27 @@ export function ActivityFilterBar({
               <option value="today">Today</option>
               <option value="7d">Last 7 days</option>
               <option value="30d">Last 30 days</option>
+            </select>
+          </div>
+
+          <div>
+            <label
+              htmlFor="activity-diff"
+              className="text-xs font-semibold uppercase tracking-wide text-slate-500"
+            >
+              Diff
+            </label>
+            <select
+              id="activity-diff"
+              value={diffFilter}
+              onChange={(e) =>
+                onDiffFilterChange(e.target.value as ActivityDiffFilter)
+              }
+              className="mt-2 w-full rounded-xl border border-slate-200 px-3 py-2 text-sm"
+            >
+              <option value="all">All</option>
+              <option value="has_diff">Has diff</option>
+              <option value="no_diff">No diff</option>
             </select>
           </div>
 
