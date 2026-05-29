@@ -124,7 +124,22 @@ Also verify:
    - `https://your-domain.com/**`
    - `https://your-domain.com/login`
    - `https://your-domain.com/profile`
-5. Re-test `/deployment-check`, `/login`, `/admin/system-check`, and `/admin/production-qa`.
+5. Re-test `/deployment-check`, `/login`, `/admin/system-check`, `/admin/production-qa`, and `/admin/launch-candidate`.
+
+---
+
+## G. Post-deploy verification and rollback
+
+After every production deploy:
+
+1. Open [`/deployment-check`](https://baldansan.vercel.app/deployment-check) — confirm no **fail** rows.
+2. Sign in as admin → [`/admin/system-check`](https://baldansan.vercel.app/admin/system-check).
+3. Run [`/admin/production-qa`](https://baldansan.vercel.app/admin/production-qa) — update checklist and export if needed.
+4. Before go-live, complete [`/admin/launch-candidate`](https://baldansan.vercel.app/admin/launch-candidate) — final smoke test and go-live decision.
+
+**Rollback:** See [ROLLBACK_PLAN.md](./ROLLBACK_PLAN.md) — Vercel Deployments → previous stable → Promote; Git revert if needed; Supabase schema is not auto-reversible.
+
+**Monitoring:** See [POST_LAUNCH_MONITORING.md](./POST_LAUNCH_MONITORING.md) — daily checks for the first week after launch.
 
 ---
 
@@ -158,3 +173,6 @@ Also verify:
 - [SUPABASE_PRODUCTION_SETUP.md](./SUPABASE_PRODUCTION_SETUP.md)
 - [PRODUCTION_ROUTE_TESTING.md](./PRODUCTION_ROUTE_TESTING.md)
 - [LAUNCH_QA_REPORT_TEMPLATE.md](./LAUNCH_QA_REPORT_TEMPLATE.md)
+- [ROLLBACK_PLAN.md](./ROLLBACK_PLAN.md)
+- [POST_LAUNCH_MONITORING.md](./POST_LAUNCH_MONITORING.md)
+- [GO_LIVE_NOTES.md](./GO_LIVE_NOTES.md)

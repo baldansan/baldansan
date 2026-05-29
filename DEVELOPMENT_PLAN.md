@@ -372,12 +372,11 @@ Phased roadmap from MVP demo to production product.
 
 **Goal:** Deploy Buunduu Surtsgaay safely to production (Vercel + Supabase) with RLS, auth, storage, and admin CMS verified.
 
-**Phase 6 Step 5 — Completed:** Security/RLS final audit and launch candidate tools.
+**Phase 6 Step 6 — Completed:** Launch candidate final smoke test and go-live notes.
 
-- `/admin/security-audit` — automated + manual security checks with export
-- [SECURITY_RLS_AUDIT.md](./SECURITY_RLS_AUDIT.md)
-- [LAUNCH_CANDIDATE_CHECKLIST.md](./LAUNCH_CANDIDATE_CHECKLIST.md)
-- Enhanced `supabase/verify/production_verification.sql`
+- `/admin/launch-candidate` — final smoke test, go-live decision, export
+- [GO_LIVE_NOTES.md](./GO_LIVE_NOTES.md), [ROLLBACK_PLAN.md](./ROLLBACK_PLAN.md), [POST_LAUNCH_MONITORING.md](./POST_LAUNCH_MONITORING.md)
+- [PHASE_6_LAUNCH_SUMMARY.md](./PHASE_6_LAUNCH_SUMMARY.md)
 
 **Phase 6 roadmap:**
 
@@ -388,9 +387,9 @@ Phased roadmap from MVP demo to production product.
 | 3 | Vercel deployment setup | ✅ Completed |
 | 4 | Production route testing | ✅ Completed |
 | 5 | Security / RLS final audit | ✅ Completed |
-| 6 | Launch candidate | Pending |
+| 6 | Launch candidate | ✅ Completed |
 
-**Next:** Phase 6 Step 6 — Launch candidate final smoke test and go-live notes.
+**Phase 6 complete.** **Next:** Production launch sign-off, then Phase 7 — Product polish / payment.
 
 **Exit criteria:** App deployed to Vercel, Supabase production configured, all checklists green, public + admin routes verified.
 

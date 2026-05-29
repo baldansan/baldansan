@@ -113,6 +113,10 @@ Concise go-live checklist. See [DEPLOYMENT_PLAN.md](./DEPLOYMENT_PLAN.md) for de
 - [ ] No secrets in git history or client bundle
 - [ ] `/admin/final-audit` reviewed
 - [ ] Rollback plan documented (Supabase backups / lesson export JSON)
+- [ ] `/admin/launch-candidate` completed — export launch report
+- [ ] Go-live decision marked (launch candidate or needs review)
+- [ ] [GO_LIVE_NOTES.md](./GO_LIVE_NOTES.md) reviewed
+- [ ] [ROLLBACK_PLAN.md](./ROLLBACK_PLAN.md) reviewed
 - [ ] Launch candidate approved
 
 ---
@@ -127,5 +131,8 @@ Concise go-live checklist. See [DEPLOYMENT_PLAN.md](./DEPLOYMENT_PLAN.md) for de
 - [PRODUCTION_ROUTE_TESTING.md](./PRODUCTION_ROUTE_TESTING.md)
 - [SECURITY_RLS_AUDIT.md](./SECURITY_RLS_AUDIT.md)
 - [LAUNCH_CANDIDATE_CHECKLIST.md](./LAUNCH_CANDIDATE_CHECKLIST.md)
+- [GO_LIVE_NOTES.md](./GO_LIVE_NOTES.md)
+- [ROLLBACK_PLAN.md](./ROLLBACK_PLAN.md)
 - `/admin/production-qa` (after deploy)
 - `/admin/security-audit` (before launch)
+- `/admin/launch-candidate` (final smoke test before go-live)

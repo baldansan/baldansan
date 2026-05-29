@@ -185,7 +185,9 @@ Helpers: [lib/supabase/auth.ts](./lib/supabase/auth.ts). Header shows **Нэвт
 
 **Security audit:** [`/admin/security-audit`](/admin/security-audit) — RLS, auth, storage, visibility checks before launch (export JSON/Markdown).
 
-**Next step:** Phase 6 Step 6 — Launch candidate final smoke test and go-live notes.
+**Launch candidate:** [`/admin/launch-candidate`](/admin/launch-candidate) — final smoke test, go-live decision, launch report export (run before go-live and after every production deploy).
+
+**Phase 6 complete.** Next: production launch sign-off per [GO_LIVE_NOTES.md](./GO_LIVE_NOTES.md), then Phase 7 polish.
 
 ## Deployment (Phase 6)
 
@@ -208,7 +210,7 @@ Copy [.env.example](./.env.example) to `.env.local` locally. On Vercel, set `NEX
 
 ## Production readiness (Phase 6)
 
-Phase 6 Steps 1–4 complete. Run checklists on production before launch candidate sign-off.
+Phase 6 complete. Run checklists on production before launch sign-off.
 
 | Doc | Purpose |
 |-----|---------|
@@ -221,6 +223,11 @@ Phase 6 Steps 1–4 complete. Run checklists on production before launch candida
 | [`/deployment-check`](/deployment-check) | Public smoke test (post-deploy) |
 | [`/admin/production-qa`](/admin/production-qa) | Launch QA checklist (post-deploy) |
 | [`/admin/security-audit`](/admin/security-audit) | Security/RLS audit (pre-launch) |
+| [`/admin/launch-candidate`](/admin/launch-candidate) | Final smoke test + go-live decision |
+| [GO_LIVE_NOTES.md](./GO_LIVE_NOTES.md) | Launch steps and day-of checklist |
+| [ROLLBACK_PLAN.md](./ROLLBACK_PLAN.md) | Vercel/Git/Supabase rollback |
+| [POST_LAUNCH_MONITORING.md](./POST_LAUNCH_MONITORING.md) | First-week monitoring routine |
+| [PHASE_6_LAUNCH_SUMMARY.md](./PHASE_6_LAUNCH_SUMMARY.md) | Phase 6 launch summary |
 | [PRODUCTION_ROUTE_TESTING.md](./PRODUCTION_ROUTE_TESTING.md) | Live testing guide |
 | [SECURITY_RLS_AUDIT.md](./SECURITY_RLS_AUDIT.md) | RLS model and audit guide |
 | [LAUNCH_CANDIDATE_CHECKLIST.md](./LAUNCH_CANDIDATE_CHECKLIST.md) | Final launch sign-off |
@@ -230,7 +237,7 @@ Phase 6 Steps 1–4 complete. Run checklists on production before launch candida
 ## Documentation
 
 - [PROJECT_CHECKPOINT.md](./PROJECT_CHECKPOINT.md) — status & audits
-- [DEVELOPMENT_PLAN.md](./DEVELOPMENT_PLAN.md) — roadmap (Phase 6 in progress)
+- [DEVELOPMENT_PLAN.md](./DEVELOPMENT_PLAN.md) — roadmap (Phase 6 complete)
 - [DEPLOYMENT_PLAN.md](./DEPLOYMENT_PLAN.md) — production deployment plan
 - [PRODUCTION_CHECKLIST.md](./PRODUCTION_CHECKLIST.md) — go-live checklist
 - [PHASE_5_FINAL_AUDIT.md](./PHASE_5_FINAL_AUDIT.md) — Phase 5 audit summary
