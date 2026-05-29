@@ -519,9 +519,10 @@ Phased roadmap from MVP demo to production product.
 - Games hub placeholder → quiz/review links
 - **Practice games (v1.0):** match, translate, missing word, arrange, stroke demo — [PRACTICE_GAMES.md](./PRACTICE_GAMES.md)
 - **Device/browser TTS pronunciation support** for Korean (`ko-KR`) and Chinese (`zh-CN`) — [TTS_PRONUNCIATION_SYSTEM.md](./TTS_PRONUNCIATION_SYSTEM.md)
+- **Admin ZIP lesson package import** — `/admin/import`, [LESSON_ZIP_IMPORT_FORMAT.md](./LESSON_ZIP_IMPORT_FORMAT.md)
 - No schema/RLS changes
 
-**Next:** HSK content upload sprint and game data enrichment.
+**Next:** Korean Book 1 content packaging and import.
 
 ---
 

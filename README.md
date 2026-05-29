@@ -12,6 +12,8 @@ A Mongolian–Chinese language learning web app. Users learn Chinese through sho
 
 **Mobile app-like learner UI** — centered phone shell (430px), bottom tab nav, routes `/home`, `/study`, `/kanji`, `/games`, `/profile`. **v1.0 practice games** (match, translate, missing word, arrange, stroke demo) use lesson vocabulary with localStorage scores. **Device/browser TTS pronunciation support** added for Korean (`ko-KR`) and Chinese (`zh-CN`) — speaker buttons on vocabulary, subtitles, quiz, and games; settings on `/profile`. See [TTS_PRONUNCIATION_SYSTEM.md](./TTS_PRONUNCIATION_SYSTEM.md), [PRACTICE_GAMES.md](./PRACTICE_GAMES.md), [MOBILE_APP_REDESIGN_REPORT.md](./MOBILE_APP_REDESIGN_REPORT.md), [MOBILE_UX_POLISH_REPORT.md](./MOBILE_UX_POLISH_REPORT.md).
 
+**Admin ZIP lesson import** at `/admin/import` — upload Korean/Chinese lesson packages (manifest + JSON + optional media). See [LESSON_ZIP_IMPORT_FORMAT.md](./LESSON_ZIP_IMPORT_FORMAT.md), [KOREAN_BOOK_ZIP_WORKFLOW.md](./KOREAN_BOOK_ZIP_WORKFLOW.md).
+
 **Out of scope for v1.0:** Payment, email campaigns, full B2B SaaS, native app. B2B/classroom routes are **foundation only** — they must not block learner launch.
 
 See [V1_LAUNCH_STABILIZATION.md](./V1_LAUNCH_STABILIZATION.md), [V1_LAUNCH_BLOCKERS.md](./V1_LAUNCH_BLOCKERS.md), [V1_STABILIZATION_REPORT.md](./V1_STABILIZATION_REPORT.md), [MOBILE_APP_REDESIGN_REPORT.md](./MOBILE_APP_REDESIGN_REPORT.md), [MOBILE_UX_POLISH_REPORT.md](./MOBILE_UX_POLISH_REPORT.md), [SUPABASE_MIGRATION_STATUS.md](./SUPABASE_MIGRATION_STATUS.md).
@@ -99,6 +101,7 @@ See [V1_LAUNCH_STABILIZATION.md](./V1_LAUNCH_STABILIZATION.md), [V1_LAUNCH_BLOCK
 | `/deployment-check` | Public deployment smoke test (post-deploy) |
 | `/admin` | Admin dashboard (admin role required) |
 | `/admin/lessons` | Lesson QA + edit |
+| `/admin/import` | ZIP lesson package import (draft) |
 | `/admin/activity` | Admin activity log |
 | `/admin/final-audit` | Phase 5 readiness checklist |
 | `/admin/production-qa` | Production launch QA checklist |
@@ -224,7 +227,7 @@ Helpers: [lib/supabase/auth.ts](./lib/supabase/auth.ts). Header shows **Нэвт
 - [LESSON_PROMPT_TEMPLATE.md](./LESSON_PROMPT_TEMPLATE.md) — master ChatGPT prompt for lesson JSON
 - [supabase/admin/README.md](./supabase/admin/README.md) — run `001_admin_profiles_setup.sql`, bootstrap admin user
 
-**Routes:** `/admin` · `/admin/lesson-builder` · `/admin/lessons` · `/admin/lessons/new` · `/admin/lessons/1/edit` (example)
+**Routes:** `/admin` · `/admin/import` · `/admin/lesson-builder` · `/admin/lessons` · `/admin/lessons/new` · `/admin/lessons/1/edit` (example)
 
 **Admin editors:** `/admin/lessons/new` (draft metadata) · `/admin/lessons/{id}/edit` (metadata save, subtitle, vocabulary, quiz CRUD).
 

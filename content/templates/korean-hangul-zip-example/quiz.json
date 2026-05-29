@@ -1,0 +1,16 @@
+[
+  {
+    "type": "multiple_choice",
+    "question": "「ㅏ」-ийн romanization аль вэ?",
+    "options": ["a", "o", "u", "i"],
+    "correctAnswer": "a",
+    "explanation": "ㅏ → a"
+  },
+  {
+    "type": "multiple_choice",
+    "question": "「가」-ийг уншвал:",
+    "options": ["ga", "na", "da", "ba"],
+    "correctAnswer": "ga",
+    "explanation": "가 = ㄱ+ㅏ"
+  }
+]

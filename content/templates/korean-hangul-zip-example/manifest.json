@@ -1,0 +1,11 @@
+{
+  "packageVersion": "1.0",
+  "courseId": "korean-1",
+  "lessonId": "k-pre-01",
+  "language": "ko-KR",
+  "title": "PreLesson 01 — Үндсэн эгшиг",
+  "mongolianTitle": "Хангыль — үндсэн эgшиг",
+  "source": "Korean Book 1 ZIP example (text only)",
+  "hasAudio": false,
+  "hasImages": false
+}

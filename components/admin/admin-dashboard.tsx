@@ -392,6 +392,12 @@ export function AdminDashboard({
             Learning analytics
           </Link>
           <Link
+            href="/admin/import"
+            className="inline-flex rounded-full bg-emerald-500 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-emerald-600"
+          >
+            ZIP import хийх
+          </Link>
+          <Link
             href="/admin/lesson-builder"
             className="inline-flex rounded-full bg-emerald-500 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-emerald-600"
           >

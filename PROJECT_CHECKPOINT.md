@@ -20,6 +20,8 @@
 
 **Device/browser TTS pronunciation support added** for Korean and Chinese — speaker buttons on vocabulary, subtitles, quiz, games; settings on `/profile`. See [TTS_PRONUNCIATION_SYSTEM.md](./TTS_PRONUNCIATION_SYSTEM.md).
 
+**Admin ZIP lesson package import workflow added** — `/admin/import` for Korean/Chinese ZIP packages (text + optional media). See [LESSON_ZIP_IMPORT_FORMAT.md](./LESSON_ZIP_IMPORT_FORMAT.md).
+
 **Next:** HSK content upload sprint and game data enrichment.
 
 ---

@@ -1,0 +1,34 @@
+[
+  {
+    "chinese": "ㅏ",
+    "pinyin": "a",
+    "mongolian": "эгшиг «а»",
+    "hskLevel": "KR1",
+    "exampleChinese": "아",
+    "exampleMongolian": "а"
+  },
+  {
+    "chinese": "ㅓ",
+    "pinyin": "eo",
+    "mongolian": "эгшиг «eo»",
+    "hskLevel": "KR1",
+    "exampleChinese": "어",
+    "exampleMongolian": "eo"
+  },
+  {
+    "chinese": "ㅗ",
+    "pinyin": "o",
+    "mongolian": "эгшиг «о»",
+    "hskLevel": "KR1",
+    "exampleChinese": "오",
+    "exampleMongolian": "о"
+  },
+  {
+    "chinese": "가",
+    "pinyin": "ga",
+    "mongolian": "га (ㄱ+ㅏ)",
+    "hskLevel": "KR1",
+    "exampleChinese": "가방",
+    "exampleMongolian": "цүнх"
+  }
+]
