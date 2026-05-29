@@ -2,7 +2,22 @@
 
 **Project:** Buunduu Surtsgaay (Бөөндөө Сурцгаая)  
 **Checkpoint date:** May 2026  
-**Status:** Phase 5 **completed** — Phase 5 Final Audit completed
+**Status:** Phase 6 Step 1 production readiness planning **completed**
+
+---
+
+## Phase 6 Step 1 — Production readiness planning — **Completed**
+
+Phase 6 Step 1: Production readiness planning and deployment checklist added.
+
+| Area | Deliverable |
+|------|-------------|
+| Docs | DEPLOYMENT_PLAN.md, PRODUCTION_CHECKLIST.md, VERCEL_DEPLOYMENT_GUIDE.md, SUPABASE_PRODUCTION_SETUP.md |
+| System check | `/admin/system-check`, `lib/system/system-checks.ts` |
+| Final audit | Phase 6 readiness section on `/admin/final-audit` |
+| Dashboard | System check quick action + admin card |
+
+**Next:** Phase 6 Step 2 — Supabase production verification.
 
 ---
 

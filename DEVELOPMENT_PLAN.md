@@ -368,7 +368,36 @@ Phased roadmap from MVP demo to production product.
 
 ---
 
-## Phase 6: Payment / membership
+## Phase 6: Deployment / Production Readiness — **In progress**
+
+**Goal:** Deploy Buunduu Surtsgaay safely to production (Vercel + Supabase) with RLS, auth, storage, and admin CMS verified.
+
+**Phase 6 Step 1 — Completed:** Production readiness planning and deployment checklist.
+
+- [DEPLOYMENT_PLAN.md](./DEPLOYMENT_PLAN.md) — full deployment plan
+- [PRODUCTION_CHECKLIST.md](./PRODUCTION_CHECKLIST.md) — checkbox checklist
+- [VERCEL_DEPLOYMENT_GUIDE.md](./VERCEL_DEPLOYMENT_GUIDE.md) — Vercel setup
+- [SUPABASE_PRODUCTION_SETUP.md](./SUPABASE_PRODUCTION_SETUP.md) — Supabase setup + SQL verification
+- `/admin/system-check` — runtime readiness (AdminGuard, no secret output)
+
+**Phase 6 roadmap:**
+
+| Step | Focus | Status |
+|------|--------|--------|
+| 1 | Production readiness planning | ✅ Completed |
+| 2 | Supabase production verification | Pending |
+| 3 | Vercel deployment setup | Pending |
+| 4 | Production route testing | Pending |
+| 5 | Security / RLS final audit | Pending |
+| 6 | Launch candidate | Pending |
+
+**Next:** Phase 6 Step 2 — Supabase production verification.
+
+**Exit criteria:** App deployed to Vercel, Supabase production configured, all checklists green, public + admin routes verified.
+
+---
+
+## Phase 7: Payment / membership
 
 **Goal:** Monetize courses and gate premium content.
 
@@ -383,7 +412,7 @@ Phased roadmap from MVP demo to production product.
 
 ---
 
-## Phase 7: Mobile app with Expo
+## Phase 8: Mobile app with Expo
 
 **Goal:** Native iOS/Android experience sharing the same backend.
 
@@ -417,12 +446,13 @@ Phased roadmap from MVP demo to production product.
 Phase 2 (data structure) ✅
     → Phase 3 (Supabase)
     → Phase 4 (Auth)
-    → Phase 5 (Admin)
-    → Phase 6 (Payments)
-    → Phase 7 (Expo)
+    → Phase 5 (Admin) ✅
+    → Phase 6 (Deployment / Production Readiness)
+    → Phase 7 (Payments)
+    → Phase 8 (Expo)
 ```
 
-Phases 5 and 6 can be reordered depending on business priority (content velocity vs revenue).
+Phases 6 and 7 can be reordered depending on business priority (production launch vs revenue).
 
 ---
 

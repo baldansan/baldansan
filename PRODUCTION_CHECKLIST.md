@@ -1,0 +1,111 @@
+# Production Checklist — Buunduu Surtsgaay
+
+Concise go-live checklist. See [DEPLOYMENT_PLAN.md](./DEPLOYMENT_PLAN.md) for details.
+
+---
+
+## Local readiness
+
+- [ ] `npm install` succeeds
+- [ ] `npm run build` passes with no TypeScript errors
+- [ ] `.env.local` created from `.env.example` (not committed)
+- [ ] Local dev (`npm run dev`) works with and without Supabase env
+- [ ] Phase 5 Final Audit reviewed ([PHASE_5_FINAL_AUDIT.md](./PHASE_5_FINAL_AUDIT.md))
+
+---
+
+## Supabase readiness
+
+- [ ] Supabase project created (production or staging)
+- [ ] Migration `001_initial_schema.sql` applied
+- [ ] Migration `002_lesson_media_fields.sql` applied
+- [ ] Migration `003_lesson_route_status.sql` applied
+- [ ] Migration `004_admin_lesson_bundle.sql` applied
+- [ ] Migration `005_grant_is_admin_rpc.sql` applied
+- [ ] Migration `005_lesson_release_workflow.sql` applied
+- [ ] Migration `006_admin_tasks.sql` applied
+- [ ] Migration `007_admin_activity_log.sql` applied
+- [ ] Migration `008_admin_activity_snapshots.sql` applied
+- [ ] `001_auth_rls_policies.sql` applied
+- [ ] `002_admin_content_policies.sql` applied
+- [ ] Seed or admin-created lessons exist
+- [ ] Verification queries pass (see [SUPABASE_PRODUCTION_SETUP.md](./SUPABASE_PRODUCTION_SETUP.md))
+
+---
+
+## Auth readiness
+
+- [ ] Email auth provider enabled
+- [ ] Email confirmation policy decided (ON for production)
+- [ ] Site URL set (after deploy)
+- [ ] Redirect URLs configured
+- [ ] Signup tested
+- [ ] Login/logout tested
+- [ ] Progress persists after login
+
+---
+
+## Storage readiness
+
+- [ ] `lesson-media` bucket exists
+- [ ] Storage policies applied ([001_lesson_media_bucket_policies.sql](./supabase/storage/001_lesson_media_bucket_policies.sql))
+- [ ] Admin thumbnail upload works
+- [ ] Public lesson page shows media URL
+
+---
+
+## Vercel readiness
+
+- [ ] GitHub repo connected to Vercel
+- [ ] Framework preset: Next.js
+- [ ] Build command: `npm run build`
+- [ ] `NEXT_PUBLIC_SUPABASE_URL` set in Vercel env
+- [ ] `NEXT_PUBLIC_SUPABASE_ANON_KEY` set in Vercel env
+- [ ] **No** `service_role` key in Vercel env for this app
+- [ ] First deploy succeeds
+- [ ] Deployment logs reviewed
+- [ ] Custom domain added (optional)
+
+---
+
+## Admin readiness
+
+- [ ] `admin_profiles` row created for admin user
+- [ ] Admin link visible when signed in as admin
+- [ ] Non-admin cannot access `/admin`
+- [ ] `/admin/system-check` passes key checks
+- [ ] Lesson create/edit/publish tested
+- [ ] Activity log records actions
+- [ ] Task center works
+
+---
+
+## Public route readiness
+
+- [ ] `/` loads
+- [ ] `/courses/hsk5` shows only `available` lessons
+- [ ] `/lessons/1` watch/vocabulary/quiz flow works
+- [ ] Draft lesson hidden without `?preview=admin`
+- [ ] `/profile` and `/review` work when signed in
+- [ ] `/login` and `/signup` work
+
+---
+
+## Final go-live checks
+
+- [ ] Production URL added to Supabase Auth Site URL + Redirect URLs
+- [ ] RLS smoke test: learner cannot write other users' progress
+- [ ] RLS smoke test: non-admin cannot write lessons
+- [ ] No secrets in git history or client bundle
+- [ ] `/admin/final-audit` reviewed
+- [ ] Rollback plan documented (Supabase backups / lesson export JSON)
+- [ ] Launch candidate approved
+
+---
+
+## Quick links
+
+- [DEPLOYMENT_PLAN.md](./DEPLOYMENT_PLAN.md)
+- [VERCEL_DEPLOYMENT_GUIDE.md](./VERCEL_DEPLOYMENT_GUIDE.md)
+- [SUPABASE_PRODUCTION_SETUP.md](./SUPABASE_PRODUCTION_SETUP.md)
+- `/admin/system-check` (after deploy)

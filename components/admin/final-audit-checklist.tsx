@@ -137,6 +137,41 @@ const SECTIONS: AuditSection[] = [
     ],
   },
   {
+    title: "Phase 6 deployment readiness",
+    items: [
+      {
+        label: "Env vars configured (URL + anon key)",
+        status: "needs check",
+        href: "/admin/system-check",
+      },
+      {
+        label: "Supabase migrations 001–008 applied",
+        status: "needs check",
+        note: "See SUPABASE_PRODUCTION_SETUP.md",
+      },
+      {
+        label: "Storage bucket lesson-media",
+        status: "needs check",
+        href: "/admin/system-check",
+      },
+      {
+        label: "Auth Site URL + Redirect URLs",
+        status: "needs check",
+        note: "Configure after Vercel deploy",
+      },
+      {
+        label: "System check page",
+        status: "ready",
+        href: "/admin/system-check",
+      },
+      {
+        label: "Deployment docs (DEPLOYMENT_PLAN.md)",
+        status: "ready",
+        note: "Planning only — do not deploy yet",
+      },
+    ],
+  },
+  {
     title: "Security",
     items: [
       { label: ".env.local gitignored", status: "ready" },
@@ -220,14 +255,20 @@ export function FinalAuditChecklist() {
       <section className="rounded-2xl bg-emerald-50/60 p-5 ring-1 ring-emerald-100">
         <h2 className="text-base font-semibold text-slate-900">Phase 6 next</h2>
         <p className="mt-2 text-sm text-slate-700">
-          Deployment / production readiness: hosting, env setup, apply all RLS
-          policies, smoke-test public + admin routes, and production Supabase
-          verification.
+          Step 1 complete — deployment planning docs and system check added.
+          Next: Supabase production verification, then Vercel setup (do not
+          deploy until checklists pass).
         </p>
         <div className="mt-4 flex flex-wrap gap-2">
           <Link
-            href="/admin"
+            href="/admin/system-check"
             className="inline-flex rounded-full bg-emerald-500 px-5 py-2.5 text-sm font-semibold text-white hover:bg-emerald-600"
+          >
+            System check
+          </Link>
+          <Link
+            href="/admin"
+            className="inline-flex rounded-full border border-emerald-200 bg-white px-5 py-2.5 text-sm font-semibold text-emerald-800 hover:bg-emerald-50"
           >
             Admin dashboard
           </Link>

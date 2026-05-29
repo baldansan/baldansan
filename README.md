@@ -174,16 +174,29 @@ Helpers: [lib/supabase/auth.ts](./lib/supabase/auth.ts). Header shows **Нэвт
 
 **Activity log:** `/admin/activity` — audit trail with diff detail at `/admin/activity/{id}`, safe rollback for supported actions, CSV/JSON export (requires migrations `007` + `008`). See [ADMIN_ACTIVITY_LOG.md](./ADMIN_ACTIVITY_LOG.md), [ADMIN_ACTIVITY_DIFFS.md](./ADMIN_ACTIVITY_DIFFS.md), [ADMIN_ROLLBACK_WORKFLOW.md](./ADMIN_ROLLBACK_WORKFLOW.md), [ADMIN_AUDIT_EXPORT.md](./ADMIN_AUDIT_EXPORT.md).
 
-**Final audit:** `/admin/final-audit` — Phase 5 readiness checklist (read-only). See [PHASE_5_FINAL_AUDIT.md](./PHASE_5_FINAL_AUDIT.md).
+**System check:** `/admin/system-check` — runtime env/Supabase readiness (no secrets shown).
 
-**Phase 5 Final Audit:** `/admin/final-audit` — readiness checklist. See [PHASE_5_FINAL_AUDIT.md](./PHASE_5_FINAL_AUDIT.md).
+**Next step:** Phase 6 Step 2 — Supabase production verification (do not deploy yet).
 
-**Next step:** Phase 6 — Deployment / Production Readiness.
+## Production readiness (Phase 6)
+
+Planning only — **not deployed yet**.
+
+| Doc | Purpose |
+|-----|---------|
+| [DEPLOYMENT_PLAN.md](./DEPLOYMENT_PLAN.md) | Full deployment plan |
+| [PRODUCTION_CHECKLIST.md](./PRODUCTION_CHECKLIST.md) | Go-live checkbox list |
+| [VERCEL_DEPLOYMENT_GUIDE.md](./VERCEL_DEPLOYMENT_GUIDE.md) | Vercel + env vars |
+| [SUPABASE_PRODUCTION_SETUP.md](./SUPABASE_PRODUCTION_SETUP.md) | Migrations, policies, SQL checks |
+
+**Stack:** Vercel (Next.js) + Supabase (DB, Auth, Storage). Anon key only in client — never `service_role`.
 
 ## Documentation
 
-- [PROJECT_CHECKPOINT.md](./PROJECT_CHECKPOINT.md) — status & Phase 4 audit
-- [DEVELOPMENT_PLAN.md](./DEVELOPMENT_PLAN.md) — roadmap (Phase 5 completed; Phase 6 next)
+- [PROJECT_CHECKPOINT.md](./PROJECT_CHECKPOINT.md) — status & audits
+- [DEVELOPMENT_PLAN.md](./DEVELOPMENT_PLAN.md) — roadmap (Phase 6 in progress)
+- [DEPLOYMENT_PLAN.md](./DEPLOYMENT_PLAN.md) — production deployment plan
+- [PRODUCTION_CHECKLIST.md](./PRODUCTION_CHECKLIST.md) — go-live checklist
 - [PHASE_5_FINAL_AUDIT.md](./PHASE_5_FINAL_AUDIT.md) — Phase 5 audit summary
 - [ADMIN_PLAN.md](./ADMIN_PLAN.md) — Phase 5 admin planning
 - [ADMIN_ACTIVITY_LOG.md](./ADMIN_ACTIVITY_LOG.md) — admin audit trail

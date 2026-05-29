@@ -368,6 +368,12 @@ export function AdminDashboard({
             Create lesson
           </Link>
           <Link
+            href="/admin/system-check"
+            className="inline-flex rounded-full border border-emerald-200 bg-emerald-50 px-5 py-2.5 text-sm font-semibold text-emerald-800 transition-colors hover:bg-emerald-100"
+          >
+            System check
+          </Link>
+          <Link
             href="/admin/final-audit"
             className="inline-flex rounded-full border border-emerald-200 bg-emerald-50 px-5 py-2.5 text-sm font-semibold text-emerald-800 transition-colors hover:bg-emerald-100"
           >
@@ -393,6 +399,11 @@ export function AdminDashboard({
         description="Existing workflows — unchanged."
       >
         <div className="grid gap-4 sm:grid-cols-2">
+          <AdminCard
+            title="System check"
+            description="Runtime env, Supabase, auth, admin, tasks, activity, and storage readiness."
+            href="/admin/system-check"
+          />
           <AdminCard
             title="Phase 5 Final Audit"
             description="Read-only checklist for CMS, release, analytics, tasks, rollback, and security."
