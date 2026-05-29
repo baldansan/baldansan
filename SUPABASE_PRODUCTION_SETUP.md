@@ -118,13 +118,56 @@ select count(*) as quiz_attempt_rows from public.user_quiz_attempts;
 
 ---
 
-## 7. App-side verification
+## 7. Run production verification SQL
+
+After migrations, policies, admin row, and storage bucket are applied:
+
+1. Open **SQL Editor** in Supabase Dashboard.
+2. Paste and run [supabase/verify/production_verification.sql](./supabase/verify/production_verification.sql).
+3. Review output columns: `check_group | check_name | status | details`.
+
+### Status meanings
+
+| Status | Meaning |
+|--------|---------|
+| **pass** | Requirement met |
+| **warn** | Non-blocking — review (e.g. zero available lessons, empty activity log) |
+| **fail** | Blocking — run the migration or policy file in `details` before deploy |
+
+### Example results
+
+| check_group | check_name | status | details |
+|-------------|------------|--------|---------|
+| core_tables | lessons | pass | Table exists. |
+| lesson_media_columns | video_url | pass | Column exists. |
+| admin_cms | admin_tasks | fail | Missing — run supabase/migrations/006_admin_tasks.sql |
+| data_sanity | available_lessons | warn | Count: 0 — publish at least one lesson for smoke test |
+| storage | lesson-media | pass | Bucket exists. |
+
+Fix all **fail** rows before Vercel deploy. See [supabase/verify/README.md](./supabase/verify/README.md) for the full check list.
+
+### Common fixes
+
+| Failure | Fix |
+|---------|-----|
+| Missing media columns | Run [002_lesson_media_fields.sql](./supabase/migrations/002_lesson_media_fields.sql) |
+| Missing admin_tasks | Run [006_admin_tasks.sql](./supabase/migrations/006_admin_tasks.sql) |
+| Missing admin_activity_log | Run [007_admin_activity_log.sql](./supabase/migrations/007_admin_activity_log.sql) |
+| Missing snapshot columns | Run [008_admin_activity_snapshots.sql](./supabase/migrations/008_admin_activity_snapshots.sql) |
+| Storage bucket missing | Run [001_lesson_media_bucket_policies.sql](./supabase/storage/001_lesson_media_bucket_policies.sql) or create bucket manually |
+| is_admin ambiguity in policies | Use `public.is_admin(auth.uid())` in RLS policies |
+| No admin row | Insert into `admin_profiles` (see section 3 above) |
+
+---
+
+## 8. App-side verification
 
 1. Sign in as admin.
-2. Open `/admin/system-check` — env, lessons, admin profile, tasks, activity log, storage.
-3. Edit a lesson → save metadata → confirm row in `admin_activity_log`.
-4. Upload thumbnail → confirm file in `lesson-media` bucket.
-5. Publish lesson → confirm visible on `/courses/hsk5`.
+2. Open `/admin/system-check` — env, auth, lessons (including Lesson 1 and Lesson 5 as admin), admin profile, tasks, activity log, progress tables, storage.
+3. Use **Copy SQL verification instructions** on that page to run the SQL script above.
+4. Edit a lesson → save metadata → confirm row in `admin_activity_log`.
+5. Upload thumbnail → confirm file in `lesson-media` bucket.
+6. Publish lesson → confirm visible on `/courses/hsk5`.
 
 ---
 
@@ -138,6 +181,7 @@ select count(*) as quiz_attempt_rows from public.user_quiz_attempts;
 
 ## Related docs
 
+- [supabase/verify/README.md](./supabase/verify/README.md) — production verification SQL
 - [DEPLOYMENT_PLAN.md](./DEPLOYMENT_PLAN.md)
 - [PRODUCTION_CHECKLIST.md](./PRODUCTION_CHECKLIST.md)
 - [PHASE_5_FINAL_AUDIT.md](./PHASE_5_FINAL_AUDIT.md)

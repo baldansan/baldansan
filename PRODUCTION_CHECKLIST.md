@@ -29,6 +29,7 @@ Concise go-live checklist. See [DEPLOYMENT_PLAN.md](./DEPLOYMENT_PLAN.md) for de
 - [ ] `001_auth_rls_policies.sql` applied
 - [ ] `002_admin_content_policies.sql` applied
 - [ ] Seed or admin-created lessons exist
+- [ ] Run [supabase/verify/production_verification.sql](./supabase/verify/production_verification.sql) — no **fail** rows
 - [ ] Verification queries pass (see [SUPABASE_PRODUCTION_SETUP.md](./SUPABASE_PRODUCTION_SETUP.md))
 
 ---
@@ -73,7 +74,8 @@ Concise go-live checklist. See [DEPLOYMENT_PLAN.md](./DEPLOYMENT_PLAN.md) for de
 - [ ] `admin_profiles` row created for admin user
 - [ ] Admin link visible when signed in as admin
 - [ ] Non-admin cannot access `/admin`
-- [ ] `/admin/system-check` passes key checks
+- [ ] `/admin/system-check` passes key checks (no **fail**; review **warn**)
+- [ ] SQL verification + system-check results agree (tables, storage, admin)
 - [ ] Lesson create/edit/publish tested
 - [ ] Activity log records actions
 - [ ] Task center works
@@ -108,4 +110,5 @@ Concise go-live checklist. See [DEPLOYMENT_PLAN.md](./DEPLOYMENT_PLAN.md) for de
 - [DEPLOYMENT_PLAN.md](./DEPLOYMENT_PLAN.md)
 - [VERCEL_DEPLOYMENT_GUIDE.md](./VERCEL_DEPLOYMENT_GUIDE.md)
 - [SUPABASE_PRODUCTION_SETUP.md](./SUPABASE_PRODUCTION_SETUP.md)
-- `/admin/system-check` (after deploy)
+- [supabase/verify/README.md](./supabase/verify/README.md)
+- `/admin/system-check` (local or after deploy)

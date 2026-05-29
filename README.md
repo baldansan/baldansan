@@ -174,9 +174,9 @@ Helpers: [lib/supabase/auth.ts](./lib/supabase/auth.ts). Header shows **Нэвт
 
 **Activity log:** `/admin/activity` — audit trail with diff detail at `/admin/activity/{id}`, safe rollback for supported actions, CSV/JSON export (requires migrations `007` + `008`). See [ADMIN_ACTIVITY_LOG.md](./ADMIN_ACTIVITY_LOG.md), [ADMIN_ACTIVITY_DIFFS.md](./ADMIN_ACTIVITY_DIFFS.md), [ADMIN_ROLLBACK_WORKFLOW.md](./ADMIN_ROLLBACK_WORKFLOW.md), [ADMIN_AUDIT_EXPORT.md](./ADMIN_AUDIT_EXPORT.md).
 
-**System check:** `/admin/system-check` — runtime env/Supabase readiness (no secrets shown).
+**System check:** [`/admin/system-check`](/admin/system-check) — runtime env/Supabase readiness (pass/warn/fail badges; no secrets shown). Run alongside [supabase/verify/production_verification.sql](./supabase/verify/production_verification.sql) in Supabase SQL Editor.
 
-**Next step:** Phase 6 Step 2 — Supabase production verification (do not deploy yet).
+**Next step:** Phase 6 Step 3 — Vercel deployment setup (do not deploy until checklists green).
 
 ## Production readiness (Phase 6)
 
@@ -188,6 +188,8 @@ Planning only — **not deployed yet**.
 | [PRODUCTION_CHECKLIST.md](./PRODUCTION_CHECKLIST.md) | Go-live checkbox list |
 | [VERCEL_DEPLOYMENT_GUIDE.md](./VERCEL_DEPLOYMENT_GUIDE.md) | Vercel + env vars |
 | [SUPABASE_PRODUCTION_SETUP.md](./SUPABASE_PRODUCTION_SETUP.md) | Migrations, policies, SQL checks |
+| [supabase/verify/README.md](./supabase/verify/README.md) | Production verification SQL (Phase 6 Step 2) |
+| [`/admin/system-check`](/admin/system-check) | App-side verification (admin, read-only) |
 
 **Stack:** Vercel (Next.js) + Supabase (DB, Auth, Storage). Anon key only in client — never `service_role`.
 

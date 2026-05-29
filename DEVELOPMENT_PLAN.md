@@ -372,26 +372,24 @@ Phased roadmap from MVP demo to production product.
 
 **Goal:** Deploy Buunduu Surtsgaay safely to production (Vercel + Supabase) with RLS, auth, storage, and admin CMS verified.
 
-**Phase 6 Step 1 — Completed:** Production readiness planning and deployment checklist.
+**Phase 6 Step 2 — Completed:** Supabase production verification scripts and admin system checks.
 
-- [DEPLOYMENT_PLAN.md](./DEPLOYMENT_PLAN.md) — full deployment plan
-- [PRODUCTION_CHECKLIST.md](./PRODUCTION_CHECKLIST.md) — checkbox checklist
-- [VERCEL_DEPLOYMENT_GUIDE.md](./VERCEL_DEPLOYMENT_GUIDE.md) — Vercel setup
-- [SUPABASE_PRODUCTION_SETUP.md](./SUPABASE_PRODUCTION_SETUP.md) — Supabase setup + SQL verification
-- `/admin/system-check` — runtime readiness (AdminGuard, no secret output)
+- [supabase/verify/production_verification.sql](./supabase/verify/production_verification.sql) — SQL Editor verification (read-only)
+- [supabase/verify/README.md](./supabase/verify/README.md) — pass/warn/fail guide
+- `/admin/system-check` — runtime readiness (AdminGuard, no secret output, pass/warn/fail badges)
 
 **Phase 6 roadmap:**
 
 | Step | Focus | Status |
 |------|--------|--------|
 | 1 | Production readiness planning | ✅ Completed |
-| 2 | Supabase production verification | Pending |
+| 2 | Supabase production verification | ✅ Completed |
 | 3 | Vercel deployment setup | Pending |
 | 4 | Production route testing | Pending |
 | 5 | Security / RLS final audit | Pending |
 | 6 | Launch candidate | Pending |
 
-**Next:** Phase 6 Step 2 — Supabase production verification.
+**Next:** Phase 6 Step 3 — Vercel deployment setup.
 
 **Exit criteria:** App deployed to Vercel, Supabase production configured, all checklists green, public + admin routes verified.
 

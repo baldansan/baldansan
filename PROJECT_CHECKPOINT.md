@@ -2,7 +2,23 @@
 
 **Project:** Buunduu Surtsgaay (Бөөндөө Сурцгаая)  
 **Checkpoint date:** May 2026  
-**Status:** Phase 6 Step 1 production readiness planning **completed**
+**Status:** Phase 6 Step 2 Supabase production verification **completed**
+
+---
+
+## Phase 6 Step 2 — Supabase production verification — **Completed**
+
+Phase 6 Step 2: Supabase production verification scripts and system checks added.
+
+| Area | Deliverable |
+|------|-------------|
+| SQL | `supabase/verify/production_verification.sql` — read-only pass/warn/fail checks |
+| Docs | `supabase/verify/README.md` — how to run, common fixes |
+| System check | Enhanced `/admin/system-check` — env, auth, content, admin tables, storage, progress |
+| UI | Pass/warn/fail badges, SQL copy card, grouped checks |
+| Production docs | SUPABASE_PRODUCTION_SETUP, PRODUCTION_CHECKLIST, DEPLOYMENT_PLAN updated |
+
+**Next:** Phase 6 Step 3 — Vercel deployment setup.
 
 ---
 
@@ -16,8 +32,6 @@ Phase 6 Step 1: Production readiness planning and deployment checklist added.
 | System check | `/admin/system-check`, `lib/system/system-checks.ts` |
 | Final audit | Phase 6 readiness section on `/admin/final-audit` |
 | Dashboard | System check quick action + admin card |
-
-**Next:** Phase 6 Step 2 — Supabase production verification.
 
 ---
 

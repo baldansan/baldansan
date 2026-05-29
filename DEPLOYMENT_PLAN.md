@@ -1,6 +1,15 @@
 # Deployment Plan — Buunduu Surtsgaay
 
-Phase 6 Step 1: production readiness planning. **Do not deploy until checklists are complete.**
+Phase 6: production readiness. **Do not deploy until checklists are complete.**
+
+| Step | Focus | Status |
+|------|--------|--------|
+| 1 | Production readiness planning | ✅ Completed |
+| 2 | Supabase production verification | ✅ Completed |
+| 3 | Vercel deployment setup | Pending |
+| 4 | Production route testing | Pending |
+| 5 | Security / RLS final audit | Pending |
+| 6 | Launch candidate | Pending |
 
 ---
 
@@ -65,6 +74,22 @@ Run in **Supabase SQL Editor** in order:
 - `admin_profiles` row for your admin email
 
 See [SUPABASE_PRODUCTION_SETUP.md](./SUPABASE_PRODUCTION_SETUP.md).
+
+### Phase 6 Step 2 — Supabase production verification (completed)
+
+Before Vercel setup, confirm database readiness with:
+
+1. **SQL:** Run [supabase/verify/production_verification.sql](./supabase/verify/production_verification.sql) in Supabase SQL Editor — fix all **fail** rows.
+2. **App:** Sign in as admin → `/admin/system-check` — env, auth, content reads, admin tables, storage, progress tables.
+3. **Cross-check:** SQL and app checks should agree on tables, RLS, storage bucket, and admin setup.
+
+Verification requirements:
+
+- No **fail** in SQL verification (warn acceptable with review)
+- `/admin/system-check` shows pass for env, admin session, lessons read, storage bucket
+- No `service_role` in client; no secrets in repo
+
+See [supabase/verify/README.md](./supabase/verify/README.md).
 
 ---
 
@@ -158,7 +183,8 @@ npm run build
 - [ ] Media upload + public display tested
 - [ ] Auth signup/login tested
 - [ ] Progress tracking tested (lesson, vocab, quiz)
-- [ ] `/admin/system-check` mostly green
+- [ ] [supabase/verify/production_verification.sql](./supabase/verify/production_verification.sql) run — no **fail**
+- [ ] `/admin/system-check` mostly green (no **fail**)
 
 ---
 
@@ -178,4 +204,5 @@ npm run build
 - [PRODUCTION_CHECKLIST.md](./PRODUCTION_CHECKLIST.md) — checkbox checklist
 - [VERCEL_DEPLOYMENT_GUIDE.md](./VERCEL_DEPLOYMENT_GUIDE.md)
 - [SUPABASE_PRODUCTION_SETUP.md](./SUPABASE_PRODUCTION_SETUP.md)
+- [supabase/verify/README.md](./supabase/verify/README.md)
 - [PHASE_5_FINAL_AUDIT.md](./PHASE_5_FINAL_AUDIT.md)
