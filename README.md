@@ -23,7 +23,8 @@ A Mongolian–Chinese language learning web app. Users learn Chinese through sho
 - **Review** (`/review`) — learned words grouped by lesson, quiz summary
 - **Navigation** — header (Courses, Demo, Review, Profile); mobile bottom nav on learning pages
 - **PWA / mobile** — installable web app (manifest + icons); see [PWA_MOBILE_APP_GUIDE.md](./PWA_MOBILE_APP_GUIDE.md) and [MOBILE_UX_CHECKLIST.md](./MOBILE_UX_CHECKLIST.md)
-- **Retention** — daily goal, streak, today progress; see [LEARNING_RETENTION.md](./LEARNING_RETENTION.md)
+- **Retention** — daily goal, streak; [LEARNING_RETENTION.md](./LEARNING_RETENTION.md), [RETENTION_SUPABASE_SYNC.md](./RETENTION_SUPABASE_SYNC.md)
+- **Engagement** — reminders, achievements, weekly report; [ENGAGEMENT_SYSTEM.md](./ENGAGEMENT_SYSTEM.md), [ACHIEVEMENT_RULES.md](./ACHIEVEMENT_RULES.md), [REMINDER_SYSTEM_PLAN.md](./REMINDER_SYSTEM_PLAN.md)
 
 ## Routes
 

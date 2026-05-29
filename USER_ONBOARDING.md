@@ -14,6 +14,9 @@ Learner journey for **Бөөндөө Сурцгаая**.
 4. **Take quiz** — score saved locally or to account
 5. **Review** — `/review` for learned words
 6. **Track progress** — `/dashboard` or `/profile` when logged in
+7. **Set reminders & weekly report** — `/reminders`, `/weekly-report`
+
+**Tip:** After signing up, open **Profile** to sync guest streak/daily activity to your account.
 
 ---
 
@@ -23,7 +26,9 @@ Learner journey for **Бөөндөө Сурцгаая**.
 |---------|-------|-----------|
 | Watch / vocab / quiz | ✅ | ✅ |
 | Progress storage | Device (localStorage) | Supabase + device |
-| Sync local → account | — | Profile sync card |
+| Sync local → account | — | Profile sync cards (progress + retention) |
+| Streak / daily goal | Device only | Supabase sync across devices |
+| Reminders / achievements | Device only | Supabase + notifications |
 | Dashboard | Login prompt | Full stats |
 
 ---
@@ -38,6 +43,10 @@ Learner journey for **Бөөндөө Сурцгаая**.
 | `/dashboard` | Learner dashboard |
 | `/help` | FAQ |
 | `/feedback` | Copy-paste feedback template |
+| `/study-plan` | Suggested weekly study flow |
+| `/reminders` | In-app study reminders |
+| `/notifications` | Notification center |
+| `/weekly-report` | Weekly progress report |
 | `/pricing` | Future plans (no payment yet) |
 
 ---

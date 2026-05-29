@@ -6,6 +6,35 @@ Summary of learner-facing improvements (Mega Batch Step 1).
 
 ---
 
+## Delivered in Step 5
+
+| Area | Deliverable |
+|------|-------------|
+| **Reminders** | `/reminders` — in-app study schedule |
+| **Notifications** | `/notifications` + header bell |
+| **Achievements** | 7 badges, auto-award on actions |
+| **Weekly report** | `/weekly-report` with copy/download |
+| **Study plan** | `/study-plan` suggested weekly flow |
+
+See [ENGAGEMENT_SYSTEM.md](./ENGAGEMENT_SYSTEM.md).
+
+---
+
+## Delivered in Step 4
+
+| Area | Deliverable |
+|------|-------------|
+| **Migration** | `009_user_retention.sql` |
+| **Tables** | `user_daily_activity`, `user_daily_goals`, `user_streaks` |
+| **Supabase API** | `lib/supabase/retention.ts` |
+| **Unified layer** | `lib/retention/retention-service.ts` |
+| **Sync** | `RetentionSyncCard`, progress sync hook |
+| **Settings** | `DailyGoalSettings` on Profile |
+
+See [RETENTION_SUPABASE_SYNC.md](./RETENTION_SUPABASE_SYNC.md).
+
+---
+
 ## Delivered in Step 3
 
 | Area | Deliverable |
@@ -93,9 +122,9 @@ See [LEARNING_RETENTION.md](./LEARNING_RETENTION.md) for reminders roadmap.
 |------|--------|--------|
 | 1 | User-facing product polish and onboarding | ✅ Completed |
 | 2 | PWA/mobile app-like experience and offline-friendly polish | ✅ Completed |
-| 3 | Learner retention: streaks, daily goals, reminders | ✅ Completed |
-| 4 | Payment/pricing research | Pending |
-| 5 | School/B2B onboarding | Pending |
+| 5 | Engagement: reminders, notifications, achievements, reports | ✅ Completed |
+| 6 | School/B2B onboarding | Pending |
+| 7 | Payment/pricing research | Pending |
 
 ---
 

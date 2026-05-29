@@ -5,7 +5,8 @@ import { useEffect, useState } from "react";
 import { DashboardQuickReview } from "@/components/dashboard-quick-review";
 import { EmptyState } from "@/components/empty-state";
 import { PwaInstallCard } from "@/components/pwa-install-card";
-import { StreakCard } from "@/components/streak-card";
+import { StreakCard } from "@/components/retention/streak-card";
+import { DailyGoalCard } from "@/components/retention/daily-goal-card";
 import { LocalProgressNote } from "@/components/local-progress-note";
 import { PublicPageShell } from "@/components/public-page-shell";
 import { lessonPath, lessonVocabularyPath } from "@/lib/content";
@@ -15,9 +16,14 @@ import {
   resolveContinueLearning,
 } from "@/lib/learner-progress";
 import {
-  getLearningRetentionSummarySmart,
+  getStreakUnified,
   type LearningRetentionSummary,
-} from "@/lib/learning-retention";
+} from "@/lib/retention/retention-service";
+import {
+  DashboardEngagementCards,
+  DashboardEngagementQuickActions,
+} from "@/components/engagement/dashboard-engagement-cards";
+import { checkDueRemindersAndNotify } from "@/lib/engagement/achievement-service";
 import { getAllQuizResultsSmart, type QuizResultEntry } from "@/lib/progress";
 import { getCurrentUser, hasSupabaseConfig } from "@/lib/supabase/auth";
 
@@ -68,7 +74,8 @@ export function LearnerDashboard({ hsk5LessonIds }: Props) {
 
       const quizzes = await getAllQuizResultsSmart();
       setLatestQuiz(pickLatestQuizAttempt(quizzes));
-      setRetention(await getLearningRetentionSummarySmart());
+      setRetention(await getStreakUnified());
+      void checkDueRemindersAndNotify();
       setReady(true);
     }
 
@@ -125,6 +132,10 @@ export function LearnerDashboard({ hsk5LessonIds }: Props) {
       </section>
 
       {retention ? <StreakCard summary={retention} /> : null}
+      {retention ? <DailyGoalCard summary={retention} /> : null}
+
+      <DashboardEngagementCards />
+      <DashboardEngagementQuickActions />
 
       <section className="rounded-2xl bg-emerald-600 p-6 text-white sm:p-8">
         <h2 className="text-lg font-semibold">Continue learning</h2>

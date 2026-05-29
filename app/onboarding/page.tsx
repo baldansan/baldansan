@@ -32,6 +32,10 @@ const steps = [
     title: "Progress account дээр хадгал",
     body: "Нэвтэрсэн хэрэглэгчийн ахиц Supabase account дээр хадгалагдана. Guest — device дээр.",
   },
+  {
+    title: "Reminder & weekly report",
+    body: "Reminder тохируулж, weekly report-оо шалга. Achievement badge-ууд автоматаар нээгдэнэ.",
+  },
 ];
 
 export default function OnboardingPage() {
@@ -77,6 +81,18 @@ export default function OnboardingPage() {
           className="rounded-full border border-emerald-200 bg-emerald-50 px-6 py-3 text-center text-sm font-semibold text-emerald-800 hover:bg-emerald-100"
         >
           Create account / Login
+        </Link>
+        <Link
+          href="/reminders"
+          className="rounded-full border border-emerald-200 bg-emerald-50 px-6 py-3 text-center text-sm font-semibold text-emerald-800 hover:bg-emerald-100"
+        >
+          Set reminders
+        </Link>
+        <Link
+          href="/weekly-report"
+          className="rounded-full border border-slate-200 px-6 py-3 text-center text-sm font-semibold text-slate-700 hover:border-emerald-200"
+        >
+          Weekly report
         </Link>
         <Link
           href="/courses/hsk5"

@@ -61,22 +61,15 @@ On first read, empty retention log bootstraps from existing lesson/quiz timestam
 
 ---
 
-## Supabase-ready structure
+## Supabase sync (Phase 7 Step 4)
 
-**Current (no new migration):** streak/today counts merge with read-only queries from:
+Logged-in users persist retention to Supabase. See [RETENTION_SUPABASE_SYNC.md](./RETENTION_SUPABASE_SYNC.md).
 
-- `user_lesson_progress` (`updated_at`, `completed_at`)
-- `user_vocabulary_progress` (`learned_at`)
-- `user_quiz_attempts` (`created_at`)
+**Future tables** — now migrated in `009_user_retention.sql`:
 
-**Future tables** (documented in `lib/supabase/learning-retention.ts`):
-
-```sql
--- user_daily_activity (planned)
--- user_retention_settings (planned: daily_goal, reminders_enabled, reminder_time)
-```
-
-Stub sync: `syncRetentionActivityToSupabase()` — no-op until migration + RLS.
+- `user_daily_activity`
+- `user_daily_goals`
+- `user_streaks`
 
 ---
 

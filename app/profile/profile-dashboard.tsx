@@ -5,7 +5,10 @@ import { useEffect, useState } from "react";
 import { AppHeader } from "@/components/app-header";
 import { BottomNav } from "@/components/bottom-nav";
 import { EmptyState } from "@/components/empty-state";
-import { LearningConsistencyCard } from "@/components/learning-consistency-card";
+import { LearningConsistencyCard } from "@/components/retention/learning-consistency-card";
+import { DailyGoalSettings } from "@/components/retention/daily-goal-settings";
+import { AchievementList } from "@/components/engagement/achievement-list";
+import { RetentionSyncCard } from "@/components/retention/retention-sync-card";
 import { LocalProgressNote } from "@/components/local-progress-note";
 import { ProgressSyncCard } from "@/components/progress-sync-card";
 import { lessonPath } from "@/lib/content";
@@ -25,9 +28,9 @@ import {
   type QuizResultEntry,
 } from "@/lib/progress";
 import {
-  getLearningRetentionSummarySmart,
+  getStreakUnified,
   type LearningRetentionSummary,
-} from "@/lib/learning-retention";
+} from "@/lib/retention/retention-service";
 
 function formatQuizDate(iso: string): string {
   try {
@@ -100,7 +103,7 @@ export function ProfileDashboard() {
           quizEntries.length > 0
       );
 
-      setRetention(await getLearningRetentionSummarySmart());
+      setRetention(await getStreakUnified());
 
       setReady(true);
     }
@@ -157,6 +160,12 @@ export function ProfileDashboard() {
           />
         ) : null}
 
+        {authUser ? (
+          <RetentionSyncCard
+            onSynced={() => setSyncRefreshKey((key) => key + 1)}
+          />
+        ) : null}
+
         {!hasProgress ? (
           <section className="rounded-2xl bg-emerald-50/70 p-5 ring-1 ring-emerald-200">
             <h2 className="font-semibold text-emerald-900">Эхлэх заавар</h2>
@@ -190,6 +199,26 @@ export function ProfileDashboard() {
         ) : null}
 
         {retention ? <LearningConsistencyCard summary={retention} /> : null}
+
+        <DailyGoalSettings
+          isLoggedIn={Boolean(authUser)}
+          onSaved={() => setSyncRefreshKey((key) => key + 1)}
+        />
+
+        <AchievementList />
+
+        <section className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:p-6">
+          <h2 className="text-lg font-semibold text-slate-900">Engagement shortcuts</h2>
+          <div className="mt-4 flex flex-wrap gap-2">
+            <Link href="/reminders" className="rounded-full border border-emerald-200 bg-emerald-50 px-4 py-2 text-sm font-semibold text-emerald-800">Reminders</Link>
+            <Link href="/weekly-report" className="rounded-full border border-emerald-200 bg-emerald-50 px-4 py-2 text-sm font-semibold text-emerald-800">Weekly report</Link>
+            <Link href="/notifications" className="rounded-full border border-emerald-200 bg-emerald-50 px-4 py-2 text-sm font-semibold text-emerald-800">Notifications</Link>
+            <Link href="/study-plan" className="rounded-full border border-emerald-200 bg-emerald-50 px-4 py-2 text-sm font-semibold text-emerald-800">Study plan</Link>
+          </div>
+          <p className="mt-3 text-xs text-slate-500">
+            Notification preferences (push/email) — ирээдүйд нэмэгдэнэ. Одоогоор in-app only.
+          </p>
+        </section>
 
         <section className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:p-6">
           {authUser ? (

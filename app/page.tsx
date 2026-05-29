@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { HomeContinueSection } from "@/components/home-continue-section";
+import { HomeEngagementSection } from "@/components/engagement/home-engagement-section";
 import { HomeHeroActions } from "@/components/home-hero-actions";
 import { HomeMobileExtras } from "@/components/home-mobile-extras";
 import { PublicPageShell } from "@/components/public-page-shell";
@@ -31,6 +32,8 @@ export default async function Home() {
       </section>
 
       <HomeContinueSection />
+
+      <HomeEngagementSection />
 
       <section>
         <h2 className="text-xl font-semibold text-slate-900 sm:text-2xl">

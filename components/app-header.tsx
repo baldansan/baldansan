@@ -1,4 +1,5 @@
 import { AuthStatus } from "@/components/auth-status";
+import { NotificationBell } from "@/components/engagement/notification-bell";
 import { BrandLogo } from "@/components/brand-logo";
 import {
   PublicNavLinks,
@@ -15,6 +16,7 @@ export function AppHeader({ active }: Props) {
       <BrandLogo />
       <div className="flex min-w-0 flex-col items-end gap-1.5 sm:flex-row sm:items-center sm:gap-3">
         <PublicNavLinks active={active} />
+        <NotificationBell />
         <AuthStatus />
       </div>
     </header>

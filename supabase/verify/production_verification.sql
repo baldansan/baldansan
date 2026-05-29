@@ -58,7 +58,37 @@ checks AS (
   SELECT 'user_progress', 'user_quiz_attempts',
     CASE WHEN to_regclass('public.user_quiz_attempts') IS NOT NULL THEN 'pass' ELSE 'fail' END,
     CASE WHEN to_regclass('public.user_quiz_attempts') IS NOT NULL THEN 'Table exists.'
-         ELSE 'Missing — run 001_initial_schema.sql' END
+      ELSE 'Missing — run 001_initial_schema.sql' END
+  UNION ALL
+  SELECT 'user_retention', 'user_daily_activity',
+    CASE WHEN to_regclass('public.user_daily_activity') IS NOT NULL THEN 'pass' ELSE 'fail' END,
+    CASE WHEN to_regclass('public.user_daily_activity') IS NOT NULL THEN 'Table exists.'
+      ELSE 'Missing — run 009_user_retention.sql' END
+  UNION ALL
+  SELECT 'user_retention', 'user_daily_goals',
+    CASE WHEN to_regclass('public.user_daily_goals') IS NOT NULL THEN 'pass' ELSE 'fail' END,
+    CASE WHEN to_regclass('public.user_daily_goals') IS NOT NULL THEN 'Table exists.'
+      ELSE 'Missing — run 009_user_retention.sql' END
+  UNION ALL
+  SELECT 'user_retention', 'user_streaks',
+    CASE WHEN to_regclass('public.user_streaks') IS NOT NULL THEN 'pass' ELSE 'fail' END,
+    CASE WHEN to_regclass('public.user_streaks') IS NOT NULL THEN 'Table exists.'
+      ELSE 'Missing — run 009_user_retention.sql' END
+  UNION ALL
+  SELECT 'user_engagement', 'user_study_reminders',
+    CASE WHEN to_regclass('public.user_study_reminders') IS NOT NULL THEN 'pass' ELSE 'fail' END,
+    CASE WHEN to_regclass('public.user_study_reminders') IS NOT NULL THEN 'Table exists.'
+      ELSE 'Missing — run 010_user_reminders_achievements.sql' END
+  UNION ALL
+  SELECT 'user_engagement', 'user_notifications',
+    CASE WHEN to_regclass('public.user_notifications') IS NOT NULL THEN 'pass' ELSE 'fail' END,
+    CASE WHEN to_regclass('public.user_notifications') IS NOT NULL THEN 'Table exists.'
+      ELSE 'Missing — run 010_user_reminders_achievements.sql' END
+  UNION ALL
+  SELECT 'user_engagement', 'user_achievements',
+    CASE WHEN to_regclass('public.user_achievements') IS NOT NULL THEN 'pass' ELSE 'fail' END,
+    CASE WHEN to_regclass('public.user_achievements') IS NOT NULL THEN 'Table exists.'
+      ELSE 'Missing — run 010_user_reminders_achievements.sql' END
 
   -- -------------------------------------------------------------------------
   -- C. Admin / CMS tables
@@ -233,6 +263,12 @@ checks AS (
     ('user_lesson_progress'),
     ('user_vocabulary_progress'),
     ('user_quiz_attempts'),
+    ('user_daily_activity'),
+    ('user_daily_goals'),
+    ('user_streaks'),
+    ('user_study_reminders'),
+    ('user_notifications'),
+    ('user_achievements'),
     ('lessons'),
     ('subtitle_lines'),
     ('vocabulary_words'),
