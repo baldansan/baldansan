@@ -14,7 +14,6 @@ import {
   type LessonCompleteness,
 } from "@/lib/supabase/admin-content";
 import { getAdminTasksForLesson } from "@/lib/supabase/admin-tasks";
-import { getLessonActivityLog } from "@/lib/supabase/admin-activity-log";
 
 export const dynamic = "force-dynamic";
 
@@ -59,15 +58,11 @@ export default async function AdminEditLessonPage({ params }: Props) {
     (Number.isFinite(Number(normalizedId)) ? Number(normalizedId) : 1);
 
   const lessonTasks = await getAdminTasksForLesson(normalizedId);
-  const lessonActivity = await getLessonActivityLog(normalizedId, 10);
 
   return (
     <div className="flex flex-col gap-8">
       <LessonTasksCard lessonId={normalizedId} tasks={lessonTasks} />
-      <LessonActivityCard
-        lessonId={normalizedId}
-        rows={lessonActivity.rows}
-      />
+      <LessonActivityCard lessonId={normalizedId} />
       <LessonEditForm
         lesson={lesson}
         orderIndex={orderIndex}

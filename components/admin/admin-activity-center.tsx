@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { activityHasDiffPreview } from "@/lib/admin/admin-activity-diff";
 import { summarizeActivityRows } from "@/lib/admin/admin-activity-summary";
 import { activityRollbackAvailable } from "@/lib/admin/admin-rollback-eligibility";
@@ -16,24 +16,18 @@ import {
 import { ActivityExportControls } from "@/components/admin/activity-export-controls";
 import { ActivityLogList } from "@/components/admin/activity-log-list";
 import { ActivitySummaryCards } from "@/components/admin/activity-summary-cards";
-import type {
-  AdminActivityRow,
-  AdminActivitySummary,
-} from "@/lib/admin/admin-activity-shared";
+import type { AdminActivityRow } from "@/lib/admin/admin-activity-shared";
+import { fetchAdminActivityLogClient } from "@/lib/supabase/admin-activity-read";
 
 type Props = {
-  rows: AdminActivityRow[];
-  summary: AdminActivitySummary;
-  warnings: string[];
   initialLessonId?: string;
 };
 
-export function AdminActivityCenter({
-  rows,
-  summary,
-  warnings,
-  initialLessonId = "",
-}: Props) {
+export function AdminActivityCenter({ initialLessonId = "" }: Props) {
+  const [rows, setRows] = useState<AdminActivityRow[]>([]);
+  const [warnings, setWarnings] = useState<string[]>([]);
+  const [loading, setLoading] = useState(true);
+
   const [action, setAction] = useState<ActivityActionFilter>("all");
   const [entityType, setEntityType] = useState<ActivityEntityFilter>("all");
   const [dateRange, setDateRange] = useState<ActivityDateFilter>("all");
@@ -43,6 +37,24 @@ export function AdminActivityCenter({
   const [lessonId, setLessonId] = useState(initialLessonId);
   const [actor, setActor] = useState("");
   const [search, setSearch] = useState("");
+
+  useEffect(() => {
+    let cancelled = false;
+
+    async function load() {
+      setLoading(true);
+      const result = await fetchAdminActivityLogClient({ limit: 300 });
+      if (cancelled) return;
+      setRows(result.rows);
+      setWarnings(result.warnings);
+      setLoading(false);
+    }
+
+    void load();
+    return () => {
+      cancelled = true;
+    };
+  }, []);
 
   const actionOptions = useMemo(
     () => [...new Set(rows.map((row) => row.action))].sort(),
@@ -94,6 +106,7 @@ export function AdminActivityCenter({
     rollbackFilter,
   ]);
 
+  const loadedSummary = useMemo(() => summarizeActivityRows(rows), [rows]);
   const displaySummary = useMemo(
     () => summarizeActivityRows(filteredRows),
     [filteredRows]
@@ -112,18 +125,24 @@ export function AdminActivityCenter({
         </div>
       ) : null}
 
+      {loading ? (
+        <p className="rounded-2xl bg-slate-50 px-6 py-8 text-center text-sm text-slate-600 ring-1 ring-slate-200">
+          Activity log ачааллаж байна…
+        </p>
+      ) : null}
+
       <section>
         <h2 className="text-lg font-semibold text-slate-900">Summary</h2>
         <div className="mt-3">
-          <ActivitySummaryCards summary={displaySummary} />
+          <ActivitySummaryCards summary={loadedSummary} />
         </div>
         <p className="mt-2 text-xs text-slate-500">
-          Loaded {summary.total} total · showing {displaySummary.total} after
-          filters.
+          Loaded {loadedSummary.total} total · showing {displaySummary.total}{" "}
+          after filters.
         </p>
       </section>
 
-      <ActivityExportControls rows={filteredRows} />
+      {!loading ? <ActivityExportControls rows={filteredRows} /> : null}
 
       <ActivityFilterBar
         action={action}
@@ -144,10 +163,10 @@ export function AdminActivityCenter({
         onLessonIdChange={setLessonId}
         onActorChange={setActor}
         onSearchChange={setSearch}
-        resultCount={filteredRows.length}
+        resultCount={loading ? 0 : filteredRows.length}
       />
 
-      <ActivityLogList rows={filteredRows} />
+      {!loading ? <ActivityLogList rows={filteredRows} /> : null}
     </div>
   );
 }

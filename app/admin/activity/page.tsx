@@ -1,6 +1,4 @@
-import Link from "next/link";
 import { AdminActivityCenter } from "@/components/admin/admin-activity-center";
-import { getAdminActivityLog } from "@/lib/supabase/admin-activity-log";
 
 export const dynamic = "force-dynamic";
 
@@ -14,10 +12,6 @@ type Props = {
 
 export default async function AdminActivityPage({ searchParams }: Props) {
   const { lessonId } = await searchParams;
-  const data = await getAdminActivityLog({
-    lessonId: lessonId?.trim() || undefined,
-    limit: 300,
-  });
 
   return (
     <div className="flex flex-col gap-6">
@@ -36,12 +30,7 @@ export default async function AdminActivityPage({ searchParams }: Props) {
         ) : null}
       </section>
 
-      <AdminActivityCenter
-        rows={data.rows}
-        summary={data.summary}
-        warnings={data.warnings}
-        initialLessonId={lessonId ?? ""}
-      />
+      <AdminActivityCenter initialLessonId={lessonId ?? ""} />
     </div>
   );
 }

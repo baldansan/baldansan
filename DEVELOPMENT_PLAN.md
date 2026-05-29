@@ -170,9 +170,13 @@ Phased roadmap from MVP demo to production product.
 
 ---
 
-## Phase 5: Admin content management / lesson upload — **In progress**
+## Phase 5: Admin content management / lesson upload — **Completed**
 
 **Goal:** Non-developers can publish and manage lesson content (admin workflow) without SQL seeds or code deploys.
+
+**Exit criteria:** Met — full admin CMS with editors, import/export, media, analytics, tasks, activity log, rollback, and release workflow.
+
+**Phase 5 Final Audit — Completed (May 2026):** See [PHASE_5_FINAL_AUDIT.md](./PHASE_5_FINAL_AUDIT.md).
 
 **Phase 5 Step 1 — Completed:** Admin foundation (docs + UI shell, no DB writes).
 
@@ -317,7 +321,9 @@ Phased roadmap from MVP demo to production product.
 
 **Phase 5 Mega Batch:** production CMS hardening, safe rollback, audit export, and final audit page.
 
-**Next:** Phase 5 Final Audit (manual walkthrough) or Phase 6 — Deployment / Production Readiness.
+**Phase 5 Final Audit — Completed (May 2026).** See [PHASE_5_FINAL_AUDIT.md](./PHASE_5_FINAL_AUDIT.md).
+
+**Next:** Phase 6 — Deployment / Production Readiness.
 - [components/admin/bulk-import-editor.tsx](./components/admin/bulk-import-editor.tsx) on lesson edit page
 - [LESSON_IMPORT_FORMAT.md](./LESSON_IMPORT_FORMAT.md)
 
@@ -356,10 +362,9 @@ Phased roadmap from MVP demo to production product.
 | 24 | Admin activity log / audit trail | ✅ Completed |
 | 25 | Activity diff / rollback preview | ✅ Completed |
 | 26 | CMS hardening — rollback, export, final audit | ✅ Completed |
+| — | Phase 5 Final Audit | ✅ Completed |
 
-**Next (Phase 5):** Phase 5 Final Audit (manual walkthrough) or Phase 6 — Deployment / Production Readiness.
-
-**Exit criteria:** New lesson published through admin UI without deploying code.
+**Phase 5 closed.** **Next:** Phase 6 — Deployment / Production Readiness.
 
 ---
 

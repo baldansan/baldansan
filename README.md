@@ -2,7 +2,7 @@
 
 A Mongolian–Chinese language learning web app. Users learn Chinese through short video lessons, subtitles, vocabulary, and quizzes.
 
-**Current:** Supabase-first lesson content with local fallback, dynamic lessons 1–4, **Supabase Auth**, account progress, and **admin UI shell** at `/admin` (read-only; no content writes yet).
+**Current:** Supabase-first lesson content with local fallback, **Supabase Auth** + account progress, and **Phase 5 Admin CMS** — full content management, analytics, tasks, activity log, rollback, and release workflow at `/admin`.
 
 ## Tech stack
 
@@ -10,7 +10,7 @@ A Mongolian–Chinese language learning web app. Users learn Chinese through sho
 - TypeScript
 - Tailwind CSS 4
 - React 19
-- Supabase (read-only content when configured)
+- Supabase (content, auth, progress, admin RLS writes)
 
 ## Current features
 
@@ -38,8 +38,10 @@ A Mongolian–Chinese language learning web app. Users learn Chinese through sho
 | `/review` | Daily review |
 | `/login` | Sign in |
 | `/signup` | Sign up |
-| `/admin` | Admin dashboard (logged-in; read-only shell) |
-| `/admin/lessons` | Lesson management list |
+| `/admin` | Admin dashboard (admin role required) |
+| `/admin/lessons` | Lesson QA + edit |
+| `/admin/activity` | Admin activity log |
+| `/admin/final-audit` | Phase 5 readiness checklist |
 
 Examples: `/lessons/1`, `/lessons/4/quiz`. Invalid IDs (e.g. `/lessons/999`) show lesson not found.
 
@@ -174,14 +176,15 @@ Helpers: [lib/supabase/auth.ts](./lib/supabase/auth.ts). Header shows **Нэвт
 
 **Final audit:** `/admin/final-audit` — Phase 5 readiness checklist (read-only). See [PHASE_5_FINAL_AUDIT.md](./PHASE_5_FINAL_AUDIT.md).
 
-**Phase 5 Mega Batch:** production CMS hardening, safe rollback, audit export, and final audit page.
+**Phase 5 Final Audit:** `/admin/final-audit` — readiness checklist. See [PHASE_5_FINAL_AUDIT.md](./PHASE_5_FINAL_AUDIT.md).
 
-**Next step:** Phase 5 Final Audit (manual walkthrough) or Phase 6 — Deployment / Production Readiness.
+**Next step:** Phase 6 — Deployment / Production Readiness.
 
 ## Documentation
 
 - [PROJECT_CHECKPOINT.md](./PROJECT_CHECKPOINT.md) — status & Phase 4 audit
-- [DEVELOPMENT_PLAN.md](./DEVELOPMENT_PLAN.md) — roadmap (Phase 5 in progress)
+- [DEVELOPMENT_PLAN.md](./DEVELOPMENT_PLAN.md) — roadmap (Phase 5 completed; Phase 6 next)
+- [PHASE_5_FINAL_AUDIT.md](./PHASE_5_FINAL_AUDIT.md) — Phase 5 audit summary
 - [ADMIN_PLAN.md](./ADMIN_PLAN.md) — Phase 5 admin planning
 - [ADMIN_ACTIVITY_LOG.md](./ADMIN_ACTIVITY_LOG.md) — admin audit trail
 - [ADMIN_ACTIVITY_DIFFS.md](./ADMIN_ACTIVITY_DIFFS.md) — snapshots and diff preview

@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { AdminProductionSafety } from "@/components/admin/admin-production-safety";
-import { AdminActivityPreview } from "@/components/admin/admin-activity-preview";
+import { AdminActivityPreviewLoader, useAdminActivityClient } from "@/components/admin/admin-activity-preview-loader";
 import { AdminAttentionList } from "@/components/admin/admin-attention-list";
 import { AdminCard } from "@/components/admin/admin-card";
 import { AdminDashboardSection } from "@/components/admin/admin-dashboard-section";
@@ -39,6 +39,23 @@ export function AdminDashboard({
   adminActivityWarnings = [],
 }: Props) {
   const [user, setUser] = useState<AuthUser | null>(null);
+  const {
+    rows: clientActivityRows,
+    summary: clientActivitySummary,
+    warnings: clientActivityWarnings,
+    loading: activityLoading,
+  } = useAdminActivityClient(200);
+
+  const activitySummary = activityLoading
+    ? adminActivitySummary
+    : clientActivitySummary;
+  const recentActivity = activityLoading
+    ? recentAdminActivity
+    : clientActivityRows.slice(0, 5);
+  const activityWarnings = [
+    ...adminActivityWarnings,
+    ...clientActivityWarnings,
+  ];
 
   useEffect(() => {
     if (!hasSupabaseConfig) return;
@@ -260,11 +277,11 @@ export function AdminDashboard({
         description="CMS hardening reminders, latest activity, and critical task queue."
       >
         <AdminProductionSafety
-          adminActivitySummary={adminActivitySummary}
-          recentAdminActivity={recentAdminActivity}
+          adminActivitySummary={activitySummary}
+          recentAdminActivity={recentActivity}
           criticalTasks={activeTasks.filter((task) => task.severity === "critical")}
           releaseMigrationPending={metrics.releaseWorkflow.migrationPending}
-          activityWarnings={adminActivityWarnings}
+          activityWarnings={activityWarnings}
         />
       </AdminDashboardSection>
 
@@ -272,15 +289,12 @@ export function AdminDashboard({
         title="Admin activity"
         description="Best-effort audit trail of admin lesson, content, publish, and task actions."
       >
-        {adminActivityWarnings.length > 0 ? (
+        {activityWarnings.length > 0 ? (
           <p className="mb-3 text-xs text-amber-800">
-            {adminActivityWarnings.join(" · ")}
+            {activityWarnings.join(" · ")}
           </p>
         ) : null}
-        <AdminActivityPreview
-          summary={adminActivitySummary}
-          recentRows={recentAdminActivity}
-        />
+        <AdminActivityPreviewLoader recentLimit={5} />
       </AdminDashboardSection>
 
       <AdminDashboardSection
@@ -386,7 +400,7 @@ export function AdminDashboard({
           />
           <AdminCard
             title="Activity log"
-            description={`${adminActivitySummary.total} logged actions · audit trail for admin workflows.`}
+            description={`${activitySummary.total} logged actions · audit trail for admin workflows.`}
             href="/admin/activity"
           />
           <AdminCard

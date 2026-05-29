@@ -1,6 +1,22 @@
 # Supabase folder
 
-This directory holds **database schema and migration SQL** for Buunduu Surtsgaay. It prepares the project for Supabase integration in later Phase 3 steps.
+Database schema, migrations, policies, seeds, and storage setup for Buunduu Surtsgaay.
+
+## Migrations (run manually in Supabase SQL Editor)
+
+Run in order on your project:
+
+1. `migrations/001_initial_schema.sql`
+2. `migrations/002_lesson_media_fields.sql`
+3. `migrations/003_lesson_route_status.sql`
+4. `migrations/004_admin_lesson_bundle.sql`
+5. `migrations/005_grant_is_admin_rpc.sql`
+6. `migrations/005_lesson_release_workflow.sql`
+7. `migrations/006_admin_tasks.sql`
+8. `migrations/007_admin_activity_log.sql`
+9. `migrations/008_admin_activity_snapshots.sql`
+
+Then apply policies and admin bootstrap — see [PHASE_5_FINAL_AUDIT.md](../PHASE_5_FINAL_AUDIT.md) and [workflows/README.md](./workflows/README.md).
 
 ## What is here
 
@@ -13,14 +29,13 @@ This directory holds **database schema and migration SQL** for Buunduu Surtsgaay
 
 ## App status
 
-The Next.js app is **not connected** to Supabase yet:
+The Next.js app uses Supabase for content (Supabase-first + local fallback), auth, user progress, and admin CMS writes via anon key + admin JWT + RLS.
 
-- No `@supabase/supabase-js` package
-- No Supabase client or env vars in the app
-- No authentication
-- Lessons 1–3 still load from `content/courses/hsk5/lessons/*.ts` via `lib/content.ts`
+- Client: `@supabase/ssr` browser client + middleware session refresh
+- Admin: `admin_profiles` + `AdminGuard` on `/admin/*`
+- Env: `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY` in `.env.local` (never commit)
 
-UI and routes are unchanged. Phase 3 Step 1 is **schema planning only**.
+## Legacy note (Phase 3 Step 1)
 
 ## How to run this SQL later
 

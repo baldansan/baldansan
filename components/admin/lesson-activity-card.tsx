@@ -1,13 +1,36 @@
+"use client";
+
 import Link from "next/link";
+import { useEffect, useState } from "react";
 import { ActivityLogList } from "@/components/admin/activity-log-list";
 import type { AdminActivityRow } from "@/lib/admin/admin-activity-shared";
+import { fetchAdminActivityLogClient } from "@/lib/supabase/admin-activity-read";
 
 type Props = {
   lessonId: string;
-  rows: AdminActivityRow[];
+  limit?: number;
 };
 
-export function LessonActivityCard({ lessonId, rows }: Props) {
+export function LessonActivityCard({ lessonId, limit = 10 }: Props) {
+  const [rows, setRows] = useState<AdminActivityRow[]>([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    let cancelled = false;
+
+    async function load() {
+      const result = await fetchAdminActivityLogClient({ lessonId, limit });
+      if (cancelled) return;
+      setRows(result.rows);
+      setLoading(false);
+    }
+
+    void load();
+    return () => {
+      cancelled = true;
+    };
+  }, [lessonId, limit]);
+
   return (
     <section className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:p-6">
       <div className="flex flex-wrap items-start justify-between gap-3">
@@ -16,9 +39,11 @@ export function LessonActivityCard({ lessonId, rows }: Props) {
             Lesson activity
           </h2>
           <p className="mt-1 text-sm text-slate-600">
-            {rows.length === 0
-              ? "No activity recorded for this lesson yet."
-              : `Latest ${rows.length} admin action${rows.length === 1 ? "" : "s"}.`}
+            {loading
+              ? "Activity log ачааллаж байна…"
+              : rows.length === 0
+                ? "No activity recorded for this lesson yet."
+                : `Latest ${rows.length} admin action${rows.length === 1 ? "" : "s"}.`}
           </p>
         </div>
         <Link
@@ -29,9 +54,11 @@ export function LessonActivityCard({ lessonId, rows }: Props) {
         </Link>
       </div>
 
-      <div className="mt-4">
-        <ActivityLogList rows={rows} compact />
-      </div>
+      {!loading ? (
+        <div className="mt-4">
+          <ActivityLogList rows={rows} compact />
+        </div>
+      ) : null}
     </section>
   );
 }

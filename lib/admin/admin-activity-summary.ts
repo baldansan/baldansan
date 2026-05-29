@@ -15,6 +15,9 @@ const LESSON_ACTIONS = new Set([
 ]);
 
 const CONTENT_ACTIONS = new Set([
+  "lesson_metadata_updated",
+  "media_updated",
+  "media_cleared",
   "subtitle_created",
   "subtitle_deleted",
   "vocabulary_created",

@@ -2,7 +2,23 @@
 
 **Project:** Buunduu Surtsgaay (Бөөндөө Сурцгаая)  
 **Checkpoint date:** May 2026  
-**Status:** Phase 5 Step 26 CMS hardening / rollback / export / final audit **completed**
+**Status:** Phase 5 **completed** — Phase 5 Final Audit completed
+
+---
+
+## Phase 5 Final Audit — **Completed**
+
+Phase 5 Final Audit completed (May 2026).
+
+| Area | Result |
+|------|--------|
+| Routes | All public + admin routes build; see [PHASE_5_FINAL_AUDIT.md](./PHASE_5_FINAL_AUDIT.md) |
+| Security | No service_role; .env.local gitignored; AdminGuard verified in code |
+| Activity log | Client-session fetch on `/admin/activity`, dashboard, lesson edit |
+| Docs | PHASE_5_FINAL_AUDIT.md, final-audit page, DEVELOPMENT_PLAN Phase 5 closed |
+| Build | `npm run build` passes |
+
+**Next:** Phase 6 — Deployment / Production Readiness.
 
 ---
 
