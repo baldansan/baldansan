@@ -82,7 +82,7 @@ export function KanjiAppView({ entries, lessonVocab }: Props) {
   );
 
   return (
-    <MobileAppShell activeTab="kanji">
+    <MobileAppShell activeTab="kanji" mainClassName="max-w-[390px] mx-auto w-full">
       <MobilePageHeader
         title="Ханз"
         subtitle="Бүх ханзнууд"

@@ -98,7 +98,77 @@ body {
 }
 
 .app-course-card {
-  @apply rounded-[20px] border border-orange-400 bg-gradient-to-br from-orange-500 to-orange-600 text-white shadow-[var(--app-shadow)];
+  @apply rounded-[20px] border border-orange-400 bg-gradient-to-br from-orange-500 via-orange-500 to-amber-600 text-white shadow-[var(--app-shadow)];
+}
+
+.app-course-card-premium {
+  @apply shadow-[0_8px_24px_rgba(249,115,22,0.25)];
+}
+
+.app-course-card-korean {
+  @apply border-sky-400 from-sky-500 via-sky-500 to-cyan-600 shadow-[0_8px_24px_rgba(14,165,233,0.22)];
+}
+
+.app-chip-scroll {
+  @apply flex gap-2 overflow-x-auto pb-1;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.app-chip-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.app-chip-disabled {
+  @apply cursor-not-allowed opacity-45;
+}
+
+.app-stat-pill-accent {
+  @apply bg-emerald-50 text-emerald-700 ring-emerald-200;
+}
+
+.app-timeline-node {
+  @apply flex h-9 w-9 items-center justify-center rounded-full text-xs font-bold;
+}
+
+.app-timeline-node-active {
+  @apply bg-[var(--app-primary)] text-white ring-4 ring-[var(--app-primary-light)];
+}
+
+.app-timeline-node-next {
+  @apply bg-[var(--app-orange)] text-white shadow-sm;
+}
+
+.app-timeline-node-locked {
+  @apply bg-slate-100 text-sm text-slate-400 ring-1 ring-slate-200;
+}
+
+.app-timeline-card {
+  @apply block rounded-[20px] border border-[var(--app-border)] bg-[var(--app-card)] p-3 shadow-[var(--app-shadow)] transition-colors active:bg-slate-50;
+}
+
+.app-timeline-card-locked {
+  @apply rounded-[16px] border border-slate-200 bg-slate-50/90 p-3;
+}
+
+.app-lesson-media-placeholder {
+  @apply flex aspect-video w-full flex-col items-center justify-center gap-2 bg-gradient-to-br from-slate-100 to-slate-200;
+}
+
+.app-lesson-step-grid {
+  @apply grid grid-cols-1 gap-2.5;
+}
+
+.app-lesson-step-card {
+  @apply flex flex-col rounded-[16px] border border-emerald-100 bg-white p-3.5 shadow-sm transition-colors active:bg-emerald-50;
+}
+
+.app-lesson-step-card-active {
+  @apply border-[var(--app-primary)] bg-emerald-50 ring-1 ring-emerald-200;
+}
+
+.app-lesson-cta-row {
+  @apply grid grid-cols-2 gap-2;
 }
 
 .app-game-mission {
@@ -121,6 +191,10 @@ body {
 /* —— Buttons —— */
 .app-btn-primary {
   @apply inline-flex min-h-[44px] items-center justify-center rounded-full bg-[var(--app-primary)] px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition-colors active:bg-[var(--app-primary-dark)];
+}
+
+.app-btn-secondary {
+  @apply inline-flex min-h-[44px] items-center justify-center rounded-full border border-emerald-200 bg-emerald-50 px-5 py-2.5 text-sm font-semibold text-emerald-800 transition-colors active:bg-emerald-100;
 }
 
 .app-btn-game {

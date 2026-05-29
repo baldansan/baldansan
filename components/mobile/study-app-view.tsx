@@ -43,7 +43,7 @@ export function StudyAppView({ lessons }: Props) {
       : 0;
 
   return (
-    <MobileAppShell activeTab="study">
+    <MobileAppShell activeTab="study" mainClassName="max-w-[390px] mx-auto w-full">
       <MobilePageHeader
         title="Дасгалжуулалтын төв"
         subtitle="Чадвараа сонгон бататгаж, түвшин ахиарай"

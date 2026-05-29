@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { MobileCard } from "@/components/mobile/mobile-card";
 import { isDirectAudioUrl, isDirectVideoUrl } from "@/lib/media-url";
 import {
   hasAudioUrl,
@@ -7,7 +8,6 @@ import {
 } from "@/lib/lesson-media";
 import { lessonPreviewPath } from "@/lib/lesson-publish";
 import { LEARNER_LESSON } from "@/lib/learner-labels";
-import { ctaPrimaryClass } from "@/components/ui/cta-button-row";
 import type { LessonContent } from "@/types/lesson-content";
 
 type DetailProps = {
@@ -21,10 +21,22 @@ export function LessonDetailMediaSection({
 }: DetailProps) {
   const videoReady = hasVideoUrl(lesson);
   const thumbReady = hasThumbnailUrl(lesson);
+  const watchHref = lessonPreviewPath(lesson.id, {
+    adminPreview,
+    subpath: "watch",
+  });
+  const vocabHref = lessonPreviewPath(lesson.id, {
+    adminPreview,
+    subpath: "vocabulary",
+  });
+  const quizHref = lessonPreviewPath(lesson.id, {
+    adminPreview,
+    subpath: "quiz",
+  });
 
   return (
-    <section className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:p-6">
-      <div className="overflow-hidden rounded-xl ring-1 ring-slate-200">
+    <MobileCard padding="sm" className="overflow-hidden !p-0">
+      <div className="overflow-hidden">
         {thumbReady ? (
           // eslint-disable-next-line @next/next/no-img-element
           <img
@@ -33,44 +45,49 @@ export function LessonDetailMediaSection({
             className="aspect-video w-full object-cover"
           />
         ) : (
-          <div className="flex aspect-video w-full items-center justify-center bg-slate-100">
-            <p className="px-4 text-center text-sm font-medium text-slate-500">
-              {videoReady ? "Видео зураг" : LEARNER_LESSON.videoPlaceholder}
+          <div className="app-lesson-media-placeholder">
+            <span className="text-3xl" aria-hidden>
+              🎬
+            </span>
+            <p className="max-w-[280px] px-4 text-center text-sm font-semibold text-slate-700">
+              {videoReady
+                ? "Видео бэлэн"
+                : "Видео хараахан нэмэгдээгүй байна"}
             </p>
+            {!videoReady ? (
+              <p className="max-w-[280px] px-4 text-center text-xs leading-5 text-slate-500">
+                Энэ хичээлийн үгийн сан болон quiz-г ашиглаж болно.
+              </p>
+            ) : null}
           </div>
         )}
       </div>
 
-      <div className="mt-4 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+      <div className="flex flex-col gap-3 p-4">
         {videoReady ? (
-          <div>
-            <p className="text-sm font-semibold text-emerald-700">Видео бэлэн</p>
-            <p className="mt-1 text-xs text-slate-500">
-              Үзэх хуудсанд видео харагдана.
-            </p>
-          </div>
+          <>
+            <div>
+              <p className="text-sm font-semibold text-emerald-700">Видео бэлэн</p>
+              <p className="mt-0.5 text-xs text-[var(--app-muted)]">
+                Үзэх хуудсанд видео харагдана.
+              </p>
+            </div>
+            <Link href={watchHref} className="app-btn-primary w-full">
+              ▶ {LEARNER_LESSON.watch}
+            </Link>
+          </>
         ) : (
-          <div>
-            <p className="text-sm font-semibold text-slate-600">
-              {LEARNER_LESSON.videoPlaceholder}
-            </p>
-            <p className="mt-1 text-xs text-slate-500">
-              {LEARNER_LESSON.noVideoNote}
-            </p>
+          <div className="app-lesson-cta-row">
+            <Link href={vocabHref} className="app-btn-secondary w-full !min-h-[40px] !py-2 !text-xs">
+              📚 {LEARNER_LESSON.vocabularyStudy}
+            </Link>
+            <Link href={quizHref} className="app-btn-primary w-full !min-h-[40px] !py-2 !text-xs">
+              ✓ {LEARNER_LESSON.quiz}
+            </Link>
           </div>
         )}
-
-        <Link
-          href={lessonPreviewPath(lesson.id, {
-            adminPreview,
-            subpath: "watch",
-          })}
-          className={ctaPrimaryClass}
-        >
-          {videoReady ? "Видео үзэх" : LEARNER_LESSON.watch}
-        </Link>
       </div>
-    </section>
+    </MobileCard>
   );
 }
 
@@ -79,80 +96,44 @@ type WatchProps = {
 };
 
 export function LessonWatchMediaSection({ lesson }: WatchProps) {
-  const videoUrl = lesson.videoUrl?.trim();
-  const thumbnailUrl = lesson.thumbnailUrl?.trim();
-  const audioUrl = lesson.audioUrl?.trim();
-  const videoReady = Boolean(videoUrl);
-  const audioReady = Boolean(audioUrl);
+  const videoReady = hasVideoUrl(lesson);
+  const audioReady = hasAudioUrl(lesson);
+  const videoUrl = lesson.videoUrl;
+  const audioUrl = lesson.audioUrl;
+
+  if (videoReady && videoUrl && isDirectVideoUrl(videoUrl)) {
+    return (
+      <video
+        controls
+        className="aspect-video w-full rounded-[16px] bg-black object-contain"
+        src={videoUrl}
+        playsInline
+      />
+    );
+  }
+
+  if (audioReady && audioUrl && isDirectAudioUrl(audioUrl)) {
+    return (
+      <MobileCard>
+        <p className="text-sm font-semibold text-[var(--app-text)]">Audio</p>
+        <audio controls className="mt-2 w-full" src={audioUrl} />
+      </MobileCard>
+    );
+  }
 
   return (
-    <>
-      <section className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:p-6">
-        {videoReady && isDirectVideoUrl(videoUrl!) ? (
-          <video
-            className="aspect-video w-full rounded-xl bg-black ring-1 ring-slate-200"
-            controls
-            playsInline
-            poster={thumbnailUrl}
-            src={videoUrl}
-          >
-            Your browser does not support video playback.
-          </video>
-        ) : videoReady ? (
-          <div className="flex aspect-video flex-col items-center justify-center gap-4 rounded-xl bg-slate-100 p-6 ring-1 ring-slate-200">
-            {thumbnailUrl ? (
-              // eslint-disable-next-line @next/next/no-img-element
-              <img
-                src={thumbnailUrl}
-                alt={`${lesson.title} cover`}
-                className="max-h-32 rounded-lg object-cover ring-1 ring-slate-200"
-              />
-            ) : null}
-            <p className="text-center text-sm text-slate-600">
-              Гадны видео холбоос — browser дээр нээнэ үү.
-            </p>
-            <a
-              href={videoUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={ctaPrimaryClass}
-            >
-              Видео нээх
-            </a>
-          </div>
-        ) : (
-          <div className="flex aspect-video w-full flex-col items-center justify-center gap-3 rounded-xl bg-slate-100 p-6 ring-1 ring-slate-200">
-            <p className="text-center text-sm font-medium text-slate-600">
-              {LEARNER_LESSON.videoPlaceholder}
-            </p>
-            <p className="text-center text-xs text-slate-500">
-              {LEARNER_LESSON.noVideoNote}
-            </p>
-          </div>
-        )}
-
-        <p className="mt-3 text-center text-sm font-medium text-slate-600">
-          00:00 / {lesson.watchTotalTime}
+    <MobileCard className="text-center">
+      <div className="app-lesson-media-placeholder !aspect-auto min-h-[160px] rounded-[16px]">
+        <span className="text-3xl" aria-hidden>
+          🎬
+        </span>
+        <p className="text-sm font-semibold text-slate-700">
+          Видео хараахан нэмэгдээгүй байна
         </p>
-      </section>
-
-      {audioReady ? (
-        <section className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:p-6">
-          <h2 className="text-sm font-semibold text-slate-900">Аудио</h2>
-          {isDirectAudioUrl(audioUrl!) ? (
-            <audio className="mt-4 w-full" controls src={audioUrl} />
-          ) : (
-            <a
-              href={audioUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-4 inline-flex rounded-full border border-emerald-200 bg-emerald-50 px-5 py-2.5 text-sm font-semibold text-emerald-800 transition-colors hover:bg-emerald-100"
-            >
-              Аудио нээх
-            </a>
-          )}
-        </section>
-      ) : null}
-    </>
+        <p className="mt-1 text-xs text-slate-500">
+          Энэ хичээлийн үгийн сан болон quiz-г ашиглаж болно.
+        </p>
+      </div>
+    </MobileCard>
   );
 }

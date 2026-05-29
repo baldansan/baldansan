@@ -64,7 +64,7 @@ export function ProfileAppView() {
 
   if (!ready) {
     return (
-      <MobileAppShell activeTab="profile">
+      <MobileAppShell activeTab="profile" mainClassName="max-w-[390px] mx-auto w-full">
         <p className="py-16 text-center text-sm text-[var(--app-muted)]">
           Ачааллаж байна…
         </p>
@@ -74,7 +74,7 @@ export function ProfileAppView() {
 
   if (!user) {
     return (
-      <MobileAppShell activeTab="profile">
+      <MobileAppShell activeTab="profile" mainClassName="max-w-[390px] mx-auto w-full">
         <div className="py-12 text-center">
           <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-slate-200 text-3xl">
             👤
@@ -115,7 +115,7 @@ export function ProfileAppView() {
   ];
 
   return (
-    <MobileAppShell activeTab="profile">
+    <MobileAppShell activeTab="profile" mainClassName="max-w-[390px] mx-auto w-full">
       <section className="mb-5 text-center">
         <div className="relative mx-auto w-fit">
           <div className="flex h-20 w-20 items-center justify-center rounded-full bg-emerald-100 text-3xl">

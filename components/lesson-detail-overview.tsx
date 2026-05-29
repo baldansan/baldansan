@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { MobileCard } from "@/components/mobile/mobile-card";
 import {
   getLearnedWordsSmart,
   getLessonStatusSmart,
@@ -11,13 +12,6 @@ import {
 import { lessonPreviewPath } from "@/lib/lesson-publish";
 import { coursePath } from "@/lib/content";
 import { LEARNER_LESSON } from "@/lib/learner-labels";
-import {
-  CtaButtonRow,
-  ctaOutlineClass,
-  ctaPrimaryClass,
-  ctaSecondaryClass,
-} from "@/components/ui/cta-button-row";
-import { SectionCard } from "@/components/ui/section-card";
 import type { LessonContent } from "@/types/lesson-content";
 
 type Props = {
@@ -65,73 +59,92 @@ export function LessonDetailOverview({
     subpath: "quiz",
   });
 
+  const steps = [
+    {
+      step: "1",
+      href: watchHref,
+      icon: "▶",
+      title: LEARNER_LESSON.watch,
+      desc: "Видео + хадмал",
+    },
+    {
+      step: "2",
+      href: vocabHref,
+      icon: "📚",
+      title: LEARNER_LESSON.vocabulary,
+      desc: `${lesson.vocabularyCount} үг`,
+    },
+    {
+      step: "3",
+      href: quizHref,
+      icon: "✓",
+      title: "Quiz",
+      desc: `${lesson.quizCount} асуулт`,
+    },
+  ];
+
   return (
     <>
-      <SectionCard>
-        <h2 className="text-lg font-semibold text-slate-900">Хичээлийн алхам</h2>
-        <ol className="mt-4 grid gap-3 sm:grid-cols-3">
-          {[
-            { step: "1", href: watchHref, title: LEARNER_LESSON.watch, desc: "Видео + хадмал" },
-            {
-              step: "2",
-              href: vocabHref,
-              title: LEARNER_LESSON.vocabulary,
-              desc: `${lesson.vocabularyCount} үг`,
-            },
-            {
-              step: "3",
-              href: quizHref,
-              title: "Quiz",
-              desc: `${lesson.quizCount} асуулт`,
-            },
-          ].map((item) => (
+      <MobileCard padding="lg">
+        <h2 className="text-sm font-bold text-[var(--app-text)]">
+          Хичээлийн алхам
+        </h2>
+        <ol className="app-lesson-step-grid mt-3">
+          {steps.map((item) => (
             <li key={item.step}>
-              <Link
-                href={item.href}
-                className="flex h-full flex-col rounded-xl border border-emerald-100 bg-emerald-50/50 p-4 transition-colors hover:bg-emerald-50"
-              >
-                <span className="text-xs font-bold text-emerald-600">
-                  {item.step}
-                </span>
-                <p className="mt-1 font-semibold text-emerald-900">{item.title}</p>
-                <p className="mt-1 text-xs text-slate-600">{item.desc}</p>
+              <Link href={item.href} className="app-lesson-step-card">
+                <div className="flex items-center gap-3">
+                  <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-emerald-50 text-sm">
+                    {item.icon}
+                  </span>
+                  <div className="min-w-0 flex-1">
+                    <p className="text-[10px] font-bold uppercase tracking-wide text-emerald-600">
+                      Алхам {item.step}
+                    </p>
+                    <p className="font-semibold text-[var(--app-text)]">
+                      {item.title}
+                    </p>
+                    <p className="text-xs text-[var(--app-muted)]">{item.desc}</p>
+                  </div>
+                  <span className="text-[var(--app-muted)]">›</span>
+                </div>
               </Link>
             </li>
           ))}
         </ol>
-      </SectionCard>
+      </MobileCard>
 
-      <section className="rounded-2xl bg-emerald-50/60 p-5 ring-1 ring-emerald-100 sm:rounded-3xl sm:p-6">
-        <h2 className="text-lg font-semibold text-slate-900">Таны ахиц</h2>
-        <div className="mt-3 flex flex-wrap gap-2 text-sm">
-          <span className="rounded-full bg-white px-3 py-1.5 font-medium text-slate-700 ring-1 ring-slate-200">
-            {statusLabel(status)}
-          </span>
-          <span className="rounded-full bg-white px-3 py-1.5 font-medium text-slate-700 ring-1 ring-slate-200">
-            {learnedCount} үг сурсан
-          </span>
+      <MobileCard className="!bg-emerald-50/50">
+        <h2 className="text-sm font-bold text-[var(--app-text)]">Таны ахиц</h2>
+        <div className="mt-2 flex flex-wrap gap-1.5">
+          <span className="app-stat-pill">{statusLabel(status)}</span>
+          <span className="app-stat-pill">{learnedCount} үг сурсан</span>
           {bestScore != null ? (
-            <span className="rounded-full bg-white px-3 py-1.5 font-medium text-emerald-800 ring-1 ring-emerald-200">
+            <span className="app-stat-pill app-stat-pill-accent">
               Quiz: {bestScore}%
             </span>
           ) : null}
         </div>
-      </section>
+      </MobileCard>
 
-      <CtaButtonRow>
-        <Link href={watchHref} className={ctaPrimaryClass}>
-          {LEARNER_LESSON.watch}
+      <div className="app-lesson-cta-row">
+        <Link href={watchHref} className="app-btn-primary col-span-2 w-full">
+          ▶ {LEARNER_LESSON.watch}
         </Link>
-        <Link href={vocabHref} className={ctaSecondaryClass}>
-          {LEARNER_LESSON.vocabularyStudy}
+        <Link href={vocabHref} className="app-btn-secondary w-full">
+          📚 {LEARNER_LESSON.vocabularyStudy}
         </Link>
-        <Link href={quizHref} className={ctaOutlineClass}>
-          {LEARNER_LESSON.quiz}
+        <Link href={quizHref} className="app-btn-outline-green w-full">
+          ✓ {LEARNER_LESSON.quiz}
         </Link>
-        <Link href={coursePath(lesson.courseId)} className={ctaOutlineClass}>
-          {LEARNER_LESSON.backToCourse}
-        </Link>
-      </CtaButtonRow>
+      </div>
+
+      <Link
+        href={coursePath(lesson.courseId)}
+        className="block text-center text-sm font-medium text-[var(--app-muted)] hover:text-emerald-600"
+      >
+        ← {LEARNER_LESSON.backToCourse}
+      </Link>
     </>
   );
 }

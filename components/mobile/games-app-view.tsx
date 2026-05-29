@@ -89,7 +89,7 @@ export function GamesAppView({ lessonIds, lessonTitles }: Props) {
   const marathonHref = `/games/match?lessonId=${currentLessonId}`;
 
   return (
-    <MobileAppShell activeTab="games">
+    <MobileAppShell activeTab="games" mainClassName="max-w-[390px] mx-auto w-full">
       <MobilePageHeader title="Тоглоом" />
 
       <div className="mb-4 grid grid-cols-3 gap-2">

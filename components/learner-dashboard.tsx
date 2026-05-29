@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useEffect, useState, type ReactNode } from "react";
 import { DashboardQuickReview } from "@/components/dashboard-quick-review";
 import { DashboardGameStatsCard } from "@/components/games/dashboard-game-stats-card";
 import { EmptyState } from "@/components/empty-state";
@@ -9,7 +9,8 @@ import { PwaInstallCard } from "@/components/pwa-install-card";
 import { StreakCard } from "@/components/retention/streak-card";
 import { DailyGoalCard } from "@/components/retention/daily-goal-card";
 import { LocalProgressNote } from "@/components/local-progress-note";
-import { PublicPageShell } from "@/components/public-page-shell";
+import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
+import { MobilePageHeader } from "@/components/mobile/mobile-page-header";
 import { lessonPath, lessonVocabularyPath } from "@/lib/content";
 import {
   getLearnerDashboardStats,
@@ -31,6 +32,15 @@ import { getCurrentUser, hasSupabaseConfig } from "@/lib/supabase/auth";
 type Props = {
   hsk5LessonIds: string[];
 };
+
+function DashboardShell({ children }: { children: ReactNode }) {
+  return (
+    <MobileAppShell activeTab="profile" mainClassName="max-w-[390px] mx-auto w-full">
+      <MobilePageHeader title="Миний сургалт" subtitle="Ахиц, quiz, streak" />
+      <div className="flex flex-col gap-4">{children}</div>
+    </MobileAppShell>
+  );
+}
 
 export function LearnerDashboard({ hsk5LessonIds }: Props) {
   const [ready, setReady] = useState(false);
@@ -87,15 +97,15 @@ export function LearnerDashboard({ hsk5LessonIds }: Props) {
 
   if (!ready) {
     return (
-      <PublicPageShell active="dashboard">
-        <p className="py-16 text-center text-sm text-slate-500">Ачааллаж байна…</p>
-      </PublicPageShell>
+      <DashboardShell>
+        <p className="py-16 text-center text-sm text-[var(--app-muted)]">Ачааллаж байна…</p>
+      </DashboardShell>
     );
   }
 
   if (!loggedIn) {
     return (
-      <PublicPageShell active="dashboard">
+      <DashboardShell>
         <EmptyState
           title="Нэвтрэх шаардлагатай"
           description="Dashboard дээр ахицаа харахын тулд account үүсгээрэй эсвэл нэвтэрнэ үү. Guest хэрэглэгч Courses хэсгээс үргэлжлүүлж болно."
@@ -116,12 +126,12 @@ export function LearnerDashboard({ hsk5LessonIds }: Props) {
             </div>
           }
         />
-      </PublicPageShell>
+      </DashboardShell>
     );
   }
 
   return (
-    <PublicPageShell active="dashboard">
+    <DashboardShell>
       <section className="rounded-3xl bg-white p-6 shadow-sm ring-1 ring-slate-200 sm:p-8">
         <p className="text-sm text-emerald-700">Сайн байна уу</p>
         <h1 className="mt-1 text-2xl font-bold text-slate-900 sm:text-3xl">
@@ -246,6 +256,6 @@ export function LearnerDashboard({ hsk5LessonIds }: Props) {
       </section>
 
       <LocalProgressNote />
-    </PublicPageShell>
+    </DashboardShell>
   );
 }
