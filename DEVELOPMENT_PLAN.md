@@ -291,7 +291,15 @@ Phased roadmap from MVP demo to production product.
 - Dismiss, resolve, start, reopen, priority, due date, admin notes
 - [ADMIN_TASK_MANAGEMENT.md](./ADMIN_TASK_MANAGEMENT.md)
 
-**Next:** Phase 5 Step 24 — Admin activity log and audit trail. Or Phase 5 Final Audit.
+**Phase 5 Step 24 — Completed:** Admin activity log / audit trail.
+
+- [supabase/migrations/007_admin_activity_log.sql](./supabase/migrations/007_admin_activity_log.sql)
+- [lib/supabase/admin-activity.ts](./lib/supabase/admin-activity.ts), [lib/supabase/admin-activity-log.ts](./lib/supabase/admin-activity-log.ts)
+- Route `/admin/activity` — filters, summary cards, expandable metadata
+- Best-effort logging on lesson, content, publish, media, task, release, import, export actions
+- [ADMIN_ACTIVITY_LOG.md](./ADMIN_ACTIVITY_LOG.md)
+
+**Next:** Phase 5 Step 25 — Activity diff/rollback preview. Or Phase 5 Final Audit.
 - [components/admin/bulk-import-editor.tsx](./components/admin/bulk-import-editor.tsx) on lesson edit page
 - [LESSON_IMPORT_FORMAT.md](./LESSON_IMPORT_FORMAT.md)
 
@@ -327,8 +335,9 @@ Phased roadmap from MVP demo to production product.
 | 21 | Content approval / release readiness | ✅ Completed |
 | 22 | Admin Task Center / content review queue | ✅ Completed |
 | 23 | Persistent admin task management | ✅ Completed |
+| 24 | Admin activity log / audit trail | ✅ Completed |
 
-**Next (Phase 5):** Step 24 — Admin activity log and audit trail. Or Phase 5 Final Audit.
+**Next (Phase 5):** Step 25 — Activity diff/rollback preview. Or Phase 5 Final Audit.
 
 **Exit criteria:** New lesson published through admin UI without deploying code.
 

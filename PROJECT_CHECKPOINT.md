@@ -2,7 +2,23 @@
 
 **Project:** Buunduu Surtsgaay (Бөөндөө Сурцгаая)  
 **Checkpoint date:** May 2026  
-**Status:** Phase 4 **completed**; Phase 5 Step 23 persistent admin task management **completed**
+**Status:** Phase 4 **completed**; Phase 5 Step 24 admin activity log / audit trail **completed**
+
+---
+
+## Phase 5 Step 24 — Admin activity log / audit trail — **Completed**
+
+Phase 5 Step 24: Admin activity log / audit trail added.
+
+| Area | Deliverable |
+|------|-------------|
+| Migration | `007_admin_activity_log.sql` |
+| Helpers | `admin-activity.ts`, `admin-activity-log.ts` |
+| Route | `/admin/activity` — filters, summary, activity list |
+| Integration | Dashboard recent activity, lesson edit, lesson builder, admin nav |
+| Docs | [ADMIN_ACTIVITY_LOG.md](./ADMIN_ACTIVITY_LOG.md) |
+
+**Next:** Phase 5 Step 25 — Activity diff/rollback preview. Or Phase 5 Final Audit.
 
 ---
 

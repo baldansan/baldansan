@@ -1,6 +1,10 @@
 import { isCurrentUserAdmin } from "@/lib/supabase/admin";
 import { hasSupabaseConfig, supabase } from "@/lib/supabase/client";
 import type { AdminTask, AdminTaskPriority, AdminTaskStatus } from "@/lib/admin/task-generator";
+import {
+  ADMIN_ACTIVITY_ACTIONS,
+  logAdminActivity,
+} from "@/lib/supabase/admin-activity";
 
 export type AdminTaskWriteResult<T> = {
   data: T | null;
@@ -47,6 +51,22 @@ async function getSessionUserId(): Promise<string | null> {
   if (!supabase) return null;
   const { data } = await supabase.auth.getSession();
   return data.session?.user?.id ?? null;
+}
+
+async function logTaskActivity(
+  task: AdminTask,
+  action: string,
+  metadata?: Record<string, unknown>
+): Promise<void> {
+  await logAdminActivity({
+    action,
+    entityType: "task",
+    entityId: task.taskKey,
+    lessonId: task.lessonId,
+    title: task.title,
+    description: task.description,
+    metadata: { taskKey: task.taskKey, ...metadata },
+  });
 }
 
 function rowFromTask(
@@ -169,25 +189,49 @@ export async function updateAdminTaskStatus(
   status: AdminTaskStatus
 ): Promise<AdminTaskWriteResult<PersistedAdminTaskRow>> {
   const now = new Date().toISOString();
+  let result: AdminTaskWriteResult<PersistedAdminTaskRow>;
   if (status === "resolved") {
-    return upsertGeneratedTask(task, {
+    result = await upsertGeneratedTask(task, {
       status,
       resolvedAt: now,
       dismissedAt: null,
     });
+    if (!result.error) {
+      await logTaskActivity(task, ADMIN_ACTIVITY_ACTIONS.taskResolved, { status });
+    }
+    return result;
   }
   if (status === "dismissed") {
-    return upsertGeneratedTask(task, {
+    result = await upsertGeneratedTask(task, {
       status,
       dismissedAt: now,
       resolvedAt: null,
     });
+    if (!result.error) {
+      await logTaskActivity(task, ADMIN_ACTIVITY_ACTIONS.taskDismissed, { status });
+    }
+    return result;
   }
-  return upsertGeneratedTask(task, {
+  if (status === "in_progress") {
+    result = await upsertGeneratedTask(task, {
+      status,
+      resolvedAt: null,
+      dismissedAt: null,
+    });
+    if (!result.error) {
+      await logTaskActivity(task, ADMIN_ACTIVITY_ACTIONS.taskStarted, { status });
+    }
+    return result;
+  }
+  result = await upsertGeneratedTask(task, {
     status,
     resolvedAt: null,
     dismissedAt: null,
   });
+  if (!result.error) {
+    await logTaskActivity(task, ADMIN_ACTIVITY_ACTIONS.taskUpdated, { status });
+  }
+  return result;
 }
 
 export async function updateAdminTaskPriority(
@@ -250,11 +294,15 @@ export async function saveAdminTaskDetails(
     adminNote: string | null;
   }
 ): Promise<AdminTaskWriteResult<PersistedAdminTaskRow>> {
-  return upsertGeneratedTask(task, {
+  const result = await upsertGeneratedTask(task, {
     priority: details.priority,
     dueDate: details.dueDate,
     adminNote: details.adminNote,
   });
+  if (!result.error) {
+    await logTaskActivity(task, ADMIN_ACTIVITY_ACTIONS.taskUpdated, details);
+  }
+  return result;
 }
 
 /** Update by task_key when row already exists (rare direct patch). */

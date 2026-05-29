@@ -10,6 +10,10 @@ import {
   getLessonExportPayload,
   type LessonExportPayload,
 } from "@/lib/supabase/admin-export";
+import {
+  ADMIN_ACTIVITY_ACTIONS,
+  logAdminActivityFireAndForget,
+} from "@/lib/supabase/admin-activity";
 
 type Props = {
   lessonId: string;
@@ -57,6 +61,18 @@ export function LessonExportCard({ lessonId }: Props) {
       payloadResult.data,
       JSON.stringify(payloadResult.data, null, 2)
     );
+    logAdminActivityFireAndForget({
+      action: ADMIN_ACTIVITY_ACTIONS.backupExported,
+      entityType: "lesson",
+      entityId: lessonId,
+      lessonId,
+      title: `Backup exported for lesson ${lessonId}`,
+      metadata: {
+        subtitles: payloadResult.data.subtitles.length,
+        vocabulary: payloadResult.data.vocabulary.length,
+        quizQuestions: payloadResult.data.quizQuestions.length,
+      },
+    });
     setSuccess("Export JSON бэлэн боллоо.");
   }, [lessonId, applyPayload]);
 

@@ -1,4 +1,8 @@
 import { isCurrentUserAdmin } from "@/lib/supabase/admin";
+import {
+  ADMIN_ACTIVITY_ACTIONS,
+  logAdminActivityFireAndForget,
+} from "@/lib/supabase/admin-activity";
 import { hasSupabaseConfig, supabase } from "@/lib/supabase/client";
 import {
   normalizeReleaseStatus,
@@ -67,6 +71,14 @@ export async function updateLessonReleaseStatus(
       .eq("id", lessonId);
 
     if (error) return { data: null, error: formatWriteError(error) };
+    logAdminActivityFireAndForget({
+      action: ADMIN_ACTIVITY_ACTIONS.releaseStatusUpdated,
+      entityType: "lesson",
+      entityId: lessonId,
+      lessonId,
+      title: `Lesson ${lessonId} release status → ${releaseStatus}`,
+      metadata: { releaseStatus },
+    });
     return { data: { id: lessonId, releaseStatus }, error: null };
   } catch {
     return { data: null, error: "Release status шинэчлэхэд алдаа гарлаа." };
@@ -92,6 +104,14 @@ export async function updateLessonQaStatus(
       .eq("id", lessonId);
 
     if (error) return { data: null, error: formatWriteError(error) };
+    logAdminActivityFireAndForget({
+      action: ADMIN_ACTIVITY_ACTIONS.qaStatusUpdated,
+      entityType: "lesson",
+      entityId: lessonId,
+      lessonId,
+      title: `Lesson ${lessonId} QA status → ${qaStatus}`,
+      metadata: { qaStatus },
+    });
     return { data: { id: lessonId, qaStatus }, error: null };
   } catch {
     return { data: null, error: "QA status шинэчлэхэд алдаа гарлаа." };
@@ -135,6 +155,14 @@ export async function approveLessonForPublish(
       .eq("id", lessonId);
 
     if (error) return { data: null, error: formatWriteError(error) };
+    logAdminActivityFireAndForget({
+      action: ADMIN_ACTIVITY_ACTIONS.lessonApproved,
+      entityType: "lesson",
+      entityId: lessonId,
+      lessonId,
+      title: `Lesson ${lessonId} approved for publish`,
+      metadata: { releaseNotes: releaseNotes ?? null },
+    });
     return {
       data: {
         id: lessonId,
@@ -188,6 +216,13 @@ export async function updateLessonReleaseNotes(
       .eq("id", lessonId);
 
     if (error) return { data: null, error: formatWriteError(error) };
+    logAdminActivityFireAndForget({
+      action: ADMIN_ACTIVITY_ACTIONS.releaseNotesUpdated,
+      entityType: "lesson",
+      entityId: lessonId,
+      lessonId,
+      title: `Lesson ${lessonId} release notes updated`,
+    });
     return { data: { id: lessonId }, error: null };
   } catch {
     return { data: null, error: "Release notes хадгалахад алдаа гарлаа." };

@@ -1,5 +1,9 @@
 import { analyzeImportPayloadExtras } from "@/lib/admin/import-qa";
 import { isCurrentUserAdmin } from "@/lib/supabase/admin";
+import {
+  ADMIN_ACTIVITY_ACTIONS,
+  logAdminActivityFireAndForget,
+} from "@/lib/supabase/admin-activity";
 import { refreshLessonCounts } from "@/lib/supabase/admin-content";
 import { hasSupabaseConfig, supabase } from "@/lib/supabase/client";
 
@@ -488,6 +492,20 @@ export async function bulkImportLessonContent(
     if (refresh.error) {
       return { data: null, error: refresh.error };
     }
+
+    logAdminActivityFireAndForget({
+      action: ADMIN_ACTIVITY_ACTIONS.bulkImportCompleted,
+      entityType: "lesson",
+      entityId: trimmedLessonId,
+      lessonId: trimmedLessonId,
+      title: `Bulk import completed for lesson ${trimmedLessonId}`,
+      metadata: {
+        mode,
+        subtitlesInserted: payload.subtitles.length,
+        vocabularyInserted: payload.vocabulary.length,
+        quizQuestionsInserted: payload.quizQuestions.length,
+      },
+    });
 
     return {
       data: {

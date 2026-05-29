@@ -14,6 +14,10 @@ import {
   type AdminContentResult,
 } from "@/lib/supabase/admin-content";
 import { hasSupabaseConfig } from "@/lib/supabase/client";
+import {
+  ADMIN_ACTIVITY_ACTIONS,
+  logAdminActivityFireAndForget,
+} from "@/lib/supabase/admin-activity";
 
 export type AdminRestoreResult<T> = {
   data: T | null;
@@ -266,6 +270,21 @@ export async function restoreLessonFromBackup(
   await refreshLessonCounts(lessonId);
 
   const summary = imported.data;
+  logAdminActivityFireAndForget({
+    action: ADMIN_ACTIVITY_ACTIONS.backupRestored,
+    entityType: "lesson",
+    entityId: lessonId,
+    lessonId,
+    title: `Backup restored for lesson ${lessonId}`,
+    metadata: {
+      mode: options.mode,
+      restoreMetadata: options.restoreMetadata,
+      subtitlesInserted: summary?.subtitlesInserted ?? payload.subtitles.length,
+      vocabularyInserted: summary?.vocabularyInserted ?? payload.vocabulary.length,
+      quizQuestionsInserted:
+        summary?.quizQuestionsInserted ?? payload.quizQuestions.length,
+    },
+  });
   return {
     data: {
       mode: options.mode,

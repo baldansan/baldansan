@@ -26,9 +26,14 @@ import {
 type Props = {
   reports: LessonQaReport[];
   tasks: AdminTask[];
+  activityCountByLesson?: Record<string, number>;
 };
 
-export function LessonBuilderWorkflow({ reports, tasks }: Props) {
+export function LessonBuilderWorkflow({
+  reports,
+  tasks,
+  activityCountByLesson = {},
+}: Props) {
   const [query, setQuery] = useState("");
   const [selectedId, setSelectedId] = useState<string>(
     reports[0]?.lesson.id ?? ""
@@ -231,6 +236,22 @@ export function LessonBuilderWorkflow({ reports, tasks }: Props) {
                 <dt className="text-slate-500">Media status</dt>
                 <dd>
                   <MediaStatusBadge status={selectedLesson.mediaStatus} />
+                </dd>
+              </div>
+              <div>
+                <dt className="text-slate-500">Admin activity</dt>
+                <dd className="text-slate-900">
+                  {activityCountByLesson[selectedLesson.id] ?? 0} logged action
+                  {(activityCountByLesson[selectedLesson.id] ?? 0) === 1
+                    ? ""
+                    : "s"}
+                  {" · "}
+                  <Link
+                    href={`/admin/activity?lessonId=${encodeURIComponent(selectedLesson.id)}`}
+                    className="font-medium text-emerald-700 hover:text-emerald-800"
+                  >
+                    View log →
+                  </Link>
                 </dd>
               </div>
               <div>

@@ -26,6 +26,12 @@ export function AdminHeader({
           {backLabel}
         </Link>
         <Link
+          href="/admin/activity"
+          className="text-slate-600 transition-colors hover:text-emerald-600"
+        >
+          Activity
+        </Link>
+        <Link
           href="/admin/tasks"
           className="text-slate-600 transition-colors hover:text-emerald-600"
         >

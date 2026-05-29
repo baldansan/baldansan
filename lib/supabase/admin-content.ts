@@ -5,6 +5,11 @@ import {
   normalizeLessonRouteId,
 } from "@/lib/lesson-id";
 import { isCurrentUserAdmin } from "@/lib/supabase/admin";
+import {
+  ADMIN_ACTIVITY_ACTIONS,
+  logAdminActivityFireAndForget,
+  publishActionForStatus,
+} from "@/lib/supabase/admin-activity";
 import { hasSupabaseConfig, supabase } from "@/lib/supabase/client";
 
 export type AdminContentResult<T> = {
@@ -321,6 +326,16 @@ export async function createDraftLesson(
       return { data: null, error: formatWriteError(error) };
     }
 
+    logAdminActivityFireAndForget({
+      action: ADMIN_ACTIVITY_ACTIONS.lessonCreated,
+      entityType: "lesson",
+      entityId: lessonId,
+      lessonId,
+      title: `Lesson ${lessonId} created`,
+      description: input.title.trim(),
+      metadata: { courseId, status, orderIndex },
+    });
+
     return { data: { id: lessonId }, error: null };
   } catch {
     return { data: null, error: "Хичээл үүсгэхэд алдаа гарлаа." };
@@ -442,9 +457,19 @@ export async function updateLessonMetadata(
       return { data: null, error: formatWriteError(error) };
     }
 
+    logAdminActivityFireAndForget({
+      action: ADMIN_ACTIVITY_ACTIONS.lessonMetadataUpdated,
+      entityType: "lesson",
+      entityId: lessonId,
+      lessonId,
+      title: `Lesson ${lessonId} metadata updated`,
+      description: v.title,
+      metadata: { status: v.status, orderIndex: v.orderIndex },
+    });
+
     return { data: { id: lessonId }, error: null };
   } catch {
-    return { data: null, error: "Хичээл шинэчлэхэд алдаа гарлаа." };
+    return { data: null, error: "Metadata хадгалахад алдаа гарлаа." };
   }
 }
 
@@ -532,6 +557,21 @@ export async function updateLessonMedia(
       return { data: null, error: formatWriteError(error) };
     }
 
+    const cleared =
+      !v.videoUrl && !v.thumbnailUrl && !v.audioUrl && v.mediaStatus === "missing";
+    logAdminActivityFireAndForget({
+      action: cleared
+        ? ADMIN_ACTIVITY_ACTIONS.mediaCleared
+        : ADMIN_ACTIVITY_ACTIONS.mediaUpdated,
+      entityType: "lesson",
+      entityId: lessonId,
+      lessonId,
+      title: cleared
+        ? `Lesson ${lessonId} media cleared`
+        : `Lesson ${lessonId} media updated`,
+      metadata: { mediaStatus: v.mediaStatus },
+    });
+
     return {
       data: {
         id: lessonId,
@@ -583,9 +623,18 @@ export async function updateLessonStatus(
       return { data: null, error: formatWriteError(error) };
     }
 
+    logAdminActivityFireAndForget({
+      action: publishActionForStatus(status),
+      entityType: "lesson",
+      entityId: lessonId,
+      lessonId,
+      title: `Lesson ${lessonId} status → ${status}`,
+      metadata: { status },
+    });
+
     return { data: { id: lessonId, status }, error: null };
   } catch {
-    return { data: null, error: "Статус шинэчлэхэд алдаа гарлаа." };
+    return { data: null, error: "Status шинэчлэхэд алдаа гарлаа." };
   }
 }
 
@@ -867,6 +916,14 @@ export async function createSubtitleLine(
     if (!created) {
       return { data: null, error: null };
     }
+    logAdminActivityFireAndForget({
+      action: ADMIN_ACTIVITY_ACTIONS.subtitleCreated,
+      entityType: "subtitle",
+      entityId: String(created.id),
+      lessonId: input.lessonId,
+      title: `Subtitle added to lesson ${input.lessonId}`,
+      metadata: { orderIndex },
+    });
     return { data: created, error: null };
   } catch {
     return { data: null, error: "Subtitle нэмэхэд алдаа гарлаа." };
@@ -874,7 +931,8 @@ export async function createSubtitleLine(
 }
 
 export async function deleteSubtitleLine(
-  id: number
+  id: number,
+  lessonId?: string
 ): Promise<AdminContentResult<null>> {
   if (!supabase || !hasSupabaseConfig) {
     return notConfigured();
@@ -890,6 +948,13 @@ export async function deleteSubtitleLine(
     if (error) {
       return { data: null, error: formatWriteError(error) };
     }
+    logAdminActivityFireAndForget({
+      action: ADMIN_ACTIVITY_ACTIONS.subtitleDeleted,
+      entityType: "subtitle",
+      entityId: String(id),
+      lessonId,
+      title: `Subtitle ${id} deleted`,
+    });
     return { data: null, error: null };
   } catch {
     return { data: null, error: "Subtitle устгахад алдаа гарлаа." };
@@ -965,6 +1030,14 @@ export async function createVocabularyWord(
 
     const list = await getVocabularyWordsByLessonId(input.lessonId);
     const created = list.data?.find((row) => row.order_index === orderIndex);
+    logAdminActivityFireAndForget({
+      action: ADMIN_ACTIVITY_ACTIONS.vocabularyCreated,
+      entityType: "vocabulary",
+      entityId: created ? String(created.id) : undefined,
+      lessonId: input.lessonId,
+      title: `Vocabulary added to lesson ${input.lessonId}`,
+      metadata: { chinese: input.chinese.trim() },
+    });
     return { data: created ?? null, error: null };
   } catch {
     return { data: null, error: "Vocabulary нэмэхэд алдаа гарлаа." };
@@ -995,6 +1068,13 @@ export async function deleteVocabularyWord(
     }
 
     await refreshLessonCounts(lessonId);
+    logAdminActivityFireAndForget({
+      action: ADMIN_ACTIVITY_ACTIONS.vocabularyDeleted,
+      entityType: "vocabulary",
+      entityId: String(id),
+      lessonId,
+      title: `Vocabulary ${id} deleted from lesson ${lessonId}`,
+    });
     return { data: null, error: null };
   } catch {
     return { data: null, error: "Vocabulary устгахад алдаа гарлаа." };
@@ -1074,6 +1154,13 @@ export async function createQuizQuestion(
 
     const list = await getQuizQuestionsByLessonId(input.lessonId);
     const created = list.data?.find((row) => row.order_index === orderIndex);
+    logAdminActivityFireAndForget({
+      action: ADMIN_ACTIVITY_ACTIONS.quizCreated,
+      entityType: "quiz",
+      entityId: created ? String(created.id) : undefined,
+      lessonId: input.lessonId,
+      title: `Quiz question added to lesson ${input.lessonId}`,
+    });
     return { data: created ?? null, error: null };
   } catch {
     return { data: null, error: "Quiz нэмэхэд алдаа гарлаа." };
@@ -1101,6 +1188,13 @@ export async function deleteQuizQuestion(
     }
 
     await refreshLessonCounts(lessonId);
+    logAdminActivityFireAndForget({
+      action: ADMIN_ACTIVITY_ACTIONS.quizDeleted,
+      entityType: "quiz",
+      entityId: String(id),
+      lessonId,
+      title: `Quiz question ${id} deleted from lesson ${lessonId}`,
+    });
     return { data: null, error: null };
   } catch {
     return { data: null, error: "Quiz устгахад алдаа гарлаа." };

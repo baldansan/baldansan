@@ -1,6 +1,10 @@
 import { normalizeLessonRouteId } from "@/lib/lesson-id";
 import { hasSupabaseConfig, supabase } from "@/lib/supabase/client";
 import { isCurrentUserAdmin } from "@/lib/supabase/admin";
+import {
+  ADMIN_ACTIVITY_ACTIONS,
+  logAdminActivityFireAndForget,
+} from "@/lib/supabase/admin-activity";
 
 export const LESSON_MEDIA_BUCKET = "lesson-media";
 
@@ -157,6 +161,20 @@ export async function uploadLessonMediaFile(
         error: "Public URL үүсгэж чадсангүй.",
       };
     }
+
+    logAdminActivityFireAndForget({
+      action: ADMIN_ACTIVITY_ACTIONS.mediaUploaded,
+      entityType: "media",
+      entityId: path,
+      lessonId: normalizeLessonRouteId(lessonId),
+      title: `${mediaType} uploaded for lesson ${lessonId}`,
+      metadata: {
+        mediaType,
+        path,
+        fileName: file.name,
+        sizeBytes: file.size,
+      },
+    });
 
     return {
       publicUrl: data.publicUrl,

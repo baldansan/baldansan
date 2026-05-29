@@ -1,5 +1,9 @@
 import { isCurrentUserAdmin } from "@/lib/supabase/admin";
 import {
+  ADMIN_ACTIVITY_ACTIONS,
+  logAdminActivityFireAndForget,
+} from "@/lib/supabase/admin-activity";
+import {
   getAdminLessonMetadataById,
   getNextLessonOrderIndex,
   getQuizQuestionsByLessonId,
@@ -241,6 +245,15 @@ export async function duplicateLesson(
         return { data: null, error: formatWriteError(error) };
       }
     }
+
+    logAdminActivityFireAndForget({
+      action: ADMIN_ACTIVITY_ACTIONS.lessonDuplicated,
+      entityType: "lesson",
+      entityId: targetId,
+      lessonId: targetId,
+      title: `Lesson duplicated ${sourceId} → ${targetId}`,
+      metadata: { sourceLessonId: sourceId },
+    });
 
     return { data: { id: targetId }, error: null };
   } catch {

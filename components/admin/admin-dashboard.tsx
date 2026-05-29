@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { AdminActivityPreview } from "@/components/admin/admin-activity-preview";
 import { AdminAttentionList } from "@/components/admin/admin-attention-list";
 import { AdminCard } from "@/components/admin/admin-card";
 import { AdminDashboardSection } from "@/components/admin/admin-dashboard-section";
@@ -11,6 +12,10 @@ import { AdminTaskCenterPreview } from "@/components/admin/admin-task-center-pre
 import { getCurrentUser, hasSupabaseConfig } from "@/lib/supabase/auth";
 import type { AdminTask, AdminTaskSummary } from "@/lib/admin/task-generator";
 import type { AdminDashboardMetrics } from "@/lib/supabase/admin-analytics";
+import type {
+  AdminActivityRow,
+  AdminActivitySummary,
+} from "@/lib/admin/admin-activity-shared";
 import type { AuthUser } from "@/types/auth";
 
 type Props = {
@@ -18,6 +23,9 @@ type Props = {
   taskSummary: AdminTaskSummary;
   activeTasks: AdminTask[];
   taskWarnings?: string[];
+  adminActivitySummary: AdminActivitySummary;
+  recentAdminActivity: AdminActivityRow[];
+  adminActivityWarnings?: string[];
 };
 
 export function AdminDashboard({
@@ -25,6 +33,9 @@ export function AdminDashboard({
   taskSummary,
   activeTasks,
   taskWarnings = [],
+  adminActivitySummary,
+  recentAdminActivity,
+  adminActivityWarnings = [],
 }: Props) {
   const [user, setUser] = useState<AuthUser | null>(null);
 
@@ -244,6 +255,21 @@ export function AdminDashboard({
       </AdminDashboardSection>
 
       <AdminDashboardSection
+        title="Admin activity"
+        description="Best-effort audit trail of admin lesson, content, publish, and task actions."
+      >
+        {adminActivityWarnings.length > 0 ? (
+          <p className="mb-3 text-xs text-amber-800">
+            {adminActivityWarnings.join(" · ")}
+          </p>
+        ) : null}
+        <AdminActivityPreview
+          summary={adminActivitySummary}
+          recentRows={recentAdminActivity}
+        />
+      </AdminDashboardSection>
+
+      <AdminDashboardSection
         title="Task center"
         description="Actionable content review queue from lessons, QA, media, release, and analytics."
       >
@@ -277,6 +303,12 @@ export function AdminDashboard({
         description="Jump to common admin workflows."
       >
         <div className="flex flex-wrap gap-2">
+          <Link
+            href="/admin/activity"
+            className="inline-flex rounded-full bg-emerald-500 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-emerald-600"
+          >
+            Activity log
+          </Link>
           <Link
             href="/admin/tasks"
             className="inline-flex rounded-full bg-emerald-500 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-emerald-600"
@@ -327,6 +359,11 @@ export function AdminDashboard({
         description="Existing workflows — unchanged."
       >
         <div className="grid gap-4 sm:grid-cols-2">
+          <AdminCard
+            title="Activity log"
+            description={`${adminActivitySummary.total} logged actions · audit trail for admin workflows.`}
+            href="/admin/activity"
+          />
           <AdminCard
             title="Task center"
             description={`${taskSummary.totalTasks} tasks · ${taskSummary.criticalCount} critical · review queue before publish.`}

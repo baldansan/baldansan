@@ -62,3 +62,16 @@ Review migrations before production. Requires admin RLS policies on `lessons` up
 2. Verify table `public.admin_tasks` and admin-only RLS policies.
 
 See [ADMIN_TASK_MANAGEMENT.md](../../ADMIN_TASK_MANAGEMENT.md).
+
+---
+
+## Admin activity log (Phase 5 Step 24)
+
+**Migration file:** [../migrations/007_admin_activity_log.sql](../migrations/007_admin_activity_log.sql)
+
+### Run in Supabase SQL Editor
+
+1. Paste and run `007_admin_activity_log.sql` (after `006_admin_tasks.sql`).
+2. Verify table `public.admin_activity_log` and admin-only select/insert RLS policies.
+
+See [ADMIN_ACTIVITY_LOG.md](../../ADMIN_ACTIVITY_LOG.md).
