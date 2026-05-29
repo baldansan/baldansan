@@ -58,13 +58,19 @@ Concise go-live checklist. See [DEPLOYMENT_PLAN.md](./DEPLOYMENT_PLAN.md) for de
 ## Vercel readiness
 
 - [ ] GitHub repo connected to Vercel
-- [ ] Framework preset: Next.js
+- [ ] Framework preset: Next.js (`vercel.json` present)
 - [ ] Build command: `npm run build`
 - [ ] `NEXT_PUBLIC_SUPABASE_URL` set in Vercel env
 - [ ] `NEXT_PUBLIC_SUPABASE_ANON_KEY` set in Vercel env
 - [ ] **No** `service_role` key in Vercel env for this app
-- [ ] First deploy succeeds
+- [ ] Production deployment created (first deploy succeeds)
 - [ ] Deployment logs reviewed
+- [ ] `/deployment-check` passes (no **fail**; review **warn**)
+- [ ] Supabase Auth **Site URL** updated to production URL
+- [ ] Supabase Auth **Redirect URLs** updated (production + `/login` + `/profile` + localhost)
+- [ ] Admin login tested on production URL
+- [ ] Public route smoke test passed (`/`, `/courses/hsk5`, `/lessons/1`, `/login`)
+- [ ] Admin route smoke test passed (`/admin/system-check`, `/admin/final-audit`)
 - [ ] Custom domain added (optional)
 
 ---
@@ -112,3 +118,4 @@ Concise go-live checklist. See [DEPLOYMENT_PLAN.md](./DEPLOYMENT_PLAN.md) for de
 - [SUPABASE_PRODUCTION_SETUP.md](./SUPABASE_PRODUCTION_SETUP.md)
 - [supabase/verify/README.md](./supabase/verify/README.md)
 - `/admin/system-check` (local or after deploy)
+- `/deployment-check` (public smoke test after deploy)

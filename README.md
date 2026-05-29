@@ -38,6 +38,7 @@ A Mongolian–Chinese language learning web app. Users learn Chinese through sho
 | `/review` | Daily review |
 | `/login` | Sign in |
 | `/signup` | Sign up |
+| `/deployment-check` | Public deployment smoke test (post-deploy) |
 | `/admin` | Admin dashboard (admin role required) |
 | `/admin/lessons` | Lesson QA + edit |
 | `/admin/activity` | Admin activity log |
@@ -176,11 +177,28 @@ Helpers: [lib/supabase/auth.ts](./lib/supabase/auth.ts). Header shows **Нэвт
 
 **System check:** [`/admin/system-check`](/admin/system-check) — runtime env/Supabase readiness (pass/warn/fail badges; no secrets shown). Run alongside [supabase/verify/production_verification.sql](./supabase/verify/production_verification.sql) in Supabase SQL Editor.
 
-**Next step:** Phase 6 Step 3 — Vercel deployment setup (do not deploy until checklists green).
+**Deployment check:** [`/deployment-check`](/deployment-check) — public post-deploy smoke test (no login; no secrets).
+
+**Next step:** Phase 6 Step 4 — Production route testing after first manual Vercel deploy.
+
+## Deployment (Phase 6)
+
+Repo is prepared for **manual Vercel deployment** — not auto-deployed from code.
+
+| Resource | Purpose |
+|----------|---------|
+| [VERCEL_DEPLOYMENT_GUIDE.md](./VERCEL_DEPLOYMENT_GUIDE.md) | Connect GitHub, env vars, deploy, Supabase Auth URLs |
+| [SUPABASE_PRODUCTION_SETUP.md](./SUPABASE_PRODUCTION_SETUP.md) | Migrations, policies, verification SQL |
+| [PRODUCTION_CHECKLIST.md](./PRODUCTION_CHECKLIST.md) | Go-live checkbox list |
+| [DEPLOYMENT_PLAN.md](./DEPLOYMENT_PLAN.md) | Full Phase 6 deployment plan |
+| [`/deployment-check`](/deployment-check) | Public smoke test after deploy |
+| [`/admin/system-check`](/admin/system-check) | Admin verification after deploy |
+
+Copy [.env.example](./.env.example) to `.env.local` locally. On Vercel, set `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_ANON_KEY` only — never `service_role`.
 
 ## Production readiness (Phase 6)
 
-Planning only — **not deployed yet**.
+Setup complete — **not deployed yet** until you run manual Vercel deploy and checklists are green.
 
 | Doc | Purpose |
 |-----|---------|
@@ -190,6 +208,7 @@ Planning only — **not deployed yet**.
 | [SUPABASE_PRODUCTION_SETUP.md](./SUPABASE_PRODUCTION_SETUP.md) | Migrations, policies, SQL checks |
 | [supabase/verify/README.md](./supabase/verify/README.md) | Production verification SQL (Phase 6 Step 2) |
 | [`/admin/system-check`](/admin/system-check) | App-side verification (admin, read-only) |
+| [`/deployment-check`](/deployment-check) | Public smoke test (post-deploy) |
 
 **Stack:** Vercel (Next.js) + Supabase (DB, Auth, Storage). Anon key only in client — never `service_role`.
 

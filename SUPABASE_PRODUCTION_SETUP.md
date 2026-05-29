@@ -62,6 +62,23 @@ Dashboard → **Authentication → Providers → Email**:
 - **Confirm email:** ON for production (recommended)
 - Set **Site URL** and **Redirect URLs** after Vercel deploy
 
+### After Vercel deployment — update Auth URLs
+
+Once you have a production URL (e.g. `https://your-app.vercel.app`):
+
+1. Supabase Dashboard → **Authentication → URL Configuration**
+2. Set **Site URL** to your Vercel production URL
+3. Add **Redirect URLs**:
+   - `https://your-app.vercel.app`
+   - `https://your-app.vercel.app/**`
+   - `https://your-app.vercel.app/login`
+   - `https://your-app.vercel.app/profile`
+   - `http://localhost:3000/**` (keep for local dev)
+4. Save and test `/login` on production
+5. If using a custom domain later, repeat with the custom domain
+
+See [VERCEL_DEPLOYMENT_GUIDE.md](./VERCEL_DEPLOYMENT_GUIDE.md) section D.
+
 ---
 
 ## 6. Verification SQL snippets
@@ -168,6 +185,7 @@ Fix all **fail** rows before Vercel deploy. See [supabase/verify/README.md](./su
 4. Edit a lesson → save metadata → confirm row in `admin_activity_log`.
 5. Upload thumbnail → confirm file in `lesson-media` bucket.
 6. Publish lesson → confirm visible on `/courses/hsk5`.
+7. After Vercel deploy, open `/deployment-check` on production URL — confirm no **fail** rows.
 
 ---
 
@@ -181,6 +199,7 @@ Fix all **fail** rows before Vercel deploy. See [supabase/verify/README.md](./su
 
 ## Related docs
 
+- [VERCEL_DEPLOYMENT_GUIDE.md](./VERCEL_DEPLOYMENT_GUIDE.md) — Vercel deploy + Auth URL setup
 - [supabase/verify/README.md](./supabase/verify/README.md) — production verification SQL
 - [DEPLOYMENT_PLAN.md](./DEPLOYMENT_PLAN.md)
 - [PRODUCTION_CHECKLIST.md](./PRODUCTION_CHECKLIST.md)

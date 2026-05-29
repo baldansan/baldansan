@@ -6,7 +6,7 @@ Phase 6: production readiness. **Do not deploy until checklists are complete.**
 |------|--------|--------|
 | 1 | Production readiness planning | ✅ Completed |
 | 2 | Supabase production verification | ✅ Completed |
-| 3 | Vercel deployment setup | Pending |
+| 3 | Vercel deployment setup | ✅ Completed |
 | 4 | Production route testing | Pending |
 | 5 | Security / RLS final audit | Pending |
 | 6 | Launch candidate | Pending |
@@ -90,6 +90,19 @@ Verification requirements:
 - No `service_role` in client; no secrets in repo
 
 See [supabase/verify/README.md](./supabase/verify/README.md).
+
+### Phase 6 Step 3 — Vercel deployment setup (completed)
+
+Repo prepared for manual Vercel deployment:
+
+1. **Config:** [vercel.json](./vercel.json) — minimal Next.js framework hint
+2. **Env template:** [.env.example](./.env.example) — public variable names only
+3. **Smoke test:** `/deployment-check` — public post-deploy verification route
+4. **Guide:** [VERCEL_DEPLOYMENT_GUIDE.md](./VERCEL_DEPLOYMENT_GUIDE.md) — connect repo, env vars, deploy, Supabase Auth URLs
+
+**Next step:** Phase 6 Step 4 — Production route testing after first deploy.
+
+Do not deploy until Supabase verification (Step 2) is green.
 
 ---
 

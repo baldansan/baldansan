@@ -520,9 +520,25 @@ export async function runSystemChecks(): Promise<SystemCheckReport> {
     checkSupabaseReadiness(),
   ]);
 
+  const deploymentChecks: SystemCheckItem[] = [
+    item(
+      "deployment",
+      "deployment-check-route",
+      "Deployment check route",
+      "pass",
+      "Public smoke test at /deployment-check."
+    ),
+  ];
+
   return {
     env,
-    checks: [...envChecks, ...admin, ...content, ...supabaseChecks],
+    checks: [
+      ...envChecks,
+      ...deploymentChecks,
+      ...admin,
+      ...content,
+      ...supabaseChecks,
+    ],
     ranAt: new Date().toISOString(),
   };
 }

@@ -2,7 +2,24 @@
 
 **Project:** Buunduu Surtsgaay (Бөөндөө Сурцгаая)  
 **Checkpoint date:** May 2026  
-**Status:** Phase 6 Step 2 Supabase production verification **completed**
+**Status:** Phase 6 Step 3 Vercel deployment setup **completed**
+
+---
+
+## Phase 6 Step 3 — Vercel deployment setup — **Completed**
+
+Phase 6 Step 3: Vercel deployment setup prepared.
+
+| Area | Deliverable |
+|------|-------------|
+| Config | `vercel.json` — minimal Next.js framework hint |
+| Env | `.env.example` — safe public variable template |
+| Smoke test | `/deployment-check` — public post-deploy route |
+| Guide | `VERCEL_DEPLOYMENT_GUIDE.md` — full deploy + Auth URL steps |
+| Admin | `/admin/system-check` — deployment check route link |
+| Checklists | PRODUCTION_CHECKLIST, DEPLOYMENT_PLAN updated |
+
+**Next:** Phase 6 Step 4 — Production route testing after first deploy.
 
 ---
 

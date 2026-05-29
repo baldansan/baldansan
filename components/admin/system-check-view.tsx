@@ -177,6 +177,14 @@ export function SystemCheckView() {
         <ul className="mt-3 space-y-1 text-sm">
           <li>
             <Link
+              href="/deployment-check"
+              className="font-medium text-emerald-800 hover:underline"
+            >
+              Public deployment check
+            </Link>
+          </li>
+          <li>
+            <Link
               href="/admin/final-audit"
               className="font-medium text-emerald-800 hover:underline"
             >
@@ -185,8 +193,9 @@ export function SystemCheckView() {
           </li>
         </ul>
         <p className="mt-3 text-xs text-slate-500">
-          SUPABASE_PRODUCTION_SETUP.md · PRODUCTION_CHECKLIST.md ·
-          DEPLOYMENT_PLAN.md · supabase/verify/README.md
+          VERCEL_DEPLOYMENT_GUIDE.md · SUPABASE_PRODUCTION_SETUP.md ·
+          PRODUCTION_CHECKLIST.md · DEPLOYMENT_PLAN.md ·
+          supabase/verify/README.md
         </p>
       </section>
     </div>
