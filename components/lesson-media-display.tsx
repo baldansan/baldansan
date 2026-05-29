@@ -6,6 +6,8 @@ import {
   hasVideoUrl,
 } from "@/lib/lesson-media";
 import { lessonPreviewPath } from "@/lib/lesson-publish";
+import { LEARNER_LESSON } from "@/lib/learner-labels";
+import { ctaPrimaryClass } from "@/components/ui/cta-button-row";
 import type { LessonContent } from "@/types/lesson-content";
 
 type DetailProps = {
@@ -32,8 +34,8 @@ export function LessonDetailMediaSection({
           />
         ) : (
           <div className="flex aspect-video w-full items-center justify-center bg-slate-100">
-            <p className="text-sm font-medium text-slate-500">
-              {videoReady ? "Video cover" : lesson.videoPlaceholder}
+            <p className="px-4 text-center text-sm font-medium text-slate-500">
+              {videoReady ? "Видео зураг" : LEARNER_LESSON.videoPlaceholder}
             </p>
           </div>
         )}
@@ -42,18 +44,18 @@ export function LessonDetailMediaSection({
       <div className="mt-4 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
         {videoReady ? (
           <div>
-            <p className="text-sm font-semibold text-emerald-700">Video ready</p>
+            <p className="text-sm font-semibold text-emerald-700">Видео бэлэн</p>
             <p className="mt-1 text-xs text-slate-500">
-              Watch page дээр видео эсвэл холбоос харагдана.
+              Үзэх хуудсанд видео харагдана.
             </p>
           </div>
         ) : (
           <div>
             <p className="text-sm font-semibold text-slate-600">
-              Video coming soon
+              {LEARNER_LESSON.videoPlaceholder}
             </p>
             <p className="mt-1 text-xs text-slate-500">
-              Одоогоор placeholder — admin video URL нэмэхэд идэвхжинэ.
+              {LEARNER_LESSON.noVideoNote}
             </p>
           </div>
         )}
@@ -63,9 +65,9 @@ export function LessonDetailMediaSection({
             adminPreview,
             subpath: "watch",
           })}
-          className="inline-flex justify-center rounded-full bg-emerald-500 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-emerald-600"
+          className={ctaPrimaryClass}
         >
-          {videoReady ? "Видео үзэх" : "Хичээл үзэх"}
+          {videoReady ? "Видео үзэх" : LEARNER_LESSON.watch}
         </Link>
       </div>
     </section>
@@ -107,21 +109,24 @@ export function LessonWatchMediaSection({ lesson }: WatchProps) {
               />
             ) : null}
             <p className="text-center text-sm text-slate-600">
-              External video link — open in browser to watch.
+              Гадны видео холбоос — browser дээр нээнэ үү.
             </p>
             <a
               href={videoUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-full bg-emerald-500 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-emerald-600"
+              className={ctaPrimaryClass}
             >
-              Open video
+              Видео нээх
             </a>
           </div>
         ) : (
-          <div className="flex aspect-video w-full items-center justify-center rounded-xl bg-slate-100 ring-1 ring-slate-200">
-            <p className="text-sm font-medium text-slate-500">
-              {lesson.videoPlaceholder}
+          <div className="flex aspect-video w-full flex-col items-center justify-center gap-3 rounded-xl bg-slate-100 p-6 ring-1 ring-slate-200">
+            <p className="text-center text-sm font-medium text-slate-600">
+              {LEARNER_LESSON.videoPlaceholder}
+            </p>
+            <p className="text-center text-xs text-slate-500">
+              {LEARNER_LESSON.noVideoNote}
             </p>
           </div>
         )}
@@ -133,7 +138,7 @@ export function LessonWatchMediaSection({ lesson }: WatchProps) {
 
       {audioReady ? (
         <section className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:p-6">
-          <h2 className="text-sm font-semibold text-slate-900">Audio resource</h2>
+          <h2 className="text-sm font-semibold text-slate-900">Аудио</h2>
           {isDirectAudioUrl(audioUrl!) ? (
             <audio className="mt-4 w-full" controls src={audioUrl} />
           ) : (
@@ -143,7 +148,7 @@ export function LessonWatchMediaSection({ lesson }: WatchProps) {
               rel="noopener noreferrer"
               className="mt-4 inline-flex rounded-full border border-emerald-200 bg-emerald-50 px-5 py-2.5 text-sm font-semibold text-emerald-800 transition-colors hover:bg-emerald-100"
             >
-              Open audio resource
+              Аудио нээх
             </a>
           )}
         </section>

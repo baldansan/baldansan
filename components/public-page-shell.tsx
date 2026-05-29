@@ -19,10 +19,10 @@ export function PublicPageShell({
   mainClassName = "",
 }: Props) {
   return (
-    <div className="flex min-h-screen flex-col bg-gradient-to-b from-emerald-50/40 via-white to-white text-slate-900">
+    <div className="flex min-h-screen flex-col overflow-x-hidden bg-gradient-to-b from-emerald-50/40 via-white to-white text-slate-900">
       <AppHeader active={active} />
       <main
-        className={`mx-auto flex w-full max-w-5xl flex-1 flex-col gap-6 px-4 pt-2 sm:gap-8 sm:px-6 ${
+        className={`mx-auto flex w-full max-w-[960px] flex-1 flex-col gap-6 px-4 pt-2 sm:gap-8 sm:px-6 ${
           showBottomNav ? "pb-28 md:pb-10" : "pb-10"
         } ${mainClassName}`}
       >

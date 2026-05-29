@@ -64,7 +64,7 @@ export async function resolveContinueLearning(
   return {
     lessonId: sorted[0],
     href: lessonPath(sorted[0]),
-    label: "Start HSK5",
+    label: "HSK5 эхлэх",
     reason: "first",
   };
 }

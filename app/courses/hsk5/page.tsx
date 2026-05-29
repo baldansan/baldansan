@@ -9,8 +9,8 @@ import { Hsk5LessonList } from "./hsk5-lesson-list";
 export const dynamic = "force-dynamic";
 
 export const metadata = {
-  title: "HSK5 Course — Бөөндөө Сурцгаая",
-  description: "HSK5 Short Drama Chinese — lesson roadmap and progress.",
+  title: "HSK5 — Бөөндөө Сурцгаая",
+  description: "HSK5 Short Drama Chinese — хичээлийн жагсаалт, ахиц.",
 };
 
 export default async function Hsk5CoursePage() {
@@ -39,12 +39,12 @@ export default async function Hsk5CoursePage() {
         href="/courses"
         className="inline-flex w-fit items-center text-sm font-medium text-slate-600 transition-colors hover:text-emerald-600"
       >
-        ← Courses руу буцах
+        ← Хичээлүүд рүү буцах
       </Link>
 
       <section className="rounded-3xl bg-white p-6 shadow-sm ring-1 ring-slate-200 sm:p-8">
         <p className="text-sm font-medium text-emerald-600">HSK5</p>
-        <h1 className="mt-1 text-3xl font-bold tracking-tight sm:text-4xl">
+        <h1 className="mt-1 text-2xl font-bold tracking-tight sm:text-4xl">
           {course.title}
         </h1>
         <p className="mt-3 max-w-2xl text-base leading-7 text-slate-600 sm:text-lg">
@@ -52,13 +52,13 @@ export default async function Hsk5CoursePage() {
         </p>
         <div className="mt-4 flex flex-wrap gap-2 text-xs text-slate-600">
           <span className="rounded-lg bg-emerald-50 px-2.5 py-1 ring-1 ring-emerald-200">
-            {totalLessons} lessons
+            {totalLessons} хичээл
           </span>
           <span className="rounded-lg bg-emerald-50 px-2.5 py-1 ring-1 ring-emerald-200">
-            {totalVocabulary} vocabulary
+            {totalVocabulary} үг
           </span>
           <span className="rounded-lg bg-emerald-50 px-2.5 py-1 ring-1 ring-emerald-200">
-            {totalQuizQuestions} quiz questions
+            {totalQuizQuestions} quiz асуулт
           </span>
         </div>
       </section>
@@ -68,7 +68,7 @@ export default async function Hsk5CoursePage() {
       <Hsk5MobileExtras lessonIds={lessonIds} />
 
       <section className="flex flex-col gap-4">
-        <h2 className="text-xl font-semibold text-slate-900">Lesson roadmap</h2>
+        <h2 className="text-xl font-semibold text-slate-900">Хичээлийн жагсаалт</h2>
         <Hsk5LessonList lessons={lessons} />
       </section>
     </PublicPageShell>

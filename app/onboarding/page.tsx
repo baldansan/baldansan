@@ -1,23 +1,24 @@
 import Link from "next/link";
 import { PwaInstallCard } from "@/components/pwa-install-card";
 import { PublicPageShell } from "@/components/public-page-shell";
+import { ctaOutlineClass, ctaPrimaryClass } from "@/components/ui/cta-button-row";
 
 export const metadata = {
-  title: "Onboarding — Бөөндөө Сурцгаая",
-  description: "App хэрхэн ажилладаг вэ — course, watch, vocabulary, quiz, review.",
+  title: "Заавар — Бөөндөө Сурцгаая",
+  description: "App хэрхэн ажилладаг вэ — курс, хичээл үзэх, үгийн сан, quiz, давталт.",
 };
 
 const steps = [
   {
-    title: "Course сонго",
+    title: "Курс сонго",
     body: "HSK5 эсвэл бусад чиглэлээ сонгоно. Одоогоор HSK5 бэлэн.",
   },
   {
-    title: "Watch lesson",
-    body: "Богино бичлэг, subtitle, pinyin, Монгол орчуулгатай үзнэ.",
+    title: "Хичээл үзэх",
+    body: "Богино бичлэг, хадмал, pinyin, Монгол орчуулгатай үзнэ.",
   },
   {
-    title: "Vocabulary сур",
+    title: "Үгийн сан сур",
     body: "Хичээлийн үгсийг HSK түвшин, жишээ өгүүлбэртэй сурна.",
   },
   {
@@ -25,16 +26,16 @@ const steps = [
     body: "Сурсан зүйлээ quiz-ээр шалгаж, оноо хадгална.",
   },
   {
-    title: "Review хий",
-    body: "Review хэсэгт сурсан үгээ давтан бататгана.",
+    title: "Давталт хий",
+    body: "Давталт хэсэгт сурсан үгээ давтан бататгана.",
   },
   {
-    title: "Progress account дээр хадгал",
-    body: "Нэвтэрсэн хэрэглэгчийн ахиц Supabase account дээр хадгалагдана. Guest — device дээр.",
+    title: "Ахиц account дээр хадгал",
+    body: "Нэвтэрсэн хэрэглэгчийн ахиц account дээр хадгалагдана. Guest — төхөөрөмж дээр.",
   },
   {
-    title: "Reminder & weekly report",
-    body: "Reminder тохируулж, weekly report-оо шалга. Achievement badge-ууд автоматаар нээгдэнэ.",
+    title: "Сануулагч & долоо хоногийн тайлан",
+    body: "Сануулагч тохируулж, долоо хоногийн тайлангаа шалга.",
   },
 ];
 
@@ -42,7 +43,7 @@ export default function OnboardingPage() {
   return (
     <PublicPageShell active="help">
       <section>
-        <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">
+        <h1 className="text-2xl font-bold tracking-tight sm:text-4xl">
           App хэрхэн ажилладаг вэ?
         </h1>
         <p className="mt-2 text-slate-600">
@@ -56,7 +57,7 @@ export default function OnboardingPage() {
         {steps.map((step, index) => (
           <li
             key={step.title}
-            className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:p-6"
+            className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:rounded-3xl sm:p-6"
           >
             <span className="text-sm font-semibold text-emerald-600">
               Алхам {index + 1}
@@ -70,35 +71,14 @@ export default function OnboardingPage() {
       </ol>
 
       <section className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-        <Link
-          href="/courses/hsk5"
-          className="rounded-full bg-emerald-500 px-6 py-3 text-center text-sm font-semibold text-white hover:bg-emerald-600"
-        >
-          Start HSK5
+        <Link href="/courses/hsk5" className={ctaPrimaryClass}>
+          HSK5 эхлэх
         </Link>
-        <Link
-          href="/login"
-          className="rounded-full border border-emerald-200 bg-emerald-50 px-6 py-3 text-center text-sm font-semibold text-emerald-800 hover:bg-emerald-100"
-        >
-          Create account / Login
+        <Link href="/login" className={ctaOutlineClass}>
+          Нэвтрэх
         </Link>
-        <Link
-          href="/reminders"
-          className="rounded-full border border-emerald-200 bg-emerald-50 px-6 py-3 text-center text-sm font-semibold text-emerald-800 hover:bg-emerald-100"
-        >
-          Set reminders
-        </Link>
-        <Link
-          href="/weekly-report"
-          className="rounded-full border border-slate-200 px-6 py-3 text-center text-sm font-semibold text-slate-700 hover:border-emerald-200"
-        >
-          Weekly report
-        </Link>
-        <Link
-          href="/courses/hsk5"
-          className="rounded-full border border-slate-200 px-6 py-3 text-center text-sm font-semibold text-slate-700 hover:border-emerald-200"
-        >
-          Continue as guest
+        <Link href="/help" className={ctaOutlineClass}>
+          Тусламж
         </Link>
       </section>
     </PublicPageShell>

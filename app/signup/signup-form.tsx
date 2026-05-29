@@ -59,7 +59,7 @@ export function SignupForm() {
     <div className="min-h-screen bg-gradient-to-b from-emerald-50/40 via-white to-white text-slate-900">
       <AppHeader />
 
-      <main className="mx-auto flex w-full max-w-md flex-col gap-6 px-4 py-10 pb-16 sm:px-6">
+      <main className="mx-auto flex w-full max-w-md flex-col gap-6 px-4 py-10 pb-28 sm:px-6 md:pb-16">
         <section>
           <h1 className="text-3xl font-bold tracking-tight">Бүртгүүлэх</h1>
           <p className="mt-2 text-sm text-slate-600">

@@ -53,25 +53,26 @@ export default async function LessonDetailPage({
   const vocabularyPreview = lesson.vocabulary.slice(0, 3);
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-emerald-50/40 via-white to-white text-slate-900">
+    <div className="min-h-screen overflow-x-hidden bg-gradient-to-b from-emerald-50/40 via-white to-white text-slate-900">
       <AppHeader />
 
-      <main className="mx-auto flex w-full max-w-5xl flex-col gap-6 px-4 pb-32 pt-2 sm:gap-8 sm:px-6 md:pb-10">
+      <main className="mx-auto flex w-full max-w-[960px] flex-col gap-6 px-4 pb-32 pt-2 sm:gap-8 sm:px-6 md:pb-10">
         {adminPreview ? <AdminPreviewBanner /> : null}
         <Link
           href={coursePath(lesson.courseId)}
           className="inline-flex w-fit items-center text-sm font-medium text-slate-600 transition-colors hover:text-emerald-600"
         >
-          ← Course руу буцах
+          ← Курс руу буцах
         </Link>
 
         <section>
-          <p className="text-sm font-medium text-emerald-600 uppercase tracking-wide">
-            Lesson {lesson.id}
+          <p className="text-sm font-medium uppercase tracking-wide text-emerald-600">
+            Хичээл {lesson.id}
           </p>
-          <h1 className="mt-1 text-3xl font-bold tracking-tight sm:text-4xl">
-            {lesson.title} — {lesson.chineseTitle}
+          <h1 className="mt-1 text-2xl font-bold leading-snug tracking-tight sm:text-4xl">
+            {lesson.title}
           </h1>
+          <p className="mt-1 text-xl text-slate-700 sm:text-2xl">{lesson.chineseTitle}</p>
           <p className="mt-2 text-base leading-7 text-slate-600 sm:text-lg">
             {lesson.subtitle}
           </p>
@@ -82,7 +83,7 @@ export default async function LessonDetailPage({
         <LessonDetailMediaSection lesson={lesson} adminPreview={adminPreview} />
 
         <section className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:p-6">
-          <h2 className="text-lg font-semibold text-slate-900">Subtitle preview</h2>
+          <h2 className="text-lg font-semibold text-slate-900">Хадмал урьдчилсан</h2>
           <div className="mt-4 flex flex-col gap-4">
             {lesson.subtitlePreview.map((line) => (
               <div
@@ -100,9 +101,7 @@ export default async function LessonDetailPage({
         </section>
 
         <section className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:p-6">
-          <h2 className="text-lg font-semibold text-slate-900">
-            Vocabulary preview
-          </h2>
+          <h2 className="text-lg font-semibold text-slate-900">Үгийн сан урьдчилсан</h2>
           <ul className="mt-4 flex flex-col gap-3">
             {vocabularyPreview.map((word) => (
               <li
@@ -138,9 +137,9 @@ export default async function LessonDetailPage({
         </section>
 
         <section className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:p-6">
-          <h2 className="text-lg font-semibold text-slate-900">Quiz preview</h2>
+          <h2 className="text-lg font-semibold text-slate-900">Quiz урьдчилсан</h2>
           <p className="mt-2 text-sm text-slate-600">
-            {lesson.quizCount} quiz questions
+            {lesson.quizCount} quiz асуулт
           </p>
           <ul className="mt-3 flex flex-col gap-2">
             {lesson.quizTypes.map((type) => (

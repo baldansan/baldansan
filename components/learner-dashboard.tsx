@@ -36,7 +36,7 @@ export function LearnerDashboard({ hsk5LessonIds }: Props) {
   const [loggedIn, setLoggedIn] = useState(false);
   const [email, setEmail] = useState<string | undefined>();
   const [continueHref, setContinueHref] = useState("/courses/hsk5");
-  const [continueLabel, setContinueLabel] = useState("Start HSK5");
+  const [continueLabel, setContinueLabel] = useState("HSK5 эхлэх");
   const [stats, setStats] = useState({
     completedLessons: 0,
     learnedWords: 0,
@@ -137,14 +137,14 @@ export function LearnerDashboard({ hsk5LessonIds }: Props) {
       <DashboardEngagementCards />
       <DashboardEngagementQuickActions />
 
-      <section className="rounded-2xl bg-emerald-600 p-6 text-white sm:p-8">
+      <section className="rounded-2xl bg-emerald-600 p-5 text-white sm:rounded-3xl sm:p-6">
         <h2 className="text-lg font-semibold">Үргэлжлүүлэх</h2>
         <p className="mt-2 text-sm text-emerald-50">
           Дараагийн хичээлээ үргэлжлүүлээрэй.
         </p>
         <Link
           href={continueHref}
-          className="mt-4 inline-flex rounded-full bg-white px-6 py-2.5 text-sm font-semibold text-emerald-700 hover:bg-emerald-50"
+          className="mt-4 inline-flex min-h-[44px] items-center rounded-full bg-white px-6 py-2.5 text-sm font-semibold text-emerald-700 hover:bg-emerald-50"
         >
           {continueLabel}
         </Link>
@@ -159,11 +159,11 @@ export function LearnerDashboard({ hsk5LessonIds }: Props) {
 
       <section className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         {[
-          { label: "Completed lessons", value: stats.completedLessons },
-          { label: "Learned words", value: stats.learnedWords },
-          { label: "Quiz attempts", value: stats.quizAttempts },
+          { label: "Дууссан хичээл", value: stats.completedLessons },
+          { label: "Сурсан үг", value: stats.learnedWords },
+          { label: "Quiz оролдлого", value: stats.quizAttempts },
           {
-            label: "Avg quiz score",
+            label: "Quiz дундаж",
             value:
               stats.averageQuizPercent != null
                 ? `${stats.averageQuizPercent}%`
@@ -183,28 +183,28 @@ export function LearnerDashboard({ hsk5LessonIds }: Props) {
       </section>
 
       <section className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:p-6">
-        <h2 className="text-lg font-semibold text-slate-900">Current course</h2>
+        <h2 className="text-lg font-semibold text-slate-900">Одоогийн курс</h2>
         <p className="mt-2 text-sm text-slate-600">HSK5 Short Drama Chinese</p>
         <Link
           href="/courses/hsk5"
-          className="mt-4 inline-flex rounded-full border border-emerald-200 bg-emerald-50 px-5 py-2 text-sm font-semibold text-emerald-800 hover:bg-emerald-100"
+          className="mt-4 inline-flex min-h-[44px] items-center rounded-full border border-emerald-200 bg-emerald-50 px-5 py-2 text-sm font-semibold text-emerald-800 hover:bg-emerald-100"
         >
-          Course roadmap
+          Курсын жагсаалт
         </Link>
       </section>
 
       {latestQuiz ? (
         <section className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:p-6">
-          <h2 className="text-lg font-semibold text-slate-900">Recent quiz</h2>
+          <h2 className="text-lg font-semibold text-slate-900">Сүүлийн quiz</h2>
           <p className="mt-2 text-sm text-slate-600">
-            Lesson {latestQuiz.lessonId}: {latestQuiz.result.score}/
+            Хичээл {latestQuiz.lessonId}: {latestQuiz.result.score}/
             {latestQuiz.result.total} ({latestQuiz.result.percentage}%)
           </p>
           <Link
             href={lessonPath(latestQuiz.lessonId)}
             className="mt-3 inline-flex text-sm font-semibold text-emerald-700 hover:underline"
           >
-            Lesson detail →
+            Хичээл рүү →
           </Link>
         </section>
       ) : null}
@@ -224,9 +224,9 @@ export function LearnerDashboard({ hsk5LessonIds }: Props) {
         </Link>
         <Link
           href="/courses"
-          className="rounded-full border border-slate-200 px-5 py-2.5 text-sm font-semibold text-slate-700 hover:border-emerald-200"
+          className="min-h-[44px] rounded-full border border-slate-200 px-5 py-2.5 text-sm font-semibold text-slate-700 hover:border-emerald-200"
         >
-          Курсууд
+          Хичээлүүд
         </Link>
         <Link
           href="/profile"

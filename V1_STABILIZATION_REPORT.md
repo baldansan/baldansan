@@ -131,13 +131,24 @@ See [V1_LAUNCH_BLOCKERS.md](./V1_LAUNCH_BLOCKERS.md).
 
 ---
 
+## v1.0 Mobile UX Polish — **Completed**
+
+- Mobile UX polish pass completed — see [MOBILE_UX_POLISH_REPORT.md](./MOBILE_UX_POLISH_REPORT.md)
+- Global layout, nav, footer, lesson flow, quiz/vocab touch targets
+- Mongolian learner labels on core public pages
+- No new features; build verified
+
+**Next:** HSK4/HSK5 content upload sprint after mobile UX polish.
+
+---
+
 ## Recommendation
 
-### **Needs review**
+### **Ready for content upload**
 
-- Codebase and build are stable for v1.0 learner launch
-- **Production manual QA** on https://baldansan.vercel.app is the remaining gate
-- B2B features do not block learner launch
+- Mobile UX polish pass completed (May 2026)
+- Codebase stable; production mobile smoke test recommended
+- See [MOBILE_UX_POLISH_REPORT.md](./MOBILE_UX_POLISH_REPORT.md)
 
 After production QA passes all v1.0 checklist items → **Ready** for public v1.0 announcement.
 
