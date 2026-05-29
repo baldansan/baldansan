@@ -57,6 +57,105 @@ export const ADMIN_ACTIVITY_ACTIONS = {
 export { getActivityDiff, buildShallowDiffSummary };
 export type { ActivityDiffResult };
 
+type ActivityActor = {
+  id: string | null;
+  email: string | null;
+};
+
+type ActivityLogInsertRow = {
+  actor_user_id: string | null;
+  actor_email: string | null;
+  action: string;
+  entity_type: string;
+  entity_id: string | null;
+  lesson_id: string | null;
+  title: string;
+  description: string | null;
+  metadata: Record<string, unknown>;
+  before_snapshot?: Record<string, unknown> | null;
+  after_snapshot?: Record<string, unknown> | null;
+  diff_summary?: Record<string, unknown>;
+};
+
+async function resolveActivityActor(): Promise<ActivityActor> {
+  if (!supabase) {
+    return { id: null, email: null };
+  }
+
+  const { data: user } = await getCurrentUser();
+  if (user?.id) {
+    return { id: user.id, email: user.email ?? null };
+  }
+
+  const { data: sessionData } = await supabase.auth.getSession();
+  const sessionUser = sessionData.session?.user;
+  if (sessionUser?.id) {
+    return { id: sessionUser.id, email: sessionUser.email ?? null };
+  }
+
+  const { data: userData } = await supabase.auth.getUser();
+  if (userData.user?.id) {
+    return { id: userData.user.id, email: userData.user.email ?? null };
+  }
+
+  return { id: null, email: null };
+}
+
+function buildCoreInsertRow(
+  input: AdminActivityInput,
+  actor: ActivityActor
+): ActivityLogInsertRow {
+  return {
+    actor_user_id: actor.id,
+    actor_email: actor.email,
+    action: input.action,
+    entity_type: input.entityType,
+    entity_id: input.entityId ?? null,
+    lesson_id: input.lessonId ?? null,
+    title: input.title,
+    description: input.description ?? null,
+    metadata: input.metadata ?? {},
+  };
+}
+
+function isSnapshotColumnError(message: string): boolean {
+  const lower = message.toLowerCase();
+  return (
+    lower.includes("before_snapshot") ||
+    lower.includes("after_snapshot") ||
+    lower.includes("diff_summary") ||
+    (lower.includes("column") && lower.includes("does not exist"))
+  );
+}
+
+function isRlsError(message: string): boolean {
+  const lower = message.toLowerCase();
+  return (
+    lower.includes("row-level security") ||
+    lower.includes("policy") ||
+    lower.includes("42501")
+  );
+}
+
+function formatInsertError(message: string): string {
+  if (isRlsError(message)) {
+    return `${message} — confirm admin_profiles row and migration 007 RLS policies.`;
+  }
+  if (isSnapshotColumnError(message)) {
+    return `${message} — run migration 008 or use metadata fallback.`;
+  }
+  return message;
+}
+
+async function insertActivityLogRow(
+  row: ActivityLogInsertRow
+): Promise<string | null> {
+  if (!supabase) return "Supabase client unavailable.";
+
+  const { error } = await supabase.from("admin_activity_log").insert(row);
+  return error?.message ?? null;
+}
+
 /** Best-effort audit log — never throws; does not block caller. */
 export async function logAdminActivity(
   input: AdminActivityInput
@@ -64,7 +163,13 @@ export async function logAdminActivity(
   try {
     if (!supabase || !hasSupabaseConfig) return;
 
-    const { data: user } = await getCurrentUser();
+    const actor = await resolveActivityActor();
+    if (!actor.id) {
+      console.warn(
+        "[admin-activity] No authenticated user for log insert:",
+        input.action
+      );
+    }
 
     const diffSummary =
       input.diffSummary ??
@@ -72,23 +177,35 @@ export async function logAdminActivity(
         ? buildShallowDiffSummary(input.beforeSnapshot, input.afterSnapshot)
         : {});
 
-    const { error } = await supabase.from("admin_activity_log").insert({
-      actor_user_id: user?.id ?? null,
-      actor_email: user?.email ?? null,
-      action: input.action,
-      entity_type: input.entityType,
-      entity_id: input.entityId ?? null,
-      lesson_id: input.lessonId ?? null,
-      title: input.title,
-      description: input.description ?? null,
-      metadata: input.metadata ?? {},
+    const coreRow = buildCoreInsertRow(input, actor);
+    const rowWithSnapshots: ActivityLogInsertRow = {
+      ...coreRow,
       before_snapshot: input.beforeSnapshot ?? null,
       after_snapshot: input.afterSnapshot ?? null,
       diff_summary: diffSummary,
-    });
+    };
 
-    if (error) {
-      console.warn("[admin-activity] Log insert failed:", error.message);
+    let errorMessage = await insertActivityLogRow(rowWithSnapshots);
+
+    if (errorMessage && isSnapshotColumnError(errorMessage)) {
+      const fallbackRow: ActivityLogInsertRow = {
+        ...coreRow,
+        metadata: {
+          ...(input.metadata ?? {}),
+          beforeSnapshot: input.beforeSnapshot ?? null,
+          afterSnapshot: input.afterSnapshot ?? null,
+          diffSummary,
+        },
+      };
+      errorMessage = await insertActivityLogRow(fallbackRow);
+    }
+
+    if (errorMessage) {
+      console.warn(
+        "[admin-activity] Log insert failed:",
+        formatInsertError(errorMessage),
+        { action: input.action, entityType: input.entityType }
+      );
     }
   } catch (err) {
     console.warn("[admin-activity] Log insert error:", err);

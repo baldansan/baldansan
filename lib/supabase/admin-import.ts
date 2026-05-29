@@ -3,7 +3,7 @@ import { isCurrentUserAdmin } from "@/lib/supabase/admin";
 import {
   ADMIN_ACTIVITY_ACTIONS,
   buildShallowDiffSummary,
-  logAdminActivityFireAndForget,
+  logAdminActivity,
 } from "@/lib/supabase/admin-activity";
 import { getLessonCompleteness, refreshLessonCounts } from "@/lib/supabase/admin-content";
 import { hasSupabaseConfig, supabase } from "@/lib/supabase/client";
@@ -516,7 +516,7 @@ export async function bulkImportLessonContent(
           quizCount: payload.quizQuestions.length,
         };
 
-    logAdminActivityFireAndForget({
+    await logAdminActivity({
       action: ADMIN_ACTIVITY_ACTIONS.bulkImportCompleted,
       entityType: "lesson",
       entityId: trimmedLessonId,

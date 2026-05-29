@@ -8,6 +8,7 @@ import { isCurrentUserAdmin } from "@/lib/supabase/admin";
 import {
   ADMIN_ACTIVITY_ACTIONS,
   buildShallowDiffSummary,
+  logAdminActivity,
   logAdminActivityFireAndForget,
   publishActionForStatus,
 } from "@/lib/supabase/admin-activity";
@@ -520,7 +521,7 @@ export async function updateLessonMetadata(
       return { data: null, error: formatWriteError(error) };
     }
 
-    logAdminActivityFireAndForget({
+    await logAdminActivity({
       action: ADMIN_ACTIVITY_ACTIONS.lessonMetadataUpdated,
       entityType: "lesson",
       entityId: lessonId,
@@ -631,7 +632,7 @@ export async function updateLessonMedia(
 
     const cleared =
       !v.videoUrl && !v.thumbnailUrl && !v.audioUrl && v.mediaStatus === "missing";
-    logAdminActivityFireAndForget({
+    await logAdminActivity({
       action: cleared
         ? ADMIN_ACTIVITY_ACTIONS.mediaCleared
         : ADMIN_ACTIVITY_ACTIONS.mediaUpdated,
@@ -710,7 +711,7 @@ export async function updateLessonStatus(
       return { data: null, error: formatWriteError(error) };
     }
 
-    logAdminActivityFireAndForget({
+    await logAdminActivity({
       action: publishActionForStatus(status),
       entityType: "lesson",
       entityId: lessonId,
