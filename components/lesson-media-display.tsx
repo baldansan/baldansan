@@ -65,7 +65,7 @@ export function LessonDetailMediaSection({
           })}
           className="inline-flex justify-center rounded-full bg-emerald-500 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-emerald-600"
         >
-          {videoReady ? "Watch video" : "Watch lesson"}
+          {videoReady ? "Видео үзэх" : "Хичээл үзэх"}
         </Link>
       </div>
     </section>

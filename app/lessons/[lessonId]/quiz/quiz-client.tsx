@@ -161,7 +161,7 @@ export function LessonQuizClient({
             })}
             className="inline-flex w-fit text-sm font-medium text-emerald-700 transition-colors hover:text-emerald-600"
           >
-            Watch lesson
+            Хичээл үзэх
           </Link>
           <Link
             href={lessonPreviewPath(lesson.id, { adminPreview, subpath: "vocabulary" })}
@@ -260,7 +260,7 @@ export function LessonQuizClient({
             })}
                 className="w-full rounded-full border border-emerald-200 bg-emerald-50 px-5 py-3 text-center text-sm font-semibold text-emerald-700 transition-colors hover:bg-emerald-100"
               >
-                Watch lesson
+                Хичээл үзэх
               </Link>
               {nextLessonId ? (
                 <Link

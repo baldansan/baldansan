@@ -1,7 +1,30 @@
 # v1.0 Launch Blockers — Buunduu Surtsgaay
 
 **Production URL:** https://baldansan.vercel.app  
-**Last updated:** May 2026 (stabilization pass)
+**Last updated:** May 2026 (deep stabilization sprint)
+
+---
+
+## Production manual test checklist
+
+**URL:** https://baldansan.vercel.app
+
+| Route | Expected | Pass? |
+|-------|----------|-------|
+| `/` | Home loads, CTA to HSK5 | |
+| `/deployment-check` | App + Supabase env pass, no secrets shown | |
+| `/courses/hsk5` | Lesson list, no draft lessons | |
+| `/lessons/1` | Detail loads | |
+| `/lessons/1/watch` | Watch loads | |
+| `/lessons/1/vocabulary` | Vocabulary loads | |
+| `/lessons/1/quiz` | Quiz loads + saves | |
+| `/login` | Form works | |
+| `/dashboard` | Loads when signed in | |
+| `/profile` | Loads, progress visible | |
+| `/review` | Learned words or empty state | |
+| `/admin/system-check` | Admin only, checks pass | |
+
+**Must not happen:** 404 on core routes, crash, secret displayed, draft lesson in public list, non-admin sees draft content.
 
 ---
 
@@ -32,7 +55,7 @@ Must be **pass** before public v1.0 learner launch.
 | W3 | Payment not configured | `/pricing` is informational |
 | W4 | Some teacher routes demo-only | Not in v1.0 learner scope |
 | W5 | Migrations 011–018 may be unapplied on prod | B2B pages empty; learner app OK if 001–010 applied |
-| W6 | Mixed EN/MN labels on non-core pages | Core learner copy polished in stabilization pass |
+| W6 | Mixed EN/MN labels on admin/B2B pages | Core learner nav + lesson flow copy polished |
 
 ---
 

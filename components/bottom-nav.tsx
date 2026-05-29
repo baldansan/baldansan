@@ -15,25 +15,25 @@ type NavItem = {
 const loggedOutItems: NavItem[] = [
   {
     href: "/",
-    label: "Home",
+    label: "Нүүр",
     key: "home",
     match: (p) => p === "/",
   },
   {
     href: "/courses",
-    label: "Courses",
+    label: "Курсууд",
     key: "courses",
     match: (p) => p.startsWith("/courses"),
   },
   {
     href: "/onboarding",
-    label: "Guide",
+    label: "Заавар",
     key: "onboarding",
     match: (p) => p.startsWith("/onboarding"),
   },
   {
     href: "/login",
-    label: "Login",
+    label: "Нэвтрэх",
     key: "login",
     match: (p) => p.startsWith("/login") || p.startsWith("/signup"),
   },
@@ -42,13 +42,13 @@ const loggedOutItems: NavItem[] = [
 const loggedInItems: NavItem[] = [
   {
     href: "/",
-    label: "Home",
+    label: "Нүүр",
     key: "home",
     match: (p) => p === "/",
   },
   {
     href: "/courses",
-    label: "Courses",
+    label: "Курсууд",
     key: "courses",
     match: (p) => p.startsWith("/courses"),
   },
@@ -60,13 +60,13 @@ const loggedInItems: NavItem[] = [
   },
   {
     href: "/review",
-    label: "Review",
+    label: "Давталт",
     key: "review",
     match: (p) => p.startsWith("/review"),
   },
   {
     href: "/profile",
-    label: "Profile",
+    label: "Профайл",
     key: "profile",
     match: (p) => p.startsWith("/profile"),
   },

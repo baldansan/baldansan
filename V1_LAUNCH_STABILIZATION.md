@@ -1,7 +1,7 @@
 # v1.0 Launch Stabilization — Buunduu Surtsgaay
 
 **Production URL:** https://baldansan.vercel.app  
-**Status:** Feature freeze active — learner launch focus only  
+**Status:** Feature freeze active — **deep stabilization sprint** completed (code/build)  
 **Started:** May 2026
 
 ---
@@ -128,6 +128,20 @@ See [SUPABASE_MIGRATION_STATUS.md](./SUPABASE_MIGRATION_STATUS.md).
 - HSK4 / Taobao courses marked coming soon
 
 ---
+
+## Production manual test checklist
+
+Run on https://baldansan.vercel.app after each deploy:
+
+1. `/` — home + HSK5 CTA  
+2. `/deployment-check` — no secrets, env pass  
+3. `/courses/hsk5` — available lessons only  
+4. `/lessons/1` through `/quiz` — full flow  
+5. `/login` → `/dashboard` → `/profile` — auth + progress  
+6. `/review` — learned words or empty state  
+7. `/admin/system-check` — admin only  
+
+See [V1_LAUNCH_BLOCKERS.md](./V1_LAUNCH_BLOCKERS.md) for blocker table.
 
 ## Related docs
 

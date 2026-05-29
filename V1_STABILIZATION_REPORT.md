@@ -2,7 +2,7 @@
 
 **Date:** May 2026  
 **Production URL:** https://baldansan.vercel.app  
-**Branch:** stabilization pass (feature freeze)
+**Branch:** deep v1.0 stabilization sprint (feature freeze)
 
 ---
 
@@ -53,18 +53,20 @@ All routes exist in App Router build output. Manual production smoke test still 
 
 ---
 
-## Bugs fixed (this pass)
+## Bugs fixed (deep sprint)
 
 | Area | Fix |
 |------|-----|
-| Copy | Mongolian labels: Суралцаж эхлэх, Үргэлжлүүлэх, Үг давтах, Курс руу буцах, Миний самбар |
-| Copy | Central `lib/learner-progress.ts` labels propagate to continue CTAs |
-| Mobile | Lesson pages `pb-32` for step bar + bottom nav clearance |
-| Mobile | Watch subtitle mode buttons use `flex-wrap` |
-| Mobile | Lesson step bar static on desktop (no sticky overlap) |
-| QA | `/admin/production-qa` v1.0 learner launch checklist section |
+| Copy | Nav/footer: Курсууд, Нэвтрэх, Профайл, Давталт, Миний самбар |
+| Copy | Lesson detail: Хичээл үзэх, Үгийн сан, Quiz өгөх, progress MN |
+| Copy | Watch/vocab/quiz CTAs → Хичээл үзэх |
+| Copy | Continue/start/review/back labels (prior pass + central `learner-progress.ts`) |
+| Mobile | Lesson `pb-32`, subtitle `flex-wrap`, step bar desktop static |
+| B2B safety | Email send skipped message MN; copy-link fallback documented |
+| Docs | Expanded `SUPABASE_MIGRATION_STATUS.md`, production route checklist |
+| QA | `/admin/production-qa` v1.0 section |
 
-No functional regressions introduced. No new features added.
+No new features. No RLS changes. No schema changes.
 
 ---
 

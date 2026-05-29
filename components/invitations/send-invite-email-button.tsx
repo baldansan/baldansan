@@ -85,12 +85,14 @@ export function SendInviteEmailButton({
           }`}
         >
           {message}
-          {isSkipped ? " Email provider not configured. Copy link ашиглана уу." : null}
+          {isSkipped
+            ? " Email provider тохируулаагүй байна. Invite link copy fallback ашиглана уу."
+            : null}
         </p>
       ) : (
         <p className="text-xs text-slate-500">
-          If email provider is not configured on the server, delivery is logged as skipped and
-          copy-link fallback remains available.
+          Email provider тохируулаагүй бол skipped статус гарч, invite link copy fallback
+          ашиглана.
         </p>
       )}
     </div>
