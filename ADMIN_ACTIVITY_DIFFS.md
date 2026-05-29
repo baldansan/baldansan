@@ -1,6 +1,8 @@
 # Admin Activity Diffs — Buunduu Surtsgaay
 
-Phase 5 Step 25: before/after snapshots and field-level diff preview on the admin activity log. **Rollback execution is not implemented yet** — preview only.
+Phase 5 Step 25–26: before/after snapshots, field-level diff preview, and **safe rollback execution** for supported actions on the admin activity log.
+
+**Phase 5 Mega Batch:** production CMS hardening, safe rollback, audit export, and final audit page.
 
 ---
 
@@ -48,15 +50,21 @@ Helpers: [lib/admin/admin-activity-diff.ts](./lib/admin/admin-activity-diff.ts) 
 
 ---
 
-## Rollback preview (disabled)
+## Rollback execution (Step 26)
 
-The **Rollback preview** section on the detail page explains which entity and fields *would* be restored if rollback existed. The **Rollback — coming soon** button is disabled.
+The **Rollback** section on `/admin/activity/{id}`:
 
-**Why preview-only for now:**
+- Shows **Rollback available** when the action is supported and `before_snapshot` has restorable fields
+- Lists fields that will be restored
+- Requires confirmation checkbox (Mongolian text)
+- **Execute rollback** applies `before_snapshot` via [lib/supabase/admin-rollback.ts](./lib/supabase/admin-rollback.ts)
+- Logs `rollback_executed` as a new activity row
 
-- Rollback must not overwrite lesson data accidentally.
-- Content rollback (subtitles/vocab/quiz rows) needs row-level history, not just counts.
-- Step 26 will design safe, explicit rollback execution with confirmation.
+**Unsupported actions** show: “Rollback энэ action дээр одоогоор дэмжигдээгүй.”
+
+Warning shown: subtitle/vocabulary/quiz bulk rollback is not active.
+
+Full details: [ADMIN_ROLLBACK_WORKFLOW.md](./ADMIN_ROLLBACK_WORKFLOW.md).
 
 ---
 
@@ -64,24 +72,17 @@ The **Rollback preview** section on the detail page explains which entity and fi
 
 | Route | Purpose |
 |-------|---------|
-| `/admin/activity` | List with “Diff available” badge and Has diff / No diff filter |
-| `/admin/activity/{id}` | Full detail, snapshots, diff, rollback preview |
+| `/admin/activity` | List with diff/rollback badges, filters, CSV/JSON export |
+| `/admin/activity/{id}` | Full detail, snapshots, diff, rollback execution |
 | `/admin/lessons/{id}/edit` | Lesson activity links to detail pages |
 
-Components: `activity-diff-viewer`, `json-snapshot-viewer`, `rollback-preview-card`, `activity-detail-view`.
-
----
-
-## Future rollback execution plan (Step 26+)
-
-1. **Metadata / media / status** — apply `before_snapshot` fields via existing admin update helpers with explicit admin confirmation.
-2. **Content import/restore** — require backup JSON or point-in-time export; never blind-restore from counts alone.
-3. **Audit** — log `rollback_executed` as a new activity row with its own snapshots.
-4. **Safety** — two-step confirm, dry-run preview (this step), optional “restore to draft only” guard.
+Components: `activity-diff-viewer`, `json-snapshot-viewer`, `rollback-execution-card`, `activity-detail-view`.
 
 ---
 
 ## Related docs
 
 - [ADMIN_ACTIVITY_LOG.md](./ADMIN_ACTIVITY_LOG.md) — base audit trail
+- [ADMIN_ROLLBACK_WORKFLOW.md](./ADMIN_ROLLBACK_WORKFLOW.md) — rollback rules and safety
+- [ADMIN_AUDIT_EXPORT.md](./ADMIN_AUDIT_EXPORT.md) — export tools
 - [ADMIN_PLAN.md](./ADMIN_PLAN.md) — Phase 5 roadmap

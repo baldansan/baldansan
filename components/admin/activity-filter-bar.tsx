@@ -4,12 +4,14 @@ export type ActivityActionFilter = "all" | string;
 export type ActivityEntityFilter = "all" | string;
 export type ActivityDateFilter = "all" | "today" | "7d" | "30d";
 export type ActivityDiffFilter = "all" | "has_diff" | "no_diff";
+export type ActivityRollbackFilter = "all" | "available" | "unsupported";
 
 type Props = {
   action: ActivityActionFilter;
   entityType: ActivityEntityFilter;
   dateRange: ActivityDateFilter;
   diffFilter: ActivityDiffFilter;
+  rollbackFilter: ActivityRollbackFilter;
   lessonId: string;
   actor: string;
   search: string;
@@ -19,6 +21,7 @@ type Props = {
   onEntityTypeChange: (value: ActivityEntityFilter) => void;
   onDateRangeChange: (value: ActivityDateFilter) => void;
   onDiffFilterChange: (value: ActivityDiffFilter) => void;
+  onRollbackFilterChange: (value: ActivityRollbackFilter) => void;
   onLessonIdChange: (value: string) => void;
   onActorChange: (value: string) => void;
   onSearchChange: (value: string) => void;
@@ -30,6 +33,7 @@ export function ActivityFilterBar({
   entityType,
   dateRange,
   diffFilter,
+  rollbackFilter,
   lessonId,
   actor,
   search,
@@ -39,6 +43,7 @@ export function ActivityFilterBar({
   onEntityTypeChange,
   onDateRangeChange,
   onDiffFilterChange,
+  onRollbackFilterChange,
   onLessonIdChange,
   onActorChange,
   onSearchChange,
@@ -149,6 +154,27 @@ export function ActivityFilterBar({
               <option value="all">All</option>
               <option value="has_diff">Has diff</option>
               <option value="no_diff">No diff</option>
+            </select>
+          </div>
+
+          <div>
+            <label
+              htmlFor="activity-rollback"
+              className="text-xs font-semibold uppercase tracking-wide text-slate-500"
+            >
+              Rollback
+            </label>
+            <select
+              id="activity-rollback"
+              value={rollbackFilter}
+              onChange={(e) =>
+                onRollbackFilterChange(e.target.value as ActivityRollbackFilter)
+              }
+              className="mt-2 w-full rounded-xl border border-slate-200 px-3 py-2 text-sm"
+            >
+              <option value="all">All</option>
+              <option value="available">Rollback available</option>
+              <option value="unsupported">Unsupported</option>
             </select>
           </div>
 

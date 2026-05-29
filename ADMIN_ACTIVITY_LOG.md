@@ -42,6 +42,7 @@ Best-effort logging on these actions (see `ADMIN_ACTIVITY_ACTIONS` in [lib/supab
 | `release_status_updated` / `qa_status_updated` | Release workflow |
 | `lesson_approved` | Approve for publish |
 | `release_notes_updated` | Release notes save |
+| `rollback_executed` | Safe rollback from activity detail |
 
 Logging is **insert-only**. There are no update/delete policies for regular use.
 
@@ -105,7 +106,21 @@ Migration [008_admin_activity_snapshots.sql](./supabase/migrations/008_admin_act
 - `before_snapshot` / `after_snapshot` — shallow JSON state
 - `diff_summary` — changed/added/removed field names
 
-Detail page: `/admin/activity/{id}` — field diff table and rollback preview (disabled). See [ADMIN_ACTIVITY_DIFFS.md](./ADMIN_ACTIVITY_DIFFS.md).
+Detail page: `/admin/activity/{id}` — field diff table, rollback execution for supported actions. See [ADMIN_ACTIVITY_DIFFS.md](./ADMIN_ACTIVITY_DIFFS.md) and [ADMIN_ROLLBACK_WORKFLOW.md](./ADMIN_ROLLBACK_WORKFLOW.md).
+
+**Phase 5 Mega Batch:** production CMS hardening, safe rollback, audit export, and final audit page.
+
+---
+
+## Export (Step 26)
+
+Client-side export on `/admin/activity`:
+
+- CSV — `admin-activity-log.csv`
+- JSON — full metadata + snapshots
+- Copy JSON to clipboard
+
+Respects current filters on loaded rows. See [ADMIN_AUDIT_EXPORT.md](./ADMIN_AUDIT_EXPORT.md).
 
 ---
 
@@ -140,9 +155,9 @@ See also [supabase/workflows/README.md](./supabase/workflows/README.md).
 
 ## Future improvements
 
-- Safe rollback execution (Step 26) from stored snapshots
+- Row-level content rollback from lesson export JSON
 - External notifications (email/Slack) on critical actions
-- Export audit log as CSV for compliance review
+- Server-side paginated export for very large log tables
 
 ---
 
@@ -151,3 +166,5 @@ See also [supabase/workflows/README.md](./supabase/workflows/README.md).
 - [ADMIN_PLAN.md](./ADMIN_PLAN.md) — Phase 5 roadmap
 - [ADMIN_TASK_MANAGEMENT.md](./ADMIN_TASK_MANAGEMENT.md) — task actions that generate log entries
 - [ADMIN_ACTIVITY_DIFFS.md](./ADMIN_ACTIVITY_DIFFS.md) — snapshots and diff preview
+- [ADMIN_ROLLBACK_WORKFLOW.md](./ADMIN_ROLLBACK_WORKFLOW.md) — safe rollback execution
+- [ADMIN_AUDIT_EXPORT.md](./ADMIN_AUDIT_EXPORT.md) — CSV/JSON export

@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { AdminProductionSafety } from "@/components/admin/admin-production-safety";
 import { AdminActivityPreview } from "@/components/admin/admin-activity-preview";
 import { AdminAttentionList } from "@/components/admin/admin-attention-list";
 import { AdminCard } from "@/components/admin/admin-card";
@@ -255,6 +256,19 @@ export function AdminDashboard({
       </AdminDashboardSection>
 
       <AdminDashboardSection
+        title="Production safety"
+        description="CMS hardening reminders, latest activity, and critical task queue."
+      >
+        <AdminProductionSafety
+          adminActivitySummary={adminActivitySummary}
+          recentAdminActivity={recentAdminActivity}
+          criticalTasks={activeTasks.filter((task) => task.severity === "critical")}
+          releaseMigrationPending={metrics.releaseWorkflow.migrationPending}
+          activityWarnings={adminActivityWarnings}
+        />
+      </AdminDashboardSection>
+
+      <AdminDashboardSection
         title="Admin activity"
         description="Best-effort audit trail of admin lesson, content, publish, and task actions."
       >
@@ -340,6 +354,12 @@ export function AdminDashboard({
             Create lesson
           </Link>
           <Link
+            href="/admin/final-audit"
+            className="inline-flex rounded-full border border-emerald-200 bg-emerald-50 px-5 py-2.5 text-sm font-semibold text-emerald-800 transition-colors hover:bg-emerald-100"
+          >
+            Phase 5 Final Audit
+          </Link>
+          <Link
             href="/review"
             className="inline-flex rounded-full border border-slate-200 px-5 py-2.5 text-sm font-medium text-slate-700 transition-colors hover:border-emerald-200 hover:text-emerald-700"
           >
@@ -359,6 +379,11 @@ export function AdminDashboard({
         description="Existing workflows — unchanged."
       >
         <div className="grid gap-4 sm:grid-cols-2">
+          <AdminCard
+            title="Phase 5 Final Audit"
+            description="Read-only checklist for CMS, release, analytics, tasks, rollback, and security."
+            href="/admin/final-audit"
+          />
           <AdminCard
             title="Activity log"
             description={`${adminActivitySummary.total} logged actions · audit trail for admin workflows.`}

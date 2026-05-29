@@ -2,7 +2,24 @@
 
 **Project:** Buunduu Surtsgaay (Бөөндөө Сурцгаая)  
 **Checkpoint date:** May 2026  
-**Status:** Phase 4 **completed**; Phase 5 Step 25 activity diff / rollback preview **completed**
+**Status:** Phase 5 Step 26 CMS hardening / rollback / export / final audit **completed**
+
+---
+
+## Phase 5 Step 26 — CMS hardening and rollback/export tools — **Completed**
+
+Phase 5 Mega Batch: production CMS hardening, safe rollback, audit export, and final audit page.
+
+| Area | Deliverable |
+|------|-------------|
+| Rollback | `admin-rollback.ts`, `admin-rollback-eligibility.ts`, `rollback-execution-card` |
+| Export | `activity-export.ts`, CSV/JSON/copy on `/admin/activity` |
+| Filters | Rollback available/unsupported, summary cards |
+| Dashboard | Production safety section, quick actions, final audit link |
+| Final audit | `/admin/final-audit` read-only checklist |
+| Docs | `ADMIN_ROLLBACK_WORKFLOW.md`, `ADMIN_AUDIT_EXPORT.md`, `PHASE_5_FINAL_AUDIT.md` |
+
+**Next:** Phase 5 Final Audit (manual walkthrough) or Phase 6 — Deployment / Production Readiness.
 
 ---
 

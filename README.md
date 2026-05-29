@@ -170,9 +170,13 @@ Helpers: [lib/supabase/auth.ts](./lib/supabase/auth.ts). Header shows **Нэвт
 
 **Task management:** dismiss, resolve, priority, due dates, notes on `/admin/tasks` (requires migration `006_admin_tasks.sql`). See [ADMIN_TASK_MANAGEMENT.md](./ADMIN_TASK_MANAGEMENT.md).
 
-**Activity log:** `/admin/activity` — audit trail with diff detail at `/admin/activity/{id}` (requires migrations `007` + `008`). See [ADMIN_ACTIVITY_LOG.md](./ADMIN_ACTIVITY_LOG.md) and [ADMIN_ACTIVITY_DIFFS.md](./ADMIN_ACTIVITY_DIFFS.md).
+**Activity log:** `/admin/activity` — audit trail with diff detail at `/admin/activity/{id}`, safe rollback for supported actions, CSV/JSON export (requires migrations `007` + `008`). See [ADMIN_ACTIVITY_LOG.md](./ADMIN_ACTIVITY_LOG.md), [ADMIN_ACTIVITY_DIFFS.md](./ADMIN_ACTIVITY_DIFFS.md), [ADMIN_ROLLBACK_WORKFLOW.md](./ADMIN_ROLLBACK_WORKFLOW.md), [ADMIN_AUDIT_EXPORT.md](./ADMIN_AUDIT_EXPORT.md).
 
-**Next step:** Phase 5 Step 26 — Safe rollback execution. Or Phase 5 Final Audit.
+**Final audit:** `/admin/final-audit` — Phase 5 readiness checklist (read-only). See [PHASE_5_FINAL_AUDIT.md](./PHASE_5_FINAL_AUDIT.md).
+
+**Phase 5 Mega Batch:** production CMS hardening, safe rollback, audit export, and final audit page.
+
+**Next step:** Phase 5 Final Audit (manual walkthrough) or Phase 6 — Deployment / Production Readiness.
 
 ## Documentation
 
@@ -181,6 +185,9 @@ Helpers: [lib/supabase/auth.ts](./lib/supabase/auth.ts). Header shows **Нэвт
 - [ADMIN_PLAN.md](./ADMIN_PLAN.md) — Phase 5 admin planning
 - [ADMIN_ACTIVITY_LOG.md](./ADMIN_ACTIVITY_LOG.md) — admin audit trail
 - [ADMIN_ACTIVITY_DIFFS.md](./ADMIN_ACTIVITY_DIFFS.md) — snapshots and diff preview
+- [ADMIN_ROLLBACK_WORKFLOW.md](./ADMIN_ROLLBACK_WORKFLOW.md) — safe rollback execution
+- [ADMIN_AUDIT_EXPORT.md](./ADMIN_AUDIT_EXPORT.md) — activity log CSV/JSON export
+- [PHASE_5_FINAL_AUDIT.md](./PHASE_5_FINAL_AUDIT.md) — Phase 5 readiness summary
 - [DATABASE_SCHEMA.md](./DATABASE_SCHEMA.md) — schema + Auth/RLS plan
 - [AUTH_PLAN.md](./AUTH_PLAN.md) — Phase 4 auth details
 - [CONTENT_AUTHORING_GUIDE.md](./CONTENT_AUTHORING_GUIDE.md) — content workflow

@@ -110,12 +110,13 @@ Uses anon key + admin JWT + RLS — **no service_role**.
 
 ---
 
-## Future improvements (Step 24+)
+## Future improvements
 
-- Admin activity log / audit trail
 - Assign to specific admin users (column exists: `assigned_to`)
 - Task comments thread
 - External email/push notifications
+
+**Phase 5 Mega Batch:** production CMS hardening, safe rollback, audit export, and final audit page. Task actions appear in the activity log; rollback of task rows is not supported.
 
 ---
 

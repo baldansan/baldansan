@@ -12,6 +12,8 @@ const actionStyles: Record<string, string> = {
   backup_restored: "bg-sky-50 text-sky-800 ring-sky-200",
   media_uploaded: "bg-violet-50 text-violet-800 ring-violet-200",
   task_started: "bg-sky-50 text-sky-800 ring-sky-200",
+  release_notes_updated: "bg-sky-50 text-sky-800 ring-sky-200",
+  rollback_executed: "bg-violet-50 text-violet-800 ring-violet-200",
 };
 
 function labelForAction(action: string): string {

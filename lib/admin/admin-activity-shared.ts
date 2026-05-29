@@ -53,6 +53,7 @@ export type AdminActivitySummary = {
   contentActions: number;
   publishReleaseActions: number;
   taskActions: number;
+  rollbackAvailable: number;
 };
 
 export type AdminActivityLogOptions = {

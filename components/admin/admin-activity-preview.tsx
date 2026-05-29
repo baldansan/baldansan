@@ -5,7 +5,7 @@ import { AdminMetricCard } from "@/components/admin/admin-metric-card";
 import type {
   AdminActivityRow,
   AdminActivitySummary,
-} from "@/lib/supabase/admin-activity-log";
+} from "@/lib/admin/admin-activity-shared";
 
 type Props = {
   summary: AdminActivitySummary;
@@ -37,9 +37,9 @@ export function AdminActivityPreview({ summary, recentRows }: Props) {
         <AdminMetricCard label="Today" value={summary.today} accent="emerald" />
         <AdminMetricCard label="Content" value={summary.contentActions} />
         <AdminMetricCard
-          label="Publish/release"
-          value={summary.publishReleaseActions}
-          accent="amber"
+          label="Rollback available"
+          value={summary.rollbackAvailable}
+          accent="emerald"
         />
       </div>
 

@@ -6,7 +6,7 @@ import {
   formatActivityTime,
 } from "@/components/admin/activity-badge";
 import { JsonSnapshotViewer } from "@/components/admin/json-snapshot-viewer";
-import { RollbackPreviewCard } from "@/components/admin/rollback-preview-card";
+import { RollbackExecutionCard } from "@/components/admin/rollback-execution-card";
 import { formatActivityActor } from "@/lib/admin/admin-activity-shared";
 import type { AdminActivityRow } from "@/lib/admin/admin-activity-shared";
 
@@ -71,7 +71,7 @@ export function ActivityDetailView({ activity }: Props) {
       <JsonSnapshotViewer title="After snapshot" data={activity.afterSnapshot} />
 
       <ActivityDiffViewer activity={activity} />
-      <RollbackPreviewCard activity={activity} />
+      <RollbackExecutionCard activity={activity} />
 
       <section className="flex flex-wrap gap-2">
         <Link

@@ -51,6 +51,7 @@ export const ADMIN_ACTIVITY_ACTIONS = {
   qaStatusUpdated: "qa_status_updated",
   lessonApproved: "lesson_approved",
   releaseNotesUpdated: "release_notes_updated",
+  rollbackExecuted: "rollback_executed",
 } as const;
 
 export { getActivityDiff, buildShallowDiffSummary };

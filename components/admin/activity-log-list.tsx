@@ -5,6 +5,7 @@ import {
   formatActivityTime,
 } from "@/components/admin/activity-badge";
 import { activityHasDiffPreview } from "@/lib/admin/admin-activity-diff";
+import { activityRollbackAvailable } from "@/lib/admin/admin-rollback-eligibility";
 import {
   formatActivityActor,
   type AdminActivityRow,
@@ -38,6 +39,11 @@ export function ActivityLogList({ rows, compact = false }: Props) {
               {activityHasDiffPreview(row) ? (
                 <span className="inline-flex rounded-full bg-sky-50 px-2.5 py-0.5 text-xs font-semibold text-sky-800 ring-1 ring-sky-200">
                   Diff available
+                </span>
+              ) : null}
+              {activityRollbackAvailable(row) ? (
+                <span className="inline-flex rounded-full bg-emerald-50 px-2.5 py-0.5 text-xs font-semibold text-emerald-800 ring-1 ring-emerald-200">
+                  Rollback available
                 </span>
               ) : null}
               {row.lessonId ? (

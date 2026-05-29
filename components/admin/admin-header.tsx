@@ -32,6 +32,12 @@ export function AdminHeader({
           Activity
         </Link>
         <Link
+          href="/admin/final-audit"
+          className="text-slate-600 transition-colors hover:text-emerald-600"
+        >
+          Final Audit
+        </Link>
+        <Link
           href="/admin/tasks"
           className="text-slate-600 transition-colors hover:text-emerald-600"
         >

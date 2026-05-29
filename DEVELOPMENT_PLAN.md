@@ -303,10 +303,21 @@ Phased roadmap from MVP demo to production product.
 
 - [supabase/migrations/008_admin_activity_snapshots.sql](./supabase/migrations/008_admin_activity_snapshots.sql)
 - Before/after snapshots on metadata, media, status, release, import, restore, duplicate
-- `/admin/activity/{id}` detail page with shallow field diff and disabled rollback preview
+- `/admin/activity/{id}` detail page with shallow field diff
 - [ADMIN_ACTIVITY_DIFFS.md](./ADMIN_ACTIVITY_DIFFS.md)
 
-**Next:** Phase 5 Step 26 — Safe rollback execution for lesson metadata/content. Or Phase 5 Final Audit.
+**Phase 5 Step 26 — Completed:** CMS hardening and rollback/export tools.
+
+- [lib/supabase/admin-rollback.ts](./lib/supabase/admin-rollback.ts), [lib/admin/admin-rollback-eligibility.ts](./lib/admin/admin-rollback-eligibility.ts)
+- Safe rollback execution on `/admin/activity/{id}` with confirmation + `rollback_executed` logging
+- CSV/JSON export on `/admin/activity` — [lib/admin/activity-export.ts](./lib/admin/activity-export.ts)
+- Activity filters: rollback available/unsupported, summary cards
+- Production safety section on `/admin`, `/admin/final-audit` checklist
+- [ADMIN_ROLLBACK_WORKFLOW.md](./ADMIN_ROLLBACK_WORKFLOW.md), [ADMIN_AUDIT_EXPORT.md](./ADMIN_AUDIT_EXPORT.md), [PHASE_5_FINAL_AUDIT.md](./PHASE_5_FINAL_AUDIT.md)
+
+**Phase 5 Mega Batch:** production CMS hardening, safe rollback, audit export, and final audit page.
+
+**Next:** Phase 5 Final Audit (manual walkthrough) or Phase 6 — Deployment / Production Readiness.
 - [components/admin/bulk-import-editor.tsx](./components/admin/bulk-import-editor.tsx) on lesson edit page
 - [LESSON_IMPORT_FORMAT.md](./LESSON_IMPORT_FORMAT.md)
 
@@ -344,8 +355,9 @@ Phased roadmap from MVP demo to production product.
 | 23 | Persistent admin task management | ✅ Completed |
 | 24 | Admin activity log / audit trail | ✅ Completed |
 | 25 | Activity diff / rollback preview | ✅ Completed |
+| 26 | CMS hardening — rollback, export, final audit | ✅ Completed |
 
-**Next (Phase 5):** Step 26 — Safe rollback execution for lesson metadata/content. Or Phase 5 Final Audit.
+**Next (Phase 5):** Phase 5 Final Audit (manual walkthrough) or Phase 6 — Deployment / Production Readiness.
 
 **Exit criteria:** New lesson published through admin UI without deploying code.
 

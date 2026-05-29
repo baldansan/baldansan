@@ -2,6 +2,8 @@
 
 import { useMemo, useState } from "react";
 import { activityHasDiffPreview } from "@/lib/admin/admin-activity-diff";
+import { summarizeActivityRows } from "@/lib/admin/admin-activity-summary";
+import { activityRollbackAvailable } from "@/lib/admin/admin-rollback-eligibility";
 import {
   ActivityFilterBar,
   filterActivityRowsClient,
@@ -9,7 +11,9 @@ import {
   type ActivityDateFilter,
   type ActivityDiffFilter,
   type ActivityEntityFilter,
+  type ActivityRollbackFilter,
 } from "@/components/admin/activity-filter-bar";
+import { ActivityExportControls } from "@/components/admin/activity-export-controls";
 import { ActivityLogList } from "@/components/admin/activity-log-list";
 import { ActivitySummaryCards } from "@/components/admin/activity-summary-cards";
 import type {
@@ -34,6 +38,8 @@ export function AdminActivityCenter({
   const [entityType, setEntityType] = useState<ActivityEntityFilter>("all");
   const [dateRange, setDateRange] = useState<ActivityDateFilter>("all");
   const [diffFilter, setDiffFilter] = useState<ActivityDiffFilter>("all");
+  const [rollbackFilter, setRollbackFilter] =
+    useState<ActivityRollbackFilter>("all");
   const [lessonId, setLessonId] = useState(initialLessonId);
   const [actor, setActor] = useState("");
   const [search, setSearch] = useState("");
@@ -69,10 +75,29 @@ export function AdminActivityCenter({
       (row) => {
         if (diffFilter === "has_diff") return activityHasDiffPreview(row);
         if (diffFilter === "no_diff") return !activityHasDiffPreview(row);
+        if (rollbackFilter === "available") return activityRollbackAvailable(row);
+        if (rollbackFilter === "unsupported") {
+          return !activityRollbackAvailable(row);
+        }
         return true;
       }
     );
-  }, [rows, lessonId, dateRange, action, entityType, actor, search, diffFilter]);
+  }, [
+    rows,
+    lessonId,
+    dateRange,
+    action,
+    entityType,
+    actor,
+    search,
+    diffFilter,
+    rollbackFilter,
+  ]);
+
+  const displaySummary = useMemo(
+    () => summarizeActivityRows(filteredRows),
+    [filteredRows]
+  );
 
   return (
     <div className="flex flex-col gap-6">
@@ -90,15 +115,22 @@ export function AdminActivityCenter({
       <section>
         <h2 className="text-lg font-semibold text-slate-900">Summary</h2>
         <div className="mt-3">
-          <ActivitySummaryCards summary={summary} />
+          <ActivitySummaryCards summary={displaySummary} />
         </div>
+        <p className="mt-2 text-xs text-slate-500">
+          Loaded {summary.total} total · showing {displaySummary.total} after
+          filters.
+        </p>
       </section>
+
+      <ActivityExportControls rows={filteredRows} />
 
       <ActivityFilterBar
         action={action}
         entityType={entityType}
         dateRange={dateRange}
         diffFilter={diffFilter}
+        rollbackFilter={rollbackFilter}
         lessonId={lessonId}
         actor={actor}
         search={search}
@@ -108,6 +140,7 @@ export function AdminActivityCenter({
         onEntityTypeChange={setEntityType}
         onDateRangeChange={setDateRange}
         onDiffFilterChange={setDiffFilter}
+        onRollbackFilterChange={setRollbackFilter}
         onLessonIdChange={setLessonId}
         onActorChange={setActor}
         onSearchChange={setSearch}

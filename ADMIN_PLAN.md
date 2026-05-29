@@ -114,6 +114,11 @@ See [CONTENT_WORKFLOW.md](./CONTENT_WORKFLOW.md):
 | 23 | Persistent admin task management | ✅ Completed |
 | 24 | Admin activity log / audit trail | ✅ Completed |
 | 25 | Activity diff / rollback preview | ✅ Completed |
+| 26 | CMS hardening — rollback, export, final audit | ✅ Completed |
+
+Step 26: [ADMIN_ROLLBACK_WORKFLOW.md](./ADMIN_ROLLBACK_WORKFLOW.md), [ADMIN_AUDIT_EXPORT.md](./ADMIN_AUDIT_EXPORT.md), [PHASE_5_FINAL_AUDIT.md](./PHASE_5_FINAL_AUDIT.md), `/admin/final-audit`, safe rollback on `/admin/activity/{id}`, CSV/JSON export on `/admin/activity`, production safety section on `/admin`.
+
+**Phase 5 Mega Batch:** production CMS hardening, safe rollback, audit export, and final audit page.
 
 Step 25: [ADMIN_ACTIVITY_DIFFS.md](./ADMIN_ACTIVITY_DIFFS.md), [supabase/migrations/008_admin_activity_snapshots.sql](./supabase/migrations/008_admin_activity_snapshots.sql), `/admin/activity/{id}` detail + diff viewer.
 
