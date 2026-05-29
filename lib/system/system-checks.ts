@@ -309,6 +309,12 @@ export async function checkSupabaseReadiness(): Promise<SystemCheckItem[]> {
       item("supabase", "progress-lesson", "user_lesson_progress", "missing", "Supabase not configured."),
       item("supabase", "progress-vocab", "user_vocabulary_progress", "missing", "Supabase not configured."),
       item("supabase", "progress-quiz", "user_quiz_attempts", "missing", "Supabase not configured."),
+      item("supabase", "retention-activity", "user_daily_activity", "missing", "Supabase not configured."),
+      item("supabase", "retention-goals", "user_daily_goals", "missing", "Supabase not configured."),
+      item("supabase", "retention-streaks", "user_streaks", "missing", "Supabase not configured."),
+      item("supabase", "engagement-reminders", "user_study_reminders", "missing", "Supabase not configured."),
+      item("supabase", "engagement-notifications", "user_notifications", "missing", "Supabase not configured."),
+      item("supabase", "engagement-achievements", "user_achievements", "missing", "Supabase not configured."),
     ];
   }
 
@@ -337,6 +343,12 @@ export async function checkSupabaseReadiness(): Promise<SystemCheckItem[]> {
     ["progress-lesson", "user_lesson_progress", "user_lesson_progress"],
     ["progress-vocab", "user_vocabulary_progress", "user_vocabulary_progress"],
     ["progress-quiz", "user_quiz_attempts", "user_quiz_attempts"],
+    ["retention-activity", "user_daily_activity", "user_daily_activity"],
+    ["retention-goals", "user_daily_goals", "user_daily_goals"],
+    ["retention-streaks", "user_streaks", "user_streaks"],
+    ["engagement-reminders", "user_study_reminders", "user_study_reminders"],
+    ["engagement-notifications", "user_notifications", "user_notifications"],
+    ["engagement-achievements", "user_achievements", "user_achievements"],
   ] as const) {
     checks.push(
       tableCheck(

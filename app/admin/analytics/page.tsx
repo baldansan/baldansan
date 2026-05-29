@@ -46,6 +46,15 @@ export default async function AdminAnalyticsPage() {
         </div>
       ) : null}
 
+      <div className="rounded-xl bg-emerald-50 px-4 py-3 text-sm text-emerald-900 ring-1 ring-emerald-200">
+        <p className="font-semibold">Learner engagement (Phase 7 Step 5)</p>
+        <p className="mt-1">
+          In-app reminders, notifications, achievements, weekly reports, and study
+          plan are live for learners. Admin management for user reminders is not
+          included yet.
+        </p>
+      </div>
+
       <section>
         <h2 className="text-lg font-semibold text-slate-900">Overview</h2>
         <div className="mt-3 grid grid-cols-2 gap-3 sm:grid-cols-5">

@@ -389,7 +389,7 @@ Phased roadmap from MVP demo to production product.
 | 6 | Launch candidate | ✅ Completed |
 | 7 | Production launch sign-off | ✅ Completed |
 
-**Phase 6 complete.** **Next:** Phase 7 Step 4 — Payment/pricing research.
+**Phase 6 complete.** **Next:** Phase 7 Step 6 — School/B2B onboarding.
 
 **Exit criteria:** App deployed to Vercel, Supabase production configured, all checklists green, public + admin routes verified.
 
@@ -413,22 +413,31 @@ Phased roadmap from MVP demo to production product.
 - Continue learning bar, lesson step navigation, review/dashboard mobile UX
 - [PWA_MOBILE_APP_GUIDE.md](./PWA_MOBILE_APP_GUIDE.md), [MOBILE_UX_CHECKLIST.md](./MOBILE_UX_CHECKLIST.md)
 
-**Phase 7 Step 3 — Completed:** Learner retention — streaks, daily goals, today progress.
+**Phase 7 Step 4 — Completed:** Supabase sync for streaks, daily goals, and daily activity.
 
-- Daily goal (3 actions), streak counter, today progress bar
-- Dashboard `StreakCard`, Profile `LearningConsistencyCard`
-- localStorage retention log + Supabase activity merge (read-only)
-- Future reminders documented in [LEARNING_RETENTION.md](./LEARNING_RETENTION.md)
+- Migration `009_user_retention.sql` + RLS
+- `lib/supabase/retention.ts`, unified `lib/retention/retention-service.ts`
+- Profile retention sync + daily goal settings save to account
+- [RETENTION_SUPABASE_SYNC.md](./RETENTION_SUPABASE_SYNC.md)
+
+**Phase 7 Step 5 — Completed:** Engagement system — reminders, notifications, achievements, weekly report, study plan.
+
+- Migration `010_user_reminders_achievements.sql`
+- Routes: `/reminders`, `/notifications`, `/weekly-report`, `/study-plan`
+- Achievement auto-award on learner actions
+- [ENGAGEMENT_SYSTEM.md](./ENGAGEMENT_SYSTEM.md)
 
 | Step | Focus | Status |
 |------|--------|--------|
 | 1 | User-facing product polish and onboarding | ✅ Completed |
 | 2 | PWA/mobile app-like experience and offline-friendly polish | ✅ Completed |
-| 3 | Learner retention: streaks, daily goals, reminders | ✅ Completed |
-| 4 | Payment/pricing research | Pending |
-| 5 | School/B2B onboarding | Pending |
+| 3 | Learner retention: streaks, daily goals | ✅ Completed |
+| 4 | Supabase sync for streaks/daily goals/activity | ✅ Completed |
+| 5 | Engagement: reminders, notifications, achievements, reports | ✅ Completed |
+| 6 | School/B2B onboarding and teacher-facing packaging | Pending |
+| 7 | Payment/pricing research | Pending |
 
-**Next:** Phase 7 Step 4 — Payment/pricing research.
+**Next:** Phase 7 Step 6 — School/B2B onboarding and teacher-facing packaging.
 
 ---
 

@@ -62,11 +62,12 @@ function writeStore(store: ProgressStore): void {
 }
 
 function notifyRetentionActivity(
-  type: import("@/lib/learning-retention").LearningActivityType
+  type: import("@/lib/retention/types").ActivityType,
+  metadata?: import("@/lib/retention/types").ActivityMetadata
 ): void {
   if (!isBrowser()) return;
-  void import("@/lib/learning-retention").then((mod) =>
-    mod.recordLearningActivity(type)
+  void import("@/lib/retention/retention-service").then((mod) =>
+    mod.recordActivity(type, metadata)
   );
 }
 
@@ -91,7 +92,7 @@ export function markLessonStarted(lessonId: string): void {
   };
   store.lastActiveLessonId = lessonId;
   writeStore(store);
-  notifyRetentionActivity("lesson_started");
+  notifyRetentionActivity("lesson_started", { lessonId });
 }
 
 export function markLessonCompleted(lessonId: string): void {
@@ -107,7 +108,7 @@ export function markLessonCompleted(lessonId: string): void {
   };
   store.lastActiveLessonId = lessonId;
   writeStore(store);
-  notifyRetentionActivity("lesson_completed");
+  notifyRetentionActivity("lesson_completed", { lessonId });
 }
 
 export function getLearnedWords(lessonId: string): string[] {
@@ -135,7 +136,7 @@ export function toggleLearnedWord(lessonId: string, wordKey: string): string[] {
   store.lastActiveLessonId = lessonId;
   writeStore(store);
   if (!wasLearned) {
-    notifyRetentionActivity("word_learned");
+    notifyRetentionActivity("word_learned", { lessonId });
   }
   return next;
 }
@@ -176,7 +177,7 @@ export function saveQuizResult(
   store.quizzes[lessonId] = result;
   store.lastActiveLessonId = lessonId;
   writeStore(store);
-  notifyRetentionActivity("quiz_attempt");
+  notifyRetentionActivity("quiz_attempt", { lessonId });
   return result;
 }
 

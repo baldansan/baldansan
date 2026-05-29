@@ -2,7 +2,38 @@
 
 **Project:** Buunduu Surtsgaay (Бөөндөө Сурцгаая)  
 **Checkpoint date:** May 2026  
-**Status:** Phase 7 Step 3 Learner retention **completed**
+**Status:** Phase 7 Step 5 Engagement system **completed**
+
+---
+
+## Phase 7 Step 5 — In-app reminders, notifications, achievements, weekly report, study plan — **Completed**
+
+| Area | Deliverable |
+|------|-------------|
+| Migration | `010_user_reminders_achievements.sql` |
+| Routes | `/reminders`, `/notifications`, `/weekly-report`, `/study-plan` |
+| Engagement | Achievements, in-app notifications, weekly report |
+| UI | Dashboard/profile/home/review integration, notification bell |
+| Docs | ENGAGEMENT_SYSTEM.md, ACHIEVEMENT_RULES.md, REMINDER_SYSTEM_PLAN.md |
+
+**Next:** Phase 7 Step 6 — School/B2B onboarding.
+
+---
+
+## Phase 7 Step 4 — Supabase sync for daily goals, streaks, and daily activity — **Completed**
+
+Phase 7 Step 4: Supabase-backed retention for logged-in users with localStorage guest fallback.
+
+| Area | Deliverable |
+|------|-------------|
+| Migration | `009_user_retention.sql` — activity, goals, streaks + RLS |
+| Supabase | `lib/supabase/retention.ts` |
+| Unified | `lib/retention/retention-service.ts`, `daily-activity.ts` |
+| Sync | `RetentionSyncCard`, progress sync integration |
+| UI | `components/retention/*`, daily goal settings on Profile |
+| Docs | RETENTION_SUPABASE_SYNC.md, RETENTION_PLAN.md |
+
+**Next:** Phase 7 Step 5 — Reminder system planning / in-app reminder center.
 
 ---
 
@@ -19,8 +50,6 @@ Phase 7 Step 3: Daily learning goal, streak counter, today progress, daily revie
 | Hooks | Activity recorded on lesson/vocab/quiz in `lib/progress.ts` |
 | Docs | LEARNING_RETENTION.md |
 
-**Next:** Phase 7 Step 4 — Payment/pricing research.
-
 ---
 
 ## Phase 7 Step 2 — PWA/mobile app-like experience and offline-friendly polish — **Completed**
@@ -36,8 +65,6 @@ Phase 7 Step 2: PWA manifest, install helper, mobile navigation, loading/offline
 | Loading | Route-level skeletons, global `not-found` |
 | Learner UX | Continue learning bar, lesson step bar, quick review, review collapsible groups |
 | Docs | PWA_MOBILE_APP_GUIDE.md, MOBILE_UX_CHECKLIST.md |
-
-**Next:** Phase 7 Step 3 — Learner retention features: streaks, daily goals, reminders.
 
 ---
 

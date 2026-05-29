@@ -8,6 +8,7 @@ import { BottomNav } from "@/components/bottom-nav";
 import { EmptyState } from "@/components/empty-state";
 import { LocalProgressNote } from "@/components/local-progress-note";
 import { lessonPath, lessonVocabularyPath } from "@/lib/content";
+import { recordActivity } from "@/lib/retention/retention-service";
 import { getCurrentUser, hasSupabaseConfig } from "@/lib/supabase/auth";
 import {
   getAllLearnedWordsSmart,
@@ -120,6 +121,12 @@ export function ReviewDashboard({ lessons, lessonIds }: Props) {
   }
 
   useEffect(() => {
+    void recordActivity("review_opened");
+  }, []);
+
+  useEffect(() => {
+    void recordActivity("review_opened");
+
     async function refresh() {
       if (hasSupabaseConfig) {
         const { data } = await getCurrentUser();
@@ -187,6 +194,17 @@ export function ReviewDashboard({ lessons, lessonIds }: Props) {
         </section>
 
         <ReviewContinueCard lessonIds={lessonIds} />
+
+        <section className="rounded-2xl bg-emerald-50/70 p-5 ring-1 ring-emerald-200">
+          <h2 className="font-semibold text-emerald-900">Daily review & reports</h2>
+          <p className="mt-2 text-sm text-emerald-800">
+            Review хийж streak, achievement, weekly report-оо үргэлжлүүл.
+          </p>
+          <div className="mt-3 flex flex-wrap gap-2">
+            <Link href="/reminders" className="rounded-full bg-emerald-600 px-4 py-2 text-sm font-semibold text-white">Set reminder</Link>
+            <Link href="/weekly-report" className="rounded-full border border-emerald-300 bg-white px-4 py-2 text-sm font-semibold text-emerald-800">Weekly report</Link>
+          </div>
+        </section>
 
         <section className="grid grid-cols-2 gap-3 sm:grid-cols-2">
           <div className="rounded-2xl bg-white p-4 text-center shadow-sm ring-1 ring-emerald-200">
