@@ -1,39 +1,31 @@
 import JSZip from "jszip";
-import { resolveLanguageFromManifest } from "@/lib/language-track";
+import {
+  buildZipImportContext,
+  mapNormalizedQuizToBulkImport,
+  mapNormalizedVocabularyToBulkImport,
+  mapSubtitlesForBulkImport,
+  normalizeZipLesson,
+  normalizeZipManifest,
+  normalizeZipQuiz,
+  normalizeZipVocabulary,
+  targetScriptLabel,
+  type NormalizedZipLesson,
+  type NormalizedZipManifest,
+  type NormalizedZipQuiz,
+  type NormalizedZipVocabulary,
+  type ZipImportContext,
+} from "@/lib/import/lesson-zip-normalize";
 import { normalizeZipPath } from "@/lib/import/zip-path";
 import {
   validateLessonImportPayload,
+  type ImportValidationContext,
   type ImportValidationResult,
   type LessonImportPayload,
 } from "@/lib/supabase/admin-import";
 
-export type LessonZipManifest = {
-  packageVersion: string;
-  courseId: string;
-  lessonId: string;
-  language: string;
-  title?: string;
-  mongolianTitle?: string;
-  source?: string;
-  hasAudio?: boolean;
-  hasImages?: boolean;
-};
+export type LessonZipManifest = NormalizedZipManifest;
 
-export type LessonZipLesson = {
-  courseId: string;
-  title: string;
-  chineseTitle: string;
-  subtitle?: string;
-  description?: string;
-  duration?: string;
-  status?: string;
-  orderIndex?: number;
-  mediaStatus?: string;
-  audioFile?: string;
-  thumbnailFile?: string;
-  videoFile?: string;
-  sourceNote?: string;
-};
+export type LessonZipLesson = NormalizedZipLesson;
 
 export type LessonZipMediaKind = "audio" | "image";
 
@@ -49,8 +41,9 @@ export type LessonZipPackage = {
   ok: boolean;
   manifest: LessonZipManifest | null;
   lesson: LessonZipLesson | null;
-  vocabulary: Record<string, unknown>[];
-  quizQuestions: Record<string, unknown>[];
+  importContext: ZipImportContext | null;
+  vocabulary: NormalizedZipVocabulary[];
+  quizQuestions: NormalizedZipQuiz[];
   subtitles: Record<string, unknown>[];
   mediaFiles: LessonZipMediaFile[];
   warnings: string[];
@@ -61,7 +54,11 @@ export type LessonImportPreview = {
   courseId: string;
   lessonId: string;
   language: string;
+  targetLanguage?: string;
+  uiLanguage?: string;
   title: string;
+  targetTitle: string;
+  targetTitleLabel: string;
   mongolianTitle?: string;
   source?: string;
   vocabularyCount: number;
@@ -86,6 +83,7 @@ function emptyLessonZipValidation(
     ok: false,
     manifest: null,
     lesson: null,
+    importContext: null,
     vocabulary: [],
     quizQuestions: [],
     subtitles: [],
@@ -97,14 +95,6 @@ function emptyLessonZipValidation(
     contentValidation: null,
   };
 }
-
-const REQUIRED_MANIFEST_KEYS = [
-  "packageVersion",
-  "courseId",
-  "lessonId",
-] as const;
-
-const REQUIRED_LESSON_KEYS = ["courseId", "title", "chineseTitle"] as const;
 
 function isRecord(value: unknown): value is Record<string, unknown> {
   return typeof value === "object" && value !== null && !Array.isArray(value);
@@ -179,86 +169,6 @@ export async function extractZipMediaFiles(
   return media;
 }
 
-function parseManifest(
-  raw: unknown,
-  errors: string[],
-  warnings: string[]
-): LessonZipManifest | null {
-  if (!isRecord(raw)) {
-    errors.push("manifest.json must be an object.");
-    return null;
-  }
-
-  for (const key of REQUIRED_MANIFEST_KEYS) {
-    const value = String(raw[key] ?? "").trim();
-    if (!value) {
-      errors.push(`manifest.json: ${key} is required.`);
-    }
-  }
-
-  if (errors.length > 0) return null;
-
-  const courseId = String(raw.courseId).trim();
-  const rawLanguage = String(raw.language ?? "").trim();
-  const { language, defaulted } = resolveLanguageFromManifest(courseId, rawLanguage);
-  if (defaulted) {
-    warnings.push(
-      "language field missing; defaulting based on courseId."
-    );
-  }
-
-  return {
-    packageVersion: String(raw.packageVersion).trim(),
-    courseId,
-    lessonId: String(raw.lessonId).trim(),
-    language,
-    title: String(raw.title ?? "").trim() || undefined,
-    mongolianTitle: String(raw.mongolianTitle ?? "").trim() || undefined,
-    source: String(raw.source ?? "").trim() || undefined,
-    hasAudio: raw.hasAudio === true,
-    hasImages: raw.hasImages === true,
-  };
-}
-
-function parseLessonJson(raw: unknown, errors: string[]): LessonZipLesson | null {
-  if (!isRecord(raw)) {
-    errors.push("lesson.json must be an object.");
-    return null;
-  }
-
-  for (const key of REQUIRED_LESSON_KEYS) {
-    const value = String(raw[key] ?? "").trim();
-    if (!value) {
-      errors.push(`lesson.json: ${key} is required.`);
-    }
-  }
-
-  if (errors.length > 0) return null;
-
-  const orderIndexRaw = raw.orderIndex ?? raw.order_index;
-  const orderIndex =
-    orderIndexRaw != null && Number.isFinite(Number(orderIndexRaw))
-      ? Math.floor(Number(orderIndexRaw))
-      : undefined;
-
-  return {
-    courseId: String(raw.courseId).trim(),
-    title: String(raw.title).trim(),
-    chineseTitle: String(raw.chineseTitle ?? raw.chinese_title ?? "").trim(),
-    subtitle: String(raw.subtitle ?? "").trim() || undefined,
-    description: String(raw.description ?? "").trim() || undefined,
-    duration: String(raw.duration ?? "").trim() || undefined,
-    status: String(raw.status ?? "draft").trim() || "draft",
-    orderIndex,
-    mediaStatus: String(raw.mediaStatus ?? raw.media_status ?? "").trim() || undefined,
-    audioFile: String(raw.audioFile ?? raw.audio_file ?? "").trim() || undefined,
-    thumbnailFile:
-      String(raw.thumbnailFile ?? raw.thumbnail_file ?? "").trim() || undefined,
-    videoFile: String(raw.videoFile ?? raw.video_file ?? "").trim() || undefined,
-    sourceNote: String(raw.sourceNote ?? raw.source_note ?? "").trim() || undefined,
-  };
-}
-
 function parseArrayFile(
   raw: unknown,
   field: string,
@@ -276,30 +186,6 @@ function parseArrayFile(
   return raw.filter(isRecord);
 }
 
-function mapSubtitlesForBulkImport(
-  rows: Record<string, unknown>[]
-): Record<string, unknown>[] {
-  return rows.map((row) => ({
-    start: row.start ?? row.startTime,
-    end: row.end ?? row.endTime,
-    chinese: row.chinese,
-    pinyin: row.pinyin,
-    mongolian: row.mongolian,
-  }));
-}
-
-function mapQuizForBulkImport(
-  rows: Record<string, unknown>[]
-): Record<string, unknown>[] {
-  return rows.map((row) => ({
-    type: row.type,
-    question: row.question,
-    options: row.options,
-    correctAnswer: row.correctAnswer ?? row.correct_answer,
-    explanation: row.explanation,
-  }));
-}
-
 function zipPathExists(zipPaths: Set<string>, ref: string): boolean {
   const normalized = normalizeZipPath(ref);
   if (zipPaths.has(normalized)) return true;
@@ -313,22 +199,42 @@ export function mapZipPackageToBulkImport(
 ): Record<string, unknown> {
   return {
     subtitles: mapSubtitlesForBulkImport(pkg.subtitles),
-    vocabulary: pkg.vocabulary,
-    quizQuestions: mapQuizForBulkImport(pkg.quizQuestions),
+    vocabulary: mapNormalizedVocabularyToBulkImport(pkg.vocabulary),
+    quizQuestions: mapNormalizedQuizToBulkImport(pkg.quizQuestions),
+  };
+}
+
+function buildImportValidationContext(
+  pkg: LessonZipPackage
+): ImportValidationContext | undefined {
+  if (!pkg.importContext) return undefined;
+  return {
+    courseId: pkg.importContext.courseId,
+    isKorean: pkg.importContext.isKorean,
+    targetLanguage: pkg.importContext.targetLanguage,
   };
 }
 
 export function buildLessonImportPreview(
   pkg: LessonZipPackage
 ): LessonImportPreview | null {
-  if (!pkg.manifest || !pkg.lesson) return null;
+  if (!pkg.manifest || !pkg.lesson || !pkg.importContext) return null;
+
+  const mongolianTitle =
+    pkg.lesson.mongolianTitle ||
+    pkg.manifest.mongolianTitle ||
+    (pkg.lesson.title !== pkg.lesson.targetTitle ? pkg.lesson.title : undefined);
 
   return {
     courseId: pkg.lesson.courseId || pkg.manifest.courseId,
     lessonId: pkg.manifest.lessonId,
     language: pkg.manifest.language,
-    title: pkg.lesson.title || pkg.manifest.title || pkg.manifest.lessonId,
-    mongolianTitle: pkg.manifest.mongolianTitle,
+    targetLanguage: pkg.manifest.targetLanguage,
+    uiLanguage: pkg.manifest.uiLanguage,
+    title: pkg.lesson.title,
+    targetTitle: pkg.lesson.targetTitle,
+    targetTitleLabel: targetScriptLabel(pkg.importContext),
+    mongolianTitle,
     source: pkg.manifest.source,
     vocabularyCount: pkg.vocabulary.length,
     quizCount: pkg.quizQuestions.length,
@@ -365,7 +271,11 @@ export function validateLessonZipPackage(
   );
 
   for (const row of pkg.vocabulary) {
-    const audioFile = String(row.audioFile ?? row.audio_file ?? "").trim();
+    const audioFile = String(
+      (row as unknown as Record<string, unknown>).audioFile ??
+        (row as unknown as Record<string, unknown>).audio_file ??
+        ""
+    ).trim();
     if (audioFile && !zipPathExists(zipPaths, audioFile)) {
       warnings.push(
         `vocabulary audioFile "${audioFile}" listed but not found in ZIP — per-word audio is not stored in DB yet.`
@@ -405,7 +315,10 @@ export function validateLessonZipPackage(
   let contentValidation: ImportValidationResult | null = null;
 
   if (errors.length === 0 && pkg.lesson && pkg.vocabulary.length > 0) {
-    contentValidation = validateLessonImportPayload(mapZipPackageToBulkImport(pkg));
+    contentValidation = validateLessonImportPayload(
+      mapZipPackageToBulkImport(pkg),
+      buildImportValidationContext(pkg)
+    );
     importPayload = contentValidation.payload;
     for (const message of contentValidation.errors) {
       if (!errors.includes(message)) errors.push(message);
@@ -454,30 +367,49 @@ export async function parseLessonZip(file: File): Promise<LessonZipValidation> {
     const manifestResult = await readJsonFile(zip, "manifest.json");
     if (manifestResult.error) errors.push(manifestResult.error);
     const manifest = manifestResult.data
-      ? parseManifest(manifestResult.data, errors, warnings)
+      ? normalizeZipManifest(manifestResult.data, errors, warnings)
+      : null;
+
+    const importContext = manifest
+      ? buildZipImportContext(
+          manifest.courseId,
+          manifest.language,
+          manifest.targetLanguage,
+          manifest.uiLanguage
+        )
       : null;
 
     const lessonResult = await readJsonFile(zip, "lesson.json");
     if (lessonResult.error) errors.push(lessonResult.error);
-    const lesson = lessonResult.data ? parseLessonJson(lessonResult.data, errors) : null;
+    const lesson =
+      lessonResult.data && importContext
+        ? normalizeZipLesson(lessonResult.data, importContext, warnings)
+        : lessonResult.data
+          ? normalizeZipLesson(
+              lessonResult.data,
+              buildZipImportContext("", "zh-MN"),
+              warnings
+            )
+          : null;
 
     const vocabularyResult = await readJsonFile(zip, "vocabulary.json");
     if (vocabularyResult.error) errors.push(vocabularyResult.error);
-    const vocabulary = parseArrayFile(
+    const vocabularyRaw = parseArrayFile(
       vocabularyResult.data,
       "vocabulary.json",
       errors,
       true
     );
+    const vocabulary =
+      importContext && vocabularyRaw.length > 0
+        ? normalizeZipVocabulary(vocabularyRaw, importContext, errors, warnings)
+        : [];
 
     const quizResult = await readJsonFile(zip, "quiz.json");
     if (quizResult.error) errors.push(quizResult.error);
-    const quizQuestions = parseArrayFile(
-      quizResult.data,
-      "quiz.json",
-      errors,
-      true
-    );
+    const quizRaw = parseArrayFile(quizResult.data, "quiz.json", errors, true);
+    const quizQuestions =
+      quizRaw.length > 0 ? normalizeZipQuiz(quizRaw, errors, warnings) : [];
 
     const subtitlesResult = await readJsonFile(zip, "subtitles.json");
     let subtitles: Record<string, unknown>[] = [];
@@ -500,6 +432,7 @@ export async function parseLessonZip(file: File): Promise<LessonZipValidation> {
       ok: errors.length === 0,
       manifest,
       lesson,
+      importContext,
       vocabulary,
       quizQuestions,
       subtitles,

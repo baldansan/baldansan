@@ -1,18 +1,24 @@
 [
   {
-    "chinese": "ㅏ",
-    "pinyin": "a",
-    "mongolian": "эгшиг «а»",
-    "hskLevel": "KR1",
-    "exampleChinese": "아",
-    "exampleMongolian": "а"
+    "id": "VOC-001",
+    "target": "한글",
+    "reading": "hangeul",
+    "mongolian": "Солонгос бичиг буюу Хангыль үсэг",
+    "level": "Korean-PreA1",
+    "example": {
+      "target": "한글을 읽어요.",
+      "mongolian": "Би солонгос үсэг уншина."
+    }
   },
   {
-    "chinese": "ㅓ",
-    "pinyin": "eo",
-    "mongolian": "эгшиг «eo»",
-    "hskLevel": "KR1",
-    "exampleChinese": "어",
-    "exampleMongolian": "eo"
+    "id": "VOC-002",
+    "target": "ㅏ",
+    "reading": "a",
+    "mongolian": "эгшиг «а»",
+    "level": "Korean-PreA1",
+    "example": {
+      "target": "아",
+      "mongolian": "а"
+    }
   }
 ]

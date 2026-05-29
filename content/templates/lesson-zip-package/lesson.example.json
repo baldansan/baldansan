@@ -1,12 +1,14 @@
 {
-  "courseId": "korean-1",
-  "title": "PreLesson 01 — Үндсэн эгшиг",
-  "chineseTitle": "기본 모음",
-  "subtitle": "Солонгосын 6 үндсэн эgшиг",
-  "description": "ㅏ ㅓ ㅗ ㅜ ㅡ ㅣ эgшгийг сурна.",
+  "courseId": "korean-level-1",
+  "lessonId": "KR-L1-PRELESSON-00",
+  "title": "한글 읽기 기초",
+  "targetTitle": "한글 읽기 기초",
+  "mongolianTitle": "Солонгос үсэг уншиж сурах суурь",
+  "subtitle": "Солонгосын үндсэн эгшиг",
+  "description": "ㅏ ㅓ ㅗ ㅜ ㅡ ㅣ эгшгийг сурна.",
   "duration": "10 min",
   "status": "draft",
   "orderIndex": 0,
   "mediaStatus": "missing",
-  "sourceNote": "ZIP template example"
+  "sourceNote": "Multilingual ZIP template"
 }

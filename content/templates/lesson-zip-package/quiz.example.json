@@ -1,16 +1,19 @@
 [
   {
+    "id": "Q001",
+    "type": "multiple_choice",
+    "prompt": "아 аль авиа вэ?",
+    "options": ["а", "о", "у", "и"],
+    "answer": "а",
+    "skillTags": ["hangul_vowel"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "Q002",
     "type": "multiple_choice",
     "question": "「ㅏ」-ийн romanization аль вэ?",
     "options": ["a", "o", "u", "i"],
     "correctAnswer": "a",
     "explanation": "ㅏ → a"
-  },
-  {
-    "type": "cloze",
-    "question": "Romanization «u» — аль эgшиг? ____",
-    "options": ["ㅜ", "ㅗ", "ㅡ", "ㅣ"],
-    "correctAnswer": "ㅜ",
-    "explanation": "u = ㅜ"
   }
 ]

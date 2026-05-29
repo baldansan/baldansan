@@ -25,23 +25,42 @@ export type SubtitleImportItem = {
 
 export type VocabularyImportItem = {
   chinese?: string;
+  target?: string;
+  korean?: string;
   pinyin?: string;
+  reading?: string;
+  romanization?: string;
   mongolian?: string;
   hskLevel?: string;
   hsk_level?: string;
+  level?: string;
+  koreanLevel?: string;
   exampleChinese?: string;
   example_chinese?: string;
   exampleMongolian?: string;
   example_mongolian?: string;
+  example?: {
+    target?: string;
+    mongolian?: string;
+  };
+  exampleSentence?: string;
+  exampleTarget?: string;
+  sentence?: string;
+  exampleSentenceMn?: string;
 };
 
 export type QuizImportItem = {
+  id?: string;
   type?: string;
   question?: string;
+  prompt?: string;
   options?: unknown;
   correctAnswer?: string;
   correct_answer?: string;
+  answer?: string;
   explanation?: string;
+  skillTags?: string[];
+  difficulty?: string;
 };
 
 export type NormalizedSubtitleImport = {
@@ -79,6 +98,12 @@ export type BulkImportMode = "append" | "replace";
 
 export type BulkImportOptions = {
   mode?: BulkImportMode;
+};
+
+export type ImportValidationContext = {
+  courseId?: string;
+  targetLanguage?: string;
+  isKorean?: boolean;
 };
 
 export type ImportValidationResult = {
@@ -191,8 +216,31 @@ export function parseLessonImportJson(
   }
 }
 
+function readVocabularyExample(item: Record<string, unknown>): {
+  exampleChinese: string | null;
+  exampleMongolian: string | null;
+} {
+  const example = isRecord(item.example) ? item.example : null;
+  const exampleChinese =
+    String(example?.target ?? "").trim() ||
+    String(item.exampleChinese ?? item.example_chinese ?? "").trim() ||
+    String(item.exampleSentence ?? item.exampleTarget ?? item.sentence ?? "").trim() ||
+    "";
+  const exampleMongolian =
+    String(example?.mongolian ?? "").trim() ||
+    String(item.exampleMongolian ?? item.example_mongolian ?? "").trim() ||
+    String(item.exampleSentenceMn ?? "").trim() ||
+    "";
+
+  return {
+    exampleChinese: exampleChinese || null,
+    exampleMongolian: exampleMongolian || null,
+  };
+}
+
 export function validateLessonImportPayload(
-  raw: Record<string, unknown>
+  raw: Record<string, unknown>,
+  context?: ImportValidationContext
 ): ImportValidationResult {
   const errors: string[] = [];
   const warnings: string[] = [];
@@ -235,10 +283,10 @@ export function validateLessonImportPayload(
     }
     const startTime = String(item.start ?? item.startTime ?? "").trim();
     const endTime = String(item.end ?? item.endTime ?? "").trim();
-    const chinese = String(item.chinese ?? "").trim();
+    const chinese = String(item.chinese ?? item.target ?? "").trim();
     const mongolian = String(item.mongolian ?? "").trim();
     if (!chinese) {
-      errors.push(`subtitles[${index}]: chinese is required.`);
+      errors.push(`subtitles[${index}]: target or chinese is required.`);
     }
     if (!mongolian) {
       errors.push(`subtitles[${index}]: mongolian is required.`);
@@ -254,7 +302,7 @@ export function validateLessonImportPayload(
         startTime,
         endTime,
         chinese,
-        pinyin: String(item.pinyin ?? "").trim() || null,
+        pinyin: String(item.pinyin ?? item.reading ?? "").trim() || null,
         mongolian,
       });
     }
@@ -266,27 +314,35 @@ export function validateLessonImportPayload(
       errors.push(`vocabulary[${index}] must be an object.`);
       return;
     }
-    const chinese = String(item.chinese ?? "").trim();
+    const chinese = String(
+      item.chinese ?? item.target ?? item.korean ?? ""
+    ).trim();
     const mongolian = String(item.mongolian ?? "").trim();
     if (!chinese) {
-      errors.push(`vocabulary[${index}]: chinese is required.`);
+      errors.push(`vocabulary[${index}]: target or chinese is required.`);
     }
     if (!mongolian) {
       errors.push(`vocabulary[${index}]: mongolian is required.`);
     }
     if (chinese && mongolian) {
+      const examples = readVocabularyExample(item);
       vocabulary.push({
         chinese,
-        pinyin: String(item.pinyin ?? "").trim() || null,
+        pinyin:
+          String(
+            item.pinyin ?? item.reading ?? item.romanization ?? ""
+          ).trim() || null,
         mongolian,
         hskLevel:
-          String(item.hskLevel ?? item.hsk_level ?? "").trim() || null,
-        exampleChinese:
-          String(item.exampleChinese ?? item.example_chinese ?? "").trim() ||
-          null,
-        exampleMongolian:
-          String(item.exampleMongolian ?? item.example_mongolian ?? "").trim() ||
-          null,
+          String(
+            item.hskLevel ??
+              item.hsk_level ??
+              item.level ??
+              item.koreanLevel ??
+              ""
+          ).trim() || null,
+        exampleChinese: examples.exampleChinese,
+        exampleMongolian: examples.exampleMongolian,
       });
     }
   });
@@ -300,10 +356,10 @@ export function validateLessonImportPayload(
     const type = normalizeQuizType(
       typeof item.type === "string" ? item.type : undefined
     );
-    const question = String(item.question ?? "").trim();
+    const question = String(item.question ?? item.prompt ?? "").trim();
     const options = parseOptions(item.options);
     const correctAnswer = String(
-      item.correctAnswer ?? item.correct_answer ?? ""
+      item.correctAnswer ?? item.correct_answer ?? item.answer ?? ""
     ).trim();
     const explanation = String(item.explanation ?? "").trim() || null;
 
@@ -313,24 +369,36 @@ export function validateLessonImportPayload(
       );
     }
     if (!question) {
-      errors.push(`quizQuestions[${index}]: question is required.`);
+      errors.push(`quizQuestions[${index}]: question (or prompt) is required.`);
     }
     if (!correctAnswer) {
       errors.push(
-        `quizQuestions[${index}]: correctAnswer (or correct_answer) is required.`
+        `quizQuestions[${index}]: correctAnswer (or answer) is required.`
       );
     }
-    if (options.length < 2) {
-      errors.push(`quizQuestions[${index}]: at least 2 options required.`);
+    if (type === "multiple_choice" && options.length < 2) {
+      errors.push(
+        `quizQuestions[${index}]: multiple_choice requires at least 2 options.`
+      );
+    } else if (type === "cloze" && options.length > 0 && options.length < 2) {
+      errors.push(`quizQuestions[${index}]: cloze options need at least 2 when provided.`);
     }
-    if (type && question && correctAnswer && options.length >= 2) {
-      quizQuestions.push({
-        type,
-        question,
-        options,
-        correctAnswer,
-        explanation,
-      });
+    if (type && question && correctAnswer) {
+      const canImport =
+        type === "multiple_choice"
+          ? options.length >= 2
+          : type === "cloze"
+            ? options.length === 0 || options.length >= 2
+            : options.length >= 2;
+      if (canImport) {
+        quizQuestions.push({
+          type,
+          question,
+          options,
+          correctAnswer,
+          explanation,
+        });
+      }
     }
   });
 
@@ -340,7 +408,7 @@ export function validateLessonImportPayload(
     quizQuestions,
   };
 
-  const extras = analyzeImportPayloadExtras(payload);
+  const extras = analyzeImportPayloadExtras(payload, context);
   for (const msg of extras.errors) {
     if (!errors.includes(msg)) errors.push(msg);
   }

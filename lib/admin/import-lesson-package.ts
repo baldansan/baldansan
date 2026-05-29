@@ -182,8 +182,12 @@ async function upsertLessonShell(
       id: lessonId,
       courseId,
       title: validation.lesson.title,
-      chineseTitle: validation.lesson.chineseTitle,
-      subtitle: validation.lesson.subtitle,
+      chineseTitle:
+        validation.lesson.targetTitle || validation.lesson.chineseTitle,
+      subtitle:
+        validation.lesson.subtitle ??
+        validation.lesson.mongolianTitle ??
+        validation.preview.mongolianTitle,
       description: validation.lesson.description,
       duration: validation.lesson.duration,
       status: "draft",
@@ -202,8 +206,12 @@ async function upsertLessonShell(
     .update({
       course_id: courseId,
       title: validation.lesson.title,
-      chinese_title: validation.lesson.chineseTitle,
-      subtitle: validation.lesson.subtitle ?? null,
+      chinese_title: validation.lesson.targetTitle || validation.lesson.chineseTitle,
+      subtitle:
+        validation.lesson.subtitle ??
+        validation.lesson.mongolianTitle ??
+        validation.preview.mongolianTitle ??
+        null,
       description: validation.lesson.description ?? null,
       duration: validation.lesson.duration ?? null,
       status: "draft",
@@ -213,6 +221,8 @@ async function upsertLessonShell(
       language:
         validation.preview.language ||
         inferLanguageTagFromCourseId(courseId),
+      target_language: validation.preview.targetLanguage ?? null,
+      ui_language: validation.preview.uiLanguage ?? null,
     })
     .eq("id", lessonId);
 
