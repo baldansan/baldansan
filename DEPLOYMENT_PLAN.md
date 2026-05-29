@@ -8,7 +8,7 @@ Phase 6: production readiness. **Do not deploy until checklists are complete.**
 | 2 | Supabase production verification | ✅ Completed |
 | 3 | Vercel deployment setup | ✅ Completed |
 | 4 | Production route testing | ✅ Completed |
-| 5 | Security / RLS final audit | Pending |
+| 5 | Security / RLS final audit | ✅ Completed |
 | 6 | Launch candidate | Pending |
 
 ---
@@ -114,6 +114,15 @@ Live launch QA dashboard for https://baldansan.vercel.app:
 4. **Docs:** [PRODUCTION_ROUTE_TESTING.md](./PRODUCTION_ROUTE_TESTING.md), [LAUNCH_QA_REPORT_TEMPLATE.md](./LAUNCH_QA_REPORT_TEMPLATE.md)
 
 Run after every production deploy alongside `/deployment-check` and `/admin/system-check`.
+
+### Phase 6 Step 5 — Security/RLS final audit and launch candidate (completed)
+
+1. **Route:** `/admin/security-audit` — env, admin access, draft visibility, RLS tables, storage, Auth URL manual checks
+2. **Export:** JSON/Markdown security report
+3. **Docs:** [SECURITY_RLS_AUDIT.md](./SECURITY_RLS_AUDIT.md), [LAUNCH_CANDIDATE_CHECKLIST.md](./LAUNCH_CANDIDATE_CHECKLIST.md)
+4. **SQL:** Enhanced `production_verification.sql` — security group, content policies, is_admin qualification
+
+**Next step:** Phase 6 Step 6 — Launch candidate final smoke test and go-live notes.
 
 ---
 

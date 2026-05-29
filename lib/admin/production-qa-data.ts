@@ -313,6 +313,14 @@ export const QA_CHECKLIST: QaCheckItemDefinition[] = [
     purpose: "Auth callback",
     expected: "Production URL in Supabase Auth Redirect URLs",
   },
+  {
+    id: "auth-security-audit",
+    section: "auth",
+    label: "Security audit completed",
+    purpose: "Security / RLS final audit",
+    expected: "No automatic fail on /admin/security-audit; manual checks reviewed",
+    productionPath: "/admin/security-audit",
+  },
   // Supabase
   {
     id: "supabase-public-content",

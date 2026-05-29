@@ -291,6 +291,108 @@ checks AS (
   ) sp
 
   -- -------------------------------------------------------------------------
+  -- J2. Security — is_admin qualification in policies
+  -- -------------------------------------------------------------------------
+  UNION ALL
+  SELECT 'security', 'is_admin policy qualification',
+    CASE
+      WHEN EXISTS (
+        SELECT 1 FROM pg_policies p
+        WHERE p.schemaname IN ('public', 'storage')
+          AND (
+            (p.qual IS NOT NULL AND p.qual::text ~* '\mis_admin\s*\(' AND p.qual::text !~* 'public\.is_admin\s*\(')
+            OR (p.with_check IS NOT NULL AND p.with_check::text ~* '\mis_admin\s*\(' AND p.with_check::text !~* 'public\.is_admin\s*\(')
+          )
+      ) THEN 'warn'
+      ELSE 'pass'
+    END,
+    CASE
+      WHEN EXISTS (
+        SELECT 1 FROM pg_policies p
+        WHERE p.schemaname IN ('public', 'storage')
+          AND (
+            (p.qual IS NOT NULL AND p.qual::text ~* '\mis_admin\s*\(' AND p.qual::text !~* 'public\.is_admin\s*\(')
+            OR (p.with_check IS NOT NULL AND p.with_check::text ~* '\mis_admin\s*\(' AND p.with_check::text !~* 'public\.is_admin\s*\(')
+          )
+      ) THEN 'Some policies use bare is_admin() — prefer public.is_admin(auth.uid()).'
+      ELSE 'No unqualified is_admin() references found in policy expressions.'
+    END
+
+  UNION ALL
+  SELECT 'security', 'admin_activity_log policies',
+    CASE
+      WHEN to_regclass('public.admin_activity_log') IS NULL THEN 'fail'
+      WHEN COALESCE((
+        SELECT COUNT(*)::int FROM pg_policies
+        WHERE schemaname = 'public' AND tablename = 'admin_activity_log'
+      ), 0) = 0 THEN 'warn'
+      ELSE 'pass'
+    END,
+    CASE
+      WHEN to_regclass('public.admin_activity_log') IS NULL THEN 'Table missing — run 007_admin_activity_log.sql'
+      WHEN COALESCE((
+        SELECT COUNT(*)::int FROM pg_policies
+        WHERE schemaname = 'public' AND tablename = 'admin_activity_log'
+      ), 0) = 0 THEN 'No policies — run 002_admin_content_policies.sql'
+      ELSE (SELECT COUNT(*)::text FROM pg_policies WHERE schemaname = 'public' AND tablename = 'admin_activity_log') || ' policy/policies.'
+    END
+
+  UNION ALL
+  SELECT 'security', 'admin_tasks policies',
+    CASE
+      WHEN to_regclass('public.admin_tasks') IS NULL THEN 'fail'
+      WHEN COALESCE((
+        SELECT COUNT(*)::int FROM pg_policies
+        WHERE schemaname = 'public' AND tablename = 'admin_tasks'
+      ), 0) = 0 THEN 'warn'
+      ELSE 'pass'
+    END,
+    CASE
+      WHEN to_regclass('public.admin_tasks') IS NULL THEN 'Table missing — run 006_admin_tasks.sql'
+      WHEN COALESCE((
+        SELECT COUNT(*)::int FROM pg_policies
+        WHERE schemaname = 'public' AND tablename = 'admin_tasks'
+      ), 0) = 0 THEN 'No policies — run 002_admin_content_policies.sql'
+      ELSE (SELECT COUNT(*)::text FROM pg_policies WHERE schemaname = 'public' AND tablename = 'admin_tasks') || ' policy/policies.'
+    END
+
+  UNION ALL
+  SELECT 'policies', 'content: subtitle_lines',
+    CASE WHEN pol.policy_count > 0 THEN 'pass' WHEN to_regclass('public.subtitle_lines') IS NULL THEN 'fail' ELSE 'warn' END,
+    CASE WHEN to_regclass('public.subtitle_lines') IS NULL THEN 'Table missing.'
+         WHEN pol.policy_count > 0 THEN pol.policy_count::text || ' policy/policies found.'
+         ELSE 'No policies — run 002_admin_content_policies.sql' END
+  FROM (
+    SELECT COALESCE(COUNT(p.policyname), 0)::int AS policy_count
+    FROM pg_policies p
+    WHERE p.schemaname = 'public' AND p.tablename = 'subtitle_lines'
+  ) pol
+
+  UNION ALL
+  SELECT 'policies', 'content: vocabulary_words',
+    CASE WHEN pol.policy_count > 0 THEN 'pass' WHEN to_regclass('public.vocabulary_words') IS NULL THEN 'fail' ELSE 'warn' END,
+    CASE WHEN to_regclass('public.vocabulary_words') IS NULL THEN 'Table missing.'
+         WHEN pol.policy_count > 0 THEN pol.policy_count::text || ' policy/policies found.'
+         ELSE 'No policies — run 002_admin_content_policies.sql' END
+  FROM (
+    SELECT COALESCE(COUNT(p.policyname), 0)::int AS policy_count
+    FROM pg_policies p
+    WHERE p.schemaname = 'public' AND p.tablename = 'vocabulary_words'
+  ) pol
+
+  UNION ALL
+  SELECT 'policies', 'content: quiz_questions',
+    CASE WHEN pol.policy_count > 0 THEN 'pass' WHEN to_regclass('public.quiz_questions') IS NULL THEN 'fail' ELSE 'warn' END,
+    CASE WHEN to_regclass('public.quiz_questions') IS NULL THEN 'Table missing.'
+         WHEN pol.policy_count > 0 THEN pol.policy_count::text || ' policy/policies found.'
+         ELSE 'No policies — run 002_admin_content_policies.sql' END
+  FROM (
+    SELECT COALESCE(COUNT(p.policyname), 0)::int AS policy_count
+    FROM pg_policies p
+    WHERE p.schemaname = 'public' AND p.tablename = 'quiz_questions'
+  ) pol
+
+  -- -------------------------------------------------------------------------
   -- K. Data sanity
   -- -------------------------------------------------------------------------
   UNION ALL
@@ -367,7 +469,8 @@ ORDER BY
     WHEN 'storage' THEN 8
     WHEN 'rls_enabled' THEN 9
     WHEN 'policies' THEN 10
-    WHEN 'data_sanity' THEN 11
+    WHEN 'security' THEN 11
+    WHEN 'data_sanity' THEN 12
     ELSE 99
   END,
   check_name;

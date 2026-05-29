@@ -103,6 +103,10 @@ Concise go-live checklist. See [DEPLOYMENT_PLAN.md](./DEPLOYMENT_PLAN.md) for de
 
 ## Final go-live checks
 
+- [ ] Run `/admin/security-audit` — no automatic **fail**
+- [ ] Export security report (JSON or Markdown)
+- [ ] Run `supabase/verify/production_verification.sql` — confirm no **fail** rows
+- [ ] Confirm no `service_role` key in client or Vercel env
 - [ ] Production URL added to Supabase Auth Site URL + Redirect URLs
 - [ ] RLS smoke test: learner cannot write other users' progress
 - [ ] RLS smoke test: non-admin cannot write lessons
@@ -121,4 +125,7 @@ Concise go-live checklist. See [DEPLOYMENT_PLAN.md](./DEPLOYMENT_PLAN.md) for de
 - [supabase/verify/README.md](./supabase/verify/README.md)
 - `/admin/system-check` (local or after deploy)
 - [PRODUCTION_ROUTE_TESTING.md](./PRODUCTION_ROUTE_TESTING.md)
+- [SECURITY_RLS_AUDIT.md](./SECURITY_RLS_AUDIT.md)
+- [LAUNCH_CANDIDATE_CHECKLIST.md](./LAUNCH_CANDIDATE_CHECKLIST.md)
 - `/admin/production-qa` (after deploy)
+- `/admin/security-audit` (before launch)
