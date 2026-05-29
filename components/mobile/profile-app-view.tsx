@@ -109,9 +109,9 @@ export function ProfileAppView() {
       ? [{ href: "/admin", label: "Админ самбар", icon: "⚙️" }]
       : []),
     { href: "/my-assignments", label: "Ангид нэгдэх", icon: "🏫" },
-    { href: "/dashboard", label: "Миний явц", icon: "📊" },
-    { href: "/study", label: "Үзсэн үг", icon: "📖" },
-    { href: "/onboarding", label: "Тохиргоо", icon: "🔧" },
+    { href: "/progress", label: "Миний явц", icon: "📊" },
+    { href: "/review", label: "Үзсэн үг", icon: "📖" },
+    { href: "/settings", label: "Тохиргоо", icon: "🔧" },
   ];
 
   return (
@@ -147,7 +147,7 @@ export function ProfileAppView() {
 
       <MobileCard padding="sm" className="overflow-hidden !p-0">
         {menuItems.map((item) => (
-          <Link key={item.href} href={item.href} className="app-menu-row">
+          <Link key={item.label} href={item.href} className="app-menu-row">
             <span aria-hidden>{item.icon}</span>
             <span className="flex-1">{item.label}</span>
             <span className="text-[var(--app-muted)]">›</span>

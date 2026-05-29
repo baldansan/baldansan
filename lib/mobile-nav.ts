@@ -48,7 +48,9 @@ export const MOBILE_NAV_ITEMS: MobileNavItem[] = [
     icon: "👤",
     match: (p) =>
       p.startsWith("/profile") ||
+      p.startsWith("/settings") ||
       p.startsWith("/dashboard") ||
+      p.startsWith("/progress") ||
       p.startsWith("/login") ||
       p.startsWith("/signup"),
   },
