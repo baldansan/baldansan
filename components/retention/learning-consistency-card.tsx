@@ -78,7 +78,7 @@ export function LearningConsistencyCard({ summary }: Props) {
           href="/dashboard"
           className="rounded-full border border-slate-200 px-5 py-2 text-sm font-semibold text-slate-700 hover:border-emerald-200"
         >
-          Dashboard
+          Миний самбар
         </Link>
       </div>
 

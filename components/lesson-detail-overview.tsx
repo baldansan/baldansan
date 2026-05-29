@@ -119,7 +119,7 @@ export function LessonDetailOverview({
           href={coursePath(lesson.courseId)}
           className="inline-flex justify-center rounded-full border border-slate-200 px-6 py-3 text-sm font-semibold text-slate-600 hover:border-emerald-200"
         >
-          Back to course
+          Курс руу буцах
         </Link>
       </section>
     </>

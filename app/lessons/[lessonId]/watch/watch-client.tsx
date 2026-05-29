@@ -60,7 +60,7 @@ export function LessonWatchClient({ lesson, adminPreview = false }: Props) {
     <div className="min-h-screen bg-gradient-to-b from-emerald-50/40 via-white to-white text-slate-900">
       <AppHeader />
 
-      <main className="mx-auto flex w-full max-w-5xl flex-col gap-6 px-4 pb-24 pt-2 sm:gap-8 sm:px-6 md:pb-10">
+      <main className="mx-auto flex w-full max-w-5xl flex-col gap-6 px-4 pb-32 pt-2 sm:gap-8 sm:px-6 md:pb-10">
         {adminPreview ? <AdminPreviewBanner /> : null}
         <Link
           href={lessonPreviewPath(lesson.id, { adminPreview })}
@@ -92,7 +92,7 @@ export function LessonWatchClient({ lesson, adminPreview = false }: Props) {
 
         <section className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:p-6">
           <h2 className="text-sm font-semibold text-slate-900">Subtitle mode</h2>
-          <div className="mt-3 flex gap-2">
+          <div className="mt-3 flex flex-wrap gap-2">
             {modes.map((item) => (
               <button
                 key={item.id}

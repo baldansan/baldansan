@@ -23,6 +23,7 @@ import {
 
 const SECTION_ORDER: QaCheckSectionId[] = [
   "public",
+  "v1",
   "admin",
   "auth",
   "supabase",

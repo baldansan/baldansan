@@ -94,13 +94,13 @@ export function WeeklyReportView() {
           href="/courses/hsk5"
           className="rounded-full border border-slate-200 px-5 py-2.5 text-sm font-semibold text-slate-700"
         >
-          Continue learning
+          Үргэлжлүүлэх
         </Link>
         <Link
           href="/review"
           className="rounded-full border border-slate-200 px-5 py-2.5 text-sm font-semibold text-slate-700"
         >
-          Review vocabulary
+          Үг давтах
         </Link>
       </div>
     </PublicPageShell>

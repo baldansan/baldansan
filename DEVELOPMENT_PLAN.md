@@ -507,6 +507,21 @@ Phased roadmap from MVP demo to production product.
 
 ---
 
+## v1.0 Launch Stabilization — **Completed**
+
+**Goal:** Stabilize public learner launch at https://baldansan.vercel.app — no new major features.
+
+- Feature freeze — [V1_LAUNCH_STABILIZATION.md](./V1_LAUNCH_STABILIZATION.md)
+- Bug fixes and Mongolian copy on core learner pages
+- Mobile polish (lesson step bar padding, subtitle button wrap)
+- Production QA — v1.0 checklist on `/admin/production-qa`
+- Migration status — [SUPABASE_MIGRATION_STATUS.md](./SUPABASE_MIGRATION_STATUS.md)
+- Launch blockers — [V1_LAUNCH_BLOCKERS.md](./V1_LAUNCH_BLOCKERS.md), [V1_STABILIZATION_REPORT.md](./V1_STABILIZATION_REPORT.md)
+
+**Next:** v1.0 public launch or targeted bug-fix pass.
+
+---
+
 ## Phase 7 (later): Payment / membership
 
 **Goal:** Monetize courses and gate premium content.

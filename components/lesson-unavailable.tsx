@@ -41,7 +41,7 @@ export function LessonUnavailable({
               href={coursePath(courseId)}
               className="inline-flex justify-center rounded-full bg-emerald-500 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-emerald-600"
             >
-              Back to course
+              Курс руу буцах
             </Link>
             {showAdminPreviewLink ? (
               <Link

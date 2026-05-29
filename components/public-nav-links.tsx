@@ -48,7 +48,7 @@ export function PublicNavLinks({ active, className = "" }: Props) {
       {loggedIn ? (
         <>
           <Link href="/dashboard" className={linkClass(active === "dashboard")}>
-            Dashboard
+            Миний самбар
           </Link>
           <Link href="/review" className={linkClass(active === "review")}>
             Review

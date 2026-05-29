@@ -145,7 +145,7 @@ export function LessonQuizClient({
     <div className="min-h-screen bg-gradient-to-b from-emerald-50/40 via-white to-white text-slate-900">
       <AppHeader />
 
-      <main className="mx-auto flex w-full max-w-5xl flex-col gap-6 px-4 pb-24 pt-2 sm:gap-8 sm:px-6 md:pb-10">
+      <main className="mx-auto flex w-full max-w-5xl flex-col gap-6 px-4 pb-32 pt-2 sm:gap-8 sm:px-6 md:pb-10">
         {adminPreview ? <AdminPreviewBanner /> : null}
         <div className="flex flex-col gap-2 sm:flex-row sm:flex-wrap sm:gap-4">
           <Link
@@ -196,7 +196,7 @@ export function LessonQuizClient({
                   href={lessonPreviewPath(lesson.id, { adminPreview, subpath: "vocabulary" })}
                   className="rounded-full border border-emerald-200 bg-emerald-50 px-5 py-2 text-sm font-semibold text-emerald-700 transition-colors hover:bg-emerald-100"
                 >
-                  Review vocabulary
+                  Үг давтах
                 </Link>
               </>
             }
@@ -251,7 +251,7 @@ export function LessonQuizClient({
                 href={lessonPreviewPath(lesson.id, { adminPreview, subpath: "vocabulary" })}
                 className="w-full rounded-full bg-emerald-500 px-5 py-3 text-center text-sm font-semibold text-white transition-colors hover:bg-emerald-600"
               >
-                Review vocabulary
+                Үг давтах
               </Link>
               <Link
                 href={lessonPreviewPath(lesson.id, {
@@ -274,7 +274,7 @@ export function LessonQuizClient({
                 href={coursePath(lesson.courseId)}
                 className="w-full rounded-full border border-slate-200 bg-white px-5 py-3 text-center text-sm font-semibold text-slate-700 transition-colors hover:bg-slate-50"
               >
-                Back to course
+                Курс руу буцах
               </Link>
             </div>
           </section>

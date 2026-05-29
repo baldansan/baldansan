@@ -2,7 +2,24 @@
 
 **Project:** Buunduu Surtsgaay (Бөөндөө Сурцгаая)  
 **Checkpoint date:** May 2026  
-**Status:** Phase 7 Step 16 Server-safe invitation email delivery foundation **completed**
+**Status:** v1.0 Launch Stabilization **completed** — feature freeze applied for public learner launch
+
+---
+
+## v1.0 Launch Stabilization — **Completed**
+
+| Area | Deliverable |
+|------|-------------|
+| Feature freeze | [V1_LAUNCH_STABILIZATION.md](./V1_LAUNCH_STABILIZATION.md) |
+| Blockers | [V1_LAUNCH_BLOCKERS.md](./V1_LAUNCH_BLOCKERS.md) |
+| Migrations | [SUPABASE_MIGRATION_STATUS.md](./SUPABASE_MIGRATION_STATUS.md) |
+| Report | [V1_STABILIZATION_REPORT.md](./V1_STABILIZATION_REPORT.md) |
+| QA | `/admin/production-qa` v1.0 learner launch checklist |
+| Polish | Mongolian learner copy; mobile lesson page padding |
+
+**Recommendation:** Needs review — run production manual QA before public launch.
+
+**Next:** v1.0 public launch decision or v1.0 bug-fix pass.
 
 ---
 
