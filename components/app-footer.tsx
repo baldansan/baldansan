@@ -3,10 +3,15 @@ import { BRAND_NAME_MN } from "@/lib/brand";
 
 const links = [
   { href: "/courses", label: "Courses" },
+  { href: "/schools", label: "Schools" },
+  { href: "/teachers", label: "Teachers" },
+  { href: "/demo", label: "Demo" },
   { href: "/onboarding", label: "Onboarding" },
   { href: "/help", label: "Help" },
   { href: "/feedback", label: "Feedback" },
   { href: "/pricing", label: "Pricing" },
+  { href: "/school-inquiry", label: "School inquiry" },
+  { href: "/teacher-dashboard", label: "Teacher dashboard" },
   { href: "/login", label: "Login" },
   { href: "/profile", label: "Profile" },
 ] as const;

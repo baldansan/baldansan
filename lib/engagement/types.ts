@@ -16,7 +16,8 @@ export type NotificationType =
   | "achievement"
   | "reminder"
   | "progress"
-  | "system";
+  | "system"
+  | "invitation_accepted";
 
 export type StudyReminder = {
   id: string;

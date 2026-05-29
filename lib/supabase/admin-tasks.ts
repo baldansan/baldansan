@@ -22,6 +22,7 @@ import {
 } from "@/lib/supabase/admin-analytics";
 import { createServerSupabaseClient } from "@/lib/supabase/server";
 import { hasSupabaseConfig } from "@/lib/supabase/client";
+import { getB2BCrmTaskInput } from "@/lib/supabase/admin-b2b-metrics";
 
 export type AdminTaskCenterData = {
   tasks: AdminTask[];
@@ -86,12 +87,14 @@ async function buildGeneratedTasks(): Promise<{
     questions,
     vocabulary,
     releaseWorkflowResult,
+    b2bCrm,
   ] = await Promise.all([
     getHsk5LessonsWithQa(),
     getLessonAnalyticsOverview(),
     getQuestionLevelAnalytics(),
     getVocabularyEngagementAnalytics(),
     getReleaseWorkflowMetrics(),
+    getB2BCrmTaskInput(),
   ]);
 
   const warnings = [
@@ -109,6 +112,7 @@ async function buildGeneratedTasks(): Promise<{
     warnings,
     limitedByRls: overview.limitedByRls,
     supabaseConfigured: hasSupabaseConfig,
+    b2bCrm,
   });
 
   return { generated, warnings };
