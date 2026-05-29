@@ -10,6 +10,11 @@ import { EmptyState } from "@/components/empty-state";
 import { lessonPath } from "@/lib/content";
 import { lessonPreviewPath } from "@/lib/lesson-publish";
 import {
+  hasAudioUrl,
+  hasThumbnailUrl,
+  hasVideoUrl,
+} from "@/lib/lesson-media";
+import {
   getAdminPublishStatus,
   matchesStatusFilter,
   type AdminStatusFilter,
@@ -176,6 +181,35 @@ export function AdminLessonsList({ reports }: Props) {
                     </td>
                     <td className="px-3 py-3">
                       <MediaStatusBadge status={lesson.mediaStatus} />
+                      <div className="mt-1.5 flex flex-wrap gap-1 text-[10px] font-medium text-slate-500">
+                        <span
+                          className={
+                            hasThumbnailUrl(lesson)
+                              ? "text-emerald-700"
+                              : "text-slate-400"
+                          }
+                        >
+                          Th {hasThumbnailUrl(lesson) ? "✓" : "—"}
+                        </span>
+                        <span
+                          className={
+                            hasVideoUrl(lesson)
+                              ? "text-emerald-700"
+                              : "text-slate-400"
+                          }
+                        >
+                          Vid {hasVideoUrl(lesson) ? "✓" : "—"}
+                        </span>
+                        <span
+                          className={
+                            hasAudioUrl(lesson)
+                              ? "text-emerald-700"
+                              : "text-slate-400"
+                          }
+                        >
+                          Aud {hasAudioUrl(lesson) ? "✓" : "—"}
+                        </span>
+                      </div>
                     </td>
                     <td className="px-3 py-3">
                       <LessonQaBadge status={report.qaStatus} />

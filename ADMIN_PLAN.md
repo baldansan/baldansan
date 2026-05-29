@@ -104,6 +104,9 @@ See [CONTENT_WORKFLOW.md](./CONTENT_WORKFLOW.md):
 | 13 | Lesson duplicate, restore, destructive import safety | ✅ Completed |
 | 14 | Lesson package generator / full lesson builder | ✅ Completed |
 | 15 | Media/video metadata foundation | ✅ Completed |
+| 16 | Supabase Storage media upload | ✅ Completed |
+
+Step 16: [MEDIA_UPLOAD_WORKFLOW.md](./MEDIA_UPLOAD_WORKFLOW.md), [supabase/storage/001_lesson_media_bucket_policies.sql](./supabase/storage/001_lesson_media_bucket_policies.sql), `lesson-media-upload-card`, `lib/supabase/media-upload.ts`.
 
 Step 15: [MEDIA_WORKFLOW.md](./MEDIA_WORKFLOW.md), `002_lesson_media_fields.sql`, `lesson-media-editor`, public media display.
 

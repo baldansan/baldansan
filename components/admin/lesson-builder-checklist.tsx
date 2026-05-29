@@ -8,6 +8,12 @@ import {
   type LessonContentQaReport,
 } from "@/lib/admin/import-qa";
 import { getAdminPublishStatus } from "@/lib/admin/lesson-status";
+import {
+  hasAudioUrl,
+  hasThumbnailUrl,
+  hasVideoUrl,
+  isMediaReady,
+} from "@/lib/lesson-media";
 import { lessonPreviewPath } from "@/lib/lesson-publish";
 import type { LessonContent } from "@/types/lesson-content";
 
@@ -75,20 +81,27 @@ function buildSteps(
       },
       {
         number: 5,
+        title: "Media",
+        description: "Upload / attach media",
+        status: "blocked",
+        statusLabel: "Select a lesson first",
+      },
+      {
+        number: 6,
         title: "Preview",
         description: "Admin preview lesson",
         status: "blocked",
         statusLabel: "Select a lesson first",
       },
       {
-        number: 6,
+        number: 7,
         title: "Backup",
         description: "Export lesson JSON",
         status: "blocked",
         statusLabel: "Select a lesson first",
       },
       {
-        number: 7,
+        number: 8,
         title: "Publish",
         description: "Publish when QA ready",
         status: "blocked",
@@ -172,6 +185,20 @@ function buildSteps(
     step4Label = "Missing content";
   }
 
+  let step5Status: StepStatus = "pending";
+  let step5Label = "Upload thumbnail, audio, or video";
+  if (isMediaReady(lesson)) {
+    step5Status = "done";
+    step5Label = "Media ready (video attached)";
+  } else if (
+    hasVideoUrl(lesson) ||
+    hasThumbnailUrl(lesson) ||
+    hasAudioUrl(lesson)
+  ) {
+    step5Status = "warning";
+    step5Label = "Partial media — add video for ready status";
+  }
+
   let step7Status: StepStatus = "blocked";
   let step7Label = "QA must pass first";
   if (publishStatus === "available") {
@@ -222,6 +249,15 @@ function buildSteps(
     },
     {
       number: 5,
+      title: "Media",
+      description: "Upload / attach media",
+      status: step5Status,
+      statusLabel: step5Label,
+      href: editHref,
+      hrefLabel: "Upload media →",
+    },
+    {
+      number: 6,
       title: "Preview",
       description: "Admin preview lesson",
       status: hasContent || publishStatus === "available" ? "done" : "pending",
@@ -232,7 +268,7 @@ function buildSteps(
       extraLinks: previewLinks,
     },
     {
-      number: 6,
+      number: 7,
       title: "Backup",
       description: "Export lesson JSON",
       status: hasContent ? "pending" : "warning",
@@ -243,7 +279,7 @@ function buildSteps(
       hrefLabel: "Export backup →",
     },
     {
-      number: 7,
+      number: 8,
       title: "Publish",
       description: "Publish when QA ready",
       status: step7Status,
@@ -272,7 +308,7 @@ export function LessonBuilderChecklist({
         Workflow checklist
       </h2>
       <p className="mt-1 text-sm text-slate-600">
-        Draft → Prompt → Import → QA → Preview → Backup → Publish
+        Draft → Prompt → Import → QA → Media → Preview → Backup → Publish
       </p>
 
       {loading ? (

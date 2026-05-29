@@ -236,9 +236,14 @@ Phased roadmap from MVP demo to production product.
 - [components/lesson-media-display.tsx](./components/lesson-media-display.tsx) — public detail + watch media sections
 - [MEDIA_WORKFLOW.md](./MEDIA_WORKFLOW.md)
 
-**Next:** Phase 5 Step 16 — Supabase Storage upload for lesson media. Or Phase 5 Final Audit.
+**Phase 5 Step 16 — Completed:** Supabase Storage media upload foundation.
 
-- [lib/supabase/admin-import.ts](./lib/supabase/admin-import.ts) — parse, validate, `bulkImportLessonContent`
+- [supabase/storage/001_lesson_media_bucket_policies.sql](./supabase/storage/001_lesson_media_bucket_policies.sql) — `lesson-media` bucket + Storage RLS
+- [lib/supabase/media-upload.ts](./lib/supabase/media-upload.ts) — validate, path, upload helpers
+- [components/admin/lesson-media-upload-card.tsx](./components/admin/lesson-media-upload-card.tsx) — admin upload UI on edit page
+- [MEDIA_UPLOAD_WORKFLOW.md](./MEDIA_UPLOAD_WORKFLOW.md)
+
+**Next:** Phase 5 Step 17 — Content analytics / admin metrics dashboard. Or Phase 5 Final Audit.
 - [components/admin/bulk-import-editor.tsx](./components/admin/bulk-import-editor.tsx) on lesson edit page
 - [LESSON_IMPORT_FORMAT.md](./LESSON_IMPORT_FORMAT.md)
 
@@ -266,8 +271,9 @@ Phased roadmap from MVP demo to production product.
 | 13 | Lesson duplicate, restore, destructive import safety | ✅ Completed |
 | 14 | Lesson package generator / full lesson builder | ✅ Completed |
 | 15 | Media/video metadata foundation | ✅ Completed |
+| 16 | Supabase Storage media upload | ✅ Completed |
 
-**Next (Phase 5):** Step 16 — Supabase Storage upload for lesson media. Or Phase 5 Final Audit.
+**Next (Phase 5):** Step 17 — Content analytics / admin metrics dashboard. Or Phase 5 Final Audit.
 
 **Exit criteria:** New lesson published through admin UI without deploying code.
 

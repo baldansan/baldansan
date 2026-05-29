@@ -198,7 +198,7 @@ export function LessonEditForm({
 
       <AdminToolGroup
         title="Media"
-        description="Video, thumbnail, audio URL metadata — upload ирээдүйд Storage ашиглана."
+        description="Upload to Supabase Storage or paste URLs — thumbnail, audio, video."
       >
         <LessonMediaEditor lesson={lesson} />
       </AdminToolGroup>

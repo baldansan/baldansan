@@ -14,7 +14,7 @@ import {
 import { getAdminPublishStatus } from "@/lib/admin/lesson-status";
 import type { LessonQaReport } from "@/lib/admin/lesson-qa";
 import { lessonPreviewPath } from "@/lib/lesson-publish";
-import { hasVideoUrl } from "@/lib/lesson-media";
+import { hasVideoUrl, hasThumbnailUrl, hasAudioUrl } from "@/lib/lesson-media";
 import {
   getQuizQuestionsByLessonId,
   getSubtitleLinesByLessonId,
@@ -234,6 +234,18 @@ export function LessonBuilderWorkflow({ reports }: Props) {
                 <dt className="text-slate-500">Video URL</dt>
                 <dd className="text-slate-900">
                   {hasVideoUrl(selectedLesson) ? "Present" : "Missing"}
+                </dd>
+              </div>
+              <div>
+                <dt className="text-slate-500">Thumbnail</dt>
+                <dd className="text-slate-900">
+                  {hasThumbnailUrl(selectedLesson) ? "Present" : "Missing"}
+                </dd>
+              </div>
+              <div>
+                <dt className="text-slate-500">Audio</dt>
+                <dd className="text-slate-900">
+                  {hasAudioUrl(selectedLesson) ? "Present" : "Missing"}
                 </dd>
               </div>
               <div>

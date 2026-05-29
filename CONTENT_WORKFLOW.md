@@ -2,9 +2,9 @@
 
 Admins publish lessons through the Phase 5 admin UI. Public learners only see lessons with **`status = available`**.
 
-**Preferred workflow:** Use **`/admin/lesson-builder`** for the guided draft → prompt → import → QA → preview → backup → publish checklist. See [LESSON_BUILDER_WORKFLOW.md](./LESSON_BUILDER_WORKFLOW.md).
+**Preferred workflow:** Use **`/admin/lesson-builder`** for the guided draft → prompt → import → QA → **media** → preview → backup → publish checklist. See [LESSON_BUILDER_WORKFLOW.md](./LESSON_BUILDER_WORKFLOW.md).
 
-**Media metadata (Step 15):** Before publish, add video/thumbnail/audio URLs on the edit page and set `media_status` to `ready`. See [MEDIA_WORKFLOW.md](./MEDIA_WORKFLOW.md).
+**Media (Steps 15–16):** After QA, upload or attach lesson media before publishing. Upload via Supabase Storage on the edit page, or paste URLs manually. See [MEDIA_UPLOAD_WORKFLOW.md](./MEDIA_UPLOAD_WORKFLOW.md) and [MEDIA_WORKFLOW.md](./MEDIA_WORKFLOW.md).
 
 ---
 

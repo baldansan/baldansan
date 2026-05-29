@@ -1,12 +1,17 @@
 # Media workflow — Buunduu Surtsgaay
 
-URL-based lesson media metadata foundation (Phase 5 Step 15). **No file upload yet.**
+URL-based lesson media metadata (Phase 5 Step 15) plus **Supabase Storage upload** (Phase 5 Step 16).
 
 ---
 
 ## Current media foundation
 
-Admins attach media metadata to each lesson via **`/admin/lessons/{id}/edit`** → **Lesson media** section:
+Admins attach media via **`/admin/lessons/{id}/edit`**:
+
+1. **Upload media files** — Supabase Storage (`lesson-media` bucket) → public URLs saved automatically
+2. **Media URLs (manual)** — paste or override external URLs
+
+See [MEDIA_UPLOAD_WORKFLOW.md](./MEDIA_UPLOAD_WORKFLOW.md) for upload setup and limits.
 
 | Field | DB column | Purpose |
 |-------|-----------|---------|
@@ -58,21 +63,22 @@ YouTube/Douyin embeds are **not** implemented yet — use direct file URLs or ex
 
 Recommended before publish (see [CONTENT_WORKFLOW.md](./CONTENT_WORKFLOW.md)):
 
-1. Add **video URL** (hosted mp4/webm or trusted external link)
-2. Add **thumbnail URL** (cover image)
-3. Optionally add **audio URL** and **source note**
-4. Set **media status** to `ready` when verified
-5. Preview at `/lessons/{id}?preview=admin` and `/lessons/{id}/watch?preview=admin`
+1. **Upload** thumbnail, audio, and video on the edit page (or paste URLs manually)
+2. Confirm **media status** is `ready` when video is attached
+3. Preview at `/lessons/{id}?preview=admin` and `/lessons/{id}/watch?preview=admin`
+4. Publish when content QA + media are complete
 
-Also available on **Lesson Builder** (`/admin/lesson-builder`) — selected lesson summary shows media status and video URL presence.
+Also available on **Lesson Builder** (`/admin/lesson-builder`) — checklist Step 5 **Media** and selected lesson summary (thumbnail/video/audio presence).
 
 ---
 
-## No upload yet
+## Storage upload (Step 16)
 
-This step stores **URLs only**. Admins paste links to already-hosted files (CDN, cloud storage, etc.).
+Bucket: `lesson-media` (public read, admin-only upload).
 
-**Future (Phase 5 Step 16):** Supabase Storage upload for lesson media — bucket, RLS, admin upload UI, signed URLs.
+Setup: [supabase/storage/001_lesson_media_bucket_policies.sql](./supabase/storage/001_lesson_media_bucket_policies.sql)
+
+Full guide: [MEDIA_UPLOAD_WORKFLOW.md](./MEDIA_UPLOAD_WORKFLOW.md)
 
 ---
 

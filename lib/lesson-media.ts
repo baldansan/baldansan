@@ -55,6 +55,24 @@ export function getLessonMediaWarnings(lesson: LessonContent): string[] {
   if (!hasThumbnailUrl(lesson)) {
     warnings.push("Thumbnail missing");
   }
+  if (!hasAudioUrl(lesson)) {
+    warnings.push("Audio missing");
+  }
 
   return warnings;
+}
+
+/** Infer media_status after upload or URL change. */
+export function deriveMediaStatusFromUrls(input: {
+  videoUrl?: string;
+  thumbnailUrl?: string;
+  audioUrl?: string;
+}): LessonMediaStatus {
+  if (input.videoUrl?.trim()) {
+    return "ready";
+  }
+  if (input.thumbnailUrl?.trim() || input.audioUrl?.trim()) {
+    return "pending";
+  }
+  return "missing";
 }

@@ -2,7 +2,23 @@
 
 **Project:** Buunduu Surtsgaay (Бөөндөө Сурцгаая)  
 **Checkpoint date:** May 2026  
-**Status:** Phase 4 **completed**; Phase 5 Step 15 media metadata foundation **completed**
+**Status:** Phase 4 **completed**; Phase 5 Step 16 Supabase Storage media upload **completed**
+
+---
+
+## Phase 5 Step 16 — Supabase Storage media upload — **Completed**
+
+Phase 5 Step 16: Supabase Storage media upload foundation added.
+
+| Area | Deliverable |
+|------|-------------|
+| Storage | `supabase/storage/001_lesson_media_bucket_policies.sql`, bucket `lesson-media` |
+| Upload | `lib/supabase/media-upload.ts`, `lesson-media-upload-card` |
+| Admin | Integrated on edit page; QA dashboard Th/Vid/Aud indicators |
+| Builder | Checklist Step 5 — Upload / attach media |
+| Docs | [MEDIA_UPLOAD_WORKFLOW.md](./MEDIA_UPLOAD_WORKFLOW.md) |
+
+**Next:** Phase 5 Step 17 — Content analytics / admin metrics dashboard. Or Phase 5 Final Audit.
 
 ---
 
@@ -17,7 +33,7 @@ Phase 5 Step 15: Lesson media/video metadata management foundation added.
 | Public | `lesson-media-display` on detail + watch pages |
 | Docs | [MEDIA_WORKFLOW.md](./MEDIA_WORKFLOW.md) |
 
-**Next:** Phase 5 Step 16 — Supabase Storage upload for lesson media. Or Phase 5 Final Audit.
+**Next:** Phase 5 Step 17 — Content analytics / admin metrics dashboard. Or Phase 5 Final Audit.
 
 ---
 
