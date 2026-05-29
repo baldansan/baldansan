@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { DashboardQuickReview } from "@/components/dashboard-quick-review";
+import { DashboardGameStatsCard } from "@/components/games/dashboard-game-stats-card";
 import { EmptyState } from "@/components/empty-state";
 import { PwaInstallCard } from "@/components/pwa-install-card";
 import { StreakCard } from "@/components/retention/streak-card";
@@ -156,6 +157,8 @@ export function LearnerDashboard({ hsk5LessonIds }: Props) {
         continueHref={continueHref}
         latestQuiz={latestQuiz}
       />
+
+      <DashboardGameStatsCard />
 
       <section className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         {[

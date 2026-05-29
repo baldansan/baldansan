@@ -13,10 +13,12 @@
 | Report | [MOBILE_APP_REDESIGN_REPORT.md](./MOBILE_APP_REDESIGN_REPORT.md) |
 | Shell | Centered 430px phone container, soft gray outer background |
 | Nav | Bottom tabs: Нүүр, Давтах, Ханз, Тоглоом, Профайл |
-| Routes | `/home`, `/study`, `/kanji`, `/games` + profile/lesson flow |
+| Routes | `/home`, `/study`, `/kanji`, `/games`, `/kanji/[vocabId]`, `/games/*` + profile/lesson flow |
 | Components | `components/mobile/mobile-app-shell`, `mobile-bottom-nav`, etc. |
 
-**Next:** HSK4/HSK5 content upload sprint.
+**v1.0 practice games added:** match, translate, missing word, arrange, stroke demo — localStorage scores. See [PRACTICE_GAMES.md](./PRACTICE_GAMES.md).
+
+**Next:** HSK content upload sprint and game data enrichment.
 
 ---
 

@@ -30,6 +30,9 @@ All routes exist in App Router build output. Manual production smoke test still 
 | `/courses/hsk5` | OK | Public lessons only via `getPublicLessonsByCourseId` |
 | `/lessons/1` (+ watch/vocab/quiz) | OK | Access guard + draft unavailable UI |
 | `/review` | OK | Learned words dashboard |
+| `/games` | OK | Practice games hub (local stats) |
+| `/games/match`, `/games/translate`, `/games/missing-word`, `/games/arrange`, `/games/stroke` | OK | Lesson vocabulary mini-games |
+| `/kanji`, `/kanji/[vocabId]` | OK | Character grid + detail |
 | `/dashboard` | OK | Learner stats |
 | `/profile` | OK | Progress + retention |
 | `/login`, `/signup` | OK | Auth forms + `?next=` redirect |
@@ -138,7 +141,9 @@ See [V1_LAUNCH_BLOCKERS.md](./V1_LAUNCH_BLOCKERS.md).
 - Lesson flow, login/signup aligned to app shell
 - No new backend features; build verified
 
-**Next:** HSK4/HSK5 content upload sprint.
+**Practice games added** as local front-end learning tools — match, translate, missing word, arrange, stroke demo. Scores in localStorage only. See [PRACTICE_GAMES.md](./PRACTICE_GAMES.md).
+
+**Next:** HSK content upload sprint and game data enrichment.
 
 ---
 

@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
+import { GamePracticeLinks } from "@/components/games/game-practice-links";
 import { ReviewContinueCard } from "@/components/review-continue-card";
 import { EmptyState } from "@/components/empty-state";
 import { LocalProgressNote } from "@/components/local-progress-note";
@@ -189,6 +190,17 @@ export function ReviewDashboard({ lessons, lessonIds }: Props) {
         </section>
 
         <ReviewContinueCard lessonIds={lessonIds} />
+
+        <section className="rounded-2xl bg-purple-50 p-5 ring-1 ring-purple-200">
+          <h2 className="font-semibold text-purple-900">Үг давтах тоглоомууд</h2>
+          <p className="mt-2 text-sm text-purple-800">
+            Сурсан үгээ тоглоомоор бататга.
+          </p>
+          <GamePracticeLinks
+            lessonId={lastActiveLessonId ?? lessonIds[0] ?? "1"}
+            include={["match", "translate", "missing-word"]}
+          />
+        </section>
 
         <section className="rounded-2xl bg-emerald-50/70 p-5 ring-1 ring-emerald-200">
           <h2 className="font-semibold text-emerald-900">Daily review & reports</h2>

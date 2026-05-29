@@ -30,7 +30,9 @@ Admin routes (`/admin/*`) **unchanged** — standard admin layout, no phone shel
 | `/home` | App home — greeting, continue card, course chips, lesson timeline |
 | `/study` | Study/review center — lesson groups, vocabulary link |
 | `/kanji` | Character grid from existing vocabulary |
-| `/games` | Practice hub — stats + game placeholders → quiz/review |
+| `/games` | Practice hub — stats + 5 mini-games |
+| `/games/match`, `/games/translate`, `/games/missing-word`, `/games/arrange`, `/games/stroke` | Lesson vocabulary games (`?lessonId=`) |
+| `/kanji/[vocabId]` | Hanzi detail + practice CTAs |
 | `/profile` | Avatar, stats grid, menu list, logout |
 | `/lessons/*` | Lesson detail, watch, vocab, quiz in app shell |
 | `/review` | Wrapped in app shell (Давтах tab) |
@@ -47,7 +49,7 @@ Admin routes (`/admin/*`) **unchanged** — standard admin layout, no phone shel
 | Home | Нүүр | `/home` | `/`, `/home` |
 | Study | Давтах | `/study` | `/study`, `/review`, `/courses`, `/lessons/*` |
 | Kanji | Ханз | `/kanji` | `/kanji` |
-| Games | Тоглоом | `/games` | `/games`, `/lessons/*/quiz` |
+| Games | Тоглоом | `/games` | `/games`, `/games/*`, `/lessons/*/quiz` |
 | Profile | Профайл | `/profile` | `/profile`, `/dashboard`, `/login`, `/signup` |
 
 Components: `components/mobile/mobile-app-shell.tsx`, `mobile-bottom-nav.tsx`
@@ -69,7 +71,7 @@ Components: `components/mobile/mobile-app-shell.tsx`, `mobile-bottom-nav.tsx`
 
 | ID | Limitation |
 |----|------------|
-| L1 | Full game engine not built — games link to quiz/review/kanji |
+| L1 | Stroke game is demo-only; no real stroke engine yet |
 | L2 | HSK1/HSK4 chips on home are placeholders (HSK5 only live) |
 | L3 | `/dashboard` still uses legacy layout (linked from profile menu) |
 | L4 | Marketing/B2B pages use original website shell |

@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
+import { GamePracticeLinks } from "@/components/games/game-practice-links";
 import { EmptyState } from "@/components/empty-state";
 import { LocalProgressNote } from "@/components/local-progress-note";
 import { AdminPreviewBanner } from "@/components/admin-preview-banner";
@@ -175,6 +176,14 @@ export function LessonVocabularyClient({
         <div className="mt-2">
           <LocalProgressNote />
         </div>
+        <div className="mt-4 rounded-2xl bg-purple-50 p-4 ring-1 ring-purple-200">
+          <p className="text-sm font-semibold text-purple-900">Тоглоомоор давтах</p>
+          <GamePracticeLinks
+            lessonId={lesson.id}
+            compact
+            include={["match", "translate"]}
+          />
+        </div>
       </section>
 
       <SectionCard>
@@ -297,6 +306,26 @@ export function LessonVocabularyClient({
                     ? LEARNER_LESSON.addedToReview
                     : LEARNER_LESSON.markLearned}
                 </button>
+                <div className="mt-3 flex flex-wrap gap-2">
+                  <Link
+                    href={`/games/translate?lessonId=${lesson.id}`}
+                    className="min-h-[36px] rounded-full bg-blue-100 px-3 py-1.5 text-xs font-semibold text-blue-800"
+                  >
+                    Орчуулах тоглох
+                  </Link>
+                  <Link
+                    href={`/games/match?lessonId=${lesson.id}`}
+                    className="min-h-[36px] rounded-full bg-violet-100 px-3 py-1.5 text-xs font-semibold text-violet-800"
+                  >
+                    Холбох тоглох
+                  </Link>
+                  <Link
+                    href={`/kanji/${encodeURIComponent(word.id || word.chinese)}?lessonId=${lesson.id}`}
+                    className="min-h-[36px] rounded-full bg-slate-100 px-3 py-1.5 text-xs font-semibold text-slate-700"
+                  >
+                    Ханз дэлгэрэнгүй
+                  </Link>
+                </div>
               </article>
             );
           })

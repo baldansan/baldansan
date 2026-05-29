@@ -9,5 +9,12 @@ export const metadata = {
 
 export default async function GamesPage() {
   const lessons = await getPublicLessonsByCourseId("hsk5");
-  return <GamesAppView lessonIds={lessons.map((l) => l.id)} />;
+  return (
+    <GamesAppView
+      lessonIds={lessons.map((l) => l.id)}
+      lessonTitles={Object.fromEntries(
+        lessons.map((l) => [l.id, l.title])
+      )}
+    />
+  );
 }

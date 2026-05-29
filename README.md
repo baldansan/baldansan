@@ -10,7 +10,7 @@ A Mongolian–Chinese language learning web app. Users learn Chinese through sho
 
 **In scope:** Home, courses, HSK5 lesson flow (watch → vocabulary → quiz), review, dashboard, profile, login/signup, progress save, admin CMS for content fixes.
 
-**Mobile app-like learner UI** — centered phone shell (430px), bottom tab nav, routes `/home`, `/study`, `/kanji`, `/games`, `/profile`. See [MOBILE_APP_REDESIGN_REPORT.md](./MOBILE_APP_REDESIGN_REPORT.md) and [MOBILE_UX_POLISH_REPORT.md](./MOBILE_UX_POLISH_REPORT.md).
+**Mobile app-like learner UI** — centered phone shell (430px), bottom tab nav, routes `/home`, `/study`, `/kanji`, `/games`, `/profile`. **v1.0 practice games** (match, translate, missing word, arrange, stroke demo) use lesson vocabulary with localStorage scores. See [PRACTICE_GAMES.md](./PRACTICE_GAMES.md), [MOBILE_APP_REDESIGN_REPORT.md](./MOBILE_APP_REDESIGN_REPORT.md), [MOBILE_UX_POLISH_REPORT.md](./MOBILE_UX_POLISH_REPORT.md).
 
 **Out of scope for v1.0:** Payment, email campaigns, full B2B SaaS, native app. B2B/classroom routes are **foundation only** — they must not block learner launch.
 
@@ -51,7 +51,14 @@ See [V1_LAUNCH_STABILIZATION.md](./V1_LAUNCH_STABILIZATION.md), [V1_LAUNCH_BLOCK
 | `/lessons/[lessonId]/watch` | Watch |
 | `/lessons/[lessonId]/vocabulary` | Vocabulary |
 | `/lessons/[lessonId]/quiz` | Quiz |
-| `/offline` | Offline fallback page |
+| `/games` | Practice games hub (local stats) |
+| `/games/match` | Match game — Mongolian ↔ Chinese |
+| `/games/translate` | Translate MCQ — Chinese → Mongolian |
+| `/games/missing-word` | Cloze — fill missing word in sentence |
+| `/games/arrange` | Arrange characters into sentence |
+| `/games/stroke` | Stroke/component demo placeholder |
+| `/kanji` | Character grid |
+| `/kanji/[vocabId]` | Hanzi detail + practice links |
 | `/dashboard` | Learner dashboard |
 | `/onboarding` | New learner guide |
 | `/help` | FAQ |

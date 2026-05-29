@@ -5,6 +5,7 @@ import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
 import { LessonDetailMediaSection } from "@/components/lesson-media-display";
 import { LessonDetailOverview } from "@/components/lesson-detail-overview";
 import { LessonProgressCard } from "@/components/lesson-progress-card";
+import { GamePracticeLinks } from "@/components/games/game-practice-links";
 import { TeacherAssignmentCta } from "@/components/teacher/teacher-assignment-cta";
 import { LessonUnavailable } from "@/components/lesson-unavailable";
 import { getAllLessonIdsSync, coursePath } from "@/lib/content";
@@ -158,6 +159,17 @@ export default async function LessonDetailPage({
               Quiz эхлэх
             </Link>
           </div>
+        </section>
+
+        <section className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-purple-200 sm:p-6">
+          <h2 className="text-lg font-semibold text-slate-900">Тоглоомоор давтах</h2>
+          <p className="mt-2 text-sm text-slate-600">
+            Энэ хичээлийн үгээр холбох, орчуулах, дараалал тоглоом тогло.
+          </p>
+          <GamePracticeLinks
+            lessonId={lesson.id}
+            include={["match", "translate", "arrange"]}
+          />
         </section>
 
         <LessonProgressCard lessonId={lesson.id} />

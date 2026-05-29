@@ -517,9 +517,10 @@ Phased roadmap from MVP demo to production product.
 - Phone shell (430px), bottom nav (5 tabs), app routes `/home` `/study` `/kanji` `/games`
 - Profile menu redesign; lesson/login/signup in app shell
 - Games hub placeholder → quiz/review links
+- **Practice games (v1.0):** match, translate, missing word, arrange, stroke demo — [PRACTICE_GAMES.md](./PRACTICE_GAMES.md)
 - No schema/RLS changes
 
-**Next:** HSK4/HSK5 content upload sprint.
+**Next:** HSK content upload sprint and game data enrichment.
 
 ---
 

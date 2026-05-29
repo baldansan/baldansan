@@ -5,86 +5,88 @@ import { useEffect, useState } from "react";
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
 import { MobileCard } from "@/components/mobile/mobile-card";
 import { MobilePageHeader } from "@/components/mobile/mobile-page-header";
-import { getAllQuizResultsSmart } from "@/lib/progress";
+import { getGameStats } from "@/lib/games/game-progress";
 import { resolveContinueLearning } from "@/lib/learner-progress";
 
 type Props = {
   lessonIds: string[];
+  lessonTitles: Record<string, string>;
 };
 
 const GAMES = [
   {
     id: "match",
+    slug: "match",
     title: "Холбох",
     desc: "Хятад үг ↔ Орчуулга холбох тоглоом",
     icon: "🔗",
     color: "from-violet-400 to-violet-500",
-    href: "/review",
     badge: "Шинэ",
   },
   {
     id: "translate",
+    slug: "translate",
     title: "Орчуулах",
     desc: "Зөв орчуулгыг сонгож сурах",
     icon: "🌐",
     color: "from-blue-400 to-blue-500",
-    href: "/lessons/1/quiz",
     badge: "Шинэ",
   },
   {
-    id: "cloze",
+    id: "missing-word",
+    slug: "missing-word",
     title: "Дутуу үг",
-    desc: "Дутуу үгийг бөглөх өгүүлбэр",
+    desc: "Дутуу үгийг бөглөж өгүүлбэр гүйцээ",
     icon: "✏️",
     color: "from-amber-400 to-amber-500",
-    href: "/lessons/1/quiz",
     badge: "Шинэ",
   },
   {
-    id: "order",
+    id: "arrange",
+    slug: "arrange",
     title: "Дараалал",
     desc: "Ханзнуудыг зөв дараалалд оруулах",
     icon: "🔢",
     color: "from-emerald-400 to-emerald-500",
-    href: "/kanji",
     badge: "Шинэ",
   },
   {
     id: "stroke",
+    slug: "stroke",
     title: "Дутуу зураас",
-    desc: "Ханзны дутуу зураасыг сонгох",
+    desc: "Ханзны дутуу зураасыг сонго",
     icon: "🖊️",
     color: "from-rose-400 to-rose-500",
-    href: "/kanji",
     badge: "Шинэ",
   },
 ] as const;
 
-export function GamesAppView({ lessonIds }: Props) {
+export function GamesAppView({ lessonIds, lessonTitles }: Props) {
   const [played, setPlayed] = useState(0);
   const [bestScore, setBestScore] = useState(0);
   const [avgAccuracy, setAvgAccuracy] = useState(0);
-  const [marathonHref, setMarathonHref] = useState("/lessons/1/quiz");
+  const [currentLessonId, setCurrentLessonId] = useState("1");
+  const [lessonTitle, setLessonTitle] = useState<string | null>(null);
 
   useEffect(() => {
     async function load() {
-      const results = await getAllQuizResultsSmart();
-      setPlayed(results.length);
-      if (results.length > 0) {
-        const bests = results.map((r) => r.result.bestPercentage);
-        setBestScore(Math.max(...bests));
-        const avg = Math.round(
-          bests.reduce((s, p) => s + p, 0) / bests.length
-        );
-        setAvgAccuracy(avg);
-      }
+      const stats = getGameStats();
+      setPlayed(stats.played);
+      setBestScore(stats.bestScore);
+      setAvgAccuracy(stats.avgAccuracy);
+
       const cont = await resolveContinueLearning(lessonIds);
-      if (cont) {
-        setMarathonHref(cont.href.replace(/\/$/, "") + "/quiz");
-      }
+      const lessonId = cont?.lessonId ?? lessonIds[0] ?? "1";
+      setCurrentLessonId(lessonId);
+      setLessonTitle(lessonTitles[lessonId] ?? null);
     }
     void load();
-  }, [lessonIds]);
+    const refresh = () => void load();
+    window.addEventListener("focus", refresh);
+    return () => window.removeEventListener("focus", refresh);
+  }, [lessonIds, lessonTitles]);
+
+  const marathonHref = `/games/match?lessonId=${currentLessonId}`;
 
   return (
     <MobileAppShell activeTab="games">
@@ -93,14 +95,16 @@ export function GamesAppView({ lessonIds }: Props) {
       <div className="mb-4 grid grid-cols-3 gap-2">
         {[
           { label: "Тоглосон", value: played },
-          { label: "Дээд оноо", value: `${bestScore}%` },
-          { label: "Дундаж", value: `${avgAccuracy}%` },
+          { label: "Дээд оноо", value: bestScore },
+          { label: "Дундаж нарийвчлал", value: `${avgAccuracy}%` },
         ].map((stat) => (
           <MobileCard key={stat.label} padding="sm" className="text-center !p-3">
             <p className="text-lg font-bold text-[var(--app-text)]">
               {stat.value}
             </p>
-            <p className="text-[10px] text-[var(--app-muted)]">{stat.label}</p>
+            <p className="text-[10px] leading-tight text-[var(--app-muted)]">
+              {stat.label}
+            </p>
           </MobileCard>
         ))}
       </div>
@@ -109,14 +113,18 @@ export function GamesAppView({ lessonIds }: Props) {
         <p className="text-xs font-semibold uppercase tracking-wide text-purple-100">
           Тоглоомын чиглэл
         </p>
-        <p className="mt-1 text-sm text-purple-50">
-          Quiz марафон эсвэл үг давталтаар бататга.
-        </p>
+        {lessonTitle ? (
+          <p className="mt-1 text-sm font-semibold text-white">{lessonTitle}</p>
+        ) : (
+          <p className="mt-1 text-sm text-purple-50">
+            Одоогийн хичээлийн үгээр дасгал хий.
+          </p>
+        )}
         <Link
           href={marathonHref}
           className="mt-3 inline-flex min-h-[44px] items-center rounded-full bg-white px-5 py-2.5 text-sm font-semibold text-purple-700"
         >
-          Quiz марафон эхлэх
+          Холимог марафон тоглох
         </Link>
       </MobileCard>
 
@@ -125,7 +133,11 @@ export function GamesAppView({ lessonIds }: Props) {
       </h2>
       <div className="grid grid-cols-2 gap-3">
         {GAMES.map((game) => (
-          <Link key={game.id} href={game.href} className="block">
+          <Link
+            key={game.id}
+            href={`/games/${game.slug}?lessonId=${currentLessonId}`}
+            className="block"
+          >
             <MobileCard padding="sm" className="relative h-full !p-3">
               <span className="absolute right-2 top-2 rounded-full bg-purple-100 px-1.5 py-0.5 text-[9px] font-bold text-purple-700">
                 {game.badge}
@@ -145,10 +157,6 @@ export function GamesAppView({ lessonIds }: Props) {
           </Link>
         ))}
       </div>
-
-      <p className="mt-4 text-center text-xs text-[var(--app-muted)]">
-        Бүрэн тоглоомууд удахгүй. Одоогоор quiz болон давталт ашиглана.
-      </p>
     </MobileAppShell>
   );
 }

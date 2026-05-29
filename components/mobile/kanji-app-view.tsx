@@ -136,9 +136,10 @@ export function KanjiAppView({ entries, lessonVocab }: Props) {
                     learnedKeys.has(entry.chinese) ||
                     learnedKeys.has(entry.key);
                   return (
-                    <div
+                    <Link
                       key={entry.key}
-                      className={`rounded-[16px] border p-2.5 text-center ${
+                      href={`/kanji/${encodeURIComponent(entry.key)}?lessonId=${entry.lessonIds[0] ?? "1"}`}
+                      className={`block rounded-[16px] border p-2.5 text-center transition-colors active:bg-slate-50 ${
                         isLearned
                           ? "border-emerald-200 bg-emerald-50"
                           : "border-[var(--app-border)] bg-white"
@@ -153,7 +154,7 @@ export function KanjiAppView({ entries, lessonVocab }: Props) {
                       <p className="mt-0.5 line-clamp-2 text-[10px] leading-tight text-[var(--app-muted)]">
                         {entry.mongolian}
                       </p>
-                    </div>
+                    </Link>
                   );
                 })}
               </div>
