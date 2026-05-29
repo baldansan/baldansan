@@ -108,7 +108,10 @@ See [CONTENT_WORKFLOW.md](./CONTENT_WORKFLOW.md):
 | 17 | Admin analytics / content metrics dashboard | ✅ Completed |
 | 18 | Per-lesson learning analytics | ✅ Completed |
 | 19 | Question-level quiz analytics + vocabulary engagement insights | ✅ Completed |
-| 20 | AI-assisted content improvement prompt workflow | ✅ Completed |
+| 20 | AI-assisted content improvement prompts | ✅ Completed |
+| 21 | Content approval / release readiness workflow | ✅ Completed |
+
+Step 21: [RELEASE_WORKFLOW.md](./RELEASE_WORKFLOW.md), [supabase/migrations/005_lesson_release_workflow.sql](./supabase/migrations/005_lesson_release_workflow.sql), release checklist + approval on edit page.
 
 Step 20: [AI_ASSISTED_CONTENT_WORKFLOW.md](./AI_ASSISTED_CONTENT_WORKFLOW.md), `/admin/prompts`, improvement prompt cards on edit/analytics pages. No OpenAI API — copy-ready prompts only.
 

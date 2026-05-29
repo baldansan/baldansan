@@ -13,6 +13,17 @@ export type LessonPublishStatus = "draft" | "available" | "archived";
 /** Admin media workflow flag on lessons table. */
 export type LessonMediaStatus = "missing" | "pending" | "ready";
 
+/** Internal release workflow (lessons.release_status). */
+export type LessonReleaseStatus =
+  | "draft"
+  | "in_review"
+  | "approved"
+  | "published"
+  | "archived";
+
+/** Release QA gate (lessons.qa_status — not content QA report). */
+export type LessonWorkflowQaStatus = "needs_review" | "passed" | "failed";
+
 export type LessonContent = {
   id: string;
   courseId: string;
@@ -38,6 +49,14 @@ export type LessonContent = {
   sourceNote?: string;
   /** missing | pending | ready */
   mediaStatus?: LessonMediaStatus | string;
+  /** Internal release workflow (Supabase release_status). */
+  releaseStatus?: LessonReleaseStatus;
+  /** Release QA gate (Supabase qa_status). */
+  qaStatus?: LessonWorkflowQaStatus;
+  approvedAt?: string;
+  approvedBy?: string;
+  releaseNotes?: string;
+  lastReviewedAt?: string;
   subtitlePreview: SubtitleExample[];
   timedSubtitles: TimedSubtitle[];
   vocabulary: VocabularyWord[];

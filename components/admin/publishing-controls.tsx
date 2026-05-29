@@ -1,14 +1,19 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { useCallback, useState } from "react";
-import { LessonStatusBadge } from "@/components/admin/lesson-status-badge";
+import { useCallback, useMemo, useState } from "react";
+import { calculateReleaseReadiness } from "@/lib/admin/release-readiness";
 import { getAdminPublishStatus } from "@/lib/admin/lesson-status";
+import { LessonStatusBadge } from "@/components/admin/lesson-status-badge";
 import {
   getLessonCompleteness,
   updateLessonStatus,
   type LessonCompleteness,
 } from "@/lib/supabase/admin-content";
+import {
+  syncReleaseOnPublish,
+  syncReleaseOnUnpublish,
+} from "@/lib/supabase/admin-release";
 import type { LessonContent } from "@/types/lesson-content";
 
 type Props = {
@@ -24,6 +29,11 @@ export function PublishingControls({ lesson, initialCompleteness }: Props) {
   const [busy, setBusy] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
 
+  const readiness = useMemo(
+    () => calculateReleaseReadiness(lesson),
+    [lesson]
+  );
+
   const refreshCompleteness = useCallback(async () => {
     const result = await getLessonCompleteness(lesson.id);
     if (result.data) {
@@ -38,16 +48,30 @@ export function PublishingControls({ lesson, initialCompleteness }: Props) {
     setBusy(label);
     setError(null);
     const result = await updateLessonStatus(lesson.id, status);
-    setBusy(null);
     if (result.error) {
+      setBusy(null);
       setError(result.error);
       return;
     }
+
+    if (status === "available") {
+      const sync = await syncReleaseOnPublish(lesson.id);
+      if (sync.error) {
+        console.warn("[publish] release_status sync failed", sync.error);
+      }
+    } else if (status === "draft") {
+      const sync = await syncReleaseOnUnpublish(lesson.id);
+      if (sync.error) {
+        console.warn("[publish] release unpublish sync failed", sync.error);
+      }
+    }
+
+    setBusy(null);
     await refreshCompleteness();
     router.refresh();
   }
 
-  const canPublish = completeness.readyToPublish;
+  const canPublish = readiness.readyToPublish;
 
   return (
     <section className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:p-6">
@@ -63,8 +87,8 @@ export function PublishingControls({ lesson, initialCompleteness }: Props) {
 
       {!canPublish ? (
         <p className="mt-4 rounded-xl bg-amber-50 px-4 py-3 text-sm text-amber-900 ring-1 ring-amber-200">
-          Publish хийхийн өмнө metadata, subtitles, ≥5 vocabulary, ≥3 quiz,
-          quiz answer match, Mongolian translations бүрэн байх шаардлагатай.
+          Release checklist бүрэн болоогүй байна. Metadata, subtitles, ≥5
+          vocabulary, ≥3 quiz, QA passed, approval шаардлагатай.
         </p>
       ) : null}
 
@@ -122,7 +146,7 @@ export function PublishingControls({ lesson, initialCompleteness }: Props) {
         </li>
         <li
           className={`rounded-full px-2.5 py-1 ring-1 ${
-            completeness.vocabularyCount > 0
+            completeness.vocabularyCount >= 5
               ? "bg-emerald-50 text-emerald-800 ring-emerald-200"
               : "bg-slate-50 ring-slate-200"
           }`}
@@ -131,12 +155,21 @@ export function PublishingControls({ lesson, initialCompleteness }: Props) {
         </li>
         <li
           className={`rounded-full px-2.5 py-1 ring-1 ${
-            completeness.quizCount > 0
+            completeness.quizCount >= 3
               ? "bg-emerald-50 text-emerald-800 ring-emerald-200"
               : "bg-slate-50 ring-slate-200"
           }`}
         >
           Quiz: {completeness.quizCount}
+        </li>
+        <li
+          className={`rounded-full px-2.5 py-1 ring-1 ${
+            readiness.approvalReady
+              ? "bg-emerald-50 text-emerald-800 ring-emerald-200"
+              : "bg-amber-50 text-amber-800 ring-amber-200"
+          }`}
+        >
+          Approval {readiness.approvalReady ? "✓" : "pending"}
         </li>
       </ul>
     </section>

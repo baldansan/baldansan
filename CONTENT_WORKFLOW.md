@@ -52,7 +52,9 @@ On **`/admin/lessons/{id}/edit`**:
 | Move to draft | `draft` | Hidden; admin preview only |
 | Archive | `archived` | Hidden; admin preview only |
 
-**Publish** requires metadata + at least one subtitle, vocabulary word, and quiz question. Draft and Archive do not.
+**Publish** requires release checklist + approval (Step 21): metadata, ≥1 subtitle, ≥5 vocabulary, ≥3 quiz, QA passed, and `release_status = approved` or `qa_status = passed`. See [RELEASE_WORKFLOW.md](./RELEASE_WORKFLOW.md).
+
+Draft and Archive do not require approval.
 
 Requires admin policies ([002_admin_content_policies.sql](./supabase/policies/002_admin_content_policies.sql)).
 
@@ -64,7 +66,9 @@ On **`/admin/lessons/{id}/edit`**:
 2. **Lesson content prompt generator** — copy-ready ChatGPT prompt from lesson metadata.
 3. **Bulk import** — validate (errors block, warnings allow) → import.
 
-Workflow: **Create draft** → **Generate prompt** → **ChatGPT JSON** → **Validate** → **Import** → **QA** → **Preview** (`?preview=admin`) → **Publish**.
+Workflow: **Create draft** → **Generate prompt** → **ChatGPT JSON** → **Validate** → **Import** → **QA** → **Media** → **Backup** → **Preview** → **Approve** → **Publish**.
+
+See [RELEASE_WORKFLOW.md](./RELEASE_WORKFLOW.md) for approval gates.
 
 See [LESSON_PROMPT_TEMPLATE.md](./LESSON_PROMPT_TEMPLATE.md) and [LESSON_IMPORT_FORMAT.md](./LESSON_IMPORT_FORMAT.md).
 

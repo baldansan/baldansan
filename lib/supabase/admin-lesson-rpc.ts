@@ -1,4 +1,5 @@
 import type { SupabaseClient } from "@supabase/supabase-js";
+import { mapLessonReleaseFields } from "@/lib/supabase/lesson-release-map";
 import { canonicalLessonId } from "@/lib/lesson-id";
 import type { LessonContent, LessonPublishStatus } from "@/types/lesson-content";
 import type { QuizQuestion, QuizQuestionType } from "@/types/lesson";
@@ -28,6 +29,12 @@ type RpcLessonRow = {
   audio_url?: string | null;
   source_note?: string | null;
   media_status?: string | null;
+  release_status?: string | null;
+  qa_status?: string | null;
+  approved_at?: string | null;
+  approved_by?: string | null;
+  release_notes?: string | null;
+  last_reviewed_at?: string | null;
 };
 
 type RpcSubtitleRow = {
@@ -118,6 +125,7 @@ function mapRpcBundleToLessonContent(
     audioUrl: lesson.audio_url?.trim() || undefined,
     sourceNote: lesson.source_note?.trim() || undefined,
     mediaStatus: lesson.media_status?.trim() || "missing",
+    ...mapLessonReleaseFields(lesson),
     subtitlePreview: timedSubtitles.slice(0, 2).map(({ chinese, pinyin, mongolian }) => ({
       chinese,
       pinyin,

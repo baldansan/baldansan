@@ -269,7 +269,14 @@ Phased roadmap from MVP demo to production product.
 - Integration on lesson edit, analytics, question/vocabulary insights, lesson builder
 - [AI_ASSISTED_CONTENT_WORKFLOW.md](./AI_ASSISTED_CONTENT_WORKFLOW.md)
 
-**Next:** Phase 5 Step 21 — Admin content approval checklist / release readiness workflow. Or Phase 5 Final Audit.
+**Phase 5 Step 21 — Completed:** Content approval and release readiness workflow.
+
+- [supabase/migrations/005_lesson_release_workflow.sql](./supabase/migrations/005_lesson_release_workflow.sql)
+- [lib/admin/release-readiness.ts](./lib/admin/release-readiness.ts), [lib/supabase/admin-release.ts](./lib/supabase/admin-release.ts)
+- Release checklist, approval controls, publish gate on edit page
+- [RELEASE_WORKFLOW.md](./RELEASE_WORKFLOW.md)
+
+**Next:** Phase 5 Step 22 — Admin notification/reminder system. Or Phase 5 Final Audit.
 - [components/admin/bulk-import-editor.tsx](./components/admin/bulk-import-editor.tsx) on lesson edit page
 - [LESSON_IMPORT_FORMAT.md](./LESSON_IMPORT_FORMAT.md)
 
@@ -302,8 +309,9 @@ Phased roadmap from MVP demo to production product.
 | 18 | Per-lesson learning analytics | ✅ Completed |
 | 19 | Question-level quiz analytics + vocabulary engagement | ✅ Completed |
 | 20 | AI-assisted content improvement prompts | ✅ Completed |
+| 21 | Content approval / release readiness | ✅ Completed |
 
-**Next (Phase 5):** Step 21 — Admin content approval checklist / release readiness workflow. Or Phase 5 Final Audit.
+**Next (Phase 5):** Step 22 — Admin notification/reminder system. Or Phase 5 Final Audit.
 
 **Exit criteria:** New lesson published through admin UI without deploying code.
 

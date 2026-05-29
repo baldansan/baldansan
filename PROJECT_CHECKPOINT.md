@@ -2,7 +2,23 @@
 
 **Project:** Buunduu Surtsgaay (Бөөндөө Сурцгаая)  
 **Checkpoint date:** May 2026  
-**Status:** Phase 4 **completed**; Phase 5 Step 20 AI-assisted improvement prompts **completed**
+**Status:** Phase 4 **completed**; Phase 5 Step 21 release readiness workflow **completed**
+
+---
+
+## Phase 5 Step 21 — Content approval & release readiness — **Completed**
+
+Phase 5 Step 21: Content approval and release readiness workflow added.
+
+| Area | Deliverable |
+|------|-------------|
+| Migration | `005_lesson_release_workflow.sql` |
+| Helpers | `release-readiness.ts`, `admin-release.ts` |
+| UI | Release checklist, approval controls, publish gate |
+| Integration | `/admin/lessons`, dashboard metrics, lesson builder |
+| Docs | [RELEASE_WORKFLOW.md](./RELEASE_WORKFLOW.md) |
+
+**Next:** Phase 5 Step 22 — Admin notification/reminder system. Or Phase 5 Final Audit.
 
 ---
 

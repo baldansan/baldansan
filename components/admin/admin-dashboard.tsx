@@ -83,6 +83,43 @@ export function AdminDashboard({ metrics }: Props) {
       </AdminDashboardSection>
 
       <AdminDashboardSection
+        title="Release workflow"
+        description="Internal approval and publish readiness (requires migration 005_lesson_release_workflow)."
+      >
+        <div className="grid grid-cols-2 gap-3 sm:grid-cols-5">
+          <AdminMetricCard
+            label="In review"
+            value={metrics.releaseWorkflow.inReviewCount}
+          />
+          <AdminMetricCard
+            label="Approved"
+            value={metrics.releaseWorkflow.approvedCount}
+            accent="emerald"
+          />
+          <AdminMetricCard
+            label="Release published"
+            value={metrics.releaseWorkflow.publishedReleaseCount}
+          />
+          <AdminMetricCard
+            label="QA failed"
+            value={metrics.releaseWorkflow.qaFailedCount}
+            accent="amber"
+          />
+          <AdminMetricCard
+            label="Ready to publish"
+            value={metrics.releaseWorkflow.readyToPublishCount}
+            accent="emerald"
+          />
+        </div>
+        {metrics.releaseWorkflow.migrationPending ? (
+          <p className="mt-3 text-xs text-amber-800">
+            Run migration 005_lesson_release_workflow for release_status columns — see
+            supabase/workflows/README.md
+          </p>
+        ) : null}
+      </AdminDashboardSection>
+
+      <AdminDashboardSection
         title="Content health"
         description="Subtitle, vocabulary, and quiz totals plus publish readiness."
       >

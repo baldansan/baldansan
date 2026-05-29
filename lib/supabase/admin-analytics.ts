@@ -19,6 +19,8 @@ import {
   isMediaReady,
   normalizeMediaStatus,
 } from "@/lib/lesson-media";
+import { calculateReleaseReadiness } from "@/lib/admin/release-readiness";
+import { LESSON_RELEASE_COLUMN_SELECT } from "@/lib/supabase/lesson-release-map";
 import { hasSupabaseConfig } from "@/lib/supabase/client";
 import { createServerSupabaseClient } from "@/lib/supabase/server";
 
@@ -90,10 +92,20 @@ export type AdminDashboardMetrics = {
   contentQa: ContentQaMetrics;
   media: MediaReadinessMetrics;
   learnerProgress: LearnerProgressMetrics;
+  releaseWorkflow: ReleaseWorkflowMetrics;
   needsAttention: AttentionLesson[];
   recentQuizAttempts: RecentQuizAttemptRow[];
   recentLessonProgress: RecentLessonProgressRow[];
   warnings: string[];
+};
+
+export type ReleaseWorkflowMetrics = {
+  inReviewCount: number;
+  approvedCount: number;
+  publishedReleaseCount: number;
+  qaFailedCount: number;
+  readyToPublishCount: number;
+  migrationPending: boolean;
 };
 
 const DEFAULT_COURSE_ID = "hsk5";
@@ -521,6 +533,92 @@ export async function getRecentLessonProgress(
   }
 }
 
+export async function getReleaseWorkflowMetrics(): Promise<{
+  metrics: ReleaseWorkflowMetrics;
+  warnings: string[];
+}> {
+  const empty: ReleaseWorkflowMetrics = {
+    inReviewCount: 0,
+    approvedCount: 0,
+    publishedReleaseCount: 0,
+    qaFailedCount: 0,
+    readyToPublishCount: 0,
+    migrationPending: false,
+  };
+  const warnings: string[] = [];
+  const client = await getServerClient();
+
+  const reports = await getHsk5LessonsWithQa();
+  let readyToPublishCount = 0;
+  for (const report of reports) {
+    if (calculateReleaseReadiness(report.lesson).readyToPublish) {
+      readyToPublishCount += 1;
+    }
+  }
+
+  if (!client) {
+    return {
+      metrics: { ...empty, readyToPublishCount },
+      warnings: ["Supabase not configured — release columns unavailable."],
+    };
+  }
+
+  try {
+    const { data, error } = await client
+      .from("lessons")
+      .select(`id, ${LESSON_RELEASE_COLUMN_SELECT}`);
+
+    if (error) {
+      const missingCol =
+        error.message.includes("release_status") ||
+        error.message.includes("qa_status");
+      return {
+        metrics: {
+          ...empty,
+          readyToPublishCount,
+          migrationPending: missingCol,
+        },
+        warnings: missingCol
+          ? [
+              "Run supabase/migrations/005_lesson_release_workflow.sql for release metrics.",
+            ]
+          : [error.message],
+      };
+    }
+
+    let inReviewCount = 0;
+    let approvedCount = 0;
+    let publishedReleaseCount = 0;
+    let qaFailedCount = 0;
+
+    for (const row of data ?? []) {
+      const rs = String(row.release_status ?? "draft");
+      const qs = String(row.qa_status ?? "needs_review");
+      if (rs === "in_review") inReviewCount += 1;
+      if (rs === "approved") approvedCount += 1;
+      if (rs === "published") publishedReleaseCount += 1;
+      if (qs === "failed") qaFailedCount += 1;
+    }
+
+    return {
+      metrics: {
+        inReviewCount,
+        approvedCount,
+        publishedReleaseCount,
+        qaFailedCount,
+        readyToPublishCount,
+        migrationPending: false,
+      },
+      warnings,
+    };
+  } catch {
+    return {
+      metrics: { ...empty, readyToPublishCount },
+      warnings: ["Failed to load release workflow metrics."],
+    };
+  }
+}
+
 export async function getAdminDashboardMetrics(): Promise<AdminDashboardMetrics> {
   const warnings: string[] = [];
 
@@ -533,6 +631,7 @@ export async function getAdminDashboardMetrics(): Promise<AdminDashboardMetrics>
     media,
     contentTotalsResult,
     learnerResult,
+    releaseWorkflowResult,
     recentQuiz,
     recentProgress,
   ] = await Promise.all([
@@ -540,6 +639,7 @@ export async function getAdminDashboardMetrics(): Promise<AdminDashboardMetrics>
     getMediaReadinessMetrics(),
     enrichContentTotalsFromDb(sumContentTotalsFromReports(reports)),
     getLearnerProgressMetrics(),
+    getReleaseWorkflowMetrics(),
     getRecentQuizAttempts(8),
     getRecentLessonProgress(8),
   ]);
@@ -547,6 +647,7 @@ export async function getAdminDashboardMetrics(): Promise<AdminDashboardMetrics>
   warnings.push(
     ...contentTotalsResult.warnings,
     ...learnerResult.warnings,
+    ...releaseWorkflowResult.warnings,
     ...recentQuiz.warnings,
     ...recentProgress.warnings
   );
@@ -557,6 +658,7 @@ export async function getAdminDashboardMetrics(): Promise<AdminDashboardMetrics>
     contentQa,
     media,
     learnerProgress: learnerResult.metrics,
+    releaseWorkflow: releaseWorkflowResult.metrics,
     needsAttention,
     recentQuizAttempts: recentQuiz.rows,
     recentLessonProgress: recentProgress.rows,

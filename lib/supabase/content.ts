@@ -5,6 +5,7 @@ import {
   normalizeLessonIdForQuery,
   normalizeLessonRouteId,
 } from "@/lib/lesson-id";
+import { mapLessonReleaseFields } from "@/lib/supabase/lesson-release-map";
 import { hasSupabaseConfig, supabase } from "@/lib/supabase/client";
 import type { SupabaseClient } from "@supabase/supabase-js";
 import type { Course } from "@/types/course";
@@ -25,7 +26,7 @@ const DEFAULT_QUIZ_TYPES = [
 const VIDEO_PLACEHOLDER = "Video lesson placeholder";
 
 const LESSON_ROW_SELECT =
-  "id, course_id, title, chinese_title, subtitle, description, duration, vocabulary_count, quiz_count, status, order_index, video_url, thumbnail_url, audio_url, source_note, media_status";
+  "id, course_id, title, chinese_title, subtitle, description, duration, vocabulary_count, quiz_count, status, order_index, video_url, thumbnail_url, audio_url, source_note, media_status, release_status, qa_status, approved_at, approved_by, release_notes, last_reviewed_at";
 
 type DbLesson = {
   id: string | number;
@@ -44,6 +45,12 @@ type DbLesson = {
   audio_url?: string | null;
   source_note?: string | null;
   media_status?: string | null;
+  release_status?: string | null;
+  qa_status?: string | null;
+  approved_at?: string | null;
+  approved_by?: string | null;
+  release_notes?: string | null;
+  last_reviewed_at?: string | null;
 };
 
 type DbCourse = {
@@ -159,6 +166,7 @@ function mapLessonRowToSummary(row: DbLesson): LessonContent {
     videoPlaceholder: VIDEO_PLACEHOLDER,
     watchTotalTime: durationToWatchTime(row.duration),
     ...mapLessonMediaFields(row),
+    ...mapLessonReleaseFields(row),
     subtitlePreview: [],
     timedSubtitles: [],
     vocabulary: [],
@@ -195,6 +203,7 @@ function mapFullLesson(
     videoPlaceholder: VIDEO_PLACEHOLDER,
     watchTotalTime: durationToWatchTime(row.duration),
     ...mapLessonMediaFields(row),
+    ...mapLessonReleaseFields(row),
     subtitlePreview,
     timedSubtitles,
     vocabulary: vocabulary.map((word) => ({

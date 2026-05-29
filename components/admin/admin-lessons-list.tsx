@@ -26,6 +26,16 @@ import {
   type LessonQaSummary,
   type QaFilter,
 } from "@/lib/admin/lesson-qa";
+import { calculateReleaseReadiness } from "@/lib/admin/release-readiness";
+import {
+  ReleaseStatusBadge,
+  WorkflowQaBadge,
+} from "@/components/admin/release-workflow-badges";
+import type { LessonReleaseStatus, LessonWorkflowQaStatus } from "@/types/lesson-content";
+
+type ReleaseFilter = "all" | LessonReleaseStatus;
+type WorkflowQaFilter = "all" | LessonWorkflowQaStatus;
+type ReadinessFilter = "all" | "ready" | "needs_review";
 
 type PageSummary = {
   totalLessons: number;
@@ -43,6 +53,11 @@ export function AdminLessonsList({ reports, pageSummary }: Props) {
   const [query, setQuery] = useState("");
   const [statusFilter, setStatusFilter] = useState<AdminStatusFilter>("all");
   const [qaFilter, setQaFilter] = useState<QaFilter>("all");
+  const [releaseFilter, setReleaseFilter] = useState<ReleaseFilter>("all");
+  const [workflowQaFilter, setWorkflowQaFilter] =
+    useState<WorkflowQaFilter>("all");
+  const [readinessFilter, setReadinessFilter] =
+    useState<ReadinessFilter>("all");
 
   const summary: LessonQaSummary = useMemo(
     () => summarizeLessonQa(reports),
@@ -55,6 +70,21 @@ export function AdminLessonsList({ reports, pageSummary }: Props) {
       const { lesson } = report;
       if (!matchesStatusFilter(lesson, statusFilter)) return false;
       if (qaFilter !== "all" && report.qaStatus !== qaFilter) return false;
+      const releaseStatus = lesson.releaseStatus ?? "draft";
+      const workflowQa = lesson.qaStatus ?? "needs_review";
+      if (releaseFilter !== "all" && releaseStatus !== releaseFilter) {
+        return false;
+      }
+      if (workflowQaFilter !== "all" && workflowQa !== workflowQaFilter) {
+        return false;
+      }
+      const readiness = calculateReleaseReadiness(lesson);
+      if (readinessFilter === "ready" && !readiness.readyToPublish) {
+        return false;
+      }
+      if (readinessFilter === "needs_review" && readiness.readyToPublish) {
+        return false;
+      }
       if (!q) return true;
       return (
         lesson.id.toLowerCase().includes(q) ||
@@ -64,7 +94,7 @@ export function AdminLessonsList({ reports, pageSummary }: Props) {
         lesson.description.toLowerCase().includes(q)
       );
     });
-  }, [reports, query, statusFilter, qaFilter]);
+  }, [reports, query, statusFilter, qaFilter, releaseFilter, workflowQaFilter, readinessFilter]);
 
   return (
     <div className="flex flex-col gap-6">
@@ -145,6 +175,46 @@ export function AdminLessonsList({ reports, pageSummary }: Props) {
           <option value="complete">Complete</option>
           <option value="needs_review">Needs review</option>
         </select>
+        <select
+          value={releaseFilter}
+          onChange={(e) =>
+            setReleaseFilter(e.target.value as ReleaseFilter)
+          }
+          className="rounded-xl border border-slate-200 px-3 py-2 text-sm outline-none focus:border-emerald-400"
+          aria-label="Release status filter"
+        >
+          <option value="all">Release: All</option>
+          <option value="draft">draft</option>
+          <option value="in_review">in_review</option>
+          <option value="approved">approved</option>
+          <option value="published">published</option>
+          <option value="archived">archived</option>
+        </select>
+        <select
+          value={workflowQaFilter}
+          onChange={(e) =>
+            setWorkflowQaFilter(e.target.value as WorkflowQaFilter)
+          }
+          className="rounded-xl border border-slate-200 px-3 py-2 text-sm outline-none focus:border-emerald-400"
+          aria-label="Release QA filter"
+        >
+          <option value="all">Release QA: All</option>
+          <option value="needs_review">needs_review</option>
+          <option value="passed">passed</option>
+          <option value="failed">failed</option>
+        </select>
+        <select
+          value={readinessFilter}
+          onChange={(e) =>
+            setReadinessFilter(e.target.value as ReadinessFilter)
+          }
+          className="rounded-xl border border-slate-200 px-3 py-2 text-sm outline-none focus:border-emerald-400"
+          aria-label="Readiness filter"
+        >
+          <option value="all">Readiness: All</option>
+          <option value="ready">Ready to publish</option>
+          <option value="needs_review">Needs review</option>
+        </select>
       </div>
 
       {filtered.length === 0 ? (
@@ -172,6 +242,8 @@ export function AdminLessonsList({ reports, pageSummary }: Props) {
                 <th className="px-3 py-3">ID</th>
                 <th className="px-3 py-3">Lesson</th>
                 <th className="px-3 py-3">Status</th>
+                <th className="hidden px-3 py-3 lg:table-cell">Release</th>
+                <th className="hidden px-3 py-3 lg:table-cell">Rel. QA</th>
                 <th className="px-3 py-3">Media</th>
                 <th className="px-3 py-3">QA</th>
                 <th className="hidden px-3 py-3 sm:table-cell">Ready</th>
@@ -185,6 +257,7 @@ export function AdminLessonsList({ reports, pageSummary }: Props) {
                 const { lesson } = report;
                 const publishStatus = getAdminPublishStatus(lesson);
                 const publishReady = isPublishReady(report);
+                const readiness = calculateReleaseReadiness(lesson);
                 return (
                   <tr key={lesson.id} className="align-top hover:bg-emerald-50/30">
                     <td className="px-3 py-3 font-mono text-xs">{lesson.id}</td>
@@ -195,6 +268,12 @@ export function AdminLessonsList({ reports, pageSummary }: Props) {
                     </td>
                     <td className="px-3 py-3">
                       <LessonStatusBadge status={publishStatus} />
+                    </td>
+                    <td className="hidden px-3 py-3 lg:table-cell">
+                      <ReleaseStatusBadge status={lesson.releaseStatus} />
+                    </td>
+                    <td className="hidden px-3 py-3 lg:table-cell">
+                      <WorkflowQaBadge status={lesson.qaStatus} />
                     </td>
                     <td className="px-3 py-3">
                       <MediaStatusBadge status={lesson.mediaStatus} />
@@ -232,12 +311,18 @@ export function AdminLessonsList({ reports, pageSummary }: Props) {
                       <LessonQaBadge status={report.qaStatus} />
                     </td>
                     <td className="hidden px-3 py-3 sm:table-cell">
-                      {publishReady ? (
+                      {readiness.readyToPublish ? (
                         <span className="inline-flex rounded-full bg-emerald-50 px-2.5 py-0.5 text-xs font-medium text-emerald-800 ring-1 ring-emerald-200">
                           Publish-ready
                         </span>
+                      ) : publishReady ? (
+                        <span className="inline-flex rounded-full bg-sky-50 px-2.5 py-0.5 text-xs font-medium text-sky-800 ring-1 ring-sky-200">
+                          Content OK
+                        </span>
                       ) : (
-                        <span className="text-xs text-slate-400">—</span>
+                        <span className="text-xs text-slate-400">
+                          {readiness.issues.length} issue(s)
+                        </span>
                       )}
                     </td>
                     <td className="hidden px-3 py-3 text-xs text-slate-600 md:table-cell">

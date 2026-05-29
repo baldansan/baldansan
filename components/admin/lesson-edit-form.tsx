@@ -13,6 +13,8 @@ import { LessonRestoreCard } from "@/components/admin/lesson-restore-card";
 import { ImportQaSummary } from "@/components/admin/import-qa-summary";
 import { LessonPromptGenerator } from "@/components/admin/lesson-prompt-generator";
 import { LessonImprovementPrompts } from "@/components/admin/lesson-improvement-prompts";
+import { ReleaseReadinessCard } from "@/components/admin/release-readiness-card";
+import { LessonApprovalControls } from "@/components/admin/lesson-approval-controls";
 import { PublishingControls } from "@/components/admin/publishing-controls";
 import type { ImportQaStatus } from "@/lib/admin/import-qa";
 import { LessonQaBadge } from "@/components/admin/lesson-qa-badge";
@@ -292,7 +294,9 @@ export function LessonEditForm({
         />
       </AdminToolGroup>
 
-      <AdminToolGroup title="Publish" description="Нийтлэх / ноорог / архив.">
+      <AdminToolGroup title="Publish" description="Release checklist, approval, publish.">
+        <ReleaseReadinessCard lesson={lesson} />
+        <LessonApprovalControls lesson={lesson} />
         <PublishingControls
           lesson={lesson}
           initialCompleteness={completeness}

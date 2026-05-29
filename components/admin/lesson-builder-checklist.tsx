@@ -253,6 +253,12 @@ function buildSteps(
       statusLabel: step4Label,
       href: editHref,
       hrefLabel: "Import QA on edit page →",
+      extraLinks: [
+        {
+          label: "Release checklist →",
+          href: `${editHref}#release-readiness`,
+        },
+      ],
     },
     {
       number: 5,
@@ -298,6 +304,12 @@ function buildSteps(
           : qaReady
             ? "Publishing controls →"
             : undefined,
+      extraLinks: [
+        {
+          label: "Approve for publish →",
+          href: `${editHref}#release-readiness`,
+        },
+      ],
     },
   ];
 }
