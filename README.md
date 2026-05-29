@@ -43,6 +43,7 @@ A Mongolian–Chinese language learning web app. Users learn Chinese through sho
 | `/admin/lessons` | Lesson QA + edit |
 | `/admin/activity` | Admin activity log |
 | `/admin/final-audit` | Phase 5 readiness checklist |
+| `/admin/production-qa` | Production launch QA checklist |
 
 Examples: `/lessons/1`, `/lessons/4/quiz`. Invalid IDs (e.g. `/lessons/999`) show lesson not found.
 
@@ -179,7 +180,9 @@ Helpers: [lib/supabase/auth.ts](./lib/supabase/auth.ts). Header shows **Нэвт
 
 **Deployment check:** [`/deployment-check`](/deployment-check) — public post-deploy smoke test (no login; no secrets).
 
-**Next step:** Phase 6 Step 4 — Production route testing after first manual Vercel deploy.
+**Production QA:** [`/admin/production-qa`](/admin/production-qa) — manual launch checklist after each deploy (admin; localStorage + export).
+
+**Next step:** Phase 6 Step 5 — Security/RLS final audit and launch candidate.
 
 ## Deployment (Phase 6)
 
@@ -193,12 +196,16 @@ Repo is prepared for **manual Vercel deployment** — not auto-deployed from cod
 | [DEPLOYMENT_PLAN.md](./DEPLOYMENT_PLAN.md) | Full Phase 6 deployment plan |
 | [`/deployment-check`](/deployment-check) | Public smoke test after deploy |
 | [`/admin/system-check`](/admin/system-check) | Admin verification after deploy |
+| [`/admin/production-qa`](/admin/production-qa) | Launch QA checklist + export |
+| [PRODUCTION_ROUTE_TESTING.md](./PRODUCTION_ROUTE_TESTING.md) | Live route testing guide |
 
 Copy [.env.example](./.env.example) to `.env.local` locally. On Vercel, set `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_ANON_KEY` only — never `service_role`.
 
+**Production URL:** https://baldansan.vercel.app — run `/deployment-check` and `/admin/production-qa` after each deploy.
+
 ## Production readiness (Phase 6)
 
-Setup complete — **not deployed yet** until you run manual Vercel deploy and checklists are green.
+Phase 6 Steps 1–4 complete. Run checklists on production before launch candidate sign-off.
 
 | Doc | Purpose |
 |-----|---------|
@@ -209,6 +216,8 @@ Setup complete — **not deployed yet** until you run manual Vercel deploy and c
 | [supabase/verify/README.md](./supabase/verify/README.md) | Production verification SQL (Phase 6 Step 2) |
 | [`/admin/system-check`](/admin/system-check) | App-side verification (admin, read-only) |
 | [`/deployment-check`](/deployment-check) | Public smoke test (post-deploy) |
+| [`/admin/production-qa`](/admin/production-qa) | Launch QA checklist (post-deploy) |
+| [PRODUCTION_ROUTE_TESTING.md](./PRODUCTION_ROUTE_TESTING.md) | Live testing guide |
 
 **Stack:** Vercel (Next.js) + Supabase (DB, Auth, Storage). Anon key only in client — never `service_role`.
 
@@ -228,4 +237,5 @@ Setup complete — **not deployed yet** until you run manual Vercel deploy and c
 - [DATABASE_SCHEMA.md](./DATABASE_SCHEMA.md) — schema + Auth/RLS plan
 - [AUTH_PLAN.md](./AUTH_PLAN.md) — Phase 4 auth details
 - [CONTENT_AUTHORING_GUIDE.md](./CONTENT_AUTHORING_GUIDE.md) — content workflow
-- [supabase/README.md](./supabase/README.md) — migrations & seeds
+- [PRODUCTION_ROUTE_TESTING.md](./PRODUCTION_ROUTE_TESTING.md) — live route testing guide
+- [LAUNCH_QA_REPORT_TEMPLATE.md](./LAUNCH_QA_REPORT_TEMPLATE.md) — launch report template

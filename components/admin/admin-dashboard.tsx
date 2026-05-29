@@ -374,6 +374,12 @@ export function AdminDashboard({
             System check
           </Link>
           <Link
+            href="/admin/production-qa"
+            className="inline-flex rounded-full border border-emerald-200 bg-emerald-50 px-5 py-2.5 text-sm font-semibold text-emerald-800 transition-colors hover:bg-emerald-100"
+          >
+            Production QA
+          </Link>
+          <Link
             href="/admin/final-audit"
             className="inline-flex rounded-full border border-emerald-200 bg-emerald-50 px-5 py-2.5 text-sm font-semibold text-emerald-800 transition-colors hover:bg-emerald-100"
           >
@@ -399,6 +405,11 @@ export function AdminDashboard({
         description="Existing workflows — unchanged."
       >
         <div className="grid gap-4 sm:grid-cols-2">
+          <AdminCard
+            title="Production QA"
+            description="Run after every production deploy — manual route/auth/Supabase/CMS checklist with export."
+            href="/admin/production-qa"
+          />
           <AdminCard
             title="System check"
             description="Runtime env, Supabase, auth, admin, tasks, activity, and storage readiness."

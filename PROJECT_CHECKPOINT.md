@@ -2,7 +2,26 @@
 
 **Project:** Buunduu Surtsgaay (Бөөндөө Сурцгаая)  
 **Checkpoint date:** May 2026  
-**Status:** Phase 6 Step 3 Vercel deployment setup **completed**
+**Status:** Phase 6 Step 4 Production route testing and launch QA dashboard **completed**
+
+---
+
+## Phase 6 Step 4 — Production route testing — **Completed**
+
+Phase 6 Step 4: Production route testing and launch QA dashboard added.
+
+| Area | Deliverable |
+|------|-------------|
+| Route | `/admin/production-qa` — manual launch checklist |
+| Components | production-route-checklist, production-qa-summary, production-qa-export-card |
+| Report | `lib/admin/production-qa-report.ts` — JSON/Markdown export |
+| Storage | localStorage `buunduu-production-qa` |
+| Docs | PRODUCTION_ROUTE_TESTING.md, LAUNCH_QA_REPORT_TEMPLATE.md |
+| Integration | Admin dashboard card, final-audit Phase 6 section |
+
+**Production URL:** https://baldansan.vercel.app
+
+**Next:** Phase 6 Step 5 — Security/RLS final audit and launch candidate.
 
 ---
 

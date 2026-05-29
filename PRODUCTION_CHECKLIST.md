@@ -71,6 +71,8 @@ Concise go-live checklist. See [DEPLOYMENT_PLAN.md](./DEPLOYMENT_PLAN.md) for de
 - [ ] Admin login tested on production URL
 - [ ] Public route smoke test passed (`/`, `/courses/hsk5`, `/lessons/1`, `/login`)
 - [ ] Admin route smoke test passed (`/admin/system-check`, `/admin/final-audit`)
+- [ ] `/admin/production-qa` completed — export QA report
+- [ ] Launch blockers resolved (no **fail** in Production QA)
 - [ ] Custom domain added (optional)
 
 ---
@@ -118,4 +120,5 @@ Concise go-live checklist. See [DEPLOYMENT_PLAN.md](./DEPLOYMENT_PLAN.md) for de
 - [SUPABASE_PRODUCTION_SETUP.md](./SUPABASE_PRODUCTION_SETUP.md)
 - [supabase/verify/README.md](./supabase/verify/README.md)
 - `/admin/system-check` (local or after deploy)
-- `/deployment-check` (public smoke test after deploy)
+- [PRODUCTION_ROUTE_TESTING.md](./PRODUCTION_ROUTE_TESTING.md)
+- `/admin/production-qa` (after deploy)

@@ -140,34 +140,40 @@ const SECTIONS: AuditSection[] = [
     title: "Phase 6 deployment readiness",
     items: [
       {
-        label: "Env vars configured (URL + anon key)",
-        status: "needs check",
-        href: "/admin/system-check",
+        label: "Deployment check route (/deployment-check)",
+        status: "ready",
+        href: "/deployment-check",
       },
       {
-        label: "Supabase migrations 001–008 applied",
-        status: "needs check",
-        note: "See SUPABASE_PRODUCTION_SETUP.md",
-      },
-      {
-        label: "Storage bucket lesson-media",
-        status: "needs check",
-        href: "/admin/system-check",
-      },
-      {
-        label: "Auth Site URL + Redirect URLs",
-        status: "needs check",
-        note: "Configure after Vercel deploy",
-      },
-      {
-        label: "System check page",
+        label: "System check route (/admin/system-check)",
         status: "ready",
         href: "/admin/system-check",
+      },
+      {
+        label: "Production QA route (/admin/production-qa)",
+        status: "ready",
+        href: "/admin/production-qa",
+      },
+      {
+        label: "Vercel env configured (URL + anon key)",
+        status: "needs check",
+        href: "/admin/system-check",
+        note: "Verify on production after deploy",
+      },
+      {
+        label: "Supabase Auth Site URL + Redirect URLs",
+        status: "needs check",
+        note: "Configure for https://baldansan.vercel.app",
+      },
+      {
+        label: "Production verification SQL",
+        status: "needs check",
+        note: "supabase/verify/production_verification.sql",
       },
       {
         label: "Deployment docs (DEPLOYMENT_PLAN.md)",
         status: "ready",
-        note: "Planning only — do not deploy yet",
+        note: "Phase 6 Steps 1–4",
       },
     ],
   },
@@ -255,11 +261,21 @@ export function FinalAuditChecklist() {
       <section className="rounded-2xl bg-emerald-50/60 p-5 ring-1 ring-emerald-100">
         <h2 className="text-base font-semibold text-slate-900">Phase 6 next</h2>
         <p className="mt-2 text-sm text-slate-700">
-          Step 1 complete — deployment planning docs and system check added.
-          Next: Supabase production verification, then Vercel setup (do not
-          deploy until checklists pass).
+          Steps 1–4 complete — deployment planning, Supabase verification,
+          Vercel setup, and Production QA dashboard. Run{" "}
+          <Link href="/admin/production-qa" className="font-medium text-emerald-800 hover:underline">
+            Production QA
+          </Link>{" "}
+          after every production deploy. Next: Security/RLS final audit and
+          launch candidate.
         </p>
         <div className="mt-4 flex flex-wrap gap-2">
+          <Link
+            href="/admin/production-qa"
+            className="inline-flex rounded-full bg-emerald-500 px-5 py-2.5 text-sm font-semibold text-white hover:bg-emerald-600"
+          >
+            Production QA
+          </Link>
           <Link
             href="/admin/system-check"
             className="inline-flex rounded-full bg-emerald-500 px-5 py-2.5 text-sm font-semibold text-white hover:bg-emerald-600"
