@@ -1,0 +1,403 @@
+{
+  "_meta": {
+    "source": "draft",
+    "needsSourceAudit": true,
+    "sourceFileExpected": "Солонгос_Ном_Lesson01_소개_Premium_Package.html",
+    "grammarFocus": ["입니다", "입니까", "은/는"],
+    "note": "Core vocabulary from known package outline; full HTML audit pending."
+  },
+  "lesson": {
+    "id": "k-01",
+    "courseId": "korean-1",
+    "title": "Lesson 01 — 소개",
+    "chineseTitle": "소개",
+    "subtitle": "Танилцуулах / Өөрийгөө танилцуулах — ажил дээр хэрэгтэй",
+    "description": "Улс, мэргэжил, нэр, мэндчилгээ. 입니다, 입니까, 은/는 хэлбэрийг ажлын орчинд хэрэглэх жишээтэй сурна.",
+    "duration": "35 min",
+    "status": "draft",
+    "orderIndex": 8,
+    "mediaStatus": "missing",
+    "sourceNote": "Korean Book 1 L01 소개 — audio pending."
+  },
+  "subtitlePreview": [
+    {
+      "chinese": "안녕하세요. 저는 바트입니다.",
+      "pinyin": "Annyeonghaseyo. Jeoneun Bateu-imnida.",
+      "mongolian": "Сайн байна уу. Би Бат."
+    },
+    {
+      "chinese": "저는 몽골 사람입니다.",
+      "pinyin": "Jeoneun Monggol saram-imnida.",
+      "mongolian": "Би монгол хүн."
+    }
+  ],
+  "subtitles": [
+    {
+      "start": "00:00",
+      "end": "00:04",
+      "chinese": "안녕하세요.",
+      "pinyin": "Annyeonghaseyo.",
+      "mongolian": "Сайн байна уу."
+    },
+    {
+      "start": "00:05",
+      "end": "00:10",
+      "chinese": "저는 바트입니다. 만나서 반갑습니다.",
+      "pinyin": "Jeoneun Bateu-imnida. Mannaseo bangapseumnida.",
+      "mongolian": "Би Бат. Танилцахад таатай байна."
+    },
+    {
+      "start": "00:11",
+      "end": "00:16",
+      "chinese": "저는 몽골 사람입니다. 회사원입니다.",
+      "pinyin": "Jeoneun Monggol saram-imnida. Hoesawon-imnida.",
+      "mongolian": "Би монгол хүн. Оффисын ажилтан."
+    },
+    {
+      "start": "00:17",
+      "end": "00:22",
+      "chinese": "김 선생님은 한국 사람입니까?",
+      "pinyin": "Kim seonsaengnim-eun Hanguk saram-imnikka?",
+      "mongolian": "Ким багш солонгос хүн үү?"
+    },
+    {
+      "start": "00:23",
+      "end": "00:28",
+      "chinese": "네, 한국 사람입니다. 한국어를 가르칩니다.",
+      "pinyin": "Ne, Hanguk saram-imnida. Hangugeo-reul gareuchimnida.",
+      "mongolian": "Тийм, солонгос хүн. Солонгос хэл заадаг."
+    },
+    {
+      "start": "00:29",
+      "end": "00:34",
+      "chinese": "이름이 뭐예요? 직업이 뭐예요?",
+      "pinyin": "Ireumi mwoyeyo? Jigeobi mwoyeyo?",
+      "mongolian": "Нэр хэн бэ? Мэргэжил хэний бэ?"
+    },
+    {
+      "start": "00:35",
+      "end": "00:40",
+      "chinese": "제 이름은 수진입니다. 학생입니다.",
+      "pinyin": "Je ireum-eun Sujin-imnida. Haksaeng-imnida.",
+      "mongolian": "Миний нэр Сүжин. Оюутан."
+    },
+    {
+      "start": "00:41",
+      "end": "00:46",
+      "chinese": "저는 한국어를 공부합니다. 한국에서 일합니다.",
+      "pinyin": "Jeoneun Hangugeo-reul gongbuhamnida. Hanguk-eseo ilhamnida.",
+      "mongolian": "Би солонгос хэл сурч байна. Солонгост ажиллаж байна."
+    },
+    {
+      "start": "00:47",
+      "end": "00:52",
+      "chinese": "바트 씨는 어느 나라 사람입니까?",
+      "pinyin": "Bateu ssi-neun eoneu nara saram-imnikka?",
+      "mongolian": "Бат ах аа, аль улсын хүн бэ?"
+    },
+    {
+      "start": "00:53",
+      "end": "00:58",
+      "chinese": "몽골 사람입니다. 서울에 삽니다.",
+      "pinyin": "Monggol saram-imnida. Seoul-e samnida.",
+      "mongolian": "Монгол хүн. Сөүлд амьдардаг."
+    }
+  ],
+  "vocabulary": [
+    {
+      "id": "kr_nara",
+      "chinese": "나라",
+      "pinyin": "nara",
+      "mongolian": "улс, орон",
+      "hskLevel": "KR1",
+      "exampleChinese": "어느 나라 사람입니까?",
+      "exampleMongolian": "Аль улсын хүн бэ?"
+    },
+    {
+      "id": "kr_jigeop",
+      "chinese": "직업",
+      "pinyin": "jigeop",
+      "mongolian": "мэргэжил",
+      "hskLevel": "KR1",
+      "exampleChinese": "직업이 뭐예요?",
+      "exampleMongolian": "Мэргэжил хэний бэ?"
+    },
+    {
+      "id": "kr_insamal",
+      "chinese": "인사말",
+      "pinyin": "insamal",
+      "mongolian": "мэндчилгээ, мэндчилгээний үг",
+      "hskLevel": "KR1",
+      "exampleChinese": "인사말을 배웁니다.",
+      "exampleMongolian": "Мэндчилгээ сурна."
+    },
+    {
+      "id": "kr_hangugeo",
+      "chinese": "한국어",
+      "pinyin": "hangugeo",
+      "mongolian": "солонгос хэл",
+      "hskLevel": "KR1",
+      "exampleChinese": "한국어를 공부합니다.",
+      "exampleMongolian": "Солонгос хэл сурна."
+    },
+    {
+      "id": "kr_saram",
+      "chinese": "사람",
+      "pinyin": "saram",
+      "mongolian": "хүн",
+      "hskLevel": "KR1",
+      "exampleChinese": "한국 사람입니다.",
+      "exampleMongolian": "Солонгос хүн."
+    },
+    {
+      "id": "kr_monggol",
+      "chinese": "몽골",
+      "pinyin": "monggol",
+      "mongolian": "Монгол",
+      "hskLevel": "KR1",
+      "exampleChinese": "몽골 사람입니다.",
+      "exampleMongolian": "Монгол хүн."
+    },
+    {
+      "id": "kr_ireum",
+      "chinese": "이름",
+      "pinyin": "ireum",
+      "mongolian": "нэр",
+      "hskLevel": "KR1",
+      "exampleChinese": "이름이 뭐예요?",
+      "exampleMongolian": "Нэр хэн бэ?"
+    },
+    {
+      "id": "kr_seonsaengnim",
+      "chinese": "선생님",
+      "pinyin": "seonsaengnim",
+      "mongolian": "багш (хүндэтгэлтэй)",
+      "hskLevel": "KR1",
+      "exampleChinese": "김 선생님입니다.",
+      "exampleMongolian": "Ким багш."
+    },
+    {
+      "id": "kr_haksaeng",
+      "chinese": "학생",
+      "pinyin": "haksaeng",
+      "mongolian": "оюутан, сурагч",
+      "hskLevel": "KR1",
+      "exampleChinese": "저는 학생입니다.",
+      "exampleMongolian": "Би оюутан."
+    },
+    {
+      "id": "kr_hoesawon",
+      "chinese": "회사원",
+      "pinyin": "hoesawon",
+      "mongolian": "компанийн ажилтан, оффисын ажилтан",
+      "hskLevel": "KR1",
+      "exampleChinese": "회사원입니다.",
+      "exampleMongolian": "Оффисын ажилтан."
+    },
+    {
+      "id": "kr_imnida",
+      "chinese": "입니다",
+      "pinyin": "imnida",
+      "mongolian": "… байна / … юм (албан ёсны)",
+      "hskLevel": "KR1",
+      "exampleChinese": "학생입니다.",
+      "exampleMongolian": "Оюутан (байна)."
+    },
+    {
+      "id": "kr_imnikka",
+      "chinese": "입니까",
+      "pinyin": "imnikka",
+      "mongolian": "… үү? (асуулт, албан ёсны)",
+      "hskLevel": "KR1",
+      "exampleChinese": "한국 사람입니까?",
+      "exampleMongolian": "Солонгос хүн үү?"
+    },
+    {
+      "id": "kr_eun_neun",
+      "chinese": "은/는",
+      "pinyin": "eun/neun",
+      "mongolian": "тopic particle (энэ/тэр талаар)",
+      "hskLevel": "KR1",
+      "exampleChinese": "저는 바트입니다.",
+      "exampleMongolian": "Би (бол) Бат."
+    },
+    {
+      "id": "kr_annyeonghaseyo",
+      "chinese": "안녕하세요",
+      "pinyin": "annyeonghaseyo",
+      "mongolian": "сайн байна уу (албан ёсны мэнд)",
+      "hskLevel": "KR1",
+      "exampleChinese": "안녕하세요. 만나서 반갑습니다.",
+      "exampleMongolian": "Сайн байна уу. Танилцахад таатай байна."
+    },
+    {
+      "id": "kr_bangapseumnida",
+      "chinese": "반갑습니다",
+      "pinyin": "bangapseumnida",
+      "mongolian": "танилцахад таатай байна",
+      "hskLevel": "KR1",
+      "exampleChinese": "만나서 반갑습니다.",
+      "exampleMongolian": "Танилцахад таатай байна."
+    },
+    {
+      "id": "kr_hanguk",
+      "chinese": "한국",
+      "pinyin": "hanguk",
+      "mongolian": "Солонгос улс",
+      "hskLevel": "KR1",
+      "exampleChinese": "한국에서 일합니다.",
+      "exampleMongolian": "Солонгост ажиллана."
+    },
+    {
+      "id": "kr_jeo",
+      "chinese": "저",
+      "pinyin": "jeo",
+      "mongolian": "би (хүндэтгэлтэй)",
+      "hskLevel": "KR1",
+      "exampleChinese": "저는 회사원입니다.",
+      "exampleMongolian": "Би оффисын ажилтан."
+    },
+    {
+      "id": "kr_ne",
+      "chinese": "네",
+      "pinyin": "ne",
+      "mongolian": "тийм",
+      "hskLevel": "KR1",
+      "exampleChinese": "네, 맞습니다.",
+      "exampleMongolian": "Тийм, зөв."
+    },
+    {
+      "id": "kr_gongbu",
+      "chinese": "공부하다",
+      "pinyin": "gongbu-hada",
+      "mongolian": "сурах, судлах",
+      "hskLevel": "KR1",
+      "exampleChinese": "한국어를 공부합니다.",
+      "exampleMongolian": "Солонгос хэл сурна."
+    },
+    {
+      "id": "kr_ilhada",
+      "chinese": "일하다",
+      "pinyin": "il-hada",
+      "mongolian": "ажиллах",
+      "hskLevel": "KR1",
+      "exampleChinese": "회사에서 일합니다.",
+      "exampleMongolian": "Компанид ажиллана."
+    },
+    {
+      "id": "kr_eoneu",
+      "chinese": "어느",
+      "pinyin": "eoneu",
+      "mongolian": "аль (асуулт)",
+      "hskLevel": "KR1",
+      "exampleChinese": "어느 나라입니까?",
+      "exampleMongolian": "Аль улс вэ?"
+    },
+    {
+      "id": "kr_seoul",
+      "chinese": "서울",
+      "pinyin": "seoul",
+      "mongolian": "Сөүл",
+      "hskLevel": "KR1",
+      "exampleChinese": "서울에 삽니다.",
+      "exampleMongolian": "Сөүлд амьдардаг."
+    }
+  ],
+  "quizQuestions": [
+    {
+      "id": "k01_q1",
+      "type": "multiple_choice",
+      "question": "「안녕하세요」-ийн зөв орчуулга:",
+      "options": [
+        "Сайн байна уу",
+        "Баяртай",
+        "Баярлалаа",
+        "Уучлаарай"
+      ],
+      "correctAnswer": "Сайн байна уу",
+      "explanation": "Албан ёсны мэндчилгээ."
+    },
+    {
+      "id": "k01_q2",
+      "type": "multiple_choice",
+      "question": "「회사원」 гэдэг нь:",
+      "options": [
+        "компанийн ажилтан",
+        "оюутан",
+        "багш",
+        "эмч"
+      ],
+      "correctAnswer": "компанийн ажилтан",
+      "explanation": "회사 + 원 = company employee."
+    },
+    {
+      "id": "k01_q3",
+      "type": "cloze",
+      "question": "저는 몽골 ____ 입니다.",
+      "options": ["사람", "나라", "이름", "직업"],
+      "correctAnswer": "사람",
+      "explanation": "몽골 사람입니다 = Монгол хүн."
+    },
+    {
+      "id": "k01_q4",
+      "type": "multiple_choice",
+      "question": "「한국 사람입니까?」 — зөв хариулт:",
+      "options": ["네, 한국 사람입니다.", "아니요, 이름입니다.", "감사합니다.", "안녕히 가세요."],
+      "correctAnswer": "네, 한국 사람입니다.",
+      "explanation": "Тийм, солонгос хүн."
+    },
+    {
+      "id": "k01_q5",
+      "type": "multiple_choice",
+      "question": "「입니다」-ийн утга:",
+      "options": ["… байна (албан ёсны)", "… үү?", "… байсан", "… хийх"],
+      "correctAnswer": "… байна (албан ёсны)",
+      "explanation": "Formal copula."
+    },
+    {
+      "id": "k01_q6",
+      "type": "multiple_choice",
+      "question": "「은/는」 particle-ийн үүрэг:",
+      "options": ["topic (хэлэх сэдэв)", "байршил", "тоо", "зай"],
+      "correctAnswer": "topic (хэлэх сэдэв)",
+      "explanation": "저는 = би (topic) …"
+    },
+    {
+      "id": "k01_q7",
+      "type": "cloze",
+      "question": "제 ____ 은 바트입니다.",
+      "options": ["이름", "나라", "직업", "학교"],
+      "correctAnswer": "이름",
+      "explanation": "Миний нэр Бат."
+    },
+    {
+      "id": "k01_q8",
+      "type": "multiple_choice",
+      "question": "「한국어」 гэдэг нь:",
+      "options": ["солонгос хэл", "монгол хэл", "англи хэл", "хятад хэл"],
+      "correctAnswer": "солонгос хэл",
+      "explanation": "한국 + 어 = Korean language."
+    },
+    {
+      "id": "k01_q9",
+      "type": "multiple_choice",
+      "question": "「선생님」-ийн зөв утга:",
+      "options": ["багш", "оюутан", "найз", "хүүхэд"],
+      "correctAnswer": "багш",
+      "explanation": "Honorific teacher title."
+    },
+    {
+      "id": "k01_q10",
+      "type": "multiple_choice",
+      "question": "「저는 회사원입니다」 орчуулга:",
+      "options": [
+        "Би оффисын ажилтан.",
+        "Би оюутан.",
+        "Би багш.",
+        "Би монгол хүн."
+      ],
+      "correctAnswer": "Би оффисын ажилтан.",
+      "explanation": "Self-introduction for work context."
+    }
+  ]
+}

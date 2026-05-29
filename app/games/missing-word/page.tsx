@@ -1,5 +1,5 @@
 import { MissingWordGameClient } from "@/components/games/missing-word-game-client";
-import { getLessonGameVocabulary } from "@/lib/games/game-data";
+import { getLessonGameContext } from "@/lib/games/game-data";
 
 export const dynamic = "force-dynamic";
 
@@ -13,6 +13,12 @@ type PageProps = {
 
 export default async function MissingWordGamePage({ searchParams }: PageProps) {
   const { lessonId = "1" } = await searchParams;
-  const vocabulary = await getLessonGameVocabulary(lessonId);
-  return <MissingWordGameClient lessonId={lessonId} vocabulary={vocabulary} />;
+  const { vocabulary, courseId } = await getLessonGameContext(lessonId);
+  return (
+    <MissingWordGameClient
+      lessonId={lessonId}
+      courseId={courseId}
+      vocabulary={vocabulary}
+    />
+  );
 }

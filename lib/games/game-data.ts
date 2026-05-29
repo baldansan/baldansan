@@ -38,6 +38,20 @@ export async function getLessonGameVocabulary(
   return lesson.vocabulary.map(toGameVocabItem);
 }
 
+export async function getLessonGameContext(lessonId: string): Promise<{
+  vocabulary: GameVocabItem[];
+  courseId: string;
+}> {
+  const lesson = await getPublicLessonById(lessonId);
+  if (!lesson) {
+    return { vocabulary: [], courseId: "" };
+  }
+  return {
+    vocabulary: lesson.vocabulary.map(toGameVocabItem),
+    courseId: lesson.courseId,
+  };
+}
+
 /** Demo-only preview items for /games hub UI — not for saved progress. */
 export function getGameFallbackItems(): GameVocabItem[] {
   return [

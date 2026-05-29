@@ -3,6 +3,8 @@
 import Link from "next/link";
 import { useState } from "react";
 import { GamePracticeLinks } from "@/components/games/game-practice-links";
+import { SpeakerButton } from "@/components/tts/speaker-button";
+import { resolveTtsLang } from "@/lib/tts/infer-lang";
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
 import { MobileCard } from "@/components/mobile/mobile-card";
 import type { VocabularyWord } from "@/types/lesson";
@@ -18,6 +20,7 @@ type SheetMode = "write" | "listen" | null;
 export function KanjiDetailClient({ word, lessonId, taskCount }: Props) {
   const [sheet, setSheet] = useState<SheetMode>(null);
   const vocabHref = `/kanji/${encodeURIComponent(word.id || word.chinese)}?lessonId=${lessonId}`;
+  const ttsLang = resolveTtsLang({ hskLevel: word.hskLevel });
 
   return (
     <MobileAppShell activeTab="kanji" showBottomNav={sheet == null}>
@@ -39,8 +42,16 @@ export function KanjiDetailClient({ word, lessonId, taskCount }: Props) {
         </span>
       </header>
 
-      <MobileCard className="mb-4 text-center">
-        <p className="text-6xl font-bold text-[var(--app-text)]">{word.chinese}</p>
+      <MobileCard className="mb-4 text-center !p-5">
+        <div className="flex items-start justify-center gap-2">
+          <p className="text-6xl font-bold text-[var(--app-text)]">{word.chinese}</p>
+          <SpeakerButton
+            text={word.chinese}
+            lang={ttsLang}
+            hskLevel={word.hskLevel}
+            size="md"
+          />
+        </div>
         <p className="mt-3 text-xl text-emerald-700">{word.pinyin}</p>
         <p className="mt-2 text-base text-[var(--app-text)]">{word.mongolian}</p>
         <p className="mt-3 text-xs text-[var(--app-muted)]">
@@ -50,9 +61,17 @@ export function KanjiDetailClient({ word, lessonId, taskCount }: Props) {
 
       {word.exampleChinese ? (
         <MobileCard className="mb-4">
-          <p className="text-sm font-medium text-[var(--app-text)]">
-            {word.exampleChinese}
-          </p>
+          <div className="flex items-start gap-2">
+            <p className="min-w-0 flex-1 text-sm font-medium text-[var(--app-text)]">
+              {word.exampleChinese}
+            </p>
+            <SpeakerButton
+              text={word.exampleChinese}
+              lang={ttsLang}
+              hskLevel={word.hskLevel}
+              size="sm"
+            />
+          </div>
           {word.exampleMongolian ? (
             <p className="mt-2 text-sm text-[var(--app-muted)]">
               {word.exampleMongolian}
@@ -80,6 +99,15 @@ export function KanjiDetailClient({ word, lessonId, taskCount }: Props) {
           >
             Сонсох &amp; хэлэх
           </button>
+        </div>
+        <div className="mt-3 flex justify-center">
+          <SpeakerButton
+            text={word.chinese}
+            lang={ttsLang}
+            hskLevel={word.hskLevel}
+            size="lg"
+            label="Үгийг уншуулах"
+          />
         </div>
         <GamePracticeLinks lessonId={lessonId} />
       </MobileCard>

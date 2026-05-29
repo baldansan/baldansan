@@ -10,14 +10,17 @@ import { GameResultCard } from "@/components/games/game-result-card";
 import { GameShell } from "@/components/games/game-shell";
 import { buildTranslateGameItems } from "@/lib/games/game-data";
 import { saveGameResult } from "@/lib/games/game-progress";
+import { SpeakerButton } from "@/components/tts/speaker-button";
+import { resolveTtsLang } from "@/lib/tts/infer-lang";
 import type { GameVocabItem } from "@/lib/games/game-types";
 
 type Props = {
   lessonId: string;
+  courseId?: string;
   vocabulary: GameVocabItem[];
 };
 
-export function TranslateGameClient({ lessonId, vocabulary }: Props) {
+export function TranslateGameClient({ lessonId, courseId, vocabulary }: Props) {
   const questions = useMemo(
     () => buildTranslateGameItems(vocabulary),
     [vocabulary]
@@ -31,6 +34,7 @@ export function TranslateGameClient({ lessonId, vocabulary }: Props) {
 
   const current = questions[index];
   const total = questions.length;
+  const ttsLang = resolveTtsLang({ courseId });
 
   function finishGame(finalCorrect: number) {
     const finalScore = finalCorrect * 10;
@@ -114,16 +118,24 @@ export function TranslateGameClient({ lessonId, vocabulary }: Props) {
         progress={`${index + 1}/${total}`}
         score={score}
       />
-      <span className="mb-3 inline-flex rounded-full bg-blue-100 px-3 py-1 text-xs font-semibold text-blue-800">
+      <span className="mb-3 inline-flex rounded-full bg-blue-100 px-3 py-1.5 text-xs font-bold text-blue-800 ring-1 ring-blue-200">
         Хятад → Монгол
       </span>
       <GameProgressPill current={index + 1} total={total} />
       {current ? (
         <>
           <GameCard className="mb-4 text-center">
-            <p className="text-4xl font-bold text-[var(--app-text)]">
-              {current.chinese}
-            </p>
+            <div className="flex items-start justify-center gap-2">
+              <p className="text-4xl font-bold text-[var(--app-text)]">
+                {current.chinese}
+              </p>
+              <SpeakerButton
+                text={current.chinese}
+                lang={ttsLang}
+                courseId={courseId}
+                size="md"
+              />
+            </div>
             <p className="mt-2 text-lg text-emerald-700">{current.pinyin}</p>
             <p className="mt-4 text-sm text-[var(--app-muted)]">
               Зөв хариултыг сонгоно уу
@@ -151,7 +163,7 @@ export function TranslateGameClient({ lessonId, vocabulary }: Props) {
             <button
               type="button"
               onClick={handleNext}
-              className="mt-4 min-h-[44px] w-full rounded-full bg-emerald-500 py-3 text-sm font-semibold text-white"
+              className="mt-4 min-h-[48px] w-full app-btn-primary py-3"
             >
               Дараах
             </button>

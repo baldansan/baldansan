@@ -518,6 +518,7 @@ Phased roadmap from MVP demo to production product.
 - Profile menu redesign; lesson/login/signup in app shell
 - Games hub placeholder → quiz/review links
 - **Practice games (v1.0):** match, translate, missing word, arrange, stroke demo — [PRACTICE_GAMES.md](./PRACTICE_GAMES.md)
+- **Device/browser TTS pronunciation support** for Korean (`ko-KR`) and Chinese (`zh-CN`) — [TTS_PRONUNCIATION_SYSTEM.md](./TTS_PRONUNCIATION_SYSTEM.md)
 - No schema/RLS changes
 
 **Next:** HSK content upload sprint and game data enrichment.

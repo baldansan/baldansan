@@ -8,14 +8,17 @@ import { GameResultCard } from "@/components/games/game-result-card";
 import { GameShell } from "@/components/games/game-shell";
 import { buildArrangeGameItems } from "@/lib/games/game-data";
 import { saveGameResult } from "@/lib/games/game-progress";
+import { SpeakerButton } from "@/components/tts/speaker-button";
+import { resolveTtsLang } from "@/lib/tts/infer-lang";
 import type { GameVocabItem } from "@/lib/games/game-types";
 
 type Props = {
   lessonId: string;
+  courseId?: string;
   vocabulary: GameVocabItem[];
 };
 
-export function ArrangeGameClient({ lessonId, vocabulary }: Props) {
+export function ArrangeGameClient({ lessonId, courseId, vocabulary }: Props) {
   const questions = useMemo(
     () => buildArrangeGameItems(vocabulary),
     [vocabulary]
@@ -31,6 +34,7 @@ export function ArrangeGameClient({ lessonId, vocabulary }: Props) {
 
   const current = questions[qIndex];
   const total = questions.length;
+  const ttsLang = resolveTtsLang({ courseId });
 
   useEffect(() => {
     if (current) {
@@ -142,9 +146,19 @@ export function ArrangeGameClient({ lessonId, vocabulary }: Props) {
       {current ? (
         <>
           <GameCard className="mb-3 min-h-[56px]">
-            <p className="text-center text-xl font-bold tracking-widest text-[var(--app-text)]">
-              {picked.length > 0 ? picked.join("") : "—"}
-            </p>
+            <div className="flex items-center justify-center gap-2">
+              <p className="text-center text-xl font-bold tracking-widest text-[var(--app-text)]">
+                {picked.length > 0 ? picked.join("") : "—"}
+              </p>
+              {checked && current.target ? (
+                <SpeakerButton
+                  text={current.target}
+                  lang={ttsLang}
+                  courseId={courseId}
+                  size="sm"
+                />
+              ) : null}
+            </div>
             <p className="mt-1 text-center text-xs text-[var(--app-muted)]">
               {current.mongolianHint}
             </p>
@@ -186,7 +200,7 @@ export function ArrangeGameClient({ lessonId, vocabulary }: Props) {
             type="button"
             onClick={handleCheckOrNext}
             disabled={!checked && picked.length === 0}
-            className="min-h-[48px] w-full rounded-full bg-emerald-500 py-3 text-sm font-bold text-white disabled:opacity-50"
+            className="min-h-[48px] w-full app-btn-primary py-3 text-sm font-bold disabled:opacity-50"
           >
             {checked ? (qIndex < total - 1 ? "Дараах" : "Дуусгах") : "Шалгах"}
           </button>

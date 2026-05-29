@@ -18,6 +18,8 @@
 
 **v1.0 practice games added:** match, translate, missing word, arrange, stroke demo — localStorage scores. See [PRACTICE_GAMES.md](./PRACTICE_GAMES.md).
 
+**Device/browser TTS pronunciation support added** for Korean and Chinese — speaker buttons on vocabulary, subtitles, quiz, games; settings on `/profile`. See [TTS_PRONUNCIATION_SYSTEM.md](./TTS_PRONUNCIATION_SYSTEM.md).
+
 **Next:** HSK content upload sprint and game data enrichment.
 
 ---

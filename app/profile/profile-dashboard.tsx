@@ -27,6 +27,7 @@ import {
   type AccountLessonProgressSummary,
   type QuizResultEntry,
 } from "@/lib/progress";
+import { TtsSettingsCard } from "@/components/tts/tts-settings-card";
 import {
   getStreakUnified,
   type LearningRetentionSummary,
@@ -204,6 +205,8 @@ export function ProfileDashboard() {
           isLoggedIn={Boolean(authUser)}
           onSaved={() => setSyncRefreshKey((key) => key + 1)}
         />
+
+        <TtsSettingsCard />
 
         <AchievementList />
 

@@ -4,6 +4,10 @@ import { AdminPreviewBanner } from "@/components/admin-preview-banner";
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
 import { LessonDetailMediaSection } from "@/components/lesson-media-display";
 import { LessonDetailOverview } from "@/components/lesson-detail-overview";
+import {
+  LessonSubtitlePreviewSection,
+  LessonVocabPreviewSection,
+} from "@/components/lesson/lesson-content-preview";
 import { LessonProgressCard } from "@/components/lesson-progress-card";
 import { GamePracticeLinks } from "@/components/games/game-practice-links";
 import { TeacherAssignmentCta } from "@/components/teacher/teacher-assignment-cta";
@@ -81,45 +85,18 @@ export default async function LessonDetailPage({
 
         <section className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:p-6">
           <h2 className="text-lg font-semibold text-slate-900">Хадмал урьдчилсан</h2>
-          <div className="mt-4 flex flex-col gap-4">
-            {lesson.subtitlePreview.map((line) => (
-              <div
-                key={line.chinese}
-                className="rounded-xl bg-emerald-50/50 p-4 ring-1 ring-emerald-100"
-              >
-                <p className="text-base font-medium text-slate-900">
-                  {line.chinese}
-                </p>
-                <p className="mt-1 text-sm text-emerald-700">{line.pinyin}</p>
-                <p className="mt-2 text-sm text-slate-600">{line.mongolian}</p>
-              </div>
-            ))}
-          </div>
+          <LessonSubtitlePreviewSection
+            lines={lesson.subtitlePreview}
+            courseId={lesson.courseId}
+          />
         </section>
 
         <section className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:p-6">
           <h2 className="text-lg font-semibold text-slate-900">Үгийн сан урьдчилсан</h2>
-          <ul className="mt-4 flex flex-col gap-3">
-            {vocabularyPreview.map((word) => (
-              <li
-                key={word.id}
-                className="rounded-xl bg-slate-50 p-4 ring-1 ring-slate-200"
-              >
-                <div className="flex flex-wrap items-baseline justify-between gap-2">
-                  <p className="text-base font-semibold text-slate-900">
-                    {word.chinese}{" "}
-                    <span className="font-normal text-emerald-700">
-                      / {word.pinyin}
-                    </span>
-                  </p>
-                  <span className="rounded-full bg-emerald-50 px-2.5 py-0.5 text-xs font-medium text-emerald-700 ring-1 ring-emerald-200">
-                    {word.hskLevel}
-                  </span>
-                </div>
-                <p className="mt-1 text-sm text-slate-600">{word.mongolian}</p>
-              </li>
-            ))}
-          </ul>
+          <LessonVocabPreviewSection
+            words={vocabularyPreview}
+            courseId={lesson.courseId}
+          />
           <div className="mt-4 flex justify-end">
             <Link
               href={lessonPreviewPath(lesson.id, {

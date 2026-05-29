@@ -1,0 +1,354 @@
+{
+  "_meta": {
+    "source": "draft",
+    "needsSourceAudit": true,
+    "sourceStatus": "needs_source_upload",
+    "sourceFileExpected": "Солонгос_Ном_PreLesson_Hangul_한글_Premium_Package.html",
+    "note": "Korean in chinese fields; romanization in pinyin. No HTML source in repo — draft from standard Hangul curriculum."
+  },
+  "lesson": {
+    "id": "k-pre-05",
+    "courseId": "korean-1",
+    "title": "PreLesson 05 — Үе бүтээх",
+    "chineseTitle": "음절 만들기",
+    "subtitle": "Гийгүүлэгч + эгшиг = үе (가 나 다 무 바 …)",
+    "description": "Солонгос үсэг дангаараа биш, ихэвчлэн үеэр бичигддэг. Гийгүүлэгч + эгшиг хослолыг бүтээж, унш.",
+    "duration": "15 min",
+    "status": "draft",
+    "orderIndex": 4,
+    "mediaStatus": "missing",
+    "sourceNote": "Korean Book 1 PreLesson 05 — audio pending."
+  },
+  "subtitles": [
+    {
+      "start": "00:00",
+      "end": "00:08",
+      "chinese": "한국어는 음절로 씁니다.",
+      "pinyin": "Hangugeo-neun eumjeol-lo sseumnida.",
+      "mongolian": "Солонгос хэл үеээр бичигддэг."
+    },
+    {
+      "start": "00:09",
+      "end": "00:16",
+      "chinese": "자음 + 모음 = 음절",
+      "pinyin": "Jaeum + moeum = eumjeol",
+      "mongolian": "Гийгүүлэгч + эгшиг = үе."
+    },
+    {
+      "start": "00:17",
+      "end": "00:24",
+      "chinese": "ㄱ + ㅏ = 가",
+      "pinyin": "g + a = ga",
+      "mongolian": "ㄱ + ㅏ = 가"
+    },
+    {
+      "start": "00:25",
+      "end": "00:32",
+      "chinese": "ㄴ + ㅏ = 나, ㄷ + ㅏ = 다",
+      "pinyin": "n + a = na, d + a = da",
+      "mongolian": "나, 다 үе."
+    },
+    {
+      "start": "00:33",
+      "end": "00:40",
+      "chinese": "ㅁ + ㅜ = 무, ㅂ + ㅏ = 바",
+      "pinyin": "m + u = mu, b + a = ba",
+      "mongolian": "무, 바 үе."
+    }
+  ],
+  "vocabulary": [
+    {
+      "id": "kr_p05_rule",
+      "chinese": "음절",
+      "pinyin": "eumjeol",
+      "mongolian": "үе — гийгүүлэгч + эгшигийн багц",
+      "hskLevel": "KR1",
+      "exampleChinese": "한 음절",
+      "exampleMongolian": "нэг үе"
+    },
+    {
+      "id": "kr_p05_ga",
+      "chinese": "가",
+      "pinyin": "ga",
+      "mongolian": "ㄱ + ㅏ",
+      "hskLevel": "KR1",
+      "exampleChinese": "가방",
+      "exampleMongolian": "цүнх"
+    },
+    {
+      "id": "kr_p05_na",
+      "chinese": "나",
+      "pinyin": "na",
+      "mongolian": "ㄴ + ㅏ",
+      "hskLevel": "KR1",
+      "exampleChinese": "나라",
+      "exampleMongolian": "улс"
+    },
+    {
+      "id": "kr_p05_da",
+      "chinese": "다",
+      "pinyin": "da",
+      "mongolian": "ㄷ + ㅏ",
+      "hskLevel": "KR1",
+      "exampleChinese": "다리",
+      "exampleMongolian": "хөл"
+    },
+    {
+      "id": "kr_p05_mu",
+      "chinese": "무",
+      "pinyin": "mu",
+      "mongolian": "ㅁ + ㅜ",
+      "hskLevel": "KR1",
+      "exampleChinese": "무엇",
+      "exampleMongolian": "юу"
+    },
+    {
+      "id": "kr_p05_ba",
+      "chinese": "바",
+      "pinyin": "ba",
+      "mongolian": "ㅂ + ㅏ",
+      "hskLevel": "KR1",
+      "exampleChinese": "바다",
+      "exampleMongolian": "далай"
+    },
+    {
+      "id": "kr_p05_go",
+      "chinese": "고",
+      "pinyin": "go",
+      "mongolian": "ㄱ + ㅗ",
+      "hskLevel": "KR1",
+      "exampleChinese": "고기",
+      "exampleMongolian": "мах"
+    },
+    {
+      "id": "kr_p05_no",
+      "chinese": "노",
+      "pinyin": "no",
+      "mongolian": "ㄴ + ㅗ",
+      "hskLevel": "KR1",
+      "exampleChinese": "노래",
+      "exampleMongolian": "дуу"
+    },
+    {
+      "id": "kr_p05_du",
+      "chinese": "두",
+      "pinyin": "du",
+      "mongolian": "ㄷ + ㅜ",
+      "hskLevel": "KR1",
+      "exampleChinese": "두",
+      "exampleMongolian": "хоёр"
+    },
+    {
+      "id": "kr_p05_su",
+      "chinese": "수",
+      "pinyin": "su",
+      "mongolian": "ㅅ + ㅜ",
+      "hskLevel": "KR1",
+      "exampleChinese": "수",
+      "exampleMongolian": "ус/тоо"
+    },
+    {
+      "id": "kr_p05_ha",
+      "chinese": "하",
+      "pinyin": "ha",
+      "mongolian": "ㅎ + ㅏ",
+      "hskLevel": "KR1",
+      "exampleChinese": "하다",
+      "exampleMongolian": "хийх"
+    },
+    {
+      "id": "kr_p05_ji",
+      "chinese": "지",
+      "pinyin": "ji",
+      "mongolian": "ㅈ + ㅣ",
+      "hskLevel": "KR1",
+      "exampleChinese": "지금",
+      "exampleMongolian": "одоо"
+    },
+    {
+      "id": "kr_p05_mi",
+      "chinese": "미",
+      "pinyin": "mi",
+      "mongolian": "ㅁ + ㅣ",
+      "hskLevel": "KR1",
+      "exampleChinese": "미",
+      "exampleMongolian": "америк/үгүй"
+    },
+    {
+      "id": "kr_p05_bi",
+      "chinese": "비",
+      "pinyin": "bi",
+      "mongolian": "ㅂ + ㅣ",
+      "hskLevel": "KR1",
+      "exampleChinese": "비",
+      "exampleMongolian": "бороо"
+    },
+    {
+      "id": "kr_p05_si",
+      "chinese": "시",
+      "pinyin": "si",
+      "mongolian": "ㅅ + ㅣ",
+      "hskLevel": "KR1",
+      "exampleChinese": "시",
+      "exampleMongolian": "цаг/хот"
+    }
+  ],
+  "quizQuestions": [
+    {
+      "id": "p05_r1",
+      "type": "multiple_choice",
+      "question": "「음절」 гэдэг нь:",
+      "options": [
+        "үе (CV багц)",
+        "эгшиг",
+        "асуулт",
+        "орчуулга"
+      ],
+      "correctAnswer": "үе (CV багц)",
+      "explanation": "음절 = syllable"
+    },
+    {
+      "id": "p05_r2",
+      "type": "multiple_choice",
+      "question": "「가」-ийг бүтээх:",
+      "options": [
+        "ㄱ + ㅏ",
+        "ㄴ + ㅏ",
+        "ㄱ + ㅗ",
+        "ㅁ + ㅏ"
+      ],
+      "correctAnswer": "ㄱ + ㅏ",
+      "explanation": "가 = ㄱ+ㅏ"
+    },
+    {
+      "id": "p05_r3",
+      "type": "multiple_choice",
+      "question": "「무」-ийг бүтээх:",
+      "options": [
+        "ㅁ + ㅜ",
+        "ㅂ + ㅜ",
+        "ㅁ + ㅡ",
+        "ㄴ + ㅜ"
+      ],
+      "correctAnswer": "ㅁ + ㅜ",
+      "explanation": "무 = ㅁ+ㅜ"
+    },
+    {
+      "id": "p05_rd1",
+      "type": "multiple_choice",
+      "question": "「바」-ийг уншвал:",
+      "options": [
+        "ba",
+        "pa",
+        "ma",
+        "da"
+      ],
+      "correctAnswer": "ba",
+      "explanation": "바 = ㅂ+ㅏ"
+    },
+    {
+      "id": "p05_rd2",
+      "type": "multiple_choice",
+      "question": "「수」-ийг уншвал:",
+      "options": [
+        "su",
+        "si",
+        "so",
+        "sa"
+      ],
+      "correctAnswer": "su",
+      "explanation": "수 = ㅅ+ㅜ"
+    },
+    {
+      "id": "p05_rd3",
+      "type": "multiple_choice",
+      "question": "「지」-ийг уншвал:",
+      "options": [
+        "ji",
+        "gi",
+        "hi",
+        "bi"
+      ],
+      "correctAnswer": "ji",
+      "explanation": "지 = ㅈ+ㅣ"
+    },
+    {
+      "id": "p05_c1",
+      "type": "multiple_choice",
+      "question": "「ㄷ + ㅏ」 = ?",
+      "options": [
+        "다",
+        "나",
+        "라",
+        "가"
+      ],
+      "correctAnswer": "다",
+      "explanation": "ㄷ+ㅏ=다"
+    },
+    {
+      "id": "p05_c2",
+      "type": "multiple_choice",
+      "question": "「ㅎ + ㅏ」 = ?",
+      "options": [
+        "하",
+        "가",
+        "바",
+        "자"
+      ],
+      "correctAnswer": "하",
+      "explanation": "ㅎ+ㅏ=하"
+    },
+    {
+      "id": "p05_m1",
+      "type": "multiple_choice",
+      "question": "Солонгос үсэг ихэвчлэн:",
+      "options": [
+        "үеэр бичигддэг",
+        "дангаараа",
+        "латин үсгээр",
+        "зурагтай"
+      ],
+      "correctAnswer": "үеэр бичигддэг",
+      "explanation": "CV syllable blocks"
+    },
+    {
+      "id": "p05_m2",
+      "type": "multiple_choice",
+      "question": "「고」 = ㄱ + ?",
+      "options": [
+        "ㅗ",
+        "ㅏ",
+        "ㅜ",
+        "ㅣ"
+      ],
+      "correctAnswer": "ㅗ",
+      "explanation": "고 = ㄱ+ㅗ"
+    },
+    {
+      "id": "p05_x1",
+      "type": "multiple_choice",
+      "question": "「비」-ийг бүтээх:",
+      "options": [
+        "ㅂ + ㅣ",
+        "ㅍ + ㅣ",
+        "ㅁ + ㅣ",
+        "ㅅ + ㅣ"
+      ],
+      "correctAnswer": "ㅂ + ㅣ",
+      "explanation": "비 = ㅂ+ㅣ"
+    },
+    {
+      "id": "p05_x2",
+      "type": "cloze",
+      "question": "ㄴ + ㅗ = ____",
+      "options": [
+        "노",
+        "나",
+        "누",
+        "너"
+      ],
+      "correctAnswer": "노",
+      "explanation": "ㄴ+ㅗ=노"
+    }
+  ]
+}

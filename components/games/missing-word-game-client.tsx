@@ -10,14 +10,17 @@ import { GameResultCard } from "@/components/games/game-result-card";
 import { GameShell } from "@/components/games/game-shell";
 import { buildMissingWordItems } from "@/lib/games/game-data";
 import { saveGameResult } from "@/lib/games/game-progress";
+import { SpeakerButton } from "@/components/tts/speaker-button";
+import { resolveTtsLang } from "@/lib/tts/infer-lang";
 import type { GameVocabItem } from "@/lib/games/game-types";
 
 type Props = {
   lessonId: string;
+  courseId?: string;
   vocabulary: GameVocabItem[];
 };
 
-export function MissingWordGameClient({ lessonId, vocabulary }: Props) {
+export function MissingWordGameClient({ lessonId, courseId, vocabulary }: Props) {
   const questions = useMemo(
     () => buildMissingWordItems(vocabulary),
     [vocabulary]
@@ -31,6 +34,7 @@ export function MissingWordGameClient({ lessonId, vocabulary }: Props) {
 
   const current = questions[index];
   const total = questions.length;
+  const ttsLang = resolveTtsLang({ courseId });
 
   function finishGame(finalCorrect: number) {
     const finalScore = finalCorrect * 10;
@@ -115,9 +119,18 @@ export function MissingWordGameClient({ lessonId, vocabulary }: Props) {
       {current ? (
         <>
           <GameCard className="mb-4">
-            <p className="text-center text-xl font-medium leading-relaxed text-[var(--app-text)]">
-              {current.sentence}
-            </p>
+            <div className="flex items-start justify-center gap-2">
+              <p className="text-center text-xl font-medium leading-relaxed text-[var(--app-text)]">
+                {current.sentence}
+              </p>
+              <SpeakerButton
+                text={current.sentence.replace(/＿＿＿/g, current.correctAnswer)}
+                lang={ttsLang}
+                courseId={courseId}
+                size="sm"
+                label="Өгүүлбэр уншуулах"
+              />
+            </div>
             <p className="mt-2 text-center text-xs text-[var(--app-muted)]">
               {current.mongolianHint}
             </p>
@@ -144,7 +157,7 @@ export function MissingWordGameClient({ lessonId, vocabulary }: Props) {
             <button
               type="button"
               onClick={handleNext}
-              className="mt-4 min-h-[44px] w-full rounded-full bg-emerald-500 py-3 text-sm font-semibold text-white"
+              className="mt-4 min-h-[48px] w-full app-btn-primary py-3"
             >
               Дараах
             </button>

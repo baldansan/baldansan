@@ -1,0 +1,354 @@
+{
+  "_meta": {
+    "source": "draft",
+    "needsSourceAudit": true,
+    "sourceStatus": "needs_source_upload",
+    "sourceFileExpected": "Солонгос_Ном_PreLesson_Hangul_한글_Premium_Package.html",
+    "note": "Korean in chinese fields; romanization in pinyin. No HTML source in repo — draft from standard Hangul curriculum."
+  },
+  "lesson": {
+    "id": "k-pre-07",
+    "courseId": "korean-1",
+    "title": "PreLesson 07 — Унших дасгал",
+    "chineseTitle": "읽기 연습",
+    "subtitle": "가나다라, 한국, 학교, 사람 — унших дасгал",
+    "description": "Хангылийн бүх суурь мэдлэгийг ашиглан үг, мөр унших. Romanization болон монгол утга сонгох.",
+    "duration": "15 min",
+    "status": "draft",
+    "orderIndex": 6,
+    "mediaStatus": "missing",
+    "sourceNote": "Korean Book 1 PreLesson 07 — audio pending."
+  },
+  "subtitles": [
+    {
+      "start": "00:00",
+      "end": "00:08",
+      "chinese": "읽기 연습을 합니다.",
+      "pinyin": "Ilgi yeonseup-eul hamnida.",
+      "mongolian": "Унших дасгал хийе."
+    },
+    {
+      "start": "00:09",
+      "end": "00:16",
+      "chinese": "가나다라 마바사",
+      "pinyin": "ganadara mabasa",
+      "mongolian": "Эхний мөрүүд."
+    },
+    {
+      "start": "00:17",
+      "end": "00:24",
+      "chinese": "아자차카타파하",
+      "pinyin": "ajachakata paha",
+      "mongolian": "Гийгүүлэгчийн мөр."
+    },
+    {
+      "start": "00:25",
+      "end": "00:32",
+      "chinese": "한국, 몽골, 사람, 학교",
+      "pinyin": "Hanguk, Monggol, saram, hakgyo",
+      "mongolian": "Эхний үгс."
+    },
+    {
+      "start": "00:33",
+      "end": "00:40",
+      "chinese": "소리 내어 읽으세요.",
+      "pinyin": "Sori naeeo ilgeuseyo.",
+      "mongolian": "Дуугаар унш."
+    }
+  ],
+  "vocabulary": [
+    {
+      "id": "kr_p07_ganadara",
+      "chinese": "가나다라",
+      "pinyin": "ganadara",
+      "mongolian": "унших мөр (ga na da ra)",
+      "hskLevel": "KR1",
+      "exampleChinese": "가나다라",
+      "exampleMongolian": "ga na da ra"
+    },
+    {
+      "id": "kr_p07_mabasa",
+      "chinese": "마바사",
+      "pinyin": "mabasa",
+      "mongolian": "унших мөр (ma ba sa)",
+      "hskLevel": "KR1",
+      "exampleChinese": "마바사",
+      "exampleMongolian": "ma ba sa"
+    },
+    {
+      "id": "kr_p07_ajacha",
+      "chinese": "아자차카타파하",
+      "pinyin": "ajachakata paha",
+      "mongolian": "гийгүүлэгчийн мөр",
+      "hskLevel": "KR1",
+      "exampleChinese": "아자차카",
+      "exampleMongolian": "a ja cha ka …"
+    },
+    {
+      "id": "kr_p07_hanguk",
+      "chinese": "한국",
+      "pinyin": "hanguk",
+      "mongolian": "Солонгос",
+      "hskLevel": "KR1",
+      "exampleChinese": "한국어",
+      "exampleMongolian": "солонгос хэл"
+    },
+    {
+      "id": "kr_p07_monggol",
+      "chinese": "몽골",
+      "pinyin": "monggol",
+      "mongolian": "Монгол",
+      "hskLevel": "KR1",
+      "exampleChinese": "몽골 사람",
+      "exampleMongolian": "монгол хүн"
+    },
+    {
+      "id": "kr_p07_saram",
+      "chinese": "사람",
+      "pinyin": "saram",
+      "mongolian": "хүн",
+      "hskLevel": "KR1",
+      "exampleChinese": "한 사람",
+      "exampleMongolian": "нэг хүн"
+    },
+    {
+      "id": "kr_p07_ireum",
+      "chinese": "이름",
+      "pinyin": "ireum",
+      "mongolian": "нэр",
+      "hskLevel": "KR1",
+      "exampleChinese": "이름이 뭐예요?",
+      "exampleMongolian": "Нэр хэн бэ?"
+    },
+    {
+      "id": "kr_p07_hakgyo",
+      "chinese": "학교",
+      "pinyin": "hakgyo",
+      "mongolian": "сургууль",
+      "hskLevel": "KR1",
+      "exampleChinese": "학교에 가요.",
+      "exampleMongolian": "Сургууль руу яв."
+    },
+    {
+      "id": "kr_p07_il",
+      "chinese": "일",
+      "pinyin": "il",
+      "mongolian": "нэг / ажил",
+      "hskLevel": "KR1",
+      "exampleChinese": "하루",
+      "exampleMongolian": "нэг өдөр"
+    },
+    {
+      "id": "kr_p07_mul",
+      "chinese": "물",
+      "pinyin": "mul",
+      "mongolian": "ус",
+      "hskLevel": "KR1",
+      "exampleChinese": "물 주세요.",
+      "exampleMongolian": "Ус өгнө үү."
+    },
+    {
+      "id": "kr_p07_bap",
+      "chinese": "밥",
+      "pinyin": "bap",
+      "mongolian": "хоол",
+      "hskLevel": "KR1",
+      "exampleChinese": "밥 먹었어요?",
+      "exampleMongolian": "Хоол идсэн үү?"
+    },
+    {
+      "id": "kr_p07_hangul",
+      "chinese": "한글",
+      "pinyin": "hangeul",
+      "mongolian": "хангыль",
+      "hskLevel": "KR1",
+      "exampleChinese": "한글을 배워요.",
+      "exampleMongolian": "Хангыль суръя."
+    },
+    {
+      "id": "kr_p07_annyeong",
+      "chinese": "안녕",
+      "pinyin": "annyeong",
+      "mongolian": "сайн уу (энгийн)",
+      "hskLevel": "KR1",
+      "exampleChinese": "안녕!",
+      "exampleMongolian": "Сайн уу!"
+    },
+    {
+      "id": "kr_p07_ne",
+      "chinese": "네",
+      "pinyin": "ne",
+      "mongolian": "тийм",
+      "hskLevel": "KR1",
+      "exampleChinese": "네, 맞아요.",
+      "exampleMongolian": "Тийм, зөв."
+    },
+    {
+      "id": "kr_p07_aniyo",
+      "chinese": "아니요",
+      "pinyin": "aniyo",
+      "mongolian": "үгүй",
+      "hskLevel": "KR1",
+      "exampleChinese": "아니요.",
+      "exampleMongolian": "Үгүй."
+    }
+  ],
+  "quizQuestions": [
+    {
+      "id": "p07_r1",
+      "type": "multiple_choice",
+      "question": "「가나다라」-ийн romanization:",
+      "options": [
+        "ganadara",
+        "mabasa",
+        "hanguk",
+        "hakgyo"
+      ],
+      "correctAnswer": "ganadara",
+      "explanation": "Reading row"
+    },
+    {
+      "id": "p07_r2",
+      "type": "multiple_choice",
+      "question": "「학교」-ийн romanization:",
+      "options": [
+        "hakgyo",
+        "hanguk",
+        "saram",
+        "ireum"
+      ],
+      "correctAnswer": "hakgyo",
+      "explanation": "학교 = school"
+    },
+    {
+      "id": "p07_r3",
+      "type": "multiple_choice",
+      "question": "「사람」-ийн romanization:",
+      "options": [
+        "saram",
+        "mul",
+        "bap",
+        "il"
+      ],
+      "correctAnswer": "saram",
+      "explanation": "사람 = person"
+    },
+    {
+      "id": "p07_rd1",
+      "type": "multiple_choice",
+      "question": "「한국」-ийг унш:",
+      "options": [
+        "hanguk",
+        "monggol",
+        "hakgyo",
+        "hangeul"
+      ],
+      "correctAnswer": "hanguk",
+      "explanation": "한국"
+    },
+    {
+      "id": "p07_rd2",
+      "type": "multiple_choice",
+      "question": "「이름」-ийг унш:",
+      "options": [
+        "ireum",
+        "il",
+        "mul",
+        "bap"
+      ],
+      "correctAnswer": "ireum",
+      "explanation": "이름"
+    },
+    {
+      "id": "p07_rd3",
+      "type": "multiple_choice",
+      "question": "「아자차카타파하」 эхний үе:",
+      "options": [
+        "아 (a)",
+        "가 (ga)",
+        "하 (ha)",
+        "자 (ja)"
+      ],
+      "correctAnswer": "아 (a)",
+      "explanation": "Starts with 아"
+    },
+    {
+      "id": "p07_c1",
+      "type": "multiple_choice",
+      "question": "「몽골」 = romanization?",
+      "options": [
+        "monggol",
+        "hanguk",
+        "saram",
+        "ne"
+      ],
+      "correctAnswer": "monggol",
+      "explanation": "몽골"
+    },
+    {
+      "id": "p07_c2",
+      "type": "multiple_choice",
+      "question": "「물」 = romanization?",
+      "options": [
+        "mul",
+        "bap",
+        "il",
+        "mun"
+      ],
+      "correctAnswer": "mul",
+      "explanation": "물"
+    },
+    {
+      "id": "p07_m1",
+      "type": "multiple_choice",
+      "question": "「학교」-ийн утга:",
+      "options": [
+        "сургууль",
+        "Солонгос",
+        "хүн",
+        "ус"
+      ],
+      "correctAnswer": "сургууль",
+      "explanation": "학교 = school"
+    },
+    {
+      "id": "p07_m2",
+      "type": "multiple_choice",
+      "question": "「사람」-ийн утга:",
+      "options": [
+        "хүн",
+        "нэр",
+        "хоол",
+        "гар"
+      ],
+      "correctAnswer": "хүн",
+      "explanation": "사람 = person"
+    },
+    {
+      "id": "p07_x1",
+      "type": "multiple_choice",
+      "question": "「네」-ийн утга:",
+      "options": [
+        "тийм",
+        "үгүй",
+        "сайн уу",
+        "баяртай"
+      ],
+      "correctAnswer": "тийм",
+      "explanation": "네 = yes"
+    },
+    {
+      "id": "p07_x2",
+      "type": "cloze",
+      "question": "____을 배워요. (Хангыль суръя)",
+      "options": [
+        "한글",
+        "학교",
+        "물",
+        "밥"
+      ],
+      "correctAnswer": "한글",
+      "explanation": "한글을 배워요"
+    }
+  ]
+}

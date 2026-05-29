@@ -8,14 +8,17 @@ import { GameResultCard } from "@/components/games/game-result-card";
 import { GameShell } from "@/components/games/game-shell";
 import { buildMatchGameItems, shuffleArray } from "@/lib/games/game-data";
 import { saveGameResult } from "@/lib/games/game-progress";
+import { SpeakerButton } from "@/components/tts/speaker-button";
+import { resolveTtsLang } from "@/lib/tts/infer-lang";
 import type { GameVocabItem, MatchPair } from "@/lib/games/game-types";
 
 type Props = {
   lessonId: string;
+  courseId?: string;
   vocabulary: GameVocabItem[];
 };
 
-export function MatchGameClient({ lessonId, vocabulary }: Props) {
+export function MatchGameClient({ lessonId, courseId, vocabulary }: Props) {
   const pairs = useMemo(() => buildMatchGameItems(vocabulary), [vocabulary]);
   const leftItems = useMemo(
     () => shuffleArray(pairs.map((p) => ({ id: p.id, label: p.mongolian }))),
@@ -42,6 +45,7 @@ export function MatchGameClient({ lessonId, vocabulary }: Props) {
 
   const total = pairs.length;
   const matchedCount = matched.size;
+  const ttsLang = resolveTtsLang({ courseId });
 
   const tryMatch = useCallback(
     (leftId: string, rightId: string) => {
@@ -139,8 +143,8 @@ export function MatchGameClient({ lessonId, vocabulary }: Props) {
         progress={`${matchedCount}/${total}`}
         score={score}
       />
-      <div className="grid grid-cols-2 gap-2">
-        <GameCard className="flex min-h-[320px] flex-col gap-2 !p-2">
+      <div className="grid grid-cols-2 gap-3">
+        <GameCard className="flex min-h-[340px] flex-col gap-2 !p-2">
           {leftItems.map((item) => {
             const isMatched = matched.has(item.id);
             const isSelected = selectedLeft === item.id;
@@ -151,14 +155,14 @@ export function MatchGameClient({ lessonId, vocabulary }: Props) {
                 type="button"
                 disabled={isMatched}
                 onClick={() => handleLeft(item.id)}
-                className={`min-h-[52px] rounded-xl border px-2 py-2 text-left text-sm font-medium transition-colors ${
+                className={`min-h-[56px] rounded-xl border px-2 py-2.5 text-left text-sm font-medium transition-colors ${
                   isMatched
-                    ? "border-emerald-300 bg-emerald-50 text-emerald-800 opacity-60"
+                    ? "border-emerald-300 bg-emerald-50 text-emerald-800 opacity-70"
                     : isWrong
                       ? "border-red-400 bg-red-50 animate-pulse"
                       : isSelected
-                        ? "border-purple-400 bg-purple-50 ring-2 ring-purple-200"
-                        : "border-slate-200 bg-white active:bg-slate-50"
+                        ? "border-[var(--app-purple)] bg-[var(--app-purple-light)] ring-2 ring-purple-200"
+                        : "border-[var(--app-border)] bg-white shadow-sm active:bg-slate-50"
                 }`}
               >
                 {item.label}
@@ -166,30 +170,40 @@ export function MatchGameClient({ lessonId, vocabulary }: Props) {
             );
           })}
         </GameCard>
-        <GameCard className="flex min-h-[320px] flex-col gap-2 !p-2">
+        <GameCard className="flex min-h-[340px] flex-col gap-2 !p-2">
           {rightItems.map((item) => {
             const isMatched = matched.has(item.id);
             const isSelected = selectedRight === item.id;
             const isWrong = wrongFlash?.endsWith(item.id);
             return (
-              <button
+              <div
                 key={`r-${item.id}`}
-                type="button"
-                disabled={isMatched}
-                onClick={() => handleRight(item.id)}
-                className={`min-h-[52px] rounded-xl border px-2 py-2 text-left transition-colors ${
+                className={`flex min-h-[56px] items-center gap-1 rounded-xl border px-2 py-2.5 transition-colors ${
                   isMatched
-                    ? "border-emerald-300 bg-emerald-50 text-emerald-800 opacity-60"
+                    ? "border-emerald-300 bg-emerald-50 text-emerald-800 opacity-70"
                     : isWrong
                       ? "border-red-400 bg-red-50 animate-pulse"
                       : isSelected
-                        ? "border-purple-400 bg-purple-50 ring-2 ring-purple-200"
-                        : "border-slate-200 bg-white active:bg-slate-50"
+                        ? "border-[var(--app-purple)] bg-[var(--app-purple-light)] ring-2 ring-purple-200"
+                        : "border-[var(--app-border)] bg-white shadow-sm"
                 }`}
               >
-                <span className="block text-base font-bold">{item.label}</span>
-                <span className="text-xs text-emerald-700">{item.sub}</span>
-              </button>
+                <button
+                  type="button"
+                  disabled={isMatched}
+                  onClick={() => handleRight(item.id)}
+                  className="min-w-0 flex-1 text-left active:bg-slate-50 disabled:cursor-default"
+                >
+                  <span className="block text-base font-bold">{item.label}</span>
+                  <span className="text-xs text-emerald-700">{item.sub}</span>
+                </button>
+                <SpeakerButton
+                  text={item.label}
+                  lang={ttsLang}
+                  courseId={courseId}
+                  size="sm"
+                />
+              </div>
             );
           })}
         </GameCard>

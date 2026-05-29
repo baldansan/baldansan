@@ -1,5 +1,5 @@
 import { MatchGameClient } from "@/components/games/match-game-client";
-import { getLessonGameVocabulary } from "@/lib/games/game-data";
+import { getLessonGameContext } from "@/lib/games/game-data";
 
 export const dynamic = "force-dynamic";
 
@@ -13,6 +13,12 @@ type PageProps = {
 
 export default async function MatchGamePage({ searchParams }: PageProps) {
   const { lessonId = "1" } = await searchParams;
-  const vocabulary = await getLessonGameVocabulary(lessonId);
-  return <MatchGameClient lessonId={lessonId} vocabulary={vocabulary} />;
+  const { vocabulary, courseId } = await getLessonGameContext(lessonId);
+  return (
+    <MatchGameClient
+      lessonId={lessonId}
+      courseId={courseId}
+      vocabulary={vocabulary}
+    />
+  );
 }

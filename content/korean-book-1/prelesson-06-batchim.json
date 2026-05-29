@@ -1,0 +1,327 @@
+{
+  "_meta": {
+    "source": "draft",
+    "needsSourceAudit": true,
+    "sourceStatus": "needs_source_upload",
+    "sourceFileExpected": "Солонгос_Ном_PreLesson_Hangul_한글_Premium_Package.html",
+    "note": "Korean in chinese fields; romanization in pinyin. No HTML source in repo — draft from standard Hangul curriculum."
+  },
+  "lesson": {
+    "id": "k-pre-06",
+    "courseId": "korean-1",
+    "title": "PreLesson 06 — 받침",
+    "chineseTitle": "받침",
+    "subtitle": "Төгсгөлийн гийгүүлэгч — 한국, 몽골, 밥, 물, 집 …",
+    "description": "받침 гэдэг нь үеийн доор байрлах төгсгөлийн гийгүүлэгч юм. Үг унших дасгал.",
+    "duration": "15 min",
+    "status": "draft",
+    "orderIndex": 5,
+    "mediaStatus": "missing",
+    "sourceNote": "Korean Book 1 PreLesson 06 — audio pending."
+  },
+  "subtitles": [
+    {
+      "start": "00:00",
+      "end": "00:08",
+      "chinese": "받침은 음절 아래 자음입니다.",
+      "pinyin": "Batchim-eun eumjeol arae jaeum-imnida.",
+      "mongolian": "받침 = үеийн доод гийгүүлэгч."
+    },
+    {
+      "start": "00:09",
+      "end": "00:16",
+      "chinese": "한국, 몽골",
+      "pinyin": "Hanguk, Monggol",
+      "mongolian": "한국, 몽골 — батчимтай үг."
+    },
+    {
+      "start": "00:17",
+      "end": "00:24",
+      "chinese": "밥, 물, 집",
+      "pinyin": "Bap, mul, jip",
+      "mongolian": "밥 (хоол), 물 (ус), 집 (байр)."
+    },
+    {
+      "start": "00:25",
+      "end": "00:32",
+      "chinese": "일, 손, 문",
+      "pinyin": "Il, son, mun",
+      "mongolian": "일 (нэг/ажил), 손 (гар), 문 (хаалга)."
+    },
+    {
+      "start": "00:33",
+      "end": "00:40",
+      "chinese": "받침이 있으면 끝소리가 달라집니다.",
+      "pinyin": "Batchim-i isseumyeon kkeut-sori-ga dallajimnida.",
+      "mongolian": "Батчимтай үеийн төгсгөл өөр сонсогдоно."
+    }
+  ],
+  "vocabulary": [
+    {
+      "id": "kr_p06_batchim",
+      "chinese": "받침",
+      "pinyin": "batchim",
+      "mongolian": "төгсгөлийн гийгүүлэгч (үеийн доор)",
+      "hskLevel": "KR1",
+      "exampleChinese": "받침이 있어요.",
+      "exampleMongolian": "Батчимтай байна."
+    },
+    {
+      "id": "kr_p06_hanguk",
+      "chinese": "한국",
+      "pinyin": "hanguk",
+      "mongolian": "Солонгос (улс/хэл)",
+      "hskLevel": "KR1",
+      "exampleChinese": "한국 사람",
+      "exampleMongolian": "солонгос хүн"
+    },
+    {
+      "id": "kr_p06_monggol",
+      "chinese": "몽골",
+      "pinyin": "monggol",
+      "mongolian": "Монгол",
+      "hskLevel": "KR1",
+      "exampleChinese": "몽골 사람",
+      "exampleMongolian": "монгол хүн"
+    },
+    {
+      "id": "kr_p06_bap",
+      "chinese": "밥",
+      "pinyin": "bap",
+      "mongolian": "хоол / будаа",
+      "hskLevel": "KR1",
+      "exampleChinese": "밥을 먹어요.",
+      "exampleMongolian": "Хоол идье."
+    },
+    {
+      "id": "kr_p06_mul",
+      "chinese": "물",
+      "pinyin": "mul",
+      "mongolian": "ус",
+      "hskLevel": "KR1",
+      "exampleChinese": "물을 마셔요.",
+      "exampleMongolian": "Ус уу."
+    },
+    {
+      "id": "kr_p06_jip",
+      "chinese": "집",
+      "pinyin": "jip",
+      "mongolian": "байр, гэр",
+      "hskLevel": "KR1",
+      "exampleChinese": "집에 가요.",
+      "exampleMongolian": "Гэртээ явъя."
+    },
+    {
+      "id": "kr_p06_il",
+      "chinese": "일",
+      "pinyin": "il",
+      "mongolian": "нэг / ажил",
+      "hskLevel": "KR1",
+      "exampleChinese": "일을 해요.",
+      "exampleMongolian": "Ажил хий."
+    },
+    {
+      "id": "kr_p06_son",
+      "chinese": "손",
+      "pinyin": "son",
+      "mongolian": "гар",
+      "hskLevel": "KR1",
+      "exampleChinese": "손을 씻어요.",
+      "exampleMongolian": "Гараа уга."
+    },
+    {
+      "id": "kr_p06_mun",
+      "chinese": "문",
+      "pinyin": "mun",
+      "mongolian": "хаалга",
+      "hskLevel": "KR1",
+      "exampleChinese": "문을 열어요.",
+      "exampleMongolian": "Хаалга нээ."
+    },
+    {
+      "id": "kr_p06_han",
+      "chinese": "한",
+      "pinyin": "han",
+      "mongolian": "нэг / солонгос (한)",
+      "hskLevel": "KR1",
+      "exampleChinese": "한국",
+      "exampleMongolian": "Солонгос"
+    },
+    {
+      "id": "kr_p06_guk",
+      "chinese": "국",
+      "pinyin": "guk",
+      "mongolian": "улс",
+      "hskLevel": "KR1",
+      "exampleChinese": "한국",
+      "exampleMongolian": "Солонгос"
+    },
+    {
+      "id": "kr_p06_gol",
+      "chinese": "골",
+      "pinyin": "gol",
+      "mongolian": "гол (몽골)",
+      "hskLevel": "KR1",
+      "exampleChinese": "몽골",
+      "exampleMongolian": "Монгол"
+    }
+  ],
+  "quizQuestions": [
+    {
+      "id": "p06_r1",
+      "type": "multiple_choice",
+      "question": "「받침」 гэдэг нь:",
+      "options": [
+        "үеийн доод гийгүүлэгч",
+        "эгшиг",
+        "эхний гийгүүлэгч",
+        "асуулт"
+      ],
+      "correctAnswer": "үеийн доод гийгүүлэгч",
+      "explanation": "받침 = final consonant"
+    },
+    {
+      "id": "p06_r2",
+      "type": "multiple_choice",
+      "question": "「한국」-д батчимтай үе:",
+      "options": [
+        "한, 국",
+        "없음",
+        "한만",
+        "국만"
+      ],
+      "correctAnswer": "한, 국",
+      "explanation": "한(ㄴ), 국(ㄱ)"
+    },
+    {
+      "id": "p06_r3",
+      "type": "multiple_choice",
+      "question": "「물」-ийн батчим:",
+      "options": [
+        "ㄹ",
+        "ㄴ",
+        "ㅁ",
+        "ㅂ"
+      ],
+      "correctAnswer": "ㄹ",
+      "explanation": "물 = ㅁ+ㅜ+ㄹ"
+    },
+    {
+      "id": "p06_rd1",
+      "type": "multiple_choice",
+      "question": "「밥」-ийг уншвал:",
+      "options": [
+        "bap",
+        "baba",
+        "pap",
+        "bal"
+      ],
+      "correctAnswer": "bap",
+      "explanation": "밥 = bap"
+    },
+    {
+      "id": "p06_rd2",
+      "type": "multiple_choice",
+      "question": "「집」-ийг уншвал:",
+      "options": [
+        "jip",
+        "jibe",
+        "jib",
+        "chip"
+      ],
+      "correctAnswer": "jip",
+      "explanation": "집 = jip"
+    },
+    {
+      "id": "p06_rd3",
+      "type": "multiple_choice",
+      "question": "「문」-ийг уншвал:",
+      "options": [
+        "mun",
+        "munh",
+        "mon",
+        "man"
+      ],
+      "correctAnswer": "mun",
+      "explanation": "문 = mun"
+    },
+    {
+      "id": "p06_c1",
+      "type": "multiple_choice",
+      "question": "「몽골」 romanization:",
+      "options": [
+        "monggol",
+        "hanguk",
+        "hakgyo",
+        "saram"
+      ],
+      "correctAnswer": "monggol",
+      "explanation": "몽골 = monggol"
+    },
+    {
+      "id": "p06_c2",
+      "type": "multiple_choice",
+      "question": "Батчимтай үг сонго:",
+      "options": [
+        "물",
+        "아",
+        "오",
+        "야"
+      ],
+      "correctAnswer": "물",
+      "explanation": "물 has batchim ㄹ"
+    },
+    {
+      "id": "p06_m1",
+      "type": "multiple_choice",
+      "question": "「물」-ийн утга:",
+      "options": [
+        "ус",
+        "хоол",
+        "байр",
+        "гар"
+      ],
+      "correctAnswer": "ус",
+      "explanation": "물 = water"
+    },
+    {
+      "id": "p06_m2",
+      "type": "multiple_choice",
+      "question": "「일」-ийн утга (энэ хичээлд):",
+      "options": [
+        "нэг / ажил",
+        "ус",
+        "хаалга",
+        "Солонгос"
+      ],
+      "correctAnswer": "нэг / ажил",
+      "explanation": "일 = one/work"
+    },
+    {
+      "id": "p06_x1",
+      "type": "multiple_choice",
+      "question": "「손」-ийн утга:",
+      "options": [
+        "гар",
+        "хөл",
+        "ус",
+        "хоол"
+      ],
+      "correctAnswer": "гар",
+      "explanation": "손 = hand"
+    },
+    {
+      "id": "p06_x2",
+      "type": "cloze",
+      "question": "한____ (Солонгос)",
+      "options": [
+        "국",
+        "글",
+        "사",
+        "교"
+      ],
+      "correctAnswer": "국",
+      "explanation": "한국 = Korea"
+    }
+  ]
+}

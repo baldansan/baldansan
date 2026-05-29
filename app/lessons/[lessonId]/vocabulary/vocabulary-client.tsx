@@ -22,6 +22,8 @@ import {
   toggleLearnedWordSmart,
   vocabularyWordKey,
 } from "@/lib/progress";
+import { SpeakerButton } from "@/components/tts/speaker-button";
+import { resolveTtsLang } from "@/lib/tts/infer-lang";
 import type { LessonContent } from "@/types/lesson-content";
 import type { VocabularyFilter, VocabularyWord } from "@/types/lesson";
 
@@ -260,6 +262,10 @@ export function LessonVocabularyClient({
           filteredWords.map((word) => {
             const key = vocabularyWordKey(word);
             const isLearned = learned.has(key);
+            const ttsLang = resolveTtsLang({
+              courseId: lesson.courseId,
+              hskLevel: word.hskLevel,
+            });
             return (
               <article
                 key={key}
@@ -270,22 +276,43 @@ export function LessonVocabularyClient({
                 }
               >
                 <div className="flex items-start justify-between gap-3">
-                  <p className="text-2xl font-bold text-slate-900 sm:text-3xl">
-                    {word.chinese}
-                  </p>
-                  <span className="shrink-0 rounded-full bg-emerald-50 px-2.5 py-1 text-xs font-medium text-emerald-700 ring-1 ring-emerald-200">
-                    {word.hskLevel}
-                  </span>
+                  <div className="min-w-0 flex-1">
+                    <p className="text-2xl font-bold text-slate-900 sm:text-3xl">
+                      {word.chinese}
+                    </p>
+                    <p className="mt-1 text-sm text-emerald-700">{word.pinyin}</p>
+                  </div>
+                  <div className="flex shrink-0 items-start gap-2">
+                    <SpeakerButton
+                      text={word.chinese}
+                      lang={ttsLang}
+                      hskLevel={word.hskLevel}
+                      size="md"
+                    />
+                    <span className="shrink-0 rounded-full bg-emerald-50 px-2.5 py-1 text-xs font-medium text-emerald-700 ring-1 ring-emerald-200">
+                      {word.hskLevel}
+                    </span>
+                  </div>
                 </div>
-                <p className="mt-1 text-sm text-emerald-700">{word.pinyin}</p>
                 <p className="mt-2 text-sm leading-6 text-slate-600 break-words">
                   {word.mongolian}
                 </p>
 
                 <div className="mt-4 space-y-2 rounded-xl bg-slate-50 p-4 ring-1 ring-slate-200">
-                  <p className="text-sm text-slate-900 break-words">
-                    {word.exampleChinese}
-                  </p>
+                  <div className="flex items-start gap-2">
+                    <p className="min-w-0 flex-1 text-sm text-slate-900 break-words">
+                      {word.exampleChinese}
+                    </p>
+                    {word.exampleChinese ? (
+                      <SpeakerButton
+                        text={word.exampleChinese}
+                        lang={ttsLang}
+                        hskLevel={word.hskLevel}
+                        size="sm"
+                        label={`Жишээ уншуулах: ${word.exampleChinese}`}
+                      />
+                    ) : null}
+                  </div>
                   <p className="text-sm text-slate-600 break-words">
                     {word.exampleMongolian}
                   </p>

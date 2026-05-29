@@ -24,6 +24,8 @@ import {
   type QuizResult,
 } from "@/lib/progress";
 import { buildQuizDetailedAnswer, type QuizDetailedAnswer } from "@/lib/quiz-answers";
+import { SpeakerButton } from "@/components/tts/speaker-button";
+import { containsTargetScript, resolveTtsLang } from "@/lib/tts/infer-lang";
 import type { LessonContent } from "@/types/lesson-content";
 
 function getResultMessage(percent: number) {
@@ -56,6 +58,7 @@ export function LessonQuizClient({
 
   const current = lesson.quizQuestions[currentIndex];
   const isCorrect = selected === current?.correctAnswer;
+  const ttsLang = resolveTtsLang({ courseId: lesson.courseId });
 
   const questionProgressPercent = useMemo(() => {
     if (total === 0) return 0;
@@ -300,21 +303,41 @@ export function LessonQuizClient({
               <p className="text-xs font-medium uppercase tracking-wide text-slate-500">
                 {current.type === "cloze" ? "Нөхөх" : "Сонгох"}
               </p>
-              <h2 className="mt-2 text-lg font-semibold leading-snug text-slate-900 sm:text-xl">
-                {current.question}
-              </h2>
+              <div className="mt-2 flex items-start gap-2">
+                <h2 className="min-w-0 flex-1 text-lg font-semibold leading-snug text-slate-900 sm:text-xl">
+                  {current.question}
+                </h2>
+                {containsTargetScript(current.question) ? (
+                  <SpeakerButton
+                    text={current.question}
+                    lang={ttsLang}
+                    courseId={lesson.courseId}
+                    size="sm"
+                  />
+                ) : null}
+              </div>
 
               <div className="mt-5 flex flex-col gap-2.5">
                 {current.options.map((option) => (
-                  <button
-                    key={option}
-                    type="button"
-                    onClick={() => handleSelect(option)}
-                    disabled={revealed}
-                    className={optionClass(option)}
-                  >
-                    {option}
-                  </button>
+                  <div key={option} className="flex items-center gap-2">
+                    <button
+                      type="button"
+                      onClick={() => handleSelect(option)}
+                      disabled={revealed}
+                      className={`${optionClass(option)} flex-1`}
+                    >
+                      {option}
+                    </button>
+                    {containsTargetScript(option) ? (
+                      <SpeakerButton
+                        text={option}
+                        lang={ttsLang}
+                        courseId={lesson.courseId}
+                        size="sm"
+                        label={`Сонголт уншуулах: ${option}`}
+                      />
+                    ) : null}
+                  </div>
                 ))}
               </div>
 
@@ -335,9 +358,20 @@ export function LessonQuizClient({
                   >
                     {isCorrect ? "Зөв!" : "Буруу"}
                   </p>
-                  <p className="mt-2 text-sm leading-6 text-slate-700">
-                    {current.explanation}
-                  </p>
+                  <div className="mt-2 flex items-start gap-2">
+                    <p className="min-w-0 flex-1 text-sm leading-6 text-slate-700">
+                      {current.explanation}
+                    </p>
+                    {containsTargetScript(current.explanation) ? (
+                      <SpeakerButton
+                        text={current.explanation}
+                        lang={ttsLang}
+                        courseId={lesson.courseId}
+                        size="sm"
+                        label={`Тайлбар уншуулах`}
+                      />
+                    ) : null}
+                  </div>
                 </div>
               )}
 

@@ -16,6 +16,8 @@ import {
 import { SectionCard } from "@/components/ui/section-card";
 import { lessonPreviewPath } from "@/lib/lesson-publish";
 import { LEARNER_LESSON } from "@/lib/learner-labels";
+import { SpeakerButton } from "@/components/tts/speaker-button";
+import { resolveTtsLang } from "@/lib/tts/infer-lang";
 import type { LessonContent } from "@/types/lesson-content";
 import type { SubtitleMode, TimedSubtitle } from "@/types/lesson";
 
@@ -28,9 +30,11 @@ const modes: { id: SubtitleMode; label: string }[] = [
 function SubtitleLines({
   line,
   mode,
+  ttsLang,
 }: {
   line: TimedSubtitle;
   mode: SubtitleMode;
+  ttsLang: string;
 }) {
   if (mode === "mongolian") {
     return <p className="text-sm leading-6 text-slate-700">{line.mongolian}</p>;
@@ -38,9 +42,12 @@ function SubtitleLines({
 
   return (
     <>
-      <p className="text-base font-medium leading-snug text-slate-900 break-words">
-        {line.chinese}
-      </p>
+      <div className="flex items-start gap-2">
+        <p className="min-w-0 flex-1 text-base font-medium leading-snug text-slate-900 break-words">
+          {line.chinese}
+        </p>
+        <SpeakerButton text={line.chinese} lang={ttsLang} size="sm" />
+      </div>
       {(mode === "chinese" || mode === "both") && (
         <p className="mt-1 text-sm text-emerald-700">{line.pinyin}</p>
       )}
@@ -58,6 +65,7 @@ type Props = {
 
 export function LessonWatchClient({ lesson, adminPreview = false }: Props) {
   const [mode, setMode] = useState<SubtitleMode>("both");
+  const ttsLang = resolveTtsLang({ courseId: lesson.courseId });
 
   useEffect(() => {
     void markLessonStartedSmart(lesson.id);
@@ -129,7 +137,7 @@ export function LessonWatchClient({ lesson, adminPreview = false }: Props) {
               {line.start} – {line.end}
             </p>
             <div className="mt-3">
-              <SubtitleLines line={line} mode={mode} />
+              <SubtitleLines line={line} mode={mode} ttsLang={ttsLang} />
             </div>
           </article>
         ))}
