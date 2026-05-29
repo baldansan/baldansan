@@ -16,6 +16,7 @@ import {
   saveQuizResultSmart,
   type QuizResult,
 } from "@/lib/progress";
+import { buildQuizDetailedAnswer, type QuizDetailedAnswer } from "@/lib/quiz-answers";
 import type { LessonContent } from "@/types/lesson-content";
 
 function getResultMessage(percent: number) {
@@ -41,6 +42,7 @@ export function LessonQuizClient({
   const [selected, setSelected] = useState<string | null>(null);
   const [revealed, setRevealed] = useState(false);
   const [correctCount, setCorrectCount] = useState(0);
+  const [answerDetails, setAnswerDetails] = useState<QuizDetailedAnswer[]>([]);
   const [finished, setFinished] = useState(false);
   const [savedResult, setSavedResult] = useState<QuizResult | null>(null);
   const persistAttemptRef = useRef(false);
@@ -76,7 +78,8 @@ export function LessonQuizClient({
         lesson.id,
         correctCount,
         total,
-        percent
+        percent,
+        answerDetails
       );
       setSavedResult(result);
 
@@ -86,12 +89,17 @@ export function LessonQuizClient({
     }
 
     void save();
-  }, [finished, lesson.id, correctCount, total, percent]);
+  }, [finished, lesson.id, correctCount, total, percent, answerDetails]);
 
   function handleSelect(option: string) {
     if (!current || revealed) return;
     setSelected(option);
     setRevealed(true);
+    const orderIndex = current.orderIndex ?? currentIndex;
+    setAnswerDetails((prev) => [
+      ...prev,
+      buildQuizDetailedAnswer(current, orderIndex, option),
+    ]);
     if (option === current.correctAnswer) {
       setCorrectCount((c) => c + 1);
     }
@@ -112,6 +120,7 @@ export function LessonQuizClient({
     setSelected(null);
     setRevealed(false);
     setCorrectCount(0);
+    setAnswerDetails([]);
     setFinished(false);
     persistAttemptRef.current = false;
   }

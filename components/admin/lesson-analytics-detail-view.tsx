@@ -26,8 +26,17 @@ function formatRate(rate: number | null): string {
 }
 
 export function LessonAnalyticsDetailView({ detail }: Props) {
-  const { metrics, quiz, vocabulary, progress, contentWarnings, warnings } =
-    detail;
+  const {
+    metrics,
+    quiz,
+    vocabulary,
+    progress,
+    questionPerformance,
+    vocabularyEngagement,
+    contentWarnings,
+    warnings,
+    hasDetailedQuizAnswers,
+  } = detail;
 
   return (
     <div className="flex flex-col gap-8">
@@ -112,6 +121,110 @@ export function LessonAnalyticsDetailView({ detail }: Props) {
             value={vocabulary.uniqueLearnedWords}
           />
         </div>
+      </section>
+
+      <section>
+        <div className="flex flex-wrap items-center justify-between gap-2">
+          <h2 className="text-lg font-semibold text-slate-900">
+            Question performance
+          </h2>
+          <Link
+            href={`/admin/analytics/questions?lesson=${metrics.lessonId}`}
+            className="text-sm font-medium text-emerald-700 hover:text-emerald-800"
+          >
+            All question insights →
+          </Link>
+        </div>
+        {!hasDetailedQuizAnswers ? (
+          <p className="mt-3 text-sm text-slate-500">
+            Question-level analytics quiz attempts дотор detailed answers
+            хадгалагдсаны дараа харагдана. Older quiz attempts may not include
+            detailed answer data.
+          </p>
+        ) : questionPerformance.length === 0 ? (
+          <p className="mt-3 text-sm text-slate-500">
+            No per-question data for this lesson yet.
+          </p>
+        ) : (
+          <div className="mt-4 overflow-x-auto rounded-2xl bg-white shadow-sm ring-1 ring-slate-200">
+            <table className="min-w-full text-left text-sm">
+              <thead className="bg-slate-50 text-xs uppercase text-slate-500">
+                <tr>
+                  <th className="px-4 py-3">Question</th>
+                  <th className="px-4 py-3">Attempts</th>
+                  <th className="px-4 py-3">Accuracy</th>
+                  <th className="px-4 py-3">Correct answer</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-slate-100">
+                {questionPerformance.map((row) => (
+                  <tr key={row.questionKey}>
+                    <td className="max-w-md px-4 py-3">{row.question}</td>
+                    <td className="px-4 py-3">{row.attemptsCount}</td>
+                    <td className="px-4 py-3">
+                      {formatRate(row.accuracyPercent)}
+                      {row.needsReview ? (
+                        <span className="ml-2 text-xs text-amber-700">
+                          Needs review
+                        </span>
+                      ) : null}
+                    </td>
+                    <td className="px-4 py-3 text-xs">{row.correctAnswer}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        )}
+      </section>
+
+      <section>
+        <div className="flex flex-wrap items-center justify-between gap-2">
+          <h2 className="text-lg font-semibold text-slate-900">
+            Vocabulary engagement
+          </h2>
+          <Link
+            href={`/admin/analytics/vocabulary?lesson=${metrics.lessonId}`}
+            className="text-sm font-medium text-emerald-700 hover:text-emerald-800"
+          >
+            All vocabulary insights →
+          </Link>
+        </div>
+        {vocabularyEngagement.length === 0 ? (
+          <p className="mt-3 text-sm text-slate-500">
+            No vocabulary words for this lesson.
+          </p>
+        ) : (
+          <div className="mt-4 overflow-x-auto rounded-2xl bg-white shadow-sm ring-1 ring-slate-200">
+            <table className="min-w-full text-left text-sm">
+              <thead className="bg-slate-50 text-xs uppercase text-slate-500">
+                <tr>
+                  <th className="px-4 py-3">Word</th>
+                  <th className="px-4 py-3">Learned count</th>
+                  <th className="px-4 py-3">HSK</th>
+                  <th className="px-4 py-3">Engagement</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-slate-100">
+                {vocabularyEngagement.slice(0, 20).map((row) => (
+                  <tr key={row.vocabularyWordId}>
+                    <td className="px-4 py-3">
+                      <span className="font-medium">{row.chinese}</span>
+                      {row.pinyin ? (
+                        <span className="ml-2 text-xs text-slate-500">
+                          {row.pinyin}
+                        </span>
+                      ) : null}
+                    </td>
+                    <td className="px-4 py-3">{row.learnedCount}</td>
+                    <td className="px-4 py-3">{row.hskLevel || "—"}</td>
+                    <td className="px-4 py-3 capitalize">{row.engagement}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        )}
       </section>
 
       <section>

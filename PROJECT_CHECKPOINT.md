@@ -2,7 +2,23 @@
 
 **Project:** Buunduu Surtsgaay (Бөөндөө Сурцгаая)  
 **Checkpoint date:** May 2026  
-**Status:** Phase 4 **completed**; Phase 5 Step 18 per-lesson learning analytics **completed**
+**Status:** Phase 4 **completed**; Phase 5 Step 19 question/vocabulary insights **completed**
+
+---
+
+## Phase 5 Step 19 — Question-level quiz analytics & vocabulary engagement — **Completed**
+
+Phase 5 Step 19: Question-level quiz analytics and vocabulary engagement insights added.
+
+| Area | Deliverable |
+|------|-------------|
+| Quiz persistence | Detailed `answers` JSON array on new quiz attempts |
+| Routes | `/admin/analytics/questions`, `/admin/analytics/vocabulary` |
+| Analytics | Question + vocabulary helpers in `lib/supabase/admin-analytics.ts` |
+| Integration | Per-lesson analytics, main analytics, lesson edit links |
+| Docs | [ADMIN_QUESTION_ANALYTICS.md](./ADMIN_QUESTION_ANALYTICS.md), [ADMIN_VOCABULARY_ANALYTICS.md](./ADMIN_VOCABULARY_ANALYTICS.md) |
+
+**Next:** Phase 5 Step 20 — Content quality recommendations. Or Phase 5 Final Audit.
 
 ---
 
@@ -17,8 +33,6 @@ Phase 5 Step 18: Per-lesson learning analytics dashboard added.
 | UI | `lesson-analytics-table`, `lesson-analytics-detail-view`, performance badges |
 | Integration | Links from `/admin` and `/admin/lessons` |
 | Docs | [ADMIN_LEARNING_ANALYTICS.md](./ADMIN_LEARNING_ANALYTICS.md) |
-
-**Next:** Phase 5 Step 19 — Question-level quiz analytics. Or Phase 5 Final Audit.
 
 ---
 

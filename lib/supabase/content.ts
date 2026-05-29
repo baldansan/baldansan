@@ -210,6 +210,8 @@ function mapFullLesson(
     quizQuestions: quiz.map(
       (q): QuizQuestion => ({
         id: `${row.id}-q${q.order_index}`,
+        dbId: Number(q.id),
+        orderIndex: q.order_index,
         type: parseQuizType(q.type),
         question: q.question,
         options: parseOptions(q.options),

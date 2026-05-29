@@ -176,6 +176,27 @@ export function LessonEditForm({
         </span>
       </div>
 
+      <div className="flex flex-wrap gap-2 text-sm">
+        <Link
+          href={`/admin/analytics/lessons/${lesson.id}`}
+          className="inline-flex rounded-full border border-emerald-200 bg-emerald-50 px-4 py-2 font-semibold text-emerald-800 hover:bg-emerald-100"
+        >
+          View lesson analytics
+        </Link>
+        <Link
+          href={`/admin/analytics/questions?lesson=${lesson.id}`}
+          className="inline-flex rounded-full border border-slate-200 px-4 py-2 font-medium text-slate-700 hover:border-emerald-200 hover:text-emerald-700"
+        >
+          Question insights
+        </Link>
+        <Link
+          href={`/admin/analytics/vocabulary?lesson=${lesson.id}`}
+          className="inline-flex rounded-full border border-slate-200 px-4 py-2 font-medium text-slate-700 hover:border-emerald-200 hover:text-emerald-700"
+        >
+          Vocabulary insights
+        </Link>
+      </div>
+
       <AdminToolGroup
         title="Metadata"
         description="Гарчиг, статус, order index — Supabase-д хадгална."

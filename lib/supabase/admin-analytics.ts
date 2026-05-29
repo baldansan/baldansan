@@ -9,6 +9,10 @@ import { getAdminPublishStatus } from "@/lib/admin/lesson-status";
 import type { LessonQaReport, LessonQaStatus } from "@/lib/admin/lesson-qa";
 import { canonicalLessonId, lessonIdsMatch } from "@/lib/lesson-id";
 import {
+  parseQuizAttemptAnswers,
+  questionAnalyticsKey,
+} from "@/lib/quiz-answers";
+import {
   hasAudioUrl,
   hasThumbnailUrl,
   hasVideoUrl,
@@ -643,9 +647,12 @@ export type LessonAnalyticsDetail = {
   quiz: LessonQuizAnalytics;
   vocabulary: LessonVocabularyAnalytics;
   progress: LessonProgressAnalytics;
+  questionPerformance: QuestionAnalyticsRow[];
+  vocabularyEngagement: VocabularyEngagementRow[];
   contentWarnings: string[];
   warnings: string[];
   limitedByRls: boolean;
+  hasDetailedQuizAnswers: boolean;
 };
 
 type ProgressSnapshot = {
@@ -669,8 +676,19 @@ type ProgressSnapshot = {
     score: number;
     total: number;
     percentage: number;
+    answers: unknown;
     created_at: string;
   }>;
+  vocabularyWords: Array<{
+    id: number;
+    lesson_id: string;
+    chinese: string;
+    pinyin: string | null;
+    mongolian: string;
+    hsk_level: string | null;
+    order_index: number;
+  }>;
+  lessonTitleById: Map<string, string>;
   wordIdToLessonId: Map<number, string>;
   warnings: string[];
   limitedByRls: boolean;
@@ -697,6 +715,8 @@ async function fetchProgressSnapshot(): Promise<ProgressSnapshot> {
     lessonProgress: [],
     vocabProgress: [],
     quizAttempts: [],
+    vocabularyWords: [],
+    lessonTitleById: new Map(),
     wordIdToLessonId: new Map(),
     warnings: [],
     limitedByRls: false,
@@ -712,7 +732,7 @@ async function fetchProgressSnapshot(): Promise<ProgressSnapshot> {
   }
 
   try {
-    const [lessonProgress, vocabProgress, quizAttempts, vocabWords] =
+    const [lessonProgress, vocabProgress, quizAttempts, vocabWords, lessons] =
       await Promise.all([
         client
           .from("user_lesson_progress")
@@ -725,9 +745,14 @@ async function fetchProgressSnapshot(): Promise<ProgressSnapshot> {
         client
           .from("user_quiz_attempts")
           .select(
-            "id, lesson_id, user_id, score, total, percentage, created_at"
+            "id, lesson_id, user_id, score, total, percentage, answers, created_at"
           ),
-        client.from("vocabulary_words").select("id, lesson_id"),
+        client
+          .from("vocabulary_words")
+          .select(
+            "id, lesson_id, chinese, pinyin, mongolian, hsk_level, order_index"
+          ),
+        client.from("lessons").select("id, title"),
       ]);
 
     const errors = [
@@ -735,6 +760,7 @@ async function fetchProgressSnapshot(): Promise<ProgressSnapshot> {
       vocabProgress.error,
       quizAttempts.error,
       vocabWords.error,
+      lessons.error,
     ].filter(Boolean);
 
     if (errors.length > 0) {
@@ -753,6 +779,14 @@ async function fetchProgressSnapshot(): Promise<ProgressSnapshot> {
       );
     }
 
+    const lessonTitleById = new Map<string, string>();
+    for (const lesson of lessons.data ?? []) {
+      lessonTitleById.set(
+        canonicalLessonId(String(lesson.id)),
+        String(lesson.title ?? lesson.id)
+      );
+    }
+
     const limitedByRls =
       (lessonProgress.data ?? []).length === 0 &&
       (vocabProgress.data ?? []).length === 0 &&
@@ -768,6 +802,8 @@ async function fetchProgressSnapshot(): Promise<ProgressSnapshot> {
       lessonProgress: (lessonProgress.data ?? []) as ProgressSnapshot["lessonProgress"],
       vocabProgress: (vocabProgress.data ?? []) as ProgressSnapshot["vocabProgress"],
       quizAttempts: (quizAttempts.data ?? []) as ProgressSnapshot["quizAttempts"],
+      vocabularyWords: (vocabWords.data ?? []) as ProgressSnapshot["vocabularyWords"],
+      lessonTitleById,
       wordIdToLessonId,
       warnings,
       limitedByRls,
@@ -1022,6 +1058,26 @@ export async function getLessonAnalyticsById(
     snapshot
   );
   const progress = await getLessonProgressAnalytics(normalizedId, snapshot);
+  const questionPerformance = getQuestionLevelAnalyticsByLesson(
+    normalizedId,
+    snapshot
+  );
+  const vocabularyEngagement = getVocabularyEngagementByLesson(
+    normalizedId,
+    snapshot
+  );
+  const hasDetailedQuizAnswers = snapshot.quizAttempts.some((row) =>
+    lessonIdsMatch(row.lesson_id, normalizedId)
+      ? parseQuizAttemptAnswers(row.answers).length > 0
+      : false
+  );
+
+  const detailWarnings = [...new Set([...snapshot.warnings, ...quiz.warnings])];
+  if (!hasDetailedQuizAnswers && quiz.attemptCount > 0) {
+    detailWarnings.push(
+      "Older quiz attempts may not include detailed answer data."
+    );
+  }
 
   return {
     metrics,
@@ -1034,10 +1090,361 @@ export async function getLessonAnalyticsById(
     },
     vocabulary,
     progress,
+    questionPerformance,
+    vocabularyEngagement,
     contentWarnings: report.warnings,
-    warnings: [...new Set([...snapshot.warnings, ...quiz.warnings])],
+    warnings: detailWarnings,
     limitedByRls: snapshot.limitedByRls,
+    hasDetailedQuizAnswers,
   };
 }
 
 export { shortenUserId as shortenUserIdForDisplay };
+
+// ---------------------------------------------------------------------------
+// Question-level & vocabulary engagement analytics (Phase 5 Step 19)
+// ---------------------------------------------------------------------------
+
+export type QuestionAnalyticsRow = {
+  lessonId: string;
+  lessonTitle: string;
+  questionKey: string;
+  questionId?: string | number;
+  orderIndex: number;
+  question: string;
+  type: string;
+  correctAnswer: string;
+  attemptsCount: number;
+  correctCount: number;
+  wrongCount: number;
+  accuracyPercent: number | null;
+  mostCommonWrongAnswers: string[];
+  needsReview: boolean;
+};
+
+export type VocabularyEngagementLevel = "high" | "medium" | "low" | "none";
+
+export type VocabularyEngagementRow = {
+  vocabularyWordId: number;
+  lessonId: string;
+  lessonTitle: string;
+  chinese: string;
+  pinyin: string;
+  mongolian: string;
+  hskLevel: string;
+  learnedCount: number;
+  uniqueLearnersCount: number;
+  engagement: VocabularyEngagementLevel;
+};
+
+export type QuestionInsightsOverview = {
+  totalQuizAttempts: number;
+  totalAnsweredQuestions: number;
+  averageQuestionAccuracy: number | null;
+  difficultQuestionsCount: number;
+  questions: QuestionAnalyticsRow[];
+  hasDetailedAnswers: boolean;
+  warnings: string[];
+  limitedByRls: boolean;
+};
+
+export type VocabularyInsightsOverview = {
+  totalVocabularyWords: number;
+  learnedRows: number;
+  uniqueLearnedWords: number;
+  wordsNeverLearned: number;
+  words: VocabularyEngagementRow[];
+  warnings: string[];
+  limitedByRls: boolean;
+};
+
+export type AnalyticsQuickSummary = {
+  difficultQuestionsCount: number;
+  wordsNeverLearnedCount: number;
+};
+
+const DIFFICULT_QUESTION_ACCURACY_THRESHOLD = 70;
+
+type QuestionAggregate = {
+  lessonId: string;
+  questionKey: string;
+  questionId?: string | number;
+  orderIndex: number;
+  question: string;
+  type: string;
+  correctAnswer: string;
+  attemptsCount: number;
+  correctCount: number;
+  wrongAnswers: string[];
+};
+
+function lessonTitleFor(
+  snapshot: ProgressSnapshot,
+  lessonId: string
+): string {
+  return snapshot.lessonTitleById.get(canonicalLessonId(lessonId)) ?? lessonId;
+}
+
+function aggregateQuestionRows(
+  snapshot: ProgressSnapshot,
+  lessonFilter?: string
+): QuestionAnalyticsRow[] {
+  const aggregates = new Map<string, QuestionAggregate>();
+
+  for (const attempt of snapshot.quizAttempts) {
+    const lessonId = canonicalLessonId(attempt.lesson_id);
+    if (lessonFilter && !lessonIdsMatch(lessonId, lessonFilter)) continue;
+
+    const answers = parseQuizAttemptAnswers(attempt.answers);
+    for (const answer of answers) {
+      const key = `${lessonId}::${questionAnalyticsKey(answer)}`;
+      const existing = aggregates.get(key);
+      if (!existing) {
+        aggregates.set(key, {
+          lessonId,
+          questionKey: questionAnalyticsKey(answer),
+          questionId: answer.questionId ?? answer.dbId,
+          orderIndex: answer.orderIndex,
+          question: answer.question,
+          type: String(answer.type),
+          correctAnswer: answer.correctAnswer,
+          attemptsCount: 1,
+          correctCount: answer.isCorrect ? 1 : 0,
+          wrongAnswers: answer.isCorrect ? [] : [answer.selectedAnswer],
+        });
+        continue;
+      }
+
+      existing.attemptsCount += 1;
+      if (answer.isCorrect) {
+        existing.correctCount += 1;
+      } else {
+        existing.wrongAnswers.push(answer.selectedAnswer);
+      }
+    }
+  }
+
+  return [...aggregates.values()]
+    .map((row) => {
+      const wrongCount = row.attemptsCount - row.correctCount;
+      const accuracyPercent =
+        row.attemptsCount > 0
+          ? Math.round((row.correctCount / row.attemptsCount) * 100)
+          : null;
+      const wrongFrequency = new Map<string, number>();
+      for (const wrong of row.wrongAnswers) {
+        wrongFrequency.set(wrong, (wrongFrequency.get(wrong) ?? 0) + 1);
+      }
+      const mostCommonWrongAnswers = [...wrongFrequency.entries()]
+        .sort((a, b) => b[1] - a[1])
+        .slice(0, 3)
+        .map(([answer]) => answer);
+
+      return {
+        lessonId: row.lessonId,
+        lessonTitle: lessonTitleFor(snapshot, row.lessonId),
+        questionKey: row.questionKey,
+        questionId: row.questionId,
+        orderIndex: row.orderIndex,
+        question: row.question,
+        type: row.type,
+        correctAnswer: row.correctAnswer,
+        attemptsCount: row.attemptsCount,
+        correctCount: row.correctCount,
+        wrongCount,
+        accuracyPercent,
+        mostCommonWrongAnswers,
+        needsReview:
+          row.attemptsCount >= 1 &&
+          accuracyPercent != null &&
+          accuracyPercent < DIFFICULT_QUESTION_ACCURACY_THRESHOLD,
+      };
+    })
+    .sort((a, b) => {
+      const lessonCmp = Number(a.lessonId) - Number(b.lessonId);
+      if (lessonCmp !== 0) return lessonCmp;
+      return a.orderIndex - b.orderIndex;
+    });
+}
+
+function vocabularyEngagementLevel(
+  learnedCount: number
+): VocabularyEngagementLevel {
+  if (learnedCount <= 0) return "none";
+  if (learnedCount <= 2) return "low";
+  if (learnedCount <= 5) return "medium";
+  return "high";
+}
+
+function buildVocabularyEngagementRows(
+  snapshot: ProgressSnapshot,
+  lessonFilter?: string
+): VocabularyEngagementRow[] {
+  const learnedByWord = new Map<number, { count: number; users: Set<string> }>();
+
+  for (const row of snapshot.vocabProgress) {
+    if (row.status !== "learned") continue;
+    const current = learnedByWord.get(row.vocabulary_word_id) ?? {
+      count: 0,
+      users: new Set<string>(),
+    };
+    current.count += 1;
+    if (row.user_id) current.users.add(row.user_id);
+    learnedByWord.set(row.vocabulary_word_id, current);
+  }
+
+  return snapshot.vocabularyWords
+    .filter((word) => {
+      const lessonId = canonicalLessonId(word.lesson_id);
+      return !lessonFilter || lessonIdsMatch(lessonId, lessonFilter);
+    })
+    .map((word) => {
+      const lessonId = canonicalLessonId(word.lesson_id);
+      const stats = learnedByWord.get(Number(word.id));
+      const learnedCount = stats?.count ?? 0;
+      return {
+        vocabularyWordId: Number(word.id),
+        lessonId,
+        lessonTitle: lessonTitleFor(snapshot, lessonId),
+        chinese: word.chinese,
+        pinyin: word.pinyin ?? "",
+        mongolian: word.mongolian,
+        hskLevel: word.hsk_level ?? "",
+        learnedCount,
+        uniqueLearnersCount: stats?.users.size ?? 0,
+        engagement: vocabularyEngagementLevel(learnedCount),
+      };
+    })
+    .sort((a, b) => {
+      const lessonCmp = Number(a.lessonId) - Number(b.lessonId);
+      if (lessonCmp !== 0) return lessonCmp;
+      return a.chinese.localeCompare(b.chinese);
+    });
+}
+
+export async function getQuestionLevelAnalytics(): Promise<QuestionAnalyticsRow[]> {
+  const snapshot = await fetchProgressSnapshot();
+  return aggregateQuestionRows(snapshot);
+}
+
+export function getQuestionLevelAnalyticsByLesson(
+  lessonId: string,
+  snapshot: ProgressSnapshot
+): QuestionAnalyticsRow[] {
+  return aggregateQuestionRows(snapshot, canonicalLessonId(lessonId));
+}
+
+export async function getDifficultQuestions(
+  limit: number
+): Promise<QuestionAnalyticsRow[]> {
+  const snapshot = await fetchProgressSnapshot();
+  return aggregateQuestionRows(snapshot)
+    .filter((row) => row.needsReview)
+    .sort((a, b) => (a.accuracyPercent ?? 100) - (b.accuracyPercent ?? 100))
+    .slice(0, limit);
+}
+
+export async function getVocabularyEngagementAnalytics(): Promise<
+  VocabularyEngagementRow[]
+> {
+  const snapshot = await fetchProgressSnapshot();
+  return buildVocabularyEngagementRows(snapshot);
+}
+
+export function getVocabularyEngagementByLesson(
+  lessonId: string,
+  snapshot: ProgressSnapshot
+): VocabularyEngagementRow[] {
+  return buildVocabularyEngagementRows(snapshot, canonicalLessonId(lessonId));
+}
+
+export async function getMostLearnedVocabulary(
+  limit: number
+): Promise<VocabularyEngagementRow[]> {
+  const snapshot = await fetchProgressSnapshot();
+  return buildVocabularyEngagementRows(snapshot)
+    .filter((row) => row.learnedCount > 0)
+    .sort((a, b) => b.learnedCount - a.learnedCount)
+    .slice(0, limit);
+}
+
+export async function getLeastLearnedVocabulary(
+  limit: number
+): Promise<VocabularyEngagementRow[]> {
+  const snapshot = await fetchProgressSnapshot();
+  return buildVocabularyEngagementRows(snapshot)
+    .sort((a, b) => a.learnedCount - b.learnedCount)
+    .slice(0, limit);
+}
+
+export async function getQuestionInsightsOverview(): Promise<QuestionInsightsOverview> {
+  const snapshot = await fetchProgressSnapshot();
+  const questions = aggregateQuestionRows(snapshot);
+  const hasDetailedAnswers = snapshot.quizAttempts.some(
+    (row) => parseQuizAttemptAnswers(row.answers).length > 0
+  );
+
+  let totalAnsweredQuestions = 0;
+  let totalCorrect = 0;
+  for (const row of questions) {
+    totalAnsweredQuestions += row.attemptsCount;
+    totalCorrect += row.correctCount;
+  }
+
+  const warnings = [...snapshot.warnings];
+  if (!hasDetailedAnswers && snapshot.quizAttempts.length > 0) {
+    warnings.push(
+      "Older quiz attempts may not include detailed answer data."
+    );
+  }
+
+  return {
+    totalQuizAttempts: snapshot.quizAttempts.length,
+    totalAnsweredQuestions,
+    averageQuestionAccuracy:
+      totalAnsweredQuestions > 0
+        ? Math.round((totalCorrect / totalAnsweredQuestions) * 100)
+        : null,
+    difficultQuestionsCount: questions.filter((q) => q.needsReview).length,
+    questions,
+    hasDetailedAnswers,
+    warnings: [...new Set(warnings)],
+    limitedByRls: snapshot.limitedByRls,
+  };
+}
+
+export async function getVocabularyInsightsOverview(): Promise<VocabularyInsightsOverview> {
+  const snapshot = await fetchProgressSnapshot();
+  const words = buildVocabularyEngagementRows(snapshot);
+
+  const learnedRows = snapshot.vocabProgress.filter(
+    (row) => row.status === "learned"
+  ).length;
+  const uniqueLearnedWords = new Set(
+    learnedRows > 0
+      ? snapshot.vocabProgress
+          .filter((row) => row.status === "learned")
+          .map((row) => row.vocabulary_word_id)
+      : []
+  ).size;
+
+  return {
+    totalVocabularyWords: words.length,
+    learnedRows,
+    uniqueLearnedWords,
+    wordsNeverLearned: words.filter((w) => w.learnedCount === 0).length,
+    words,
+    warnings: snapshot.warnings,
+    limitedByRls: snapshot.limitedByRls,
+  };
+}
+
+export async function getAnalyticsQuickSummary(): Promise<AnalyticsQuickSummary> {
+  const snapshot = await fetchProgressSnapshot();
+  const questions = aggregateQuestionRows(snapshot);
+  const words = buildVocabularyEngagementRows(snapshot);
+  return {
+    difficultQuestionsCount: questions.filter((q) => q.needsReview).length,
+    wordsNeverLearnedCount: words.filter((w) => w.learnedCount === 0).length,
+  };
+}

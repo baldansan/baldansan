@@ -78,6 +78,9 @@ export type QuizQuestionType = "multiple_choice" | "cloze";
 
 export type QuizQuestion = {
   id: string;
+  /** Supabase quiz_questions.id when loaded from DB. */
+  dbId?: number;
+  orderIndex?: number;
   type: QuizQuestionType;
   question: string;
   options: string[];

@@ -15,6 +15,8 @@ export type QuizResult = {
   percentage: number;
   bestPercentage: number;
   updatedAt: string;
+  /** Latest attempt per-question answers (local only; Supabase stores full attempt history). */
+  answers?: import("@/lib/quiz-answers").QuizDetailedAnswer[];
 };
 
 type ProgressStore = {
@@ -127,7 +129,8 @@ export function saveQuizResult(
   lessonId: string,
   score: number,
   total: number,
-  percentage: number
+  percentage: number,
+  answers?: import("@/lib/quiz-answers").QuizDetailedAnswer[]
 ): QuizResult {
   if (!isBrowser()) {
     return {
@@ -152,6 +155,7 @@ export function saveQuizResult(
     percentage,
     bestPercentage,
     updatedAt: new Date().toISOString(),
+    ...(answers?.length ? { answers } : {}),
   };
 
   store.quizzes[lessonId] = result;
@@ -808,9 +812,18 @@ export async function saveQuizResultSmart(
   score: number,
   total: number,
   percentage: number,
-  answers: Record<string, unknown> = {}
+  answers:
+    | import("@/lib/quiz-answers").QuizDetailedAnswer[]
+    | Record<string, unknown> = []
 ): Promise<QuizResult> {
-  const localResult = saveQuizResult(lessonId, score, total, percentage);
+  const detailedAnswers = Array.isArray(answers) ? answers : undefined;
+  const localResult = saveQuizResult(
+    lessonId,
+    score,
+    total,
+    percentage,
+    detailedAnswers
+  );
 
   const { getAuthenticatedUserId, hasSupabaseConfig } = await import(
     "@/lib/supabase/auth"

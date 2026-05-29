@@ -255,7 +255,14 @@ Phased roadmap from MVP demo to production product.
 - Extended [lib/supabase/admin-analytics.ts](./lib/supabase/admin-analytics.ts) — per-lesson metrics
 - [ADMIN_LEARNING_ANALYTICS.md](./ADMIN_LEARNING_ANALYTICS.md)
 
-**Next:** Phase 5 Step 19 — Question-level quiz analytics and difficult vocabulary insights. Or Phase 5 Final Audit.
+**Phase 5 Step 19 — Completed:** Question-level quiz analytics and vocabulary engagement insights.
+
+- Detailed quiz answers JSON on new attempts — [lib/quiz-answers.ts](./lib/quiz-answers.ts), [app/lessons/[lessonId]/quiz/quiz-client.tsx](./app/lessons/[lessonId]/quiz/quiz-client.tsx)
+- Routes: `/admin/analytics/questions`, `/admin/analytics/vocabulary`
+- Extended [lib/supabase/admin-analytics.ts](./lib/supabase/admin-analytics.ts) — question + vocabulary engagement helpers
+- [ADMIN_QUESTION_ANALYTICS.md](./ADMIN_QUESTION_ANALYTICS.md), [ADMIN_VOCABULARY_ANALYTICS.md](./ADMIN_VOCABULARY_ANALYTICS.md)
+
+**Next:** Phase 5 Step 20 — Admin content quality recommendations / AI-assisted improvement workflow. Or Phase 5 Final Audit.
 - [components/admin/bulk-import-editor.tsx](./components/admin/bulk-import-editor.tsx) on lesson edit page
 - [LESSON_IMPORT_FORMAT.md](./LESSON_IMPORT_FORMAT.md)
 
@@ -286,8 +293,9 @@ Phased roadmap from MVP demo to production product.
 | 16 | Supabase Storage media upload | ✅ Completed |
 | 17 | Admin analytics / content metrics dashboard | ✅ Completed |
 | 18 | Per-lesson learning analytics | ✅ Completed |
+| 19 | Question-level quiz analytics + vocabulary engagement | ✅ Completed |
 
-**Next (Phase 5):** Step 19 — Question-level quiz analytics. Or Phase 5 Final Audit.
+**Next (Phase 5):** Step 20 — Admin content quality recommendations / AI-assisted improvement workflow. Or Phase 5 Final Audit.
 
 **Exit criteria:** New lesson published through admin UI without deploying code.
 

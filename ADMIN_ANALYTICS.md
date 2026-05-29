@@ -24,6 +24,15 @@ Helper: [lib/supabase/admin-analytics.ts](./lib/supabase/admin-analytics.ts)
 
 **Per-lesson learning analytics (Step 18):** [ADMIN_LEARNING_ANALYTICS.md](./ADMIN_LEARNING_ANALYTICS.md) — `/admin/analytics` and `/admin/analytics/lessons/{id}`.
 
+**Question & vocabulary insights (Step 19):**
+
+| Route | Doc |
+|-------|-----|
+| `/admin/analytics/questions` | [ADMIN_QUESTION_ANALYTICS.md](./ADMIN_QUESTION_ANALYTICS.md) |
+| `/admin/analytics/vocabulary` | [ADMIN_VOCABULARY_ANALYTICS.md](./ADMIN_VOCABULARY_ANALYTICS.md) |
+
+New quiz attempts store detailed per-question answers in `user_quiz_attempts.answers` (JSON array). Older attempts without answer details are handled gracefully.
+
 ---
 
 ## How metrics are calculated

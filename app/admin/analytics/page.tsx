@@ -1,6 +1,10 @@
+import Link from "next/link";
 import { AnalyticsMetricCard } from "@/components/admin/analytics-metric-card";
 import { LessonAnalyticsTable } from "@/components/admin/lesson-analytics-table";
-import { getLessonAnalyticsOverview } from "@/lib/supabase/admin-analytics";
+import {
+  getAnalyticsQuickSummary,
+  getLessonAnalyticsOverview,
+} from "@/lib/supabase/admin-analytics";
 
 export const dynamic = "force-dynamic";
 
@@ -9,7 +13,10 @@ export const metadata = {
 };
 
 export default async function AdminAnalyticsPage() {
-  const overview = await getLessonAnalyticsOverview();
+  const [overview, quickSummary] = await Promise.all([
+    getLessonAnalyticsOverview(),
+    getAnalyticsQuickSummary(),
+  ]);
 
   const avgScore =
     overview.averageQuizScore != null
@@ -60,6 +67,36 @@ export default async function AdminAnalyticsPage() {
             value={overview.totalQuizAttempts}
           />
           <AnalyticsMetricCard label="Avg quiz score" value={avgScore} />
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-lg font-semibold text-slate-900">Deep insights</h2>
+        <div className="mt-3 grid gap-3 sm:grid-cols-2">
+          <Link
+            href="/admin/analytics/questions"
+            className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 transition-colors hover:ring-emerald-200"
+          >
+            <p className="font-semibold text-slate-900">Question insights</p>
+            <p className="mt-1 text-sm text-slate-600">
+              Quiz асуулт бүрийн зөв/буруу хариултын үзүүлэлт.
+            </p>
+            <p className="mt-2 text-xs text-amber-800">
+              {quickSummary.difficultQuestionsCount} difficult question(s)
+            </p>
+          </Link>
+          <Link
+            href="/admin/analytics/vocabulary"
+            className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 transition-colors hover:ring-emerald-200"
+          >
+            <p className="font-semibold text-slate-900">Vocabulary insights</p>
+            <p className="mt-1 text-sm text-slate-600">
+              Хамгийн их/бага сурсан үгс, engagement.
+            </p>
+            <p className="mt-2 text-xs text-amber-800">
+              {quickSummary.wordsNeverLearnedCount} word(s) never learned
+            </p>
+          </Link>
         </div>
       </section>
 

@@ -85,12 +85,19 @@ Flags lessons with:
 
 4. **No service_role** — All reads use anon key + admin/user JWT.
 
+5. **Question-level data** — Requires detailed answers on new quiz attempts (Step 19). See [ADMIN_QUESTION_ANALYTICS.md](./ADMIN_QUESTION_ANALYTICS.md).
+
 ---
 
-## Future improvements (Step 19+)
+## Related docs (Step 19)
 
-- Question-level quiz analytics (hardest questions)
-- Word difficulty / hardest vocabulary insights
+- [ADMIN_QUESTION_ANALYTICS.md](./ADMIN_QUESTION_ANALYTICS.md) — difficult questions, accuracy, wrong-answer patterns
+- [ADMIN_VOCABULARY_ANALYTICS.md](./ADMIN_VOCABULARY_ANALYTICS.md) — most/least learned vocabulary
+
+---
+
+## Future improvements
+
 - Daily active learners
 - Retention and completion funnels
 - Admin RLS policies for fleet-wide progress reads
@@ -101,4 +108,6 @@ Flags lessons with:
 ## Related docs
 
 - [ADMIN_ANALYTICS.md](./ADMIN_ANALYTICS.md) — main admin dashboard metrics
+- [ADMIN_QUESTION_ANALYTICS.md](./ADMIN_QUESTION_ANALYTICS.md) — question-level quiz insights (Step 19)
+- [ADMIN_VOCABULARY_ANALYTICS.md](./ADMIN_VOCABULARY_ANALYTICS.md) — vocabulary engagement (Step 19)
 - [ADMIN_PLAN.md](./ADMIN_PLAN.md) — Phase 5 roadmap

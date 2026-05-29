@@ -137,6 +137,8 @@ Helpers: [lib/supabase/auth.ts](./lib/supabase/auth.ts). Header shows **Нэвт
 - [MEDIA_WORKFLOW.md](./MEDIA_WORKFLOW.md) — lesson media URL metadata (video, thumbnail, audio)
 - [ADMIN_ANALYTICS.md](./ADMIN_ANALYTICS.md) — admin dashboard metrics and RLS notes
 - [ADMIN_LEARNING_ANALYTICS.md](./ADMIN_LEARNING_ANALYTICS.md) — per-lesson learner progress and quiz analytics
+- [ADMIN_QUESTION_ANALYTICS.md](./ADMIN_QUESTION_ANALYTICS.md) — question-level quiz performance insights
+- [ADMIN_VOCABULARY_ANALYTICS.md](./ADMIN_VOCABULARY_ANALYTICS.md) — vocabulary engagement (most/least learned)
 - [MEDIA_UPLOAD_WORKFLOW.md](./MEDIA_UPLOAD_WORKFLOW.md) — Supabase Storage upload for lesson media
 - [LESSON_IMPORT_FORMAT.md](./LESSON_IMPORT_FORMAT.md) — bulk JSON import format (ChatGPT paste)
 - [LESSON_EXPORT_FORMAT.md](./LESSON_EXPORT_FORMAT.md) — full lesson JSON backup export
@@ -160,7 +162,7 @@ Helpers: [lib/supabase/auth.ts](./lib/supabase/auth.ts). Header shows **Нэвт
 
 **Media:** `/admin/lessons/{id}/edit` → upload thumbnail/audio/video to Supabase Storage, or paste URLs manually. See [MEDIA_UPLOAD_WORKFLOW.md](./MEDIA_UPLOAD_WORKFLOW.md) and [MEDIA_WORKFLOW.md](./MEDIA_WORKFLOW.md).
 
-**Next step:** Phase 5 Step 19 — Question-level quiz analytics. Or Phase 5 Final Audit.
+**Next step:** Phase 5 Step 20 — Admin content quality recommendations / AI-assisted improvement workflow. Or Phase 5 Final Audit.
 
 ## Documentation
 

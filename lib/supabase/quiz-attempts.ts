@@ -1,5 +1,10 @@
 import { hasSupabaseConfig, supabase } from "@/lib/supabase/client";
+import type { QuizDetailedAnswer } from "@/lib/quiz-answers";
 import type { QuizResult, QuizResultEntry } from "@/lib/progress";
+
+export type QuizAttemptAnswers =
+  | QuizDetailedAnswer[]
+  | Record<string, unknown>;
 
 export type UserQuizAttemptRow = {
   id: string;
@@ -8,7 +13,7 @@ export type UserQuizAttemptRow = {
   score: number;
   total: number;
   percentage: number;
-  answers: Record<string, unknown>;
+  answers: QuizAttemptAnswers;
   created_at: string;
 };
 
@@ -128,7 +133,7 @@ export async function saveSupabaseQuizAttempt(
   score: number,
   total: number,
   percentage: number,
-  answers: Record<string, unknown> = {}
+  answers: QuizAttemptAnswers = []
 ): Promise<QuizAttemptsResult<UserQuizAttemptRow>> {
   if (!supabase) {
     return notConfigured();

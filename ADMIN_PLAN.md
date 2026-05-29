@@ -107,6 +107,9 @@ See [CONTENT_WORKFLOW.md](./CONTENT_WORKFLOW.md):
 | 16 | Supabase Storage media upload | ✅ Completed |
 | 17 | Admin analytics / content metrics dashboard | ✅ Completed |
 | 18 | Per-lesson learning analytics | ✅ Completed |
+| 19 | Question-level quiz analytics + vocabulary engagement insights | ✅ Completed |
+
+Step 19: [ADMIN_QUESTION_ANALYTICS.md](./ADMIN_QUESTION_ANALYTICS.md), [ADMIN_VOCABULARY_ANALYTICS.md](./ADMIN_VOCABULARY_ANALYTICS.md), `/admin/analytics/questions`, `/admin/analytics/vocabulary`, detailed quiz `answers` JSON on new attempts.
 
 Step 18: [ADMIN_LEARNING_ANALYTICS.md](./ADMIN_LEARNING_ANALYTICS.md), `/admin/analytics`, `/admin/analytics/lessons/[lessonId]`.
 
