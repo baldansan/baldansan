@@ -1,10 +1,13 @@
 import Link from "next/link";
 import { LessonEditForm } from "@/components/admin/lesson-edit-form";
 import { EmptyState } from "@/components/empty-state";
-import { getAdminLessonById } from "@/lib/admin/lesson-fetch";
-import { analyzeLessonQa } from "@/lib/admin/lesson-qa";
 import {
-  getAdminLessonMetadataById,
+  getAdminLessonById,
+  getAdminLessonOrderIndex,
+} from "@/lib/admin/lesson-fetch";
+import { analyzeLessonQa } from "@/lib/admin/lesson-qa";
+import { normalizeLessonRouteId } from "@/lib/lesson-id";
+import {
   getLessonCompleteness,
   type LessonCompleteness,
 } from "@/lib/supabase/admin-content";
@@ -22,13 +25,14 @@ export async function generateMetadata({ params }: Props) {
 
 export default async function AdminEditLessonPage({ params }: Props) {
   const { lessonId } = await params;
-  const lesson = await getAdminLessonById(lessonId);
+  const normalizedId = normalizeLessonRouteId(lessonId);
+  const lesson = await getAdminLessonById(normalizedId);
 
   if (!lesson) {
     return (
       <EmptyState
           title="Хичээл олдсонгүй"
-          description={`"${lessonId}" ID-тай хичээл байхгүй. Supabase эсвэл local fallback шалгана уу.`}
+          description={`"${normalizedId}" ID-тай хичээл байхгүй. Supabase эсвэл local fallback шалгана уу.`}
           action={
             <Link
               href="/admin/lessons"
@@ -41,14 +45,14 @@ export default async function AdminEditLessonPage({ params }: Props) {
     );
   }
 
-  const completenessResult = await getLessonCompleteness(lessonId);
+  const completenessResult = await getLessonCompleteness(normalizedId);
   const initialCompleteness: LessonCompleteness =
     completenessResult.data ?? completenessFromLesson(lesson);
 
-  const metaResult = await getAdminLessonMetadataById(lessonId);
+  const orderIndexFromServer = await getAdminLessonOrderIndex(normalizedId);
   const orderIndex =
-    metaResult.data?.order_index ??
-    (Number.isFinite(Number(lessonId)) ? Number(lessonId) : 1);
+    orderIndexFromServer ??
+    (Number.isFinite(Number(normalizedId)) ? Number(normalizedId) : 1);
 
   return (
     <LessonEditForm

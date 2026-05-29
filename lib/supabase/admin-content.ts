@@ -1,4 +1,9 @@
 import type { AdminContentStatus } from "@/lib/admin/lesson-status";
+import {
+  canonicalLessonId,
+  lessonIdQueryCandidates,
+  normalizeLessonRouteId,
+} from "@/lib/lesson-id";
 import { isCurrentUserAdmin } from "@/lib/supabase/admin";
 import { hasSupabaseConfig, supabase } from "@/lib/supabase/client";
 
@@ -62,6 +67,45 @@ const VALID_LESSON_STATUSES: AdminContentStatus[] = [
 
 function isValidLessonStatus(status: string): status is AdminContentStatus {
   return (VALID_LESSON_STATUSES as string[]).includes(status);
+}
+
+async function queryLessonById<T extends Record<string, unknown>>(
+  select: string,
+  lessonId: string
+): Promise<{ data: T | null; error: string | null }> {
+  if (!supabase) {
+    return { data: null, error: "Supabase not configured." };
+  }
+
+  const normalizedId = normalizeLessonRouteId(lessonId);
+  const candidates = lessonIdQueryCandidates(normalizedId);
+
+  for (const candidate of candidates) {
+    const { data, error } = await supabase
+      .from("lessons")
+      .select(select)
+      .eq("id", candidate)
+      .maybeSingle();
+
+    if (error) {
+      return { data: null, error: formatWriteError(error) };
+    }
+    if (data) {
+      if (typeof candidate === "number") {
+        console.warn("[lesson-id] Admin content resolved lesson using numeric id", {
+          lessonId: normalizedId,
+          candidate,
+        });
+      }
+      return { data: data as unknown as T, error: null };
+    }
+  }
+
+  return { data: null, error: null };
+}
+
+function lessonIdForChildRows(lessonId: string): string {
+  return canonicalLessonId(normalizeLessonRouteId(lessonId));
 }
 
 export type CreateDraftLessonInput = {
@@ -340,22 +384,19 @@ export async function getAdminLessonMetadataById(
   }
 
   try {
-    const { data, error } = await supabase
-      .from("lessons")
-      .select(
-        "id, course_id, title, chinese_title, subtitle, description, duration, status, order_index, vocabulary_count, quiz_count, video_url, thumbnail_url, audio_url, source_note, media_status"
-      )
-      .eq("id", lessonId)
-      .maybeSingle();
+    const result = await queryLessonById<AdminLessonMetadataRow>(
+      "id, course_id, title, chinese_title, subtitle, description, duration, status, order_index, vocabulary_count, quiz_count, video_url, thumbnail_url, audio_url, source_note, media_status",
+      lessonId
+    );
 
-    if (error) {
-      return { data: null, error: formatWriteError(error) };
+    if (result.error) {
+      return { data: null, error: result.error };
     }
-    if (!data) {
+    if (!result.data) {
       return { data: null, error: "Хичээл олдсонгүй." };
     }
 
-    return { data: data as AdminLessonMetadataRow, error: null };
+    return { data: result.data, error: null };
   } catch {
     return { data: null, error: "Metadata уншихад алдаа гарлаа." };
   }

@@ -1,4 +1,5 @@
 import { hsk5Course } from "@/content/courses/hsk5";
+import { canonicalLessonId, normalizeLessonRouteId } from "@/lib/lesson-id";
 import { lessonsByCourseId } from "@/content/courses/hsk5/lessons";
 import { courses } from "@/data/courses";
 import {
@@ -62,7 +63,10 @@ export function coursePath(courseId: string) {
 }
 
 export function getLocalLessonById(lessonId: string): LessonContent | undefined {
-  return allLessons.find((lesson) => lesson.id === lessonId);
+  const normalized = normalizeLessonRouteId(lessonId);
+  return allLessons.find(
+    (lesson) => canonicalLessonId(lesson.id) === normalized
+  );
 }
 
 export function getLocalLessonsByCourseId(courseId: string): LessonContent[] {
@@ -140,10 +144,11 @@ async function withSupabaseListFallback<T>(
 export async function getLessonById(
   lessonId: string
 ): Promise<LessonContent | undefined> {
+  const normalizedId = normalizeLessonRouteId(lessonId);
   const lesson = await withSupabaseFallback(
-    `getLessonById(${lessonId})`,
-    () => getSupabaseLessonById(lessonId),
-    () => getLocalLessonById(lessonId)
+    `getLessonById(${normalizedId})`,
+    () => getSupabaseLessonById(normalizedId),
+    () => getLocalLessonById(normalizedId)
   );
 
   if (!lesson) {
