@@ -20,6 +20,12 @@ export default async function Home() {
 
   return (
     <PublicPageShell active="home" showBottomNav>
+      <Link
+        href="/home"
+        className="mb-2 flex items-center justify-center gap-2 rounded-2xl bg-emerald-500 px-4 py-3 text-sm font-semibold text-white shadow-sm"
+      >
+        📱 Апп горим руу нэвтрэх →
+      </Link>
       <HomeMobileExtras lessonIds={lessonIds} />
       <section className="rounded-3xl bg-white p-6 shadow-sm ring-1 ring-slate-200 sm:p-10">
         <p className="text-sm font-semibold uppercase tracking-wide text-emerald-600">

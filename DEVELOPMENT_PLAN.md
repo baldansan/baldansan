@@ -507,7 +507,19 @@ Phased roadmap from MVP demo to production product.
 
 ---
 
-**Next:** HSK4/HSK5 content upload sprint after mobile UX polish.
+**Next:** HSK4/HSK5 content upload sprint after mobile app redesign.
+
+---
+
+## v1.0 Mobile App-Like Redesign — **Completed**
+
+- Report — [MOBILE_APP_REDESIGN_REPORT.md](./MOBILE_APP_REDESIGN_REPORT.md)
+- Phone shell (430px), bottom nav (5 tabs), app routes `/home` `/study` `/kanji` `/games`
+- Profile menu redesign; lesson/login/signup in app shell
+- Games hub placeholder → quiz/review links
+- No schema/RLS changes
+
+**Next:** HSK4/HSK5 content upload sprint.
 
 ---
 

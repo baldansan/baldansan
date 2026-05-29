@@ -2,7 +2,21 @@
 
 **Project:** Buunduu Surtsgaay (Бөөндөө Сурцгаая)  
 **Checkpoint date:** May 2026  
-**Status:** v1.0 Mobile UX polish pass **completed** before content upload
+**Status:** v1.0 mobile app-like redesign **completed** before content upload
+
+---
+
+## v1.0 Mobile App-Like Redesign — **Completed**
+
+| Area | Deliverable |
+|------|-------------|
+| Report | [MOBILE_APP_REDESIGN_REPORT.md](./MOBILE_APP_REDESIGN_REPORT.md) |
+| Shell | Centered 430px phone container, soft gray outer background |
+| Nav | Bottom tabs: Нүүр, Давтах, Ханз, Тоглоом, Профайл |
+| Routes | `/home`, `/study`, `/kanji`, `/games` + profile/lesson flow |
+| Components | `components/mobile/mobile-app-shell`, `mobile-bottom-nav`, etc. |
+
+**Next:** HSK4/HSK5 content upload sprint.
 
 ---
 

@@ -8,11 +8,13 @@ A Mongolian–Chinese language learning web app. Users learn Chinese through sho
 
 **Production URL:** https://baldansan.vercel.app
 
-**In scope:** Home, courses, HSK5 lesson flow (watch → vocabulary → quiz), review, dashboard, profile, login/signup, progress save, admin CMS for content fixes. **Mobile-first** learner UX (bottom nav, touch-friendly CTAs, 960px layout) — see [MOBILE_UX_POLISH_REPORT.md](./MOBILE_UX_POLISH_REPORT.md).
+**In scope:** Home, courses, HSK5 lesson flow (watch → vocabulary → quiz), review, dashboard, profile, login/signup, progress save, admin CMS for content fixes.
+
+**Mobile app-like learner UI** — centered phone shell (430px), bottom tab nav, routes `/home`, `/study`, `/kanji`, `/games`, `/profile`. See [MOBILE_APP_REDESIGN_REPORT.md](./MOBILE_APP_REDESIGN_REPORT.md) and [MOBILE_UX_POLISH_REPORT.md](./MOBILE_UX_POLISH_REPORT.md).
 
 **Out of scope for v1.0:** Payment, email campaigns, full B2B SaaS, native app. B2B/classroom routes are **foundation only** — they must not block learner launch.
 
-See [V1_LAUNCH_STABILIZATION.md](./V1_LAUNCH_STABILIZATION.md), [V1_LAUNCH_BLOCKERS.md](./V1_LAUNCH_BLOCKERS.md), [V1_STABILIZATION_REPORT.md](./V1_STABILIZATION_REPORT.md), [MOBILE_UX_POLISH_REPORT.md](./MOBILE_UX_POLISH_REPORT.md), [SUPABASE_MIGRATION_STATUS.md](./SUPABASE_MIGRATION_STATUS.md).
+See [V1_LAUNCH_STABILIZATION.md](./V1_LAUNCH_STABILIZATION.md), [V1_LAUNCH_BLOCKERS.md](./V1_LAUNCH_BLOCKERS.md), [V1_STABILIZATION_REPORT.md](./V1_STABILIZATION_REPORT.md), [MOBILE_APP_REDESIGN_REPORT.md](./MOBILE_APP_REDESIGN_REPORT.md), [MOBILE_UX_POLISH_REPORT.md](./MOBILE_UX_POLISH_REPORT.md), [SUPABASE_MIGRATION_STATUS.md](./SUPABASE_MIGRATION_STATUS.md).
 
 ## Tech stack
 

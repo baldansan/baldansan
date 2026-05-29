@@ -1,10 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import { ReviewContinueCard } from "@/components/review-continue-card";
 import { useEffect, useMemo, useState } from "react";
-import { AppHeader } from "@/components/app-header";
-import { BottomNav } from "@/components/bottom-nav";
+import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
+import { ReviewContinueCard } from "@/components/review-continue-card";
 import { EmptyState } from "@/components/empty-state";
 import { LocalProgressNote } from "@/components/local-progress-note";
 import { lessonPath, lessonVocabularyPath } from "@/lib/content";
@@ -158,26 +157,22 @@ export function ReviewDashboard({ lessons, lessonIds }: Props) {
 
   if (!ready) {
     return (
-      <div className="min-h-screen bg-gradient-to-b from-emerald-50/40 via-white to-white text-slate-900">
-        <AppHeader active="review" />
-        <main className="mx-auto flex w-full max-w-5xl flex-col gap-6 px-4 py-16 pb-24 sm:px-6 md:pb-10">
-          <p className="text-center text-sm text-slate-500">Ачааллаж байна...</p>
-        </main>
-        <BottomNav />
-      </div>
+      <MobileAppShell activeTab="study">
+        <p className="py-16 text-center text-sm text-[var(--app-muted)]">
+          Ачааллаж байна...
+        </p>
+      </MobileAppShell>
     );
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-emerald-50/40 via-white to-white text-slate-900">
-      <AppHeader active="review" />
-
-      <main className="mx-auto flex w-full max-w-5xl flex-col gap-6 px-4 pb-24 pt-2 sm:gap-8 sm:px-6 md:pb-10">
+    <MobileAppShell activeTab="study">
+      <div className="flex flex-col gap-5">
         <section>
-          <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">
+          <h1 className="text-xl font-bold tracking-tight text-[var(--app-text)]">
             Давтах үгс
           </h1>
-          <p className="mt-2 text-base text-slate-600">
+          <p className="mt-2 text-sm text-[var(--app-muted)]">
             Энэ төхөөрөмж дээр хадгалагдсан сурсан үгс болон quiz ахиц.
           </p>
           <div className="mt-3">
@@ -400,9 +395,7 @@ export function ReviewDashboard({ lessons, lessonIds }: Props) {
             })
           )}
         </section>
-      </main>
-
-      <BottomNav />
-    </div>
+      </div>
+    </MobileAppShell>
   );
 }

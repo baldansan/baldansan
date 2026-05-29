@@ -150,7 +150,7 @@ export function LessonQuizClient({
   }
 
   return (
-    <LearnerPageShell>
+    <LearnerPageShell activeTab="games">
       {adminPreview ? <AdminPreviewBanner /> : null}
       <div className="flex flex-col gap-2 sm:flex-row sm:flex-wrap sm:gap-4">
         <Link

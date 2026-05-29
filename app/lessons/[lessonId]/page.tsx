@@ -1,9 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { AdminPreviewBanner } from "@/components/admin-preview-banner";
-import { AppFooter } from "@/components/app-footer";
-import { AppHeader } from "@/components/app-header";
-import { BottomNav } from "@/components/bottom-nav";
+import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
 import { LessonDetailMediaSection } from "@/components/lesson-media-display";
 import { LessonDetailOverview } from "@/components/lesson-detail-overview";
 import { LessonProgressCard } from "@/components/lesson-progress-card";
@@ -53,14 +51,12 @@ export default async function LessonDetailPage({
   const vocabularyPreview = lesson.vocabulary.slice(0, 3);
 
   return (
-    <div className="min-h-screen overflow-x-hidden bg-gradient-to-b from-emerald-50/40 via-white to-white text-slate-900">
-      <AppHeader />
-
-      <main className="mx-auto flex w-full max-w-[960px] flex-col gap-6 px-4 pb-32 pt-2 sm:gap-8 sm:px-6 md:pb-10">
+    <MobileAppShell activeTab="study">
+      <div className="flex flex-col gap-5">
         {adminPreview ? <AdminPreviewBanner /> : null}
         <Link
           href={coursePath(lesson.courseId)}
-          className="inline-flex w-fit items-center text-sm font-medium text-slate-600 transition-colors hover:text-emerald-600"
+          className="inline-flex w-fit items-center text-sm font-medium text-[var(--app-muted)] transition-colors hover:text-emerald-600"
         >
           ← Курс руу буцах
         </Link>
@@ -166,10 +162,7 @@ export default async function LessonDetailPage({
 
         <LessonProgressCard lessonId={lesson.id} />
         <TeacherAssignmentCta lessonId={lesson.id} />
-      </main>
-
-      <AppFooter />
-      <BottomNav />
-    </div>
+      </div>
+    </MobileAppShell>
   );
 }

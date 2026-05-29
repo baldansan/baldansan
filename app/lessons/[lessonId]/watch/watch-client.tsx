@@ -64,7 +64,7 @@ export function LessonWatchClient({ lesson, adminPreview = false }: Props) {
   }, [lesson.id]);
 
   return (
-    <LearnerPageShell>
+    <LearnerPageShell activeTab="home">
       {adminPreview ? <AdminPreviewBanner /> : null}
       <Link
         href={lessonPreviewPath(lesson.id, { adminPreview })}

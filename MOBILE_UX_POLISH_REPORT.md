@@ -119,3 +119,9 @@ Test on **375px width** (iPhone SE / Android small):
 **Ready for content upload sprint** after deploy + quick mobile smoke test on production.
 
 No new features added. Build must pass before deploy.
+
+---
+
+## Mobile app-like redesign (May 2026)
+
+Mobile app-like redesign applied with phone shell, bottom nav (Нүүр / Давтах / Ханз / Тоглоом / Профайл), and `/home`, `/study`, `/kanji`, `/games` views. See [MOBILE_APP_REDESIGN_REPORT.md](./MOBILE_APP_REDESIGN_REPORT.md).

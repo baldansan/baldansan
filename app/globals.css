@@ -4,6 +4,18 @@
   --background: #ffffff;
   --foreground: #171717;
   --learner-max-width: 960px;
+  --app-outer: #eef2f7;
+  --app-bg: #f3f6fb;
+  --app-card: #ffffff;
+  --app-primary: #52c900;
+  --app-primary-dark: #3da800;
+  --app-text: #0f172a;
+  --app-muted: #64748b;
+  --app-border: #e2e8f0;
+  --app-radius: 20px;
+  --app-orange: #f97316;
+  --app-purple: #8b5cf6;
+  --app-blue: #3b82f6;
 }
 
 @theme inline {
@@ -25,10 +37,25 @@ body {
   max-width: 100vw;
 }
 
-/* Keep learner app green/white even when OS prefers dark mode */
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #ffffff;
     --foreground: #171717;
   }
+}
+
+.app-chip {
+  @apply shrink-0 rounded-full border border-[var(--app-border)] bg-white px-3.5 py-2 text-xs font-semibold text-[var(--app-muted)] transition-colors;
+}
+
+.app-chip-active {
+  @apply border-emerald-200 bg-emerald-500 text-white;
+}
+
+.app-stat-pill {
+  @apply rounded-full bg-white px-3 py-1 text-xs font-medium text-[var(--app-muted)] ring-1 ring-[var(--app-border)];
+}
+
+.app-menu-row {
+  @apply flex w-full items-center gap-3 border-b border-[var(--app-border)] px-4 py-3.5 text-left text-sm font-medium text-[var(--app-text)] last:border-b-0 transition-colors active:bg-slate-50;
 }

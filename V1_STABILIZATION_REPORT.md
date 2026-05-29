@@ -131,6 +131,17 @@ See [V1_LAUNCH_BLOCKERS.md](./V1_LAUNCH_BLOCKERS.md).
 
 ---
 
+## v1.0 Mobile App-Like Redesign — **Completed**
+
+- Learner-facing mobile app shell redesign completed — see [MOBILE_APP_REDESIGN_REPORT.md](./MOBILE_APP_REDESIGN_REPORT.md)
+- Phone-width centered layout, bottom tab nav, home/study/kanji/games/profile views
+- Lesson flow, login/signup aligned to app shell
+- No new backend features; build verified
+
+**Next:** HSK4/HSK5 content upload sprint.
+
+---
+
 ## v1.0 Mobile UX Polish — **Completed**
 
 - Mobile UX polish pass completed — see [MOBILE_UX_POLISH_REPORT.md](./MOBILE_UX_POLISH_REPORT.md)
