@@ -5,7 +5,10 @@ import {
   normalizeLessonRouteId,
 } from "@/lib/lesson-id";
 import { getLessonPublishStatus } from "@/lib/lesson-publish";
-import { isAdminPreviewParam } from "@/lib/preview-params";
+import {
+  isAdminPreviewParam,
+  parsePreviewParam,
+} from "@/lib/preview-params";
 import { isCurrentUserAdminServer } from "@/lib/supabase/admin-server";
 import {
   getLessonRouteStatus,
@@ -21,6 +24,7 @@ export type LessonPageAccess =
       publishStatus: LessonPublishStatus;
       showAdminLink: boolean;
       showAdminPreviewLink: boolean;
+      accessDenied?: boolean;
     }
   | { kind: "ok"; lesson: LessonContent; adminPreview: boolean };
 
@@ -28,6 +32,13 @@ function publishStatusFromRouteStatus(status: string): LessonPublishStatus {
   if (status === "available") return "available";
   if (status === "archived") return "archived";
   return "draft";
+}
+
+export async function resolvePreviewFromPageSearchParams(
+  searchParams: Promise<{ preview?: string | string[] | undefined }>
+): Promise<string | undefined> {
+  const params = await searchParams;
+  return parsePreviewParam(params.preview);
 }
 
 export async function resolveLessonPageAccess(
@@ -42,28 +53,59 @@ export async function resolveLessonPageAccess(
     lessonId: normalizedId,
     queryCandidates: lessonIdQueryCandidates(normalizedId),
     wantsAdminPreview,
+    previewRaw: options?.preview,
     isAdmin,
   });
 
   if (wantsAdminPreview) {
-    if (!isAdmin) {
-      console.warn("[lesson-access] Admin preview denied (not admin)", {
-        lessonId: normalizedId,
-      });
-    } else {
-      const adminLesson = await getAdminLessonById(normalizedId);
-      if (adminLesson) {
+    const adminLesson = await getAdminLessonById(normalizedId);
+
+    if (adminLesson) {
+      const publishStatus = getLessonPublishStatus(adminLesson);
+
+      // Draft/archived rows are only returned when RLS/RPC confirms admin access.
+      if (publishStatus !== "available") {
         console.warn("[lesson-access] Admin preview lesson loaded", {
           lessonId: normalizedId,
           resolvedId: adminLesson.id,
-          publishStatus: getLessonPublishStatus(adminLesson),
+          publishStatus,
+          via: "admin-fetch",
         });
         return { kind: "ok", lesson: adminLesson, adminPreview: true };
       }
-      console.warn("[lesson-access] Admin preview lesson not found", {
-        lessonId: normalizedId,
-      });
+
+      if (isAdmin) {
+        console.warn("[lesson-access] Admin preview for available lesson", {
+          lessonId: normalizedId,
+          resolvedId: adminLesson.id,
+        });
+        return { kind: "ok", lesson: adminLesson, adminPreview: true };
+      }
     }
+
+    const routeStatus = await getLessonRouteStatus(normalizedId);
+    if (routeStatus) {
+      const publishStatus = publishStatusFromRouteStatus(routeStatus.status);
+      console.warn("[lesson-access] Admin preview denied", {
+        lessonId: normalizedId,
+        isAdmin,
+        hasAdminLesson: Boolean(adminLesson),
+        status: routeStatus.status,
+      });
+      return {
+        kind: "unavailable",
+        lesson: lessonStubFromRouteStatus(routeStatus),
+        publishStatus,
+        showAdminLink: isAdmin,
+        showAdminPreviewLink: false,
+        accessDenied: true,
+      };
+    }
+
+    console.warn("[lesson-access] Admin preview lesson not found", {
+      lessonId: normalizedId,
+    });
+    return { kind: "not_found" };
   }
 
   if (isAdmin) {
@@ -75,7 +117,7 @@ export async function resolveLessonPageAccess(
         return { kind: "ok", lesson: adminLesson, adminPreview: false };
       }
 
-      console.warn("[lesson-access] Unavailable lesson (admin)", {
+      console.warn("[lesson-access] Unavailable lesson (admin, no preview param)", {
         lessonId: normalizedId,
         publishStatus,
       });

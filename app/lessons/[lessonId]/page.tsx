@@ -9,7 +9,7 @@ import { LessonProgressCard } from "@/components/lesson-progress-card";
 import { LessonUnavailable } from "@/components/lesson-unavailable";
 import { getAllLessonIdsSync, coursePath } from "@/lib/content";
 import { lessonPreviewPath } from "@/lib/lesson-publish";
-import { resolveLessonPageAccess } from "@/lib/lesson-public-access";
+import { resolveLessonPageAccess, resolvePreviewFromPageSearchParams } from "@/lib/lesson-public-access";
 
 type PageProps = {
   params: Promise<{ lessonId: string }>;
@@ -28,7 +28,7 @@ export default async function LessonDetailPage({
   searchParams,
 }: PageProps) {
   const { lessonId } = await params;
-  const { preview } = await searchParams;
+  const preview = await resolvePreviewFromPageSearchParams(searchParams);
   const access = await resolveLessonPageAccess(lessonId, { preview });
 
   if (access.kind === "not_found") {
@@ -42,6 +42,7 @@ export default async function LessonDetailPage({
         courseId={access.lesson.courseId}
         showAdminLink={access.showAdminLink}
         showAdminPreviewLink={access.showAdminPreviewLink}
+        accessDenied={access.accessDenied}
       />
     );
   }
