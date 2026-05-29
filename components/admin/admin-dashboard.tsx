@@ -2,18 +2,20 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { AdminAttentionList } from "@/components/admin/admin-attention-list";
 import { AdminCard } from "@/components/admin/admin-card";
-import { AdminSectionTitle } from "@/components/admin/admin-section-title";
-import { AdminSummaryCard } from "@/components/admin/admin-summary-card";
+import { AdminDashboardSection } from "@/components/admin/admin-dashboard-section";
+import { AdminMetricCard } from "@/components/admin/admin-metric-card";
+import { AdminRecentActivity } from "@/components/admin/admin-recent-activity";
 import { getCurrentUser, hasSupabaseConfig } from "@/lib/supabase/auth";
-import type { LessonQaSummary } from "@/lib/admin/lesson-qa";
+import type { AdminDashboardMetrics } from "@/lib/supabase/admin-analytics";
 import type { AuthUser } from "@/types/auth";
 
 type Props = {
-  summary: LessonQaSummary;
+  metrics: AdminDashboardMetrics;
 };
 
-export function AdminDashboard({ summary }: Props) {
+export function AdminDashboard({ metrics }: Props) {
   const [user, setUser] = useState<AuthUser | null>(null);
 
   useEffect(() => {
@@ -21,108 +23,269 @@ export function AdminDashboard({ summary }: Props) {
     getCurrentUser().then(({ data }) => setUser(data));
   }, []);
 
+  const avgScore =
+    metrics.learnerProgress.averageQuizPercentage != null
+      ? `${metrics.learnerProgress.averageQuizPercentage}%`
+      : "—";
+
   return (
-    <div className="flex flex-col gap-6">
+    <div className="flex flex-col gap-8">
       <section>
         <h1 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
-          Admin самбар
+          Admin analytics
         </h1>
         <p className="mt-2 text-sm text-slate-600">
-          Контент удирдах суурь хэсэг. Одоогоор зөвхөн унших горим — Supabase руу
-          бичих идэвхгүй.
+          Content metrics, QA health, media readiness, and learner progress at a
+          glance.
         </p>
         {user ? (
           <p className="mt-2 text-sm text-slate-600">
-            Нэвтэрсэн: {user.email ?? user.id}
+            Signed in: {user.email ?? user.id}
           </p>
         ) : null}
       </section>
 
-      <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
-        <AdminSummaryCard
-          label="Needs review"
-          value={summary.needsReviewCount}
-        />
-        <AdminSummaryCard label="Complete" value={summary.completeCount} />
-        <AdminSummaryCard label="Available" value={summary.availableCount} />
-        <AdminSummaryCard label="Total lessons" value={summary.totalLessons} />
-      </div>
+      {metrics.warnings.length > 0 ? (
+        <div className="rounded-xl bg-amber-50 px-4 py-3 text-sm text-amber-900 ring-1 ring-amber-200">
+          <p className="font-semibold">Analytics notes</p>
+          <ul className="mt-2 list-inside list-disc">
+            {metrics.warnings.map((warning) => (
+              <li key={warning}>{warning}</li>
+            ))}
+          </ul>
+        </div>
+      ) : null}
 
-      <AdminSectionTitle
-        title="Хэсгүүд"
-        description="Content QA-аар publish-ийн өмнө subtitle, vocabulary, quiz шалгана."
-      />
+      <AdminDashboardSection
+        title="Overview"
+        description="Lesson publish status across HSK5."
+      >
+        <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
+          <AdminMetricCard
+            label="Total lessons"
+            value={metrics.lessonStatus.totalLessons}
+          />
+          <AdminMetricCard
+            label="Available"
+            value={metrics.lessonStatus.availableCount}
+          />
+          <AdminMetricCard
+            label="Draft"
+            value={metrics.lessonStatus.draftCount}
+            accent="amber"
+          />
+          <AdminMetricCard
+            label="Archived"
+            value={metrics.lessonStatus.archivedCount}
+            accent="slate"
+          />
+        </div>
+      </AdminDashboardSection>
 
-      <div className="grid gap-4 sm:grid-cols-2">
-        <AdminCard
-          title="Content QA"
-          description={`${summary.totalLessons} хичээл — metadata, subtitle, vocabulary, quiz бүрэн байдлыг шалгах.`}
-          href="/admin/lessons"
-        />
-        <AdminCard
-          title="Lessons needing review"
-          description={`${summary.needsReviewCount} хичээл засах эсвэл контент нэмэх шаардлагатай.`}
-          href="/admin/lessons"
-        />
-        <AdminCard
-          title="Available lessons"
-          description={`${summary.availableCount} нийтлэгдсэн хичээл public route дээр.`}
-          href="/admin/lessons"
-        />
-        <AdminCard
-          title="Next action: Create lesson draft"
-          description="Шинэ хичээлийн metadata skeleton — save дараагийн алхамд."
-          href="/admin/lessons/new"
-        />
-        <AdminCard
-          title="Хичээлүүд"
-          description="Бүх хичээлийн QA хүснэгт, preview холбоос."
-          href="/admin/lessons"
-        />
-        <AdminCard
-          title="Lesson Builder"
-          description="Prompt → Import → QA → Backup → Publish workflow"
-          href="/admin/lesson-builder"
-        />
-      </div>
+      <AdminDashboardSection
+        title="Content health"
+        description="Subtitle, vocabulary, and quiz totals plus publish readiness."
+      >
+        <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
+          <AdminMetricCard
+            label="Subtitle lines"
+            value={metrics.contentTotals.totalSubtitleLines}
+          />
+          <AdminMetricCard
+            label="Vocabulary words"
+            value={metrics.contentTotals.totalVocabularyWords}
+          />
+          <AdminMetricCard
+            label="Quiz questions"
+            value={metrics.contentTotals.totalQuizQuestions}
+          />
+          <AdminMetricCard
+            label="Ready to publish"
+            value={metrics.contentQa.lessonsReadyToPublish}
+            hint="≥1 sub, ≥5 vocab, ≥3 quiz"
+          />
+        </div>
+        <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
+          <AdminMetricCard
+            label="Missing subtitles"
+            value={metrics.contentQa.lessonsMissingSubtitles}
+            accent="amber"
+          />
+          <AdminMetricCard
+            label="Missing vocabulary"
+            value={metrics.contentQa.lessonsMissingVocabulary}
+            accent="amber"
+          />
+          <AdminMetricCard
+            label="Missing quiz"
+            value={metrics.contentQa.lessonsMissingQuiz}
+            accent="amber"
+          />
+          <AdminMetricCard
+            label="Needs review"
+            value={metrics.contentQa.needsReviewCount}
+            accent="amber"
+          />
+        </div>
+      </AdminDashboardSection>
 
-      <section className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:p-6">
-        <AdminSectionTitle title="Түргэн холбоос" />
-        <ul className="mt-4 flex flex-col gap-2 text-sm">
-          <li>
-            <Link
-              href="/admin/lessons"
-              className="font-medium text-emerald-700 hover:text-emerald-800"
-            >
-              Content QA →
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="/admin/lesson-builder"
-              className="font-medium text-emerald-700 hover:text-emerald-800"
-            >
-              Lesson Builder →
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="/admin/lessons/new"
-              className="font-medium text-emerald-700 hover:text-emerald-800"
-            >
-              Шинэ хичээл үүсгэх →
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="/"
-              className="font-medium text-slate-600 hover:text-emerald-700"
-            >
-              Апп руу буцах →
-            </Link>
-          </li>
-        </ul>
-      </section>
+      <AdminDashboardSection
+        title="Media readiness"
+        description="Uploaded or linked thumbnail, video, and audio."
+      >
+        <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
+          <AdminMetricCard
+            label="Media ready"
+            value={metrics.media.mediaReadyCount}
+          />
+          <AdminMetricCard
+            label="Media pending"
+            value={metrics.media.mediaPendingCount}
+            accent="amber"
+          />
+          <AdminMetricCard
+            label="Media missing"
+            value={metrics.media.mediaMissingCount}
+            accent="amber"
+          />
+          <AdminMetricCard
+            label="With thumbnail"
+            value={metrics.media.withThumbnailCount}
+          />
+          <AdminMetricCard
+            label="With video"
+            value={metrics.media.withVideoCount}
+          />
+          <AdminMetricCard
+            label="With audio"
+            value={metrics.media.withAudioCount}
+          />
+        </div>
+      </AdminDashboardSection>
+
+      <AdminDashboardSection
+        title="Learner progress"
+        description={
+          metrics.learnerProgress.limitedByRls
+            ? "May show only your own rows until admin read policies are added."
+            : "Aggregated from progress tables."
+        }
+      >
+        <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
+          <AdminMetricCard
+            label="Users with progress"
+            value={metrics.learnerProgress.usersWithLessonProgress}
+          />
+          <AdminMetricCard
+            label="Completed lessons"
+            value={metrics.learnerProgress.completedLessonRows}
+          />
+          <AdminMetricCard
+            label="Learned words"
+            value={metrics.learnerProgress.learnedVocabularyRows}
+          />
+          <AdminMetricCard
+            label="Quiz attempts"
+            value={metrics.learnerProgress.quizAttempts}
+          />
+          <AdminMetricCard
+            label="Avg quiz score"
+            value={avgScore}
+            accent="slate"
+          />
+        </div>
+      </AdminDashboardSection>
+
+      <AdminDashboardSection
+        title="Needs attention"
+        description="Lessons with missing content or media — open edit to fix."
+      >
+        <AdminAttentionList items={metrics.needsAttention} />
+      </AdminDashboardSection>
+
+      <AdminDashboardSection title="Recent activity">
+        <AdminRecentActivity
+          quizAttempts={metrics.recentQuizAttempts}
+          lessonProgress={metrics.recentLessonProgress}
+        />
+      </AdminDashboardSection>
+
+      <AdminDashboardSection
+        title="Quick actions"
+        description="Jump to common admin workflows."
+      >
+        <div className="flex flex-wrap gap-2">
+          <Link
+            href="/admin/analytics"
+            className="inline-flex rounded-full bg-emerald-500 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-emerald-600"
+          >
+            Learning analytics
+          </Link>
+          <Link
+            href="/admin/lesson-builder"
+            className="inline-flex rounded-full bg-emerald-500 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-emerald-600"
+          >
+            Lesson Builder
+          </Link>
+          <Link
+            href="/admin/lessons"
+            className="inline-flex rounded-full border border-emerald-200 bg-emerald-50 px-5 py-2.5 text-sm font-semibold text-emerald-800 transition-colors hover:bg-emerald-100"
+          >
+            Content QA
+          </Link>
+          <Link
+            href="/admin/lessons/new"
+            className="inline-flex rounded-full border border-slate-200 px-5 py-2.5 text-sm font-medium text-slate-700 transition-colors hover:border-emerald-200 hover:text-emerald-700"
+          >
+            Create lesson
+          </Link>
+          <Link
+            href="/review"
+            className="inline-flex rounded-full border border-slate-200 px-5 py-2.5 text-sm font-medium text-slate-700 transition-colors hover:border-emerald-200 hover:text-emerald-700"
+          >
+            Review app
+          </Link>
+          <Link
+            href="/"
+            className="inline-flex rounded-full border border-slate-200 px-5 py-2.5 text-sm font-medium text-slate-700 transition-colors hover:border-emerald-200 hover:text-emerald-700"
+          >
+            Back to app
+          </Link>
+        </div>
+      </AdminDashboardSection>
+
+      <AdminDashboardSection
+        title="Admin tools"
+        description="Existing workflows — unchanged."
+      >
+        <div className="grid gap-4 sm:grid-cols-2">
+          <AdminCard
+            title="Learning analytics"
+            description={`${metrics.learnerProgress.quizAttempts} quiz attempts · ${metrics.learnerProgress.averageQuizPercentage ?? "—"}% avg · ${metrics.learnerProgress.completedLessonRows} completed`}
+            href="/admin/analytics"
+          />
+          <AdminCard
+            title="Content QA"
+            description="Full lesson table with filters, media indicators, and preview links."
+            href="/admin/lessons"
+          />
+          <AdminCard
+            title="Lesson Builder"
+            description="Draft → prompt → import → media → preview → publish checklist."
+            href="/admin/lesson-builder"
+          />
+          <AdminCard
+            title="Create draft lesson"
+            description="New lesson metadata skeleton."
+            href="/admin/lessons/new"
+          />
+          <AdminCard
+            title="Media upload"
+            description="Upload thumbnail, audio, video on any lesson edit page."
+            href="/admin/lessons"
+          />
+        </div>
+      </AdminDashboardSection>
     </div>
   );
 }

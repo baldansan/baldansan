@@ -1,6 +1,5 @@
 import { AdminDashboard } from "@/components/admin/admin-dashboard";
-import { getHsk5LessonsWithQa } from "@/lib/admin/lesson-fetch";
-import { summarizeLessonQa } from "@/lib/admin/lesson-qa";
+import { getAdminDashboardMetrics } from "@/lib/supabase/admin-analytics";
 
 export const dynamic = "force-dynamic";
 
@@ -9,8 +8,7 @@ export const metadata = {
 };
 
 export default async function AdminPage() {
-  const reports = await getHsk5LessonsWithQa();
-  const summary = summarizeLessonQa(reports);
+  const metrics = await getAdminDashboardMetrics();
 
-  return <AdminDashboard summary={summary} />;
+  return <AdminDashboard metrics={metrics} />;
 }

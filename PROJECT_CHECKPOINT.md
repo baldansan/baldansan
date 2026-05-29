@@ -2,7 +2,39 @@
 
 **Project:** Buunduu Surtsgaay (Бөөндөө Сурцгаая)  
 **Checkpoint date:** May 2026  
-**Status:** Phase 4 **completed**; Phase 5 Step 16 Supabase Storage media upload **completed**
+**Status:** Phase 4 **completed**; Phase 5 Step 18 per-lesson learning analytics **completed**
+
+---
+
+## Phase 5 Step 18 — Per-lesson learning analytics — **Completed**
+
+Phase 5 Step 18: Per-lesson learning analytics dashboard added.
+
+| Area | Deliverable |
+|------|-------------|
+| Routes | `/admin/analytics`, `/admin/analytics/lessons/[lessonId]` |
+| Analytics | Extended `lib/supabase/admin-analytics.ts` |
+| UI | `lesson-analytics-table`, `lesson-analytics-detail-view`, performance badges |
+| Integration | Links from `/admin` and `/admin/lessons` |
+| Docs | [ADMIN_LEARNING_ANALYTICS.md](./ADMIN_LEARNING_ANALYTICS.md) |
+
+**Next:** Phase 5 Step 19 — Question-level quiz analytics. Or Phase 5 Final Audit.
+
+---
+
+## Phase 5 Step 17 — Admin analytics dashboard — **Completed**
+
+Phase 5 Step 17: Admin analytics and content metrics dashboard added.
+
+| Area | Deliverable |
+|------|-------------|
+| Analytics | `lib/supabase/admin-analytics.ts` |
+| Dashboard | `/admin` — overview, content QA, media, learner progress |
+| Components | `admin-metric-card`, `admin-dashboard-section`, `admin-attention-list`, `admin-recent-activity` |
+| QA page | `/admin/lessons` top summary row |
+| Docs | [ADMIN_ANALYTICS.md](./ADMIN_ANALYTICS.md) |
+
+**Next:** Phase 5 Step 18 — Admin progress analytics by lesson. Or Phase 5 Final Audit.
 
 ---
 
@@ -18,7 +50,7 @@ Phase 5 Step 16: Supabase Storage media upload foundation added.
 | Builder | Checklist Step 5 — Upload / attach media |
 | Docs | [MEDIA_UPLOAD_WORKFLOW.md](./MEDIA_UPLOAD_WORKFLOW.md) |
 
-**Next:** Phase 5 Step 17 — Content analytics / admin metrics dashboard. Or Phase 5 Final Audit.
+**Next:** Phase 5 Step 18 — Admin progress analytics by lesson. Or Phase 5 Final Audit.
 
 ---
 

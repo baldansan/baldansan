@@ -27,11 +27,19 @@ import {
   type QaFilter,
 } from "@/lib/admin/lesson-qa";
 
-type Props = {
-  reports: LessonQaReport[];
+type PageSummary = {
+  totalLessons: number;
+  needsReview: number;
+  readyToPublish: number;
+  mediaMissing: number;
 };
 
-export function AdminLessonsList({ reports }: Props) {
+type Props = {
+  reports: LessonQaReport[];
+  pageSummary?: PageSummary;
+};
+
+export function AdminLessonsList({ reports, pageSummary }: Props) {
   const [query, setQuery] = useState("");
   const [statusFilter, setStatusFilter] = useState<AdminStatusFilter>("all");
   const [qaFilter, setQaFilter] = useState<QaFilter>("all");
@@ -75,18 +83,27 @@ export function AdminLessonsList({ reports }: Props) {
         </Link>
       </div>
 
-      <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-8">
-        <AdminSummaryCard label="Total lessons" value={summary.totalLessons} />
-        <AdminSummaryCard label="Available" value={summary.availableCount} />
-        <AdminSummaryCard label="Draft" value={summary.draftCount} />
-        <AdminSummaryCard label="Archived" value={summary.archivedCount} />
+      <div className="grid grid-cols-2 gap-3 sm:grid-cols-4 lg:grid-cols-8">
         <AdminSummaryCard
-          label="Media ready"
-          value={summary.mediaReadyCount}
+          label="Total lessons"
+          value={pageSummary?.totalLessons ?? summary.totalLessons}
+        />
+        <AdminSummaryCard
+          label="Needs review"
+          value={pageSummary?.needsReview ?? summary.needsReviewCount}
+        />
+        <AdminSummaryCard
+          label="Ready to publish"
+          value={pageSummary?.readyToPublish ?? summary.completeCount}
         />
         <AdminSummaryCard
           label="Media missing"
-          value={summary.mediaMissingCount}
+          value={pageSummary?.mediaMissing ?? summary.mediaMissingCount}
+        />
+        <AdminSummaryCard label="Available" value={summary.availableCount} />
+        <AdminSummaryCard
+          label="Media ready"
+          value={summary.mediaReadyCount}
         />
         <AdminSummaryCard
           label="Total vocabulary"
@@ -287,6 +304,12 @@ export function AdminLessonsList({ reports }: Props) {
                           className="text-slate-600 hover:text-emerald-700"
                         >
                           Quiz
+                        </Link>
+                        <Link
+                          href={`/admin/analytics/lessons/${lesson.id}`}
+                          className="text-emerald-700 hover:text-emerald-800"
+                        >
+                          Analytics
                         </Link>
                         <Link
                           href={`/admin/lessons/${lesson.id}/edit`}

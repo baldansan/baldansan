@@ -243,7 +243,19 @@ Phased roadmap from MVP demo to production product.
 - [components/admin/lesson-media-upload-card.tsx](./components/admin/lesson-media-upload-card.tsx) — admin upload UI on edit page
 - [MEDIA_UPLOAD_WORKFLOW.md](./MEDIA_UPLOAD_WORKFLOW.md)
 
-**Next:** Phase 5 Step 17 — Content analytics / admin metrics dashboard. Or Phase 5 Final Audit.
+**Phase 5 Step 17 — Completed:** Admin analytics and content metrics dashboard.
+
+- [lib/supabase/admin-analytics.ts](./lib/supabase/admin-analytics.ts) — dashboard metrics helpers
+- [components/admin/admin-dashboard.tsx](./components/admin/admin-dashboard.tsx) — analytics UI on `/admin`
+- [ADMIN_ANALYTICS.md](./ADMIN_ANALYTICS.md)
+
+**Phase 5 Step 18 — Completed:** Per-lesson learning analytics dashboard.
+
+- [app/admin/analytics/page.tsx](./app/admin/analytics/page.tsx), [app/admin/analytics/lessons/[lessonId]/page.tsx](./app/admin/analytics/lessons/[lessonId]/page.tsx)
+- Extended [lib/supabase/admin-analytics.ts](./lib/supabase/admin-analytics.ts) — per-lesson metrics
+- [ADMIN_LEARNING_ANALYTICS.md](./ADMIN_LEARNING_ANALYTICS.md)
+
+**Next:** Phase 5 Step 19 — Question-level quiz analytics and difficult vocabulary insights. Or Phase 5 Final Audit.
 - [components/admin/bulk-import-editor.tsx](./components/admin/bulk-import-editor.tsx) on lesson edit page
 - [LESSON_IMPORT_FORMAT.md](./LESSON_IMPORT_FORMAT.md)
 
@@ -272,8 +284,10 @@ Phased roadmap from MVP demo to production product.
 | 14 | Lesson package generator / full lesson builder | ✅ Completed |
 | 15 | Media/video metadata foundation | ✅ Completed |
 | 16 | Supabase Storage media upload | ✅ Completed |
+| 17 | Admin analytics / content metrics dashboard | ✅ Completed |
+| 18 | Per-lesson learning analytics | ✅ Completed |
 
-**Next (Phase 5):** Step 17 — Content analytics / admin metrics dashboard. Or Phase 5 Final Audit.
+**Next (Phase 5):** Step 19 — Question-level quiz analytics. Or Phase 5 Final Audit.
 
 **Exit criteria:** New lesson published through admin UI without deploying code.
 

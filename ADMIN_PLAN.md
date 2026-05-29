@@ -105,6 +105,12 @@ See [CONTENT_WORKFLOW.md](./CONTENT_WORKFLOW.md):
 | 14 | Lesson package generator / full lesson builder | ✅ Completed |
 | 15 | Media/video metadata foundation | ✅ Completed |
 | 16 | Supabase Storage media upload | ✅ Completed |
+| 17 | Admin analytics / content metrics dashboard | ✅ Completed |
+| 18 | Per-lesson learning analytics | ✅ Completed |
+
+Step 18: [ADMIN_LEARNING_ANALYTICS.md](./ADMIN_LEARNING_ANALYTICS.md), `/admin/analytics`, `/admin/analytics/lessons/[lessonId]`.
+
+Step 17: [ADMIN_ANALYTICS.md](./ADMIN_ANALYTICS.md), `lib/supabase/admin-analytics.ts`, analytics dashboard on `/admin`.
 
 Step 16: [MEDIA_UPLOAD_WORKFLOW.md](./MEDIA_UPLOAD_WORKFLOW.md), [supabase/storage/001_lesson_media_bucket_policies.sql](./supabase/storage/001_lesson_media_bucket_policies.sql), `lesson-media-upload-card`, `lib/supabase/media-upload.ts`.
 
