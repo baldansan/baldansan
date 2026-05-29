@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { markLessonStartedSmart } from "@/lib/progress";
+import { LessonMobileStepBar } from "@/components/lesson-mobile-step-bar";
 import { LessonWatchMediaSection } from "@/components/lesson-media-display";
 import { AdminPreviewBanner } from "@/components/admin-preview-banner";
 import { AppHeader } from "@/components/app-header";
@@ -162,6 +163,13 @@ export function LessonWatchClient({ lesson, adminPreview = false }: Props) {
             Quiz
           </Link>
         </section>
+
+        <LessonMobileStepBar
+          lessonId={lesson.id}
+          courseId={lesson.courseId}
+          current="watch"
+          adminPreview={adminPreview}
+        />
       </main>
 
       <BottomNav />

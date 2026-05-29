@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { HomeContinueSection } from "@/components/home-continue-section";
 import { HomeHeroActions } from "@/components/home-hero-actions";
+import { HomeMobileExtras } from "@/components/home-mobile-extras";
 import { PublicPageShell } from "@/components/public-page-shell";
 import { courses } from "@/data/courses";
 import { getPublicLessonsByCourseId } from "@/lib/content";
@@ -10,9 +11,11 @@ export const dynamic = "force-dynamic";
 export default async function Home() {
   const hsk5Lessons = await getPublicLessonsByCourseId("hsk5");
   const hsk5Count = hsk5Lessons.length;
+  const lessonIds = hsk5Lessons.map((l) => l.id);
 
   return (
     <PublicPageShell active="home" showBottomNav>
+      <HomeMobileExtras lessonIds={lessonIds} />
       <section className="rounded-3xl bg-white p-6 shadow-sm ring-1 ring-slate-200 sm:p-10">
         <p className="text-sm font-semibold uppercase tracking-wide text-emerald-600">
           Short drama Chinese

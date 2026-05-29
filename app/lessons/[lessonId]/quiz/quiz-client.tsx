@@ -2,11 +2,12 @@
 
 import Link from "next/link";
 import { useEffect, useMemo, useRef, useState } from "react";
+import { EmptyState } from "@/components/empty-state";
 import { LocalProgressNote } from "@/components/local-progress-note";
 import { AdminPreviewBanner } from "@/components/admin-preview-banner";
 import { AppHeader } from "@/components/app-header";
 import { BottomNav } from "@/components/bottom-nav";
-import { EmptyState } from "@/components/empty-state";
+import { LessonMobileStepBar } from "@/components/lesson-mobile-step-bar";
 import { coursePath } from "@/lib/content";
 import { lessonPreviewPath } from "@/lib/lesson-publish";
 import {
@@ -350,6 +351,12 @@ export function LessonQuizClient({
             </>
           )
         )}
+        <LessonMobileStepBar
+          lessonId={lesson.id}
+          courseId={lesson.courseId}
+          current="quiz"
+          adminPreview={adminPreview}
+        />
       </main>
 
       <BottomNav />

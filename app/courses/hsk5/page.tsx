@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Hsk5ContinueLearning } from "@/components/hsk5-continue-learning";
 import { Hsk5ExtendedProgress } from "@/components/hsk5-extended-progress";
+import { Hsk5MobileExtras } from "@/components/hsk5-mobile-extras";
 import { PublicPageShell } from "@/components/public-page-shell";
 import { getCourseContentById, getPublicLessonsByCourseId } from "@/lib/content";
 import { Hsk5LessonList } from "./hsk5-lesson-list";
@@ -64,6 +65,7 @@ export default async function Hsk5CoursePage() {
 
       <Hsk5ContinueLearning lessonIds={lessonIds} />
       <Hsk5ExtendedProgress lessonIds={lessonIds} />
+      <Hsk5MobileExtras lessonIds={lessonIds} />
 
       <section className="flex flex-col gap-4">
         <h2 className="text-xl font-semibold text-slate-900">Lesson roadmap</h2>
