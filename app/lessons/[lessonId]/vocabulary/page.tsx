@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import { LessonUnavailable } from "@/components/lesson-unavailable";
-import { resolveLessonPageAccess } from "@/lib/lesson-public-access";
+import { resolveLessonPageAccess, resolvePreviewFromPageSearchParams } from "@/lib/lesson-public-access";
 import { LessonVocabularyClient } from "./vocabulary-client";
 
 type PageProps = {
@@ -15,7 +15,7 @@ export default async function LessonVocabularyPage({
   searchParams,
 }: PageProps) {
   const { lessonId } = await params;
-  const { preview } = await searchParams;
+  const preview = await resolvePreviewFromPageSearchParams(searchParams);
   const access = await resolveLessonPageAccess(lessonId, { preview });
 
   if (access.kind === "not_found") {
@@ -29,6 +29,7 @@ export default async function LessonVocabularyPage({
         courseId={access.lesson.courseId}
         showAdminLink={access.showAdminLink}
         showAdminPreviewLink={access.showAdminPreviewLink}
+        accessDenied={access.accessDenied}
       />
     );
   }

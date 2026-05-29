@@ -10,10 +10,16 @@ import {
 import { isCurrentUserAdmin } from "@/lib/supabase/admin";
 import {
   refreshLessonCounts,
+  getLessonCompleteness,
   updateLessonMetadata,
   type AdminContentResult,
 } from "@/lib/supabase/admin-content";
 import { hasSupabaseConfig } from "@/lib/supabase/client";
+import {
+  ADMIN_ACTIVITY_ACTIONS,
+  buildShallowDiffSummary,
+  logAdminActivityFireAndForget,
+} from "@/lib/supabase/admin-activity";
 
 export type AdminRestoreResult<T> = {
   data: T | null;
@@ -243,6 +249,15 @@ export async function restoreLessonFromBackup(
     };
   }
 
+  const beforeCompleteness = await getLessonCompleteness(lessonId);
+  const beforeSnapshot = beforeCompleteness.data
+    ? {
+        subtitleCount: beforeCompleteness.data.subtitleCount,
+        vocabularyCount: beforeCompleteness.data.vocabularyCount,
+        quizCount: beforeCompleteness.data.quizCount,
+      }
+    : undefined;
+
   if (options.restoreMetadata && preview.lessonMeta) {
     const metaUpdate = mapMetaToMetadataUpdate(
       preview.lessonMeta,
@@ -266,6 +281,41 @@ export async function restoreLessonFromBackup(
   await refreshLessonCounts(lessonId);
 
   const summary = imported.data;
+  const afterCompleteness = await getLessonCompleteness(lessonId);
+  const afterSnapshot = afterCompleteness.data
+    ? {
+        subtitleCount: afterCompleteness.data.subtitleCount,
+        vocabularyCount: afterCompleteness.data.vocabularyCount,
+        quizCount: afterCompleteness.data.quizCount,
+      }
+    : {
+        subtitleCount: summary?.subtitlesInserted ?? payload.subtitles.length,
+        vocabularyCount: summary?.vocabularyInserted ?? payload.vocabulary.length,
+        quizCount: summary?.quizQuestionsInserted ?? payload.quizQuestions.length,
+      };
+
+  logAdminActivityFireAndForget({
+    action: ADMIN_ACTIVITY_ACTIONS.backupRestored,
+    entityType: "lesson",
+    entityId: lessonId,
+    lessonId,
+    title: `Backup restored for lesson ${lessonId}`,
+    metadata: {
+      mode: options.mode,
+      restoreMetadata: options.restoreMetadata,
+      subtitlesInserted: summary?.subtitlesInserted ?? payload.subtitles.length,
+      vocabularyInserted: summary?.vocabularyInserted ?? payload.vocabulary.length,
+      quizQuestionsInserted:
+        summary?.quizQuestionsInserted ?? payload.quizQuestions.length,
+    },
+    beforeSnapshot,
+    afterSnapshot,
+    diffSummary: {
+      mode: options.mode,
+      restoreMetadata: options.restoreMetadata,
+      ...buildShallowDiffSummary(beforeSnapshot, afterSnapshot),
+    },
+  });
   return {
     data: {
       mode: options.mode,

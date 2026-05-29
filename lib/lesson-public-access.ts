@@ -1,10 +1,19 @@
-import { getLessonById, getLocalLessonById } from "@/lib/content";
+import { getAdminLessonById } from "@/lib/admin/lesson-fetch";
+import { getPublicLessonById } from "@/lib/content";
+import {
+  lessonIdQueryCandidates,
+  normalizeLessonRouteId,
+} from "@/lib/lesson-id";
 import { getLessonPublishStatus } from "@/lib/lesson-publish";
-import { isAdminPreviewParam } from "@/lib/preview-params";
+import {
+  isAdminPreviewParam,
+  parsePreviewParam,
+} from "@/lib/preview-params";
 import { isCurrentUserAdminServer } from "@/lib/supabase/admin-server";
-import { getSupabaseLessonByIdWithClient } from "@/lib/supabase/content";
-import { hasSupabaseConfig } from "@/lib/supabase/client";
-import { createServerSupabaseClient } from "@/lib/supabase/server";
+import {
+  getLessonRouteStatus,
+  lessonStubFromRouteStatus,
+} from "@/lib/supabase/lesson-visibility";
 import type { LessonContent, LessonPublishStatus } from "@/types/lesson-content";
 
 export type LessonPageAccess =
@@ -15,66 +24,100 @@ export type LessonPageAccess =
       publishStatus: LessonPublishStatus;
       showAdminLink: boolean;
       showAdminPreviewLink: boolean;
+      accessDenied?: boolean;
     }
   | { kind: "ok"; lesson: LessonContent; adminPreview: boolean };
 
-async function loadLessonForAdminPreview(
-  lessonId: string
-): Promise<LessonContent | undefined> {
-  if (!hasSupabaseConfig) {
-    return getLocalLessonById(lessonId);
-  }
+function publishStatusFromRouteStatus(status: string): LessonPublishStatus {
+  if (status === "available") return "available";
+  if (status === "archived") return "archived";
+  return "draft";
+}
 
-  const client = await createServerSupabaseClient();
-  if (!client) {
-    return getLessonById(lessonId);
-  }
-
-  try {
-    const lesson = await getSupabaseLessonByIdWithClient(lessonId, client);
-    if (lesson) {
-      return lesson;
-    }
-  } catch {
-    // Fall through to default loader.
-  }
-
-  return getLessonById(lessonId);
+export async function resolvePreviewFromPageSearchParams(
+  searchParams: Promise<{ preview?: string | string[] | undefined }>
+): Promise<string | undefined> {
+  const params = await searchParams;
+  return parsePreviewParam(params.preview);
 }
 
 export async function resolveLessonPageAccess(
   lessonId: string,
   options?: { preview?: string | string[] }
 ): Promise<LessonPageAccess> {
+  const normalizedId = normalizeLessonRouteId(lessonId);
   const wantsAdminPreview = isAdminPreviewParam(options?.preview);
+  const isAdmin = await isCurrentUserAdminServer();
 
-  let lesson = await getLessonById(lessonId);
+  if (wantsAdminPreview) {
+    const adminLesson = await getAdminLessonById(normalizedId);
 
-  if (!lesson) {
+    if (adminLesson) {
+      const publishStatus = getLessonPublishStatus(adminLesson);
+
+      if (publishStatus !== "available") {
+        return { kind: "ok", lesson: adminLesson, adminPreview: true };
+      }
+
+      if (isAdmin) {
+        return { kind: "ok", lesson: adminLesson, adminPreview: true };
+      }
+    }
+
+    const routeStatus = await getLessonRouteStatus(normalizedId);
+    if (routeStatus) {
+      const publishStatus = publishStatusFromRouteStatus(routeStatus.status);
+      return {
+        kind: "unavailable",
+        lesson: lessonStubFromRouteStatus(routeStatus),
+        publishStatus,
+        showAdminLink: isAdmin,
+        showAdminPreviewLink: false,
+        accessDenied: true,
+      };
+    }
+
     return { kind: "not_found" };
   }
 
-  const publishStatus = getLessonPublishStatus(lesson);
-  const isAdmin = await isCurrentUserAdminServer();
-  const adminPreview = wantsAdminPreview && isAdmin;
+  if (isAdmin) {
+    const adminLesson = await getAdminLessonById(normalizedId);
+    if (adminLesson) {
+      const publishStatus = getLessonPublishStatus(adminLesson);
 
-  if (adminPreview) {
-    const fullLesson = await loadLessonForAdminPreview(lessonId);
-    if (fullLesson) {
-      lesson = fullLesson;
+      if (publishStatus === "available") {
+        return { kind: "ok", lesson: adminLesson, adminPreview: false };
+      }
+
+      return {
+        kind: "unavailable",
+        lesson: adminLesson,
+        publishStatus,
+        showAdminLink: true,
+        showAdminPreviewLink: true,
+      };
     }
-    return { kind: "ok", lesson, adminPreview: true };
   }
 
-  if (publishStatus !== "available") {
-    return {
-      kind: "unavailable",
-      lesson,
-      publishStatus,
-      showAdminLink: isAdmin,
-      showAdminPreviewLink: isAdmin && !wantsAdminPreview,
-    };
+  const publicLesson = await getPublicLessonById(normalizedId);
+  if (publicLesson) {
+    return { kind: "ok", lesson: publicLesson, adminPreview: false };
   }
 
-  return { kind: "ok", lesson, adminPreview: false };
+  const routeStatus = await getLessonRouteStatus(normalizedId);
+  if (routeStatus) {
+    const publishStatus = publishStatusFromRouteStatus(routeStatus.status);
+
+    if (publishStatus !== "available") {
+      return {
+        kind: "unavailable",
+        lesson: lessonStubFromRouteStatus(routeStatus),
+        publishStatus,
+        showAdminLink: isAdmin,
+        showAdminPreviewLink: isAdmin,
+      };
+    }
+  }
+
+  return { kind: "not_found" };
 }

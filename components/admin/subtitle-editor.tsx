@@ -119,7 +119,7 @@ export function SubtitleEditor({
     setError(null);
     setSuccess(null);
     setDeletingId(id);
-    const result = await deleteSubtitleLine(id);
+    const result = await deleteSubtitleLine(id, lessonId);
     setDeletingId(null);
     if (result.error) {
       setError(result.error);

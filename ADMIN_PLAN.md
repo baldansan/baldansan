@@ -102,7 +102,47 @@ See [CONTENT_WORKFLOW.md](./CONTENT_WORKFLOW.md):
 | 11 | Admin lesson metadata edit/save | ✅ Completed |
 | 12 | Lesson JSON export and backup tools | ✅ Completed |
 | 13 | Lesson duplicate, restore, destructive import safety | ✅ Completed |
-| 14 | Lesson package generator / full lesson builder | Next |
+| 14 | Lesson package generator / full lesson builder | ✅ Completed |
+| 15 | Media/video metadata foundation | ✅ Completed |
+| 16 | Supabase Storage media upload | ✅ Completed |
+| 17 | Admin analytics / content metrics dashboard | ✅ Completed |
+| 18 | Per-lesson learning analytics | ✅ Completed |
+| 19 | Question-level quiz analytics + vocabulary engagement insights | ✅ Completed |
+| 20 | AI-assisted content improvement prompts | ✅ Completed |
+| 21 | Content approval / release readiness workflow | ✅ Completed |
+| 22 | Admin Task Center and content review queue | ✅ Completed |
+| 23 | Persistent admin task management | ✅ Completed |
+| 24 | Admin activity log / audit trail | ✅ Completed |
+| 25 | Activity diff / rollback preview | ✅ Completed |
+| 26 | CMS hardening — rollback, export, final audit | ✅ Completed |
+
+Step 26: [ADMIN_ROLLBACK_WORKFLOW.md](./ADMIN_ROLLBACK_WORKFLOW.md), [ADMIN_AUDIT_EXPORT.md](./ADMIN_AUDIT_EXPORT.md), [PHASE_5_FINAL_AUDIT.md](./PHASE_5_FINAL_AUDIT.md), `/admin/final-audit`, safe rollback on `/admin/activity/{id}`, CSV/JSON export on `/admin/activity`, production safety section on `/admin`.
+
+**Phase 5 Mega Batch:** production CMS hardening, safe rollback, audit export, and final audit page.
+
+Step 25: [ADMIN_ACTIVITY_DIFFS.md](./ADMIN_ACTIVITY_DIFFS.md), [supabase/migrations/008_admin_activity_snapshots.sql](./supabase/migrations/008_admin_activity_snapshots.sql), `/admin/activity/{id}` detail + diff viewer.
+
+Step 24: [ADMIN_ACTIVITY_LOG.md](./ADMIN_ACTIVITY_LOG.md), [supabase/migrations/007_admin_activity_log.sql](./supabase/migrations/007_admin_activity_log.sql), `/admin/activity`, dashboard + edit + builder integration.
+
+Step 23: [ADMIN_TASK_MANAGEMENT.md](./ADMIN_TASK_MANAGEMENT.md), [supabase/migrations/006_admin_tasks.sql](./supabase/migrations/006_admin_tasks.sql), dismiss/resolve/priority/due/note on `/admin/tasks`.
+
+Step 22: [ADMIN_TASK_CENTER.md](./ADMIN_TASK_CENTER.md), `/admin/tasks`, `task-generator.ts`, dashboard + edit + builder integration.
+
+Step 21: [RELEASE_WORKFLOW.md](./RELEASE_WORKFLOW.md), [supabase/migrations/005_lesson_release_workflow.sql](./supabase/migrations/005_lesson_release_workflow.sql), release checklist + approval on edit page.
+
+Step 20: [AI_ASSISTED_CONTENT_WORKFLOW.md](./AI_ASSISTED_CONTENT_WORKFLOW.md), `/admin/prompts`, improvement prompt cards on edit/analytics pages. No OpenAI API — copy-ready prompts only.
+
+Step 19: [ADMIN_QUESTION_ANALYTICS.md](./ADMIN_QUESTION_ANALYTICS.md), [ADMIN_VOCABULARY_ANALYTICS.md](./ADMIN_VOCABULARY_ANALYTICS.md), `/admin/analytics/questions`, `/admin/analytics/vocabulary`, detailed quiz `answers` JSON on new attempts.
+
+Step 18: [ADMIN_LEARNING_ANALYTICS.md](./ADMIN_LEARNING_ANALYTICS.md), `/admin/analytics`, `/admin/analytics/lessons/[lessonId]`.
+
+Step 17: [ADMIN_ANALYTICS.md](./ADMIN_ANALYTICS.md), `lib/supabase/admin-analytics.ts`, analytics dashboard on `/admin`.
+
+Step 16: [MEDIA_UPLOAD_WORKFLOW.md](./MEDIA_UPLOAD_WORKFLOW.md), [supabase/storage/001_lesson_media_bucket_policies.sql](./supabase/storage/001_lesson_media_bucket_policies.sql), `lesson-media-upload-card`, `lib/supabase/media-upload.ts`.
+
+Step 15: [MEDIA_WORKFLOW.md](./MEDIA_WORKFLOW.md), `002_lesson_media_fields.sql`, `lesson-media-editor`, public media display.
+
+Step 14: [LESSON_BUILDER_WORKFLOW.md](./LESSON_BUILDER_WORKFLOW.md), `/admin/lesson-builder`, `lesson-builder-checklist`, `lesson-package-summary`.
 
 Step 3: [lib/admin/lesson-qa.ts](./lib/admin/lesson-qa.ts), `/admin/lessons` QA dashboard.
 

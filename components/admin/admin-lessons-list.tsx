@@ -3,11 +3,17 @@
 import Link from "next/link";
 import { useMemo, useState } from "react";
 import { AdminSummaryCard } from "@/components/admin/admin-summary-card";
+import { MediaStatusBadge } from "@/components/admin/media-status-badge";
 import { LessonQaBadge } from "@/components/admin/lesson-qa-badge";
 import { LessonStatusBadge } from "@/components/admin/lesson-status-badge";
 import { EmptyState } from "@/components/empty-state";
 import { lessonPath } from "@/lib/content";
 import { lessonPreviewPath } from "@/lib/lesson-publish";
+import {
+  hasAudioUrl,
+  hasThumbnailUrl,
+  hasVideoUrl,
+} from "@/lib/lesson-media";
 import {
   getAdminPublishStatus,
   matchesStatusFilter,
@@ -20,15 +26,38 @@ import {
   type LessonQaSummary,
   type QaFilter,
 } from "@/lib/admin/lesson-qa";
+import { calculateReleaseReadiness } from "@/lib/admin/release-readiness";
+import {
+  ReleaseStatusBadge,
+  WorkflowQaBadge,
+} from "@/components/admin/release-workflow-badges";
+import type { LessonReleaseStatus, LessonWorkflowQaStatus } from "@/types/lesson-content";
+
+type ReleaseFilter = "all" | LessonReleaseStatus;
+type WorkflowQaFilter = "all" | LessonWorkflowQaStatus;
+type ReadinessFilter = "all" | "ready" | "needs_review";
+
+type PageSummary = {
+  totalLessons: number;
+  needsReview: number;
+  readyToPublish: number;
+  mediaMissing: number;
+};
 
 type Props = {
   reports: LessonQaReport[];
+  pageSummary?: PageSummary;
 };
 
-export function AdminLessonsList({ reports }: Props) {
+export function AdminLessonsList({ reports, pageSummary }: Props) {
   const [query, setQuery] = useState("");
   const [statusFilter, setStatusFilter] = useState<AdminStatusFilter>("all");
   const [qaFilter, setQaFilter] = useState<QaFilter>("all");
+  const [releaseFilter, setReleaseFilter] = useState<ReleaseFilter>("all");
+  const [workflowQaFilter, setWorkflowQaFilter] =
+    useState<WorkflowQaFilter>("all");
+  const [readinessFilter, setReadinessFilter] =
+    useState<ReadinessFilter>("all");
 
   const summary: LessonQaSummary = useMemo(
     () => summarizeLessonQa(reports),
@@ -41,6 +70,21 @@ export function AdminLessonsList({ reports }: Props) {
       const { lesson } = report;
       if (!matchesStatusFilter(lesson, statusFilter)) return false;
       if (qaFilter !== "all" && report.qaStatus !== qaFilter) return false;
+      const releaseStatus = lesson.releaseStatus ?? "draft";
+      const workflowQa = lesson.qaStatus ?? "needs_review";
+      if (releaseFilter !== "all" && releaseStatus !== releaseFilter) {
+        return false;
+      }
+      if (workflowQaFilter !== "all" && workflowQa !== workflowQaFilter) {
+        return false;
+      }
+      const readiness = calculateReleaseReadiness(lesson);
+      if (readinessFilter === "ready" && !readiness.readyToPublish) {
+        return false;
+      }
+      if (readinessFilter === "needs_review" && readiness.readyToPublish) {
+        return false;
+      }
       if (!q) return true;
       return (
         lesson.id.toLowerCase().includes(q) ||
@@ -50,7 +94,7 @@ export function AdminLessonsList({ reports }: Props) {
         lesson.description.toLowerCase().includes(q)
       );
     });
-  }, [reports, query, statusFilter, qaFilter]);
+  }, [reports, query, statusFilter, qaFilter, releaseFilter, workflowQaFilter, readinessFilter]);
 
   return (
     <div className="flex flex-col gap-6">
@@ -69,11 +113,28 @@ export function AdminLessonsList({ reports }: Props) {
         </Link>
       </div>
 
-      <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
-        <AdminSummaryCard label="Total lessons" value={summary.totalLessons} />
+      <div className="grid grid-cols-2 gap-3 sm:grid-cols-4 lg:grid-cols-8">
+        <AdminSummaryCard
+          label="Total lessons"
+          value={pageSummary?.totalLessons ?? summary.totalLessons}
+        />
+        <AdminSummaryCard
+          label="Needs review"
+          value={pageSummary?.needsReview ?? summary.needsReviewCount}
+        />
+        <AdminSummaryCard
+          label="Ready to publish"
+          value={pageSummary?.readyToPublish ?? summary.completeCount}
+        />
+        <AdminSummaryCard
+          label="Media missing"
+          value={pageSummary?.mediaMissing ?? summary.mediaMissingCount}
+        />
         <AdminSummaryCard label="Available" value={summary.availableCount} />
-        <AdminSummaryCard label="Draft" value={summary.draftCount} />
-        <AdminSummaryCard label="Archived" value={summary.archivedCount} />
+        <AdminSummaryCard
+          label="Media ready"
+          value={summary.mediaReadyCount}
+        />
         <AdminSummaryCard
           label="Total vocabulary"
           value={summary.totalVocabulary}
@@ -114,6 +175,46 @@ export function AdminLessonsList({ reports }: Props) {
           <option value="complete">Complete</option>
           <option value="needs_review">Needs review</option>
         </select>
+        <select
+          value={releaseFilter}
+          onChange={(e) =>
+            setReleaseFilter(e.target.value as ReleaseFilter)
+          }
+          className="rounded-xl border border-slate-200 px-3 py-2 text-sm outline-none focus:border-emerald-400"
+          aria-label="Release status filter"
+        >
+          <option value="all">Release: All</option>
+          <option value="draft">draft</option>
+          <option value="in_review">in_review</option>
+          <option value="approved">approved</option>
+          <option value="published">published</option>
+          <option value="archived">archived</option>
+        </select>
+        <select
+          value={workflowQaFilter}
+          onChange={(e) =>
+            setWorkflowQaFilter(e.target.value as WorkflowQaFilter)
+          }
+          className="rounded-xl border border-slate-200 px-3 py-2 text-sm outline-none focus:border-emerald-400"
+          aria-label="Release QA filter"
+        >
+          <option value="all">Release QA: All</option>
+          <option value="needs_review">needs_review</option>
+          <option value="passed">passed</option>
+          <option value="failed">failed</option>
+        </select>
+        <select
+          value={readinessFilter}
+          onChange={(e) =>
+            setReadinessFilter(e.target.value as ReadinessFilter)
+          }
+          className="rounded-xl border border-slate-200 px-3 py-2 text-sm outline-none focus:border-emerald-400"
+          aria-label="Readiness filter"
+        >
+          <option value="all">Readiness: All</option>
+          <option value="ready">Ready to publish</option>
+          <option value="needs_review">Needs review</option>
+        </select>
       </div>
 
       {filtered.length === 0 ? (
@@ -141,6 +242,9 @@ export function AdminLessonsList({ reports }: Props) {
                 <th className="px-3 py-3">ID</th>
                 <th className="px-3 py-3">Lesson</th>
                 <th className="px-3 py-3">Status</th>
+                <th className="hidden px-3 py-3 lg:table-cell">Release</th>
+                <th className="hidden px-3 py-3 lg:table-cell">Rel. QA</th>
+                <th className="px-3 py-3">Media</th>
                 <th className="px-3 py-3">QA</th>
                 <th className="hidden px-3 py-3 sm:table-cell">Ready</th>
                 <th className="hidden px-3 py-3 md:table-cell">Counts</th>
@@ -153,6 +257,7 @@ export function AdminLessonsList({ reports }: Props) {
                 const { lesson } = report;
                 const publishStatus = getAdminPublishStatus(lesson);
                 const publishReady = isPublishReady(report);
+                const readiness = calculateReleaseReadiness(lesson);
                 return (
                   <tr key={lesson.id} className="align-top hover:bg-emerald-50/30">
                     <td className="px-3 py-3 font-mono text-xs">{lesson.id}</td>
@@ -164,16 +269,60 @@ export function AdminLessonsList({ reports }: Props) {
                     <td className="px-3 py-3">
                       <LessonStatusBadge status={publishStatus} />
                     </td>
+                    <td className="hidden px-3 py-3 lg:table-cell">
+                      <ReleaseStatusBadge status={lesson.releaseStatus} />
+                    </td>
+                    <td className="hidden px-3 py-3 lg:table-cell">
+                      <WorkflowQaBadge status={lesson.qaStatus} />
+                    </td>
+                    <td className="px-3 py-3">
+                      <MediaStatusBadge status={lesson.mediaStatus} />
+                      <div className="mt-1.5 flex flex-wrap gap-1 text-[10px] font-medium text-slate-500">
+                        <span
+                          className={
+                            hasThumbnailUrl(lesson)
+                              ? "text-emerald-700"
+                              : "text-slate-400"
+                          }
+                        >
+                          Th {hasThumbnailUrl(lesson) ? "✓" : "—"}
+                        </span>
+                        <span
+                          className={
+                            hasVideoUrl(lesson)
+                              ? "text-emerald-700"
+                              : "text-slate-400"
+                          }
+                        >
+                          Vid {hasVideoUrl(lesson) ? "✓" : "—"}
+                        </span>
+                        <span
+                          className={
+                            hasAudioUrl(lesson)
+                              ? "text-emerald-700"
+                              : "text-slate-400"
+                          }
+                        >
+                          Aud {hasAudioUrl(lesson) ? "✓" : "—"}
+                        </span>
+                      </div>
+                    </td>
                     <td className="px-3 py-3">
                       <LessonQaBadge status={report.qaStatus} />
                     </td>
                     <td className="hidden px-3 py-3 sm:table-cell">
-                      {publishReady ? (
+                      {readiness.readyToPublish ? (
                         <span className="inline-flex rounded-full bg-emerald-50 px-2.5 py-0.5 text-xs font-medium text-emerald-800 ring-1 ring-emerald-200">
                           Publish-ready
                         </span>
+                      ) : publishReady ? (
+                        <span className="inline-flex rounded-full bg-sky-50 px-2.5 py-0.5 text-xs font-medium text-sky-800 ring-1 ring-sky-200">
+                          Content OK
+                        </span>
                       ) : (
-                        <span className="text-xs text-slate-400">—</span>
+                        <span className="text-xs text-slate-400">
+                          {readiness.issues.length} issue(s)
+                        </span>
                       )}
                     </td>
                     <td className="hidden px-3 py-3 text-xs text-slate-600 md:table-cell">
@@ -240,6 +389,12 @@ export function AdminLessonsList({ reports }: Props) {
                           className="text-slate-600 hover:text-emerald-700"
                         >
                           Quiz
+                        </Link>
+                        <Link
+                          href={`/admin/analytics/lessons/${lesson.id}`}
+                          className="text-emerald-700 hover:text-emerald-800"
+                        >
+                          Analytics
                         </Link>
                         <Link
                           href={`/admin/lessons/${lesson.id}/edit`}

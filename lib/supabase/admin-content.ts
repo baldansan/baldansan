@@ -1,5 +1,17 @@
 import type { AdminContentStatus } from "@/lib/admin/lesson-status";
+import {
+  canonicalLessonId,
+  lessonIdQueryCandidates,
+  normalizeLessonRouteId,
+} from "@/lib/lesson-id";
 import { isCurrentUserAdmin } from "@/lib/supabase/admin";
+import {
+  ADMIN_ACTIVITY_ACTIONS,
+  buildShallowDiffSummary,
+  logAdminActivity,
+  logAdminActivityFireAndForget,
+  publishActionForStatus,
+} from "@/lib/supabase/admin-activity";
 import { hasSupabaseConfig, supabase } from "@/lib/supabase/client";
 
 export type AdminContentResult<T> = {
@@ -64,6 +76,45 @@ function isValidLessonStatus(status: string): status is AdminContentStatus {
   return (VALID_LESSON_STATUSES as string[]).includes(status);
 }
 
+async function queryLessonById<T extends Record<string, unknown>>(
+  select: string,
+  lessonId: string
+): Promise<{ data: T | null; error: string | null }> {
+  if (!supabase) {
+    return { data: null, error: "Supabase not configured." };
+  }
+
+  const normalizedId = normalizeLessonRouteId(lessonId);
+  const candidates = lessonIdQueryCandidates(normalizedId);
+
+  for (const candidate of candidates) {
+    const { data, error } = await supabase
+      .from("lessons")
+      .select(select)
+      .eq("id", candidate)
+      .maybeSingle();
+
+    if (error) {
+      return { data: null, error: formatWriteError(error) };
+    }
+    if (data) {
+      if (typeof candidate === "number") {
+        console.warn("[lesson-id] Admin content resolved lesson using numeric id", {
+          lessonId: normalizedId,
+          candidate,
+        });
+      }
+      return { data: data as unknown as T, error: null };
+    }
+  }
+
+  return { data: null, error: null };
+}
+
+function lessonIdForChildRows(lessonId: string): string {
+  return canonicalLessonId(normalizeLessonRouteId(lessonId));
+}
+
 export type CreateDraftLessonInput = {
   id: string;
   courseId: string;
@@ -88,6 +139,14 @@ export type UpdateLessonMetadataInput = {
   quizCount: number;
 };
 
+export type UpdateLessonMediaInput = {
+  videoUrl?: string;
+  thumbnailUrl?: string;
+  audioUrl?: string;
+  sourceNote?: string;
+  mediaStatus: "missing" | "pending" | "ready";
+};
+
 export type AdminLessonMetadataRow = {
   id: string;
   course_id: string;
@@ -100,7 +159,68 @@ export type AdminLessonMetadataRow = {
   order_index: number;
   vocabulary_count: number;
   quiz_count: number;
+  video_url: string | null;
+  thumbnail_url: string | null;
+  audio_url: string | null;
+  source_note: string | null;
+  media_status: string;
 };
+
+function metadataSnapshotFromRow(
+  row: AdminLessonMetadataRow
+): Record<string, unknown> {
+  return {
+    title: row.title,
+    chineseTitle: row.chinese_title,
+    subtitle: row.subtitle,
+    description: row.description,
+    duration: row.duration,
+    status: row.status,
+    orderIndex: row.order_index,
+    vocabularyCount: row.vocabulary_count,
+    quizCount: row.quiz_count,
+  };
+}
+
+function metadataSnapshotFromInput(
+  input: UpdateLessonMetadataInput
+): Record<string, unknown> {
+  return {
+    title: input.title,
+    chineseTitle: input.chineseTitle,
+    subtitle: input.subtitle ?? null,
+    description: input.description ?? null,
+    duration: input.duration ?? null,
+    status: input.status,
+    orderIndex: input.orderIndex,
+    vocabularyCount: input.vocabularyCount,
+    quizCount: input.quizCount,
+  };
+}
+
+function mediaSnapshotFromRow(
+  row: AdminLessonMetadataRow
+): Record<string, unknown> {
+  return {
+    videoUrl: row.video_url,
+    thumbnailUrl: row.thumbnail_url,
+    audioUrl: row.audio_url,
+    sourceNote: row.source_note,
+    mediaStatus: row.media_status,
+  };
+}
+
+function mediaSnapshotFromInput(
+  input: UpdateLessonMediaInput
+): Record<string, unknown> {
+  return {
+    videoUrl: input.videoUrl ?? null,
+    thumbnailUrl: input.thumbnailUrl ?? null,
+    audioUrl: input.audioUrl ?? null,
+    sourceNote: input.sourceNote ?? null,
+    mediaStatus: input.mediaStatus,
+  };
+}
 
 export type CreateSubtitleLineInput = {
   lessonId: string;
@@ -264,6 +384,16 @@ export async function createDraftLesson(
       return { data: null, error: formatWriteError(error) };
     }
 
+    logAdminActivityFireAndForget({
+      action: ADMIN_ACTIVITY_ACTIONS.lessonCreated,
+      entityType: "lesson",
+      entityId: lessonId,
+      lessonId,
+      title: `Lesson ${lessonId} created`,
+      description: input.title.trim(),
+      metadata: { courseId, status, orderIndex },
+    });
+
     return { data: { id: lessonId }, error: null };
   } catch {
     return { data: null, error: "Хичээл үүсгэхэд алдаа гарлаа." };
@@ -327,22 +457,19 @@ export async function getAdminLessonMetadataById(
   }
 
   try {
-    const { data, error } = await supabase
-      .from("lessons")
-      .select(
-        "id, course_id, title, chinese_title, subtitle, description, duration, status, order_index, vocabulary_count, quiz_count"
-      )
-      .eq("id", lessonId)
-      .maybeSingle();
+    const result = await queryLessonById<AdminLessonMetadataRow>(
+      "id, course_id, title, chinese_title, subtitle, description, duration, status, order_index, vocabulary_count, quiz_count, video_url, thumbnail_url, audio_url, source_note, media_status",
+      lessonId
+    );
 
-    if (error) {
-      return { data: null, error: formatWriteError(error) };
+    if (result.error) {
+      return { data: null, error: result.error };
     }
-    if (!data) {
+    if (!result.data) {
       return { data: null, error: "Хичээл олдсонгүй." };
     }
 
-    return { data: data as AdminLessonMetadataRow, error: null };
+    return { data: result.data, error: null };
   } catch {
     return { data: null, error: "Metadata уншихад алдаа гарлаа." };
   }
@@ -368,6 +495,12 @@ export async function updateLessonMetadata(
 
   const v = validated.data;
 
+  const beforeRow = await getAdminLessonMetadataById(lessonId);
+  const beforeSnapshot = beforeRow.data
+    ? metadataSnapshotFromRow(beforeRow.data)
+    : undefined;
+  const afterSnapshot = metadataSnapshotFromInput(v);
+
   try {
     const { error } = await supabase
       .from("lessons")
@@ -388,10 +521,155 @@ export async function updateLessonMetadata(
       return { data: null, error: formatWriteError(error) };
     }
 
+    await logAdminActivity({
+      action: ADMIN_ACTIVITY_ACTIONS.lessonMetadataUpdated,
+      entityType: "lesson",
+      entityId: lessonId,
+      lessonId,
+      title: `Lesson ${lessonId} metadata updated`,
+      description: v.title,
+      metadata: { status: v.status, orderIndex: v.orderIndex },
+      beforeSnapshot,
+      afterSnapshot,
+      diffSummary: buildShallowDiffSummary(beforeSnapshot, afterSnapshot),
+    });
+
     return { data: { id: lessonId }, error: null };
   } catch {
-    return { data: null, error: "Хичээл шинэчлэхэд алдаа гарлаа." };
+    return { data: null, error: "Metadata хадгалахад алдаа гарлаа." };
   }
+}
+
+const VALID_MEDIA_STATUSES = ["missing", "pending", "ready"] as const;
+
+function isValidMediaStatus(
+  status: string
+): status is UpdateLessonMediaInput["mediaStatus"] {
+  return (VALID_MEDIA_STATUSES as readonly string[]).includes(status);
+}
+
+export function validateUpdateLessonMediaInput(
+  input: UpdateLessonMediaInput
+): {
+  data: UpdateLessonMediaInput | null;
+  error: string | null;
+  warnings: string[];
+} {
+  if (!isValidMediaStatus(input.mediaStatus)) {
+    return {
+      data: null,
+      error: "media_status must be missing, pending, or ready.",
+      warnings: [],
+    };
+  }
+
+  const warnings: string[] = [];
+  const checkUrl = (label: string, value?: string) => {
+    const trimmed = value?.trim();
+    if (trimmed && !/^https?:\/\//i.test(trimmed)) {
+      warnings.push(`${label} should start with http:// or https://`);
+    }
+  };
+
+  checkUrl("Video URL", input.videoUrl);
+  checkUrl("Thumbnail URL", input.thumbnailUrl);
+  checkUrl("Audio URL", input.audioUrl);
+
+  return {
+    data: {
+      videoUrl: input.videoUrl?.trim() || undefined,
+      thumbnailUrl: input.thumbnailUrl?.trim() || undefined,
+      audioUrl: input.audioUrl?.trim() || undefined,
+      sourceNote: input.sourceNote?.trim() || undefined,
+      mediaStatus: input.mediaStatus,
+    },
+    error: null,
+    warnings,
+  };
+}
+
+export async function updateLessonMedia(
+  lessonId: string,
+  input: UpdateLessonMediaInput
+): Promise<AdminContentResult<{ id: string; warnings?: string[] }>> {
+  if (!supabase || !hasSupabaseConfig) {
+    return notConfigured();
+  }
+
+  const gate = await requireAdmin();
+  if (gate.error) {
+    return { data: null, error: gate.error };
+  }
+
+  const validated = validateUpdateLessonMediaInput(input);
+  if (!validated.data) {
+    return { data: null, error: validated.error ?? "Validation failed." };
+  }
+
+  const v = validated.data;
+
+  const beforeRow = await getAdminLessonMetadataById(lessonId);
+  const beforeSnapshot = beforeRow.data
+    ? mediaSnapshotFromRow(beforeRow.data)
+    : undefined;
+  const afterSnapshot = mediaSnapshotFromInput(v);
+
+  try {
+    const { error } = await supabase
+      .from("lessons")
+      .update({
+        video_url: v.videoUrl || null,
+        thumbnail_url: v.thumbnailUrl || null,
+        audio_url: v.audioUrl || null,
+        source_note: v.sourceNote || null,
+        media_status: v.mediaStatus,
+      })
+      .eq("id", lessonId);
+
+    if (error) {
+      return { data: null, error: formatWriteError(error) };
+    }
+
+    const cleared =
+      !v.videoUrl && !v.thumbnailUrl && !v.audioUrl && v.mediaStatus === "missing";
+    await logAdminActivity({
+      action: cleared
+        ? ADMIN_ACTIVITY_ACTIONS.mediaCleared
+        : ADMIN_ACTIVITY_ACTIONS.mediaUpdated,
+      entityType: "lesson",
+      entityId: lessonId,
+      lessonId,
+      title: cleared
+        ? `Lesson ${lessonId} media cleared`
+        : `Lesson ${lessonId} media updated`,
+      metadata: { mediaStatus: v.mediaStatus },
+      beforeSnapshot,
+      afterSnapshot,
+      diffSummary: buildShallowDiffSummary(beforeSnapshot, afterSnapshot),
+    });
+
+    return {
+      data: {
+        id: lessonId,
+        warnings: validated.warnings.length > 0 ? validated.warnings : undefined,
+      },
+      error: null,
+    };
+  } catch {
+    return { data: null, error: "Media metadata хадгалахад алдаа гарлаа." };
+  }
+}
+
+export async function clearLessonMedia(
+  lessonId: string
+): Promise<AdminContentResult<{ id: string }>> {
+  return updateLessonMedia(lessonId, {
+    videoUrl: "",
+    thumbnailUrl: "",
+    audioUrl: "",
+    sourceNote: "",
+    mediaStatus: "missing",
+  });
 }
 
 export async function updateLessonStatus(
@@ -411,6 +689,18 @@ export async function updateLessonStatus(
     return { data: null, error: gate.error };
   }
 
+  const beforeResult = await queryLessonById<{ status: string; release_status?: string }>(
+    "status, release_status",
+    lessonId
+  );
+  const beforeSnapshot = beforeResult.data
+    ? {
+        status: beforeResult.data.status,
+        releaseStatus: beforeResult.data.release_status ?? null,
+      }
+    : undefined;
+  const afterSnapshot = { status, releaseStatus: beforeResult.data?.release_status ?? null };
+
   try {
     const { error } = await supabase
       .from("lessons")
@@ -421,9 +711,24 @@ export async function updateLessonStatus(
       return { data: null, error: formatWriteError(error) };
     }
 
+    await logAdminActivity({
+      action: publishActionForStatus(status),
+      entityType: "lesson",
+      entityId: lessonId,
+      lessonId,
+      title: `Lesson ${lessonId} status → ${status}`,
+      metadata: { status },
+      beforeSnapshot,
+      afterSnapshot: { status, releaseStatus: afterSnapshot.releaseStatus },
+      diffSummary: buildShallowDiffSummary(beforeSnapshot, {
+        status,
+        releaseStatus: afterSnapshot.releaseStatus,
+      }),
+    });
+
     return { data: { id: lessonId, status }, error: null };
   } catch {
-    return { data: null, error: "Статус шинэчлэхэд алдаа гарлаа." };
+    return { data: null, error: "Status шинэчлэхэд алдаа гарлаа." };
   }
 }
 
@@ -705,6 +1010,14 @@ export async function createSubtitleLine(
     if (!created) {
       return { data: null, error: null };
     }
+    logAdminActivityFireAndForget({
+      action: ADMIN_ACTIVITY_ACTIONS.subtitleCreated,
+      entityType: "subtitle",
+      entityId: String(created.id),
+      lessonId: input.lessonId,
+      title: `Subtitle added to lesson ${input.lessonId}`,
+      metadata: { orderIndex },
+    });
     return { data: created, error: null };
   } catch {
     return { data: null, error: "Subtitle нэмэхэд алдаа гарлаа." };
@@ -712,7 +1025,8 @@ export async function createSubtitleLine(
 }
 
 export async function deleteSubtitleLine(
-  id: number
+  id: number,
+  lessonId?: string
 ): Promise<AdminContentResult<null>> {
   if (!supabase || !hasSupabaseConfig) {
     return notConfigured();
@@ -728,6 +1042,13 @@ export async function deleteSubtitleLine(
     if (error) {
       return { data: null, error: formatWriteError(error) };
     }
+    logAdminActivityFireAndForget({
+      action: ADMIN_ACTIVITY_ACTIONS.subtitleDeleted,
+      entityType: "subtitle",
+      entityId: String(id),
+      lessonId,
+      title: `Subtitle ${id} deleted`,
+    });
     return { data: null, error: null };
   } catch {
     return { data: null, error: "Subtitle устгахад алдаа гарлаа." };
@@ -803,6 +1124,14 @@ export async function createVocabularyWord(
 
     const list = await getVocabularyWordsByLessonId(input.lessonId);
     const created = list.data?.find((row) => row.order_index === orderIndex);
+    logAdminActivityFireAndForget({
+      action: ADMIN_ACTIVITY_ACTIONS.vocabularyCreated,
+      entityType: "vocabulary",
+      entityId: created ? String(created.id) : undefined,
+      lessonId: input.lessonId,
+      title: `Vocabulary added to lesson ${input.lessonId}`,
+      metadata: { chinese: input.chinese.trim() },
+    });
     return { data: created ?? null, error: null };
   } catch {
     return { data: null, error: "Vocabulary нэмэхэд алдаа гарлаа." };
@@ -833,6 +1162,13 @@ export async function deleteVocabularyWord(
     }
 
     await refreshLessonCounts(lessonId);
+    logAdminActivityFireAndForget({
+      action: ADMIN_ACTIVITY_ACTIONS.vocabularyDeleted,
+      entityType: "vocabulary",
+      entityId: String(id),
+      lessonId,
+      title: `Vocabulary ${id} deleted from lesson ${lessonId}`,
+    });
     return { data: null, error: null };
   } catch {
     return { data: null, error: "Vocabulary устгахад алдаа гарлаа." };
@@ -912,6 +1248,13 @@ export async function createQuizQuestion(
 
     const list = await getQuizQuestionsByLessonId(input.lessonId);
     const created = list.data?.find((row) => row.order_index === orderIndex);
+    logAdminActivityFireAndForget({
+      action: ADMIN_ACTIVITY_ACTIONS.quizCreated,
+      entityType: "quiz",
+      entityId: created ? String(created.id) : undefined,
+      lessonId: input.lessonId,
+      title: `Quiz question added to lesson ${input.lessonId}`,
+    });
     return { data: created ?? null, error: null };
   } catch {
     return { data: null, error: "Quiz нэмэхэд алдаа гарлаа." };
@@ -939,6 +1282,13 @@ export async function deleteQuizQuestion(
     }
 
     await refreshLessonCounts(lessonId);
+    logAdminActivityFireAndForget({
+      action: ADMIN_ACTIVITY_ACTIONS.quizDeleted,
+      entityType: "quiz",
+      entityId: String(id),
+      lessonId,
+      title: `Quiz question ${id} deleted from lesson ${lessonId}`,
+    });
     return { data: null, error: null };
   } catch {
     return { data: null, error: "Quiz устгахад алдаа гарлаа." };

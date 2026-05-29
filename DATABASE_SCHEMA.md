@@ -55,6 +55,13 @@ erDiagram
 | `vocabulary_count`, `quiz_count` | Summary counts (should match child rows) |
 | `status` | `available` / `locked` for course list |
 | `order_index` | Order within course |
+| `video_url` | External video URL (mp4/webm or embed page) — Phase 5 Step 15 |
+| `thumbnail_url` | Cover/thumbnail image URL |
+| `audio_url` | Optional audio resource URL |
+| `source_note` | Admin note: source platform, rights, filename |
+| `media_status` | `missing` \| `pending` \| `ready` — admin media workflow flag |
+
+**Media fields (Step 15):** URL-based metadata only. No file upload or Supabase Storage yet. Public watch page uses `video_url` when set; otherwise shows placeholder. See [MEDIA_WORKFLOW.md](./MEDIA_WORKFLOW.md).
 
 **Relationships:** Parent of `subtitle_lines`, `vocabulary_words`, `quiz_questions`, and user progress rows.
 

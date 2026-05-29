@@ -9,6 +9,7 @@ type Props = {
   courseId?: string;
   showAdminLink?: boolean;
   showAdminPreviewLink?: boolean;
+  accessDenied?: boolean;
 };
 
 export function LessonUnavailable({
@@ -16,6 +17,7 @@ export function LessonUnavailable({
   courseId = "hsk5",
   showAdminLink = false,
   showAdminPreviewLink = false,
+  accessDenied = false,
 }: Props) {
   return (
     <div className="min-h-screen bg-gradient-to-b from-emerald-50/40 via-white to-white text-slate-900">
@@ -25,10 +27,14 @@ export function LessonUnavailable({
         <div className="rounded-3xl bg-white p-8 shadow-sm ring-1 ring-slate-200 sm:p-10">
           <p className="text-sm font-medium text-emerald-600">Хичээл</p>
           <h1 className="mt-2 text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
-            Энэ хичээл одоогоор нийтлэгдээгүй байна
+            {accessDenied
+              ? "Admin preview эрхгүй байна"
+              : "Энэ хичээл одоогоор нийтлэгдээгүй байна"}
           </h1>
           <p className="mt-4 text-base leading-7 text-slate-600">
-            Хичээл draft эсвэл archived төлөвтэй байж магадгүй.
+            {accessDenied
+              ? "Draft хичээлийг зөвхөн admin хэрэглэгч ?preview=admin горимоор үзнэ."
+              : "Хичээл draft эсвэл archived төлөвтэй байж магадгүй."}
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:justify-center">
             <Link

@@ -2,118 +2,455 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { AdminProductionSafety } from "@/components/admin/admin-production-safety";
+import { AdminActivityPreviewLoader, useAdminActivityClient } from "@/components/admin/admin-activity-preview-loader";
+import { AdminAttentionList } from "@/components/admin/admin-attention-list";
 import { AdminCard } from "@/components/admin/admin-card";
-import { AdminSectionTitle } from "@/components/admin/admin-section-title";
-import { AdminSummaryCard } from "@/components/admin/admin-summary-card";
+import { AdminDashboardSection } from "@/components/admin/admin-dashboard-section";
+import { AdminMetricCard } from "@/components/admin/admin-metric-card";
+import { AdminRecentActivity } from "@/components/admin/admin-recent-activity";
+import { AdminTaskCenterPreview } from "@/components/admin/admin-task-center-preview";
 import { getCurrentUser, hasSupabaseConfig } from "@/lib/supabase/auth";
-import type { LessonQaSummary } from "@/lib/admin/lesson-qa";
+import type { AdminTask, AdminTaskSummary } from "@/lib/admin/task-generator";
+import type { AdminDashboardMetrics } from "@/lib/supabase/admin-analytics";
+import type {
+  AdminActivityRow,
+  AdminActivitySummary,
+} from "@/lib/admin/admin-activity-shared";
 import type { AuthUser } from "@/types/auth";
 
 type Props = {
-  summary: LessonQaSummary;
+  metrics: AdminDashboardMetrics;
+  taskSummary: AdminTaskSummary;
+  activeTasks: AdminTask[];
+  taskWarnings?: string[];
+  adminActivitySummary: AdminActivitySummary;
+  recentAdminActivity: AdminActivityRow[];
+  adminActivityWarnings?: string[];
 };
 
-export function AdminDashboard({ summary }: Props) {
+export function AdminDashboard({
+  metrics,
+  taskSummary,
+  activeTasks,
+  taskWarnings = [],
+  adminActivitySummary,
+  recentAdminActivity,
+  adminActivityWarnings = [],
+}: Props) {
   const [user, setUser] = useState<AuthUser | null>(null);
+  const {
+    rows: clientActivityRows,
+    summary: clientActivitySummary,
+    warnings: clientActivityWarnings,
+    loading: activityLoading,
+  } = useAdminActivityClient(200);
+
+  const activitySummary = activityLoading
+    ? adminActivitySummary
+    : clientActivitySummary;
+  const recentActivity = activityLoading
+    ? recentAdminActivity
+    : clientActivityRows.slice(0, 5);
+  const activityWarnings = [
+    ...adminActivityWarnings,
+    ...clientActivityWarnings,
+  ];
 
   useEffect(() => {
     if (!hasSupabaseConfig) return;
     getCurrentUser().then(({ data }) => setUser(data));
   }, []);
 
+  const avgScore =
+    metrics.learnerProgress.averageQuizPercentage != null
+      ? `${metrics.learnerProgress.averageQuizPercentage}%`
+      : "—";
+
   return (
-    <div className="flex flex-col gap-6">
+    <div className="flex flex-col gap-8">
       <section>
         <h1 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
-          Admin самбар
+          Admin analytics
         </h1>
         <p className="mt-2 text-sm text-slate-600">
-          Контент удирдах суурь хэсэг. Одоогоор зөвхөн унших горим — Supabase руу
-          бичих идэвхгүй.
+          Content metrics, QA health, media readiness, and learner progress at a
+          glance.
         </p>
         {user ? (
           <p className="mt-2 text-sm text-slate-600">
-            Нэвтэрсэн: {user.email ?? user.id}
+            Signed in: {user.email ?? user.id}
           </p>
         ) : null}
       </section>
 
-      <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
-        <AdminSummaryCard
-          label="Needs review"
-          value={summary.needsReviewCount}
-        />
-        <AdminSummaryCard label="Complete" value={summary.completeCount} />
-        <AdminSummaryCard label="Available" value={summary.availableCount} />
-        <AdminSummaryCard label="Total lessons" value={summary.totalLessons} />
-      </div>
+      {metrics.warnings.length > 0 ? (
+        <div className="rounded-xl bg-amber-50 px-4 py-3 text-sm text-amber-900 ring-1 ring-amber-200">
+          <p className="font-semibold">Analytics notes</p>
+          <ul className="mt-2 list-inside list-disc">
+            {metrics.warnings.map((warning) => (
+              <li key={warning}>{warning}</li>
+            ))}
+          </ul>
+        </div>
+      ) : null}
 
-      <AdminSectionTitle
-        title="Хэсгүүд"
-        description="Content QA-аар publish-ийн өмнө subtitle, vocabulary, quiz шалгана."
-      />
+      <AdminDashboardSection
+        title="Overview"
+        description="Lesson publish status across HSK5."
+      >
+        <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
+          <AdminMetricCard
+            label="Total lessons"
+            value={metrics.lessonStatus.totalLessons}
+          />
+          <AdminMetricCard
+            label="Available"
+            value={metrics.lessonStatus.availableCount}
+          />
+          <AdminMetricCard
+            label="Draft"
+            value={metrics.lessonStatus.draftCount}
+            accent="amber"
+          />
+          <AdminMetricCard
+            label="Archived"
+            value={metrics.lessonStatus.archivedCount}
+            accent="slate"
+          />
+        </div>
+      </AdminDashboardSection>
 
-      <div className="grid gap-4 sm:grid-cols-2">
-        <AdminCard
-          title="Content QA"
-          description={`${summary.totalLessons} хичээл — metadata, subtitle, vocabulary, quiz бүрэн байдлыг шалгах.`}
-          href="/admin/lessons"
-        />
-        <AdminCard
-          title="Lessons needing review"
-          description={`${summary.needsReviewCount} хичээл засах эсвэл контент нэмэх шаардлагатай.`}
-          href="/admin/lessons"
-        />
-        <AdminCard
-          title="Available lessons"
-          description={`${summary.availableCount} нийтлэгдсэн хичээл public route дээр.`}
-          href="/admin/lessons"
-        />
-        <AdminCard
-          title="Next action: Create lesson draft"
-          description="Шинэ хичээлийн metadata skeleton — save дараагийн алхамд."
-          href="/admin/lessons/new"
-        />
-        <AdminCard
-          title="Хичээлүүд"
-          description="Бүх хичээлийн QA хүснэгт, preview холбоос."
-          href="/admin/lessons"
-        />
-        <AdminCard
-          title="Upload workflow"
-          description="metadata → subtitle → vocabulary → quiz → preview → publish"
-        />
-      </div>
+      <AdminDashboardSection
+        title="Release workflow"
+        description="Internal approval and publish readiness (requires migration 005_lesson_release_workflow)."
+      >
+        <div className="grid grid-cols-2 gap-3 sm:grid-cols-5">
+          <AdminMetricCard
+            label="In review"
+            value={metrics.releaseWorkflow.inReviewCount}
+          />
+          <AdminMetricCard
+            label="Approved"
+            value={metrics.releaseWorkflow.approvedCount}
+            accent="emerald"
+          />
+          <AdminMetricCard
+            label="Release published"
+            value={metrics.releaseWorkflow.publishedReleaseCount}
+          />
+          <AdminMetricCard
+            label="QA failed"
+            value={metrics.releaseWorkflow.qaFailedCount}
+            accent="amber"
+          />
+          <AdminMetricCard
+            label="Ready to publish"
+            value={metrics.releaseWorkflow.readyToPublishCount}
+            accent="emerald"
+          />
+        </div>
+        {metrics.releaseWorkflow.migrationPending ? (
+          <p className="mt-3 text-xs text-amber-800">
+            Run migration 005_lesson_release_workflow for release_status columns — see
+            supabase/workflows/README.md
+          </p>
+        ) : null}
+      </AdminDashboardSection>
 
-      <section className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:p-6">
-        <AdminSectionTitle title="Түргэн холбоос" />
-        <ul className="mt-4 flex flex-col gap-2 text-sm">
-          <li>
-            <Link
-              href="/admin/lessons"
-              className="font-medium text-emerald-700 hover:text-emerald-800"
-            >
-              Content QA →
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="/admin/lessons/new"
-              className="font-medium text-emerald-700 hover:text-emerald-800"
-            >
-              Шинэ хичээл үүсгэх →
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="/"
-              className="font-medium text-slate-600 hover:text-emerald-700"
-            >
-              Апп руу буцах →
-            </Link>
-          </li>
-        </ul>
-      </section>
+      <AdminDashboardSection
+        title="Content health"
+        description="Subtitle, vocabulary, and quiz totals plus publish readiness."
+      >
+        <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
+          <AdminMetricCard
+            label="Subtitle lines"
+            value={metrics.contentTotals.totalSubtitleLines}
+          />
+          <AdminMetricCard
+            label="Vocabulary words"
+            value={metrics.contentTotals.totalVocabularyWords}
+          />
+          <AdminMetricCard
+            label="Quiz questions"
+            value={metrics.contentTotals.totalQuizQuestions}
+          />
+          <AdminMetricCard
+            label="Ready to publish"
+            value={metrics.contentQa.lessonsReadyToPublish}
+            hint="≥1 sub, ≥5 vocab, ≥3 quiz"
+          />
+        </div>
+        <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
+          <AdminMetricCard
+            label="Missing subtitles"
+            value={metrics.contentQa.lessonsMissingSubtitles}
+            accent="amber"
+          />
+          <AdminMetricCard
+            label="Missing vocabulary"
+            value={metrics.contentQa.lessonsMissingVocabulary}
+            accent="amber"
+          />
+          <AdminMetricCard
+            label="Missing quiz"
+            value={metrics.contentQa.lessonsMissingQuiz}
+            accent="amber"
+          />
+          <AdminMetricCard
+            label="Needs review"
+            value={metrics.contentQa.needsReviewCount}
+            accent="amber"
+          />
+        </div>
+      </AdminDashboardSection>
+
+      <AdminDashboardSection
+        title="Media readiness"
+        description="Uploaded or linked thumbnail, video, and audio."
+      >
+        <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
+          <AdminMetricCard
+            label="Media ready"
+            value={metrics.media.mediaReadyCount}
+          />
+          <AdminMetricCard
+            label="Media pending"
+            value={metrics.media.mediaPendingCount}
+            accent="amber"
+          />
+          <AdminMetricCard
+            label="Media missing"
+            value={metrics.media.mediaMissingCount}
+            accent="amber"
+          />
+          <AdminMetricCard
+            label="With thumbnail"
+            value={metrics.media.withThumbnailCount}
+          />
+          <AdminMetricCard
+            label="With video"
+            value={metrics.media.withVideoCount}
+          />
+          <AdminMetricCard
+            label="With audio"
+            value={metrics.media.withAudioCount}
+          />
+        </div>
+      </AdminDashboardSection>
+
+      <AdminDashboardSection
+        title="Learner progress"
+        description={
+          metrics.learnerProgress.limitedByRls
+            ? "May show only your own rows until admin read policies are added."
+            : "Aggregated from progress tables."
+        }
+      >
+        <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
+          <AdminMetricCard
+            label="Users with progress"
+            value={metrics.learnerProgress.usersWithLessonProgress}
+          />
+          <AdminMetricCard
+            label="Completed lessons"
+            value={metrics.learnerProgress.completedLessonRows}
+          />
+          <AdminMetricCard
+            label="Learned words"
+            value={metrics.learnerProgress.learnedVocabularyRows}
+          />
+          <AdminMetricCard
+            label="Quiz attempts"
+            value={metrics.learnerProgress.quizAttempts}
+          />
+          <AdminMetricCard
+            label="Avg quiz score"
+            value={avgScore}
+            accent="slate"
+          />
+        </div>
+      </AdminDashboardSection>
+
+      <AdminDashboardSection
+        title="Production safety"
+        description="CMS hardening reminders, latest activity, and critical task queue."
+      >
+        <AdminProductionSafety
+          adminActivitySummary={activitySummary}
+          recentAdminActivity={recentActivity}
+          criticalTasks={activeTasks.filter((task) => task.severity === "critical")}
+          releaseMigrationPending={metrics.releaseWorkflow.migrationPending}
+          activityWarnings={activityWarnings}
+        />
+      </AdminDashboardSection>
+
+      <AdminDashboardSection
+        title="Admin activity"
+        description="Best-effort audit trail of admin lesson, content, publish, and task actions."
+      >
+        {activityWarnings.length > 0 ? (
+          <p className="mb-3 text-xs text-amber-800">
+            {activityWarnings.join(" · ")}
+          </p>
+        ) : null}
+        <AdminActivityPreviewLoader recentLimit={5} />
+      </AdminDashboardSection>
+
+      <AdminDashboardSection
+        title="Task center"
+        description="Actionable content review queue from lessons, QA, media, release, and analytics."
+      >
+        <AdminTaskCenterPreview
+          summary={taskSummary}
+          activeTasks={activeTasks}
+        />
+        {taskWarnings.length > 0 ? (
+          <p className="text-xs text-amber-800">
+            {taskWarnings.join(" · ")}
+          </p>
+        ) : null}
+      </AdminDashboardSection>
+
+      <AdminDashboardSection
+        title="Needs attention"
+        description="Lessons with missing content or media — open edit to fix."
+      >
+        <AdminAttentionList items={metrics.needsAttention} />
+      </AdminDashboardSection>
+
+      <AdminDashboardSection title="Recent activity">
+        <AdminRecentActivity
+          quizAttempts={metrics.recentQuizAttempts}
+          lessonProgress={metrics.recentLessonProgress}
+        />
+      </AdminDashboardSection>
+
+      <AdminDashboardSection
+        title="Quick actions"
+        description="Jump to common admin workflows."
+      >
+        <div className="flex flex-wrap gap-2">
+          <Link
+            href="/admin/activity"
+            className="inline-flex rounded-full bg-emerald-500 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-emerald-600"
+          >
+            Activity log
+          </Link>
+          <Link
+            href="/admin/tasks"
+            className="inline-flex rounded-full bg-emerald-500 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-emerald-600"
+          >
+            Task center
+          </Link>
+          <Link
+            href="/admin/analytics"
+            className="inline-flex rounded-full bg-emerald-500 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-emerald-600"
+          >
+            Learning analytics
+          </Link>
+          <Link
+            href="/admin/lesson-builder"
+            className="inline-flex rounded-full bg-emerald-500 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-emerald-600"
+          >
+            Lesson Builder
+          </Link>
+          <Link
+            href="/admin/lessons"
+            className="inline-flex rounded-full border border-emerald-200 bg-emerald-50 px-5 py-2.5 text-sm font-semibold text-emerald-800 transition-colors hover:bg-emerald-100"
+          >
+            Content QA
+          </Link>
+          <Link
+            href="/admin/lessons/new"
+            className="inline-flex rounded-full border border-slate-200 px-5 py-2.5 text-sm font-medium text-slate-700 transition-colors hover:border-emerald-200 hover:text-emerald-700"
+          >
+            Create lesson
+          </Link>
+          <Link
+            href="/admin/system-check"
+            className="inline-flex rounded-full border border-emerald-200 bg-emerald-50 px-5 py-2.5 text-sm font-semibold text-emerald-800 transition-colors hover:bg-emerald-100"
+          >
+            System check
+          </Link>
+          <Link
+            href="/admin/final-audit"
+            className="inline-flex rounded-full border border-emerald-200 bg-emerald-50 px-5 py-2.5 text-sm font-semibold text-emerald-800 transition-colors hover:bg-emerald-100"
+          >
+            Phase 5 Final Audit
+          </Link>
+          <Link
+            href="/review"
+            className="inline-flex rounded-full border border-slate-200 px-5 py-2.5 text-sm font-medium text-slate-700 transition-colors hover:border-emerald-200 hover:text-emerald-700"
+          >
+            Review app
+          </Link>
+          <Link
+            href="/"
+            className="inline-flex rounded-full border border-slate-200 px-5 py-2.5 text-sm font-medium text-slate-700 transition-colors hover:border-emerald-200 hover:text-emerald-700"
+          >
+            Back to app
+          </Link>
+        </div>
+      </AdminDashboardSection>
+
+      <AdminDashboardSection
+        title="Admin tools"
+        description="Existing workflows — unchanged."
+      >
+        <div className="grid gap-4 sm:grid-cols-2">
+          <AdminCard
+            title="System check"
+            description="Runtime env, Supabase, auth, admin, tasks, activity, and storage readiness."
+            href="/admin/system-check"
+          />
+          <AdminCard
+            title="Phase 5 Final Audit"
+            description="Read-only checklist for CMS, release, analytics, tasks, rollback, and security."
+            href="/admin/final-audit"
+          />
+          <AdminCard
+            title="Activity log"
+            description={`${activitySummary.total} logged actions · audit trail for admin workflows.`}
+            href="/admin/activity"
+          />
+          <AdminCard
+            title="Task center"
+            description={`${taskSummary.totalTasks} tasks · ${taskSummary.criticalCount} critical · review queue before publish.`}
+            href="/admin/tasks"
+          />
+          <AdminCard
+            title="Prompt library"
+            description="Copy-ready ChatGPT/Cursor prompts for content improvement — no AI API."
+            href="/admin/prompts"
+          />
+          <AdminCard
+            title="Learning analytics"
+            description={`${metrics.learnerProgress.quizAttempts} quiz attempts · ${metrics.learnerProgress.averageQuizPercentage ?? "—"}% avg · ${metrics.learnerProgress.completedLessonRows} completed`}
+            href="/admin/analytics"
+          />
+          <AdminCard
+            title="Content QA"
+            description="Full lesson table with filters, media indicators, and preview links."
+            href="/admin/lessons"
+          />
+          <AdminCard
+            title="Lesson Builder"
+            description="Draft → prompt → import → media → preview → publish checklist."
+            href="/admin/lesson-builder"
+          />
+          <AdminCard
+            title="Create draft lesson"
+            description="New lesson metadata skeleton."
+            href="/admin/lessons/new"
+          />
+          <AdminCard
+            title="Media upload"
+            description="Upload thumbnail, audio, video on any lesson edit page."
+            href="/admin/lessons"
+          />
+        </div>
+      </AdminDashboardSection>
     </div>
   );
 }

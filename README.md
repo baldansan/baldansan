@@ -2,7 +2,7 @@
 
 A Mongolian–Chinese language learning web app. Users learn Chinese through short video lessons, subtitles, vocabulary, and quizzes.
 
-**Current:** Supabase-first lesson content with local fallback, dynamic lessons 1–4, **Supabase Auth**, account progress, and **admin UI shell** at `/admin` (read-only; no content writes yet).
+**Current:** Supabase-first lesson content with local fallback, **Supabase Auth** + account progress, and **Phase 5 Admin CMS** — full content management, analytics, tasks, activity log, rollback, and release workflow at `/admin`.
 
 ## Tech stack
 
@@ -10,7 +10,7 @@ A Mongolian–Chinese language learning web app. Users learn Chinese through sho
 - TypeScript
 - Tailwind CSS 4
 - React 19
-- Supabase (read-only content when configured)
+- Supabase (content, auth, progress, admin RLS writes)
 
 ## Current features
 
@@ -38,8 +38,11 @@ A Mongolian–Chinese language learning web app. Users learn Chinese through sho
 | `/review` | Daily review |
 | `/login` | Sign in |
 | `/signup` | Sign up |
-| `/admin` | Admin dashboard (logged-in; read-only shell) |
-| `/admin/lessons` | Lesson management list |
+| `/deployment-check` | Public deployment smoke test (post-deploy) |
+| `/admin` | Admin dashboard (admin role required) |
+| `/admin/lessons` | Lesson QA + edit |
+| `/admin/activity` | Admin activity log |
+| `/admin/final-audit` | Phase 5 readiness checklist |
 
 Examples: `/lessons/1`, `/lessons/4/quiz`. Invalid IDs (e.g. `/lessons/999`) show lesson not found.
 
@@ -133,13 +136,24 @@ Helpers: [lib/supabase/auth.ts](./lib/supabase/auth.ts). Header shows **Нэвт
 
 - [ADMIN_PLAN.md](./ADMIN_PLAN.md) — admin CMS roadmap and security
 - [CONTENT_WORKFLOW.md](./CONTENT_WORKFLOW.md) — create → publish → verify workflow
+- [LESSON_BUILDER_WORKFLOW.md](./LESSON_BUILDER_WORKFLOW.md) — guided Lesson Builder (draft → publish)
+- [MEDIA_WORKFLOW.md](./MEDIA_WORKFLOW.md) — lesson media URL metadata (video, thumbnail, audio)
+- [ADMIN_ANALYTICS.md](./ADMIN_ANALYTICS.md) — admin dashboard metrics and RLS notes
+- [ADMIN_LEARNING_ANALYTICS.md](./ADMIN_LEARNING_ANALYTICS.md) — per-lesson learner progress and quiz analytics
+- [ADMIN_QUESTION_ANALYTICS.md](./ADMIN_QUESTION_ANALYTICS.md) — question-level quiz performance insights
+- [ADMIN_VOCABULARY_ANALYTICS.md](./ADMIN_VOCABULARY_ANALYTICS.md) — vocabulary engagement (most/least learned)
+- [AI_ASSISTED_CONTENT_WORKFLOW.md](./AI_ASSISTED_CONTENT_WORKFLOW.md) — copy-ready improvement prompts (no AI API)
+- [RELEASE_WORKFLOW.md](./RELEASE_WORKFLOW.md) — content approval and publish readiness checklist
+- [ADMIN_TASK_CENTER.md](./ADMIN_TASK_CENTER.md) — admin content review queue (`/admin/tasks`)
+- [ADMIN_TASK_MANAGEMENT.md](./ADMIN_TASK_MANAGEMENT.md) — persistent task status, priority, due dates
+- [MEDIA_UPLOAD_WORKFLOW.md](./MEDIA_UPLOAD_WORKFLOW.md) — Supabase Storage upload for lesson media
 - [LESSON_IMPORT_FORMAT.md](./LESSON_IMPORT_FORMAT.md) — bulk JSON import format (ChatGPT paste)
 - [LESSON_EXPORT_FORMAT.md](./LESSON_EXPORT_FORMAT.md) — full lesson JSON backup export
 - [LESSON_BACKUP_RESTORE.md](./LESSON_BACKUP_RESTORE.md) — duplicate, restore, replace safety
 - [LESSON_PROMPT_TEMPLATE.md](./LESSON_PROMPT_TEMPLATE.md) — master ChatGPT prompt for lesson JSON
 - [supabase/admin/README.md](./supabase/admin/README.md) — run `001_admin_profiles_setup.sql`, bootstrap admin user
 
-**Routes:** `/admin` · `/admin/lessons` · `/admin/lessons/new` · `/admin/lessons/1/edit` (example)
+**Routes:** `/admin` · `/admin/lesson-builder` · `/admin/lessons` · `/admin/lessons/new` · `/admin/lessons/1/edit` (example)
 
 **Admin editors:** `/admin/lessons/new` (draft metadata) · `/admin/lessons/{id}/edit` (metadata save, subtitle, vocabulary, quiz CRUD).
 
@@ -151,13 +165,66 @@ Helpers: [lib/supabase/auth.ts](./lib/supabase/auth.ts). Header shows **Нэвт
 
 **Duplicate & restore:** copy lesson to new draft ID; restore backup JSON with append/replace (confirmation required for replace).
 
-**Next step:** Phase 5 Step 14 — Lesson package generator / full lesson builder workflow.
+**Lesson Builder:** `/admin/lesson-builder` — select lesson, workflow checklist, QA summary, quick links to edit/preview/export/publish.
+
+**Media:** `/admin/lessons/{id}/edit` → upload thumbnail/audio/video to Supabase Storage, or paste URLs manually. See [MEDIA_UPLOAD_WORKFLOW.md](./MEDIA_UPLOAD_WORKFLOW.md) and [MEDIA_WORKFLOW.md](./MEDIA_WORKFLOW.md).
+
+**Task center:** `/admin/tasks` — content review queue (missing content, QA, media, release blockers, analytics tasks). See [ADMIN_TASK_CENTER.md](./ADMIN_TASK_CENTER.md).
+
+**Task management:** dismiss, resolve, priority, due dates, notes on `/admin/tasks` (requires migration `006_admin_tasks.sql`). See [ADMIN_TASK_MANAGEMENT.md](./ADMIN_TASK_MANAGEMENT.md).
+
+**Activity log:** `/admin/activity` — audit trail with diff detail at `/admin/activity/{id}`, safe rollback for supported actions, CSV/JSON export (requires migrations `007` + `008`). See [ADMIN_ACTIVITY_LOG.md](./ADMIN_ACTIVITY_LOG.md), [ADMIN_ACTIVITY_DIFFS.md](./ADMIN_ACTIVITY_DIFFS.md), [ADMIN_ROLLBACK_WORKFLOW.md](./ADMIN_ROLLBACK_WORKFLOW.md), [ADMIN_AUDIT_EXPORT.md](./ADMIN_AUDIT_EXPORT.md).
+
+**System check:** [`/admin/system-check`](/admin/system-check) — runtime env/Supabase readiness (pass/warn/fail badges; no secrets shown). Run alongside [supabase/verify/production_verification.sql](./supabase/verify/production_verification.sql) in Supabase SQL Editor.
+
+**Deployment check:** [`/deployment-check`](/deployment-check) — public post-deploy smoke test (no login; no secrets).
+
+**Next step:** Phase 6 Step 4 — Production route testing after first manual Vercel deploy.
+
+## Deployment (Phase 6)
+
+Repo is prepared for **manual Vercel deployment** — not auto-deployed from code.
+
+| Resource | Purpose |
+|----------|---------|
+| [VERCEL_DEPLOYMENT_GUIDE.md](./VERCEL_DEPLOYMENT_GUIDE.md) | Connect GitHub, env vars, deploy, Supabase Auth URLs |
+| [SUPABASE_PRODUCTION_SETUP.md](./SUPABASE_PRODUCTION_SETUP.md) | Migrations, policies, verification SQL |
+| [PRODUCTION_CHECKLIST.md](./PRODUCTION_CHECKLIST.md) | Go-live checkbox list |
+| [DEPLOYMENT_PLAN.md](./DEPLOYMENT_PLAN.md) | Full Phase 6 deployment plan |
+| [`/deployment-check`](/deployment-check) | Public smoke test after deploy |
+| [`/admin/system-check`](/admin/system-check) | Admin verification after deploy |
+
+Copy [.env.example](./.env.example) to `.env.local` locally. On Vercel, set `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_ANON_KEY` only — never `service_role`.
+
+## Production readiness (Phase 6)
+
+Setup complete — **not deployed yet** until you run manual Vercel deploy and checklists are green.
+
+| Doc | Purpose |
+|-----|---------|
+| [DEPLOYMENT_PLAN.md](./DEPLOYMENT_PLAN.md) | Full deployment plan |
+| [PRODUCTION_CHECKLIST.md](./PRODUCTION_CHECKLIST.md) | Go-live checkbox list |
+| [VERCEL_DEPLOYMENT_GUIDE.md](./VERCEL_DEPLOYMENT_GUIDE.md) | Vercel + env vars |
+| [SUPABASE_PRODUCTION_SETUP.md](./SUPABASE_PRODUCTION_SETUP.md) | Migrations, policies, SQL checks |
+| [supabase/verify/README.md](./supabase/verify/README.md) | Production verification SQL (Phase 6 Step 2) |
+| [`/admin/system-check`](/admin/system-check) | App-side verification (admin, read-only) |
+| [`/deployment-check`](/deployment-check) | Public smoke test (post-deploy) |
+
+**Stack:** Vercel (Next.js) + Supabase (DB, Auth, Storage). Anon key only in client — never `service_role`.
 
 ## Documentation
 
-- [PROJECT_CHECKPOINT.md](./PROJECT_CHECKPOINT.md) — status & Phase 4 audit
-- [DEVELOPMENT_PLAN.md](./DEVELOPMENT_PLAN.md) — roadmap (Phase 5 in progress)
+- [PROJECT_CHECKPOINT.md](./PROJECT_CHECKPOINT.md) — status & audits
+- [DEVELOPMENT_PLAN.md](./DEVELOPMENT_PLAN.md) — roadmap (Phase 6 in progress)
+- [DEPLOYMENT_PLAN.md](./DEPLOYMENT_PLAN.md) — production deployment plan
+- [PRODUCTION_CHECKLIST.md](./PRODUCTION_CHECKLIST.md) — go-live checklist
+- [PHASE_5_FINAL_AUDIT.md](./PHASE_5_FINAL_AUDIT.md) — Phase 5 audit summary
 - [ADMIN_PLAN.md](./ADMIN_PLAN.md) — Phase 5 admin planning
+- [ADMIN_ACTIVITY_LOG.md](./ADMIN_ACTIVITY_LOG.md) — admin audit trail
+- [ADMIN_ACTIVITY_DIFFS.md](./ADMIN_ACTIVITY_DIFFS.md) — snapshots and diff preview
+- [ADMIN_ROLLBACK_WORKFLOW.md](./ADMIN_ROLLBACK_WORKFLOW.md) — safe rollback execution
+- [ADMIN_AUDIT_EXPORT.md](./ADMIN_AUDIT_EXPORT.md) — activity log CSV/JSON export
+- [PHASE_5_FINAL_AUDIT.md](./PHASE_5_FINAL_AUDIT.md) — Phase 5 readiness summary
 - [DATABASE_SCHEMA.md](./DATABASE_SCHEMA.md) — schema + Auth/RLS plan
 - [AUTH_PLAN.md](./AUTH_PLAN.md) — Phase 4 auth details
 - [CONTENT_AUTHORING_GUIDE.md](./CONTENT_AUTHORING_GUIDE.md) — content workflow

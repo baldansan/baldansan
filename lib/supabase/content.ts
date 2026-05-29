@@ -1,4 +1,11 @@
 import { hsk5Course } from "@/content/courses/hsk5";
+import {
+  canonicalLessonId,
+  lessonIdQueryCandidates,
+  normalizeLessonIdForQuery,
+  normalizeLessonRouteId,
+} from "@/lib/lesson-id";
+import { mapLessonReleaseFields } from "@/lib/supabase/lesson-release-map";
 import { hasSupabaseConfig, supabase } from "@/lib/supabase/client";
 import type { SupabaseClient } from "@supabase/supabase-js";
 import type { Course } from "@/types/course";
@@ -18,17 +25,11 @@ const DEFAULT_QUIZ_TYPES = [
 
 const VIDEO_PLACEHOLDER = "Video lesson placeholder";
 
-type DbCourse = {
-  id: string;
-  title: string;
-  description: string | null;
-  level: string | null;
-  status: string;
-  order_index: number;
-};
+const LESSON_ROW_SELECT =
+  "id, course_id, title, chinese_title, subtitle, description, duration, vocabulary_count, quiz_count, status, order_index, video_url, thumbnail_url, audio_url, source_note, media_status, release_status, qa_status, approved_at, approved_by, release_notes, last_reviewed_at";
 
 type DbLesson = {
-  id: string;
+  id: string | number;
   course_id: string;
   title: string;
   chinese_title: string | null;
@@ -39,7 +40,43 @@ type DbLesson = {
   quiz_count: number;
   status: string;
   order_index: number;
+  video_url?: string | null;
+  thumbnail_url?: string | null;
+  audio_url?: string | null;
+  source_note?: string | null;
+  media_status?: string | null;
+  release_status?: string | null;
+  qa_status?: string | null;
+  approved_at?: string | null;
+  approved_by?: string | null;
+  release_notes?: string | null;
+  last_reviewed_at?: string | null;
 };
+
+type DbCourse = {
+  id: string;
+  title: string;
+  description: string | null;
+  level: string | null;
+  status: string;
+  order_index: number;
+};
+
+function mapLessonMediaFields(row: DbLesson) {
+  const videoUrl = row.video_url?.trim();
+  const thumbnailUrl = row.thumbnail_url?.trim();
+  const audioUrl = row.audio_url?.trim();
+  const sourceNote = row.source_note?.trim();
+  const mediaStatus = row.media_status?.trim() || "missing";
+
+  return {
+    videoUrl: videoUrl || undefined,
+    thumbnailUrl: thumbnailUrl || undefined,
+    audioUrl: audioUrl || undefined,
+    sourceNote: sourceNote || undefined,
+    mediaStatus,
+  };
+}
 
 type DbSubtitleLine = {
   lesson_id: string;
@@ -113,8 +150,9 @@ function mapSubtitleLine(row: DbSubtitleLine) {
 }
 
 function mapLessonRowToSummary(row: DbLesson): LessonContent {
+  const id = canonicalLessonId(row.id);
   return {
-    id: row.id,
+    id,
     courseId: row.course_id,
     title: row.title,
     chineseTitle: row.chinese_title ?? "",
@@ -127,6 +165,8 @@ function mapLessonRowToSummary(row: DbLesson): LessonContent {
     publishStatus: normalizePublishStatus(row.status),
     videoPlaceholder: VIDEO_PLACEHOLDER,
     watchTotalTime: durationToWatchTime(row.duration),
+    ...mapLessonMediaFields(row),
+    ...mapLessonReleaseFields(row),
     subtitlePreview: [],
     timedSubtitles: [],
     vocabulary: [],
@@ -149,7 +189,7 @@ function mapFullLesson(
   }));
 
   return {
-    id: row.id,
+    id: canonicalLessonId(row.id),
     courseId: row.course_id,
     title: row.title,
     chineseTitle: row.chinese_title ?? "",
@@ -162,6 +202,8 @@ function mapFullLesson(
     publishStatus: normalizePublishStatus(row.status),
     videoPlaceholder: VIDEO_PLACEHOLDER,
     watchTotalTime: durationToWatchTime(row.duration),
+    ...mapLessonMediaFields(row),
+    ...mapLessonReleaseFields(row),
     subtitlePreview,
     timedSubtitles,
     vocabulary: vocabulary.map((word) => ({
@@ -177,6 +219,8 @@ function mapFullLesson(
     quizQuestions: quiz.map(
       (q): QuizQuestion => ({
         id: `${row.id}-q${q.order_index}`,
+        dbId: Number(q.id),
+        orderIndex: q.order_index,
         type: parseQuizType(q.type),
         question: q.question,
         options: parseOptions(q.options),
@@ -278,27 +322,40 @@ export async function getSupabaseCourseContentById(
 export async function getSupabaseLessonsByCourseId(
   courseId: string
 ): Promise<LessonContent[]> {
-  return fetchSupabaseLessonsByCourse(courseId, false);
+  if (!hasSupabaseConfig || !supabase) return [];
+  return getSupabaseLessonsByCourseIdWithClient(courseId, supabase);
+}
+
+export async function getSupabaseLessonsByCourseIdWithClient(
+  courseId: string,
+  client: SupabaseClient,
+  options?: { publicOnly?: boolean }
+): Promise<LessonContent[]> {
+  return fetchSupabaseLessonsByCourse(
+    courseId,
+    options?.publicOnly ?? false,
+    client
+  );
 }
 
 /** Public catalog: only `status = available` lessons. */
 export async function getSupabasePublicLessonsByCourseId(
   courseId: string
 ): Promise<LessonContent[]> {
-  return fetchSupabaseLessonsByCourse(courseId, true);
+  if (!hasSupabaseConfig || !supabase) return [];
+  return getSupabaseLessonsByCourseIdWithClient(courseId, supabase, {
+    publicOnly: true,
+  });
 }
 
 async function fetchSupabaseLessonsByCourse(
   courseId: string,
-  publicOnly: boolean
+  publicOnly: boolean,
+  client: SupabaseClient
 ): Promise<LessonContent[]> {
-  if (!hasSupabaseConfig || !supabase) return [];
-
-  let query = supabase
+  let query = client
     .from("lessons")
-    .select(
-      "id, course_id, title, chinese_title, subtitle, description, duration, vocabulary_count, quiz_count, status, order_index"
-    )
+    .select(LESSON_ROW_SELECT)
     .eq("course_id", courseId);
 
   if (publicOnly) {
@@ -313,55 +370,116 @@ async function fetchSupabaseLessonsByCourse(
   return (data as DbLesson[]).map(mapLessonRowToSummary);
 }
 
+type ResolvedLessonRow = {
+  row: DbLesson;
+  canonicalId: string;
+  usedNumeric: boolean;
+};
+
+export async function fetchLessonRowById(
+  client: SupabaseClient,
+  lessonId: string
+): Promise<ResolvedLessonRow | null> {
+  const normalizedId = normalizeLessonRouteId(lessonId);
+  const candidates = lessonIdQueryCandidates(normalizedId);
+
+  for (const candidate of candidates) {
+    const { data, error } = await client
+      .from("lessons")
+      .select(LESSON_ROW_SELECT)
+      .eq("id", candidate)
+      .maybeSingle();
+
+    if (error) throw error;
+    if (data) {
+      const usedNumeric = typeof candidate === "number";
+      if (usedNumeric) {
+        console.warn("[lesson-id] Resolved lesson row using numeric id query", {
+          lessonId: normalizedId,
+          candidate,
+        });
+      }
+      return {
+        row: data as DbLesson,
+        canonicalId: canonicalLessonId((data as DbLesson).id),
+        usedNumeric,
+      };
+    }
+  }
+
+  console.warn("[lesson-id] Lesson row not found", {
+    lessonId: normalizedId,
+    candidates,
+  });
+  return null;
+}
+
+async function fetchChildRowsForLesson<T extends Record<string, unknown>>(
+  client: SupabaseClient,
+  table: "subtitle_lines" | "vocabulary_words" | "quiz_questions",
+  select: string,
+  lessonId: string
+): Promise<T[]> {
+  const normalizedId = normalizeLessonIdForQuery(lessonId);
+  const candidates = lessonIdQueryCandidates(normalizedId);
+
+  for (const candidate of candidates) {
+    const { data, error } = await client
+      .from(table)
+      .select(select)
+      .eq("lesson_id", candidate)
+      .order("order_index", { ascending: true });
+
+    if (error) throw error;
+    if (data && data.length > 0) {
+      if (typeof candidate === "number") {
+        console.warn("[lesson-id] Loaded child rows using numeric lesson_id", {
+          table,
+          lessonId: normalizedId,
+          candidate,
+        });
+      }
+      return data as unknown as T[];
+    }
+  }
+
+  return [];
+}
+
 export async function getSupabaseLessonByIdWithClient(
   lessonId: string,
   client: SupabaseClient
 ): Promise<LessonContent | undefined> {
-  const { data: lesson, error: lessonError } = await client
-    .from("lessons")
-    .select(
-      "id, course_id, title, chinese_title, subtitle, description, duration, vocabulary_count, quiz_count, status, order_index"
-    )
-    .eq("id", lessonId)
-    .maybeSingle();
+  const normalizedId = normalizeLessonIdForQuery(lessonId);
+  const resolved = await fetchLessonRowById(client, normalizedId);
+  if (!resolved) {
+    return undefined;
+  }
 
-  if (lessonError) throw lessonError;
-  if (!lesson) return undefined;
+  const { row, canonicalId } = resolved;
 
-  const [subtitlesResult, vocabularyResult, quizResult] = await Promise.all([
-    client
-      .from("subtitle_lines")
-      .select(
-        "lesson_id, start_time, end_time, chinese, pinyin, mongolian, order_index"
-      )
-      .eq("lesson_id", lessonId)
-      .order("order_index", { ascending: true }),
-    client
-      .from("vocabulary_words")
-      .select(
-        "id, lesson_id, chinese, pinyin, mongolian, hsk_level, example_chinese, example_mongolian, order_index"
-      )
-      .eq("lesson_id", lessonId)
-      .order("order_index", { ascending: true }),
-    client
-      .from("quiz_questions")
-      .select(
-        "id, lesson_id, type, question, options, correct_answer, explanation, order_index"
-      )
-      .eq("lesson_id", lessonId)
-      .order("order_index", { ascending: true }),
+  const [subtitles, vocabulary, quiz] = await Promise.all([
+    fetchChildRowsForLesson<DbSubtitleLine>(
+      client,
+      "subtitle_lines",
+      "lesson_id, start_time, end_time, chinese, pinyin, mongolian, order_index",
+      canonicalId
+    ),
+    fetchChildRowsForLesson<DbVocabularyWord>(
+      client,
+      "vocabulary_words",
+      "id, lesson_id, chinese, pinyin, mongolian, hsk_level, example_chinese, example_mongolian, order_index",
+      canonicalId
+    ),
+    fetchChildRowsForLesson<DbQuizQuestion>(
+      client,
+      "quiz_questions",
+      "id, lesson_id, type, question, options, correct_answer, explanation, order_index",
+      canonicalId
+    ),
   ]);
 
-  if (subtitlesResult.error) throw subtitlesResult.error;
-  if (vocabularyResult.error) throw vocabularyResult.error;
-  if (quizResult.error) throw quizResult.error;
-
-  return mapFullLesson(
-    lesson as DbLesson,
-    (subtitlesResult.data ?? []) as DbSubtitleLine[],
-    (vocabularyResult.data ?? []) as DbVocabularyWord[],
-    (quizResult.data ?? []) as DbQuizQuestion[]
-  );
+  return mapFullLesson(row, subtitles, vocabulary, quiz);
 }
 
 export async function getSupabaseLessonById(

@@ -26,6 +26,48 @@ export function AdminHeader({
           {backLabel}
         </Link>
         <Link
+          href="/admin/activity"
+          className="text-slate-600 transition-colors hover:text-emerald-600"
+        >
+          Activity
+        </Link>
+        <Link
+          href="/admin/system-check"
+          className="text-slate-600 transition-colors hover:text-emerald-600"
+        >
+          System check
+        </Link>
+        <Link
+          href="/admin/final-audit"
+          className="text-slate-600 transition-colors hover:text-emerald-600"
+        >
+          Final Audit
+        </Link>
+        <Link
+          href="/admin/tasks"
+          className="text-slate-600 transition-colors hover:text-emerald-600"
+        >
+          Tasks
+        </Link>
+        <Link
+          href="/admin/lesson-builder"
+          className="text-slate-600 transition-colors hover:text-emerald-600"
+        >
+          Lesson Builder
+        </Link>
+        <Link
+          href="/admin/prompts"
+          className="text-slate-600 transition-colors hover:text-emerald-600"
+        >
+          Prompts
+        </Link>
+        <Link
+          href="/admin/analytics"
+          className="text-slate-600 transition-colors hover:text-emerald-600"
+        >
+          Analytics
+        </Link>
+        <Link
           href="/admin/lessons"
           className="text-slate-600 transition-colors hover:text-emerald-600"
         >

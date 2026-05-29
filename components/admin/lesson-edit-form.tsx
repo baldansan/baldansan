@@ -12,6 +12,9 @@ import { LessonExportCard } from "@/components/admin/lesson-export-card";
 import { LessonRestoreCard } from "@/components/admin/lesson-restore-card";
 import { ImportQaSummary } from "@/components/admin/import-qa-summary";
 import { LessonPromptGenerator } from "@/components/admin/lesson-prompt-generator";
+import { LessonImprovementPrompts } from "@/components/admin/lesson-improvement-prompts";
+import { ReleaseReadinessCard } from "@/components/admin/release-readiness-card";
+import { LessonApprovalControls } from "@/components/admin/lesson-approval-controls";
 import { PublishingControls } from "@/components/admin/publishing-controls";
 import type { ImportQaStatus } from "@/lib/admin/import-qa";
 import { LessonQaBadge } from "@/components/admin/lesson-qa-badge";
@@ -19,6 +22,7 @@ import { SubtitleEditor } from "@/components/admin/subtitle-editor";
 import { VocabularyEditor } from "@/components/admin/vocabulary-editor";
 import { QuizEditor } from "@/components/admin/quiz-editor";
 import { LessonMetadataEditor } from "@/components/admin/lesson-metadata-editor";
+import { LessonMediaEditor } from "@/components/admin/lesson-media-editor";
 import {
   getLessonMetadataCounts,
   type LessonCompleteness,
@@ -175,6 +179,27 @@ export function LessonEditForm({
         </span>
       </div>
 
+      <div className="flex flex-wrap gap-2 text-sm">
+        <Link
+          href={`/admin/analytics/lessons/${lesson.id}`}
+          className="inline-flex rounded-full border border-emerald-200 bg-emerald-50 px-4 py-2 font-semibold text-emerald-800 hover:bg-emerald-100"
+        >
+          View lesson analytics
+        </Link>
+        <Link
+          href={`/admin/analytics/questions?lesson=${lesson.id}`}
+          className="inline-flex rounded-full border border-slate-200 px-4 py-2 font-medium text-slate-700 hover:border-emerald-200 hover:text-emerald-700"
+        >
+          Question insights
+        </Link>
+        <Link
+          href={`/admin/analytics/vocabulary?lesson=${lesson.id}`}
+          className="inline-flex rounded-full border border-slate-200 px-4 py-2 font-medium text-slate-700 hover:border-emerald-200 hover:text-emerald-700"
+        >
+          Vocabulary insights
+        </Link>
+      </div>
+
       <AdminToolGroup
         title="Metadata"
         description="Гарчиг, статус, order index — Supabase-д хадгална."
@@ -196,6 +221,13 @@ export function LessonEditForm({
       </AdminToolGroup>
 
       <AdminToolGroup
+        title="Media"
+        description="Upload to Supabase Storage or paste URLs — thumbnail, audio, video."
+      >
+        <LessonMediaEditor lesson={lesson} />
+      </AdminToolGroup>
+
+      <AdminToolGroup
         title="Content QA & prompts"
         description="Import-ийн өмнө болон дараа шалгана."
       >
@@ -205,6 +237,18 @@ export function LessonEditForm({
           onReadinessChange={handleQaReadiness}
         />
         <LessonPromptGenerator lesson={lesson} />
+      </AdminToolGroup>
+
+      <AdminToolGroup
+        title="Content improvement prompts"
+        description="Analytics/QA асуудлаас ChatGPT/Cursor-д paste хийх copy-ready prompt-ууд. AI API дуудахгүй."
+      >
+        <LessonImprovementPrompts
+          lesson={lesson}
+          subtitleCount={subtitleCount}
+          vocabularyCount={vocabActual}
+          quizCount={quizActual}
+        />
       </AdminToolGroup>
 
       <AdminToolGroup
@@ -250,7 +294,9 @@ export function LessonEditForm({
         />
       </AdminToolGroup>
 
-      <AdminToolGroup title="Publish" description="Нийтлэх / ноорог / архив.">
+      <AdminToolGroup title="Publish" description="Release checklist, approval, publish.">
+        <ReleaseReadinessCard lesson={lesson} />
+        <LessonApprovalControls lesson={lesson} />
         <PublishingControls
           lesson={lesson}
           initialCompleteness={completeness}

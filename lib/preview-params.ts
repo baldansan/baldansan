@@ -11,5 +11,9 @@ export function parsePreviewParam(
 export function isAdminPreviewParam(
   preview: string | string[] | undefined
 ): boolean {
-  return parsePreviewParam(preview) === "admin";
+  const value = parsePreviewParam(preview);
+  if (!value) {
+    return false;
+  }
+  return value.trim().toLowerCase() === "admin";
 }

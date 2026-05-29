@@ -67,10 +67,38 @@ Expected output shape matches [LESSON_IMPORT_FORMAT.md](./LESSON_IMPORT_FORMAT.m
 
 ## After ChatGPT responds
 
-1. Copy JSON only (no markdown).
-2. `/admin/lessons/{id}/edit` → Bulk import → Validate.
-3. Fix errors; warnings are OK to import.
-4. Import QA summary → Publish when **Ready to publish**.
+1. Copy JSON only (no markdown fences).
+2. Paste into **Bulk import** on `/admin/lessons/{id}/edit`.
+3. Run **Validate** → fix errors → **Import**.
+4. Check **Import QA summary** and preview at `/lessons/{id}?preview=admin`.
+
+---
+
+## Improvement prompts (Step 20)
+
+For **fixing** existing lessons (not creating from scratch), use:
+
+- **Prompt library:** `/admin/prompts`
+- **Edit page:** Content improvement prompts section
+- **Analytics:** Generate fix prompts from difficult questions or weak vocabulary
+
+See [AI_ASSISTED_CONTENT_WORKFLOW.md](./AI_ASSISTED_CONTENT_WORKFLOW.md).
+
+**Example — fix one weak quiz question:**
+
+```
+You are fixing one weak quiz question for Buunduu Surtsgaay.
+LESSON CONTEXT — Lesson ID: 5, Title: …
+PROBLEM QUESTION — accuracy 40%, common wrong: …
+Return JSON with quizQuestions array only (empty subtitles/vocabulary).
+```
+
+**Example — improve low-engagement vocabulary:**
+
+```
+WEAK VOCABULARY WORD — Chinese: 说话, learned count: 0
+Return JSON with improved exampleChinese, exampleMongolian, optional quiz question.
+```
 
 ---
 

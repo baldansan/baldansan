@@ -5,7 +5,7 @@ import {
   getLessonsByCourseId,
   getPublicLessonsByCourseId,
 } from "@/lib/content";
-import { resolveLessonPageAccess } from "@/lib/lesson-public-access";
+import { resolveLessonPageAccess, resolvePreviewFromPageSearchParams } from "@/lib/lesson-public-access";
 import { LessonQuizClient } from "./quiz-client";
 
 type PageProps = {
@@ -20,7 +20,7 @@ export default async function LessonQuizPage({
   searchParams,
 }: PageProps) {
   const { lessonId } = await params;
-  const { preview } = await searchParams;
+  const preview = await resolvePreviewFromPageSearchParams(searchParams);
   const access = await resolveLessonPageAccess(lessonId, { preview });
 
   if (access.kind === "not_found") {
@@ -34,6 +34,7 @@ export default async function LessonQuizPage({
         courseId={access.lesson.courseId}
         showAdminLink={access.showAdminLink}
         showAdminPreviewLink={access.showAdminPreviewLink}
+        accessDenied={access.accessDenied}
       />
     );
   }

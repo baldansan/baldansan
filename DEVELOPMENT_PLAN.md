@@ -170,9 +170,13 @@ Phased roadmap from MVP demo to production product.
 
 ---
 
-## Phase 5: Admin content management / lesson upload — **In progress**
+## Phase 5: Admin content management / lesson upload — **Completed**
 
 **Goal:** Non-developers can publish and manage lesson content (admin workflow) without SQL seeds or code deploys.
+
+**Exit criteria:** Met — full admin CMS with editors, import/export, media, analytics, tasks, activity log, rollback, and release workflow.
+
+**Phase 5 Final Audit — Completed (May 2026):** See [PHASE_5_FINAL_AUDIT.md](./PHASE_5_FINAL_AUDIT.md).
 
 **Phase 5 Step 1 — Completed:** Admin foundation (docs + UI shell, no DB writes).
 
@@ -223,14 +227,103 @@ Phased roadmap from MVP demo to production product.
 - [components/admin/lesson-duplicate-card.tsx](./components/admin/lesson-duplicate-card.tsx), [lesson-restore-card.tsx](./components/admin/lesson-restore-card.tsx)
 - Bulk import replace confirmation + [LESSON_BACKUP_RESTORE.md](./LESSON_BACKUP_RESTORE.md)
 
-**Next:** Phase 5 Step 14 — Lesson package generator / full lesson builder workflow.
+**Phase 5 Step 14 — Completed:** Guided Lesson Builder workflow.
 
-- [components/admin/lesson-prompt-generator.tsx](./components/admin/lesson-prompt-generator.tsx)
-- [components/admin/import-qa-summary.tsx](./components/admin/import-qa-summary.tsx)
-- [LESSON_PROMPT_TEMPLATE.md](./LESSON_PROMPT_TEMPLATE.md)
-- Stronger bulk import validation (errors vs warnings)
+- [app/admin/lesson-builder/page.tsx](./app/admin/lesson-builder/page.tsx) — guided admin workflow page
+- [components/admin/lesson-builder-workflow.tsx](./components/admin/lesson-builder-workflow.tsx), [lesson-builder-checklist.tsx](./components/admin/lesson-builder-checklist.tsx), [lesson-package-summary.tsx](./components/admin/lesson-package-summary.tsx)
+- [LESSON_BUILDER_WORKFLOW.md](./LESSON_BUILDER_WORKFLOW.md)
 
-- [lib/supabase/admin-import.ts](./lib/supabase/admin-import.ts) — parse, validate, `bulkImportLessonContent`
+**Phase 5 Step 15 — Completed:** Lesson media/video metadata foundation.
+
+- [supabase/migrations/002_lesson_media_fields.sql](./supabase/migrations/002_lesson_media_fields.sql) — video_url, thumbnail_url, audio_url, source_note, media_status
+- [components/admin/lesson-media-editor.tsx](./components/admin/lesson-media-editor.tsx), [lib/supabase/admin-content.ts](./lib/supabase/admin-content.ts) — `updateLessonMedia`
+- [components/lesson-media-display.tsx](./components/lesson-media-display.tsx) — public detail + watch media sections
+- [MEDIA_WORKFLOW.md](./MEDIA_WORKFLOW.md)
+
+**Phase 5 Step 16 — Completed:** Supabase Storage media upload foundation.
+
+- [supabase/storage/001_lesson_media_bucket_policies.sql](./supabase/storage/001_lesson_media_bucket_policies.sql) — `lesson-media` bucket + Storage RLS
+- [lib/supabase/media-upload.ts](./lib/supabase/media-upload.ts) — validate, path, upload helpers
+- [components/admin/lesson-media-upload-card.tsx](./components/admin/lesson-media-upload-card.tsx) — admin upload UI on edit page
+- [MEDIA_UPLOAD_WORKFLOW.md](./MEDIA_UPLOAD_WORKFLOW.md)
+
+**Phase 5 Step 17 — Completed:** Admin analytics and content metrics dashboard.
+
+- [lib/supabase/admin-analytics.ts](./lib/supabase/admin-analytics.ts) — dashboard metrics helpers
+- [components/admin/admin-dashboard.tsx](./components/admin/admin-dashboard.tsx) — analytics UI on `/admin`
+- [ADMIN_ANALYTICS.md](./ADMIN_ANALYTICS.md)
+
+**Phase 5 Step 18 — Completed:** Per-lesson learning analytics dashboard.
+
+- [app/admin/analytics/page.tsx](./app/admin/analytics/page.tsx), [app/admin/analytics/lessons/[lessonId]/page.tsx](./app/admin/analytics/lessons/[lessonId]/page.tsx)
+- Extended [lib/supabase/admin-analytics.ts](./lib/supabase/admin-analytics.ts) — per-lesson metrics
+- [ADMIN_LEARNING_ANALYTICS.md](./ADMIN_LEARNING_ANALYTICS.md)
+
+**Phase 5 Step 19 — Completed:** Question-level quiz analytics and vocabulary engagement insights.
+
+- Detailed quiz answers JSON on new attempts — [lib/quiz-answers.ts](./lib/quiz-answers.ts), [app/lessons/[lessonId]/quiz/quiz-client.tsx](./app/lessons/[lessonId]/quiz/quiz-client.tsx)
+- Routes: `/admin/analytics/questions`, `/admin/analytics/vocabulary`
+- Extended [lib/supabase/admin-analytics.ts](./lib/supabase/admin-analytics.ts) — question + vocabulary engagement helpers
+- [ADMIN_QUESTION_ANALYTICS.md](./ADMIN_QUESTION_ANALYTICS.md), [ADMIN_VOCABULARY_ANALYTICS.md](./ADMIN_VOCABULARY_ANALYTICS.md)
+
+**Phase 5 Step 20 — Completed:** AI-assisted content improvement prompt workflow.
+
+- [lib/admin/improvement-prompts.ts](./lib/admin/improvement-prompts.ts) — copy-ready improvement prompt builders
+- [components/admin/improvement-prompt-card.tsx](./components/admin/improvement-prompt-card.tsx), [app/admin/prompts/page.tsx](./app/admin/prompts/page.tsx)
+- Integration on lesson edit, analytics, question/vocabulary insights, lesson builder
+- [AI_ASSISTED_CONTENT_WORKFLOW.md](./AI_ASSISTED_CONTENT_WORKFLOW.md)
+
+**Phase 5 Step 21 — Completed:** Content approval and release readiness workflow.
+
+- [supabase/migrations/005_lesson_release_workflow.sql](./supabase/migrations/005_lesson_release_workflow.sql)
+- [lib/admin/release-readiness.ts](./lib/admin/release-readiness.ts), [lib/supabase/admin-release.ts](./lib/supabase/admin-release.ts)
+- Release checklist, approval controls, publish gate on edit page
+- [RELEASE_WORKFLOW.md](./RELEASE_WORKFLOW.md)
+- [ADMIN_TASK_CENTER.md](./ADMIN_TASK_CENTER.md)
+
+**Phase 5 Step 22 — Completed:** Admin Task Center and content review queue.
+
+- [lib/admin/task-generator.ts](./lib/admin/task-generator.ts), [lib/supabase/admin-tasks.ts](./lib/supabase/admin-tasks.ts)
+- Route `/admin/tasks` — filters, severity, category, lesson search
+- Dashboard, lesson edit, lesson builder, analytics integration
+- [ADMIN_TASK_CENTER.md](./ADMIN_TASK_CENTER.md) — no task DB persistence yet
+
+**Phase 5 Step 23 — Completed:** Persistent admin task management.
+
+- [supabase/migrations/006_admin_tasks.sql](./supabase/migrations/006_admin_tasks.sql)
+- [lib/supabase/admin-task-persistence.ts](./lib/supabase/admin-task-persistence.ts), [lib/admin/task-merge.ts](./lib/admin/task-merge.ts)
+- Dismiss, resolve, start, reopen, priority, due date, admin notes
+- [ADMIN_TASK_MANAGEMENT.md](./ADMIN_TASK_MANAGEMENT.md)
+
+**Phase 5 Step 24 — Completed:** Admin activity log / audit trail.
+
+- [supabase/migrations/007_admin_activity_log.sql](./supabase/migrations/007_admin_activity_log.sql)
+- [lib/supabase/admin-activity.ts](./lib/supabase/admin-activity.ts), [lib/supabase/admin-activity-log.ts](./lib/supabase/admin-activity-log.ts)
+- Route `/admin/activity` — filters, summary cards, expandable metadata
+- Best-effort logging on lesson, content, publish, media, task, release, import, export actions
+- [ADMIN_ACTIVITY_LOG.md](./ADMIN_ACTIVITY_LOG.md)
+
+**Phase 5 Step 25 — Completed:** Activity diff and rollback preview.
+
+- [supabase/migrations/008_admin_activity_snapshots.sql](./supabase/migrations/008_admin_activity_snapshots.sql)
+- Before/after snapshots on metadata, media, status, release, import, restore, duplicate
+- `/admin/activity/{id}` detail page with shallow field diff
+- [ADMIN_ACTIVITY_DIFFS.md](./ADMIN_ACTIVITY_DIFFS.md)
+
+**Phase 5 Step 26 — Completed:** CMS hardening and rollback/export tools.
+
+- [lib/supabase/admin-rollback.ts](./lib/supabase/admin-rollback.ts), [lib/admin/admin-rollback-eligibility.ts](./lib/admin/admin-rollback-eligibility.ts)
+- Safe rollback execution on `/admin/activity/{id}` with confirmation + `rollback_executed` logging
+- CSV/JSON export on `/admin/activity` — [lib/admin/activity-export.ts](./lib/admin/activity-export.ts)
+- Activity filters: rollback available/unsupported, summary cards
+- Production safety section on `/admin`, `/admin/final-audit` checklist
+- [ADMIN_ROLLBACK_WORKFLOW.md](./ADMIN_ROLLBACK_WORKFLOW.md), [ADMIN_AUDIT_EXPORT.md](./ADMIN_AUDIT_EXPORT.md), [PHASE_5_FINAL_AUDIT.md](./PHASE_5_FINAL_AUDIT.md)
+
+**Phase 5 Mega Batch:** production CMS hardening, safe rollback, audit export, and final audit page.
+
+**Phase 5 Final Audit — Completed (May 2026).** See [PHASE_5_FINAL_AUDIT.md](./PHASE_5_FINAL_AUDIT.md).
+
+**Next:** Phase 6 — Deployment / Production Readiness.
 - [components/admin/bulk-import-editor.tsx](./components/admin/bulk-import-editor.tsx) on lesson edit page
 - [LESSON_IMPORT_FORMAT.md](./LESSON_IMPORT_FORMAT.md)
 
@@ -256,13 +349,54 @@ Phased roadmap from MVP demo to production product.
 | 11 | Admin lesson metadata edit/save | ✅ Completed |
 | 12 | Lesson JSON export and backup tools | ✅ Completed |
 | 13 | Lesson duplicate, restore, destructive import safety | ✅ Completed |
-| 14 | Lesson package generator / full lesson builder | Next |
+| 14 | Lesson package generator / full lesson builder | ✅ Completed |
+| 15 | Media/video metadata foundation | ✅ Completed |
+| 16 | Supabase Storage media upload | ✅ Completed |
+| 17 | Admin analytics / content metrics dashboard | ✅ Completed |
+| 18 | Per-lesson learning analytics | ✅ Completed |
+| 19 | Question-level quiz analytics + vocabulary engagement | ✅ Completed |
+| 20 | AI-assisted content improvement prompts | ✅ Completed |
+| 21 | Content approval / release readiness | ✅ Completed |
+| 22 | Admin Task Center / content review queue | ✅ Completed |
+| 23 | Persistent admin task management | ✅ Completed |
+| 24 | Admin activity log / audit trail | ✅ Completed |
+| 25 | Activity diff / rollback preview | ✅ Completed |
+| 26 | CMS hardening — rollback, export, final audit | ✅ Completed |
+| — | Phase 5 Final Audit | ✅ Completed |
 
-**Exit criteria:** New lesson published through admin UI without deploying code.
+**Phase 5 closed.** **Next:** Phase 6 — Deployment / Production Readiness.
 
 ---
 
-## Phase 6: Payment / membership
+## Phase 6: Deployment / Production Readiness — **In progress**
+
+**Goal:** Deploy Buunduu Surtsgaay safely to production (Vercel + Supabase) with RLS, auth, storage, and admin CMS verified.
+
+**Phase 6 Step 3 — Completed:** Vercel deployment setup prepared.
+
+- [vercel.json](./vercel.json) — minimal Next.js config
+- [.env.example](./.env.example) — safe env template
+- [VERCEL_DEPLOYMENT_GUIDE.md](./VERCEL_DEPLOYMENT_GUIDE.md) — connect, env, deploy, Auth URLs
+- `/deployment-check` — public post-deploy smoke test
+
+**Phase 6 roadmap:**
+
+| Step | Focus | Status |
+|------|--------|--------|
+| 1 | Production readiness planning | ✅ Completed |
+| 2 | Supabase production verification | ✅ Completed |
+| 3 | Vercel deployment setup | ✅ Completed |
+| 4 | Production route testing | Pending |
+| 5 | Security / RLS final audit | Pending |
+| 6 | Launch candidate | Pending |
+
+**Next:** Phase 6 Step 4 — Production route testing after first deploy.
+
+**Exit criteria:** App deployed to Vercel, Supabase production configured, all checklists green, public + admin routes verified.
+
+---
+
+## Phase 7: Payment / membership
 
 **Goal:** Monetize courses and gate premium content.
 
@@ -277,7 +411,7 @@ Phased roadmap from MVP demo to production product.
 
 ---
 
-## Phase 7: Mobile app with Expo
+## Phase 8: Mobile app with Expo
 
 **Goal:** Native iOS/Android experience sharing the same backend.
 
@@ -311,12 +445,13 @@ Phased roadmap from MVP demo to production product.
 Phase 2 (data structure) ✅
     → Phase 3 (Supabase)
     → Phase 4 (Auth)
-    → Phase 5 (Admin)
-    → Phase 6 (Payments)
-    → Phase 7 (Expo)
+    → Phase 5 (Admin) ✅
+    → Phase 6 (Deployment / Production Readiness)
+    → Phase 7 (Payments)
+    → Phase 8 (Expo)
 ```
 
-Phases 5 and 6 can be reordered depending on business priority (content velocity vs revenue).
+Phases 6 and 7 can be reordered depending on business priority (production launch vs revenue).
 
 ---
 

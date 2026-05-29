@@ -248,6 +248,21 @@ See [LESSON_PROMPT_TEMPLATE.md](./LESSON_PROMPT_TEMPLATE.md) for a reusable mast
 
 ---
 
+## Using improvement prompts safely (Step 20)
+
+Improvement prompts from `/admin/prompts` or analytics may return **partial JSON** (e.g. only `quizQuestions`). Before import:
+
+1. **Export backup** on the lesson edit page first.
+2. Paste AI JSON into Bulk import → **Validate** only.
+3. Prefer **append** mode when adding new quiz/vocab rows; use **replace** only after backup.
+4. Re-run **Import QA summary** — fix errors before publish.
+5. Never import JSON with markdown fences; strip ``` blocks manually.
+6. If the prompt targeted one question, import a single-item `quizQuestions` array and merge manually in the quiz editor if needed.
+
+See [AI_ASSISTED_CONTENT_WORKFLOW.md](./AI_ASSISTED_CONTENT_WORKFLOW.md).
+
+---
+
 ## Related
 
 - [CONTENT_WORKFLOW.md](./CONTENT_WORKFLOW.md) — end-to-end admin workflow

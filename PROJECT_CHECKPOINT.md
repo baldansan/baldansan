@@ -2,7 +2,275 @@
 
 **Project:** Buunduu Surtsgaay (Бөөндөө Сурцгаая)  
 **Checkpoint date:** May 2026  
-**Status:** Phase 4 **completed**; Phase 5 Step 13 duplicate/restore/safety **completed**
+**Status:** Phase 6 Step 3 Vercel deployment setup **completed**
+
+---
+
+## Phase 6 Step 3 — Vercel deployment setup — **Completed**
+
+Phase 6 Step 3: Vercel deployment setup prepared.
+
+| Area | Deliverable |
+|------|-------------|
+| Config | `vercel.json` — minimal Next.js framework hint |
+| Env | `.env.example` — safe public variable template |
+| Smoke test | `/deployment-check` — public post-deploy route |
+| Guide | `VERCEL_DEPLOYMENT_GUIDE.md` — full deploy + Auth URL steps |
+| Admin | `/admin/system-check` — deployment check route link |
+| Checklists | PRODUCTION_CHECKLIST, DEPLOYMENT_PLAN updated |
+
+**Next:** Phase 6 Step 4 — Production route testing after first deploy.
+
+---
+
+## Phase 6 Step 2 — Supabase production verification — **Completed**
+
+Phase 6 Step 2: Supabase production verification scripts and system checks added.
+
+| Area | Deliverable |
+|------|-------------|
+| SQL | `supabase/verify/production_verification.sql` — read-only pass/warn/fail checks |
+| Docs | `supabase/verify/README.md` — how to run, common fixes |
+| System check | Enhanced `/admin/system-check` — env, auth, content, admin tables, storage, progress |
+| UI | Pass/warn/fail badges, SQL copy card, grouped checks |
+| Production docs | SUPABASE_PRODUCTION_SETUP, PRODUCTION_CHECKLIST, DEPLOYMENT_PLAN updated |
+
+**Next:** Phase 6 Step 3 — Vercel deployment setup.
+
+---
+
+## Phase 6 Step 1 — Production readiness planning — **Completed**
+
+Phase 6 Step 1: Production readiness planning and deployment checklist added.
+
+| Area | Deliverable |
+|------|-------------|
+| Docs | DEPLOYMENT_PLAN.md, PRODUCTION_CHECKLIST.md, VERCEL_DEPLOYMENT_GUIDE.md, SUPABASE_PRODUCTION_SETUP.md |
+| System check | `/admin/system-check`, `lib/system/system-checks.ts` |
+| Final audit | Phase 6 readiness section on `/admin/final-audit` |
+| Dashboard | System check quick action + admin card |
+
+---
+
+## Phase 5 Final Audit — **Completed**
+
+Phase 5 Final Audit completed (May 2026).
+
+| Area | Result |
+|------|--------|
+| Routes | All public + admin routes build; see [PHASE_5_FINAL_AUDIT.md](./PHASE_5_FINAL_AUDIT.md) |
+| Security | No service_role; .env.local gitignored; AdminGuard verified in code |
+| Activity log | Client-session fetch on `/admin/activity`, dashboard, lesson edit |
+| Docs | PHASE_5_FINAL_AUDIT.md, final-audit page, DEVELOPMENT_PLAN Phase 5 closed |
+| Build | `npm run build` passes |
+
+**Next:** Phase 6 — Deployment / Production Readiness.
+
+---
+
+## Phase 5 Step 26 — CMS hardening and rollback/export tools — **Completed**
+
+Phase 5 Mega Batch: production CMS hardening, safe rollback, audit export, and final audit page.
+
+| Area | Deliverable |
+|------|-------------|
+| Rollback | `admin-rollback.ts`, `admin-rollback-eligibility.ts`, `rollback-execution-card` |
+| Export | `activity-export.ts`, CSV/JSON/copy on `/admin/activity` |
+| Filters | Rollback available/unsupported, summary cards |
+| Dashboard | Production safety section, quick actions, final audit link |
+| Final audit | `/admin/final-audit` read-only checklist |
+| Docs | `ADMIN_ROLLBACK_WORKFLOW.md`, `ADMIN_AUDIT_EXPORT.md`, `PHASE_5_FINAL_AUDIT.md` |
+
+**Next:** Phase 5 Final Audit (manual walkthrough) or Phase 6 — Deployment / Production Readiness.
+
+---
+
+## Phase 5 Step 25 — Activity diff / rollback preview — **Completed**
+
+Phase 5 Step 25: Activity diff and rollback preview added.
+
+| Area | Deliverable |
+|------|-------------|
+| Migration | `008_admin_activity_snapshots.sql` |
+| Helpers | `admin-activity-diff.ts`, snapshot fields on `logAdminActivity` |
+| Route | `/admin/activity/[activityId]` — diff + rollback preview (disabled) |
+| Snapshots | Metadata, media, status, release, import, restore, duplicate |
+| Docs | [ADMIN_ACTIVITY_DIFFS.md](./ADMIN_ACTIVITY_DIFFS.md) |
+
+**Next:** Phase 5 Step 26 — Safe rollback execution. Or Phase 5 Final Audit.
+
+---
+
+## Phase 5 Step 24 — Admin activity log / audit trail — **Completed**
+
+Phase 5 Step 24: Admin activity log / audit trail added.
+
+| Area | Deliverable |
+|------|-------------|
+| Migration | `007_admin_activity_log.sql` |
+| Helpers | `admin-activity.ts`, `admin-activity-log.ts` |
+| Route | `/admin/activity` — filters, summary, activity list |
+| Integration | Dashboard recent activity, lesson edit, lesson builder, admin nav |
+| Docs | [ADMIN_ACTIVITY_LOG.md](./ADMIN_ACTIVITY_LOG.md) |
+
+**Next:** Phase 5 Step 25 — Activity diff/rollback preview. Or Phase 5 Final Audit.
+
+---
+
+## Phase 5 Step 23 — Persistent admin task management — **Completed**
+
+Phase 5 Step 23: Persistent admin task management added with status, priority, due dates, notes, and dismiss/resolve workflow.
+
+| Area | Deliverable |
+|------|-------------|
+| Migration | `006_admin_tasks.sql` |
+| Helpers | `admin-task-persistence.ts`, `task-merge.ts` |
+| UI | Status/priority/due/note actions on task cards |
+| Integration | Dashboard overdue/urgent, lesson edit actions |
+| Docs | [ADMIN_TASK_MANAGEMENT.md](./ADMIN_TASK_MANAGEMENT.md) |
+
+**Next:** Phase 5 Step 24 — Admin activity log and audit trail. Or Phase 5 Final Audit.
+
+---
+
+## Phase 5 Step 22 — Admin Task Center & content review queue — **Completed**
+
+Phase 5 Step 22: Admin Task Center and Content Review Queue added.
+
+| Area | Deliverable |
+|------|-------------|
+| Helpers | `lib/admin/task-generator.ts`, `lib/supabase/admin-tasks.ts` |
+| Route | `/admin/tasks` |
+| UI | Task cards, filters, summary cards |
+| Integration | `/admin`, lesson edit, lesson builder, analytics |
+| Docs | [ADMIN_TASK_CENTER.md](./ADMIN_TASK_CENTER.md) |
+
+Tasks generated from live data — no task persistence table yet.
+
+**Next:** Phase 5 Step 24 — Admin activity log and audit trail. Or Phase 5 Final Audit.
+
+---
+
+## Phase 5 Step 21 — Content approval & release readiness — **Completed**
+
+Phase 5 Step 21: Content approval and release readiness workflow added.
+
+| Area | Deliverable |
+|------|-------------|
+| Migration | `005_lesson_release_workflow.sql` |
+| Helpers | `release-readiness.ts`, `admin-release.ts` |
+| UI | Release checklist, approval controls, publish gate |
+| Integration | `/admin/lessons`, dashboard metrics, lesson builder |
+| Docs | [RELEASE_WORKFLOW.md](./RELEASE_WORKFLOW.md) |
+
+**Next:** Phase 5 Step 24 — Admin activity log and audit trail. Or Phase 5 Final Audit.
+
+---
+
+## Phase 5 Step 20 — AI-assisted content improvement prompts — **Completed**
+
+Phase 5 Step 20: AI-assisted content improvement prompt workflow added.
+
+| Area | Deliverable |
+|------|-------------|
+| Helpers | `lib/admin/improvement-prompts.ts` |
+| UI | `improvement-prompt-card`, `prompt-library-view` |
+| Route | `/admin/prompts` |
+| Integration | Lesson edit, lesson analytics, question/vocabulary insights, dashboard, lesson builder |
+| Docs | [AI_ASSISTED_CONTENT_WORKFLOW.md](./AI_ASSISTED_CONTENT_WORKFLOW.md) |
+
+No OpenAI API — copy-ready prompts only.
+
+**Next:** Phase 5 Step 21 — Content approval checklist. Or Phase 5 Final Audit.
+
+---
+
+## Phase 5 Step 19 — Question-level quiz analytics & vocabulary engagement — **Completed**
+
+Phase 5 Step 19: Question-level quiz analytics and vocabulary engagement insights added.
+
+| Area | Deliverable |
+|------|-------------|
+| Quiz persistence | Detailed `answers` JSON array on new quiz attempts |
+| Routes | `/admin/analytics/questions`, `/admin/analytics/vocabulary` |
+| Analytics | Question + vocabulary helpers in `lib/supabase/admin-analytics.ts` |
+| Integration | Per-lesson analytics, main analytics, lesson edit links |
+| Docs | [ADMIN_QUESTION_ANALYTICS.md](./ADMIN_QUESTION_ANALYTICS.md), [ADMIN_VOCABULARY_ANALYTICS.md](./ADMIN_VOCABULARY_ANALYTICS.md) |
+
+**Next:** Phase 5 Step 20 — Content quality recommendations. Or Phase 5 Final Audit.
+
+---
+
+## Phase 5 Step 18 — Per-lesson learning analytics — **Completed**
+
+Phase 5 Step 18: Per-lesson learning analytics dashboard added.
+
+| Area | Deliverable |
+|------|-------------|
+| Routes | `/admin/analytics`, `/admin/analytics/lessons/[lessonId]` |
+| Analytics | Extended `lib/supabase/admin-analytics.ts` |
+| UI | `lesson-analytics-table`, `lesson-analytics-detail-view`, performance badges |
+| Integration | Links from `/admin` and `/admin/lessons` |
+| Docs | [ADMIN_LEARNING_ANALYTICS.md](./ADMIN_LEARNING_ANALYTICS.md) |
+
+---
+
+## Phase 5 Step 17 — Admin analytics dashboard — **Completed**
+
+Phase 5 Step 17: Admin analytics and content metrics dashboard added.
+
+| Area | Deliverable |
+|------|-------------|
+| Analytics | `lib/supabase/admin-analytics.ts` |
+| Dashboard | `/admin` — overview, content QA, media, learner progress |
+| Components | `admin-metric-card`, `admin-dashboard-section`, `admin-attention-list`, `admin-recent-activity` |
+| QA page | `/admin/lessons` top summary row |
+| Docs | [ADMIN_ANALYTICS.md](./ADMIN_ANALYTICS.md) |
+
+**Next:** Phase 5 Step 18 — Admin progress analytics by lesson. Or Phase 5 Final Audit.
+
+---
+
+## Phase 5 Step 16 — Supabase Storage media upload — **Completed**
+
+Phase 5 Step 16: Supabase Storage media upload foundation added.
+
+| Area | Deliverable |
+|------|-------------|
+| Storage | `supabase/storage/001_lesson_media_bucket_policies.sql`, bucket `lesson-media` |
+| Upload | `lib/supabase/media-upload.ts`, `lesson-media-upload-card` |
+| Admin | Integrated on edit page; QA dashboard Th/Vid/Aud indicators |
+| Builder | Checklist Step 5 — Upload / attach media |
+| Docs | [MEDIA_UPLOAD_WORKFLOW.md](./MEDIA_UPLOAD_WORKFLOW.md) |
+
+**Next:** Phase 5 Step 18 — Admin progress analytics by lesson. Or Phase 5 Final Audit.
+
+---
+
+## Phase 5 Step 15 — Lesson media/video metadata — **Completed**
+
+Phase 5 Step 15: Lesson media/video metadata management foundation added.
+
+| Area | Deliverable |
+|------|-------------|
+| Migration | `002_lesson_media_fields.sql` |
+| Admin | `lesson-media-editor`, `updateLessonMedia` |
+| Public | `lesson-media-display` on detail + watch pages |
+| Docs | [MEDIA_WORKFLOW.md](./MEDIA_WORKFLOW.md) |
+
+**Next:** Phase 5 Step 17 — Content analytics / admin metrics dashboard. Or Phase 5 Final Audit.
+
+---
+
+## Phase 5 Step 14 — Guided Lesson Builder workflow — **Completed**
+
+Phase 5 Step 14: Guided Lesson Builder workflow added.
+
+| Area | Deliverable |
+|------|-------------|
+| Route | `/admin/lesson-builder` |
+| UI | `lesson-builder-workflow`, `lesson-builder-checklist`, `lesson-package-summary` |
+| Docs | [LESSON_BUILDER_WORKFLOW.md](./LESSON_BUILDER_WORKFLOW.md) |
 
 ---
 
@@ -15,8 +283,6 @@ Phase 5 Step 13: Lesson duplicate, restore, and destructive import safety tools 
 | API | `duplicateLesson`, `restoreLessonFromBackup` |
 | UI | `lesson-duplicate-card`, `lesson-restore-card`, bulk import replace confirmation |
 | Docs | [LESSON_BACKUP_RESTORE.md](./LESSON_BACKUP_RESTORE.md) |
-
-**Next:** Phase 5 Step 14 — Lesson package generator / full lesson builder workflow.
 
 ---
 

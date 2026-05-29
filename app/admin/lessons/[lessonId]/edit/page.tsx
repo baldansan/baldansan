@@ -1,13 +1,19 @@
 import Link from "next/link";
 import { LessonEditForm } from "@/components/admin/lesson-edit-form";
+import { LessonActivityCard } from "@/components/admin/lesson-activity-card";
+import { LessonTasksCard } from "@/components/admin/lesson-tasks-card";
 import { EmptyState } from "@/components/empty-state";
-import { analyzeLessonQa } from "@/lib/admin/lesson-qa";
-import { getLessonById } from "@/lib/content";
 import {
-  getAdminLessonMetadataById,
+  getAdminLessonById,
+  getAdminLessonOrderIndex,
+} from "@/lib/admin/lesson-fetch";
+import { analyzeLessonQa } from "@/lib/admin/lesson-qa";
+import { normalizeLessonRouteId } from "@/lib/lesson-id";
+import {
   getLessonCompleteness,
   type LessonCompleteness,
 } from "@/lib/supabase/admin-content";
+import { getAdminTasksForLesson } from "@/lib/supabase/admin-tasks";
 
 export const dynamic = "force-dynamic";
 
@@ -22,13 +28,14 @@ export async function generateMetadata({ params }: Props) {
 
 export default async function AdminEditLessonPage({ params }: Props) {
   const { lessonId } = await params;
-  const lesson = await getLessonById(lessonId);
+  const normalizedId = normalizeLessonRouteId(lessonId);
+  const lesson = await getAdminLessonById(normalizedId);
 
   if (!lesson) {
     return (
       <EmptyState
           title="Хичээл олдсонгүй"
-          description={`"${lessonId}" ID-тай хичээл байхгүй. Supabase эсвэл local fallback шалгана уу.`}
+          description={`"${normalizedId}" ID-тай хичээл байхгүй. Supabase эсвэл local fallback шалгана уу.`}
           action={
             <Link
               href="/admin/lessons"
@@ -41,25 +48,33 @@ export default async function AdminEditLessonPage({ params }: Props) {
     );
   }
 
-  const completenessResult = await getLessonCompleteness(lessonId);
+  const completenessResult = await getLessonCompleteness(normalizedId);
   const initialCompleteness: LessonCompleteness =
     completenessResult.data ?? completenessFromLesson(lesson);
 
-  const metaResult = await getAdminLessonMetadataById(lessonId);
+  const orderIndexFromServer = await getAdminLessonOrderIndex(normalizedId);
   const orderIndex =
-    metaResult.data?.order_index ??
-    (Number.isFinite(Number(lessonId)) ? Number(lessonId) : 1);
+    orderIndexFromServer ??
+    (Number.isFinite(Number(normalizedId)) ? Number(normalizedId) : 1);
+
+  const lessonTasks = await getAdminTasksForLesson(normalizedId);
 
   return (
-    <LessonEditForm
-      lesson={lesson}
-      orderIndex={orderIndex}
-      initialCompleteness={initialCompleteness}
-    />
+    <div className="flex flex-col gap-8">
+      <LessonTasksCard lessonId={normalizedId} tasks={lessonTasks} />
+      <LessonActivityCard lessonId={normalizedId} />
+      <LessonEditForm
+        lesson={lesson}
+        orderIndex={orderIndex}
+        initialCompleteness={initialCompleteness}
+      />
+    </div>
   );
 }
 
-function completenessFromLesson(lesson: Awaited<ReturnType<typeof getLessonById>>) {
+function completenessFromLesson(
+  lesson: Awaited<ReturnType<typeof getAdminLessonById>>
+) {
   if (!lesson) {
     return {
       hasMetadata: false,
