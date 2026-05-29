@@ -10,19 +10,11 @@ import {
 } from "@/lib/system/system-checks";
 
 function resultClass(result: CheckResult): string {
-  if (result === "pass") {
-    return "bg-emerald-50 text-emerald-800 ring-emerald-200";
-  }
-  if (result === "warn") {
-    return "bg-amber-50 text-amber-900 ring-amber-200";
-  }
-  if (result === "fail") {
-    return "bg-red-50 text-red-800 ring-red-200";
-  }
-  if (result === "missing") {
-    return "bg-slate-100 text-slate-600 ring-slate-200";
-  }
-  return "bg-slate-100 text-slate-500 ring-slate-200";
+  if (result === "pass") return "admin-badge admin-badge-pass";
+  if (result === "warn") return "admin-badge admin-badge-warn";
+  if (result === "fail") return "admin-badge admin-badge-fail";
+  if (result === "missing") return "admin-badge admin-badge-neutral";
+  return "admin-badge admin-badge-neutral";
 }
 
 function resultLabel(result: CheckResult): string {
@@ -76,7 +68,7 @@ export function SystemCheckView() {
 
   return (
     <div className="flex flex-col gap-6">
-      <section className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:p-6">
+      <section className="admin-panel p-5 sm:p-6">
         <div className="flex flex-wrap items-center justify-between gap-3">
           <div>
             <h2 className="text-lg font-semibold text-slate-900">Summary</h2>
@@ -89,7 +81,7 @@ export function SystemCheckView() {
             type="button"
             onClick={() => void load()}
             disabled={loading}
-            className="inline-flex rounded-full border border-emerald-200 bg-emerald-50 px-4 py-2 text-sm font-semibold text-emerald-800 transition-colors hover:bg-emerald-100 disabled:opacity-60"
+            className="admin-btn-secondary disabled:opacity-60"
           >
             {loading ? "Running…" : "Re-run checks"}
           </button>
@@ -105,7 +97,7 @@ export function SystemCheckView() {
         ) : null}
       </section>
 
-      <section className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:p-6">
+      <section className="admin-panel p-5 sm:p-6">
         <h2 className="text-lg font-semibold text-slate-900">
           Supabase SQL verification
         </h2>
@@ -119,24 +111,21 @@ export function SystemCheckView() {
         <button
           type="button"
           onClick={() => void copySqlInstructions()}
-          className="mt-4 inline-flex rounded-full border border-slate-200 bg-slate-50 px-4 py-2 text-sm font-semibold text-slate-700 transition-colors hover:border-emerald-200 hover:text-emerald-800"
+          className="admin-btn-ghost mt-4"
         >
           {copied ? "Copied!" : "Copy SQL verification instructions"}
         </button>
       </section>
 
       {loading && !report ? (
-        <p className="rounded-2xl bg-slate-50 px-6 py-8 text-center text-sm text-slate-600 ring-1 ring-slate-200">
+        <p className="admin-panel px-6 py-8 text-center text-sm text-slate-600">
           System check ачааллаж байна…
         </p>
       ) : null}
 
       {report
         ? groups.map((group) => (
-            <section
-              key={group}
-              className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:p-6"
-            >
+            <section key={group} className="admin-panel p-5 sm:p-6">
               <h2 className="text-lg font-semibold capitalize text-slate-900">
                 {group.replace(/_/g, " ")}
               </h2>
@@ -159,7 +148,7 @@ export function SystemCheckView() {
                         ) : null}
                       </div>
                       <span
-                        className={`inline-flex shrink-0 rounded-full px-2.5 py-0.5 text-xs font-semibold uppercase ring-1 ${resultClass(check.result)}`}
+                        className={`shrink-0 uppercase ${resultClass(check.result)}`}
                       >
                         {resultLabel(check.result)}
                       </span>

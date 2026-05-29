@@ -64,7 +64,7 @@ export function ProfileAppView() {
 
   if (!ready) {
     return (
-      <MobileAppShell activeTab="profile">
+      <MobileAppShell activeTab="profile" mainClassName="max-w-[390px] mx-auto w-full">
         <p className="py-16 text-center text-sm text-[var(--app-muted)]">
           Ачааллаж байна…
         </p>
@@ -74,7 +74,7 @@ export function ProfileAppView() {
 
   if (!user) {
     return (
-      <MobileAppShell activeTab="profile">
+      <MobileAppShell activeTab="profile" mainClassName="max-w-[390px] mx-auto w-full">
         <div className="py-12 text-center">
           <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-slate-200 text-3xl">
             👤
@@ -87,7 +87,7 @@ export function ProfileAppView() {
           </p>
           <Link
             href="/login"
-            className="mt-6 inline-flex min-h-[44px] w-full items-center justify-center rounded-full bg-emerald-500 px-6 py-3 text-sm font-semibold text-white"
+            className="mt-6 inline-flex min-h-[44px] w-full items-center justify-center app-btn-primary px-6 py-3"
           >
             Нэвтрэх
           </Link>
@@ -115,7 +115,7 @@ export function ProfileAppView() {
   ];
 
   return (
-    <MobileAppShell activeTab="profile">
+    <MobileAppShell activeTab="profile" mainClassName="max-w-[390px] mx-auto w-full">
       <section className="mb-5 text-center">
         <div className="relative mx-auto w-fit">
           <div className="flex h-20 w-20 items-center justify-center rounded-full bg-emerald-100 text-3xl">
@@ -133,15 +133,13 @@ export function ProfileAppView() {
 
       <div className="mb-5 grid grid-cols-2 gap-2">
         {[
-          { label: "Нийт XP", value: completedLessons * 100 },
-          { label: "Сурсан үг", value: learnedWords },
-          { label: "Эзэмшсэн", value: completedLessons },
-          { label: "Сэргэлт", value: streak },
+          { label: "Нийт XP", value: completedLessons * 100, accent: "text-[var(--app-purple-dark)]" },
+          { label: "Сурсан үг", value: learnedWords, accent: "text-[var(--app-primary-dark)]" },
+          { label: "Эзэмшсэн", value: completedLessons, accent: "text-[var(--app-orange-dark)]" },
+          { label: "Сэргэлт", value: streak, accent: "text-[var(--app-blue)]" },
         ].map((stat) => (
           <MobileCard key={stat.label} padding="sm" className="text-center !p-3">
-            <p className="text-lg font-bold text-[var(--app-text)]">
-              {stat.value}
-            </p>
+            <p className={`text-lg font-bold ${stat.accent}`}>{stat.value}</p>
             <p className="text-[10px] text-[var(--app-muted)]">{stat.label}</p>
           </MobileCard>
         ))}

@@ -1,4 +1,5 @@
 import { AdminActivityCenter } from "@/components/admin/admin-activity-center";
+import { AdminPageHeader } from "@/components/admin/admin-page-header";
 
 export const dynamic = "force-dynamic";
 
@@ -15,21 +16,17 @@ export default async function AdminActivityPage({ searchParams }: Props) {
 
   return (
     <div className="flex flex-col gap-6">
-      <section>
-        <h1 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
-          Admin activity
-        </h1>
-        <p className="mt-2 text-sm text-slate-600">
-          Admin хэрэглэгчдийн хийсэн lesson, content, publish, task
-          өөрчлөлтийн түүх.
-        </p>
-        {lessonId ? (
-          <p className="mt-2 text-xs font-medium text-emerald-800">
-            Filtered for lesson {lessonId}
-          </p>
-        ) : null}
-      </section>
-
+      <AdminPageHeader
+        title="Activity Log"
+        description="Admin хэрэглэгчдийн хийсэн lesson, content, publish, task өөрчлөлтийн түүх."
+        actions={
+          lessonId ? (
+            <span className="admin-badge admin-badge-neutral">
+              Lesson {lessonId}
+            </span>
+          ) : null
+        }
+      />
       <AdminActivityCenter initialLessonId={lessonId ?? ""} />
     </div>
   );

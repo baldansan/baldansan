@@ -1,5 +1,5 @@
 import { HomeAppView } from "@/components/mobile/home-app-view";
-import { getCourseContentById, getPublicLessonsByCourseId } from "@/lib/content";
+import { loadMobileHomeData } from "@/lib/mobile-home-data";
 
 export const dynamic = "force-dynamic";
 
@@ -9,14 +9,9 @@ export const metadata = {
 };
 
 export default async function HomeAppPage() {
-  const lessons = await getPublicLessonsByCourseId("hsk5");
-  const course = await getCourseContentById("hsk5");
+  const { catalog, defaultChipId } = await loadMobileHomeData();
 
   return (
-    <HomeAppView
-      lessons={lessons}
-      courseTitle={course?.title ?? "HSK5 Short Drama Chinese"}
-      courseSubtitle={course?.subtitle ?? "Богино бичлэг, үгийн сан, quiz"}
-    />
+    <HomeAppView catalog={catalog} defaultChipId={defaultChipId} />
   );
 }

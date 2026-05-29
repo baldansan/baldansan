@@ -21,7 +21,7 @@ export function GameHeader({
     <header className="mb-4 flex items-center gap-2">
       <Link
         href={backHref}
-        className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-red-50 text-lg font-bold text-red-600 ring-1 ring-red-200"
+        className="app-game-header-close"
         aria-label="Буцах"
       >
         ×
@@ -31,14 +31,14 @@ export function GameHeader({
           {title}
         </h1>
         {progress ? (
-          <p className="text-xs text-[var(--app-muted)]">{progress}</p>
+          <p className="text-xs font-medium text-[var(--app-muted)]">
+            {progress}
+          </p>
         ) : null}
       </div>
       <div className="flex shrink-0 flex-col items-end gap-1">
         {score != null ? (
-          <span className="rounded-full bg-purple-100 px-2.5 py-1 text-xs font-bold text-purple-700">
-            {score} оноо
-          </span>
+          <span className="app-game-score-pill">{score} оноо</span>
         ) : null}
         {timer ? (
           <span className="rounded-full bg-slate-100 px-2.5 py-0.5 text-[10px] font-medium text-slate-600">

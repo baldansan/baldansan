@@ -141,6 +141,8 @@ See [V1_LAUNCH_BLOCKERS.md](./V1_LAUNCH_BLOCKERS.md).
 - Lesson flow, login/signup aligned to app shell
 - No new backend features; build verified
 
+**Mobile app shell polish (May 2026):** Root route `/` redirects to `/home`; bottom nav on dashboard and courses; Korean course visual readiness — see [MOBILE_APP_REDESIGN_REPORT.md](./MOBILE_APP_REDESIGN_REPORT.md).
+
 **Practice games added** as local front-end learning tools — match, translate, missing word, arrange, stroke demo. Scores in localStorage only. See [PRACTICE_GAMES.md](./PRACTICE_GAMES.md).
 
 **Next:** HSK content upload sprint and game data enrichment.

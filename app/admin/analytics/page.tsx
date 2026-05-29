@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { AdminPageHeader } from "@/components/admin/admin-page-header";
 import { AnalyticsMetricCard } from "@/components/admin/analytics-metric-card";
 import { LessonAnalyticsTable } from "@/components/admin/lesson-analytics-table";
 import {
@@ -26,19 +27,19 @@ export default async function AdminAnalyticsPage() {
       : "—";
 
   return (
-    <div className="flex flex-col gap-8">
-      <section>
-        <h1 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
-          Learning analytics
-        </h1>
-        <p className="mt-2 text-sm text-slate-600">
-          Хичээл бүрийн суралцагчийн ахиц, quiz оноо, vocabulary
-          engagement-г харна.
-        </p>
-      </section>
+    <div className="flex flex-col gap-6">
+      <AdminPageHeader
+        title="Learning Analytics"
+        description="Хичээл бүрийн суралцагчийн ахиц, quiz оноо, vocabulary engagement-г харна."
+        actions={
+          <Link href="/admin/tasks" className="admin-btn-secondary">
+            View tasks
+          </Link>
+        }
+      />
 
       {overview.warnings.length > 0 ? (
-        <div className="rounded-xl bg-amber-50 px-4 py-3 text-sm text-amber-900 ring-1 ring-amber-200">
+        <div className="admin-panel border-amber-200 bg-amber-50 p-4 text-sm text-amber-900">
           <p className="font-semibold">Analytics notes</p>
           <ul className="mt-2 list-inside list-disc">
             {overview.warnings.map((warning) => (
@@ -48,39 +49,8 @@ export default async function AdminAnalyticsPage() {
         </div>
       ) : null}
 
-      <div className="rounded-xl bg-emerald-50 px-4 py-3 text-sm text-emerald-900 ring-1 ring-emerald-200">
-        <p className="font-semibold">Learner engagement (Phase 7 Step 5)</p>
-        <p className="mt-1">
-          In-app reminders, notifications, achievements, weekly reports, and study
-          plan are live for learners. Admin management for user reminders is not
-          included yet.
-        </p>
-      </div>
-
-      <div className="rounded-xl bg-white px-4 py-3 text-sm text-slate-700 ring-1 ring-slate-200">
-        <p className="font-semibold">B2B / Classroom (Phase 7 Step 8)</p>
-        {classroomSummary.unavailable ? (
-          <p className="mt-1 text-amber-800">{classroomSummary.note}</p>
-        ) : (
-          <ul className="mt-2 flex flex-wrap gap-4 text-sm">
-            <li>
-              <span className="text-slate-500">Teachers:</span>{" "}
-              <strong>{classroomSummary.teacherProfiles ?? 0}</strong>
-            </li>
-            <li>
-              <span className="text-slate-500">Classrooms:</span>{" "}
-              <strong>{classroomSummary.classrooms ?? 0}</strong>
-            </li>
-            <li>
-              <span className="text-slate-500">Assignments:</span>{" "}
-              <strong>{classroomSummary.assignments ?? 0}</strong>
-            </li>
-          </ul>
-        )}
-      </div>
-
       <section>
-        <h2 className="text-lg font-semibold text-slate-900">Overview</h2>
+        <h2 className="admin-section-title">Overview</h2>
         <div className="mt-3 grid grid-cols-2 gap-3 sm:grid-cols-5">
           <AnalyticsMetricCard
             label="Total lessons"
@@ -103,21 +73,16 @@ export default async function AdminAnalyticsPage() {
         </div>
       </section>
 
-      <section className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:p-6">
+      <section className="admin-panel p-5 sm:p-6">
         <div className="flex flex-wrap items-start justify-between gap-3">
           <div>
-            <h2 className="text-lg font-semibold text-slate-900">
-              Task center
-            </h2>
-            <p className="mt-1 text-sm text-slate-600">
+            <h2 className="admin-section-title">Task center</h2>
+            <p className="admin-section-desc">
               Analytics insights also generate admin tasks (low scores, difficult
               questions, low vocabulary engagement).
             </p>
           </div>
-          <Link
-            href="/admin/tasks"
-            className="inline-flex rounded-full bg-emerald-500 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-emerald-600"
-          >
+          <Link href="/admin/tasks" className="admin-btn-primary">
             View generated tasks
           </Link>
         </div>
@@ -141,12 +106,9 @@ export default async function AdminAnalyticsPage() {
       </section>
 
       <section>
-        <h2 className="text-lg font-semibold text-slate-900">Deep insights</h2>
+        <h2 className="admin-section-title">Deep insights</h2>
         <div className="mt-3 grid gap-3 sm:grid-cols-2">
-          <Link
-            href="/admin/analytics/questions"
-            className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 transition-colors hover:ring-emerald-200"
-          >
+          <Link href="/admin/analytics/questions" className="admin-panel block p-5 hover:shadow-md">
             <p className="font-semibold text-slate-900">Question insights</p>
             <p className="mt-1 text-sm text-slate-600">
               Quiz асуулт бүрийн зөв/буруу хариултын үзүүлэлт.
@@ -155,10 +117,7 @@ export default async function AdminAnalyticsPage() {
               {quickSummary.difficultQuestionsCount} difficult question(s)
             </p>
           </Link>
-          <Link
-            href="/admin/analytics/vocabulary"
-            className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 transition-colors hover:ring-emerald-200"
-          >
+          <Link href="/admin/analytics/vocabulary" className="admin-panel block p-5 hover:shadow-md">
             <p className="font-semibold text-slate-900">Vocabulary insights</p>
             <p className="mt-1 text-sm text-slate-600">
               Хамгийн их/бага сурсан үгс, engagement.
@@ -171,9 +130,7 @@ export default async function AdminAnalyticsPage() {
       </section>
 
       <section>
-        <h2 className="text-lg font-semibold text-slate-900">
-          Per-lesson analytics
-        </h2>
+        <h2 className="admin-section-title">Per-lesson analytics</h2>
         <div className="mt-4">
           <LessonAnalyticsTable lessons={overview.lessons} />
         </div>

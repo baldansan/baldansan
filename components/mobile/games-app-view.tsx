@@ -89,7 +89,7 @@ export function GamesAppView({ lessonIds, lessonTitles }: Props) {
   const marathonHref = `/games/match?lessonId=${currentLessonId}`;
 
   return (
-    <MobileAppShell activeTab="games">
+    <MobileAppShell activeTab="games" mainClassName="max-w-[390px] mx-auto w-full">
       <MobilePageHeader title="Тоглоом" />
 
       <div className="mb-4 grid grid-cols-3 gap-2">
@@ -98,18 +98,16 @@ export function GamesAppView({ lessonIds, lessonTitles }: Props) {
           { label: "Дээд оноо", value: bestScore },
           { label: "Дундаж нарийвчлал", value: `${avgAccuracy}%` },
         ].map((stat) => (
-          <MobileCard key={stat.label} padding="sm" className="text-center !p-3">
-            <p className="text-lg font-bold text-[var(--app-text)]">
-              {stat.value}
-            </p>
+          <div key={stat.label} className="app-game-stat">
+            <p className="app-game-stat-value">{stat.value}</p>
             <p className="text-[10px] leading-tight text-[var(--app-muted)]">
               {stat.label}
             </p>
-          </MobileCard>
+          </div>
         ))}
       </div>
 
-      <MobileCard className="mb-5 !bg-gradient-to-br from-purple-500 to-violet-600 !border-purple-400 !text-white">
+      <div className="app-game-mission mb-5 p-4">
         <p className="text-xs font-semibold uppercase tracking-wide text-purple-100">
           Тоглоомын чиглэл
         </p>
@@ -126,7 +124,7 @@ export function GamesAppView({ lessonIds, lessonTitles }: Props) {
         >
           Холимог марафон тоглох
         </Link>
-      </MobileCard>
+      </div>
 
       <h2 className="mb-3 text-sm font-bold text-[var(--app-text)]">
         Дасгал тоглоомууд
@@ -138,8 +136,8 @@ export function GamesAppView({ lessonIds, lessonTitles }: Props) {
             href={`/games/${game.slug}?lessonId=${currentLessonId}`}
             className="block"
           >
-            <MobileCard padding="sm" className="relative h-full !p-3">
-              <span className="absolute right-2 top-2 rounded-full bg-purple-100 px-1.5 py-0.5 text-[9px] font-bold text-purple-700">
+            <MobileCard padding="sm" className="relative h-full !p-3 active:scale-[0.98]">
+              <span className="absolute right-2 top-2 rounded-full bg-[var(--app-purple-light)] px-1.5 py-0.5 text-[9px] font-bold text-[var(--app-purple-dark)]">
                 {game.badge}
               </span>
               <div

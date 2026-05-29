@@ -36,9 +36,18 @@ Admin routes (`/admin/*`) **unchanged** — standard admin layout, no phone shel
 | `/profile` | Avatar, stats grid, menu list, logout |
 | `/lessons/*` | Lesson detail, watch, vocab, quiz in app shell |
 | `/review` | Wrapped in app shell (Давтах tab) |
+| `/courses`, `/courses/hsk5`, `/courses/korean-1` | Course catalog in app shell |
 | `/login`, `/signup` | Centered form cards in app shell |
 
-**Marketing landing:** `/` kept as website layout with CTA → `/home`.
+**Marketing landing:** `/` redirects to `/home` (app home). Legacy marketing content remains available at `/demo` if needed.
+
+**Polish sprint (May 2026 — final):**
+- `/` redirects to `/home` — production root opens app UI
+- Bottom nav on `/home`, `/study`, `/kanji`, `/games`, `/profile`, `/dashboard`, `/courses`, `/courses/hsk5`, `/lessons/*` (hidden on full-screen game play routes)
+- Home: avatar, stat pills, orange/green continue card, premium course card, timeline polish
+- Lesson detail: media placeholder with vocab/quiz CTAs, step cards, Mongolian CTAs
+- Korean visual readiness: `lib/course-display.ts` — Hangul in `chinese` fields, romanization label, sky gradient for `korean-*` courses
+- Routes: `/courses/korean-1`, `/courses/korean-survival` when content exists (404-safe if empty)
 
 ---
 
@@ -63,6 +72,9 @@ Components: `components/mobile/mobile-app-shell.tsx`, `mobile-bottom-nav.tsx`
 - `MobilePageHeader` — title/subtitle/badge
 - `MobileCard` — white rounded card
 - `lib/mobile-nav.ts` — tab config
+- `lib/course-display.ts` — HSK vs Korean labels (no schema change)
+- `lib/mobile-course-options.ts` — home course chips (HSK + optional Korean)
+- `lib/mobile-home-data.ts` — shared home catalog loader
 - `lib/mobile-app-vocab.ts` — kanji aggregation from lesson vocabulary
 
 ---
@@ -72,8 +84,8 @@ Components: `components/mobile/mobile-app-shell.tsx`, `mobile-bottom-nav.tsx`
 | ID | Limitation |
 |----|------------|
 | L1 | Stroke game is demo-only; no real stroke engine yet |
-| L2 | HSK1/HSK4 chips on home are placeholders (HSK5 only live) |
-| L3 | `/dashboard` still uses legacy layout (linked from profile menu) |
+| L2 | HSK1/HSK4 chips are placeholders; Korean chip when `korean-1` or `korean-survival` published |
+| L3 | `/dashboard` uses mobile shell (Profile tab); inner cards still legacy styling |
 | L4 | Marketing/B2B pages use original website shell |
 | L5 | XP stat on profile is derived placeholder (lessons × 100) |
 | L6 | Kanji page uses vocabulary words, not dedicated hanzi table |
@@ -104,4 +116,4 @@ Test at **375px width** and **desktop** (centered phone shell).
 
 ## Recommendation
 
-**Ready for content upload** after deploy + quick visual QA on `/home` and lesson flow.
+**Ready for Korean Book 1 content upload** after deploy + quick visual QA on `/`, `/home`, and `/lessons/1` at 375px width.

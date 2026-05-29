@@ -122,15 +122,9 @@ export function LessonEditForm({
   );
 
   return (
-    <div className="flex flex-col gap-8">
-      <div>
-        <h1 className="text-2xl font-bold text-slate-900">
-          Хичээл засах · {lesson.id}
-        </h1>
-        <p className="mt-2 text-sm text-slate-600">
-          Metadata, import/export, restore, duplicate, manual editors, publish.
-        </p>
-        <div className="mt-3 flex flex-wrap items-center gap-2">
+    <div className="flex flex-col gap-6">
+      <div className="admin-panel p-5 sm:p-6">
+        <div className="flex flex-wrap items-center gap-2">
           <LessonQaBadge status={qa.qaStatus} />
           {qa.warnings.length > 0 ? (
             <span className="text-xs text-amber-800">

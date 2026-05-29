@@ -18,7 +18,7 @@ export function AdminCard({ title, description, href, children }: Props) {
   );
 
   const className =
-    "block rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 transition-shadow hover:ring-emerald-200 sm:p-6";
+    "admin-panel block p-5 transition-shadow hover:shadow-md sm:p-6";
 
   if (href) {
     return (

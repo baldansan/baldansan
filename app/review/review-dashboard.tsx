@@ -191,15 +191,17 @@ export function ReviewDashboard({ lessons, lessonIds }: Props) {
 
         <ReviewContinueCard lessonIds={lessonIds} />
 
-        <section className="rounded-2xl bg-purple-50 p-5 ring-1 ring-purple-200">
-          <h2 className="font-semibold text-purple-900">Үг давтах тоглоомууд</h2>
-          <p className="mt-2 text-sm text-purple-800">
+        <section className="app-game-mission p-5">
+          <h2 className="font-bold text-white">Үг давтах тоглоомууд</h2>
+          <p className="mt-2 text-sm text-purple-100">
             Сурсан үгээ тоглоомоор бататга.
           </p>
-          <GamePracticeLinks
-            lessonId={lastActiveLessonId ?? lessonIds[0] ?? "1"}
-            include={["match", "translate", "missing-word"]}
-          />
+          <div className="mt-3 [&_a]:!bg-white/20 [&_a]:!text-white [&_a]:ring-1 [&_a]:ring-white/30">
+            <GamePracticeLinks
+              lessonId={lastActiveLessonId ?? lessonIds[0] ?? "1"}
+              include={["match", "translate", "missing-word"]}
+            />
+          </div>
         </section>
 
         <section className="rounded-2xl bg-emerald-50/70 p-5 ring-1 ring-emerald-200">

@@ -11,12 +11,11 @@ type Props = {
 };
 
 const stateClass = {
-  default:
-    "border-[var(--app-border)] bg-white text-[var(--app-text)] active:bg-slate-50",
-  correct: "border-emerald-400 bg-emerald-50 text-emerald-800 ring-2 ring-emerald-300",
-  wrong: "border-red-400 bg-red-50 text-red-800 ring-2 ring-red-300",
-  disabled: "border-slate-200 bg-slate-100 text-slate-400",
-  selected: "border-purple-400 bg-purple-50 text-purple-800 ring-2 ring-purple-200",
+  default: "app-game-option",
+  correct: "app-game-option app-game-option-correct",
+  wrong: "app-game-option app-game-option-wrong",
+  disabled: "app-game-option opacity-50",
+  selected: "app-game-option app-game-option-selected",
 };
 
 export function GameOptionButton({
@@ -42,7 +41,7 @@ export function GameOptionButton({
       type="button"
       onClick={onClick}
       disabled={disabled || (state !== "default" && state !== "selected")}
-      className={`min-h-[52px] w-full rounded-2xl border px-4 py-3 text-left transition-colors ${stateClass[resolved]} ${className}`}
+      className={`${stateClass[resolved]} ${className}`}
     >
       <span className="block text-base font-semibold">{label}</span>
       {sublabel ? (

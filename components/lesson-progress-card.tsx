@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { MobileCard } from "@/components/mobile/mobile-card";
 import { LocalProgressNote } from "@/components/local-progress-note";
 import {
   getLessonStatusSmart,
@@ -33,23 +34,23 @@ export function LessonProgressCard({ lessonId }: Props) {
   const progressPercent = lessonProgressPercent(status);
 
   return (
-    <section className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-emerald-200 sm:p-6">
-      <h2 className="text-lg font-semibold text-slate-900">Таны ахиц</h2>
-      <p className="mt-1 text-sm text-slate-600">
-        Lesson status: {lessonStatusLabel(status)}
-      </p>
-      <div className="mt-4 h-2.5 w-full overflow-hidden rounded-full bg-slate-100">
+    <MobileCard padding="lg">
+      <h2 className="text-sm font-bold text-[var(--app-text)]">Таны ахиц</h2>
+      <div className="mt-2">
+        <span className="app-stat-pill">{lessonStatusLabel(status)}</span>
+      </div>
+      <div className="mt-3 h-2 overflow-hidden rounded-full bg-slate-100">
         <div
-          className="h-full rounded-full bg-emerald-500 transition-all"
+          className="h-full rounded-full bg-[var(--app-primary)] transition-all"
           style={{ width: `${progressPercent}%` }}
         />
       </div>
-      <p className="mt-2 text-sm font-medium text-emerald-700">
-        Progress: {progressPercent}%
+      <p className="mt-2 text-xs font-medium text-emerald-700">
+        {progressPercent}% дууссан
       </p>
       <div className="mt-3">
         <LocalProgressNote />
       </div>
-    </section>
+    </MobileCard>
   );
 }

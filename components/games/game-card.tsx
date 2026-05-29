@@ -7,10 +7,6 @@ type Props = {
 
 export function GameCard({ children, className = "" }: Props) {
   return (
-    <div
-      className={`rounded-[20px] border border-[var(--app-border)] bg-white p-4 shadow-sm ${className}`}
-    >
-      {children}
-    </div>
+    <div className={`app-card p-4 ${className}`}>{children}</div>
   );
 }

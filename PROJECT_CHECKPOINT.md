@@ -22,7 +22,9 @@
 
 **Admin ZIP lesson package import workflow added** — `/admin/import` for Korean/Chinese ZIP packages (text + optional media). See [LESSON_ZIP_IMPORT_FORMAT.md](./LESSON_ZIP_IMPORT_FORMAT.md).
 
-**Next:** HSK content upload sprint and game data enrichment.
+**Root route and learner mobile app shell polish completed** before Korean content upload — `/` → `/home`, bottom nav consistency, Korean visual readiness. See [MOBILE_APP_REDESIGN_REPORT.md](./MOBILE_APP_REDESIGN_REPORT.md).
+
+**Next:** Korean Book 1 content packaging and import.
 
 ---
 

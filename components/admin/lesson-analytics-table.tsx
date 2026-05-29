@@ -115,12 +115,12 @@ export function LessonAnalyticsTable({ lessons }: Props) {
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           placeholder="Хайх: id, гарчиг, 中文…"
-          className="min-w-[200px] flex-1 rounded-xl border border-slate-200 px-3 py-2 text-sm outline-none focus:border-emerald-400 focus:ring-2 focus:ring-emerald-100"
+          className="admin-input min-w-[200px] flex-1"
         />
         <select
           value={statusFilter}
           onChange={(e) => setStatusFilter(e.target.value as StatusFilter)}
-          className="rounded-xl border border-slate-200 px-3 py-2 text-sm outline-none focus:border-emerald-400"
+          className="admin-select"
         >
           <option value="all">Status: All</option>
           <option value="draft">draft</option>
@@ -132,7 +132,7 @@ export function LessonAnalyticsTable({ lessons }: Props) {
           onChange={(e) =>
             setPerformanceFilter(e.target.value as PerformanceFilter)
           }
-          className="rounded-xl border border-slate-200 px-3 py-2 text-sm outline-none focus:border-emerald-400"
+          className="admin-select"
         >
           <option value="all">Performance: All</option>
           <option value="high">High completion</option>
@@ -170,9 +170,9 @@ export function LessonAnalyticsTable({ lessons }: Props) {
         </section>
       ) : null}
 
-      <div className="overflow-x-auto rounded-2xl bg-white shadow-sm ring-1 ring-slate-200">
-        <table className="min-w-full text-left text-sm">
-          <thead className="border-b border-slate-100 bg-slate-50/80 text-xs font-medium uppercase tracking-wide text-slate-500">
+      <div className="admin-table-wrap">
+        <table className="admin-table">
+          <thead>
             <tr>
               <th className="px-3 py-3">Lesson</th>
               <th className="px-3 py-3">Status</th>
@@ -186,7 +186,7 @@ export function LessonAnalyticsTable({ lessons }: Props) {
               <th className="px-3 py-3">Links</th>
             </tr>
           </thead>
-          <tbody className="divide-y divide-slate-100">
+          <tbody>
             {filtered.map((lesson) => (
               <tr key={lesson.lessonId} className="align-top hover:bg-emerald-50/30">
                 <td className="px-3 py-3">

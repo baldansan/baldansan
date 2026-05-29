@@ -9,13 +9,20 @@
   --app-card: #ffffff;
   --app-primary: #52c900;
   --app-primary-dark: #3da800;
+  --app-primary-light: #e8f9dc;
   --app-text: #0f172a;
   --app-muted: #64748b;
   --app-border: #e2e8f0;
   --app-radius: 20px;
   --app-orange: #f97316;
+  --app-orange-dark: #ea580c;
   --app-purple: #8b5cf6;
+  --app-purple-dark: #7c3aed;
+  --app-purple-light: #f3e8ff;
   --app-blue: #3b82f6;
+  --app-red: #ef4444;
+  --app-shadow: 0 2px 12px rgba(15, 23, 42, 0.06);
+  --app-shadow-lg: 0 8px 24px rgba(15, 23, 42, 0.08);
 }
 
 @theme inline {
@@ -44,18 +51,342 @@ body {
   }
 }
 
+/* —— Mobile app shell —— */
+.app-shell-frame {
+  @apply relative flex w-full max-w-[430px] min-h-screen flex-col overflow-hidden border-x border-slate-200/80 bg-[var(--app-bg)] shadow-[var(--app-shadow-lg)];
+}
+
+@media (min-width: 480px) {
+  .app-shell-frame {
+    @apply my-4 min-h-[calc(100vh-2rem)] rounded-[28px] border;
+  }
+}
+
+/* —— Chips & pills —— */
 .app-chip {
-  @apply shrink-0 rounded-full border border-[var(--app-border)] bg-white px-3.5 py-2 text-xs font-semibold text-[var(--app-muted)] transition-colors;
+  @apply shrink-0 rounded-full border border-[var(--app-border)] bg-white px-3.5 py-2 text-xs font-semibold text-[var(--app-muted)] transition-colors shadow-sm;
 }
 
 .app-chip-active {
-  @apply border-emerald-200 bg-emerald-500 text-white;
+  @apply border-[var(--app-primary)] bg-[var(--app-primary)] text-white shadow-sm;
 }
 
 .app-stat-pill {
-  @apply rounded-full bg-white px-3 py-1 text-xs font-medium text-[var(--app-muted)] ring-1 ring-[var(--app-border)];
+  @apply rounded-full bg-white px-3 py-1 text-xs font-medium text-[var(--app-muted)] shadow-sm ring-1 ring-[var(--app-border)];
 }
 
+/* —— Bottom nav —— */
+.app-nav-link {
+  @apply flex h-full flex-col items-center justify-center gap-0.5 px-1 text-[var(--app-muted)] transition-colors;
+}
+
+.app-nav-link-active {
+  @apply text-white;
+}
+
+.app-nav-pill {
+  @apply flex flex-col items-center justify-center gap-0.5 rounded-2xl px-2 py-1.5 transition-all;
+}
+
+.app-nav-pill-active {
+  @apply bg-[var(--app-primary)] shadow-sm;
+}
+
+/* —— Cards —— */
+.app-card {
+  @apply rounded-[20px] border border-[var(--app-border)] bg-[var(--app-card)] shadow-[var(--app-shadow)];
+}
+
+.app-course-card {
+  @apply rounded-[20px] border border-orange-400 bg-gradient-to-br from-orange-500 via-orange-500 to-amber-600 text-white shadow-[var(--app-shadow)];
+}
+
+.app-course-card-premium {
+  @apply shadow-[0_8px_24px_rgba(249,115,22,0.25)];
+}
+
+.app-course-card-korean {
+  @apply border-sky-400 from-sky-500 via-sky-500 to-cyan-600 shadow-[0_8px_24px_rgba(14,165,233,0.22)];
+}
+
+.app-chip-scroll {
+  @apply flex gap-2 overflow-x-auto pb-1;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.app-chip-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.app-chip-disabled {
+  @apply cursor-not-allowed opacity-45;
+}
+
+.app-stat-pill-accent {
+  @apply bg-emerald-50 text-emerald-700 ring-emerald-200;
+}
+
+.app-timeline-node {
+  @apply flex h-9 w-9 items-center justify-center rounded-full text-xs font-bold;
+}
+
+.app-timeline-node-active {
+  @apply bg-[var(--app-primary)] text-white ring-4 ring-[var(--app-primary-light)];
+}
+
+.app-timeline-node-next {
+  @apply bg-[var(--app-orange)] text-white shadow-sm;
+}
+
+.app-timeline-node-locked {
+  @apply bg-slate-100 text-sm text-slate-400 ring-1 ring-slate-200;
+}
+
+.app-timeline-card {
+  @apply block rounded-[20px] border border-[var(--app-border)] bg-[var(--app-card)] p-3 shadow-[var(--app-shadow)] transition-colors active:bg-slate-50;
+}
+
+.app-timeline-card-locked {
+  @apply rounded-[16px] border border-slate-200 bg-slate-50/90 p-3;
+}
+
+.app-lesson-media-placeholder {
+  @apply flex aspect-video w-full flex-col items-center justify-center gap-2 bg-gradient-to-br from-slate-100 to-slate-200;
+}
+
+.app-lesson-step-grid {
+  @apply grid grid-cols-1 gap-2.5;
+}
+
+.app-lesson-step-card {
+  @apply flex flex-col rounded-[16px] border border-emerald-100 bg-white p-3.5 shadow-sm transition-colors active:bg-emerald-50;
+}
+
+.app-lesson-step-card-active {
+  @apply border-[var(--app-primary)] bg-emerald-50 ring-1 ring-emerald-200;
+}
+
+.app-lesson-cta-row {
+  @apply grid grid-cols-2 gap-2;
+}
+
+.app-game-mission {
+  @apply rounded-[20px] border border-purple-400 bg-gradient-to-br from-purple-500 to-violet-600 text-white shadow-[var(--app-shadow)];
+}
+
+.app-game-stat {
+  @apply rounded-[20px] border border-purple-100 bg-white p-3 text-center shadow-[var(--app-shadow)];
+}
+
+.app-game-stat-value {
+  @apply text-lg font-bold text-[var(--app-purple-dark)];
+}
+
+/* —— Menu rows —— */
 .app-menu-row {
   @apply flex w-full items-center gap-3 border-b border-[var(--app-border)] px-4 py-3.5 text-left text-sm font-medium text-[var(--app-text)] last:border-b-0 transition-colors active:bg-slate-50;
 }
+
+/* —— Buttons —— */
+.app-btn-primary {
+  @apply inline-flex min-h-[44px] items-center justify-center rounded-full bg-[var(--app-primary)] px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition-colors active:bg-[var(--app-primary-dark)];
+}
+
+.app-btn-secondary {
+  @apply inline-flex min-h-[44px] items-center justify-center rounded-full border border-emerald-200 bg-emerald-50 px-5 py-2.5 text-sm font-semibold text-emerald-800 transition-colors active:bg-emerald-100;
+}
+
+.app-btn-game {
+  @apply inline-flex min-h-[44px] items-center justify-center rounded-full bg-[var(--app-purple)] px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition-colors active:bg-[var(--app-purple-dark)];
+}
+
+.app-btn-outline-green {
+  @apply inline-flex min-h-[44px] items-center justify-center rounded-full border border-emerald-200 bg-emerald-50 px-5 py-2.5 text-sm font-semibold text-emerald-700;
+}
+
+/* —— Game UI —— */
+.app-game-header-close {
+  @apply flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-red-50 text-lg font-bold text-[var(--app-red)] ring-1 ring-red-200;
+}
+
+.app-game-score-pill {
+  @apply rounded-full bg-[var(--app-purple-light)] px-2.5 py-1 text-xs font-bold text-[var(--app-purple-dark)];
+}
+
+.app-game-progress-track {
+  @apply h-2 overflow-hidden rounded-full bg-purple-100;
+}
+
+.app-game-progress-fill {
+  @apply h-full rounded-full bg-[var(--app-purple)] transition-all;
+}
+
+.app-game-option {
+  @apply min-h-[52px] w-full rounded-2xl border border-[var(--app-border)] bg-white px-4 py-3 text-left shadow-sm transition-colors active:bg-slate-50;
+}
+
+.app-game-option-correct {
+  @apply border-emerald-400 bg-emerald-50 text-emerald-800 ring-2 ring-emerald-300;
+}
+
+.app-game-option-wrong {
+  @apply border-red-400 bg-red-50 text-red-800 ring-2 ring-red-300;
+}
+
+.app-game-option-selected {
+  @apply border-[var(--app-purple)] bg-[var(--app-purple-light)] text-[var(--app-purple-dark)] ring-2 ring-purple-200;
+}
+
+.app-kanji-cell {
+  @apply rounded-[16px] border border-[var(--app-border)] bg-white p-2.5 text-center shadow-sm transition-colors active:bg-slate-50;
+}
+
+.app-kanji-cell-learned {
+  @apply border-emerald-200 bg-emerald-50;
+}
+
+/* —— Admin Content Factory —— */
+:root {
+  --admin-sidebar-bg: #0f172a;
+  --admin-sidebar-hover: rgba(255, 255, 255, 0.06);
+  --admin-sidebar-active: #52c900;
+  --admin-bg: #f1f5f9;
+  --admin-card: #ffffff;
+  --admin-border: #e2e8f0;
+  --admin-primary: #52c900;
+  --admin-primary-dark: #3da800;
+  --admin-shadow: 0 1px 3px rgba(15, 23, 42, 0.06), 0 4px 12px rgba(15, 23, 42, 0.04);
+}
+
+.admin-layout {
+  background: var(--admin-bg);
+  color: #0f172a;
+}
+
+.admin-sidebar {
+  background: var(--admin-sidebar-bg);
+}
+
+.admin-sidebar-link {
+  @apply flex items-center gap-3 rounded-xl px-3 py-2.5 text-sm font-medium text-slate-300 transition-colors hover:bg-white/5 hover:text-white;
+}
+
+.admin-sidebar-link-active {
+  background: var(--admin-sidebar-active);
+  @apply font-semibold text-slate-900 shadow-sm;
+}
+
+.admin-sidebar-link-active:hover {
+  background: var(--admin-sidebar-active);
+  @apply text-slate-900;
+}
+
+.admin-topbar {
+  @apply border-b border-slate-200/80 bg-white/90 backdrop-blur-sm;
+}
+
+.admin-main {
+  @apply px-4 py-5 lg:px-8 lg:py-6;
+}
+
+.admin-page-header {
+  @apply mb-6 flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between;
+}
+
+.admin-panel {
+  @apply rounded-2xl border border-[var(--admin-border)] bg-[var(--admin-card)] shadow-[var(--admin-shadow)];
+}
+
+.admin-metric {
+  @apply rounded-2xl border border-[var(--admin-border)] bg-[var(--admin-card)] p-4 shadow-[var(--admin-shadow)] sm:p-5;
+}
+
+.admin-metric-label {
+  @apply text-xs font-semibold uppercase tracking-wide text-slate-500;
+}
+
+.admin-metric-value {
+  @apply mt-2 text-2xl font-bold text-emerald-600;
+}
+
+.admin-input {
+  @apply rounded-xl border border-slate-200 bg-white px-3 py-2.5 text-sm text-slate-900 outline-none transition-shadow placeholder:text-slate-400 focus:border-emerald-400 focus:ring-2 focus:ring-emerald-100;
+}
+
+.admin-select {
+  @apply rounded-xl border border-slate-200 bg-white px-3 py-2.5 text-sm text-slate-900 outline-none focus:border-emerald-400 focus:ring-2 focus:ring-emerald-100;
+}
+
+.admin-btn-primary {
+  @apply inline-flex items-center justify-center rounded-xl bg-[var(--admin-primary)] px-4 py-2.5 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-[var(--admin-primary-dark)];
+}
+
+.admin-btn-secondary {
+  @apply inline-flex items-center justify-center rounded-xl border border-emerald-200 bg-emerald-50 px-4 py-2.5 text-sm font-semibold text-emerald-800 transition-colors hover:bg-emerald-100;
+}
+
+.admin-btn-ghost {
+  @apply inline-flex items-center justify-center rounded-xl border border-slate-200 bg-white px-3 py-2 font-medium text-slate-700 transition-colors hover:border-emerald-200 hover:text-emerald-700;
+}
+
+.admin-table-wrap {
+  @apply overflow-x-auto rounded-2xl border border-[var(--admin-border)] bg-[var(--admin-card)] shadow-[var(--admin-shadow)];
+}
+
+.admin-table {
+  @apply min-w-full text-left text-sm;
+}
+
+.admin-table thead {
+  @apply border-b border-slate-100 bg-slate-50/90 text-xs font-semibold uppercase tracking-wide text-slate-500;
+}
+
+.admin-table th {
+  @apply px-4 py-3;
+}
+
+.admin-table tbody {
+  @apply divide-y divide-slate-100;
+}
+
+.admin-table tbody tr {
+  @apply transition-colors hover:bg-emerald-50/40;
+}
+
+.admin-table td {
+  @apply px-4 py-3 align-top;
+}
+
+.admin-section-title {
+  @apply text-lg font-semibold text-slate-900;
+}
+
+.admin-section-desc {
+  @apply mt-1 text-sm text-slate-600;
+}
+
+.admin-quick-actions {
+  @apply flex flex-wrap gap-2;
+}
+
+.admin-badge {
+  @apply inline-flex rounded-full px-2.5 py-0.5 text-xs font-semibold ring-1;
+}
+
+.admin-badge-pass {
+  @apply bg-emerald-50 text-emerald-800 ring-emerald-200;
+}
+
+.admin-badge-warn {
+  @apply bg-amber-50 text-amber-900 ring-amber-200;
+}
+
+.admin-badge-fail {
+  @apply bg-red-50 text-red-800 ring-red-200;
+}
+
+.admin-badge-neutral {
+  @apply bg-slate-100 text-slate-600 ring-slate-200;
+}
+

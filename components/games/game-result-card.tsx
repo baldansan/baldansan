@@ -24,27 +24,34 @@ export function GameResultCard({
 }: Props) {
   return (
     <GameCard className="text-center">
-      <p className="text-sm font-semibold text-emerald-600">Дууслаа!</p>
-      <p className="mt-2 text-4xl font-bold text-purple-600">{score}</p>
-      <p className="text-sm text-[var(--app-muted)]">оноо</p>
-      <p className="mt-3 text-sm text-[var(--app-text)]">
-        {correct}/{total} зөв · {accuracy}% нарийвчлал
+      <div className="mx-auto mb-3 flex h-14 w-14 items-center justify-center rounded-full bg-[var(--app-primary-light)] text-2xl">
+        🎉
+      </div>
+      <p className="text-sm font-bold text-[var(--app-primary-dark)]">
+        Дууслаа!
       </p>
+      <p className="mt-2 text-5xl font-bold text-[var(--app-purple-dark)]">
+        {score}
+      </p>
+      <p className="text-sm font-medium text-[var(--app-muted)]">оноо</p>
+      <div className="mx-auto mt-4 max-w-[240px] rounded-2xl bg-slate-50 px-4 py-3">
+        <p className="text-sm font-semibold text-[var(--app-text)]">
+          {correct}/{total} зөв
+        </p>
+        <p className="text-xs text-[var(--app-muted)]">
+          {accuracy}% нарийвчлал
+        </p>
+      </div>
       {xpGained != null ? (
-        <p className="mt-1 text-xs text-purple-600">+{xpGained} XP (local)</p>
+        <p className="mt-2 text-xs font-bold text-[var(--app-purple)]">
+          +{xpGained} XP (local)
+        </p>
       ) : null}
       <div className="mt-5 flex flex-col gap-2">
-        <button
-          type="button"
-          onClick={onPlayAgain}
-          className="min-h-[44px] rounded-full bg-purple-500 px-5 py-3 text-sm font-semibold text-white"
-        >
+        <button type="button" onClick={onPlayAgain} className="app-btn-game w-full">
           Дахин тоглох
         </button>
-        <Link
-          href="/games"
-          className="min-h-[44px] rounded-full border border-purple-200 bg-purple-50 px-5 py-3 text-sm font-semibold text-purple-700"
-        >
+        <Link href="/games" className="app-btn-outline-green w-full !border-purple-200 !bg-[var(--app-purple-light)] !text-[var(--app-purple-dark)]">
           Тоглоом руу буцах
         </Link>
         <Link

@@ -82,7 +82,7 @@ export function KanjiAppView({ entries, lessonVocab }: Props) {
   );
 
   return (
-    <MobileAppShell activeTab="kanji">
+    <MobileAppShell activeTab="kanji" mainClassName="max-w-[390px] mx-auto w-full">
       <MobilePageHeader
         title="Ханз"
         subtitle="Бүх ханзнууд"
@@ -139,10 +139,8 @@ export function KanjiAppView({ entries, lessonVocab }: Props) {
                     <Link
                       key={entry.key}
                       href={`/kanji/${encodeURIComponent(entry.key)}?lessonId=${entry.lessonIds[0] ?? "1"}`}
-                      className={`block rounded-[16px] border p-2.5 text-center transition-colors active:bg-slate-50 ${
-                        isLearned
-                          ? "border-emerald-200 bg-emerald-50"
-                          : "border-[var(--app-border)] bg-white"
+                      className={`app-kanji-cell block ${
+                        isLearned ? "app-kanji-cell-learned" : ""
                       }`}
                     >
                       <p className="text-2xl font-bold text-[var(--app-text)]">
