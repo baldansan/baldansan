@@ -179,16 +179,16 @@ export function LessonZipImportClient() {
 
       {preview ? (
         <AdminCard title="Import preview" description="Parsed package summary.">
-          <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
-            <PreviewCard label="courseId" value={preview.courseId} />
-            <PreviewCard label="lessonId" value={preview.lessonId} />
-            <PreviewCard label="language" value={preview.language} />
-            <PreviewCard label="title" value={preview.title} />
-            <PreviewCard label="vocabulary" value={preview.vocabularyCount} />
-            <PreviewCard label="quiz" value={preview.quizCount} />
-            <PreviewCard label="subtitles" value={preview.subtitleCount} />
-            <PreviewCard label="audio files" value={preview.audioFileCount} />
-            <PreviewCard label="image files" value={preview.imageFileCount} />
+          <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
+            <PreviewCard label="Course ID" value={preview.courseId} />
+            <PreviewCard label="Language" value={preview.language} />
+            <PreviewCard label="Lesson ID" value={preview.lessonId} />
+            <PreviewCard label="Title" value={preview.title} />
+            <PreviewCard label="Vocabulary count" value={preview.vocabularyCount} />
+            <PreviewCard label="Quiz count" value={preview.quizCount} />
+            <PreviewCard label="Subtitles" value={preview.subtitleCount} />
+            <PreviewCard label="Audio files" value={preview.audioFileCount} />
+            <PreviewCard label="Image files" value={preview.imageFileCount} />
           </div>
           {preview.mongolianTitle ? (
             <p className="mt-3 text-sm text-slate-600">

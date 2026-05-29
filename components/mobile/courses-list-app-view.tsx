@@ -1,6 +1,9 @@
 "use client";
 
 import Link from "next/link";
+import { useEffect, useMemo, useState } from "react";
+import { getSelectedLanguage } from "@/lib/learner-onboarding";
+import { courseMatchesLanguage, languageTrackLabel } from "@/lib/language-track";
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
 import { MobileCard } from "@/components/mobile/mobile-card";
 import { MobilePageHeader } from "@/components/mobile/mobile-page-header";
@@ -19,25 +22,42 @@ function statusLabel(status: Course["status"]) {
 }
 
 export function CoursesListAppView({ courses }: Props) {
+  const [trackLabel, setTrackLabel] = useState("");
+
+  useEffect(() => {
+    const lang = getSelectedLanguage();
+    if (lang) setTrackLabel(languageTrackLabel(lang));
+  }, []);
+
+  const visibleCourses = useMemo(() => {
+    const lang = getSelectedLanguage();
+    if (!lang) return courses;
+    return courses.filter((course) => courseMatchesLanguage(course.id, lang));
+  }, [courses]);
+
   return (
     <MobileAppShell activeTab="study" mainClassName="max-w-[390px] mx-auto w-full">
       <MobilePageHeader
         title="Хичээлүүд"
-        subtitle="HSK болон практик Хятад, Солонгос хэлийн курсууд"
+        subtitle={
+          trackLabel
+            ? `${trackLabel} — зөвхөн сонгосон хэлний курсууд`
+            : "Сурах хэлээ onboarding эсвэл Settings-оос сонгоно уу"
+        }
       />
 
-      {courses.length === 0 ? (
+      {visibleCourses.length === 0 ? (
         <MobileCard className="text-center">
           <p className="text-sm text-[var(--app-muted)]">
-            Одоогоор курс байхгүй байна.
+            Энэ хэлний курс одоогоор байхгүй байна.
           </p>
           <Link href="/onboarding" className="app-btn-primary mt-4 inline-flex">
-            App заавар үзэх
+            Хэл сонгох
           </Link>
         </MobileCard>
       ) : (
         <div className="flex flex-col gap-3">
-          {courses.map((course) => (
+          {visibleCourses.map((course) => (
             <MobileCard key={course.id} padding="lg" className="!p-0 overflow-hidden">
               <div className="p-4">
                 <div className="flex items-start justify-between gap-2">
@@ -61,35 +81,24 @@ export function CoursesListAppView({ courses }: Props) {
                   </span>
                 </div>
               </div>
-              <div className="border-t border-[var(--app-border)] px-4 py-3">
-                {course.status === "available" && course.href ? (
-                  <Link href={course.href} className="app-btn-primary w-full">
-                    Хичээлүүд үзэх
-                  </Link>
-                ) : (
-                  <button
-                    type="button"
-                    disabled
-                    className="w-full cursor-not-allowed rounded-full bg-slate-100 py-2.5 text-sm font-semibold text-slate-400"
-                  >
-                    Удахгүй
-                  </button>
-                )}
-              </div>
+              {course.href && course.status === "available" ? (
+                <Link
+                  href={course.href}
+                  className="block border-t border-[var(--app-border)] bg-slate-50 px-4 py-3 text-center text-sm font-semibold text-emerald-700"
+                >
+                  Курс нээх →
+                </Link>
+              ) : null}
             </MobileCard>
           ))}
         </div>
       )}
 
-      <MobileCard className="mt-4">
-        <p className="font-semibold text-[var(--app-text)]">Анх удаа?</p>
-        <p className="mt-1 text-sm text-[var(--app-muted)]">
-          App хэрхэн ажилладагийг заавраас үзнэ үү.
-        </p>
-        <Link href="/onboarding" className="app-btn-secondary mt-3 inline-flex">
-          Заавар үзэх →
+      <p className="mt-4 text-center text-xs text-[var(--app-muted)]">
+        <Link href="/settings" className="font-semibold text-emerald-600">
+          Settings → Сурах хэл солих
         </Link>
-      </MobileCard>
+      </p>
     </MobileAppShell>
   );
 }

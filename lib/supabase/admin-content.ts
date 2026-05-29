@@ -125,6 +125,7 @@ export type CreateDraftLessonInput = {
   duration?: string;
   status?: AdminContentStatus;
   orderIndex?: number;
+  language?: string;
 };
 
 export type UpdateLessonMetadataInput = {
@@ -378,6 +379,7 @@ export async function createDraftLesson(
       quiz_count: 0,
       status,
       order_index: orderIndex,
+      language: input.language?.trim() || null,
     });
 
     if (error) {

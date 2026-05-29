@@ -26,7 +26,7 @@ const DEFAULT_QUIZ_TYPES = [
 const VIDEO_PLACEHOLDER = "Video lesson placeholder";
 
 const LESSON_ROW_SELECT =
-  "id, course_id, title, chinese_title, subtitle, description, duration, vocabulary_count, quiz_count, status, order_index, video_url, thumbnail_url, audio_url, source_note, media_status, release_status, qa_status, approved_at, approved_by, release_notes, last_reviewed_at";
+  "id, course_id, title, chinese_title, subtitle, description, duration, vocabulary_count, quiz_count, status, order_index, video_url, thumbnail_url, audio_url, source_note, media_status, language, release_status, qa_status, approved_at, approved_by, release_notes, last_reviewed_at";
 
 type DbLesson = {
   id: string | number;
@@ -40,6 +40,7 @@ type DbLesson = {
   quiz_count: number;
   status: string;
   order_index: number;
+  language?: string | null;
   video_url?: string | null;
   thumbnail_url?: string | null;
   audio_url?: string | null;
@@ -151,9 +152,11 @@ function mapSubtitleLine(row: DbSubtitleLine) {
 
 function mapLessonRowToSummary(row: DbLesson): LessonContent {
   const id = canonicalLessonId(row.id);
+  const language = row.language?.trim() || undefined;
   return {
     id,
     courseId: row.course_id,
+    language,
     title: row.title,
     chineseTitle: row.chinese_title ?? "",
     subtitle: row.subtitle ?? "",
@@ -191,6 +194,7 @@ function mapFullLesson(
   return {
     id: canonicalLessonId(row.id),
     courseId: row.course_id,
+    language: row.language?.trim() || undefined,
     title: row.title,
     chineseTitle: row.chinese_title ?? "",
     subtitle: row.subtitle ?? "",

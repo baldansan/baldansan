@@ -7,17 +7,19 @@ import { MobileCard } from "@/components/mobile/mobile-card";
 import { MobilePageHeader } from "@/components/mobile/mobile-page-header";
 import {
   getOnboardingCompleted,
-  getPreferredCourseId,
-  PREFERRED_COURSE_OPTIONS,
-  setOnboardingCompleted,
-  setPreferredCourseId,
-  type PreferredCourseId,
+  getSelectedLanguage,
+  setLearnerLanguagePreference,
+  type SelectedLanguage,
 } from "@/lib/learner-onboarding";
+import {
+  LANGUAGE_SELECTION_OPTIONS,
+  languageTrackLabel,
+} from "@/lib/language-track";
 import { getCurrentUser, hasSupabaseConfig } from "@/lib/supabase/auth";
 
 export function SettingsAppView() {
   const [email, setEmail] = useState<string | null>(null);
-  const [courseId, setCourseId] = useState<PreferredCourseId>("hsk5");
+  const [language, setLanguage] = useState<SelectedLanguage | null>(null);
   const [onboardingDone, setOnboardingDone] = useState(true);
   const [notificationsEnabled, setNotificationsEnabled] = useState(true);
   const [theme, setTheme] = useState<"system" | "light">("system");
@@ -28,21 +30,16 @@ export function SettingsAppView() {
         const { data } = await getCurrentUser();
         setEmail(data?.email ?? null);
       }
-      setCourseId(getPreferredCourseId());
+      setLanguage(getSelectedLanguage());
       setOnboardingDone(getOnboardingCompleted());
     }
     void load();
   }, []);
 
-  function handleCourseChange(next: PreferredCourseId) {
-    setCourseId(next);
-    setPreferredCourseId(next);
-  }
-
-  function handleOnboardingToggle() {
-    const next = !onboardingDone;
-    setOnboardingDone(next);
-    setOnboardingCompleted(next);
+  function handleLanguageChange(next: SelectedLanguage, courseId: string) {
+    setLanguage(next);
+    setLearnerLanguagePreference(next, courseId);
+    setOnboardingDone(true);
   }
 
   return (
@@ -56,27 +53,18 @@ export function SettingsAppView() {
 
       <MobilePageHeader title="Тохиргоо" subtitle="Account болон app тохиргоо" />
 
-      {!onboardingDone ? (
+      {!language ? (
         <MobileCard className="mb-4 border-amber-200 bg-amber-50">
           <p className="text-sm font-semibold text-amber-900">
-            Анхны тохиргоо дуусаагүй байна
+            Сурах хэл сонгоогүй байна
           </p>
           <p className="mt-1 text-xs leading-5 text-amber-800">
-            App зааврыг үзэх эсвэл доорх товчоор дууссан гэж тэмдэглэж болно.
-            Тохиргоо хуудас руу буцаахад onboarding руу шилжихгүй.
+            Доорх сонголтоос хэлээ сонгоно уу. Profile/Settings руу буцаахад
+            onboarding руу шилжихгүй.
           </p>
-          <div className="mt-3 flex flex-wrap gap-2">
-            <Link href="/onboarding" className="app-btn-secondary !min-h-0 !py-2 !text-xs">
-              App заавар үзэх
-            </Link>
-            <button
-              type="button"
-              className="app-btn-primary !min-h-0 !py-2 !text-xs"
-              onClick={handleOnboardingToggle}
-            >
-              Дууссан гэж тэмдэглэх
-            </button>
-          </div>
+          <Link href="/onboarding" className="app-btn-secondary mt-3 inline-flex !min-h-0 !py-2 !text-xs">
+            Onboarding заавар
+          </Link>
         </MobileCard>
       ) : null}
 
@@ -93,33 +81,37 @@ export function SettingsAppView() {
       </MobileCard>
 
       <MobileCard padding="lg" className="mb-4">
-        <h2 className="text-sm font-bold text-[var(--app-text)]">
-          Курс / хэлний сонголт
-        </h2>
+        <h2 className="text-sm font-bold text-[var(--app-text)]">Сурах хэл</h2>
         <p className="mt-1 text-xs text-[var(--app-muted)]">
-          Нүүр хуудсан дээрх идэвхтэй курсын default сонголт.
+          Зөвхөн сонгосон хэлний хичээлүүд харагдана.
         </p>
         <div className="mt-3 flex flex-col gap-2">
-          {PREFERRED_COURSE_OPTIONS.map((option) => (
+          {LANGUAGE_SELECTION_OPTIONS.map((option) => (
             <label
-              key={option.id}
+              key={option.lang}
               className={`flex cursor-pointer items-center gap-3 rounded-[14px] border px-3 py-2.5 text-sm ${
-                courseId === option.id
+                language === option.lang
                   ? "border-emerald-300 bg-emerald-50 font-semibold text-emerald-900"
                   : "border-[var(--app-border)] bg-white text-[var(--app-text)]"
               }`}
             >
               <input
                 type="radio"
-                name="preferred-course"
+                name="learner-language"
                 className="accent-emerald-600"
-                checked={courseId === option.id}
-                onChange={() => handleCourseChange(option.id)}
+                checked={language === option.lang}
+                onChange={() => handleLanguageChange(option.lang, option.courseId)}
               />
+              <span aria-hidden>{option.emoji}</span>
               {option.label}
             </label>
           ))}
         </div>
+        {language ? (
+          <p className="mt-3 text-xs text-[var(--app-muted)]">
+            Идэвхтэй: {languageTrackLabel(language)}
+          </p>
+        ) : null}
       </MobileCard>
 
       <MobileCard padding="lg" className="mb-4">
@@ -161,11 +153,13 @@ export function SettingsAppView() {
         </p>
       </MobileCard>
 
-      <p className="mt-4 text-center text-xs text-[var(--app-muted)]">
-        <Link href="/onboarding" className="font-semibold text-emerald-600">
-          App заавар (/onboarding)
-        </Link>
-      </p>
+      {!onboardingDone ? (
+        <p className="mt-4 text-center text-xs text-[var(--app-muted)]">
+          <Link href="/onboarding" className="font-semibold text-emerald-600">
+            App заавар (/onboarding)
+          </Link>
+        </p>
+      ) : null}
     </MobileAppShell>
   );
 }

@@ -1,3 +1,4 @@
+import { inferLanguageTagFromCourseId } from "@/lib/language-track";
 import type {
   LessonZipMediaFile,
   LessonZipValidation,
@@ -187,6 +188,9 @@ async function upsertLessonShell(
       duration: validation.lesson.duration,
       status: "draft",
       orderIndex: validation.lesson.orderIndex,
+      language:
+        validation.preview.language ||
+        inferLanguageTagFromCourseId(courseId),
     });
     if (created.error || !created.data) {
       return { ok: false, error: created.error ?? "Lesson create failed." };
@@ -206,6 +210,9 @@ async function upsertLessonShell(
       order_index: validation.lesson.orderIndex ?? existing.data?.order_index ?? 1,
       source_note: sourceNote,
       media_status: validation.lesson.mediaStatus ?? "missing",
+      language:
+        validation.preview.language ||
+        inferLanguageTagFromCourseId(courseId),
     })
     .eq("id", lessonId);
 

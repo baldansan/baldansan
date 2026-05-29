@@ -2,6 +2,12 @@
 
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
+import { getSelectedLanguage } from "@/lib/learner-onboarding";
+import {
+  catalogEntryMatchesLanguage,
+  languageTrackLabel,
+  resolveDefaultChipForLanguage,
+} from "@/lib/language-track";
 import { MobileCard } from "@/components/mobile/mobile-card";
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
 import { lessonPath } from "@/lib/content";
@@ -28,19 +34,42 @@ function avatarInitial(name: string): string {
 }
 
 export function HomeAppView({ catalog, defaultChipId }: Props) {
+  const [selectedLang, setSelectedLang] = useState<ReturnType<typeof getSelectedLanguage>>(null);
   const [activeChip, setActiveChip] = useState(defaultChipId);
   const [displayName, setDisplayName] = useState("Зочин");
   const [loggedIn, setLoggedIn] = useState(false);
   const [streak, setStreak] = useState<number | null>(null);
   const [continueHref, setContinueHref] = useState("/lessons/1");
-  const [continueTitle, setContinueTitle] = useState("HSK5 Lesson 1");
+  const [continueTitle, setContinueTitle] = useState("Хичээл 1");
   const [statusByLesson, setStatusByLesson] = useState<
     Record<string, LessonStatus>
   >({});
 
+  const visibleCatalog = useMemo(() => {
+    if (!selectedLang) return catalog;
+    return catalog.filter((entry) => {
+      if (!entry.available) {
+        return selectedLang === "zh"
+          ? entry.courseId.includes("hsk")
+          : entry.courseId.startsWith("korean");
+      }
+      return catalogEntryMatchesLanguage(entry, selectedLang);
+    });
+  }, [catalog, selectedLang]);
+
+  useEffect(() => {
+    const lang = getSelectedLanguage();
+    setSelectedLang(lang);
+    if (!lang) return;
+    const chip = resolveDefaultChipForLanguage(lang, visibleCatalog);
+    if (chip) setActiveChip(chip);
+  }, [visibleCatalog]);
+
   const activeCourse = useMemo(
-    () => catalog.find((entry) => entry.chipId === activeChip) ?? catalog[0],
-    [catalog, activeChip]
+    () =>
+      visibleCatalog.find((entry) => entry.chipId === activeChip) ??
+      visibleCatalog[0],
+    [visibleCatalog, activeChip]
   );
 
   const lessons = activeCourse?.lessons ?? [];
@@ -113,7 +142,7 @@ export function HomeAppView({ catalog, defaultChipId }: Props) {
           </div>
           <div className="min-w-0 flex-1">
             <p className="text-xs font-medium text-[var(--app-muted)]">
-              Сайн байна уу
+              {selectedLang ? languageTrackLabel(selectedLang) : "Сайн байна уу"}
             </p>
             <h1 className="truncate text-lg font-bold text-[var(--app-text)]">
               {displayName}
@@ -166,7 +195,7 @@ export function HomeAppView({ catalog, defaultChipId }: Props) {
           Сурах
         </h2>
         <div className="app-chip-scroll -mx-1 px-1">
-          {catalog.map((chip) => (
+          {visibleCatalog.map((chip) => (
             <button
               key={chip.chipId}
               type="button"

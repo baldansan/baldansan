@@ -1,4 +1,5 @@
 import JSZip from "jszip";
+import { resolveLanguageFromManifest } from "@/lib/language-track";
 import { normalizeZipPath } from "@/lib/import/zip-path";
 import {
   validateLessonImportPayload,
@@ -101,7 +102,6 @@ const REQUIRED_MANIFEST_KEYS = [
   "packageVersion",
   "courseId",
   "lessonId",
-  "language",
 ] as const;
 
 const REQUIRED_LESSON_KEYS = ["courseId", "title", "chineseTitle"] as const;
@@ -179,7 +179,11 @@ export async function extractZipMediaFiles(
   return media;
 }
 
-function parseManifest(raw: unknown, errors: string[]): LessonZipManifest | null {
+function parseManifest(
+  raw: unknown,
+  errors: string[],
+  warnings: string[]
+): LessonZipManifest | null {
   if (!isRecord(raw)) {
     errors.push("manifest.json must be an object.");
     return null;
@@ -194,11 +198,20 @@ function parseManifest(raw: unknown, errors: string[]): LessonZipManifest | null
 
   if (errors.length > 0) return null;
 
+  const courseId = String(raw.courseId).trim();
+  const rawLanguage = String(raw.language ?? "").trim();
+  const { language, defaulted } = resolveLanguageFromManifest(courseId, rawLanguage);
+  if (defaulted) {
+    warnings.push(
+      "language field missing; defaulting based on courseId."
+    );
+  }
+
   return {
     packageVersion: String(raw.packageVersion).trim(),
-    courseId: String(raw.courseId).trim(),
+    courseId,
     lessonId: String(raw.lessonId).trim(),
-    language: String(raw.language).trim(),
+    language,
     title: String(raw.title ?? "").trim() || undefined,
     mongolianTitle: String(raw.mongolianTitle ?? "").trim() || undefined,
     source: String(raw.source ?? "").trim() || undefined,
@@ -441,7 +454,7 @@ export async function parseLessonZip(file: File): Promise<LessonZipValidation> {
     const manifestResult = await readJsonFile(zip, "manifest.json");
     if (manifestResult.error) errors.push(manifestResult.error);
     const manifest = manifestResult.data
-      ? parseManifest(manifestResult.data, errors)
+      ? parseManifest(manifestResult.data, errors, warnings)
       : null;
 
     const lessonResult = await readJsonFile(zip, "lesson.json");
