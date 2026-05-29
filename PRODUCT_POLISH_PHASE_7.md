@@ -6,49 +6,6 @@ Summary of learner-facing improvements (Mega Batch Step 1).
 
 ---
 
-## Delivered in Step 8
-
-| Area | Deliverable |
-|------|-------------|
-| **Migration** | `011_classroom_roles_assignments.sql` |
-| **API** | `lib/supabase/classrooms.ts` |
-| **Teacher setup** | `/teacher/setup` |
-| **Student view** | `/my-assignments` |
-| **Quiz sync** | assignment_results on quiz save |
-
-See [CLASSROOM_SCHEMA.md](./CLASSROOM_SCHEMA.md).
-
----
-
-## Delivered in Step 7
-
-| Area | Deliverable |
-|------|-------------|
-| **Teacher dashboard** | Summary cards, quick actions, workflow |
-| **Classes** | List, new (preview), demo class with mock students |
-| **Assignments** | List (demo), new form (preview) |
-| **Integration** | B2B pages, lesson teacher CTA |
-| **Schema plan** | `supabase/plans/classroom_schema_plan.sql` |
-
-See [CLASSROOM_WORKFLOW.md](./CLASSROOM_WORKFLOW.md).
-
----
-
-## Delivered in Step 6
-
-| Area | Deliverable |
-|------|-------------|
-| **Schools** | `/schools` — B2B landing |
-| **Teachers** | `/teachers` — teacher package |
-| **Demo** | `/demo` — learning flow walkthrough |
-| **Inquiry** | `/school-inquiry` — copy-to-clipboard |
-| **Teacher dashboard** | `/teacher-dashboard` — preview placeholder |
-| **Pricing** | B2B packages on `/pricing` |
-
-See [B2B_SCHOOL_PACKAGE.md](./B2B_SCHOOL_PACKAGE.md).
-
----
-
 ## Delivered in Step 5
 
 | Area | Deliverable |

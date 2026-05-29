@@ -12,7 +12,6 @@ import { AdminRecentActivity } from "@/components/admin/admin-recent-activity";
 import { AdminTaskCenterPreview } from "@/components/admin/admin-task-center-preview";
 import { getCurrentUser, hasSupabaseConfig } from "@/lib/supabase/auth";
 import type { AdminTask, AdminTaskSummary } from "@/lib/admin/task-generator";
-import type { AdminB2BMetrics } from "@/lib/supabase/admin-b2b-metrics";
 import type { AdminDashboardMetrics } from "@/lib/supabase/admin-analytics";
 import type {
   AdminActivityRow,
@@ -22,7 +21,6 @@ import type { AuthUser } from "@/types/auth";
 
 type Props = {
   metrics: AdminDashboardMetrics;
-  b2bMetrics?: AdminB2BMetrics;
   taskSummary: AdminTaskSummary;
   activeTasks: AdminTask[];
   taskWarnings?: string[];
@@ -33,7 +31,6 @@ type Props = {
 
 export function AdminDashboard({
   metrics,
-  b2bMetrics,
   taskSummary,
   activeTasks,
   taskWarnings = [],
@@ -330,49 +327,10 @@ export function AdminDashboard({
       </AdminDashboardSection>
 
       <AdminDashboardSection
-        title="B2B CRM"
-        description="School inquiries and organization pipeline."
-      >
-        {b2bMetrics?.warnings.length ? (
-          <p className="mb-3 text-xs text-amber-800">
-            {b2bMetrics.warnings.join(" · ")}
-          </p>
-        ) : null}
-        <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
-          <AdminMetricCard
-            label="New inquiries"
-            value={b2bMetrics?.summary.newInquiries ?? 0}
-            accent="amber"
-          />
-          <AdminMetricCard
-            label="Active orgs"
-            value={b2bMetrics?.summary.activeOrganizations ?? 0}
-            accent="emerald"
-          />
-          <AdminMetricCard
-            label="Demo scheduled"
-            value={b2bMetrics?.summary.demoScheduledInquiries ?? 0}
-          />
-        </div>
-        <Link
-          href="/admin/b2b"
-          className="mt-3 inline-flex rounded-full bg-emerald-500 px-5 py-2 text-sm font-semibold text-white hover:bg-emerald-600"
-        >
-          Open B2B CRM →
-        </Link>
-      </AdminDashboardSection>
-
-      <AdminDashboardSection
         title="Quick actions"
         description="Jump to common admin workflows."
       >
         <div className="flex flex-wrap gap-2">
-          <Link
-            href="/admin/b2b"
-            className="inline-flex rounded-full bg-emerald-500 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-emerald-600"
-          >
-            B2B CRM
-          </Link>
           <Link
             href="/admin/activity"
             className="inline-flex rounded-full bg-emerald-500 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-emerald-600"

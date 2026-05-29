@@ -5,7 +5,6 @@ import {
   getAnalyticsQuickSummary,
   getLessonAnalyticsOverview,
 } from "@/lib/supabase/admin-analytics";
-import { getClassroomAdminSummary } from "@/lib/supabase/admin-classroom-stats";
 
 export const dynamic = "force-dynamic";
 
@@ -14,10 +13,9 @@ export const metadata = {
 };
 
 export default async function AdminAnalyticsPage() {
-  const [overview, quickSummary, classroomSummary] = await Promise.all([
+  const [overview, quickSummary] = await Promise.all([
     getLessonAnalyticsOverview(),
     getAnalyticsQuickSummary(),
-    getClassroomAdminSummary(),
   ]);
 
   const avgScore =
@@ -55,28 +53,6 @@ export default async function AdminAnalyticsPage() {
           plan are live for learners. Admin management for user reminders is not
           included yet.
         </p>
-      </div>
-
-      <div className="rounded-xl bg-white px-4 py-3 text-sm text-slate-700 ring-1 ring-slate-200">
-        <p className="font-semibold">B2B / Classroom (Phase 7 Step 8)</p>
-        {classroomSummary.unavailable ? (
-          <p className="mt-1 text-amber-800">{classroomSummary.note}</p>
-        ) : (
-          <ul className="mt-2 flex flex-wrap gap-4 text-sm">
-            <li>
-              <span className="text-slate-500">Teachers:</span>{" "}
-              <strong>{classroomSummary.teacherProfiles ?? 0}</strong>
-            </li>
-            <li>
-              <span className="text-slate-500">Classrooms:</span>{" "}
-              <strong>{classroomSummary.classrooms ?? 0}</strong>
-            </li>
-            <li>
-              <span className="text-slate-500">Assignments:</span>{" "}
-              <strong>{classroomSummary.assignments ?? 0}</strong>
-            </li>
-          </ul>
-        )}
       </div>
 
       <section>

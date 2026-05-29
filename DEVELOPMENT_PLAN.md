@@ -389,7 +389,7 @@ Phased roadmap from MVP demo to production product.
 | 6 | Launch candidate | ✅ Completed |
 | 7 | Production launch sign-off | ✅ Completed |
 
-**Phase 6 complete.** **Next:** Phase 7 Step 8 — Classroom schema or B2B inquiry backend.
+**Phase 6 complete.** **Next:** Phase 7 Step 6 — School/B2B onboarding.
 
 **Exit criteria:** App deployed to Vercel, Supabase production configured, all checklists green, public + admin routes verified.
 
@@ -427,25 +427,6 @@ Phased roadmap from MVP demo to production product.
 - Achievement auto-award on learner actions
 - [ENGAGEMENT_SYSTEM.md](./ENGAGEMENT_SYSTEM.md)
 
-**Phase 7 Step 6 — Completed:** School/B2B onboarding and teacher-facing package pages.
-
-- Routes: `/schools`, `/teachers`, `/demo`, `/school-inquiry`, `/teacher-dashboard`
-- B2B pricing placeholders, footer/header links, copy inquiry form
-- [B2B_SCHOOL_PACKAGE.md](./B2B_SCHOOL_PACKAGE.md)
-
-**Phase 7 Step 7 — Completed:** Classrooms, teacher assignments, and student groups foundation.
-
-- Routes: `/teacher/classes`, `/teacher/assignments`, demo class UI
-- Enhanced teacher dashboard; schema plan `supabase/plans/classroom_schema_plan.sql`
-- [CLASSROOM_WORKFLOW.md](./CLASSROOM_WORKFLOW.md)
-
-**Phase 7 Step 8 — Completed:** Real classroom schema + teacher/student roles.
-
-- Migration `011_classroom_roles_assignments.sql`
-- `lib/supabase/classrooms.ts`, `/teacher/setup`, `/my-assignments`
-- Quiz → assignment_results sync
-- [CLASSROOM_SCHEMA.md](./CLASSROOM_SCHEMA.md)
-
 | Step | Focus | Status |
 |------|--------|--------|
 | 1 | User-facing product polish and onboarding | ✅ Completed |
@@ -453,57 +434,10 @@ Phased roadmap from MVP demo to production product.
 | 3 | Learner retention: streaks, daily goals | ✅ Completed |
 | 4 | Supabase sync for streaks/daily goals/activity | ✅ Completed |
 | 5 | Engagement: reminders, notifications, achievements, reports | ✅ Completed |
-| 6 | School/B2B onboarding and teacher-facing packaging | ✅ Completed |
-| 7 | Classrooms foundation (UI preview) | ✅ Completed |
-| 8 | Real classroom schema + teacher/student roles | ✅ Completed |
-| 9 | Class progress analytics / reporting | ✅ Completed |
-| 10 | B2B inquiry backend / CRM + organization accounts | ✅ Completed |
-| 11 | Organization classrooms / multi-teacher permissions | ✅ Completed |
-| 12 | Organization reporting / school admin dashboard | ✅ Completed |
-| 13 | B2B pilot onboarding workflow + setup wizard | ✅ Completed |
-| 14 | Bulk invite teachers/students + CSV import | ✅ Completed |
-| 15 | Invitation link generation + acceptance flow | ✅ Completed |
-| 16 | Server-safe invitation email delivery foundation | ✅ Completed |
+| 6 | School/B2B onboarding and teacher-facing packaging | Pending |
+| 7 | Payment/pricing research | Pending |
 
-**Phase 7 Step 12 — Completed:** Organization reporting and school admin dashboard.
-
-- Route `/organization/{id}/reports` with class metrics, teacher/student summaries, assignment analytics, markdown export
-- Organization dashboard shows completion, avg quiz, needs-attention preview
-- Admin B2B org detail links to organization reports
-- [ORGANIZATION_REPORTING.md](./ORGANIZATION_REPORTING.md)
-
-**Phase 7 Step 13 — Completed:** B2B pilot onboarding workflow and organization setup wizard.
-
-- Migration `014_b2b_pilot_onboarding.sql`
-- Routes `/organization/{id}/setup`, `/organization/{id}/dashboard`
-- Pilot readiness score, onboarding tasks, admin B2B onboarding summary
-- [B2B_PILOT_ONBOARDING.md](./B2B_PILOT_ONBOARDING.md), [ORGANIZATION_SETUP_WIZARD.md](./ORGANIZATION_SETUP_WIZARD.md), [PILOT_PLAN_TEMPLATE.md](./PILOT_PLAN_TEMPLATE.md)
-
-**Phase 7 Step 14 — Completed:** Bulk invite teachers/students and CSV import.
-
-- `lib/import/csv-import.ts` — parse, validate, preview, duplicate detection
-- `bulkAddOrganizationMembers()` / `bulkAddClassroomStudents()` — direct insert, no email
-- Routes `/organization/{id}/members/import`, `/teacher/classes/{id}/students/import`
-- Import report copy/download (Markdown + JSON)
-- [CSV_IMPORT_GUIDE.md](./CSV_IMPORT_GUIDE.md), [BULK_INVITE_WORKFLOW.md](./BULK_INVITE_WORKFLOW.md)
-
-**Phase 7 Step 15 — Completed:** Invitation link generation and invite acceptance flow.
-
-- Migration `017_invitation_links_classroom_accept.sql` (classroom accept + `invitations` view)
-- Unified `lib/supabase/invitations.ts` — org member + classroom student invites
-- Routes `/invite/{token}`, `/organization/{id}/invitations`, `/teacher/classes/{id}/invitations`
-- Login/signup `?next=` redirect; Mongolian invite copy templates
-- [INVITATION_WORKFLOW.md](./INVITATION_WORKFLOW.md), [EMAIL_INVITATION_TEMPLATES.md](./EMAIL_INVITATION_TEMPLATES.md)
-
-**Phase 7 Step 16 — Completed:** Server-safe invitation email delivery foundation.
-
-- Migration `018_invitation_email_deliveries.sql`
-- `lib/server/email/email-provider.ts` — mock + Resend providers
-- `POST /api/invitations/{id}/send-email` (+ legacy `/send` alias)
-- Send/retry UI, per-invitation delivery log, admin `/admin/b2b/invitations`
-- [EMAIL_DELIVERY_SETUP.md](./EMAIL_DELIVERY_SETUP.md), [INVITATION_EMAIL_DELIVERY.md](./INVITATION_EMAIL_DELIVERY.md)
-
-**Next:** Phase 7 Step 17 (do not start until requested).
+**Next:** Phase 7 Step 6 — School/B2B onboarding and teacher-facing packaging.
 
 ---
 

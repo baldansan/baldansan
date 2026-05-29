@@ -234,12 +234,6 @@ export function LearnerDashboard({ hsk5LessonIds }: Props) {
         >
           Profile
         </Link>
-        <Link
-          href="/my-assignments"
-          className="rounded-full border border-emerald-200 bg-emerald-50 px-5 py-2.5 text-sm font-semibold text-emerald-800 hover:bg-emerald-100"
-        >
-          My assignments
-        </Link>
       </section>
 
       <LocalProgressNote />

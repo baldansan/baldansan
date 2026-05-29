@@ -1,17 +1,14 @@
 "use client";
 
 import Link from "next/link";
-import { useRouter, useSearchParams } from "next/navigation";
+import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { AppHeader } from "@/components/app-header";
-import { getSafeRedirectPath } from "@/lib/auth/safe-redirect";
 import { getCurrentUser, hasSupabaseConfig, signInWithEmail } from "@/lib/supabase/auth";
 import { resetProgressSyncDismiss } from "@/lib/supabase/progress-sync";
 
 export function LoginForm() {
   const router = useRouter();
-  const searchParams = useSearchParams();
-  const nextPath = getSafeRedirectPath(searchParams.get("next"));
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState<string | null>(null);
@@ -51,7 +48,7 @@ export function LoginForm() {
 
     if (data) {
       resetProgressSyncDismiss();
-      router.push(nextPath);
+      router.push("/profile");
       router.refresh();
     }
   }
@@ -77,12 +74,10 @@ export function LoginForm() {
               {loggedInEmail ? ` (${loggedInEmail})` : null}
             </p>
             <Link
-              href={nextPath}
+              href="/profile"
               className="mt-4 inline-flex rounded-full bg-emerald-500 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-emerald-600"
             >
-              {nextPath.startsWith("/invite/")
-                ? "Continue to invitation →"
-                : "Continue →"}
+              Profile руу очих →
             </Link>
           </section>
         ) : !hasSupabaseConfig ? (
@@ -136,11 +131,7 @@ export function LoginForm() {
             <p className="mt-4 text-center text-sm text-slate-600">
               Бүртгэл байхгүй юу?{" "}
               <Link
-                href={
-                  searchParams.get("next")
-                    ? `/signup?next=${encodeURIComponent(searchParams.get("next")!)}`
-                    : "/signup"
-                }
+                href="/signup"
                 className="font-medium text-emerald-700 hover:text-emerald-600"
               >
                 Бүртгүүлэх

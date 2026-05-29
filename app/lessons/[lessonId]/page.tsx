@@ -7,7 +7,6 @@ import { BottomNav } from "@/components/bottom-nav";
 import { LessonDetailMediaSection } from "@/components/lesson-media-display";
 import { LessonDetailOverview } from "@/components/lesson-detail-overview";
 import { LessonProgressCard } from "@/components/lesson-progress-card";
-import { TeacherAssignmentCta } from "@/components/teacher/teacher-assignment-cta";
 import { LessonUnavailable } from "@/components/lesson-unavailable";
 import { getAllLessonIdsSync, coursePath } from "@/lib/content";
 import { lessonPreviewPath } from "@/lib/lesson-publish";
@@ -166,7 +165,6 @@ export default async function LessonDetailPage({
         </section>
 
         <LessonProgressCard lessonId={lesson.id} />
-        <TeacherAssignmentCta lessonId={lesson.id} />
       </main>
 
       <AppFooter />

@@ -877,15 +877,6 @@ export async function saveQuizResultSmart(
     return localResult;
   }
 
-  const { completeMatchingAssignmentsForLesson } = await import(
-    "@/lib/classroom/assignment-completion"
-  );
-  void completeMatchingAssignmentsForLesson(lessonId, {
-    score,
-    total,
-    percentage,
-  });
-
   const mergedBest = Math.max(localResult.bestPercentage, percentage);
   return {
     ...localResult,

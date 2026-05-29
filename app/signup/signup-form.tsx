@@ -1,17 +1,12 @@
 "use client";
 
 import Link from "next/link";
-import { useRouter, useSearchParams } from "next/navigation";
 import { useState } from "react";
 import { AppHeader } from "@/components/app-header";
-import { getSafeRedirectPath } from "@/lib/auth/safe-redirect";
 import { getSession, hasSupabaseConfig, signUpWithEmail } from "@/lib/supabase/auth";
 import { resetProgressSyncDismiss } from "@/lib/supabase/progress-sync";
 
 export function SignupForm() {
-  const router = useRouter();
-  const searchParams = useSearchParams();
-  const nextPath = getSafeRedirectPath(searchParams.get("next"));
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
@@ -47,9 +42,6 @@ export function SignupForm() {
     const signedIn = Boolean(session);
     if (signedIn) {
       resetProgressSyncDismiss();
-      router.push(nextPath);
-      router.refresh();
-      return;
     }
     setHasSession(signedIn);
     setSuccess(true);
@@ -80,20 +72,14 @@ export function SignupForm() {
             <div className="mt-4 flex flex-col gap-2">
               {hasSession ? (
                 <Link
-                  href={nextPath}
+                  href="/profile"
                   className="inline-flex justify-center rounded-full bg-emerald-500 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-emerald-600"
                 >
-                  {nextPath.startsWith("/invite/")
-                    ? "Continue to invitation →"
-                    : "Profile руу очих →"}
+                  Profile руу очих →
                 </Link>
               ) : (
                 <Link
-                  href={
-                    searchParams.get("next")
-                      ? `/login?next=${encodeURIComponent(searchParams.get("next")!)}`
-                      : "/login"
-                  }
+                  href="/login"
                   className="inline-flex justify-center rounded-full bg-emerald-500 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-emerald-600"
                 >
                   Нэвтрэх хуудас руу →
@@ -161,11 +147,7 @@ export function SignupForm() {
             <p className="mt-4 text-center text-sm text-slate-600">
               Аль хэдийн бүртгэлтэй юу?{" "}
               <Link
-                href={
-                  searchParams.get("next")
-                    ? `/login?next=${encodeURIComponent(searchParams.get("next")!)}`
-                    : "/login"
-                }
+                href="/login"
                 className="font-medium text-emerald-700 hover:text-emerald-600"
               >
                 Нэвтрэх
