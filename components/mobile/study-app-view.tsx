@@ -2,10 +2,12 @@
 
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
+import { useLearnerLanguageLessons } from "@/hooks/use-learner-language-lessons";
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
 import { MobileCard } from "@/components/mobile/mobile-card";
 import { MobilePageHeader } from "@/components/mobile/mobile-page-header";
 import { lessonPath } from "@/lib/content";
+import { languageTrackShortLabel } from "@/lib/language-track";
 import {
   getLessonProgressMapSmart,
   type LessonStatus,
@@ -13,10 +15,11 @@ import {
 import type { LessonContent } from "@/types/lesson-content";
 
 type Props = {
-  lessons: LessonContent[];
+  allLessons: LessonContent[];
 };
 
-export function StudyAppView({ lessons }: Props) {
+export function StudyAppView({ allLessons }: Props) {
+  const { lessons, trackLabel, ready, lang } = useLearnerLanguageLessons(allLessons);
   const [statusByLesson, setStatusByLesson] = useState<
     Record<string, LessonStatus>
   >({});
@@ -24,6 +27,7 @@ export function StudyAppView({ lessons }: Props) {
   useEffect(() => {
     async function load() {
       const ids = lessons.map((l) => l.id);
+      if (ids.length === 0) return;
       const { byLesson } = await getLessonProgressMapSmart(ids);
       setStatusByLesson(byLesson);
     }
@@ -42,16 +46,28 @@ export function StudyAppView({ lessons }: Props) {
       ? Math.round((completedCount / lessons.length) * 100)
       : 0;
 
+  const progressLabel = lang ? languageTrackShortLabel(lang) : trackLabel;
+
+  if (!ready) {
+    return (
+      <MobileAppShell activeTab="study" mainClassName="max-w-[390px] mx-auto w-full">
+        <p className="py-16 text-center text-sm text-[var(--app-muted)]">
+          Ачааллаж байна…
+        </p>
+      </MobileAppShell>
+    );
+  }
+
   return (
     <MobileAppShell activeTab="study" mainClassName="max-w-[390px] mx-auto w-full">
       <MobilePageHeader
-        title="Дасгалжуулалтын төв"
+        title={trackLabel || "Дасгалжуулалтын төв"}
         subtitle="Чадвараа сонгон бататгаж, түвшин ахиарай"
       />
 
       <div className="app-course-card mb-5 p-4">
         <p className="text-xs font-semibold uppercase tracking-wide text-orange-100">
-          HSK 5 явц
+          {progressLabel} явц
         </p>
         <p className="mt-1 text-2xl font-bold">{progressPercent}%</p>
         <p className="text-sm text-orange-50">
@@ -72,7 +88,7 @@ export function StudyAppView({ lessons }: Props) {
               Миний үгийн сан
             </p>
             <p className="mt-0.5 text-xs text-[var(--app-muted)]">
-              Сурсан болон давтах бүх үгс
+              Сонгосон хэлний сурсан болон давтах үгс
             </p>
           </div>
           <span className="text-lg text-[var(--app-muted)]">›</span>
@@ -87,13 +103,10 @@ export function StudyAppView({ lessons }: Props) {
         {lessons.length === 0 ? (
           <MobileCard className="text-center">
             <p className="text-sm text-[var(--app-muted)]">
-              Хичээл одоогоор байхгүй байна.
+              Энэ хэлний хичээл одоогоор байхгүй байна.
             </p>
-            <Link
-              href="/courses/hsk5"
-              className="mt-3 inline-flex rounded-full bg-emerald-500 px-5 py-2 text-sm font-semibold text-white"
-            >
-              HSK5 үзэх
+            <Link href="/onboarding" className="app-btn-primary mt-3 inline-flex">
+              Хэл сонгох
             </Link>
           </MobileCard>
         ) : (
@@ -102,12 +115,12 @@ export function StudyAppView({ lessons }: Props) {
               <p className="text-sm font-semibold text-[var(--app-text)]">
                 Хичээл сонгох
               </p>
-              <p className="text-xs text-[var(--app-muted)]">HSK 5</p>
+              <p className="text-xs text-[var(--app-muted)]">{trackLabel}</p>
             </div>
             <ul>
               {lessons.map((lesson) => {
                 const status = statusByLesson[lesson.id] ?? "not_started";
-                const progressLabel =
+                const progressStatusLabel =
                   status === "completed"
                     ? "Дууссан"
                     : status === "started"
@@ -115,10 +128,7 @@ export function StudyAppView({ lessons }: Props) {
                       : `0/${lesson.quizCount || 10}`;
                 return (
                   <li key={lesson.id}>
-                    <Link
-                      href={lessonPath(lesson.id)}
-                      className="app-menu-row"
-                    >
+                    <Link href={lessonPath(lesson.id)} className="app-menu-row">
                       <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-emerald-50 text-xs font-bold text-emerald-700">
                         {lesson.id}
                       </span>
@@ -129,14 +139,9 @@ export function StudyAppView({ lessons }: Props) {
                         <span className="block truncate text-xs text-[var(--app-muted)]">
                           {lesson.title}
                         </span>
-                        {lesson.subtitle ? (
-                          <span className="block truncate text-[11px] text-slate-400">
-                            {lesson.subtitle}
-                          </span>
-                        ) : null}
                       </span>
                       <span className="shrink-0 rounded-full bg-slate-100 px-2 py-0.5 text-[10px] font-semibold text-slate-600">
-                        {progressLabel}
+                        {progressStatusLabel}
                       </span>
                       <span className="text-[var(--app-muted)]">›</span>
                     </Link>

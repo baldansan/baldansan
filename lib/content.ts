@@ -12,6 +12,7 @@ import {
 } from "@/lib/supabase/content";
 import { hasSupabaseConfig } from "@/lib/supabase/client";
 import { isPublicLesson } from "@/lib/lesson-publish";
+import { LEARNER_COURSE_PROBE_IDS } from "@/lib/language-track";
 import type { Course } from "@/types/course";
 import type { CourseContent, LessonContent } from "@/types/lesson-content";
 
@@ -282,4 +283,26 @@ export function findNextLessonId(
     return null;
   }
   return lessons[index + 1].id;
+}
+
+/** Load public lessons across known course ids (deduped by lesson id). */
+export async function getAllPublicLessonsProbe(): Promise<LessonContent[]> {
+  const batches = await Promise.all(
+    LEARNER_COURSE_PROBE_IDS.map((courseId) =>
+      getPublicLessonsByCourseId(courseId)
+    )
+  );
+
+  const seen = new Set<string>();
+  const merged: LessonContent[] = [];
+
+  for (const batch of batches) {
+    for (const lesson of batch) {
+      if (seen.has(lesson.id)) continue;
+      seen.add(lesson.id);
+      merged.push(lesson);
+    }
+  }
+
+  return merged;
 }

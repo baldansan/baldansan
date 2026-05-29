@@ -1,5 +1,5 @@
-import { GamesAppView } from "@/components/mobile/games-app-view";
-import { getPublicLessonsByCourseId } from "@/lib/content";
+import { LanguageFilteredGamesView } from "@/components/mobile/language-filtered-games-view";
+import { getAllPublicLessonsProbe } from "@/lib/content";
 
 export const dynamic = "force-dynamic";
 
@@ -8,13 +8,6 @@ export const metadata = {
 };
 
 export default async function GamesPage() {
-  const lessons = await getPublicLessonsByCourseId("hsk5");
-  return (
-    <GamesAppView
-      lessonIds={lessons.map((l) => l.id)}
-      lessonTitles={Object.fromEntries(
-        lessons.map((l) => [l.id, l.title])
-      )}
-    />
-  );
+  const allLessons = await getAllPublicLessonsProbe();
+  return <LanguageFilteredGamesView allLessons={allLessons} />;
 }

@@ -30,9 +30,10 @@ const HSK_ORDER = ["HSK1", "HSK2", "HSK3", "HSK4", "HSK5", "Other"];
 type Props = {
   entries: KanjiEntry[];
   lessonVocab: { lessonId: string; vocabulary: VocabularyWord[] }[];
+  trackLabel?: string;
 };
 
-export function KanjiAppView({ entries, lessonVocab }: Props) {
+export function KanjiAppView({ entries, lessonVocab, trackLabel }: Props) {
   const [search, setSearch] = useState("");
   const [filter, setFilter] = useState<FilterId>("all");
   const [learnedKeys, setLearnedKeys] = useState<Set<string>>(new Set());
@@ -84,8 +85,10 @@ export function KanjiAppView({ entries, lessonVocab }: Props) {
   return (
     <MobileAppShell activeTab="kanji" mainClassName="max-w-[390px] mx-auto w-full">
       <MobilePageHeader
-        title="Ханз"
-        subtitle="Бүх ханзнууд"
+        title={trackLabel?.includes("Солонгос") ? "Солонгос үг" : "Ханз"}
+        subtitle={
+          trackLabel?.includes("Солонгос") ? "Солонгос үг, үсэг" : "Бүх ханзнууд"
+        }
         badge={`${entries.length}`}
       />
 

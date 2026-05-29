@@ -1,0 +1,29 @@
+"use client";
+
+import { useEffect, useMemo, useState } from "react";
+import { getSelectedLanguage } from "@/lib/learner-onboarding";
+import {
+  filterLessonsByLanguage,
+  languageTrackLabel,
+  type SelectedLanguage,
+} from "@/lib/language-track";
+import type { LessonContent } from "@/types/lesson-content";
+
+export function useLearnerLanguageLessons(allLessons: LessonContent[]) {
+  const [lang, setLang] = useState<SelectedLanguage | null>(null);
+  const [ready, setReady] = useState(false);
+
+  useEffect(() => {
+    setLang(getSelectedLanguage());
+    setReady(true);
+  }, []);
+
+  const lessons = useMemo(
+    () => (lang ? filterLessonsByLanguage(allLessons, lang) : []),
+    [allLessons, lang]
+  );
+
+  const trackLabel = lang ? languageTrackLabel(lang) : "";
+
+  return { lang, lessons, trackLabel, ready };
+}

@@ -1,3 +1,4 @@
+import { inferLanguageTagFromCourseId } from "@/lib/language-track";
 import type {
   LessonZipMediaFile,
   LessonZipValidation,
@@ -181,12 +182,19 @@ async function upsertLessonShell(
       id: lessonId,
       courseId,
       title: validation.lesson.title,
-      chineseTitle: validation.lesson.chineseTitle,
-      subtitle: validation.lesson.subtitle,
+      chineseTitle:
+        validation.lesson.targetTitle || validation.lesson.chineseTitle,
+      subtitle:
+        validation.lesson.subtitle ??
+        validation.lesson.mongolianTitle ??
+        validation.preview.mongolianTitle,
       description: validation.lesson.description,
       duration: validation.lesson.duration,
       status: "draft",
       orderIndex: validation.lesson.orderIndex,
+      language:
+        validation.preview.language ||
+        inferLanguageTagFromCourseId(courseId),
     });
     if (created.error || !created.data) {
       return { ok: false, error: created.error ?? "Lesson create failed." };
@@ -198,14 +206,23 @@ async function upsertLessonShell(
     .update({
       course_id: courseId,
       title: validation.lesson.title,
-      chinese_title: validation.lesson.chineseTitle,
-      subtitle: validation.lesson.subtitle ?? null,
+      chinese_title: validation.lesson.targetTitle || validation.lesson.chineseTitle,
+      subtitle:
+        validation.lesson.subtitle ??
+        validation.lesson.mongolianTitle ??
+        validation.preview.mongolianTitle ??
+        null,
       description: validation.lesson.description ?? null,
       duration: validation.lesson.duration ?? null,
       status: "draft",
       order_index: validation.lesson.orderIndex ?? existing.data?.order_index ?? 1,
       source_note: sourceNote,
       media_status: validation.lesson.mediaStatus ?? "missing",
+      language:
+        validation.preview.language ||
+        inferLanguageTagFromCourseId(courseId),
+      target_language: validation.preview.targetLanguage ?? null,
+      ui_language: validation.preview.uiLanguage ?? null,
     })
     .eq("id", lessonId);
 

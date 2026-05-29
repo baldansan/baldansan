@@ -1,0 +1,39 @@
+"use client";
+
+import { useLearnerLanguageLessons } from "@/hooks/use-learner-language-lessons";
+import { KanjiAppView } from "@/components/mobile/kanji-app-view";
+import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
+import { aggregateKanjiFromLessons } from "@/lib/mobile-app-vocab";
+import type { LessonContent } from "@/types/lesson-content";
+
+type Props = {
+  allLessons: LessonContent[];
+};
+
+export function LanguageFilteredKanjiView({ allLessons }: Props) {
+  const { lessons, ready, trackLabel } = useLearnerLanguageLessons(allLessons);
+
+  if (!ready) {
+    return (
+      <MobileAppShell activeTab="kanji" mainClassName="max-w-[390px] mx-auto w-full">
+        <p className="py-16 text-center text-sm text-[var(--app-muted)]">
+          Ачааллаж байна…
+        </p>
+      </MobileAppShell>
+    );
+  }
+
+  const entries = aggregateKanjiFromLessons(lessons);
+  const lessonVocab = lessons.map((lesson) => ({
+    lessonId: lesson.id,
+    vocabulary: lesson.vocabulary,
+  }));
+
+  return (
+    <KanjiAppView
+      entries={entries}
+      lessonVocab={lessonVocab}
+      trackLabel={trackLabel}
+    />
+  );
+}

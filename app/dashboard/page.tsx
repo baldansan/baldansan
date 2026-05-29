@@ -1,5 +1,5 @@
-import { LearnerDashboard } from "@/components/learner-dashboard";
-import { getPublicLessonsByCourseId } from "@/lib/content";
+import { LanguageFilteredDashboard } from "@/components/mobile/language-filtered-dashboard";
+import { getAllPublicLessonsProbe } from "@/lib/content";
 
 export const dynamic = "force-dynamic";
 
@@ -9,8 +9,6 @@ export const metadata = {
 };
 
 export default async function DashboardPage() {
-  const lessons = await getPublicLessonsByCourseId("hsk5");
-  const lessonIds = lessons.map((l) => l.id);
-
-  return <LearnerDashboard hsk5LessonIds={lessonIds} />;
+  const allLessons = await getAllPublicLessonsProbe();
+  return <LanguageFilteredDashboard allLessons={allLessons} />;
 }

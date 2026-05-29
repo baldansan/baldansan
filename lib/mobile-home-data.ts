@@ -19,7 +19,7 @@ type KoreanLoadResult = {
 } | null;
 
 async function loadKoreanCourseForHome(): Promise<KoreanLoadResult> {
-  const candidates = ["korean-1", "korean-survival"] as const;
+  const candidates = ["korean-level-1", "korean-1", "korean-survival"] as const;
 
   for (const courseId of candidates) {
     const [lessons, course] = await Promise.all([

@@ -31,18 +31,28 @@ import { getCurrentUser, hasSupabaseConfig } from "@/lib/supabase/auth";
 
 type Props = {
   hsk5LessonIds: string[];
+  trackLabel?: string;
 };
 
-function DashboardShell({ children }: { children: ReactNode }) {
+function DashboardShell({
+  children,
+  trackLabel,
+}: {
+  children: ReactNode;
+  trackLabel?: string;
+}) {
   return (
     <MobileAppShell activeTab="profile" mainClassName="max-w-[390px] mx-auto w-full">
-      <MobilePageHeader title="Миний сургалт" subtitle="Ахиц, quiz, streak" />
+      <MobilePageHeader
+        title={trackLabel ? `Миний явц · ${trackLabel}` : "Миний сургалт"}
+        subtitle="Ахиц, quiz, streak"
+      />
       <div className="flex flex-col gap-4">{children}</div>
     </MobileAppShell>
   );
 }
 
-export function LearnerDashboard({ hsk5LessonIds }: Props) {
+export function LearnerDashboard({ hsk5LessonIds, trackLabel }: Props) {
   const [ready, setReady] = useState(false);
   const [loggedIn, setLoggedIn] = useState(false);
   const [email, setEmail] = useState<string | undefined>();
@@ -97,7 +107,7 @@ export function LearnerDashboard({ hsk5LessonIds }: Props) {
 
   if (!ready) {
     return (
-      <DashboardShell>
+      <DashboardShell trackLabel={trackLabel}>
         <p className="py-16 text-center text-sm text-[var(--app-muted)]">Ачааллаж байна…</p>
       </DashboardShell>
     );
@@ -105,7 +115,7 @@ export function LearnerDashboard({ hsk5LessonIds }: Props) {
 
   if (!loggedIn) {
     return (
-      <DashboardShell>
+      <DashboardShell trackLabel={trackLabel}>
         <EmptyState
           title="Нэвтрэх шаардлагатай"
           description="Dashboard дээр ахицаа харахын тулд account үүсгээрэй эсвэл нэвтэрнэ үү. Guest хэрэглэгч Courses хэсгээс үргэлжлүүлж болно."
@@ -131,7 +141,7 @@ export function LearnerDashboard({ hsk5LessonIds }: Props) {
   }
 
   return (
-    <DashboardShell>
+    <DashboardShell trackLabel={trackLabel}>
       <section className="rounded-3xl bg-white p-6 shadow-sm ring-1 ring-slate-200 sm:p-8">
         <p className="text-sm text-emerald-700">Сайн байна уу</p>
         <h1 className="mt-1 text-2xl font-bold text-slate-900 sm:text-3xl">

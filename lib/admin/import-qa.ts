@@ -1,4 +1,4 @@
-import type { LessonImportPayload } from "@/lib/supabase/admin-import";
+import type { ImportValidationContext, LessonImportPayload } from "@/lib/supabase/admin-import";
 import type { LessonContent } from "@/types/lesson-content";
 
 export const MIN_VOCABULARY_FOR_PUBLISH = 5;
@@ -233,10 +233,14 @@ export function computeImportQaStatus(metrics: {
 
 /** Extra QA checks on normalized import payload (warnings for import UI). */
 export function analyzeImportPayloadExtras(
-  payload: LessonImportPayload
+  payload: LessonImportPayload,
+  context?: ImportValidationContext
 ): { errors: string[]; warnings: string[] } {
   const errors: string[] = [];
   const warnings: string[] = [];
+  const isKorean = context?.isKorean ?? false;
+  const readingLabel = isKorean ? "reading/romanization" : "pinyin/reading";
+  const levelLabel = isKorean ? "level" : "HSK level";
 
   const timeRanges = new Map<string, number>();
   payload.subtitles.forEach((sub, i) => {
@@ -249,7 +253,7 @@ export function analyzeImportPayloadExtras(
       timeRanges.set(key, i);
     }
     if (!sub.pinyin?.trim()) {
-      warnings.push(`subtitles[${i}]: missing pinyin.`);
+      warnings.push(`subtitles[${i}]: missing ${readingLabel}.`);
     }
     if (sub.mongolian.trim() && isShortMongolian(sub.mongolian)) {
       warnings.push(`subtitles[${i}]: Mongolian translation looks very short.`);
@@ -259,10 +263,12 @@ export function analyzeImportPayloadExtras(
   const seenVocab = new Map<string, number>();
   payload.vocabulary.forEach((word, i) => {
     if (!word.pinyin?.trim()) {
-      warnings.push(`vocabulary[${i}]: missing pinyin.`);
+      warnings.push(`vocabulary[${i}]: missing ${readingLabel}.`);
     }
     if (!word.hskLevel?.trim()) {
-      warnings.push(`vocabulary[${i}] "${word.chinese}": missing HSK level.`);
+      warnings.push(
+        `vocabulary[${i}] "${word.chinese}": missing ${levelLabel}.`
+      );
     }
     if (word.mongolian.trim() && isShortMongolian(word.mongolian)) {
       warnings.push(
@@ -274,7 +280,7 @@ export function analyzeImportPayloadExtras(
     }
     if (seenVocab.has(word.chinese)) {
       errors.push(
-        `Duplicate vocabulary chinese "${word.chinese}" (indices ${seenVocab.get(word.chinese)} and ${i}).`
+        `Duplicate vocabulary target "${word.chinese}" (indices ${seenVocab.get(word.chinese)} and ${i}).`
       );
     } else {
       seenVocab.set(word.chinese, i);

@@ -16,7 +16,7 @@ async function appendKoreanCourses(
   lessonCounts: Record<string, number>
 ): Promise<Course[]> {
   const next = [...catalog];
-  const koreanIds = ["korean-1", "korean-survival"] as const;
+  const koreanIds = ["korean-level-1", "korean-1", "korean-survival"] as const;
 
   for (const courseId of koreanIds) {
     const lessons = await getPublicLessonsByCourseId(courseId);
