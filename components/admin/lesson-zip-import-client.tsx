@@ -87,21 +87,41 @@ export function LessonZipImportClient() {
   }
 
   async function handleImport() {
-    if (!validation?.ok) {
-      setError("Эхлээд validation амжилттай болго.");
-      return;
-    }
-
     setBusy("import");
     setError(null);
 
     try {
-      const result = await importLessonPackage(validation);
+      let packageToImport = validation;
+
+      if (
+        !packageToImport?.ok ||
+        !packageToImport.importPayload ||
+        !packageToImport.preview ||
+        !packageToImport.lesson
+      ) {
+        if (!file) {
+          setError("ZIP parse data missing. Please validate again.");
+          return;
+        }
+        packageToImport = await parseLessonZip(file);
+        setValidation(packageToImport);
+        setPreview(packageToImport.preview);
+        if (!packageToImport.ok) {
+          setError("Validation алдаатай — import хийх боломжгүй.");
+          return;
+        }
+      }
+
+      console.log("parsed import package", packageToImport);
+
+      const result = await importLessonPackage(packageToImport);
+      console.log("import result", result);
       setImportResult(result);
       if (!result.ok) {
-        setError(result.errors.join(" ") || "Import амжилтгүй.");
+        setError(result.errors.join(" ") || "Import as draft failed.");
       }
-    } catch {
+    } catch (importError) {
+      console.error("[import] Import as draft failed", importError);
       setError("Import хийхэд алдаа гарлаа.");
     } finally {
       setBusy(null);
@@ -225,7 +245,10 @@ export function LessonZipImportClient() {
 
       {importResult?.ok && lessonId ? (
         <AdminCard title="Import complete" description="Draft lesson ready for QA.">
-          <p className="text-sm text-emerald-800">
+          <p className="text-sm font-semibold text-emerald-800">
+            Draft lesson imported successfully.
+          </p>
+          <p className="mt-2 text-sm text-emerald-800">
             Lesson <strong>{lessonId}</strong> imported as draft. Vocabulary:{" "}
             {importResult.vocabularyInserted}, quiz: {importResult.quizInserted},
             subtitles: {importResult.subtitlesInserted}, media uploaded:{" "}
@@ -240,20 +263,23 @@ export function LessonZipImportClient() {
           ) : null}
           <div className="mt-4 flex flex-wrap gap-2">
             <Link href={`/admin/lessons/${lessonId}/edit`} className={btnPrimary}>
-              View admin lesson
+              View draft
             </Link>
             <Link
               href={lessonPreviewPath(lessonId, { adminPreview: true })}
               className={btnSecondary}
             >
-              Preview lesson
+              Open learner preview
+            </Link>
+            <Link href="/admin/lessons" className={btnSecondary}>
+              Go to lessons
             </Link>
             <Link
               href={lessonPreviewPath(lessonId, {
                 adminPreview: true,
                 subpath: "vocabulary",
               })}
-              className={btnSecondary}
+              className={btnGhost}
             >
               Vocabulary
             </Link>
@@ -262,7 +288,7 @@ export function LessonZipImportClient() {
                 adminPreview: true,
                 subpath: "quiz",
               })}
-              className={btnSecondary}
+              className={btnGhost}
             >
               Quiz
             </Link>

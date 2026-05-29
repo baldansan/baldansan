@@ -1,6 +1,7 @@
 import "server-only";
 
 import { analyzeLessonQa, type LessonQaReport } from "@/lib/admin/lesson-qa";
+import { LEARNER_COURSE_PROBE_IDS } from "@/lib/language-track";
 import {
   lessonIdQueryCandidates,
   normalizeLessonRouteId,
@@ -137,4 +138,28 @@ export async function getHsk5LessonsWithQa(): Promise<LessonQaReport[]> {
   }
 
   return reports.sort((a, b) => Number(a.lesson.id) - Number(b.lesson.id));
+}
+
+/** Admin list: lessons across HSK + Korean (and other probed) course catalogs. */
+export async function getAllAdminLessonsWithQa(): Promise<LessonQaReport[]> {
+  const seen = new Set<string>();
+  const reports: LessonQaReport[] = [];
+
+  for (const courseId of LEARNER_COURSE_PROBE_IDS) {
+    const summaries = await getAdminLessonsByCourseId(courseId);
+    for (const summary of summaries) {
+      if (seen.has(summary.id)) continue;
+      seen.add(summary.id);
+      const lesson = await getAdminLessonById(summary.id);
+      if (lesson) {
+        reports.push(analyzeLessonQa(lesson));
+      }
+    }
+  }
+
+  return reports.sort((a, b) => {
+    const courseCompare = a.lesson.courseId.localeCompare(b.lesson.courseId);
+    if (courseCompare !== 0) return courseCompare;
+    return String(a.lesson.id).localeCompare(String(b.lesson.id));
+  });
 }
