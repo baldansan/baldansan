@@ -44,6 +44,7 @@ A Mongolian–Chinese language learning web app. Users learn Chinese through sho
 | `/admin/activity` | Admin activity log |
 | `/admin/final-audit` | Phase 5 readiness checklist |
 | `/admin/production-qa` | Production launch QA checklist |
+| `/admin/security-audit` | Security / RLS audit |
 
 Examples: `/lessons/1`, `/lessons/4/quiz`. Invalid IDs (e.g. `/lessons/999`) show lesson not found.
 
@@ -182,7 +183,9 @@ Helpers: [lib/supabase/auth.ts](./lib/supabase/auth.ts). Header shows **Нэвт
 
 **Production QA:** [`/admin/production-qa`](/admin/production-qa) — manual launch checklist after each deploy (admin; localStorage + export).
 
-**Next step:** Phase 6 Step 5 — Security/RLS final audit and launch candidate.
+**Security audit:** [`/admin/security-audit`](/admin/security-audit) — RLS, auth, storage, visibility checks before launch (export JSON/Markdown).
+
+**Next step:** Phase 6 Step 6 — Launch candidate final smoke test and go-live notes.
 
 ## Deployment (Phase 6)
 
@@ -217,7 +220,10 @@ Phase 6 Steps 1–4 complete. Run checklists on production before launch candida
 | [`/admin/system-check`](/admin/system-check) | App-side verification (admin, read-only) |
 | [`/deployment-check`](/deployment-check) | Public smoke test (post-deploy) |
 | [`/admin/production-qa`](/admin/production-qa) | Launch QA checklist (post-deploy) |
+| [`/admin/security-audit`](/admin/security-audit) | Security/RLS audit (pre-launch) |
 | [PRODUCTION_ROUTE_TESTING.md](./PRODUCTION_ROUTE_TESTING.md) | Live testing guide |
+| [SECURITY_RLS_AUDIT.md](./SECURITY_RLS_AUDIT.md) | RLS model and audit guide |
+| [LAUNCH_CANDIDATE_CHECKLIST.md](./LAUNCH_CANDIDATE_CHECKLIST.md) | Final launch sign-off |
 
 **Stack:** Vercel (Next.js) + Supabase (DB, Auth, Storage). Anon key only in client — never `service_role`.
 
@@ -237,5 +243,6 @@ Phase 6 Steps 1–4 complete. Run checklists on production before launch candida
 - [DATABASE_SCHEMA.md](./DATABASE_SCHEMA.md) — schema + Auth/RLS plan
 - [AUTH_PLAN.md](./AUTH_PLAN.md) — Phase 4 auth details
 - [CONTENT_AUTHORING_GUIDE.md](./CONTENT_AUTHORING_GUIDE.md) — content workflow
-- [PRODUCTION_ROUTE_TESTING.md](./PRODUCTION_ROUTE_TESTING.md) — live route testing guide
-- [LAUNCH_QA_REPORT_TEMPLATE.md](./LAUNCH_QA_REPORT_TEMPLATE.md) — launch report template
+- [SECURITY_RLS_AUDIT.md](./SECURITY_RLS_AUDIT.md) — RLS and security audit
+- [LAUNCH_CANDIDATE_CHECKLIST.md](./LAUNCH_CANDIDATE_CHECKLIST.md) — launch sign-off
+- [PRODUCTION_ROUTE_TESTING.md](./PRODUCTION_ROUTE_TESTING.md) — live route testing

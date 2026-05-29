@@ -137,6 +137,46 @@ const SECTIONS: AuditSection[] = [
     ],
   },
   {
+    title: "Phase 6 launch candidate",
+    items: [
+      {
+        label: "Deployment check (/deployment-check)",
+        status: "ready",
+        href: "/deployment-check",
+      },
+      {
+        label: "System check (/admin/system-check)",
+        status: "ready",
+        href: "/admin/system-check",
+      },
+      {
+        label: "Production QA (/admin/production-qa)",
+        status: "ready",
+        href: "/admin/production-qa",
+      },
+      {
+        label: "Security / RLS audit (/admin/security-audit)",
+        status: "ready",
+        href: "/admin/security-audit",
+      },
+      {
+        label: "Supabase verification SQL",
+        status: "needs check",
+        note: "supabase/verify/production_verification.sql — no fail rows",
+      },
+      {
+        label: "Vercel env + Auth URLs",
+        status: "needs check",
+        note: "https://baldansan.vercel.app in Supabase Auth config",
+      },
+      {
+        label: "Launch candidate status",
+        status: "needs check",
+        note: "See LAUNCH_CANDIDATE_CHECKLIST.md",
+      },
+    ],
+  },
+  {
     title: "Phase 6 deployment readiness",
     items: [
       {
@@ -153,6 +193,11 @@ const SECTIONS: AuditSection[] = [
         label: "Production QA route (/admin/production-qa)",
         status: "ready",
         href: "/admin/production-qa",
+      },
+      {
+        label: "Security audit route (/admin/security-audit)",
+        status: "ready",
+        href: "/admin/security-audit",
       },
       {
         label: "Vercel env configured (URL + anon key)",
@@ -173,7 +218,7 @@ const SECTIONS: AuditSection[] = [
       {
         label: "Deployment docs (DEPLOYMENT_PLAN.md)",
         status: "ready",
-        note: "Phase 6 Steps 1–4",
+        note: "Phase 6 Steps 1–5",
       },
     ],
   },
@@ -261,15 +306,23 @@ export function FinalAuditChecklist() {
       <section className="rounded-2xl bg-emerald-50/60 p-5 ring-1 ring-emerald-100">
         <h2 className="text-base font-semibold text-slate-900">Phase 6 next</h2>
         <p className="mt-2 text-sm text-slate-700">
-          Steps 1–4 complete — deployment planning, Supabase verification,
-          Vercel setup, and Production QA dashboard. Run{" "}
+          Steps 1–5 complete — run{" "}
+          <Link href="/admin/security-audit" className="font-medium text-emerald-800 hover:underline">
+            Security / RLS Audit
+          </Link>{" "}
+          and{" "}
           <Link href="/admin/production-qa" className="font-medium text-emerald-800 hover:underline">
             Production QA
           </Link>{" "}
-          after every production deploy. Next: Security/RLS final audit and
-          launch candidate.
+          before launch candidate sign-off.
         </p>
         <div className="mt-4 flex flex-wrap gap-2">
+          <Link
+            href="/admin/security-audit"
+            className="inline-flex rounded-full bg-emerald-500 px-5 py-2.5 text-sm font-semibold text-white hover:bg-emerald-600"
+          >
+            Security audit
+          </Link>
           <Link
             href="/admin/production-qa"
             className="inline-flex rounded-full bg-emerald-500 px-5 py-2.5 text-sm font-semibold text-white hover:bg-emerald-600"

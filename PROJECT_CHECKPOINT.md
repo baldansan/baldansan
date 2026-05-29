@@ -2,7 +2,23 @@
 
 **Project:** Buunduu Surtsgaay (Бөөндөө Сурцгаая)  
 **Checkpoint date:** May 2026  
-**Status:** Phase 6 Step 4 Production route testing and launch QA dashboard **completed**
+**Status:** Phase 6 Step 5 Security/RLS final audit and launch candidate **completed**
+
+---
+
+## Phase 6 Step 5 — Security/RLS final audit — **Completed**
+
+Phase 6 Step 5: Security/RLS final audit and launch candidate tools added.
+
+| Area | Deliverable |
+|------|-------------|
+| Route | `/admin/security-audit` — pass/warn/fail/manual checks + export |
+| Report | `lib/admin/security-audit-report.ts` |
+| SQL | Enhanced `production_verification.sql` — security checks |
+| Docs | SECURITY_RLS_AUDIT.md, LAUNCH_CANDIDATE_CHECKLIST.md |
+| Integration | Admin dashboard, final-audit, production-qa |
+
+**Next:** Phase 6 Step 6 — Launch candidate final smoke test and go-live notes.
 
 ---
 

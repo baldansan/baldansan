@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useCallback, useEffect, useState } from "react";
 import {
   PRODUCTION_URL,
@@ -129,6 +130,12 @@ export function ProductionQaView() {
           >
             Open production admin system check
           </a>
+          <Link
+            href="/admin/security-audit"
+            className="inline-flex rounded-full border border-emerald-200 bg-white px-4 py-2 text-sm font-semibold text-emerald-800 hover:bg-emerald-50"
+          >
+            Open Security / RLS Audit
+          </Link>
         </div>
       </section>
 

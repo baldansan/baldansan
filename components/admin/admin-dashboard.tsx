@@ -380,6 +380,12 @@ export function AdminDashboard({
             Production QA
           </Link>
           <Link
+            href="/admin/security-audit"
+            className="inline-flex rounded-full border border-emerald-200 bg-emerald-50 px-5 py-2.5 text-sm font-semibold text-emerald-800 transition-colors hover:bg-emerald-100"
+          >
+            Security / RLS Audit
+          </Link>
+          <Link
             href="/admin/final-audit"
             className="inline-flex rounded-full border border-emerald-200 bg-emerald-50 px-5 py-2.5 text-sm font-semibold text-emerald-800 transition-colors hover:bg-emerald-100"
           >
@@ -405,6 +411,11 @@ export function AdminDashboard({
         description="Existing workflows — unchanged."
       >
         <div className="grid gap-4 sm:grid-cols-2">
+          <AdminCard
+            title="Security / RLS Audit"
+            description="Recommended before launch — auth, RLS, storage, visibility, and secret safety checks."
+            href="/admin/security-audit"
+          />
           <AdminCard
             title="Production QA"
             description="Run after every production deploy — manual route/auth/Supabase/CMS checklist with export."
