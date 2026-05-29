@@ -1,5 +1,21 @@
 import { getPublicLessonById } from "@/lib/content";
-import type { VocabularyWord } from "@/types/lesson";
+import {
+  prioritizePrelessonVocab,
+  shuffleArray,
+  toGameVocabItem,
+} from "@/lib/games/game-data-core";
+import {
+  buildGameLessonContext,
+  emptyGameLessonContext,
+  type GameLessonContext,
+} from "@/lib/games/game-lesson-meta";
+import {
+  buildHangulConstructionItems,
+  buildKoreanArrangeItems,
+  buildKoreanMissingWordItems,
+  buildKoreanTranslateItems,
+} from "@/lib/games/korean-game-data";
+import { pickSameCategoryDistractors } from "@/lib/quiz/smart-options";
 import type {
   ArrangeQuestion,
   GameVocabItem,
@@ -9,47 +25,31 @@ import type {
   TranslateQuestion,
 } from "@/lib/games/game-types";
 
-export function shuffleArray<T>(items: T[]): T[] {
-  const copy = [...items];
-  for (let i = copy.length - 1; i > 0; i -= 1) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [copy[i], copy[j]] = [copy[j], copy[i]];
-  }
-  return copy;
-}
+export { shuffleArray, toGameVocabItem } from "@/lib/games/game-data-core";
+export type { GameLessonContext, GameLabels } from "@/lib/games/game-lesson-meta";
+export { resolveGameLabels } from "@/lib/games/game-lesson-meta";
 
-export function toGameVocabItem(word: VocabularyWord): GameVocabItem {
-  return {
-    id: word.id,
-    chinese: word.chinese,
-    pinyin: word.pinyin,
-    mongolian: word.mongolian,
-    hskLevel: word.hskLevel,
-    exampleChinese: word.exampleChinese ?? "",
-    exampleMongolian: word.exampleMongolian ?? "",
-  };
+function withVocabPriority(
+  context: Pick<GameLessonContext, "vocabulary" | "isPrelesson">
+): GameVocabItem[] {
+  return prioritizePrelessonVocab(context.vocabulary, context.isPrelesson);
 }
 
 export async function getLessonGameVocabulary(
   lessonId: string
 ): Promise<GameVocabItem[]> {
-  const lesson = await getPublicLessonById(lessonId);
-  if (!lesson) return [];
-  return lesson.vocabulary.map(toGameVocabItem);
+  const context = await getLessonGameContext(lessonId);
+  return context.vocabulary;
 }
 
-export async function getLessonGameContext(lessonId: string): Promise<{
-  vocabulary: GameVocabItem[];
-  courseId: string;
-}> {
+export async function getLessonGameContext(
+  lessonId: string
+): Promise<GameLessonContext> {
   const lesson = await getPublicLessonById(lessonId);
   if (!lesson) {
-    return { vocabulary: [], courseId: "" };
+    return emptyGameLessonContext();
   }
-  return {
-    vocabulary: lesson.vocabulary.map(toGameVocabItem),
-    courseId: lesson.courseId,
-  };
+  return buildGameLessonContext(lesson);
 }
 
 /** Demo-only preview items for /games hub UI — not for saved progress. */
@@ -96,9 +96,13 @@ export function getGameFallbackItems(): GameVocabItem[] {
 
 export function buildMatchGameItems(
   vocabulary: GameVocabItem[],
-  maxPairs = 6
+  maxPairs = 6,
+  context?: Pick<GameLessonContext, "isPrelesson">
 ): MatchPair[] {
-  const usable = vocabulary.filter((w) => w.chinese && w.mongolian);
+  const ordered = context
+    ? prioritizePrelessonVocab(vocabulary, context.isPrelesson)
+    : vocabulary;
+  const usable = ordered.filter((w) => w.chinese && w.mongolian);
   if (usable.length < 4) return [];
   return shuffleArray(usable.slice(0, maxPairs)).map((w) => ({
     id: w.id,
@@ -108,24 +112,39 @@ export function buildMatchGameItems(
   }));
 }
 
-function pickDistractors(
-  pool: string[],
-  correct: string,
-  count: number
+function pickVocabDistractors(
+  vocabulary: GameVocabItem[],
+  target: GameVocabItem,
+  count: number,
+  field: "mongolian" | "chinese"
 ): string[] {
+  return pickSameCategoryDistractors(vocabulary, target, count, field);
+}
+
+function pickDistractors(pool: string[], correct: string, count: number): string[] {
   const others = shuffleArray(pool.filter((v) => v !== correct));
   return others.slice(0, count);
 }
 
 export function buildTranslateGameItems(
   vocabulary: GameVocabItem[],
-  maxQuestions = 10
+  maxQuestions = 10,
+  context?: Pick<GameLessonContext, "isKorean" | "isPrelesson" | "vocabulary">
 ): TranslateQuestion[] {
+  if (context?.isKorean) {
+    return buildKoreanTranslateItems(
+      withVocabPriority({
+        vocabulary,
+        isPrelesson: context.isPrelesson,
+      }),
+      maxQuestions
+    );
+  }
+
   const usable = vocabulary.filter((w) => w.chinese && w.mongolian);
   if (usable.length < 4) return [];
-  const pool = usable.map((w) => w.mongolian);
   return shuffleArray(usable.slice(0, maxQuestions)).map((w) => {
-    const distractors = pickDistractors(pool, w.mongolian, 3);
+    const distractors = pickVocabDistractors(usable, w, 3, "mongolian");
     return {
       id: w.id,
       chinese: w.chinese,
@@ -138,8 +157,19 @@ export function buildTranslateGameItems(
 
 export function buildMissingWordItems(
   vocabulary: GameVocabItem[],
-  maxQuestions = 8
+  maxQuestions = 8,
+  context?: Pick<GameLessonContext, "isKorean" | "isPrelesson">
 ): MissingWordQuestion[] {
+  if (context?.isKorean) {
+    return buildKoreanMissingWordItems(
+      withVocabPriority({
+        vocabulary,
+        isPrelesson: context.isPrelesson,
+      }),
+      maxQuestions
+    );
+  }
+
   const usable = vocabulary.filter(
     (w) =>
       w.chinese &&
@@ -148,11 +178,9 @@ export function buildMissingWordItems(
   );
   if (usable.length === 0) return [];
 
-  const pool = usable.map((w) => w.chinese);
-
   return shuffleArray(usable.slice(0, maxQuestions)).map((w) => {
     const sentence = w.exampleChinese.replace(w.chinese, "＿＿＿");
-    const distractors = pickDistractors(pool, w.chinese, 3);
+    const distractors = pickVocabDistractors(usable, w, 3, "chinese");
     return {
       id: w.id,
       sentence,
@@ -170,8 +198,19 @@ export function splitChineseSentence(sentence: string): string[] {
 
 export function buildArrangeGameItems(
   vocabulary: GameVocabItem[],
-  maxQuestions = 6
+  maxQuestions = 6,
+  context?: Pick<GameLessonContext, "isKorean" | "isPrelesson">
 ): ArrangeQuestion[] {
+  if (context?.isKorean) {
+    return buildKoreanArrangeItems(
+      withVocabPriority({
+        vocabulary,
+        isPrelesson: context.isPrelesson,
+      }),
+      maxQuestions
+    );
+  }
+
   const usable = vocabulary.filter(
     (w) => w.exampleChinese && w.exampleChinese.length >= 4
   );
@@ -193,16 +232,26 @@ const STROKE_COMPONENTS = ["氵", "木", "口", "心", "女", "子", "人", "手
 
 export function buildStrokeGameItems(
   vocabulary: GameVocabItem[],
-  maxQuestions = 6
+  maxQuestions = 6,
+  context?: Pick<GameLessonContext, "isKorean" | "isPrelesson">
 ): StrokeQuestion[] {
+  if (context?.isKorean) {
+    return buildHangulConstructionItems(
+      withVocabPriority({
+        vocabulary,
+        isPrelesson: context.isPrelesson,
+      }),
+      maxQuestions
+    );
+  }
+
   const usable = vocabulary.filter((w) => w.chinese && w.chinese.length >= 1);
   if (usable.length === 0) return [];
 
   return shuffleArray(usable.slice(0, maxQuestions)).map((w) => {
     const char = [...w.chinese][0] ?? w.chinese;
     const correct =
-      STROKE_COMPONENTS.find((c) => char.includes(c)) ??
-      STROKE_COMPONENTS[0];
+      STROKE_COMPONENTS.find((c) => char.includes(c)) ?? STROKE_COMPONENTS[0];
     const distractors = pickDistractors(STROKE_COMPONENTS, correct, 3);
     return {
       id: w.id,
@@ -212,6 +261,7 @@ export function buildStrokeGameItems(
       prompt: `${char} ханзны бүтэц`,
       correctComponent: correct,
       options: shuffleArray([correct, ...distractors]),
+      mode: "hanzi",
     };
   });
 }

@@ -54,4 +54,6 @@ export type StrokeQuestion = {
   prompt: string;
   correctComponent: string;
   options: string[];
+  /** hangul = syllable construction; hanzi = Chinese stroke (default). */
+  mode?: "hangul" | "hanzi";
 };

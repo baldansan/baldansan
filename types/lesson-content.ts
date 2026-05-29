@@ -1,9 +1,13 @@
+import type { LessonPackageType } from "@/lib/admin/lesson-package-type";
+import type { LessonContentType } from "@/lib/lesson-content-type";
 import type {
   QuizQuestion,
   SubtitleExample,
   TimedSubtitle,
   VocabularyWord,
 } from "@/types/lesson";
+
+export type { LessonContentType } from "@/lib/lesson-content-type";
 
 export type LessonContentStatus = "available" | "locked";
 
@@ -27,6 +31,10 @@ export type LessonWorkflowQaStatus = "needs_review" | "passed" | "failed";
 export type LessonContent = {
   id: string;
   courseId: string;
+  /** textbook | video | exam — drives learner watch/detail UI. */
+  contentType?: LessonContentType;
+  /** prelesson | lesson | textbook | exam — metadata for watch UI inference. */
+  lessonType?: LessonPackageType | "textbook" | "exam";
   /** Content language tag from DB or import manifest (e.g. ko-MN, zh-MN). */
   language?: string;
   title: string;

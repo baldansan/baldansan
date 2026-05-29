@@ -3,6 +3,7 @@ import type { LessonContent } from "@/types/lesson-content";
 export const lesson1: LessonContent = {
   id: "1",
   courseId: "hsk5",
+  contentType: "video",
   title: "Lesson 1",
   chineseTitle: "爱的细节",
   subtitle:

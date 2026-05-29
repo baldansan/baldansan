@@ -1,5 +1,5 @@
 import { StrokeGameClient } from "@/components/games/stroke-game-client";
-import { getLessonGameVocabulary } from "@/lib/games/game-data";
+import { getLessonGameContext } from "@/lib/games/game-data";
 
 export const dynamic = "force-dynamic";
 
@@ -13,6 +13,14 @@ type PageProps = {
 
 export default async function StrokeGamePage({ searchParams }: PageProps) {
   const { lessonId = "1" } = await searchParams;
-  const vocabulary = await getLessonGameVocabulary(lessonId);
-  return <StrokeGameClient lessonId={lessonId} vocabulary={vocabulary} />;
+  const context = await getLessonGameContext(lessonId);
+  return (
+    <StrokeGameClient
+      lessonId={lessonId}
+      vocabulary={context.vocabulary}
+      isKorean={context.isKorean}
+      isPrelesson={context.isPrelesson}
+      labels={context.labels}
+    />
+  );
 }

@@ -12,7 +12,10 @@ import {
 } from "@/components/lesson/lesson-content-preview";
 import { LessonProgressCard } from "@/components/lesson-progress-card";
 import { GamePracticeLinks } from "@/components/games/game-practice-links";
+import { isPrelessonPackage } from "@/lib/admin/lesson-package-type";
 import { LEARNER_LESSON } from "@/lib/learner-labels";
+import { isVideoContent } from "@/lib/lesson-content-type";
+import { inferLessonLanguage } from "@/lib/language-track";
 import { TeacherAssignmentCta } from "@/components/teacher/teacher-assignment-cta";
 import { LessonUnavailable } from "@/components/lesson-unavailable";
 import { getAllLessonIdsSync, coursePath } from "@/lib/content";
@@ -58,6 +61,10 @@ export default async function LessonDetailPage({
 
   const { lesson, adminPreview } = access;
   const vocabularyPreview = lesson.vocabulary.slice(0, 3);
+  const showSubtitles =
+    isVideoContent(lesson) && lesson.subtitlePreview.length > 0;
+  const isKorean = inferLessonLanguage(lesson) === "ko";
+  const isPrelesson = isPrelessonPackage(lesson);
 
   return (
     <MobileAppShell activeTab="study" mainClassName="max-w-[390px] mx-auto w-full">
@@ -86,17 +93,19 @@ export default async function LessonDetailPage({
 
         <LessonDetailOverview lesson={lesson} adminPreview={adminPreview} />
 
-        <MobileCard padding="lg">
-          <h2 className="text-sm font-bold text-[var(--app-text)]">
-            Хадмал урьдчилсан
-          </h2>
-          <div className="mt-3">
-            <LessonSubtitlePreviewSection
-              lines={lesson.subtitlePreview}
-              courseId={lesson.courseId}
-            />
-          </div>
-        </MobileCard>
+        {showSubtitles ? (
+          <MobileCard padding="lg">
+            <h2 className="text-sm font-bold text-[var(--app-text)]">
+              Хадмал урьдчилсан
+            </h2>
+            <div className="mt-3">
+              <LessonSubtitlePreviewSection
+                lines={lesson.subtitlePreview}
+                courseId={lesson.courseId}
+              />
+            </div>
+          </MobileCard>
+        ) : null}
 
         <MobileCard padding="lg">
           <div className="flex items-start justify-between gap-2">
@@ -161,11 +170,17 @@ export default async function LessonDetailPage({
             Тоглоомоор давтах
           </h2>
           <p className="mt-1 text-sm text-[var(--app-muted)]">
-            Энэ хичээлийн үгээр холбох, орчуулах, дараалал тоглоом тогло.
+            {isKorean
+              ? "Энэ хичээлийн үгээр солонгос дасгал тоглоомууд."
+              : "Энэ хичээлийн үгээр холбох, орчуулах, дараалал тоглоом тогло."}
           </p>
           <GamePracticeLinks
             lessonId={lesson.id}
-            include={["match", "translate", "arrange"]}
+            isKorean={isKorean}
+            isPrelesson={isPrelesson}
+            include={
+              isKorean ? undefined : (["match", "translate", "arrange"] as const)
+            }
           />
         </MobileCard>
 

@@ -9,6 +9,7 @@ import { GameProgressPill } from "@/components/games/game-progress-pill";
 import { GameResultCard } from "@/components/games/game-result-card";
 import { GameShell } from "@/components/games/game-shell";
 import { buildTranslateGameItems } from "@/lib/games/game-data";
+import { resolveGameLabels, type GameLabels } from "@/lib/games/game-lesson-meta";
 import { saveGameResult } from "@/lib/games/game-progress";
 import { SpeakerButton } from "@/components/tts/speaker-button";
 import { resolveTtsLang } from "@/lib/tts/infer-lang";
@@ -18,12 +19,24 @@ type Props = {
   lessonId: string;
   courseId?: string;
   vocabulary: GameVocabItem[];
+  isKorean?: boolean;
+  isPrelesson?: boolean;
+  labels?: GameLabels;
 };
 
-export function TranslateGameClient({ lessonId, courseId, vocabulary }: Props) {
+export function TranslateGameClient({
+  lessonId,
+  courseId,
+  vocabulary,
+  isKorean = false,
+  isPrelesson = false,
+  labels: labelsProp,
+}: Props) {
+  const labels = labelsProp ?? resolveGameLabels(isKorean, isPrelesson);
+  const gameContext = { isKorean, isPrelesson, vocabulary };
   const questions = useMemo(
-    () => buildTranslateGameItems(vocabulary),
-    [vocabulary]
+    () => buildTranslateGameItems(vocabulary, 10, gameContext),
+    [vocabulary, isKorean, isPrelesson]
   );
   const [index, setIndex] = useState(0);
   const [selected, setSelected] = useState<string | null>(null);
@@ -85,7 +98,7 @@ export function TranslateGameClient({ lessonId, courseId, vocabulary }: Props) {
   if (questions.length === 0) {
     return (
       <GameShell>
-        <GameHeader title="Орчуулах" />
+        <GameHeader title={labels.translateTitle} />
         <GameEmptyState
           lessonId={lessonId}
           message="Энэ хичээлд тоглоом үүсгэхэд хангалттай үг алга."
@@ -97,7 +110,7 @@ export function TranslateGameClient({ lessonId, courseId, vocabulary }: Props) {
   if (finished) {
     return (
       <GameShell>
-        <GameHeader title="Орчуулах" score={score} />
+        <GameHeader title={labels.translateTitle} score={score} />
         <GameResultCard
           score={score}
           correct={correctCount}
@@ -114,12 +127,12 @@ export function TranslateGameClient({ lessonId, courseId, vocabulary }: Props) {
   return (
     <GameShell>
       <GameHeader
-        title="Орчуулах"
+        title={labels.translateTitle}
         progress={`${index + 1}/${total}`}
         score={score}
       />
       <span className="mb-3 inline-flex rounded-full bg-blue-100 px-3 py-1.5 text-xs font-bold text-blue-800 ring-1 ring-blue-200">
-        Хятад → Монгол
+        {labels.translateBadge}
       </span>
       <GameProgressPill current={index + 1} total={total} />
       {current ? (
@@ -136,7 +149,9 @@ export function TranslateGameClient({ lessonId, courseId, vocabulary }: Props) {
                 size="md"
               />
             </div>
-            <p className="mt-2 text-lg text-emerald-700">{current.pinyin}</p>
+            {current.pinyin ? (
+              <p className="mt-2 text-lg text-emerald-700">{current.pinyin}</p>
+            ) : null}
             <p className="mt-4 text-sm text-[var(--app-muted)]">
               Зөв хариултыг сонгоно уу
             </p>

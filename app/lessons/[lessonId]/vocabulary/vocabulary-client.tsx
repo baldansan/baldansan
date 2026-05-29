@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import { GamePracticeLinks } from "@/components/games/game-practice-links";
+import { isPrelessonPackage } from "@/lib/admin/lesson-package-type";
 import { EmptyState } from "@/components/empty-state";
 import { LocalProgressNote } from "@/components/local-progress-note";
 import { AdminPreviewBanner } from "@/components/admin-preview-banner";
@@ -16,6 +17,9 @@ import {
 import { SectionCard } from "@/components/ui/section-card";
 import { lessonPreviewPath } from "@/lib/lesson-publish";
 import { LEARNER_LESSON } from "@/lib/learner-labels";
+import { lettersDetailLinkLabel } from "@/lib/learner-letters-ui";
+import { getSelectedLanguage } from "@/lib/learner-onboarding";
+import { inferLessonLanguage } from "@/lib/language-track";
 import { enrichVocabularyWithDbIds } from "@/lib/supabase/content";
 import {
   getLearnedWordsSmart,
@@ -49,6 +53,13 @@ export function LessonVocabularyClient({
   const [filter, setFilter] = useState<VocabularyFilter>("all");
   const [learned, setLearned] = useState<Set<string>>(new Set());
   const [vocabulary, setVocabulary] = useState(lesson.vocabulary);
+  const [lang, setLang] = useState<ReturnType<typeof getSelectedLanguage>>(null);
+  const isKorean = inferLessonLanguage(lesson) === "ko";
+  const isPrelesson = isPrelessonPackage(lesson);
+
+  useEffect(() => {
+    setLang(getSelectedLanguage());
+  }, []);
 
   useEffect(() => {
     let cancelled = false;
@@ -183,7 +194,11 @@ export function LessonVocabularyClient({
           <GamePracticeLinks
             lessonId={lesson.id}
             compact
-            include={["match", "translate"]}
+            isKorean={isKorean}
+            isPrelesson={isPrelesson}
+            include={
+              isKorean ? undefined : (["match", "translate"] as const)
+            }
           />
         </div>
       </section>
@@ -350,7 +365,7 @@ export function LessonVocabularyClient({
                     href={`/kanji/${encodeURIComponent(word.id || word.chinese)}?lessonId=${lesson.id}`}
                     className="min-h-[36px] rounded-full bg-slate-100 px-3 py-1.5 text-xs font-semibold text-slate-700"
                   >
-                    Ханз дэлгэрэнгүй
+                    {lettersDetailLinkLabel(lang)}
                   </Link>
                 </div>
               </article>
@@ -378,8 +393,7 @@ export function LessonVocabularyClient({
       </CtaButtonRow>
 
       <LessonMobileStepBar
-        lessonId={lesson.id}
-        courseId={lesson.courseId}
+        lesson={lesson}
         current="vocabulary"
         adminPreview={adminPreview}
       />

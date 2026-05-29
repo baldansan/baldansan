@@ -2,10 +2,13 @@ import { hsk5Course } from "@/content/courses/hsk5";
 import {
   canonicalLessonId,
   lessonIdQueryCandidates,
+  lessonIdSlugCandidates,
   normalizeLessonIdForQuery,
   normalizeLessonRouteId,
 } from "@/lib/lesson-id";
 import { mapLessonReleaseFields } from "@/lib/supabase/lesson-release-map";
+import { normalizePublishStatus } from "@/lib/lesson-publish";
+import { enrichLessonContentMeta } from "@/lib/lesson-content-type";
 import { hasSupabaseConfig, supabase } from "@/lib/supabase/client";
 import type { SupabaseClient } from "@supabase/supabase-js";
 import type { Course } from "@/types/course";
@@ -27,6 +30,35 @@ const VIDEO_PLACEHOLDER = "Video lesson placeholder";
 
 const LESSON_ROW_SELECT =
   "id, course_id, title, chinese_title, subtitle, description, duration, vocabulary_count, quiz_count, status, order_index, video_url, thumbnail_url, audio_url, source_note, media_status, language, release_status, qa_status, approved_at, approved_by, release_notes, last_reviewed_at";
+
+/** Fallback when optional workflow / language columns are not migrated yet. */
+const LESSON_ROW_SELECT_CORE =
+  "id, course_id, title, chinese_title, subtitle, description, duration, vocabulary_count, quiz_count, status, order_index, video_url, thumbnail_url, audio_url, source_note, media_status";
+
+function isMissingColumnSelectError(message: string): boolean {
+  const lower = message.toLowerCase();
+  return (
+    lower.includes("column") &&
+    (lower.includes("does not exist") || lower.includes("could not find"))
+  );
+}
+
+async function selectLessonRowById(
+  client: SupabaseClient,
+  candidate: string | number,
+  select: string
+): Promise<{ data: DbLesson | null; error: { message: string } | null }> {
+  const { data, error } = await client
+    .from("lessons")
+    .select(select)
+    .eq("id", candidate)
+    .maybeSingle();
+
+  if (error) {
+    return { data: null, error: { message: error.message } };
+  }
+  return { data: data as DbLesson | null, error: null };
+}
 
 type DbLesson = {
   id: string | number;
@@ -120,13 +152,6 @@ function durationToWatchTime(duration: string | null): string {
   return `${minutes}:00`;
 }
 
-function normalizePublishStatus(status: string): LessonPublishStatus {
-  if (status === "available" || status === "archived" || status === "draft") {
-    return status;
-  }
-  return "draft";
-}
-
 function parseLessonStatus(status: string): LessonContentStatus {
   return normalizePublishStatus(status) === "available" ? "available" : "locked";
 }
@@ -153,7 +178,7 @@ function mapSubtitleLine(row: DbSubtitleLine) {
 function mapLessonRowToSummary(row: DbLesson): LessonContent {
   const id = canonicalLessonId(row.id);
   const language = row.language?.trim() || undefined;
-  return {
+  return enrichLessonContentMeta({
     id,
     courseId: row.course_id,
     language,
@@ -175,7 +200,7 @@ function mapLessonRowToSummary(row: DbLesson): LessonContent {
     vocabulary: [],
     quizQuestions: [],
     quizTypes: DEFAULT_QUIZ_TYPES,
-  };
+  });
 }
 
 function mapFullLesson(
@@ -191,7 +216,7 @@ function mapFullLesson(
     mongolian,
   }));
 
-  return {
+  return enrichLessonContentMeta({
     id: canonicalLessonId(row.id),
     courseId: row.course_id,
     language: row.language?.trim() || undefined,
@@ -233,7 +258,7 @@ function mapFullLesson(
       })
     ),
     quizTypes: DEFAULT_QUIZ_TYPES,
-  };
+  });
 }
 
 function mapDbCourseToCatalog(course: DbCourse, lessonCount: number): Course {
@@ -368,7 +393,20 @@ async function fetchSupabaseLessonsByCourse(
 
   const { data, error } = await query.order("order_index", { ascending: true });
 
-  if (error) throw error;
+  if (error) {
+    if (isMissingColumnSelectError(error.message)) {
+      const { data: fallbackData, error: fallbackError } = await client
+        .from("lessons")
+        .select(LESSON_ROW_SELECT_CORE)
+        .eq("course_id", courseId)
+        .order("order_index", { ascending: true });
+
+      if (fallbackError) throw fallbackError;
+      if (!fallbackData?.length) return [];
+      return (fallbackData as DbLesson[]).map(mapLessonRowToSummary);
+    }
+    throw error;
+  }
   if (!data?.length) return [];
 
   return (data as DbLesson[]).map(mapLessonRowToSummary);
@@ -386,16 +424,34 @@ export async function fetchLessonRowById(
 ): Promise<ResolvedLessonRow | null> {
   const normalizedId = normalizeLessonRouteId(lessonId);
   const candidates = lessonIdQueryCandidates(normalizedId);
+  let useCoreSelect = false;
 
   for (const candidate of candidates) {
-    const { data, error } = await client
-      .from("lessons")
-      .select(LESSON_ROW_SELECT)
-      .eq("id", candidate)
-      .maybeSingle();
+    let result = await selectLessonRowById(
+      client,
+      candidate,
+      useCoreSelect ? LESSON_ROW_SELECT_CORE : LESSON_ROW_SELECT
+    );
 
-    if (error) throw error;
-    if (data) {
+    if (
+      result.error &&
+      !useCoreSelect &&
+      isMissingColumnSelectError(result.error.message)
+    ) {
+      useCoreSelect = true;
+      result = await selectLessonRowById(client, candidate, LESSON_ROW_SELECT_CORE);
+    }
+
+    if (result.error) {
+      console.warn("[lesson-id] Lesson row query error", {
+        lessonId: normalizedId,
+        candidate,
+        message: result.error.message,
+      });
+      continue;
+    }
+
+    if (result.data) {
       const usedNumeric = typeof candidate === "number";
       if (usedNumeric) {
         console.warn("[lesson-id] Resolved lesson row using numeric id query", {
@@ -404,9 +460,49 @@ export async function fetchLessonRowById(
         });
       }
       return {
-        row: data as DbLesson,
-        canonicalId: canonicalLessonId((data as DbLesson).id),
+        row: result.data,
+        canonicalId: canonicalLessonId(result.data.id),
         usedNumeric,
+      };
+    }
+  }
+
+  for (const slug of lessonIdSlugCandidates(normalizedId)) {
+    const { data, error } = await client
+      .from("lessons")
+      .select(useCoreSelect ? LESSON_ROW_SELECT_CORE : LESSON_ROW_SELECT)
+      .ilike("id", slug)
+      .maybeSingle();
+
+    if (error) {
+      if (isMissingColumnSelectError(error.message) && !useCoreSelect) {
+        useCoreSelect = true;
+        const retry = await client
+          .from("lessons")
+          .select(LESSON_ROW_SELECT_CORE)
+          .ilike("id", slug)
+          .maybeSingle();
+        if (retry.data) {
+          const row = retry.data as unknown as DbLesson;
+          return {
+            row,
+            canonicalId: canonicalLessonId(row.id),
+            usedNumeric: false,
+          };
+        }
+      }
+      continue;
+    }
+    if (data) {
+      const row = data as unknown as DbLesson;
+      console.warn("[lesson-id] Resolved lesson row via ilike id match", {
+        lessonId: normalizedId,
+        matchedId: row.id,
+      });
+      return {
+        row,
+        canonicalId: canonicalLessonId(row.id),
+        usedNumeric: false,
       };
     }
   }
@@ -434,7 +530,15 @@ async function fetchChildRowsForLesson<T extends Record<string, unknown>>(
       .eq("lesson_id", candidate)
       .order("order_index", { ascending: true });
 
-    if (error) throw error;
+    if (error) {
+      console.warn("[lesson-id] Child row query error", {
+        table,
+        lessonId: normalizedId,
+        candidate,
+        message: error.message,
+      });
+      continue;
+    }
     if (data && data.length > 0) {
       if (typeof candidate === "number") {
         console.warn("[lesson-id] Loaded child rows using numeric lesson_id", {
@@ -445,6 +549,17 @@ async function fetchChildRowsForLesson<T extends Record<string, unknown>>(
       }
       return data as unknown as T[];
     }
+  }
+
+  for (const slug of lessonIdSlugCandidates(normalizedId)) {
+    const { data, error } = await client
+      .from(table)
+      .select(select)
+      .ilike("lesson_id", slug)
+      .order("order_index", { ascending: true });
+
+    if (error || !data?.length) continue;
+    return data as unknown as T[];
   }
 
   return [];

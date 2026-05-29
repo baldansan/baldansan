@@ -1,72 +1,108 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
 import { MobileCard } from "@/components/mobile/mobile-card";
 import { MobilePageHeader } from "@/components/mobile/mobile-page-header";
+import {
+  isPrelessonLessonId,
+  resolveGameLabels,
+  type GameLinkSlug,
+} from "@/lib/games/game-lesson-meta";
 import { getGameStats } from "@/lib/games/game-progress";
 import { resolveContinueLearning } from "@/lib/learner-progress";
+import { getSelectedLanguage } from "@/lib/learner-onboarding";
+import type { SelectedLanguage } from "@/lib/language-track";
 
 type Props = {
   lessonIds: string[];
   lessonTitles: Record<string, string>;
 };
 
-const GAMES = [
-  {
-    id: "match",
-    slug: "match",
-    title: "Холбох",
-    desc: "Хятад үг ↔ Орчуулга холбох тоглоом",
-    icon: "🔗",
-    color: "from-violet-400 to-violet-500",
-    badge: "Шинэ",
-  },
-  {
-    id: "translate",
-    slug: "translate",
-    title: "Орчуулах",
-    desc: "Зөв орчуулгыг сонгож сурах",
-    icon: "🌐",
-    color: "from-blue-400 to-blue-500",
-    badge: "Шинэ",
-  },
-  {
-    id: "missing-word",
-    slug: "missing-word",
-    title: "Дутуу үг",
-    desc: "Дутуу үгийг бөглөж өгүүлбэр гүйцээ",
-    icon: "✏️",
-    color: "from-amber-400 to-amber-500",
-    badge: "Шинэ",
-  },
-  {
-    id: "arrange",
-    slug: "arrange",
-    title: "Дараалал",
-    desc: "Ханзнуудыг зөв дараалалд оруулах",
-    icon: "🔢",
-    color: "from-emerald-400 to-emerald-500",
-    badge: "Шинэ",
-  },
-  {
-    id: "stroke",
-    slug: "stroke",
-    title: "Дутуу зураас",
-    desc: "Ханзны дутуу зураасыг сонго",
-    icon: "🖊️",
-    color: "from-rose-400 to-rose-500",
-    badge: "Шинэ",
-  },
-] as const;
+type GameCard = {
+  id: GameLinkSlug;
+  slug: GameLinkSlug;
+  title: string;
+  desc: string;
+  icon: string;
+  color: string;
+  badge: string;
+};
+
+function gamesForLanguage(
+  lang: SelectedLanguage | null,
+  isPrelesson: boolean
+): GameCard[] {
+  const isKorean = lang === "ko";
+  const labels = resolveGameLabels(isKorean, isPrelesson);
+
+  return [
+    {
+      id: "match",
+      slug: "match",
+      title: labels.matchTitle,
+      desc: labels.matchDesc,
+      icon: "🔗",
+      color: "from-violet-400 to-violet-500",
+      badge: "Шинэ",
+    },
+    {
+      id: "translate",
+      slug: "translate",
+      title: labels.translateTitle,
+      desc: labels.translateDesc,
+      icon: "🌐",
+      color: "from-blue-400 to-blue-500",
+      badge: "Шинэ",
+    },
+    {
+      id: "missing-word",
+      slug: "missing-word",
+      title: labels.missingWordTitle,
+      desc: labels.missingWordDesc,
+      icon: "✏️",
+      color: "from-amber-400 to-amber-500",
+      badge: "Шинэ",
+    },
+    {
+      id: "arrange",
+      slug: "arrange",
+      title: labels.arrangeTitle,
+      desc: labels.arrangeDesc,
+      icon: "🔢",
+      color: "from-emerald-400 to-emerald-500",
+      badge: "Шинэ",
+    },
+    {
+      id: "stroke",
+      slug: "stroke",
+      title: labels.strokeTitle,
+      desc: labels.strokeDesc,
+      icon: "🖊️",
+      color: "from-rose-400 to-rose-500",
+      badge: "Шинэ",
+    },
+  ];
+}
 
 export function GamesAppView({ lessonIds, lessonTitles }: Props) {
+  const [lang, setLang] = useState<SelectedLanguage | null>(null);
   const [played, setPlayed] = useState(0);
   const [bestScore, setBestScore] = useState(0);
   const [avgAccuracy, setAvgAccuracy] = useState(0);
   const [currentLessonId, setCurrentLessonId] = useState("1");
   const [lessonTitle, setLessonTitle] = useState<string | null>(null);
+
+  const isPrelesson = isPrelessonLessonId(currentLessonId);
+  const games = useMemo(
+    () => gamesForLanguage(lang, isPrelesson),
+    [lang, isPrelesson]
+  );
+
+  useEffect(() => {
+    setLang(getSelectedLanguage());
+  }, []);
 
   useEffect(() => {
     async function load() {
@@ -96,7 +132,7 @@ export function GamesAppView({ lessonIds, lessonTitles }: Props) {
         {[
           { label: "Тоглосон", value: played },
           { label: "Дээд оноо", value: bestScore },
-          { label: "Дундаж нарийвчлал", value: `${avgAccuracy}%` },
+          { label: "Нарийвчлал", value: `${avgAccuracy}%` },
         ].map((stat) => (
           <div key={stat.label} className="app-game-stat">
             <p className="app-game-stat-value">{stat.value}</p>
@@ -122,7 +158,7 @@ export function GamesAppView({ lessonIds, lessonTitles }: Props) {
           href={marathonHref}
           className="mt-3 inline-flex min-h-[44px] items-center rounded-full bg-white px-5 py-2.5 text-sm font-semibold text-purple-700"
         >
-          Холимог марафон тоглох
+          Холимог марафон
         </Link>
       </div>
 
@@ -130,7 +166,7 @@ export function GamesAppView({ lessonIds, lessonTitles }: Props) {
         Дасгал тоглоомууд
       </h2>
       <div className="grid grid-cols-2 gap-3">
-        {GAMES.map((game) => (
+        {games.map((game) => (
           <Link
             key={game.id}
             href={`/games/${game.slug}?lessonId=${currentLessonId}`}

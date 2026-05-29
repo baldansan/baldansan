@@ -7,6 +7,7 @@ import { GameHeader } from "@/components/games/game-header";
 import { GameResultCard } from "@/components/games/game-result-card";
 import { GameShell } from "@/components/games/game-shell";
 import { buildMatchGameItems, shuffleArray } from "@/lib/games/game-data";
+import { resolveGameLabels, type GameLabels } from "@/lib/games/game-lesson-meta";
 import { saveGameResult } from "@/lib/games/game-progress";
 import { SpeakerButton } from "@/components/tts/speaker-button";
 import { resolveTtsLang } from "@/lib/tts/infer-lang";
@@ -16,10 +17,25 @@ type Props = {
   lessonId: string;
   courseId?: string;
   vocabulary: GameVocabItem[];
+  isKorean?: boolean;
+  isPrelesson?: boolean;
+  labels?: GameLabels;
 };
 
-export function MatchGameClient({ lessonId, courseId, vocabulary }: Props) {
-  const pairs = useMemo(() => buildMatchGameItems(vocabulary), [vocabulary]);
+export function MatchGameClient({
+  lessonId,
+  courseId,
+  vocabulary,
+  isKorean = false,
+  isPrelesson = false,
+  labels: labelsProp,
+}: Props) {
+  const labels = labelsProp ?? resolveGameLabels(isKorean, isPrelesson);
+  const gameContext = { isPrelesson };
+  const pairs = useMemo(
+    () => buildMatchGameItems(vocabulary, 6, gameContext),
+    [vocabulary, isPrelesson]
+  );
   const leftItems = useMemo(
     () => shuffleArray(pairs.map((p) => ({ id: p.id, label: p.mongolian }))),
     [pairs]
@@ -110,7 +126,7 @@ export function MatchGameClient({ lessonId, courseId, vocabulary }: Props) {
   if (pairs.length < 4) {
     return (
       <GameShell>
-        <GameHeader title="Холбох" />
+        <GameHeader title={labels.matchTitle} />
         <GameEmptyState
           lessonId={lessonId}
           message="Энэ хичээлд тоглоом үүсгэхэд хангалттай үг алга. Дор хаяж 4 үг шаардлагатай."
@@ -122,7 +138,7 @@ export function MatchGameClient({ lessonId, courseId, vocabulary }: Props) {
   if (finished) {
     return (
       <GameShell>
-        <GameHeader title="Холбох" score={score} />
+        <GameHeader title={labels.matchTitle} score={score} />
         <GameResultCard
           score={score}
           correct={total}
@@ -139,7 +155,7 @@ export function MatchGameClient({ lessonId, courseId, vocabulary }: Props) {
   return (
     <GameShell>
       <GameHeader
-        title="Холбох"
+        title={labels.matchTitle}
         progress={`${matchedCount}/${total}`}
         score={score}
       />

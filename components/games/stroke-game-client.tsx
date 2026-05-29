@@ -9,18 +9,30 @@ import { GameProgressPill } from "@/components/games/game-progress-pill";
 import { GameResultCard } from "@/components/games/game-result-card";
 import { GameShell } from "@/components/games/game-shell";
 import { buildStrokeGameItems } from "@/lib/games/game-data";
+import { resolveGameLabels, type GameLabels } from "@/lib/games/game-lesson-meta";
 import { saveGameResult } from "@/lib/games/game-progress";
 import type { GameVocabItem } from "@/lib/games/game-types";
 
 type Props = {
   lessonId: string;
   vocabulary: GameVocabItem[];
+  isKorean?: boolean;
+  isPrelesson?: boolean;
+  labels?: GameLabels;
 };
 
-export function StrokeGameClient({ lessonId, vocabulary }: Props) {
+export function StrokeGameClient({
+  lessonId,
+  vocabulary,
+  isKorean = false,
+  isPrelesson = false,
+  labels: labelsProp,
+}: Props) {
+  const labels = labelsProp ?? resolveGameLabels(isKorean, isPrelesson);
+  const gameContext = { isKorean, isPrelesson };
   const questions = useMemo(
-    () => buildStrokeGameItems(vocabulary),
-    [vocabulary]
+    () => buildStrokeGameItems(vocabulary, 6, gameContext),
+    [vocabulary, isKorean, isPrelesson]
   );
   const [index, setIndex] = useState(0);
   const [selected, setSelected] = useState<string | null>(null);
@@ -31,6 +43,7 @@ export function StrokeGameClient({ lessonId, vocabulary }: Props) {
 
   const current = questions[index];
   const total = questions.length;
+  const isHangul = current?.mode === "hangul";
 
   function finishGame(finalCorrect: number) {
     const finalScore = finalCorrect * 10;
@@ -78,10 +91,10 @@ export function StrokeGameClient({ lessonId, vocabulary }: Props) {
   if (questions.length === 0) {
     return (
       <GameShell>
-        <GameHeader title="Дутуу зураас" />
+        <GameHeader title={labels.strokeTitle} />
         <GameEmptyState
           lessonId={lessonId}
-          message="Энэ хичээлд ханзны бүтэц тоглоом үүсгэхэд хангалттай үг алга."
+          message={labels.strokeEmptyMessage}
         />
       </GameShell>
     );
@@ -90,7 +103,7 @@ export function StrokeGameClient({ lessonId, vocabulary }: Props) {
   if (finished) {
     return (
       <GameShell>
-        <GameHeader title="Дутуу зураас" score={score} />
+        <GameHeader title={labels.strokeTitle} score={score} />
         <GameResultCard
           score={score}
           correct={correctCount}
@@ -107,30 +120,44 @@ export function StrokeGameClient({ lessonId, vocabulary }: Props) {
   return (
     <GameShell>
       <GameHeader
-        title="Дутуу зураас"
+        title={labels.strokeTitle}
         progress={`${index + 1}/${total}`}
         score={score}
       />
       <p className="mb-3 rounded-xl bg-amber-50 px-3 py-2 text-center text-[11px] leading-snug text-amber-800 ring-1 ring-amber-200">
-        Дутуу зураас / ханзны бүтэц тоглоом — эхний demo хувилбар
+        {labels.strokeHint}
       </p>
       <GameProgressPill current={index + 1} total={total} />
       {current ? (
         <>
           <GameCard className="mb-4 text-center">
-            <p className="text-5xl font-bold text-[var(--app-text)]">
-              {current.chinese}
-            </p>
-            <p className="mt-2 text-lg text-emerald-700">{current.pinyin}</p>
-            <p className="mt-1 text-sm text-[var(--app-muted)]">
-              {current.mongolian}
-            </p>
-            <p className="mt-4 text-base font-semibold text-purple-700">
-              ? + бүрэлдэхүүн = {current.chinese}
-            </p>
-            <p className="mt-1 text-xs text-[var(--app-muted)]">
-              {current.prompt}
-            </p>
+            {isHangul ? (
+              <>
+                <p className="text-3xl font-bold tracking-wide text-[var(--app-text)]">
+                  {current.prompt}
+                </p>
+                <p className="mt-3 text-lg text-purple-700">{current.chinese}</p>
+                <p className="mt-1 text-sm text-[var(--app-muted)]">
+                  {current.mongolian}
+                </p>
+              </>
+            ) : (
+              <>
+                <p className="text-5xl font-bold text-[var(--app-text)]">
+                  {current.chinese}
+                </p>
+                <p className="mt-2 text-lg text-emerald-700">{current.pinyin}</p>
+                <p className="mt-1 text-sm text-[var(--app-muted)]">
+                  {current.mongolian}
+                </p>
+                <p className="mt-4 text-base font-semibold text-purple-700">
+                  ? + бүрэлдэхүүн = {current.chinese}
+                </p>
+                <p className="mt-1 text-xs text-[var(--app-muted)]">
+                  {current.prompt}
+                </p>
+              </>
+            )}
           </GameCard>
           <div className="grid grid-cols-2 gap-2">
             {current.options.map((option) => {
