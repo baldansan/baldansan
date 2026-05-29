@@ -138,13 +138,19 @@ export function LessonWatchClient({ lesson, adminPreview = false }: Props) {
 
         <section className="flex flex-col gap-3 sm:flex-row">
           <Link
+            href={lessonPreviewPath(lesson.id, { adminPreview })}
+            className="flex-1 rounded-full border border-slate-200 bg-white px-5 py-3 text-center text-sm font-semibold text-slate-700 transition-colors hover:border-emerald-200"
+          >
+            Back to lesson detail
+          </Link>
+          <Link
             href={lessonPreviewPath(lesson.id, {
               adminPreview,
               subpath: "vocabulary",
             })}
             className="flex-1 rounded-full border border-emerald-200 bg-emerald-50 px-5 py-3 text-center text-sm font-semibold text-emerald-700 transition-colors hover:bg-emerald-100"
           >
-            Vocabulary
+            Next: Vocabulary
           </Link>
           <Link
             href={lessonPreviewPath(lesson.id, {

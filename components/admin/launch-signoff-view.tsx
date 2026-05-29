@@ -3,53 +3,56 @@
 import Link from "next/link";
 import { useCallback, useEffect, useState } from "react";
 import {
-  LAUNCH_SECTION_LABELS,
   PRODUCTION_URL,
+  defaultSignoffDecision,
+  defaultSignoffMeta,
   productionUrl,
-  type LaunchCardState,
-  type LaunchCheckItem,
-  type LaunchCheckStatus,
-  type LaunchDecisionState,
-  type LaunchDecisionValue,
-  type LaunchSectionId,
-  defaultDecision,
-} from "@/lib/admin/launch-candidate-data";
+  type LaunchSignoffState,
+  type SignoffCardState,
+  type SignoffCheckItem,
+  type SignoffCheckStatus,
+  type SignoffDecisionState,
+  type SignoffDecisionValue,
+  type SignoffMetaState,
+} from "@/lib/admin/launch-signoff-data";
 import {
-  initLaunchCandidateData,
-  persistLaunchCandidateData,
-  resetLaunchCandidateStorage,
-} from "@/lib/admin/launch-candidate-storage";
-import { summarizeLaunchCandidate } from "@/lib/admin/launch-candidate-report";
-import { LaunchBlockersList, LaunchChecklist } from "@/components/admin/launch-checklist";
-import { LaunchDecisionCard } from "@/components/admin/launch-decision-card";
-import { LaunchReportExportCard } from "@/components/admin/launch-report-export-card";
-import { LaunchStatusCard } from "@/components/admin/launch-status-card";
+  initLaunchSignoffData,
+  persistLaunchSignoffData,
+  resetLaunchSignoffStorage,
+} from "@/lib/admin/launch-signoff-storage";
+import { summarizeLaunchSignoff } from "@/lib/admin/launch-signoff-report";
+import {
+  SignoffBlockersList,
+  SignoffChecklist,
+} from "@/components/admin/signoff-checklist";
+import { SignoffDecisionCard } from "@/components/admin/signoff-decision-card";
+import { SignoffReportExportCard } from "@/components/admin/signoff-report-export-card";
+import { SignoffSummaryCards } from "@/components/admin/signoff-summary-cards";
 
-const SECTION_ORDER: LaunchSectionId[] = [
-  "public",
-  "admin",
-  "auth_progress",
-  "supabase_media",
-];
-
-export function LaunchCandidateView() {
-  const [items, setItems] = useState<LaunchCheckItem[]>([]);
-  const [cards, setCards] = useState<LaunchCardState[]>([]);
-  const [decision, setDecision] = useState<LaunchDecisionState>(defaultDecision());
+export function LaunchSignoffView() {
+  const [items, setItems] = useState<SignoffCheckItem[]>([]);
+  const [cards, setCards] = useState<SignoffCardState[]>([]);
+  const [decision, setDecision] = useState<SignoffDecisionState>(
+    defaultSignoffDecision()
+  );
+  const [meta, setMeta] = useState<SignoffMetaState>(defaultSignoffMeta());
   const [savedAt, setSavedAt] = useState<string | null>(null);
   const [hydrated, setHydrated] = useState(false);
 
   useEffect(() => {
-    const data = initLaunchCandidateData();
+    const data = initLaunchSignoffData();
     setItems(data.items);
     setCards(data.cards);
     setDecision(data.decision);
+    setMeta(data.meta);
     setSavedAt(data.savedAt);
     setHydrated(true);
   }, []);
 
+  const state: LaunchSignoffState = { items, cards, decision, meta };
+
   const handleItemUpdate = useCallback(
-    (id: string, patch: Partial<Pick<LaunchCheckItem, "status" | "notes">>) => {
+    (id: string, patch: Partial<Pick<SignoffCheckItem, "status" | "notes">>) => {
       setItems((prev) =>
         prev.map((item) =>
           item.id === id
@@ -61,7 +64,7 @@ export function LaunchCandidateView() {
     []
   );
 
-  const handleCardUpdate = useCallback((id: string, status: LaunchCheckStatus) => {
+  const handleCardUpdate = useCallback((id: string, status: SignoffCheckStatus) => {
     setCards((prev) =>
       prev.map((card) =>
         card.id === id
@@ -72,46 +75,53 @@ export function LaunchCandidateView() {
   }, []);
 
   function handleSave() {
-    const stored = persistLaunchCandidateData(items, cards, decision);
+    const stored = persistLaunchSignoffData(items, cards, decision, meta);
     setSavedAt(stored.savedAt ?? null);
   }
 
-  function handleResetAll() {
-    resetLaunchCandidateStorage();
-    const fresh = initLaunchCandidateData();
+  function handleReset() {
+    resetLaunchSignoffStorage();
+    const fresh = initLaunchSignoffData();
     setItems(fresh.items);
     setCards(fresh.cards);
     setDecision(fresh.decision);
+    setMeta(fresh.meta);
     setSavedAt(null);
   }
 
-  function handleSetDecision(value: LaunchDecisionValue) {
+  function handleSetDecision(value: SignoffDecisionValue) {
     const next = { value, updatedAt: new Date().toISOString() };
     setDecision(next);
-    persistLaunchCandidateData(items, cards, next);
+    persistLaunchSignoffData(items, cards, next, meta);
     setSavedAt(new Date().toISOString());
   }
 
   function handleResetDecision() {
-    const next = defaultDecision();
+    const next = defaultSignoffDecision();
     setDecision(next);
-    persistLaunchCandidateData(items, cards, next);
+    persistLaunchSignoffData(items, cards, next, meta);
+  }
+
+  function handleMetaChange(patch: Partial<SignoffMetaState>) {
+    setMeta((prev) => ({ ...prev, ...patch }));
   }
 
   if (!hydrated) {
     return (
       <p className="rounded-2xl bg-slate-50 px-6 py-8 text-center text-sm text-slate-600 ring-1 ring-slate-200">
-        Launch candidate ачааллаж байна…
+        Launch sign-off ачааллаж байна…
       </p>
     );
   }
 
-  const summary = summarizeLaunchCandidate(items, cards, decision);
+  const summary = summarizeLaunchSignoff(state);
 
   return (
     <div className="flex flex-col gap-6">
       <section className="rounded-2xl bg-emerald-50/60 p-5 ring-1 ring-emerald-100 sm:p-6">
-        <h2 className="text-lg font-semibold text-slate-900">Production summary</h2>
+        <h2 className="text-lg font-semibold text-slate-900">
+          Production information
+        </h2>
         <p className="mt-2 font-mono text-sm text-emerald-800">{PRODUCTION_URL}</p>
         <p className="mt-2 text-sm text-slate-600">
           {summary.pass} pass · {summary.warning} warn · {summary.fail} fail ·{" "}
@@ -145,6 +155,12 @@ export function LaunchCandidateView() {
             Security audit
           </Link>
           <Link
+            href="/admin/launch-candidate"
+            className="inline-flex rounded-full border border-emerald-200 bg-white px-4 py-2 text-sm font-semibold text-emerald-800 hover:bg-emerald-50"
+          >
+            Launch candidate
+          </Link>
+          <Link
             href="/admin/final-audit"
             className="inline-flex rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:border-emerald-200"
           >
@@ -153,63 +169,30 @@ export function LaunchCandidateView() {
         </div>
       </section>
 
-      <LaunchStatusCard
-        cards={cards}
-        onUpdate={handleCardUpdate}
-        blockerCount={summary.fail}
-      />
-
-      {SECTION_ORDER.map((section) => (
-        <LaunchChecklist
-          key={section}
-          section={section}
-          items={items}
-          onUpdate={handleItemUpdate}
-        />
-      ))}
-
-      <LaunchBlockersList items={items} />
-
-      <LaunchDecisionCard
+      <SignoffSummaryCards cards={cards} onUpdate={handleCardUpdate} />
+      <SignoffChecklist items={items} onUpdate={handleItemUpdate} />
+      <SignoffBlockersList items={items} decision={decision.value} />
+      <SignoffDecisionCard
         decision={decision}
+        meta={meta}
         onSetDecision={handleSetDecision}
-        onReset={handleResetDecision}
+        onMetaChange={handleMetaChange}
+        onResetDecision={handleResetDecision}
       />
-
-      <LaunchReportExportCard
-        items={items}
-        cards={cards}
-        decision={decision}
+      <SignoffReportExportCard
+        state={state}
         onSave={handleSave}
-        onResetAll={handleResetAll}
+        onReset={handleReset}
         savedAt={savedAt}
       />
 
-      <section className="rounded-2xl bg-emerald-50/80 p-5 ring-1 ring-emerald-200 sm:p-6">
-        <h2 className="text-base font-semibold text-emerald-900">
-          Proceed to Launch Sign-off
-        </h2>
-        <p className="mt-2 text-sm text-emerald-800">
-          After smoke test and launch candidate decision, complete final go/no-go
-          sign-off with version, owner, and export.
-        </p>
-        <Link
-          href="/admin/launch-signoff"
-          className="mt-4 inline-flex rounded-full bg-emerald-600 px-5 py-2.5 text-sm font-semibold text-white hover:bg-emerald-700"
-        >
-          Proceed to Launch Sign-off →
-        </Link>
-      </section>
-
       <section className="rounded-2xl bg-slate-50 p-5 ring-1 ring-slate-200">
-        <h2 className="text-base font-semibold text-slate-900">Go-live docs</h2>
+        <h2 className="text-base font-semibold text-slate-900">Sign-off docs</h2>
         <p className="mt-2 text-sm text-slate-600">
-          GO_LIVE_NOTES.md · ROLLBACK_PLAN.md · POST_LAUNCH_MONITORING.md ·
-          PHASE_6_LAUNCH_SUMMARY.md
+          LAUNCH_SIGNOFF.md · GO_LIVE_NOTES.md · ROLLBACK_PLAN.md ·
+          POST_LAUNCH_MONITORING.md
         </p>
-        <p className="mt-2 text-xs text-slate-500">
-          Sections: {Object.values(LAUNCH_SECTION_LABELS).join(" · ")}
-        </p>
+        <p className="mt-3 text-sm text-emerald-800">{summary.recommendedNextAction}</p>
       </section>
     </div>
   );

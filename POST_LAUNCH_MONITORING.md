@@ -56,14 +56,41 @@ Routine checks after go-live. **Production URL:** https://baldansan.vercel.app
 
 | Day | Focus |
 |-----|--------|
-| **Day 0** (launch) | Full launch candidate checklist + export report |
-| **Day 1** | Auth + lesson flow + Vercel/Supabase logs |
+| **Day 0** (launch) | Full launch candidate + sign-off checklists; export both reports |
+| **Day 1** | Auth + lesson flow + Vercel/Supabase logs; confirm `/admin/launch-signoff` go_live still valid |
 | **Day 2** | Progress/quiz saves; guest fallback |
 | **Day 3** | Admin CMS edit + activity log |
 | **Day 4** | Re-run security audit if any deploy |
 | **Day 5** | Production QA sample (public + admin routes) |
 | **Day 6** | Review monitoring notes; fix warnings |
-| **Day 7** | Launch retrospective; mark Phase 6 complete |
+| **Day 7** | Launch retrospective; Phase 6 complete → Phase 7 planning |
+
+### Day 0 checklist (launch day)
+
+- [ ] `/deployment-check` — no fail
+- [ ] `/admin/system-check` — no fail
+- [ ] `/admin/launch-signoff` — decision **go_live**, report exported
+- [ ] `/login` and one full lesson flow on production
+- [ ] Vercel + Supabase logs reviewed
+
+### Day 1 checklist
+
+- [ ] Auth login/logout on production
+- [ ] Quiz attempt save (if test user available)
+- [ ] Vercel deployment logs — no 5xx spike
+- [ ] Supabase Auth logs — no redirect errors
+
+### Day 3 checklist
+
+- [ ] Admin lesson edit + activity log row
+- [ ] Storage upload spot-check
+- [ ] Task center loads
+
+### Day 7 checklist
+
+- [ ] Re-run `/admin/production-qa` sample
+- [ ] Export updated launch sign-off if status changed
+- [ ] Document lessons learned for Phase 7
 
 ---
 
@@ -73,3 +100,4 @@ Routine checks after go-live. **Production URL:** https://baldansan.vercel.app
 - [ROLLBACK_PLAN.md](./ROLLBACK_PLAN.md)
 - [PHASE_6_LAUNCH_SUMMARY.md](./PHASE_6_LAUNCH_SUMMARY.md)
 - `/admin/launch-candidate`
+- `/admin/launch-signoff`

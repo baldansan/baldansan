@@ -392,6 +392,12 @@ export function AdminDashboard({
             Launch Candidate
           </Link>
           <Link
+            href="/admin/launch-signoff"
+            className="inline-flex rounded-full bg-emerald-600 px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-emerald-700"
+          >
+            Launch Sign-off
+          </Link>
+          <Link
             href="/admin/final-audit"
             className="inline-flex rounded-full border border-emerald-200 bg-emerald-50 px-5 py-2.5 text-sm font-semibold text-emerald-800 transition-colors hover:bg-emerald-100"
           >
@@ -417,6 +423,11 @@ export function AdminDashboard({
         description="Existing workflows — unchanged."
       >
         <div className="grid gap-4 sm:grid-cols-2">
+          <AdminCard
+            title="Production Launch Sign-off"
+            description="Final go/no-go decision before launch — version, owner, checklist, and export."
+            href="/admin/launch-signoff"
+          />
           <AdminCard
             title="Launch Candidate"
             description="Run before go-live and after every production deploy — final smoke test, decision, and export."

@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { ReviewContinueCard } from "@/components/review-continue-card";
 import { useEffect, useMemo, useState } from "react";
 import { AppHeader } from "@/components/app-header";
 import { BottomNav } from "@/components/bottom-nav";
@@ -27,6 +28,7 @@ export type LessonVocabSnapshot = {
 
 type Props = {
   lessons: LessonVocabSnapshot[];
+  lessonIds: string[];
 };
 
 function formatQuizDate(iso: string): string {
@@ -54,7 +56,7 @@ function resolveWord(
   );
 }
 
-export function ReviewDashboard({ lessons }: Props) {
+export function ReviewDashboard({ lessons, lessonIds }: Props) {
   const [ready, setReady] = useState(false);
   const [learnedEntries, setLearnedEntries] = useState<LearnedWordEntry[]>([]);
   const [quizResults, setQuizResults] = useState<QuizResultEntry[]>([]);
@@ -158,6 +160,8 @@ export function ReviewDashboard({ lessons }: Props) {
           ) : null}
         </section>
 
+        <ReviewContinueCard lessonIds={lessonIds} />
+
         <section className="grid grid-cols-2 gap-3 sm:grid-cols-2">
           <div className="rounded-2xl bg-white p-4 text-center shadow-sm ring-1 ring-emerald-200">
             <p className="text-2xl font-bold text-emerald-700">
@@ -239,14 +243,14 @@ export function ReviewDashboard({ lessons }: Props) {
 
           {learnedEntries.length === 0 ? (
             <EmptyState
-              title="Одоогоор давтах үг алга."
-              description="Vocabulary хэсэгт үгээ Mark as learned дарж энд харагдуулна."
+              title="Одоогоор review хийх үг алга."
+              description="Vocabulary page дээрээс үг нэмээрэй."
               action={
                 <Link
-                  href={lessonVocabularyPath("1")}
+                  href="/courses/hsk5"
                   className="rounded-full bg-emerald-500 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-emerald-600"
                 >
-                  Go to vocabulary
+                  Start learning
                 </Link>
               }
             />

@@ -147,6 +147,38 @@ export function ProfileDashboard() {
           />
         ) : null}
 
+        {!hasProgress ? (
+          <section className="rounded-2xl bg-emerald-50/70 p-5 ring-1 ring-emerald-200">
+            <h2 className="font-semibold text-emerald-900">Эхлэх заавар</h2>
+            <p className="mt-2 text-sm text-emerald-800">
+              App хэрхэн ажилладагийг onboarding-оос үзээд HSK5-аар эхлээрэй.
+            </p>
+            <div className="mt-3 flex flex-wrap gap-2">
+              <Link
+                href="/onboarding"
+                className="rounded-full bg-emerald-600 px-5 py-2 text-sm font-semibold text-white hover:bg-emerald-700"
+              >
+                Onboarding
+              </Link>
+              <Link
+                href="/courses/hsk5"
+                className="rounded-full border border-emerald-300 bg-white px-5 py-2 text-sm font-semibold text-emerald-800"
+              >
+                Start HSK5
+              </Link>
+            </div>
+          </section>
+        ) : null}
+
+        {authUser ? (
+          <Link
+            href="/dashboard"
+            className="inline-flex w-fit rounded-full border border-emerald-200 bg-emerald-50 px-5 py-2.5 text-sm font-semibold text-emerald-800 hover:bg-emerald-100"
+          >
+            Open dashboard →
+          </Link>
+        ) : null}
+
         <section className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:p-6">
           {authUser ? (
             <>

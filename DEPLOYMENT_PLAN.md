@@ -10,6 +10,7 @@ Phase 6: production readiness. **Do not deploy until checklists are complete.**
 | 4 | Production route testing | ✅ Completed |
 | 5 | Security / RLS final audit | ✅ Completed |
 | 6 | Launch candidate | ✅ Completed |
+| 7 | Production launch sign-off | ✅ Completed |
 
 ---
 
@@ -131,6 +132,14 @@ Run after every production deploy alongside `/deployment-check` and `/admin/syst
 3. **Storage:** localStorage `buunduu-launch-candidate`
 
 Run before go-live and after every production deploy.
+
+### Phase 6 Step 7 — Production launch sign-off (completed)
+
+1. **Route:** `/admin/launch-signoff` — go/no-go decision, version, owner, checklist, export
+2. **Docs:** [LAUNCH_SIGNOFF.md](./LAUNCH_SIGNOFF.md)
+3. **Storage:** localStorage `buunduu-launch-signoff`
+
+**Phase 6 complete.** Next: Phase 7 — product polish and onboarding.
 
 ---
 

@@ -4,6 +4,8 @@ Emergency and planned rollback procedures for production.
 
 **Production URL:** https://baldansan.vercel.app
 
+**Before launch sign-off:** Review this plan on `/admin/launch-signoff` and confirm the checklist row “Rollback plan reviewed” is marked pass.
+
 ---
 
 ## Vercel rollback (fastest)

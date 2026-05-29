@@ -372,11 +372,10 @@ Phased roadmap from MVP demo to production product.
 
 **Goal:** Deploy Buunduu Surtsgaay safely to production (Vercel + Supabase) with RLS, auth, storage, and admin CMS verified.
 
-**Phase 6 Step 6 — Completed:** Launch candidate final smoke test and go-live notes.
+**Phase 6 Step 7 — Completed:** Production launch sign-off workflow.
 
-- `/admin/launch-candidate` — final smoke test, go-live decision, export
-- [GO_LIVE_NOTES.md](./GO_LIVE_NOTES.md), [ROLLBACK_PLAN.md](./ROLLBACK_PLAN.md), [POST_LAUNCH_MONITORING.md](./POST_LAUNCH_MONITORING.md)
-- [PHASE_6_LAUNCH_SUMMARY.md](./PHASE_6_LAUNCH_SUMMARY.md)
+- `/admin/launch-signoff` — go/no-go decision, version, owner, export
+- [LAUNCH_SIGNOFF.md](./LAUNCH_SIGNOFF.md)
 
 **Phase 6 roadmap:**
 
@@ -388,14 +387,37 @@ Phased roadmap from MVP demo to production product.
 | 4 | Production route testing | ✅ Completed |
 | 5 | Security / RLS final audit | ✅ Completed |
 | 6 | Launch candidate | ✅ Completed |
+| 7 | Production launch sign-off | ✅ Completed |
 
-**Phase 6 complete.** **Next:** Production launch sign-off, then Phase 7 — Product polish / payment.
+**Phase 6 complete.** **Next:** Phase 7 Step 2 — Learner dashboard enhancements.
 
 **Exit criteria:** App deployed to Vercel, Supabase production configured, all checklists green, public + admin routes verified.
 
 ---
 
-## Phase 7: Payment / membership
+## Phase 7: Product polish and onboarding
+
+**Phase 7 Step 1 — Completed:** User-facing product polish and onboarding.
+
+- Landing page upgrade, auth-aware nav, footer
+- `/dashboard`, `/onboarding`, `/help`, `/feedback`, `/pricing`
+- HSK5 continue learning + extended progress
+- Lesson flow polish (detail, watch, vocabulary, quiz, review, profile)
+- [USER_ONBOARDING.md](./USER_ONBOARDING.md), [PRODUCT_POLISH_PHASE_7.md](./PRODUCT_POLISH_PHASE_7.md)
+
+| Step | Focus | Status |
+|------|--------|--------|
+| 1 | User-facing product polish and onboarding | ✅ Completed |
+| 2 | Learner dashboard enhancements | Pending |
+| 3 | Payment/pricing research | Pending |
+| 4 | School/B2B onboarding | Pending |
+| 5 | Mobile PWA polish | Pending |
+
+**Next:** Phase 7 Step 2 — Learner dashboard enhancements.
+
+---
+
+## Phase 7 (later): Payment / membership
 
 **Goal:** Monetize courses and gate premium content.
 

@@ -12,9 +12,25 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const siteUrl = "https://baldansan.vercel.app";
+
 export const metadata: Metadata = {
-  title: "Бөөндөө Сурцгаая",
-  description: "Buunduu Surtsgaay — Хятад хэлийг богино бичлэгээр сур",
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: "Бөөндөө Сурцгаая",
+    template: "%s | Бөөндөө Сурцгаая",
+  },
+  description:
+    "Богино бичлэг, subtitle, vocabulary, quiz ашиглан Хятад хэл сурах app.",
+  openGraph: {
+    title: "Бөөндөө Сурцгаая",
+    description:
+      "Богино бичлэг, subtitle, vocabulary, quiz ашиглан Хятад хэл сурах app.",
+    url: siteUrl,
+    siteName: "Бөөндөө Сурцгаая",
+    locale: "mn_MN",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -24,10 +40,10 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
+      lang="mn"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="flex min-h-full flex-col">{children}</body>
     </html>
   );
 }

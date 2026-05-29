@@ -2,7 +2,39 @@
 
 **Project:** Buunduu Surtsgaay (Бөөндөө Сурцгаая)  
 **Checkpoint date:** May 2026  
-**Status:** Phase 6 Step 6 Launch candidate final smoke test **completed**
+**Status:** Phase 7 Step 1 User-facing product polish **completed**
+
+---
+
+## Phase 7 Step 1 — User-facing product polish — **Completed**
+
+Phase 7 Mega Batch: User-facing product polish, onboarding, dashboard, help, feedback, and pricing placeholder added.
+
+| Area | Deliverable |
+|------|-------------|
+| Landing | Polished home page with hero, how-it-works, course highlights |
+| Routes | `/dashboard`, `/onboarding`, `/help`, `/feedback`, `/pricing` |
+| Nav | Auth-aware header, bottom nav, `AppFooter` |
+| Courses | HSK5 continue learning, extended progress, lesson roadmap badges |
+| Docs | USER_ONBOARDING.md, PRODUCT_POLISH_PHASE_7.md |
+
+**Next:** Phase 7 Step 2 — Learner dashboard enhancements.
+
+---
+
+## Phase 6 Step 7 — Production launch sign-off — **Completed**
+
+Phase 6 Step 7: Production launch sign-off workflow added.
+
+| Area | Deliverable |
+|------|-------------|
+| Route | `/admin/launch-signoff` — checklist, go/no-go, version/owner, export |
+| Report | `lib/admin/launch-signoff-report.ts` |
+| Components | signoff-checklist, signoff-decision-card, signoff-report-export-card, signoff-summary-cards |
+| Docs | LAUNCH_SIGNOFF.md; updates to GO_LIVE_NOTES, POST_LAUNCH_MONITORING, ROLLBACK_PLAN |
+| Storage | localStorage `buunduu-launch-signoff` |
+
+**Next:** Phase 7 — Product polish and user-facing onboarding.
 
 ---
 

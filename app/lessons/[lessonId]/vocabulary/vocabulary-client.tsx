@@ -100,6 +100,17 @@ export function LessonVocabularyClient({
     setFilter("all");
   }
 
+  async function handleMarkAllVisible() {
+    for (const word of filteredWords) {
+      const key = vocabularyWordKey(word);
+      if (learned.has(key)) continue;
+      const enrichedWord =
+        vocabulary.find((item) => vocabularyWordKey(item) === key) ?? word;
+      const next = await toggleLearnedWordSmart(lesson.id, enrichedWord);
+      setLearned(new Set(next));
+    }
+  }
+
   async function handleToggleLearned(word: VocabularyWord) {
     const key = vocabularyWordKey(word);
     const enrichedWord =
@@ -195,6 +206,15 @@ export function LessonVocabularyClient({
           <p className="mt-3 text-sm font-medium text-slate-600">
             Showing {filteredWords.length} / {vocabulary.length} words
           </p>
+          {filteredWords.length > 0 ? (
+            <button
+              type="button"
+              onClick={() => void handleMarkAllVisible()}
+              className="mt-3 rounded-full border border-emerald-200 bg-white px-4 py-2 text-sm font-semibold text-emerald-800 hover:bg-emerald-50"
+            >
+              Mark all visible as learned
+            </button>
+          ) : null}
         </section>
 
         <section className="flex flex-col gap-4">
@@ -289,7 +309,7 @@ export function LessonVocabularyClient({
             })}
             className="flex-1 rounded-full bg-emerald-500 px-5 py-3 text-center text-sm font-semibold text-white transition-colors hover:bg-emerald-600"
           >
-            Quiz
+            Next: Quiz
           </Link>
         </section>
       </main>

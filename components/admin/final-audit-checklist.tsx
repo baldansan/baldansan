@@ -175,6 +175,12 @@ const SECTIONS: AuditSection[] = [
         href: "/admin/launch-candidate",
         note: "Final smoke test + go-live decision",
       },
+      {
+        label: "Production launch sign-off",
+        status: "ready",
+        href: "/admin/launch-signoff",
+        note: "Go/no-go decision + export",
+      },
     ],
   },
   {
@@ -353,6 +359,12 @@ export function FinalAuditChecklist() {
             className="inline-flex rounded-full border border-emerald-200 bg-white px-5 py-2.5 text-sm font-semibold text-emerald-800 hover:bg-emerald-50"
           >
             Launch Candidate
+          </Link>
+          <Link
+            href="/admin/launch-signoff"
+            className="inline-flex rounded-full border border-emerald-200 bg-emerald-50 px-5 py-2.5 text-sm font-semibold text-emerald-800 hover:bg-emerald-100"
+          >
+            Launch Sign-off
           </Link>
           <Link
             href="/courses/hsk5"

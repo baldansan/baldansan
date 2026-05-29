@@ -26,6 +26,7 @@ Production deployment readiness summary (May 2026).
 | 4 | `/admin/production-qa`, PRODUCTION_ROUTE_TESTING |
 | 5 | `/admin/security-audit`, SECURITY_RLS_AUDIT, LAUNCH_CANDIDATE_CHECKLIST |
 | 6 | `/admin/launch-candidate`, GO_LIVE_NOTES, ROLLBACK_PLAN, POST_LAUNCH_MONITORING |
+| 7 | `/admin/launch-signoff`, LAUNCH_SIGNOFF.md — go/no-go decision + export |
 
 ---
 
@@ -37,22 +38,33 @@ Production deployment readiness summary (May 2026).
 | `/admin/system-check` | Runtime Supabase + admin session |
 | `/admin/production-qa` | Manual route/CMS checklist |
 | `/admin/security-audit` | RLS, auth, visibility |
-| `/admin/launch-candidate` | Final smoke test + go-live decision |
+| `/admin/launch-candidate` | Final smoke test + launch candidate decision |
+| `/admin/launch-signoff` | Production launch sign-off (go/no-go) |
 | `/admin/final-audit` | Phase 5 + 6 readiness index |
 
 ---
 
+## Sign-off workflow
+
+1. Complete `/admin/launch-candidate` — smoke test + export
+2. Open `/admin/launch-signoff` — 18-item checklist + summary cards
+3. Record version, owner, launch notes, known issues
+4. Decision: **go_live** / **needs_review** / **blocked**
+5. Export sign-off report (Markdown/JSON)
+6. Follow [LAUNCH_SIGNOFF.md](./LAUNCH_SIGNOFF.md) and [GO_LIVE_NOTES.md](./GO_LIVE_NOTES.md)
+
 ## Launch readiness status
 
-Use `/admin/launch-candidate` for current manual status.
+Use `/admin/launch-signoff` for final go/no-go status.
 
-**Ready for launch when:**
+**Ready for controlled launch when:**
 
-- Launch candidate decision = **launch candidate**
-- No **fail** in smoke test or critical status cards
+- Sign-off decision = **go_live**
+- No **fail** in sign-off checklist or summary cards
+- Launch candidate completed with no critical **fail**
 - `production_verification.sql` — no **fail**
 - Supabase Auth URLs configured for production domain
-- LAUNCH_CANDIDATE_CHECKLIST.md signed off
+- [LAUNCH_SIGNOFF.md](./LAUNCH_SIGNOFF.md) and rollback plan reviewed
 
 ---
 
@@ -79,6 +91,7 @@ Use `/admin/launch-candidate` for current manual status.
 ## Related docs
 
 - [GO_LIVE_NOTES.md](./GO_LIVE_NOTES.md)
+- [LAUNCH_SIGNOFF.md](./LAUNCH_SIGNOFF.md)
 - [ROLLBACK_PLAN.md](./ROLLBACK_PLAN.md)
 - [POST_LAUNCH_MONITORING.md](./POST_LAUNCH_MONITORING.md)
 - [DEPLOYMENT_PLAN.md](./DEPLOYMENT_PLAN.md)
