@@ -218,6 +218,22 @@ export function LessonQuizClient({
                   : null}
               </p>
             ) : null}
+            {answerDetails.filter((a) => !a.isCorrect).length > 0 ? (
+              <div className="mt-4 rounded-xl bg-amber-50 p-4 ring-1 ring-amber-200">
+                <h3 className="text-sm font-semibold text-amber-900">
+                  Review wrong answers
+                </h3>
+                <ul className="mt-2 space-y-2 text-sm text-amber-900">
+                  {answerDetails
+                    .filter((a) => !a.isCorrect)
+                    .map((a, i) => (
+                      <li key={`${a.orderIndex}-${i}`}>
+                        {a.question}: зөв хариулт — {a.correctAnswer}
+                      </li>
+                    ))}
+                </ul>
+              </div>
+            ) : null}
             <div className="mt-3">
               <LocalProgressNote />
             </div>

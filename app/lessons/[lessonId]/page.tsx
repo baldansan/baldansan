@@ -1,10 +1,11 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { AdminPreviewBanner } from "@/components/admin-preview-banner";
+import { AppFooter } from "@/components/app-footer";
 import { AppHeader } from "@/components/app-header";
 import { BottomNav } from "@/components/bottom-nav";
-import { LessonPathCard } from "@/components/lesson-path-card";
 import { LessonDetailMediaSection } from "@/components/lesson-media-display";
+import { LessonDetailOverview } from "@/components/lesson-detail-overview";
 import { LessonProgressCard } from "@/components/lesson-progress-card";
 import { LessonUnavailable } from "@/components/lesson-unavailable";
 import { getAllLessonIdsSync, coursePath } from "@/lib/content";
@@ -60,11 +61,14 @@ export default async function LessonDetailPage({
           href={coursePath(lesson.courseId)}
           className="inline-flex w-fit items-center text-sm font-medium text-slate-600 transition-colors hover:text-emerald-600"
         >
-          ← HSK5 Course руу буцах
+          ← Course руу буцах
         </Link>
 
         <section>
-          <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">
+          <p className="text-sm font-medium text-emerald-600 uppercase tracking-wide">
+            Lesson {lesson.id}
+          </p>
+          <h1 className="mt-1 text-3xl font-bold tracking-tight sm:text-4xl">
             {lesson.title} — {lesson.chineseTitle}
           </h1>
           <p className="mt-2 text-base leading-7 text-slate-600 sm:text-lg">
@@ -72,7 +76,7 @@ export default async function LessonDetailPage({
           </p>
         </section>
 
-        <LessonPathCard lessonId={lesson.id} adminPreview={adminPreview} />
+        <LessonDetailOverview lesson={lesson} adminPreview={adminPreview} />
 
         <LessonDetailMediaSection lesson={lesson} adminPreview={adminPreview} />
 
@@ -163,6 +167,7 @@ export default async function LessonDetailPage({
         <LessonProgressCard lessonId={lesson.id} />
       </main>
 
+      <AppFooter />
       <BottomNav />
     </div>
   );

@@ -123,6 +123,12 @@ export function SecurityAuditView() {
             Launch Candidate
           </Link>
           <Link
+            href="/admin/launch-signoff"
+            className="inline-flex rounded-full border border-emerald-200 bg-white px-4 py-2 text-sm font-semibold text-emerald-800 hover:bg-emerald-50"
+          >
+            Launch Sign-off
+          </Link>
+          <Link
             href="/admin/final-audit"
             className="inline-flex rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:border-emerald-200"
           >

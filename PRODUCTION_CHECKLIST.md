@@ -117,7 +117,7 @@ Concise go-live checklist. See [DEPLOYMENT_PLAN.md](./DEPLOYMENT_PLAN.md) for de
 - [ ] Go-live decision marked (launch candidate or needs review)
 - [ ] [GO_LIVE_NOTES.md](./GO_LIVE_NOTES.md) reviewed
 - [ ] [ROLLBACK_PLAN.md](./ROLLBACK_PLAN.md) reviewed
-- [ ] Launch candidate approved
+- [ ] `/admin/launch-signoff` completed — go/no-go decision exported
 
 ---
 
@@ -136,3 +136,5 @@ Concise go-live checklist. See [DEPLOYMENT_PLAN.md](./DEPLOYMENT_PLAN.md) for de
 - `/admin/production-qa` (after deploy)
 - `/admin/security-audit` (before launch)
 - `/admin/launch-candidate` (final smoke test before go-live)
+- `/admin/launch-signoff` (go/no-go sign-off)
+- [LAUNCH_SIGNOFF.md](./LAUNCH_SIGNOFF.md)

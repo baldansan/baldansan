@@ -15,10 +15,15 @@ function localStatusLabel(status: LessonStatus): string {
     case "completed":
       return "Completed";
     case "started":
-      return "Started";
+      return "In progress";
     default:
-      return "Not started";
+      return "Available";
   }
+}
+
+function contentStatusLabel(status: LessonContentStatus): string {
+  if (status === "locked") return "Coming soon";
+  return "Available";
 }
 
 function localStatusBadgeClass(status: LessonStatus): string {
@@ -142,7 +147,7 @@ export function Hsk5LessonList({ lessons }: Props) {
                 <div className="flex flex-wrap gap-2">
                   {isLocked ? (
                     <span className="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-500 ring-1 ring-slate-200">
-                      Locked
+                      {contentStatusLabel(lesson.status)}
                     </span>
                   ) : (
                     <span className={localStatusBadgeClass(localStatus)}>

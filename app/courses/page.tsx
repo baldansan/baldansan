@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { AppHeader } from "@/components/app-header";
 import { CoursesHsk5Progress } from "@/components/courses-hsk5-progress";
+import { PublicPageShell } from "@/components/public-page-shell";
 import { courses } from "@/data/courses";
 import { getPublicLessonsByCourseId } from "@/lib/content";
 import type { Course } from "@/types/course";
@@ -11,22 +11,37 @@ function statusLabel(status: Course["status"]) {
 
 export const dynamic = "force-dynamic";
 
+export const metadata = {
+  title: "Courses — Бөөндөө Сурцгаая",
+  description: "Сурах чиглэлээ сонго — HSK4, HSK5, Taobao Chinese.",
+};
+
 export default async function CoursesPage() {
   const hsk5Lessons = await getPublicLessonsByCourseId("hsk5");
   const hsk5LessonIds = hsk5Lessons.map((lesson) => lesson.id);
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-emerald-50/40 via-white to-white text-slate-900">
-      <AppHeader active="courses" />
+    <PublicPageShell active="courses">
+      <section>
+        <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">
+          Сурах чиглэлээ сонго
+        </h1>
+        <p className="mt-2 text-base text-slate-600 sm:text-lg">
+          HSK болон практик Chinese course-үүд
+        </p>
+      </section>
 
-      <main className="mx-auto flex w-full max-w-5xl flex-col gap-6 px-4 pb-10 pt-2 sm:gap-8 sm:px-6">
-        <section>
-          <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">Courses</h1>
-          <p className="mt-2 text-base text-slate-600 sm:text-lg">
-            Сурах чиглэлээ сонго
-          </p>
+      {courses.length === 0 ? (
+        <section className="rounded-2xl bg-white p-8 text-center ring-1 ring-slate-200">
+          <p className="text-slate-600">Одоогоор course байхгүй байна.</p>
+          <Link
+            href="/onboarding"
+            className="mt-4 inline-flex rounded-full bg-emerald-500 px-5 py-2 text-sm font-semibold text-white"
+          >
+            App заавар үзэх
+          </Link>
         </section>
-
+      ) : (
         <section className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {courses.map((course) => (
             <article
@@ -48,7 +63,9 @@ export default async function CoursesPage() {
 
               <div className="mt-4 flex flex-wrap gap-2 text-xs text-slate-600">
                 <span className="rounded-lg bg-slate-50 px-2.5 py-1 ring-1 ring-slate-200">
-                  {course.lessons} lessons
+                  {course.id === "hsk5"
+                    ? `${hsk5Lessons.length} lessons live`
+                    : `${course.lessons} lessons`}
                 </span>
                 <span className="rounded-lg bg-slate-50 px-2.5 py-1 ring-1 ring-slate-200">
                   {course.vocabulary} vocabulary
@@ -83,14 +100,27 @@ export default async function CoursesPage() {
                     disabled
                     className="cursor-not-allowed rounded-full bg-slate-100 px-4 py-2 text-sm font-semibold text-slate-400"
                   >
-                    Хичээлүүд үзэх
+                    Coming soon
                   </button>
                 )}
               </div>
             </article>
           ))}
         </section>
-      </main>
-    </div>
+      )}
+
+      <section className="rounded-2xl bg-slate-50 p-5 ring-1 ring-slate-200">
+        <h2 className="font-semibold text-slate-900">Анх удаа?</h2>
+        <p className="mt-2 text-sm text-slate-600">
+          App хэрхэн ажилладагийг onboarding-оос үзнэ үү.
+        </p>
+        <Link
+          href="/onboarding"
+          className="mt-3 inline-flex rounded-full border border-emerald-200 bg-white px-5 py-2 text-sm font-semibold text-emerald-800 hover:bg-emerald-50"
+        >
+          Onboarding →
+        </Link>
+      </section>
+    </PublicPageShell>
   );
 }

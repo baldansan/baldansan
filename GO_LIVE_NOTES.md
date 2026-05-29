@@ -1,7 +1,8 @@
 # Go-Live Notes — Buunduu Surtsgaay
 
 **Production URL:** https://baldansan.vercel.app  
-**Launch dashboard:** [`/admin/launch-candidate`](/admin/launch-candidate)
+**Launch dashboard:** [`/admin/launch-candidate`](/admin/launch-candidate)  
+**Sign-off dashboard:** [`/admin/launch-signoff`](/admin/launch-signoff)
 
 ---
 
@@ -11,9 +12,10 @@
 2. Open `/deployment-check` on production
 3. Sign in as admin → `/admin/system-check`, `/admin/security-audit`
 4. Complete `/admin/production-qa` and `/admin/launch-candidate` — export reports
-5. Review [LAUNCH_CANDIDATE_CHECKLIST.md](./LAUNCH_CANDIDATE_CHECKLIST.md)
-6. Mark launch decision on `/admin/launch-candidate`
-7. Announce go-live; begin [POST_LAUNCH_MONITORING.md](./POST_LAUNCH_MONITORING.md)
+5. Complete `/admin/launch-signoff` — record go/no-go decision and export sign-off report
+6. Review [LAUNCH_CANDIDATE_CHECKLIST.md](./LAUNCH_CANDIDATE_CHECKLIST.md) and [LAUNCH_SIGNOFF.md](./LAUNCH_SIGNOFF.md)
+7. Mark **go_live** decision on `/admin/launch-signoff`
+8. Announce go-live; begin [POST_LAUNCH_MONITORING.md](./POST_LAUNCH_MONITORING.md)
 
 ---
 
@@ -36,7 +38,8 @@
 - [ ] Test one full lesson flow (watch → vocab → quiz)
 - [ ] Admin smoke test: edit metadata, confirm activity log row
 - [ ] Export launch candidate Markdown report
-- [ ] Mark **Launch candidate** decision in admin dashboard
+- [ ] Complete `/admin/launch-signoff` — export sign-off report
+- [ ] Mark **go_live** decision in launch sign-off dashboard
 
 ---
 

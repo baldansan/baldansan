@@ -187,7 +187,26 @@ Helpers: [lib/supabase/auth.ts](./lib/supabase/auth.ts). Header shows **Нэвт
 
 **Launch candidate:** [`/admin/launch-candidate`](/admin/launch-candidate) — final smoke test, go-live decision, launch report export (run before go-live and after every production deploy).
 
-**Phase 6 complete.** Next: production launch sign-off per [GO_LIVE_NOTES.md](./GO_LIVE_NOTES.md), then Phase 7 polish.
+**Launch sign-off:** [`/admin/launch-signoff`](/admin/launch-signoff) — final go/no-go decision, version, owner, and sign-off report export.
+
+**Phase 6 complete.** Phase 7 Step 1 learner polish live. **Production URL:** https://baldansan.vercel.app
+
+## User-facing routes (Phase 7)
+
+| Route | Purpose |
+|-------|---------|
+| [`/`](./) | Landing page |
+| [`/dashboard`](/dashboard) | Learner dashboard (login recommended) |
+| [`/onboarding`](/onboarding) | New user guide |
+| [`/courses`](/courses) | Course catalog |
+| [`/courses/hsk5`](/courses/hsk5) | HSK5 roadmap + continue learning |
+| [`/help`](/help) | FAQ |
+| [`/feedback`](/feedback) | Feedback template (copy only) |
+| [`/pricing`](/pricing) | Plans placeholder (no payment) |
+| [`/review`](/review) | Vocabulary review |
+| [`/profile`](/profile) | Account and progress |
+
+See [USER_ONBOARDING.md](./USER_ONBOARDING.md) and [PRODUCT_POLISH_PHASE_7.md](./PRODUCT_POLISH_PHASE_7.md).
 
 ## Deployment (Phase 6)
 
@@ -223,7 +242,9 @@ Phase 6 complete. Run checklists on production before launch sign-off.
 | [`/deployment-check`](/deployment-check) | Public smoke test (post-deploy) |
 | [`/admin/production-qa`](/admin/production-qa) | Launch QA checklist (post-deploy) |
 | [`/admin/security-audit`](/admin/security-audit) | Security/RLS audit (pre-launch) |
-| [`/admin/launch-candidate`](/admin/launch-candidate) | Final smoke test + go-live decision |
+| [`/admin/launch-candidate`](/admin/launch-candidate) | Final smoke test + launch candidate decision |
+| [`/admin/launch-signoff`](/admin/launch-signoff) | Production launch sign-off (go/no-go) |
+| [LAUNCH_SIGNOFF.md](./LAUNCH_SIGNOFF.md) | Sign-off workflow and decision definitions |
 | [GO_LIVE_NOTES.md](./GO_LIVE_NOTES.md) | Launch steps and day-of checklist |
 | [ROLLBACK_PLAN.md](./ROLLBACK_PLAN.md) | Vercel/Git/Supabase rollback |
 | [POST_LAUNCH_MONITORING.md](./POST_LAUNCH_MONITORING.md) | First-week monitoring routine |
@@ -237,7 +258,9 @@ Phase 6 complete. Run checklists on production before launch sign-off.
 ## Documentation
 
 - [PROJECT_CHECKPOINT.md](./PROJECT_CHECKPOINT.md) — status & audits
-- [DEVELOPMENT_PLAN.md](./DEVELOPMENT_PLAN.md) — roadmap (Phase 6 complete)
+- [PRODUCT_POLISH_PHASE_7.md](./PRODUCT_POLISH_PHASE_7.md) — Phase 7 polish summary
+- [USER_ONBOARDING.md](./USER_ONBOARDING.md) — learner journey
+- [DEVELOPMENT_PLAN.md](./DEVELOPMENT_PLAN.md) — roadmap (Phase 7 Step 1 complete)
 - [DEPLOYMENT_PLAN.md](./DEPLOYMENT_PLAN.md) — production deployment plan
 - [PRODUCTION_CHECKLIST.md](./PRODUCTION_CHECKLIST.md) — go-live checklist
 - [PHASE_5_FINAL_AUDIT.md](./PHASE_5_FINAL_AUDIT.md) — Phase 5 audit summary

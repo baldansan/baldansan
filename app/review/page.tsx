@@ -13,5 +13,5 @@ export default async function ReviewPage() {
     vocabulary: lesson.vocabulary,
   }));
 
-  return <ReviewDashboard lessons={lessonSnapshots} />;
+  return <ReviewDashboard lessons={lessonSnapshots} lessonIds={lessons.map((l) => l.id)} />;
 }
