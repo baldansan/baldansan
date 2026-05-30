@@ -2,8 +2,11 @@
 
 import { SpeakerButton } from "@/components/tts/speaker-button";
 import { LessonPlayerCard } from "@/components/lesson-player/lesson-player-shell";
+import { KoreanAnswerPronunciationBlock } from "@/components/lesson/korean-pronunciation-feedback";
 import { containsTargetScript } from "@/lib/tts/infer-lang";
 import type { QuizQuestion } from "@/types/lesson";
+import type { VocabularyWord } from "@/types/lesson";
+import type { KoreanLesson0LessonPick } from "@/lib/lesson/korean-lesson0-flow";
 
 type Props = {
   question: QuizQuestion;
@@ -14,6 +17,10 @@ type Props = {
   ttsLang: string;
   courseId: string;
   onSelect: (option: string) => void;
+  lesson?: KoreanLesson0LessonPick;
+  vocabulary?: VocabularyWord[];
+  pronunciationMap?: Record<string, string>;
+  showPronunciation?: boolean;
 };
 
 export function LessonStepQuiz({
@@ -25,6 +32,10 @@ export function LessonStepQuiz({
   ttsLang,
   courseId,
   onSelect,
+  lesson,
+  vocabulary = [],
+  pronunciationMap,
+  showPronunciation = false,
 }: Props) {
   const isCorrect = selected === question.correctAnswer;
 
@@ -105,7 +116,19 @@ export function LessonStepQuiz({
           >
             {isCorrect ? "Зөв!" : "Буруу"}
           </p>
-          <p className="mt-1 text-sm text-slate-700">{question.explanation}</p>
+          {showPronunciation && lesson ? (
+            <KoreanAnswerPronunciationBlock
+              correctAnswer={question.correctAnswer}
+              explanation={question.explanation}
+              lesson={lesson}
+              vocabulary={vocabulary}
+              pronunciationMap={pronunciationMap}
+              showPronunciation
+              className="mt-2"
+            />
+          ) : (
+            <p className="mt-1 text-sm text-slate-700">{question.explanation}</p>
+          )}
         </div>
       ) : null}
     </LessonPlayerCard>

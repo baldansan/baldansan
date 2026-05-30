@@ -15,6 +15,7 @@ type Props = {
   stepsCompleted: number;
   totalSteps: number;
   onRestart: () => void;
+  simplified?: boolean;
 };
 
 export function LessonStepResult({
@@ -26,6 +27,7 @@ export function LessonStepResult({
   stepsCompleted,
   totalSteps,
   onRestart,
+  simplified = false,
 }: Props) {
   const quizPercent =
     quizTotal > 0 ? Math.round((quizCorrect / quizTotal) * 100) : 100;
@@ -54,24 +56,54 @@ export function LessonStepResult({
         <p className="text-5xl" aria-hidden>
           🏆
         </p>
-        <h1 className="mt-3 text-xl font-bold text-slate-900">
+        <h1 className="mt-3 break-words text-xl font-bold text-slate-900">
           Хичээл дууслаа!
         </h1>
-        <p className="mt-2 max-w-full break-words text-sm text-slate-600">
-          {stepsCompleted} / {totalSteps} алхам ·{" "}
-          {quizTotal > 0
-            ? `Quiz ${quizCorrect}/${quizTotal} (${quizPercent}%)`
-            : "Quiz байхгүй"}
-        </p>
-        <p className="mt-2 text-lg font-bold text-emerald-600">+{xp} XP</p>
-        {!passed && quizTotal > 0 ? (
+        {!simplified ? (
+          <p className="mt-2 max-w-full break-words text-sm text-slate-600">
+            {stepsCompleted} / {totalSteps} алхам ·{" "}
+            {quizTotal > 0
+              ? `Quiz ${quizCorrect}/${quizTotal} (${quizPercent}%)`
+              : "Quiz байхгүй"}
+          </p>
+        ) : null}
+        {!simplified ? (
+          <p className="mt-2 text-lg font-bold text-emerald-600">+{xp} XP</p>
+        ) : null}
+        {!simplified && !passed && quizTotal > 0 ? (
           <p className="mt-2 text-sm text-amber-700">
             {PASSING_QUIZ_PERCENT}%-аас дээш оноо авахад хичээл бүрэн дуусна.
           </p>
         ) : null}
       </div>
 
-      <div className="mt-6 flex w-full flex-col gap-2.5">
+      <div className="mt-6 flex w-full flex-col gap-2.5 overflow-hidden">
+        {simplified ? (
+          <>
+            {quizTotal > 0 ? (
+              <Link href={quizHref} className="app-btn-secondary w-full">
+                Quiz өгөх
+              </Link>
+            ) : null}
+            <button
+              type="button"
+              onClick={onRestart}
+              className="app-btn-secondary w-full"
+            >
+              Дахин үзэх
+            </button>
+            {nextTrainingHref ? (
+              <Link href={nextTrainingHref} className="app-btn-primary w-full">
+                Дараагийн хичээл
+              </Link>
+            ) : nextHref ? (
+              <Link href={nextHref} className="app-btn-primary w-full">
+                Дараагийн хичээл
+              </Link>
+            ) : null}
+          </>
+        ) : (
+          <>
         {quizTotal > 0 ? (
           <Link href={quizHref} className="app-btn-secondary w-full">
             Өөрийгөө шалгах
@@ -98,6 +130,8 @@ export function LessonStepResult({
         <button type="button" onClick={onRestart} className="app-btn-outline-green w-full">
           Дахин үзэх
         </button>
+          </>
+        )}
       </div>
     </LessonPlayerCard>
   );

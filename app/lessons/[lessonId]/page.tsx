@@ -2,8 +2,14 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { AdminPreviewBanner } from "@/components/admin-preview-banner";
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
-import { MobileCard } from "@/components/mobile/mobile-card";
-import { MobilePageHeader } from "@/components/mobile/mobile-page-header";
+import { KoreanLesson0StartScreen } from "@/components/lesson/korean-lesson0-start-screen";
+import { LessonUnavailable } from "@/components/lesson-unavailable";
+import { isKoreanLesson0BeginnerFlow } from "@/lib/lesson/korean-lesson0-flow";
+import { coursePath, getAllLessonIdsSync } from "@/lib/content";
+import {
+  resolveLessonPageAccess,
+  resolvePreviewFromPageSearchParams,
+} from "@/lib/lesson-public-access";
 import { LessonDetailMediaSection } from "@/components/lesson-media-display";
 import { LessonDetailOverview } from "@/components/lesson-detail-overview";
 import {
@@ -17,20 +23,21 @@ import { LEARNER_LESSON } from "@/lib/learner-labels";
 import { isVideoContent } from "@/lib/lesson-content-type";
 import { inferLessonLanguage } from "@/lib/language-track";
 import { KoreanTeachingVisuals } from "@/components/lesson/korean-teaching-visuals";
-import { isKoreanFlashcardVocabularyLesson, koreanVocabularyStudyCtaLabel } from "@/lib/lesson/korean-vocabulary-ui";
+import {
+  isKoreanFlashcardVocabularyLesson,
+  koreanVocabularyStudyCtaLabel,
+} from "@/lib/lesson/korean-vocabulary-ui";
 import { TeacherAssignmentCta } from "@/components/teacher/teacher-assignment-cta";
-import { LessonUnavailable } from "@/components/lesson-unavailable";
-import { getAllLessonIdsSync, coursePath } from "@/lib/content";
+import { MobileCard } from "@/components/mobile/mobile-card";
+import { MobilePageHeader } from "@/components/mobile/mobile-page-header";
 import { secondaryScriptLabel } from "@/lib/course-display";
 import { lessonPreviewPath } from "@/lib/lesson-publish";
-import { resolveLessonPageAccess, resolvePreviewFromPageSearchParams } from "@/lib/lesson-public-access";
 
 type PageProps = {
   params: Promise<{ lessonId: string }>;
   searchParams: Promise<{ preview?: string }>;
 };
 
-/** Fetch lesson from Supabase on each request when env is configured. */
 export const dynamic = "force-dynamic";
 
 export function generateStaticParams() {
@@ -62,6 +69,27 @@ export default async function LessonDetailPage({
   }
 
   const { lesson, adminPreview } = access;
+  const isLesson0 = isKoreanLesson0BeginnerFlow(lesson);
+
+  if (isLesson0) {
+    return (
+      <MobileAppShell activeTab="study" mainClassName="max-w-[390px] mx-auto w-full">
+        <div className="flex flex-col gap-4 pb-2">
+          {adminPreview ? <AdminPreviewBanner /> : null}
+
+          <Link
+            href={coursePath(lesson.courseId)}
+            className="inline-flex w-fit items-center text-sm font-medium text-[var(--app-muted)] transition-colors hover:text-emerald-600"
+          >
+            ← Курс руу буцах
+          </Link>
+
+          <KoreanLesson0StartScreen lesson={lesson} adminPreview={adminPreview} />
+        </div>
+      </MobileAppShell>
+    );
+  }
+
   const vocabularyPreview = lesson.vocabulary.slice(0, 3);
   const showSubtitles =
     isVideoContent(lesson) && lesson.subtitlePreview.length > 0;

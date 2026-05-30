@@ -16,16 +16,19 @@ Checklist for Hangul foundation guided player (`/study/lesson-training/kr-0-hang
 - [ ] Hangul concept grids render (vowels, consonants)
 - [ ] Syllable visual step shows ㅎ+ㅏ+ㄴ=한
 - [ ] Flashcard step works — one card, TTS, learned mark
+- [ ] Flashcards show **Монгол дуудлага** hint under romanization
+- [ ] Practice explanations include Mongolian pronunciation (e.g. 한 → хан)
+- [ ] Similar-sound step explains ㅓ vs ㅗ and ㅜ vs ㅡ in Mongolian-friendly terms
 - [ ] Practice step works — select, check, next question
 - [ ] Quiz intro appears before quiz questions
-- [ ] Quiz step works — select, reveal, explanation
+- [ ] Quiz step works — select, reveal, explanation with Mongolian pronunciation when available
 - [ ] Result screen works — trophy, score, XP, no button overlap
 - [ ] Next lesson CTA navigates to following prelesson training URL
 
 ## Regression
 
-- [ ] `/lessons/k-pre-01/vocabulary` flashcard list still works
-- [ ] `/lessons/k-pre-01/quiz` standalone quiz still works
+- [ ] `/lessons/k-pre-01/vocabulary` flashcard list still works — pronunciation hint on Lesson 0 cards
+- [ ] `/lessons/k-pre-01/quiz` standalone quiz still works — answer feedback shows pronunciation on Lesson 0
 - [ ] Chinese HSK lesson detail unchanged
 - [ ] Admin import routes unaffected
 - [ ] `npm run build` passes

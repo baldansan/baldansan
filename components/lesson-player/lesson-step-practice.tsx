@@ -1,7 +1,10 @@
 "use client";
 
 import { LessonPlayerCard } from "@/components/lesson-player/lesson-player-shell";
+import { KoreanAnswerPronunciationBlock } from "@/components/lesson/korean-pronunciation-feedback";
 import type { PracticeQuestion } from "@/types/lesson-player";
+import type { VocabularyWord } from "@/types/lesson";
+import type { KoreanLesson0LessonPick } from "@/lib/lesson/korean-lesson0-flow";
 
 type Props = {
   title: string;
@@ -11,6 +14,10 @@ type Props = {
   selected: string | null;
   revealed: boolean;
   onSelect: (option: string) => void;
+  lesson: KoreanLesson0LessonPick;
+  vocabulary?: VocabularyWord[];
+  pronunciationMap?: Record<string, string>;
+  showPronunciation?: boolean;
 };
 
 export function LessonStepPractice({
@@ -21,6 +28,10 @@ export function LessonStepPractice({
   selected,
   revealed,
   onSelect,
+  lesson,
+  vocabulary = [],
+  pronunciationMap,
+  showPronunciation = false,
 }: Props) {
   const isCorrect = selected === question.correctAnswer;
 
@@ -75,10 +86,19 @@ export function LessonStepPractice({
               : "mt-4 rounded-xl bg-red-50 p-3 text-sm text-red-800 ring-1 ring-red-200"
           }
         >
-          {isCorrect ? "Зөв!" : `Зөв хариулт: ${question.correctAnswer}`}
-          {question.explanation ? (
-            <p className="mt-1 text-slate-600">{question.explanation}</p>
+          <p className="font-semibold">{isCorrect ? "Зөв!" : "Буруу"}</p>
+          {!isCorrect ? (
+            <p className="mt-1">Зөв хариулт:</p>
           ) : null}
+          <KoreanAnswerPronunciationBlock
+            correctAnswer={question.correctAnswer}
+            explanation={question.explanation}
+            lesson={lesson}
+            vocabulary={vocabulary}
+            pronunciationMap={pronunciationMap}
+            showPronunciation={showPronunciation}
+            className="mt-1"
+          />
         </div>
       ) : null}
     </LessonPlayerCard>

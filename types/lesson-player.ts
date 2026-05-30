@@ -25,12 +25,14 @@ export type LessonStepSummary = {
   type: "summary";
   title: string;
   text: string;
+  displayPhase?: number;
 };
 
 export type LessonStepTeacherNote = {
   type: "teacher_note";
   title: string;
   body: string;
+  displayPhase?: number;
 };
 
 export type LessonStepConcept = {
@@ -38,17 +40,21 @@ export type LessonStepConcept = {
   title: string;
   content: string;
   items?: string[];
+  displayPhase?: number;
 };
 
 export type LessonStepVisual = {
   type: "visual";
   title: string;
   lines: string[];
+  displayPhase?: number;
 };
 
 export type LessonStepVocabularyFlashcard = {
   type: "vocabulary_flashcard";
   vocabulary: VocabularyWord[];
+  screenTitle?: string;
+  displayPhase?: number;
 };
 
 export type LessonStepPronunciation = {
@@ -56,18 +62,21 @@ export type LessonStepPronunciation = {
   title: string;
   pairs: Array<{ left: string; right: string }>;
   note?: string;
+  displayPhase?: number;
 };
 
 export type LessonStepPractice = {
   type: "practice";
   title: string;
   questions: PracticeQuestion[];
+  displayPhase?: number;
 };
 
 export type LessonStepQuizIntro = {
   type: "quiz_intro";
   title: string;
   text: string;
+  displayPhase?: number;
 };
 
 export type LessonStepQuizQuestion = {
@@ -75,10 +84,12 @@ export type LessonStepQuizQuestion = {
   question: QuizQuestion;
   index: number;
   total: number;
+  displayPhase?: number;
 };
 
 export type LessonStepResult = {
   type: "result";
+  displayPhase?: number;
 };
 
 export type LessonStepNextLesson = {
@@ -86,6 +97,7 @@ export type LessonStepNextLesson = {
   nextLessonId: string | null;
   title: string;
   subtitle?: string;
+  displayPhase?: number;
 };
 
 export type LessonStep =

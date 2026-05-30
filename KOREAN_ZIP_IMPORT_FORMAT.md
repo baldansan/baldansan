@@ -170,8 +170,20 @@ Files under `audio/` and `images/` upload to the `lesson-media` Storage bucket o
 | `exampleKorean` | `example_chinese` |
 | `exampleMongolian` | `example_mongolian` |
 | `audioFile` | Optional — mapped in `source_note` `vocabAudio` JSON (plays before TTS) |
+| `mongolianPronunciation` | Optional — stored in `source_note` `vocabPronMn` JSON (UI hint) |
+| `pronunciationMn` | Alias for `mongolianPronunciation` |
+| `pronunciationHintMn` | Alias for `mongolianPronunciation` |
 
----
+Example row:
+
+```json
+{
+  "korean": "가",
+  "romanization": "ga",
+  "mongolianPronunciation": "га",
+  "mongolian": "ㄱ + ㅏ нийлсэн үе"
+}
+```
 
 ## lesson.json teachingImages example
 

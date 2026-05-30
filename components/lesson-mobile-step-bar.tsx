@@ -8,6 +8,7 @@ import {
   resolveLessonContentType,
   watchStepLabel,
 } from "@/lib/lesson-content-type";
+import { isKoreanLesson0BeginnerFlow } from "@/lib/lesson/korean-lesson0-flow";
 import type { LessonContent } from "@/types/lesson-content";
 
 export type LessonStep = "detail" | "watch" | "vocabulary" | "quiz";
@@ -69,6 +70,12 @@ export function LessonMobileStepBar(props: Props | LegacyProps) {
         } as Pick<LessonContent, "id" | "courseId">);
 
   const { current, adminPreview = false } = props;
+  const fullLesson = "lesson" in props ? props.lesson : null;
+
+  if (fullLesson && isKoreanLesson0BeginnerFlow(fullLesson)) {
+    return null;
+  }
+
   const contentType = resolveLessonContentType(lesson as LessonContent);
   const steps = buildSteps(contentType);
   const next = nextStep(steps, current);

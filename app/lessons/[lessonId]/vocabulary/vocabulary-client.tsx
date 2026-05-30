@@ -27,6 +27,8 @@ import {
   resolveInitialVocabularyViewMode,
   type VocabularyViewMode,
 } from "@/lib/lesson/korean-vocabulary-ui";
+import { isKoreanLesson0BeginnerFlow } from "@/lib/lesson/korean-lesson0-flow";
+import { lessonTrainingPath } from "@/lib/content";
 import { enrichVocabularyWithDbIds } from "@/lib/supabase/content";
 import {
   getLearnedWordsSmart,
@@ -68,9 +70,12 @@ export function LessonVocabularyClient({
   const [lang, setLang] = useState<ReturnType<typeof getSelectedLanguage>>(null);
   const isKorean = inferLessonLanguage(lesson) === "ko";
   const isPrelesson = isPrelessonPackage(lesson);
+  const isLesson0 = isKoreanLesson0BeginnerFlow(lesson);
   const useFlashcardDefault = isKoreanFlashcardVocabularyLesson(lesson, vocabulary);
   const [viewMode, setViewMode] = useState<VocabularyViewMode>(() =>
-    resolveInitialVocabularyViewMode(lesson, lesson.vocabulary, initialView)
+    isLesson0
+      ? "flashcard"
+      : resolveInitialVocabularyViewMode(lesson, lesson.vocabulary, initialView)
   );
 
   useEffect(() => {
@@ -191,6 +196,49 @@ export function LessonVocabularyClient({
   return (
     <LearnerPageShell activeTab="study">
       {adminPreview ? <AdminPreviewBanner /> : null}
+      {isLesson0 ? (
+        <>
+          <Link
+            href={lessonTrainingPath(lesson.id, { preview: adminPreview })}
+            className="inline-flex w-fit items-center text-sm font-medium text-slate-600 transition-colors hover:text-emerald-600"
+          >
+            ← Хичээл рүү буцах
+          </Link>
+          <section>
+            <h1 className="text-xl font-bold leading-snug text-slate-900">
+              Картаар сурах
+            </h1>
+            <p className="mt-1 text-sm text-slate-600">
+              Нэг үсэг, нэг үе — алхмаар давтана.
+            </p>
+          </section>
+          {viewMode === "flashcard" ? (
+            <VocabularyFlashcardStudy
+              lesson={lesson}
+              vocabulary={vocabulary}
+              learned={learned}
+              adminPreview={adminPreview}
+              onMarkLearned={handleToggleLearned}
+              onShowList={() => setViewMode("list")}
+            />
+          ) : null}
+          {viewMode === "list" ? (
+            <p className="text-center text-sm text-slate-600">
+              Жагсаалтаар харах горим — доорх үгс.
+            </p>
+          ) : null}
+          <button
+            type="button"
+            onClick={() =>
+              setViewMode((mode) => (mode === "flashcard" ? "list" : "flashcard"))
+            }
+            className="mx-auto block text-xs font-medium text-slate-500 underline-offset-2 hover:text-emerald-700 hover:underline"
+          >
+            {viewMode === "flashcard" ? "Жагсаалтаар харах" : "Картаар сурах"}
+          </button>
+        </>
+      ) : (
+        <>
       <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
         <Link
           href={lessonPreviewPath(lesson.id, { adminPreview })}
@@ -477,6 +525,49 @@ export function LessonVocabularyClient({
         current="vocabulary"
         adminPreview={adminPreview}
       />
+      </>
+      )}
+
+      {isLesson0 && viewMode === "list" ? (
+        <section className="flex flex-col gap-4">
+          {vocabulary.map((word) => {
+            const key = vocabularyWordKey(word);
+            const isLearned = learned.has(key);
+            const speaker = vocabSpeakerProps(word);
+            return (
+              <article
+                key={key}
+                className="rounded-2xl bg-white p-4 ring-1 ring-slate-200"
+              >
+                <p className="text-2xl font-bold text-slate-900">{word.chinese}</p>
+                <p className="text-sm text-emerald-700">{word.pinyin}</p>
+                <p className="mt-1 text-sm text-slate-600">{word.mongolian}</p>
+                <div className="mt-3 flex items-center gap-2">
+                  <SpeakerButton
+                    text={word.chinese}
+                    lang={speaker.lang}
+                    courseId={speaker.courseId}
+                    hskLevel={speaker.hskLevel}
+                    audioUrl={speaker.audioUrl}
+                    size="sm"
+                  />
+                  <button
+                    type="button"
+                    onClick={() => void handleToggleLearned(word)}
+                    className={
+                      isLearned
+                        ? "text-xs font-semibold text-emerald-600"
+                        : "text-xs font-semibold text-slate-600"
+                    }
+                  >
+                    {isLearned ? "✓ Сурсан" : "Сурсан гэж тэмдэглэх"}
+                  </button>
+                </div>
+              </article>
+            );
+          })}
+        </section>
+      ) : null}
     </LearnerPageShell>
   );
 }

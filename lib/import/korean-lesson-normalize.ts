@@ -49,6 +49,9 @@ export type KoreanZipVocabularyRow = {
   korean: string;
   romanization: string | null;
   mongolian: string;
+  mongolianPronunciation?: string;
+  pronunciationMn?: string;
+  pronunciationHintMn?: string;
   level: string | null;
   exampleKorean: string | null;
   exampleRomanization: string | null;
@@ -202,6 +205,41 @@ export function mapKoreanVocabularyToDb(
     exampleChinese: row.exampleKorean,
     exampleMongolian: row.exampleMongolian,
   };
+}
+
+export function resolveKoreanRowPronunciation(row: KoreanZipVocabularyRow): string | undefined {
+  return (
+    trim(row.mongolianPronunciation) ||
+    trim(row.pronunciationMn) ||
+    trim(row.pronunciationHintMn) ||
+    undefined
+  );
+}
+
+/** Build vocabPronMn map for source_note from Korean vocabulary rows. */
+export function buildVocabPronunciationMapFromRows(
+  rows: Array<{
+    id?: string;
+    korean?: string;
+    chinese?: string;
+    mongolianPronunciation?: string;
+    pronunciationMn?: string;
+    pronunciationHintMn?: string;
+  }>
+): Record<string, string> {
+  const map: Record<string, string> = {};
+  for (const row of rows) {
+    const hint =
+      trim(row.mongolianPronunciation) ||
+      trim(row.pronunciationMn) ||
+      trim(row.pronunciationHintMn);
+    if (!hint) continue;
+    const key = trim(row.korean ?? row.chinese);
+    if (!key) continue;
+    if (row.id) map[row.id] = hint;
+    map[key] = hint;
+  }
+  return map;
 }
 
 /** Map one Korean quiz row to DB bulk-import shape. */
@@ -446,6 +484,12 @@ function normalizeVocabularyRow(
     korean,
     romanization,
     mongolian,
+    mongolianPronunciation:
+      trim(item.mongolianPronunciation ?? item.mongolian_pronunciation) || undefined,
+    pronunciationMn:
+      trim(item.pronunciationMn ?? item.pronunciation_mn) || undefined,
+    pronunciationHintMn:
+      trim(item.pronunciationHintMn ?? item.pronunciation_hint_mn) || undefined,
     level,
     exampleKorean,
     exampleRomanization: trim(item.exampleRomanization ?? item.example_romanization) || null,

@@ -26,7 +26,9 @@ import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
 import {
   buildLessonSteps,
   countProgressSteps,
+  resolveDisplayProgress,
 } from "@/lib/lesson-player/build-lesson-steps";
+import { isKoreanLesson0BeginnerFlow } from "@/lib/lesson/korean-lesson0-flow";
 import {
   clearLessonPlayerProgress,
   defaultPlayerSession,
@@ -79,6 +81,7 @@ export function GuidedLessonPlayer({
   );
 
   const progressTotal = useMemo(() => countProgressSteps(steps), [steps]);
+  const isLesson0 = isKoreanLesson0BeginnerFlow(lesson);
   const ttsLang = resolveKoreanTtsLang(lesson);
   const isKorean = isKoreanFlashcardVocabularyLesson(lesson, lesson.vocabulary);
 
@@ -95,6 +98,10 @@ export function GuidedLessonPlayer({
   const [quizRevealed, setQuizRevealed] = useState(false);
 
   const currentStep: LessonStep | undefined = steps[session.stepIndex];
+  const displayProgress = useMemo(
+    () => resolveDisplayProgress(currentStep, session.stepIndex, steps),
+    [currentStep, session.stepIndex, steps]
+  );
 
   const persistSession = useCallback(
     (next: LessonPlayerSession) => {
@@ -301,21 +308,26 @@ export function GuidedLessonPlayer({
       case "visual":
         return "Ойлголоо";
       case "vocabulary_flashcard":
-        return session.flashcardIndex < currentStep.vocabulary.length - 1
-          ? "Дараагийнх"
-          : "Үргэлжлүүлэх";
+        if (session.flashcardIndex < currentStep.vocabulary.length - 1) {
+          return "Дараагийнх";
+        }
+        return isLesson0 ? "Дасгал хийх" : "Үргэлжлүүлэх";
       case "practice":
         if (!practiceRevealed) return "Шалгах";
         return session.practiceIndex < currentStep.questions.length - 1
           ? "Дараагийнх"
-          : "Үргэлжлүүлэх";
+          : isLesson0
+            ? "Quiz эхлэх"
+            : "Үргэлжлүүлэх";
       case "quiz_intro":
         return "Quiz эхлэх";
       case "quiz_question":
         if (!quizRevealed) return "Хариултаа сонгоно уу";
         return currentStep.index < currentStep.total - 1
           ? "Дараагийнх"
-          : "Үр дүн харах";
+          : isLesson0
+            ? "Хичээл дууслаа"
+            : "Үр дүн харах";
       case "next_lesson":
         return "Дараагийн хичээл рүү";
       default:
@@ -362,8 +374,8 @@ export function GuidedLessonPlayer({
       ) : null}
 
       <LessonPlayerShell
-        stepIndex={session.stepIndex}
-        totalSteps={progressTotal}
+        stepIndex={displayProgress.index - 1}
+        totalSteps={displayProgress.total}
         onClose={handleClose}
         onRestart={handleRestart}
         hideBottomCta={
@@ -399,11 +411,16 @@ export function GuidedLessonPlayer({
             title={currentStep.title}
             content={currentStep.content}
             items={currentStep.items}
+            showPronunciation={isLesson0}
           />
         ) : null}
 
         {currentStep?.type === "visual" ? (
-          <LessonStepVisual title={currentStep.title} lines={currentStep.lines} />
+          <LessonStepVisual
+            title={currentStep.title}
+            lines={currentStep.lines}
+            showPronunciation={isLesson0}
+          />
         ) : null}
 
         {currentStep?.type === "vocabulary_flashcard" ? (
@@ -412,6 +429,8 @@ export function GuidedLessonPlayer({
             vocabulary={currentStep.vocabulary}
             cardIndex={session.flashcardIndex}
             learned={learned}
+            screenTitle={currentStep.screenTitle}
+            showPronunciation={isLesson0}
             onMarkLearned={handleMarkLearned}
           />
         ) : null}
@@ -425,6 +444,10 @@ export function GuidedLessonPlayer({
             selected={practiceSelected}
             revealed={practiceRevealed}
             onSelect={setPracticeSelected}
+            lesson={lesson}
+            vocabulary={lesson.vocabulary}
+            pronunciationMap={lesson.vocabularyPronunciationMap}
+            showPronunciation={isLesson0}
           />
         ) : null}
 
@@ -445,6 +468,10 @@ export function GuidedLessonPlayer({
             ttsLang={ttsLang}
             courseId={lesson.courseId}
             onSelect={handleQuizSelect}
+            lesson={lesson}
+            vocabulary={lesson.vocabulary}
+            pronunciationMap={lesson.vocabularyPronunciationMap}
+            showPronunciation={isLesson0}
           />
         ) : null}
 
@@ -455,9 +482,10 @@ export function GuidedLessonPlayer({
             adminPreview={adminPreview}
             quizCorrect={session.quizCorrectCount}
             quizTotal={quizStepCount}
-            stepsCompleted={session.stepIndex}
-            totalSteps={progressTotal}
+            stepsCompleted={displayProgress.index}
+            totalSteps={displayProgress.total}
             onRestart={handleRestart}
+            simplified={isLesson0}
           />
         ) : null}
 
@@ -471,12 +499,14 @@ export function GuidedLessonPlayer({
         ) : null}
       </LessonPlayerShell>
 
-      <Link
-        href={lessonPreviewPath(lesson.id, { adminPreview })}
-        className="mt-4 block text-center text-xs text-[var(--app-muted)] hover:text-emerald-600"
-      >
-        Хичээлийн дэлгэрэнгүй рүү
-      </Link>
+      {!isLesson0 ? (
+        <Link
+          href={lessonPreviewPath(lesson.id, { adminPreview })}
+          className="mt-4 block text-center text-xs text-[var(--app-muted)] hover:text-emerald-600"
+        >
+          Хичээлийн дэлгэрэнгүй рүү
+        </Link>
+      ) : null}
     </MobileAppShell>
   );
 }

@@ -1,8 +1,9 @@
 import { prioritizePrelessonVocab, toGameVocabItem } from "@/lib/games/game-data-core";
 import { isPrelessonPackage } from "@/lib/admin/lesson-package-type";
 import { isKoreanFlashcardVocabularyLesson } from "@/lib/lesson/korean-vocabulary-ui";
+import { isKoreanLesson0BeginnerFlow, HANGUL_FOUNDATION_DISPLAY_TOTAL } from "@/lib/lesson/korean-lesson0-flow";
+import { SIMILAR_SOUND_TEACHER_BODY } from "@/lib/lesson/korean-pronunciation-hints";
 import { enhanceLessonQuizQuestions } from "@/lib/quiz/smart-options";
-import { isHangulFoundationLessonId } from "@/lib/lesson-player/resolve-training-lesson-id";
 import type { LessonContent } from "@/types/lesson-content";
 import type { QuizQuestion, SubtitleExample, VocabularyWord } from "@/types/lesson";
 import type {
@@ -78,6 +79,7 @@ function buildHangulFoundationSteps(
   const steps: LessonStep[] = [
     {
       type: "summary",
+      displayPhase: 1,
       title: "Товч танилцуулга",
       text:
         lesson.description?.trim() ||
@@ -85,31 +87,36 @@ function buildHangulFoundationSteps(
     },
     {
       type: "teacher_note",
+      displayPhase: 2,
       title: "한글 гэж юу вэ?",
       body:
         "한글 бол Солонгос хэлний бичиг үсэг. Үсгүүдийг зүгээр цуваа бичихгүй, үеийн блок болгон бичдэг.",
     },
     {
       type: "concept",
+      displayPhase: 3,
       title: "Солонгос хэл хэдэн үсэгтэй вэ?",
       content:
         "14 үндсэн гийгүүлэгч\n10 үндсэн эгшиг\nнийлмэл эгшиг, хос гийгүүлэгч нэмэгдэнэ.",
     },
     {
       type: "visual",
+      displayPhase: 4,
       title: "Үеийн бүтэц",
       lines: ["ㅎ + ㅏ + ㄴ = 한", "ㄱ + ㅡ + ㄹ = 글"],
     },
     {
       type: "concept",
-      title: "Эгшиг",
+      displayPhase: 5,
+      title: "Үндсэн эгшиг",
       content:
         "Солонгос эгшиг — дуудлагын үндсэн дуу. Эхлээд эдгээрийг сурна.",
       items: ["ㅏ", "ㅓ", "ㅗ", "ㅜ", "ㅡ", "ㅣ"],
     },
     {
       type: "concept",
-      title: "Гийгүүлэгч",
+      displayPhase: 6,
+      title: "Үндсэн гийгүүлэгч",
       content: "Гийгүүлэгч — эгшигийн өмнө эсвэл дараа залгана.",
       items: [
         "ㄱ",
@@ -129,54 +136,55 @@ function buildHangulFoundationSteps(
       ],
     },
     {
+      type: "concept",
+      displayPhase: 7,
+      title: "받침",
+      content:
+        "받침 (батчим) нь үеийн доод гийгүүлэгч. Жишээ нь 한 — доод ㄴ нь 받침.",
+      items: ["한", "글", "밥", "책"],
+    },
+    {
       type: "teacher_note",
+      displayPhase: 8,
       title: "Андуурагддаг дуудлага",
-      body: [
-        "ㅓ vs ㅗ",
-        "ㅜ vs ㅡ",
-        "ㄱ vs ㅋ vs ㄲ",
-        "ㄷ vs ㅌ vs ㄸ",
-        "ㅂ vs ㅍ vs ㅃ",
-      ].join("\n"),
+      body: SIMILAR_SOUND_TEACHER_BODY,
     },
   ];
 
   if (vocab.length > 0) {
     steps.push({
       type: "vocabulary_flashcard",
+      displayPhase: 9,
+      screenTitle: "Картаар сурах",
       vocabulary: vocab,
     });
   }
 
   steps.push({
     type: "practice",
+    displayPhase: 10,
     title: "Дасгал",
     questions: practiceQuestions,
   });
 
   steps.push({
     type: "quiz_intro",
-    title: "Өөрийгөө шалгах",
+    displayPhase: 11,
+    title: "Quiz",
     text: "Одоо богино quiz өгөөд хэр ойлгосноо шалгаарай.",
   });
 
   enhancedQuiz.forEach((question, index) => {
     steps.push({
       type: "quiz_question",
+      displayPhase: 11,
       question,
       index,
       total: enhancedQuiz.length,
     });
   });
 
-  steps.push({ type: "result" });
-
-  steps.push({
-    type: "next_lesson",
-    nextLessonId: options.nextLessonId ?? null,
-    title: lesson.title,
-    subtitle: lesson.chineseTitle,
-  });
+  steps.push({ type: "result", displayPhase: 12 });
 
   return steps;
 }
@@ -322,7 +330,7 @@ export function buildLessonSteps(
 ): LessonStep[] {
   void subtitles;
 
-  if (isHangulFoundationLessonId(lesson.id)) {
+  if (isKoreanLesson0BeginnerFlow(lesson)) {
     return buildHangulFoundationSteps(
       lesson,
       vocabulary,
@@ -344,5 +352,25 @@ export function buildLessonSteps(
 }
 
 export function countProgressSteps(steps: LessonStep[]): number {
+  const phased = steps.find((step) => step.displayPhase != null);
+  if (phased) {
+    return HANGUL_FOUNDATION_DISPLAY_TOTAL;
+  }
   return steps.filter((step) => step.type !== "result").length;
+}
+
+export function resolveDisplayProgress(
+  step: LessonStep | undefined,
+  stepIndex: number,
+  steps: LessonStep[]
+): { index: number; total: number } {
+  if (step?.displayPhase != null) {
+    return {
+      index: step.displayPhase,
+      total: HANGUL_FOUNDATION_DISPLAY_TOTAL,
+    };
+  }
+
+  const total = countProgressSteps(steps);
+  return { index: Math.min(stepIndex + 1, total), total };
 }
