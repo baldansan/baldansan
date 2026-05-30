@@ -853,6 +853,12 @@ Audited routes, navigation, Supabase-first helpers, localStorage progress, UI em
 
 ---
 
+## Guided Lesson Player — **Added**
+
+Guided lesson player added for Korean Lesson 0. Route: `/study/lesson-training/[lessonId]`. See [GUIDED_LESSON_PLAYER.md](./GUIDED_LESSON_PLAYER.md) and [KOREAN_LESSON0_QA.md](./KOREAN_LESSON0_QA.md).
+
+---
+
 ## Key documentation
 
 - [DEVELOPMENT_PLAN.md](./DEVELOPMENT_PLAN.md) — roadmap (Phase 5 next)

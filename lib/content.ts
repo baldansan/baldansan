@@ -60,6 +60,15 @@ export function lessonQuizPath(lessonId: string) {
   return `/lessons/${lessonId}/quiz`;
 }
 
+export function lessonTrainingPath(
+  lessonId: string,
+  options?: { preview?: boolean }
+) {
+  const base = `/study/lesson-training/${lessonId}`;
+  if (options?.preview) return `${base}?preview=admin`;
+  return base;
+}
+
 export function coursePath(courseId: string) {
   return `/courses/${courseId}`;
 }

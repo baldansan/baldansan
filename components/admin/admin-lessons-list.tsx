@@ -2,10 +2,9 @@
 
 import Link from "next/link";
 import { useMemo, useState } from "react";
-import { LessonPublishToggle } from "@/components/admin/lesson-publish-toggle";
+import { LessonListActions } from "@/components/admin/lesson-list-actions";
 import { LessonStatusBadge } from "@/components/admin/lesson-status-badge";
 import { EmptyState } from "@/components/empty-state";
-import { lessonPreviewPath } from "@/lib/lesson-publish";
 import { hasAudioUrl } from "@/lib/lesson-media";
 import {
   getAdminPublishStatus,
@@ -16,7 +15,6 @@ import {
   getLessonDetailedWarnings,
   getLessonShortWarnings,
 } from "@/lib/admin/lesson-short-warnings";
-import { calculateReleaseReadiness } from "@/lib/admin/release-readiness";
 import type { LessonQaReport } from "@/lib/admin/lesson-qa";
 
 type Props = {
@@ -31,6 +29,7 @@ export function AdminLessonsList({ reports }: Props) {
   const [query, setQuery] = useState("");
   const [statusFilter, setStatusFilter] = useState<AdminStatusFilter>("all");
   const [expandedId, setExpandedId] = useState<string | null>(null);
+  const [bannerMessage, setBannerMessage] = useState<string | null>(null);
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
@@ -80,6 +79,15 @@ export function AdminLessonsList({ reports }: Props) {
         </select>
       </div>
 
+      {bannerMessage ? (
+        <div
+          className="rounded-xl bg-emerald-50 px-4 py-3 text-sm font-medium text-emerald-900 ring-1 ring-emerald-200"
+          role="status"
+        >
+          {bannerMessage}
+        </div>
+      ) : null}
+
       {filtered.length === 0 ? (
         <EmptyState
           title="Хичээл олдсонгүй"
@@ -115,7 +123,6 @@ export function AdminLessonsList({ reports }: Props) {
               {filtered.map((report) => {
                 const { lesson } = report;
                 const publishStatus = getAdminPublishStatus(lesson);
-                const readiness = calculateReleaseReadiness(lesson);
                 const shortWarnings = getLessonShortWarnings(report);
                 const detailedWarnings = getLessonDetailedWarnings(report);
                 const showAdvanced = expandedId === lesson.id;
@@ -165,27 +172,12 @@ export function AdminLessonsList({ reports }: Props) {
                       {audioLabel(hasAudioUrl(lesson))}
                     </td>
                     <td className="px-4 py-3">
-                      <div className="flex min-w-[5.5rem] flex-col gap-1 text-xs font-medium">
-                        <Link
-                          href={`/admin/lessons/${lesson.id}/edit`}
-                          className="text-emerald-700 hover:text-emerald-800"
-                        >
-                          Edit
-                        </Link>
-                        <Link
-                          href={lessonPreviewPath(lesson.id, {
-                            adminPreview: publishStatus !== "available",
-                          })}
-                          className="text-slate-600 hover:text-emerald-700"
-                        >
-                          Preview
-                        </Link>
-                        <LessonPublishToggle
-                          lessonId={lesson.id}
-                          published={publishStatus === "available"}
-                          canPublish={readiness.readyToPublish}
-                        />
-                      </div>
+                      <LessonListActions
+                        lessonId={lesson.id}
+                        lessonTitle={lesson.title}
+                        publishStatus={publishStatus}
+                        onMessage={setBannerMessage}
+                      />
                     </td>
                   </tr>
                 );

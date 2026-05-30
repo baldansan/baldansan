@@ -30,6 +30,7 @@ export const ADMIN_ACTIVITY_ACTIONS = {
   lessonPublished: "lesson_published",
   lessonUnpublished: "lesson_unpublished",
   lessonArchived: "lesson_archived",
+  lessonDeleted: "lesson_deleted",
   subtitleCreated: "subtitle_created",
   subtitleDeleted: "subtitle_deleted",
   vocabularyCreated: "vocabulary_created",

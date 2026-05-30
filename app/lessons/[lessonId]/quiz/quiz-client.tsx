@@ -13,7 +13,7 @@ import {
   ctaSecondaryClass,
 } from "@/components/ui/cta-button-row";
 import { SectionCard } from "@/components/ui/section-card";
-import { coursePath } from "@/lib/content";
+import { coursePath, lessonTrainingPath } from "@/lib/content";
 import { lessonPreviewPath } from "@/lib/lesson-publish";
 import { LEARNER_LESSON, LEARNER_QUIZ } from "@/lib/learner-labels";
 import {
@@ -185,11 +185,11 @@ export function LessonQuizClient({
         </Link>
       </div>
 
-      <section>
-        <h1 className="text-xl font-bold leading-snug tracking-tight sm:text-3xl">
+      <section className="overflow-hidden">
+        <h1 className="break-words text-xl font-bold leading-snug tracking-tight sm:text-3xl">
           Quiz — {lesson.title}
         </h1>
-        <p className="mt-1 text-lg text-slate-700">{lesson.chineseTitle}</p>
+        <p className="mt-1 break-words text-lg text-slate-700">{lesson.chineseTitle}</p>
         <p className="mt-2 text-sm text-slate-600 sm:text-base">
           Сурсан үг, өгүүлбэрээ шалгаарай.
         </p>
@@ -217,13 +217,13 @@ export function LessonQuizClient({
           }
         />
       ) : finished ? (
-        <SectionCard className="ring-emerald-200">
+        <SectionCard className="overflow-hidden ring-emerald-200">
           <h2 className="text-xl font-semibold text-slate-900">Үр дүн</h2>
           <p className="mt-4 text-4xl font-bold text-emerald-600">{percent}%</p>
           <p className="mt-2 text-sm text-slate-600">
             {correctCount} / {total} зөв
           </p>
-          <p className="mt-4 text-base font-medium text-slate-800">
+          <p className="mt-4 break-words text-base font-medium leading-snug text-slate-800">
             {getResultMessage(percent)}
           </p>
           {savedResult ? (
@@ -254,7 +254,7 @@ export function LessonQuizClient({
             <LocalProgressNote />
           </div>
 
-          <div className="mt-6 flex flex-col gap-3">
+          <div className="mt-6 flex w-full max-w-full flex-col gap-3 overflow-hidden">
             <button
               type="button"
               onClick={restartQuiz}
@@ -268,18 +268,27 @@ export function LessonQuizClient({
             >
               {LEARNER_QUIZ.reviewVocab}
             </Link>
+            <Link href="/study" className={ctaSecondaryClass}>
+              Судлах хэсэг рүү
+            </Link>
+            <Link
+              href={lessonTrainingPath(lesson.id, { preview: adminPreview })}
+              className={ctaSecondaryClass}
+            >
+              Дахин үзэх
+            </Link>
             <Link
               href={lessonPreviewPath(lesson.id, {
                 adminPreview,
                 subpath: "watch",
               })}
-              className={ctaSecondaryClass}
+              className={ctaOutlineClass}
             >
               {LEARNER_QUIZ.watchLesson}
             </Link>
             {nextLessonId ? (
               <Link
-                href={lessonPreviewPath(nextLessonId, { adminPreview })}
+                href={lessonTrainingPath(nextLessonId, { preview: adminPreview })}
                 className={ctaPrimaryClass}
               >
                 {LEARNER_QUIZ.nextLesson}
