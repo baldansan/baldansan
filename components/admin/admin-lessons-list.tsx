@@ -2,163 +2,68 @@
 
 import Link from "next/link";
 import { useMemo, useState } from "react";
-import { AdminSummaryCard } from "@/components/admin/admin-summary-card";
-import { MediaStatusBadge } from "@/components/admin/media-status-badge";
-import { LessonQaBadge } from "@/components/admin/lesson-qa-badge";
+import { LessonPublishToggle } from "@/components/admin/lesson-publish-toggle";
 import { LessonStatusBadge } from "@/components/admin/lesson-status-badge";
 import { EmptyState } from "@/components/empty-state";
-import { lessonPath } from "@/lib/content";
 import { lessonPreviewPath } from "@/lib/lesson-publish";
-import {
-  hasAudioUrl,
-  hasThumbnailUrl,
-  hasVideoUrl,
-} from "@/lib/lesson-media";
+import { hasAudioUrl } from "@/lib/lesson-media";
 import {
   getAdminPublishStatus,
   matchesStatusFilter,
   type AdminStatusFilter,
 } from "@/lib/admin/lesson-status";
 import {
-  isPublishReady,
-  summarizeLessonQa,
-  type LessonQaReport,
-  type LessonQaSummary,
-  type QaFilter,
-} from "@/lib/admin/lesson-qa";
+  getLessonDetailedWarnings,
+  getLessonShortWarnings,
+} from "@/lib/admin/lesson-short-warnings";
 import { calculateReleaseReadiness } from "@/lib/admin/release-readiness";
-import {
-  ReleaseStatusBadge,
-  WorkflowQaBadge,
-} from "@/components/admin/release-workflow-badges";
-import type { LessonReleaseStatus, LessonWorkflowQaStatus } from "@/types/lesson-content";
-
-type ReleaseFilter = "all" | LessonReleaseStatus;
-type WorkflowQaFilter = "all" | LessonWorkflowQaStatus;
-type ReadinessFilter = "all" | "ready" | "needs_review";
-
-type PageSummary = {
-  totalLessons: number;
-  needsReview: number;
-  readyToPublish: number;
-  mediaMissing: number;
-};
+import type { LessonQaReport } from "@/lib/admin/lesson-qa";
 
 type Props = {
   reports: LessonQaReport[];
-  pageSummary?: PageSummary;
 };
 
-export function AdminLessonsList({ reports, pageSummary }: Props) {
+function audioLabel(hasAudio: boolean): string {
+  return hasAudio ? "✓" : "—";
+}
+
+export function AdminLessonsList({ reports }: Props) {
   const [query, setQuery] = useState("");
   const [statusFilter, setStatusFilter] = useState<AdminStatusFilter>("all");
-  const [qaFilter, setQaFilter] = useState<QaFilter>("all");
-  const [releaseFilter, setReleaseFilter] = useState<ReleaseFilter>("all");
-  const [workflowQaFilter, setWorkflowQaFilter] =
-    useState<WorkflowQaFilter>("all");
-  const [readinessFilter, setReadinessFilter] =
-    useState<ReadinessFilter>("all");
-
-  const summary: LessonQaSummary = useMemo(
-    () => summarizeLessonQa(reports),
-    [reports]
-  );
+  const [expandedId, setExpandedId] = useState<string | null>(null);
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
     return reports.filter((report) => {
       const { lesson } = report;
       if (!matchesStatusFilter(lesson, statusFilter)) return false;
-      if (qaFilter !== "all" && report.qaStatus !== qaFilter) return false;
-      const releaseStatus = lesson.releaseStatus ?? "draft";
-      const workflowQa = lesson.qaStatus ?? "needs_review";
-      if (releaseFilter !== "all" && releaseStatus !== releaseFilter) {
-        return false;
-      }
-      if (workflowQaFilter !== "all" && workflowQa !== workflowQaFilter) {
-        return false;
-      }
-      const readiness = calculateReleaseReadiness(lesson);
-      if (readinessFilter === "ready" && !readiness.readyToPublish) {
-        return false;
-      }
-      if (readinessFilter === "needs_review" && readiness.readyToPublish) {
-        return false;
-      }
       if (!q) return true;
       return (
         lesson.id.toLowerCase().includes(q) ||
         lesson.title.toLowerCase().includes(q) ||
         lesson.chineseTitle.toLowerCase().includes(q) ||
-        lesson.subtitle.toLowerCase().includes(q) ||
-        lesson.description.toLowerCase().includes(q)
+        lesson.courseId.toLowerCase().includes(q)
       );
     });
-  }, [reports, query, statusFilter, qaFilter, releaseFilter, workflowQaFilter, readinessFilter]);
+  }, [reports, query, statusFilter]);
 
   return (
     <div className="flex flex-col gap-6">
       <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
         <div>
-          <h1 className="text-2xl font-bold text-slate-900">Lesson Management</h1>
+          <h1 className="text-2xl font-bold text-slate-900">Lessons</h1>
           <p className="mt-1 text-sm text-slate-600">
-            Хичээлүүдийн контентын бүрэн байдал, статус, preview-г шалгана.
+            {reports.length} хичээл
           </p>
         </div>
-        <div className="flex flex-wrap gap-2">
-          <Link
-            href="/admin/import"
-            className="inline-flex w-fit rounded-full border border-emerald-200 bg-emerald-50 px-5 py-2.5 text-sm font-semibold text-emerald-800 transition-colors hover:bg-emerald-100"
-          >
-            ZIP import хийх
-          </Link>
-          <Link
-            href="/admin/lessons/new"
-            className="inline-flex w-fit rounded-full bg-emerald-500 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-emerald-600"
-          >
-            + Шинэ хичээл
-          </Link>
-        </div>
       </div>
 
-      <div className="grid grid-cols-2 gap-3 sm:grid-cols-4 lg:grid-cols-8">
-        <AdminSummaryCard
-          label="Total lessons"
-          value={pageSummary?.totalLessons ?? summary.totalLessons}
-        />
-        <AdminSummaryCard
-          label="Needs review"
-          value={pageSummary?.needsReview ?? summary.needsReviewCount}
-        />
-        <AdminSummaryCard
-          label="Ready to publish"
-          value={pageSummary?.readyToPublish ?? summary.completeCount}
-        />
-        <AdminSummaryCard
-          label="Media missing"
-          value={pageSummary?.mediaMissing ?? summary.mediaMissingCount}
-        />
-        <AdminSummaryCard label="Available" value={summary.availableCount} />
-        <AdminSummaryCard
-          label="Media ready"
-          value={summary.mediaReadyCount}
-        />
-        <AdminSummaryCard
-          label="Total vocabulary"
-          value={summary.totalVocabulary}
-        />
-        <AdminSummaryCard
-          label="Total quiz Q"
-          value={summary.totalQuizQuestions}
-        />
-      </div>
-
-      <div className="flex flex-col gap-3 lg:flex-row lg:flex-wrap">
+      <div className="flex flex-col gap-3 sm:flex-row">
         <input
           type="search"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          placeholder="Хайх: гарчиг, китай, тайлбар..."
+          placeholder="Хайх: гарчиг, ID, курс..."
           className="min-w-[200px] flex-1 rounded-xl border border-slate-200 px-3 py-2 text-sm outline-none focus:border-emerald-400 focus:ring-2 focus:ring-emerald-100"
           aria-label="Хичээл хайх"
         />
@@ -168,60 +73,10 @@ export function AdminLessonsList({ reports, pageSummary }: Props) {
           className="rounded-xl border border-slate-200 px-3 py-2 text-sm outline-none focus:border-emerald-400"
           aria-label="Статус шүүлт"
         >
-          <option value="all">Status: All</option>
-          <option value="draft">draft</option>
-          <option value="available">available</option>
-          <option value="archived">archived</option>
-        </select>
-        <select
-          value={qaFilter}
-          onChange={(e) => setQaFilter(e.target.value as QaFilter)}
-          className="rounded-xl border border-slate-200 px-3 py-2 text-sm outline-none focus:border-emerald-400"
-          aria-label="QA шүүлт"
-        >
-          <option value="all">QA: All</option>
-          <option value="complete">Complete</option>
-          <option value="needs_review">Needs review</option>
-        </select>
-        <select
-          value={releaseFilter}
-          onChange={(e) =>
-            setReleaseFilter(e.target.value as ReleaseFilter)
-          }
-          className="rounded-xl border border-slate-200 px-3 py-2 text-sm outline-none focus:border-emerald-400"
-          aria-label="Release status filter"
-        >
-          <option value="all">Release: All</option>
-          <option value="draft">draft</option>
-          <option value="in_review">in_review</option>
-          <option value="approved">approved</option>
-          <option value="published">published</option>
-          <option value="archived">archived</option>
-        </select>
-        <select
-          value={workflowQaFilter}
-          onChange={(e) =>
-            setWorkflowQaFilter(e.target.value as WorkflowQaFilter)
-          }
-          className="rounded-xl border border-slate-200 px-3 py-2 text-sm outline-none focus:border-emerald-400"
-          aria-label="Release QA filter"
-        >
-          <option value="all">Release QA: All</option>
-          <option value="needs_review">needs_review</option>
-          <option value="passed">passed</option>
-          <option value="failed">failed</option>
-        </select>
-        <select
-          value={readinessFilter}
-          onChange={(e) =>
-            setReadinessFilter(e.target.value as ReadinessFilter)
-          }
-          className="rounded-xl border border-slate-200 px-3 py-2 text-sm outline-none focus:border-emerald-400"
-          aria-label="Readiness filter"
-        >
-          <option value="all">Readiness: All</option>
-          <option value="ready">Ready to publish</option>
-          <option value="needs_review">Needs review</option>
+          <option value="all">Бүх статус</option>
+          <option value="draft">Ноорог</option>
+          <option value="available">Нийтлэгдсэн</option>
+          <option value="archived">Архив</option>
         </select>
       </div>
 
@@ -230,15 +85,15 @@ export function AdminLessonsList({ reports, pageSummary }: Props) {
           title="Хичээл олдсонгүй"
           description={
             reports.length === 0
-              ? "HSK5 курс дээр хичээл байхгүй. Supabase эсвэл local fallback шалгана уу."
+              ? "Одоогоор хичээл байхгүй. Import ZIP эсвэл шинэ хичээл үүсгэнэ үү."
               : "Хайлт эсвэл шүүлтийг өөрчилж үзнэ үү."
           }
           action={
             <Link
-              href="/admin/lessons/new"
+              href="/admin/import"
               className="text-sm font-medium text-emerald-700 hover:text-emerald-800"
             >
-              Шинэ хичээл skeleton →
+              Import ZIP →
             </Link>
           }
         />
@@ -247,169 +102,89 @@ export function AdminLessonsList({ reports, pageSummary }: Props) {
           <table className="min-w-full text-left text-sm">
             <thead className="border-b border-slate-100 bg-slate-50/80 text-xs font-medium uppercase tracking-wide text-slate-500">
               <tr>
-                <th className="px-3 py-3">ID</th>
-                <th className="px-3 py-3">Lesson</th>
-                <th className="px-3 py-3">Status</th>
-                <th className="hidden px-3 py-3 lg:table-cell">Release</th>
-                <th className="hidden px-3 py-3 lg:table-cell">Rel. QA</th>
-                <th className="px-3 py-3">Media</th>
-                <th className="px-3 py-3">QA</th>
-                <th className="hidden px-3 py-3 sm:table-cell">Ready</th>
-                <th className="hidden px-3 py-3 md:table-cell">Counts</th>
-                <th className="hidden px-3 py-3 lg:table-cell">Warnings</th>
-                <th className="px-3 py-3">Links</th>
+                <th className="px-4 py-3">Lesson</th>
+                <th className="px-4 py-3">Course</th>
+                <th className="px-4 py-3">Status</th>
+                <th className="px-4 py-3">Vocab</th>
+                <th className="px-4 py-3">Quiz</th>
+                <th className="px-4 py-3">Audio</th>
+                <th className="px-4 py-3">Actions</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-slate-100">
               {filtered.map((report) => {
                 const { lesson } = report;
                 const publishStatus = getAdminPublishStatus(lesson);
-                const publishReady = isPublishReady(report);
                 const readiness = calculateReleaseReadiness(lesson);
+                const shortWarnings = getLessonShortWarnings(report);
+                const detailedWarnings = getLessonDetailedWarnings(report);
+                const showAdvanced = expandedId === lesson.id;
+
                 return (
                   <tr key={lesson.id} className="align-top hover:bg-emerald-50/30">
-                    <td className="px-3 py-3 font-mono text-xs">{lesson.id}</td>
-                    <td className="px-3 py-3">
+                    <td className="px-4 py-3">
                       <p className="font-medium text-slate-900">{lesson.title}</p>
                       <p className="text-xs text-slate-500">{lesson.chineseTitle}</p>
-                      <p className="mt-1 text-xs text-slate-400">{lesson.duration}</p>
-                    </td>
-                    <td className="px-3 py-3">
-                      <LessonStatusBadge status={publishStatus} />
-                    </td>
-                    <td className="hidden px-3 py-3 lg:table-cell">
-                      <ReleaseStatusBadge status={lesson.releaseStatus} />
-                    </td>
-                    <td className="hidden px-3 py-3 lg:table-cell">
-                      <WorkflowQaBadge status={lesson.qaStatus} />
-                    </td>
-                    <td className="px-3 py-3">
-                      <MediaStatusBadge status={lesson.mediaStatus} />
-                      <div className="mt-1.5 flex flex-wrap gap-1 text-[10px] font-medium text-slate-500">
-                        <span
-                          className={
-                            hasThumbnailUrl(lesson)
-                              ? "text-emerald-700"
-                              : "text-slate-400"
+                      {shortWarnings.length > 0 ? (
+                        <p className="mt-1 text-xs text-amber-800">
+                          {shortWarnings.join(" · ")}
+                        </p>
+                      ) : null}
+                      {detailedWarnings.length > shortWarnings.length ? (
+                        <button
+                          type="button"
+                          onClick={() =>
+                            setExpandedId(showAdvanced ? null : lesson.id)
                           }
+                          className="mt-1 text-xs font-medium text-slate-500 hover:text-emerald-700"
                         >
-                          Th {hasThumbnailUrl(lesson) ? "✓" : "—"}
-                        </span>
-                        <span
-                          className={
-                            hasVideoUrl(lesson)
-                              ? "text-emerald-700"
-                              : "text-slate-400"
-                          }
-                        >
-                          Vid {hasVideoUrl(lesson) ? "✓" : "—"}
-                        </span>
-                        <span
-                          className={
-                            hasAudioUrl(lesson)
-                              ? "text-emerald-700"
-                              : "text-slate-400"
-                          }
-                        >
-                          Aud {hasAudioUrl(lesson) ? "✓" : "—"}
-                        </span>
-                      </div>
-                    </td>
-                    <td className="px-3 py-3">
-                      <LessonQaBadge status={report.qaStatus} />
-                    </td>
-                    <td className="hidden px-3 py-3 sm:table-cell">
-                      {readiness.readyToPublish ? (
-                        <span className="inline-flex rounded-full bg-emerald-50 px-2.5 py-0.5 text-xs font-medium text-emerald-800 ring-1 ring-emerald-200">
-                          Publish-ready
-                        </span>
-                      ) : publishReady ? (
-                        <span className="inline-flex rounded-full bg-sky-50 px-2.5 py-0.5 text-xs font-medium text-sky-800 ring-1 ring-sky-200">
-                          Content OK
-                        </span>
-                      ) : (
-                        <span className="text-xs text-slate-400">
-                          {readiness.issues.length} issue(s)
-                        </span>
-                      )}
-                    </td>
-                    <td className="hidden px-3 py-3 text-xs text-slate-600 md:table-cell">
-                      <p>Meta: {report.hasMetadata ? "✓" : "—"}</p>
-                      <p>
-                        Sub: {report.subtitleCount} · Voc:{" "}
-                        {report.vocabularyActual}/{lesson.vocabularyCount} · Quiz:{" "}
-                        {report.quizActual}/{lesson.quizCount}
-                      </p>
-                    </td>
-                    <td className="hidden max-w-[10rem] px-3 py-3 lg:table-cell">
-                      {report.warnings.length > 0 ? (
-                        <ul className="list-inside list-disc text-xs text-amber-800">
-                          {report.warnings.map((w) => (
+                          {showAdvanced ? "Hide" : "Advanced details"} ▾
+                        </button>
+                      ) : null}
+                      {showAdvanced ? (
+                        <ul className="mt-2 list-inside list-disc text-xs text-slate-600">
+                          {detailedWarnings.map((w) => (
                             <li key={w}>{w}</li>
                           ))}
                         </ul>
-                      ) : (
-                        <span className="text-xs text-emerald-700">OK</span>
-                      )}
+                      ) : null}
                     </td>
-                    <td className="px-3 py-3">
-                      <div className="flex min-w-[7rem] flex-col gap-0.5 text-xs font-medium">
-                        {publishStatus === "available" ? (
-                          <Link
-                            href={lessonPath(lesson.id)}
-                            className="text-slate-600 hover:text-emerald-700"
-                          >
-                            Public preview
-                          </Link>
-                        ) : (
-                          <Link
-                            href={lessonPreviewPath(lesson.id, {
-                              adminPreview: true,
-                            })}
-                            className="text-amber-800 hover:text-amber-900"
-                          >
-                            Admin preview
-                          </Link>
-                        )}
-                        <Link
-                          href={lessonPreviewPath(lesson.id, {
-                            adminPreview: publishStatus !== "available",
-                            subpath: "watch",
-                          })}
-                          className="text-slate-600 hover:text-emerald-700"
-                        >
-                          Watch
-                        </Link>
-                        <Link
-                          href={lessonPreviewPath(lesson.id, {
-                            adminPreview: publishStatus !== "available",
-                            subpath: "vocabulary",
-                          })}
-                          className="text-slate-600 hover:text-emerald-700"
-                        >
-                          Vocabulary
-                        </Link>
-                        <Link
-                          href={lessonPreviewPath(lesson.id, {
-                            adminPreview: publishStatus !== "available",
-                            subpath: "quiz",
-                          })}
-                          className="text-slate-600 hover:text-emerald-700"
-                        >
-                          Quiz
-                        </Link>
-                        <Link
-                          href={`/admin/analytics/lessons/${lesson.id}`}
-                          className="text-emerald-700 hover:text-emerald-800"
-                        >
-                          Analytics
-                        </Link>
+                    <td className="px-4 py-3 text-xs text-slate-600">
+                      {lesson.courseId}
+                    </td>
+                    <td className="px-4 py-3">
+                      <LessonStatusBadge status={publishStatus} />
+                    </td>
+                    <td className="px-4 py-3 text-slate-700">
+                      {report.vocabularyActual}
+                    </td>
+                    <td className="px-4 py-3 text-slate-700">
+                      {report.quizActual}
+                    </td>
+                    <td className="px-4 py-3 text-slate-700">
+                      {audioLabel(hasAudioUrl(lesson))}
+                    </td>
+                    <td className="px-4 py-3">
+                      <div className="flex min-w-[5.5rem] flex-col gap-1 text-xs font-medium">
                         <Link
                           href={`/admin/lessons/${lesson.id}/edit`}
                           className="text-emerald-700 hover:text-emerald-800"
                         >
                           Edit
                         </Link>
+                        <Link
+                          href={lessonPreviewPath(lesson.id, {
+                            adminPreview: publishStatus !== "available",
+                          })}
+                          className="text-slate-600 hover:text-emerald-700"
+                        >
+                          Preview
+                        </Link>
+                        <LessonPublishToggle
+                          lessonId={lesson.id}
+                          published={publishStatus === "available"}
+                          canPublish={readiness.readyToPublish}
+                        />
                       </div>
                     </td>
                   </tr>

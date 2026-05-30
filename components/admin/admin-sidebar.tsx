@@ -3,9 +3,25 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import {
-  ADMIN_NAV_SECTIONS,
+  ADMIN_NAV_ADVANCED,
+  ADMIN_NAV_PRIMARY,
   ADMIN_NAV_SECONDARY,
 } from "@/lib/admin/admin-nav";
+
+function NavLink({ item, pathname }: { item: (typeof ADMIN_NAV_PRIMARY)[0]; pathname: string }) {
+  const active = item.match(pathname);
+  return (
+    <Link
+      href={item.href}
+      className={`admin-sidebar-link ${active ? "admin-sidebar-link-active" : ""}`}
+    >
+      <span aria-hidden className="text-base">
+        {item.icon}
+      </span>
+      <span>{item.label}</span>
+    </Link>
+  );
+}
 
 export function AdminSidebar() {
   const pathname = usePathname();
@@ -16,52 +32,37 @@ export function AdminSidebar() {
         <p className="text-xs font-semibold uppercase tracking-wider text-slate-400">
           Buunduu Surtsgaay
         </p>
-        <p className="mt-1 text-base font-bold text-white">Content Factory</p>
+        <p className="mt-1 text-base font-bold text-white">Admin CMS</p>
       </div>
       <nav className="flex-1 overflow-y-auto px-3 py-4">
-        {ADMIN_NAV_SECTIONS.map((section) => (
-          <div key={section.title} className="mb-5">
-            <p className="mb-2 px-3 text-[10px] font-bold uppercase tracking-wider text-slate-500">
-              {section.title}
-            </p>
-            <ul className="flex flex-col gap-0.5">
-              {section.items.map((item) => {
-                const active = item.match(pathname);
-                return (
-                  <li key={item.href}>
-                    <Link
-                      href={item.href}
-                      className={`admin-sidebar-link ${active ? "admin-sidebar-link-active" : ""}`}
-                    >
-                      <span aria-hidden className="text-base">
-                        {item.icon}
-                      </span>
-                      <span>{item.label}</span>
-                    </Link>
-                  </li>
-                );
-              })}
-            </ul>
-          </div>
-        ))}
-        <div className="border-t border-white/10 pt-4">
+        <ul className="flex flex-col gap-0.5">
+          {ADMIN_NAV_PRIMARY.map((item) => (
+            <li key={item.href}>
+              <NavLink item={item} pathname={pathname} />
+            </li>
+          ))}
+        </ul>
+
+        <details className="mt-5 border-t border-white/10 pt-4">
+          <summary className="cursor-pointer list-none px-3 py-2 text-[10px] font-bold uppercase tracking-wider text-slate-500 [&::-webkit-details-marker]:hidden">
+            Advanced ▾
+          </summary>
+          <ul className="mt-1 flex flex-col gap-0.5">
+            {ADMIN_NAV_ADVANCED.map((item) => (
+              <li key={item.href}>
+                <NavLink item={item} pathname={pathname} />
+              </li>
+            ))}
+          </ul>
+        </details>
+
+        <div className="mt-5 border-t border-white/10 pt-4">
           <ul className="flex flex-col gap-0.5">
-            {ADMIN_NAV_SECONDARY.map((item) => {
-              const active = item.match(pathname);
-              return (
-                <li key={item.href}>
-                  <Link
-                    href={item.href}
-                    className={`admin-sidebar-link ${active ? "admin-sidebar-link-active" : ""}`}
-                  >
-                    <span aria-hidden className="text-base">
-                      {item.icon}
-                    </span>
-                    <span>{item.label}</span>
-                  </Link>
-                </li>
-              );
-            })}
+            {ADMIN_NAV_SECONDARY.map((item) => (
+              <li key={item.href}>
+                <NavLink item={item} pathname={pathname} />
+              </li>
+            ))}
           </ul>
         </div>
       </nav>

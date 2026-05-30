@@ -6,6 +6,9 @@ import {
   type LessonZipValidation,
 } from "@/lib/import/lesson-zip-import";
 import { buildZipImportContext } from "@/lib/import/lesson-zip-normalize";
+import { detectLessonPackageType } from "@/lib/import/detect-lesson-package-type";
+import { peekZipPackageDetection } from "@/lib/import/zip-package-peek";
+import { buildWrongImporterValidation } from "@/lib/import/wrong-importer-validation";
 import { validateLessonImportPayload } from "@/lib/supabase/admin-import";
 
 function zipPathExists(paths: Set<string>, ref: string): boolean {
@@ -122,6 +125,21 @@ export function validateChineseLessonZipPackage(
 
 /** Parse a Chinese/HSK lesson ZIP with Chinese-specific validation. */
 export async function parseChineseLessonZip(file: File): Promise<LessonZipValidation> {
+  const peek = await peekZipPackageDetection(file);
+  const detected = detectLessonPackageType(peek);
+  if (detected.type === "korean") {
+    return buildWrongImporterValidation("chinese", {
+      type: "korean",
+      reason: detected.reason,
+    });
+  }
+
   const parsed = await parseLessonZip(file);
+  if (detected.type === "unknown" && parsed.importContext?.isKorean) {
+    return buildWrongImporterValidation("chinese", {
+      type: "korean",
+      reason: "Package context resolved as Korean during parse",
+    });
+  }
   return validateChineseLessonZipPackage(parsed);
 }

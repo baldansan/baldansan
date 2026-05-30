@@ -1,6 +1,7 @@
 /** Multilingual normalization for lesson ZIP packages (Korean + Chinese/HSK). */
 
 import { inferLanguageFromCourseId } from "@/lib/language-track";
+import type { TeachingImageRef } from "@/lib/lesson/teaching-media";
 
 export type ZipImportContext = {
   courseId: string;
@@ -48,6 +49,7 @@ export type NormalizedZipLesson = {
   sourceNote?: string;
   contentType?: string;
   lessonType?: string;
+  teachingImages?: TeachingImageRef[];
 };
 
 export type NormalizedZipVocabulary = {
@@ -58,6 +60,7 @@ export type NormalizedZipVocabulary = {
   hskLevel: string | null;
   exampleChinese: string | null;
   exampleMongolian: string | null;
+  audioFile?: string;
 };
 
 export type NormalizedZipQuiz = {

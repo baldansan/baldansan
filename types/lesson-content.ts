@@ -1,5 +1,6 @@
 import type { LessonPackageType } from "@/lib/admin/lesson-package-type";
 import type { LessonContentType } from "@/lib/lesson-content-type";
+import type { TeachingImage } from "@/lib/lesson/teaching-media";
 import type {
   QuizQuestion,
   SubtitleExample,
@@ -72,6 +73,10 @@ export type LessonContent = {
   vocabulary: VocabularyWord[];
   quizQuestions: QuizQuestion[];
   quizTypes: string[];
+  /** Parsed from source_note after ZIP import — teaching diagrams. */
+  teachingImages?: TeachingImage[];
+  /** Parsed from source_note — vocab id/chinese → audio URL map. */
+  vocabularyAudioMap?: Record<string, string>;
 };
 
 export type CourseContent = {

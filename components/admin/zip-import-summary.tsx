@@ -28,7 +28,10 @@ function statusTone(status: ZipImportSummaryStatus): string {
 export function getZipImportSummaryStatus(
   validation: LessonZipValidation | null
 ): ZipImportSummaryStatus {
-  if (!validation || !validation.ok || validation.errors.length > 0) {
+  if (!validation || validation.wrongImporter) {
+    return "failed";
+  }
+  if (!validation.ok || validation.errors.length > 0) {
     return "failed";
   }
   if (validation.warnings.length > 0) {
@@ -37,75 +40,36 @@ export function getZipImportSummaryStatus(
   return "ready";
 }
 
-function buildMissingItems(
+function buildExtraInfo(
   preview: LessonImportPreview,
   validation: LessonZipValidation,
-  track: LessonImportTrack = "legacy"
+  track: LessonImportTrack
 ): string[] {
+  if (track === "korean" || validation.wrongImporter) {
+    return [];
+  }
+
   const prelesson = isPrelessonPackage({
     id: preview.lessonId,
     courseId: preview.courseId,
     sourceNote: preview.source,
   });
 
-  const critical: string[] = [];
-  const warnings: string[] = [];
-
-  for (const err of validation.errors) {
-    critical.push(err);
+  const info: string[] = [];
+  if (preview.audioFileCount === 0) {
+    info.push(
+      prelesson ? "Audio байхгүй — PreLesson тул OK" : "Audio missing (optional)"
+    );
   }
-
-  for (const warning of validation.warnings) {
-    if (track === "korean") {
-      if (
-        warning.includes("TTS") ||
-        warning.includes("info only") ||
-        warning.includes("optional") ||
-        warning.includes("recommended") ||
-        warning.includes("reference-only") ||
-        warning.includes("missing — OK")
-      ) {
-        warnings.push(warning);
-      } else if (
-        !warning.includes("pinyin") &&
-        !warning.includes("HSK") &&
-        !warning.includes("icon missing")
-      ) {
-        warnings.push(warning);
-      }
-    } else {
-      warnings.push(warning);
-    }
+  if (preview.imageFileCount === 0) {
+    info.push(prelesson ? "Images байхгүй — OK" : "Images missing (optional)");
   }
-
-  if (track !== "korean") {
-    if (preview.audioFileCount === 0) {
-      warnings.push(
-        prelesson ? "Audio байхгүй — PreLesson тул OK" : "Audio missing (optional)"
-      );
-    }
-    if (preview.imageFileCount === 0) {
-      warnings.push(prelesson ? "Images байхгүй — OK" : "Images missing (optional)");
-    }
-    if (preview.subtitleCount === 0) {
-      warnings.push(
-        prelesson ? "Subtitles байхгүй — OK" : "Subtitles missing (optional)"
-      );
-    }
+  if (preview.subtitleCount === 0) {
+    info.push(
+      prelesson ? "Subtitles байхгүй — OK" : "Subtitles missing (optional)"
+    );
   }
-
-  if (preview.vocabularyCount === 0) {
-    critical.push("Vocabulary missing");
-  }
-  if (preview.quizCount === 0 && track === "korean") {
-    critical.push("Quiz missing");
-  } else if (preview.quizCount === 0 && track === "chinese") {
-    warnings.push("Quiz missing (optional for some HSK packages)");
-  } else if (preview.quizCount === 0) {
-    warnings.push("Quiz missing");
-  }
-
-  return [...critical, ...warnings];
+  return info;
 }
 
 function SummaryField({
@@ -125,6 +89,36 @@ function SummaryField({
   );
 }
 
+function MessageList({
+  title,
+  items,
+  tone,
+}: {
+  title: string;
+  items: string[];
+  tone: "red" | "amber" | "slate";
+}) {
+  if (items.length === 0) return null;
+
+  const toneClass =
+    tone === "red"
+      ? "bg-red-50 text-red-900 ring-red-200"
+      : tone === "amber"
+        ? "bg-amber-50 text-amber-900 ring-amber-200"
+        : "bg-slate-50 text-slate-700 ring-slate-200";
+
+  return (
+    <div className={`rounded-xl p-4 ring-1 ${toneClass}`}>
+      <h3 className="text-sm font-semibold">{title}</h3>
+      <ul className="mt-2 list-disc space-y-1 pl-5 text-sm">
+        {items.map((item) => (
+          <li key={item}>{item}</li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
 type Props = {
   preview: LessonImportPreview;
   validation: LessonZipValidation;
@@ -133,15 +127,15 @@ type Props = {
 
 export function ZipImportSummary({ preview, validation, track = "legacy" }: Props) {
   const status = getZipImportSummaryStatus(validation);
-  const missingItems = buildMissingItems(preview, validation, track);
-  const criticalCount = validation.errors.length;
+  const infoItems = [
+    ...(validation.info ?? []),
+    ...buildExtraInfo(preview, validation, track),
+  ];
 
   return (
     <section className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:p-6">
       <div className="flex flex-wrap items-start justify-between gap-3">
-        <h2 className="text-lg font-semibold text-slate-900">
-          Import summary
-        </h2>
+        <h2 className="text-lg font-semibold text-slate-900">Import summary</h2>
         <span
           className={`inline-flex rounded-full px-3 py-1 text-xs font-semibold ring-1 ${statusTone(status)}`}
         >
@@ -160,22 +154,25 @@ export function ZipImportSummary({ preview, validation, track = "legacy" }: Prop
         <SummaryField label="Image count" value={preview.imageFileCount} />
       </dl>
 
-      {missingItems.length > 0 ? (
-        <div className="mt-5">
-          <h3 className="text-sm font-semibold text-slate-900">
-            {track === "korean" && criticalCount === 0
-              ? "Checks (warnings are non-blocking)"
-              : "Missing items"}
-          </h3>
-          <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-amber-900">
-            {missingItems.map((item) => (
-              <li key={item}>{item}</li>
-            ))}
-          </ul>
-        </div>
-      ) : (
+      <div className="mt-5 flex flex-col gap-3">
+        <MessageList
+          title="Critical errors — import blocked"
+          items={validation.errors}
+          tone="red"
+        />
+        <MessageList
+          title="Warnings — import allowed"
+          items={validation.warnings}
+          tone="amber"
+        />
+        <MessageList title="Info" items={infoItems} tone="slate" />
+      </div>
+
+      {validation.errors.length === 0 &&
+      validation.warnings.length === 0 &&
+      infoItems.length === 0 ? (
         <p className="mt-5 text-sm text-emerald-800">Бүх шаардлагатай өгөгдөл бэлэн.</p>
-      )}
+      ) : null}
     </section>
   );
 }

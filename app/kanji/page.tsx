@@ -4,7 +4,7 @@ import { getAllPublicLessonsProbe } from "@/lib/content";
 export const dynamic = "force-dynamic";
 
 export const metadata = {
-  title: "Ханз — Бөөндөө Сурцгаая",
+  title: "Үсэг — Бөөндөө Сурцгаая",
 };
 
 export default async function KanjiPage() {

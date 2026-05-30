@@ -1,9 +1,12 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { GamePracticeLinks } from "@/components/games/game-practice-links";
 import { SpeakerButton } from "@/components/tts/speaker-button";
+import { lettersDetailLinkLabel } from "@/lib/learner-letters-ui";
+import { getSelectedLanguage } from "@/lib/learner-onboarding";
+import { resolveKoreanTtsLang } from "@/lib/lesson/teaching-media";
 import { resolveTtsLang } from "@/lib/tts/infer-lang";
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
 import { MobileCard } from "@/components/mobile/mobile-card";
@@ -12,15 +15,23 @@ import type { VocabularyWord } from "@/types/lesson";
 type Props = {
   word: VocabularyWord;
   lessonId: string;
+  courseId?: string;
   taskCount: number;
 };
 
 type SheetMode = "write" | "listen" | null;
 
-export function KanjiDetailClient({ word, lessonId, taskCount }: Props) {
+export function KanjiDetailClient({ word, lessonId, courseId, taskCount }: Props) {
   const [sheet, setSheet] = useState<SheetMode>(null);
+  const [lang, setLang] = useState<ReturnType<typeof getSelectedLanguage>>(null);
   const vocabHref = `/kanji/${encodeURIComponent(word.id || word.chinese)}?lessonId=${lessonId}`;
-  const ttsLang = resolveTtsLang({ hskLevel: word.hskLevel });
+  const ttsLang = courseId
+    ? resolveKoreanTtsLang({ courseId })
+    : resolveTtsLang({ hskLevel: word.hskLevel });
+
+  useEffect(() => {
+    setLang(getSelectedLanguage());
+  }, []);
 
   return (
     <MobileAppShell activeTab="kanji" showBottomNav={sheet == null}>
@@ -34,7 +45,7 @@ export function KanjiDetailClient({ word, lessonId, taskCount }: Props) {
         </Link>
         <div className="min-w-0 flex-1">
           <h1 className="truncate text-base font-bold text-[var(--app-text)]">
-            Ханз дэлгэрэнгүй
+            {lettersDetailLinkLabel(lang)}
           </h1>
         </div>
         <span className="rounded-full bg-emerald-100 px-2.5 py-1 text-xs font-bold text-emerald-700">
@@ -48,7 +59,9 @@ export function KanjiDetailClient({ word, lessonId, taskCount }: Props) {
           <SpeakerButton
             text={word.chinese}
             lang={ttsLang}
+            courseId={courseId}
             hskLevel={word.hskLevel}
+            audioUrl={word.audioUrl}
             size="md"
           />
         </div>
@@ -68,7 +81,9 @@ export function KanjiDetailClient({ word, lessonId, taskCount }: Props) {
             <SpeakerButton
               text={word.exampleChinese}
               lang={ttsLang}
+              courseId={courseId}
               hskLevel={word.hskLevel}
+              audioUrl={word.audioUrl}
               size="sm"
             />
           </div>

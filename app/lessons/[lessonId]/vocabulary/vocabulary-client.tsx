@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import { GamePracticeLinks } from "@/components/games/game-practice-links";
+import { VocabularyFlashcardStudy } from "@/components/lesson/vocabulary-flashcard-study";
 import { isPrelessonPackage } from "@/lib/admin/lesson-package-type";
 import { EmptyState } from "@/components/empty-state";
 import { LocalProgressNote } from "@/components/local-progress-note";
@@ -20,6 +21,12 @@ import { LEARNER_LESSON } from "@/lib/learner-labels";
 import { lettersDetailLinkLabel } from "@/lib/learner-letters-ui";
 import { getSelectedLanguage } from "@/lib/learner-onboarding";
 import { inferLessonLanguage } from "@/lib/language-track";
+import {
+  isKoreanFlashcardVocabularyLesson,
+  koreanVocabularyPageTitle,
+  resolveInitialVocabularyViewMode,
+  type VocabularyViewMode,
+} from "@/lib/lesson/korean-vocabulary-ui";
 import { enrichVocabularyWithDbIds } from "@/lib/supabase/content";
 import {
   getLearnedWordsSmart,
@@ -27,7 +34,10 @@ import {
   vocabularyWordKey,
 } from "@/lib/progress";
 import { SpeakerButton } from "@/components/tts/speaker-button";
-import { resolveTtsLang } from "@/lib/tts/infer-lang";
+import {
+  resolveKoreanTtsLang,
+  resolveVocabularyAudioUrl,
+} from "@/lib/lesson/teaching-media";
 import type { LessonContent } from "@/types/lesson-content";
 import type { VocabularyFilter, VocabularyWord } from "@/types/lesson";
 
@@ -43,11 +53,13 @@ const allFilters: { id: VocabularyFilter; label: string }[] = [
 type Props = {
   lesson: LessonContent;
   adminPreview?: boolean;
+  initialView?: string;
 };
 
 export function LessonVocabularyClient({
   lesson,
   adminPreview = false,
+  initialView,
 }: Props) {
   const [search, setSearch] = useState("");
   const [filter, setFilter] = useState<VocabularyFilter>("all");
@@ -56,6 +68,16 @@ export function LessonVocabularyClient({
   const [lang, setLang] = useState<ReturnType<typeof getSelectedLanguage>>(null);
   const isKorean = inferLessonLanguage(lesson) === "ko";
   const isPrelesson = isPrelessonPackage(lesson);
+  const useFlashcardDefault = isKoreanFlashcardVocabularyLesson(lesson, vocabulary);
+  const [viewMode, setViewMode] = useState<VocabularyViewMode>(() =>
+    resolveInitialVocabularyViewMode(lesson, lesson.vocabulary, initialView)
+  );
+
+  useEffect(() => {
+    if (initialView) {
+      setViewMode(resolveInitialVocabularyViewMode(lesson, vocabulary, initialView));
+    }
+  }, [initialView, lesson, vocabulary]);
 
   useEffect(() => {
     setLang(getSelectedLanguage());
@@ -149,6 +171,23 @@ export function LessonVocabularyClient({
     setLearned(new Set(next));
   }
 
+  const pageTitle = useFlashcardDefault
+    ? koreanVocabularyPageTitle(lesson)
+    : LEARNER_LESSON.vocabulary;
+  const pageSubtitle = useFlashcardDefault
+    ? "Нэг үсэг, нэг үг — картаар алхмаар сур."
+    : "Үг бүрийг pinyin, Монгол утга, жишээ өгүүлбэртэй сур.";
+  const ttsLangDefault = resolveKoreanTtsLang(lesson);
+
+  function vocabSpeakerProps(word: VocabularyWord) {
+    return {
+      lang: ttsLangDefault,
+      courseId: lesson.courseId,
+      hskLevel: word.hskLevel,
+      audioUrl: resolveVocabularyAudioUrl(word, lesson.vocabularyAudioMap),
+    };
+  }
+
   return (
     <LearnerPageShell activeTab="study">
       {adminPreview ? <AdminPreviewBanner /> : null}
@@ -169,12 +208,10 @@ export function LessonVocabularyClient({
 
       <section>
         <h1 className="text-xl font-bold leading-snug tracking-tight sm:text-3xl">
-          {LEARNER_LESSON.vocabulary} — {lesson.title}
+          {pageTitle} — {lesson.title}
         </h1>
         <p className="mt-1 text-lg text-slate-700">{lesson.chineseTitle}</p>
-        <p className="mt-2 text-sm text-slate-600 sm:text-base">
-          Үг бүрийг pinyin, Монгол утга, жишээ өгүүлбэртэй сур.
-        </p>
+        <p className="mt-2 text-sm text-slate-600 sm:text-base">{pageSubtitle}</p>
         <div className="mt-4 rounded-2xl bg-emerald-50 px-4 py-3 ring-1 ring-emerald-200 sm:rounded-3xl">
           <p className="text-xs font-semibold uppercase tracking-wide text-emerald-700">
             Сурсан
@@ -203,6 +240,46 @@ export function LessonVocabularyClient({
         </div>
       </section>
 
+      {useFlashcardDefault ? (
+        <div className="flex flex-wrap gap-2">
+          <button
+            type="button"
+            onClick={() => setViewMode("flashcard")}
+            className={
+              viewMode === "flashcard"
+                ? "min-h-[44px] rounded-full bg-emerald-500 px-4 py-2 text-sm font-semibold text-white"
+                : "min-h-[44px] rounded-full border border-emerald-200 bg-white px-4 py-2 text-sm font-semibold text-emerald-800 hover:bg-emerald-50"
+            }
+          >
+            Картаар сурах
+          </button>
+          <button
+            type="button"
+            onClick={() => setViewMode("list")}
+            className={
+              viewMode === "list"
+                ? "min-h-[44px] rounded-full bg-emerald-500 px-4 py-2 text-sm font-semibold text-white"
+                : "min-h-[44px] rounded-full border border-emerald-200 bg-white px-4 py-2 text-sm font-semibold text-emerald-800 hover:bg-emerald-50"
+            }
+          >
+            Жагсаалтаар харах
+          </button>
+        </div>
+      ) : null}
+
+      {useFlashcardDefault && viewMode === "flashcard" ? (
+        <VocabularyFlashcardStudy
+          lesson={lesson}
+          vocabulary={vocabulary}
+          learned={learned}
+          adminPreview={adminPreview}
+          onMarkLearned={handleToggleLearned}
+          onShowList={() => setViewMode("list")}
+        />
+      ) : null}
+
+      {!useFlashcardDefault || viewMode === "list" ? (
+        <>
       <SectionCard>
         <label htmlFor="vocab-search" className="sr-only">
           Үг хайх
@@ -277,10 +354,7 @@ export function LessonVocabularyClient({
           filteredWords.map((word) => {
             const key = vocabularyWordKey(word);
             const isLearned = learned.has(key);
-            const ttsLang = resolveTtsLang({
-              courseId: lesson.courseId,
-              hskLevel: word.hskLevel,
-            });
+            const speaker = vocabSpeakerProps(word);
             return (
               <article
                 key={key}
@@ -300,8 +374,10 @@ export function LessonVocabularyClient({
                   <div className="flex shrink-0 items-start gap-2">
                     <SpeakerButton
                       text={word.chinese}
-                      lang={ttsLang}
-                      hskLevel={word.hskLevel}
+                      lang={speaker.lang}
+                      courseId={speaker.courseId}
+                      hskLevel={speaker.hskLevel}
+                      audioUrl={speaker.audioUrl}
                       size="md"
                     />
                     <span className="shrink-0 rounded-full bg-emerald-50 px-2.5 py-1 text-xs font-medium text-emerald-700 ring-1 ring-emerald-200">
@@ -321,8 +397,10 @@ export function LessonVocabularyClient({
                     {word.exampleChinese ? (
                       <SpeakerButton
                         text={word.exampleChinese}
-                        lang={ttsLang}
-                        hskLevel={word.hskLevel}
+                        lang={speaker.lang}
+                        courseId={speaker.courseId}
+                        hskLevel={speaker.hskLevel}
+                        audioUrl={speaker.audioUrl}
                         size="sm"
                         label={`Жишээ уншуулах: ${word.exampleChinese}`}
                       />
@@ -391,6 +469,8 @@ export function LessonVocabularyClient({
           {LEARNER_LESSON.nextQuiz}
         </Link>
       </CtaButtonRow>
+        </>
+      ) : null}
 
       <LessonMobileStepBar
         lesson={lesson}

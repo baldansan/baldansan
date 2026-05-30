@@ -18,6 +18,8 @@ import { lessonPreviewPath } from "@/lib/lesson-publish";
 import { LEARNER_LESSON } from "@/lib/learner-labels";
 import { isDirectAudioUrl } from "@/lib/media-url";
 import { hasAudioUrl } from "@/lib/lesson-media";
+import { KoreanTeachingVisuals } from "@/components/lesson/korean-teaching-visuals";
+import { inferLessonLanguage } from "@/lib/language-track";
 import type { LessonContent } from "@/types/lesson-content";
 
 type Props = {
@@ -51,6 +53,7 @@ export function TextbookLessonWatchClient({
     adminPreview,
     subpath: "quiz",
   });
+  const isKorean = inferLessonLanguage(lesson) === "ko";
 
   return (
     <LearnerPageShell activeTab="home">
@@ -77,6 +80,13 @@ export function TextbookLessonWatchClient({
           <h2 className="text-sm font-semibold text-[var(--app-text)]">Audio</h2>
           <audio controls className="mt-2 w-full" src={audioUrl} />
         </MobileCard>
+      ) : null}
+
+      {isKorean ? (
+        <KoreanTeachingVisuals
+          teachingImages={lesson.teachingImages}
+          showFallbackDiagram
+        />
       ) : null}
 
       <CtaButtonRow>

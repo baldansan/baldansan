@@ -22,6 +22,7 @@ import {
   type ImportValidationResult,
   type LessonImportPayload,
 } from "@/lib/supabase/admin-import";
+import type { WrongImporterMismatch } from "@/lib/import/wrong-importer-validation";
 
 export type LessonZipManifest = NormalizedZipManifest;
 
@@ -73,6 +74,10 @@ export type LessonZipValidation = LessonZipPackage & {
   preview: LessonImportPreview | null;
   importPayload: LessonImportPayload | null;
   contentValidation: ImportValidationResult | null;
+  /** Non-blocking informational messages (TTS fallback, optional media). */
+  info?: string[];
+  /** Set when ZIP track does not match the active importer route. */
+  wrongImporter?: WrongImporterMismatch;
 };
 
 function emptyLessonZipValidation(

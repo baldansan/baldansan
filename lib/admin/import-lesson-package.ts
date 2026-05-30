@@ -15,6 +15,11 @@ import { bulkImportLessonContent } from "@/lib/supabase/admin-import";
 import { updateLessonMedia } from "@/lib/supabase/admin-content";
 import { hasSupabaseConfig, supabase } from "@/lib/supabase/client";
 import { LESSON_MEDIA_BUCKET } from "@/lib/supabase/media-upload";
+import {
+  mergeTeachingMediaIntoSourceNote,
+  type TeachingImage,
+  type TeachingImageRef,
+} from "@/lib/lesson/teaching-media";
 
 export type PackageMediaUploadResult = {
   zipPath: string;
@@ -157,6 +162,41 @@ function resolveMediaUrl(
     (item) => item.kind === kind && !item.error && item.publicUrl
   );
   return fallback?.publicUrl ?? undefined;
+}
+
+function resolveTeachingImagesFromUploads(
+  refs: TeachingImageRef[] | undefined,
+  uploads: PackageMediaUploadResult[]
+): TeachingImage[] {
+  if (!refs?.length) return [];
+  const resolved: TeachingImage[] = [];
+  for (const ref of refs) {
+    const url = resolveMediaUrl(uploads, ref.file, "image");
+    if (!url) continue;
+    resolved.push({
+      type: ref.type,
+      title: ref.title,
+      url,
+      caption: ref.caption,
+      file: ref.file,
+    });
+  }
+  return resolved;
+}
+
+function buildVocabAudioMapFromUploads(
+  vocabulary: Array<{ id?: string; chinese: string; audioFile?: string }>,
+  uploads: PackageMediaUploadResult[]
+): Record<string, string> {
+  const map: Record<string, string> = {};
+  for (const row of vocabulary) {
+    if (!row.audioFile) continue;
+    const url = resolveMediaUrl(uploads, row.audioFile, "audio");
+    if (!url) continue;
+    if (row.id) map[row.id] = url;
+    map[row.chinese] = url;
+  }
+  return map;
 }
 
 type DraftLessonShell = {
@@ -419,14 +459,28 @@ export async function importLessonPackage(
     validation.lesson.audioFile,
     "audio"
   );
-  const thumbnailUrl = resolveMediaUrl(
-    mediaFailures,
-    validation.lesson.thumbnailFile,
-    "image"
+  const thumbnailUrl =
+    resolveMediaUrl(
+      mediaFailures,
+      validation.lesson.thumbnailFile,
+      "image"
+    ) ??
+    resolveTeachingImagesFromUploads(
+      validation.lesson.teachingImages,
+      mediaFailures
+    )[0]?.url;
+
+  const teachingImages = resolveTeachingImagesFromUploads(
+    validation.lesson.teachingImages,
+    mediaFailures
+  );
+  const vocabAudioMap = buildVocabAudioMapFromUploads(
+    validation.vocabulary,
+    mediaFailures
   );
 
   let mediaStatus: "missing" | "pending" | "ready" = "missing";
-  if (audioUrl || thumbnailUrl) {
+  if (audioUrl || thumbnailUrl || teachingImages.length > 0) {
     mediaStatus = "pending";
   }
   if (validation.lesson.mediaStatus === "ready" && audioUrl) {
@@ -435,14 +489,27 @@ export async function importLessonPackage(
     mediaStatus = "pending";
   }
 
-  if (audioUrl || thumbnailUrl || validation.lesson.sourceNote) {
+  const baseSourceNote =
+    validation.lesson.sourceNote ||
+    validation.manifest?.source ||
+    "ZIP package import";
+  const sourceNote = mergeTeachingMediaIntoSourceNote(
+    baseSourceNote,
+    teachingImages,
+    vocabAudioMap
+  );
+
+  if (
+    audioUrl ||
+    thumbnailUrl ||
+    sourceNote ||
+    teachingImages.length > 0 ||
+    Object.keys(vocabAudioMap).length > 0
+  ) {
     const mediaUpdate = await updateLessonMedia(resolvedLessonId, {
       audioUrl: audioUrl ?? "",
       thumbnailUrl: thumbnailUrl ?? "",
-      sourceNote:
-        validation.lesson.sourceNote ||
-        validation.manifest?.source ||
-        "ZIP package import",
+      sourceNote,
       mediaStatus,
     });
     if (mediaUpdate.error) {

@@ -26,7 +26,8 @@ import {
 import { buildQuizDetailedAnswer, type QuizDetailedAnswer } from "@/lib/quiz-answers";
 import { enhanceLessonQuizQuestions } from "@/lib/quiz/smart-options";
 import { SpeakerButton } from "@/components/tts/speaker-button";
-import { containsTargetScript, resolveTtsLang } from "@/lib/tts/infer-lang";
+import { containsTargetScript } from "@/lib/tts/infer-lang";
+import { resolveKoreanTtsLang } from "@/lib/lesson/teaching-media";
 import type { LessonContent } from "@/types/lesson-content";
 
 function getResultMessage(percent: number) {
@@ -63,7 +64,7 @@ export function LessonQuizClient({
 
   const current = quizQuestions[currentIndex];
   const isCorrect = selected === current?.correctAnswer;
-  const ttsLang = resolveTtsLang({ courseId: lesson.courseId });
+  const ttsLang = resolveKoreanTtsLang(lesson);
 
   const questionProgressPercent = useMemo(() => {
     if (total === 0) return 0;

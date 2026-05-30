@@ -13,7 +13,7 @@ export type AdminStatusFilter = "all" | AdminContentStatus;
 export function toAdminContentStatus(
   status: LessonContentStatus | LessonPublishStatus | string
 ): AdminContentStatus {
-  if (status === "available") return "available";
+  if (status === "available" || status === "published") return "available";
   if (status === "archived") return "archived";
   if (status === "draft") return "draft";
   return "draft";

@@ -61,8 +61,8 @@ export function StudyAppView({ allLessons }: Props) {
   return (
     <MobileAppShell activeTab="study" mainClassName="max-w-[390px] mx-auto w-full">
       <MobilePageHeader
-        title={trackLabel || "Дасгалжуулалтын төв"}
-        subtitle="Чадвараа сонгон бататгаж, түвшин ахиарай"
+        title="Давтах"
+        subtitle={trackLabel || "Хичээл, үгс"}
       />
 
       <div className="app-course-card mb-5 p-4">

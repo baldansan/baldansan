@@ -93,7 +93,11 @@ export function LessonZipImportClient({
     try {
       const result = await parseZip(file);
       setValidation(result);
-      if (!result.ok) {
+      if (result.wrongImporter) {
+        setError(null);
+        return;
+      }
+      if (!result.ok || result.errors.length > 0) {
         setError("Validation алдаатай — доорх алдааг засна уу.");
       }
     } catch {
@@ -193,8 +197,12 @@ export function LessonZipImportClient({
   }
 
   const lessonId = importResult?.lessonId ?? validation?.preview?.lessonId;
+  const wrongImporter = validation?.wrongImporter;
   const canImport =
-    validation?.ok && getZipImportSummaryStatus(validation) !== "failed";
+    !wrongImporter &&
+    validation?.ok &&
+    (validation.errors.length ?? 0) === 0 &&
+    Boolean(validation.importPayload);
   const importComplete = Boolean(importResult?.ok && lessonId);
   const showKoreanCourseSql =
     showCourseSetupHint &&
@@ -212,8 +220,40 @@ export function LessonZipImportClient({
           </Link>
           <h1 className="mt-2 text-2xl font-bold text-slate-900">{title}</h1>
           <p className="mt-1 text-sm text-slate-600">{description}</p>
+          {track === "chinese" ? (
+            <p className="mt-2 text-xs text-slate-500">
+              Зөвхөн Хятад/HSK ZIP энд upload хийнэ. Солонгос package бол{" "}
+              <Link href="/admin/import/korean" className="font-medium text-emerald-700">
+                Korean importer
+              </Link>{" "}
+              ашиглана.
+            </p>
+          ) : track === "korean" ? (
+            <p className="mt-2 text-xs text-slate-500">
+              Зөвхөн Солонгос номын ZIP энд upload хийнэ. HSK package бол{" "}
+              <Link href="/admin/import/chinese" className="font-medium text-emerald-700">
+                Chinese importer
+              </Link>{" "}
+              ашиглана.
+            </p>
+          ) : null}
         </div>
       </div>
+
+      {wrongImporter ? (
+        <section className="rounded-2xl bg-red-50 p-5 ring-1 ring-red-200 sm:p-6">
+          <h2 className="text-base font-semibold text-red-900">
+            Буруу importer сонгогдлоо
+          </h2>
+          <p className="mt-2 text-sm text-red-800">{wrongImporter.message}</p>
+          <p className="mt-2 text-xs text-red-700">
+            Илрүүлсэн төрөл: {wrongImporter.detectedTrack} ({wrongImporter.reason})
+          </p>
+          <Link href={wrongImporter.redirectHref} className={`${btnPrimary} mt-4`}>
+            {wrongImporter.redirectHref} руу очих
+          </Link>
+        </section>
+      ) : null}
 
       <AdminEditorSection
         title="ZIP package"
@@ -265,7 +305,7 @@ export function LessonZipImportClient({
         </AdminCollapsibleSection>
       ) : null}
 
-      {validation?.preview ? (
+      {validation?.preview && !wrongImporter ? (
         <ZipImportSummary
           preview={validation.preview}
           validation={validation}
@@ -273,7 +313,7 @@ export function LessonZipImportClient({
         />
       ) : null}
 
-      {!importComplete && validation?.preview ? (
+      {!importComplete && validation?.preview && !wrongImporter ? (
         <div className="flex flex-wrap gap-2">
           <button
             type="button"

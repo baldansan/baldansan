@@ -13,8 +13,6 @@ import {
 import { isCurrentUserAdmin } from "@/lib/supabase/admin";
 import {
   countCompletedLessonsAll,
-  getAccountVocabularyLearnedCount,
-  getTotalLearnedWords,
 } from "@/lib/progress";
 import { getStreakUnified } from "@/lib/retention/retention-service";
 import type { AuthUser } from "@/types/auth";
@@ -24,7 +22,6 @@ export function ProfileAppView() {
   const [ready, setReady] = useState(false);
   const [user, setUser] = useState<AuthUser | null>(null);
   const [isAdmin, setIsAdmin] = useState(false);
-  const [learnedWords, setLearnedWords] = useState(0);
   const [completedLessons, setCompletedLessons] = useState(0);
   const [streak, setStreak] = useState(0);
   const [signingOut, setSigningOut] = useState(false);
@@ -38,14 +35,7 @@ export function ProfileAppView() {
       }
       setUser(authUser);
       setIsAdmin(authUser ? await isCurrentUserAdmin() : false);
-      setLearnedWords(getTotalLearnedWords());
       setCompletedLessons(countCompletedLessonsAll());
-      if (authUser?.id) {
-        const vocab = await getAccountVocabularyLearnedCount(authUser.id);
-        if (vocab != null) {
-          setLearnedWords((prev) => Math.max(prev, vocab));
-        }
-      }
       const retention = await getStreakUnified();
       setStreak(retention?.currentStreak ?? 0);
       setReady(true);
@@ -132,17 +122,18 @@ export function ProfileAppView() {
       </section>
 
       <div className="mb-5 grid grid-cols-2 gap-2">
-        {[
-          { label: "Нийт XP", value: completedLessons * 100, accent: "text-[var(--app-purple-dark)]" },
-          { label: "Сурсан үг", value: learnedWords, accent: "text-[var(--app-primary-dark)]" },
-          { label: "Эзэмшсэн", value: completedLessons, accent: "text-[var(--app-orange-dark)]" },
-          { label: "Сэргэлт", value: streak, accent: "text-[var(--app-blue)]" },
-        ].map((stat) => (
-          <MobileCard key={stat.label} padding="sm" className="text-center !p-3">
-            <p className={`text-lg font-bold ${stat.accent}`}>{stat.value}</p>
-            <p className="text-[10px] text-[var(--app-muted)]">{stat.label}</p>
-          </MobileCard>
-        ))}
+        <MobileCard padding="sm" className="text-center !p-3">
+          <p className="text-lg font-bold text-[var(--app-primary-dark)]">
+            {completedLessons}
+          </p>
+          <p className="text-[10px] text-[var(--app-muted)]">Дууссан хичээл</p>
+        </MobileCard>
+        <MobileCard padding="sm" className="text-center !p-3">
+          <p className="text-lg font-bold text-[var(--app-orange-dark)]">
+            {streak > 0 ? `🔥 ${streak}` : streak}
+          </p>
+          <p className="text-[10px] text-[var(--app-muted)]">Өдрийн streak</p>
+        </MobileCard>
       </div>
 
       <MobileCard padding="sm" className="overflow-hidden !p-0">

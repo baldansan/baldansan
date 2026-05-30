@@ -19,6 +19,7 @@ import {
   getSupabaseLessonsByCourseIdWithClient,
 } from "@/lib/supabase/content";
 import { createServerSupabaseClient } from "@/lib/supabase/server";
+import { enrichLessonContentMeta } from "@/lib/lesson-content-type";
 import type { LessonContent } from "@/types/lesson-content";
 
 async function getServerSupabaseClientOrNull() {
@@ -54,6 +55,28 @@ export async function getAdminLessonById(
     userId: userData.user?.id ?? null,
   });
 
+  // RPC first: SECURITY DEFINER bundle load works for draft + alphanumeric ids.
+  try {
+    const rpcLesson = await fetchAdminLessonBundleViaRpc(client, normalizedId);
+    if (rpcLesson) {
+      console.warn("[lesson-fetch] Admin/full lesson found via RPC", {
+        lessonId: normalizedId,
+        resolvedId: rpcLesson.id,
+        status: rpcLesson.publishStatus,
+      });
+      const vocabulary = await enrichVocabularyWithDbIds(
+        rpcLesson.id,
+        rpcLesson.vocabulary
+      );
+      return enrichLessonContentMeta({ ...rpcLesson, vocabulary });
+    }
+  } catch (error) {
+    console.warn("[lesson-fetch] Admin lesson RPC fetch failed", {
+      lessonId: normalizedId,
+      error,
+    });
+  }
+
   try {
     let lesson = await getSupabaseLessonByIdWithClient(normalizedId, client);
 
@@ -81,10 +104,25 @@ export async function getAdminLessonById(
     );
     return { ...lesson, vocabulary };
   } catch (error) {
-    console.warn("[lesson-fetch] Admin/full lesson fetch failed", {
+    console.warn("[lesson-fetch] Admin/full lesson fetch failed; trying RPC", {
       lessonId: normalizedId,
       error,
     });
+    try {
+      const rpcLesson = await fetchAdminLessonBundleViaRpc(client, normalizedId);
+      if (rpcLesson) {
+        const vocabulary = await enrichVocabularyWithDbIds(
+          rpcLesson.id,
+          rpcLesson.vocabulary
+        );
+        return enrichLessonContentMeta({ ...rpcLesson, vocabulary });
+      }
+    } catch (rpcError) {
+      console.warn("[lesson-fetch] Admin lesson RPC retry failed", {
+        lessonId: normalizedId,
+        error: rpcError,
+      });
+    }
     return undefined;
   }
 }

@@ -30,8 +30,8 @@ export const MOBILE_NAV_ITEMS: MobileNavItem[] = [
   {
     id: "kanji",
     href: "/kanji",
-    label: "Ханз",
-    icon: "字",
+    label: "Үсэг",
+    icon: "ㄱ",
     match: (p) => p.startsWith("/kanji"),
   },
   {

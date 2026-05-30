@@ -11,8 +11,8 @@ export function ImportHub() {
     <div className="flex flex-col gap-8">
       <div>
         <h1 className="text-2xl font-bold text-slate-900">Lesson Import</h1>
-        <p className="mt-1 text-sm text-slate-600">
-          Хичээлийн төрлөө сонгоод тохирох ZIP importer ашиглана уу.
+        <p className="mt-2 text-sm text-slate-600">
+          Хэл бүрийн номын бүтэц өөр тул зөв import төрлөө сонгоно уу.
         </p>
       </div>
 
@@ -25,10 +25,11 @@ export function ImportHub() {
             Хятад / HSK хичээл импортлох
           </h2>
           <p className="mt-2 flex-1 text-sm text-slate-600">
-            HSK, subtitle, vocabulary, quiz, workbook/audio structure.
+            HSK, subtitle, pinyin, hanzi, vocabulary, quiz, workbook/audio
+            package.
           </p>
           <Link href="/admin/import/chinese" className={btnPrimary}>
-            Chinese import руу орох
+            Chinese Import
           </Link>
         </article>
 
@@ -40,11 +41,11 @@ export function ImportHub() {
             Солонгос номын хичээл импортлох
           </h2>
           <p className="mt-2 flex-1 text-sm text-slate-600">
-            한글, romanization, grammar, workbook exercise, practice quiz
-            structure.
+            한글, romanization, grammar, practice, vocabulary, quiz,
+            audio/images package.
           </p>
           <Link href="/admin/import/korean" className={btnPrimary}>
-            Korean import руу орох
+            Korean Import
           </Link>
         </article>
       </div>

@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { AppHeader } from "@/components/app-header";
-import { BottomNav } from "@/components/bottom-nav";
+import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
+import { MobileCard } from "@/components/mobile/mobile-card";
 import { coursePath } from "@/lib/content";
 import { lessonPreviewPath } from "@/lib/lesson-publish";
 
@@ -20,50 +20,47 @@ export function LessonUnavailable({
   accessDenied = false,
 }: Props) {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-emerald-50/40 via-white to-white text-slate-900">
-      <AppHeader />
-
-      <main className="mx-auto flex w-full max-w-lg flex-col items-center gap-6 px-4 pb-24 pt-8 text-center sm:px-6 md:pb-10">
-        <div className="rounded-3xl bg-white p-8 shadow-sm ring-1 ring-slate-200 sm:p-10">
-          <p className="text-sm font-medium text-emerald-600">Хичээл</p>
-          <h1 className="mt-2 text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
-            {accessDenied
-              ? "Admin preview эрхгүй байна"
-              : "Энэ хичээл одоогоор нийтлэгдээгүй байна"}
-          </h1>
-          <p className="mt-4 text-base leading-7 text-slate-600">
-            {accessDenied
-              ? "Draft хичээлийг зөвхөн admin хэрэглэгч ?preview=admin горимоор үзнэ."
-              : "Хичээл draft эсвэл archived төлөвтэй байж магадгүй."}
-          </p>
-          <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:justify-center">
+    <MobileAppShell activeTab="study" mainClassName="max-w-[390px] mx-auto w-full">
+      <MobileCard className="mt-6 text-center !py-10">
+        <p className="text-sm font-medium text-emerald-600">Хичээл</p>
+        <h1 className="mt-2 text-xl font-bold text-[var(--app-text)]">
+          {accessDenied
+            ? "Хандах эрхгүй"
+            : "Энэ хичээл одоогоор нийтлэгдээгүй байна"}
+        </h1>
+        <p className="mt-3 text-sm leading-6 text-[var(--app-muted)]">
+          {accessDenied
+            ? "Энэ хичээлийг одоогоор үзэх боломжгүй."
+            : "Удахгүй нээгдэх эсвэл өөр хичээл сонгоно уу."}
+        </p>
+        <div className="mt-6 flex flex-col gap-2">
+          <Link href="/home" className="app-btn-primary inline-flex justify-center">
+            Нүүр хуудас
+          </Link>
+          <Link
+            href={coursePath(courseId)}
+            className="inline-flex justify-center rounded-full border border-emerald-200 bg-emerald-50 px-5 py-2.5 text-sm font-semibold text-emerald-800"
+          >
+            Курс руу буцах
+          </Link>
+          {showAdminPreviewLink ? (
             <Link
-              href={coursePath(courseId)}
-              className="inline-flex justify-center rounded-full bg-emerald-500 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-emerald-600"
+              href={lessonPreviewPath(lessonId, { adminPreview: true })}
+              className="text-xs font-medium text-slate-500 hover:text-emerald-700"
             >
-              Курс руу буцах
+              Admin preview
             </Link>
-            {showAdminPreviewLink ? (
-              <Link
-                href={lessonPreviewPath(lessonId, { adminPreview: true })}
-                className="inline-flex justify-center rounded-full bg-emerald-500 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-emerald-600"
-              >
-                Admin preview ашиглах
-              </Link>
-            ) : null}
-            {showAdminLink ? (
-              <Link
-                href={`/admin/lessons/${lessonId}/edit`}
-                className="inline-flex justify-center rounded-full border border-emerald-200 bg-emerald-50 px-6 py-3 text-sm font-semibold text-emerald-800 transition-colors hover:bg-emerald-100"
-              >
-                Open in admin
-              </Link>
-            ) : null}
-          </div>
+          ) : null}
+          {showAdminLink ? (
+            <Link
+              href={`/admin/lessons/${lessonId}/edit`}
+              className="text-xs font-medium text-slate-500 hover:text-emerald-700"
+            >
+              Admin edit
+            </Link>
+          ) : null}
         </div>
-      </main>
-
-      <BottomNav />
-    </div>
+      </MobileCard>
+    </MobileAppShell>
   );
 }
