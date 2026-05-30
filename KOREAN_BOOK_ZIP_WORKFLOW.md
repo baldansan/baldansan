@@ -11,25 +11,28 @@ Korean content project          Buunduu Surtsgaay admin
 ─────────────────────          ───────────────────────
 JSON + optional media    →     ZIP package
        │                            │
-       └──────────────────►  /admin/import
+       └──────────────────►  /admin/import/korean
                                     │
-                                    ├─ Parse + validate
-                                    ├─ Import draft lesson
+                                    ├─ Parse + validate (Korean fields)
+                                    ├─ Import draft lesson (auto-create if missing)
                                     ├─ Upload audio/images (if present)
                                     └─ Preview + publish
 ```
+
+**Chinese/HSK packages** use **`/admin/import/chinese`** instead.
 
 ---
 
 ## Step 1 — Prepare package (Korean project)
 
-1. Export or copy lesson JSON aligned with [LESSON_ZIP_IMPORT_FORMAT.md](../LESSON_ZIP_IMPORT_FORMAT.md).
+1. Export lesson JSON using **Korean field names** — see [KOREAN_ZIP_IMPORT_FORMAT.md](../KOREAN_ZIP_IMPORT_FORMAT.md).
 2. Use field mapping:
-   - `chinese` → Korean Hangul
-   - `pinyin` → romanization
+   - `korean` → Hangul (stored in DB `chinese` column)
+   - `romanization` → stored in DB `pinyin` column
    - `mongolian` → Mongolian explanation
-3. Add `manifest.json` with `courseId: korean-1`, `language: ko-KR`.
-4. Optional: place MP3 files under `audio/`, PNG/JPG under `images/`.
+   - `level` → `KR-Beginner` etc. (stored in `hsk_level`)
+3. Add `manifest.json` with `courseId: korean-1`, `language: ko-KR`, `lessonType`.
+4. Template: `content/templates/korean-lesson-zip-package/`
 5. Zip root files (not the parent folder):
 
 ```

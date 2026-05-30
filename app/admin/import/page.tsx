@@ -1,13 +1,12 @@
-import { LessonZipImportClient } from "@/components/admin/lesson-zip-import-client";
+import { ImportHub } from "@/components/admin/import-hub";
 
 export const dynamic = "force-dynamic";
 
 export const metadata = {
-  title: "Lesson ZIP Import — Admin",
-  description:
-    "Upload Korean/Chinese lesson ZIP packages for draft import into Buunduu Surtsgaay.",
+  title: "Lesson Import — Admin",
+  description: "Choose Chinese/HSK or Korean book lesson import workflow.",
 };
 
-export default function AdminLessonZipImportPage() {
-  return <LessonZipImportClient />;
+export default function AdminImportHubPage() {
+  return <ImportHub />;
 }

@@ -1,8 +1,20 @@
 # Lesson ZIP import format
 
-Admin upload at **`/admin/import`**. Parses a ZIP package and imports lesson metadata, vocabulary, quiz, optional subtitles, and optional media into Supabase as **draft**.
+Admin import hub: **`/admin/import`**
+
+| Track | Route | Use for |
+|-------|-------|---------|
+| Chinese / HSK | **`/admin/import/chinese`** | HSK lessons, Chinese subtitles, pinyin, hskLevel |
+| Korean book | **`/admin/import/korean`** | Korean textbook, Hangul, romanization, grammar |
+| Legacy (auto-detect) | **`/admin/import/legacy`** | Old unified importer |
+
+Parses a ZIP package and imports lesson metadata, vocabulary, quiz, optional subtitles, and optional media into Supabase as **draft**.
 
 Existing **JSON bulk import** on `/admin/lessons/{id}/edit` is unchanged.
+
+**Korean packages:** use `/admin/import/korean` and [KOREAN_ZIP_IMPORT_FORMAT.md](./KOREAN_ZIP_IMPORT_FORMAT.md).
+
+**Chinese/HSK packages:** use `/admin/import/chinese` (this document).
 
 ---
 

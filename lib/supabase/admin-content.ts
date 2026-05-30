@@ -13,6 +13,7 @@ import {
   publishActionForStatus,
 } from "@/lib/supabase/admin-activity";
 import { hasSupabaseConfig, supabase } from "@/lib/supabase/client";
+import { fetchLessonRowById } from "@/lib/supabase/content";
 
 export type AdminContentResult<T> = {
   data: T | null;
@@ -772,44 +773,84 @@ export async function getLessonContentRowCounts(
 }
 
 export async function getLessonCompleteness(
-  lessonId: string
+  lessonId: string,
+  client?: import("@supabase/supabase-js").SupabaseClient,
+  options?: { skipAdminGate?: boolean }
 ): Promise<AdminContentResult<LessonCompleteness>> {
-  if (!supabase || !hasSupabaseConfig) {
+  const db = client ?? supabase;
+  if (!db || !hasSupabaseConfig) {
     return notConfigured();
   }
 
-  const gate = await requireAdmin();
-  if (gate.error) {
-    return { data: null, error: gate.error };
+  if (!options?.skipAdminGate && !client) {
+    const gate = await requireAdmin();
+    if (gate.error) {
+      return { data: null, error: gate.error };
+    }
   }
 
+  const trimmedId = lessonId.trim();
+  const idCandidates = [
+    trimmedId,
+    ...lessonIdQueryCandidates(trimmedId).map(String),
+  ];
+
   try {
-    const { data: lesson, error: lessonError } = await supabase
-      .from("lessons")
-      .select("title, chinese_title, description, duration")
-      .eq("id", lessonId)
-      .maybeSingle();
+    let lesson: {
+      id: string | number;
+      title: string;
+      chinese_title: string | null;
+      description: string | null;
+      duration: string | null;
+    } | null = null;
 
-    if (lessonError) {
-      return { data: null, error: formatWriteError(lessonError) };
+    for (const candidate of [...new Set(idCandidates)]) {
+      const { data, error: lessonError } = await db
+        .from("lessons")
+        .select("id, title, chinese_title, description, duration")
+        .eq("id", candidate)
+        .maybeSingle();
+
+      if (lessonError) {
+        return { data: null, error: formatWriteError(lessonError) };
+      }
+      if (data) {
+        lesson = data;
+        break;
+      }
     }
+
     if (!lesson) {
-      return { data: null, error: "Хичээл олдсонгүй." };
+      const { data: ilikeRow, error: ilikeError } = await db
+        .from("lessons")
+        .select("id, title, chinese_title, description, duration")
+        .ilike("id", trimmedId)
+        .maybeSingle();
+
+      if (ilikeError) {
+        return { data: null, error: formatWriteError(ilikeError) };
+      }
+      lesson = ilikeRow;
     }
 
+    if (!lesson) {
+      return { data: null, error: "Lesson metadata not found." };
+    }
+
+    const resolvedId = canonicalLessonId(lesson.id);
     const [subtitles, vocabulary, quiz] = await Promise.all([
-      supabase
+      db
         .from("subtitle_lines")
         .select("id", { count: "exact", head: true })
-        .eq("lesson_id", lessonId),
-      supabase
+        .eq("lesson_id", resolvedId),
+      db
         .from("vocabulary_words")
         .select("id", { count: "exact", head: true })
-        .eq("lesson_id", lessonId),
-      supabase
+        .eq("lesson_id", resolvedId),
+      db
         .from("quiz_questions")
         .select("id", { count: "exact", head: true })
-        .eq("lesson_id", lessonId),
+        .eq("lesson_id", resolvedId),
     ]);
 
     if (subtitles.error) {
@@ -893,31 +934,44 @@ export async function getLessonMetadataCounts(
 }
 
 export async function refreshLessonCounts(
-  lessonId: string
+  lessonId: string,
+  client?: import("@supabase/supabase-js").SupabaseClient,
+  options?: { skipAdminGate?: boolean }
 ): Promise<AdminContentResult<LessonCounts>> {
-  if (!supabase || !hasSupabaseConfig) {
+  const db = client ?? supabase;
+  if (!db || !hasSupabaseConfig) {
     return notConfigured();
   }
 
-  const gate = await requireAdmin();
-  if (gate.error) {
-    return { data: null, error: gate.error };
+  if (!options?.skipAdminGate) {
+    const gate = await requireAdmin();
+    if (gate.error) {
+      return { data: null, error: gate.error };
+    }
   }
 
   try {
-    const { count: vocabCount, error: vocabError } = await supabase
+    let resolvedId = lessonId.trim();
+    if (client) {
+      const row = await fetchLessonRowById(client, resolvedId);
+      if (row) {
+        resolvedId = row.canonicalId;
+      }
+    }
+
+    const { count: vocabCount, error: vocabError } = await db
       .from("vocabulary_words")
       .select("id", { count: "exact", head: true })
-      .eq("lesson_id", lessonId);
+      .eq("lesson_id", resolvedId);
 
     if (vocabError) {
       return { data: null, error: formatWriteError(vocabError) };
     }
 
-    const { count: quizRowCount, error: quizError } = await supabase
+    const { count: quizRowCount, error: quizError } = await db
       .from("quiz_questions")
       .select("id", { count: "exact", head: true })
-      .eq("lesson_id", lessonId);
+      .eq("lesson_id", resolvedId);
 
     if (quizError) {
       return { data: null, error: formatWriteError(quizError) };
@@ -926,13 +980,13 @@ export async function refreshLessonCounts(
     const vocabularyCount = vocabCount ?? 0;
     const quizCount = quizRowCount ?? 0;
 
-    const { error: updateError } = await supabase
+    const { error: updateError } = await db
       .from("lessons")
       .update({
         vocabulary_count: vocabularyCount,
         quiz_count: quizCount,
       })
-      .eq("id", lessonId);
+      .eq("id", resolvedId);
 
     if (updateError) {
       return { data: null, error: formatWriteError(updateError) };
