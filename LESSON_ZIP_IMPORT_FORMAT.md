@@ -8,6 +8,8 @@ Admin import hub: **`/admin/import`**
 | Korean book | **`/admin/import/korean`** | Korean textbook, Hangul, romanization, grammar |
 | Legacy (auto-detect) | **`/admin/import/legacy`** | Old unified importer |
 
+**Important:** Korean ZIP must use `/admin/import/korean`. Chinese/HSK ZIP must use `/admin/import/chinese`. Uploading on the wrong route shows a clear redirect message — no Chinese validation spam on Korean files.
+
 Parses a ZIP package and imports lesson metadata, vocabulary, quiz, optional subtitles, and optional media into Supabase as **draft**.
 
 Existing **JSON bulk import** on `/admin/lessons/{id}/edit` is unchanged.

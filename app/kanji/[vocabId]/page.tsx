@@ -13,7 +13,7 @@ type PageProps = {
 function findVocabInLessons(
   vocabId: string,
   lessons: Awaited<ReturnType<typeof getPublicLessonsByCourseId>>
-): { word: VocabularyWord; lessonId: string } | null {
+): { word: VocabularyWord; lessonId: string; courseId: string } | null {
   const decoded = decodeURIComponent(vocabId);
   for (const lesson of lessons) {
     for (const word of lesson.vocabulary) {
@@ -22,7 +22,7 @@ function findVocabInLessons(
         word.id === vocabId ||
         word.chinese === decoded
       ) {
-        return { word, lessonId: lesson.id };
+        return { word, lessonId: lesson.id, courseId: lesson.courseId };
       }
     }
   }
@@ -32,7 +32,7 @@ function findVocabInLessons(
 export async function generateMetadata({ params }: PageProps) {
   const { vocabId } = await params;
   const decoded = decodeURIComponent(vocabId);
-  return { title: `${decoded} — Ханз` };
+  return { title: `${decoded} — Үсэг` };
 }
 
 export default async function KanjiDetailPage({
@@ -57,6 +57,7 @@ export default async function KanjiDetailPage({
     <KanjiDetailClient
       word={found.word}
       lessonId={lessonId}
+      courseId={found.courseId}
       taskCount={lessons.filter((l) =>
         l.vocabulary.some(
           (w) =>

@@ -3,6 +3,11 @@ import {
   MIN_VOCABULARY_FOR_PUBLISH,
   type LessonContentQaReport,
 } from "@/lib/admin/import-qa";
+import {
+  hasPublishMetadata,
+  isMediaOptionalForPublish,
+  isPrelessonPackage,
+} from "@/lib/admin/lesson-package-type";
 import { isMediaReady } from "@/lib/lesson-media";
 import type { LessonContent } from "@/types/lesson-content";
 
@@ -23,11 +28,7 @@ export type ReleaseReadiness = {
 };
 
 function hasMetadata(lesson: LessonContent): boolean {
-  return Boolean(
-    lesson.title?.trim() &&
-      lesson.chineseTitle?.trim() &&
-      (lesson.subtitle?.trim() || lesson.description?.trim())
-  );
+  return hasPublishMetadata(lesson);
 }
 
 export function calculateReleaseReadiness(
@@ -36,12 +37,25 @@ export function calculateReleaseReadiness(
 ): ReleaseReadiness {
   const issues: string[] = [];
   const warnings: string[] = [];
+  const prelesson = isPrelessonPackage(lesson);
+  const mediaOptional = isMediaOptionalForPublish(lesson);
 
   const metadataReady = hasMetadata(lesson);
-  if (!metadataReady) issues.push("Metadata incomplete (title, Chinese title, summary)");
+  if (!metadataReady) {
+    issues.push(
+      prelesson
+        ? "Metadata incomplete (title and target title required)"
+        : "Metadata incomplete (title, Chinese title, summary)"
+    );
+  }
 
-  const subtitlesReady = lesson.timedSubtitles.length > 0;
-  if (!subtitlesReady) issues.push("No subtitles");
+  const hasSubtitles = lesson.timedSubtitles.length > 0;
+  const subtitlesReady = prelesson ? true : hasSubtitles;
+  if (!prelesson && !hasSubtitles) {
+    issues.push("No subtitles");
+  } else if (prelesson && !hasSubtitles) {
+    warnings.push("PreLesson: no subtitles (optional for publish)");
+  }
 
   const vocabularyReady = lesson.vocabulary.length >= MIN_VOCABULARY_FOR_PUBLISH;
   if (!vocabularyReady) {
@@ -58,19 +72,26 @@ export function calculateReleaseReadiness(
   }
 
   const mediaReady =
+    mediaOptional ||
     isMediaReady(lesson) ||
     lesson.mediaStatus === "ready" ||
     Boolean(lesson.videoUrl?.trim());
-  if (!mediaReady) warnings.push("Media not marked ready (video URL or media_status)");
+  if (!mediaReady && !mediaOptional) {
+    warnings.push("Media not marked ready (video URL or media_status)");
+  } else if (mediaOptional && !mediaReady) {
+    warnings.push("PreLesson: no video/audio/thumbnail (optional for publish)");
+  }
 
-  let qaReady = metadataReady && subtitlesReady && vocabularyReady && quizReady;
+  let qaReady = prelesson
+    ? metadataReady && vocabularyReady && quizReady
+    : metadataReady && subtitlesReady && vocabularyReady && quizReady;
   const importQa = options?.importQa;
   if (importQa) {
     qaReady =
       importQa.errors.length === 0 &&
       importQa.status !== "missing_content" &&
       metadataReady &&
-      subtitlesReady &&
+      (prelesson || subtitlesReady) &&
       vocabularyReady &&
       quizReady;
     if (importQa.errors.length > 0) {
@@ -86,8 +107,9 @@ export function calculateReleaseReadiness(
   const approvalReady =
     releaseStatus === "approved" || Boolean(lesson.approvedAt);
 
-  const readyToApprove =
-    metadataReady && subtitlesReady && vocabularyReady && quizReady && qaReady;
+  const readyToApprove = prelesson
+    ? metadataReady && vocabularyReady && quizReady
+    : metadataReady && subtitlesReady && vocabularyReady && quizReady && qaReady;
 
   const readyToPublish =
     readyToApprove &&

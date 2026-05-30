@@ -1,4 +1,7 @@
 import JSZip from "jszip";
+import { detectLessonPackageType } from "@/lib/import/detect-lesson-package-type";
+import { peekZipPackageDetection } from "@/lib/import/zip-package-peek";
+import { buildWrongImporterValidation } from "@/lib/import/wrong-importer-validation";
 import {
   normalizeKoreanLessonPackage,
   validateKoreanLessonPackage,
@@ -95,6 +98,7 @@ export function koreanValidationToLessonZipValidation(
           thumbnailFile: korean.lesson.thumbnailFile,
           sourceNote: korean.lesson.sourceNote,
           lessonType: korean.lesson.lessonType,
+          teachingImages: korean.lesson.teachingImages,
         }
       : null,
     importContext: korean.manifest
@@ -107,12 +111,14 @@ export function koreanValidationToLessonZipValidation(
         }
       : null,
     vocabulary: korean.vocabulary.map((row) => ({
+      id: row.id,
       chinese: row.korean,
       pinyin: row.romanization,
       mongolian: row.mongolian,
       hskLevel: row.level,
       exampleChinese: row.exampleKorean,
       exampleMongolian: row.exampleMongolian,
+      audioFile: row.audioFile,
     })),
     quizQuestions: korean.quizQuestions.map((row) => ({
       type: row.type,
@@ -127,6 +133,7 @@ export function koreanValidationToLessonZipValidation(
     mediaFiles,
     warnings: korean.warnings,
     errors: korean.errors,
+    info: korean.info,
     preview,
     importPayload: korean.importPayload,
     contentValidation: korean.importPayload
@@ -146,6 +153,15 @@ export function koreanValidationToLessonZipValidation(
 }
 
 export async function parseKoreanLessonZip(file: File): Promise<LessonZipValidation> {
+  const peek = await peekZipPackageDetection(file);
+  const detected = detectLessonPackageType(peek);
+  if (detected.type === "chinese") {
+    return buildWrongImporterValidation("korean", {
+      type: "chinese",
+      reason: detected.reason,
+    });
+  }
+
   if (typeof window === "undefined") {
     return koreanValidationToLessonZipValidation(
       {
@@ -161,6 +177,7 @@ export async function parseKoreanLessonZip(file: File): Promise<LessonZipValidat
         errors: ["ZIP parsing is only available in the browser."],
         preview: null,
         importPayload: null,
+        info: [],
       },
       []
     );
@@ -182,6 +199,7 @@ export async function parseKoreanLessonZip(file: File): Promise<LessonZipValidat
     const subtitlesResult = await readJsonFile(zip, "subtitles.json");
     const practiceResult = await readJsonFile(zip, "practice.json");
     const grammarResult = await readJsonFile(zip, "grammar.json");
+    const teachingImagesResult = await readJsonFile(zip, "teaching-images.json");
 
     const errors: string[] = [];
     if (manifestResult.error) errors.push(manifestResult.error);
@@ -198,6 +216,12 @@ export async function parseKoreanLessonZip(file: File): Promise<LessonZipValidat
     if (grammarResult.error && !grammarResult.error.includes("not found")) {
       errors.push(grammarResult.error);
     }
+    if (
+      teachingImagesResult.error &&
+      !teachingImagesResult.error.includes("not found")
+    ) {
+      errors.push(teachingImagesResult.error);
+    }
 
     const normalized = normalizeKoreanLessonPackage({
       manifest: manifestResult.data,
@@ -213,6 +237,9 @@ export async function parseKoreanLessonZip(file: File): Promise<LessonZipValidat
       grammar: grammarResult.error?.includes("not found")
         ? undefined
         : grammarResult.data,
+      teachingImages: teachingImagesResult.error?.includes("not found")
+        ? undefined
+        : teachingImagesResult.data,
     });
 
     const mediaFiles = await extractZipMediaFiles(zip);
@@ -252,6 +279,7 @@ export async function parseKoreanLessonZip(file: File): Promise<LessonZipValidat
         errors: ["ZIP файл уншихад алдаа гарлаа."],
         preview: null,
         importPayload: null,
+        info: [],
       },
       []
     );

@@ -1,10 +1,22 @@
 import type { LessonContent, LessonPublishStatus } from "@/types/lesson-content";
 
+/** Map DB / legacy status strings to admin publish status. */
+export function normalizePublishStatus(raw: string): LessonPublishStatus {
+  if (raw === "published") return "available";
+  if (raw === "available" || raw === "archived" || raw === "draft") {
+    return raw;
+  }
+  return "draft";
+}
+
 export function getLessonPublishStatus(lesson: LessonContent): LessonPublishStatus {
   if (lesson.publishStatus) {
-    return lesson.publishStatus;
+    return normalizePublishStatus(lesson.publishStatus);
   }
-  return lesson.status === "available" ? "available" : "draft";
+  if (lesson.status === "available") {
+    return "available";
+  }
+  return "draft";
 }
 
 export function isPublicLesson(lesson: LessonContent): boolean {

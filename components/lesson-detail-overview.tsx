@@ -12,6 +12,14 @@ import {
 import { lessonPreviewPath } from "@/lib/lesson-publish";
 import { coursePath } from "@/lib/content";
 import { LEARNER_LESSON } from "@/lib/learner-labels";
+import {
+  isExamContent,
+  isTextbookContent,
+} from "@/lib/lesson-content-type";
+import {
+  isKoreanFlashcardVocabularyLesson,
+  koreanVocabularyStudyCtaLabel,
+} from "@/lib/lesson/korean-vocabulary-ui";
 import type { LessonContent } from "@/types/lesson-content";
 
 type Props = {
@@ -59,20 +67,43 @@ export function LessonDetailOverview({
     subpath: "quiz",
   });
 
+  const textbook = isTextbookContent(lesson);
+  const exam = isExamContent(lesson);
+  const koreanFlashcard = isKoreanFlashcardVocabularyLesson(
+    lesson,
+    lesson.vocabulary
+  );
+  const vocabStepTitle = koreanFlashcard
+    ? koreanVocabularyStudyCtaLabel(lesson)
+    : LEARNER_LESSON.vocabulary;
+  const vocabStudyCta = koreanFlashcard
+    ? koreanVocabularyStudyCtaLabel(lesson)
+    : LEARNER_LESSON.vocabularyStudy;
+
   const steps = [
     {
       step: "1",
       href: watchHref,
-      icon: "▶",
-      title: LEARNER_LESSON.watch,
-      desc: "Видео + хадмал",
+      icon: textbook ? "📖" : exam ? "📝" : "▶",
+      title: textbook
+        ? "Хичээл судлах"
+        : exam
+          ? "Шалгалтын тойм"
+          : LEARNER_LESSON.watch,
+      desc: textbook
+        ? "Тойм + сурах"
+        : exam
+          ? `${lesson.quizCount} асуулт`
+          : "Видео + хадмал",
     },
     {
       step: "2",
       href: vocabHref,
       icon: "📚",
-      title: LEARNER_LESSON.vocabulary,
-      desc: `${lesson.vocabularyCount} үг`,
+      title: vocabStepTitle,
+      desc: koreanFlashcard
+        ? `${lesson.vocabularyCount} үсэг/үг`
+        : `${lesson.vocabularyCount} үг`,
     },
     {
       step: "3",
@@ -129,10 +160,10 @@ export function LessonDetailOverview({
 
       <div className="app-lesson-cta-row">
         <Link href={watchHref} className="app-btn-primary col-span-2 w-full">
-          ▶ {LEARNER_LESSON.watch}
+          {textbook ? "📖 Хичээл судлах" : exam ? "📝 Шалгалт" : `▶ ${LEARNER_LESSON.watch}`}
         </Link>
         <Link href={vocabHref} className="app-btn-secondary w-full">
-          📚 {LEARNER_LESSON.vocabularyStudy}
+          📚 {vocabStudyCta}
         </Link>
         <Link href={quizHref} className="app-btn-outline-green w-full">
           ✓ {LEARNER_LESSON.quiz}

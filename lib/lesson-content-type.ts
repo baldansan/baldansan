@@ -2,6 +2,7 @@ import {
   inferLessonPackageType,
 } from "@/lib/admin/lesson-package-type";
 import { hasVideoUrl } from "@/lib/lesson-media";
+import { enrichLessonTeachingMedia } from "@/lib/lesson/teaching-media";
 import type { LessonContent } from "@/types/lesson-content";
 
 export type LessonContentType = "textbook" | "video" | "exam";
@@ -98,15 +99,16 @@ export function enrichLessonContentMeta(lesson: LessonContent): LessonContent {
     lesson.lessonType ??
     (tag === "prelesson" || tag === "lesson" ? tag : undefined);
 
-  if (lesson.contentType === contentType && lesson.lessonType === lessonType) {
-    return lesson;
-  }
+  const withMeta =
+    lesson.contentType === contentType && lesson.lessonType === lessonType
+      ? lesson
+      : {
+          ...lesson,
+          contentType,
+          ...(lessonType ? { lessonType } : {}),
+        };
 
-  return {
-    ...lesson,
-    contentType,
-    ...(lessonType ? { lessonType } : {}),
-  };
+  return enrichLessonTeachingMedia(withMeta);
 }
 
 export function isTextbookContent(lesson: LessonContent): boolean {

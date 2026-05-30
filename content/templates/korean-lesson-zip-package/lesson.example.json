@@ -8,5 +8,20 @@
   "duration": "15 min",
   "status": "draft",
   "orderIndex": 1,
-  "mediaStatus": "missing"
+  "mediaStatus": "missing",
+  "thumbnailFile": "images/vowels-chart.png",
+  "teachingImages": [
+    {
+      "type": "diagram",
+      "title": "한글 үеийн бүтэц",
+      "file": "images/hangul-block.png",
+      "caption": "ㅎ + ㅏ + ㄴ = 한"
+    },
+    {
+      "type": "chart",
+      "title": "Эгшигийн хүснэгт",
+      "file": "images/vowels-chart.png",
+      "caption": "Үндсэн эгшиг ㅏ ㅓ ㅗ ㅜ ㅡ ㅣ"
+    }
+  ]
 }

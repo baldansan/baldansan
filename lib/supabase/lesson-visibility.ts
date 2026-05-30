@@ -1,6 +1,8 @@
 import "server-only";
 
 import { canonicalLessonId, normalizeLessonRouteId } from "@/lib/lesson-id";
+import { normalizePublishStatus } from "@/lib/lesson-publish";
+import { enrichLessonContentMeta } from "@/lib/lesson-content-type";
 import { hasSupabaseConfig } from "@/lib/supabase/client";
 import { createServerSupabaseClient } from "@/lib/supabase/server";
 import type {
@@ -18,13 +20,6 @@ export type LessonRouteStatus = {
   description: string;
   duration: string;
 };
-
-function normalizePublishStatus(status: string): LessonPublishStatus {
-  if (status === "available" || status === "archived" || status === "draft") {
-    return status;
-  }
-  return "draft";
-}
 
 function mapRouteStatusRow(raw: Record<string, unknown>): LessonRouteStatus | null {
   const id = raw.id != null ? canonicalLessonId(String(raw.id)) : "";
@@ -88,7 +83,7 @@ export function lessonStubFromRouteStatus(
 ): LessonContent {
   const publishStatus = normalizePublishStatus(status.status);
 
-  return {
+  return enrichLessonContentMeta({
     id: status.id,
     courseId: status.courseId,
     title: status.title,
@@ -107,5 +102,5 @@ export function lessonStubFromRouteStatus(
     vocabulary: [],
     quizQuestions: [],
     quizTypes: [],
-  };
+  });
 }

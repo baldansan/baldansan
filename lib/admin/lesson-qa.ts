@@ -1,5 +1,9 @@
 import { getAdminPublishStatus } from "@/lib/admin/lesson-status";
 import {
+  hasPublishMetadata,
+  isPrelessonPackage,
+} from "@/lib/admin/lesson-package-type";
+import {
   getLessonMediaWarnings,
   isMediaReady,
   normalizeMediaStatus,
@@ -34,12 +38,7 @@ export type LessonQaSummary = {
 };
 
 function hasLessonMetadata(lesson: LessonContent): boolean {
-  return Boolean(
-    lesson.title?.trim() &&
-      lesson.chineseTitle?.trim() &&
-      lesson.description?.trim() &&
-      lesson.duration?.trim()
-  );
+  return hasPublishMetadata(lesson);
 }
 
 export function analyzeLessonQaFromCounts(
@@ -107,6 +106,7 @@ export function analyzeLessonQaFromCounts(
 }
 
 export function analyzeLessonQa(lesson: LessonContent): LessonQaReport {
+  const prelesson = isPrelessonPackage(lesson);
   const subtitleCount = lesson.timedSubtitles?.length ?? 0;
   const vocabularyActual = lesson.vocabulary?.length ?? 0;
   const quizActual = lesson.quizQuestions?.length ?? 0;
@@ -115,10 +115,16 @@ export function analyzeLessonQa(lesson: LessonContent): LessonQaReport {
   const warnings: string[] = [];
 
   if (!hasMetadata) {
-    warnings.push("Metadata incomplete");
+    warnings.push(
+      prelesson
+        ? "Metadata incomplete (title and target title required)"
+        : "Metadata incomplete"
+    );
   }
   if (subtitleCount === 0) {
-    warnings.push("No subtitles");
+    warnings.push(
+      prelesson ? "PreLesson: no subtitles (optional)" : "No subtitles"
+    );
   }
   if (vocabularyActual === 0) {
     warnings.push("No vocabulary");
@@ -136,7 +142,7 @@ export function analyzeLessonQa(lesson: LessonContent): LessonQaReport {
 
   const qaStatus: LessonQaStatus =
     hasMetadata &&
-    subtitleCount > 0 &&
+    (prelesson || subtitleCount > 0) &&
     vocabularyActual > 0 &&
     quizActual > 0 &&
     !vocabMismatch &&
@@ -203,9 +209,10 @@ export function summarizeLessonQa(reports: LessonQaReport[]): LessonQaSummary {
 }
 
 export function isPublishReady(report: LessonQaReport): boolean {
+  const prelesson = isPrelessonPackage(report.lesson);
   return (
     report.hasMetadata &&
-    report.subtitleCount > 0 &&
+    (prelesson || report.subtitleCount > 0) &&
     report.vocabularyActual > 0 &&
     report.quizActual > 0
   );

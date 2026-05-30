@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useMemo } from "react";
 import { calculateReleaseReadiness } from "@/lib/admin/release-readiness";
+import { isPrelessonPackage } from "@/lib/admin/lesson-package-type";
 import { lessonPreviewPath } from "@/lib/lesson-publish";
 import type { LessonContent } from "@/types/lesson-content";
 
@@ -47,6 +48,7 @@ export function ReleaseReadinessCard({ lesson }: Props) {
     [lesson]
   );
 
+  const prelesson = isPrelessonPackage(lesson);
   const adminPreview = lesson.publishStatus !== "available";
   const editHref = `/admin/lessons/${lesson.id}/edit`;
 
@@ -59,11 +61,14 @@ export function ReleaseReadinessCard({ lesson }: Props) {
       hrefLabel: "Edit metadata",
     },
     {
-      label: "Subtitles",
+      label: prelesson ? "Subtitles (optional)" : "Subtitles",
       ready: readiness.subtitlesReady,
+      recommended: prelesson && !readiness.subtitlesReady,
       hint: readiness.subtitlesReady
         ? `${lesson.timedSubtitles.length} lines`
-        : "Import or add subtitles",
+        : prelesson
+          ? "PreLesson: subtitles optional"
+          : "Import or add subtitles",
       href: editHref,
       hrefLabel: "Bulk import",
     },

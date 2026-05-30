@@ -4,6 +4,7 @@ import { useRouter } from "next/navigation";
 import { useCallback, useMemo, useState } from "react";
 import { calculateReleaseReadiness } from "@/lib/admin/release-readiness";
 import { getAdminPublishStatus } from "@/lib/admin/lesson-status";
+import { isPrelessonPackage } from "@/lib/admin/lesson-package-type";
 import { LessonStatusBadge } from "@/components/admin/lesson-status-badge";
 import {
   getLessonCompleteness,
@@ -24,6 +25,7 @@ type Props = {
 export function PublishingControls({ lesson, initialCompleteness }: Props) {
   const router = useRouter();
   const publishStatus = getAdminPublishStatus(lesson);
+  const prelesson = isPrelessonPackage(lesson);
   const [completeness, setCompleteness] =
     useState<LessonCompleteness>(initialCompleteness);
   const [busy, setBusy] = useState<string | null>(null);
@@ -87,8 +89,9 @@ export function PublishingControls({ lesson, initialCompleteness }: Props) {
 
       {!canPublish ? (
         <p className="mt-4 rounded-xl bg-amber-50 px-4 py-3 text-sm text-amber-900 ring-1 ring-amber-200">
-          Release checklist бүрэн болоогүй байна. Metadata, subtitles, ≥5
-          vocabulary, ≥3 quiz, QA passed, approval шаардлагатай.
+          {prelesson
+            ? "Release checklist бүрэн болоогүй. PreLesson-д title, target title, ≥5 vocabulary, ≥3 quiz, approval эсвэл QA passed шаардлагатай. Video/audio/subtitles заавал биш."
+            : "Release checklist бүрэн болоогүй байна. Metadata, subtitles, ≥5 vocabulary, ≥3 quiz, QA passed, approval шаардлагатай."}
         </p>
       ) : null}
 
@@ -137,12 +140,13 @@ export function PublishingControls({ lesson, initialCompleteness }: Props) {
         </li>
         <li
           className={`rounded-full px-2.5 py-1 ring-1 ${
-            completeness.subtitleCount > 0
+            completeness.subtitleCount > 0 || prelesson
               ? "bg-emerald-50 text-emerald-800 ring-emerald-200"
               : "bg-slate-50 ring-slate-200"
           }`}
         >
           Subtitles: {completeness.subtitleCount}
+          {prelesson && completeness.subtitleCount === 0 ? " (optional)" : ""}
         </li>
         <li
           className={`rounded-full px-2.5 py-1 ring-1 ${

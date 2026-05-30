@@ -8,6 +8,7 @@ import {
   adminInputClass,
 } from "@/components/admin/admin-editor-ui";
 import { LessonMediaUploadCard } from "@/components/admin/lesson-media-upload-card";
+import { LessonMediaTeachingPanel } from "@/components/admin/lesson-media-teaching-panel";
 import { MediaStatusBadge } from "@/components/admin/media-status-badge";
 import { isDirectAudioUrl, isDirectVideoUrl } from "@/lib/media-url";
 import {
@@ -135,6 +136,13 @@ export function LessonMediaEditor({ lesson, onSaved }: Props) {
 
   return (
     <div className="flex flex-col gap-4">
+      <AdminEditorSection
+        title="Media & Teaching Visuals"
+        description="Thumbnail, lesson audio, video, and Korean teaching diagrams."
+      >
+        <LessonMediaTeachingPanel lesson={lesson} />
+      </AdminEditorSection>
+
       <LessonMediaUploadCard
         lesson={lesson}
         onUploaded={() => {

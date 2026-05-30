@@ -16,6 +16,8 @@ import { isPrelessonPackage } from "@/lib/admin/lesson-package-type";
 import { LEARNER_LESSON } from "@/lib/learner-labels";
 import { isVideoContent } from "@/lib/lesson-content-type";
 import { inferLessonLanguage } from "@/lib/language-track";
+import { KoreanTeachingVisuals } from "@/components/lesson/korean-teaching-visuals";
+import { isKoreanFlashcardVocabularyLesson, koreanVocabularyStudyCtaLabel } from "@/lib/lesson/korean-vocabulary-ui";
 import { TeacherAssignmentCta } from "@/components/teacher/teacher-assignment-cta";
 import { LessonUnavailable } from "@/components/lesson-unavailable";
 import { getAllLessonIdsSync, coursePath } from "@/lib/content";
@@ -65,6 +67,13 @@ export default async function LessonDetailPage({
     isVideoContent(lesson) && lesson.subtitlePreview.length > 0;
   const isKorean = inferLessonLanguage(lesson) === "ko";
   const isPrelesson = isPrelessonPackage(lesson);
+  const koreanFlashcard = isKoreanFlashcardVocabularyLesson(
+    lesson,
+    lesson.vocabulary
+  );
+  const vocabStudyLabel = koreanFlashcard
+    ? koreanVocabularyStudyCtaLabel(lesson)
+    : "Үгийн сан судлах";
 
   return (
     <MobileAppShell activeTab="study" mainClassName="max-w-[390px] mx-auto w-full">
@@ -90,6 +99,13 @@ export default async function LessonDetailPage({
         ) : null}
 
         <LessonDetailMediaSection lesson={lesson} adminPreview={adminPreview} />
+
+        {koreanFlashcard ? (
+          <KoreanTeachingVisuals
+            teachingImages={lesson.teachingImages}
+            showFallbackDiagram={!lesson.thumbnailUrl}
+          />
+        ) : null}
 
         <LessonDetailOverview lesson={lesson} adminPreview={adminPreview} />
 
@@ -135,7 +151,7 @@ export default async function LessonDetailPage({
             })}
             className="app-btn-secondary mt-4 w-full"
           >
-            📚 Үгийн сан судлах
+            📚 {vocabStudyLabel}
           </Link>
         </MobileCard>
 

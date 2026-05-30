@@ -7,7 +7,8 @@
     "level": "KR-Beginner",
     "exampleKorean": "아",
     "exampleMongolian": "а — эгшиг дангаараа",
-    "skillTags": ["hangul_vowel"]
+    "skillTags": ["hangul_vowel"],
+    "audioFile": "audio/vowel-a.mp3"
   },
   {
     "id": "v002",

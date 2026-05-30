@@ -11,7 +11,7 @@ type Props = {
 };
 
 export function LanguageFilteredKanjiView({ allLessons }: Props) {
-  const { lessons, ready, trackLabel } = useLearnerLanguageLessons(allLessons);
+  const { lessons, ready, lang } = useLearnerLanguageLessons(allLessons);
 
   if (!ready) {
     return (
@@ -33,7 +33,7 @@ export function LanguageFilteredKanjiView({ allLessons }: Props) {
     <KanjiAppView
       entries={entries}
       lessonVocab={lessonVocab}
-      trackLabel={trackLabel}
+      lang={lang}
     />
   );
 }

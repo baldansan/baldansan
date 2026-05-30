@@ -1,20 +1,17 @@
-import Link from "next/link";
-import { AdminPageHeader } from "@/components/admin/admin-page-header";
+import { AdminEditLessonNotFound } from "@/components/admin/admin-edit-lesson-not-found";
 import { LessonEditForm } from "@/components/admin/lesson-edit-form";
-import { LessonActivityCard } from "@/components/admin/lesson-activity-card";
-import { LessonTasksCard } from "@/components/admin/lesson-tasks-card";
-import { EmptyState } from "@/components/empty-state";
 import {
   getAdminLessonById,
   getAdminLessonOrderIndex,
 } from "@/lib/admin/lesson-fetch";
 import { analyzeLessonQa } from "@/lib/admin/lesson-qa";
+import { isPrelessonPackage } from "@/lib/admin/lesson-package-type";
 import { normalizeLessonRouteId } from "@/lib/lesson-id";
 import {
   getLessonCompleteness,
   type LessonCompleteness,
 } from "@/lib/supabase/admin-content";
-import { getAdminTasksForLesson } from "@/lib/supabase/admin-tasks";
+import { createServerSupabaseClient } from "@/lib/supabase/server";
 
 export const dynamic = "force-dynamic";
 
@@ -30,50 +27,34 @@ export async function generateMetadata({ params }: Props) {
 export default async function AdminEditLessonPage({ params }: Props) {
   const { lessonId } = await params;
   const normalizedId = normalizeLessonRouteId(lessonId);
+
   const lesson = await getAdminLessonById(normalizedId);
 
   if (!lesson) {
-    return (
-      <EmptyState
-          title="Хичээл олдсонгүй"
-          description={`"${normalizedId}" ID-тай хичээл байхгүй. Supabase эсвэл local fallback шалгана уу.`}
-          action={
-            <Link
-              href="/admin/lessons"
-              className="text-sm font-medium text-emerald-700 hover:text-emerald-800"
-            >
-              ← Хичээл удирдах
-            </Link>
-          }
-        />
-    );
+    return <AdminEditLessonNotFound lessonId={normalizedId} />;
   }
 
-  const completenessResult = await getLessonCompleteness(normalizedId);
+  const resolvedId = lesson.id;
+  const serverClient = await createServerSupabaseClient();
+  const completenessResult = serverClient
+    ? await getLessonCompleteness(resolvedId, serverClient, {
+        skipAdminGate: true,
+      })
+    : await getLessonCompleteness(resolvedId);
   const initialCompleteness: LessonCompleteness =
     completenessResult.data ?? completenessFromLesson(lesson);
 
-  const orderIndexFromServer = await getAdminLessonOrderIndex(normalizedId);
+  const orderIndexFromServer = await getAdminLessonOrderIndex(resolvedId);
   const orderIndex =
     orderIndexFromServer ??
-    (Number.isFinite(Number(normalizedId)) ? Number(normalizedId) : 1);
-
-  const lessonTasks = await getAdminTasksForLesson(normalizedId);
+    (Number.isFinite(Number(resolvedId)) ? Number(resolvedId) : 1);
 
   return (
-    <div className="flex flex-col gap-6">
-      <AdminPageHeader
-        title={`Edit Lesson ${normalizedId}`}
-        description={lesson.title}
-      />
-      <LessonTasksCard lessonId={normalizedId} tasks={lessonTasks} />
-      <LessonActivityCard lessonId={normalizedId} />
-      <LessonEditForm
-        lesson={lesson}
-        orderIndex={orderIndex}
-        initialCompleteness={initialCompleteness}
-      />
-    </div>
+    <LessonEditForm
+      lesson={lesson}
+      orderIndex={orderIndex}
+      initialCompleteness={initialCompleteness}
+    />
   );
 }
 
@@ -90,6 +71,7 @@ function completenessFromLesson(
     };
   }
   const qa = analyzeLessonQa(lesson);
+  const prelesson = isPrelessonPackage(lesson);
   return {
     hasMetadata: qa.hasMetadata,
     subtitleCount: qa.subtitleCount,
@@ -97,7 +79,7 @@ function completenessFromLesson(
     quizCount: qa.quizActual,
     readyToPublish:
       qa.hasMetadata &&
-      qa.subtitleCount > 0 &&
+      (prelesson || qa.subtitleCount > 0) &&
       qa.vocabularyActual >= 5 &&
       qa.quizActual >= 3,
   };

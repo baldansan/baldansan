@@ -55,6 +55,11 @@ export type VocabularyWord = {
   hskLevel: string;
   exampleChinese: string;
   exampleMongolian: string;
+  /** Optional import metadata — Hangul grouping when present. */
+  skillTags?: string[];
+  lessonSection?: string;
+  /** Per-word audio URL (from ZIP import via source_note map). */
+  audioUrl?: string;
 };
 
 export type VocabularyFilter =

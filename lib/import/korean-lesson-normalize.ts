@@ -8,6 +8,7 @@ import type {
   NormalizedQuizImport,
   NormalizedVocabularyImport,
 } from "@/lib/supabase/admin-import";
+import type { TeachingImageRef } from "@/lib/lesson/teaching-media";
 
 export type KoreanZipManifest = {
   packageVersion: string;
@@ -40,6 +41,7 @@ export type KoreanZipLesson = {
   audioFile?: string;
   thumbnailFile?: string;
   sourceNote?: string;
+  teachingImages?: TeachingImageRef[];
 };
 
 export type KoreanZipVocabularyRow = {
@@ -77,6 +79,7 @@ export type KoreanParsedZipFiles = {
   subtitles?: unknown;
   practice?: unknown;
   grammar?: unknown;
+  teachingImages?: unknown;
 };
 
 export type KoreanLessonPackage = {
@@ -95,6 +98,7 @@ export type KoreanLessonValidation = KoreanLessonPackage & {
   ok: boolean;
   preview: KoreanImportPreview | null;
   importPayload: LessonImportPayload | null;
+  info: string[];
 };
 
 export type KoreanImportPreview = {
@@ -159,6 +163,33 @@ function parseArray(raw: unknown, field: string, errors: string[], required: boo
   return raw.filter(isRecord);
 }
 
+/** Accept array or single object; never fail import for optional reference files. */
+function normalizeFlexibleArray(
+  raw: unknown,
+  field: string,
+  warnings: string[]
+): Record<string, unknown>[] {
+  if (raw == null) return [];
+  if (Array.isArray(raw)) return raw.filter(isRecord);
+  if (isRecord(raw)) {
+    warnings.push(`${field} was an object — normalized to a single-item array.`);
+    return [raw];
+  }
+  warnings.push(`${field} is not an array — skipped.`);
+  return [];
+}
+
+function formatTeachingSubtitleTime(index: number, part: "start" | "end"): string {
+  const seconds = index * 5;
+  const mm = String(Math.floor(seconds / 60)).padStart(2, "0");
+  const ss = String(seconds % 60).padStart(2, "0");
+  if (part === "end") {
+    const endSeconds = seconds + 4;
+    return `${String(Math.floor(endSeconds / 60)).padStart(2, "0")}:${String(endSeconds % 60).padStart(2, "0")}`;
+  }
+  return `${mm}:${ss}`;
+}
+
 /** Map one Korean vocabulary row to DB bulk-import shape. */
 export function mapKoreanVocabularyToDb(
   row: KoreanZipVocabularyRow
@@ -190,22 +221,59 @@ export function mapKoreanQuizToDb(row: KoreanZipQuizRow): NormalizedQuizImport {
 function mapSubtitlesForImport(
   rows: Record<string, unknown>[]
 ): LessonImportPayload["subtitles"] {
-  return rows
-    .map((row) => {
-      const startTime = trim(row.start ?? row.startTime);
-      const endTime = trim(row.end ?? row.endTime);
-      const korean = trim(row.korean ?? row.target ?? row.chinese);
-      const mongolian = trim(row.mongolian);
-      if (!korean || !mongolian || !startTime || !endTime) return null;
-      return {
+  const imported: NonNullable<LessonImportPayload["subtitles"]> = [];
+
+  rows.forEach((row, index) => {
+    const startTime = trim(row.start ?? row.startTime);
+    const endTime = trim(row.end ?? row.endTime);
+    const korean = trim(
+      row.korean ?? row.target ?? row.chinese ?? row.title ?? row.section
+    );
+    const mongolian = trim(row.mongolian);
+    const example = trim(row.example ?? row.exampleKorean ?? row.example_korean);
+    const romanization = trim(row.romanization ?? row.reading ?? row.pinyin) || null;
+
+    if (!mongolian) return;
+
+    if (startTime && endTime && korean) {
+      imported.push({
         startTime,
         endTime,
         chinese: korean,
-        pinyin: trim(row.romanization ?? row.reading ?? row.pinyin) || null,
-        mongolian,
-      };
-    })
-    .filter((row): row is NonNullable<typeof row> => row !== null);
+        pinyin: romanization,
+        mongolian: example ? `${mongolian} — ${example}` : mongolian,
+      });
+      return;
+    }
+
+    if (!startTime && !endTime && (korean || trim(row.section))) {
+      const label = trim(row.section) || korean;
+      imported.push({
+        startTime: formatTeachingSubtitleTime(index, "start"),
+        endTime: formatTeachingSubtitleTime(index, "end"),
+        chinese: label,
+        pinyin: romanization,
+        mongolian: example ? `${mongolian} — ${example}` : mongolian,
+      });
+    }
+  });
+
+  return imported;
+}
+
+function parseTeachingImagesFile(
+  raw: unknown,
+  warnings: string[]
+): TeachingImageRef[] {
+  const rows = normalizeFlexibleArray(raw, "teaching-images.json", warnings);
+  return rows
+    .map((item) => ({
+      type: trim(item.type) || "diagram",
+      title: trim(item.title),
+      file: trim(item.file),
+      caption: trim(item.caption) || undefined,
+    }))
+    .filter((item) => item.title && item.file);
 }
 
 function normalizeManifest(
@@ -291,6 +359,8 @@ function normalizeLesson(
       ? Math.floor(Number(orderRaw))
       : undefined;
 
+  const teachingImages = parseTeachingImagesRaw(raw.teachingImages);
+
   const lessonType =
     trim(raw.lessonType ?? raw.lesson_type) || manifest?.lessonType || undefined;
 
@@ -309,7 +379,22 @@ function normalizeLesson(
     audioFile: trim(raw.audioFile ?? raw.audio_file) || undefined,
     thumbnailFile: trim(raw.thumbnailFile ?? raw.thumbnail_file) || undefined,
     sourceNote: trim(raw.sourceNote ?? raw.source_note) || manifest?.source,
+    teachingImages,
   };
+}
+
+function parseTeachingImagesRaw(raw: unknown): TeachingImageRef[] | undefined {
+  if (!Array.isArray(raw)) return undefined;
+  const items = raw
+    .filter((item): item is Record<string, unknown> => typeof item === "object" && item !== null)
+    .map((item) => ({
+      type: trim(item.type) || "diagram",
+      title: trim(item.title),
+      file: trim(item.file),
+      caption: trim(item.caption) || undefined,
+    }))
+    .filter((item) => item.title && item.file);
+  return items.length ? items : undefined;
 }
 
 function normalizeVocabularyRow(
@@ -345,18 +430,26 @@ function normalizeVocabularyRow(
     ? item.skillTags.filter((tag): tag is string => typeof tag === "string")
     : undefined;
 
+  const exampleKorean =
+    trim(item.exampleKorean ?? item.example_korean ?? item.exampleChinese) || null;
+  const exampleMongolian =
+    trim(item.exampleMongolian ?? item.example_mongolian) || null;
+
+  if (!exampleKorean && !exampleMongolian) {
+    warnings.push(
+      `vocabulary[${index}] "${korean}": example sentence missing (optional).`
+    );
+  }
+
   return {
     id: trim(item.id) || undefined,
     korean,
     romanization,
     mongolian,
     level,
-    exampleKorean:
-      trim(item.exampleKorean ?? item.example_korean ?? item.exampleChinese) ||
-      null,
+    exampleKorean,
     exampleRomanization: trim(item.exampleRomanization ?? item.example_romanization) || null,
-    exampleMongolian:
-      trim(item.exampleMongolian ?? item.example_mongolian) || null,
+    exampleMongolian,
     audioFile: trim(item.audioFile ?? item.audio_file) || undefined,
     skillTags,
   };
@@ -474,12 +567,12 @@ export function normalizeKoreanLessonPackage(
 
   let subtitles: Record<string, unknown>[] = [];
   if (files.subtitles != null) {
-    subtitles = parseArray(files.subtitles, "subtitles.json", errors, false);
+    subtitles = normalizeFlexibleArray(files.subtitles, "subtitles.json", warnings);
   }
 
   let practiceRows: Record<string, unknown>[] = [];
   if (files.practice != null) {
-    practiceRows = parseArray(files.practice, "practice.json", errors, false);
+    practiceRows = normalizeFlexibleArray(files.practice, "practice.json", warnings);
     if (practiceRows.length > 0) {
       warnings.push(
         "practice.json found — workbook exercises are reference-only in v1 (not imported into quiz table)."
@@ -489,11 +582,18 @@ export function normalizeKoreanLessonPackage(
 
   let grammarRows: Record<string, unknown>[] = [];
   if (files.grammar != null) {
-    grammarRows = parseArray(files.grammar, "grammar.json", errors, false);
+    grammarRows = normalizeFlexibleArray(files.grammar, "grammar.json", warnings);
     if (grammarRows.length > 0) {
       warnings.push(
         "grammar.json found — grammar notes are reference-only in v1 (store in lesson description or source_note manually if needed)."
       );
+    }
+  }
+
+  if (lesson && files.teachingImages != null) {
+    const fromFile = parseTeachingImagesFile(files.teachingImages, warnings);
+    if (fromFile.length > 0) {
+      lesson.teachingImages = [...(lesson.teachingImages ?? []), ...fromFile];
     }
   }
 
@@ -551,6 +651,7 @@ export function validateKoreanLessonPackage(
 ): KoreanLessonValidation {
   const errors = [...pkg.errors];
   const warnings = [...pkg.warnings];
+  const info: string[] = [];
 
   if (!pkg.manifest) {
     errors.push("manifest.json is required.");
@@ -576,16 +677,25 @@ export function validateKoreanLessonPackage(
   const imageCount = media?.imageFileCount ?? 0;
 
   if (audioCount === 0 && !media?.hasLessonAudio) {
-    warnings.push(
-      "Audio missing — info only. TTS pronunciation fallback is available in the app."
-    );
+    info.push("Audio байхгүй — төхөөрөмжийн TTS fallback ашиглана.");
   }
   if (imageCount === 0) {
-    warnings.push("Images missing — info only (optional for Korean book lessons).");
+    info.push("Images байхгүй — заавал биш.");
   }
 
   if (pkg.subtitles.length === 0) {
-    warnings.push("subtitles.json missing — OK for Hangul/prelesson packages.");
+    info.push("subtitles.json байхгүй — Hangul/prelesson хичээлд OK.");
+  } else {
+    const teachingOnly = pkg.subtitles.every((row) => {
+      const start = trim(row.start ?? row.startTime);
+      const end = trim(row.end ?? row.endTime);
+      return !start && !end;
+    });
+    if (teachingOnly) {
+      warnings.push(
+        "subtitles.json contains teaching lines without timestamps — accepted for Korean import."
+      );
+    }
   }
 
   let importPayload: LessonImportPayload | null = null;
@@ -611,6 +721,7 @@ export function validateKoreanLessonPackage(
     ok,
     errors,
     warnings,
+    info,
     preview,
     importPayload,
   };
