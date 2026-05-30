@@ -1,0 +1,19 @@
+[
+  {
+    "id": "Q001",
+    "type": "multiple_choice",
+    "skill": "hangul_vowel_romanization",
+    "question": "「ㅓ」-ийн romanization аль вэ?",
+    "options": ["eo", "o", "u", "eu"],
+    "correctAnswer": "eo",
+    "explanation": "ㅓ → eo. ㅗ (o)-той бүү андуураарай."
+  },
+  {
+    "id": "Q002",
+    "type": "cloze",
+    "question": "「ㅏ」-ийн romanization: ___",
+    "options": ["a", "eo", "o"],
+    "correctAnswer": "a",
+    "explanation": "ㅏ → a"
+  }
+]

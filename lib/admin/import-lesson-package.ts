@@ -4,6 +4,8 @@ import type {
   LessonZipValidation,
 } from "@/lib/import/lesson-zip-import";
 import { normalizeZipPath } from "@/lib/import/zip-path";
+import type { ImportDraftApiBody } from "@/lib/admin/build-import-draft-request";
+import { upsertDraftLessonFromPackage } from "@/lib/admin/upsert-draft-lesson-from-package";
 import { isCurrentUserAdmin } from "@/lib/supabase/admin";
 import {
   ADMIN_ACTIVITY_ACTIONS,
@@ -25,6 +27,8 @@ export type PackageMediaUploadResult = {
 export type LessonPackageImportResult = {
   ok: boolean;
   lessonId: string;
+  /** Original package/manifest lessonId (may differ from lessonId when DB id is numeric). */
+  packageLessonId?: string;
   courseId: string;
   vocabularyInserted: number;
   quizInserted: number;
@@ -35,6 +39,8 @@ export type LessonPackageImportResult = {
   errors: string[];
   audioUrl?: string;
   thumbnailUrl?: string;
+  created?: boolean;
+  message?: string;
 };
 
 function notConfigured(): LessonPackageImportResult {
@@ -170,19 +176,6 @@ type DraftLessonShell = {
   packageVersion?: string;
 };
 
-function courseTitleFromId(courseId: string): string {
-  if (courseId === "korean-level-1") {
-    return "Солонгос хэл";
-  }
-  if (courseId.startsWith("korean")) {
-    return "Солонгос хэл";
-  }
-  if (courseId.includes("hsk")) {
-    return courseId.toUpperCase();
-  }
-  return courseId;
-}
-
 function buildDraftLessonShell(validation: LessonZipValidation): DraftLessonShell | null {
   if (!validation.preview || !validation.lesson) {
     return null;
@@ -242,100 +235,52 @@ function buildDraftLessonShell(validation: LessonZipValidation): DraftLessonShel
   };
 }
 
-function isMissingColumnError(message: string): boolean {
-  const lower = message.toLowerCase();
-  return (
-    lower.includes("column") &&
-    (lower.includes("does not exist") || lower.includes("could not find"))
-  );
-}
-
-async function lessonRowExists(lessonId: string): Promise<boolean> {
-  if (!supabase) return false;
-  const { data, error } = await supabase
-    .from("lessons")
-    .select("id")
-    .eq("id", lessonId)
-    .maybeSingle();
-  if (error) {
-    console.warn("[import] lesson existence check failed", { lessonId, error });
-    return false;
-  }
-  return Boolean(data);
-}
-
-async function resolveOrderIndex(
-  courseId: string,
-  preferred?: number
-): Promise<number> {
-  if (preferred != null && Number.isFinite(preferred) && preferred >= 1) {
-    return Math.floor(preferred);
-  }
-  if (!supabase) return 1;
-  const { data } = await supabase
-    .from("lessons")
-    .select("order_index")
-    .eq("course_id", courseId)
-    .order("order_index", { ascending: false })
-    .limit(1)
-    .maybeSingle();
-  return (data?.order_index ?? 0) + 1;
-}
-
-async function ensureDraftCourseExists(
-  courseId: string
-): Promise<{ ok: boolean; error?: string; created?: boolean }> {
-  if (!supabase) {
-    return { ok: false, error: "Supabase is not configured." };
+function buildImportDraftBodyFromValidation(
+  validation: LessonZipValidation
+): ImportDraftApiBody | null {
+  const draft = buildDraftLessonShell(validation);
+  if (!draft || !validation.importPayload) {
+    return null;
   }
 
-  const { data, error } = await supabase
-    .from("courses")
-    .select("id")
-    .eq("id", courseId)
-    .maybeSingle();
-
-  if (error) {
-    return { ok: false, error: `Course lookup failed: ${error.message}` };
-  }
-  if (data) {
-    return { ok: true };
-  }
-
-  const isKorean = courseId.toLowerCase().startsWith("korean");
-  const { error: insertError } = await supabase.from("courses").insert({
-    id: courseId,
-    title: courseTitleFromId(courseId),
-    description: isKorean
-      ? "Korean Level 1 — auto-created from ZIP import."
-      : `Auto-created from ZIP import (${courseId}).`,
-    level: isKorean ? "Korean" : "HSK",
-    status: "available",
-    order_index: 10,
-  });
-
-  if (insertError) {
-    if (insertError.code === "23505") {
-      return { ok: true };
-    }
-    return {
-      ok: false,
-      error: `Course not found: ${courseId}. ${insertError.message}`,
-    };
-  }
-
-  return { ok: true, created: true };
+  return {
+    courseId: draft.courseId,
+    lessonId: draft.lessonId,
+    language: draft.language,
+    targetLanguage: draft.targetLanguage ?? null,
+    uiLanguage: draft.uiLanguage ?? null,
+    title: draft.title,
+    targetTitle: draft.targetTitle,
+    subtitle: draft.subtitle,
+    description: draft.description,
+    duration: draft.duration,
+    orderIndex: draft.orderIndex,
+    sourceNote: draft.sourceNote,
+    mediaStatus: draft.mediaStatus,
+    packageVersion: draft.packageVersion,
+    lessonType: validation.lesson?.lessonType,
+    importedFromZip: true,
+    importPayload: validation.importPayload,
+    warnings: validation.warnings,
+  };
 }
 
 async function upsertLessonShell(
   validation: LessonZipValidation
-): Promise<{ ok: boolean; error?: string; created?: boolean; warnings?: string[] }> {
+): Promise<{
+  ok: boolean;
+  resolvedLessonId?: string;
+  packageLessonId?: string;
+  error?: string;
+  created?: boolean;
+  warnings?: string[];
+}> {
   if (!supabase) {
     return { ok: false, error: "Supabase is not configured." };
   }
 
-  const draftLesson = buildDraftLessonShell(validation);
-  if (!draftLesson) {
+  const body = buildImportDraftBodyFromValidation(validation);
+  if (!body) {
     if (!validation.preview?.courseId && !validation.lesson?.courseId) {
       return { ok: false, error: "courseId missing in manifest.json." };
     }
@@ -346,131 +291,26 @@ async function upsertLessonShell(
   }
 
   console.log("parsed import package", {
-    courseId: draftLesson.courseId,
-    lessonId: draftLesson.lessonId,
-    language: draftLesson.language,
-    targetLanguage: draftLesson.targetLanguage,
-    title: draftLesson.title,
-    targetTitle: draftLesson.targetTitle,
+    courseId: body.courseId,
+    lessonId: body.lessonId,
+    language: body.language,
+    targetLanguage: body.targetLanguage,
+    title: body.title,
+    targetTitle: body.targetTitle,
     vocabularyCount: validation.vocabulary.length,
     quizCount: validation.quizQuestions.length,
-    packageVersion: draftLesson.packageVersion,
+    packageVersion: body.packageVersion,
   });
-  console.log("creating draft lesson", draftLesson);
 
-  const shellWarnings: string[] = [];
-  const { courseId, lessonId } = draftLesson;
-
-  const courseReady = await ensureDraftCourseExists(courseId);
-  if (!courseReady.ok) {
-    return { ok: false, error: courseReady.error };
-  }
-  if (courseReady.created) {
-    shellWarnings.push(
-      `Course "${courseId}" was auto-created (${courseTitleFromId(courseId)}).`
-    );
-  }
-
-  const lessonExists = await lessonRowExists(lessonId);
-  const orderIndex = lessonExists
-    ? draftLesson.orderIndex
-    : await resolveOrderIndex(courseId, draftLesson.orderIndex);
-
-  const rowPayload = {
-    course_id: courseId,
-    title: draftLesson.title,
-    chinese_title: draftLesson.targetTitle,
-    subtitle: draftLesson.subtitle,
-    description: draftLesson.description,
-    duration: draftLesson.duration,
-    status: "draft" as const,
-    order_index: orderIndex,
-    source_note: draftLesson.sourceNote,
-    media_status: draftLesson.mediaStatus,
-    language: draftLesson.language,
-    target_language: draftLesson.targetLanguage,
-    ui_language: draftLesson.uiLanguage,
-    vocabulary_count: 0,
-    quiz_count: 0,
+  const result = await upsertDraftLessonFromPackage(supabase, body);
+  return {
+    ok: result.ok,
+    resolvedLessonId: result.resolvedLessonId,
+    packageLessonId: result.packageLessonId,
+    created: result.created,
+    error: result.error,
+    warnings: result.warnings,
   };
-
-  if (!lessonExists) {
-    const { error: insertError } = await supabase.from("lessons").insert({
-      id: lessonId,
-      ...rowPayload,
-    });
-
-    if (insertError) {
-      const message = insertError.message ?? "Insert failed.";
-      if (insertError.code === "23505") {
-        // Race: another request created the row — fall through to update.
-      } else if (isMissingColumnError(message)) {
-        const {
-          target_language: _t,
-          ui_language: _u,
-          language: _l,
-          ...basePayload
-        } = rowPayload;
-        const { error: fallbackError } = await supabase.from("lessons").insert({
-          id: lessonId,
-          ...basePayload,
-        });
-        if (fallbackError && fallbackError.code !== "23505") {
-          return {
-            ok: false,
-            error: `Draft lesson create failed: ${fallbackError.message}`,
-          };
-        }
-      } else {
-        return {
-          ok: false,
-          error: `Draft lesson create failed: ${message}`,
-        };
-      }
-    }
-  } else {
-    const { error: updateError } = await supabase
-      .from("lessons")
-      .update(rowPayload)
-      .eq("id", lessonId);
-
-    if (updateError) {
-      const message = updateError.message ?? "Update failed.";
-      if (isMissingColumnError(message)) {
-        const {
-          target_language: _t,
-          ui_language: _u,
-          language: _l,
-          ...basePayload
-        } = rowPayload;
-        const { error: fallbackError } = await supabase
-          .from("lessons")
-          .update(basePayload)
-          .eq("id", lessonId);
-        if (fallbackError) {
-          return {
-            ok: false,
-            error: `Failed to update draft lesson: ${fallbackError.message}`,
-          };
-        }
-      } else {
-        return {
-          ok: false,
-          error: `Failed to update draft lesson: ${message}`,
-        };
-      }
-    }
-  }
-
-  const persisted = await lessonRowExists(lessonId);
-  if (!persisted) {
-    return {
-      ok: false,
-      error: `Draft lesson was not saved to the database (${lessonId}). Check admin permissions and RLS policies.`,
-    };
-  }
-
-  return { ok: true, created: !lessonExists, warnings: shellWarnings };
 }
 
 export async function importLessonPackage(
@@ -509,16 +349,17 @@ export async function importLessonPackage(
     };
   }
 
-  const lessonId = validation.preview.lessonId;
+  const packageLessonId = validation.preview.lessonId;
   const courseId = validation.lesson.courseId || validation.preview.courseId;
   const warnings = [...validation.warnings];
   const errors: string[] = [];
 
   const shell = await upsertLessonShell(validation);
-  if (!shell.ok) {
+  if (!shell.ok || !shell.resolvedLessonId) {
     return {
       ok: false,
-      lessonId,
+      lessonId: packageLessonId,
+      packageLessonId,
       courseId,
       vocabularyInserted: 0,
       quizInserted: 0,
@@ -532,18 +373,22 @@ export async function importLessonPackage(
   if (shell.warnings?.length) {
     warnings.push(...shell.warnings);
   }
-  if (shell.created) {
-    warnings.push(`Created new draft lesson "${lessonId}".`);
-  }
 
-  const imported = await bulkImportLessonContent(lessonId, validation.importPayload, {
-    mode: "replace",
-  });
+  const resolvedLessonId = shell.resolvedLessonId;
+
+  const imported = await bulkImportLessonContent(
+    resolvedLessonId,
+    validation.importPayload,
+    {
+      mode: "replace",
+    }
+  );
 
   if (imported.error || !imported.data) {
     return {
       ok: false,
-      lessonId,
+      lessonId: resolvedLessonId,
+      packageLessonId,
       courseId,
       vocabularyInserted: 0,
       quizInserted: 0,
@@ -552,6 +397,7 @@ export async function importLessonPackage(
       mediaFailures: [],
       warnings,
       errors: [imported.error ?? "Bulk content import failed."],
+      created: shell.created,
     };
   }
 
@@ -559,7 +405,7 @@ export async function importLessonPackage(
   let mediaUploaded = 0;
 
   for (const media of validation.mediaFiles) {
-    const result = await uploadPackageMediaFile(courseId, lessonId, media);
+    const result = await uploadPackageMediaFile(courseId, resolvedLessonId, media);
     mediaFailures.push(result);
     if (result.publicUrl && !result.error) {
       mediaUploaded += 1;
@@ -590,7 +436,7 @@ export async function importLessonPackage(
   }
 
   if (audioUrl || thumbnailUrl || validation.lesson.sourceNote) {
-    const mediaUpdate = await updateLessonMedia(lessonId, {
+    const mediaUpdate = await updateLessonMedia(resolvedLessonId, {
       audioUrl: audioUrl ?? "",
       thumbnailUrl: thumbnailUrl ?? "",
       sourceNote:
@@ -614,12 +460,13 @@ export async function importLessonPackage(
   logAdminActivityFireAndForget({
     action: ADMIN_ACTIVITY_ACTIONS.bulkImportCompleted,
     entityType: "lesson",
-    entityId: lessonId,
-    lessonId,
-    title: `ZIP package imported for lesson ${lessonId}`,
+    entityId: resolvedLessonId,
+    lessonId: resolvedLessonId,
+    title: `ZIP package imported for lesson ${resolvedLessonId}`,
     metadata: {
       source: "zip_package",
       courseId,
+      packageLessonId,
       language: validation.preview.language,
       vocabularyInserted: imported.data.vocabularyInserted,
       quizInserted: imported.data.quizQuestionsInserted,
@@ -628,9 +475,14 @@ export async function importLessonPackage(
     },
   });
 
+  const message = shell.created
+    ? "Шинэ draft lesson үүсгээд import амжилттай хийлээ."
+    : "Одоо байгаа draft lesson дээр import хийлээ.";
+
   const result: LessonPackageImportResult = {
     ok: true,
-    lessonId,
+    lessonId: resolvedLessonId,
+    packageLessonId,
     courseId,
     vocabularyInserted: imported.data.vocabularyInserted,
     quizInserted: imported.data.quizQuestionsInserted,
@@ -641,6 +493,8 @@ export async function importLessonPackage(
     errors,
     audioUrl,
     thumbnailUrl,
+    created: shell.created,
+    message,
   };
   console.log("import result", result);
   return result;

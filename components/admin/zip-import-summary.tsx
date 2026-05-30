@@ -1,0 +1,181 @@
+"use client";
+
+import { isPrelessonPackage } from "@/lib/admin/lesson-package-type";
+import type { LessonImportTrack } from "@/lib/import/import-track";
+import type {
+  LessonImportPreview,
+  LessonZipValidation,
+} from "@/lib/import/lesson-zip-import";
+
+export type ZipImportSummaryStatus = "ready" | "warning" | "failed";
+
+function statusLabel(status: ZipImportSummaryStatus): string {
+  if (status === "ready") return "Ready";
+  if (status === "warning") return "Warning";
+  return "Failed";
+}
+
+function statusTone(status: ZipImportSummaryStatus): string {
+  if (status === "ready") {
+    return "bg-emerald-50 text-emerald-800 ring-emerald-200";
+  }
+  if (status === "warning") {
+    return "bg-amber-50 text-amber-900 ring-amber-200";
+  }
+  return "bg-red-50 text-red-800 ring-red-200";
+}
+
+export function getZipImportSummaryStatus(
+  validation: LessonZipValidation | null
+): ZipImportSummaryStatus {
+  if (!validation || !validation.ok || validation.errors.length > 0) {
+    return "failed";
+  }
+  if (validation.warnings.length > 0) {
+    return "warning";
+  }
+  return "ready";
+}
+
+function buildMissingItems(
+  preview: LessonImportPreview,
+  validation: LessonZipValidation,
+  track: LessonImportTrack = "legacy"
+): string[] {
+  const prelesson = isPrelessonPackage({
+    id: preview.lessonId,
+    courseId: preview.courseId,
+    sourceNote: preview.source,
+  });
+
+  const critical: string[] = [];
+  const warnings: string[] = [];
+
+  for (const err of validation.errors) {
+    critical.push(err);
+  }
+
+  for (const warning of validation.warnings) {
+    if (track === "korean") {
+      if (
+        warning.includes("TTS") ||
+        warning.includes("info only") ||
+        warning.includes("optional") ||
+        warning.includes("recommended") ||
+        warning.includes("reference-only") ||
+        warning.includes("missing — OK")
+      ) {
+        warnings.push(warning);
+      } else if (
+        !warning.includes("pinyin") &&
+        !warning.includes("HSK") &&
+        !warning.includes("icon missing")
+      ) {
+        warnings.push(warning);
+      }
+    } else {
+      warnings.push(warning);
+    }
+  }
+
+  if (track !== "korean") {
+    if (preview.audioFileCount === 0) {
+      warnings.push(
+        prelesson ? "Audio байхгүй — PreLesson тул OK" : "Audio missing (optional)"
+      );
+    }
+    if (preview.imageFileCount === 0) {
+      warnings.push(prelesson ? "Images байхгүй — OK" : "Images missing (optional)");
+    }
+    if (preview.subtitleCount === 0) {
+      warnings.push(
+        prelesson ? "Subtitles байхгүй — OK" : "Subtitles missing (optional)"
+      );
+    }
+  }
+
+  if (preview.vocabularyCount === 0) {
+    critical.push("Vocabulary missing");
+  }
+  if (preview.quizCount === 0 && track === "korean") {
+    critical.push("Quiz missing");
+  } else if (preview.quizCount === 0 && track === "chinese") {
+    warnings.push("Quiz missing (optional for some HSK packages)");
+  } else if (preview.quizCount === 0) {
+    warnings.push("Quiz missing");
+  }
+
+  return [...critical, ...warnings];
+}
+
+function SummaryField({
+  label,
+  value,
+}: {
+  label: string;
+  value: string | number;
+}) {
+  return (
+    <div>
+      <dt className="text-xs font-medium uppercase tracking-wide text-slate-500">
+        {label}
+      </dt>
+      <dd className="mt-0.5 text-sm font-medium text-slate-900">{value}</dd>
+    </div>
+  );
+}
+
+type Props = {
+  preview: LessonImportPreview;
+  validation: LessonZipValidation;
+  track?: LessonImportTrack;
+};
+
+export function ZipImportSummary({ preview, validation, track = "legacy" }: Props) {
+  const status = getZipImportSummaryStatus(validation);
+  const missingItems = buildMissingItems(preview, validation, track);
+  const criticalCount = validation.errors.length;
+
+  return (
+    <section className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:p-6">
+      <div className="flex flex-wrap items-start justify-between gap-3">
+        <h2 className="text-lg font-semibold text-slate-900">
+          Import summary
+        </h2>
+        <span
+          className={`inline-flex rounded-full px-3 py-1 text-xs font-semibold ring-1 ${statusTone(status)}`}
+        >
+          {statusLabel(status)}
+        </span>
+      </div>
+
+      <dl className="mt-5 grid grid-cols-2 gap-x-4 gap-y-3 sm:grid-cols-3">
+        <SummaryField label="Course ID" value={preview.courseId} />
+        <SummaryField label="Lesson ID" value={preview.lessonId} />
+        <SummaryField label="Language" value={preview.language} />
+        <SummaryField label="Title" value={preview.title} />
+        <SummaryField label="Vocabulary count" value={preview.vocabularyCount} />
+        <SummaryField label="Quiz count" value={preview.quizCount} />
+        <SummaryField label="Audio count" value={preview.audioFileCount} />
+        <SummaryField label="Image count" value={preview.imageFileCount} />
+      </dl>
+
+      {missingItems.length > 0 ? (
+        <div className="mt-5">
+          <h3 className="text-sm font-semibold text-slate-900">
+            {track === "korean" && criticalCount === 0
+              ? "Checks (warnings are non-blocking)"
+              : "Missing items"}
+          </h3>
+          <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-amber-900">
+            {missingItems.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ul>
+        </div>
+      ) : (
+        <p className="mt-5 text-sm text-emerald-800">Бүх шаардлагатай өгөгдөл бэлэн.</p>
+      )}
+    </section>
+  );
+}

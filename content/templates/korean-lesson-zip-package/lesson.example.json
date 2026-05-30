@@ -1,0 +1,12 @@
+{
+  "courseId": "korean-1",
+  "title": "Үндсэн эгшиг",
+  "targetTitle": "기본 모음",
+  "mongolianTitle": "Үндсэн эгшиг",
+  "description": "Солонгос үндсэн эгшиг ㅏ ㅓ ㅗ ㅜ ㅡ ㅣ",
+  "lessonType": "hangul",
+  "duration": "15 min",
+  "status": "draft",
+  "orderIndex": 1,
+  "mediaStatus": "missing"
+}

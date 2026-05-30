@@ -189,6 +189,10 @@ export function normalizeZipLesson(
     warnings.push("lesson.json: mongolianTitle missing (recommended for learner UI).");
   }
 
+  if (!trim(raw.icon)) {
+    warnings.push("lesson.json: icon missing (optional — not stored in DB).");
+  }
+
   if (errors.length > 0) return null;
 
   const displayTitle = mongolianTitle || trim(raw.title) || targetTitle;

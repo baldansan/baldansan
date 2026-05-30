@@ -1,0 +1,21 @@
+[
+  {
+    "id": "v001",
+    "korean": "ㅏ",
+    "romanization": "a",
+    "mongolian": "Солонгос үндсэн эгшиг: a авиа",
+    "level": "KR-Beginner",
+    "exampleKorean": "아",
+    "exampleMongolian": "а — эгшиг дангаараа",
+    "skillTags": ["hangul_vowel"]
+  },
+  {
+    "id": "v002",
+    "korean": "ㅓ",
+    "romanization": "eo",
+    "mongolian": "Солонгос үндсэн эгшиг: eo авиа",
+    "level": "KR-Beginner",
+    "exampleKorean": "어",
+    "exampleMongolian": "eo — ㅗ (o)-оос ялга"
+  }
+]

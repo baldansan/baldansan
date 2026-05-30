@@ -7,6 +7,7 @@ import {
   logAdminActivity,
 } from "@/lib/supabase/admin-activity";
 import { getLessonCompleteness, refreshLessonCounts } from "@/lib/supabase/admin-content";
+import { fetchLessonRowById } from "@/lib/supabase/content";
 import { hasSupabaseConfig, supabase } from "@/lib/supabase/client";
 
 export type AdminImportResult<T> = {
@@ -499,6 +500,14 @@ export async function bulkImportLessonContent(
   const mode: BulkImportMode = options?.mode ?? "append";
   const trimmedLessonId = lessonId.trim();
 
+  let resolvedLessonId = trimmedLessonId;
+  if (options?.client) {
+    const row = await fetchLessonRowById(options.client, trimmedLessonId);
+    if (row) {
+      resolvedLessonId = row.canonicalId;
+    }
+  }
+
   if (
     payload.subtitles.length === 0 &&
     payload.vocabulary.length === 0 &&
@@ -511,7 +520,13 @@ export async function bulkImportLessonContent(
   }
 
   try {
-    const beforeCompleteness = await getLessonCompleteness(trimmedLessonId);
+    const beforeCompleteness = await getLessonCompleteness(
+      resolvedLessonId,
+      options?.client,
+      {
+        skipAdminGate: options?.skipAdminGate ?? Boolean(options?.client),
+      }
+    );
     const beforeSnapshot = beforeCompleteness.data
       ? {
           subtitleCount: beforeCompleteness.data.subtitleCount,
@@ -526,7 +541,7 @@ export async function bulkImportLessonContent(
         "vocabulary_words",
         "quiz_questions",
       ] as const) {
-        const del = await deleteLessonContent(trimmedLessonId, table, options?.client);
+        const del = await deleteLessonContent(resolvedLessonId, table, options?.client);
         if (del.error) return { data: null, error: del.error };
       }
     }
@@ -536,14 +551,14 @@ export async function bulkImportLessonContent(
     let quizStart = 0;
 
     if (mode === "append") {
-      subtitleStart = await maxOrderIndex("subtitle_lines", trimmedLessonId, options?.client);
-      vocabStart = await maxOrderIndex("vocabulary_words", trimmedLessonId, options?.client);
-      quizStart = await maxOrderIndex("quiz_questions", trimmedLessonId, options?.client);
+      subtitleStart = await maxOrderIndex("subtitle_lines", resolvedLessonId, options?.client);
+      vocabStart = await maxOrderIndex("vocabulary_words", resolvedLessonId, options?.client);
+      quizStart = await maxOrderIndex("quiz_questions", resolvedLessonId, options?.client);
     }
 
     if (payload.subtitles.length > 0) {
       const rows = payload.subtitles.map((item, i) => ({
-        lesson_id: trimmedLessonId,
+        lesson_id: resolvedLessonId,
         start_time: item.startTime,
         end_time: item.endTime,
         chinese: item.chinese,
@@ -559,7 +574,7 @@ export async function bulkImportLessonContent(
 
     if (payload.vocabulary.length > 0) {
       const rows = payload.vocabulary.map((item, i) => ({
-        lesson_id: trimmedLessonId,
+        lesson_id: resolvedLessonId,
         chinese: item.chinese,
         pinyin: item.pinyin,
         mongolian: item.mongolian,
@@ -576,7 +591,7 @@ export async function bulkImportLessonContent(
 
     if (payload.quizQuestions.length > 0) {
       const rows = payload.quizQuestions.map((item, i) => ({
-        lesson_id: trimmedLessonId,
+        lesson_id: resolvedLessonId,
         type: item.type,
         question: item.question,
         options: item.options,
@@ -590,14 +605,20 @@ export async function bulkImportLessonContent(
       }
     }
 
-    const refresh = await refreshLessonCounts(trimmedLessonId, options?.client, {
+    const refresh = await refreshLessonCounts(resolvedLessonId, options?.client, {
       skipAdminGate: options?.skipAdminGate,
     });
     if (refresh.error) {
       return { data: null, error: refresh.error };
     }
 
-    const afterCompleteness = await getLessonCompleteness(trimmedLessonId);
+    const afterCompleteness = await getLessonCompleteness(
+      resolvedLessonId,
+      options?.client,
+      {
+        skipAdminGate: options?.skipAdminGate ?? Boolean(options?.client),
+      }
+    );
     const afterSnapshot = afterCompleteness.data
       ? {
           subtitleCount: afterCompleteness.data.subtitleCount,
@@ -613,9 +634,9 @@ export async function bulkImportLessonContent(
     await logAdminActivity({
       action: ADMIN_ACTIVITY_ACTIONS.bulkImportCompleted,
       entityType: "lesson",
-      entityId: trimmedLessonId,
-      lessonId: trimmedLessonId,
-      title: `Bulk import completed for lesson ${trimmedLessonId}`,
+      entityId: resolvedLessonId,
+      lessonId: resolvedLessonId,
+      title: `Bulk import completed for lesson ${resolvedLessonId}`,
       metadata: {
         mode,
         subtitlesInserted: payload.subtitles.length,

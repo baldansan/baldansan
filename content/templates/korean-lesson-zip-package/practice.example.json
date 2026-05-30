@@ -1,0 +1,9 @@
+[
+  {
+    "id": "p001",
+    "section": "workbook",
+    "promptKorean": "ㅏ, ㅓ, ㅗ, ㅜ, ㅡ, ㅣ-ийг дарааллаар бич.",
+    "promptRomanization": "a, eo, o, u, eu, i",
+    "note": "Reference-only in v1 — not imported into quiz table."
+  }
+]
