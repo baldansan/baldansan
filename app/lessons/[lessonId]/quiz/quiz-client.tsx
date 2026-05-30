@@ -355,7 +355,9 @@ export function LessonQuizClient({
                     >
                       {option}
                     </button>
-                    {containsTargetScript(option) ? (
+                    {containsTargetScript(option) &&
+                    revealed &&
+                    (option === current.correctAnswer || option === selected) ? (
                       <SpeakerButton
                         text={option}
                         lang={ttsLang}

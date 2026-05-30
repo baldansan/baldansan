@@ -1,14 +1,29 @@
+import nextDynamic from "next/dynamic";
 import { notFound } from "next/navigation";
-import { GuidedLessonPlayer } from "@/components/lesson-player/guided-lesson-player";
 import { LessonUnavailable } from "@/components/lesson-unavailable";
 import {
   findNextLessonId,
   getLessonsByCourseId,
-  getPublicLessonsByCourseId,
+  getPublicLessonSummariesByCourseId,
 } from "@/lib/content";
 import { trainingLessonIdCandidates } from "@/lib/lesson-player/resolve-training-lesson-id";
 import { resolveLessonPageAccess } from "@/lib/lesson-public-access";
 import { parsePreviewParam } from "@/lib/preview-params";
+import { toLessonListSummary } from "@/lib/lesson/lesson-summary";
+
+const GuidedLessonPlayer = nextDynamic(
+  () =>
+    import("@/components/lesson-player/guided-lesson-player").then(
+      (mod) => mod.GuidedLessonPlayer
+    ),
+  {
+    loading: () => (
+      <p className="py-16 text-center text-sm text-[var(--app-muted)]">
+        Хичээл ачаалж байна...
+      </p>
+    ),
+  }
+);
 
 type PageProps = {
   params: Promise<{ lessonId: string }>;
@@ -65,8 +80,8 @@ export default async function LessonTrainingPage({
 
   const { lesson, adminPreview } = access;
   const courseLessons = adminPreview
-    ? await getLessonsByCourseId(lesson.courseId)
-    : await getPublicLessonsByCourseId(lesson.courseId);
+    ? (await getLessonsByCourseId(lesson.courseId)).map(toLessonListSummary)
+    : await getPublicLessonSummariesByCourseId(lesson.courseId);
   const nextLessonId = findNextLessonId(lesson.id, courseLessons);
 
   return (

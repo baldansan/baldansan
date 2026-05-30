@@ -53,7 +53,7 @@ export function StudyAppView({ allLessons }: Props) {
     return (
       <MobileAppShell activeTab="study" mainClassName="max-w-[390px] mx-auto w-full">
         <p className="py-16 text-center text-sm text-[var(--app-muted)]">
-          Ачааллаж байна…
+          Хичээл ачаалж байна...
         </p>
       </MobileAppShell>
     );

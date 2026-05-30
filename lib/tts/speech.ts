@@ -15,6 +15,7 @@ export const TTS_UNAVAILABLE_MESSAGE =
   "Энэ төхөөрөмж дээр уншуулах боломжгүй байна.";
 
 let voicesCache: SpeechSynthesisVoice[] = [];
+/** Shared in-flight voice load — all TTS callers reuse one promise (not per SpeakerButton). */
 let voicesLoadPromise: Promise<SpeechSynthesisVoice[]> | null = null;
 
 function getSynth(): SpeechSynthesis | null {

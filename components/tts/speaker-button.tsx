@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useId, useState } from "react";
+import { memo, useCallback, useEffect, useId, useRef, useState } from "react";
 import {
   playAudioUrl,
   speakWithSavedSettings,
@@ -20,6 +20,8 @@ type Props = {
   size?: SpeakerSize;
   label?: string;
   className?: string;
+  /** When false, TTS errors appear in button title only (avoids layout thrash in lists). */
+  showInlineError?: boolean;
 };
 
 const sizeClasses: Record<SpeakerSize, string> = {
@@ -53,7 +55,7 @@ function SpeakerIcon({ className }: { className: string }) {
   );
 }
 
-export function SpeakerButton({
+function SpeakerButtonInner({
   text,
   lang,
   courseId,
@@ -62,6 +64,7 @@ export function SpeakerButton({
   size = "sm",
   label,
   className = "",
+  showInlineError = false,
 }: Props) {
   const buttonId = useId();
   const resolvedLang = resolveTtsLang({ lang, courseId, hskLevel });
@@ -69,10 +72,13 @@ export function SpeakerButton({
     "idle"
   );
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
+  const speakingRef = useRef(false);
 
   useEffect(() => {
     return () => {
-      stopPronunciation();
+      if (speakingRef.current) {
+        stopPronunciation();
+      }
     };
   }, []);
 
@@ -83,6 +89,7 @@ export function SpeakerButton({
     setState("loading");
     setErrorMessage(null);
     stopPronunciation();
+    speakingRef.current = false;
 
     const audio = audioUrl?.trim();
     if (audio) {
@@ -99,8 +106,11 @@ export function SpeakerButton({
       return;
     }
 
+    speakingRef.current = true;
     setState("speaking");
     const result = await speakWithSavedSettings(trimmed, resolvedLang);
+    speakingRef.current = false;
+
     if (result.ok) {
       setState("idle");
       return;
@@ -111,6 +121,10 @@ export function SpeakerButton({
   }, [audioUrl, resolvedLang, text]);
 
   const ariaLabel = label ?? `Уншуулах: ${text}`;
+  const buttonTitle =
+    state === "error" && errorMessage && !showInlineError
+      ? errorMessage
+      : ariaLabel;
 
   return (
     <span className="inline-flex flex-col items-center">
@@ -121,7 +135,7 @@ export function SpeakerButton({
           void handleClick();
         }}
         aria-label={ariaLabel}
-        title={ariaLabel}
+        title={buttonTitle}
         className={`inline-flex shrink-0 items-center justify-center rounded-full transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500 disabled:opacity-60 ${sizeClasses[size]} ${
           state === "speaking"
             ? "bg-blue-600 text-white ring-2 ring-blue-300"
@@ -137,7 +151,7 @@ export function SpeakerButton({
           <SpeakerIcon className={iconSizes[size]} />
         )}
       </button>
-      {errorMessage ? (
+      {showInlineError && errorMessage ? (
         <span className="mt-1 max-w-[9rem] text-center text-[10px] leading-tight text-red-600">
           {errorMessage}
         </span>
@@ -145,3 +159,5 @@ export function SpeakerButton({
     </span>
   );
 }
+
+export const SpeakerButton = memo(SpeakerButtonInner);

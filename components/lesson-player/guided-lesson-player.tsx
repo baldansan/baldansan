@@ -77,7 +77,14 @@ export function GuidedLessonPlayer({
         lesson.subtitlePreview,
         { nextLessonId }
       ),
-    [lesson, nextLessonId]
+    [
+      lesson.id,
+      lesson.vocabulary,
+      lesson.quizQuestions,
+      lesson.subtitlePreview,
+      nextLessonId,
+      lesson,
+    ]
   );
 
   const progressTotal = useMemo(() => countProgressSteps(steps), [steps]);
@@ -102,6 +109,11 @@ export function GuidedLessonPlayer({
     () => resolveDisplayProgress(currentStep, session.stepIndex, steps),
     [currentStep, session.stepIndex, steps]
   );
+
+  const currentPracticeQuestion = useMemo(() => {
+    if (currentStep?.type !== "practice") return null;
+    return currentStep.questions[session.practiceIndex] ?? null;
+  }, [currentStep, session.practiceIndex]);
 
   const persistSession = useCallback(
     (next: LessonPlayerSession) => {
@@ -130,7 +142,8 @@ export function GuidedLessonPlayer({
       setLearned(new Set(words));
     }
     void loadLearned();
-  }, [lesson.id, lesson.vocabulary]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- once per lesson open
+  }, [lesson.id]);
 
   useEffect(() => {
     setPracticeSelected(null);
@@ -353,7 +366,7 @@ export function GuidedLessonPlayer({
     return (
       <MobileAppShell activeTab="study" showBottomNav={false}>
         <p className="py-16 text-center text-sm text-[var(--app-muted)]">
-          Ачааллаж байна…
+          Хичээл ачаалж байна...
         </p>
       </MobileAppShell>
     );
@@ -435,10 +448,10 @@ export function GuidedLessonPlayer({
           />
         ) : null}
 
-        {currentStep?.type === "practice" ? (
+        {currentStep?.type === "practice" && currentPracticeQuestion ? (
           <LessonStepPractice
             title={currentStep.title}
-            question={currentStep.questions[session.practiceIndex]!}
+            question={currentPracticeQuestion}
             questionIndex={session.practiceIndex}
             total={currentStep.questions.length}
             selected={practiceSelected}

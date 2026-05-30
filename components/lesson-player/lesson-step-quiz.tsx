@@ -1,5 +1,6 @@
 "use client";
 
+import { memo } from "react";
 import { SpeakerButton } from "@/components/tts/speaker-button";
 import { LessonPlayerCard } from "@/components/lesson-player/lesson-player-shell";
 import { KoreanAnswerPronunciationBlock } from "@/components/lesson/korean-pronunciation-feedback";
@@ -23,7 +24,18 @@ type Props = {
   showPronunciation?: boolean;
 };
 
-export function LessonStepQuiz({
+function shouldShowOptionSpeaker(
+  option: string,
+  revealed: boolean,
+  selected: string | null,
+  correctAnswer: string
+): boolean {
+  if (!containsTargetScript(option)) return false;
+  if (!revealed) return false;
+  return option === correctAnswer || option === selected;
+}
+
+function LessonStepQuizInner({
   question,
   index,
   total,
@@ -86,7 +98,12 @@ export function LessonStepQuiz({
             >
               {option}
             </button>
-            {containsTargetScript(option) ? (
+            {shouldShowOptionSpeaker(
+              option,
+              revealed,
+              selected,
+              question.correctAnswer
+            ) ? (
               <SpeakerButton
                 text={option}
                 lang={ttsLang}
@@ -134,6 +151,8 @@ export function LessonStepQuiz({
     </LessonPlayerCard>
   );
 }
+
+export const LessonStepQuiz = memo(LessonStepQuizInner);
 
 export function LessonStepQuizIntro({
   title,
