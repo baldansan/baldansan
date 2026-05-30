@@ -6,8 +6,9 @@ import { useLearnerLanguageLessons } from "@/hooks/use-learner-language-lessons"
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
 import { MobileCard } from "@/components/mobile/mobile-card";
 import { MobilePageHeader } from "@/components/mobile/mobile-page-header";
-import { lessonPath } from "@/lib/content";
+import { lessonPath, lessonTrainingPath } from "@/lib/content";
 import { languageTrackShortLabel } from "@/lib/language-track";
+import { isKoreanFlashcardVocabularyLesson } from "@/lib/lesson/korean-vocabulary-ui";
 import {
   getLessonProgressMapSmart,
   type LessonStatus,
@@ -52,7 +53,7 @@ export function StudyAppView({ allLessons }: Props) {
     return (
       <MobileAppShell activeTab="study" mainClassName="max-w-[390px] mx-auto w-full">
         <p className="py-16 text-center text-sm text-[var(--app-muted)]">
-          Ачааллаж байна…
+          Хичээл ачаалж байна...
         </p>
       </MobileAppShell>
     );
@@ -126,25 +127,39 @@ export function StudyAppView({ allLessons }: Props) {
                     : status === "started"
                       ? "Яваж байна"
                       : `0/${lesson.quizCount || 10}`;
+                const koreanFlashcard = isKoreanFlashcardVocabularyLesson(
+                  lesson,
+                  lesson.vocabulary
+                );
+                const startHref = koreanFlashcard
+                  ? lessonTrainingPath(lesson.id)
+                  : lessonPath(lesson.id);
                 return (
                   <li key={lesson.id}>
-                    <Link href={lessonPath(lesson.id)} className="app-menu-row">
-                      <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-emerald-50 text-xs font-bold text-emerald-700">
-                        {lesson.id}
-                      </span>
-                      <span className="min-w-0 flex-1">
-                        <span className="block truncate font-semibold text-[var(--app-text)]">
-                          {lesson.chineseTitle}
+                    <div className="app-menu-row flex-wrap gap-2 sm:flex-nowrap">
+                      <Link href={lessonPath(lesson.id)} className="flex min-w-0 flex-1 items-center gap-3">
+                        <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-emerald-50 text-xs font-bold text-emerald-700">
+                          {lesson.id}
                         </span>
-                        <span className="block truncate text-xs text-[var(--app-muted)]">
-                          {lesson.title}
+                        <span className="min-w-0 flex-1">
+                          <span className="block truncate font-semibold text-[var(--app-text)]">
+                            {lesson.chineseTitle}
+                          </span>
+                          <span className="block truncate text-xs text-[var(--app-muted)]">
+                            {lesson.title}
+                          </span>
                         </span>
-                      </span>
-                      <span className="shrink-0 rounded-full bg-slate-100 px-2 py-0.5 text-[10px] font-semibold text-slate-600">
-                        {progressStatusLabel}
-                      </span>
-                      <span className="text-[var(--app-muted)]">›</span>
-                    </Link>
+                        <span className="shrink-0 rounded-full bg-slate-100 px-2 py-0.5 text-[10px] font-semibold text-slate-600">
+                          {progressStatusLabel}
+                        </span>
+                      </Link>
+                      <Link
+                        href={startHref}
+                        className="app-btn-primary shrink-0 px-4 py-2 text-sm"
+                      >
+                        Эхлэх
+                      </Link>
+                    </div>
                   </li>
                 );
               })}

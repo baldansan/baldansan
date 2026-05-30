@@ -60,6 +60,10 @@ export type VocabularyWord = {
   lessonSection?: string;
   /** Per-word audio URL (from ZIP import via source_note map). */
   audioUrl?: string;
+  /** Mongolian-friendly pronunciation hint (import / source_note / fallback). */
+  mongolianPronunciation?: string;
+  pronunciationMn?: string;
+  pronunciationHintMn?: string;
 };
 
 export type VocabularyFilter =

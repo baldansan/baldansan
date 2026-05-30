@@ -735,6 +735,98 @@ export async function updateLessonStatus(
   }
 }
 
+async function deleteLessonChildRows(
+  resolvedLessonId: string
+): Promise<string | null> {
+  if (!supabase) return "Supabase not configured.";
+
+  for (const table of [
+    "subtitle_lines",
+    "vocabulary_words",
+    "quiz_questions",
+  ] as const) {
+    const { error } = await supabase
+      .from(table)
+      .delete()
+      .eq("lesson_id", resolvedLessonId);
+    if (error) {
+      return formatWriteError(error);
+    }
+  }
+
+  return null;
+}
+
+/** Permanently delete a lesson and related content (DB cascade or manual child delete). */
+export async function deleteAdminLesson(
+  lessonId: string
+): Promise<AdminContentResult<{ id: string }>> {
+  if (!supabase || !hasSupabaseConfig) {
+    return notConfigured();
+  }
+
+  const gate = await requireAdmin();
+  if (gate.error) {
+    return { data: null, error: gate.error };
+  }
+
+  const beforeResult = await queryLessonById<{
+    id: string;
+    title: string | null;
+    status: string;
+    course_id: string;
+  }>("id, title, status, course_id", lessonId);
+
+  if (!beforeResult.data) {
+    return {
+      data: null,
+      error: beforeResult.error ?? "Хичээл олдсонгүй.",
+    };
+  }
+
+  const resolvedId = canonicalLessonId(beforeResult.data.id);
+  const beforeSnapshot = {
+    id: resolvedId,
+    title: beforeResult.data.title,
+    status: beforeResult.data.status,
+    courseId: beforeResult.data.course_id,
+  };
+
+  try {
+    let { error } = await supabase.from("lessons").delete().eq("id", resolvedId);
+
+    if (error) {
+      const childError = await deleteLessonChildRows(resolvedId);
+      if (childError) {
+        return { data: null, error: childError };
+      }
+
+      const retry = await supabase.from("lessons").delete().eq("id", resolvedId);
+      error = retry.error;
+    }
+
+    if (error) {
+      return { data: null, error: formatWriteError(error) };
+    }
+
+    await logAdminActivity({
+      action: ADMIN_ACTIVITY_ACTIONS.lessonDeleted,
+      entityType: "lesson",
+      entityId: resolvedId,
+      lessonId: resolvedId,
+      title: `Lesson ${resolvedId} deleted`,
+      metadata: { courseId: beforeResult.data.course_id },
+      beforeSnapshot,
+      afterSnapshot: {},
+      diffSummary: buildShallowDiffSummary(beforeSnapshot, null),
+    });
+
+    return { data: { id: resolvedId }, error: null };
+  } catch {
+    return { data: null, error: "Хичээл устгахад алдаа гарлаа." };
+  }
+}
+
 function lessonHasMetadata(row: {
   title: string | null;
   chinese_title: string | null;

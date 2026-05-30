@@ -20,6 +20,7 @@ import {
   type TeachingImage,
   type TeachingImageRef,
 } from "@/lib/lesson/teaching-media";
+import { buildVocabPronunciationMapFromRows } from "@/lib/import/korean-lesson-normalize";
 
 export type PackageMediaUploadResult = {
   zipPath: string;
@@ -182,6 +183,26 @@ function resolveTeachingImagesFromUploads(
     });
   }
   return resolved;
+}
+
+function buildVocabPronunciationMapFromValidation(
+  vocabulary: Array<{
+    id?: string;
+    chinese: string;
+    mongolianPronunciation?: string;
+    pronunciationMn?: string;
+    pronunciationHintMn?: string;
+  }>
+): Record<string, string> {
+  return buildVocabPronunciationMapFromRows(
+    vocabulary.map((row) => ({
+      id: row.id,
+      chinese: row.chinese,
+      mongolianPronunciation: row.mongolianPronunciation,
+      pronunciationMn: row.pronunciationMn,
+      pronunciationHintMn: row.pronunciationHintMn,
+    }))
+  );
 }
 
 function buildVocabAudioMapFromUploads(
@@ -478,6 +499,9 @@ export async function importLessonPackage(
     validation.vocabulary,
     mediaFailures
   );
+  const vocabPronunciationMap = buildVocabPronunciationMapFromValidation(
+    validation.vocabulary
+  );
 
   let mediaStatus: "missing" | "pending" | "ready" = "missing";
   if (audioUrl || thumbnailUrl || teachingImages.length > 0) {
@@ -496,7 +520,8 @@ export async function importLessonPackage(
   const sourceNote = mergeTeachingMediaIntoSourceNote(
     baseSourceNote,
     teachingImages,
-    vocabAudioMap
+    vocabAudioMap,
+    vocabPronunciationMap
   );
 
   if (
@@ -504,7 +529,8 @@ export async function importLessonPackage(
     thumbnailUrl ||
     sourceNote ||
     teachingImages.length > 0 ||
-    Object.keys(vocabAudioMap).length > 0
+    Object.keys(vocabAudioMap).length > 0 ||
+    Object.keys(vocabPronunciationMap).length > 0
   ) {
     const mediaUpdate = await updateLessonMedia(resolvedLessonId, {
       audioUrl: audioUrl ?? "",

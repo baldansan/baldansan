@@ -13,6 +13,7 @@ import {
 import { hasSupabaseConfig } from "@/lib/supabase/client";
 import { isPublicLesson } from "@/lib/lesson-publish";
 import { enrichLessonContentMeta } from "@/lib/lesson-content-type";
+import { toLessonListSummary } from "@/lib/lesson/lesson-summary";
 import { LEARNER_COURSE_PROBE_IDS } from "@/lib/language-track";
 import type { Course } from "@/types/course";
 import type { CourseContent, LessonContent } from "@/types/lesson-content";
@@ -58,6 +59,15 @@ export function lessonVocabularyPath(lessonId: string) {
 
 export function lessonQuizPath(lessonId: string) {
   return `/lessons/${lessonId}/quiz`;
+}
+
+export function lessonTrainingPath(
+  lessonId: string,
+  options?: { preview?: boolean }
+) {
+  const base = `/study/lesson-training/${lessonId}`;
+  if (options?.preview) return `${base}?preview=admin`;
+  return base;
 }
 
 export function coursePath(courseId: string) {
@@ -213,6 +223,19 @@ export async function getPublicLessonsByCourseId(
   );
 }
 
+/** Public course list without vocabulary/quiz payload — for study hub and navigation. */
+export async function getPublicLessonSummariesByCourseId(
+  courseId: string
+): Promise<LessonContent[]> {
+  const lessons = await withSupabaseListFallback(
+    `getPublicLessonSummariesByCourseId(${courseId})`,
+    () => getSupabasePublicLessonsByCourseId(courseId),
+    () => getLocalLessonsByCourseId(courseId).filter(isPublicLesson)
+  );
+
+  return lessons.map(toLessonListSummary);
+}
+
 /** Admin / internal: all lessons including draft and archived. */
 export async function getLessonsByCourseId(
   courseId: string
@@ -292,6 +315,28 @@ export async function getAllPublicLessonsProbe(): Promise<LessonContent[]> {
   const batches = await Promise.all(
     LEARNER_COURSE_PROBE_IDS.map((courseId) =>
       getPublicLessonsByCourseId(courseId)
+    )
+  );
+
+  const seen = new Set<string>();
+  const merged: LessonContent[] = [];
+
+  for (const batch of batches) {
+    for (const lesson of batch) {
+      if (seen.has(lesson.id)) continue;
+      seen.add(lesson.id);
+      merged.push(lesson);
+    }
+  }
+
+  return merged;
+}
+
+/** Lightweight public lesson list for study/review hubs (no vocab/quiz fetch). */
+export async function getAllPublicLessonSummariesProbe(): Promise<LessonContent[]> {
+  const batches = await Promise.all(
+    LEARNER_COURSE_PROBE_IDS.map((courseId) =>
+      getPublicLessonSummariesByCourseId(courseId)
     )
   );
 

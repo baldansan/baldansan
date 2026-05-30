@@ -11,6 +11,15 @@ import {
 import { prioritizePrelessonVocab, toGameVocabItem } from "@/lib/games/game-data-core";
 import { isPrelessonPackage } from "@/lib/admin/lesson-package-type";
 import { getHangulVocabGroupLabel } from "@/lib/lesson/korean-vocabulary-ui";
+import { isKoreanLesson0BeginnerFlow } from "@/lib/lesson/korean-lesson0-flow";
+import {
+  resolveDisplayPronunciation,
+  resolveVocabMeaningLabel,
+} from "@/lib/lesson/korean-pronunciation-hints";
+import {
+  MongolianMeaningHint,
+  MongolianPronunciationHint,
+} from "@/components/lesson/mongolian-pronunciation-hint";
 import { LEARNER_LESSON } from "@/lib/learner-labels";
 import {
   resolveKoreanTtsLang,
@@ -77,6 +86,13 @@ export function VocabularyFlashcardStudy({
   const wordAudioUrl = current
     ? resolveVocabularyAudioUrl(current, lesson.vocabularyAudioMap)
     : undefined;
+  const showPronunciation = isKoreanLesson0BeginnerFlow(lesson);
+  const pronunciation = current && showPronunciation
+    ? resolveDisplayPronunciation(current, lesson, lesson.vocabularyPronunciationMap)
+    : null;
+  const meaning = current && showPronunciation
+    ? resolveVocabMeaningLabel(current, pronunciation)
+    : current?.mongolian?.trim() || null;
 
   const quizHref = lessonPreviewPath(lesson.id, {
     adminPreview,
@@ -207,7 +223,15 @@ export function VocabularyFlashcardStudy({
               {current.pinyin}
             </p>
           ) : null}
-          {current.mongolian ? (
+          {showPronunciation ? (
+            <MongolianPronunciationHint
+              pronunciation={pronunciation}
+              className="mt-3"
+            />
+          ) : null}
+          {showPronunciation ? (
+            <MongolianMeaningHint meaning={meaning} className="mt-4" />
+          ) : current.mongolian ? (
             <p className="mt-4 text-base leading-relaxed text-slate-600">
               {current.mongolian}
             </p>

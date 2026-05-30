@@ -1,5 +1,5 @@
 import { StudyAppView } from "@/components/mobile/study-app-view";
-import { getAllPublicLessonsProbe } from "@/lib/content";
+import { getAllPublicLessonSummariesProbe } from "@/lib/content";
 
 export const dynamic = "force-dynamic";
 
@@ -8,6 +8,6 @@ export const metadata = {
 };
 
 export default async function StudyPage() {
-  const allLessons = await getAllPublicLessonsProbe();
+  const allLessons = await getAllPublicLessonSummariesProbe();
   return <StudyAppView allLessons={allLessons} />;
 }

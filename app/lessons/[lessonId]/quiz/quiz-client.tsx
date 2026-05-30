@@ -13,7 +13,8 @@ import {
   ctaSecondaryClass,
 } from "@/components/ui/cta-button-row";
 import { SectionCard } from "@/components/ui/section-card";
-import { coursePath } from "@/lib/content";
+import { coursePath, lessonTrainingPath } from "@/lib/content";
+import { isKoreanLesson0BeginnerFlow } from "@/lib/lesson/korean-lesson0-flow";
 import { lessonPreviewPath } from "@/lib/lesson-publish";
 import { LEARNER_LESSON, LEARNER_QUIZ } from "@/lib/learner-labels";
 import {
@@ -28,6 +29,7 @@ import { enhanceLessonQuizQuestions } from "@/lib/quiz/smart-options";
 import { SpeakerButton } from "@/components/tts/speaker-button";
 import { containsTargetScript } from "@/lib/tts/infer-lang";
 import { resolveKoreanTtsLang } from "@/lib/lesson/teaching-media";
+import { KoreanAnswerPronunciationBlock } from "@/components/lesson/korean-pronunciation-feedback";
 import type { LessonContent } from "@/types/lesson-content";
 
 function getResultMessage(percent: number) {
@@ -65,6 +67,7 @@ export function LessonQuizClient({
   const current = quizQuestions[currentIndex];
   const isCorrect = selected === current?.correctAnswer;
   const ttsLang = resolveKoreanTtsLang(lesson);
+  const isLesson0 = isKoreanLesson0BeginnerFlow(lesson);
 
   const questionProgressPercent = useMemo(() => {
     if (total === 0) return 0;
@@ -161,6 +164,14 @@ export function LessonQuizClient({
   return (
     <LearnerPageShell activeTab="games">
       {adminPreview ? <AdminPreviewBanner /> : null}
+      {isLesson0 ? (
+        <Link
+          href={lessonTrainingPath(lesson.id, { preview: adminPreview })}
+          className="inline-flex w-fit text-sm font-medium text-slate-600 transition-colors hover:text-emerald-600"
+        >
+          ← Хичээл рүү буцах
+        </Link>
+      ) : (
       <div className="flex flex-col gap-2 sm:flex-row sm:flex-wrap sm:gap-4">
         <Link
           href={lessonPreviewPath(lesson.id, { adminPreview })}
@@ -184,12 +195,13 @@ export function LessonQuizClient({
           {LEARNER_LESSON.vocabulary}
         </Link>
       </div>
+      )}
 
-      <section>
-        <h1 className="text-xl font-bold leading-snug tracking-tight sm:text-3xl">
+      <section className="overflow-hidden">
+        <h1 className="break-words text-xl font-bold leading-snug tracking-tight sm:text-3xl">
           Quiz — {lesson.title}
         </h1>
-        <p className="mt-1 text-lg text-slate-700">{lesson.chineseTitle}</p>
+        <p className="mt-1 break-words text-lg text-slate-700">{lesson.chineseTitle}</p>
         <p className="mt-2 text-sm text-slate-600 sm:text-base">
           Сурсан үг, өгүүлбэрээ шалгаарай.
         </p>
@@ -217,13 +229,13 @@ export function LessonQuizClient({
           }
         />
       ) : finished ? (
-        <SectionCard className="ring-emerald-200">
+        <SectionCard className="overflow-hidden ring-emerald-200">
           <h2 className="text-xl font-semibold text-slate-900">Үр дүн</h2>
           <p className="mt-4 text-4xl font-bold text-emerald-600">{percent}%</p>
           <p className="mt-2 text-sm text-slate-600">
             {correctCount} / {total} зөв
           </p>
-          <p className="mt-4 text-base font-medium text-slate-800">
+          <p className="mt-4 break-words text-base font-medium leading-snug text-slate-800">
             {getResultMessage(percent)}
           </p>
           {savedResult ? (
@@ -254,7 +266,7 @@ export function LessonQuizClient({
             <LocalProgressNote />
           </div>
 
-          <div className="mt-6 flex flex-col gap-3">
+          <div className="mt-6 flex w-full max-w-full flex-col gap-3 overflow-hidden">
             <button
               type="button"
               onClick={restartQuiz}
@@ -268,18 +280,27 @@ export function LessonQuizClient({
             >
               {LEARNER_QUIZ.reviewVocab}
             </Link>
+            <Link href="/study" className={ctaSecondaryClass}>
+              Судлах хэсэг рүү
+            </Link>
+            <Link
+              href={lessonTrainingPath(lesson.id, { preview: adminPreview })}
+              className={ctaSecondaryClass}
+            >
+              Дахин үзэх
+            </Link>
             <Link
               href={lessonPreviewPath(lesson.id, {
                 adminPreview,
                 subpath: "watch",
               })}
-              className={ctaSecondaryClass}
+              className={ctaOutlineClass}
             >
               {LEARNER_QUIZ.watchLesson}
             </Link>
             {nextLessonId ? (
               <Link
-                href={lessonPreviewPath(nextLessonId, { adminPreview })}
+                href={lessonTrainingPath(nextLessonId, { preview: adminPreview })}
                 className={ctaPrimaryClass}
               >
                 {LEARNER_QUIZ.nextLesson}
@@ -334,7 +355,9 @@ export function LessonQuizClient({
                     >
                       {option}
                     </button>
-                    {containsTargetScript(option) ? (
+                    {containsTargetScript(option) &&
+                    revealed &&
+                    (option === current.correctAnswer || option === selected) ? (
                       <SpeakerButton
                         text={option}
                         lang={ttsLang}
@@ -364,20 +387,32 @@ export function LessonQuizClient({
                   >
                     {isCorrect ? "Зөв!" : "Буруу"}
                   </p>
-                  <div className="mt-2 flex items-start gap-2">
-                    <p className="min-w-0 flex-1 text-sm leading-6 text-slate-700">
-                      {current.explanation}
-                    </p>
-                    {containsTargetScript(current.explanation) ? (
-                      <SpeakerButton
-                        text={current.explanation}
-                        lang={ttsLang}
-                        courseId={lesson.courseId}
-                        size="sm"
-                        label={`Тайлбар уншуулах`}
-                      />
-                    ) : null}
-                  </div>
+                  {isLesson0 ? (
+                    <KoreanAnswerPronunciationBlock
+                      correctAnswer={current.correctAnswer}
+                      explanation={current.explanation}
+                      lesson={lesson}
+                      vocabulary={lesson.vocabulary}
+                      pronunciationMap={lesson.vocabularyPronunciationMap}
+                      showPronunciation
+                      className="mt-2"
+                    />
+                  ) : (
+                    <div className="mt-2 flex items-start gap-2">
+                      <p className="min-w-0 flex-1 text-sm leading-6 text-slate-700">
+                        {current.explanation}
+                      </p>
+                      {containsTargetScript(current.explanation) ? (
+                        <SpeakerButton
+                          text={current.explanation}
+                          lang={ttsLang}
+                          courseId={lesson.courseId}
+                          size="sm"
+                          label={`Тайлбар уншуулах`}
+                        />
+                      ) : null}
+                    </div>
+                  )}
                 </div>
               )}
 

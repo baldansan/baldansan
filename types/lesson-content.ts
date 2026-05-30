@@ -77,6 +77,8 @@ export type LessonContent = {
   teachingImages?: TeachingImage[];
   /** Parsed from source_note — vocab id/chinese → audio URL map. */
   vocabularyAudioMap?: Record<string, string>;
+  /** Per-vocab Mongolian pronunciation hints from source_note `vocabPronMn`. */
+  vocabularyPronunciationMap?: Record<string, string>;
 };
 
 export type CourseContent = {

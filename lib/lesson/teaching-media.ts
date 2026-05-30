@@ -1,4 +1,5 @@
 import { inferLessonLanguage } from "@/lib/language-track";
+import { enrichVocabularyWithPronunciation } from "@/lib/lesson/korean-pronunciation-hints";
 import type { LessonContent } from "@/types/lesson-content";
 import type { VocabularyWord } from "@/types/lesson";
 
@@ -100,10 +101,33 @@ export function parseVocabularyAudioMapFromSourceNote(
   }
 }
 
+export function parseVocabularyPronunciationMapFromSourceNote(
+  sourceNote?: string | null
+): Record<string, string> {
+  const raw = parseSourceNoteSegment(sourceNote, "vocabPronMn");
+  if (!raw) return {};
+  try {
+    const parsed = JSON.parse(raw) as unknown;
+    if (!parsed || typeof parsed !== "object" || Array.isArray(parsed)) {
+      return {};
+    }
+    const map: Record<string, string> = {};
+    for (const [key, value] of Object.entries(parsed)) {
+      if (typeof value === "string" && value.trim()) {
+        map[key] = value.trim();
+      }
+    }
+    return map;
+  } catch {
+    return {};
+  }
+}
+
 export function mergeTeachingMediaIntoSourceNote(
   sourceNote: string | undefined | null,
   teachingImages: TeachingImage[],
-  vocabAudio: Record<string, string>
+  vocabAudio: Record<string, string>,
+  vocabPronMn: Record<string, string> = {}
 ): string {
   let note = sourceNote?.trim() ?? "";
 
@@ -128,26 +152,43 @@ export function mergeTeachingMediaIntoSourceNote(
     note = appendSourceNoteSegment(note, "vocabAudio", JSON.stringify(vocabAudio));
   }
 
+  const pronKeys = Object.keys(vocabPronMn);
+  if (pronKeys.length > 0) {
+    note = appendSourceNoteSegment(note, "vocabPronMn", JSON.stringify(vocabPronMn));
+  }
+
   return note;
 }
 
 export function enrichLessonTeachingMedia(lesson: LessonContent): LessonContent {
   const teachingImages = parseTeachingImagesFromSourceNote(lesson.sourceNote);
   const vocabularyAudioMap = parseVocabularyAudioMapFromSourceNote(lesson.sourceNote);
+  const vocabularyPronunciationMap = parseVocabularyPronunciationMapFromSourceNote(
+    lesson.sourceNote
+  );
 
-  const vocabulary =
-    Object.keys(vocabularyAudioMap).length === 0
-      ? lesson.vocabulary
-      : lesson.vocabulary.map((word) => {
-          const audioUrl = resolveVocabularyAudioUrl(word, vocabularyAudioMap);
-          if (!audioUrl || word.audioUrl === audioUrl) return word;
-          return { ...word, audioUrl };
-        });
+  let vocabulary = lesson.vocabulary;
+
+  if (Object.keys(vocabularyAudioMap).length > 0) {
+    vocabulary = vocabulary.map((word) => {
+      const audioUrl = resolveVocabularyAudioUrl(word, vocabularyAudioMap);
+      if (!audioUrl || word.audioUrl === audioUrl) return word;
+      return { ...word, audioUrl };
+    });
+  }
+
+  if (Object.keys(vocabularyPronunciationMap).length > 0) {
+    vocabulary = enrichVocabularyWithPronunciation(
+      vocabulary,
+      vocabularyPronunciationMap
+    );
+  }
 
   const unchanged =
     teachingImages.length === (lesson.teachingImages?.length ?? 0) &&
     vocabulary === lesson.vocabulary &&
-    !lesson.vocabularyAudioMap;
+    !lesson.vocabularyAudioMap &&
+    !lesson.vocabularyPronunciationMap;
 
   if (unchanged && !teachingImages.length) {
     return lesson;
@@ -158,6 +199,9 @@ export function enrichLessonTeachingMedia(lesson: LessonContent): LessonContent 
     ...(teachingImages.length ? { teachingImages } : {}),
     ...(Object.keys(vocabularyAudioMap).length
       ? { vocabularyAudioMap }
+      : {}),
+    ...(Object.keys(vocabularyPronunciationMap).length
+      ? { vocabularyPronunciationMap }
       : {}),
     vocabulary,
   };

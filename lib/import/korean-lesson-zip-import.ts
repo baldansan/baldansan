@@ -4,6 +4,7 @@ import { peekZipPackageDetection } from "@/lib/import/zip-package-peek";
 import { buildWrongImporterValidation } from "@/lib/import/wrong-importer-validation";
 import {
   normalizeKoreanLessonPackage,
+  resolveKoreanRowPronunciation,
   validateKoreanLessonPackage,
   type KoreanLessonValidation,
 } from "@/lib/import/korean-lesson-normalize";
@@ -119,6 +120,9 @@ export function koreanValidationToLessonZipValidation(
       exampleChinese: row.exampleKorean,
       exampleMongolian: row.exampleMongolian,
       audioFile: row.audioFile,
+      mongolianPronunciation: resolveKoreanRowPronunciation(row),
+      pronunciationMn: row.pronunciationMn,
+      pronunciationHintMn: row.pronunciationHintMn,
     })),
     quizQuestions: korean.quizQuestions.map((row) => ({
       type: row.type,

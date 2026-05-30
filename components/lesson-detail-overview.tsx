@@ -10,7 +10,7 @@ import {
   type LessonStatus,
 } from "@/lib/progress";
 import { lessonPreviewPath } from "@/lib/lesson-publish";
-import { coursePath } from "@/lib/content";
+import { coursePath, lessonTrainingPath } from "@/lib/content";
 import { LEARNER_LESSON } from "@/lib/learner-labels";
 import {
   isExamContent,
@@ -65,6 +65,9 @@ export function LessonDetailOverview({
   const quizHref = lessonPreviewPath(lesson.id, {
     adminPreview,
     subpath: "quiz",
+  });
+  const trainingHref = lessonTrainingPath(lesson.id, {
+    preview: adminPreview,
   });
 
   const textbook = isTextbookContent(lesson);
@@ -159,9 +162,15 @@ export function LessonDetailOverview({
       </MobileCard>
 
       <div className="app-lesson-cta-row">
-        <Link href={watchHref} className="app-btn-primary col-span-2 w-full">
-          {textbook ? "📖 Хичээл судлах" : exam ? "📝 Шалгалт" : `▶ ${LEARNER_LESSON.watch}`}
-        </Link>
+        {koreanFlashcard ? (
+          <Link href={trainingHref} className="app-btn-primary col-span-2 w-full">
+            ▶ Хичээл эхлэх
+          </Link>
+        ) : (
+          <Link href={watchHref} className="app-btn-primary col-span-2 w-full">
+            {textbook ? "📖 Хичээл судлах" : exam ? "📝 Шалгалт" : `▶ ${LEARNER_LESSON.watch}`}
+          </Link>
+        )}
         <Link href={vocabHref} className="app-btn-secondary w-full">
           📚 {vocabStudyCta}
         </Link>
