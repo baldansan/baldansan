@@ -10,6 +10,12 @@ import { detectLessonPackageType } from "@/lib/import/detect-lesson-package-type
 import { peekZipPackageDetection } from "@/lib/import/zip-package-peek";
 import { buildWrongImporterValidation } from "@/lib/import/wrong-importer-validation";
 import { validateLessonImportPayload } from "@/lib/supabase/admin-import";
+import {
+  parseChineseHskLessonZip,
+  peekChineseHskManifest,
+  shouldUseChineseHskImporter,
+} from "@/lib/import/chinese-hsk-package";
+import { isChineseHskManifestRaw } from "@/lib/import/chinese-hsk-normalize";
 
 function zipPathExists(paths: Set<string>, ref: string): boolean {
   const normalized = ref.toLowerCase();
@@ -18,7 +24,7 @@ function zipPathExists(paths: Set<string>, ref: string): boolean {
   );
 }
 
-/** Validate with Chinese/HSK-specific rules — pinyin/HSK recommended, media optional. */
+/** Validate legacy Chinese/HSK ZIP (non profile manifest). */
 export function validateChineseLessonZipPackage(
   pkg: LessonZipPackage
 ): LessonZipValidation {
@@ -123,7 +129,7 @@ export function validateChineseLessonZipPackage(
   };
 }
 
-/** Parse a Chinese/HSK lesson ZIP with Chinese-specific validation. */
+/** Parse a Chinese/HSK lesson ZIP — profile-aware when manifest declares chinese-hsk. */
 export async function parseChineseLessonZip(file: File): Promise<LessonZipValidation> {
   const peek = await peekZipPackageDetection(file);
   const detected = detectLessonPackageType(peek);
@@ -132,6 +138,18 @@ export async function parseChineseLessonZip(file: File): Promise<LessonZipValida
       type: "korean",
       reason: detected.reason,
     });
+  }
+
+  const manifestRaw = await peekChineseHskManifest(file);
+  if (shouldUseChineseHskImporter(manifestRaw) || isChineseHskManifestRaw(manifestRaw)) {
+    const hskResult = await parseChineseHskLessonZip(file);
+    if (detected.type === "unknown" && hskResult.importContext?.isKorean) {
+      return buildWrongImporterValidation("chinese", {
+        type: "korean",
+        reason: "Package context resolved as Korean during parse",
+      });
+    }
+    return hskResult;
   }
 
   const parsed = await parseLessonZip(file);
