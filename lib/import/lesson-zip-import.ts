@@ -78,6 +78,8 @@ export type LessonZipValidation = LessonZipPackage & {
   info?: string[];
   /** Set when ZIP track does not match the active importer route. */
   wrongImporter?: WrongImporterMismatch;
+  /** HSK profile id when chinese-hsk package detected. */
+  hskProfile?: string | null;
 };
 
 function emptyLessonZipValidation(

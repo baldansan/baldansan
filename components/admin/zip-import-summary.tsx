@@ -1,6 +1,7 @@
 "use client";
 
 import { isPrelessonPackage } from "@/lib/admin/lesson-package-type";
+import type { HskImportPreview } from "@/lib/import/chinese-hsk-types";
 import type { LessonImportTrack } from "@/lib/import/import-track";
 import type {
   LessonImportPreview,
@@ -38,6 +39,15 @@ export function getZipImportSummaryStatus(
     return "warning";
   }
   return "ready";
+}
+
+function isHskPreview(
+  preview: LessonImportPreview
+): preview is HskImportPreview {
+  return (
+    typeof (preview as HskImportPreview).hskLevel === "number" ||
+    Boolean((preview as HskImportPreview).lessonProfile)
+  );
 }
 
 function buildExtraInfo(
@@ -131,27 +141,74 @@ export function ZipImportSummary({ preview, validation, track = "legacy" }: Prop
     ...(validation.info ?? []),
     ...buildExtraInfo(preview, validation, track),
   ];
+  const hskPreview = isHskPreview(preview) ? preview : null;
 
   return (
     <section className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:p-6">
       <div className="flex flex-wrap items-start justify-between gap-3">
         <h2 className="text-lg font-semibold text-slate-900">Import summary</h2>
-        <span
-          className={`inline-flex rounded-full px-3 py-1 text-xs font-semibold ring-1 ${statusTone(status)}`}
-        >
-          {statusLabel(status)}
-        </span>
+        <div className="flex flex-wrap items-center gap-2">
+          {hskPreview?.profileBadgeLabel ? (
+            <span className="inline-flex rounded-full bg-sky-50 px-3 py-1 text-xs font-semibold text-sky-800 ring-1 ring-sky-200">
+              {hskPreview.profileBadgeLabel}
+            </span>
+          ) : null}
+          <span
+            className={`inline-flex rounded-full px-3 py-1 text-xs font-semibold ring-1 ${statusTone(status)}`}
+          >
+            {statusLabel(status)}
+          </span>
+        </div>
       </div>
 
       <dl className="mt-5 grid grid-cols-2 gap-x-4 gap-y-3 sm:grid-cols-3">
+        {hskPreview?.hskLevel != null ? (
+          <SummaryField label="HSK Level" value={`HSK${hskPreview.hskLevel}`} />
+        ) : null}
+        {hskPreview?.lessonProfile ? (
+          <SummaryField label="Lesson profile" value={hskPreview.lessonProfile} />
+        ) : null}
+        {hskPreview?.lessonNumber != null ? (
+          <SummaryField label="Lesson number" value={hskPreview.lessonNumber} />
+        ) : null}
+        {hskPreview?.bookPart ? (
+          <SummaryField label="Book part" value={hskPreview.bookPart} />
+        ) : null}
         <SummaryField label="Course ID" value={preview.courseId} />
         <SummaryField label="Lesson ID" value={preview.lessonId} />
         <SummaryField label="Language" value={preview.language} />
         <SummaryField label="Title" value={preview.title} />
         <SummaryField label="Vocabulary count" value={preview.vocabularyCount} />
+        {hskPreview?.textCount != null ? (
+          <SummaryField label="Text count" value={hskPreview.textCount} />
+        ) : null}
+        {hskPreview?.workbookListeningCount != null ? (
+          <SummaryField
+            label="Workbook listening"
+            value={hskPreview.workbookListeningCount}
+          />
+        ) : null}
+        {hskPreview?.workbookReadingCount != null ? (
+          <SummaryField
+            label="Workbook reading"
+            value={hskPreview.workbookReadingCount}
+          />
+        ) : null}
+        {hskPreview?.workbookWritingCount != null ? (
+          <SummaryField
+            label="Workbook writing"
+            value={hskPreview.workbookWritingCount}
+          />
+        ) : null}
         <SummaryField label="Quiz count" value={preview.quizCount} />
         <SummaryField label="Audio count" value={preview.audioFileCount} />
         <SummaryField label="Image count" value={preview.imageFileCount} />
+        {hskPreview?.answerStatus ? (
+          <SummaryField label="Answer status" value={hskPreview.answerStatus} />
+        ) : null}
+        {hskPreview?.textStatus ? (
+          <SummaryField label="Text status" value={hskPreview.textStatus} />
+        ) : null}
       </dl>
 
       <div className="mt-5 flex flex-col gap-3">

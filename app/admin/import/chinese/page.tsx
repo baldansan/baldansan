@@ -12,10 +12,10 @@ export default function AdminChineseImportPage() {
     <LessonZipImportClient
       track="chinese"
       title="Chinese / HSK Lesson Import"
-      description="HSK хичээл, subtitle, vocabulary, quiz, audio/image ZIP импортлох."
+      description="HSK profile-aware ZIP import — level-specific validation, draft-only import."
       backHref="/admin/import"
       templateHint="content/templates/chinese-lesson-zip-package/"
-      formatDocHint="LESSON_ZIP_IMPORT_FORMAT.md"
+      formatDocHint="docs/BUUNDUU_CHINESE_HSK_PACKAGE_V1.md"
     />
   );
 }

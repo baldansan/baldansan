@@ -65,7 +65,9 @@ export function buildImportDraftApiBody(
     null;
   const lessonType =
     (validation.manifest as { lessonType?: string } | null)?.lessonType ??
-    (validation.lesson as { lessonType?: string }).lessonType;
+    (validation.lesson as { lessonType?: string }).lessonType ??
+    validation.hskProfile ??
+    undefined;
   const sourceNote = lessonType
     ? `${sourceNoteBase ?? `ZIP package import (${validation.manifest?.packageVersion ?? "1.0"})`} · lessonType=${lessonType}`
     : sourceNoteBase;
@@ -90,7 +92,7 @@ export function buildImportDraftApiBody(
     description: validation.lesson.description ?? null,
     duration: validation.lesson.duration ?? null,
     orderIndex: validation.lesson.orderIndex ?? 1,
-    sourceNote,
+    sourceNote: validation.lesson.sourceNote ?? sourceNote,
     mediaStatus: validation.lesson.mediaStatus,
     packageVersion: validation.manifest?.packageVersion,
     lessonType,
