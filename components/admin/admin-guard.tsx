@@ -1,12 +1,22 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useState, type ReactNode } from "react";
+import { useCallback, useEffect, useState, type ReactNode } from "react";
+import { AdminDevImportWarning } from "@/components/admin/admin-dev-import-warning";
+import { AuthLoadErrorCard } from "@/components/auth/auth-load-error-card";
 import { EmptyState } from "@/components/empty-state";
-import { getCurrentUser, hasSupabaseConfig } from "@/lib/supabase/auth";
-import { isCurrentUserAdmin } from "@/lib/supabase/admin";
+import {
+  buildFallbackAuthCheckResult,
+  isAdminImportDevPreviewRoute,
+} from "@/lib/auth/auth-check-utils";
+import {
+  runClientAuthCheck,
+  type ClientAuthCheckResult,
+} from "@/lib/auth/client-auth-check";
+import { authDevLog } from "@/lib/auth/auth-dev-log";
+import { useLoadingWatchdog } from "@/lib/hooks/use-loading-watchdog";
 
-type GuardState = "loading" | "login" | "denied" | "admin";
+type GuardState = "loading" | "error" | "login" | "denied" | "admin" | "dev-preview";
 
 type Props = {
   children: ReactNode;
@@ -14,35 +24,88 @@ type Props = {
 
 export function AdminGuard({ children }: Props) {
   const [state, setState] = useState<GuardState>("loading");
+  const [checkResult, setCheckResult] = useState<ClientAuthCheckResult | null>(
+    null
+  );
+  const [attempt, setAttempt] = useState(0);
+  const [route, setRoute] = useState("/admin");
 
-  useEffect(() => {
-    let mounted = true;
+  const finishWithError = useCallback(
+    (message: string, result?: ClientAuthCheckResult | null) => {
+      const pathname =
+        typeof window !== "undefined" ? window.location.pathname : route;
 
-    async function check() {
-      if (!hasSupabaseConfig) {
-        if (mounted) setState("login");
+      if (isAdminImportDevPreviewRoute(pathname)) {
+        authDevLog("admin guard dev-preview fallback", { pathname, message });
+        setCheckResult(
+          result ?? buildFallbackAuthCheckResult(pathname, message)
+        );
+        setState("dev-preview");
         return;
       }
 
-      const { data: user } = await getCurrentUser();
-      if (!mounted) return;
+      setCheckResult(
+        result ?? buildFallbackAuthCheckResult(pathname, message)
+      );
+      setState("error");
+    },
+    [route]
+  );
 
-      if (!user) {
+  const runCheck = useCallback(async () => {
+    setState("loading");
+    const pathname =
+      typeof window !== "undefined" ? window.location.pathname : "/admin";
+    setRoute(pathname);
+
+    authDevLog("admin guard check started", { pathname });
+
+    try {
+      const result = await runClientAuthCheck({
+        includeAdmin: true,
+        route: pathname,
+      });
+      setCheckResult(result);
+
+      if (!result.supabaseConfigured) {
+        finishWithError(result.error ?? "Supabase тохиргоо дутуу байна", result);
+        return;
+      }
+
+      if (result.timedOut || (result.error && !result.user)) {
+        finishWithError(result.error ?? "Auth шалгалт хэт удаж байна", result);
+        return;
+      }
+
+      if (!result.sessionPresent || !result.user) {
         setState("login");
         return;
       }
 
-      const admin = await isCurrentUserAdmin();
-      if (!mounted) return;
-
-      setState(admin ? "admin" : "denied");
+      setState(result.isAdmin ? "admin" : "denied");
+      authDevLog("admin guard check finished", {
+        pathname,
+        isAdmin: result.isAdmin,
+      });
+    } catch (error) {
+      const message =
+        error instanceof Error ? error.message : "Admin auth check failed";
+      authDevLog("admin guard check error", message);
+      finishWithError(message);
     }
+  }, [finishWithError]);
 
-    check();
-    return () => {
-      mounted = false;
-    };
-  }, []);
+  useEffect(() => {
+    void runCheck();
+  }, [runCheck, attempt]);
+
+  useLoadingWatchdog({
+    active: state === "loading",
+    onTimeout: useCallback(() => {
+      authDevLog("admin guard watchdog timeout");
+      finishWithError("Auth шалгалт хэт удаж байна");
+    }, [finishWithError]),
+  });
 
   if (state === "loading") {
     return (
@@ -62,12 +125,37 @@ export function AdminGuard({ children }: Props) {
     );
   }
 
+  if (state === "dev-preview") {
+    return (
+      <>
+        <AdminDevImportWarning
+          message={checkResult?.error ?? "Auth шалгалт хэт удаж байна"}
+        />
+        {children}
+      </>
+    );
+  }
+
+  if (state === "error") {
+    return (
+      <AuthLoadErrorCard
+        title="Admin auth шалгалт амжилтгүй"
+        description="Admin эрх шалгах үед алдаа гарлаа. Supabase холболт эсвэл нэвтрэлтийг шалгана уу."
+        result={
+          checkResult ?? buildFallbackAuthCheckResult(route, "Admin auth check failed")
+        }
+        route={route}
+        onRetry={() => setAttempt((value) => value + 1)}
+      />
+    );
+  }
+
   if (state === "login") {
     return (
       <EmptyState
         title="Admin хэсэгт нэвтрэх шаардлагатай"
         description={
-          hasSupabaseConfig
+          checkResult?.supabaseConfigured
             ? "Контент удирдах хэсэгт хандахын тулд эхлээд нэвтэрнэ үү."
             : "Supabase тохиргоо олдсонгүй. .env.local файлд NEXT_PUBLIC_SUPABASE_URL болон NEXT_PUBLIC_SUPABASE_ANON_KEY нэмнэ үү."
         }

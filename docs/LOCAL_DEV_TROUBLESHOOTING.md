@@ -2,6 +2,14 @@
 
 Buunduu Surtsgaay local dev guide for localhost, LAN testing, admin import, and offline/PWA issues.
 
+If issues persist, match the dev server host to your browser URL:
+
+- Browser `http://127.0.0.1:3000` → run `npm.cmd run dev:127`
+- Browser `http://localhost:3000` → run `npm.cmd run dev:localhost`
+- LAN device testing → run `npm.cmd run dev` (binds `0.0.0.0`)
+
+Repeated `WebSocket connection to ws://127.0.0.1:3000/_next/webpack-hmr failed` usually means the dev server restarted, the port changed, or the browser host does not match the running dev process. It does not block profile/admin rendering after auth timeouts.
+
 ## Start the dev server
 
 ```bash
