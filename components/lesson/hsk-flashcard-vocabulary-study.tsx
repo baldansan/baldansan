@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useState, type KeyboardEvent } from "react";
 import { SpeakerButton } from "@/components/tts/speaker-button";
 import {
   ctaOutlineClass,
@@ -13,6 +13,7 @@ import { lessonPreviewPath } from "@/lib/lesson-publish";
 import { resolveVocabularyAudioUrl } from "@/lib/lesson/teaching-media";
 import { vocabularyWordKey } from "@/lib/progress";
 import { containsTargetScript, resolveTtsLang } from "@/lib/tts/infer-lang";
+import type { HskMediaImageVariant } from "@/lib/lesson/hsk-media";
 import type { LessonContent } from "@/types/lesson-content";
 import type { VocabularyWord } from "@/types/lesson";
 
@@ -159,6 +160,17 @@ export function HskFlashcardVocabularyStudy({
     persist(0, knownKeys, reviewKeys);
   }
 
+  const toggleFlip = useCallback(() => {
+    setFlipped((value) => !value);
+  }, []);
+
+  function handleFlashcardKeyDown(event: KeyboardEvent<HTMLDivElement>) {
+    if (event.key === "Enter" || event.key === " ") {
+      event.preventDefault();
+      toggleFlip();
+    }
+  }
+
   if (total === 0) {
     return (
       <p className="text-sm text-slate-500">
@@ -219,10 +231,14 @@ export function HskFlashcardVocabularyStudy({
         className="mx-auto w-full max-w-md [perspective:1000px]"
         style={{ minHeight: compact ? "240px" : "300px" }}
       >
-        <button
-          type="button"
-          onClick={() => setFlipped((value) => !value)}
-          className={`relative w-full rounded-3xl bg-white shadow-sm ring-1 ring-emerald-100 transition-all duration-500 hover:ring-emerald-200 [transform-style:preserve-3d] ${
+        <div
+          role="button"
+          tabIndex={0}
+          onClick={toggleFlip}
+          onKeyDown={handleFlashcardKeyDown}
+          aria-label={flipped ? "Картын урд тал руу буцах" : "Утга, pinyin харах"}
+          aria-pressed={flipped}
+          className={`relative w-full cursor-pointer rounded-3xl bg-white shadow-sm ring-1 ring-emerald-100 transition-all duration-500 hover:ring-emerald-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-500 [transform-style:preserve-3d] ${
             flipped ? "[transform:rotateY(180deg)]" : ""
           }`}
           style={{ minHeight: compact ? "240px" : "300px" }}
@@ -234,21 +250,16 @@ export function HskFlashcardVocabularyStudy({
           >
             <div className="flex w-full items-start justify-end">
               {current && containsTargetScript(current.chinese) ? (
-                <span
-                  onClick={(event) => event.stopPropagation()}
-                  onKeyDown={(event) => event.stopPropagation()}
-                  role="presentation"
-                >
-                  <SpeakerButton
-                    text={current.chinese}
-                    lang={ttsLang}
-                    courseId={lesson.courseId}
-                    hskLevel={current.hskLevel}
-                    audioUrl={wordAudioUrl}
-                    size="md"
-                    label={`Уншуулах: ${current.chinese}`}
-                  />
-                </span>
+                <SpeakerButton
+                  text={current.chinese}
+                  lang={ttsLang}
+                  courseId={lesson.courseId}
+                  hskLevel={current.hskLevel}
+                  audioUrl={wordAudioUrl}
+                  size="md"
+                  label={`Уншуулах: ${current.chinese}`}
+                  stopPropagation
+                />
               ) : null}
             </div>
             <p className="text-5xl font-bold leading-none text-slate-900 sm:text-6xl">
@@ -291,7 +302,7 @@ export function HskFlashcardVocabularyStudy({
               </div>
             ) : null}
           </div>
-        </button>
+        </div>
       </div>
 
       <div className="grid grid-cols-3 gap-2">
@@ -338,36 +349,58 @@ export function HskFlashcardVocabularyStudy({
   );
 }
 
+const IMAGE_VARIANT_CLASS: Record<HskMediaImageVariant, string> = {
+  hero: "aspect-[3/4] min-h-[220px]",
+  wide: "aspect-[16/10] min-h-[160px]",
+  standard: "aspect-[4/3] min-h-[180px]",
+  illustration: "aspect-[2/1] max-h-[148px] min-h-[112px]",
+};
+
 type MediaImageProps = {
   src: string | null;
   alt: string;
   className?: string;
+  packageLabel?: string;
+  variant?: HskMediaImageVariant;
 };
 
-export function HskMediaImage({ src, alt, className }: MediaImageProps) {
+export function HskMediaImage({
+  src,
+  alt,
+  className,
+  packageLabel,
+  variant = "standard",
+}: MediaImageProps) {
   if (src) {
     return (
-      <div className={`relative overflow-hidden rounded-2xl bg-emerald-50 ${className ?? ""}`}>
-        <Image
-          src={src}
-          alt={alt}
-          width={640}
-          height={360}
-          className="h-auto w-full object-cover"
-          unoptimized
-        />
+      <div
+        className={`relative w-full overflow-hidden rounded-2xl bg-emerald-50 ${className ?? ""}`}
+      >
+        <div className={`relative w-full ${IMAGE_VARIANT_CLASS[variant]}`}>
+          <Image
+            src={src}
+            alt={alt}
+            fill
+            sizes="(max-width: 430px) 100vw, 430px"
+            className="object-contain"
+            unoptimized
+          />
+        </div>
       </div>
     );
   }
 
   return (
     <div
-      className={`flex items-center justify-center rounded-2xl bg-gradient-to-br from-emerald-50 to-teal-50 ring-1 ring-emerald-100 ${className ?? ""}`}
+      className={`flex flex-col items-center justify-center rounded-2xl bg-gradient-to-br from-emerald-50 to-teal-50 px-4 py-6 text-center ring-1 ring-emerald-100 ${className ?? ""}`}
       style={{ minHeight: "120px" }}
     >
       <span className="text-4xl" aria-hidden>
-        📚
+        🖼️
       </span>
+      {packageLabel ? (
+        <p className="mt-2 text-xs font-medium text-emerald-900">{packageLabel}</p>
+      ) : null}
     </div>
   );
 }

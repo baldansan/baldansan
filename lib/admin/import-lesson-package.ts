@@ -1,10 +1,10 @@
 import { inferLanguageTagFromCourseId } from "@/lib/language-track";
-import type {
-  LessonZipMediaFile,
-  LessonZipValidation,
-} from "@/lib/import/lesson-zip-import";
-import { normalizeZipPath } from "@/lib/import/zip-path";
+import type { LessonZipValidation } from "@/lib/import/lesson-zip-import";
 import type { ImportDraftApiBody } from "@/lib/admin/build-import-draft-request";
+import {
+  finalizePackageMediaImport,
+  type PackageMediaUploadResult,
+} from "@/lib/admin/package-media-import";
 import { upsertDraftLessonFromPackage } from "@/lib/admin/upsert-draft-lesson-from-package";
 import { isCurrentUserAdmin } from "@/lib/supabase/admin";
 import {
@@ -12,23 +12,15 @@ import {
   logAdminActivityFireAndForget,
 } from "@/lib/supabase/admin-activity";
 import { bulkImportLessonContent } from "@/lib/supabase/admin-import";
-import { updateLessonMedia } from "@/lib/supabase/admin-content";
 import { hasSupabaseConfig, supabase } from "@/lib/supabase/client";
-import { LESSON_MEDIA_BUCKET } from "@/lib/supabase/media-upload";
-import {
-  mergeTeachingMediaIntoSourceNote,
-  type TeachingImage,
-  type TeachingImageRef,
-} from "@/lib/lesson/teaching-media";
-import { buildVocabPronunciationMapFromRows } from "@/lib/import/korean-lesson-normalize";
+import type { HskImageStorageStatus } from "@/lib/lesson/hsk-package-media";
+import type { ImportErrorDetail } from "@/lib/admin/import-error-details";
 
-export type PackageMediaUploadResult = {
-  zipPath: string;
-  kind: "audio" | "image";
-  publicUrl: string | null;
-  storagePath: string | null;
-  error: string | null;
-};
+export {
+  finalizePackageMediaImport,
+  getPackageMediaStoragePath,
+  type PackageMediaUploadResult,
+} from "@/lib/admin/package-media-import";
 
 export type LessonPackageImportResult = {
   ok: boolean;
@@ -42,9 +34,14 @@ export type LessonPackageImportResult = {
   newQuizCountInserted?: number;
   subtitlesInserted: number;
   mediaUploaded: number;
+  uploadedImageCount?: number;
+  mediaImageCount?: number;
+  heroImageFound?: boolean;
+  imageStorageStatus?: HskImageStorageStatus;
   mediaFailures: PackageMediaUploadResult[];
   warnings: string[];
   errors: string[];
+  validationDetails?: ImportErrorDetail[];
   audioUrl?: string;
   thumbnailUrl?: string;
   created?: boolean;
@@ -64,162 +61,6 @@ function notConfigured(): LessonPackageImportResult {
     warnings: [],
     errors: ["Supabase is not configured."],
   };
-}
-
-function sanitizeFileName(name: string): string {
-  return name.replace(/[^a-zA-Z0-9._-]/g, "_").replace(/_+/g, "_").slice(0, 120);
-}
-
-export function getPackageMediaStoragePath(
-  courseId: string,
-  lessonId: string,
-  kind: "audio" | "image",
-  fileName: string
-): string {
-  return `${courseId}/${lessonId}/${kind}/${sanitizeFileName(fileName)}`;
-}
-
-async function uploadPackageMediaFile(
-  courseId: string,
-  lessonId: string,
-  media: LessonZipMediaFile
-): Promise<PackageMediaUploadResult> {
-  if (!supabase || !hasSupabaseConfig) {
-    return {
-      zipPath: media.zipPath,
-      kind: media.kind,
-      publicUrl: null,
-      storagePath: null,
-      error: "Supabase is not configured.",
-    };
-  }
-
-  const storagePath = getPackageMediaStoragePath(
-    courseId,
-    lessonId,
-    media.kind,
-    media.fileName
-  );
-
-  try {
-    const file = new File([media.blob], media.fileName, {
-      type: media.mimeType,
-    });
-
-    const { error: uploadError } = await supabase.storage
-      .from(LESSON_MEDIA_BUCKET)
-      .upload(storagePath, file, {
-        cacheControl: "3600",
-        upsert: true,
-        contentType: media.mimeType,
-      });
-
-    if (uploadError) {
-      return {
-        zipPath: media.zipPath,
-        kind: media.kind,
-        publicUrl: null,
-        storagePath,
-        error: uploadError.message,
-      };
-    }
-
-    const { data } = supabase.storage.from(LESSON_MEDIA_BUCKET).getPublicUrl(storagePath);
-
-    return {
-      zipPath: media.zipPath,
-      kind: media.kind,
-      publicUrl: data.publicUrl ?? null,
-      storagePath,
-      error: data.publicUrl ? null : "Public URL үүсгэж чадсангүй.",
-    };
-  } catch {
-    return {
-      zipPath: media.zipPath,
-      kind: media.kind,
-      publicUrl: null,
-      storagePath,
-      error: "Media upload failed.",
-    };
-  }
-}
-
-function resolveMediaUrl(
-  uploads: PackageMediaUploadResult[],
-  preferredPath: string | undefined,
-  kind: "audio" | "image"
-): string | undefined {
-  if (preferredPath) {
-    const normalized = normalizeZipPath(preferredPath);
-    const match = uploads.find(
-      (item) =>
-        item.kind === kind &&
-        !item.error &&
-        item.publicUrl &&
-        normalizeZipPath(item.zipPath).toLowerCase() === normalized.toLowerCase()
-    );
-    if (match?.publicUrl) return match.publicUrl;
-  }
-
-  const fallback = uploads.find(
-    (item) => item.kind === kind && !item.error && item.publicUrl
-  );
-  return fallback?.publicUrl ?? undefined;
-}
-
-function resolveTeachingImagesFromUploads(
-  refs: TeachingImageRef[] | undefined,
-  uploads: PackageMediaUploadResult[]
-): TeachingImage[] {
-  if (!refs?.length) return [];
-  const resolved: TeachingImage[] = [];
-  for (const ref of refs) {
-    const url = resolveMediaUrl(uploads, ref.file, "image");
-    if (!url) continue;
-    resolved.push({
-      type: ref.type,
-      title: ref.title,
-      url,
-      caption: ref.caption,
-      file: ref.file,
-    });
-  }
-  return resolved;
-}
-
-function buildVocabPronunciationMapFromValidation(
-  vocabulary: Array<{
-    id?: string;
-    chinese: string;
-    mongolianPronunciation?: string;
-    pronunciationMn?: string;
-    pronunciationHintMn?: string;
-  }>
-): Record<string, string> {
-  return buildVocabPronunciationMapFromRows(
-    vocabulary.map((row) => ({
-      id: row.id,
-      chinese: row.chinese,
-      mongolianPronunciation: row.mongolianPronunciation,
-      pronunciationMn: row.pronunciationMn,
-      pronunciationHintMn: row.pronunciationHintMn,
-    }))
-  );
-}
-
-function buildVocabAudioMapFromUploads(
-  vocabulary: Array<{ id?: string; chinese: string; audioFile?: string }>,
-  uploads: PackageMediaUploadResult[]
-): Record<string, string> {
-  const map: Record<string, string> = {};
-  for (const row of vocabulary) {
-    if (!row.audioFile) continue;
-    const url = resolveMediaUrl(uploads, row.audioFile, "audio");
-    if (!url) continue;
-    if (row.id) map[row.id] = url;
-    map[row.chinese] = url;
-  }
-  return map;
 }
 
 type DraftLessonShell = {
@@ -464,93 +305,12 @@ export async function importLessonPackage(
     };
   }
 
-  const mediaFailures: PackageMediaUploadResult[] = [];
-  let mediaUploaded = 0;
-
-  for (const media of validation.mediaFiles) {
-    const result = await uploadPackageMediaFile(courseId, resolvedLessonId, media);
-    mediaFailures.push(result);
-    if (result.publicUrl && !result.error) {
-      mediaUploaded += 1;
-    } else if (result.error) {
-      warnings.push(`Media "${media.zipPath}" upload failed: ${result.error}`);
-    }
-  }
-
-  const audioUrl = resolveMediaUrl(
-    mediaFailures,
-    validation.lesson.audioFile,
-    "audio"
-  );
-  const thumbnailUrl =
-    resolveMediaUrl(
-      mediaFailures,
-      validation.lesson.thumbnailFile,
-      "image"
-    ) ??
-    resolveTeachingImagesFromUploads(
-      validation.lesson.teachingImages,
-      mediaFailures
-    )[0]?.url;
-
-  const teachingImages = resolveTeachingImagesFromUploads(
-    validation.lesson.teachingImages,
-    mediaFailures
-  );
-  const vocabAudioMap = buildVocabAudioMapFromUploads(
-    validation.vocabulary,
-    mediaFailures
-  );
-  const vocabPronunciationMap = buildVocabPronunciationMapFromValidation(
-    validation.vocabulary
-  );
-
-  let mediaStatus: "missing" | "pending" | "ready" = "missing";
-  if (audioUrl || thumbnailUrl || teachingImages.length > 0) {
-    mediaStatus = "pending";
-  }
-  if (validation.lesson.mediaStatus === "ready" && audioUrl) {
-    mediaStatus = "ready";
-  } else if (validation.lesson.mediaStatus === "pending") {
-    mediaStatus = "pending";
-  }
-
-  const baseSourceNote =
-    validation.lesson.sourceNote ||
-    validation.manifest?.source ||
-    "ZIP package import";
-  const sourceNote = mergeTeachingMediaIntoSourceNote(
-    baseSourceNote,
-    teachingImages,
-    vocabAudioMap,
-    vocabPronunciationMap
-  );
-
-  if (
-    audioUrl ||
-    thumbnailUrl ||
-    sourceNote ||
-    teachingImages.length > 0 ||
-    Object.keys(vocabAudioMap).length > 0 ||
-    Object.keys(vocabPronunciationMap).length > 0
-  ) {
-    const mediaUpdate = await updateLessonMedia(resolvedLessonId, {
-      audioUrl: audioUrl ?? "",
-      thumbnailUrl: thumbnailUrl ?? "",
-      sourceNote,
-      mediaStatus,
-    });
-    if (mediaUpdate.error) {
-      warnings.push(`Lesson media URLs хадгалахад алдаа: ${mediaUpdate.error}`);
-    }
-    if (mediaUpdate.data?.warnings?.length) {
-      warnings.push(...mediaUpdate.data.warnings);
-    }
-  } else if (validation.mediaFiles.length > 0 && mediaUploaded === 0) {
-    warnings.push(
-      "ZIP-д media файл байсан ч Storage upload амжилтгүй — текст контент импортлогдсон. media_status = missing."
-    );
-  }
+  const mediaResult = await finalizePackageMediaImport({
+    validation,
+    courseId,
+    lessonId: resolvedLessonId,
+  });
+  warnings.push(...mediaResult.warnings);
 
   logAdminActivityFireAndForget({
     action: ADMIN_ACTIVITY_ACTIONS.bulkImportCompleted,
@@ -568,7 +328,7 @@ export async function importLessonPackage(
       oldQuizCountDeleted: imported.data.oldQuizCountDeleted,
       newQuizCountInserted: imported.data.newQuizCountInserted,
       subtitlesInserted: imported.data.subtitlesInserted,
-      mediaUploaded,
+      mediaUploaded: mediaResult.mediaUploaded,
     },
   });
 
@@ -586,12 +346,16 @@ export async function importLessonPackage(
     oldQuizCountDeleted: imported.data.oldQuizCountDeleted,
     newQuizCountInserted: imported.data.newQuizCountInserted,
     subtitlesInserted: imported.data.subtitlesInserted,
-    mediaUploaded,
-    mediaFailures,
+    mediaUploaded: mediaResult.mediaUploaded,
+    uploadedImageCount: mediaResult.uploadedImageCount,
+    mediaImageCount: mediaResult.mediaImageCount,
+    heroImageFound: mediaResult.heroImageFound,
+    imageStorageStatus: mediaResult.imageStorageStatus,
+    mediaFailures: mediaResult.mediaFailures,
     warnings,
     errors,
-    audioUrl,
-    thumbnailUrl,
+    audioUrl: mediaResult.audioUrl,
+    thumbnailUrl: mediaResult.thumbnailUrl,
     created: shell.created,
     message,
   };

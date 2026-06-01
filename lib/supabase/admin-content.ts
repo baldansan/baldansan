@@ -144,6 +144,7 @@ export type UpdateLessonMetadataInput = {
 export type UpdateLessonMediaInput = {
   videoUrl?: string;
   thumbnailUrl?: string;
+  imageUrl?: string;
   audioUrl?: string;
   sourceNote?: string;
   mediaStatus: "missing" | "pending" | "ready";
@@ -163,6 +164,7 @@ export type AdminLessonMetadataRow = {
   quiz_count: number;
   video_url: string | null;
   thumbnail_url: string | null;
+  image_url: string | null;
   audio_url: string | null;
   source_note: string | null;
   media_status: string;
@@ -206,6 +208,7 @@ function mediaSnapshotFromRow(
   return {
     videoUrl: row.video_url,
     thumbnailUrl: row.thumbnail_url,
+    imageUrl: row.image_url,
     audioUrl: row.audio_url,
     sourceNote: row.source_note,
     mediaStatus: row.media_status,
@@ -218,6 +221,7 @@ function mediaSnapshotFromInput(
   return {
     videoUrl: input.videoUrl ?? null,
     thumbnailUrl: input.thumbnailUrl ?? null,
+    imageUrl: input.imageUrl ?? null,
     audioUrl: input.audioUrl ?? null,
     sourceNote: input.sourceNote ?? null,
     mediaStatus: input.mediaStatus,
@@ -447,6 +451,14 @@ export function validateUpdateLessonMetadataInput(
   };
 }
 
+function isMissingColumnError(message: string): boolean {
+  const lower = message.toLowerCase();
+  return (
+    lower.includes("column") &&
+    (lower.includes("does not exist") || lower.includes("could not find"))
+  );
+}
+
 export async function getAdminLessonMetadataById(
   lessonId: string
 ): Promise<AdminContentResult<AdminLessonMetadataRow>> {
@@ -460,10 +472,15 @@ export async function getAdminLessonMetadataById(
   }
 
   try {
-    const result = await queryLessonById<AdminLessonMetadataRow>(
-      "id, course_id, title, chinese_title, subtitle, description, duration, status, order_index, vocabulary_count, quiz_count, video_url, thumbnail_url, audio_url, source_note, media_status",
-      lessonId
-    );
+    const fullSelect =
+      "id, course_id, title, chinese_title, subtitle, description, duration, status, order_index, vocabulary_count, quiz_count, video_url, thumbnail_url, image_url, audio_url, source_note, media_status";
+    const coreSelect =
+      "id, course_id, title, chinese_title, subtitle, description, duration, status, order_index, vocabulary_count, quiz_count, video_url, thumbnail_url, audio_url, source_note, media_status";
+
+    let result = await queryLessonById<AdminLessonMetadataRow>(fullSelect, lessonId);
+    if (result.error && isMissingColumnError(result.error)) {
+      result = await queryLessonById<AdminLessonMetadataRow>(coreSelect, lessonId);
+    }
 
     if (result.error) {
       return { data: null, error: result.error };
@@ -576,12 +593,14 @@ export function validateUpdateLessonMediaInput(
 
   checkUrl("Video URL", input.videoUrl);
   checkUrl("Thumbnail URL", input.thumbnailUrl);
+  checkUrl("Image URL", input.imageUrl);
   checkUrl("Audio URL", input.audioUrl);
 
   return {
     data: {
       videoUrl: input.videoUrl?.trim() || undefined,
       thumbnailUrl: input.thumbnailUrl?.trim() || undefined,
+      imageUrl: input.imageUrl?.trim() || undefined,
       audioUrl: input.audioUrl?.trim() || undefined,
       sourceNote: input.sourceNote?.trim() || undefined,
       mediaStatus: input.mediaStatus,
@@ -618,23 +637,37 @@ export async function updateLessonMedia(
   const afterSnapshot = mediaSnapshotFromInput(v);
 
   try {
-    const { error } = await supabase
+    const heroUrl = v.imageUrl || v.thumbnailUrl;
+    const updatePayload: Record<string, unknown> = {
+      video_url: v.videoUrl || null,
+      thumbnail_url: heroUrl || null,
+      audio_url: v.audioUrl || null,
+      source_note: v.sourceNote || null,
+      media_status: v.mediaStatus,
+    };
+    if (heroUrl) {
+      updatePayload.image_url = heroUrl;
+    }
+
+    let { error } = await supabase
       .from("lessons")
-      .update({
-        video_url: v.videoUrl || null,
-        thumbnail_url: v.thumbnailUrl || null,
-        audio_url: v.audioUrl || null,
-        source_note: v.sourceNote || null,
-        media_status: v.mediaStatus,
-      })
+      .update(updatePayload)
       .eq("id", lessonId);
+
+    if (error && isMissingColumnError(error.message) && "image_url" in updatePayload) {
+      const { image_url: _removed, ...withoutImageUrl } = updatePayload;
+      ({ error } = await supabase
+        .from("lessons")
+        .update(withoutImageUrl)
+        .eq("id", lessonId));
+    }
 
     if (error) {
       return { data: null, error: formatWriteError(error) };
     }
 
     const cleared =
-      !v.videoUrl && !v.thumbnailUrl && !v.audioUrl && v.mediaStatus === "missing";
+      !v.videoUrl && !v.thumbnailUrl && !v.imageUrl && !v.audioUrl && v.mediaStatus === "missing";
     await logAdminActivity({
       action: cleared
         ? ADMIN_ACTIVITY_ACTIONS.mediaCleared

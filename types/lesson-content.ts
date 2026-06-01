@@ -55,6 +55,8 @@ export type LessonContent = {
   videoUrl?: string;
   /** Cover/thumbnail image URL. */
   thumbnailUrl?: string;
+  /** Hero image URL from Gold Standard package import. */
+  imageUrl?: string;
   /** Optional audio resource URL. */
   audioUrl?: string;
   /** Admin note about media source. */

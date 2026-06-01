@@ -234,6 +234,19 @@ async function updateExistingLesson(
   return { ok: true };
 }
 
+async function lookupLessonIdMinimal(
+  client: SupabaseClient,
+  lessonId: string
+): Promise<string | null> {
+  const { data, error } = await client
+    .from("lessons")
+    .select("id")
+    .eq("id", lessonId)
+    .maybeSingle();
+  if (error || !data?.id) return null;
+  return canonicalLessonId(data.id);
+}
+
 async function insertDraftLessonRow(
   client: SupabaseClient,
   packageLessonId: string,
@@ -258,6 +271,10 @@ async function insertDraftLessonRow(
       const existing = await fetchLessonRowById(client, packageLessonId);
       if (existing) {
         return { ok: true, resolvedLessonId: existing.canonicalId };
+      }
+      const minimalId = await lookupLessonIdMinimal(client, packageLessonId);
+      if (minimalId) {
+        return { ok: true, resolvedLessonId: minimalId };
       }
     }
 
@@ -351,6 +368,11 @@ export async function upsertDraftLessonFromPackage(
   }
 
   const existing = await fetchLessonRowById(client, packageLessonId);
+  const existingLessonId =
+    existing?.canonicalId ??
+    (await lookupLessonIdMinimal(client, packageLessonId)) ??
+    null;
+
   const resolvedSourceNote = resolveStoredSourceNote(body);
   if (resolvedSourceNote.error) {
     return {
@@ -389,16 +411,16 @@ export async function upsertDraftLessonFromPackage(
     quiz_count: 0,
   };
 
-  if (existing) {
+  if (existingLessonId) {
     const updated = await updateExistingLesson(
       client,
-      existing.canonicalId,
+      existingLessonId,
       rowPayload
     );
     if (!updated.ok) {
       return {
         ok: false,
-        resolvedLessonId: existing.canonicalId,
+        resolvedLessonId: existingLessonId,
         packageLessonId,
         created: false,
         error: updated.error,
@@ -408,7 +430,7 @@ export async function upsertDraftLessonFromPackage(
 
     return {
       ok: true,
-      resolvedLessonId: existing.canonicalId,
+      resolvedLessonId: existingLessonId,
       packageLessonId,
       created: false,
       warnings,

@@ -22,6 +22,8 @@ type Props = {
   className?: string;
   /** When false, TTS errors appear in button title only (avoids layout thrash in lists). */
   showInlineError?: boolean;
+  /** Prevent click from bubbling to parent interactive elements (e.g. flashcard flip). */
+  stopPropagation?: boolean;
 };
 
 const sizeClasses: Record<SpeakerSize, string> = {
@@ -65,6 +67,7 @@ function SpeakerButtonInner({
   label,
   className = "",
   showInlineError = false,
+  stopPropagation = false,
 }: Props) {
   const buttonId = useId();
   const resolvedLang = resolveTtsLang({ lang, courseId, hskLevel });
@@ -131,7 +134,10 @@ function SpeakerButtonInner({
       <button
         id={buttonId}
         type="button"
-        onClick={() => {
+        onClick={(event) => {
+          if (stopPropagation) {
+            event.stopPropagation();
+          }
           void handleClick();
         }}
         aria-label={ariaLabel}

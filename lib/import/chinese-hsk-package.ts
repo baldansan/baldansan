@@ -32,8 +32,13 @@ import {
 } from "@/lib/import/chinese-hsk-normalize";
 import { validateChineseHskPackage } from "@/lib/import/chinese-hsk-validate";
 import type { HskImportPreview } from "@/lib/import/chinese-hsk-types";
+import {
+  buildTeachingImageRefsFromMedia,
+  findHskHeroImage,
+  resolveHskHeroThumbnailFile,
+  summarizeHskImageImportStatus,
+} from "@/lib/lesson/hsk-package-media";
 import type { TeachingImageRef } from "@/lib/lesson/teaching-media";
-import { parseHskMediaBundle } from "@/lib/lesson/hsk-media";
 import { isJsonSourceNote } from "@/lib/lesson/source-note-json";
 
 async function readJsonFile(
@@ -94,20 +99,7 @@ function parseVocabularyArray(
 }
 
 function buildTeachingImagesFromMedia(media: unknown): TeachingImageRef[] {
-  const bundle = parseHskMediaBundle(media);
-  if (!bundle?.images.length) return [];
-  return bundle.images.map((image) => {
-    const file = image.file.trim();
-    const normalizedFile =
-      file && !file.startsWith("images/") && !file.startsWith("/") && !file.startsWith("http")
-        ? `images/${file.replace(/^\.?\//, "")}`
-        : file;
-    return {
-      type: image.section || image.id || "image",
-      title: image.title || image.id || image.section || "Teaching image",
-      file: normalizedFile || `images/${image.id || "image"}.png`,
-    };
-  });
+  return buildTeachingImageRefsFromMedia(media);
 }
 
 function resolveHskImportLessonType(
@@ -153,6 +145,13 @@ function buildHskImportPreview(
     Boolean(trim((rawFiles.lesson as Record<string, unknown> | null)?.videoFile)) ||
     (studySummary?.videoRequired ?? false);
 
+  const heroImageFound = Boolean(findHskHeroImage(rawFiles.media));
+  const imageStatus = summarizeHskImageImportStatus({
+    mediaImageCount: studySummary?.mediaImageCount ?? 0,
+    zipImageFileCount: base.imageFileCount,
+    heroImageFound,
+  });
+
   return {
     ...base,
     hskLevel: manifest.hskLevel,
@@ -172,6 +171,8 @@ function buildHskImportPreview(
     hasToneContent: studySummary?.hasToneContent ?? false,
     hasTeacherNotes: studySummary?.hasTeacherNotes ?? false,
     mediaImageCount: studySummary?.mediaImageCount ?? base.imageFileCount,
+    heroImageFound: imageStatus.heroImageFound,
+    imageStorageStatus: imageStatus.imageStorageStatus,
     videoRequired,
     storesJsonSourceNote: isJsonSourceNote(pkg.lesson?.sourceNote),
     answerStatus:
@@ -285,7 +286,8 @@ export async function parseChineseHskLessonZip(file: File): Promise<LessonZipVal
           hskManifest.courseId,
           hskManifest.language,
           hskManifest.targetLanguage,
-          hskManifest.uiLanguage
+          hskManifest.uiLanguage,
+          hskManifest.hskLevel
         )
       : null;
 
@@ -365,6 +367,11 @@ export async function parseChineseHskLessonZip(file: File): Promise<LessonZipVal
         ];
       }
 
+      const heroThumbnailFile = resolveHskHeroThumbnailFile(rawFiles.media);
+      if (heroThumbnailFile && !lesson.thumbnailFile) {
+        lesson.thumbnailFile = heroThumbnailFile;
+      }
+
       lesson.sourceNote = mergeHskProfileIntoSourceNote(
         undefined,
         hskManifest,
@@ -412,6 +419,7 @@ export async function parseChineseHskLessonZip(file: File): Promise<LessonZipVal
           courseId: lesson.courseId,
           isKorean: false,
           targetLanguage: importContext?.targetLanguage ?? "zh",
+          defaultHskLevel: hskManifest?.hskLevel,
         }
       );
       importPayload = contentValidation.payload;

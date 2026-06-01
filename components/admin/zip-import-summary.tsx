@@ -245,6 +245,24 @@ export function ZipImportSummary({ preview, validation, track = "legacy" }: Prop
         {hskPreview?.mediaImageCount != null ? (
           <SummaryField label="Media images" value={hskPreview.mediaImageCount} />
         ) : null}
+        {hskPreview?.uploadedImageCount != null ? (
+          <SummaryField
+            label="Uploaded images"
+            value={hskPreview.uploadedImageCount}
+          />
+        ) : null}
+        {hskPreview ? (
+          <SummaryField
+            label="Hero image found"
+            value={hskPreview.heroImageFound ? "yes" : "no"}
+          />
+        ) : null}
+        {hskPreview?.imageStorageStatus ? (
+          <SummaryField
+            label="Image storage status"
+            value={hskPreview.imageStorageStatus}
+          />
+        ) : null}
         {hskPreview ? (
           <SummaryField
             label="Video required"

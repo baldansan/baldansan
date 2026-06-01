@@ -3,7 +3,9 @@ import "server-only";
 import type { SupabaseClient } from "@supabase/supabase-js";
 import { revalidatePath } from "next/cache";
 import type { ImportDraftApiBody } from "@/lib/admin/build-import-draft-request";
+import { parseImportErrorDetails } from "@/lib/admin/import-error-details";
 import type { LessonPackageImportResult } from "@/lib/admin/import-lesson-package";
+import { sanitizeImportPayloadForServer } from "@/lib/admin/sanitize-import-payload";
 import { upsertDraftLessonFromPackage } from "@/lib/admin/upsert-draft-lesson-from-package";
 import { bulkImportLessonContent } from "@/lib/supabase/admin-import";
 
@@ -15,10 +17,13 @@ export async function importDraftLessonOnServer(
   const courseId = body.courseId.trim();
   const warnings = [...body.warnings];
 
-  if (!body.importPayload) {
+  function fail(
+    errors: string[],
+    partial: Partial<LessonPackageImportResult> = {}
+  ): LessonPackageImportResult {
     return {
       ok: false,
-      lessonId: packageLessonId,
+      lessonId: partial.lessonId ?? packageLessonId,
       packageLessonId,
       courseId,
       vocabularyInserted: 0,
@@ -27,8 +32,14 @@ export async function importDraftLessonOnServer(
       mediaUploaded: 0,
       mediaFailures: [],
       warnings,
-      errors: ["ZIP parse data missing. Please validate again."],
+      errors,
+      validationDetails: parseImportErrorDetails(errors, packageLessonId),
+      ...partial,
     };
+  }
+
+  if (!body.importPayload) {
+    return fail(["ZIP parse data missing. Please validate again."]);
   }
 
   console.log("[import-server] creating draft lesson", {
@@ -44,27 +55,18 @@ export async function importDraftLessonOnServer(
 
   const shell = await upsertDraftLessonFromPackage(client, body);
   if (!shell.ok) {
-    return {
-      ok: false,
-      lessonId: packageLessonId,
-      packageLessonId,
-      courseId,
-      vocabularyInserted: 0,
-      quizInserted: 0,
-      subtitlesInserted: 0,
-      mediaUploaded: 0,
-      mediaFailures: [],
+    return fail([shell.error ?? "Draft lesson upsert failed."], {
       warnings: [...warnings, ...shell.warnings],
-      errors: [shell.error ?? "Draft lesson upsert failed."],
-    };
+    });
   }
 
   warnings.push(...shell.warnings);
 
   const resolvedLessonId = shell.resolvedLessonId;
+  const importPayload = sanitizeImportPayloadForServer(body.importPayload, body);
   const imported = await bulkImportLessonContent(
     resolvedLessonId,
-    body.importPayload,
+    importPayload,
     {
       mode: "replace",
       client,
@@ -73,20 +75,10 @@ export async function importDraftLessonOnServer(
   );
 
   if (imported.error || !imported.data) {
-    return {
-      ok: false,
+    return fail([imported.error ?? "Bulk content import failed."], {
       lessonId: resolvedLessonId,
-      packageLessonId,
-      courseId,
-      vocabularyInserted: 0,
-      quizInserted: 0,
-      subtitlesInserted: 0,
-      mediaUploaded: 0,
-      mediaFailures: [],
-      warnings,
-      errors: [imported.error ?? "Bulk content import failed."],
       created: shell.created,
-    };
+    });
   }
 
   revalidatePath("/admin/lessons");

@@ -1,3 +1,12 @@
+import {
+  findHskMediaById,
+  findHskPackageMediaBySection,
+  HSK_PACKAGE_IMAGE_PLACEHOLDER_MN,
+  normalizeHskPackageImagePath,
+  type HskGuidedStepMediaRef,
+} from "@/lib/lesson/hsk-package-media";
+
+export type { HskGuidedStepMediaRef };
 import { parseLessonSourceNote } from "@/lib/lesson/source-note-json";
 import type { TeachingImage } from "@/lib/lesson/teaching-media";
 import type { LessonContent } from "@/types/lesson-content";
@@ -6,9 +15,15 @@ export type HskMediaImage = {
   id: string;
   file: string;
   section?: string;
+  /** Gold Standard media.json role (e.g. hero). */
+  role?: string;
   title?: string;
   url?: string;
+  storagePath?: string;
+  storageStatus?: "uploaded" | "package-reference-only" | "missing";
 };
+
+export type HskMediaImageVariant = "hero" | "wide" | "standard" | "illustration";
 
 export type HskMediaBundle = {
   lessonId?: string;
@@ -33,8 +48,16 @@ function normalizeImage(raw: unknown): HskMediaImage | null {
     id: id || file.replace(/^.*\//, "").replace(/\.[^.]+$/, ""),
     file,
     section: trim(raw.section) || undefined,
+    role: trim(raw.role) || undefined,
     title: trim(raw.title) || undefined,
     url: trim(raw.url) || undefined,
+    storagePath: trim(raw.storagePath) || undefined,
+    storageStatus:
+      raw.storageStatus === "uploaded" ||
+      raw.storageStatus === "package-reference-only" ||
+      raw.storageStatus === "missing"
+        ? raw.storageStatus
+        : undefined,
   };
 }
 
@@ -109,13 +132,46 @@ export function findHskMediaBySection(
   media: HskMediaBundle | null | undefined,
   section: string
 ): HskMediaImage | null {
-  if (!media) return null;
-  const needle = section.toLowerCase();
+  return findHskPackageMediaBySection(media, section);
+}
+
+function trimRef(value: unknown): string {
+  return String(value ?? "").trim();
+}
+
+/** Resolve guided-step media: imageId first, then section aliases, then step id. */
+export function findHskMediaForGuidedStep(
+  media: HskMediaBundle | null | undefined,
+  step: HskGuidedStepMediaRef
+): HskMediaImage | null {
+  const imageId = trimRef(step.imageId);
+  const mediaSection = trimRef(step.mediaSection);
+  const stepId = trimRef(step.id);
+
   return (
-    media.images.find((img) => img.section?.toLowerCase() === needle) ??
-    media.images.find((img) => img.id.toLowerCase().includes(needle)) ??
-    null
+    (imageId ? findHskMediaById(media, imageId) : null) ??
+    (mediaSection ? findHskPackageMediaBySection(media, mediaSection) : null) ??
+    (stepId
+      ? findHskMediaById(media, stepId) ??
+        findHskPackageMediaBySection(media, stepId)
+      : null)
   );
+}
+
+export function resolveHskGuidedStepMediaDisplay(
+  media: HskMediaBundle | null | undefined,
+  step: HskGuidedStepMediaRef,
+  teachingImages?: TeachingImage[] | null
+): {
+  image: HskMediaImage | null;
+  imageUrl: string | null;
+  packageLabel?: string;
+} {
+  const image = findHskMediaForGuidedStep(media, step);
+  const imageUrl = resolveHskMediaUrl(image, teachingImages);
+  const packageLabel =
+    !imageUrl && image ? HSK_PACKAGE_IMAGE_PLACEHOLDER_MN : undefined;
+  return { image, imageUrl, packageLabel };
 }
 
 /** Resolve a display URL — storage URL, absolute path, or null for placeholder. */
@@ -134,13 +190,22 @@ export function resolveHskMediaUrl(
   }
 
   if (teachingImages?.length) {
-    const needle = (image.section || image.id || file).toLowerCase();
+    const normalizedFile = file ? normalizeHskPackageImagePath(file) : "";
+    const imageId = image.id?.trim().toLowerCase() ?? "";
+    const needle = (image.section || image.id || normalizedFile).toLowerCase();
     const match =
+      (imageId
+        ? teachingImages.find((item) => item.type?.toLowerCase() === imageId)
+        : null) ??
       teachingImages.find(
         (item) =>
           item.type?.toLowerCase() === needle ||
+          (item.file &&
+            normalizeHskPackageImagePath(item.file).toLowerCase() ===
+              normalizedFile.toLowerCase()) ||
           item.file?.toLowerCase() === file.toLowerCase() ||
-          item.title?.toLowerCase() === needle
+          item.title?.toLowerCase() === needle ||
+          (imageId && item.title?.toLowerCase() === imageId)
       ) ??
       teachingImages.find((item) =>
         item.file?.toLowerCase().includes(needle.replace(/^images\//, ""))

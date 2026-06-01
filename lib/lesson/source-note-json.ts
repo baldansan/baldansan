@@ -1,3 +1,6 @@
+import { applyTeachingUrlsToHskStudyMedia } from "@/lib/lesson/hsk-package-media";
+import type { TeachingImage } from "@/lib/lesson/teaching-media";
+
 const SOURCE_NOTE_SEP = " · ";
 
 export type ParsedLessonSourceNote =
@@ -112,6 +115,7 @@ export function mergeTeachingMediaIntoJsonOrLegacySourceNote(
     const next = { ...parsed.data };
     if (media.teachingImages?.length) {
       next.teachingImages = media.teachingImages;
+      applyTeachingUrlsToHskStudyMedia(next, media.teachingImages as TeachingImage[]);
     }
     if (media.vocabAudio && Object.keys(media.vocabAudio).length > 0) {
       next.vocabAudio = media.vocabAudio;
