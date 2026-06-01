@@ -16,6 +16,7 @@ export type HskImportPreview = LessonImportPreview & {
   hasPronunciationContent?: boolean;
   hasToneContent?: boolean;
   hasTeacherNotes?: boolean;
+  storesJsonSourceNote?: boolean;
   answerStatus?: string | null;
   textStatus?: string | null;
   audioStatus?: string | null;

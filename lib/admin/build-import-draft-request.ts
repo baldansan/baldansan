@@ -1,5 +1,9 @@
 import type { LessonZipValidation } from "@/lib/import/lesson-zip-import";
 import type { LessonImportPayload } from "@/lib/supabase/admin-import";
+import {
+  isJsonSourceNote,
+  mergeJsonSourceNoteFields,
+} from "@/lib/lesson/source-note-json";
 
 /** JSON-serializable body for POST /api/admin/import/lesson */
 export type ImportDraftApiBody = {
@@ -15,6 +19,8 @@ export type ImportDraftApiBody = {
   duration?: string | null;
   orderIndex?: number;
   sourceNote?: string | null;
+  /** Full JSON source_note for Chinese HSK imports (preferred over sourceNote). */
+  hskSourceNoteJson?: string | null;
   mediaStatus?: string;
   packageVersion?: string;
   lessonType?: string;
@@ -25,6 +31,45 @@ export type ImportDraftApiBody = {
   importTrack?: "chinese" | "korean" | "legacy";
   allowAutoCreateCourse?: boolean;
 };
+
+function resolveImportSourceNote(
+  validation: LessonZipValidation,
+  importTrack?: ImportDraftApiBody["importTrack"]
+): string | null {
+  const fromLesson = validation.lesson?.sourceNote?.trim();
+  if (fromLesson && isJsonSourceNote(fromLesson)) {
+    return fromLesson;
+  }
+
+  const lessonType =
+    validation.hskProfile ??
+    validation.lesson?.lessonType ??
+    (validation.manifest as { lessonType?: string } | null)?.lessonType;
+
+  if (lessonType && fromLesson && isJsonSourceNote(fromLesson)) {
+    return mergeJsonSourceNoteFields(fromLesson, { lessonType });
+  }
+
+  if (fromLesson) {
+    return fromLesson;
+  }
+
+  const manifestSource = validation.manifest?.source?.trim();
+  if (manifestSource && isJsonSourceNote(manifestSource)) {
+    return manifestSource;
+  }
+
+  if (importTrack === "chinese" || validation.hskProfile) {
+    return null;
+  }
+
+  const fallbackBase =
+    manifestSource || `ZIP package import (${validation.manifest?.packageVersion ?? "1.0"})`;
+  if (lessonType) {
+    return `${fallbackBase} · lessonType=${lessonType}`;
+  }
+  return fallbackBase;
+}
 
 export function buildImportDraftApiBody(
   validation: LessonZipValidation,
@@ -59,22 +104,24 @@ export function buildImportDraftApiBody(
     validation.preview.targetTitle ||
     title;
 
-  const sourceNoteBase =
-    validation.lesson.sourceNote ||
-    validation.manifest?.source ||
-    null;
-  const lessonType =
-    (validation.manifest as { lessonType?: string } | null)?.lessonType ??
-    (validation.lesson as { lessonType?: string }).lessonType ??
-    validation.hskProfile ??
-    undefined;
-  const sourceNote = lessonType
-    ? `${sourceNoteBase ?? `ZIP package import (${validation.manifest?.packageVersion ?? "1.0"})`} · lessonType=${lessonType}`
-    : sourceNoteBase;
-
   const track = options?.importTrack ?? "legacy";
   const allowAutoCreateCourse =
     options?.allowAutoCreateCourse ?? track !== "korean";
+
+  const sourceNote = resolveImportSourceNote(validation, track);
+
+  const lessonType =
+    (validation.manifest as { lessonType?: string } | null)?.lessonType ??
+    validation.lesson?.lessonType ??
+    validation.hskProfile ??
+    undefined;
+
+  const hskSourceNoteJson =
+    sourceNote && isJsonSourceNote(sourceNote) ? sourceNote : null;
+
+  if (track === "chinese" && !hskSourceNoteJson) {
+    return null;
+  }
 
   return {
     courseId,
@@ -92,7 +139,8 @@ export function buildImportDraftApiBody(
     description: validation.lesson.description ?? null,
     duration: validation.lesson.duration ?? null,
     orderIndex: validation.lesson.orderIndex ?? 1,
-    sourceNote: validation.lesson.sourceNote ?? sourceNote,
+    sourceNote: hskSourceNoteJson ?? sourceNote,
+    hskSourceNoteJson,
     mediaStatus: validation.lesson.mediaStatus,
     packageVersion: validation.manifest?.packageVersion,
     lessonType,

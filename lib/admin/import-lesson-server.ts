@@ -36,6 +36,10 @@ export async function importDraftLessonOnServer(
     packageLessonId,
     vocabularyCount: body.importPayload.vocabulary.length,
     quizCount: body.importPayload.quizQuestions.length,
+    sourceNoteIsJson: Boolean(
+      body.hskSourceNoteJson?.trim().startsWith("{") ||
+        body.sourceNote?.trim().startsWith("{")
+    ),
   });
 
   const shell = await upsertDraftLessonFromPackage(client, body);

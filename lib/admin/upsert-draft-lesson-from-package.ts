@@ -3,6 +3,7 @@ import type { ImportDraftApiBody } from "@/lib/admin/build-import-draft-request"
 import { inferLanguageTagFromCourseId } from "@/lib/language-track";
 import { canonicalLessonId } from "@/lib/lesson-id";
 import {
+  isJsonSourceNote,
   mergeJsonSourceNoteFields,
   parseLessonSourceNote,
 } from "@/lib/lesson/source-note-json";
@@ -46,6 +47,58 @@ function isInvalidIdTypeError(message: string): boolean {
         lower.includes("numeric") ||
         lower.includes("number")))
   );
+}
+
+function resolveStoredSourceNote(body: ImportDraftApiBody): {
+  sourceNote: string;
+  error?: string;
+} {
+  const jsonCandidate =
+    body.hskSourceNoteJson?.trim() ||
+    (body.sourceNote?.trim() && isJsonSourceNote(body.sourceNote)
+      ? body.sourceNote.trim()
+      : "");
+
+  if (body.importTrack === "chinese") {
+    if (!jsonCandidate || !isJsonSourceNote(jsonCandidate)) {
+      return {
+        sourceNote: "",
+        error:
+          "Chinese HSK import requires JSON source_note with hskStudyContent. Re-parse the ZIP and import again.",
+      };
+    }
+
+    if (body.lessonType === "prelesson") {
+      return {
+        sourceNote: mergeJsonSourceNoteFields(jsonCandidate, {
+          lessonType: "prelesson",
+        }),
+      };
+    }
+
+    return { sourceNote: jsonCandidate };
+  }
+
+  const sourceNoteBase =
+    body.sourceNote ?? `ZIP package import (${body.packageVersion ?? "1.0"})`;
+
+  if (isJsonSourceNote(sourceNoteBase)) {
+    if (body.lessonType === "prelesson") {
+      return {
+        sourceNote: mergeJsonSourceNoteFields(sourceNoteBase, {
+          lessonType: "prelesson",
+        }),
+      };
+    }
+    return { sourceNote: sourceNoteBase };
+  }
+
+  const sourceNote =
+    body.lessonType === "prelesson"
+      ? `${sourceNoteBase} · lessonType=prelesson`
+      : sourceNoteBase;
+
+  return { sourceNote };
 }
 
 function appendPackageLessonIdToSourceNote(
@@ -298,12 +351,17 @@ export async function upsertDraftLessonFromPackage(
   }
 
   const existing = await fetchLessonRowById(client, packageLessonId);
-  const sourceNoteBase =
-    body.sourceNote ?? `ZIP package import (${body.packageVersion ?? "1.0"})`;
-  const sourceNote =
-    body.lessonType === "prelesson"
-      ? `${sourceNoteBase} · lessonType=prelesson`
-      : sourceNoteBase;
+  const resolvedSourceNote = resolveStoredSourceNote(body);
+  if (resolvedSourceNote.error) {
+    return {
+      ok: false,
+      resolvedLessonId: packageLessonId,
+      packageLessonId,
+      created: false,
+      error: resolvedSourceNote.error,
+      warnings,
+    };
+  }
 
   const language = body.language || inferLanguageTagFromCourseId(courseId);
   const mediaStatus =
@@ -322,7 +380,7 @@ export async function upsertDraftLessonFromPackage(
     order_index: existing
       ? (body.orderIndex ?? existing.row.order_index ?? 1)
       : await resolveOrderIndex(client, courseId, body.orderIndex),
-    source_note: sourceNote,
+    source_note: resolvedSourceNote.sourceNote,
     media_status: mediaStatus,
     language,
     target_language: body.targetLanguage ?? null,

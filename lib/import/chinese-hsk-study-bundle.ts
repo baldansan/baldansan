@@ -245,9 +245,6 @@ export function buildChineseHskSourceNoteJson(
   existingNote?: string | null
 ): string {
   const hskStudyContent = {
-    courseType: manifest.courseType,
-    hskLevel: manifest.hskLevel,
-    lessonProfile: manifest.lessonProfile,
     studySections: bundle.studySections,
     objectives: bundle.objectives,
     pronunciation: bundle.pronunciation,

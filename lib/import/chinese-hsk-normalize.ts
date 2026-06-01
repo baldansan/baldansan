@@ -3,10 +3,7 @@ import {
   isKnownHskProfile,
   type HskLessonProfileId,
 } from "@/lib/import/chinese-hsk-profiles";
-import {
-  buildChineseHskSourceNoteJson,
-  buildHskStudyContentBundle,
-} from "@/lib/import/chinese-hsk-study-bundle";
+import { buildChineseHskImportSourceNote } from "@/lib/import/chinese-hsk-source-note";
 
 const SOURCE_NOTE_SEP = " · ";
 
@@ -354,6 +351,7 @@ export function mergeHskProfileIntoSourceNote(
     audioManifest?: unknown;
     studyContent?: unknown;
     rawFiles?: ChineseHskRawFiles;
+    lessonType?: string | null;
   }
 ): string {
   const rawFiles: ChineseHskRawFiles = options?.rawFiles ?? {
@@ -370,20 +368,10 @@ export function mergeHskProfileIntoSourceNote(
     studyContent: options?.studyContent ?? meta.studyContentPayload,
   };
 
-  const bundle = buildHskStudyContentBundle(rawFiles, manifest, meta);
-  let note = buildChineseHskSourceNoteJson(manifest, bundle, sourceNote);
-
-  if (options?.audioManifest) {
-    try {
-      const parsed = JSON.parse(note) as Record<string, unknown>;
-      parsed.hskAudioManifest = options.audioManifest;
-      note = JSON.stringify(parsed);
-    } catch {
-      // keep note as-is if parse fails
-    }
-  }
-
-  return note;
+  return buildChineseHskImportSourceNote(manifest, meta, rawFiles, sourceNote, {
+    audioManifest: options?.audioManifest,
+    lessonType: options?.lessonType ?? manifest.lessonProfile,
+  });
 }
 
 const HSK_LESSON_META_KEYS = new Set([

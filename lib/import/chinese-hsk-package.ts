@@ -15,6 +15,7 @@ import {
   type LessonZipValidation,
 } from "@/lib/import/lesson-zip-import";
 import { normalizeZipPath } from "@/lib/import/zip-path";
+import { readJsonFromZip, readJsonFromZipFirst } from "@/lib/import/zip-json-read";
 import { validateLessonImportPayload } from "@/lib/supabase/admin-import";
 import { profileBadgeLabel } from "@/lib/import/chinese-hsk-profiles";
 import {
@@ -31,29 +32,21 @@ import {
 } from "@/lib/import/chinese-hsk-normalize";
 import { validateChineseHskPackage } from "@/lib/import/chinese-hsk-validate";
 import type { HskImportPreview } from "@/lib/import/chinese-hsk-types";
+import { isJsonSourceNote } from "@/lib/lesson/source-note-json";
 
 async function readJsonFile(
   zip: JSZip,
   path: string
 ): Promise<{ data: unknown | null; error: string | null }> {
-  const normalized = normalizeZipPath(path);
-  const file =
-    zip.file(normalized) ??
-    zip.file(normalized.toLowerCase()) ??
-    Object.entries(zip.files).find(
-      ([name]) => normalizeZipPath(name).toLowerCase() === normalized.toLowerCase()
-    )?.[1];
+  const result = await readJsonFromZip(zip, path);
+  return { data: result.data, error: result.error };
+}
 
-  if (!file || file.dir) {
-    return { data: null, error: null };
-  }
-
-  try {
-    const text = await file.async("string");
-    return { data: JSON.parse(text) as unknown, error: null };
-  } catch {
-    return { data: null, error: `${path} is not valid JSON.` };
-  }
+async function readJsonFileFirst(
+  zip: JSZip,
+  paths: string[]
+): Promise<{ data: unknown | null; error: string | null; path?: string }> {
+  return readJsonFromZipFirst(zip, paths);
 }
 
 function zipHasFile(zip: JSZip, path: string): boolean {
@@ -98,22 +91,6 @@ function parseVocabularyArray(
   return rows;
 }
 
-async function readJsonFileFirst(
-  zip: JSZip,
-  paths: string[]
-): Promise<{ data: unknown | null; error: string | null; path?: string }> {
-  for (const path of paths) {
-    const result = await readJsonFile(zip, path);
-    if (result.data) {
-      return { ...result, path };
-    }
-    if (result.error) {
-      return result;
-    }
-  }
-  return { data: null, error: null };
-}
-
 function buildHskImportPreview(
   pkg: LessonZipPackage,
   manifest: ChineseHskManifest,
@@ -148,6 +125,7 @@ function buildHskImportPreview(
     hasPronunciationContent: studySummary?.hasPronunciationContent ?? false,
     hasToneContent: studySummary?.hasToneContent ?? false,
     hasTeacherNotes: studySummary?.hasTeacherNotes ?? false,
+    storesJsonSourceNote: isJsonSourceNote(pkg.lesson?.sourceNote),
     answerStatus:
       (manifest.verification?.answerStatus as string | undefined) ?? null,
     textStatus: (manifest.verification?.textStatus as string | undefined) ?? null,
@@ -232,6 +210,10 @@ export async function parseChineseHskLessonZip(file: File): Promise<LessonZipVal
       studyContent: studyContentResult.data,
     };
 
+    if (studyContentResult.path) {
+      warnings.push(`Loaded study content from ${studyContentResult.path}.`);
+    }
+
     if (studyContentResult.error) {
       errors.push(studyContentResult.error);
     }
@@ -308,7 +290,7 @@ export async function parseChineseHskLessonZip(file: File): Promise<LessonZipVal
 
     if (lesson && hskManifest && hskValidation.meta) {
       lesson.sourceNote = mergeHskProfileIntoSourceNote(
-        lesson.sourceNote,
+        undefined,
         hskManifest,
         hskValidation.meta,
         {
@@ -316,10 +298,17 @@ export async function parseChineseHskLessonZip(file: File): Promise<LessonZipVal
           audioManifest: rawFiles.audioManifest,
           studyContent: rawFiles.studyContent,
           rawFiles,
+          lessonType: hskManifest.lessonProfile,
         }
       );
       lesson.courseId = hskManifest.courseId;
       lesson.status = "draft";
+
+      if (!isJsonSourceNote(lesson.sourceNote)) {
+        errors.push(
+          "Failed to build JSON source_note for HSK study content — re-parse the ZIP and try again."
+        );
+      }
     }
 
     const pkg: LessonZipPackage & { hskMeta?: typeof hskValidation.meta } = {
