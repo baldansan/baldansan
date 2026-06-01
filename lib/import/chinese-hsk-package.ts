@@ -192,6 +192,7 @@ export async function parseChineseHskLessonZip(file: File): Promise<LessonZipVal
       quiz: (await readJsonFile(zip, "quiz.json")).data,
       audioManifest: (await readJsonFile(zip, "audio-manifest.json")).data,
       subtitles: (await readJsonFile(zip, "subtitles.json")).data,
+      studyContent: (await readJsonFile(zip, "study-content.json")).data,
     };
 
     if (!rawFiles.lesson) {
@@ -272,6 +273,7 @@ export async function parseChineseHskLessonZip(file: File): Promise<LessonZipVal
         {
           lessonJson: rawFiles.lesson,
           audioManifest: rawFiles.audioManifest,
+          studyContent: rawFiles.studyContent,
         }
       );
       lesson.courseId = hskManifest.courseId;

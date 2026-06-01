@@ -1,6 +1,7 @@
-import { notFound } from "next/navigation";
 import { LessonUnavailable } from "@/components/lesson-unavailable";
-import { resolveLessonPageAccess, resolvePreviewFromPageSearchParams } from "@/lib/lesson-public-access";
+import { LessonPageError } from "@/components/lesson/lesson-page-error";
+import { loadLessonWatchPage } from "@/lib/lesson/lesson-watch-loader";
+import { resolvePreviewFromPageSearchParams } from "@/lib/lesson-public-access";
 import { LessonWatchClient } from "./watch-client";
 
 type PageProps = {
@@ -9,6 +10,7 @@ type PageProps = {
 };
 
 export const dynamic = "force-dynamic";
+export const revalidate = 0;
 
 export default async function LessonWatchPage({
   params,
@@ -16,25 +18,33 @@ export default async function LessonWatchPage({
 }: PageProps) {
   const { lessonId } = await params;
   const preview = await resolvePreviewFromPageSearchParams(searchParams);
-  const access = await resolveLessonPageAccess(lessonId, { preview });
+  const result = await loadLessonWatchPage(lessonId, { preview });
 
-  if (access.kind === "not_found") {
-    notFound();
+  if (result.kind === "error") {
+    return (
+      <LessonPageError
+        failureKind={result.failureKind}
+        debug={result.debug}
+        retryHref={`/lessons/${lessonId}/watch${
+          preview ? `?preview=${encodeURIComponent(String(preview))}` : ""
+        }`}
+      />
+    );
   }
 
-  if (access.kind === "unavailable") {
+  if (result.kind === "unavailable") {
     return (
       <LessonUnavailable
         lessonId={lessonId}
-        courseId={access.lesson.courseId}
-        showAdminLink={access.showAdminLink}
-        showAdminPreviewLink={access.showAdminPreviewLink}
-        accessDenied={access.accessDenied}
+        courseId={result.lesson.courseId}
+        showAdminLink={result.showAdminLink}
+        showAdminPreviewLink={result.showAdminPreviewLink}
+        accessDenied={result.accessDenied}
       />
     );
   }
 
   return (
-    <LessonWatchClient lesson={access.lesson} adminPreview={access.adminPreview} />
+    <LessonWatchClient lesson={result.lesson} adminPreview={result.adminPreview} />
   );
 }

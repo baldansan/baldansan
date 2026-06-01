@@ -30,7 +30,15 @@ function shouldBypass(url) {
   if (url.pathname.startsWith("/api")) return true;
   if (url.hostname.includes("supabase")) return true;
   if (url.pathname.includes("_next/webpack-hmr")) return true;
+  if (url.hostname === "localhost" || url.hostname === "127.0.0.1") return true;
   return false;
+}
+
+function isLikelyOfflineFetchFailure(error) {
+  return (
+    error instanceof TypeError ||
+    (error && typeof error.message === "string" && /failed to fetch|network/i.test(error.message))
+  );
 }
 
 self.addEventListener("fetch", (event) => {
@@ -42,7 +50,12 @@ self.addEventListener("fetch", (event) => {
 
   if (event.request.mode === "navigate") {
     event.respondWith(
-      fetch(event.request).catch(async () => {
+      fetch(event.request).catch(async (error) => {
+        const browserOffline = typeof navigator !== "undefined" && navigator.onLine === false;
+        if (!browserOffline || !isLikelyOfflineFetchFailure(error)) {
+          return Response.error();
+        }
+
         const cached = await caches.match(OFFLINE_URL);
         return cached ?? Response.error();
       })

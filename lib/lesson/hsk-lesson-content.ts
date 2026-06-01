@@ -1,5 +1,22 @@
 import { parseTagFromSourceNote } from "@/lib/lesson-content-type";
 import { parseSourceNoteSegment } from "@/lib/lesson/hsk-source-note";
+import {
+  HSK_CHARACTER_ALIASES,
+  HSK_DIALOGUE_ALIASES,
+  HSK_SENTENCE_ALIASES,
+  HSK_STUDY_GUIDE_ALIASES,
+} from "@/lib/lesson/hsk-study-section-aliases";
+import {
+  collectHskTextBlocks,
+  resolveHskObjectives,
+  resolveHskPinyinSection,
+  resolveHskRawSection,
+  resolveHskTeacherNotes,
+  resolveHskTextSection,
+  resolveHskToneRaw,
+  type HskStudyPayloadPool,
+  type HskStudySectionDebugMap,
+} from "@/lib/lesson/hsk-study-section-resolver";
 import type { LessonContent } from "@/types/lesson-content";
 import type { VocabularyWord } from "@/types/lesson";
 
@@ -42,6 +59,8 @@ export type HskStudyContent = {
   characterNotes: HskCharacterNote[];
   studyGuideSteps: string[];
   teacherNotes: string[];
+  /** Dev-only section resolution metadata (when NODE_ENV=development). */
+  sectionDebug?: HskStudySectionDebugMap;
 };
 
 const HSK1_PROFILE = "hsk1-pronunciation-character-basic";
@@ -62,49 +81,6 @@ function parseJsonSegment(sourceNote: string | undefined | null, key: string): u
   } catch {
     return null;
   }
-}
-
-function pickText(value: unknown): string {
-  if (typeof value === "string") return value.trim();
-  if (!isRecord(value)) return "";
-  return (
-    trim(value.mongolian) ||
-    trim(value.mn) ||
-    trim(value.text) ||
-    trim(value.description) ||
-    trim(value.content) ||
-    trim(value.summary) ||
-    ""
-  );
-}
-
-function collectTextBlocks(value: unknown, out: string[] = []): string[] {
-  if (typeof value === "string") {
-    const text = value.trim();
-    if (text) out.push(text);
-    return out;
-  }
-  if (Array.isArray(value)) {
-    for (const item of value) collectTextBlocks(item, out);
-    return out;
-  }
-  if (isRecord(value)) {
-    const direct = pickText(value);
-    if (direct) out.push(direct);
-    for (const key of [
-      "objectives",
-      "items",
-      "points",
-      "bullets",
-      "notes",
-      "paragraphs",
-      "lines",
-      "examples",
-    ]) {
-      if (key in value) collectTextBlocks(value[key], out);
-    }
-  }
-  return out;
 }
 
 function uniqueStrings(values: string[]): string[] {
@@ -129,15 +105,16 @@ function parseToneExamples(value: unknown): HskToneExample[] {
       trim(item.label) ||
       trim(item.name) ||
       trim(item.tone) ||
+      trim(item.title) ||
       `${index + 1}-р өнгө`;
     const example =
       trim(item.example) || trim(item.word) || trim(item.chinese) || "";
-    const pinyin =
-      trim(item.pinyin) || trim(item.reading) || example;
+    const pinyin = trim(item.pinyin) || trim(item.reading) || example;
     const mongolian =
       trim(item.mongolian) ||
       trim(item.mn) ||
       trim(item.description) ||
+      trim(item.explanation) ||
       "";
     if (!example && !pinyin && !mongolian) return;
     rows.push({
@@ -166,6 +143,7 @@ function parseToneExamples(value: unknown): HskToneExample[] {
   if (isRecord(value)) {
     if (Array.isArray(value.tones)) return parseToneExamples(value.tones);
     if (Array.isArray(value.items)) return parseToneExamples(value.items);
+    if (Array.isArray(value.examples)) return parseToneExamples(value.examples);
     for (const [key, item] of Object.entries(value)) {
       if (isRecord(item)) {
         pushRow({ ...item, label: item.label ?? key }, rows.length);
@@ -180,6 +158,14 @@ function parseToneExamples(value: unknown): HskToneExample[] {
     }
   }
 
+  return rows;
+}
+
+function parseToneExamplesFromRawItems(rawItems: unknown[]): HskToneExample[] {
+  const rows: HskToneExample[] = [];
+  for (const item of rawItems) {
+    rows.push(...parseToneExamples(item));
+  }
   return rows;
 }
 
@@ -217,7 +203,7 @@ function parseDialogues(textsPayload: unknown, lessonPayload: unknown): HskDialo
     if (!isRecord(value)) return;
     if (Array.isArray(value.lines)) {
       dialogues.push({
-        title: title || pickText(value.title) || undefined,
+        title: title || trim(value.title) || undefined,
         lines: parseDialogueLines(value.lines),
       });
       return;
@@ -233,7 +219,7 @@ function parseDialogues(textsPayload: unknown, lessonPayload: unknown): HskDialo
     if (Array.isArray(textsPayload.dialogues)) {
       for (const item of textsPayload.dialogues) {
         if (isRecord(item)) {
-          pushDialogue(item.lines ?? item, pickText(item.title));
+          pushDialogue(item.lines ?? item, trim(item.title));
         } else {
           pushDialogue(item);
         }
@@ -284,8 +270,8 @@ function parseSentenceExplanationsFromBasicSentences(value: unknown): string[] {
   return rows;
 }
 
-function parseCharacterNotes(
-  lessonPayload: unknown,
+function parseCharacterNotesFromRaw(
+  rawItems: unknown[],
   vocabulary: VocabularyWord[]
 ): HskCharacterNote[] {
   const notes: HskCharacterNote[] = [];
@@ -307,15 +293,14 @@ function parseCharacterNotes(
     });
   };
 
-  if (isRecord(lessonPayload) && lessonPayload.characters) {
-    const chars = lessonPayload.characters;
-    if (Array.isArray(chars)) {
-      for (const item of chars) {
-        if (isRecord(item)) pushChar(item);
-      }
-    } else if (isRecord(chars) && Array.isArray(chars.items)) {
-      for (const item of chars.items) {
-        if (isRecord(item)) pushChar(item);
+  for (const item of rawItems) {
+    if (isRecord(item)) {
+      pushChar(item);
+      continue;
+    }
+    if (Array.isArray(item)) {
+      for (const row of item) {
+        if (isRecord(row)) pushChar(row);
       }
     }
   }
@@ -340,6 +325,28 @@ function parseCharacterNotes(
   return notes;
 }
 
+function buildPayloadPool(sourceNote: string | undefined | null): HskStudyPayloadPool {
+  const lessonPayload = parseJsonSegment(sourceNote, "hskLesson");
+  const explicitStudyContent = parseJsonSegment(sourceNote, "hskStudyContent");
+
+  let studyContent = explicitStudyContent;
+  if (!studyContent && isRecord(lessonPayload)) {
+    studyContent =
+      lessonPayload.studyContent ??
+      lessonPayload["study-content"] ??
+      null;
+  }
+
+  return {
+    studyContent,
+    lessonPayload,
+    textsPayload: parseJsonSegment(sourceNote, "hskTexts"),
+    grammarPayload: parseJsonSegment(sourceNote, "hskGrammar"),
+    notesPayload: parseJsonSegment(sourceNote, "hskNotes"),
+    workbookPayload: parseJsonSegment(sourceNote, "hskWorkbook"),
+  };
+}
+
 export function isHsk1FoundationLesson(
   lesson: Pick<LessonContent, "courseId" | "sourceNote" | "lessonType">
 ): boolean {
@@ -353,7 +360,6 @@ export function isHsk1FoundationLesson(
   return level === "1" && course.includes("hsk");
 }
 
-/** True when the lesson should render the structured HSK study layout. */
 export function isHskStructuredLesson(
   lesson: Pick<LessonContent, "courseId" | "sourceNote" | "lessonType">
 ): boolean {
@@ -375,83 +381,111 @@ export function parseHskStudyContentFromLesson(
   const levelRaw = parseTagFromSourceNote(lesson.sourceNote, "hskLevel");
   const hskLevel = levelRaw ? Number(levelRaw) : null;
 
-  const lessonPayload = parseJsonSegment(lesson.sourceNote, "hskLesson");
-  const textsPayload = parseJsonSegment(lesson.sourceNote, "hskTexts");
-  const grammarPayload = parseJsonSegment(lesson.sourceNote, "hskGrammar");
-  const notesPayload = parseJsonSegment(lesson.sourceNote, "hskNotes");
-  const workbookPayload = parseJsonSegment(lesson.sourceNote, "hskWorkbook");
+  const pool = buildPayloadPool(lesson.sourceNote);
 
+  const objectivesResolved = resolveHskObjectives(pool);
   const objectives = uniqueStrings([
-    ...collectTextBlocks(
-      isRecord(lessonPayload) ? lessonPayload.lessonIntro : null
-    ),
-    ...collectTextBlocks(
-      isRecord(lessonPayload) ? lessonPayload.objectives : null
-    ),
+    ...objectivesResolved.value,
     ...(lesson.description?.trim() ? [lesson.description.trim()] : []),
     ...(lesson.subtitle?.trim() ? [lesson.subtitle.trim()] : []),
   ]);
 
-  const pinyinIntro = uniqueStrings([
-    ...collectTextBlocks(
-      isRecord(lessonPayload) ? lessonPayload.pinyinPronunciation : null
-    ),
-    ...collectTextBlocks(
-      isRecord(textsPayload) ? textsPayload.pinyinPronunciation : null
-    ),
-  ]);
+  const pinyinResolved = resolveHskPinyinSection(pool);
+  const pinyinAll = pinyinResolved.value;
+  const pinyinIntro = pinyinAll;
+  const pronunciationNotes: string[] = [];
 
-  const pronunciationNotes = uniqueStrings(
-    collectTextBlocks(
-      isRecord(lessonPayload) ? lessonPayload.pronunciationNotes : null
-    )
+  const toneRaw = resolveHskToneRaw(pool);
+  const tones = parseToneExamplesFromRawItems(toneRaw.value);
+
+  const dialogueRaw = resolveHskRawSection(pool, HSK_DIALOGUE_ALIASES, "dialogues");
+  let dialogues = parseDialogues(pool.textsPayload, pool.lessonPayload);
+  if (dialogues.length === 0 && dialogueRaw.count > 0) {
+    dialogues = parseDialogues({ dialogues: dialogueRaw.value }, null);
+  }
+
+  const sentenceResolved = resolveHskTextSection(
+    pool,
+    HSK_SENTENCE_ALIASES,
+    "sentenceExplanations"
   );
-
-  let tones = parseToneExamples(
-    isRecord(lessonPayload) ? lessonPayload.tones : null
-  );
-
-  const dialogues = parseDialogues(textsPayload, lessonPayload);
-
   const sentenceExplanations = uniqueStrings([
+    ...sentenceResolved.value,
     ...parseSentenceExplanationsFromBasicSentences(
-      isRecord(lessonPayload) ? lessonPayload.basicSentences : null
+      isRecord(pool.lessonPayload) ? pool.lessonPayload.basicSentences : null
     ),
     ...parseSentenceExplanationsFromBasicSentences(
-      isRecord(textsPayload) ? textsPayload.basicSentences : null
+      isRecord(pool.textsPayload) ? pool.textsPayload.basicSentences : null
     ),
-    ...collectTextBlocks(
-      isRecord(grammarPayload) ? grammarPayload.grammarPatterns : null
+    ...collectHskTextBlocks(
+      isRecord(pool.grammarPayload) ? pool.grammarPayload.grammarPatterns : null
     ),
-    ...collectTextBlocks(
-      isRecord(grammarPayload) ? grammarPayload.sentencePatterns : null
+    ...collectHskTextBlocks(
+      isRecord(pool.grammarPayload) ? pool.grammarPayload.sentencePatterns : null
     ),
-    ...collectTextBlocks(
-      isRecord(grammarPayload) ? grammarPayload.explanations : null
-    ),
-    ...collectTextBlocks(isRecord(grammarPayload) ? grammarPayload : null),
-  ]);
-
-  const characterNotes = parseCharacterNotes(lessonPayload, lesson.vocabulary);
-
-  const studyGuideSteps = uniqueStrings([
-    ...collectTextBlocks(
-      isRecord(workbookPayload) ? workbookPayload.studyGuide : null
-    ),
-    ...collectTextBlocks(
-      isRecord(lessonPayload) ? lessonPayload.studyGuide : null
-    ),
-    ...collectTextBlocks(
-      isRecord(workbookPayload) ? workbookPayload.practiceGuide : null
+    ...collectHskTextBlocks(
+      isRecord(pool.grammarPayload) ? pool.grammarPayload.explanations : null
     ),
   ]);
 
-  const teacherNotes = uniqueStrings([
-    ...collectTextBlocks(isRecord(notesPayload) ? notesPayload.teacherNotes : null),
-    ...collectTextBlocks(isRecord(notesPayload) ? notesPayload.teachersBook : null),
-    ...collectTextBlocks(isRecord(notesPayload) ? notesPayload.notes : null),
-    ...collectTextBlocks(isRecord(notesPayload) ? notesPayload : null),
-  ]);
+  const characterRaw = resolveHskRawSection(pool, HSK_CHARACTER_ALIASES, "characters");
+  const characterNotes = parseCharacterNotesFromRaw(
+    characterRaw.value,
+    lesson.vocabulary
+  );
+
+  const studyGuideResolved = resolveHskTextSection(
+    pool,
+    HSK_STUDY_GUIDE_ALIASES,
+    "studyGuide"
+  );
+  const studyGuideSteps = uniqueStrings(studyGuideResolved.value);
+
+  const teacherResolved = resolveHskTeacherNotes(pool);
+  const teacherNotes = teacherResolved.value;
+
+  const sectionDebug: HskStudySectionDebugMap = {
+    objectives: {
+      value: objectives,
+      source: objectivesResolved.source,
+      count: objectives.length,
+    },
+    pinyin: {
+      value: pinyinAll,
+      source: pinyinResolved.source,
+      count: pinyinAll.length,
+    },
+    tones: {
+      value: toneRaw.value,
+      source: toneRaw.source,
+      count: tones.length,
+    },
+    dialogues: {
+      value: dialogueRaw.value,
+      source: dialogueRaw.count > 0 ? dialogueRaw.source : "hskTexts.dialogues",
+      count: dialogues.length,
+    },
+    sentenceExplanations: {
+      value: sentenceExplanations,
+      source: sentenceResolved.source,
+      count: sentenceExplanations.length,
+    },
+    characterNotes: {
+      value: characterRaw.value,
+      source: characterRaw.source,
+      count: characterNotes.length,
+    },
+    studyGuideSteps: {
+      value: studyGuideSteps,
+      source: studyGuideResolved.source,
+      count: studyGuideSteps.length,
+    },
+    teacherNotes: {
+      value: teacherNotes,
+      source: teacherResolved.source,
+      count: teacherNotes.length,
+    },
+  };
 
   return {
     profileId,
@@ -465,6 +499,7 @@ export function parseHskStudyContentFromLesson(
     characterNotes,
     studyGuideSteps,
     teacherNotes,
+    ...(process.env.NODE_ENV === "development" ? { sectionDebug } : {}),
   };
 }
 
