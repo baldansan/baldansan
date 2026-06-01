@@ -200,6 +200,30 @@ export function ZipImportSummary({ preview, validation, track = "legacy" }: Prop
             value={hskPreview.workbookWritingCount}
           />
         ) : null}
+        {hskPreview?.studySectionCount != null ? (
+          <SummaryField
+            label="Study sections"
+            value={hskPreview.studySectionCount}
+          />
+        ) : null}
+        {hskPreview ? (
+          <SummaryField
+            label="Pronunciation content"
+            value={hskPreview.hasPronunciationContent ? "yes" : "no"}
+          />
+        ) : null}
+        {hskPreview ? (
+          <SummaryField
+            label="Tone content"
+            value={hskPreview.hasToneContent ? "yes" : "no"}
+          />
+        ) : null}
+        {hskPreview ? (
+          <SummaryField
+            label="Teacher notes"
+            value={hskPreview.hasTeacherNotes ? "yes" : "no"}
+          />
+        ) : null}
         <SummaryField label="Quiz count" value={preview.quizCount} />
         <SummaryField label="Audio count" value={preview.audioFileCount} />
         <SummaryField label="Image count" value={preview.imageFileCount} />

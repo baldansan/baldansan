@@ -18,6 +18,10 @@ import { normalizeZipPath } from "@/lib/import/zip-path";
 import { validateLessonImportPayload } from "@/lib/supabase/admin-import";
 import { profileBadgeLabel } from "@/lib/import/chinese-hsk-profiles";
 import {
+  buildHskStudyContentBundle,
+  summarizeHskStudyContentBundle,
+} from "@/lib/import/chinese-hsk-study-bundle";
+import {
   isChineseHskManifestRaw,
   mergeHskProfileIntoSourceNote,
   normalizeChineseHskManifest,
@@ -94,16 +98,39 @@ function parseVocabularyArray(
   return rows;
 }
 
+async function readJsonFileFirst(
+  zip: JSZip,
+  paths: string[]
+): Promise<{ data: unknown | null; error: string | null; path?: string }> {
+  for (const path of paths) {
+    const result = await readJsonFile(zip, path);
+    if (result.data) {
+      return { ...result, path };
+    }
+    if (result.error) {
+      return result;
+    }
+  }
+  return { data: null, error: null };
+}
+
 function buildHskImportPreview(
   pkg: LessonZipPackage,
   manifest: ChineseHskManifest,
-  hskValidation: ReturnType<typeof validateChineseHskPackage>
+  hskValidation: ReturnType<typeof validateChineseHskPackage>,
+  rawFiles: ChineseHskRawFiles
 ): HskImportPreview | null {
   const base = buildLessonImportPreview(pkg);
   if (!base) return null;
 
   const profile = manifest.lessonProfile;
   const meta = hskValidation.meta;
+
+  const studySummary = meta
+    ? summarizeHskStudyContentBundle(
+        buildHskStudyContentBundle(rawFiles, manifest, meta)
+      )
+    : null;
 
   return {
     ...base,
@@ -117,6 +144,10 @@ function buildHskImportPreview(
     workbookReadingCount: meta?.workbookReadingCount ?? 0,
     workbookWritingCount: meta?.workbookWritingCount ?? 0,
     workbookExerciseCount: meta?.workbookExerciseCount ?? 0,
+    studySectionCount: studySummary?.studySectionCount ?? 0,
+    hasPronunciationContent: studySummary?.hasPronunciationContent ?? false,
+    hasToneContent: studySummary?.hasToneContent ?? false,
+    hasTeacherNotes: studySummary?.hasTeacherNotes ?? false,
     answerStatus:
       (manifest.verification?.answerStatus as string | undefined) ?? null,
     textStatus: (manifest.verification?.textStatus as string | undefined) ?? null,
@@ -181,6 +212,12 @@ export async function parseChineseHskLessonZip(file: File): Promise<LessonZipVal
       errors.push("manifest.json: invalid or missing hskLevel / courseId.");
     }
 
+    const studyContentResult = await readJsonFileFirst(zip, [
+      "study-content.json",
+      "study_content.json",
+      "studyContent.json",
+    ]);
+
     const rawFiles: ChineseHskRawFiles = {
       manifest: manifestResult.data,
       lesson: (await readJsonFile(zip, "lesson.json")).data,
@@ -192,8 +229,12 @@ export async function parseChineseHskLessonZip(file: File): Promise<LessonZipVal
       quiz: (await readJsonFile(zip, "quiz.json")).data,
       audioManifest: (await readJsonFile(zip, "audio-manifest.json")).data,
       subtitles: (await readJsonFile(zip, "subtitles.json")).data,
-      studyContent: (await readJsonFile(zip, "study-content.json")).data,
+      studyContent: studyContentResult.data,
     };
+
+    if (studyContentResult.error) {
+      errors.push(studyContentResult.error);
+    }
 
     if (!rawFiles.lesson) {
       errors.push("lesson.json is required.");
@@ -274,6 +315,7 @@ export async function parseChineseHskLessonZip(file: File): Promise<LessonZipVal
           lessonJson: rawFiles.lesson,
           audioManifest: rawFiles.audioManifest,
           studyContent: rawFiles.studyContent,
+          rawFiles,
         }
       );
       lesson.courseId = hskManifest.courseId;
@@ -316,7 +358,7 @@ export async function parseChineseHskLessonZip(file: File): Promise<LessonZipVal
     }
 
     const preview = hskManifest
-      ? buildHskImportPreview(pkg, hskManifest, hskValidation)
+      ? buildHskImportPreview(pkg, hskManifest, hskValidation, rawFiles)
       : buildLessonImportPreview(pkg);
 
     const ok =
