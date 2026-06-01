@@ -268,7 +268,11 @@ export async function parseChineseHskLessonZip(file: File): Promise<LessonZipVal
       lesson.sourceNote = mergeHskProfileIntoSourceNote(
         lesson.sourceNote,
         hskManifest,
-        hskValidation.meta
+        hskValidation.meta,
+        {
+          lessonJson: rawFiles.lesson,
+          audioManifest: rawFiles.audioManifest,
+        }
       );
       lesson.courseId = hskManifest.courseId;
       lesson.status = "draft";

@@ -1,6 +1,7 @@
 import type { LessonPackageType } from "@/lib/admin/lesson-package-type";
 import type { LessonContentType } from "@/lib/lesson-content-type";
 import type { TeachingImage } from "@/lib/lesson/teaching-media";
+import type { HskStudyContent } from "@/lib/lesson/hsk-lesson-content";
 import type {
   QuizQuestion,
   SubtitleExample,
@@ -79,6 +80,8 @@ export type LessonContent = {
   vocabularyAudioMap?: Record<string, string>;
   /** Per-vocab Mongolian pronunciation hints from source_note `vocabPronMn`. */
   vocabularyPronunciationMap?: Record<string, string>;
+  /** Parsed HSK textbook sections from source_note (Chinese HSK import). */
+  hskStudy?: HskStudyContent;
 };
 
 export type CourseContent = {

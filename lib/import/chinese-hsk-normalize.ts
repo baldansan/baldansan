@@ -328,7 +328,11 @@ export function buildChineseHskPackageMeta(
 export function mergeHskProfileIntoSourceNote(
   sourceNote: string | undefined | null,
   manifest: ChineseHskManifest,
-  meta: ChineseHskPackageMeta
+  meta: ChineseHskPackageMeta,
+  options?: {
+    lessonJson?: unknown;
+    audioManifest?: unknown;
+  }
 ): string {
   let note = sourceNote?.trim() ?? "";
 
@@ -375,8 +379,66 @@ export function mergeHskProfileIntoSourceNote(
       JSON.stringify(meta.workbookPayload)
     );
   }
+  if (meta.grammarPayload) {
+    note = appendSourceNoteSegment(
+      note,
+      "hskGrammar",
+      JSON.stringify(meta.grammarPayload)
+    );
+  }
+  if (meta.notesPayload) {
+    note = appendSourceNoteSegment(
+      note,
+      "hskNotes",
+      JSON.stringify(meta.notesPayload)
+    );
+  }
+  if (options?.lessonJson && isRecord(options.lessonJson)) {
+    const teaching = extractHskLessonTeachingPayload(options.lessonJson);
+    if (Object.keys(teaching).length > 0) {
+      note = appendSourceNoteSegment(note, "hskLesson", JSON.stringify(teaching));
+    }
+  }
+  if (options?.audioManifest) {
+    note = appendSourceNoteSegment(
+      note,
+      "hskAudioManifest",
+      JSON.stringify(options.audioManifest)
+    );
+  }
 
   return note;
+}
+
+const HSK_LESSON_META_KEYS = new Set([
+  "title",
+  "mongolianTitle",
+  "chineseTitle",
+  "targetTitle",
+  "subtitle",
+  "description",
+  "duration",
+  "orderIndex",
+  "order_index",
+  "status",
+  "thumbnailFile",
+  "audioFile",
+  "videoFile",
+  "courseId",
+  "lessonId",
+  "language",
+  "mediaStatus",
+]);
+
+function extractHskLessonTeachingPayload(
+  lessonJson: Record<string, unknown>
+): Record<string, unknown> {
+  const out: Record<string, unknown> = {};
+  for (const [key, value] of Object.entries(lessonJson)) {
+    if (HSK_LESSON_META_KEYS.has(key)) continue;
+    if (isNonEmpty(value)) out[key] = value;
+  }
+  return out;
 }
 
 export function normalizeChineseHskVocabularyRow(

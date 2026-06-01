@@ -19,6 +19,8 @@ import { LEARNER_LESSON } from "@/lib/learner-labels";
 import { isDirectAudioUrl } from "@/lib/media-url";
 import { hasAudioUrl } from "@/lib/lesson-media";
 import { KoreanTeachingVisuals } from "@/components/lesson/korean-teaching-visuals";
+import { HskLessonStudyContent } from "@/components/lesson/hsk-lesson-study-content";
+import { isHskStructuredLesson } from "@/lib/lesson/hsk-lesson-content";
 import { inferLessonLanguage } from "@/lib/language-track";
 import type { LessonContent } from "@/types/lesson-content";
 
@@ -54,9 +56,13 @@ export function TextbookLessonWatchClient({
     subpath: "quiz",
   });
   const isKorean = inferLessonLanguage(lesson) === "ko";
+  const showHskStudy = isHskStructuredLesson(lesson);
 
   return (
-    <LearnerPageShell activeTab="home">
+    <LearnerPageShell
+      activeTab="home"
+      mainClassName={showHskStudy ? "pb-44 md:pb-24" : undefined}
+    >
       {adminPreview ? <AdminPreviewBanner /> : null}
 
       <section>
@@ -68,38 +74,58 @@ export function TextbookLessonWatchClient({
         ) : null}
       </section>
 
-      {overview ? (
-        <SectionCard>
-          <h2 className="text-sm font-semibold text-slate-900">Тойм</h2>
-          <p className="mt-2 text-sm leading-6 text-slate-700">{overview}</p>
-        </SectionCard>
-      ) : null}
+      {showHskStudy ? (
+        <>
+          {audioReady && audioUrl && isDirectAudioUrl(audioUrl) ? (
+            <MobileCard>
+              <h2 className="text-sm font-semibold text-[var(--app-text)]">
+                Хичээлийн аудио
+              </h2>
+              <audio controls className="mt-2 w-full" src={audioUrl} />
+            </MobileCard>
+          ) : null}
+          <HskLessonStudyContent
+            lesson={lesson}
+            adminPreview={adminPreview}
+            showBottomCtas
+          />
+        </>
+      ) : (
+        <>
+          {overview ? (
+            <SectionCard>
+              <h2 className="text-sm font-semibold text-slate-900">Тойм</h2>
+              <p className="mt-2 text-sm leading-6 text-slate-700">{overview}</p>
+            </SectionCard>
+          ) : null}
 
-      {audioReady && audioUrl && isDirectAudioUrl(audioUrl) ? (
-        <MobileCard>
-          <h2 className="text-sm font-semibold text-[var(--app-text)]">Audio</h2>
-          <audio controls className="mt-2 w-full" src={audioUrl} />
-        </MobileCard>
-      ) : null}
+          {audioReady && audioUrl && isDirectAudioUrl(audioUrl) ? (
+            <MobileCard>
+              <h2 className="text-sm font-semibold text-[var(--app-text)]">Audio</h2>
+              <audio controls className="mt-2 w-full" src={audioUrl} />
+            </MobileCard>
+          ) : null}
 
-      {isKorean ? (
-        <KoreanTeachingVisuals
-          teachingImages={lesson.teachingImages}
-          showFallbackDiagram
-        />
-      ) : null}
+          {isKorean ? (
+            <KoreanTeachingVisuals
+              teachingImages={lesson.teachingImages}
+              showFallbackDiagram
+            />
+          ) : null}
 
-      <CtaButtonRow>
-        <Link href={vocabHref} className={ctaPrimaryClass}>
-          {LEARNER_LESSON.nextVocabulary}
-        </Link>
-        <Link href={quizHref} className={ctaSecondaryClass}>
-          {LEARNER_LESSON.nextQuiz}
-        </Link>
-        <Link href={detailHref} className={ctaOutlineClass}>
-          {LEARNER_LESSON.backToLesson}
-        </Link>
-      </CtaButtonRow>
+          <CtaButtonRow>
+            <Link href={vocabHref} className={ctaPrimaryClass}>
+              {LEARNER_LESSON.nextVocabulary}
+            </Link>
+            <Link href={quizHref} className={ctaSecondaryClass}>
+              {LEARNER_LESSON.nextQuiz}
+            </Link>
+            <Link href={detailHref} className={ctaOutlineClass}>
+              {LEARNER_LESSON.backToLesson}
+            </Link>
+          </CtaButtonRow>
+        </>
+      )}
 
       <LessonMobileStepBar
         lesson={lesson}
