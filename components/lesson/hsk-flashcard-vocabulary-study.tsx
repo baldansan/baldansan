@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useState, type KeyboardEvent } from "react";
 import { SpeakerButton } from "@/components/tts/speaker-button";
 import {
   ctaOutlineClass,
@@ -159,6 +159,17 @@ export function HskFlashcardVocabularyStudy({
     persist(0, knownKeys, reviewKeys);
   }
 
+  const toggleFlip = useCallback(() => {
+    setFlipped((value) => !value);
+  }, []);
+
+  function handleFlashcardKeyDown(event: KeyboardEvent<HTMLDivElement>) {
+    if (event.key === "Enter" || event.key === " ") {
+      event.preventDefault();
+      toggleFlip();
+    }
+  }
+
   if (total === 0) {
     return (
       <p className="text-sm text-slate-500">
@@ -219,10 +230,14 @@ export function HskFlashcardVocabularyStudy({
         className="mx-auto w-full max-w-md [perspective:1000px]"
         style={{ minHeight: compact ? "240px" : "300px" }}
       >
-        <button
-          type="button"
-          onClick={() => setFlipped((value) => !value)}
-          className={`relative w-full rounded-3xl bg-white shadow-sm ring-1 ring-emerald-100 transition-all duration-500 hover:ring-emerald-200 [transform-style:preserve-3d] ${
+        <div
+          role="button"
+          tabIndex={0}
+          onClick={toggleFlip}
+          onKeyDown={handleFlashcardKeyDown}
+          aria-label={flipped ? "Картын урд тал руу буцах" : "Утга, pinyin харах"}
+          aria-pressed={flipped}
+          className={`relative w-full cursor-pointer rounded-3xl bg-white shadow-sm ring-1 ring-emerald-100 transition-all duration-500 hover:ring-emerald-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-500 [transform-style:preserve-3d] ${
             flipped ? "[transform:rotateY(180deg)]" : ""
           }`}
           style={{ minHeight: compact ? "240px" : "300px" }}
@@ -234,21 +249,16 @@ export function HskFlashcardVocabularyStudy({
           >
             <div className="flex w-full items-start justify-end">
               {current && containsTargetScript(current.chinese) ? (
-                <span
-                  onClick={(event) => event.stopPropagation()}
-                  onKeyDown={(event) => event.stopPropagation()}
-                  role="presentation"
-                >
-                  <SpeakerButton
-                    text={current.chinese}
-                    lang={ttsLang}
-                    courseId={lesson.courseId}
-                    hskLevel={current.hskLevel}
-                    audioUrl={wordAudioUrl}
-                    size="md"
-                    label={`Уншуулах: ${current.chinese}`}
-                  />
-                </span>
+                <SpeakerButton
+                  text={current.chinese}
+                  lang={ttsLang}
+                  courseId={lesson.courseId}
+                  hskLevel={current.hskLevel}
+                  audioUrl={wordAudioUrl}
+                  size="md"
+                  label={`Уншуулах: ${current.chinese}`}
+                  stopPropagation
+                />
               ) : null}
             </div>
             <p className="text-5xl font-bold leading-none text-slate-900 sm:text-6xl">
@@ -291,7 +301,7 @@ export function HskFlashcardVocabularyStudy({
               </div>
             ) : null}
           </div>
-        </button>
+        </div>
       </div>
 
       <div className="grid grid-cols-3 gap-2">
