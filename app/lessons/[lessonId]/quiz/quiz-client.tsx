@@ -31,6 +31,7 @@ import { containsTargetScript } from "@/lib/tts/infer-lang";
 import { resolveKoreanTtsLang } from "@/lib/lesson/teaching-media";
 import { KoreanAnswerPronunciationBlock } from "@/components/lesson/korean-pronunciation-feedback";
 import type { LessonContent } from "@/types/lesson-content";
+import type { QuizQuestion } from "@/types/lesson";
 
 function getResultMessage(percent: number) {
   if (percent >= 90) return "Маш сайн! Дараагийн хичээл рүү орж болно.";
@@ -40,19 +41,33 @@ function getResultMessage(percent: number) {
 
 type Props = {
   lesson: LessonContent;
+  quizQuestions: QuizQuestion[];
+  useDatabaseQuizOptions?: boolean;
   nextLessonId: string | null;
   adminPreview?: boolean;
 };
 
 export function LessonQuizClient({
   lesson,
+  quizQuestions: quizQuestionsProp,
+  useDatabaseQuizOptions = false,
   nextLessonId,
   adminPreview = false,
 }: Props) {
-  const quizQuestions = useMemo(
-    () => enhanceLessonQuizQuestions(lesson.quizQuestions, lesson.vocabulary),
-    [lesson.quizQuestions, lesson.vocabulary]
-  );
+  const quizQuestions = useMemo(() => {
+    if (useDatabaseQuizOptions) {
+      return quizQuestionsProp;
+    }
+    if (isKoreanLesson0BeginnerFlow(lesson)) {
+      return enhanceLessonQuizQuestions(quizQuestionsProp, lesson.vocabulary);
+    }
+    return quizQuestionsProp;
+  }, [
+    quizQuestionsProp,
+    lesson.vocabulary,
+    lesson,
+    useDatabaseQuizOptions,
+  ]);
   const total = quizQuestions.length;
 
   const [currentIndex, setCurrentIndex] = useState(0);

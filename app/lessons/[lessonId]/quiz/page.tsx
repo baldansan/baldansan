@@ -6,6 +6,7 @@ import {
   getPublicLessonsByCourseId,
 } from "@/lib/content";
 import { resolveLessonPageAccess, resolvePreviewFromPageSearchParams } from "@/lib/lesson-public-access";
+import { loadLessonQuizQuestionsForPage } from "@/lib/lesson/quiz-page-loader";
 import { LessonQuizClient } from "./quiz-client";
 
 type PageProps = {
@@ -41,6 +42,8 @@ export default async function LessonQuizPage({
   }
 
   const { lesson, adminPreview } = access;
+  const { questions: quizQuestions, fromDatabase } =
+    await loadLessonQuizQuestionsForPage(lessonId, lesson);
   const courseLessons = adminPreview
     ? await getLessonsByCourseId(lesson.courseId)
     : await getPublicLessonsByCourseId(lesson.courseId);
@@ -49,6 +52,8 @@ export default async function LessonQuizPage({
   return (
     <LessonQuizClient
       lesson={lesson}
+      quizQuestions={quizQuestions}
+      useDatabaseQuizOptions={fromDatabase}
       nextLessonId={nextLessonId}
       adminPreview={adminPreview}
     />

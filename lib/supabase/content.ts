@@ -165,6 +165,48 @@ function parseQuizType(type: string): QuizQuestionType {
   return type === "cloze" ? "cloze" : "multiple_choice";
 }
 
+function mapDbQuizRowsToQuestions(
+  lessonId: string,
+  quiz: DbQuizQuestion[]
+): QuizQuestion[] {
+  const id = canonicalLessonId(lessonId);
+  return quiz.map(
+    (q): QuizQuestion => ({
+      id: `${id}-q${q.order_index}`,
+      dbId: Number(q.id),
+      orderIndex: q.order_index,
+      type: parseQuizType(q.type),
+      question: q.question,
+      options: parseOptions(q.options),
+      correctAnswer: q.correct_answer,
+      explanation: q.explanation ?? "",
+    })
+  );
+}
+
+/** Load quiz rows from public.quiz_questions only (all lesson_id variants). */
+export async function getSupabaseQuizQuestionsByLessonIdWithClient(
+  lessonId: string,
+  client: SupabaseClient
+): Promise<QuizQuestion[]> {
+  const normalizedId = normalizeLessonIdForQuery(lessonId);
+  const quiz = await fetchChildRowsForLesson<DbQuizQuestion>(
+    client,
+    "quiz_questions",
+    "id, lesson_id, type, question, options, correct_answer, explanation, order_index",
+    normalizedId
+  );
+
+  if (quiz.length === 0) {
+    return [];
+  }
+
+  return mapDbQuizRowsToQuestions(
+    canonicalLessonId(quiz[0].lesson_id),
+    quiz
+  );
+}
+
 function mapSubtitleLine(row: DbSubtitleLine) {
   return {
     start: row.start_time,
@@ -245,18 +287,7 @@ function mapFullLesson(
         exampleChinese: word.example_chinese ?? "",
         exampleMongolian: word.example_mongolian ?? "",
       })),
-      quizQuestions: quiz.map(
-        (q): QuizQuestion => ({
-          id: `${row.id}-q${q.order_index}`,
-          dbId: Number(q.id),
-          orderIndex: q.order_index,
-          type: parseQuizType(q.type),
-          question: q.question,
-          options: parseOptions(q.options),
-          correctAnswer: q.correct_answer,
-          explanation: q.explanation ?? "",
-        })
-      ),
+      quizQuestions: mapDbQuizRowsToQuestions(canonicalLessonId(row.id), quiz),
       quizTypes: DEFAULT_QUIZ_TYPES,
     });
 }
