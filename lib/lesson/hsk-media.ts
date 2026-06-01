@@ -23,7 +23,7 @@ export type HskMediaImage = {
   storageStatus?: "uploaded" | "package-reference-only" | "missing";
 };
 
-export type HskMediaImageVariant = "hero" | "wide" | "standard";
+export type HskMediaImageVariant = "hero" | "wide" | "standard" | "illustration";
 
 export type HskMediaBundle = {
   lessonId?: string;

@@ -151,7 +151,7 @@ export function HskGuidedLessonPlayer({
     <MobileAppShell
       activeTab="study"
       showBottomNav={false}
-      mainClassName="max-w-[430px] mx-auto w-full"
+      mainClassName="max-w-[430px] mx-auto w-full font-sans"
     >
       {adminPreview ? <AdminPreviewBanner /> : null}
 
@@ -320,9 +320,6 @@ export function HskGuidedLessonPlayer({
               vocabHref={vocabHref}
               quizHref={quizHref}
               lessonId={lesson.id}
-              media={content.study.media}
-              stepMedia={stepMediaRef(currentStep)}
-              teachingImages={lesson.teachingImages}
             />
           ) : null}
 

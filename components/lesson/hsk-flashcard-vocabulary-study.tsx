@@ -353,6 +353,7 @@ const IMAGE_VARIANT_CLASS: Record<HskMediaImageVariant, string> = {
   hero: "aspect-[3/4] min-h-[220px]",
   wide: "aspect-[16/10] min-h-[160px]",
   standard: "aspect-[4/3] min-h-[180px]",
+  illustration: "aspect-[2/1] max-h-[148px] min-h-[112px]",
 };
 
 type MediaImageProps = {
