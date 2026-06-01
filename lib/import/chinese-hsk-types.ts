@@ -19,6 +19,8 @@ export type HskImportPreview = LessonImportPreview & {
   hasToneContent?: boolean;
   hasTeacherNotes?: boolean;
   mediaImageCount?: number;
+  heroImageFound?: boolean;
+  imageStorageStatus?: "uploaded" | "package-reference-only" | "missing";
   videoRequired?: boolean;
   storesJsonSourceNote?: boolean;
   answerStatus?: string | null;

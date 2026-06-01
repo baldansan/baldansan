@@ -352,9 +352,10 @@ type MediaImageProps = {
   src: string | null;
   alt: string;
   className?: string;
+  packageLabel?: string;
 };
 
-export function HskMediaImage({ src, alt, className }: MediaImageProps) {
+export function HskMediaImage({ src, alt, className, packageLabel }: MediaImageProps) {
   if (src) {
     return (
       <div className={`relative overflow-hidden rounded-2xl bg-emerald-50 ${className ?? ""}`}>
@@ -372,12 +373,15 @@ export function HskMediaImage({ src, alt, className }: MediaImageProps) {
 
   return (
     <div
-      className={`flex items-center justify-center rounded-2xl bg-gradient-to-br from-emerald-50 to-teal-50 ring-1 ring-emerald-100 ${className ?? ""}`}
+      className={`flex flex-col items-center justify-center rounded-2xl bg-gradient-to-br from-emerald-50 to-teal-50 px-4 py-6 text-center ring-1 ring-emerald-100 ${className ?? ""}`}
       style={{ minHeight: "120px" }}
     >
       <span className="text-4xl" aria-hidden>
-        📚
+        🖼️
       </span>
+      {packageLabel ? (
+        <p className="mt-2 text-xs font-medium text-emerald-900">{packageLabel}</p>
+      ) : null}
     </div>
   );
 }

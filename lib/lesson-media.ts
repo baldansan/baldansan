@@ -1,4 +1,5 @@
 import type { LessonContent, LessonMediaStatus } from "@/types/lesson-content";
+import { hasHskPackageImages } from "@/lib/lesson/hsk-package-media";
 
 export const MEDIA_STATUS_VALUES: LessonMediaStatus[] = [
   "missing",
@@ -53,7 +54,11 @@ export function getLessonMediaWarnings(lesson: LessonContent): string[] {
     warnings.push("Media pending");
   }
   if (!hasThumbnailUrl(lesson)) {
-    warnings.push("Thumbnail missing");
+    if (hasHskPackageImages(lesson)) {
+      warnings.push("Package images found (needs storage upload)");
+    } else {
+      warnings.push("Thumbnail missing");
+    }
   }
   if (!hasAudioUrl(lesson)) {
     warnings.push("Audio missing");

@@ -247,6 +247,18 @@ export function ZipImportSummary({ preview, validation, track = "legacy" }: Prop
         ) : null}
         {hskPreview ? (
           <SummaryField
+            label="Hero image found"
+            value={hskPreview.heroImageFound ? "yes" : "no"}
+          />
+        ) : null}
+        {hskPreview?.imageStorageStatus ? (
+          <SummaryField
+            label="Image storage status"
+            value={hskPreview.imageStorageStatus}
+          />
+        ) : null}
+        {hskPreview ? (
+          <SummaryField
             label="Video required"
             value={hskPreview.videoRequired ? "true" : "false"}
           />

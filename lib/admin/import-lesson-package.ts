@@ -4,6 +4,7 @@ import type {
   LessonZipValidation,
 } from "@/lib/import/lesson-zip-import";
 import { normalizeZipPath } from "@/lib/import/zip-path";
+import { normalizeHskPackageImagePath } from "@/lib/lesson/hsk-package-media";
 import type { ImportDraftApiBody } from "@/lib/admin/build-import-draft-request";
 import { upsertDraftLessonFromPackage } from "@/lib/admin/upsert-draft-lesson-from-package";
 import { isCurrentUserAdmin } from "@/lib/supabase/admin";
@@ -150,15 +151,21 @@ function resolveMediaUrl(
   kind: "audio" | "image"
 ): string | undefined {
   if (preferredPath) {
-    const normalized = normalizeZipPath(preferredPath);
-    const match = uploads.find(
-      (item) =>
-        item.kind === kind &&
-        !item.error &&
-        item.publicUrl &&
-        normalizeZipPath(item.zipPath).toLowerCase() === normalized.toLowerCase()
-    );
-    if (match?.publicUrl) return match.publicUrl;
+    const candidates = [
+      normalizeZipPath(preferredPath),
+      normalizeHskPackageImagePath(preferredPath),
+    ].filter(Boolean);
+
+    for (const normalized of candidates) {
+      const match = uploads.find(
+        (item) =>
+          item.kind === kind &&
+          !item.error &&
+          item.publicUrl &&
+          normalizeZipPath(item.zipPath).toLowerCase() === normalized.toLowerCase()
+      );
+      if (match?.publicUrl) return match.publicUrl;
+    }
   }
 
   const fallback = uploads.find(
@@ -185,6 +192,26 @@ function resolveTeachingImagesFromUploads(
     });
   }
   return resolved;
+}
+
+function resolveHeroThumbnailUrl(
+  teachingImages: TeachingImage[],
+  uploads: PackageMediaUploadResult[],
+  thumbnailFile?: string
+): string | undefined {
+  const fromFile = resolveMediaUrl(uploads, thumbnailFile, "image");
+  if (fromFile) return fromFile;
+
+  const heroImage =
+    teachingImages.find(
+      (img) =>
+        img.file?.toLowerCase().includes("hero") ||
+        img.type?.toLowerCase().includes("hero") ||
+        img.type?.toLowerCase() === "teacher-intro"
+    ) ?? teachingImages[0];
+
+  if (!heroImage?.file) return undefined;
+  return resolveMediaUrl(uploads, heroImage.file, "image");
 }
 
 function buildVocabPronunciationMapFromValidation(
@@ -482,20 +509,14 @@ export async function importLessonPackage(
     validation.lesson.audioFile,
     "audio"
   );
-  const thumbnailUrl =
-    resolveMediaUrl(
-      mediaFailures,
-      validation.lesson.thumbnailFile,
-      "image"
-    ) ??
-    resolveTeachingImagesFromUploads(
-      validation.lesson.teachingImages,
-      mediaFailures
-    )[0]?.url;
-
   const teachingImages = resolveTeachingImagesFromUploads(
     validation.lesson.teachingImages,
     mediaFailures
+  );
+  const thumbnailUrl = resolveHeroThumbnailUrl(
+    teachingImages,
+    mediaFailures,
+    validation.lesson.thumbnailFile
   );
   const vocabAudioMap = buildVocabAudioMapFromUploads(
     validation.vocabulary,

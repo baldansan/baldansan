@@ -1,3 +1,4 @@
+import { findHskPackageMediaBySection, normalizeHskPackageImagePath } from "@/lib/lesson/hsk-package-media";
 import { parseLessonSourceNote } from "@/lib/lesson/source-note-json";
 import type { TeachingImage } from "@/lib/lesson/teaching-media";
 import type { LessonContent } from "@/types/lesson-content";
@@ -109,13 +110,7 @@ export function findHskMediaBySection(
   media: HskMediaBundle | null | undefined,
   section: string
 ): HskMediaImage | null {
-  if (!media) return null;
-  const needle = section.toLowerCase();
-  return (
-    media.images.find((img) => img.section?.toLowerCase() === needle) ??
-    media.images.find((img) => img.id.toLowerCase().includes(needle)) ??
-    null
-  );
+  return findHskPackageMediaBySection(media, section);
 }
 
 /** Resolve a display URL — storage URL, absolute path, or null for placeholder. */
@@ -134,11 +129,15 @@ export function resolveHskMediaUrl(
   }
 
   if (teachingImages?.length) {
-    const needle = (image.section || image.id || file).toLowerCase();
+    const normalizedFile = file ? normalizeHskPackageImagePath(file) : "";
+    const needle = (image.section || image.id || normalizedFile).toLowerCase();
     const match =
       teachingImages.find(
         (item) =>
           item.type?.toLowerCase() === needle ||
+          (item.file &&
+            normalizeHskPackageImagePath(item.file).toLowerCase() ===
+              normalizedFile.toLowerCase()) ||
           item.file?.toLowerCase() === file.toLowerCase() ||
           item.title?.toLowerCase() === needle
       ) ??
