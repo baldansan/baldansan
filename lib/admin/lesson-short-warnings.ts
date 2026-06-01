@@ -4,7 +4,7 @@ import {
   hasAudioUrl,
   hasThumbnailUrl,
 } from "@/lib/lesson-media";
-import { hasHskPackageImages } from "@/lib/lesson/hsk-package-media";
+import { hasHskPackageImagesNeedingStorage } from "@/lib/lesson/hsk-package-media";
 
 /** Short human-readable warnings for the lessons table. */
 export function getLessonShortWarnings(report: LessonQaReport): string[] {
@@ -16,7 +16,7 @@ export function getLessonShortWarnings(report: LessonQaReport): string[] {
     warnings.push("Audio missing");
   }
   if (!hasThumbnailUrl(lesson) && !prelesson) {
-    if (hasHskPackageImages(lesson)) {
+    if (hasHskPackageImagesNeedingStorage(lesson)) {
       warnings.push("Package images / Needs storage");
     } else {
       warnings.push("Image missing");

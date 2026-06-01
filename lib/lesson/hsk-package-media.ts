@@ -2,6 +2,7 @@ import {
   parseHskMediaBundle,
   type HskMediaImage,
 } from "@/lib/lesson/hsk-media";
+import { normalizeZipPath } from "@/lib/import/zip-path";
 import { parseLessonSourceNote } from "@/lib/lesson/source-note-json";
 import type { TeachingImage } from "@/lib/lesson/teaching-media";
 import type { LessonContent } from "@/types/lesson-content";
@@ -83,16 +84,130 @@ export function hasHskPackageImages(
   return countHskPackageImagesFromSourceNote(lesson.sourceNote) > 0;
 }
 
+export function hasHskPackageImagesNeedingStorage(
+  lesson: Pick<LessonContent, "sourceNote" | "teachingImages" | "thumbnailUrl">
+): boolean {
+  if (lesson.thumbnailUrl?.trim()) return false;
+
+  const parsed = parseLessonSourceNote(lesson.sourceNote);
+  if (parsed.format !== "json") return false;
+
+  const hskStudy = parsed.data.hskStudyContent;
+  const mediaRaw =
+    isRecord(hskStudy) && isRecord(hskStudy.media)
+      ? hskStudy.media
+      : isRecord(parsed.data.media)
+        ? parsed.data.media
+        : null;
+
+  const bundle = parseHskMediaBundle(mediaRaw);
+  if (!bundle?.images.length) return false;
+
+  return bundle.images.some((image) => !image.url?.trim());
+}
+
+export type HskMediaUploadPatch = {
+  zipPath: string;
+  kind: "audio" | "image";
+  publicUrl: string | null;
+  storagePath: string | null;
+  error: string | null;
+};
+
+function findUploadForPackageImage(
+  uploads: HskMediaUploadPatch[],
+  file: string,
+  id: string
+): HskMediaUploadPatch | undefined {
+  const normalizedFile = normalizeHskPackageImagePath(file);
+  return (
+    uploads.find(
+      (item) =>
+        item.kind === "image" &&
+        !item.error &&
+        item.publicUrl &&
+        normalizeZipPath(item.zipPath).toLowerCase() === normalizedFile.toLowerCase()
+    ) ??
+    uploads.find(
+      (item) =>
+        item.kind === "image" &&
+        !item.error &&
+        item.publicUrl &&
+        (id
+          ? item.zipPath.toLowerCase().includes(id.toLowerCase())
+          : false)
+    )
+  );
+}
+
+export function patchHskStudyMediaFromUploads(
+  data: Record<string, unknown>,
+  uploads: HskMediaUploadPatch[]
+): void {
+  const hskStudy = data.hskStudyContent;
+  if (!isRecord(hskStudy)) return;
+
+  const mediaRaw = hskStudy.media;
+  if (!isRecord(mediaRaw) || !Array.isArray(mediaRaw.images)) return;
+
+  const patched = mediaRaw.images.map((raw) => {
+    if (!isRecord(raw)) return raw;
+    const file = normalizeHskPackageImagePath(
+      trim(raw.file) || trim(raw.path) || trim(raw.src)
+    );
+    const id = trim(raw.id);
+    const upload = findUploadForPackageImage(uploads, file, id);
+
+    if (upload?.publicUrl) {
+      return {
+        ...raw,
+        url: upload.publicUrl,
+        file: file || raw.file,
+        storagePath: upload.storagePath ?? undefined,
+        storageStatus: "uploaded",
+      };
+    }
+
+    if (file || id) {
+      return {
+        ...raw,
+        storageStatus: "package-reference-only",
+      };
+    }
+
+    return raw;
+  });
+
+  hskStudy.media = { ...mediaRaw, images: patched };
+  data.hskStudyContent = hskStudy;
+}
+
+export function patchSourceNoteHskMediaUploads(
+  sourceNote: string,
+  uploads: HskMediaUploadPatch[]
+): string {
+  const parsed = parseLessonSourceNote(sourceNote);
+  if (parsed.format !== "json") return sourceNote;
+
+  const data = { ...parsed.data };
+  patchHskStudyMediaFromUploads(data, uploads);
+  return JSON.stringify(data);
+}
+
 export function summarizeHskImageImportStatus(input: {
   mediaImageCount: number;
   zipImageFileCount: number;
   heroImageFound: boolean;
   uploadedThumbnail?: boolean;
+  uploadedImageCount?: number;
 }): {
   heroImageFound: boolean;
   imageStorageStatus: HskImageStorageStatus;
 } {
-  if (input.uploadedThumbnail) {
+  if (
+    input.uploadedThumbnail ||
+    (input.uploadedImageCount ?? 0) > 0
+  ) {
     return { heroImageFound: input.heroImageFound, imageStorageStatus: "uploaded" };
   }
 
@@ -233,9 +348,17 @@ export function applyTeachingUrlsToHskStudyMedia(
       );
 
     if (match?.url) {
-      return { ...raw, url: match.url, file: file || raw.file };
+      return {
+        ...raw,
+        url: match.url,
+        file: file || raw.file,
+        storageStatus: "uploaded",
+      };
     }
-    return raw;
+    return {
+      ...raw,
+      storageStatus: file || id ? "package-reference-only" : undefined,
+    };
   });
 
   hskStudy.media = { ...mediaRaw, images: patched };

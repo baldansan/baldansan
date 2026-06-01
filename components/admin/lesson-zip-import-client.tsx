@@ -18,6 +18,7 @@ import {
   type ImportDraftApiBody,
 } from "@/lib/admin/build-import-draft-request";
 import type { LessonPackageImportResult } from "@/lib/admin/import-lesson-package";
+import { finalizePackageMediaImport } from "@/lib/admin/package-media-import";
 import { parseChineseLessonZip } from "@/lib/import/chinese-lesson-zip-import";
 import { parseKoreanLessonZip } from "@/lib/import/korean-lesson-zip-import";
 import { KOREAN_COURSE_SETUP_SQL } from "@/lib/import/korean-lesson-normalize";
@@ -166,6 +167,26 @@ export function LessonZipImportClient({
         setError(message);
         setImportResult(result);
         return;
+      }
+
+      if (packageToImport.mediaFiles.length > 0) {
+        const mediaResult = await finalizePackageMediaImport({
+          validation: packageToImport,
+          courseId: payload.courseId,
+          lessonId: result.lessonId,
+        });
+        result = {
+          ...result,
+          mediaUploaded: mediaResult.mediaUploaded,
+          uploadedImageCount: mediaResult.uploadedImageCount,
+          mediaImageCount: mediaResult.mediaImageCount,
+          heroImageFound: mediaResult.heroImageFound,
+          imageStorageStatus: mediaResult.imageStorageStatus,
+          mediaFailures: mediaResult.mediaFailures,
+          warnings: [...(result.warnings ?? []), ...mediaResult.warnings],
+          audioUrl: mediaResult.audioUrl ?? result.audioUrl,
+          thumbnailUrl: mediaResult.thumbnailUrl ?? result.thumbnailUrl,
+        };
       }
 
       setImportResult(result);
@@ -364,6 +385,22 @@ export function LessonZipImportClient({
               </>
             ) : null}
             , subtitles: {importResult?.subtitlesInserted}.
+            {importResult?.mediaUploaded != null ? (
+              <>
+                {" "}
+                Media uploaded: {importResult.mediaUploaded}
+                {importResult.uploadedImageCount != null ? (
+                  <> ({importResult.uploadedImageCount} images)</>
+                ) : null}
+                .
+              </>
+            ) : null}
+            {importResult?.imageStorageStatus ? (
+              <>
+                {" "}
+                Image storage: {importResult.imageStorageStatus}.
+              </>
+            ) : null}
           </p>
           {importResult?.warnings.length ? (
             <ul className="mt-3 list-disc space-y-1 pl-5 text-sm text-amber-900">

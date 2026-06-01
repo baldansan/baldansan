@@ -17,6 +17,8 @@ export type HskMediaImage = {
   section?: string;
   title?: string;
   url?: string;
+  storagePath?: string;
+  storageStatus?: "uploaded" | "package-reference-only" | "missing";
 };
 
 export type HskMediaBundle = {
@@ -44,6 +46,13 @@ function normalizeImage(raw: unknown): HskMediaImage | null {
     section: trim(raw.section) || undefined,
     title: trim(raw.title) || undefined,
     url: trim(raw.url) || undefined,
+    storagePath: trim(raw.storagePath) || undefined,
+    storageStatus:
+      raw.storageStatus === "uploaded" ||
+      raw.storageStatus === "package-reference-only" ||
+      raw.storageStatus === "missing"
+        ? raw.storageStatus
+        : undefined,
   };
 }
 
