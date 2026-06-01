@@ -1,4 +1,12 @@
-import { findHskPackageMediaBySection, normalizeHskPackageImagePath } from "@/lib/lesson/hsk-package-media";
+import {
+  findHskMediaById,
+  findHskPackageMediaBySection,
+  HSK_PACKAGE_IMAGE_PLACEHOLDER_MN,
+  normalizeHskPackageImagePath,
+  type HskGuidedStepMediaRef,
+} from "@/lib/lesson/hsk-package-media";
+
+export type { HskGuidedStepMediaRef };
 import { parseLessonSourceNote } from "@/lib/lesson/source-note-json";
 import type { TeachingImage } from "@/lib/lesson/teaching-media";
 import type { LessonContent } from "@/types/lesson-content";
@@ -113,6 +121,45 @@ export function findHskMediaBySection(
   return findHskPackageMediaBySection(media, section);
 }
 
+function trimRef(value: unknown): string {
+  return String(value ?? "").trim();
+}
+
+/** Resolve guided-step media: imageId first, then section aliases, then step id. */
+export function findHskMediaForGuidedStep(
+  media: HskMediaBundle | null | undefined,
+  step: HskGuidedStepMediaRef
+): HskMediaImage | null {
+  const imageId = trimRef(step.imageId);
+  const mediaSection = trimRef(step.mediaSection);
+  const stepId = trimRef(step.id);
+
+  return (
+    (imageId ? findHskMediaById(media, imageId) : null) ??
+    (mediaSection ? findHskPackageMediaBySection(media, mediaSection) : null) ??
+    (stepId
+      ? findHskMediaById(media, stepId) ??
+        findHskPackageMediaBySection(media, stepId)
+      : null)
+  );
+}
+
+export function resolveHskGuidedStepMediaDisplay(
+  media: HskMediaBundle | null | undefined,
+  step: HskGuidedStepMediaRef,
+  teachingImages?: TeachingImage[] | null
+): {
+  image: HskMediaImage | null;
+  imageUrl: string | null;
+  packageLabel?: string;
+} {
+  const image = findHskMediaForGuidedStep(media, step);
+  const imageUrl = resolveHskMediaUrl(image, teachingImages);
+  const packageLabel =
+    !imageUrl && image ? HSK_PACKAGE_IMAGE_PLACEHOLDER_MN : undefined;
+  return { image, imageUrl, packageLabel };
+}
+
 /** Resolve a display URL — storage URL, absolute path, or null for placeholder. */
 export function resolveHskMediaUrl(
   image: HskMediaImage | null | undefined,
@@ -130,8 +177,12 @@ export function resolveHskMediaUrl(
 
   if (teachingImages?.length) {
     const normalizedFile = file ? normalizeHskPackageImagePath(file) : "";
+    const imageId = image.id?.trim().toLowerCase() ?? "";
     const needle = (image.section || image.id || normalizedFile).toLowerCase();
     const match =
+      (imageId
+        ? teachingImages.find((item) => item.type?.toLowerCase() === imageId)
+        : null) ??
       teachingImages.find(
         (item) =>
           item.type?.toLowerCase() === needle ||
@@ -139,7 +190,8 @@ export function resolveHskMediaUrl(
             normalizeHskPackageImagePath(item.file).toLowerCase() ===
               normalizedFile.toLowerCase()) ||
           item.file?.toLowerCase() === file.toLowerCase() ||
-          item.title?.toLowerCase() === needle
+          item.title?.toLowerCase() === needle ||
+          (imageId && item.title?.toLowerCase() === imageId)
       ) ??
       teachingImages.find((item) =>
         item.file?.toLowerCase().includes(needle.replace(/^images\//, ""))

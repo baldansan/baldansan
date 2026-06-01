@@ -19,6 +19,8 @@ import { lessonPlayerPrimaryBtnClass } from "@/components/lesson-player/lesson-p
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
 import { buildHskPlayerContent } from "@/lib/lesson/hsk-player/build-hsk-player-content";
 import { buildHskPlayerStepPlanFromLesson } from "@/lib/lesson/hsk-player/build-hsk-guided-steps";
+import type { HskGuidedStep } from "@/lib/lesson/hsk-guided-step";
+import type { HskGuidedStepMediaRef } from "@/lib/lesson/hsk-media";
 import { HSK_PLAYER } from "@/lib/lesson/hsk-player/hsk-player-theme";
 import { lessonPreviewPath } from "@/lib/lesson-publish";
 import { markLessonCompletedSmart, markLessonStartedSmart } from "@/lib/progress";
@@ -32,6 +34,14 @@ type Props = {
 };
 
 const STORAGE_PREFIX = "buunduu-hsk-player:";
+
+function stepMediaRef(step: HskGuidedStep): HskGuidedStepMediaRef {
+  return {
+    imageId: step.imageId,
+    mediaSection: step.mediaSection,
+    id: step.id,
+  };
+}
 
 function loadStep(lessonId: string, maxIndex: number): number {
   if (typeof window === "undefined") return 0;
@@ -195,7 +205,7 @@ export function HskGuidedLessonPlayer({
               }
               tip={currentStep.teacherSpeechMn || content.teacherTip}
               media={content.study.media}
-              section={currentStep.mediaSection || "teacher"}
+              stepMedia={stepMediaRef(currentStep)}
               teachingImages={lesson.teachingImages}
             />
           ) : null}
@@ -209,6 +219,7 @@ export function HskGuidedLessonPlayer({
               breakdown={content.keyPhrase.breakdown}
               usage={content.keyPhrase.usage}
               media={content.study.media}
+              stepMedia={stepMediaRef(currentStep)}
               teachingImages={lesson.teachingImages}
             />
           ) : null}
@@ -231,6 +242,7 @@ export function HskGuidedLessonPlayer({
                   : content.pinyinRows
               }
               media={content.study.media}
+              stepMedia={stepMediaRef(currentStep)}
               teachingImages={lesson.teachingImages}
             />
           ) : null}
@@ -250,6 +262,7 @@ export function HskGuidedLessonPlayer({
               toneNote={currentStep.teacherSpeechMn || content.toneNote}
               toneWarning={content.toneWarning}
               media={content.study.media}
+              stepMedia={stepMediaRef(currentStep)}
               teachingImages={lesson.teachingImages}
             />
           ) : null}
@@ -259,6 +272,9 @@ export function HskGuidedLessonPlayer({
               lesson={lesson}
               word={content.featuredWord}
               vocabHref={`${vocabHref}?view=flashcard`}
+              media={content.study.media}
+              stepMedia={stepMediaRef(currentStep)}
+              teachingImages={lesson.teachingImages}
             />
           ) : null}
 
@@ -276,6 +292,7 @@ export function HskGuidedLessonPlayer({
                   : content.dialogueLines
               }
               media={content.study.media}
+              stepMedia={stepMediaRef(currentStep)}
               teachingImages={lesson.teachingImages}
             />
           ) : null}
@@ -294,6 +311,9 @@ export function HskGuidedLessonPlayer({
               vocabHref={vocabHref}
               quizHref={quizHref}
               lessonId={lesson.id}
+              media={content.study.media}
+              stepMedia={stepMediaRef(currentStep)}
+              teachingImages={lesson.teachingImages}
             />
           ) : null}
 

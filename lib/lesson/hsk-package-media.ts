@@ -136,6 +136,36 @@ function matchesSectionNeedle(image: HskMediaImage, needle: string): boolean {
   );
 }
 
+/** Find package media image by Gold Standard media.json id. */
+export function findHskMediaById(
+  media: { images: HskMediaImage[] } | null | undefined,
+  imageId: string
+): HskMediaImage | null {
+  const needle = imageId.trim().toLowerCase();
+  if (!media?.images.length || !needle) return null;
+
+  return (
+    media.images.find((img) => img.id.toLowerCase() === needle) ??
+    media.images.find((img) => {
+      const fileBase = img.file
+        .replace(/^.*\//, "")
+        .replace(/\.[^.]+$/, "")
+        .toLowerCase();
+      return fileBase === needle || img.file.toLowerCase().includes(needle);
+    }) ??
+    null
+  );
+}
+
+export const HSK_PACKAGE_IMAGE_PLACEHOLDER_MN =
+  "Зураг package-д байна, storage-д хараахан холбогдоогүй";
+
+export type HskGuidedStepMediaRef = {
+  imageId?: string;
+  mediaSection?: string;
+  id?: string;
+};
+
 /** Find package media image by guided-player section id. */
 export function findHskPackageMediaBySection(
   media: { images: HskMediaImage[] } | null | undefined,
@@ -159,7 +189,7 @@ export function buildTeachingImageRefsFromMedia(media: unknown): Array<{
   return bundle.images.map((image) => {
     const normalizedFile = normalizeHskPackageImagePath(image.file);
     return {
-      type: image.section || image.id || "image",
+      type: image.id || image.section || "image",
       title: image.title || image.id || image.section || "Teaching image",
       file: normalizedFile || `images/${image.id || "image"}.png`,
     };
@@ -187,6 +217,9 @@ export function applyTeachingUrlsToHskStudyMedia(
     const section = trim(raw.section).toLowerCase();
 
     const match =
+      (id
+        ? teachingImages.find((item) => item.type?.toLowerCase() === id.toLowerCase())
+        : null) ??
       teachingImages.find(
         (item) =>
           normalizeHskPackageImagePath(item.file ?? "") === file ||
@@ -195,7 +228,8 @@ export function applyTeachingUrlsToHskStudyMedia(
       teachingImages.find(
         (item) =>
           item.type?.toLowerCase() === section ||
-          item.type?.toLowerCase() === id.toLowerCase()
+          item.type?.toLowerCase() === id.toLowerCase() ||
+          item.title?.toLowerCase() === id.toLowerCase()
       );
 
     if (match?.url) {

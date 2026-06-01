@@ -22,6 +22,8 @@ export type HskGuidedStep = {
   pinyin: string;
   mongolian: string;
   examples: HskGuidedStepExample[];
+  /** Gold Standard media.json image id for this step. */
+  imageId: string;
   mediaSection: string;
   items: unknown[];
 };
@@ -209,10 +211,17 @@ function normalizeGuidedStep(raw: unknown, index: number): HskGuidedStep | null 
     raw.examples ?? raw.items ?? raw.lines ?? raw.tones ?? raw.rows
   );
 
+  const imageId =
+    trim(raw.imageId) ||
+    trim(raw.image) ||
+    trim(raw.mediaImageId) ||
+    trim(raw.heroImageId);
+
   const mediaSection =
     trim(raw.mediaSection) ||
     trim(raw.section) ||
     trim(raw.imageSection) ||
+    imageId ||
     (type === "teacher-intro"
       ? "teacher"
       : type === "key-phrase"
@@ -245,6 +254,7 @@ function normalizeGuidedStep(raw: unknown, index: number): HskGuidedStep | null 
     pinyin,
     mongolian,
     examples,
+    imageId,
     mediaSection,
     items: Array.isArray(raw.items) ? raw.items : [],
   };
