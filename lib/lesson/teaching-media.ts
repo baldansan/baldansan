@@ -1,5 +1,10 @@
 import { inferLessonLanguage } from "@/lib/language-track";
 import { enrichVocabularyWithPronunciation } from "@/lib/lesson/korean-pronunciation-hints";
+import {
+  getJsonSourceNoteField,
+  mergeTeachingMediaIntoJsonOrLegacySourceNote,
+  parseLegacySourceNoteSegment,
+} from "@/lib/lesson/source-note-json";
 import type { LessonContent } from "@/types/lesson-content";
 import type { VocabularyWord } from "@/types/lesson";
 
@@ -18,48 +23,33 @@ export type TeachingImageRef = {
   caption?: string;
 };
 
-const SOURCE_NOTE_SEP = " · ";
-
-function parseSourceNoteSegment(
-  sourceNote: string | undefined | null,
-  key: string
-): string | null {
-  if (!sourceNote?.trim()) return null;
-  for (const part of sourceNote.split(SOURCE_NOTE_SEP)) {
-    const trimmed = part.trim();
-    if (trimmed.startsWith(`${key}=`)) {
-      return trimmed.slice(key.length + 1);
+function parseJsonMap(raw: string | null): Record<string, string> {
+  if (!raw) return {};
+  try {
+    const parsed = JSON.parse(raw) as unknown;
+    if (!parsed || typeof parsed !== "object" || Array.isArray(parsed)) {
+      return {};
     }
+    const map: Record<string, string> = {};
+    for (const [key, value] of Object.entries(parsed)) {
+      if (typeof value === "string" && value.trim()) {
+        map[key] = value.trim();
+      }
+    }
+    return map;
+  } catch {
+    return {};
   }
-  return null;
-}
-
-function removeSourceNoteSegment(
-  sourceNote: string | undefined | null,
-  key: string
-): string {
-  if (!sourceNote?.trim()) return "";
-  return sourceNote
-    .split(SOURCE_NOTE_SEP)
-    .map((part) => part.trim())
-    .filter((part) => part && !part.startsWith(`${key}=`))
-    .join(SOURCE_NOTE_SEP);
-}
-
-function appendSourceNoteSegment(
-  sourceNote: string | undefined | null,
-  key: string,
-  value: string
-): string {
-  const base = removeSourceNoteSegment(sourceNote, key);
-  const segment = `${key}=${value}`;
-  return base ? `${base}${SOURCE_NOTE_SEP}${segment}` : segment;
 }
 
 export function parseTeachingImagesFromSourceNote(
   sourceNote?: string | null
 ): TeachingImage[] {
-  const raw = parseSourceNoteSegment(sourceNote, "teachingImages");
+  const jsonValue = getJsonSourceNoteField(sourceNote ?? null, "teachingImages");
+  const raw =
+    jsonValue != null
+      ? JSON.stringify(jsonValue)
+      : parseLegacySourceNoteSegment(sourceNote ?? null, "teachingImages");
   if (!raw) return [];
   try {
     const parsed = JSON.parse(raw) as unknown;
@@ -82,45 +72,21 @@ export function parseTeachingImagesFromSourceNote(
 export function parseVocabularyAudioMapFromSourceNote(
   sourceNote?: string | null
 ): Record<string, string> {
-  const raw = parseSourceNoteSegment(sourceNote, "vocabAudio");
-  if (!raw) return {};
-  try {
-    const parsed = JSON.parse(raw) as unknown;
-    if (!parsed || typeof parsed !== "object" || Array.isArray(parsed)) {
-      return {};
-    }
-    const map: Record<string, string> = {};
-    for (const [key, value] of Object.entries(parsed)) {
-      if (typeof value === "string" && value.trim()) {
-        map[key] = value.trim();
-      }
-    }
-    return map;
-  } catch {
-    return {};
+  const jsonValue = getJsonSourceNoteField(sourceNote ?? null, "vocabAudio");
+  if (jsonValue != null) {
+    return parseJsonMap(JSON.stringify(jsonValue));
   }
+  return parseJsonMap(parseLegacySourceNoteSegment(sourceNote ?? null, "vocabAudio"));
 }
 
 export function parseVocabularyPronunciationMapFromSourceNote(
   sourceNote?: string | null
 ): Record<string, string> {
-  const raw = parseSourceNoteSegment(sourceNote, "vocabPronMn");
-  if (!raw) return {};
-  try {
-    const parsed = JSON.parse(raw) as unknown;
-    if (!parsed || typeof parsed !== "object" || Array.isArray(parsed)) {
-      return {};
-    }
-    const map: Record<string, string> = {};
-    for (const [key, value] of Object.entries(parsed)) {
-      if (typeof value === "string" && value.trim()) {
-        map[key] = value.trim();
-      }
-    }
-    return map;
-  } catch {
-    return {};
+  const jsonValue = getJsonSourceNoteField(sourceNote ?? null, "vocabPronMn");
+  if (jsonValue != null) {
+    return parseJsonMap(JSON.stringify(jsonValue));
   }
+  return parseJsonMap(parseLegacySourceNoteSegment(sourceNote ?? null, "vocabPronMn"));
 }
 
 export function mergeTeachingMediaIntoSourceNote(
@@ -129,35 +95,20 @@ export function mergeTeachingMediaIntoSourceNote(
   vocabAudio: Record<string, string>,
   vocabPronMn: Record<string, string> = {}
 ): string {
-  let note = sourceNote?.trim() ?? "";
-
-  if (teachingImages.length > 0) {
-    note = appendSourceNoteSegment(
-      note,
-      "teachingImages",
-      JSON.stringify(
-        teachingImages.map(({ type, title, url, caption, file }) => ({
-          type,
-          title,
-          url,
-          ...(caption ? { caption } : {}),
-          ...(file ? { file } : {}),
-        }))
-      )
-    );
-  }
-
-  const audioKeys = Object.keys(vocabAudio);
-  if (audioKeys.length > 0) {
-    note = appendSourceNoteSegment(note, "vocabAudio", JSON.stringify(vocabAudio));
-  }
-
-  const pronKeys = Object.keys(vocabPronMn);
-  if (pronKeys.length > 0) {
-    note = appendSourceNoteSegment(note, "vocabPronMn", JSON.stringify(vocabPronMn));
-  }
-
-  return note;
+  return mergeTeachingMediaIntoJsonOrLegacySourceNote(sourceNote, {
+    teachingImages:
+      teachingImages.length > 0
+        ? teachingImages.map(({ type, title, url, caption, file }) => ({
+            type,
+            title,
+            url,
+            ...(caption ? { caption } : {}),
+            ...(file ? { file } : {}),
+          }))
+        : undefined,
+    vocabAudio,
+    vocabPronMn,
+  });
 }
 
 export function enrichLessonTeachingMedia(lesson: LessonContent): LessonContent {

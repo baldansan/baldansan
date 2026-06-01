@@ -3,6 +3,10 @@ import {
   isKnownHskProfile,
   type HskLessonProfileId,
 } from "@/lib/import/chinese-hsk-profiles";
+import {
+  buildChineseHskSourceNoteJson,
+  buildHskStudyContentBundle,
+} from "@/lib/import/chinese-hsk-study-bundle";
 
 const SOURCE_NOTE_SEP = " · ";
 
@@ -349,86 +353,34 @@ export function mergeHskProfileIntoSourceNote(
     lessonJson?: unknown;
     audioManifest?: unknown;
     studyContent?: unknown;
+    rawFiles?: ChineseHskRawFiles;
   }
 ): string {
-  let note = sourceNote?.trim() ?? "";
-
-  note = appendSourceNoteSegment(note, "courseType", manifest.courseType);
-  note = appendSourceNoteSegment(note, "hskLevel", String(manifest.hskLevel));
-  note = appendSourceNoteSegment(note, "lessonProfile", manifest.lessonProfile);
-  note = appendSourceNoteSegment(note, "hskPackageVersion", manifest.packageVersion);
-
-  if (manifest.bookPart) {
-    note = appendSourceNoteSegment(note, "bookPart", manifest.bookPart);
-  }
-  if (manifest.lessonNumber != null) {
-    note = appendSourceNoteSegment(note, "lessonNumber", String(manifest.lessonNumber));
-  }
-
-  const verification = manifest.verification;
-  if (verification?.answerStatus) {
-    note = appendSourceNoteSegment(
-      note,
-      "answerStatus",
-      String(verification.answerStatus)
-    );
-  }
-  if (verification?.textStatus) {
-    note = appendSourceNoteSegment(note, "textStatus", String(verification.textStatus));
-  }
-
-  const inventory = {
-    textCount: meta.textCount,
-    workbookListening: meta.workbookListeningCount,
-    workbookReading: meta.workbookReadingCount,
-    workbookWriting: meta.workbookWritingCount,
-    sectionKeys: Object.keys(meta.sections),
+  const rawFiles: ChineseHskRawFiles = options?.rawFiles ?? {
+    manifest,
+    lesson: options?.lessonJson ?? null,
+    texts: meta.textsPayload,
+    vocabulary: null,
+    grammar: meta.grammarPayload,
+    notes: meta.notesPayload,
+    workbook: meta.workbookPayload,
+    quiz: null,
+    audioManifest: options?.audioManifest ?? null,
+    subtitles: null,
+    studyContent: options?.studyContent ?? meta.studyContentPayload,
   };
-  note = appendSourceNoteSegment(note, "hskInventory", JSON.stringify(inventory));
 
-  if (meta.textsPayload) {
-    note = appendSourceNoteSegment(note, "hskTexts", JSON.stringify(meta.textsPayload));
-  }
-  if (meta.workbookPayload) {
-    note = appendSourceNoteSegment(
-      note,
-      "hskWorkbook",
-      JSON.stringify(meta.workbookPayload)
-    );
-  }
-  if (meta.grammarPayload) {
-    note = appendSourceNoteSegment(
-      note,
-      "hskGrammar",
-      JSON.stringify(meta.grammarPayload)
-    );
-  }
-  if (meta.notesPayload) {
-    note = appendSourceNoteSegment(
-      note,
-      "hskNotes",
-      JSON.stringify(meta.notesPayload)
-    );
-  }
-  if (meta.studyContentPayload) {
-    note = appendSourceNoteSegment(
-      note,
-      "hskStudyContent",
-      JSON.stringify(meta.studyContentPayload)
-    );
-  }
-  if (options?.lessonJson && isRecord(options.lessonJson)) {
-    const teaching = extractHskLessonTeachingPayload(options.lessonJson);
-    if (Object.keys(teaching).length > 0) {
-      note = appendSourceNoteSegment(note, "hskLesson", JSON.stringify(teaching));
-    }
-  }
+  const bundle = buildHskStudyContentBundle(rawFiles, manifest, meta);
+  let note = buildChineseHskSourceNoteJson(manifest, bundle, sourceNote);
+
   if (options?.audioManifest) {
-    note = appendSourceNoteSegment(
-      note,
-      "hskAudioManifest",
-      JSON.stringify(options.audioManifest)
-    );
+    try {
+      const parsed = JSON.parse(note) as Record<string, unknown>;
+      parsed.hskAudioManifest = options.audioManifest;
+      note = JSON.stringify(parsed);
+    } catch {
+      // keep note as-is if parse fails
+    }
   }
 
   return note;

@@ -4,6 +4,7 @@ import {
 import { hasVideoUrl } from "@/lib/lesson-media";
 import { enrichLessonTeachingMedia } from "@/lib/lesson/teaching-media";
 import { enrichLessonHskContent } from "@/lib/lesson/hsk-lesson-content";
+import { getSourceNoteTag } from "@/lib/lesson/source-note-json";
 import type { LessonContent } from "@/types/lesson-content";
 
 export type LessonContentType = "textbook" | "video" | "exam";
@@ -18,6 +19,9 @@ export function parseTagFromSourceNote(
   sourceNote: string | undefined | null,
   tag: string
 ): string | null {
+  const fromJson = getSourceNoteTag(sourceNote, tag);
+  if (fromJson) return fromJson;
+
   const note = sourceNote ?? "";
   const pattern = new RegExp(`${tag}=([^·\\s,]+)`, "i");
   const match = note.match(pattern);

@@ -2,6 +2,10 @@ import type { SupabaseClient } from "@supabase/supabase-js";
 import type { ImportDraftApiBody } from "@/lib/admin/build-import-draft-request";
 import { inferLanguageTagFromCourseId } from "@/lib/language-track";
 import { canonicalLessonId } from "@/lib/lesson-id";
+import {
+  mergeJsonSourceNoteFields,
+  parseLessonSourceNote,
+} from "@/lib/lesson/source-note-json";
 import { fetchLessonRowById } from "@/lib/supabase/content";
 
 export type DraftLessonShellResult = {
@@ -48,6 +52,16 @@ function appendPackageLessonIdToSourceNote(
   sourceNote: string,
   packageLessonId: string
 ): string {
+  const parsed = parseLessonSourceNote(sourceNote);
+  if (parsed.format === "json") {
+    if (parsed.data.packageLessonId === packageLessonId) {
+      return sourceNote;
+    }
+    return mergeJsonSourceNoteFields(sourceNote, {
+      packageLessonId,
+    });
+  }
+
   const marker = `packageLessonId=${packageLessonId}`;
   if (sourceNote.includes(marker)) {
     return sourceNote;

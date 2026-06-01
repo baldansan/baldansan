@@ -1,6 +1,10 @@
 import { parseTagFromSourceNote } from "@/lib/lesson-content-type";
 import { parseSourceNoteSegment } from "@/lib/lesson/hsk-source-note";
 import {
+  parseLegacySourceNoteJsonSegment,
+  parseLessonSourceNote,
+} from "@/lib/lesson/source-note-json";
+import {
   HSK_CHARACTER_ALIASES,
   HSK_DIALOGUE_ALIASES,
   HSK_SENTENCE_ALIASES,
@@ -326,6 +330,37 @@ function parseCharacterNotesFromRaw(
 }
 
 function buildPayloadPool(sourceNote: string | undefined | null): HskStudyPayloadPool {
+  const parsed = parseLessonSourceNote(sourceNote);
+
+  if (parsed.format === "json") {
+    const hskStudyContent = parsed.data.hskStudyContent;
+    const studyRecord = isRecord(hskStudyContent) ? hskStudyContent : null;
+
+    return {
+      studyContent: hskStudyContent ?? null,
+      lessonPayload:
+        studyRecord?.lessonTeaching ??
+        parseLegacySourceNoteJsonSegment(sourceNote, "hskLesson") ??
+        null,
+      textsPayload:
+        studyRecord?.texts ??
+        parseLegacySourceNoteJsonSegment(sourceNote, "hskTexts") ??
+        null,
+      grammarPayload:
+        studyRecord?.grammar ??
+        parseLegacySourceNoteJsonSegment(sourceNote, "hskGrammar") ??
+        null,
+      notesPayload:
+        studyRecord?.notes ??
+        parseLegacySourceNoteJsonSegment(sourceNote, "hskNotes") ??
+        null,
+      workbookPayload:
+        studyRecord?.workbook ??
+        parseLegacySourceNoteJsonSegment(sourceNote, "hskWorkbook") ??
+        null,
+    };
+  }
+
   const lessonPayload = parseJsonSegment(sourceNote, "hskLesson");
   const explicitStudyContent = parseJsonSegment(sourceNote, "hskStudyContent");
 
