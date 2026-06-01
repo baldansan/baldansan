@@ -358,15 +358,19 @@ type MediaImageProps = {
 export function HskMediaImage({ src, alt, className, packageLabel }: MediaImageProps) {
   if (src) {
     return (
-      <div className={`relative overflow-hidden rounded-2xl bg-emerald-50 ${className ?? ""}`}>
-        <Image
-          src={src}
-          alt={alt}
-          width={640}
-          height={360}
-          className="h-auto w-full object-cover"
-          unoptimized
-        />
+      <div
+        className={`relative w-full overflow-hidden rounded-2xl bg-emerald-50 ${className ?? ""}`}
+      >
+        <div className="relative aspect-[4/3] w-full">
+          <Image
+            src={src}
+            alt={alt}
+            fill
+            sizes="(max-width: 430px) 100vw, 430px"
+            className="object-contain"
+            unoptimized
+          />
+        </div>
       </div>
     );
   }

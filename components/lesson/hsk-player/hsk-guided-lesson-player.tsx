@@ -311,9 +311,6 @@ export function HskGuidedLessonPlayer({
               vocabHref={vocabHref}
               quizHref={quizHref}
               lessonId={lesson.id}
-              media={content.study.media}
-              stepMedia={stepMediaRef(currentStep)}
-              teachingImages={lesson.teachingImages}
             />
           ) : null}
 

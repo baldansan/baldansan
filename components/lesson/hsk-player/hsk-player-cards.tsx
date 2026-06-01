@@ -491,16 +491,10 @@ export function PracticeMenuCard({
   vocabHref,
   quizHref,
   lessonId,
-  media,
-  stepMedia,
-  teachingImages,
 }: {
   vocabHref: string;
   quizHref: string;
   lessonId: string;
-  media?: HskStudyContent["media"];
-  stepMedia?: HskGuidedStepMediaRef;
-  teachingImages?: TeachingImage[];
 }) {
   const items = [
     { label: "Сонсож давтах", href: vocabHref, icon: "🔊", bg: HSK_PLAYER.softBlue },
@@ -514,14 +508,6 @@ export function PracticeMenuCard({
       <h2 className="text-lg font-bold" style={{ color: HSK_PLAYER.text }}>
         Практик дадлага
       </h2>
-      {stepMedia ? (
-        <HskStepImageSlot
-          media={media}
-          stepMedia={stepMedia}
-          teachingImages={teachingImages}
-          alt="Practice"
-        />
-      ) : null}
       <p className="mt-1 text-sm" style={{ color: HSK_PLAYER.muted }}>
         Аль ч сонголтоор бататгаж болно.
       </p>
