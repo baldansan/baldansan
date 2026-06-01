@@ -13,6 +13,7 @@ import { lessonPreviewPath } from "@/lib/lesson-publish";
 import { resolveVocabularyAudioUrl } from "@/lib/lesson/teaching-media";
 import { vocabularyWordKey } from "@/lib/progress";
 import { containsTargetScript, resolveTtsLang } from "@/lib/tts/infer-lang";
+import type { HskMediaImageVariant } from "@/lib/lesson/hsk-media";
 import type { LessonContent } from "@/types/lesson-content";
 import type { VocabularyWord } from "@/types/lesson";
 
@@ -348,20 +349,33 @@ export function HskFlashcardVocabularyStudy({
   );
 }
 
+const IMAGE_VARIANT_CLASS: Record<HskMediaImageVariant, string> = {
+  hero: "aspect-[3/4] min-h-[220px]",
+  wide: "aspect-[16/10] min-h-[160px]",
+  standard: "aspect-[4/3] min-h-[180px]",
+};
+
 type MediaImageProps = {
   src: string | null;
   alt: string;
   className?: string;
   packageLabel?: string;
+  variant?: HskMediaImageVariant;
 };
 
-export function HskMediaImage({ src, alt, className, packageLabel }: MediaImageProps) {
+export function HskMediaImage({
+  src,
+  alt,
+  className,
+  packageLabel,
+  variant = "standard",
+}: MediaImageProps) {
   if (src) {
     return (
       <div
         className={`relative w-full overflow-hidden rounded-2xl bg-emerald-50 ${className ?? ""}`}
       >
-        <div className="relative aspect-[4/3] w-full">
+        <div className={`relative w-full ${IMAGE_VARIANT_CLASS[variant]}`}>
           <Image
             src={src}
             alt={alt}

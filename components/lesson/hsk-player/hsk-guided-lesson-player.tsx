@@ -4,6 +4,7 @@ import { useRouter } from "next/navigation";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { AdminPreviewBanner } from "@/components/admin-preview-banner";
 import {
+  CommonMistakesCard,
   DialoguePracticeCard,
   KeyPhraseCard,
   LessonCompleteCard,
@@ -297,6 +298,14 @@ export function HskGuidedLessonPlayer({
             />
           ) : null}
 
+          {currentStep?.type === "common-mistake" ? (
+            <CommonMistakesCard
+              step={currentStep}
+              media={content.study.media}
+              teachingImages={lesson.teachingImages}
+            />
+          ) : null}
+
           {currentStep?.type === "characters" ||
           currentStep?.type === "content" ? (
             <GuidedStepCard
@@ -311,6 +320,9 @@ export function HskGuidedLessonPlayer({
               vocabHref={vocabHref}
               quizHref={quizHref}
               lessonId={lesson.id}
+              media={content.study.media}
+              stepMedia={stepMediaRef(currentStep)}
+              teachingImages={lesson.teachingImages}
             />
           ) : null}
 
@@ -322,6 +334,9 @@ export function HskGuidedLessonPlayer({
               nextHref={nextHref}
               detailHref={detailHref}
               onRestart={handleRestart}
+              media={content.study.media}
+              stepMedia={stepMediaRef(currentStep)}
+              teachingImages={lesson.teachingImages}
             />
           ) : null}
 

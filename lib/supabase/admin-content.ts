@@ -144,6 +144,7 @@ export type UpdateLessonMetadataInput = {
 export type UpdateLessonMediaInput = {
   videoUrl?: string;
   thumbnailUrl?: string;
+  imageUrl?: string;
   audioUrl?: string;
   sourceNote?: string;
   mediaStatus: "missing" | "pending" | "ready";
@@ -163,6 +164,7 @@ export type AdminLessonMetadataRow = {
   quiz_count: number;
   video_url: string | null;
   thumbnail_url: string | null;
+  image_url: string | null;
   audio_url: string | null;
   source_note: string | null;
   media_status: string;
@@ -206,6 +208,7 @@ function mediaSnapshotFromRow(
   return {
     videoUrl: row.video_url,
     thumbnailUrl: row.thumbnail_url,
+    imageUrl: row.image_url,
     audioUrl: row.audio_url,
     sourceNote: row.source_note,
     mediaStatus: row.media_status,
@@ -218,6 +221,7 @@ function mediaSnapshotFromInput(
   return {
     videoUrl: input.videoUrl ?? null,
     thumbnailUrl: input.thumbnailUrl ?? null,
+    imageUrl: input.imageUrl ?? null,
     audioUrl: input.audioUrl ?? null,
     sourceNote: input.sourceNote ?? null,
     mediaStatus: input.mediaStatus,
@@ -461,7 +465,7 @@ export async function getAdminLessonMetadataById(
 
   try {
     const result = await queryLessonById<AdminLessonMetadataRow>(
-      "id, course_id, title, chinese_title, subtitle, description, duration, status, order_index, vocabulary_count, quiz_count, video_url, thumbnail_url, audio_url, source_note, media_status",
+      "id, course_id, title, chinese_title, subtitle, description, duration, status, order_index, vocabulary_count, quiz_count, video_url, thumbnail_url, image_url, audio_url, source_note, media_status",
       lessonId
     );
 
@@ -576,12 +580,14 @@ export function validateUpdateLessonMediaInput(
 
   checkUrl("Video URL", input.videoUrl);
   checkUrl("Thumbnail URL", input.thumbnailUrl);
+  checkUrl("Image URL", input.imageUrl);
   checkUrl("Audio URL", input.audioUrl);
 
   return {
     data: {
       videoUrl: input.videoUrl?.trim() || undefined,
       thumbnailUrl: input.thumbnailUrl?.trim() || undefined,
+      imageUrl: input.imageUrl?.trim() || undefined,
       audioUrl: input.audioUrl?.trim() || undefined,
       sourceNote: input.sourceNote?.trim() || undefined,
       mediaStatus: input.mediaStatus,
@@ -618,11 +624,13 @@ export async function updateLessonMedia(
   const afterSnapshot = mediaSnapshotFromInput(v);
 
   try {
+    const heroUrl = v.imageUrl || v.thumbnailUrl;
     const { error } = await supabase
       .from("lessons")
       .update({
         video_url: v.videoUrl || null,
-        thumbnail_url: v.thumbnailUrl || null,
+        thumbnail_url: heroUrl || null,
+        image_url: heroUrl || null,
         audio_url: v.audioUrl || null,
         source_note: v.sourceNote || null,
         media_status: v.mediaStatus,
@@ -634,7 +642,7 @@ export async function updateLessonMedia(
     }
 
     const cleared =
-      !v.videoUrl && !v.thumbnailUrl && !v.audioUrl && v.mediaStatus === "missing";
+      !v.videoUrl && !v.thumbnailUrl && !v.imageUrl && !v.audioUrl && v.mediaStatus === "missing";
     await logAdminActivity({
       action: cleared
         ? ADMIN_ACTIVITY_ACTIONS.mediaCleared

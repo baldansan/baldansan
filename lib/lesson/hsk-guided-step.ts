@@ -7,6 +7,7 @@ export type HskGuidedStepKind =
   | "tones"
   | "vocabulary"
   | "dialogue"
+  | "common-mistake"
   | "characters"
   | "practice-menu"
   | "complete"
@@ -33,10 +34,12 @@ export type HskGuidedStepExample = {
   pinyin?: string;
   mongolian?: string;
   label?: string;
+  wrong?: string;
+  correct?: string;
 };
 
 const RAW_KEY_PATTERN =
-  /^(id|type|titlemn|titlechinese|teacherspeechmn|practicemn|itemmn|sourceref|metadata|sectionkey|sectionid)$/i;
+  /^(id|type|titlemn|titlechinese|teacherspeechmn|practicemn|itemmn|sourceref|metadata|sectionkey|sectionid|imageid|role)$/i;
 
 function isRecord(value: unknown): value is Record<string, unknown> {
   return typeof value === "object" && value !== null && !Array.isArray(value);
@@ -106,6 +109,13 @@ function normalizeStepKind(raw: unknown): HskGuidedStepKind {
     return "vocabulary";
   }
   if (key.includes("dialogue")) return "dialogue";
+  if (
+    key.includes("mistake") ||
+    key.includes("common-mistake") ||
+    key === "correction"
+  ) {
+    return "common-mistake";
+  }
   if (key.includes("character") || key.includes("hanzi")) return "characters";
   if (key.includes("practice-menu") || key === "practice") {
     return "practice-menu";
@@ -134,8 +144,24 @@ function parseExamples(raw: unknown): HskGuidedStepExample[] {
         trim(item.exampleMn) ||
         trim(item.meaningMn);
       const label = trim(item.label) || trim(item.titleMn);
-      if (!chinese && !pinyin && !mongolian) return null;
-      return { chinese: chinese || undefined, pinyin: pinyin || undefined, mongolian: mongolian || undefined, label: label || undefined };
+      const wrong =
+        trim(item.wrong) ||
+        trim(item.incorrect) ||
+        trim(item.wrongPinyin) ||
+        trim(item.incorrectPinyin);
+      const correct =
+        trim(item.correct) ||
+        trim(item.correctPinyin) ||
+        trim(item.rightPinyin);
+      if (!chinese && !pinyin && !mongolian && !wrong && !correct) return null;
+      return {
+        chinese: chinese || undefined,
+        pinyin: pinyin || undefined,
+        mongolian: mongolian || undefined,
+        label: label || undefined,
+        wrong: wrong || undefined,
+        correct: correct || undefined,
+      };
     })
     .filter((item): item is HskGuidedStepExample => item !== null);
 }
@@ -178,7 +204,9 @@ function normalizeGuidedStep(raw: unknown, index: number): HskGuidedStep | null 
               ? "Үгийн сан"
               : type === "dialogue"
                 ? "Ярианы дасгал"
-                : type === "characters"
+                : type === "common-mistake"
+                  ? "Түгээмэл алдаа"
+                  : type === "characters"
                   ? "Үсэг"
                   : type === "practice-menu"
                     ? "Дасгал"

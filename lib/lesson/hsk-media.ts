@@ -15,11 +15,15 @@ export type HskMediaImage = {
   id: string;
   file: string;
   section?: string;
+  /** Gold Standard media.json role (e.g. hero). */
+  role?: string;
   title?: string;
   url?: string;
   storagePath?: string;
   storageStatus?: "uploaded" | "package-reference-only" | "missing";
 };
+
+export type HskMediaImageVariant = "hero" | "wide" | "standard";
 
 export type HskMediaBundle = {
   lessonId?: string;
@@ -44,6 +48,7 @@ function normalizeImage(raw: unknown): HskMediaImage | null {
     id: id || file.replace(/^.*\//, "").replace(/\.[^.]+$/, ""),
     file,
     section: trim(raw.section) || undefined,
+    role: trim(raw.role) || undefined,
     title: trim(raw.title) || undefined,
     url: trim(raw.url) || undefined,
     storagePath: trim(raw.storagePath) || undefined,

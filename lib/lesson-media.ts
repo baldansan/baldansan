@@ -21,9 +21,9 @@ export function hasVideoUrl(
 }
 
 export function hasThumbnailUrl(
-  lesson: Pick<LessonContent, "thumbnailUrl">
+  lesson: Pick<LessonContent, "thumbnailUrl" | "imageUrl">
 ): boolean {
-  return Boolean(lesson.thumbnailUrl?.trim());
+  return Boolean(lesson.thumbnailUrl?.trim() || lesson.imageUrl?.trim());
 }
 
 export function hasAudioUrl(lesson: Pick<LessonContent, "audioUrl">): boolean {

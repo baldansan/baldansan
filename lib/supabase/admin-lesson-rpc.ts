@@ -29,6 +29,7 @@ type RpcLessonRow = {
   language?: string | null;
   video_url?: string | null;
   thumbnail_url?: string | null;
+  image_url?: string | null;
   audio_url?: string | null;
   source_note?: string | null;
   media_status?: string | null;
@@ -118,7 +119,10 @@ function mapRpcBundleToLessonContent(
     videoPlaceholder: VIDEO_PLACEHOLDER,
     watchTotalTime: durationToWatchTime(lesson.duration),
     videoUrl: lesson.video_url?.trim() || undefined,
-    thumbnailUrl: lesson.thumbnail_url?.trim() || undefined,
+    thumbnailUrl:
+      lesson.thumbnail_url?.trim() || lesson.image_url?.trim() || undefined,
+    imageUrl:
+      lesson.image_url?.trim() || lesson.thumbnail_url?.trim() || undefined,
     audioUrl: lesson.audio_url?.trim() || undefined,
     sourceNote: lesson.source_note?.trim() || undefined,
     mediaStatus: lesson.media_status?.trim() || "missing",

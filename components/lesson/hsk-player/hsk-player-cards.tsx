@@ -8,6 +8,7 @@ import { HskOptionalVideoCard } from "@/components/lesson/hsk-optional-video-car
 import {
   resolveHskGuidedStepMediaDisplay,
   type HskGuidedStepMediaRef,
+  type HskMediaImageVariant,
 } from "@/lib/lesson/hsk-media";
 import type { HskGuidedStep } from "@/lib/lesson/hsk-guided-step";
 import { HSK_PLAYER } from "@/lib/lesson/hsk-player/hsk-player-theme";
@@ -18,16 +19,28 @@ import type { TeachingImage } from "@/lib/lesson/teaching-media";
 import type { LessonContent } from "@/types/lesson-content";
 import type { VocabularyWord } from "@/types/lesson";
 
+function stepImageVariant(stepType?: string): HskMediaImageVariant {
+  if (stepType === "teacher-intro" || stepType === "key-phrase" || stepType === "complete") {
+    return "hero";
+  }
+  if (stepType === "pinyin" || stepType === "tones" || stepType === "dialogue") {
+    return "wide";
+  }
+  return "standard";
+}
+
 function HskStepImageSlot({
   media,
   stepMedia,
   teachingImages,
   alt = "",
+  variant = "standard",
 }: {
   media?: HskStudyContent["media"];
   stepMedia: HskGuidedStepMediaRef;
   teachingImages?: TeachingImage[];
   alt?: string;
+  variant?: HskMediaImageVariant;
 }) {
   const { imageUrl, packageLabel } = resolveHskGuidedStepMediaDisplay(
     media,
@@ -37,7 +50,12 @@ function HskStepImageSlot({
   if (!imageUrl && !packageLabel) return null;
   return (
     <div className="mt-3">
-      <HskMediaImage src={imageUrl} alt={alt} packageLabel={packageLabel} />
+      <HskMediaImage
+        src={imageUrl}
+        alt={alt}
+        packageLabel={packageLabel}
+        variant={variant}
+      />
     </div>
   );
 }
@@ -84,14 +102,15 @@ export function TeacherSpeechCard({
         stepMedia={stepMedia}
         teachingImages={teachingImages}
         alt={title}
+        variant="hero"
       />
       <div className="mt-4 flex items-start gap-3">
         <span
           className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full text-xl text-white shadow-sm"
-          style={{ backgroundColor: HSK_PLAYER.primary }}
+          style={{ backgroundColor: HSK_PLAYER.accent }}
           aria-hidden
         >
-          👩‍🏫
+          🐫
         </span>
         <div
           className="relative min-w-0 flex-1 rounded-2xl rounded-tl-md px-4 py-3"
@@ -149,6 +168,7 @@ export function KeyPhraseCard({
         stepMedia={stepMedia}
         teachingImages={teachingImages}
         alt={chinese}
+        variant="hero"
       />
       <div className="mt-4 text-center">
         <p className="text-5xl font-bold leading-none" style={{ color: HSK_PLAYER.text }}>
@@ -213,6 +233,7 @@ export function PinyinPracticeCard({
         stepMedia={stepMedia}
         teachingImages={teachingImages}
         alt="Pinyin"
+        variant="wide"
       />
       <ul className="mt-3 space-y-2">
         {explainer.map((line) => (
@@ -292,6 +313,7 @@ export function TonePracticeCard({
         stepMedia={stepMedia}
         teachingImages={teachingImages}
         alt="Tone diagram"
+        variant="wide"
       />
       <div className="mt-3 grid grid-cols-2 gap-2">
         {tones.map((tone, index) => (
@@ -434,6 +456,7 @@ export function DialoguePracticeCard({
         stepMedia={stepMedia}
         teachingImages={teachingImages}
         alt="Dialogue"
+        variant="wide"
       />
       <div className="mt-4 space-y-2">
         {lines.map((line, index) => {
@@ -487,20 +510,102 @@ export function DialoguePracticeCard({
   );
 }
 
+export function CommonMistakesCard({
+  step,
+  media,
+  teachingImages,
+}: {
+  step: HskGuidedStep;
+  media?: HskStudyContent["media"];
+  teachingImages?: TeachingImage[];
+}) {
+  const stepMedia: HskGuidedStepMediaRef = {
+    imageId: step.imageId,
+    mediaSection: step.mediaSection,
+    id: step.id,
+  };
+
+  const pairs =
+    step.examples.length > 0
+      ? step.examples
+      : [{ wrong: "ni hao", correct: "nǐ hǎo", mongolian: "Tone тэмдэг чухал" }];
+
+  return (
+    <HskPlayerCard>
+      <p className="text-xs font-bold uppercase tracking-wide" style={{ color: HSK_PLAYER.muted }}>
+        {step.titleMn || "Түгээмэл алдаа"}
+      </p>
+      <HskStepImageSlot
+        media={media}
+        stepMedia={stepMedia}
+        teachingImages={teachingImages}
+        alt={step.titleMn}
+        variant="wide"
+      />
+      {step.teacherSpeechMn || step.bulletsMn.length > 0 ? (
+        <p
+          className="mt-3 rounded-xl px-3 py-2.5 text-sm leading-6"
+          style={{ backgroundColor: HSK_PLAYER.softYellow, color: HSK_PLAYER.text }}
+        >
+          {step.teacherSpeechMn || step.bulletsMn.join(" ")}
+        </p>
+      ) : null}
+      <div className="mt-4 space-y-2">
+        {pairs.map((pair, index) => (
+          <div
+            key={`${pair.wrong}-${pair.correct}-${index}`}
+            className="grid grid-cols-2 gap-2"
+          >
+            <div
+              className="rounded-2xl px-3 py-3 text-center"
+              style={{ backgroundColor: HSK_PLAYER.softPink }}
+            >
+              <p className="text-xs font-semibold text-rose-700">❌ Буруу</p>
+              <p className="mt-1 text-lg font-bold" style={{ color: HSK_PLAYER.text }}>
+                {pair.wrong ?? pair.pinyin ?? pair.chinese}
+              </p>
+            </div>
+            <div
+              className="rounded-2xl px-3 py-3 text-center"
+              style={{ backgroundColor: HSK_PLAYER.softGreen }}
+            >
+              <p className="text-xs font-semibold text-emerald-700">✅ Зөв</p>
+              <p className="mt-1 text-lg font-bold" style={{ color: HSK_PLAYER.text }}>
+                {pair.correct ?? pair.pinyin ?? pair.chinese}
+              </p>
+            </div>
+          </div>
+        ))}
+      </div>
+      {pairs[0]?.mongolian ? (
+        <p className="mt-3 text-sm leading-6" style={{ color: HSK_PLAYER.muted }}>
+          {pairs[0].mongolian}
+        </p>
+      ) : null}
+    </HskPlayerCard>
+  );
+}
+
 export function PracticeMenuCard({
   vocabHref,
   quizHref,
   lessonId,
+  media,
+  stepMedia,
+  teachingImages,
 }: {
   vocabHref: string;
   quizHref: string;
   lessonId: string;
+  media?: HskStudyContent["media"];
+  stepMedia?: HskGuidedStepMediaRef;
+  teachingImages?: TeachingImage[];
 }) {
   const items = [
-    { label: "Сонсож давтах", href: vocabHref, icon: "🔊", bg: HSK_PLAYER.softBlue },
-    { label: "Pinyin сонгох", href: quizHref, icon: "✏️", bg: HSK_PLAYER.softGreen },
+    { label: "Сонсож давт", href: vocabHref, icon: "🔊", bg: HSK_PLAYER.softBlue },
+    { label: "Pinyin сонго", href: quizHref, icon: "✏️", bg: HSK_PLAYER.softGreen },
     { label: "Ханз тань", href: `/kanji?lessonId=${lessonId}`, icon: "字", bg: HSK_PLAYER.softYellow },
-    { label: "Богино quiz", href: quizHref, icon: "📝", bg: HSK_PLAYER.softPink },
+    { label: "Quiz өг", href: quizHref, icon: "📝", bg: HSK_PLAYER.softPink },
   ];
 
   return (
@@ -508,6 +613,15 @@ export function PracticeMenuCard({
       <h2 className="text-lg font-bold" style={{ color: HSK_PLAYER.text }}>
         Практик дадлага
       </h2>
+      {stepMedia ? (
+        <HskStepImageSlot
+          media={media}
+          stepMedia={stepMedia}
+          teachingImages={teachingImages}
+          alt="Practice"
+          variant="wide"
+        />
+      ) : null}
       <p className="mt-1 text-sm" style={{ color: HSK_PLAYER.muted }}>
         Аль ч сонголтоор бататгаж болно.
       </p>
@@ -539,6 +653,9 @@ export function LessonCompleteCard({
   nextHref,
   detailHref,
   onRestart,
+  media,
+  stepMedia,
+  teachingImages,
 }: {
   message: string;
   vocabHref: string;
@@ -546,13 +663,33 @@ export function LessonCompleteCard({
   nextHref: string | null;
   detailHref: string;
   onRestart: () => void;
+  media?: HskStudyContent["media"];
+  stepMedia?: HskGuidedStepMediaRef;
+  teachingImages?: TeachingImage[];
 }) {
   return (
     <HskPlayerCard>
-      <div className="flex flex-col items-center text-center">
-        <p className="text-5xl" aria-hidden>
-          🏆
-        </p>
+      {stepMedia ? (
+        <HskStepImageSlot
+          media={media}
+          stepMedia={stepMedia}
+          teachingImages={teachingImages}
+          alt="Complete"
+          variant="hero"
+        />
+      ) : (
+        <div className="flex flex-col items-center text-center">
+          <p className="text-5xl" aria-hidden>
+            🏆
+          </p>
+        </div>
+      )}
+      <div className="mt-3 flex flex-col items-center text-center">
+        {!stepMedia ? null : (
+          <p className="text-3xl" aria-hidden>
+            🏆
+          </p>
+        )}
         <h2 className="mt-3 text-xl font-bold" style={{ color: HSK_PLAYER.text }}>
           Маш сайн!
         </h2>
@@ -613,6 +750,7 @@ export function GuidedStepCard({
         stepMedia={stepMedia}
         teachingImages={teachingImages}
         alt={step.titleMn}
+        variant={stepImageVariant(step.type)}
       />
       {step.chinese ? (
         <p className="mt-3 text-center text-3xl font-bold" style={{ color: HSK_PLAYER.text }}>

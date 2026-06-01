@@ -42,7 +42,8 @@ export function findHskHeroImage(media: unknown): HskMediaImage | null {
     bundle.images.find(predicate) ?? null;
 
   return (
-    byPriority((img) => img.id === "lesson1-hero") ??
+    byPriority((img) => img.role?.toLowerCase() === "hero") ??
+    byPriority((img) => img.id === "lesson1-camel-hero" || img.id === "lesson1-hero") ??
     byPriority((img) => img.section?.toLowerCase() === "teacher-intro") ??
     byPriority((img) => img.id.toLowerCase().includes("hero")) ??
     byPriority((img) => img.section?.toLowerCase().includes("hero") ?? false) ??
@@ -85,9 +86,9 @@ export function hasHskPackageImages(
 }
 
 export function hasHskPackageImagesNeedingStorage(
-  lesson: Pick<LessonContent, "sourceNote" | "teachingImages" | "thumbnailUrl">
+  lesson: Pick<LessonContent, "sourceNote" | "teachingImages" | "thumbnailUrl" | "imageUrl">
 ): boolean {
-  if (lesson.thumbnailUrl?.trim()) return false;
+  if (lesson.thumbnailUrl?.trim() || lesson.imageUrl?.trim()) return false;
 
   const parsed = parseLessonSourceNote(lesson.sourceNote);
   if (parsed.format !== "json") return false;
@@ -229,6 +230,7 @@ const SECTION_ALIASES: Record<string, readonly string[]> = {
   dialogue: ["dialogue", "dialogues"],
   vocabulary: ["vocabulary", "vocab", "flashcard"],
   practice: ["practice", "practice-menu"],
+  mistake: ["mistake", "common-mistake", "common-mistakes", "mistakes"],
 };
 
 function matchesSectionNeedle(image: HskMediaImage, needle: string): boolean {

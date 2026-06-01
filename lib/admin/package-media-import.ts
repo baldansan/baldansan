@@ -51,7 +51,11 @@ export function getPackageMediaStoragePath(
   kind: "audio" | "image",
   fileName: string
 ): string {
-  return `${courseId}/${lessonId}/${kind}/${sanitizeFileName(fileName)}`;
+  const safeName = sanitizeFileName(fileName);
+  if (kind === "image") {
+    return `${lessonId}/${safeName}`;
+  }
+  return `${courseId}/${lessonId}/audio/${safeName}`;
 }
 
 export async function uploadPackageMediaFile(
@@ -393,6 +397,7 @@ export async function finalizePackageMediaImport(input: {
     const mediaUpdate = await updateLessonMedia(lessonId, {
       audioUrl: audioUrl ?? "",
       thumbnailUrl: thumbnailUrl ?? "",
+      imageUrl: thumbnailUrl ?? "",
       sourceNote,
       mediaStatus,
     });
