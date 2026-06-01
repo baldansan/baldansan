@@ -3,6 +3,7 @@ import {
 } from "@/lib/admin/lesson-package-type";
 import { hasVideoUrl } from "@/lib/lesson-media";
 import { enrichLessonTeachingMedia } from "@/lib/lesson/teaching-media";
+import { enrichLessonHskContent } from "@/lib/lesson/hsk-lesson-content";
 import type { LessonContent } from "@/types/lesson-content";
 
 export type LessonContentType = "textbook" | "video" | "exam";
@@ -108,7 +109,7 @@ export function enrichLessonContentMeta(lesson: LessonContent): LessonContent {
           ...(lessonType ? { lessonType } : {}),
         };
 
-  return enrichLessonTeachingMedia(withMeta);
+  return enrichLessonHskContent(enrichLessonTeachingMedia(withMeta));
 }
 
 export function isTextbookContent(lesson: LessonContent): boolean {

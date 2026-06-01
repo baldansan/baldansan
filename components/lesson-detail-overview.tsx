@@ -20,6 +20,7 @@ import {
   isKoreanFlashcardVocabularyLesson,
   koreanVocabularyStudyCtaLabel,
 } from "@/lib/lesson/korean-vocabulary-ui";
+import { isHsk1FoundationLesson } from "@/lib/lesson/hsk-lesson-content";
 import type { LessonContent } from "@/types/lesson-content";
 
 type Props = {
@@ -76,6 +77,7 @@ export function LessonDetailOverview({
     lesson,
     lesson.vocabulary
   );
+  const hsk1Foundation = isHsk1FoundationLesson(lesson);
   const vocabStepTitle = koreanFlashcard
     ? koreanVocabularyStudyCtaLabel(lesson)
     : LEARNER_LESSON.vocabulary;
@@ -94,7 +96,9 @@ export function LessonDetailOverview({
           ? "Шалгалтын тойм"
           : LEARNER_LESSON.watch,
       desc: textbook
-        ? "Тойм + сурах"
+        ? hsk1Foundation
+          ? "Pinyin, өнгө, харилцан яриа"
+          : "Тойм + сурах"
         : exam
           ? `${lesson.quizCount} асуулт`
           : "Видео + хадмал",
