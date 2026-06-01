@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { features } from "@/lib/features";
 import { LEARNER_NAV } from "@/lib/learner-labels";
 import { BRAND_NAME_MN } from "@/lib/brand";
 
@@ -43,6 +44,7 @@ export function AppFooter() {
             ))}
           </nav>
         </div>
+        {features.b2b ? (
         <div>
           <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">
             Байгууллага / B2B
@@ -62,6 +64,7 @@ export function AppFooter() {
             ))}
           </nav>
         </div>
+        ) : null}
         <p className="text-xs text-slate-500">
           {BRAND_NAME_MN} — богино бичлэг, үгийн сан, quiz-ээр Хятад хэл сур.
         </p>

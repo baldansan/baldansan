@@ -2,46 +2,137 @@
 
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
+import { AuthLoadErrorCard } from "@/components/auth/auth-load-error-card";
+import { buildFallbackAuthCheckResult } from "@/lib/auth/auth-check-utils";
+import {
+  runClientAuthCheck,
+  type ClientAuthCheckResult,
+} from "@/lib/auth/client-auth-check";
+import { authDevLog } from "@/lib/auth/auth-dev-log";
+import { features } from "@/lib/features";
+import { useLoadingWatchdog } from "@/lib/hooks/use-loading-watchdog";
+import { withTimeout } from "@/lib/async/with-timeout";
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
 import { MobileCard } from "@/components/mobile/mobile-card";
-import {
-  getCurrentUser,
-  hasSupabaseConfig,
-  signOut,
-} from "@/lib/supabase/auth";
 import { isCurrentUserAdmin } from "@/lib/supabase/admin";
-import {
-  countCompletedLessonsAll,
-} from "@/lib/progress";
+import { hasSupabaseConfig, signOut } from "@/lib/supabase/auth";
+import { countCompletedLessonsAll } from "@/lib/progress";
 import { getStreakUnified } from "@/lib/retention/retention-service";
 import type { AuthUser } from "@/types/auth";
 
+type LoadState = "loading" | "ready" | "error";
+
+const PROFILE_ROUTE = "/profile";
+
 export function ProfileAppView() {
   const router = useRouter();
-  const [ready, setReady] = useState(false);
+  const [loadState, setLoadState] = useState<LoadState>("loading");
   const [user, setUser] = useState<AuthUser | null>(null);
   const [isAdmin, setIsAdmin] = useState(false);
   const [completedLessons, setCompletedLessons] = useState(0);
   const [streak, setStreak] = useState(0);
   const [signingOut, setSigningOut] = useState(false);
+  const [checkResult, setCheckResult] = useState<ClientAuthCheckResult | null>(
+    null
+  );
+  const [profileError, setProfileError] = useState<string | null>(null);
+  const [attempt, setAttempt] = useState(0);
+
+  const finishWithError = useCallback((message: string) => {
+    setProfileError(message);
+    setCheckResult((current) =>
+      current ?? buildFallbackAuthCheckResult(PROFILE_ROUTE, message)
+    );
+    setLoadState("error");
+  }, []);
+
+  const loadProfile = useCallback(async () => {
+    setLoadState("loading");
+    setProfileError(null);
+
+    authDevLog("profile load started");
+
+    try {
+      setCompletedLessons(countCompletedLessonsAll());
+
+      if (!hasSupabaseConfig) {
+        authDevLog("profile: supabase not configured, showing guest state");
+        setUser(null);
+        setIsAdmin(false);
+        setStreak(0);
+        setCheckResult(buildFallbackAuthCheckResult(PROFILE_ROUTE, "Supabase тохиргоо дутуу байна"));
+        setLoadState("ready");
+        return;
+      }
+
+      const auth = await runClientAuthCheck({
+        includeAdmin: false,
+        route: PROFILE_ROUTE,
+      });
+      setCheckResult(auth);
+
+      if (auth.timedOut || (auth.error && !auth.user)) {
+        finishWithError(auth.error ?? "Auth шалгалт хэт удаж байна");
+        return;
+      }
+
+      setUser(auth.user);
+
+      if (!auth.user) {
+        setIsAdmin(false);
+        setStreak(0);
+        setLoadState("ready");
+        authDevLog("profile: no session, showing login state");
+        return;
+      }
+
+      void withTimeout(isCurrentUserAdmin(), 5000, "profileAdminCheck")
+        .then((admin) => {
+          setIsAdmin(admin);
+          authDevLog("profile admin check result", { isAdmin: admin });
+        })
+        .catch(() => setIsAdmin(false));
+
+      try {
+        const retention = await withTimeout(
+          getStreakUnified(),
+          5000,
+          "getStreakUnified"
+        );
+        setStreak(retention?.currentStreak ?? 0);
+      } catch (error) {
+        setStreak(0);
+        const message =
+          error instanceof Error ? error.message : "Profile data fetch failed";
+        setProfileError(message);
+        authDevLog("profile data error", message);
+      }
+
+      authDevLog("profile loaded", {
+        hasUser: Boolean(auth.user),
+        userEmail: auth.user?.email,
+      });
+      setLoadState("ready");
+    } catch (error) {
+      const message =
+        error instanceof Error ? error.message : "Profile load failed";
+      authDevLog("profile load error", message);
+      finishWithError(message);
+    }
+  }, [finishWithError]);
 
   useEffect(() => {
-    async function load() {
-      let authUser: AuthUser | null = null;
-      if (hasSupabaseConfig) {
-        const { data } = await getCurrentUser();
-        authUser = data;
-      }
-      setUser(authUser);
-      setIsAdmin(authUser ? await isCurrentUserAdmin() : false);
-      setCompletedLessons(countCompletedLessonsAll());
-      const retention = await getStreakUnified();
-      setStreak(retention?.currentStreak ?? 0);
-      setReady(true);
-    }
-    void load();
-  }, []);
+    void loadProfile();
+  }, [loadProfile, attempt]);
+
+  useLoadingWatchdog({
+    active: loadState === "loading",
+    onTimeout: useCallback(() => {
+      authDevLog("profile watchdog timeout");
+      finishWithError("Auth шалгалт хэт удаж байна");
+    }, [finishWithError]),
+  });
 
   async function handleLogout() {
     setSigningOut(true);
@@ -52,7 +143,7 @@ export function ProfileAppView() {
     router.refresh();
   }
 
-  if (!ready) {
+  if (loadState === "loading") {
     return (
       <MobileAppShell activeTab="profile" mainClassName="max-w-[390px] mx-auto w-full">
         <p className="py-16 text-center text-sm text-[var(--app-muted)]">
@@ -62,9 +153,31 @@ export function ProfileAppView() {
     );
   }
 
+  if (loadState === "error") {
+    return (
+      <MobileAppShell activeTab="profile" mainClassName="max-w-[390px] mx-auto w-full">
+        <AuthLoadErrorCard
+          title="Профайл ачаалахад алдаа гарлаа"
+          description="Auth эсвэл профайл мэдээлэл татахад алдаа гарлаа."
+          result={{
+            ...(checkResult ?? buildFallbackAuthCheckResult(PROFILE_ROUTE, profileError ?? "Unknown error")),
+            error: profileError ?? checkResult?.error ?? "Unknown error",
+          }}
+          route={PROFILE_ROUTE}
+          onRetry={() => setAttempt((value) => value + 1)}
+        />
+      </MobileAppShell>
+    );
+  }
+
   if (!user) {
     return (
       <MobileAppShell activeTab="profile" mainClassName="max-w-[390px] mx-auto w-full">
+        {!hasSupabaseConfig ? (
+          <MobileCard className="mb-4 border border-amber-200 bg-amber-50 !p-3 text-xs text-amber-900">
+            Supabase тохиргоо дутуу байна. Local progress only until .env.local is configured.
+          </MobileCard>
+        ) : null}
         <div className="py-12 text-center">
           <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-slate-200 text-3xl">
             👤
@@ -98,7 +211,9 @@ export function ProfileAppView() {
     ...(isAdmin
       ? [{ href: "/admin", label: "Админ самбар", icon: "⚙️" }]
       : []),
-    { href: "/my-assignments", label: "Ангид нэгдэх", icon: "🏫" },
+    ...(features.b2b
+      ? [{ href: "/my-assignments", label: "Ангид нэгдэх", icon: "🏫" }]
+      : []),
     { href: "/progress", label: "Миний явц", icon: "📊" },
     { href: "/review", label: "Үзсэн үг", icon: "📖" },
     { href: "/settings", label: "Тохиргоо", icon: "🔧" },
@@ -106,6 +221,12 @@ export function ProfileAppView() {
 
   return (
     <MobileAppShell activeTab="profile" mainClassName="max-w-[390px] mx-auto w-full">
+      {profileError ? (
+        <MobileCard className="mb-4 border border-amber-200 bg-amber-50 !p-3 text-xs text-amber-900">
+          Зарим профайл мэдээлэл ачаалж чадсангүй: {profileError}
+        </MobileCard>
+      ) : null}
+
       <section className="mb-5 text-center">
         <div className="relative mx-auto w-fit">
           <div className="flex h-20 w-20 items-center justify-center rounded-full bg-emerald-100 text-3xl">

@@ -1,4 +1,6 @@
 import { parseTagFromSourceNote } from "@/lib/lesson-content-type";
+import { formatLearnerTeacherNotes } from "@/lib/lesson/format-learner-teacher-note";
+import { parseHskMediaBundle, parseHskMediaFromLesson, type HskMediaBundle } from "@/lib/lesson/hsk-media";
 import { parseSourceNoteSegment } from "@/lib/lesson/hsk-source-note";
 import {
   parseLegacySourceNoteJsonSegment,
@@ -63,6 +65,7 @@ export type HskStudyContent = {
   characterNotes: HskCharacterNote[];
   studyGuideSteps: string[];
   teacherNotes: string[];
+  media: HskMediaBundle | null;
   /** Dev-only section resolution metadata (when NODE_ENV=development). */
   sectionDebug?: HskStudySectionDebugMap;
 };
@@ -101,25 +104,49 @@ function uniqueStrings(values: string[]): string[] {
   return out;
 }
 
+const DEFAULT_TONE_EXAMPLES = ["mā", "má", "mǎ", "mà"] as const;
+const DEFAULT_TONE_LABELS = [
+  "1-р өнгө",
+  "2-р өнгө",
+  "3-р өнгө",
+  "4-р өнгө",
+] as const;
+const DEFAULT_TONE_MN = [
+  "өндөр, тэгш",
+  "дээшлэх",
+  "доошлоод дээшлэх",
+  "огцом буух",
+] as const;
+
 function parseToneExamples(value: unknown): HskToneExample[] {
   const rows: HskToneExample[] = [];
 
   const pushRow = (item: Record<string, unknown>, index: number) => {
+    const toneNum =
+      Number(item.toneNumber ?? item.tone ?? item.number ?? index + 1) || index + 1;
     const label =
       trim(item.label) ||
+      trim(item.titleMn) ||
       trim(item.name) ||
-      trim(item.tone) ||
       trim(item.title) ||
-      `${index + 1}-р өнгө`;
+      (DEFAULT_TONE_LABELS[toneNum - 1] ?? `${toneNum}-р өнгө`);
     const example =
-      trim(item.example) || trim(item.word) || trim(item.chinese) || "";
-    const pinyin = trim(item.pinyin) || trim(item.reading) || example;
+      trim(item.example) ||
+      trim(item.word) ||
+      trim(item.chinese) ||
+      trim(item.titleChinese) ||
+      (DEFAULT_TONE_EXAMPLES[toneNum - 1] ?? "");
+    const pinyin =
+      trim(item.pinyin) ||
+      trim(item.reading) ||
+      example ||
+      (DEFAULT_TONE_EXAMPLES[toneNum - 1] ?? "");
     const mongolian =
       trim(item.mongolian) ||
       trim(item.mn) ||
       trim(item.description) ||
       trim(item.explanation) ||
-      "";
+      (DEFAULT_TONE_MN[toneNum - 1] ?? "");
     if (!example && !pinyin && !mongolian) return;
     rows.push({
       label,
@@ -477,7 +504,12 @@ export function parseHskStudyContentFromLesson(
   const studyGuideSteps = uniqueStrings(studyGuideResolved.value);
 
   const teacherResolved = resolveHskTeacherNotes(pool);
-  const teacherNotes = teacherResolved.value;
+  const teacherNotes = formatLearnerTeacherNotes(teacherResolved.value);
+
+  let media: HskMediaBundle | null = parseHskMediaFromLesson(lesson);
+  if (!media && isRecord(pool.studyContent)) {
+    media = parseHskMediaBundle(pool.studyContent.media);
+  }
 
   const sectionDebug: HskStudySectionDebugMap = {
     objectives: {
@@ -534,6 +566,7 @@ export function parseHskStudyContentFromLesson(
     characterNotes,
     studyGuideSteps,
     teacherNotes,
+    media,
     ...(process.env.NODE_ENV === "development" ? { sectionDebug } : {}),
   };
 }

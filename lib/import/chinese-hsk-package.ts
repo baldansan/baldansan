@@ -196,6 +196,11 @@ export async function parseChineseHskLessonZip(file: File): Promise<LessonZipVal
       "studyContent.json",
     ]);
 
+    const mediaResult = await readJsonFileFirst(zip, [
+      "media.json",
+      "media/manifest.json",
+    ]);
+
     const rawFiles: ChineseHskRawFiles = {
       manifest: manifestResult.data,
       lesson: (await readJsonFile(zip, "lesson.json")).data,
@@ -208,10 +213,15 @@ export async function parseChineseHskLessonZip(file: File): Promise<LessonZipVal
       audioManifest: (await readJsonFile(zip, "audio-manifest.json")).data,
       subtitles: (await readJsonFile(zip, "subtitles.json")).data,
       studyContent: studyContentResult.data,
+      media: mediaResult.data,
     };
 
     if (studyContentResult.path) {
       warnings.push(`Loaded study content from ${studyContentResult.path}.`);
+    }
+
+    if (mediaResult.path) {
+      warnings.push(`Loaded media manifest from ${mediaResult.path}.`);
     }
 
     if (studyContentResult.error) {

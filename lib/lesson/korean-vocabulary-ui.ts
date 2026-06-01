@@ -2,6 +2,7 @@ import { isPrelessonPackage } from "@/lib/admin/lesson-package-type";
 import { isHangulSyllable, isSingleHangulJamo } from "@/lib/games/game-data-core";
 import { inferLessonLanguage } from "@/lib/language-track";
 import { resolveLessonTypeTag } from "@/lib/lesson-content-type";
+import { isHskFlashcardVocabularyLesson } from "@/lib/lesson/hsk-vocabulary-ui";
 import { categorizeVocabularyForTranslate } from "@/lib/quiz/smart-options";
 import type { LessonContent } from "@/types/lesson-content";
 import type { VocabularyWord } from "@/types/lesson";
@@ -12,6 +13,17 @@ type KoreanLessonPick = Pick<
   LessonContent,
   "id" | "courseId" | "language" | "title" | "chineseTitle" | "lessonType" | "sourceNote"
 >;
+
+/** True when vocabulary should default to flashcard study (Korean / Hangul / HSK). */
+export function isFlashcardVocabularyLesson(
+  lesson: KoreanLessonPick,
+  vocabulary: VocabularyWord[] = []
+): boolean {
+  return (
+    isKoreanFlashcardVocabularyLesson(lesson, vocabulary) ||
+    isHskFlashcardVocabularyLesson(lesson, vocabulary)
+  );
+}
 
 /** True when vocabulary should default to flashcard study (Korean / Hangul). */
 export function isKoreanFlashcardVocabularyLesson(
@@ -108,7 +120,7 @@ export function resolveInitialVocabularyViewMode(
   const normalized = queryView?.trim().toLowerCase();
   if (normalized === "list") return "list";
   if (normalized === "flashcard" || normalized === "card") return "flashcard";
-  return isKoreanFlashcardVocabularyLesson(lesson, vocabulary)
+  return isFlashcardVocabularyLesson(lesson, vocabulary)
     ? "flashcard"
     : "list";
 }

@@ -37,6 +37,7 @@ export type ChineseHskRawFiles = {
   audioManifest: unknown;
   subtitles: unknown;
   studyContent: unknown;
+  media: unknown;
 };
 
 export type ChineseHskSectionInventory = Record<string, unknown>;
@@ -366,6 +367,7 @@ export function mergeHskProfileIntoSourceNote(
     audioManifest: options?.audioManifest ?? null,
     subtitles: null,
     studyContent: options?.studyContent ?? meta.studyContentPayload,
+    media: null,
   };
 
   return buildChineseHskImportSourceNote(manifest, meta, rawFiles, sourceNote, {

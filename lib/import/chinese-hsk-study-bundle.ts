@@ -22,6 +22,7 @@ export type HskStudyContentBundle = {
   workbook: unknown;
   vocabularyNotes: unknown;
   lessonTeaching: unknown;
+  media: unknown;
 };
 
 export type HskStudyContentImportSummary = {
@@ -212,6 +213,11 @@ export function buildHskStudyContentBundle(
     workbook: workbook ?? pickNested(studyContent, "workbook") ?? null,
     vocabularyNotes: pickNested(studyContent, "vocabularyNotes") ?? vocabulary,
     lessonTeaching: Object.keys(lessonTeaching ?? {}).length ? lessonTeaching : null,
+    media:
+      raw.media ??
+      pickNested(studyContent, "media") ??
+      pickNested(lesson, "media") ??
+      null,
   };
 }
 
@@ -256,6 +262,7 @@ export function buildChineseHskSourceNoteJson(
     workbook: bundle.workbook,
     vocabularyNotes: bundle.vocabularyNotes,
     lessonTeaching: bundle.lessonTeaching,
+    ...(bundle.media != null ? { media: bundle.media } : {}),
   };
 
   const payload: Record<string, unknown> = {
