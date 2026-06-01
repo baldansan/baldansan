@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import { GamePracticeLinks } from "@/components/games/game-practice-links";
+import { HskFlashcardVocabularyStudy } from "@/components/lesson/hsk-flashcard-vocabulary-study";
 import { VocabularyFlashcardStudy } from "@/components/lesson/vocabulary-flashcard-study";
 import { isPrelessonPackage } from "@/lib/admin/lesson-package-type";
 import { EmptyState } from "@/components/empty-state";
@@ -22,11 +23,15 @@ import { lettersDetailLinkLabel } from "@/lib/learner-letters-ui";
 import { getSelectedLanguage } from "@/lib/learner-onboarding";
 import { inferLessonLanguage } from "@/lib/language-track";
 import {
-  isKoreanFlashcardVocabularyLesson,
+  isFlashcardVocabularyLesson,
   koreanVocabularyPageTitle,
   resolveInitialVocabularyViewMode,
   type VocabularyViewMode,
 } from "@/lib/lesson/korean-vocabulary-ui";
+import {
+  hskVocabularyPageTitle,
+  isHskFlashcardVocabularyLesson,
+} from "@/lib/lesson/hsk-vocabulary-ui";
 import { isKoreanLesson0BeginnerFlow } from "@/lib/lesson/korean-lesson0-flow";
 import { lessonTrainingPath } from "@/lib/content";
 import { enrichVocabularyWithDbIds } from "@/lib/supabase/content";
@@ -71,7 +76,8 @@ export function LessonVocabularyClient({
   const isKorean = inferLessonLanguage(lesson) === "ko";
   const isPrelesson = isPrelessonPackage(lesson);
   const isLesson0 = isKoreanLesson0BeginnerFlow(lesson);
-  const useFlashcardDefault = isKoreanFlashcardVocabularyLesson(lesson, vocabulary);
+  const useFlashcardDefault = isFlashcardVocabularyLesson(lesson, vocabulary);
+  const useHskFlashcard = isHskFlashcardVocabularyLesson(lesson, vocabulary);
   const [viewMode, setViewMode] = useState<VocabularyViewMode>(() =>
     isLesson0
       ? "flashcard"
@@ -176,11 +182,15 @@ export function LessonVocabularyClient({
     setLearned(new Set(next));
   }
 
-  const pageTitle = useFlashcardDefault
-    ? koreanVocabularyPageTitle(lesson)
-    : LEARNER_LESSON.vocabulary;
+  const pageTitle = useHskFlashcard
+    ? hskVocabularyPageTitle(lesson)
+    : useFlashcardDefault
+      ? koreanVocabularyPageTitle(lesson)
+      : LEARNER_LESSON.vocabulary;
   const pageSubtitle = useFlashcardDefault
-    ? "Нэг үсэг, нэг үг — картаар алхмаар сур."
+    ? useHskFlashcard
+      ? "Нэг үг, нэг карт — Мэднэ эсвэл дахин давтана."
+      : "Нэг үсэг, нэг үг — картаар алхмаар сур."
     : "Үг бүрийг pinyin, Монгол утга, жишээ өгүүлбэртэй сур.";
   const ttsLangDefault = resolveKoreanTtsLang(lesson);
 
@@ -274,6 +284,7 @@ export function LessonVocabularyClient({
         <div className="mt-2">
           <LocalProgressNote />
         </div>
+        {!useHskFlashcard || viewMode === "list" ? (
         <div className="mt-4 rounded-2xl bg-purple-50 p-4 ring-1 ring-purple-200">
           <p className="text-sm font-semibold text-purple-900">Тоглоомоор давтах</p>
           <GamePracticeLinks
@@ -286,9 +297,10 @@ export function LessonVocabularyClient({
             }
           />
         </div>
+        ) : null}
       </section>
 
-      {useFlashcardDefault ? (
+      {useFlashcardDefault && !(useHskFlashcard && viewMode === "flashcard") ? (
         <div className="flex flex-wrap gap-2">
           <button
             type="button"
@@ -315,15 +327,44 @@ export function LessonVocabularyClient({
         </div>
       ) : null}
 
+      {useHskFlashcard && viewMode === "flashcard" ? (
+        <button
+          type="button"
+          onClick={() => setViewMode("list")}
+          className="mx-auto block text-xs font-medium text-slate-500 underline-offset-2 hover:text-emerald-700 hover:underline"
+        >
+          Жагсаалтаар харах
+        </button>
+      ) : null}
+
+      {useHskFlashcard && viewMode === "list" ? (
+        <button
+          type="button"
+          onClick={() => setViewMode("flashcard")}
+          className="mx-auto block text-xs font-medium text-emerald-700 underline-offset-2 hover:underline"
+        >
+          ← Картаар сурах
+        </button>
+      ) : null}
+
       {useFlashcardDefault && viewMode === "flashcard" ? (
-        <VocabularyFlashcardStudy
-          lesson={lesson}
-          vocabulary={vocabulary}
-          learned={learned}
-          adminPreview={adminPreview}
-          onMarkLearned={handleToggleLearned}
-          onShowList={() => setViewMode("list")}
-        />
+        useHskFlashcard ? (
+          <HskFlashcardVocabularyStudy
+            lesson={lesson}
+            vocabulary={vocabulary}
+            adminPreview={adminPreview}
+            onShowList={() => setViewMode("list")}
+          />
+        ) : (
+          <VocabularyFlashcardStudy
+            lesson={lesson}
+            vocabulary={vocabulary}
+            learned={learned}
+            adminPreview={adminPreview}
+            onMarkLearned={handleToggleLearned}
+            onShowList={() => setViewMode("list")}
+          />
+        )
       ) : null}
 
       {!useFlashcardDefault || viewMode === "list" ? (

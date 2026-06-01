@@ -1,5 +1,7 @@
 import {
   inferProfileFromHskLevel,
+  inferProfileFromManifest,
+  isHskPrelessonProfile,
   isKnownHskProfile,
   type HskLessonProfileId,
 } from "@/lib/import/chinese-hsk-profiles";
@@ -17,6 +19,7 @@ export type ChineseHskManifest = {
   bookPart: string | null;
   lessonNumber: number | null;
   lessonProfile: HskLessonProfileId;
+  lessonType?: string | null;
   source?: Record<string, unknown>;
   verification?: Record<string, unknown>;
   title?: string;
@@ -37,6 +40,7 @@ export type ChineseHskRawFiles = {
   audioManifest: unknown;
   subtitles: unknown;
   studyContent: unknown;
+  media: unknown;
 };
 
 export type ChineseHskSectionInventory = Record<string, unknown>;
@@ -122,11 +126,20 @@ export function normalizeChineseHskManifest(
   if (!courseId) return null;
 
   if (!lessonId && lessonNumber != null) {
-    lessonId = `${courseId}-l${lessonNumber}`;
+    if (lessonNumber === 0) {
+      lessonId = `${courseId}-prelesson-01-pinyin-tone`;
+    } else {
+      lessonId = `${courseId}-l${String(lessonNumber).padStart(2, "0")}`;
+    }
     warnings.push(
       `manifest.json: lessonId missing — derived "${lessonId}" from lessonNumber.`
     );
   }
+
+  const lessonTypeRaw =
+    trim(raw.lessonType ?? raw.lesson_type) ||
+    (isRecord(raw.lesson) ? trim(raw.lesson.lessonType ?? raw.lesson.lesson_type) : "") ||
+    null;
 
   const hskLevel = parseNumber(raw.hskLevel ?? raw.hsk_level);
   if (hskLevel == null || hskLevel < 1 || hskLevel > 6) {
@@ -135,21 +148,36 @@ export function normalizeChineseHskManifest(
 
   let lessonProfileRaw = trim(raw.lessonProfile ?? raw.lesson_profile);
   let lessonProfile: HskLessonProfileId;
+  const inferred = inferProfileFromManifest({
+    lessonProfile: lessonProfileRaw || null,
+    lessonType: lessonTypeRaw,
+    lessonNumber,
+    hskLevel,
+  });
+  if (!inferred) return null;
+
   if (!lessonProfileRaw || !isKnownHskProfile(lessonProfileRaw)) {
-    const inferred = inferProfileFromHskLevel(hskLevel);
-    if (!inferred) return null;
     if (lessonProfileRaw) {
       warnings.push(
-        `manifest.json: unknown lessonProfile "${lessonProfileRaw}" — inferred from hskLevel.`
+        `manifest.json: unknown lessonProfile "${lessonProfileRaw}" — inferred from hskLevel/lessonType.`
       );
     }
     lessonProfile = inferred;
   } else {
     lessonProfile = lessonProfileRaw;
-    if (inferProfileFromHskLevel(hskLevel) !== lessonProfile) {
+    if (
+      inferProfileFromHskLevel(hskLevel) !== lessonProfile &&
+      !isHskPrelessonProfile(lessonProfile)
+    ) {
       warnings.push("HSK түвшин ба lessonProfile зөрж байна.");
     }
   }
+
+  const lessonType =
+    lessonTypeRaw ||
+    (isHskPrelessonProfile(lessonProfile) || lessonNumber === 0
+      ? "prelesson"
+      : null);
 
   const language = trim(raw.language) || "zh-MN";
 
@@ -163,6 +191,7 @@ export function normalizeChineseHskManifest(
     bookPart: trim(raw.bookPart ?? raw.book_part) || null,
     lessonNumber,
     lessonProfile,
+    lessonType,
     source: isRecord(raw.source) ? raw.source : undefined,
     verification: isRecord(raw.verification) ? raw.verification : undefined,
     title: trim(raw.title) || undefined,
@@ -366,6 +395,7 @@ export function mergeHskProfileIntoSourceNote(
     audioManifest: options?.audioManifest ?? null,
     subtitles: null,
     studyContent: options?.studyContent ?? meta.studyContentPayload,
+    media: null,
   };
 
   return buildChineseHskImportSourceNote(manifest, meta, rawFiles, sourceNote, {

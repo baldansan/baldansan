@@ -14,8 +14,11 @@ export const LEARNER_NAV = {
 
 export const LEARNER_LESSON = {
   watch: "Хичээл үзэх",
+  studyLesson: "Хичээл судлах",
+  startLesson: "Хичээлээ эхлэх",
   vocabulary: "Үгийн сан",
   vocabularyStudy: "Үгийн сан судлах",
+  vocabularyFlashcard: "Үгийн сангаа flashcard-аар давтах",
   quiz: "Quiz өгөх",
   backToCourse: "Курс руу буцах",
   backToLesson: "Хичээл рүү буцах",
@@ -28,6 +31,10 @@ export const LEARNER_LESSON = {
   videoPlaceholder: "Видео хараахан ороогүй байна",
   noVideoNote:
     "Видео байхгүй ч үгийн сан болон quiz-ээр сурч болно.",
+  optionalVideo: "Нэмэлт видео",
+  optionalVideoHint: "Хүсвэл богино тайлбар видео үзэж болно",
+  optionalVideoMissing: "Видео хараахан нэмэгдээгүй — номын хичээлээр үргэлжлүүлнэ.",
+  watchVideo: "Видео үзэх",
 } as const;
 
 export const LEARNER_QUIZ = {

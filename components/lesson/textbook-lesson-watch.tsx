@@ -20,6 +20,7 @@ import { isDirectAudioUrl } from "@/lib/media-url";
 import { hasAudioUrl } from "@/lib/lesson-media";
 import { KoreanTeachingVisuals } from "@/components/lesson/korean-teaching-visuals";
 import { HskLessonStudyContent } from "@/components/lesson/hsk-lesson-study-content";
+import { HskOptionalVideoCard } from "@/components/lesson/hsk-optional-video-card";
 import { isHskStructuredLesson } from "@/lib/lesson/hsk-lesson-content";
 import { inferLessonLanguage } from "@/lib/language-track";
 import type { LessonContent } from "@/types/lesson-content";
@@ -79,8 +80,11 @@ export function TextbookLessonWatchClient({
           {audioReady && audioUrl && isDirectAudioUrl(audioUrl) ? (
             <MobileCard>
               <h2 className="text-sm font-semibold text-[var(--app-text)]">
-                Хичээлийн аудио
+                Сонсож давтах
               </h2>
+              <p className="mt-1 text-xs text-[var(--app-muted)]">
+                Дуудлага, tone-г сонсоод дуурайж хэлээрэй.
+              </p>
               <audio controls className="mt-2 w-full" src={audioUrl} />
             </MobileCard>
           ) : null}
@@ -89,6 +93,13 @@ export function TextbookLessonWatchClient({
             adminPreview={adminPreview}
             showBottomCtas
           />
+          <div id="optional-video">
+            <HskOptionalVideoCard
+              lesson={lesson}
+              adminPreview={adminPreview}
+              inline
+            />
+          </div>
         </>
       ) : (
         <>

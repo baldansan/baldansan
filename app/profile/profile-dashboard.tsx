@@ -12,6 +12,7 @@ import { RetentionSyncCard } from "@/components/retention/retention-sync-card";
 import { LocalProgressNote } from "@/components/local-progress-note";
 import { ProgressSyncCard } from "@/components/progress-sync-card";
 import { lessonPath } from "@/lib/content";
+import { features } from "@/lib/features";
 import { getCurrentUser, hasSupabaseConfig } from "@/lib/supabase/auth";
 import { isCurrentUserAdmin } from "@/lib/supabase/admin";
 import type { AuthUser } from "@/types/auth";
@@ -60,48 +61,59 @@ export function ProfileDashboard() {
   const [retention, setRetention] = useState<LearningRetentionSummary | null>(
     null
   );
+  const [loadError, setLoadError] = useState<string | null>(null);
 
   useEffect(() => {
     async function refresh() {
-      const localHasProgress = hasAnyProgress();
-      setCompletedCount(countCompletedLessonsAll());
-      setStartedCount(countStartedLessons());
-      setLearnedWords(getTotalLearnedWords());
-      const quizEntries = await getAllQuizResultsSmart();
-      setQuizResults(quizEntries);
-      setLastActiveLessonId(getLastActiveLessonId());
+      setLoadError(null);
+      try {
+        const localHasProgress = hasAnyProgress();
+        setCompletedCount(countCompletedLessonsAll());
+        setStartedCount(countStartedLessons());
+        setLearnedWords(getTotalLearnedWords());
+        const quizEntries = await getAllQuizResultsSmart();
+        setQuizResults(quizEntries);
+        setLastActiveLessonId(getLastActiveLessonId());
 
-      let user: AuthUser | null = null;
-      if (hasSupabaseConfig) {
-        const { data } = await getCurrentUser();
-        user = data;
+        let user: AuthUser | null = null;
+        if (hasSupabaseConfig) {
+          const { data, error } = await getCurrentUser();
+          user = data;
+          if (error && !data) {
+            setLoadError(error);
+          }
+        }
+        setAuthUser(user);
+        setIsAdmin(user ? await isCurrentUserAdmin() : false);
+
+        let summary: AccountLessonProgressSummary | null = null;
+        let vocabCount: number | null = null;
+        if (user?.id) {
+          summary = await getAccountLessonProgressSummary(user.id);
+          vocabCount = await getAccountVocabularyLearnedCount(user.id);
+        }
+        setAccountSummary(summary);
+        setAccountVocabCount(vocabCount);
+
+        const accountHasProgress = Boolean(
+          summary && (summary.completed > 0 || summary.started > 0)
+        );
+        const accountHasVocab = Boolean(vocabCount && vocabCount > 0);
+        setHasProgress(
+          localHasProgress ||
+            accountHasProgress ||
+            accountHasVocab ||
+            quizEntries.length > 0
+        );
+
+        setRetention(await getStreakUnified());
+      } catch (error) {
+        setLoadError(
+          error instanceof Error ? error.message : "Profile load failed"
+        );
+      } finally {
+        setReady(true);
       }
-      setAuthUser(user);
-      setIsAdmin(user ? await isCurrentUserAdmin() : false);
-
-      let summary: AccountLessonProgressSummary | null = null;
-      let vocabCount: number | null = null;
-      if (user?.id) {
-        summary = await getAccountLessonProgressSummary(user.id);
-        vocabCount = await getAccountVocabularyLearnedCount(user.id);
-      }
-      setAccountSummary(summary);
-      setAccountVocabCount(vocabCount);
-
-      const accountHasProgress = Boolean(
-        summary && (summary.completed > 0 || summary.started > 0)
-      );
-      const accountHasVocab = Boolean(vocabCount && vocabCount > 0);
-      setHasProgress(
-        localHasProgress ||
-          accountHasProgress ||
-          accountHasVocab ||
-          quizEntries.length > 0
-      );
-
-      setRetention(await getStreakUnified());
-
-      setReady(true);
     }
 
     refresh();
@@ -125,8 +137,13 @@ export function ProfileDashboard() {
     <div className="min-h-screen bg-gradient-to-b from-emerald-50/40 via-white to-white text-slate-900">
       <AppHeader active="profile" />
 
-      <main className="mx-auto flex w-full max-w-5xl flex-col gap-6 px-4 pb-24 pt-2 sm:gap-8 sm:px-6 md:pb-10">
-        <section>
+        <main className="mx-auto flex w-full max-w-5xl flex-col gap-6 px-4 py-16 pb-24 sm:px-6 md:pb-10">
+          {loadError ? (
+            <p className="rounded-xl border border-amber-200 bg-amber-50 px-4 py-3 text-center text-sm text-amber-900">
+              {loadError}
+            </p>
+          ) : null}
+          <section>
           <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">
             Миний суралцах ахиц
           </h1>
@@ -212,7 +229,9 @@ export function ProfileDashboard() {
             <Link href="/weekly-report" className="rounded-full border border-emerald-200 bg-emerald-50 px-4 py-2 text-sm font-semibold text-emerald-800">Weekly report</Link>
             <Link href="/notifications" className="rounded-full border border-emerald-200 bg-emerald-50 px-4 py-2 text-sm font-semibold text-emerald-800">Notifications</Link>
             <Link href="/study-plan" className="rounded-full border border-emerald-200 bg-emerald-50 px-4 py-2 text-sm font-semibold text-emerald-800">Study plan</Link>
-            <Link href="/my-assignments" className="rounded-full border border-emerald-200 bg-emerald-50 px-4 py-2 text-sm font-semibold text-emerald-800">My assignments</Link>
+            {features.b2b ? (
+              <Link href="/my-assignments" className="rounded-full border border-emerald-200 bg-emerald-50 px-4 py-2 text-sm font-semibold text-emerald-800">My assignments</Link>
+            ) : null}
           </div>
           <p className="mt-3 text-xs text-slate-500">
             Notification preferences (push/email) — ирээдүйд нэмэгдэнэ. Одоогоор in-app only.

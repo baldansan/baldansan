@@ -1,6 +1,11 @@
+import { withTimeout, AsyncTimeoutError } from "@/lib/async/with-timeout";
+import { authDevLog } from "@/lib/auth/auth-dev-log";
 import { getCurrentUser } from "@/lib/supabase/auth";
 import { hasSupabaseConfig, supabase } from "@/lib/supabase/client";
 import type { SupabaseClient } from "@supabase/supabase-js";
+
+const ADMIN_CHECK_TIMEOUT_MS = 8000;
+const ADMIN_PROFILE_QUERY_TIMEOUT_MS = 5000;
 
 export type AdminProfile = {
   user_id: string;
@@ -24,11 +29,18 @@ async function getAdminProfileByUserIdWithClient(
   }
 
   try {
-    const { data, error } = await client
-      .from("admin_profiles")
-      .select("user_id, role, created_at")
-      .eq("user_id", userId)
-      .maybeSingle();
+    const response = await withTimeout(
+      Promise.resolve(
+        client
+          .from("admin_profiles")
+          .select("user_id, role, created_at")
+          .eq("user_id", userId)
+          .maybeSingle()
+      ),
+      ADMIN_PROFILE_QUERY_TIMEOUT_MS,
+      "admin_profiles lookup"
+    );
+    const { data, error } = response;
 
     if (error || !data) {
       return null;
@@ -64,6 +76,21 @@ export async function getCurrentAdminProfile(): Promise<AdminProfile | null> {
 }
 
 export async function isCurrentUserAdmin(): Promise<boolean> {
-  const profile = await getCurrentAdminProfile();
-  return isAdminRole(profile?.role);
+  authDevLog("isCurrentUserAdmin started");
+  try {
+    const profile = await withTimeout(
+      getCurrentAdminProfile(),
+      ADMIN_CHECK_TIMEOUT_MS,
+      "isCurrentUserAdmin"
+    );
+    const isAdmin = isAdminRole(profile?.role);
+    authDevLog("isCurrentUserAdmin result", { isAdmin });
+    return isAdmin;
+  } catch (error) {
+    authDevLog("isCurrentUserAdmin error", error);
+    if (error instanceof AsyncTimeoutError) {
+      throw error;
+    }
+    return false;
+  }
 }

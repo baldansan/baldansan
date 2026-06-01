@@ -20,7 +20,8 @@ import {
   isKoreanFlashcardVocabularyLesson,
   koreanVocabularyStudyCtaLabel,
 } from "@/lib/lesson/korean-vocabulary-ui";
-import { isHsk1FoundationLesson } from "@/lib/lesson/hsk-lesson-content";
+import { isHsk1FoundationLesson, isHskStructuredLesson } from "@/lib/lesson/hsk-lesson-content";
+import { hskVocabularyStudyCtaLabel } from "@/lib/lesson/hsk-vocabulary-ui";
 import type { LessonContent } from "@/types/lesson-content";
 
 type Props = {
@@ -78,38 +79,43 @@ export function LessonDetailOverview({
     lesson.vocabulary
   );
   const hsk1Foundation = isHsk1FoundationLesson(lesson);
-  const vocabStepTitle = koreanFlashcard
-    ? koreanVocabularyStudyCtaLabel(lesson)
-    : LEARNER_LESSON.vocabulary;
-  const vocabStudyCta = koreanFlashcard
-    ? koreanVocabularyStudyCtaLabel(lesson)
-    : LEARNER_LESSON.vocabularyStudy;
+  const hskLesson = isHskStructuredLesson(lesson);
+  const vocabStepTitle = hskLesson
+    ? hskVocabularyStudyCtaLabel()
+    : koreanFlashcard
+      ? koreanVocabularyStudyCtaLabel(lesson)
+      : LEARNER_LESSON.vocabulary;
+  const vocabStudyCta = hskLesson
+    ? hskVocabularyStudyCtaLabel()
+    : koreanFlashcard
+      ? koreanVocabularyStudyCtaLabel(lesson)
+      : LEARNER_LESSON.vocabularyStudy;
 
   const steps = [
     {
       step: "1",
       href: watchHref,
-      icon: textbook ? "📖" : exam ? "📝" : "▶",
-      title: textbook
-        ? "Хичээл судлах"
+      icon: textbook || hskLesson ? "📖" : exam ? "📝" : "▶",
+      title: textbook || hskLesson
+        ? LEARNER_LESSON.studyLesson
         : exam
           ? "Шалгалтын тойм"
           : LEARNER_LESSON.watch,
-      desc: textbook
-        ? hsk1Foundation
-          ? "Pinyin, өнгө, харилцан яриа"
-          : "Тойм + сурах"
-        : exam
-          ? `${lesson.quizCount} асуулт`
-          : "Видео + хадмал",
+      desc: hskLesson || hsk1Foundation
+        ? "Багшийн тайлбар, pinyin, tone"
+        : textbook
+          ? "Тойм + сурах"
+          : exam
+            ? `${lesson.quizCount} асуулт`
+            : "Видео + хадмал",
     },
     {
       step: "2",
       href: vocabHref,
       icon: "📚",
       title: vocabStepTitle,
-      desc: koreanFlashcard
-        ? `${lesson.vocabularyCount} үсэг/үг`
+      desc: hskLesson || koreanFlashcard
+        ? `${lesson.vocabularyCount} үг · flashcard`
         : `${lesson.vocabularyCount} үг`,
     },
     {
@@ -172,7 +178,11 @@ export function LessonDetailOverview({
           </Link>
         ) : (
           <Link href={watchHref} className="app-btn-primary col-span-2 w-full">
-            {textbook ? "📖 Хичээл судлах" : exam ? "📝 Шалгалт" : `▶ ${LEARNER_LESSON.watch}`}
+            {textbook || hskLesson
+              ? `📖 ${LEARNER_LESSON.startLesson}`
+              : exam
+                ? "📝 Шалгалт"
+                : `▶ ${LEARNER_LESSON.watch}`}
           </Link>
         )}
         <Link href={vocabHref} className="app-btn-secondary w-full">

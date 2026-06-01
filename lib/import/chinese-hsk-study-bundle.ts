@@ -4,17 +4,22 @@ import {
   HSK_TONE_ALIASES,
   hskSectionKeyMatches,
 } from "@/lib/lesson/hsk-study-section-aliases";
+import { parseHskGuidedSteps, type HskGuidedStep } from "@/lib/lesson/hsk-guided-step";
 import type {
   ChineseHskManifest,
   ChineseHskPackageMeta,
   ChineseHskRawFiles,
 } from "@/lib/import/chinese-hsk-normalize";
+import { isHskPrelessonProfile } from "@/lib/import/chinese-hsk-profiles";
 
 export type HskStudyContentBundle = {
   studySections: unknown[];
+  guidedSteps: unknown[];
   objectives: unknown[];
   pronunciation: unknown;
+  pinyinPronunciation: unknown;
   tones: unknown[];
+  characters: unknown[];
   grammar: unknown;
   notes: unknown;
   teacherNotes: unknown[];
@@ -22,13 +27,17 @@ export type HskStudyContentBundle = {
   workbook: unknown;
   vocabularyNotes: unknown;
   lessonTeaching: unknown;
+  media: unknown;
 };
 
 export type HskStudyContentImportSummary = {
   studySectionCount: number;
+  guidedStepCount: number;
   hasPronunciationContent: boolean;
   hasToneContent: boolean;
   hasTeacherNotes: boolean;
+  mediaImageCount: number;
+  videoRequired: boolean;
 };
 
 function isRecord(value: unknown): value is Record<string, unknown> {
@@ -155,6 +164,168 @@ function bundleHasContent(value: unknown): boolean {
   return true;
 }
 
+function collectGuidedSteps(studyContent: unknown, lesson: unknown): unknown[] {
+  const fromStudy = pickNested(studyContent, "guidedSteps");
+  if (Array.isArray(fromStudy) && fromStudy.length > 0) return fromStudy;
+  const fromLesson = pickNested(lesson, "guidedSteps");
+  if (Array.isArray(fromLesson) && fromLesson.length > 0) return fromLesson;
+  return [];
+}
+
+function collectCharacters(studyContent: unknown, lesson: unknown): unknown[] {
+  return mergeUniqueArrays(
+    asArray(pickNested(studyContent, "characters")),
+    asArray(pickNested(lesson, "characters"))
+  );
+}
+
+function countMediaImages(media: unknown): number {
+  if (!isRecord(media)) return 0;
+  return Array.isArray(media.images) ? media.images.length : 0;
+}
+
+function videoRequiredFromMedia(media: unknown, lesson: unknown): boolean {
+  if (isRecord(lesson) && trim(lesson.videoFile)) return true;
+  if (!isRecord(media)) return false;
+  const videos = media.videos;
+  if (!Array.isArray(videos) || videos.length === 0) return false;
+  return videos.some((item) => {
+    if (!isRecord(item)) return false;
+    return Boolean(trim(item.embedUrl) || trim(item.url) || trim(item.videoUrl));
+  });
+}
+
+function trim(value: unknown): string {
+  return String(value ?? "").trim();
+}
+
+function buildDefaultGuidedSteps(
+  bundle: Pick<
+    HskStudyContentBundle,
+    "teacherNotes" | "pronunciation" | "tones"
+  >,
+  manifest: ChineseHskManifest
+): HskGuidedStep[] {
+  const prelesson = isHskPrelessonProfile(manifest.lessonProfile);
+
+  const steps: HskGuidedStep[] = [
+    {
+      id: "teacher-intro",
+      type: "teacher-intro",
+      titleMn: "Багшийн тайлбар",
+      teacherSpeechMn: "",
+      bulletsMn: [],
+      chinese: "",
+      pinyin: "",
+      mongolian: "",
+      examples: [],
+      mediaSection: "teacher",
+      items: bundle.teacherNotes,
+    },
+    ...(prelesson
+      ? []
+      : [
+          {
+            id: "key-phrase",
+            type: "key-phrase" as const,
+            titleMn: "Гол хэллэг",
+            teacherSpeechMn: "",
+            bulletsMn: [],
+            chinese: "",
+            pinyin: "",
+            mongolian: "",
+            examples: [],
+            mediaSection: "hero",
+            items: [],
+          },
+        ]),
+    {
+      id: "pinyin",
+      type: "pinyin",
+      titleMn: "Pinyin",
+      teacherSpeechMn: "",
+      bulletsMn: [],
+      chinese: "",
+      pinyin: "",
+      mongolian: "",
+      examples: [],
+      mediaSection: "pinyin",
+      items: bundle.pronunciation ? [bundle.pronunciation] : [],
+    },
+    {
+      id: "tones",
+      type: "tones",
+      titleMn: "Tone дасгал",
+      teacherSpeechMn: "",
+      bulletsMn: [],
+      chinese: "",
+      pinyin: "",
+      mongolian: "",
+      examples: [],
+      mediaSection: "tone",
+      items: bundle.tones,
+    },
+    ...(prelesson
+      ? []
+      : [
+          {
+            id: "vocabulary",
+            type: "vocabulary" as const,
+            titleMn: "Үгийн сан",
+            teacherSpeechMn: "",
+            bulletsMn: [],
+            chinese: "",
+            pinyin: "",
+            mongolian: "",
+            examples: [],
+            mediaSection: "vocabulary",
+            items: [],
+          },
+          {
+            id: "dialogue",
+            type: "dialogue" as const,
+            titleMn: "Ярианы дасгал",
+            teacherSpeechMn: "",
+            bulletsMn: [],
+            chinese: "",
+            pinyin: "",
+            mongolian: "",
+            examples: [],
+            mediaSection: "dialogue",
+            items: [],
+          },
+        ]),
+    {
+      id: "practice-menu",
+      type: "practice-menu",
+      titleMn: "Дасгал",
+      teacherSpeechMn: "",
+      bulletsMn: [],
+      chinese: "",
+      pinyin: "",
+      mongolian: "",
+      examples: [],
+      mediaSection: "practice",
+      items: [],
+    },
+    {
+      id: "complete",
+      type: "complete",
+      titleMn: "Дууслаа",
+      teacherSpeechMn: "",
+      bulletsMn: [],
+      chinese: "",
+      pinyin: "",
+      mongolian: "",
+      examples: [],
+      mediaSection: "complete",
+      items: [],
+    },
+  ];
+
+  return steps;
+}
+
 export function buildHskStudyContentBundle(
   raw: ChineseHskRawFiles,
   _manifest: ChineseHskManifest,
@@ -167,8 +338,6 @@ export function buildHskStudyContentBundle(
   const texts = raw.texts ?? null;
   const workbook = raw.workbook ?? null;
   const vocabulary = raw.vocabulary ?? null;
-
-  const studySections = collectStudySections(studyContent, lesson);
 
   const lessonTeaching = isRecord(lesson)
     ? Object.fromEntries(
@@ -195,16 +364,30 @@ export function buildHskStudyContentBundle(
               "studySections",
               "objectives",
               "lessonIntro",
+              "guidedSteps",
             ].includes(key)
         )
       )
     : null;
 
-  return {
+  const studySections = collectStudySections(studyContent, lesson);
+  const guidedStepsRaw = collectGuidedSteps(studyContent, lesson);
+  const pronunciation = collectPronunciation(studyContent, lesson);
+  const tones = collectTones(studyContent, lesson);
+  const characters = collectCharacters(studyContent, lesson);
+  const media =
+    raw.media ??
+    pickNested(studyContent, "media") ??
+    pickNested(lesson, "media") ??
+    null;
+
+  const partialBundle = {
     studySections,
     objectives: collectObjectives(studyContent, lesson),
-    pronunciation: collectPronunciation(studyContent, lesson),
-    tones: collectTones(studyContent, lesson),
+    pronunciation,
+    pinyinPronunciation: pronunciation,
+    tones,
+    characters,
     grammar: grammar ?? pickNested(studyContent, "grammar") ?? null,
     notes: notes ?? pickNested(studyContent, "notes") ?? null,
     teacherNotes: collectTeacherNotes(studyContent, notes, lesson),
@@ -212,6 +395,24 @@ export function buildHskStudyContentBundle(
     workbook: workbook ?? pickNested(studyContent, "workbook") ?? null,
     vocabularyNotes: pickNested(studyContent, "vocabularyNotes") ?? vocabulary,
     lessonTeaching: Object.keys(lessonTeaching ?? {}).length ? lessonTeaching : null,
+    media,
+  };
+
+  const guidedSteps =
+    guidedStepsRaw.length > 0
+      ? guidedStepsRaw
+      : buildDefaultGuidedSteps(
+          {
+            teacherNotes: partialBundle.teacherNotes,
+            pronunciation: partialBundle.pronunciation,
+            tones: partialBundle.tones,
+          },
+          _manifest
+        );
+
+  return {
+    ...partialBundle,
+    guidedSteps,
   };
 }
 
@@ -233,9 +434,12 @@ export function summarizeHskStudyContentBundle(
 
   return {
     studySectionCount: bundle.studySections.length,
+    guidedStepCount: parseHskGuidedSteps(bundle.guidedSteps).length,
     hasPronunciationContent,
     hasToneContent,
     hasTeacherNotes,
+    mediaImageCount: countMediaImages(bundle.media),
+    videoRequired: videoRequiredFromMedia(bundle.media, null),
   };
 }
 
@@ -245,10 +449,13 @@ export function buildChineseHskSourceNoteJson(
   existingNote?: string | null
 ): string {
   const hskStudyContent = {
+    guidedSteps: bundle.guidedSteps,
     studySections: bundle.studySections,
     objectives: bundle.objectives,
     pronunciation: bundle.pronunciation,
+    pinyinPronunciation: bundle.pinyinPronunciation,
     tones: bundle.tones,
+    characters: bundle.characters,
     grammar: bundle.grammar,
     notes: bundle.notes,
     teacherNotes: bundle.teacherNotes,
@@ -256,18 +463,21 @@ export function buildChineseHskSourceNoteJson(
     workbook: bundle.workbook,
     vocabularyNotes: bundle.vocabularyNotes,
     lessonTeaching: bundle.lessonTeaching,
+    ...(bundle.media != null ? { media: bundle.media } : {}),
   };
 
   const payload: Record<string, unknown> = {
     courseType: manifest.courseType,
     hskLevel: manifest.hskLevel,
     lessonProfile: manifest.lessonProfile,
+    lessonId: manifest.lessonId,
     hskPackageVersion: manifest.packageVersion,
     hskStudyContent,
   };
 
   if (manifest.bookPart) payload.bookPart = manifest.bookPart;
   if (manifest.lessonNumber != null) payload.lessonNumber = manifest.lessonNumber;
+  if (manifest.lessonType) payload.lessonType = manifest.lessonType;
 
   const verification = manifest.verification;
   if (verification?.answerStatus) payload.answerStatus = verification.answerStatus;

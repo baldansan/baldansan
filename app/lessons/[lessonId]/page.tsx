@@ -27,6 +27,8 @@ import {
   isKoreanFlashcardVocabularyLesson,
   koreanVocabularyStudyCtaLabel,
 } from "@/lib/lesson/korean-vocabulary-ui";
+import { HskLessonDetailView } from "@/components/lesson/hsk-lesson-detail-view";
+import { isHskStructuredLesson } from "@/lib/lesson/hsk-lesson-content";
 import { TeacherAssignmentCta } from "@/components/teacher/teacher-assignment-cta";
 import { MobileCard } from "@/components/mobile/mobile-card";
 import { MobilePageHeader } from "@/components/mobile/mobile-page-header";
@@ -70,6 +72,7 @@ export default async function LessonDetailPage({
 
   const { lesson, adminPreview } = access;
   const isLesson0 = isKoreanLesson0BeginnerFlow(lesson);
+  const isHskLesson = isHskStructuredLesson(lesson);
 
   if (isLesson0) {
     return (
@@ -85,6 +88,23 @@ export default async function LessonDetailPage({
           </Link>
 
           <KoreanLesson0StartScreen lesson={lesson} adminPreview={adminPreview} />
+        </div>
+      </MobileAppShell>
+    );
+  }
+
+  if (isHskLesson) {
+    return (
+      <MobileAppShell activeTab="study" mainClassName="max-w-[390px] mx-auto w-full">
+        <div className="flex flex-col gap-4 pb-2">
+          {adminPreview ? <AdminPreviewBanner /> : null}
+          <Link
+            href={coursePath(lesson.courseId)}
+            className="inline-flex w-fit items-center text-sm font-medium text-[var(--app-muted)] transition-colors hover:text-emerald-600"
+          >
+            ← Курс руу буцах
+          </Link>
+          <HskLessonDetailView lesson={lesson} adminPreview={adminPreview} />
         </div>
       </MobileAppShell>
     );

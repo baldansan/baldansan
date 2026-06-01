@@ -138,7 +138,10 @@ export function buildImportDraftApiBody(
       null,
     description: validation.lesson.description ?? null,
     duration: validation.lesson.duration ?? null,
-    orderIndex: validation.lesson.orderIndex ?? 1,
+    orderIndex:
+      validation.lesson.orderIndex ??
+      (validation.preview as { lessonNumber?: number | null }).lessonNumber ??
+      1,
     sourceNote: hskSourceNoteJson ?? sourceNote,
     hskSourceNoteJson,
     mediaStatus: validation.lesson.mediaStatus,

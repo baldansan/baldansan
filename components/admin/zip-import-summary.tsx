@@ -137,11 +137,16 @@ type Props = {
 
 export function ZipImportSummary({ preview, validation, track = "legacy" }: Props) {
   const status = getZipImportSummaryStatus(validation);
+  const hskPreview = isHskPreview(preview) ? preview : null;
   const infoItems = [
     ...(validation.info ?? []),
     ...buildExtraInfo(preview, validation, track),
+    ...(hskPreview && !hskPreview.storesJsonSourceNote
+      ? [
+          "Critical: Gold Standard HSK packages must store JSON source_note with hskStudyContent.",
+        ]
+      : []),
   ];
-  const hskPreview = isHskPreview(preview) ? preview : null;
 
   return (
     <section className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:p-6">
@@ -200,6 +205,9 @@ export function ZipImportSummary({ preview, validation, track = "legacy" }: Prop
             value={hskPreview.workbookWritingCount}
           />
         ) : null}
+        {hskPreview?.guidedStepCount != null ? (
+          <SummaryField label="Guided steps" value={hskPreview.guidedStepCount} />
+        ) : null}
         {hskPreview?.studySectionCount != null ? (
           <SummaryField
             label="Study sections"
@@ -208,8 +216,8 @@ export function ZipImportSummary({ preview, validation, track = "legacy" }: Prop
         ) : null}
         {hskPreview ? (
           <SummaryField
-            label="Pronunciation content"
-            value={hskPreview.hasPronunciationContent ? "yes" : "no"}
+            label="Pinyin content"
+            value={hskPreview.hasPinyinContent ? "yes" : "no"}
           />
         ) : null}
         {hskPreview ? (
@@ -227,7 +235,20 @@ export function ZipImportSummary({ preview, validation, track = "legacy" }: Prop
         {hskPreview ? (
           <SummaryField
             label="Source note format"
-            value={hskPreview.storesJsonSourceNote ? "JSON (hskStudyContent)" : "legacy — blocked"}
+            value={
+              hskPreview.storesJsonSourceNote
+                ? "JSON (hskStudyContent)"
+                : "legacy text — blocked"
+            }
+          />
+        ) : null}
+        {hskPreview?.mediaImageCount != null ? (
+          <SummaryField label="Media images" value={hskPreview.mediaImageCount} />
+        ) : null}
+        {hskPreview ? (
+          <SummaryField
+            label="Video required"
+            value={hskPreview.videoRequired ? "true" : "false"}
           />
         ) : null}
         <SummaryField label="Quiz count" value={preview.quizCount} />

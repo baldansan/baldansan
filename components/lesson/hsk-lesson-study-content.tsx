@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import { useState, type ReactNode } from "react";
 import { SpeakerButton } from "@/components/tts/speaker-button";
 import { SectionCard } from "@/components/ui/section-card";
 import {
@@ -11,18 +10,29 @@ import {
   ctaSecondaryClass,
 } from "@/components/ui/cta-button-row";
 import { romanizationLabel } from "@/lib/course-display";
+import { HskMediaImage } from "@/components/lesson/hsk-flashcard-vocabulary-study";
 import {
-  isHsk1FoundationLesson,
   parseHskStudyContentFromLesson,
   type HskStudyContent,
 } from "@/lib/lesson/hsk-lesson-content";
+import {
+  resolveHskIntroSpeech,
+  resolveHskPinyinExplainer,
+  resolveHskTeacherAdvice,
+  resolveHskWhyImportant,
+  resolveHskLessonToneNote,
+  resolveKeyVocabularyWords,
+} from "@/lib/lesson/hsk-learner-copy";
+import {
+  findHskMediaBySection,
+  resolveHskMediaUrl,
+} from "@/lib/lesson/hsk-media";
 import { lessonPreviewPath } from "@/lib/lesson-publish";
 import { LEARNER_LESSON } from "@/lib/learner-labels";
 import { containsTargetScript, resolveTtsLang } from "@/lib/tts/infer-lang";
 import type { LessonContent } from "@/types/lesson-content";
 
-const EMPTY_SECTION =
-  "Энэ хэсгийн мэдээлэл package-д хараахан ороогүй байна.";
+const TONE_ARROWS = ["→", "↗", "↘↗", "↘"] as const;
 
 type Props = {
   lesson: LessonContent;
@@ -30,109 +40,120 @@ type Props = {
   showBottomCtas?: boolean;
 };
 
-function HskSection({
-  title,
-  children,
-  defaultOpen = true,
-  collapsible = false,
-}: {
-  title: string;
-  children: ReactNode;
-  defaultOpen?: boolean;
-  collapsible?: boolean;
-}) {
-  const [open, setOpen] = useState(defaultOpen);
+function TeacherSpeechBubble({ children }: { children: string }) {
+  return (
+    <div className="relative rounded-2xl bg-gradient-to-br from-amber-50 to-orange-50/60 px-4 py-4 ring-1 ring-amber-100">
+      <span
+        className="absolute -left-1 top-4 h-3 w-3 rotate-45 bg-amber-50 ring-1 ring-amber-100"
+        aria-hidden
+      />
+      <p className="text-sm leading-7 text-slate-800">&ldquo;{children}&rdquo;</p>
+    </div>
+  );
+}
 
-  if (!collapsible) {
+function ToneSection({ content, lessonToneNote }: { content: HskStudyContent; lessonToneNote: string }) {
+  const toneImage = findHskMediaBySection(content.media, "tone");
+  const toneUrl = resolveHskMediaUrl(toneImage);
+  const tones =
+    content.tones.length > 0
+      ? content.tones
+      : [1, 2, 3, 4].map((num, index) => ({
+          label: `${num}-р өнгө`,
+          example: ["mā", "má", "mǎ", "mà"][index],
+          pinyin: ["mā", "má", "mǎ", "mà"][index],
+          mongolian: ["өндөр, тэгш", "дээшлэх", "доошлоод дээшлэх", "огцом буух"][
+            index
+          ],
+        }));
+
+  return (
+    <div className="space-y-3">
+      <div className="grid gap-2 sm:grid-cols-2">
+        {tones.map((tone, index) => (
+          <div
+            key={`${tone.label}-${tone.example}`}
+            className="rounded-xl bg-emerald-50 px-3 py-3 ring-1 ring-emerald-100"
+          >
+            <div className="flex items-center justify-between gap-2">
+              <p className="text-xs font-semibold text-emerald-800">{tone.label}</p>
+              <span className="text-lg text-emerald-600" aria-hidden>
+                {TONE_ARROWS[index] ?? "→"}
+              </span>
+            </div>
+            <p className="mt-1 text-xl font-bold text-slate-900">{tone.example}</p>
+            {tone.mongolian ? (
+              <p className="mt-1 text-sm text-slate-600">{tone.mongolian}</p>
+            ) : null}
+          </div>
+        ))}
+      </div>
+      <p className="rounded-xl bg-emerald-50/80 px-3 py-2.5 text-sm text-emerald-900 ring-1 ring-emerald-100">
+        {lessonToneNote}
+      </p>
+      <div className="flex flex-wrap gap-2 rounded-xl bg-slate-50 px-3 py-2.5 ring-1 ring-slate-200">
+        {["mā", "má", "mǎ", "mà"].map((sample) => (
+          <span
+            key={sample}
+            className="rounded-full bg-white px-3 py-1 text-sm font-semibold text-emerald-800 ring-1 ring-emerald-100"
+          >
+            {sample}
+          </span>
+        ))}
+      </div>
+      {toneUrl ? <HskMediaImage src={toneUrl} alt="Өнгийн диаграм" /> : null}
+    </div>
+  );
+}
+
+function KeyWordsPreview({
+  lesson,
+  adminPreview,
+}: {
+  lesson: LessonContent;
+  adminPreview: boolean;
+}) {
+  const words = resolveKeyVocabularyWords(lesson.vocabulary, 3);
+  const lang = resolveTtsLang({ courseId: lesson.courseId });
+  const vocabHref = lessonPreviewPath(lesson.id, {
+    adminPreview,
+    subpath: "vocabulary",
+  });
+
+  if (words.length === 0) {
     return (
-      <SectionCard className="overflow-hidden ring-emerald-100">
-        <h2 className="text-base font-semibold text-emerald-800">{title}</h2>
-        <div className="mt-3">{children}</div>
-      </SectionCard>
+      <p className="text-sm text-slate-500">Үгийн сан хараахан ороогүй байна.</p>
     );
   }
 
   return (
-    <SectionCard className="overflow-hidden ring-emerald-100">
-      <button
-        type="button"
-        onClick={() => setOpen((value) => !value)}
-        className="flex w-full items-center justify-between gap-2 text-left"
-      >
-        <h2 className="text-base font-semibold text-emerald-800">{title}</h2>
-        <span className="text-sm text-slate-500">{open ? "−" : "+"}</span>
-      </button>
-      {open ? <div className="mt-3">{children}</div> : null}
-    </SectionCard>
-  );
-}
-
-function EmptySection() {
-  return <p className="text-sm leading-6 text-slate-500">{EMPTY_SECTION}</p>;
-}
-
-function TextList({ items }: { items: string[] }) {
-  if (items.length === 0) return <EmptySection />;
-  return (
-    <ul className="space-y-2 text-sm leading-6 text-slate-700">
-      {items.map((item) => (
-        <li key={item} className="rounded-xl bg-emerald-50/60 px-3 py-2 ring-1 ring-emerald-100">
-          {item}
-        </li>
-      ))}
-    </ul>
-  );
-}
-
-function VocabularyCards({
-  lesson,
-}: {
-  lesson: LessonContent;
-}) {
-  const words = lesson.vocabulary;
-  const romLabel = romanizationLabel(lesson.courseId);
-  const lang = resolveTtsLang({ courseId: lesson.courseId });
-
-  if (words.length === 0) return <EmptySection />;
-
-  return (
-    <div className="flex flex-col gap-2.5">
-      {words.map((word) => (
-        <div
-          key={word.id}
-          className="rounded-xl border border-emerald-100 bg-white px-3.5 py-3 shadow-sm"
-        >
-          <div className="flex items-start gap-2">
-            <div className="min-w-0 flex-1">
-              <p className="text-lg font-semibold text-slate-900">{word.chinese}</p>
-              {word.pinyin ? (
-                <p className="mt-0.5 text-sm text-emerald-700">
-                  {romLabel}: {word.pinyin}
-                </p>
-              ) : null}
-              <p className="mt-1 text-sm text-slate-700">{word.mongolian}</p>
-              {word.mongolianPronunciation ||
-              word.pronunciationHintMn ||
-              word.pronunciationMn ? (
-                <p className="mt-1 text-xs text-slate-500">
-                  Дуудлага:{" "}
-                  {word.mongolianPronunciation ||
-                    word.pronunciationHintMn ||
-                    word.pronunciationMn}
-                </p>
-              ) : null}
+    <div className="space-y-3">
+      <div className="space-y-2">
+        {words.map((word) => (
+          <div
+            key={word.id || word.chinese}
+            className="flex items-center justify-between gap-3 rounded-xl bg-white px-3 py-3 ring-1 ring-emerald-100"
+          >
+            <div className="min-w-0">
+              <p className="text-xl font-bold text-slate-900">{word.chinese}</p>
+              <p className="text-sm text-emerald-700">{word.pinyin}</p>
+              <p className="text-sm text-slate-600">{word.mongolian}</p>
             </div>
             {containsTargetScript(word.chinese) ? (
               <SpeakerButton
                 text={word.chinese}
                 lang={lang}
                 courseId={lesson.courseId}
+                hskLevel={word.hskLevel}
                 size="sm"
               />
             ) : null}
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
+      <Link href={vocabHref} className={ctaPrimaryClass}>
+        🃏 {LEARNER_LESSON.vocabularyFlashcard}
+      </Link>
     </div>
   );
 }
@@ -147,140 +168,112 @@ function DialogueBlock({
   const lang = resolveTtsLang({ courseId: lesson.courseId });
   const romLabel = romanizationLabel(lesson.courseId);
 
-  if (content.dialogues.length === 0) return <EmptySection />;
-
-  return (
-    <div className="flex flex-col gap-4">
-      {content.dialogues.map((dialogue, index) => (
-        <div key={`${dialogue.title ?? "dialogue"}-${index}`} className="space-y-2">
-          {dialogue.title ? (
-            <p className="text-xs font-semibold uppercase tracking-wide text-emerald-700">
-              {dialogue.title}
-            </p>
-          ) : null}
-          {dialogue.lines.map((line, lineIndex) => (
+  if (content.dialogues.length === 0) {
+    const fallback = [
+      { speaker: "A", chinese: "你好！", pinyin: "nǐ hǎo!", mongolian: "Сайн байна уу!" },
+      { speaker: "B", chinese: "你好！", pinyin: "nǐ hǎo!", mongolian: "Сайн байна уу!" },
+      { speaker: "A", chinese: "对不起！", pinyin: "duìbuqǐ!", mongolian: "Уучлаарай!" },
+      { speaker: "B", chinese: "没关系！", pinyin: "méi guānxi!", mongolian: "Зүгээр!" },
+    ];
+    return (
+      <div className="space-y-2">
+        {fallback.map((line, lineIndex) => {
+          const isLeft = lineIndex % 2 === 0;
+          return (
             <div
               key={`${line.chinese}-${lineIndex}`}
-              className="rounded-xl bg-slate-50 px-3.5 py-3 ring-1 ring-slate-200"
+              className={`flex ${isLeft ? "justify-start" : "justify-end"}`}
             >
-              <div className="flex items-start gap-2">
-                <div className="min-w-0 flex-1">
-                  {line.speaker ? (
-                    <p className="text-xs font-bold text-slate-500">{line.speaker}</p>
-                  ) : null}
-                  <p className="text-base font-semibold text-slate-900">{line.chinese}</p>
-                  {line.pinyin ? (
-                    <p className="mt-0.5 text-sm text-emerald-700">
-                      {romLabel}: {line.pinyin}
-                    </p>
-                  ) : null}
-                  {line.mongolian ? (
-                    <p className="mt-1 text-sm text-slate-600">{line.mongolian}</p>
-                  ) : null}
-                </div>
-                {containsTargetScript(line.chinese) ? (
-                  <SpeakerButton
-                    text={line.chinese}
-                    lang={lang}
-                    courseId={lesson.courseId}
-                    size="sm"
-                  />
-                ) : null}
-              </div>
+              <DialogueBubble
+                line={line}
+                isLeft={isLeft}
+                lang={lang}
+                courseId={lesson.courseId}
+                romLabel={romLabel}
+              />
             </div>
-          ))}
-        </div>
-      ))}
-    </div>
-  );
-}
-
-function ToneSection({ content }: { content: HskStudyContent }) {
-  if (content.tones.length === 0) return <EmptySection />;
-  return (
-    <div className="grid gap-2 sm:grid-cols-2">
-      {content.tones.map((tone) => (
-        <div
-          key={`${tone.label}-${tone.pinyin}`}
-          className="rounded-xl bg-emerald-50 px-3 py-2.5 ring-1 ring-emerald-100"
-        >
-          <p className="text-xs font-semibold uppercase text-emerald-800">
-            {tone.label}
-          </p>
-          <p className="mt-1 text-lg font-semibold text-slate-900">{tone.example}</p>
-          {tone.pinyin && tone.pinyin !== tone.example ? (
-            <p className="text-sm text-emerald-700">{tone.pinyin}</p>
-          ) : null}
-          {tone.mongolian ? (
-            <p className="mt-1 text-sm text-slate-600">{tone.mongolian}</p>
-          ) : null}
-        </div>
-      ))}
-    </div>
-  );
-}
-
-function CharacterSection({ content }: { content: HskStudyContent }) {
-  if (content.characterNotes.length === 0) return <EmptySection />;
-  return (
-    <div className="grid gap-2 sm:grid-cols-2">
-      {content.characterNotes.map((char) => (
-        <div
-          key={char.chinese}
-          className="rounded-xl border border-slate-200 bg-white px-3 py-3"
-        >
-          <p className="text-2xl font-bold text-slate-900">{char.chinese}</p>
-          {char.pinyin ? (
-            <p className="mt-1 text-sm text-emerald-700">{char.pinyin}</p>
-          ) : null}
-          {char.mongolian ? (
-            <p className="mt-1 text-sm text-slate-700">{char.mongolian}</p>
-          ) : null}
-          {char.strokeNote ? (
-            <p className="mt-2 text-xs text-slate-500">{char.strokeNote}</p>
-          ) : null}
-          {char.mnemonic ? (
-            <p className="mt-1 text-xs text-amber-800">{char.mnemonic}</p>
-          ) : null}
-        </div>
-      ))}
-    </div>
-  );
-}
-
-function HskSectionDebugPanel({
-  debug,
-  vocabularyCount,
-}: {
-  debug: NonNullable<HskStudyContent["sectionDebug"]>;
-  vocabularyCount: number;
-}) {
-  const rows = [
-    ["1. objectives", debug.objectives],
-    ["2. pinyin", debug.pinyin],
-    ["3. tones", debug.tones],
-    ["4. vocabulary", { source: "vocabulary_words", count: vocabularyCount }],
-    ["5. dialogues", debug.dialogues],
-    ["6. sentences", debug.sentenceExplanations],
-    ["7. characters", debug.characterNotes],
-    ["8. study guide", debug.studyGuideSteps],
-    ["9. teacher notes", debug.teacherNotes],
-  ] as const;
-
-  return (
-    <SectionCard className="border-dashed border-amber-300 bg-amber-50/50 ring-amber-100">
-      <h2 className="text-sm font-semibold text-amber-900">HSK section mapping (dev)</h2>
-      <div className="mt-2 space-y-1.5 text-xs text-amber-950">
-        {rows.map(([label, meta]) => (
-          <div key={label} className="rounded-lg bg-white/80 px-2.5 py-1.5 ring-1 ring-amber-100">
-            <span className="font-semibold">{label}</span>
-            <span className="text-amber-800"> — source: </span>
-            <span className="break-all">{meta.source}</span>
-            <span className="text-amber-800"> · count: {meta.count}</span>
-          </div>
-        ))}
+          );
+        })}
       </div>
-    </SectionCard>
+    );
+  }
+
+  return (
+    <div className="flex flex-col gap-3">
+      {content.dialogues.map((dialogue, index) => (
+        <div key={`${dialogue.title ?? "dialogue"}-${index}`} className="space-y-2">
+          {dialogue.lines.map((line, lineIndex) => {
+            const isLeft = lineIndex % 2 === 0;
+            return (
+              <div
+                key={`${line.chinese}-${lineIndex}`}
+                className={`flex ${isLeft ? "justify-start" : "justify-end"}`}
+              >
+                <DialogueBubble
+                  line={{
+                    speaker: line.speaker ?? (isLeft ? "A" : "B"),
+                    chinese: line.chinese,
+                    pinyin: line.pinyin,
+                    mongolian: line.mongolian,
+                  }}
+                  isLeft={isLeft}
+                  lang={lang}
+                  courseId={lesson.courseId}
+                  romLabel={romLabel}
+                />
+              </div>
+            );
+          })}
+        </div>
+      ))}
+    </div>
+  );
+}
+
+function DialogueBubble({
+  line,
+  isLeft,
+  lang,
+  courseId,
+  romLabel,
+}: {
+  line: {
+    speaker?: string;
+    chinese: string;
+    pinyin?: string;
+    mongolian?: string;
+  };
+  isLeft: boolean;
+  lang: ReturnType<typeof resolveTtsLang>;
+  courseId: string;
+  romLabel: string;
+}) {
+  return (
+    <div
+      className={
+        isLeft
+          ? "max-w-[85%] rounded-2xl rounded-bl-md bg-emerald-50 px-3.5 py-3 ring-1 ring-emerald-100"
+          : "max-w-[85%] rounded-2xl rounded-br-md bg-white px-3.5 py-3 ring-1 ring-slate-200"
+      }
+    >
+      <p className="text-xs font-bold text-slate-500">{line.speaker ?? (isLeft ? "A" : "B")}</p>
+      <div className="flex items-start gap-2">
+        <div className="min-w-0 flex-1">
+          <p className="text-base font-semibold text-slate-900">{line.chinese}</p>
+          {line.pinyin ? (
+            <p className="mt-0.5 text-sm text-emerald-700">
+              {romLabel}: {line.pinyin}
+            </p>
+          ) : null}
+          {line.mongolian ? (
+            <p className="mt-1 text-sm text-slate-600">{line.mongolian}</p>
+          ) : null}
+        </div>
+        {containsTargetScript(line.chinese) ? (
+          <SpeakerButton text={line.chinese} lang={lang} courseId={courseId} size="sm" />
+        ) : null}
+      </div>
+    </div>
   );
 }
 
@@ -290,7 +283,14 @@ export function HskLessonStudyContent({
   showBottomCtas = true,
 }: Props) {
   const content = lesson.hskStudy ?? parseHskStudyContentFromLesson(lesson);
-  const isHsk1 = isHsk1FoundationLesson(lesson);
+  const intro = resolveHskIntroSpeech(lesson, content);
+  const whyImportant = resolveHskWhyImportant(lesson, content);
+  const pinyinExplainer = resolveHskPinyinExplainer(content);
+  const teacherAdvice = resolveHskTeacherAdvice(content);
+  const toneNote = resolveHskLessonToneNote(lesson, content);
+  const pinyinImage = findHskMediaBySection(content.media, "pinyin");
+  const pinyinUrl = resolveHskMediaUrl(pinyinImage);
+  const lang = resolveTtsLang({ courseId: lesson.courseId });
 
   const vocabHref = lessonPreviewPath(lesson.id, {
     adminPreview,
@@ -300,90 +300,127 @@ export function HskLessonStudyContent({
     adminPreview,
     subpath: "quiz",
   });
+  const detailHref = lessonPreviewPath(lesson.id, { adminPreview });
 
   return (
     <div className="flex flex-col gap-4 pb-4">
-      {isHsk1 ? (
-        <div className="rounded-2xl bg-gradient-to-br from-emerald-500 to-teal-600 px-4 py-3 text-white shadow-sm">
-          <p className="text-xs font-semibold uppercase tracking-wide opacity-90">
-            HSK1 Foundation
-          </p>
-          <p className="mt-1 text-sm leading-6">
-            Багшийн номын дагуу pinyin, өнгө, үг, харилцан яриа, hanз — бүгдийг алхам
-            алхмаар судлана.
-          </p>
-        </div>
-      ) : null}
-
-      <HskSection title="1. Хичээлийн зорилго">
-        <p className="mb-2 text-sm font-medium text-slate-800">
-          Энэ хичээлээр юу сурах вэ?
+      <SectionCard className="border-emerald-100 bg-white ring-emerald-100">
+        <p className="text-xs font-semibold uppercase tracking-wide text-emerald-700">
+          Багшийн эхний тайлбар
         </p>
-        <TextList items={content.objectives} />
-      </HskSection>
+        <div className="mt-3">
+          <TeacherSpeechBubble>{intro}</TeacherSpeechBubble>
+        </div>
+      </SectionCard>
 
-      <HskSection title="2. Pinyin ба дуудлага" collapsible>
-        {content.pinyinIntro.length > 0 || content.pronunciationNotes.length > 0 ? (
-          <TextList
-            items={[...content.pinyinIntro, ...content.pronunciationNotes]}
-          />
-        ) : (
-          <EmptySection />
-        )}
-      </HskSection>
+      <SectionCard className="ring-emerald-100">
+        <h2 className="text-base font-semibold text-emerald-800">
+          Яагаад энэ үг чухал вэ?
+        </h2>
+        <ul className="mt-3 space-y-2">
+          {whyImportant.map((item) => (
+            <li
+              key={item}
+              className="flex gap-2 text-sm leading-6 text-slate-700"
+            >
+              <span className="text-emerald-500" aria-hidden>
+                ✓
+              </span>
+              {item}
+            </li>
+          ))}
+        </ul>
+      </SectionCard>
 
-      <HskSection title="3. Өнгө / Tone">
-        <ToneSection content={content} />
-      </HskSection>
+      <SectionCard className="ring-emerald-100">
+        <h2 className="text-base font-semibold text-emerald-800">Pinyin гэж юу вэ?</h2>
+        <ul className="mt-3 space-y-2.5">
+          {pinyinExplainer.map((line) => (
+            <li
+              key={line}
+              className="rounded-xl bg-emerald-50/60 px-3 py-2.5 text-sm leading-6 text-slate-700 ring-1 ring-emerald-100"
+            >
+              {line}
+            </li>
+          ))}
+        </ul>
+        {lesson.chineseTitle ? (
+          <div className="mt-3 flex items-center justify-between gap-2 rounded-xl bg-white px-3 py-3 ring-1 ring-emerald-100">
+            <div>
+              <p className="text-2xl font-bold text-slate-900">{lesson.chineseTitle}</p>
+              <p className="text-sm text-emerald-700">
+                {lesson.vocabulary[0]?.pinyin || "nǐ hǎo"}
+              </p>
+            </div>
+            {containsTargetScript(lesson.chineseTitle) ? (
+              <SpeakerButton
+                text={lesson.chineseTitle}
+                lang={lang}
+                courseId={lesson.courseId}
+                size="md"
+              />
+            ) : null}
+          </div>
+        ) : null}
+        {pinyinUrl ? (
+          <div className="mt-3">
+            <HskMediaImage src={pinyinUrl} alt="Pinyin зураг" />
+          </div>
+        ) : null}
+      </SectionCard>
 
-      <HskSection title="4. Үндсэн үгс">
-        <VocabularyCards lesson={lesson} />
-      </HskSection>
+      <SectionCard className="ring-emerald-100">
+        <h2 className="text-base font-semibold text-emerald-800">Өнгө / Tone</h2>
+        <p className="mt-1 text-sm text-slate-600">
+          Хятад хэлний 4 tone — аяны өөрчлөлт утгыг тодорхойлно.
+        </p>
+        <div className="mt-3">
+          <ToneSection content={content} lessonToneNote={toneNote} />
+        </div>
+      </SectionCard>
 
-      <HskSection title="5. Харилцан яриа" collapsible>
-        <DialogueBlock lesson={lesson} content={content} />
-      </HskSection>
+      <SectionCard className="ring-emerald-100">
+        <h2 className="text-base font-semibold text-emerald-800">Үгсийн тайлбар</h2>
+        <p className="mt-1 text-sm text-slate-600">
+          Эхний гол үгс — бүрэн жагсаалтыг flashcard-аар давтана.
+        </p>
+        <div className="mt-3">
+          <KeyWordsPreview lesson={lesson} adminPreview={adminPreview} />
+        </div>
+      </SectionCard>
 
-      <HskSection title="6. Өгүүлбэрийн тайлбар" collapsible>
-        <TextList items={content.sentenceExplanations} />
-      </HskSection>
+      <SectionCard className="ring-emerald-100">
+        <h2 className="text-base font-semibold text-emerald-800">Богино яриа</h2>
+        <div className="mt-3">
+          <DialogueBlock lesson={lesson} content={content} />
+        </div>
+      </SectionCard>
 
-      <HskSection title="7. Ханз / бичих суурь">
-        <CharacterSection content={content} />
-      </HskSection>
-
-      <HskSection title="8. Дасгал хийх заавар">
-        <TextList items={content.studyGuideSteps} />
-      </HskSection>
-
-      <HskSection title="9. Багшийн тайлбар" collapsible>
-        <TextList items={content.teacherNotes} />
-      </HskSection>
+      <SectionCard className="border-amber-100 bg-amber-50/30 ring-amber-100">
+        <h2 className="text-base font-semibold text-amber-900">Багшийн зөвлөгөө</h2>
+        <div className="mt-3">
+          <TeacherSpeechBubble>{teacherAdvice}</TeacherSpeechBubble>
+        </div>
+      </SectionCard>
 
       {showBottomCtas ? (
-        <div className="mt-2">
-          <CtaButtonRow className="!gap-2">
+        <SectionCard className="ring-emerald-200 bg-gradient-to-br from-emerald-50/80 to-white">
+          <h2 className="text-base font-semibold text-emerald-800">Бататгах алхам</h2>
+          <CtaButtonRow className="mt-3 !gap-2">
             <Link href={vocabHref} className={ctaPrimaryClass}>
-              {LEARNER_LESSON.nextVocabulary}
+              Үгийн сан давтах
             </Link>
             <Link href={quizHref} className={ctaSecondaryClass}>
-              {LEARNER_LESSON.quiz}
+              Quiz өгөх
             </Link>
-            <Link
-              href={lessonPreviewPath(lesson.id, { adminPreview })}
-              className={ctaOutlineClass}
-            >
-              {LEARNER_LESSON.backToLesson}
+            <Link href={vocabHref} className={ctaOutlineClass}>
+              Сонсож давтах
+            </Link>
+            <Link href={detailHref} className={ctaOutlineClass}>
+              Дараагийн хичээл
             </Link>
           </CtaButtonRow>
-        </div>
-      ) : null}
-
-      {content.sectionDebug ? (
-        <HskSectionDebugPanel
-          debug={content.sectionDebug}
-          vocabularyCount={lesson.vocabulary.length}
-        />
+        </SectionCard>
       ) : null}
     </div>
   );
