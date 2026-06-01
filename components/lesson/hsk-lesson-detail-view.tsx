@@ -84,7 +84,7 @@ export function HskLessonDetailView({ lesson, adminPreview = false }: Props) {
       step: "2",
       href: vocabHref,
       icon: "🃏",
-      title: hskVocabularyStudyCtaLabel(),
+      title: "Картаар сурах",
       desc: `${lesson.vocabularyCount} үг · flashcard`,
     },
     {

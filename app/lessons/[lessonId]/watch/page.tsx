@@ -2,6 +2,13 @@ import { LessonUnavailable } from "@/components/lesson-unavailable";
 import { LessonPageError } from "@/components/lesson/lesson-page-error";
 import { loadLessonWatchPage } from "@/lib/lesson/lesson-watch-loader";
 import { resolvePreviewFromPageSearchParams } from "@/lib/lesson-public-access";
+import {
+  findNextLessonId,
+  getLessonsByCourseId,
+  getPublicLessonSummariesByCourseId,
+} from "@/lib/content";
+import { isHskStructuredLesson } from "@/lib/lesson/hsk-lesson-content";
+import { toLessonListSummary } from "@/lib/lesson/lesson-summary";
 import { LessonWatchClient } from "./watch-client";
 
 type PageProps = {
@@ -44,7 +51,20 @@ export default async function LessonWatchPage({
     );
   }
 
+  const { lesson, adminPreview } = result;
+  let nextLessonId: string | null = null;
+  if (isHskStructuredLesson(lesson)) {
+    const courseLessons = adminPreview
+      ? (await getLessonsByCourseId(lesson.courseId)).map(toLessonListSummary)
+      : await getPublicLessonSummariesByCourseId(lesson.courseId);
+    nextLessonId = findNextLessonId(lesson.id, courseLessons);
+  }
+
   return (
-    <LessonWatchClient lesson={result.lesson} adminPreview={result.adminPreview} />
+    <LessonWatchClient
+      lesson={lesson}
+      adminPreview={adminPreview}
+      nextLessonId={nextLessonId}
+    />
   );
 }

@@ -284,6 +284,7 @@ export function LessonVocabularyClient({
         <div className="mt-2">
           <LocalProgressNote />
         </div>
+        {!useHskFlashcard || viewMode === "list" ? (
         <div className="mt-4 rounded-2xl bg-purple-50 p-4 ring-1 ring-purple-200">
           <p className="text-sm font-semibold text-purple-900">Тоглоомоор давтах</p>
           <GamePracticeLinks
@@ -296,6 +297,7 @@ export function LessonVocabularyClient({
             }
           />
         </div>
+        ) : null}
       </section>
 
       {useFlashcardDefault && !(useHskFlashcard && viewMode === "flashcard") ? (

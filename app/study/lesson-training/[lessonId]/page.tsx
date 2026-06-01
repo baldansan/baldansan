@@ -9,12 +9,27 @@ import {
 import { trainingLessonIdCandidates } from "@/lib/lesson-player/resolve-training-lesson-id";
 import { resolveLessonPageAccess } from "@/lib/lesson-public-access";
 import { parsePreviewParam } from "@/lib/preview-params";
+import { isHskStructuredLesson } from "@/lib/lesson/hsk-lesson-content";
 import { toLessonListSummary } from "@/lib/lesson/lesson-summary";
 
 const GuidedLessonPlayer = nextDynamic(
   () =>
     import("@/components/lesson-player/guided-lesson-player").then(
       (mod) => mod.GuidedLessonPlayer
+    ),
+  {
+    loading: () => (
+      <p className="py-16 text-center text-sm text-[var(--app-muted)]">
+        Хичээл ачаалж байна...
+      </p>
+    ),
+  }
+);
+
+const HskGuidedLessonPlayer = nextDynamic(
+  () =>
+    import("@/components/lesson/hsk-player/hsk-guided-lesson-player").then(
+      (mod) => mod.HskGuidedLessonPlayer
     ),
   {
     loading: () => (
@@ -83,6 +98,17 @@ export default async function LessonTrainingPage({
     ? (await getLessonsByCourseId(lesson.courseId)).map(toLessonListSummary)
     : await getPublicLessonSummariesByCourseId(lesson.courseId);
   const nextLessonId = findNextLessonId(lesson.id, courseLessons);
+
+  if (isHskStructuredLesson(lesson)) {
+    return (
+      <HskGuidedLessonPlayer
+        lesson={lesson}
+        nextLessonId={nextLessonId}
+        adminPreview={adminPreview}
+        routeLessonId={routeLessonId}
+      />
+    );
+  }
 
   return (
     <GuidedLessonPlayer
