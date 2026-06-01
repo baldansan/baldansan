@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { PublicPageShell } from "@/components/public-page-shell";
 import { useTeacherAuth } from "@/components/teacher/teacher-auth-gate";
+import { formatMongoliaDateTimeWithLabel } from "@/lib/datetime/mongolia-time";
 import type { StudentAssignment } from "@/lib/classroom/types";
 import { getStudentAssignments } from "@/lib/supabase/classrooms";
 
@@ -123,7 +124,7 @@ export function MyAssignmentsView() {
                 ) : null}
                 {a.completedAt ? (
                   <p className="text-xs text-slate-500">
-                    Completed: {new Date(a.completedAt).toLocaleString()}
+                    Completed: {formatMongoliaDateTimeWithLabel(a.completedAt)}
                   </p>
                 ) : null}
                 <Link

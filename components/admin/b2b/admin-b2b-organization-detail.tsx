@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useCallback, useEffect, useState } from "react";
+import { formatMongoliaDateTime } from "@/lib/datetime/mongolia-time";
 import type {
   B2BInquiry,
   Organization,
@@ -604,7 +605,7 @@ export function AdminB2BOrganizationDetail({ organizationId }: Props) {
                   className="text-sm text-emerald-600 hover:text-emerald-800"
                 >
                   {i.organizationName} — {i.status} (
-                  {new Date(i.createdAt).toLocaleDateString()})
+                  {formatMongoliaDateTime(i.createdAt, "date")})
                 </Link>
               </li>
             ))}

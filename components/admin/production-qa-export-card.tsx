@@ -1,5 +1,6 @@
 "use client";
 
+import { formatMongoliaDateTimeWithLabel } from "@/lib/datetime/mongolia-time";
 import { useState } from "react";
 import type { QaCheckItem } from "@/lib/admin/production-qa-data";
 import {
@@ -74,7 +75,7 @@ export function ProductionQaExportCard({
       </p>
       {savedAt ? (
         <p className="mt-2 text-xs text-slate-500">
-          Last saved: {new Date(savedAt).toLocaleString()}
+          Last saved: {formatMongoliaDateTimeWithLabel(savedAt)}
         </p>
       ) : null}
 

@@ -8,6 +8,7 @@ import type { OrganizationInvitation } from "@/lib/b2b/types";
 import { buildInviteUrl } from "@/lib/organization/invite-url";
 import { getClassroomById } from "@/lib/supabase/classrooms";
 import { getClassroomInvitations, revokeInvitation } from "@/lib/supabase/invitations";
+import { formatMongoliaDateTimeWithLabel } from "@/lib/datetime/mongolia-time";
 
 type Props = {
   classroomId: string;
@@ -89,7 +90,7 @@ export function ClassroomInvitationsView({ classroomId }: Props) {
                   </p>
                   <p className="text-xs text-slate-500">
                     {inv.status} · expires{" "}
-                    {new Date(inv.expiresAt).toLocaleDateString()}
+                    {formatMongoliaDateTimeWithLabel(inv.expiresAt, "date")}
                   </p>
                 </div>
                 {inv.status === "pending" ? (

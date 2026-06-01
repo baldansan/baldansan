@@ -23,6 +23,7 @@ import {
 } from "@/lib/supabase/classrooms";
 import { getOrganizationPilotSummary } from "@/lib/supabase/organization-onboarding";
 import { getMyOrganizationsWithRole } from "@/lib/supabase/organizations";
+import { formatMongoliaDateTimeWithLabel } from "@/lib/datetime/mongolia-time";
 import { canManageOrganization } from "@/lib/supabase/organization-permissions";
 import {
   getTeacherOverviewMetrics,
@@ -366,7 +367,7 @@ export function TeacherDashboardView() {
                   <span className="text-slate-500"> · {item.classroomName}</span>
                 ) : null}
                 <span className="block text-xs text-slate-400">
-                  {new Date(item.at).toLocaleString()}
+                  {formatMongoliaDateTimeWithLabel(item.at)}
                 </span>
               </li>
             ))}

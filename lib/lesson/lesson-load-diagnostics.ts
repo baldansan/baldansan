@@ -11,6 +11,7 @@ export type LessonLoadFetchSource = "supabase" | "local" | "none";
 
 export type LessonLoadDebugInfo = {
   lessonId: string;
+  route?: string;
   fetchSource: LessonLoadFetchSource;
   supabaseUrlPresent: boolean;
   supabaseAnonKeyPresent: boolean;

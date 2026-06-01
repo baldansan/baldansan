@@ -3,8 +3,9 @@ import { ActivityDiffViewer } from "@/components/admin/activity-diff-viewer";
 import {
   ActivityBadge,
   EntityTypeBadge,
-  formatActivityTime,
+  formatActivityTimeCompact,
 } from "@/components/admin/activity-badge";
+import { MONGOLIA_TIME_LABEL } from "@/lib/datetime/mongolia-time";
 import { JsonSnapshotViewer } from "@/components/admin/json-snapshot-viewer";
 import { RollbackExecutionCard } from "@/components/admin/rollback-execution-card";
 import { formatActivityActor } from "@/lib/admin/admin-activity-shared";
@@ -36,9 +37,9 @@ export function ActivityDetailView({ activity }: Props) {
             <dd className="text-slate-900">{formatActivityActor(activity)}</dd>
           </div>
           <div>
-            <dt className="text-slate-500">Timestamp</dt>
+            <dt className="text-slate-500">{MONGOLIA_TIME_LABEL}</dt>
             <dd className="text-slate-900">
-              {formatActivityTime(activity.createdAt)}
+              {formatActivityTimeCompact(activity.createdAt)}
             </dd>
           </div>
           {activity.entityId ? (

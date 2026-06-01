@@ -1,5 +1,6 @@
 "use client";
 
+import { formatMongoliaDateTimeWithLabel } from "@/lib/datetime/mongolia-time";
 import { useState } from "react";
 import type { LaunchSignoffState } from "@/lib/admin/launch-signoff-data";
 import {
@@ -51,7 +52,7 @@ export function SignoffReportExportCard({
       </p>
       {savedAt ? (
         <p className="mt-2 text-xs text-slate-500">
-          Last saved: {new Date(savedAt).toLocaleString()}
+          Last saved: {formatMongoliaDateTimeWithLabel(savedAt)}
         </p>
       ) : null}
       <div className="mt-4 flex flex-wrap gap-2">

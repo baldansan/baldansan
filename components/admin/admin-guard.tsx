@@ -46,9 +46,19 @@ export function AdminGuard({ children }: Props) {
 
   if (state === "loading") {
     return (
-      <p className="text-center text-sm text-slate-500" aria-live="polite">
-        Ачааллаж байна...
-      </p>
+      <div
+        className="mx-auto w-full max-w-5xl rounded-2xl border border-slate-200 bg-white p-6 shadow-sm"
+        aria-live="polite"
+      >
+        <p className="text-sm font-medium text-slate-700">Admin шалгаж байна...</p>
+        <p className="mt-1 text-xs text-slate-500">
+          Нэвтрэлт болон эрхийг баталгаажуулж байна.
+        </p>
+        <div className="mt-4 space-y-2">
+          <div className="h-3 w-2/3 animate-pulse rounded bg-slate-100" />
+          <div className="h-3 w-1/2 animate-pulse rounded bg-slate-100" />
+        </div>
+      </div>
     );
   }
 
@@ -56,7 +66,11 @@ export function AdminGuard({ children }: Props) {
     return (
       <EmptyState
         title="Admin хэсэгт нэвтрэх шаардлагатай"
-        description="Контент удирдах хэсэгт хандахын тулд эхлээд нэвтэрнэ үү."
+        description={
+          hasSupabaseConfig
+            ? "Контент удирдах хэсэгт хандахын тулд эхлээд нэвтэрнэ үү."
+            : "Supabase тохиргоо олдсонгүй. .env.local файлд NEXT_PUBLIC_SUPABASE_URL болон NEXT_PUBLIC_SUPABASE_ANON_KEY нэмнэ үү."
+        }
         action={
           <Link
             href="/login"

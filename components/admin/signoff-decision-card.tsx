@@ -1,5 +1,6 @@
 "use client";
 
+import { formatMongoliaDateTimeWithLabel } from "@/lib/datetime/mongolia-time";
 import {
   DEFAULT_VERSION_LABEL,
   type SignoffDecisionState,
@@ -48,7 +49,7 @@ export function SignoffDecisionCard({
       </p>
       {decision.updatedAt && decision.value !== "not_decided" ? (
         <p className="mt-2 text-xs text-slate-500">
-          Updated: {new Date(decision.updatedAt).toLocaleString()}
+          Updated: {formatMongoliaDateTimeWithLabel(decision.updatedAt)}
         </p>
       ) : null}
 

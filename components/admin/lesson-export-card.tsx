@@ -1,5 +1,6 @@
 "use client";
 
+import { formatMongoliaDateTimeWithLabel } from "@/lib/datetime/mongolia-time";
 import { useCallback, useState } from "react";
 import {
   AdminAlert,
@@ -157,7 +158,7 @@ export function LessonExportCard({ lessonId }: Props) {
             Status: {stats.status}
           </span>
           <span className="rounded-full bg-slate-100 px-3 py-1 text-xs text-slate-600 ring-1 ring-slate-200">
-            Exported: {new Date(stats.exportedAt).toLocaleString()}
+            Exported: {formatMongoliaDateTimeWithLabel(stats.exportedAt)}
           </span>
         </div>
       ) : null}

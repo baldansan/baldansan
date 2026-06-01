@@ -15,6 +15,7 @@ import {
   revokeInvitation,
 } from "@/lib/supabase/invitations";
 import { buildInviteUrl } from "@/lib/organization/invite-url";
+import { formatMongoliaDateTimeWithLabel } from "@/lib/datetime/mongolia-time";
 
 type Props = {
   organizationId: string;
@@ -109,7 +110,7 @@ export function OrganizationInvitationsView({ organizationId }: Props) {
                   </p>
                   <p className="text-xs text-slate-500">
                     {inv.inviteKind} · {inv.role} · {inv.status} · expires{" "}
-                    {new Date(inv.expiresAt).toLocaleDateString()}
+                    {formatMongoliaDateTimeWithLabel(inv.expiresAt, "date")}
                   </p>
                 </div>
                 <div className="flex flex-wrap gap-2">

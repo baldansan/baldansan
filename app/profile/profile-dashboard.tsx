@@ -33,15 +33,10 @@ import {
   type LearningRetentionSummary,
 } from "@/lib/retention/retention-service";
 
+import { formatMongoliaDateTimeWithLabel } from "@/lib/datetime/mongolia-time";
+
 function formatQuizDate(iso: string): string {
-  try {
-    return new Date(iso).toLocaleString(undefined, {
-      dateStyle: "medium",
-      timeStyle: "short",
-    });
-  } catch {
-    return iso;
-  }
+  return formatMongoliaDateTimeWithLabel(iso) || iso;
 }
 
 export function ProfileDashboard() {

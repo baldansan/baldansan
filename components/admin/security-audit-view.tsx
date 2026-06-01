@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { formatMongoliaDateTimeWithLabel } from "@/lib/datetime/mongolia-time";
 import {
   runSecurityAuditChecks,
   getSecurityBlockers,
@@ -89,7 +90,7 @@ export function SecurityAuditView() {
           <p className="mt-3 text-sm text-slate-700">
             {summary.pass} pass · {summary.warn} warn · {summary.fail} fail ·{" "}
             {summary.manual} manual · launch: {summary.launchRecommendation}
-            {report ? ` · ${new Date(report.ranAt).toLocaleString()}` : ""}
+            {report ? ` · ${formatMongoliaDateTimeWithLabel(report.ranAt)}` : ""}
           </p>
         ) : null}
         {error ? <p className="mt-3 text-sm text-red-700">{error}</p> : null}

@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { formatMongoliaDateTimeWithLabel } from "@/lib/datetime/mongolia-time";
 import {
   runDeploymentChecks,
   type DeploymentCheckReport,
@@ -73,7 +74,7 @@ export function DeploymentCheckView() {
           <p className="mt-3 text-sm text-slate-700">
             {passCount} pass · {warnCount} warn · {failCount} fail · environment:{" "}
             {report.nodeEnv} · last run{" "}
-            {new Date(report.ranAt).toLocaleString()}
+            {formatMongoliaDateTimeWithLabel(report.ranAt)}
           </p>
         ) : null}
         {error ? (

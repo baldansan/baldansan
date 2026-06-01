@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useCallback, useEffect, useState } from "react";
+import { formatMongoliaDateTimeWithLabel } from "@/lib/datetime/mongolia-time";
 import type { B2BInquiry, B2BInquiryActivity, B2BInquiryStatus } from "@/lib/b2b/types";
 import {
   addB2BInquiryActivity,
@@ -198,7 +199,7 @@ export function AdminB2BInquiryDetail({ inquiryId }: Props) {
           </div>
           <div>
             <dt className="text-slate-500">Created</dt>
-            <dd>{new Date(inquiry.createdAt).toLocaleString()}</dd>
+            <dd>{formatMongoliaDateTimeWithLabel(inquiry.createdAt)}</dd>
           </div>
           <div>
             <dt className="text-slate-500">Assigned to</dt>
@@ -319,7 +320,7 @@ export function AdminB2BInquiryDetail({ inquiryId }: Props) {
                 <span className="font-medium">{a.action}</span>
                 {a.note ? <span> — {a.note}</span> : null}
                 <span className="block text-xs text-slate-400">
-                  {new Date(a.createdAt).toLocaleString()}
+                  {formatMongoliaDateTimeWithLabel(a.createdAt)}
                 </span>
               </li>
             ))

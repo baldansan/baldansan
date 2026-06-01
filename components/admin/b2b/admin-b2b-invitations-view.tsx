@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useState } from "react";
+import { formatMongoliaDateTimeWithLabel } from "@/lib/datetime/mongolia-time";
 import type { InvitationEmailDelivery } from "@/lib/b2b/types";
 import { getRecentInvitationEmailDeliveries } from "@/lib/supabase/invitation-email-deliveries";
 
@@ -119,7 +120,7 @@ export function AdminB2BInvitationsView() {
               <p className="mt-1 text-xs text-slate-500">
                 {d.inviteKind ?? "invitation"} ·{" "}
                 {d.organizationName ?? d.classroomName ?? "—"} ·{" "}
-                {new Date(d.createdAt).toLocaleString()}
+                {formatMongoliaDateTimeWithLabel(d.createdAt)}
               </p>
               {d.errorMessage ? (
                 <p className="mt-1 text-xs text-amber-800">{d.errorMessage}</p>
