@@ -87,6 +87,7 @@ export async function importDraftLessonOnServer(
 
   revalidatePath("/admin/lessons");
   revalidatePath(`/admin/lessons/${resolvedLessonId}/edit`);
+  revalidatePath(`/lessons/${resolvedLessonId}/quiz`);
 
   const message = shell.created
     ? "Шинэ draft lesson үүсгээд import амжилттай хийлээ."
@@ -99,6 +100,8 @@ export async function importDraftLessonOnServer(
     courseId,
     vocabularyInserted: imported.data.vocabularyInserted,
     quizInserted: imported.data.quizQuestionsInserted,
+    oldQuizCountDeleted: imported.data.oldQuizCountDeleted,
+    newQuizCountInserted: imported.data.newQuizCountInserted,
     subtitlesInserted: imported.data.subtitlesInserted,
     mediaUploaded: 0,
     mediaFailures: [],

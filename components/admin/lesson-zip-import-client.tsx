@@ -355,8 +355,15 @@ export function LessonZipImportClient({
               </>
             ) : null}
             . Vocabulary: {importResult?.vocabularyInserted}, quiz:{" "}
-            {importResult?.quizInserted}, subtitles:{" "}
-            {importResult?.subtitlesInserted}.
+            {importResult?.quizInserted}
+            {importResult?.oldQuizCountDeleted != null ? (
+              <>
+                {" "}
+                (deleted {importResult.oldQuizCountDeleted}, inserted{" "}
+                {importResult.newQuizCountInserted ?? importResult.quizInserted})
+              </>
+            ) : null}
+            , subtitles: {importResult?.subtitlesInserted}.
           </p>
           {importResult?.warnings.length ? (
             <ul className="mt-3 list-disc space-y-1 pl-5 text-sm text-amber-900">

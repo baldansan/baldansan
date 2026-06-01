@@ -7,6 +7,11 @@ import {
   logAdminActivity,
 } from "@/lib/supabase/admin-activity";
 import { getLessonCompleteness, refreshLessonCounts } from "@/lib/supabase/admin-content";
+import {
+  lessonIdQueryCandidates,
+  lessonIdSlugCandidates,
+  normalizeLessonIdForQuery,
+} from "@/lib/lesson-id";
 import { fetchLessonRowById } from "@/lib/supabase/content";
 import { hasSupabaseConfig, supabase } from "@/lib/supabase/client";
 
@@ -56,11 +61,18 @@ export type QuizImportItem = {
   type?: string;
   question?: string;
   prompt?: string;
+  promptMn?: string;
+  prompt_mn?: string;
   options?: unknown;
   correctAnswer?: string;
   correct_answer?: string;
   answer?: string;
   explanation?: string;
+  explanationMn?: string;
+  explanation_mn?: string;
+  order?: number;
+  orderIndex?: number;
+  order_index?: number;
   skillTags?: string[];
   difficulty?: string;
 };
@@ -87,7 +99,8 @@ export type NormalizedQuizImport = {
   question: string;
   options: string[];
   correctAnswer: string;
-  explanation: string | null;
+  explanation: string;
+  orderIndex: number;
   skillTags?: string[];
   difficulty?: string;
 };
@@ -135,6 +148,8 @@ export type BulkImportSummary = {
   subtitlesInserted: number;
   vocabularyInserted: number;
   quizQuestionsInserted: number;
+  oldQuizCountDeleted: number;
+  newQuizCountInserted: number;
   mode: BulkImportMode;
 };
 
@@ -186,8 +201,13 @@ function asArray(value: unknown, field: string, errors: string[]): unknown[] | n
   return value;
 }
 
-function normalizeQuizType(raw: string | undefined): "multiple_choice" | "cloze" | null {
-  if (!raw?.trim()) return null;
+export function normalizeQuizType(
+  raw: string | undefined,
+  defaultMultipleChoice = false
+): "multiple_choice" | "cloze" | null {
+  if (!raw?.trim()) {
+    return defaultMultipleChoice ? "multiple_choice" : null;
+  }
   const t = raw.trim().toLowerCase().replace(/\s+/g, "_");
   if (t === "cloze" || t === "cloze_blank") return "cloze";
   if (
@@ -198,7 +218,57 @@ function normalizeQuizType(raw: string | undefined): "multiple_choice" | "cloze"
   ) {
     return "multiple_choice";
   }
-  return null;
+  return defaultMultipleChoice ? "multiple_choice" : null;
+}
+
+function collectQuizLessonIdCandidates(...lessonIds: string[]): Array<string | number> {
+  const seen = new Set<string>();
+  const candidates: Array<string | number> = [];
+
+  for (const lessonId of lessonIds) {
+    const normalized = normalizeLessonIdForQuery(lessonId);
+    for (const candidate of lessonIdQueryCandidates(normalized)) {
+      const key = `${typeof candidate}:${String(candidate)}`;
+      if (seen.has(key)) continue;
+      seen.add(key);
+      candidates.push(candidate);
+    }
+    for (const slug of lessonIdSlugCandidates(normalized)) {
+      const key = `string:${slug}`;
+      if (seen.has(key)) continue;
+      seen.add(key);
+      candidates.push(slug);
+    }
+  }
+
+  return candidates;
+}
+
+function readQuizOrderIndex(
+  item: Record<string, unknown>,
+  index: number
+): number {
+  const orderRaw = item.order ?? item.orderIndex ?? item.order_index;
+  if (typeof orderRaw === "number" && Number.isFinite(orderRaw)) {
+    return Math.floor(orderRaw);
+  }
+  return index + 1;
+}
+
+function mapQuizQuestionToDbRow(
+  item: NormalizedQuizImport,
+  lessonId: string,
+  fallbackOrder: number
+) {
+  return {
+    lesson_id: lessonId,
+    type: item.type,
+    question: item.question,
+    options: item.options,
+    correct_answer: item.correctAnswer,
+    explanation: item.explanation,
+    order_index: item.orderIndex ?? fallbackOrder,
+  };
 }
 
 function parseOptions(value: unknown): string[] {
@@ -366,20 +436,21 @@ export function validateLessonImportPayload(
       return;
     }
     const type = normalizeQuizType(
-      typeof item.type === "string" ? item.type : undefined
+      typeof item.type === "string" ? item.type : undefined,
+      true
     );
-    const question = String(item.question ?? item.prompt ?? "").trim();
+    const question = String(
+      item.question ?? item.prompt ?? item.promptMn ?? item.prompt_mn ?? ""
+    ).trim();
     const options = parseOptions(item.options);
     const correctAnswer = String(
       item.correctAnswer ?? item.correct_answer ?? item.answer ?? ""
     ).trim();
-    const explanation = String(item.explanation ?? "").trim() || null;
+    const explanation =
+      String(item.explanation ?? item.explanationMn ?? item.explanation_mn ?? "").trim() ||
+      "";
+    const orderIndex = readQuizOrderIndex(item, index);
 
-    if (!type) {
-      errors.push(
-        `quizQuestions[${index}]: type must be multiple_choice or cloze.`
-      );
-    }
     if (!question) {
       errors.push(`quizQuestions[${index}]: question (or prompt) is required.`);
     }
@@ -413,6 +484,7 @@ export function validateLessonImportPayload(
           options,
           correctAnswer,
           explanation,
+          orderIndex,
           skillTags,
           difficulty,
         });
@@ -480,6 +552,54 @@ async function deleteLessonContent(
   return { data: null, error: null };
 }
 
+async function countQuizQuestionsForLesson(
+  lessonIds: string[],
+  client?: SupabaseClient
+): Promise<number> {
+  const db = resolveImportClient(client);
+  if (!db) return 0;
+
+  let total = 0;
+  for (const candidate of collectQuizLessonIdCandidates(...lessonIds)) {
+    const { count, error } = await db
+      .from("quiz_questions")
+      .select("id", { count: "exact", head: true })
+      .eq("lesson_id", candidate);
+    if (!error && count) {
+      total += count;
+    }
+  }
+  return total;
+}
+
+/** Delete quiz rows for every lesson_id variant (slug, numeric, package id). */
+export async function deleteQuizQuestionsForLesson(
+  lessonId: string,
+  client?: SupabaseClient,
+  extraLessonIds: string[] = []
+): Promise<AdminImportResult<number>> {
+  const db = resolveImportClient(client);
+  if (!db) return notConfigured();
+
+  const lessonIds = [
+    lessonId,
+    ...extraLessonIds.filter((id) => id.trim() && id.trim() !== lessonId),
+  ];
+  const oldCount = await countQuizQuestionsForLesson(lessonIds, client);
+
+  for (const candidate of collectQuizLessonIdCandidates(...lessonIds)) {
+    const { error } = await db
+      .from("quiz_questions")
+      .delete()
+      .eq("lesson_id", candidate);
+    if (error) {
+      return { data: null, error: formatWriteError(error) };
+    }
+  }
+
+  return { data: oldCount, error: null };
+}
+
 export async function bulkImportLessonContent(
   lessonId: string,
   payload: LessonImportPayload,
@@ -535,15 +655,26 @@ export async function bulkImportLessonContent(
         }
       : undefined;
 
+    let oldQuizCountDeleted = 0;
+    let newQuizCountInserted = 0;
+
     if (mode === "replace") {
-      for (const table of [
-        "subtitle_lines",
-        "vocabulary_words",
-        "quiz_questions",
-      ] as const) {
+      for (const table of ["subtitle_lines", "vocabulary_words"] as const) {
         const del = await deleteLessonContent(resolvedLessonId, table, options?.client);
         if (del.error) return { data: null, error: del.error };
       }
+
+      const extraLessonIds =
+        trimmedLessonId !== resolvedLessonId ? [trimmedLessonId] : [];
+      const quizDelete = await deleteQuizQuestionsForLesson(
+        resolvedLessonId,
+        options?.client,
+        extraLessonIds
+      );
+      if (quizDelete.error) {
+        return { data: null, error: quizDelete.error };
+      }
+      oldQuizCountDeleted = quizDelete.data ?? 0;
     }
 
     let subtitleStart = 0;
@@ -590,19 +721,14 @@ export async function bulkImportLessonContent(
     }
 
     if (payload.quizQuestions.length > 0) {
-      const rows = payload.quizQuestions.map((item, i) => ({
-        lesson_id: resolvedLessonId,
-        type: item.type,
-        question: item.question,
-        options: item.options,
-        correct_answer: item.correctAnswer,
-        explanation: item.explanation,
-        order_index: quizStart + i + 1,
-      }));
+      const rows = payload.quizQuestions.map((item, i) =>
+        mapQuizQuestionToDbRow(item, resolvedLessonId, quizStart + i + 1)
+      );
       const { error } = await db.from("quiz_questions").insert(rows);
       if (error) {
         return { data: null, error: formatWriteError(error) };
       }
+      newQuizCountInserted = rows.length;
     }
 
     const refresh = await refreshLessonCounts(resolvedLessonId, options?.client, {
@@ -642,6 +768,8 @@ export async function bulkImportLessonContent(
         subtitlesInserted: payload.subtitles.length,
         vocabularyInserted: payload.vocabulary.length,
         quizQuestionsInserted: payload.quizQuestions.length,
+        oldQuizCountDeleted,
+        newQuizCountInserted,
       },
       beforeSnapshot,
       afterSnapshot,
@@ -650,6 +778,8 @@ export async function bulkImportLessonContent(
         subtitlesInserted: payload.subtitles.length,
         vocabularyInserted: payload.vocabulary.length,
         quizQuestionsInserted: payload.quizQuestions.length,
+        oldQuizCountDeleted,
+        newQuizCountInserted,
         ...buildShallowDiffSummary(beforeSnapshot, afterSnapshot),
       },
     });
@@ -659,6 +789,8 @@ export async function bulkImportLessonContent(
         subtitlesInserted: payload.subtitles.length,
         vocabularyInserted: payload.vocabulary.length,
         quizQuestionsInserted: payload.quizQuestions.length,
+        oldQuizCountDeleted,
+        newQuizCountInserted,
         mode,
       },
       error: null,
