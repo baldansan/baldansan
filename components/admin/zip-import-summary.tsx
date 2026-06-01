@@ -224,6 +224,12 @@ export function ZipImportSummary({ preview, validation, track = "legacy" }: Prop
             value={hskPreview.hasTeacherNotes ? "yes" : "no"}
           />
         ) : null}
+        {hskPreview ? (
+          <SummaryField
+            label="Source note format"
+            value={hskPreview.storesJsonSourceNote ? "JSON (hskStudyContent)" : "legacy — blocked"}
+          />
+        ) : null}
         <SummaryField label="Quiz count" value={preview.quizCount} />
         <SummaryField label="Audio count" value={preview.audioFileCount} />
         <SummaryField label="Image count" value={preview.imageFileCount} />
