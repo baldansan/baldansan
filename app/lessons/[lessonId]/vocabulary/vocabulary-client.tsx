@@ -298,7 +298,7 @@ export function LessonVocabularyClient({
         </div>
       </section>
 
-      {useFlashcardDefault ? (
+      {useFlashcardDefault && !(useHskFlashcard && viewMode === "flashcard") ? (
         <div className="flex flex-wrap gap-2">
           <button
             type="button"
@@ -323,6 +323,26 @@ export function LessonVocabularyClient({
             Жагсаалтаар харах
           </button>
         </div>
+      ) : null}
+
+      {useHskFlashcard && viewMode === "flashcard" ? (
+        <button
+          type="button"
+          onClick={() => setViewMode("list")}
+          className="mx-auto block text-xs font-medium text-slate-500 underline-offset-2 hover:text-emerald-700 hover:underline"
+        >
+          Жагсаалтаар харах
+        </button>
+      ) : null}
+
+      {useHskFlashcard && viewMode === "list" ? (
+        <button
+          type="button"
+          onClick={() => setViewMode("flashcard")}
+          className="mx-auto block text-xs font-medium text-emerald-700 underline-offset-2 hover:underline"
+        >
+          ← Картаар сурах
+        </button>
       ) : null}
 
       {useFlashcardDefault && viewMode === "flashcard" ? (

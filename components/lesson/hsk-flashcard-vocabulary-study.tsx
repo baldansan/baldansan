@@ -178,8 +178,7 @@ export function HskFlashcardVocabularyStudy({
             Үгийн сан дууслаа
           </h2>
           <p className="mt-2 text-sm text-slate-600">
-            Мэднэ: {knownKeys.size} · Дахин давтана: {reviewKeys.size} · Нийт:{" "}
-            {total}
+            Мэддэг болсон: {knownKeys.size} · Дахин давтана: {reviewKeys.size}
           </p>
           <div className="mt-6 flex flex-col gap-3">
             <Link href={quizHref} className={ctaPrimaryClass}>
@@ -216,14 +215,23 @@ export function HskFlashcardVocabularyStudy({
         </span>
       </div>
 
-      <button
-        type="button"
-        onClick={() => setFlipped((value) => !value)}
-        className="mx-auto w-full max-w-md rounded-3xl bg-white p-5 text-center shadow-sm ring-1 ring-emerald-100 transition-shadow hover:ring-emerald-200 sm:p-6"
-        style={{ minHeight: compact ? "220px" : "280px" }}
+      <div
+        className="mx-auto w-full max-w-md [perspective:1000px]"
+        style={{ minHeight: compact ? "240px" : "300px" }}
       >
-        {!flipped ? (
-          <div className="flex h-full flex-col items-center justify-center gap-3">
+        <button
+          type="button"
+          onClick={() => setFlipped((value) => !value)}
+          className={`relative w-full rounded-3xl bg-white shadow-sm ring-1 ring-emerald-100 transition-all duration-500 hover:ring-emerald-200 [transform-style:preserve-3d] ${
+            flipped ? "[transform:rotateY(180deg)]" : ""
+          }`}
+          style={{ minHeight: compact ? "240px" : "300px" }}
+        >
+          <div
+            className={`absolute inset-0 flex flex-col items-center justify-center p-5 sm:p-6 [backface-visibility:hidden] ${
+              flipped ? "invisible" : ""
+            }`}
+          >
             <div className="flex w-full items-start justify-end">
               {current && containsTargetScript(current.chinese) ? (
                 <span
@@ -246,12 +254,16 @@ export function HskFlashcardVocabularyStudy({
             <p className="text-5xl font-bold leading-none text-slate-900 sm:text-6xl">
               {current?.chinese}
             </p>
-            <p className="text-xs text-slate-500">
-              Мэдэхгүй бол card дээр дарж хараарай
+            <p className="mt-4 text-xs text-slate-500">
+              Мэдэхгүй бол дарж хараарай
             </p>
           </div>
-        ) : (
-          <div className="flex h-full flex-col items-center justify-center gap-2 text-left">
+
+          <div
+            className={`absolute inset-0 flex flex-col items-center justify-center gap-2 p-5 sm:p-6 [backface-visibility:hidden] [transform:rotateY(180deg)] ${
+              flipped ? "" : "invisible"
+            }`}
+          >
             <p className="text-3xl font-bold text-slate-900">{current?.chinese}</p>
             {current?.pinyin ? (
               <p className="text-lg font-medium text-emerald-700">{current.pinyin}</p>
@@ -265,7 +277,7 @@ export function HskFlashcardVocabularyStudy({
               </span>
             ) : null}
             {current?.exampleChinese || current?.exampleMongolian ? (
-              <div className="mt-3 w-full rounded-2xl bg-slate-50 p-3 ring-1 ring-slate-200">
+              <div className="mt-2 w-full rounded-2xl bg-slate-50 p-3 ring-1 ring-slate-200">
                 {current.exampleChinese ? (
                   <p className="text-sm font-medium text-slate-900">
                     {current.exampleChinese}
@@ -279,8 +291,8 @@ export function HskFlashcardVocabularyStudy({
               </div>
             ) : null}
           </div>
-        )}
-      </button>
+        </button>
+      </div>
 
       <div className="grid grid-cols-3 gap-2">
         <button

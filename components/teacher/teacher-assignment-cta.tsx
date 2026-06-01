@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { features } from "@/lib/features";
 import { useTeacherAuth } from "@/components/teacher/teacher-auth-gate";
 
 type Props = {
@@ -11,7 +12,7 @@ type Props = {
 export function TeacherAssignmentCta({ lessonId }: Props) {
   const { loggedIn } = useTeacherAuth();
 
-  if (loggedIn !== true) return null;
+  if (!features.b2b || loggedIn !== true) return null;
 
   return (
     <section className="rounded-2xl border border-dashed border-emerald-200 bg-emerald-50/40 p-4 ring-1 ring-emerald-100 sm:p-5">

@@ -2,6 +2,7 @@ import {
   inferLessonPackageType,
 } from "@/lib/admin/lesson-package-type";
 import { hasVideoUrl } from "@/lib/lesson-media";
+import { isHskStructuredLesson } from "@/lib/lesson/hsk-lesson-content";
 import { enrichLessonTeachingMedia } from "@/lib/lesson/teaching-media";
 import { enrichLessonHskContent } from "@/lib/lesson/hsk-lesson-content";
 import { getSourceNoteTag } from "@/lib/lesson/source-note-json";
@@ -85,6 +86,10 @@ export function inferContentType(input: {
 }
 
 export function resolveLessonContentType(lesson: LessonContent): LessonContentType {
+  if (isHskStructuredLesson(lesson)) {
+    return "textbook";
+  }
+
   if (lesson.contentType && isLessonContentType(lesson.contentType)) {
     return lesson.contentType;
   }

@@ -53,12 +53,12 @@ function TextbookDetailMediaSection({
         </p>
       ) : (
         <p className="mt-2 text-sm leading-6 text-[var(--app-muted)]">
-          Видео байхгүй — үгийн сан, quiz-ээр сурна.
+          Багшийн тайлбартайгаар номын хичээлээ апп дотор судлана.
         </p>
       )}
       <div className="mt-4 flex flex-col gap-2">
         <Link href={watchHref} className="app-btn-primary w-full">
-          {prelesson ? "Үсэг сурах" : "Хичээл судлах"}
+          📖 {LEARNER_LESSON.startLesson}
         </Link>
         <div className="app-lesson-cta-row">
           <Link
