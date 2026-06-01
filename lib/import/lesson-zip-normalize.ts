@@ -2,6 +2,7 @@
 
 import { inferLanguageFromCourseId } from "@/lib/language-track";
 import type { TeachingImageRef } from "@/lib/lesson/teaching-media";
+import { normalizeQuizType } from "@/lib/supabase/admin-import";
 
 export type ZipImportContext = {
   courseId: string;
@@ -309,16 +310,18 @@ export function normalizeZipQuizRow(
   }
 
   const id = trim(item.id);
-  const type = trim(item.type).toLowerCase().replace(/\s+/g, "_");
-  const question = trim(item.question ?? item.prompt);
-  const correctAnswer = trim(item.correctAnswer ?? item.correct_answer ?? item.answer);
+  const type =
+    normalizeQuizType(trim(item.type), true) ?? "multiple_choice";
+  const question = trim(
+    item.question ?? item.prompt ?? item.promptMn ?? item.prompt_mn
+  );
+  const correctAnswer = trim(
+    item.correctAnswer ?? item.correct_answer ?? item.answer
+  );
   const options = item.options;
 
   if (!id) {
     warnings.push(`quiz[${index}]: id missing (recommended).`);
-  }
-  if (!type) {
-    errors.push(`quiz[${index}]: type is required.`);
   }
   if (!question) {
     errors.push(`quiz[${index}]: prompt (or question) is required.`);
@@ -334,11 +337,11 @@ export function normalizeZipQuizRow(
   const lessonSection =
     trim(item.lessonSection ?? item.lesson_section ?? item.section) || undefined;
   const phase = trim(item.phase) || undefined;
-  const orderRaw = item.orderIndex ?? item.order_index;
+  const orderRaw = item.order ?? item.orderIndex ?? item.order_index;
   const orderIndex =
     typeof orderRaw === "number" && Number.isFinite(orderRaw)
-      ? orderRaw
-      : undefined;
+      ? Math.floor(orderRaw)
+      : index + 1;
 
   if (!skillTags?.length) {
     warnings.push(`quiz[${index}]: skillTags missing.`);
@@ -347,11 +350,7 @@ export function normalizeZipQuizRow(
     warnings.push(`quiz[${index}]: difficulty missing.`);
   }
 
-  const isMultipleChoice =
-    type === "multiple_choice" ||
-    type === "multiplechoice" ||
-    type === "mcq" ||
-    type === "choice";
+  const isMultipleChoice = type === "multiple_choice";
 
   if (isMultipleChoice) {
     const optionList = Array.isArray(options)
@@ -374,7 +373,9 @@ export function normalizeZipQuizRow(
     question,
     options: options ?? [],
     correctAnswer,
-    explanation: trim(item.explanation) || undefined,
+    explanation:
+      trim(item.explanation ?? item.explanationMn ?? item.explanation_mn) ||
+      undefined,
     skillTags,
     difficulty,
     lessonSection,

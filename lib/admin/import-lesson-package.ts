@@ -38,6 +38,8 @@ export type LessonPackageImportResult = {
   courseId: string;
   vocabularyInserted: number;
   quizInserted: number;
+  oldQuizCountDeleted?: number;
+  newQuizCountInserted?: number;
   subtitlesInserted: number;
   mediaUploaded: number;
   mediaFailures: PackageMediaUploadResult[];
@@ -563,6 +565,8 @@ export async function importLessonPackage(
       language: validation.preview.language,
       vocabularyInserted: imported.data.vocabularyInserted,
       quizInserted: imported.data.quizQuestionsInserted,
+      oldQuizCountDeleted: imported.data.oldQuizCountDeleted,
+      newQuizCountInserted: imported.data.newQuizCountInserted,
       subtitlesInserted: imported.data.subtitlesInserted,
       mediaUploaded,
     },
@@ -579,6 +583,8 @@ export async function importLessonPackage(
     courseId,
     vocabularyInserted: imported.data.vocabularyInserted,
     quizInserted: imported.data.quizQuestionsInserted,
+    oldQuizCountDeleted: imported.data.oldQuizCountDeleted,
+    newQuizCountInserted: imported.data.newQuizCountInserted,
     subtitlesInserted: imported.data.subtitlesInserted,
     mediaUploaded,
     mediaFailures,

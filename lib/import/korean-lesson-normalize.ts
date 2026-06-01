@@ -243,14 +243,18 @@ export function buildVocabPronunciationMapFromRows(
 }
 
 /** Map one Korean quiz row to DB bulk-import shape. */
-export function mapKoreanQuizToDb(row: KoreanZipQuizRow): NormalizedQuizImport {
+export function mapKoreanQuizToDb(
+  row: KoreanZipQuizRow,
+  index = 0
+): NormalizedQuizImport {
   const type = normalizeQuizType(row.type) ?? "multiple_choice";
   return {
     type,
     question: row.question,
     options: row.options,
     correctAnswer: row.correctAnswer,
-    explanation: row.explanation ?? null,
+    explanation: row.explanation ?? "",
+    orderIndex: index + 1,
     skillTags: row.skillTags,
     difficulty: row.difficulty,
   };
@@ -658,7 +662,9 @@ function buildImportPayload(pkg: KoreanLessonPackage): LessonImportPayload {
   return {
     subtitles: mapSubtitlesForImport(pkg.subtitles),
     vocabulary: pkg.vocabulary.map(mapKoreanVocabularyToDb),
-    quizQuestions: pkg.quizQuestions.map(mapKoreanQuizToDb),
+    quizQuestions: pkg.quizQuestions.map((row, index) =>
+      mapKoreanQuizToDb(row, index)
+    ),
   };
 }
 
