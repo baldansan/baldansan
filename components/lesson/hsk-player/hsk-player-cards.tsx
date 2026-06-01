@@ -4,14 +4,17 @@ import Link from "next/link";
 import type { ReactNode } from "react";
 import { SpeakerButton } from "@/components/tts/speaker-button";
 import { HskMediaImage } from "@/components/lesson/hsk-flashcard-vocabulary-study";
+import { HskOptionalVideoCard } from "@/components/lesson/hsk-optional-video-card";
 import {
   findHskMediaBySection,
   resolveHskMediaUrl,
 } from "@/lib/lesson/hsk-media";
+import type { HskGuidedStep } from "@/lib/lesson/hsk-guided-step";
 import { HSK_PLAYER } from "@/lib/lesson/hsk-player/hsk-player-theme";
 import type { HskDialogueLine, HskToneExample } from "@/lib/lesson/hsk-lesson-content";
 import type { HskStudyContent } from "@/lib/lesson/hsk-lesson-content";
 import { containsTargetScript, resolveTtsLang } from "@/lib/tts/infer-lang";
+import type { TeachingImage } from "@/lib/lesson/teaching-media";
 import type { LessonContent } from "@/types/lesson-content";
 import type { VocabularyWord } from "@/types/lesson";
 
@@ -38,15 +41,17 @@ export function TeacherSpeechCard({
   tip,
   media,
   section,
+  teachingImages,
 }: {
   title: string;
   bullets: string[];
   tip?: string;
   media?: HskStudyContent["media"];
   section?: string;
+  teachingImages?: TeachingImage[];
 }) {
   const image = section ? findHskMediaBySection(media, section) : null;
-  const imageUrl = resolveHskMediaUrl(image);
+  const imageUrl = resolveHskMediaUrl(image, teachingImages);
 
   return (
     <HskPlayerCard>
@@ -97,6 +102,7 @@ export function KeyPhraseCard({
   breakdown,
   usage,
   media,
+  teachingImages,
 }: {
   lesson: LessonContent;
   chinese: string;
@@ -105,10 +111,11 @@ export function KeyPhraseCard({
   breakdown: string;
   usage: string;
   media?: HskStudyContent["media"];
+  teachingImages?: TeachingImage[];
 }) {
   const lang = resolveTtsLang({ courseId: lesson.courseId });
   const hero = findHskMediaBySection(media, "hero");
-  const heroUrl = resolveHskMediaUrl(hero);
+  const heroUrl = resolveHskMediaUrl(hero, teachingImages);
 
   return (
     <HskPlayerCard>
@@ -161,15 +168,17 @@ export function PinyinPracticeCard({
   explainer,
   rows,
   media,
+  teachingImages,
 }: {
   lesson: LessonContent;
   explainer: string[];
   rows: Array<{ chinese: string; pinyin: string; hint?: string }>;
   media?: HskStudyContent["media"];
+  teachingImages?: TeachingImage[];
 }) {
   const lang = resolveTtsLang({ courseId: lesson.courseId });
   const pinyinImage = findHskMediaBySection(media, "pinyin");
-  const pinyinUrl = resolveHskMediaUrl(pinyinImage);
+  const pinyinUrl = resolveHskMediaUrl(pinyinImage, teachingImages);
 
   return (
     <HskPlayerCard>
@@ -239,14 +248,16 @@ export function TonePracticeCard({
   toneNote,
   toneWarning,
   media,
+  teachingImages,
 }: {
   tones: HskToneExample[];
   toneNote: string;
   toneWarning: string;
   media?: HskStudyContent["media"];
+  teachingImages?: TeachingImage[];
 }) {
   const toneImage = findHskMediaBySection(media, "tone");
-  const toneUrl = resolveHskMediaUrl(toneImage);
+  const toneUrl = resolveHskMediaUrl(toneImage, teachingImages);
 
   return (
     <HskPlayerCard>
@@ -364,14 +375,16 @@ export function DialoguePracticeCard({
   lesson,
   lines,
   media,
+  teachingImages,
 }: {
   lesson: LessonContent;
   lines: HskDialogueLine[];
   media?: HskStudyContent["media"];
+  teachingImages?: TeachingImage[];
 }) {
   const lang = resolveTtsLang({ courseId: lesson.courseId });
   const dialogueImage = findHskMediaBySection(media, "dialogue");
-  const dialogueUrl = resolveHskMediaUrl(dialogueImage);
+  const dialogueUrl = resolveHskMediaUrl(dialogueImage, teachingImages);
 
   return (
     <HskPlayerCard>
@@ -533,5 +546,93 @@ export function LessonCompleteCard({
         </button>
       </div>
     </HskPlayerCard>
+  );
+}
+
+export function GuidedStepCard({
+  step,
+  media,
+  teachingImages,
+}: {
+  step: HskGuidedStep;
+  media?: HskStudyContent["media"];
+  teachingImages?: TeachingImage[];
+}) {
+  const image = findHskMediaBySection(media, step.mediaSection || step.id);
+  const imageUrl = resolveHskMediaUrl(image, teachingImages);
+
+  return (
+    <HskPlayerCard>
+      <p className="text-xs font-bold uppercase tracking-wide" style={{ color: HSK_PLAYER.muted }}>
+        {step.titleMn}
+      </p>
+      {step.chinese ? (
+        <p className="mt-3 text-center text-3xl font-bold" style={{ color: HSK_PLAYER.text }}>
+          {step.chinese}
+        </p>
+      ) : null}
+      {step.pinyin ? (
+        <p className="mt-1 text-center text-lg" style={{ color: HSK_PLAYER.primary }}>
+          {step.pinyin}
+        </p>
+      ) : null}
+      {step.mongolian ? (
+        <p className="mt-1 text-center text-sm" style={{ color: HSK_PLAYER.muted }}>
+          {step.mongolian}
+        </p>
+      ) : null}
+      {step.bulletsMn.length > 0 ? (
+        <ul className="mt-4 space-y-2">
+          {step.bulletsMn.map((line) => (
+            <li
+              key={line}
+              className="rounded-xl px-3 py-2 text-sm leading-6"
+              style={{ backgroundColor: HSK_PLAYER.softYellow, color: HSK_PLAYER.text }}
+            >
+              {line}
+            </li>
+          ))}
+        </ul>
+      ) : null}
+      {step.examples.length > 0 ? (
+        <div className="mt-4 space-y-2">
+          {step.examples.map((example, index) => (
+            <div
+              key={`${example.chinese}-${index}`}
+              className="rounded-xl px-3 py-2 text-sm"
+              style={{ backgroundColor: HSK_PLAYER.softGreen, color: HSK_PLAYER.text }}
+            >
+              {example.label ? (
+                <p className="text-xs font-semibold" style={{ color: HSK_PLAYER.muted }}>
+                  {example.label}
+                </p>
+              ) : null}
+              {example.chinese ? <p className="text-lg font-bold">{example.chinese}</p> : null}
+              {example.pinyin ? <p style={{ color: HSK_PLAYER.primary }}>{example.pinyin}</p> : null}
+              {example.mongolian ? <p className="text-xs">{example.mongolian}</p> : null}
+            </div>
+          ))}
+        </div>
+      ) : null}
+      {imageUrl ? (
+        <div className="mt-3">
+          <HskMediaImage src={imageUrl} alt={step.titleMn} />
+        </div>
+      ) : null}
+    </HskPlayerCard>
+  );
+}
+
+export function HskOptionalVideoInline({
+  lesson,
+  adminPreview = false,
+}: {
+  lesson: LessonContent;
+  adminPreview?: boolean;
+}) {
+  return (
+    <div className="mt-3">
+      <HskOptionalVideoCard lesson={lesson} adminPreview={adminPreview} inline />
+    </div>
   );
 }

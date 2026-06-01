@@ -120,7 +120,8 @@ export function findHskMediaBySection(
 
 /** Resolve a display URL — storage URL, absolute path, or null for placeholder. */
 export function resolveHskMediaUrl(
-  image: HskMediaImage | null | undefined
+  image: HskMediaImage | null | undefined,
+  teachingImages?: TeachingImage[] | null
 ): string | null {
   if (!image) return null;
   const direct = image.url?.trim();
@@ -131,5 +132,24 @@ export function resolveHskMediaUrl(
   if (file && (file.startsWith("http") || file.startsWith("/"))) {
     return file;
   }
+
+  if (teachingImages?.length) {
+    const needle = (image.section || image.id || file).toLowerCase();
+    const match =
+      teachingImages.find(
+        (item) =>
+          item.type?.toLowerCase() === needle ||
+          item.file?.toLowerCase() === file.toLowerCase() ||
+          item.title?.toLowerCase() === needle
+      ) ??
+      teachingImages.find((item) =>
+        item.file?.toLowerCase().includes(needle.replace(/^images\//, ""))
+      );
+    const url = match?.url?.trim();
+    if (url && (url.startsWith("http") || url.startsWith("/"))) {
+      return url;
+    }
+  }
+
   return null;
 }

@@ -51,6 +51,12 @@ function pickText(value: unknown): string {
   return (
     trim(value.mongolian) ||
     trim(value.mn) ||
+    trim(value.titleMn) ||
+    trim(value.teacherSpeechMn) ||
+    trim(value.practiceMn) ||
+    trim(value.bodyMn) ||
+    trim(value.speechMn) ||
+    trim(value.textMn) ||
     trim(value.text) ||
     trim(value.description) ||
     trim(value.content) ||

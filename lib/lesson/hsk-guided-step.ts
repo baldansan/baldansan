@@ -1,0 +1,261 @@
+import { formatLearnerTeacherNote } from "@/lib/lesson/format-learner-teacher-note";
+
+export type HskGuidedStepKind =
+  | "teacher-intro"
+  | "key-phrase"
+  | "pinyin"
+  | "tones"
+  | "vocabulary"
+  | "dialogue"
+  | "characters"
+  | "practice-menu"
+  | "complete"
+  | "content";
+
+export type HskGuidedStep = {
+  id: string;
+  type: HskGuidedStepKind;
+  titleMn: string;
+  teacherSpeechMn: string;
+  bulletsMn: string[];
+  chinese: string;
+  pinyin: string;
+  mongolian: string;
+  examples: HskGuidedStepExample[];
+  mediaSection: string;
+  items: unknown[];
+};
+
+export type HskGuidedStepExample = {
+  chinese?: string;
+  pinyin?: string;
+  mongolian?: string;
+  label?: string;
+};
+
+const RAW_KEY_PATTERN =
+  /^(id|type|titlemn|titlechinese|teacherspeechmn|practicemn|itemmn|sourceref|metadata|sectionkey|sectionid)$/i;
+
+function isRecord(value: unknown): value is Record<string, unknown> {
+  return typeof value === "object" && value !== null && !Array.isArray(value);
+}
+
+function trim(value: unknown): string {
+  return String(value ?? "").trim();
+}
+
+function looksLikeRawKey(text: string): boolean {
+  const t = text.trim();
+  if (!t) return true;
+  if (RAW_KEY_PATTERN.test(t)) return true;
+  if (/^(ID|TYPE|TITLEMN|TEACHERSPEECHMN):/i.test(t)) return true;
+  return false;
+}
+
+/** Pick learner-facing Mongolian copy from Gold Standard step payloads. */
+export function pickLearnerMnText(record: unknown): string {
+  if (typeof record === "string") {
+    const text = record.trim();
+    return looksLikeRawKey(text) ? "" : text;
+  }
+  if (!isRecord(record)) return "";
+
+  const candidates = [
+    record.titleMn,
+    record.teacherSpeechMn,
+    record.practiceMn,
+    record.bodyMn,
+    record.speechMn,
+    record.textMn,
+    record.mongolian,
+    record.mn,
+    record.title,
+    record.text,
+    record.description,
+    record.content,
+    record.summary,
+    record.body,
+  ];
+
+  for (const value of candidates) {
+    const text = trim(value);
+    if (text && !looksLikeRawKey(text)) return text;
+  }
+  return "";
+}
+
+function normalizeStepKind(raw: unknown): HskGuidedStepKind {
+  const key = trim(raw).toLowerCase().replace(/[_\s]+/g, "-");
+  if (
+    key.includes("teacher") ||
+    key.includes("intro") ||
+    key === "lessonintro"
+  ) {
+    return "teacher-intro";
+  }
+  if (key.includes("key-phrase") || key === "phrase" || key === "herophrase") {
+    return "key-phrase";
+  }
+  if (key.includes("pinyin") || key.includes("pronunciation")) {
+    return "pinyin";
+  }
+  if (key.includes("tone")) return "tones";
+  if (key.includes("vocab") || key.includes("word") || key === "basicwords") {
+    return "vocabulary";
+  }
+  if (key.includes("dialogue")) return "dialogue";
+  if (key.includes("character") || key.includes("hanzi")) return "characters";
+  if (key.includes("practice-menu") || key === "practice") {
+    return "practice-menu";
+  }
+  if (key.includes("complete") || key.includes("summary") || key === "finish") {
+    return "complete";
+  }
+  return "content";
+}
+
+function parseExamples(raw: unknown): HskGuidedStepExample[] {
+  if (!Array.isArray(raw)) return [];
+  return raw
+    .map((item): HskGuidedStepExample | null => {
+      if (typeof item === "string") {
+        const text = item.trim();
+        if (!text || looksLikeRawKey(text)) return null;
+        return { mongolian: text };
+      }
+      if (!isRecord(item)) return null;
+      const chinese =
+        trim(item.chinese) || trim(item.titleChinese) || trim(item.word);
+      const pinyin = trim(item.pinyin) || trim(item.reading);
+      const mongolian =
+        pickLearnerMnText(item) ||
+        trim(item.exampleMn) ||
+        trim(item.meaningMn);
+      const label = trim(item.label) || trim(item.titleMn);
+      if (!chinese && !pinyin && !mongolian) return null;
+      return { chinese: chinese || undefined, pinyin: pinyin || undefined, mongolian: mongolian || undefined, label: label || undefined };
+    })
+    .filter((item): item is HskGuidedStepExample => item !== null);
+}
+
+function parseBullets(raw: unknown): string[] {
+  if (!Array.isArray(raw)) return [];
+  return raw
+    .map((item) => {
+      if (typeof item === "string") {
+        const text = item.trim();
+        return looksLikeRawKey(text) ? "" : text;
+      }
+      return pickLearnerMnText(item);
+    })
+    .filter(Boolean);
+}
+
+function normalizeGuidedStep(raw: unknown, index: number): HskGuidedStep | null {
+  if (!isRecord(raw)) return null;
+
+  const id = trim(raw.id) || trim(raw.key) || `step-${index + 1}`;
+  const type = normalizeStepKind(raw.type ?? raw.stepType ?? raw.sectionType ?? id);
+
+  const teacherSpeech =
+    formatLearnerTeacherNote(raw) ||
+    pickLearnerMnText(raw.teacherNote ?? raw.teacher) ||
+    "";
+
+  const titleMn =
+    pickLearnerMnText({ titleMn: raw.titleMn, title: raw.title }) ||
+    (type === "teacher-intro"
+      ? "Багшийн тайлбар"
+      : type === "pinyin"
+        ? "Pinyin"
+        : type === "tones"
+          ? "Tone дасгал"
+          : type === "key-phrase"
+            ? "Гол хэллэг"
+            : type === "vocabulary"
+              ? "Үгийн сан"
+              : type === "dialogue"
+                ? "Ярианы дасгал"
+                : type === "characters"
+                  ? "Үсэг"
+                  : type === "practice-menu"
+                    ? "Дасгал"
+                    : type === "complete"
+                      ? "Дууслаа"
+                      : "Хичээл");
+
+  const bulletsMn = parseBullets(
+    raw.bulletsMn ?? raw.bullets ?? raw.points ?? raw.objectives
+  );
+
+  const speechText = teacherSpeech || pickLearnerMnText(raw);
+  const allBullets =
+    bulletsMn.length > 0
+      ? bulletsMn
+      : speechText
+        ? speechText.split(/(?<=[.!?])\s+/).filter(Boolean)
+        : [];
+
+  const chinese =
+    trim(raw.chinese) || trim(raw.titleChinese) || trim(raw.phraseChinese);
+  const pinyin = trim(raw.pinyin) || trim(raw.reading);
+  const mongolian =
+    trim(raw.mongolian) ||
+    trim(raw.mn) ||
+    trim(raw.meaningMn) ||
+    pickLearnerMnText({ practiceMn: raw.practiceMn });
+
+  const examples = parseExamples(
+    raw.examples ?? raw.items ?? raw.lines ?? raw.tones ?? raw.rows
+  );
+
+  const mediaSection =
+    trim(raw.mediaSection) ||
+    trim(raw.section) ||
+    trim(raw.imageSection) ||
+    (type === "teacher-intro"
+      ? "teacher"
+      : type === "key-phrase"
+        ? "hero"
+        : type === "pinyin"
+          ? "pinyin"
+          : type === "tones"
+            ? "tone"
+            : type === "dialogue"
+              ? "dialogue"
+              : id);
+
+  if (
+    allBullets.length === 0 &&
+    !chinese &&
+    !mongolian &&
+    examples.length === 0 &&
+    type === "content"
+  ) {
+    return null;
+  }
+
+  return {
+    id,
+    type,
+    titleMn,
+    teacherSpeechMn: teacherSpeech,
+    bulletsMn: allBullets,
+    chinese,
+    pinyin,
+    mongolian,
+    examples,
+    mediaSection,
+    items: Array.isArray(raw.items) ? raw.items : [],
+  };
+}
+
+export function parseHskGuidedSteps(raw: unknown): HskGuidedStep[] {
+  if (!Array.isArray(raw)) return [];
+  const steps: HskGuidedStep[] = [];
+  for (let i = 0; i < raw.length; i += 1) {
+    const step = normalizeGuidedStep(raw[i], i);
+    if (step) steps.push(step);
+  }
+  return steps;
+}

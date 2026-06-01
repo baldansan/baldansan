@@ -1,4 +1,5 @@
 import { parseTagFromSourceNote } from "@/lib/lesson-content-type";
+import { parseHskGuidedSteps, type HskGuidedStep } from "@/lib/lesson/hsk-guided-step";
 import { formatLearnerTeacherNotes } from "@/lib/lesson/format-learner-teacher-note";
 import { parseHskMediaBundle, parseHskMediaFromLesson, type HskMediaBundle } from "@/lib/lesson/hsk-media";
 import { parseSourceNoteSegment } from "@/lib/lesson/hsk-source-note";
@@ -64,6 +65,7 @@ export type HskStudyContent = {
   sentenceExplanations: string[];
   characterNotes: HskCharacterNote[];
   studyGuideSteps: string[];
+  guidedSteps: HskGuidedStep[];
   teacherNotes: string[];
   media: HskMediaBundle | null;
   /** Dev-only section resolution metadata (when NODE_ENV=development). */
@@ -503,6 +505,17 @@ export function parseHskStudyContentFromLesson(
   );
   const studyGuideSteps = uniqueStrings(studyGuideResolved.value);
 
+  let guidedSteps: HskGuidedStep[] = [];
+  if (isRecord(pool.studyContent)) {
+    guidedSteps = parseHskGuidedSteps(pool.studyContent.guidedSteps);
+  }
+  if (guidedSteps.length === 0) {
+    const parsedNote = parseLessonSourceNote(lesson.sourceNote);
+    if (parsedNote.format === "json" && isRecord(parsedNote.data.hskStudyContent)) {
+      guidedSteps = parseHskGuidedSteps(parsedNote.data.hskStudyContent.guidedSteps);
+    }
+  }
+
   const teacherResolved = resolveHskTeacherNotes(pool);
   const teacherNotes = formatLearnerTeacherNotes(teacherResolved.value);
 
@@ -565,6 +578,7 @@ export function parseHskStudyContentFromLesson(
     sentenceExplanations,
     characterNotes,
     studyGuideSteps,
+    guidedSteps,
     teacherNotes,
     media,
     ...(process.env.NODE_ENV === "development" ? { sectionDebug } : {}),

@@ -11,11 +11,14 @@ import {
   PinyinPracticeCard,
   TeacherSpeechCard,
   TonePracticeCard,
+  GuidedStepCard,
+  HskOptionalVideoInline,
   VocabularyFlashcardPreview,
 } from "@/components/lesson/hsk-player/hsk-player-cards";
 import { lessonPlayerPrimaryBtnClass } from "@/components/lesson-player/lesson-player-shell";
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
 import { buildHskPlayerContent } from "@/lib/lesson/hsk-player/build-hsk-player-content";
+import { buildHskPlayerStepPlanFromLesson } from "@/lib/lesson/hsk-player/build-hsk-guided-steps";
 import { HSK_PLAYER } from "@/lib/lesson/hsk-player/hsk-player-theme";
 import { lessonPreviewPath } from "@/lib/lesson-publish";
 import { markLessonCompletedSmart, markLessonStartedSmart } from "@/lib/progress";
@@ -30,12 +33,12 @@ type Props = {
 
 const STORAGE_PREFIX = "buunduu-hsk-player:";
 
-function loadStep(lessonId: string): number {
+function loadStep(lessonId: string, maxIndex: number): number {
   if (typeof window === "undefined") return 0;
   try {
     const raw = localStorage.getItem(`${STORAGE_PREFIX}${lessonId}`);
     const n = Number(raw);
-    return Number.isFinite(n) ? Math.min(Math.max(0, n), HSK_PLAYER.totalSteps - 1) : 0;
+    return Number.isFinite(n) ? Math.min(Math.max(0, n), maxIndex) : 0;
   } catch {
     return 0;
   }
@@ -58,10 +61,12 @@ export function HskGuidedLessonPlayer({
 }: Props) {
   const router = useRouter();
   const content = useMemo(() => buildHskPlayerContent(lesson), [lesson]);
-  const totalSteps = HSK_PLAYER.totalSteps;
+  const stepPlan = useMemo(() => buildHskPlayerStepPlanFromLesson(lesson), [lesson]);
+  const totalSteps = stepPlan.totalSteps;
 
   const [stepIndex, setStepIndex] = useState(0);
   const [hydrated, setHydrated] = useState(false);
+  const currentStep = stepPlan.steps[stepIndex] ?? null;
 
   const vocabHref = lessonPreviewPath(lesson.id, {
     adminPreview,
@@ -77,9 +82,9 @@ export function HskGuidedLessonPlayer({
     : null;
 
   useEffect(() => {
-    setStepIndex(loadStep(routeLessonId));
+    setStepIndex(loadStep(routeLessonId, Math.max(0, totalSteps - 1)));
     setHydrated(true);
-  }, [routeLessonId]);
+  }, [routeLessonId, totalSteps]);
 
   useEffect(() => {
     if (!hydrated) return;
@@ -180,47 +185,76 @@ export function HskGuidedLessonPlayer({
         </header>
 
         <div className="min-h-0 flex-1 overflow-y-auto overflow-x-hidden">
-          {stepIndex === 0 ? (
+          {currentStep?.type === "teacher-intro" ? (
             <TeacherSpeechCard
-              title="Багшийн тайлбар"
-              bullets={content.introBullets}
-              tip={content.teacherTip}
+              title={currentStep.titleMn || "Багшийн тайлбар"}
+              bullets={
+                currentStep.bulletsMn.length > 0
+                  ? currentStep.bulletsMn
+                  : content.introBullets
+              }
+              tip={currentStep.teacherSpeechMn || content.teacherTip}
               media={content.study.media}
-              section="teacher"
+              section={currentStep.mediaSection || "teacher"}
+              teachingImages={lesson.teachingImages}
             />
           ) : null}
 
-          {stepIndex === 1 ? (
+          {currentStep?.type === "key-phrase" ? (
             <KeyPhraseCard
               lesson={lesson}
-              chinese={content.keyPhrase.chinese}
-              pinyin={content.keyPhrase.pinyin}
-              mongolian={content.keyPhrase.mongolian}
+              chinese={currentStep.chinese || content.keyPhrase.chinese}
+              pinyin={currentStep.pinyin || content.keyPhrase.pinyin}
+              mongolian={currentStep.mongolian || content.keyPhrase.mongolian}
               breakdown={content.keyPhrase.breakdown}
               usage={content.keyPhrase.usage}
               media={content.study.media}
+              teachingImages={lesson.teachingImages}
             />
           ) : null}
 
-          {stepIndex === 2 ? (
+          {currentStep?.type === "pinyin" ? (
             <PinyinPracticeCard
               lesson={lesson}
-              explainer={content.pinyinExplainer}
-              rows={content.pinyinRows}
+              explainer={
+                currentStep.bulletsMn.length > 0
+                  ? currentStep.bulletsMn
+                  : content.pinyinExplainer
+              }
+              rows={
+                currentStep.examples.length > 0
+                  ? currentStep.examples.map((row) => ({
+                      chinese: row.chinese ?? "",
+                      pinyin: row.pinyin ?? "",
+                      hint: row.mongolian ?? row.label,
+                    }))
+                  : content.pinyinRows
+              }
               media={content.study.media}
+              teachingImages={lesson.teachingImages}
             />
           ) : null}
 
-          {stepIndex === 3 ? (
+          {currentStep?.type === "tones" ? (
             <TonePracticeCard
-              tones={content.tones}
-              toneNote={content.toneNote}
+              tones={
+                currentStep.examples.length > 0
+                  ? currentStep.examples.map((row, index) => ({
+                      label: row.label ?? `${index + 1}-р өнгө`,
+                      example: row.chinese ?? row.pinyin ?? "",
+                      pinyin: row.pinyin ?? row.chinese ?? "",
+                      mongolian: row.mongolian ?? "",
+                    }))
+                  : content.tones
+              }
+              toneNote={currentStep.teacherSpeechMn || content.toneNote}
               toneWarning={content.toneWarning}
               media={content.study.media}
+              teachingImages={lesson.teachingImages}
             />
           ) : null}
 
-          {stepIndex === 4 ? (
+          {currentStep?.type === "vocabulary" ? (
             <VocabularyFlashcardPreview
               lesson={lesson}
               word={content.featuredWord}
@@ -228,15 +262,34 @@ export function HskGuidedLessonPlayer({
             />
           ) : null}
 
-          {stepIndex === 5 ? (
+          {currentStep?.type === "dialogue" ? (
             <DialoguePracticeCard
               lesson={lesson}
-              lines={content.dialogueLines}
+              lines={
+                currentStep.examples.length > 0
+                  ? currentStep.examples.map((row) => ({
+                      speaker: row.label,
+                      chinese: row.chinese ?? "",
+                      pinyin: row.pinyin,
+                      mongolian: row.mongolian,
+                    }))
+                  : content.dialogueLines
+              }
               media={content.study.media}
+              teachingImages={lesson.teachingImages}
             />
           ) : null}
 
-          {stepIndex === 6 ? (
+          {currentStep?.type === "characters" ||
+          currentStep?.type === "content" ? (
+            <GuidedStepCard
+              step={currentStep}
+              media={content.study.media}
+              teachingImages={lesson.teachingImages}
+            />
+          ) : null}
+
+          {currentStep?.type === "practice-menu" ? (
             <PracticeMenuCard
               vocabHref={vocabHref}
               quizHref={quizHref}
@@ -244,9 +297,9 @@ export function HskGuidedLessonPlayer({
             />
           ) : null}
 
-          {stepIndex === 7 ? (
+          {currentStep?.type === "complete" ? (
             <LessonCompleteCard
-              message={content.completeMessage}
+              message={currentStep.teacherSpeechMn || content.completeMessage}
               vocabHref={vocabHref}
               quizHref={quizHref}
               nextHref={nextHref}
@@ -254,6 +307,8 @@ export function HskGuidedLessonPlayer({
               onRestart={handleRestart}
             />
           ) : null}
+
+          <HskOptionalVideoInline lesson={lesson} adminPreview={adminPreview} />
         </div>
 
         {!isLastStep ? (
@@ -275,7 +330,7 @@ export function HskGuidedLessonPlayer({
                 onClick={goNext}
                 className="min-h-[44px] flex-1 rounded-full border border-slate-200 bg-white text-sm font-semibold text-slate-700"
               >
-                Дараагийнх →
+                {isLastStep ? "Дуусгах" : "Дараагийнх →"}
               </button>
             </div>
             <button

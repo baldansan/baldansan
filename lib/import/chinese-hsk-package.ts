@@ -32,6 +32,8 @@ import {
 } from "@/lib/import/chinese-hsk-normalize";
 import { validateChineseHskPackage } from "@/lib/import/chinese-hsk-validate";
 import type { HskImportPreview } from "@/lib/import/chinese-hsk-types";
+import type { TeachingImageRef } from "@/lib/lesson/teaching-media";
+import { parseHskMediaBundle } from "@/lib/lesson/hsk-media";
 import { isJsonSourceNote } from "@/lib/lesson/source-note-json";
 
 async function readJsonFile(
@@ -91,6 +93,44 @@ function parseVocabularyArray(
   return rows;
 }
 
+function buildTeachingImagesFromMedia(media: unknown): TeachingImageRef[] {
+  const bundle = parseHskMediaBundle(media);
+  if (!bundle?.images.length) return [];
+  return bundle.images.map((image) => {
+    const file = image.file.trim();
+    const normalizedFile =
+      file && !file.startsWith("images/") && !file.startsWith("/") && !file.startsWith("http")
+        ? `images/${file.replace(/^\.?\//, "")}`
+        : file;
+    return {
+      type: image.section || image.id || "image",
+      title: image.title || image.id || image.section || "Teaching image",
+      file: normalizedFile || `images/${image.id || "image"}.png`,
+    };
+  });
+}
+
+function resolveHskImportLessonType(
+  manifest: ChineseHskManifest,
+  lessonJson: unknown
+): string {
+  if (manifest.lessonType === "prelesson") return "prelesson";
+  if (isRecord(lessonJson)) {
+    const fromLesson = String(lessonJson.lessonType ?? lessonJson.lesson_type ?? "").trim();
+    if (fromLesson) return fromLesson;
+  }
+  if (manifest.lessonNumber === 0) return "prelesson";
+  return manifest.lessonProfile;
+}
+
+function isRecord(value: unknown): value is Record<string, unknown> {
+  return typeof value === "object" && value !== null && !Array.isArray(value);
+}
+
+function trim(value: unknown): string {
+  return String(value ?? "").trim();
+}
+
 function buildHskImportPreview(
   pkg: LessonZipPackage,
   manifest: ChineseHskManifest,
@@ -109,6 +149,10 @@ function buildHskImportPreview(
       )
     : null;
 
+  const videoRequired =
+    Boolean(trim((rawFiles.lesson as Record<string, unknown> | null)?.videoFile)) ||
+    (studySummary?.videoRequired ?? false);
+
   return {
     ...base,
     hskLevel: manifest.hskLevel,
@@ -122,9 +166,13 @@ function buildHskImportPreview(
     workbookWritingCount: meta?.workbookWritingCount ?? 0,
     workbookExerciseCount: meta?.workbookExerciseCount ?? 0,
     studySectionCount: studySummary?.studySectionCount ?? 0,
+    guidedStepCount: studySummary?.guidedStepCount ?? 0,
     hasPronunciationContent: studySummary?.hasPronunciationContent ?? false,
+    hasPinyinContent: studySummary?.hasPronunciationContent ?? false,
     hasToneContent: studySummary?.hasToneContent ?? false,
     hasTeacherNotes: studySummary?.hasTeacherNotes ?? false,
+    mediaImageCount: studySummary?.mediaImageCount ?? base.imageFileCount,
+    videoRequired,
     storesJsonSourceNote: isJsonSourceNote(pkg.lesson?.sourceNote),
     answerStatus:
       (manifest.verification?.answerStatus as string | undefined) ?? null,
@@ -294,11 +342,29 @@ export async function parseChineseHskLessonZip(file: File): Promise<LessonZipVal
           source: hskManifest.source
             ? JSON.stringify(hskManifest.source)
             : undefined,
-          lessonType: hskManifest.lessonProfile,
+          lessonType: resolveHskImportLessonType(hskManifest, rawFiles.lesson),
         }
       : null;
 
     if (lesson && hskManifest && hskValidation.meta) {
+      const importLessonType = resolveHskImportLessonType(
+        hskManifest,
+        rawFiles.lesson
+      );
+      if (
+        hskManifest.lessonNumber != null &&
+        lesson.orderIndex == null
+      ) {
+        lesson.orderIndex = hskManifest.lessonNumber;
+      }
+      const teachingFromMedia = buildTeachingImagesFromMedia(rawFiles.media);
+      if (teachingFromMedia.length > 0) {
+        lesson.teachingImages = [
+          ...(lesson.teachingImages ?? []),
+          ...teachingFromMedia,
+        ];
+      }
+
       lesson.sourceNote = mergeHskProfileIntoSourceNote(
         undefined,
         hskManifest,
@@ -308,15 +374,16 @@ export async function parseChineseHskLessonZip(file: File): Promise<LessonZipVal
           audioManifest: rawFiles.audioManifest,
           studyContent: rawFiles.studyContent,
           rawFiles,
-          lessonType: hskManifest.lessonProfile,
+          lessonType: importLessonType,
         }
       );
       lesson.courseId = hskManifest.courseId;
+      lesson.lessonType = importLessonType;
       lesson.status = "draft";
 
       if (!isJsonSourceNote(lesson.sourceNote)) {
         errors.push(
-          "Failed to build JSON source_note for HSK study content — re-parse the ZIP and try again."
+          "Gold Standard HSK package must store JSON source_note with hskStudyContent — legacy text format is blocked."
         );
       }
     }

@@ -13,9 +13,13 @@ export type HskImportPreview = LessonImportPreview & {
   workbookWritingCount?: number;
   workbookExerciseCount?: number;
   studySectionCount?: number;
+  guidedStepCount?: number;
   hasPronunciationContent?: boolean;
+  hasPinyinContent?: boolean;
   hasToneContent?: boolean;
   hasTeacherNotes?: boolean;
+  mediaImageCount?: number;
+  videoRequired?: boolean;
   storesJsonSourceNote?: boolean;
   answerStatus?: string | null;
   textStatus?: string | null;

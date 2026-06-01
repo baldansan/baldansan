@@ -12,6 +12,7 @@ import { RetentionSyncCard } from "@/components/retention/retention-sync-card";
 import { LocalProgressNote } from "@/components/local-progress-note";
 import { ProgressSyncCard } from "@/components/progress-sync-card";
 import { lessonPath } from "@/lib/content";
+import { features } from "@/lib/features";
 import { getCurrentUser, hasSupabaseConfig } from "@/lib/supabase/auth";
 import { isCurrentUserAdmin } from "@/lib/supabase/admin";
 import type { AuthUser } from "@/types/auth";
@@ -228,7 +229,9 @@ export function ProfileDashboard() {
             <Link href="/weekly-report" className="rounded-full border border-emerald-200 bg-emerald-50 px-4 py-2 text-sm font-semibold text-emerald-800">Weekly report</Link>
             <Link href="/notifications" className="rounded-full border border-emerald-200 bg-emerald-50 px-4 py-2 text-sm font-semibold text-emerald-800">Notifications</Link>
             <Link href="/study-plan" className="rounded-full border border-emerald-200 bg-emerald-50 px-4 py-2 text-sm font-semibold text-emerald-800">Study plan</Link>
-            <Link href="/my-assignments" className="rounded-full border border-emerald-200 bg-emerald-50 px-4 py-2 text-sm font-semibold text-emerald-800">My assignments</Link>
+            {features.b2b ? (
+              <Link href="/my-assignments" className="rounded-full border border-emerald-200 bg-emerald-50 px-4 py-2 text-sm font-semibold text-emerald-800">My assignments</Link>
+            ) : null}
           </div>
           <p className="mt-3 text-xs text-slate-500">
             Notification preferences (push/email) — ирээдүйд нэмэгдэнэ. Одоогоор in-app only.

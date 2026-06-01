@@ -2,12 +2,15 @@ import type { LessonContent } from "@/types/lesson-content";
 
 export type LessonPackageType = "prelesson" | "lesson";
 
-const PRELESSON_ID_PATTERN = /PRELESSON|K-PRE-|KR-L1-PRE/i;
+const PRELESSON_ID_PATTERN =
+  /PRELESSON|K-PRE-|KR-L1-PRE|HSK\d*-PRELESSON|PRELESSON-\d+/i;
 
 function sourceNoteIndicatesPrelesson(sourceNote?: string | null): boolean {
   const note = sourceNote?.toLowerCase() ?? "";
   return (
     note.includes("lessontype=prelesson") ||
+    note.includes('"lessontype":"prelesson"') ||
+    note.includes('"lessonType":"prelesson"') ||
     note.includes("type=prelesson") ||
     note.includes("lesson_type=prelesson")
   );
@@ -26,6 +29,12 @@ export function inferLessonPackageType(
   if (
     lesson.courseId.toLowerCase().startsWith("korean") &&
     /prelesson/i.test(lesson.id)
+  ) {
+    return "prelesson";
+  }
+  if (
+    lesson.courseId.toLowerCase().includes("hsk") &&
+    /prelesson|pinyin-tone|pre-lesson/i.test(lesson.id)
   ) {
     return "prelesson";
   }

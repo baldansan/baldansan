@@ -1,6 +1,7 @@
 /** HSK level import profiles for Chinese textbook ZIP packages. */
 
 export type HskLessonProfileId =
+  | "hsk1-prelesson-pinyin-tone"
   | "hsk1-pronunciation-character-basic"
   | "hsk2-basic-dialogue-sentence"
   | "hsk3-dialogue-reading-writing-review"
@@ -25,6 +26,24 @@ export type HskProfileDefinition = {
 };
 
 export const HSK_PROFILES: Record<HskLessonProfileId, HskProfileDefinition> = {
+  "hsk1-prelesson-pinyin-tone": {
+    id: "hsk1-prelesson-pinyin-tone",
+    hskLevel: 1,
+    badgeLabel: "HSK1 Prelesson — Pinyin & Tone",
+    badgeShort: "Pre-01",
+    requiredSections: [
+      "lessonIntro",
+      "pinyinPronunciation",
+      "tones",
+    ],
+    optionalSections: [
+      "workbookPronunciation",
+      "basicWords",
+      "miniQuiz",
+      "culture",
+    ],
+    requiresQuiz: true,
+  },
   "hsk1-pronunciation-character-basic": {
     id: "hsk1-pronunciation-character-basic",
     hskLevel: 1,
@@ -182,6 +201,34 @@ export function inferProfileFromHskLevel(level: number): HskLessonProfileId | nu
     return PROFILE_BY_LEVEL[level as HskLevel];
   }
   return null;
+}
+
+export function isHskPrelessonProfile(profileId: string): boolean {
+  return profileId.includes("prelesson") || profileId.includes("pre-lesson");
+}
+
+export function inferProfileFromManifest(input: {
+  lessonProfile?: string | null;
+  lessonType?: string | null;
+  lessonNumber?: number | null;
+  hskLevel: number;
+}): HskLessonProfileId | null {
+  const profileRaw = input.lessonProfile?.trim();
+  if (profileRaw && isKnownHskProfile(profileRaw)) {
+    return profileRaw;
+  }
+
+  const lessonType = input.lessonType?.trim().toLowerCase();
+  const lessonNumber = input.lessonNumber;
+  if (
+    lessonType === "prelesson" ||
+    lessonNumber === 0 ||
+    /prelesson|pre-lesson/i.test(profileRaw ?? "")
+  ) {
+    if (input.hskLevel === 1) return "hsk1-prelesson-pinyin-tone";
+  }
+
+  return inferProfileFromHskLevel(input.hskLevel);
 }
 
 export function getHskProfile(profileId: HskLessonProfileId): HskProfileDefinition {
