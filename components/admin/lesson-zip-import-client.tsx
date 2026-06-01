@@ -161,9 +161,21 @@ export function LessonZipImportClient({
       }
 
       if (!response.ok || !result.ok) {
+        const detailLines =
+          result.validationDetails?.map((detail) => {
+            const parts = [
+              detail.section ? `[${detail.section}]` : null,
+              detail.field ? `${detail.field}:` : null,
+              detail.reason,
+              detail.lessonId ? `(lessonId: ${detail.lessonId})` : null,
+            ].filter(Boolean);
+            return parts.join(" ");
+          }) ?? [];
         const message =
-          result.errors?.join(" ") ||
-          `Import failed with status ${response.status}.`;
+          detailLines.length > 0
+            ? `Import failed\n${detailLines.join("\n")}`
+            : result.errors?.join(" ") ||
+              `Import failed with status ${response.status}.`;
         setError(message);
         setImportResult(result);
         return;
@@ -353,6 +365,41 @@ export function LessonZipImportClient({
             Go to lessons
           </Link>
         </div>
+      ) : null}
+
+      {importResult && !importResult.ok ? (
+        <section className="rounded-2xl bg-red-50 p-5 ring-1 ring-red-200 sm:p-6">
+          <h2 className="text-base font-semibold text-red-900">Import failed</h2>
+          <p className="mt-1 text-sm text-red-800">
+            Lesson ID: <strong>{importResult.lessonId || validation?.preview?.lessonId}</strong>
+          </p>
+          {importResult.validationDetails?.length ? (
+            <ul className="mt-3 space-y-2 text-sm text-red-900">
+              {importResult.validationDetails.map((detail, index) => (
+                <li
+                  key={`${detail.field}-${index}`}
+                  className="rounded-lg bg-white/70 px-3 py-2 ring-1 ring-red-100"
+                >
+                  {detail.section ? (
+                    <p className="text-xs font-semibold uppercase tracking-wide text-red-700">
+                      {detail.section}
+                    </p>
+                  ) : null}
+                  {detail.field ? (
+                    <p className="text-xs font-medium text-red-800">{detail.field}</p>
+                  ) : null}
+                  <p className="mt-1">{detail.reason}</p>
+                </li>
+              ))}
+            </ul>
+          ) : (
+            <ul className="mt-3 list-disc space-y-1 pl-5 text-sm text-red-900">
+              {(importResult.errors ?? []).map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+          )}
+        </section>
       ) : null}
 
       {importComplete && lessonId ? (

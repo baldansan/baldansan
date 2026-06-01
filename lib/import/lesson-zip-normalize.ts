@@ -10,6 +10,8 @@ export type ZipImportContext = {
   targetLanguage?: string;
   uiLanguage?: string;
   isKorean: boolean;
+  /** Default HSK level from manifest (Chinese packages). */
+  defaultHskLevel?: number;
 };
 
 export type NormalizedZipManifest = {
@@ -86,11 +88,25 @@ function trim(value: unknown): string {
   return String(value ?? "").trim();
 }
 
+function parseOptionsForZip(value: unknown): string[] {
+  if (!Array.isArray(value)) return [];
+  return value
+    .map((item) => {
+      if (typeof item === "string") return item.trim();
+      if (isRecord(item)) {
+        return trim(item.text ?? item.label ?? item.value ?? item.option);
+      }
+      return "";
+    })
+    .filter(Boolean);
+}
+
 export function buildZipImportContext(
   courseId: string,
   language: string,
   targetLanguage?: string,
-  uiLanguage?: string
+  uiLanguage?: string,
+  defaultHskLevel?: number
 ): ZipImportContext {
   const isKorean =
     targetLanguage === "ko" ||
@@ -104,6 +120,10 @@ export function buildZipImportContext(
     targetLanguage: targetLanguage || undefined,
     uiLanguage: uiLanguage || undefined,
     isKorean,
+    defaultHskLevel:
+      typeof defaultHskLevel === "number" && defaultHskLevel >= 1 && defaultHskLevel <= 6
+        ? defaultHskLevel
+        : undefined,
   };
 }
 
@@ -256,7 +276,7 @@ function readExampleFields(item: Record<string, unknown>): {
 export function normalizeZipVocabularyRow(
   item: Record<string, unknown>,
   index: number,
-  _ctx: ZipImportContext,
+  ctx: ZipImportContext,
   errors: string[],
   _warnings: string[]
 ): NormalizedZipVocabulary | null {
@@ -280,7 +300,7 @@ export function normalizeZipVocabularyRow(
     trim(item.reading ?? item.romanization ?? item.pinyin) || null;
   const level =
     trim(item.level ?? item.koreanLevel ?? item.hskLevel ?? item.hsk_level) ||
-    null;
+    (ctx.defaultHskLevel != null ? String(ctx.defaultHskLevel) : null);
 
   const examples = readExampleFields(item);
 
@@ -353,11 +373,7 @@ export function normalizeZipQuizRow(
   const isMultipleChoice = type === "multiple_choice";
 
   if (isMultipleChoice) {
-    const optionList = Array.isArray(options)
-      ? options.filter(
-          (opt): opt is string => typeof opt === "string" && Boolean(opt.trim())
-        )
-      : [];
+    const optionList = parseOptionsForZip(options);
     if (optionList.length < 2) {
       errors.push(`quiz[${index}]: multiple_choice requires at least 2 options.`);
     }
@@ -371,7 +387,7 @@ export function normalizeZipQuizRow(
     id: id || undefined,
     type,
     question,
-    options: options ?? [],
+    options: parseOptionsForZip(options),
     correctAnswer,
     explanation:
       trim(item.explanation ?? item.explanationMn ?? item.explanation_mn) ||

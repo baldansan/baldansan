@@ -70,6 +70,14 @@ export async function POST(request: Request) {
   try {
     const result = await importDraftLessonOnServer(client, body);
     const status = result.ok ? 200 : 422;
+    if (!result.ok) {
+      console.error("[api/admin/import/lesson] Import rejected", {
+        lessonId: body.lessonId,
+        courseId: body.courseId,
+        errors: result.errors,
+        validationDetails: result.validationDetails,
+      });
+    }
     return NextResponse.json(result, { status });
   } catch (error) {
     console.error("[api/admin/import/lesson] Import failed", error);

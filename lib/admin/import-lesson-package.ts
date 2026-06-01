@@ -14,6 +14,7 @@ import {
 import { bulkImportLessonContent } from "@/lib/supabase/admin-import";
 import { hasSupabaseConfig, supabase } from "@/lib/supabase/client";
 import type { HskImageStorageStatus } from "@/lib/lesson/hsk-package-media";
+import type { ImportErrorDetail } from "@/lib/admin/import-error-details";
 
 export {
   finalizePackageMediaImport,
@@ -40,6 +41,7 @@ export type LessonPackageImportResult = {
   mediaFailures: PackageMediaUploadResult[];
   warnings: string[];
   errors: string[];
+  validationDetails?: ImportErrorDetail[];
   audioUrl?: string;
   thumbnailUrl?: string;
   created?: boolean;

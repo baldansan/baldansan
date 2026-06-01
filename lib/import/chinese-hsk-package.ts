@@ -286,7 +286,8 @@ export async function parseChineseHskLessonZip(file: File): Promise<LessonZipVal
           hskManifest.courseId,
           hskManifest.language,
           hskManifest.targetLanguage,
-          hskManifest.uiLanguage
+          hskManifest.uiLanguage,
+          hskManifest.hskLevel
         )
       : null;
 
@@ -418,6 +419,7 @@ export async function parseChineseHskLessonZip(file: File): Promise<LessonZipVal
           courseId: lesson.courseId,
           isKorean: false,
           targetLanguage: importContext?.targetLanguage ?? "zh",
+          defaultHskLevel: hskManifest?.hskLevel,
         }
       );
       importPayload = contentValidation.payload;

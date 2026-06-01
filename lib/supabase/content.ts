@@ -31,9 +31,9 @@ const VIDEO_PLACEHOLDER = "Video lesson placeholder";
 const LESSON_ROW_SELECT =
   "id, course_id, title, chinese_title, subtitle, description, duration, vocabulary_count, quiz_count, status, order_index, video_url, thumbnail_url, image_url, audio_url, source_note, media_status, language, release_status, qa_status, approved_at, approved_by, release_notes, last_reviewed_at";
 
-/** Fallback when optional workflow / language columns are not migrated yet. */
+/** Fallback when optional workflow / language / image_url columns are not migrated yet. */
 const LESSON_ROW_SELECT_CORE =
-  "id, course_id, title, chinese_title, subtitle, description, duration, vocabulary_count, quiz_count, status, order_index, video_url, thumbnail_url, image_url, audio_url, source_note, media_status";
+  "id, course_id, title, chinese_title, subtitle, description, duration, vocabulary_count, quiz_count, status, order_index, video_url, thumbnail_url, audio_url, source_note, media_status";
 
 function isMissingColumnSelectError(message: string): boolean {
   const lower = message.toLowerCase();

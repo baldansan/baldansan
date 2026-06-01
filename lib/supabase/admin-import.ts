@@ -129,6 +129,8 @@ export type ImportValidationContext = {
   courseId?: string;
   targetLanguage?: string;
   isKorean?: boolean;
+  /** Manifest HSK level — fills missing vocabulary hskLevel on import. */
+  defaultHskLevel?: number | string;
 };
 
 export type ImportValidationResult = {
@@ -274,9 +276,20 @@ function mapQuizQuestionToDbRow(
 function parseOptions(value: unknown): string[] {
   if (!Array.isArray(value)) return [];
   return value
-    .filter((item): item is string => typeof item === "string")
-    .map((s) => s.trim())
+    .map((item) => {
+      if (typeof item === "string") return item.trim();
+      if (isRecord(item)) {
+        return String(item.text ?? item.label ?? item.value ?? item.option ?? "").trim();
+      }
+      return "";
+    })
     .filter(Boolean);
+}
+
+function resolveDefaultHskLevel(context?: ImportValidationContext): string | null {
+  if (context?.defaultHskLevel == null) return null;
+  const level = String(context.defaultHskLevel).trim();
+  return level || null;
 }
 
 export function parseLessonImportJson(
@@ -391,6 +404,7 @@ export function validateLessonImportPayload(
   });
 
   const vocabulary: NormalizedVocabularyImport[] = [];
+  const defaultHskLevel = resolveDefaultHskLevel(context);
   vocabularyRaw.forEach((item, index) => {
     if (!isRecord(item)) {
       errors.push(`vocabulary[${index}] must be an object.`);
@@ -421,6 +435,7 @@ export function validateLessonImportPayload(
               item.hsk_level ??
               item.level ??
               item.koreanLevel ??
+              defaultHskLevel ??
               ""
           ).trim() || null,
         exampleChinese: examples.exampleChinese,
