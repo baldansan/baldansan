@@ -35,6 +35,7 @@ export type ChineseHskRawFiles = {
   quiz: unknown;
   audioManifest: unknown;
   subtitles: unknown;
+  studyContent: unknown;
 };
 
 export type ChineseHskSectionInventory = Record<string, unknown>;
@@ -51,6 +52,7 @@ export type ChineseHskPackageMeta = {
   workbookPayload: unknown;
   grammarPayload: unknown;
   notesPayload: unknown;
+  studyContentPayload: unknown;
 };
 
 function trim(value: unknown): string {
@@ -202,6 +204,7 @@ export function collectHskSectionInventory(input: {
   notes: unknown;
   workbook: unknown;
   quiz: unknown;
+  studyContent?: unknown;
 }): ChineseHskSectionInventory {
   const sections: ChineseHskSectionInventory = {};
 
@@ -281,6 +284,18 @@ export function collectHskSectionInventory(input: {
     }
   }
 
+  if (isRecord(input.studyContent)) {
+    for (const [key, value] of Object.entries(input.studyContent)) {
+      assign(key, value);
+    }
+    if (Array.isArray(input.studyContent.studySections)) {
+      assign("studySections", input.studyContent.studySections);
+    }
+    if (isRecord(input.studyContent.sections)) {
+      assign("studyContentSections", input.studyContent.sections);
+    }
+  }
+
   return sections;
 }
 
@@ -322,6 +337,7 @@ export function buildChineseHskPackageMeta(
     workbookPayload: raw.workbook ?? null,
     grammarPayload: raw.grammar ?? null,
     notesPayload: raw.notes ?? null,
+    studyContentPayload: raw.studyContent ?? null,
   };
 }
 
@@ -332,6 +348,7 @@ export function mergeHskProfileIntoSourceNote(
   options?: {
     lessonJson?: unknown;
     audioManifest?: unknown;
+    studyContent?: unknown;
   }
 ): string {
   let note = sourceNote?.trim() ?? "";
@@ -391,6 +408,13 @@ export function mergeHskProfileIntoSourceNote(
       note,
       "hskNotes",
       JSON.stringify(meta.notesPayload)
+    );
+  }
+  if (meta.studyContentPayload) {
+    note = appendSourceNoteSegment(
+      note,
+      "hskStudyContent",
+      JSON.stringify(meta.studyContentPayload)
     );
   }
   if (options?.lessonJson && isRecord(options.lessonJson)) {

@@ -248,6 +248,42 @@ function CharacterSection({ content }: { content: HskStudyContent }) {
   );
 }
 
+function HskSectionDebugPanel({
+  debug,
+  vocabularyCount,
+}: {
+  debug: NonNullable<HskStudyContent["sectionDebug"]>;
+  vocabularyCount: number;
+}) {
+  const rows = [
+    ["1. objectives", debug.objectives],
+    ["2. pinyin", debug.pinyin],
+    ["3. tones", debug.tones],
+    ["4. vocabulary", { source: "vocabulary_words", count: vocabularyCount }],
+    ["5. dialogues", debug.dialogues],
+    ["6. sentences", debug.sentenceExplanations],
+    ["7. characters", debug.characterNotes],
+    ["8. study guide", debug.studyGuideSteps],
+    ["9. teacher notes", debug.teacherNotes],
+  ] as const;
+
+  return (
+    <SectionCard className="border-dashed border-amber-300 bg-amber-50/50 ring-amber-100">
+      <h2 className="text-sm font-semibold text-amber-900">HSK section mapping (dev)</h2>
+      <div className="mt-2 space-y-1.5 text-xs text-amber-950">
+        {rows.map(([label, meta]) => (
+          <div key={label} className="rounded-lg bg-white/80 px-2.5 py-1.5 ring-1 ring-amber-100">
+            <span className="font-semibold">{label}</span>
+            <span className="text-amber-800"> — source: </span>
+            <span className="break-all">{meta.source}</span>
+            <span className="text-amber-800"> · count: {meta.count}</span>
+          </div>
+        ))}
+      </div>
+    </SectionCard>
+  );
+}
+
 export function HskLessonStudyContent({
   lesson,
   adminPreview = false,
@@ -341,6 +377,13 @@ export function HskLessonStudyContent({
             </Link>
           </CtaButtonRow>
         </div>
+      ) : null}
+
+      {content.sectionDebug ? (
+        <HskSectionDebugPanel
+          debug={content.sectionDebug}
+          vocabularyCount={lesson.vocabulary.length}
+        />
       ) : null}
     </div>
   );
