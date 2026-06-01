@@ -1,5 +1,6 @@
 "use client";
 
+import { formatMongoliaDateTimeWithLabel } from "@/lib/datetime/mongolia-time";
 import type { LaunchDecisionState, LaunchDecisionValue } from "@/lib/admin/launch-candidate-data";
 
 type Props = {
@@ -37,7 +38,7 @@ export function LaunchDecisionCard({ decision, onSetDecision, onReset }: Props) 
       </p>
       {decision.updatedAt && decision.value !== "not_set" ? (
         <p className="mt-2 text-xs text-slate-500">
-          Updated: {new Date(decision.updatedAt).toLocaleString()}
+          Updated: {formatMongoliaDateTimeWithLabel(decision.updatedAt)}
         </p>
       ) : null}
       <div className="mt-4 flex flex-wrap gap-2">

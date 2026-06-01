@@ -8,6 +8,7 @@ import { useTeacherAuth } from "@/components/teacher/teacher-auth-gate";
 import type { InvitationLookup } from "@/lib/b2b/types";
 import { buildInviteUrl } from "@/lib/organization/invite-url";
 import { acceptInvitation, getInvitationByToken } from "@/lib/supabase/invitations";
+import { formatMongoliaDateTimeWithLabel } from "@/lib/datetime/mongolia-time";
 
 type Props = {
   token: string;
@@ -146,7 +147,7 @@ export function InviteAcceptView({ token }: Props) {
           <p className="text-sm text-slate-500">Имэйл: {invite.email}</p>
         ) : null}
         <p className="mt-1 text-xs text-slate-400">
-          Хүчинтэй хугацаа: {new Date(invite.expiresAt).toLocaleString()}
+          Хүчинтэй хугацаа: {formatMongoliaDateTimeWithLabel(invite.expiresAt)}
         </p>
         <p className="mt-1 break-all text-xs text-slate-400">
           Link: {buildInviteUrl(token)}

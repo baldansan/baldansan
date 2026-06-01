@@ -1,3 +1,4 @@
+import { formatMongoliaDateTimeWithLabel } from "@/lib/datetime/mongolia-time";
 import type {
   RecentLessonProgressRow,
   RecentQuizAttemptRow,
@@ -10,11 +11,7 @@ type Props = {
 
 function formatWhen(iso: string): string {
   if (!iso) return "—";
-  try {
-    return new Date(iso).toLocaleString();
-  } catch {
-    return iso;
-  }
+  return formatMongoliaDateTimeWithLabel(iso) || iso;
 }
 
 export function AdminRecentActivity({

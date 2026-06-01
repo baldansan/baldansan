@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { formatMongoliaDateTimeWithLabel } from "@/lib/datetime/mongolia-time";
 import {
   runSystemChecks,
   SQL_VERIFICATION_INSTRUCTIONS,
@@ -89,7 +90,7 @@ export function SystemCheckView() {
         {report ? (
           <p className="mt-3 text-sm text-slate-700">
             {passCount} pass · {warnCount} warn · {failCount} fail · {total}{" "}
-            total · last run {new Date(report.ranAt).toLocaleString()}
+            total · last run {formatMongoliaDateTimeWithLabel(report.ranAt)}
           </p>
         ) : null}
         {error ? (

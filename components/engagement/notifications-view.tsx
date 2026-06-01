@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { PublicPageShell } from "@/components/public-page-shell";
+import { formatMongoliaDateTimeWithLabel } from "@/lib/datetime/mongolia-time";
 import {
   getNotificationsUnified,
   getUnreadCountUnified,
@@ -79,7 +80,7 @@ export function NotificationsView() {
                     <p className="mt-1 text-sm text-slate-600">{item.message}</p>
                   ) : null}
                   <p className="mt-2 text-xs text-slate-500">
-                    {new Date(item.createdAt).toLocaleString()}
+                    {formatMongoliaDateTimeWithLabel(item.createdAt)}
                   </p>
                 </div>
                 <div className="flex flex-col gap-2">

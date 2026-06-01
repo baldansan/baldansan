@@ -15,6 +15,7 @@ import {
   removeOrganizationMember,
   updateOrganizationMemberRole,
 } from "@/lib/supabase/organizations";
+import { formatMongoliaDateTimeWithLabel } from "@/lib/datetime/mongolia-time";
 
 const ROLE_OPTIONS: OrganizationMemberRole[] = [
   "owner",
@@ -100,7 +101,7 @@ export function MemberManagement({
               <div className="text-xs text-slate-500">
                 {m.email ?? "—"} · {m.status}
                 {m.joinedAt
-                  ? ` · joined ${new Date(m.joinedAt).toLocaleDateString()}`
+                  ? ` · joined ${formatMongoliaDateTimeWithLabel(m.joinedAt, "date")}`
                   : ""}
               </div>
             </div>

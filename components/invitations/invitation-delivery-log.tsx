@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useState } from "react";
+import { formatMongoliaDateTimeWithLabel } from "@/lib/datetime/mongolia-time";
 import type { InvitationEmailDelivery } from "@/lib/b2b/types";
 import { getInvitationEmailDeliveries } from "@/lib/supabase/invitation-email-deliveries";
 
@@ -56,8 +57,8 @@ export function InvitationDeliveryLog({ invitationId, refreshKey = 0 }: Props) {
           </div>
           <p className="text-slate-500">
             {d.sentAt
-              ? `Sent ${new Date(d.sentAt).toLocaleString()}`
-              : `Created ${new Date(d.createdAt).toLocaleString()}`}
+              ? `Sent ${formatMongoliaDateTimeWithLabel(d.sentAt)}`
+              : `Created ${formatMongoliaDateTimeWithLabel(d.createdAt)}`}
           </p>
           {d.errorMessage ? (
             <p className="text-amber-800">

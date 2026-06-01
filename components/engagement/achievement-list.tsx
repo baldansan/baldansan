@@ -1,5 +1,6 @@
 "use client";
 
+import { formatMongoliaDateTimeWithLabel } from "@/lib/datetime/mongolia-time";
 import { ACHIEVEMENTS } from "@/lib/engagement/achievements";
 import { getAchievementsUnified } from "@/lib/engagement/engagement-service";
 import { useEffect, useState } from "react";
@@ -38,7 +39,7 @@ export function AchievementList() {
               <p className="mt-1 text-sm text-slate-600">{def.description}</p>
               {row ? (
                 <p className="mt-2 text-xs text-emerald-700">
-                  {new Date(row.earnedAt).toLocaleDateString()}
+                  {formatMongoliaDateTimeWithLabel(row.earnedAt, "date")}
                 </p>
               ) : (
                 <p className="mt-2 text-xs text-slate-500">Locked</p>

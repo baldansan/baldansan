@@ -1,7 +1,12 @@
 "use client";
 
+import { formatMongoliaDateTimeWithLabel } from "@/lib/datetime/mongolia-time";
 import { useState } from "react";
-import type { LaunchCardState, LaunchCheckItem, LaunchDecisionState } from "@/lib/admin/launch-candidate-data";
+import type {
+  LaunchCardState,
+  LaunchCheckItem,
+  LaunchDecisionState,
+} from "@/lib/admin/launch-candidate-data";
 import {
   buildLaunchCandidateJson,
   buildLaunchCandidateMarkdown,
@@ -57,7 +62,7 @@ export function LaunchReportExportCard({
       </p>
       {savedAt ? (
         <p className="mt-2 text-xs text-slate-500">
-          Last saved: {new Date(savedAt).toLocaleString()}
+          Last saved: {formatMongoliaDateTimeWithLabel(savedAt)}
         </p>
       ) : null}
       <div className="mt-4 flex flex-wrap gap-2">

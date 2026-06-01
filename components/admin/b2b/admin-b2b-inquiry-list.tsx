@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
+import { formatMongoliaDateTimeWithLabel } from "@/lib/datetime/mongolia-time";
 import type { B2BInquiry, B2BInquiryStatus } from "@/lib/b2b/types";
 import { getB2BInquiries } from "@/lib/supabase/b2b-inquiries";
 
@@ -138,7 +139,7 @@ export function AdminB2BInquiryList() {
                 </td>
                 <td className="px-4 py-3 text-slate-600">{i.status}</td>
                 <td className="px-4 py-3 text-xs text-slate-500">
-                  {new Date(i.createdAt).toLocaleString()}
+                  {formatMongoliaDateTimeWithLabel(i.createdAt)}
                 </td>
                 <td className="px-4 py-3">
                   <Link

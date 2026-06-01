@@ -1,5 +1,6 @@
 "use client";
 
+import { formatMongoliaDateTimeWithLabel } from "@/lib/datetime/mongolia-time";
 import { useRouter } from "next/navigation";
 import { useCallback, useState } from "react";
 import {
@@ -201,7 +202,7 @@ export function LessonRestoreCard({
             <li>Vocabulary: {preview.summary.vocabularyCount}</li>
             <li>Quiz: {preview.summary.quizCount}</li>
             {preview.summary.exportedAt ? (
-              <li>Exported: {preview.summary.exportedAt}</li>
+              <li>Exported: {formatMongoliaDateTimeWithLabel(preview.summary.exportedAt)}</li>
             ) : null}
           </ul>
         </div>

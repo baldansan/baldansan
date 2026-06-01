@@ -5,6 +5,7 @@ import { LessonQaBadge } from "@/components/admin/lesson-qa-badge";
 import { MediaStatusBadge } from "@/components/admin/media-status-badge";
 import { LessonStatusBadge } from "@/components/admin/lesson-status-badge";
 import { lessonPreviewPath } from "@/lib/lesson-publish";
+import { formatMongoliaDateTimeWithLabel } from "@/lib/datetime/mongolia-time";
 import type { LessonAnalyticsDetail } from "@/lib/supabase/admin-analytics";
 import type { AdminContentStatus } from "@/lib/admin/lesson-status";
 
@@ -14,11 +15,7 @@ type Props = {
 
 function formatWhen(iso: string | null): string {
   if (!iso) return "—";
-  try {
-    return new Date(iso).toLocaleString();
-  } catch {
-    return iso;
-  }
+  return formatMongoliaDateTimeWithLabel(iso) || iso;
 }
 
 function formatRate(rate: number | null): string {

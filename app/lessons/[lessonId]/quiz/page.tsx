@@ -1,10 +1,12 @@
 import { notFound } from "next/navigation";
 import { LessonUnavailable } from "@/components/lesson-unavailable";
+import { LessonPageError } from "@/components/lesson/lesson-page-error";
 import {
   findNextLessonId,
   getLessonsByCourseId,
   getPublicLessonsByCourseId,
 } from "@/lib/content";
+import { buildLessonLoadDebugInfo } from "@/lib/lesson/lesson-load-diagnostics";
 import { resolveLessonPageAccess, resolvePreviewFromPageSearchParams } from "@/lib/lesson-public-access";
 import { loadLessonQuizQuestionsForPage } from "@/lib/lesson/quiz-page-loader";
 import { LessonQuizClient } from "./quiz-client";
@@ -26,6 +28,18 @@ export default async function LessonQuizPage({
   const access = await resolveLessonPageAccess(lessonId, { preview });
 
   if (access.kind === "not_found") {
+    if (preview) {
+      return (
+        <LessonPageError
+          failureKind="lesson_not_found"
+          debug={buildLessonLoadDebugInfo(lessonId, {
+            fetchSource: "supabase",
+            route: `/lessons/${lessonId}/quiz?preview=${encodeURIComponent(String(preview))}`,
+          })}
+          retryHref={`/lessons/${lessonId}/quiz?preview=${encodeURIComponent(String(preview))}`}
+        />
+      );
+    }
     notFound();
   }
 

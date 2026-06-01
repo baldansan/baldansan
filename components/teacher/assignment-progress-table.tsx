@@ -1,3 +1,4 @@
+import { formatMongoliaDateTimeWithLabel } from "@/lib/datetime/mongolia-time";
 import type { AssignmentStudentResultRow } from "@/lib/teacher/analytics-types";
 
 type Props = {
@@ -37,7 +38,7 @@ export function AssignmentProgressTable({ rows }: Props) {
               </td>
               <td className="px-4 py-3 text-xs text-slate-500">
                 {r.completedAt
-                  ? new Date(r.completedAt).toLocaleString()
+                  ? formatMongoliaDateTimeWithLabel(r.completedAt)
                   : "—"}
               </td>
             </tr>

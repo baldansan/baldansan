@@ -1,3 +1,4 @@
+import { formatMongoliaDateTimeWithLabel } from "@/lib/datetime/mongolia-time";
 import type { StudentProgressRow } from "@/lib/teacher/analytics-types";
 
 type Props = {
@@ -49,7 +50,7 @@ export function ClassProgressTable({ rows }: Props) {
               </td>
               <td className="px-4 py-3 text-xs text-slate-500">
                 {s.lastActivityAt
-                  ? new Date(s.lastActivityAt).toLocaleDateString()
+                  ? formatMongoliaDateTimeWithLabel(s.lastActivityAt, "date")
                   : "—"}
               </td>
             </tr>

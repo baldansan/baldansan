@@ -1,4 +1,8 @@
 import type { AdminActivityRow } from "@/lib/admin/admin-activity-shared";
+import {
+  formatMongoliaDateTime,
+  formatMongoliaDateTimeWithLabel,
+} from "@/lib/datetime/mongolia-time";
 
 const actionStyles: Record<string, string> = {
   lesson_created: "bg-emerald-50 text-emerald-800 ring-emerald-200",
@@ -45,11 +49,12 @@ export function EntityTypeBadge({ entityType }: { entityType: string }) {
 }
 
 export function formatActivityTime(iso: string): string {
-  try {
-    return new Date(iso).toLocaleString();
-  } catch {
-    return iso;
-  }
+  return formatMongoliaDateTimeWithLabel(iso) || iso;
+}
+
+/** Compact activity list timestamp without label prefix. */
+export function formatActivityTimeCompact(iso: string): string {
+  return formatMongoliaDateTime(iso) || iso;
 }
 
 export type { AdminActivityRow };

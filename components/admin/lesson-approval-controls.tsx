@@ -1,5 +1,6 @@
 "use client";
 
+import { formatMongoliaDateTimeWithLabel } from "@/lib/datetime/mongolia-time";
 import { useRouter } from "next/navigation";
 import { useCallback, useState } from "react";
 import { AdminAlert } from "@/components/admin/admin-editor-ui";
@@ -73,7 +74,7 @@ export function LessonApprovalControls({ lesson }: Props) {
         <WorkflowQaBadge status={qaStatus} />
         {lesson.approvedAt ? (
           <span className="text-xs text-slate-500">
-            Approved {new Date(lesson.approvedAt).toLocaleString()}
+            Approved {formatMongoliaDateTimeWithLabel(lesson.approvedAt)}
           </span>
         ) : null}
       </div>

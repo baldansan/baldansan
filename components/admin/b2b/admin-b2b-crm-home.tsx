@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { AdminMetricCard } from "@/components/admin/admin-metric-card";
+import { formatMongoliaDateTime } from "@/lib/datetime/mongolia-time";
 import type { B2BCrmSummary, B2BInquiry } from "@/lib/b2b/types";
 import { getB2BInquiries } from "@/lib/supabase/b2b-inquiries";
 import { getOnboardingStatusCounts } from "@/lib/supabase/organization-onboarding";
@@ -179,7 +180,7 @@ export function AdminB2BCrmHome({
                     {inquiry.organizationName}
                   </span>
                   <span className="ml-2 text-xs text-slate-500">
-                    {inquiry.status} · {new Date(inquiry.createdAt).toLocaleDateString()}
+                    {inquiry.status} · {formatMongoliaDateTime(inquiry.createdAt, "date")}
                   </span>
                 </Link>
               </li>

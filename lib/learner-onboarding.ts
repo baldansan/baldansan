@@ -17,6 +17,7 @@ export const LEARNER_NEVER_REDIRECT_PREFIXES = [
   "/profile",
   "/settings",
   "/admin",
+  "/debug",
   "/onboarding",
   "/login",
   "/signup",

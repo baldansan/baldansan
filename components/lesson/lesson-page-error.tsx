@@ -33,6 +33,12 @@ export function LessonPageError({ failureKind, debug, retryHref }: Props) {
           <div className="mt-4 rounded-xl border border-slate-200 bg-slate-50 px-3 py-3 text-left text-xs text-slate-700">
             <p className="font-semibold text-slate-900">Dev debug</p>
             <dl className="mt-2 space-y-1">
+              {debug.route ? (
+                <div>
+                  <dt className="inline font-medium">route: </dt>
+                  <dd className="inline break-all">{debug.route}</dd>
+                </div>
+              ) : null}
               <div>
                 <dt className="inline font-medium">lessonId: </dt>
                 <dd className="inline break-all">{debug.lessonId}</dd>

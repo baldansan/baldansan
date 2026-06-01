@@ -1,11 +1,15 @@
 "use client";
 
 import { useEffect } from "react";
+import {
+  isLocalDevHost,
+  shouldDisableServiceWorker,
+} from "@/lib/dev/local-dev-host";
 
-function isLocalhostHost(): boolean {
-  if (typeof window === "undefined") return false;
-  const host = window.location.hostname;
-  return host === "localhost" || host === "127.0.0.1" || host === "[::1]";
+async function clearServiceWorkerCaches(): Promise<void> {
+  if (typeof caches === "undefined") return;
+  const keys = await caches.keys();
+  await Promise.all(keys.map((key) => caches.delete(key)));
 }
 
 /** Registers minimal offline SW on public learner pages only (production hosts). */
@@ -14,19 +18,21 @@ export function PwaServiceWorkerRegister() {
     if (typeof window === "undefined" || !("serviceWorker" in navigator)) {
       return;
     }
-    if (window.location.pathname.startsWith("/admin")) {
-      return;
-    }
 
-    const isDev = process.env.NODE_ENV === "development";
-    const isLocalhost = isLocalhostHost();
+    const hostname = window.location.hostname;
+    const pathname = window.location.pathname;
+    const disable = shouldDisableServiceWorker({
+      nodeEnv: process.env.NODE_ENV,
+      hostname,
+      pathname,
+    });
 
-    if (isDev || isLocalhost) {
-      void navigator.serviceWorker.getRegistrations().then((registrations) => {
-        for (const registration of registrations) {
-          void registration.unregister();
-        }
-      });
+    if (disable || isLocalDevHost(hostname)) {
+      void (async () => {
+        const registrations = await navigator.serviceWorker.getRegistrations();
+        await Promise.all(registrations.map((registration) => registration.unregister()));
+        await clearServiceWorkerCaches();
+      })();
       return;
     }
 

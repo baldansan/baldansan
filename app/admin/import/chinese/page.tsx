@@ -1,6 +1,7 @@
 import { LessonZipImportClient } from "@/components/admin/lesson-zip-import-client";
 
 export const dynamic = "force-dynamic";
+export const revalidate = 0;
 
 export const metadata = {
   title: "Chinese / HSK Lesson Import — Admin",
