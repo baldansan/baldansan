@@ -63,6 +63,7 @@ export function LessonQuizClient({
   const [finished, setFinished] = useState(false);
   const [savedResult, setSavedResult] = useState<QuizResult | null>(null);
   const persistAttemptRef = useRef(false);
+  const feedbackRef = useRef<HTMLDivElement>(null);
 
   const current = quizQuestions[currentIndex];
   const isCorrect = selected === current?.correctAnswer;
@@ -85,6 +86,17 @@ export function LessonQuizClient({
     }
     void load();
   }, [lesson.id]);
+
+  useEffect(() => {
+    if (!revealed) return;
+    const timer = window.setTimeout(() => {
+      feedbackRef.current?.scrollIntoView({
+        behavior: "smooth",
+        block: "nearest",
+      });
+    }, 120);
+    return () => window.clearTimeout(timer);
+  }, [revealed, currentIndex]);
 
   useEffect(() => {
     if (!finished || total === 0 || persistAttemptRef.current) {
@@ -144,6 +156,9 @@ export function LessonQuizClient({
     persistAttemptRef.current = false;
   }
 
+  const nextLabel =
+    currentIndex < total - 1 ? LEARNER_QUIZ.next : LEARNER_QUIZ.seeResults;
+
   function optionClass(option: string) {
     const base =
       "min-h-[48px] w-full rounded-xl px-4 py-3.5 text-left text-sm sm:text-base";
@@ -161,8 +176,15 @@ export function LessonQuizClient({
     return `${base} border border-slate-200 bg-slate-50 text-slate-500`;
   }
 
+  const quizInProgress = !finished && total > 0;
+
   return (
-    <LearnerPageShell activeTab="games">
+    <LearnerPageShell
+      activeTab="games"
+      mainClassName={
+        quizInProgress && revealed ? "!pb-44 md:!pb-24" : undefined
+      }
+    >
       {adminPreview ? <AdminPreviewBanner /> : null}
       {isLesson0 ? (
         <Link
@@ -372,6 +394,7 @@ export function LessonQuizClient({
 
               {revealed && (
                 <div
+                  ref={feedbackRef}
                   className={
                     isCorrect
                       ? "mt-4 rounded-xl bg-emerald-50 p-4 ring-1 ring-emerald-200"
@@ -420,22 +443,49 @@ export function LessonQuizClient({
                 <button
                   type="button"
                   onClick={handleNext}
-                  className={`mt-5 ${ctaPrimaryClass}`}
+                  className={`mt-5 hidden md:inline-flex ${ctaPrimaryClass}`}
                 >
-                  {currentIndex < total - 1
-                    ? LEARNER_QUIZ.next
-                    : LEARNER_QUIZ.seeResults}
+                  {nextLabel}
                 </button>
               )}
             </SectionCard>
+
+            {revealed && (
+              <div
+                className="pointer-events-none fixed inset-x-0 z-40 flex justify-center md:hidden"
+                style={{
+                  bottom: "calc(4rem + env(safe-area-inset-bottom, 0px))",
+                }}
+              >
+                <div className="pointer-events-auto w-full max-w-[430px] border-t border-slate-200 bg-white/95 px-4 py-3 shadow-[0_-4px_16px_rgba(15,23,42,0.06)] backdrop-blur">
+                  <button
+                    type="button"
+                    onClick={handleNext}
+                    className={ctaPrimaryClass}
+                  >
+                    {nextLabel}
+                  </button>
+                </div>
+              </div>
+            )}
           </>
         )
       )}
-      <LessonMobileStepBar
-        lesson={lesson}
-        current="quiz"
-        adminPreview={adminPreview}
-      />
+      {quizInProgress ? (
+        <div className="hidden md:block">
+          <LessonMobileStepBar
+            lesson={lesson}
+            current="quiz"
+            adminPreview={adminPreview}
+          />
+        </div>
+      ) : (
+        <LessonMobileStepBar
+          lesson={lesson}
+          current="quiz"
+          adminPreview={adminPreview}
+        />
+      )}
     </LearnerPageShell>
   );
 }
