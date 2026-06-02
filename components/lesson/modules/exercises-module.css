@@ -1,0 +1,259 @@
+/* components/lesson/modules/exercises-module.css
+   "exercises_*" модулийн загвар — интерактив дасгал.
+   Токенууд .bs-root-оос удамшина. bs- угтвартай. Модуль бие даан ажиллахын тулд
+   speed/play зэргийг энд бас тодорхойлов. */
+
+.bs-ex-section {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  color: var(--bs-green-700);
+  margin-top: 2px;
+}
+.bs-ex-instr {
+  font-size: 13px;
+  color: var(--bs-muted);
+  line-height: 1.5;
+  margin-top: 4px;
+}
+
+/* Сонсголын аудио мөр */
+.bs-ex-audiobar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 14px 0 4px;
+}
+.bs-ex .bs-txt-play {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid var(--bs-green-100);
+  background: #fff;
+  color: var(--bs-green-700);
+  font-family: var(--bs-ui);
+  font-weight: 700;
+  font-size: 13px;
+  padding: 8px 16px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+.bs-ex .bs-txt-play:active {
+  transform: scale(0.96);
+}
+.bs-ex .bs-txt-play.bs-on {
+  background: var(--bs-green-50);
+}
+.bs-ex .bs-speeds {
+  display: inline-flex;
+  background: var(--bs-bg);
+  border: 1px solid var(--bs-line);
+  border-radius: var(--bs-radius-pill, 999px);
+  padding: 3px;
+  gap: 2px;
+}
+.bs-ex .bs-speed {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-family: var(--bs-ui);
+  font-weight: 700;
+  font-size: 12.5px;
+  color: var(--bs-ink-2);
+  padding: 6px 11px;
+  border-radius: 999px;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+.bs-ex .bs-speed.bs-on {
+  background: var(--bs-green);
+  color: #fff;
+  box-shadow: var(--bs-shadow);
+}
+
+/* Унших эх */
+.bs-ex-zh {
+  font-family: var(--bs-zh);
+  font-size: 16px;
+  line-height: 1.85;
+  color: var(--bs-ink);
+  background: var(--bs-bg);
+  border: 1px solid var(--bs-line);
+  border-radius: 12px;
+  padding: 13px 15px;
+  margin-top: 14px;
+}
+
+/* Асуулт */
+.bs-ex-prompt {
+  font-family: var(--bs-zh);
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--bs-ink);
+  line-height: 1.6;
+  margin: 14px 0 12px;
+}
+
+/* Сонголтууд */
+.bs-ex-opts,
+.bs-ex-tf {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+.bs-ex-tf {
+  flex-direction: row;
+}
+.bs-ex-tf .bs-ex-opt {
+  flex: 1;
+}
+.bs-ex-opt {
+  text-align: left;
+  border: 1px solid var(--bs-line);
+  background: #fff;
+  color: var(--bs-ink);
+  font-family: var(--bs-ui);
+  font-weight: 600;
+  font-size: 15px;
+  padding: 13px 15px;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: transform 0.12s ease, background 0.15s ease, border-color 0.15s ease;
+}
+.bs-ex-opt:not(:disabled):active {
+  transform: scale(0.99);
+}
+.bs-ex-opt:not(:disabled):hover {
+  border-color: var(--bs-green-100);
+  background: var(--bs-green-50);
+}
+.bs-ex-opt:disabled {
+  cursor: default;
+}
+.bs-ex-opt.bs-correct {
+  background: var(--bs-green-50);
+  border-color: var(--bs-green);
+  color: var(--bs-green-800, #0f7338);
+  font-weight: 700;
+}
+.bs-ex-opt.bs-wrong {
+  background: #fdecec;
+  border-color: #f0b4b4;
+  color: #b42318;
+}
+
+/* Токен (дараалал / эвлүүлэх) */
+.bs-ex-build {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  min-height: 52px;
+  align-content: flex-start;
+  background: var(--bs-bg);
+  border: 1px dashed var(--bs-line);
+  border-radius: 14px;
+  padding: 11px;
+  margin-bottom: 12px;
+}
+.bs-ex-ph {
+  color: var(--bs-muted);
+  font-size: 13px;
+  align-self: center;
+}
+.bs-ex-pool {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+.bs-ex-tok {
+  font-family: var(--bs-zh);
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--bs-ink);
+  background: #fff;
+  border: 1px solid var(--bs-line);
+  border-radius: 11px;
+  padding: 9px 13px;
+  cursor: pointer;
+  box-shadow: var(--bs-shadow);
+  transition: transform 0.12s ease, background 0.15s ease;
+}
+.bs-ex-tok:not(:disabled):active {
+  transform: scale(0.95);
+}
+.bs-ex-tok.bs-built {
+  background: var(--bs-green-50);
+  border-color: var(--bs-green-100);
+  color: var(--bs-green-800, #0f7338);
+}
+
+/* Шалгах товч */
+.bs-ex-check {
+  width: 100%;
+  border: 1px solid var(--bs-green);
+  background: var(--bs-green);
+  color: #fff;
+  font-family: var(--bs-ui);
+  font-weight: 700;
+  font-size: 15px;
+  padding: 13px;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+.bs-ex-check:active {
+  transform: scale(0.99);
+}
+.bs-ex-check:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+
+/* Эргэх холбоо */
+.bs-ex-fb {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.55;
+  border-radius: 12px;
+  padding: 12px 14px;
+  margin-top: 14px;
+  animation: bs-fadeUp 0.3s ease both;
+}
+.bs-ex-fb b {
+  font-family: var(--bs-zh);
+  font-weight: 700;
+}
+.bs-ex-fb.bs-ok {
+  background: var(--bs-green-50);
+  color: var(--bs-green-800, #0f7338);
+  border: 1px solid var(--bs-green-100);
+}
+.bs-ex-fb.bs-no {
+  background: #fdecec;
+  color: #b42318;
+  border: 1px solid #f0b4b4;
+}
+
+/* Төгсгөлийн оноо */
+.bs-ex-done {
+  text-align: center;
+  padding: 18px 12px;
+}
+.bs-ex-done-ic {
+  font-size: 44px;
+  line-height: 1;
+}
+.bs-ex-done-score {
+  font-size: 30px;
+  font-weight: 800;
+  color: var(--bs-ink);
+  margin-top: 8px;
+}
+.bs-ex-done-sub {
+  font-size: 13.5px;
+  color: var(--bs-ink-2);
+  line-height: 1.55;
+  margin-top: 6px;
+}
