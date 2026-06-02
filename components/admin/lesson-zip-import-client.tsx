@@ -13,6 +13,7 @@ import {
   ZipImportSummary,
   getZipImportSummaryStatus,
 } from "@/components/admin/zip-import-summary";
+import { ZipImportValidationErrors } from "@/components/admin/zip-import-validation-errors";
 import {
   buildImportDraftApiBody,
   type ImportDraftApiBody,
@@ -27,6 +28,7 @@ import {
   type LessonZipValidation,
 } from "@/lib/import/lesson-zip-import";
 import { lessonPreviewPath } from "@/lib/lesson-publish";
+import { collectValidationErrorMessages } from "@/lib/import/format-validation-error";
 
 const LESSON_DRAFTS_STORAGE_KEY = "lesson_drafts";
 
@@ -94,11 +96,34 @@ export function LessonZipImportClient({
     try {
       const result = await parseZip(file);
       setValidation(result);
+
+      const errorMessages = result.wrongImporter
+        ? []
+        : collectValidationErrorMessages(result);
+
+      console.log("[lesson-zip-import] parse / validate result", {
+        track,
+        ok: result.ok,
+        wrongImporter: result.wrongImporter ?? null,
+        errorCount: errorMessages.length,
+        errors: errorMessages,
+        warnings: result.warnings,
+        preview: result.preview,
+        importPayload: result.importPayload
+          ? {
+              subtitles: result.importPayload.subtitles.length,
+              vocabulary: result.importPayload.vocabulary.length,
+              quizQuestions: result.importPayload.quizQuestions.length,
+            }
+          : null,
+        contentValidation: result.contentValidation,
+      });
+
       if (result.wrongImporter) {
         setError(null);
         return;
       }
-      if (!result.ok || result.errors.length > 0) {
+      if (!result.ok || errorMessages.length > 0) {
         setError("Validation алдаатай — доорх алдааг засна уу.");
       }
     } catch {
@@ -327,6 +352,10 @@ export function LessonZipImportClient({
 
       {error ? <AdminAlert error={error} /> : null}
 
+      {validation && !wrongImporter && (!validation.ok || validation.errors.length > 0) ? (
+        <ZipImportValidationErrors validation={validation} />
+      ) : null}
+
       {showKoreanCourseSql ? (
         <AdminCollapsibleSection
           title="korean-1 course setup SQL"
@@ -497,6 +526,32 @@ export function LessonZipImportClient({
           <code className="rounded bg-slate-100 px-1">{templateHint}</code>, doc:{" "}
           <code className="rounded bg-slate-100 px-1">{formatDocHint}</code>
         </p>
+        {track === "chinese" ? (
+          <details className="mt-3 rounded-xl border border-slate-200 bg-slate-50 p-3">
+            <summary className="cursor-pointer text-sm font-medium text-slate-700">
+              Expected validator schema (read-only)
+            </summary>
+            <pre className="mt-2 max-h-64 overflow-auto whitespace-pre-wrap text-xs text-slate-600">
+              {`No Zod — manual validators in lib/import/* and lib/supabase/admin-import.ts
+
+ZIP layer (chinese-hsk):
+  manifest.json  → packageVersion, courseType: chinese-hsk, courseId, lessonId,
+                   hskLevel, lessonProfile (+ profile-specific sections)
+  lesson.json    → courseId, titles (required for preview)
+  vocabulary.json → array, each row: chinese + mongolian (required)
+  quiz.json      → required for most HSK profiles
+  Profile rules  → lib/import/chinese-hsk-validate.ts + chinese-hsk-profiles.ts
+
+Bulk import layer (validateLessonImportPayload):
+  vocabulary[]   → chinese|target + mongolian (required per row)
+  quizQuestions[] → question|prompt + correctAnswer|answer;
+                   multiple_choice needs options.length >= 2
+  subtitles[]    → chinese|target + mongolian + start|startTime + end|endTime
+
+Full package doc: docs/BUUNDUU_CHINESE_HSK_PACKAGE_V1.md`}
+            </pre>
+          </details>
+        ) : null}
         {validation ? (
           <details className="mt-3 rounded-xl border border-slate-200 bg-slate-50 p-3">
             <summary className="cursor-pointer text-sm font-medium text-slate-700">
