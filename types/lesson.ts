@@ -136,3 +136,19 @@ export type LessonDetail = {
     percent: number;
   };
 };
+
+export interface DialogueLine {
+  speaker: string;
+  zh: string;
+  pinyin: string;
+  mn: string;
+  audio?: string;
+}
+
+export interface Dialogue {
+  id: number;
+  title_mn?: string;
+  scene_mn?: string;
+  audio?: string;
+  lines: DialogueLine[];
+}

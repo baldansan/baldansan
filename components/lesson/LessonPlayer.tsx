@@ -13,6 +13,7 @@ import "./lesson-player.css";
 
 import LessonOverview from "./modules/LessonOverview";
 import VocabularyCard from "./modules/VocabularyCard";
+import DialoguesModule from "./modules/DialoguesModule";
 import ComingSoon from "./modules/ComingSoon";
 
 // Модулийн харагдах нэр (ComingSoon болон гарчигт ашиглана)
@@ -57,7 +58,8 @@ export default function LessonPlayer({
         return <LessonOverview lesson={lesson} onStart={next} />;
       case "vocabulary":
         return <VocabularyCard lesson={lesson} onDone={next} />;
-      // dialogues / texts / grammar / pronunciation / exercises... → дараа нэмнэ
+      case "dialogues":
+        return <DialoguesModule lesson={lesson} onDone={next} />;
       default:
         return <ComingSoon label={MODULE_LABEL[current] ?? current} onNext={next} />;
     }
