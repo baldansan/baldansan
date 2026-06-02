@@ -16,6 +16,7 @@ import VocabularyCard from "./modules/VocabularyCard";
 import DialoguesModule from "./modules/DialoguesModule";
 import TextsModule from "./modules/TextsModule";
 import GrammarModule from "./modules/GrammarModule";
+import PronunciationModule from "./modules/PronunciationModule";
 import ComingSoon from "./modules/ComingSoon";
 
 // Модулийн харагдах нэр (ComingSoon болон гарчигт ашиглана)
@@ -64,6 +65,8 @@ export default function LessonPlayer({
         return <DialoguesModule lesson={lesson} onDone={next} />;
       case "texts":
         return <TextsModule lesson={lesson} onDone={next} />;
+      case "pronunciation":
+        return <PronunciationModule lesson={lesson} onDone={next} />;
       case "grammar":
         return <GrammarModule lesson={lesson} onDone={next} />;
       default:
