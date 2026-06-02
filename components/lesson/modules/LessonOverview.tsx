@@ -28,9 +28,11 @@ function count<T>(arr: T[] | undefined): number {
 export default function LessonOverview({
   lesson,
   onStart,
+  onJump,
 }: {
   lesson: Lesson;
   onStart: () => void;
+  onJump?: (key: ModuleKey) => void;
 }) {
   const vocabN = count(lesson.vocabulary);
   const dialogN = count(lesson.dialogues);
@@ -95,13 +97,18 @@ export default function LessonOverview({
           </div>
           <div className="bs-steps">
             {toc.map((s) => (
-              <div className="bs-step" key={s.key}>
+              <button
+                type="button"
+                className="bs-step bs-step-btn"
+                key={s.key}
+                onClick={() => onJump?.(s.key)}
+              >
                 <div className="bs-s-ic">{s.icon}</div>
                 <div className="bs-s-tx">
                   <b>{s.label}</b>
                 </div>
                 <div className="bs-s-go">›</div>
-              </div>
+              </button>
             ))}
           </div>
         </div>

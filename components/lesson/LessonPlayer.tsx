@@ -57,10 +57,15 @@ export default function LessonPlayer({
     else onExit?.();
   }
 
+  function goTo(key: ModuleKey) {
+    const i = modules.indexOf(key);
+    if (i >= 0) setIdx(i);
+  }
+
   function renderModule() {
     switch (current) {
       case "hook":
-        return <LessonOverview lesson={lesson} onStart={next} />;
+        return <LessonOverview lesson={lesson} onStart={next} onJump={goTo} />;
       case "vocabulary":
         return <VocabularyCard lesson={lesson} onDone={next} />;
       case "dialogues":
