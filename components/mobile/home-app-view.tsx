@@ -8,6 +8,7 @@ import {
   languageTrackLabel,
   resolveDefaultChipForLanguage,
 } from "@/lib/language-track";
+import { ReviewDueBadge } from "@/components/review/review-due-badge";
 import { MobileCard } from "@/components/mobile/mobile-card";
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
 import { lessonPath } from "@/lib/content";
@@ -166,6 +167,7 @@ export function HomeAppView({ catalog, defaultChipId }: Props) {
           {streak != null && streak > 0 ? (
             <span className="app-stat-pill app-stat-pill-accent">🔥 {streak} өдөр</span>
           ) : null}
+          <ReviewDueBadge />
           <span className="app-stat-pill">✓ {completedCount} хичээл</span>
           <span className="app-stat-pill">{progressPercent}% явц</span>
         </div>

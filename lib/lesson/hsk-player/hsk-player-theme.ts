@@ -1,6 +1,6 @@
 /** HSK learner player design tokens (Camel Teacher mockup-aligned). */
 export const HSK_PLAYER = {
-  primary: "#16C784",
+  primary: "#1FB85A",
   accent: "#FF7A1A",
   text: "#102033",
   muted: "#64748B",

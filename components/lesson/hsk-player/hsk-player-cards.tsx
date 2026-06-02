@@ -2,6 +2,9 @@
 
 import Link from "next/link";
 import type { ReactNode } from "react";
+import { DialogueModule } from "@/components/lesson-modules/dialogue-module";
+import { VocabularyModule } from "@/components/lesson-modules/vocabulary-module";
+import { resolveKeyVocabularyWords } from "@/lib/lesson/hsk-learner-copy";
 import { SpeakerButton } from "@/components/tts/speaker-button";
 import { HskMediaImage } from "@/components/lesson/hsk-flashcard-vocabulary-study";
 import { HskOptionalVideoCard } from "@/components/lesson/hsk-optional-video-card";
@@ -508,67 +511,35 @@ export function VocabularyFlashcardPreview({
   stepMedia?: HskGuidedStepMediaRef;
   teachingImages?: TeachingImage[];
 }) {
-  const lang = resolveTtsLang({ courseId: lesson.courseId });
+  const mediaSlot = stepMedia ? (
+    <HskStepImageSlot
+      stepType="vocabulary"
+      media={media}
+      stepMedia={stepMedia}
+      teachingImages={teachingImages}
+      alt="Vocabulary"
+    />
+  ) : null;
 
-  if (!word) {
-    return (
-      <HskPlayerCard>
-        <p className="text-sm" style={{ color: HSK_PLAYER.muted }}>
-          Үгийн сан хараахан байхгүй.
-        </p>
-        <Link
-          href={vocabHref}
-          className="app-btn-primary mt-4 block w-full text-center"
-        >
-          Үгийн сан руу
-        </Link>
-      </HskPlayerCard>
-    );
-  }
+  const words = word
+    ? (() => {
+        const keyWords = resolveKeyVocabularyWords(lesson.vocabulary, 6);
+        if (keyWords.some((w) => w.chinese === word.chinese)) return keyWords;
+        return [word, ...keyWords];
+      })()
+    : [];
 
   return (
-    <HskPlayerCard>
-      <p className="text-xs font-bold uppercase tracking-wide" style={{ color: HSK_PLAYER.muted }}>
-        Үгийн сан — урьдчилсан
-      </p>
-      {stepMedia ? (
-        <HskStepImageSlot
-          stepType="vocabulary"
-          media={media}
-          stepMedia={stepMedia}
-          teachingImages={teachingImages}
-          alt="Vocabulary"
-        />
-      ) : null}
-      <p className="mt-2 text-sm" style={{ color: HSK_PLAYER.muted }}>
-        Нэг үгийг картаар үзээд, бүрэн flashcard руу үргэлжлүүлнэ.
-      </p>
-      <div
-        className="mt-4 flex flex-col items-center rounded-2xl px-4 py-8"
-        style={{ backgroundColor: HSK_PLAYER.softGreen }}
-      >
-        <p className="text-5xl font-bold" style={{ color: HSK_PLAYER.text }}>
-          {word.chinese}
-        </p>
-        {containsTargetScript(word.chinese) ? (
-          <div className="mt-3">
-            <SpeakerButton
-              text={word.chinese}
-              lang={lang}
-              courseId={lesson.courseId}
-              hskLevel={word.hskLevel}
-              size="md"
-            />
-          </div>
-        ) : null}
-        <p className="mt-4 text-sm" style={{ color: HSK_PLAYER.muted }}>
-          {word.pinyin} · {word.mongolian}
-        </p>
-      </div>
-      <Link href={vocabHref} className="app-btn-primary mt-4 block w-full text-center">
-        🃏 Үгийн сангаа flashcard-аар давтах
-      </Link>
-    </HskPlayerCard>
+    <VocabularyModule
+      lesson={lesson}
+      words={words}
+      teacherNote="Эхлээд ханьж үзээд, дараа нь flashcard-аар бүрэн давтана."
+      mediaSlot={mediaSlot}
+      footerCta={{
+        label: word ? "🃏 Flashcard-аар үргэлжлүүлэх" : "Үгийн сан руу",
+        href: vocabHref,
+      }}
+    />
   );
 }
 
@@ -585,69 +556,20 @@ export function DialoguePracticeCard({
   stepMedia: HskGuidedStepMediaRef;
   teachingImages?: TeachingImage[];
 }) {
-  const lang = resolveTtsLang({ courseId: lesson.courseId });
-
   return (
-    <HskPlayerCard>
-      <h2 className="text-lg font-bold" style={{ color: HSK_PLAYER.text }}>
-        Богино яриа
-      </h2>
-      <HskStepImageSlot
-        stepType="dialogue"
-        media={media}
-        stepMedia={stepMedia}
-        teachingImages={teachingImages}
-        alt="Dialogue"
-      />
-      <div className="mt-4 space-y-2">
-        {lines.map((line, index) => {
-          const isLeft = index % 2 === 0;
-          return (
-            <div
-              key={`${line.chinese}-${index}`}
-              className={`flex ${isLeft ? "justify-start" : "justify-end"}`}
-            >
-              <div
-                className="max-w-[88%] rounded-2xl px-3 py-2.5"
-                style={{
-                  backgroundColor: isLeft ? HSK_PLAYER.softGreen : HSK_PLAYER.card,
-                  border: isLeft ? "none" : "1px solid #e2e8f0",
-                }}
-              >
-                <p className="text-xs font-bold" style={{ color: HSK_PLAYER.muted }}>
-                  {line.speaker ?? (isLeft ? "A" : "B")}
-                </p>
-                <div className="flex items-start gap-2">
-                  <div className="min-w-0">
-                    <p className="font-semibold" style={{ color: HSK_PLAYER.text }}>
-                      {line.chinese}
-                    </p>
-                    {line.pinyin ? (
-                      <p className="text-sm" style={{ color: HSK_PLAYER.primary }}>
-                        {line.pinyin}
-                      </p>
-                    ) : null}
-                    {line.mongolian ? (
-                      <p className="text-sm" style={{ color: HSK_PLAYER.muted }}>
-                        {line.mongolian}
-                      </p>
-                    ) : null}
-                  </div>
-                  {containsTargetScript(line.chinese) ? (
-                    <SpeakerButton
-                      text={line.chinese}
-                      lang={lang}
-                      courseId={lesson.courseId}
-                      size="sm"
-                    />
-                  ) : null}
-                </div>
-              </div>
-            </div>
-          );
-        })}
-      </div>
-    </HskPlayerCard>
+    <DialogueModule
+      lesson={lesson}
+      lines={lines}
+      mediaSlot={
+        <HskStepImageSlot
+          stepType="dialogue"
+          media={media}
+          stepMedia={stepMedia}
+          teachingImages={teachingImages}
+          alt="Dialogue"
+        />
+      }
+    />
   );
 }
 
