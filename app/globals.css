@@ -8,14 +8,15 @@
   --app-bg: #eef2ef;
   --app-card: #ffffff;
   --app-primary: #1fb85a;
-  --app-primary-dark: #18934a;
-  --app-primary-light: #eafbf2;
-  --app-text: #102033;
-  --app-muted: #64748b;
-  --app-border: #e2e8f0;
+  --app-primary-dark: #149247;
+  --app-primary-light: #eaf8f0;
+  --app-text: #0f1b14;
+  --app-muted: #7e8b83;
+  --app-border: #e7ece8;
   --app-radius: 20px;
-  --app-orange: #1fb85a;
-  --app-orange-dark: #18934a;
+  /* Legacy aliases — orange brand replaced by green (#1FB85A) */
+  --app-orange: var(--app-primary);
+  --app-orange-dark: var(--app-primary-dark);
   --app-purple: #8b5cf6;
   --app-purple-dark: #7c3aed;
   --app-purple-light: #f3e8ff;
@@ -144,7 +145,7 @@ body {
 }
 
 .app-timeline-node-next {
-  @apply bg-[var(--app-orange)] text-white shadow-sm;
+  @apply bg-[var(--app-primary)] text-white shadow-sm;
 }
 
 .app-timeline-node-locked {
