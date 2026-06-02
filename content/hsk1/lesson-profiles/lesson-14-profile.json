@@ -1,0 +1,56 @@
+{
+  "profileVersion": "HSK1_LESSON_PROFILE_V1",
+  "lessonNumber": 14,
+  "lessonId": "hsk1-l14-clothes",
+  "chineseTitle": "她买了不少衣服",
+  "coreSkill": "Completed actions; shopping quantity",
+  "mainGrammar": [
+    "了 completion",
+    "不少 quantity"
+  ],
+  "mainFunction": [
+    "Completed actions; shopping quantity"
+  ],
+  "pronunciationFocus": [
+    "了 neutral/light tone contexts"
+  ],
+  "characterFocus": [
+    "买",
+    "了",
+    "不",
+    "少"
+  ],
+  "workbookFocus": [
+    "section 一",
+    "section 二",
+    "section 三",
+    "section 四",
+    "section 五",
+    "section 六",
+    "section 七",
+    "section 八"
+  ],
+  "commonMongolianLearnerMistakes": [],
+  "recommendedGames": [
+    "flashcard",
+    "quiz",
+    "了_completion",
+    "progressive_呢"
+  ],
+  "forbiddenGames": [],
+  "recommendedMnemonicImages": [],
+  "recommendedPracticeFlow": [
+    "teacher intro",
+    "core dialogue",
+    "vocabulary flashcards",
+    "pronunciation/grammar focus",
+    "workbook practice",
+    "quiz",
+    "recommended games"
+  ],
+  "componentGameAllowed": false,
+  "strokeOrderGameRequired": false,
+  "enrichmentAllowed": true,
+  "enrichmentRequiresSourceComplete": true,
+  "notes": "Enrichment (mnemonics, teacher copy) must not replace or contradict source. componentStatus=needs_review until verified."
+}

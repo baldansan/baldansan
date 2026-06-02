@@ -1,0 +1,54 @@
+{
+  "profileVersion": "HSK1_LESSON_PROFILE_V1",
+  "lessonNumber": 6,
+  "lessonId": "hsk1-l06-speak-chinese",
+  "chineseTitle": "我会说汉语",
+  "coreSkill": "Expressing ability with 会",
+  "mainGrammar": [
+    "会 + verb ability"
+  ],
+  "mainFunction": [
+    "Expressing ability with 会"
+  ],
+  "pronunciationFocus": [
+    "会 tone and linking"
+  ],
+  "characterFocus": [
+    "会",
+    "说",
+    "语"
+  ],
+  "workbookFocus": [
+    "section 一",
+    "section 二",
+    "section 三",
+    "section 四",
+    "section 五",
+    "section 六",
+    "section 七",
+    "section 八"
+  ],
+  "commonMongolianLearnerMistakes": [],
+  "recommendedGames": [
+    "flashcard",
+    "quiz",
+    "dialogue_practice",
+    "workbook_listening"
+  ],
+  "forbiddenGames": [],
+  "recommendedMnemonicImages": [],
+  "recommendedPracticeFlow": [
+    "teacher intro",
+    "core dialogue",
+    "vocabulary flashcards",
+    "pronunciation/grammar focus",
+    "workbook practice",
+    "quiz",
+    "recommended games"
+  ],
+  "componentGameAllowed": false,
+  "strokeOrderGameRequired": false,
+  "enrichmentAllowed": true,
+  "enrichmentRequiresSourceComplete": true,
+  "notes": "Enrichment (mnemonics, teacher copy) must not replace or contradict source. componentStatus=needs_review until verified."
+}

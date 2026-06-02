@@ -1,0 +1,71 @@
+{
+  "profileVersion": "HSK1_LESSON_PROFILE_V1",
+  "lessonNumber": 1,
+  "lessonId": "hsk1-l01-nihao",
+  "chineseTitle": "你好",
+  "coreSkill": "Daily greetings; pinyin foundation (initials, finals, tones, syllables)",
+  "mainGrammar": [],
+  "mainFunction": [
+    "Daily greetings; pinyin foundation (initials, finals, tones, syllables)"
+  ],
+  "pronunciationFocus": [
+    "initials and finals",
+    "four tones",
+    "tone production",
+    "tone sandhi (nǐ hǎo)",
+    "Chinese syllable structure"
+  ],
+  "characterFocus": [
+    "一",
+    "二",
+    "三",
+    "十",
+    "八",
+    "六"
+  ],
+  "workbookFocus": [
+    "section 一",
+    "section 二",
+    "section 三",
+    "section 四",
+    "section 五",
+    "section 六",
+    "section 七",
+    "section 八"
+  ],
+  "commonMongolianLearnerMistakes": [
+    "Pinyin-ийг «ни хао» гэж монгол үсгээр цээжлэх",
+    "Хөгийг алгасах",
+    "Tone sandhi-г хэт техникээр тайлбарлах"
+  ],
+  "recommendedGames": [
+    "flashcard",
+    "quiz",
+    "tone_listening",
+    "pinyin_recognition",
+    "greeting_dialogue",
+    "stroke_order",
+    "hanzi_writing"
+  ],
+  "forbiddenGames": [
+    "missing_component_偏旁",
+    "random_missing_stroke"
+  ],
+  "recommendedMnemonicImages": [
+    "vocab-hao-mnemonic"
+  ],
+  "recommendedPracticeFlow": [
+    "teacher intro",
+    "core dialogue",
+    "vocabulary flashcards",
+    "pronunciation/grammar focus",
+    "workbook practice",
+    "quiz",
+    "recommended games"
+  ],
+  "componentGameAllowed": false,
+  "strokeOrderGameRequired": true,
+  "enrichmentAllowed": true,
+  "enrichmentRequiresSourceComplete": true,
+  "notes": "Enrichment (mnemonics, teacher copy) must not replace or contradict source. componentStatus=needs_review until verified."
+}
