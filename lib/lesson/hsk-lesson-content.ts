@@ -46,12 +46,23 @@ export type HskDialogue = {
   lines: HskDialogueLine[];
 };
 
+export type HskCharacterComponent = {
+  component: string;
+  nameMn?: string;
+  meaningMn?: string;
+  position?: string;
+};
+
 export type HskCharacterNote = {
   chinese: string;
   pinyin?: string;
   mongolian?: string;
   strokeNote?: string;
   mnemonic?: string;
+  structure?: string;
+  components?: HskCharacterComponent[];
+  formula?: string;
+  strokeImageUrl?: string;
 };
 
 export type HskStudyContent = {
@@ -313,6 +324,25 @@ function parseCharacterNotesFromRaw(
     const chinese =
       trim(item.chinese) || trim(item.character) || trim(item.hanzi);
     if (!chinese) return;
+
+    const rawComponents = item.components;
+    const components: HskCharacterComponent[] = [];
+    if (Array.isArray(rawComponents)) {
+      for (const row of rawComponents) {
+        if (!isRecord(row)) continue;
+        const component =
+          trim(row.component) || trim(row.radical) || trim(row.part);
+        if (!component) continue;
+        components.push({
+          component,
+          nameMn: trim(row.nameMn) || trim(row.name) || undefined,
+          meaningMn:
+            trim(row.meaningMn) || trim(row.meaning) || undefined,
+          position: trim(row.position) || undefined,
+        });
+      }
+    }
+
     notes.push({
       chinese,
       pinyin: trim(item.pinyin) || trim(item.reading) || undefined,
@@ -321,8 +351,17 @@ function parseCharacterNotesFromRaw(
         trim(item.strokeNote) ||
         trim(item.strokes) ||
         trim(item.writingNote) ||
+        trim(item.strokeOrderDescriptionMn) ||
         undefined,
       mnemonic: trim(item.mnemonic) || trim(item.hint) || undefined,
+      structure: trim(item.structure) || undefined,
+      formula: trim(item.formula) || undefined,
+      strokeImageUrl:
+        trim(item.strokeImageUrl) ||
+        trim(item.strokeImage) ||
+        trim(item.strokeOrderImageUrl) ||
+        undefined,
+      components: components.length > 0 ? components : undefined,
     });
   };
 

@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useMemo, useState } from "react";
 import { GameCard } from "@/components/games/game-card";
 import { GameEmptyState } from "@/components/games/game-empty-state";
@@ -11,7 +12,13 @@ import { GameShell } from "@/components/games/game-shell";
 import { buildStrokeGameItems } from "@/lib/games/game-data";
 import { resolveGameLabels, type GameLabels } from "@/lib/games/game-lesson-meta";
 import { saveGameResult } from "@/lib/games/game-progress";
+import {
+  extractHanziCharacters,
+  HANZI_WRITING_LABELS,
+  resolveLessonPracticeHanzi,
+} from "@/lib/hanzi/writing-practice";
 import type { GameVocabItem } from "@/lib/games/game-types";
+import type { HskCharacterNote } from "@/lib/lesson/hsk-lesson-content";
 
 type Props = {
   lessonId: string;
@@ -19,6 +26,7 @@ type Props = {
   isKorean?: boolean;
   isPrelesson?: boolean;
   labels?: GameLabels;
+  hskCharacterNotes?: HskCharacterNote[];
 };
 
 export function StrokeGameClient({
@@ -27,12 +35,13 @@ export function StrokeGameClient({
   isKorean = false,
   isPrelesson = false,
   labels: labelsProp,
+  hskCharacterNotes = [],
 }: Props) {
   const labels = labelsProp ?? resolveGameLabels(isKorean, isPrelesson);
-  const gameContext = { isKorean, isPrelesson };
+  const gameContext = { isKorean, isPrelesson, hskCharacterNotes };
   const questions = useMemo(
     () => buildStrokeGameItems(vocabulary, 6, gameContext),
-    [vocabulary, isKorean, isPrelesson]
+    [vocabulary, isKorean, isPrelesson, hskCharacterNotes]
   );
   const [index, setIndex] = useState(0);
   const [selected, setSelected] = useState<string | null>(null);
@@ -44,6 +53,20 @@ export function StrokeGameClient({
   const current = questions[index];
   const total = questions.length;
   const isHangul = current?.mode === "hangul";
+  const isStrokeOrder = current?.mode === "stroke-order";
+  const isComponent = current?.mode === "component";
+  const lessonPracticeHanzi = useMemo(
+    () => resolveLessonPracticeHanzi(lessonId, vocabulary),
+    [lessonId, vocabulary]
+  );
+  const writingChar =
+    current && !isHangul
+      ? extractHanziCharacters(current.chinese)[0] ?? current.chinese
+      : null;
+  const writingHref =
+    writingChar && lessonPracticeHanzi.includes(writingChar)
+      ? `/kanji/${encodeURIComponent(writingChar)}?lessonId=${encodeURIComponent(lessonId)}&write=1`
+      : null;
 
   function finishGame(finalCorrect: number) {
     const finalScore = finalCorrect * 10;
@@ -125,7 +148,7 @@ export function StrokeGameClient({
         score={score}
       />
       <p className="mb-3 rounded-xl bg-amber-50 px-3 py-2 text-center text-[11px] leading-snug text-amber-800 ring-1 ring-amber-200">
-        {labels.strokeHint}
+        {labels.strokeDesc}
       </p>
       <GameProgressPill current={index + 1} total={total} />
       {current ? (
@@ -150,16 +173,34 @@ export function StrokeGameClient({
                 <p className="mt-1 text-sm text-[var(--app-muted)]">
                   {current.mongolian}
                 </p>
-                <p className="mt-4 text-base font-semibold text-purple-700">
-                  ? + бүрэлдэхүүн = {current.chinese}
-                </p>
-                <p className="mt-1 text-xs text-[var(--app-muted)]">
+                {current.formulaPrompt ? (
+                  <p className="mt-4 text-xl font-semibold tracking-wide text-purple-700">
+                    {current.formulaPrompt}
+                  </p>
+                ) : null}
+                <p className="mt-2 text-sm font-medium text-[var(--app-text)]">
                   {current.prompt}
                 </p>
+                {isStrokeOrder ? (
+                  <p className="mt-1 text-xs text-[var(--app-muted)]">
+                    Зураасны дараалал
+                  </p>
+                ) : null}
+                {isComponent ? (
+                  <p className="mt-1 text-xs text-[var(--app-muted)]">
+                    偏旁 / бүрдэл
+                  </p>
+                ) : null}
               </>
             )}
           </GameCard>
-          <div className="grid grid-cols-2 gap-2">
+          <div
+            className={`grid gap-2 ${
+              isComponent && current.questionType !== "structure"
+                ? "grid-cols-2"
+                : "grid-cols-1"
+            }`}
+          >
             {current.options.map((option) => {
               let state: "default" | "correct" | "wrong" | "selected" =
                 "default";
@@ -169,6 +210,10 @@ export function StrokeGameClient({
               } else if (option === selected) {
                 state = "selected";
               }
+              const isLargeComponentOption =
+                isComponent &&
+                (current.questionType === "completion" ||
+                  current.questionType === "reverse");
               return (
                 <GameOptionButton
                   key={option}
@@ -176,11 +221,28 @@ export function StrokeGameClient({
                   state={state}
                   disabled={revealed}
                   onClick={() => handleSelect(option)}
-                  className="!text-2xl !font-bold"
+                  className={
+                    isLargeComponentOption
+                      ? "!text-2xl !font-bold"
+                      : "!text-sm !font-medium !leading-snug"
+                  }
                 />
               );
             })}
           </div>
+          {revealed && current.explanation ? (
+            <p className="mt-4 rounded-xl bg-emerald-50 px-3 py-3 text-sm leading-relaxed text-emerald-900 ring-1 ring-emerald-200">
+              {current.explanation}
+            </p>
+          ) : null}
+          {revealed && writingHref ? (
+            <Link
+              href={writingHref}
+              className="mt-3 flex min-h-[44px] w-full items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white"
+            >
+              {HANZI_WRITING_LABELS.traceWriteLong}
+            </Link>
+          ) : null}
           {revealed && index < total - 1 ? (
             <button
               type="button"

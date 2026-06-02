@@ -1,30 +1,74 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
+import dynamic from "next/dynamic";
 import { GamePracticeLinks } from "@/components/games/game-practice-links";
 import { SpeakerButton } from "@/components/tts/speaker-button";
+import {
+  findNextPracticeChar,
+  HANZI_WRITING_LABELS,
+  isWritingPracticeEnabled,
+  resolveStrokeOrderImageUrl,
+  resolveWordPracticeChars,
+} from "@/lib/hanzi/writing-practice";
 import { lettersDetailLinkLabel } from "@/lib/learner-letters-ui";
 import { getSelectedLanguage } from "@/lib/learner-onboarding";
 import { resolveKoreanTtsLang } from "@/lib/lesson/teaching-media";
 import { resolveTtsLang } from "@/lib/tts/infer-lang";
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
 import { MobileCard } from "@/components/mobile/mobile-card";
+import type { HskCharacterNote } from "@/lib/lesson/hsk-lesson-content";
 import type { VocabularyWord } from "@/types/lesson";
+
+const HanziWriterPractice = dynamic(
+  () =>
+    import("@/components/hanzi/hanzi-writer-practice").then(
+      (m) => m.HanziWriterPractice
+    ),
+  { ssr: false, loading: () => (
+    <p className="py-12 text-center text-sm text-[var(--app-muted)]">
+      {HANZI_WRITING_LABELS.loading}
+    </p>
+  ) }
+);
 
 type Props = {
   word: VocabularyWord;
   lessonId: string;
   courseId?: string;
   taskCount: number;
+  lessonPracticeHanzi: string[];
+  characterNotes?: HskCharacterNote[];
+  openWriteOnMount?: boolean;
+  isKorean?: boolean;
 };
 
 type SheetMode = "write" | "listen" | null;
 
-export function KanjiDetailClient({ word, lessonId, courseId, taskCount }: Props) {
+export function KanjiDetailClient({
+  word,
+  lessonId,
+  courseId,
+  taskCount,
+  lessonPracticeHanzi,
+  characterNotes = [],
+  openWriteOnMount = false,
+  isKorean = false,
+}: Props) {
   const [sheet, setSheet] = useState<SheetMode>(null);
   const [lang, setLang] = useState<ReturnType<typeof getSelectedLanguage>>(null);
-  const vocabHref = `/kanji/${encodeURIComponent(word.id || word.chinese)}?lessonId=${lessonId}`;
+  const practiceChars = useMemo(
+    () => resolveWordPracticeChars(word.chinese, lessonPracticeHanzi),
+    [word.chinese, lessonPracticeHanzi]
+  );
+  const [activeCharIndex, setActiveCharIndex] = useState(0);
+  const activeChar = practiceChars[activeCharIndex] ?? practiceChars[0] ?? "";
+  const writingEnabled =
+    !isKorean &&
+    practiceChars.length > 0 &&
+    isWritingPracticeEnabled(activeChar, lessonPracticeHanzi);
+
   const ttsLang = courseId
     ? resolveKoreanTtsLang({ courseId })
     : resolveTtsLang({ hskLevel: word.hskLevel });
@@ -32,6 +76,35 @@ export function KanjiDetailClient({ word, lessonId, courseId, taskCount }: Props
   useEffect(() => {
     setLang(getSelectedLanguage());
   }, []);
+
+  useEffect(() => {
+    if (openWriteOnMount && writingEnabled) {
+      setSheet("write");
+    }
+  }, [openWriteOnMount, writingEnabled]);
+
+  useEffect(() => {
+    setActiveCharIndex(0);
+  }, [word.chinese, lessonId]);
+
+  const strokeOrderImageUrl = activeChar
+    ? resolveStrokeOrderImageUrl(activeChar, characterNotes)
+    : undefined;
+
+  const nextChar = activeChar
+    ? findNextPracticeChar(activeChar, practiceChars)
+    : null;
+
+  function openWriteSheet() {
+    if (!writingEnabled) return;
+    setSheet("write");
+  }
+
+  function handleNextCharacter() {
+    if (!nextChar) return;
+    const nextIndex = practiceChars.indexOf(nextChar);
+    if (nextIndex >= 0) setActiveCharIndex(nextIndex);
+  }
 
   return (
     <MobileAppShell activeTab="kanji" showBottomNav={sheet == null}>
@@ -96,16 +169,15 @@ export function KanjiDetailClient({ word, lessonId, courseId, taskCount }: Props
       ) : null}
 
       <MobileCard className="mb-4">
-        <p className="mb-3 text-sm font-bold text-[var(--app-text)]">
-          Дасгал
-        </p>
+        <p className="mb-3 text-sm font-bold text-[var(--app-text)]">Дасгал</p>
         <div className="grid grid-cols-2 gap-2">
           <button
             type="button"
-            onClick={() => setSheet("write")}
-            className="min-h-[44px] rounded-xl bg-slate-100 px-3 py-2 text-sm font-semibold text-slate-800"
+            onClick={openWriteSheet}
+            disabled={!writingEnabled}
+            className="min-h-[44px] rounded-xl bg-slate-100 px-3 py-2 text-sm font-semibold text-slate-800 disabled:cursor-not-allowed disabled:opacity-40"
           >
-            Бичих
+            {HANZI_WRITING_LABELS.write}
           </button>
           <button
             type="button"
@@ -115,6 +187,28 @@ export function KanjiDetailClient({ word, lessonId, courseId, taskCount }: Props
             Сонсох &amp; хэлэх
           </button>
         </div>
+        {writingEnabled ? (
+          <div className="mt-2 grid grid-cols-2 gap-2">
+            <button
+              type="button"
+              onClick={openWriteSheet}
+              className="min-h-[40px] rounded-xl bg-violet-50 px-3 py-2 text-xs font-semibold text-violet-800 ring-1 ring-violet-200"
+            >
+              {HANZI_WRITING_LABELS.watchStrokes}
+            </button>
+            <button
+              type="button"
+              onClick={openWriteSheet}
+              className="min-h-[40px] rounded-xl bg-emerald-50 px-3 py-2 text-xs font-semibold text-emerald-800 ring-1 ring-emerald-200"
+            >
+              {HANZI_WRITING_LABELS.traceWrite}
+            </button>
+          </div>
+        ) : !isKorean ? (
+          <p className="mt-2 text-xs leading-relaxed text-[var(--app-muted)]">
+            {HANZI_WRITING_LABELS.unavailable}
+          </p>
+        ) : null}
         <div className="mt-3 flex justify-center">
           <SpeakerButton
             text={word.chinese}
@@ -133,7 +227,7 @@ export function KanjiDetailClient({ word, lessonId, courseId, taskCount }: Props
           role="dialog"
           aria-modal
         >
-          <div className="w-full max-w-[430px] rounded-t-3xl bg-white p-6 shadow-xl">
+          <div className="max-h-[92vh] w-full max-w-[430px] overflow-y-auto rounded-t-3xl bg-white p-6 shadow-xl">
             <button
               type="button"
               onClick={() => setSheet(null)}
@@ -141,22 +235,52 @@ export function KanjiDetailClient({ word, lessonId, courseId, taskCount }: Props
             >
               Хаах
             </button>
-            <p className="text-lg font-bold text-[var(--app-text)]">
-              {sheet === "write" ? "Бичих дасгал" : "Сонсох & хэлэх"}
-            </p>
-            <p className="mt-2 text-sm leading-6 text-[var(--app-muted)]">
-              {sheet === "write"
-                ? "Бичих дасгал дараагийн шатанд илүү нарийвчилна."
-                : "Дуу таних хадгалахгүй, зөвхөн practice mode."}
-            </p>
-            <p className="mt-3 text-4xl font-bold">{word.chinese}</p>
-            <Link
-              href={vocabHref}
-              className="mt-4 inline-block text-sm font-semibold text-emerald-600"
-              onClick={() => setSheet(null)}
-            >
-              Буцах
-            </Link>
+            {sheet === "write" && writingEnabled ? (
+              <>
+                <p className="text-lg font-bold text-[var(--app-text)]">
+                  {HANZI_WRITING_LABELS.practiceTitle}
+                </p>
+                <p className="mt-1 text-4xl font-bold text-center text-[var(--app-text)]">
+                  {activeChar}
+                </p>
+                {practiceChars.length > 1 ? (
+                  <p className="mt-1 text-center text-xs text-[var(--app-muted)]">
+                    {activeCharIndex + 1}/{practiceChars.length} ханз
+                  </p>
+                ) : null}
+                <div className="mt-4">
+                  <HanziWriterPractice
+                    key={`${lessonId}-${activeChar}`}
+                    character={activeChar}
+                    strokeOrderImageUrl={strokeOrderImageUrl}
+                    onDone={() => setSheet(null)}
+                    onNextCharacter={handleNextCharacter}
+                    hasNextCharacter={Boolean(nextChar)}
+                  />
+                </div>
+              </>
+            ) : (
+              <>
+                <p className="text-lg font-bold text-[var(--app-text)]">
+                  Сонсох &amp; хэлэх
+                </p>
+                <p className="mt-2 text-sm leading-6 text-[var(--app-muted)]">
+                  Дуу таних хадгалахгүй, зөвхөн practice mode.
+                </p>
+                <p className="mt-3 text-4xl font-bold">{word.chinese}</p>
+                <div className="mt-4 flex justify-center">
+                  <SpeakerButton
+                    text={word.chinese}
+                    lang={ttsLang}
+                    courseId={courseId}
+                    hskLevel={word.hskLevel}
+                    audioUrl={word.audioUrl}
+                    size="lg"
+                    label="Дахин сонсох"
+                  />
+                </div>
+              </>
+            )}
           </div>
         </div>
       ) : null}

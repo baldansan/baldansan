@@ -4,7 +4,7 @@ import { getLessonGameContext } from "@/lib/games/game-data";
 export const dynamic = "force-dynamic";
 
 export const metadata = {
-  title: "Дутуу зураас — Тоглоом",
+  title: "\u0414\u0443\u0442\u0443\u0443 \u0431\u04af\u0440\u0434\u044d\u043b \u2014 \u0422\u043e\u0433\u043b\u043e\u043e\u043c",
 };
 
 type PageProps = {
@@ -21,6 +21,7 @@ export default async function StrokeGamePage({ searchParams }: PageProps) {
       isKorean={context.isKorean}
       isPrelesson={context.isPrelesson}
       labels={context.labels}
+      hskCharacterNotes={context.hskCharacterNotes}
     />
   );
 }
