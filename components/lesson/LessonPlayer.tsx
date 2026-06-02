@@ -14,6 +14,8 @@ import "./lesson-player.css";
 import LessonOverview from "./modules/LessonOverview";
 import VocabularyCard from "./modules/VocabularyCard";
 import DialoguesModule from "./modules/DialoguesModule";
+import TextsModule from "./modules/TextsModule";
+import GrammarModule from "./modules/GrammarModule";
 import ComingSoon from "./modules/ComingSoon";
 
 // Модулийн харагдах нэр (ComingSoon болон гарчигт ашиглана)
@@ -60,6 +62,10 @@ export default function LessonPlayer({
         return <VocabularyCard lesson={lesson} onDone={next} />;
       case "dialogues":
         return <DialoguesModule lesson={lesson} onDone={next} />;
+      case "texts":
+        return <TextsModule lesson={lesson} onDone={next} />;
+      case "grammar":
+        return <GrammarModule lesson={lesson} onDone={next} />;
       default:
         return <ComingSoon label={MODULE_LABEL[current] ?? current} onNext={next} />;
     }

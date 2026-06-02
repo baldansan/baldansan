@@ -11,6 +11,8 @@ export type Lesson = {
   quizQuestions: number;
   status: LessonStatus;
   href: string | null;
+  texts?: ShortText[];
+  grammar?: GrammarPoint[];
 };
 
 export type SubtitleExample = {
@@ -151,4 +153,26 @@ export interface Dialogue {
   scene_mn?: string;
   audio?: string;
   lines: DialogueLine[];
+}
+
+export interface ShortText {
+  id: number;
+  audio?: string;
+  zh: string;
+  pinyin: string;
+  mn: string;
+}
+
+export interface GrammarExample {
+  zh: string;
+  pinyin: string;
+  mn: string;
+}
+
+export interface GrammarPoint {
+  id?: number;
+  point: string;
+  gloss_mn: string;
+  teacher_mn: string;
+  examples: GrammarExample[];
 }
