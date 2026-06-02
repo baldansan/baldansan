@@ -251,9 +251,10 @@ export function HomeAppView({ catalog, defaultChipId }: Props) {
         {timelineLessons.length === 0 ? (
           <MobileCard className="text-center !py-6">
             <p className="text-sm text-[var(--app-muted)]">
-              {activeCourse?.available
-                ? "Энэ курс дээр хичээл байхгүй байна."
-                : "Энэ курс удахгүй нээгдэнэ."}
+              {activeCourse &&
+              ["hsk1", "hsk4a", "hsk4b"].includes(activeCourse.chipId)
+                ? "Энэ курс удахгүй нээгдэнэ."
+                : "Одоогоор хичээл алга. Import ZIP-ээр нэмнэ үү."}
             </p>
           </MobileCard>
         ) : (

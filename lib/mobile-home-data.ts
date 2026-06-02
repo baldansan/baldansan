@@ -51,8 +51,8 @@ export async function loadMobileHomeData(): Promise<MobileHomeData> {
 
   const catalog = buildHomeCourseCatalog(
     {
-      title: hsk5Course?.title ?? "HSK5 Short Drama Chinese",
-      subtitle: hsk5Course?.subtitle ?? "Богино бичлэг, үгийн сан, quiz",
+      title: hsk5Course?.title ?? "HSK 5",
+      subtitle: hsk5Course?.subtitle ?? "",
       lessons: hsk5Lessons,
     },
     korean

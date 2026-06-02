@@ -57,16 +57,15 @@ export function buildHomeCourseCatalog(
     allLessonsHref: null,
   }));
 
-  const hsk5Available = hsk5.lessons.length > 0;
   entries.push({
     chipId: "hsk5a",
     chipLabel: "HSK 5 上",
     courseId: "hsk5",
-    available: hsk5Available,
+    available: true,
     title: hsk5.title,
     subtitle: hsk5.subtitle,
     lessons: hsk5.lessons,
-    allLessonsHref: hsk5Available ? "/courses/hsk5" : null,
+    allLessonsHref: hsk5.lessons.length > 0 ? "/courses/hsk5" : null,
   });
 
   if (korean && (korean.lessons.length > 0 || korean.title)) {

@@ -66,7 +66,7 @@ export function CourseDetailAppView({
         {lessons.length === 0 ? (
           <MobileCard className="text-center">
             <p className="text-sm text-[var(--app-muted)]">
-              Энэ курс дээр хичээл байхгүй байна.
+              Одоогоор хичээл алга. Import ZIP-ээр нэмнэ үү.
             </p>
           </MobileCard>
         ) : (
