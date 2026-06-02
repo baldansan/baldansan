@@ -7,8 +7,10 @@ import {
 export type HskGuidedStepKind =
   | "teacher-intro"
   | "key-phrase"
+  | "phrase-breakdown"
   | "pinyin"
   | "tones"
+  | "tone-sandhi"
   | "vocabulary"
   | "dialogue"
   | "common-mistake"
@@ -112,11 +114,17 @@ function normalizeStepKind(raw: unknown): HskGuidedStepKind {
   ) {
     return "teacher-intro";
   }
+  if (key.includes("phrase-breakdown") || key === "phrasebreakdown") {
+    return "phrase-breakdown";
+  }
   if (key.includes("key-phrase") || key === "phrase" || key === "herophrase") {
     return "key-phrase";
   }
   if (key.includes("pinyin") || key.includes("pronunciation")) {
     return "pinyin";
+  }
+  if (key.includes("tone-sandhi") || key.includes("tonesandhi") || key === "tone_sandhi") {
+    return "tone-sandhi";
   }
   if (key.includes("tone")) return "tones";
   if (key.includes("vocab") || key.includes("word") || key === "basicwords") {
@@ -237,10 +245,14 @@ function normalizeGuidedStep(raw: unknown, index: number): HskGuidedStep | null 
     (type === "teacher-intro"
       ? "Багшийн тайлбар"
       : type === "pinyin"
-        ? "Pinyin"
+        ? "Пиньинь"
         : type === "tones"
           ? "Хөг / Дууны өнгө"
-          : type === "key-phrase"
+          : type === "tone-sandhi"
+            ? "Хөгийн өөрчлөлт"
+            : type === "phrase-breakdown"
+              ? "Үгийн бүтэц"
+              : type === "key-phrase"
             ? "Гол хэллэг"
             : type === "vocabulary"
               ? "Үгийн сан"
@@ -249,8 +261,8 @@ function normalizeGuidedStep(raw: unknown, index: number): HskGuidedStep | null 
                 : type === "common-mistake"
                   ? "Түгээмэл алдаа"
                   : type === "characters"
-                  ? "Үсэг"
-                  : type === "practice-menu"
+                    ? "Ханз"
+                    : type === "practice-menu"
                     ? "Дасгал"
                     : type === "complete"
                       ? "Дууслаа"

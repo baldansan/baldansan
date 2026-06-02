@@ -1,3 +1,5 @@
+import { applyHsk1L01V13GoldStandard } from "@/lib/lesson/hsk1-l01-v13/apply-v13";
+import { isHsk1L01Nihao } from "@/lib/lesson/hsk1-l01-v13/is-lesson";
 import { parseTagFromSourceNote } from "@/lib/lesson-content-type";
 import { parseHskGuidedSteps, type HskGuidedStep } from "@/lib/lesson/hsk-guided-step";
 import { formatLearnerTeacherNotes } from "@/lib/lesson/format-learner-teacher-note";
@@ -72,6 +74,19 @@ export type HskCharacterNote = {
   strokeImageUrl?: string;
 };
 
+export type HskClassroomExpression = {
+  chinese: string;
+  pinyin: string;
+  mongolian: string;
+};
+
+export type HskTeachingGoals = {
+  pronunciation: string[];
+  characters: string[];
+  functional: string[];
+  sequence: string[];
+};
+
 export type HskStudyContent = {
   profileId: string | null;
   hskLevel: number | null;
@@ -86,6 +101,15 @@ export type HskStudyContent = {
   guidedSteps: HskGuidedStep[];
   teacherNotes: string[];
   media: HskMediaBundle | null;
+  /** Workbook practice center sections (V13+). */
+  workbook?: import("@/lib/lesson/hsk1-l01-v13/workbook").HskWorkbookSection[];
+  /** Raw imported workbook payload — admin/debug. */
+  workbookPayload?: unknown;
+  /** Optional classroom mini-expressions. */
+  classroomExpressions?: HskClassroomExpression[];
+  /** Teacher's Book goals — internal structure. */
+  teachingGoals?: HskTeachingGoals;
+  packageVersion?: string;
   /** Dev-only section resolution metadata (when NODE_ENV=development). */
   sectionDebug?: HskStudySectionDebugMap;
 };
@@ -550,13 +574,16 @@ export function parseHskStudyContentFromLesson(
 }
 
 export function enrichLessonHskContent(lesson: LessonContent): LessonContent {
+  if (isHsk1L01Nihao(lesson)) {
+    const hskStudy = parseHskStudyContentFromLesson(lesson);
+    return applyHsk1L01V13GoldStandard({ ...lesson, hskStudy });
+  }
+
   if (!isHskStructuredLesson(lesson)) {
     return lesson;
   }
 
   const hskStudy = parseHskStudyContentFromLesson(lesson);
-  return {
-    ...lesson,
-    hskStudy,
-  };
+  const withStudy = { ...lesson, hskStudy };
+  return withStudy;
 }

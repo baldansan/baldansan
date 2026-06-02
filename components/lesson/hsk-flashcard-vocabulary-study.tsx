@@ -294,9 +294,30 @@ export function HskFlashcardVocabularyStudy({
                     {current.exampleChinese}
                   </p>
                 ) : null}
+                {current.examplePinyin ? (
+                  <p className="text-xs text-emerald-700">{current.examplePinyin}</p>
+                ) : null}
                 {current.exampleMongolian ? (
                   <p className="mt-1 text-sm text-slate-600">
                     {current.exampleMongolian}
+                  </p>
+                ) : null}
+              </div>
+            ) : null}
+            {current?.memoryHintMn ? (
+              <div className="mt-2 w-full rounded-2xl bg-amber-50 p-3 ring-1 ring-amber-100">
+                <p className="text-[11px] font-semibold uppercase tracking-wide text-amber-800">
+                  Тогтоох тусламж
+                </p>
+                {current.components && current.components.length > 0 ? (
+                  <p className="mt-1 text-xs text-amber-900">
+                    {current.components.map((c) => c.component).join(" + ")}
+                  </p>
+                ) : null}
+                <p className="mt-1 text-sm text-amber-950">{current.memoryHintMn}</p>
+                {current.mnemonicStatus === "learning_aid_not_official_etymology" ? (
+                  <p className="mt-1 text-[10px] text-amber-700">
+                    Сурах тусламж — албан ёсны үүсэл биш
                   </p>
                 ) : null}
               </div>

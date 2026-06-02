@@ -1,3 +1,4 @@
+import { isHsk1L01Nihao } from "@/lib/lesson/hsk1-l01-v13/is-lesson";
 import { isHskStructuredLesson } from "@/lib/lesson/hsk-lesson-content";
 import type { LessonContent } from "@/types/lesson-content";
 import type { VocabularyWord } from "@/types/lesson";
@@ -12,6 +13,7 @@ export function isHskFlashcardVocabularyLesson(
   lesson: LessonPick,
   vocabulary: VocabularyWord[] = []
 ): boolean {
+  if (isHsk1L01Nihao(lesson)) return vocabulary.length > 0;
   if (!isHskStructuredLesson(lesson)) return false;
   return vocabulary.length > 0;
 }

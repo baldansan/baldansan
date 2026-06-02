@@ -60,6 +60,12 @@ export type VocabularyWord = {
   lessonSection?: string;
   /** Per-word audio URL (from ZIP import via source_note map). */
   audioUrl?: string;
+  /** Component breakdown for mnemonic learning aid. */
+  components?: Array<{ component: string; meaningMn: string }>;
+  memoryHintMn?: string;
+  mnemonicImageId?: string;
+  mnemonicStatus?: "learning_aid_not_official_etymology";
+  examplePinyin?: string;
   /** Mongolian-friendly pronunciation hint (import / source_note / fallback). */
   mongolianPronunciation?: string;
   pronunciationMn?: string;

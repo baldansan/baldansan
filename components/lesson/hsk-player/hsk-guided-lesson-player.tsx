@@ -4,14 +4,17 @@ import { useRouter } from "next/navigation";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { AdminPreviewBanner } from "@/components/admin-preview-banner";
 import {
+  CharactersLessonCard,
   CommonMistakesCard,
   DialoguePracticeCard,
   KeyPhraseCard,
   LessonCompleteCard,
+  PhraseBreakdownCard,
   PracticeMenuCard,
   PinyinPracticeCard,
   TeacherSpeechCard,
   TonePracticeCard,
+  ToneSandhiCard,
   GuidedStepCard,
   HskOptionalVideoInline,
   VocabularyFlashcardPreview,
@@ -90,6 +93,10 @@ export function HskGuidedLessonPlayer({
   const quizHref = lessonPreviewPath(lesson.id, {
     adminPreview,
     subpath: "quiz",
+  });
+  const workbookHref = lessonPreviewPath(lesson.id, {
+    adminPreview,
+    subpath: "workbook",
   });
   const detailHref = lessonPreviewPath(lesson.id, { adminPreview });
   const nextHref = nextLessonId
@@ -306,8 +313,32 @@ export function HskGuidedLessonPlayer({
             />
           ) : null}
 
-          {currentStep?.type === "characters" ||
-          currentStep?.type === "content" ? (
+          {currentStep?.type === "phrase-breakdown" ? (
+            <PhraseBreakdownCard
+              step={currentStep}
+              media={content.study.media}
+              teachingImages={lesson.teachingImages}
+            />
+          ) : null}
+
+          {currentStep?.type === "tone-sandhi" ? (
+            <ToneSandhiCard
+              step={currentStep}
+              media={content.study.media}
+              teachingImages={lesson.teachingImages}
+            />
+          ) : null}
+
+          {currentStep?.type === "characters" ? (
+            <CharactersLessonCard
+              step={currentStep}
+              media={content.study.media}
+              teachingImages={lesson.teachingImages}
+              lessonId={routeLessonId}
+            />
+          ) : null}
+
+          {currentStep?.type === "content" ? (
             <GuidedStepCard
               step={currentStep}
               media={content.study.media}
@@ -319,7 +350,12 @@ export function HskGuidedLessonPlayer({
             <PracticeMenuCard
               vocabHref={vocabHref}
               quizHref={quizHref}
-              lessonId={lesson.id}
+              lessonId={routeLessonId}
+              workbookHref={
+                (lesson.hskStudy?.workbook?.length ?? 0) > 0
+                  ? workbookHref
+                  : undefined
+              }
             />
           ) : null}
 

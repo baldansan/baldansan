@@ -5,7 +5,7 @@ import type { HskToneExample } from "@/lib/lesson/hsk-lesson-content";
 export const HSK_TONE_LEARNER_LABELS = {
   sectionTitle: "Хөг / Дууны өнгө",
   example: "Жишээ",
-  motion: "Хөдөлгөөн",
+  motion: "Гарын хөдөлгөөн",
   howToSay: "Яаж хэлэх вэ?",
   handRepeat: "Гараар дагаж хэл",
   repeat: "Давтах",
@@ -21,6 +21,7 @@ export type HskToneItem = {
   motionMn?: string;
   howToSayMn?: string;
   learnerHintMn?: string;
+  repeatMn?: string;
   toneNumber: number;
   motionSymbol: string;
 };
@@ -132,6 +133,8 @@ export function parseHskToneItem(
     trim(item.learnerHint) ||
     trim(item.hint) ||
     undefined;
+  const repeatMn =
+    trim(item.repeatMn) || trim(item.repeat) || trim(item.practiceMn) || undefined;
   const motionSymbol = symbolToMotion(
     trim(item.motionSymbol) || symbol,
     toneNumber
@@ -147,6 +150,7 @@ export function parseHskToneItem(
     motionMn,
     howToSayMn,
     learnerHintMn,
+    repeatMn,
     toneNumber,
     motionSymbol,
   };

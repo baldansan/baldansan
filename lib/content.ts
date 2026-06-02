@@ -61,6 +61,10 @@ export function lessonQuizPath(lessonId: string) {
   return `/lessons/${lessonId}/quiz`;
 }
 
+export function lessonWorkbookPath(lessonId: string) {
+  return `/lessons/${lessonId}/workbook`;
+}
+
 export function lessonTrainingPath(
   lessonId: string,
   options?: { preview?: boolean }
