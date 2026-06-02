@@ -20,7 +20,26 @@ export type QuizOptionCategory =
   | "vocabulary_mongolian"
   | "vocabulary_korean"
   | "cloze_korean"
+  | "cloze_chinese"
+  | "vocabulary_chinese"
+  | "true_false"
   | "unknown";
+
+/** Mongolian / boolean labels reserved for true–false items only. */
+const TRUE_FALSE_LABELS_NORMALIZED = new Set([
+  "үнэн",
+  "худал",
+  "буруу",
+  "зөв",
+  "true",
+  "false",
+  "t",
+  "f",
+  "yes",
+  "no",
+]);
+
+const HAN_SCRIPT_REGEX = /[\u4e00-\u9fff]/;
 
 const ROMANIZATION_VOWELS = [
   "a",
@@ -211,6 +230,43 @@ function isLatinSyllable(value: string): boolean {
 
 function normalizeMn(value: string): string {
   return value.trim().toLowerCase();
+}
+
+function hasHanScript(value: string): boolean {
+  return HAN_SCRIPT_REGEX.test(value);
+}
+
+export function isTrueFalseOptionLabel(value: string): boolean {
+  const trimmed = value.trim();
+  if (!trimmed) return false;
+  if (/^[✓✗]\s*(үнэн|худал)/i.test(trimmed)) return true;
+  const key = normalizeMn(trimmed).replace(/[^a-z0-9\u0400-\u04ff]/g, "");
+  return TRUE_FALSE_LABELS_NORMALIZED.has(key);
+}
+
+export function isTrueFalseQuestion(question: QuizQuestion): boolean {
+  if (question.skillTags?.includes("true_false")) return true;
+
+  const options = question.options.map((o) => o.trim()).filter(Boolean);
+  if (options.length >= 2 && options.every(isTrueFalseOptionLabel)) {
+    return true;
+  }
+
+  const correct = question.correctAnswer.trim();
+  if (/^(true|false)$/i.test(correct)) return true;
+  return isTrueFalseOptionLabel(correct);
+}
+
+function filterOutTrueFalseLabels(values: string[]): string[] {
+  return values.filter((value) => !isTrueFalseOptionLabel(value));
+}
+
+function hasChineseOptionBank(question: QuizQuestion): boolean {
+  const hanOptions = question.options.filter((o) => hasHanScript(o));
+  return (
+    (question.type === "cloze" || question.type === "multiple_choice") &&
+    hanOptions.length >= 2
+  );
 }
 
 function uniqueStrings(values: string[]): string[] {
@@ -469,8 +525,18 @@ export function detectQuizCategory(question: QuizQuestion): QuizOptionCategory {
     return "cloze_korean";
   }
 
+  if (isTrueFalseQuestion(question)) {
+    return "true_false";
+  }
+
+  const usesHan = hasHanScript(correct) || options.some((o) => hasHanScript(o));
+  if (usesHan) {
+    if (question.type === "cloze") return "cloze_chinese";
+    return "vocabulary_chinese";
+  }
+
   if (options.every((o) => /[가-힣]/.test(o))) return "vocabulary_korean";
-  if (options.every((o) => !/[가-힣\u3131-\u318E]/.test(o))) {
+  if (options.every((o) => !/[가-힣\u3131-\u318E]/.test(o) && !hasHanScript(o))) {
     return "vocabulary_mongolian";
   }
 
@@ -587,6 +653,28 @@ function buildCategoryPool(
         ]),
         prefer: vocabulary.map((w) => w.chinese),
       };
+    case "cloze_chinese":
+    case "vocabulary_chinese":
+      return {
+        pool: uniqueStrings([
+          ...vocabulary.map((w) => w.chinese).filter(hasHanScript),
+          ...fromLesson.filter(hasHanScript),
+          ...question.options.filter(hasHanScript),
+        ]),
+        prefer: vocabulary.map((w) => w.chinese).filter(hasHanScript),
+      };
+    case "true_false": {
+      const tfPool = uniqueStrings([
+        "Үнэн",
+        "Худал",
+        ...question.options,
+        ...fromLesson,
+      ]).filter(isTrueFalseOptionLabel);
+      return {
+        pool: tfPool.length >= 2 ? tfPool : ["Үнэн", "Худал"],
+        prefer: tfPool,
+      };
+    }
     case "vocabulary_korean":
       return {
         pool: uniqueStrings([
@@ -599,14 +687,20 @@ function buildCategoryPool(
       return {
         pool: uniqueStrings([
           ...vocabulary.map((w) => w.mongolian),
-          ...fromLesson.filter((o) => !/[가-힣]/.test(o)),
+          ...fromLesson.filter(
+            (o) => !/[가-힣]/.test(o) && !hasHanScript(o) && !isTrueFalseOptionLabel(o)
+          ),
         ]),
         prefer: vocabulary.map((w) => w.mongolian),
       };
     default:
       return {
-        pool: uniqueStrings([...question.options, ...fromLesson]),
-        prefer: question.options.filter((o) => o !== correct),
+        pool: filterOutTrueFalseLabels(
+          uniqueStrings([...question.options, ...fromLesson])
+        ),
+        prefer: filterOutTrueFalseLabels(
+          question.options.filter((o) => o !== correct)
+        ),
       };
   }
 }
@@ -617,44 +711,92 @@ function distractorCount(question: QuizQuestion): number {
   return 3;
 }
 
+export function sanitizeQuizQuestionOptions(question: QuizQuestion): QuizQuestion {
+  if (isTrueFalseQuestion(question)) {
+    return question;
+  }
+
+  const filtered = filterOutTrueFalseLabels(question.options);
+  if (filtered.length === question.options.length) {
+    return question;
+  }
+
+  return {
+    ...question,
+    options: filtered.length > 0 ? filtered : question.options,
+  };
+}
+
 export function enhanceQuizQuestionOptions(
   question: QuizQuestion,
   vocabulary: VocabularyWord[],
   allQuestions: QuizQuestion[]
 ): QuizQuestion {
-  const category = detectQuizCategory(question);
-  const difficulty = inferQuizDifficulty(question, category);
-  const count = distractorCount(question);
+  const sanitized = sanitizeQuizQuestionOptions(question);
+
+  if (isTrueFalseQuestion(sanitized)) {
+    const tfPool = uniqueStrings([
+      "Үнэн",
+      "Худал",
+      ...sanitized.options,
+    ]).filter(isTrueFalseOptionLabel);
+    const options =
+      tfPool.length >= 2
+        ? shuffleArray(tfPool)
+        : shuffleArray(["Үнэн", "Худал"]);
+    return { ...sanitized, options };
+  }
+
+  if (hasChineseOptionBank(sanitized)) {
+    const bank = uniqueStrings(
+      filterOutTrueFalseLabels(sanitized.options).filter(hasHanScript)
+    );
+    if (bank.length >= 2) {
+      return { ...sanitized, options: shuffleArray(bank) };
+    }
+  }
+
+  const category = detectQuizCategory(sanitized);
+  const difficulty = inferQuizDifficulty(sanitized, category);
+  const count = distractorCount(sanitized);
   const { pool, prefer } = buildCategoryPool(
     category,
-    question,
+    sanitized,
     vocabulary,
     allQuestions
   );
 
-  if (pool.length < 2) {
-    return question;
+  const safePool = filterOutTrueFalseLabels(pool);
+  const safePrefer = filterOutTrueFalseLabels(prefer);
+
+  if (safePool.length < 2) {
+    return sanitized;
   }
 
-  let preferred = prefer;
+  let preferred = safePrefer;
   if (difficulty === "hard") {
-    preferred = prefer.length ? prefer : pool;
+    preferred = safePrefer.length ? safePrefer : safePool;
   } else if (difficulty === "easy") {
-    preferred = prefer.slice(0, 2);
+    preferred = safePrefer.slice(0, 2);
   }
 
-  const distractors = pickFromPool(pool, question.correctAnswer, count, preferred);
+  const distractors = pickFromPool(
+    safePool,
+    sanitized.correctAnswer,
+    count,
+    preferred
+  );
   if (distractors.length === 0) {
-    return question;
+    return sanitized;
   }
 
   const options = shuffleArray([
-    question.correctAnswer,
+    sanitized.correctAnswer,
     ...distractors.slice(0, count),
   ]);
 
   return {
-    ...question,
+    ...sanitized,
     options,
     difficulty,
   };
@@ -667,6 +809,19 @@ export function enhanceLessonQuizQuestions(
   return questions.map((question) =>
     enhanceQuizQuestionOptions(question, vocabulary, questions)
   );
+}
+
+/** DB/static rows: strip TF labels from fill-in. Korean L0: smart rewrite. */
+export function prepareLessonQuizQuestions(
+  questions: QuizQuestion[],
+  vocabulary: VocabularyWord[],
+  options: { rewriteOptions?: boolean }
+): QuizQuestion[] {
+  const sanitized = questions.map((q) => sanitizeQuizQuestionOptions(q));
+  if (!options.rewriteOptions) {
+    return sanitized;
+  }
+  return enhanceLessonQuizQuestions(sanitized, vocabulary);
 }
 
 export type VocabTranslateCategory =
