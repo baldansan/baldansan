@@ -17,6 +17,7 @@ import DialoguesModule from "./modules/DialoguesModule";
 import TextsModule from "./modules/TextsModule";
 import GrammarModule from "./modules/GrammarModule";
 import PronunciationModule from "./modules/PronunciationModule";
+import RecapModule from "./modules/RecapModule";
 import ComingSoon from "./modules/ComingSoon";
 
 // Модулийн харагдах нэр (ComingSoon болон гарчигт ашиглана)
@@ -69,6 +70,8 @@ export default function LessonPlayer({
         return <PronunciationModule lesson={lesson} onDone={next} />;
       case "grammar":
         return <GrammarModule lesson={lesson} onDone={next} />;
+      case "recap":
+        return <RecapModule lesson={lesson} onDone={next} />;
       default:
         return <ComingSoon label={MODULE_LABEL[current] ?? current} onNext={next} />;
     }
