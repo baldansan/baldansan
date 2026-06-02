@@ -15,15 +15,15 @@ const DEFAULT_WHY_IMPORTANT = [
 const DEFAULT_PINYIN_EXPLAINER = [
   "Pinyin гэдэг нь Хятад үгийг латин үсгээр бичих арга.",
   "你好 гэдэг үгийг nǐ hǎo гэж уншина.",
-  "Дээрх тэмдэг (ˉ ˊ ˇ ˋ) нь tone — өнгө, аяны өөрчлөлт.",
-  "Tone буруу бол утга өөрчлөгдөж болно — тиймээс tone-г заавал анхаар.",
+  "Дээрх тэмдэг (ˉ ˊ ˇ ˋ) нь хөг — дууны өнгө, аяны өөрчлөлт.",
+  "Хөг буруу бол утга өөрчлөгдөж болно — тиймээс хөгийг заавал анхаар.",
 ];
 
 const DEFAULT_TEACHER_ADVICE =
-  "Монгол сурагчдад хамгийн эхэнд хэцүү санагддаг зүйл бол tone. Тиймээс үгийг эхлээд сонсоод, дараа нь дуугаар нь дуурайж хэлээрэй. Шууд Монгол үсгээр цээжлэхээс илүү pinyin + tone-г хамтад нь харж сурах нь зөв.";
+  "Монгол сурагчдад хамгийн эхэнд хэцүү санагддаг зүйл бол хөг. Тиймээс үгийг эхлээд сонсоод, дараа нь дуугаар нь дуурайж хэлээрэй. Шууд Монгол үсгээр цээжлэхээс илүү pinyin + хөгийг хамтад нь харж сурах нь зөв.";
 
 const DEFAULT_NIHAO_TONE_NOTE =
-  "你好 дээр nǐ бол 3-р өнгө, hǎo мөн 3-р өнгөөр уншигдана.";
+  "你好 дээр nǐ бол 3-р хөг, hǎo мөн 3-р хөгөөр уншигдана.";
 
 export function resolveHskIntroSpeech(
   lesson: Pick<LessonContent, "id" | "title" | "chineseTitle">,
@@ -35,7 +35,7 @@ export function resolveHskIntroSpeech(
     return DEFAULT_INTRO;
   }
   const title = lesson.chineseTitle.trim() || lesson.title.trim();
-  return `Сайн байна уу! Энэ хичээлээр ${title} гэж сурна. Эхлээд сонсоод, дараа нь pinyin болон tone-г хамтад нь давтана.`;
+  return `Сайн байна уу! Энэ хичээлээр ${title} гэж сурна. Эхлээд сонсоод, дараа нь pinyin болон хөгийг хамтад нь давтана.`;
 }
 
 export function resolveHskWhyImportant(
@@ -67,13 +67,15 @@ export function resolveHskLessonToneNote(
   content: HskStudyContent
 ): string {
   const fromGuide = content.studyGuideSteps.find((step) =>
-    step.toLowerCase().includes("tone") || step.includes("өнгө")
+    step.toLowerCase().includes("хөг") ||
+    step.toLowerCase().includes("tone") ||
+    step.includes("өнгө")
   );
   if (fromGuide) return fromGuide;
   if (lesson.id.includes("nihao") || lesson.chineseTitle.includes("你好")) {
     return DEFAULT_NIHAO_TONE_NOTE;
   }
-  return "Tone-г зөв сонсож, дуурайж хэлэх нь эхний алхам.";
+  return "Хөгийг зөв сонсож, дуурайж хэлэх нь эхний алхам.";
 }
 
 export function resolveKeyVocabularyWords(
@@ -87,5 +89,5 @@ export function hskTextbookSubtitle(
   lesson: Pick<LessonContent, "chineseTitle" | "title">
 ): string {
   const target = lesson.chineseTitle.trim() || lesson.title.trim();
-  return `Багшийн тайлбартайгаар ${target}, pinyin, өнгө, үндсэн үгсээ сурна.`;
+  return `Багшийн тайлбартайгаар ${target}, pinyin, хөг, үндсэн үгсээ сурна.`;
 }

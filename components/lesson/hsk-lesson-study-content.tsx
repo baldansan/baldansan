@@ -32,7 +32,11 @@ import { LEARNER_LESSON } from "@/lib/learner-labels";
 import { containsTargetScript, resolveTtsLang } from "@/lib/tts/infer-lang";
 import type { LessonContent } from "@/types/lesson-content";
 
-const TONE_ARROWS = ["→", "↗", "↘↗", "↘"] as const;
+import {
+  HSK_TONE_LEARNER_LABELS,
+  parseHskToneItems,
+  defaultHskToneItems,
+} from "@/lib/lesson/hsk-tone-content";
 
 type Props = {
   lesson: LessonContent;
@@ -55,35 +59,29 @@ function TeacherSpeechBubble({ children }: { children: string }) {
 function ToneSection({ content, lessonToneNote }: { content: HskStudyContent; lessonToneNote: string }) {
   const toneImage = findHskMediaBySection(content.media, "tone");
   const toneUrl = resolveHskMediaUrl(toneImage);
-  const tones =
-    content.tones.length > 0
-      ? content.tones
-      : [1, 2, 3, 4].map((num, index) => ({
-          label: `${num}-р өнгө`,
-          example: ["mā", "má", "mǎ", "mà"][index],
-          pinyin: ["mā", "má", "mǎ", "mà"][index],
-          mongolian: ["өндөр, тэгш", "дээшлэх", "доошлоод дээшлэх", "огцом буух"][
-            index
-          ],
-        }));
+  const toneItems = parseHskToneItems(content.tones);
+  const tones = toneItems.length > 0 ? toneItems : defaultHskToneItems();
 
   return (
     <div className="space-y-3">
       <div className="grid gap-2 sm:grid-cols-2">
-        {tones.map((tone, index) => (
+        {tones.map((tone) => (
           <div
-            key={`${tone.label}-${tone.example}`}
+            key={`${tone.nameMn}-${tone.example}`}
             className="rounded-xl bg-emerald-50 px-3 py-3 ring-1 ring-emerald-100"
           >
             <div className="flex items-center justify-between gap-2">
-              <p className="text-xs font-semibold text-emerald-800">{tone.label}</p>
+              <p className="text-xs font-semibold text-emerald-800">{tone.nameMn}</p>
               <span className="text-lg text-emerald-600" aria-hidden>
-                {TONE_ARROWS[index] ?? "→"}
+                {tone.motionSymbol}
               </span>
             </div>
-            <p className="mt-1 text-xl font-bold text-slate-900">{tone.example}</p>
-            {tone.mongolian ? (
-              <p className="mt-1 text-sm text-slate-600">{tone.mongolian}</p>
+            <p className="mt-1 text-xs font-semibold text-slate-500">
+              {HSK_TONE_LEARNER_LABELS.example}
+            </p>
+            <p className="text-xl font-bold text-slate-900">{tone.example}</p>
+            {tone.explanationMn ? (
+              <p className="mt-1 text-sm text-slate-600">{tone.explanationMn}</p>
             ) : null}
           </div>
         ))}
@@ -101,7 +99,7 @@ function ToneSection({ content, lessonToneNote }: { content: HskStudyContent; le
           </span>
         ))}
       </div>
-      {toneUrl ? <HskMediaImage src={toneUrl} alt="Өнгийн диаграм" /> : null}
+      {toneUrl ? <HskMediaImage src={toneUrl} alt="Хөгний зураглал" /> : null}
     </div>
   );
 }
@@ -370,7 +368,9 @@ export function HskLessonStudyContent({
       </SectionCard>
 
       <SectionCard className="ring-emerald-100">
-        <h2 className="text-base font-semibold text-emerald-800">Өнгө / Tone</h2>
+        <h2 className="text-base font-semibold text-emerald-800">
+          {HSK_TONE_LEARNER_LABELS.sectionTitle}
+        </h2>
         <p className="mt-1 text-sm text-slate-600">
           Хятад хэлний 4 tone — аяны өөрчлөлт утгыг тодорхойлно.
         </p>

@@ -4,7 +4,7 @@ import {
   HSK_TONE_ALIASES,
   hskSectionKeyMatches,
 } from "@/lib/lesson/hsk-study-section-aliases";
-import { parseHskGuidedSteps, type HskGuidedStep } from "@/lib/lesson/hsk-guided-step";
+import { parseHskGuidedSteps, withGuidedStepMeta, type HskGuidedStep } from "@/lib/lesson/hsk-guided-step";
 import type {
   ChineseHskManifest,
   ChineseHskPackageMeta,
@@ -208,7 +208,7 @@ function buildDefaultGuidedSteps(
 ): HskGuidedStep[] {
   const prelesson = isHskPrelessonProfile(manifest.lessonProfile);
 
-  const steps: HskGuidedStep[] = [
+  const steps = [
     {
       id: "teacher-intro",
       type: "teacher-intro",
@@ -258,7 +258,7 @@ function buildDefaultGuidedSteps(
     {
       id: "tones",
       type: "tones",
-      titleMn: "Tone дасгал",
+      titleMn: "Хөг / Дууны өнгө",
       teacherSpeechMn: "",
       bulletsMn: [],
       chinese: "",
@@ -331,7 +331,12 @@ function buildDefaultGuidedSteps(
     },
   ];
 
-  return steps;
+  return steps.map((step) =>
+    withGuidedStepMeta({
+      ...(step as Omit<HskGuidedStep, "sourceType" | "toneLayout">),
+      sourceType: step.type,
+    })
+  );
 }
 
 export function buildHskStudyContentBundle(

@@ -1,5 +1,6 @@
 import {
   parseHskGuidedSteps,
+  withGuidedStepMeta,
   type HskGuidedStep,
   type HskGuidedStepKind,
 } from "@/lib/lesson/hsk-guided-step";
@@ -79,7 +80,7 @@ function buildFallbackStepsFromPlayerContent(
     {
       id: "tones",
       type: "tones",
-      titleMn: "Tone дасгал",
+      titleMn: "Хөг / Дууны өнгө",
       teacherSpeechMn: content.toneNote,
       bulletsMn: content.toneWarning ? [content.toneWarning] : [],
       chinese: "",
@@ -90,6 +91,12 @@ function buildFallbackStepsFromPlayerContent(
         pinyin: tone.pinyin,
         mongolian: tone.mongolian,
         label: tone.label,
+        symbol: tone.symbol,
+        motionMn: tone.motionMn,
+        howToSayMn: tone.howToSayMn,
+        learnerHintMn: tone.learnerHintMn,
+        motionSymbol: tone.motionSymbol,
+        toneNumber: tone.toneNumber,
       })),
       imageId: "",
       mediaSection: "tone",
@@ -161,7 +168,12 @@ function buildFallbackStepsFromPlayerContent(
       return !["key-phrase", "vocabulary", "dialogue"].includes(step.id);
     }
     return true;
-  }) as HskGuidedStep[];
+  }).map((step) =>
+    withGuidedStepMeta({
+      ...(step as Omit<HskGuidedStep, "sourceType" | "toneLayout">),
+      sourceType: step.type,
+    })
+  );
 }
 
 export function parseGuidedStepsFromSourceNote(sourceNote?: string | null): HskGuidedStep[] {

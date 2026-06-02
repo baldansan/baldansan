@@ -1,4 +1,8 @@
 import { formatLearnerTeacherNote } from "@/lib/lesson/format-learner-teacher-note";
+import {
+  parseHskToneItems,
+  toHskToneExample,
+} from "@/lib/lesson/hsk-tone-content";
 
 export type HskGuidedStepKind =
   | "teacher-intro"
@@ -26,6 +30,10 @@ export type HskGuidedStep = {
   /** Gold Standard media.json image id for this step. */
   imageId: string;
   mediaSection: string;
+  /** Original package step type (e.g. tone_production) — admin/debug only. */
+  sourceType: string;
+  /** tone_production uses compact cards; standard tone steps use detail cards. */
+  toneLayout: "production" | "standard";
   items: unknown[];
 };
 
@@ -36,6 +44,12 @@ export type HskGuidedStepExample = {
   label?: string;
   wrong?: string;
   correct?: string;
+  symbol?: string;
+  motionMn?: string;
+  howToSayMn?: string;
+  learnerHintMn?: string;
+  motionSymbol?: string;
+  toneNumber?: number;
 };
 
 const RAW_KEY_PATTERN =
@@ -126,7 +140,30 @@ function normalizeStepKind(raw: unknown): HskGuidedStepKind {
   return "content";
 }
 
+function toneItemToExample(
+  tone: ReturnType<typeof parseHskToneItems>[number]
+): HskGuidedStepExample {
+  const mapped = toHskToneExample(tone);
+  return {
+    label: mapped.label,
+    chinese: mapped.example,
+    pinyin: mapped.pinyin,
+    mongolian: mapped.mongolian,
+    symbol: mapped.symbol,
+    motionMn: mapped.motionMn,
+    howToSayMn: mapped.howToSayMn,
+    learnerHintMn: mapped.learnerHintMn,
+    motionSymbol: mapped.motionSymbol,
+    toneNumber: mapped.toneNumber,
+  };
+}
+
 function parseExamples(raw: unknown): HskGuidedStepExample[] {
+  const toneItems = parseHskToneItems(raw);
+  if (toneItems.length > 0) {
+    return toneItems.map(toneItemToExample);
+  }
+
   if (!Array.isArray(raw)) return [];
   return raw
     .map((item): HskGuidedStepExample | null => {
@@ -183,7 +220,12 @@ function normalizeGuidedStep(raw: unknown, index: number): HskGuidedStep | null 
   if (!isRecord(raw)) return null;
 
   const id = trim(raw.id) || trim(raw.key) || `step-${index + 1}`;
-  const type = normalizeStepKind(raw.type ?? raw.stepType ?? raw.sectionType ?? id);
+  const sourceType = trim(raw.type ?? raw.stepType ?? raw.sectionType ?? id);
+  const type = normalizeStepKind(sourceType);
+  const toneLayout =
+    sourceType.toLowerCase().replace(/[_\s]+/g, "-").includes("tone-production")
+      ? "production"
+      : "standard";
 
   const teacherSpeech =
     formatLearnerTeacherNote(raw) ||
@@ -197,7 +239,7 @@ function normalizeGuidedStep(raw: unknown, index: number): HskGuidedStep | null 
       : type === "pinyin"
         ? "Pinyin"
         : type === "tones"
-          ? "Tone дасгал"
+          ? "Хөг / Дууны өнгө"
           : type === "key-phrase"
             ? "Гол хэллэг"
             : type === "vocabulary"
@@ -284,8 +326,23 @@ function normalizeGuidedStep(raw: unknown, index: number): HskGuidedStep | null 
     examples,
     imageId,
     mediaSection,
+    sourceType,
+    toneLayout,
     items: Array.isArray(raw.items) ? raw.items : [],
   };
+}
+
+export function withGuidedStepMeta(
+  step: Omit<HskGuidedStep, "sourceType" | "toneLayout"> &
+    Partial<Pick<HskGuidedStep, "sourceType" | "toneLayout">>
+): HskGuidedStep {
+  const sourceType = step.sourceType ?? step.type;
+  const toneLayout =
+    step.toneLayout ??
+    (sourceType.toLowerCase().replace(/[_\s]+/g, "-").includes("tone-production")
+      ? "production"
+      : "standard");
+  return { ...step, sourceType, toneLayout };
 }
 
 export function parseHskGuidedSteps(raw: unknown): HskGuidedStep[] {

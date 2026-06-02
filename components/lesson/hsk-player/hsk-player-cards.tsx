@@ -13,8 +13,15 @@ import {
 import type { HskGuidedStep } from "@/lib/lesson/hsk-guided-step";
 import { HSK_PLAYER } from "@/lib/lesson/hsk-player/hsk-player-theme";
 import { resolveHskStepImageDisplay } from "@/lib/lesson/hsk-player/hsk-step-image-policy";
-import type { HskDialogueLine, HskToneExample } from "@/lib/lesson/hsk-lesson-content";
+import type { HskDialogueLine } from "@/lib/lesson/hsk-lesson-content";
 import type { HskStudyContent } from "@/lib/lesson/hsk-lesson-content";
+import {
+  defaultHskToneItems,
+  HSK_TONE_LEARNER_LABELS,
+  parseHskToneItems,
+  resolveToneHowToSay,
+  type HskToneItem,
+} from "@/lib/lesson/hsk-tone-content";
 import { containsTargetScript, resolveTtsLang } from "@/lib/tts/infer-lang";
 import type { TeachingImage } from "@/lib/lesson/teaching-media";
 import type { LessonContent } from "@/types/lesson-content";
@@ -290,7 +297,76 @@ export function PinyinPracticeCard({
   );
 }
 
-const TONE_ARROWS = ["→", "↗", "↘↗", "↘"];
+function ToneProductionRow({ tone }: { tone: HskToneItem }) {
+  return (
+    <div
+      className="flex items-center justify-between rounded-2xl px-3 py-3"
+      style={{ backgroundColor: HSK_PLAYER.softGreen }}
+    >
+      <div>
+        <p className="text-xs font-semibold" style={{ color: HSK_PLAYER.primary }}>
+          {tone.nameMn}
+        </p>
+        <p className="mt-1 text-lg font-bold" style={{ color: HSK_PLAYER.text }}>
+          {tone.example}
+        </p>
+      </div>
+      <span className="text-2xl font-bold" style={{ color: HSK_PLAYER.primary }} aria-hidden>
+        {tone.motionSymbol}
+      </span>
+    </div>
+  );
+}
+
+function ToneDetailCard({ tone }: { tone: HskToneItem }) {
+  const howToSay = resolveToneHowToSay(tone);
+
+  return (
+    <div
+      className="rounded-2xl px-3 py-3"
+      style={{ backgroundColor: HSK_PLAYER.softGreen }}
+    >
+      <p className="text-sm font-bold" style={{ color: HSK_PLAYER.text }}>
+        {tone.nameMn}
+      </p>
+      <div className="mt-2 space-y-2 text-sm" style={{ color: HSK_PLAYER.text }}>
+        <div>
+          <p className="text-xs font-semibold" style={{ color: HSK_PLAYER.muted }}>
+            {HSK_TONE_LEARNER_LABELS.example}
+          </p>
+          <p className="text-lg font-bold">{tone.example}</p>
+        </div>
+        {tone.motionMn || tone.motionSymbol ? (
+          <div>
+            <p className="text-xs font-semibold" style={{ color: HSK_PLAYER.muted }}>
+              {HSK_TONE_LEARNER_LABELS.motion}
+            </p>
+            <p>
+              {tone.motionSymbol}
+              {tone.motionMn ? ` · ${tone.motionMn}` : ""}
+            </p>
+          </div>
+        ) : null}
+        {howToSay ? (
+          <div>
+            <p className="text-xs font-semibold" style={{ color: HSK_PLAYER.muted }}>
+              {HSK_TONE_LEARNER_LABELS.howToSay}
+            </p>
+            <p>{howToSay}</p>
+          </div>
+        ) : null}
+        {tone.learnerHintMn ? (
+          <div>
+            <p className="text-xs font-semibold" style={{ color: HSK_PLAYER.muted }}>
+              {HSK_TONE_LEARNER_LABELS.hint}
+            </p>
+            <p>{tone.learnerHintMn}</p>
+          </div>
+        ) : null}
+      </div>
+    </div>
+  );
+}
 
 export function TonePracticeCard({
   tones,
@@ -299,59 +375,65 @@ export function TonePracticeCard({
   media,
   stepMedia,
   teachingImages,
+  layout = "standard",
 }: {
-  tones: HskToneExample[];
+  tones: HskToneItem[];
   toneNote: string;
   toneWarning: string;
   media?: HskStudyContent["media"];
   stepMedia: HskGuidedStepMediaRef;
   teachingImages?: TeachingImage[];
+  layout?: "production" | "standard";
 }) {
+  const displayTones =
+    tones.length > 0 ? tones : defaultHskToneItems();
+
   return (
     <HskPlayerCard>
       <h2 className="text-lg font-bold" style={{ color: HSK_PLAYER.text }}>
-        Өнгө / Tone
+        {HSK_TONE_LEARNER_LABELS.sectionTitle}
       </h2>
       <HskStepImageSlot
         stepType="tones"
         media={media}
         stepMedia={stepMedia}
         teachingImages={teachingImages}
-        alt="Tone diagram"
+        alt="Хөгний зураглал"
       />
-      <div className="mt-3 grid grid-cols-2 gap-2">
-        {tones.map((tone, index) => (
-          <div
-            key={`${tone.label}-${tone.example}`}
-            className="rounded-2xl px-3 py-3"
-            style={{ backgroundColor: HSK_PLAYER.softGreen }}
-          >
-            <div className="flex items-center justify-between">
-              <p className="text-xs font-semibold" style={{ color: HSK_PLAYER.primary }}>
-                {tone.label}
-              </p>
-              <span aria-hidden>{TONE_ARROWS[index] ?? "→"}</span>
-            </div>
-            <p className="mt-1 text-lg font-bold" style={{ color: HSK_PLAYER.text }}>
-              {tone.example}
-            </p>
-            <p className="text-xs" style={{ color: HSK_PLAYER.muted }}>
-              {tone.mongolian}
-            </p>
-          </div>
-        ))}
+      <div
+        className={`mt-3 grid gap-2 ${
+          layout === "production" ? "grid-cols-1" : "grid-cols-1 sm:grid-cols-2"
+        }`}
+      >
+        {displayTones.map((tone) =>
+          layout === "production" ? (
+            <ToneProductionRow key={`${tone.nameMn}-${tone.example}`} tone={tone} />
+          ) : (
+            <ToneDetailCard key={`${tone.nameMn}-${tone.example}`} tone={tone} />
+          )
+        )}
       </div>
+      {toneNote ? (
+        <p
+          className="mt-3 rounded-xl px-3 py-2.5 text-sm"
+          style={{ backgroundColor: HSK_PLAYER.softYellow, color: HSK_PLAYER.text }}
+        >
+          {toneNote}
+        </p>
+      ) : null}
+      {toneWarning ? (
+        <p
+          className="mt-2 rounded-xl px-3 py-2 text-xs leading-5"
+          style={{ backgroundColor: HSK_PLAYER.softPink, color: HSK_PLAYER.text }}
+        >
+          ⚠️ {toneWarning}
+        </p>
+      ) : null}
       <p
-        className="mt-3 rounded-xl px-3 py-2.5 text-sm"
-        style={{ backgroundColor: HSK_PLAYER.softYellow, color: HSK_PLAYER.text }}
+        className="mt-3 rounded-xl px-3 py-2 text-xs font-medium"
+        style={{ backgroundColor: HSK_PLAYER.softBlue, color: HSK_PLAYER.text }}
       >
-        {toneNote}
-      </p>
-      <p
-        className="mt-2 rounded-xl px-3 py-2 text-xs leading-5"
-        style={{ backgroundColor: HSK_PLAYER.softPink, color: HSK_PLAYER.text }}
-      >
-        ⚠️ {toneWarning}
+        🔊 {HSK_TONE_LEARNER_LABELS.listenRepeat}
       </p>
     </HskPlayerCard>
   );
@@ -533,7 +615,7 @@ export function CommonMistakesCard({
   const pairs =
     step.examples.length > 0
       ? step.examples
-      : [{ wrong: "ni hao", correct: "nǐ hǎo", mongolian: "Tone тэмдэг чухал" }];
+      : [{ wrong: "ni hao", correct: "nǐ hǎo", mongolian: "Хөгийн тэмдэг чухал" }];
 
   return (
     <HskPlayerCard>

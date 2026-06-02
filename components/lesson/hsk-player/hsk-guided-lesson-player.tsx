@@ -21,6 +21,10 @@ import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
 import { buildHskPlayerContent } from "@/lib/lesson/hsk-player/build-hsk-player-content";
 import { buildHskPlayerStepPlanFromLesson } from "@/lib/lesson/hsk-player/build-hsk-guided-steps";
 import type { HskGuidedStep } from "@/lib/lesson/hsk-guided-step";
+import {
+  parseHskToneItems,
+  parseToneItemsFromGuidedStep,
+} from "@/lib/lesson/hsk-tone-content";
 import type { HskGuidedStepMediaRef } from "@/lib/lesson/hsk-media";
 import { HSK_PLAYER } from "@/lib/lesson/hsk-player/hsk-player-theme";
 import { lessonPreviewPath } from "@/lib/lesson-publish";
@@ -250,16 +254,12 @@ export function HskGuidedLessonPlayer({
 
           {currentStep?.type === "tones" ? (
             <TonePracticeCard
-              tones={
-                currentStep.examples.length > 0
-                  ? currentStep.examples.map((row, index) => ({
-                      label: row.label ?? `${index + 1}-р өнгө`,
-                      example: row.chinese ?? row.pinyin ?? "",
-                      pinyin: row.pinyin ?? row.chinese ?? "",
-                      mongolian: row.mongolian ?? "",
-                    }))
-                  : content.tones
-              }
+              tones={(() => {
+                const fromStep = parseToneItemsFromGuidedStep(currentStep);
+                if (fromStep.length > 0) return fromStep;
+                return parseHskToneItems(content.tones);
+              })()}
+              layout={currentStep.toneLayout}
               toneNote={currentStep.teacherSpeechMn || content.toneNote}
               toneWarning={content.toneWarning}
               media={content.study.media}
