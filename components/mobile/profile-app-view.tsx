@@ -250,7 +250,7 @@ export function ProfileAppView() {
           <p className="text-[10px] text-[var(--app-muted)]">Дууссан хичээл</p>
         </MobileCard>
         <MobileCard padding="sm" className="text-center !p-3">
-          <p className="text-lg font-bold text-[var(--app-orange-dark)]">
+          <p className="text-lg font-bold text-[var(--app-primary-dark)]">
             {streak > 0 ? `🔥 ${streak}` : streak}
           </p>
           <p className="text-[10px] text-[var(--app-muted)]">Өдрийн streak</p>

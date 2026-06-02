@@ -176,7 +176,7 @@ export function HomeAppView({ catalog, defaultChipId }: Props) {
       {activeCourse?.available && lessonIds.length > 0 ? (
         <Link href={continueHref} className="mb-4 block min-h-[44px]">
           <MobileCard className="flex items-center gap-3 !p-3.5 active:bg-slate-50">
-            <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-orange-400 to-emerald-500 text-lg text-white shadow-sm">
+            <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-emerald-400 to-emerald-600 text-lg text-white shadow-sm">
               ▶
             </div>
             <div className="min-w-0 flex-1">
