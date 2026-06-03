@@ -26,10 +26,10 @@
   "audio_base_path": "audio/",
   "modules_enabled": [
     "hook",
-    "vocabulary",
     "dialogues",
-    "texts",
     "pronunciation",
+    "texts",
+    "vocabulary",
     "grammar",
     "exercises_textbook",
     "exercises_workbook",

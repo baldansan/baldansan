@@ -1,5 +1,6 @@
 import BottomNav from "@/components/BottomNav";
 import type { BottomNavTab } from "@/components/BottomNav";
+import PhoneFrame from "@/components/layout/PhoneFrame";
 import { resolveBottomNavTab } from "@/lib/bottom-nav";
 import type { MobileNavTab } from "@/lib/mobile-nav";
 import type { ReactNode } from "react";
@@ -19,8 +20,8 @@ export function MobileAppShell({
   mainClassName = "",
 }: Props) {
   return (
-    <div className="min-h-screen bg-[var(--app-outer)] flex justify-center px-0 sm:px-4">
-      <div className="app-shell-frame">
+    <PhoneFrame>
+      <div className="bs-app-shell-inner">
         <main
           className={`flex-1 overflow-x-hidden px-4 pt-5 ${
             showBottomNav ? "pb-24" : "pb-6"
@@ -34,6 +35,6 @@ export function MobileAppShell({
           </div>
         ) : null}
       </div>
-    </div>
+    </PhoneFrame>
   );
 }

@@ -3,6 +3,7 @@
 import { useRouter } from "next/navigation";
 import nextDynamic from "next/dynamic";
 import { AdminPreviewBanner } from "@/components/admin-preview-banner";
+import PhoneFrame from "@/components/layout/PhoneFrame";
 import LessonPlayer from "@/components/lesson/LessonPlayer";
 import { ExamLessonWatchClient } from "@/components/lesson/exam-lesson-watch";
 import { TextbookLessonWatchClient } from "@/components/lesson/textbook-lesson-watch";
@@ -43,13 +44,15 @@ function SchemaLessonWatchPlayer({
   const router = useRouter();
 
   return (
-    <>
-      {adminPreview ? <AdminPreviewBanner /> : null}
-      <LessonPlayer
-        lesson={lessonPackage}
-        onExit={() => router.back()}
-      />
-    </>
+    <PhoneFrame>
+      <div className="bs-app-shell-inner">
+        {adminPreview ? <AdminPreviewBanner /> : null}
+        <LessonPlayer
+          lesson={lessonPackage}
+          onExit={() => router.back()}
+        />
+      </div>
+    </PhoneFrame>
   );
 }
 

@@ -216,6 +216,22 @@ function buildQuestions(lesson: Lesson, source: "textbook" | "workbook"): Questi
   return out;
 }
 
+function questionLabel(q: Question, index: number): number {
+  return q.n != null && Number.isFinite(Number(q.n)) ? Number(q.n) : index + 1;
+}
+
+type QuestionState = {
+  picked: string | null;
+  tf: boolean | null;
+  seq: number[];
+  checked: boolean;
+  correct: boolean;
+};
+
+function emptyQuestionState(): QuestionState {
+  return { picked: null, tf: null, seq: [], checked: false, correct: false };
+}
+
 /* ---------- модуль ---------- */
 export default function ExercisesModule({
   lesson,
@@ -232,19 +248,27 @@ export default function ExercisesModule({
   const [qi, setQi] = useState(0);
   const [speed, setSpeed] = useState<Speed>(1);
   const [playing, setPlaying] = useState(false);
-  const [score, setScore] = useState(0);
   const [done, setDone] = useState(false);
-
-  // тухайн асуултын хариултын төлөв
-  const [picked, setPicked] = useState<string | null>(null); // choice
-  const [tf, setTf] = useState<boolean | null>(null); // tf
-  const [seq, setSeq] = useState<number[]>([]); // order/scramble — сонгосон индексүүд
-  const [checked, setChecked] = useState(false);
-  const [correct, setCorrect] = useState(false);
+  /** Асуулт бүрийн хариултын төлөв (чөлөөт үсрэлтэд хадгална). */
+  const [states, setStates] = useState<Record<number, QuestionState>>({});
 
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const q = questions[qi];
   const total = questions.length;
+  const cur = states[qi] ?? emptyQuestionState();
+  const { picked, tf, seq, checked, correct } = cur;
+
+  const score = useMemo(
+    () => Object.values(states).filter((s) => s.checked && s.correct).length,
+    [states]
+  );
+
+  const patchCur = useCallback((patch: Partial<QuestionState>) => {
+    setStates((prev) => ({
+      ...prev,
+      [qi]: { ...(prev[qi] ?? emptyQuestionState()), ...patch },
+    }));
+  }, [qi]);
 
   /* ----- аудио (сонсголын файл) ----- */
   const stopAudio = useCallback(() => {
@@ -254,6 +278,15 @@ export default function ExercisesModule({
     }
     setPlaying(false);
   }, []);
+
+  const jumpTo = useCallback(
+    (index: number) => {
+      if (index < 0 || index >= total || index === qi) return;
+      stopAudio();
+      setQi(index);
+    },
+    [qi, total, stopAudio]
+  );
 
   function audioUrl(path?: string | null): string | null {
     if (!path) return null;
@@ -285,20 +318,10 @@ export default function ExercisesModule({
     if (audioRef.current) audioRef.current.playbackRate = s;
   }
 
-  /* ----- асуулт солих үед төлөв цэвэрлэх ----- */
-  function resetQ() {
-    setPicked(null);
-    setTf(null);
-    setSeq([]);
-    setChecked(false);
-    setCorrect(false);
-    stopAudio();
-  }
-  function advance(wasCorrect: boolean) {
-    if (wasCorrect) setScore((s) => s + 1);
+  function advance() {
     if (qi < total - 1) {
+      stopAudio();
       setQi(qi + 1);
-      resetQ();
     } else {
       stopAudio();
       setDone(true);
@@ -307,41 +330,47 @@ export default function ExercisesModule({
 
   /* ----- choice ----- */
   function pickChoice(opt: string) {
-    if (checked) return;
-    const ok = opt === (q as any).answer;
-    setPicked(opt);
-    setChecked(true);
-    setCorrect(ok);
+    if (checked || !q) return;
+    const ok = opt === (q as Extract<Question, { kind: "choice" }>).answer;
+    patchCur({ picked: opt, checked: true, correct: ok });
   }
   /* ----- tf ----- */
   function pickTf(val: boolean) {
-    if (checked) return;
-    const ok = val === (q as any).answer;
-    setTf(val);
-    setChecked(true);
-    setCorrect(ok);
+    if (checked || !q) return;
+    const ok = val === (q as Extract<Question, { kind: "tf" }>).answer;
+    patchCur({ tf: val, checked: true, correct: ok });
   }
   /* ----- order / scramble: токен өр/хас ----- */
   function toggleToken(idx: number) {
     if (checked) return;
-    setSeq((prev) =>
-      prev.includes(idx) ? prev.filter((i) => i !== idx) : [...prev, idx]
-    );
+    const next = seq.includes(idx) ? seq.filter((i) => i !== idx) : [...seq, idx];
+    patchCur({ seq: next });
   }
   function checkSequence() {
+    if (!q || checked) return;
     if (q.kind === "order") {
       const chosenKeys = seq.map((i) => q.keys[i]);
       const ok =
         chosenKeys.length === q.answer.length &&
         chosenKeys.every((k, i) => k === q.answer[i]);
-      setChecked(true);
-      setCorrect(ok);
+      patchCur({ checked: true, correct: ok });
     } else if (q.kind === "scramble") {
       const built = seq.map((i) => q.tokens[i]).join("");
       const ok = norm(built) === norm(q.answer);
-      setChecked(true);
-      setCorrect(ok);
+      patchCur({ checked: true, correct: ok });
     }
+  }
+
+  function navBtnClass(index: number): string {
+    const st = states[index];
+    let cls = "bs-ex-nav-btn";
+    if (index === qi) cls += " bs-current";
+    if (st?.checked) {
+      cls += st.correct ? " bs-done-ok" : " bs-done-no";
+    } else if (st && (st.picked != null || st.tf != null || st.seq.length > 0)) {
+      cls += " bs-started";
+    }
+    return cls;
   }
 
   useEffect(() => () => stopAudio(), [stopAudio]); // unmount cleanup
@@ -401,9 +430,24 @@ export default function ExercisesModule({
           {source === "textbook" ? "Дасгал" : "Дасгал (ном)"}
         </div>
         <span className="bs-counter">
-          {qi + 1} / {total} · ✓ {score}
+          {questionLabel(q, qi)} · {qi + 1}/{total} · ✓ {score}
         </span>
       </div>
+
+      <nav className="bs-ex-nav" aria-label="Асуултын дугаар — шууд үсрэх">
+        {questions.map((item, index) => (
+          <button
+            key={index}
+            type="button"
+            className={navBtnClass(index)}
+            onClick={() => jumpTo(index)}
+            aria-label={`Асуулт ${questionLabel(item, index)}`}
+            aria-current={index === qi ? "true" : undefined}
+          >
+            {questionLabel(item, index)}
+          </button>
+        ))}
+      </nav>
 
       <div className="bs-ex-section">{q.section}</div>
       {q.instruction && <div className="bs-ex-instr">{q.instruction}</div>}
@@ -564,7 +608,7 @@ export default function ExercisesModule({
 
       {/* Дараагийнх */}
       {checked && (
-        <button className="bs-cta" onClick={() => advance(correct)} style={{ marginTop: 12 }}>
+        <button className="bs-cta" onClick={advance} style={{ marginTop: 12 }}>
           {qi === total - 1 ? "Дүн харах →" : "Дараагийнх →"}
         </button>
       )}

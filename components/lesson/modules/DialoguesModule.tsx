@@ -1,259 +1,207 @@
 "use client";
-// components/lesson/modules/DialoguesModule.tsx
-// "dialogues" модуль — чат хэлбэрийн яриа.
-// Мөр бүр: пиньинь + 汉字 + монгол + тоглуулах товч.
-// Хурд: 0.5× / 0.75× / 1× — аудио файл БА хөтчийн дуудлага (TTS) хоёуланд үйлчилнэ.
-// Мөрд аудио файл байвал ТҮҮНИЙГ, байхгүй бол хөтчийн хятад хоолойг (TTS) ашиглана —
-// яг VocabularyCard-тай ижил зарчим, тул аудио файлгүйгээр ч шууд ажиллана.
-//
-// Модулийн гэрээ бусадтай ижил: { lesson, onDone }. Сүүлийн яриа дуусахад onDone().
+// components/lesson/modules/DialoguesModule.tsx  (B хувилбар + шинэ үг тодруулга)
+// Чат хэлбэрийн яриа. Мөр бүр: speaker + пиньинь + 汉字 + монгол (товчгүй).
+// Дээд талд нэг "Бүгдийг сонсох" товч — номын ЖИНХЭНЭ бүтэн дуу. TTS ОГТ хэрэглэхгүй.
+// Мөрийн ханзан доторх ШИНЭ ҮГС (хичээлийн vocab) ногоон тодорно — дарвал пиньинь+
+// монгол попап (богино эх уншигчтай ижил зарчим).
+// Гэрээ: { lesson, onDone }.
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import type { Lesson, Dialogue, DialogueLine } from "@/types/lesson";
+import type { Lesson } from "@/types/lesson";
 import "./dialogues-module.css";
+import "./texts-module.css"; // bs-newword, bs-pop загваруудыг дахин ашиглана
 
 type Speed = 0.5 | 0.75 | 1;
 const SPEEDS: Speed[] = [0.5, 0.75, 1];
 
-// audio_base_path + замыг нийлүүлж бүтэн зам/URL гаргана.
-// Зам аль хэдийн http(s) бол тэр чигээр нь буцаана. Base хоосон бол замыг шууд буцаана.
+function f(o: any, ...keys: string[]) {
+  for (const k of keys) if (o && o[k] != null && o[k] !== "") return o[k];
+  return "";
+}
 function audioUrl(base: string | undefined, path?: string | null): string | null {
   if (!path) return null;
   if (/^https?:\/\//i.test(path)) return path;
   const b = (base ?? "").replace(/\/+$/, "");
-  const p = path.replace(/^\/+/, "");
+  const p = String(path).replace(/^\/+/, "");
   return b ? `${b}/${p}` : p;
 }
 
-// Нэг зэрэг зөвхөн НЭГ л зүйл тоглоно — одоо тоглож буй зүйлийн түлхүүр.
-type PlayKey = string | null;
+type Vocab = { zh: string; pinyin: string; mn: string };
+type Tok = { t: "plain"; s: string } | { t: "word"; s: string; v: Vocab };
 
 export default function DialoguesModule({
   lesson,
   onDone,
 }: {
   lesson: Lesson;
-  onDone: () => void; // сүүлийн яриа дуусахад дараагийн модуль руу
+  onDone: () => void;
 }) {
-  const dialogues: Dialogue[] = lesson.dialogues ?? [];
-  const base = lesson.audio_base_path;
+  const dialogues: any[] = (lesson as any).dialogues ?? [];
+  const base = (lesson as any).audio_base_path;
 
-  const [di, setDi] = useState(0); // аль яриаг үзэж байна
+  const vocab: Vocab[] = useMemo(() => {
+    const raw: any[] = (lesson as any).vocabulary ?? [];
+    return raw
+      .map((v) => ({ zh: f(v, "zh", "chinese"), pinyin: f(v, "pinyin"), mn: f(v, "mn", "mongolian") }))
+      .filter((v) => v.zh)
+      .sort((a, b) => b.zh.length - a.zh.length);
+  }, [lesson]);
+
+  const tokenize = useCallback((zh: string): Tok[] => {
+    if (!zh) return [];
+    const out: Tok[] = [];
+    let i = 0;
+    while (i < zh.length) {
+      let hit: Vocab | null = null;
+      for (const v of vocab) { if (v.zh && zh.startsWith(v.zh, i)) { hit = v; break; } }
+      if (hit) { out.push({ t: "word", s: hit.zh, v: hit }); i += hit.zh.length; }
+      else {
+        let j = i + 1;
+        while (j < zh.length && !vocab.some((v) => v.zh && zh.startsWith(v.zh, j))) j++;
+        out.push({ t: "plain", s: zh.slice(i, j) }); i = j;
+      }
+    }
+    return out;
+  }, [vocab]);
+
+  const [di, setDi] = useState(0);
   const [speed, setSpeed] = useState<Speed>(1);
-  const [playing, setPlaying] = useState<PlayKey>(null);
-
+  const [playing, setPlaying] = useState(false);
+  const [tapped, setTapped] = useState<{ v: Vocab; x: number; y: number } | null>(null);
   const audioRef = useRef<HTMLAudioElement | null>(null);
+  const chatRef = useRef<HTMLDivElement | null>(null);
 
   const dialogue = dialogues[di];
   const total = dialogues.length;
+  const fullSrc = audioUrl(base, f(dialogue, "audio", "audioFile") || null);
 
-  // Хэлэгчдийг ГАРЧ ИРЭХ дарааллаар нь зүүн/баруун талд хуваарилна (чат шиг).
   const sides = useMemo(() => {
     const map: Record<string, "l" | "r"> = {};
     let order = 0;
     for (const ln of dialogue?.lines ?? []) {
-      if (!(ln.speaker in map)) {
-        map[ln.speaker] = order % 2 === 0 ? "l" : "r";
-        order++;
-      }
+      const sp = f(ln, "speaker");
+      if (!(sp in map)) { map[sp] = order % 2 === 0 ? "l" : "r"; order++; }
     }
     return map;
   }, [dialogue]);
 
-  // === Тоглуулагчийн удирдлага ===
   const stopAll = useCallback(() => {
-    if (audioRef.current) {
-      audioRef.current.pause();
-      audioRef.current = null;
-    }
-    if (typeof window !== "undefined" && "speechSynthesis" in window) {
-      window.speechSynthesis.cancel();
-    }
-    setPlaying(null);
+    if (audioRef.current) { audioRef.current.pause(); audioRef.current = null; }
+    setPlaying(false);
   }, []);
 
-  // Аудио ФАЙЛ тоглуулах (хурд тохируулна)
-  const playFile = useCallback(
-    (key: string, src: string) => {
-      stopAll();
-      const a = new Audio(src);
-      a.playbackRate = speed;
-      audioRef.current = a;
-      setPlaying(key);
-      const clear = () =>
-        setPlaying((p) => (p === key ? null : p));
-      a.onended = () => {
-        if (audioRef.current === a) audioRef.current = null;
-        clear();
-      };
-      a.onerror = clear; // файл олдоогүй бол чимээгүй унтраана
-      void a.play().catch(clear);
-    },
-    [speed, stopAll]
-  );
-
-  // Хөтчийн хятад хоолой (TTS) — мөрд аудио файл байхгүй үед
-  const playTTS = useCallback(
-    (key: string, text: string) => {
-      stopAll();
-      if (typeof window === "undefined" || !("speechSynthesis" in window)) return;
-      const u = new SpeechSynthesisUtterance(text);
-      u.lang = "zh-CN";
-      u.rate = speed; // 0.5 = удаан, 1 = хэвийн
-      const zh = window.speechSynthesis
-        .getVoices()
-        .find((v) => v.lang?.toLowerCase().startsWith("zh"));
-      if (zh) u.voice = zh;
-      const clear = () => setPlaying((p) => (p === key ? null : p));
-      u.onend = clear;
-      u.onerror = clear;
-      setPlaying(key);
-      window.speechSynthesis.speak(u);
-    },
-    [speed, stopAll]
-  );
-
-  // Мөр тоглуулах: файл байвал файл, үгүй бол TTS. Дахин дарвал зогсоох.
-  function playLine(idx: number, line: DialogueLine) {
-    const key = `${di}:${idx}`;
-    if (playing === key) return stopAll();
-    const src = audioUrl(base, line.audio);
-    if (src) playFile(key, src);
-    else playTTS(key, line.zh);
-  }
-
-  // Бүх ярианы аудио (dialogue.audio байвал)
-  const fullKey = `full:${di}`;
-  const hasFull = Boolean(audioUrl(base, dialogue?.audio));
   function playFull() {
-    const src = audioUrl(base, dialogue?.audio);
-    if (!src) return;
-    if (playing === fullKey) return stopAll();
-    playFile(fullKey, src);
-  }
-
-  // Хурд солих → одоо тоглож буй ФАЙЛД шууд тусгана.
-  // (TTS-ийг дунд нь өөрчлөх боломжгүй — дараагийн тоглуулалтаас үйлчилнэ.)
-  function changeSpeed(s: Speed) {
-    setSpeed(s);
-    if (audioRef.current) audioRef.current.playbackRate = s;
-  }
-
-  function goPrev() {
-    if (di > 0) {
-      stopAll();
-      setDi(di - 1);
-    }
-  }
-  function goNext() {
+    if (!fullSrc) return;
+    if (playing) return stopAll();
     stopAll();
-    if (di < total - 1) setDi(di + 1);
-    else onDone();
+    const a = new Audio(fullSrc);
+    a.playbackRate = speed;
+    audioRef.current = a;
+    setPlaying(true);
+    const clear = () => setPlaying(false);
+    a.onended = () => { if (audioRef.current === a) audioRef.current = null; clear(); };
+    a.onerror = clear;
+    void a.play().catch(clear);
   }
+  function changeSpeed(s: Speed) { setSpeed(s); if (audioRef.current) audioRef.current.playbackRate = s; }
 
-  // Модулиас гарах/unmount үед бүх дууг зогсооно
+  function tapWord(e: React.MouseEvent, v: Vocab) {
+    const cont = chatRef.current; const btn = e.currentTarget as HTMLElement;
+    if (!cont) return;
+    const cr = cont.getBoundingClientRect(); const br = btn.getBoundingClientRect();
+    setTapped({ v, x: br.left - cr.left + br.width / 2, y: br.top - cr.top });
+  }
+  const clearPop = () => setTapped(null);
+
+  function goPrev() { if (di > 0) { stopAll(); clearPop(); setDi(di - 1); } }
+  function goNext() { stopAll(); clearPop(); if (di < total - 1) setDi(di + 1); else onDone(); }
+
   useEffect(() => () => stopAll(), [stopAll]);
+  useEffect(() => { stopAll(); clearPop(); }, [di, stopAll]);
 
-  // Яриа алга бол player эвдрэхгүй — шууд алгасна
   if (!dialogue) {
     return (
       <div className="bs-card">
-        <div className="bs-soon">
-          <div className="bs-soon-ic">💬</div>
-          <p>Энэ хичээлд яриа алга.</p>
-        </div>
-        <button className="bs-cta" onClick={onDone} style={{ marginTop: 4 }}>
-          Дараагийнх →
-        </button>
+        <div className="bs-soon"><div className="bs-soon-ic">💬</div><p>Энэ хичээлд яриа алга.</p></div>
+        <button className="bs-cta" onClick={onDone} style={{ marginTop: 4 }}>Дараагийнх →</button>
       </div>
     );
   }
 
   return (
     <div className="bs-card bs-dlg">
-      {/* Толгой: гарчиг + тоологч */}
       <div className="bs-vtop">
-        <div className="bs-label" style={{ margin: 0 }}>
-          <span className="bs-dot" />
-          Яриа
-        </div>
-        <span className="bs-counter">
-          {di + 1} / {total}
-        </span>
+        <div className="bs-label" style={{ margin: 0 }}><span className="bs-dot" />Яриа</div>
+        <span className="bs-counter">{di + 1} / {total}</span>
       </div>
 
-      {dialogue.title_mn && <div className="bs-dlg-title">{dialogue.title_mn}</div>}
-      {dialogue.scene_mn && <div className="bs-dlg-scene">{dialogue.scene_mn}</div>}
+      {f(dialogue, "title_mn", "title") && <div className="bs-dlg-title">{f(dialogue, "title_mn", "title")}</div>}
+      {f(dialogue, "scene_mn") && <div className="bs-dlg-scene">{f(dialogue, "scene_mn")}</div>}
 
-      {/* Хяналт: хурд сонгогч + бүх яриаг тоглуулах */}
       <div className="bs-dlg-bar">
         <div className="bs-speeds" role="group" aria-label="Тоглуулах хурд">
           {SPEEDS.map((s) => (
-            <button
-              key={s}
-              type="button"
-              className={`bs-speed ${speed === s ? "bs-on" : ""}`}
-              onClick={() => changeSpeed(s)}
-              aria-pressed={speed === s}
-            >
-              {s}×
-            </button>
+            <button key={s} type="button" className={`bs-speed ${speed === s ? "bs-on" : ""}`}
+              onClick={() => changeSpeed(s)} aria-pressed={speed === s}>{s}×</button>
           ))}
         </div>
-
-        {hasFull && (
-          <button
-            type="button"
-            className={`bs-dlg-full ${playing === fullKey ? "bs-on" : ""}`}
-            onClick={playFull}
-            aria-label={playing === fullKey ? "Зогсоох" : "Бүх яриаг сонсох"}
-          >
-            <span aria-hidden>{playing === fullKey ? "⏸" : "▶"}</span> Бүгд
+        {fullSrc && (
+          <button type="button" className={`bs-dlg-full ${playing ? "bs-on" : ""}`} onClick={playFull}
+            aria-label={playing ? "Зогсоох" : "Бүгдийг сонсох"}>
+            <span aria-hidden>{playing ? "⏸" : "▶"}</span> {playing ? "Зогсоож байна" : "Бүгдийг сонсох"}
           </button>
         )}
       </div>
 
-      {/* Чат хэлбэрийн мөрүүд */}
-      <div className="bs-chat">
-        {dialogue.lines.map((line, idx) => {
-          const side = sides[line.speaker] ?? "l";
-          const key = `${di}:${idx}`;
-          const isPlaying = playing === key;
+      <div className="bs-txt-hint">Тодорсон шинэ үг дээр дарж орчуулгыг нь хараарай.</div>
+
+      <div className="bs-chat" ref={chatRef} style={{ position: "relative" }}
+        onClick={(e) => { if (e.target === e.currentTarget) clearPop(); }}>
+        {dialogue.lines.map((line: any, idx: number) => {
+          const sp = f(line, "speaker");
+          const side = sides[sp] ?? "l";
           const prev = dialogue.lines[idx - 1];
-          const showName = !prev || prev.speaker !== line.speaker;
+          const showName = !prev || f(prev, "speaker") !== sp;
+          const toks = tokenize(f(line, "zh", "chinese"));
           return (
             <div key={idx} className={`bs-row bs-${side}`}>
               <div className="bs-bubble">
-                {showName && <div className="bs-spk">{line.speaker}</div>}
+                {showName && <div className="bs-spk">{sp}</div>}
                 <div className="bs-line">
                   <div className="bs-line-tx">
-                    <div className="bs-py">{line.pinyin}</div>
-                    <div className="bs-zh">{line.zh}</div>
-                    <div className="bs-mn">{line.mn}</div>
+                    <div className="bs-py">{f(line, "pinyin")}</div>
+                    <div className="bs-zh">
+                      {toks.map((tk, k) =>
+                        tk.t === "word" ? (
+                          <button key={k} type="button" className="bs-newword" onClick={(e) => tapWord(e, tk.v)}>{tk.s}</button>
+                        ) : (
+                          <span key={k}>{tk.s}</span>
+                        )
+                      )}
+                    </div>
+                    <div className="bs-mn">{f(line, "mn", "mongolian")}</div>
                   </div>
-                  <button
-                    type="button"
-                    className={`bs-speak ${isPlaying ? "bs-on" : ""}`}
-                    onClick={() => playLine(idx, line)}
-                    aria-label={isPlaying ? "Зогсоох" : "Сонсох"}
-                  >
-                    <span aria-hidden>{isPlaying ? "⏸" : "▶"}</span>
-                  </button>
                 </div>
               </div>
             </div>
           );
         })}
+
+        {tapped && (
+          <>
+            <div className="bs-pop-back" onClick={clearPop} />
+            <div className="bs-pop" style={{ left: tapped.x, top: tapped.y }}>
+              <div className="bs-pop-zh">{tapped.v.zh}</div>
+              {tapped.v.pinyin && <div className="bs-pop-py">{tapped.v.pinyin}</div>}
+              <div className="bs-pop-mn">{tapped.v.mn}</div>
+            </div>
+          </>
+        )}
       </div>
 
-      {/* Өмнөх / Дараагийнх */}
       <div className="bs-navrow">
-        <button className="bs-navbtn" onClick={goPrev} disabled={di === 0}>
-          ← Өмнөх
-        </button>
-        <button className="bs-navbtn" onClick={goNext}>
-          {di === total - 1 ? "Дуусгах →" : "Дараагийнх →"}
-        </button>
+        <button className="bs-navbtn" onClick={goPrev} disabled={di === 0}>← Өмнөх</button>
+        <button className="bs-navbtn" onClick={goNext}>{di === total - 1 ? "Дуусгах →" : "Дараагийнх →"}</button>
       </div>
     </div>
   );

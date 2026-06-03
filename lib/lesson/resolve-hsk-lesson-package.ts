@@ -1,3 +1,4 @@
+import { applyLessonPackageAudioUrls } from "@/lib/lesson/package-audio-resolve";
 import { parseTagFromSourceNote } from "@/lib/lesson-content-type";
 import {
   parseHskStudyContentFromLesson,
@@ -177,19 +178,101 @@ function mapGrammar(raw: unknown): HskPackageGrammarPoint[] {
   return points;
 }
 
-function inferModules(pkg: Partial<HskLessonPackage>): HskPackageModuleKey[] {
-  if (pkg.modules_enabled?.length) return pkg.modules_enabled;
+/**
+ * Standard HSK study module order for every lesson (LessonPlayer index order).
+ * Import ZIP / lesson.json may list modules differently — always normalize via
+ * `resolveModulesEnabled()`.
+ */
+export const HSK_LESSON_MODULE_ORDER: readonly HskPackageModuleKey[] = [
+  "hook",
+  "dialogues",
+  "pronunciation",
+  "texts",
+  "vocabulary",
+  "grammar",
+  "exercises_textbook",
+  "exercises_workbook",
+  "recap",
+];
 
-  const modules: HskPackageModuleKey[] = ["hook"];
-  if ((pkg.vocabulary?.length ?? 0) > 0) modules.push("vocabulary");
-  if ((pkg.dialogues?.length ?? 0) > 0) modules.push("dialogues");
-  if ((pkg.texts?.length ?? 0) > 0) modules.push("texts");
-  if (pkg.pronunciation) modules.push("pronunciation");
-  if ((pkg.grammar?.length ?? 0) > 0) modules.push("grammar");
-  if (pkg.exercises_textbook) modules.push("exercises_textbook");
-  if (pkg.exercises_workbook) modules.push("exercises_workbook");
-  if (pkg.recap) modules.push("recap");
-  return modules;
+function hasPronunciationContent(pronunciation: unknown): boolean {
+  if (!pronunciation || typeof pronunciation !== "object") return false;
+  const record = pronunciation as Record<string, unknown>;
+  if (Array.isArray(record.items) && record.items.length > 0) return true;
+  if (trim(record.teacher_mn)) return true;
+  return Object.keys(record).length > 0;
+}
+
+function hasRecapContent(recap: unknown): boolean {
+  if (!recap || typeof recap !== "object") return false;
+  return Object.keys(recap as Record<string, unknown>).length > 0;
+}
+
+function hasExerciseContent(exercises: unknown): boolean {
+  if (!exercises || typeof exercises !== "object") return false;
+  return Object.keys(exercises as Record<string, unknown>).length > 0;
+}
+
+/** True when the lesson package has learner-facing content for this module. */
+export function moduleHasContent(
+  pkg: Partial<HskLessonPackage>,
+  key: HskPackageModuleKey
+): boolean {
+  switch (key) {
+    case "hook":
+      return true;
+    case "dialogues":
+      return (pkg.dialogues?.length ?? 0) > 0;
+    case "pronunciation":
+      return hasPronunciationContent(pkg.pronunciation);
+    case "texts":
+      return (pkg.texts?.length ?? 0) > 0;
+    case "vocabulary":
+      return (pkg.vocabulary?.length ?? 0) > 0;
+    case "grammar":
+      return (pkg.grammar?.length ?? 0) > 0;
+    case "exercises_textbook":
+      return hasExerciseContent(pkg.exercises_textbook);
+    case "exercises_workbook":
+      return hasExerciseContent(pkg.exercises_workbook);
+    case "recap":
+      return hasRecapContent(pkg.recap);
+    default:
+      return false;
+  }
+}
+
+/** Apply {@link HSK_LESSON_MODULE_ORDER} and drop modules with no content. */
+export function resolveModulesEnabled(
+  pkg: Partial<HskLessonPackage>
+): HskPackageModuleKey[] {
+  const declared = pkg.modules_enabled?.length
+    ? pkg.modules_enabled
+    : [...HSK_LESSON_MODULE_ORDER];
+  const declaredSet = new Set(declared);
+
+  const ordered = HSK_LESSON_MODULE_ORDER.filter(
+    (key) => declaredSet.has(key) && moduleHasContent(pkg, key)
+  );
+
+  for (const key of declared) {
+    if (
+      !HSK_LESSON_MODULE_ORDER.includes(key) &&
+      moduleHasContent(pkg, key) &&
+      !ordered.includes(key)
+    ) {
+      ordered.push(key);
+    }
+  }
+
+  return ordered;
+}
+
+function withOrderedModules(pkg: HskLessonPackage): HskLessonPackage {
+  return {
+    ...pkg,
+    modules_enabled: resolveModulesEnabled(pkg),
+  };
 }
 
 function resolveLevel(lesson: LessonContent, teaching: Record<string, unknown> | null): string {
@@ -314,16 +397,7 @@ function buildHskLessonPackageFromLessonContent(
       mn: themeMn,
     },
     audio_base_path: trim(teaching?.audio_base_path) || undefined,
-    modules_enabled: inferModules({
-      vocabulary,
-      dialogues,
-      texts: mappedTexts,
-      grammar: mappedGrammar,
-      pronunciation: teaching?.pronunciation,
-      exercises_textbook: teaching?.exercises_textbook,
-      exercises_workbook: teaching?.exercises_workbook ?? workbook,
-      recap: teaching?.recap,
-    }),
+    modules_enabled: [],
     hook: {
       teacher_mn: teacherMn,
       warmup_mn: trim(hookRecord?.warmup_mn) || undefined,
@@ -341,7 +415,7 @@ function buildHskLessonPackageFromLessonContent(
       : undefined,
   };
 
-  return partial;
+  return withOrderedModules(partial);
 }
 
 /** Resolve Gold Standard package for schema-driven LessonPlayer. */
@@ -349,6 +423,8 @@ export function resolveHskLessonPackageFromLesson(
   lesson: LessonContent
 ): HskLessonPackage | null {
   const fromSource = extractHskLessonPackageFromSourceNote(lesson.sourceNote);
-  if (fromSource) return fromSource;
-  return buildHskLessonPackageFromLessonContent(lesson);
+  const raw = fromSource ?? buildHskLessonPackageFromLessonContent(lesson);
+  if (!raw) return null;
+  const ordered = withOrderedModules(raw);
+  return applyLessonPackageAudioUrls(ordered, lesson);
 }

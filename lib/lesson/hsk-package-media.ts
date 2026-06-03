@@ -3,6 +3,7 @@ import {
   type HskMediaImage,
 } from "@/lib/lesson/hsk-media";
 import { normalizeZipPath } from "@/lib/import/zip-path";
+import { patchSourceNotePackageAudioUrls } from "@/lib/lesson/package-audio-resolve";
 import { parseLessonSourceNote } from "@/lib/lesson/source-note-json";
 import type { TeachingImage } from "@/lib/lesson/teaching-media";
 import type { LessonContent } from "@/types/lesson-content";
@@ -192,7 +193,7 @@ export function patchSourceNoteHskMediaUploads(
 
   const data = { ...parsed.data };
   patchHskStudyMediaFromUploads(data, uploads);
-  return JSON.stringify(data);
+  return patchSourceNotePackageAudioUrls(JSON.stringify(data), uploads);
 }
 
 export function summarizeHskImageImportStatus(input: {
