@@ -111,10 +111,9 @@ export const HSK_PROFILES: Record<HskLessonProfileId, HskProfileDefinition> = {
     hskLevel: 4,
     badgeLabel: "HSK4 Dialogue + Text",
     badgeShort: "HSK4",
-    requiredSections: [
+    requiredSections: ["texts", "vocabulary", "quiz"],
+    optionalSections: [
       "warmup",
-      "texts",
-      "vocabulary",
       "notes",
       "compare",
       "textComprehensionQuestions",
@@ -125,9 +124,7 @@ export const HSK_PROFILES: Record<HskLessonProfileId, HskProfileDefinition> = {
       "workbookListening",
       "workbookReading",
       "workbookWriting",
-      "quiz",
     ],
-    optionalSections: [],
     requiresQuiz: true,
     recommendedTextCount: 5,
     recommendedTextTypes: ["dialogue", "dialogue", "dialogue", "short_text", "short_text"],

@@ -1,13 +1,21 @@
 import type { Metadata, Viewport } from "next";
-import { Geist_Mono, Noto_Sans } from "next/font/google";
+import { Geist_Mono, Noto_Sans_SC, Onest } from "next/font/google";
 import { LearnerLanguageGuard } from "@/components/learner-language-guard";
 import { PwaServiceWorkerRegister } from "@/components/pwa-service-worker-register";
 import "./globals.css";
+import "./buunduu-theme.css";
+
+const onest = Onest({
+  variable: "--font-onest",
+  subsets: ["latin", "cyrillic"],
+  weight: ["400", "500", "600", "700", "800"],
+  display: "swap",
+});
 
 /** Mongolian Cyrillic (Ө, Ү, etc.) — latin-only Geist is not sufficient for mn UI. */
-const notoSans = Noto_Sans({
-  variable: "--font-noto-sans",
-  subsets: ["latin", "cyrillic", "cyrillic-ext"],
+const notoSansSc = Noto_Sans_SC({
+  variable: "--font-noto-sc",
+  subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
   display: "swap",
 });
@@ -69,7 +77,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#059669",
+  themeColor: "#1FB85A",
   width: "device-width",
   initialScale: 1,
   maximumScale: 5,
@@ -84,7 +92,7 @@ export default function RootLayout({
   return (
     <html
       lang="mn"
-      className={`${notoSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${onest.variable} ${notoSansSc.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col font-sans">
         <LearnerLanguageGuard />

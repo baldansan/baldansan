@@ -1,0 +1,56 @@
+{
+  "profileVersion": "HSK1_LESSON_PROFILE_V1",
+  "lessonNumber": 15,
+  "lessonId": "hsk1-l15-travel",
+  "chineseTitle": "我是坐飞机来的",
+  "coreSkill": "Emphasizing time/place/manner; travel expressions",
+  "mainGrammar": [
+    "是…的 emphasis structure (intro)",
+    "来/去 direction verbs"
+  ],
+  "mainFunction": [
+    "Emphasizing time/place/manner; travel expressions"
+  ],
+  "pronunciationFocus": [
+    "的 in emphasis (light tone)"
+  ],
+  "characterFocus": [
+    "坐",
+    "飞",
+    "机",
+    "来"
+  ],
+  "workbookFocus": [
+    "section 一",
+    "section 二",
+    "section 三",
+    "section 四",
+    "section 五",
+    "section 六",
+    "section 七",
+    "section 八"
+  ],
+  "commonMongolianLearnerMistakes": [],
+  "recommendedGames": [
+    "flashcard",
+    "quiz",
+    "dialogue_practice",
+    "workbook_listening"
+  ],
+  "forbiddenGames": [],
+  "recommendedMnemonicImages": [],
+  "recommendedPracticeFlow": [
+    "teacher intro",
+    "core dialogue",
+    "vocabulary flashcards",
+    "pronunciation/grammar focus",
+    "workbook practice",
+    "quiz",
+    "recommended games"
+  ],
+  "componentGameAllowed": false,
+  "strokeOrderGameRequired": false,
+  "enrichmentAllowed": true,
+  "enrichmentRequiresSourceComplete": true,
+  "notes": "Enrichment (mnemonics, teacher copy) must not replace or contradict source. componentStatus=needs_review until verified."
+}

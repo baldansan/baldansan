@@ -208,9 +208,17 @@ export function LearnerDashboard({ hsk5LessonIds, trackLabel }: Props) {
 
       <section className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:p-6">
         <h2 className="text-lg font-semibold text-slate-900">Одоогийн курс</h2>
-        <p className="mt-2 text-sm text-slate-600">HSK5 Short Drama Chinese</p>
+        {hsk5LessonIds.length === 0 ? (
+          <p className="mt-2 text-sm text-slate-600">
+            Одоогоор хичээл алга. Import ZIP-ээр нэмнэ үү.
+          </p>
+        ) : (
+          <p className="mt-2 text-sm text-slate-600">
+            {hsk5LessonIds.length} хичээл идэвхтэй
+          </p>
+        )}
         <Link
-          href="/courses/hsk5"
+          href="/courses"
           className="mt-4 inline-flex min-h-[44px] items-center rounded-full border border-emerald-200 bg-emerald-50 px-5 py-2 text-sm font-semibold text-emerald-800 hover:bg-emerald-100"
         >
           Курсын жагсаалт

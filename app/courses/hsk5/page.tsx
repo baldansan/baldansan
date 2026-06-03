@@ -5,22 +5,20 @@ export const dynamic = "force-dynamic";
 
 export const metadata = {
   title: "HSK5 — Бөөндөө Сурцгаая",
-  description: "HSK5 Short Drama Chinese — хичээлийн жагсаалт, ахиц.",
+  description: "HSK5 хичээлийн жагсаалт, ахиц.",
 };
 
 export default async function Hsk5CoursePage() {
-  const course = await getCourseContentById("hsk5");
-  const lessons = await getPublicLessonsByCourseId("hsk5");
-
-  if (!course) {
-    return null;
-  }
+  const [course, lessons] = await Promise.all([
+    getCourseContentById("hsk5"),
+    getPublicLessonsByCourseId("hsk5"),
+  ]);
 
   return (
     <CourseDetailAppView
       courseId="hsk5"
-      title={course.title}
-      subtitle={course.subtitle}
+      title={course?.title ?? "HSK 5"}
+      subtitle={course?.subtitle ?? ""}
       lessons={lessons}
     />
   );

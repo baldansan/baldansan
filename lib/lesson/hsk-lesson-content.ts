@@ -1,3 +1,5 @@
+import { applyHsk1L01V13GoldStandard } from "@/lib/lesson/hsk1-l01-v13/apply-v13";
+import { isHsk1L01Nihao } from "@/lib/lesson/hsk1-l01-v13/is-lesson";
 import { parseTagFromSourceNote } from "@/lib/lesson-content-type";
 import { parseHskGuidedSteps, type HskGuidedStep } from "@/lib/lesson/hsk-guided-step";
 import { formatLearnerTeacherNotes } from "@/lib/lesson/format-learner-teacher-note";
@@ -26,12 +28,19 @@ import {
 } from "@/lib/lesson/hsk-study-section-resolver";
 import type { LessonContent } from "@/types/lesson-content";
 import type { VocabularyWord } from "@/types/lesson";
+import { parseHskToneExamples } from "@/lib/lesson/hsk-tone-content";
 
 export type HskToneExample = {
   label: string;
   example: string;
   pinyin: string;
   mongolian: string;
+  symbol?: string;
+  motionMn?: string;
+  howToSayMn?: string;
+  learnerHintMn?: string;
+  motionSymbol?: string;
+  toneNumber?: number;
 };
 
 export type HskDialogueLine = {
@@ -46,12 +55,36 @@ export type HskDialogue = {
   lines: HskDialogueLine[];
 };
 
+export type HskCharacterComponent = {
+  component: string;
+  nameMn?: string;
+  meaningMn?: string;
+  position?: string;
+};
+
 export type HskCharacterNote = {
   chinese: string;
   pinyin?: string;
   mongolian?: string;
   strokeNote?: string;
   mnemonic?: string;
+  structure?: string;
+  components?: HskCharacterComponent[];
+  formula?: string;
+  strokeImageUrl?: string;
+};
+
+export type HskClassroomExpression = {
+  chinese: string;
+  pinyin: string;
+  mongolian: string;
+};
+
+export type HskTeachingGoals = {
+  pronunciation: string[];
+  characters: string[];
+  functional: string[];
+  sequence: string[];
 };
 
 export type HskStudyContent = {
@@ -68,6 +101,15 @@ export type HskStudyContent = {
   guidedSteps: HskGuidedStep[];
   teacherNotes: string[];
   media: HskMediaBundle | null;
+  /** Workbook practice center sections (V13+). */
+  workbook?: import("@/lib/lesson/hsk1-l01-v13/workbook").HskWorkbookSection[];
+  /** Raw imported workbook payload — admin/debug. */
+  workbookPayload?: unknown;
+  /** Optional classroom mini-expressions. */
+  classroomExpressions?: HskClassroomExpression[];
+  /** Teacher's Book goals — internal structure. */
+  teachingGoals?: HskTeachingGoals;
+  packageVersion?: string;
   /** Dev-only section resolution metadata (when NODE_ENV=development). */
   sectionDebug?: HskStudySectionDebugMap;
 };
@@ -106,92 +148,10 @@ function uniqueStrings(values: string[]): string[] {
   return out;
 }
 
-const DEFAULT_TONE_EXAMPLES = ["mā", "má", "mǎ", "mà"] as const;
-const DEFAULT_TONE_LABELS = [
-  "1-р өнгө",
-  "2-р өнгө",
-  "3-р өнгө",
-  "4-р өнгө",
-] as const;
-const DEFAULT_TONE_MN = [
-  "өндөр, тэгш",
-  "дээшлэх",
-  "доошлоод дээшлэх",
-  "огцом буух",
-] as const;
-
 function parseToneExamples(value: unknown): HskToneExample[] {
-  const rows: HskToneExample[] = [];
-
-  const pushRow = (item: Record<string, unknown>, index: number) => {
-    const toneNum =
-      Number(item.toneNumber ?? item.tone ?? item.number ?? index + 1) || index + 1;
-    const label =
-      trim(item.label) ||
-      trim(item.titleMn) ||
-      trim(item.name) ||
-      trim(item.title) ||
-      (DEFAULT_TONE_LABELS[toneNum - 1] ?? `${toneNum}-р өнгө`);
-    const example =
-      trim(item.example) ||
-      trim(item.word) ||
-      trim(item.chinese) ||
-      trim(item.titleChinese) ||
-      (DEFAULT_TONE_EXAMPLES[toneNum - 1] ?? "");
-    const pinyin =
-      trim(item.pinyin) ||
-      trim(item.reading) ||
-      example ||
-      (DEFAULT_TONE_EXAMPLES[toneNum - 1] ?? "");
-    const mongolian =
-      trim(item.mongolian) ||
-      trim(item.mn) ||
-      trim(item.description) ||
-      trim(item.explanation) ||
-      (DEFAULT_TONE_MN[toneNum - 1] ?? "");
-    if (!example && !pinyin && !mongolian) return;
-    rows.push({
-      label,
-      example: example || pinyin,
-      pinyin,
-      mongolian,
-    });
-  };
-
-  if (Array.isArray(value)) {
-    value.forEach((item, index) => {
-      if (isRecord(item)) pushRow(item, index);
-      else if (typeof item === "string" && item.trim()) {
-        rows.push({
-          label: `${index + 1}-р өнгө`,
-          example: item.trim(),
-          pinyin: item.trim(),
-          mongolian: "",
-        });
-      }
-    });
-    return rows;
-  }
-
-  if (isRecord(value)) {
-    if (Array.isArray(value.tones)) return parseToneExamples(value.tones);
-    if (Array.isArray(value.items)) return parseToneExamples(value.items);
-    if (Array.isArray(value.examples)) return parseToneExamples(value.examples);
-    for (const [key, item] of Object.entries(value)) {
-      if (isRecord(item)) {
-        pushRow({ ...item, label: item.label ?? key }, rows.length);
-      } else if (typeof item === "string" && item.trim()) {
-        rows.push({
-          label: key,
-          example: item.trim(),
-          pinyin: item.trim(),
-          mongolian: "",
-        });
-      }
-    }
-  }
-
-  return rows;
+  const parsed = parseHskToneExamples(value);
+  if (parsed.length > 0) return parsed;
+  return [];
 }
 
 function parseToneExamplesFromRawItems(rawItems: unknown[]): HskToneExample[] {
@@ -313,6 +273,25 @@ function parseCharacterNotesFromRaw(
     const chinese =
       trim(item.chinese) || trim(item.character) || trim(item.hanzi);
     if (!chinese) return;
+
+    const rawComponents = item.components;
+    const components: HskCharacterComponent[] = [];
+    if (Array.isArray(rawComponents)) {
+      for (const row of rawComponents) {
+        if (!isRecord(row)) continue;
+        const component =
+          trim(row.component) || trim(row.radical) || trim(row.part);
+        if (!component) continue;
+        components.push({
+          component,
+          nameMn: trim(row.nameMn) || trim(row.name) || undefined,
+          meaningMn:
+            trim(row.meaningMn) || trim(row.meaning) || undefined,
+          position: trim(row.position) || undefined,
+        });
+      }
+    }
+
     notes.push({
       chinese,
       pinyin: trim(item.pinyin) || trim(item.reading) || undefined,
@@ -321,8 +300,17 @@ function parseCharacterNotesFromRaw(
         trim(item.strokeNote) ||
         trim(item.strokes) ||
         trim(item.writingNote) ||
+        trim(item.strokeOrderDescriptionMn) ||
         undefined,
       mnemonic: trim(item.mnemonic) || trim(item.hint) || undefined,
+      structure: trim(item.structure) || undefined,
+      formula: trim(item.formula) || undefined,
+      strokeImageUrl:
+        trim(item.strokeImageUrl) ||
+        trim(item.strokeImage) ||
+        trim(item.strokeOrderImageUrl) ||
+        undefined,
+      components: components.length > 0 ? components : undefined,
     });
   };
 
@@ -586,13 +574,16 @@ export function parseHskStudyContentFromLesson(
 }
 
 export function enrichLessonHskContent(lesson: LessonContent): LessonContent {
+  if (isHsk1L01Nihao(lesson)) {
+    const hskStudy = parseHskStudyContentFromLesson(lesson);
+    return applyHsk1L01V13GoldStandard({ ...lesson, hskStudy });
+  }
+
   if (!isHskStructuredLesson(lesson)) {
     return lesson;
   }
 
   const hskStudy = parseHskStudyContentFromLesson(lesson);
-  return {
-    ...lesson,
-    hskStudy,
-  };
+  const withStudy = { ...lesson, hskStudy };
+  return withStudy;
 }

@@ -1,10 +1,12 @@
-import { MobileBottomNav } from "@/components/mobile/mobile-bottom-nav";
+import BottomNav from "@/components/BottomNav";
+import type { BottomNavTab } from "@/components/BottomNav";
+import { resolveBottomNavTab } from "@/lib/bottom-nav";
 import type { MobileNavTab } from "@/lib/mobile-nav";
 import type { ReactNode } from "react";
 
 type Props = {
   children: ReactNode;
-  activeTab?: MobileNavTab;
+  activeTab?: MobileNavTab | BottomNavTab;
   showBottomNav?: boolean;
   mainClassName?: string;
 };
@@ -26,7 +28,11 @@ export function MobileAppShell({
         >
           {children}
         </main>
-        {showBottomNav ? <MobileBottomNav active={activeTab} /> : null}
+        {showBottomNav ? (
+          <div className="absolute inset-x-0 bottom-0 z-50 px-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] pt-2">
+            <BottomNav active={resolveBottomNavTab(activeTab)} />
+          </div>
+        ) : null}
       </div>
     </div>
   );

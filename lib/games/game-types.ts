@@ -46,6 +46,14 @@ export type ArrangeQuestion = {
   mongolianHint: string;
 };
 
+export type StrokeQuestionMode = "hangul" | "component" | "stroke-order";
+
+export type ComponentQuestionType =
+  | "completion"
+  | "reverse"
+  | "meaning"
+  | "structure";
+
 export type StrokeQuestion = {
   id: string;
   chinese: string;
@@ -54,6 +62,11 @@ export type StrokeQuestion = {
   prompt: string;
   correctComponent: string;
   options: string[];
-  /** hangul = syllable construction; hanzi = Chinese stroke (default). */
-  mode?: "hangul" | "hanzi";
+  /** hangul = Korean syllable construction; component = 偏旁; stroke-order = зураасны дараалал. */
+  mode?: StrokeQuestionMode;
+  questionType?: ComponentQuestionType;
+  /** e.g. 亻 + ? = 休 */
+  formulaPrompt?: string;
+  explanation?: string;
+  structure?: string;
 };

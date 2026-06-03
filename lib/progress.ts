@@ -470,7 +470,12 @@ export async function markLessonStartedSmart(lessonId: string): Promise<void> {
   }
 }
 
-export async function markLessonCompletedSmart(lessonId: string): Promise<void> {
+export type { LessonReviewEnqueueOptions } from "@/lib/reviews/types";
+
+export async function markLessonCompletedSmart(
+  lessonId: string,
+  reviewOptions?: import("@/lib/reviews/types").LessonReviewEnqueueOptions
+): Promise<void> {
   markLessonCompleted(lessonId);
 
   const { getCurrentUser } = await import("@/lib/supabase/auth");
@@ -488,6 +493,16 @@ export async function markLessonCompletedSmart(lessonId: string): Promise<void> 
       "[progress] Supabase lesson completed write failed; local saved.",
       error
     );
+  }
+
+  if (reviewOptions) {
+    const { enqueueLessonReviews } = await import(
+      "@/lib/reviews/enqueue-lesson-reviews"
+    );
+    const enqueue = await enqueueLessonReviews(user.id, lessonId, reviewOptions);
+    if (enqueue.error) {
+      console.warn("[reviews] Lesson review enqueue failed.", enqueue.error);
+    }
   }
 }
 

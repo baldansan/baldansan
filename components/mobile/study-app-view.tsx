@@ -67,11 +67,11 @@ export function StudyAppView({ allLessons }: Props) {
       />
 
       <div className="app-course-card mb-5 p-4">
-        <p className="text-xs font-semibold uppercase tracking-wide text-orange-100">
+        <p className="text-xs font-semibold uppercase tracking-wide text-white/70">
           {progressLabel} явц
         </p>
         <p className="mt-1 text-2xl font-bold">{progressPercent}%</p>
-        <p className="text-sm text-orange-50">
+        <p className="text-sm text-white/90">
           {completedCount}/{lessons.length} хичээл дууссан
         </p>
         <div className="mt-3 h-2.5 overflow-hidden rounded-full bg-white/25">
@@ -90,6 +90,18 @@ export function StudyAppView({ allLessons }: Props) {
             </p>
             <p className="mt-0.5 text-xs text-[var(--app-muted)]">
               Сонгосон хэлний сурсан болон давтах үгс
+            </p>
+          </div>
+          <span className="text-lg text-[var(--app-muted)]">›</span>
+        </MobileCard>
+      </Link>
+
+      <Link href="/kanji" className="mb-5 block">
+        <MobileCard className="flex items-center justify-between gap-3">
+          <div>
+            <p className="font-semibold text-[var(--app-text)]">Үсэг · ханз</p>
+            <p className="mt-0.5 text-xs text-[var(--app-muted)]">
+              Ханз, ханз бичих дадлага
             </p>
           </div>
           <span className="text-lg text-[var(--app-muted)]">›</span>

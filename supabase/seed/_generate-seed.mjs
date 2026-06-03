@@ -1,7 +1,12 @@
 /**
  * One-off generator: node supabase/seed/_generate-seed.mjs
- * Not part of the app; data mirrors content/courses/hsk5/lessons/lesson-{1,2,3}.ts
+ * DISABLED: local demo lessons removed; use Admin ZIP import instead.
  */
+console.error(
+  "Demo HSK5 seed generator is disabled. Import lessons via Admin → Import ZIP."
+);
+process.exit(1);
+
 import { writeFileSync } from "fs";
 import { fileURLToPath } from "url";
 import { dirname, join } from "path";

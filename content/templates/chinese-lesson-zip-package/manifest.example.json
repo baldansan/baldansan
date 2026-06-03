@@ -1,11 +1,18 @@
 {
-  "packageVersion": "1.0",
-  "courseId": "hsk5",
-  "lessonId": "hsk5-l01",
+  "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+  "courseType": "chinese-hsk",
+  "courseId": "hsk4",
+  "lessonId": "hsk4-l01",
+  "hskLevel": 4,
+  "lessonNumber": 1,
+  "lessonProfile": "hsk4-dialogue-shorttext-exam-workbook",
   "language": "zh-MN",
   "targetLanguage": "zh",
   "uiLanguage": "mn",
-  "title": "HSK5 Lesson 01",
-  "mongolianTitle": "HSK5 — 1-р хичээл",
-  "source": "Chinese/HSK ZIP template"
+  "title": "HSK4A Lesson 01",
+  "mongolianTitle": "HSK4A 1-р хичээл — Энгийн хайр",
+  "source": {
+    "textbook": "HSK Standard Course 4",
+    "workbook": "HSK Standard Workbook 4"
+  }
 }

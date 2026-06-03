@@ -4,23 +4,32 @@ import { useRouter } from "next/navigation";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { AdminPreviewBanner } from "@/components/admin-preview-banner";
 import {
+  CharactersLessonCard,
   CommonMistakesCard,
   DialoguePracticeCard,
   KeyPhraseCard,
   LessonCompleteCard,
+  PhraseBreakdownCard,
   PracticeMenuCard,
   PinyinPracticeCard,
   TeacherSpeechCard,
   TonePracticeCard,
+  ToneSandhiCard,
   GuidedStepCard,
   HskOptionalVideoInline,
   VocabularyFlashcardPreview,
 } from "@/components/lesson/hsk-player/hsk-player-cards";
+import { LessonProgressHeader } from "@/components/lesson-modules/shared/lesson-progress-header";
+import { PageTransition } from "@/components/motion/page-transition";
 import { lessonPlayerPrimaryBtnClass } from "@/components/lesson-player/lesson-player-shell";
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
 import { buildHskPlayerContent } from "@/lib/lesson/hsk-player/build-hsk-player-content";
 import { buildHskPlayerStepPlanFromLesson } from "@/lib/lesson/hsk-player/build-hsk-guided-steps";
 import type { HskGuidedStep } from "@/lib/lesson/hsk-guided-step";
+import {
+  parseHskToneItems,
+  parseToneItemsFromGuidedStep,
+} from "@/lib/lesson/hsk-tone-content";
 import type { HskGuidedStepMediaRef } from "@/lib/lesson/hsk-media";
 import { HSK_PLAYER } from "@/lib/lesson/hsk-player/hsk-player-theme";
 import { lessonPreviewPath } from "@/lib/lesson-publish";
@@ -87,6 +96,10 @@ export function HskGuidedLessonPlayer({
     adminPreview,
     subpath: "quiz",
   });
+  const workbookHref = lessonPreviewPath(lesson.id, {
+    adminPreview,
+    subpath: "workbook",
+  });
   const detailHref = lessonPreviewPath(lesson.id, { adminPreview });
   const nextHref = nextLessonId
     ? lessonPreviewPath(nextLessonId, { adminPreview })
@@ -134,8 +147,8 @@ export function HskGuidedLessonPlayer({
     }
   }, [stepIndex, totalSteps, lesson.id]);
 
-  const progressPercent = Math.round(((stepIndex + 1) / totalSteps) * 100);
   const isLastStep = stepIndex >= totalSteps - 1;
+  const stepTransitionKey = `${stepIndex}-${currentStep?.type ?? "none"}`;
 
   if (!hydrated) {
     return (
@@ -156,46 +169,17 @@ export function HskGuidedLessonPlayer({
       {adminPreview ? <AdminPreviewBanner /> : null}
 
       <div className="flex min-h-[calc(100dvh-2rem)] flex-col pb-4">
-        <header className="mb-3 shrink-0">
-          <div className="flex items-center gap-2">
-            <button
-              type="button"
-              onClick={handleClose}
-              className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white text-lg shadow-sm ring-1 ring-slate-200"
-              aria-label="Буцах"
-            >
-              ←
-            </button>
-            <div className="min-w-0 flex-1">
-              <p className="truncate text-sm font-bold" style={{ color: HSK_PLAYER.text }}>
-                {lesson.title}
-              </p>
-              {lesson.chineseTitle ? (
-                <p className="truncate text-xs" style={{ color: HSK_PLAYER.muted }}>
-                  {lesson.chineseTitle}
-                </p>
-              ) : null}
-              <div className="mt-2 h-2 overflow-hidden rounded-full bg-slate-200">
-                <div
-                  className="h-full rounded-full transition-all duration-300"
-                  style={{ width: `${progressPercent}%`, backgroundColor: HSK_PLAYER.primary }}
-                />
-              </div>
-              <p className="mt-1 text-center text-[11px] font-semibold" style={{ color: HSK_PLAYER.muted }}>
-                Алхам {stepIndex + 1} / {totalSteps}
-              </p>
-            </div>
-            <button
-              type="button"
-              onClick={handleRestart}
-              className="shrink-0 text-xs font-medium text-slate-500 hover:text-emerald-600"
-            >
-              ↺
-            </button>
-          </div>
-        </header>
+        <LessonProgressHeader
+          title={lesson.title}
+          subtitle={lesson.chineseTitle ?? undefined}
+          stepIndex={stepIndex}
+          totalSteps={totalSteps}
+          onBack={handleClose}
+          onRestart={handleRestart}
+        />
 
         <div className="min-h-0 flex-1 overflow-y-auto overflow-x-hidden">
+          <PageTransition transitionKey={stepTransitionKey}>
           {currentStep?.type === "teacher-intro" ? (
             <TeacherSpeechCard
               title={currentStep.titleMn || "Багшийн тайлбар"}
@@ -250,16 +234,12 @@ export function HskGuidedLessonPlayer({
 
           {currentStep?.type === "tones" ? (
             <TonePracticeCard
-              tones={
-                currentStep.examples.length > 0
-                  ? currentStep.examples.map((row, index) => ({
-                      label: row.label ?? `${index + 1}-р өнгө`,
-                      example: row.chinese ?? row.pinyin ?? "",
-                      pinyin: row.pinyin ?? row.chinese ?? "",
-                      mongolian: row.mongolian ?? "",
-                    }))
-                  : content.tones
-              }
+              tones={(() => {
+                const fromStep = parseToneItemsFromGuidedStep(currentStep);
+                if (fromStep.length > 0) return fromStep;
+                return parseHskToneItems(content.tones);
+              })()}
+              layout={currentStep.toneLayout}
               toneNote={currentStep.teacherSpeechMn || content.toneNote}
               toneWarning={content.toneWarning}
               media={content.study.media}
@@ -306,8 +286,32 @@ export function HskGuidedLessonPlayer({
             />
           ) : null}
 
-          {currentStep?.type === "characters" ||
-          currentStep?.type === "content" ? (
+          {currentStep?.type === "phrase-breakdown" ? (
+            <PhraseBreakdownCard
+              step={currentStep}
+              media={content.study.media}
+              teachingImages={lesson.teachingImages}
+            />
+          ) : null}
+
+          {currentStep?.type === "tone-sandhi" ? (
+            <ToneSandhiCard
+              step={currentStep}
+              media={content.study.media}
+              teachingImages={lesson.teachingImages}
+            />
+          ) : null}
+
+          {currentStep?.type === "characters" ? (
+            <CharactersLessonCard
+              step={currentStep}
+              media={content.study.media}
+              teachingImages={lesson.teachingImages}
+              lessonId={routeLessonId}
+            />
+          ) : null}
+
+          {currentStep?.type === "content" ? (
             <GuidedStepCard
               step={currentStep}
               media={content.study.media}
@@ -319,7 +323,12 @@ export function HskGuidedLessonPlayer({
             <PracticeMenuCard
               vocabHref={vocabHref}
               quizHref={quizHref}
-              lessonId={lesson.id}
+              lessonId={routeLessonId}
+              workbookHref={
+                (lesson.hskStudy?.workbook?.length ?? 0) > 0
+                  ? workbookHref
+                  : undefined
+              }
             />
           ) : null}
 
@@ -338,6 +347,7 @@ export function HskGuidedLessonPlayer({
           ) : null}
 
           <HskOptionalVideoInline lesson={lesson} adminPreview={adminPreview} />
+          </PageTransition>
         </div>
 
         {!isLastStep ? (

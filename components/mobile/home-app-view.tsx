@@ -8,6 +8,7 @@ import {
   languageTrackLabel,
   resolveDefaultChipForLanguage,
 } from "@/lib/language-track";
+import { ReviewDueBadge } from "@/components/review/review-due-badge";
 import { MobileCard } from "@/components/mobile/mobile-card";
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
 import { lessonPath } from "@/lib/content";
@@ -166,6 +167,7 @@ export function HomeAppView({ catalog, defaultChipId }: Props) {
           {streak != null && streak > 0 ? (
             <span className="app-stat-pill app-stat-pill-accent">🔥 {streak} өдөр</span>
           ) : null}
+          <ReviewDueBadge />
           <span className="app-stat-pill">✓ {completedCount} хичээл</span>
           <span className="app-stat-pill">{progressPercent}% явц</span>
         </div>
@@ -174,7 +176,7 @@ export function HomeAppView({ catalog, defaultChipId }: Props) {
       {activeCourse?.available && lessonIds.length > 0 ? (
         <Link href={continueHref} className="mb-4 block min-h-[44px]">
           <MobileCard className="flex items-center gap-3 !p-3.5 active:bg-slate-50">
-            <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-orange-400 to-emerald-500 text-lg text-white shadow-sm">
+            <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-emerald-400 to-emerald-600 text-lg text-white shadow-sm">
               ▶
             </div>
             <div className="min-w-0 flex-1">
@@ -249,9 +251,10 @@ export function HomeAppView({ catalog, defaultChipId }: Props) {
         {timelineLessons.length === 0 ? (
           <MobileCard className="text-center !py-6">
             <p className="text-sm text-[var(--app-muted)]">
-              {activeCourse?.available
-                ? "Энэ курс дээр хичээл байхгүй байна."
-                : "Энэ курс удахгүй нээгдэнэ."}
+              {activeCourse &&
+              ["hsk1", "hsk4a", "hsk4b"].includes(activeCourse.chipId)
+                ? "Энэ курс удахгүй нээгдэнэ."
+                : "Одоогоор хичээл алга. Import ZIP-ээр нэмнэ үү."}
             </p>
           </MobileCard>
         ) : (

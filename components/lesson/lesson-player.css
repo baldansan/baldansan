@@ -1,0 +1,132 @@
+/* components/lesson/lesson-player.css
+   Бөөндөө Сурцгаая — хичээлийн player-ийн загвар.
+   Бүх класс "bs-" угтвартай тул чиний бусад CSS/Tailwind-тэй мөргөлдөхгүй.
+   Аппдаа нэг л удаа импортлоно (жишээ нь LessonPlayer.tsx дотор). */
+
+.bs-root{
+  /* brand tokens */
+  --bs-green:#1FB85A; --bs-green-700:#149247; --bs-green-50:#EAF8F0; --bs-green-100:#D6F1E0;
+  --bs-amber:#F2A93B; --bs-amber-50:#FDF4E5; --bs-amber-100:#F8E6C4;
+  --bs-ink:#0F1B14; --bs-ink-2:#3C4A41; --bs-muted:#7E8B83; --bs-line:#E7ECE8;
+  --bs-bg:#EEF2EF; --bs-card:#FFFFFF;
+  --bs-radius:22px; --bs-radius-sm:14px;
+  --bs-shadow:0 1px 2px rgba(15,27,20,.04), 0 8px 24px rgba(15,27,20,.06);
+  --bs-ui:'Onest',-apple-system,BlinkMacSystemFont,sans-serif;
+  --bs-zh:'Noto Sans SC',sans-serif;
+
+  font-family:var(--bs-ui);
+  color:var(--bs-ink);
+  -webkit-font-smoothing:antialiased;
+  max-width:480px;
+  margin:0 auto;
+  padding:8px 12px 28px;
+  line-height:1.5;
+}
+.bs-root *{box-sizing:border-box}
+
+/* top bar + progress */
+.bs-topbar{display:flex;align-items:center;gap:10px;padding:6px 4px 14px}
+.bs-iconbtn{width:40px;height:40px;border-radius:13px;border:1px solid var(--bs-line);background:var(--bs-card);
+  display:grid;place-items:center;cursor:pointer;box-shadow:var(--bs-shadow);font-size:17px;color:var(--bs-ink-2);flex:none;transition:transform .15s ease}
+.bs-iconbtn:active{transform:scale(.94)}
+.bs-ttl{flex:1;min-width:0}
+.bs-ttl h1{font-size:15px;font-weight:700;letter-spacing:-.01em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin:0}
+.bs-ttl p{font-size:12px;color:var(--bs-muted);font-family:var(--bs-zh);margin:0}
+.bs-progress{height:4px;background:var(--bs-line);border-radius:99px;margin:0 4px 18px;overflow:hidden}
+.bs-progress > span{display:block;height:100%;background:linear-gradient(90deg,var(--bs-green),#46d07c);border-radius:99px;transition:width .35s ease}
+
+/* card */
+.bs-card{background:var(--bs-card);border-radius:var(--bs-radius);padding:20px;box-shadow:var(--bs-shadow);margin:0 4px 16px;
+  animation:bs-fadeUp .45s cubic-bezier(.2,.7,.2,1) both}
+.bs-label{font-size:11px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--bs-green-700);
+  margin-bottom:12px;display:flex;align-items:center;gap:7px}
+.bs-label .bs-dot{width:6px;height:6px;border-radius:99px;background:var(--bs-green)}
+@keyframes bs-fadeUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+
+/* overview */
+.bs-hero h2{font-size:13px;font-weight:600;color:var(--bs-muted);letter-spacing:.02em;margin:0}
+.bs-hero .bs-zh-title{font-family:var(--bs-zh);font-weight:900;font-size:34px;letter-spacing:.02em;margin:2px 0}
+.bs-hero .bs-mn-title{font-size:19px;font-weight:700;letter-spacing:-.01em}
+.bs-hero .bs-py{color:var(--bs-green-700);font-size:14px;font-weight:600;margin-top:3px}
+
+.bs-teacher{display:flex;gap:12px;align-items:flex-start;margin-top:18px;background:var(--bs-amber-50);
+  border:1px solid var(--bs-amber-100);border-radius:18px;padding:14px}
+.bs-mascot{width:42px;height:42px;border-radius:13px;flex:none;
+  background:radial-gradient(circle at 35% 30%, #FFD389, var(--bs-amber));
+  display:grid;place-items:center;font-size:22px;box-shadow:0 4px 12px rgba(242,169,59,.3)}
+.bs-teacher .bs-who{font-size:11px;font-weight:700;color:#B9791B;text-transform:uppercase;letter-spacing:.06em;margin-bottom:3px}
+.bs-teacher p{font-size:13.5px;color:var(--bs-ink-2);line-height:1.55;margin:0}
+
+.bs-learn-title{font-size:13px;font-weight:700;margin:20px 0 10px}
+.bs-chips{display:flex;flex-wrap:wrap;gap:8px}
+.bs-chip{display:flex;align-items:center;gap:7px;background:var(--bs-green-50);border:1px solid var(--bs-green-100);
+  color:var(--bs-green-700);font-size:12.5px;font-weight:600;padding:7px 12px;border-radius:99px}
+.bs-chip .bs-n{font-weight:800}
+
+.bs-steps{margin-top:22px;display:flex;flex-direction:column;gap:2px}
+.bs-step{display:flex;align-items:center;gap:14px;padding:12px 4px;position:relative}
+.bs-step:not(:last-child)::after{content:"";position:absolute;left:21px;top:40px;bottom:-2px;width:2px;background:var(--bs-line)}
+.bs-step .bs-s-ic{width:42px;height:42px;border-radius:13px;flex:none;display:grid;place-items:center;font-size:18px;
+  background:var(--bs-green-50);color:var(--bs-green-700);border:1px solid var(--bs-green-100);z-index:1}
+.bs-step .bs-s-tx{flex:1}
+.bs-step .bs-s-tx b{font-size:14.5px;font-weight:700;display:block}
+.bs-step .bs-s-tx span{font-size:12px;color:var(--bs-muted)}
+.bs-step .bs-s-go{color:var(--bs-muted);font-size:18px}
+.bs-step-btn {
+  width: 100%;
+  border: none;
+  background: transparent;
+  font-family: inherit;
+  text-align: left;
+  cursor: pointer;
+  transition: transform .12s ease, background .15s ease;
+}
+.bs-step-btn:hover { background: var(--bs-green-50); }
+.bs-step-btn:active { transform: scale(.99); }
+
+/* primary button */
+.bs-cta{display:block;width:calc(100% - 8px);margin:6px 4px 0;border:none;cursor:pointer;background:var(--bs-green);color:#fff;
+  font-family:var(--bs-ui);font-weight:700;font-size:15.5px;padding:16px;border-radius:17px;
+  box-shadow:0 8px 20px rgba(31,184,90,.28);transition:transform .15s ease, box-shadow .15s ease}
+.bs-cta:active{transform:scale(.985)}
+.bs-cta:disabled{opacity:.4;cursor:default;box-shadow:none}
+
+/* vocabulary */
+.bs-vtop{display:flex;justify-content:space-between;align-items:center;margin-bottom:4px}
+.bs-counter{font-size:12px;font-weight:700;color:var(--bs-green-700);background:var(--bs-green-50);padding:4px 10px;border-radius:99px}
+.bs-vcard{text-align:center;padding:26px 18px 22px;border:1px solid var(--bs-line);border-radius:18px;margin-top:12px;
+  background:linear-gradient(180deg,#fff,#FCFDFC)}
+.bs-vcard .bs-hanzi{font-family:var(--bs-zh);font-weight:900;font-size:52px;letter-spacing:.04em;line-height:1}
+.bs-vcard .bs-vpy{color:var(--bs-green-700);font-weight:600;font-size:18px;margin-top:10px}
+.bs-vcard .bs-vmn{font-size:16px;color:var(--bs-ink-2);margin-top:6px;font-weight:500}
+.bs-vcard .bs-pos{display:inline-block;margin-top:10px;font-size:11px;color:var(--bs-muted);border:1px solid var(--bs-line);padding:3px 10px;border-radius:99px}
+.bs-vcard .bs-beyond{display:inline-block;margin-top:10px;margin-left:6px;font-size:11px;color:#B9791B;background:var(--bs-amber-50);border:1px solid var(--bs-amber-100);padding:3px 10px;border-radius:99px}
+
+.bs-example{margin-top:16px;padding:14px;border-radius:14px;background:var(--bs-green-50);text-align:left;display:flex;gap:11px;align-items:flex-start}
+.bs-example .bs-ex-zh{font-family:var(--bs-zh);font-size:16px;font-weight:500;line-height:1.4}
+.bs-example .bs-ex-py{font-size:11.5px;color:var(--bs-green-700);font-weight:600;margin-bottom:2px}
+.bs-example .bs-ex-mn{font-size:12.5px;color:var(--bs-ink-2);margin-top:4px}
+
+.bs-speak{width:38px;height:38px;border-radius:11px;flex:none;display:grid;place-items:center;background:#fff;
+  border:1px solid var(--bs-green-100);color:var(--bs-green-700);cursor:pointer;font-size:17px;transition:transform .15s}
+.bs-speak:active{transform:scale(.9)}
+.bs-speak.bs-lg{width:54px;height:54px;border-radius:16px;font-size:22px;margin:16px auto 0}
+
+.bs-vbtns{display:flex;gap:9px;margin-top:16px}
+.bs-vbtn{flex:1;border:1px solid var(--bs-line);background:#fff;border-radius:14px;padding:13px;
+  font-family:var(--bs-ui);font-weight:700;font-size:14px;cursor:pointer;color:var(--bs-ink);transition:transform .15s,background .15s,border-color .15s}
+.bs-vbtn:active{transform:scale(.97)}
+.bs-vbtn.bs-know{background:var(--bs-green);color:#fff;border-color:var(--bs-green)}
+.bs-vbtn.bs-again{color:#B9791B;background:var(--bs-amber-50);border-color:var(--bs-amber-100)}
+
+/* nav row (prev/next within a module/player) */
+.bs-navrow{display:flex;gap:9px;margin:6px 4px 0}
+.bs-navbtn{flex:1;border:1px solid var(--bs-line);background:#fff;border-radius:14px;padding:13px;
+  font-family:var(--bs-ui);font-weight:700;font-size:14px;cursor:pointer;color:var(--bs-ink-2);transition:transform .15s}
+.bs-navbtn:active{transform:scale(.98)}
+.bs-navbtn:disabled{opacity:.4;cursor:default}
+
+/* coming soon placeholder */
+.bs-soon{text-align:center;padding:30px 18px;color:var(--bs-muted)}
+.bs-soon .bs-soon-ic{font-size:34px}
+.bs-soon p{font-size:13px;margin-top:8px}

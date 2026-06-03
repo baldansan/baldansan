@@ -1,6 +1,10 @@
 import { isPrelessonPackage } from "@/lib/admin/lesson-package-type";
 import { isTextbookContent } from "@/lib/lesson-content-type";
 import { inferLessonLanguage } from "@/lib/language-track";
+import {
+  parseHskStudyContentFromLesson,
+  type HskCharacterNote,
+} from "@/lib/lesson/hsk-lesson-content";
 import type { LessonContent } from "@/types/lesson-content";
 import type { GameVocabItem } from "@/lib/games/game-types";
 import { toGameVocabItem } from "@/lib/games/game-data-core";
@@ -35,16 +39,16 @@ const CHINESE_LABELS: GameLabels = {
   missingWordDesc: "Дутуу үгийг бөглөж өгүүлбэр гүйцээ",
   arrangeTitle: "Дараалал",
   arrangeDesc: "Үсгийг зөв дараалалд оруулах",
-  strokeTitle: "Дутуу зураас",
-  strokeDesc: "Үсгийн дутуу зураасыг сонго",
+  strokeTitle: "Дутуу бүрдэл",
+  strokeDesc: "Ханзны бүтэц / 偏旁 таних",
   targetScriptLabel: "Хятад",
   levelLabel: "HSK",
   strokeEmptyMessage:
-    "Энэ хичээлд ханзны бүтэц тоглоом үүсгэхэд хангалттай үг алга.",
+    "Энэ хичээлд ханзны бүтэц тоглоом үүсгэхэд хангалттай өгөгдөл алга.",
   arrangeEmptyMessage: "Энэ тоглоомд example sentence хэрэгтэй.",
   missingEmptyMessage:
     "Энэ тоглоомд example sentence хэрэгтэй. Үг бүрт жишээ өгүүлбэр нэмэгдсэн эсэхийг шалгана уу.",
-  strokeHint: "Дутуу зураас / ханзны бүтэц тоглоом",
+  strokeHint: "偏旁 / зураасны дараалал — ханзны бүтэц таних",
 };
 
 const KOREAN_LABELS: GameLabels = {
@@ -86,6 +90,7 @@ export type GameLessonContext = {
   isPrelesson: boolean;
   isTextbook: boolean;
   labels: GameLabels;
+  hskCharacterNotes: HskCharacterNote[];
 };
 
 export function resolveGameLabels(
@@ -101,6 +106,8 @@ export function buildGameLessonContext(lesson: LessonContent): GameLessonContext
   const isKorean = inferLessonLanguage(lesson) === "ko";
   const isPrelesson = isPrelessonPackage(lesson);
   const isTextbook = isTextbookContent(lesson);
+  const hskStudy =
+    lesson.hskStudy ?? parseHskStudyContentFromLesson(lesson);
 
   return {
     vocabulary: lesson.vocabulary.map(toGameVocabItem),
@@ -110,6 +117,7 @@ export function buildGameLessonContext(lesson: LessonContent): GameLessonContext
     isPrelesson,
     isTextbook,
     labels: resolveGameLabels(isKorean, isPrelesson),
+    hskCharacterNotes: hskStudy.characterNotes,
   };
 }
 
@@ -164,5 +172,6 @@ export function emptyGameLessonContext(): GameLessonContext {
     isPrelesson: false,
     isTextbook: false,
     labels: CHINESE_LABELS,
+    hskCharacterNotes: [],
   };
 }

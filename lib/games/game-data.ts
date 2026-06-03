@@ -16,6 +16,7 @@ import {
   buildKoreanTranslateItems,
 } from "@/lib/games/korean-game-data";
 import { pickSameCategoryDistractors } from "@/lib/quiz/smart-options";
+import { buildHanziStrokeGameItems } from "@/lib/games/hanzi-stroke-game";
 import type {
   ArrangeQuestion,
   GameVocabItem,
@@ -121,10 +122,6 @@ function pickVocabDistractors(
   return pickSameCategoryDistractors(vocabulary, target, count, field);
 }
 
-function pickDistractors(pool: string[], correct: string, count: number): string[] {
-  const others = shuffleArray(pool.filter((v) => v !== correct));
-  return others.slice(0, count);
-}
 
 export function buildTranslateGameItems(
   vocabulary: GameVocabItem[],
@@ -228,12 +225,14 @@ export function buildArrangeGameItems(
   });
 }
 
-const STROKE_COMPONENTS = ["氵", "木", "口", "心", "女", "子", "人", "手", "日", "月"];
 
 export function buildStrokeGameItems(
   vocabulary: GameVocabItem[],
   maxQuestions = 6,
-  context?: Pick<GameLessonContext, "isKorean" | "isPrelesson">
+  context?: Pick<
+    GameLessonContext,
+    "isKorean" | "isPrelesson" | "hskCharacterNotes"
+  >
 ): StrokeQuestion[] {
   if (context?.isKorean) {
     return buildHangulConstructionItems(
@@ -245,25 +244,11 @@ export function buildStrokeGameItems(
     );
   }
 
-  const usable = vocabulary.filter((w) => w.chinese && w.chinese.length >= 1);
-  if (usable.length === 0) return [];
-
-  return shuffleArray(usable.slice(0, maxQuestions)).map((w) => {
-    const char = [...w.chinese][0] ?? w.chinese;
-    const correct =
-      STROKE_COMPONENTS.find((c) => char.includes(c)) ?? STROKE_COMPONENTS[0];
-    const distractors = pickDistractors(STROKE_COMPONENTS, correct, 3);
-    return {
-      id: w.id,
-      chinese: char,
-      pinyin: w.pinyin,
-      mongolian: w.mongolian,
-      prompt: `${char} ханзны бүтэц`,
-      correctComponent: correct,
-      options: shuffleArray([correct, ...distractors]),
-      mode: "hanzi",
-    };
-  });
+  return buildHanziStrokeGameItems(
+    vocabulary,
+    maxQuestions,
+    context?.hskCharacterNotes ?? []
+  );
 }
 
 export function hasEnoughVocabForMatch(vocabulary: GameVocabItem[]): boolean {

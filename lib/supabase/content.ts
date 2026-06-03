@@ -1,4 +1,3 @@
-import { hsk5Course } from "@/content/courses/hsk5";
 import {
   canonicalLessonId,
   lessonIdQueryCandidates,
@@ -314,30 +313,21 @@ function buildCourseContent(
   lessons: LessonContent[]
 ): CourseContent {
   const totalVocab = lessons.reduce((sum, l) => sum + l.vocabularyCount, 0);
-  const localFallback = coursesContentFallback(course.id);
-
   return {
     id: course.id,
     title: course.title,
-    subtitle: course.description ?? localFallback?.subtitle ?? "",
+    subtitle: course.description ?? "",
     stats: [
       { label: `${lessons.length} lessons` },
       { label: `${totalVocab} vocabulary` },
-      ...(localFallback?.stats.slice(2) ?? [
-        { label: "Shadowing practice" },
-        { label: "Quiz included" },
-      ]),
+      { label: "Shadowing practice" },
+      { label: "Quiz included" },
     ],
     progress: {
       completed: 0,
-      total: lessons.length > 0 ? lessons.length : (localFallback?.progress.total ?? 0),
+      total: lessons.length,
     },
   };
-}
-
-function coursesContentFallback(courseId: string): CourseContent | undefined {
-  if (courseId === "hsk5") return hsk5Course;
-  return undefined;
 }
 
 export async function getSupabaseCourseById(

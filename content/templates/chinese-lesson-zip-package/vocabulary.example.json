@@ -1,0 +1,22 @@
+[
+  {
+    "chinese": "印象",
+    "pinyin": "yìnxiàng",
+    "mongolian": "сэтгэгдэл, дүр төрх",
+    "hskLevel": "HSK4",
+    "exampleChinese": "在我的印象中，他一直是个很幽默的人。",
+    "exampleMongolian": "Миний сэтгэгдэлд тэр үргэлж хөгжилтэй хүн байсан.",
+    "tags": ["lesson_vocab"],
+    "sourceRef": "TB4-L01-V01"
+  },
+  {
+    "chinese": "共同",
+    "pinyin": "gòngtóng",
+    "mongolian": "хамтын, нийтлэг",
+    "hskLevel": "HSK4",
+    "exampleChinese": "他们两个人共同努力，终于完成了工作。",
+    "exampleMongolian": "Тэд хоёр хамтын хүчин чармайлтаар ажлаа эцэст нь дуусгалаа.",
+    "tags": ["lesson_vocab"],
+    "sourceRef": "TB4-L01-V02"
+  }
+]

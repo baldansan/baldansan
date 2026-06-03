@@ -8,6 +8,7 @@ import {
   getPublicLessonSummariesByCourseId,
 } from "@/lib/content";
 import { isHskStructuredLesson } from "@/lib/lesson/hsk-lesson-content";
+import { resolveHskLessonPackageFromLesson } from "@/lib/lesson/resolve-hsk-lesson-package";
 import { toLessonListSummary } from "@/lib/lesson/lesson-summary";
 import { LessonWatchClient } from "./watch-client";
 
@@ -52,8 +53,12 @@ export default async function LessonWatchPage({
   }
 
   const { lesson, adminPreview } = result;
+  const lessonPackage = isHskStructuredLesson(lesson)
+    ? resolveHskLessonPackageFromLesson(lesson)
+    : null;
+
   let nextLessonId: string | null = null;
-  if (isHskStructuredLesson(lesson)) {
+  if (isHskStructuredLesson(lesson) && !lessonPackage) {
     const courseLessons = adminPreview
       ? (await getLessonsByCourseId(lesson.courseId)).map(toLessonListSummary)
       : await getPublicLessonSummariesByCourseId(lesson.courseId);
@@ -63,6 +68,7 @@ export default async function LessonWatchPage({
   return (
     <LessonWatchClient
       lesson={lesson}
+      lessonPackage={lessonPackage}
       adminPreview={adminPreview}
       nextLessonId={nextLessonId}
     />

@@ -1,6 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { AnimatedProgressBar } from "@/components/motion/animated-progress-bar";
+import { CountUp } from "@/components/motion/count-up";
 import { MobileCard } from "@/components/mobile/mobile-card";
 import { LocalProgressNote } from "@/components/local-progress-note";
 import {
@@ -39,14 +41,9 @@ export function LessonProgressCard({ lessonId }: Props) {
       <div className="mt-2">
         <span className="app-stat-pill">{lessonStatusLabel(status)}</span>
       </div>
-      <div className="mt-3 h-2 overflow-hidden rounded-full bg-slate-100">
-        <div
-          className="h-full rounded-full bg-[var(--app-primary)] transition-all"
-          style={{ width: `${progressPercent}%` }}
-        />
-      </div>
+      <AnimatedProgressBar value={progressPercent} className="mt-3" />
       <p className="mt-2 text-xs font-medium text-emerald-700">
-        {progressPercent}% дууссан
+        <CountUp value={progressPercent} suffix="% дууссан" />
       </p>
       <div className="mt-3">
         <LocalProgressNote />

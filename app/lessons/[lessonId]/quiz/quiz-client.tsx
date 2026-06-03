@@ -25,7 +25,7 @@ import {
   type QuizResult,
 } from "@/lib/progress";
 import { buildQuizDetailedAnswer, type QuizDetailedAnswer } from "@/lib/quiz-answers";
-import { enhanceLessonQuizQuestions } from "@/lib/quiz/smart-options";
+import { prepareLessonQuizQuestions } from "@/lib/quiz/smart-options";
 import { SpeakerButton } from "@/components/tts/speaker-button";
 import { containsTargetScript } from "@/lib/tts/infer-lang";
 import { resolveKoreanTtsLang } from "@/lib/lesson/teaching-media";
@@ -54,20 +54,19 @@ export function LessonQuizClient({
   nextLessonId,
   adminPreview = false,
 }: Props) {
-  const quizQuestions = useMemo(() => {
-    if (useDatabaseQuizOptions) {
-      return quizQuestionsProp;
-    }
-    if (isKoreanLesson0BeginnerFlow(lesson)) {
-      return enhanceLessonQuizQuestions(quizQuestionsProp, lesson.vocabulary);
-    }
-    return quizQuestionsProp;
-  }, [
-    quizQuestionsProp,
-    lesson.vocabulary,
-    lesson,
-    useDatabaseQuizOptions,
-  ]);
+  const quizQuestions = useMemo(
+    () =>
+      prepareLessonQuizQuestions(quizQuestionsProp, lesson.vocabulary, {
+        rewriteOptions:
+          !useDatabaseQuizOptions && isKoreanLesson0BeginnerFlow(lesson),
+      }),
+    [
+      quizQuestionsProp,
+      lesson.vocabulary,
+      lesson,
+      useDatabaseQuizOptions,
+    ]
+  );
   const total = quizQuestions.length;
 
   const [currentIndex, setCurrentIndex] = useState(0);

@@ -11,6 +11,8 @@ export type Lesson = {
   quizQuestions: number;
   status: LessonStatus;
   href: string | null;
+  texts?: ShortText[];
+  grammar?: GrammarPoint[];
 };
 
 export type SubtitleExample = {
@@ -60,6 +62,12 @@ export type VocabularyWord = {
   lessonSection?: string;
   /** Per-word audio URL (from ZIP import via source_note map). */
   audioUrl?: string;
+  /** Component breakdown for mnemonic learning aid. */
+  components?: Array<{ component: string; meaningMn: string }>;
+  memoryHintMn?: string;
+  mnemonicImageId?: string;
+  mnemonicStatus?: "learning_aid_not_official_etymology";
+  examplePinyin?: string;
   /** Mongolian-friendly pronunciation hint (import / source_note / fallback). */
   mongolianPronunciation?: string;
   pronunciationMn?: string;
@@ -130,3 +138,41 @@ export type LessonDetail = {
     percent: number;
   };
 };
+
+export interface DialogueLine {
+  speaker: string;
+  zh: string;
+  pinyin: string;
+  mn: string;
+  audio?: string;
+}
+
+export interface Dialogue {
+  id: number;
+  title_mn?: string;
+  scene_mn?: string;
+  audio?: string;
+  lines: DialogueLine[];
+}
+
+export interface ShortText {
+  id: number;
+  audio?: string;
+  zh: string;
+  pinyin: string;
+  mn: string;
+}
+
+export interface GrammarExample {
+  zh: string;
+  pinyin: string;
+  mn: string;
+}
+
+export interface GrammarPoint {
+  id?: number;
+  point: string;
+  gloss_mn: string;
+  teacher_mn: string;
+  examples: GrammarExample[];
+}

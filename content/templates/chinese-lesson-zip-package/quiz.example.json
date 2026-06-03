@@ -1,0 +1,30 @@
+[
+  {
+    "id": "Q001",
+    "type": "cloze",
+    "phase": "check",
+    "lessonSection": "fill-in",
+    "question": "他们两个人______努力，终于完成了工作。",
+    "options": ["印象", "接受", "熟悉", "共同", "吸引"],
+    "correctAnswer": "共同",
+    "explanation": "他们两个人共同努力，终于完成了工作。 — Тэд хоёр хамтын хүчин чармайлтаар ажлаа дуусгалаа.",
+    "skillTags": ["vocabulary"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "Q002",
+    "type": "multiple_choice",
+    "phase": "check",
+    "question": "「印象」 гэдэг үгийн зөв утга аль вэ?",
+    "options": [
+      "сэтгэгдэл, дүр төрх",
+      "худалдаж авах",
+      "явуулах",
+      "мартах"
+    ],
+    "correctAnswer": "сэтгэгдэл, дүр төрх",
+    "explanation": "印象 = сэтгэгдэл, дүр төрх.",
+    "skillTags": ["vocabulary"],
+    "difficulty": "easy"
+  }
+]

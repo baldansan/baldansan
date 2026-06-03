@@ -1,0 +1,62 @@
+{
+  "profileVersion": "HSK1_LESSON_PROFILE_V1",
+  "lessonNumber": 3,
+  "lessonId": "hsk1-l03-name",
+  "chineseTitle": "你叫什么名字",
+  "coreSkill": "Asking and telling names; nationality/profession intro begins",
+  "mainGrammar": [
+    "什么 interrogative",
+    "是 sentence",
+    "吗 yes-no question"
+  ],
+  "mainFunction": [
+    "Asking and telling names; nationality/profession intro begins"
+  ],
+  "pronunciationFocus": [
+    "tone sandhi of 不",
+    "ü spelling rules"
+  ],
+  "characterFocus": [
+    "我",
+    "你",
+    "他",
+    "谁"
+  ],
+  "workbookFocus": [
+    "section 一",
+    "section 二",
+    "section 三",
+    "section 四",
+    "section 五",
+    "section 六",
+    "section 七",
+    "section 八"
+  ],
+  "commonMongolianLearnerMistakes": [
+    "什么 vs 谁 confusion",
+    "是 sentence word order"
+  ],
+  "recommendedGames": [
+    "flashcard",
+    "quiz",
+    "sentence_order",
+    "name_dialogue",
+    "什么_recognition"
+  ],
+  "forbiddenGames": [],
+  "recommendedMnemonicImages": [],
+  "recommendedPracticeFlow": [
+    "teacher intro",
+    "core dialogue",
+    "vocabulary flashcards",
+    "pronunciation/grammar focus",
+    "workbook practice",
+    "quiz",
+    "recommended games"
+  ],
+  "componentGameAllowed": false,
+  "strokeOrderGameRequired": false,
+  "enrichmentAllowed": true,
+  "enrichmentRequiresSourceComplete": true,
+  "notes": "Enrichment (mnemonics, teacher copy) must not replace or contradict source. componentStatus=needs_review until verified."
+}

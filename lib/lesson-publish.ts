@@ -23,7 +23,7 @@ export function isPublicLesson(lesson: LessonContent): boolean {
   return getLessonPublishStatus(lesson) === "available";
 }
 
-export type LessonPreviewSubpath = "watch" | "vocabulary" | "quiz";
+export type LessonPreviewSubpath = "watch" | "vocabulary" | "quiz" | "workbook";
 
 export function lessonPreviewPath(
   lessonId: string,

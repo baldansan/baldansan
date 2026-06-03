@@ -1,0 +1,56 @@
+{
+  "profileVersion": "HSK1_LESSON_PROFILE_V1",
+  "lessonNumber": 13,
+  "lessonId": "hsk1-l13-cooking",
+  "chineseTitle": "他在学做中国菜呢",
+  "coreSkill": "Action in progress; phone calls; likes",
+  "mainGrammar": [
+    "在 + verb + 呢 progressive",
+    "做 + object"
+  ],
+  "mainFunction": [
+    "Action in progress; phone calls; likes"
+  ],
+  "pronunciationFocus": [
+    "呢 neutral tone"
+  ],
+  "characterFocus": [
+    "在",
+    "学",
+    "做",
+    "菜"
+  ],
+  "workbookFocus": [
+    "section 一",
+    "section 二",
+    "section 三",
+    "section 四",
+    "section 五",
+    "section 六",
+    "section 七",
+    "section 八"
+  ],
+  "commonMongolianLearnerMistakes": [],
+  "recommendedGames": [
+    "flashcard",
+    "quiz",
+    "了_completion",
+    "progressive_呢"
+  ],
+  "forbiddenGames": [],
+  "recommendedMnemonicImages": [],
+  "recommendedPracticeFlow": [
+    "teacher intro",
+    "core dialogue",
+    "vocabulary flashcards",
+    "pronunciation/grammar focus",
+    "workbook practice",
+    "quiz",
+    "recommended games"
+  ],
+  "componentGameAllowed": false,
+  "strokeOrderGameRequired": false,
+  "enrichmentAllowed": true,
+  "enrichmentRequiresSourceComplete": true,
+  "notes": "Enrichment (mnemonics, teacher copy) must not replace or contradict source. componentStatus=needs_review until verified."
+}

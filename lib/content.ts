@@ -1,6 +1,4 @@
-import { hsk5Course } from "@/content/courses/hsk5";
 import { canonicalLessonId, normalizeLessonRouteId } from "@/lib/lesson-id";
-import { lessonsByCourseId } from "@/content/courses/hsk5/lessons";
 import { courses } from "@/data/courses";
 import {
   getSupabaseCourseById,
@@ -18,21 +16,15 @@ import { LEARNER_COURSE_PROBE_IDS } from "@/lib/language-track";
 import type { Course } from "@/types/course";
 import type { CourseContent, LessonContent } from "@/types/lesson-content";
 
-const allLessons = Object.values(lessonsByCourseId).flat();
-
-const coursesContentById: Record<string, CourseContent> = {
-  hsk5: hsk5Course,
-};
-
 /** Last resolved source for a content fetch (server-only; not shown in UI). */
 export type ContentSource = "supabase" | "local";
 
 let lastContentSource: ContentSource = "local";
 
 const FALLBACK_WARNING =
-  "Supabase content fetch failed; using local fallback.";
+  "Supabase content fetch failed; no local lesson fallback.";
 
-function warnSupabaseFallback(context: string, error?: unknown) {
+function warnSupabaseFetchFailure(context: string, error?: unknown) {
   console.warn(`[content] ${FALLBACK_WARNING}`, { context, error });
 }
 
@@ -61,6 +53,10 @@ export function lessonQuizPath(lessonId: string) {
   return `/lessons/${lessonId}/quiz`;
 }
 
+export function lessonWorkbookPath(lessonId: string) {
+  return `/lessons/${lessonId}/workbook`;
+}
+
 export function lessonTrainingPath(
   lessonId: string,
   options?: { preview?: boolean }
@@ -74,22 +70,19 @@ export function coursePath(courseId: string) {
   return `/courses/${courseId}`;
 }
 
-export function getLocalLessonById(lessonId: string): LessonContent | undefined {
-  const normalized = normalizeLessonRouteId(lessonId);
-  const lesson = allLessons.find(
-    (lesson) => canonicalLessonId(lesson.id) === normalized
-  );
-  return lesson ? enrichLessonContentMeta(lesson) : undefined;
+/** Legacy hook for admin/dev without Supabase — local demo lessons removed. */
+export function getLocalLessonById(_lessonId: string): LessonContent | undefined {
+  return undefined;
 }
 
-export function getLocalLessonsByCourseId(courseId: string): LessonContent[] {
-  return lessonsByCourseId[courseId] ?? [];
+export function getLocalLessonsByCourseId(_courseId: string): LessonContent[] {
+  return [];
 }
 
 export function getLocalCourseContentById(
-  courseId: string
+  _courseId: string
 ): CourseContent | undefined {
-  return coursesContentById[courseId];
+  return undefined;
 }
 
 export function getLocalCourseById(courseId: string): Course | undefined {
@@ -97,71 +90,54 @@ export function getLocalCourseById(courseId: string): Course | undefined {
 }
 
 export function getLocalAllLessonIds(): string[] {
-  return allLessons.map((lesson) => lesson.id);
+  return [];
 }
 
-/**
- * Supabase-first: returns fetcher result when defined; otherwise local fallback.
- */
-async function withSupabaseFallback<T>(
+async function fetchSupabaseOnly<T>(
   context: string,
-  fetcher: () => Promise<T | undefined>,
-  fallback: () => T | undefined
+  fetcher: () => Promise<T | undefined>
 ): Promise<T | undefined> {
   if (!hasSupabaseConfig) {
     lastContentSource = "local";
-    return fallback();
+    return undefined;
   }
 
   try {
     const result = await fetcher();
-    if (result !== undefined) {
-      lastContentSource = "supabase";
-      return result;
-    }
+    lastContentSource = "supabase";
+    return result;
   } catch (error) {
-    warnSupabaseFallback(context, error);
+    warnSupabaseFetchFailure(context, error);
+    return undefined;
   }
-
-  lastContentSource = "local";
-  return fallback();
 }
 
-/**
- * Supabase-first: returns non-empty Supabase list; otherwise local fallback.
- */
-async function withSupabaseListFallback<T>(
+async function fetchSupabaseListOnly<T>(
   context: string,
-  fetcher: () => Promise<T[]>,
-  fallback: () => T[]
+  fetcher: () => Promise<T[]>
 ): Promise<T[]> {
   if (!hasSupabaseConfig) {
     lastContentSource = "local";
-    return fallback();
+    return [];
   }
 
   try {
     const result = await fetcher();
-    if (result.length > 0) {
-      lastContentSource = "supabase";
-      return result;
-    }
+    lastContentSource = "supabase";
+    return result;
   } catch (error) {
-    warnSupabaseFallback(context, error);
+    warnSupabaseFetchFailure(context, error);
+    return [];
   }
-
-  lastContentSource = "local";
-  return fallback();
 }
 
 export async function getLessonById(
   lessonId: string
 ): Promise<LessonContent | undefined> {
   const normalizedId = normalizeLessonRouteId(lessonId);
-  const lesson = await withSupabaseFallback(
+  const lesson = await fetchSupabaseOnly(
     `getLessonById(${normalizedId})`,
-    () => getSupabaseLessonById(normalizedId),
-    () => getLocalLessonById(normalizedId)
+    () => getSupabaseLessonById(normalizedId)
   );
 
   if (!lesson) {
@@ -198,10 +174,9 @@ export async function getPublicLessonById(
 export async function getPublicLessonsByCourseId(
   courseId: string
 ): Promise<LessonContent[]> {
-  const lessons = await withSupabaseListFallback(
+  const lessons = await fetchSupabaseListOnly(
     `getPublicLessonsByCourseId(${courseId})`,
-    () => getSupabasePublicLessonsByCourseId(courseId),
-    () => getLocalLessonsByCourseId(courseId).filter(isPublicLesson)
+    () => getSupabasePublicLessonsByCourseId(courseId)
   );
 
   if (!hasSupabaseConfig) {
@@ -227,10 +202,9 @@ export async function getPublicLessonsByCourseId(
 export async function getPublicLessonSummariesByCourseId(
   courseId: string
 ): Promise<LessonContent[]> {
-  const lessons = await withSupabaseListFallback(
+  const lessons = await fetchSupabaseListOnly(
     `getPublicLessonSummariesByCourseId(${courseId})`,
-    () => getSupabasePublicLessonsByCourseId(courseId),
-    () => getLocalLessonsByCourseId(courseId).filter(isPublicLesson)
+    () => getSupabasePublicLessonsByCourseId(courseId)
   );
 
   return lessons.map(toLessonListSummary);
@@ -240,10 +214,9 @@ export async function getPublicLessonSummariesByCourseId(
 export async function getLessonsByCourseId(
   courseId: string
 ): Promise<LessonContent[]> {
-  const lessons = await withSupabaseListFallback(
+  const lessons = await fetchSupabaseListOnly(
     `getLessonsByCourseId(${courseId})`,
-    () => getSupabaseLessonsByCourseId(courseId),
-    () => getLocalLessonsByCourseId(courseId)
+    () => getSupabaseLessonsByCourseId(courseId)
   );
 
   if (!hasSupabaseConfig) {
@@ -268,32 +241,27 @@ export async function getLessonsByCourseId(
 export async function getCourseContentById(
   courseId: string
 ): Promise<CourseContent | undefined> {
-  return withSupabaseFallback(
-    `getCourseContentById(${courseId})`,
-    () => getSupabaseCourseContentById(courseId),
-    () => getLocalCourseContentById(courseId)
+  return fetchSupabaseOnly(`getCourseContentById(${courseId})`, () =>
+    getSupabaseCourseContentById(courseId)
   );
 }
 
 export async function getCourseById(
   courseId: string
 ): Promise<Course | undefined> {
-  return withSupabaseFallback(
-    `getCourseById(${courseId})`,
-    () => getSupabaseCourseById(courseId),
-    () => getLocalCourseById(courseId)
-  );
+  if (hasSupabaseConfig) {
+    return fetchSupabaseOnly(`getCourseById(${courseId})`, () =>
+      getSupabaseCourseById(courseId)
+    );
+  }
+  return getLocalCourseById(courseId);
 }
 
 export async function getAllLessonIds(): Promise<string[]> {
-  return withSupabaseListFallback(
-    "getAllLessonIds",
-    () => getSupabaseLessonIds(),
-    () => getLocalAllLessonIds()
-  );
+  return fetchSupabaseListOnly("getAllLessonIds", () => getSupabaseLessonIds());
 }
 
-/** Sync lesson ids for static generation at build time (local content). */
+/** Sync lesson ids for static generation at build time. */
 export function getAllLessonIdsSync(): string[] {
   return getLocalAllLessonIds();
 }

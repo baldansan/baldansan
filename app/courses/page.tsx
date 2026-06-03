@@ -46,13 +46,38 @@ async function appendKoreanCourses(
   return next;
 }
 
-export default async function CoursesPage() {
-  const hsk5Lessons = await getPublicLessonsByCourseId("hsk5");
-  const lessonCounts: Record<string, number> = {
-    hsk5: hsk5Lessons.length,
-  };
+async function appendHsk5Course(
+  catalog: Course[],
+  lessonCounts: Record<string, number>
+): Promise<Course[]> {
+  const [lessons, course] = await Promise.all([
+    getPublicLessonsByCourseId("hsk5"),
+    getCourseContentById("hsk5"),
+  ]);
+  lessonCounts.hsk5 = lessons.length;
 
-  const catalogCourses = await appendKoreanCourses([...courses], lessonCounts);
+  if (!course && lessons.length === 0) {
+    return catalog;
+  }
+
+  const next = catalog.filter((entry) => entry.id !== "hsk5");
+  next.unshift({
+    id: "hsk5",
+    title: course?.title ?? "HSK 5",
+    level: "HSK5",
+    description: course?.subtitle ?? "",
+    lessons: lessons.length,
+    vocabulary: lessons.reduce((sum, lesson) => sum + lesson.vocabularyCount, 0),
+    status: lessons.length > 0 ? "available" : "coming_soon",
+    href: course || lessons.length > 0 ? "/courses/hsk5" : null,
+  });
+  return next;
+}
+
+export default async function CoursesPage() {
+  const lessonCounts: Record<string, number> = {};
+  const withHsk5 = await appendHsk5Course([...courses], lessonCounts);
+  const catalogCourses = await appendKoreanCourses(withHsk5, lessonCounts);
 
   const courseCards = catalogCourses.map((course) => ({
     ...course,

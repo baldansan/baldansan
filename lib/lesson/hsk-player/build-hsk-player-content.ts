@@ -43,10 +43,10 @@ const DEFAULT_DIALOGUE: HskDialogueLine[] = [
 ];
 
 const DEFAULT_TONES: HskToneExample[] = [
-  { label: "1-р өнгө", example: "mā", pinyin: "mā", mongolian: "өндөр, тэгш" },
-  { label: "2-р өнгө", example: "má", pinyin: "má", mongolian: "дээшлэх" },
-  { label: "3-р өнгө", example: "mǎ", pinyin: "mǎ", mongolian: "доошлоод дээшлэх" },
-  { label: "4-р өнгө", example: "mà", pinyin: "mà", mongolian: "огцом буух" },
+  { label: "1-р хөг", example: "mā", pinyin: "mā", mongolian: "өндөр, тэгш", motionSymbol: "→", toneNumber: 1 },
+  { label: "2-р хөг", example: "má", pinyin: "má", mongolian: "дээшлэх", motionSymbol: "↗", toneNumber: 2 },
+  { label: "3-р хөг", example: "mǎ", pinyin: "mǎ", mongolian: "доошлоод дээшлэх", motionSymbol: "∨", toneNumber: 3 },
+  { label: "4-р хөг", example: "mà", pinyin: "mà", mongolian: "огцом буух", motionSymbol: "↘", toneNumber: 4 },
 ];
 
 function resolveIntroBullets(
@@ -143,7 +143,7 @@ export function buildHskPlayerContent(lesson: LessonContent): HskPlayerContent {
     tones,
     toneNote: resolveHskLessonToneNote(lesson, study),
     toneWarning:
-      "Монгол сурагчдад tone хамгийн эхэнд хэцүү санагддаг — эхлээд сонсоод дуурай.",
+      "Монгол сурагчдад хөг хамгийн эхэнд хэцүү санагддаг — эхлээд сонсоод дуурай.",
     featuredWord:
       lesson.vocabulary.find((w) => w.chinese === "你") ??
       lesson.vocabulary[0] ??
