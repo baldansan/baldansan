@@ -1,0 +1,13 @@
+{
+  "courseId": "hsk4",
+  "lessonId": "hsk4-l01",
+  "title": "HSK4A 1-р хичээл — Энгийн хайр",
+  "chineseTitle": "简单的爱情",
+  "subtitle": "Энгийн хайр",
+  "description": "Энэ хичээлийн үг, дүрэм, дасгал, quiz.",
+  "duration": "45 min",
+  "status": "draft",
+  "orderIndex": 1,
+  "mediaStatus": "missing",
+  "sourceNote": "Chinese/HSK ZIP template — draft import"
+}
