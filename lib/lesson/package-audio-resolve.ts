@@ -1,4 +1,6 @@
 import { normalizeZipPath } from "@/lib/import/zip-path";
+import { applyWorkbookListeningPlayableAudio } from "@/lib/lesson/workbook-exercises";
+import { resolveWorkbookListeningItemAudio } from "@/lib/lesson/workbook-listening-audio";
 import { parseLessonSourceNote } from "@/lib/lesson/source-note-json";
 import { LESSON_MEDIA_BUCKET } from "@/lib/supabase/media-upload";
 import type {
@@ -151,6 +153,36 @@ function patchAudioFieldOnRecord(
   }
 }
 
+function patchWorkbookListeningAudio(
+  exercises: Record<string, unknown>,
+  resolve: (path: string) => string | undefined
+): void {
+  const listening = exercises.listening;
+  if (!isRecord(listening)) return;
+  const parts = listening.parts;
+  if (!Array.isArray(parts)) return;
+
+  listening.parts = parts.map((part) => {
+    if (!isRecord(part)) return part;
+    const partCopy = { ...part };
+    const items = partCopy.items;
+    if (Array.isArray(items)) {
+      partCopy.items = items.map((row) => {
+        if (!isRecord(row)) return row;
+        const copy = { ...row };
+        const raw =
+          resolveWorkbookListeningItemAudio(partCopy, copy) ??
+          pickPackageAudioPath(copy);
+        if (!raw || /^https?:\/\//i.test(raw)) return copy;
+        const url = resolve(raw);
+        if (url) copy.audio = url;
+        return copy;
+      });
+    }
+    return partCopy;
+  });
+}
+
 function patchDialoguesAndTextsAudio(
   container: Record<string, unknown>,
   resolve: (path: string) => string | undefined
@@ -173,6 +205,11 @@ function patchDialoguesAndTextsAudio(
       patchAudioFieldOnRecord(copy, ["audio", "audioFile"], resolve);
       return copy;
     });
+  }
+
+  const workbook = container.exercises_workbook;
+  if (isRecord(workbook)) {
+    patchWorkbookListeningAudio(workbook, resolve);
   }
 }
 
@@ -204,6 +241,11 @@ export function patchSourceNotePackageAudioUrls(
       patchDialoguesAndTextsAudio(teaching, resolve);
       hskStudy.lessonTeaching = teaching;
     }
+    const workbook = hskStudy.workbook;
+    if (isRecord(workbook)) {
+      patchWorkbookListeningAudio(workbook, resolve);
+      hskStudy.workbook = workbook;
+    }
     data.hskStudyContent = hskStudy;
   }
 
@@ -212,6 +254,64 @@ export function patchSourceNotePackageAudioUrls(
   }
 
   return JSON.stringify(data);
+}
+
+/** Import ZIP / lesson.json may use `audio`, `audioFile`, or `audio_file`. */
+export function pickPackageAudioPath(record: Record<string, unknown>): string | undefined {
+  const audio = trim(record.audio);
+  if (audio) return audio;
+  const audioFile = trim(record.audioFile) || trim(record.audio_file);
+  return audioFile || undefined;
+}
+
+/** Resolve to a single browser-fetchable URL (no audio/audio/ double prefix). */
+export function resolveLessonPackagePlayableUrl(
+  itemPath: string | null | undefined,
+  ctx: {
+    publicStorageBase?: string | null;
+    packageAudioBase?: string | null;
+    uploadMap?: PackageAudioUploadMap;
+  }
+): string | null {
+  const path = trim(itemPath);
+  if (!path) return null;
+  if (/^https?:\/\//i.test(path)) return path;
+
+  const uploadMap = ctx.uploadMap ?? {};
+  const fromMap = lookupUploadMap(uploadMap, path);
+  if (fromMap) return fromMap;
+
+  const publicBase = trim(ctx.publicStorageBase);
+  if (publicBase && /^https?:\/\//i.test(publicBase)) {
+    const fileName = normalizeZipPath(path).split("/").pop() ?? normalizeZipPath(path);
+    return `${publicBase.replace(/\/+$/, "")}/${fileName}`;
+  }
+
+  const legacyBase = trim(ctx.packageAudioBase);
+  if (legacyBase && /^https?:\/\//i.test(legacyBase)) {
+    const fileName = normalizeZipPath(path).split("/").pop() ?? normalizeZipPath(path);
+    return `${legacyBase.replace(/\/+$/, "")}/${fileName}`;
+  }
+
+  return resolvePackageAudioFileUrl({
+    filePath: path,
+    publicStorageBase: publicBase || null,
+    packageAudioBase: legacyBase || undefined,
+    uploadMap,
+  });
+}
+
+function resolveItemAudioForPlayer(
+  raw: string,
+  ctx: {
+    publicStorageBase: string | null;
+    packageAudioBase?: string;
+    uploadMap: PackageAudioUploadMap;
+  }
+): string {
+  return (
+    resolveLessonPackagePlayableUrl(raw, ctx) ?? raw
+  );
 }
 
 function resolveDialogueAudio(
@@ -223,15 +323,9 @@ function resolveDialogueAudio(
   }
 ): HskPackageDialogue {
   const record = dialogue as HskPackageDialogue & { audioFile?: string };
-  const raw = record.audio ?? record.audioFile;
-  const audio = resolvePackageAudioFileUrl({
-    filePath: raw,
-    publicStorageBase: ctx.publicStorageBase,
-    packageAudioBase: ctx.packageAudioBase,
-    uploadMap: ctx.uploadMap,
-  });
-  if (!audio || audio === raw) return dialogue;
-  return { ...dialogue, audio };
+  const raw = pickPackageAudioPath(record as Record<string, unknown>);
+  if (!raw) return dialogue;
+  return { ...dialogue, audio: resolveItemAudioForPlayer(raw, ctx) };
 }
 
 function resolveTextAudio(
@@ -243,18 +337,12 @@ function resolveTextAudio(
   }
 ): HskPackageShortText {
   const record = text as HskPackageShortText & { audioFile?: string };
-  const raw = record.audio ?? record.audioFile;
-  const audio = resolvePackageAudioFileUrl({
-    filePath: raw,
-    publicStorageBase: ctx.publicStorageBase,
-    packageAudioBase: ctx.packageAudioBase,
-    uploadMap: ctx.uploadMap,
-  });
-  if (!audio || audio === raw) return text;
-  return { ...text, audio };
+  const raw = pickPackageAudioPath(record as Record<string, unknown>);
+  if (!raw) return text;
+  return { ...text, audio: resolveItemAudioForPlayer(raw, ctx) };
 }
 
-function resolveStorageLessonIdForAudio(
+export function resolveStorageLessonIdForAudio(
   lesson: Pick<LessonContent, "id" | "sourceNote">
 ): string {
   const parsed = parseLessonSourceNote(lesson.sourceNote);
@@ -278,21 +366,30 @@ export function applyLessonPackageAudioUrls(
 
   const ctx = {
     publicStorageBase,
-    packageAudioBase: pkg.audio_base_path,
+    packageAudioBase: publicStorageBase ? undefined : pkg.audio_base_path,
     uploadMap,
   };
 
   const dialogues = pkg.dialogues?.map((d) => resolveDialogueAudio(d, ctx));
   const texts = pkg.texts?.map((t) => resolveTextAudio(t, ctx));
 
-  const hasAbsolute =
-    dialogues?.some((d) => d.audio?.startsWith("http")) ||
-    texts?.some((t) => t.audio?.startsWith("http"));
+  let exercises_workbook = pkg.exercises_workbook;
+  if (isRecord(exercises_workbook)) {
+    exercises_workbook = applyWorkbookListeningPlayableAudio(
+      exercises_workbook as Record<string, unknown>,
+      {
+        publicStorageBase: ctx.publicStorageBase,
+        packageAudioBase: ctx.packageAudioBase,
+        uploadMap: ctx.uploadMap,
+      }
+    );
+  }
 
   return {
     ...pkg,
     dialogues,
     texts,
-    audio_base_path: hasAbsolute ? undefined : pkg.audio_base_path,
+    exercises_workbook,
+    audio_base_path: publicStorageBase ?? undefined,
   };
 }

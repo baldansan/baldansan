@@ -4,7 +4,7 @@
 // lesson.modules_enabled-ийг ДАРААЛЛААР нь уншиж, модуль бүрийн компонентыг үзүүлнэ.
 // HSK1-ийн ямар ч таамаг бүтэц байхгүй — бүгд өгөгдлөөс.
 
-import { useState } from "react";
+import { useCallback, useMemo, useState } from "react";
 import type {
   HskLessonPackage as Lesson,
   HskPackageModuleKey as ModuleKey,
@@ -35,39 +35,72 @@ const MODULE_LABEL: Record<ModuleKey, string> = {
 };
 
 export default function LessonPlayer({
+  lessonId,
   lesson,
   onExit,
 }: {
+  lessonId: string;
   lesson: Lesson;
   onExit?: () => void;
 }) {
   const modules = lesson.modules_enabled ?? [];
-  const [idx, setIdx] = useState(0);
+  const overviewIndex = useMemo(() => {
+    const hookIdx = modules.indexOf("hook");
+    return hookIdx >= 0 ? hookIdx : 0;
+  }, [modules]);
 
+  const [navStack, setNavStack] = useState<number[]>(() => [overviewIndex]);
+
+  const idx = navStack[navStack.length - 1] ?? overviewIndex;
   const current = modules[idx];
-  const isLast = idx >= modules.length - 1;
+  const onOverview = current === "hook";
   const progress = modules.length ? ((idx + 1) / modules.length) * 100 : 0;
 
+  const pushModule = useCallback((moduleIndex: number) => {
+    setNavStack((prev) => {
+      if (prev[prev.length - 1] === moduleIndex) return prev;
+      return [...prev, moduleIndex];
+    });
+  }, []);
+
   function next() {
-    if (idx < modules.length - 1) setIdx(idx + 1);
-    else onExit?.(); // сүүлийн модуль дуусвал гарах
-  }
-  function prevModule() {
-    if (idx > 0) setIdx(idx - 1);
+    if (idx < modules.length - 1) pushModule(idx + 1);
     else onExit?.();
   }
 
+  function handleBack() {
+    setNavStack((prev) => {
+      if (prev.length <= 1) {
+        onExit?.();
+        return prev;
+      }
+      return prev.slice(0, -1);
+    });
+  }
+
   function goTo(key: ModuleKey) {
-    const i = modules.indexOf(key);
-    if (i >= 0) setIdx(i);
+    const targetIndex = modules.indexOf(key);
+    if (targetIndex < 0) return;
+    if (onOverview) {
+      setNavStack([idx, targetIndex]);
+      return;
+    }
+    pushModule(targetIndex);
   }
 
   function renderModule() {
     switch (current) {
       case "hook":
-        return <LessonOverview lesson={lesson} onStart={next} onJump={goTo} />;
+        return (
+          <LessonOverview
+            lessonId={lessonId}
+            lesson={lesson}
+            onStart={next}
+            onJump={goTo}
+          />
+        );
       case "vocabulary":
-        return <VocabularyCard lesson={lesson} onDone={next} />;
+        return <VocabularyCard lessonId={lessonId} lesson={lesson} onDone={next} />;
       case "dialogues":
         return <DialoguesModule lesson={lesson} onDone={next} />;
       case "texts":
@@ -77,9 +110,23 @@ export default function LessonPlayer({
       case "grammar":
         return <GrammarModule lesson={lesson} onDone={next} />;
       case "exercises_textbook":
-        return <ExercisesModule lesson={lesson} source="textbook" onDone={next} />;
+        return (
+          <ExercisesModule
+            lessonId={lessonId}
+            lesson={lesson}
+            source="textbook"
+            onDone={next}
+          />
+        );
       case "exercises_workbook":
-        return <ExercisesModule lesson={lesson} source="workbook" onDone={next} />;
+        return (
+          <ExercisesModule
+            lessonId={lessonId}
+            lesson={lesson}
+            source="workbook"
+            onDone={next}
+          />
+        );
       case "recap":
         return <RecapModule lesson={lesson} onDone={next} />;
       default:
@@ -90,7 +137,7 @@ export default function LessonPlayer({
   return (
     <div className="bs-root">
       <div className="bs-topbar">
-        <button className="bs-iconbtn" onClick={prevModule} aria-label="Буцах">
+        <button className="bs-iconbtn" onClick={handleBack} aria-label="Буцах">
           ←
         </button>
         <div className="bs-ttl">
@@ -102,7 +149,7 @@ export default function LessonPlayer({
       </div>
 
       {/* зөвхөн хичээлийн нүүрнээс хойш прогресс харуулна */}
-      {idx > 0 && (
+      {!onOverview && (
         <div className="bs-progress">
           <span style={{ width: `${progress}%` }} />
         </div>

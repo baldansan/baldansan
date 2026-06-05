@@ -58,12 +58,22 @@ export interface HskPackageDialogue {
   lines: HskPackageDialogueLine[];
 }
 
+export interface HskPackageTextToken {
+  zh: string;
+  py: string;
+}
+
+export interface HskPackageTextSentence {
+  zh: string;
+  pinyin: string;
+  tokens: HskPackageTextToken[];
+  mn: string;
+}
+
 export interface HskPackageShortText {
   id: number;
   audio?: string;
-  zh: string;
-  pinyin: string;
-  mn: string;
+  sentences: HskPackageTextSentence[];
 }
 
 export interface HskPackageGrammarExample {

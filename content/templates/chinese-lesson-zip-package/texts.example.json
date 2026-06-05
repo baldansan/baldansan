@@ -1,0 +1,24 @@
+{
+  "shortTexts": [
+    {
+      "id": 1,
+      "audioFile": "textbook/hsk4A-textbook-0104.mp3",
+      "sentences": [
+        {
+          "zh": "很多女孩子羡慕浪漫的爱情。",
+          "pinyin": "Hěn duō nǚháizi xiànmù làngmàn de àiqíng.",
+          "tokens": [
+            { "zh": "很", "py": "Hěn" },
+            { "zh": "多", "py": "duō" },
+            { "zh": "女孩子", "py": "nǚháizi" },
+            { "zh": "羡慕", "py": "xiànmù" },
+            { "zh": "浪漫", "py": "làngmàn" },
+            { "zh": "的", "py": "de" },
+            { "zh": "爱情", "py": "àiqíng" }
+          ],
+          "mn": "Олон охид романтик хайранд их дуртай байдаг."
+        }
+      ]
+    }
+  ]
+}

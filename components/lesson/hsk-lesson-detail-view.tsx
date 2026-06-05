@@ -16,24 +16,13 @@ import {
 import { hskTextbookSubtitle } from "@/lib/lesson/hsk-learner-copy";
 import { hskVocabularyStudyCtaLabel } from "@/lib/lesson/hsk-vocabulary-ui";
 import { lessonPreviewPath } from "@/lib/lesson-publish";
-import {
-  getLearnedWordsSmart,
-  getLessonStatusSmart,
-  getQuizResultSmart,
-  type LessonStatus,
-} from "@/lib/progress";
+import { quizStepSummary, getStudiedWordsCount } from "@/lib/lesson/bs-step-progress";
 import type { LessonContent } from "@/types/lesson-content";
 
 type Props = {
   lesson: LessonContent;
   adminPreview?: boolean;
 };
-
-function statusLabel(status: LessonStatus): string {
-  if (status === "completed") return "Дууссан";
-  if (status === "started") return "Яваж байна";
-  return "Эхлээгүй";
-}
 
 export function HskLessonDetailView({ lesson, adminPreview = false }: Props) {
   const content = lesson.hskStudy ?? parseHskStudyContentFromLesson(lesson);
@@ -55,22 +44,21 @@ export function HskLessonDetailView({ lesson, adminPreview = false }: Props) {
     subpath: "quiz",
   });
 
-  const [status, setStatus] = useState<LessonStatus>("not_started");
-  const [learnedCount, setLearnedCount] = useState(0);
-  const [bestScore, setBestScore] = useState<number | null>(null);
+  const [studiedCount, setStudiedCount] = useState(0);
+  const [quizStepLabel, setQuizStepLabel] = useState<string | null>(null);
 
   useEffect(() => {
-    async function load() {
-      setStatus(await getLessonStatusSmart(lesson.id));
-      const learned = await getLearnedWordsSmart(lesson.id, lesson.vocabulary);
-      setLearnedCount(learned.length);
-      const quiz = await getQuizResultSmart(lesson.id);
-      setBestScore(quiz?.bestPercentage ?? null);
+    function load() {
+      setStudiedCount(getStudiedWordsCount(lesson.id));
+      const quizSummary = quizStepSummary(lesson.id, lesson.quizCount);
+      setQuizStepLabel(
+        quizSummary.status === "not_started" ? null : quizSummary.detail
+      );
     }
-    void load();
+    load();
     window.addEventListener("focus", load);
     return () => window.removeEventListener("focus", load);
-  }, [lesson.id, lesson.vocabulary]);
+  }, [lesson.id, lesson.quizCount]);
 
   const steps = [
     {
@@ -85,14 +73,17 @@ export function HskLessonDetailView({ lesson, adminPreview = false }: Props) {
       href: vocabHref,
       icon: "🃏",
       title: "Картаар сурах",
-      desc: `${lesson.vocabularyCount} үг · flashcard`,
+      desc:
+        studiedCount > 0
+          ? `${studiedCount} / ${lesson.vocabularyCount} үг сурсан`
+          : `${lesson.vocabularyCount} үг · flashcard`,
     },
     {
       step: "3",
       href: quizHref,
       icon: "✓",
       title: "Quiz",
-      desc: `${lesson.quizCount} асуулт`,
+      desc: quizStepLabel ?? `${lesson.quizCount} асуулт`,
     },
     {
       step: "4",
@@ -155,20 +146,7 @@ export function HskLessonDetailView({ lesson, adminPreview = false }: Props) {
         </ol>
       </MobileCard>
 
-      <MobileCard className="!bg-emerald-50/50">
-        <h2 className="text-sm font-bold text-[var(--app-text)]">Таны ахиц</h2>
-        <div className="mt-2 flex flex-wrap gap-1.5">
-          <span className="app-stat-pill">{statusLabel(status)}</span>
-          <span className="app-stat-pill">{learnedCount} үг сурсан</span>
-          {bestScore != null ? (
-            <span className="app-stat-pill app-stat-pill-accent">
-              Quiz: {bestScore}%
-            </span>
-          ) : null}
-        </div>
-      </MobileCard>
-
-      <LessonProgressCard lessonId={lesson.id} />
+      <LessonProgressCard lessonId={lesson.id} quizCount={lesson.quizCount} />
 
       <HskOptionalVideoCard lesson={lesson} adminPreview={adminPreview} />
 

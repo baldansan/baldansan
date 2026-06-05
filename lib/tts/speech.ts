@@ -1,3 +1,5 @@
+import { prepareTextForTts } from "@/lib/tts/prepare-tts-text";
+
 export type SpeakOptions = {
   lang: string;
   voiceURI?: string;
@@ -128,8 +130,8 @@ export async function speakText(
     return { ok: false, error: TTS_UNAVAILABLE_MESSAGE };
   }
 
-  const trimmed = text.trim();
-  if (!trimmed) {
+  const prepared = prepareTextForTts(text);
+  if (!prepared) {
     return { ok: false, error: "Хоосон текст." };
   }
 
@@ -138,7 +140,7 @@ export async function speakText(
 
   return new Promise((resolve) => {
     try {
-      const utterance = new SpeechSynthesisUtterance(trimmed);
+      const utterance = new SpeechSynthesisUtterance(prepared);
       utterance.lang = normalizeLang(options.lang);
       utterance.rate = options.rate ?? 0.9;
       utterance.pitch = options.pitch ?? 1;

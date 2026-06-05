@@ -35,9 +35,11 @@ type Props = {
 };
 
 function SchemaLessonWatchPlayer({
+  lessonId,
   lessonPackage,
   adminPreview = false,
 }: {
+  lessonId: string;
   lessonPackage: HskLessonPackage;
   adminPreview?: boolean;
 }) {
@@ -48,6 +50,7 @@ function SchemaLessonWatchPlayer({
       <div className="bs-app-shell-inner">
         {adminPreview ? <AdminPreviewBanner /> : null}
         <LessonPlayer
+          lessonId={lessonId}
           lesson={lessonPackage}
           onExit={() => router.back()}
         />
@@ -65,6 +68,7 @@ export function LessonWatchClient({
   if (lessonPackage) {
     return (
       <SchemaLessonWatchPlayer
+        lessonId={lesson.id}
         lessonPackage={lessonPackage}
         adminPreview={adminPreview}
       />

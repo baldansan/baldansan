@@ -1,16 +1,31 @@
-import { applyLessonPackageAudioUrls } from "@/lib/lesson/package-audio-resolve";
+import {
+  applyLessonPackageAudioUrls,
+  buildLessonPackageAudioPublicBase,
+  pickPackageAudioPath,
+  resolveStorageLessonIdForAudio,
+} from "@/lib/lesson/package-audio-resolve";
+import {
+  listeningItemCount,
+  resolveExercisesWorkbook,
+  workbookExercisesHasContent,
+} from "@/lib/lesson/workbook-exercises";
 import { parseTagFromSourceNote } from "@/lib/lesson-content-type";
 import {
   parseHskStudyContentFromLesson,
   type HskDialogue,
 } from "@/lib/lesson/hsk-lesson-content";
-import { parseLessonSourceNote } from "@/lib/lesson/source-note-json";
+import {
+  parseLegacySourceNoteJsonSegment,
+  parseLessonSourceNote,
+} from "@/lib/lesson/source-note-json";
 import type {
   HskLessonPackage,
   HskPackageDialogue,
   HskPackageGrammarPoint,
   HskPackageModuleKey,
   HskPackageShortText,
+  HskPackageTextSentence,
+  HskPackageTextToken,
   HskPackageVocabItem,
 } from "@/types/hsk-lesson-package";
 import type { LessonContent } from "@/types/lesson-content";
@@ -81,6 +96,99 @@ function mapVocabulary(lesson: LessonContent): HskPackageVocabItem[] {
   }));
 }
 
+function mapDialogueLines(raw: unknown): HskPackageDialogue["lines"] {
+  if (!Array.isArray(raw)) return [];
+  return raw
+    .filter(isRecord)
+    .map((line) => ({
+      speaker: trim(line.speaker) || "",
+      zh: trim(line.zh) || trim(line.chinese),
+      pinyin: trim(line.pinyin),
+      mn: trim(line.mn) || trim(line.mongolian),
+    }))
+    .filter((line) => line.zh || line.mn);
+}
+
+function normalizePackageDialogue(raw: unknown, index: number): HskPackageDialogue | null {
+  if (!isRecord(raw)) return null;
+  const lines = mapDialogueLines(raw.lines);
+  if (lines.length === 0) return null;
+  const audio = pickPackageAudioPath(raw);
+  return {
+    id: Number(raw.id) || index + 1,
+    title_mn: trim(raw.title_mn) || trim(raw.title) || undefined,
+    scene_mn: trim(raw.scene_mn) || undefined,
+    audio,
+    lines,
+  };
+}
+
+function normalizePackageDialogues(raw: unknown): HskPackageDialogue[] {
+  if (!Array.isArray(raw)) return [];
+  return raw
+    .map((item, index) => normalizePackageDialogue(item, index))
+    .filter((row): row is HskPackageDialogue => row !== null);
+}
+
+function resolvePackageDialogues(
+  teaching: Record<string, unknown> | null,
+  textsPayload: unknown,
+  studyDialogues: HskDialogue[]
+): HskPackageDialogue[] {
+  if (teaching && Array.isArray(teaching.dialogues)) {
+    const fromTeaching = normalizePackageDialogues(teaching.dialogues);
+    if (fromTeaching.length > 0) return fromTeaching;
+  }
+  if (isRecord(textsPayload) && Array.isArray(textsPayload.dialogues)) {
+    const fromTexts = normalizePackageDialogues(textsPayload.dialogues);
+    if (fromTexts.length > 0) return fromTexts;
+  }
+  return mapDialogues(studyDialogues);
+}
+
+function resolvePackageTexts(
+  teaching: Record<string, unknown> | null,
+  textsPayload: unknown
+): HskPackageShortText[] {
+  if (teaching && Array.isArray(teaching.texts)) {
+    const fromTeaching = normalizePackageTexts(teaching.texts);
+    if (fromTeaching.length > 0) return fromTeaching;
+  }
+  return mapTexts(textsPayload ?? teaching?.texts);
+}
+
+/** Fill dialogues/texts + audio from lessonTeaching / texts.json when embedded package lacks them. */
+function enrichPackageFromStudyTeaching(
+  pkg: HskLessonPackage,
+  lesson: LessonContent
+): HskLessonPackage {
+  const { teaching, texts } = getStudyPayloads(lesson.sourceNote);
+  const study = lesson.hskStudy ?? parseHskStudyContentFromLesson(lesson);
+
+  const dialogues =
+    pkg.dialogues?.length &&
+    pkg.dialogues.some((d) => pickPackageAudioPath(d as unknown as Record<string, unknown>))
+      ? normalizePackageDialogues(pkg.dialogues)
+      : resolvePackageDialogues(teaching, texts, study.dialogues);
+
+  const fromStudy = resolvePackageTexts(teaching, texts);
+  const fromPkg = pkg.texts?.length ? normalizePackageTexts(pkg.texts) : [];
+  const textsOut =
+    fromStudy.some((t) => t.sentences.length > 0) && fromStudy.length > 0
+      ? fromStudy
+      : fromPkg.some((t) => t.sentences.length > 0) && fromPkg.length > 0
+        ? fromPkg
+        : fromStudy.length > 0
+          ? fromStudy
+          : fromPkg;
+
+  return {
+    ...pkg,
+    dialogues: dialogues.length > 0 ? dialogues : pkg.dialogues,
+    texts: textsOut.length > 0 ? textsOut : pkg.texts,
+  };
+}
+
 function mapDialogues(dialogues: HskDialogue[]): HskPackageDialogue[] {
   return dialogues.map((dialogue, index) => ({
     id: index + 1,
@@ -94,40 +202,117 @@ function mapDialogues(dialogues: HskDialogue[]): HskPackageDialogue[] {
   }));
 }
 
-function mapTexts(raw: unknown): HskPackageShortText[] {
-  const rows: HskPackageShortText[] = [];
-
-  const pushRow = (item: Record<string, unknown>, index: number) => {
-    const zh = trim(item.zh) || trim(item.chinese);
-    const mn = trim(item.mn) || trim(item.mongolian);
-    const pinyin = trim(item.pinyin);
-    if (!zh && !mn) return;
-    rows.push({
-      id: Number(item.id) || index + 1,
-      zh,
-      pinyin,
-      mn,
-      audio: trim(item.audio) || undefined,
-    });
+function normalizeTextToken(raw: unknown): HskPackageTextToken | null {
+  if (!isRecord(raw)) return null;
+  const zh = trim(raw.zh);
+  if (!zh) return null;
+  return {
+    zh,
+    py: trim(raw.py) || trim(raw.pinyin),
   };
+}
 
-  if (Array.isArray(raw)) {
-    raw.forEach((item, index) => {
-      if (isRecord(item)) pushRow(item, index);
-    });
-    return rows;
+function tokenizeZhForLegacyText(zh: string): HskPackageTextToken[] {
+  const out: HskPackageTextToken[] = [];
+  let i = 0;
+  while (i < zh.length) {
+    const ch = zh[i]!;
+    if (!/\S/.test(ch) || !/[\u4e00-\u9fff]/.test(ch)) {
+      i += 1;
+      continue;
+    }
+    out.push({ zh: ch, py: "" });
+    i += 1;
+  }
+  return out;
+}
+
+function normalizeTextSentence(raw: unknown): HskPackageTextSentence | null {
+  if (!isRecord(raw)) return null;
+  const zh = trim(raw.zh) || trim(raw.chinese);
+  const pinyin = trim(raw.pinyin);
+  const mn = trim(raw.mn) || trim(raw.mongolian);
+  let tokens: HskPackageTextToken[] = [];
+  if (Array.isArray(raw.tokens)) {
+    tokens = raw.tokens
+      .map((item) => normalizeTextToken(item))
+      .filter((row): row is HskPackageTextToken => row !== null);
+  }
+  if (tokens.length === 0 && zh) {
+    tokens = tokenizeZhForLegacyText(zh);
+  }
+  const zhJoined = zh || tokens.map((t) => t.zh).join("");
+  if (!zhJoined && !mn) return null;
+  return { zh: zhJoined, pinyin, mn, tokens };
+}
+
+function legacyFlatTextToSentences(
+  zh: string,
+  pinyin: string,
+  mn: string
+): HskPackageTextSentence[] {
+  const chunks = zh
+    .split(/(?<=[。！？!?；;])/)
+    .map((part) => part.trim())
+    .filter(Boolean);
+  if (chunks.length === 0 && zh) {
+    return [normalizeTextSentence({ zh, pinyin, mn })!].filter(Boolean);
+  }
+  if (chunks.length <= 1) {
+    const row = normalizeTextSentence({ zh, pinyin, mn });
+    return row ? [row] : [];
+  }
+  return chunks
+    .map((part) => normalizeTextSentence({ zh: part, pinyin: "", mn: "" }))
+    .filter((row): row is HskPackageTextSentence => row !== null);
+}
+
+function normalizePackageText(raw: unknown, index: number): HskPackageShortText | null {
+  if (!isRecord(raw)) return null;
+  const id = Number(raw.id) || index + 1;
+  const audio = pickPackageAudioPath(raw);
+
+  if (Array.isArray(raw.sentences) && raw.sentences.length > 0) {
+    const sentences = raw.sentences
+      .map((item) => normalizeTextSentence(item))
+      .filter((row): row is HskPackageTextSentence => row !== null);
+    if (sentences.length === 0) return null;
+    return { id, audio, sentences };
   }
 
-  if (!isRecord(raw)) return rows;
+  const zh = trim(raw.zh) || trim(raw.chinese);
+  const mn = trim(raw.mn) || trim(raw.mongolian);
+  const pinyin = trim(raw.pinyin);
+  if (!zh && !mn) return null;
+  const sentences = legacyFlatTextToSentences(zh, pinyin, mn);
+  if (sentences.length === 0) return null;
+  return { id, audio, sentences };
+}
 
-  for (const key of ["texts", "readings", "shortTexts", "passages"]) {
+function normalizePackageTexts(raw: unknown): HskPackageShortText[] {
+  if (!Array.isArray(raw)) return mapTexts(raw);
+  return raw
+    .map((item, index) => normalizePackageText(item, index))
+    .filter((row): row is HskPackageShortText => row !== null);
+}
+
+function mapTexts(raw: unknown): HskPackageShortText[] {
+  if (Array.isArray(raw)) {
+    return raw
+      .map((item, index) => normalizePackageText(item, index))
+      .filter((row): row is HskPackageShortText => row !== null);
+  }
+
+  if (!isRecord(raw)) return [];
+
+  for (const key of ["shortTexts", "texts", "readings", "passages"]) {
     const nested = raw[key];
     if (Array.isArray(nested)) {
       return mapTexts(nested);
     }
   }
 
-  return rows;
+  return [];
 }
 
 function mapGrammar(raw: unknown): HskPackageGrammarPoint[] {
@@ -234,7 +419,7 @@ export function moduleHasContent(
     case "exercises_textbook":
       return hasExerciseContent(pkg.exercises_textbook);
     case "exercises_workbook":
-      return hasExerciseContent(pkg.exercises_workbook);
+      return workbookExercisesHasContent(pkg.exercises_workbook);
     case "recap":
       return hasRecapContent(pkg.recap);
     default:
@@ -250,6 +435,12 @@ export function resolveModulesEnabled(
     ? pkg.modules_enabled
     : [...HSK_LESSON_MODULE_ORDER];
   const declaredSet = new Set(declared);
+  if (workbookExercisesHasContent(pkg.exercises_workbook)) {
+    declaredSet.add("exercises_workbook");
+  }
+  if (hasExerciseContent(pkg.exercises_textbook)) {
+    declaredSet.add("exercises_textbook");
+  }
 
   const ordered = HSK_LESSON_MODULE_ORDER.filter(
     (key) => declaredSet.has(key) && moduleHasContent(pkg, key)
@@ -273,6 +464,30 @@ function withOrderedModules(pkg: HskLessonPackage): HskLessonPackage {
     ...pkg,
     modules_enabled: resolveModulesEnabled(pkg),
   };
+}
+
+/** Map import `audioFile` → `audio` and normalize dialogue/text rows for LessonPlayer. */
+function normalizeLessonPackageMedia(pkg: HskLessonPackage): HskLessonPackage {
+  return {
+    ...pkg,
+    dialogues: pkg.dialogues
+      ? normalizePackageDialogues(pkg.dialogues)
+      : undefined,
+    texts: pkg.texts ? normalizePackageTexts(pkg.texts) : undefined,
+  };
+}
+
+function resolvePackageAudioBasePath(
+  lesson: LessonContent,
+  pkg: HskLessonPackage
+): string | undefined {
+  const publicBase = buildLessonPackageAudioPublicBase(
+    lesson.courseId,
+    resolveStorageLessonIdForAudio(lesson)
+  );
+  if (publicBase) return publicBase;
+  const fromPkg = trim(pkg.audio_base_path);
+  return fromPkg || undefined;
 }
 
 function resolveLevel(lesson: LessonContent, teaching: Record<string, unknown> | null): string {
@@ -306,6 +521,61 @@ function resolveLessonNumber(
   return 1;
 }
 
+/** Rebuild workbook.json shape when import flattened listening onto hskStudyContent. */
+function workbookPayloadFromStudyRecord(
+  study: Record<string, unknown>
+): Record<string, unknown> | null {
+  if (isRecord(study.workbook)) {
+    return study.workbook as Record<string, unknown>;
+  }
+
+  const listening = study.workbookListening ?? study.listening;
+  const reading = study.workbookReading ?? study.reading;
+  const writing = study.workbookWriting ?? study.writing;
+  if (!listening && !reading && !writing) return null;
+
+  const out: Record<string, unknown> = {};
+  if (listening) out.listening = listening;
+  if (reading) out.reading = reading;
+  if (writing) out.writing = writing;
+  return out;
+}
+
+function resolveWorkbookPayloadFromSourceNote(
+  sourceNote: string | undefined | null
+): unknown {
+  const parsed = parseLessonSourceNote(sourceNote);
+  if (parsed.format !== "json") {
+    return parseLegacySourceNoteJsonSegment(sourceNote, "hskWorkbook");
+  }
+
+  const data = parsed.data;
+  const study = isRecord(data.hskStudyContent) ? data.hskStudyContent : null;
+  if (study) {
+    const fromStudy = workbookPayloadFromStudyRecord(study);
+    if (fromStudy) return fromStudy;
+  }
+
+  if (data.hskWorkbook != null) return data.hskWorkbook;
+  if (data.workbook != null) return data.workbook;
+
+  const sections = data.sections;
+  if (isRecord(sections)) {
+    const listening = sections.workbookListening ?? sections.listening;
+    const reading = sections.workbookReading ?? sections.reading;
+    const writing = sections.workbookWriting ?? sections.writing;
+    if (listening || reading || writing) {
+      const out: Record<string, unknown> = {};
+      if (listening) out.listening = listening;
+      if (reading) out.reading = reading;
+      if (writing) out.writing = writing;
+      return out;
+    }
+  }
+
+  return parseLegacySourceNoteJsonSegment(sourceNote, "hskWorkbook");
+}
+
 function getStudyPayloads(sourceNote: string | undefined | null) {
   const parsed = parseLessonSourceNote(sourceNote);
   if (parsed.format !== "json" || !isRecord(parsed.data.hskStudyContent)) {
@@ -313,7 +583,7 @@ function getStudyPayloads(sourceNote: string | undefined | null) {
       teaching: null as Record<string, unknown> | null,
       texts: null as unknown,
       grammar: null as unknown,
-      workbook: null as unknown,
+      workbook: resolveWorkbookPayloadFromSourceNote(sourceNote),
     };
   }
 
@@ -328,7 +598,7 @@ function getStudyPayloads(sourceNote: string | undefined | null) {
     teaching,
     texts: study.texts,
     grammar: study.grammar,
-    workbook: study.workbook,
+    workbook: resolveWorkbookPayloadFromSourceNote(sourceNote),
   };
 }
 
@@ -336,7 +606,9 @@ function buildHskLessonPackageFromLessonContent(
   lesson: LessonContent
 ): HskLessonPackage | null {
   const embedded = extractHskLessonPackageFromSourceNote(lesson.sourceNote);
-  if (embedded) return embedded;
+  if (embedded) {
+    return withOrderedModules(enrichPackageFromStudyTeaching(embedded, lesson));
+  }
 
   const study = lesson.hskStudy ?? parseHskStudyContentFromLesson(lesson);
   const { teaching, texts, grammar, workbook } = getStudyPayloads(lesson.sourceNote);
@@ -346,15 +618,9 @@ function buildHskLessonPackageFromLessonContent(
       ? (teaching.vocabulary as HskPackageVocabItem[])
       : mapVocabulary(lesson);
 
-  const dialogues =
-    teaching && Array.isArray(teaching.dialogues)
-      ? (teaching.dialogues as HskPackageDialogue[])
-      : mapDialogues(study.dialogues);
+  const dialogues = resolvePackageDialogues(teaching, texts, study.dialogues);
 
-  const mappedTexts =
-    teaching && Array.isArray(teaching.texts)
-      ? (teaching.texts as HskPackageShortText[])
-      : mapTexts(texts ?? teaching?.texts);
+  const mappedTexts = resolvePackageTexts(teaching, texts);
 
   const mappedGrammar =
     teaching && Array.isArray(teaching.grammar)
@@ -408,7 +674,7 @@ function buildHskLessonPackageFromLessonContent(
     pronunciation: teaching?.pronunciation,
     grammar: mappedGrammar.length > 0 ? mappedGrammar : undefined,
     exercises_textbook: teaching?.exercises_textbook,
-    exercises_workbook: teaching?.exercises_workbook ?? workbook ?? undefined,
+    exercises_workbook: resolveExercisesWorkbook(teaching, workbook),
     recap: teaching?.recap,
     proper_nouns: Array.isArray(teaching?.proper_nouns)
       ? (teaching.proper_nouns as HskLessonPackage["proper_nouns"])
@@ -418,6 +684,31 @@ function buildHskLessonPackageFromLessonContent(
   return withOrderedModules(partial);
 }
 
+function enrichPackageWorkbookExercises(
+  pkg: HskLessonPackage,
+  lesson: LessonContent
+): HskLessonPackage {
+  const { teaching, workbook } = getStudyPayloads(lesson.sourceNote);
+  const exercises_workbook = resolveExercisesWorkbook(
+    teaching,
+    workbook,
+    pkg.exercises_workbook
+  );
+  if (!exercises_workbook) return pkg;
+
+  const prevEb = isRecord(pkg.exercises_workbook) ? pkg.exercises_workbook : {};
+  const prevListening = listeningItemCount(prevEb);
+  const nextListening = listeningItemCount(exercises_workbook);
+  if (
+    exercises_workbook === pkg.exercises_workbook &&
+    nextListening === prevListening
+  ) {
+    return pkg;
+  }
+
+  return withOrderedModules({ ...pkg, exercises_workbook });
+}
+
 /** Resolve Gold Standard package for schema-driven LessonPlayer. */
 export function resolveHskLessonPackageFromLesson(
   lesson: LessonContent
@@ -425,6 +716,14 @@ export function resolveHskLessonPackageFromLesson(
   const fromSource = extractHskLessonPackageFromSourceNote(lesson.sourceNote);
   const raw = fromSource ?? buildHskLessonPackageFromLessonContent(lesson);
   if (!raw) return null;
-  const ordered = withOrderedModules(raw);
-  return applyLessonPackageAudioUrls(ordered, lesson);
+  const withStudy = enrichPackageFromStudyTeaching(raw, lesson);
+  const withWorkbook = enrichPackageWorkbookExercises(withStudy, lesson);
+  const ordered = withOrderedModules(withWorkbook);
+  const normalized = normalizeLessonPackageMedia(ordered);
+  const withBase: HskLessonPackage = {
+    ...normalized,
+    audio_base_path:
+      resolvePackageAudioBasePath(lesson, normalized) ?? normalized.audio_base_path,
+  };
+  return applyLessonPackageAudioUrls(withBase, lesson);
 }

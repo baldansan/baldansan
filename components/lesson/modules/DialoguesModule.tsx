@@ -1,33 +1,70 @@
 "use client";
 // components/lesson/modules/DialoguesModule.tsx  (B хувилбар + шинэ үг тодруулга)
-// Чат хэлбэрийн яриа. Мөр бүр: speaker + пиньинь + 汉字 + монгол (товчгүй).
-// Дээд талд нэг "Бүгдийг сонсох" товч — номын ЖИНХЭНЭ бүтэн дуу. TTS ОГТ хэрэглэхгүй.
-// Мөрийн ханзан доторх ШИНЭ ҮГС (хичээлийн vocab) ногоон тодорно — дарвал пиньинь+
-// монгол попап (богино эх уншигчтай ижил зарчим).
+// Чат хэлбэрийн яриа. Дээд талд нэг "Бүгдийг сонсох" — номын бүтэн дуу. TTS ОГТ хэрэглэхгүй.
+// Шинэ үг дээр дарвал пиньинь+монгол попап (богино эхтэй ижил).
 // Гэрээ: { lesson, onDone }.
 
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
+import { resolveLessonPackagePlayableUrl } from "@/lib/lesson/package-audio-resolve";
 import type { Lesson } from "@/types/lesson";
 import "./dialogues-module.css";
-import "./texts-module.css"; // bs-newword, bs-pop загваруудыг дахин ашиглана
+import "./texts-module.css";
 
 type Speed = 0.5 | 0.75 | 1;
 const SPEEDS: Speed[] = [0.5, 0.75, 1];
+
+const POP_PAD = 10;
+const POP_EST_HEIGHT = 96;
 
 function f(o: any, ...keys: string[]) {
   for (const k of keys) if (o && o[k] != null && o[k] !== "") return o[k];
   return "";
 }
 function audioUrl(base: string | undefined, path?: string | null): string | null {
-  if (!path) return null;
-  if (/^https?:\/\//i.test(path)) return path;
-  const b = (base ?? "").replace(/\/+$/, "");
-  const p = String(path).replace(/^\/+/, "");
-  return b ? `${b}/${p}` : p;
+  return resolveLessonPackagePlayableUrl(path, { packageAudioBase: base });
 }
 
 type Vocab = { zh: string; pinyin: string; mn: string };
 type Tok = { t: "plain"; s: string } | { t: "word"; s: string; v: Vocab };
+type VocabPop = {
+  v: Vocab;
+  x: number;
+  yTop: number;
+  yBottom: number;
+  place: "above" | "below";
+};
+
+function anchorVocabPop(container: HTMLElement, button: HTMLElement): Omit<VocabPop, "v"> {
+  const cr = container.getBoundingClientRect();
+  const br = button.getBoundingClientRect();
+  const yTop = br.top - cr.top;
+  const yBottom = br.bottom - cr.top;
+  const xCenter = br.left - cr.left + br.width / 2;
+  const place = yTop < POP_EST_HEIGHT + POP_PAD ? "below" : "above";
+  const half = 120;
+  const x = Math.min(
+    Math.max(xCenter, half + POP_PAD),
+    Math.max(half + POP_PAD, cr.width - half - POP_PAD)
+  );
+  return { x, yTop, yBottom, place };
+}
+
+function refineVocabPop(container: HTMLElement, pop: HTMLElement, anchor: VocabPop): VocabPop {
+  const pw = pop.offsetWidth;
+  const ph = pop.offsetHeight;
+  const half = pw / 2;
+  const cw = container.clientWidth;
+  const ch = container.clientHeight;
+  const x = Math.min(
+    Math.max(anchor.x, half + POP_PAD),
+    Math.max(half + POP_PAD, cw - half - POP_PAD)
+  );
+  let place = anchor.place;
+  if (place === "above" && anchor.yTop < ph + POP_PAD) place = "below";
+  else if (place === "below" && anchor.yBottom + ph + POP_PAD > ch) place = "above";
+  if (x === anchor.x && place === anchor.place) return anchor;
+  return { ...anchor, x, place };
+}
 
 export default function DialoguesModule({
   lesson,
@@ -67,9 +104,10 @@ export default function DialoguesModule({
   const [di, setDi] = useState(0);
   const [speed, setSpeed] = useState<Speed>(1);
   const [playing, setPlaying] = useState(false);
-  const [tapped, setTapped] = useState<{ v: Vocab; x: number; y: number } | null>(null);
+  const [tapped, setTapped] = useState<VocabPop | null>(null);
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const chatRef = useRef<HTMLDivElement | null>(null);
+  const popRef = useRef<HTMLDivElement | null>(null);
 
   const dialogue = dialogues[di];
   const total = dialogues.length;
@@ -106,10 +144,10 @@ export default function DialoguesModule({
   function changeSpeed(s: Speed) { setSpeed(s); if (audioRef.current) audioRef.current.playbackRate = s; }
 
   function tapWord(e: React.MouseEvent, v: Vocab) {
-    const cont = chatRef.current; const btn = e.currentTarget as HTMLElement;
+    const cont = chatRef.current;
+    const btn = e.currentTarget as HTMLElement;
     if (!cont) return;
-    const cr = cont.getBoundingClientRect(); const br = btn.getBoundingClientRect();
-    setTapped({ v, x: br.left - cr.left + br.width / 2, y: br.top - cr.top });
+    setTapped({ v, ...anchorVocabPop(cont, btn) });
   }
   const clearPop = () => setTapped(null);
 
@@ -118,6 +156,12 @@ export default function DialoguesModule({
 
   useEffect(() => () => stopAll(), [stopAll]);
   useEffect(() => { stopAll(); clearPop(); }, [di, stopAll]);
+
+  useLayoutEffect(() => {
+    if (!tapped || !popRef.current || !chatRef.current) return;
+    const next = refineVocabPop(chatRef.current, popRef.current, tapped);
+    if (next.x !== tapped.x || next.place !== tapped.place) setTapped(next);
+  }, [tapped]);
 
   if (!dialogue) {
     return (
@@ -155,8 +199,7 @@ export default function DialoguesModule({
 
       <div className="bs-txt-hint">Тодорсон шинэ үг дээр дарж орчуулгыг нь хараарай.</div>
 
-      <div className="bs-chat" ref={chatRef} style={{ position: "relative" }}
-        onClick={(e) => { if (e.target === e.currentTarget) clearPop(); }}>
+      <div className="bs-chat" ref={chatRef} onClick={(e) => { if (e.target === e.currentTarget) clearPop(); }}>
         {dialogue.lines.map((line: any, idx: number) => {
           const sp = f(line, "speaker");
           const side = sides[sp] ?? "l";
@@ -190,7 +233,14 @@ export default function DialoguesModule({
         {tapped && (
           <>
             <div className="bs-pop-back" onClick={clearPop} />
-            <div className="bs-pop" style={{ left: tapped.x, top: tapped.y }}>
+            <div
+              ref={popRef}
+              className={`bs-pop bs-pop--${tapped.place}`}
+              style={{
+                left: tapped.x,
+                top: tapped.place === "above" ? tapped.yTop : tapped.yBottom,
+              }}
+            >
               <div className="bs-pop-zh">{tapped.v.zh}</div>
               {tapped.v.pinyin && <div className="bs-pop-py">{tapped.v.pinyin}</div>}
               <div className="bs-pop-mn">{tapped.v.mn}</div>
