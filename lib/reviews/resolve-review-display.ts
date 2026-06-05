@@ -1,3 +1,6 @@
+// FOLLOW-UP (Phase 1 ref data): enrich SRS cards via `ref_words` / `ref_characters`
+// when lesson-local vocab is missing or thin (cross-lesson seen items).
+
 import { parseReviewItemRef } from "@/lib/reviews/item-ref";
 import type { ReviewItemType, ReviewRow } from "@/lib/reviews/types";
 import { getLessonById } from "@/lib/content";

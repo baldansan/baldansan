@@ -72,6 +72,18 @@ export type VocabularyWord = {
   mongolianPronunciation?: string;
   pronunciationMn?: string;
   pronunciationHintMn?: string;
+  /** Optional ref_words enrichment — legacy lessons omit these. */
+  radical?: string;
+  frequency?: number;
+  posAuto?: string[];
+  classifiers?: string[];
+  traditional?: string;
+  hskOld?: string[];
+  hskNew?: string[];
+  hskNewest?: string[];
+  meaningsEn?: string[];
+  aboveHsk5Hint?: boolean;
+  officialOldLevel?: string;
 };
 
 export type VocabularyFilter =

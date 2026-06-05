@@ -18,6 +18,7 @@ import {
   parseLegacySourceNoteJsonSegment,
   parseLessonSourceNote,
 } from "@/lib/lesson/source-note-json";
+import { normalizeCharactersPayload } from "@/lib/hanzi/normalize-characters";
 import type {
   HskLessonPackage,
   HskPackageDialogue,
@@ -146,6 +147,20 @@ function resolvePackageDialogues(
   return mapDialogues(studyDialogues);
 }
 
+function resolvePackageCharacters(
+  pkg: Partial<HskLessonPackage>,
+  teaching: Record<string, unknown> | null,
+  studyCharacters: unknown
+): HskLessonPackage["characters"] | undefined {
+  const fromPkg = normalizeCharactersPayload(pkg.characters);
+  if (fromPkg) return fromPkg;
+
+  const fromTeaching = normalizeCharactersPayload(teaching?.characters);
+  if (fromTeaching) return fromTeaching;
+
+  return normalizeCharactersPayload(studyCharacters);
+}
+
 function resolvePackageTexts(
   teaching: Record<string, unknown> | null,
   textsPayload: unknown
@@ -162,7 +177,9 @@ function enrichPackageFromStudyTeaching(
   pkg: HskLessonPackage,
   lesson: LessonContent
 ): HskLessonPackage {
-  const { teaching, texts } = getStudyPayloads(lesson.sourceNote);
+  const { teaching, texts, characters: studyCharacters } = getStudyPayloads(
+    lesson.sourceNote
+  );
   const study = lesson.hskStudy ?? parseHskStudyContentFromLesson(lesson);
 
   const dialogues =
@@ -182,10 +199,13 @@ function enrichPackageFromStudyTeaching(
           ? fromStudy
           : fromPkg;
 
+  const characters = resolvePackageCharacters(pkg, teaching, studyCharacters);
+
   return {
     ...pkg,
     dialogues: dialogues.length > 0 ? dialogues : pkg.dialogues,
     texts: textsOut.length > 0 ? textsOut : pkg.texts,
+    characters: characters ?? pkg.characters,
   };
 }
 
@@ -374,6 +394,7 @@ export const HSK_LESSON_MODULE_ORDER: readonly HskPackageModuleKey[] = [
   "pronunciation",
   "texts",
   "vocabulary",
+  "characters",
   "grammar",
   "exercises_textbook",
   "exercises_workbook",
@@ -414,6 +435,8 @@ export function moduleHasContent(
       return (pkg.texts?.length ?? 0) > 0;
     case "vocabulary":
       return (pkg.vocabulary?.length ?? 0) > 0;
+    case "characters":
+      return (pkg.characters?.characters?.length ?? 0) > 0;
     case "grammar":
       return (pkg.grammar?.length ?? 0) > 0;
     case "exercises_textbook":
@@ -583,6 +606,7 @@ function getStudyPayloads(sourceNote: string | undefined | null) {
       teaching: null as Record<string, unknown> | null,
       texts: null as unknown,
       grammar: null as unknown,
+      characters: null as unknown,
       workbook: resolveWorkbookPayloadFromSourceNote(sourceNote),
     };
   }
@@ -594,10 +618,15 @@ function getStudyPayloads(sourceNote: string | undefined | null) {
       ? study.lessonPayload
       : null;
 
+  const characters =
+    study.characters ??
+    (teaching && isRecord(teaching) ? teaching.characters : null);
+
   return {
     teaching,
     texts: study.texts,
     grammar: study.grammar,
+    characters,
     workbook: resolveWorkbookPayloadFromSourceNote(sourceNote),
   };
 }
@@ -611,7 +640,8 @@ function buildHskLessonPackageFromLessonContent(
   }
 
   const study = lesson.hskStudy ?? parseHskStudyContentFromLesson(lesson);
-  const { teaching, texts, grammar, workbook } = getStudyPayloads(lesson.sourceNote);
+  const { teaching, texts, grammar, workbook, characters: studyCharacters } =
+    getStudyPayloads(lesson.sourceNote);
 
   const vocabulary =
     teaching && Array.isArray(teaching.vocabulary)
@@ -669,6 +699,7 @@ function buildHskLessonPackageFromLessonContent(
       warmup_mn: trim(hookRecord?.warmup_mn) || undefined,
     },
     vocabulary,
+    characters: resolvePackageCharacters({}, teaching, studyCharacters),
     dialogues: dialogues.length > 0 ? dialogues : undefined,
     texts: mappedTexts.length > 0 ? mappedTexts : undefined,
     pronunciation: teaching?.pronunciation,

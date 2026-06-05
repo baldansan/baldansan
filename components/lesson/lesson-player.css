@@ -102,6 +102,16 @@
 .bs-vcard .bs-vmn{font-size:16px;color:var(--bs-ink-2);margin-top:6px;font-weight:500}
 .bs-vcard .bs-pos{display:inline-block;margin-top:10px;font-size:11px;color:var(--bs-muted);border:1px solid var(--bs-line);padding:3px 10px;border-radius:99px}
 .bs-vcard .bs-beyond{display:inline-block;margin-top:10px;margin-left:6px;font-size:11px;color:#B9791B;background:var(--bs-amber-50);border:1px solid var(--bs-amber-100);padding:3px 10px;border-radius:99px}
+.bs-vcard .bs-vmeta{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:6px;margin-top:12px}
+.bs-vcard .bs-vbadge-hsk{font-size:10px;font-weight:800;letter-spacing:.04em;text-transform:uppercase;color:#fff;background:var(--bs-green);padding:4px 9px;border-radius:99px}
+.bs-vcard .bs-vchip-pos{font-size:10.5px;font-weight:600;color:var(--bs-green-700);background:var(--bs-green-50);border:1px solid var(--bs-green-100);padding:3px 9px;border-radius:99px}
+.bs-vcard .bs-vlabel{font-size:10.5px;color:var(--bs-muted);padding:2px 4px}
+.bs-vcard .bs-vlabel b{color:var(--bs-ink-2);font-weight:700}
+.bs-vcard .bs-vlabel-zh{font-family:var(--bs-zh);font-weight:600}
+.bs-vcard .bs-vfreq{font-size:10px;font-weight:700;color:var(--bs-green-700);background:var(--bs-green-50);border:1px dashed var(--bs-green-100);padding:3px 9px;border-radius:99px}
+.bs-vcard .bs-vclassifiers{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:5px;width:100%;margin-top:2px}
+.bs-vcard .bs-vclassifiers-title{font-size:10px;font-weight:700;color:var(--bs-muted);letter-spacing:.02em;margin-right:2px}
+.bs-vcard .bs-vchip-cls{font-size:10.5px;font-weight:600;color:var(--bs-ink-2);border:1px solid var(--bs-line);background:#fff;padding:3px 8px;border-radius:99px}
 
 .bs-example{margin-top:16px;padding:14px;border-radius:14px;background:var(--bs-green-50);text-align:left;display:flex;gap:11px;align-items:flex-start}
 .bs-example .bs-ex-zh{font-family:var(--bs-zh);font-size:16px;font-weight:500;line-height:1.4}
@@ -131,3 +141,22 @@
 .bs-soon{text-align:center;padding:30px 18px;color:var(--bs-muted)}
 .bs-soon .bs-soon-ic{font-size:34px}
 .bs-soon p{font-size:13px;margin-top:8px}
+
+/* hanzi writer — 米字格 */
+.bs-char-writer{margin-top:8px}
+.bs-char-step{font-size:12px;font-weight:600;color:var(--bs-muted);margin:0 0 12px}
+.bs-char-head{text-align:center;margin-bottom:14px}
+.bs-char-glyph{font-family:var(--bs-zh);font-size:42px;font-weight:900;display:block;line-height:1.1}
+.bs-char-pinyin{display:block;font-size:14px;font-weight:600;color:var(--bs-green-700);margin-top:4px}
+.bs-char-meaning{display:block;font-size:13px;color:var(--bs-ink-2);margin-top:2px}
+.bs-mizige{position:relative;width:280px;height:280px;margin:0 auto;border:2px solid #c5cfc8;border-radius:12px;background:#fff;overflow:hidden;color:#d1d5db}
+.bs-mizige-lines{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:0}
+.bs-mizige-canvas{position:relative;z-index:1;width:100%;height:100%}
+.bs-mizige-loading{position:absolute;inset:0;display:grid;place-items:center;font-size:13px;color:var(--bs-muted);z-index:1}
+.bs-stroke-progress{text-align:center;font-size:14px;font-weight:700;color:var(--bs-green-700);margin:10px 0 0}
+.bs-stroke-success{text-align:center;font-size:15px;font-weight:700;color:var(--bs-green-700);margin:8px 0 0}
+.bs-char-meta{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;margin:16px 0 0;font-size:13px}
+.bs-char-meta dt{font-weight:700;color:var(--bs-muted)}
+.bs-char-meta dd{margin:0;color:var(--bs-ink-2)}
+.bs-char-decomp{font-family:var(--bs-zh);font-size:15px;font-weight:600}
+.bs-cta-muted{margin-top:8px;background:#fff;color:var(--bs-ink-2);border:1px solid var(--bs-line);box-shadow:none}

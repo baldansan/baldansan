@@ -37,6 +37,7 @@ export type ChineseHskRawFiles = {
   notes: unknown;
   workbook: unknown;
   quiz: unknown;
+  characters: unknown;
   audioManifest: unknown;
   subtitles: unknown;
   studyContent: unknown;
@@ -225,6 +226,38 @@ function countTexts(textsRaw: unknown): number {
   return 0;
 }
 
+/** Normalize optional characters.json → array stored on lesson.characters. */
+export function normalizeCharactersPayload(raw: unknown): unknown[] {
+  if (raw == null) return [];
+  if (Array.isArray(raw)) return raw;
+  if (isRecord(raw)) {
+    if (Array.isArray(raw.characters)) return raw.characters;
+    if (Array.isArray(raw.items)) return raw.items;
+    if (isNonEmpty(raw)) return [raw];
+  }
+  return [];
+}
+
+/** Merge characters.json onto lesson.json as `characters` when the file is present. */
+export function attachCharactersFileToLesson(
+  raw: ChineseHskRawFiles
+): ChineseHskRawFiles {
+  const fromFile = normalizeCharactersPayload(raw.characters);
+  if (fromFile.length === 0) return raw;
+
+  const lesson = isRecord(raw.lesson) ? { ...raw.lesson } : {};
+  const existing = normalizeCharactersPayload(lesson.characters);
+  const merged = [...existing, ...fromFile];
+
+  return {
+    ...raw,
+    lesson: {
+      ...lesson,
+      characters: merged,
+    },
+  };
+}
+
 /** Collect named sections from all HSK JSON files into one inventory. */
 export function collectHskSectionInventory(input: {
   lesson: unknown;
@@ -234,6 +267,7 @@ export function collectHskSectionInventory(input: {
   notes: unknown;
   workbook: unknown;
   quiz: unknown;
+  characters?: unknown;
   studyContent?: unknown;
 }): ChineseHskSectionInventory {
   const sections: ChineseHskSectionInventory = {};
@@ -284,6 +318,13 @@ export function collectHskSectionInventory(input: {
     for (const [key, value] of Object.entries(input.notes)) {
       assign(key, value);
     }
+  }
+
+  const charactersPayload = normalizeCharactersPayload(input.characters);
+  if (charactersPayload.length > 0) {
+    assign("characters", charactersPayload);
+  } else if (isRecord(input.lesson) && isNonEmpty(input.lesson.characters)) {
+    assign("characters", input.lesson.characters);
   }
 
   if (isRecord(input.workbook)) {
@@ -392,6 +433,7 @@ export function mergeHskProfileIntoSourceNote(
     notes: meta.notesPayload,
     workbook: meta.workbookPayload,
     quiz: null,
+    characters: null,
     audioManifest: options?.audioManifest ?? null,
     subtitles: null,
     studyContent: options?.studyContent ?? meta.studyContentPayload,

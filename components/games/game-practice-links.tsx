@@ -20,6 +20,7 @@ const LINK_COLORS: Record<GameLinkSlug, string> = {
   "missing-word": "bg-amber-100 text-amber-800",
   arrange: "bg-emerald-100 text-emerald-800",
   stroke: "bg-rose-100 text-rose-800",
+  radical: "bg-orange-100 text-orange-800",
 };
 
 export function GamePracticeLinks({

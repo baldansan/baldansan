@@ -19,6 +19,21 @@ function vocabKey(w: VocabItem): string {
   return String(w.id ?? w.zh);
 }
 
+/** ref_words frequency rank — lower number = more common in corpus. */
+const COMMON_FREQUENCY_MAX = 2500;
+
+function formatHskBadge(hskOld?: string[]): string | null {
+  const raw = hskOld?.[0]?.trim();
+  if (!raw) return null;
+  if (/^hsk/i.test(raw)) return raw.toUpperCase();
+  const digits = raw.replace(/\D/g, "");
+  return digits ? `HSK${digits}` : raw;
+}
+
+function isCommonFrequency(frequency?: number): boolean {
+  return typeof frequency === "number" && frequency > 0 && frequency <= COMMON_FREQUENCY_MAX;
+}
+
 export default function VocabularyCard({
   lessonId,
   lesson,
@@ -41,6 +56,37 @@ export default function VocabularyCard({
     () => Boolean(w && w.example_zh && w.example_zh.trim().length > 0),
     [w]
   );
+
+  const enrichment = useMemo(() => {
+    if (!w) {
+      return {
+        hskBadge: null as string | null,
+        posAuto: [] as string[],
+        radical: null as string | null,
+        traditional: null as string | null,
+        showFrequency: false,
+        classifiers: [] as string[],
+      };
+    }
+    const posAuto = (w.posAuto ?? []).map((p) => p.trim()).filter(Boolean);
+    const classifiers = (w.classifiers ?? []).map((c) => c.trim()).filter(Boolean);
+    return {
+      hskBadge: formatHskBadge(w.hskOld),
+      posAuto,
+      radical: w.radical?.trim() || null,
+      traditional: w.traditional?.trim() || null,
+      showFrequency: isCommonFrequency(w.frequency),
+      classifiers,
+    };
+  }, [w]);
+
+  const hasEnrichmentMeta =
+    enrichment.hskBadge ||
+    enrichment.posAuto.length > 0 ||
+    enrichment.radical ||
+    enrichment.traditional ||
+    enrichment.showFrequency ||
+    enrichment.classifiers.length > 0;
 
   useEffect(() => {
     if (total === 0 || hydrateDoneRef.current) return;
@@ -126,8 +172,47 @@ export default function VocabularyCard({
         <div className="bs-hanzi">{w.zh}</div>
         <div className="bs-vpy">{w.pinyin}</div>
         <div className="bs-vmn">{w.mn}</div>
+
+        {hasEnrichmentMeta ? (
+          <div className="bs-vmeta">
+            {enrichment.hskBadge ? (
+              <span className="bs-vbadge-hsk">{enrichment.hskBadge}</span>
+            ) : null}
+            {enrichment.posAuto.map((pos) => (
+              <span key={pos} className="bs-vchip-pos">
+                {pos}
+              </span>
+            ))}
+            {enrichment.radical ? (
+              <span className="bs-vlabel">
+                радикал <b>{enrichment.radical}</b>
+              </span>
+            ) : null}
+            {enrichment.traditional ? (
+              <span className="bs-vlabel">
+                уламжлалт <b className="bs-vlabel-zh">{enrichment.traditional}</b>
+              </span>
+            ) : null}
+            {enrichment.showFrequency ? (
+              <span className="bs-vfreq">түгээмэл</span>
+            ) : null}
+            {enrichment.classifiers.length > 0 ? (
+              <div className="bs-vclassifiers">
+                <span className="bs-vclassifiers-title">тоолох үг</span>
+                {enrichment.classifiers.map((cls) => (
+                  <span key={cls} className="bs-vchip-cls">
+                    {cls}
+                  </span>
+                ))}
+              </div>
+            ) : null}
+          </div>
+        ) : null}
+
         <div>
-          {w.pos && <span className="bs-pos">{w.pos}</span>}
+          {enrichment.posAuto.length === 0 && w.pos ? (
+            <span className="bs-pos">{w.pos}</span>
+          ) : null}
           {w.beyond_syllabus && <span className="bs-beyond">超纲</span>}
         </div>
 

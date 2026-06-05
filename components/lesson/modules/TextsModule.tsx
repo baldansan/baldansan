@@ -1,6 +1,8 @@
 "use client";
 // components/lesson/modules/TextsModule.tsx
 // Богино эх: sentences[] + tokens[{zh, py}] — ханз default, пиньинь дээр, орчуулга өгүүлбэр бүрт.
+// FOLLOW-UP (Phase 1 ref data): tap-to-lookup should hydrate from Supabase `ref_words` /
+// `ref_characters` (radical, components, frequency, etc.), not lesson vocab only.
 
 import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import { resolveLessonPackagePlayableUrl } from "@/lib/lesson/package-audio-resolve";

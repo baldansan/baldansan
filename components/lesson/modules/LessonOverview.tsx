@@ -19,6 +19,7 @@ import type {
 
 const MODULE_META: Partial<Record<ModuleKey, { label: string; icon: string; sub?: string }>> = {
   vocabulary: { label: "Шинэ үг сурах", icon: "🗂" },
+  characters: { label: "Ханз бичих", icon: "✍️" },
   dialogues: { label: "Яриа сонсох", icon: "💬" },
   texts: { label: "Богино эх унших", icon: "📄" },
   grammar: { label: "Дүрэм", icon: "📐" },
@@ -50,6 +51,7 @@ export default function LessonOverview({
   onJump?: (key: ModuleKey) => void;
 }) {
   const vocabN = count(lesson.vocabulary);
+  const charN = lesson.characters?.count ?? count(lesson.characters?.characters);
   const dialogN = count(lesson.dialogues);
   const textN = count(lesson.texts);
   const grammarN = count(lesson.grammar);
@@ -146,6 +148,11 @@ export default function LessonOverview({
           {vocabN > 0 && (
             <span className="bs-chip">
               <span className="bs-n">{vocabN}</span> шинэ үг
+            </span>
+          )}
+          {charN > 0 && (
+            <span className="bs-chip">
+              <span className="bs-n">{charN}</span> ханз
             </span>
           )}
           {studiedWords > 0 && (

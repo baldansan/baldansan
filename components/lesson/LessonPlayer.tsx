@@ -13,6 +13,7 @@ import "./lesson-player.css";
 
 import LessonOverview from "./modules/LessonOverview";
 import VocabularyCard from "./modules/VocabularyCard";
+import CharactersModule from "./modules/CharactersModule";
 import DialoguesModule from "./modules/DialoguesModule";
 import TextsModule from "./modules/TextsModule";
 import GrammarModule from "./modules/GrammarModule";
@@ -25,6 +26,7 @@ import ComingSoon from "./modules/ComingSoon";
 const MODULE_LABEL: Record<ModuleKey, string> = {
   hook: "Танилцуулга",
   vocabulary: "Шинэ үг",
+  characters: "Ханз бичих",
   dialogues: "Яриа",
   texts: "Богино эх",
   pronunciation: "Дуудлага",
@@ -101,6 +103,10 @@ export default function LessonPlayer({
         );
       case "vocabulary":
         return <VocabularyCard lessonId={lessonId} lesson={lesson} onDone={next} />;
+      case "characters":
+        return (
+          <CharactersModule lessonId={lessonId} lesson={lesson} onDone={next} />
+        );
       case "dialogues":
         return <DialoguesModule lesson={lesson} onDone={next} />;
       case "texts":

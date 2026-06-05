@@ -3,6 +3,7 @@
 export type HskPackageModuleKey =
   | "hook"
   | "vocabulary"
+  | "characters"
   | "dialogues"
   | "texts"
   | "pronunciation"
@@ -28,7 +29,38 @@ export interface HskPackageHook {
   warmup_mn?: string;
 }
 
-export interface HskPackageVocabItem {
+/** Lesson hanzi row from optional characters.json (ref_characters enrichment). */
+export interface HskCharacter {
+  hanzi: string;
+  pinyin: string[];
+  strokeCount?: number;
+  radical?: string;
+  components?: { c: string; meaning_en?: string; meaning_mn?: string }[];
+  readingLevel?: number;
+  writingLevel?: number;
+  practice: "write" | "recognize";
+  frequency?: number;
+  exampleWords?: string[];
+  meaningEn?: string;
+  meaningMn?: string;
+}
+
+/** Optional ref_words enrichment — all fields optional for legacy packages. */
+export type HskVocabEnrichment = {
+  radical?: string;
+  frequency?: number;
+  posAuto?: string[];
+  classifiers?: string[];
+  traditional?: string;
+  hskOld?: string[];
+  hskNew?: string[];
+  hskNewest?: string[];
+  meaningsEn?: string[];
+  aboveHsk5Hint?: boolean;
+  officialOldLevel?: string;
+};
+
+export interface HskPackageVocabItem extends HskVocabEnrichment {
   id: number;
   zh: string;
   pinyin: string;
@@ -99,6 +131,11 @@ export interface HskLessonPackage {
   modules_enabled: HskPackageModuleKey[];
   hook: HskPackageHook;
   vocabulary: HskPackageVocabItem[];
+  characters?: {
+    count: number;
+    writeCount: number;
+    characters: HskCharacter[];
+  };
   proper_nouns?: { zh: string; pinyin: string; mn: string }[];
   dialogues?: HskPackageDialogue[];
   texts?: HskPackageShortText[];
