@@ -24,6 +24,7 @@ import {
 } from "@/lib/import/chinese-hsk-study-bundle";
 import {
   isChineseHskManifestRaw,
+  attachCharactersFileToLesson,
   mergeHskProfileIntoSourceNote,
   normalizeChineseHskManifest,
   normalizeChineseHskVocabularyRow,
@@ -250,7 +251,9 @@ export async function parseChineseHskLessonZip(file: File): Promise<LessonZipVal
       "media/manifest.json",
     ]);
 
-    const rawFiles: ChineseHskRawFiles = {
+    const charactersResult = await readJsonFile(zip, "characters.json");
+
+    let rawFiles: ChineseHskRawFiles = attachCharactersFileToLesson({
       manifest: manifestResult.data,
       lesson: (await readJsonFile(zip, "lesson.json")).data,
       texts: (await readJsonFile(zip, "texts.json")).data,
@@ -259,11 +262,16 @@ export async function parseChineseHskLessonZip(file: File): Promise<LessonZipVal
       notes: (await readJsonFile(zip, "notes.json")).data,
       workbook: (await readJsonFile(zip, "workbook.json")).data,
       quiz: (await readJsonFile(zip, "quiz.json")).data,
+      characters: charactersResult.data,
       audioManifest: (await readJsonFile(zip, "audio-manifest.json")).data,
       subtitles: (await readJsonFile(zip, "subtitles.json")).data,
       studyContent: studyContentResult.data,
       media: mediaResult.data,
-    };
+    });
+
+    if (charactersResult.error) {
+      warnings.push(charactersResult.error);
+    }
 
     if (studyContentResult.path) {
       warnings.push(`Loaded study content from ${studyContentResult.path}.`);

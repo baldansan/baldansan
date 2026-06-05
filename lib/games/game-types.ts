@@ -3,7 +3,8 @@ export type GameType =
   | "translate"
   | "missing-word"
   | "arrange"
-  | "stroke";
+  | "stroke"
+  | "radical";
 
 export type GameVocabItem = {
   id: string;

@@ -3,6 +3,7 @@
 import { useRouter } from "next/navigation";
 import nextDynamic from "next/dynamic";
 import { AdminPreviewBanner } from "@/components/admin-preview-banner";
+import PhoneFrame from "@/components/layout/PhoneFrame";
 import LessonPlayer from "@/components/lesson/LessonPlayer";
 import { ExamLessonWatchClient } from "@/components/lesson/exam-lesson-watch";
 import { TextbookLessonWatchClient } from "@/components/lesson/textbook-lesson-watch";
@@ -34,22 +35,27 @@ type Props = {
 };
 
 function SchemaLessonWatchPlayer({
+  lessonId,
   lessonPackage,
   adminPreview = false,
 }: {
+  lessonId: string;
   lessonPackage: HskLessonPackage;
   adminPreview?: boolean;
 }) {
   const router = useRouter();
 
   return (
-    <>
-      {adminPreview ? <AdminPreviewBanner /> : null}
-      <LessonPlayer
-        lesson={lessonPackage}
-        onExit={() => router.back()}
-      />
-    </>
+    <PhoneFrame>
+      <div className="bs-app-shell-inner">
+        {adminPreview ? <AdminPreviewBanner /> : null}
+        <LessonPlayer
+          lessonId={lessonId}
+          lesson={lessonPackage}
+          onExit={() => router.back()}
+        />
+      </div>
+    </PhoneFrame>
   );
 }
 
@@ -62,6 +68,7 @@ export function LessonWatchClient({
   if (lessonPackage) {
     return (
       <SchemaLessonWatchPlayer
+        lessonId={lesson.id}
         lessonPackage={lessonPackage}
         adminPreview={adminPreview}
       />

@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/cta-button-row";
 import { lessonPreviewPath } from "@/lib/lesson-publish";
 import { resolveVocabularyAudioUrl } from "@/lib/lesson/teaching-media";
+import { recordStudiedWordKey } from "@/lib/lesson/bs-step-progress";
 import { vocabularyWordKey } from "@/lib/progress";
 import { containsTargetScript, resolveTtsLang } from "@/lib/tts/infer-lang";
 import type { HskMediaImageVariant } from "@/lib/lesson/hsk-media";
@@ -96,6 +97,10 @@ export function HskFlashcardVocabularyStudy({
 
   const current = words[index];
   const currentKey = current ? vocabularyWordKey(current) : "";
+
+  useEffect(() => {
+    if (currentKey) recordStudiedWordKey(lesson.id, currentKey);
+  }, [lesson.id, currentKey]);
   const ttsLang = resolveTtsLang({ courseId: lesson.courseId });
   const wordAudioUrl = current
     ? resolveVocabularyAudioUrl(current, lesson.vocabularyAudioMap)

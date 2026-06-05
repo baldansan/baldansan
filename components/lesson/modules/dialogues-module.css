@@ -120,13 +120,7 @@
   margin-bottom: 5px;
 }
 
-.bs-line {
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
-}
 .bs-line-tx {
-  flex: 1;
   min-width: 0;
 }
 .bs-py {
@@ -149,13 +143,3 @@
   line-height: 1.45;
 }
 
-/* Мөрийн тоглуулах товч — bs-speak (lesson-player.css)-г өргөтгөв */
-.bs-dlg .bs-speak {
-  flex: none;
-  margin-top: 2px;
-}
-.bs-dlg .bs-speak.bs-on {
-  background: var(--bs-green);
-  color: #fff;
-  border-color: var(--bs-green);
-}

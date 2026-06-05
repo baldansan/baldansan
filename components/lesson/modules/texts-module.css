@@ -1,18 +1,14 @@
 /* components/lesson/modules/texts-module.css
-   "texts" модулийн загвар — унших эх + хурд сонгогч + нуух/харах.
-   Токенууд .bs-root-оос УДАМШина. Бүх класс "bs-" угтвартай. */
+   Богино эх v3: sentences + tokens (ruby пиньинь) + шинэ үгийн попап */
 
-/* Хяналтын мөр */
 .bs-txt-bar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 10px;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
   flex-wrap: wrap;
 }
-
-/* Хурд сонгогч (dialogues-тэй ижил харагдац — модуль бие даан ажиллахын тулд энд бас тодорхойлов) */
 .bs-txt .bs-speeds {
   display: inline-flex;
   background: var(--bs-bg);
@@ -42,7 +38,6 @@
   box-shadow: var(--bs-shadow);
 }
 
-/* "Сонсох" товч */
 .bs-txt-play {
   display: inline-flex;
   align-items: center;
@@ -58,71 +53,174 @@
   cursor: pointer;
   transition: transform 0.15s ease, background 0.15s ease;
 }
-.bs-txt-play:active {
+.bs-txt-play:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+.bs-txt-play:active:not(:disabled) {
   transform: scale(0.96);
 }
 .bs-txt-play.bs-on {
   background: var(--bs-green-50);
 }
 
-/* Эх (унших биеийн хэсэг) */
+.bs-txt-hint {
+  font-size: 12px;
+  color: var(--bs-muted);
+  margin-bottom: 8px;
+}
+
 .bs-txt-body {
+  position: relative;
+  overflow: visible;
   background: var(--bs-bg);
   border: 1px solid var(--bs-line);
   border-radius: var(--bs-radius-sm, 14px);
   padding: 18px;
   animation: bs-fadeUp 0.4s cubic-bezier(0.2, 0.7, 0.2, 1) both;
 }
-.bs-txt-zh {
+
+.bs-txt-sentences {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.bs-txt-sentence {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.bs-txt-ruby-line {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 2px 6px;
+  line-height: 1.15;
+}
+
+.bs-txt-unit {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  vertical-align: bottom;
+}
+
+.bs-txt-py-above {
+  font-size: 11px;
+  color: var(--bs-muted);
+  font-weight: 600;
+  line-height: 1.15;
+  min-height: 14px;
+  white-space: nowrap;
+  text-align: center;
+}
+.bs-txt-py-above.bs-txt-py-empty {
+  visibility: hidden;
+}
+
+.bs-txt-zh-char {
   font-family: var(--bs-zh);
   font-size: 21px;
   font-weight: 600;
   color: var(--bs-ink);
-  line-height: 1.95;
-  letter-spacing: 0.01em;
+  line-height: 1.35;
 }
-.bs-txt-py {
-  font-size: 13.5px;
-  color: var(--bs-muted);
+
+.bs-newword {
+  font-family: var(--bs-zh);
+  font-size: 21px;
   font-weight: 600;
-  line-height: 1.7;
-  margin-top: 12px;
-  padding-top: 12px;
-  border-top: 1px dashed var(--bs-line);
+  color: var(--bs-green-800, #0f7338);
+  background: var(--bs-green-50);
+  border: none;
+  border-bottom: 2px solid var(--bs-green);
+  border-radius: 5px;
+  padding: 0 2px;
+  margin: 0 1px;
+  cursor: pointer;
+  line-height: 1.35;
+  transition: background 0.12s ease;
 }
-.bs-txt-mn {
+.bs-newword:active {
+  background: var(--bs-green-100);
+}
+
+.bs-txt-mn-line {
   font-size: 14.5px;
   color: var(--bs-ink-2);
-  line-height: 1.7;
-  margin-top: 12px;
-  padding-top: 12px;
-  border-top: 1px dashed var(--bs-line);
+  line-height: 1.65;
+  padding-left: 2px;
+  border-left: 3px solid var(--bs-green-100);
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
 
-/* "Орчуулга харах" — нээх товч */
-.bs-reveal {
-  display: block;
-  width: 100%;
-  margin-top: 14px;
-  border: 1px dashed var(--bs-green-100);
+.bs-pop-back {
+  position: fixed;
+  inset: 0;
+  z-index: 20;
+}
+.bs-pop {
+  position: absolute;
+  z-index: 21;
+  min-width: 120px;
+  max-width: min(240px, calc(100% - 16px));
   background: #fff;
-  color: var(--bs-green-700);
-  font-family: var(--bs-ui);
-  font-weight: 700;
-  font-size: 13.5px;
-  padding: 12px;
+  border: 1px solid var(--bs-green-100);
   border-radius: 12px;
-  cursor: pointer;
-  transition: transform 0.15s ease, background 0.15s ease;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.14);
+  padding: 10px 13px;
+  text-align: center;
+  animation: bs-fadeUp 0.15s ease both;
+  pointer-events: auto;
 }
-.bs-reveal:active {
-  transform: scale(0.98);
+.bs-pop--above {
+  transform: translate(-50%, calc(-100% - 10px));
 }
-.bs-reveal:hover {
-  background: var(--bs-green-50);
+.bs-pop--above::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -7px;
+  transform: translateX(-50%);
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 7px solid #fff;
+}
+.bs-pop--below {
+  transform: translate(-50%, 10px);
+}
+.bs-pop--below::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -7px;
+  transform: translateX(-50%);
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom: 7px solid #fff;
+}
+.bs-pop-zh {
+  font-family: var(--bs-zh);
+  font-size: 19px;
+  font-weight: 700;
+  color: var(--bs-ink);
+}
+.bs-pop-py {
+  font-size: 12.5px;
+  color: var(--bs-muted);
+  font-weight: 600;
+  margin-top: 2px;
+}
+.bs-pop-mn {
+  font-size: 14px;
+  color: var(--bs-green-800, #0f7338);
+  font-weight: 600;
+  margin-top: 4px;
 }
 
-/* Тохиргооны жижиг товчнууд */
 .bs-txt-toggles {
   display: flex;
   gap: 8px;

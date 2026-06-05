@@ -5,6 +5,8 @@ import {
   parseHskStudyContentFromLesson,
   type HskCharacterNote,
 } from "@/lib/lesson/hsk-lesson-content";
+import { resolveHskLessonPackageFromLesson } from "@/lib/lesson/resolve-hsk-lesson-package";
+import type { HskCharacter } from "@/types/hsk-lesson-package";
 import type { LessonContent } from "@/types/lesson-content";
 import type { GameVocabItem } from "@/lib/games/game-types";
 import { toGameVocabItem } from "@/lib/games/game-data-core";
@@ -27,6 +29,10 @@ export type GameLabels = {
   arrangeEmptyMessage: string;
   missingEmptyMessage: string;
   strokeHint: string;
+  radicalTitle: string;
+  radicalDesc: string;
+  radicalEmptyMessage: string;
+  radicalFamilyLabel: string;
 };
 
 const CHINESE_LABELS: GameLabels = {
@@ -49,6 +55,11 @@ const CHINESE_LABELS: GameLabels = {
   missingEmptyMessage:
     "Энэ тоглоомд example sentence хэрэгтэй. Үг бүрт жишээ өгүүлбэр нэмэгдсэн эсэхийг шалгана уу.",
   strokeHint: "偏旁 / зураасны дараалал — ханзны бүтэц таних",
+  radicalTitle: "Үндэс · бүрдэл",
+  radicalDesc: "偏旁-ийн утга тааруулж, ханз бүрдэх",
+  radicalEmptyMessage:
+    "Энэ хичээлд components бүхий ханз байхгүй байна (characters.json).",
+  radicalFamilyLabel: "Үндэстэй ханзын бүлэг",
 };
 
 const KOREAN_LABELS: GameLabels = {
@@ -69,6 +80,10 @@ const KOREAN_LABELS: GameLabels = {
   arrangeEmptyMessage: "Энэ хичээлд үе/үг эвлүүлэх дасгал үүсгэхэд хангалттай үг алга.",
   missingEmptyMessage: "Энэ хичээлд дутуу үсэг/үг дасгал үүсгэхэд хангалттай үг алга.",
   strokeHint: "Хангыль үсэг бүтээх — дутуу хэсгийг сонго",
+  radicalTitle: "Үндэс · бүрдэл",
+  radicalDesc: "偏旁-ийн утга тааруулж, ханз бүрдэх",
+  radicalEmptyMessage: "Энэ хичээлд ханзны бүрдэл тоглоом үүсгэхэд хангалттай өгөгдөл алга.",
+  radicalFamilyLabel: "Үндэстэй ханзын бүлэг",
 };
 
 const KOREAN_PRELESSON_LABELS: GameLabels = {
@@ -91,6 +106,7 @@ export type GameLessonContext = {
   isTextbook: boolean;
   labels: GameLabels;
   hskCharacterNotes: HskCharacterNote[];
+  lessonCharacters: HskCharacter[];
 };
 
 export function resolveGameLabels(
@@ -109,6 +125,8 @@ export function buildGameLessonContext(lesson: LessonContent): GameLessonContext
   const hskStudy =
     lesson.hskStudy ?? parseHskStudyContentFromLesson(lesson);
 
+  const lessonPackage = resolveHskLessonPackageFromLesson(lesson);
+
   return {
     vocabulary: lesson.vocabulary.map(toGameVocabItem),
     courseId: lesson.courseId,
@@ -118,6 +136,7 @@ export function buildGameLessonContext(lesson: LessonContent): GameLessonContext
     isTextbook,
     labels: resolveGameLabels(isKorean, isPrelesson),
     hskCharacterNotes: hskStudy.characterNotes,
+    lessonCharacters: lessonPackage?.characters?.characters ?? [],
   };
 }
 
@@ -132,7 +151,8 @@ export type GameLinkSlug =
   | "translate"
   | "missing-word"
   | "arrange"
-  | "stroke";
+  | "stroke"
+  | "radical";
 
 export function defaultGameLinksForContext(
   context: Pick<GameLessonContext, "isKorean" | "isPrelesson">
@@ -143,7 +163,14 @@ export function defaultGameLinksForContext(
   if (context.isKorean) {
     return ["match", "translate", "missing-word", "arrange", "stroke"];
   }
-  return ["match", "translate", "missing-word", "arrange", "stroke"];
+  return [
+    "match",
+    "translate",
+    "missing-word",
+    "arrange",
+    "stroke",
+    "radical",
+  ];
 }
 
 export function gameLinkLabel(
@@ -161,6 +188,8 @@ export function gameLinkLabel(
       return labels.arrangeTitle;
     case "stroke":
       return labels.strokeTitle;
+    case "radical":
+      return labels.radicalTitle;
   }
 }
 
@@ -173,5 +202,6 @@ export function emptyGameLessonContext(): GameLessonContext {
     isTextbook: false,
     labels: CHINESE_LABELS,
     hskCharacterNotes: [],
+    lessonCharacters: [],
   };
 }

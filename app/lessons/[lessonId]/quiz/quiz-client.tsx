@@ -18,6 +18,13 @@ import { isKoreanLesson0BeginnerFlow } from "@/lib/lesson/korean-lesson0-flow";
 import { lessonPreviewPath } from "@/lib/lesson-publish";
 import { LEARNER_LESSON, LEARNER_QUIZ } from "@/lib/learner-labels";
 import {
+  clearBsQuizProgress,
+  getBsQuizProgress,
+  matchVocabularyWordKeyFromAnswer,
+  recordStudiedWordKey,
+  saveBsQuizProgress,
+} from "@/lib/lesson/bs-step-progress";
+import {
   getQuizResultSmart,
   markLessonCompletedSmart,
   PASSING_QUIZ_PERCENT,
@@ -77,6 +84,7 @@ export function LessonQuizClient({
   const [finished, setFinished] = useState(false);
   const [savedResult, setSavedResult] = useState<QuizResult | null>(null);
   const persistAttemptRef = useRef(false);
+  const quizHydratedRef = useRef(false);
   const feedbackRef = useRef<HTMLDivElement>(null);
 
   const current = quizQuestions[currentIndex];
@@ -100,6 +108,37 @@ export function LessonQuizClient({
     }
     void load();
   }, [lesson.id]);
+
+  useEffect(() => {
+    if (quizHydratedRef.current || total === 0) return;
+    quizHydratedRef.current = true;
+    const saved = getBsQuizProgress(lesson.id);
+    if (!saved) return;
+    const idx = Math.min(Math.max(0, saved.currentIndex), total - 1);
+    setCurrentIndex(idx);
+    setCorrectCount(saved.correctCount ?? 0);
+    if (saved.finished || saved.completed) {
+      setFinished(true);
+    }
+  }, [lesson.id, total]);
+
+  useEffect(() => {
+    if (!quizHydratedRef.current || total === 0) return;
+    saveBsQuizProgress(lesson.id, {
+      currentIndex,
+      correctCount,
+      answeredCount: answerDetails.length,
+      finished,
+      completed: finished,
+    });
+  }, [
+    lesson.id,
+    currentIndex,
+    correctCount,
+    answerDetails.length,
+    finished,
+    total,
+  ]);
 
   useEffect(() => {
     if (!revealed) return;
@@ -147,6 +186,11 @@ export function LessonQuizClient({
     ]);
     if (option === current.correctAnswer) {
       setCorrectCount((c) => c + 1);
+      const wordKey = matchVocabularyWordKeyFromAnswer(
+        current.correctAnswer,
+        lesson.vocabulary
+      );
+      if (wordKey) recordStudiedWordKey(lesson.id, wordKey);
     }
   }
 
@@ -161,6 +205,7 @@ export function LessonQuizClient({
   }
 
   function restartQuiz() {
+    clearBsQuizProgress(lesson.id);
     setCurrentIndex(0);
     setSelected(null);
     setRevealed(false);
@@ -308,7 +353,7 @@ export function LessonQuizClient({
               onClick={restartQuiz}
               className={ctaSecondaryClass}
             >
-              {LEARNER_QUIZ.restart}
+              Дахин эхлэх
             </button>
             <Link
               href={lessonPreviewPath(lesson.id, { adminPreview, subpath: "vocabulary" })}

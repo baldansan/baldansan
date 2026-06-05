@@ -1,3 +1,7 @@
+// FOLLOW-UP (Phase 1 ref data): Давтах SRS queue should resolve display + scheduling
+// from Supabase `ref_words` / `ref_characters`, aggregating every word/character the
+// learner has seen across lessons (not only per-lesson vocabulary rows).
+
 import { hasSupabaseConfig, supabase } from "@/lib/supabase/client";
 import { applySm2Lite, initialReviewSchedule } from "@/lib/reviews/scheduler";
 import type {

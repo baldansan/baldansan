@@ -248,7 +248,7 @@ export default async function LessonDetailPage({
           />
         </MobileCard>
 
-        <LessonProgressCard lessonId={lesson.id} />
+        <LessonProgressCard lessonId={lesson.id} quizCount={lesson.quizCount} />
         <TeacherAssignmentCta lessonId={lesson.id} />
       </div>
     </MobileAppShell>

@@ -83,6 +83,19 @@ function gamesForLanguage(
       color: "from-rose-400 to-rose-500",
       badge: "Шинэ",
     },
+    ...(!isKorean
+      ? [
+          {
+            id: "radical" as const,
+            slug: "radical" as const,
+            title: labels.radicalTitle,
+            desc: labels.radicalDesc,
+            icon: "🧩",
+            color: "from-orange-400 to-orange-500",
+            badge: "Шинэ",
+          },
+        ]
+      : []),
   ];
 }
 

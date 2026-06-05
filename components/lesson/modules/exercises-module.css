@@ -17,6 +17,59 @@
   margin-top: 4px;
 }
 
+/* Асуултын дугаар — чөлөөт үсрэлт (ном шиг) */
+.bs-ex-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 12px 0 14px;
+  padding: 10px;
+  background: var(--bs-bg);
+  border: 1px solid var(--bs-line);
+  border-radius: 14px;
+  max-height: 140px;
+  overflow-y: auto;
+}
+.bs-ex-nav-btn {
+  min-width: 34px;
+  height: 34px;
+  padding: 0 8px;
+  border: 1px solid var(--bs-line);
+  background: #fff;
+  color: var(--bs-ink-2);
+  font-family: var(--bs-ui);
+  font-weight: 700;
+  font-size: 13px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.12s ease, background 0.15s ease, border-color 0.15s ease,
+    color 0.15s ease;
+}
+.bs-ex-nav-btn:not(:disabled):active {
+  transform: scale(0.94);
+}
+.bs-ex-nav-btn.bs-current {
+  border-color: var(--bs-green);
+  background: var(--bs-green);
+  color: #fff;
+  box-shadow: var(--bs-shadow);
+}
+.bs-ex-nav-btn.bs-done-ok {
+  background: var(--bs-green-50);
+  border-color: var(--bs-green-100);
+  color: var(--bs-green-800, #0f7338);
+}
+.bs-ex-nav-btn.bs-done-no {
+  background: #fdecec;
+  border-color: #f0b4b4;
+  color: #b42318;
+}
+.bs-ex-nav-btn.bs-started:not(.bs-current) {
+  background: #fffbeb;
+  border-color: #f5d78e;
+  color: #92400e;
+}
+
 /* Сонсголын аудио мөр */
 .bs-ex-audiobar {
   display: flex;
@@ -83,6 +136,25 @@
   border-radius: 12px;
   padding: 13px 15px;
   margin-top: 14px;
+}
+
+/* Нэг аудио хуваалцсан сонсгол — олон асуулт */
+.bs-ex-group-item {
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid var(--bs-line);
+}
+.bs-ex-group-item:first-child {
+  margin-top: 8px;
+  padding-top: 0;
+  border-top: none;
+}
+.bs-ex-group-n {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  color: var(--bs-muted);
+  margin-bottom: 6px;
 }
 
 /* Асуулт */

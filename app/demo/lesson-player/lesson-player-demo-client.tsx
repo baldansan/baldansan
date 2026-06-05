@@ -10,6 +10,7 @@ export function LessonPlayerDemoClient() {
 
   return (
     <LessonPlayer
+      lessonId="demo-hsk4-l01"
       lesson={lesson01 as HskLessonPackage}
       onExit={() => router.push("/demo")}
     />
