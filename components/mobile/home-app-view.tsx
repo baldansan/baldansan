@@ -9,6 +9,10 @@ import {
   resolveDefaultChipForLanguage,
 } from "@/lib/language-track";
 import { ReviewDueBadge } from "@/components/review/review-due-badge";
+import {
+  useActiveHskLevel,
+  useRegisterLessonHskLevels,
+} from "@/components/providers/active-hsk-level-provider";
 import { MobileCard } from "@/components/mobile/mobile-card";
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
 import { lessonPath } from "@/lib/content";
@@ -21,12 +25,25 @@ import {
 } from "@/lib/progress";
 import { getCurrentUser, hasSupabaseConfig } from "@/lib/supabase/auth";
 import { getStreakUnified } from "@/lib/retention/retention-service";
+import {
+  filterLessonsByActiveHskLevel,
+  lessonMatchesActiveHskLevel,
+  resolveLessonHskLevel,
+} from "@/lib/hsk/active-hsk-level";
 import type { LessonContent } from "@/types/lesson-content";
 
 type Props = {
   catalog: MobileCourseCatalogEntry[];
   defaultChipId: string;
 };
+
+function resolveCatalogChipLevel(entry: MobileCourseCatalogEntry): number | null {
+  const fromCourse = resolveLessonHskLevel({ courseId: entry.courseId });
+  if (fromCourse != null) return fromCourse;
+  const chip = entry.chipId.toLowerCase();
+  const match = chip.match(/hsk(\d)/);
+  return match ? Number(match[1]) : null;
+}
 
 function avatarInitial(name: string): string {
   const trimmed = name.trim();
@@ -35,6 +52,7 @@ function avatarInitial(name: string): string {
 }
 
 export function HomeAppView({ catalog, defaultChipId }: Props) {
+  const { level: activeHskLevel, hydrated: hskHydrated } = useActiveHskLevel();
   const [selectedLang, setSelectedLang] = useState<ReturnType<typeof getSelectedLanguage>>(null);
   const [activeChip, setActiveChip] = useState(defaultChipId);
   const [displayName, setDisplayName] = useState("Зочин");
@@ -47,16 +65,32 @@ export function HomeAppView({ catalog, defaultChipId }: Props) {
   >({});
 
   const visibleCatalog = useMemo(() => {
-    if (!selectedLang) return catalog;
-    return catalog.filter((entry) => {
-      if (!entry.available) {
-        return selectedLang === "zh"
-          ? entry.courseId.includes("hsk")
-          : entry.courseId.startsWith("korean");
-      }
-      return catalogEntryMatchesLanguage(entry, selectedLang);
-    });
-  }, [catalog, selectedLang]);
+    let entries = catalog;
+    if (selectedLang) {
+      entries = entries.filter((entry) => {
+        if (!entry.available) {
+          return selectedLang === "zh"
+            ? entry.courseId.includes("hsk")
+            : entry.courseId.startsWith("korean");
+        }
+        return catalogEntryMatchesLanguage(entry, selectedLang);
+      });
+    }
+    if (selectedLang === "zh" && hskHydrated) {
+      entries = entries.filter((entry) => {
+        const chipLevel = resolveCatalogChipLevel(entry);
+        if (chipLevel == null) return entry.courseId.includes("hsk");
+        return lessonMatchesActiveHskLevel(activeHskLevel, {
+          courseId: `hsk${chipLevel}`,
+        });
+      });
+    }
+    return entries;
+  }, [catalog, selectedLang, activeHskLevel, hskHydrated]);
+
+  useRegisterLessonHskLevels(
+    catalog.flatMap((entry) => entry.lessons)
+  );
 
   useEffect(() => {
     const lang = getSelectedLanguage();
@@ -66,6 +100,14 @@ export function HomeAppView({ catalog, defaultChipId }: Props) {
     if (chip) setActiveChip(chip);
   }, [visibleCatalog]);
 
+  useEffect(() => {
+    if (visibleCatalog.some((entry) => entry.chipId === activeChip)) return;
+    const fallback =
+      visibleCatalog.find((entry) => entry.available)?.chipId ??
+      visibleCatalog[0]?.chipId;
+    if (fallback) setActiveChip(fallback);
+  }, [visibleCatalog, activeChip]);
+
   const activeCourse = useMemo(
     () =>
       visibleCatalog.find((entry) => entry.chipId === activeChip) ??
@@ -73,7 +115,11 @@ export function HomeAppView({ catalog, defaultChipId }: Props) {
     [visibleCatalog, activeChip]
   );
 
-  const lessons = activeCourse?.lessons ?? [];
+  const lessons = useMemo(() => {
+    const base = activeCourse?.lessons ?? [];
+    if (selectedLang !== "zh" || !hskHydrated) return base;
+    return filterLessonsByActiveHskLevel(base, activeHskLevel);
+  }, [activeCourse?.lessons, selectedLang, hskHydrated, activeHskLevel]);
   const lessonIds = useMemo(() => lessons.map((l) => l.id), [lessons]);
 
   useEffect(() => {

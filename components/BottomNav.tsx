@@ -70,9 +70,19 @@ const TABS: { key: BottomNavTab; label: string; href: string; icon: ReactNode }[
   },
 ];
 
-export default function BottomNav({ active }: { active: BottomNavTab }) {
+export default function BottomNav({
+  active,
+  embedded = false,
+}: {
+  active: BottomNavTab;
+  /** Inside BottomNavChrome — skip outer card chrome. */
+  embedded?: boolean;
+}) {
   return (
-    <nav className="bs-bottomnav" aria-label="App navigation">
+    <nav
+      className={embedded ? "bs-bottomnav bs-bottomnav-embedded" : "bs-bottomnav"}
+      aria-label="App navigation"
+    >
       {TABS.map((t) => (
         <Link key={t.key} href={t.href} className={active === t.key ? "bs-on" : ""}>
           {t.icon}

@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Geist_Mono, Noto_Sans_SC, Onest } from "next/font/google";
 import { LearnerLanguageGuard } from "@/components/learner-language-guard";
+import { AppProviders } from "@/components/providers/app-providers";
 import { PwaServiceWorkerRegister } from "@/components/pwa-service-worker-register";
 import "./globals.css";
 import "./buunduu-theme.css";
@@ -95,9 +96,11 @@ export default function RootLayout({
       className={`${onest.variable} ${notoSansSc.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col font-sans">
-        <LearnerLanguageGuard />
-        {children}
-        <PwaServiceWorkerRegister />
+        <AppProviders>
+          <LearnerLanguageGuard />
+          {children}
+          <PwaServiceWorkerRegister />
+        </AppProviders>
       </body>
     </html>
   );

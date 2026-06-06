@@ -67,6 +67,9 @@ export interface HskPackageVocabItem extends HskVocabEnrichment {
   pos?: string;
   mn: string;
   en?: string;
+  /** hsk_words / ref_words enrichment — preferred over mn/en when set */
+  meaning_mn?: string | null;
+  meaning_en?: string | null;
   example_zh?: string | null;
   example_pinyin?: string | null;
   example_mn?: string | null;

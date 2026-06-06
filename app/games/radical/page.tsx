@@ -1,10 +1,10 @@
 import { RadicalGameClient } from "@/components/games/radical-game-client";
-import { getLessonGameContext } from "@/lib/games/game-data";
+import { getRadicalGameEntries } from "@/lib/games/radical-game-data";
 
 export const dynamic = "force-dynamic";
 
 export const metadata = {
-  title: "Үндэс · бүрдэл — Тоглоом",
+  title: "Ханз задлах — Тоглоом",
 };
 
 type PageProps = {
@@ -12,13 +12,10 @@ type PageProps = {
 };
 
 export default async function RadicalGamePage({ searchParams }: PageProps) {
-  const { lessonId = "1" } = await searchParams;
-  const context = await getLessonGameContext(lessonId);
+  const { lessonId = "radical" } = await searchParams;
+  const entries = getRadicalGameEntries();
+
   return (
-    <RadicalGameClient
-      lessonId={lessonId}
-      lessonCharacters={context.lessonCharacters}
-      labels={context.labels}
-    />
+    <RadicalGameClient lessonId={lessonId} entries={entries} />
   );
 }

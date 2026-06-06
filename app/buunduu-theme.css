@@ -133,11 +133,19 @@ body{
 .bs-pbody.bs-dim{background:#F6F8F7;box-shadow:none}
 
 /* === Доод цэс (bottom nav) === */
+.bs-bottomnav-shell{
+  background:var(--bs-card);border-radius:var(--bs-radius);box-shadow:var(--bs-shadow);overflow:hidden;
+}
+.bs-bottomnav-hsk{
+  display:flex;justify-content:center;align-items:center;padding:8px 12px 6px;
+  border-bottom:1px solid var(--bs-line);
+}
 .bs-bottomnav{
   display:flex;justify-content:space-around;align-items:center;
   background:var(--bs-card);border-radius:var(--bs-radius);box-shadow:var(--bs-shadow);
   padding:10px 6px;
 }
+.bs-bottomnav.bs-bottomnav-embedded{border-radius:0;box-shadow:none}
 .bs-bottomnav a{display:flex;flex-direction:column;align-items:center;gap:4px;font-size:10px;font-weight:600;color:var(--bs-muted);text-decoration:none}
 .bs-bottomnav a svg{width:23px;height:23px;display:block;color:var(--bs-muted)}
 .bs-bottomnav a.bs-on{color:var(--bs-green-700)}

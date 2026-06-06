@@ -57,6 +57,16 @@ export default function VocabularyCard({
     [w]
   );
 
+  const meaning = useMemo(() => {
+    if (!w) return { text: "", pending: false };
+    const mn = (w.meaning_mn ?? w.mn)?.trim();
+    if (mn) return { text: mn, pending: false };
+    const en =
+      (w.meaning_en ?? w.en ?? w.meaningsEn?.join("; "))?.trim() || "";
+    if (en) return { text: en, pending: true };
+    return { text: "", pending: false };
+  }, [w]);
+
   const enrichment = useMemo(() => {
     if (!w) {
       return {
@@ -171,7 +181,14 @@ export default function VocabularyCard({
       <div className="bs-vcard">
         <div className="bs-hanzi">{w.zh}</div>
         <div className="bs-vpy">{w.pinyin}</div>
-        <div className="bs-vmn">{w.mn}</div>
+        {meaning.text ? (
+          <div className={meaning.pending ? "bs-vmn bs-vmn-pending" : "bs-vmn"}>
+            {meaning.text}
+            {meaning.pending ? (
+              <span className="bs-vmn-badge">орчуулга хүлээгдэж буй</span>
+            ) : null}
+          </div>
+        ) : null}
 
         {hasEnrichmentMeta ? (
           <div className="bs-vmeta">
@@ -221,9 +238,9 @@ export default function VocabularyCard({
         {hasExample && (
           <div className="bs-example">
             <div>
-              {w.example_pinyin && <div className="bs-ex-py">{w.example_pinyin}</div>}
               <div className="bs-ex-zh">{w.example_zh}</div>
-              {w.example_mn && <div className="bs-ex-mn">{w.example_mn}</div>}
+              {w.example_pinyin ? <div className="bs-ex-py">{w.example_pinyin}</div> : null}
+              {w.example_mn ? <div className="bs-ex-mn">{w.example_mn}</div> : null}
             </div>
             <SpeakButton text={w.example_zh as string} title="Жишээг сонсох" />
           </div>

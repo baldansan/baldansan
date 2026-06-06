@@ -1,296 +1,404 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
-import { GameCard } from "@/components/games/game-card";
-import { GameEmptyState } from "@/components/games/game-empty-state";
-import { GameHeader } from "@/components/games/game-header";
-import { GameOptionButton } from "@/components/games/game-option-button";
-import { GameProgressPill } from "@/components/games/game-progress-pill";
-import { GameResultCard } from "@/components/games/game-result-card";
+import { useCallback, useMemo, useState } from "react";
 import { GameShell } from "@/components/games/game-shell";
-import { buildRadicalDecomposeGameItems, isNewRadicalFamily } from "@/lib/games/radical-decompose-game";
+import {
+  getRadicalGameEntries,
+  isAnswerCorrect,
+  orderHintFromStructure,
+  scoreForAttempt,
+  type RadicalGameEntry,
+} from "@/lib/games/radical-game-data";
 import { resolveGameLabels, type GameLabels } from "@/lib/games/game-lesson-meta";
 import { saveGameResult } from "@/lib/games/game-progress";
-import type { HskCharacter } from "@/types/hsk-lesson-package";
 
 type Props = {
   lessonId: string;
-  lessonCharacters: HskCharacter[];
+  entries?: RadicalGameEntry[];
   labels?: GameLabels;
 };
 
+type SelectedSlot = {
+  c: string;
+  componentIndex: number;
+};
+
+type CheckResult = "ok" | "no" | null;
+
 export function RadicalGameClient({
   lessonId,
-  lessonCharacters,
+  entries: entriesProp,
   labels: labelsProp,
 }: Props) {
   const labels = labelsProp ?? resolveGameLabels(false, false);
-  const questions = useMemo(
-    () => buildRadicalDecomposeGameItems(lessonCharacters, 8),
-    [lessonCharacters]
+  const entries = useMemo(
+    () => entriesProp ?? getRadicalGameEntries(),
+    [entriesProp]
   );
 
   const [index, setIndex] = useState(0);
-  const [selected, setSelected] = useState<string | null>(null);
-  const [revealed, setRevealed] = useState(false);
-  const [picked, setPicked] = useState<string[]>([]);
-  const [pool, setPool] = useState<string[]>([]);
-  const [correctCount, setCorrectCount] = useState(0);
+  const [selected, setSelected] = useState<SelectedSlot[]>([]);
+  const [usedIndices, setUsedIndices] = useState<Set<number>>(new Set());
+  const [locked, setLocked] = useState(false);
+  const [checkResult, setCheckResult] = useState<CheckResult>(null);
+  const [missedOnChar, setMissedOnChar] = useState(false);
+  const [lastGain, setLastGain] = useState(0);
+
   const [score, setScore] = useState(0);
+  const [streak, setStreak] = useState(0);
+  const [attempts, setAttempts] = useState(0);
+  const [correct, setCorrect] = useState(0);
   const [finished, setFinished] = useState(false);
 
-  const current = questions[index];
-  const total = questions.length;
-  const showFamilyBanner = current && isNewRadicalFamily(questions, index);
+  const total = entries.length;
+  const current = entries[index];
+  const accuracy = attempts > 0 ? Math.round((correct / attempts) * 100) : 100;
+  const progressPct = finished ? 100 : Math.round((index / total) * 100);
 
-  useEffect(() => {
-    if (!current || current.type !== "assemble") return;
-    setPicked([]);
-    setPool([...(current.shuffledComponents ?? [])]);
-    setSelected(null);
-    setRevealed(false);
-  }, [index, current]);
+  const resetSelection = useCallback(() => {
+    setSelected([]);
+    setUsedIndices(new Set());
+    setCheckResult(null);
+    setMissedOnChar(false);
+    setLastGain(0);
+    setLocked(false);
+  }, []);
 
-  function finishGame(finalCorrect: number) {
-    const finalScore = finalCorrect * 10;
-    saveGameResult({
-      gameType: "radical",
-      lessonId,
-      score: finalScore,
-      correct: finalCorrect,
-      total,
-      accuracy: Math.round((finalCorrect / total) * 100),
-      playedAt: new Date().toISOString(),
+  const resetRound = useCallback(() => {
+    resetSelection();
+  }, [resetSelection]);
+
+  function pickComponent(componentIndex: number) {
+    if (locked || !current || usedIndices.has(componentIndex)) return;
+    const comp = current.components[componentIndex];
+    if (!comp) return;
+    setSelected((prev) => [...prev, { c: comp.c, componentIndex }]);
+    setUsedIndices((prev) => new Set(prev).add(componentIndex));
+    setCheckResult(null);
+  }
+
+  function unpickSlot(slotIndex: number) {
+    if (locked || !current) return;
+    const slot = selected[slotIndex];
+    if (!slot) return;
+    setSelected((prev) => prev.filter((_, i) => i !== slotIndex));
+    setUsedIndices((prev) => {
+      const next = new Set(prev);
+      next.delete(slot.componentIndex);
+      return next;
     });
-    setScore(finalScore);
-    setFinished(true);
+    setCheckResult(null);
   }
 
-  function handleMeaningSelect(option: string) {
-    if (!current || revealed || current.type !== "meaning") return;
-    setSelected(option);
-    setRevealed(true);
-    const isCorrect = option === current.correctAnswer;
-    const nextCorrect = isCorrect ? correctCount + 1 : correctCount;
-    if (isCorrect) {
-      setCorrectCount((c) => c + 1);
-      setScore((s) => s + 10);
+  function handleCheck() {
+    if (locked || !current || selected.length === 0) return;
+
+    const picked = selected.map((s) => s.c);
+    const ok = isAnswerCorrect(picked, current.answer);
+    setAttempts((a) => a + 1);
+
+    if (ok) {
+      const firstTry = !missedOnChar;
+      const gain = scoreForAttempt(firstTry);
+      setCorrect((c) => c + 1);
+      setScore((s) => s + gain);
+      setStreak(firstTry ? (s) => s + 1 : () => 0);
+      setLastGain(gain);
+      setLocked(true);
+      setCheckResult("ok");
+    } else {
+      setMissedOnChar(true);
+      setStreak(0);
+      setCheckResult("no");
     }
-    if (index >= total - 1) finishGame(nextCorrect);
-  }
-
-  function pickComponent(tile: string, fromPoolIndex: number) {
-    if (!current || revealed || current.type !== "assemble") return;
-    setPicked((prev) => [...prev, tile]);
-    setPool((prev) => prev.filter((_, i) => i !== fromPoolIndex));
-  }
-
-  function unpickComponent(slotIndex: number) {
-    if (!current || revealed || current.type !== "assemble") return;
-    const tile = picked[slotIndex];
-    setPicked((prev) => prev.filter((_, i) => i !== slotIndex));
-    setPool((prev) => [...prev, tile]);
-  }
-
-  function handleAssembleCheck() {
-    if (!current || revealed || current.type !== "assemble") return;
-    const isCorrect =
-      Boolean(current.componentOrder) &&
-      picked.length === current.componentOrder!.length &&
-      picked.every((part, i) => part === current.componentOrder![i]);
-    setRevealed(true);
-    const nextCorrect = isCorrect ? correctCount + 1 : correctCount;
-    if (isCorrect) {
-      setCorrectCount((c) => c + 1);
-      setScore((s) => s + 10);
-    }
-    if (index >= total - 1) finishGame(nextCorrect);
   }
 
   function handleNext() {
+    if (index >= total - 1) {
+      finishGame();
+      return;
+    }
     setIndex((i) => i + 1);
-    setSelected(null);
-    setRevealed(false);
-    setPicked([]);
+    resetRound();
+  }
+
+  function finishGame() {
+    const finalAccuracy =
+      attempts > 0 ? Math.round((correct / attempts) * 100) : 100;
+    saveGameResult({
+      gameType: "radical",
+      lessonId,
+      score,
+      correct,
+      total,
+      accuracy: finalAccuracy,
+      playedAt: new Date().toISOString(),
+    });
+    setFinished(true);
   }
 
   function restart() {
     setIndex(0);
-    setSelected(null);
-    setRevealed(false);
-    setPicked([]);
-    setCorrectCount(0);
     setScore(0);
+    setStreak(0);
+    setAttempts(0);
+    setCorrect(0);
     setFinished(false);
+    resetRound();
   }
 
-  if (questions.length === 0) {
+  if (entries.length === 0) {
     return (
-      <GameShell>
-        <GameHeader title={labels.radicalTitle} />
-        <GameEmptyState lessonId={lessonId} message={labels.radicalEmptyMessage} />
+      <GameShell mainClassName="max-w-[430px] mx-auto w-full bg-[#f1f6f3]">
+        <div className="py-16 text-center text-sm text-[var(--app-muted)]">
+          Тоглоомын өгөгдөл олдсонгүй.
+        </div>
       </GameShell>
     );
   }
 
   if (finished) {
     return (
-      <GameShell>
-        <GameHeader title={labels.radicalTitle} score={score} />
-        <GameResultCard
-          score={score}
-          correct={correctCount}
-          total={total}
-          accuracy={Math.round((correctCount / total) * 100)}
-          xpGained={score}
-          lessonId={lessonId}
-          onPlayAgain={restart}
-        />
+      <GameShell mainClassName="max-w-[430px] mx-auto w-full bg-[#f1f6f3] px-5 pt-6">
+        <RadicalGameTop title={labels.radicalTitle} counter={`${total} / ${total}`} />
+        <div className="mb-4 h-2 overflow-hidden rounded-full bg-[#e1ebe5]">
+          <div className="h-full w-full rounded-full bg-[var(--app-primary)] transition-all" />
+        </div>
+        <RadicalGameStats score={score} streak={streak} accuracy={accuracy} />
+        <div className="rounded-[24px] bg-white p-10 text-center shadow-[0_12px_30px_rgba(25,40,30,0.10)]">
+          <p className="text-[54px] leading-none">🏆</p>
+          <h2 className="mt-2 text-xl font-extrabold text-[var(--app-text)]">
+            Бүх ханз дууслаа!
+          </h2>
+          <p className="mt-2 text-sm text-[var(--app-muted)]">
+            Оноо: <b className="text-[var(--app-text)]">{score}</b> · Нарийвчлал:{" "}
+            <b className="text-[var(--app-text)]">{accuracy}%</b>
+          </p>
+          <button
+            type="button"
+            onClick={restart}
+            className="mt-4 min-h-[48px] w-full max-w-[200px] rounded-[15px] bg-[var(--app-primary)] px-5 py-3 text-[15px] font-extrabold text-white active:bg-[var(--app-primary-dark)]"
+          >
+            Дахин эхлэх
+          </button>
+        </div>
       </GameShell>
     );
   }
 
-  const isMeaning = current?.type === "meaning";
-  const isAssemble = current?.type === "assemble";
-  const assembleReady =
-    isAssemble &&
-    current.componentOrder &&
-    picked.length === current.componentOrder.length;
+  if (!current) return null;
 
   return (
-    <GameShell>
-      <GameHeader
+    <GameShell mainClassName="max-w-[430px] mx-auto w-full bg-[#f1f6f3] px-5 pt-6 pb-8">
+      <RadicalGameTop
         title={labels.radicalTitle}
-        progress={`${index + 1}/${total}`}
-        score={score}
+        counter={`${index + 1} / ${total}`}
       />
-      <p className="mb-3 rounded-xl bg-violet-50 px-3 py-2 text-center text-[11px] leading-snug text-violet-900 ring-1 ring-violet-200">
-        {labels.radicalDesc}
-      </p>
-      <GameProgressPill current={index + 1} total={total} />
 
-      {showFamilyBanner && current ? (
-        <div className="mb-3 rounded-2xl bg-gradient-to-r from-amber-50 to-orange-50 px-4 py-3 ring-1 ring-amber-200">
-          <p className="text-[11px] font-bold uppercase tracking-wide text-amber-800">
-            {labels.radicalFamilyLabel}
-          </p>
-          <p className="mt-1 font-[family-name:var(--font-noto-sc,'Noto Sans SC',sans-serif)] text-2xl font-black text-[var(--app-text)]">
-            {current.familyRadical}
-          </p>
-          <p className="mt-1 text-sm text-[var(--app-muted)]">
-            {current.familyHanzi.join(" · ")}
-          </p>
-        </div>
-      ) : null}
+      <div className="mb-4 h-2 overflow-hidden rounded-full bg-[#e1ebe5]">
+        <div
+          className="h-full rounded-full bg-[var(--app-primary)] transition-all duration-300"
+          style={{ width: `${progressPct}%` }}
+        />
+      </div>
 
-      {current ? (
-        <>
-          <GameCard className="mb-4 text-center">
-            <p className="text-5xl font-bold text-[var(--app-text)]">
-              {isMeaning || revealed ? current.targetHanzi : "?"}
-            </p>
-            <p className="mt-2 text-lg text-emerald-700">{current.targetPinyin}</p>
-            <p className="mt-1 text-sm text-[var(--app-muted)]">
-              {current.targetMeaning}
-            </p>
-            <p className="mt-4 text-xl font-semibold tracking-wide text-purple-700">
-              {isMeaning
-                ? `${current.promptComponent} = ?`
-                : current.formula.replace(current.targetHanzi, "?")}
-            </p>
-            <p className="mt-2 text-sm font-medium text-[var(--app-text)]">
-              {isMeaning
-                ? `${current.promptComponent} ямар утгатай вэ?`
-                : "Бүрдэлүүдийг зөв дарааллаар сонго"}
-            </p>
-          </GameCard>
+      <RadicalGameStats score={score} streak={streak} accuracy={accuracy} />
 
-          {isMeaning ? (
-            <div className="grid grid-cols-1 gap-2">
-              {current.options.map((option) => {
-                let state: "default" | "correct" | "wrong" | "selected" = "default";
-                if (revealed) {
-                  if (option === current.correctAnswer) state = "correct";
-                  else if (option === selected) state = "wrong";
-                } else if (option === selected) {
-                  state = "selected";
-                }
-                return (
-                  <GameOptionButton
-                    key={option}
-                    label={option}
-                    state={state}
-                    disabled={revealed}
-                    onClick={() => handleMeaningSelect(option)}
-                    className="!text-sm !font-medium !leading-snug"
-                  />
-                );
-              })}
+      <div className="rounded-[24px] bg-white p-[18px] shadow-[0_12px_30px_rgba(25,40,30,0.10)]">
+        <div className="flex items-center justify-between gap-3">
+          <div className="flex items-center gap-3">
+            <p className="font-[family-name:var(--font-noto-sc,'Noto Sans SC',sans-serif)] text-[74px] font-black leading-none tracking-[4px] text-[var(--app-text)]">
+              {current.char}
+            </p>
+            <div>
+              <p className="text-xl font-bold text-[var(--app-text)]">
+                {current.pinyin}
+              </p>
+              <p className="mt-1 text-sm text-[var(--app-muted)]">
+                {current.meaning_mn}
+              </p>
             </div>
-          ) : null}
+          </div>
+          <span className="shrink-0 rounded-full bg-[var(--app-primary-light)] px-[11px] py-1.5 text-[11px] font-extrabold text-[var(--app-primary-dark)]">
+            Шинэ
+          </span>
+        </div>
 
-          {isAssemble ? (
-            <>
-              <div className="mb-3 flex min-h-[52px] flex-wrap justify-center gap-2 rounded-2xl bg-slate-50 px-3 py-3 ring-1 ring-slate-200">
-                {picked.length === 0 ? (
-                  <span className="text-sm text-[var(--app-muted)]">
-                    Энд бүрдэлүүд харагдана
-                  </span>
-                ) : (
-                  picked.map((tile, slotIndex) => (
-                    <button
-                      key={`${tile}-${slotIndex}`}
-                      type="button"
-                      onClick={() => unpickComponent(slotIndex)}
-                      disabled={revealed}
-                      className="min-h-[44px] min-w-[44px] rounded-xl bg-white px-3 text-2xl font-bold text-[var(--app-text)] ring-1 ring-slate-200 disabled:opacity-60"
-                    >
-                      {tile}
-                    </button>
-                  ))
-                )}
-              </div>
-              <div className="grid grid-cols-2 gap-2">
-                {pool.map((tile, poolIndex) => (
-                  <GameOptionButton
-                    key={`${tile}-${poolIndex}`}
-                    label={tile}
-                    disabled={revealed}
-                    onClick={() => pickComponent(tile, poolIndex)}
-                    className="!text-3xl !font-bold"
-                  />
-                ))}
-              </div>
-              {!revealed ? (
+        <p className="mt-3.5 text-sm font-extrabold text-[#33433b]">
+          Бүрдэл хэсгүүдийг зөв дарааллаар нь сонго
+        </p>
+        <p className="mt-1 mb-2.5 text-xs text-[var(--app-muted)]">
+          Дараалал: {orderHintFromStructure(current.structure)}
+        </p>
+
+        <div className="flex min-h-[78px] flex-wrap items-center justify-center gap-2 rounded-[18px] border-2 border-dashed border-[#c6d4cc] bg-[#fbfffd] px-3 py-3">
+          {selected.length === 0 ? (
+            <span className="text-[13px] font-extrabold text-[#9fb0a7]">
+              Бүрдлүүдийг энд дараалуулна
+            </span>
+          ) : (
+            selected.map((slot, slotIndex) => (
+              <span key={`${slot.c}-${slot.componentIndex}-${slotIndex}`} className="inline-flex items-center gap-2">
                 <button
                   type="button"
-                  onClick={handleAssembleCheck}
-                  disabled={!assembleReady}
-                  className="mt-4 min-h-[48px] w-full app-btn-primary py-3 disabled:opacity-50"
+                  onClick={() => unpickSlot(slotIndex)}
+                  disabled={locked}
+                  className="min-w-[52px] rounded-[14px] border border-[#d6eadf] bg-[var(--app-primary-light)] px-[11px] py-2 text-[26px] font-black text-[var(--app-text)] disabled:opacity-60"
                 >
-                  Шалгах
+                  {slot.c}
                 </button>
-              ) : null}
-            </>
-          ) : null}
+                {slotIndex < selected.length - 1 ? (
+                  <span className="text-lg font-black text-[#9fb0a7]">+</span>
+                ) : null}
+              </span>
+            ))
+          )}
+        </div>
 
-          {revealed && current.explanation ? (
-            <p className="mt-4 rounded-xl bg-emerald-50 px-3 py-3 text-sm leading-relaxed text-emerald-900 ring-1 ring-emerald-200">
-              {current.explanation}
+        <div className="mt-3.5 grid grid-cols-2 gap-2.5">
+          {current.components.map((comp, compIndex) => {
+            const used = usedIndices.has(compIndex);
+            return (
+              <button
+                key={`${comp.c}-${compIndex}`}
+                type="button"
+                onClick={() => pickComponent(compIndex)}
+                disabled={locked || used}
+                className={`flex items-center gap-[11px] rounded-[18px] border border-[var(--app-border)] bg-white px-3 py-3 text-left shadow-[0_6px_16px_rgba(20,30,25,0.06)] transition active:scale-[0.97] disabled:pointer-events-none disabled:opacity-30`}
+              >
+                <span className="grid h-[42px] w-[42px] shrink-0 place-items-center rounded-[13px] bg-[var(--app-primary-light)] text-[23px]">
+                  {comp.icon}
+                </span>
+                <span className="min-w-0">
+                  <b className="block text-xl font-black text-[var(--app-text)]">
+                    {comp.c}
+                  </b>
+                  <span className="block text-[11px] text-[var(--app-muted)]">
+                    {comp.name}
+                  </span>
+                </span>
+              </button>
+            );
+          })}
+        </div>
+
+        <div className="mt-3.5 flex gap-2.5">
+          <button
+            type="button"
+            onClick={resetSelection}
+            disabled={locked}
+            className="min-h-[48px] flex-1 rounded-[15px] bg-[#eaf0ed] px-4 py-3 text-[15px] font-extrabold text-[#3b473f] disabled:opacity-50"
+          >
+            Цэвэрлэх
+          </button>
+          <button
+            type="button"
+            onClick={handleCheck}
+            disabled={locked || selected.length === 0}
+            className="min-h-[48px] flex-1 rounded-[15px] bg-[var(--app-primary)] px-4 py-3 text-[15px] font-extrabold text-white active:bg-[var(--app-primary-dark)] disabled:opacity-50"
+          >
+            Шалгах
+          </button>
+        </div>
+
+        {checkResult === "ok" ? (
+          <div className="mt-3.5 rounded-[18px] border border-[#b6e6c8] bg-[var(--app-primary-light)] p-[15px] leading-relaxed">
+            <h3 className="text-base font-bold text-[var(--app-text)]">
+              ✅ Зөв! +{lastGain} оноо
+            </h3>
+            <div className="mt-2.5 rounded-[14px] border border-[var(--app-border)] bg-white p-3 text-sm">
+              💡 <b>{current.char}</b> ({current.pinyin}) — {current.meaning_mn}
+              <br />
+              {current.etymology_mn}
+            </div>
+            <div className="mt-2.5 grid gap-2">
+              {current.breakdown.map((part, i) => (
+                <div
+                  key={`${part.c}-${i}`}
+                  className="flex items-center gap-[11px] rounded-[13px] border border-[var(--app-border)] bg-white px-[11px] py-2"
+                >
+                  <span className="grid h-[38px] w-[38px] shrink-0 place-items-center rounded-[11px] bg-[var(--app-primary-light)] text-xl">
+                    {part.icon}
+                  </span>
+                  <div>
+                    <b className="text-[19px] text-[var(--app-text)]">{part.c}</b>
+                    <small className="ml-2 text-[var(--app-muted)]">{part.name}</small>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        ) : null}
+
+        {checkResult === "no" ? (
+          <div className="mt-3.5 rounded-[18px] border border-[#fbcfcf] bg-[#fef2f2] p-[15px] leading-relaxed">
+            <h3 className="text-base font-bold text-[var(--app-text)]">
+              ❌ Дараалал/бүрдэл буруу
+            </h3>
+            <p className="mt-1 text-sm text-[var(--app-muted)]">
+              Илүү (хууран мэхлэх) бүрдлийг хасаад, зөв хэсгүүдийг дарааллаар нь
+              сонгоорой.
             </p>
-          ) : null}
+          </div>
+        ) : null}
 
-          {revealed && index < total - 1 ? (
-            <button
-              type="button"
-              onClick={handleNext}
-              className="mt-4 min-h-[48px] w-full app-btn-primary py-3"
-            >
-              Дараах
-            </button>
-          ) : null}
-        </>
-      ) : null}
+        {checkResult === "ok" ? (
+          <button
+            type="button"
+            onClick={handleNext}
+            className="mt-3 min-h-[48px] w-full rounded-[15px] bg-[var(--app-primary)] px-4 py-3 text-[15px] font-extrabold text-white active:bg-[var(--app-primary-dark)]"
+          >
+            {index >= total - 1 ? "Дуусгах →" : "Дараагийн ханз →"}
+          </button>
+        ) : null}
+      </div>
     </GameShell>
+  );
+}
+
+function RadicalGameTop({
+  title,
+  counter,
+}: {
+  title: string;
+  counter: string;
+}) {
+  return (
+    <div className="mb-3.5 flex items-center justify-between">
+      <h1 className="text-xl font-extrabold text-[var(--app-text)]">🧩 {title}</h1>
+      <span className="rounded-full bg-[var(--app-primary-light)] px-[11px] py-1.5 text-[11px] font-extrabold text-[var(--app-primary-dark)]">
+        {counter}
+      </span>
+    </div>
+  );
+}
+
+function RadicalGameStats({
+  score,
+  streak,
+  accuracy,
+}: {
+  score: number;
+  streak: number;
+  accuracy: number;
+}) {
+  return (
+    <div className="mb-4 grid grid-cols-3 gap-2.5">
+      {[
+        { value: score, label: "Оноо" },
+        { value: streak, label: "Цуваа 🔥" },
+        { value: `${accuracy}%`, label: "Нарийвчлал" },
+      ].map((stat) => (
+        <div
+          key={stat.label}
+          className="rounded-2xl bg-white px-1.5 py-3 text-center shadow-[0_12px_30px_rgba(25,40,30,0.10)]"
+        >
+          <b className="block text-[22px] font-bold leading-tight text-[var(--app-primary-dark)]">
+            {stat.value}
+          </b>
+          <span className="text-[11px] text-[var(--app-muted)]">{stat.label}</span>
+        </div>
+      ))}
+    </div>
   );
 }
