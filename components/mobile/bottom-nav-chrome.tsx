@@ -18,9 +18,11 @@ export function BottomNavChrome({ active }: Props) {
     [pathname]
   );
 
+  const showHskOnHome = showChinese && (pathname === "/home" || pathname === "/");
+
   return (
     <div className="bs-bottomnav-shell">
-      {showChinese ? (
+      {showHskOnHome ? (
         <div className="bs-bottomnav-hsk">
           <HskLevelSelector placement="nav" />
         </div>

@@ -304,7 +304,6 @@ export function RadicalChallengeClient({ lessonId, entries: entriesProp }: Props
     return (
       <GameShell mainClassName="max-w-[430px] mx-auto w-full bg-[#f1f6f3] px-5 pt-6 pb-8">
         <ChallengeHeader
-          hskLevel={hskLevel}
           lives={lives}
           title={labels.radicalTitle}
           counter={won ? `${total} / ${total}` : "Дууслаа"}
@@ -346,7 +345,6 @@ export function RadicalChallengeClient({ lessonId, entries: entriesProp }: Props
   return (
     <GameShell mainClassName="max-w-[430px] mx-auto w-full bg-[#f1f6f3] px-[18px] pt-5 pb-8">
       <ChallengeHeader
-        hskLevel={hskLevel}
         lives={lives}
         title={labels.radicalTitle}
         counter={`${round + 1} / ${total}`}
@@ -529,14 +527,12 @@ export function RadicalChallengeClient({ lessonId, entries: entriesProp }: Props
 }
 
 function ChallengeHeader({
-  hskLevel,
   lives,
   title,
   counter,
   tierLabel,
   tierClass,
 }: {
-  hskLevel: ReturnType<typeof useActiveHskLevel>["level"];
   lives: number;
   title: string;
   counter: string;
@@ -545,10 +541,7 @@ function ChallengeHeader({
 }) {
   return (
     <>
-      <div className="flex items-center justify-between">
-        <span className="inline-flex items-center gap-1.5 rounded-full bg-[var(--app-primary-light)] px-3 py-1.5 text-[13px] font-extrabold text-[var(--app-primary-dark)]">
-          {formatActiveHskLevel(hskLevel)} ▾
-        </span>
+      <div className="flex items-center justify-end">
         <span className="text-lg tracking-wide">
           {"❤️".repeat(Math.max(0, lives))}
           {"🖤".repeat(Math.max(0, MAX_LIVES - lives))}
