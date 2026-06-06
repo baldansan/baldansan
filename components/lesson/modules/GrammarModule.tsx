@@ -6,7 +6,10 @@
 // Модулийн гэрээ бусадтай ижил: { lesson, onDone }.
 
 import { useCallback, useEffect, useState } from "react";
-import type { Lesson, GrammarPoint } from "@/types/lesson";
+import type {
+  HskLessonPackage,
+  HskPackageGrammarPoint,
+} from "@/types/hsk-lesson-package";
 import "./grammar-module.css";
 
 type Speed = 0.5 | 0.75 | 1;
@@ -16,10 +19,10 @@ export default function GrammarModule({
   lesson,
   onDone,
 }: {
-  lesson: Lesson;
+  lesson: HskLessonPackage;
   onDone: () => void;
 }) {
-  const points: GrammarPoint[] = lesson.grammar ?? [];
+  const points: HskPackageGrammarPoint[] = lesson.grammar ?? [];
 
   const [gi, setGi] = useState(0); // аль дүрэм
   const [speed, setSpeed] = useState<Speed>(1);

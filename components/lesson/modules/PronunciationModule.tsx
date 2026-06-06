@@ -6,7 +6,7 @@
 // types/lesson.ts-г өөрчлөх ШААРДЛАГАГҮЙ. Модулийн гэрээ: { lesson, onDone }.
 
 import { useCallback, useEffect, useState } from "react";
-import type { Lesson } from "@/types/lesson";
+import type { HskLessonPackage } from "@/types/hsk-lesson-package";
 import "./pronunciation-module.css";
 
 type Speed = 0.5 | 0.75 | 1;
@@ -27,7 +27,7 @@ export default function PronunciationModule({
   lesson,
   onDone,
 }: {
-  lesson: Lesson;
+  lesson: HskLessonPackage;
   onDone: () => void;
 }) {
   const data = lesson.pronunciation as PronData | undefined;

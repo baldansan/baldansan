@@ -6,7 +6,7 @@
 
 import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import { resolveLessonPackagePlayableUrl } from "@/lib/lesson/package-audio-resolve";
-import type { Lesson } from "@/types/lesson";
+import type { HskLessonPackage } from "@/types/hsk-lesson-package";
 import "./dialogues-module.css";
 import "./texts-module.css";
 
@@ -70,14 +70,14 @@ export default function DialoguesModule({
   lesson,
   onDone,
 }: {
-  lesson: Lesson;
+  lesson: HskLessonPackage;
   onDone: () => void;
 }) {
-  const dialogues: any[] = (lesson as any).dialogues ?? [];
-  const base = (lesson as any).audio_base_path;
+  const dialogues = lesson.dialogues ?? [];
+  const base = lesson.audio_base_path;
 
   const vocab: Vocab[] = useMemo(() => {
-    const raw: any[] = (lesson as any).vocabulary ?? [];
+    const raw = lesson.vocabulary ?? [];
     return raw
       .map((v) => ({ zh: f(v, "zh", "chinese"), pinyin: f(v, "pinyin"), mn: f(v, "mn", "mongolian") }))
       .filter((v) => v.zh)
