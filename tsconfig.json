@@ -30,5 +30,12 @@
     ".next/dev/types/**/*.ts",
     "**/*.mts"
   ],
-  "exclude": ["node_modules"]
+  "exclude": [
+    "node_modules",
+    "_extract",
+    "_extract-files",
+    "_extract2",
+    "_extract3",
+    "buunduu-player-phase1"
+  ]
 }

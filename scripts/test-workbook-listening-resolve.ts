@@ -31,9 +31,17 @@ const lesson: LessonContent = {
   subtitle: "",
   description: "",
   duration: "",
-  orderIndex: 1,
+  vocabularyCount: 0,
+  quizCount: 0,
   status: "available",
+  publishStatus: "available",
+  videoPlaceholder: "",
+  watchTotalTime: "",
+  subtitlePreview: [],
+  timedSubtitles: [],
   vocabulary: [],
+  quizQuestions: [],
+  quizTypes: [],
   sourceNote: JSON.stringify({
     packageLessonId: "hsk4-l01",
     hskStudyContent: {

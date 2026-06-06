@@ -12,7 +12,7 @@ import {
 } from "@/lib/lesson/bs-step-progress";
 import { resolveLessonPackagePlayableUrl } from "@/lib/lesson/package-audio-resolve";
 import { resolveWorkbookListeningItemAudio } from "@/lib/lesson/workbook-listening-audio";
-import type { Lesson } from "@/types/lesson";
+import type { HskLessonPackage } from "@/types/hsk-lesson-package";
 import "./exercises-module.css";
 
 type Speed = 0.5 | 0.75 | 1;
@@ -248,7 +248,10 @@ function flushListeningDrafts(
   }
 }
 
-function buildQuestions(lesson: Lesson, source: "textbook" | "workbook"): Question[] {
+function buildQuestions(
+  lesson: HskLessonPackage,
+  source: "textbook" | "workbook"
+): Question[] {
   const out: Question[] = [];
   const base = lesson.audio_base_path;
 
@@ -426,7 +429,7 @@ export default function ExercisesModule({
   onDone,
 }: {
   lessonId: string;
-  lesson: Lesson;
+  lesson: HskLessonPackage;
   source: "textbook" | "workbook";
   onDone: () => void;
 }) {

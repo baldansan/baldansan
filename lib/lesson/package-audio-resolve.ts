@@ -137,7 +137,7 @@ export function resolvePackageAudioFileUrl(input: {
     return `${input.publicStorageBase.replace(/\/+$/, "")}/${fileName}`;
   }
 
-  return joinPackageRelativeAudioPath(input.packageAudioBase, path);
+  return joinPackageRelativeAudioPath(input.packageAudioBase ?? undefined, path);
 }
 
 function patchAudioFieldOnRecord(
@@ -323,7 +323,7 @@ function resolveDialogueAudio(
   }
 ): HskPackageDialogue {
   const record = dialogue as HskPackageDialogue & { audioFile?: string };
-  const raw = pickPackageAudioPath(record as Record<string, unknown>);
+  const raw = pickPackageAudioPath(record as unknown as Record<string, unknown>);
   if (!raw) return dialogue;
   return { ...dialogue, audio: resolveItemAudioForPlayer(raw, ctx) };
 }
@@ -337,7 +337,7 @@ function resolveTextAudio(
   }
 ): HskPackageShortText {
   const record = text as HskPackageShortText & { audioFile?: string };
-  const raw = pickPackageAudioPath(record as Record<string, unknown>);
+  const raw = pickPackageAudioPath(record as unknown as Record<string, unknown>);
   if (!raw) return text;
   return { ...text, audio: resolveItemAudioForPlayer(raw, ctx) };
 }

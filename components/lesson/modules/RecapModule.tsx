@@ -6,7 +6,7 @@
 // recap нь ихэвчлэн СҮҮЛИЙН модуль тул onDone() дарахад player-ээс гарна.
 // types/lesson.ts-г өөрчлөх ШААРДЛАГАГҮЙ. Гэрээ: { lesson, onDone }.
 
-import type { Lesson } from "@/types/lesson";
+import type { HskLessonPackage } from "@/types/hsk-lesson-package";
 import "./recap-module.css";
 
 interface RecapData {
@@ -17,7 +17,7 @@ export default function RecapModule({
   lesson,
   onDone,
 }: {
-  lesson: Lesson;
+  lesson: HskLessonPackage;
   onDone: () => void;
 }) {
   const data = lesson.recap as RecapData | undefined;
