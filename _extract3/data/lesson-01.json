@@ -1,0 +1,1381 @@
+{
+  "schema_version": "v2.0",
+  "level": "HSK4A",
+  "lesson_number": 1,
+  "title": {
+    "zh": "简单的爱情",
+    "pinyin": "Jiǎndān de àiqíng",
+    "en": "Simple love",
+    "mn": "Энгийн хайр"
+  },
+  "theme": {
+    "zh": "爱情",
+    "mn": "Хайр дурлал"
+  },
+  "source_map": {
+    "textbook": {
+      "printed_pages": "2-13",
+      "pdf_pages": "11-22"
+    },
+    "workbook": {
+      "printed_pages": "1-9",
+      "pdf_pages": "8-16"
+    },
+    "answer_key": "HSK Standard Course 4A Teacher's Book, printed p.100 (PDF p.102)"
+  },
+  "audio_base_path": "audio/",
+  "modules_enabled": [
+    "hook",
+    "vocabulary",
+    "dialogues",
+    "texts",
+    "pronunciation",
+    "grammar",
+    "exercises_textbook",
+    "exercises_workbook",
+    "recap"
+  ],
+  "hook": {
+    "teacher_mn": "Сайн уу. Өнөөдрийн сэдэв амар даа — хайр, гэр бүл. Хүн бүрт ойр сэдэв учраас үгс нь санахад амар. Бид танилцах, гэрлэх, хамт амьдрах гурван яриа сонсоод, дараа нь хайр гэж юу болох тухай хоёр богино эх уншина. Алхам алхмаар явъя, би хажууд чинь байна.",
+    "warmup_mn": "Дуртай хайрын кино сонгох (Titanic, Roman Holiday, Notting Hill г.м.) ба 'Чиний хүсдэг хань ямар вэ?' — зан чанар (幽默 хошин, 可爱 өхөөрдөм, 安静 нам гэв, 认真 нямбай), сонирхол (运动, 看电影, 音乐, 做菜)."
+  },
+  "vocabulary": [
+    {
+      "id": 1,
+      "zh": "法律",
+      "pinyin": "fǎlǜ",
+      "pos": "n.",
+      "mn": "хууль",
+      "en": "law",
+      "example_zh": null,
+      "srs": true,
+      "beyond_syllabus": false
+    },
+    {
+      "id": 2,
+      "zh": "俩",
+      "pinyin": "liǎ",
+      "pos": "num.",
+      "mn": "хоёулаа (=两个)",
+      "en": "two, both",
+      "example_zh": "你们俩是怎么认识的？",
+      "srs": true,
+      "beyond_syllabus": false
+    },
+    {
+      "id": 3,
+      "zh": "印象",
+      "pinyin": "yìnxiàng",
+      "pos": "n.",
+      "mn": "сэтгэгдэл",
+      "en": "impression",
+      "example_zh": "我对他印象很深。",
+      "srs": true,
+      "beyond_syllabus": false
+    },
+    {
+      "id": 4,
+      "zh": "深",
+      "pinyin": "shēn",
+      "pos": "adj.",
+      "mn": "гүн",
+      "en": "deep",
+      "example_zh": null,
+      "srs": true,
+      "beyond_syllabus": false
+    },
+    {
+      "id": 5,
+      "zh": "熟悉",
+      "pinyin": "shúxī",
+      "pos": "v.",
+      "mn": "танил болох, дотносох",
+      "en": "to be familiar with",
+      "example_zh": null,
+      "srs": true,
+      "beyond_syllabus": false
+    },
+    {
+      "id": 6,
+      "zh": "不仅",
+      "pinyin": "bùjǐn",
+      "pos": "conj.",
+      "mn": "зөвхөн…төдийгүй",
+      "en": "not only",
+      "example_zh": "他不仅足球踢得好，性格也不错。",
+      "srs": true,
+      "beyond_syllabus": false
+    },
+    {
+      "id": 7,
+      "zh": "性格",
+      "pinyin": "xìnggé",
+      "pos": "n.",
+      "mn": "зан чанар",
+      "en": "character, personality",
+      "example_zh": null,
+      "srs": true,
+      "beyond_syllabus": false
+    },
+    {
+      "id": 8,
+      "zh": "开玩笑",
+      "pinyin": "kāi wánxiào",
+      "pos": "v.",
+      "mn": "тоглох, шоглох",
+      "en": "to be kidding",
+      "example_zh": "你是在开玩笑吧？",
+      "srs": true,
+      "beyond_syllabus": false
+    },
+    {
+      "id": 9,
+      "zh": "从来",
+      "pinyin": "cónglái",
+      "pos": "adv.",
+      "mn": "урьд хэзээ ч",
+      "en": "always, all along",
+      "example_zh": "我从来没这么快乐过。",
+      "srs": true,
+      "beyond_syllabus": false
+    },
+    {
+      "id": 10,
+      "zh": "最好",
+      "pinyin": "zuìhǎo",
+      "pos": "adv.",
+      "mn": "…вал хамгийн зүгээр",
+      "en": "had better",
+      "example_zh": null,
+      "srs": true,
+      "beyond_syllabus": false
+    },
+    {
+      "id": 11,
+      "zh": "共同",
+      "pinyin": "gòngtóng",
+      "pos": "adj.",
+      "mn": "нийтлэг, хамтын",
+      "en": "common, shared",
+      "example_zh": null,
+      "srs": true,
+      "beyond_syllabus": false
+    },
+    {
+      "id": 12,
+      "zh": "适合",
+      "pinyin": "shìhé",
+      "pos": "v.",
+      "mn": "таарах, зохицох",
+      "en": "to suit, to fit",
+      "example_zh": null,
+      "srs": true,
+      "beyond_syllabus": false
+    },
+    {
+      "id": 13,
+      "zh": "幸福",
+      "pinyin": "xìngfú",
+      "pos": "adj.",
+      "mn": "аз жаргалтай",
+      "en": "happy",
+      "example_zh": "祝你们幸福！",
+      "srs": true,
+      "beyond_syllabus": false
+    },
+    {
+      "id": 14,
+      "zh": "生活",
+      "pinyin": "shēnghuó",
+      "pos": "n./v.",
+      "mn": "амьдрал; амьдрах",
+      "en": "life; to live",
+      "example_zh": null,
+      "srs": true,
+      "beyond_syllabus": false
+    },
+    {
+      "id": 15,
+      "zh": "刚",
+      "pinyin": "gāng",
+      "pos": "adv.",
+      "mn": "дөнгөж, сая",
+      "en": "just, not long",
+      "example_zh": "我和丈夫刚结婚的时候……",
+      "srs": true,
+      "beyond_syllabus": false
+    },
+    {
+      "id": 16,
+      "zh": "浪漫",
+      "pinyin": "làngmàn",
+      "pos": "adj.",
+      "mn": "романтик",
+      "en": "romantic",
+      "example_zh": null,
+      "srs": true,
+      "beyond_syllabus": false
+    },
+    {
+      "id": 17,
+      "zh": "够",
+      "pinyin": "gòu",
+      "pos": "v.",
+      "mn": "хүрэлцэх, болох",
+      "en": "to be enough",
+      "example_zh": null,
+      "srs": true,
+      "beyond_syllabus": false
+    },
+    {
+      "id": 18,
+      "zh": "缺点",
+      "pinyin": "quēdiǎn",
+      "pos": "n.",
+      "mn": "дутагдал, сул тал",
+      "en": "shortcoming",
+      "example_zh": null,
+      "srs": true,
+      "beyond_syllabus": false
+    },
+    {
+      "id": 19,
+      "zh": "接受",
+      "pinyin": "jiēshòu",
+      "pos": "v.",
+      "mn": "хүлээж авах",
+      "en": "to accept",
+      "example_zh": null,
+      "srs": true,
+      "beyond_syllabus": false
+    },
+    {
+      "id": 20,
+      "zh": "羡慕",
+      "pinyin": "xiànmù",
+      "pos": "v.",
+      "mn": "атаархах, бахдах",
+      "en": "to envy, to admire",
+      "example_zh": null,
+      "srs": true,
+      "beyond_syllabus": false
+    },
+    {
+      "id": 21,
+      "zh": "爱情",
+      "pinyin": "àiqíng",
+      "pos": "n.",
+      "mn": "хайр дурлал",
+      "en": "love (romantic)",
+      "example_zh": null,
+      "srs": true,
+      "beyond_syllabus": false
+    },
+    {
+      "id": 22,
+      "zh": "星星",
+      "pinyin": "xīngxing",
+      "pos": "n.",
+      "mn": "од",
+      "en": "star",
+      "example_zh": null,
+      "srs": true,
+      "beyond_syllabus": true
+    },
+    {
+      "id": 23,
+      "zh": "即使",
+      "pinyin": "jíshǐ",
+      "pos": "conj.",
+      "mn": "…ч гэсэн",
+      "en": "even if",
+      "example_zh": null,
+      "srs": true,
+      "beyond_syllabus": false
+    },
+    {
+      "id": 24,
+      "zh": "加班",
+      "pinyin": "jiā bān",
+      "pos": "v.",
+      "mn": "илүү цагаар ажиллах",
+      "en": "to work overtime",
+      "example_zh": null,
+      "srs": true,
+      "beyond_syllabus": false
+    },
+    {
+      "id": 25,
+      "zh": "亮",
+      "pinyin": "liàng",
+      "pos": "v.",
+      "mn": "гэрэлтэх, асах",
+      "en": "to shine, to be lit",
+      "example_zh": null,
+      "srs": true,
+      "beyond_syllabus": true
+    },
+    {
+      "id": 26,
+      "zh": "感动",
+      "pinyin": "gǎndòng",
+      "pos": "v.",
+      "mn": "сэтгэл хөдлөх/хөдөлгөх",
+      "en": "to touch, to move",
+      "example_zh": null,
+      "srs": true,
+      "beyond_syllabus": false
+    },
+    {
+      "id": 27,
+      "zh": "自然",
+      "pinyin": "zìrán",
+      "pos": "adv.",
+      "mn": "аяндаа, өөрийн эрхгүй",
+      "en": "naturally, certainly",
+      "example_zh": null,
+      "srs": true,
+      "beyond_syllabus": false
+    },
+    {
+      "id": 28,
+      "zh": "原因",
+      "pinyin": "yuányīn",
+      "pos": "n.",
+      "mn": "шалтгаан",
+      "en": "reason",
+      "example_zh": null,
+      "srs": true,
+      "beyond_syllabus": false
+    },
+    {
+      "id": 29,
+      "zh": "互相",
+      "pinyin": "hùxiāng",
+      "pos": "adv.",
+      "mn": "харилцан, бие биедээ",
+      "en": "mutually",
+      "example_zh": null,
+      "srs": true,
+      "beyond_syllabus": false
+    },
+    {
+      "id": 30,
+      "zh": "吸引",
+      "pinyin": "xīyǐn",
+      "pos": "v.",
+      "mn": "татах, сонирхол татах",
+      "en": "to attract",
+      "example_zh": null,
+      "srs": true,
+      "beyond_syllabus": false
+    },
+    {
+      "id": 31,
+      "zh": "幽默",
+      "pinyin": "yōumò",
+      "pos": "adj.",
+      "mn": "хошин, хөгжилтэй",
+      "en": "humorous",
+      "example_zh": null,
+      "srs": true,
+      "beyond_syllabus": false
+    },
+    {
+      "id": 32,
+      "zh": "脾气",
+      "pinyin": "píqi",
+      "pos": "n.",
+      "mn": "зан ааш, ааль",
+      "en": "temper",
+      "example_zh": null,
+      "srs": true,
+      "beyond_syllabus": false
+    }
+  ],
+  "proper_nouns": [
+    {
+      "zh": "孙月",
+      "pinyin": "Sūn Yuè",
+      "mn": "Сүн Юэ (хүний нэр)"
+    },
+    {
+      "zh": "王静",
+      "pinyin": "Wáng Jìng",
+      "mn": "Ван Жин (хүний нэр)"
+    },
+    {
+      "zh": "李进",
+      "pinyin": "Lǐ Jìn",
+      "mn": "Ли Жин (хүний нэр)"
+    },
+    {
+      "zh": "李",
+      "pinyin": "Lǐ",
+      "mn": "Ли (овог)"
+    },
+    {
+      "zh": "高",
+      "pinyin": "Gāo",
+      "mn": "Гао (овог)"
+    }
+  ],
+  "dialogues": [
+    {
+      "id": 1,
+      "title_mn": "Сүн Юэ, Ван Жин найзыгаа яриад",
+      "audio": "textbook/hsk4A-textbook-0101.mp3",
+      "lines": [
+        {
+          "speaker": "孙月",
+          "zh": "听说你男朋友李进跟你是一个学校的，是你同学吗？",
+          "pinyin": "Tīngshuō nǐ nánpéngyou Lǐ Jìn gēn nǐ shì yí ge xuéxiào de, shì nǐ tóngxué ma?",
+          "mn": "Чиний найз залуу Ли Жин чамтай нэг сургуульд сурдаг гэж сонссон. Хамт суралцдаг хүн чинь үү?"
+        },
+        {
+          "speaker": "王静",
+          "zh": "是的，他学的是新闻，我学的是法律，我和他不是一个班。",
+          "pinyin": "Shì de, tā xué de shì xīnwén, wǒ xué de shì fǎlǜ, wǒ hé tā bú shì yí ge bān.",
+          "mn": "Тийм ээ. Тэр сэтгүүлзүйд, би хуульд сурдаг юм. Бид хоёр өөр ангийнх л даа."
+        },
+        {
+          "speaker": "孙月",
+          "zh": "那你们俩是怎么认识的？",
+          "pinyin": "Nà nǐmen liǎ shì zěnme rènshi de?",
+          "mn": "За тэгээд та хоёр яаж танилцсан юм бэ?"
+        },
+        {
+          "speaker": "王静",
+          "zh": "我们是在一次足球比赛中认识的。他一个人踢进两个球，我对他印象很深，后来就慢慢熟悉了。",
+          "pinyin": "Wǒmen shì zài yí cì zúqiú bǐsài zhōng rènshi de. Tā yí ge rén tījìn liǎng ge qiú, wǒ duì tā yìnxiàng hěn shēn, hòulái jiù mànmàn shúxi le.",
+          "mn": "Бид нэг удаа хөлбөмбөгийн тэмцээн дээр танилцсан юм. Тэр ганцаараа хоёр гоол оруулахыг хараад надад үнэхээр их сэтгэгдэл төрсөн. Тэгээд л аажмаар ойр дотно болсон доо."
+        },
+        {
+          "speaker": "孙月",
+          "zh": "你为什么喜欢他？",
+          "pinyin": "Nǐ wèi shénme xǐhuan tā?",
+          "mn": "Чи яагаад түүнд дуртай болсон юм бэ?"
+        },
+        {
+          "speaker": "王静",
+          "zh": "他不仅足球踢得好，性格也不错。",
+          "pinyin": "Tā bùjǐn zúqiú tī de hǎo, xìnggé yě búcuò.",
+          "mn": "Тэр зөвхөн хөлбөмбөг сайн тоглодгоороо ч барахгүй, зан чанар нь ч гоё юм."
+        }
+      ],
+      "teacher_mn": "Сүүлийн өгүүлбэр дэх 不仅…也… загварыг тогтоо — энэ хичээлийн гол дүрэм."
+    },
+    {
+      "id": 2,
+      "title_mn": "Ван Жин багштайгаа",
+      "audio": "textbook/hsk4A-textbook-0102.mp3",
+      "lines": [
+        {
+          "speaker": "王静",
+          "zh": "李老师，我下个月5号就要结婚了。",
+          "pinyin": "Lǐ lǎoshī, wǒ xià ge yuè wǔ hào jiù yào jié hūn le.",
+          "mn": "Ли багш аа, би ирэх сарын 5-нд гэрлэх гэж байна аа."
+        },
+        {
+          "speaker": "李老师",
+          "zh": "你是在开玩笑吧？你们不是才认识一个月？",
+          "pinyin": "Nǐ shì zài kāi wánxiào ba? Nǐmen bú shì cái rènshi yí ge yuè?",
+          "mn": "Чи тоглоод байгаа юм биш биз дээ? Та хоёр дөнгөж нэг сар л танилцсан биш үү?"
+        },
+        {
+          "speaker": "王静",
+          "zh": "虽然我们认识的时间不长，但我从来没这么快乐过。",
+          "pinyin": "Suīrán wǒmen rènshi de shíjiān bù cháng, dàn wǒ cónglái méi zhème kuàilèguo.",
+          "mn": "Танилцсан хугацаа маань урт биш ч гэсэн, би урьд нь хэзээ ч ингэж жаргаж байгаагүй юм."
+        },
+        {
+          "speaker": "李老师",
+          "zh": "两个人在一起，最好能有共同的兴趣和爱好。",
+          "pinyin": "Liǎng ge rén zài yìqǐ, zuìhǎo néng yǒu gòngtóng de xìngqù hé àihào.",
+          "mn": "Хоёр хүн хамт байх юм бол сонирхол, дур сонирхол нь нийлдэг байвал хамгийн зүгээр шүү."
+        },
+        {
+          "speaker": "王静",
+          "zh": "我们有很多共同的爱好，经常一起打球、唱歌、做菜。",
+          "pinyin": "Wǒmen yǒu hěn duō gòngtóng de àihào, jīngcháng yìqǐ dǎ qiú, chàng gē, zuò cài.",
+          "mn": "Бид хоёр адилхан дуртай зүйл их олонтой. Байнга хамт бөмбөг тоглож, дуу дуулж, хоол хийдэг юм."
+        },
+        {
+          "speaker": "李老师",
+          "zh": "看来你真的找到适合你的人了。祝你们幸福！",
+          "pinyin": "Kànlái nǐ zhēn de zhǎodào shìhé nǐ de rén le. Zhù nǐmen xìngfú!",
+          "mn": "Чи үнэхээр өөртөө таарсан хүнээ олсон юм байна. Та хоёр жаргалтай яваарай!"
+        }
+      ],
+      "teacher_mn": null
+    },
+    {
+      "id": 3,
+      "title_mn": "Гао багш, Ли багштайгаа",
+      "audio": "textbook/hsk4A-textbook-0103.mp3",
+      "lines": [
+        {
+          "speaker": "高老师",
+          "zh": "听说您跟妻子结婚快二十年了？",
+          "pinyin": "Tīngshuō nín gēn qīzi jié hūn kuài èrshí nián le?",
+          "mn": "Та эхнэртэйгээ гэрлээд бараг хорин жил болж байгаа гэж сонслоо?"
+        },
+        {
+          "speaker": "李老师",
+          "zh": "到6月9号，我们就结婚二十年了。这么多年，我们的生活一直挺幸福的。",
+          "pinyin": "Dào liù yuè jiǔ hào, wǒmen jiù jié hūn èrshí nián le. Zhème duō nián, wǒmen de shēnghuó yìzhí tǐng xìngfú de.",
+          "mn": "6 сарын 9 гэхэд яг хорин жил болно доо. Энэ олон жилийн турш бид нэлээд жаргалтай амьдарч ирлээ."
+        },
+        {
+          "speaker": "高老师",
+          "zh": "我和丈夫刚结婚的时候，每天都觉得很新鲜，在一起有说不完的话。但是现在……",
+          "pinyin": "Wǒ hé zhàngfu gāng jié hūn de shíhou, měi tiān dōu juéde hěn xīnxiān, zài yìqǐ yǒu shuō bu wán de huà. Dànshì xiànzài…",
+          "mn": "Бид хоёр дөнгөж гэрлэсэн үедээ өдөр болгон сонин содон санагдаж, хамт байхад ярьж ярьж дуусдаггүй байсан юм. Гэтэл одоо бол…"
+        },
+        {
+          "speaker": "李老师",
+          "zh": "两个人共同生活，只有浪漫和新鲜感是不够的。",
+          "pinyin": "Liǎng ge rén gòngtóng shēnghuó, zhǐyǒu làngmàn hé xīnxiāngǎn shì bú gòu de.",
+          "mn": "Хоёр хүн хамт амьдрахад зөвхөн романтик байдал, шинэлэг мэдрэмж дангаараа хүрэлцэхгүй шүү."
+        },
+        {
+          "speaker": "高老师",
+          "zh": "您说的对！我现在每天看到的都是他的缺点。",
+          "pinyin": "Nín shuō de duì! Wǒ xiànzài měi tiān kàndào de dōu shì tā de quēdiǎn.",
+          "mn": "Таны зөв! Одоо бол өдөр бүр нөхрийнхөө дутагдлыг л хараад байх юм."
+        },
+        {
+          "speaker": "李老师",
+          "zh": "两个人在一起时间长了，就会有很多问题。只有接受了他的缺点，你们才能更好地一起生活。",
+          "pinyin": "Liǎng ge rén zài yìqǐ shíjiān cháng le, jiù huì yǒu hěn duō wèntí. Zhǐyǒu jiēshòule tā de quēdiǎn, nǐmen cái néng gèng hǎo de yìqǐ shēnghuó.",
+          "mn": "Хоёр хүн удаан хамт байвал олон асуудал гарна. Түүний дутагдлыг нь хүлээж аваад л явж сурвал та хоёр илүү эвтэйхэн хамт амьдарна аа."
+        }
+      ],
+      "teacher_mn": "Гурван яриа — танилцах → гэрлэх → хамт амьдрах. Хайрын замыг дэс дараалан үзүүлж байна."
+    }
+  ],
+  "texts": [
+    {
+      "id": 4,
+      "audio": "textbook/hsk4A-textbook-0104.mp3",
+      "zh": "很多女孩子羡慕浪漫的爱情。那什么是浪漫呢？年轻人说：浪漫是她想要月亮时，你不会给她星星；中年人说：浪漫是即使晚上加班到零点，到家时，自己家里也还亮着灯；老年人说：浪漫其实就像歌中唱的那样，“我能想到最浪漫的事，就是和你一起慢慢变老。”其实，让我们感动的，就是生活中简单的爱情。有时候，简单就是最大的幸福。",
+      "pinyin": "Hěn duō nǚháizi xiànmù làngmàn de àiqíng. Nà shénme shì làngmàn ne? Niánqīng rén shuō: Làngmàn shì tā xiǎng yào yuèliang shí, nǐ bú huì gěi tā xīngxing; zhōngnián rén shuō: Làngmàn shì jíshǐ wǎnshang jiā bān dào líng diǎn, dào jiā shí, zìjǐ jiā li yě hái liàngzhe dēng; lǎonián rén shuō: Làngmàn qíshí jiù xiàng gē zhōng chàng de nàyàng, “Wǒ néng xiǎngdào zuì làngmàn de shì, jiù shì hé nǐ yìqǐ mànmàn biàn lǎo.” Qíshí, ràng wǒmen gǎndòng de, jiù shì shēnghuó zhōng jiǎndān de àiqíng. Yǒu shíhou, jiǎndān jiù shì zuì dà de xìngfú.",
+      "mn": "Олон охид романтик хайранд их дуртай байдаг. Гэхдээ романтик гэж яг юу юм бол? Залуус — 'Романтик гэдэг бол хайрт чинь сар хүсэхэд од барьж өгдөггүй явдал' гэнэ. Дунд насныхан — 'Романтик гэдэг бол шөнө дунд хүртэл ажиллаад гэртээ ирэхэд гэрт чинь чийдэн асаалттай хүлээж байх явдал' гэнэ. Настайчууд бол — 'Романтик гэдэг үнэндээ дуунд дуулдагтай адил юм аа: миний санаанд багтах хамгийн романтик зүйл гэвэл чамтайгаа хамт аажмаар хөгшрөх явдал' гэдэг. Үнэндээ биднийг хамгийн их хөдөлгөдөг нь амьдралын жирийн хайр л байдаг. Заримдаа хамгийн энгийн нь хамгийн том жаргал байдаг юм."
+    },
+    {
+      "id": 5,
+      "audio": "textbook/hsk4A-textbook-0105.mp3",
+      "zh": "说到结婚，人们就会很自然地想起爱情。爱情是结婚的重要原因，但两个人共同生活，不仅需要浪漫的爱情，更需要性格上互相吸引。我丈夫是个很幽默的人。即使是很普通的事情，从他嘴里说出来也会变得很有意思。在我难过的时候，他总是有办法让我高兴起来。而且他的脾气也不错，结婚快十年了，我们俩几乎没因为什么事红过脸，很多人都特别羡慕我们。",
+      "pinyin": "Shuōdào jié hūn, rénmen jiù huì hěn zìrán de xiǎngqǐ àiqíng. Àiqíng shì jié hūn de zhòngyào yuányīn, dàn liǎng ge rén gòngtóng shēnghuó, bùjǐn xūyào làngmàn de àiqíng, gèng xūyào xìnggé shang hùxiāng xīyǐn. Wǒ zhàngfu shì ge hěn yōumò de rén. Jíshǐ shì hěn pǔtōng de shìqing, cóng tā zuǐ li shuō chulai yě huì biàn de hěn yǒu yìsi. Zài wǒ nánguò de shíhou, tā zǒngshì yǒu bànfǎ ràng wǒ gāoxìng qǐlai. Érqiě tā de píqi yě búcuò, jié hūn kuài shí nián le, wǒmen liǎ jīhū méi yīnwèi shénme shì hóngguo liǎn, hěn duō rén dōu tèbié xiànmù wǒmen.",
+      "mn": "Гэрлэлтийн тухай яриа гармагц хүмүүс аяндаа хайр дурлалаа боддог. Хайр бол гэрлэхэд чухал шалтгаан нь мөн, гэхдээ хоёр хүн хамт амьдрахад зөвхөн романтик хайраар болохгүй — зан чанарын хувьд бие биедээ татагддаг байх нь бүр илүү чухал. Миний нөхөр бол их хөгжилтэй, хошин хүн. Ямар ч энгийн зүйлийг түүний амаар ярихад л гоё сонин болчихдог. Намайг гутрангуй байх үед тэр ямар нэгэн байдлаар намайг заавал л баярлуулдаг. Зан ааш нь ч сайхан, гэрлээд бараг арван жил болж байгаа ч бид хоёр бараг ямар ч зүйл дээр маргалдаж байгаагүй. Олон хүн бидэн хоёрт үнэхээр атаархдаг."
+    }
+  ],
+  "pronunciation": {
+    "teacher_mn": "Хэдэн үгийг хамт хэлье, аяыг нь анхаараарай.",
+    "items": [
+      {
+        "zh": "熟悉",
+        "pinyin": "shúxī",
+        "tip_mn": "Өгсөх (2) + тэгш өндөр (1). Ярианд '悉' хөнгөрч shúxi шиг сонсогдоно."
+      },
+      {
+        "zh": "浪漫",
+        "pinyin": "làngmàn",
+        "tip_mn": "Хоёулаа буурах (4+4), тод хүчтэй: làng-màn."
+      },
+      {
+        "zh": "缺点",
+        "pinyin": "quēdiǎn",
+        "tip_mn": "'缺'-ийн üe-г уруулаа бөөрөнхийлж 'чүэ' гэнэ, 'че' биш."
+      },
+      {
+        "zh": "羡慕",
+        "pinyin": "xiànmù",
+        "tip_mn": "Буурах (4) + буурах (4): xiàn-mù."
+      }
+    ]
+  },
+  "grammar": [
+    {
+      "id": 1,
+      "point": "不仅……也/还/而且……",
+      "gloss_mn": "зөвхөн … төдийгүй, бас …",
+      "teacher_mn": "'不仅'-ийг эхний хагаст тавиад, хоёр дахь хагаст 也/还/而且-ийн нэгийг залгана. Хоёр хэсгийн эзэн нэг бол '不仅' эзний ард, өөр бол эзний өмнө.",
+      "examples": [
+        {
+          "zh": "他不仅足球踢得好，性格也不错。",
+          "pinyin": "Tā bùjǐn zúqiú tī de hǎo, xìnggé yě búcuò.",
+          "mn": "Тэр зөвхөн бөмбөг сайн тоглодгоороо ч барахгүй, зан нь ч гоё."
+        },
+        {
+          "zh": "听说云南不仅很美，而且人也非常热情。",
+          "pinyin": "Tīngshuō Yúnnán bùjǐn hěn měi, érqiě rén yě fēicháng rèqíng.",
+          "mn": "Юньнань зөвхөн үзэсгэлэнтэй төдийгүй, хүмүүс нь ч маш дотно гэсэн."
+        }
+      ],
+      "practice": [
+        {
+          "prompt": "李老师不仅喜欢看电影，______。",
+          "cue": "也"
+        },
+        {
+          "prompt": "他______，还喜欢游泳。",
+          "cue": "不仅"
+        },
+        {
+          "prompt": "不仅我会做中国菜，______。",
+          "cue": "而且"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "point": "从来",
+      "gloss_mn": "урьд хэзээ ч (ихэвчлэн үгүйсгэлд)",
+      "teacher_mn": "'Эртнээс одоог хүртэл үргэлж тийм' гэдгийг заана. Голдуу 从来不 / 从来没-тэй хамт.",
+      "examples": [
+        {
+          "zh": "老张开会从来不迟到。",
+          "pinyin": "Lǎo Zhāng kāihuì cónglái bù chídào.",
+          "mn": "Лао Жан хуралд хэзээ ч хоцордоггүй хүн."
+        },
+        {
+          "zh": "我从来没这么快乐过。",
+          "pinyin": "Wǒ cónglái méi zhème kuàilèguo.",
+          "mn": "Би амьдралдаа хэзээ ч ингэж жаргаж байгаагүй."
+        }
+      ],
+      "practice": [
+        {
+          "prompt": "很多人一回家就把门一关，______，住了几年还不知道邻居姓什么。",
+          "cue": "从来不"
+        },
+        {
+          "prompt": "……可能她也在这座大楼里上班。但是我们______。",
+          "cue": "从来没"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "point": "刚",
+      "gloss_mn": "дөнгөж, сая",
+      "teacher_mn": "Үйл явдал 'дөнгөж сая' болсныг заана. Эзний ард, үйл үгийн өмнө. Тэмдэглэл: 刚 нь дайвар үг (зөвхөн үйл үгийн өмнө), 刚才 нь цаг заасан нэр (бие даан зогсож чадна).",
+      "examples": [
+        {
+          "zh": "我上午刚借的那本书，怎么找不到了？",
+          "pinyin": "Wǒ shàngwǔ gāng jiè de nà běn shū, zěnme zhǎo bu dào le?",
+          "mn": "Өглөө дөнгөж зээлж авсан ном минь хаачихав, олдохоо байлаа?"
+        },
+        {
+          "zh": "我和丈夫刚结婚的时候，每天都觉得很新鲜。",
+          "pinyin": "Wǒ hé zhàngfu gāng jié hūn de shíhou, měi tiān dōu juéde hěn xīnxiān.",
+          "mn": "Бид хоёр дөнгөж гэрлэсэн үедээ өдөр болгон сонин содон санагддаг байсан."
+        }
+      ],
+      "practice": [
+        {
+          "prompt": "A: 你们俩认识很久了吧？ B: ______。",
+          "cue": "刚"
+        },
+        {
+          "prompt": "A: 你对这儿的生活习惯了吗？ B: ______，现在好多了。",
+          "cue": "刚"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "point": "即使……也……",
+      "gloss_mn": "…ч гэсэн, гэсэн ч",
+      "teacher_mn": "'即使' + '也'. Ихэвчлэн төсөөлсөн нөхцөл — 'тэгсэн ч гэсэн'. Эзний өмнө ч, ард ч орж болно.",
+      "examples": [
+        {
+          "zh": "即使只是跟老人吃吃饭、聊聊天，他们也会觉得很幸福。",
+          "pinyin": "Jíshǐ zhǐshì gēn lǎorén chīchi fàn, liáoliao tiān, tāmen yě huì juéde hěn xìngfú.",
+          "mn": "Настай хүмүүстэйгээ ердөө хамт хооллож яриа өрнүүлсэн ч гэсэн тэд их жаргалтай байдаг."
+        },
+        {
+          "zh": "浪漫是即使晚上加班到零点，到家时家里也还亮着灯。",
+          "pinyin": "Làngmàn shì jíshǐ wǎnshang jiā bān dào líng diǎn, dào jiā shí jiā li yě hái liàngzhe dēng.",
+          "mn": "Романтик гэдэг бол шөнө дунд хүртэл ажиллаад гэртээ ирэхэд гэрийн чийдэн асаалттай хүлээж байх явдал."
+        }
+      ],
+      "practice": [
+        {
+          "prompt": "A: 你丈夫工作真忙！ B: 是啊！他即使星期天，______。",
+          "cue": "也"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "point": "(在)……上",
+      "gloss_mn": "…ын талаар, …ын хувьд",
+      "teacher_mn": "'上' нь нэр үгийн ард орж, зөвхөн 'гадаргуу дээр' гэхээс гадна 'ямар нэг хүрээнд / ямар нэг талаар' гэсэн утга илэрхийлнэ.",
+      "examples": [
+        {
+          "zh": "你觉得北方和南方在饮食上有什么不同？",
+          "pinyin": "Nǐ juéde běifāng hé nánfāng zài yǐnshí shang yǒu shénme bùtóng?",
+          "mn": "Чиний бодлоор хойд, өмнөд хоол хүнсний талаар юугаараа ялгаатай вэ?"
+        },
+        {
+          "zh": "两个人共同生活，更需要性格上互相吸引。",
+          "pinyin": "Liǎng ge rén gòngtóng shēnghuó, gèng xūyào xìnggé shang hùxiāng xīyǐn.",
+          "mn": "Хоёр хүн хамт амьдрахад зан чанарын хувьд бие биедээ татагддаг байх нь бүр чухал."
+        }
+      ],
+      "practice": [
+        {
+          "prompt": "A: 你在这儿学习、生活都还好吧？ B: ______。",
+          "cue": "……上"
+        }
+      ]
+    }
+  ],
+  "exercises_textbook": {
+    "retell": {
+      "instruction_mn": "Яриа бүрийг гол баатрын амаар өгүүл.",
+      "prompts": [
+        {
+          "dialogue": 1,
+          "voice": "王静",
+          "start_zh": "我叫王静，我的男朋友叫李进……"
+        },
+        {
+          "dialogue": 2,
+          "voice": "王静",
+          "start_zh": "我下个月5号就要结婚了……"
+        },
+        {
+          "dialogue": 3,
+          "voice": "高老师",
+          "start_zh": "我和丈夫刚结婚的时候……"
+        }
+      ]
+    },
+    "fill_in": {
+      "instruction_mn": "Тохирох үгээ сонгож нөхөх.",
+      "banks": [
+        {
+          "words": [
+            "印象",
+            "接受",
+            "熟悉",
+            "共同",
+            "吸引"
+          ],
+          "items": [
+            {
+              "n": 1,
+              "q": "他们两个人______努力，终于完成了工作。",
+              "answer": "共同"
+            },
+            {
+              "n": 2,
+              "q": "那个地方特别漂亮，每年都会______很多国内外的游客。",
+              "answer": "吸引"
+            },
+            {
+              "n": 3,
+              "q": "在我的______中，他一直是个很幽默的人。",
+              "answer": "印象"
+            },
+            {
+              "n": 4,
+              "q": "我是一个南方人，很难______每天吃面条。",
+              "answer": "接受"
+            },
+            {
+              "n": 5,
+              "q": "这个事你最好先问一下李老师，这方面他比我______。",
+              "answer": "熟悉"
+            }
+          ]
+        },
+        {
+          "words": [
+            "脾气",
+            "从来",
+            "感动",
+            "羡慕",
+            "开玩笑"
+          ],
+          "items": [
+            {
+              "n": 6,
+              "q": "B: 你别跟我______了，我没学过游泳，怎么参加比赛啊？",
+              "answer": "开玩笑"
+            },
+            {
+              "n": 7,
+              "q": "B: 他虽然______很大，但工作很认真。",
+              "answer": "脾气"
+            },
+            {
+              "n": 8,
+              "q": "A: 真______你，找了个那么漂亮的女朋友！",
+              "answer": "羡慕"
+            },
+            {
+              "n": 9,
+              "q": "B: 他以前______不迟到，今天是怎么了？",
+              "answer": "从来"
+            },
+            {
+              "n": 10,
+              "q": "A: 这个电影讲了一个爱情故事，很浪漫，让人特别______。",
+              "answer": "感动"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "exercises_workbook": {
+    "source": "练习册 (Workbook) Lesson 1; answers verified vs Teacher's Book p.100.",
+    "listening": {
+      "audio_available": true,
+      "parts": [
+        {
+          "part": 1,
+          "type": "true_false",
+          "instruction_mn": "Сонсоод зөв/буруугаа тэмдэглэ (判断对错).",
+          "items": [
+            {
+              "n": 1,
+              "audio": "workbook/hsk4A-workbook-01-q01.mp3",
+              "statement_zh": "他们俩是在公司认识的。",
+              "answer": false
+            },
+            {
+              "n": 2,
+              "audio": "workbook/hsk4A-workbook-01-q02.mp3",
+              "statement_zh": "妻子希望丈夫天天送她礼物。",
+              "answer": false
+            },
+            {
+              "n": 3,
+              "audio": "workbook/hsk4A-workbook-01-q03.mp3",
+              "statement_zh": "踢足球需要球员们一起努力。",
+              "answer": true
+            },
+            {
+              "n": 4,
+              "audio": "workbook/hsk4A-workbook-01-q04.mp3",
+              "statement_zh": "爱情不需要浪漫。",
+              "answer": false
+            },
+            {
+              "n": 5,
+              "audio": "workbook/hsk4A-workbook-01-q05.mp3",
+              "statement_zh": "不要总是羡慕别人。",
+              "answer": true
+            }
+          ]
+        },
+        {
+          "part": 2,
+          "type": "mc",
+          "instruction_mn": "Сонсоод зөв хариуг сонго.",
+          "items": [
+            {
+              "n": 6,
+              "audio": "workbook/hsk4A-workbook-01-q06.mp3",
+              "options": {
+                "A": "丈夫和妻子",
+                "B": "妈妈和儿子",
+                "C": "爸爸和女儿",
+                "D": "姐姐和弟弟"
+              },
+              "answer": "D"
+            },
+            {
+              "n": 7,
+              "audio": "workbook/hsk4A-workbook-01-q07.mp3",
+              "options": {
+                "A": "很感动",
+                "B": "很突然",
+                "C": "很高兴",
+                "D": "很满意"
+              },
+              "answer": "B"
+            },
+            {
+              "n": 8,
+              "audio": "workbook/hsk4A-workbook-01-q08.mp3",
+              "options": {
+                "A": "很幽默",
+                "B": "很难过",
+                "C": "很奇怪",
+                "D": "很简单"
+              },
+              "answer": "A"
+            },
+            {
+              "n": 9,
+              "audio": "workbook/hsk4A-workbook-01-q09.mp3",
+              "options": {
+                "A": "聪明",
+                "B": "爱干净",
+                "C": "可爱",
+                "D": "漂亮"
+              },
+              "answer": "C"
+            },
+            {
+              "n": 10,
+              "audio": "workbook/hsk4A-workbook-01-q10.mp3",
+              "options": {
+                "A": "性格",
+                "B": "爱情",
+                "C": "电影",
+                "D": "工作"
+              },
+              "answer": "C"
+            },
+            {
+              "n": 11,
+              "audio": "workbook/hsk4A-workbook-01-q11.mp3",
+              "options": {
+                "A": "更瘦了",
+                "B": "更黑了",
+                "C": "更热情了",
+                "D": "更好看了"
+              },
+              "answer": "D"
+            },
+            {
+              "n": 12,
+              "audio": "workbook/hsk4A-workbook-01-q12.mp3",
+              "options": {
+                "A": "旅游",
+                "B": "体育",
+                "C": "法律",
+                "D": "数学"
+              },
+              "answer": "D"
+            }
+          ]
+        },
+        {
+          "part": 3,
+          "type": "mc",
+          "instruction_mn": "Сонсоод зөв хариуг сонго.",
+          "shared_audio": [
+            {
+              "items": [
+                19,
+                20
+              ],
+              "audio": "workbook/hsk4A-workbook-01-q19_20.mp3"
+            },
+            {
+              "items": [
+                21,
+                22
+              ],
+              "audio": "workbook/hsk4A-workbook-01-q21_22.mp3"
+            }
+          ],
+          "items": [
+            {
+              "n": 13,
+              "audio": "workbook/hsk4A-workbook-01-q13.mp3",
+              "options": {
+                "A": "看电影",
+                "B": "买票",
+                "C": "去学校",
+                "D": "见朋友"
+              },
+              "answer": "A"
+            },
+            {
+              "n": 14,
+              "audio": "workbook/hsk4A-workbook-01-q14.mp3",
+              "options": {
+                "A": "今天",
+                "B": "7号",
+                "C": "星期六",
+                "D": "10号"
+              },
+              "answer": "C"
+            },
+            {
+              "n": 15,
+              "audio": "workbook/hsk4A-workbook-01-q15.mp3",
+              "options": {
+                "A": "要加班",
+                "B": "感冒了",
+                "C": "要去游泳",
+                "D": "要去银行"
+              },
+              "answer": "A"
+            },
+            {
+              "n": 16,
+              "audio": "workbook/hsk4A-workbook-01-q16.mp3",
+              "options": {
+                "A": "很满意",
+                "B": "生气了",
+                "C": "忘带钱了",
+                "D": "衬衫需要洗"
+              },
+              "answer": "D"
+            },
+            {
+              "n": 17,
+              "audio": "workbook/hsk4A-workbook-01-q17.mp3",
+              "options": {
+                "A": "还没结婚",
+                "B": "正准备结婚",
+                "C": "结婚三年了",
+                "D": "结婚没多久"
+              },
+              "answer": "D"
+            },
+            {
+              "n": 18,
+              "audio": "workbook/hsk4A-workbook-01-q18.mp3",
+              "options": {
+                "A": "丈夫和妻子",
+                "B": "老师和学生",
+                "C": "司机和客人",
+                "D": "哥哥和妹妹"
+              },
+              "answer": "A"
+            },
+            {
+              "n": 19,
+              "audio": "workbook/hsk4A-workbook-01-q19_20.mp3",
+              "options": {
+                "A": "感动",
+                "B": "爱情",
+                "C": "一个人没意思",
+                "D": "两个人适合"
+              },
+              "answer": "B"
+            },
+            {
+              "n": 20,
+              "audio": "workbook/hsk4A-workbook-01-q19_20.mp3",
+              "options": {
+                "A": "相信自己",
+                "B": "不要生气",
+                "C": "早点儿回家",
+                "D": "互相关心"
+              },
+              "answer": "D"
+            },
+            {
+              "n": 21,
+              "audio": "workbook/hsk4A-workbook-01-q21_22.mp3",
+              "options": {
+                "A": "很自然",
+                "B": "很普通",
+                "C": "会开玩笑",
+                "D": "没意思"
+              },
+              "answer": "A"
+            },
+            {
+              "n": 22,
+              "audio": "workbook/hsk4A-workbook-01-q21_22.mp3",
+              "options": {
+                "A": "让人快乐",
+                "B": "特别客气",
+                "C": "做事认真",
+                "D": "没有缺点"
+              },
+              "answer": "A"
+            }
+          ]
+        }
+      ]
+    },
+    "reading": {
+      "select_word": [
+        {
+          "bank": {
+            "A": "自然",
+            "B": "缺点",
+            "C": "互相",
+            "D": "坚持",
+            "E": "生活"
+          },
+          "items": [
+            {
+              "n": 23,
+              "q": "（　）中少了幽默，就像菜里忘了加盐，总是让人觉得少了些什么。",
+              "answer": "E"
+            },
+            {
+              "n": 24,
+              "q": "一些人不吃早饭就去上学或上班，时间长了，（　）会影响健康。",
+              "answer": "A"
+            },
+            {
+              "n": 25,
+              "q": "刚开学，大家都还不太熟悉，请你们每个人介绍一下自己，（　）认识认识。",
+              "answer": "C"
+            },
+            {
+              "n": 26,
+              "q": "他的聪明、幽默深深地吸引了我。虽然他也有一些（　），但我还是认为他是最可爱的人，和他在一起很幸福。",
+              "answer": "B"
+            }
+          ]
+        },
+        {
+          "bank": {
+            "A": "俩",
+            "B": "最好",
+            "C": "温度",
+            "D": "刚",
+            "E": "够"
+          },
+          "items": [
+            {
+              "n": 27,
+              "q": "A: 你买水果了吗？ B: 这是我（　）买的苹果，都洗干净了，吃点儿吧。",
+              "answer": "D"
+            },
+            {
+              "n": 28,
+              "q": "A: 我钱包里只有270多块钱，可能不（　）。 B: 没关系，我这儿有信用卡。",
+              "answer": "E"
+            },
+            {
+              "n": 29,
+              "q": "A: 咱们把床往后面搬一下…… B: 别开玩笑了，我们俩搬不动，（　）等你爸爸回来再说。",
+              "answer": "B"
+            },
+            {
+              "n": 30,
+              "q": "A: ……这个周末我就介绍你们（　）认识，好不好？ B: 你把我的QQ号给他……",
+              "answer": "A"
+            }
+          ]
+        }
+      ],
+      "ordering": [
+        {
+          "n": 31,
+          "parts": {
+            "A": "茶不仅仅是一种饮料",
+            "B": "它在中国有着几千年的历史",
+            "C": "而且还是一种文化"
+          },
+          "answer": "ACB"
+        },
+        {
+          "n": 32,
+          "parts": {
+            "A": "所以我对她的印象很深",
+            "B": "她就对我特别热情",
+            "C": "第一次和王小姐见面"
+          },
+          "answer": "CBA"
+        },
+        {
+          "n": 33,
+          "parts": {
+            "A": "我觉得他很多地方都不错",
+            "B": "这一点是他吸引我的主要原因",
+            "C": "特别是脾气、性格很好"
+          },
+          "answer": "ACB"
+        },
+        {
+          "n": 34,
+          "parts": {
+            "A": "它更需要两个人互相理解和接受",
+            "B": "结婚我认为只有爱情是远远不够的",
+            "C": "不但要接受他的优点，还要接受他的缺点"
+          },
+          "answer": "BAC"
+        }
+      ],
+      "comprehension": [
+        {
+          "n": 35,
+          "passage_zh": "男人和女人是不一样的。在工作中，如果男人遇到了不高兴的事，他回到家不喜欢跟妻子说，但是女人很喜欢。",
+          "q_zh": "女人在工作中遇到不高兴的事，会：",
+          "options": {
+            "A": "哭",
+            "B": "跟丈夫说",
+            "C": "请朋友帮忙",
+            "D": "去买东西"
+          },
+          "answer": "B"
+        },
+        {
+          "n": 36,
+          "passage_zh": "我女朋友是个很幽默的人，在生活上也比较喜欢浪漫，我们俩认识两年了，今年我们打算结婚。",
+          "q_zh": "根据这段话，可以知道他女朋友：",
+          "options": {
+            "A": "害怕结婚",
+            "B": "喜欢浪漫",
+            "C": "爱穿裙子",
+            "D": "有点儿生气"
+          },
+          "answer": "B"
+        },
+        {
+          "n": 37,
+          "passage_zh": "两个人在一起要有共同的爱好、兴趣，对一些事情有一样的想法。如果说一对夫妻缺少或者没有共同的想法，那问题可能就大了。",
+          "q_zh": "根据这段话，丈夫与妻子需要：",
+          "options": {
+            "A": "互相关心",
+            "B": "经常聊天儿",
+            "C": "有共同的想法",
+            "D": "照顾老人"
+          },
+          "answer": "C"
+        },
+        {
+          "n": 38,
+          "passage_zh": "你有一个苹果，我有一个香蕉，把我的给你，把你的给我，每个人还是只有一个水果；你有一个想法，我有一个想法，把我的告诉你，把你的告诉我，每个人就有了两个想法。",
+          "q_zh": "这段话的主要意思是：",
+          "options": {
+            "A": "要关心别人",
+            "B": "要多吃水果",
+            "C": "聊天儿很重要",
+            "D": "做事情要认真"
+          },
+          "answer": "C"
+        },
+        {
+          "n": 39,
+          "passage_zh": "生活中有这样两种人：一种总是看别人怎么生活，另一种喜欢生活给别人看。其实，每个人有每个人的生活，不用羡慕他人，也不用担心别人怎么想，只要用心走好自己的路，幸福就在身边。",
+          "q_zh": "根据这段话，我们应该：",
+          "options": {
+            "A": "学会说“不”",
+            "B": "担心别人",
+            "C": "羡慕别人",
+            "D": "过好自己的生活"
+          },
+          "answer": "D"
+        },
+        {
+          "n": 40,
+          "passage_group": "40-41",
+          "passage_zh": "世界上最重要的三种关系是家人、朋友和爱人。每个人一出生就跟家人在一起生活，是最重要的一种关系；从三四岁的小孩子到七八十岁的老人，每个人都需要朋友，离开朋友，我们的生活一定会非常没意思；人的一生，和你在一起时间最长的人是你的爱人，和你一起生活，一起解决问题。",
+          "q_zh": "根据这段话，可以知道一个人跟家人的关系：",
+          "options": {
+            "A": "有很多问题",
+            "B": "不能自己选择",
+            "C": "不容易说清楚",
+            "D": "非常没意思"
+          },
+          "answer": "B"
+        },
+        {
+          "n": 41,
+          "passage_group": "40-41",
+          "q_zh": "这段话主要是说：",
+          "options": {
+            "A": "人和人的关系",
+            "B": "生活的想法",
+            "C": "工作的问题",
+            "D": "学习的方法"
+          },
+          "answer": "A"
+        },
+        {
+          "n": 42,
+          "passage_group": "42-43",
+          "passage_zh": "我们的一生中会遇到一件非常重要的事情，那就是结婚，选择跟自己爱的人在一起生活。在结婚以前，我们都要想清楚自己想要的是什么，不要被别人的想法影响，因为没有人能把幸福的生活送给你。幸福就是你和你爱的人在一起，共同生活，而且在心里感到快乐。",
+          "q_zh": "结婚以前，我们应该：",
+          "options": {
+            "A": "休息好",
+            "B": "让别人了解",
+            "C": "问问家人",
+            "D": "知道自己要什么"
+          },
+          "answer": "D"
+        },
+        {
+          "n": 43,
+          "passage_group": "42-43",
+          "q_zh": "根据这段话，结婚以后幸福的原因是：",
+          "options": {
+            "A": "互相理解",
+            "B": "互相关心",
+            "C": "有新鲜感",
+            "D": "找到了你爱的人"
+          },
+          "answer": "D"
+        }
+      ]
+    },
+    "writing": {
+      "make_sentence": {
+        "instruction_mn": "Үгсийг эвлүүлж зөв өгүүлбэр болго (连词成句).",
+        "items": [
+          {
+            "n": 44,
+            "words": [
+              "会跳舞",
+              "的",
+              "人",
+              "羡慕",
+              "很",
+              "她"
+            ],
+            "answer": "她很羡慕会跳舞的人。"
+          },
+          {
+            "n": 45,
+            "words": [
+              "衣服",
+              "你",
+              "换",
+              "一件",
+              "最好"
+            ],
+            "answer": "你最好换一件衣服。"
+          },
+          {
+            "n": 46,
+            "words": [
+              "请假的",
+              "知道",
+              "经理",
+              "原因",
+              "没人"
+            ],
+            "answer": "没人知道经理请假的原因。"
+          },
+          {
+            "n": 47,
+            "words": [
+              "俩",
+              "没",
+              "参加",
+              "考试",
+              "她们"
+            ],
+            "answer": "她们俩没参加考试。"
+          },
+          {
+            "n": 48,
+            "words": [
+              "自行车",
+              "送给我",
+              "他",
+              "把",
+              "那辆",
+              "了"
+            ],
+            "answer": "他把那辆自行车送给我了。"
+          }
+        ]
+      },
+      "note_mn": "Workbook-д 49–50 ч бий (хариу: 幸福就是和你爱的人在一起，共同生活 / 他们俩周末经常去一起买东西). Асуултын хэсгийг workbook-ийн дараагийн хуудаснаас нэмж болно."
+    }
+  },
+  "recap": {
+    "teacher_mn": "Өнөөдөр хайр, гэр бүлийн 32 үг, 3 яриа, 2 эх, таван дүрэм (不仅…也 · 从来 · 刚 · 即使…也 · 在…上) үзлээ. '印象很深', '从来没…过', '性格上' гурвыг санаж яваарай. Маргааш давтахад чинь сануулъя. Сайн байна."
+  }
+}
