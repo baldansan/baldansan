@@ -1,11 +1,12 @@
 "use client";
 
+import Link from "next/link";
 import { useCallback, useMemo, useState } from "react";
+import { RadicalHanziPanel } from "@/components/games/radical-hanzi-panel";
 import { GameShell } from "@/components/games/game-shell";
 import {
   getRadicalGameEntries,
   isAnswerCorrect,
-  orderHintFromStructure,
   scoreForAttempt,
   type RadicalGameEntry,
 } from "@/lib/games/radical-game-data";
@@ -49,6 +50,7 @@ export function RadicalGameClient({
   const [attempts, setAttempts] = useState(0);
   const [correct, setCorrect] = useState(0);
   const [finished, setFinished] = useState(false);
+  const [hideHanzi, setHideHanzi] = useState(false);
 
   const total = entries.length;
   const current = entries[index];
@@ -188,6 +190,8 @@ export function RadicalGameClient({
 
   if (!current) return null;
 
+  const hanziRevealed = checkResult === "ok";
+
   return (
     <GameShell mainClassName="max-w-[430px] mx-auto w-full bg-[#f1f6f3] px-5 pt-6 pb-8">
       <RadicalGameTop
@@ -204,31 +208,25 @@ export function RadicalGameClient({
 
       <RadicalGameStats score={score} streak={streak} accuracy={accuracy} />
 
+      <div className="mb-3 flex justify-end">
+        <Link
+          href="/games/radical/challenge"
+          className="rounded-full bg-[#fff4e0] px-3.5 py-1.5 text-xs font-extrabold text-[#b9760a]"
+        >
+          ⚡ Сорилт горим
+        </Link>
+      </div>
+
       <div className="rounded-[24px] bg-white p-[18px] shadow-[0_12px_30px_rgba(25,40,30,0.10)]">
-        <div className="flex items-center justify-between gap-3">
-          <div className="flex items-center gap-3">
-            <p className="font-[family-name:var(--font-noto-sc,'Noto Sans SC',sans-serif)] text-[74px] font-black leading-none tracking-[4px] text-[var(--app-text)]">
-              {current.char}
-            </p>
-            <div>
-              <p className="text-xl font-bold text-[var(--app-text)]">
-                {current.pinyin}
-              </p>
-              <p className="mt-1 text-sm text-[var(--app-muted)]">
-                {current.meaning_mn}
-              </p>
-            </div>
-          </div>
-          <span className="shrink-0 rounded-full bg-[var(--app-primary-light)] px-[11px] py-1.5 text-[11px] font-extrabold text-[var(--app-primary-dark)]">
-            Шинэ
-          </span>
-        </div>
+        <RadicalHanziPanel
+          entry={current}
+          hideHanzi={hideHanzi}
+          revealed={hanziRevealed}
+          onToggleHide={() => setHideHanzi((h) => !h)}
+        />
 
         <p className="mt-3.5 text-sm font-extrabold text-[#33433b]">
           Бүрдэл хэсгүүдийг зөв дарааллаар нь сонго
-        </p>
-        <p className="mt-1 mb-2.5 text-xs text-[var(--app-muted)]">
-          Дараалал: {orderHintFromStructure(current.structure)}
         </p>
 
         <div className="flex min-h-[78px] flex-wrap items-center justify-center gap-2 rounded-[18px] border-2 border-dashed border-[#c6d4cc] bg-[#fbfffd] px-3 py-3">

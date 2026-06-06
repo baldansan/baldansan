@@ -35,7 +35,15 @@ export interface HskCharacter {
   pinyin: string[];
   strokeCount?: number;
   radical?: string;
-  components?: { c: string; meaning_en?: string; meaning_mn?: string }[];
+  components?: {
+    c: string;
+    meaning_en?: string;
+    meaning_mn?: string;
+    icon?: string;
+  }[];
+  etymology_mn?: string;
+  /** Legacy alias — prefer etymology_mn */
+  etymologyMn?: string;
   readingLevel?: number;
   writingLevel?: number;
   practice: "write" | "recognize";

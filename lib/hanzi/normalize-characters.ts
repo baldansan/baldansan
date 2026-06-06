@@ -26,6 +26,7 @@ function normalizeComponents(
         c,
         meaning_en: trim(row.meaning_en) || trim(row.meaningEn) || undefined,
         meaning_mn: trim(row.meaning_mn) || trim(row.meaningMn) || undefined,
+        icon: trim(row.icon) || undefined,
       };
     })
     .filter((row): row is NonNullable<typeof row> => row !== null);
@@ -71,6 +72,10 @@ export function normalizeHskCharacter(raw: unknown): HskCharacter | null {
       : undefined,
     meaningEn: trim(raw.meaningEn) || trim(raw.meaning_en) || undefined,
     meaningMn: trim(raw.meaningMn) || trim(raw.meaning_mn) || undefined,
+    etymology_mn:
+      trim(raw.etymology_mn) || trim(raw.etymologyMn) || undefined,
+    etymologyMn:
+      trim(raw.etymologyMn) || trim(raw.etymology_mn) || undefined,
   };
 }
 

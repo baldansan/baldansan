@@ -4,7 +4,8 @@ export type GameType =
   | "missing-word"
   | "arrange"
   | "stroke"
-  | "radical";
+  | "radical"
+  | "radical-challenge";
 
 export type GameVocabItem = {
   id: string;

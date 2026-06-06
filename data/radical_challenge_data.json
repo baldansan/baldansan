@@ -1,0 +1,428 @@
+{
+ "componentMap": {
+  "宀": {
+   "name": "дээвэр, байшин",
+   "icon": "🏠"
+  },
+  "亻": {
+   "name": "хүн",
+   "icon": "🧍"
+  },
+  "人": {
+   "name": "хүн",
+   "icon": "👤"
+  },
+  "女": {
+   "name": "эмэгтэй",
+   "icon": "👩"
+  },
+  "子": {
+   "name": "хүүхэд, хүү",
+   "icon": "🧒"
+  },
+  "日": {
+   "name": "нар",
+   "icon": "☀️"
+  },
+  "月": {
+   "name": "сар",
+   "icon": "🌙"
+  },
+  "木": {
+   "name": "мод",
+   "icon": "🌳"
+  },
+  "豕": {
+   "name": "гахай",
+   "icon": "🐖"
+  },
+  "田": {
+   "name": "тариалан, талбай",
+   "icon": "🌾"
+  },
+  "力": {
+   "name": "хүч",
+   "icon": "💪"
+  },
+  "手": {
+   "name": "гар",
+   "icon": "✋"
+  },
+  "目": {
+   "name": "нүд",
+   "icon": "👁️"
+  },
+  "舌": {
+   "name": "хэл",
+   "icon": "👅"
+  },
+  "口": {
+   "name": "ам",
+   "icon": "👄"
+  },
+  "壴": {
+   "name": "бөмбөр",
+   "icon": "🥁"
+  },
+  "百": {
+   "name": "(энд) ор, дэвсгэр",
+   "icon": "🛏️"
+  },
+  "鱼": {
+   "name": "загас",
+   "icon": "🐟"
+  },
+  "羊": {
+   "name": "хонь",
+   "icon": "🐑"
+  },
+  "小": {
+   "name": "жижиг",
+   "icon": "🤏"
+  },
+  "大": {
+   "name": "том",
+   "icon": "🙆"
+  },
+  "囗": {
+   "name": "хүрээ",
+   "icon": "⬜"
+  },
+  "门": {
+   "name": "хаалга",
+   "icon": "🚪"
+  },
+  "火": {
+   "name": "гал",
+   "icon": "🔥"
+  },
+  "土": {
+   "name": "шороо",
+   "icon": "🟫"
+  },
+  "不": {
+   "name": "биш",
+   "icon": "⛔"
+  },
+  "正": {
+   "name": "шулуун",
+   "icon": "📏"
+  },
+  "水": {
+   "name": "ус",
+   "icon": "💧"
+  },
+  "心": {
+   "name": "зүрх, сэтгэл",
+   "icon": "❤️"
+  },
+  "马": {
+   "name": "морь",
+   "icon": "🐴"
+  },
+  "山": {
+   "name": "уул",
+   "icon": "⛰️"
+  }
+ },
+ "distractors": [
+  "口",
+  "木",
+  "女",
+  "日",
+  "月",
+  "水",
+  "火",
+  "心",
+  "目",
+  "手",
+  "田",
+  "力",
+  "马",
+  "山",
+  "大",
+  "小",
+  "土"
+ ],
+ "games": [
+  {
+   "char": "好",
+   "pinyin": "hǎo",
+   "meaning_mn": "сайн",
+   "answer": [
+    "女",
+    "子"
+   ],
+   "structure": "⿰女子",
+   "etymology_mn": "女 эмэгтэй 子 хүүхэдтэйгээ — сайн.",
+   "hsk_level": 1
+  },
+  {
+   "char": "明",
+   "pinyin": "míng",
+   "meaning_mn": "тод, гэрэлтэй",
+   "answer": [
+    "日",
+    "月"
+   ],
+   "structure": "⿰日月",
+   "etymology_mn": "日 нар, 月 сар хоёрын гэрэл — тод.",
+   "hsk_level": 1
+  },
+  {
+   "char": "休",
+   "pinyin": "xiū",
+   "meaning_mn": "амрах",
+   "answer": [
+    "亻",
+    "木"
+   ],
+   "structure": "⿰亻木",
+   "etymology_mn": "亻 хүн 木 модонд налан амарч байгаа нь — амрах.",
+   "hsk_level": 1
+  },
+  {
+   "char": "林",
+   "pinyin": "lín",
+   "meaning_mn": "ой",
+   "answer": [
+    "木",
+    "木"
+   ],
+   "structure": "⿰木木",
+   "etymology_mn": "木 мод хоёр зэрэгцвэл — ой.",
+   "hsk_level": 1
+  },
+  {
+   "char": "森",
+   "pinyin": "sēn",
+   "meaning_mn": "шигүү ой",
+   "answer": [
+    "木",
+    "木",
+    "木"
+   ],
+   "structure": "⿱木⿰木木",
+   "etymology_mn": "木 мод гурав — шигүү ой.",
+   "hsk_level": 2
+  },
+  {
+   "char": "众",
+   "pinyin": "zhòng",
+   "meaning_mn": "олон түмэн",
+   "answer": [
+    "人",
+    "人",
+    "人"
+   ],
+   "structure": "⿱人⿰人人",
+   "etymology_mn": "人 хүн гурав — олон түмэн.",
+   "hsk_level": 2
+  },
+  {
+   "char": "从",
+   "pinyin": "cóng",
+   "meaning_mn": "дагах; -аас",
+   "answer": [
+    "人",
+    "人"
+   ],
+   "structure": "⿰人人",
+   "etymology_mn": "人 хүн нөгөөгөө дагаж байгаа нь — дагах.",
+   "hsk_level": 2
+  },
+  {
+   "char": "朋",
+   "pinyin": "péng",
+   "meaning_mn": "найз",
+   "answer": [
+    "月",
+    "月"
+   ],
+   "structure": "⿰月月",
+   "etymology_mn": "月 (хүн) хоёр хамт алхах нь — найз.",
+   "hsk_level": 2
+  },
+  {
+   "char": "安",
+   "pinyin": "ān",
+   "meaning_mn": "амар тайван",
+   "answer": [
+    "宀",
+    "女"
+   ],
+   "structure": "⿱宀女",
+   "etymology_mn": "女 эмэгтэй 宀 байшин дотроо аюулгүй — амар тайван.",
+   "hsk_level": 1
+  },
+  {
+   "char": "家",
+   "pinyin": "jiā",
+   "meaning_mn": "гэр, гэр бүл",
+   "answer": [
+    "宀",
+    "豕"
+   ],
+   "structure": "⿱宀豕",
+   "etymology_mn": "宀 дээвэр дор 豕 гахай — гэр.",
+   "hsk_level": 1
+  },
+  {
+   "char": "字",
+   "pinyin": "zì",
+   "meaning_mn": "үсэг, тэмдэгт",
+   "answer": [
+    "宀",
+    "子"
+   ],
+   "structure": "⿱宀子",
+   "etymology_mn": "宀 байшин дотор 子 хүүхэд төрж өсдөг шиг — үсэг.",
+   "hsk_level": 1
+  },
+  {
+   "char": "灾",
+   "pinyin": "zāi",
+   "meaning_mn": "гамшиг",
+   "answer": [
+    "宀",
+    "火"
+   ],
+   "structure": "⿱宀火",
+   "etymology_mn": "宀 байшин 火 галд шатах нь — гамшиг.",
+   "hsk_level": 2
+  },
+  {
+   "char": "男",
+   "pinyin": "nán",
+   "meaning_mn": "эрэгтэй",
+   "answer": [
+    "田",
+    "力"
+   ],
+   "structure": "⿱田力",
+   "etymology_mn": "田 талбайд 力 хүч гаргаж хөдөлмөрлөдөг нь — эрэгтэй.",
+   "hsk_level": 1
+  },
+  {
+   "char": "看",
+   "pinyin": "kàn",
+   "meaning_mn": "харах",
+   "answer": [
+    "手",
+    "目"
+   ],
+   "structure": "⿱手目",
+   "etymology_mn": "手 гараа 目 нүдэн дээрээ тавьж холыг ширтэх нь — харах.",
+   "hsk_level": 1
+  },
+  {
+   "char": "喜",
+   "pinyin": "xǐ",
+   "meaning_mn": "баяр баясгалан",
+   "answer": [
+    "壴",
+    "口"
+   ],
+   "structure": "⿱壴口",
+   "etymology_mn": "壴 бөмбөр дэлдэж 口 амаар дуулах нь — баяр баясгалан.",
+   "hsk_level": 1
+  },
+  {
+   "char": "鲜",
+   "pinyin": "xiān",
+   "meaning_mn": "шинэхэн, амтлаг",
+   "answer": [
+    "鱼",
+    "羊"
+   ],
+   "structure": "⿰鱼羊",
+   "etymology_mn": "鱼 загас, 羊 хонь хоёр — шинэхэн амттай.",
+   "hsk_level": 3
+  },
+  {
+   "char": "尖",
+   "pinyin": "jiān",
+   "meaning_mn": "үзүүртэй, хурц",
+   "answer": [
+    "小",
+    "大"
+   ],
+   "structure": "⿱小大",
+   "etymology_mn": "小 жижиг нь 大 томын дээр — үзүүртэй.",
+   "hsk_level": 3
+  },
+  {
+   "char": "尘",
+   "pinyin": "chén",
+   "meaning_mn": "тоос, шороо",
+   "answer": [
+    "小",
+    "土"
+   ],
+   "structure": "⿱小土",
+   "etymology_mn": "小 жижиг 土 шороо — тоос.",
+   "hsk_level": 3
+  },
+  {
+   "char": "歪",
+   "pinyin": "wāi",
+   "meaning_mn": "хазгай, муруй",
+   "answer": [
+    "不",
+    "正"
+   ],
+   "structure": "⿱不正",
+   "etymology_mn": "不 биш 正 шулуун — хазгай.",
+   "hsk_level": 3
+  },
+  {
+   "char": "困",
+   "pinyin": "kùn",
+   "meaning_mn": "боогдох, нойрмог",
+   "answer": [
+    "囗",
+    "木"
+   ],
+   "structure": "⿴囗木",
+   "etymology_mn": "囗 хүрээ дотор 木 мод — боогдсон.",
+   "hsk_level": 3
+  },
+  {
+   "char": "闪",
+   "pinyin": "shǎn",
+   "meaning_mn": "гялсхийх, мултрах",
+   "answer": [
+    "门",
+    "人"
+   ],
+   "structure": "⿵门人",
+   "etymology_mn": "门 хаалганаас 人 хүн гэнэт харагдах — гялсхийх.",
+   "hsk_level": 3
+  },
+  {
+   "char": "宿",
+   "pinyin": "sù",
+   "meaning_mn": "хоноглох, байрлах",
+   "answer": [
+    "宀",
+    "亻",
+    "百"
+   ],
+   "structure": "⿱宀⿰亻百",
+   "etymology_mn": "宀 дээвэр дор 亻 хүн 百 орон дээрээ унтаж байгаа нь — хоноглох.",
+   "hsk_level": 4
+  },
+  {
+   "char": "舍",
+   "pinyin": "shè",
+   "meaning_mn": "байр, оромж",
+   "answer": [
+    "人",
+    "舌"
+   ],
+   "structure": "⿱人舌",
+   "etymology_mn": "人 доор 舌 — байр, оромж. 宿舍 = дотуур байр.",
+   "hsk_level": 4
+  }
+ ]
+}

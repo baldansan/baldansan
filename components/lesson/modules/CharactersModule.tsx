@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
+import { CharacterDecompositionHint } from "@/components/hanzi/CharacterDecompositionHint";
 import { CharacterWriter } from "@/components/hanzi/CharacterWriter";
 import { markBsModuleCompleted } from "@/lib/lesson/bs-step-progress";
 import { HANZI_WRITING_LABELS } from "@/lib/hanzi/writing-practice";
@@ -64,6 +65,8 @@ export default function CharactersModule({
           <span className="bs-char-meaning">{current.meaningMn}</span>
         ) : null}
       </div>
+
+      <CharacterDecompositionHint character={current} />
 
       <CharacterWriter
         key={`${current.hanzi}-${index}`}

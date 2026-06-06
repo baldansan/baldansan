@@ -13,6 +13,8 @@ import type {
   HskLessonPackage as Lesson,
   HskPackageVocabItem as VocabItem,
 } from "@/types/hsk-lesson-package";
+import { CharacterDecompositionHint } from "@/components/hanzi/CharacterDecompositionHint";
+import { resolveDecompositionCharacters } from "@/lib/hanzi/character-decomposition";
 import SpeakButton from "../SpeakButton";
 
 function vocabKey(w: VocabItem): string {
@@ -98,6 +100,11 @@ export default function VocabularyCard({
     enrichment.showFrequency ||
     enrichment.classifiers.length > 0;
 
+  const decompositionCharacters = useMemo(
+    () => resolveDecompositionCharacters(w?.zh ?? "", lesson.characters?.characters ?? []),
+    [w?.zh, lesson.characters?.characters]
+  );
+
   useEffect(() => {
     if (total === 0 || hydrateDoneRef.current) return;
     hydrateDoneRef.current = true;
@@ -180,6 +187,17 @@ export default function VocabularyCard({
 
       <div className="bs-vcard">
         <div className="bs-hanzi">{w.zh}</div>
+        {decompositionCharacters.length > 0 ? (
+          <div className="bs-decomp-hint-stack">
+            {decompositionCharacters.map((character) => (
+              <CharacterDecompositionHint
+                key={character.hanzi}
+                character={character}
+                showCharLabel={decompositionCharacters.length > 1}
+              />
+            ))}
+          </div>
+        ) : null}
         <div className="bs-vpy">{w.pinyin}</div>
         {meaning.text ? (
           <div className={meaning.pending ? "bs-vmn bs-vmn-pending" : "bs-vmn"}>

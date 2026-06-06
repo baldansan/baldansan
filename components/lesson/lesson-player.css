@@ -161,4 +161,17 @@
 .bs-char-meta dt{font-weight:700;color:var(--bs-muted)}
 .bs-char-meta dd{margin:0;color:var(--bs-ink-2)}
 .bs-char-decomp{font-family:var(--bs-zh);font-size:15px;font-weight:600}
+
+/* character decomposition hint — icon + MN name + etymology */
+.bs-decomp-hint-stack{display:flex;flex-direction:column;gap:8px;margin-top:10px;text-align:left}
+.bs-decomp-hint{margin-top:10px;padding:10px 12px;border-radius:12px;background:var(--bs-green-50);border:1px solid var(--bs-green-100);text-align:left}
+.bs-char-head .bs-decomp-hint{margin-top:8px;margin-bottom:2px}
+.bs-decomp-hint-label{margin:0 0 6px;font-size:10px;font-weight:800;letter-spacing:.04em;text-transform:uppercase;color:var(--bs-green-700)}
+.bs-decomp-hint-char{font-family:var(--bs-zh);font-size:12px;font-weight:900;color:var(--bs-ink);text-transform:none;letter-spacing:0}
+.bs-decomp-hint-row{display:flex;flex-wrap:wrap;gap:6px}
+.bs-decomp-chip{display:inline-flex;align-items:center;gap:4px;padding:4px 8px;border-radius:999px;background:#fff;border:1px solid var(--bs-line);font-size:11px;line-height:1.2}
+.bs-decomp-chip-icon{font-size:14px;line-height:1}
+.bs-decomp-chip-glyph{font-family:var(--bs-zh);font-size:13px;font-weight:800;color:var(--bs-ink)}
+.bs-decomp-chip-name{color:var(--bs-muted);font-weight:600}
+.bs-decomp-etym{margin:8px 0 0;font-size:11px;line-height:1.45;color:var(--bs-ink-2)}
 .bs-cta-muted{margin-top:8px;background:#fff;color:var(--bs-ink-2);border:1px solid var(--bs-line);box-shadow:none}

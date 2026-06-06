@@ -89,7 +89,7 @@ function gamesForLanguage(
             id: "radical" as const,
             slug: "radical" as const,
             title: labels.radicalTitle,
-            desc: labels.radicalDesc,
+            desc: "Энгийн + ⚡ Сорилт горим (цаг, амь)",
             icon: "🧩",
             color: "from-orange-400 to-orange-500",
             badge: "Шинэ",
