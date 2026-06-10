@@ -33,6 +33,26 @@ type GameCard = {
 
 const CHINESE_HSK_GAMES: GameCard[] = [
   {
+    id: "mock-tests",
+    slug: "mock-tests",
+    title: "HSK загвар шалгалт",
+    desc: "Таймер · аудио · автомат оноо",
+    icon: "📋",
+    color: "from-emerald-500 to-green-600",
+    badge: "Шинэ",
+    global: true,
+  },
+  {
+    id: "hsk-vocab-quiz",
+    slug: "hsk-vocab-quiz",
+    title: "Үгсийн дасгал",
+    desc: "Vocabulary quiz · 20–40 асуулт",
+    icon: "🎯",
+    color: "from-teal-500 to-emerald-600",
+    badge: "Quiz",
+    global: true,
+  },
+  {
     id: "meaning",
     slug: "meaning",
     title: "Утга сонгох",

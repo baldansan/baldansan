@@ -194,6 +194,39 @@ export async function rateWordSrs(
   return { data: data as WordSrsRow, error: null };
 }
 
+/** How many of the given word ids have reps > 0 for this user. */
+export async function countStudiedAmongWordIds(
+  userId: string,
+  wordIds: number[]
+): Promise<{ count: number; error: string | null }> {
+  if (!supabase || !hasSupabaseConfig) {
+    return { count: 0, error: "Supabase тохиргоо байхгүй." };
+  }
+  if (wordIds.length === 0) {
+    return { count: 0, error: null };
+  }
+
+  const unique = [...new Set(wordIds)];
+  let count = 0;
+
+  for (let i = 0; i < unique.length; i += 200) {
+    const chunk = unique.slice(i, i + 200);
+    const { data, error } = await supabase
+      .from("user_word_srs")
+      .select("word_id")
+      .eq("user_id", userId)
+      .gt("reps", 0)
+      .in("word_id", chunk);
+
+    if (error) {
+      return { count: 0, error: error.message };
+    }
+    count += (data ?? []).length;
+  }
+
+  return { count, error: null };
+}
+
 export async function getUserWordSrsStats(
   userId: string
 ): Promise<{ data: UserWordSrsStats | null; error: string | null }> {

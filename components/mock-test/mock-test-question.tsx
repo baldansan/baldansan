@@ -1,0 +1,368 @@
+"use client";
+
+import { useRef } from "react";
+import type {
+  MockOption,
+  MockTestAnswers,
+  MockTestQuestionRow,
+} from "@/lib/mock-test/types";
+
+type Props = {
+  question: MockTestQuestionRow;
+  answers: MockTestAnswers;
+  onAnswer: (qNo: number, value: string) => void;
+  showResults?: boolean;
+  resultCorrect?: boolean | null;
+};
+
+const LONG_TEXT_TYPES = new Set([
+  "picture_sentence",
+  "essay",
+  "summary",
+]);
+
+function QuestionHeader({
+  question,
+  showResults,
+  resultCorrect,
+}: {
+  question: MockTestQuestionRow;
+  showResults: boolean;
+  resultCorrect: boolean | null;
+}) {
+  return (
+    <p className="bs-mt-q-label">
+      Асуулт {question.q_no}
+      {showResults && resultCorrect != null ? (
+        <span className={resultCorrect ? " bs-mt-q-ok" : " bs-mt-q-bad"}>
+          {resultCorrect ? " ✓" : " ✗"}
+        </span>
+      ) : null}
+      {showResults && resultCorrect == null && question.autograde === "manual" ? (
+        <span className=" bs-mt-q-pending"> · хүлээгдэж байна</span>
+      ) : null}
+    </p>
+  );
+}
+
+function QuestionAudio({ url }: { url: string }) {
+  const ref = useRef<HTMLAudioElement>(null);
+  return (
+    <button
+      type="button"
+      className="bs-mt-q-audio-btn"
+      onClick={() => {
+        const el = ref.current;
+        if (!el) return;
+        void el.play();
+      }}
+      aria-label="Сонсох"
+    >
+      ▶
+      <audio ref={ref} src={url} preload="none" />
+    </button>
+  );
+}
+
+function StemBlock({ question }: { question: MockTestQuestionRow }) {
+  return (
+    <>
+      {question.image_url ? (
+        // eslint-disable-next-line @next/next/no-img-element
+        <img src={question.image_url} alt="" className="bs-mt-q-image" />
+      ) : null}
+      {question.stem ? (
+        <p className="bs-mt-q-text hanzi">{question.stem}</p>
+      ) : null}
+    </>
+  );
+}
+
+export function MockTestQuestion({
+  question,
+  answers,
+  onAnswer,
+  showResults = false,
+  resultCorrect = null,
+}: Props) {
+  const key = String(question.q_no);
+  const value = answers[key] ?? "";
+  const options = question.options ?? [];
+
+  if (question.q_type === "judge") {
+    return (
+      <div className="bs-mt-question">
+        <QuestionHeader
+          question={question}
+          showResults={showResults}
+          resultCorrect={resultCorrect}
+        />
+        {question.audio_url ? <QuestionAudio url={question.audio_url} /> : null}
+        <StemBlock question={question} />
+        <div className="bs-mt-option-grid bs-mt-option-grid--judge">
+          {[
+            { label: "√", value: "√" },
+            { label: "×", value: "×" },
+          ].map((opt) => (
+            <button
+              key={opt.value}
+              type="button"
+              disabled={showResults}
+              className={`bs-mt-option ${value === opt.value ? "bs-mt-option--picked" : ""}`}
+              onClick={() => onAnswer(question.q_no, opt.value)}
+            >
+              {opt.label}
+            </button>
+          ))}
+        </div>
+      </div>
+    );
+  }
+
+  if (question.q_type === "order") {
+    return (
+      <OrderQuestion
+        question={question}
+        value={value}
+        options={options}
+        onAnswer={(v) => onAnswer(question.q_no, v)}
+        showResults={showResults}
+        resultCorrect={resultCorrect}
+      />
+    );
+  }
+
+  if (LONG_TEXT_TYPES.has(question.q_type)) {
+    return (
+      <div className="bs-mt-question">
+        <QuestionHeader
+          question={question}
+          showResults={showResults}
+          resultCorrect={resultCorrect}
+        />
+        <StemBlock question={question} />
+        <textarea
+          className="bs-mt-essay-input"
+          rows={6}
+          value={value}
+          disabled={showResults}
+          placeholder="Хариултаа энд бичнэ үү…"
+          onChange={(e) => onAnswer(question.q_no, e.target.value)}
+        />
+        {showResults && question.autograde === "manual" ? (
+          <p className="bs-mt-explain">AI дүгнэлт хүлээгдэж байна.</p>
+        ) : null}
+      </div>
+    );
+  }
+
+  if (question.q_type === "complete" || question.q_type === "fill_char") {
+    return (
+      <div className="bs-mt-question">
+        <QuestionHeader
+          question={question}
+          showResults={showResults}
+          resultCorrect={resultCorrect}
+        />
+        <StemBlock question={question} />
+        <input
+          type="text"
+          className="bs-mt-text-input hanzi"
+          value={value}
+          disabled={showResults}
+          placeholder="Хариулт…"
+          onChange={(e) => onAnswer(question.q_no, e.target.value)}
+        />
+        {showResults && question.correct_answer ? (
+          <p className="bs-mt-correct-line hanzi">Зөв: {question.correct_answer}</p>
+        ) : null}
+      </div>
+    );
+  }
+
+  if (question.q_type === "fill_word") {
+    return (
+      <div className="bs-mt-question">
+        <QuestionHeader
+          question={question}
+          showResults={showResults}
+          resultCorrect={resultCorrect}
+        />
+        <StemBlock question={question} />
+        <select
+          className="bs-mt-select"
+          value={value}
+          disabled={showResults}
+          onChange={(e) => onAnswer(question.q_no, e.target.value)}
+        >
+          <option value="">Сонгох…</option>
+          {options.map((opt) => (
+            <option key={opt.key} value={opt.key}>
+              {opt.text ? `${opt.key}. ${opt.text}` : opt.key}
+            </option>
+          ))}
+        </select>
+      </div>
+    );
+  }
+
+  const hasImageOptions = options.some((o) => o.image_url);
+
+  if (
+    question.q_type === "match" ||
+    question.q_type === "fill_match" ||
+    hasImageOptions
+  ) {
+    return (
+      <div className="bs-mt-question">
+        <QuestionHeader
+          question={question}
+          showResults={showResults}
+          resultCorrect={resultCorrect}
+        />
+        <StemBlock question={question} />
+        {hasImageOptions ? (
+          <div className="bs-mt-image-option-grid">
+            {options.map((opt) => (
+              <button
+                key={opt.key}
+                type="button"
+                disabled={showResults}
+                className={`bs-mt-image-option ${value === opt.key ? "bs-mt-image-option--picked" : ""}`}
+                onClick={() => onAnswer(question.q_no, opt.key)}
+              >
+                <span className="bs-mt-option-letter">{opt.key}</span>
+                {opt.image_url ? (
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img src={opt.image_url} alt="" />
+                ) : (
+                  <span className="hanzi">{opt.text}</span>
+                )}
+              </button>
+            ))}
+          </div>
+        ) : (
+          <TextOptions
+            options={options}
+            value={value}
+            showResults={showResults}
+            onPick={(k) => onAnswer(question.q_no, k)}
+          />
+        )}
+      </div>
+    );
+  }
+
+  return (
+    <div className="bs-mt-question">
+      <QuestionHeader
+        question={question}
+        showResults={showResults}
+        resultCorrect={resultCorrect}
+      />
+      {question.audio_url ? <QuestionAudio url={question.audio_url} /> : null}
+      <StemBlock question={question} />
+      <TextOptions
+        options={options}
+        value={value}
+        showResults={showResults}
+        onPick={(k) => onAnswer(question.q_no, k)}
+      />
+    </div>
+  );
+}
+
+function TextOptions({
+  options,
+  value,
+  showResults,
+  onPick,
+}: {
+  options: MockOption[];
+  value: string;
+  showResults: boolean;
+  onPick: (key: string) => void;
+}) {
+  if (!options.length) return null;
+  return (
+    <div className="bs-mt-option-grid">
+      {options.map((opt) => (
+        <button
+          key={opt.key}
+          type="button"
+          disabled={showResults}
+          className={`bs-mt-option ${value === opt.key ? "bs-mt-option--picked" : ""}`}
+          onClick={() => onPick(opt.key)}
+        >
+          <span className="bs-mt-option-letter">{opt.key}</span>
+          <span className="hanzi">{opt.text}</span>
+        </button>
+      ))}
+    </div>
+  );
+}
+
+function OrderQuestion({
+  question,
+  value,
+  options,
+  onAnswer,
+  showResults,
+  resultCorrect,
+}: {
+  question: MockTestQuestionRow;
+  value: string;
+  options: MockOption[];
+  onAnswer: (v: string) => void;
+  showResults: boolean;
+  resultCorrect: boolean | null;
+}) {
+  const picked = value ? value.split("").filter(Boolean) : [];
+
+  function toggleKey(k: string) {
+    if (showResults) return;
+    const next = picked.includes(k)
+      ? picked.filter((c) => c !== k)
+      : [...picked, k];
+    onAnswer(next.join(""));
+  }
+
+  function reset() {
+    if (showResults) return;
+    onAnswer("");
+  }
+
+  return (
+    <div className="bs-mt-question">
+      <QuestionHeader
+        question={question}
+        showResults={showResults}
+        resultCorrect={resultCorrect}
+      />
+      <StemBlock question={question} />
+      <p className="bs-mt-word-sentence hanzi">{picked.join(" → ") || "…"}</p>
+      <div className="bs-mt-chip-row">
+        {options.map((opt) => (
+          <button
+            key={opt.key}
+            type="button"
+            disabled={showResults || picked.includes(opt.key)}
+            className={`bs-mt-chip hanzi ${picked.includes(opt.key) ? "bs-mt-chip--used" : ""}`}
+            onClick={() => toggleKey(opt.key)}
+          >
+            {opt.key}
+            {opt.text ? ` ${opt.text}` : ""}
+          </button>
+        ))}
+      </div>
+      {!showResults ? (
+        <button type="button" className="bs-mt-link-btn" onClick={reset}>
+          Дахин эхлэх
+        </button>
+      ) : null}
+      {showResults && question.correct_answer ? (
+        <p className="bs-mt-correct-line">Зөв: {question.correct_answer}</p>
+      ) : null}
+    </div>
+  );
+}

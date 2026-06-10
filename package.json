@@ -11,7 +11,11 @@
     "lint": "eslint",
     "hsk1:audit:generate": "tsx scripts/hsk1-generate-source-audit.ts",
     "hsk1:audit:validate": "tsx scripts/hsk1-validate-source-audit.ts",
-    "load:hsk": "node --env-file=.env.local scripts/load_hsk_words.mjs"
+    "load:hsk": "node --env-file=.env.local scripts/load_hsk_words.mjs",
+    "load:mocktest": "node --env-file=.env.local scripts/load_mocktest.mjs",
+    "load:tests": "node --env-file=.env.local scripts/load_tests.mjs",
+    "load:tests:one": "node --env-file=.env.local scripts/load_tests.mjs",
+    "export:lessons": "node --env-file=.env.local scripts/export_lessons.mjs"
   },
   "dependencies": {
     "@supabase/ssr": "^0.10.3",

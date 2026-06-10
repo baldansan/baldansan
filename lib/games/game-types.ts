@@ -13,7 +13,8 @@ export type GameType =
   | "radical-pick"
   | "srs-marathon"
   | "daily-challenge"
-  | "speed-challenge";
+  | "speed-challenge"
+  | "hsk-vocab-quiz";
 
 export type GameVocabItem = {
   id: string;

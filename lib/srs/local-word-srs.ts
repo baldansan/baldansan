@@ -60,6 +60,11 @@ export function readLocalStudiedWordIds(): number[] {
     .map((r) => r.word_id);
 }
 
+export function countLocalStudiedAmong(wordIds: number[]): number {
+  const studied = new Set(readLocalStudiedWordIds());
+  return wordIds.filter((id) => studied.has(id)).length;
+}
+
 export function toggleLocalFavorite(wordId: number): boolean {
   const store = readStore();
   const set = new Set(store.favorites);
