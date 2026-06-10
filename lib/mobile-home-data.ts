@@ -4,7 +4,10 @@ import {
   type MobileCourseCatalogEntry,
 } from "@/lib/mobile-course-options";
 import { koreanChipTitle } from "@/lib/course-display";
-import { getCourseContentById, getPublicLessonsByCourseId } from "@/lib/content";
+import {
+  getCourseContentById,
+  getPublicLessonSummariesByCourseId,
+} from "@/lib/content";
 
 export type MobileHomeData = {
   catalog: MobileCourseCatalogEntry[];
@@ -15,7 +18,7 @@ type KoreanLoadResult = {
   courseId: string;
   title: string;
   subtitle: string;
-  lessons: Awaited<ReturnType<typeof getPublicLessonsByCourseId>>;
+  lessons: Awaited<ReturnType<typeof getPublicLessonSummariesByCourseId>>;
 } | null;
 
 async function loadKoreanCourseForHome(): Promise<KoreanLoadResult> {
@@ -23,7 +26,7 @@ async function loadKoreanCourseForHome(): Promise<KoreanLoadResult> {
 
   for (const courseId of candidates) {
     const [lessons, course] = await Promise.all([
-      getPublicLessonsByCourseId(courseId),
+      getPublicLessonSummariesByCourseId(courseId),
       getCourseContentById(courseId),
     ]);
 
@@ -44,7 +47,7 @@ async function loadKoreanCourseForHome(): Promise<KoreanLoadResult> {
 
 export async function loadMobileHomeData(): Promise<MobileHomeData> {
   const [hsk5Lessons, hsk5Course, korean] = await Promise.all([
-    getPublicLessonsByCourseId("hsk5"),
+    getPublicLessonSummariesByCourseId("hsk5"),
     getCourseContentById("hsk5"),
     loadKoreanCourseForHome(),
   ]);

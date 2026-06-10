@@ -5,7 +5,15 @@ export type GameType =
   | "arrange"
   | "stroke"
   | "radical"
-  | "radical-challenge";
+  | "radical-challenge"
+  | "meaning"
+  | "word-recall"
+  | "pinyin-pick"
+  | "example-cloze"
+  | "radical-pick"
+  | "srs-marathon"
+  | "daily-challenge"
+  | "speed-challenge";
 
 export type GameVocabItem = {
   id: string;

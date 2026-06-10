@@ -480,6 +480,9 @@ export function RadicalChallengeClient({ lessonId, entries: entriesProp }: Props
                   key={`${part.c}-${i}`}
                   className="flex items-center gap-1.5 rounded-[11px] border border-[var(--app-border)] bg-white px-2 py-1.5 text-[13px]"
                 >
+                  <span className="text-lg" aria-hidden>
+                    {part.icon}
+                  </span>
                   <b className="text-[17px]">{part.c}</b>
                   <span className="text-[var(--app-muted)]">{part.name}</span>
                 </div>

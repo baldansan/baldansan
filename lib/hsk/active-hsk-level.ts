@@ -77,21 +77,31 @@ export function activeLevelMatchesNumeric(
   return level === active;
 }
 
+/** Map UI picker value → public.hsk_words.hsk_level text column. */
+export function activeLevelToCatalogLevel(
+  active: ActiveHskLevel
+): "1" | "2" | "3" | "4" | "5" | "6" | "7-9" {
+  return active === "7-9" ? "7-9" : (String(active) as "1" | "2" | "3" | "4" | "5" | "6");
+}
+
 export function wordMatchesActiveHskLevel(
   active: ActiveHskLevel,
   word: {
-    hsk_level?: number | null;
-    hsk_old?: string[] | null;
+    hsk_level?: number | string | null;
+    hsk_old?: string[] | number[] | null;
     hsk_new?: string[] | null;
     hsk_newest?: string[] | null;
   }
 ): boolean {
+  if (typeof word.hsk_level === "string" && word.hsk_level.trim()) {
+    return word.hsk_level === activeLevelToCatalogLevel(active);
+  }
   if (typeof word.hsk_level === "number" && word.hsk_level > 0) {
     return activeLevelMatchesNumeric(active, word.hsk_level);
   }
 
   const levels = parseHskLevelTags([
-    ...(word.hsk_old ?? []),
+    ...(word.hsk_old ?? []).map((tag) => String(tag)),
     ...(word.hsk_new ?? []),
     ...(word.hsk_newest ?? []),
   ]);

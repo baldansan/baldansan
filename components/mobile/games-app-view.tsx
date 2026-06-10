@@ -21,14 +21,108 @@ type Props = {
 };
 
 type GameCard = {
-  id: GameLinkSlug;
-  slug: GameLinkSlug;
+  id: string;
+  slug: string;
   title: string;
   desc: string;
   icon: string;
   color: string;
   badge: string;
+  global?: boolean;
 };
+
+const CHINESE_HSK_GAMES: GameCard[] = [
+  {
+    id: "meaning",
+    slug: "meaning",
+    title: "Утга сонгох",
+    desc: "Ханз → 4 утга, 3 амь, 10 сек",
+    icon: "🎯",
+    color: "from-emerald-400 to-emerald-500",
+    badge: "⭐",
+    global: true,
+  },
+  {
+    id: "word-recall",
+    slug: "word-recall",
+    title: "Үг сорих",
+    desc: "Утга/пиньинь → зөв ханз сонго",
+    icon: "🔤",
+    color: "from-teal-400 to-teal-500",
+    badge: "Шинэ",
+    global: true,
+  },
+  {
+    id: "pinyin",
+    slug: "pinyin",
+    title: "Пиньинь сонгох",
+    desc: "Ханз харж зөв пиньинь сонго",
+    icon: "🎵",
+    color: "from-sky-400 to-sky-500",
+    badge: "Шинэ",
+    global: true,
+  },
+  {
+    id: "example-cloze",
+    slug: "example-cloze",
+    title: "Жишээ бөглөх",
+    desc: "Өгүүлбэрт дутуу үгийг бөглө",
+    icon: "📝",
+    color: "from-indigo-400 to-indigo-500",
+    badge: "Шинэ",
+    global: true,
+  },
+  {
+    id: "radical-pick",
+    slug: "radical-pick",
+    title: "Радикал таних",
+    desc: "Радикал → аль ханз вэ?",
+    icon: "🧩",
+    color: "from-orange-400 to-orange-500",
+    badge: "Шинэ",
+    global: true,
+  },
+  {
+    id: "srs-marathon",
+    slug: "srs-marathon",
+    title: "SRS марафон",
+    desc: "Давталтын үгээр 5 төрлийн асуулт",
+    icon: "🏃",
+    color: "from-violet-400 to-violet-500",
+    badge: "Шинэ",
+    global: true,
+  },
+  {
+    id: "daily-challenge",
+    slug: "daily-challenge",
+    title: "Өдрийн сорил",
+    desc: "10 асуулт, өдөрт нэг удаа",
+    icon: "📅",
+    color: "from-amber-400 to-amber-500",
+    badge: "Шинэ",
+    global: true,
+  },
+  {
+    id: "speed",
+    slug: "speed",
+    title: "Хурдны тэмцээн",
+    desc: "60 секундэд хэдэн зөв?",
+    icon: "⚡",
+    color: "from-rose-400 to-rose-500",
+    badge: "Шинэ",
+    global: true,
+  },
+  {
+    id: "radical",
+    slug: "radical",
+    title: "Ханз задлах",
+    desc: "Энгийн + ⚡ Сорилт горим",
+    icon: "🧱",
+    color: "from-orange-400 to-orange-500",
+    badge: "Шинэ",
+    global: true,
+  },
+];
 
 function gamesForLanguage(
   lang: SelectedLanguage | null,
@@ -83,19 +177,6 @@ function gamesForLanguage(
       color: "from-rose-400 to-rose-500",
       badge: "Шинэ",
     },
-    ...(!isKorean
-      ? [
-          {
-            id: "radical" as const,
-            slug: "radical" as const,
-            title: labels.radicalTitle,
-            desc: "Энгийн + ⚡ Сорилт горим (цаг, амь)",
-            icon: "🧩",
-            color: "from-orange-400 to-orange-500",
-            badge: "Шинэ",
-          },
-        ]
-      : []),
   ];
 }
 
@@ -118,21 +199,34 @@ export function GamesAppView({ lessonIds, lessonTitles }: Props) {
   }, []);
 
   useEffect(() => {
-    async function load() {
-      const stats = getGameStats();
-      setPlayed(stats.played);
-      setBestScore(stats.bestScore);
-      setAvgAccuracy(stats.avgAccuracy);
+    const stats = getGameStats();
+    setPlayed(stats.played);
+    setBestScore(stats.bestScore);
+    setAvgAccuracy(stats.avgAccuracy);
 
-      const cont = await resolveContinueLearning(lessonIds);
-      const lessonId = cont?.lessonId ?? lessonIds[0] ?? "1";
+    const fallbackId = lessonIds[0] ?? "1";
+    setCurrentLessonId(fallbackId);
+    setLessonTitle(lessonTitles[fallbackId] ?? null);
+
+    let cancelled = false;
+    void resolveContinueLearning(lessonIds).then((cont) => {
+      if (cancelled) return;
+      const lessonId = cont?.lessonId ?? fallbackId;
       setCurrentLessonId(lessonId);
       setLessonTitle(lessonTitles[lessonId] ?? null);
-    }
-    void load();
-    const refresh = () => void load();
+    });
+
+    const refresh = () => {
+      const s = getGameStats();
+      setPlayed(s.played);
+      setBestScore(s.bestScore);
+      setAvgAccuracy(s.avgAccuracy);
+    };
     window.addEventListener("focus", refresh);
-    return () => window.removeEventListener("focus", refresh);
+    return () => {
+      cancelled = true;
+      window.removeEventListener("focus", refresh);
+    };
   }, [lessonIds, lessonTitles]);
 
   const marathonHref = `/games/match?lessonId=${currentLessonId}`;
@@ -155,6 +249,68 @@ export function GamesAppView({ lessonIds, lessonTitles }: Props) {
           </div>
         ))}
       </div>
+
+      {lang === "zh" ? (
+        <>
+          <Link
+            href="/games/daily-challenge"
+            className="mb-3 block rounded-[22px] bg-gradient-to-br from-amber-400 to-orange-500 p-4 text-white shadow-[var(--bs-shadow)] active:scale-[0.99]"
+          >
+            <p className="text-xs font-bold uppercase tracking-wide text-amber-100">
+              Өдрийн сорил
+            </p>
+            <p className="mt-1 text-lg font-extrabold">📅 10 асуулт</p>
+            <p className="mt-1 text-sm text-amber-50">
+              Өдөр бүр нэг удаа — оноогоо хадгал
+            </p>
+          </Link>
+          <Link
+            href="/games/meaning"
+            className="mb-5 block rounded-[22px] bg-gradient-to-br from-[#1FB85A] to-[#149247] p-4 text-white shadow-[var(--bs-shadow)] active:scale-[0.99]"
+          >
+            <p className="text-xs font-bold uppercase tracking-wide text-emerald-100">
+              Хурдан тест
+            </p>
+            <p className="mt-1 text-lg font-extrabold">🎯 Утга сонгох</p>
+            <p className="mt-1 text-sm text-emerald-50">
+              HSK түвшний үг — 4 сонголт, 3 амь, цагтай
+            </p>
+          </Link>
+
+          <h2 className="mb-3 text-sm font-bold text-[var(--app-text)]">
+            HSK тоглоомууд
+          </h2>
+          <div className="mb-5 grid grid-cols-2 gap-3">
+            {CHINESE_HSK_GAMES.map((game) => (
+              <Link
+                key={game.id}
+                href={`/games/${game.slug}`}
+                className="block"
+              >
+                <MobileCard
+                  padding="sm"
+                  className="relative h-full !p-3 active:scale-[0.98]"
+                >
+                  <span className="absolute right-2 top-2 rounded-full bg-[var(--app-purple-light)] px-1.5 py-0.5 text-[9px] font-bold text-[var(--app-purple-dark)]">
+                    {game.badge}
+                  </span>
+                  <div
+                    className={`mb-2 flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br ${game.color} text-lg text-white`}
+                  >
+                    {game.icon}
+                  </div>
+                  <p className="text-sm font-semibold text-[var(--app-text)]">
+                    {game.title}
+                  </p>
+                  <p className="mt-1 line-clamp-2 text-[10px] leading-tight text-[var(--app-muted)]">
+                    {game.desc}
+                  </p>
+                </MobileCard>
+              </Link>
+            ))}
+          </div>
+        </>
+      ) : null}
 
       <div className="app-game-mission mb-5 p-4">
         <p className="text-xs font-semibold uppercase tracking-wide text-purple-100">
@@ -179,10 +335,14 @@ export function GamesAppView({ lessonIds, lessonTitles }: Props) {
         Дасгал тоглоомууд
       </h2>
       <div className="grid grid-cols-2 gap-3">
-        {games.map((game) => (
+        {games.map((game) => {
+          const href = game.global
+            ? `/games/${game.slug}`
+            : `/games/${game.slug}?lessonId=${currentLessonId}`;
+          return (
           <Link
             key={game.id}
-            href={`/games/${game.slug}?lessonId=${currentLessonId}`}
+            href={href}
             className="block"
           >
             <MobileCard padding="sm" className="relative h-full !p-3 active:scale-[0.98]">
@@ -202,7 +362,8 @@ export function GamesAppView({ lessonIds, lessonTitles }: Props) {
               </p>
             </MobileCard>
           </Link>
-        ))}
+        );
+        })}
       </div>
     </MobileAppShell>
   );

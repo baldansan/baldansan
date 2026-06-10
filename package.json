@@ -10,7 +10,8 @@
     "start": "next start",
     "lint": "eslint",
     "hsk1:audit:generate": "tsx scripts/hsk1-generate-source-audit.ts",
-    "hsk1:audit:validate": "tsx scripts/hsk1-validate-source-audit.ts"
+    "hsk1:audit:validate": "tsx scripts/hsk1-validate-source-audit.ts",
+    "load:hsk": "node --env-file=.env.local scripts/load_hsk_words.mjs"
   },
   "dependencies": {
     "@supabase/ssr": "^0.10.3",

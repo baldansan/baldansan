@@ -161,3 +161,75 @@ body{
 .bs-muted{color:var(--bs-muted)}
 @keyframes bs-fadeUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
 .bs-fade{animation:bs-fadeUp .45s cubic-bezier(.2,.7,.2,1) both}
+
+/* === SRS давталт (Давтах) === */
+.bs-srs-header{margin:8px 0 16px}
+.bs-srs-title{margin:0;font-size:18px;font-weight:800;color:var(--bs-ink)}
+.bs-srs-progress-track{height:8px;margin-top:10px;border-radius:999px;background:#e1ebe5;overflow:hidden}
+.bs-srs-progress-fill{height:100%;border-radius:999px;background:var(--bs-green);transition:width .35s ease}
+.bs-srs-progress-label{margin:6px 0 0;font-size:12px;font-weight:700;color:var(--bs-muted)}
+.bs-srs-streak{margin-left:8px;color:#b45309}
+.bs-srs-login-hint{font-size:11px;font-weight:800;color:var(--bs-green-700);text-decoration:underline}
+.bs-srs-card{position:relative;border-radius:26px;background:var(--bs-card);box-shadow:var(--bs-shadow-lg);padding:20px 18px 18px;min-height:280px}
+.bs-srs-card-front,.bs-srs-card-back{display:block}
+.bs-srs-flip-scene{perspective:1000px;margin-top:4px}
+.bs-srs-flip-card{display:block;width:100%;min-height:300px;border:none;background:transparent;padding:0;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.bs-srs-flip-inner{position:relative;width:100%;min-height:300px;transition:transform .5s cubic-bezier(.4,.2,.2,1);transform-style:preserve-3d}
+.bs-srs-flip-card--flipped .bs-srs-flip-inner{transform:rotateY(180deg)}
+.bs-srs-flip-face{position:absolute;inset:0;border-radius:26px;background:var(--bs-card);box-shadow:var(--bs-shadow-lg);backface-visibility:hidden;-webkit-backface-visibility:hidden;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:24px 20px}
+.bs-srs-flip-back{transform:rotateY(180deg);justify-content:flex-start;align-items:stretch;text-align:left}
+.bs-srs-hanzi-only{margin:0;font-family:var(--bs-zh);font-size:72px;font-weight:900;line-height:1.05;color:var(--bs-ink)}
+.bs-srs-tap-hint{margin:16px 0 0;font-size:12px;font-weight:700;color:var(--bs-muted)}
+.bs-srs-tags{position:absolute;top:14px;left:14px;right:48px;display:flex;flex-wrap:wrap;gap:4px}
+.bs-srs-tag{padding:4px 8px;border-radius:999px;background:var(--bs-green-50);border:1px solid var(--bs-green-100);font-size:10px;font-weight:800;color:var(--bs-green-700)}
+.bs-srs-fav{position:absolute;top:10px;right:10px;width:36px;height:36px;border:none;border-radius:999px;background:#fff7ed;font-size:18px;line-height:1;cursor:pointer}
+.bs-srs-fav-on{color:#f59e0b}
+.bs-srs-hanzi{margin:28px 0 8px;font-family:var(--bs-zh);font-size:64px;font-weight:900;line-height:1.1;text-align:center;color:var(--bs-ink)}
+.bs-srs-reveal-btn{display:block;margin:12px auto 0;min-height:44px;padding:0 22px;border:none;border-radius:14px;background:var(--bs-green);color:#fff;font-size:14px;font-weight:800;cursor:pointer}
+.bs-srs-pinyin{margin:8px 0 4px;text-align:center;font-size:22px;font-weight:800;color:var(--bs-green)}
+.bs-srs-meaning{margin:0;text-align:center;font-size:18px;font-weight:800;color:var(--bs-ink)}
+.bs-srs-example{margin-top:14px;padding:12px;border-radius:14px;background:var(--bs-green-50);border:1px solid var(--bs-green-100);text-align:left}
+.bs-srs-example-zh{margin:0;font-family:var(--bs-zh);font-size:15px;font-weight:700;color:var(--bs-ink)}
+.bs-srs-example-py{margin:4px 0 0;font-size:12px;color:var(--bs-green-700)}
+.bs-srs-example-mn{margin:6px 0 0;font-size:13px;color:var(--bs-ink-2)}
+.bs-srs-rating-row{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:14px}
+.bs-srs-rating-btn{min-height:48px;border:none;border-radius:14px;font-size:13px;font-weight:800;color:#fff;cursor:pointer}
+.bs-srs-rating-forgot{background:#ef4444}
+.bs-srs-rating-hard{background:#f59e0b}
+.bs-srs-rating-known{background:var(--bs-green)}
+.bs-srs-decomp{margin-top:14px;padding-top:12px;border-top:1px dashed var(--bs-line);text-align:left}
+.bs-srs-decomp-title{margin:0 0 8px;font-size:12px;font-weight:800;color:var(--bs-ink-2)}
+.bs-srs-decomp-block+.bs-srs-decomp-block{margin-top:10px}
+.bs-srs-decomp-char{margin:0 0 4px;font-family:var(--bs-zh);font-size:16px;font-weight:900}
+.bs-srs-decomp-structure{margin:0 0 6px;font-size:10px;font-weight:700;color:var(--bs-muted);letter-spacing:.03em}
+.bs-srs-decomp-row{display:flex;flex-wrap:wrap;gap:6px}
+.bs-srs-decomp-chip{display:inline-flex;align-items:center;gap:4px;padding:4px 8px;border-radius:999px;background:#fff;border:1px solid var(--bs-line);font-size:11px}
+.bs-srs-decomp-chip-icon{font-size:14px}
+.bs-srs-decomp-chip-glyph{font-family:var(--bs-zh);font-weight:800}
+.bs-srs-decomp-chip-name{color:var(--bs-muted);font-weight:600}
+.bs-srs-decomp-etym{margin:6px 0 0;font-size:11px;line-height:1.45;color:var(--bs-ink-2)}
+.bs-srs-decomp-link{display:inline-block;margin-top:10px;font-size:11px;font-weight:800;color:var(--bs-green-700);text-decoration:underline}
+.bs-srs-done{margin-top:24px;padding:20px;border-radius:22px;background:var(--bs-card);box-shadow:var(--bs-shadow);text-align:center}
+
+/* === Профайл SRS статистик === */
+.bs-profile-streak{display:flex;align-items:center;gap:14px;padding:16px 18px;border-radius:22px;background:linear-gradient(135deg,#fff7ed,#fde68a);border:1px solid #fcd34d}
+.bs-profile-stat-card{padding:12px;border-radius:18px;background:var(--bs-card);box-shadow:var(--bs-shadow);text-align:center}
+.bs-profile-stat-value{margin:0;font-size:20px;font-weight:900;color:var(--bs-green-700)}
+.bs-profile-stat-label{margin:4px 0 0;font-size:10px;font-weight:700;color:var(--bs-muted)}
+.bs-profile-action{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;min-height:72px;padding:12px;border-radius:18px;background:var(--bs-card);box-shadow:var(--bs-shadow);text-decoration:none;transition:transform .12s ease}
+.bs-profile-action:active{transform:scale(0.98)}
+.bs-profile-action-label{font-size:12px;font-weight:800;color:var(--bs-ink)}
+.bs-profile-action-badge{position:absolute;top:8px;right:10px;min-width:20px;padding:2px 6px;border-radius:999px;background:var(--bs-green);color:#fff;font-size:10px;font-weight:800;text-align:center}
+
+/* === Утга сонгох тоглоом === */
+.bs-meaning-card{border-radius:24px;background:var(--bs-card);box-shadow:var(--bs-shadow-lg);padding:20px 18px}
+.bs-meaning-hanzi{margin:10px 0 4px;text-align:center;font-family:var(--bs-zh);font-size:56px;font-weight:900;line-height:1.1;color:var(--bs-ink)}
+.bs-meaning-option{width:100%;border-radius:14px;border:1px solid var(--bs-line);background:#fff;padding:12px 14px;text-align:left;font-size:14px;font-weight:700;color:var(--bs-ink);transition:transform .12s ease,border-color .12s,background .12s}
+.bs-meaning-option--hanzi{font-family:var(--bs-zh);font-size:28px;font-weight:900;text-align:center;padding:14px 10px}
+.bs-meaning-option:active:not(:disabled){transform:scale(0.98)}
+.bs-meaning-option--correct{border-color:var(--bs-green);background:var(--bs-green-50);color:var(--bs-green-700)}
+.bs-meaning-option--wrong{border-color:#f87171;background:#fef2f2;color:#b91c1c}
+.bs-meaning-done{border-radius:24px;background:var(--bs-card);box-shadow:var(--bs-shadow);padding:24px 20px;text-align:center}
+.bs-meaning-final-score{margin-top:12px;font-size:2rem;font-weight:900;color:var(--bs-green-700)}
+.bs-meaning-primary-btn{display:block;width:100%;min-height:48px;border:none;border-radius:14px;background:var(--bs-green);color:#fff;font-size:14px;font-weight:800;cursor:pointer}
+.bs-meaning-link{display:block;text-align:center;font-size:13px;font-weight:800;color:var(--bs-green-700);text-decoration:underline}
