@@ -73,6 +73,14 @@ async function fetchCurrentUser(): Promise<AuthResult<AuthUser>> {
     };
   }
 
+  // No local session — guest/logged-out; avoid getUser() "Auth session missing!" noise.
+  if (!sessionData.session) {
+    return {
+      data: null,
+      error: toErrorMessage(sessionError),
+    };
+  }
+
   const { data, error } = await withTimeout(
     supabase!.auth.getUser(),
     AUTH_REQUEST_TIMEOUT_MS,
@@ -146,6 +154,14 @@ export async function getAuthenticatedUserId(): Promise<{
       return { userId: sessionData.session.user.id, error: null };
     }
 
+    if (!sessionData.session) {
+      authDevLog("getAuthenticatedUserId: no session (guest)");
+      return {
+        userId: null,
+        error: toErrorMessage(sessionError),
+      };
+    }
+
     const { data, error: userError } = await withTimeout(
       supabase.auth.getUser(),
       AUTH_REQUEST_TIMEOUT_MS,
@@ -158,10 +174,7 @@ export async function getAuthenticatedUserId(): Promise<{
 
     return {
       userId: null,
-      error:
-        toErrorMessage(userError) ??
-        toErrorMessage(sessionError) ??
-        "Session not found",
+      error: toErrorMessage(userError) ?? toErrorMessage(sessionError),
     };
   } catch (error) {
     const message = formatAuthTransportError(error);

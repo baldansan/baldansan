@@ -1,13 +1,13 @@
 import { LanguageFilteredKanjiView } from "@/components/mobile/language-filtered-kanji-view";
-import { getAllPublicLessonsProbe } from "@/lib/content";
+import { getAllPublicLessonSummariesProbe } from "@/lib/content";
 
-export const dynamic = "force-dynamic";
+export const revalidate = 120;
 
 export const metadata = {
   title: "Үсэг — Бөөндөө Сурцгаая",
 };
 
 export default async function KanjiPage() {
-  const allLessons = await getAllPublicLessonsProbe();
+  const allLessons = await getAllPublicLessonSummariesProbe();
   return <LanguageFilteredKanjiView allLessons={allLessons} />;
 }

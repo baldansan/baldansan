@@ -1,21 +1,21 @@
 "use client";
 
 import Link from "next/link";
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { HskLevelSelector } from "@/components/hsk/hsk-level-selector";
 import { useActiveHskLevel } from "@/components/providers/active-hsk-level-provider";
 import { GameShell } from "@/components/games/game-shell";
 import {
-  buildMeaningQuizDeck,
   MAX_LIVES,
+  QUESTION_COUNT,
   QUESTION_SECONDS,
   scoreMeaningQuiz,
   type MeaningQuizQuestion,
 } from "@/lib/games/meaning-quiz";
 import { saveGameResult } from "@/lib/games/game-progress";
-import { fetchHskWordsByLevel } from "@/lib/supabase/hsk-words";
+import { formatActiveHskLevel } from "@/lib/hsk/active-hsk-level";
 
 type Phase = "loading" | "play" | "done";
-type AnswerState = "idle" | "correct" | "wrong";
 
 export function MeaningQuizClient() {
   const { level: activeLevel, hydrated } = useActiveHskLevel();
@@ -25,137 +25,140 @@ export function MeaningQuizClient() {
   const [index, setIndex] = useState(0);
   const [lives, setLives] = useState(MAX_LIVES);
   const [score, setScore] = useState(0);
-  const [correct, setCorrect] = useState(0);
+  const [correctCount, setCorrectCount] = useState(0);
   const [timeLeft, setTimeLeft] = useState(QUESTION_SECONDS);
-  const [answerState, setAnswerState] = useState<AnswerState>("idle");
   const [picked, setPicked] = useState<string | null>(null);
   const [locked, setLocked] = useState(false);
+
+  const correctRef = useRef(0);
+  const livesRef = useRef(MAX_LIVES);
+  const indexRef = useRef(0);
 
   const current = deck[index];
   const total = deck.length;
   const timerPct = (timeLeft / QUESTION_SECONDS) * 100;
 
+  const finishGame = useCallback(
+    (finalCorrect: number, finalLives: number, reason?: string) => {
+      const answered = indexRef.current + (locked ? 1 : 0);
+      const finalScore = scoreMeaningQuiz(
+        finalCorrect,
+        Math.max(answered, finalCorrect),
+        finalLives
+      );
+      setScore(finalScore);
+      setCorrectCount(finalCorrect);
+      if (reason) setError(reason);
+      saveGameResult({
+        gameType: "meaning",
+        lessonId: "hsk",
+        score: finalScore,
+        correct: finalCorrect,
+        total: deck.length,
+        accuracy:
+          deck.length > 0
+            ? Math.round((finalCorrect / deck.length) * 100)
+            : 0,
+        playedAt: new Date().toISOString(),
+      });
+      setPhase("done");
+    },
+    [deck.length, locked]
+  );
+
+  const advance = useCallback(() => {
+    if (indexRef.current >= deck.length - 1) {
+      finishGame(correctRef.current, livesRef.current);
+      return;
+    }
+    indexRef.current += 1;
+    setIndex(indexRef.current);
+    setTimeLeft(QUESTION_SECONDS);
+    setPicked(null);
+    setLocked(false);
+  }, [deck.length, finishGame]);
+
   const loadDeck = useCallback(async () => {
     if (!hydrated) return;
     setPhase("loading");
     setError(null);
-    const { data, error: fetchError } = await fetchHskWordsByLevel(activeLevel);
-    if (fetchError || data.length < 4) {
-      setError(fetchError ?? "Үгийн сан хангалтгүй байна.");
+
+    try {
+      const res = await fetch(
+        `/api/games/meaning-deck?level=${encodeURIComponent(String(activeLevel))}&size=${QUESTION_COUNT}`
+      );
+      const body = (await res.json()) as {
+        deck?: MeaningQuizQuestion[];
+        error?: string;
+      };
+      if (!res.ok || !body.deck?.length) {
+        setError(body.error ?? "Ачаалахад алдаа гарлаа.");
+        setPhase("done");
+        return;
+      }
+
+      setDeck(body.deck);
+      indexRef.current = 0;
+      correctRef.current = 0;
+      livesRef.current = MAX_LIVES;
+      setIndex(0);
+      setLives(MAX_LIVES);
+      setScore(0);
+      setCorrectCount(0);
+      setTimeLeft(QUESTION_SECONDS);
+      setPicked(null);
+      setLocked(false);
+      setPhase("play");
+    } catch {
+      setError("Сүлжээний алдаа.");
       setPhase("done");
-      return;
     }
-    const built = buildMeaningQuizDeck(data, activeLevel, 15);
-    if (built.length === 0) {
-      setError("Асуулт бүрдэж чадсангүй.");
-      setPhase("done");
-      return;
-    }
-    setDeck(built);
-    setIndex(0);
-    setLives(MAX_LIVES);
-    setScore(0);
-    setCorrect(0);
-    setTimeLeft(QUESTION_SECONDS);
-    setAnswerState("idle");
-    setPicked(null);
-    setLocked(false);
-    setPhase("play");
   }, [activeLevel, hydrated]);
 
   useEffect(() => {
     void loadDeck();
   }, [loadDeck]);
 
-  const advance = useCallback(() => {
-    if (index >= deck.length - 1) {
-      const finalScore = scoreMeaningQuiz(correct, total, lives);
-      setScore(finalScore);
-      saveGameResult({
-        gameType: "meaning",
-        lessonId: "hsk",
-        score: finalScore,
-        correct,
-        total,
-        accuracy: total > 0 ? Math.round((correct / total) * 100) : 0,
-        playedAt: new Date().toISOString(),
-      });
-      setPhase("done");
-      return;
-    }
-    setIndex((i) => i + 1);
-    setTimeLeft(QUESTION_SECONDS);
-    setAnswerState("idle");
-    setPicked(null);
-    setLocked(false);
-  }, [index, deck.length, correct, total, lives]);
-
   useEffect(() => {
     if (phase !== "play" || locked || !current) return;
+
     if (timeLeft <= 0) {
       setLocked(true);
-      setAnswerState("wrong");
-      setLives((l) => {
-        const next = l - 1;
-        if (next <= 0) {
-          setTimeout(() => {
-            const finalScore = scoreMeaningQuiz(correct, total, 0);
-            setScore(finalScore);
-            saveGameResult({
-              gameType: "meaning",
-              lessonId: "hsk",
-              score: finalScore,
-              correct,
-              total,
-              accuracy: total > 0 ? Math.round((correct / total) * 100) : 0,
-              playedAt: new Date().toISOString(),
-            });
-            setPhase("done");
-          }, 900);
-        } else {
-          setTimeout(() => advance(), 900);
-        }
-        return Math.max(0, next);
-      });
+      setPicked(null);
+      livesRef.current = Math.max(0, livesRef.current - 1);
+      setLives(livesRef.current);
+      if (livesRef.current <= 0) {
+        setTimeout(() => finishGame(correctRef.current, 0), 800);
+      } else {
+        setTimeout(() => advance(), 800);
+      }
       return;
     }
+
     const t = setTimeout(() => setTimeLeft((s) => s - 1), 1000);
     return () => clearTimeout(t);
-  }, [phase, locked, timeLeft, current, advance, correct, total]);
+  }, [phase, locked, timeLeft, current, advance, finishGame]);
 
   function pickOption(option: string) {
     if (locked || !current) return;
     setLocked(true);
     setPicked(option);
+
     const ok = option === current.correct;
-    setAnswerState(ok ? "correct" : "wrong");
     if (ok) {
-      setCorrect((c) => c + 1);
+      correctRef.current += 1;
+      setCorrectCount(correctRef.current);
       setScore((s) => s + 10);
-      setTimeout(() => advance(), 700);
+      setTimeout(() => advance(), 650);
+      return;
+    }
+
+    livesRef.current = Math.max(0, livesRef.current - 1);
+    setLives(livesRef.current);
+    if (livesRef.current <= 0) {
+      setTimeout(() => finishGame(correctRef.current, 0), 800);
     } else {
-      setLives((l) => {
-        const next = l - 1;
-        if (next <= 0) {
-          setTimeout(() => {
-            const finalScore = scoreMeaningQuiz(correct, total, 0);
-            setScore(finalScore);
-            saveGameResult({
-              gameType: "meaning",
-              lessonId: "hsk",
-              score: finalScore,
-              correct,
-              total,
-              accuracy: total > 0 ? Math.round((correct / total) * 100) : 0,
-              playedAt: new Date().toISOString(),
-            });
-            setPhase("done");
-          }, 900);
-        } else {
-          setTimeout(() => advance(), 900);
-        }
-        return Math.max(0, next);
-      });
+      setTimeout(() => advance(), 800);
     }
   }
 
@@ -174,35 +177,31 @@ export function MeaningQuizClient() {
   }
 
   if (phase === "done") {
+    const won = lives > 0 && correctCount === total && !error;
     return (
       <GameShell mainClassName="max-w-[430px] mx-auto w-full px-4 pb-8">
-        <div className="rounded-[24px] bg-white p-6 text-center shadow-[var(--bs-shadow)]">
-          <h2 className="text-xl font-bold">
-            {lives > 0 && correct === total ? "🏆 Төгс!" : "Тоглоом дууслаа"}
+        <div className="bs-meaning-done">
+          <h2 className="text-xl font-extrabold text-[var(--bs-ink)]">
+            {error ? "Тоглоом эхлэхгүй" : won ? "🏆 Төгс!" : "Тоглоом дууслаа"}
           </h2>
           {error ? (
             <p className="mt-2 text-sm text-red-600">{error}</p>
           ) : (
             <>
-              <p className="mt-3 text-3xl font-black text-[var(--app-primary-dark)]">
-                ⭐ {score}
-              </p>
+              <p className="bs-meaning-final-score">⭐ {score}</p>
               <p className="mt-1 text-sm text-[var(--app-muted)]">
-                Зөв: {correct} / {total}
+                Зөв: {correctCount} / {total}
               </p>
             </>
           )}
           <button
             type="button"
             onClick={() => void loadDeck()}
-            className="mt-5 min-h-[48px] w-full rounded-[14px] bg-[var(--app-primary)] text-sm font-extrabold text-white"
+            className="bs-meaning-primary-btn mt-5"
           >
             Дахин тоглох
           </button>
-          <Link
-            href="/games"
-            className="mt-2 block text-sm font-bold text-[var(--app-primary-dark)] underline"
-          >
+          <Link href="/games" className="bs-meaning-link mt-3">
             ← Тоглоом руу
           </Link>
         </div>
@@ -213,14 +212,26 @@ export function MeaningQuizClient() {
   if (!current) return null;
 
   return (
-    <GameShell mainClassName="max-w-[430px] mx-auto w-full bg-[#f1f6f3] px-4 pt-5 pb-8">
+    <GameShell mainClassName="max-w-[430px] mx-auto w-full bg-[var(--bs-bg)] px-4 pt-4 pb-8">
+      <div className="mb-3 flex items-center justify-between gap-2">
+        <div>
+          <h1 className="text-base font-extrabold text-[var(--bs-ink)]">
+            Утга сонгох
+          </h1>
+          <p className="text-[11px] font-bold text-[var(--bs-muted)]">
+            {formatActiveHskLevel(activeLevel)}
+          </p>
+        </div>
+        <HskLevelSelector className="shrink-0" />
+      </div>
+
       <div className="mb-3 flex items-center justify-between text-sm font-extrabold">
-        <span className="text-red-500">
+        <span className="text-red-500" aria-label={`${lives} амь`}>
           {"❤️".repeat(lives)}
-          {"🖤".repeat(MAX_LIVES - lives)}
+          <span className="opacity-30">{"🖤".repeat(MAX_LIVES - lives)}</span>
         </span>
-        <span className="text-[var(--app-primary-dark)]">⭐ {score}</span>
-        <span className="text-[var(--app-muted)]">
+        <span className="text-[var(--bs-green-700)]">⭐ {score}</span>
+        <span className="text-[var(--bs-muted)]">
           {index + 1}/{total}
         </span>
       </div>
@@ -231,32 +242,36 @@ export function MeaningQuizClient() {
           style={{ width: `${timerPct}%` }}
         />
       </div>
+      <p className="mb-3 text-center text-[11px] font-bold text-[var(--bs-muted)]">
+        ⏱ {timeLeft} сек
+      </p>
 
-      <div className="rounded-[24px] bg-white p-5 shadow-[0_12px_30px_rgba(25,40,30,0.10)]">
-        <p className="text-center text-sm font-bold text-[var(--app-muted)]">
+      <div className="bs-meaning-card">
+        <p className="text-center text-sm font-bold text-[var(--bs-muted)]">
           Энэ үгийн утга?
         </p>
-        <p className="bs-srs-hanzi mt-2 text-center">{current.hanzi}</p>
+        <p className="bs-meaning-hanzi">{current.hanzi}</p>
         {current.pinyin ? (
-          <p className="text-center text-sm text-[var(--app-primary)]">
+          <p className="text-center text-base font-extrabold text-[var(--bs-green)]">
             {current.pinyin}
           </p>
         ) : null}
 
         <div className="mt-4 grid gap-2">
           {current.options.map((option) => {
-            let cls =
-              "rounded-[14px] border border-[var(--app-border)] bg-white px-3 py-3 text-left text-sm font-bold transition active:scale-[0.98]";
+            let cls = "bs-meaning-option";
             if (locked && option === current.correct) {
-              cls += " border-[#1FB85A] bg-[#EAF8F0] text-[#149247]";
-            } else if (locked && picked === option && option !== current.correct) {
-              cls += " border-red-400 bg-red-50 text-red-700";
-            } else if (answerState === "correct" && picked === option) {
-              cls += " border-[#1FB85A] bg-[#EAF8F0]";
+              cls += " bs-meaning-option--correct";
+            } else if (
+              locked &&
+              picked === option &&
+              option !== current.correct
+            ) {
+              cls += " bs-meaning-option--wrong";
             }
             return (
               <button
-                key={option}
+                key={`${current.id}-${option}`}
                 type="button"
                 disabled={locked}
                 onClick={() => pickOption(option)}
@@ -269,10 +284,7 @@ export function MeaningQuizClient() {
         </div>
       </div>
 
-      <Link
-        href="/games"
-        className="mt-4 block text-center text-xs font-bold text-[var(--app-primary-dark)] underline"
-      >
+      <Link href="/games" className="bs-meaning-link mt-4">
         ← Буцах
       </Link>
     </GameShell>

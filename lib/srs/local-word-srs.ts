@@ -1,7 +1,16 @@
 import {
-  activeLevelMatchesNumeric,
+  wordMatchesActiveHskLevel,
   type ActiveHskLevel,
 } from "@/lib/hsk/active-hsk-level";
+
+function parseCatalogLevelNumber(
+  value: string | number | null | undefined
+): number | null {
+  if (value == null) return null;
+  if (value === "7-9") return null;
+  const n = typeof value === "number" ? value : Number(value);
+  return Number.isInteger(n) && n >= 1 && n <= 6 ? n : null;
+}
 import { applyWordSrsRating } from "@/lib/srs/word-srs-scheduler";
 import {
   DAILY_SRS_GOAL,
@@ -45,6 +54,12 @@ export function getLocalFavorites(): Set<number> {
   return new Set(readStore().favorites);
 }
 
+export function readLocalStudiedWordIds(): number[] {
+  return Object.values(readStore().rows)
+    .filter((r) => r.reps > 0)
+    .map((r) => r.word_id);
+}
+
 export function toggleLocalFavorite(wordId: number): boolean {
   const store = readStore();
   const set = new Set(store.favorites);
@@ -65,10 +80,8 @@ export function buildLocalQueue(
 ): WordSrsQueueItem[] {
   const store = readStore();
   const now = Date.now();
-  const filtered = words.filter(
-    (w) =>
-      w.hsk_level != null &&
-      activeLevelMatchesNumeric(activeLevel, w.hsk_level)
+  const filtered = words.filter((w) =>
+    wordMatchesActiveHskLevel(activeLevel, w)
   );
 
   const due: WordSrsQueueItem[] = [];
@@ -182,7 +195,8 @@ export function rateLocalWordSrs(
 }
 
 export function getLocalWordSrsStats(
-  words: HskWordRow[]
+  levelTotals: Record<number, number>,
+  studiedWordLevels: Map<number, number>
 ): {
   studiedCount: number;
   dueToday: number;
@@ -195,40 +209,39 @@ export function getLocalWordSrsStats(
   const rows = Object.values(store.rows);
   const now = Date.now();
 
+  const todayStart = new Date();
+  todayStart.setHours(0, 0, 0, 0);
+
   const studiedCount = rows.filter((r) => r.reps > 0).length;
   const dueToday = rows.filter((r) => new Date(r.due_at).getTime() <= now).length;
+  const dailyDone = rows.filter((r) => {
+    if (r.reps <= 0) return false;
+    return new Date(r.due_at).getTime() >= todayStart.getTime();
+  }).length;
   const knownTotal = rows.filter((r) => r.last_rating === "known").length;
   const ratedTotal = rows.filter((r) => r.last_rating != null).length;
   const accuracyPct =
     ratedTotal > 0 ? Math.round((knownTotal / ratedTotal) * 100) : 0;
 
-  const totalByLevel = new Map<number, number>();
   const studiedByLevel = new Map<number, number>();
-
-  for (const w of words) {
-    const level = w.hsk_level;
-    if (level == null || level < 1 || level > 6) continue;
-    totalByLevel.set(level, (totalByLevel.get(level) ?? 0) + 1);
-  }
 
   for (const row of rows) {
     if (row.reps <= 0) continue;
-    const word = words.find((w) => w.id === row.word_id);
-    const level = word?.hsk_level;
-    if (level == null || level < 1 || level > 6) continue;
+    const level = studiedWordLevels.get(row.word_id);
+    if (level == null) continue;
     studiedByLevel.set(level, (studiedByLevel.get(level) ?? 0) + 1);
   }
 
   return {
     studiedCount,
     dueToday,
-    dailyDone: 0,
+    dailyDone: Math.min(dailyDone, DAILY_SRS_GOAL),
     dailyGoal: DAILY_SRS_GOAL,
     accuracyPct,
     hskProgress: [1, 2, 3, 4, 5, 6].map((level) => ({
       level,
       studied: studiedByLevel.get(level) ?? 0,
-      total: totalByLevel.get(level) ?? 0,
+      total: levelTotals[level] ?? 0,
     })),
   };
 }

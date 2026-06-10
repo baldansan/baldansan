@@ -1,32 +1,36 @@
 "use client";
 
 import Link from "next/link";
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useState, type MouseEvent } from "react";
+import { HskLevelSelector } from "@/components/hsk/hsk-level-selector";
 import { useActiveHskLevel } from "@/components/providers/active-hsk-level-provider";
 import { WordCharBreakdownPanel } from "@/components/review/word-char-breakdown-panel";
 import { WordSrsRatingButtons } from "@/components/review/word-srs-rating-buttons";
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
-import { DAILY_SRS_GOAL, type WordSrsQueueItem } from "@/lib/srs/word-srs-types";
+import { formatActiveHskLevel } from "@/lib/hsk/active-hsk-level";
 import {
   buildLocalQueue,
   getLocalFavorites,
   rateLocalWordSrs,
   toggleLocalFavorite,
 } from "@/lib/srs/local-word-srs";
-import { recordActivity } from "@/lib/retention/retention-service";
-import { getStreakUnified } from "@/lib/retention/retention-service";
+import { recordActivity, getStreakUnified } from "@/lib/retention/retention-service";
+import { DAILY_SRS_GOAL, type WordSrsQueueItem, type WordSrsRating } from "@/lib/srs/word-srs-types";
 import { fetchHskWordsByLevel } from "@/lib/supabase/hsk-words";
 import { getAuthenticatedUserId, hasSupabaseConfig } from "@/lib/supabase/auth";
-import {
-  getDueWordQueue,
-  rateWordSrs,
-} from "@/lib/supabase/user-word-srs";
+import { getDueWordQueue, rateWordSrs } from "@/lib/supabase/user-word-srs";
 
 type LoadState = "loading" | "ready" | "error";
 
-function formatPos(pos?: string[]): string {
-  if (!pos?.length) return "";
-  return pos.slice(0, 2).join(", ");
+function normalizeWordPosTags(
+  pos: string[] | string | null | undefined
+): string[] {
+  if (!pos) return [];
+  if (Array.isArray(pos)) {
+    return pos.map((tag) => String(tag).trim()).filter(Boolean);
+  }
+  const single = String(pos).trim();
+  return single ? [single] : [];
 }
 
 export function ReviewSrsClient() {
@@ -35,18 +39,17 @@ export function ReviewSrsClient() {
   const [error, setError] = useState<string | null>(null);
   const [queue, setQueue] = useState<WordSrsQueueItem[]>([]);
   const [index, setIndex] = useState(0);
-  const [revealed, setRevealed] = useState(false);
+  const [flipped, setFlipped] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [done, setDone] = useState(false);
   const [userId, setUserId] = useState<string | null>(null);
   const [streak, setStreak] = useState(0);
   const [sessionDone, setSessionDone] = useState(0);
-  const [favorites, setFavorites] = useState<Set<number>>(new Set());
+  const [favoriteIds, setFavoriteIds] = useState<Set<number>>(() => new Set());
 
   const current = queue[index];
   const total = queue.length;
-  const progressPct =
-    total > 0 ? Math.round((sessionDone / DAILY_SRS_GOAL) * 100) : 0;
+  const progressPct = Math.round((sessionDone / DAILY_SRS_GOAL) * 100);
 
   const loadQueue = useCallback(async () => {
     if (!hydrated) return;
@@ -54,18 +57,11 @@ export function ReviewSrsClient() {
     setError(null);
     setDone(false);
     setIndex(0);
-    setRevealed(false);
+    setFlipped(false);
     setSessionDone(0);
 
-    const { data: words, error: wordsError } =
-      await fetchHskWordsByLevel(activeLevel);
-    if (wordsError) {
-      setError(wordsError);
-      setLoadState("error");
-      return;
-    }
     if (hasSupabaseConfig) {
-      const { userId: uid, error: authError } = await getAuthenticatedUserId();
+      const { userId: uid } = await getAuthenticatedUserId();
       if (uid) {
         setUserId(uid);
         const { items, error: queueError } = await getDueWordQueue(
@@ -79,19 +75,25 @@ export function ReviewSrsClient() {
         }
         setQueue(items);
         setDone(items.length === 0);
-        setFavorites(getLocalFavorites());
         setLoadState("ready");
         return;
       }
-      if (authError) {
-        setUserId(null);
-      }
+      setUserId(null);
+    }
+
+    const { data: words, error: wordsError } = await fetchHskWordsByLevel(
+      activeLevel,
+      { limit: 500 }
+    );
+    if (wordsError) {
+      setError(wordsError);
+      setLoadState("error");
+      return;
     }
 
     const localQueue = buildLocalQueue(words, activeLevel);
     setQueue(localQueue);
     setDone(localQueue.length === 0);
-    setFavorites(getLocalFavorites());
     setLoadState("ready");
   }, [activeLevel, hydrated]);
 
@@ -100,55 +102,70 @@ export function ReviewSrsClient() {
   }, [loadQueue]);
 
   useEffect(() => {
+    setFavoriteIds(getLocalFavorites());
+  }, [index, loadState]);
+
+  useEffect(() => {
     void getStreakUnified()
       .then((r) => setStreak(r?.currentStreak ?? 0))
       .catch(() => setStreak(0));
   }, [sessionDone]);
 
-  const hskTag = useMemo(() => {
-    if (!current?.word) return "";
-    const level = current.word.hsk_level;
-    const pos = formatPos(current.word.pos);
-    if (level && pos) return `HSK${level} · ${pos}`;
-    if (level) return `HSK${level}`;
-    return pos;
-  }, [current]);
-
-  async function handleRate(
-    rating: import("@/lib/srs/word-srs-types").WordSrsRating
-  ) {
+  async function handleRate(rating: WordSrsRating) {
     if (!current?.word?.id || submitting) return;
     setSubmitting(true);
 
     const wordId = current.word.id;
+    let updatedSrs = current.srs;
 
     if (userId && hasSupabaseConfig) {
-      await rateWordSrs(userId, wordId, rating, current.srs);
+      const { data, error: rateError } = await rateWordSrs(
+        userId,
+        wordId,
+        rating,
+        current.srs
+      );
+      if (rateError) {
+        setError(rateError);
+        setSubmitting(false);
+        return;
+      }
+      updatedSrs = data;
     } else {
-      rateLocalWordSrs(wordId, rating, current.srs);
+      updatedSrs = rateLocalWordSrs(wordId, rating, current.srs);
     }
 
     void recordActivity("review_opened");
     setSessionDone((n) => n + 1);
+    setFlipped(false);
     setSubmitting(false);
-    setRevealed(false);
+
+    const reinsert: WordSrsQueueItem = {
+      ...current,
+      srs: updatedSrs,
+      isNew: false,
+    };
+
+    if (rating === "forgot") {
+      if (index >= queue.length - 1) {
+        setQueue((prev) => [...prev, reinsert]);
+        setIndex((i) => i + 1);
+        return;
+      }
+      setQueue((prev) => {
+        const next = [...prev];
+        next.splice(index + 1, 0, reinsert);
+        return next;
+      });
+      setIndex((i) => i + 1);
+      return;
+    }
 
     if (index >= queue.length - 1) {
       setDone(true);
       return;
     }
     setIndex((i) => i + 1);
-  }
-
-  function toggleFavorite() {
-    if (!current?.word?.id) return;
-    const on = toggleLocalFavorite(current.word.id);
-    setFavorites((prev) => {
-      const next = new Set(prev);
-      if (on) next.add(current.word.id!);
-      else next.delete(current.word.id!);
-      return next;
-    });
   }
 
   if (!hydrated || loadState === "loading") {
@@ -181,136 +198,147 @@ export function ReviewSrsClient() {
       <MobileAppShell activeTab="study" mainClassName="max-w-[390px] mx-auto w-full px-4 pb-8">
         <div className="bs-srs-done">
           <h2 className="text-xl font-bold text-[var(--app-text)]">
-            {sessionDone > 0 ? "✅ Өнөөдрийн давталт дууслаа!" : "Өнөөдөр давтах зүйл алга"}
+            {sessionDone > 0
+              ? "✅ Өнөөдрийн давталт дууслаа!"
+              : "Өнөөдөр давтах зүйл алга"}
           </h2>
           <p className="mt-2 text-sm text-[var(--app-muted)]">
             {sessionDone > 0
               ? `${sessionDone} карт үнэллээ.`
-              : "Шинэ үг эсвэл due карт хоосон байна."}
+              : `${formatActiveHskLevel(activeLevel)} түвшинд шинэ эсвэл due карт байхгүй.`}
           </p>
-          <div className="mt-5 flex flex-col gap-2">
-            <button
-              type="button"
-              onClick={() => void loadQueue()}
-              className="min-h-[48px] rounded-[14px] bg-[var(--app-primary)] text-sm font-extrabold text-white"
-            >
-              Дахин ачаалах
-            </button>
-            <Link
-              href="/games/meaning"
-              className="min-h-[48px] rounded-[14px] border border-[var(--app-border)] bg-white text-center text-sm font-extrabold leading-[48px] text-[var(--app-text)]"
-            >
-              Тоглоом руу →
-            </Link>
-          </div>
+          <button
+            type="button"
+            onClick={() => void loadQueue()}
+            className="mt-5 min-h-[48px] w-full rounded-[14px] bg-[var(--app-primary)] text-sm font-extrabold text-white"
+          >
+            Дахин ачаалах
+          </button>
         </div>
       </MobileAppShell>
     );
   }
 
   const word = current.word;
-  const isFavorite = word.id ? favorites.has(word.id) : false;
+  const posTags = normalizeWordPosTags(word.pos);
+  const isFavorite = word.id != null && favoriteIds.has(word.id);
+
+  function handleToggleFavorite(event: MouseEvent) {
+    event.stopPropagation();
+    if (word.id == null) return;
+    const nowFavorite = toggleLocalFavorite(word.id);
+    setFavoriteIds((prev) => {
+      const next = new Set(prev);
+      if (nowFavorite) next.add(word.id!);
+      else next.delete(word.id!);
+      return next;
+    });
+  }
+
+  function renderCardChrome() {
+    return (
+      <>
+        {posTags.length > 0 ? (
+          <div className="bs-srs-tags">
+            {posTags.map((tag) => (
+              <span key={tag} className="bs-srs-tag">
+                {tag}
+              </span>
+            ))}
+          </div>
+        ) : null}
+        <button
+          type="button"
+          className={`bs-srs-fav ${isFavorite ? "bs-srs-fav-on" : ""}`}
+          onClick={handleToggleFavorite}
+          aria-label={isFavorite ? "Дуртлаас хасах" : "Дуртлаад нэмэх"}
+          aria-pressed={isFavorite}
+        >
+          {isFavorite ? "★" : "☆"}
+        </button>
+      </>
+    );
+  }
 
   return (
     <MobileAppShell activeTab="study" mainClassName="max-w-[390px] mx-auto w-full px-4 pb-8">
       <header className="bs-srs-header">
-        <div>
-          <h1 className="bs-srs-title">Өнөөдрийн давталт</h1>
-          <div className="bs-srs-progress-track">
-            <div
-              className="bs-srs-progress-fill"
-              style={{ width: `${Math.min(100, progressPct)}%` }}
-            />
+        <div className="flex items-start justify-between gap-2">
+          <div className="min-w-0 flex-1">
+            <h1 className="bs-srs-title">Өнөөдрийн давталт</h1>
+            <p className="mt-0.5 text-xs font-bold text-[var(--app-muted)]">
+              {formatActiveHskLevel(activeLevel)}
+              {streak > 0 ? (
+                <span className="bs-srs-streak"> · 🔥 {streak}</span>
+              ) : null}
+            </p>
           </div>
-          <p className="bs-srs-progress-label">
-            {sessionDone} / {DAILY_SRS_GOAL}
-            {streak > 0 ? (
-              <span className="bs-srs-streak">🔥 {streak}</span>
-            ) : null}
-          </p>
+          <HskLevelSelector className="shrink-0" />
         </div>
+        <div className="bs-srs-progress-track">
+          <div
+            className="bs-srs-progress-fill"
+            style={{ width: `${Math.min(100, progressPct)}%` }}
+          />
+        </div>
+        <p className="bs-srs-progress-label">
+          {sessionDone} / {DAILY_SRS_GOAL} · {index + 1}/{total} карт
+        </p>
         {!userId && hasSupabaseConfig ? (
-          <Link href="/login" className="bs-srs-login-hint">
-            Нэвтрэх
-          </Link>
+          <p className="mt-2 text-[11px] text-[var(--app-muted)]">
+            Нэвтэрвэл ахицаа бүх төхөөрөмж дээр хадгална.{" "}
+            <Link href="/login" className="font-bold text-[var(--app-primary-dark)] underline">
+              Нэвтрэх
+            </Link>
+          </p>
         ) : null}
       </header>
 
-      <div
-        className={`bs-srs-card ${revealed ? "bs-srs-card-flipped" : ""}`}
-        role="button"
-        tabIndex={0}
-        onClick={() => !revealed && setRevealed(true)}
-        onKeyDown={(e) => {
-          if (e.key === "Enter" || e.key === " ") {
-            e.preventDefault();
-            if (!revealed) setRevealed(true);
-          }
-        }}
-      >
-        <div className="bs-srs-card-face bs-srs-card-front">
-          {hskTag ? <span className="bs-srs-tag">{hskTag}</span> : null}
-          <button
-            type="button"
-            className={`bs-srs-fav ${isFavorite ? "bs-srs-fav-on" : ""}`}
-            aria-label="Дуртай"
-            onClick={(e) => {
-              e.stopPropagation();
-              toggleFavorite();
-            }}
-          >
-            {isFavorite ? "★" : "☆"}
-          </button>
-          <p className="bs-srs-hanzi">{word.simplified}</p>
-          <button
-            type="button"
-            className="bs-srs-reveal-btn"
-            onClick={(e) => {
-              e.stopPropagation();
-              setRevealed(true);
-            }}
-          >
-            Харах
-          </button>
-        </div>
-
-        {revealed ? (
-          <div className="bs-srs-card-face bs-srs-card-back">
-            <p className="bs-srs-pinyin">{word.pinyin ?? "—"}</p>
-            <p className="bs-srs-meaning">{word.meaning_mn ?? "—"}</p>
-            {word.example_zh ? (
-              <div className="bs-srs-example">
-                <p className="bs-srs-example-zh">{word.example_zh}</p>
-                {word.example_pinyin ? (
-                  <p className="bs-srs-example-py">{word.example_pinyin}</p>
-                ) : null}
-                {word.example_mn ? (
-                  <p className="bs-srs-example-mn">{word.example_mn}</p>
-                ) : null}
-              </div>
-            ) : null}
-            <WordCharBreakdownPanel text={word.simplified ?? ""} />
+      <div className="bs-srs-flip-scene">
+        <button
+          type="button"
+          className={`bs-srs-flip-card ${flipped ? "bs-srs-flip-card--flipped" : ""}`}
+          onClick={() => setFlipped((f) => !f)}
+          aria-label={flipped ? "Урд тал руу буцах" : "Ар талыг харах"}
+        >
+          <div className="bs-srs-flip-inner">
+            <div className="bs-srs-flip-face bs-srs-flip-front">
+              {renderCardChrome()}
+              <p className="bs-srs-hanzi-only">{word.simplified}</p>
+              <p className="bs-srs-tap-hint">Дарж харуулна</p>
+            </div>
+            <div className="bs-srs-flip-face bs-srs-flip-back">
+              {renderCardChrome()}
+              <p className="bs-srs-pinyin">{word.pinyin ?? "—"}</p>
+              <p className="bs-srs-meaning">{word.meaning_mn ?? "—"}</p>
+              {word.example_zh ? (
+                <div className="bs-srs-example">
+                  <p className="bs-srs-example-zh">{word.example_zh}</p>
+                  {word.example_pinyin ? (
+                    <p className="bs-srs-example-py">{word.example_pinyin}</p>
+                  ) : null}
+                  {word.example_mn ? (
+                    <p className="bs-srs-example-mn">{word.example_mn}</p>
+                  ) : null}
+                </div>
+              ) : null}
+            </div>
           </div>
-        ) : null}
+        </button>
       </div>
 
-      {revealed ? (
+      {flipped ? <WordCharBreakdownPanel text={word.simplified} /> : null}
+
+      {flipped ? (
         <WordSrsRatingButtons
           disabled={submitting}
           onRate={(rating) => void handleRate(rating)}
         />
       ) : (
         <p className="mt-3 text-center text-xs text-[var(--app-muted)]">
-          {index + 1} / {total} карт
+          Картыг дарж пиньинь, утга, жишээг харна
         </p>
       )}
-
-      <Link
-        href="/review/words"
-        className="mt-4 block text-center text-xs font-bold text-[var(--app-primary-dark)] underline"
-      >
-        Хичээлийн үгсийн жагсаалт →
-      </Link>
     </MobileAppShell>
   );
 }

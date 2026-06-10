@@ -18,10 +18,11 @@ function intervalDaysToMs(days: number): number {
 }
 
 /**
- * Leitner / SM-2-lite for HSK words:
- * - forgot: reset reps, re-due in ~1 minute
- * - hard: interval *= 1.2, ease -= 0.15, due in max(10 min, interval)
- * - known: first success → 4 days; else interval *= ease (days)
+ * SM-2-lite for HSK word SRS (per product spec):
+ * - forgot: reps=0, interval=0 (~1 min), ease-=0.2 (floor 1.3)
+ * - hard: interval*=1.2, ease-=0.15
+ * - known: first reps→interval=4d, else interval*=ease; reps+=1
+ * due_at = now + interval (days; forgot uses 1 minute)
  */
 export function applyWordSrsRating(
   current: WordSrsScheduleState,
@@ -33,7 +34,7 @@ export function applyWordSrsRating(
   if (rating === "forgot") {
     return {
       reps: 0,
-      ease: Math.max(MIN_EASE, ease - 0.1),
+      ease: Math.max(MIN_EASE, ease - 0.2),
       interval_days: 0,
       due_at: addMs(now, MINUTE_MS),
       last_rating: "forgot",
@@ -42,19 +43,16 @@ export function applyWordSrsRating(
 
   if (rating === "hard") {
     ease = Math.max(MIN_EASE, ease - 0.15);
-    interval_days =
-      interval_days <= 0 ? 10 / (24 * 60) : interval_days * 1.2;
-    const waitMs = Math.max(10 * MINUTE_MS, intervalDaysToMs(interval_days));
+    interval_days = interval_days * 1.2;
     return {
       reps: reps + 1,
       ease,
       interval_days,
-      due_at: addMs(now, waitMs),
+      due_at: addMs(now, intervalDaysToMs(interval_days)),
       last_rating: "hard",
     };
   }
 
-  // known
   reps += 1;
   if (reps === 1) {
     interval_days = 4;

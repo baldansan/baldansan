@@ -1,7 +1,7 @@
 import { LanguageFilteredProgressView } from "@/components/mobile/language-filtered-progress-view";
-import { getAllPublicLessonsProbe } from "@/lib/content";
+import { getAllPublicLessonSummariesProbe } from "@/lib/content";
 
-export const dynamic = "force-dynamic";
+export const revalidate = 120;
 
 export const metadata = {
   title: "Миний явц — Бөөндөө Сурцгаая",
@@ -10,6 +10,6 @@ export const metadata = {
 
 /** Progress hub — filtered by selected language track. */
 export default async function ProgressPage() {
-  const allLessons = await getAllPublicLessonsProbe();
+  const allLessons = await getAllPublicLessonSummariesProbe();
   return <LanguageFilteredProgressView allLessons={allLessons} />;
 }

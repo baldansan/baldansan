@@ -62,7 +62,13 @@ export function ProfileAppView() {
         authDevLog("profile: supabase not configured, showing guest state");
         setUser(null);
         setIsAdmin(false);
-        setStreak(0);
+        try {
+          const retention = await getStreakUnified();
+          setStreak(retention?.currentStreak ?? 0);
+          setDayNumber(Math.max(1, retention?.currentStreak ?? 1));
+        } catch {
+          setStreak(0);
+        }
         setCheckResult(buildFallbackAuthCheckResult(PROFILE_ROUTE, "Supabase тохиргоо дутуу байна"));
         setLoadState("ready");
         return;
@@ -71,11 +77,17 @@ export function ProfileAppView() {
       const auth = await runClientAuthCheck({
         includeAdmin: false,
         route: PROFILE_ROUTE,
+        timeoutMs: 4000,
       });
       setCheckResult(auth);
 
-      if (auth.timedOut || (auth.error && !auth.user)) {
+      if (auth.timedOut) {
         finishWithError(auth.error ?? "Auth шалгалт хэт удаж байна");
+        return;
+      }
+
+      if (auth.error && !auth.user) {
+        finishWithError(auth.error);
         return;
       }
 
@@ -83,9 +95,19 @@ export function ProfileAppView() {
 
       if (!auth.user) {
         setIsAdmin(false);
-        setStreak(0);
+        try {
+          const retention = await withTimeout(
+            getStreakUnified(),
+            5000,
+            "getStreakUnifiedGuest"
+          );
+          setStreak(retention?.currentStreak ?? 0);
+          setDayNumber(Math.max(1, retention?.currentStreak ?? 1));
+        } catch {
+          setStreak(0);
+        }
         setLoadState("ready");
-        authDevLog("profile: no session, showing login state");
+        authDevLog("profile: no session, showing guest profile");
         return;
       }
 
@@ -187,22 +209,34 @@ export function ProfileAppView() {
       >
         {!hasSupabaseConfig ? (
           <MobileCard className="mb-4 border border-amber-200 bg-amber-50 !p-3 text-xs text-amber-900">
-            Supabase тохиргоо дутуу байна. Local progress only until .env.local is configured.
+            Supabase тохиргоо дутуу. Ахицаа зөвхөн энэ төхөөрөмж дээр хадгална.
           </MobileCard>
         ) : null}
-        <div className="py-12 text-center">
+
+        <section className="mb-5 text-center">
           <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-slate-200 text-3xl">
             👤
           </div>
-          <h1 className="mt-4 text-xl font-bold text-[var(--app-text)]">
-            Профайл
+          <h1 className="mt-3 text-lg font-bold text-[var(--app-text)]">
+            Зочин хэрэглэгч
           </h1>
-          <p className="mt-2 text-sm text-[var(--app-muted)]">
-            Ахицаа хадгалахын тулд нэвтэрнэ үү.
+          <p className="mt-1 text-sm text-[var(--app-muted)]">
+            Одоогийн ахицаа доор харагдана
+          </p>
+        </section>
+
+        <ProfileSrsStats userId={null} streak={streak} dayNumber={dayNumber} />
+
+        <MobileCard padding="sm" className="mb-5 text-center !p-4">
+          <p className="text-sm font-bold text-[var(--app-text)]">
+            Бүх төхөөрөмж дээр хадгалах уу?
+          </p>
+          <p className="mt-1 text-xs text-[var(--app-muted)]">
+            Нэвтэрвэл SRS, streak, тоглоомын оноо синк хийгдэнэ.
           </p>
           <Link
             href="/login"
-            className="mt-6 inline-flex min-h-[44px] w-full items-center justify-center app-btn-primary px-6 py-3"
+            className="mt-4 inline-flex min-h-[44px] w-full items-center justify-center app-btn-primary px-6 py-3"
           >
             Нэвтрэх
           </Link>
@@ -212,7 +246,7 @@ export function ProfileAppView() {
           >
             Бүртгүүлэх
           </Link>
-        </div>
+        </MobileCard>
       </MobileAppShell>
     );
   }

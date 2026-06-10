@@ -1,7 +1,7 @@
 import { HomeAppView } from "@/components/mobile/home-app-view";
 import { loadMobileHomeData } from "@/lib/mobile-home-data";
 
-export const dynamic = "force-dynamic";
+export const revalidate = 120;
 
 export const metadata = {
   title: "Нүүр — Бөөндөө Сурцгаая",
