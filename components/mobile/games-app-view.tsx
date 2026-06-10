@@ -86,6 +86,15 @@ function gamesForLanguage(
     ...(!isKorean
       ? [
           {
+            id: "meaning" as const,
+            slug: "meaning" as const,
+            title: "Утга сонгох",
+            desc: "Ханз харж зөв монгол утгыг сонго — 3 амь, цаг",
+            icon: "🎯",
+            color: "from-teal-400 to-teal-500",
+            badge: "Шинэ",
+          },
+          {
             id: "radical" as const,
             slug: "radical" as const,
             title: labels.radicalTitle,

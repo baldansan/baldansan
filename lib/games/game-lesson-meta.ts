@@ -152,6 +152,7 @@ export type GameLinkSlug =
   | "missing-word"
   | "arrange"
   | "stroke"
+  | "meaning"
   | "radical";
 
 export function defaultGameLinksForContext(
@@ -188,6 +189,8 @@ export function gameLinkLabel(
       return labels.arrangeTitle;
     case "stroke":
       return labels.strokeTitle;
+    case "meaning":
+      return "Утга сонгох";
     case "radical":
       return labels.radicalTitle;
   }

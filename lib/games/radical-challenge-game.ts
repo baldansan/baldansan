@@ -5,6 +5,13 @@ import {
   type RadicalGameEntry,
 } from "@/lib/games/radical-game-data";
 import {
+  buildDecompositionParts,
+  getCharBreakdownAnswer,
+  getCharBreakdownEtymology,
+  getCharBreakdownEntry,
+  getComponentMeaning,
+} from "@/lib/hanzi/char-breakdown-data";
+import {
   activeLevelMatchesNumeric,
   type ActiveHskLevel,
 } from "@/lib/hsk/active-hsk-level";
@@ -75,8 +82,17 @@ const COMPONENT_MAP = challengeData.componentMap as Record<
 >;
 const ALL_GAMES = challengeData.games as RadicalChallengeEntry[];
 
+function enrichChallengeEntry(entry: RadicalChallengeEntry): RadicalChallengeEntry {
+  if (!getCharBreakdownEntry(entry.char)) return entry;
+  return {
+    ...entry,
+    answer: getCharBreakdownAnswer(entry.char, entry.answer),
+    etymology_mn: getCharBreakdownEtymology(entry.char, entry.etymology_mn),
+  };
+}
+
 export function getRadicalChallengeEntries(): RadicalChallengeEntry[] {
-  return ALL_GAMES;
+  return ALL_GAMES.map(enrichChallengeEntry);
 }
 
 export function filterChallengeEntriesByHskLevel(
@@ -108,6 +124,13 @@ export function buildChallengeRoundOptions(
 export function getChallengeComponentMeta(
   glyph: string
 ): ChallengeComponentMeta {
+  const meaning = getComponentMeaning(glyph);
+  if (meaning) {
+    return {
+      name: meaning.mn || meaning.en,
+      icon: meaning.icon,
+    };
+  }
   return COMPONENT_MAP[glyph] ?? { name: "", icon: "🔘" };
 }
 
@@ -141,6 +164,11 @@ export { orderHintFromStructure };
 export function entryToBreakdown(
   entry: RadicalChallengeEntry
 ): RadicalGameEntry["breakdown"] {
+  const fromChar = getCharBreakdownEntry(entry.char);
+  if (fromChar?.components?.length) {
+    const parts = buildDecompositionParts(fromChar.components);
+    if (parts.length > 0) return parts;
+  }
   return entry.answer.map((glyph) => {
     const meta = getChallengeComponentMeta(glyph);
     return { c: glyph, name: meta.name, icon: meta.icon };

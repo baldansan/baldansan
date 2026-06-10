@@ -5,7 +5,8 @@ export type GameType =
   | "arrange"
   | "stroke"
   | "radical"
-  | "radical-challenge";
+  | "radical-challenge"
+  | "meaning";
 
 export type GameVocabItem = {
   id: string;

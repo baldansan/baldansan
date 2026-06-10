@@ -17,6 +17,7 @@ import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
 import { MobileCard } from "@/components/mobile/mobile-card";
 import { isCurrentUserAdmin } from "@/lib/supabase/admin";
 import { hasSupabaseConfig, signOut } from "@/lib/supabase/auth";
+import { ProfileSrsStats } from "@/components/profile/profile-srs-stats";
 import { countCompletedLessonsAll } from "@/lib/progress";
 import { getStreakUnified } from "@/lib/retention/retention-service";
 import type { AuthUser } from "@/types/auth";
@@ -32,6 +33,7 @@ export function ProfileAppView() {
   const [isAdmin, setIsAdmin] = useState(false);
   const [completedLessons, setCompletedLessons] = useState(0);
   const [streak, setStreak] = useState(0);
+  const [dayNumber, setDayNumber] = useState(1);
   const [signingOut, setSigningOut] = useState(false);
   const [checkResult, setCheckResult] = useState<ClientAuthCheckResult | null>(
     null
@@ -101,6 +103,7 @@ export function ProfileAppView() {
           "getStreakUnified"
         );
         setStreak(retention?.currentStreak ?? 0);
+        setDayNumber(Math.max(1, retention?.currentStreak ?? 1));
       } catch (error) {
         setStreak(0);
         const message =
@@ -254,20 +257,18 @@ export function ProfileAppView() {
         <p className="truncate text-sm text-[var(--app-muted)]">{user.email}</p>
       </section>
 
-      <div className="mb-5 grid grid-cols-2 gap-2">
-        <MobileCard padding="sm" className="text-center !p-3">
-          <p className="text-lg font-bold text-[var(--app-primary-dark)]">
-            {completedLessons}
-          </p>
-          <p className="text-[10px] text-[var(--app-muted)]">Дууссан хичээл</p>
-        </MobileCard>
-        <MobileCard padding="sm" className="text-center !p-3">
-          <p className="text-lg font-bold text-[var(--app-primary-dark)]">
-            {streak > 0 ? `🔥 ${streak}` : streak}
-          </p>
-          <p className="text-[10px] text-[var(--app-muted)]">Өдрийн streak</p>
-        </MobileCard>
-      </div>
+      <ProfileSrsStats
+        userId={user.id}
+        streak={streak}
+        dayNumber={dayNumber}
+      />
+
+      <MobileCard padding="sm" className="mb-5 text-center !p-3">
+        <p className="text-lg font-bold text-[var(--app-primary-dark)]">
+          {completedLessons}
+        </p>
+        <p className="text-[10px] text-[var(--app-muted)]">Дууссан хичээл</p>
+      </MobileCard>
 
       <MobileCard padding="sm" className="overflow-hidden !p-0">
         {menuItems.map((item) => (

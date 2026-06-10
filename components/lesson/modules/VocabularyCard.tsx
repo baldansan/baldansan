@@ -189,10 +189,10 @@ export default function VocabularyCard({
         <div className="bs-hanzi">{w.zh}</div>
         {decompositionCharacters.length > 0 ? (
           <div className="bs-decomp-hint-stack">
-            {decompositionCharacters.map((character) => (
+            {decompositionCharacters.map((view) => (
               <CharacterDecompositionHint
-                key={character.hanzi}
-                character={character}
+                key={view.char}
+                char={view.char}
                 showCharLabel={decompositionCharacters.length > 1}
               />
             ))}

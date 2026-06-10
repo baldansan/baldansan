@@ -1,10 +1,7 @@
-import { LanguageFilteredReviewView } from "@/components/mobile/language-filtered-review-view";
-import { getAllPublicLessonsProbe } from "@/lib/content";
+import { ReviewSrsClient } from "@/components/review/review-srs-client";
 
 export const dynamic = "force-dynamic";
 
-export default async function ReviewPage() {
-  const allLessons = await getAllPublicLessonsProbe();
-
-  return <LanguageFilteredReviewView allLessons={allLessons} />;
+export default function ReviewPage() {
+  return <ReviewSrsClient />;
 }

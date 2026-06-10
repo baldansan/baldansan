@@ -1,4 +1,12 @@
 import radicalGameData from "@/data/radical_game_data.json";
+import {
+  buildDecompositionParts,
+  componentDisplayIcon,
+  componentDisplayLabel,
+  getCharBreakdownAnswer,
+  getCharBreakdownEtymology,
+  getCharBreakdownEntry,
+} from "@/lib/hanzi/char-breakdown-data";
 
 export type RadicalGameComponent = {
   c: string;
@@ -26,8 +34,32 @@ const ORDER_HINTS: Record<string, string> = {
   "\u2ff5": "гадна → дотор",
 };
 
+function enrichRadicalGameEntry(entry: RadicalGameEntry): RadicalGameEntry {
+  const breakdownEntry = getCharBreakdownEntry(entry.char);
+  if (!breakdownEntry) return entry;
+
+  const glyphs = getCharBreakdownAnswer(entry.char, entry.answer);
+  const components = glyphs.map((glyph) => {
+    const fallback = entry.components.find((part) => part.c === glyph);
+    return {
+      c: glyph,
+      name: componentDisplayLabel(glyph) || fallback?.name || glyph,
+      icon: componentDisplayIcon(glyph),
+    };
+  });
+  const breakdown = buildDecompositionParts(glyphs);
+
+  return {
+    ...entry,
+    answer: glyphs,
+    components,
+    breakdown: breakdown.length > 0 ? breakdown : entry.breakdown,
+    etymology_mn: getCharBreakdownEtymology(entry.char, entry.etymology_mn),
+  };
+}
+
 export function getRadicalGameEntries(): RadicalGameEntry[] {
-  return radicalGameData as RadicalGameEntry[];
+  return (radicalGameData as RadicalGameEntry[]).map(enrichRadicalGameEntry);
 }
 
 export function orderHintFromStructure(structure: string): string {

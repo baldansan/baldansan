@@ -66,7 +66,7 @@ export default function CharactersModule({
         ) : null}
       </div>
 
-      <CharacterDecompositionHint character={current} />
+      <CharacterDecompositionHint char={current.hanzi} />
 
       <CharacterWriter
         key={`${current.hanzi}-${index}`}
