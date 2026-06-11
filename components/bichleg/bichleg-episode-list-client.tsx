@@ -8,7 +8,10 @@ import {
   formatEpisodeListTitle,
   formatSeriesHeaderMeta,
 } from "@/lib/bichleg/episode-label";
-import { resolveSeriesContinueVideoId } from "@/lib/bichleg/video-progress-utils";
+import {
+  formatEpisodePartialPercent,
+  resolveSeriesContinueVideoId,
+} from "@/lib/bichleg/video-progress-utils";
 import type {
   UserVideoProgress,
   VideoEpisodeItem,
@@ -30,34 +33,47 @@ function EpisodeRow({
   seriesId,
   episode,
   index,
-  completed,
+  progress,
 }: {
   seriesId: string;
   episode: VideoEpisodeItem;
   index: number;
-  completed: boolean;
+  progress?: UserVideoProgress;
 }) {
   const label = formatEpisodeListTitle(episode.episode_no, episode.title_mn);
   const displayNo =
     episode.episode_no != null && Number.isFinite(episode.episode_no)
       ? episode.episode_no
       : index + 1;
+  const completed = Boolean(progress?.completed);
+  const partialLabel =
+    !completed && progress
+      ? formatEpisodePartialPercent(progress.watched_sec, episode.duration_sec)
+      : null;
 
   return (
     <Link href={episodeHref(seriesId, episode.id)} className="bs-bichleg-ep-row">
       <div className="bs-bichleg-ep-rail">
         <div
           className={`app-timeline-node ${
-            completed ? "bs-bichleg-ep-node--done" : "app-timeline-node-next"
+            completed
+              ? "bs-bichleg-ep-node--done"
+              : partialLabel
+                ? "bs-bichleg-ep-node--partial"
+                : "app-timeline-node-next"
           }`}
         >
-          {completed ? "✓" : displayNo}
+          {completed ? "✓" : partialLabel ?? displayNo}
         </div>
         <div className="bs-bichleg-ep-rail-line" aria-hidden />
       </div>
       <div className="bs-bichleg-ep-body">
         <p className="bs-bichleg-ep-title">{label}</p>
-        {episode.subtitleCount > 0 ? (
+        {partialLabel ? (
+          <p className="bs-bichleg-ep-meta bs-bichleg-ep-meta--partial">
+            {partialLabel} үзсэн
+          </p>
+        ) : episode.subtitleCount > 0 ? (
           <p className="bs-bichleg-ep-meta">{episode.subtitleCount} мөр</p>
         ) : null}
       </div>
@@ -146,7 +162,7 @@ export function BichlegEpisodeListClient({
               seriesId={seriesId}
               episode={episode}
               index={index}
-              completed={Boolean(progressByVideoId[episode.id]?.completed)}
+              progress={progressByVideoId[episode.id]}
             />
           ))}
           </div>

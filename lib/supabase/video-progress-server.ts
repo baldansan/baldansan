@@ -17,6 +17,10 @@ function mapProgressRow(raw: Record<string, unknown>): UserVideoProgress {
   };
 }
 
+export async function isServerUserAuthenticated(): Promise<boolean> {
+  return (await getServerUserId()) != null;
+}
+
 async function getServerUserId(): Promise<string | null> {
   if (!hasServerSupabaseConfig) return null;
   const client = await createServerSupabaseClient();
