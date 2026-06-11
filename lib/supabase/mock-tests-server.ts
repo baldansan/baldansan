@@ -1,4 +1,16 @@
-import type { MockTestQuestionRow, MockTestRow, MockTestSection } from "@/lib/mock-test/types";
+import {
+  collectTargetLessonIds,
+  type LessonTitleRow,
+  weakLessonsFromResponses,
+  type WeakLessonRecommendation,
+} from "@/lib/mock-test/weak-lessons";
+import { scoreResultFromSavedResponses } from "@/lib/mock-test/scoring";
+import type {
+  MockTestQuestionRow,
+  MockTestRow,
+  MockTestScoreResult,
+  MockTestSection,
+} from "@/lib/mock-test/types";
 import {
   createServerSupabaseClient,
   hasServerSupabaseConfig,
@@ -127,4 +139,128 @@ export async function fetchMockTestQuestions(
 
   if (error || !data) return [];
   return data.map((row) => mapQuestion(row as Record<string, unknown>));
+}
+
+export type MockTestLatestScore = {
+  attemptId: string;
+  rawScore: number;
+  maxScore: number;
+};
+
+export async function fetchAvailableLessonsByIds(
+  lessonIds: string[]
+): Promise<LessonTitleRow[]> {
+  if (!hasServerSupabaseConfig || lessonIds.length === 0) return [];
+  const client = await createServerSupabaseClient();
+  if (!client) return [];
+
+  const { data, error } = await client
+    .from("lessons")
+    .select("id, title")
+    .in("id", lessonIds)
+    .eq("status", "available");
+
+  if (error || !data) return [];
+  return data.map((row) => ({
+    id: String(row.id),
+    title: String(row.title),
+  }));
+}
+
+export async function fetchLatestMockTestScores(
+  testIds: string[]
+): Promise<Record<string, MockTestLatestScore>> {
+  if (!hasServerSupabaseConfig || testIds.length === 0) return {};
+  const client = await createServerSupabaseClient();
+  if (!client) return {};
+
+  const {
+    data: { user },
+  } = await client.auth.getUser();
+  if (!user) return {};
+
+  const { data, error } = await client
+    .from("user_test_attempts")
+    .select("id, test_id, raw_score, max_score, finished_at")
+    .eq("user_id", user.id)
+    .eq("status", "completed")
+    .in("test_id", testIds)
+    .order("finished_at", { ascending: false });
+
+  if (error || !data) return {};
+
+  const byTest: Record<string, MockTestLatestScore> = {};
+  for (const row of data) {
+    const testId = row.test_id ? String(row.test_id) : "";
+    if (!testId || byTest[testId]) continue;
+    byTest[testId] = {
+      attemptId: String(row.id),
+      rawScore: Number(row.raw_score ?? 0),
+      maxScore: Number(row.max_score ?? 0),
+    };
+  }
+  return byTest;
+}
+
+export async function loadMockTestListPageData(): Promise<{
+  tests: MockTestRow[];
+  latestScores: Record<string, MockTestLatestScore>;
+}> {
+  const tests = await fetchMockTests();
+  const latestScores = await fetchLatestMockTestScores(tests.map((test) => test.id));
+  return { tests, latestScores };
+}
+
+export type MockTestAttemptReview = {
+  test: MockTestRow;
+  questions: MockTestQuestionRow[];
+  result: MockTestScoreResult;
+  weakLessons: WeakLessonRecommendation[];
+  finishedAt: string | null;
+};
+
+export async function fetchMockTestAttemptReview(
+  attemptId: string
+): Promise<MockTestAttemptReview | null> {
+  if (!hasServerSupabaseConfig) return null;
+  const client = await createServerSupabaseClient();
+  if (!client) return null;
+
+  const { data: attempt, error: attemptErr } = await client
+    .from("user_test_attempts")
+    .select("id, test_id, finished_at, status")
+    .eq("id", attemptId)
+    .maybeSingle();
+
+  if (attemptErr || !attempt?.test_id || attempt.status !== "completed") {
+    return null;
+  }
+
+  const testId = String(attempt.test_id);
+  const [test, questions, responsesResult] = await Promise.all([
+    fetchMockTestById(testId),
+    fetchMockTestQuestions(testId),
+    client
+      .from("user_question_responses")
+      .select("question_id, user_answer, is_correct")
+      .eq("attempt_id", attemptId),
+  ]);
+
+  if (!test || !questions.length || responsesResult.error) {
+    return null;
+  }
+
+  const responses = responsesResult.data ?? [];
+  const lessonIds = collectTargetLessonIds(questions);
+  const lessons = await fetchAvailableLessonsByIds(lessonIds);
+  const result = scoreResultFromSavedResponses(questions, responses);
+  const weakLessons = weakLessonsFromResponses(responses, questions, lessons);
+
+  return {
+    test,
+    questions,
+    result,
+    weakLessons,
+    finishedAt: attempt.finished_at ? String(attempt.finished_at) : null,
+  };
 }

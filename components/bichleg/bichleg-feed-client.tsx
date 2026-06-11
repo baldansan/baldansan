@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import PhoneFrame from "@/components/layout/PhoneFrame";
 import { BottomNavChrome } from "@/components/mobile/bottom-nav-chrome";
 import {
@@ -13,8 +13,10 @@ import {
   type VideoSeriesInfo,
   type VideoSubtitleRow,
 } from "@/lib/bichleg/types";
+import { BichlegYouTubePlayer } from "@/components/bichleg/bichleg-youtube-player";
 import {
-  createYouTubePlayer,
+  safePlayerCurrentTime,
+  safePlayerDuration,
   type YtPlayer,
 } from "@/lib/bichleg/youtube-api";
 import type { BichlegWordStatus } from "@/lib/supabase/saved-words";
@@ -164,55 +166,47 @@ export function BichlegFeedClient({ videos, seriesList = [] }: Props) {
     });
   }, [activeVideo?.id]);
 
+  const handlePlayerChange = useCallback((player: YtPlayer | null) => {
+    playerRef.current = player;
+    if (!player) {
+      setPlayerReady(false);
+    }
+  }, []);
+
+  const handlePlayerReady = useCallback(() => {
+    setPlayerReady(true);
+    const player = playerRef.current;
+    if (!player) return;
+    const d = safePlayerDuration(player);
+    if (d != null) setDuration(d);
+    else if (activeVideo?.duration_sec) {
+      setDuration(Number(activeVideo.duration_sec));
+    }
+  }, [activeVideo?.duration_sec]);
+
   useEffect(() => {
-    if (!activeVideo) return;
-    let cancelled = false;
-    const mountId = `bichleg-yt-${activeVideo.id}`;
-    setPlayerReady(false);
-
-    const frame = requestAnimationFrame(() => {
-      if (cancelled || !document.getElementById(mountId)) return;
-
-      void createYouTubePlayer(mountId, activeVideo.youtube_id, {
-      muted: true,
-      onReady: () => {
-        if (!cancelled) setPlayerReady(true);
-      },
-      }).then((player) => {
-        if (cancelled) {
-          player.destroy();
-          return;
-        }
-        playerRef.current = player;
-        player.setPlaybackRate(speed);
-        if (!muted) player.unMute();
-        const d = player.getDuration();
-        if (d > 0) setDuration(d);
-        else if (activeVideo.duration_sec) {
-          setDuration(Number(activeVideo.duration_sec));
-        }
-      });
-    });
-
-    return () => {
-      cancelled = true;
-      cancelAnimationFrame(frame);
-      playerRef.current?.destroy();
-      playerRef.current = null;
-    };
-  }, [activeVideo?.id, activeVideo?.youtube_id, activeVideo?.duration_sec]);
+    setCurrentTime(0);
+  }, [activeVideo?.id]);
 
   useEffect(() => {
     const player = playerRef.current;
     if (!player || !playerReady) return;
-    player.setPlaybackRate(speed);
+    try {
+      player.setPlaybackRate(speed);
+    } catch {
+      /* player destroyed */
+    }
   }, [speed, playerReady]);
 
   useEffect(() => {
     const player = playerRef.current;
     if (!player || !playerReady) return;
-    if (muted) player.mute();
-    else player.unMute();
+    try {
+      if (muted) player.mute();
+      else player.unMute();
+    } catch {
+      /* player destroyed */
+    }
   }, [muted, playerReady]);
 
   useEffect(() => {
@@ -220,10 +214,11 @@ export function BichlegFeedClient({ videos, seriesList = [] }: Props) {
     if (!player || !playerReady) return;
 
     const tick = setInterval(() => {
-      const t = player.getCurrentTime();
+      const t = safePlayerCurrentTime(player);
+      if (t == null) return;
       setCurrentTime(t);
-      const d = player.getDuration();
-      if (d > 0) setDuration(d);
+      const d = safePlayerDuration(player);
+      if (d != null) setDuration(d);
     }, 150);
 
     return () => clearInterval(tick);
@@ -264,9 +259,19 @@ export function BichlegFeedClient({ videos, seriesList = [] }: Props) {
     if (muted) setMuted(false);
   }
 
+  function runOnPlayer(fn: (player: YtPlayer) => void) {
+    const player = playerRef.current;
+    if (!player) return;
+    try {
+      fn(player);
+    } catch {
+      /* player destroyed */
+    }
+  }
+
   function handleWordPick(word: SubtitleWord) {
     if (!activeVideo) return;
-    playerRef.current?.pauseVideo();
+    runOnPlayer((player) => player.pauseVideo());
     setWordStatus(null);
     setPickedWord({ ...word, sourceVideoId: activeVideo.id });
   }
@@ -292,7 +297,7 @@ export function BichlegFeedClient({ videos, seriesList = [] }: Props) {
   function handleContinue() {
     setPickedWord(null);
     setWordStatus(null);
-    playerRef.current?.playVideo();
+    runOnPlayer((player) => player.playVideo());
   }
 
   async function handleSaveWord() {
@@ -317,7 +322,7 @@ export function BichlegFeedClient({ videos, seriesList = [] }: Props) {
       }
       setPickedWord(null);
       setWordStatus(null);
-      playerRef.current?.playVideo();
+      runOnPlayer((player) => player.playVideo());
     } else if (result.error) {
       setToast(result.error);
     }
@@ -436,10 +441,11 @@ export function BichlegFeedClient({ videos, seriesList = [] }: Props) {
                   role="presentation"
                 >
                   {isActive ? (
-                    <div
+                    <BichlegYouTubePlayer
                       key={video.id}
-                      id={`bichleg-yt-${video.id}`}
-                      className="bs-bichleg-player-mount"
+                      youtubeId={video.youtube_id}
+                      onPlayerChange={handlePlayerChange}
+                      onReady={handlePlayerReady}
                     />
                   ) : (
                     <div className="bs-bichleg-player-placeholder" />
@@ -513,8 +519,10 @@ export function BichlegFeedClient({ videos, seriesList = [] }: Props) {
                       className="bs-bichleg-action"
                       aria-label="Дахин эхлэх"
                       onClick={() => {
-                        playerRef.current?.seekTo(0, true);
-                        playerRef.current?.playVideo();
+                        runOnPlayer((player) => {
+                          player.seekTo(0, true);
+                          player.playVideo();
+                        });
                       }}
                     >
                       <BichlegIcon name="refresh" className="bs-bichleg-action-icon" />

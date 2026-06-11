@@ -388,6 +388,12 @@ body{
 .bs-mt-explain{margin:6px 0 0;font-size:12px;color:var(--bs-muted);line-height:1.45}
 .bs-mt-score-big{margin:8px 0 0;font-size:42px;font-weight:900;color:var(--bs-green-700)}
 .bs-mt-save-note{margin:8px 0 0;font-size:12px;font-weight:600;color:var(--bs-muted)}
+.bs-mt-last-score{margin:6px 0 0;font-size:11px;font-weight:700;color:var(--bs-green-700)}
+.bs-mt-weak-section{text-align:left}
+.bs-mt-weak-list{display:flex;flex-direction:column;gap:8px;margin-top:8px}
+.bs-mt-weak-card{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:12px 14px;border-radius:14px;background:var(--bs-card);box-shadow:var(--bs-shadow);text-decoration:none;color:inherit}
+.bs-mt-weak-title{margin:0;flex:1;min-width:0;font-size:14px;font-weight:800;color:var(--bs-ink);line-height:1.3}
+.bs-mt-weak-badge{flex-shrink:0;font-size:10px;font-weight:800;color:#b45309;background:#fff7ed;border-radius:999px;padding:4px 8px;white-space:nowrap}
 .bs-mt-section-title{margin:0;font-size:14px;font-weight:800;color:var(--bs-ink)}
 .bs-mt-review-card{padding:12px;border-radius:14px;background:#fafcfb;border:1px solid var(--bs-line)}
 .bs-mt-q-pending{color:#b45309}

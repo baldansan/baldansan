@@ -4,9 +4,11 @@ import type { ReactNode } from "react";
 import Link from "next/link";
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
 import { SKILL_LABELS_MN, type MockTestRow } from "@/lib/mock-test/types";
+import type { MockTestLatestScore } from "@/lib/supabase/mock-tests-server";
 
 type Props = {
   tests: MockTestRow[];
+  latestScores?: Record<string, MockTestLatestScore>;
   /** Давтах hub дотор — shell/back linkгүй */
   embedded?: boolean;
 };
@@ -96,7 +98,17 @@ function skillKeysForTest(test: MockTestRow): string[] {
   return SKILL_ORDER.filter((sk) => present.has(sk));
 }
 
-export function MockTestListClient({ tests, embedded = false }: Props) {
+function formatLatestScore(score: MockTestLatestScore): string {
+  const raw = Math.round(score.rawScore);
+  const max = Math.round(score.maxScore);
+  return `Сүүлд: ${raw}/${max}`;
+}
+
+export function MockTestListClient({
+  tests,
+  latestScores = {},
+  embedded = false,
+}: Props) {
   const byLevel = tests.reduce<Record<number, MockTestRow[]>>((acc, t) => {
     const lvl = t.hsk_level;
     if (!acc[lvl]) acc[lvl] = [];
@@ -144,49 +156,63 @@ export function MockTestListClient({ tests, embedded = false }: Props) {
                 {levelTests.map((test, index) => {
                   const skillKeys = skillKeysForTest(test);
                   const skillLabels = skillsForTest(test);
+                  const latest = latestScores[test.id];
                   return (
-                    <Link
-                      key={test.id}
-                      href={`/test/${test.id}`}
-                      className="bs-mt-card bs-mt-card--row"
-                    >
+                    <div key={test.id} className="bs-mt-card bs-mt-card--row">
                       <div className="bs-mt-card-body">
-                        <div className="bs-mt-card-head">
-                          <h3 className="bs-mt-card-title">
-                            Загвар {index + 1}
-                          </h3>
-                          <span className="bs-mt-card-badge">{test.id}</span>
-                        </div>
-                        <div className="bs-mt-chip-row">
-                          <span className="bs-mt-chip bs-mt-chip--meta">
-                            <TablerIcon name="clock" />
-                            {test.time_limit_min} мин
-                          </span>
-                          <span className="bs-mt-chip bs-mt-chip--meta">
-                            <TablerIcon name="list-numbers" />
-                            {test.total_questions} асуулт
-                          </span>
-                          {skillLabels.map((label, i) => {
-                            const sk = skillKeys[i] ?? "reading";
-                            const icon = SKILL_ICONS[sk] ?? "book";
-                            return (
-                              <span
-                                key={`${test.id}-${sk}`}
-                                className="bs-mt-chip bs-mt-chip--skill"
-                              >
-                                <TablerIcon name={icon} />
-                                {label}
-                              </span>
-                            );
-                          })}
-                        </div>
+                        <Link
+                          href={`/test/${test.id}`}
+                          className="block no-underline text-inherit"
+                        >
+                          <div className="bs-mt-card-head">
+                            <h3 className="bs-mt-card-title">
+                              Загвар {index + 1}
+                            </h3>
+                            <span className="bs-mt-card-badge">{test.id}</span>
+                          </div>
+                          <div className="bs-mt-chip-row">
+                            <span className="bs-mt-chip bs-mt-chip--meta">
+                              <TablerIcon name="clock" />
+                              {test.time_limit_min} мин
+                            </span>
+                            <span className="bs-mt-chip bs-mt-chip--meta">
+                              <TablerIcon name="list-numbers" />
+                              {test.total_questions} асуулт
+                            </span>
+                            {skillLabels.map((label, i) => {
+                              const sk = skillKeys[i] ?? "reading";
+                              const icon = SKILL_ICONS[sk] ?? "book";
+                              return (
+                                <span
+                                  key={`${test.id}-${sk}`}
+                                  className="bs-mt-chip bs-mt-chip--skill"
+                                >
+                                  <TablerIcon name={icon} />
+                                  {label}
+                                </span>
+                              );
+                            })}
+                          </div>
+                        </Link>
+                        {latest ? (
+                          <Link
+                            href={`/test/${test.id}/attempt/${latest.attemptId}`}
+                            className="bs-mt-last-score block no-underline"
+                          >
+                            {formatLatestScore(latest)}
+                          </Link>
+                        ) : null}
                       </div>
-                      <span className="bs-mt-play-btn" aria-hidden>
-                        <svg viewBox="0 0 24 24" fill="currentColor">
+                      <Link
+                        href={`/test/${test.id}`}
+                        className="bs-mt-play-btn"
+                        aria-label={`${test.id} эхлүүлэх`}
+                      >
+                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden>
                           <path d="M9 7.5v9l7.5-4.5L9 7.5z" />
                         </svg>
-                      </span>
-                    </Link>
+                      </Link>
+                    </div>
                   );
                 })}
               </div>

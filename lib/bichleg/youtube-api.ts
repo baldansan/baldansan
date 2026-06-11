@@ -12,7 +12,9 @@ export function loadYouTubeIframeApi(): Promise<void> {
         resolve();
       };
 
-      const existing = document.querySelector('script[src*="youtube.com/iframe_api"]');
+      const existing = document.querySelector(
+        'script[src*="youtube.com/iframe_api"]'
+      );
       if (!existing) {
         const tag = document.createElement("script");
         tag.src = "https://www.youtube.com/iframe_api";
@@ -37,16 +39,45 @@ export type YtPlayer = {
   destroy: () => void;
 };
 
+export function destroyYouTubeMount(
+  player: YtPlayer | null,
+  mountNode: HTMLElement | null,
+  wrapper: HTMLElement | null
+): void {
+  if (player) {
+    try {
+      player.destroy();
+    } catch {
+      /* iframe may already be gone */
+    }
+  }
+
+  if (mountNode && wrapper && mountNode.parentNode === wrapper) {
+    try {
+      wrapper.removeChild(mountNode);
+    } catch {
+      /* race with YouTube teardown */
+    }
+  }
+}
+
 export async function createYouTubePlayer(
-  elementId: string,
+  mount: string | HTMLElement,
   youtubeId: string,
-  opts?: { muted?: boolean; onReady?: () => void; onStateChange?: (state: number) => void }
+  opts?: {
+    muted?: boolean;
+    onReady?: () => void;
+    onStateChange?: (state: number) => void;
+  }
 ): Promise<YtPlayer> {
   await loadYouTubeIframeApi();
 
+  const origin =
+    typeof window !== "undefined" ? window.location.origin : undefined;
+
   return new Promise((resolve, reject) => {
     try {
-      const player = new window.YT.Player(elementId, {
+      const player = new window.YT.Player(mount, {
         videoId: youtubeId,
         width: "100%",
         height: "100%",
@@ -58,6 +89,7 @@ export async function createYouTubePlayer(
           fs: 0,
           autoplay: 1,
           mute: opts?.muted ? 1 : 0,
+          ...(origin ? { origin } : {}),
         },
         events: {
           onReady: () => {
@@ -74,4 +106,22 @@ export async function createYouTubePlayer(
       reject(err);
     }
   });
+}
+
+/** Safe read — player may be destroyed between interval ticks. */
+export function safePlayerCurrentTime(player: YtPlayer): number | null {
+  try {
+    return player.getCurrentTime();
+  } catch {
+    return null;
+  }
+}
+
+export function safePlayerDuration(player: YtPlayer): number | null {
+  try {
+    const duration = player.getDuration();
+    return duration > 0 ? duration : null;
+  } catch {
+    return null;
+  }
 }

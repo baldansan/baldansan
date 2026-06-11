@@ -1,6 +1,6 @@
 declare namespace YT {
   const Player: new (
-    elementId: string,
+    elementId: string | HTMLElement,
     options: {
       videoId?: string;
       width?: string | number;

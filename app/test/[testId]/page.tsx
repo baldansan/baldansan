@@ -1,6 +1,8 @@
 import { notFound } from "next/navigation";
 import { MockTestExamClient } from "@/components/mock-test/mock-test-exam-client";
+import { collectTargetLessonIds } from "@/lib/mock-test/weak-lessons";
 import {
+  fetchAvailableLessonsByIds,
   fetchMockTestById,
   fetchMockTestQuestions,
 } from "@/lib/supabase/mock-tests-server";
@@ -23,5 +25,15 @@ export default async function TestExamPage({ params }: Props) {
   const questions = await fetchMockTestQuestions(test.id);
   if (!questions.length) notFound();
 
-  return <MockTestExamClient test={test} questions={questions} />;
+  const lessonTitles = await fetchAvailableLessonsByIds(
+    collectTargetLessonIds(questions)
+  );
+
+  return (
+    <MockTestExamClient
+      test={test}
+      questions={questions}
+      lessonTitles={lessonTitles}
+    />
+  );
 }
