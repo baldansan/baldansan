@@ -4,5 +4,5 @@ import { revalidatePath } from "next/cache";
 export function revalidateBichlegPages() {
   revalidatePath("/bichleg");
   revalidatePath("/bichleg/other");
-  revalidatePath("/bichleg/[seriesId]", "page");
+  revalidatePath("/bichleg/[slug]", "page");
 }

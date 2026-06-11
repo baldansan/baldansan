@@ -7,9 +7,11 @@ import { BottomNavChrome } from "@/components/mobile/bottom-nav-chrome";
 import {
   formatSeriesEpisodeBadge,
   type SubtitleWord,
+  type UserVideoProgress,
   type VideoRow,
   type VideoSubtitleRow,
 } from "@/lib/bichleg/types";
+import { upsertVideoWatchProgress } from "@/lib/supabase/video-progress-client";
 import { BichlegYouTubePlayer } from "@/components/bichleg/bichleg-youtube-player";
 import {
   formatPlaybackRateLabel,
@@ -33,7 +35,11 @@ type Props = {
   videos: VideoRow[];
   backHref?: string;
   feedTitle?: string;
+  progressByVideoId?: Record<string, UserVideoProgress>;
+  initialActiveIndex?: number;
 };
+
+const WATCH_SAVE_INTERVAL_MS = 10_000;
 
 type PickedWord = SubtitleWord & { sourceVideoId: string };
 
@@ -115,11 +121,18 @@ export function BichlegFeedClient({
   videos,
   backHref = "/bichleg",
   feedTitle,
+  progressByVideoId: initialProgress = {},
+  initialActiveIndex = 0,
 }: Props) {
   const feedRef = useRef<HTMLDivElement>(null);
   const playerRef = useRef<YtPlayer | null>(null);
   const subtitlesLoadedRef = useRef<Set<string>>(new Set());
-  const [activeIndex, setActiveIndex] = useState(0);
+  const peakWatchedRef = useRef<Record<string, number>>({});
+  const lastFlushedVideoIdRef = useRef<string | null>(null);
+  const progressRef = useRef<Record<string, UserVideoProgress>>(initialProgress);
+  const [activeIndex, setActiveIndex] = useState(initialActiveIndex);
+  const [progressByVideoId, setProgressByVideoId] =
+    useState<Record<string, UserVideoProgress>>(initialProgress);
   const [subtitlesMap, setSubtitlesMap] = useState<
     Record<string, VideoSubtitleRow[]>
   >({});
@@ -140,6 +153,42 @@ export function BichlegFeedClient({
   const [playerReady, setPlayerReady] = useState(false);
 
   const activeVideo = videos[activeIndex] ?? null;
+
+  const resolveDurationSec = useCallback(
+    (video: VideoRow | null, playerDuration = 0) => {
+      if (!video) return 0;
+      const fromMeta = Number(video.duration_sec ?? 0);
+      if (Number.isFinite(fromMeta) && fromMeta > 0) return fromMeta;
+      return playerDuration > 0 ? playerDuration : 0;
+    },
+    []
+  );
+
+  const flushWatchProgress = useCallback(
+    async (video: VideoRow, watchedSec: number, playerDuration = 0) => {
+      const peak = Math.max(
+        peakWatchedRef.current[video.id] ?? 0,
+        watchedSec,
+        progressRef.current[video.id]?.watched_sec ?? 0
+      );
+      peakWatchedRef.current[video.id] = peak;
+
+      const result = await upsertVideoWatchProgress({
+        videoId: video.id,
+        watchedSec: peak,
+        durationSec: resolveDurationSec(video, playerDuration),
+      });
+
+      if (result.ok && result.progress) {
+        progressRef.current[video.id] = result.progress;
+        setProgressByVideoId((prev) => ({
+          ...prev,
+          [video.id]: result.progress!,
+        }));
+      }
+    },
+    [resolveDurationSec]
+  );
   const activeSubtitles = activeVideo
     ? (subtitlesMap[activeVideo.id] ?? [])
     : [];
@@ -222,15 +271,78 @@ export function BichlegFeedClient({
       setCurrentTime(t);
       const d = safePlayerDuration(player);
       if (d != null) setDuration(d);
+      if (activeVideo) {
+        const prevPeak = peakWatchedRef.current[activeVideo.id] ?? 0;
+        if (t > prevPeak) peakWatchedRef.current[activeVideo.id] = t;
+      }
     }, 150);
 
     return () => clearInterval(tick);
   }, [playerReady, activeVideo?.id]);
 
   useEffect(() => {
-    setActiveIndex(0);
+    progressRef.current = initialProgress;
+    setProgressByVideoId(initialProgress);
+    peakWatchedRef.current = {};
+    for (const [videoId, row] of Object.entries(initialProgress)) {
+      peakWatchedRef.current[videoId] = row.watched_sec;
+    }
+  }, [initialProgress, videos]);
+
+  useEffect(() => {
+    setActiveIndex(initialActiveIndex);
     setCurrentTime(0);
-  }, [videos]);
+  }, [videos, initialActiveIndex]);
+
+  useEffect(() => {
+    const root = feedRef.current;
+    if (!root || initialActiveIndex <= 0) return;
+    const slide = root.querySelector<HTMLElement>(
+      `[data-slide-index="${initialActiveIndex}"]`
+    );
+    slide?.scrollIntoView({ block: "start" });
+  }, [videos, initialActiveIndex]);
+
+  useEffect(() => {
+    if (!activeVideo || !playerReady) return;
+
+    const interval = setInterval(() => {
+      const player = playerRef.current;
+      if (!player) return;
+      const t = safePlayerCurrentTime(player);
+      if (t == null) return;
+      void flushWatchProgress(
+        activeVideo,
+        t,
+        safePlayerDuration(player) ?? duration
+      );
+    }, WATCH_SAVE_INTERVAL_MS);
+
+    return () => clearInterval(interval);
+  }, [activeVideo?.id, playerReady, duration, flushWatchProgress]);
+
+  useEffect(() => {
+    const previousId = lastFlushedVideoIdRef.current;
+    if (previousId && previousId !== activeVideo?.id) {
+      const previousVideo = videos.find((v) => v.id === previousId);
+      if (previousVideo) {
+        const peak = peakWatchedRef.current[previousId] ?? 0;
+        void flushWatchProgress(previousVideo, peak, duration);
+      }
+    }
+    lastFlushedVideoIdRef.current = activeVideo?.id ?? null;
+  }, [activeVideo?.id, videos, duration, flushWatchProgress]);
+
+  useEffect(() => {
+    return () => {
+      const videoId = lastFlushedVideoIdRef.current;
+      if (!videoId) return;
+      const video = videos.find((v) => v.id === videoId);
+      if (!video) return;
+      const peak = peakWatchedRef.current[videoId] ?? 0;
+      void flushWatchProgress(video, peak, duration);
+    };
+  }, [videos, duration, flushWatchProgress]);
 
   useEffect(() => {
     const root = feedRef.current;
@@ -388,10 +500,10 @@ export function BichlegFeedClient({
         <div className="bs-bichleg-feed" ref={feedRef}>
           {videos.map((video, index) => {
             const isActive = index === activeIndex;
-            const seriesBadge = formatSeriesEpisodeBadge(
-              video.series?.title_mn ?? null,
-              video.episode_no
-            );
+            const completed = Boolean(progressByVideoId[video.id]?.completed);
+            const seriesBadge = formatSeriesEpisodeBadge(null, video.episode_no, {
+              completed,
+            });
             return (
               <section
                 key={video.id}

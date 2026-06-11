@@ -5,11 +5,12 @@ import { useState } from "react";
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
 import { MobilePageHeader } from "@/components/mobile/mobile-page-header";
 import { seriesCoverInitial } from "@/lib/bichleg/series-cover";
-import type { VideoSeriesCard } from "@/lib/bichleg/types";
+import type { SeriesWatchProgress, VideoSeriesCard } from "@/lib/bichleg/types";
 
 type Props = {
   seriesList: VideoSeriesCard[];
   orphanCount: number;
+  seriesProgress?: Record<string, SeriesWatchProgress>;
 };
 
 function SeriesCoverArt({
@@ -42,8 +43,40 @@ function SeriesCoverArt({
   );
 }
 
-function SeriesPickerCard({ series }: { series: VideoSeriesCard }) {
+function SeriesProgressBar({
+  watchedCount,
+  totalCount,
+}: {
+  watchedCount: number;
+  totalCount: number;
+}) {
+  if (totalCount <= 0 || watchedCount <= 0) return null;
+  const pct = Math.min(100, Math.round((watchedCount / totalCount) * 100));
+  return (
+    <div className="bs-bichleg-series-card-progress-wrap">
+      <p className="bs-bichleg-series-card-progress-label">
+        {watchedCount}/{totalCount} анги үзсэн
+      </p>
+      <div className="bs-bichleg-series-card-progress-track" aria-hidden>
+        <div
+          className="bs-bichleg-series-card-progress-fill"
+          style={{ width: `${pct}%` }}
+        />
+      </div>
+    </div>
+  );
+}
+
+function SeriesPickerCard({
+  series,
+  progress,
+}: {
+  series: VideoSeriesCard;
+  progress?: SeriesWatchProgress;
+}) {
   const titleMn = series.title_mn ?? series.title_zh ?? series.id;
+  const watchedCount = progress?.watchedCount ?? 0;
+  const totalCount = progress?.totalCount ?? series.videoCount;
   return (
     <Link
       href={`/bichleg/${encodeURIComponent(series.id)}`}
@@ -69,6 +102,10 @@ function SeriesPickerCard({ series }: { series: VideoSeriesCard }) {
             </span>
           ) : null}
         </div>
+        <SeriesProgressBar
+          watchedCount={watchedCount}
+          totalCount={totalCount}
+        />
       </div>
       <span className="bs-bichleg-series-card-chevron" aria-hidden>
         ›
@@ -77,7 +114,11 @@ function SeriesPickerCard({ series }: { series: VideoSeriesCard }) {
   );
 }
 
-export function BichlegSeriesPickerClient({ seriesList, orphanCount }: Props) {
+export function BichlegSeriesPickerClient({
+  seriesList,
+  orphanCount,
+  seriesProgress = {},
+}: Props) {
   return (
     <MobileAppShell activeTab="clips" mainClassName="max-w-[390px] mx-auto w-full">
       <MobilePageHeader title="Бичлэг" subtitle="Юу үзэх вэ?" />
@@ -94,7 +135,11 @@ export function BichlegSeriesPickerClient({ seriesList, orphanCount }: Props) {
       ) : (
         <div className="flex flex-col gap-3">
           {seriesList.map((series) => (
-            <SeriesPickerCard key={series.id} series={series} />
+            <SeriesPickerCard
+              key={series.id}
+              series={series}
+              progress={seriesProgress[series.id]}
+            />
           ))}
           {orphanCount > 0 ? (
             <Link href="/bichleg/other" className="bs-bichleg-series-card">

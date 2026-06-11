@@ -15,6 +15,8 @@ import {
   getDueWordQueue,
   getUserWordSrsStats,
 } from "@/lib/supabase/user-word-srs";
+import type { BichlegContinueTarget } from "@/lib/bichleg/types";
+import { fetchBichlegContinueTargetClient } from "@/lib/supabase/video-progress-client";
 
 type Props = {
   testCount: number;
@@ -36,6 +38,8 @@ export function ReviewMenuHubClient({ testCount }: Props) {
     dailyGoal: DAILY_SRS_GOAL,
   });
   const [loading, setLoading] = useState(true);
+  const [bichlegContinue, setBichlegContinue] =
+    useState<BichlegContinueTarget | null>(null);
 
   const loadStats = useCallback(async () => {
     if (!hydrated) return;
@@ -47,9 +51,11 @@ export function ReviewMenuHubClient({ testCount }: Props) {
     let dueCards = 0;
     let dailyDone = 0;
     let dailyGoal = DAILY_SRS_GOAL;
+    let userId: string | null = null;
 
     if (hasSupabaseConfig) {
-      const { userId } = await getAuthenticatedUserId();
+      const auth = await getAuthenticatedUserId();
+      userId = auth.userId;
       if (userId) {
         const { data } = await getUserWordSrsStats(userId);
         if (data) {
@@ -74,6 +80,14 @@ export function ReviewMenuHubClient({ testCount }: Props) {
     }
 
     setStats({ streak, dueCards, dailyDone, dailyGoal });
+
+    if (userId) {
+      const clip = await fetchBichlegContinueTargetClient();
+      setBichlegContinue(clip);
+    } else {
+      setBichlegContinue(null);
+    }
+
     setLoading(false);
   }, [activeLevel, hydrated]);
 
@@ -138,6 +152,21 @@ export function ReviewMenuHubClient({ testCount }: Props) {
             className="bs-review-feature-arrow"
           />
         </Link>
+
+        {bichlegContinue ? (
+          <Link href={bichlegContinue.href} className="bs-review-feature-card mb-3">
+            <div className="bs-review-feature-body">
+              <p className="bs-review-feature-title">Бичлэг үргэлжлүүлэх</p>
+              <p className="bs-review-feature-meta">
+                {bichlegContinue.title} · {bichlegContinue.subtitle}
+              </p>
+            </div>
+            <ReviewTablerIcon
+              name="chevron-right"
+              className="bs-review-feature-arrow"
+            />
+          </Link>
+        ) : null}
 
         <div className="bs-review-hub-cards">
           <Link href="/review/memorize" className="bs-review-hub-card">

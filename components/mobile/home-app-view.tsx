@@ -18,7 +18,9 @@ import { MobileCard } from "@/components/mobile/mobile-card";
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
 import { lessonPath } from "@/lib/content";
 import { resolveContinueLearning } from "@/lib/learner-progress";
+import type { BichlegContinueTarget } from "@/lib/bichleg/types";
 import type { MobileCourseCatalogEntry } from "@/lib/mobile-course-options";
+import { fetchBichlegContinueTargetClient } from "@/lib/supabase/video-progress-client";
 import { courseCardAccentClass, courseChipBadge } from "@/lib/course-display";
 import {
   getLessonProgressMapSmart,
@@ -64,6 +66,8 @@ export function HomeAppView({ catalog, defaultChipId }: Props) {
   const [statusByLesson, setStatusByLesson] = useState<
     Record<string, LessonStatus>
   >({});
+  const [bichlegContinue, setBichlegContinue] =
+    useState<BichlegContinueTarget | null>(null);
 
   const visibleCatalog = useMemo(() => {
     let entries = catalog;
@@ -125,26 +129,35 @@ export function HomeAppView({ catalog, defaultChipId }: Props) {
 
   useEffect(() => {
     async function load() {
+      let isLoggedIn = false;
       if (hasSupabaseConfig) {
         const { data } = await getCurrentUser();
-        setLoggedIn(Boolean(data));
+        isLoggedIn = Boolean(data);
+        setLoggedIn(isLoggedIn);
         setDisplayName(data?.email?.split("@")[0] ?? data?.email ?? "Зочин");
       }
       const retention = await getStreakUnified();
       setStreak(retention?.currentStreak ?? null);
-      if (lessonIds.length === 0) return;
-      const cont = await resolveContinueLearning(lessonIds);
-      if (cont) {
-        setContinueHref(cont.href);
-        const lesson = lessons.find((l) => l.id === cont.lessonId);
-        setContinueTitle(
-          lesson
-            ? `${lesson.chineseTitle} · ${lesson.title}`
-            : `Хичээл ${cont.lessonId}`
-        );
+      if (lessonIds.length > 0) {
+        const cont = await resolveContinueLearning(lessonIds);
+        if (cont) {
+          setContinueHref(cont.href);
+          const lesson = lessons.find((l) => l.id === cont.lessonId);
+          setContinueTitle(
+            lesson
+              ? `${lesson.chineseTitle} · ${lesson.title}`
+              : `Хичээл ${cont.lessonId}`
+          );
+        }
+        const { byLesson } = await getLessonProgressMapSmart(lessonIds);
+        setStatusByLesson(byLesson);
       }
-      const { byLesson } = await getLessonProgressMapSmart(lessonIds);
-      setStatusByLesson(byLesson);
+      if (isLoggedIn) {
+        const clip = await fetchBichlegContinueTargetClient();
+        setBichlegContinue(clip);
+      } else {
+        setBichlegContinue(null);
+      }
     }
     void load();
   }, [lessonIds, lessons]);
@@ -232,6 +245,28 @@ export function HomeAppView({ catalog, defaultChipId }: Props) {
               </p>
               <p className="truncate text-sm font-semibold text-[var(--app-text)]">
                 {continueTitle}
+              </p>
+            </div>
+            <span className="text-base text-[var(--app-muted)]">→</span>
+          </MobileCard>
+        </Link>
+      ) : null}
+
+      {bichlegContinue ? (
+        <Link href={bichlegContinue.href} className="mb-4 block min-h-[44px]">
+          <MobileCard className="flex items-center gap-3 !p-3.5 active:bg-slate-50">
+            <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-emerald-400 to-emerald-600 text-lg text-white shadow-sm">
+              ▶
+            </div>
+            <div className="min-w-0 flex-1">
+              <p className="text-[10px] font-bold uppercase tracking-wide text-emerald-600">
+                Бичлэг үргэлжлүүлэх
+              </p>
+              <p className="truncate text-sm font-semibold text-[var(--app-text)]">
+                {bichlegContinue.title}
+              </p>
+              <p className="truncate text-xs text-[var(--app-muted)]">
+                {bichlegContinue.subtitle}
               </p>
             </div>
             <span className="text-base text-[var(--app-muted)]">→</span>
