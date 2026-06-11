@@ -19,6 +19,8 @@ declare namespace YT {
     getCurrentTime: () => number;
     getDuration: () => number;
     setPlaybackRate: (rate: number) => void;
+    getPlaybackRate: () => number;
+    getAvailablePlaybackRates: () => number[];
     mute: () => void;
     unMute: () => void;
     destroy: () => void;

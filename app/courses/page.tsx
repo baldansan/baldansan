@@ -39,6 +39,7 @@ async function appendKoreanCourses(
         vocabulary: lessons.reduce((sum, l) => sum + l.vocabularyCount, 0),
         status: lessons.length > 0 ? "available" : "coming_soon",
         href: lessons.length > 0 ? `/courses/${courseId}` : null,
+        coverUrl: course?.coverUrl ?? null,
       });
     }
   }
@@ -75,6 +76,7 @@ async function appendHskCourse(
     vocabulary: lessons.reduce((sum, lesson) => sum + lesson.vocabularyCount, 0),
     status: lessons.length > 0 ? "available" : "coming_soon",
     href: course || lessons.length > 0 ? `/courses/${courseId}` : null,
+    coverUrl: course?.coverUrl ?? null,
   });
   return next;
 }

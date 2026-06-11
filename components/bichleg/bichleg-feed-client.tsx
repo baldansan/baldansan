@@ -1,20 +1,25 @@
 "use client";
 
+import Link from "next/link";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import PhoneFrame from "@/components/layout/PhoneFrame";
 import { BottomNavChrome } from "@/components/mobile/bottom-nav-chrome";
 import {
-  SUBTITLE_MODE_CYCLE,
-  SUBTITLE_MODE_LABELS,
   formatSeriesEpisodeBadge,
-  type SubtitleDisplayMode,
   type SubtitleWord,
+  type UserVideoProgress,
   type VideoRow,
-  type VideoSeriesInfo,
   type VideoSubtitleRow,
 } from "@/lib/bichleg/types";
+import { upsertVideoWatchProgress } from "@/lib/supabase/video-progress-client";
 import { BichlegYouTubePlayer } from "@/components/bichleg/bichleg-youtube-player";
 import {
+  formatPlaybackRateLabel,
+  nextBichlegSpeed,
+  type BichlegPreferredSpeed,
+} from "@/lib/bichleg/playback-rate";
+import {
+  applyPlaybackRate,
   safePlayerCurrentTime,
   safePlayerDuration,
   type YtPlayer,
@@ -28,15 +33,15 @@ import {
 
 type Props = {
   videos: VideoRow[];
-  seriesList?: VideoSeriesInfo[];
+  backHref?: string;
+  feedTitle?: string;
+  progressByVideoId?: Record<string, UserVideoProgress>;
+  initialActiveIndex?: number;
 };
 
-type PickedWord = SubtitleWord & { sourceVideoId: string };
+const WATCH_SAVE_INTERVAL_MS = 10_000;
 
-function nextSubtitleMode(mode: SubtitleDisplayMode): SubtitleDisplayMode {
-  const i = SUBTITLE_MODE_CYCLE.indexOf(mode);
-  return SUBTITLE_MODE_CYCLE[(i + 1) % SUBTITLE_MODE_CYCLE.length];
-}
+type PickedWord = SubtitleWord & { sourceVideoId: string };
 
 function findActiveSubtitle(
   subtitles: VideoSubtitleRow[],
@@ -112,25 +117,31 @@ function BichlegIcon({
   );
 }
 
-export function BichlegFeedClient({ videos, seriesList = [] }: Props) {
+export function BichlegFeedClient({
+  videos,
+  backHref = "/bichleg",
+  feedTitle,
+  progressByVideoId: initialProgress = {},
+  initialActiveIndex = 0,
+}: Props) {
   const feedRef = useRef<HTMLDivElement>(null);
   const playerRef = useRef<YtPlayer | null>(null);
   const subtitlesLoadedRef = useRef<Set<string>>(new Set());
-  const [seriesFilter, setSeriesFilter] = useState<string>("all");
-  const [activeIndex, setActiveIndex] = useState(0);
-
-  const displayVideos = useMemo(() => {
-    if (seriesFilter === "all") return videos;
-    return videos.filter((v) => v.series_id === seriesFilter);
-  }, [videos, seriesFilter]);
+  const peakWatchedRef = useRef<Record<string, number>>({});
+  const lastFlushedVideoIdRef = useRef<string | null>(null);
+  const progressRef = useRef<Record<string, UserVideoProgress>>(initialProgress);
+  const [activeIndex, setActiveIndex] = useState(initialActiveIndex);
+  const [progressByVideoId, setProgressByVideoId] =
+    useState<Record<string, UserVideoProgress>>(initialProgress);
   const [subtitlesMap, setSubtitlesMap] = useState<
     Record<string, VideoSubtitleRow[]>
   >({});
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
-  const [subtitleMode, setSubtitleMode] =
-    useState<SubtitleDisplayMode>("all");
-  const [speed, setSpeed] = useState<0.75 | 1>(1);
+  const [showPinyin, setShowPinyin] = useState(true);
+  const [showMn, setShowMn] = useState(true);
+  const [preferredSpeed, setPreferredSpeed] = useState<BichlegPreferredSpeed>(1);
+  const [displaySpeed, setDisplaySpeed] = useState(1);
   const [muted, setMuted] = useState(true);
   const [liked, setLiked] = useState<Record<string, boolean>>({});
   const [bookmarked, setBookmarked] = useState<Record<string, boolean>>({});
@@ -141,7 +152,43 @@ export function BichlegFeedClient({ videos, seriesList = [] }: Props) {
   const [toast, setToast] = useState<string | null>(null);
   const [playerReady, setPlayerReady] = useState(false);
 
-  const activeVideo = displayVideos[activeIndex] ?? null;
+  const activeVideo = videos[activeIndex] ?? null;
+
+  const resolveDurationSec = useCallback(
+    (video: VideoRow | null, playerDuration = 0) => {
+      if (!video) return 0;
+      const fromMeta = Number(video.duration_sec ?? 0);
+      if (Number.isFinite(fromMeta) && fromMeta > 0) return fromMeta;
+      return playerDuration > 0 ? playerDuration : 0;
+    },
+    []
+  );
+
+  const flushWatchProgress = useCallback(
+    async (video: VideoRow, watchedSec: number, playerDuration = 0) => {
+      const peak = Math.max(
+        peakWatchedRef.current[video.id] ?? 0,
+        watchedSec,
+        progressRef.current[video.id]?.watched_sec ?? 0
+      );
+      peakWatchedRef.current[video.id] = peak;
+
+      const result = await upsertVideoWatchProgress({
+        videoId: video.id,
+        watchedSec: peak,
+        durationSec: resolveDurationSec(video, playerDuration),
+      });
+
+      if (result.ok && result.progress) {
+        progressRef.current[video.id] = result.progress;
+        setProgressByVideoId((prev) => ({
+          ...prev,
+          [video.id]: result.progress!,
+        }));
+      }
+    },
+    [resolveDurationSec]
+  );
   const activeSubtitles = activeVideo
     ? (subtitlesMap[activeVideo.id] ?? [])
     : [];
@@ -173,16 +220,25 @@ export function BichlegFeedClient({ videos, seriesList = [] }: Props) {
     }
   }, []);
 
+  const syncPlaybackRate = useCallback(
+    (player: YtPlayer) => {
+      const actual = applyPlaybackRate(player, preferredSpeed);
+      setDisplaySpeed(actual);
+    },
+    [preferredSpeed]
+  );
+
   const handlePlayerReady = useCallback(() => {
     setPlayerReady(true);
     const player = playerRef.current;
     if (!player) return;
+    syncPlaybackRate(player);
     const d = safePlayerDuration(player);
     if (d != null) setDuration(d);
     else if (activeVideo?.duration_sec) {
       setDuration(Number(activeVideo.duration_sec));
     }
-  }, [activeVideo?.duration_sec]);
+  }, [activeVideo?.duration_sec, syncPlaybackRate]);
 
   useEffect(() => {
     setCurrentTime(0);
@@ -191,12 +247,8 @@ export function BichlegFeedClient({ videos, seriesList = [] }: Props) {
   useEffect(() => {
     const player = playerRef.current;
     if (!player || !playerReady) return;
-    try {
-      player.setPlaybackRate(speed);
-    } catch {
-      /* player destroyed */
-    }
-  }, [speed, playerReady]);
+    syncPlaybackRate(player);
+  }, [preferredSpeed, playerReady, syncPlaybackRate]);
 
   useEffect(() => {
     const player = playerRef.current;
@@ -219,19 +271,82 @@ export function BichlegFeedClient({ videos, seriesList = [] }: Props) {
       setCurrentTime(t);
       const d = safePlayerDuration(player);
       if (d != null) setDuration(d);
+      if (activeVideo) {
+        const prevPeak = peakWatchedRef.current[activeVideo.id] ?? 0;
+        if (t > prevPeak) peakWatchedRef.current[activeVideo.id] = t;
+      }
     }, 150);
 
     return () => clearInterval(tick);
   }, [playerReady, activeVideo?.id]);
 
   useEffect(() => {
-    setActiveIndex(0);
+    progressRef.current = initialProgress;
+    setProgressByVideoId(initialProgress);
+    peakWatchedRef.current = {};
+    for (const [videoId, row] of Object.entries(initialProgress)) {
+      peakWatchedRef.current[videoId] = row.watched_sec;
+    }
+  }, [initialProgress, videos]);
+
+  useEffect(() => {
+    setActiveIndex(initialActiveIndex);
     setCurrentTime(0);
-  }, [seriesFilter]);
+  }, [videos, initialActiveIndex]);
 
   useEffect(() => {
     const root = feedRef.current;
-    if (!root || displayVideos.length < 2) return;
+    if (!root || initialActiveIndex <= 0) return;
+    const slide = root.querySelector<HTMLElement>(
+      `[data-slide-index="${initialActiveIndex}"]`
+    );
+    slide?.scrollIntoView({ block: "start" });
+  }, [videos, initialActiveIndex]);
+
+  useEffect(() => {
+    if (!activeVideo || !playerReady) return;
+
+    const interval = setInterval(() => {
+      const player = playerRef.current;
+      if (!player) return;
+      const t = safePlayerCurrentTime(player);
+      if (t == null) return;
+      void flushWatchProgress(
+        activeVideo,
+        t,
+        safePlayerDuration(player) ?? duration
+      );
+    }, WATCH_SAVE_INTERVAL_MS);
+
+    return () => clearInterval(interval);
+  }, [activeVideo?.id, playerReady, duration, flushWatchProgress]);
+
+  useEffect(() => {
+    const previousId = lastFlushedVideoIdRef.current;
+    if (previousId && previousId !== activeVideo?.id) {
+      const previousVideo = videos.find((v) => v.id === previousId);
+      if (previousVideo) {
+        const peak = peakWatchedRef.current[previousId] ?? 0;
+        void flushWatchProgress(previousVideo, peak, duration);
+      }
+    }
+    lastFlushedVideoIdRef.current = activeVideo?.id ?? null;
+  }, [activeVideo?.id, videos, duration, flushWatchProgress]);
+
+  useEffect(() => {
+    return () => {
+      const videoId = lastFlushedVideoIdRef.current;
+      if (!videoId) return;
+      const video = videos.find((v) => v.id === videoId);
+      if (!video) return;
+      const peak = peakWatchedRef.current[videoId] ?? 0;
+      void flushWatchProgress(video, peak, duration);
+    };
+  }, [videos, duration, flushWatchProgress]);
+
+  useEffect(() => {
+    const root = feedRef.current;
+    if (!root || videos.length < 2) return;
 
     const slides = root.querySelectorAll<HTMLElement>("[data-slide-index]");
     const observer = new IntersectionObserver(
@@ -247,7 +362,7 @@ export function BichlegFeedClient({ videos, seriesList = [] }: Props) {
 
     slides.forEach((el) => observer.observe(el));
     return () => observer.disconnect();
-  }, [displayVideos.length, seriesFilter]);
+  }, [videos.length]);
 
   useEffect(() => {
     if (!toast) return;
@@ -348,44 +463,22 @@ export function BichlegFeedClient({ videos, seriesList = [] }: Props) {
     );
   }
 
-  if (!displayVideos.length) {
+  if (!videos.length) {
     return (
       <PhoneFrame>
+        <Link href={backHref} className="bs-bichleg-back" aria-label="Буцах">
+          ←
+        </Link>
         <div className="bs-bichleg-empty">
           <p className="text-base font-bold">
-            {videos.length ? "Энэ цувралд бичлэг байхгүй" : "Бичлэг олдсонгүй"}
+            {feedTitle ? `${feedTitle} — бичлэг байхгүй` : "Бичлэг олдсонгүй"}
           </p>
           <p className="mt-2 text-sm text-[var(--bs-muted)]">
-            {videos.length ? (
-              <>Өөр цуврал сонгоно уу.</>
-            ) : (
-              <>
-                <code>data/videos/*.json</code> нэмээд{" "}
-                <code>npm run load:videos</code> эсвэл админ импорт ашиглана уу.
-              </>
-            )}
+            Өөр цуврал сонгоод дахин оролдоно уу.
           </p>
-          {seriesList.length ? (
-            <div className="bs-bichleg-series-filter !relative !top-0 mt-4 justify-center">
-              <button
-                type="button"
-                className={`bs-bichleg-filter-chip ${seriesFilter === "all" ? "bs-bichleg-filter-chip--on" : ""}`}
-                onClick={() => setSeriesFilter("all")}
-              >
-                Бүгд
-              </button>
-              {seriesList.map((series) => (
-                <button
-                  key={series.id}
-                  type="button"
-                  className={`bs-bichleg-filter-chip ${seriesFilter === series.id ? "bs-bichleg-filter-chip--on" : ""}`}
-                  onClick={() => setSeriesFilter(series.id)}
-                >
-                  {series.title_mn ?? series.title_zh ?? series.id}
-                </button>
-              ))}
-            </div>
-          ) : null}
+          <Link href={backHref} className="bs-bichleg-back-link mt-4">
+            ← Цуврал сонгох
+          </Link>
         </div>
         <div className="absolute inset-x-0 bottom-0 z-50 px-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] pt-2">
           <BottomNavChrome active="clips" />
@@ -400,35 +493,17 @@ export function BichlegFeedClient({ videos, seriesList = [] }: Props) {
   return (
     <PhoneFrame>
       <div className="bs-bichleg-shell">
-        {seriesList.length ? (
-          <div className="bs-bichleg-series-filter">
-            <button
-              type="button"
-              className={`bs-bichleg-filter-chip ${seriesFilter === "all" ? "bs-bichleg-filter-chip--on" : ""}`}
-              onClick={() => setSeriesFilter("all")}
-            >
-              Бүгд
-            </button>
-            {seriesList.map((series) => (
-              <button
-                key={series.id}
-                type="button"
-                className={`bs-bichleg-filter-chip ${seriesFilter === series.id ? "bs-bichleg-filter-chip--on" : ""}`}
-                onClick={() => setSeriesFilter(series.id)}
-              >
-                {series.title_mn ?? series.title_zh ?? series.id}
-              </button>
-            ))}
-          </div>
-        ) : null}
+        <Link href={backHref} className="bs-bichleg-back" aria-label="Буцах">
+          ←
+        </Link>
 
         <div className="bs-bichleg-feed" ref={feedRef}>
-          {displayVideos.map((video, index) => {
+          {videos.map((video, index) => {
             const isActive = index === activeIndex;
-            const seriesBadge = formatSeriesEpisodeBadge(
-              video.series?.title_mn ?? null,
-              video.episode_no
-            );
+            const completed = Boolean(progressByVideoId[video.id]?.completed);
+            const seriesBadge = formatSeriesEpisodeBadge(null, video.episode_no, {
+              completed,
+            });
             return (
               <section
                 key={video.id}
@@ -459,22 +534,20 @@ export function BichlegFeedClient({ videos, seriesList = [] }: Props) {
                   ) : null}
                 </div>
 
-                {isActive && subtitleMode !== "off" && activeSubtitle ? (
+                {isActive && activeSubtitle ? (
                   <div className="bs-bichleg-subs">
-                    {(subtitleMode === "all" || subtitleMode === "study") &&
-                    activeSubtitle.pinyin ? (
-                      <p className="bs-bl-pinyin">{activeSubtitle.pinyin}</p>
-                    ) : null}
-                    {(subtitleMode === "all" ||
-                      subtitleMode === "study" ||
-                      subtitleMode === "zh") &&
-                    activeSubtitle.zh ? (
-                      renderZh(activeSubtitle)
-                    ) : null}
-                    {(subtitleMode === "all" || subtitleMode === "mn") &&
-                    activeSubtitle.mn ? (
-                      <p className="bs-bl-mn">{activeSubtitle.mn}</p>
-                    ) : null}
+                    <div className="bs-bichleg-subs-panel">
+                      {activeSubtitle.speaker ? (
+                        <p className="bs-bl-speaker">{activeSubtitle.speaker}</p>
+                      ) : null}
+                      {showPinyin && activeSubtitle.pinyin ? (
+                        <p className="bs-bl-pinyin">{activeSubtitle.pinyin}</p>
+                      ) : null}
+                      {activeSubtitle.zh ? renderZh(activeSubtitle) : null}
+                      {showMn && activeSubtitle.mn ? (
+                        <p className="bs-bl-mn">{activeSubtitle.mn}</p>
+                      ) : null}
+                    </div>
                   </div>
                 ) : null}
 
@@ -534,21 +607,33 @@ export function BichlegFeedClient({ videos, seriesList = [] }: Props) {
           })}
         </div>
 
-        <button
-          type="button"
-          className="bs-bichleg-mode-btn"
-          onClick={() => setSubtitleMode((m) => nextSubtitleMode(m))}
-        >
-          {SUBTITLE_MODE_LABELS[subtitleMode]}
-        </button>
-
         <div className="bs-bichleg-controls">
           <button
             type="button"
-            className="bs-bichleg-ctrl-btn"
-            onClick={() => setSpeed((s) => (s === 1 ? 0.75 : 1))}
+            className={`bs-bichleg-ctrl-btn ${showPinyin ? "bs-bichleg-ctrl-btn--on" : ""}`}
+            aria-pressed={showPinyin}
+            aria-label="Пиньинь харуулах"
+            onClick={() => setShowPinyin((on) => !on)}
           >
-            {speed === 1 ? "1×" : "0.75×"}
+            拼
+          </button>
+          <button
+            type="button"
+            className={`bs-bichleg-ctrl-btn ${showMn ? "bs-bichleg-ctrl-btn--on" : ""}`}
+            aria-pressed={showMn}
+            aria-label="Монгол орчуулга харуулах"
+            onClick={() => setShowMn((on) => !on)}
+          >
+            MN
+          </button>
+          <button
+            type="button"
+            className={`bs-bichleg-ctrl-btn ${Math.abs(displaySpeed - 1) > 0.001 ? "bs-bichleg-ctrl-btn--speed" : ""}`}
+            onClick={() =>
+              setPreferredSpeed((current) => nextBichlegSpeed(current))
+            }
+          >
+            {formatPlaybackRateLabel(displaySpeed)}
           </button>
           {muted ? (
             <button

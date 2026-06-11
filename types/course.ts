@@ -9,4 +9,5 @@ export type Course = {
   vocabulary: number;
   status: CourseStatus;
   href: string | null;
+  coverUrl?: string | null;
 };

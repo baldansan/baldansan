@@ -26,6 +26,7 @@ function mapSeries(raw: Record<string, unknown>): VideoSeriesInfo {
     title_zh: raw.title_zh ? String(raw.title_zh) : null,
     title_mn: raw.title_mn ? String(raw.title_mn) : null,
     description_mn: raw.description_mn ? String(raw.description_mn) : null,
+    cover_url: raw.cover_url ? String(raw.cover_url) : null,
     hsk_level: raw.hsk_level != null ? Number(raw.hsk_level) : null,
   };
 }

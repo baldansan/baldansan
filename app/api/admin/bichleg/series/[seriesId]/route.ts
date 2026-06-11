@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { revalidatePath } from "next/cache";
+import { revalidateBichlegPages } from "@/lib/bichleg/revalidate";
 import { fetchAdminSeriesEpisodes } from "@/lib/admin/bichleg-admin-server";
 import { isCurrentUserAdminServer } from "@/lib/supabase/admin-server";
 import { hasServerSupabaseConfig } from "@/lib/supabase/server";
@@ -111,7 +112,7 @@ export async function DELETE(request: Request, context: RouteContext) {
     );
   }
 
-  revalidatePath("/bichleg");
+  revalidateBichlegPages();
   revalidatePath("/admin/bichleg");
 
   return NextResponse.json({ ok: true });

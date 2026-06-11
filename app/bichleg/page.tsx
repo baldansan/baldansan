@@ -1,5 +1,9 @@
-import { BichlegFeedClient } from "@/components/bichleg/bichleg-feed-client";
-import { fetchVideoSeriesList, fetchVideos } from "@/lib/supabase/videos-server";
+import { BichlegSeriesPickerClient } from "@/components/bichleg/bichleg-series-picker-client";
+import { fetchSeriesWatchProgressMap } from "@/lib/supabase/video-progress-server";
+import {
+  countOrphanVideos,
+  fetchVideoSeriesCatalog,
+} from "@/lib/supabase/videos-server";
 
 export const dynamic = "force-dynamic";
 
@@ -8,9 +12,24 @@ export const metadata = {
 };
 
 export default async function BichlegPage() {
-  const [videos, seriesList] = await Promise.all([
-    fetchVideos(),
-    fetchVideoSeriesList(),
+  const [seriesList, orphanCount] = await Promise.all([
+    fetchVideoSeriesCatalog(),
+    countOrphanVideos(),
   ]);
-  return <BichlegFeedClient videos={videos} seriesList={seriesList} />;
+
+  const totalsBySeriesId = Object.fromEntries(
+    seriesList.map((s) => [s.id, s.videoCount])
+  );
+  const seriesProgress = await fetchSeriesWatchProgressMap(
+    seriesList.map((s) => s.id),
+    totalsBySeriesId
+  );
+
+  return (
+    <BichlegSeriesPickerClient
+      seriesList={seriesList}
+      orphanCount={orphanCount}
+      seriesProgress={seriesProgress}
+    />
+  );
 }

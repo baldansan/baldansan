@@ -29,6 +29,7 @@ function mapSubtitle(raw: Record<string, unknown>): VideoSubtitleRow {
     idx: Number(raw.idx),
     start_sec: Number(raw.start_sec),
     end_sec: Number(raw.end_sec),
+    speaker: raw.speaker ? String(raw.speaker) : null,
     zh: raw.zh ? String(raw.zh) : null,
     pinyin: raw.pinyin ? String(raw.pinyin) : null,
     mn: raw.mn ? String(raw.mn) : null,
