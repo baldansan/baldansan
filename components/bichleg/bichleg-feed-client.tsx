@@ -17,7 +17,9 @@ import {
   createYouTubePlayer,
   type YtPlayer,
 } from "@/lib/bichleg/youtube-api";
+import type { BichlegWordStatus } from "@/lib/supabase/saved-words";
 import {
+  fetchBichlegWordStatus,
   fetchVideoSubtitlesClient,
   saveWordFromVideo,
 } from "@/lib/supabase/videos-client";
@@ -132,6 +134,8 @@ export function BichlegFeedClient({ videos, seriesList = [] }: Props) {
   const [bookmarked, setBookmarked] = useState<Record<string, boolean>>({});
   const [showKeys, setShowKeys] = useState(false);
   const [pickedWord, setPickedWord] = useState<PickedWord | null>(null);
+  const [wordStatus, setWordStatus] = useState<BichlegWordStatus | null>(null);
+  const [statusLoading, setStatusLoading] = useState(false);
   const [toast, setToast] = useState<string | null>(null);
   const [playerReady, setPlayerReady] = useState(false);
 
@@ -263,16 +267,36 @@ export function BichlegFeedClient({ videos, seriesList = [] }: Props) {
   function handleWordPick(word: SubtitleWord) {
     if (!activeVideo) return;
     playerRef.current?.pauseVideo();
+    setWordStatus(null);
     setPickedWord({ ...word, sourceVideoId: activeVideo.id });
   }
 
+  useEffect(() => {
+    if (!pickedWord) {
+      setWordStatus(null);
+      return;
+    }
+    let cancelled = false;
+    setStatusLoading(true);
+    void fetchBichlegWordStatus(pickedWord.zh).then((status) => {
+      if (!cancelled) {
+        setWordStatus(status);
+        setStatusLoading(false);
+      }
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, [pickedWord?.zh]);
+
   function handleContinue() {
     setPickedWord(null);
+    setWordStatus(null);
     playerRef.current?.playVideo();
   }
 
   async function handleSaveWord() {
-    if (!pickedWord) return;
+    if (!pickedWord || wordStatus?.inSrs) return;
     const result = await saveWordFromVideo({
       zh: pickedWord.zh,
       pinyin: pickedWord.pinyin,
@@ -280,8 +304,19 @@ export function BichlegFeedClient({ videos, seriesList = [] }: Props) {
       sourceVideoId: pickedWord.sourceVideoId,
     });
     if (result.ok) {
-      setToast(result.duplicate ? "Аль хэдийн хадгалсан" : "Хадгаллаа ✓");
+      if (result.alreadyInSrs || (result.linkedToSrs && result.inCatalog)) {
+        setToast("Давталтад нэмэгдсэн ✓");
+      } else if (result.inCatalog === false) {
+        setToast("Толь бичигт байхгүй — зөвхөн миний үгсэд хадгаллаа");
+      } else if (result.duplicate) {
+        setToast("Аль хэдийн хадгалсан");
+      } else if (result.linkedToSrs) {
+        setToast("Давталтад нэмлээ ✓");
+      } else {
+        setToast("Хадгаллаа ✓");
+      }
       setPickedWord(null);
+      setWordStatus(null);
       playerRef.current?.playVideo();
     } else if (result.error) {
       setToast(result.error);
@@ -535,6 +570,13 @@ export function BichlegFeedClient({ videos, seriesList = [] }: Props) {
               {pickedWord.mn ? (
                 <p className="bs-bichleg-sheet-mn">{pickedWord.mn}</p>
               ) : null}
+              {wordStatus?.saved &&
+              !wordStatus.inCatalog &&
+              !wordStatus.inSrs ? (
+                <p className="bs-bichleg-sheet-note">
+                  Толь бичигт байхгүй — зөвхөн миний үгсэд хадгалагдлаа
+                </p>
+              ) : null}
               <div className="bs-bichleg-sheet-actions">
                 <button
                   type="button"
@@ -543,13 +585,31 @@ export function BichlegFeedClient({ videos, seriesList = [] }: Props) {
                 >
                   ▶ Үргэлжлүүлэх
                 </button>
-                <button
-                  type="button"
-                  className="bs-bichleg-sheet-btn bs-bichleg-sheet-btn--primary"
-                  onClick={() => void handleSaveWord()}
-                >
-                  ＋ Үгсэд нэмэх
-                </button>
+                {statusLoading ? (
+                  <button
+                    type="button"
+                    className="bs-bichleg-sheet-btn bs-bichleg-sheet-btn--primary"
+                    disabled
+                  >
+                    Шалгаж байна…
+                  </button>
+                ) : wordStatus?.inSrs ? (
+                  <button
+                    type="button"
+                    className="bs-bichleg-sheet-btn bs-bichleg-sheet-btn--done"
+                    disabled
+                  >
+                    Давталтад нэмэгдсэн ✓
+                  </button>
+                ) : (
+                  <button
+                    type="button"
+                    className="bs-bichleg-sheet-btn bs-bichleg-sheet-btn--primary"
+                    onClick={() => void handleSaveWord()}
+                  >
+                    ＋ Үгсэд нэмэх
+                  </button>
+                )}
               </div>
             </div>
           </div>

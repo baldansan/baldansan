@@ -146,6 +146,102 @@ export async function getDueWordQueue(
   return { items: dueItems, error: null };
 }
 
+/** New-word SRS row (reps=0, due now) — same defaults as first rating base. */
+export async function ensureInitialWordSrs(
+  userId: string,
+  wordId: number
+): Promise<{ created: boolean; error: string | null }> {
+  if (!supabase || !hasSupabaseConfig) {
+    return { created: false, error: "Supabase тохиргоо байхгүй." };
+  }
+
+  const { data: existing, error: readError } = await supabase
+    .from("user_word_srs")
+    .select("id")
+    .eq("user_id", userId)
+    .eq("word_id", wordId)
+    .maybeSingle();
+
+  if (readError) {
+    return { created: false, error: readError.message };
+  }
+  if (existing) {
+    return { created: false, error: null };
+  }
+
+  const { error: insertError } = await supabase.from("user_word_srs").insert({
+    user_id: userId,
+    word_id: wordId,
+    reps: 0,
+    ease: 2.5,
+    interval_days: 0,
+    due_at: new Date().toISOString(),
+    last_rating: null,
+  });
+
+  if (insertError) {
+    if (insertError.code === "23505") {
+      return { created: false, error: null };
+    }
+    return { created: false, error: insertError.message };
+  }
+
+  return { created: true, error: null };
+}
+
+export type SrsWordListItem = {
+  srs: WordSrsRow;
+  word: HskWordRow;
+  fromBichleg: boolean;
+};
+
+export async function getUserSrsWordList(
+  userId: string,
+  filter: "all" | "bichleg" = "all"
+): Promise<{ items: SrsWordListItem[]; error: string | null }> {
+  if (!supabase || !hasSupabaseConfig) {
+    return { items: [], error: "Supabase тохиргоо байхгүй." };
+  }
+
+  const { fetchBichlegHskWordIds } = await import("@/lib/supabase/saved-words");
+  const bichlegIds = await fetchBichlegHskWordIds(userId);
+
+  const { data: srsRows, error: srsError } = await supabase
+    .from("user_word_srs")
+    .select("*")
+    .eq("user_id", userId)
+    .order("due_at", { ascending: true })
+    .limit(5000);
+
+  if (srsError) {
+    return { items: [], error: srsError.message };
+  }
+
+  const rows = (srsRows ?? []) as WordSrsRow[];
+  if (rows.length === 0) {
+    return { items: [], error: null };
+  }
+
+  let wordMap: Map<number, HskWordRow>;
+  try {
+    wordMap = await fetchWordsByIds(rows.map((r) => r.word_id));
+  } catch (err) {
+    const message = err instanceof Error ? err.message : "Үг татахад алдаа";
+    return { items: [], error: message };
+  }
+
+  const items: SrsWordListItem[] = [];
+  for (const srs of rows) {
+    const word = wordMap.get(srs.word_id);
+    if (!word?.id) continue;
+    const fromBichleg = bichlegIds.has(srs.word_id);
+    if (filter === "bichleg" && !fromBichleg) continue;
+    items.push({ srs, word, fromBichleg });
+  }
+
+  return { items, error: null };
+}
+
 export async function rateWordSrs(
   userId: string,
   wordId: number,
