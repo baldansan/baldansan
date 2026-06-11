@@ -1,3 +1,4 @@
+import { guardGamesDeckRoute } from "@/lib/api/game-route-guard";
 import {
   jsonDeckResponse,
   loadQuizWordPool,
@@ -11,6 +12,9 @@ import {
 export const dynamic = "force-dynamic";
 
 export async function GET(request: Request) {
+  const rateLimited = guardGamesDeckRoute(request);
+  if (rateLimited) return rateLimited;
+
   try {
     const { searchParams } = new URL(request.url);
     const levelParam = searchParams.get("level");
@@ -34,6 +38,7 @@ export async function GET(request: Request) {
     });
   } catch (err) {
     const message = err instanceof Error ? err.message : "Ачаалахад алдаа";
-    return Response.json({ error: message }, { status: 500 });
+    const status = message.includes("wordIds") ? 400 : 500;
+    return Response.json({ error: message }, { status });
   }
 }

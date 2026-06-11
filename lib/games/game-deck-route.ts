@@ -3,6 +3,8 @@ import {
   parseWordIdsFromSearchParams,
   resolveCatalogLevel,
 } from "@/lib/games/game-api-level";
+
+const MAX_CUSTOM_WORD_IDS = 200;
 import type { HskQuizQuestion } from "@/lib/games/hsk-quiz-builders";
 import {
   getQuizWordPool,
@@ -18,6 +20,10 @@ export async function loadQuizWordPool(
   const { searchParams } = new URL(request.url);
   const level = resolveCatalogLevel(searchParams.get("level"));
   const wordIds = parseWordIdsFromSearchParams(searchParams);
+
+  if (wordIds.length > MAX_CUSTOM_WORD_IDS) {
+    throw new Error(`wordIds хэт их (хамгийн ихдээ ${MAX_CUSTOM_WORD_IDS}).`);
+  }
 
   if (wordIds.length > 0) {
     const words = await getWordsByIds(wordIds);

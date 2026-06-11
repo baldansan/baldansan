@@ -1,3 +1,4 @@
+import { guardGamesDeckRoute } from "@/lib/api/game-route-guard";
 import {
   jsonDeckResponse,
   loadQuizWordPool,
@@ -7,6 +8,9 @@ import { buildSrsMarathonDeck } from "@/lib/games/hsk-quiz-builders";
 export const dynamic = "force-dynamic";
 
 export async function GET(request: Request) {
+  const rateLimited = guardGamesDeckRoute(request);
+  if (rateLimited) return rateLimited;
+
   try {
     const { words, level } = await loadQuizWordPool(request, 120);
     const deck = buildSrsMarathonDeck(words, 15);
