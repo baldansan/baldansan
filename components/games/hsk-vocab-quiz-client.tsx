@@ -167,7 +167,7 @@ export function HskVocabQuizClient({ embedded = false }: Props) {
     embedded ? (
       <div className="pb-4">{content}</div>
     ) : (
-      <GameShell mainClassName="max-w-[430px] mx-auto w-full px-4 pb-8">
+      <GameShell mainClassName="mx-auto w-full max-w-[430px] lg:max-w-none px-4 pb-8">
         {content}
       </GameShell>
     );

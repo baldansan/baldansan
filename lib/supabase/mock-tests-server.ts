@@ -147,6 +147,29 @@ export type MockTestLatestScore = {
   maxScore: number;
 };
 
+export async function fetchCompletedLessonIds(
+  lessonIds: string[]
+): Promise<Set<string>> {
+  if (!hasServerSupabaseConfig || lessonIds.length === 0) return new Set();
+  const client = await createServerSupabaseClient();
+  if (!client) return new Set();
+
+  const {
+    data: { user },
+  } = await client.auth.getUser();
+  if (!user) return new Set();
+
+  const { data, error } = await client
+    .from("user_lesson_progress")
+    .select("lesson_id")
+    .eq("user_id", user.id)
+    .eq("status", "completed")
+    .in("lesson_id", lessonIds);
+
+  if (error || !data) return new Set();
+  return new Set(data.map((row) => String(row.lesson_id)));
+}
+
 export async function fetchAvailableLessonsByIds(
   lessonIds: string[]
 ): Promise<LessonTitleRow[]> {
@@ -216,6 +239,7 @@ export type MockTestAttemptReview = {
   questions: MockTestQuestionRow[];
   result: MockTestScoreResult;
   weakLessons: WeakLessonRecommendation[];
+  completedLessonIds: string[];
   finishedAt: string | null;
 };
 
@@ -255,12 +279,18 @@ export async function fetchMockTestAttemptReview(
   const lessons = await fetchAvailableLessonsByIds(lessonIds);
   const result = scoreResultFromSavedResponses(questions, responses);
   const weakLessons = weakLessonsFromResponses(responses, questions, lessons);
+  const completedLessonIds = [
+    ...(
+      await fetchCompletedLessonIds(weakLessons.map((lesson) => lesson.lessonId))
+    ).values(),
+  ];
 
   return {
     test,
     questions,
     result,
     weakLessons,
+    completedLessonIds,
     finishedAt: attempt.finished_at ? String(attempt.finished_at) : null,
   };
 }

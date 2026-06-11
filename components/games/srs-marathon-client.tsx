@@ -52,7 +52,7 @@ export function SrsMarathonClient() {
 
   if (!hydrated || loading) {
     return (
-      <GameShell mainClassName="max-w-[430px] mx-auto w-full px-4 py-12 text-center text-sm text-[var(--app-muted)]">
+      <GameShell mainClassName="mx-auto w-full max-w-[430px] lg:max-w-none px-4 py-12 text-center text-sm text-[var(--app-muted)]">
         SRS үгс ачааллаж байна…
       </GameShell>
     );
@@ -60,7 +60,7 @@ export function SrsMarathonClient() {
 
   if (!wordIds) {
     return (
-      <GameShell mainClassName="max-w-[430px] mx-auto w-full px-4 py-12 text-center text-sm text-red-600">
+      <GameShell mainClassName="mx-auto w-full max-w-[430px] lg:max-w-none px-4 py-12 text-center text-sm text-red-600">
         Давталтын үг олдсонгүй. Эхлээд Давтах хэсэгт орно уу.
       </GameShell>
     );

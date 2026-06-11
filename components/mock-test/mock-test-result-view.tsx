@@ -13,6 +13,7 @@ type Props = {
   test: MockTestRow;
   result: MockTestScoreResult;
   weakLessons: WeakLessonRecommendation[];
+  completedLessonIds?: Iterable<string>;
   saveNote?: string | null;
   backHref?: string;
   backLabel?: string;
@@ -22,10 +23,12 @@ export function MockTestResultView({
   test,
   result,
   weakLessons,
+  completedLessonIds,
   saveNote,
   backHref = "/review",
   backLabel = "Буцах",
 }: Props) {
+  const completedSet = new Set(completedLessonIds ?? []);
   const pct =
     result.maxScore > 0
       ? Math.round((result.rawScore / result.maxScore) * 100)
@@ -70,7 +73,15 @@ export function MockTestResultView({
                 href={lessonPath(lesson.lessonId)}
                 className="bs-mt-weak-card"
               >
-                <p className="bs-mt-weak-title">{lesson.title}</p>
+                <p className="bs-mt-weak-title">
+                  {lesson.title}
+                  {completedSet.has(lesson.lessonId) ? (
+                    <span className="bs-mt-weak-done" aria-label="Дууссан">
+                      {" "}
+                      ✓
+                    </span>
+                  ) : null}
+                </p>
                 <span className="bs-mt-weak-badge">
                   {lesson.wrongCount} асуулт буруу
                 </span>

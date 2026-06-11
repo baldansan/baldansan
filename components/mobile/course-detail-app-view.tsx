@@ -32,7 +32,7 @@ export function CourseDetailAppView({
   );
 
   return (
-    <MobileAppShell activeTab="study" mainClassName="max-w-[390px] mx-auto w-full">
+    <MobileAppShell activeTab="study" mainClassName="mx-auto w-full max-w-[390px] lg:max-w-none">
       <Link
         href={backHref}
         className="mb-3 inline-flex items-center text-sm font-medium text-[var(--app-muted)] transition-colors hover:text-emerald-600"

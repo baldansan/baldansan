@@ -25,6 +25,16 @@ export function isActiveHskLevel(value: unknown): value is ActiveHskLevel {
   return typeof value === "number" && value >= 1 && value <= 6;
 }
 
+export function parseActiveHskLevel(
+  raw: string | null | undefined
+): ActiveHskLevel | null {
+  if (!raw?.trim()) return null;
+  if (raw.trim() === "7-9") return "7-9";
+  const n = Number(raw);
+  if (Number.isInteger(n) && n >= 1 && n <= 6) return n as ActiveHskLevel;
+  return null;
+}
+
 export function readStoredActiveHskLevel(): ActiveHskLevel | null {
   if (typeof window === "undefined") return null;
   try {

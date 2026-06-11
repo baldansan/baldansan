@@ -1,44 +1,23 @@
 import { NextResponse } from "next/server";
 import { revalidatePath } from "next/cache";
 import { revalidateBichlegPages } from "@/lib/bichleg/revalidate";
-import { isCurrentUserAdminServer } from "@/lib/supabase/admin-server";
-import { hasServerSupabaseConfig } from "@/lib/supabase/server";
-import {
-  createServiceRoleSupabaseClient,
-  hasServiceRoleSupabaseConfig,
-} from "@/lib/supabase/service-role-server";
+import { getAdminBichlegSupabaseClient } from "@/lib/supabase/admin-bichleg-client";
 
 type RouteContext = { params: Promise<{ videoId: string }> };
 
-async function requireAdminService() {
-  if (!hasServerSupabaseConfig || !hasServiceRoleSupabaseConfig) {
+async function requireAdminBichlegClient() {
+  const result = await getAdminBichlegSupabaseClient();
+  if (!result.ok) {
     return NextResponse.json(
-      { ok: false, error: "Supabase тохируулагдаагүй." },
-      { status: 503 }
+      { ok: false, error: result.error },
+      { status: result.status }
     );
   }
-
-  const isAdmin = await isCurrentUserAdminServer();
-  if (!isAdmin) {
-    return NextResponse.json(
-      { ok: false, error: "Admin эрх шаардлагатай." },
-      { status: 403 }
-    );
-  }
-
-  const client = createServiceRoleSupabaseClient();
-  if (!client) {
-    return NextResponse.json(
-      { ok: false, error: "Service role клиент үүсгэж чадсангүй." },
-      { status: 503 }
-    );
-  }
-
-  return client;
+  return result.client;
 }
 
 export async function PATCH(request: Request, context: RouteContext) {
-  const clientOrResponse = await requireAdminService();
+  const clientOrResponse = await requireAdminBichlegClient();
   if (clientOrResponse instanceof NextResponse) return clientOrResponse;
 
   const { videoId } = await context.params;
@@ -87,7 +66,7 @@ export async function PATCH(request: Request, context: RouteContext) {
 }
 
 export async function DELETE(_request: Request, context: RouteContext) {
-  const clientOrResponse = await requireAdminService();
+  const clientOrResponse = await requireAdminBichlegClient();
   if (clientOrResponse instanceof NextResponse) return clientOrResponse;
 
   const { videoId } = await context.params;

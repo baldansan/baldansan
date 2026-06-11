@@ -1,55 +1,18 @@
 import { NextResponse } from "next/server";
 import { importBichlegVideosOnServer } from "@/lib/admin/import-bichleg-server";
 import type { BichlegImportApiBody } from "@/lib/import/bichleg-video-types";
-import { isCurrentUserAdminServer } from "@/lib/supabase/admin-server";
-import { hasServerSupabaseConfig } from "@/lib/supabase/server";
-import {
-  createServiceRoleSupabaseClient,
-  hasServiceRoleSupabaseConfig,
-} from "@/lib/supabase/service-role-server";
+import { getAdminBichlegSupabaseClient } from "@/lib/supabase/admin-bichleg-client";
 
-async function requireAdminImport() {
-  if (!hasServerSupabaseConfig) {
-    return NextResponse.json(
-      { ok: false, errors: ["Supabase тохируулагдаагүй."] },
-      { status: 503 }
-    );
-  }
-
-  if (!hasServiceRoleSupabaseConfig) {
-    return NextResponse.json(
-      {
-        ok: false,
-        errors: [
-          "SUPABASE_SERVICE_ROLE_KEY тохируулагдаагүй — бичлэг оруулах боломжгүй.",
-        ],
-      },
-      { status: 503 }
-    );
-  }
-
-  const isAdmin = await isCurrentUserAdminServer();
-  if (!isAdmin) {
-    return NextResponse.json(
-      { ok: false, errors: ["Admin эрх шаардлагатай."] },
-      { status: 403 }
-    );
-  }
-
-  const serviceClient = createServiceRoleSupabaseClient();
-  if (!serviceClient) {
-    return NextResponse.json(
-      { ok: false, errors: ["Service role клиент үүсгэж чадсангүй."] },
-      { status: 503 }
-    );
-  }
-
-  return serviceClient;
-}
+export const maxDuration = 60;
 
 export async function POST(request: Request) {
-  const clientOrResponse = await requireAdminImport();
-  if (clientOrResponse instanceof NextResponse) return clientOrResponse;
+  const clientResult = await getAdminBichlegSupabaseClient();
+  if (!clientResult.ok) {
+    return NextResponse.json(
+      { ok: false, errors: [clientResult.error] },
+      { status: clientResult.status }
+    );
+  }
 
   let body: BichlegImportApiBody;
   try {
@@ -73,7 +36,7 @@ export async function POST(request: Request) {
 
   try {
     const result = await importBichlegVideosOnServer(
-      clientOrResponse,
+      clientResult.client,
       packages,
       body.fileNames ?? [],
       series

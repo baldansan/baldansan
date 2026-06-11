@@ -115,7 +115,7 @@ export function TodayReviewClient() {
 
   if (loadState === "loading") {
     return (
-      <MobileAppShell activeTab="study" mainClassName="max-w-[430px] mx-auto w-full">
+      <MobileAppShell activeTab="study" mainClassName="mx-auto w-full max-w-[430px] lg:max-w-2xl">
         <p className="py-16 text-center text-sm text-[var(--app-muted)]">
           Ачааллаж байна…
         </p>
@@ -125,7 +125,7 @@ export function TodayReviewClient() {
 
   if (loadState === "error") {
     return (
-      <MobileAppShell activeTab="study" mainClassName="max-w-[430px] mx-auto w-full">
+      <MobileAppShell activeTab="study" mainClassName="mx-auto w-full max-w-[430px] lg:max-w-2xl">
         <div className="py-12 text-center">
           <p className="text-sm text-red-600">{error}</p>
           {!userId ? (
@@ -153,7 +153,7 @@ export function TodayReviewClient() {
 
   if (done) {
     return (
-      <MobileAppShell activeTab="study" mainClassName="max-w-[430px] mx-auto w-full">
+      <MobileAppShell activeTab="study" mainClassName="mx-auto w-full max-w-[430px] lg:max-w-2xl">
         <div className="py-16 text-center">
           <div
             className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full text-3xl"
@@ -186,7 +186,7 @@ export function TodayReviewClient() {
   const progressLabel = `${index + 1} / ${queue.length}`;
 
   return (
-    <MobileAppShell activeTab="study" mainClassName="max-w-[430px] mx-auto w-full">
+    <MobileAppShell activeTab="study" mainClassName="mx-auto w-full max-w-[430px] lg:max-w-2xl">
       <header className="mb-4">
         <p
           className="text-xs font-semibold uppercase tracking-wide"

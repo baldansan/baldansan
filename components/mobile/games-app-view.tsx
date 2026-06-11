@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
+import { SHELL_MAIN_NARROW } from "@/lib/app-shell-classes";
 import { MobileCard } from "@/components/mobile/mobile-card";
 import { MobilePageHeader } from "@/components/mobile/mobile-page-header";
 import {
@@ -252,7 +253,7 @@ export function GamesAppView({ lessonIds, lessonTitles }: Props) {
   const marathonHref = `/games/match?lessonId=${currentLessonId}`;
 
   return (
-    <MobileAppShell activeTab="games" mainClassName="max-w-[390px] mx-auto w-full">
+    <MobileAppShell activeTab="games" mainClassName={SHELL_MAIN_NARROW}>
       <MobilePageHeader title="Тоглоом" />
 
       <div className="mb-4 grid grid-cols-3 gap-2">
@@ -300,7 +301,7 @@ export function GamesAppView({ lessonIds, lessonTitles }: Props) {
           <h2 className="mb-3 text-sm font-bold text-[var(--app-text)]">
             HSK тоглоомууд
           </h2>
-          <div className="mb-5 grid grid-cols-2 gap-3">
+          <div className="mb-5 grid grid-cols-2 gap-3 lg:grid-cols-3">
             {CHINESE_HSK_GAMES.map((game) => (
               <Link
                 key={game.id}

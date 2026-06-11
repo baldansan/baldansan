@@ -16,3 +16,12 @@ export function parseWordIdsParam(raw: string | null): number[] {
     .map((s) => Number(s.trim()))
     .filter((n) => Number.isInteger(n) && n > 0);
 }
+
+/** `wordIds` эсвэл `words` query param-аас id жагсаалт. */
+export function parseWordIdsFromSearchParams(
+  searchParams: URLSearchParams
+): number[] {
+  return parseWordIdsParam(
+    searchParams.get("wordIds") ?? searchParams.get("words")
+  );
+}

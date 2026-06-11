@@ -33,6 +33,7 @@ export async function fetchHskWordsByLevel(
     .from("hsk_words")
     .select(WORD_SELECT)
     .eq("hsk_level", catalogLevel)
+    .eq("is_function_word", false)
     .order("frequency", { ascending: true, nullsFirst: false });
 
   if (options?.limit != null && options.limit > 0) {
@@ -53,7 +54,7 @@ export async function fetchHskWordsByLevel(
 
 const CATALOG_LEVELS = ["1", "2", "3", "4", "5", "6"] as const;
 
-const TOTALS_CACHE_KEY = "buunduu-hsk-level-totals-v1";
+const TOTALS_CACHE_KEY = "buunduu-hsk-level-totals-v2";
 const TOTALS_TTL_MS = 10 * 60 * 1000;
 
 function readTotalsCache(): Record<number, number> | null {
@@ -104,7 +105,8 @@ export async function fetchHskLevelTotals(): Promise<{
       const { count, error } = await client
         .from("hsk_words")
         .select("*", { count: "exact", head: true })
-        .eq("hsk_level", level);
+        .eq("hsk_level", level)
+        .eq("is_function_word", false);
 
       return {
         level: Number(level),

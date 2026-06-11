@@ -285,7 +285,7 @@ export function RadicalChallengeClient({ lessonId, entries: entriesProp }: Props
 
   if (entries.length === 0) {
     return (
-      <GameShell mainClassName="max-w-[430px] mx-auto w-full bg-[#f1f6f3] px-5 pt-6">
+      <GameShell mainClassName="mx-auto w-full max-w-[430px] lg:max-w-none bg-[#f1f6f3] px-5 pt-6">
         <p className="py-16 text-center text-sm text-[var(--app-muted)]">
           {formatActiveHskLevel(hskLevel)} түвшинд сорилтын ханз олдсонгүй.
         </p>
@@ -302,7 +302,7 @@ export function RadicalChallengeClient({ lessonId, entries: entriesProp }: Props
   if (finished) {
     const won = finished === "win";
     return (
-      <GameShell mainClassName="max-w-[430px] mx-auto w-full bg-[#f1f6f3] px-5 pt-6 pb-8">
+      <GameShell mainClassName="mx-auto w-full max-w-[430px] lg:max-w-none bg-[#f1f6f3] px-5 pt-6 pb-8">
         <ChallengeHeader
           lives={lives}
           title={labels.radicalTitle}
@@ -343,7 +343,7 @@ export function RadicalChallengeClient({ lessonId, entries: entriesProp }: Props
   const hanziRevealed = roundResult === "ok" || roundResult === "timeout";
 
   return (
-    <GameShell mainClassName="max-w-[430px] mx-auto w-full bg-[#f1f6f3] px-[18px] pt-5 pb-8">
+    <GameShell mainClassName="mx-auto w-full max-w-[430px] lg:max-w-none bg-[#f1f6f3] px-[18px] pt-5 pb-8">
       <ChallengeHeader
         lives={lives}
         title={labels.radicalTitle}

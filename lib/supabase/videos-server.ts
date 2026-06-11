@@ -1,5 +1,6 @@
 import { normalizeSeriesCoverUrl } from "@/lib/bichleg/series-cover";
 import type {
+  VideoEpisodeItem,
   VideoRow,
   VideoSeriesCard,
   VideoSeriesInfo,
@@ -30,6 +31,15 @@ function readVideoCount(
 ): number {
   if (Array.isArray(videos)) return videos[0]?.count ?? 0;
   return videos?.count ?? 0;
+}
+
+function mapVideoEpisode(raw: Record<string, unknown>): VideoEpisodeItem {
+  return {
+    ...mapVideo(raw),
+    subtitleCount: readVideoCount(
+      raw.video_subtitles as { count: number }[] | { count: number } | null
+    ),
+  };
 }
 
 function mapVideo(raw: Record<string, unknown>): VideoRow {
@@ -89,6 +99,8 @@ const VIDEO_ROW_SELECT =
   "*, video_series ( id, title_zh, title_mn, description_mn, hsk_level, cover_url )";
 const VIDEO_ROW_SELECT_CORE =
   "*, video_series ( id, title_zh, title_mn, description_mn, hsk_level )";
+const VIDEO_EPISODE_SELECT = `${VIDEO_ROW_SELECT}, video_subtitles(count)`;
+const VIDEO_EPISODE_SELECT_CORE = `${VIDEO_ROW_SELECT_CORE}, video_subtitles(count)`;
 
 function isMissingColumnSelectError(message: string): boolean {
   const lower = message.toLowerCase();
@@ -180,6 +192,79 @@ export async function countOrphanVideos(): Promise<number> {
 
   if (error) return 0;
   return count ?? 0;
+}
+
+export async function fetchSeriesEpisodes(
+  seriesId: string
+): Promise<VideoEpisodeItem[]> {
+  if (!hasServerSupabaseConfig) return [];
+  const client = await createServerSupabaseClient();
+  if (!client) return [];
+
+  const primary = await client
+    .from("videos")
+    .select(VIDEO_EPISODE_SELECT)
+    .eq("series_id", seriesId)
+    .order("episode_no", { ascending: true, nullsFirst: true })
+    .order("created_at", { ascending: true });
+
+  let rows = primary.data as Record<string, unknown>[] | null;
+  let error = primary.error;
+
+  if (error?.message && isMissingColumnSelectError(error.message)) {
+    const fallback = await client
+      .from("videos")
+      .select(VIDEO_EPISODE_SELECT_CORE)
+      .eq("series_id", seriesId)
+      .order("episode_no", { ascending: true, nullsFirst: true })
+      .order("created_at", { ascending: true });
+    rows = fallback.data as Record<string, unknown>[] | null;
+    error = fallback.error;
+  }
+
+  if (error) {
+    console.error("[bichleg] fetchSeriesEpisodes failed", {
+      seriesId,
+      message: error.message,
+    });
+    return [];
+  }
+  if (!rows) return [];
+
+  return rows.map((row) => mapVideoEpisode(row));
+}
+
+export async function fetchOrphanEpisodes(): Promise<VideoEpisodeItem[]> {
+  if (!hasServerSupabaseConfig) return [];
+  const client = await createServerSupabaseClient();
+  if (!client) return [];
+
+  const primary = await client
+    .from("videos")
+    .select(VIDEO_EPISODE_SELECT)
+    .is("series_id", null)
+    .order("created_at", { ascending: true });
+
+  let rows = primary.data as Record<string, unknown>[] | null;
+  let error = primary.error;
+
+  if (error?.message && isMissingColumnSelectError(error.message)) {
+    const fallback = await client
+      .from("videos")
+      .select(VIDEO_EPISODE_SELECT_CORE)
+      .is("series_id", null)
+      .order("created_at", { ascending: true });
+    rows = fallback.data as Record<string, unknown>[] | null;
+    error = fallback.error;
+  }
+
+  if (error) {
+    console.error("[bichleg] fetchOrphanEpisodes failed", { message: error.message });
+    return [];
+  }
+  if (!rows) return [];
+
+  return rows.map((row) => mapVideoEpisode(row));
 }
 
 export async function fetchVideosBySeriesId(

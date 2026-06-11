@@ -172,7 +172,7 @@ export function ProfileAppView() {
     return (
       <MobileAppShell
         activeTab="profile"
-        mainClassName="max-w-[390px] mx-auto w-full"
+        mainClassName="mx-auto w-full max-w-[390px] lg:max-w-none"
       >
         <p className="py-16 text-center text-sm text-[var(--app-muted)]">
           Ачааллаж байна…
@@ -185,7 +185,7 @@ export function ProfileAppView() {
     return (
       <MobileAppShell
         activeTab="profile"
-        mainClassName="max-w-[390px] mx-auto w-full"
+        mainClassName="mx-auto w-full max-w-[390px] lg:max-w-none"
       >
         <AuthLoadErrorCard
           title="Профайл ачаалахад алдаа гарлаа"
@@ -205,7 +205,7 @@ export function ProfileAppView() {
     return (
       <MobileAppShell
         activeTab="profile"
-        mainClassName="max-w-[390px] mx-auto w-full"
+        mainClassName="mx-auto w-full max-w-[390px] lg:max-w-none"
       >
         {!hasSupabaseConfig ? (
           <MobileCard className="mb-4 border border-amber-200 bg-amber-50 !p-3 text-xs text-amber-900">
@@ -268,7 +268,7 @@ export function ProfileAppView() {
   return (
     <MobileAppShell
       activeTab="profile"
-      mainClassName="max-w-[390px] mx-auto w-full"
+      mainClassName="mx-auto w-full max-w-[390px] lg:max-w-none"
     >
       {profileError ? (
         <MobileCard className="mb-4 border border-amber-200 bg-amber-50 !p-3 text-xs text-amber-900">

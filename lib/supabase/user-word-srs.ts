@@ -25,11 +25,22 @@ function parseCatalogLevel(value: string | null | undefined): number | null {
   return Number.isInteger(n) && n >= 1 && n <= 6 ? n : null;
 }
 
+type FetchWordsByIdsOptions = {
+  catalogLevel?: string;
+  select?: string;
+  /** When true, omit grammatical particles (SRS-eligible words only). */
+  srsEligibleOnly?: boolean;
+};
+
 async function fetchWordsByIds(
   wordIds: number[],
-  catalogLevel?: string,
-  select = WORD_SELECT
+  options: FetchWordsByIdsOptions = {}
 ): Promise<Map<number, HskWordRow>> {
+  const {
+    catalogLevel,
+    select = WORD_SELECT,
+    srsEligibleOnly = false,
+  } = options;
   const map = new Map<number, HskWordRow>();
   if (wordIds.length === 0 || !supabase) return map;
 
@@ -39,6 +50,9 @@ async function fetchWordsByIds(
     let query = supabase.from("hsk_words").select(select).in("id", chunk);
     if (catalogLevel) {
       query = query.eq("hsk_level", catalogLevel);
+    }
+    if (srsEligibleOnly) {
+      query = query.eq("is_function_word", false);
     }
     const { data, error } = await query;
     if (error) throw new Error(error.message);
@@ -76,7 +90,7 @@ export async function getDueWordQueue(
     .eq("user_id", userId)
     .lte("due_at", nowIso)
     .order("due_at", { ascending: true })
-    .limit(dailyGoal * 3);
+    .limit(dailyGoal * 15);
 
   if (dueError) {
     return { items: [], error: dueError.message };
@@ -86,10 +100,10 @@ export async function getDueWordQueue(
   let wordMap: Map<number, HskWordRow>;
 
   try {
-    wordMap = await fetchWordsByIds(
-      srsRows.map((r) => r.word_id),
-      catalogLevel
-    );
+    wordMap = await fetchWordsByIds(srsRows.map((r) => r.word_id), {
+      catalogLevel,
+      srsEligibleOnly: true,
+    });
   } catch (err) {
     const message = err instanceof Error ? err.message : "Үг татахад алдаа";
     return { items: [], error: message };
@@ -128,6 +142,7 @@ export async function getDueWordQueue(
     .from("hsk_words")
     .select(WORD_SELECT)
     .eq("hsk_level", catalogLevel)
+    .eq("is_function_word", false)
     .order("frequency", { ascending: true, nullsFirst: false })
     .limit(500);
 
@@ -166,6 +181,19 @@ export async function ensureInitialWordSrs(
     return { created: false, error: readError.message };
   }
   if (existing) {
+    return { created: false, error: null };
+  }
+
+  const { data: wordRow, error: wordError } = await supabase
+    .from("hsk_words")
+    .select("is_function_word")
+    .eq("id", wordId)
+    .maybeSingle();
+
+  if (wordError) {
+    return { created: false, error: wordError.message };
+  }
+  if (wordRow?.is_function_word) {
     return { created: false, error: null };
   }
 
@@ -224,7 +252,9 @@ export async function getUserSrsWordList(
 
   let wordMap: Map<number, HskWordRow>;
   try {
-    wordMap = await fetchWordsByIds(rows.map((r) => r.word_id));
+    wordMap = await fetchWordsByIds(rows.map((r) => r.word_id), {
+      srsEligibleOnly: true,
+    });
   } catch (err) {
     const message = err instanceof Error ? err.message : "Үг татахад алдаа";
     return { items: [], error: message };
@@ -365,11 +395,9 @@ export async function getUserWordSrsStats(
     .map((r) => r.word_id as number);
 
   try {
-    const wordMap = await fetchWordsByIds(
-      studiedWordIds,
-      undefined,
-      "id, hsk_level"
-    );
+    const wordMap = await fetchWordsByIds(studiedWordIds, {
+      select: "id, hsk_level",
+    });
     for (const row of rows) {
       if ((row.reps as number) <= 0) continue;
       const word = wordMap.get(row.word_id as number);

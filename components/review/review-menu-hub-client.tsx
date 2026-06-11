@@ -5,6 +5,7 @@ import { useCallback, useEffect, useState } from "react";
 import { ReviewTablerIcon } from "@/components/review/review-tabler-icon";
 import { useActiveHskLevel } from "@/components/providers/active-hsk-level-provider";
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
+import { SHELL_MAIN_REVIEW } from "@/lib/app-shell-classes";
 import { formatActiveHskLevel } from "@/lib/hsk/active-hsk-level";
 import { getStreakUnified } from "@/lib/retention/retention-service";
 import { buildLocalQueue } from "@/lib/srs/local-word-srs";
@@ -116,7 +117,7 @@ export function ReviewMenuHubClient({ testCount }: Props) {
     <MobileAppShell
       activeTab="study"
       showBottomNav
-      mainClassName="max-w-[390px] mx-auto w-full px-4 pb-8"
+      mainClassName={SHELL_MAIN_REVIEW}
     >
       <div className="bs-review-hub">
         <div className="bs-review-hub-head">

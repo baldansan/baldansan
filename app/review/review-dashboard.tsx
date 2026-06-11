@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
+import { SHELL_MAIN_REVIEW } from "@/lib/app-shell-classes";
 import { GamePracticeLinks } from "@/components/games/game-practice-links";
 import { ReviewContinueCard } from "@/components/review-continue-card";
 import { EmptyState } from "@/components/empty-state";
@@ -153,7 +154,7 @@ export function ReviewDashboard({ lessons, lessonIds }: Props) {
 
   if (!ready) {
     return (
-      <MobileAppShell activeTab="study">
+      <MobileAppShell activeTab="study" mainClassName={SHELL_MAIN_REVIEW}>
         <p className="py-16 text-center text-sm text-[var(--app-muted)]">
           Ачааллаж байна...
         </p>
@@ -162,7 +163,7 @@ export function ReviewDashboard({ lessons, lessonIds }: Props) {
   }
 
   return (
-    <MobileAppShell activeTab="study">
+    <MobileAppShell activeTab="study" mainClassName={SHELL_MAIN_REVIEW}>
       <div className="flex flex-col gap-5">
         <section>
           <h1 className="text-xl font-bold tracking-tight text-[var(--app-text)]">

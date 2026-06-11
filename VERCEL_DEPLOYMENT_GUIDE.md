@@ -44,7 +44,7 @@ In **Project → Settings → Environment Variables**, add:
 
 Copy variable **names** from [.env.example](./.env.example). Paste real values from Supabase Dashboard → Settings → API.
 
-**Do not add** `SUPABASE_SERVICE_ROLE_KEY` or any service role key to Vercel for this app.
+**Do not add** `SUPABASE_SERVICE_ROLE_KEY` to Vercel client-facing env (it is optional for local `.env.local` only). Admin bichleg import on production uses your **admin login JWT** + migration `039_admin_bichleg_write_rls.sql` — run that migration on Supabase before importing videos on Vercel.
 
 ---
 

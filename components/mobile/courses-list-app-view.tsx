@@ -6,6 +6,7 @@ import { getSelectedLanguage } from "@/lib/learner-onboarding";
 import { courseMatchesLanguage, languageTrackLabel } from "@/lib/language-track";
 import { CourseCover } from "@/components/courses/course-cover";
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
+import { SHELL_MAIN_NARROW } from "@/lib/app-shell-classes";
 import { MobileCard } from "@/components/mobile/mobile-card";
 import { MobilePageHeader } from "@/components/mobile/mobile-page-header";
 import type { Course } from "@/types/course";
@@ -37,7 +38,7 @@ export function CoursesListAppView({ courses }: Props) {
   }, [courses]);
 
   return (
-    <MobileAppShell activeTab="study" mainClassName="max-w-[390px] mx-auto w-full">
+    <MobileAppShell activeTab="study" mainClassName={SHELL_MAIN_NARROW}>
       <MobilePageHeader
         title="Хичээлүүд"
         subtitle={
@@ -57,7 +58,7 @@ export function CoursesListAppView({ courses }: Props) {
           </Link>
         </MobileCard>
       ) : (
-        <div className="flex flex-col gap-3">
+        <div className="grid grid-cols-1 gap-3 lg:grid-cols-2">
           {visibleCourses.map((course) => (
             <MobileCard key={course.id} padding="lg" className="!p-0 overflow-hidden">
               <div className="p-4">

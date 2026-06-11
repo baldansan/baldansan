@@ -5,6 +5,7 @@ import { WordSrsStudySession } from "@/components/review/word-srs-study-session"
 import {
   formatActiveHskLevel,
   HSK_LEVEL_OPTIONS,
+  parseActiveHskLevel,
   type ActiveHskLevel,
 } from "@/lib/hsk/active-hsk-level";
 import { countLocalStudiedAmong } from "@/lib/srs/local-word-srs";
@@ -33,7 +34,11 @@ function batchLabel(batch: BatchSummary): string {
   return `Багц ${batch.batchIndex + 1} · ${batch.firstSimplified} → ${batch.lastSimplified}`;
 }
 
-export function HanziMemorizeClient() {
+type Props = {
+  restoreLevel?: string;
+};
+
+export function HanziMemorizeClient({ restoreLevel }: Props = {}) {
   const [step, setStep] = useState<WizardStep>("level");
   const [level, setLevel] = useState<ActiveHskLevel | null>(null);
   const [batches, setBatches] = useState<BatchSummary[]>([]);
@@ -43,6 +48,7 @@ export function HanziMemorizeClient() {
   const [userId, setUserId] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [restoreDone, setRestoreDone] = useState(false);
 
   useEffect(() => {
     if (!hasSupabaseConfig) return;
@@ -103,6 +109,18 @@ export function HanziMemorizeClient() {
     setLevel(next);
     await loadBatches(next);
   }
+
+  useEffect(() => {
+    if (restoreDone || !restoreLevel) return;
+    const parsed = parseActiveHskLevel(restoreLevel);
+    if (!parsed) {
+      setRestoreDone(true);
+      return;
+    }
+    setRestoreDone(true);
+    setLevel(parsed);
+    void loadBatches(parsed);
+  }, [restoreDone, restoreLevel]);
 
   async function handleSelectBatch(batch: BatchSummary) {
     if (!level) return;
@@ -190,8 +208,18 @@ export function HanziMemorizeClient() {
           subtitle={`${hskLabel} · ${batchLabel(activeBatch)}`}
           hskLevelLabel={hskLabel}
           showLoginHint
+          showPracticeLauncher
+          onNextBatch={() => {
+            const next = batches.find(
+              (b) => b.batchIndex === activeBatch.batchIndex + 1
+            );
+            if (next) {
+              void handleSelectBatch(next);
+            } else {
+              goBack();
+            }
+          }}
           onRestart={goBack}
-          onSessionComplete={goBack}
           onRated={() => {
             void countStudied(activeBatch.wordIds).then((studiedCount) => {
               setBatches((prev) =>
