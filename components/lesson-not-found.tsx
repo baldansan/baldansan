@@ -5,7 +5,7 @@ import { EmptyState } from "@/components/empty-state";
 
 export function LessonNotFound() {
   return (
-    <MobileAppShell activeTab="study" mainClassName="max-w-[390px] mx-auto w-full">
+    <MobileAppShell activeTab="study" mainClassName="mx-auto w-full max-w-[390px] lg:max-w-none">
       <MobileCard className="mt-8 text-center !py-10">
         <EmptyState
           title="Хичээл олдсонгүй"

@@ -85,8 +85,8 @@ export function buildLocalQueue(
 ): WordSrsQueueItem[] {
   const store = readStore();
   const now = Date.now();
-  const filtered = words.filter((w) =>
-    wordMatchesActiveHskLevel(activeLevel, w)
+  const filtered = words.filter(
+    (w) => wordMatchesActiveHskLevel(activeLevel, w) && !w.is_function_word
   );
 
   const due: WordSrsQueueItem[] = [];

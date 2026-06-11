@@ -5,6 +5,7 @@ import { HskLevelSelector } from "@/components/hsk/hsk-level-selector";
 import { useActiveHskLevel } from "@/components/providers/active-hsk-level-provider";
 import { WordSrsStudySession } from "@/components/review/word-srs-study-session";
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
+import { SHELL_MAIN_REVIEW } from "@/lib/app-shell-classes";
 import { formatActiveHskLevel } from "@/lib/hsk/active-hsk-level";
 import { buildLocalQueue } from "@/lib/srs/local-word-srs";
 import { getStreakUnified } from "@/lib/retention/retention-service";
@@ -79,7 +80,7 @@ export function ReviewSrsClient({ embedded = false }: Props) {
 
   const wrap = (content: ReactNode) =>
     embedded ? content : (
-      <MobileAppShell activeTab="study" mainClassName="max-w-[390px] mx-auto w-full px-4 pb-8">
+      <MobileAppShell activeTab="study" mainClassName={SHELL_MAIN_REVIEW}>
         {content}
       </MobileAppShell>
     );
@@ -147,6 +148,7 @@ export function ReviewSrsClient({ embedded = false }: Props) {
         }
         progressGoal={DAILY_SRS_GOAL}
         showLoginHint
+        showPracticeLauncher
         onRestart={() => void loadQueue()}
         completeTitle="✅ Өнөөдрийн давталт дууслаа!"
         completeMessage="Өнөөдрийн карт дууслаа."

@@ -7,10 +7,16 @@ export const metadata = {
   title: "Шинэ үг цээжлэх — Бөөндөө Сурцгаая",
 };
 
-export default function ReviewMemorizePage() {
+type PageProps = {
+  searchParams: Promise<{ level?: string }>;
+};
+
+export default async function ReviewMemorizePage({ searchParams }: PageProps) {
+  const { level } = await searchParams;
+
   return (
     <ReviewSubScreen>
-      <HanziMemorizeClient />
+      <HanziMemorizeClient restoreLevel={level} />
     </ReviewSubScreen>
   );
 }

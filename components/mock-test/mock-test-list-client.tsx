@@ -231,7 +231,7 @@ export function MockTestListClient({
     <MobileAppShell
       activeTab="games"
       showBottomNav
-      mainClassName="max-w-[430px] mx-auto w-full px-0 pb-8"
+      mainClassName="mx-auto w-full max-w-[430px] lg:max-w-none px-0 pb-8"
     >
       <div className="bs-mt-list px-4">{listBody}</div>
     </MobileAppShell>

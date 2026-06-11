@@ -80,3 +80,50 @@
   .bs-frame-screen { display: contents; }
   .bs-frame-notch { display: none; }
 }
+
+/* --- AppShell desktop (lg+): утасны хүрээгүй, sidebar-тай бүтэн өргөн --- */
+@media (min-width: 1024px) {
+  .bs-app-root > .bs-frame-root {
+    min-height: 100vh;
+    display: block;
+    align-items: stretch;
+    justify-content: stretch;
+    padding: 0;
+    background: var(--app-bg, #eef2ef);
+  }
+
+  .bs-app-root > .bs-frame-root,
+  .bs-app-root > .bs-frame-root > .bs-frame,
+  .bs-app-root > .bs-frame-root > .bs-frame > .bs-frame-screen {
+    display: block;
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .bs-app-root > .bs-frame-root > .bs-frame {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    background: transparent;
+    border-radius: 0;
+    padding: 0;
+    box-shadow: none;
+  }
+
+  .bs-app-root > .bs-frame-root > .bs-frame > .bs-frame-screen {
+    border-radius: 0;
+    overflow: visible;
+    transform: none;
+    background: transparent;
+  }
+
+  .bs-app-root > .bs-frame-root > .bs-frame > .bs-frame-notch {
+    display: none;
+  }
+
+  .bs-app-root .bs-app-shell-inner {
+    min-height: 100vh;
+    background: var(--app-bg, #eef2ef);
+  }
+}

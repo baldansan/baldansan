@@ -19,7 +19,7 @@ export function LessonPageError({ failureKind, debug, retryHref }: Props) {
   const showDebug = shouldShowLessonLoadDebugDetails();
 
   return (
-    <MobileAppShell activeTab="study" mainClassName="max-w-[390px] mx-auto w-full">
+    <MobileAppShell activeTab="study" mainClassName="mx-auto w-full max-w-[390px] lg:max-w-none">
       <MobileCard className="mt-6 !py-10 text-center">
         <p className="text-sm font-medium text-amber-700">Хичээл ачаалах</p>
         <h1 className="mt-2 text-xl font-bold text-[var(--app-text)]">

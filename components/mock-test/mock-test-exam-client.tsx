@@ -5,6 +5,10 @@ import { useCallback, useEffect, useMemo, useState } from "react";
 import { MockTestQuestion } from "@/components/mock-test/mock-test-question";
 import { MockTestResultView } from "@/components/mock-test/mock-test-result-view";
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
+import {
+  buildRandomMockTestAnswers,
+  isMockTestDevToolsEnabled,
+} from "@/lib/mock-test/dev-quick-fill";
 import { scoreMockTestAttempt } from "@/lib/mock-test/scoring";
 import {
   weakLessonsFromAnswerDetails,
@@ -17,7 +21,10 @@ import {
   type MockTestRow,
   type MockTestScoreResult,
 } from "@/lib/mock-test/types";
-import { saveCheckpointAttempt } from "@/lib/supabase/mock-tests-client";
+import {
+  fetchCompletedLessonIdsClient,
+  saveCheckpointAttempt,
+} from "@/lib/supabase/mock-tests-client";
 
 type Phase = "intro" | "exam" | "result";
 
@@ -47,6 +54,9 @@ export function MockTestExamClient({ test, questions, lessonTitles }: Props) {
   const [secondsLeft, setSecondsLeft] = useState(test.time_limit_min * 60);
   const [result, setResult] = useState<MockTestScoreResult | null>(null);
   const [saveNote, setSaveNote] = useState<string | null>(null);
+  const [completedLessonIds, setCompletedLessonIds] = useState<Set<string>>(
+    () => new Set()
+  );
 
   const sectionMeta = useMemo(
     () => test.sections.find((s) => s.skill === skill),
@@ -58,20 +68,32 @@ export function MockTestExamClient({ test, questions, lessonTitles }: Props) {
     [questions, skill]
   );
 
-  const finishExam = useCallback(async () => {
-    const scored = scoreMockTestAttempt(questions, answers);
-    setResult(scored);
-    setPhase("result");
+  const finishExam = useCallback(
+    async (overrideAnswers?: MockTestAnswers) => {
+      const finalAnswers = overrideAnswers ?? answers;
+      if (overrideAnswers) setAnswers(overrideAnswers);
 
-    const save = await saveCheckpointAttempt(test.id, scored);
-    if (save.ok) {
-      setSaveNote("Оролдлого бүртгэгдлээ.");
-    } else if (save.error === "Нэвтрээгүй хэрэглэгч.") {
-      setSaveNote("Зочин горим — оноо зөвхөн энэ удаа харагдана.");
-    } else if (save.error) {
-      setSaveNote(save.error);
-    }
-  }, [answers, questions, test.id]);
+      const scored = scoreMockTestAttempt(questions, finalAnswers);
+      setResult(scored);
+      setPhase("result");
+
+      const save = await saveCheckpointAttempt(test.id, scored);
+      if (save.ok) {
+        setSaveNote("Оролдлого бүртгэгдлээ.");
+      } else if (save.error === "Нэвтрээгүй хэрэглэгч.") {
+        setSaveNote("Зочин горим — оноо зөвхөн энэ удаа харагдана.");
+      } else if (save.error) {
+        setSaveNote(save.error);
+      }
+    },
+    [answers, questions, test.id]
+  );
+
+  const showDevTools = isMockTestDevToolsEnabled();
+
+  function handleDevQuickFill() {
+    void finishExam(buildRandomMockTestAnswers(questions));
+  }
 
   useEffect(() => {
     if (phase !== "exam") return;
@@ -93,9 +115,30 @@ export function MockTestExamClient({ test, questions, lessonTitles }: Props) {
     setPhase("exam");
   }
 
+  const weakLessonsForResult = useMemo(() => {
+    if (!result) return [];
+    return weakLessonsFromAnswerDetails(result.details, questions, lessonTitles);
+  }, [result, questions, lessonTitles]);
+
+  useEffect(() => {
+    if (phase !== "result" || weakLessonsForResult.length === 0) {
+      setCompletedLessonIds(new Set());
+      return;
+    }
+    let cancelled = false;
+    void fetchCompletedLessonIdsClient(
+      weakLessonsForResult.map((lesson) => lesson.lessonId)
+    ).then((ids) => {
+      if (!cancelled) setCompletedLessonIds(ids);
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, [phase, weakLessonsForResult]);
+
   if (phase === "intro") {
     return (
-      <MobileAppShell activeTab="games" showBottomNav={false} mainClassName="max-w-[430px] mx-auto w-full px-0 pb-8">
+      <MobileAppShell activeTab="games" showBottomNav={false} mainClassName="mx-auto w-full max-w-[430px] lg:max-w-none px-0 pb-8">
         <div className="bs-mt-intro px-4">
           <Link href="/review" className="bs-mem-back">
             ← Давтах
@@ -127,24 +170,28 @@ export function MockTestExamClient({ test, questions, lessonTitles }: Props) {
           <button type="button" className="bs-mock-primary-btn mt-6" onClick={startExam}>
             Шалгалт эхлүүлэх
           </button>
+          {showDevTools ? (
+            <button
+              type="button"
+              className="bs-mt-dev-btn"
+              onClick={handleDevQuickFill}
+            >
+              Хурдан бөглөх (dev)
+            </button>
+          ) : null}
         </div>
       </MobileAppShell>
     );
   }
 
   if (phase === "result" && result) {
-    const weakLessons = weakLessonsFromAnswerDetails(
-      result.details,
-      questions,
-      lessonTitles
-    );
-
     return (
-      <MobileAppShell activeTab="games" showBottomNav={false} mainClassName="max-w-[430px] mx-auto w-full px-0 pb-8">
+      <MobileAppShell activeTab="games" showBottomNav={false} mainClassName="mx-auto w-full max-w-[430px] lg:max-w-none px-0 pb-8">
         <MockTestResultView
           test={test}
           result={result}
-          weakLessons={weakLessons}
+          weakLessons={weakLessonsForResult}
+          completedLessonIds={completedLessonIds}
           saveNote={saveNote}
         />
       </MobileAppShell>
@@ -158,7 +205,7 @@ export function MockTestExamClient({ test, questions, lessonTitles }: Props) {
   const warn = secondsLeft < 300;
 
   return (
-    <MobileAppShell activeTab="games" showBottomNav={false} mainClassName="max-w-[430px] mx-auto w-full px-0 pb-8">
+    <MobileAppShell activeTab="games" showBottomNav={false} mainClassName="mx-auto w-full max-w-[430px] lg:max-w-none px-0 pb-8">
       <div className="bs-mt-exam px-4">
         <div className="bs-mt-timer-bar">
           <span className="bs-mt-timer-text">
@@ -203,6 +250,15 @@ export function MockTestExamClient({ test, questions, lessonTitles }: Props) {
           ))}
         </div>
 
+        {showDevTools ? (
+          <button
+            type="button"
+            className="bs-mt-dev-btn mt-4 w-full"
+            onClick={handleDevQuickFill}
+          >
+            Хурдан бөглөх (dev)
+          </button>
+        ) : null}
         <button
           type="button"
           className="bs-mock-primary-btn mt-6 w-full"

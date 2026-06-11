@@ -20,6 +20,8 @@ export type HskWord = {
   example_zh: string | null;
   example_pinyin: string | null;
   example_mn: string | null;
+  /** Grammatical particle — excluded from SRS / memorize queues. */
+  is_function_word?: boolean;
 };
 
 const WORD_SELECT =

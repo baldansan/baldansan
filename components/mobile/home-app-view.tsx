@@ -16,6 +16,7 @@ import {
 import { CourseCover } from "@/components/courses/course-cover";
 import { MobileCard } from "@/components/mobile/mobile-card";
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
+import { SHELL_MAIN_NARROW } from "@/lib/app-shell-classes";
 import { lessonPath } from "@/lib/content";
 import { resolveContinueLearning } from "@/lib/learner-progress";
 import type { BichlegContinueTarget } from "@/lib/bichleg/types";
@@ -192,7 +193,7 @@ export function HomeAppView({ catalog, defaultChipId }: Props) {
   }
 
   return (
-    <MobileAppShell activeTab="home" mainClassName="max-w-[390px] mx-auto w-full">
+    <MobileAppShell activeTab="home" mainClassName={SHELL_MAIN_NARROW}>
       <section className="mb-3">
         <div className="flex items-center gap-3">
           <div
@@ -233,46 +234,48 @@ export function HomeAppView({ catalog, defaultChipId }: Props) {
         </div>
       </section>
 
-      {activeCourse?.available && lessonIds.length > 0 ? (
-        <Link href={continueHref} className="mb-4 block min-h-[44px]">
-          <MobileCard className="flex items-center gap-3 !p-3.5 active:bg-slate-50">
-            <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-emerald-400 to-emerald-600 text-lg text-white shadow-sm">
-              ▶
-            </div>
-            <div className="min-w-0 flex-1">
-              <p className="text-[10px] font-bold uppercase tracking-wide text-emerald-600">
-                Үргэлжлүүлэх
-              </p>
-              <p className="truncate text-sm font-semibold text-[var(--app-text)]">
-                {continueTitle}
-              </p>
-            </div>
-            <span className="text-base text-[var(--app-muted)]">→</span>
-          </MobileCard>
-        </Link>
-      ) : null}
+      <div className="mb-4 grid grid-cols-1 gap-4 lg:grid-cols-2">
+        {activeCourse?.available && lessonIds.length > 0 ? (
+          <Link href={continueHref} className="block min-h-[44px]">
+            <MobileCard className="flex h-full items-center gap-3 !p-3.5 active:bg-slate-50 lg:hover:shadow-md">
+              <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-emerald-400 to-emerald-600 text-lg text-white shadow-sm">
+                ▶
+              </div>
+              <div className="min-w-0 flex-1">
+                <p className="text-[10px] font-bold uppercase tracking-wide text-emerald-600">
+                  Үргэлжлүүлэх
+                </p>
+                <p className="truncate text-sm font-semibold text-[var(--app-text)]">
+                  {continueTitle}
+                </p>
+              </div>
+              <span className="text-base text-[var(--app-muted)]">→</span>
+            </MobileCard>
+          </Link>
+        ) : null}
 
-      {bichlegContinue ? (
-        <Link href={bichlegContinue.href} className="mb-4 block min-h-[44px]">
-          <MobileCard className="flex items-center gap-3 !p-3.5 active:bg-slate-50">
-            <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-emerald-400 to-emerald-600 text-lg text-white shadow-sm">
-              ▶
-            </div>
-            <div className="min-w-0 flex-1">
-              <p className="text-[10px] font-bold uppercase tracking-wide text-emerald-600">
-                Бичлэг үргэлжлүүлэх
-              </p>
-              <p className="truncate text-sm font-semibold text-[var(--app-text)]">
-                {bichlegContinue.title}
-              </p>
-              <p className="truncate text-xs text-[var(--app-muted)]">
-                {bichlegContinue.subtitle}
-              </p>
-            </div>
-            <span className="text-base text-[var(--app-muted)]">→</span>
-          </MobileCard>
-        </Link>
-      ) : null}
+        {bichlegContinue ? (
+          <Link href={bichlegContinue.href} className="block min-h-[44px]">
+            <MobileCard className="flex h-full items-center gap-3 !p-3.5 active:bg-slate-50 lg:hover:shadow-md">
+              <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-emerald-400 to-emerald-600 text-lg text-white shadow-sm">
+                ▶
+              </div>
+              <div className="min-w-0 flex-1">
+                <p className="text-[10px] font-bold uppercase tracking-wide text-emerald-600">
+                  Бичлэг үргэлжлүүлэх
+                </p>
+                <p className="truncate text-sm font-semibold text-[var(--app-text)]">
+                  {bichlegContinue.title}
+                </p>
+                <p className="truncate text-xs text-[var(--app-muted)]">
+                  {bichlegContinue.subtitle}
+                </p>
+              </div>
+              <span className="text-base text-[var(--app-muted)]">→</span>
+            </MobileCard>
+          </Link>
+        ) : null}
+      </div>
 
       <section className="mb-3">
         <h2 className="mb-2 text-xs font-bold uppercase tracking-wide text-[var(--app-muted)]">

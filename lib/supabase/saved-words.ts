@@ -19,7 +19,14 @@ export type SaveWordFromBichlegResult = {
   inCatalog?: boolean;
   linkedToSrs?: boolean;
   alreadyInSrs?: boolean;
+  /** Grammatical particle — saved but not added to SRS. */
+  isFunctionWord?: boolean;
   error?: string;
+};
+
+export type HskWordLookup = {
+  id: number;
+  is_function_word: boolean;
 };
 
 export type BichlegWordStatus = {
@@ -29,22 +36,32 @@ export type BichlegWordStatus = {
   inSrs: boolean;
 };
 
-export async function lookupHskWordIdBySimplified(
+export async function lookupHskWordBySimplified(
   zh: string
-): Promise<number | null> {
+): Promise<HskWordLookup | null> {
   if (!supabase || !hasSupabaseConfig) return null;
   const trimmed = zh.trim();
   if (!trimmed) return null;
 
   const { data, error } = await supabase
     .from("hsk_words")
-    .select("id")
+    .select("id, is_function_word")
     .eq("simplified", trimmed)
     .limit(1)
     .maybeSingle();
 
   if (error || !data) return null;
-  return data.id as number;
+  return {
+    id: data.id as number,
+    is_function_word: Boolean(data.is_function_word),
+  };
+}
+
+export async function lookupHskWordIdBySimplified(
+  zh: string
+): Promise<number | null> {
+  const row = await lookupHskWordBySimplified(zh);
+  return row?.id ?? null;
 }
 
 export async function userHasWordSrsEntry(
@@ -117,10 +134,16 @@ export async function saveWordFromBichleg(input: {
   }
 
   const zh = input.zh.trim();
-  const hskWordId = await lookupHskWordIdBySimplified(zh);
+  const hskLookup = await lookupHskWordBySimplified(zh);
+  const hskWordId = hskLookup?.id ?? null;
+  const isFunctionWord = hskLookup?.is_function_word ?? false;
   const inCatalog = hskWordId != null;
 
-  if (hskWordId != null && (await userHasWordSrsEntry(userId, hskWordId))) {
+  if (
+    hskWordId != null &&
+    !isFunctionWord &&
+    (await userHasWordSrsEntry(userId, hskWordId))
+  ) {
     const { error: upsertSavedError } = await supabase
       .from("user_saved_words")
       .upsert(
@@ -167,6 +190,16 @@ export async function saveWordFromBichleg(input: {
           .eq("zh", zh)
           .is("hsk_word_id", null);
 
+        if (isFunctionWord) {
+          return {
+            ok: true,
+            duplicate: true,
+            inCatalog: true,
+            isFunctionWord: true,
+            linkedToSrs: false,
+          };
+        }
+
         const { created } = await ensureInitialWordSrs(userId, hskWordId);
         return {
           ok: true,
@@ -181,7 +214,7 @@ export async function saveWordFromBichleg(input: {
   }
 
   let linkedToSrs = false;
-  if (hskWordId != null) {
+  if (hskWordId != null && !isFunctionWord) {
     const { created, error: srsError } = await ensureInitialWordSrs(
       userId,
       hskWordId
@@ -196,6 +229,7 @@ export async function saveWordFromBichleg(input: {
     ok: true,
     inCatalog,
     linkedToSrs,
+    isFunctionWord: isFunctionWord || undefined,
   };
 }
 

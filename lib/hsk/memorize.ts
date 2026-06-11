@@ -30,6 +30,7 @@ async function loadOrderedLightRows(level: HskLevel): Promise<LightRow[]> {
       .from("hsk_words")
       .select(LIGHT_SELECT)
       .eq("hsk_level", level)
+      .eq("is_function_word", false)
       .order("pinyin_sort_key", { ascending: true, nullsFirst: false })
       .order("simplified", { ascending: true })
       .range(from, from + pageSize - 1);
@@ -51,7 +52,8 @@ async function countLevelWords(level: HskLevel): Promise<number> {
   const { count, error } = await supabase
     .from("hsk_words")
     .select("id", { count: "exact", head: true })
-    .eq("hsk_level", level);
+    .eq("hsk_level", level)
+    .eq("is_function_word", false);
 
   if (error) throw new Error(error.message);
   return count ?? 0;
@@ -114,6 +116,7 @@ export async function fetchMemorizeBatch(
     .from("hsk_words")
     .select(WORD_SELECT)
     .eq("hsk_level", level)
+    .eq("is_function_word", false)
     .order("pinyin_sort_key", { ascending: true, nullsFirst: false })
     .order("simplified", { ascending: true })
     .range(from, to);

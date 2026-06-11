@@ -3,7 +3,7 @@ import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
 
 export default function LessonLoading() {
   return (
-    <MobileAppShell activeTab="study" mainClassName="max-w-[390px] mx-auto w-full">
+    <MobileAppShell activeTab="study" mainClassName="mx-auto w-full max-w-[390px] lg:max-w-none">
       <PageLoadingSkeleton rows={4} />
     </MobileAppShell>
   );

@@ -1,10 +1,7 @@
 import "server-only";
 
 import type { VideoSeriesInfo } from "@/lib/bichleg/types";
-import {
-  createServiceRoleSupabaseClient,
-  hasServiceRoleSupabaseConfig,
-} from "@/lib/supabase/service-role-server";
+import { getAdminBichlegSupabaseClient } from "@/lib/supabase/admin-bichleg-client";
 
 export type AdminSeriesRow = VideoSeriesInfo & {
   episode_count: number;
@@ -32,9 +29,9 @@ function mapSeries(raw: Record<string, unknown>): VideoSeriesInfo {
 }
 
 export async function fetchAdminSeriesList(): Promise<AdminSeriesRow[]> {
-  if (!hasServiceRoleSupabaseConfig) return [];
-  const client = createServiceRoleSupabaseClient();
-  if (!client) return [];
+  const resolved = await getAdminBichlegSupabaseClient();
+  if (!resolved.ok) return [];
+  const client = resolved.client;
 
   const { data, error } = await client
     .from("video_series")
@@ -58,11 +55,9 @@ export async function fetchAdminSeriesList(): Promise<AdminSeriesRow[]> {
 export async function fetchAdminSeriesEpisodes(
   seriesId: string
 ): Promise<{ series: VideoSeriesInfo | null; episodes: AdminEpisodeRow[] }> {
-  if (!hasServiceRoleSupabaseConfig) {
-    return { series: null, episodes: [] };
-  }
-  const client = createServiceRoleSupabaseClient();
-  if (!client) return { series: null, episodes: [] };
+  const resolved = await getAdminBichlegSupabaseClient();
+  if (!resolved.ok) return { series: null, episodes: [] };
+  const client = resolved.client;
 
   const [{ data: seriesData }, { data: videoData }] = await Promise.all([
     client

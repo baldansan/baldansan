@@ -14,7 +14,7 @@ export function LanguageFilteredGamesView({ allLessons }: Props) {
 
   if (!ready) {
     return (
-      <MobileAppShell activeTab="games" mainClassName="max-w-[390px] mx-auto w-full">
+      <MobileAppShell activeTab="games" mainClassName="mx-auto w-full max-w-[390px] lg:max-w-none">
         <p className="py-16 text-center text-sm text-[var(--app-muted)]">
           Ачааллаж байна…
         </p>

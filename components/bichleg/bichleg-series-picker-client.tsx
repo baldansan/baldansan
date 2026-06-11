@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
+import { SHELL_MAIN_NARROW } from "@/lib/app-shell-classes";
 import { MobilePageHeader } from "@/components/mobile/mobile-page-header";
 import { seriesCoverInitial } from "@/lib/bichleg/series-cover";
 import type { SeriesWatchProgress, VideoSeriesCard } from "@/lib/bichleg/types";
@@ -50,7 +51,7 @@ function SeriesProgressBar({
   watchedCount: number;
   totalCount: number;
 }) {
-  if (totalCount <= 0 || watchedCount <= 0) return null;
+  if (totalCount <= 0) return null;
   const pct = Math.min(100, Math.round((watchedCount / totalCount) * 100));
   return (
     <div className="bs-bichleg-series-card-progress-wrap">
@@ -120,7 +121,7 @@ export function BichlegSeriesPickerClient({
   seriesProgress = {},
 }: Props) {
   return (
-    <MobileAppShell activeTab="clips" mainClassName="max-w-[390px] mx-auto w-full">
+    <MobileAppShell activeTab="clips" mainClassName={SHELL_MAIN_NARROW}>
       <MobilePageHeader title="Бичлэг" subtitle="Юу үзэх вэ?" />
 
       {seriesList.length === 0 && orphanCount === 0 ? (

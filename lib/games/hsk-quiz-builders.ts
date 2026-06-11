@@ -23,6 +23,34 @@ export type HskQuizQuestion = {
 };
 
 const OPTION_COUNT = 4;
+const CUSTOM_WORDS_MIN_DECK = 6;
+const CUSTOM_WORDS_MAX_DECK = 8;
+
+/** Цөөн үгтэй багцад асуултыг давтаж 6–8 болгоно. */
+export function expandQuizDeck(
+  deck: HskQuizQuestion[],
+  minSize = CUSTOM_WORDS_MIN_DECK,
+  maxSize = CUSTOM_WORDS_MAX_DECK
+): HskQuizQuestion[] {
+  if (deck.length === 0) return [];
+  const target = Math.min(maxSize, Math.max(minSize, deck.length));
+  const out: HskQuizQuestion[] = [];
+  let seq = 0;
+  let round = 0;
+  while (out.length < target) {
+    for (const item of shuffleArray(deck)) {
+      if (out.length >= target) break;
+      out.push({
+        ...item,
+        id: item.id * 10_000 + seq,
+      });
+      seq += 1;
+    }
+    round += 1;
+    if (round > 12) break;
+  }
+  return shuffleArray(out).slice(0, target);
+}
 
 type ComponentRow = { mn?: string; en?: string; icon?: string };
 
@@ -164,31 +192,49 @@ export function buildRadicalPickDeck(
   size = 15
 ): HskQuizQuestion[] {
   const pool = words.filter((w) => w.simplified && w.radical?.trim());
-  if (pool.length < OPTION_COUNT) return [];
+  if (pool.length === 0) return [];
 
-  return shuffleArray(pool)
-    .slice(0, size)
-    .map((word) => {
-      const correct = word.simplified;
-      const { icon, name } = radicalLabel(word.radical!.trim());
-      const wrong = pickDistractors(
-        pool.filter((w) => w.id !== word.id),
-        OPTION_COUNT - 1,
-        (w) => w.simplified,
-        new Set([correct])
-      );
-      return {
-        id: word.id,
-        kind: "radical-pick" as const,
-        correct,
-        options: mcqOptions(correct, wrong),
-        promptLabel: "Энэ радикалтай ханз аль вэ?",
-        display: `${icon} ${name}`,
-        subDisplay: `Радикал: ${word.radical}`,
-        hanzi: correct,
-        pinyin: word.pinyin ?? undefined,
-      };
+  const hanziFallback = [
+    ...new Set(words.map((w) => w.simplified?.trim()).filter(Boolean)),
+  ] as string[];
+
+  const questions: HskQuizQuestion[] = [];
+
+  for (const word of shuffleArray(pool).slice(0, size)) {
+    const correct = word.simplified;
+    const { icon, name } = radicalLabel(word.radical!.trim());
+    let wrong = pickDistractors(
+      pool.filter((w) => w.id !== word.id),
+      OPTION_COUNT - 1,
+      (w) => w.simplified,
+      new Set([correct])
+    );
+    if (wrong.length < OPTION_COUNT - 1) {
+      wrong = [
+        ...wrong,
+        ...pickDistractors(
+          hanziFallback.map((h) => ({ simplified: h })),
+          OPTION_COUNT - 1 - wrong.length,
+          (w) => w.simplified,
+          new Set([correct, ...wrong])
+        ),
+      ];
+    }
+    if (wrong.length < OPTION_COUNT - 1) continue;
+    questions.push({
+      id: word.id,
+      kind: "radical-pick",
+      correct,
+      options: mcqOptions(correct, wrong),
+      promptLabel: "Энэ радикалтай ханз аль вэ?",
+      display: `${icon} ${name}`,
+      subDisplay: `Радикал: ${word.radical}`,
+      hanzi: correct,
+      pinyin: word.pinyin ?? undefined,
     });
+  }
+
+  return questions;
 }
 
 const MARATHON_KINDS: HskQuizKind[] = [

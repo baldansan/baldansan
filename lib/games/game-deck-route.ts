@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import {
-  parseWordIdsParam,
+  parseWordIdsFromSearchParams,
   resolveCatalogLevel,
 } from "@/lib/games/game-api-level";
 import type { HskQuizQuestion } from "@/lib/games/hsk-quiz-builders";
@@ -14,29 +14,30 @@ import {
 export async function loadQuizWordPool(
   request: Request,
   poolSize = 120
-): Promise<{ words: HskWord[]; level: HskLevel }> {
+): Promise<{ words: HskWord[]; level: HskLevel; customWordIds: boolean }> {
   const { searchParams } = new URL(request.url);
   const level = resolveCatalogLevel(searchParams.get("level"));
-  const wordIds = parseWordIdsParam(searchParams.get("wordIds"));
+  const wordIds = parseWordIdsFromSearchParams(searchParams);
 
-  if (wordIds.length >= 4) {
+  if (wordIds.length > 0) {
     const words = await getWordsByIds(wordIds);
-    if (words.length >= 4) {
-      return { words, level };
+    if (words.length > 0) {
+      return { words, level, customWordIds: true };
     }
   }
 
   const words = await getQuizWordPool(level, poolSize);
-  return { words, level };
+  return { words, level, customWordIds: false };
 }
 
 export function jsonDeckResponse(
   deck: HskQuizQuestion[],
   level: HskLevel,
   poolSize: number,
-  extra?: Record<string, unknown>
+  extra?: Record<string, unknown>,
+  minDeckSize = 4
 ) {
-  if (deck.length < 4) {
+  if (deck.length < minDeckSize) {
     return NextResponse.json(
       { error: "Энэ түвшинд хангалттай асуулт бүрдэж чадсангүй." },
       { status: 400 }

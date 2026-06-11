@@ -51,3 +51,26 @@ export async function saveCheckpointAttempt(
 
   return { ok: true };
 }
+
+export async function fetchCompletedLessonIdsClient(
+  lessonIds: string[]
+): Promise<Set<string>> {
+  if (!supabase || !hasSupabaseConfig || lessonIds.length === 0) {
+    return new Set();
+  }
+
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+  if (!user) return new Set();
+
+  const { data, error } = await supabase
+    .from("user_lesson_progress")
+    .select("lesson_id")
+    .eq("user_id", user.id)
+    .eq("status", "completed")
+    .in("lesson_id", lessonIds);
+
+  if (error || !data) return new Set();
+  return new Set(data.map((row) => String(row.lesson_id)));
+}

@@ -230,7 +230,7 @@ export function HskQuizGameClient({ config }: { config: HskQuizGameConfig }) {
 
   if (!hydrated || phase === "loading") {
     return (
-      <GameShell mainClassName="max-w-[430px] mx-auto w-full px-4 py-12 text-center text-sm text-[var(--app-muted)]">
+      <GameShell mainClassName="mx-auto w-full max-w-[430px] lg:max-w-none px-4 py-12 text-center text-sm text-[var(--app-muted)]">
         Ачааллаж байна…
       </GameShell>
     );
@@ -238,7 +238,7 @@ export function HskQuizGameClient({ config }: { config: HskQuizGameConfig }) {
 
   if (phase === "locked" && dailyDone) {
     return (
-      <GameShell mainClassName="max-w-[430px] mx-auto w-full px-4 pb-8">
+      <GameShell mainClassName="mx-auto w-full max-w-[430px] lg:max-w-none px-4 pb-8">
         <div className="bs-meaning-done">
           <h2 className="text-xl font-extrabold text-[var(--bs-ink)]">
             ✅ Өнөөдрийн сорил дууссан
@@ -261,7 +261,7 @@ export function HskQuizGameClient({ config }: { config: HskQuizGameConfig }) {
   if (phase === "done") {
     const won = lives > 0 && correctCount === total && !error;
     return (
-      <GameShell mainClassName="max-w-[430px] mx-auto w-full px-4 pb-8">
+      <GameShell mainClassName="mx-auto w-full max-w-[430px] lg:max-w-none px-4 pb-8">
         <div className="bs-meaning-done">
           <h2 className="text-xl font-extrabold text-[var(--bs-ink)]">
             {error ? "Тоглоом эхлэхгүй" : won ? "🏆 Төгс!" : "Тоглоом дууслаа"}
@@ -296,7 +296,7 @@ export function HskQuizGameClient({ config }: { config: HskQuizGameConfig }) {
   if (!current) return null;
 
   return (
-    <GameShell mainClassName="max-w-[430px] mx-auto w-full bg-[var(--bs-bg)] px-4 pt-4 pb-8">
+    <GameShell mainClassName="mx-auto w-full max-w-[430px] lg:max-w-none bg-[var(--bs-bg)] px-4 pt-4 pb-8">
       <div className="mb-3 flex items-center justify-between gap-2">
         <div>
           <h1 className="text-base font-extrabold text-[var(--bs-ink)]">

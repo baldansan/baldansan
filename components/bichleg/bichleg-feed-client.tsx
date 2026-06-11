@@ -2,8 +2,9 @@
 
 import Link from "next/link";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import PhoneFrame from "@/components/layout/PhoneFrame";
+import { AppShell } from "@/components/app/app-shell";
 import { BottomNavChrome } from "@/components/mobile/bottom-nav-chrome";
+import { SHELL_MAIN_NARROW } from "@/lib/app-shell-classes";
 import {
   formatSeriesEpisodeBadge,
   type SubtitleWord,
@@ -442,7 +443,9 @@ export function BichlegFeedClient({
       sourceVideoId: pickedWord.sourceVideoId,
     });
     if (result.ok) {
-      if (result.alreadyInSrs || (result.linkedToSrs && result.inCatalog)) {
+      if (result.isFunctionWord) {
+        setToast("Дүрмийн үг тул давталтад оруулахгүй");
+      } else if (result.alreadyInSrs || (result.linkedToSrs && result.inCatalog)) {
         setToast("Давталтад нэмэгдсэн ✓");
       } else if (result.inCatalog === false) {
         setToast("Толь бичигт байхгүй — зөвхөн миний үгсэд хадгаллаа");
@@ -483,11 +486,14 @@ export function BichlegFeedClient({
 
   if (!videos.length) {
     return (
-      <PhoneFrame>
-        <Link href={backHref} className="bs-bichleg-back" aria-label="Буцах">
-          ←
+      <AppShell activeTab="clips" mainClassName={SHELL_MAIN_NARROW}>
+        <Link
+          href={backHref}
+          className="mb-4 inline-flex text-sm font-bold text-[var(--app-muted)] hover:text-emerald-600"
+        >
+          ← Буцах
         </Link>
-        <div className="bs-bichleg-empty">
+        <div className="bs-bichleg-empty relative min-h-[50vh]">
           <p className="text-base font-bold">
             {feedTitle ? `${feedTitle} — бичлэг байхгүй` : "Бичлэг олдсонгүй"}
           </p>
@@ -498,10 +504,7 @@ export function BichlegFeedClient({
             ← Цуврал сонгох
           </Link>
         </div>
-        <div className="absolute inset-x-0 bottom-0 z-50 px-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] pt-2">
-          <BottomNavChrome active="clips" />
-        </div>
-      </PhoneFrame>
+      </AppShell>
     );
   }
 
@@ -509,7 +512,7 @@ export function BichlegFeedClient({
     duration > 0 ? Math.min(100, (currentTime / duration) * 100) : 0;
 
   return (
-    <PhoneFrame>
+    <AppShell activeTab="clips" showBottomNav={false} immersive>
       <div className="bs-bichleg-shell">
         <Link href={backHref} className="bs-bichleg-back" aria-label="Буцах">
           ←
@@ -670,7 +673,7 @@ export function BichlegFeedClient({
           ) : null}
         </div>
 
-        <div className="absolute inset-x-0 bottom-0 z-50 px-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] pt-2">
+        <div className="absolute inset-x-0 bottom-0 z-50 px-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] pt-2 lg:hidden">
           <BottomNavChrome active="clips" />
         </div>
 
@@ -770,6 +773,6 @@ export function BichlegFeedClient({
 
         {toast ? <div className="bs-bichleg-toast">{toast}</div> : null}
       </div>
-    </PhoneFrame>
+    </AppShell>
   );
 }

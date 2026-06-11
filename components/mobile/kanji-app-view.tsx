@@ -92,7 +92,7 @@ export function KanjiAppView({ entries, lessonVocab, lang = null }: Props) {
   const lessonsHref = lang === "ko" ? "/home" : "/study";
 
   return (
-    <MobileAppShell activeTab="kanji" mainClassName="max-w-[390px] mx-auto w-full">
+    <MobileAppShell activeTab="kanji" mainClassName="mx-auto w-full max-w-[390px] lg:max-w-none">
       <MobilePageHeader
         title={lettersPageTitle(lang)}
         subtitle={lettersPageSubtitle(lang)}

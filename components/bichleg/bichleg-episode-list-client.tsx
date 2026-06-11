@@ -2,11 +2,13 @@
 
 import Link from "next/link";
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
+import { SHELL_MAIN_NARROW } from "@/lib/app-shell-classes";
 import { MobilePageHeader } from "@/components/mobile/mobile-page-header";
 import {
   formatEpisodeListTitle,
   formatSeriesHeaderMeta,
 } from "@/lib/bichleg/episode-label";
+import { resolveSeriesContinueVideoId } from "@/lib/bichleg/video-progress-utils";
 import type {
   UserVideoProgress,
   VideoEpisodeItem,
@@ -84,8 +86,22 @@ export function BichlegEpisodeListClient({
         ? "Цувралгүй бичлэг"
         : "Анги олдсонгүй";
 
+  const continueVideoId = resolveSeriesContinueVideoId(episodes, progressByVideoId);
+  const continueEpisode = continueVideoId
+    ? episodes.find((ep) => ep.id === continueVideoId)
+    : null;
+  const continueLabel = continueEpisode
+    ? formatEpisodeListTitle(continueEpisode.episode_no, continueEpisode.title_mn)
+    : null;
+  const hasPartialProgress =
+    continueVideoId != null &&
+    Boolean(
+      progressByVideoId[continueVideoId]?.watched_sec &&
+        !progressByVideoId[continueVideoId]?.completed
+    );
+
   return (
-    <MobileAppShell activeTab="clips" mainClassName="max-w-[390px] mx-auto w-full">
+    <MobileAppShell activeTab="clips" mainClassName={SHELL_MAIN_NARROW}>
       <Link href="/bichleg" className="bs-mem-back">
         ← Цуврал сонгох
       </Link>
@@ -106,7 +122,24 @@ export function BichlegEpisodeListClient({
           </Link>
         </div>
       ) : (
-        <div className="bs-bichleg-ep-list">
+        <>
+          {continueVideoId && continueLabel ? (
+            <Link
+              href={episodeHref(seriesId, continueVideoId)}
+              className="bs-bichleg-continue-card"
+            >
+              <div className="bs-bichleg-continue-body">
+                <p className="bs-bichleg-continue-title">
+                  {hasPartialProgress ? "Үргэлжлүүлэх" : "Эхлэх"}
+                </p>
+                <p className="bs-bichleg-continue-meta">{continueLabel}</p>
+              </div>
+              <span className="bs-bichleg-continue-play" aria-hidden>
+                ▶
+              </span>
+            </Link>
+          ) : null}
+          <div className="bs-bichleg-ep-list">
           {episodes.map((episode, index) => (
             <EpisodeRow
               key={episode.id}
@@ -116,7 +149,8 @@ export function BichlegEpisodeListClient({
               completed={Boolean(progressByVideoId[episode.id]?.completed)}
             />
           ))}
-        </div>
+          </div>
+        </>
       )}
     </MobileAppShell>
   );

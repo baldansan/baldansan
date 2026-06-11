@@ -13,12 +13,13 @@ export function MockTestAttemptReviewClient({ review }: Props) {
     <MobileAppShell
       activeTab="games"
       showBottomNav={false}
-      mainClassName="max-w-[430px] mx-auto w-full px-0 pb-8"
+      mainClassName="mx-auto w-full max-w-[430px] lg:max-w-none px-0 pb-8"
     >
       <MockTestResultView
         test={review.test}
         result={review.result}
         weakLessons={review.weakLessons}
+        completedLessonIds={review.completedLessonIds}
         backHref={`/test/${review.test.id}`}
         backLabel="Тест рүү буцах"
       />

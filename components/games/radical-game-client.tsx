@@ -17,6 +17,11 @@ type Props = {
   lessonId: string;
   entries?: RadicalGameEntry[];
   labels?: GameLabels;
+  returnHref?: string;
+  customWordSet?: boolean;
+  /** Дүгнэлтийн дасгал — тоглоомын shell багасгана. */
+  embedded?: boolean;
+  onReturnToSummary?: () => void;
 };
 
 type SelectedSlot = {
@@ -30,6 +35,10 @@ export function RadicalGameClient({
   lessonId,
   entries: entriesProp,
   labels: labelsProp,
+  returnHref,
+  customWordSet = false,
+  embedded = false,
+  onReturnToSummary,
 }: Props) {
   const labels = labelsProp ?? resolveGameLabels(false, false);
   const entries = useMemo(
@@ -127,15 +136,17 @@ export function RadicalGameClient({
   function finishGame() {
     const finalAccuracy =
       attempts > 0 ? Math.round((correct / attempts) * 100) : 100;
-    saveGameResult({
-      gameType: "radical",
-      lessonId,
-      score,
-      correct,
-      total,
-      accuracy: finalAccuracy,
-      playedAt: new Date().toISOString(),
-    });
+    if (!embedded) {
+      saveGameResult({
+        gameType: "radical",
+        lessonId,
+        score,
+        correct,
+        total,
+        accuracy: finalAccuracy,
+        playedAt: new Date().toISOString(),
+      });
+    }
     setFinished(true);
   }
 
@@ -151,9 +162,21 @@ export function RadicalGameClient({
 
   if (entries.length === 0) {
     return (
-      <GameShell mainClassName="max-w-[430px] mx-auto w-full bg-[#f1f6f3]">
-        <div className="py-16 text-center text-sm text-[var(--app-muted)]">
-          Тоглоомын өгөгдөл олдсонгүй.
+      <GameShell mainClassName="mx-auto w-full max-w-[430px] lg:max-w-none bg-[#f1f6f3] px-5 pt-6">
+        <div className="rounded-[24px] bg-white p-8 text-center shadow-[0_12px_30px_rgba(25,40,30,0.10)]">
+          <p className="text-sm font-bold text-[var(--app-text)]">
+            {customWordSet
+              ? "Эдгээр үгсэд задлах тоглоомын өгөгдөл олдсонгүй."
+              : "Тоглоомын өгөгдөл олдсонгүй."}
+          </p>
+          {returnHref ? (
+            <Link
+              href={returnHref}
+              className="mt-4 inline-flex min-h-[44px] items-center justify-center rounded-[14px] bg-[var(--app-primary)] px-5 text-sm font-extrabold text-white"
+            >
+              Багц руу буцах
+            </Link>
+          ) : null}
         </div>
       </GameShell>
     );
@@ -161,7 +184,7 @@ export function RadicalGameClient({
 
   if (finished) {
     return (
-      <GameShell mainClassName="max-w-[430px] mx-auto w-full bg-[#f1f6f3] px-5 pt-6">
+      <GameShell mainClassName="mx-auto w-full max-w-[430px] lg:max-w-none bg-[#f1f6f3] px-5 pt-6">
         <RadicalGameTop title={labels.radicalTitle} counter={`${total} / ${total}`} />
         <div className="mb-4 h-2 overflow-hidden rounded-full bg-[#e1ebe5]">
           <div className="h-full w-full rounded-full bg-[var(--app-primary)] transition-all" />
@@ -183,6 +206,22 @@ export function RadicalGameClient({
           >
             Дахин эхлэх
           </button>
+          {onReturnToSummary ? (
+            <button
+              type="button"
+              onClick={onReturnToSummary}
+              className="mt-3 inline-flex min-h-[48px] w-full max-w-[200px] items-center justify-center rounded-[15px] bg-[#eaf0ed] px-5 py-3 text-[15px] font-extrabold text-[#3b473f]"
+            >
+              Дүгнэлт рүү буцах
+            </button>
+          ) : returnHref ? (
+            <Link
+              href={returnHref}
+              className="mt-3 inline-flex min-h-[48px] w-full max-w-[200px] items-center justify-center rounded-[15px] bg-[#eaf0ed] px-5 py-3 text-[15px] font-extrabold text-[#3b473f]"
+            >
+              Багц руу буцах
+            </Link>
+          ) : null}
         </div>
       </GameShell>
     );
@@ -193,7 +232,7 @@ export function RadicalGameClient({
   const hanziRevealed = checkResult === "ok";
 
   return (
-    <GameShell mainClassName="max-w-[430px] mx-auto w-full bg-[#f1f6f3] px-5 pt-6 pb-8">
+    <GameShell mainClassName="mx-auto w-full max-w-[430px] lg:max-w-none bg-[#f1f6f3] px-5 pt-6 pb-8">
       <RadicalGameTop
         title={labels.radicalTitle}
         counter={`${index + 1} / ${total}`}
@@ -208,14 +247,16 @@ export function RadicalGameClient({
 
       <RadicalGameStats score={score} streak={streak} accuracy={accuracy} />
 
-      <div className="mb-3 flex justify-end">
-        <Link
-          href="/games/radical/challenge"
-          className="rounded-full bg-[#fff4e0] px-3.5 py-1.5 text-xs font-extrabold text-[#b9760a]"
-        >
-          ⚡ Сорилт горим
-        </Link>
-      </div>
+      {!embedded ? (
+        <div className="mb-3 flex justify-end">
+          <Link
+            href="/games/radical/challenge"
+            className="rounded-full bg-[#fff4e0] px-3.5 py-1.5 text-xs font-extrabold text-[#b9760a]"
+          >
+            ⚡ Сорилт горим
+          </Link>
+        </div>
+      ) : null}
 
       <div className="rounded-[24px] bg-white p-[18px] shadow-[0_12px_30px_rgba(25,40,30,0.10)]">
         <RadicalHanziPanel
