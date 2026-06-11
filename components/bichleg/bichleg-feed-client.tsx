@@ -4,10 +4,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import PhoneFrame from "@/components/layout/PhoneFrame";
 import { BottomNavChrome } from "@/components/mobile/bottom-nav-chrome";
 import {
-  SUBTITLE_MODE_CYCLE,
-  SUBTITLE_MODE_LABELS,
   formatSeriesEpisodeBadge,
-  type SubtitleDisplayMode,
   type SubtitleWord,
   type VideoRow,
   type VideoSeriesInfo,
@@ -38,11 +35,6 @@ type Props = {
 };
 
 type PickedWord = SubtitleWord & { sourceVideoId: string };
-
-function nextSubtitleMode(mode: SubtitleDisplayMode): SubtitleDisplayMode {
-  const i = SUBTITLE_MODE_CYCLE.indexOf(mode);
-  return SUBTITLE_MODE_CYCLE[(i + 1) % SUBTITLE_MODE_CYCLE.length];
-}
 
 function findActiveSubtitle(
   subtitles: VideoSubtitleRow[],
@@ -134,8 +126,8 @@ export function BichlegFeedClient({ videos, seriesList = [] }: Props) {
   >({});
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
-  const [subtitleMode, setSubtitleMode] =
-    useState<SubtitleDisplayMode>("all");
+  const [showPinyin, setShowPinyin] = useState(true);
+  const [showMn, setShowMn] = useState(true);
   const [preferredSpeed, setPreferredSpeed] = useState<BichlegPreferredSpeed>(1);
   const [displaySpeed, setDisplaySpeed] = useState(1);
   const [muted, setMuted] = useState(true);
@@ -471,22 +463,17 @@ export function BichlegFeedClient({ videos, seriesList = [] }: Props) {
                   ) : null}
                 </div>
 
-                {isActive && subtitleMode !== "off" && activeSubtitle ? (
+                {isActive && activeSubtitle ? (
                   <div className="bs-bichleg-subs">
-                    {(subtitleMode === "all" || subtitleMode === "study") &&
-                    activeSubtitle.pinyin ? (
-                      <p className="bs-bl-pinyin">{activeSubtitle.pinyin}</p>
-                    ) : null}
-                    {(subtitleMode === "all" ||
-                      subtitleMode === "study" ||
-                      subtitleMode === "zh") &&
-                    activeSubtitle.zh ? (
-                      renderZh(activeSubtitle)
-                    ) : null}
-                    {(subtitleMode === "all" || subtitleMode === "mn") &&
-                    activeSubtitle.mn ? (
-                      <p className="bs-bl-mn">{activeSubtitle.mn}</p>
-                    ) : null}
+                    <div className="bs-bichleg-subs-panel">
+                      {showPinyin && activeSubtitle.pinyin ? (
+                        <p className="bs-bl-pinyin">{activeSubtitle.pinyin}</p>
+                      ) : null}
+                      {activeSubtitle.zh ? renderZh(activeSubtitle) : null}
+                      {showMn && activeSubtitle.mn ? (
+                        <p className="bs-bl-mn">{activeSubtitle.mn}</p>
+                      ) : null}
+                    </div>
                   </div>
                 ) : null}
 
@@ -546,15 +533,25 @@ export function BichlegFeedClient({ videos, seriesList = [] }: Props) {
           })}
         </div>
 
-        <button
-          type="button"
-          className="bs-bichleg-mode-btn"
-          onClick={() => setSubtitleMode((m) => nextSubtitleMode(m))}
-        >
-          {SUBTITLE_MODE_LABELS[subtitleMode]}
-        </button>
-
         <div className="bs-bichleg-controls">
+          <button
+            type="button"
+            className={`bs-bichleg-ctrl-btn ${showPinyin ? "bs-bichleg-ctrl-btn--on" : ""}`}
+            aria-pressed={showPinyin}
+            aria-label="Пиньинь харуулах"
+            onClick={() => setShowPinyin((on) => !on)}
+          >
+            拼
+          </button>
+          <button
+            type="button"
+            className={`bs-bichleg-ctrl-btn ${showMn ? "bs-bichleg-ctrl-btn--on" : ""}`}
+            aria-pressed={showMn}
+            aria-label="Монгол орчуулга харуулах"
+            onClick={() => setShowMn((on) => !on)}
+          >
+            MN
+          </button>
           <button
             type="button"
             className={`bs-bichleg-ctrl-btn ${Math.abs(displaySpeed - 1) > 0.001 ? "bs-bichleg-ctrl-btn--speed" : ""}`}

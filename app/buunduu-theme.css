@@ -254,20 +254,22 @@ body{
 .bs-bichleg-player-placeholder{background:linear-gradient(180deg,#1a1f1c,#0a0f0c)}
 .bs-bichleg-progress{position:absolute;top:0;left:0;height:3px;background:#1FB85A;transition:width .15s linear;z-index:2}
 .bs-bichleg-subs{position:absolute;left:0;right:56px;bottom:5.5rem;padding:0 16px 12px;z-index:3;text-align:center;pointer-events:auto}
-.bs-bl-pinyin{margin:0;font-size:13px;font-weight:600;color:rgba(255,255,255,.72);line-height:1.35}
-.bs-bl-zh{margin:6px 0 0;font-size:22px;font-weight:800;color:#fff;line-height:1.35}
-.bs-bl-mn{margin:6px 0 0;font-size:14px;font-weight:600;color:rgba(255,255,255,.88);line-height:1.4}
+.bs-bichleg-subs-panel{display:inline-block;max-width:92%;padding:10px 14px;border-radius:12px;background:rgba(0,0,0,.55);backdrop-filter:blur(2px);text-align:center}
+.bs-bl-pinyin{margin:0;font-size:13px;font-weight:600;color:#d6d6d6;line-height:1.35}
+.bs-bichleg-subs-panel .bs-bl-zh{margin:0;font-size:22px;font-weight:800;color:#fff;line-height:1.35}
+.bs-bichleg-subs-panel .bs-bl-zh:not(:first-child){margin-top:6px}
+.bs-bl-mn{margin:6px 0 0;font-size:14px;font-weight:600;color:#e8f5ec;line-height:1.4}
 .bs-bl-word{border:none;background:transparent;padding:0;color:inherit;font:inherit;cursor:pointer}
 .bs-bl-word--key{text-decoration:underline;text-decoration-color:#1FB85A;text-underline-offset:4px}
 .bs-bichleg-actions{position:absolute;right:10px;bottom:6.5rem;display:flex;flex-direction:column;gap:10px;z-index:4}
 .bs-bichleg-action{display:flex;align-items:center;justify-content:center;width:42px;height:42px;border:none;border-radius:999px;background:rgba(0,0,0,.45);color:#fff;backdrop-filter:blur(6px);cursor:pointer}
 .bs-bichleg-action--on{color:#fb7185}
 .bs-bichleg-action-icon{width:20px;height:20px}
-.bs-bichleg-mode-btn{position:absolute;right:12px;bottom:4.75rem;z-index:5;min-height:30px;padding:0 10px;border:none;border-radius:999px;background:rgba(0,0,0,.5);color:#fff;font-size:11px;font-weight:800;backdrop-filter:blur(6px);cursor:pointer}
-.bs-bichleg-controls{position:absolute;left:12px;bottom:4.75rem;display:flex;gap:8px;z-index:5}
-.bs-bichleg-ctrl-btn{min-height:32px;padding:0 12px;border:none;border-radius:999px;background:rgba(0,0,0,.5);color:#fff;font-size:11px;font-weight:800;backdrop-filter:blur(6px);cursor:pointer}
-.bs-bichleg-ctrl-btn--warn{background:rgba(31,184,90,.85)}
-.bs-bichleg-ctrl-btn--speed{background:#1FB85A}
+.bs-bichleg-controls{position:absolute;left:12px;bottom:4.75rem;display:flex;flex-wrap:wrap;gap:8px;z-index:5;max-width:calc(100% - 68px)}
+.bs-bichleg-ctrl-btn{min-height:32px;padding:0 12px;border:none;border-radius:999px;background:rgba(255,255,255,.18);color:rgba(255,255,255,.7);font-size:11px;font-weight:800;backdrop-filter:blur(6px);cursor:pointer}
+.bs-bichleg-ctrl-btn--on{background:#1FB85A;color:#fff}
+.bs-bichleg-ctrl-btn--warn{background:rgba(31,184,90,.85);color:#fff}
+.bs-bichleg-ctrl-btn--speed{background:#1FB85A;color:#fff}
 .bs-bichleg-sheet-backdrop{position:absolute;inset:0;z-index:60;display:flex;align-items:flex-end;background:rgba(0,0,0,.45)}
 .bs-bichleg-sheet{width:100%;padding:16px 16px 20px;border-radius:18px 18px 0 0;background:#fff;animation:bs-sheet-up .2s ease}
 .bs-bichleg-sheet--keys{max-height:55vh;overflow:auto}
