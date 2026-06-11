@@ -36,7 +36,7 @@ const TABS: { key: BottomNavTab; label: string; href: string; icon: ReactNode }[
   {
     key: "clips",
     label: "Бичлэг",
-    href: "/clips",
+    href: "/bichleg",
     icon: (
       <svg viewBox="0 0 24 24" fill="none">
         <rect x="3" y="5" width="18" height="14" rx="3" stroke="currentColor" strokeWidth="1.8" />
