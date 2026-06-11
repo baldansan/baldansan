@@ -46,10 +46,12 @@ async function appendKoreanCourses(
   return next;
 }
 
+const HSK_CATALOG_LEVELS = ["hsk6", "hsk5", "hsk4"] as const;
+
 async function appendHskCourse(
   catalog: Course[],
   lessonCounts: Record<string, number>,
-  courseId: "hsk4" | "hsk5"
+  courseId: (typeof HSK_CATALOG_LEVELS)[number]
 ): Promise<Course[]> {
   const [lessons, course] = await Promise.all([
     getPublicLessonsByCourseId(courseId),
@@ -62,12 +64,12 @@ async function appendHskCourse(
   }
 
   const next = catalog.filter((entry) => entry.id !== courseId);
-  const defaultTitle = courseId === "hsk4" ? "HSK 4 上" : "HSK 5";
-  const defaultLevel = courseId === "hsk4" ? "HSK4" : "HSK5";
+  const levelNumber = courseId.replace("hsk", "");
+  const defaultTitle = `HSK ${levelNumber}`;
   next.unshift({
     id: courseId,
     title: course?.title ?? defaultTitle,
-    level: defaultLevel,
+    level: courseId.toUpperCase(),
     description: course?.subtitle ?? "",
     lessons: lessons.length,
     vocabulary: lessons.reduce((sum, lesson) => sum + lesson.vocabularyCount, 0),
@@ -77,25 +79,13 @@ async function appendHskCourse(
   return next;
 }
 
-async function appendHsk5Course(
-  catalog: Course[],
-  lessonCounts: Record<string, number>
-): Promise<Course[]> {
-  return appendHskCourse(catalog, lessonCounts, "hsk5");
-}
-
-async function appendHsk4Course(
-  catalog: Course[],
-  lessonCounts: Record<string, number>
-): Promise<Course[]> {
-  return appendHskCourse(catalog, lessonCounts, "hsk4");
-}
-
 export default async function CoursesPage() {
   const lessonCounts: Record<string, number> = {};
-  const withHsk5 = await appendHsk5Course([...courses], lessonCounts);
-  const withHsk4 = await appendHsk4Course(withHsk5, lessonCounts);
-  const catalogCourses = await appendKoreanCourses(withHsk4, lessonCounts);
+  let catalog = [...courses];
+  for (const courseId of HSK_CATALOG_LEVELS) {
+    catalog = await appendHskCourse(catalog, lessonCounts, courseId);
+  }
+  const catalogCourses = await appendKoreanCourses(catalog, lessonCounts);
 
   const courseCards = catalogCourses.map((course) => ({
     ...course,

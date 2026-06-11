@@ -7,9 +7,9 @@ export const SELECTED_COURSE_ID_KEY = "selectedCourseId";
 
 /** Course ids probed when loading learner lesson catalogs. */
 export const LEARNER_COURSE_PROBE_IDS = [
+  "hsk6",
   "hsk5",
   "hsk4",
-  "hsk4a",
   "hsk1",
   "hsk",
   "korean-level-1",
