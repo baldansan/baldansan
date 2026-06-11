@@ -15,6 +15,7 @@
     "load:mocktest": "node --env-file=.env.local scripts/load_mocktest.mjs",
     "load:tests": "node --env-file=.env.local scripts/load_tests.mjs",
     "load:tests:one": "node --env-file=.env.local scripts/load_tests.mjs",
+    "load:videos": "node --env-file=.env.local scripts/load_videos.mjs",
     "export:lessons": "node --env-file=.env.local scripts/export_lessons.mjs"
   },
   "dependencies": {

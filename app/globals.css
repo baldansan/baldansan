@@ -47,7 +47,8 @@ body {
 }
 
 .zh,
-.bs-zh {
+.bs-zh,
+.hanzi {
   font-family: var(--bs-zh, var(--font-noto-sc)), "Noto Sans SC", "PingFang SC",
     "Microsoft YaHei", sans-serif;
   line-height: 1.65;

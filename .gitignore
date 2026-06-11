@@ -46,6 +46,7 @@ next-env.d.ts
 
 # HSK mock test assets — Supabase руу npm run load:tests-ээр оруулна
 /data/tests/
+/data/videos/
 /final_bundle/
 /.tmp-hsk-upload/
 /H*.json
