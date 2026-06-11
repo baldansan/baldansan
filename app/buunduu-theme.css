@@ -246,10 +246,23 @@ body{
 .bs-mt-title{margin:0;font-size:20px;font-weight:800;color:var(--bs-ink)}
 .bs-mt-sub{margin:6px 0 0;font-size:12px;font-weight:600;color:var(--bs-muted);line-height:1.45}
 .bs-mt-list,.bs-mt-intro,.bs-mt-exam,.bs-mt-result{padding-top:4px}
-.bs-mt-card{padding:14px 16px;border-radius:16px;background:var(--bs-card);box-shadow:var(--bs-shadow)}
+.bs-mt-card{padding:14px 16px;border-radius:16px;background:var(--bs-card);box-shadow:var(--bs-shadow);text-decoration:none;color:inherit}
+.bs-mt-card--row{display:flex;align-items:center;gap:12px}
+.bs-mt-card-body{flex:1;min-width:0}
+.bs-mt-card-head{display:flex;align-items:center;flex-wrap:wrap;gap:8px}
 .bs-mt-card-code{margin:0;font-size:11px;font-weight:800;color:var(--bs-green-700);letter-spacing:.04em}
-.bs-mt-card-title{margin:4px 0 0;font-size:15px;font-weight:800;color:var(--bs-ink)}
+.bs-mt-card-title{margin:0;font-size:15px;font-weight:800;color:var(--bs-ink);line-height:1.2}
+.bs-mt-card-badge{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:10px;font-weight:600;color:#5d6f64;background:#f1f5f2;border-radius:5px;padding:2px 6px;line-height:1.4}
 .bs-mt-card-meta{margin:4px 0 0;font-size:11px;font-weight:600;color:var(--bs-muted)}
+.bs-mt-level-section{margin-top:16px}
+.bs-mt-card-list{display:flex;flex-direction:column;gap:10px;margin-top:8px}
+.bs-mt-chip-row{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.bs-mt-chip{display:inline-flex;align-items:center;gap:4px;padding:3px 8px;border-radius:999px;font-size:10px;font-weight:700;line-height:1.3;white-space:nowrap}
+.bs-mt-chip--meta{color:#5d6f64;background:#f2f6f3}
+.bs-mt-chip--skill{color:#2f7d4f;background:#e7f5ec}
+.bs-mt-chip-icon{width:12px;height:12px;flex-shrink:0}
+.bs-mt-play-btn{display:flex;align-items:center;justify-content:center;flex-shrink:0;width:32px;height:32px;border-radius:999px;background:#1FB85A;color:#fff}
+.bs-mt-play-btn svg{width:14px;height:14px;margin-left:1px}
 .bs-mt-start-btn{display:inline-flex;min-height:40px;align-items:center;border-radius:12px;background:var(--bs-green);padding:0 16px;font-size:13px;font-weight:800;color:#fff;text-decoration:none}
 .bs-mt-timer-bar{position:sticky;top:0;z-index:10;margin:0 -4px 12px;padding:10px 12px;border-radius:14px;background:var(--bs-card);box-shadow:var(--bs-shadow)}
 .bs-mt-timer-text{display:block;margin-bottom:6px;font-size:13px;font-weight:800;color:var(--bs-ink)}
