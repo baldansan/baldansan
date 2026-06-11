@@ -116,3 +116,84 @@ export function scoreMockTestAttempt(
     details,
   };
 }
+
+/** Rebuild result view from saved user_question_responses (past attempts). */
+export function scoreResultFromSavedResponses(
+  questions: MockTestQuestionRow[],
+  responses: Array<{
+    question_id: string;
+    user_answer: string | null;
+    is_correct: boolean | null;
+  }>
+): MockTestScoreResult {
+  const responseByQuestion = new Map(
+    responses.map((response) => [response.question_id, response])
+  );
+
+  const scoreBySkill: Record<string, number> = {};
+  const maxBySkill: Record<string, number> = {};
+  let rawScore = 0;
+  let maxScore = 0;
+  let gradedCount = 0;
+  let manualCount = 0;
+
+  const details = questions.map((q) => {
+    const saved = responseByQuestion.get(q.id);
+    const userAnswer = saved?.user_answer ?? null;
+    const pts = Number(q.points) || 1;
+    const isCorrect =
+      saved?.is_correct !== undefined && saved?.is_correct !== null
+        ? saved.is_correct
+        : gradeQuestion(q, userAnswer);
+
+    if (isCorrect === null) {
+      manualCount += 1;
+      return {
+        qNo: q.q_no,
+        questionId: q.id,
+        skill: q.skill,
+        qType: q.q_type,
+        userAnswer,
+        correctAnswer: q.correct_answer,
+        isCorrect: null,
+        points: pts,
+        autograde: q.autograde,
+        explanationMn: q.explanation_mn,
+      };
+    }
+
+    maxBySkill[q.skill] = (maxBySkill[q.skill] ?? 0) + pts;
+    maxScore += pts;
+    gradedCount += 1;
+
+    if (isCorrect) {
+      rawScore += pts;
+      scoreBySkill[q.skill] = (scoreBySkill[q.skill] ?? 0) + pts;
+    } else {
+      scoreBySkill[q.skill] = scoreBySkill[q.skill] ?? 0;
+    }
+
+    return {
+      qNo: q.q_no,
+      questionId: q.id,
+      skill: q.skill,
+      qType: q.q_type,
+      userAnswer,
+      correctAnswer: q.correct_answer,
+      isCorrect,
+      points: pts,
+      autograde: q.autograde,
+      explanationMn: q.explanation_mn,
+    };
+  });
+
+  return {
+    rawScore,
+    maxScore,
+    scoreBySkill,
+    maxBySkill,
+    gradedCount,
+    manualCount,
+    details,
+  };
+}
