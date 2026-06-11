@@ -24,6 +24,10 @@ import {
   safePlayerDuration,
   type YtPlayer,
 } from "@/lib/bichleg/youtube-api";
+import {
+  detectYouTubeVideoLayout,
+  type BichlegVideoLayout,
+} from "@/lib/bichleg/video-layout";
 import type { BichlegWordStatus } from "@/lib/supabase/saved-words";
 import {
   fetchBichlegWordStatus,
@@ -151,8 +155,22 @@ export function BichlegFeedClient({
   const [statusLoading, setStatusLoading] = useState(false);
   const [toast, setToast] = useState<string | null>(null);
   const [playerReady, setPlayerReady] = useState(false);
+  const [layoutByYoutubeId, setLayoutByYoutubeId] = useState<
+    Record<string, BichlegVideoLayout>
+  >({});
 
   const activeVideo = videos[activeIndex] ?? null;
+
+  useEffect(() => {
+    const ids = [...new Set(videos.map((v) => v.youtube_id))];
+    for (const youtubeId of ids) {
+      void detectYouTubeVideoLayout(youtubeId).then((layout) => {
+        setLayoutByYoutubeId((prev) =>
+          prev[youtubeId] ? prev : { ...prev, [youtubeId]: layout }
+        );
+      });
+    }
+  }, [videos]);
 
   const resolveDurationSec = useCallback(
     (video: VideoRow | null, playerDuration = 0) => {
@@ -504,10 +522,16 @@ export function BichlegFeedClient({
             const seriesBadge = formatSeriesEpisodeBadge(null, video.episode_no, {
               completed,
             });
+            const videoLayout =
+              layoutByYoutubeId[video.youtube_id] ?? "portrait";
             return (
               <section
                 key={video.id}
-                className="bs-bichleg-slide"
+                className={`bs-bichleg-slide${
+                  videoLayout === "landscape"
+                    ? " bs-bichleg-slide--landscape"
+                    : ""
+                }`}
                 data-slide-index={index}
               >
                 <div

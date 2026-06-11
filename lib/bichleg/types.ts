@@ -35,6 +35,10 @@ export type VideoRow = {
   created_at: string;
 };
 
+export type VideoEpisodeItem = VideoRow & {
+  subtitleCount: number;
+};
+
 export type VideoSubtitleRow = {
   id: string;
   video_id: string;

@@ -104,7 +104,7 @@ export async function fetchBichlegContinueTargetClient(): Promise<BichlegContinu
     "Бичлэг";
 
   return {
-    href: `/bichleg/${encodeURIComponent(seriesId)}?v=${encodeURIComponent(videoId)}`,
+    href: `/bichleg/${encodeURIComponent(seriesId)}/${encodeURIComponent(videoId)}`,
     title,
     subtitle: ep ? `${ep} · үргэлжлүүлэх` : "Үргэлжлүүлэх",
   };
