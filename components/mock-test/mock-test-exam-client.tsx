@@ -91,8 +91,8 @@ export function MockTestExamClient({ test, questions }: Props) {
     return (
       <MobileAppShell activeTab="games" showBottomNav={false} mainClassName="max-w-[430px] mx-auto w-full px-0 pb-8">
         <div className="bs-mt-intro px-4">
-          <Link href="/test" className="bs-mem-back">
-            ← Жагсаалт
+          <Link href="/review" className="bs-mem-back">
+            ← Давтах
           </Link>
           <h1 className="bs-mt-title mt-3">{test.title}</h1>
           <p className="bs-mt-sub">HSK {test.hsk_level} · {test.id}</p>
@@ -182,7 +182,7 @@ export function MockTestExamClient({ test, questions }: Props) {
             ))}
           </div>
 
-          <Link href="/test" className="bs-mock-primary-btn mt-6 block text-center leading-[48px] no-underline">
+          <Link href="/review" className="bs-mock-primary-btn mt-6 block text-center leading-[48px] no-underline">
             Буцах
           </Link>
         </div>

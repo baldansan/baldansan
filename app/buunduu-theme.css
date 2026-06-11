@@ -214,6 +214,7 @@ body{
 .bs-srs-done{margin-top:24px;padding:20px;border-radius:22px;background:var(--bs-card);box-shadow:var(--bs-shadow);text-align:center}
 .bs-srs-tag-hsk{background:#f0fdf4;color:var(--bs-green-700)}
 .bs-review-tabs{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin:8px 0 14px;padding:4px;border-radius:16px;background:#e8f5ef}
+.bs-review-tabs--3{grid-template-columns:repeat(3,1fr)}
 .bs-review-tab{min-height:40px;border:none;border-radius:12px;background:transparent;font-size:10px;font-weight:800;color:var(--bs-muted);cursor:pointer}
 .bs-review-tab--active{background:#fff;color:var(--bs-green-700);box-shadow:0 2px 8px rgba(31,184,90,.12)}
 .bs-mem-wizard{padding-top:4px}

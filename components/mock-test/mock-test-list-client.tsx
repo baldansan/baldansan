@@ -6,9 +6,11 @@ import { SKILL_LABELS_MN, type MockTestRow } from "@/lib/mock-test/types";
 
 type Props = {
   tests: MockTestRow[];
+  /** Давтах hub дотор — shell/back linkгүй */
+  embedded?: boolean;
 };
 
-export function MockTestListClient({ tests }: Props) {
+export function MockTestListClient({ tests, embedded = false }: Props) {
   const byLevel = tests.reduce<Record<number, MockTestRow[]>>((acc, t) => {
     const lvl = t.hsk_level;
     if (!acc[lvl]) acc[lvl] = [];
@@ -20,13 +22,16 @@ export function MockTestListClient({ tests }: Props) {
     .map(Number)
     .sort((a, b) => a - b);
 
-  return (
-    <MobileAppShell activeTab="games" showBottomNav mainClassName="max-w-[430px] mx-auto w-full px-0 pb-8">
-      <div className="bs-mt-list px-4">
-        <Link href="/games" className="bs-mem-back">
-          ← Тоглоом
-        </Link>
-        <h1 className="bs-mt-title mt-3">HSK загвар шалгалт</h1>
+  const listBody = (
+    <>
+        {!embedded ? (
+          <Link href="/games" className="bs-mem-back">
+            ← Тоглоом
+          </Link>
+        ) : null}
+        <h1 className={`bs-mt-title ${embedded ? "" : "mt-3"}`}>
+          HSK загвар шалгалт
+        </h1>
         <p className="bs-mt-sub">
           Албан ёсны загварын бүтэн шалгалт — таймер, аудио, автомат оноо
         </p>
@@ -68,7 +73,16 @@ export function MockTestListClient({ tests }: Props) {
             </section>
           ))
         )}
-      </div>
+    </>
+  );
+
+  if (embedded) {
+    return <div className="bs-mt-list">{listBody}</div>;
+  }
+
+  return (
+    <MobileAppShell activeTab="games" showBottomNav mainClassName="max-w-[430px] mx-auto w-full px-0 pb-8">
+      <div className="bs-mt-list px-4">{listBody}</div>
     </MobileAppShell>
   );
 }
