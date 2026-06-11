@@ -15,6 +15,12 @@ import {
 } from "@/lib/bichleg/types";
 import { BichlegYouTubePlayer } from "@/components/bichleg/bichleg-youtube-player";
 import {
+  formatPlaybackRateLabel,
+  nextBichlegSpeed,
+  type BichlegPreferredSpeed,
+} from "@/lib/bichleg/playback-rate";
+import {
+  applyPlaybackRate,
   safePlayerCurrentTime,
   safePlayerDuration,
   type YtPlayer,
@@ -130,7 +136,8 @@ export function BichlegFeedClient({ videos, seriesList = [] }: Props) {
   const [duration, setDuration] = useState(0);
   const [subtitleMode, setSubtitleMode] =
     useState<SubtitleDisplayMode>("all");
-  const [speed, setSpeed] = useState<0.75 | 1>(1);
+  const [preferredSpeed, setPreferredSpeed] = useState<BichlegPreferredSpeed>(1);
+  const [displaySpeed, setDisplaySpeed] = useState(1);
   const [muted, setMuted] = useState(true);
   const [liked, setLiked] = useState<Record<string, boolean>>({});
   const [bookmarked, setBookmarked] = useState<Record<string, boolean>>({});
@@ -173,16 +180,25 @@ export function BichlegFeedClient({ videos, seriesList = [] }: Props) {
     }
   }, []);
 
+  const syncPlaybackRate = useCallback(
+    (player: YtPlayer) => {
+      const actual = applyPlaybackRate(player, preferredSpeed);
+      setDisplaySpeed(actual);
+    },
+    [preferredSpeed]
+  );
+
   const handlePlayerReady = useCallback(() => {
     setPlayerReady(true);
     const player = playerRef.current;
     if (!player) return;
+    syncPlaybackRate(player);
     const d = safePlayerDuration(player);
     if (d != null) setDuration(d);
     else if (activeVideo?.duration_sec) {
       setDuration(Number(activeVideo.duration_sec));
     }
-  }, [activeVideo?.duration_sec]);
+  }, [activeVideo?.duration_sec, syncPlaybackRate]);
 
   useEffect(() => {
     setCurrentTime(0);
@@ -191,12 +207,8 @@ export function BichlegFeedClient({ videos, seriesList = [] }: Props) {
   useEffect(() => {
     const player = playerRef.current;
     if (!player || !playerReady) return;
-    try {
-      player.setPlaybackRate(speed);
-    } catch {
-      /* player destroyed */
-    }
-  }, [speed, playerReady]);
+    syncPlaybackRate(player);
+  }, [preferredSpeed, playerReady, syncPlaybackRate]);
 
   useEffect(() => {
     const player = playerRef.current;
@@ -545,10 +557,12 @@ export function BichlegFeedClient({ videos, seriesList = [] }: Props) {
         <div className="bs-bichleg-controls">
           <button
             type="button"
-            className="bs-bichleg-ctrl-btn"
-            onClick={() => setSpeed((s) => (s === 1 ? 0.75 : 1))}
+            className={`bs-bichleg-ctrl-btn ${Math.abs(displaySpeed - 1) > 0.001 ? "bs-bichleg-ctrl-btn--speed" : ""}`}
+            onClick={() =>
+              setPreferredSpeed((current) => nextBichlegSpeed(current))
+            }
           >
-            {speed === 1 ? "1×" : "0.75×"}
+            {formatPlaybackRateLabel(displaySpeed)}
           </button>
           {muted ? (
             <button

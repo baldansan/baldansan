@@ -1,3 +1,5 @@
+import { resolveAvailablePlaybackRate } from "@/lib/bichleg/playback-rate";
+
 let apiReady: Promise<void> | null = null;
 
 export function loadYouTubeIframeApi(): Promise<void> {
@@ -34,6 +36,8 @@ export type YtPlayer = {
   getCurrentTime: () => number;
   getDuration: () => number;
   setPlaybackRate: (rate: number) => void;
+  getPlaybackRate?: () => number;
+  getAvailablePlaybackRates?: () => number[];
   mute: () => void;
   unMute: () => void;
   destroy: () => void;
@@ -124,4 +128,36 @@ export function safePlayerDuration(player: YtPlayer): number | null {
   } catch {
     return null;
   }
+}
+
+const DEFAULT_PLAYBACK_RATES = [0.25, 0.5, 0.75, 1, 1.25, 1.5, 2];
+
+export function safeAvailablePlaybackRates(player: YtPlayer): number[] {
+  try {
+    const rates = player.getAvailablePlaybackRates?.();
+    if (Array.isArray(rates) && rates.length > 0) {
+      return rates;
+    }
+  } catch {
+    /* player destroyed */
+  }
+  return DEFAULT_PLAYBACK_RATES;
+}
+
+/** Apply preferred rate; returns the rate YouTube actually uses. */
+export function applyPlaybackRate(player: YtPlayer, preferred: number): number {
+  const resolved = resolveAvailablePlaybackRate(
+    preferred,
+    safeAvailablePlaybackRates(player)
+  );
+  try {
+    player.setPlaybackRate(resolved);
+    const actual = player.getPlaybackRate?.();
+    if (typeof actual === "number" && actual > 0) {
+      return actual;
+    }
+  } catch {
+    /* player destroyed */
+  }
+  return resolved;
 }

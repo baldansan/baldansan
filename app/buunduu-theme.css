@@ -267,6 +267,7 @@ body{
 .bs-bichleg-controls{position:absolute;left:12px;bottom:4.75rem;display:flex;gap:8px;z-index:5}
 .bs-bichleg-ctrl-btn{min-height:32px;padding:0 12px;border:none;border-radius:999px;background:rgba(0,0,0,.5);color:#fff;font-size:11px;font-weight:800;backdrop-filter:blur(6px);cursor:pointer}
 .bs-bichleg-ctrl-btn--warn{background:rgba(31,184,90,.85)}
+.bs-bichleg-ctrl-btn--speed{background:#1FB85A}
 .bs-bichleg-sheet-backdrop{position:absolute;inset:0;z-index:60;display:flex;align-items:flex-end;background:rgba(0,0,0,.45)}
 .bs-bichleg-sheet{width:100%;padding:16px 16px 20px;border-radius:18px 18px 0 0;background:#fff;animation:bs-sheet-up .2s ease}
 .bs-bichleg-sheet--keys{max-height:55vh;overflow:auto}
