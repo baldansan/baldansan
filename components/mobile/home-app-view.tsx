@@ -297,8 +297,7 @@ export function HomeAppView({ catalog, defaultChipId }: Props) {
         {timelineLessons.length === 0 ? (
           <MobileCard className="text-center !py-6">
             <p className="text-sm text-[var(--app-muted)]">
-              {activeCourse &&
-              ["hsk1", "hsk4a", "hsk4b"].includes(activeCourse.chipId)
+              {activeCourse && !activeCourse.available
                 ? "Энэ курс удахгүй нээгдэнэ."
                 : "Одоогоор хичээл алга. Import ZIP-ээр нэмнэ үү."}
             </p>

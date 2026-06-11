@@ -46,11 +46,14 @@ async function loadKoreanCourseForHome(): Promise<KoreanLoadResult> {
 }
 
 export async function loadMobileHomeData(): Promise<MobileHomeData> {
-  const [hsk5Lessons, hsk5Course, korean] = await Promise.all([
-    getPublicLessonSummariesByCourseId("hsk5"),
-    getCourseContentById("hsk5"),
-    loadKoreanCourseForHome(),
-  ]);
+  const [hsk5Lessons, hsk5Course, hsk4Lessons, hsk4Course, korean] =
+    await Promise.all([
+      getPublicLessonSummariesByCourseId("hsk5"),
+      getCourseContentById("hsk5"),
+      getPublicLessonSummariesByCourseId("hsk4"),
+      getCourseContentById("hsk4"),
+      loadKoreanCourseForHome(),
+    ]);
 
   const catalog = buildHomeCourseCatalog(
     {
@@ -65,7 +68,12 @@ export async function loadMobileHomeData(): Promise<MobileHomeData> {
           subtitle: korean.subtitle,
           lessons: korean.lessons,
         }
-      : null
+      : null,
+    {
+      title: hsk4Course?.title ?? "HSK 4 上",
+      subtitle: hsk4Course?.subtitle ?? "",
+      lessons: hsk4Lessons,
+    }
   );
 
   return {
