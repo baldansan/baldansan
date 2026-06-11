@@ -48,7 +48,6 @@ next-env.d.ts
 /data/tests/
 /data/videos/
 /content/mock-tests/
-/scripts/load_mocktest.mjs
 /final_bundle/
 /.tmp-hsk-upload/
 /H*.json

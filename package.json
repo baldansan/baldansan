@@ -12,12 +12,14 @@
     "lint": "eslint",
     "hsk1:audit:generate": "tsx scripts/hsk1-generate-source-audit.ts",
     "hsk1:audit:validate": "tsx scripts/hsk1-validate-source-audit.ts",
+    "build:hsk-json": "node scripts/build-hsk-words-json.mjs",
     "load:hsk": "node --env-file=.env.local scripts/load_hsk_words.mjs",
-    "load:mocktest": "node --env-file=.env.local scripts/load_mocktest.mjs",
     "load:tests": "node --env-file=.env.local scripts/load_tests.mjs",
-    "load:tests:one": "node --env-file=.env.local scripts/load_tests.mjs",
     "load:videos": "node --env-file=.env.local scripts/load_videos.mjs",
-    "export:lessons": "node --env-file=.env.local scripts/export_lessons.mjs"
+    "export:lessons": "node --env-file=.env.local scripts/export_lessons.mjs",
+    "patch:lesson-texts": "node scripts/patch-lesson-texts-sentences.mjs",
+    "test:workbook-listening": "tsx scripts/test-workbook-listening-resolve.ts",
+    "diag:courses": "node --env-file=.env.local scripts/diagnostics/diag-courses.mjs"
   },
   "dependencies": {
     "@supabase/ssr": "^0.10.3",
