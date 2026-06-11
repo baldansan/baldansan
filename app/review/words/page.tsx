@@ -1,9 +1,16 @@
-import { LanguageFilteredReviewView } from "@/components/mobile/language-filtered-review-view";
-import { getAllPublicLessonSummariesProbe } from "@/lib/content";
+import { ReviewSubScreen } from "@/components/review/review-sub-screen";
+import { WordSrsWordsClient } from "@/components/review/word-srs-words-client";
 
-export const revalidate = 120;
+export const dynamic = "force-dynamic";
 
-export default async function ReviewWordsPage() {
-  const allLessons = await getAllPublicLessonSummariesProbe();
-  return <LanguageFilteredReviewView allLessons={allLessons} />;
+export const metadata = {
+  title: "Миний үгс — Бөөндөө Сурцгаая",
+};
+
+export default function ReviewWordsPage() {
+  return (
+    <ReviewSubScreen>
+      <WordSrsWordsClient />
+    </ReviewSubScreen>
+  );
 }

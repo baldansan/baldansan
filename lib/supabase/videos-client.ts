@@ -1,6 +1,13 @@
 import type { SubtitleWord, VideoSubtitleRow } from "@/lib/bichleg/types";
-import { getAuthenticatedUserId } from "@/lib/supabase/auth";
+import {
+  getBichlegWordStatus,
+  saveWordFromBichleg,
+  type BichlegWordStatus,
+  type SaveWordFromBichlegResult,
+} from "@/lib/supabase/saved-words";
 import { hasSupabaseConfig, supabase } from "@/lib/supabase/client";
+
+export type { BichlegWordStatus, SaveWordFromBichlegResult };
 
 function mapSubtitle(raw: Record<string, unknown>): VideoSubtitleRow {
   let words: SubtitleWord[] | null = null;
@@ -44,35 +51,22 @@ export async function fetchVideoSubtitlesClient(
   return data.map((row) => mapSubtitle(row as Record<string, unknown>));
 }
 
+export async function fetchBichlegWordStatus(
+  zh: string
+): Promise<BichlegWordStatus> {
+  return getBichlegWordStatus(zh);
+}
+
 export async function saveWordFromVideo(input: {
   zh: string;
   pinyin?: string;
   mn?: string;
   sourceVideoId: string;
-}): Promise<{ ok: boolean; duplicate?: boolean; error?: string }> {
-  if (!supabase || !hasSupabaseConfig) {
-    return { ok: false, error: "Supabase тохируулагдаагүй." };
-  }
-
-  const { userId } = await getAuthenticatedUserId();
-  if (!userId) {
-    return { ok: false, error: "Нэвтрээгүй хэрэглэгч." };
-  }
-
-  const { error } = await supabase.from("user_saved_words").insert({
-    user_id: userId,
+}): Promise<SaveWordFromBichlegResult> {
+  return saveWordFromBichleg({
     zh: input.zh,
-    pinyin: input.pinyin ?? null,
-    mn: input.mn ?? null,
-    source_video_id: input.sourceVideoId,
+    pinyin: input.pinyin,
+    mn: input.mn,
+    sourceVideoId: input.sourceVideoId,
   });
-
-  if (error) {
-    if (error.code === "23505") {
-      return { ok: true, duplicate: true };
-    }
-    return { ok: false, error: error.message };
-  }
-
-  return { ok: true };
 }
