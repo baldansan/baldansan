@@ -213,10 +213,32 @@ body{
 .bs-srs-decomp-link{display:inline-block;margin-top:10px;font-size:11px;font-weight:800;color:var(--bs-green-700);text-decoration:underline}
 .bs-srs-done{margin-top:24px;padding:20px;border-radius:22px;background:var(--bs-card);box-shadow:var(--bs-shadow);text-align:center}
 .bs-srs-tag-hsk{background:#f0fdf4;color:var(--bs-green-700)}
-.bs-review-tabs{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin:8px 0 14px;padding:4px;border-radius:16px;background:#e8f5ef}
-.bs-review-tabs--3{grid-template-columns:repeat(3,1fr)}
-.bs-review-tab{min-height:40px;border:none;border-radius:12px;background:transparent;font-size:10px;font-weight:800;color:var(--bs-muted);cursor:pointer}
-.bs-review-tab--active{background:#fff;color:var(--bs-green-700);box-shadow:0 2px 8px rgba(31,184,90,.12)}
+.bs-review-hub{padding-top:4px}
+.bs-review-hub-head{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.bs-review-hub-title{margin:0;font-size:22px;font-weight:800;color:var(--bs-ink)}
+.bs-review-streak-chip{display:inline-flex;align-items:center;gap:4px;padding:4px 10px;border-radius:999px;background:#fff7ed;color:#c2410c;font-size:11px;font-weight:800;box-shadow:var(--bs-shadow)}
+.bs-review-streak-icon{width:14px;height:14px}
+.bs-review-hub-sub{margin:8px 0 14px;font-size:13px;font-weight:600;color:var(--bs-muted)}
+.bs-review-feature-card{display:flex;align-items:center;gap:12px;padding:16px 18px;border-radius:18px;background:#1FB85A;color:#fff;text-decoration:none;box-shadow:0 8px 24px rgba(31,184,90,.28)}
+.bs-review-feature-body{flex:1;min-width:0}
+.bs-review-feature-title{margin:0;font-size:16px;font-weight:800;line-height:1.2}
+.bs-review-feature-meta{margin:6px 0 0;font-size:12px;font-weight:600;opacity:.92}
+.bs-review-feature-track{height:6px;margin-top:12px;overflow:hidden;border-radius:999px;background:rgba(255,255,255,.28)}
+.bs-review-feature-fill{height:100%;border-radius:999px;background:#fff;transition:width .3s ease}
+.bs-review-feature-arrow{width:20px;height:20px;flex-shrink:0;opacity:.95}
+.bs-review-hub-cards{display:flex;flex-direction:column;gap:10px;margin-top:12px}
+.bs-review-hub-card{display:flex;align-items:center;gap:12px;padding:14px 16px;border-radius:16px;background:var(--bs-card);box-shadow:var(--bs-shadow);text-decoration:none;color:inherit}
+.bs-review-hub-icon{display:flex;align-items:center;justify-content:center;flex-shrink:0;width:42px;height:42px;border-radius:999px}
+.bs-review-hub-icon--blue{background:#e8f2ff;color:#2563eb}
+.bs-review-hub-icon--purple{background:#f3e8ff;color:#7c3aed}
+.bs-review-hub-icon-svg{width:22px;height:22px}
+.bs-review-hub-card-text{flex:1;min-width:0}
+.bs-review-hub-card-title{display:block;font-size:14px;font-weight:800;color:var(--bs-ink)}
+.bs-review-hub-card-meta{display:block;margin-top:2px;font-size:11px;font-weight:600;color:var(--bs-muted)}
+.bs-review-hub-chevron{width:18px;height:18px;flex-shrink:0;color:var(--bs-muted)}
+.bs-review-sub{padding-top:2px}
+.bs-review-back{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;margin-bottom:8px;border-radius:12px;background:#fff;box-shadow:var(--bs-shadow);color:var(--bs-ink);text-decoration:none}
+.bs-review-back-icon{width:18px;height:18px}
 .bs-mem-wizard{padding-top:4px}
 .bs-mem-step-title{margin:0;font-size:18px;font-weight:800;color:var(--bs-ink)}
 .bs-mem-step-sub{margin:6px 0 14px;font-size:12px;font-weight:600;color:var(--bs-muted)}
@@ -244,6 +266,7 @@ body{
 .bs-mock-score-pct{margin:8px 0 0;font-size:42px;font-weight:900;line-height:1;color:var(--bs-green-700)}
 /* === HSK загвар шалгалт (mock test) === */
 .bs-mt-title{margin:0;font-size:20px;font-weight:800;color:var(--bs-ink)}
+.bs-mt-title--embedded{margin-bottom:12px;font-size:17px}
 .bs-mt-sub{margin:6px 0 0;font-size:12px;font-weight:600;color:var(--bs-muted);line-height:1.45}
 .bs-mt-list,.bs-mt-intro,.bs-mt-exam,.bs-mt-result{padding-top:4px}
 .bs-mt-card{padding:14px 16px;border-radius:16px;background:var(--bs-card);box-shadow:var(--bs-shadow);text-decoration:none;color:inherit}

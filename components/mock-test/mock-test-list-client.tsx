@@ -115,12 +115,14 @@ export function MockTestListClient({ tests, embedded = false }: Props) {
           ← Тоглоом
         </Link>
       ) : null}
-      <h1 className={`bs-mt-title ${embedded ? "" : "mt-3"}`}>
-        HSK загвар шалгалт
-      </h1>
-      <p className="bs-mt-sub">
-        Албан ёсны загварын бүтэн шалгалт — таймер, аудио, автомат оноо
-      </p>
+        <h1 className={`bs-mt-title ${embedded ? "bs-mt-title--embedded" : "mt-3"}`}>
+          HSK загвар шалгалт
+        </h1>
+        {!embedded ? (
+          <p className="bs-mt-sub">
+            Албан ёсны загварын бүтэн шалгалт — таймер, аудио, автомат оноо
+          </p>
+        ) : null}
 
       {tests.length === 0 ? (
         <div className="bs-mt-card mt-4">
