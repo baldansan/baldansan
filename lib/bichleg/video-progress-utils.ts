@@ -26,6 +26,17 @@ export function resolveBichlegStartIndex(
 }
 
 /** Сүүлд хагас үзсэн анги, эсвэл эхний дуусаагүй анги. */
+/** Хагас үзсэн ангийн жижиг хувь (жишээ нь «45%»). */
+export function formatEpisodePartialPercent(
+  watchedSec: number,
+  durationSec: number | null | undefined
+): string | null {
+  const duration = Number(durationSec ?? 0);
+  if (!Number.isFinite(duration) || duration <= 0 || watchedSec <= 0) return null;
+  const pct = Math.min(99, Math.round((watchedSec / duration) * 100));
+  return pct > 0 ? `${pct}%` : null;
+}
+
 export function resolveSeriesContinueVideoId(
   episodes: Array<{ id: string }>,
   progressByVideoId: Record<string, UserVideoProgress>

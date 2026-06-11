@@ -1,5 +1,8 @@
 import { BichlegSeriesPickerClient } from "@/components/bichleg/bichleg-series-picker-client";
-import { fetchSeriesWatchProgressMap } from "@/lib/supabase/video-progress-server";
+import {
+  fetchSeriesWatchProgressMap,
+  isServerUserAuthenticated,
+} from "@/lib/supabase/video-progress-server";
 import {
   countOrphanVideos,
   fetchVideoSeriesCatalog,
@@ -17,19 +20,23 @@ export default async function BichlegPage() {
     countOrphanVideos(),
   ]);
 
+  const showProgress = await isServerUserAuthenticated();
   const totalsBySeriesId = Object.fromEntries(
     seriesList.map((s) => [s.id, s.videoCount])
   );
-  const seriesProgress = await fetchSeriesWatchProgressMap(
-    seriesList.map((s) => s.id),
-    totalsBySeriesId
-  );
+  const seriesProgress = showProgress
+    ? await fetchSeriesWatchProgressMap(
+        seriesList.map((s) => s.id),
+        totalsBySeriesId
+      )
+    : {};
 
   return (
     <BichlegSeriesPickerClient
       seriesList={seriesList}
       orphanCount={orphanCount}
       seriesProgress={seriesProgress}
+      showProgress={showProgress}
     />
   );
 }

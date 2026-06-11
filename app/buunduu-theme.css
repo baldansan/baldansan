@@ -418,6 +418,8 @@ body{
 .bs-bichleg-ep-rail-line{flex:1;width:2px;min-height:12px;margin-top:4px;background:#e7f0ea;border-radius:999px}
 .bs-bichleg-ep-row:last-child .bs-bichleg-ep-rail-line{display:none}
 .bs-bichleg-ep-node--done{background:#1FB85A;color:#fff;font-size:14px;line-height:1}
+.bs-bichleg-ep-node--partial{background:#e8f8ef;color:#1a7a42;font-size:10px;font-weight:800;line-height:1}
+.bs-bichleg-ep-meta--partial{color:#2f7d4f;font-weight:700}
 .bs-bichleg-ep-body{flex:1;min-width:0;padding-top:2px}
 .bs-bichleg-ep-title{margin:0;font-size:14px;font-weight:800;color:var(--bs-ink);line-height:1.35}
 .bs-bichleg-ep-meta{margin:4px 0 0;font-size:11px;font-weight:600;color:var(--bs-muted)}

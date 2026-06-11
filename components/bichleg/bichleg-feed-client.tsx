@@ -134,6 +134,7 @@ export function BichlegFeedClient({
   const subtitlesLoadedRef = useRef<Set<string>>(new Set());
   const peakWatchedRef = useRef<Record<string, number>>({});
   const lastFlushedVideoIdRef = useRef<string | null>(null);
+  const flushChainRef = useRef<Promise<void>>(Promise.resolve());
   const progressRef = useRef<Record<string, UserVideoProgress>>(initialProgress);
   const [activeIndex, setActiveIndex] = useState(initialActiveIndex);
   const [progressByVideoId, setProgressByVideoId] =
@@ -208,6 +209,17 @@ export function BichlegFeedClient({
     },
     [resolveDurationSec]
   );
+
+  const enqueueFlush = useCallback(
+    (video: VideoRow, watchedSec: number, playerDuration = 0) => {
+      flushChainRef.current = flushChainRef.current
+        .then(() => flushWatchProgress(video, watchedSec, playerDuration))
+        .catch(() => {});
+      return flushChainRef.current;
+    },
+    [flushWatchProgress]
+  );
+
   const activeSubtitles = activeVideo
     ? (subtitlesMap[activeVideo.id] ?? [])
     : [];
@@ -330,7 +342,7 @@ export function BichlegFeedClient({
       if (!player) return;
       const t = safePlayerCurrentTime(player);
       if (t == null) return;
-      void flushWatchProgress(
+      void enqueueFlush(
         activeVideo,
         t,
         safePlayerDuration(player) ?? duration
@@ -338,7 +350,7 @@ export function BichlegFeedClient({
     }, WATCH_SAVE_INTERVAL_MS);
 
     return () => clearInterval(interval);
-  }, [activeVideo?.id, playerReady, duration, flushWatchProgress]);
+  }, [activeVideo?.id, playerReady, duration, enqueueFlush]);
 
   useEffect(() => {
     const previousId = lastFlushedVideoIdRef.current;
@@ -346,11 +358,11 @@ export function BichlegFeedClient({
       const previousVideo = videos.find((v) => v.id === previousId);
       if (previousVideo) {
         const peak = peakWatchedRef.current[previousId] ?? 0;
-        void flushWatchProgress(previousVideo, peak, duration);
+        void enqueueFlush(previousVideo, peak, duration);
       }
     }
     lastFlushedVideoIdRef.current = activeVideo?.id ?? null;
-  }, [activeVideo?.id, videos, duration, flushWatchProgress]);
+  }, [activeVideo?.id, videos, duration, enqueueFlush]);
 
   useEffect(() => {
     return () => {
@@ -359,9 +371,9 @@ export function BichlegFeedClient({
       const video = videos.find((v) => v.id === videoId);
       if (!video) return;
       const peak = peakWatchedRef.current[videoId] ?? 0;
-      void flushWatchProgress(video, peak, duration);
+      void enqueueFlush(video, peak, duration);
     };
-  }, [videos, duration, flushWatchProgress]);
+  }, [videos, duration, enqueueFlush]);
 
   useEffect(() => {
     const root = feedRef.current;

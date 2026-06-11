@@ -12,6 +12,8 @@ type Props = {
   seriesList: VideoSeriesCard[];
   orphanCount: number;
   seriesProgress?: Record<string, SeriesWatchProgress>;
+  /** Нэвтэрсэн үед л N/M явц харуулна. */
+  showProgress?: boolean;
 };
 
 function SeriesCoverArt({
@@ -71,9 +73,11 @@ function SeriesProgressBar({
 function SeriesPickerCard({
   series,
   progress,
+  showProgress,
 }: {
   series: VideoSeriesCard;
   progress?: SeriesWatchProgress;
+  showProgress: boolean;
 }) {
   const titleMn = series.title_mn ?? series.title_zh ?? series.id;
   const watchedCount = progress?.watchedCount ?? 0;
@@ -103,10 +107,12 @@ function SeriesPickerCard({
             </span>
           ) : null}
         </div>
-        <SeriesProgressBar
-          watchedCount={watchedCount}
-          totalCount={totalCount}
-        />
+        {showProgress ? (
+          <SeriesProgressBar
+            watchedCount={watchedCount}
+            totalCount={totalCount}
+          />
+        ) : null}
       </div>
       <span className="bs-bichleg-series-card-chevron" aria-hidden>
         ›
@@ -119,6 +125,7 @@ export function BichlegSeriesPickerClient({
   seriesList,
   orphanCount,
   seriesProgress = {},
+  showProgress = false,
 }: Props) {
   return (
     <MobileAppShell activeTab="clips" mainClassName={SHELL_MAIN_NARROW}>
@@ -140,6 +147,7 @@ export function BichlegSeriesPickerClient({
               key={series.id}
               series={series}
               progress={seriesProgress[series.id]}
+              showProgress={showProgress}
             />
           ))}
           {orphanCount > 0 ? (
