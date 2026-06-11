@@ -6,9 +6,11 @@ import { BottomNavChrome } from "@/components/mobile/bottom-nav-chrome";
 import {
   SUBTITLE_MODE_CYCLE,
   SUBTITLE_MODE_LABELS,
+  formatSeriesEpisodeBadge,
   type SubtitleDisplayMode,
   type SubtitleWord,
   type VideoRow,
+  type VideoSeriesInfo,
   type VideoSubtitleRow,
 } from "@/lib/bichleg/types";
 import {
@@ -22,6 +24,7 @@ import {
 
 type Props = {
   videos: VideoRow[];
+  seriesList?: VideoSeriesInfo[];
 };
 
 type PickedWord = SubtitleWord & { sourceVideoId: string };
@@ -105,11 +108,17 @@ function BichlegIcon({
   );
 }
 
-export function BichlegFeedClient({ videos }: Props) {
+export function BichlegFeedClient({ videos, seriesList = [] }: Props) {
   const feedRef = useRef<HTMLDivElement>(null);
   const playerRef = useRef<YtPlayer | null>(null);
   const subtitlesLoadedRef = useRef<Set<string>>(new Set());
+  const [seriesFilter, setSeriesFilter] = useState<string>("all");
   const [activeIndex, setActiveIndex] = useState(0);
+
+  const displayVideos = useMemo(() => {
+    if (seriesFilter === "all") return videos;
+    return videos.filter((v) => v.series_id === seriesFilter);
+  }, [videos, seriesFilter]);
   const [subtitlesMap, setSubtitlesMap] = useState<
     Record<string, VideoSubtitleRow[]>
   >({});
@@ -126,7 +135,7 @@ export function BichlegFeedClient({ videos }: Props) {
   const [toast, setToast] = useState<string | null>(null);
   const [playerReady, setPlayerReady] = useState(false);
 
-  const activeVideo = videos[activeIndex] ?? null;
+  const activeVideo = displayVideos[activeIndex] ?? null;
   const activeSubtitles = activeVideo
     ? (subtitlesMap[activeVideo.id] ?? [])
     : [];
@@ -217,8 +226,13 @@ export function BichlegFeedClient({ videos }: Props) {
   }, [playerReady, activeVideo?.id]);
 
   useEffect(() => {
+    setActiveIndex(0);
+    setCurrentTime(0);
+  }, [seriesFilter]);
+
+  useEffect(() => {
     const root = feedRef.current;
-    if (!root || videos.length < 2) return;
+    if (!root || displayVideos.length < 2) return;
 
     const slides = root.querySelectorAll<HTMLElement>("[data-slide-index]");
     const observer = new IntersectionObserver(
@@ -234,7 +248,7 @@ export function BichlegFeedClient({ videos }: Props) {
 
     slides.forEach((el) => observer.observe(el));
     return () => observer.disconnect();
-  }, [videos.length]);
+  }, [displayVideos.length, seriesFilter]);
 
   useEffect(() => {
     if (!toast) return;
@@ -294,15 +308,44 @@ export function BichlegFeedClient({ videos }: Props) {
     );
   }
 
-  if (!videos.length) {
+  if (!displayVideos.length) {
     return (
       <PhoneFrame>
         <div className="bs-bichleg-empty">
-          <p className="text-base font-bold">Бичлэг олдсонгүй</p>
-          <p className="mt-2 text-sm text-[var(--bs-muted)]">
-            <code>data/videos/*.json</code> нэмээд{" "}
-            <code>npm run load:videos</code> ажиллуулна уу.
+          <p className="text-base font-bold">
+            {videos.length ? "Энэ цувралд бичлэг байхгүй" : "Бичлэг олдсонгүй"}
           </p>
+          <p className="mt-2 text-sm text-[var(--bs-muted)]">
+            {videos.length ? (
+              <>Өөр цуврал сонгоно уу.</>
+            ) : (
+              <>
+                <code>data/videos/*.json</code> нэмээд{" "}
+                <code>npm run load:videos</code> эсвэл админ импорт ашиглана уу.
+              </>
+            )}
+          </p>
+          {seriesList.length ? (
+            <div className="bs-bichleg-series-filter !relative !top-0 mt-4 justify-center">
+              <button
+                type="button"
+                className={`bs-bichleg-filter-chip ${seriesFilter === "all" ? "bs-bichleg-filter-chip--on" : ""}`}
+                onClick={() => setSeriesFilter("all")}
+              >
+                Бүгд
+              </button>
+              {seriesList.map((series) => (
+                <button
+                  key={series.id}
+                  type="button"
+                  className={`bs-bichleg-filter-chip ${seriesFilter === series.id ? "bs-bichleg-filter-chip--on" : ""}`}
+                  onClick={() => setSeriesFilter(series.id)}
+                >
+                  {series.title_mn ?? series.title_zh ?? series.id}
+                </button>
+              ))}
+            </div>
+          ) : null}
         </div>
         <div className="absolute inset-x-0 bottom-0 z-50 px-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] pt-2">
           <BottomNavChrome active="clips" />
@@ -317,9 +360,35 @@ export function BichlegFeedClient({ videos }: Props) {
   return (
     <PhoneFrame>
       <div className="bs-bichleg-shell">
+        {seriesList.length ? (
+          <div className="bs-bichleg-series-filter">
+            <button
+              type="button"
+              className={`bs-bichleg-filter-chip ${seriesFilter === "all" ? "bs-bichleg-filter-chip--on" : ""}`}
+              onClick={() => setSeriesFilter("all")}
+            >
+              Бүгд
+            </button>
+            {seriesList.map((series) => (
+              <button
+                key={series.id}
+                type="button"
+                className={`bs-bichleg-filter-chip ${seriesFilter === series.id ? "bs-bichleg-filter-chip--on" : ""}`}
+                onClick={() => setSeriesFilter(series.id)}
+              >
+                {series.title_mn ?? series.title_zh ?? series.id}
+              </button>
+            ))}
+          </div>
+        ) : null}
+
         <div className="bs-bichleg-feed" ref={feedRef}>
-          {videos.map((video, index) => {
+          {displayVideos.map((video, index) => {
             const isActive = index === activeIndex;
+            const seriesBadge = formatSeriesEpisodeBadge(
+              video.series?.title_mn ?? null,
+              video.episode_no
+            );
             return (
               <section
                 key={video.id}
@@ -344,6 +413,9 @@ export function BichlegFeedClient({ videos }: Props) {
                     className="bs-bichleg-progress"
                     style={{ width: `${isActive ? progressPct : 0}%` }}
                   />
+                  {isActive && seriesBadge ? (
+                    <p className="bs-bichleg-series-badge">{seriesBadge}</p>
+                  ) : null}
                 </div>
 
                 {isActive && subtitleMode !== "off" && activeSubtitle ? (

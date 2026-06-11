@@ -6,6 +6,7 @@
  *   SUPABASE_SERVICE_ROLE_KEY
  *
  * Apply: supabase/migrations/030_videos_bichleg.sql
+ *        supabase/migrations/031_video_series.sql
  *
  * Run: npm run load:videos
  */
@@ -21,10 +22,59 @@ function requireEnv(name) {
   return value;
 }
 
+function isSeriesFile(fileName, raw) {
+  if (/^series\.json$/i.test(fileName)) return true;
+  return Boolean(raw?.id && !raw?.video_id && !Array.isArray(raw?.subtitles));
+}
+
+async function loadSeries(supabase, raw) {
+  const id = String(raw.id ?? "").trim();
+  if (!id) throw new Error("series: id required");
+
+  const row = {
+    id,
+    title_zh: raw.title_zh ?? null,
+    title_mn: raw.title_mn ?? null,
+    description_mn: raw.description_mn ?? null,
+    cover_url: raw.cover_url ?? null,
+    hsk_level: raw.hsk_level != null ? Number(raw.hsk_level) : null,
+  };
+
+  const { error } = await supabase
+    .from("video_series")
+    .upsert(row, { onConflict: "id" });
+  if (error) throw new Error(`${id} series: ${error.message}`);
+  return id;
+}
+
 async function loadFile(supabase, filePath) {
+  const fileName = filePath.split(/[/\\]/).pop() ?? filePath;
   const raw = JSON.parse(readFileSync(filePath, "utf8"));
+
+  if (isSeriesFile(fileName, raw)) {
+    const seriesId = await loadSeries(supabase, raw);
+    return { kind: "series", seriesId, subtitleCount: 0 };
+  }
+
   const videoId = String(raw.video_id ?? "").trim();
   if (!videoId) throw new Error(`${filePath}: video_id required`);
+
+  const seriesId = raw.series_id ? String(raw.series_id).trim() : null;
+  const episodeNo =
+    raw.episode_no != null && Number.isFinite(Number(raw.episode_no))
+      ? Number(raw.episode_no)
+      : null;
+
+  if (seriesId) {
+    const { data: seriesRow } = await supabase
+      .from("video_series")
+      .select("id")
+      .eq("id", seriesId)
+      .maybeSingle();
+    if (!seriesRow) {
+      throw new Error(`${filePath}: series «${seriesId}» олдсонгүй`);
+    }
+  }
 
   const header = {
     id: videoId,
@@ -37,6 +87,8 @@ async function loadFile(supabase, filePath) {
     duration_sec: raw.duration_sec != null ? Number(raw.duration_sec) : null,
     sync_offset_sec: Number(raw.sync_offset_sec ?? 0),
     tags: Array.isArray(raw.tags) ? raw.tags.map(String) : [],
+    series_id: seriesId,
+    episode_no: episodeNo,
   };
 
   if (!header.youtube_id) {
@@ -67,7 +119,7 @@ async function loadFile(supabase, filePath) {
     if (subErr) throw new Error(`${videoId} subtitles: ${subErr.message}`);
   }
 
-  return { videoId, subtitleCount: rows.length };
+  return { kind: "video", videoId, subtitleCount: rows.length };
 }
 
 async function main() {
@@ -78,21 +130,36 @@ async function main() {
   });
 
   if (!existsSync(ROOT)) {
-    console.log("videos: 0, subtitles: 0");
+    console.log("videos: 0, subtitles: 0, series: 0");
     return;
   }
 
   const files = readdirSync(ROOT).filter((f) => f.endsWith(".json"));
   let videoCount = 0;
   let subtitleCount = 0;
+  let seriesCount = 0;
 
-  for (const file of files.sort()) {
+  const sorted = [...files].sort((a, b) => {
+    const aSeries = /^series\.json$/i.test(a);
+    const bSeries = /^series\.json$/i.test(b);
+    if (aSeries && !bSeries) return -1;
+    if (!aSeries && bSeries) return 1;
+    return a.localeCompare(b);
+  });
+
+  for (const file of sorted) {
     const result = await loadFile(supabase, join(ROOT, file));
-    videoCount += 1;
-    subtitleCount += result.subtitleCount;
+    if (result.kind === "series") {
+      seriesCount += 1;
+    } else {
+      videoCount += 1;
+      subtitleCount += result.subtitleCount;
+    }
   }
 
-  console.log(`videos: ${videoCount}, subtitles: ${subtitleCount}`);
+  console.log(
+    `videos: ${videoCount}, subtitles: ${subtitleCount}, series: ${seriesCount}`
+  );
 }
 
 main().catch((err) => {

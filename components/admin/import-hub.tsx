@@ -16,7 +16,7 @@ export function ImportHub() {
         </p>
       </div>
 
-      <div className="grid gap-6 md:grid-cols-2">
+      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         <article className={cardClass}>
           <span className="text-3xl" aria-hidden>
             🇨🇳
@@ -31,6 +31,29 @@ export function ImportHub() {
           <Link href="/admin/import/chinese" className={btnPrimary}>
             Chinese Import
           </Link>
+        </article>
+
+        <article className={cardClass}>
+          <span className="text-3xl" aria-hidden>
+            ▶
+          </span>
+          <h2 className="mt-4 text-lg font-semibold text-slate-900">
+            Бичлэг хадмал импортлох
+          </h2>
+          <p className="mt-2 flex-1 text-sm text-slate-600">
+            Богино видеоны JSON хадмал (video_id, youtube_id, subtitles, words).
+          </p>
+          <div className="mt-5 flex flex-wrap gap-2">
+            <Link href="/admin/import/bichleg" className={btnPrimary}>
+              Импортлох
+            </Link>
+            <Link
+              href="/admin/bichleg"
+              className="inline-flex rounded-full border border-emerald-200 bg-emerald-50 px-5 py-2.5 text-sm font-semibold text-emerald-800 transition-colors hover:bg-emerald-100"
+            >
+              Удирдах
+            </Link>
+          </div>
         </article>
 
         <article className={cardClass}>

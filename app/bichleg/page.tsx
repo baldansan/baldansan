@@ -1,5 +1,5 @@
 import { BichlegFeedClient } from "@/components/bichleg/bichleg-feed-client";
-import { fetchVideos } from "@/lib/supabase/videos-server";
+import { fetchVideoSeriesList, fetchVideos } from "@/lib/supabase/videos-server";
 
 export const dynamic = "force-dynamic";
 
@@ -8,6 +8,9 @@ export const metadata = {
 };
 
 export default async function BichlegPage() {
-  const videos = await fetchVideos();
-  return <BichlegFeedClient videos={videos} />;
+  const [videos, seriesList] = await Promise.all([
+    fetchVideos(),
+    fetchVideoSeriesList(),
+  ]);
+  return <BichlegFeedClient videos={videos} seriesList={seriesList} />;
 }

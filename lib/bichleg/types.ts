@@ -5,6 +5,14 @@ export type SubtitleWord = {
   key?: boolean;
 };
 
+export type VideoSeriesInfo = {
+  id: string;
+  title_zh: string | null;
+  title_mn: string | null;
+  description_mn: string | null;
+  hsk_level: number | null;
+};
+
 export type VideoRow = {
   id: string;
   youtube_id: string;
@@ -16,6 +24,9 @@ export type VideoRow = {
   duration_sec: number | null;
   sync_offset_sec: number;
   tags: string[];
+  series_id: string | null;
+  episode_no: number | null;
+  series: VideoSeriesInfo | null;
   created_at: string;
 };
 
@@ -53,3 +64,18 @@ export const SUBTITLE_MODE_CYCLE: SubtitleDisplayMode[] = [
   "mn",
   "off",
 ];
+
+export function formatEpisodeLabel(episodeNo: number | null): string | null {
+  if (episodeNo == null || !Number.isFinite(episodeNo)) return null;
+  return `${episodeNo}-р анги`;
+}
+
+export function formatSeriesEpisodeBadge(
+  seriesTitleMn: string | null,
+  episodeNo: number | null
+): string | null {
+  const ep = formatEpisodeLabel(episodeNo);
+  if (!seriesTitleMn && !ep) return null;
+  if (seriesTitleMn && ep) return `${seriesTitleMn} · ${ep}`;
+  return seriesTitleMn ?? ep;
+}

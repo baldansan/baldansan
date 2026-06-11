@@ -29,6 +29,12 @@ export const ADMIN_NAV_PRIMARY: AdminNavItem[] = [
     match: (p) => p.startsWith("/admin/import"),
   },
   {
+    href: "/admin/bichleg",
+    label: "Бичлэг",
+    icon: "▶",
+    match: (p) => p.startsWith("/admin/bichleg"),
+  },
+  {
     href: "/admin/lessons/new",
     label: "Create lesson",
     icon: "➕",
@@ -142,6 +148,7 @@ export function resolveAdminPageTitle(pathname: string): string {
   if (pathname === "/admin/lessons") return "Lessons";
   if (pathname === "/admin/lessons/new") return "Create Lesson";
   if (pathname === "/admin/import") return "Import ZIP";
+  if (pathname.startsWith("/admin/bichleg")) return "Бичлэг";
   if (pathname === "/admin/settings") return "Settings";
   if (pathname.includes("/admin/lessons/") && pathname.includes("/edit")) {
     return "Edit Lesson";
