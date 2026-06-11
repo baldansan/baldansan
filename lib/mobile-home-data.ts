@@ -63,6 +63,7 @@ async function loadHskLevelForHome(courseId: HskHomeLevelId) {
   return {
     title: course?.title ?? defaultTitles[courseId],
     subtitle: course?.subtitle ?? "",
+    coverUrl: course?.coverUrl ?? null,
     lessons,
   };
 }
@@ -87,6 +88,7 @@ export async function loadMobileHomeData(): Promise<MobileHomeData> {
           courseId: korean.courseId,
           title: korean.title,
           subtitle: korean.subtitle,
+          coverUrl: null,
           lessons: korean.lessons,
         }
       : null

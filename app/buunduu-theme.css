@@ -255,6 +255,7 @@ body{
 .bs-bichleg-progress{position:absolute;top:0;left:0;height:3px;background:#1FB85A;transition:width .15s linear;z-index:2}
 .bs-bichleg-subs{position:absolute;left:0;right:56px;bottom:5.5rem;padding:0 16px 12px;z-index:3;text-align:center;pointer-events:auto}
 .bs-bichleg-subs-panel{display:inline-block;max-width:92%;padding:10px 14px;border-radius:12px;background:rgba(0,0,0,.55);backdrop-filter:blur(2px);text-align:center}
+.bs-bl-speaker{margin:0 0 4px;font-size:11px;font-weight:700;color:#9de0b8;line-height:1.3}
 .bs-bl-pinyin{margin:0;font-size:13px;font-weight:600;color:#d6d6d6;line-height:1.35}
 .bs-bichleg-subs-panel .bs-bl-zh{margin:0;font-size:22px;font-weight:800;color:#fff;line-height:1.35}
 .bs-bichleg-subs-panel .bs-bl-zh:not(:first-child){margin-top:6px}
@@ -285,6 +286,20 @@ body{
 .bs-bichleg-key-empty{padding:12px;font-size:12px;color:var(--bs-muted)}
 .bs-bichleg-toast{position:absolute;left:50%;bottom:6.5rem;z-index:70;transform:translateX(-50%);padding:8px 14px;border-radius:999px;background:rgba(0,0,0,.78);color:#fff;font-size:12px;font-weight:700}
 .bs-bichleg-empty{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:60dvh;padding:24px;text-align:center}
+.bs-bichleg-back{position:absolute;top:8px;left:10px;z-index:6;display:flex;align-items:center;justify-content:center;min-width:36px;min-height:36px;border-radius:12px;background:rgba(0,0,0,.45);color:#fff;font-size:18px;font-weight:800;text-decoration:none;backdrop-filter:blur(6px)}
+.bs-bichleg-back-link{display:inline-flex;min-height:40px;align-items:center;padding:0 14px;border-radius:12px;background:#1FB85A;color:#fff;font-size:13px;font-weight:800;text-decoration:none}
+.bs-bichleg-pick-empty{padding:24px 0;text-align:center}
+.bs-bichleg-series-card{display:flex;align-items:center;gap:12px;padding:14px;border-radius:16px;background:var(--bs-card);box-shadow:var(--bs-shadow);text-decoration:none;color:inherit}
+.bs-bichleg-series-cover-img,.bs-bichleg-series-cover-placeholder{width:56px;height:78px;flex-shrink:0;border-radius:8px;object-fit:cover;box-shadow:0 2px 8px rgba(0,0,0,.12)}
+.bs-bichleg-series-cover-placeholder{display:flex;align-items:center;justify-content:center;background:#1FB85A;color:#fff;font-size:26px;font-weight:800;line-height:1}
+.bs-bichleg-series-cover-placeholder--other{font-size:18px;letter-spacing:2px;background:#5d6f64}
+.bs-bichleg-series-card-body{flex:1;min-width:0}
+.bs-bichleg-series-card-title{margin:0;font-size:15px;font-weight:800;color:var(--bs-ink);line-height:1.3}
+.bs-bichleg-series-card-sub{margin:4px 0 0;font-size:12px;font-weight:600;color:var(--bs-muted);line-height:1.35}
+.bs-bichleg-series-card-meta{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.bs-bichleg-series-card-badge{display:inline-flex;padding:3px 8px;border-radius:999px;background:#e7f5ec;color:#2f7d4f;font-size:10px;font-weight:800}
+.bs-bichleg-series-card-hsk{display:inline-flex;padding:3px 8px;border-radius:999px;background:#f2f6f3;color:#5d6f64;font-size:10px;font-weight:800}
+.bs-bichleg-series-card-chevron{flex-shrink:0;font-size:22px;font-weight:700;color:var(--bs-muted);line-height:1}
 @keyframes bs-sheet-up{from{transform:translateY(100%)}to{transform:translateY(0)}}
 .bs-mem-wizard{padding-top:4px}
 .bs-mem-step-title{margin:0;font-size:18px;font-weight:800;color:var(--bs-ink)}

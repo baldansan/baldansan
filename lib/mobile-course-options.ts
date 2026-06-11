@@ -9,6 +9,7 @@ export type MobileCourseCatalogEntry = {
   available: boolean;
   title: string;
   subtitle: string;
+  coverUrl?: string | null;
   lessons: LessonContent[];
   allLessonsHref: string | null;
 };
@@ -17,6 +18,7 @@ type CourseMeta = {
   courseId?: string;
   title: string;
   subtitle: string;
+  coverUrl?: string | null;
   lessons: LessonContent[];
 };
 
@@ -42,6 +44,7 @@ function liveCourseEntry(
     available,
     title: meta.title || chipLabel,
     subtitle: meta.subtitle,
+    coverUrl: meta.coverUrl ?? null,
     lessons: meta.lessons,
     allLessonsHref: available ? `/courses/${courseId}` : null,
   };

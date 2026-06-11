@@ -220,6 +220,7 @@ export function validateBichlegVideoJson(
         idx,
         startSec: start,
         endSec: end,
+        speaker: nonEmpty(row.speaker) ? row.speaker.trim() : null,
         zh: row.zh.trim(),
         pinyin: row.pinyin.trim(),
         mn: row.mn.trim(),

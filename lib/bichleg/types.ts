@@ -10,7 +10,12 @@ export type VideoSeriesInfo = {
   title_zh: string | null;
   title_mn: string | null;
   description_mn: string | null;
+  cover_url: string | null;
   hsk_level: number | null;
+};
+
+export type VideoSeriesCard = VideoSeriesInfo & {
+  videoCount: number;
 };
 
 export type VideoRow = {
@@ -36,6 +41,7 @@ export type VideoSubtitleRow = {
   idx: number;
   start_sec: number;
   end_sec: number;
+  speaker: string | null;
   zh: string | null;
   pinyin: string | null;
   mn: string | null;

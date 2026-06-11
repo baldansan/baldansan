@@ -90,6 +90,7 @@ export type CourseContent = {
   id: string;
   title: string;
   subtitle: string;
+  coverUrl?: string | null;
   stats: { label: string }[];
   progress: { completed: number; total: number };
 };

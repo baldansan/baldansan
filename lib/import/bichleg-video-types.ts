@@ -12,6 +12,7 @@ export type RawBichlegSubtitle = {
   end?: number;
   start_sec?: number;
   end_sec?: number;
+  speaker?: string;
   zh?: string;
   pinyin?: string;
   mn?: string;
@@ -54,6 +55,7 @@ export type BichlegSubtitlePayload = {
   idx: number;
   startSec: number;
   endSec: number;
+  speaker: string | null;
   zh: string;
   pinyin: string;
   mn: string;

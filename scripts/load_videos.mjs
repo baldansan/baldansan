@@ -106,6 +106,10 @@ async function loadFile(supabase, filePath) {
     idx: Number(s.index ?? s.idx),
     start_sec: Number(s.start ?? s.start_sec),
     end_sec: Number(s.end ?? s.end_sec),
+    speaker:
+      typeof s.speaker === "string" && s.speaker.trim()
+        ? s.speaker.trim()
+        : null,
     zh: s.zh ?? null,
     pinyin: s.pinyin ?? null,
     mn: s.mn ?? null,

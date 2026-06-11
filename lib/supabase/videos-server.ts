@@ -1,5 +1,7 @@
+import { normalizeSeriesCoverUrl } from "@/lib/bichleg/series-cover";
 import type {
   VideoRow,
+  VideoSeriesCard,
   VideoSeriesInfo,
   VideoSubtitleRow,
   SubtitleWord,
@@ -16,8 +18,18 @@ function mapSeries(raw: Record<string, unknown> | null): VideoSeriesInfo | null 
     title_zh: raw.title_zh ? String(raw.title_zh) : null,
     title_mn: raw.title_mn ? String(raw.title_mn) : null,
     description_mn: raw.description_mn ? String(raw.description_mn) : null,
+    cover_url: normalizeSeriesCoverUrl(
+      raw.cover_url ? String(raw.cover_url) : null
+    ),
     hsk_level: raw.hsk_level != null ? Number(raw.hsk_level) : null,
   };
+}
+
+function readVideoCount(
+  videos: { count: number }[] | { count: number } | null | undefined
+): number {
+  if (Array.isArray(videos)) return videos[0]?.count ?? 0;
+  return videos?.count ?? 0;
 }
 
 function mapVideo(raw: Record<string, unknown>): VideoRow {
@@ -60,6 +72,7 @@ function mapSubtitle(raw: Record<string, unknown>): VideoSubtitleRow {
     idx: Number(raw.idx),
     start_sec: Number(raw.start_sec),
     end_sec: Number(raw.end_sec),
+    speaker: raw.speaker ? String(raw.speaker) : null,
     zh: raw.zh ? String(raw.zh) : null,
     pinyin: raw.pinyin ? String(raw.pinyin) : null,
     mn: raw.mn ? String(raw.mn) : null,
@@ -67,42 +80,198 @@ function mapSubtitle(raw: Record<string, unknown>): VideoSubtitleRow {
   };
 }
 
-export async function fetchVideoSeriesList(): Promise<VideoSeriesInfo[]> {
-  if (!hasServerSupabaseConfig) return [];
-  const client = await createServerSupabaseClient();
-  if (!client) return [];
+const VIDEO_SERIES_SELECT =
+  "id, title_zh, title_mn, description_mn, hsk_level, cover_url";
+const VIDEO_SERIES_SELECT_CORE =
+  "id, title_zh, title_mn, description_mn, hsk_level";
 
-  const { data, error } = await client
-    .from("video_series")
-    .select("id, title_zh, title_mn, description_mn, hsk_level")
-    .order("title_mn", { ascending: true });
+const VIDEO_ROW_SELECT =
+  "*, video_series ( id, title_zh, title_mn, description_mn, hsk_level, cover_url )";
+const VIDEO_ROW_SELECT_CORE =
+  "*, video_series ( id, title_zh, title_mn, description_mn, hsk_level )";
 
-  if (error || !data) return [];
-  return data.map((row) => mapSeries(row as Record<string, unknown>)!);
+function isMissingColumnSelectError(message: string): boolean {
+  const lower = message.toLowerCase();
+  return (
+    lower.includes("column") &&
+    (lower.includes("does not exist") || lower.includes("could not find"))
+  );
 }
 
-export async function fetchVideos(seriesId?: string | null): Promise<VideoRow[]> {
+export async function fetchVideoSeriesList(): Promise<VideoSeriesInfo[]> {
+  const catalog = await fetchVideoSeriesCatalog();
+  return catalog.map(({ videoCount: _count, ...series }) => series);
+}
+
+export async function fetchVideoSeriesCatalog(): Promise<VideoSeriesCard[]> {
   if (!hasServerSupabaseConfig) return [];
   const client = await createServerSupabaseClient();
   if (!client) return [];
 
-  let query = client
-    .from("videos")
-    .select(
-      "*, video_series ( id, title_zh, title_mn, description_mn, hsk_level )"
-    );
+  const primary = await client
+    .from("video_series")
+    .select(`${VIDEO_SERIES_SELECT}, videos(count)`)
+    .order("title_mn", { ascending: true });
 
-  if (seriesId) {
-    query = query.eq("series_id", seriesId);
+  let rows = primary.data as Record<string, unknown>[] | null;
+  let error = primary.error;
+
+  if (error?.message && isMissingColumnSelectError(error.message)) {
+    const fallback = await client
+      .from("video_series")
+      .select(`${VIDEO_SERIES_SELECT_CORE}, videos(count)`)
+      .order("title_mn", { ascending: true });
+    rows = fallback.data as Record<string, unknown>[] | null;
+    error = fallback.error;
   }
 
-  const { data, error } = await query
+  if (error || !rows) return [];
+
+  return rows.map((row) => {
+    const series = mapSeries(row as Record<string, unknown>)!;
+    return {
+      ...series,
+      videoCount: readVideoCount(
+        row.videos as { count: number }[] | { count: number } | null
+      ),
+    };
+  });
+}
+
+export async function fetchVideoSeriesById(
+  seriesId: string
+): Promise<VideoSeriesInfo | null> {
+  if (!hasServerSupabaseConfig) return null;
+  const client = await createServerSupabaseClient();
+  if (!client) return null;
+
+  const primary = await client
+    .from("video_series")
+    .select(VIDEO_SERIES_SELECT)
+    .eq("id", seriesId)
+    .maybeSingle();
+
+  let row = primary.data as Record<string, unknown> | null;
+  let error = primary.error;
+
+  if (error?.message && isMissingColumnSelectError(error.message)) {
+    const fallback = await client
+      .from("video_series")
+      .select(VIDEO_SERIES_SELECT_CORE)
+      .eq("id", seriesId)
+      .maybeSingle();
+    row = fallback.data as Record<string, unknown> | null;
+    error = fallback.error;
+  }
+
+  if (error || !row) return null;
+  return mapSeries(row);
+}
+
+export async function countOrphanVideos(): Promise<number> {
+  if (!hasServerSupabaseConfig) return 0;
+  const client = await createServerSupabaseClient();
+  if (!client) return 0;
+
+  const { count, error } = await client
+    .from("videos")
+    .select("id", { count: "exact", head: true })
+    .is("series_id", null);
+
+  if (error) return 0;
+  return count ?? 0;
+}
+
+export async function fetchVideosBySeriesId(
+  seriesId: string
+): Promise<VideoRow[]> {
+  if (!hasServerSupabaseConfig) return [];
+  const client = await createServerSupabaseClient();
+  if (!client) return [];
+
+  const primary = await client
+    .from("videos")
+    .select(VIDEO_ROW_SELECT)
+    .eq("series_id", seriesId)
+    .order("episode_no", { ascending: true, nullsFirst: true })
+    .order("created_at", { ascending: true });
+
+  let rows = primary.data as Record<string, unknown>[] | null;
+  let error = primary.error;
+
+  if (error?.message && isMissingColumnSelectError(error.message)) {
+    const fallback = await client
+      .from("videos")
+      .select(VIDEO_ROW_SELECT_CORE)
+      .eq("series_id", seriesId)
+      .order("episode_no", { ascending: true, nullsFirst: true })
+      .order("created_at", { ascending: true });
+    rows = fallback.data as Record<string, unknown>[] | null;
+    error = fallback.error;
+  }
+
+  if (error || !rows) return [];
+  return rows.map((row) => mapVideo(row));
+}
+
+export async function fetchOrphanVideos(): Promise<VideoRow[]> {
+  if (!hasServerSupabaseConfig) return [];
+  const client = await createServerSupabaseClient();
+  if (!client) return [];
+
+  const primary = await client
+    .from("videos")
+    .select(VIDEO_ROW_SELECT)
+    .is("series_id", null)
+    .order("created_at", { ascending: true });
+
+  let rows = primary.data as Record<string, unknown>[] | null;
+  let error = primary.error;
+
+  if (error?.message && isMissingColumnSelectError(error.message)) {
+    const fallback = await client
+      .from("videos")
+      .select(VIDEO_ROW_SELECT_CORE)
+      .is("series_id", null)
+      .order("created_at", { ascending: true });
+    rows = fallback.data as Record<string, unknown>[] | null;
+    error = fallback.error;
+  }
+
+  if (error || !rows) return [];
+  return rows.map((row) => mapVideo(row));
+}
+
+/** @deprecated Use fetchVideosBySeriesId or fetchOrphanVideos */
+export async function fetchVideos(seriesId?: string | null): Promise<VideoRow[]> {
+  if (seriesId) return fetchVideosBySeriesId(seriesId);
+  if (!hasServerSupabaseConfig) return [];
+  const client = await createServerSupabaseClient();
+  if (!client) return [];
+
+  const primary = await client
+    .from("videos")
+    .select(VIDEO_ROW_SELECT)
     .order("series_id", { ascending: true, nullsFirst: false })
     .order("episode_no", { ascending: true, nullsFirst: true })
     .order("created_at", { ascending: true });
 
-  if (error || !data) return [];
-  return data.map((row) => mapVideo(row as Record<string, unknown>));
+  let rows = primary.data as Record<string, unknown>[] | null;
+  let error = primary.error;
+
+  if (error?.message && isMissingColumnSelectError(error.message)) {
+    const fallback = await client
+      .from("videos")
+      .select(VIDEO_ROW_SELECT_CORE)
+      .order("series_id", { ascending: true, nullsFirst: false })
+      .order("episode_no", { ascending: true, nullsFirst: true })
+      .order("created_at", { ascending: true });
+    rows = fallback.data as Record<string, unknown>[] | null;
+    error = fallback.error;
+  }
+
+  if (error || !rows) return [];
+  return rows.map((row) => mapVideo(row));
 }
 
 export async function fetchVideoSubtitles(

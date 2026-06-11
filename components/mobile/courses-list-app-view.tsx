@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import { getSelectedLanguage } from "@/lib/learner-onboarding";
 import { courseMatchesLanguage, languageTrackLabel } from "@/lib/language-track";
+import { CourseCover } from "@/components/courses/course-cover";
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
 import { MobileCard } from "@/components/mobile/mobile-card";
 import { MobilePageHeader } from "@/components/mobile/mobile-page-header";
@@ -60,25 +61,38 @@ export function CoursesListAppView({ courses }: Props) {
           {visibleCourses.map((course) => (
             <MobileCard key={course.id} padding="lg" className="!p-0 overflow-hidden">
               <div className="p-4">
-                <div className="flex items-start justify-between gap-2">
-                  <h2 className="text-base font-bold text-[var(--app-text)]">
-                    {course.title}
-                  </h2>
-                  <span className="shrink-0 rounded-full bg-emerald-50 px-2 py-0.5 text-[10px] font-bold text-emerald-700 ring-1 ring-emerald-200">
-                    {course.level}
-                  </span>
-                </div>
-                <p className="mt-2 text-sm leading-6 text-[var(--app-muted)]">
-                  {course.description}
-                </p>
-                <div className="mt-3 flex flex-wrap gap-1.5">
-                  <span className="app-stat-pill">{course.lessonCount} хичээл</span>
-                  <span className="app-stat-pill">{course.vocabulary} үг</span>
-                  <span
-                    className={`app-stat-pill ${course.status === "available" ? "app-stat-pill-accent" : ""}`}
-                  >
-                    {statusLabel(course.status)}
-                  </span>
+                <div
+                  className={
+                    course.coverUrl ? "flex items-start gap-3" : undefined
+                  }
+                >
+                  {course.coverUrl ? (
+                    <CourseCover src={course.coverUrl} alt={course.title} />
+                  ) : null}
+                  <div className="min-w-0 flex-1">
+                    <div className="flex items-start justify-between gap-2">
+                      <h2 className="text-base font-bold text-[var(--app-text)]">
+                        {course.title}
+                      </h2>
+                      <span className="shrink-0 rounded-full bg-emerald-50 px-2 py-0.5 text-[10px] font-bold text-emerald-700 ring-1 ring-emerald-200">
+                        {course.level}
+                      </span>
+                    </div>
+                    <p className="mt-2 text-sm leading-6 text-[var(--app-muted)]">
+                      {course.description}
+                    </p>
+                    <div className="mt-3 flex flex-wrap gap-1.5">
+                      <span className="app-stat-pill">
+                        {course.lessonCount} хичээл
+                      </span>
+                      <span className="app-stat-pill">{course.vocabulary} үг</span>
+                      <span
+                        className={`app-stat-pill ${course.status === "available" ? "app-stat-pill-accent" : ""}`}
+                      >
+                        {statusLabel(course.status)}
+                      </span>
+                    </div>
+                  </div>
                 </div>
               </div>
               {course.href && course.status === "available" ? (

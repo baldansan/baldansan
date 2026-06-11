@@ -13,6 +13,7 @@ import {
   useActiveHskLevel,
   useRegisterLessonHskLevels,
 } from "@/components/providers/active-hsk-level-provider";
+import { CourseCover } from "@/components/courses/course-cover";
 import { MobileCard } from "@/components/mobile/mobile-card";
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
 import { lessonPath } from "@/lib/content";
@@ -265,28 +266,42 @@ export function HomeAppView({ catalog, defaultChipId }: Props) {
       <div
         className={`app-course-card app-course-card-premium mb-4 p-4 ${activeCourse ? courseCardAccentClass(activeCourse.courseId) : ""}`}
       >
-        <p className="text-[10px] font-bold uppercase tracking-wide text-white/80">
-          {activeCourse ? courseChipBadge(activeCourse.courseId) : "Курс"}
-        </p>
-        <h3 className="mt-0.5 line-clamp-2 text-base font-bold leading-snug">
-          {activeCourse?.title ?? "—"}
-        </h3>
-        <p className="mt-1 line-clamp-2 text-xs leading-5 text-white/90">
-          {activeCourse?.subtitle ?? ""}
-        </p>
-        <div className="mt-2.5 flex items-center gap-2">
-          <span className="rounded-full bg-white/20 px-2 py-0.5 text-[11px] font-bold">
-            {progressPercent}%
-          </span>
-          <span className="text-[11px] text-white/85">
-            {completedCount}/{lessonIds.length || 0} хичээл
-          </span>
-        </div>
-        <div className="mt-2.5 h-2 overflow-hidden rounded-full bg-black/10">
-          <div
-            className="h-full rounded-full bg-white transition-all"
-            style={{ width: `${progressPercent}%` }}
-          />
+        <div
+          className={
+            activeCourse?.coverUrl ? "flex items-start gap-3" : undefined
+          }
+        >
+          {activeCourse?.coverUrl ? (
+            <CourseCover
+              src={activeCourse.coverUrl}
+              alt={activeCourse.title}
+            />
+          ) : null}
+          <div className="min-w-0 flex-1">
+            <p className="text-[10px] font-bold uppercase tracking-wide text-white/80">
+              {activeCourse ? courseChipBadge(activeCourse.courseId) : "Курс"}
+            </p>
+            <h3 className="mt-0.5 line-clamp-2 text-base font-bold leading-snug">
+              {activeCourse?.title ?? "—"}
+            </h3>
+            <p className="mt-1 line-clamp-2 text-xs leading-5 text-white/90">
+              {activeCourse?.subtitle ?? ""}
+            </p>
+            <div className="mt-2.5 flex items-center gap-2">
+              <span className="rounded-full bg-white/20 px-2 py-0.5 text-[11px] font-bold">
+                {progressPercent}%
+              </span>
+              <span className="text-[11px] text-white/85">
+                {completedCount}/{lessonIds.length || 0} хичээл
+              </span>
+            </div>
+            <div className="mt-2.5 h-2 overflow-hidden rounded-full bg-black/10">
+              <div
+                className="h-full rounded-full bg-white transition-all"
+                style={{ width: `${progressPercent}%` }}
+              />
+            </div>
+          </div>
         </div>
       </div>
 

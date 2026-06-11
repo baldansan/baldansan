@@ -10,6 +10,7 @@ import { normalizePublishStatus } from "@/lib/lesson-publish";
 import { enrichLessonContentMeta } from "@/lib/lesson-content-type";
 import { hasSupabaseConfig, supabase } from "@/lib/supabase/client";
 import type { SupabaseClient } from "@supabase/supabase-js";
+import { normalizeCourseCoverUrl } from "@/lib/course-cover";
 import type { Course } from "@/types/course";
 import type {
   CourseContent,
@@ -93,7 +94,11 @@ type DbCourse = {
   level: string | null;
   status: string;
   order_index: number;
+  cover_url?: string | null;
 };
+
+const COURSE_ROW_SELECT = "id, title, description, level, status, order_index, cover_url";
+const COURSE_ROW_SELECT_CORE = "id, title, description, level, status, order_index";
 
 function mapLessonMediaFields(row: DbLesson) {
   const videoUrl = row.video_url?.trim();
@@ -305,6 +310,7 @@ function mapDbCourseToCatalog(course: DbCourse, lessonCount: number): Course {
     vocabulary: 0,
     status,
     href: status === "available" ? `/courses/${course.id}` : null,
+    coverUrl: normalizeCourseCoverUrl(course.cover_url),
   };
 }
 
@@ -317,6 +323,7 @@ function buildCourseContent(
     id: course.id,
     title: course.title,
     subtitle: course.description ?? "",
+    coverUrl: normalizeCourseCoverUrl(course.cover_url),
     stats: [
       { label: `${lessons.length} lessons` },
       { label: `${totalVocab} vocabulary` },
@@ -335,11 +342,28 @@ export async function getSupabaseCourseById(
 ): Promise<Course | undefined> {
   if (!hasSupabaseConfig || !supabase) return undefined;
 
-  const { data: course, error } = await supabase
+  let course: DbCourse | null = null;
+  let error: { message: string } | null = null;
+
+  const primary = await supabase
     .from("courses")
-    .select("id, title, description, level, status, order_index")
+    .select(COURSE_ROW_SELECT)
     .eq("id", courseId)
     .maybeSingle();
+  course = (primary.data as DbCourse | null) ?? null;
+  error = primary.error;
+
+  if (error?.message && isMissingColumnSelectError(error.message)) {
+    const fallback = await supabase
+      .from("courses")
+      .select(COURSE_ROW_SELECT_CORE)
+      .eq("id", courseId)
+      .maybeSingle();
+    course = fallback.data
+      ? ({ ...fallback.data, cover_url: null } as DbCourse)
+      : null;
+    error = fallback.error;
+  }
 
   if (error) throw error;
   if (!course) return undefined;
@@ -359,11 +383,28 @@ export async function getSupabaseCourseContentById(
 ): Promise<CourseContent | undefined> {
   if (!hasSupabaseConfig || !supabase) return undefined;
 
-  const { data: course, error } = await supabase
+  let course: DbCourse | null = null;
+  let error: { message: string } | null = null;
+
+  const primary = await supabase
     .from("courses")
-    .select("id, title, description, level, status, order_index")
+    .select(COURSE_ROW_SELECT)
     .eq("id", courseId)
     .maybeSingle();
+  course = (primary.data as DbCourse | null) ?? null;
+  error = primary.error;
+
+  if (error?.message && isMissingColumnSelectError(error.message)) {
+    const fallback = await supabase
+      .from("courses")
+      .select(COURSE_ROW_SELECT_CORE)
+      .eq("id", courseId)
+      .maybeSingle();
+    course = fallback.data
+      ? ({ ...fallback.data, cover_url: null } as DbCourse)
+      : null;
+    error = fallback.error;
+  }
 
   if (error) throw error;
   if (!course) return undefined;

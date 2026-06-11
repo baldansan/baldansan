@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import PhoneFrame from "@/components/layout/PhoneFrame";
 import { BottomNavChrome } from "@/components/mobile/bottom-nav-chrome";
@@ -7,7 +8,6 @@ import {
   formatSeriesEpisodeBadge,
   type SubtitleWord,
   type VideoRow,
-  type VideoSeriesInfo,
   type VideoSubtitleRow,
 } from "@/lib/bichleg/types";
 import { BichlegYouTubePlayer } from "@/components/bichleg/bichleg-youtube-player";
@@ -31,7 +31,8 @@ import {
 
 type Props = {
   videos: VideoRow[];
-  seriesList?: VideoSeriesInfo[];
+  backHref?: string;
+  feedTitle?: string;
 };
 
 type PickedWord = SubtitleWord & { sourceVideoId: string };
@@ -110,17 +111,15 @@ function BichlegIcon({
   );
 }
 
-export function BichlegFeedClient({ videos, seriesList = [] }: Props) {
+export function BichlegFeedClient({
+  videos,
+  backHref = "/bichleg",
+  feedTitle,
+}: Props) {
   const feedRef = useRef<HTMLDivElement>(null);
   const playerRef = useRef<YtPlayer | null>(null);
   const subtitlesLoadedRef = useRef<Set<string>>(new Set());
-  const [seriesFilter, setSeriesFilter] = useState<string>("all");
   const [activeIndex, setActiveIndex] = useState(0);
-
-  const displayVideos = useMemo(() => {
-    if (seriesFilter === "all") return videos;
-    return videos.filter((v) => v.series_id === seriesFilter);
-  }, [videos, seriesFilter]);
   const [subtitlesMap, setSubtitlesMap] = useState<
     Record<string, VideoSubtitleRow[]>
   >({});
@@ -140,7 +139,7 @@ export function BichlegFeedClient({ videos, seriesList = [] }: Props) {
   const [toast, setToast] = useState<string | null>(null);
   const [playerReady, setPlayerReady] = useState(false);
 
-  const activeVideo = displayVideos[activeIndex] ?? null;
+  const activeVideo = videos[activeIndex] ?? null;
   const activeSubtitles = activeVideo
     ? (subtitlesMap[activeVideo.id] ?? [])
     : [];
@@ -231,11 +230,11 @@ export function BichlegFeedClient({ videos, seriesList = [] }: Props) {
   useEffect(() => {
     setActiveIndex(0);
     setCurrentTime(0);
-  }, [seriesFilter]);
+  }, [videos]);
 
   useEffect(() => {
     const root = feedRef.current;
-    if (!root || displayVideos.length < 2) return;
+    if (!root || videos.length < 2) return;
 
     const slides = root.querySelectorAll<HTMLElement>("[data-slide-index]");
     const observer = new IntersectionObserver(
@@ -251,7 +250,7 @@ export function BichlegFeedClient({ videos, seriesList = [] }: Props) {
 
     slides.forEach((el) => observer.observe(el));
     return () => observer.disconnect();
-  }, [displayVideos.length, seriesFilter]);
+  }, [videos.length]);
 
   useEffect(() => {
     if (!toast) return;
@@ -352,44 +351,22 @@ export function BichlegFeedClient({ videos, seriesList = [] }: Props) {
     );
   }
 
-  if (!displayVideos.length) {
+  if (!videos.length) {
     return (
       <PhoneFrame>
+        <Link href={backHref} className="bs-bichleg-back" aria-label="Буцах">
+          ←
+        </Link>
         <div className="bs-bichleg-empty">
           <p className="text-base font-bold">
-            {videos.length ? "Энэ цувралд бичлэг байхгүй" : "Бичлэг олдсонгүй"}
+            {feedTitle ? `${feedTitle} — бичлэг байхгүй` : "Бичлэг олдсонгүй"}
           </p>
           <p className="mt-2 text-sm text-[var(--bs-muted)]">
-            {videos.length ? (
-              <>Өөр цуврал сонгоно уу.</>
-            ) : (
-              <>
-                <code>data/videos/*.json</code> нэмээд{" "}
-                <code>npm run load:videos</code> эсвэл админ импорт ашиглана уу.
-              </>
-            )}
+            Өөр цуврал сонгоод дахин оролдоно уу.
           </p>
-          {seriesList.length ? (
-            <div className="bs-bichleg-series-filter !relative !top-0 mt-4 justify-center">
-              <button
-                type="button"
-                className={`bs-bichleg-filter-chip ${seriesFilter === "all" ? "bs-bichleg-filter-chip--on" : ""}`}
-                onClick={() => setSeriesFilter("all")}
-              >
-                Бүгд
-              </button>
-              {seriesList.map((series) => (
-                <button
-                  key={series.id}
-                  type="button"
-                  className={`bs-bichleg-filter-chip ${seriesFilter === series.id ? "bs-bichleg-filter-chip--on" : ""}`}
-                  onClick={() => setSeriesFilter(series.id)}
-                >
-                  {series.title_mn ?? series.title_zh ?? series.id}
-                </button>
-              ))}
-            </div>
-          ) : null}
+          <Link href={backHref} className="bs-bichleg-back-link mt-4">
+            ← Цуврал сонгох
+          </Link>
         </div>
         <div className="absolute inset-x-0 bottom-0 z-50 px-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] pt-2">
           <BottomNavChrome active="clips" />
@@ -404,30 +381,12 @@ export function BichlegFeedClient({ videos, seriesList = [] }: Props) {
   return (
     <PhoneFrame>
       <div className="bs-bichleg-shell">
-        {seriesList.length ? (
-          <div className="bs-bichleg-series-filter">
-            <button
-              type="button"
-              className={`bs-bichleg-filter-chip ${seriesFilter === "all" ? "bs-bichleg-filter-chip--on" : ""}`}
-              onClick={() => setSeriesFilter("all")}
-            >
-              Бүгд
-            </button>
-            {seriesList.map((series) => (
-              <button
-                key={series.id}
-                type="button"
-                className={`bs-bichleg-filter-chip ${seriesFilter === series.id ? "bs-bichleg-filter-chip--on" : ""}`}
-                onClick={() => setSeriesFilter(series.id)}
-              >
-                {series.title_mn ?? series.title_zh ?? series.id}
-              </button>
-            ))}
-          </div>
-        ) : null}
+        <Link href={backHref} className="bs-bichleg-back" aria-label="Буцах">
+          ←
+        </Link>
 
         <div className="bs-bichleg-feed" ref={feedRef}>
-          {displayVideos.map((video, index) => {
+          {videos.map((video, index) => {
             const isActive = index === activeIndex;
             const seriesBadge = formatSeriesEpisodeBadge(
               video.series?.title_mn ?? null,
@@ -466,6 +425,9 @@ export function BichlegFeedClient({ videos, seriesList = [] }: Props) {
                 {isActive && activeSubtitle ? (
                   <div className="bs-bichleg-subs">
                     <div className="bs-bichleg-subs-panel">
+                      {activeSubtitle.speaker ? (
+                        <p className="bs-bl-speaker">{activeSubtitle.speaker}</p>
+                      ) : null}
                       {showPinyin && activeSubtitle.pinyin ? (
                         <p className="bs-bl-pinyin">{activeSubtitle.pinyin}</p>
                       ) : null}

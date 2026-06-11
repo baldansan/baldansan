@@ -2,6 +2,7 @@ import "server-only";
 
 import type { SupabaseClient } from "@supabase/supabase-js";
 import { revalidatePath } from "next/cache";
+import { revalidateBichlegPages } from "@/lib/bichleg/revalidate";
 import type {
   BichlegImportApiResult,
   BichlegImportFileResult,
@@ -108,6 +109,7 @@ async function importOneVideo(
         index: s.idx,
         start: s.startSec,
         end: s.endSec,
+        speaker: s.speaker,
         zh: s.zh,
         pinyin: s.pinyin,
         mn: s.mn,
@@ -182,6 +184,7 @@ async function importOneVideo(
     idx: s.idx,
     start_sec: s.startSec,
     end_sec: s.endSec,
+    speaker: s.speaker,
     zh: s.zh,
     pinyin: s.pinyin,
     mn: s.mn,
@@ -240,7 +243,7 @@ export async function importBichlegVideosOnServer(
   }
 
   if (results.some((r) => r.ok)) {
-    revalidatePath("/bichleg");
+    revalidateBichlegPages();
     revalidatePath("/admin/bichleg");
   }
 
