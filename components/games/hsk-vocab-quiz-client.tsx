@@ -9,7 +9,16 @@ import {
   useState,
   type ReactNode,
 } from "react";
+import { GameWordSourcePicker } from "@/components/games/game-word-source-picker";
 import { GameShell } from "@/components/games/game-shell";
+import { useActiveHskLevel } from "@/components/providers/active-hsk-level-provider";
+import {
+  buildGameWordPool,
+  defaultGameWordSource,
+  type GameWordSource,
+  wordIdsToQuery,
+} from "@/lib/games/game-word-pool";
+import { getAuthenticatedUserId, hasSupabaseConfig } from "@/lib/supabase/auth";
 import {
   evaluateVocabQuiz,
   formatVocabQuizLevelLabel,
@@ -17,14 +26,17 @@ import {
   type VocabQuizLevelConfig,
 } from "@/lib/games/hsk-vocab-quiz";
 import { saveGameResult } from "@/lib/games/game-progress";
-import type { HskQuizQuestion } from "@/lib/games/hsk-quiz-builders";
+import type {
+  HskQuizKind,
+  HskQuizQuestion,
+} from "@/lib/games/hsk-quiz-builders";
 import type { HskLevel } from "@/lib/hsk";
 import {
   HSK_LEVEL_OPTIONS,
   type ActiveHskLevel,
 } from "@/lib/hsk/active-hsk-level";
 
-type Phase = "setup" | "intro" | "loading" | "play" | "result";
+type Phase = "source" | "setup" | "intro" | "loading" | "play" | "result";
 
 function toCatalogLevel(level: ActiveHskLevel): HskLevel {
   return level === "7-9" ? "7-9" : (String(level) as HskLevel);
@@ -32,10 +44,23 @@ function toCatalogLevel(level: ActiveHskLevel): HskLevel {
 
 type Props = {
   embedded?: boolean;
+  presetTypes?: HskQuizKind[] | null;
+  presetTitle?: string | null;
 };
 
-export function HskVocabQuizClient({ embedded = false }: Props) {
-  const [phase, setPhase] = useState<Phase>("setup");
+export function HskVocabQuizClient({
+  embedded = false,
+  presetTypes = null,
+  presetTitle = null,
+}: Props) {
+  const screenTitle = presetTitle ?? "Үгсийн дасгал";
+  const { level: activeLevel, hydrated: levelHydrated } = useActiveHskLevel();
+  const [phase, setPhase] = useState<Phase>("source");
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [wordSource, setWordSource] = useState<GameWordSource>("catalog");
+  const [wordSourceQuery, setWordSourceQuery] = useState("");
+  const [poolNote, setPoolNote] = useState<string | null>(null);
+  const [sourceLoading, setSourceLoading] = useState(false);
   const [testLevel, setTestLevel] = useState<ActiveHskLevel>(5);
   const [config, setConfig] = useState<VocabQuizLevelConfig>(
     getVocabQuizConfig("5")
@@ -50,6 +75,34 @@ export function HskVocabQuizClient({ embedded = false }: Props) {
 
   const correctRef = useRef(0);
   const indexRef = useRef(0);
+
+  useEffect(() => {
+    if (!levelHydrated) return;
+    setTestLevel(activeLevel);
+    setConfig(getVocabQuizConfig(toCatalogLevel(activeLevel)));
+  }, [activeLevel, levelHydrated]);
+
+  useEffect(() => {
+    if (!hasSupabaseConfig) return;
+    void getAuthenticatedUserId().then(({ userId }) => {
+      const loggedIn = Boolean(userId);
+      setIsLoggedIn(loggedIn);
+      setWordSource(defaultGameWordSource(loggedIn));
+    });
+  }, []);
+
+  const confirmSource = useCallback(async () => {
+    if (!levelHydrated) return;
+    setSourceLoading(true);
+    try {
+      const pool = await buildGameWordPool(wordSource, activeLevel);
+      setWordSourceQuery(wordIdsToQuery(pool.wordIds));
+      setPoolNote(pool.note);
+      setPhase("setup");
+    } finally {
+      setSourceLoading(false);
+    }
+  }, [wordSource, activeLevel, levelHydrated]);
 
   const catalogLevel = toCatalogLevel(testLevel);
   const current = deck[index];
@@ -90,8 +143,12 @@ export function HskVocabQuizClient({ embedded = false }: Props) {
     setPhase("loading");
     setError(null);
     try {
+      const typesQuery =
+        presetTypes && presetTypes.length > 0
+          ? `&types=${encodeURIComponent(presetTypes.join(","))}`
+          : "";
       const res = await fetch(
-        `/api/games/hsk-vocab-quiz-deck?level=${encodeURIComponent(catalogLevel)}`
+        `/api/games/hsk-vocab-quiz-deck?level=${encodeURIComponent(catalogLevel)}${typesQuery}${wordSourceQuery}`
       );
       const body = (await res.json()) as {
         deck?: HskQuizQuestion[];
@@ -117,7 +174,7 @@ export function HskVocabQuizClient({ embedded = false }: Props) {
       setError("Сүлжээний алдаа.");
       setPhase("setup");
     }
-  }, [catalogLevel, config.secondsPerQuestion]);
+  }, [catalogLevel, config.secondsPerQuestion, presetTypes, wordSourceQuery]);
 
   useEffect(() => {
     if (phase !== "play" || locked || !current) return;
@@ -172,14 +229,53 @@ export function HskVocabQuizClient({ embedded = false }: Props) {
       </GameShell>
     );
 
+  if (phase === "source") {
+    return wrap(
+      <div className="bs-mock-setup">
+        <h1 className="bs-mock-title">{screenTitle}</h1>
+        <p className="bs-mock-sub">Эхлээд ямар үгсээр тоглохоо сонгоно уу</p>
+        <GameWordSourcePicker
+          value={wordSource}
+          onChange={setWordSource}
+          isLoggedIn={isLoggedIn}
+        />
+        <button
+          type="button"
+          className="bs-mock-primary-btn mt-5"
+          disabled={sourceLoading}
+          onClick={() => void confirmSource()}
+        >
+          {sourceLoading ? "Бэлдэж байна…" : "Үргэлжлүүлэх →"}
+        </button>
+        {!embedded ? (
+          <Link href="/games" className="bs-meaning-link mt-4 block text-center">
+            ← Тоглоом руу
+          </Link>
+        ) : null}
+      </div>
+    );
+  }
+
   if (phase === "setup") {
     return wrap(
       <div className="bs-mock-setup">
-        <h1 className="bs-mock-title">Үгсийн дасгал</h1>
+        <h1 className="bs-mock-title">{screenTitle}</h1>
         <p className="bs-mock-sub">
-          HSK түвшний vocabulary quiz — утга, ханз, пиньинь, жишээ
+          {presetTypes?.length === 1
+            ? "Сонгосон үгсээр нэг төрлийн асуулт"
+            : "HSK түвшний vocabulary quiz — утга, ханз, пиньинь, жишээ"}
         </p>
+        {poolNote ? (
+          <p className="mt-2 text-xs font-semibold text-amber-700">{poolNote}</p>
+        ) : null}
         {error ? <p className="mt-3 text-sm text-red-600">{error}</p> : null}
+        <button
+          type="button"
+          className="bs-mem-back"
+          onClick={() => setPhase("source")}
+        >
+          ← Үгийн эх
+        </button>
         <h2 className="bs-mem-step-title mt-4">Түвшин сонгох</h2>
         <div className="bs-mem-chip-grid mt-3">
           {HSK_LEVEL_OPTIONS.map((opt) => {
@@ -239,7 +335,12 @@ export function HskVocabQuizClient({ embedded = false }: Props) {
         <h1 className="bs-mock-title">{formatVocabQuizLevelLabel(catalogLevel)}</h1>
         <p className="bs-mock-sub">Дасгал эхлэхийн өмнө</p>
         <ul className="bs-mock-rules mt-4">
-          <li>{config.questions} асуулт — утга, ханз, пиньинь, жишээ, радикал</li>
+          <li>
+            {config.questions} асуулт
+            {presetTypes?.length === 1
+              ? ` — ${presetTitle ?? presetTypes[0]}`
+              : " — утга, ханз, пиньинь, жишээ, радикал"}
+          </li>
           <li>Асуулт бүрт {config.secondsPerQuestion} секунд</li>
           <li>Буруу хариулсан ч үргэлжлэнэ (амь алдахгүй)</li>
           <li>{config.passPct}%+ зөв хариулбал <strong>тэнцэнэ</strong></li>
@@ -271,7 +372,7 @@ export function HskVocabQuizClient({ embedded = false }: Props) {
           {result.passed ? "✅ Тэнцсэн" : "❌ Тэнцээгүй"}
         </p>
         <h2 className="bs-mock-title mt-2">
-          {formatVocabQuizLevelLabel(catalogLevel)} · Үгсийн дасгал
+          {formatVocabQuizLevelLabel(catalogLevel)} · {screenTitle}
         </h2>
         <p className="bs-mock-score-pct">{result.accuracy}%</p>
         <p className="bs-mock-sub">
@@ -310,7 +411,7 @@ export function HskVocabQuizClient({ embedded = false }: Props) {
       <div className="mb-3 flex items-center justify-between gap-2">
         <div>
           <h1 className="text-base font-extrabold text-[var(--bs-ink)]">
-            Үгсийн дасгал
+            {screenTitle}
           </h1>
           <p className="text-[11px] font-bold text-[var(--bs-muted)]">
             {formatVocabQuizLevelLabel(catalogLevel)}

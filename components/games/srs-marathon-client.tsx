@@ -4,45 +4,31 @@ import { useCallback, useEffect, useState } from "react";
 import { HskQuizGameClient } from "@/components/games/hsk-quiz-game-client";
 import { GameShell } from "@/components/games/game-shell";
 import { useActiveHskLevel } from "@/components/providers/active-hsk-level-provider";
-import { buildLocalQueue } from "@/lib/srs/local-word-srs";
-import { fetchHskWordsByLevel } from "@/lib/supabase/hsk-words";
+import {
+  buildGameWordPool,
+  defaultGameWordSource,
+} from "@/lib/games/game-word-pool";
 import { getAuthenticatedUserId, hasSupabaseConfig } from "@/lib/supabase/auth";
-import { getDueWordQueue } from "@/lib/supabase/user-word-srs";
 
 export function SrsMarathonClient() {
   const { level: activeLevel, hydrated } = useActiveHskLevel();
   const [wordIds, setWordIds] = useState<string | null>(null);
+  const [poolNote, setPoolNote] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
 
   const loadWordIds = useCallback(async () => {
     if (!hydrated) return;
     setLoading(true);
 
-    let ids: number[] = [];
-
+    let source = defaultGameWordSource(false);
     if (hasSupabaseConfig) {
       const { userId } = await getAuthenticatedUserId();
-      if (userId) {
-        const { items } = await getDueWordQueue(userId, activeLevel, 15);
-        ids = items.map((i) => i.word.id!).filter(Boolean);
-      }
+      source = defaultGameWordSource(Boolean(userId));
     }
 
-    if (ids.length < 4) {
-      const { data: words } = await fetchHskWordsByLevel(activeLevel, {
-        limit: 120,
-      });
-      const localQueue = buildLocalQueue(words, activeLevel, 15);
-      ids = localQueue.map((i) => i.word.id!).filter(Boolean);
-      if (ids.length < 4) {
-        ids = (words ?? [])
-          .map((w) => w.id)
-          .filter((id): id is number => id != null)
-          .slice(0, 20);
-      }
-    }
-
-    setWordIds(ids.length >= 4 ? ids.join(",") : "");
+    const pool = await buildGameWordPool(source, activeLevel);
+    setPoolNote(pool.note);
+    setWordIds(pool.wordIds.length >= 4 ? pool.wordIds.join(",") : "");
     setLoading(false);
   }, [activeLevel, hydrated]);
 
@@ -67,14 +53,21 @@ export function SrsMarathonClient() {
   }
 
   return (
-    <HskQuizGameClient
-      config={{
-        title: "SRS марафон",
-        deckPath: "/api/games/srs-marathon-deck",
-        gameType: "srs-marathon",
-        extraQuery: `wordIds=${encodeURIComponent(wordIds)}`,
-        questionSeconds: 12,
-      }}
-    />
+    <>
+      {poolNote ? (
+        <p className="mx-auto mb-2 max-w-[430px] px-4 text-center text-xs font-semibold text-amber-700">
+          {poolNote}
+        </p>
+      ) : null}
+      <HskQuizGameClient
+        config={{
+          title: "SRS марафон",
+          deckPath: "/api/games/srs-marathon-deck",
+          gameType: "srs-marathon",
+          extraQuery: `wordIds=${encodeURIComponent(wordIds)}`,
+          questionSeconds: 12,
+        }}
+      />
+    </>
   );
 }

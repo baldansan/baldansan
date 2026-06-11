@@ -99,6 +99,7 @@ async function fetchQuizWordPool(
     .from("hsk_words")
     .select(QUIZ_WORD_SELECT)
     .eq("hsk_level", level)
+    .eq("is_function_word", false)
     .not("meaning_mn", "is", null)
     .order("frequency", { ascending: true, nullsFirst: false })
     .limit(limit);
@@ -139,7 +140,8 @@ export async function getWordsByIds(ids: number[]): Promise<HskWord[]> {
     const { data, error } = await supabase
       .from("hsk_words")
       .select(QUIZ_WORD_SELECT)
-      .in("id", chunk);
+      .in("id", chunk)
+      .eq("is_function_word", false);
 
     if (error) {
       throw new Error(`getWordsByIds: ${error.message}`);

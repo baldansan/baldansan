@@ -267,18 +267,53 @@ function buildMeaningOne(words: HskWord[], word: HskWord): HskQuizQuestion | nul
   };
 }
 
+function singleKindDeck(
+  words: HskWord[],
+  kind: HskQuizKind,
+  size: number
+): HskQuizQuestion[] {
+  switch (kind) {
+    case "word-recall":
+      return buildWordRecallDeck(words, size);
+    case "pinyin":
+      return buildPinyinDeck(words, size);
+    case "example-cloze":
+      return buildExampleClozeDeck(words, size);
+    case "radical-pick":
+      return buildRadicalPickDeck(words, size);
+    case "meaning": {
+      const pool = words.filter((w) => w.meaning_mn?.trim() && w.simplified);
+      if (pool.length < OPTION_COUNT) return [];
+      return shuffleArray(pool)
+        .slice(0, size)
+        .map((word) => buildMeaningOne(words, word))
+        .filter((q): q is HskQuizQuestion => q != null);
+    }
+    default:
+      return [];
+  }
+}
+
 /** Mixed SRS marathon: rotate question kinds from the same word pool. */
 export function buildSrsMarathonDeck(
   words: HskWord[],
-  size = 15
+  size = 15,
+  kinds?: HskQuizKind[]
 ): HskQuizQuestion[] {
   if (words.length < OPTION_COUNT) return [];
+
+  const rotation =
+    kinds && kinds.length > 0 ? kinds : MARATHON_KINDS;
+
+  if (rotation.length === 1) {
+    return singleKindDeck(words, rotation[0]!, size);
+  }
 
   const shuffled = shuffleArray(words);
   const out: HskQuizQuestion[] = [];
 
   for (let i = 0; i < size; i++) {
-    const kind = MARATHON_KINDS[i % MARATHON_KINDS.length];
+    const kind = rotation[i % rotation.length];
     const word = shuffled[i % shuffled.length];
 
     if (kind === "meaning") {

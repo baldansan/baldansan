@@ -22,6 +22,7 @@ type Props = {
   /** Дүгнэлтийн дасгал — тоглоомын shell багасгана. */
   embedded?: boolean;
   onReturnToSummary?: () => void;
+  onEnterChallenge?: () => void;
 };
 
 type SelectedSlot = {
@@ -39,6 +40,7 @@ export function RadicalGameClient({
   customWordSet = false,
   embedded = false,
   onReturnToSummary,
+  onEnterChallenge,
 }: Props) {
   const labels = labelsProp ?? resolveGameLabels(false, false);
   const entries = useMemo(
@@ -247,14 +249,15 @@ export function RadicalGameClient({
 
       <RadicalGameStats score={score} streak={streak} accuracy={accuracy} />
 
-      {!embedded ? (
+      {!embedded && onEnterChallenge ? (
         <div className="mb-3 flex justify-end">
-          <Link
-            href="/games/radical/challenge"
+          <button
+            type="button"
+            onClick={onEnterChallenge}
             className="rounded-full bg-[#fff4e0] px-3.5 py-1.5 text-xs font-extrabold text-[#b9760a]"
           >
-            ⚡ Сорилт горим
-          </Link>
+            ⚡ Сорилт
+          </button>
         </div>
       ) : null}
 

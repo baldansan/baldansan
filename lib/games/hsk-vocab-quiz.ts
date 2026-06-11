@@ -1,6 +1,7 @@
 import type { HskLevel } from "@/lib/hsk";
 import {
   buildSrsMarathonDeck,
+  type HskQuizKind,
   type HskQuizQuestion,
 } from "@/lib/games/hsk-quiz-builders";
 import type { HskWord } from "@/lib/hsk";
@@ -29,10 +30,11 @@ export function getVocabQuizConfig(level: HskLevel): VocabQuizLevelConfig {
 
 export function buildHskVocabQuizDeck(
   words: HskWord[],
-  level: HskLevel
+  level: HskLevel,
+  kinds?: HskQuizKind[]
 ): HskQuizQuestion[] {
   const { questions } = getVocabQuizConfig(level);
-  return buildSrsMarathonDeck(words, questions);
+  return buildSrsMarathonDeck(words, questions, kinds);
 }
 
 export function evaluateVocabQuiz(

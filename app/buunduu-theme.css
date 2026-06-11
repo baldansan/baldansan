@@ -442,6 +442,14 @@ body{
 @keyframes bs-sheet-up{from{transform:translateY(100%)}to{transform:translateY(0)}}
 .bs-mem-wizard{padding-top:4px}
 .bs-mem-step-title{margin:0;font-size:18px;font-weight:800;color:var(--bs-ink)}
+.bs-game-source{margin-top:4px}
+.bs-game-source-opt{display:flex;align-items:flex-start;gap:10px;width:100%;padding:12px;border:1px solid var(--bs-line);border-radius:14px;background:#fff;text-align:left;cursor:pointer}
+.bs-game-source-opt--on{border-color:var(--bs-green);background:#f0fdf4;box-shadow:0 0 0 2px rgba(31,184,90,.15)}
+.bs-game-source-opt--off{opacity:.55;cursor:not-allowed}
+.bs-game-source-emoji{font-size:20px;line-height:1.2;flex-shrink:0}
+.bs-game-source-body{display:flex;flex-direction:column;gap:2px;min-width:0}
+.bs-game-source-title{font-size:14px;font-weight:800;color:var(--bs-ink)}
+.bs-game-source-desc{font-size:11px;font-weight:600;color:var(--bs-muted);line-height:1.35}
 .bs-mem-step-sub{margin:6px 0 14px;font-size:12px;font-weight:600;color:var(--bs-muted)}
 .bs-mem-back{display:inline-flex;align-items:center;margin-bottom:10px;border:none;background:transparent;padding:0;font-size:12px;font-weight:800;color:var(--bs-green-700);cursor:pointer}
 .bs-mem-chip-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}

@@ -23,6 +23,7 @@ import { formatActiveHskLevel } from "@/lib/hsk/active-hsk-level";
 type Props = {
   lessonId: string;
   entries?: RadicalChallengeEntry[];
+  onExitChallenge?: () => void;
 };
 
 type SelectedSlot = {
@@ -36,7 +37,11 @@ const MAX_LIVES = 3;
 const HINT_PENALTY = 5;
 const WRONG_PENALTY = 5;
 
-export function RadicalChallengeClient({ lessonId, entries: entriesProp }: Props) {
+export function RadicalChallengeClient({
+  lessonId,
+  entries: entriesProp,
+  onExitChallenge,
+}: Props) {
   const { level: hskLevel } = useActiveHskLevel();
   const labels = resolveGameLabels(false, false);
 
@@ -362,12 +367,22 @@ export function RadicalChallengeClient({ lessonId, entries: entriesProp }: Props
       <ChallengeStats score={score} streak={streak} accuracy={accuracy} />
 
       <div className="mb-3 flex justify-end">
+        {onExitChallenge ? (
+          <button
+            type="button"
+            onClick={onExitChallenge}
+            className="text-xs font-bold text-[var(--app-primary-dark)] underline"
+          >
+            ← Энгийн горим
+          </button>
+        ) : (
         <Link
           href="/games/radical"
           className="text-xs font-bold text-[var(--app-primary-dark)] underline"
         >
           ← Энгийн горим
         </Link>
+        )}
       </div>
 
       <div className="rounded-[22px] bg-white p-4 shadow-[0_12px_30px_rgba(25,40,30,0.10)]">

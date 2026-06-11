@@ -1,8 +1,6 @@
-import { RadicalGameClient } from "@/components/games/radical-game-client";
+import { RadicalGamePageClient } from "@/components/games/radical-game-page-client";
 import { parseWordIdsParam } from "@/lib/games/game-api-level";
-import { buildRadicalEntriesFromWords } from "@/lib/games/radical-entries-from-words";
 import { getRadicalGameEntries } from "@/lib/games/radical-game-data";
-import { getWordsByIds } from "@/lib/hsk";
 
 export const dynamic = "force-dynamic";
 
@@ -16,6 +14,7 @@ type PageProps = {
     wordIds?: string;
     words?: string;
     returnTo?: string;
+    mode?: string;
   }>;
 };
 
@@ -24,19 +23,17 @@ export default async function RadicalGamePage({ searchParams }: PageProps) {
   const lessonId = params.lessonId ?? "radical";
   const wordIds = parseWordIdsParam(params.wordIds ?? params.words ?? null);
   const returnHref = params.returnTo?.trim() || undefined;
+  const initialChallenge = params.mode === "challenge";
 
-  let entries = getRadicalGameEntries();
-  if (wordIds.length > 0) {
-    const words = await getWordsByIds(wordIds);
-    entries = await buildRadicalEntriesFromWords(words);
-  }
+  const defaultEntries = getRadicalGameEntries();
 
   return (
-    <RadicalGameClient
+    <RadicalGamePageClient
       lessonId={lessonId}
-      entries={entries}
+      defaultEntries={defaultEntries}
       returnHref={returnHref}
-      customWordSet={wordIds.length > 0}
+      initialChallenge={initialChallenge}
+      initialWordIds={wordIds}
     />
   );
 }

@@ -34,93 +34,33 @@ type GameCard = {
 
 const CHINESE_HSK_GAMES: GameCard[] = [
   {
-    id: "mock-tests",
-    slug: "mock-tests",
-    title: "HSK загвар шалгалт",
-    desc: "Таймер · аудио · автомат оноо",
-    icon: "📋",
-    color: "from-emerald-500 to-green-600",
-    badge: "Шинэ",
-    global: true,
-  },
-  {
     id: "hsk-vocab-quiz",
     slug: "hsk-vocab-quiz",
     title: "Үгсийн дасгал",
-    desc: "Vocabulary quiz · 20–40 асуулт",
+    desc: "Утга, ханз, пиньинь, жишээ — 20–40 асуулт",
     icon: "🎯",
     color: "from-teal-500 to-emerald-600",
     badge: "Quiz",
     global: true,
   },
   {
-    id: "meaning",
-    slug: "meaning",
-    title: "Утга сонгох",
-    desc: "Ханз → 4 утга, 3 амь, 10 сек",
-    icon: "🎯",
-    color: "from-emerald-400 to-emerald-500",
-    badge: "⭐",
-    global: true,
-  },
-  {
-    id: "word-recall",
-    slug: "word-recall",
-    title: "Үг сорих",
-    desc: "Утга/пиньинь → зөв ханз сонго",
-    icon: "🔤",
-    color: "from-teal-400 to-teal-500",
-    badge: "Шинэ",
-    global: true,
-  },
-  {
-    id: "pinyin",
-    slug: "pinyin",
-    title: "Пиньинь сонгох",
-    desc: "Ханз харж зөв пиньинь сонго",
-    icon: "🎵",
-    color: "from-sky-400 to-sky-500",
-    badge: "Шинэ",
-    global: true,
-  },
-  {
-    id: "example-cloze",
-    slug: "example-cloze",
-    title: "Жишээ бөглөх",
-    desc: "Өгүүлбэрт дутуу үгийг бөглө",
-    icon: "📝",
-    color: "from-indigo-400 to-indigo-500",
-    badge: "Шинэ",
-    global: true,
-  },
-  {
-    id: "radical-pick",
-    slug: "radical-pick",
-    title: "Радикал таних",
-    desc: "Радикал → аль ханз вэ?",
-    icon: "🧩",
-    color: "from-orange-400 to-orange-500",
-    badge: "Шинэ",
-    global: true,
-  },
-  {
     id: "srs-marathon",
     slug: "srs-marathon",
     title: "SRS марафон",
-    desc: "Давталтын үгээр 5 төрлийн асуулт",
+    desc: "Миний давталтын үгээр 5 төрлийн асуулт",
     icon: "🏃",
     color: "from-violet-400 to-violet-500",
-    badge: "Шинэ",
+    badge: "SRS",
     global: true,
   },
   {
-    id: "daily-challenge",
-    slug: "daily-challenge",
-    title: "Өдрийн сорил",
-    desc: "10 асуулт, өдөрт нэг удаа",
-    icon: "📅",
-    color: "from-amber-400 to-amber-500",
-    badge: "Шинэ",
+    id: "radical",
+    slug: "radical",
+    title: "Ханз задлах",
+    desc: "Бүрэлдэхүүн сонгоод ханз бүрдүүлэх",
+    icon: "🧱",
+    color: "from-orange-400 to-orange-500",
+    badge: "Задлах",
     global: true,
   },
   {
@@ -130,17 +70,17 @@ const CHINESE_HSK_GAMES: GameCard[] = [
     desc: "60 секундэд хэдэн зөв?",
     icon: "⚡",
     color: "from-rose-400 to-rose-500",
-    badge: "Шинэ",
+    badge: "Хурд",
     global: true,
   },
   {
-    id: "radical",
-    slug: "radical",
-    title: "Ханз задлах",
-    desc: "Энгийн + ⚡ Сорилт горим",
-    icon: "🧱",
-    color: "from-orange-400 to-orange-500",
-    badge: "Шинэ",
+    id: "daily-challenge",
+    slug: "daily-challenge",
+    title: "Өдрийн сорил",
+    desc: "10 асуулт, өдөрт нэг удаа",
+    icon: "📅",
+    color: "from-amber-400 to-amber-500",
+    badge: "Өдөр",
     global: true,
   },
 ];
@@ -250,7 +190,7 @@ export function GamesAppView({ lessonIds, lessonTitles }: Props) {
     };
   }, [lessonIds, lessonTitles]);
 
-  const marathonHref = `/games/match?lessonId=${currentLessonId}`;
+  const marathonHref = "/games/srs-marathon";
 
   return (
     <MobileAppShell activeTab="games" mainClassName={SHELL_MAIN_NARROW}>
@@ -273,35 +213,10 @@ export function GamesAppView({ lessonIds, lessonTitles }: Props) {
 
       {lang === "zh" ? (
         <>
-          <Link
-            href="/games/daily-challenge"
-            className="mb-3 block rounded-[22px] bg-gradient-to-br from-amber-400 to-orange-500 p-4 text-white shadow-[var(--bs-shadow)] active:scale-[0.99]"
-          >
-            <p className="text-xs font-bold uppercase tracking-wide text-amber-100">
-              Өдрийн сорил
-            </p>
-            <p className="mt-1 text-lg font-extrabold">📅 10 асуулт</p>
-            <p className="mt-1 text-sm text-amber-50">
-              Өдөр бүр нэг удаа — оноогоо хадгал
-            </p>
-          </Link>
-          <Link
-            href="/games/meaning"
-            className="mb-5 block rounded-[22px] bg-gradient-to-br from-[#1FB85A] to-[#149247] p-4 text-white shadow-[var(--bs-shadow)] active:scale-[0.99]"
-          >
-            <p className="text-xs font-bold uppercase tracking-wide text-emerald-100">
-              Хурдан тест
-            </p>
-            <p className="mt-1 text-lg font-extrabold">🎯 Утга сонгох</p>
-            <p className="mt-1 text-sm text-emerald-50">
-              HSK түвшний үг — 4 сонголт, 3 амь, цагтай
-            </p>
-          </Link>
-
           <h2 className="mb-3 text-sm font-bold text-[var(--app-text)]">
             HSK тоглоомууд
           </h2>
-          <div className="mb-5 grid grid-cols-2 gap-3 lg:grid-cols-3">
+          <div className="mb-5 grid grid-cols-2 gap-3">
             {CHINESE_HSK_GAMES.map((game) => (
               <Link
                 key={game.id}
@@ -348,12 +263,12 @@ export function GamesAppView({ lessonIds, lessonTitles }: Props) {
           href={marathonHref}
           className="mt-3 inline-flex min-h-[44px] items-center rounded-full bg-white px-5 py-2.5 text-sm font-semibold text-purple-700"
         >
-          Холимог марафон
+          SRS марафон
         </Link>
       </div>
 
       <h2 className="mb-3 text-sm font-bold text-[var(--app-text)]">
-        Дасгал тоглоомууд
+        Хичээлийн дасгалууд
       </h2>
       <div className="grid grid-cols-2 gap-3">
         {games.map((game) => {

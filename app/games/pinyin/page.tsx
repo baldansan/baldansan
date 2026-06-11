@@ -1,15 +1,5 @@
-import { HskQuizGameClient } from "@/components/games/hsk-quiz-game-client";
+import { redirect } from "next/navigation";
 
-export const dynamic = "force-dynamic";
-
-export default function PinyinPickPage() {
-  return (
-    <HskQuizGameClient
-      config={{
-        title: "Пиньинь сонгох",
-        deckPath: "/api/games/pinyin-deck",
-        gameType: "pinyin-pick",
-      }}
-    />
-  );
+export default function PinyinGameRedirect() {
+  redirect("/games/hsk-vocab-quiz?types=pinyin");
 }

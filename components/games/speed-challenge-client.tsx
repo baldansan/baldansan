@@ -2,20 +2,33 @@
 
 import Link from "next/link";
 import { useCallback, useEffect, useRef, useState } from "react";
+import { GameWordSourcePicker } from "@/components/games/game-word-source-picker";
 import { HskLevelSelector } from "@/components/hsk/hsk-level-selector";
 import { useActiveHskLevel } from "@/components/providers/active-hsk-level-provider";
 import { GameShell } from "@/components/games/game-shell";
 import { saveGameResult } from "@/lib/games/game-progress";
 import type { HskQuizQuestion } from "@/lib/games/hsk-quiz-builders";
+import {
+  buildGameWordPool,
+  defaultGameWordSource,
+  type GameWordSource,
+  wordIdsToQuery,
+} from "@/lib/games/game-word-pool";
 import { formatActiveHskLevel } from "@/lib/hsk/active-hsk-level";
+import { getAuthenticatedUserId, hasSupabaseConfig } from "@/lib/supabase/auth";
 
 const ROUND_SECONDS = 60;
 
-type Phase = "loading" | "play" | "done";
+type Phase = "source" | "loading" | "play" | "done";
 
 export function SpeedChallengeClient() {
   const { level: activeLevel, hydrated } = useActiveHskLevel();
-  const [phase, setPhase] = useState<Phase>("loading");
+  const [phase, setPhase] = useState<Phase>("source");
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [wordSource, setWordSource] = useState<GameWordSource>("catalog");
+  const [poolNote, setPoolNote] = useState<string | null>(null);
+  const [wordSourceQuery, setWordSourceQuery] = useState("");
+  const [sourceLoading, setSourceLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [deck, setDeck] = useState<HskQuizQuestion[]>([]);
   const [index, setIndex] = useState(0);
@@ -49,13 +62,34 @@ export function SpeedChallengeClient() {
     setPhase("done");
   }, [deck.length, score]);
 
-  const loadDeck = useCallback(async () => {
+  useEffect(() => {
+    if (!hasSupabaseConfig) return;
+    void getAuthenticatedUserId().then(({ userId }) => {
+      const loggedIn = Boolean(userId);
+      setIsLoggedIn(loggedIn);
+      setWordSource(defaultGameWordSource(loggedIn));
+    });
+  }, []);
+
+  const confirmSource = useCallback(async () => {
     if (!hydrated) return;
-    setPhase("loading");
+    setSourceLoading(true);
+    try {
+      const pool = await buildGameWordPool(wordSource, activeLevel);
+      setWordSourceQuery(wordIdsToQuery(pool.wordIds));
+      setPoolNote(pool.note);
+      setPhase("loading");
+    } finally {
+      setSourceLoading(false);
+    }
+  }, [wordSource, activeLevel, hydrated]);
+
+  const loadDeck = useCallback(async () => {
+    if (!hydrated || phase !== "loading") return;
     setError(null);
     try {
       const res = await fetch(
-        `/api/games/speed-challenge-deck?level=${encodeURIComponent(String(activeLevel))}`
+        `/api/games/speed-challenge-deck?level=${encodeURIComponent(String(activeLevel))}${wordSourceQuery}`
       );
       const body = (await res.json()) as {
         deck?: HskQuizQuestion[];
@@ -82,11 +116,11 @@ export function SpeedChallengeClient() {
       setError("Сүлжээний алдаа.");
       setPhase("done");
     }
-  }, [activeLevel, hydrated]);
+  }, [activeLevel, hydrated, phase, wordSourceQuery]);
 
   useEffect(() => {
-    void loadDeck();
-  }, [loadDeck]);
+    if (phase === "loading") void loadDeck();
+  }, [phase, loadDeck]);
 
   useEffect(() => {
     if (phase !== "play") return;
@@ -125,10 +159,45 @@ export function SpeedChallengeClient() {
     }, 400);
   }
 
-  if (!hydrated || phase === "loading") {
+  if (!hydrated) {
     return (
       <GameShell mainClassName="mx-auto w-full max-w-[430px] lg:max-w-none px-4 py-12 text-center text-sm text-[var(--app-muted)]">
         Ачааллаж байна…
+      </GameShell>
+    );
+  }
+
+  if (phase === "source") {
+    return (
+      <GameShell mainClassName="mx-auto w-full max-w-[430px] lg:max-w-none px-4 pb-8">
+        <div className="bs-mock-setup">
+          <h1 className="bs-mock-title">Хурдны тэмцээн</h1>
+          <p className="bs-mock-sub">60 секундэд хэдэн зөв хариулах вэ?</p>
+          <GameWordSourcePicker
+            value={wordSource}
+            onChange={setWordSource}
+            isLoggedIn={isLoggedIn}
+          />
+          <button
+            type="button"
+            className="bs-mock-primary-btn mt-5"
+            disabled={sourceLoading}
+            onClick={() => void confirmSource()}
+          >
+            {sourceLoading ? "Бэлдэж байна…" : "Эхлэх →"}
+          </button>
+          <Link href="/games" className="bs-meaning-link mt-4 block text-center">
+            ← Тоглоом руу
+          </Link>
+        </div>
+      </GameShell>
+    );
+  }
+
+  if (phase === "loading") {
+    return (
+      <GameShell mainClassName="mx-auto w-full max-w-[430px] lg:max-w-none px-4 py-12 text-center text-sm text-[var(--app-muted)]">
+        Асуулт бэлдэж байна…
       </GameShell>
     );
   }
@@ -152,7 +221,7 @@ export function SpeedChallengeClient() {
           )}
           <button
             type="button"
-            onClick={() => void loadDeck()}
+            onClick={() => setPhase("source")}
             className="bs-meaning-primary-btn mt-5"
           >
             Дахин тоглох

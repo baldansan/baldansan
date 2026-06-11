@@ -1,16 +1,5 @@
-import { HskQuizGameClient } from "@/components/games/hsk-quiz-game-client";
+import { redirect } from "next/navigation";
 
-export const dynamic = "force-dynamic";
-
-export default function WordRecallPage() {
-  return (
-    <HskQuizGameClient
-      config={{
-        title: "Үг сорих",
-        deckPath: "/api/games/word-recall-deck",
-        gameType: "word-recall",
-        hanziOptions: true,
-      }}
-    />
-  );
+export default function WordRecallGameRedirect() {
+  redirect("/games/hsk-vocab-quiz?types=word-recall");
 }

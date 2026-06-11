@@ -1,7 +1,5 @@
-import { MeaningQuizClient } from "@/components/games/meaning-quiz-client";
+import { redirect } from "next/navigation";
 
-export const dynamic = "force-dynamic";
-
-export default function MeaningQuizPage() {
-  return <MeaningQuizClient />;
+export default function MeaningGameRedirect() {
+  redirect("/games/hsk-vocab-quiz?types=meaning");
 }
