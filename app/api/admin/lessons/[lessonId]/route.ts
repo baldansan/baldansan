@@ -20,8 +20,6 @@ export async function GET(_request: Request, context: RouteContext) {
   const { lessonId } = await context.params;
   const normalizedId = normalizeLessonRouteId(lessonId);
 
-  console.log("[api/admin/lessons] edit route lookup", { paramId: normalizedId });
-
   const lesson = await getAdminLessonById(normalizedId);
   if (!lesson) {
     return NextResponse.json(

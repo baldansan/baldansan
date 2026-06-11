@@ -41,13 +41,6 @@ export async function POST(request: Request) {
     );
   }
 
-  console.log("[api/admin/import/lesson] Sending import draft request", {
-    courseId: body.courseId,
-    lessonId: body.lessonId,
-    vocabularyCount: body.importPayload?.vocabulary?.length ?? 0,
-    quizCount: body.importPayload?.quizQuestions?.length ?? 0,
-  });
-
   if (!body.courseId?.trim()) {
     return NextResponse.json(
       { ok: false, errors: ["courseId missing in manifest.json."] },

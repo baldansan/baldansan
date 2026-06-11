@@ -194,18 +194,6 @@ async function upsertLessonShell(
     return { ok: false, error: "ZIP parse data missing. Please validate again." };
   }
 
-  console.log("parsed import package", {
-    courseId: body.courseId,
-    lessonId: body.lessonId,
-    language: body.language,
-    targetLanguage: body.targetLanguage,
-    title: body.title,
-    targetTitle: body.targetTitle,
-    vocabularyCount: validation.vocabulary.length,
-    quizCount: validation.quizQuestions.length,
-    packageVersion: body.packageVersion,
-  });
-
   const result = await upsertDraftLessonFromPackage(supabase, body);
   return {
     ok: result.ok,
@@ -359,6 +347,5 @@ export async function importLessonPackage(
     created: shell.created,
     message,
   };
-  console.log("import result", result);
   return result;
 }

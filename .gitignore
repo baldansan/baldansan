@@ -51,3 +51,6 @@ next-env.d.ts
 /final_bundle/
 /.tmp-hsk-upload/
 /H*.json
+
+# local scratch / one-off notes
+/public/data/cursor-prompt-breakdown.md

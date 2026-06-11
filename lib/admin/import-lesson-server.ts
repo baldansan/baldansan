@@ -42,17 +42,6 @@ export async function importDraftLessonOnServer(
     return fail(["ZIP parse data missing. Please validate again."]);
   }
 
-  console.log("[import-server] creating draft lesson", {
-    courseId,
-    packageLessonId,
-    vocabularyCount: body.importPayload.vocabulary.length,
-    quizCount: body.importPayload.quizQuestions.length,
-    sourceNoteIsJson: Boolean(
-      body.hskSourceNoteJson?.trim().startsWith("{") ||
-        body.sourceNote?.trim().startsWith("{")
-    ),
-  });
-
   const shell = await upsertDraftLessonFromPackage(client, body);
   if (!shell.ok) {
     return fail([shell.error ?? "Draft lesson upsert failed."], {
@@ -107,6 +96,5 @@ export async function importDraftLessonOnServer(
     message,
   };
 
-  console.log("[import-server] import result", result);
   return result;
 }

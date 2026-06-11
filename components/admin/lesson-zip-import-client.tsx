@@ -101,24 +101,6 @@ export function LessonZipImportClient({
         ? []
         : collectValidationErrorMessages(result);
 
-      console.log("[lesson-zip-import] parse / validate result", {
-        track,
-        ok: result.ok,
-        wrongImporter: result.wrongImporter ?? null,
-        errorCount: errorMessages.length,
-        errors: errorMessages,
-        warnings: result.warnings,
-        preview: result.preview,
-        importPayload: result.importPayload
-          ? {
-              subtitles: result.importPayload.subtitles.length,
-              vocabulary: result.importPayload.vocabulary.length,
-              quizQuestions: result.importPayload.quizQuestions.length,
-            }
-          : null,
-        contentValidation: result.contentValidation,
-      });
-
       if (result.wrongImporter) {
         setError(null);
         return;

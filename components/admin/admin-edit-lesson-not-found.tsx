@@ -16,8 +16,6 @@ export function AdminEditLessonNotFound({ lessonId }: Props) {
   const [localDraftIds, setLocalDraftIds] = useState<string[]>([]);
 
   useEffect(() => {
-    console.log("edit route param", lessonId);
-
     try {
       const raw = localStorage.getItem(LESSON_DRAFTS_STORAGE_KEY);
       if (raw) {
@@ -26,7 +24,6 @@ export function AdminEditLessonNotFound({ lessonId }: Props) {
           .map((item) => item.lessonId ?? item.id)
           .filter((id): id is string => Boolean(id));
         setLocalDraftIds(ids);
-        console.log("local fallback lessons", drafts);
       }
     } catch {
       // ignore
@@ -39,9 +36,6 @@ export function AdminEditLessonNotFound({ lessonId }: Props) {
         const response = await fetch(
           `/api/admin/lessons/${encodeURIComponent(lessonId)}`
         );
-        const text = await response.text();
-        console.log("found by lessonId", response.status, text.slice(0, 200));
-
         if (!cancelled && response.ok) {
           window.location.reload();
           return;
