@@ -7,29 +7,21 @@ import {
   HSK_LEVEL_OPTIONS,
   type ActiveHskLevel,
 } from "@/lib/hsk/active-hsk-level";
-import {
-  getCategoryLabelMn,
-  type PosCategoryId,
-} from "@/lib/hsk/pos-catalog";
 import { countLocalStudiedAmong } from "@/lib/srs/local-word-srs";
 import type { WordSrsQueueItem } from "@/lib/srs/word-srs-types";
 import type { HskWordRow } from "@/lib/supabase/hsk-words";
 import { getAuthenticatedUserId, hasSupabaseConfig } from "@/lib/supabase/auth";
 import { countStudiedAmongWordIds } from "@/lib/supabase/user-word-srs";
 
-type WizardStep = "level" | "pos" | "batch" | "study";
-
-type CategoryMeta = {
-  id: PosCategoryId;
-  labelMn: string;
-  count: number;
-};
+type WizardStep = "level" | "batch" | "study";
 
 type BatchSummary = {
   batchIndex: number;
   rangeStart: number;
   rangeEnd: number;
   wordIds: number[];
+  firstSimplified: string;
+  lastSimplified: string;
   studiedCount: number;
 };
 
@@ -37,13 +29,15 @@ function toCatalogLevel(level: ActiveHskLevel): string {
   return level === "7-9" ? "7-9" : String(level);
 }
 
+function batchLabel(batch: BatchSummary): string {
+  return `Багц ${batch.batchIndex + 1} · ${batch.firstSimplified} → ${batch.lastSimplified}`;
+}
+
 export function HanziMemorizeClient() {
   const [step, setStep] = useState<WizardStep>("level");
   const [level, setLevel] = useState<ActiveHskLevel | null>(null);
-  const [category, setCategory] = useState<PosCategoryId | null>(null);
-  const [categories, setCategories] = useState<CategoryMeta[]>([]);
-  const [totalWords, setTotalWords] = useState(0);
   const [batches, setBatches] = useState<BatchSummary[]>([]);
+  const [totalWords, setTotalWords] = useState(0);
   const [activeBatch, setActiveBatch] = useState<BatchSummary | null>(null);
   const [studyQueue, setStudyQueue] = useState<WordSrsQueueItem[]>([]);
   const [userId, setUserId] = useState<string | null>(null);
@@ -66,40 +60,12 @@ export function HanziMemorizeClient() {
     [userId]
   );
 
-  async function handleSelectLevel(next: ActiveHskLevel) {
-    setLevel(next);
+  async function loadBatches(next: ActiveHskLevel) {
     setLoading(true);
     setError(null);
     try {
       const res = await fetch(
-        `/api/review/memorize-meta?level=${encodeURIComponent(toCatalogLevel(next))}`
-      );
-      const json = (await res.json()) as {
-        categories?: CategoryMeta[];
-        totalWords?: number;
-        error?: string;
-      };
-      if (!res.ok || json.error) {
-        throw new Error(json.error ?? "POS ачаалахад алдаа");
-      }
-      setCategories(json.categories ?? []);
-      setTotalWords(json.totalWords ?? 0);
-      setStep("pos");
-    } catch (err) {
-      setError(err instanceof Error ? err.message : "Ачаалахад алдаа");
-    } finally {
-      setLoading(false);
-    }
-  }
-
-  async function handleSelectCategory(next: PosCategoryId) {
-    if (!level) return;
-    setCategory(next);
-    setLoading(true);
-    setError(null);
-    try {
-      const res = await fetch(
-        `/api/review/memorize-batches?level=${encodeURIComponent(toCatalogLevel(level))}&category=${encodeURIComponent(next)}`
+        `/api/review/memorize-batches?level=${encodeURIComponent(toCatalogLevel(next))}`
       );
       const json = (await res.json()) as {
         batches?: {
@@ -107,7 +73,10 @@ export function HanziMemorizeClient() {
           rangeStart: number;
           rangeEnd: number;
           wordIds: number[];
+          firstSimplified: string;
+          lastSimplified: string;
         }[];
+        totalWords?: number;
         error?: string;
       };
       if (!res.ok || json.error) {
@@ -121,6 +90,7 @@ export function HanziMemorizeClient() {
         }))
       );
       setBatches(withProgress);
+      setTotalWords(json.totalWords ?? 0);
       setStep("batch");
     } catch (err) {
       setError(err instanceof Error ? err.message : "Ачаалахад алдаа");
@@ -129,14 +99,19 @@ export function HanziMemorizeClient() {
     }
   }
 
+  async function handleSelectLevel(next: ActiveHskLevel) {
+    setLevel(next);
+    await loadBatches(next);
+  }
+
   async function handleSelectBatch(batch: BatchSummary) {
-    if (!level || !category) return;
+    if (!level) return;
     setActiveBatch(batch);
     setLoading(true);
     setError(null);
     try {
       const res = await fetch(
-        `/api/review/memorize-batch?level=${encodeURIComponent(toCatalogLevel(level))}&category=${encodeURIComponent(category)}&batch=${batch.batchIndex}`
+        `/api/review/memorize-batch?level=${encodeURIComponent(toCatalogLevel(level))}&batch=${batch.batchIndex}`
       );
       const json = (await res.json()) as {
         words?: HskWordRow[];
@@ -164,21 +139,16 @@ export function HanziMemorizeClient() {
     if (step === "study") {
       setStep("batch");
       setActiveBatch(null);
-      if (level && category) {
-        void handleSelectCategory(category);
+      if (level) {
+        void loadBatches(level);
       }
       return;
     }
     if (step === "batch") {
-      setStep("pos");
-      setCategory(null);
-      setBatches([]);
-      return;
-    }
-    if (step === "pos") {
       setStep("level");
       setLevel(null);
-      setCategories([]);
+      setBatches([]);
+      setTotalWords(0);
       return;
     }
   }
@@ -206,23 +176,18 @@ export function HanziMemorizeClient() {
     );
   }
 
-  if (step === "study" && level && category && activeBatch) {
+  if (step === "study" && level && activeBatch) {
     const hskLabel = formatActiveHskLevel(level);
-    const posLabel = getCategoryLabelMn(category);
     return (
       <>
-        <button
-          type="button"
-          onClick={goBack}
-          className="bs-mem-back"
-        >
+        <button type="button" onClick={goBack} className="bs-mem-back">
           ← Багцууд руу
         </button>
         <WordSrsStudySession
           queue={studyQueue}
           userId={userId}
           title="Ханз цээжлэх"
-          subtitle={`${hskLabel} · ${posLabel} · Багц ${activeBatch.batchIndex + 1}`}
+          subtitle={`${hskLabel} · ${batchLabel(activeBatch)}`}
           hskLevelLabel={hskLabel}
           showLoginHint
           onRestart={goBack}
@@ -239,21 +204,21 @@ export function HanziMemorizeClient() {
             });
           }}
           completeTitle="✅ Багц дууслаа!"
-          completeMessage={`${activeBatch.rangeStart}–${activeBatch.rangeEnd} багцын карт дууслаа.`}
+          completeMessage={`${batchLabel(activeBatch)} дууслаа.`}
         />
       </>
     );
   }
 
-  if (step === "batch" && level && category) {
+  if (step === "batch" && level) {
     return (
       <div className="bs-mem-wizard">
         <button type="button" onClick={goBack} className="bs-mem-back">
-          ← POS сонгох
+          ← HSK түвшин
         </button>
         <h2 className="bs-mem-step-title">Багц сонгох</h2>
         <p className="bs-mem-step-sub">
-          {formatActiveHskLevel(level)} · {getCategoryLabelMn(category)}
+          {formatActiveHskLevel(level)} · {totalWords} үг · пиньинь дарааллаар
         </p>
         <ul className="bs-mem-batch-list">
           {batches.map((b) => (
@@ -263,9 +228,7 @@ export function HanziMemorizeClient() {
                 className="bs-mem-batch-btn"
                 onClick={() => void handleSelectBatch(b)}
               >
-                <span className="bs-mem-batch-label">
-                  Багц {b.batchIndex + 1} ({b.rangeStart}–{b.rangeEnd})
-                </span>
+                <span className="bs-mem-batch-label">{batchLabel(b)}</span>
                 <span className="bs-mem-batch-progress">
                   {b.studiedCount}/{b.wordIds.length} сурсан
                 </span>
@@ -277,43 +240,11 @@ export function HanziMemorizeClient() {
     );
   }
 
-  if (step === "pos" && level) {
-    return (
-      <div className="bs-mem-wizard">
-        <button type="button" onClick={goBack} className="bs-mem-back">
-          ← HSK түвшин
-        </button>
-        <h2 className="bs-mem-step-title">Ярианы хэсэг (POS)</h2>
-        <p className="bs-mem-step-sub">{formatActiveHskLevel(level)}</p>
-        <div className="bs-mem-chip-grid">
-          <button
-            type="button"
-            className="bs-mem-chip"
-            onClick={() => void handleSelectCategory("all")}
-          >
-            Бүгд <span className="bs-mem-chip-count">({totalWords})</span>
-          </button>
-          {categories.map((cat) => (
-            <button
-              key={cat.id}
-              type="button"
-              className="bs-mem-chip"
-              onClick={() => void handleSelectCategory(cat.id)}
-            >
-              {cat.labelMn}{" "}
-              <span className="bs-mem-chip-count">({cat.count})</span>
-            </button>
-          ))}
-        </div>
-      </div>
-    );
-  }
-
   return (
     <div className="bs-mem-wizard">
       <h2 className="bs-mem-step-title">HSK түвшин сонгох</h2>
       <p className="bs-mem-step-sub">
-        Түгээмэл үгээс эхлээд 30-аар багцлан цээжлэнэ
+        Пиньинь дарааллаар 30-аар багцлан цээжлэнэ
       </p>
       <div className="bs-mem-chip-grid">
         {HSK_LEVEL_OPTIONS.map((opt) => (

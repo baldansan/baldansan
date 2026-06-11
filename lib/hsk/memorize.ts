@@ -1,18 +1,13 @@
 import { createClient } from "@supabase/supabase-js";
 import type { HskLevel, HskWord } from "@/lib/hsk";
+import { MEMORIZE_BATCH_SIZE } from "@/lib/hsk/pos-catalog";
 import { hasServerSupabaseConfig } from "@/lib/supabase/server";
-import {
-  MEMORIZE_BATCH_SIZE,
-  type PosCategoryId,
-  POS_UI_CATEGORIES,
-  wordMatchesPosCategory,
-} from "@/lib/hsk/pos-catalog";
 
-const LIGHT_SELECT = "id, pos, frequency";
+const LIGHT_SELECT = "id, simplified";
 const WORD_SELECT =
   "id, simplified, traditional, pinyin, pos, radical, frequency, hsk_level, hsk_old, meaning_en, meaning_mn, example_zh, example_pinyin, example_mn";
 
-type LightRow = { id: number; pos: string[]; frequency: number | null };
+type LightRow = { id: number; simplified: string };
 
 function catalogClient() {
   if (!hasServerSupabaseConfig) return null;
@@ -22,13 +17,7 @@ function catalogClient() {
   return createClient(url, key);
 }
 
-const filterCache = new Map<
-  string,
-  { at: number; ids: number[]; total: number }
->();
-const FILTER_TTL_MS = 10 * 60 * 1000;
-
-async function loadLevelRows(level: HskLevel): Promise<LightRow[]> {
+async function loadOrderedLightRows(level: HskLevel): Promise<LightRow[]> {
   const supabase = catalogClient();
   if (!supabase) return [];
 
@@ -41,7 +30,8 @@ async function loadLevelRows(level: HskLevel): Promise<LightRow[]> {
       .from("hsk_words")
       .select(LIGHT_SELECT)
       .eq("hsk_level", level)
-      .order("frequency", { ascending: true, nullsFirst: false })
+      .order("pinyin_sort_key", { ascending: true, nullsFirst: false })
+      .order("simplified", { ascending: true })
       .range(from, from + pageSize - 1);
 
     if (error) throw new Error(error.message);
@@ -54,54 +44,33 @@ async function loadLevelRows(level: HskLevel): Promise<LightRow[]> {
   return rows;
 }
 
-async function getFilteredIds(
-  level: HskLevel,
-  categoryId: PosCategoryId
-): Promise<{ ids: number[]; total: number }> {
-  const key = `${level}:${categoryId}`;
-  const hit = filterCache.get(key);
-  if (hit && Date.now() - hit.at < FILTER_TTL_MS) {
-    return { ids: hit.ids, total: hit.total };
-  }
+async function countLevelWords(level: HskLevel): Promise<number> {
+  const supabase = catalogClient();
+  if (!supabase) return 0;
 
-  const rows = await loadLevelRows(level);
-  const filtered = rows.filter((row) =>
-    wordMatchesPosCategory(row.pos, categoryId)
-  );
-  const ids = filtered.map((r) => r.id);
-  filterCache.set(key, { at: Date.now(), ids, total: ids.length });
-  return { ids, total: ids.length };
+  const { count, error } = await supabase
+    .from("hsk_words")
+    .select("id", { count: "exact", head: true })
+    .eq("hsk_level", level);
+
+  if (error) throw new Error(error.message);
+  return count ?? 0;
 }
 
-export type MemorizeCategoryMeta = {
-  id: PosCategoryId;
-  labelMn: string;
-  count: number;
-};
-
 export async function fetchMemorizeMeta(level: HskLevel): Promise<{
-  categories: MemorizeCategoryMeta[];
   totalWords: number;
   batchSize: number;
+  batchCount: number;
 }> {
-  const rows = await loadLevelRows(level);
+  const totalWords = await countLevelWords(level);
+  const batchSize = MEMORIZE_BATCH_SIZE;
+  const batchCount = totalWords > 0 ? Math.ceil(totalWords / batchSize) : 0;
 
-  const categories: MemorizeCategoryMeta[] = POS_UI_CATEGORIES.map((cat) => ({
-    id: cat.id,
-    labelMn: cat.labelMn,
-    count: rows.filter((row) => wordMatchesPosCategory(row.pos, cat.id)).length,
-  })).filter((c) => c.count > 0);
-
-  return {
-    categories,
-    totalWords: rows.length,
-    batchSize: MEMORIZE_BATCH_SIZE,
-  };
+  return { totalWords, batchSize, batchCount };
 }
 
 export async function fetchMemorizeBatch(
   level: HskLevel,
-  categoryId: PosCategoryId,
   batchIndex: number
 ): Promise<{
   words: HskWord[];
@@ -110,19 +79,23 @@ export async function fetchMemorizeBatch(
   batchSize: number;
   rangeStart: number;
   rangeEnd: number;
-  totalInFilter: number;
+  totalWords: number;
   batchCount: number;
+  firstSimplified: string | null;
+  lastSimplified: string | null;
 }> {
-  const { ids, total } = await getFilteredIds(level, categoryId);
   const batchSize = MEMORIZE_BATCH_SIZE;
-  const batchCount = Math.max(1, Math.ceil(total / batchSize));
-  const safeBatch = Math.max(0, Math.min(batchIndex, batchCount - 1));
-  const slice = ids.slice(
-    safeBatch * batchSize,
-    safeBatch * batchSize + batchSize
+  const totalWords = await countLevelWords(level);
+  const batchCount = totalWords > 0 ? Math.ceil(totalWords / batchSize) : 0;
+  const safeBatch = Math.max(
+    0,
+    Math.min(batchIndex, Math.max(0, batchCount - 1))
   );
+  const from = safeBatch * batchSize;
+  const to = from + batchSize - 1;
 
-  if (slice.length === 0) {
+  const supabase = catalogClient();
+  if (!supabase || totalWords === 0) {
     return {
       words: [],
       wordIds: [],
@@ -130,51 +103,41 @@ export async function fetchMemorizeBatch(
       batchSize,
       rangeStart: 0,
       rangeEnd: 0,
-      totalInFilter: total,
+      totalWords,
       batchCount,
-    };
-  }
-
-  const supabase = catalogClient();
-  if (!supabase) {
-    return {
-      words: [],
-      wordIds: slice,
-      batchIndex: safeBatch,
-      batchSize,
-      rangeStart: safeBatch * batchSize + 1,
-      rangeEnd: safeBatch * batchSize + slice.length,
-      totalInFilter: total,
-      batchCount,
+      firstSimplified: null,
+      lastSimplified: null,
     };
   }
 
   const { data, error } = await supabase
     .from("hsk_words")
     .select(WORD_SELECT)
-    .in("id", slice);
+    .eq("hsk_level", level)
+    .order("pinyin_sort_key", { ascending: true, nullsFirst: false })
+    .order("simplified", { ascending: true })
+    .range(from, to);
 
   if (error) throw new Error(error.message);
 
-  const byId = new Map(
-    ((data ?? []) as HskWord[]).map((w) => [w.id, w] as const)
-  );
-  const words = slice
-    .map((id) => byId.get(id))
-    .filter((w): w is HskWord => w != null);
-
-  const rangeStart = safeBatch * batchSize + 1;
-  const rangeEnd = rangeStart + words.length - 1;
+  const words = (data ?? []) as HskWord[];
+  const wordIds = words.map((w) => w.id);
+  const rangeStart = from + 1;
+  const rangeEnd = from + words.length;
+  const firstSimplified = words[0]?.simplified ?? null;
+  const lastSimplified = words[words.length - 1]?.simplified ?? null;
 
   return {
     words,
-    wordIds: slice,
+    wordIds,
     batchIndex: safeBatch,
     batchSize,
     rangeStart,
     rangeEnd,
-    totalInFilter: total,
+    totalWords,
     batchCount,
+    firstSimplified,
+    lastSimplified,
   };
 }
 
@@ -183,30 +146,31 @@ export type MemorizeBatchSummary = {
   rangeStart: number;
   rangeEnd: number;
   wordIds: number[];
+  firstSimplified: string;
+  lastSimplified: string;
 };
 
-export async function fetchMemorizeBatchSummaries(
-  level: HskLevel,
-  categoryId: PosCategoryId
-): Promise<{
+export async function fetchMemorizeBatchSummaries(level: HskLevel): Promise<{
   batches: MemorizeBatchSummary[];
-  totalInFilter: number;
+  totalWords: number;
   batchSize: number;
 }> {
-  const { ids, total } = await getFilteredIds(level, categoryId);
+  const rows = await loadOrderedLightRows(level);
   const batchSize = MEMORIZE_BATCH_SIZE;
   const batches: MemorizeBatchSummary[] = [];
 
-  for (let i = 0; i < ids.length; i += batchSize) {
-    const slice = ids.slice(i, i + batchSize);
+  for (let i = 0; i < rows.length; i += batchSize) {
+    const slice = rows.slice(i, i + batchSize);
     const batchIndex = Math.floor(i / batchSize);
     batches.push({
       batchIndex,
       rangeStart: i + 1,
       rangeEnd: i + slice.length,
-      wordIds: slice,
+      wordIds: slice.map((r) => r.id),
+      firstSimplified: slice[0]!.simplified,
+      lastSimplified: slice[slice.length - 1]!.simplified,
     });
   }
 
-  return { batches, totalInFilter: total, batchSize };
+  return { batches, totalWords: rows.length, batchSize };
 }

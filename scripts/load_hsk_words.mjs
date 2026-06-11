@@ -5,7 +5,7 @@
  *   SUPABASE_URL=https://xxxx.supabase.co
  *   SUPABASE_SERVICE_ROLE_KEY=eyJ...
  *
- * Apply migration first: supabase/migrations/024_hsk_words_catalog.sql
+ * Apply migrations first: 024_hsk_words_catalog.sql, 032_hsk_words_pinyin_sort.sql
  * Run: npm run load:hsk
  */
 import { readFileSync, existsSync } from "fs";

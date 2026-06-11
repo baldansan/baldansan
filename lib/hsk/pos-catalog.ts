@@ -1,6 +1,6 @@
 /**
  * ICTPOS-style tags in public.hsk_words.pos (e.g. n, v, a, vn, nr).
- * Grouped into learner-facing Mongolian categories for "Ханз цээжлэх".
+ * Shown as small chips on word cards; memorize batches no longer group by POS.
  */
 
 export const MEMORIZE_BATCH_SIZE = 30;
