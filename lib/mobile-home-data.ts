@@ -1,6 +1,7 @@
 import {
   buildHomeCourseCatalog,
   defaultHomeChipId,
+  type HskHomeLevelId,
   type MobileCourseCatalogEntry,
 } from "@/lib/mobile-course-options";
 import { koreanChipTitle } from "@/lib/course-display";
@@ -20,6 +21,8 @@ type KoreanLoadResult = {
   subtitle: string;
   lessons: Awaited<ReturnType<typeof getPublicLessonSummariesByCourseId>>;
 } | null;
+
+const HSK_LEVEL_IDS: HskHomeLevelId[] = ["hsk4", "hsk5", "hsk6"];
 
 async function loadKoreanCourseForHome(): Promise<KoreanLoadResult> {
   const candidates = ["korean-level-1", "korean-1", "korean-survival"] as const;
@@ -45,22 +48,40 @@ async function loadKoreanCourseForHome(): Promise<KoreanLoadResult> {
   return null;
 }
 
+async function loadHskLevelForHome(courseId: HskHomeLevelId) {
+  const [lessons, course] = await Promise.all([
+    getPublicLessonSummariesByCourseId(courseId),
+    getCourseContentById(courseId),
+  ]);
+
+  const defaultTitles: Record<HskHomeLevelId, string> = {
+    hsk4: "HSK 4",
+    hsk5: "HSK 5",
+    hsk6: "HSK 6",
+  };
+
+  return {
+    title: course?.title ?? defaultTitles[courseId],
+    subtitle: course?.subtitle ?? "",
+    lessons,
+  };
+}
+
 export async function loadMobileHomeData(): Promise<MobileHomeData> {
-  const [hsk5Lessons, hsk5Course, hsk4Lessons, hsk4Course, korean] =
-    await Promise.all([
-      getPublicLessonSummariesByCourseId("hsk5"),
-      getCourseContentById("hsk5"),
-      getPublicLessonSummariesByCourseId("hsk4"),
-      getCourseContentById("hsk4"),
-      loadKoreanCourseForHome(),
-    ]);
+  const [hskLevels, korean] = await Promise.all([
+    Promise.all(HSK_LEVEL_IDS.map((id) => loadHskLevelForHome(id))),
+    loadKoreanCourseForHome(),
+  ]);
+
+  const hsk: Partial<
+    Record<HskHomeLevelId, Awaited<ReturnType<typeof loadHskLevelForHome>>>
+  > = {};
+  for (let i = 0; i < HSK_LEVEL_IDS.length; i++) {
+    hsk[HSK_LEVEL_IDS[i]!] = hskLevels[i];
+  }
 
   const catalog = buildHomeCourseCatalog(
-    {
-      title: hsk5Course?.title ?? "HSK 5",
-      subtitle: hsk5Course?.subtitle ?? "",
-      lessons: hsk5Lessons,
-    },
+    hsk,
     korean
       ? {
           courseId: korean.courseId,
@@ -68,12 +89,7 @@ export async function loadMobileHomeData(): Promise<MobileHomeData> {
           subtitle: korean.subtitle,
           lessons: korean.lessons,
         }
-      : null,
-    {
-      title: hsk4Course?.title ?? "HSK 4 上",
-      subtitle: hsk4Course?.subtitle ?? "",
-      lessons: hsk4Lessons,
-    }
+      : null
   );
 
   return {

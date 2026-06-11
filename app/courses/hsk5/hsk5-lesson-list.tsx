@@ -9,6 +9,10 @@ import {
   getLessonProgressMapSmart,
   type LessonStatus,
 } from "@/lib/progress";
+import {
+  groupLessonsBySections,
+  resolveLessonOrder,
+} from "@/lib/course-lesson-sections";
 import type { LessonContent, LessonContentStatus } from "@/types/lesson-content";
 
 function localStatusLabel(status: LessonStatus): string {
@@ -66,7 +70,77 @@ type Props = {
   lessons: LessonContent[];
 };
 
-export function Hsk5LessonList({ lessons }: Props) {
+function LessonCard({
+  lesson,
+  localStatus,
+}: {
+  lesson: LessonContent;
+  localStatus: LessonStatus;
+}) {
+  const isLocked = lesson.status === "locked";
+  const lessonNumber = resolveLessonOrder(lesson);
+
+  return (
+    <article className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:rounded-3xl sm:p-6">
+      <div className="flex flex-wrap items-start justify-between gap-3">
+        <div className="min-w-0 flex-1">
+          <p className="text-xs font-medium text-emerald-600">
+            {lessonNumber > 0 ? `${lessonNumber}-р хичээл` : lesson.id}
+          </p>
+          <h3 className="mt-0.5 text-lg font-semibold leading-snug text-slate-900">
+            {lesson.title}
+          </h3>
+          <p className="text-base text-slate-700">{lesson.chineseTitle}</p>
+        </div>
+        <div className="flex flex-wrap gap-2">
+          {isLocked ? (
+            <span className="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-500 ring-1 ring-slate-200">
+              {contentStatusLabel(lesson.status)}
+            </span>
+          ) : (
+            <span className={localStatusBadgeClass(localStatus)}>
+              {localStatusLabel(localStatus)}
+            </span>
+          )}
+        </div>
+      </div>
+
+      {lesson.subtitle ? (
+        <p className="mt-2 text-sm font-medium text-slate-700">{lesson.subtitle}</p>
+      ) : null}
+
+      <div className="mt-4 flex flex-wrap gap-2 text-xs text-slate-600">
+        <span className="rounded-lg bg-slate-50 px-2.5 py-1 ring-1 ring-slate-200">
+          {lesson.duration}
+        </span>
+        <span className="rounded-lg bg-slate-50 px-2.5 py-1 ring-1 ring-slate-200">
+          {lesson.vocabularyCount} үг
+        </span>
+        <span className="rounded-lg bg-slate-50 px-2.5 py-1 ring-1 ring-slate-200">
+          {lesson.quizCount} quiz
+        </span>
+      </div>
+
+      <div className="mt-4 flex justify-end">
+        {isLocked ? (
+          <button
+            type="button"
+            disabled
+            className="min-h-[44px] cursor-not-allowed rounded-full bg-slate-100 px-5 py-2 text-sm font-semibold text-slate-400"
+          >
+            Түгжээтэй
+          </button>
+        ) : (
+          <Link href={lessonPath(lesson.id)} className={ctaPrimaryClass}>
+            {actionButtonLabel(lesson.status, localStatus)}
+          </Link>
+        )}
+      </div>
+    </article>
+  );
+}
+
+export function CourseLessonList({ lessons }: Props) {
   const [search, setSearch] = useState("");
   const [localStatusByLesson, setLocalStatusByLesson] = useState<
     Record<string, LessonStatus>
@@ -92,6 +166,13 @@ export function Hsk5LessonList({ lessons }: Props) {
     () => lessons.filter((lesson) => matchesSearch(lesson, search)),
     [lessons, search]
   );
+
+  const sectionGroups = useMemo(
+    () => groupLessonsBySections(filteredLessons),
+    [filteredLessons]
+  );
+
+  const showSections = !search.trim() && sectionGroups.length > 1;
 
   if (lessons.length === 0) {
     return (
@@ -130,77 +211,41 @@ export function Hsk5LessonList({ lessons }: Props) {
             </button>
           }
         />
+      ) : showSections ? (
+        sectionGroups.map((section) => (
+          <div key={`${section.start}-${section.end}`} className="flex flex-col gap-4">
+            <h2 className="text-sm font-bold uppercase tracking-wide text-slate-500">
+              {section.label}
+            </h2>
+            {section.lessons.map((lesson) => {
+              const localStatus =
+                localStatusByLesson[lesson.id] ?? ("not_started" as LessonStatus);
+              return (
+                <LessonCard
+                  key={lesson.id}
+                  lesson={lesson}
+                  localStatus={localStatus}
+                />
+              );
+            })}
+          </div>
+        ))
       ) : (
         filteredLessons.map((lesson) => {
           const localStatus =
             localStatusByLesson[lesson.id] ?? ("not_started" as LessonStatus);
-          const isLocked = lesson.status === "locked";
-
           return (
-            <article
+            <LessonCard
               key={lesson.id}
-              className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:rounded-3xl sm:p-6"
-            >
-              <div className="flex flex-wrap items-start justify-between gap-3">
-                <div className="min-w-0 flex-1">
-                  <p className="text-xs font-medium text-emerald-600">
-                    Хичээл {lesson.id}
-                  </p>
-                  <h3 className="mt-0.5 text-lg font-semibold leading-snug text-slate-900">
-                    {lesson.title}
-                  </h3>
-                  <p className="text-base text-slate-700">{lesson.chineseTitle}</p>
-                </div>
-                <div className="flex flex-wrap gap-2">
-                  {isLocked ? (
-                    <span className="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-500 ring-1 ring-slate-200">
-                      {contentStatusLabel(lesson.status)}
-                    </span>
-                  ) : (
-                    <span className={localStatusBadgeClass(localStatus)}>
-                      {localStatusLabel(localStatus)}
-                    </span>
-                  )}
-                </div>
-              </div>
-
-              {lesson.subtitle ? (
-                <p className="mt-2 text-sm font-medium text-slate-700">
-                  {lesson.subtitle}
-                </p>
-              ) : null}
-
-              <div className="mt-4 flex flex-wrap gap-2 text-xs text-slate-600">
-                <span className="rounded-lg bg-slate-50 px-2.5 py-1 ring-1 ring-slate-200">
-                  {lesson.duration}
-                </span>
-                <span className="rounded-lg bg-slate-50 px-2.5 py-1 ring-1 ring-slate-200">
-                  {lesson.vocabularyCount} үг
-                </span>
-                <span className="rounded-lg bg-slate-50 px-2.5 py-1 ring-1 ring-slate-200">
-                  {lesson.quizCount} quiz
-                </span>
-              </div>
-
-              <div className="mt-4 flex justify-end">
-                {isLocked ? (
-                  <button
-                    type="button"
-                    disabled
-                    className="min-h-[44px] cursor-not-allowed rounded-full bg-slate-100 px-5 py-2 text-sm font-semibold text-slate-400"
-                  >
-                    Түгжээтэй
-                  </button>
-                ) : (
-                  <Link href={lessonPath(lesson.id)} className={ctaPrimaryClass}>
-                    {actionButtonLabel(lesson.status, localStatus)}
-                  </Link>
-                )}
-              </div>
-            </article>
+              lesson={lesson}
+              localStatus={localStatus}
+            />
           );
         })
       )}
     </div>
   );
 }
+
+/** @deprecated Use CourseLessonList */
+export const Hsk5LessonList = CourseLessonList;

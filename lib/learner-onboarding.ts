@@ -171,7 +171,7 @@ export const PREFERRED_COURSE_OPTIONS: {
   id: PreferredCourseId;
   label: string;
 }[] = [
-  { id: "hsk5", label: "HSK 5 上" },
+  { id: "hsk5", label: "HSK 5" },
   { id: "korean-1", label: "Korean · 한글" },
   { id: "korean-survival", label: "Ажилд явах Korean" },
 ];

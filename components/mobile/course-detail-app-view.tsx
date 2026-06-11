@@ -4,7 +4,7 @@ import Link from "next/link";
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
 import { MobileCard } from "@/components/mobile/mobile-card";
 import { MobilePageHeader } from "@/components/mobile/mobile-page-header";
-import { Hsk5LessonList } from "@/app/courses/hsk5/hsk5-lesson-list";
+import { CourseLessonList } from "@/app/courses/hsk5/hsk5-lesson-list";
 import { courseCardAccentClass, courseChipBadge } from "@/lib/course-display";
 
 type Props = {
@@ -70,7 +70,7 @@ export function CourseDetailAppView({
             </p>
           </MobileCard>
         ) : (
-          <Hsk5LessonList lessons={lessons} />
+          <CourseLessonList lessons={lessons} />
         )}
       </section>
     </MobileAppShell>
