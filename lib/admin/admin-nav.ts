@@ -153,6 +153,9 @@ export function resolveAdminPageTitle(pathname: string): string {
   if (pathname.includes("/admin/lessons/") && pathname.includes("/edit")) {
     return "Edit Lesson";
   }
+  if (pathname.includes("/admin/lessons/") && pathname.includes("/teacher")) {
+    return "Багшийн давхарга";
+  }
   if (pathname.startsWith("/admin/activity")) return "Activity Log";
   if (pathname.startsWith("/admin/tasks")) return "Task Center";
   if (pathname.startsWith("/admin/analytics")) return "Analytics";

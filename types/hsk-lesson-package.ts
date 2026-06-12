@@ -111,12 +111,27 @@ export interface HskPackageTextSentence {
   pinyin: string;
   tokens: HskPackageTextToken[];
   mn: string;
+  note?: string;
+  key_structures?: string[];
+  /** true when JSON provided tokens[] — enables per-word tap in reader */
+  word_tap?: boolean;
+}
+
+export interface HskPackageTextReflection {
+  questions_mn?: string[];
+}
+
+export interface HskPackageParagraphSummary {
+  paragraph: number;
+  mn: string;
 }
 
 export interface HskPackageShortText {
   id: number;
   audio?: string;
   sentences: HskPackageTextSentence[];
+  paragraph_summaries?: HskPackageParagraphSummary[];
+  reflection?: HskPackageTextReflection;
 }
 
 export interface HskPackageGrammarExample {
@@ -125,7 +140,27 @@ export interface HskPackageGrammarExample {
   mn: string;
 }
 
-export interface HskPackageGrammarPoint {
+/** Optional teacher-overlay fields (grammar, wordExplanation, etc.). */
+export interface HskTeacherCommonMistake {
+  wrong: string;
+  right: string;
+  why?: string;
+}
+
+export interface HskTeacherCheckQuiz {
+  question: string;
+  options: string[];
+  answer: string;
+}
+
+export interface HskTeacherOverlayFields {
+  structure?: string;
+  teacher_notes?: string;
+  common_mistakes?: HskTeacherCommonMistake[];
+  check?: HskTeacherCheckQuiz;
+}
+
+export interface HskPackageGrammarPoint extends HskTeacherOverlayFields {
   point: string;
   gloss_mn: string;
   teacher_mn: string;
@@ -152,6 +187,8 @@ export interface HskLessonPackage {
   texts?: HskPackageShortText[];
   pronunciation?: unknown;
   grammar?: HskPackageGrammarPoint[];
+  /** HSK5 wordExplanation items — same overlay UI as grammar when present. */
+  word_explanation?: HskPackageGrammarPoint[];
   exercises_textbook?: unknown;
   exercises_workbook?: unknown;
   recap?: unknown;

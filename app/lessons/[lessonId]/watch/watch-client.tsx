@@ -4,7 +4,7 @@ import { useRouter } from "next/navigation";
 import nextDynamic from "next/dynamic";
 import { AdminPreviewBanner } from "@/components/admin-preview-banner";
 import PhoneFrame from "@/components/layout/PhoneFrame";
-import LessonPlayer from "@/components/lesson/LessonPlayer";
+import LessonPathPlayer from "@/components/lesson/lesson-path-player";
 import { ExamLessonWatchClient } from "@/components/lesson/exam-lesson-watch";
 import { TextbookLessonWatchClient } from "@/components/lesson/textbook-lesson-watch";
 import { VideoLessonWatchClient } from "@/components/lesson/video-lesson-watch";
@@ -12,6 +12,7 @@ import { isHskStructuredLesson } from "@/lib/lesson/hsk-lesson-content";
 import { resolveLessonContentType } from "@/lib/lesson-content-type";
 import type { HskLessonPackage } from "@/types/hsk-lesson-package";
 import type { LessonContent } from "@/types/lesson-content";
+import type { QuizQuestion } from "@/types/lesson";
 
 const HskGuidedLessonPlayer = nextDynamic(
   () =>
@@ -30,17 +31,27 @@ const HskGuidedLessonPlayer = nextDynamic(
 type Props = {
   lesson: LessonContent;
   lessonPackage?: HskLessonPackage | null;
+  quizQuestions?: QuizQuestion[];
+  useDatabaseQuizOptions?: boolean;
   adminPreview?: boolean;
   nextLessonId?: string | null;
 };
 
 function SchemaLessonWatchPlayer({
   lessonId,
+  lesson,
   lessonPackage,
+  quizQuestions = [],
+  useDatabaseQuizOptions = false,
+  nextLessonId = null,
   adminPreview = false,
 }: {
   lessonId: string;
+  lesson: LessonContent;
   lessonPackage: HskLessonPackage;
+  quizQuestions?: QuizQuestion[];
+  useDatabaseQuizOptions?: boolean;
+  nextLessonId?: string | null;
   adminPreview?: boolean;
 }) {
   const router = useRouter();
@@ -49,9 +60,14 @@ function SchemaLessonWatchPlayer({
     <PhoneFrame>
       <div className="bs-app-shell-inner">
         {adminPreview ? <AdminPreviewBanner /> : null}
-        <LessonPlayer
+        <LessonPathPlayer
           lessonId={lessonId}
           lesson={lessonPackage}
+          lessonContent={lesson}
+          quizQuestions={quizQuestions}
+          useDatabaseQuizOptions={useDatabaseQuizOptions}
+          nextLessonId={nextLessonId}
+          adminPreview={adminPreview}
           onExit={() => router.back()}
         />
       </div>
@@ -62,6 +78,8 @@ function SchemaLessonWatchPlayer({
 export function LessonWatchClient({
   lesson,
   lessonPackage = null,
+  quizQuestions = [],
+  useDatabaseQuizOptions = false,
   adminPreview = false,
   nextLessonId = null,
 }: Props) {
@@ -69,7 +87,11 @@ export function LessonWatchClient({
     return (
       <SchemaLessonWatchPlayer
         lessonId={lesson.id}
+        lesson={lesson}
         lessonPackage={lessonPackage}
+        quizQuestions={quizQuestions}
+        useDatabaseQuizOptions={useDatabaseQuizOptions}
+        nextLessonId={nextLessonId}
         adminPreview={adminPreview}
       />
     );

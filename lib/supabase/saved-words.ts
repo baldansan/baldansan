@@ -29,6 +29,14 @@ export type HskWordLookup = {
   is_function_word: boolean;
 };
 
+export type HskWordDisplay = {
+  id: number;
+  pinyin: string | null;
+  meaning_mn: string | null;
+  radical: string | null;
+  is_function_word: boolean;
+};
+
 export type BichlegWordStatus = {
   saved: boolean;
   inCatalog: boolean;
@@ -62,6 +70,96 @@ export async function lookupHskWordIdBySimplified(
 ): Promise<number | null> {
   const row = await lookupHskWordBySimplified(zh);
   return row?.id ?? null;
+}
+
+export async function lookupHskWordDisplayBySimplified(
+  zh: string
+): Promise<HskWordDisplay | null> {
+  if (!supabase || !hasSupabaseConfig) return null;
+  const trimmed = zh.trim();
+  if (!trimmed) return null;
+
+  const { data, error } = await supabase
+    .from("hsk_words")
+    .select("id, pinyin, meaning_mn, radical, is_function_word")
+    .eq("simplified", trimmed)
+    .limit(1)
+    .maybeSingle();
+
+  if (error || !data) return null;
+  return {
+    id: data.id as number,
+    pinyin: (data.pinyin as string | null) ?? null,
+    meaning_mn: (data.meaning_mn as string | null) ?? null,
+    radical: (data.radical as string | null) ?? null,
+    is_function_word: Boolean(data.is_function_word),
+  };
+}
+
+export async function saveWordFromBichleg(input: {
+  zh: string;
+  pinyin?: string;
+  mn?: string;
+  sourceVideoId: string;
+}): Promise<SaveWordFromBichlegResult> {
+  return persistUserSavedWord({
+    zh: input.zh,
+    pinyin: input.pinyin,
+    mn: input.mn,
+    sourceVideoId: input.sourceVideoId,
+  });
+}
+
+export async function saveWordFromLesson(input: {
+  zh: string;
+  pinyin?: string;
+  mn?: string;
+}): Promise<SaveWordFromBichlegResult> {
+  return persistUserSavedWord({
+    zh: input.zh,
+    pinyin: input.pinyin,
+    mn: input.mn,
+    sourceVideoId: null,
+  });
+}
+
+export type SaveLessonWordsBatchResult = {
+  ok: boolean;
+  added: number;
+  alreadyHad: number;
+  error?: string;
+};
+
+export async function saveLessonWordsBatch(
+  words: { zh: string; pinyin?: string; mn?: string }[]
+): Promise<SaveLessonWordsBatchResult> {
+  if (!words.length) {
+    return { ok: true, added: 0, alreadyHad: 0 };
+  }
+
+  let added = 0;
+  let alreadyHad = 0;
+  let lastError: string | undefined;
+
+  for (const word of words) {
+    const result = await saveWordFromLesson(word);
+    if (!result.ok) {
+      lastError = result.error;
+      continue;
+    }
+    if (result.duplicate || result.alreadyInSrs) {
+      alreadyHad += 1;
+    } else {
+      added += 1;
+    }
+  }
+
+  return {
+    ok: added > 0 || alreadyHad > 0 || !lastError,
+    added,
+    alreadyHad,
+    error: added === 0 && alreadyHad === 0 ? lastError : undefined,
+  };
 }
 
 export async function userHasWordSrsEntry(
@@ -118,11 +216,11 @@ export async function getBichlegWordStatus(
   };
 }
 
-export async function saveWordFromBichleg(input: {
+async function persistUserSavedWord(input: {
   zh: string;
   pinyin?: string;
   mn?: string;
-  sourceVideoId: string;
+  sourceVideoId?: string | null;
 }): Promise<SaveWordFromBichlegResult> {
   if (!supabase || !hasSupabaseConfig) {
     return { ok: false, error: "Supabase тохируулагдаагүй." };
@@ -152,7 +250,7 @@ export async function saveWordFromBichleg(input: {
           zh,
           pinyin: input.pinyin ?? null,
           mn: input.mn ?? null,
-          source_video_id: input.sourceVideoId,
+          source_video_id: input.sourceVideoId ?? null,
           hsk_word_id: hskWordId,
         },
         { onConflict: "user_id,zh" }
@@ -176,7 +274,7 @@ export async function saveWordFromBichleg(input: {
     zh,
     pinyin: input.pinyin ?? null,
     mn: input.mn ?? null,
-    source_video_id: input.sourceVideoId,
+    source_video_id: input.sourceVideoId ?? null,
     hsk_word_id: hskWordId,
   });
 
