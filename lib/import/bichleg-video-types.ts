@@ -5,6 +5,13 @@ export type RawBichlegWord = {
   key?: boolean;
 };
 
+export type RawBichlegSlangNote = {
+  term?: string;
+  meaning?: string;
+  usage?: string;
+  register?: string;
+};
+
 export type RawBichlegSubtitle = {
   index?: number;
   idx?: number;
@@ -17,6 +24,7 @@ export type RawBichlegSubtitle = {
   pinyin?: string;
   mn?: string;
   words?: RawBichlegWord[];
+  slang_note?: RawBichlegSlangNote;
 };
 
 export type RawBichlegVideo = {
@@ -51,6 +59,13 @@ export type BichlegSubtitleWord = {
   key?: boolean;
 };
 
+export type BichlegSubtitleSlangNote = {
+  term: string;
+  meaning: string;
+  usage: string;
+  register: string;
+};
+
 export type BichlegSubtitlePayload = {
   idx: number;
   startSec: number;
@@ -60,6 +75,7 @@ export type BichlegSubtitlePayload = {
   pinyin: string;
   mn: string;
   words: BichlegSubtitleWord[];
+  slangNote: BichlegSubtitleSlangNote | null;
 };
 
 export type BichlegVideoPayload = {

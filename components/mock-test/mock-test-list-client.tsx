@@ -161,7 +161,11 @@ export function MockTestListClient({
                     <div key={test.id} className="bs-mt-card bs-mt-card--row">
                       <div className="bs-mt-card-body">
                         <Link
-                          href={`/test/${test.id}`}
+                          href={
+                            embedded
+                              ? `/test/${test.id}?from=review`
+                              : `/test/${test.id}?from=test`
+                          }
                           className="block no-underline text-inherit"
                         >
                           <div className="bs-mt-card-head">
@@ -204,7 +208,11 @@ export function MockTestListClient({
                         ) : null}
                       </div>
                       <Link
-                        href={`/test/${test.id}`}
+                        href={
+                          embedded
+                            ? `/test/${test.id}?from=review`
+                            : `/test/${test.id}?from=test`
+                        }
                         className="bs-mt-play-btn"
                         aria-label={`${test.id} эхлүүлэх`}
                       >

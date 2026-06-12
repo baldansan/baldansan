@@ -189,6 +189,7 @@ async function importOneVideo(
     pinyin: s.pinyin,
     mn: s.mn,
     words: s.words,
+    slang_note: s.slangNote ?? null,
   }));
 
   if (rows.length) {

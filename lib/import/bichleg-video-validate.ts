@@ -1,3 +1,4 @@
+import { mapSlangNote } from "@/lib/bichleg/map-subtitle";
 import type {
   BichlegFileValidation,
   BichlegSeriesPayload,
@@ -216,6 +217,8 @@ export function validateBichlegVideoJson(
       Number.isFinite(start) &&
       Number.isFinite(end)
     ) {
+      const slangNote = row.slang_note ? mapSlangNote(row.slang_note) : null;
+
       subtitles.push({
         idx,
         startSec: start,
@@ -225,6 +228,7 @@ export function validateBichlegVideoJson(
         pinyin: row.pinyin.trim(),
         mn: row.mn.trim(),
         words,
+        slangNote,
       });
     }
   }

@@ -5,6 +5,13 @@ export type SubtitleWord = {
   key?: boolean;
 };
 
+export type SubtitleSlangNote = {
+  term: string;
+  meaning: string;
+  usage: string;
+  register: string;
+};
+
 export type VideoSeriesInfo = {
   id: string;
   title_zh: string | null;
@@ -50,6 +57,7 @@ export type VideoSubtitleRow = {
   pinyin: string | null;
   mn: string | null;
   words: SubtitleWord[] | null;
+  slang_note: SubtitleSlangNote | null;
 };
 
 export type SubtitleDisplayMode =

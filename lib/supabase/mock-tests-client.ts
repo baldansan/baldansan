@@ -1,9 +1,17 @@
-import type { MockTestScoreResult } from "@/lib/mock-test/types";
+import {
+  toAttemptScoreMetadata,
+  type HskScoreBreakdown,
+  type WritingSelfGrade,
+} from "@/lib/mock-test/hsk-scoring";
+import type { MockTestExamMode, MockTestScoreResult } from "@/lib/mock-test/types";
 import { hasSupabaseConfig, supabase } from "@/lib/supabase/client";
 
 export async function saveCheckpointAttempt(
   testId: string,
-  scored: MockTestScoreResult
+  scored: MockTestScoreResult,
+  hsk: HskScoreBreakdown,
+  examMode: MockTestExamMode,
+  writingGrades: Record<number, WritingSelfGrade> = {}
 ): Promise<{ ok: boolean; error?: string }> {
   if (!supabase || !hasSupabaseConfig) {
     return { ok: false, error: "Supabase тохируулагдаагүй." };
@@ -17,16 +25,19 @@ export async function saveCheckpointAttempt(
     return { ok: false, error: "Нэвтрээгүй хэрэглэгч." };
   }
 
+  const metadata = toAttemptScoreMetadata(hsk, writingGrades);
+
   const { data: attempt, error: attemptErr } = await supabase
     .from("user_test_attempts")
     .insert({
       user_id: user.id,
       test_id: testId,
-      mode: "checkpoint",
+      mode: examMode,
       status: "completed",
       finished_at: new Date().toISOString(),
-      raw_score: scored.rawScore,
-      max_score: scored.maxScore,
+      raw_score: hsk.totalScore,
+      max_score: hsk.maxTotal,
+      score_metadata: metadata,
     })
     .select("id")
     .single();

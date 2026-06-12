@@ -1,5 +1,9 @@
+export type MockTestExamMode = "real" | "practice";
+
 export type MockTestSection = {
   skill: string;
+  /** Per-section time budget (minutes). Falls back to HSK-level defaults. */
+  time_min?: number;
   audio_url?: string | null;
   parts?: Array<{
     part: number;

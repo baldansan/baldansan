@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef } from "react";
+import { formatCorrectAnswer } from "@/lib/mock-test/format-answer";
 import type {
   MockOption,
   MockTestAnswers,
@@ -13,6 +14,7 @@ type Props = {
   onAnswer: (qNo: number, value: string) => void;
   showResults?: boolean;
   resultCorrect?: boolean | null;
+  hideQuestionAudio?: boolean;
 };
 
 const LONG_TEXT_TYPES = new Set([
@@ -78,12 +80,45 @@ function StemBlock({ question }: { question: MockTestQuestionRow }) {
   );
 }
 
+function ResultExtras({
+  question,
+  showResults,
+  resultCorrect,
+  hideCorrectLine = false,
+}: {
+  question: MockTestQuestionRow;
+  showResults: boolean;
+  resultCorrect: boolean | null;
+  hideCorrectLine?: boolean;
+}) {
+  if (!showResults) return null;
+
+  const showCorrect =
+    !hideCorrectLine &&
+    question.correct_answer &&
+    (resultCorrect === false || question.autograde === "manual");
+
+  return (
+    <>
+      {showCorrect ? (
+        <p className="bs-mt-correct-line hanzi">
+          Зөв хариулт: {formatCorrectAnswer(question)}
+        </p>
+      ) : null}
+      {question.explanation_mn ? (
+        <p className="bs-mt-explain">{question.explanation_mn}</p>
+      ) : null}
+    </>
+  );
+}
+
 export function MockTestQuestion({
   question,
   answers,
   onAnswer,
   showResults = false,
   resultCorrect = null,
+  hideQuestionAudio = false,
 }: Props) {
   const key = String(question.q_no);
   const value = answers[key] ?? "";
@@ -97,7 +132,9 @@ export function MockTestQuestion({
           showResults={showResults}
           resultCorrect={resultCorrect}
         />
-        {question.audio_url ? <QuestionAudio url={question.audio_url} /> : null}
+        {!hideQuestionAudio && question.audio_url ? (
+          <QuestionAudio url={question.audio_url} />
+        ) : null}
         <StemBlock question={question} />
         <div className="bs-mt-option-grid bs-mt-option-grid--judge">
           {[
@@ -115,6 +152,11 @@ export function MockTestQuestion({
             </button>
           ))}
         </div>
+        <ResultExtras
+          question={question}
+          showResults={showResults}
+          resultCorrect={resultCorrect}
+        />
       </div>
     );
   }
@@ -149,9 +191,11 @@ export function MockTestQuestion({
           placeholder="Хариултаа энд бичнэ үү…"
           onChange={(e) => onAnswer(question.q_no, e.target.value)}
         />
-        {showResults && question.autograde === "manual" ? (
-          <p className="bs-mt-explain">AI дүгнэлт хүлээгдэж байна.</p>
-        ) : null}
+        <ResultExtras
+          question={question}
+          showResults={showResults}
+          resultCorrect={resultCorrect}
+        />
       </div>
     );
   }
@@ -173,9 +217,11 @@ export function MockTestQuestion({
           placeholder="Хариулт…"
           onChange={(e) => onAnswer(question.q_no, e.target.value)}
         />
-        {showResults && question.correct_answer ? (
-          <p className="bs-mt-correct-line hanzi">Зөв: {question.correct_answer}</p>
-        ) : null}
+        <ResultExtras
+          question={question}
+          showResults={showResults}
+          resultCorrect={resultCorrect}
+        />
       </div>
     );
   }
@@ -202,6 +248,11 @@ export function MockTestQuestion({
             </option>
           ))}
         </select>
+        <ResultExtras
+          question={question}
+          showResults={showResults}
+          resultCorrect={resultCorrect}
+        />
       </div>
     );
   }
@@ -249,6 +300,11 @@ export function MockTestQuestion({
             onPick={(k) => onAnswer(question.q_no, k)}
           />
         )}
+        <ResultExtras
+          question={question}
+          showResults={showResults}
+          resultCorrect={resultCorrect}
+        />
       </div>
     );
   }
@@ -260,13 +316,20 @@ export function MockTestQuestion({
         showResults={showResults}
         resultCorrect={resultCorrect}
       />
-      {question.audio_url ? <QuestionAudio url={question.audio_url} /> : null}
+      {!hideQuestionAudio && question.audio_url ? (
+        <QuestionAudio url={question.audio_url} />
+      ) : null}
       <StemBlock question={question} />
       <TextOptions
         options={options}
         value={value}
         showResults={showResults}
         onPick={(k) => onAnswer(question.q_no, k)}
+      />
+      <ResultExtras
+        question={question}
+        showResults={showResults}
+        resultCorrect={resultCorrect}
       />
     </div>
   );
@@ -360,9 +423,11 @@ function OrderQuestion({
           Дахин эхлэх
         </button>
       ) : null}
-      {showResults && question.correct_answer ? (
-        <p className="bs-mt-correct-line">Зөв: {question.correct_answer}</p>
-      ) : null}
+      <ResultExtras
+        question={question}
+        showResults={showResults}
+        resultCorrect={resultCorrect}
+      />
     </div>
   );
 }

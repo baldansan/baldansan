@@ -5,8 +5,10 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { AppShell } from "@/components/app/app-shell";
 import { BottomNavChrome } from "@/components/mobile/bottom-nav-chrome";
 import { SHELL_MAIN_NARROW } from "@/lib/app-shell-classes";
+import { BichlegSlangSheet } from "@/components/bichleg/bichleg-slang-sheet";
 import {
   formatSeriesEpisodeBadge,
+  type SubtitleSlangNote,
   type SubtitleWord,
   type UserVideoProgress,
   type VideoRow,
@@ -153,6 +155,10 @@ export function BichlegFeedClient({
   const [bookmarked, setBookmarked] = useState<Record<string, boolean>>({});
   const [showKeys, setShowKeys] = useState(false);
   const [pickedWord, setPickedWord] = useState<PickedWord | null>(null);
+  const [pickedSlangNote, setPickedSlangNote] = useState<SubtitleSlangNote | null>(
+    null
+  );
+  const [slangSubtitleIdx, setSlangSubtitleIdx] = useState<number | null>(null);
   const [wordStatus, setWordStatus] = useState<BichlegWordStatus | null>(null);
   const [statusLoading, setStatusLoading] = useState(false);
   const [toast, setToast] = useState<string | null>(null);
@@ -415,11 +421,35 @@ export function BichlegFeedClient({
     }
   }
 
+  function resumePlayback() {
+    runOnPlayer((player) => player.playVideo());
+  }
+
+  function pausePlayback() {
+    runOnPlayer((player) => player.pauseVideo());
+  }
+
   function handleWordPick(word: SubtitleWord) {
     if (!activeVideo) return;
-    runOnPlayer((player) => player.pauseVideo());
+    pausePlayback();
+    setPickedSlangNote(null);
+    setSlangSubtitleIdx(null);
     setWordStatus(null);
     setPickedWord({ ...word, sourceVideoId: activeVideo.id });
+  }
+
+  function handleSlangOpen(note: SubtitleSlangNote) {
+    pausePlayback();
+    setPickedWord(null);
+    setWordStatus(null);
+    setPickedSlangNote(note);
+    setSlangSubtitleIdx(activeSubtitle?.idx ?? null);
+  }
+
+  function handleSlangClose() {
+    setPickedSlangNote(null);
+    setSlangSubtitleIdx(null);
+    resumePlayback();
   }
 
   useEffect(() => {
@@ -443,8 +473,17 @@ export function BichlegFeedClient({
   function handleContinue() {
     setPickedWord(null);
     setWordStatus(null);
-    runOnPlayer((player) => player.playVideo());
+    resumePlayback();
   }
+
+  useEffect(() => {
+    if (!pickedSlangNote || slangSubtitleIdx == null) return;
+    if (activeSubtitle?.idx !== slangSubtitleIdx) {
+      setPickedSlangNote(null);
+      setSlangSubtitleIdx(null);
+      resumePlayback();
+    }
+  }, [activeSubtitle?.idx, pickedSlangNote, slangSubtitleIdx]);
 
   async function handleSaveWord() {
     if (!pickedWord || wordStatus?.inSrs) return;
@@ -470,7 +509,7 @@ export function BichlegFeedClient({
       }
       setPickedWord(null);
       setWordStatus(null);
-      runOnPlayer((player) => player.playVideo());
+      resumePlayback();
     } else if (result.error) {
       setToast(result.error);
     }
@@ -575,16 +614,28 @@ export function BichlegFeedClient({
 
                 {isActive && activeSubtitle ? (
                   <div className="bs-bichleg-subs">
-                    <div className="bs-bichleg-subs-panel">
-                      {activeSubtitle.speaker ? (
-                        <p className="bs-bl-speaker">{activeSubtitle.speaker}</p>
-                      ) : null}
-                      {showPinyin && activeSubtitle.pinyin ? (
-                        <p className="bs-bl-pinyin">{activeSubtitle.pinyin}</p>
-                      ) : null}
-                      {activeSubtitle.zh ? renderZh(activeSubtitle) : null}
-                      {showMn && activeSubtitle.mn ? (
-                        <p className="bs-bl-mn">{activeSubtitle.mn}</p>
+                    <div className="bs-bichleg-subs-row">
+                      <div className="bs-bichleg-subs-panel">
+                        {activeSubtitle.speaker ? (
+                          <p className="bs-bl-speaker">{activeSubtitle.speaker}</p>
+                        ) : null}
+                        {showPinyin && activeSubtitle.pinyin ? (
+                          <p className="bs-bl-pinyin">{activeSubtitle.pinyin}</p>
+                        ) : null}
+                        {activeSubtitle.zh ? renderZh(activeSubtitle) : null}
+                        {showMn && activeSubtitle.mn ? (
+                          <p className="bs-bl-mn">{activeSubtitle.mn}</p>
+                        ) : null}
+                      </div>
+                      {activeSubtitle.slang_note ? (
+                        <button
+                          type="button"
+                          className="bs-bl-slang-badge"
+                          aria-label="Залуусын хэллэг"
+                          onClick={() => handleSlangOpen(activeSubtitle.slang_note!)}
+                        >
+                          💬
+                        </button>
                       ) : null}
                     </div>
                   </div>
@@ -688,6 +739,10 @@ export function BichlegFeedClient({
         <div className="absolute inset-x-0 bottom-0 z-50 px-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] pt-2 lg:hidden">
           <BottomNavChrome active="clips" />
         </div>
+
+        {pickedSlangNote ? (
+          <BichlegSlangSheet note={pickedSlangNote} onClose={handleSlangClose} />
+        ) : null}
 
         {pickedWord ? (
           <div className="bs-bichleg-sheet-backdrop" onClick={handleContinue}>

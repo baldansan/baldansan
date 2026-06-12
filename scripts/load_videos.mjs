@@ -114,6 +114,7 @@ async function loadFile(supabase, filePath) {
     pinyin: s.pinyin ?? null,
     mn: s.mn ?? null,
     words: s.words ?? null,
+    slang_note: s.slang_note ?? null,
   }));
 
   if (rows.length) {

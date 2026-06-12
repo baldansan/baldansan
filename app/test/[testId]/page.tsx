@@ -9,6 +9,7 @@ import {
 
 type Props = {
   params: Promise<{ testId: string }>;
+  searchParams: Promise<{ from?: string }>;
 };
 
 export async function generateMetadata({ params }: Props) {
@@ -17,8 +18,13 @@ export async function generateMetadata({ params }: Props) {
   return { title: test?.title ?? `Шалгалт ${testId}` };
 }
 
-export default async function TestExamPage({ params }: Props) {
+function resolveReturnTo(from?: string) {
+  return from === "review" ? "/review/tests" : "/test";
+}
+
+export default async function TestExamPage({ params, searchParams }: Props) {
   const { testId } = await params;
+  const { from } = await searchParams;
   const test = await fetchMockTestById(testId);
   if (!test) notFound();
 
@@ -29,11 +35,14 @@ export default async function TestExamPage({ params }: Props) {
     collectTargetLessonIds(questions)
   );
 
+  const returnTo = resolveReturnTo(from);
+
   return (
     <MockTestExamClient
       test={test}
       questions={questions}
       lessonTitles={lessonTitles}
+      returnTo={returnTo}
     />
   );
 }

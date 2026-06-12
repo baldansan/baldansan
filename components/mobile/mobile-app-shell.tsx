@@ -8,6 +8,7 @@ type Props = {
   activeTab?: MobileNavTab | BottomNavTab;
   showBottomNav?: boolean;
   immersive?: boolean;
+  hideSidebar?: boolean;
   mainClassName?: string;
 };
 
