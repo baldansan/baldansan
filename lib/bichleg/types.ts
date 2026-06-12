@@ -34,7 +34,9 @@ export type VideoRow = {
   source_url: string | null;
   hsk_level: number | null;
   duration_sec: number | null;
+  /** @deprecated Import legacy — prefer subtitle_offset_sec. */
   sync_offset_sec: number;
+  subtitle_offset_sec: number;
   tags: string[];
   series_id: string | null;
   episode_no: number | null;

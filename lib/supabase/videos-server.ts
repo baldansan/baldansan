@@ -54,6 +54,9 @@ function mapVideo(raw: Record<string, unknown>): VideoRow {
     hsk_level: raw.hsk_level != null ? Number(raw.hsk_level) : null,
     duration_sec: raw.duration_sec != null ? Number(raw.duration_sec) : null,
     sync_offset_sec: Number(raw.sync_offset_sec ?? 0),
+    subtitle_offset_sec: Number(
+      raw.subtitle_offset_sec ?? raw.sync_offset_sec ?? 0
+    ),
     tags: Array.isArray(raw.tags) ? raw.tags.map(String) : [],
     series_id: raw.series_id ? String(raw.series_id) : null,
     episode_no: raw.episode_no != null ? Number(raw.episode_no) : null,

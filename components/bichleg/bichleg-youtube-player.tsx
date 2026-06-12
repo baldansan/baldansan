@@ -11,6 +11,7 @@ type Props = {
   youtubeId: string;
   onPlayerChange: (player: YtPlayer | null) => void;
   onReady?: () => void;
+  onStateChange?: (state: number) => void;
 };
 
 /** YouTube mount node lives outside React's tree to avoid iframe replace/unmount conflicts. */
@@ -18,6 +19,7 @@ export function BichlegYouTubePlayer({
   youtubeId,
   onPlayerChange,
   onReady,
+  onStateChange,
 }: Props) {
   const wrapperRef = useRef<HTMLDivElement>(null);
   const mountNodeRef = useRef<HTMLDivElement | null>(null);
@@ -26,10 +28,12 @@ export function BichlegYouTubePlayer({
 
   const onPlayerChangeRef = useRef(onPlayerChange);
   const onReadyRef = useRef(onReady);
+  const onStateChangeRef = useRef(onStateChange);
 
   useEffect(() => {
     onPlayerChangeRef.current = onPlayerChange;
     onReadyRef.current = onReady;
+    onStateChangeRef.current = onStateChange;
   });
 
   useEffect(() => {
@@ -59,6 +63,10 @@ export function BichlegYouTubePlayer({
       onReady: () => {
         if (cancelled || generation !== generationRef.current) return;
         onReadyRef.current?.();
+      },
+      onStateChange: (state) => {
+        if (cancelled || generation !== generationRef.current) return;
+        onStateChangeRef.current?.(state);
       },
     })
       .then((player) => {

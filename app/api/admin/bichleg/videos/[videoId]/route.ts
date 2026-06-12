@@ -29,9 +29,12 @@ export async function PATCH(request: Request, context: RouteContext) {
     );
   }
 
-  let body: { sync_offset_sec?: number };
+  let body: { subtitle_offset_sec?: number; sync_offset_sec?: number };
   try {
-    body = (await request.json()) as { sync_offset_sec?: number };
+    body = (await request.json()) as {
+      subtitle_offset_sec?: number;
+      sync_offset_sec?: number;
+    };
   } catch {
     return NextResponse.json(
       { ok: false, error: "JSON бие буруу." },
@@ -39,17 +42,17 @@ export async function PATCH(request: Request, context: RouteContext) {
     );
   }
 
-  const offset = Number(body.sync_offset_sec);
+  const offset = Number(body.subtitle_offset_sec ?? body.sync_offset_sec);
   if (!Number.isFinite(offset)) {
     return NextResponse.json(
-      { ok: false, error: "sync_offset_sec тоо байх ёстой." },
+      { ok: false, error: "subtitle_offset_sec тоо байх ёстой." },
       { status: 400 }
     );
   }
 
   const { error } = await clientOrResponse
     .from("videos")
-    .update({ sync_offset_sec: offset })
+    .update({ subtitle_offset_sec: offset })
     .eq("id", id);
 
   if (error) {
@@ -62,7 +65,7 @@ export async function PATCH(request: Request, context: RouteContext) {
   revalidateBichlegPages();
   revalidatePath("/admin/bichleg");
 
-  return NextResponse.json({ ok: true, sync_offset_sec: offset });
+  return NextResponse.json({ ok: true, subtitle_offset_sec: offset });
 }
 
 export async function DELETE(_request: Request, context: RouteContext) {
