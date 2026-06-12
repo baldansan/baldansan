@@ -70,6 +70,63 @@
   margin-bottom: 8px;
 }
 
+.bs-txt-reader-controls {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.bs-txt-ctrl-btn {
+  min-height: 36px;
+  padding: 0 14px;
+  border: 1px solid var(--bs-line);
+  border-radius: 999px;
+  background: #fff;
+  font-family: var(--bs-ui);
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--bs-ink-2);
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.bs-txt-ctrl-btn--on {
+  background: var(--bs-green-50);
+  color: var(--bs-green-700);
+  border-color: var(--bs-green-100);
+}
+
+.bs-txt-word {
+  font-family: var(--bs-zh);
+  font-size: 21px;
+  font-weight: 600;
+  color: var(--bs-ink);
+  background: none;
+  border: none;
+  border-bottom: 1px dashed transparent;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  line-height: 1.35;
+  transition: color 0.12s ease, border-color 0.12s ease;
+}
+
+.bs-txt-word:hover,
+.bs-txt-word:active {
+  color: var(--bs-green-800, #0f7338);
+  border-bottom-color: var(--bs-green, #10b981);
+}
+
+.bs-word-sheet-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  display: flex;
+  align-items: flex-end;
+  background: rgba(0, 0, 0, 0.45);
+}
+
 .bs-txt-body {
   position: relative;
   overflow: visible;

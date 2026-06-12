@@ -9,6 +9,7 @@ import {
 } from "@/lib/content";
 import { isHskStructuredLesson } from "@/lib/lesson/hsk-lesson-content";
 import { resolveHskLessonPackageFromLesson } from "@/lib/lesson/resolve-hsk-lesson-package";
+import { loadLessonQuizQuestionsForPage } from "@/lib/lesson/quiz-page-loader";
 import { toLessonListSummary } from "@/lib/lesson/lesson-summary";
 import { LessonWatchClient } from "./watch-client";
 
@@ -57,18 +58,27 @@ export default async function LessonWatchPage({
     ? resolveHskLessonPackageFromLesson(lesson)
     : null;
 
-  let nextLessonId: string | null = null;
-  if (isHskStructuredLesson(lesson) && !lessonPackage) {
-    const courseLessons = adminPreview
-      ? (await getLessonsByCourseId(lesson.courseId)).map(toLessonListSummary)
-      : await getPublicLessonSummariesByCourseId(lesson.courseId);
-    nextLessonId = findNextLessonId(lesson.id, courseLessons);
+  const courseLessons = adminPreview
+    ? (await getLessonsByCourseId(lesson.courseId)).map(toLessonListSummary)
+    : await getPublicLessonSummariesByCourseId(lesson.courseId);
+  const nextLessonId = findNextLessonId(lesson.id, courseLessons);
+
+  let quizQuestions: Awaited<
+    ReturnType<typeof loadLessonQuizQuestionsForPage>
+  >["questions"] = [];
+  let useDatabaseQuizOptions = false;
+  if (lessonPackage) {
+    const quizData = await loadLessonQuizQuestionsForPage(lessonId, lesson);
+    quizQuestions = quizData.questions;
+    useDatabaseQuizOptions = quizData.fromDatabase;
   }
 
   return (
     <LessonWatchClient
       lesson={lesson}
       lessonPackage={lessonPackage}
+      quizQuestions={quizQuestions}
+      useDatabaseQuizOptions={useDatabaseQuizOptions}
       adminPreview={adminPreview}
       nextLessonId={nextLessonId}
     />

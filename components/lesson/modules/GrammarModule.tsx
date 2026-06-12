@@ -10,7 +10,12 @@ import type {
   HskLessonPackage,
   HskPackageGrammarPoint,
 } from "@/types/hsk-lesson-package";
+import {
+  TeacherOverlayFields,
+  TeacherStructureBlock,
+} from "./teacher-overlay-fields";
 import "./grammar-module.css";
+import "./teacher-overlay.css";
 
 type Speed = 0.5 | 0.75 | 1;
 const SPEEDS: Speed[] = [0.5, 0.75, 1];
@@ -22,7 +27,10 @@ export default function GrammarModule({
   lesson: HskLessonPackage;
   onDone: () => void;
 }) {
-  const points: HskPackageGrammarPoint[] = lesson.grammar ?? [];
+  const points: HskPackageGrammarPoint[] = [
+    ...(lesson.grammar ?? []),
+    ...(lesson.word_explanation ?? []),
+  ];
 
   const [gi, setGi] = useState(0); // аль дүрэм
   const [speed, setSpeed] = useState<Speed>(1);
@@ -110,10 +118,17 @@ export default function GrammarModule({
 
       {/* Дүрмийн загвар + богино утга */}
       <div className="bs-gr-point">{point.point}</div>
+      {point.structure ? <TeacherStructureBlock structure={point.structure} /> : null}
       {point.gloss_mn && <div className="bs-gr-gloss">{point.gloss_mn}</div>}
 
       {/* Багшийн тайлбар */}
       {point.teacher_mn && <div className="bs-gr-teacher">{point.teacher_mn}</div>}
+
+      <TeacherOverlayFields
+        teacher_notes={point.teacher_notes}
+        common_mistakes={point.common_mistakes}
+        check={point.check}
+      />
 
       {/* Жишээнүүд */}
       {examples.length > 0 && (

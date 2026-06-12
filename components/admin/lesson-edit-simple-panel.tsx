@@ -155,6 +155,12 @@ export function LessonEditSimplePanel({
 
         <div className="flex shrink-0 flex-wrap gap-2">
           <Link
+            href={`/admin/lessons/${lesson.id}/teacher`}
+            className="inline-flex rounded-full border border-slate-200 px-5 py-2.5 text-sm font-semibold text-slate-700 transition-colors hover:border-emerald-200 hover:text-emerald-700"
+          >
+            Багшийн давхарга
+          </Link>
+          <Link
             href={lessonPreviewPath(lesson.id, {
               adminPreview: publishStatus !== "available",
             })}
