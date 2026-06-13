@@ -1,3 +1,5 @@
+import type { MockTestSkill } from "@/lib/mock-test/section-timing";
+import { parseMockTestSkill } from "@/lib/mock-test/section-timing";
 import type { MockTestAnswers, MockTestExamMode } from "@/lib/mock-test/types";
 
 const STORAGE_PREFIX = "bs:mock-exam:";
@@ -6,7 +8,7 @@ export type MockExamSavedProgress = {
   testId: string;
   examMode: MockTestExamMode;
   answers: MockTestAnswers;
-  skill: string;
+  skill: MockTestSkill;
   currentQNo: number;
   secondsLeft: number;
   sectionTotalSeconds: number;
@@ -26,7 +28,11 @@ export function getMockExamProgress(testId: string): MockExamSavedProgress | nul
   try {
     const raw = window.localStorage.getItem(storageKey(testId));
     if (!raw) return null;
-    return JSON.parse(raw) as MockExamSavedProgress;
+    const parsed = JSON.parse(raw) as MockExamSavedProgress;
+    return {
+      ...parsed,
+      skill: parseMockTestSkill(parsed.skill),
+    };
   } catch {
     return null;
   }

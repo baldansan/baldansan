@@ -3,18 +3,20 @@
 import { useMemo, useState } from "react";
 import "@/components/lesson/modules/exercises-module.css";
 import { countMockExamAnswered } from "@/lib/mock-test/exam-progress";
+import type { MockTestSkill } from "@/lib/mock-test/section-timing";
+import { parseMockTestSkill } from "@/lib/mock-test/section-timing";
 import { SKILL_LABELS_MN, type MockTestAnswers, type MockTestExamMode, type MockTestQuestionRow, type MockTestRow } from "@/lib/mock-test/types";
 
 type Props = {
   test: MockTestRow;
   questions: MockTestQuestionRow[];
-  skills: string[];
+  skills: MockTestSkill[];
   examMode: MockTestExamMode;
   previewAnswers: MockTestAnswers;
   canContinue: boolean;
   onFreshStart: () => void;
   onContinue: () => void;
-  onJumpToQuestion: (skill: string, qNo: number) => void;
+  onJumpToQuestion: (skill: MockTestSkill, qNo: number) => void;
 };
 
 export function MockTestExamOverview({
@@ -28,7 +30,9 @@ export function MockTestExamOverview({
   onContinue,
   onJumpToQuestion,
 }: Props) {
-  const [activeSkill, setActiveSkill] = useState(skills[0] ?? "listening");
+  const [activeSkill, setActiveSkill] = useState<MockTestSkill>(
+    skills[0] ?? "listening"
+  );
 
   const answeredCount = useMemo(
     () => countMockExamAnswered(previewAnswers),
@@ -128,7 +132,12 @@ export function MockTestExamOverview({
                 type="button"
                 className={cls}
                 aria-label={`Асуулт ${question.q_no}`}
-                onClick={() => onJumpToQuestion(question.skill, question.q_no)}
+                onClick={() =>
+                  onJumpToQuestion(
+                    parseMockTestSkill(question.skill, activeSkill),
+                    question.q_no
+                  )
+                }
               >
                 {question.q_no}
               </button>

@@ -30,9 +30,11 @@ import {
 } from "@/lib/mock-test/hsk-scoring";
 import {
   orderedSkillsForTest,
+  parseMockTestSkill,
   resolveSectionTimeMinutes,
   sectionQuestionCount,
   totalRealExamMinutes,
+  type MockTestSkill,
 } from "@/lib/mock-test/section-timing";
 import { scoreMockTestAttempt } from "@/lib/mock-test/scoring";
 import {
@@ -95,7 +97,7 @@ export function MockTestExamClient({
 
   const [phase, setPhase] = useState<Phase>("intro");
   const [examMode, setExamMode] = useState<MockTestExamMode>("practice");
-  const [skill, setSkill] = useState(skills[0] ?? "listening");
+  const [skill, setSkill] = useState<MockTestSkill>(skills[0] ?? "listening");
   const [currentQNo, setCurrentQNo] = useState(questions[0]?.q_no ?? 1);
   const [answers, setAnswers] = useState<MockTestAnswers>({});
   const [secondsLeft, setSecondsLeft] = useState(test.time_limit_min * 60);
@@ -385,7 +387,7 @@ export function MockTestExamClient({
     if (!saved) return;
     setAnswers(saved.answers);
     overviewPreviewRef.current = saved.answers;
-    setSkill(saved.skill);
+    setSkill(parseMockTestSkill(saved.skill, skills[0] ?? "listening"));
     setCurrentQNo(saved.currentQNo);
     setSectionTotalSeconds(saved.sectionTotalSeconds);
     setSecondsLeft(saved.secondsLeft);
@@ -411,7 +413,7 @@ export function MockTestExamClient({
     setPhase("exam");
   }
 
-  function jumpToQuestionFromOverview(skillKey: string, qNo: number) {
+  function jumpToQuestionFromOverview(skillKey: MockTestSkill, qNo: number) {
     skipOverviewPersistRef.current = true;
     const saved = getMockExamProgress(test.id);
     if (saved && saved.examMode === examMode) {
