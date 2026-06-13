@@ -1,10 +1,11 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import type {
   HskPackageParagraphSummary,
   HskPackageShortText,
   HskPackageTextSentence,
+  HskPackageTextToken,
   HskPackageVocabItem,
 } from "@/types/hsk-lesson-package";
 import {
@@ -13,6 +14,7 @@ import {
   type WordTapPayload,
 } from "@/components/lesson/word-tap-sheet";
 import { MnGrammarTermText } from "@/components/lesson/mn-grammar-term-text";
+import { coalesceSentenceTokens } from "@/lib/lesson/coalesce-text-tokens";
 import { playChineseWordAudio } from "@/lib/tts/play-chinese-word-audio";
 import {
   loadTextReaderShowMn,
@@ -43,7 +45,8 @@ type Props = {
 };
 
 export function LiveTextReader({ text, vocabulary = [] }: Props) {
-  const vocabByZh = buildVocabMap(vocabulary);
+  const vocabByZh = useMemo(() => buildVocabMap(vocabulary), [vocabulary]);
+  const vocabWords = useMemo(() => [...vocabByZh.keys()], [vocabByZh]);
   const sentences: HskPackageTextSentence[] = text.sentences ?? [];
 
   const [showPinyin, setShowPinyin] = useState(true);
@@ -99,63 +102,49 @@ export function LiveTextReader({ text, vocabulary = [] }: Props) {
     setWordTapAnchor(null);
   }
 
-  function renderLegacySentence(sentence: HskPackageTextSentence, si: number) {
-    const hasNote =
-      Boolean(sentence.note?.trim()) ||
-      (sentence.key_structures?.length ?? 0) > 0;
-    const noteOpen = openNotes.has(si);
+  function renderToken(
+    tok: HskPackageTextToken,
+    ti2: number,
+    allowNonVocabTap: boolean
+  ) {
+    const vocab = vocabByZh.get(tok.zh);
+    const isLessonWord = Boolean(vocab);
+    const py = tok.py || (isLessonWord ? vocab!.pinyin : "");
+    const tappable = isLessonWord || allowNonVocabTap;
 
     return (
-      <div
-        key={si}
-        className={`bs-txt-sentence${hasNote ? " bs-txt-sentence--noted" : ""}`}
-      >
-        <div className="bs-txt-ruby-line">
-          {sentence.tokens.map((tok, ti2) => {
-            const vocab = vocabByZh.get(tok.zh);
-            const isLessonWord = Boolean(vocab);
-            const py = tok.py || (isLessonWord ? vocab!.pinyin : "");
-            return (
-              <span key={ti2} className="bs-txt-unit">
-                {showPinyin && py ? (
-                  <span className="bs-txt-py-above">{py}</span>
-                ) : showPinyin ? (
-                  <span className="bs-txt-py-above bs-txt-py-empty" aria-hidden>
-                    &nbsp;
-                  </span>
-                ) : null}
-                {isLessonWord ? (
-                  <button
-                    type="button"
-                    className="bs-newword"
-                    onClick={(e) =>
-                      pickWord(tok.zh, py || vocab!.pinyin, e.currentTarget)
-                    }
-                  >
-                    {tok.zh}
-                  </button>
-                ) : (
-                  <span className="bs-txt-zh-char">{tok.zh}</span>
-                )}
-              </span>
-            );
-          })}
-        </div>
-        {showMn && sentence.mn ? (
-          <div className="bs-txt-mn-line">
-            <MnGrammarTermText text={sentence.mn} />
-          </div>
+      <span key={ti2} className="bs-txt-unit">
+        {showPinyin && py ? (
+          <span className="bs-txt-py-above">{py}</span>
+        ) : showPinyin ? (
+          <span className="bs-txt-py-above bs-txt-py-empty" aria-hidden>
+            &nbsp;
+          </span>
         ) : null}
-        {renderSentenceNote(sentence, si, hasNote, noteOpen)}
-      </div>
+        {tappable ? (
+          <button
+            type="button"
+            className={isLessonWord ? "bs-newword" : "bs-txt-word"}
+            onClick={(e) =>
+              pickWord(tok.zh, py || vocab?.pinyin, e.currentTarget)
+            }
+          >
+            {tok.zh}
+          </button>
+        ) : (
+          <span className="bs-txt-zh-char">{tok.zh}</span>
+        )}
+      </span>
     );
   }
 
-  function renderTappableSentence(sentence: HskPackageTextSentence, si: number) {
+  function renderSentence(sentence: HskPackageTextSentence, si: number) {
     const hasNote =
       Boolean(sentence.note?.trim()) ||
       (sentence.key_structures?.length ?? 0) > 0;
     const noteOpen = openNotes.has(si);
+    const tokens = coalesceSentenceTokens(sentence, vocabWords);
+    const allowNonVocabTap = Boolean(sentence.word_tap);
 
     return (
       <div
@@ -163,27 +152,9 @@ export function LiveTextReader({ text, vocabulary = [] }: Props) {
         className={`bs-txt-sentence${hasNote ? " bs-txt-sentence--noted" : ""}`}
       >
         <div className="bs-txt-ruby-line">
-          {sentence.tokens.map((tok, ti2) => {
-            const py = tok.py || vocabByZh.get(tok.zh)?.pinyin || "";
-            return (
-              <span key={ti2} className="bs-txt-unit">
-                {showPinyin && py ? (
-                  <span className="bs-txt-py-above">{py}</span>
-                ) : showPinyin ? (
-                  <span className="bs-txt-py-above bs-txt-py-empty" aria-hidden>
-                    &nbsp;
-                  </span>
-                ) : null}
-                <button
-                  type="button"
-                  className="bs-txt-word"
-                  onClick={(e) => pickWord(tok.zh, py, e.currentTarget)}
-                >
-                  {tok.zh}
-                </button>
-              </span>
-            );
-          })}
+          {tokens.map((tok, ti2) =>
+            renderToken(tok, ti2, allowNonVocabTap)
+          )}
         </div>
         {showMn && sentence.mn ? (
           <div className="bs-txt-mn-line">
@@ -291,11 +262,7 @@ export function LiveTextReader({ text, vocabulary = [] }: Props) {
 
       <div className="bs-txt-body">
         <div className="bs-txt-sentences">
-          {sentences.map((sentence, si) =>
-            sentence.word_tap
-              ? renderTappableSentence(sentence, si)
-              : renderLegacySentence(sentence, si)
-          )}
+          {sentences.map((sentence, si) => renderSentence(sentence, si))}
         </div>
 
         {(text.paragraph_summaries?.length ?? 0) > 0

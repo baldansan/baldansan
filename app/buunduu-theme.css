@@ -610,6 +610,29 @@ body{
 .bs-mt-chip-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
 .bs-mt-chip{min-height:36px;border:1px solid var(--bs-line);border-radius:10px;background:#fff;padding:6px 12px;font-size:14px;font-weight:700;cursor:pointer}
 .bs-mt-chip--used{opacity:.35}
+.bs-mt-sentence-order{margin-top:4px}
+.bs-mt-sentence-build{display:flex;flex-wrap:wrap;gap:8px;min-height:48px;margin-top:10px;padding:10px 12px;border:1px dashed var(--bs-line);border-radius:12px;background:#fafcfb}
+.bs-mt-sentence-ph{font-size:13px;color:var(--bs-muted)}
+.bs-mt-chip--built{border-color:var(--bs-green);background:var(--bs-green-50)}
+.bs-mt-sentence-pool{margin-top:12px}
+.bs-mt-sentence-actions{display:flex;align-items:center;gap:12px;margin-top:12px}
+.bs-mt-sentence-check{min-height:40px;padding:0 18px;border:none;border-radius:12px;background:var(--bs-green);font-size:14px;font-weight:800;color:#fff;cursor:pointer}
+.bs-mt-sentence-check:disabled{opacity:.45;cursor:not-allowed}
+.bs-mt-sentence-feedback{margin-top:12px;padding:12px;border-radius:12px;font-size:14px;font-weight:700;line-height:1.5}
+.bs-mt-sentence-feedback--ok{color:var(--bs-green-800,#0f7338);background:var(--bs-green-50);border:1px solid var(--bs-green-100)}
+.bs-mt-sentence-feedback--bad{color:#b42318;background:#fdecec;border:1px solid #f0b4b4}
+.bs-mt-sentence-next{width:100%;min-height:44px;margin-top:12px}
+.bs-mt-overview{padding-top:8px}
+.bs-mt-overview-title{margin:0;font-size:22px;font-weight:900;color:var(--bs-ink)}
+.bs-mt-overview-sub{margin:6px 0 0;font-size:13px;color:var(--bs-muted)}
+.bs-mt-overview-sections{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:12px}
+.bs-mt-overview-section{display:flex;flex-direction:column;align-items:flex-start;gap:4px;padding:10px 12px;border:1px solid var(--bs-line);border-radius:12px;background:#fff;text-align:left;cursor:pointer}
+.bs-mt-overview-section--active{border-color:var(--bs-green);background:var(--bs-green-50)}
+.bs-mt-overview-section-label{font-size:12px;font-weight:800;color:var(--bs-ink)}
+.bs-mt-overview-section-meta{font-size:11px;font-weight:700;color:var(--bs-muted)}
+.bs-mt-overview-skill-tabs{margin-top:12px}
+.bs-mt-overview-secondary{display:block;min-height:44px;border:1px solid var(--bs-line);border-radius:12px;background:#fff;font-size:14px;font-weight:800;color:var(--bs-ink);cursor:pointer}
+.bs-mt-overview-secondary:disabled{opacity:.45;cursor:not-allowed}
 .bs-mt-link-btn{margin-top:8px;border:none;background:none;font-size:12px;font-weight:700;color:var(--bs-green-700);cursor:pointer}
 .bs-mt-correct-line{margin:8px 0 0;font-size:13px;font-weight:700;color:var(--bs-green-700)}
 .bs-mt-explain{margin:6px 0 0;font-size:12px;color:var(--bs-muted);line-height:1.45}

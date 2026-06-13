@@ -1,7 +1,12 @@
 "use client";
 
 import { useRef } from "react";
+import { MockTestSentenceOrder } from "@/components/mock-test/mock-test-sentence-order";
 import { formatCorrectAnswer } from "@/lib/mock-test/format-answer";
+import {
+  isMockSentenceOrderQuestion,
+  parseSentenceOrderTokens,
+} from "@/lib/mock-test/sentence-order";
 import type {
   MockOption,
   MockTestAnswers,
@@ -15,6 +20,7 @@ type Props = {
   showResults?: boolean;
   resultCorrect?: boolean | null;
   hideQuestionAudio?: boolean;
+  onAdvanceNext?: () => void;
 };
 
 const LONG_TEXT_TYPES = new Set([
@@ -119,6 +125,7 @@ export function MockTestQuestion({
   showResults = false,
   resultCorrect = null,
   hideQuestionAudio = false,
+  onAdvanceNext,
 }: Props) {
   const key = String(question.q_no);
   const value = answers[key] ?? "";
@@ -201,6 +208,36 @@ export function MockTestQuestion({
   }
 
   if (question.q_type === "complete" || question.q_type === "fill_char") {
+    if (isMockSentenceOrderQuestion(question)) {
+      const tokens = parseSentenceOrderTokens(question);
+      return (
+        <div className="bs-mt-question">
+          <QuestionHeader
+            question={question}
+            showResults={showResults}
+            resultCorrect={resultCorrect}
+          />
+          <MockTestSentenceOrder
+            question={question}
+            tokens={tokens}
+            value={value}
+            onAnswer={(next) => onAnswer(question.q_no, next)}
+            showResults={showResults}
+            resultCorrect={resultCorrect}
+            onAdvanceNext={onAdvanceNext}
+          />
+          {showResults ? (
+            <ResultExtras
+              question={question}
+              showResults={showResults}
+              resultCorrect={resultCorrect}
+              hideCorrectLine
+            />
+          ) : null}
+        </div>
+      );
+    }
+
     return (
       <div className="bs-mt-question">
         <QuestionHeader

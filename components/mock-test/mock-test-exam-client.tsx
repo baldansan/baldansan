@@ -2,8 +2,9 @@
 
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { useCallback, useEffect, useMemo, useState, type ReactNode } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import { MockTestAnswerSheet } from "@/components/mock-test/mock-test-answer-sheet";
+import { MockTestExamOverview } from "@/components/mock-test/mock-test-exam-overview";
 import { MockTestExitDialog } from "@/components/mock-test/mock-test-exit-dialog";
 import { MockTestListeningAudioOnce } from "@/components/mock-test/mock-test-listening-audio-once";
 import { MockTestQuestion } from "@/components/mock-test/mock-test-question";
@@ -11,6 +12,12 @@ import { MockTestResultView } from "@/components/mock-test/mock-test-result-view
 import { MockTestSectionReady } from "@/components/mock-test/mock-test-section-ready";
 import { MockTestWritingGrade } from "@/components/mock-test/mock-test-writing-grade";
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
+import {
+  clearMockExamProgress,
+  getMockExamProgress,
+  hasMockExamSavedProgress,
+  saveMockExamProgress,
+} from "@/lib/mock-test/exam-progress";
 import {
   buildRandomMockTestAnswers,
   isMockTestDevToolsEnabled,
@@ -45,7 +52,7 @@ import {
   saveCheckpointAttempt,
 } from "@/lib/supabase/mock-tests-client";
 
-type Phase = "intro" | "section_ready" | "exam" | "writing_grade" | "result";
+type Phase = "intro" | "overview" | "section_ready" | "exam" | "writing_grade" | "result";
 
 type Props = {
   test: MockTestRow;
@@ -107,6 +114,11 @@ export function MockTestExamClient({
   const [completedLessonIds, setCompletedLessonIds] = useState<Set<string>>(
     () => new Set()
   );
+  const overviewPreviewRef = useRef<MockTestAnswers>({});
+  const skipOverviewPersistRef = useRef(false);
+  const [overviewPreviewAnswers, setOverviewPreviewAnswers] = useState<MockTestAnswers>(
+    {}
+  );
 
   const sectionMeta = useMemo(
     () => test.sections.find((section) => section.skill === skill),
@@ -142,7 +154,10 @@ export function MockTestExamClient({
   );
 
   const isExamFullscreen =
-    phase === "section_ready" || phase === "exam" || phase === "writing_grade";
+    phase === "overview" ||
+    phase === "section_ready" ||
+    phase === "exam" ||
+    phase === "writing_grade";
 
   const finalizeResult = useCallback(
     async (
@@ -161,6 +176,7 @@ export function MockTestExamClient({
       setHskBreakdown(hsk);
       setPhase("result");
       setShowUnansweredPrompt(false);
+      clearMockExamProgress(test.id);
 
       const save = await saveCheckpointAttempt(
         test.id,
@@ -276,6 +292,28 @@ export function MockTestExamClient({
     setAnswers((prev) => ({ ...prev, [String(qNo)]: value }));
   }
 
+  useEffect(() => {
+    if (phase !== "exam") return;
+    saveMockExamProgress({
+      testId: test.id,
+      examMode,
+      answers,
+      skill,
+      currentQNo,
+      secondsLeft,
+      sectionTotalSeconds,
+    });
+  }, [
+    phase,
+    test.id,
+    examMode,
+    answers,
+    skill,
+    currentQNo,
+    secondsLeft,
+    sectionTotalSeconds,
+  ]);
+
   function selectQuestion(qNo: number) {
     setCurrentQNo(qNo);
     if (!isRealMode) {
@@ -293,6 +331,13 @@ export function MockTestExamClient({
     selectQuestion(next.q_no);
   }
 
+  function advanceFromQuestion(qNo: number) {
+    const index = skillQuestions.findIndex((item) => item.q_no === qNo);
+    const next = skillQuestions[index + 1];
+    if (!next) return;
+    selectQuestion(next.q_no);
+  }
+
   function confirmExitExam() {
     setShowExitDialog(false);
     router.push(returnTo);
@@ -300,19 +345,96 @@ export function MockTestExamClient({
 
   function beginExam(mode: MockTestExamMode) {
     setExamMode(mode);
+    setShowUnansweredPrompt(false);
+    const saved = getMockExamProgress(test.id);
+    const preview =
+      saved && saved.examMode === mode ? saved.answers : {};
+    overviewPreviewRef.current = preview;
+    setOverviewPreviewAnswers(preview);
+    setPhase("overview");
+  }
+
+  function resetExamStateForFreshStart() {
+    clearMockExamProgress(test.id);
+    overviewPreviewRef.current = {};
+    setOverviewPreviewAnswers({});
     setAnswers({});
+    setWritingGrades({});
+    setResult(null);
+    setHskBreakdown(null);
+    setSaveNote(null);
     setShowUnansweredPrompt(false);
     setSkill(skills[0] ?? "listening");
+    const firstQ = questions.find((q) => q.skill === (skills[0] ?? "listening"))?.q_no
+      ?? questions[0]?.q_no
+      ?? 1;
+    setCurrentQNo(firstQ);
+    if (examMode === "real") {
+      const mins = resolveSectionTimeMinutes(test, skills[0] ?? "listening");
+      const total = mins * 60;
+      setSectionTotalSeconds(total);
+      setSecondsLeft(total);
+    } else {
+      const total = test.time_limit_min * 60;
+      setSectionTotalSeconds(total);
+      setSecondsLeft(total);
+    }
+  }
 
-    if (mode === "real") {
+  function applySavedExamProgress(saved: ReturnType<typeof getMockExamProgress>) {
+    if (!saved) return;
+    setAnswers(saved.answers);
+    overviewPreviewRef.current = saved.answers;
+    setSkill(saved.skill);
+    setCurrentQNo(saved.currentQNo);
+    setSectionTotalSeconds(saved.sectionTotalSeconds);
+    setSecondsLeft(saved.secondsLeft);
+  }
+
+  function startExamFresh() {
+    resetExamStateForFreshStart();
+    if (examMode === "real") {
       setPhase("section_ready");
       return;
     }
-
-    setSecondsLeft(test.time_limit_min * 60);
-    setSectionTotalSeconds(test.time_limit_min * 60);
     setPhase("exam");
   }
+
+  function continueExam() {
+    const saved = getMockExamProgress(test.id);
+    if (!saved || saved.examMode !== examMode) return;
+    applySavedExamProgress(saved);
+    if (examMode === "real") {
+      setPhase("exam");
+      return;
+    }
+    setPhase("exam");
+  }
+
+  function jumpToQuestionFromOverview(skillKey: string, qNo: number) {
+    skipOverviewPersistRef.current = true;
+    const saved = getMockExamProgress(test.id);
+    if (saved && saved.examMode === examMode) {
+      applySavedExamProgress(saved);
+    } else {
+      setAnswers(overviewPreviewRef.current);
+    }
+    setSkill(skillKey);
+    setCurrentQNo(qNo);
+    if (examMode === "real") {
+      const mins = resolveSectionTimeMinutes(test, skillKey);
+      const total = mins * 60;
+      setSectionTotalSeconds(total);
+      if (!saved || saved.skill !== skillKey) {
+        setSecondsLeft(total);
+      }
+      setPhase("exam");
+      return;
+    }
+    setPhase("exam");
+  }
+
+  const canContinueFromOverview = hasMockExamSavedProgress(test.id, examMode);
 
   function requestFinishSection() {
     if (!isRealMode) {
@@ -448,6 +570,25 @@ export function MockTestExamClient({
           </button>
         ) : null}
       </div>
+    );
+  }
+
+  if (phase === "overview") {
+    return shell(
+      examChrome(
+        <MockTestExamOverview
+          test={test}
+          questions={questions}
+          skills={skills}
+          examMode={examMode}
+          previewAnswers={overviewPreviewAnswers}
+          canContinue={canContinueFromOverview}
+          onFreshStart={startExamFresh}
+          onContinue={continueExam}
+          onJumpToQuestion={jumpToQuestionFromOverview}
+        />
+      ),
+      { immersive: true, hideSidebar: true }
     );
   }
 
@@ -590,6 +731,11 @@ export function MockTestExamClient({
               answers={answers}
               onAnswer={setAnswer}
               hideQuestionAudio={hideQuestionAudio}
+              onAdvanceNext={
+                currentQuestionIndex < skillQuestions.length - 1
+                  ? () => goToQuestionOffset(1)
+                  : undefined
+              }
             />
             <div className="bs-mt-q-nav">
               <button
@@ -621,6 +767,7 @@ export function MockTestExamClient({
                 answers={answers}
                 onAnswer={setAnswer}
                 hideQuestionAudio={hideQuestionAudio}
+                onAdvanceNext={() => advanceFromQuestion(question.q_no)}
               />
             </div>
           ))

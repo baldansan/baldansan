@@ -28,6 +28,7 @@ export type BsQuizStepProgress = BsStepProgressMeta & {
   correctCount: number;
   answeredCount: number;
   finished: boolean;
+  resultsByIndex?: Record<string, "ok" | "no">;
 };
 
 export type BsGroupAnswerSnapshot = {
@@ -108,6 +109,23 @@ export function saveBsQuizProgress(
 
 export function clearBsQuizProgress(lessonId: string): void {
   clearBsStepProgress(lessonId, "quiz");
+}
+
+export function hasBsQuizSavedProgress(lessonId: string): boolean {
+  const saved = getBsQuizProgress(lessonId);
+  if (!saved) return false;
+  if (saved.finished || saved.completed) return false;
+  return (
+    saved.currentIndex > 0 ||
+    (saved.answeredCount ?? 0) > 0 ||
+    Object.keys(saved.resultsByIndex ?? {}).length > 0
+  );
+}
+
+export function countQuizAnswered(progress: BsQuizStepProgress): number {
+  const fromResults = Object.keys(progress.resultsByIndex ?? {}).length;
+  if (fromResults > 0) return fromResults;
+  return Math.max(progress.answeredCount ?? 0, progress.currentIndex);
 }
 
 /* ---------- Exercises ---------- */
