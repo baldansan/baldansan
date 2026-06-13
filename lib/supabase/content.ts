@@ -169,7 +169,16 @@ function parseOptions(options: unknown): string[] {
 }
 
 function parseQuizType(type: string): QuizQuestionType {
-  return type === "cloze" ? "cloze" : "multiple_choice";
+  const normalized = type.trim().toLowerCase().replace(/\s+/g, "_");
+  if (normalized === "cloze" || normalized === "cloze_blank") return "cloze";
+  if (
+    normalized === "sentence_order" ||
+    normalized === "sentenceorder" ||
+    normalized === "order_sentence"
+  ) {
+    return "sentence_order";
+  }
+  return "multiple_choice";
 }
 
 function mapDbQuizRowsToQuestions(

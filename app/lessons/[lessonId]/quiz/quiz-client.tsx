@@ -33,6 +33,11 @@ import {
 } from "@/lib/progress";
 import { buildQuizDetailedAnswer, type QuizDetailedAnswer } from "@/lib/quiz-answers";
 import { prepareLessonQuizQuestions } from "@/lib/quiz/smart-options";
+import {
+  gradeQuizSentenceOrder,
+  isQuizSentenceOrderQuestion,
+} from "@/lib/quiz/sentence-order";
+import { LessonQuizSentenceOrder } from "@/components/lesson/lesson-quiz-sentence-order";
 import { SpeakerButton } from "@/components/tts/speaker-button";
 import { containsTargetScript } from "@/lib/tts/infer-lang";
 import { resolveKoreanTtsLang } from "@/lib/lesson/teaching-media";
@@ -88,7 +93,14 @@ export function LessonQuizClient({
   const feedbackRef = useRef<HTMLDivElement>(null);
 
   const current = quizQuestions[currentIndex];
-  const isCorrect = selected === current?.correctAnswer;
+  const currentIsSentenceOrder = current
+    ? isQuizSentenceOrderQuestion(current)
+    : false;
+  const isCorrect = current
+    ? currentIsSentenceOrder
+      ? gradeQuizSentenceOrder(current, selected ?? "")
+      : selected === current.correctAnswer
+    : false;
   const ttsLang = resolveKoreanTtsLang(lesson);
   const isLesson0 = isKoreanLesson0BeginnerFlow(lesson);
 
@@ -175,8 +187,8 @@ export function LessonQuizClient({
     void save();
   }, [finished, lesson.id, correctCount, total, percent, answerDetails]);
 
-  function handleSelect(option: string) {
-    if (!current || revealed) return;
+  function recordAnswer(option: string) {
+    if (!current) return;
     setSelected(option);
     setRevealed(true);
     const orderIndex = current.orderIndex ?? currentIndex;
@@ -184,7 +196,10 @@ export function LessonQuizClient({
       ...prev,
       buildQuizDetailedAnswer(current, orderIndex, option),
     ]);
-    if (option === current.correctAnswer) {
+    const correct = isQuizSentenceOrderQuestion(current)
+      ? gradeQuizSentenceOrder(current, option)
+      : option === current.correctAnswer;
+    if (correct) {
       setCorrectCount((c) => c + 1);
       const wordKey = matchVocabularyWordKeyFromAnswer(
         current.correctAnswer,
@@ -192,6 +207,16 @@ export function LessonQuizClient({
       );
       if (wordKey) recordStudiedWordKey(lesson.id, wordKey);
     }
+  }
+
+  function handleSelect(option: string) {
+    if (!current || revealed) return;
+    recordAnswer(option);
+  }
+
+  function handleSentenceOrderCheck(answer: string) {
+    if (!current || revealed) return;
+    recordAnswer(answer);
   }
 
   function handleNext() {
@@ -408,6 +433,19 @@ export function LessonQuizClient({
             </div>
 
             <SectionCard>
+              {currentIsSentenceOrder ? (
+                <LessonQuizSentenceOrder
+                  question={current}
+                  index={currentIndex}
+                  total={total}
+                  selected={selected}
+                  revealed={revealed}
+                  ttsLang={ttsLang}
+                  courseId={lesson.courseId}
+                  onChecked={handleSentenceOrderCheck}
+                />
+              ) : (
+                <>
               <p className="text-xs font-medium uppercase tracking-wide text-slate-500">
                 {current.type === "cloze" ? "Нөхөх" : "Сонгох"}
               </p>
@@ -496,6 +534,8 @@ export function LessonQuizClient({
                     </div>
                   )}
                 </div>
+              )}
+                </>
               )}
 
               {revealed && (

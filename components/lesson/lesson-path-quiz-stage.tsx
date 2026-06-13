@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { LessonQuizSentenceOrder } from "@/components/lesson/lesson-quiz-sentence-order";
 import { LessonStepQuiz } from "@/components/lesson-player/lesson-step-quiz";
 import "@/components/lesson/modules/exercises-module.css";
 import {
@@ -12,6 +13,10 @@ import {
   type BsQuizStepProgress,
 } from "@/lib/lesson/bs-step-progress";
 import { prepareLessonQuizQuestions } from "@/lib/quiz/smart-options";
+import {
+  gradeQuizSentenceOrder,
+  isQuizSentenceOrderQuestion,
+} from "@/lib/quiz/sentence-order";
 import { resolveKoreanTtsLang } from "@/lib/lesson/teaching-media";
 import type { LessonContent } from "@/types/lesson-content";
 import type { QuizQuestion } from "@/types/lesson";
@@ -146,6 +151,17 @@ export function LessonPathQuizStage({
   }
 
   const current = quizQuestions[currentIndex];
+  const currentIsSentenceOrder = current
+    ? isQuizSentenceOrderQuestion(current)
+    : false;
+
+  function isAnswerCorrect(question: QuizQuestion, answer: string | null): boolean {
+    if (!answer) return false;
+    if (isQuizSentenceOrderQuestion(question)) {
+      return gradeQuizSentenceOrder(question, answer);
+    }
+    return answer === question.correctAnswer;
+  }
 
   function handleSelect(option: string) {
     if (revealed || finished) return;
@@ -153,14 +169,20 @@ export function LessonPathQuizStage({
     setRevealed(true);
   }
 
+  function handleSentenceOrderCheck(answer: string) {
+    if (revealed || finished) return;
+    setSelected(answer);
+    setRevealed(true);
+  }
+
   function handleNextQuestion() {
     if (!revealed || !current) return;
-    const gained = selected === current.correctAnswer ? 1 : 0;
+    const gained = isAnswerCorrect(current, selected) ? 1 : 0;
     const nextCorrect = correctCount + gained;
     const resultKey = String(currentIndex);
     const nextResults: Record<string, "ok" | "no"> = {
       ...resultsByIndex,
-      [resultKey]: selected === current.correctAnswer ? "ok" : "no",
+      [resultKey]: isAnswerCorrect(current, selected) ? "ok" : "no",
     };
     setResultsByIndex(nextResults);
 
@@ -304,16 +326,29 @@ export function LessonPathQuizStage({
 
   return (
     <div className="bs-path-quiz">
-      <LessonStepQuiz
-        question={current}
-        index={currentIndex}
-        total={total}
-        selected={selected}
-        revealed={revealed}
-        ttsLang={ttsLang}
-        courseId={lesson.courseId}
-        onSelect={handleSelect}
-      />
+      {currentIsSentenceOrder ? (
+        <LessonQuizSentenceOrder
+          question={current}
+          index={currentIndex}
+          total={total}
+          selected={selected}
+          revealed={revealed}
+          ttsLang={ttsLang}
+          courseId={lesson.courseId}
+          onChecked={handleSentenceOrderCheck}
+        />
+      ) : (
+        <LessonStepQuiz
+          question={current}
+          index={currentIndex}
+          total={total}
+          selected={selected}
+          revealed={revealed}
+          ttsLang={ttsLang}
+          courseId={lesson.courseId}
+          onSelect={handleSelect}
+        />
+      )}
       {revealed ? (
         <button
           type="button"
