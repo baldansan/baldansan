@@ -8,6 +8,7 @@ import type {
   HskPackageVocabItem,
 } from "@/types/hsk-lesson-package";
 import { WordTapSheet, type WordTapPayload } from "@/components/lesson/word-tap-sheet";
+import { MnGrammarTermText } from "@/components/lesson/mn-grammar-term-text";
 import { playChineseWordAudio } from "@/lib/tts/play-chinese-word-audio";
 import {
   loadTextReaderShowMn,
@@ -120,7 +121,9 @@ export function LiveTextReader({ text, vocabulary = [] }: Props) {
           })}
         </div>
         {showMn && sentence.mn ? (
-          <div className="bs-txt-mn-line">{sentence.mn}</div>
+          <div className="bs-txt-mn-line">
+            <MnGrammarTermText text={sentence.mn} />
+          </div>
         ) : null}
         {renderSentenceNote(sentence, si, hasNote, noteOpen)}
       </div>
@@ -162,7 +165,9 @@ export function LiveTextReader({ text, vocabulary = [] }: Props) {
           })}
         </div>
         {showMn && sentence.mn ? (
-          <div className="bs-txt-mn-line">{sentence.mn}</div>
+          <div className="bs-txt-mn-line">
+            <MnGrammarTermText text={sentence.mn} />
+          </div>
         ) : null}
         {renderSentenceNote(sentence, si, hasNote, noteOpen)}
       </div>
@@ -197,7 +202,11 @@ export function LiveTextReader({ text, vocabulary = [] }: Props) {
         </button>
         {noteOpen ? (
           <div className="bs-txt-note-panel">
-            {sentence.note ? <p>{sentence.note}</p> : null}
+            {sentence.note ? (
+              <p>
+                <MnGrammarTermText text={sentence.note} />
+              </p>
+            ) : null}
             {(sentence.key_structures?.length ?? 0) > 0 ? (
               <div className="bs-txt-note-chips">
                 {sentence.key_structures!.map((chip) => (
@@ -224,7 +233,9 @@ export function LiveTextReader({ text, vocabulary = [] }: Props) {
               className="bs-txt-summary-item"
             >
               <span className="bs-txt-summary-num">{item.paragraph}.</span>
-              <span>{item.mn}</span>
+              <span>
+                <MnGrammarTermText text={item.mn} />
+              </span>
             </li>
           ))}
         </ol>
@@ -276,7 +287,7 @@ export function LiveTextReader({ text, vocabulary = [] }: Props) {
             <ul className="bs-txt-reflect-list">
               {text.reflection!.questions_mn!.map((q, i) => (
                 <li key={i} className="bs-txt-reflect-item">
-                  {q}
+                  <MnGrammarTermText text={q} />
                 </li>
               ))}
             </ul>

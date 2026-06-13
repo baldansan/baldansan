@@ -70,6 +70,25 @@
   color: #92400e;
 }
 
+.bs-ex-overview-hint {
+  margin: 10px 0 0;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--bs-muted);
+}
+
+.bs-ex-overview-nav {
+  max-height: none;
+  margin-top: 12px;
+}
+
+.bs-ex-overview-status {
+  margin: 12px 0 0;
+  font-size: 13px;
+  color: var(--bs-ink-2);
+  font-weight: 600;
+}
+
 /* Сонсголын аудио мөр */
 .bs-ex-audiobar {
   display: flex;

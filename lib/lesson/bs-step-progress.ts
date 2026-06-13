@@ -9,9 +9,12 @@ export type BsStepId =
   | "quiz"
   | "exercises_workbook"
   | "exercises_textbook"
+  | "exercises_merged"
   | "vocabulary"
   | "words"
   | `module:${string}`;
+
+export type BsExercisesProgressSource = "workbook" | "textbook" | "both";
 
 export type StepProgressStatus = "not_started" | "in_progress" | "completed";
 
@@ -109,29 +112,44 @@ export function clearBsQuizProgress(lessonId: string): void {
 
 /* ---------- Exercises ---------- */
 
+function exercisesProgressStep(source: BsExercisesProgressSource): BsStepId {
+  if (source === "both") return "exercises_merged";
+  return source === "workbook" ? "exercises_workbook" : "exercises_textbook";
+}
+
 export function getBsExercisesProgress(
   lessonId: string,
-  source: "workbook" | "textbook"
+  source: BsExercisesProgressSource
 ): BsExercisesStepProgress | null {
-  const step = source === "workbook" ? "exercises_workbook" : "exercises_textbook";
-  return readRaw<BsExercisesStepProgress>(lessonId, step);
+  return readRaw<BsExercisesStepProgress>(lessonId, exercisesProgressStep(source));
 }
 
 export function saveBsExercisesProgress(
   lessonId: string,
-  source: "workbook" | "textbook",
+  source: BsExercisesProgressSource,
   data: Omit<BsExercisesStepProgress, "updatedAt">
 ): void {
-  const step = source === "workbook" ? "exercises_workbook" : "exercises_textbook";
-  writeRaw(lessonId, step, data);
+  writeRaw(lessonId, exercisesProgressStep(source), data);
 }
 
 export function clearBsExercisesProgress(
   lessonId: string,
-  source: "workbook" | "textbook"
+  source: BsExercisesProgressSource
 ): void {
-  const step = source === "workbook" ? "exercises_workbook" : "exercises_textbook";
-  clearBsStepProgress(lessonId, step);
+  clearBsStepProgress(lessonId, exercisesProgressStep(source));
+  if (source === "both") {
+    clearBsStepProgress(lessonId, "exercises_textbook");
+    clearBsStepProgress(lessonId, "exercises_workbook");
+  }
+}
+
+export function hasBsExercisesSavedProgress(
+  lessonId: string,
+  source: BsExercisesProgressSource
+): boolean {
+  const saved = getBsExercisesProgress(lessonId, source);
+  if (!saved) return false;
+  return saved.done || saved.qi > 0 || countExercisesAnswered(saved) > 0;
 }
 
 export function countExercisesAnswered(progress: BsExercisesStepProgress): number {

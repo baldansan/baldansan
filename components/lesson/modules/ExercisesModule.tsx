@@ -6,12 +6,16 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import {
   clearBsExercisesProgress,
   getBsExercisesProgress,
+  hasBsExercisesSavedProgress,
   markBsModuleCompleted,
   saveBsExercisesProgress,
+  type BsExercisesProgressSource,
+  type BsExercisesStepProgress,
   type BsGroupAnswerSnapshot,
 } from "@/lib/lesson/bs-step-progress";
 import {
   buildExerciseQuestions,
+  buildMergedExerciseQuestions,
   countGradableExerciseQuestions,
   type ExerciseQuestion,
 } from "@/lib/lesson/build-exercise-questions";
@@ -20,6 +24,7 @@ import {
 } from "@/lib/lesson/chinese-sentence-structure";
 import { resolveLessonPackagePlayableUrl } from "@/lib/lesson/package-audio-resolve";
 import type { HskLessonPackage } from "@/types/hsk-lesson-package";
+import { MnGrammarTermText } from "@/components/lesson/mn-grammar-term-text";
 import { SentenceStructureGate } from "./SentenceStructureGate";
 import "./exercises-module.css";
 
@@ -130,7 +135,11 @@ function renderPromptWithSvoHint(text: string) {
         /^S\+V\+O$/i.test(part) ? (
           <span key={i}>
             {part}
-            <span className="bs-ex-svo-hint"> (эзэн + үйл үг + тусагдахуун)</span>
+            <span className="bs-ex-svo-hint">
+              {" "}
+              (
+              <MnGrammarTermText text="эзэн + үйл үг + тусагдахуун" nested />)
+            </span>
           </span>
         ) : (
           <span key={i}>{part}</span>
@@ -140,19 +149,40 @@ function renderPromptWithSvoHint(text: string) {
   );
 }
 
+export type PathExerciseFooterMeta = {
+  visible: boolean;
+  label: string;
+  disabled: boolean;
+  /** `next-exercise` = дасгал дотор урагшлах; `finish-stage` = үе дуусгах */
+  action: "next-exercise" | "finish-stage";
+  onAction: () => void;
+};
+
 export default function ExercisesModule({
   lessonId,
   lesson,
   source,
   onDone,
+  active = true,
+  embeddedInPath = false,
+  onRegisterPathFooter,
 }: {
   lessonId: string;
   lesson: HskLessonPackage;
-  source: "textbook" | "workbook";
+  source: BsExercisesProgressSource;
   onDone: () => void;
+  /** When false, stop audio and skip auto-play (lesson path stage inactive). */
+  active?: boolean;
+  /** Lesson-path stage: show path-safe CTAs and hide standalone «Дараагийнх». */
+  embeddedInPath?: boolean;
+  /** Lesson-path доод товч — дасгал доторх «Дараагийн дасгал» / «Үе дуусгах». */
+  onRegisterPathFooter?: (meta: PathExerciseFooterMeta | null) => void;
 }) {
   const base = lesson.audio_base_path;
-  const questions = useMemo(() => buildExerciseQuestions(lesson, source), [lesson, source]);
+  const questions = useMemo(() => {
+    if (source === "both") return buildMergedExerciseQuestions(lesson);
+    return buildExerciseQuestions(lesson, source);
+  }, [lesson, source]);
   const totalItems = useMemo(() => countGradableItems(questions), [questions]);
   const navEntries = useMemo(() => buildNavEntries(questions), [questions]);
   const firstScrambleQi = useMemo(
@@ -164,6 +194,9 @@ export default function ExercisesModule({
   const [scrambleGatePassed, setScrambleGatePassed] = useState(() =>
     !hasScramble || hasPassedSentenceStructureGate()
   );
+
+  const [phase, setPhase] = useState<"overview" | "active">("overview");
+  const savedProgressRef = useRef<BsExercisesStepProgress | null>(null);
 
   const [qi, setQi] = useState(0);
   const [speed, setSpeed] = useState<Speed>(1);
@@ -183,14 +216,20 @@ export default function ExercisesModule({
   const persistReadyRef = useRef(false);
   const skipResetOnceRef = useRef(false);
   const audioRef = useRef<HTMLAudioElement | null>(null);
+  const audioTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const q = questions[qi];
   const totalSteps = questions.length;
   const showScrambleGate =
     hasScramble && !scrambleGatePassed && qi >= firstScrambleQi;
 
   const stopAudio = useCallback(() => {
+    if (audioTimeoutRef.current != null) {
+      clearTimeout(audioTimeoutRef.current);
+      audioTimeoutRef.current = null;
+    }
     if (audioRef.current) {
       audioRef.current.pause();
+      audioRef.current.src = "";
       audioRef.current = null;
     }
     setPlaying(false);
@@ -254,6 +293,40 @@ export default function ExercisesModule({
     setResultsByN((prev) => ({ ...prev, [n]: ok ? "ok" : "no" }));
   }
 
+  function applySavedProgress(saved: BsExercisesStepProgress) {
+    const nextQi = Math.min(Math.max(0, saved.qi), totalSteps - 1);
+    skipResetOnceRef.current = true;
+    setQi(nextQi);
+    setScore(saved.score ?? 0);
+    setDone(saved.done ?? false);
+    setResultsByN(resultsByNFromSaved(saved.resultsByN ?? {}));
+    const step = questions[nextQi];
+    if (step?.kind === "listening_group") {
+      setGroupAnswers(restoreGroupAnswers(step, saved.groupAnswers));
+    }
+  }
+
+  function startFresh() {
+    clearBsExercisesProgress(lessonId, source);
+    savedProgressRef.current = null;
+    persistReadyRef.current = true;
+    skipResetOnceRef.current = true;
+    setQi(0);
+    setScore(0);
+    setDone(false);
+    setResultsByN({});
+    resetQForStep(0);
+    setPhase("active");
+  }
+
+  function continueFromSaved() {
+    const saved = savedProgressRef.current;
+    if (!saved) return;
+    applySavedProgress(saved);
+    persistReadyRef.current = true;
+    setPhase("active");
+  }
+
   function advanceFromStep(wasCorrect: number) {
     if (wasCorrect > 0) setScore((s) => s + wasCorrect);
     if (qi < totalSteps - 1) {
@@ -261,9 +334,14 @@ export default function ExercisesModule({
     } else {
       stopAudio();
       setDone(true);
-      const moduleKey =
-        source === "workbook" ? "exercises_workbook" : "exercises_textbook";
-      markBsModuleCompleted(lessonId, moduleKey);
+      if (source === "both") {
+        markBsModuleCompleted(lessonId, "exercises_workbook");
+        markBsModuleCompleted(lessonId, "exercises_textbook");
+      } else {
+        const moduleKey =
+          source === "workbook" ? "exercises_workbook" : "exercises_textbook";
+        markBsModuleCompleted(lessonId, moduleKey);
+      }
     }
   }
 
@@ -369,15 +447,19 @@ export default function ExercisesModule({
   }
 
   function restartExercises() {
-    clearBsExercisesProgress(lessonId, source);
-    persistReadyRef.current = true;
-    skipResetOnceRef.current = true;
-    setQi(0);
-    setScore(0);
-    setDone(false);
-    setResultsByN({});
-    resetQForStep(0);
+    startFresh();
   }
+
+  const canContinueFromOverview =
+    savedProgressRef.current != null &&
+    hasBsExercisesSavedProgress(lessonId, source);
+
+  const overviewResults = savedProgressRef.current
+    ? resultsByNFromSaved(savedProgressRef.current.resultsByN ?? {})
+    : {};
+
+  const overviewAnswered = Object.keys(overviewResults).length;
+  const overviewSaved = savedProgressRef.current;
 
   const groupAllChecked =
     q?.kind === "listening_group" &&
@@ -387,23 +469,14 @@ export default function ExercisesModule({
   useEffect(() => () => stopAudio(), [stopAudio]);
 
   useEffect(() => {
+    if (!active) stopAudio();
+  }, [active, stopAudio]);
+
+  useEffect(() => {
     if (totalSteps === 0 || hydrateDoneRef.current) return;
     hydrateDoneRef.current = true;
-    const saved = getBsExercisesProgress(lessonId, source);
-    if (saved) {
-      const nextQi = Math.min(Math.max(0, saved.qi), totalSteps - 1);
-      skipResetOnceRef.current = true;
-      setQi(nextQi);
-      setScore(saved.score ?? 0);
-      setDone(saved.done ?? false);
-      setResultsByN(resultsByNFromSaved(saved.resultsByN ?? {}));
-      const step = questions[nextQi];
-      if (step?.kind === "listening_group") {
-        setGroupAnswers(restoreGroupAnswers(step, saved.groupAnswers));
-      }
-    }
-    persistReadyRef.current = true;
-  }, [lessonId, source, totalSteps, questions]);
+    savedProgressRef.current = getBsExercisesProgress(lessonId, source);
+  }, [lessonId, source, totalSteps]);
 
   useEffect(() => {
     if (skipResetOnceRef.current) {
@@ -415,7 +488,7 @@ export default function ExercisesModule({
   }, [qi]);
 
   useEffect(() => {
-    if (!persistReadyRef.current || totalItems === 0) return;
+    if (phase !== "active" || !persistReadyRef.current || totalItems === 0) return;
     const resultsPayload: Record<string, "ok" | "no"> = {};
     for (const [n, v] of Object.entries(resultsByN)) {
       resultsPayload[String(n)] = v;
@@ -431,6 +504,7 @@ export default function ExercisesModule({
         q?.kind === "listening_group" ? snapshotGroupAnswers(groupAnswers) : undefined,
     });
   }, [
+    phase,
     lessonId,
     source,
     qi,
@@ -443,15 +517,101 @@ export default function ExercisesModule({
   ]);
 
   useEffect(() => {
+    if (phase !== "active" || !active || done || showScrambleGate) {
+      stopAudio();
+      return;
+    }
     const step = questions[qi];
     const hasAudio =
       step?.kind === "listening_group"
         ? Boolean(step.audio)
         : step && "audio" in step && Boolean(step.audio);
     if (!hasAudio) return;
-    const t = setTimeout(() => startAudio(), 120);
-    return () => clearTimeout(t);
-  }, [qi, questions, startAudio]);
+    audioTimeoutRef.current = setTimeout(() => {
+      audioTimeoutRef.current = null;
+      startAudio();
+    }, 120);
+    return () => {
+      if (audioTimeoutRef.current != null) {
+        clearTimeout(audioTimeoutRef.current);
+        audioTimeoutRef.current = null;
+      }
+    };
+  }, [qi, questions, startAudio, phase, active, done, showScrambleGate, stopAudio]);
+
+  const canAdvanceCurrentStep =
+    q?.kind === "listening_group"
+      ? groupAllChecked
+      : Boolean(q && checked);
+
+  useEffect(() => {
+    if (!embeddedInPath || !onRegisterPathFooter) return;
+
+    const register = (meta: PathExerciseFooterMeta | null) => onRegisterPathFooter(meta);
+
+    if (totalSteps === 0) {
+      register({
+        visible: true,
+        label: "Үе дуусгах →",
+        disabled: false,
+        action: "finish-stage",
+        onAction: () => {},
+      });
+      return;
+    }
+
+    if (phase === "overview" || showScrambleGate) {
+      register(null);
+      return;
+    }
+
+    if (done) {
+      register({
+        visible: true,
+        label: "Үе дуусгах →",
+        disabled: false,
+        action: "finish-stage",
+        onAction: () => {},
+      });
+      return;
+    }
+
+    const isLast = qi >= totalSteps - 1;
+    register({
+      visible: true,
+      label: isLast ? "Дүн харах →" : "Дараагийн дасгал →",
+      disabled: !canAdvanceCurrentStep,
+      action: "next-exercise",
+      onAction: () => {
+        if (q?.kind === "listening_group") advanceGroup();
+        else advanceSingle();
+      },
+    });
+  }, [
+    embeddedInPath,
+    onRegisterPathFooter,
+    totalSteps,
+    phase,
+    showScrambleGate,
+    done,
+    qi,
+    q,
+    canAdvanceCurrentStep,
+    // advanceSingle / advanceGroup recreated each render — deps via qi, q, checked
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  ]);
+
+  useEffect(() => {
+    if (!embeddedInPath || !onRegisterPathFooter) return;
+    return () => onRegisterPathFooter(null);
+  }, [embeddedInPath, onRegisterPathFooter]);
+
+  const sourceLabel =
+    source === "both"
+      ? "Дасгал"
+      : source === "textbook"
+        ? "Дасгал"
+        : "Дасгал (ном)";
 
   if (totalSteps === 0) {
     return (
@@ -460,10 +620,78 @@ export default function ExercisesModule({
           <div className="bs-soon-ic">🎯</div>
           <p>Энэ хичээлд (энэ хэсэгт) дасгал алга.</p>
         </div>
-        <button className="bs-cta" onClick={onDone} style={{ marginTop: 4 }}>
+        <button className="bs-cta bs-path-visible-cta" onClick={onDone} style={{ marginTop: 4 }}>
           Дараагийнх →
         </button>
       </div>
+    );
+  }
+
+  if (phase === "overview") {
+    return (
+      <>
+        <div className="bs-card bs-ex">
+          <div className="bs-vtop">
+            <div className="bs-label" style={{ margin: 0 }}>
+              <span className="bs-dot" />
+              {sourceLabel}
+            </div>
+            <span className="bs-counter">
+              {overviewAnswered} / {totalItems} хариулсан
+            </span>
+          </div>
+          <p className="bs-ex-overview-hint">
+            Дасгалын тойм — ногоон зөв, улаан буруу, саарал хийгээгүй.
+          </p>
+          {navEntries.length > 0 && (
+            <nav
+              className="bs-ex-nav bs-ex-overview-nav"
+              aria-label="Дасгалын тойм"
+            >
+              {navEntries.map(({ n, qi: stepQi }) => {
+                const result = overviewResults[n];
+                const cls = [
+                  "bs-ex-nav-btn",
+                  result === "ok" ? "bs-done-ok" : "",
+                  result === "no" ? "bs-done-no" : "",
+                ]
+                  .filter(Boolean)
+                  .join(" ");
+                return (
+                  <span key={n} className={cls} aria-label={`Асуулт ${n}`}>
+                    {n}
+                  </span>
+                );
+              })}
+            </nav>
+          )}
+          {overviewSaved?.done ? (
+            <p className="bs-ex-overview-status">
+              Өмнө дууссан: {overviewSaved.score ?? 0} /{" "}
+              {overviewSaved.totalItems ?? totalItems} зөв
+            </p>
+          ) : overviewAnswered > 0 ? (
+            <p className="bs-ex-overview-status">
+              {overviewAnswered} / {totalItems} асуулт хариулсан
+            </p>
+          ) : null}
+        </div>
+        <button
+          type="button"
+          className="bs-cta bs-path-visible-cta"
+          onClick={startFresh}
+        >
+          Эхнээс эхлэх
+        </button>
+        <button
+          type="button"
+          className="bs-cta bs-cta-secondary bs-path-visible-cta"
+          onClick={continueFromSaved}
+          disabled={!canContinueFromOverview}
+        >
+          Үргэлжлүүлэх
+        </button>
+      </>
     );
   }
 
@@ -496,12 +724,18 @@ export default function ExercisesModule({
             </div>
           </div>
         </div>
-        <button type="button" className="bs-cta bs-cta-secondary" onClick={restartExercises}>
+        <button
+          type="button"
+          className="bs-cta bs-cta-secondary bs-path-visible-cta"
+          onClick={restartExercises}
+        >
           Дахин эхлэх
         </button>
-        <button className="bs-cta" onClick={onDone}>
-          Дараагийнх →
-        </button>
+        {!embeddedInPath ? (
+          <button className="bs-cta bs-path-visible-cta" onClick={onDone}>
+            Дараагийнх →
+          </button>
+        ) : null}
       </>
     );
   }
@@ -518,7 +752,7 @@ export default function ExercisesModule({
       <div className="bs-vtop">
         <div className="bs-label" style={{ margin: 0 }}>
           <span className="bs-dot" />
-          {source === "textbook" ? "Дасгал" : "Дасгал (ном)"}
+          {sourceLabel}
         </div>
         <span className="bs-counter">
           {counterLabel} / {totalItems} · ✓ {score}
@@ -779,13 +1013,13 @@ export default function ExercisesModule({
         </div>
       )}
 
-      {q.kind !== "listening_group" && checked && (
+      {q.kind !== "listening_group" && checked && !embeddedInPath && (
         <button className="bs-cta" onClick={advanceSingle} style={{ marginTop: 12 }}>
           {qi === totalSteps - 1 ? "Дүн харах →" : "Дараагийнх →"}
         </button>
       )}
 
-      {q.kind === "listening_group" && groupAllChecked && (
+      {q.kind === "listening_group" && groupAllChecked && !embeddedInPath && (
         <button className="bs-cta" onClick={advanceGroup} style={{ marginTop: 12 }}>
           {qi === totalSteps - 1 ? "Дүн харах →" : "Дараагийнх →"}
         </button>

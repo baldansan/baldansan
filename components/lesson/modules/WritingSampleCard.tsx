@@ -2,6 +2,7 @@
 // components/lesson/modules/WritingSampleCard.tsx
 
 import type { HskPackageWritingSample } from "@/types/hsk-lesson-package";
+import { MnGrammarTermText } from "@/components/lesson/mn-grammar-term-text";
 
 type Props = {
   sample: HskPackageWritingSample;
@@ -24,7 +25,11 @@ export function WritingSampleCard({ sample, sectionTitle }: Props) {
       {sample.pinyin ? (
         <p className="bs-txt-writing-py">{sample.pinyin}</p>
       ) : null}
-      {sample.mn ? <p className="bs-txt-writing-mn">{sample.mn}</p> : null}
+      {sample.mn ? (
+        <p className="bs-txt-writing-mn">
+          <MnGrammarTermText text={sample.mn} />
+        </p>
+      ) : null}
     </div>
   );
 }

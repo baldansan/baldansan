@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import {
   buildLessonPathPlan,
   type LessonPathPlan,
@@ -28,7 +28,10 @@ import VocabularyCard from "./modules/VocabularyCard";
 import CharactersModule from "./modules/CharactersModule";
 import TextsModule from "./modules/TextsModule";
 import GrammarModule from "./modules/GrammarModule";
-import ExercisesModule from "./modules/ExercisesModule";
+import ExercisesModule, {
+  type PathExerciseFooterMeta,
+} from "./modules/ExercisesModule";
+import { clearBsQuizProgress } from "@/lib/lesson/bs-step-progress";
 import { moduleHasContent } from "@/lib/lesson/resolve-hsk-lesson-package";
 import "./lesson-player.css";
 import "./lesson-path.css";
@@ -72,6 +75,10 @@ export default function LessonPathPlayer({
   const [skipWarning, setSkipWarning] = useState<string | null>(null);
   const [justCompleted, setJustCompleted] = useState(false);
   const [showCelebration, setShowCelebration] = useState(false);
+  const [practiceFooter, setPracticeFooter] = useState<PathExerciseFooterMeta | null>(
+    null
+  );
+  const practiceFooterActionRef = useRef<(() => void) | null>(null);
 
   const allStageIds = useMemo(() => plan.stages.map((s) => s.id), [plan.stages]);
   const activeIndex = activeStage
@@ -100,6 +107,8 @@ export default function LessonPathPlayer({
     setView("hub");
     setActiveStage(null);
     setSkipWarning(null);
+    setPracticeFooter(null);
+    practiceFooterActionRef.current = null;
   }, []);
 
   const openStage = useCallback(
@@ -108,6 +117,13 @@ export default function LessonPathPlayer({
         setSkipWarning("Эхлээд өмнөх үеүүдээ дуусгавал илүү сайн суралцана.");
       } else {
         setSkipWarning(null);
+      }
+      if (stage.id === "quiz") {
+        clearBsQuizProgress(lessonId);
+      }
+      if (stage.id !== "practice") {
+        setPracticeFooter(null);
+        practiceFooterActionRef.current = null;
       }
       setActiveStage(stage);
       setView("stage");
@@ -154,6 +170,23 @@ export default function LessonPathPlayer({
     void completeStage(activeStage);
   }, [activeStage, completeStage]);
 
+  const handleRegisterPracticeFooter = useCallback(
+    (meta: PathExerciseFooterMeta | null) => {
+      setPracticeFooter(meta);
+      practiceFooterActionRef.current = meta?.onAction ?? null;
+    },
+    []
+  );
+
+  const handlePracticeFooterClick = useCallback(() => {
+    if (!practiceFooter || practiceFooter.disabled) return;
+    if (practiceFooter.action === "finish-stage") {
+      handleFinishStage();
+      return;
+    }
+    practiceFooterActionRef.current?.();
+  }, [practiceFooter, handleFinishStage]);
+
   const handleQuizFinished = useCallback(() => {
     if (activeStage) {
       void completeStage(activeStage);
@@ -184,19 +217,25 @@ export default function LessonPathPlayer({
       case "practice":
         return pathPlan.practiceSource ? (
           <ExercisesModule
+            key={`practice-${pathPlan.practiceSource}`}
             lessonId={lessonId}
             lesson={lesson}
             source={pathPlan.practiceSource}
+            active
+            embeddedInPath
+            onRegisterPathFooter={handleRegisterPracticeFooter}
             onDone={noop}
           />
         ) : null;
       case "quiz":
         return (
           <LessonPathQuizStage
+            key="lesson-path-quiz"
             lessonId={lessonId}
             lesson={lessonContent}
             quizQuestions={quizQuestions}
             useDatabaseQuizOptions={useDatabaseQuizOptions}
+            freshStart
             onFinished={handleQuizFinished}
           />
         );
@@ -216,7 +255,10 @@ export default function LessonPathPlayer({
     }
   }
 
-  const showStageFooter = activeStage && activeStage.id !== "quiz";
+  const isPracticeStage = activeStage?.id === "practice";
+  const showGenericStageFooter =
+    activeStage && activeStage.id !== "quiz" && !isPracticeStage;
+  const showPracticeStageFooter = isPracticeStage && practiceFooter?.visible;
 
   if (!hydrated) {
     return (
@@ -273,6 +315,16 @@ export default function LessonPathPlayer({
             ))}
           </div>
         </div>
+        {isPracticeStage ? (
+          <button
+            type="button"
+            className="bs-path-finish-chip"
+            onClick={handleFinishStage}
+            aria-label="Үе дуусгах"
+          >
+            Үе дуусгах
+          </button>
+        ) : null}
       </div>
 
       {skipWarning ? (
@@ -293,9 +345,11 @@ export default function LessonPathPlayer({
         </div>
       ) : null}
 
-      <div className="bs-path-stage-content">{renderStageContent(activeStage, plan)}</div>
+      <div className="bs-path-stage-content" key={activeStage.id}>
+        {renderStageContent(activeStage, plan)}
+      </div>
 
-      {showStageFooter ? (
+      {showGenericStageFooter ? (
         <div className="bs-path-footer">
           <button
             type="button"
@@ -303,6 +357,23 @@ export default function LessonPathPlayer({
             onClick={handleFinishStage}
           >
             Үе дуусгах →
+          </button>
+        </div>
+      ) : null}
+
+      {showPracticeStageFooter && practiceFooter ? (
+        <div className="bs-path-footer">
+          <button
+            type="button"
+            className={`bs-cta bs-path-footer-cta bs-path-practice-footer-cta${
+              practiceFooter.action === "finish-stage"
+                ? " bs-path-practice-footer-cta--finish"
+                : ""
+            }`}
+            onClick={handlePracticeFooterClick}
+            disabled={practiceFooter.disabled}
+          >
+            {practiceFooter.label}
           </button>
         </div>
       ) : null}
