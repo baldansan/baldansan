@@ -194,7 +194,9 @@ export default function LessonPathPlayer({
   }, [activeStage, completeStage]);
 
   function renderStageContent(stage: LessonPathStage, pathPlan: LessonPathPlan) {
-    const noop = () => {};
+    const finishModuleStage = () => {
+      handleFinishStage();
+    };
 
     switch (stage.id) {
       case "goal_warmup":
@@ -203,17 +205,25 @@ export default function LessonPathPlayer({
         return (
           <>
             {moduleHasContent(lesson, "vocabulary") ? (
-              <VocabularyCard lessonId={lessonId} lesson={lesson} onDone={noop} />
+              <VocabularyCard
+                lessonId={lessonId}
+                lesson={lesson}
+                onDone={finishModuleStage}
+              />
             ) : null}
             {moduleHasContent(lesson, "characters") ? (
-              <CharactersModule lessonId={lessonId} lesson={lesson} onDone={noop} />
+              <CharactersModule
+                lessonId={lessonId}
+                lesson={lesson}
+                onDone={finishModuleStage}
+              />
             ) : null}
           </>
         );
       case "text":
-        return <TextsModule lesson={lesson} onDone={noop} />;
+        return <TextsModule lesson={lesson} onDone={finishModuleStage} />;
       case "grammar":
-        return <GrammarModule lesson={lesson} onDone={noop} />;
+        return <GrammarModule lesson={lesson} onDone={finishModuleStage} />;
       case "practice":
         return pathPlan.practiceSource ? (
           <ExercisesModule
@@ -224,7 +234,7 @@ export default function LessonPathPlayer({
             active
             embeddedInPath
             onRegisterPathFooter={handleRegisterPracticeFooter}
-            onDone={noop}
+            onDone={finishModuleStage}
           />
         ) : null;
       case "quiz":

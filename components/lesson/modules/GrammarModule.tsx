@@ -143,7 +143,11 @@ export default function GrammarModule({
           <div className="bs-soon-ic">📐</div>
           <p>Энэ хичээлд дүрэм алга.</p>
         </div>
-        <button className="bs-cta" onClick={onDone} style={{ marginTop: 4 }}>
+        <button
+          className="bs-cta bs-path-visible-cta"
+          onClick={onDone}
+          style={{ marginTop: 4 }}
+        >
           Дараагийнх →
         </button>
       </div>
@@ -268,7 +272,11 @@ export default function GrammarModule({
       {phase === "exercises" && exercises.length > 0 && (
         <>
           <div className="bs-gr-point bs-gr-point--compact">{point.point}</div>
-          <GrammarPointExercises exercises={exercises} onComplete={goNextPoint} />
+          <GrammarPointExercises
+            exercises={exercises}
+            isLastPoint={gi === total - 1}
+            onComplete={goNextPoint}
+          />
         </>
       )}
 

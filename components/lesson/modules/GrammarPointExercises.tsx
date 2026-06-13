@@ -10,10 +10,16 @@ import type { HskPackageGrammarExercise } from "@/types/hsk-lesson-package";
 
 type Props = {
   exercises: HskPackageGrammarExercise[];
+  /** Бүх дүрэм дууссан эсэх — сүүлийн дасгалын товчны шошгыг тодорхойлно. */
+  isLastPoint?: boolean;
   onComplete: () => void;
 };
 
-export function GrammarPointExercises({ exercises, onComplete }: Props) {
+export function GrammarPointExercises({
+  exercises,
+  isLastPoint = false,
+  onComplete,
+}: Props) {
   const [ei, setEi] = useState(0);
   const [fillText, setFillText] = useState("");
   const [picked, setPicked] = useState<string | null>(null);
@@ -70,6 +76,13 @@ export function GrammarPointExercises({ exercises, onComplete }: Props) {
   }
 
   const answerLabel = grammarExerciseAnswerLabel(ex);
+
+  const continueLabel =
+    ei < total - 1
+      ? "Дараагийн дасгал →"
+      : isLastPoint
+        ? "Үргэлжлүүлэх →"
+        : "Дараагийн дүрэм →";
 
   return (
     <div className="bs-gr-exercise-block">
@@ -185,8 +198,12 @@ export function GrammarPointExercises({ exercises, onComplete }: Props) {
               ) : null}
             </>
           )}
-          <button type="button" className="bs-cta" onClick={continueAfterFeedback}>
-            {ei < total - 1 ? "Дараагийн дасгал →" : "Дараагийн дүрэм →"}
+          <button
+            type="button"
+            className="bs-cta bs-path-visible-cta"
+            onClick={continueAfterFeedback}
+          >
+            {continueLabel}
           </button>
         </div>
       ) : null}
