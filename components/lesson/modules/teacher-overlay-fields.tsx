@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { resolveTeacherCheckAnswer } from "@/lib/lesson/teacher-check-quiz";
 import type { HskTeacherOverlayFields } from "@/types/hsk-lesson-package";
 import "./teacher-overlay.css";
 
@@ -60,8 +61,9 @@ export function TeacherCheckQuizSection({
   check: NonNullable<OverlayProps["check"]>;
 }) {
   const [picked, setPicked] = useState<string | null>(null);
+  const resolvedAnswer = resolveTeacherCheckAnswer(check);
   const answered = picked !== null;
-  const correct = picked === check.answer;
+  const correct = picked === resolvedAnswer;
 
   return (
     <div className="bs-tov-check">
@@ -70,7 +72,7 @@ export function TeacherCheckQuizSection({
       <div className="bs-tov-check-opts">
         {check.options.map((opt) => {
           const isPicked = picked === opt;
-          const isAnswer = opt === check.answer;
+          const isAnswer = opt === resolvedAnswer;
           let cls = "bs-tov-check-opt";
           if (answered && isPicked && correct) cls += " bs-tov-check-opt--ok";
           else if (answered && isPicked && !correct) cls += " bs-tov-check-opt--bad";
@@ -90,7 +92,7 @@ export function TeacherCheckQuizSection({
       </div>
       {answered && !correct ? (
         <p className="bs-tov-check-feedback bs-tov-check-feedback--bad">
-          Зөв хариулт: {check.answer}
+          Зөв хариулт: {resolvedAnswer}
         </p>
       ) : null}
       {answered && correct ? (

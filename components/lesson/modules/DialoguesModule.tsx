@@ -6,6 +6,7 @@
 
 import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import { resolveLessonPackagePlayableUrl } from "@/lib/lesson/package-audio-resolve";
+import { playChineseWordAudio } from "@/lib/tts/play-chinese-word-audio";
 import type { HskLessonPackage } from "@/types/hsk-lesson-package";
 import "./dialogues-module.css";
 import "./texts-module.css";
@@ -144,6 +145,7 @@ export default function DialoguesModule({
   function changeSpeed(s: Speed) { setSpeed(s); if (audioRef.current) audioRef.current.playbackRate = s; }
 
   function tapWord(e: React.MouseEvent, v: Vocab) {
+    void playChineseWordAudio(v.zh);
     const cont = chatRef.current;
     const btn = e.currentTarget as HTMLElement;
     if (!cont) return;

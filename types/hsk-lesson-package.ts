@@ -128,16 +128,50 @@ export interface HskPackageParagraphSummary {
 
 export interface HskPackageShortText {
   id: number;
+  title_mn?: string;
   audio?: string;
   sentences: HskPackageTextSentence[];
   paragraph_summaries?: HskPackageParagraphSummary[];
   reflection?: HskPackageTextReflection;
+  /** 写作 — model essay (~100 chars) for writing section. */
+  writingSample?: HskPackageWritingSample;
+}
+
+export interface HskPackageWritingSample {
+  title_mn?: string;
+  zh: string;
+  pinyin?: string;
+  mn?: string;
+}
+
+export type HskGrammarExerciseType = "choice" | "fill" | "judge";
+
+export interface HskPackageGrammarExercise {
+  type: HskGrammarExerciseType;
+  question: string;
+  options?: string[];
+  answer: string | number | boolean;
+  explanation_correct_mn?: string;
+  explanation_wrong_mn?: string;
 }
 
 export interface HskPackageGrammarExample {
   zh: string;
   pinyin: string;
   mn: string;
+}
+
+export interface HskPackageCollocationExample {
+  zh: string;
+  pinyin?: string;
+  mn?: string;
+}
+
+export interface HskPackageCollocation {
+  zh: string;
+  mn?: string;
+  usage_mn?: string;
+  example?: HskPackageCollocationExample;
 }
 
 /** Optional teacher-overlay fields (grammar, wordExplanation, etc.). */
@@ -165,6 +199,8 @@ export interface HskPackageGrammarPoint extends HskTeacherOverlayFields {
   gloss_mn: string;
   teacher_mn: string;
   examples: HskPackageGrammarExample[];
+  /** Per-point mini-exercises after examples. */
+  exercises?: HskPackageGrammarExercise[];
 }
 
 export interface HskLessonPackage {
@@ -189,6 +225,8 @@ export interface HskLessonPackage {
   grammar?: HskPackageGrammarPoint[];
   /** HSK5 wordExplanation items — same overlay UI as grammar when present. */
   word_explanation?: HskPackageGrammarPoint[];
+  /** HSK5 词语搭配 — word collocations with expandable detail. */
+  collocations?: HskPackageCollocation[];
   exercises_textbook?: unknown;
   exercises_workbook?: unknown;
   recap?: unknown;

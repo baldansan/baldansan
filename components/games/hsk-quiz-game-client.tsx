@@ -345,7 +345,8 @@ export function HskQuizGameClient({ config }: { config: HskQuizGameConfig }) {
             </p>
           )
         ) : null}
-        {current.subDisplay ? (
+        {current.subDisplay &&
+        !(current.kind === "word-recall" && !locked) ? (
           <p className="text-center text-sm font-extrabold text-[var(--bs-green)]">
             {current.subDisplay}
           </p>

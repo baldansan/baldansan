@@ -329,3 +329,26 @@
   line-height: 1.55;
   margin-top: 6px;
 }
+
+.bs-ex-svo-hint {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--bs-muted);
+}
+
+/* Хятад өгүүлбэрийн бүтэц — scramble-ийн өмнөх сорил */
+.bs-sentence-gate-bullets {
+  margin: 12px 0 0;
+  padding-left: 18px;
+  font-size: 13.5px;
+  color: var(--bs-ink-2);
+  line-height: 1.65;
+}
+.bs-sentence-gate-bullets li + li {
+  margin-top: 6px;
+}
+.bs-sentence-gate-quiz {
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px solid var(--bs-line);
+}

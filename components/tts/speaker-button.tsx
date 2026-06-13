@@ -8,6 +8,7 @@ import {
 } from "@/lib/tts/play-pronunciation";
 import { isSpeechSupported, TTS_UNAVAILABLE_MESSAGE } from "@/lib/tts/speech";
 import { resolveTtsLang } from "@/lib/tts/infer-lang";
+import { playChineseWordAudio } from "@/lib/tts/play-chinese-word-audio";
 
 type SpeakerSize = "sm" | "md" | "lg";
 
@@ -98,6 +99,15 @@ function SpeakerButtonInner({
     if (audio) {
       const audioResult = await playAudioUrl(audio);
       if (audioResult.ok) {
+        setState("idle");
+        return;
+      }
+    }
+
+    const isChinese = resolvedLang.toLowerCase().startsWith("zh");
+    if (isChinese) {
+      const cmn = await playChineseWordAudio(trimmed);
+      if (cmn.ok) {
         setState("idle");
         return;
       }

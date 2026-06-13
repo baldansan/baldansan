@@ -4,6 +4,7 @@
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { LiveTextReader } from "@/components/lesson/live-text-reader";
+import { WritingSampleCard } from "@/components/lesson/modules/WritingSampleCard";
 import { resolveLessonPackagePlayableUrl } from "@/lib/lesson/package-audio-resolve";
 import type {
   HskLessonPackage,
@@ -87,7 +88,7 @@ export default function TextsModule({
 
   useEffect(() => () => stopAudio(), [stopAudio]);
 
-  if (!text || sentences.length === 0) {
+  if (!text || (sentences.length === 0 && !text.writingSample)) {
     return (
       <div className="bs-card">
         <div className="bs-soon">
@@ -106,39 +107,51 @@ export default function TextsModule({
       <div className="bs-vtop">
         <div className="bs-label" style={{ margin: 0 }}>
           <span className="bs-dot" />
-          Богино эх
+          {text.title_mn?.trim() || "Богино эх"}
         </div>
         <span className="bs-counter">
           {ti + 1} / {total}
         </span>
       </div>
 
-      <div className="bs-txt-bar">
-        <div className="bs-speeds" role="group" aria-label="Тоглуулах хурд">
-          {SPEEDS.map((s) => (
+      {sentences.length > 0 ? (
+        <>
+          <div className="bs-txt-bar">
+            <div className="bs-speeds" role="group" aria-label="Тоглуулах хурд">
+              {SPEEDS.map((s) => (
+                <button
+                  key={s}
+                  type="button"
+                  className={`bs-speed ${speed === s ? "bs-on" : ""}`}
+                  onClick={() => changeSpeed(s)}
+                  aria-pressed={speed === s}
+                >
+                  {s}×
+                </button>
+              ))}
+            </div>
             <button
-              key={s}
               type="button"
-              className={`bs-speed ${speed === s ? "bs-on" : ""}`}
-              onClick={() => changeSpeed(s)}
-              aria-pressed={speed === s}
+              className={`bs-txt-play ${playing ? "bs-on" : ""}`}
+              onClick={playAudio}
+              disabled={!text.audio && !fullZh}
+              aria-label={playing ? "Зогсоох" : "Сонсох"}
             >
-              {s}×
+              <span aria-hidden>{playing ? "⏸" : "▶"}</span>{" "}
+              {playing ? "Зогсоож байна" : "Сонсох"}
             </button>
-          ))}
-        </div>
-        <button
-          type="button"
-          className={`bs-txt-play ${playing ? "bs-on" : ""}`}
-          onClick={playAudio}
-          disabled={!text.audio && !fullZh}
-          aria-label={playing ? "Зогсоох" : "Сонсох"}
-        >
-          <span aria-hidden>{playing ? "⏸" : "▶"}</span> {playing ? "Зогсоож байна" : "Сонсох"}
-        </button>
-      </div>
+          </div>
 
-      <LiveTextReader text={text} vocabulary={lesson.vocabulary} />
+          <LiveTextReader text={text} vocabulary={lesson.vocabulary} />
+        </>
+      ) : null}
+
+      {text.writingSample ? (
+        <WritingSampleCard
+          sample={text.writingSample}
+          sectionTitle={text.title_mn}
+        />
+      ) : null}
 
       <div className="bs-navrow">
         <button className="bs-navbtn" onClick={goPrev} disabled={ti === 0}>

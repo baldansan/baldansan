@@ -272,7 +272,8 @@ export function SpeedChallengeClient() {
         <p className="mt-2 text-center text-base font-bold text-[var(--bs-ink)]">
           {current.display}
         </p>
-        {current.subDisplay ? (
+        {current.subDisplay &&
+        !(current.kind === "word-recall" && !locked) ? (
           <p className="text-center text-sm text-[var(--bs-green)]">
             {current.subDisplay}
           </p>

@@ -10,76 +10,23 @@ import {
   saveBsExercisesProgress,
   type BsGroupAnswerSnapshot,
 } from "@/lib/lesson/bs-step-progress";
+import {
+  buildExerciseQuestions,
+  countGradableExerciseQuestions,
+  type ExerciseQuestion,
+} from "@/lib/lesson/build-exercise-questions";
+import {
+  hasPassedSentenceStructureGate,
+} from "@/lib/lesson/chinese-sentence-structure";
 import { resolveLessonPackagePlayableUrl } from "@/lib/lesson/package-audio-resolve";
-import { resolveWorkbookListeningItemAudio } from "@/lib/lesson/workbook-listening-audio";
 import type { HskLessonPackage } from "@/types/hsk-lesson-package";
+import { SentenceStructureGate } from "./SentenceStructureGate";
 import "./exercises-module.css";
 
 type Speed = 0.5 | 0.75 | 1;
 const SPEEDS: Speed[] = [0.5, 0.75, 1];
 
-type ListeningSubQuestion =
-  | {
-      kind: "choice";
-      n?: number;
-      prompt: string;
-      options: string[];
-      answer: string;
-    }
-  | {
-      kind: "tf";
-      n?: number;
-      prompt: string;
-      answer: boolean;
-    };
-
-type Question =
-  | {
-      kind: "choice";
-      n?: number;
-      section: string;
-      instruction?: string;
-      audio?: string;
-      zh?: string;
-      prompt: string;
-      options: string[];
-      answer: string;
-    }
-  | {
-      kind: "tf";
-      n?: number;
-      section: string;
-      instruction?: string;
-      audio?: string;
-      prompt: string;
-      answer: boolean;
-    }
-  | {
-      kind: "listening_group";
-      section: string;
-      instruction?: string;
-      audio: string;
-      items: ListeningSubQuestion[];
-    }
-  | {
-      kind: "order";
-      n?: number;
-      section: string;
-      instruction?: string;
-      prompt: string;
-      tokens: string[];
-      keys: string[];
-      answer: string[];
-    }
-  | {
-      kind: "scramble";
-      n?: number;
-      section: string;
-      instruction?: string;
-      prompt: string;
-      tokens: string[];
-      answer: string;
-    };
+type Question = ExerciseQuestion;
 
 type GroupAnswerState = {
   picked: string | null;
@@ -90,41 +37,12 @@ type GroupAnswerState = {
 
 type NavEntry = { n: number; qi: number };
 
-function valuesOf(o: unknown): { values: string[]; byKey: Record<string, string> } {
-  if (Array.isArray(o)) {
-    const values = o.map((x) => String(x));
-    return { values, byKey: {} };
-  }
-  const byKey: Record<string, string> = {};
-  const values: string[] = [];
-  if (o && typeof o === "object") {
-    for (const k of Object.keys(o as Record<string, unknown>)) {
-      const v = String((o as Record<string, unknown>)[k]);
-      byKey[k] = v;
-      values.push(v);
-    }
-  }
-  return { values, byKey };
-}
-
-function resolveAns(ans: unknown, byKey: Record<string, string>): string {
-  const key = String(ans);
-  return byKey[key] != null ? byKey[key] : key;
-}
-
-function toBool(a: unknown): boolean {
-  return /^(true|对|正确|√|t|right|yes|y|1)$/i.test(String(a).trim());
-}
-
 function norm(s: string): string {
   return String(s).replace(/[\s。，、！？!?,.;；：:""''「」（）()]/g, "");
 }
 
 function countGradableItems(questions: Question[]): number {
-  return questions.reduce((sum, q) => {
-    if (q.kind === "listening_group") return sum + q.items.length;
-    return sum + 1;
-  }, 0);
+  return countGradableExerciseQuestions(questions);
 }
 
 function buildNavEntries(questions: Question[]): NavEntry[] {
@@ -155,225 +73,6 @@ function positionCounterLabel(q: Question, qi: number, questions: Question[]): s
     else offset += 1;
   }
   return String(offset + 1);
-}
-
-function listeningAudioKey(
-  rawPath: string | undefined,
-  base: string | undefined,
-  soloId: string | number
-): string {
-  const path = rawPath?.trim();
-  if (!path) return `__solo__:${soloId}`;
-  const resolved = resolveLessonPackagePlayableUrl(path, { packageAudioBase: base });
-  return resolved ?? path;
-}
-
-function buildListeningSubQuestion(it: Record<string, unknown>): ListeningSubQuestion | null {
-  if (it.options != null) {
-    const { values, byKey } = valuesOf(it.options);
-    return {
-      kind: "choice",
-      n: Number(it.n) || undefined,
-      prompt: it.statement_zh
-        ? String(it.statement_zh)
-        : it.statement
-          ? String(it.statement)
-          : "Сонссоноо сонгоорой:",
-      options: values,
-      answer: resolveAns(it.answer, byKey),
-    };
-  }
-  const statement =
-    it.statement_zh != null
-      ? String(it.statement_zh)
-      : it.statement != null
-        ? String(it.statement)
-        : null;
-  if (statement == null) return null;
-  return {
-    kind: "tf",
-    n: Number(it.n) || undefined,
-    prompt: statement,
-    answer: toBool(it.answer),
-  };
-}
-
-type ListeningDraft = {
-  sub: ListeningSubQuestion;
-  audio?: string;
-  audioKey: string;
-};
-
-function flushListeningDrafts(
-  out: Question[],
-  drafts: ListeningDraft[],
-  section: string,
-  instruction?: string
-): void {
-  let i = 0;
-  while (i < drafts.length) {
-    const key = drafts[i].audioKey;
-    const group: ListeningDraft[] = [];
-    while (i < drafts.length && drafts[i].audioKey === key) {
-      group.push(drafts[i]);
-      i++;
-    }
-    const audio = group[0].audio;
-    if (group.length > 1 && audio) {
-      out.push({
-        kind: "listening_group",
-        section,
-        instruction,
-        audio,
-        items: group.map((g) => g.sub),
-      });
-      continue;
-    }
-    const g0 = group[0];
-    if (g0.sub.kind === "choice") {
-      out.push({
-        ...g0.sub,
-        section,
-        instruction,
-        audio: g0.audio,
-      });
-    } else {
-      out.push({
-        ...g0.sub,
-        section,
-        instruction,
-        audio: g0.audio,
-      });
-    }
-  }
-}
-
-function buildQuestions(
-  lesson: HskLessonPackage,
-  source: "textbook" | "workbook"
-): Question[] {
-  const out: Question[] = [];
-  const base = lesson.audio_base_path;
-
-  try {
-    if (source === "textbook") {
-      const tb = lesson.exercises_textbook as any;
-      const banks = tb?.fill_in?.banks ?? [];
-      for (const b of banks) {
-        const words: string[] = (b?.words ?? []).map((w: unknown) => String(w));
-        for (const it of b?.items ?? []) {
-          if (it?.q == null || it?.answer == null) continue;
-          out.push({
-            kind: "choice",
-            n: it.n,
-            section: "Үг нөхөх",
-            instruction: tb?.fill_in?.instruction_mn,
-            prompt: String(it.q),
-            options: words.length ? words : [String(it.answer)],
-            answer: String(it.answer),
-          });
-        }
-      }
-    } else {
-      const wb = lesson.exercises_workbook as any;
-
-      for (const part of wb?.listening?.parts ?? []) {
-        const instruction = part?.instruction_mn;
-        const partRecord =
-          part && typeof part === "object" ? (part as Record<string, unknown>) : null;
-        const drafts: ListeningDraft[] = [];
-
-        for (const it of part?.items ?? []) {
-          const itemRecord =
-            it && typeof it === "object" ? (it as Record<string, unknown>) : null;
-          if (!itemRecord) continue;
-          const sub = buildListeningSubQuestion(itemRecord);
-          if (!sub) continue;
-          const audio =
-            partRecord != null
-              ? resolveWorkbookListeningItemAudio(partRecord, itemRecord)
-              : trimAudio(itemRecord.audio) || trimAudio(itemRecord.audioFile);
-          drafts.push({
-            sub,
-            audio,
-            audioKey: listeningAudioKey(audio, base, sub.n ?? drafts.length),
-          });
-        }
-
-        flushListeningDrafts(out, drafts, "Сонсгол", instruction);
-      }
-
-      for (const b of wb?.reading?.select_word ?? []) {
-        const { values, byKey } = valuesOf(b?.bank ?? {});
-        for (const it of b?.items ?? []) {
-          if (it?.q == null) continue;
-          out.push({
-            kind: "choice",
-            n: it.n,
-            section: "Үг сонгох",
-            prompt: String(it.q),
-            options: values,
-            answer: resolveAns(it.answer, byKey),
-          });
-        }
-      }
-
-      for (const it of wb?.reading?.ordering ?? []) {
-        const parts = it?.parts ?? {};
-        const keys = Object.keys(parts);
-        const tokens = keys.map((k) => String(parts[k]));
-        const answer = String(it?.answer ?? "").split("").filter(Boolean);
-        if (keys.length && answer.length) {
-          out.push({
-            kind: "order",
-            n: it.n,
-            section: "Дараалал",
-            prompt: "Зөв дарааллаар нь өрөөрэй:",
-            tokens,
-            keys,
-            answer,
-          });
-        }
-      }
-
-      for (const it of wb?.reading?.comprehension ?? []) {
-        const { values, byKey } = valuesOf(it?.options ?? {});
-        out.push({
-          kind: "choice",
-          n: it.n,
-          section: "Унших ойлголт",
-          zh: it?.passage_zh ? String(it.passage_zh) : undefined,
-          prompt: String(it?.q_zh ?? ""),
-          options: values,
-          answer: resolveAns(it.answer, byKey),
-        });
-      }
-
-      const ms = wb?.writing?.make_sentence;
-      for (const it of ms?.items ?? []) {
-        const words: string[] = (it?.words ?? []).map((w: unknown) => String(w));
-        if (words.length && it?.answer != null) {
-          out.push({
-            kind: "scramble",
-            n: it.n,
-            section: "Өгүүлбэр эвлүүлэх",
-            instruction: ms?.instruction_mn,
-            prompt: "Үгсийг эвлүүлж зөв өгүүлбэр болгоорой:",
-            tokens: words,
-            answer: String(it.answer),
-          });
-        }
-      }
-    }
-  } catch {
-    // бүтэц санаанд оромгүй бол байгаа хэдийг нь буцаана
-  }
-  return out;
-}
-
-function trimAudio(value: unknown): string | undefined {
-  const s = String(value ?? "").trim();
-  return s || undefined;
 }
 
 function emptyGroupAnswers(q: Question): GroupAnswerState[] {
@@ -422,6 +121,25 @@ function restoreGroupAnswers(
   });
 }
 
+function renderPromptWithSvoHint(text: string) {
+  if (!/S\+V\+O/i.test(text)) return text;
+  const parts = text.split(/(S\+V\+O)/i);
+  return (
+    <>
+      {parts.map((part, i) =>
+        /^S\+V\+O$/i.test(part) ? (
+          <span key={i}>
+            {part}
+            <span className="bs-ex-svo-hint"> (эзэн + үйл үг + тусагдахуун)</span>
+          </span>
+        ) : (
+          <span key={i}>{part}</span>
+        )
+      )}
+    </>
+  );
+}
+
 export default function ExercisesModule({
   lessonId,
   lesson,
@@ -434,9 +152,18 @@ export default function ExercisesModule({
   onDone: () => void;
 }) {
   const base = lesson.audio_base_path;
-  const questions = useMemo(() => buildQuestions(lesson, source), [lesson, source]);
+  const questions = useMemo(() => buildExerciseQuestions(lesson, source), [lesson, source]);
   const totalItems = useMemo(() => countGradableItems(questions), [questions]);
   const navEntries = useMemo(() => buildNavEntries(questions), [questions]);
+  const firstScrambleQi = useMemo(
+    () => questions.findIndex((step) => step.kind === "scramble"),
+    [questions]
+  );
+  const hasScramble = firstScrambleQi >= 0;
+
+  const [scrambleGatePassed, setScrambleGatePassed] = useState(() =>
+    !hasScramble || hasPassedSentenceStructureGate()
+  );
 
   const [qi, setQi] = useState(0);
   const [speed, setSpeed] = useState<Speed>(1);
@@ -458,6 +185,8 @@ export default function ExercisesModule({
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const q = questions[qi];
   const totalSteps = questions.length;
+  const showScrambleGate =
+    hasScramble && !scrambleGatePassed && qi >= firstScrambleQi;
 
   const stopAudio = useCallback(() => {
     if (audioRef.current) {
@@ -555,7 +284,10 @@ export default function ExercisesModule({
 
   function pickChoice(opt: string) {
     if (checked || q.kind !== "choice") return;
-    const ok = opt === q.answer;
+    const ok =
+      q.acceptableAnswers?.length
+        ? q.acceptableAnswers.some((a) => norm(opt) === norm(a))
+        : opt === q.answer;
     setPicked(opt);
     setChecked(true);
     setCorrect(ok);
@@ -732,6 +464,14 @@ export default function ExercisesModule({
           Дараагийнх →
         </button>
       </div>
+    );
+  }
+
+  if (showScrambleGate) {
+    return (
+      <SentenceStructureGate
+        onPassed={() => setScrambleGatePassed(true)}
+      />
     );
   }
 
@@ -977,7 +717,10 @@ export default function ExercisesModule({
 
       {(q.kind === "order" || q.kind === "scramble") && (
         <>
-          <div className="bs-ex-prompt">{q.prompt}</div>
+          <div className="bs-ex-prompt">{renderPromptWithSvoHint(q.prompt)}</div>
+          {q.instruction ? (
+            <div className="bs-ex-instr">{renderPromptWithSvoHint(q.instruction)}</div>
+          ) : null}
           <div className="bs-ex-build">
             {seq.length === 0 && <span className="bs-ex-ph">Доороос товшиж нэмнэ…</span>}
             {seq.map((idx, pos) => (

@@ -301,3 +301,35 @@
   color: var(--bs-green-700);
   border-color: var(--bs-green-100);
 }
+
+/* 写作 — загвар эссе */
+.bs-txt-writing {
+  margin-top: 18px;
+  padding: 16px;
+  background: var(--bs-amber-50);
+  border: 1px solid #f5d78e;
+  border-radius: var(--bs-radius-sm, 14px);
+}
+.bs-txt-writing + .bs-txt-writing {
+  margin-top: 12px;
+}
+.bs-txt-writing-zh {
+  font-family: var(--bs-zh);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.65;
+  color: var(--bs-ink);
+  margin-top: 12px;
+}
+.bs-txt-writing-py {
+  font-size: 14px;
+  color: var(--bs-green-700);
+  margin-top: 8px;
+  line-height: 1.5;
+}
+.bs-txt-writing-mn {
+  font-size: 14px;
+  color: var(--bs-ink-2);
+  line-height: 1.6;
+  margin-top: 8px;
+}

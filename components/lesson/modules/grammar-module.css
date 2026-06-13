@@ -125,3 +125,165 @@
   color: #fff;
   border-color: var(--bs-green);
 }
+
+/* 词语搭配 — үг хослол */
+.bs-collocations {
+  margin-top: 16px;
+}
+.bs-collocations-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+  margin: 10px 0 0;
+  padding: 0;
+}
+.bs-collocation-chip {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+  border: 1px solid var(--bs-green-100);
+  background: var(--bs-green-50);
+  border-radius: 12px;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-family: var(--bs-ui);
+  transition: transform 0.12s ease, box-shadow 0.15s ease;
+}
+.bs-collocation-chip:active {
+  transform: scale(0.97);
+}
+.bs-collocation-zh {
+  font-family: var(--bs-zh);
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--bs-green-800, #0f7338);
+}
+.bs-collocation-mn-preview {
+  font-size: 12px;
+  color: var(--bs-ink-2);
+}
+.bs-collocation-sheet-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 120;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 16px;
+}
+.bs-collocation-sheet {
+  width: 100%;
+  max-width: 420px;
+  background: #fff;
+  border-radius: 18px 18px 14px 14px;
+  padding: 18px 16px;
+  box-shadow: var(--bs-shadow-lg, 0 12px 40px rgba(0, 0, 0, 0.15));
+}
+.bs-collocation-sheet-zh {
+  font-family: var(--bs-zh);
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--bs-ink);
+}
+.bs-collocation-sheet-mn {
+  margin-top: 6px;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--bs-ink);
+}
+.bs-collocation-sheet-usage {
+  margin-top: 10px;
+  font-size: 13px;
+  color: var(--bs-ink-2);
+  line-height: 1.55;
+}
+.bs-collocation-example {
+  margin-top: 14px;
+  padding: 12px;
+  background: var(--bs-bg);
+  border-radius: 12px;
+  border: 1px solid var(--bs-line);
+}
+.bs-collocation-example-label {
+  font-size: 11px;
+  font-weight: 800;
+  color: var(--bs-muted);
+  margin-bottom: 6px;
+}
+.bs-collocation-example-zh {
+  font-family: var(--bs-zh);
+  font-size: 18px;
+  font-weight: 700;
+}
+.bs-collocation-example-py {
+  font-size: 13px;
+  color: var(--bs-green-700);
+  margin-top: 2px;
+}
+.bs-collocation-example-mn {
+  font-size: 13px;
+  color: var(--bs-ink-2);
+  margin-top: 4px;
+}
+.bs-collocation-sheet-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.bs-gr-point--compact {
+  font-size: 18px;
+  padding: 10px 14px;
+  margin-bottom: 12px;
+}
+
+.bs-gr-exercise-block {
+  margin-top: 8px;
+}
+.bs-gr-exercise-q {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--bs-ink);
+  line-height: 1.55;
+  margin: 12px 0 14px;
+}
+.bs-gr-exercise-feedback {
+  margin-top: 14px;
+}
+.bs-gr-exercise-expl {
+  font-size: 13.5px;
+  color: var(--bs-ink-2);
+  line-height: 1.6;
+  margin-top: 8px;
+  padding: 10px 12px;
+  background: var(--bs-green-50);
+  border-radius: 10px;
+  border: 1px solid var(--bs-green-100);
+}
+.bs-gr-exercise-expl--wrong {
+  background: #fff8e6;
+  border-color: #f5d78e;
+}
+.bs-gr-fill {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.bs-gr-fill-input {
+  width: 100%;
+  font-family: var(--bs-ui);
+  font-size: 15px;
+  padding: 12px 14px;
+  border: 1px solid var(--bs-line);
+  border-radius: 12px;
+  background: #fff;
+}
+.bs-gr-fill-input:focus {
+  outline: none;
+  border-color: var(--bs-green);
+  box-shadow: 0 0 0 2px var(--bs-green-50);
+}
