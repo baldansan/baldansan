@@ -26,6 +26,16 @@ export function orderedSkillsForTest(test: MockTestRow): MockTestSkill[] {
   return MOCK_TEST_SKILL_ORDER.filter((skill) => present.has(skill));
 }
 
+export function parseMockTestSkill(
+  value: string | null | undefined,
+  fallback: MockTestSkill = "listening"
+): MockTestSkill {
+  if (value === "listening" || value === "reading" || value === "writing") {
+    return value;
+  }
+  return fallback;
+}
+
 function defaultMinutesForLevel(
   hskLevel: number,
   skill: string
