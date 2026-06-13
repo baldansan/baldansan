@@ -245,7 +245,6 @@ export default function LessonPathPlayer({
             lesson={lessonContent}
             quizQuestions={quizQuestions}
             useDatabaseQuizOptions={useDatabaseQuizOptions}
-            freshStart
             onFinished={handleQuizFinished}
           />
         );

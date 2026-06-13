@@ -1,4 +1,8 @@
 import type { MockTestAnswers, MockTestQuestionRow } from "@/lib/mock-test/types";
+import {
+  isMockSentenceOrderQuestion,
+  parseSentenceOrderTokens,
+} from "@/lib/mock-test/sentence-order";
 
 const JUDGE_VALUES = ["√", "×"] as const;
 const FILL_SAMPLES = ["测", "试", "好", "的", "我", "是"];
@@ -38,7 +42,12 @@ export function buildRandomMockTestAnswers(
         break;
       case "complete":
       case "fill_char":
-        answers[key] = pickRandom(FILL_SAMPLES);
+        if (isMockSentenceOrderQuestion(question)) {
+          const tokens = parseSentenceOrderTokens(question);
+          answers[key] = [...tokens].sort(() => Math.random() - 0.5).join("");
+        } else {
+          answers[key] = pickRandom(FILL_SAMPLES);
+        }
         break;
       case "picture_sentence":
       case "essay":

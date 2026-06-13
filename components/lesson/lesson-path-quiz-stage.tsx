@@ -1,11 +1,15 @@
 "use client";
 
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { LessonStepQuiz } from "@/components/lesson-player/lesson-step-quiz";
+import "@/components/lesson/modules/exercises-module.css";
 import {
   clearBsQuizProgress,
+  countQuizAnswered,
   getBsQuizProgress,
+  hasBsQuizSavedProgress,
   saveBsQuizProgress,
+  type BsQuizStepProgress,
 } from "@/lib/lesson/bs-step-progress";
 import { prepareLessonQuizQuestions } from "@/lib/quiz/smart-options";
 import { resolveKoreanTtsLang } from "@/lib/lesson/teaching-media";
@@ -17,17 +21,23 @@ type Props = {
   lesson: LessonContent;
   quizQuestions: QuizQuestion[];
   useDatabaseQuizOptions?: boolean;
-  /** Lesson path: always start from question 1 (ignore stale localStorage). */
-  freshStart?: boolean;
   onFinished: () => void;
 };
+
+type Phase = "overview" | "active";
+
+function resultsFromSaved(
+  raw: Record<string, "ok" | "no"> | undefined
+): Record<string, "ok" | "no"> {
+  if (!raw) return {};
+  return { ...raw };
+}
 
 export function LessonPathQuizStage({
   lessonId,
   lesson,
   quizQuestions: quizQuestionsProp,
   useDatabaseQuizOptions = false,
-  freshStart = false,
   onFinished,
 }: Props) {
   const quizQuestions = useMemo(
@@ -41,52 +51,99 @@ export function LessonPathQuizStage({
   const total = quizQuestions.length;
   const ttsLang = resolveKoreanTtsLang(lesson);
 
+  const [phase, setPhase] = useState<Phase>("overview");
+  const savedProgressRef = useRef<BsQuizStepProgress | null>(null);
+  const [hydrated, setHydrated] = useState(false);
+
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selected, setSelected] = useState<string | null>(null);
   const [revealed, setRevealed] = useState(false);
   const [correctCount, setCorrectCount] = useState(0);
   const [finished, setFinished] = useState(false);
-  const [hydrated, setHydrated] = useState(false);
+  const [resultsByIndex, setResultsByIndex] = useState<
+    Record<string, "ok" | "no">
+  >({});
+
+  const overviewAnswered = useMemo(
+    () => Object.keys(resultsByIndex).length,
+    [resultsByIndex]
+  );
+  const canContinueFromOverview = hasBsQuizSavedProgress(lessonId);
+  const overviewSaved = savedProgressRef.current;
 
   useEffect(() => {
-    if (freshStart) {
-      clearBsQuizProgress(lessonId);
-      setCurrentIndex(0);
-      setSelected(null);
-      setRevealed(false);
-      setCorrectCount(0);
-      setFinished(false);
-      setHydrated(true);
-      return;
-    }
-    const saved = getBsQuizProgress(lessonId);
-    if (saved?.finished && total > 0) {
-      setCurrentIndex(Math.min(saved.currentIndex, total - 1));
-      setCorrectCount(saved.correctCount);
-      setFinished(true);
-    } else if (saved && total > 0) {
-      setCurrentIndex(Math.min(saved.currentIndex, total - 1));
-      setCorrectCount(saved.correctCount);
+    savedProgressRef.current = getBsQuizProgress(lessonId);
+    if (savedProgressRef.current?.resultsByIndex) {
+      setResultsByIndex(resultsFromSaved(savedProgressRef.current.resultsByIndex));
     }
     setHydrated(true);
-  }, [lessonId, total, freshStart]);
+  }, [lessonId]);
 
   const persist = useCallback(
-    (patch: {
-      currentIndex: number;
-      correctCount: number;
-      finished: boolean;
-    }) => {
+    (
+      patch: {
+        currentIndex: number;
+        correctCount: number;
+        finished: boolean;
+      },
+      results?: Record<string, "ok" | "no">
+    ) => {
+      const nextResults = results ?? resultsByIndex;
       saveBsQuizProgress(lessonId, {
         currentIndex: patch.currentIndex,
         correctCount: patch.correctCount,
-        answeredCount: patch.currentIndex + (patch.finished ? 1 : 0),
+        answeredCount: Object.keys(nextResults).length,
         finished: patch.finished,
         completed: patch.finished,
+        resultsByIndex: nextResults,
       });
+      savedProgressRef.current = getBsQuizProgress(lessonId);
     },
-    [lessonId]
+    [lessonId, resultsByIndex]
   );
+
+  function applySavedProgress(saved: BsQuizStepProgress) {
+    const nextIndex = Math.min(Math.max(0, saved.currentIndex), total - 1);
+    setCurrentIndex(nextIndex);
+    setCorrectCount(saved.correctCount);
+    setFinished(saved.finished);
+    setResultsByIndex(resultsFromSaved(saved.resultsByIndex));
+    setSelected(null);
+    setRevealed(false);
+  }
+
+  function startFresh() {
+    clearBsQuizProgress(lessonId);
+    savedProgressRef.current = null;
+    setCurrentIndex(0);
+    setSelected(null);
+    setRevealed(false);
+    setCorrectCount(0);
+    setFinished(false);
+    setResultsByIndex({});
+    setPhase("active");
+  }
+
+  function continueFromSaved() {
+    const saved = savedProgressRef.current;
+    if (!saved) return;
+    applySavedProgress(saved);
+    setPhase("active");
+  }
+
+  function jumpToQuestion(index: number) {
+    if (index < 0 || index >= total) return;
+    const saved = savedProgressRef.current;
+    if (saved) {
+      applySavedProgress({ ...saved, currentIndex: index, finished: false });
+    } else {
+      setCurrentIndex(index);
+      setSelected(null);
+      setRevealed(false);
+      setFinished(false);
+    }
+    setPhase("active");
+  }
 
   const current = quizQuestions[currentIndex];
 
@@ -100,16 +157,26 @@ export function LessonPathQuizStage({
     if (!revealed || !current) return;
     const gained = selected === current.correctAnswer ? 1 : 0;
     const nextCorrect = correctCount + gained;
+    const resultKey = String(currentIndex);
+    const nextResults: Record<string, "ok" | "no"> = {
+      ...resultsByIndex,
+      [resultKey]: selected === current.correctAnswer ? "ok" : "no",
+    };
+    setResultsByIndex(nextResults);
+
     const isLast = currentIndex >= total - 1;
 
     if (isLast) {
       setCorrectCount(nextCorrect);
       setFinished(true);
-      persist({
-        currentIndex,
-        correctCount: nextCorrect,
-        finished: true,
-      });
+      persist(
+        {
+          currentIndex,
+          correctCount: nextCorrect,
+          finished: true,
+        },
+        nextResults
+      );
       onFinished();
       return;
     }
@@ -119,11 +186,14 @@ export function LessonPathQuizStage({
     setCurrentIndex(nextIndex);
     setSelected(null);
     setRevealed(false);
-    persist({
-      currentIndex: nextIndex,
-      correctCount: nextCorrect,
-      finished: false,
-    });
+    persist(
+      {
+        currentIndex: nextIndex,
+        correctCount: nextCorrect,
+        finished: false,
+      },
+      nextResults
+    );
   }
 
   if (!hydrated) {
@@ -141,6 +211,78 @@ export function LessonPathQuizStage({
           Энэ хичээлд сорил байхгүй байна.
         </p>
       </div>
+    );
+  }
+
+  if (phase === "overview") {
+    const savedAnswered = overviewSaved
+      ? countQuizAnswered(overviewSaved)
+      : overviewAnswered;
+
+    return (
+      <>
+        <div className="bs-card bs-ex">
+          <div className="bs-vtop">
+            <div className="bs-label" style={{ margin: 0 }}>
+              <span className="bs-dot" />
+              Сорил
+            </div>
+            <span className="bs-counter">
+              {savedAnswered} / {total} хариулсан
+            </span>
+          </div>
+          <p className="bs-ex-overview-hint">
+            Сорилын тойм — ногоон зөв, улаан буруу, саарал хийгээгүй. Асуулт дээр дарж тэндээс эхлэх боломжтой.
+          </p>
+          <nav className="bs-ex-nav bs-ex-overview-nav" aria-label="Сорилын тойм">
+            {quizQuestions.map((_, index) => {
+              const result = resultsByIndex[String(index)];
+              const cls = [
+                "bs-ex-nav-btn",
+                result === "ok" ? "bs-done-ok" : "",
+                result === "no" ? "bs-done-no" : "",
+              ]
+                .filter(Boolean)
+                .join(" ");
+              return (
+                <button
+                  key={index}
+                  type="button"
+                  className={cls}
+                  aria-label={`Асуулт ${index + 1}`}
+                  onClick={() => jumpToQuestion(index)}
+                >
+                  {index + 1}
+                </button>
+              );
+            })}
+          </nav>
+          {overviewSaved?.finished ? (
+            <p className="bs-ex-overview-status">
+              Өмнө дууссан: {overviewSaved.correctCount}/{total} зөв
+            </p>
+          ) : savedAnswered > 0 ? (
+            <p className="bs-ex-overview-status">
+              {savedAnswered} / {total} асуулт хариулсан
+            </p>
+          ) : null}
+        </div>
+        <button
+          type="button"
+          className="bs-cta bs-path-visible-cta"
+          onClick={startFresh}
+        >
+          Эхнээс эхлэх
+        </button>
+        <button
+          type="button"
+          className="bs-cta bs-cta-secondary bs-path-visible-cta"
+          onClick={continueFromSaved}
+          disabled={!canContinueFromOverview}
+        >
+          Үргэлжлүүлэх
+        </button>
+      </>
     );
   }
 
