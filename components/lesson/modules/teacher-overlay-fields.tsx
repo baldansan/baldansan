@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { resolveTeacherCheckAnswer } from "@/lib/lesson/teacher-check-quiz";
+import { MnGrammarTermText } from "@/components/lesson/mn-grammar-term-text";
 import type { HskTeacherOverlayFields } from "@/types/hsk-lesson-package";
 import "./teacher-overlay.css";
 
@@ -22,7 +23,9 @@ export function TeacherNotesBlock({ notes }: { notes: string }) {
       <span className="bs-tov-notes-icon" aria-hidden>💡</span>
       <div>
         <p className="bs-tov-notes-title">Багшийн зөвлөгөө</p>
-        <p className="bs-tov-notes-body">{notes}</p>
+        <p className="bs-tov-notes-body">
+          <MnGrammarTermText text={notes} />
+        </p>
       </div>
     </div>
   );
@@ -47,7 +50,11 @@ export function TeacherCommonMistakesSection({
               <span className="bs-tov-mistake-tag">✓</span>
               <span>{row.right}</span>
             </div>
-            {row.why ? <p className="bs-tov-mistake-why">{row.why}</p> : null}
+            {row.why ? (
+              <p className="bs-tov-mistake-why">
+                <MnGrammarTermText text={row.why} />
+              </p>
+            ) : null}
           </div>
         ))}
       </div>
@@ -68,7 +75,9 @@ export function TeacherCheckQuizSection({
   return (
     <div className="bs-tov-check">
       <p className="bs-tov-section-title">Шалгаад үз</p>
-      <p className="bs-tov-check-q">{check.question}</p>
+      <p className="bs-tov-check-q">
+        <MnGrammarTermText text={check.question} />
+      </p>
       <div className="bs-tov-check-opts">
         {check.options.map((opt) => {
           const isPicked = picked === opt;
@@ -85,14 +94,14 @@ export function TeacherCheckQuizSection({
               disabled={answered}
               onClick={() => setPicked(opt)}
             >
-              {opt}
+              <MnGrammarTermText text={opt} nested />
             </button>
           );
         })}
       </div>
       {answered && !correct ? (
         <p className="bs-tov-check-feedback bs-tov-check-feedback--bad">
-          Зөв хариулт: {resolvedAnswer}
+          Зөв хариулт: <MnGrammarTermText text={resolvedAnswer} nested />
         </p>
       ) : null}
       {answered && correct ? (

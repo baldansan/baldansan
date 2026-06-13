@@ -471,10 +471,23 @@ export function exerciseSourceHasPlayerContent(
   return countGradableExerciseQuestions(buildExerciseQuestions(lesson, source)) > 0;
 }
 
+export type ExercisePracticeSource = "textbook" | "workbook" | "both";
+
+/** Textbook + workbook steps for lesson-path practice (listening + шалгалтын дасгал). */
+export function buildMergedExerciseQuestions(lesson: HskLessonPackage): ExerciseQuestion[] {
+  return [
+    ...buildExerciseQuestions(lesson, "textbook"),
+    ...buildExerciseQuestions(lesson, "workbook"),
+  ];
+}
+
 export function resolveExercisePracticeSource(
   lesson: HskLessonPackage
-): "textbook" | "workbook" | null {
-  if (exerciseSourceHasPlayerContent(lesson, "textbook")) return "textbook";
-  if (exerciseSourceHasPlayerContent(lesson, "workbook")) return "workbook";
+): ExercisePracticeSource | null {
+  const hasTextbook = exerciseSourceHasPlayerContent(lesson, "textbook");
+  const hasWorkbook = exerciseSourceHasPlayerContent(lesson, "workbook");
+  if (hasTextbook && hasWorkbook) return "both";
+  if (hasTextbook) return "textbook";
+  if (hasWorkbook) return "workbook";
   return null;
 }

@@ -13,6 +13,7 @@ import {
 } from "./teacher-overlay-fields";
 import { CollocationsSection } from "./CollocationsSection";
 import { GrammarPointExercises } from "./GrammarPointExercises";
+import { MnGrammarTermText } from "@/components/lesson/mn-grammar-term-text";
 import "./grammar-module.css";
 import "./teacher-overlay.css";
 import "./exercises-module.css";
@@ -190,8 +191,16 @@ export default function GrammarModule({
         <>
           <div className="bs-gr-point">{point.point}</div>
           {point.structure ? <TeacherStructureBlock structure={point.structure} /> : null}
-          {point.gloss_mn && <div className="bs-gr-gloss">{point.gloss_mn}</div>}
-          {point.teacher_mn && <div className="bs-gr-teacher">{point.teacher_mn}</div>}
+          {point.gloss_mn && (
+            <div className="bs-gr-gloss">
+              <MnGrammarTermText text={point.gloss_mn} />
+            </div>
+          )}
+          {point.teacher_mn && (
+            <div className="bs-gr-teacher">
+              <MnGrammarTermText text={point.teacher_mn} />
+            </div>
+          )}
 
           <TeacherOverlayFields
             teacher_notes={point.teacher_notes}
@@ -237,7 +246,9 @@ export default function GrammarModule({
                   <div className="bs-gr-ex-tx">
                     <div className="bs-py">{ex.pinyin}</div>
                     <div className="bs-zh">{ex.zh}</div>
-                    <div className="bs-mn">{ex.mn}</div>
+                    <div className="bs-mn">
+                      <MnGrammarTermText text={ex.mn} />
+                    </div>
                   </div>
                   <button
                     type="button"

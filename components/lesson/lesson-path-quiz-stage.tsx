@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { LessonStepQuiz } from "@/components/lesson-player/lesson-step-quiz";
 import {
+  clearBsQuizProgress,
   getBsQuizProgress,
   saveBsQuizProgress,
 } from "@/lib/lesson/bs-step-progress";
@@ -16,6 +17,8 @@ type Props = {
   lesson: LessonContent;
   quizQuestions: QuizQuestion[];
   useDatabaseQuizOptions?: boolean;
+  /** Lesson path: always start from question 1 (ignore stale localStorage). */
+  freshStart?: boolean;
   onFinished: () => void;
 };
 
@@ -24,6 +27,7 @@ export function LessonPathQuizStage({
   lesson,
   quizQuestions: quizQuestionsProp,
   useDatabaseQuizOptions = false,
+  freshStart = false,
   onFinished,
 }: Props) {
   const quizQuestions = useMemo(
@@ -45,6 +49,16 @@ export function LessonPathQuizStage({
   const [hydrated, setHydrated] = useState(false);
 
   useEffect(() => {
+    if (freshStart) {
+      clearBsQuizProgress(lessonId);
+      setCurrentIndex(0);
+      setSelected(null);
+      setRevealed(false);
+      setCorrectCount(0);
+      setFinished(false);
+      setHydrated(true);
+      return;
+    }
     const saved = getBsQuizProgress(lessonId);
     if (saved?.finished && total > 0) {
       setCurrentIndex(Math.min(saved.currentIndex, total - 1));
@@ -55,7 +69,7 @@ export function LessonPathQuizStage({
       setCorrectCount(saved.correctCount);
     }
     setHydrated(true);
-  }, [lessonId, total]);
+  }, [lessonId, total, freshStart]);
 
   const persist = useCallback(
     (patch: {

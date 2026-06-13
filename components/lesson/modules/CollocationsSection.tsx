@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import SpeakButton from "@/components/lesson/SpeakButton";
+import { MnGrammarTermText } from "@/components/lesson/mn-grammar-term-text";
 import type { HskPackageCollocation } from "@/types/hsk-lesson-package";
 
 type Props = {
@@ -32,7 +33,9 @@ export function CollocationsSection({ collocations }: Props) {
             >
               <span className="bs-collocation-zh">{item.zh}</span>
               {item.mn ? (
-                <span className="bs-collocation-mn-preview">{item.mn}</span>
+                <span className="bs-collocation-mn-preview">
+                  <MnGrammarTermText text={item.mn} />
+                </span>
               ) : null}
             </button>
           </li>
@@ -50,10 +53,14 @@ export function CollocationsSection({ collocations }: Props) {
           >
             <p className="bs-collocation-sheet-zh">{openItem.zh}</p>
             {openItem.mn ? (
-              <p className="bs-collocation-sheet-mn">{openItem.mn}</p>
+              <p className="bs-collocation-sheet-mn">
+                <MnGrammarTermText text={openItem.mn} />
+              </p>
             ) : null}
             {openItem.usage_mn ? (
-              <p className="bs-collocation-sheet-usage">{openItem.usage_mn}</p>
+              <p className="bs-collocation-sheet-usage">
+                <MnGrammarTermText text={openItem.usage_mn} />
+              </p>
             ) : null}
             {openItem.example?.zh ? (
               <div className="bs-collocation-example">
@@ -65,7 +72,9 @@ export function CollocationsSection({ collocations }: Props) {
                   <p className="bs-collocation-example-py">{openItem.example.pinyin}</p>
                 ) : null}
                 {openItem.example.mn ? (
-                  <p className="bs-collocation-example-mn">{openItem.example.mn}</p>
+                  <p className="bs-collocation-example-mn">
+                    <MnGrammarTermText text={openItem.example.mn} />
+                  </p>
                 ) : null}
               </div>
             ) : null}

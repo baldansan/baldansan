@@ -5,6 +5,7 @@ import {
   grammarExerciseAnswerLabel,
   isGrammarExerciseCorrect,
 } from "@/lib/lesson/grammar-exercise";
+import { MnGrammarTermText } from "@/components/lesson/mn-grammar-term-text";
 import type { HskPackageGrammarExercise } from "@/types/hsk-lesson-package";
 
 type Props = {
@@ -77,7 +78,9 @@ export function GrammarPointExercises({ exercises, onComplete }: Props) {
         Дасгал ({ei + 1}/{total})
       </div>
 
-      <p className="bs-gr-exercise-q">{ex.question}</p>
+      <p className="bs-gr-exercise-q">
+        <MnGrammarTermText text={ex.question} />
+      </p>
 
       {ex.type === "choice" && ex.options ? (
         <div className="bs-tov-check-opts">
@@ -96,7 +99,7 @@ export function GrammarPointExercises({ exercises, onComplete }: Props) {
                 disabled={answered}
                 onClick={() => submitChoice(opt)}
               >
-                {opt}
+                <MnGrammarTermText text={opt} nested />
               </button>
             );
           })}
@@ -159,22 +162,25 @@ export function GrammarPointExercises({ exercises, onComplete }: Props) {
             <>
               <p className="bs-tov-check-feedback bs-tov-check-feedback--ok">Зөв!</p>
               {ex.explanation_correct_mn ? (
-                <p className="bs-gr-exercise-expl">{ex.explanation_correct_mn}</p>
+                <p className="bs-gr-exercise-expl">
+                  <MnGrammarTermText text={ex.explanation_correct_mn} />
+                </p>
               ) : null}
             </>
           ) : (
             <>
               <p className="bs-tov-check-feedback bs-tov-check-feedback--bad">
-                Буруу. Зөв хариулт: {answerLabel}
+                Буруу. Зөв хариулт:{" "}
+                <MnGrammarTermText text={answerLabel} nested />
               </p>
               {ex.explanation_wrong_mn ? (
                 <p className="bs-gr-exercise-expl bs-gr-exercise-expl--wrong">
-                  {ex.explanation_wrong_mn}
+                  <MnGrammarTermText text={ex.explanation_wrong_mn} />
                 </p>
               ) : null}
               {ex.explanation_correct_mn ? (
                 <p className="bs-gr-exercise-expl">
-                  {ex.explanation_correct_mn}
+                  <MnGrammarTermText text={ex.explanation_correct_mn} />
                 </p>
               ) : null}
             </>

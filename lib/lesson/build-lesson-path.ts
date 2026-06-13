@@ -1,5 +1,8 @@
 import { moduleHasContent } from "@/lib/lesson/resolve-hsk-lesson-package";
-import { resolveExercisePracticeSource } from "@/lib/lesson/build-exercise-questions";
+import {
+  resolveExercisePracticeSource,
+  type ExercisePracticeSource,
+} from "@/lib/lesson/build-exercise-questions";
 import type { HskLessonPackage } from "@/types/hsk-lesson-package";
 import type { QuizQuestion } from "@/types/lesson";
 
@@ -124,7 +127,7 @@ export type LessonPathPlan = {
   /** Extra modules folded into stage 1 (dialogues, pronunciation) */
   warmupExtras: ("dialogues" | "pronunciation")[];
   /** Exercise source for stage 5 */
-  practiceSource: "textbook" | "workbook" | null;
+  practiceSource: ExercisePracticeSource | null;
 };
 
 export function buildLessonPathPlan(

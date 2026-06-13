@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { MnGrammarTermText } from "@/components/lesson/mn-grammar-term-text";
 import {
   CHINESE_SENTENCE_STRUCTURE_INTRO,
   CHINESE_SENTENCE_STRUCTURE_QUIZ,
@@ -63,7 +64,9 @@ export function SentenceStructureGate({ onPassed }: Props) {
 
       <ul className="bs-sentence-gate-bullets">
         {CHINESE_SENTENCE_STRUCTURE_INTRO.bullets.map((line) => (
-          <li key={line}>{line}</li>
+          <li key={line}>
+            <MnGrammarTermText text={line} />
+          </li>
         ))}
       </ul>
 
@@ -71,7 +74,9 @@ export function SentenceStructureGate({ onPassed }: Props) {
         <p className="bs-tov-section-title">
           Мини-сорил ({qi + 1}/{total})
         </p>
-        <p className="bs-tov-check-q">{item.question}</p>
+        <p className="bs-tov-check-q">
+          <MnGrammarTermText text={item.question} />
+        </p>
         <div className="bs-tov-check-opts">
           {item.options.map((opt) => {
             const isPicked = picked === opt;
@@ -88,14 +93,14 @@ export function SentenceStructureGate({ onPassed }: Props) {
                 disabled={answered}
                 onClick={() => pickOption(opt)}
               >
-                {opt}
+                <MnGrammarTermText text={opt} nested />
               </button>
             );
           })}
         </div>
         {answered && !isCorrect ? (
           <p className="bs-tov-check-feedback bs-tov-check-feedback--bad">
-            Зөв хариулт: {item.answer}
+            Зөв хариулт: <MnGrammarTermText text={item.answer} nested />
           </p>
         ) : null}
         {answered && isCorrect ? (
