@@ -1,12 +1,12 @@
 import { NextResponse } from "next/server";
 import { revalidatePath } from "next/cache";
 import { revalidateBichlegPages } from "@/lib/bichleg/revalidate";
-import { getAdminBichlegSupabaseClient } from "@/lib/supabase/admin-bichleg-client";
+import { getAdminServiceRoleSupabaseClient } from "@/lib/supabase/admin-service-role-client";
 
 type RouteContext = { params: Promise<{ videoId: string }> };
 
-async function requireAdminBichlegClient() {
-  const result = await getAdminBichlegSupabaseClient();
+async function requireAdminServiceRoleClient() {
+  const result = await getAdminServiceRoleSupabaseClient();
   if (!result.ok) {
     return NextResponse.json(
       { ok: false, error: result.error },
@@ -17,7 +17,7 @@ async function requireAdminBichlegClient() {
 }
 
 export async function PATCH(request: Request, context: RouteContext) {
-  const clientOrResponse = await requireAdminBichlegClient();
+  const clientOrResponse = await requireAdminServiceRoleClient();
   if (clientOrResponse instanceof NextResponse) return clientOrResponse;
 
   const { videoId } = await context.params;
@@ -69,7 +69,7 @@ export async function PATCH(request: Request, context: RouteContext) {
 }
 
 export async function DELETE(_request: Request, context: RouteContext) {
-  const clientOrResponse = await requireAdminBichlegClient();
+  const clientOrResponse = await requireAdminServiceRoleClient();
   if (clientOrResponse instanceof NextResponse) return clientOrResponse;
 
   const { videoId } = await context.params;

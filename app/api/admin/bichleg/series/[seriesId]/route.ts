@@ -2,12 +2,12 @@ import { NextResponse } from "next/server";
 import { revalidatePath } from "next/cache";
 import { revalidateBichlegPages } from "@/lib/bichleg/revalidate";
 import { fetchAdminSeriesEpisodes } from "@/lib/admin/bichleg-admin-server";
-import { getAdminBichlegSupabaseClient } from "@/lib/supabase/admin-bichleg-client";
+import { getAdminServiceRoleSupabaseClient } from "@/lib/supabase/admin-service-role-client";
 
 type RouteContext = { params: Promise<{ seriesId: string }> };
 
-async function requireAdminBichlegClient() {
-  const result = await getAdminBichlegSupabaseClient();
+async function requireAdminServiceRoleClient() {
+  const result = await getAdminServiceRoleSupabaseClient();
   if (!result.ok) {
     return NextResponse.json(
       { ok: false, error: result.error },
@@ -18,7 +18,7 @@ async function requireAdminBichlegClient() {
 }
 
 export async function GET(_request: Request, context: RouteContext) {
-  const clientOrResponse = await requireAdminBichlegClient();
+  const clientOrResponse = await requireAdminServiceRoleClient();
   if (clientOrResponse instanceof NextResponse) return clientOrResponse;
 
   const { seriesId } = await context.params;
@@ -35,7 +35,7 @@ export async function GET(_request: Request, context: RouteContext) {
 }
 
 export async function DELETE(request: Request, context: RouteContext) {
-  const clientOrResponse = await requireAdminBichlegClient();
+  const clientOrResponse = await requireAdminServiceRoleClient();
   if (clientOrResponse instanceof NextResponse) return clientOrResponse;
 
   const { seriesId } = await context.params;

@@ -734,6 +734,9 @@ function resolvePackageAudioBasePath(
   lesson: LessonContent,
   pkg: HskLessonPackage
 ): string | undefined {
+  if (trim(lesson.courseId).toLowerCase() === "hsk5") {
+    return undefined;
+  }
   const publicBase = buildLessonPackageAudioPublicBase(
     lesson.courseId,
     resolveStorageLessonIdForAudio(lesson)
