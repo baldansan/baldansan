@@ -32,6 +32,7 @@ function formatDate(iso: string): string {
 }
 
 const STAGE_LABEL: Record<string, string> = {
+  grammar: "Дүрэм",
   grammar_exercise: "Дүрэм/дасгал",
   quiz: "Сорил",
   mock_exam: "Mock",
@@ -212,41 +213,81 @@ export function LearnerDetailView({ learners, detail }: Props) {
         )}
       </section>
 
-      <section className="admin-panel overflow-x-auto p-0">
-        <h3 className="border-b border-slate-100 px-4 py-3 text-sm font-semibold">
-          Хэлзүй — хамгийн их андуурсан даалгавар
-        </h3>
-        {detail.helzuiHardSpots.length === 0 ? (
-          <p className="px-4 py-6 text-sm text-slate-500">
-            Хэлзүйн суурь курсын өөрийн үнэлгээний өгөгдөл байхгүй.
-          </p>
-        ) : (
-          <table className="admin-table w-full min-w-[720px] text-sm">
-            <thead>
-              <tr>
-                <th>Модуль</th>
-                <th>Өгүүлбэр</th>
-                <th>Оролдлого</th>
-                <th>Андуурсан</th>
-                <th>Андуурсан %</th>
-              </tr>
-            </thead>
-            <tbody>
-              {detail.helzuiHardSpots.map((row) => (
-                <tr key={row.questionId}>
-                  <td>{row.moduleTitle}</td>
-                  <td className="zh text-base font-semibold">{row.sentenceZh}</td>
-                  <td className="text-center">{row.totalAttempts}</td>
-                  <td className="text-center font-bold text-red-600">
-                    {row.wrongCount}
-                  </td>
-                  <td className="text-center font-bold">{row.wrongPct}%</td>
+      <div className="grid gap-6 lg:grid-cols-2">
+        <section className="admin-panel overflow-x-auto p-0">
+          <h3 className="border-b border-slate-100 px-4 py-3 text-sm font-semibold">
+            Дүрэм — хамгийн их андуурсан
+          </h3>
+          {detail.grammarHardSpots.length === 0 ? (
+            <p className="px-4 py-6 text-sm text-slate-500">
+              HSK дүрмийн дасгалын өгөгдөл байхгүй.
+            </p>
+          ) : (
+            <table className="admin-table w-full min-w-[560px] text-sm">
+              <thead>
+                <tr>
+                  <th>Хичээл</th>
+                  <th>Дүрмийн цэг</th>
+                  <th>Асуулт</th>
+                  <th>Оролд.</th>
+                  <th>Андуурсан</th>
+                  <th>%</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
-        )}
-      </section>
+              </thead>
+              <tbody>
+                {detail.grammarHardSpots.map((row) => (
+                  <tr key={`${row.lessonId}-${row.questionId}`}>
+                    <td className="font-mono text-xs">{row.lessonId}</td>
+                    <td>{row.pointLabel}</td>
+                    <td>{row.questionLabel}</td>
+                    <td className="text-center">{row.totalAttempts}</td>
+                    <td className="text-center font-bold text-red-600">
+                      {row.wrongCount}
+                    </td>
+                    <td className="text-center font-bold">{row.wrongPct}%</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          )}
+        </section>
+
+        <section className="admin-panel overflow-x-auto p-0">
+          <h3 className="border-b border-slate-100 px-4 py-3 text-sm font-semibold">
+            Хэлзүй — хамгийн их андуурсан даалгавар
+          </h3>
+          {detail.helzuiHardSpots.length === 0 ? (
+            <p className="px-4 py-6 text-sm text-slate-500">
+              Хэлзүйн суурь курсын өөрийн үнэлгээний өгөгдөл байхгүй.
+            </p>
+          ) : (
+            <table className="admin-table w-full min-w-[560px] text-sm">
+              <thead>
+                <tr>
+                  <th>Модуль</th>
+                  <th>Өгүүлбэр</th>
+                  <th>Оролд.</th>
+                  <th>Андуурсан</th>
+                  <th>%</th>
+                </tr>
+              </thead>
+              <tbody>
+                {detail.helzuiHardSpots.map((row) => (
+                  <tr key={row.questionId}>
+                    <td>{row.moduleTitle}</td>
+                    <td className="zh text-base font-semibold">{row.sentenceZh}</td>
+                    <td className="text-center">{row.totalAttempts}</td>
+                    <td className="text-center font-bold text-red-600">
+                      {row.wrongCount}
+                    </td>
+                    <td className="text-center font-bold">{row.wrongPct}%</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          )}
+        </section>
+      </div>
 
       <section className="admin-panel overflow-x-auto p-0">
         <h3 className="border-b border-slate-100 px-4 py-3 text-sm font-semibold">

@@ -6,6 +6,7 @@ import { getAuthenticatedUserId } from "@/lib/supabase/auth";
 import { hasSupabaseConfig, supabase } from "@/lib/supabase/client";
 
 export type QuestionAttemptStage =
+  | "grammar"
   | "grammar_exercise"
   | "quiz"
   | "mock_exam"

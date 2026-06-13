@@ -616,6 +616,7 @@ function mapGrammar(raw: unknown): HskPackageGrammarPoint[] {
 
     points.push({
       point: point || `Grammar ${index + 1}`,
+      pinyin: trim(item.pinyin) || undefined,
       gloss_mn: gloss || point,
       teacher_mn: teacher || gloss || point,
       examples,
@@ -659,6 +660,7 @@ function normalizeGrammarPoints(raw: unknown): HskPackageGrammarPoint[] {
         `Grammar ${index + 1}`;
       return {
         point,
+        pinyin: trim(item.pinyin) || undefined,
         gloss_mn: trim(item.gloss_mn) || trim(item.glossMn) || point,
         teacher_mn:
           trim(item.teacher_mn) ||

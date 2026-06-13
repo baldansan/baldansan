@@ -1,5 +1,9 @@
 import "server-only";
 
+import {
+  formatGrammarAttemptPointLabel,
+  formatGrammarAttemptQuestionLabel,
+} from "@/lib/grammar/grammar-attempt-label";
 import { HELZUI_COURSE_ID, getHelzuiQuestionMeta } from "@/lib/helzui/question-lookup";
 import { createServerSupabaseClient } from "@/lib/supabase/server";
 import { hasSupabaseConfig } from "@/lib/supabase/client";
@@ -54,6 +58,16 @@ export type HelzuiHardSpot = {
   wrongPct: number;
 };
 
+export type GrammarHardSpot = {
+  lessonId: string;
+  pointLabel: string;
+  questionLabel: string;
+  questionId: string;
+  totalAttempts: number;
+  wrongCount: number;
+  wrongPct: number;
+};
+
 export type LearnerDetailData = {
   userId: string;
   completedLessons: number;
@@ -68,6 +82,7 @@ export type LearnerDetailData = {
   recentAttempts: LearnerAttemptRow[];
   hardSpots: LearnerHardSpot[];
   helzuiHardSpots: HelzuiHardSpot[];
+  grammarHardSpots: GrammarHardSpot[];
   feedback: LearnerFeedbackRow[];
   warnings: string[];
 };
@@ -138,12 +153,13 @@ export async function getLearnerDetail(
       recentAttempts: [],
       hardSpots: [],
       helzuiHardSpots: [],
+      grammarHardSpots: [],
       feedback: [],
       warnings: ["Одоогоор бүртгэгдсэн суралцагчийн оролдлого байхгүй."],
     };
   }
 
-  const [progressRes, srsRes, mockRes, attemptsRes, helzuiAttemptsRes, feedbackRes] =
+  const [progressRes, srsRes, mockRes, attemptsRes, helzuiAttemptsRes, grammarAttemptsRes, feedbackRes] =
     await Promise.all([
       client
         .from("user_lesson_progress")
@@ -173,6 +189,11 @@ export async function getLearnerDetail(
         .eq("user_id", userId)
         .eq("lesson_id", HELZUI_COURSE_ID),
       client
+        .from("question_attempts")
+        .select("lesson_id, question_id, is_correct")
+        .eq("user_id", userId)
+        .eq("stage", "grammar"),
+      client
         .from("feedback")
         .select(
           "id, lesson_id, stage, question_id, rating, note, page_path, created_at"
@@ -187,6 +208,7 @@ export async function getLearnerDetail(
   if (mockRes.error) warnings.push(mockRes.error.message);
   if (attemptsRes.error) warnings.push(attemptsRes.error.message);
   if (helzuiAttemptsRes.error) warnings.push(helzuiAttemptsRes.error.message);
+  if (grammarAttemptsRes.error) warnings.push(grammarAttemptsRes.error.message);
   if (feedbackRes.error) warnings.push(feedbackRes.error.message);
 
   const completedLessons = (progressRes.data ?? []).filter(
@@ -282,6 +304,46 @@ export async function getLearnerDetail(
       return b.wrongCount - a.wrongCount;
     });
 
+  const grammarMap = new Map<
+    string,
+    { lessonId: string; wrongCount: number; totalAttempts: number }
+  >();
+  for (const row of grammarAttemptsRes.data ?? []) {
+    const questionId = String(row.question_id);
+    const lessonId = String(row.lesson_id);
+    const key = `${lessonId}\0${questionId}`;
+    const existing = grammarMap.get(key) ?? {
+      lessonId,
+      wrongCount: 0,
+      totalAttempts: 0,
+    };
+    existing.totalAttempts += 1;
+    if (!row.is_correct) existing.wrongCount += 1;
+    grammarMap.set(key, existing);
+  }
+
+  const grammarHardSpots: GrammarHardSpot[] = [...grammarMap.entries()]
+    .map(([key, stats]) => {
+      const questionId = key.split("\0")[1] ?? key;
+      const wrongPct =
+        stats.totalAttempts > 0
+          ? Math.round((stats.wrongCount / stats.totalAttempts) * 100)
+          : 0;
+      return {
+        lessonId: stats.lessonId,
+        pointLabel: formatGrammarAttemptPointLabel(questionId),
+        questionLabel: formatGrammarAttemptQuestionLabel(questionId),
+        questionId,
+        totalAttempts: stats.totalAttempts,
+        wrongCount: stats.wrongCount,
+        wrongPct,
+      };
+    })
+    .sort((a, b) => {
+      if (b.wrongPct !== a.wrongPct) return b.wrongPct - a.wrongPct;
+      return b.wrongCount - a.wrongCount;
+    });
+
   const feedback: LearnerFeedbackRow[] = (feedbackRes.data ?? []).map((r) => ({
     id: String(r.id),
     lessonId: r.lesson_id ? String(r.lesson_id) : null,
@@ -307,6 +369,7 @@ export async function getLearnerDetail(
     recentAttempts,
     hardSpots,
     helzuiHardSpots,
+    grammarHardSpots,
     feedback,
     warnings,
   };
