@@ -34,6 +34,8 @@ import {
   lessonMatchesActiveHskLevel,
   resolveLessonHskLevel,
 } from "@/lib/hsk/active-hsk-level";
+import { HelzuiHomeCard } from "@/components/helzui/helzui-home-card";
+import "@/components/helzui/helzui-course.css";
 import type { LessonContent } from "@/types/lesson-content";
 
 type Props = {
@@ -300,6 +302,8 @@ export function HomeAppView({ catalog, defaultChipId }: Props) {
           ))}
         </div>
       </section>
+
+      {selectedLang !== "ko" ? <HelzuiHomeCard /> : null}
 
       <div
         className={`app-course-card app-course-card-premium mb-4 p-4 ${activeCourse ? courseCardAccentClass(activeCourse.courseId) : ""}`}

@@ -1,0 +1,174 @@
+/* Хэлзүйн суурь — HTML эталонтой таарсан */
+.hz-course-hero{
+  background:linear-gradient(160deg,#0c2f1d 0%,#0f5230 55%,#107a45 100%);
+  color:#fff;padding:22px 16px 24px;margin:-4px -4px 18px;border-radius:0 0 22px 22px;
+  position:relative;overflow:hidden;
+}
+.hz-course-hero::after{
+  content:"成分";font-family:var(--font-noto-sc),var(--bs-zh),"Noto Sans SC",sans-serif;
+  font-weight:700;position:absolute;right:-6px;bottom:-22px;font-size:96px;
+  color:rgba(255,255,255,.06);line-height:1;pointer-events:none;
+}
+.hz-course-badge{
+  display:inline-flex;align-items:center;gap:7px;
+  background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);
+  padding:5px 12px;border-radius:999px;font-size:12px;font-weight:600;margin-bottom:12px;
+}
+.hz-course-dot{width:7px;height:7px;border-radius:50%;background:#7dffb0;box-shadow:0 0 8px #7dffb0}
+.hz-course-hero-title{margin:0;font-size:24px;font-weight:800;letter-spacing:-.4px}
+.hz-course-hero-sub{margin-top:7px;color:#cfeede;font-size:14px;max-width:540px;line-height:1.5}
+
+.hz-legend{display:flex;flex-wrap:wrap;gap:7px;margin:0 0 14px}
+.hz-chip{
+  display:inline-flex;align-items:center;gap:6px;background:#fff;
+  border:1px solid #e6eee9;padding:5px 10px;border-radius:999px;
+  font-size:12px;font-weight:600;color:#13241b;
+}
+.hz-chip i{width:9px;height:9px;border-radius:3px;display:inline-block}
+
+.hz-meta{
+  font-size:13px;color:#5e6f66;background:#fffbe9;border:1px solid #f5e3b8;
+  border-radius:11px;padding:11px 14px;margin-bottom:18px;line-height:1.5;
+}
+.hz-meta b{color:#13241b}
+
+.hz-module{max-width:760px;margin:0 auto;padding-bottom:28px}
+.hz-mod-eyebrow{
+  display:flex;align-items:center;gap:9px;margin-bottom:6px;
+  font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#018242;
+}
+.hz-mod-num{
+  width:24px;height:24px;border-radius:7px;background:#1FB85A;color:#fff;
+  display:grid;place-items:center;font-size:13px;flex:none;
+}
+.hz-mod-pin{font-family:var(--font-noto-sc),var(--bs-zh),"Noto Sans SC",sans-serif;color:#5e6f66;font-weight:500;letter-spacing:0;text-transform:none}
+.hz-mod-heading{margin:0 0 14px;font-size:21px;font-weight:800;letter-spacing:-.3px;color:#13241b}
+
+.hz-teacher{
+  display:flex;gap:11px;align-items:flex-start;background:#fff;
+  border:1px solid #e6eee9;border-radius:14px;padding:13px 15px;margin:0 0 18px;
+}
+.hz-ava{
+  flex:0 0 36px;width:36px;height:36px;border-radius:50%;background:#1FB85A;
+  display:grid;place-items:center;font-size:18px;
+}
+.hz-t-name{font-weight:700;font-size:12px;color:#018242;margin-bottom:1px}
+.hz-t-txt{font-size:14px;line-height:1.55;color:#13241b}
+
+.hz-block{
+  background:#fff;border:1px solid #e6eee9;border-radius:14px;
+  padding:15px 16px;margin-bottom:12px;
+}
+.hz-block-h{display:flex;align-items:center;gap:8px;font-weight:700;font-size:14px;margin-bottom:11px;color:#13241b}
+.hz-block-ic{font-size:15px}
+.hz-rule{font-size:14px;margin-bottom:11px;padding-left:15px;position:relative;line-height:1.55}
+.hz-rule:last-child{margin-bottom:0}
+.hz-rule::before{
+  content:"";position:absolute;left:0;top:9px;width:6px;height:6px;
+  border-radius:2px;background:#1FB85A;
+}
+.hz-rule-eg{display:block;margin-top:4px;font-size:13px;color:#5e6f66}
+.hz-rule-eg .zh{color:#13241b;font-weight:600}
+
+.hz-marker{background:#fff8e9;border:1px solid #f5e3b8;border-left:4px solid #f5921b}
+.hz-marker-h{color:#9a6207}
+.hz-marker .hz-rule::before{background:#f5921b}
+
+.hz-patterns{
+  background:#f0f6ff;border:1px solid #d4e4ff;border-radius:14px;
+  padding:14px 16px;margin-bottom:12px;
+}
+.hz-patterns-h{display:flex;align-items:center;gap:8px;font-weight:700;font-size:14px;margin-bottom:11px;color:#1f5fc0}
+.hz-pat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px}
+.hz-pat{background:#fff;border:1px solid #d4e4ff;border-radius:9px;padding:7px 10px}
+.hz-pat-z{font-family:var(--font-noto-sc),var(--bs-zh),"Noto Sans SC",sans-serif;font-weight:700;font-size:15px;color:#1f5fc0;display:block}
+.hz-pat-m{font-size:12px;color:#5e6f66}
+
+.hz-algo-step{display:flex;gap:11px;font-size:14px;margin-bottom:9px;line-height:1.55}
+.hz-algo-step:last-child{margin-bottom:0}
+.hz-algo-n{
+  flex:0 0 22px;width:22px;height:22px;border-radius:50%;background:#018242;color:#fff;
+  font-size:12px;font-weight:700;display:grid;place-items:center;
+}
+
+.hz-sec-divider{display:flex;align-items:center;gap:10px;margin:22px 0 13px}
+.hz-sec-divider-t{font-size:13px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:#018242;white-space:nowrap}
+.hz-sec-divider-l{height:1px;background:#e6eee9;flex:1}
+.hz-sec-divider-cnt{font-size:12px;color:#5e6f66;background:#fff;border:1px solid #e6eee9;padding:2px 9px;border-radius:999px}
+
+.hz-exam{background:#fff;border:1px solid #e6eee9;border-radius:16px;padding:16px;margin-bottom:10px}
+.hz-exam--mini{padding:13px 14px}
+.hz-exam-tag{
+  font-size:11px;font-weight:700;letter-spacing:.5px;color:#018242;
+  text-transform:uppercase;margin-bottom:11px;
+}
+.hz-exam-qn{font-size:11px;font-weight:700;color:#5e6f66;margin-bottom:8px}
+.hz-scramble{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:13px}
+.hz-word{
+  font-family:var(--font-noto-sc),var(--bs-zh),"Noto Sans SC",sans-serif;
+  font-size:17px;font-weight:600;background:#f6faf7;border:1.5px dashed #c9d8d0;
+  border-radius:9px;padding:7px 12px;
+}
+.hz-reveal-btn{
+  width:100%;border:none;background:#1FB85A;color:#fff;font-family:inherit;
+  font-weight:700;font-size:14px;padding:10px;border-radius:11px;cursor:pointer;
+}
+.hz-exam--mini .hz-reveal-btn{background:#eaf7ef;color:#018242}
+.hz-exam--open .hz-reveal-btn{display:none}
+.hz-answer{margin-top:14px}
+.hz-built{display:flex;flex-wrap:wrap;gap:6px;align-items:stretch;margin-bottom:11px}
+.hz-blk{
+  display:flex;flex-direction:column;gap:2px;padding:7px 10px;border-radius:9px;
+  background:#fff;border:1.5px solid var(--bk);position:relative;
+}
+.hz-blk-w{
+  font-family:var(--font-noto-sc),var(--bs-zh),"Noto Sans SC",sans-serif;
+  font-weight:700;font-size:16px;color:var(--bk);
+}
+.hz-blk-r{font-size:10px;font-weight:600;color:#5e6f66}
+.hz-blk--verb .hz-blk-w,.hz-blk--verb .hz-blk-r{color:#fff}
+.hz-blk--verb::after{
+  content:"зүрх";position:absolute;top:-8px;right:-5px;font-size:8px;font-weight:700;
+  background:#1FB85A;color:#fff;padding:1px 5px;border-radius:6px;
+}
+.hz-analysis{
+  font-size:13px;color:#5e6f66;background:#f6faf7;border-radius:10px;padding:10px 12px;line-height:1.55;
+}
+.hz-analysis b,.hz-rich b{color:#13241b;font-weight:700}
+.hz-rich .zh,.hz-rich .zh{
+  font-family:var(--font-noto-sc),var(--bs-zh),"Noto Sans SC",sans-serif;font-weight:600;
+}
+.hz-rich .bad,.hz-rich .bad.zh{color:#c0392b}
+
+.hz-colloc{
+  background:#f3f0ff;border:1px solid #e0d6ff;border-radius:14px;
+  padding:14px 16px;margin-bottom:12px;
+}
+.hz-colloc-h{display:flex;align-items:center;gap:8px;font-weight:700;font-size:14px;margin-bottom:11px;color:#7a3fc0}
+.hz-colloc-ci{font-size:14px;margin-bottom:7px;line-height:1.55}
+.hz-colloc-ci:last-child{margin-bottom:0}
+.hz-colloc-head{font-weight:700}
+.hz-colloc-a{color:#5e6f66}
+
+.hz-module-nav{display:flex;justify-content:space-between;gap:12px;margin-top:22px;padding-top:12px;border-top:1px solid #e6eee9}
+.hz-nav-link{font-size:13px;font-weight:800;color:#1FB85A;text-decoration:none}
+.hz-nav-link--next{margin-left:auto}
+
+.hz-module-card{cursor:pointer}
+.hz-home-card{display:block;margin-bottom:16px;text-decoration:none;color:inherit}
+.hz-home-card-inner{
+  display:flex;align-items:center;gap:12px;padding:14px;border-radius:18px;
+  background:linear-gradient(135deg,#eaf8f0,#fff);border:1px solid #c6ebd4;box-shadow:var(--app-shadow);
+}
+.hz-home-card-icon{font-size:24px;line-height:1}
+.hz-home-card-title{margin:0;font-size:15px;font-weight:900;color:var(--app-text)}
+.hz-home-card-sub{margin:4px 0 0;font-size:12px;color:var(--app-muted)}
+
+@media(max-width:480px){
+  .hz-course-hero-title{font-size:21px}
+  .hz-pat-grid{grid-template-columns:1fr 1fr}
+  .hz-blk-w{font-size:15px}
+  .hz-blk{padding:6px 9px}
+  .hz-blk-r{font-size:9px}
+  .hz-word{font-size:16px;padding:6px 10px}
+}

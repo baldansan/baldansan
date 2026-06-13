@@ -1,6 +1,7 @@
 import { CoursesListAppView } from "@/components/mobile/courses-list-app-view";
 import { isKoreanCourse } from "@/lib/course-display";
 import { courses } from "@/data/courses";
+import { getHelzuiCourse } from "@/lib/helzui/load-course";
 import { getCourseContentById, getPublicLessonsByCourseId } from "@/lib/content";
 import type { Course } from "@/types/course";
 
@@ -83,11 +84,17 @@ async function appendHskCourse(
 
 export default async function CoursesPage() {
   const lessonCounts: Record<string, number> = {};
-  let catalog = [...courses];
+  const helzui = getHelzuiCourse();
+  let catalog = courses.map((course) =>
+    course.id === "helzui-suuri"
+      ? { ...course, lessons: helzui.modules.length }
+      : course
+  );
   for (const courseId of HSK_CATALOG_LEVELS) {
     catalog = await appendHskCourse(catalog, lessonCounts, courseId);
   }
   const catalogCourses = await appendKoreanCourses(catalog, lessonCounts);
+  lessonCounts["helzui-suuri"] = helzui.modules.length;
 
   const courseCards = catalogCourses.map((course) => ({
     ...course,
