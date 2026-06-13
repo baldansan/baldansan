@@ -256,9 +256,9 @@ export default function LessonPathPlayer({
   }
 
   const isPracticeStage = activeStage?.id === "practice";
-  const showGenericStageFooter =
-    activeStage && activeStage.id !== "quiz" && !isPracticeStage;
-  const showPracticeStageFooter = isPracticeStage && practiceFooter?.visible;
+  const showStageFinishChip =
+    activeStage && activeStage.id !== "quiz" && activeStage.id !== "summary";
+  const showPracticeStageFooter = isPracticeStage && practiceFooter != null;
 
   if (!hydrated) {
     return (
@@ -315,7 +315,7 @@ export default function LessonPathPlayer({
             ))}
           </div>
         </div>
-        {isPracticeStage ? (
+        {showStageFinishChip ? (
           <button
             type="button"
             className="bs-path-finish-chip"
@@ -349,20 +349,8 @@ export default function LessonPathPlayer({
         {renderStageContent(activeStage, plan)}
       </div>
 
-      {showGenericStageFooter ? (
-        <div className="bs-path-footer">
-          <button
-            type="button"
-            className="bs-cta bs-path-footer-cta"
-            onClick={handleFinishStage}
-          >
-            Үе дуусгах →
-          </button>
-        </div>
-      ) : null}
-
       {showPracticeStageFooter && practiceFooter ? (
-        <div className="bs-path-footer">
+        <div className="bs-path-footer bs-path-footer--practice">
           <button
             type="button"
             className={`bs-cta bs-path-footer-cta bs-path-practice-footer-cta${

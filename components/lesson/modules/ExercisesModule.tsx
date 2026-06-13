@@ -2,7 +2,7 @@
 // components/lesson/modules/ExercisesModule.tsx
 // "exercises_textbook" / "exercises_workbook" модуль — интерактив дасгал.
 
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import {
   clearBsExercisesProgress,
   getBsExercisesProgress,
@@ -544,7 +544,7 @@ export default function ExercisesModule({
       ? groupAllChecked
       : Boolean(q && checked);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     if (!embeddedInPath || !onRegisterPathFooter) return;
 
     const register = (meta: PathExerciseFooterMeta | null) => onRegisterPathFooter(meta);
@@ -557,12 +557,12 @@ export default function ExercisesModule({
         action: "finish-stage",
         onAction: () => {},
       });
-      return;
+      return () => register(null);
     }
 
     if (phase === "overview" || showScrambleGate) {
       register(null);
-      return;
+      return () => register(null);
     }
 
     if (done) {
@@ -573,7 +573,7 @@ export default function ExercisesModule({
         action: "finish-stage",
         onAction: () => {},
       });
-      return;
+      return () => register(null);
     }
 
     const isLast = qi >= totalSteps - 1;
@@ -587,6 +587,7 @@ export default function ExercisesModule({
         else advanceSingle();
       },
     });
+    return () => register(null);
   }, [
     embeddedInPath,
     onRegisterPathFooter,
@@ -597,14 +598,9 @@ export default function ExercisesModule({
     qi,
     q,
     canAdvanceCurrentStep,
-    // advanceSingle / advanceGroup recreated each render — deps via qi, q, checked
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    checked,
+    groupAllChecked,
   ]);
-
-  useEffect(() => {
-    if (!embeddedInPath || !onRegisterPathFooter) return;
-    return () => onRegisterPathFooter(null);
-  }, [embeddedInPath, onRegisterPathFooter]);
 
   const sourceLabel =
     source === "both"

@@ -1,6 +1,7 @@
 "use client";
 
-import { useLayoutEffect, useMemo, useState } from "react";
+import { useLayoutEffect, useMemo, useRef, useState } from "react";
+import { createPortal } from "react-dom";
 import {
   getMnGrammarTerm,
   splitMnGrammarTerms,
@@ -23,27 +24,39 @@ type AnchorRect = {
   height: number;
 };
 
-function popoverStyle(anchor: AnchorRect): {
+type PopoverPos = {
   top?: number;
   bottom?: number;
   left: number;
   maxWidth: number;
-} {
+  maxHeight: number;
+};
+
+function computePopoverPos(
+  anchor: AnchorRect,
+  popoverHeight: number,
+  popoverWidth: number
+): PopoverPos {
   const maxWidth = Math.min(360, window.innerWidth - 16);
+  const width = Math.min(maxWidth, popoverWidth || maxWidth);
   const centerX = anchor.left + anchor.width / 2;
   const left = Math.min(
-    Math.max(8, centerX - maxWidth / 2),
-    window.innerWidth - maxWidth - 8
+    Math.max(8, centerX - width / 2),
+    window.innerWidth - width - 8
   );
   const gap = 8;
-  const estimatedHeight = 220;
   const spaceBelow = window.innerHeight - anchor.bottom - gap;
   const spaceAbove = anchor.top - gap;
+  const height = Math.min(popoverHeight, window.innerHeight - 24);
+  const maxHeight = Math.max(120, window.innerHeight - 24);
 
-  if (spaceBelow >= estimatedHeight || spaceBelow >= spaceAbove) {
-    return { top: anchor.bottom + gap, left, maxWidth };
+  if (spaceBelow >= height || spaceBelow >= spaceAbove) {
+    const top = Math.min(anchor.bottom + gap, window.innerHeight - height - 8);
+    return { top, left, maxWidth: width, maxHeight };
   }
-  return { bottom: window.innerHeight - anchor.top + gap, left, maxWidth };
+
+  const bottom = Math.max(8, window.innerHeight - anchor.top + gap);
+  return { bottom, left, maxWidth: width, maxHeight };
 }
 
 function TermPopover({
@@ -56,15 +69,21 @@ function TermPopover({
   onClose: () => void;
 }) {
   const entry = getMnGrammarTerm(termId);
-  const [style, setStyle] = useState(() => popoverStyle(anchor));
+  const popoverRef = useRef<HTMLDivElement>(null);
+  const [pos, setPos] = useState<PopoverPos>(() =>
+    computePopoverPos(anchor, 220, 360)
+  );
 
   useLayoutEffect(() => {
-    setStyle(popoverStyle(anchor));
-  }, [anchor]);
+    const el = popoverRef.current;
+    const height = el?.offsetHeight ?? 220;
+    const width = el?.offsetWidth ?? 360;
+    setPos(computePopoverPos(anchor, height, width));
+  }, [anchor, entry]);
 
   if (!entry) return null;
 
-  return (
+  const node = (
     <>
       <div
         className="bs-mn-term-popover-backdrop"
@@ -72,10 +91,11 @@ function TermPopover({
         aria-hidden
       />
       <div
+        ref={popoverRef}
         className="bs-mn-term-popover"
         role="dialog"
         aria-labelledby="bs-mn-term-popover-title"
-        style={style}
+        style={pos}
         onClick={(e) => e.stopPropagation()}
       >
         <p id="bs-mn-term-popover-title" className="bs-mn-term-popover-title">
@@ -99,6 +119,8 @@ function TermPopover({
       </div>
     </>
   );
+
+  return createPortal(node, document.body);
 }
 
 export function MnGrammarTermText({ text, className, nested = false }: Props) {
