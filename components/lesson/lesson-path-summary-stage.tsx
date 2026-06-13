@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useCallback, useEffect, useMemo, useState } from "react";
+import { LessonDifficultyFeedback } from "@/components/feedback/lesson-difficulty-feedback";
 import { getBsQuizProgress } from "@/lib/lesson/bs-step-progress";
 import { extractLessonPathSummaryData } from "@/lib/lesson/lesson-path-summary-data";
 import {
@@ -182,6 +183,8 @@ export function LessonPathSummaryStage({
           </div>
         </div>
       ) : null}
+
+      <LessonDifficultyFeedback lessonId={lessonId} />
 
       <Link href={nextHref} className="bs-cta bs-path-summary-next">
         {nextLabel}

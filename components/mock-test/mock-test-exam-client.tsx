@@ -733,6 +733,7 @@ export function MockTestExamClient({
               answers={answers}
               onAnswer={setAnswer}
               hideQuestionAudio={hideQuestionAudio}
+              analyticsLessonId={test.id}
               onAdvanceNext={
                 currentQuestionIndex < skillQuestions.length - 1
                   ? () => goToQuestionOffset(1)
@@ -769,6 +770,7 @@ export function MockTestExamClient({
                 answers={answers}
                 onAnswer={setAnswer}
                 hideQuestionAudio={hideQuestionAudio}
+                analyticsLessonId={test.id}
                 onAdvanceNext={() => advanceFromQuestion(question.q_no)}
               />
             </div>

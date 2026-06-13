@@ -1,8 +1,15 @@
 "use client";
 
 import { useRef } from "react";
+import { useQuestionTimer } from "@/lib/analytics/attempt-metrics";
 import { MockTestSentenceOrder } from "@/components/mock-test/mock-test-sentence-order";
+import { QuestionFeedbackButtons } from "@/components/feedback/question-feedback-buttons";
 import { formatCorrectAnswer } from "@/lib/mock-test/format-answer";
+import { gradeQuestion } from "@/lib/mock-test/scoring";
+import {
+  mapMockQuestionType,
+  recordQuestionAttempt,
+} from "@/lib/analytics/record-question-attempt";
 import {
   isMockSentenceOrderQuestion,
   parseSentenceOrderTokens,
@@ -21,6 +28,7 @@ type Props = {
   resultCorrect?: boolean | null;
   hideQuestionAudio?: boolean;
   onAdvanceNext?: () => void;
+  analyticsLessonId?: string;
 };
 
 const LONG_TEXT_TYPES = new Set([
@@ -28,6 +36,55 @@ const LONG_TEXT_TYPES = new Set([
   "essay",
   "summary",
 ]);
+
+function recordMockAttempt(
+  lessonId: string | undefined,
+  question: MockTestQuestionRow,
+  selected: string,
+  timeSpentMs?: number | null
+) {
+  if (!lessonId) return;
+  const graded = gradeQuestion(question, selected);
+  if (graded === null) return;
+  recordQuestionAttempt({
+    lessonId,
+    stage: "mock_exam",
+    questionId: `mock:${question.id}`,
+    questionType: mapMockQuestionType(question.q_type),
+    isCorrect: graded,
+    selectedAnswer: selected,
+    correctAnswer: question.correct_answer,
+    timeSpentMs: timeSpentMs ?? null,
+  });
+}
+
+function answerAndRecord(
+  lessonId: string | undefined,
+  question: MockTestQuestionRow,
+  onAnswer: (qNo: number, value: string) => void,
+  value: string,
+  getElapsed?: () => number
+) {
+  onAnswer(question.q_no, value);
+  recordMockAttempt(lessonId, question, value, getElapsed?.());
+}
+
+function MockQuestionFeedback({
+  lessonId,
+  questionId,
+  answered,
+  showResults,
+}: {
+  lessonId?: string;
+  questionId: string;
+  answered: boolean;
+  showResults: boolean;
+}) {
+  if (!answered || showResults || !lessonId) return null;
+  return (
+    <QuestionFeedbackButtons lessonId={lessonId} questionId={questionId} />
+  );
+}
 
 function QuestionHeader({
   question,
@@ -126,10 +183,13 @@ export function MockTestQuestion({
   resultCorrect = null,
   hideQuestionAudio = false,
   onAdvanceNext,
+  analyticsLessonId,
 }: Props) {
   const key = String(question.q_no);
   const value = answers[key] ?? "";
   const options = question.options ?? [];
+  const getElapsed = useQuestionTimer(`mock:${question.id}`);
+  const questionId = `mock:${question.id}`;
 
   if (question.q_type === "judge") {
     return (
@@ -153,7 +213,15 @@ export function MockTestQuestion({
               type="button"
               disabled={showResults}
               className={`bs-mt-option ${value === opt.value ? "bs-mt-option--picked" : ""}`}
-              onClick={() => onAnswer(question.q_no, opt.value)}
+              onClick={() =>
+                answerAndRecord(
+                  analyticsLessonId,
+                  question,
+                  onAnswer,
+                  opt.value,
+                  getElapsed
+                )
+              }
             >
               {opt.label}
             </button>
@@ -163,6 +231,12 @@ export function MockTestQuestion({
           question={question}
           showResults={showResults}
           resultCorrect={resultCorrect}
+        />
+        <MockQuestionFeedback
+          lessonId={analyticsLessonId}
+          questionId={questionId}
+          answered={Boolean(value)}
+          showResults={showResults}
         />
       </div>
     );
@@ -174,7 +248,9 @@ export function MockTestQuestion({
         question={question}
         value={value}
         options={options}
-        onAnswer={(v) => onAnswer(question.q_no, v)}
+        onAnswer={(v) =>
+          answerAndRecord(analyticsLessonId, question, onAnswer, v, getElapsed)
+        }
         showResults={showResults}
         resultCorrect={resultCorrect}
       />
@@ -225,6 +301,7 @@ export function MockTestQuestion({
             showResults={showResults}
             resultCorrect={resultCorrect}
             onAdvanceNext={onAdvanceNext}
+            analyticsLessonId={analyticsLessonId}
           />
           {showResults ? (
             <ResultExtras
@@ -317,7 +394,15 @@ export function MockTestQuestion({
                 type="button"
                 disabled={showResults}
                 className={`bs-mt-image-option ${value === opt.key ? "bs-mt-image-option--picked" : ""}`}
-                onClick={() => onAnswer(question.q_no, opt.key)}
+                onClick={() =>
+                  answerAndRecord(
+                    analyticsLessonId,
+                    question,
+                    onAnswer,
+                    opt.key,
+                    getElapsed
+                  )
+                }
               >
                 <span className="bs-mt-option-letter">{opt.key}</span>
                 {opt.image_url ? (
@@ -334,13 +419,21 @@ export function MockTestQuestion({
             options={options}
             value={value}
             showResults={showResults}
-            onPick={(k) => onAnswer(question.q_no, k)}
+            onPick={(k) =>
+              answerAndRecord(analyticsLessonId, question, onAnswer, k, getElapsed)
+            }
           />
         )}
         <ResultExtras
           question={question}
           showResults={showResults}
           resultCorrect={resultCorrect}
+        />
+        <MockQuestionFeedback
+          lessonId={analyticsLessonId}
+          questionId={questionId}
+          answered={Boolean(value)}
+          showResults={showResults}
         />
       </div>
     );
@@ -361,12 +454,20 @@ export function MockTestQuestion({
         options={options}
         value={value}
         showResults={showResults}
-        onPick={(k) => onAnswer(question.q_no, k)}
+        onPick={(k) =>
+          answerAndRecord(analyticsLessonId, question, onAnswer, k, getElapsed)
+        }
       />
       <ResultExtras
         question={question}
         showResults={showResults}
         resultCorrect={resultCorrect}
+      />
+      <MockQuestionFeedback
+        lessonId={analyticsLessonId}
+        questionId={questionId}
+        answered={Boolean(value)}
+        showResults={showResults}
       />
     </div>
   );

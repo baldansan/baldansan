@@ -17,6 +17,13 @@ import {
   gradeQuizSentenceOrder,
   isQuizSentenceOrderQuestion,
 } from "@/lib/quiz/sentence-order";
+import { useQuestionTimer } from "@/lib/analytics/attempt-metrics";
+import {
+  mapQuizQuestionType,
+  mapQuizStage,
+  recordQuestionAttempt,
+} from "@/lib/analytics/record-question-attempt";
+import { QuestionFeedbackButtons } from "@/components/feedback/question-feedback-buttons";
 import { resolveKoreanTtsLang } from "@/lib/lesson/teaching-media";
 import type { LessonContent } from "@/types/lesson-content";
 import type { QuizQuestion } from "@/types/lesson";
@@ -151,6 +158,7 @@ export function LessonPathQuizStage({
   }
 
   const current = quizQuestions[currentIndex];
+  const getElapsed = useQuestionTimer(`${lessonId}:quiz:${currentIndex}`);
   const currentIsSentenceOrder = current
     ? isQuizSentenceOrderQuestion(current)
     : false;
@@ -163,16 +171,37 @@ export function LessonPathQuizStage({
     return answer === question.correctAnswer;
   }
 
+  function logQuizAttempt(answer: string, ok: boolean) {
+    if (!current) return;
+    const sentenceOrder = isQuizSentenceOrderQuestion(current);
+    recordQuestionAttempt({
+      lessonId,
+      stage: mapQuizStage(sentenceOrder),
+      questionId:
+        current.dbId != null
+          ? `quiz:db:${current.dbId}`
+          : `quiz:${current.orderIndex ?? currentIndex}`,
+      questionType: mapQuizQuestionType(current.type, sentenceOrder),
+      isCorrect: ok,
+      selectedAnswer: answer,
+      correctAnswer: current.correctAnswer,
+      timeSpentMs: getElapsed(),
+    });
+  }
+
   function handleSelect(option: string) {
     if (revealed || finished) return;
     setSelected(option);
     setRevealed(true);
+    logQuizAttempt(option, isAnswerCorrect(current, option));
   }
 
   function handleSentenceOrderCheck(answer: string) {
-    if (revealed || finished) return;
+    if (revealed || finished || !current) return;
+    const ok = isAnswerCorrect(current, answer);
     setSelected(answer);
     setRevealed(true);
+    logQuizAttempt(answer, ok);
   }
 
   function handleNextQuestion() {
@@ -350,14 +379,24 @@ export function LessonPathQuizStage({
         />
       )}
       {revealed ? (
-        <button
-          type="button"
-          className="bs-cta bs-path-footer-cta"
-          onClick={handleNextQuestion}
-          style={{ marginTop: 8 }}
-        >
-          {currentIndex >= total - 1 ? "Сорил дуусгах" : "Дараагийн асуулт →"}
-        </button>
+        <>
+          <QuestionFeedbackButtons
+            lessonId={lessonId}
+            questionId={
+              current.dbId != null
+                ? `quiz:db:${current.dbId}`
+                : `quiz:${current.orderIndex ?? currentIndex}`
+            }
+          />
+          <button
+            type="button"
+            className="bs-cta bs-path-footer-cta"
+            onClick={handleNextQuestion}
+            style={{ marginTop: 8 }}
+          >
+            {currentIndex >= total - 1 ? "Сорил дуусгах" : "Дараагийн асуулт →"}
+          </button>
+        </>
       ) : null}
     </div>
   );

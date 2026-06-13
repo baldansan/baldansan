@@ -63,6 +63,12 @@ export const ADMIN_NAV_ADVANCED: AdminNavItem[] = [
     match: (p) => p.startsWith("/admin/tasks"),
   },
   {
+    href: "/admin/learner",
+    label: "Learner",
+    icon: "🧑‍🎓",
+    match: (p) => p.startsWith("/admin/learner"),
+  },
+  {
     href: "/admin/analytics",
     label: "Analytics",
     icon: "📈",

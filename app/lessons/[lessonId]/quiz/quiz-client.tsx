@@ -37,6 +37,13 @@ import {
   gradeQuizSentenceOrder,
   isQuizSentenceOrderQuestion,
 } from "@/lib/quiz/sentence-order";
+import { useQuestionTimer } from "@/lib/analytics/attempt-metrics";
+import {
+  mapQuizQuestionType,
+  mapQuizStage,
+  recordQuestionAttempt,
+} from "@/lib/analytics/record-question-attempt";
+import { QuestionFeedbackButtons } from "@/components/feedback/question-feedback-buttons";
 import { LessonQuizSentenceOrder } from "@/components/lesson/lesson-quiz-sentence-order";
 import { SpeakerButton } from "@/components/tts/speaker-button";
 import { containsTargetScript } from "@/lib/tts/infer-lang";
@@ -93,6 +100,7 @@ export function LessonQuizClient({
   const feedbackRef = useRef<HTMLDivElement>(null);
 
   const current = quizQuestions[currentIndex];
+  const getElapsed = useQuestionTimer(`${lesson.id}:quiz:${currentIndex}`);
   const currentIsSentenceOrder = current
     ? isQuizSentenceOrderQuestion(current)
     : false;
@@ -207,6 +215,22 @@ export function LessonQuizClient({
       );
       if (wordKey) recordStudiedWordKey(lesson.id, wordKey);
     }
+    recordQuestionAttempt({
+      lessonId: lesson.id,
+      stage: mapQuizStage(isQuizSentenceOrderQuestion(current)),
+      questionId:
+        current.dbId != null
+          ? `quiz:db:${current.dbId}`
+          : `quiz:${current.orderIndex ?? currentIndex}`,
+      questionType: mapQuizQuestionType(
+        current.type,
+        isQuizSentenceOrderQuestion(current)
+      ),
+      isCorrect: correct,
+      selectedAnswer: option,
+      correctAnswer: current.correctAnswer,
+      timeSpentMs: getElapsed(),
+    });
   }
 
   function handleSelect(option: string) {
@@ -534,6 +558,16 @@ export function LessonQuizClient({
                     </div>
                   )}
                 </div>
+              )}
+              {revealed && (
+                <QuestionFeedbackButtons
+                  lessonId={lesson.id}
+                  questionId={
+                    current.dbId != null
+                      ? `quiz:db:${current.dbId}`
+                      : `quiz:${current.orderIndex ?? currentIndex}`
+                  }
+                />
               )}
                 </>
               )}

@@ -1,14 +1,19 @@
 "use client";
 
 import { useState } from "react";
+import { useQuestionTimer } from "@/lib/analytics/attempt-metrics";
 import {
-  grammarExerciseAnswerLabel,
-  isGrammarExerciseCorrect,
-} from "@/lib/lesson/grammar-exercise";
+  mapGrammarExerciseType,
+  recordQuestionAttempt,
+} from "@/lib/analytics/record-question-attempt";
+import { QuestionFeedbackButtons } from "@/components/feedback/question-feedback-buttons";
+import { grammarExerciseAnswerLabel, isGrammarExerciseCorrect } from "@/lib/lesson/grammar-exercise";
 import { MnGrammarTermText } from "@/components/lesson/mn-grammar-term-text";
 import type { HskPackageGrammarExercise } from "@/types/hsk-lesson-package";
 
 type Props = {
+  lessonId: string;
+  grammarPointIndex: number;
   exercises: HskPackageGrammarExercise[];
   /** Бүх дүрэм дууссан эсэх — сүүлийн дасгалын товчны шошгыг тодорхойлно. */
   isLastPoint?: boolean;
@@ -16,6 +21,8 @@ type Props = {
 };
 
 export function GrammarPointExercises({
+  lessonId,
+  grammarPointIndex,
   exercises,
   isLastPoint = false,
   onComplete,
@@ -29,6 +36,7 @@ export function GrammarPointExercises({
 
   const ex = exercises[ei];
   const total = exercises.length;
+  const getElapsed = useQuestionTimer(`gr:${grammarPointIndex}:${ei}`);
 
   if (!ex) {
     onComplete();
@@ -43,12 +51,26 @@ export function GrammarPointExercises({
     setCorrect(false);
   }
 
+  function logAttempt(selected: string, ok: boolean) {
+    recordQuestionAttempt({
+      lessonId,
+      stage: "grammar_exercise",
+      questionId: `gr:${grammarPointIndex}:${ei}`,
+      questionType: mapGrammarExerciseType(ex.type),
+      isCorrect: ok,
+      selectedAnswer: selected,
+      correctAnswer: answerLabel,
+      timeSpentMs: getElapsed(),
+    });
+  }
+
   function submitChoice(opt: string) {
     if (answered) return;
     setPicked(opt);
     const ok = isGrammarExerciseCorrect(ex, opt);
     setCorrect(ok);
     setAnswered(true);
+    logAttempt(opt, ok);
   }
 
   function submitJudge(value: boolean) {
@@ -57,6 +79,7 @@ export function GrammarPointExercises({
     const ok = isGrammarExerciseCorrect(ex, value);
     setCorrect(ok);
     setAnswered(true);
+    logAttempt(value ? "Үнэн" : "Худал", ok);
   }
 
   function submitFill() {
@@ -64,6 +87,7 @@ export function GrammarPointExercises({
     const ok = isGrammarExerciseCorrect(ex, fillText);
     setCorrect(ok);
     setAnswered(true);
+    logAttempt(fillText.trim(), ok);
   }
 
   function continueAfterFeedback() {
@@ -198,6 +222,10 @@ export function GrammarPointExercises({
               ) : null}
             </>
           )}
+          <QuestionFeedbackButtons
+            lessonId={lessonId}
+            questionId={`gr:${grammarPointIndex}:${ei}`}
+          />
           <button
             type="button"
             className="bs-cta bs-path-visible-cta"

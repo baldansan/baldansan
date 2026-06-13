@@ -36,9 +36,11 @@ function lastPhaseForPoint(point: HskPackageGrammarPoint): PointPhase {
 }
 
 export default function GrammarModule({
+  lessonId,
   lesson,
   onDone,
 }: {
+  lessonId: string;
   lesson: HskLessonPackage;
   onDone: () => void;
 }) {
@@ -273,6 +275,8 @@ export default function GrammarModule({
         <>
           <div className="bs-gr-point bs-gr-point--compact">{point.point}</div>
           <GrammarPointExercises
+            lessonId={lessonId}
+            grammarPointIndex={gi}
             exercises={exercises}
             isLastPoint={gi === total - 1}
             onComplete={goNextPoint}
