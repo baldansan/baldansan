@@ -103,7 +103,10 @@ export type LessonVocabulary = {
   words: VocabularyWord[];
 };
 
-export type QuizQuestionType = "multiple_choice" | "cloze";
+export type QuizQuestionType =
+  | "multiple_choice"
+  | "cloze"
+  | "sentence_order";
 
 export type QuizQuestion = {
   id: string;

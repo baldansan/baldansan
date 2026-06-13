@@ -31,7 +31,6 @@ import GrammarModule from "./modules/GrammarModule";
 import ExercisesModule, {
   type PathExerciseFooterMeta,
 } from "./modules/ExercisesModule";
-import { clearBsQuizProgress } from "@/lib/lesson/bs-step-progress";
 import { moduleHasContent } from "@/lib/lesson/resolve-hsk-lesson-package";
 import "./lesson-player.css";
 import "./lesson-path.css";
@@ -117,9 +116,6 @@ export default function LessonPathPlayer({
         setSkipWarning("Эхлээд өмнөх үеүүдээ дуусгавал илүү сайн суралцана.");
       } else {
         setSkipWarning(null);
-      }
-      if (stage.id === "quiz") {
-        clearBsQuizProgress(lessonId);
       }
       if (stage.id !== "practice") {
         setPracticeFooter(null);
