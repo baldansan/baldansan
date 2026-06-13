@@ -7,7 +7,11 @@ import type {
   HskPackageTextSentence,
   HskPackageVocabItem,
 } from "@/types/hsk-lesson-package";
-import { WordTapSheet, type WordTapPayload } from "@/components/lesson/word-tap-sheet";
+import {
+  WordTapSheet,
+  type WordTapAnchorRect,
+  type WordTapPayload,
+} from "@/components/lesson/word-tap-sheet";
 import { MnGrammarTermText } from "@/components/lesson/mn-grammar-term-text";
 import { playChineseWordAudio } from "@/lib/tts/play-chinese-word-audio";
 import {
@@ -47,6 +51,9 @@ export function LiveTextReader({ text, vocabulary = [] }: Props) {
   const [prefsReady, setPrefsReady] = useState(false);
   const [openNotes, setOpenNotes] = useState<Set<number>>(() => new Set());
   const [pickedWord, setPickedWord] = useState<WordTapPayload | null>(null);
+  const [wordTapAnchor, setWordTapAnchor] = useState<WordTapAnchorRect | null>(
+    null
+  );
 
   useEffect(() => {
     setShowPinyin(loadTextReaderShowPinyin());
@@ -70,7 +77,11 @@ export function LiveTextReader({ text, vocabulary = [] }: Props) {
     });
   }
 
-  function pickWord(zh: string, pinyin?: string) {
+  function pickWord(
+    zh: string,
+    pinyin?: string,
+    anchorEl?: HTMLElement
+  ) {
     void playChineseWordAudio(zh);
     const lesson = vocabByZh.get(zh);
     setPickedWord({
@@ -78,6 +89,14 @@ export function LiveTextReader({ text, vocabulary = [] }: Props) {
       pinyin: pinyin || lesson?.pinyin,
       lessonMn: lesson?.mn,
     });
+    if (anchorEl) {
+      setWordTapAnchor(anchorEl.getBoundingClientRect());
+    }
+  }
+
+  function closeWordTap() {
+    setPickedWord(null);
+    setWordTapAnchor(null);
   }
 
   function renderLegacySentence(sentence: HskPackageTextSentence, si: number) {
@@ -109,7 +128,9 @@ export function LiveTextReader({ text, vocabulary = [] }: Props) {
                   <button
                     type="button"
                     className="bs-newword"
-                    onClick={() => pickWord(tok.zh, py || vocab!.pinyin)}
+                    onClick={(e) =>
+                      pickWord(tok.zh, py || vocab!.pinyin, e.currentTarget)
+                    }
                   >
                     {tok.zh}
                   </button>
@@ -156,7 +177,7 @@ export function LiveTextReader({ text, vocabulary = [] }: Props) {
                 <button
                   type="button"
                   className="bs-txt-word"
-                  onClick={() => pickWord(tok.zh, py)}
+                  onClick={(e) => pickWord(tok.zh, py, e.currentTarget)}
                 >
                   {tok.zh}
                 </button>
@@ -295,8 +316,12 @@ export function LiveTextReader({ text, vocabulary = [] }: Props) {
         ) : null}
       </div>
 
-      {pickedWord ? (
-        <WordTapSheet word={pickedWord} onClose={() => setPickedWord(null)} />
+      {pickedWord && wordTapAnchor ? (
+        <WordTapSheet
+          word={pickedWord}
+          anchor={wordTapAnchor}
+          onClose={closeWordTap}
+        />
       ) : null}
     </>
   );

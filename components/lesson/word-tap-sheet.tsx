@@ -1,7 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useEffect, useLayoutEffect, useRef, useState } from "react";
+import { createPortal } from "react-dom";
 import { WordCharBreakdownPanel } from "@/components/review/word-char-breakdown-panel";
 import SpeakButton from "@/components/lesson/SpeakButton";
 import {
@@ -19,19 +20,75 @@ export type WordTapPayload = {
   lessonMn?: string;
 };
 
+export type WordTapAnchorRect = {
+  top: number;
+  left: number;
+  bottom: number;
+  right: number;
+  width: number;
+  height: number;
+};
+
+type PopoverPos = {
+  top?: number;
+  bottom?: number;
+  left: number;
+  maxWidth: number;
+  maxHeight: number;
+};
+
+function computePopoverPos(
+  anchor: WordTapAnchorRect,
+  popoverHeight: number,
+  popoverWidth: number
+): PopoverPos {
+  const maxWidth = Math.min(360, window.innerWidth - 16);
+  const width = Math.min(maxWidth, popoverWidth || maxWidth);
+  const centerX = anchor.left + anchor.width / 2;
+  const left = Math.min(
+    Math.max(8, centerX - width / 2),
+    window.innerWidth - width - 8
+  );
+  const gap = 8;
+  const spaceBelow = window.innerHeight - anchor.bottom - gap;
+  const spaceAbove = anchor.top - gap;
+  const height = Math.min(popoverHeight, window.innerHeight - 24);
+  const maxHeight = Math.max(160, window.innerHeight - 24);
+
+  if (spaceBelow >= height || spaceBelow >= spaceAbove) {
+    const top = Math.min(anchor.bottom + gap, window.innerHeight - height - 8);
+    return { top, left, maxWidth: width, maxHeight };
+  }
+
+  const bottom = Math.max(8, window.innerHeight - anchor.top + gap);
+  return { bottom, left, maxWidth: width, maxHeight };
+}
+
 type Props = {
   word: WordTapPayload;
+  anchor: WordTapAnchorRect;
   onClose: () => void;
   onSaved?: () => void;
 };
 
-export function WordTapSheet({ word, onClose, onSaved }: Props) {
+export function WordTapSheet({ word, anchor, onClose, onSaved }: Props) {
+  const popoverRef = useRef<HTMLDivElement>(null);
+  const [pos, setPos] = useState<PopoverPos>(() =>
+    computePopoverPos(anchor, 280, 360)
+  );
   const [catalog, setCatalog] = useState<HskWordDisplay | null>(null);
   const [status, setStatus] = useState<BichlegWordStatus | null>(null);
   const [loggedIn, setLoggedIn] = useState<boolean | null>(null);
   const [loading, setLoading] = useState(true);
   const [saving, setSaving] = useState(false);
   const [toast, setToast] = useState<string | null>(null);
+
+  useLayoutEffect(() => {
+    const el = popoverRef.current;
+    const height = el?.offsetHeight ?? 280;
+    const width = el?.offsetWidth ?? 360;
+    setPos(computePopoverPos(anchor, height, width));
+  }, [anchor, loading, catalog, status, toast, saving, loggedIn]);
 
   useEffect(() => {
     let cancelled = false;
@@ -100,9 +157,21 @@ export function WordTapSheet({ word, onClose, onSaved }: Props) {
     }
   }
 
-  return (
-    <div className="bs-word-sheet-backdrop" onClick={onClose}>
-      <div className="bs-bichleg-sheet" onClick={(e) => e.stopPropagation()}>
+  const node = (
+    <>
+      <div
+        className="bs-word-tap-backdrop"
+        onClick={onClose}
+        aria-hidden
+      />
+      <div
+        ref={popoverRef}
+        className="bs-word-tap-popover bs-bichleg-sheet"
+        style={pos}
+        role="dialog"
+        aria-label={`${word.zh} — үгийн тайлбар`}
+        onClick={(e) => e.stopPropagation()}
+      >
         <p className="bs-bichleg-sheet-zh hanzi">{word.zh}</p>
         {displayPinyin ? (
           <p className="bs-bichleg-sheet-py">{displayPinyin}</p>
@@ -166,6 +235,8 @@ export function WordTapSheet({ word, onClose, onSaved }: Props) {
         </div>
         {toast ? <p className="bs-bichleg-sheet-note">{toast}</p> : null}
       </div>
-    </div>
+    </>
   );
+
+  return createPortal(node, document.body);
 }

@@ -20,22 +20,24 @@
   outline: none;
 }
 
-.bs-mn-term-popover-backdrop {
-  position: fixed;
-  inset: 0;
-  z-index: 129;
-  background: transparent;
-}
-
 .bs-mn-term-popover {
   position: fixed;
-  z-index: 130;
-  width: calc(100% - 16px);
+  z-index: 10050;
+  width: auto;
+  max-height: min(70vh, 420px);
+  overflow-y: auto;
   background: #fff;
   border-radius: 12px;
   padding: 14px 16px;
   box-shadow: var(--bs-shadow-lg, 0 12px 40px rgba(0, 0, 0, 0.16));
   border: 1px solid var(--bs-line, #e8e8e4);
+}
+
+.bs-mn-term-popover-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 10040;
+  background: rgba(0, 0, 0, 0.12);
 }
 .bs-mn-term-popover-title {
   font-size: 17px;
