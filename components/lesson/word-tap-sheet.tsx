@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { WordCharBreakdownPanel } from "@/components/review/word-char-breakdown-panel";
+import SpeakButton from "@/components/lesson/SpeakButton";
 import {
   getBichlegWordStatus,
   lookupHskWordDisplayBySimplified,
@@ -120,6 +121,10 @@ export function WordTapSheet({ word, onClose, onSaved }: Props) {
           text={word.zh}
           wordRadical={catalog?.radical ?? null}
         />
+
+        <div className="bs-bichleg-sheet-listen">
+          <SpeakButton text={word.zh} large title="Үгийг сонсох" />
+        </div>
 
         <div className="bs-bichleg-sheet-actions">
           <button type="button" className="bs-bichleg-sheet-btn" onClick={onClose}>

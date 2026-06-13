@@ -4,6 +4,7 @@ import {
   pickPackageAudioPath,
   resolveStorageLessonIdForAudio,
 } from "@/lib/lesson/package-audio-resolve";
+import { exerciseSourceHasPlayerContent } from "@/lib/lesson/build-exercise-questions";
 import {
   listeningItemCount,
   resolveExercisesWorkbook,
@@ -21,11 +22,15 @@ import {
 import { normalizeCharactersPayload } from "@/lib/hanzi/normalize-characters";
 import type {
   HskLessonPackage,
+  HskPackageCollocation,
   HskPackageDialogue,
   HskPackageGrammarPoint,
+  HskPackageGrammarExercise,
+  HskGrammarExerciseType,
   HskPackageModuleKey,
   HskPackageParagraphSummary,
   HskPackageShortText,
+  HskPackageWritingSample,
   HskPackageTextReflection,
   HskPackageTextSentence,
   HskPackageTextToken,
@@ -225,12 +230,22 @@ function enrichPackageFromStudyTeaching(
         ? normalizeGrammarPoints(pkg.word_explanation)
         : undefined;
 
+  const parsedNote = parseLessonSourceNote(lesson.sourceNote);
+  const studyRecord =
+    parsedNote.format === "json" && isRecord(parsedNote.data.hskStudyContent)
+      ? (parsedNote.data.hskStudyContent as Record<string, unknown>)
+      : null;
+  const resolvedCollocations = resolveCollocations(teaching, studyRecord, sections);
+  const collocations =
+    resolvedCollocations.length > 0 ? resolvedCollocations : pkg.collocations;
+
   return {
     ...pkg,
     dialogues: dialogues.length > 0 ? dialogues : pkg.dialogues,
     texts: textsOut.length > 0 ? textsOut : pkg.texts,
     characters: characters ?? pkg.characters,
     word_explanation,
+    collocations,
   };
 }
 
@@ -408,10 +423,70 @@ function legacyFlatTextToSentences(
     .filter((row): row is HskPackageTextSentence => row !== null);
 }
 
+function parseWritingSample(raw: unknown): HskPackageWritingSample | undefined {
+  if (!isRecord(raw)) return undefined;
+  const zh = trim(raw.zh) || trim(raw.chinese);
+  if (!zh) return undefined;
+  return {
+    title_mn: trim(raw.title_mn) || trim(raw.titleMn) || undefined,
+    zh,
+    pinyin: trim(raw.pinyin) || undefined,
+    mn: trim(raw.mn) || trim(raw.mongolian) || undefined,
+  };
+}
+
+function parseGrammarExercises(raw: unknown): HskPackageGrammarExercise[] {
+  if (!Array.isArray(raw)) return [];
+  const out: HskPackageGrammarExercise[] = [];
+  for (const row of raw) {
+    if (!isRecord(row)) continue;
+    const typeRaw = trim(row.type).toLowerCase();
+    if (typeRaw !== "choice" && typeRaw !== "fill" && typeRaw !== "judge") continue;
+    const type = typeRaw as HskGrammarExerciseType;
+    const question =
+      trim(row.question) || trim(row.q) || trim(row.prompt) || trim(row.statement);
+    if (!question) continue;
+
+    const optionsRaw = row.options;
+    const options = Array.isArray(optionsRaw)
+      ? optionsRaw.map((o) => String(o).trim()).filter(Boolean)
+      : undefined;
+
+    let answer: string | number | boolean = row.answer as string | number | boolean;
+    if (answer == null || answer === "") {
+      if (type === "judge" && row.correct != null) {
+        answer = row.correct as boolean;
+      } else {
+        continue;
+      }
+    }
+
+    out.push({
+      type,
+      question,
+      options: options?.length ? options : undefined,
+      answer,
+      explanation_correct_mn:
+        trim(row.explanation_correct_mn) ||
+        trim(row.explanationCorrectMn) ||
+        trim(row.why_correct_mn) ||
+        undefined,
+      explanation_wrong_mn:
+        trim(row.explanation_wrong_mn) ||
+        trim(row.explanationWrongMn) ||
+        trim(row.why_wrong_mn) ||
+        undefined,
+    });
+  }
+  return out;
+}
+
 function normalizePackageText(raw: unknown, index: number): HskPackageShortText | null {
   if (!isRecord(raw)) return null;
   const id = Number(raw.id) || index + 1;
   const audio = pickPackageAudioPath(raw);
+  const title_mn = trim(raw.title_mn) || trim(raw.titleMn) || undefined;
+  const writingSample = parseWritingSample(raw.writingSample);
 
   const paragraph_summaries = parseParagraphSummaries(
     raw.paragraph_summaries ?? raw.paragraphSummaries
@@ -422,30 +497,35 @@ function normalizePackageText(raw: unknown, index: number): HskPackageShortText 
     const sentences = raw.sentences
       .map((item) => normalizeTextSentence(item))
       .filter((row): row is HskPackageTextSentence => row !== null);
-    if (sentences.length === 0) return null;
+    if (sentences.length === 0 && !writingSample) return null;
     return {
       id,
+      title_mn,
       audio,
       sentences,
       paragraph_summaries:
         paragraph_summaries.length > 0 ? paragraph_summaries : undefined,
       reflection,
+      writingSample,
     };
   }
 
   const zh = trim(raw.zh) || trim(raw.chinese);
   const mn = trim(raw.mn) || trim(raw.mongolian);
   const pinyin = trim(raw.pinyin);
-  if (!zh && !mn) return null;
-  const sentences = legacyFlatTextToSentences(zh, pinyin, mn);
-  if (sentences.length === 0) return null;
+  if (!zh && !mn && !writingSample) return null;
+  const sentences =
+    zh || mn ? legacyFlatTextToSentences(zh, pinyin, mn) : [];
+  if (sentences.length === 0 && !writingSample) return null;
   return {
     id,
+    title_mn,
     audio,
     sentences,
     paragraph_summaries:
       paragraph_summaries.length > 0 ? paragraph_summaries : undefined,
     reflection,
+    writingSample,
   };
 }
 
@@ -508,6 +588,7 @@ function mapGrammar(raw: unknown): HskPackageGrammarPoint[] {
       trim(item.body_mn) ||
       trim(item.bodyMn);
     const overlay = parseTeacherOverlayFields(item);
+    const exercises = parseGrammarExercises(item.exercises);
     const examplesRaw = item.examples ?? item.example ?? item.samples;
     const examples = Array.isArray(examplesRaw)
       ? examplesRaw
@@ -524,6 +605,7 @@ function mapGrammar(raw: unknown): HskPackageGrammarPoint[] {
       !point &&
       !gloss &&
       examples.length === 0 &&
+      exercises.length === 0 &&
       !overlay.structure &&
       !overlay.teacher_notes &&
       !overlay.common_mistakes?.length &&
@@ -537,6 +619,7 @@ function mapGrammar(raw: unknown): HskPackageGrammarPoint[] {
       gloss_mn: gloss || point,
       teacher_mn: teacher || gloss || point,
       examples,
+      exercises: exercises.length > 0 ? exercises : undefined,
       ...overlay,
     });
   };
@@ -566,6 +649,7 @@ function normalizeGrammarPoints(raw: unknown): HskPackageGrammarPoint[] {
       const mapped = mapGrammar([item]);
       if (mapped.length > 0) return mapped[0]!;
       const overlay = parseTeacherOverlayFields(item);
+      const exercises = parseGrammarExercises(item.exercises);
       const point =
         trim(item.point) ||
         trim(item.pattern) ||
@@ -582,6 +666,7 @@ function normalizeGrammarPoints(raw: unknown): HskPackageGrammarPoint[] {
           trim(item.explanation) ||
           point,
         examples: [],
+        exercises: exercises.length > 0 ? exercises : undefined,
         ...overlay,
       };
     });
@@ -609,6 +694,44 @@ function resolveWordExplanation(
     if (mapped.length > 0) return mapped;
   }
   return [];
+}
+
+function resolveCollocations(
+  teaching: Record<string, unknown> | null,
+  study: Record<string, unknown> | null,
+  sections: Record<string, unknown> | null
+): HskPackageCollocation[] {
+  const raw =
+    teaching?.collocations ??
+    study?.collocations ??
+    sections?.collocations ??
+    null;
+  if (!Array.isArray(raw)) return [];
+
+  const out: HskPackageCollocation[] = [];
+  for (const row of raw) {
+    if (!isRecord(row)) continue;
+    const zh = trim(row.zh);
+    if (!zh) continue;
+    const exampleRaw = row.example;
+    const example = isRecord(exampleRaw)
+      ? {
+          zh: trim(exampleRaw.zh),
+          pinyin: trim(exampleRaw.pinyin) || undefined,
+          mn: trim(exampleRaw.mn) || undefined,
+        }
+      : undefined;
+    out.push({
+      zh,
+      mn: trim(row.mn) || undefined,
+      usage_mn: trim(row.usage_mn) || trim(row.usageMn) || undefined,
+      example:
+        example && example.zh
+          ? example
+          : undefined,
+    });
+  }
+  return out;
 }
 
 /**
@@ -670,7 +793,10 @@ export function moduleHasContent(
         (pkg.grammar?.length ?? 0) > 0 || (pkg.word_explanation?.length ?? 0) > 0
       );
     case "exercises_textbook":
-      return hasExerciseContent(pkg.exercises_textbook);
+      return exerciseSourceHasPlayerContent(
+        pkg as HskLessonPackage,
+        "textbook"
+      );
     case "exercises_workbook":
       return workbookExercisesHasContent(pkg.exercises_workbook);
     case "recap":
@@ -691,7 +817,7 @@ export function resolveModulesEnabled(
   if (workbookExercisesHasContent(pkg.exercises_workbook)) {
     declaredSet.add("exercises_workbook");
   }
-  if (hasExerciseContent(pkg.exercises_textbook)) {
+  if (exerciseSourceHasPlayerContent(pkg as HskLessonPackage, "textbook")) {
     declaredSet.add("exercises_textbook");
   }
 
@@ -911,6 +1037,13 @@ function buildHskLessonPackageFromLessonContent(
     sections
   );
 
+  const parsedNote = parseLessonSourceNote(lesson.sourceNote);
+  const studyRecord =
+    parsedNote.format === "json" && isRecord(parsedNote.data.hskStudyContent)
+      ? (parsedNote.data.hskStudyContent as Record<string, unknown>)
+      : null;
+  const collocations = resolveCollocations(teaching, studyRecord, sections);
+
   const hookRecord = isRecord(teaching?.hook) ? teaching.hook : null;
   const teacherMn =
     trim(hookRecord?.teacher_mn) ||
@@ -960,6 +1093,7 @@ function buildHskLessonPackageFromLessonContent(
     grammar: mappedGrammar.length > 0 ? mappedGrammar : undefined,
     word_explanation:
       wordExplanation.length > 0 ? wordExplanation : undefined,
+    collocations: collocations.length > 0 ? collocations : undefined,
     exercises_textbook: teaching?.exercises_textbook,
     exercises_workbook: resolveExercisesWorkbook(teaching, workbook),
     recap: teaching?.recap,

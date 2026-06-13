@@ -8,6 +8,7 @@ import type {
   HskPackageVocabItem,
 } from "@/types/hsk-lesson-package";
 import { WordTapSheet, type WordTapPayload } from "@/components/lesson/word-tap-sheet";
+import { playChineseWordAudio } from "@/lib/tts/play-chinese-word-audio";
 import {
   loadTextReaderShowMn,
   loadTextReaderShowPinyin,
@@ -69,6 +70,7 @@ export function LiveTextReader({ text, vocabulary = [] }: Props) {
   }
 
   function pickWord(zh: string, pinyin?: string) {
+    void playChineseWordAudio(zh);
     const lesson = vocabByZh.get(zh);
     setPickedWord({
       zh,

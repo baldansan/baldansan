@@ -1,4 +1,5 @@
 import { moduleHasContent } from "@/lib/lesson/resolve-hsk-lesson-package";
+import { resolveExercisePracticeSource } from "@/lib/lesson/build-exercise-questions";
 import type { HskLessonPackage } from "@/types/hsk-lesson-package";
 import type { QuizQuestion } from "@/types/lesson";
 
@@ -107,10 +108,7 @@ function stageHasContent(
     case "grammar":
       return moduleHasContent(pkg, "grammar");
     case "practice":
-      return (
-        moduleHasContent(pkg, "exercises_textbook") ||
-        moduleHasContent(pkg, "exercises_workbook")
-      );
+      return resolveExercisePracticeSource(pkg) != null;
     case "quiz":
       return quizQuestions.length > 0;
     case "summary":
@@ -137,12 +135,8 @@ export function buildLessonPathPlan(
   if (moduleHasContent(pkg, "dialogues")) warmupExtras.push("dialogues");
   if (moduleHasContent(pkg, "pronunciation")) warmupExtras.push("pronunciation");
 
-  let practiceSource: LessonPathPlan["practiceSource"] = null;
-  if (moduleHasContent(pkg, "exercises_textbook")) {
-    practiceSource = "textbook";
-  } else if (moduleHasContent(pkg, "exercises_workbook")) {
-    practiceSource = "workbook";
-  }
+  let practiceSource: LessonPathPlan["practiceSource"] =
+    resolveExercisePracticeSource(pkg);
 
   const activeIds = STAGE_ORDER.filter((id) =>
     stageHasContent(id, pkg, quizQuestions)
