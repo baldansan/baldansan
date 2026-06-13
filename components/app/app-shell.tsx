@@ -13,6 +13,8 @@ type Props = {
   showBottomNav?: boolean;
   /** Бичлэг тоглуулагч зэрэг бүтэн дэлгэцийн контент — padding/max-width байхгүй. */
   immersive?: boolean;
+  /** Шалгалт зэрэг бүтэн дэлгэц — desktop sidebar нуугдана. */
+  hideSidebar?: boolean;
   mainClassName?: string;
 };
 
@@ -24,6 +26,7 @@ export function AppShell({
   activeTab,
   showBottomNav = true,
   immersive = false,
+  hideSidebar = false,
   mainClassName = "",
 }: Props) {
   const navTab = resolveBottomNavTab(activeTab);
@@ -34,8 +37,12 @@ export function AppShell({
         showBottomNav ? "pb-32 lg:pb-8" : "pb-6"
       } ${mainClassName}`;
 
+  const rootClass = hideSidebar
+    ? "bs-app-root bs-app-root--no-sidebar"
+    : "bs-app-root lg:pl-60";
+
   return (
-    <div className="bs-app-root lg:pl-60">
+    <div className={rootClass}>
       <AppSidebar active={navTab} />
 
       <PhoneFrame>

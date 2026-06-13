@@ -86,6 +86,9 @@ async function loadFile(supabase, filePath) {
     hsk_level: raw.hsk_level != null ? Number(raw.hsk_level) : null,
     duration_sec: raw.duration_sec != null ? Number(raw.duration_sec) : null,
     sync_offset_sec: Number(raw.sync_offset_sec ?? 0),
+    subtitle_offset_sec: Number(
+      raw.subtitle_offset_sec ?? raw.sync_offset_sec ?? 0
+    ),
     tags: Array.isArray(raw.tags) ? raw.tags.map(String) : [],
     series_id: seriesId,
     episode_no: episodeNo,
@@ -114,6 +117,7 @@ async function loadFile(supabase, filePath) {
     pinyin: s.pinyin ?? null,
     mn: s.mn ?? null,
     words: s.words ?? null,
+    slang_note: s.slang_note ?? null,
   }));
 
   if (rows.length) {

@@ -1,11 +1,11 @@
 import { normalizeSeriesCoverUrl } from "@/lib/bichleg/series-cover";
+import { mapVideoSubtitleRow } from "@/lib/bichleg/map-subtitle";
 import type {
   VideoEpisodeItem,
   VideoRow,
   VideoSeriesCard,
   VideoSeriesInfo,
   VideoSubtitleRow,
-  SubtitleWord,
 } from "@/lib/bichleg/types";
 import {
   createServerSupabaseClient,
@@ -54,39 +54,14 @@ function mapVideo(raw: Record<string, unknown>): VideoRow {
     hsk_level: raw.hsk_level != null ? Number(raw.hsk_level) : null,
     duration_sec: raw.duration_sec != null ? Number(raw.duration_sec) : null,
     sync_offset_sec: Number(raw.sync_offset_sec ?? 0),
+    subtitle_offset_sec: Number(
+      raw.subtitle_offset_sec ?? raw.sync_offset_sec ?? 0
+    ),
     tags: Array.isArray(raw.tags) ? raw.tags.map(String) : [],
     series_id: raw.series_id ? String(raw.series_id) : null,
     episode_no: raw.episode_no != null ? Number(raw.episode_no) : null,
     series: mapSeries(seriesRaw ?? null),
     created_at: String(raw.created_at),
-  };
-}
-
-function mapSubtitle(raw: Record<string, unknown>): VideoSubtitleRow {
-  let words: SubtitleWord[] | null = null;
-  if (raw.words != null && Array.isArray(raw.words)) {
-    words = raw.words.map((w) => {
-      const word = w as Record<string, unknown>;
-      return {
-        zh: String(word.zh ?? ""),
-        pinyin: word.pinyin ? String(word.pinyin) : undefined,
-        mn: word.mn ? String(word.mn) : undefined,
-        key: Boolean(word.key),
-      };
-    });
-  }
-
-  return {
-    id: String(raw.id),
-    video_id: String(raw.video_id),
-    idx: Number(raw.idx),
-    start_sec: Number(raw.start_sec),
-    end_sec: Number(raw.end_sec),
-    speaker: raw.speaker ? String(raw.speaker) : null,
-    zh: raw.zh ? String(raw.zh) : null,
-    pinyin: raw.pinyin ? String(raw.pinyin) : null,
-    mn: raw.mn ? String(raw.mn) : null,
-    words,
   };
 }
 
@@ -373,5 +348,5 @@ export async function fetchVideoSubtitles(
     .order("idx", { ascending: true });
 
   if (error || !data) return [];
-  return data.map((row) => mapSubtitle(row as Record<string, unknown>));
+  return data.map((row) => mapVideoSubtitleRow(row as Record<string, unknown>));
 }

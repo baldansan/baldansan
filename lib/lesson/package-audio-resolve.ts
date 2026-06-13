@@ -1,4 +1,5 @@
 import { normalizeZipPath } from "@/lib/import/zip-path";
+import { resolveHsk5AudioPath } from "@/lib/hsk5/get-audio-url";
 import { applyWorkbookListeningPlayableAudio } from "@/lib/lesson/workbook-exercises";
 import { resolveWorkbookListeningItemAudio } from "@/lib/lesson/workbook-listening-audio";
 import { parseLessonSourceNote } from "@/lib/lesson/source-note-json";
@@ -128,6 +129,9 @@ export function resolvePackageAudioFileUrl(input: {
   const path = trim(input.filePath);
   if (!path) return null;
   if (/^https?:\/\//i.test(path)) return path;
+
+  const fromHsk5 = resolveHsk5AudioPath(path);
+  if (fromHsk5) return fromHsk5;
 
   const fromMap = lookupUploadMap(input.uploadMap ?? {}, path);
   if (fromMap) return fromMap;
@@ -277,6 +281,9 @@ export function resolveLessonPackagePlayableUrl(
   if (!path) return null;
   if (/^https?:\/\//i.test(path)) return path;
 
+  const fromHsk5 = resolveHsk5AudioPath(path);
+  if (fromHsk5) return fromHsk5;
+
   const uploadMap = ctx.uploadMap ?? {};
   const fromMap = lookupUploadMap(uploadMap, path);
   if (fromMap) return fromMap;
@@ -358,15 +365,22 @@ export function applyLessonPackageAudioUrls(
   pkg: HskLessonPackage,
   lesson: Pick<LessonContent, "courseId" | "id" | "sourceNote">
 ): HskLessonPackage {
+  const isHsk5 = trim(lesson.courseId).toLowerCase() === "hsk5";
   const uploadMap = parsePackageAudioUploadMapFromSourceNote(lesson.sourceNote);
-  const publicStorageBase = buildLessonPackageAudioPublicBase(
-    lesson.courseId,
-    resolveStorageLessonIdForAudio(lesson)
-  );
+  const publicStorageBase = isHsk5
+    ? null
+    : buildLessonPackageAudioPublicBase(
+        lesson.courseId,
+        resolveStorageLessonIdForAudio(lesson)
+      );
 
   const ctx = {
     publicStorageBase,
-    packageAudioBase: publicStorageBase ? undefined : pkg.audio_base_path,
+    packageAudioBase: isHsk5
+      ? undefined
+      : publicStorageBase
+        ? undefined
+        : pkg.audio_base_path,
     uploadMap,
   };
 
@@ -390,6 +404,6 @@ export function applyLessonPackageAudioUrls(
     dialogues,
     texts,
     exercises_workbook,
-    audio_base_path: publicStorageBase ?? undefined,
+    audio_base_path: isHsk5 ? undefined : (publicStorageBase ?? undefined),
   };
 }

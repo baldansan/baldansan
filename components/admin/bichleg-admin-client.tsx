@@ -65,7 +65,7 @@ export function BichlegAdminClient({ initialSeries }: Props) {
       setEpisodes(data.episodes ?? []);
       const drafts: Record<string, string> = {};
       for (const ep of data.episodes ?? []) {
-        drafts[ep.id] = String(ep.sync_offset_sec);
+        drafts[ep.id] = String(ep.subtitle_offset_sec);
       }
       setOffsetDrafts(drafts);
     } catch {
@@ -79,7 +79,7 @@ export function BichlegAdminClient({ initialSeries }: Props) {
     const raw = offsetDrafts[videoId];
     const value = Number(raw);
     if (!Number.isFinite(value)) {
-      setError("sync_offset_sec тоо оруулна уу.");
+      setError("subtitle_offset_sec тоо оруулна уу.");
       return;
     }
 
@@ -92,7 +92,7 @@ export function BichlegAdminClient({ initialSeries }: Props) {
         {
           method: "PATCH",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ sync_offset_sec: value }),
+          body: JSON.stringify({ subtitle_offset_sec: value }),
         }
       );
       const data = (await res.json()) as { ok?: boolean; error?: string };
@@ -102,7 +102,7 @@ export function BichlegAdminClient({ initialSeries }: Props) {
       }
       setEpisodes((prev) =>
         prev.map((ep) =>
-          ep.id === videoId ? { ...ep, sync_offset_sec: value } : ep
+          ep.id === videoId ? { ...ep, subtitle_offset_sec: value } : ep
         )
       );
     } catch {

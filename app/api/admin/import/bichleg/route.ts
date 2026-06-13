@@ -1,12 +1,12 @@
 import { NextResponse } from "next/server";
 import { importBichlegVideosOnServer } from "@/lib/admin/import-bichleg-server";
 import type { BichlegImportApiBody } from "@/lib/import/bichleg-video-types";
-import { getAdminBichlegSupabaseClient } from "@/lib/supabase/admin-bichleg-client";
+import { getAdminServiceRoleSupabaseClient } from "@/lib/supabase/admin-service-role-client";
 
 export const maxDuration = 60;
 
 export async function POST(request: Request) {
-  const clientResult = await getAdminBichlegSupabaseClient();
+  const clientResult = await getAdminServiceRoleSupabaseClient();
   if (!clientResult.ok) {
     return NextResponse.json(
       { ok: false, errors: [clientResult.error] },

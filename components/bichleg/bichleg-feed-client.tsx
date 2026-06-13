@@ -5,14 +5,18 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { AppShell } from "@/components/app/app-shell";
 import { BottomNavChrome } from "@/components/mobile/bottom-nav-chrome";
 import { SHELL_MAIN_NARROW } from "@/lib/app-shell-classes";
+import { BichlegSlangSheet } from "@/components/bichleg/bichleg-slang-sheet";
 import {
   formatSeriesEpisodeBadge,
+  type SubtitleSlangNote,
   type SubtitleWord,
   type UserVideoProgress,
   type VideoRow,
   type VideoSubtitleRow,
 } from "@/lib/bichleg/types";
 import { upsertVideoWatchProgress } from "@/lib/supabase/video-progress-client";
+import { BichlegPlayerTouchLayer } from "@/components/bichleg/bichleg-player-touch-layer";
+import { BichlegPlayerTransport } from "@/components/bichleg/bichleg-player-transport";
 import { BichlegYouTubePlayer } from "@/components/bichleg/bichleg-youtube-player";
 import {
   formatPlaybackRateLabel,
@@ -25,6 +29,21 @@ import {
   safePlayerDuration,
   type YtPlayer,
 } from "@/lib/bichleg/youtube-api";
+import {
+  BICHLEG_SKIP_SECONDS,
+  clampPlaybackTime,
+  formatSubtitleClock,
+} from "@/lib/bichleg/player-seek";
+import {
+  findActiveSubtitle,
+  formatUserSubtitleOffsetLabel,
+  nextUserSubtitleOffset,
+  readUserSubtitleOffset,
+  subtitlePlayerSeekSec,
+  totalSubtitleOffsetSec,
+  writeUserSubtitleOffset,
+  type UserSubtitleOffsetOption,
+} from "@/lib/bichleg/subtitle-offset";
 import {
   detectYouTubeVideoLayout,
   type BichlegVideoLayout,
@@ -47,18 +66,6 @@ type Props = {
 const WATCH_SAVE_INTERVAL_MS = 10_000;
 
 type PickedWord = SubtitleWord & { sourceVideoId: string };
-
-function findActiveSubtitle(
-  subtitles: VideoSubtitleRow[],
-  time: number,
-  offset: number
-): VideoSubtitleRow | null {
-  return (
-    subtitles.find(
-      (s) => time >= s.start_sec + offset && time < s.end_sec + offset
-    ) ?? null
-  );
-}
 
 function collectKeyWords(subtitles: VideoSubtitleRow[]): SubtitleWord[] {
   const seen = new Set<string>();
@@ -153,10 +160,18 @@ export function BichlegFeedClient({
   const [bookmarked, setBookmarked] = useState<Record<string, boolean>>({});
   const [showKeys, setShowKeys] = useState(false);
   const [pickedWord, setPickedWord] = useState<PickedWord | null>(null);
+  const [pickedSlangNote, setPickedSlangNote] = useState<SubtitleSlangNote | null>(
+    null
+  );
+  const [slangSubtitleIdx, setSlangSubtitleIdx] = useState<number | null>(null);
   const [wordStatus, setWordStatus] = useState<BichlegWordStatus | null>(null);
   const [statusLoading, setStatusLoading] = useState(false);
   const [toast, setToast] = useState<string | null>(null);
   const [playerReady, setPlayerReady] = useState(false);
+  const [isPlaying, setIsPlaying] = useState(true);
+  const [skipOverlay, setSkipOverlay] = useState<string | null>(null);
+  const [userSubtitleOffset, setUserSubtitleOffset] =
+    useState<UserSubtitleOffsetOption>(0);
   const [layoutByYoutubeId, setLayoutByYoutubeId] = useState<
     Record<string, BichlegVideoLayout>
   >({});
@@ -223,11 +238,15 @@ export function BichlegFeedClient({
   const activeSubtitles = activeVideo
     ? (subtitlesMap[activeVideo.id] ?? [])
     : [];
-  const syncOffset = activeVideo?.sync_offset_sec ?? 0;
-  const activeSubtitle = findActiveSubtitle(
-    activeSubtitles,
-    currentTime,
-    syncOffset
+  const totalSubtitleOffset = useMemo(() => {
+    if (!activeVideo) return userSubtitleOffset;
+    return totalSubtitleOffsetSec(activeVideo, userSubtitleOffset);
+  }, [activeVideo, userSubtitleOffset]);
+
+  const activeSubtitle = useMemo(
+    () =>
+      findActiveSubtitle(activeSubtitles, currentTime, totalSubtitleOffset),
+    [activeSubtitles, currentTime, totalSubtitleOffset]
   );
   const keyWords = useMemo(
     () => collectKeyWords(activeSubtitles),
@@ -273,6 +292,13 @@ export function BichlegFeedClient({
 
   useEffect(() => {
     setCurrentTime(0);
+    setIsPlaying(true);
+    setSkipOverlay(null);
+  }, [activeVideo?.id]);
+
+  useEffect(() => {
+    if (!activeVideo) return;
+    setUserSubtitleOffset(readUserSubtitleOffset(activeVideo.id));
   }, [activeVideo?.id]);
 
   useEffect(() => {
@@ -401,8 +427,75 @@ export function BichlegFeedClient({
     return () => clearTimeout(t);
   }, [toast]);
 
-  function handleUnmuteTap() {
+  useEffect(() => {
+    if (!skipOverlay) return;
+    const t = setTimeout(() => setSkipOverlay(null), 500);
+    return () => clearTimeout(t);
+  }, [skipOverlay]);
+
+  function ensureUnmuted() {
     if (muted) setMuted(false);
+  }
+
+  function handlePlayerStateChange(state: number) {
+    if (state === YT.PlayerState.PLAYING) {
+      setIsPlaying(true);
+      return;
+    }
+    if (state === YT.PlayerState.PAUSED || state === YT.PlayerState.ENDED) {
+      setIsPlaying(false);
+    }
+  }
+
+  function resolvePlayerDuration(player: YtPlayer): number {
+    const fromPlayer = safePlayerDuration(player);
+    if (fromPlayer != null && fromPlayer > 0) return fromPlayer;
+    if (duration > 0) return duration;
+    if (activeVideo?.duration_sec) return Number(activeVideo.duration_sec);
+    return 0;
+  }
+
+  function seekToTime(targetSec: number, showSkipLabel?: string) {
+    ensureUnmuted();
+    runOnPlayer((player) => {
+      const max = resolvePlayerDuration(player);
+      const next = clampPlaybackTime(targetSec, max);
+      player.seekTo(next, true);
+      setCurrentTime(next);
+      if (max > 0) setDuration(max);
+    });
+    if (showSkipLabel) setSkipOverlay(showSkipLabel);
+  }
+
+  function seekRelative(deltaSec: number) {
+    runOnPlayer((player) => {
+      const max = resolvePlayerDuration(player);
+      const current = safePlayerCurrentTime(player) ?? currentTime;
+      const next = clampPlaybackTime(current + deltaSec, max);
+      player.seekTo(next, true);
+      setCurrentTime(next);
+    });
+    setSkipOverlay(
+      deltaSec < 0 ? `-${BICHLEG_SKIP_SECONDS}с` : `+${BICHLEG_SKIP_SECONDS}с`
+    );
+    ensureUnmuted();
+  }
+
+  function togglePlayPause() {
+    ensureUnmuted();
+    if (isPlaying) pausePlayback();
+    else resumePlayback();
+  }
+
+  function seekToSubtitle(sub: VideoSubtitleRow) {
+    seekToTime(subtitlePlayerSeekSec(sub, totalSubtitleOffset));
+  }
+
+  function cycleUserSubtitleOffset() {
+    if (!activeVideo) return;
+    const next = nextUserSubtitleOffset(userSubtitleOffset);
+    setUserSubtitleOffset(next);
+    writeUserSubtitleOffset(activeVideo.id, next);
   }
 
   function runOnPlayer(fn: (player: YtPlayer) => void) {
@@ -415,11 +508,35 @@ export function BichlegFeedClient({
     }
   }
 
+  function resumePlayback() {
+    runOnPlayer((player) => player.playVideo());
+  }
+
+  function pausePlayback() {
+    runOnPlayer((player) => player.pauseVideo());
+  }
+
   function handleWordPick(word: SubtitleWord) {
     if (!activeVideo) return;
-    runOnPlayer((player) => player.pauseVideo());
+    pausePlayback();
+    setPickedSlangNote(null);
+    setSlangSubtitleIdx(null);
     setWordStatus(null);
     setPickedWord({ ...word, sourceVideoId: activeVideo.id });
+  }
+
+  function handleSlangOpen(note: SubtitleSlangNote) {
+    pausePlayback();
+    setPickedWord(null);
+    setWordStatus(null);
+    setPickedSlangNote(note);
+    setSlangSubtitleIdx(activeSubtitle?.idx ?? null);
+  }
+
+  function handleSlangClose() {
+    setPickedSlangNote(null);
+    setSlangSubtitleIdx(null);
+    resumePlayback();
   }
 
   useEffect(() => {
@@ -443,8 +560,17 @@ export function BichlegFeedClient({
   function handleContinue() {
     setPickedWord(null);
     setWordStatus(null);
-    runOnPlayer((player) => player.playVideo());
+    resumePlayback();
   }
+
+  useEffect(() => {
+    if (!pickedSlangNote || slangSubtitleIdx == null) return;
+    if (activeSubtitle?.idx !== slangSubtitleIdx) {
+      setPickedSlangNote(null);
+      setSlangSubtitleIdx(null);
+      resumePlayback();
+    }
+  }, [activeSubtitle?.idx, pickedSlangNote, slangSubtitleIdx]);
 
   async function handleSaveWord() {
     if (!pickedWord || wordStatus?.inSrs) return;
@@ -470,7 +596,7 @@ export function BichlegFeedClient({
       }
       setPickedWord(null);
       setWordStatus(null);
-      runOnPlayer((player) => player.playVideo());
+      resumePlayback();
     } else if (result.error) {
       setToast(result.error);
     }
@@ -485,7 +611,10 @@ export function BichlegFeedClient({
             <button
               type="button"
               className={`bs-bl-word ${w.key ? "bs-bl-word--key" : ""}`}
-              onClick={() => handleWordPick(w)}
+              onClick={(event) => {
+                event.stopPropagation();
+                handleWordPick(w);
+              }}
             >
               {w.zh}
             </button>
@@ -549,21 +678,40 @@ export function BichlegFeedClient({
                 }`}
                 data-slide-index={index}
               >
-                <div
-                  className="bs-bichleg-player-wrap"
-                  onClick={handleUnmuteTap}
-                  role="presentation"
-                >
+                <div className="bs-bichleg-player-wrap" role="presentation">
                   {isActive ? (
                     <BichlegYouTubePlayer
                       key={video.id}
                       youtubeId={video.youtube_id}
                       onPlayerChange={handlePlayerChange}
                       onReady={handlePlayerReady}
+                      onStateChange={handlePlayerStateChange}
                     />
                   ) : (
                     <div className="bs-bichleg-player-placeholder" />
                   )}
+                  {isActive ? (
+                    <>
+                      <BichlegPlayerTouchLayer
+                        onDoubleTapLeft={() =>
+                          seekRelative(-BICHLEG_SKIP_SECONDS)
+                        }
+                        onDoubleTapRight={() =>
+                          seekRelative(BICHLEG_SKIP_SECONDS)
+                        }
+                        onSingleTapCenter={togglePlayPause}
+                      />
+                      {skipOverlay ? (
+                        <div className="bs-bichleg-skip-overlay">{skipOverlay}</div>
+                      ) : null}
+                      <BichlegPlayerTransport
+                        isPlaying={isPlaying}
+                        onRewind={() => seekRelative(-BICHLEG_SKIP_SECONDS)}
+                        onTogglePlay={togglePlayPause}
+                        onForward={() => seekRelative(BICHLEG_SKIP_SECONDS)}
+                      />
+                    </>
+                  ) : null}
                   <div
                     className="bs-bichleg-progress"
                     style={{ width: `${isActive ? progressPct : 0}%` }}
@@ -575,16 +723,36 @@ export function BichlegFeedClient({
 
                 {isActive && activeSubtitle ? (
                   <div className="bs-bichleg-subs">
-                    <div className="bs-bichleg-subs-panel">
-                      {activeSubtitle.speaker ? (
-                        <p className="bs-bl-speaker">{activeSubtitle.speaker}</p>
-                      ) : null}
-                      {showPinyin && activeSubtitle.pinyin ? (
-                        <p className="bs-bl-pinyin">{activeSubtitle.pinyin}</p>
-                      ) : null}
-                      {activeSubtitle.zh ? renderZh(activeSubtitle) : null}
-                      {showMn && activeSubtitle.mn ? (
-                        <p className="bs-bl-mn">{activeSubtitle.mn}</p>
+                    <div className="bs-bichleg-subs-row">
+                      <button
+                        type="button"
+                        className="bs-bichleg-subs-panel"
+                        aria-label="Энэ мөрийн эхнээс сонсох"
+                        onClick={() => seekToSubtitle(activeSubtitle)}
+                      >
+                        <span className="bs-bl-time-badge">
+                          {formatSubtitleClock(activeSubtitle.start_sec)}
+                        </span>
+                        {activeSubtitle.speaker ? (
+                          <p className="bs-bl-speaker">{activeSubtitle.speaker}</p>
+                        ) : null}
+                        {showPinyin && activeSubtitle.pinyin ? (
+                          <p className="bs-bl-pinyin">{activeSubtitle.pinyin}</p>
+                        ) : null}
+                        {activeSubtitle.zh ? renderZh(activeSubtitle) : null}
+                        {showMn && activeSubtitle.mn ? (
+                          <p className="bs-bl-mn">{activeSubtitle.mn}</p>
+                        ) : null}
+                      </button>
+                      {activeSubtitle.slang_note ? (
+                        <button
+                          type="button"
+                          className="bs-bl-slang-badge"
+                          aria-label="Залуусын хэллэг"
+                          onClick={() => handleSlangOpen(activeSubtitle.slang_note!)}
+                        >
+                          💬
+                        </button>
                       ) : null}
                     </div>
                   </div>
@@ -674,6 +842,15 @@ export function BichlegFeedClient({
           >
             {formatPlaybackRateLabel(displaySpeed)}
           </button>
+          <button
+            type="button"
+            className={`bs-bichleg-ctrl-btn bs-bichleg-ctrl-btn--offset ${userSubtitleOffset !== 0 ? "bs-bichleg-ctrl-btn--on" : ""}`}
+            aria-label="Хадмалын цаг"
+            title="Хадмалын цаг"
+            onClick={cycleUserSubtitleOffset}
+          >
+            {formatUserSubtitleOffsetLabel(userSubtitleOffset)}
+          </button>
           {muted ? (
             <button
               type="button"
@@ -688,6 +865,10 @@ export function BichlegFeedClient({
         <div className="absolute inset-x-0 bottom-0 z-50 px-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] pt-2 lg:hidden">
           <BottomNavChrome active="clips" />
         </div>
+
+        {pickedSlangNote ? (
+          <BichlegSlangSheet note={pickedSlangNote} onClose={handleSlangClose} />
+        ) : null}
 
         {pickedWord ? (
           <div className="bs-bichleg-sheet-backdrop" onClick={handleContinue}>

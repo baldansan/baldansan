@@ -5,6 +5,13 @@ export type SubtitleWord = {
   key?: boolean;
 };
 
+export type SubtitleSlangNote = {
+  term: string;
+  meaning: string;
+  usage: string;
+  register: string;
+};
+
 export type VideoSeriesInfo = {
   id: string;
   title_zh: string | null;
@@ -27,7 +34,9 @@ export type VideoRow = {
   source_url: string | null;
   hsk_level: number | null;
   duration_sec: number | null;
+  /** @deprecated Import legacy — prefer subtitle_offset_sec. */
   sync_offset_sec: number;
+  subtitle_offset_sec: number;
   tags: string[];
   series_id: string | null;
   episode_no: number | null;
@@ -50,6 +59,7 @@ export type VideoSubtitleRow = {
   pinyin: string | null;
   mn: string | null;
   words: SubtitleWord[] | null;
+  slang_note: SubtitleSlangNote | null;
 };
 
 export type SubtitleDisplayMode =

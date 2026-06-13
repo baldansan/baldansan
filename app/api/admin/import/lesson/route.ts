@@ -1,33 +1,16 @@
 import { NextResponse } from "next/server";
 import type { ImportDraftApiBody } from "@/lib/admin/build-import-draft-request";
 import { importDraftLessonOnServer } from "@/lib/admin/import-lesson-server";
-import { isCurrentUserAdminServer } from "@/lib/supabase/admin-server";
-import {
-  createServerSupabaseClient,
-  hasServerSupabaseConfig,
-} from "@/lib/supabase/server";
+import { getAdminServiceRoleSupabaseClient } from "@/lib/supabase/admin-service-role-client";
+
+export const maxDuration = 60;
 
 export async function POST(request: Request) {
-  if (!hasServerSupabaseConfig) {
+  const clientResult = await getAdminServiceRoleSupabaseClient();
+  if (!clientResult.ok) {
     return NextResponse.json(
-      { ok: false, errors: ["Supabase is not configured."] },
-      { status: 503 }
-    );
-  }
-
-  const client = await createServerSupabaseClient();
-  if (!client) {
-    return NextResponse.json(
-      { ok: false, errors: ["Could not create server client."] },
-      { status: 503 }
-    );
-  }
-
-  const isAdmin = await isCurrentUserAdminServer();
-  if (!isAdmin) {
-    return NextResponse.json(
-      { ok: false, errors: ["Admin эрх шаардлагатай."] },
-      { status: 403 }
+      { ok: false, errors: [clientResult.error] },
+      { status: clientResult.status }
     );
   }
 
@@ -61,7 +44,7 @@ export async function POST(request: Request) {
   }
 
   try {
-    const result = await importDraftLessonOnServer(client, body);
+    const result = await importDraftLessonOnServer(clientResult.client, body);
     const status = result.ok ? 200 : 422;
     if (!result.ok) {
       console.error("[api/admin/import/lesson] Import rejected", {

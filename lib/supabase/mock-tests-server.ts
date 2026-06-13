@@ -4,6 +4,14 @@ import {
   weakLessonsFromResponses,
   type WeakLessonRecommendation,
 } from "@/lib/mock-test/weak-lessons";
+import {
+  computeHskScoreBreakdown,
+  hskMaxTotal,
+  hskPassThreshold,
+  type HskAttemptScoreMetadata,
+  type HskScoreBreakdown,
+  type WritingSelfGrade,
+} from "@/lib/mock-test/hsk-scoring";
 import { scoreResultFromSavedResponses } from "@/lib/mock-test/scoring";
 import type {
   MockTestQuestionRow,
@@ -20,8 +28,15 @@ function mapSections(raw: unknown): MockTestSection[] {
   if (!Array.isArray(raw)) return [];
   return raw.map((s) => {
     const sec = s as Record<string, unknown>;
+    const timeMinRaw = sec.time_min ?? sec.timeMin;
+    const timeMin =
+      timeMinRaw != null && Number(timeMinRaw) > 0
+        ? Number(timeMinRaw)
+        : undefined;
+
     return {
       skill: String(sec.skill ?? ""),
+      time_min: timeMin,
       audio_url: sec.audio_url ? String(sec.audio_url) : null,
       parts: Array.isArray(sec.parts)
         ? sec.parts.map((p) => {
@@ -238,10 +253,54 @@ export type MockTestAttemptReview = {
   test: MockTestRow;
   questions: MockTestQuestionRow[];
   result: MockTestScoreResult;
+  hsk: HskScoreBreakdown;
   weakLessons: WeakLessonRecommendation[];
   completedLessonIds: string[];
   finishedAt: string | null;
 };
+
+function parseWritingGrades(
+  metadata: HskAttemptScoreMetadata | null
+): Record<number, WritingSelfGrade> {
+  if (!metadata?.writing_self_grades) return {};
+  const out: Record<number, WritingSelfGrade> = {};
+  for (const [qNo, grade] of Object.entries(metadata.writing_self_grades)) {
+    out[Number(qNo)] = grade;
+  }
+  return out;
+}
+
+function hskFromAttempt(
+  test: MockTestRow,
+  questions: MockTestQuestionRow[],
+  result: MockTestScoreResult,
+  metadata: HskAttemptScoreMetadata | null,
+  rawScore: number | null,
+  maxScore: number | null
+): HskScoreBreakdown {
+  if (metadata?.section_scores) {
+    return {
+      maxTotal: metadata.hsk_max ?? hskMaxTotal(test.hsk_level),
+      passThreshold:
+        metadata.pass_threshold ?? hskPassThreshold(test.hsk_level),
+      totalScore: metadata.hsk_total ?? Number(rawScore ?? 0),
+      passed: Boolean(metadata.passed),
+      sectionScores: metadata.section_scores,
+      sectionMax: {
+        listening: 100,
+        reading: 100,
+        writing: 100,
+      },
+      writingGraded: Boolean(metadata.writing_graded),
+      writingPending:
+        !metadata.writing_graded &&
+        Object.values(metadata.section_scores).some((score) => score == null),
+    };
+  }
+
+  const grades = parseWritingGrades(metadata);
+  return computeHskScoreBreakdown(test, questions, result, grades);
+}
 
 export async function fetchMockTestAttemptReview(
   attemptId: string
@@ -252,7 +311,7 @@ export async function fetchMockTestAttemptReview(
 
   const { data: attempt, error: attemptErr } = await client
     .from("user_test_attempts")
-    .select("id, test_id, finished_at, status")
+    .select("id, test_id, finished_at, status, raw_score, max_score, score_metadata")
     .eq("id", attemptId)
     .maybeSingle();
 
@@ -278,6 +337,15 @@ export async function fetchMockTestAttemptReview(
   const lessonIds = collectTargetLessonIds(questions);
   const lessons = await fetchAvailableLessonsByIds(lessonIds);
   const result = scoreResultFromSavedResponses(questions, responses);
+  const metadata = (attempt.score_metadata ?? null) as HskAttemptScoreMetadata | null;
+  const hsk = hskFromAttempt(
+    test,
+    questions,
+    result,
+    metadata,
+    attempt.raw_score != null ? Number(attempt.raw_score) : null,
+    attempt.max_score != null ? Number(attempt.max_score) : null
+  );
   const weakLessons = weakLessonsFromResponses(responses, questions, lessons);
   const completedLessonIds = [
     ...(
@@ -289,6 +357,7 @@ export async function fetchMockTestAttemptReview(
     test,
     questions,
     result,
+    hsk,
     weakLessons,
     completedLessonIds,
     finishedAt: attempt.finished_at ? String(attempt.finished_at) : null,

@@ -13,7 +13,7 @@ export type AdminEpisodeRow = {
   title_mn: string | null;
   title_zh: string | null;
   youtube_id: string;
-  sync_offset_sec: number;
+  subtitle_offset_sec: number;
   subtitle_count: number;
 };
 
@@ -67,7 +67,7 @@ export async function fetchAdminSeriesEpisodes(
       .maybeSingle(),
     client
       .from("videos")
-      .select("id, episode_no, title_mn, title_zh, youtube_id, sync_offset_sec, video_subtitles(count)")
+      .select("id, episode_no, title_mn, title_zh, youtube_id, subtitle_offset_sec, video_subtitles(count)")
       .eq("series_id", seriesId)
       .order("episode_no", { ascending: true, nullsFirst: true }),
   ]);
@@ -91,7 +91,7 @@ export async function fetchAdminSeriesEpisodes(
       title_mn: row.title_mn ? String(row.title_mn) : null,
       title_zh: row.title_zh ? String(row.title_zh) : null,
       youtube_id: String(row.youtube_id),
-      sync_offset_sec: Number(row.sync_offset_sec ?? 0),
+      subtitle_offset_sec: Number(row.subtitle_offset_sec ?? 0),
       subtitle_count: subtitleCount,
     };
   });

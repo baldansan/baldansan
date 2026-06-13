@@ -18,6 +18,8 @@ export function MockTestAttemptReviewClient({ review }: Props) {
       <MockTestResultView
         test={review.test}
         result={review.result}
+        hsk={review.hsk}
+        questions={review.questions}
         weakLessons={review.weakLessons}
         completedLessonIds={review.completedLessonIds}
         backHref={`/test/${review.test.id}`}

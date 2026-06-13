@@ -1,4 +1,5 @@
-import type { SubtitleWord, VideoSubtitleRow } from "@/lib/bichleg/types";
+import { mapVideoSubtitleRow } from "@/lib/bichleg/map-subtitle";
+import type { VideoSubtitleRow } from "@/lib/bichleg/types";
 import {
   getBichlegWordStatus,
   saveWordFromBichleg,
@@ -8,34 +9,6 @@ import {
 import { hasSupabaseConfig, supabase } from "@/lib/supabase/client";
 
 export type { BichlegWordStatus, SaveWordFromBichlegResult };
-
-function mapSubtitle(raw: Record<string, unknown>): VideoSubtitleRow {
-  let words: SubtitleWord[] | null = null;
-  if (raw.words != null && Array.isArray(raw.words)) {
-    words = raw.words.map((w) => {
-      const word = w as Record<string, unknown>;
-      return {
-        zh: String(word.zh ?? ""),
-        pinyin: word.pinyin ? String(word.pinyin) : undefined,
-        mn: word.mn ? String(word.mn) : undefined,
-        key: Boolean(word.key),
-      };
-    });
-  }
-
-  return {
-    id: String(raw.id),
-    video_id: String(raw.video_id),
-    idx: Number(raw.idx),
-    start_sec: Number(raw.start_sec),
-    end_sec: Number(raw.end_sec),
-    speaker: raw.speaker ? String(raw.speaker) : null,
-    zh: raw.zh ? String(raw.zh) : null,
-    pinyin: raw.pinyin ? String(raw.pinyin) : null,
-    mn: raw.mn ? String(raw.mn) : null,
-    words,
-  };
-}
 
 export async function fetchVideoSubtitlesClient(
   videoId: string
@@ -49,7 +22,7 @@ export async function fetchVideoSubtitlesClient(
     .order("idx", { ascending: true });
 
   if (error || !data) return [];
-  return data.map((row) => mapSubtitle(row as Record<string, unknown>));
+  return data.map((row) => mapVideoSubtitleRow(row as Record<string, unknown>));
 }
 
 export async function fetchBichlegWordStatus(

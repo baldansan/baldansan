@@ -1,0 +1,1178 @@
+[
+  {
+    "book": "5A",
+    "lesson": 1,
+    "type": "textbook",
+    "filename": "hsk5A-textbook-0101.mp3",
+    "storage_path": "hsk5Atextbookaudios/lesson-01/hsk5A-textbook-0101.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Atextbookaudios/lesson-01/hsk5A-textbook-0101.mp3"
+  },
+  {
+    "book": "5A",
+    "lesson": 1,
+    "type": "textbook",
+    "filename": "hsk5A-textbook-0102.mp3",
+    "storage_path": "hsk5Atextbookaudios/lesson-01/hsk5A-textbook-0102.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Atextbookaudios/lesson-01/hsk5A-textbook-0102.mp3"
+  },
+  {
+    "book": "5A",
+    "lesson": 2,
+    "type": "textbook",
+    "filename": "hsk5A-textbook-0201.mp3",
+    "storage_path": "hsk5Atextbookaudios/lesson-02/hsk5A-textbook-0201.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Atextbookaudios/lesson-02/hsk5A-textbook-0201.mp3"
+  },
+  {
+    "book": "5A",
+    "lesson": 2,
+    "type": "textbook",
+    "filename": "hsk5A-textbook-0202.mp3",
+    "storage_path": "hsk5Atextbookaudios/lesson-02/hsk5A-textbook-0202.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Atextbookaudios/lesson-02/hsk5A-textbook-0202.mp3"
+  },
+  {
+    "book": "5A",
+    "lesson": 3,
+    "type": "textbook",
+    "filename": "hsk5A-textbook-0301.mp3",
+    "storage_path": "hsk5Atextbookaudios/lesson-03/hsk5A-textbook-0301.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Atextbookaudios/lesson-03/hsk5A-textbook-0301.mp3"
+  },
+  {
+    "book": "5A",
+    "lesson": 3,
+    "type": "textbook",
+    "filename": "hsk5A-textbook-0302.mp3",
+    "storage_path": "hsk5Atextbookaudios/lesson-03/hsk5A-textbook-0302.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Atextbookaudios/lesson-03/hsk5A-textbook-0302.mp3"
+  },
+  {
+    "book": "5A",
+    "lesson": 4,
+    "type": "textbook",
+    "filename": "hsk5A-textbook-0401.mp3",
+    "storage_path": "hsk5Atextbookaudios/lesson-04/hsk5A-textbook-0401.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Atextbookaudios/lesson-04/hsk5A-textbook-0401.mp3"
+  },
+  {
+    "book": "5A",
+    "lesson": 4,
+    "type": "textbook",
+    "filename": "hsk5A-textbook-0402.mp3",
+    "storage_path": "hsk5Atextbookaudios/lesson-04/hsk5A-textbook-0402.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Atextbookaudios/lesson-04/hsk5A-textbook-0402.mp3"
+  },
+  {
+    "book": "5A",
+    "lesson": 5,
+    "type": "textbook",
+    "filename": "hsk5A-textbook-0501.mp3",
+    "storage_path": "hsk5Atextbookaudios/lesson-05/hsk5A-textbook-0501.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Atextbookaudios/lesson-05/hsk5A-textbook-0501.mp3"
+  },
+  {
+    "book": "5A",
+    "lesson": 5,
+    "type": "textbook",
+    "filename": "hsk5A-textbook-0502.mp3",
+    "storage_path": "hsk5Atextbookaudios/lesson-05/hsk5A-textbook-0502.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Atextbookaudios/lesson-05/hsk5A-textbook-0502.mp3"
+  },
+  {
+    "book": "5A",
+    "lesson": 6,
+    "type": "textbook",
+    "filename": "hsk5A-textbook-0601.mp3",
+    "storage_path": "hsk5Atextbookaudios/lesson-06/hsk5A-textbook-0601.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Atextbookaudios/lesson-06/hsk5A-textbook-0601.mp3"
+  },
+  {
+    "book": "5A",
+    "lesson": 6,
+    "type": "textbook",
+    "filename": "hsk5A-textbook-0602.mp3",
+    "storage_path": "hsk5Atextbookaudios/lesson-06/hsk5A-textbook-0602.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Atextbookaudios/lesson-06/hsk5A-textbook-0602.mp3"
+  },
+  {
+    "book": "5A",
+    "lesson": 7,
+    "type": "textbook",
+    "filename": "hsk5A-textbook-0701.mp3",
+    "storage_path": "hsk5Atextbookaudios/lesson-07/hsk5A-textbook-0701.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Atextbookaudios/lesson-07/hsk5A-textbook-0701.mp3"
+  },
+  {
+    "book": "5A",
+    "lesson": 7,
+    "type": "textbook",
+    "filename": "hsk5A-textbook-0702.mp3",
+    "storage_path": "hsk5Atextbookaudios/lesson-07/hsk5A-textbook-0702.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Atextbookaudios/lesson-07/hsk5A-textbook-0702.mp3"
+  },
+  {
+    "book": "5A",
+    "lesson": 7,
+    "type": "textbook",
+    "filename": "hsk5A-textbook-0703.mp3",
+    "storage_path": "hsk5Atextbookaudios/lesson-07/hsk5A-textbook-0703.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Atextbookaudios/lesson-07/hsk5A-textbook-0703.mp3"
+  },
+  {
+    "book": "5A",
+    "lesson": 7,
+    "type": "textbook",
+    "filename": "hsk5A-textbook-0704.mp3",
+    "storage_path": "hsk5Atextbookaudios/lesson-07/hsk5A-textbook-0704.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Atextbookaudios/lesson-07/hsk5A-textbook-0704.mp3"
+  },
+  {
+    "book": "5A",
+    "lesson": 8,
+    "type": "textbook",
+    "filename": "hsk5A-textbook-0801.mp3",
+    "storage_path": "hsk5Atextbookaudios/lesson-08/hsk5A-textbook-0801.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Atextbookaudios/lesson-08/hsk5A-textbook-0801.mp3"
+  },
+  {
+    "book": "5A",
+    "lesson": 8,
+    "type": "textbook",
+    "filename": "hsk5A-textbook-0802.mp3",
+    "storage_path": "hsk5Atextbookaudios/lesson-08/hsk5A-textbook-0802.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Atextbookaudios/lesson-08/hsk5A-textbook-0802.mp3"
+  },
+  {
+    "book": "5A",
+    "lesson": 9,
+    "type": "textbook",
+    "filename": "hsk5A-textbook-0901.mp3",
+    "storage_path": "hsk5Atextbookaudios/lesson-09/hsk5A-textbook-0901.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Atextbookaudios/lesson-09/hsk5A-textbook-0901.mp3"
+  },
+  {
+    "book": "5A",
+    "lesson": 9,
+    "type": "textbook",
+    "filename": "hsk5A-textbook-0902.mp3",
+    "storage_path": "hsk5Atextbookaudios/lesson-09/hsk5A-textbook-0902.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Atextbookaudios/lesson-09/hsk5A-textbook-0902.mp3"
+  },
+  {
+    "book": "5A",
+    "lesson": 10,
+    "type": "textbook",
+    "filename": "hsk5A-textbook-1001.mp3",
+    "storage_path": "hsk5Atextbookaudios/lesson-10/hsk5A-textbook-1001.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Atextbookaudios/lesson-10/hsk5A-textbook-1001.mp3"
+  },
+  {
+    "book": "5A",
+    "lesson": 10,
+    "type": "textbook",
+    "filename": "hsk5A-textbook-1002.mp3",
+    "storage_path": "hsk5Atextbookaudios/lesson-10/hsk5A-textbook-1002.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Atextbookaudios/lesson-10/hsk5A-textbook-1002.mp3"
+  },
+  {
+    "book": "5A",
+    "lesson": 11,
+    "type": "textbook",
+    "filename": "hsk5A-textbook-1101.mp3",
+    "storage_path": "hsk5Atextbookaudios/lesson-11/hsk5A-textbook-1101.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Atextbookaudios/lesson-11/hsk5A-textbook-1101.mp3"
+  },
+  {
+    "book": "5A",
+    "lesson": 11,
+    "type": "textbook",
+    "filename": "hsk5A-textbook-1102.mp3",
+    "storage_path": "hsk5Atextbookaudios/lesson-11/hsk5A-textbook-1102.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Atextbookaudios/lesson-11/hsk5A-textbook-1102.mp3"
+  },
+  {
+    "book": "5A",
+    "lesson": 12,
+    "type": "textbook",
+    "filename": "hsk5A-textbook-1201.mp3",
+    "storage_path": "hsk5Atextbookaudios/lesson-12/hsk5A-textbook-1201.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Atextbookaudios/lesson-12/hsk5A-textbook-1201.mp3"
+  },
+  {
+    "book": "5A",
+    "lesson": 12,
+    "type": "textbook",
+    "filename": "hsk5A-textbook-1202.mp3",
+    "storage_path": "hsk5Atextbookaudios/lesson-12/hsk5A-textbook-1202.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Atextbookaudios/lesson-12/hsk5A-textbook-1202.mp3"
+  },
+  {
+    "book": "5A",
+    "lesson": 13,
+    "type": "textbook",
+    "filename": "hsk5A-textbook-1301.mp3",
+    "storage_path": "hsk5Atextbookaudios/lesson-13/hsk5A-textbook-1301.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Atextbookaudios/lesson-13/hsk5A-textbook-1301.mp3"
+  },
+  {
+    "book": "5A",
+    "lesson": 13,
+    "type": "textbook",
+    "filename": "hsk5A-textbook-1302.mp3",
+    "storage_path": "hsk5Atextbookaudios/lesson-13/hsk5A-textbook-1302.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Atextbookaudios/lesson-13/hsk5A-textbook-1302.mp3"
+  },
+  {
+    "book": "5A",
+    "lesson": 14,
+    "type": "textbook",
+    "filename": "hsk5A-textbook-1401.mp3",
+    "storage_path": "hsk5Atextbookaudios/lesson-14/hsk5A-textbook-1401.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Atextbookaudios/lesson-14/hsk5A-textbook-1401.mp3"
+  },
+  {
+    "book": "5A",
+    "lesson": 14,
+    "type": "textbook",
+    "filename": "hsk5A-textbook-1402.mp3",
+    "storage_path": "hsk5Atextbookaudios/lesson-14/hsk5A-textbook-1402.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Atextbookaudios/lesson-14/hsk5A-textbook-1402.mp3"
+  },
+  {
+    "book": "5A",
+    "lesson": 15,
+    "type": "textbook",
+    "filename": "hsk5A-textbook-1501.mp3",
+    "storage_path": "hsk5Atextbookaudios/lesson-15/hsk5A-textbook-1501.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Atextbookaudios/lesson-15/hsk5A-textbook-1501.mp3"
+  },
+  {
+    "book": "5A",
+    "lesson": 15,
+    "type": "textbook",
+    "filename": "hsk5A-textbook-1502.mp3",
+    "storage_path": "hsk5Atextbookaudios/lesson-15/hsk5A-textbook-1502.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Atextbookaudios/lesson-15/hsk5A-textbook-1502.mp3"
+  },
+  {
+    "book": "5A",
+    "lesson": 16,
+    "type": "textbook",
+    "filename": "hsk5A-textbook-1601.mp3",
+    "storage_path": "hsk5Atextbookaudios/lesson-16/hsk5A-textbook-1601.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Atextbookaudios/lesson-16/hsk5A-textbook-1601.mp3"
+  },
+  {
+    "book": "5A",
+    "lesson": 16,
+    "type": "textbook",
+    "filename": "hsk5A-textbook-1602.mp3",
+    "storage_path": "hsk5Atextbookaudios/lesson-16/hsk5A-textbook-1602.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Atextbookaudios/lesson-16/hsk5A-textbook-1602.mp3"
+  },
+  {
+    "book": "5A",
+    "lesson": 17,
+    "type": "textbook",
+    "filename": "hsk5A-textbook-1701.mp3",
+    "storage_path": "hsk5Atextbookaudios/lesson-17/hsk5A-textbook-1701.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Atextbookaudios/lesson-17/hsk5A-textbook-1701.mp3"
+  },
+  {
+    "book": "5A",
+    "lesson": 17,
+    "type": "textbook",
+    "filename": "hsk5A-textbook-1702.mp3",
+    "storage_path": "hsk5Atextbookaudios/lesson-17/hsk5A-textbook-1702.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Atextbookaudios/lesson-17/hsk5A-textbook-1702.mp3"
+  },
+  {
+    "book": "5A",
+    "lesson": 18,
+    "type": "textbook",
+    "filename": "hsk5A-textbook-1801.mp3",
+    "storage_path": "hsk5Atextbookaudios/lesson-18/hsk5A-textbook-1801.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Atextbookaudios/lesson-18/hsk5A-textbook-1801.mp3"
+  },
+  {
+    "book": "5A",
+    "lesson": 18,
+    "type": "textbook",
+    "filename": "hsk5A-textbook-1802.mp3",
+    "storage_path": "hsk5Atextbookaudios/lesson-18/hsk5A-textbook-1802.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Atextbookaudios/lesson-18/hsk5A-textbook-1802.mp3"
+  },
+  {
+    "book": "5A",
+    "lesson": 1,
+    "type": "workbook",
+    "filename": "hsk5A-workbook-0101.mp3",
+    "storage_path": "hsk5Aworkbookaudios/lesson-01/hsk5A-workbook-0101.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Aworkbookaudios/lesson-01/hsk5A-workbook-0101.mp3"
+  },
+  {
+    "book": "5A",
+    "lesson": 1,
+    "type": "workbook",
+    "filename": "hsk5A-workbook-0102.mp3",
+    "storage_path": "hsk5Aworkbookaudios/lesson-01/hsk5A-workbook-0102.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Aworkbookaudios/lesson-01/hsk5A-workbook-0102.mp3"
+  },
+  {
+    "book": "5A",
+    "lesson": 2,
+    "type": "workbook",
+    "filename": "hsk5A-workbook-0201.mp3",
+    "storage_path": "hsk5Aworkbookaudios/lesson-02/hsk5A-workbook-0201.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Aworkbookaudios/lesson-02/hsk5A-workbook-0201.mp3"
+  },
+  {
+    "book": "5A",
+    "lesson": 2,
+    "type": "workbook",
+    "filename": "hsk5A-workbook-0202.mp3",
+    "storage_path": "hsk5Aworkbookaudios/lesson-02/hsk5A-workbook-0202.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Aworkbookaudios/lesson-02/hsk5A-workbook-0202.mp3"
+  },
+  {
+    "book": "5A",
+    "lesson": 3,
+    "type": "workbook",
+    "filename": "hsk5A-workbook-0301.mp3",
+    "storage_path": "hsk5Aworkbookaudios/lesson-03/hsk5A-workbook-0301.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Aworkbookaudios/lesson-03/hsk5A-workbook-0301.mp3"
+  },
+  {
+    "book": "5A",
+    "lesson": 3,
+    "type": "workbook",
+    "filename": "hsk5A-workbook-0302.mp3",
+    "storage_path": "hsk5Aworkbookaudios/lesson-03/hsk5A-workbook-0302.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Aworkbookaudios/lesson-03/hsk5A-workbook-0302.mp3"
+  },
+  {
+    "book": "5A",
+    "lesson": 4,
+    "type": "workbook",
+    "filename": "hsk5A-workbook-0401.mp3",
+    "storage_path": "hsk5Aworkbookaudios/lesson-04/hsk5A-workbook-0401.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Aworkbookaudios/lesson-04/hsk5A-workbook-0401.mp3"
+  },
+  {
+    "book": "5A",
+    "lesson": 4,
+    "type": "workbook",
+    "filename": "hsk5A-workbook-0402.mp3",
+    "storage_path": "hsk5Aworkbookaudios/lesson-04/hsk5A-workbook-0402.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Aworkbookaudios/lesson-04/hsk5A-workbook-0402.mp3"
+  },
+  {
+    "book": "5A",
+    "lesson": 5,
+    "type": "workbook",
+    "filename": "hsk5A-workbook-0501.mp3",
+    "storage_path": "hsk5Aworkbookaudios/lesson-05/hsk5A-workbook-0501.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Aworkbookaudios/lesson-05/hsk5A-workbook-0501.mp3"
+  },
+  {
+    "book": "5A",
+    "lesson": 5,
+    "type": "workbook",
+    "filename": "hsk5A-workbook-0502.mp3",
+    "storage_path": "hsk5Aworkbookaudios/lesson-05/hsk5A-workbook-0502.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Aworkbookaudios/lesson-05/hsk5A-workbook-0502.mp3"
+  },
+  {
+    "book": "5A",
+    "lesson": 6,
+    "type": "workbook",
+    "filename": "hsk5A-workbook-0601.mp3",
+    "storage_path": "hsk5Aworkbookaudios/lesson-06/hsk5A-workbook-0601.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Aworkbookaudios/lesson-06/hsk5A-workbook-0601.mp3"
+  },
+  {
+    "book": "5A",
+    "lesson": 6,
+    "type": "workbook",
+    "filename": "hsk5A-workbook-0602.mp3",
+    "storage_path": "hsk5Aworkbookaudios/lesson-06/hsk5A-workbook-0602.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Aworkbookaudios/lesson-06/hsk5A-workbook-0602.mp3"
+  },
+  {
+    "book": "5A",
+    "lesson": 7,
+    "type": "workbook",
+    "filename": "hsk5A-workbook-0701.mp3",
+    "storage_path": "hsk5Aworkbookaudios/lesson-07/hsk5A-workbook-0701.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Aworkbookaudios/lesson-07/hsk5A-workbook-0701.mp3"
+  },
+  {
+    "book": "5A",
+    "lesson": 7,
+    "type": "workbook",
+    "filename": "hsk5A-workbook-0702.mp3",
+    "storage_path": "hsk5Aworkbookaudios/lesson-07/hsk5A-workbook-0702.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Aworkbookaudios/lesson-07/hsk5A-workbook-0702.mp3"
+  },
+  {
+    "book": "5A",
+    "lesson": 8,
+    "type": "workbook",
+    "filename": "hsk5A-workbook-0801.mp3",
+    "storage_path": "hsk5Aworkbookaudios/lesson-08/hsk5A-workbook-0801.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Aworkbookaudios/lesson-08/hsk5A-workbook-0801.mp3"
+  },
+  {
+    "book": "5A",
+    "lesson": 8,
+    "type": "workbook",
+    "filename": "hsk5A-workbook-0802.mp3",
+    "storage_path": "hsk5Aworkbookaudios/lesson-08/hsk5A-workbook-0802.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Aworkbookaudios/lesson-08/hsk5A-workbook-0802.mp3"
+  },
+  {
+    "book": "5A",
+    "lesson": 9,
+    "type": "workbook",
+    "filename": "hsk5A-workbook-0901.mp3",
+    "storage_path": "hsk5Aworkbookaudios/lesson-09/hsk5A-workbook-0901.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Aworkbookaudios/lesson-09/hsk5A-workbook-0901.mp3"
+  },
+  {
+    "book": "5A",
+    "lesson": 9,
+    "type": "workbook",
+    "filename": "hsk5A-workbook-0902.mp3",
+    "storage_path": "hsk5Aworkbookaudios/lesson-09/hsk5A-workbook-0902.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Aworkbookaudios/lesson-09/hsk5A-workbook-0902.mp3"
+  },
+  {
+    "book": "5A",
+    "lesson": 10,
+    "type": "workbook",
+    "filename": "hsk5A-workbook-1001.mp3",
+    "storage_path": "hsk5Aworkbookaudios/lesson-10/hsk5A-workbook-1001.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Aworkbookaudios/lesson-10/hsk5A-workbook-1001.mp3"
+  },
+  {
+    "book": "5A",
+    "lesson": 10,
+    "type": "workbook",
+    "filename": "hsk5A-workbook-1002.mp3",
+    "storage_path": "hsk5Aworkbookaudios/lesson-10/hsk5A-workbook-1002.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Aworkbookaudios/lesson-10/hsk5A-workbook-1002.mp3"
+  },
+  {
+    "book": "5A",
+    "lesson": 11,
+    "type": "workbook",
+    "filename": "hsk5A-workbook-1101.mp3",
+    "storage_path": "hsk5Aworkbookaudios/lesson-11/hsk5A-workbook-1101.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Aworkbookaudios/lesson-11/hsk5A-workbook-1101.mp3"
+  },
+  {
+    "book": "5A",
+    "lesson": 11,
+    "type": "workbook",
+    "filename": "hsk5A-workbook-1102.mp3",
+    "storage_path": "hsk5Aworkbookaudios/lesson-11/hsk5A-workbook-1102.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Aworkbookaudios/lesson-11/hsk5A-workbook-1102.mp3"
+  },
+  {
+    "book": "5A",
+    "lesson": 12,
+    "type": "workbook",
+    "filename": "hsk5A-workbook-1201.mp3",
+    "storage_path": "hsk5Aworkbookaudios/lesson-12/hsk5A-workbook-1201.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Aworkbookaudios/lesson-12/hsk5A-workbook-1201.mp3"
+  },
+  {
+    "book": "5A",
+    "lesson": 12,
+    "type": "workbook",
+    "filename": "hsk5A-workbook-1202.mp3",
+    "storage_path": "hsk5Aworkbookaudios/lesson-12/hsk5A-workbook-1202.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Aworkbookaudios/lesson-12/hsk5A-workbook-1202.mp3"
+  },
+  {
+    "book": "5A",
+    "lesson": 13,
+    "type": "workbook",
+    "filename": "hsk5A-workbook-1301.mp3",
+    "storage_path": "hsk5Aworkbookaudios/lesson-13/hsk5A-workbook-1301.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Aworkbookaudios/lesson-13/hsk5A-workbook-1301.mp3"
+  },
+  {
+    "book": "5A",
+    "lesson": 13,
+    "type": "workbook",
+    "filename": "hsk5A-workbook-1302.mp3",
+    "storage_path": "hsk5Aworkbookaudios/lesson-13/hsk5A-workbook-1302.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Aworkbookaudios/lesson-13/hsk5A-workbook-1302.mp3"
+  },
+  {
+    "book": "5A",
+    "lesson": 14,
+    "type": "workbook",
+    "filename": "hsk5A-workbook-1401.mp3",
+    "storage_path": "hsk5Aworkbookaudios/lesson-14/hsk5A-workbook-1401.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Aworkbookaudios/lesson-14/hsk5A-workbook-1401.mp3"
+  },
+  {
+    "book": "5A",
+    "lesson": 14,
+    "type": "workbook",
+    "filename": "hsk5A-workbook-1402.mp3",
+    "storage_path": "hsk5Aworkbookaudios/lesson-14/hsk5A-workbook-1402.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Aworkbookaudios/lesson-14/hsk5A-workbook-1402.mp3"
+  },
+  {
+    "book": "5A",
+    "lesson": 15,
+    "type": "workbook",
+    "filename": "hsk5A-workbook-1501.mp3",
+    "storage_path": "hsk5Aworkbookaudios/lesson-15/hsk5A-workbook-1501.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Aworkbookaudios/lesson-15/hsk5A-workbook-1501.mp3"
+  },
+  {
+    "book": "5A",
+    "lesson": 15,
+    "type": "workbook",
+    "filename": "hsk5A-workbook-1502.mp3",
+    "storage_path": "hsk5Aworkbookaudios/lesson-15/hsk5A-workbook-1502.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Aworkbookaudios/lesson-15/hsk5A-workbook-1502.mp3"
+  },
+  {
+    "book": "5A",
+    "lesson": 16,
+    "type": "workbook",
+    "filename": "hsk5A-workbook-1601.mp3",
+    "storage_path": "hsk5Aworkbookaudios/lesson-16/hsk5A-workbook-1601.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Aworkbookaudios/lesson-16/hsk5A-workbook-1601.mp3"
+  },
+  {
+    "book": "5A",
+    "lesson": 16,
+    "type": "workbook",
+    "filename": "hsk5A-workbook-1602.mp3",
+    "storage_path": "hsk5Aworkbookaudios/lesson-16/hsk5A-workbook-1602.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Aworkbookaudios/lesson-16/hsk5A-workbook-1602.mp3"
+  },
+  {
+    "book": "5A",
+    "lesson": 17,
+    "type": "workbook",
+    "filename": "hsk5A-workbook-1701.mp3",
+    "storage_path": "hsk5Aworkbookaudios/lesson-17/hsk5A-workbook-1701.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Aworkbookaudios/lesson-17/hsk5A-workbook-1701.mp3"
+  },
+  {
+    "book": "5A",
+    "lesson": 17,
+    "type": "workbook",
+    "filename": "hsk5A-workbook-1702.mp3",
+    "storage_path": "hsk5Aworkbookaudios/lesson-17/hsk5A-workbook-1702.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Aworkbookaudios/lesson-17/hsk5A-workbook-1702.mp3"
+  },
+  {
+    "book": "5A",
+    "lesson": 18,
+    "type": "workbook",
+    "filename": "hsk5A-workbook-1801.mp3",
+    "storage_path": "hsk5Aworkbookaudios/lesson-18/hsk5A-workbook-1801.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Aworkbookaudios/lesson-18/hsk5A-workbook-1801.mp3"
+  },
+  {
+    "book": "5A",
+    "lesson": 18,
+    "type": "workbook",
+    "filename": "hsk5A-workbook-1802.mp3",
+    "storage_path": "hsk5Aworkbookaudios/lesson-18/hsk5A-workbook-1802.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Aworkbookaudios/lesson-18/hsk5A-workbook-1802.mp3"
+  },
+  {
+    "book": "5B",
+    "lesson": 19,
+    "type": "textbook",
+    "filename": "hsk5B-textbook-1901.mp3",
+    "storage_path": "hsk5Btextbookaudios/lesson-19/hsk5B-textbook-1901.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Btextbookaudios/lesson-19/hsk5B-textbook-1901.mp3"
+  },
+  {
+    "book": "5B",
+    "lesson": 19,
+    "type": "textbook",
+    "filename": "hsk5B-textbook-1902.mp3",
+    "storage_path": "hsk5Btextbookaudios/lesson-19/hsk5B-textbook-1902.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Btextbookaudios/lesson-19/hsk5B-textbook-1902.mp3"
+  },
+  {
+    "book": "5B",
+    "lesson": 20,
+    "type": "textbook",
+    "filename": "hsk5B-textbook-2001.mp3",
+    "storage_path": "hsk5Btextbookaudios/lesson-20/hsk5B-textbook-2001.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Btextbookaudios/lesson-20/hsk5B-textbook-2001.mp3"
+  },
+  {
+    "book": "5B",
+    "lesson": 20,
+    "type": "textbook",
+    "filename": "hsk5B-textbook-2002.mp3",
+    "storage_path": "hsk5Btextbookaudios/lesson-20/hsk5B-textbook-2002.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Btextbookaudios/lesson-20/hsk5B-textbook-2002.mp3"
+  },
+  {
+    "book": "5B",
+    "lesson": 21,
+    "type": "textbook",
+    "filename": "hsk5B-textbook-2101.mp3",
+    "storage_path": "hsk5Btextbookaudios/lesson-21/hsk5B-textbook-2101.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Btextbookaudios/lesson-21/hsk5B-textbook-2101.mp3"
+  },
+  {
+    "book": "5B",
+    "lesson": 21,
+    "type": "textbook",
+    "filename": "hsk5B-textbook-2102.mp3",
+    "storage_path": "hsk5Btextbookaudios/lesson-21/hsk5B-textbook-2102.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Btextbookaudios/lesson-21/hsk5B-textbook-2102.mp3"
+  },
+  {
+    "book": "5B",
+    "lesson": 22,
+    "type": "textbook",
+    "filename": "hsk5B-textbook-2201.mp3",
+    "storage_path": "hsk5Btextbookaudios/lesson-22/hsk5B-textbook-2201.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Btextbookaudios/lesson-22/hsk5B-textbook-2201.mp3"
+  },
+  {
+    "book": "5B",
+    "lesson": 22,
+    "type": "textbook",
+    "filename": "hsk5B-textbook-2202.mp3",
+    "storage_path": "hsk5Btextbookaudios/lesson-22/hsk5B-textbook-2202.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Btextbookaudios/lesson-22/hsk5B-textbook-2202.mp3"
+  },
+  {
+    "book": "5B",
+    "lesson": 23,
+    "type": "textbook",
+    "filename": "hsk5B-textbook-2301.mp3",
+    "storage_path": "hsk5Btextbookaudios/lesson-23/hsk5B-textbook-2301.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Btextbookaudios/lesson-23/hsk5B-textbook-2301.mp3"
+  },
+  {
+    "book": "5B",
+    "lesson": 23,
+    "type": "textbook",
+    "filename": "hsk5B-textbook-2302.mp3",
+    "storage_path": "hsk5Btextbookaudios/lesson-23/hsk5B-textbook-2302.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Btextbookaudios/lesson-23/hsk5B-textbook-2302.mp3"
+  },
+  {
+    "book": "5B",
+    "lesson": 24,
+    "type": "textbook",
+    "filename": "hsk5B-textbook-2401.mp3",
+    "storage_path": "hsk5Btextbookaudios/lesson-24/hsk5B-textbook-2401.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Btextbookaudios/lesson-24/hsk5B-textbook-2401.mp3"
+  },
+  {
+    "book": "5B",
+    "lesson": 24,
+    "type": "textbook",
+    "filename": "hsk5B-textbook-2402.mp3",
+    "storage_path": "hsk5Btextbookaudios/lesson-24/hsk5B-textbook-2402.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Btextbookaudios/lesson-24/hsk5B-textbook-2402.mp3"
+  },
+  {
+    "book": "5B",
+    "lesson": 25,
+    "type": "textbook",
+    "filename": "hsk5B-textbook-2501.mp3",
+    "storage_path": "hsk5Btextbookaudios/lesson-25/hsk5B-textbook-2501.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Btextbookaudios/lesson-25/hsk5B-textbook-2501.mp3"
+  },
+  {
+    "book": "5B",
+    "lesson": 25,
+    "type": "textbook",
+    "filename": "hsk5B-textbook-2502.mp3",
+    "storage_path": "hsk5Btextbookaudios/lesson-25/hsk5B-textbook-2502.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Btextbookaudios/lesson-25/hsk5B-textbook-2502.mp3"
+  },
+  {
+    "book": "5B",
+    "lesson": 26,
+    "type": "textbook",
+    "filename": "hsk5B-textbook-2601.mp3",
+    "storage_path": "hsk5Btextbookaudios/lesson-26/hsk5B-textbook-2601.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Btextbookaudios/lesson-26/hsk5B-textbook-2601.mp3"
+  },
+  {
+    "book": "5B",
+    "lesson": 26,
+    "type": "textbook",
+    "filename": "hsk5B-textbook-2602.mp3",
+    "storage_path": "hsk5Btextbookaudios/lesson-26/hsk5B-textbook-2602.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Btextbookaudios/lesson-26/hsk5B-textbook-2602.mp3"
+  },
+  {
+    "book": "5B",
+    "lesson": 27,
+    "type": "textbook",
+    "filename": "hsk5B-textbook-2701.mp3",
+    "storage_path": "hsk5Btextbookaudios/lesson-27/hsk5B-textbook-2701.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Btextbookaudios/lesson-27/hsk5B-textbook-2701.mp3"
+  },
+  {
+    "book": "5B",
+    "lesson": 27,
+    "type": "textbook",
+    "filename": "hsk5B-textbook-2702.mp3",
+    "storage_path": "hsk5Btextbookaudios/lesson-27/hsk5B-textbook-2702.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Btextbookaudios/lesson-27/hsk5B-textbook-2702.mp3"
+  },
+  {
+    "book": "5B",
+    "lesson": 28,
+    "type": "textbook",
+    "filename": "hsk5B-textbook-2801.mp3",
+    "storage_path": "hsk5Btextbookaudios/lesson-28/hsk5B-textbook-2801.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Btextbookaudios/lesson-28/hsk5B-textbook-2801.mp3"
+  },
+  {
+    "book": "5B",
+    "lesson": 28,
+    "type": "textbook",
+    "filename": "hsk5B-textbook-2802.mp3",
+    "storage_path": "hsk5Btextbookaudios/lesson-28/hsk5B-textbook-2802.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Btextbookaudios/lesson-28/hsk5B-textbook-2802.mp3"
+  },
+  {
+    "book": "5B",
+    "lesson": 29,
+    "type": "textbook",
+    "filename": "hsk5B-textbook-2901.mp3",
+    "storage_path": "hsk5Btextbookaudios/lesson-29/hsk5B-textbook-2901.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Btextbookaudios/lesson-29/hsk5B-textbook-2901.mp3"
+  },
+  {
+    "book": "5B",
+    "lesson": 29,
+    "type": "textbook",
+    "filename": "hsk5B-textbook-2902.mp3",
+    "storage_path": "hsk5Btextbookaudios/lesson-29/hsk5B-textbook-2902.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Btextbookaudios/lesson-29/hsk5B-textbook-2902.mp3"
+  },
+  {
+    "book": "5B",
+    "lesson": 30,
+    "type": "textbook",
+    "filename": "hsk5B-textbook-3001.mp3",
+    "storage_path": "hsk5Btextbookaudios/lesson-30/hsk5B-textbook-3001.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Btextbookaudios/lesson-30/hsk5B-textbook-3001.mp3"
+  },
+  {
+    "book": "5B",
+    "lesson": 30,
+    "type": "textbook",
+    "filename": "hsk5B-textbook-3002.mp3",
+    "storage_path": "hsk5Btextbookaudios/lesson-30/hsk5B-textbook-3002.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Btextbookaudios/lesson-30/hsk5B-textbook-3002.mp3"
+  },
+  {
+    "book": "5B",
+    "lesson": 31,
+    "type": "textbook",
+    "filename": "hsk5B-textbook-3101.mp3",
+    "storage_path": "hsk5Btextbookaudios/lesson-31/hsk5B-textbook-3101.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Btextbookaudios/lesson-31/hsk5B-textbook-3101.mp3"
+  },
+  {
+    "book": "5B",
+    "lesson": 31,
+    "type": "textbook",
+    "filename": "hsk5B-textbook-3102.mp3",
+    "storage_path": "hsk5Btextbookaudios/lesson-31/hsk5B-textbook-3102.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Btextbookaudios/lesson-31/hsk5B-textbook-3102.mp3"
+  },
+  {
+    "book": "5B",
+    "lesson": 32,
+    "type": "textbook",
+    "filename": "hsk5B-textbook-3201.mp3",
+    "storage_path": "hsk5Btextbookaudios/lesson-32/hsk5B-textbook-3201.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Btextbookaudios/lesson-32/hsk5B-textbook-3201.mp3"
+  },
+  {
+    "book": "5B",
+    "lesson": 32,
+    "type": "textbook",
+    "filename": "hsk5B-textbook-3202.mp3",
+    "storage_path": "hsk5Btextbookaudios/lesson-32/hsk5B-textbook-3202.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Btextbookaudios/lesson-32/hsk5B-textbook-3202.mp3"
+  },
+  {
+    "book": "5B",
+    "lesson": 33,
+    "type": "textbook",
+    "filename": "hsk5B-textbook-3301.mp3",
+    "storage_path": "hsk5Btextbookaudios/lesson-33/hsk5B-textbook-3301.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Btextbookaudios/lesson-33/hsk5B-textbook-3301.mp3"
+  },
+  {
+    "book": "5B",
+    "lesson": 33,
+    "type": "textbook",
+    "filename": "hsk5B-textbook-3302.mp3",
+    "storage_path": "hsk5Btextbookaudios/lesson-33/hsk5B-textbook-3302.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Btextbookaudios/lesson-33/hsk5B-textbook-3302.mp3"
+  },
+  {
+    "book": "5B",
+    "lesson": 34,
+    "type": "textbook",
+    "filename": "hsk5B-textbook-3401.mp3",
+    "storage_path": "hsk5Btextbookaudios/lesson-34/hsk5B-textbook-3401.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Btextbookaudios/lesson-34/hsk5B-textbook-3401.mp3"
+  },
+  {
+    "book": "5B",
+    "lesson": 34,
+    "type": "textbook",
+    "filename": "hsk5B-textbook-3402.mp3",
+    "storage_path": "hsk5Btextbookaudios/lesson-34/hsk5B-textbook-3402.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Btextbookaudios/lesson-34/hsk5B-textbook-3402.mp3"
+  },
+  {
+    "book": "5B",
+    "lesson": 35,
+    "type": "textbook",
+    "filename": "hsk5B-textbook-3501.mp3",
+    "storage_path": "hsk5Btextbookaudios/lesson-35/hsk5B-textbook-3501.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Btextbookaudios/lesson-35/hsk5B-textbook-3501.mp3"
+  },
+  {
+    "book": "5B",
+    "lesson": 35,
+    "type": "textbook",
+    "filename": "hsk5B-textbook-3502.mp3",
+    "storage_path": "hsk5Btextbookaudios/lesson-35/hsk5B-textbook-3502.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Btextbookaudios/lesson-35/hsk5B-textbook-3502.mp3"
+  },
+  {
+    "book": "5B",
+    "lesson": 36,
+    "type": "textbook",
+    "filename": "hsk5B-textbook-3601.mp3",
+    "storage_path": "hsk5Btextbookaudios/lesson-36/hsk5B-textbook-3601.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Btextbookaudios/lesson-36/hsk5B-textbook-3601.mp3"
+  },
+  {
+    "book": "5B",
+    "lesson": 36,
+    "type": "textbook",
+    "filename": "hsk5B-textbook-3602.mp3",
+    "storage_path": "hsk5Btextbookaudios/lesson-36/hsk5B-textbook-3602.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Btextbookaudios/lesson-36/hsk5B-textbook-3602.mp3"
+  },
+  {
+    "book": "5B",
+    "lesson": 19,
+    "type": "workbook",
+    "filename": "hsk5B-workbook-1901.mp3",
+    "storage_path": "hsk5Bworkbookaudios/lesson-19/hsk5B-workbook-1901.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Bworkbookaudios/lesson-19/hsk5B-workbook-1901.mp3"
+  },
+  {
+    "book": "5B",
+    "lesson": 19,
+    "type": "workbook",
+    "filename": "hsk5B-workbook-1902.mp3",
+    "storage_path": "hsk5Bworkbookaudios/lesson-19/hsk5B-workbook-1902.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Bworkbookaudios/lesson-19/hsk5B-workbook-1902.mp3"
+  },
+  {
+    "book": "5B",
+    "lesson": 20,
+    "type": "workbook",
+    "filename": "hsk5B-workbook-2001.mp3",
+    "storage_path": "hsk5Bworkbookaudios/lesson-20/hsk5B-workbook-2001.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Bworkbookaudios/lesson-20/hsk5B-workbook-2001.mp3"
+  },
+  {
+    "book": "5B",
+    "lesson": 20,
+    "type": "workbook",
+    "filename": "hsk5B-workbook-2002.mp3",
+    "storage_path": "hsk5Bworkbookaudios/lesson-20/hsk5B-workbook-2002.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Bworkbookaudios/lesson-20/hsk5B-workbook-2002.mp3"
+  },
+  {
+    "book": "5B",
+    "lesson": 21,
+    "type": "workbook",
+    "filename": "hsk5B-workbook-2101.mp3",
+    "storage_path": "hsk5Bworkbookaudios/lesson-21/hsk5B-workbook-2101.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Bworkbookaudios/lesson-21/hsk5B-workbook-2101.mp3"
+  },
+  {
+    "book": "5B",
+    "lesson": 21,
+    "type": "workbook",
+    "filename": "hsk5B-workbook-2102.mp3",
+    "storage_path": "hsk5Bworkbookaudios/lesson-21/hsk5B-workbook-2102.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Bworkbookaudios/lesson-21/hsk5B-workbook-2102.mp3"
+  },
+  {
+    "book": "5B",
+    "lesson": 22,
+    "type": "workbook",
+    "filename": "hsk5B-workbook-2201.mp3",
+    "storage_path": "hsk5Bworkbookaudios/lesson-22/hsk5B-workbook-2201.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Bworkbookaudios/lesson-22/hsk5B-workbook-2201.mp3"
+  },
+  {
+    "book": "5B",
+    "lesson": 22,
+    "type": "workbook",
+    "filename": "hsk5B-workbook-2202.mp3",
+    "storage_path": "hsk5Bworkbookaudios/lesson-22/hsk5B-workbook-2202.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Bworkbookaudios/lesson-22/hsk5B-workbook-2202.mp3"
+  },
+  {
+    "book": "5B",
+    "lesson": 23,
+    "type": "workbook",
+    "filename": "hsk5B-workbook-2301.mp3",
+    "storage_path": "hsk5Bworkbookaudios/lesson-23/hsk5B-workbook-2301.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Bworkbookaudios/lesson-23/hsk5B-workbook-2301.mp3"
+  },
+  {
+    "book": "5B",
+    "lesson": 23,
+    "type": "workbook",
+    "filename": "hsk5B-workbook-2302.mp3",
+    "storage_path": "hsk5Bworkbookaudios/lesson-23/hsk5B-workbook-2302.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Bworkbookaudios/lesson-23/hsk5B-workbook-2302.mp3"
+  },
+  {
+    "book": "5B",
+    "lesson": 24,
+    "type": "workbook",
+    "filename": "hsk5B-workbook-2401.mp3",
+    "storage_path": "hsk5Bworkbookaudios/lesson-24/hsk5B-workbook-2401.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Bworkbookaudios/lesson-24/hsk5B-workbook-2401.mp3"
+  },
+  {
+    "book": "5B",
+    "lesson": 24,
+    "type": "workbook",
+    "filename": "hsk5B-workbook-2402.mp3",
+    "storage_path": "hsk5Bworkbookaudios/lesson-24/hsk5B-workbook-2402.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Bworkbookaudios/lesson-24/hsk5B-workbook-2402.mp3"
+  },
+  {
+    "book": "5B",
+    "lesson": 25,
+    "type": "workbook",
+    "filename": "hsk5B-workbook-2501.mp3",
+    "storage_path": "hsk5Bworkbookaudios/lesson-25/hsk5B-workbook-2501.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Bworkbookaudios/lesson-25/hsk5B-workbook-2501.mp3"
+  },
+  {
+    "book": "5B",
+    "lesson": 25,
+    "type": "workbook",
+    "filename": "hsk5B-workbook-2502.mp3",
+    "storage_path": "hsk5Bworkbookaudios/lesson-25/hsk5B-workbook-2502.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Bworkbookaudios/lesson-25/hsk5B-workbook-2502.mp3"
+  },
+  {
+    "book": "5B",
+    "lesson": 26,
+    "type": "workbook",
+    "filename": "hsk5B-workbook-2601.mp3",
+    "storage_path": "hsk5Bworkbookaudios/lesson-26/hsk5B-workbook-2601.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Bworkbookaudios/lesson-26/hsk5B-workbook-2601.mp3"
+  },
+  {
+    "book": "5B",
+    "lesson": 26,
+    "type": "workbook",
+    "filename": "hsk5B-workbook-2602.mp3",
+    "storage_path": "hsk5Bworkbookaudios/lesson-26/hsk5B-workbook-2602.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Bworkbookaudios/lesson-26/hsk5B-workbook-2602.mp3"
+  },
+  {
+    "book": "5B",
+    "lesson": 27,
+    "type": "workbook",
+    "filename": "hsk5B-workbook-2701.mp3",
+    "storage_path": "hsk5Bworkbookaudios/lesson-27/hsk5B-workbook-2701.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Bworkbookaudios/lesson-27/hsk5B-workbook-2701.mp3"
+  },
+  {
+    "book": "5B",
+    "lesson": 27,
+    "type": "workbook",
+    "filename": "hsk5B-workbook-2702.mp3",
+    "storage_path": "hsk5Bworkbookaudios/lesson-27/hsk5B-workbook-2702.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Bworkbookaudios/lesson-27/hsk5B-workbook-2702.mp3"
+  },
+  {
+    "book": "5B",
+    "lesson": 28,
+    "type": "workbook",
+    "filename": "hsk5B-workbook-2801.mp3",
+    "storage_path": "hsk5Bworkbookaudios/lesson-28/hsk5B-workbook-2801.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Bworkbookaudios/lesson-28/hsk5B-workbook-2801.mp3"
+  },
+  {
+    "book": "5B",
+    "lesson": 28,
+    "type": "workbook",
+    "filename": "hsk5B-workbook-2802.mp3",
+    "storage_path": "hsk5Bworkbookaudios/lesson-28/hsk5B-workbook-2802.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Bworkbookaudios/lesson-28/hsk5B-workbook-2802.mp3"
+  },
+  {
+    "book": "5B",
+    "lesson": 29,
+    "type": "workbook",
+    "filename": "hsk5B-workbook-2901.mp3",
+    "storage_path": "hsk5Bworkbookaudios/lesson-29/hsk5B-workbook-2901.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Bworkbookaudios/lesson-29/hsk5B-workbook-2901.mp3"
+  },
+  {
+    "book": "5B",
+    "lesson": 29,
+    "type": "workbook",
+    "filename": "hsk5B-workbook-2902.mp3",
+    "storage_path": "hsk5Bworkbookaudios/lesson-29/hsk5B-workbook-2902.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Bworkbookaudios/lesson-29/hsk5B-workbook-2902.mp3"
+  },
+  {
+    "book": "5B",
+    "lesson": 30,
+    "type": "workbook",
+    "filename": "hsk5B-workbook-3001.mp3",
+    "storage_path": "hsk5Bworkbookaudios/lesson-30/hsk5B-workbook-3001.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Bworkbookaudios/lesson-30/hsk5B-workbook-3001.mp3"
+  },
+  {
+    "book": "5B",
+    "lesson": 30,
+    "type": "workbook",
+    "filename": "hsk5B-workbook-3002.mp3",
+    "storage_path": "hsk5Bworkbookaudios/lesson-30/hsk5B-workbook-3002.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Bworkbookaudios/lesson-30/hsk5B-workbook-3002.mp3"
+  },
+  {
+    "book": "5B",
+    "lesson": 31,
+    "type": "workbook",
+    "filename": "hsk5B-workbook-3101.mp3",
+    "storage_path": "hsk5Bworkbookaudios/lesson-31/hsk5B-workbook-3101.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Bworkbookaudios/lesson-31/hsk5B-workbook-3101.mp3"
+  },
+  {
+    "book": "5B",
+    "lesson": 31,
+    "type": "workbook",
+    "filename": "hsk5B-workbook-3102.mp3",
+    "storage_path": "hsk5Bworkbookaudios/lesson-31/hsk5B-workbook-3102.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Bworkbookaudios/lesson-31/hsk5B-workbook-3102.mp3"
+  },
+  {
+    "book": "5B",
+    "lesson": 32,
+    "type": "workbook",
+    "filename": "hsk5B-workbook-3201.mp3",
+    "storage_path": "hsk5Bworkbookaudios/lesson-32/hsk5B-workbook-3201.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Bworkbookaudios/lesson-32/hsk5B-workbook-3201.mp3"
+  },
+  {
+    "book": "5B",
+    "lesson": 32,
+    "type": "workbook",
+    "filename": "hsk5B-workbook-3202.mp3",
+    "storage_path": "hsk5Bworkbookaudios/lesson-32/hsk5B-workbook-3202.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Bworkbookaudios/lesson-32/hsk5B-workbook-3202.mp3"
+  },
+  {
+    "book": "5B",
+    "lesson": 33,
+    "type": "workbook",
+    "filename": "hsk5B-workbook-3301.mp3",
+    "storage_path": "hsk5Bworkbookaudios/lesson-33/hsk5B-workbook-3301.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Bworkbookaudios/lesson-33/hsk5B-workbook-3301.mp3"
+  },
+  {
+    "book": "5B",
+    "lesson": 33,
+    "type": "workbook",
+    "filename": "hsk5B-workbook-3302.mp3",
+    "storage_path": "hsk5Bworkbookaudios/lesson-33/hsk5B-workbook-3302.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Bworkbookaudios/lesson-33/hsk5B-workbook-3302.mp3"
+  },
+  {
+    "book": "5B",
+    "lesson": 34,
+    "type": "workbook",
+    "filename": "hsk5B-workbook-3401.mp3",
+    "storage_path": "hsk5Bworkbookaudios/lesson-34/hsk5B-workbook-3401.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Bworkbookaudios/lesson-34/hsk5B-workbook-3401.mp3"
+  },
+  {
+    "book": "5B",
+    "lesson": 34,
+    "type": "workbook",
+    "filename": "hsk5B-workbook-3402.mp3",
+    "storage_path": "hsk5Bworkbookaudios/lesson-34/hsk5B-workbook-3402.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Bworkbookaudios/lesson-34/hsk5B-workbook-3402.mp3"
+  },
+  {
+    "book": "5B",
+    "lesson": 35,
+    "type": "workbook",
+    "filename": "hsk5B-workbook-3501.mp3",
+    "storage_path": "hsk5Bworkbookaudios/lesson-35/hsk5B-workbook-3501.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Bworkbookaudios/lesson-35/hsk5B-workbook-3501.mp3"
+  },
+  {
+    "book": "5B",
+    "lesson": 35,
+    "type": "workbook",
+    "filename": "hsk5B-workbook-3502.mp3",
+    "storage_path": "hsk5Bworkbookaudios/lesson-35/hsk5B-workbook-3502.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Bworkbookaudios/lesson-35/hsk5B-workbook-3502.mp3"
+  },
+  {
+    "book": "5B",
+    "lesson": 36,
+    "type": "workbook",
+    "filename": "hsk5B-workbook-3601.mp3",
+    "storage_path": "hsk5Bworkbookaudios/lesson-36/hsk5B-workbook-3601.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Bworkbookaudios/lesson-36/hsk5B-workbook-3601.mp3"
+  },
+  {
+    "book": "5B",
+    "lesson": 36,
+    "type": "workbook",
+    "filename": "hsk5B-workbook-3602.mp3",
+    "storage_path": "hsk5Bworkbookaudios/lesson-36/hsk5B-workbook-3602.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Bworkbookaudios/lesson-36/hsk5B-workbook-3602.mp3"
+  },
+  {
+    "book": "5B",
+    "lesson": 37,
+    "type": "workbook",
+    "filename": "hsk5B-workbook-37.mp3",
+    "storage_path": "hsk5Bworkbookaudios/lesson-37/hsk5B-workbook-37.mp3",
+    "public_url": "https://yxowfkumkrbppkqligdz.supabase.co/storage/v1/object/public/hsk-audio/hsk5Bworkbookaudios/lesson-37/hsk5B-workbook-37.mp3"
+  }
+]
