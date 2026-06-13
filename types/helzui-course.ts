@@ -5,6 +5,7 @@ export type AnswerBlock = {
 };
 
 export type ExamItem = {
+  id: string;
   src?: string;
   words: string[];
   answer: AnswerBlock[];

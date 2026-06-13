@@ -3,12 +3,14 @@
 import { useEffect, useMemo, useState } from "react";
 import { HelzuiAnswerBlocks } from "@/components/helzui/helzui-answer-blocks";
 import { HelzuiRichHtml } from "@/components/helzui/helzui-rich-html";
+import { recordHelzuiSelfAssessment } from "@/lib/analytics/record-question-attempt";
 import type { ExamItem, HelzuiRoleColors } from "@/types/helzui-course";
 
 type Props = {
   item: ExamItem;
   index: number;
   variant: "real" | "practice";
+  moduleId: string;
   roleColors: HelzuiRoleColors;
 };
 
@@ -21,8 +23,15 @@ function shuffleWords(words: string[]): string[] {
   return next;
 }
 
-export function HelzuiExamItem({ item, index, variant, roleColors }: Props) {
+export function HelzuiExamItem({
+  item,
+  index,
+  variant,
+  moduleId,
+  roleColors,
+}: Props) {
   const [open, setOpen] = useState(false);
+  const [selfRating, setSelfRating] = useState<"correct" | "wrong" | null>(null);
   const tokens = useMemo(() => item.words, [item.words]);
   const [pool, setPool] = useState(tokens);
 
@@ -31,6 +40,16 @@ export function HelzuiExamItem({ item, index, variant, roleColors }: Props) {
   }, [tokens]);
 
   const revealLabel = variant === "practice" ? "Шалгах" : "Хариу харах";
+
+  function handleSelfRating(isCorrect: boolean) {
+    if (selfRating !== null) return;
+    setSelfRating(isCorrect ? "correct" : "wrong");
+    recordHelzuiSelfAssessment({
+      moduleId,
+      questionId: item.id,
+      isCorrect,
+    });
+  }
 
   return (
     <article className={`hz-exam ${variant === "practice" ? "hz-exam--mini" : ""} ${open ? "hz-exam--open" : ""}`}>
@@ -65,6 +84,24 @@ export function HelzuiExamItem({ item, index, variant, roleColors }: Props) {
           <HelzuiAnswerBlocks blocks={item.answer} roleColors={roleColors} />
           <div className="hz-analysis">
             <HelzuiRichHtml html={item.analysis} as="p" />
+          </div>
+          <div className="hz-self-rating" role="group" aria-label="Өөрийн үнэлгээ">
+            <button
+              type="button"
+              className={`hz-self-btn hz-self-btn--ok ${selfRating === "correct" ? "hz-self-btn--selected" : ""}`}
+              disabled={selfRating !== null}
+              onClick={() => handleSelfRating(true)}
+            >
+              Зөв таасан ✓
+            </button>
+            <button
+              type="button"
+              className={`hz-self-btn hz-self-btn--bad ${selfRating === "wrong" ? "hz-self-btn--selected" : ""}`}
+              disabled={selfRating !== null}
+              onClick={() => handleSelfRating(false)}
+            >
+              Андуурсан ✗
+            </button>
           </div>
         </div>
       )}

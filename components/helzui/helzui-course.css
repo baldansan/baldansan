@@ -134,6 +134,16 @@
 .hz-analysis{
   font-size:13px;color:#5e6f66;background:#f6faf7;border-radius:10px;padding:10px 12px;line-height:1.55;
 }
+.hz-self-rating{display:flex;gap:8px;margin-top:14px}
+.hz-self-btn{
+  flex:1;border:1.5px solid #e6eee9;background:#fff;font-family:inherit;
+  font-weight:700;font-size:13px;padding:10px 8px;border-radius:11px;cursor:pointer;
+}
+.hz-self-btn:disabled:not(.hz-self-btn--selected){opacity:.45;cursor:default}
+.hz-self-btn--ok{color:#018242;border-color:#b8e6cc}
+.hz-self-btn--ok.hz-self-btn--selected{background:#eaf7ef;border-color:#1FB85A}
+.hz-self-btn--bad{color:#c0392b;border-color:#f0c4c0}
+.hz-self-btn--bad.hz-self-btn--selected{background:#fef2f1;border-color:#e8476b}
 .hz-analysis b,.hz-rich b{color:#13241b;font-weight:700}
 .hz-rich .zh,.hz-rich .zh{
   font-family:var(--font-noto-sc),var(--bs-zh),"Noto Sans SC",sans-serif;font-weight:600;

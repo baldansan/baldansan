@@ -1,5 +1,6 @@
 import "server-only";
 
+import { HELZUI_COURSE_ID, getHelzuiQuestionMeta } from "@/lib/helzui/question-lookup";
 import { createServerSupabaseClient } from "@/lib/supabase/server";
 import { hasSupabaseConfig } from "@/lib/supabase/client";
 
@@ -43,6 +44,16 @@ export type LearnerHardSpot = {
   avgTimeMs: number | null;
 };
 
+export type HelzuiHardSpot = {
+  moduleId: string;
+  moduleTitle: string;
+  questionId: string;
+  sentenceZh: string;
+  totalAttempts: number;
+  wrongCount: number;
+  wrongPct: number;
+};
+
 export type LearnerDetailData = {
   userId: string;
   completedLessons: number;
@@ -56,6 +67,7 @@ export type LearnerDetailData = {
   }>;
   recentAttempts: LearnerAttemptRow[];
   hardSpots: LearnerHardSpot[];
+  helzuiHardSpots: HelzuiHardSpot[];
   feedback: LearnerFeedbackRow[];
   warnings: string[];
 };
@@ -125,12 +137,13 @@ export async function getLearnerDetail(
       mockAttempts: [],
       recentAttempts: [],
       hardSpots: [],
+      helzuiHardSpots: [],
       feedback: [],
       warnings: ["Одоогоор бүртгэгдсэн суралцагчийн оролдлого байхгүй."],
     };
   }
 
-  const [progressRes, srsRes, mockRes, attemptsRes, feedbackRes] =
+  const [progressRes, srsRes, mockRes, attemptsRes, helzuiAttemptsRes, feedbackRes] =
     await Promise.all([
       client
         .from("user_lesson_progress")
@@ -155,6 +168,11 @@ export async function getLearnerDetail(
         .order("created_at", { ascending: false })
         .limit(80),
       client
+        .from("question_attempts")
+        .select("question_id, stage, is_correct")
+        .eq("user_id", userId)
+        .eq("lesson_id", HELZUI_COURSE_ID),
+      client
         .from("feedback")
         .select(
           "id, lesson_id, stage, question_id, rating, note, page_path, created_at"
@@ -168,6 +186,7 @@ export async function getLearnerDetail(
   if (srsRes.error) warnings.push(srsRes.error.message);
   if (mockRes.error) warnings.push(mockRes.error.message);
   if (attemptsRes.error) warnings.push(attemptsRes.error.message);
+  if (helzuiAttemptsRes.error) warnings.push(helzuiAttemptsRes.error.message);
   if (feedbackRes.error) warnings.push(feedbackRes.error.message);
 
   const completedLessons = (progressRes.data ?? []).filter(
@@ -224,6 +243,45 @@ export async function getLearnerDetail(
     })
     .slice(0, 15);
 
+  const helzuiMap = new Map<
+    string,
+    { moduleId: string; wrongCount: number; totalAttempts: number }
+  >();
+  for (const row of helzuiAttemptsRes.data ?? []) {
+    const questionId = String(row.question_id);
+    const moduleId = String(row.stage);
+    const existing = helzuiMap.get(questionId) ?? {
+      moduleId,
+      wrongCount: 0,
+      totalAttempts: 0,
+    };
+    existing.totalAttempts += 1;
+    if (!row.is_correct) existing.wrongCount += 1;
+    helzuiMap.set(questionId, existing);
+  }
+
+  const helzuiHardSpots: HelzuiHardSpot[] = [...helzuiMap.entries()]
+    .map(([questionId, stats]) => {
+      const meta = getHelzuiQuestionMeta(questionId);
+      const wrongPct =
+        stats.totalAttempts > 0
+          ? Math.round((stats.wrongCount / stats.totalAttempts) * 100)
+          : 0;
+      return {
+        moduleId: meta?.moduleId ?? stats.moduleId,
+        moduleTitle: meta?.moduleTitle ?? stats.moduleId,
+        questionId,
+        sentenceZh: meta?.sentenceZh ?? questionId,
+        totalAttempts: stats.totalAttempts,
+        wrongCount: stats.wrongCount,
+        wrongPct,
+      };
+    })
+    .sort((a, b) => {
+      if (b.wrongPct !== a.wrongPct) return b.wrongPct - a.wrongPct;
+      return b.wrongCount - a.wrongCount;
+    });
+
   const feedback: LearnerFeedbackRow[] = (feedbackRes.data ?? []).map((r) => ({
     id: String(r.id),
     lessonId: r.lesson_id ? String(r.lesson_id) : null,
@@ -248,6 +306,7 @@ export async function getLearnerDetail(
     })),
     recentAttempts,
     hardSpots,
+    helzuiHardSpots,
     feedback,
     warnings,
   };

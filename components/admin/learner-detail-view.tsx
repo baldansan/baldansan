@@ -37,6 +37,8 @@ const STAGE_LABEL: Record<string, string> = {
   mock_exam: "Mock",
   word_practice: "Үг",
   order: "Эвлүүлэх",
+  subject: "Өгүүлэгдэхүүн",
+  predicate: "Өгүүлэхүүн",
 };
 
 export function LearnerDetailView({ learners, detail }: Props) {
@@ -203,6 +205,42 @@ export function LearnerDetailView({ learners, detail }: Props) {
                   <td className="font-bold text-red-600">{row.wrongCount}</td>
                   <td>{row.totalAttempts}</td>
                   <td>{formatTime(row.avgTimeMs)}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        )}
+      </section>
+
+      <section className="admin-panel overflow-x-auto p-0">
+        <h3 className="border-b border-slate-100 px-4 py-3 text-sm font-semibold">
+          Хэлзүй — хамгийн их андуурсан даалгавар
+        </h3>
+        {detail.helzuiHardSpots.length === 0 ? (
+          <p className="px-4 py-6 text-sm text-slate-500">
+            Хэлзүйн суурь курсын өөрийн үнэлгээний өгөгдөл байхгүй.
+          </p>
+        ) : (
+          <table className="admin-table w-full min-w-[720px] text-sm">
+            <thead>
+              <tr>
+                <th>Модуль</th>
+                <th>Өгүүлбэр</th>
+                <th>Оролдлого</th>
+                <th>Андуурсан</th>
+                <th>Андуурсан %</th>
+              </tr>
+            </thead>
+            <tbody>
+              {detail.helzuiHardSpots.map((row) => (
+                <tr key={row.questionId}>
+                  <td>{row.moduleTitle}</td>
+                  <td className="zh text-base font-semibold">{row.sentenceZh}</td>
+                  <td className="text-center">{row.totalAttempts}</td>
+                  <td className="text-center font-bold text-red-600">
+                    {row.wrongCount}
+                  </td>
+                  <td className="text-center font-bold">{row.wrongPct}%</td>
                 </tr>
               ))}
             </tbody>

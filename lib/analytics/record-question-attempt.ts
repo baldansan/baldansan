@@ -1,6 +1,7 @@
 import {
   nextAttemptNumber,
 } from "@/lib/analytics/attempt-metrics";
+import { HELZUI_COURSE_ID } from "@/lib/helzui/question-lookup";
 import { getAuthenticatedUserId } from "@/lib/supabase/auth";
 import { hasSupabaseConfig, supabase } from "@/lib/supabase/client";
 
@@ -9,7 +10,9 @@ export type QuestionAttemptStage =
   | "quiz"
   | "mock_exam"
   | "word_practice"
-  | "order";
+  | "order"
+  | "subject"
+  | "predicate";
 
 export type QuestionAttemptType = "choice" | "judge" | "order" | "fill";
 
@@ -99,4 +102,20 @@ export function mapMockQuestionType(qType: string): QuestionAttemptType {
     return "fill";
   }
   return "choice";
+}
+
+/** Helzui grammar self-assessment after answer reveal (lesson_id = helzui-suuri). */
+export function recordHelzuiSelfAssessment(input: {
+  moduleId: string;
+  questionId: string;
+  isCorrect: boolean;
+}): void {
+  recordQuestionAttempt({
+    lessonId: HELZUI_COURSE_ID,
+    stage: input.moduleId as QuestionAttemptStage,
+    questionId: input.questionId,
+    questionType: "order",
+    isCorrect: input.isCorrect,
+    selectedAnswer: input.isCorrect ? "self_correct" : "self_wrong",
+  });
 }

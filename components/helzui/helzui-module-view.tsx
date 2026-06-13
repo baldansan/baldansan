@@ -110,10 +110,11 @@ export function HelzuiModuleView({
           />
           {module.realExams.map((item, index) => (
             <HelzuiExamItem
-              key={`re-${index}`}
+              key={item.id}
               item={item}
               index={index}
               variant="real"
+              moduleId={module.id}
               roleColors={roleColors}
             />
           ))}
@@ -128,10 +129,11 @@ export function HelzuiModuleView({
           />
           {module.practice.map((item, index) => (
             <HelzuiExamItem
-              key={`pr-${index}`}
+              key={item.id}
               item={item}
               variant="practice"
               index={index}
+              moduleId={module.id}
               roleColors={roleColors}
             />
           ))}
