@@ -21,6 +21,9 @@ import { fetchBichlegContinueTargetClient } from "@/lib/supabase/video-progress-
 
 type Props = {
   testCount: number;
+  helzuiModuleCount: number;
+  hsk30LevelCount: number;
+  hsk30PointCount: number;
 };
 
 type HubStats = {
@@ -30,7 +33,12 @@ type HubStats = {
   dailyGoal: number;
 };
 
-export function ReviewMenuHubClient({ testCount }: Props) {
+export function ReviewMenuHubClient({
+  testCount,
+  helzuiModuleCount,
+  hsk30LevelCount,
+  hsk30PointCount,
+}: Props) {
   const { level: activeLevel, hydrated } = useActiveHskLevel();
   const [stats, setStats] = useState<HubStats>({
     streak: 0,
@@ -135,6 +143,22 @@ export function ReviewMenuHubClient({ testCount }: Props) {
 
         <p className="bs-review-hub-sub">Өнөөдөр юу хийх вэ?</p>
 
+        <Link href="/study-plan" className="bs-review-hub-card mb-3">
+          <span className="bs-review-hub-icon bs-review-hub-icon--green">
+            <ReviewTablerIcon name="calendar" className="bs-review-hub-icon-svg" />
+          </span>
+          <span className="bs-review-hub-card-text">
+            <span className="bs-review-hub-card-title">Сурах төлөвлөгөө</span>
+            <span className="bs-review-hub-card-meta">
+              Хичээл, давталт, бичлэг — нэг дэлгэц
+            </span>
+          </span>
+          <ReviewTablerIcon
+            name="chevron-right"
+            className="bs-review-hub-chevron"
+          />
+        </Link>
+
         <Link href="/review/daily" className="bs-review-feature-card">
           <div className="bs-review-feature-body">
             <p className="bs-review-feature-title">Өнөөдрийн давталт</p>
@@ -194,6 +218,49 @@ export function ReviewMenuHubClient({ testCount }: Props) {
             <span className="bs-review-hub-card-text">
               <span className="bs-review-hub-card-title">HSK загвар шалгалт</span>
               <span className="bs-review-hub-card-meta">{testStatus}</span>
+            </span>
+            <ReviewTablerIcon
+              name="chevron-right"
+              className="bs-review-hub-chevron"
+            />
+          </Link>
+        </div>
+
+        <p className="bs-review-hub-sub" style={{ marginTop: 18 }}>
+          Дүрэм
+        </p>
+        <div className="bs-review-hub-cards">
+          <Link href="/review/grammar/structure" className="bs-review-hub-card">
+            <span className="bs-review-hub-icon bs-review-hub-icon--green">
+              <ReviewTablerIcon
+                name="layout"
+                className="bs-review-hub-icon-svg"
+              />
+            </span>
+            <span className="bs-review-hub-card-text">
+              <span className="bs-review-hub-card-title">Өгүүлбэрийн бүтэц</span>
+              <span className="bs-review-hub-card-meta">
+                {helzuiModuleCount} модуль · HSK эвлүүлэх суурь
+              </span>
+            </span>
+            <ReviewTablerIcon
+              name="chevron-right"
+              className="bs-review-hub-chevron"
+            />
+          </Link>
+
+          <Link href="/review/grammar/hsk30" className="bs-review-hub-card">
+            <span className="bs-review-hub-icon bs-review-hub-icon--purple">
+              <ReviewTablerIcon
+                name="book"
+                className="bs-review-hub-icon-svg"
+              />
+            </span>
+            <span className="bs-review-hub-card-text">
+              <span className="bs-review-hub-card-title">HSK 3.0 дүрэм</span>
+              <span className="bs-review-hub-card-meta">
+                {hsk30LevelCount} түвшин · {hsk30PointCount} дүрмийн цэг
+              </span>
             </span>
             <ReviewTablerIcon
               name="chevron-right"

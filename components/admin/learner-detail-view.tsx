@@ -34,6 +34,12 @@ function formatDate(iso: string): string {
 const STAGE_LABEL: Record<string, string> = {
   grammar: "Дүрэм",
   grammar_exercise: "Дүрэм/дасгал",
+  hsk1: "HSK 1",
+  hsk2: "HSK 2",
+  hsk3: "HSK 3",
+  hsk4: "HSK 4",
+  hsk5: "HSK 5",
+  hsk6: "HSK 6",
   quiz: "Сорил",
   mock_exam: "Mock",
   word_practice: "Үг",

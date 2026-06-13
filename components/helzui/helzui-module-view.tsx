@@ -12,6 +12,7 @@ type Props = {
   roleColors: HelzuiRoleColors;
   prevModuleId?: string | null;
   nextModuleId?: string | null;
+  moduleBase?: string;
 };
 
 export function HelzuiModuleView({
@@ -19,6 +20,7 @@ export function HelzuiModuleView({
   roleColors,
   prevModuleId,
   nextModuleId,
+  moduleBase,
 }: Props) {
   return (
     <div className="hz-module">
@@ -162,7 +164,7 @@ export function HelzuiModuleView({
 
       <nav className="hz-module-nav">
         {prevModuleId ? (
-          <Link href={helzuiModuleHref(prevModuleId)} className="hz-nav-link">
+          <Link href={helzuiModuleHref(prevModuleId, moduleBase)} className="hz-nav-link">
             ← Өмнөх модуль
           </Link>
         ) : (
@@ -170,7 +172,7 @@ export function HelzuiModuleView({
         )}
         {nextModuleId ? (
           <Link
-            href={helzuiModuleHref(nextModuleId)}
+            href={helzuiModuleHref(nextModuleId, moduleBase)}
             className="hz-nav-link hz-nav-link--next"
           >
             Дараагийн модуль →

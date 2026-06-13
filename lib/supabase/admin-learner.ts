@@ -4,6 +4,8 @@ import {
   formatGrammarAttemptPointLabel,
   formatGrammarAttemptQuestionLabel,
 } from "@/lib/grammar/grammar-attempt-label";
+import { getHsk30QuestionMeta } from "@/lib/hsk30-durem/question-lookup";
+import { HSK30_DUREM_COURSE_ID } from "@/lib/hsk30-durem/load-course";
 import { HELZUI_COURSE_ID, getHelzuiQuestionMeta } from "@/lib/helzui/question-lookup";
 import { createServerSupabaseClient } from "@/lib/supabase/server";
 import { hasSupabaseConfig } from "@/lib/supabase/client";
@@ -190,9 +192,9 @@ export async function getLearnerDetail(
         .eq("lesson_id", HELZUI_COURSE_ID),
       client
         .from("question_attempts")
-        .select("lesson_id, question_id, is_correct")
+        .select("lesson_id, question_id, stage, is_correct")
         .eq("user_id", userId)
-        .eq("stage", "grammar"),
+        .or(`stage.eq.grammar,lesson_id.eq.${HSK30_DUREM_COURSE_ID}`),
       client
         .from("feedback")
         .select(
@@ -329,10 +331,18 @@ export async function getLearnerDetail(
         stats.totalAttempts > 0
           ? Math.round((stats.wrongCount / stats.totalAttempts) * 100)
           : 0;
+      const hsk30Meta =
+        stats.lessonId === HSK30_DUREM_COURSE_ID
+          ? getHsk30QuestionMeta(questionId)
+          : null;
       return {
         lessonId: stats.lessonId,
-        pointLabel: formatGrammarAttemptPointLabel(questionId),
-        questionLabel: formatGrammarAttemptQuestionLabel(questionId),
+        pointLabel: hsk30Meta
+          ? `${hsk30Meta.pointZh} (${hsk30Meta.levelTitle})`
+          : formatGrammarAttemptPointLabel(questionId),
+        questionLabel: hsk30Meta
+          ? hsk30Meta.questionText.slice(0, 80)
+          : formatGrammarAttemptQuestionLabel(questionId),
         questionId,
         totalAttempts: stats.totalAttempts,
         wrongCount: stats.wrongCount,

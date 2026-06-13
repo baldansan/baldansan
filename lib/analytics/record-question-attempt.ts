@@ -2,6 +2,7 @@ import {
   nextAttemptNumber,
 } from "@/lib/analytics/attempt-metrics";
 import { HELZUI_COURSE_ID } from "@/lib/helzui/question-lookup";
+import { HSK30_DUREM_COURSE_ID } from "@/lib/hsk30-durem/load-course";
 import { getAuthenticatedUserId } from "@/lib/supabase/auth";
 import { hasSupabaseConfig, supabase } from "@/lib/supabase/client";
 
@@ -13,7 +14,13 @@ export type QuestionAttemptStage =
   | "word_practice"
   | "order"
   | "subject"
-  | "predicate";
+  | "predicate"
+  | "hsk1"
+  | "hsk2"
+  | "hsk3"
+  | "hsk4"
+  | "hsk5"
+  | "hsk6";
 
 export type QuestionAttemptType = "choice" | "judge" | "order" | "fill";
 
@@ -118,5 +125,27 @@ export function recordHelzuiSelfAssessment(input: {
     questionType: "order",
     isCorrect: input.isCorrect,
     selectedAnswer: input.isCorrect ? "self_correct" : "self_wrong",
+  });
+}
+
+/** HSK 3.0 grammar review (lesson_id = hsk30-durem, stage = levelId). */
+export function recordHsk30Attempt(input: {
+  levelId: string;
+  questionId: string;
+  questionType: QuestionAttemptType;
+  isCorrect: boolean;
+  selectedAnswer?: string | null;
+  correctAnswer?: string | null;
+  timeSpentMs?: number | null;
+}): void {
+  recordQuestionAttempt({
+    lessonId: HSK30_DUREM_COURSE_ID,
+    stage: input.levelId as QuestionAttemptStage,
+    questionId: input.questionId,
+    questionType: input.questionType,
+    isCorrect: input.isCorrect,
+    selectedAnswer: input.selectedAnswer ?? null,
+    correctAnswer: input.correctAnswer ?? null,
+    timeSpentMs: input.timeSpentMs ?? null,
   });
 }
