@@ -13,6 +13,13 @@ import {
   type BsExercisesStepProgress,
   type BsGroupAnswerSnapshot,
 } from "@/lib/lesson/bs-step-progress";
+import { useQuestionTimer } from "@/lib/analytics/attempt-metrics";
+import {
+  mapExerciseKind,
+  mapExerciseStage,
+  recordQuestionAttempt,
+} from "@/lib/analytics/record-question-attempt";
+import { QuestionFeedbackButtons } from "@/components/feedback/question-feedback-buttons";
 import {
   buildExerciseQuestions,
   buildMergedExerciseQuestions,
@@ -218,6 +225,7 @@ export default function ExercisesModule({
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const audioTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const q = questions[qi];
+  const getElapsed = useQuestionTimer(`${lessonId}:ex:${qi}`);
   const totalSteps = questions.length;
   const showScrambleGate =
     hasScramble && !scrambleGatePassed && qi >= firstScrambleQi;
@@ -291,6 +299,27 @@ export default function ExercisesModule({
   function recordResult(n: number | undefined, ok: boolean) {
     if (n == null) return;
     setResultsByN((prev) => ({ ...prev, [n]: ok ? "ok" : "no" }));
+  }
+
+  function logExerciseAttempt(
+    questionIndex: number,
+    questionNo: number | undefined,
+    kind: string,
+    ok: boolean,
+    selected: string,
+    correct: string
+  ) {
+    recordQuestionAttempt({
+      lessonId,
+      stage: mapExerciseStage(kind),
+      questionId:
+        questionNo != null ? `ex:${questionNo}` : `ex:step:${questionIndex}`,
+      questionType: mapExerciseKind(kind),
+      isCorrect: ok,
+      selectedAnswer: selected,
+      correctAnswer: correct,
+      timeSpentMs: getElapsed(),
+    });
   }
 
   function applySavedProgress(saved: BsExercisesStepProgress) {
@@ -370,6 +399,7 @@ export default function ExercisesModule({
     setChecked(true);
     setCorrect(ok);
     recordResult(q.n, ok);
+    logExerciseAttempt(qi, q.n, q.kind, ok, opt, String(q.answer));
   }
 
   function pickTf(val: boolean) {
@@ -379,6 +409,14 @@ export default function ExercisesModule({
     setChecked(true);
     setCorrect(ok);
     recordResult(q.n, ok);
+    logExerciseAttempt(
+      qi,
+      q.n,
+      q.kind,
+      ok,
+      val ? "Үнэн" : "Худал",
+      q.answer ? "Үнэн" : "Худал"
+    );
   }
 
   function pickChoiceInGroup(index: number, opt: string) {
@@ -389,6 +427,14 @@ export default function ExercisesModule({
     if (!row || row.checked) return;
     const ok = opt === item.answer;
     if (item.n != null) recordResult(item.n, ok);
+    logExerciseAttempt(
+      qi,
+      item.n,
+      item.kind,
+      ok,
+      opt,
+      item.answer
+    );
     setGroupAnswers((prev) => {
       const next = [...prev];
       next[index] = {
@@ -409,6 +455,14 @@ export default function ExercisesModule({
     if (!row || row.checked) return;
     const ok = val === item.answer;
     if (item.n != null) recordResult(item.n, ok);
+    logExerciseAttempt(
+      qi,
+      item.n,
+      item.kind,
+      ok,
+      val ? "Үнэн" : "Худал",
+      item.answer ? "Үнэн" : "Худал"
+    );
     setGroupAnswers((prev) => {
       const next = [...prev];
       next[index] = {
@@ -437,12 +491,21 @@ export default function ExercisesModule({
       setChecked(true);
       setCorrect(ok);
       recordResult(q.n, ok);
+      logExerciseAttempt(
+        qi,
+        q.n,
+        q.kind,
+        ok,
+        chosenKeys.join(" → "),
+        q.answer.join(" → ")
+      );
     } else if (q.kind === "scramble") {
       const built = seq.map((i) => q.tokens[i]).join("");
       const ok = norm(built) === norm(q.answer);
       setChecked(true);
       setCorrect(ok);
       recordResult(q.n, ok);
+      logExerciseAttempt(qi, q.n, q.kind, ok, built, q.answer);
     }
   }
 
@@ -994,19 +1057,27 @@ export default function ExercisesModule({
       )}
 
       {q.kind !== "listening_group" && checked && (
-        <div className={`bs-ex-fb ${correct ? "bs-ok" : "bs-no"}`}>
-          {correct ? (
-            <span>✓ Зөв!</span>
-          ) : (
-            <span>
-              ✗ Буруу.{" "}
-              {q.kind === "scramble" && <b>Зөв: {q.answer}</b>}
-              {q.kind === "order" && <b>Зөв: {q.answer.join(" → ")}</b>}
-              {q.kind === "choice" && <b>Зөв: {q.answer}</b>}
-              {q.kind === "tf" && <b>Зөв: {q.answer ? "Үнэн" : "Худал"}</b>}
-            </span>
-          )}
-        </div>
+        <>
+          <div className={`bs-ex-fb ${correct ? "bs-ok" : "bs-no"}`}>
+            {correct ? (
+              <span>✓ Зөв!</span>
+            ) : (
+              <span>
+                ✗ Буруу.{" "}
+                {q.kind === "scramble" && <b>Зөв: {q.answer}</b>}
+                {q.kind === "order" && <b>Зөв: {q.answer.join(" → ")}</b>}
+                {q.kind === "choice" && <b>Зөв: {q.answer}</b>}
+                {q.kind === "tf" && <b>Зөв: {q.answer ? "Үнэн" : "Худал"}</b>}
+              </span>
+            )}
+          </div>
+          <QuestionFeedbackButtons
+            lessonId={lessonId}
+            questionId={
+              q.n != null ? `ex:${q.n}` : `ex:step:${qi}`
+            }
+          />
+        </>
       )}
 
       {q.kind !== "listening_group" && checked && !embeddedInPath && (

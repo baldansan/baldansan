@@ -196,6 +196,7 @@ export interface HskTeacherOverlayFields {
 
 export interface HskPackageGrammarPoint extends HskTeacherOverlayFields {
   point: string;
+  pinyin?: string;
   gloss_mn: string;
   teacher_mn: string;
   examples: HskPackageGrammarExample[];

@@ -219,7 +219,7 @@ export default function LessonPathPlayer({
       case "text":
         return <TextsModule lesson={lesson} onDone={finishModuleStage} />;
       case "grammar":
-        return <GrammarModule lesson={lesson} onDone={finishModuleStage} />;
+        return <GrammarModule lessonId={lessonId} lesson={lesson} onDone={finishModuleStage} />;
       case "practice":
         return pathPlan.practiceSource ? (
           <ExercisesModule

@@ -18,6 +18,9 @@ import {
   type GameWordSource,
   wordIdsToQuery,
 } from "@/lib/games/game-word-pool";
+import { recordQuestionAttempt } from "@/lib/analytics/record-question-attempt";
+import { useQuestionTimer } from "@/lib/analytics/attempt-metrics";
+import { QuestionFeedbackButtons } from "@/components/feedback/question-feedback-buttons";
 import { getAuthenticatedUserId, hasSupabaseConfig } from "@/lib/supabase/auth";
 import {
   evaluateVocabQuiz,
@@ -106,6 +109,7 @@ export function HskVocabQuizClient({
 
   const catalogLevel = toCatalogLevel(testLevel);
   const current = deck[index];
+  const getElapsed = useQuestionTimer(`word:${current?.id ?? index}`);
   const total = deck.length;
   const timerPct = (timeLeft / config.secondsPerQuestion) * 100;
 
@@ -199,6 +203,16 @@ export function HskVocabQuizClient({
       correctRef.current += 1;
       setCorrectCount(correctRef.current);
     }
+    recordQuestionAttempt({
+      lessonId: `hsk${testLevel}`,
+      stage: "word_practice",
+      questionId: `word:${current.id}`,
+      questionType: "choice",
+      isCorrect: option === current.correct,
+      selectedAnswer: option,
+      correctAnswer: current.correct,
+      timeSpentMs: getElapsed(),
+    });
     setTimeout(() => advance(), 650);
   }
 
@@ -489,6 +503,12 @@ export function HskVocabQuizClient({
             );
           })}
         </div>
+        {locked && current ? (
+          <QuestionFeedbackButtons
+            lessonId={`hsk${testLevel}`}
+            questionId={`word:${current.id}`}
+          />
+        ) : null}
       </div>
 
       <button

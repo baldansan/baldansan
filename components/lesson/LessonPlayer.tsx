@@ -114,7 +114,7 @@ export default function LessonPlayer({
       case "pronunciation":
         return <PronunciationModule lesson={lesson} onDone={next} />;
       case "grammar":
-        return <GrammarModule lesson={lesson} onDone={next} />;
+        return <GrammarModule lessonId={lessonId} lesson={lesson} onDone={next} />;
       case "exercises_textbook":
         return (
           <ExercisesModule

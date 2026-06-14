@@ -22,7 +22,7 @@ export function inferLanguageFromCourseId(
 ): SelectedLanguage | null {
   const id = courseId.toLowerCase();
   if (id.startsWith("korean")) return "ko";
-  if (id.includes("hsk")) return "zh";
+  if (id.includes("hsk") || id.startsWith("helzui")) return "zh";
   return null;
 }
 
@@ -65,7 +65,7 @@ export function lessonMatchesLanguage(
   if (selected === "ko") {
     return courseId.startsWith("korean");
   }
-  return courseId.includes("hsk");
+  return courseId.includes("hsk") || courseId.startsWith("helzui");
 }
 
 export function filterLessonsByLanguage<T extends { courseId: string; language?: string | null }>(

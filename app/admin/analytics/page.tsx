@@ -2,10 +2,12 @@ import Link from "next/link";
 import { AdminPageHeader } from "@/components/admin/admin-page-header";
 import { AnalyticsMetricCard } from "@/components/admin/analytics-metric-card";
 import { LessonAnalyticsTable } from "@/components/admin/lesson-analytics-table";
+import { QuestionAttemptsAnalyticsSection } from "@/components/admin/question-attempts-analytics-section";
 import {
   getAnalyticsQuickSummary,
   getLessonAnalyticsOverview,
 } from "@/lib/supabase/admin-analytics";
+import { getQuestionAttemptsAnalytics } from "@/lib/supabase/question-attempts-analytics";
 import { getClassroomAdminSummary } from "@/lib/supabase/admin-classroom-stats";
 
 export const dynamic = "force-dynamic";
@@ -15,10 +17,12 @@ export const metadata = {
 };
 
 export default async function AdminAnalyticsPage() {
-  const [overview, quickSummary, classroomSummary] = await Promise.all([
+  const [overview, quickSummary, classroomSummary, attemptAnalytics] =
+    await Promise.all([
     getLessonAnalyticsOverview(),
     getAnalyticsQuickSummary(),
     getClassroomAdminSummary(),
+    getQuestionAttemptsAnalytics(),
   ]);
 
   const avgScore =
@@ -104,6 +108,12 @@ export default async function AdminAnalyticsPage() {
           </p>
         ) : null}
       </section>
+
+      <QuestionAttemptsAnalyticsSection
+        totalAttempts={attemptAnalytics.totalAttempts}
+        questionStats={attemptAnalytics.questionStats}
+        warnings={attemptAnalytics.warnings}
+      />
 
       <section>
         <h2 className="admin-section-title">Deep insights</h2>

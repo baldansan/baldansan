@@ -282,8 +282,408 @@
   border-radius: 12px;
   background: #fff;
 }
-.bs-gr-fill-input:focus {
-  outline: none;
-  border-color: var(--bs-green);
-  box-shadow: 0 0 0 2px var(--bs-green-50);
+/* ------------------------------------------------------------------ */
+/* Grammar v2 — prototype layout (Onest + Noto Sans SC, brand green)   */
+/* ------------------------------------------------------------------ */
+
+.bs-gr2 {
+  font-family: var(--bs-ui), "Onest", system-ui, sans-serif;
+}
+
+.bs-gr2-point {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.bs-gr2-head {
+  text-align: center;
+  padding: 4px 0 2px;
+}
+
+.bs-gr2-point-num {
+  margin: 0 0 4px;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  color: #7a8f84;
+}
+
+.bs-gr2-point-zh {
+  font-family: var(--font-noto-sc, var(--bs-zh)), "Noto Sans SC", sans-serif;
+  font-size: 32px;
+  font-weight: 800;
+  color: #1FB85A;
+  margin: 0;
+  line-height: 1.25;
+}
+
+.bs-gr2-point-zh .zh {
+  font-family: inherit;
+}
+
+.bs-gr2-point-py {
+  margin: 6px 0 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: #1FB85A;
+  letter-spacing: 0.02em;
+}
+
+.bs-gr2-point-mn {
+  margin: 8px 0 0;
+  font-size: 15px;
+  font-weight: 700;
+  color: #3d4f46;
+  line-height: 1.45;
+}
+
+.bs-gr2-section-label {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #018242;
+  margin: 0 0 8px;
+}
+
+.bs-gr2-teacher {
+  display: flex;
+  gap: 11px;
+  align-items: flex-start;
+  background: #fff;
+  border: 1px solid #e6eee9;
+  border-radius: 14px;
+  padding: 13px 15px;
+}
+
+.bs-gr2-teacher-ava {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #eaf7ef;
+  display: grid;
+  place-items: center;
+  font-size: 18px;
+  flex: none;
+}
+
+.bs-gr2-teacher-name {
+  font-size: 11px;
+  font-weight: 800;
+  color: #018242;
+  margin: 0 0 4px;
+}
+
+.bs-gr2-teacher-txt {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #3d4f46;
+  margin: 0;
+}
+
+.bs-gr2-formula {
+  background: #eaf7ef;
+  border: 1.5px solid #1FB85A;
+  border-radius: 14px;
+  padding: 14px 16px;
+}
+
+.bs-gr2-formula-label {
+  display: block;
+  font-size: 11px;
+  font-weight: 800;
+  color: #018242;
+  margin-bottom: 6px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.bs-gr2-formula-code {
+  display: block;
+  font-family: var(--font-noto-sc, var(--bs-zh)), "Noto Sans SC", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #0f7338;
+  line-height: 1.45;
+  white-space: pre-wrap;
+}
+
+.bs-gr2-examples-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.bs-gr2-example {
+  background: #fff;
+  border: 1px solid #e6eee9;
+  border-radius: 14px;
+  padding: 12px 14px;
+}
+
+.bs-gr2-example-zh-line {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+  align-items: baseline;
+}
+
+.bs-gr2-example-zh,
+.bs-gr2-word-tap,
+.bs-gr2-word-plain {
+  font-family: var(--font-noto-sc, var(--bs-zh)), "Noto Sans SC", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #13241b;
+  line-height: 1.4;
+}
+
+.bs-gr2-word-tap {
+  border: none;
+  background: transparent;
+  padding: 0 1px;
+  cursor: pointer;
+  border-bottom: 2px dotted #b8e6cc;
+}
+
+.bs-gr2-example-py {
+  margin: 4px 0 0;
+  font-size: 13px;
+  font-weight: 600;
+  color: #5e6f66;
+}
+
+.bs-gr2-mn-reveal {
+  width: 100%;
+  margin-top: 10px;
+  border: none;
+  background: #f6faf7;
+  border-radius: 10px;
+  padding: 10px 12px;
+  cursor: pointer;
+  text-align: left;
+  font-family: inherit;
+}
+
+.bs-gr2-mn-text {
+  display: block;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #3d4f46;
+  transition: filter 0.2s ease;
+}
+
+.bs-gr2-mn-text--blur {
+  filter: blur(6px);
+  user-select: none;
+}
+
+.bs-gr2-mn-hint {
+  display: block;
+  margin-top: 6px;
+  font-size: 11px;
+  font-weight: 700;
+  color: #018242;
+}
+
+.bs-gr2-mistakes-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.bs-gr2-mistake-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.bs-gr2-mistake-card {
+  border-radius: 12px;
+  padding: 10px 12px;
+  font-size: 14px;
+  line-height: 1.45;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.bs-gr2-mistake-card--bad {
+  background: #fef2f1;
+  border: 1.5px solid #f0c4c0;
+  color: #c0392b;
+}
+
+.bs-gr2-mistake-card--ok {
+  background: #eaf7ef;
+  border: 1.5px solid #b8e6cc;
+  color: #018242;
+}
+
+.bs-gr2-mistake-tag {
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.bs-gr2-mistake-why {
+  grid-column: 1 / -1;
+  margin: 0;
+  font-size: 13px;
+  color: #5e6f66;
+  line-height: 1.55;
+  padding: 8px 10px;
+  background: #f6faf7;
+  border-radius: 10px;
+}
+
+.bs-gr2-warn {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  background: #fffbe9;
+  border: 1px solid #f5e3b8;
+  border-radius: 12px;
+  padding: 12px 14px;
+}
+
+.bs-gr2-warn-icon {
+  font-size: 16px;
+  flex: none;
+}
+
+.bs-gr2-warn-title {
+  font-size: 11px;
+  font-weight: 800;
+  color: #9a7b0a;
+  margin: 0 0 4px;
+}
+
+.bs-gr2-warn-body {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #5e4a08;
+  margin: 0;
+}
+
+.bs-gr2-quiz-opts {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.bs-gr2-quiz-opt,
+.bs-gr2-judge-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  border: 1.5px solid #e6eee9;
+  background: #fff;
+  border-radius: 12px;
+  padding: 12px 14px;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 600;
+  color: #13241b;
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.bs-gr2-quiz-opt:disabled,
+.bs-gr2-judge-btn:disabled {
+  cursor: default;
+}
+
+.bs-gr2-quiz-opt--ok,
+.bs-gr2-judge-btn--ok {
+  background: #eaf7ef;
+  border-color: #1FB85A;
+  color: #018242;
+}
+
+.bs-gr2-quiz-opt--bad,
+.bs-gr2-judge-btn--bad {
+  background: #fef2f1;
+  border-color: #e8476b;
+  color: #c0392b;
+}
+
+.bs-gr2-quiz-opt--reveal {
+  background: #f6faf7;
+  border-color: #b8e6cc;
+  color: #018242;
+}
+
+.bs-gr2-quiz-mark {
+  flex: none;
+  font-weight: 800;
+  font-size: 16px;
+}
+
+.bs-gr2-quiz-mark--ok {
+  color: #1FB85A;
+}
+
+.bs-gr2-judge-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.bs-gr2-quiz-feedback {
+  margin: 10px 0 0;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.bs-gr2-quiz-feedback--ok {
+  color: #018242;
+}
+
+.bs-gr2-quiz-feedback--bad {
+  color: #c0392b;
+}
+
+.bs-gr2-check-q,
+.bs-gr2-exercise-q {
+  font-size: 15px;
+  font-weight: 700;
+  color: #13241b;
+  line-height: 1.55;
+  margin: 0 0 12px;
+}
+
+.bs-gr2-exercise-expl {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #3d4f46;
+  margin: 0;
+  padding: 12px 14px;
+  background: #eaf7ef;
+  border-radius: 12px;
+  border: 1px solid #b8e6cc;
+}
+
+.bs-gr2-exercise-expl--wrong {
+  background: #fffbe9;
+  border-color: #f5e3b8;
+}
+
+.bs-gr2-exercise-feedback {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+@media (max-width: 400px) {
+  .bs-gr2-point-zh {
+    font-size: 28px;
+  }
+  .bs-gr2-mistake-row {
+    grid-template-columns: 1fr;
+  }
 }

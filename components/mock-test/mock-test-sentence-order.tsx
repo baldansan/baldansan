@@ -1,6 +1,9 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
+import { useQuestionTimer } from "@/lib/analytics/attempt-metrics";
+import { recordQuestionAttempt } from "@/lib/analytics/record-question-attempt";
+import { QuestionFeedbackButtons } from "@/components/feedback/question-feedback-buttons";
 import {
   buildSentenceFromTokenIndices,
   gradeMockSentenceOrder,
@@ -17,6 +20,7 @@ type Props = {
   showResults?: boolean;
   resultCorrect?: boolean | null;
   onAdvanceNext?: () => void;
+  analyticsLessonId?: string;
 };
 
 export function MockTestSentenceOrder({
@@ -27,6 +31,7 @@ export function MockTestSentenceOrder({
   showResults = false,
   resultCorrect = null,
   onAdvanceNext,
+  analyticsLessonId,
 }: Props) {
   const instruction = sentenceOrderInstruction(question.stem);
   const [seq, setSeq] = useState<number[]>(() =>
@@ -41,6 +46,7 @@ export function MockTestSentenceOrder({
   );
   const allPlaced = seq.length === tokens.length;
   const locked = showResults || checked;
+  const getElapsed = useQuestionTimer(`mock:so:${question.id}`);
 
   useEffect(() => {
     if (!value) {
@@ -85,6 +91,18 @@ export function MockTestSentenceOrder({
     const ok = gradeMockSentenceOrder(question, builtAnswer);
     setCorrect(ok);
     setChecked(true);
+    if (analyticsLessonId) {
+      recordQuestionAttempt({
+        lessonId: analyticsLessonId,
+        stage: "mock_exam",
+        questionId: `mock:${question.id}`,
+        questionType: "order",
+        isCorrect: ok,
+        selectedAnswer: builtAnswer,
+        correctAnswer: question.correct_answer,
+        timeSpentMs: getElapsed(),
+      });
+    }
   }
 
   const feedbackCorrect =
@@ -169,6 +187,12 @@ export function MockTestSentenceOrder({
             >
               Дараагийн асуулт →
             </button>
+          ) : null}
+          {analyticsLessonId && !showResults ? (
+            <QuestionFeedbackButtons
+              lessonId={analyticsLessonId}
+              questionId={`mock:${question.id}`}
+            />
           ) : null}
         </div>
       ) : null}

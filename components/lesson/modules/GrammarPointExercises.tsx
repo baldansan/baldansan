@@ -1,21 +1,31 @@
 "use client";
 
 import { useState } from "react";
+import { useQuestionTimer } from "@/lib/analytics/attempt-metrics";
+import {
+  mapGrammarExerciseType,
+  recordQuestionAttempt,
+} from "@/lib/analytics/record-question-attempt";
+import { QuestionFeedbackButtons } from "@/components/feedback/question-feedback-buttons";
 import {
   grammarExerciseAnswerLabel,
   isGrammarExerciseCorrect,
 } from "@/lib/lesson/grammar-exercise";
+import { grammarExerciseQuestionId } from "@/lib/lesson/grammar-question-id";
 import { MnGrammarTermText } from "@/components/lesson/mn-grammar-term-text";
 import type { HskPackageGrammarExercise } from "@/types/hsk-lesson-package";
 
 type Props = {
+  lessonId: string;
+  pointSlug: string;
   exercises: HskPackageGrammarExercise[];
-  /** Бүх дүрэм дууссан эсэх — сүүлийн дасгалын товчны шошгыг тодорхойлно. */
   isLastPoint?: boolean;
   onComplete: () => void;
 };
 
 export function GrammarPointExercises({
+  lessonId,
+  pointSlug,
   exercises,
   isLastPoint = false,
   onComplete,
@@ -29,6 +39,10 @@ export function GrammarPointExercises({
 
   const ex = exercises[ei];
   const total = exercises.length;
+  const questionId = grammarExerciseQuestionId(pointSlug, ei);
+  const getElapsed = useQuestionTimer(
+    `grammar-ex:${lessonId}:${questionId}`
+  );
 
   if (!ex) {
     onComplete();
@@ -43,12 +57,26 @@ export function GrammarPointExercises({
     setCorrect(false);
   }
 
+  function logAttempt(selected: string, ok: boolean) {
+    recordQuestionAttempt({
+      lessonId,
+      stage: "grammar",
+      questionId,
+      questionType: mapGrammarExerciseType(ex.type),
+      isCorrect: ok,
+      selectedAnswer: selected,
+      correctAnswer: answerLabel,
+      timeSpentMs: getElapsed(),
+    });
+  }
+
   function submitChoice(opt: string) {
     if (answered) return;
     setPicked(opt);
     const ok = isGrammarExerciseCorrect(ex, opt);
     setCorrect(ok);
     setAnswered(true);
+    logAttempt(opt, ok);
   }
 
   function submitJudge(value: boolean) {
@@ -57,6 +85,7 @@ export function GrammarPointExercises({
     const ok = isGrammarExerciseCorrect(ex, value);
     setCorrect(ok);
     setAnswered(true);
+    logAttempt(value ? "Үнэн" : "Худал", ok);
   }
 
   function submitFill() {
@@ -64,6 +93,7 @@ export function GrammarPointExercises({
     const ok = isGrammarExerciseCorrect(ex, fillText);
     setCorrect(ok);
     setAnswered(true);
+    logAttempt(fillText.trim(), ok);
   }
 
   function continueAfterFeedback() {
@@ -76,6 +106,9 @@ export function GrammarPointExercises({
   }
 
   const answerLabel = grammarExerciseAnswerLabel(ex);
+  const explanation = correct
+    ? ex.explanation_correct_mn
+    : ex.explanation_wrong_mn || ex.explanation_correct_mn;
 
   const continueLabel =
     ei < total - 1
@@ -85,25 +118,24 @@ export function GrammarPointExercises({
         : "Дараагийн дүрэм →";
 
   return (
-    <div className="bs-gr-exercise-block">
-      <div className="bs-label" style={{ margin: 0 }}>
-        <span className="bs-dot" />
+    <div className="bs-gr2-exercises">
+      <p className="bs-gr2-section-label">
         Дасгал ({ei + 1}/{total})
-      </div>
+      </p>
 
-      <p className="bs-gr-exercise-q">
+      <p className="bs-gr2-exercise-q">
         <MnGrammarTermText text={ex.question} />
       </p>
 
       {ex.type === "choice" && ex.options ? (
-        <div className="bs-tov-check-opts">
+        <div className="bs-gr2-quiz-opts">
           {ex.options.map((opt) => {
             const isPicked = picked === opt;
             const isAnswer = opt === answerLabel;
-            let cls = "bs-tov-check-opt";
-            if (answered && isPicked && correct) cls += " bs-tov-check-opt--ok";
-            else if (answered && isPicked && !correct) cls += " bs-tov-check-opt--bad";
-            else if (answered && isAnswer && !correct) cls += " bs-tov-check-opt--reveal";
+            let cls = "bs-gr2-quiz-opt";
+            if (answered && isPicked && correct) cls += " bs-gr2-quiz-opt--ok";
+            else if (answered && isPicked && !correct) cls += " bs-gr2-quiz-opt--bad";
+            else if (answered && isAnswer && !correct) cls += " bs-gr2-quiz-opt--reveal";
             return (
               <button
                 key={opt}
@@ -112,6 +144,16 @@ export function GrammarPointExercises({
                 disabled={answered}
                 onClick={() => submitChoice(opt)}
               >
+                {answered && isPicked ? (
+                  <span className="bs-gr2-quiz-mark" aria-hidden>
+                    {correct ? "✓" : "✗"}
+                  </span>
+                ) : null}
+                {answered && !isPicked && isAnswer && !correct ? (
+                  <span className="bs-gr2-quiz-mark bs-gr2-quiz-mark--ok" aria-hidden>
+                    ✓
+                  </span>
+                ) : null}
                 <MnGrammarTermText text={opt} nested />
               </button>
             );
@@ -120,16 +162,16 @@ export function GrammarPointExercises({
       ) : null}
 
       {ex.type === "judge" ? (
-        <div className="bs-ex-tf">
+        <div className="bs-gr2-judge-row">
           {[
-            { v: true, label: "✓ Үнэн" },
-            { v: false, label: "✗ Худал" },
+            { v: true, label: "Үнэн" },
+            { v: false, label: "Худал" },
           ].map(({ v, label }) => {
-            let cls = "bs-ex-opt";
+            let cls = "bs-gr2-judge-btn";
             if (answered) {
               const ansBool = answerLabel === "Үнэн";
-              if (v === ansBool) cls += " bs-correct";
-              else if (v === tf) cls += " bs-wrong";
+              if (v === ansBool) cls += " bs-gr2-judge-btn--ok";
+              else if (v === tf) cls += " bs-gr2-judge-btn--bad";
             }
             return (
               <button
@@ -139,6 +181,16 @@ export function GrammarPointExercises({
                 disabled={answered}
                 onClick={() => submitJudge(v)}
               >
+                {answered && v === tf ? (
+                  <span className="bs-gr2-quiz-mark" aria-hidden>
+                    {correct ? "✓" : "✗"}
+                  </span>
+                ) : null}
+                {answered && v !== tf && answerLabel === (v ? "Үнэн" : "Худал") ? (
+                  <span className="bs-gr2-quiz-mark bs-gr2-quiz-mark--ok" aria-hidden>
+                    ✓
+                  </span>
+                ) : null}
                 {label}
               </button>
             );
@@ -170,34 +222,20 @@ export function GrammarPointExercises({
       ) : null}
 
       {answered ? (
-        <div className="bs-gr-exercise-feedback">
-          {correct ? (
-            <>
-              <p className="bs-tov-check-feedback bs-tov-check-feedback--ok">Зөв!</p>
-              {ex.explanation_correct_mn ? (
-                <p className="bs-gr-exercise-expl">
-                  <MnGrammarTermText text={ex.explanation_correct_mn} />
-                </p>
-              ) : null}
-            </>
-          ) : (
-            <>
-              <p className="bs-tov-check-feedback bs-tov-check-feedback--bad">
-                Буруу. Зөв хариулт:{" "}
-                <MnGrammarTermText text={answerLabel} nested />
-              </p>
-              {ex.explanation_wrong_mn ? (
-                <p className="bs-gr-exercise-expl bs-gr-exercise-expl--wrong">
-                  <MnGrammarTermText text={ex.explanation_wrong_mn} />
-                </p>
-              ) : null}
-              {ex.explanation_correct_mn ? (
-                <p className="bs-gr-exercise-expl">
-                  <MnGrammarTermText text={ex.explanation_correct_mn} />
-                </p>
-              ) : null}
-            </>
-          )}
+        <div className="bs-gr2-exercise-feedback">
+          {!correct && ex.type !== "judge" && ex.type !== "choice" ? (
+            <p className="bs-gr2-quiz-feedback bs-gr2-quiz-feedback--bad">
+              Буруу. Зөв хариулт: <MnGrammarTermText text={answerLabel} nested />
+            </p>
+          ) : null}
+          {explanation ? (
+            <p
+              className={`bs-gr2-exercise-expl ${correct ? "" : "bs-gr2-exercise-expl--wrong"}`}
+            >
+              <MnGrammarTermText text={explanation} />
+            </p>
+          ) : null}
+          <QuestionFeedbackButtons lessonId={lessonId} questionId={questionId} />
           <button
             type="button"
             className="bs-cta bs-path-visible-cta"
