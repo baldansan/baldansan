@@ -1,6 +1,7 @@
 import "server-only";
 
 import type { VideoSeriesInfo } from "@/lib/bichleg/types";
+import { normalizeSeriesCoverUrl } from "@/lib/bichleg/series-cover";
 import { getAdminBichlegSupabaseClient } from "@/lib/supabase/admin-bichleg-client";
 
 export type AdminSeriesRow = VideoSeriesInfo & {
@@ -24,6 +25,9 @@ function mapSeries(raw: Record<string, unknown>): VideoSeriesInfo {
     title_mn: raw.title_mn ? String(raw.title_mn) : null,
     description_mn: raw.description_mn ? String(raw.description_mn) : null,
     cover_url: raw.cover_url ? String(raw.cover_url) : null,
+    thumbnail_url: normalizeSeriesCoverUrl(
+      raw.thumbnail_url ? String(raw.thumbnail_url) : null
+    ),
     hsk_level: raw.hsk_level != null ? Number(raw.hsk_level) : null,
   };
 }
@@ -35,7 +39,9 @@ export async function fetchAdminSeriesList(): Promise<AdminSeriesRow[]> {
 
   const { data, error } = await client
     .from("video_series")
-    .select("id, title_zh, title_mn, description_mn, hsk_level, videos(count)")
+    .select(
+      "id, title_zh, title_mn, description_mn, hsk_level, thumbnail_url, videos(count)"
+    )
     .order("title_mn", { ascending: true });
 
   if (error || !data) return [];
@@ -62,7 +68,7 @@ export async function fetchAdminSeriesEpisodes(
   const [{ data: seriesData }, { data: videoData }] = await Promise.all([
     client
       .from("video_series")
-      .select("id, title_zh, title_mn, description_mn, hsk_level")
+      .select("id, title_zh, title_mn, description_mn, hsk_level, thumbnail_url")
       .eq("id", seriesId)
       .maybeSingle(),
     client

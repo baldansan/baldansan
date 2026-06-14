@@ -36,6 +36,8 @@ export function BichlegAdminClient({ initialSeries }: Props) {
   const [deleteSeriesConfirm, setDeleteSeriesConfirm] = useState("");
   const [busy, setBusy] = useState<string | null>(null);
   const [offsetDrafts, setOffsetDrafts] = useState<Record<string, string>>({});
+  const [thumbnailFile, setThumbnailFile] = useState<File | null>(null);
+  const [thumbnailPreview, setThumbnailPreview] = useState<string | null>(null);
 
   const loadSeriesDetail = useCallback(async (seriesId: string) => {
     setLoadingDetail(true);
@@ -63,6 +65,8 @@ export function BichlegAdminClient({ initialSeries }: Props) {
 
       setSeriesDetail(data.series);
       setEpisodes(data.episodes ?? []);
+      setThumbnailFile(null);
+      setThumbnailPreview(null);
       const drafts: Record<string, string> = {};
       for (const ep of data.episodes ?? []) {
         drafts[ep.id] = String(ep.subtitle_offset_sec);
@@ -145,6 +149,91 @@ export function BichlegAdminClient({ initialSeries }: Props) {
     } finally {
       setBusy(null);
     }
+  }
+
+  async function uploadThumbnail() {
+    if (!seriesDetail || !thumbnailFile) return;
+
+    setBusy("thumb-upload");
+    setError(null);
+
+    try {
+      const formData = new FormData();
+      formData.append("file", thumbnailFile);
+
+      const res = await fetch(
+        `/api/admin/bichleg/series/${encodeURIComponent(seriesDetail.id)}/thumbnail`,
+        { method: "POST", body: formData }
+      );
+      const data = (await res.json()) as {
+        ok?: boolean;
+        thumbnail_url?: string;
+        error?: string;
+      };
+
+      if (!res.ok || !data.ok || !data.thumbnail_url) {
+        setError(data.error ?? "Зураг байршуулахад алдаа.");
+        return;
+      }
+
+      setSeriesDetail((prev) =>
+        prev ? { ...prev, thumbnail_url: data.thumbnail_url ?? null } : prev
+      );
+      setSeriesList((prev) =>
+        prev.map((s) =>
+          s.id === seriesDetail.id
+            ? { ...s, thumbnail_url: data.thumbnail_url ?? null }
+            : s
+        )
+      );
+      setThumbnailFile(null);
+      if (thumbnailPreview) URL.revokeObjectURL(thumbnailPreview);
+      setThumbnailPreview(null);
+      router.refresh();
+    } catch {
+      setError("Зураг байршуулахад алдаа гарлаа.");
+    } finally {
+      setBusy(null);
+    }
+  }
+
+  async function removeThumbnail() {
+    if (!seriesDetail?.thumbnail_url) return;
+    if (!window.confirm("Категорийн зургийг устгах уу?")) return;
+
+    setBusy("thumb-remove");
+    setError(null);
+
+    try {
+      const res = await fetch(
+        `/api/admin/bichleg/series/${encodeURIComponent(seriesDetail.id)}/thumbnail`,
+        { method: "DELETE" }
+      );
+      const data = (await res.json()) as { ok?: boolean; error?: string };
+      if (!res.ok || !data.ok) {
+        setError(data.error ?? "Зураг устгахад алдаа.");
+        return;
+      }
+
+      setSeriesDetail((prev) => (prev ? { ...prev, thumbnail_url: null } : prev));
+      setSeriesList((prev) =>
+        prev.map((s) => (s.id === seriesDetail.id ? { ...s, thumbnail_url: null } : s))
+      );
+      setThumbnailFile(null);
+      if (thumbnailPreview) URL.revokeObjectURL(thumbnailPreview);
+      setThumbnailPreview(null);
+      router.refresh();
+    } catch {
+      setError("Зураг устгахад алдаа гарлаа.");
+    } finally {
+      setBusy(null);
+    }
+  }
+
+  function onThumbnailFileChange(file: File | null) {
+    setThumbnailFile(file);
+    if (thumbnailPreview) URL.revokeObjectURL(thumbnailPreview);
+    setThumbnailPreview(file ? URL.createObjectURL(file) : null);
   }
 
   async function deleteSeries() {
@@ -279,6 +368,60 @@ export function BichlegAdminClient({ initialSeries }: Props) {
           >
             ← Цувралууд руу буцах
           </button>
+
+          {seriesDetail ? (
+            <AdminEditorSection
+              title="Категорийн зураг"
+              description="Бичлэг хуудсан дээрх картын thumbnail. JPEG, PNG, WebP — 5MB хүртэл."
+            >
+              <div className="flex flex-col gap-4 sm:flex-row sm:items-start">
+                <div className="overflow-hidden rounded-2xl ring-1 ring-slate-200">
+                  {thumbnailPreview || seriesDetail.thumbnail_url ? (
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img
+                      src={thumbnailPreview ?? seriesDetail.thumbnail_url ?? ""}
+                      alt=""
+                      className="aspect-video w-full max-w-xs object-cover"
+                    />
+                  ) : (
+                    <div className="flex aspect-video w-full max-w-xs items-center justify-center bg-gradient-to-br from-blue-500 to-blue-700 text-4xl font-black text-white">
+                      {seriesDetail.title_zh?.charAt(0) ?? "课"}
+                    </div>
+                  )}
+                </div>
+                <div className="flex flex-col gap-3">
+                  <input
+                    type="file"
+                    accept="image/jpeg,image/png,image/webp"
+                    className="text-sm text-slate-700"
+                    onChange={(e) =>
+                      onThumbnailFileChange(e.target.files?.[0] ?? null)
+                    }
+                  />
+                  <div className="flex flex-wrap gap-2">
+                    <button
+                      type="button"
+                      className={btnPrimary}
+                      disabled={!thumbnailFile || busy === "thumb-upload"}
+                      onClick={() => void uploadThumbnail()}
+                    >
+                      {seriesDetail.thumbnail_url ? "Солих" : "Байршуулах"}
+                    </button>
+                    {seriesDetail.thumbnail_url ? (
+                      <button
+                        type="button"
+                        className={btnDanger}
+                        disabled={busy === "thumb-remove"}
+                        onClick={() => void removeThumbnail()}
+                      >
+                        Устгах
+                      </button>
+                    ) : null}
+                  </div>
+                </div>
+              </div>
+            </AdminEditorSection>
+          ) : null}
 
           <AdminEditorSection
             title={seriesDetail?.title_mn ?? seriesDetail?.id ?? "Цуврал"}

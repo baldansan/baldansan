@@ -6,6 +6,7 @@ import { BichlegVideoCard } from "@/components/temee/bichleg-video-card";
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
 import { SHELL_MAIN_NARROW } from "@/lib/app-shell-classes";
 import { seriesCoverInitial } from "@/lib/bichleg/series-cover";
+import { resolveSeriesThumbnailUrl } from "@/lib/bichleg/series-thumbnail";
 import type { SeriesWatchProgress, VideoSeriesCard } from "@/lib/bichleg/types";
 
 type Props = {
@@ -69,7 +70,7 @@ export function BichlegSeriesPickerClient({
                 titleZh={series.title_zh}
                 hanzi={seriesCoverInitial(series.title_zh)}
                 thumbIndex={index}
-                coverUrl={series.cover_url}
+                coverUrl={resolveSeriesThumbnailUrl(series)}
                 episodeBadge={`${series.videoCount} анги`}
                 hskLevel={series.hsk_level}
                 progressPct={showProgress ? pct : undefined}

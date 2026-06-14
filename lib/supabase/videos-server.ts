@@ -22,6 +22,9 @@ function mapSeries(raw: Record<string, unknown> | null): VideoSeriesInfo | null 
     cover_url: normalizeSeriesCoverUrl(
       raw.cover_url ? String(raw.cover_url) : null
     ),
+    thumbnail_url: normalizeSeriesCoverUrl(
+      raw.thumbnail_url ? String(raw.thumbnail_url) : null
+    ),
     hsk_level: raw.hsk_level != null ? Number(raw.hsk_level) : null,
   };
 }
@@ -66,12 +69,12 @@ function mapVideo(raw: Record<string, unknown>): VideoRow {
 }
 
 const VIDEO_SERIES_SELECT =
-  "id, title_zh, title_mn, description_mn, hsk_level, cover_url";
+  "id, title_zh, title_mn, description_mn, hsk_level, cover_url, thumbnail_url";
 const VIDEO_SERIES_SELECT_CORE =
   "id, title_zh, title_mn, description_mn, hsk_level";
 
 const VIDEO_ROW_SELECT =
-  "*, video_series ( id, title_zh, title_mn, description_mn, hsk_level, cover_url )";
+  "*, video_series ( id, title_zh, title_mn, description_mn, hsk_level, cover_url, thumbnail_url )";
 const VIDEO_ROW_SELECT_CORE =
   "*, video_series ( id, title_zh, title_mn, description_mn, hsk_level )";
 const VIDEO_EPISODE_SELECT = `${VIDEO_ROW_SELECT}, video_subtitles(count)`;

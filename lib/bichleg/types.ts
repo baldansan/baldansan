@@ -18,6 +18,7 @@ export type VideoSeriesInfo = {
   title_mn: string | null;
   description_mn: string | null;
   cover_url: string | null;
+  thumbnail_url: string | null;
   hsk_level: number | null;
 };
 
