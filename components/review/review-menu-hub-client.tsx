@@ -1,9 +1,8 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { useCallback, useEffect, useState } from "react";
-import { TemeeImage } from "@/components/temee/temee-image";
+import { TemeeEmojiIcon } from "@/components/temee/temee-emoji-icon";
 import { useActiveHskLevel } from "@/components/providers/active-hsk-level-provider";
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
 import { SHELL_MAIN_REVIEW } from "@/lib/app-shell-classes";
@@ -30,7 +29,6 @@ import {
 } from "@/lib/supabase/user-word-srs";
 import type { BichlegContinueTarget } from "@/lib/bichleg/types";
 import { fetchBichlegContinueTargetClient } from "@/lib/supabase/video-progress-client";
-import { TEMEE_ASSETS } from "@/lib/temee/assets";
 
 type Props = {
   testCount: number;
@@ -221,8 +219,8 @@ export function ReviewMenuHubClient({
         </div>
 
         <div className="bs-tm-greet">
-          <TemeeImage
-            variant="thumbsup"
+          <TemeeEmojiIcon
+            variant="greet"
             className="bs-tm-greet-img"
             width={86}
             height={86}
@@ -270,8 +268,8 @@ export function ReviewMenuHubClient({
         <p className="bs-tm-sec">Өнөөдөр юу хийх вэ?</p>
 
         <Link href="/review/daily" className="bs-tm-feat">
-          <TemeeImage
-            variant="point"
+          <TemeeEmojiIcon
+            variant="featured"
             className="bs-tm-feat-img"
             width={70}
             height={70}
@@ -353,14 +351,8 @@ export function ReviewMenuHubClient({
         </Link>
 
         <Link href="/review/grammar/hsk30" className="bs-tm-card">
-          <span className="bs-tm-card-ic bs-tm-card-ic--red">
-            <Image
-              src={TEMEE_ASSETS.chineseIcon}
-              alt=""
-              width={48}
-              height={48}
-              className="bs-tm-ic-img"
-            />
+          <span className="bs-tm-card-ic bs-tm-card-ic--red" aria-hidden>
+            📚
           </span>
           <span className="flex-1 min-w-0">
             <span className="bs-tm-card-title">HSK 3.0 дүрэм</span>

@@ -1,3 +1,4 @@
+/** PNG paths kept for future Temee artwork — UI uses TemeeEmojiIcon for now. */
 export const TEMEE_ASSETS = {
   thumbsup: "/temee/temee-thumbsup.png",
   point: "/temee/temee-point.png",

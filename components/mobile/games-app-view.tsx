@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
-import { TemeeImage } from "@/components/temee/temee-image";
+import { TemeeEmojiIcon } from "@/components/temee/temee-emoji-icon";
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
 import { SHELL_MAIN_NARROW } from "@/lib/app-shell-classes";
 import {
@@ -251,8 +251,8 @@ export function GamesAppView({ lessonIds, lessonTitles }: Props) {
       ) : null}
 
       <Link href={marathonHref} className="bs-tm-game-feat">
-        <TemeeImage
-          variant="thumbsup"
+        <TemeeEmojiIcon
+          variant="games"
           className="bs-tm-game-feat-img"
           width={64}
           height={64}

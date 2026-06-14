@@ -2,7 +2,7 @@
 
 import DialoguesModule from "@/components/lesson/modules/DialoguesModule";
 import PronunciationModule from "@/components/lesson/modules/PronunciationModule";
-import { TemeeImage } from "@/components/temee/temee-image";
+import { TemeeEmojiIcon } from "@/components/temee/temee-emoji-icon";
 import type { LessonPathPlan } from "@/lib/lesson/build-lesson-path";
 import type { HskLessonPackage } from "@/types/hsk-lesson-package";
 
@@ -65,11 +65,12 @@ export function LessonPathWarmupStage({
   return (
     <div className="bs-path-warmup">
       <div className="bs-tm-intro">
-        <TemeeImage
+        <TemeeEmojiIcon
           variant="teach"
           className="bs-tm-intro-img"
           width={150}
           height={150}
+          emojiScale={0.42}
         />
       </div>
 

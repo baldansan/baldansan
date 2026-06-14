@@ -1,9 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { useCallback, useEffect, useState } from "react";
+import { TemeeEmojiIcon } from "@/components/temee/temee-emoji-icon";
 import { AuthLoadErrorCard } from "@/components/auth/auth-load-error-card";
 import { buildFallbackAuthCheckResult } from "@/lib/auth/auth-check-utils";
 import {
@@ -16,7 +16,6 @@ import { withTimeout } from "@/lib/async/with-timeout";
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
 import { MobileCard } from "@/components/mobile/mobile-card";
 import { useActiveHskLevel } from "@/components/providers/active-hsk-level-provider";
-import { TEMEE_ASSETS } from "@/lib/temee/assets";
 import { formatActiveHskLevel } from "@/lib/hsk/active-hsk-level";
 import { isCurrentUserAdmin } from "@/lib/supabase/admin";
 import { hasSupabaseConfig, signOut } from "@/lib/supabase/auth";
@@ -28,6 +27,31 @@ import type { AuthUser } from "@/types/auth";
 type LoadState = "loading" | "ready" | "error";
 
 const PROFILE_ROUTE = "/profile";
+
+function ProfileAvatar({ displayName, guest }: { displayName: string; guest?: boolean }) {
+  if (guest) {
+    return (
+      <div className="bs-tm-avatar">
+        <TemeeEmojiIcon
+          variant="avatar"
+          width={88}
+          height={88}
+          className="bs-tm-avatar-emoji"
+          emojiScale={0.44}
+        />
+      </div>
+    );
+  }
+
+  const initial = displayName.trim().charAt(0).toUpperCase() || "S";
+  return (
+    <div className="bs-tm-avatar">
+      <span className="bs-tm-avatar-initial" aria-hidden>
+        {initial}
+      </span>
+    </div>
+  );
+}
 
 export function ProfileAppView() {
   const router = useRouter();
@@ -209,14 +233,7 @@ export function ProfileAppView() {
         activeTab="profile"
         >
         <div className="bs-tm-phead">
-          <div className="bs-tm-avatar">
-            <Image
-              src={TEMEE_ASSETS.avatar}
-              alt="Тэмээ багш"
-              width={96}
-              height={96}
-            />
-          </div>
+          <ProfileAvatar displayName="Зочин" guest />
           <h1 className="bs-tm-pname">Зочин хэрэглэгч</h1>
           <p className="bs-tm-prank">{guestLevelLabel}</p>
           {streak > 0 ? (
@@ -267,14 +284,7 @@ export function ProfileAppView() {
       activeTab="profile"
       >
       <div className="bs-tm-phead">
-        <div className="bs-tm-avatar">
-          <Image
-            src={TEMEE_ASSETS.avatar}
-            alt="Тэмээ багш"
-            width={96}
-            height={96}
-          />
-        </div>
+        <ProfileAvatar displayName={displayName} />
         <h1 className="bs-tm-pname">{displayName}</h1>
         <p className="bs-tm-prank">
           {hydrated ? `${formatActiveHskLevel(activeLevel)} суралцагч` : "Суралцагч"}

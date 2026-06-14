@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { Hsk30ExamplesList } from "@/components/hsk30-durem/hsk30-examples-list";
 import { Hsk30QuizBlock } from "@/components/hsk30-durem/hsk30-quiz-block";
-import { TemeeImage } from "@/components/temee/temee-image";
+import { TemeeEmojiIcon } from "@/components/temee/temee-emoji-icon";
 import { hsk30LevelHref } from "@/lib/hsk30-durem/load-course";
 import { highlightZh } from "@/lib/text/highlight-zh";
 import type { Hsk30Point } from "@/types/hsk30-durem";
@@ -39,11 +39,12 @@ export function Hsk30PointView({
       </div>
 
       <div className="teacher">
-        <TemeeImage
+        <TemeeEmojiIcon
           variant="think"
           className="ava"
           width={34}
           height={34}
+          emojiScale={0.5}
         />
         <div className="t-txt">{point.teacher}</div>
       </div>

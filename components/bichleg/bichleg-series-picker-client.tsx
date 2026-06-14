@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { TemeeImage } from "@/components/temee/temee-image";
+import { TemeeEmojiIcon } from "@/components/temee/temee-emoji-icon";
 import { BichlegVideoCard } from "@/components/temee/bichleg-video-card";
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
 import { SHELL_MAIN_NARROW } from "@/lib/app-shell-classes";
@@ -27,8 +27,8 @@ export function BichlegSeriesPickerClient({
       <h1 className="bs-tm-page-title">Бичлэг</h1>
 
       <div className="bs-tm-bichleg-greet">
-        <TemeeImage
-          variant="think"
+        <TemeeEmojiIcon
+          variant="bichleg"
           className="bs-tm-bichleg-greet-img"
           width={72}
           height={72}

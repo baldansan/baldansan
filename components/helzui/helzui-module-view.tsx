@@ -4,7 +4,7 @@ import Link from "next/link";
 import { HelzuiExamItem } from "@/components/helzui/helzui-exam-item";
 import { HelzuiRichHtml } from "@/components/helzui/helzui-rich-html";
 import { HelzuiSectionDivider } from "@/components/helzui/helzui-section-divider";
-import { TemeeImage } from "@/components/temee/temee-image";
+import { TemeeEmojiIcon } from "@/components/temee/temee-emoji-icon";
 import { helzuiModuleHref } from "@/lib/helzui/load-course";
 import type { HelzuiModule, HelzuiRoleColors } from "@/types/helzui-course";
 
@@ -35,7 +35,13 @@ export function HelzuiModuleView({
       <h1 className="hz-mod-heading">{module.heading}</h1>
 
       <div className="hz-teacher">
-        <TemeeImage variant="think" className="hz-ava" width={36} height={36} />
+        <TemeeEmojiIcon
+          variant="think"
+          className="hz-ava"
+          width={36}
+          height={36}
+          emojiScale={0.5}
+        />
         <div>
           <p className="hz-t-name">Тэмээ багш</p>
           <p className="hz-t-txt">{module.teacher}</p>

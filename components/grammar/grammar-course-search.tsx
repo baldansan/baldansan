@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useMemo, useState, type ReactNode } from "react";
 import { MobileCard } from "@/components/mobile/mobile-card";
-import { TemeeImage } from "@/components/temee/temee-image";
+import { TemeeEmojiIcon } from "@/components/temee/temee-emoji-icon";
 import {
   filterGrammarSearchEntries,
   type GrammarSearchEntry,
@@ -86,7 +86,7 @@ export function GrammarCourseSearch({
             </div>
           ) : (
             <div className="hz-grammar-search-empty">
-              <TemeeImage
+              <TemeeEmojiIcon
                 variant="think"
                 width={72}
                 height={72}
