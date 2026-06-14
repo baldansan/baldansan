@@ -12,15 +12,14 @@ import {
   useActiveHskLevel,
   useRegisterLessonHskLevels,
 } from "@/components/providers/active-hsk-level-provider";
-import { HomeDuolingoPath } from "@/components/temee/home-duolingo-path";
+import { HomeLessonList } from "@/components/temee/home-lesson-list";
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
 import { SHELL_MAIN_NARROW } from "@/lib/app-shell-classes";
+import { formatHomeCourseListHeading } from "@/lib/temee/home-course-display";
 import { resolveContinueLearning } from "@/lib/learner-progress";
 import type { BichlegContinueTarget } from "@/lib/bichleg/types";
 import type { MobileCourseCatalogEntry } from "@/lib/mobile-course-options";
 import { fetchBichlegContinueTargetClient } from "@/lib/supabase/video-progress-client";
-import { courseChipBadge } from "@/lib/course-display";
-import { formatActiveHskLevel } from "@/lib/hsk/active-hsk-level";
 import {
   getLessonProgressMapSmart,
   type LessonStatus,
@@ -167,12 +166,9 @@ export function HomeAppView({ catalog, defaultChipId }: Props) {
       ? Math.round((completedCount / lessonIds.length) * 100)
       : 0;
 
-  const hskBadge =
-    activeCourse?.courseId && activeCourse.courseId.startsWith("hsk")
-      ? courseChipBadge(activeCourse.courseId)
-      : hskHydrated
-        ? formatActiveHskLevel(activeHskLevel)
-        : "Курс";
+  const courseListHeading = activeCourse
+    ? formatHomeCourseListHeading(activeCourse)
+    : "";
 
   return (
     <MobileAppShell activeTab="home" mainClassName={SHELL_MAIN_NARROW}>
@@ -251,37 +247,21 @@ export function HomeAppView({ catalog, defaultChipId }: Props) {
         </div>
       ) : null}
 
-      {activeCourse ? (
-        <div className="bs-tm-hsk-card">
-          <span className="bs-tm-hsk-badge">{hskBadge}</span>
-          <h2 className="bs-tm-hsk-title">{activeCourse.title}</h2>
-          {activeCourse.subtitle ? (
-            <p className="bs-tm-hsk-sub">{activeCourse.subtitle}</p>
-          ) : null}
-          <div className="bs-tm-hsk-meta">
-            <span>
-              {completedCount}/{lessonIds.length || 0} хичээл
-            </span>
-            <span>{progressPercent}%</span>
-          </div>
-          <div className="bs-tm-hsk-bar">
-            <i style={{ width: `${progressPercent}%` }} />
-          </div>
-        </div>
-      ) : null}
-
       {selectedLang !== "ko" ? <HelzuiHomeCard /> : null}
 
-      <p className="bs-tm-sec">🗺️ Хичээлийн зам</p>
       {activeCourse && !activeCourse.available ? (
-        <p className="bs-tm-path-empty">Энэ курс удахгүй нээгдэнэ.</p>
-      ) : (
-        <HomeDuolingoPath
+        <p className="bs-tm-catalog-empty">Энэ курс удахгүй нээгдэнэ.</p>
+      ) : activeCourse && lessons.length > 0 ? (
+        <HomeLessonList
+          heading={courseListHeading}
           lessons={lessons}
           statusByLesson={statusByLesson}
-          allLessonsHref={activeCourse?.allLessonsHref}
+          completedCount={completedCount}
+          totalCount={lessonIds.length}
+          progressPercent={progressPercent}
+          allLessonsHref={activeCourse.allLessonsHref}
         />
-      )}
+      ) : null}
     </MobileAppShell>
   );
 }

@@ -51,7 +51,7 @@ export function BichlegSeriesPickerClient({
           </p>
         </div>
       ) : (
-        <div>
+        <div className="bs-tm-bichleg-list">
           {seriesList.map((series, index) => {
             const titleMn = series.title_mn ?? series.title_zh ?? series.id;
             const progress = seriesProgress[series.id];
@@ -66,6 +66,7 @@ export function BichlegSeriesPickerClient({
               <BichlegVideoCard
                 key={series.id}
                 href={`/bichleg/${encodeURIComponent(series.id)}`}
+                layout="catalog"
                 titleMn={titleMn}
                 titleZh={series.title_zh}
                 hanzi={seriesCoverInitial(series.title_zh)}
@@ -73,9 +74,10 @@ export function BichlegSeriesPickerClient({
                 coverUrl={resolveSeriesThumbnailUrl(series)}
                 episodeBadge={`${series.videoCount} анги`}
                 hskLevel={series.hsk_level}
+                showProgressBar={showProgress}
                 progressPct={showProgress ? pct : undefined}
                 progressLabel={
-                  showProgress && totalCount > 0
+                  showProgress
                     ? `${watchedCount}/${totalCount} анги үзсэн`
                     : undefined
                 }
@@ -85,6 +87,7 @@ export function BichlegSeriesPickerClient({
           {orphanCount > 0 ? (
             <BichlegVideoCard
               href="/bichleg/other"
+              layout="catalog"
               titleMn="Бусад бичлэг"
               titleZh="其他视频"
               hanzi="其"
