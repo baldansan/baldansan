@@ -355,9 +355,9 @@ body{
 /* --- Desktop app shell (lg+) --- */
 .bs-app-root{position:relative;min-height:100vh;background:var(--app-bg,#eef2ef)}
 .bs-app-root--no-sidebar{padding-left:0!important}
-.bs-app-root--no-sidebar .bs-app-sidebar{display:none!important}
+.bs-app-root--phone-layout{padding-left:0!important}
+.bs-app-root--no-sidebar .bs-app-sidebar,.bs-app-root--phone-layout .bs-app-sidebar{display:none!important}
 .bs-app-sidebar{display:none;position:fixed;top:0;left:0;bottom:0;z-index:50;width:240px;flex-direction:column;border-right:1px solid var(--bs-line,#e5ebe8);background:#fff;padding:20px 14px}
-@media (min-width:1024px){.bs-app-sidebar{display:flex}}
 .bs-app-sidebar-brand{display:flex;align-items:center;gap:10px;margin-bottom:24px;padding:0 6px}
 .bs-app-sidebar-logo{display:flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:12px;background:#1FB85A;color:#fff;font-size:20px;font-weight:900;line-height:1}
 .bs-app-sidebar-title{margin:0;font-size:15px;font-weight:800;color:var(--bs-ink,#1a2e24);line-height:1.25}
@@ -377,7 +377,7 @@ body{
 .bs-app-sidebar-logout:hover:not(:disabled){background:#f8faf9;border-color:#c5d4cc}
 .bs-app-sidebar-logout:focus-visible{outline:2px solid #1FB85A;outline-offset:2px}
 .bs-app-sidebar-logout:disabled{opacity:.6;cursor:default}
-@media (min-width:1024px){
+@media (min-width:920px){
 .bs-app-root .bs-bichleg-shell{min-height:100vh;max-width:min(480px,100%);margin:0 auto;background:#0a0f0c}
 .bs-app-root .bs-bichleg-feed,.bs-app-root .bs-bichleg-slide{height:100vh;height:100dvh}
 }

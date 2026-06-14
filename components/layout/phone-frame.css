@@ -1,14 +1,14 @@
 /* components/layout/phone-frame.css
-   Десктоп: ялгаатай дэвсгэр + утасны хар хүрээ, дотор нь гүйдэг дэлгэц.
-   Утас (≤ 919px): хүрээгүй — бүтэн дэлгэц (passthrough). */
+   Десктоп (≥920px): төвд утасны багана + хоёр талд саарал фон.
+   Утас (≤919px): хүрээгүй — бүтэн дэлгэц (passthrough), одоогийнх шиг. */
 
-/* --- Десктоп (хүрээтэй) --- */
+/* --- Десктоп төвлөрсөн багана --- */
 .bs-frame-root {
   min-height: 100vh;
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
-  padding: 28px 16px;
+  padding: 0;
   background:
     radial-gradient(1200px 600px at 50% -10%, #f1f5f4 0%, transparent 60%),
     linear-gradient(160deg, #e9eef1 0%, #dde4e8 100%);
@@ -16,44 +16,38 @@
 
 .bs-frame {
   position: relative;
-  width: 460px;
-  height: min(900px, 94vh);
-  background: #0b0c0e;                 /* bezel */
-  border-radius: 54px;
-  padding: 13px;
-  box-shadow:
-    0 30px 80px rgba(15, 30, 25, 0.30),
-    0 6px 18px rgba(0, 0, 0, 0.18),
-    inset 0 0 0 2px rgba(255, 255, 255, 0.06);
+  width: 100%;
+  max-width: 480px;
+  min-height: 100vh;
+  background: transparent;
+  border-radius: 0;
+  padding: 0;
+  box-shadow: none;
 }
 
 .bs-frame-screen {
   position: relative;
   width: 100%;
-  height: 100%;
-  background: #fff;
-  border-radius: 42px;
+  min-height: 100vh;
+  background: var(--app-bg, #eef2ef);
+  border-radius: 0;
   overflow-y: auto;
   overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
-  transform: translateZ(0);            /* fixed доод навигацийг хүрээнд багтаана */
+  transform: translateZ(0);
 }
-/* дотоод гүйлгэх зураасыг нарийхан, эвтэйхэн */
-.bs-frame-screen::-webkit-scrollbar { width: 8px; }
-.bs-frame-screen::-webkit-scrollbar-thumb { background: rgba(0,0,0,.14); border-radius: 8px; }
 
-/* Dynamic-island маягийн жижиг зүйл */
+.bs-frame-screen::-webkit-scrollbar {
+  width: 8px;
+}
+
+.bs-frame-screen::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.14);
+  border-radius: 8px;
+}
+
 .bs-frame-notch {
-  position: absolute;
-  top: 24px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 116px;
-  height: 30px;
-  background: #0b0c0e;
-  border-radius: 16px;
-  z-index: 50;
-  pointer-events: none;
+  display: none;
 }
 
 /* Дотоод аппын бүрхүүл (контент + доод таб) — MobileAppShell */
@@ -73,55 +67,23 @@
   }
 }
 
-/* --- Утас / нарийн дэлгэц: хүрээ АЛГА (passthrough) --- */
+/* --- Утас / нарийн дэлгэц: хүрээ АЛГА (passthrough) — одоогийн mobile харагдац --- */
 @media (max-width: 919px) {
   .bs-frame-root,
   .bs-frame,
-  .bs-frame-screen { display: contents; }
-  .bs-frame-notch { display: none; }
+  .bs-frame-screen {
+    display: contents;
+  }
+
+  .bs-frame-root {
+    background: none;
+    padding: 0;
+    min-height: 0;
+  }
 }
 
-/* --- AppShell desktop (lg+): утасны хүрээгүй, sidebar-тай бүтэн өргөн --- */
-@media (min-width: 1024px) {
-  .bs-app-root > .bs-frame-root {
-    min-height: 100vh;
-    display: block;
-    align-items: stretch;
-    justify-content: stretch;
-    padding: 0;
-    background: var(--app-bg, #eef2ef);
-  }
-
-  .bs-app-root > .bs-frame-root,
-  .bs-app-root > .bs-frame-root > .bs-frame,
-  .bs-app-root > .bs-frame-root > .bs-frame > .bs-frame-screen {
-    display: block;
-    width: 100%;
-    height: auto;
-    min-height: 100vh;
-  }
-
-  .bs-app-root > .bs-frame-root > .bs-frame {
-    width: 100%;
-    height: auto;
-    min-height: 100vh;
-    background: transparent;
-    border-radius: 0;
-    padding: 0;
-    box-shadow: none;
-  }
-
-  .bs-app-root > .bs-frame-root > .bs-frame > .bs-frame-screen {
-    border-radius: 0;
-    overflow: visible;
-    transform: none;
-    background: transparent;
-  }
-
-  .bs-app-root > .bs-frame-root > .bs-frame > .bs-frame-notch {
-    display: none;
-  }
-
+/* Desktop: shell inner fills the 480px column */
+@media (min-width: 920px) {
   .bs-app-root .bs-app-shell-inner {
     min-height: 100vh;
     background: var(--app-bg, #eef2ef);

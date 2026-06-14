@@ -862,7 +862,7 @@ export function BichlegFeedClient({
           ) : null}
         </div>
 
-        <div className="absolute inset-x-0 bottom-0 z-50 px-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] pt-2 lg:hidden">
+        <div className="absolute inset-x-0 bottom-0 z-50 px-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] pt-2">
           <BottomNavChrome active="clips" />
         </div>
 

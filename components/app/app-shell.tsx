@@ -1,5 +1,4 @@
 import type { BottomNavTab } from "@/components/BottomNav";
-import { AppSidebar } from "@/components/app/app-sidebar";
 import PhoneFrame from "@/components/layout/PhoneFrame";
 import { BottomNavChrome } from "@/components/mobile/bottom-nav-chrome";
 import { MobileShellHeader } from "@/components/mobile/mobile-shell-header";
@@ -13,38 +12,33 @@ type Props = {
   showBottomNav?: boolean;
   /** Бичлэг тоглуулагч зэрэг бүтэн дэлгэцийн контент — padding/max-width байхгүй. */
   immersive?: boolean;
-  /** Шалгалт зэрэг бүтэн дэлгэц — desktop sidebar нуугдана. */
+  /** @deprecated Sidebar арилгасан — ижил phone layout ашиглана. */
   hideSidebar?: boolean;
   mainClassName?: string;
 };
 
 /**
- * Learner app shell: утас дээр бүтэн өргөн; lg (1024px)+ зүүн sidebar + төвд
- * max-w-[480px] утасны багана (immersive хуудсаас бусад).
+ * Learner app shell: бүх дэлгэцэнд утасны доод nav + төвд max-w-[480px] багана.
+ * PC дээр хоёр талд саарал фон, гар утасны харагдац хэвээр.
  */
 export function AppShell({
   children,
   activeTab,
   showBottomNav = true,
   immersive = false,
-  hideSidebar = false,
   mainClassName = "",
 }: Props) {
   const navTab = resolveBottomNavTab(activeTab);
 
   const mainClasses = immersive
     ? `relative flex-1 overflow-hidden p-0 ${mainClassName}`
-    : `flex w-full flex-1 min-w-0 justify-center overflow-x-hidden pt-5 lg:pt-6 ${
-        showBottomNav ? "pb-32 lg:pb-8" : "pb-6"
+    : `flex w-full flex-1 min-w-0 justify-center overflow-x-hidden pt-5 ${
+        showBottomNav ? "pb-32" : "pb-6"
       }`;
 
   const columnClasses = immersive
     ? mainClassName
-    : `w-full max-w-[480px] min-w-0 px-4 lg:px-6 ${mainClassName}`.trim();
-
-  const rootClass = hideSidebar
-    ? "bs-app-root bs-app-root--no-sidebar"
-    : "bs-app-root lg:pl-60";
+    : `w-full max-w-[480px] min-w-0 px-4 ${mainClassName}`.trim();
 
   const content = (
     <>
@@ -54,9 +48,7 @@ export function AppShell({
   );
 
   return (
-    <div className={rootClass}>
-      <AppSidebar active={navTab} />
-
+    <div className="bs-app-root bs-app-root--phone-layout">
       <PhoneFrame>
         <div className="bs-app-shell-inner">
           <main className={mainClasses}>
@@ -67,7 +59,7 @@ export function AppShell({
             )}
           </main>
           {showBottomNav ? (
-            <div className="absolute inset-x-0 bottom-0 z-50 px-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] pt-2 lg:hidden">
+            <div className="absolute inset-x-0 bottom-0 z-50 px-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] pt-2">
               <BottomNavChrome active={navTab} />
             </div>
           ) : null}
