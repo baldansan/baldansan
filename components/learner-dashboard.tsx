@@ -43,7 +43,7 @@ function DashboardShell({
   trackLabel?: string;
 }) {
   return (
-    <MobileAppShell activeTab="profile" mainClassName="mx-auto w-full max-w-[390px] lg:max-w-none">
+    <MobileAppShell activeTab="profile" mainClassName="mx-auto w-full max-w-[390px]">
       <MobilePageHeader
         title={trackLabel ? `Миний явц · ${trackLabel}` : "Миний сургалт"}
         subtitle="Ахиц, quiz, streak"

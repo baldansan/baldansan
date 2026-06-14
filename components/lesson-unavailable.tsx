@@ -20,7 +20,7 @@ export function LessonUnavailable({
   accessDenied = false,
 }: Props) {
   return (
-    <MobileAppShell activeTab="study" mainClassName="mx-auto w-full max-w-[390px] lg:max-w-none">
+    <MobileAppShell activeTab="study" mainClassName="mx-auto w-full max-w-[390px]">
       <MobileCard className="mt-6 text-center !py-10">
         <p className="text-sm font-medium text-emerald-600">Хичээл</p>
         <h1 className="mt-2 text-xl font-bold text-[var(--app-text)]">

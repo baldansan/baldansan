@@ -376,7 +376,7 @@ export function GuidedLessonPlayer({
     <MobileAppShell
       activeTab="study"
       showBottomNav={false}
-      mainClassName="mx-auto w-full max-w-[430px] lg:max-w-none"
+      mainClassName="mx-auto w-full max-w-[430px]"
     >
       {adminPreview ? <AdminPreviewBanner /> : null}
 

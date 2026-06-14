@@ -43,7 +43,7 @@ export function SettingsAppView() {
   }
 
   return (
-    <MobileAppShell activeTab="profile" mainClassName="mx-auto w-full max-w-[390px] lg:max-w-none">
+    <MobileAppShell activeTab="profile" mainClassName="mx-auto w-full max-w-[390px]">
       <Link
         href="/profile"
         className="mb-3 inline-flex items-center text-sm font-medium text-[var(--app-muted)] transition-colors hover:text-emerald-600"

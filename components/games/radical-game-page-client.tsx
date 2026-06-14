@@ -111,7 +111,7 @@ export function RadicalGamePageClient({
 
   if (!ready) {
     return (
-      <GameShell mainClassName="mx-auto w-full max-w-[430px] lg:max-w-none px-4 pb-8">
+      <GameShell mainClassName="mx-auto w-full max-w-[430px] px-4 pb-8">
         <div className="bs-mock-setup">
           <h1 className="bs-mock-title">Ханз задлах</h1>
           <p className="bs-mock-sub">Ямар үгсийн ханзыг задлах вэ?</p>
@@ -146,7 +146,7 @@ export function RadicalGamePageClient({
 
   if (!entries) {
     return (
-      <GameShell mainClassName="mx-auto w-full max-w-[430px] lg:max-w-none px-4 py-12 text-center text-sm text-[var(--app-muted)]">
+      <GameShell mainClassName="mx-auto w-full max-w-[430px] px-4 py-12 text-center text-sm text-[var(--app-muted)]">
         Ачааллаж байна…
       </GameShell>
     );

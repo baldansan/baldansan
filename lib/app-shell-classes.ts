@@ -1,11 +1,8 @@
-/** Утасны нарийн багана — lg дээр AppShell-ийн өргөнийг ашиглана. */
-export const SHELL_MAIN_NARROW =
-  "mx-auto w-full max-w-[390px] lg:max-w-none";
+/** AppShell доторх нэмэлт класс — desktop өргөнийг AppShell (max-w-[480px]) хянана. */
+export const SHELL_MAIN_NARROW = "w-full";
 
-/** Тест, тоглоом зэрэг өргөн багана. */
-export const SHELL_MAIN_WIDE =
-  "mx-auto w-full max-w-[430px] lg:max-w-none";
+/** Тест, тоглоом зэрэг — desktop өргөнийг AppShell хянана. */
+export const SHELL_MAIN_WIDE = "w-full";
 
-/** Давтах хуудсууд — desktop дээр max-w-2xl. */
-export const SHELL_MAIN_REVIEW =
-  "mx-auto w-full max-w-[390px] lg:max-w-2xl";
+/** Давтах хуудсууд — desktop өргөнийг AppShell хянана. */
+export const SHELL_MAIN_REVIEW = "w-full";

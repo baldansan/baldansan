@@ -238,7 +238,7 @@ export function HskVocabQuizClient({
     embedded ? (
       <div className="pb-4">{content}</div>
     ) : (
-      <GameShell mainClassName="mx-auto w-full max-w-[430px] lg:max-w-none px-4 pb-8">
+      <GameShell mainClassName="mx-auto w-full max-w-[430px] px-4 pb-8">
         {content}
       </GameShell>
     );
