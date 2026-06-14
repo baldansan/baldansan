@@ -56,6 +56,7 @@ export default async function ReviewGrammarHsk30PointPage({ params }: Props) {
         levelId={levelId}
         levelTitle={level.title}
         point={point}
+        pointIndex={index}
         prevPointId={prevPointId}
         nextPointId={nextPointId}
       />

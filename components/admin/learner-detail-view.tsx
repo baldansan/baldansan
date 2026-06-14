@@ -40,6 +40,7 @@ const STAGE_LABEL: Record<string, string> = {
   hsk4: "HSK 4",
   hsk5: "HSK 5",
   hsk6: "HSK 6",
+  hsk7: "HSK 7-9",
   quiz: "Сорил",
   mock_exam: "Mock",
   word_practice: "Үг",

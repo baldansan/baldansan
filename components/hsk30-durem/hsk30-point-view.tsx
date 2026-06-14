@@ -10,6 +10,7 @@ type Props = {
   levelId: string;
   levelTitle: string;
   point: Hsk30Point;
+  pointIndex: number;
   prevPointId?: string | null;
   nextPointId?: string | null;
 };
@@ -18,6 +19,7 @@ export function Hsk30PointView({
   levelId,
   levelTitle,
   point,
+  pointIndex,
   prevPointId,
   nextPointId,
 }: Props) {
@@ -27,7 +29,10 @@ export function Hsk30PointView({
   return (
     <div className="bs-gr2-point">
       <header className="bs-gr2-head">
-        <p className="bs-gr2-point-zh">{point.zh}</p>
+        <p className="bs-gr2-point-num">{pointIndex + 1}</p>
+        <p className="bs-gr2-point-zh">
+          <span className="zh">{point.zh}</span>
+        </p>
         <p className="bs-gr2-point-py">{point.pin}</p>
         <p className="bs-gr2-point-mn">{point.gloss}</p>
       </header>
@@ -81,13 +86,13 @@ export function Hsk30PointView({
       ) : null}
 
       {point.notes ? (
-        <div className="bs-gr2-warn">
-          <span className="bs-gr2-warn-icon" aria-hidden>
-            ⚠️
-          </span>
+        <div className="bs-gr2-teacher">
+          <div className="bs-gr2-teacher-ava" aria-hidden>
+            🐫
+          </div>
           <div>
-            <p className="bs-gr2-warn-title">Анхаарах</p>
-            <p className="bs-gr2-warn-body">{point.notes}</p>
+            <p className="bs-gr2-teacher-name">Тэмдэглэл</p>
+            <p className="bs-gr2-teacher-txt">{point.notes}</p>
           </div>
         </div>
       ) : null}

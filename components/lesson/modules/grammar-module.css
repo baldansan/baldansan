@@ -301,13 +301,25 @@
   padding: 4px 0 2px;
 }
 
+.bs-gr2-point-num {
+  margin: 0 0 4px;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  color: #7a8f84;
+}
+
 .bs-gr2-point-zh {
   font-family: var(--font-noto-sc, var(--bs-zh)), "Noto Sans SC", sans-serif;
   font-size: 32px;
   font-weight: 800;
-  color: #13241b;
+  color: #1FB85A;
   margin: 0;
   line-height: 1.25;
+}
+
+.bs-gr2-point-zh .zh {
+  font-family: inherit;
 }
 
 .bs-gr2-point-py {

@@ -29,7 +29,9 @@ export function Hsk30ExamplesList({ examples }: Props) {
           const isOpen = revealed.has(idx);
           return (
             <div className="bs-gr2-example" key={`${ex.c}-${idx}`}>
-              <p className="bs-gr2-example-zh">{ex.c}</p>
+              <p className="bs-gr2-example-zh">
+                <span className="zh">{ex.c}</span>
+              </p>
               {ex.p ? <p className="bs-gr2-example-py">{ex.p}</p> : null}
               <button
                 type="button"

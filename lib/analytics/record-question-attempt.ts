@@ -20,7 +20,8 @@ export type QuestionAttemptStage =
   | "hsk3"
   | "hsk4"
   | "hsk5"
-  | "hsk6";
+  | "hsk6"
+  | "hsk7";
 
 export type QuestionAttemptType = "choice" | "judge" | "order" | "fill";
 
