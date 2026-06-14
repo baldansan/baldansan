@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
 import { MobileCard } from "@/components/mobile/mobile-card";
-import { SHELL_MAIN_NARROW } from "@/lib/app-shell-classes";
+import { SHELL_MAIN_REVIEW } from "@/lib/app-shell-classes";
 import { hsk30LevelHref } from "@/lib/hsk30-durem/load-course";
 import type { Hsk30DuremCourse } from "@/types/hsk30-durem";
 
@@ -13,7 +13,7 @@ type Props = {
 
 export function Hsk30CoursePlayer({ course }: Props) {
   return (
-    <MobileAppShell activeTab="study" mainClassName={SHELL_MAIN_NARROW}>
+    <MobileAppShell activeTab="study" mainClassName={SHELL_MAIN_REVIEW}>
       <Link
         href="/review"
         className="mb-3 inline-flex text-xs font-bold text-[#1FB85A]"

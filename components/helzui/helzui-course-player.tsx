@@ -4,7 +4,7 @@ import Link from "next/link";
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
 import { MobileCard } from "@/components/mobile/mobile-card";
 import { HelzuiLegend } from "@/components/helzui/helzui-legend";
-import { SHELL_MAIN_NARROW } from "@/lib/app-shell-classes";
+import { SHELL_MAIN_NARROW, SHELL_MAIN_REVIEW } from "@/lib/app-shell-classes";
 import {
   HELZUI_REVIEW_BASE,
   helzuiModuleHref,
@@ -37,7 +37,7 @@ export function HelzuiCoursePlayer({
   return (
     <MobileAppShell
       activeTab={isReview ? "study" : "study"}
-      mainClassName={SHELL_MAIN_NARROW}
+      mainClassName={isReview ? SHELL_MAIN_REVIEW : SHELL_MAIN_NARROW}
     >
       {backHref ? (
         <Link

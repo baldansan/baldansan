@@ -4,7 +4,7 @@ import { HelzuiLegend } from "@/components/helzui/helzui-legend";
 import { HelzuiModuleView } from "@/components/helzui/helzui-module-view";
 import "@/components/helzui/helzui-course.css";
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
-import { SHELL_MAIN_NARROW } from "@/lib/app-shell-classes";
+import { SHELL_MAIN_REVIEW } from "@/lib/app-shell-classes";
 import {
   HELZUI_REVIEW_BASE,
   getHelzuiCourse,
@@ -46,7 +46,7 @@ export default async function ReviewGrammarStructureModulePage({
       : null;
 
   return (
-    <MobileAppShell activeTab="study" mainClassName={SHELL_MAIN_NARROW}>
+    <MobileAppShell activeTab="study" mainClassName={SHELL_MAIN_REVIEW}>
       <Link
         href={HELZUI_REVIEW_BASE}
         className="mb-3 inline-flex text-xs font-bold text-[#1FB85A]"

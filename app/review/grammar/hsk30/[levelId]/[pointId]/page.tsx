@@ -4,7 +4,7 @@ import { Hsk30PointView } from "@/components/hsk30-durem/hsk30-point-view";
 import "@/components/hsk30-durem/hsk30-point.css";
 import "@/components/helzui/helzui-course.css";
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
-import { SHELL_MAIN_NARROW } from "@/lib/app-shell-classes";
+import { SHELL_MAIN_REVIEW } from "@/lib/app-shell-classes";
 import { getHsk30Point, hsk30LevelHref } from "@/lib/hsk30-durem/load-course";
 
 type Props = {
@@ -45,7 +45,7 @@ export default async function ReviewGrammarHsk30PointPage({ params }: Props) {
       : null;
 
   return (
-    <MobileAppShell activeTab="study" mainClassName={SHELL_MAIN_NARROW}>
+    <MobileAppShell activeTab="study" mainClassName={SHELL_MAIN_REVIEW}>
       <Link
         href={hsk30LevelHref(levelId)}
         className="mb-3 inline-flex text-xs font-bold text-[#1FB85A]"
