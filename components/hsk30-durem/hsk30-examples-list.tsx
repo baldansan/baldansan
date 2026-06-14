@@ -22,36 +22,34 @@ export function Hsk30ExamplesList({ examples }: Props) {
   }
 
   return (
-    <div className="bs-gr2-examples">
-      <p className="bs-gr2-section-label">Жишээ</p>
-      <div className="bs-gr2-examples-list">
-        {examples.map((ex, idx) => {
-          const isOpen = revealed.has(idx);
-          return (
-            <div className="bs-gr2-example" key={`${ex.c}-${idx}`}>
-              <p className="bs-gr2-example-zh">
-                <span className="zh">{ex.c}</span>
-              </p>
-              {ex.p ? <p className="bs-gr2-example-py">{ex.p}</p> : null}
-              <button
-                type="button"
-                className={`bs-gr2-mn-reveal ${isOpen ? "bs-gr2-mn-reveal--open" : ""}`}
-                onClick={() => toggleReveal(idx)}
-                aria-expanded={isOpen}
-              >
-                <span
-                  className={`bs-gr2-mn-text ${isOpen ? "" : "bs-gr2-mn-text--blur"}`}
-                >
-                  {ex.m}
-                </span>
-                <span className="bs-gr2-mn-hint">
-                  {isOpen ? "Нуух" : "Орчуулга харах"}
-                </span>
-              </button>
+    <>
+      <p className="sub-h">📖 Жишээ · орчуулга дээр дар</p>
+      {examples.map((ex, idx) => {
+        const isOpen = revealed.has(idx);
+        return (
+          <div
+            className={`eg reveal${isOpen ? " shown" : ""}`}
+            key={`${ex.c}-${idx}`}
+          >
+            <div className="c zh">{ex.c}</div>
+            {ex.p ? <div className="p">{ex.p}</div> : null}
+            <div
+              className="m"
+              role="button"
+              tabIndex={0}
+              onClick={() => toggleReveal(idx)}
+              onKeyDown={(event) => {
+                if (event.key === "Enter" || event.key === " ") {
+                  event.preventDefault();
+                  toggleReveal(idx);
+                }
+              }}
+            >
+              {ex.m}
             </div>
-          );
-        })}
-      </div>
-    </div>
+          </div>
+        );
+      })}
+    </>
   );
 }

@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Hsk30ExamplesList } from "@/components/hsk30-durem/hsk30-examples-list";
 import { Hsk30QuizBlock } from "@/components/hsk30-durem/hsk30-quiz-block";
 import { hsk30LevelHref } from "@/lib/hsk30-durem/load-course";
+import { highlightZh } from "@/lib/text/highlight-zh";
 import type { Hsk30Point } from "@/types/hsk30-durem";
 
 type Props = {
@@ -17,7 +18,6 @@ type Props = {
 
 export function Hsk30PointView({
   levelId,
-  levelTitle,
   point,
   pointIndex,
   prevPointId,
@@ -25,93 +25,77 @@ export function Hsk30PointView({
 }: Props) {
   const levelHref = hsk30LevelHref(levelId);
   const base = `/review/grammar/hsk30/${levelId}`;
+  const exercises = point.exercises ?? [];
+  const mistakes = point.mistakes ?? [];
 
   return (
-    <div className="bs-gr2-point">
-      <header className="bs-gr2-head">
-        <p className="bs-gr2-point-num">{pointIndex + 1}</p>
-        <p className="bs-gr2-point-zh">
-          <span className="zh">{point.zh}</span>
-        </p>
-        <p className="bs-gr2-point-py">{point.pin}</p>
-        <p className="bs-gr2-point-mn">{point.gloss}</p>
-      </header>
+    <div className="hsk30-pt">
+      <div className="p-head">
+        <span className="p-num">{pointIndex + 1}</span>
+        <span className="p-zh zh">{point.zh}</span>
+        <span className="p-pin">{point.pin}</span>
+        <span className="p-gloss">{point.gloss}</span>
+      </div>
 
-      <div className="bs-gr2-teacher">
-        <div className="bs-gr2-teacher-ava" aria-hidden>
+      <div className="teacher">
+        <div className="ava" aria-hidden>
           🐫
         </div>
-        <div>
-          <p className="bs-gr2-teacher-name">Тэмээ багш</p>
-          <p className="bs-gr2-teacher-txt">{point.teacher}</p>
-        </div>
+        <div className="t-txt">{point.teacher}</div>
       </div>
 
       {point.structure ? (
-        <div className="bs-gr2-formula">
-          <span className="bs-gr2-formula-label">Бүтэц</span>
-          <code className="bs-gr2-formula-code">{point.structure}</code>
+        <div className="struct">
+          <div className="lbl">Бүтэц</div>
+          <div className="zh">{point.structure}</div>
         </div>
       ) : null}
 
       <Hsk30ExamplesList examples={point.examples} />
 
-      {point.mistakes && point.mistakes.length > 0 ? (
-        <div className="bs-gr2-mistakes">
-          <p className="bs-gr2-section-label">Түгээмэл алдаа</p>
-          <div className="bs-gr2-mistakes-list">
-            {point.mistakes.map((row, i) => (
-              <div
-                className="bs-gr2-mistake-row"
-                key={`${row.wrong}-${row.right}-${i}`}
-              >
-                <div className="bs-gr2-mistake-card bs-gr2-mistake-card--bad">
-                  <span className="bs-gr2-mistake-tag">✗ Буруу</span>
-                  <span>{row.wrong}</span>
+      {mistakes.length > 0 ? (
+        <>
+          <p className="sub-h">⚠️ Түгээмэл алдаа</p>
+          {mistakes.map((row, i) => (
+            <div key={`${row.wrong}-${row.right}-${i}`}>
+              <div className="mistake">
+                <div className="mcard bad">
+                  <span className="tag">✗ Буруу</span>
+                  <span className="s zh">{row.wrong}</span>
                 </div>
-                <div className="bs-gr2-mistake-card bs-gr2-mistake-card--ok">
-                  <span className="bs-gr2-mistake-tag">✓ Зөв</span>
-                  <span>{row.right}</span>
+                <div className="mcard good">
+                  <span className="tag">✓ Зөв</span>
+                  <span className="s zh">{row.right}</span>
                 </div>
-                {row.why ? (
-                  <p className="bs-gr2-mistake-why">
-                    <strong>Яагаад: </strong>
-                    {row.why}
-                  </p>
-                ) : null}
               </div>
-            ))}
-          </div>
-        </div>
+              {row.why ? (
+                <div className="why">
+                  <b>Яагаад:</b> {row.why}
+                </div>
+              ) : null}
+            </div>
+          ))}
+        </>
       ) : null}
 
       {point.notes ? (
-        <div className="bs-gr2-teacher">
-          <div className="bs-gr2-teacher-ava" aria-hidden>
-            🐫
-          </div>
-          <div>
-            <p className="bs-gr2-teacher-name">Тэмдэглэл</p>
-            <p className="bs-gr2-teacher-txt">{point.notes}</p>
-          </div>
-        </div>
+        <div className="note">🐫 {highlightZh(point.notes)}</div>
       ) : null}
 
-      {(point.exercises ?? []).map((ex, index) => (
-        <Hsk30QuizBlock
-          key={ex.id}
-          item={ex}
-          levelId={levelId}
-          label={`Дасгал ${index + 1}`}
-        />
-      ))}
+      {exercises.length > 0 ? (
+        <>
+          <p className="sub-h">✍️ Дасгал</p>
+          {exercises.map((ex) => (
+            <Hsk30QuizBlock key={ex.id} item={ex} levelId={levelId} />
+          ))}
+        </>
+      ) : null}
 
       {point.check ? (
-        <Hsk30QuizBlock
-          item={point.check}
-          levelId={levelId}
-          label="Хурдан шалгалт"
-        />
+        <>
+          <p className="sub-h">⚡ Хурдан шалгалт</p>
+          <Hsk30QuizBlock item={point.check} levelId={levelId} />
+        </>
       ) : null}
 
       <nav className="hz-module-nav">
@@ -123,7 +107,10 @@ export function Hsk30PointView({
           <span />
         )}
         {nextPointId ? (
-          <Link href={`${base}/${nextPointId}`} className="hz-nav-link hz-nav-link--next">
+          <Link
+            href={`${base}/${nextPointId}`}
+            className="hz-nav-link hz-nav-link--next"
+          >
             Дараагийн →
           </Link>
         ) : (

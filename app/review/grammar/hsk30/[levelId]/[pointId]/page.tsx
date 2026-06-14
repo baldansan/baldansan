@@ -1,8 +1,8 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Hsk30PointView } from "@/components/hsk30-durem/hsk30-point-view";
+import "@/components/hsk30-durem/hsk30-point.css";
 import "@/components/helzui/helzui-course.css";
-import "@/components/lesson/modules/grammar-module.css";
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
 import { SHELL_MAIN_NARROW } from "@/lib/app-shell-classes";
 import { getHsk30Point, hsk30LevelHref } from "@/lib/hsk30-durem/load-course";
