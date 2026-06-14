@@ -4,6 +4,7 @@ import Link from "next/link";
 import { HelzuiExamItem } from "@/components/helzui/helzui-exam-item";
 import { HelzuiRichHtml } from "@/components/helzui/helzui-rich-html";
 import { HelzuiSectionDivider } from "@/components/helzui/helzui-section-divider";
+import { TemeeImage } from "@/components/temee/temee-image";
 import { helzuiModuleHref } from "@/lib/helzui/load-course";
 import type { HelzuiModule, HelzuiRoleColors } from "@/types/helzui-course";
 
@@ -34,9 +35,7 @@ export function HelzuiModuleView({
       <h1 className="hz-mod-heading">{module.heading}</h1>
 
       <div className="hz-teacher">
-        <div className="hz-ava" aria-hidden>
-          🐫
-        </div>
+        <TemeeImage variant="think" className="hz-ava" width={36} height={36} />
         <div>
           <p className="hz-t-name">Тэмээ багш</p>
           <p className="hz-t-txt">{module.teacher}</p>

@@ -5,6 +5,7 @@ import { AppProviders } from "@/components/providers/app-providers";
 import { PwaServiceWorkerRegister } from "@/components/pwa-service-worker-register";
 import "./globals.css";
 import "./buunduu-theme.css";
+import "@/components/temee/temee-redesign.css";
 
 const onest = Onest({
   variable: "--font-onest",

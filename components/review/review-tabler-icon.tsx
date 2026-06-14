@@ -8,7 +8,8 @@ export type ReviewTablerIconName =
   | "chevron-right"
   | "arrow-left"
   | "book"
-  | "layout";
+  | "layout"
+  | "player-play";
 
 const PATHS: Record<ReviewTablerIconName, ReactNode> = {
   flame: <path d="M12 10.941c2.333-2.99 4-6.435 4-9.941 0-.553-.447-1-1-1h-4c-.553 0-1 .447-1 1 0 1.632-.835 3.048-2.137 3.88m-1.863 6.06c-1.5 1.5-3 3.5-3 5.5 0 3.314 2.686 6 6 6s6-2.686 6-6c0-2-1.5-4-3-5.5" />,
@@ -46,6 +47,7 @@ const PATHS: Record<ReviewTablerIconName, ReactNode> = {
       <path d="M4 12h16M12 5v14" />
     </>
   ),
+  "player-play": <path d="M8 5v14l11-7z" />,
 };
 
 type Props = {

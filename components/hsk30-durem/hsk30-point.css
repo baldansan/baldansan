@@ -64,10 +64,8 @@
   width: 34px;
   height: 34px;
   border-radius: 50%;
-  background: #1fb85a;
-  display: grid;
-  place-items: center;
-  font-size: 17px;
+  object-fit: cover;
+  background: #e3f7eb;
 }
 
 .hsk30-pt .teacher .t-txt {

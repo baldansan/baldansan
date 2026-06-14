@@ -35,7 +35,7 @@ import { moduleHasContent } from "@/lib/lesson/resolve-hsk-lesson-package";
 import "./lesson-player.css";
 import "./lesson-path.css";
 
-type View = "hub" | "stage";
+type View = "intro" | "hub" | "stage";
 
 type Props = {
   lessonId: string;
@@ -96,6 +96,17 @@ export default function LessonPathPlayer({
       cancelled = true;
     };
   }, [lessonId, allStageIds]);
+
+  useEffect(() => {
+    if (!hydrated) return;
+    const warmupStage = plan.stages.find((s) => s.id === "goal_warmup");
+    if (
+      warmupStage &&
+      !progress.completedStageIds.includes("goal_warmup")
+    ) {
+      setView("intro");
+    }
+  }, [hydrated, plan.stages, progress.completedStageIds]);
 
   useEffect(() => {
     if (!hydrated) return;
@@ -166,6 +177,17 @@ export default function LessonPathPlayer({
     void completeStage(activeStage);
   }, [activeStage, completeStage]);
 
+  const warmupStage = plan.stages.find((s) => s.id === "goal_warmup");
+
+  const handleIntroStart = useCallback(() => {
+    if (warmupStage) {
+      void completeStage(warmupStage);
+    } else {
+      const first = plan.stages[0];
+      if (first) openStage(first, false);
+    }
+  }, [warmupStage, completeStage, plan.stages, openStage]);
+
   const handleRegisterPracticeFooter = useCallback(
     (meta: PathExerciseFooterMeta | null) => {
       setPracticeFooter(meta);
@@ -196,7 +218,14 @@ export default function LessonPathPlayer({
 
     switch (stage.id) {
       case "goal_warmup":
-        return <LessonPathWarmupStage lesson={lesson} plan={pathPlan} />;
+        return (
+          <LessonPathWarmupStage
+            lesson={lesson}
+            plan={pathPlan}
+            onStart={handleFinishStage}
+            showWarmupModules
+          />
+        );
       case "vocabulary":
         return (
           <>
@@ -262,7 +291,10 @@ export default function LessonPathPlayer({
 
   const isPracticeStage = activeStage?.id === "practice";
   const showStageFinishChip =
-    activeStage && activeStage.id !== "quiz" && activeStage.id !== "summary";
+    activeStage &&
+    activeStage.id !== "quiz" &&
+    activeStage.id !== "summary" &&
+    activeStage.id !== "goal_warmup";
   const showPracticeStageFooter = isPracticeStage && practiceFooter != null;
 
   if (!hydrated) {
@@ -271,6 +303,32 @@ export default function LessonPathPlayer({
         <p className="py-16 text-center text-sm text-[var(--bs-muted)]">
           Хичээл ачаалж байна...
         </p>
+      </div>
+    );
+  }
+
+  if (view === "intro") {
+    return (
+      <div className="bs-root">
+        <div className="bs-topbar">
+          <button
+            type="button"
+            className="bs-iconbtn"
+            onClick={() => onExit?.()}
+            aria-label="Буцах"
+          >
+            ←
+          </button>
+          <div className="bs-ttl">
+            <h1>{lesson.level} · {lesson.lesson_number}-р хичээл</h1>
+            <p>{lesson.title.mn}</p>
+          </div>
+        </div>
+        <LessonPathWarmupStage
+          lesson={lesson}
+          plan={plan}
+          onStart={handleIntroStart}
+        />
       </div>
     );
   }

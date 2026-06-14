@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { useCallback, useEffect, useState } from "react";
 import { AuthLoadErrorCard } from "@/components/auth/auth-load-error-card";
@@ -10,11 +11,13 @@ import {
   type ClientAuthCheckResult,
 } from "@/lib/auth/client-auth-check";
 import { authDevLog } from "@/lib/auth/auth-dev-log";
-import { features } from "@/lib/features";
 import { useLoadingWatchdog } from "@/lib/hooks/use-loading-watchdog";
 import { withTimeout } from "@/lib/async/with-timeout";
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
 import { MobileCard } from "@/components/mobile/mobile-card";
+import { useActiveHskLevel } from "@/components/providers/active-hsk-level-provider";
+import { TEMEE_ASSETS } from "@/lib/temee/assets";
+import { formatActiveHskLevel } from "@/lib/hsk/active-hsk-level";
 import { isCurrentUserAdmin } from "@/lib/supabase/admin";
 import { hasSupabaseConfig, signOut } from "@/lib/supabase/auth";
 import { ProfileSrsStats } from "@/components/profile/profile-srs-stats";
@@ -28,12 +31,12 @@ const PROFILE_ROUTE = "/profile";
 
 export function ProfileAppView() {
   const router = useRouter();
+  const { level: activeLevel, hydrated } = useActiveHskLevel();
   const [loadState, setLoadState] = useState<LoadState>("loading");
   const [user, setUser] = useState<AuthUser | null>(null);
   const [isAdmin, setIsAdmin] = useState(false);
   const [completedLessons, setCompletedLessons] = useState(0);
   const [streak, setStreak] = useState(0);
-  const [dayNumber, setDayNumber] = useState(1);
   const [signingOut, setSigningOut] = useState(false);
   const [checkResult, setCheckResult] = useState<ClientAuthCheckResult | null>(
     null
@@ -65,7 +68,6 @@ export function ProfileAppView() {
         try {
           const retention = await getStreakUnified();
           setStreak(retention?.currentStreak ?? 0);
-          setDayNumber(Math.max(1, retention?.currentStreak ?? 1));
         } catch {
           setStreak(0);
         }
@@ -102,7 +104,6 @@ export function ProfileAppView() {
             "getStreakUnifiedGuest"
           );
           setStreak(retention?.currentStreak ?? 0);
-          setDayNumber(Math.max(1, retention?.currentStreak ?? 1));
         } catch {
           setStreak(0);
         }
@@ -125,7 +126,6 @@ export function ProfileAppView() {
           "getStreakUnified"
         );
         setStreak(retention?.currentStreak ?? 0);
-        setDayNumber(Math.max(1, retention?.currentStreak ?? 1));
       } catch (error) {
         setStreak(0);
         const message =
@@ -200,29 +200,41 @@ export function ProfileAppView() {
   }
 
   if (!user) {
+    const guestLevelLabel = hydrated
+      ? `${formatActiveHskLevel(activeLevel)} суралцагч`
+      : "Суралцагч";
+
     return (
       <MobileAppShell
         activeTab="profile"
         >
+        <div className="bs-tm-phead">
+          <div className="bs-tm-avatar">
+            <Image
+              src={TEMEE_ASSETS.avatar}
+              alt="Тэмээ багш"
+              width={96}
+              height={96}
+            />
+          </div>
+          <h1 className="bs-tm-pname">Зочин хэрэглэгч</h1>
+          <p className="bs-tm-prank">{guestLevelLabel}</p>
+          {streak > 0 ? (
+            <span className="bs-tm-plvlbadge">🔥 {streak} өдөр дараалан</span>
+          ) : null}
+        </div>
+
         {!hasSupabaseConfig ? (
           <MobileCard className="mb-4 border border-amber-200 bg-amber-50 !p-3 text-xs text-amber-900">
             Supabase тохиргоо дутуу. Ахицаа зөвхөн энэ төхөөрөмж дээр хадгална.
           </MobileCard>
         ) : null}
 
-        <section className="mb-5 text-center">
-          <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-slate-200 text-3xl">
-            👤
-          </div>
-          <h1 className="mt-3 text-lg font-bold text-[var(--app-text)]">
-            Зочин хэрэглэгч
-          </h1>
-          <p className="mt-1 text-sm text-[var(--app-muted)]">
-            Одоогийн ахицаа доор харагдана
-          </p>
-        </section>
-
-        <ProfileSrsStats userId={null} streak={streak} dayNumber={dayNumber} />
+        <ProfileSrsStats
+          userId={null}
+          streak={streak}
+          completedLessons={completedLessons}
+        />
 
         <MobileCard padding="sm" className="mb-5 text-center !p-4">
           <p className="text-sm font-bold text-[var(--app-text)]">
@@ -250,76 +262,67 @@ export function ProfileAppView() {
 
   const displayName = user.email?.split("@")[0] ?? "Хэрэглэгч";
 
-  const menuItems = [
-    ...(isAdmin
-      ? [{ href: "/admin", label: "Админ самбар", icon: "⚙️" }]
-      : []),
-    ...(features.b2b
-      ? [{ href: "/my-assignments", label: "Ангид нэгдэх", icon: "🏫" }]
-      : []),
-    { href: "/progress", label: "Миний явц", icon: "📊" },
-    { href: "/review", label: "Үзсэн үг", icon: "📖" },
-    { href: "/settings", label: "Тохиргоо", icon: "🔧" },
-  ];
-
   return (
     <MobileAppShell
       activeTab="profile"
       >
+      <div className="bs-tm-phead">
+        <div className="bs-tm-avatar">
+          <Image
+            src={TEMEE_ASSETS.avatar}
+            alt="Тэмээ багш"
+            width={96}
+            height={96}
+          />
+        </div>
+        <h1 className="bs-tm-pname">{displayName}</h1>
+        <p className="bs-tm-prank">
+          {hydrated ? `${formatActiveHskLevel(activeLevel)} суралцагч` : "Суралцагч"}
+        </p>
+        {streak > 0 ? (
+          <span className="bs-tm-plvlbadge">🔥 {streak} өдөр дараалан</span>
+        ) : null}
+      </div>
+
       {profileError ? (
         <MobileCard className="mb-4 border border-amber-200 bg-amber-50 !p-3 text-xs text-amber-900">
           Зарим профайл мэдээлэл ачаалж чадсангүй: {profileError}
         </MobileCard>
       ) : null}
 
-      <section className="mb-5 text-center">
-        <div className="relative mx-auto w-fit">
-          <div className="flex h-20 w-20 items-center justify-center rounded-full bg-emerald-100 text-3xl">
-            {displayName.charAt(0).toUpperCase()}
-          </div>
-          <span className="absolute bottom-0 right-0 flex h-6 w-6 items-center justify-center rounded-full bg-emerald-500 text-xs text-white ring-2 ring-white">
-            ✓
-          </span>
-        </div>
-        <h1 className="mt-3 text-lg font-bold text-[var(--app-text)]">
-          {displayName}
-        </h1>
-        <p className="truncate text-sm text-[var(--app-muted)]">{user.email}</p>
-      </section>
-
       <ProfileSrsStats
         userId={user.id}
         streak={streak}
-        dayNumber={dayNumber}
+        completedLessons={completedLessons}
       />
 
-      <MobileCard padding="sm" className="mb-5 text-center !p-3">
-        <p className="text-lg font-bold text-[var(--app-primary-dark)]">
-          {completedLessons}
-        </p>
-        <p className="text-[10px] text-[var(--app-muted)]">Дууссан хичээл</p>
-      </MobileCard>
+      {isAdmin ? (
+        <Link href="/admin" className="bs-tm-card mt-2">
+          <span className="bs-tm-card-ic bs-tm-card-ic--purple" aria-hidden>
+            ⚙️
+          </span>
+          <span className="flex-1">
+            <span className="bs-tm-card-title">Админ самбар</span>
+          </span>
+          <span className="bs-tm-card-chev" aria-hidden>›</span>
+        </Link>
+      ) : null}
 
-      <MobileCard padding="sm" className="overflow-hidden !p-0">
-        {menuItems.map((item) => (
-          <Link key={item.label} href={item.href} className="app-menu-row">
-            <span aria-hidden>{item.icon}</span>
-            <span className="flex-1">{item.label}</span>
-            <span className="text-[var(--app-muted)]">›</span>
-          </Link>
-        ))}
-        <button
-          type="button"
-          onClick={() => void handleLogout()}
-          disabled={signingOut}
-          className="app-menu-row w-full text-red-600"
-        >
-          <span aria-hidden>🚪</span>
-          <span className="flex-1 text-left">
+      <button
+        type="button"
+        onClick={() => void handleLogout()}
+        disabled={signingOut}
+        className="bs-tm-card mt-2 w-full text-left text-red-600"
+      >
+        <span className="bs-tm-card-ic bs-tm-card-ic--red" aria-hidden>
+          🚪
+        </span>
+        <span className="flex-1">
+          <span className="bs-tm-card-title">
             {signingOut ? "Гарч байна…" : "Гарах"}
           </span>
-        </button>
-      </MobileCard>
+        </span>
+      </button>
     </MobileAppShell>
   );
 }
