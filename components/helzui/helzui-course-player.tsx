@@ -1,10 +1,13 @@
 "use client";
 
 import Link from "next/link";
+import { useMemo } from "react";
+import { GrammarCourseSearch } from "@/components/grammar/grammar-course-search";
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
 import { MobileCard } from "@/components/mobile/mobile-card";
 import { HelzuiLegend } from "@/components/helzui/helzui-legend";
 import { SHELL_MAIN_NARROW, SHELL_MAIN_REVIEW } from "@/lib/app-shell-classes";
+import { buildHelzuiSearchEntries } from "@/lib/grammar/grammar-search";
 import {
   HELZUI_REVIEW_BASE,
   helzuiModuleHref,
@@ -33,6 +36,10 @@ export function HelzuiCoursePlayer({
   );
   const badge = heroBadge ?? `${course.category} · Үндэс`;
   const isReview = modulesBase === HELZUI_REVIEW_BASE;
+  const searchEntries = useMemo(
+    () => buildHelzuiSearchEntries(course, modulesBase),
+    [course, modulesBase]
+  );
 
   return (
     <MobileAppShell
@@ -64,30 +71,32 @@ export function HelzuiCoursePlayer({
         <b>{totalExams} дасгал</b> — бүгд хариутай.
       </p>
 
-      <div className="flex flex-col gap-3">
-        {course.modules.map((module) => (
-          <Link
-            key={module.id}
-            href={helzuiModuleHref(module.id, modulesBase)}
-          >
-            <MobileCard className="hz-module-card active:bg-slate-50">
-              <div className="hz-mod-eyebrow" style={{ marginBottom: 4 }}>
-                <span className="hz-mod-num">{module.number}</span>
-                {module.mnTitle}
-                <span className="hz-mod-pin zh">
-                  · {module.zh} {module.pinyin}
-                </span>
-              </div>
-              <h2 className="hz-mod-heading" style={{ fontSize: 17 }}>
-                {module.heading}
-              </h2>
-              <p className="mt-2 text-xs text-[var(--app-muted)]">
-                {module.realExams.length} 真题 · {module.practice.length} 完成句子
-              </p>
-            </MobileCard>
-          </Link>
-        ))}
-      </div>
+      <GrammarCourseSearch entries={searchEntries}>
+        <div className="flex flex-col gap-3">
+          {course.modules.map((module) => (
+            <Link
+              key={module.id}
+              href={helzuiModuleHref(module.id, modulesBase)}
+            >
+              <MobileCard className="hz-module-card active:bg-slate-50">
+                <div className="hz-mod-eyebrow" style={{ marginBottom: 4 }}>
+                  <span className="hz-mod-num">{module.number}</span>
+                  {module.mnTitle}
+                  <span className="hz-mod-pin zh">
+                    · {module.zh} {module.pinyin}
+                  </span>
+                </div>
+                <h2 className="hz-mod-heading" style={{ fontSize: 17 }}>
+                  {module.heading}
+                </h2>
+                <p className="mt-2 text-xs text-[var(--app-muted)]">
+                  {module.realExams.length} 真题 · {module.practice.length} 完成句子
+                </p>
+              </MobileCard>
+            </Link>
+          ))}
+        </div>
+      </GrammarCourseSearch>
     </MobileAppShell>
   );
 }
