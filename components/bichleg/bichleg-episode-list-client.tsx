@@ -1,9 +1,9 @@
 "use client";
 
 import Link from "next/link";
+import { BichlegVideoCard } from "@/components/temee/bichleg-video-card";
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
 import { SHELL_MAIN_NARROW } from "@/lib/app-shell-classes";
-import { MobilePageHeader } from "@/components/mobile/mobile-page-header";
 import {
   formatEpisodeListTitle,
   formatSeriesHeaderMeta,
@@ -12,6 +12,7 @@ import {
   formatEpisodePartialPercent,
   resolveSeriesContinueVideoId,
 } from "@/lib/bichleg/video-progress-utils";
+import { seriesCoverInitial } from "@/lib/bichleg/series-cover";
 import type {
   UserVideoProgress,
   VideoEpisodeItem,
@@ -29,59 +30,10 @@ function episodeHref(seriesId: string, videoId: string): string {
   return `/bichleg/${encodeURIComponent(seriesId)}/${encodeURIComponent(videoId)}`;
 }
 
-function EpisodeRow({
-  seriesId,
-  episode,
-  index,
-  progress,
-}: {
-  seriesId: string;
-  episode: VideoEpisodeItem;
-  index: number;
-  progress?: UserVideoProgress;
-}) {
-  const label = formatEpisodeListTitle(episode.episode_no, episode.title_mn);
-  const displayNo =
-    episode.episode_no != null && Number.isFinite(episode.episode_no)
-      ? episode.episode_no
-      : index + 1;
-  const completed = Boolean(progress?.completed);
-  const partialLabel =
-    !completed && progress
-      ? formatEpisodePartialPercent(progress.watched_sec, episode.duration_sec)
-      : null;
-
-  return (
-    <Link href={episodeHref(seriesId, episode.id)} className="bs-bichleg-ep-row">
-      <div className="bs-bichleg-ep-rail">
-        <div
-          className={`app-timeline-node ${
-            completed
-              ? "bs-bichleg-ep-node--done"
-              : partialLabel
-                ? "bs-bichleg-ep-node--partial"
-                : "app-timeline-node-next"
-          }`}
-        >
-          {completed ? "✓" : partialLabel ?? displayNo}
-        </div>
-        <div className="bs-bichleg-ep-rail-line" aria-hidden />
-      </div>
-      <div className="bs-bichleg-ep-body">
-        <p className="bs-bichleg-ep-title">{label}</p>
-        {partialLabel ? (
-          <p className="bs-bichleg-ep-meta bs-bichleg-ep-meta--partial">
-            {partialLabel} үзсэн
-          </p>
-        ) : episode.subtitleCount > 0 ? (
-          <p className="bs-bichleg-ep-meta">{episode.subtitleCount} мөр</p>
-        ) : null}
-      </div>
-      <span className="bs-bichleg-ep-chevron" aria-hidden>
-        ›
-      </span>
-    </Link>
-  );
+function episodeHanzi(episode: VideoEpisodeItem): string {
+  const zh = episode.title_zh?.trim();
+  if (zh) return zh.charAt(0);
+  return seriesCoverInitial(episode.title_mn);
 }
 
 export function BichlegEpisodeListClient({
@@ -121,7 +73,8 @@ export function BichlegEpisodeListClient({
       <Link href="/bichleg" className="bs-mem-back">
         ← Цуврал сонгох
       </Link>
-      <MobilePageHeader title={titleMn} subtitle={headerMeta} />
+      <h1 className="bs-tm-page-title">{titleMn}</h1>
+      <p className="mb-4 text-sm font-semibold text-[#7a8c82]">{headerMeta}</p>
 
       {episodes.length === 0 ? (
         <div className="bs-bichleg-pick-empty">
@@ -140,32 +93,69 @@ export function BichlegEpisodeListClient({
       ) : (
         <>
           {continueVideoId && continueLabel ? (
-            <Link
-              href={episodeHref(seriesId, continueVideoId)}
-              className="bs-bichleg-continue-card"
-            >
-              <div className="bs-bichleg-continue-body">
-                <p className="bs-bichleg-continue-title">
+            <Link href={episodeHref(seriesId, continueVideoId)} className="bs-tm-continue mb-4">
+              <span className="bs-tm-continue-ic" aria-hidden>
+                ▶
+              </span>
+              <span className="min-w-0 flex-1">
+                <p className="bs-tm-continue-kicker">
                   {hasPartialProgress ? "Үргэлжлүүлэх" : "Эхлэх"}
                 </p>
-                <p className="bs-bichleg-continue-meta">{continueLabel}</p>
-              </div>
-              <span className="bs-bichleg-continue-play" aria-hidden>
-                ▶
+                <p className="bs-tm-continue-title">{continueLabel}</p>
               </span>
             </Link>
           ) : null}
-          <div className="bs-bichleg-ep-list">
-          {episodes.map((episode, index) => (
-            <EpisodeRow
-              key={episode.id}
-              seriesId={seriesId}
-              episode={episode}
-              index={index}
-              progress={progressByVideoId[episode.id]}
-            />
-          ))}
-          </div>
+          {episodes.map((episode, index) => {
+            const progress = progressByVideoId[episode.id];
+            const completed = Boolean(progress?.completed);
+            const partialPct =
+              !completed && progress && episode.duration_sec
+                ? Math.min(
+                    100,
+                    Math.round(
+                      (progress.watched_sec / episode.duration_sec) * 100
+                    )
+                  )
+                : completed
+                  ? 100
+                  : 0;
+            const label = formatEpisodeListTitle(
+              episode.episode_no,
+              episode.title_mn
+            );
+            const partialLabel =
+              !completed && progress
+                ? formatEpisodePartialPercent(
+                    progress.watched_sec,
+                    episode.duration_sec
+                  )
+                : null;
+
+            return (
+              <BichlegVideoCard
+                key={episode.id}
+                href={episodeHref(seriesId, episode.id)}
+                titleMn={label}
+                titleZh={episode.title_zh}
+                hanzi={episodeHanzi(episode)}
+                thumbIndex={index}
+                episodeBadge={
+                  episode.episode_no != null
+                    ? `${episode.episode_no}-р анги`
+                    : `${index + 1}-р анги`
+                }
+                hskLevel={episode.hsk_level}
+                progressPct={partialPct > 0 ? partialPct : undefined}
+                progressLabel={
+                  completed
+                    ? "Дууссан ✓"
+                    : partialLabel
+                      ? `${partialLabel} үзсэн`
+                      : undefined
+                }
+              />
+            );
+          })}
         </>
       )}
     </MobileAppShell>

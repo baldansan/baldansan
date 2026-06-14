@@ -1,10 +1,10 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { TemeeImage } from "@/components/temee/temee-image";
+import { BichlegVideoCard } from "@/components/temee/bichleg-video-card";
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
 import { SHELL_MAIN_NARROW } from "@/lib/app-shell-classes";
-import { MobilePageHeader } from "@/components/mobile/mobile-page-header";
 import { seriesCoverInitial } from "@/lib/bichleg/series-cover";
 import type { SeriesWatchProgress, VideoSeriesCard } from "@/lib/bichleg/types";
 
@@ -12,114 +12,8 @@ type Props = {
   seriesList: VideoSeriesCard[];
   orphanCount: number;
   seriesProgress?: Record<string, SeriesWatchProgress>;
-  /** Нэвтэрсэн үед л N/M явц харуулна. */
   showProgress?: boolean;
 };
-
-function SeriesCoverArt({
-  coverUrl,
-  titleZh,
-  alt,
-}: {
-  coverUrl: string | null;
-  titleZh: string | null;
-  alt: string;
-}) {
-  const [failed, setFailed] = useState(false);
-
-  if (coverUrl && !failed) {
-    return (
-      // eslint-disable-next-line @next/next/no-img-element
-      <img
-        src={coverUrl}
-        alt={alt}
-        className="bs-bichleg-series-cover-img"
-        onError={() => setFailed(true)}
-      />
-    );
-  }
-
-  return (
-    <div className="bs-bichleg-series-cover-placeholder hanzi" aria-hidden>
-      {seriesCoverInitial(titleZh)}
-    </div>
-  );
-}
-
-function SeriesProgressBar({
-  watchedCount,
-  totalCount,
-}: {
-  watchedCount: number;
-  totalCount: number;
-}) {
-  if (totalCount <= 0) return null;
-  const pct = Math.min(100, Math.round((watchedCount / totalCount) * 100));
-  return (
-    <div className="bs-bichleg-series-card-progress-wrap">
-      <p className="bs-bichleg-series-card-progress-label">
-        {watchedCount}/{totalCount} анги үзсэн
-      </p>
-      <div className="bs-bichleg-series-card-progress-track" aria-hidden>
-        <div
-          className="bs-bichleg-series-card-progress-fill"
-          style={{ width: `${pct}%` }}
-        />
-      </div>
-    </div>
-  );
-}
-
-function SeriesPickerCard({
-  series,
-  progress,
-  showProgress,
-}: {
-  series: VideoSeriesCard;
-  progress?: SeriesWatchProgress;
-  showProgress: boolean;
-}) {
-  const titleMn = series.title_mn ?? series.title_zh ?? series.id;
-  const watchedCount = progress?.watchedCount ?? 0;
-  const totalCount = progress?.totalCount ?? series.videoCount;
-  return (
-    <Link
-      href={`/bichleg/${encodeURIComponent(series.id)}`}
-      className="bs-bichleg-series-card"
-    >
-      <SeriesCoverArt
-        coverUrl={series.cover_url}
-        titleZh={series.title_zh}
-        alt={titleMn}
-      />
-      <div className="bs-bichleg-series-card-body">
-        <h2 className="bs-bichleg-series-card-title">{titleMn}</h2>
-        {series.title_zh ? (
-          <p className="bs-bichleg-series-card-sub hanzi">{series.title_zh}</p>
-        ) : null}
-        <div className="bs-bichleg-series-card-meta">
-          <span className="bs-bichleg-series-card-badge">
-            {series.videoCount} анги
-          </span>
-          {series.hsk_level != null ? (
-            <span className="bs-bichleg-series-card-hsk">
-              HSK {series.hsk_level}
-            </span>
-          ) : null}
-        </div>
-        {showProgress ? (
-          <SeriesProgressBar
-            watchedCount={watchedCount}
-            totalCount={totalCount}
-          />
-        ) : null}
-      </div>
-      <span className="bs-bichleg-series-card-chevron" aria-hidden>
-        ›
-      </span>
-    </Link>
-  );
-}
 
 export function BichlegSeriesPickerClient({
   seriesList,
@@ -129,7 +23,22 @@ export function BichlegSeriesPickerClient({
 }: Props) {
   return (
     <MobileAppShell activeTab="clips" mainClassName={SHELL_MAIN_NARROW}>
-      <MobilePageHeader title="Бичлэг" subtitle="Юу үзэх вэ?" />
+      <h1 className="bs-tm-page-title">Бичлэг</h1>
+
+      <div className="bs-tm-bichleg-greet">
+        <TemeeImage
+          variant="think"
+          className="bs-tm-bichleg-greet-img"
+          width={72}
+          height={72}
+        />
+        <div>
+          <p className="bs-tm-bichleg-greet-title">Өнөөдөр юу үзэх вэ? 📺</p>
+          <p className="bs-tm-bichleg-greet-sub">
+            Тэмээ багштай хамт хятад контент үзээрэй
+          </p>
+        </div>
+      </div>
 
       {seriesList.length === 0 && orphanCount === 0 ? (
         <div className="bs-bichleg-pick-empty">
@@ -141,35 +50,46 @@ export function BichlegSeriesPickerClient({
           </p>
         </div>
       ) : (
-        <div className="flex flex-col gap-3">
-          {seriesList.map((series) => (
-            <SeriesPickerCard
-              key={series.id}
-              series={series}
-              progress={seriesProgress[series.id]}
-              showProgress={showProgress}
-            />
-          ))}
+        <div>
+          {seriesList.map((series, index) => {
+            const titleMn = series.title_mn ?? series.title_zh ?? series.id;
+            const progress = seriesProgress[series.id];
+            const watchedCount = progress?.watchedCount ?? 0;
+            const totalCount = progress?.totalCount ?? series.videoCount;
+            const pct =
+              totalCount > 0
+                ? Math.min(100, Math.round((watchedCount / totalCount) * 100))
+                : 0;
+
+            return (
+              <BichlegVideoCard
+                key={series.id}
+                href={`/bichleg/${encodeURIComponent(series.id)}`}
+                titleMn={titleMn}
+                titleZh={series.title_zh}
+                hanzi={seriesCoverInitial(series.title_zh)}
+                thumbIndex={index}
+                coverUrl={series.cover_url}
+                episodeBadge={`${series.videoCount} анги`}
+                hskLevel={series.hsk_level}
+                progressPct={showProgress ? pct : undefined}
+                progressLabel={
+                  showProgress && totalCount > 0
+                    ? `${watchedCount}/${totalCount} анги үзсэн`
+                    : undefined
+                }
+              />
+            );
+          })}
           {orphanCount > 0 ? (
-            <Link href="/bichleg/other" className="bs-bichleg-series-card">
-              <div className="bs-bichleg-series-cover-placeholder bs-bichleg-series-cover-placeholder--other">
-                ···
-              </div>
-              <div className="bs-bichleg-series-card-body">
-                <h2 className="bs-bichleg-series-card-title">Бусад бичлэг</h2>
-                <p className="bs-bichleg-series-card-sub">
-                  Цувралд хамаарахгүй бичлэгүүд
-                </p>
-                <div className="bs-bichleg-series-card-meta">
-                  <span className="bs-bichleg-series-card-badge">
-                    {orphanCount} анги
-                  </span>
-                </div>
-              </div>
-              <span className="bs-bichleg-series-card-chevron" aria-hidden>
-                ›
-              </span>
-            </Link>
+            <BichlegVideoCard
+              href="/bichleg/other"
+              titleMn="Бусад бичлэг"
+              titleZh="其他视频"
+              hanzi="其"
+              thumbIndex={seriesList.length}
+              episodeBadge={`${orphanCount} анги`}
+            />
           ) : null}
         </div>
       )}

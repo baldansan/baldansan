@@ -8,21 +8,19 @@ import {
   languageTrackLabel,
   resolveDefaultChipForLanguage,
 } from "@/lib/language-track";
-import { ReviewDueBadge } from "@/components/review/review-due-badge";
 import {
   useActiveHskLevel,
   useRegisterLessonHskLevels,
 } from "@/components/providers/active-hsk-level-provider";
-import { CourseCover } from "@/components/courses/course-cover";
-import { MobileCard } from "@/components/mobile/mobile-card";
+import { HomeDuolingoPath } from "@/components/temee/home-duolingo-path";
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
 import { SHELL_MAIN_NARROW } from "@/lib/app-shell-classes";
-import { lessonPath } from "@/lib/content";
 import { resolveContinueLearning } from "@/lib/learner-progress";
 import type { BichlegContinueTarget } from "@/lib/bichleg/types";
 import type { MobileCourseCatalogEntry } from "@/lib/mobile-course-options";
 import { fetchBichlegContinueTargetClient } from "@/lib/supabase/video-progress-client";
-import { courseCardAccentClass, courseChipBadge } from "@/lib/course-display";
+import { courseChipBadge } from "@/lib/course-display";
+import { formatActiveHskLevel } from "@/lib/hsk/active-hsk-level";
 import {
   getLessonProgressMapSmart,
   type LessonStatus,
@@ -51,19 +49,13 @@ function resolveCatalogChipLevel(entry: MobileCourseCatalogEntry): number | null
   return match ? Number(match[1]) : null;
 }
 
-function avatarInitial(name: string): string {
-  const trimmed = name.trim();
-  if (!trimmed) return "?";
-  return trimmed.charAt(0).toUpperCase();
-}
-
 export function HomeAppView({ catalog, defaultChipId }: Props) {
   const { level: activeHskLevel, hydrated: hskHydrated } = useActiveHskLevel();
   const [selectedLang, setSelectedLang] = useState<ReturnType<typeof getSelectedLanguage>>(null);
   const [activeChip, setActiveChip] = useState(defaultChipId);
-  const [displayName, setDisplayName] = useState("Зочин");
+  const [displayName, setDisplayName] = useState("Суралцагч");
   const [loggedIn, setLoggedIn] = useState(false);
-  const [streak, setStreak] = useState<number | null>(null);
+  const [streak, setStreak] = useState(0);
   const [continueHref, setContinueHref] = useState("/lessons/1");
   const [continueTitle, setContinueTitle] = useState("Хичээл 1");
   const [statusByLesson, setStatusByLesson] = useState<
@@ -96,9 +88,7 @@ export function HomeAppView({ catalog, defaultChipId }: Props) {
     return entries;
   }, [catalog, selectedLang, activeHskLevel, hskHydrated]);
 
-  useRegisterLessonHskLevels(
-    catalog.flatMap((entry) => entry.lessons)
-  );
+  useRegisterLessonHskLevels(catalog.flatMap((entry) => entry.lessons));
 
   useEffect(() => {
     const lang = getSelectedLanguage();
@@ -137,10 +127,10 @@ export function HomeAppView({ catalog, defaultChipId }: Props) {
         const { data } = await getCurrentUser();
         isLoggedIn = Boolean(data);
         setLoggedIn(isLoggedIn);
-        setDisplayName(data?.email?.split("@")[0] ?? data?.email ?? "Зочин");
+        setDisplayName(data?.email?.split("@")[0] ?? "Суралцагч");
       }
       const retention = await getStreakUnified();
-      setStreak(retention?.currentStreak ?? null);
+      setStreak(retention?.currentStreak ?? 0);
       if (lessonIds.length > 0) {
         const cont = await resolveContinueLearning(lessonIds);
         if (cont) {
@@ -177,251 +167,121 @@ export function HomeAppView({ catalog, defaultChipId }: Props) {
       ? Math.round((completedCount / lessonIds.length) * 100)
       : 0;
 
-  const timelineLessons = lessons.slice(0, 5);
-
-  function lessonNodeState(
-    lesson: LessonContent,
-    index: number
-  ): "active" | "available" | "locked" {
-    if (lesson.status === "locked") return "locked";
-    const status = statusByLesson[lesson.id] ?? "not_started";
-    if (status === "completed" || status === "started") return "active";
-    const prev = timelineLessons[index - 1];
-    if (!prev) return "available";
-    const prevStatus = statusByLesson[prev.id] ?? "not_started";
-    if (prevStatus === "completed" || prevStatus === "started") return "available";
-    if (index === 0) return "available";
-    return "locked";
-  }
+  const hskBadge =
+    activeCourse?.courseId && activeCourse.courseId.startsWith("hsk")
+      ? courseChipBadge(activeCourse.courseId)
+      : hskHydrated
+        ? formatActiveHskLevel(activeHskLevel)
+        : "Курс";
 
   return (
     <MobileAppShell activeTab="home" mainClassName={SHELL_MAIN_NARROW}>
-      <section className="mb-3">
-        <div className="flex items-center gap-3">
-          <div
-            className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-emerald-400 to-emerald-600 text-base font-bold text-white shadow-sm ring-2 ring-white"
-            aria-hidden
-          >
-            {avatarInitial(displayName)}
-          </div>
-          <div className="min-w-0 flex-1">
-            <p className="text-xs font-medium text-[var(--app-muted)]">
-              {selectedLang ? languageTrackLabel(selectedLang) : "Сайн байна уу"}
-            </p>
-            <h1 className="truncate text-lg font-bold text-[var(--app-text)]">
-              {displayName}
-            </h1>
-          </div>
-          {!loggedIn ? (
-            <Link href="/login" className="app-btn-primary shrink-0 !min-h-0 !px-3 !py-1.5 !text-xs">
-              Нэвтрэх
-            </Link>
-          ) : (
-            <Link
-              href="/profile"
-              className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-white text-lg shadow-sm ring-1 ring-[var(--app-border)]"
-              aria-label="Профайл"
-            >
-              👤
-            </Link>
-          )}
+      <div className="bs-tm-topbar">
+        <div className="bs-tm-hello">
+          Сайн уу 👋
+          <b>{displayName}</b>
         </div>
-        <div className="mt-3 flex flex-wrap gap-1.5">
-          {streak != null && streak > 0 ? (
-            <span className="app-stat-pill app-stat-pill-accent">🔥 {streak} өдөр</span>
-          ) : null}
-          <ReviewDueBadge />
-          <span className="app-stat-pill">✓ {completedCount} хичээл</span>
-          <span className="app-stat-pill">{progressPercent}% явц</span>
+        <div className="bs-tm-streak-pill">
+          <span aria-hidden>🔥</span>
+          <div>
+            <b>{streak}</b>
+            <span>өдөр</span>
+          </div>
         </div>
-      </section>
-
-      <div className="mb-4 grid grid-cols-1 gap-4 lg:grid-cols-2">
-        {activeCourse?.available && lessonIds.length > 0 ? (
-          <Link href={continueHref} className="block min-h-[44px]">
-            <MobileCard className="flex h-full items-center gap-3 !p-3.5 active:bg-slate-50 lg:hover:shadow-md">
-              <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-emerald-400 to-emerald-600 text-lg text-white shadow-sm">
-                ▶
-              </div>
-              <div className="min-w-0 flex-1">
-                <p className="text-[10px] font-bold uppercase tracking-wide text-emerald-600">
-                  Үргэлжлүүлэх
-                </p>
-                <p className="truncate text-sm font-semibold text-[var(--app-text)]">
-                  {continueTitle}
-                </p>
-              </div>
-              <span className="text-base text-[var(--app-muted)]">→</span>
-            </MobileCard>
-          </Link>
-        ) : null}
-
-        {bichlegContinue ? (
-          <Link href={bichlegContinue.href} className="block min-h-[44px]">
-            <MobileCard className="flex h-full items-center gap-3 !p-3.5 active:bg-slate-50 lg:hover:shadow-md">
-              <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-emerald-400 to-emerald-600 text-lg text-white shadow-sm">
-                ▶
-              </div>
-              <div className="min-w-0 flex-1">
-                <p className="text-[10px] font-bold uppercase tracking-wide text-emerald-600">
-                  Бичлэг үргэлжлүүлэх
-                </p>
-                <p className="truncate text-sm font-semibold text-[var(--app-text)]">
-                  {bichlegContinue.title}
-                </p>
-                <p className="truncate text-xs text-[var(--app-muted)]">
-                  {bichlegContinue.subtitle}
-                </p>
-              </div>
-              <span className="text-base text-[var(--app-muted)]">→</span>
-            </MobileCard>
-          </Link>
-        ) : null}
       </div>
 
-      <section className="mb-3">
-        <h2 className="mb-2 text-xs font-bold uppercase tracking-wide text-[var(--app-muted)]">
-          Сурах
-        </h2>
-        <div className="app-chip-scroll -mx-1 px-1">
+      {!loggedIn ? (
+        <Link
+          href="/login"
+          className="mb-3 block text-center text-xs font-bold text-[#1fb85a]"
+        >
+          Нэвтрэх →
+        </Link>
+      ) : null}
+
+      {activeCourse?.available && lessonIds.length > 0 ? (
+        <Link href={continueHref} className="bs-tm-continue">
+          <span className="bs-tm-continue-ic" aria-hidden>
+            ▶
+          </span>
+          <span className="min-w-0 flex-1">
+            <p className="bs-tm-continue-kicker">Үргэлжлүүлэх</p>
+            <p className="bs-tm-continue-title">{continueTitle}</p>
+          </span>
+          <span className="bs-tm-card-chev" aria-hidden>
+            ›
+          </span>
+        </Link>
+      ) : null}
+
+      {bichlegContinue ? (
+        <Link href={bichlegContinue.href} className="bs-tm-continue">
+          <span
+            className="bs-tm-continue-ic"
+            style={{
+              background: "linear-gradient(135deg, #4d9fff, #2563eb)",
+            }}
+            aria-hidden
+          >
+            📺
+          </span>
+          <span className="min-w-0 flex-1">
+            <p className="bs-tm-continue-kicker">Бичлэг үргэлжлүүлэх</p>
+            <p className="bs-tm-continue-title">{bichlegContinue.title}</p>
+          </span>
+          <span className="bs-tm-card-chev" aria-hidden>
+            ›
+          </span>
+        </Link>
+      ) : null}
+
+      {visibleCatalog.length > 1 ? (
+        <div className="bs-tm-chip-row">
           {visibleCatalog.map((chip) => (
             <button
               key={chip.chipId}
               type="button"
               disabled={!chip.available}
               onClick={() => chip.available && setActiveChip(chip.chipId)}
-              className={`app-chip ${activeChip === chip.chipId ? "app-chip-active" : ""} ${!chip.available ? "app-chip-disabled" : ""}`}
+              className={`bs-tm-chip ${activeChip === chip.chipId ? "bs-tm-chip--on" : ""}`}
             >
-              <span>{chip.chipLabel}</span>
-              {chip.chipHint ? (
-                <span className="ml-1 text-[10px] font-normal opacity-80">
-                  {chip.chipHint}
-                </span>
-              ) : null}
+              {chip.chipLabel}
             </button>
           ))}
         </div>
-      </section>
+      ) : null}
+
+      {activeCourse ? (
+        <div className="bs-tm-hsk-card">
+          <span className="bs-tm-hsk-badge">{hskBadge}</span>
+          <h2 className="bs-tm-hsk-title">{activeCourse.title}</h2>
+          {activeCourse.subtitle ? (
+            <p className="bs-tm-hsk-sub">{activeCourse.subtitle}</p>
+          ) : null}
+          <div className="bs-tm-hsk-meta">
+            <span>
+              {completedCount}/{lessonIds.length || 0} хичээл
+            </span>
+            <span>{progressPercent}%</span>
+          </div>
+          <div className="bs-tm-hsk-bar">
+            <i style={{ width: `${progressPercent}%` }} />
+          </div>
+        </div>
+      ) : null}
 
       {selectedLang !== "ko" ? <HelzuiHomeCard /> : null}
 
-      <div
-        className={`app-course-card app-course-card-premium mb-4 p-4 ${activeCourse ? courseCardAccentClass(activeCourse.courseId) : ""}`}
-      >
-        <div
-          className={
-            activeCourse?.coverUrl ? "flex items-start gap-3" : undefined
-          }
-        >
-          {activeCourse?.coverUrl ? (
-            <CourseCover
-              src={activeCourse.coverUrl}
-              alt={activeCourse.title}
-            />
-          ) : null}
-          <div className="min-w-0 flex-1">
-            <p className="text-[10px] font-bold uppercase tracking-wide text-white/80">
-              {activeCourse ? courseChipBadge(activeCourse.courseId) : "Курс"}
-            </p>
-            <h3 className="mt-0.5 line-clamp-2 text-base font-bold leading-snug">
-              {activeCourse?.title ?? "—"}
-            </h3>
-            <p className="mt-1 line-clamp-2 text-xs leading-5 text-white/90">
-              {activeCourse?.subtitle ?? ""}
-            </p>
-            <div className="mt-2.5 flex items-center gap-2">
-              <span className="rounded-full bg-white/20 px-2 py-0.5 text-[11px] font-bold">
-                {progressPercent}%
-              </span>
-              <span className="text-[11px] text-white/85">
-                {completedCount}/{lessonIds.length || 0} хичээл
-              </span>
-            </div>
-            <div className="mt-2.5 h-2 overflow-hidden rounded-full bg-black/10">
-              <div
-                className="h-full rounded-full bg-white transition-all"
-                style={{ width: `${progressPercent}%` }}
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <section>
-        <h2 className="mb-2.5 text-xs font-bold uppercase tracking-wide text-[var(--app-muted)]">
-          Хичээлийн зам
-        </h2>
-        {timelineLessons.length === 0 ? (
-          <MobileCard className="text-center !py-6">
-            <p className="text-sm text-[var(--app-muted)]">
-              {activeCourse && !activeCourse.available
-                ? "Энэ курс удахгүй нээгдэнэ."
-                : "Одоогоор хичээл алга. Import ZIP-ээр нэмнэ үү."}
-            </p>
-          </MobileCard>
-        ) : (
-          <div className="relative flex flex-col">
-            {timelineLessons.map((lesson, index) => {
-              const state = lessonNodeState(lesson, index);
-              const isLast = index === timelineLessons.length - 1;
-              return (
-                <div key={lesson.id} className="relative flex gap-2.5">
-                  <div className="flex w-9 shrink-0 flex-col items-center">
-                    {state === "locked" ? (
-                      <div className="app-timeline-node app-timeline-node-locked">
-                        🔒
-                      </div>
-                    ) : state === "active" ? (
-                      <div className="app-timeline-node app-timeline-node-active">
-                        {index + 1}
-                      </div>
-                    ) : (
-                      <div className="app-timeline-node app-timeline-node-next">
-                        {index + 1}
-                      </div>
-                    )}
-                    {!isLast ? (
-                      <div className="my-0.5 w-0.5 flex-1 min-h-[20px] bg-[var(--app-border)]" />
-                    ) : null}
-                  </div>
-                  <div className="min-w-0 flex-1 pb-3.5">
-                    {state === "locked" ? (
-                      <div className="app-timeline-card-locked">
-                        <p className="truncate text-sm font-medium text-slate-600">
-                          {lesson.chineseTitle}
-                        </p>
-                        <p className="truncate text-xs text-slate-500">
-                          {lesson.title}
-                        </p>
-                        <p className="mt-1 text-[10px] font-medium text-slate-400">
-                          Түгжээтэй
-                        </p>
-                      </div>
-                    ) : (
-                      <Link href={lessonPath(lesson.id)} className="app-timeline-card">
-                        <p className="truncate text-sm font-semibold text-[var(--app-text)]">
-                          {lesson.chineseTitle}
-                        </p>
-                        <p className="truncate text-xs text-[var(--app-muted)]">
-                          {lesson.title}
-                        </p>
-                      </Link>
-                    )}
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        )}
-        {activeCourse?.allLessonsHref && lessons.length > 5 ? (
-          <Link
-            href={activeCourse.allLessonsHref}
-            className="mt-1 block text-center text-sm font-semibold text-emerald-600"
-          >
-            Бүх хичээл харах →
-          </Link>
-        ) : null}
-      </section>
+      <p className="bs-tm-sec">🗺️ Хичээлийн зам</p>
+      {activeCourse && !activeCourse.available ? (
+        <p className="bs-tm-path-empty">Энэ курс удахгүй нээгдэнэ.</p>
+      ) : (
+        <HomeDuolingoPath
+          lessons={lessons}
+          statusByLesson={statusByLesson}
+          allLessonsHref={activeCourse?.allLessonsHref}
+        />
+      )}
     </MobileAppShell>
   );
 }

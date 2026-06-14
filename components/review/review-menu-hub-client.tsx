@@ -7,7 +7,6 @@ import { TemeeImage } from "@/components/temee/temee-image";
 import { useActiveHskLevel } from "@/components/providers/active-hsk-level-provider";
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
 import { SHELL_MAIN_REVIEW } from "@/lib/app-shell-classes";
-import { formatActiveHskLevel } from "@/lib/hsk/active-hsk-level";
 import { getStreakUnified } from "@/lib/retention/retention-service";
 import {
   buildLocalQueue,
@@ -195,9 +194,7 @@ export function ReviewMenuHubClient({
     ? `Гайхалтай, ${displayName}! Үргэлжлүүлээрэй`
     : `${stats.dailyDone}/${stats.dailyGoal} карт · ${displayName}`;
 
-  const memorizeStatus = hasSupabaseConfig
-    ? `${formatActiveHskLevel(activeLevel)} · шинэ үгс`
-    : "Шинэ үгс цээжлэх";
+  const memorizeStatus = "Бүх түвшний үгийн сан";
 
   const testStatus =
     testCount > 0 ? `${testCount} шалгалт бэлэн` : "Тест оруулаагүй байна";
@@ -321,7 +318,7 @@ export function ReviewMenuHubClient({
             💡
           </span>
           <span className="flex-1 min-w-0">
-            <span className="bs-tm-card-title">Шинэ үг цээжлэх</span>
+            <span className="bs-tm-card-title">Бүх HSK үг</span>
             <span className="bs-tm-card-sub">{memorizeStatus}</span>
           </span>
           <span className="bs-tm-card-chev" aria-hidden>›</span>
@@ -332,7 +329,7 @@ export function ReviewMenuHubClient({
             📝
           </span>
           <span className="flex-1 min-w-0">
-            <span className="bs-tm-card-title">HSK загвар шалгалт</span>
+            <span className="bs-tm-card-title">HSK бэлтгэл</span>
             <span className="bs-tm-card-sub">{testStatus}</span>
           </span>
           <span className="bs-tm-card-chev" aria-hidden>›</span>

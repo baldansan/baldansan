@@ -2,14 +2,12 @@
 
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
+import { TemeeImage } from "@/components/temee/temee-image";
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
 import { SHELL_MAIN_NARROW } from "@/lib/app-shell-classes";
-import { MobileCard } from "@/components/mobile/mobile-card";
-import { MobilePageHeader } from "@/components/mobile/mobile-page-header";
 import {
   isPrelessonLessonId,
   resolveGameLabels,
-  type GameLinkSlug,
 } from "@/lib/games/game-lesson-meta";
 import { getGameStats } from "@/lib/games/game-progress";
 import { resolveContinueLearning } from "@/lib/learner-progress";
@@ -27,7 +25,7 @@ type GameCard = {
   title: string;
   desc: string;
   icon: string;
-  color: string;
+  gradient: string;
   badge: string;
   global?: boolean;
 };
@@ -37,9 +35,9 @@ const CHINESE_HSK_GAMES: GameCard[] = [
     id: "hsk-vocab-quiz",
     slug: "hsk-vocab-quiz",
     title: "Үгсийн дасгал",
-    desc: "Утга, ханз, пиньинь, жишээ — 20–40 асуулт",
+    desc: "Утга, ханз, пиньинь",
     icon: "🎯",
-    color: "from-teal-500 to-emerald-600",
+    gradient: "linear-gradient(145deg, #14b8a6, #0d9488)",
     badge: "Quiz",
     global: true,
   },
@@ -47,9 +45,9 @@ const CHINESE_HSK_GAMES: GameCard[] = [
     id: "srs-marathon",
     slug: "srs-marathon",
     title: "SRS марафон",
-    desc: "Миний давталтын үгээр 5 төрлийн асуулт",
+    desc: "Давталтын үгээр",
     icon: "🏃",
-    color: "from-violet-400 to-violet-500",
+    gradient: "linear-gradient(145deg, #9b6bff, #6d28d9)",
     badge: "SRS",
     global: true,
   },
@@ -57,9 +55,9 @@ const CHINESE_HSK_GAMES: GameCard[] = [
     id: "radical",
     slug: "radical",
     title: "Ханз задлах",
-    desc: "Бүрэлдэхүүн сонгоод ханз бүрдүүлэх",
+    desc: "Бүрэлдэхүүн сонгох",
     icon: "🧱",
-    color: "from-orange-400 to-orange-500",
+    gradient: "linear-gradient(145deg, #ff8a3d, #e65c2e)",
     badge: "Задлах",
     global: true,
   },
@@ -69,7 +67,7 @@ const CHINESE_HSK_GAMES: GameCard[] = [
     title: "Хурдны тэмцээн",
     desc: "60 секундэд хэдэн зөв?",
     icon: "⚡",
-    color: "from-rose-400 to-rose-500",
+    gradient: "linear-gradient(145deg, #ff6b9d, #db2777)",
     badge: "Хурд",
     global: true,
   },
@@ -77,9 +75,9 @@ const CHINESE_HSK_GAMES: GameCard[] = [
     id: "daily-challenge",
     slug: "daily-challenge",
     title: "Өдрийн сорил",
-    desc: "10 асуулт, өдөрт нэг удаа",
+    desc: "Өдөрт нэг удаа",
     icon: "📅",
-    color: "from-amber-400 to-amber-500",
+    gradient: "linear-gradient(145deg, #ffc94d, #f59e0b)",
     badge: "Өдөр",
     global: true,
   },
@@ -99,7 +97,7 @@ function gamesForLanguage(
       title: labels.matchTitle,
       desc: labels.matchDesc,
       icon: "🔗",
-      color: "from-violet-400 to-violet-500",
+      gradient: "linear-gradient(145deg, #9b6bff, #6d28d9)",
       badge: "Шинэ",
     },
     {
@@ -108,7 +106,7 @@ function gamesForLanguage(
       title: labels.translateTitle,
       desc: labels.translateDesc,
       icon: "🌐",
-      color: "from-blue-400 to-blue-500",
+      gradient: "linear-gradient(145deg, #4d9fff, #2563eb)",
       badge: "Шинэ",
     },
     {
@@ -117,7 +115,7 @@ function gamesForLanguage(
       title: labels.missingWordTitle,
       desc: labels.missingWordDesc,
       icon: "✏️",
-      color: "from-amber-400 to-amber-500",
+      gradient: "linear-gradient(145deg, #ff8a3d, #e65c2e)",
       badge: "Шинэ",
     },
     {
@@ -126,7 +124,7 @@ function gamesForLanguage(
       title: labels.arrangeTitle,
       desc: labels.arrangeDesc,
       icon: "🔢",
-      color: "from-emerald-400 to-emerald-500",
+      gradient: "linear-gradient(145deg, #1fb85a, #0e9c47)",
       badge: "Шинэ",
     },
     {
@@ -135,10 +133,27 @@ function gamesForLanguage(
       title: labels.strokeTitle,
       desc: labels.strokeDesc,
       icon: "🖊️",
-      color: "from-rose-400 to-rose-500",
+      gradient: "linear-gradient(145deg, #ff6b9d, #db2777)",
       badge: "Шинэ",
     },
   ];
+}
+
+function GameTile({ game, href }: { game: GameCard; href: string }) {
+  return (
+    <Link href={href} className="bs-tm-game-tile">
+      <span className="bs-tm-game-tile-badge">{game.badge}</span>
+      <span
+        className="bs-tm-game-tile-ic"
+        style={{ background: game.gradient }}
+        aria-hidden
+      >
+        {game.icon}
+      </span>
+      <p className="bs-tm-game-tile-title">{game.title}</p>
+      <p className="bs-tm-game-tile-sub">{game.desc}</p>
+    </Link>
+  );
 }
 
 export function GamesAppView({ lessonIds, lessonTitles }: Props) {
@@ -194,111 +209,70 @@ export function GamesAppView({ lessonIds, lessonTitles }: Props) {
 
   return (
     <MobileAppShell activeTab="games" mainClassName={SHELL_MAIN_NARROW}>
-      <MobilePageHeader title="Тоглоом" />
+      <h1 className="bs-tm-page-title">Тоглоом 🎮</h1>
 
-      <div className="mb-4 grid grid-cols-3 gap-2">
-        {[
-          { label: "Тоглосон", value: played },
-          { label: "Дээд оноо", value: bestScore },
-          { label: "Нарийвчлал", value: `${avgAccuracy}%` },
-        ].map((stat) => (
-          <div key={stat.label} className="app-game-stat">
-            <p className="app-game-stat-value">{stat.value}</p>
-            <p className="text-[10px] leading-tight text-[var(--app-muted)]">
-              {stat.label}
-            </p>
+      <div className="bs-tm-stat-row">
+        <div className="bs-tm-stat">
+          <div className="bs-tm-stat-ic" aria-hidden>
+            🎮
           </div>
-        ))}
+          <div className="bs-tm-stat-n">{played}</div>
+          <div className="bs-tm-stat-l">Тоглосон</div>
+        </div>
+        <div className="bs-tm-stat">
+          <div className="bs-tm-stat-ic" aria-hidden>
+            🏆
+          </div>
+          <div className="bs-tm-stat-n">{bestScore}</div>
+          <div className="bs-tm-stat-l">Дээд оноо</div>
+        </div>
+        <div className="bs-tm-stat">
+          <div className="bs-tm-stat-ic" aria-hidden>
+            🎯
+          </div>
+          <div className="bs-tm-stat-n">{avgAccuracy}%</div>
+          <div className="bs-tm-stat-l">Нарийвчлал</div>
+        </div>
       </div>
 
       {lang === "zh" ? (
         <>
-          <h2 className="mb-3 text-sm font-bold text-[var(--app-text)]">
-            HSK тоглоомууд
-          </h2>
-          <div className="mb-5 grid grid-cols-2 gap-3">
+          <p className="bs-tm-sec">HSK тоглоомууд</p>
+          <div className="bs-tm-game-grid">
             {CHINESE_HSK_GAMES.map((game) => (
-              <Link
+              <GameTile
                 key={game.id}
+                game={game}
                 href={`/games/${game.slug}`}
-                className="block"
-              >
-                <MobileCard
-                  padding="sm"
-                  className="relative h-full !p-3 active:scale-[0.98]"
-                >
-                  <span className="absolute right-2 top-2 rounded-full bg-[var(--app-purple-light)] px-1.5 py-0.5 text-[9px] font-bold text-[var(--app-purple-dark)]">
-                    {game.badge}
-                  </span>
-                  <div
-                    className={`mb-2 flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br ${game.color} text-lg text-white`}
-                  >
-                    {game.icon}
-                  </div>
-                  <p className="text-sm font-semibold text-[var(--app-text)]">
-                    {game.title}
-                  </p>
-                  <p className="mt-1 line-clamp-2 text-[10px] leading-tight text-[var(--app-muted)]">
-                    {game.desc}
-                  </p>
-                </MobileCard>
-              </Link>
+              />
             ))}
           </div>
         </>
       ) : null}
 
-      <div className="app-game-mission mb-5 p-4">
-        <p className="text-xs font-semibold uppercase tracking-wide text-purple-100">
-          Тоглоомын чиглэл
-        </p>
-        {lessonTitle ? (
-          <p className="mt-1 text-sm font-semibold text-white">{lessonTitle}</p>
-        ) : (
-          <p className="mt-1 text-sm text-purple-50">
-            Одоогийн хичээлийн үгээр дасгал хий.
+      <Link href={marathonHref} className="bs-tm-game-feat">
+        <TemeeImage
+          variant="thumbsup"
+          className="bs-tm-game-feat-img"
+          width={64}
+          height={64}
+        />
+        <span className="flex-1 min-w-0">
+          <p className="bs-tm-game-feat-kicker">Тоглоомын чиглэл</p>
+          <p className="bs-tm-game-feat-title">
+            {lessonTitle ?? "Одоогийн хичээлийн үгээр"}
           </p>
-        )}
-        <Link
-          href={marathonHref}
-          className="mt-3 inline-flex min-h-[44px] items-center rounded-full bg-white px-5 py-2.5 text-sm font-semibold text-purple-700"
-        >
-          SRS марафон
-        </Link>
-      </div>
+          <p className="bs-tm-game-feat-sub">SRS марафон эхлүүлэх →</p>
+        </span>
+      </Link>
 
-      <h2 className="mb-3 text-sm font-bold text-[var(--app-text)]">
-        Хичээлийн дасгалууд
-      </h2>
-      <div className="grid grid-cols-2 gap-3">
+      <p className="bs-tm-sec">Хичээлийн дасгалууд</p>
+      <div className="bs-tm-game-grid">
         {games.map((game) => {
           const href = game.global
             ? `/games/${game.slug}`
             : `/games/${game.slug}?lessonId=${currentLessonId}`;
-          return (
-          <Link
-            key={game.id}
-            href={href}
-            className="block"
-          >
-            <MobileCard padding="sm" className="relative h-full !p-3 active:scale-[0.98]">
-              <span className="absolute right-2 top-2 rounded-full bg-[var(--app-purple-light)] px-1.5 py-0.5 text-[9px] font-bold text-[var(--app-purple-dark)]">
-                {game.badge}
-              </span>
-              <div
-                className={`mb-2 flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br ${game.color} text-lg text-white`}
-              >
-                {game.icon}
-              </div>
-              <p className="text-sm font-semibold text-[var(--app-text)]">
-                {game.title}
-              </p>
-              <p className="mt-1 line-clamp-2 text-[10px] leading-tight text-[var(--app-muted)]">
-                {game.desc}
-              </p>
-            </MobileCard>
-          </Link>
-        );
+          return <GameTile key={game.id} game={game} href={href} />;
         })}
       </div>
     </MobileAppShell>
