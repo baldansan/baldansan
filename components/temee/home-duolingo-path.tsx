@@ -7,7 +7,7 @@ import { lessonPath } from "@/lib/content";
 import type { LessonContent } from "@/types/lesson-content";
 import type { LessonStatus } from "@/lib/progress";
 
-type NodeState = "done" | "current" | "locked";
+type NodeState = "done" | "current" | "open";
 
 type Props = {
   lessons: LessonContent[];
@@ -31,18 +31,11 @@ function resolveNodeState(
   const status = statusByLesson[lesson.id] ?? "not_started";
   if (status === "completed") return "done";
 
-  const firstOpen = lessons.findIndex((l, i) => {
-    const s = statusByLesson[l.id] ?? "not_started";
-    if (s === "completed") return false;
-    if (l.status === "locked") return false;
-    if (i === 0) return true;
-    const prev = lessons[i - 1];
-    const prevStatus = statusByLesson[prev.id] ?? "not_started";
-    return prevStatus === "completed" || prevStatus === "started";
-  });
-
-  if (index === firstOpen) return "current";
-  return "locked";
+  const firstIncomplete = lessons.findIndex(
+    (l) => (statusByLesson[l.id] ?? "not_started") !== "completed"
+  );
+  if (index === firstIncomplete) return "current";
+  return "open";
 }
 
 export function HomeDuolingoPath({
@@ -69,32 +62,16 @@ export function HomeDuolingoPath({
           const align = ALIGN[index % 3];
           const isLast = index === nodes.length - 1;
 
-          const nodeEl =
-            state === "locked" ? (
-              <div className={`bs-tm-path-node bs-tm-path-node--locked ${align}`}>
-                <span className="bs-tm-path-node-inner" aria-hidden>
-                  🔒
-                </span>
-              </div>
-            ) : state === "current" ? (
-              <Link
-                href={lessonPath(lesson.id)}
-                className={`bs-tm-path-node bs-tm-path-node--current ${align}`}
-              >
-                <span className="bs-tm-path-node-inner" aria-hidden>
-                  ▶
-                </span>
-              </Link>
-            ) : (
-              <Link
-                href={lessonPath(lesson.id)}
-                className={`bs-tm-path-node bs-tm-path-node--done ${align}`}
-              >
-                <span className="bs-tm-path-node-inner" aria-hidden>
-                  ✓
-                </span>
-              </Link>
-            );
+          const nodeEl = (
+            <Link
+              href={lessonPath(lesson.id)}
+              className={`bs-tm-path-node bs-tm-path-node--${state} ${align}`}
+            >
+              <span className="bs-tm-path-node-inner" aria-hidden>
+                {state === "done" ? "✓" : "▶"}
+              </span>
+            </Link>
+          );
 
           return (
             <div key={lesson.id} className="bs-tm-path-step">

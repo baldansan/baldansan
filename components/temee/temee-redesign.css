@@ -766,11 +766,9 @@
   animation: bs-tm-path-pulse 1.4s ease-in-out infinite;
 }
 
-.bs-tm-path-node--locked .bs-tm-path-node-inner {
-  background: #e9efeb;
-  color: #a8b5ae;
-  font-size: 18px;
-  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.06);
+.bs-tm-path-node--open .bs-tm-path-node-inner {
+  background: linear-gradient(145deg, #4ad97a, #1fb85a);
+  color: #fff;
 }
 
 @keyframes bs-tm-path-pulse {
