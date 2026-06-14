@@ -15,7 +15,7 @@ export function LanguageFilteredKanjiView({ allLessons }: Props) {
 
   if (!ready) {
     return (
-      <MobileAppShell activeTab="kanji" mainClassName="mx-auto w-full max-w-[390px]">
+      <MobileAppShell activeTab="kanji" >
         <p className="py-16 text-center text-sm text-[var(--app-muted)]">
           Ачааллаж байна…
         </p>

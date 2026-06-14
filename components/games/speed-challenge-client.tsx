@@ -161,7 +161,7 @@ export function SpeedChallengeClient() {
 
   if (!hydrated) {
     return (
-      <GameShell mainClassName="mx-auto w-full max-w-[430px] px-4 py-12 text-center text-sm text-[var(--app-muted)]">
+      <GameShell mainClassName=" px-4 py-12 text-center text-sm text-[var(--app-muted)]">
         Ачааллаж байна…
       </GameShell>
     );
@@ -169,7 +169,7 @@ export function SpeedChallengeClient() {
 
   if (phase === "source") {
     return (
-      <GameShell mainClassName="mx-auto w-full max-w-[430px] px-4 pb-8">
+      <GameShell mainClassName=" px-4 pb-8">
         <div className="bs-mock-setup">
           <h1 className="bs-mock-title">Хурдны тэмцээн</h1>
           <p className="bs-mock-sub">60 секундэд хэдэн зөв хариулах вэ?</p>
@@ -196,7 +196,7 @@ export function SpeedChallengeClient() {
 
   if (phase === "loading") {
     return (
-      <GameShell mainClassName="mx-auto w-full max-w-[430px] px-4 py-12 text-center text-sm text-[var(--app-muted)]">
+      <GameShell mainClassName=" px-4 py-12 text-center text-sm text-[var(--app-muted)]">
         Асуулт бэлдэж байна…
       </GameShell>
     );
@@ -204,7 +204,7 @@ export function SpeedChallengeClient() {
 
   if (phase === "done") {
     return (
-      <GameShell mainClassName="mx-auto w-full max-w-[430px] px-4 pb-8">
+      <GameShell mainClassName=" px-4 pb-8">
         <div className="bs-meaning-done">
           <h2 className="text-xl font-extrabold text-[var(--bs-ink)]">
             {error ? "Тоглоом эхлэхгүй" : "⏱ Цаг дууслаа!"}
@@ -239,7 +239,7 @@ export function SpeedChallengeClient() {
   const timerPct = (timeLeft / ROUND_SECONDS) * 100;
 
   return (
-    <GameShell mainClassName="mx-auto w-full max-w-[430px] bg-[var(--bs-bg)] px-4 pt-4 pb-8">
+    <GameShell mainClassName=" bg-[var(--bs-bg)] px-4 pt-4 pb-8">
       <div className="mb-3 flex items-center justify-between gap-2">
         <div>
           <h1 className="text-base font-extrabold text-[var(--bs-ink)]">

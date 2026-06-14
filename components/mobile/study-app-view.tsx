@@ -51,7 +51,7 @@ export function StudyAppView({ allLessons }: Props) {
 
   if (!ready) {
     return (
-      <MobileAppShell activeTab="study" mainClassName="mx-auto w-full max-w-[390px]">
+      <MobileAppShell activeTab="study" >
         <p className="py-16 text-center text-sm text-[var(--app-muted)]">
           Хичээл ачаалж байна...
         </p>
@@ -60,7 +60,7 @@ export function StudyAppView({ allLessons }: Props) {
   }
 
   return (
-    <MobileAppShell activeTab="study" mainClassName="mx-auto w-full max-w-[390px]">
+    <MobileAppShell activeTab="study" >
       <MobilePageHeader
         title="Давтах"
         subtitle={trackLabel || "Хичээл, үгс"}

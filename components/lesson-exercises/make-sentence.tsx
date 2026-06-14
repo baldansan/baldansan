@@ -90,7 +90,7 @@ export function MakeSentence({ item, instructionMn, onResult }: Props) {
   return (
     <ExerciseFeedback
       status={feedback}
-      className="mx-auto w-full max-w-[430px] rounded-2xl bg-white p-4 ring-1 ring-slate-200"
+      className="rounded-2xl bg-white p-4 ring-1 ring-slate-200"
     >
       <div
         className="mb-1 text-xs font-semibold uppercase tracking-wide"

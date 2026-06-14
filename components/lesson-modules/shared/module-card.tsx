@@ -9,7 +9,7 @@ type Props = {
 export function ModuleCard({ children, className = "" }: Props) {
   return (
     <article
-      className={`mx-auto w-full max-w-[430px] overflow-hidden p-5 sm:p-6 ${className}`}
+      className={`overflow-hidden p-5 sm:p-6 ${className}`}
       style={{
         backgroundColor: LESSON_MODULE.surface,
         borderRadius: LESSON_MODULE.radiusLg,

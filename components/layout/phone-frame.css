@@ -126,4 +126,8 @@
     min-height: 100vh;
     background: var(--app-bg, #eef2ef);
   }
+
+  .bs-app-root .bs-app-shell-inner > main {
+    width: 100%;
+  }
 }

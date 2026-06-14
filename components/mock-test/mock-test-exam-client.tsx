@@ -480,7 +480,7 @@ export function MockTestExamClient({
       mainClassName={
         options.immersive
           ? "bs-mt-exam-shell"
-          : "mx-auto w-full max-w-[430px] px-0 pb-8"
+          : " px-0 pb-8"
       }
     >
       {children}

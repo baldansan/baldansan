@@ -164,7 +164,7 @@ export function HskGuidedLessonPlayer({
     <MobileAppShell
       activeTab="study"
       showBottomNav={false}
-      mainClassName="mx-auto w-full max-w-[430px] font-sans"
+      mainClassName=" font-sans"
     >
       {adminPreview ? <AdminPreviewBanner /> : null}
 

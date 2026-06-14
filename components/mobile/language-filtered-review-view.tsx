@@ -24,7 +24,7 @@ export function LanguageFilteredReviewView({ allLessons }: Props) {
 
   if (!ready) {
     return (
-      <MobileAppShell activeTab="study" mainClassName="mx-auto w-full max-w-[390px]">
+      <MobileAppShell activeTab="study" >
         <p className="py-16 text-center text-sm text-[var(--app-muted)]">
           Ачааллаж байна…
         </p>

@@ -34,9 +34,13 @@ export function AppShell({
 
   const mainClasses = immersive
     ? `relative flex-1 overflow-hidden p-0 ${mainClassName}`
-    : `flex-1 overflow-x-hidden px-4 pt-5 lg:px-6 lg:pt-6 ${
+    : `flex w-full flex-1 min-w-0 justify-center overflow-x-hidden pt-5 lg:pt-6 ${
         showBottomNav ? "pb-32 lg:pb-8" : "pb-6"
-      } ${mainClassName}`;
+      }`;
+
+  const columnClasses = immersive
+    ? mainClassName
+    : `w-full max-w-[480px] min-w-0 px-4 lg:px-6 ${mainClassName}`.trim();
 
   const rootClass = hideSidebar
     ? "bs-app-root bs-app-root--no-sidebar"
@@ -59,7 +63,7 @@ export function AppShell({
             {immersive ? (
               content
             ) : (
-              <div className="mx-auto w-full max-w-[480px]">{content}</div>
+              <div className={columnClasses}>{content}</div>
             )}
           </main>
           {showBottomNav ? (

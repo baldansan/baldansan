@@ -13,7 +13,7 @@ export function MockTestAttemptReviewClient({ review }: Props) {
     <MobileAppShell
       activeTab="games"
       showBottomNav={false}
-      mainClassName="mx-auto w-full max-w-[430px] px-0 pb-8"
+      mainClassName=" px-0 pb-8"
     >
       <MockTestResultView
         test={review.test}

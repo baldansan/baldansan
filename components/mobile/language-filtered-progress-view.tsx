@@ -15,7 +15,7 @@ export function LanguageFilteredProgressView({ allLessons }: Props) {
 
   if (!ready) {
     return (
-      <MobileAppShell activeTab="profile" mainClassName="mx-auto w-full max-w-[390px]">
+      <MobileAppShell activeTab="profile" >
         <p className="py-16 text-center text-sm text-[var(--app-muted)]">
           Ачааллаж байна…
         </p>

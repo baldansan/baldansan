@@ -83,7 +83,7 @@ export function HskPlayerCard({
 }) {
   return (
     <article
-      className={`font-sans mx-auto w-full max-w-[430px] overflow-hidden bg-white p-5 shadow-[0_8px_24px_rgba(16,32,51,0.06)] sm:p-6 ${className}`}
+      className={`font-sans overflow-hidden bg-white p-5 shadow-[0_8px_24px_rgba(16,32,51,0.06)] sm:p-6 ${className}`}
       style={{ borderRadius: HSK_PLAYER.radius }}
     >
       {children}

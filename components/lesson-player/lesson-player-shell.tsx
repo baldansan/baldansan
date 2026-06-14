@@ -79,7 +79,7 @@ export function LessonPlayerShell({
 
 export function LessonPlayerCard({ children }: { children: ReactNode }) {
   return (
-    <article className="mx-auto w-full max-w-[430px] overflow-hidden rounded-3xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:p-6">
+    <article className="overflow-hidden rounded-3xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:p-6">
       {children}
     </article>
   );

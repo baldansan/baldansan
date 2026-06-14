@@ -79,7 +79,7 @@ export function VocabCard({
   );
 
   return (
-    <div className="mx-auto w-full max-w-[430px]">
+    <div className="w-full">
       <VocabFlipCard
         flipped={flipped}
         onFlip={handleFlip}

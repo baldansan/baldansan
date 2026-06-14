@@ -164,7 +164,7 @@ export function RadicalGameClient({
 
   if (entries.length === 0) {
     return (
-      <GameShell mainClassName="mx-auto w-full max-w-[430px] bg-[#f1f6f3] px-5 pt-6">
+      <GameShell mainClassName=" bg-[#f1f6f3] px-5 pt-6">
         <div className="rounded-[24px] bg-white p-8 text-center shadow-[0_12px_30px_rgba(25,40,30,0.10)]">
           <p className="text-sm font-bold text-[var(--app-text)]">
             {customWordSet
@@ -186,7 +186,7 @@ export function RadicalGameClient({
 
   if (finished) {
     return (
-      <GameShell mainClassName="mx-auto w-full max-w-[430px] bg-[#f1f6f3] px-5 pt-6">
+      <GameShell mainClassName=" bg-[#f1f6f3] px-5 pt-6">
         <RadicalGameTop title={labels.radicalTitle} counter={`${total} / ${total}`} />
         <div className="mb-4 h-2 overflow-hidden rounded-full bg-[#e1ebe5]">
           <div className="h-full w-full rounded-full bg-[var(--app-primary)] transition-all" />
@@ -234,7 +234,7 @@ export function RadicalGameClient({
   const hanziRevealed = checkResult === "ok";
 
   return (
-    <GameShell mainClassName="mx-auto w-full max-w-[430px] bg-[#f1f6f3] px-5 pt-6 pb-8">
+    <GameShell mainClassName=" bg-[#f1f6f3] px-5 pt-6 pb-8">
       <RadicalGameTop
         title={labels.radicalTitle}
         counter={`${index + 1} / ${total}`}

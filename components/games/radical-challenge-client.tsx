@@ -290,7 +290,7 @@ export function RadicalChallengeClient({
 
   if (entries.length === 0) {
     return (
-      <GameShell mainClassName="mx-auto w-full max-w-[430px] bg-[#f1f6f3] px-5 pt-6">
+      <GameShell mainClassName=" bg-[#f1f6f3] px-5 pt-6">
         <p className="py-16 text-center text-sm text-[var(--app-muted)]">
           {formatActiveHskLevel(hskLevel)} түвшинд сорилтын ханз олдсонгүй.
         </p>
@@ -307,7 +307,7 @@ export function RadicalChallengeClient({
   if (finished) {
     const won = finished === "win";
     return (
-      <GameShell mainClassName="mx-auto w-full max-w-[430px] bg-[#f1f6f3] px-5 pt-6 pb-8">
+      <GameShell mainClassName=" bg-[#f1f6f3] px-5 pt-6 pb-8">
         <ChallengeHeader
           lives={lives}
           title={labels.radicalTitle}
@@ -348,7 +348,7 @@ export function RadicalChallengeClient({
   const hanziRevealed = roundResult === "ok" || roundResult === "timeout";
 
   return (
-    <GameShell mainClassName="mx-auto w-full max-w-[430px] bg-[#f1f6f3] px-[18px] pt-5 pb-8">
+    <GameShell mainClassName=" bg-[#f1f6f3] px-[18px] pt-5 pb-8">
       <ChallengeHeader
         lives={lives}
         title={labels.radicalTitle}

@@ -172,8 +172,7 @@ export function ProfileAppView() {
     return (
       <MobileAppShell
         activeTab="profile"
-        mainClassName="mx-auto w-full max-w-[390px]"
-      >
+        >
         <p className="py-16 text-center text-sm text-[var(--app-muted)]">
           Ачааллаж байна…
         </p>
@@ -185,8 +184,7 @@ export function ProfileAppView() {
     return (
       <MobileAppShell
         activeTab="profile"
-        mainClassName="mx-auto w-full max-w-[390px]"
-      >
+        >
         <AuthLoadErrorCard
           title="Профайл ачаалахад алдаа гарлаа"
           description="Auth эсвэл профайл мэдээлэл татахад алдаа гарлаа."
@@ -205,8 +203,7 @@ export function ProfileAppView() {
     return (
       <MobileAppShell
         activeTab="profile"
-        mainClassName="mx-auto w-full max-w-[390px]"
-      >
+        >
         {!hasSupabaseConfig ? (
           <MobileCard className="mb-4 border border-amber-200 bg-amber-50 !p-3 text-xs text-amber-900">
             Supabase тохиргоо дутуу. Ахицаа зөвхөн энэ төхөөрөмж дээр хадгална.
@@ -268,8 +265,7 @@ export function ProfileAppView() {
   return (
     <MobileAppShell
       activeTab="profile"
-      mainClassName="mx-auto w-full max-w-[390px]"
-    >
+      >
       {profileError ? (
         <MobileCard className="mb-4 border border-amber-200 bg-amber-50 !p-3 text-xs text-amber-900">
           Зарим профайл мэдээлэл ачаалж чадсангүй: {profileError}

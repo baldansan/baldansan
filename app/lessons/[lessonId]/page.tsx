@@ -76,7 +76,7 @@ export default async function LessonDetailPage({
 
   if (isLesson0) {
     return (
-      <MobileAppShell activeTab="study" mainClassName="mx-auto w-full max-w-[390px]">
+      <MobileAppShell activeTab="study" >
         <div className="flex flex-col gap-4 pb-2">
           {adminPreview ? <AdminPreviewBanner /> : null}
 
@@ -95,7 +95,7 @@ export default async function LessonDetailPage({
 
   if (isHskLesson) {
     return (
-      <MobileAppShell activeTab="study" mainClassName="mx-auto w-full max-w-[390px]">
+      <MobileAppShell activeTab="study" >
         <div className="flex flex-col gap-4 pb-2">
           {adminPreview ? <AdminPreviewBanner /> : null}
           <Link
@@ -124,7 +124,7 @@ export default async function LessonDetailPage({
     : "Үгийн сан судлах";
 
   return (
-    <MobileAppShell activeTab="study" mainClassName="mx-auto w-full max-w-[390px]">
+    <MobileAppShell activeTab="study" >
       <div className="flex flex-col gap-4 pb-2">
         {adminPreview ? <AdminPreviewBanner /> : null}
 
