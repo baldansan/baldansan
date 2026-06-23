@@ -20,11 +20,11 @@ export default async function BichlegPage() {
     countOrphanVideos(),
   ]);
 
-  const showProgress = await isServerUserAuthenticated();
+  const isAuthenticated = await isServerUserAuthenticated();
   const totalsBySeriesId = Object.fromEntries(
     seriesList.map((s) => [s.id, s.videoCount])
   );
-  const seriesProgress = showProgress
+  const seriesProgress = isAuthenticated
     ? await fetchSeriesWatchProgressMap(
         seriesList.map((s) => s.id),
         totalsBySeriesId
@@ -36,7 +36,6 @@ export default async function BichlegPage() {
       seriesList={seriesList}
       orphanCount={orphanCount}
       seriesProgress={seriesProgress}
-      showProgress={showProgress}
     />
   );
 }

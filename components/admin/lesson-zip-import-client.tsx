@@ -51,6 +51,16 @@ const btnSecondary =
 const btnGhost =
   "inline-flex rounded-full border border-slate-200 px-5 py-2.5 text-sm font-medium text-slate-700 transition-colors hover:border-emerald-200 hover:text-emerald-700";
 
+function packageReadyForImport(validation: LessonZipValidation | null): boolean {
+  return Boolean(
+    validation?.ok &&
+      validation.importPayload &&
+      validation.preview &&
+      validation.lesson &&
+      (validation.errors.length ?? 0) === 0
+  );
+}
+
 export function LessonZipImportClient({
   track,
   title,
@@ -63,6 +73,9 @@ export function LessonZipImportClient({
   const router = useRouter();
   const [file, setFile] = useState<File | null>(null);
   const [validation, setValidation] = useState<LessonZipValidation | null>(null);
+  const [parsedPackage, setParsedPackage] = useState<LessonZipValidation | null>(
+    null
+  );
   const [importResult, setImportResult] = useState<LessonPackageImportResult | null>(
     null
   );
@@ -78,10 +91,30 @@ export function LessonZipImportClient({
   const clearAll = useCallback(() => {
     setFile(null);
     setValidation(null);
+    setParsedPackage(null);
     setImportResult(null);
     setError(null);
     setBusy(null);
   }, []);
+
+  const storeParsedPackage = useCallback((result: LessonZipValidation) => {
+    setValidation(result);
+    setParsedPackage(packageReadyForImport(result) ? result : null);
+  }, []);
+
+  async function resolveImportPackage(): Promise<LessonZipValidation | null> {
+    if (packageReadyForImport(parsedPackage)) {
+      return parsedPackage;
+    }
+
+    if (!file) {
+      return null;
+    }
+
+    const reparsed = await parseZip(file);
+    storeParsedPackage(reparsed);
+    return packageReadyForImport(reparsed) ? reparsed : null;
+  }
 
   async function handleParse() {
     if (!file) {
@@ -95,7 +128,7 @@ export function LessonZipImportClient({
 
     try {
       const result = await parseZip(file);
-      setValidation(result);
+      storeParsedPackage(result);
 
       const errorMessages = result.wrongImporter
         ? []
@@ -111,6 +144,7 @@ export function LessonZipImportClient({
     } catch {
       setError("ZIP parse хийхэд алдаа гарлаа.");
       setValidation(null);
+      setParsedPackage(null);
     } finally {
       setBusy(null);
     }
@@ -121,24 +155,10 @@ export function LessonZipImportClient({
     setError(null);
 
     try {
-      let packageToImport = validation;
-
-      if (
-        !packageToImport?.ok ||
-        !packageToImport.importPayload ||
-        !packageToImport.preview ||
-        !packageToImport.lesson
-      ) {
-        if (!file) {
-          setError("ZIP parse data missing. Please validate again.");
-          return;
-        }
-        packageToImport = await parseZip(file);
-        setValidation(packageToImport);
-        if (!packageToImport.ok) {
-          setError("Validation алдаатай — import хийх боломжгүй.");
-          return;
-        }
+      const packageToImport = await resolveImportPackage();
+      if (!packageToImport) {
+        setError("ZIP parse data missing. Please validate again.");
+        return;
       }
 
       const payload = buildImportDraftApiBody(packageToImport, {
@@ -239,10 +259,7 @@ export function LessonZipImportClient({
   const lessonId = importResult?.lessonId ?? validation?.preview?.lessonId;
   const wrongImporter = validation?.wrongImporter;
   const canImport =
-    !wrongImporter &&
-    validation?.ok &&
-    (validation.errors.length ?? 0) === 0 &&
-    Boolean(validation.importPayload);
+    !wrongImporter && packageReadyForImport(parsedPackage ?? validation);
   const importComplete = Boolean(importResult?.ok && lessonId);
   const showKoreanCourseSql =
     showCourseSetupHint &&
@@ -307,6 +324,7 @@ export function LessonZipImportClient({
             const next = event.target.files?.[0] ?? null;
             setFile(next);
             setValidation(null);
+            setParsedPackage(null);
             setImportResult(null);
             setError(null);
           }}

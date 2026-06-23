@@ -25,7 +25,6 @@ import {
 import {
   isChineseHskManifestRaw,
   attachCharactersFileToLesson,
-  mergeHskProfileIntoSourceNote,
   normalizeChineseHskManifest,
   normalizeChineseHskVocabularyRow,
   type ChineseHskManifest,
@@ -41,6 +40,7 @@ import {
 } from "@/lib/lesson/hsk-package-media";
 import type { TeachingImageRef } from "@/lib/lesson/teaching-media";
 import { isJsonSourceNote } from "@/lib/lesson/source-note-json";
+import { resolveChineseHskSourceNoteForValidation } from "@/lib/import/chinese-hsk-source-note";
 
 async function readJsonFile(
   zip: JSZip,
@@ -380,27 +380,65 @@ export async function parseChineseHskLessonZip(file: File): Promise<LessonZipVal
         lesson.thumbnailFile = heroThumbnailFile;
       }
 
-      lesson.sourceNote = mergeHskProfileIntoSourceNote(
-        undefined,
-        hskManifest,
-        hskValidation.meta,
+      const resolved = resolveChineseHskSourceNoteForValidation(
         {
-          lessonJson: rawFiles.lesson,
-          audioManifest: rawFiles.audioManifest,
-          studyContent: rawFiles.studyContent,
-          rawFiles,
+          ok: errors.length === 0,
+          manifest,
+          lesson,
+          importContext,
+          vocabulary,
+          quizQuestions,
+          subtitles,
+          mediaFiles,
+          warnings,
+          errors,
+          preview: null,
+          importPayload: null,
+          contentValidation: null,
+          hskProfile: hskManifest.lessonProfile,
+          hskMeta: hskValidation.meta,
+        },
+        {
           lessonType: importLessonType,
+          audioManifest: rawFiles.audioManifest,
         }
       );
+      lesson.sourceNote = resolved.sourceNote;
+      for (const message of resolved.warnings) {
+        if (!warnings.includes(message)) warnings.push(message);
+      }
       lesson.courseId = hskManifest.courseId;
       lesson.lessonType = importLessonType;
       lesson.status = "draft";
-
-      if (!isJsonSourceNote(lesson.sourceNote)) {
-        errors.push(
-          "Gold Standard HSK package must store JSON source_note with hskStudyContent — legacy text format is blocked."
-        );
+    } else if (lesson && hskManifest) {
+      const resolved = resolveChineseHskSourceNoteForValidation(
+        {
+          ok: errors.length === 0,
+          manifest,
+          lesson,
+          importContext,
+          vocabulary,
+          quizQuestions,
+          subtitles,
+          mediaFiles,
+          warnings,
+          errors,
+          preview: null,
+          importPayload: null,
+          contentValidation: null,
+          hskProfile: hskManifest.lessonProfile,
+          hskMeta: hskValidation.meta,
+        },
+        { lessonType: lesson.lessonType ?? hskManifest.lessonProfile }
+      );
+      lesson.sourceNote = resolved.sourceNote;
+      for (const message of resolved.warnings) {
+        if (!warnings.includes(message)) warnings.push(message);
       }
+      lesson.courseId = hskManifest.courseId;
+      lesson.lessonType =
+        lesson.lessonType ?? resolveHskImportLessonType(hskManifest, rawFiles.lesson);
+      lesson.status = "draft";
     }
 
     const pkg: LessonZipPackage & { hskMeta?: typeof hskValidation.meta } = {
@@ -457,6 +495,7 @@ export async function parseChineseHskLessonZip(file: File): Promise<LessonZipVal
       contentValidation,
       info: hskValidation.info,
       hskProfile: hskManifest?.lessonProfile ?? null,
+      hskMeta: hskValidation.meta ?? null,
     };
   } catch {
     return {

@@ -60,23 +60,32 @@ function resolveStoredSourceNote(body: ImportDraftApiBody): {
       : "");
 
   if (body.importTrack === "chinese") {
-    if (!jsonCandidate || !isJsonSourceNote(jsonCandidate)) {
-      return {
-        sourceNote: "",
-        error:
-          "Chinese HSK import requires JSON source_note with hskStudyContent. Re-parse the ZIP and import again.",
-      };
+    if (jsonCandidate && isJsonSourceNote(jsonCandidate)) {
+      if (body.lessonType === "prelesson") {
+        return {
+          sourceNote: mergeJsonSourceNoteFields(jsonCandidate, {
+            lessonType: "prelesson",
+          }),
+        };
+      }
+      return { sourceNote: jsonCandidate };
     }
 
-    if (body.lessonType === "prelesson") {
-      return {
-        sourceNote: mergeJsonSourceNoteFields(jsonCandidate, {
-          lessonType: "prelesson",
-        }),
-      };
+    const plain = body.sourceNote?.trim();
+    if (plain) {
+      if (
+        body.lessonType === "prelesson" &&
+        !plain.includes("lessonType=prelesson") &&
+        !isJsonSourceNote(plain)
+      ) {
+        return { sourceNote: `${plain} · lessonType=prelesson` };
+      }
+      return { sourceNote: plain };
     }
 
-    return { sourceNote: jsonCandidate };
+    return {
+      sourceNote: `ZIP package import (${body.packageVersion ?? "1.0"})`,
+    };
   }
 
   const sourceNoteBase =

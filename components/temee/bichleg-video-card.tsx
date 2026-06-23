@@ -22,10 +22,47 @@ type Props = {
   hskLevel?: number | null;
   progressPct?: number;
   progressLabel?: string;
-  /** Catalog row for series picker; stack for episode list. */
+  /** Catalog card for series picker; stack for episode list. */
   layout?: "catalog" | "stack";
   showProgressBar?: boolean;
 };
+
+function ThumbArea({
+  showCover,
+  coverUrl,
+  grad,
+  hanzi,
+  onCoverError,
+  largeHanzi = false,
+}: {
+  showCover: boolean;
+  coverUrl: string;
+  grad: string;
+  hanzi: string;
+  onCoverError: () => void;
+  largeHanzi?: boolean;
+}) {
+  return (
+    <div
+      className={`bs-tm-video-thumb${largeHanzi ? " bs-tm-video-thumb--hero" : ""}`}
+      style={showCover ? undefined : { background: grad }}
+    >
+      {showCover ? (
+        // eslint-disable-next-line @next/next/no-img-element
+        <img
+          src={coverUrl}
+          alt=""
+          className="bs-tm-video-thumb-img"
+          onError={onCoverError}
+        />
+      ) : (
+        <span className="bs-tm-video-hanzi hanzi" aria-hidden>
+          {hanzi}
+        </span>
+      )}
+    </div>
+  );
+}
 
 export function BichlegVideoCard({
   href,
@@ -43,7 +80,7 @@ export function BichlegVideoCard({
 }: Props) {
   const [coverFailed, setCoverFailed] = useState(false);
   const grad = THUMB_GRADS[thumbIndex % THUMB_GRADS.length];
-  const showCover = coverUrl && !coverFailed;
+  const showCover = Boolean(coverUrl && !coverFailed);
   const pct =
     progressPct != null ? Math.min(100, Math.max(0, progressPct)) : 0;
   const isCatalog = layout === "catalog";
@@ -54,75 +91,60 @@ export function BichlegVideoCard({
         href={href}
         className="bs-tm-video-card bs-tm-video-card--catalog"
       >
-        <div className="bs-tm-video-row">
-          <div
-            className="bs-tm-video-thumb-sm"
-            style={showCover ? undefined : { background: grad }}
-          >
-            {showCover ? (
-              // eslint-disable-next-line @next/next/no-img-element
-              <img
-                src={coverUrl}
-                alt=""
-                className="bs-tm-video-thumb-img"
-                onError={() => setCoverFailed(true)}
-              />
-            ) : (
-              <span className="bs-tm-video-hanzi hanzi" aria-hidden>
-                {hanzi}
-              </span>
-            )}
-          </div>
-          <div className="bs-tm-video-info">
-            <p className="bs-tm-video-title">{titleMn}</p>
-            {titleZh ? (
-              <p className="bs-tm-video-zh hanzi">{titleZh}</p>
-            ) : null}
-            <div className="bs-tm-video-tags">
-              {episodeBadge ? (
-                <span className="bs-tm-video-tag">{episodeBadge}</span>
-              ) : null}
-              {hskLevel != null ? (
-                <span className="bs-tm-video-tag bs-tm-video-tag--hsk">
-                  HSK {hskLevel}
-                </span>
-              ) : null}
-            </div>
-          </div>
-          <span className="bs-tm-video-chev" aria-hidden>›</span>
+        <div className="bs-tm-video-hero">
+          <ThumbArea
+            showCover={showCover}
+            coverUrl={coverUrl ?? ""}
+            grad={grad}
+            hanzi={hanzi}
+            onCoverError={() => setCoverFailed(true)}
+            largeHanzi
+          />
+          <span className="bs-tm-video-play" aria-hidden>
+            ▶
+          </span>
+          {hskLevel != null ? (
+            <span className="bs-tm-video-badge bs-tm-video-badge--hsk">
+              HSK {hskLevel}
+            </span>
+          ) : null}
+          {episodeBadge ? (
+            <span className="bs-tm-video-badge bs-tm-video-badge--ep">
+              {episodeBadge}
+            </span>
+          ) : null}
         </div>
-        {showProgressBar && progressLabel ? (
-          <div className="bs-tm-video-progress">
-            <p className="bs-tm-video-progress-label">{progressLabel}</p>
-            <div className="bs-tm-video-progress-track">
-              <i style={{ width: `${pct}%` }} />
+        <div className="bs-tm-video-body">
+          <p className="bs-tm-video-title">{titleMn}</p>
+          {titleZh ? (
+            <p className="bs-tm-video-zh hanzi">{titleZh}</p>
+          ) : null}
+          {showProgressBar && progressLabel ? (
+            <div className="bs-tm-video-progress bs-tm-video-progress--inline">
+              <div className="bs-tm-video-progress-track">
+                <i style={{ width: `${pct}%` }} />
+              </div>
+              <p className="bs-tm-video-progress-label">{progressLabel}</p>
             </div>
-          </div>
-        ) : null}
+          ) : null}
+        </div>
       </Link>
     );
   }
 
   return (
     <Link href={href} className="bs-tm-video-card bs-tm-video-card--stack">
-      <div
-        className="bs-tm-video-thumb"
-        style={showCover ? undefined : { background: grad }}
-      >
-        {showCover ? (
-          // eslint-disable-next-line @next/next/no-img-element
-          <img
-            src={coverUrl}
-            alt=""
-            className="bs-tm-video-thumb-img"
-            onError={() => setCoverFailed(true)}
-          />
-        ) : (
-          <span className="bs-tm-video-hanzi hanzi" aria-hidden>
-            {hanzi}
-          </span>
-        )}
-        <span className="bs-tm-video-play" aria-hidden>▶</span>
+      <div className="bs-tm-video-hero">
+        <ThumbArea
+          showCover={showCover}
+          coverUrl={coverUrl ?? ""}
+          grad={grad}
+          hanzi={hanzi}
+          onCoverError={() => setCoverFailed(true)}
+        />
+        <span className="bs-tm-video-play" aria-hidden>
+          ▶
+        </span>
       </div>
       <div className="bs-tm-video-body">
         <p className="bs-tm-video-title">{titleMn}</p>

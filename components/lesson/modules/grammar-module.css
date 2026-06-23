@@ -283,11 +283,11 @@
   background: #fff;
 }
 /* ------------------------------------------------------------------ */
-/* Grammar v2 — prototype layout (Onest + Noto Sans SC, brand green)   */
+/* Grammar v2 — prototype layout (Nunito + Noto Sans SC, brand green)   */
 /* ------------------------------------------------------------------ */
 
 .bs-gr2 {
-  font-family: var(--bs-ui), "Onest", system-ui, sans-serif;
+  font-family: var(--bs-ui), "Nunito", system-ui, sans-serif;
 }
 
 .bs-gr2-point {

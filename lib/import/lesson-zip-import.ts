@@ -80,6 +80,8 @@ export type LessonZipValidation = LessonZipPackage & {
   wrongImporter?: WrongImporterMismatch;
   /** HSK profile id when chinese-hsk package detected. */
   hskProfile?: string | null;
+  /** Chinese HSK section inventory from parse (for source_note rebuild). */
+  hskMeta?: import("@/lib/import/chinese-hsk-normalize").ChineseHskPackageMeta | null;
 };
 
 function emptyLessonZipValidation(

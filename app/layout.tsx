@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Geist_Mono, Noto_Sans_SC, Onest } from "next/font/google";
+import { Geist_Mono, Noto_Sans_SC, Nunito } from "next/font/google";
 import { LearnerLanguageGuard } from "@/components/learner-language-guard";
 import { AppProviders } from "@/components/providers/app-providers";
 import { PwaServiceWorkerRegister } from "@/components/pwa-service-worker-register";
@@ -7,8 +7,8 @@ import "./globals.css";
 import "./buunduu-theme.css";
 import "@/components/temee/temee-redesign.css";
 
-const onest = Onest({
-  variable: "--font-onest",
+const nunito = Nunito({
+  variable: "--font-nunito",
   subsets: ["latin", "cyrillic", "cyrillic-ext"],
   weight: ["400", "500", "600", "700", "800"],
   display: "swap",
@@ -94,7 +94,7 @@ export default function RootLayout({
   return (
     <html
       lang="mn"
-      className={`${onest.variable} ${notoSansSc.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${nunito.variable} ${notoSansSc.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col font-sans">
         <AppProviders>
