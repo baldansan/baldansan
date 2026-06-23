@@ -202,7 +202,7 @@ export function ProfileSrsStats({
           <span className="bs-tm-card-ic bs-tm-card-ic--purple" aria-hidden>
             🎯
           </span>
-          <span className="flex-1">
+          <span className="bs-tm-card-body">
             <span className="bs-tm-card-title">Утга сонгох тоглоом</span>
             <span className="bs-tm-card-sub">Тоглоомын хэсэг</span>
           </span>
