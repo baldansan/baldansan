@@ -5,6 +5,7 @@ import {
   buildDecompositionParts,
   componentDisplayIcon,
   componentDisplayLabel,
+  getCharBreakdownEntry,
   getCharBreakdownView,
   type CharBreakdownView,
 } from "@/lib/hanzi/char-breakdown-data";
@@ -13,9 +14,68 @@ import {
   getServerFullBreakdownEntry,
   getServerFullComponentMn,
 } from "@/lib/hanzi/char-breakdown-full-server";
-import type { HskWord } from "@/lib/hsk";
+import {
+  getSingleCharWordsByGlyphs,
+  isSingleHanziWordText,
+  type HskWord,
+} from "@/lib/hsk";
 
 const HANZI_RE = /[\u4e00-\u9fff]/;
+
+function hanziGlyphs(text: string): string[] {
+  return [...text.trim()].filter((ch) => HANZI_RE.test(ch));
+}
+
+type CharDisplayMeta = { pinyin: string; meaningMn: string };
+
+function pinyinSyllableFromMultiCharWord(
+  word: HskWord,
+  charIndex: number
+): string | null {
+  const zh = word.simplified?.trim();
+  const py = word.pinyin?.trim();
+  if (!zh || !py) return null;
+  const glyphs = hanziGlyphs(zh);
+  if (glyphs.length <= 1) return null;
+  const syllables = py.split(/\s+/).filter(Boolean);
+  if (syllables.length !== glyphs.length) return null;
+  return syllables[charIndex]?.trim() || null;
+}
+
+/** Per-glyph pinyin/meaning — never the parent multi-char word's full gloss. */
+function resolveCharDisplayMeta(
+  char: string,
+  word: HskWord,
+  charIndex: number,
+  singleCharMap: Map<string, HskWord>
+): CharDisplayMeta {
+  const catalogChar = singleCharMap.get(char);
+  if (catalogChar) {
+    return {
+      pinyin: catalogChar.pinyin?.trim() || "—",
+      meaningMn: catalogChar.meaning_mn?.trim() || char,
+    };
+  }
+
+  if (
+    isSingleHanziWordText(word.simplified) &&
+    word.simplified!.trim() === char
+  ) {
+    return {
+      pinyin: word.pinyin?.trim() || "—",
+      meaningMn: word.meaning_mn?.trim() || char,
+    };
+  }
+
+  const componentLabel = componentDisplayLabel(char);
+  const etymology = getCharBreakdownEntry(char)?.etymology_mn?.trim();
+  const syllable = pinyinSyllableFromMultiCharWord(word, charIndex);
+
+  return {
+    pinyin: syllable || "—",
+    meaningMn: componentLabel || etymology || char,
+  };
+}
 const DISTRACTOR_POOL = challengeData.distractors as string[];
 
 function pickDistractorGlyphs(
@@ -147,23 +207,42 @@ export async function buildRadicalEntriesFromWords(
 ): Promise<RadicalGameEntry[]> {
   const base: RadicalGameEntry[] = [];
   const seenChars = new Set<string>();
+  const candidateByChar = new Map<
+    string,
+    { char: string; word: HskWord; charIndex: number }
+  >();
 
   for (const word of words) {
     const zh = word.simplified?.trim();
     if (!zh) continue;
-    const meaning = word.meaning_mn?.trim() || word.simplified;
-    const pinyin = word.pinyin?.trim() || "—";
-    const chars = [...zh].filter((ch) => HANZI_RE.test(ch));
+    const chars = hanziGlyphs(zh);
+    const fromSingleCharWord = chars.length === 1;
 
-    for (const char of chars) {
-      if (seenChars.has(char)) continue;
-      const view = await resolvePlayableCharView(char, word.radical);
-      if (!view) continue;
-      const entry = entryFromView(view, pinyin, meaning);
-      if (!entry) continue;
-      seenChars.add(char);
-      base.push(entry);
+    for (let i = 0; i < chars.length; i++) {
+      const char = chars[i]!;
+      const existing = candidateByChar.get(char);
+      if (
+        !existing ||
+        (fromSingleCharWord && !isSingleHanziWordText(existing.word.simplified))
+      ) {
+        candidateByChar.set(char, { char, word, charIndex: i });
+      }
     }
+  }
+
+  const singleCharMap = await getSingleCharWordsByGlyphs([
+    ...candidateByChar.keys(),
+  ]);
+
+  for (const { char, word, charIndex } of candidateByChar.values()) {
+    if (seenChars.has(char)) continue;
+    const view = await resolvePlayableCharView(char, word.radical);
+    if (!view) continue;
+    const meta = resolveCharDisplayMeta(char, word, charIndex, singleCharMap);
+    const entry = entryFromView(view, meta.pinyin, meta.meaningMn);
+    if (!entry) continue;
+    seenChars.add(char);
+    base.push(entry);
   }
 
   return expandEntryList(base, minSize, maxSize);
