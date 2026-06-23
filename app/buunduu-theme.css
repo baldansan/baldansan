@@ -316,31 +316,37 @@ body{
 .bs-study-plan-title{margin:0;font-size:22px;font-weight:800;color:var(--bs-ink)}
 .bs-study-plan-sub{margin:6px 0 0;font-size:13px;font-weight:600;color:var(--bs-muted)}
 .bs-study-plan-section{margin-bottom:20px}
-.bs-study-plan-section-title{margin:0 0 10px;font-size:14px;font-weight:800;color:var(--bs-ink)}
-.bs-study-plan-tasks{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:10px}
-.bs-study-plan-task{display:flex;align-items:center;gap:12px;padding:14px 16px;border-radius:16px;background:#fff;border:1px solid var(--bs-line);text-decoration:none;transition:border-color .15s ease,box-shadow .15s ease}
-.bs-study-plan-task:active{transform:scale(.99)}
-.bs-study-plan-task--done{border-color:#bbf7d0;background:#f0fdf4}
-.bs-study-plan-task-emoji{font-size:22px;line-height:1;flex-shrink:0}
-.bs-study-plan-task-body{display:flex;flex-direction:column;gap:2px;min-width:0;flex:1}
-.bs-study-plan-task-title{font-size:14px;font-weight:800;color:var(--bs-ink)}
-.bs-study-plan-task-sub{font-size:12px;font-weight:600;color:var(--bs-muted);line-height:1.35}
-.bs-study-plan-task--done .bs-study-plan-task-sub{color:var(--bs-green-700)}
-.bs-study-plan-task-arrow{font-size:16px;font-weight:800;color:var(--bs-green);flex-shrink:0}
-.bs-study-plan-week-head{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:10px}
-.bs-study-plan-week-head .bs-study-plan-section-title{margin:0}
-.bs-study-plan-streak{font-size:12px;font-weight:800;color:#ea580c}
-.bs-study-plan-week{display:flex;justify-content:space-between;gap:6px;padding:14px 12px;border-radius:16px;background:#fff;border:1px solid var(--bs-line)}
-.bs-study-plan-day{display:flex;flex-direction:column;align-items:center;gap:6px;flex:1;min-width:0}
-.bs-study-plan-day-dot{width:10px;height:10px;border-radius:999px;background:#e7f0ea}
-.bs-study-plan-day-dot--on{background:#1FB85A}
-.bs-study-plan-day--today .bs-study-plan-day-dot{box-shadow:0 0 0 3px rgba(31,184,90,.2)}
-.bs-study-plan-day-label{font-size:10px;font-weight:700;color:var(--bs-muted)}
-.bs-study-plan-day--today .bs-study-plan-day-label{color:var(--bs-green-700)}
-.bs-study-plan-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
-.bs-study-plan-stat{padding:12px 10px;border-radius:16px;background:#fff;border:1px solid var(--bs-line);text-align:center}
-.bs-study-plan-stat-value{margin:0;font-size:18px;font-weight:800;color:var(--bs-green-700)}
-.bs-study-plan-stat-label{margin:4px 0 0;font-size:10px;font-weight:700;color:var(--bs-muted);line-height:1.3}
+.bs-study-plan-section-title{margin:0 0 12px;font-size:14px;font-weight:800;color:var(--bs-ink)}
+.bs-study-plan-goal-card{margin-bottom:20px;padding:16px;border-radius:20px;background:#fff;border:1px solid var(--bs-line)}
+.bs-study-plan-goal-top{display:flex;align-items:center;gap:12px}
+.bs-study-plan-goal-copy{min-width:0;flex:1}
+.bs-study-plan-goal-title{margin:0;font-size:15px;font-weight:800;color:var(--bs-ink)}
+.bs-study-plan-goal-msg{margin:4px 0 0;font-size:13px;font-weight:600;color:var(--bs-muted);line-height:1.4}
+.bs-study-plan-rings{display:flex;justify-content:space-between;gap:8px;margin-top:14px}
+.bs-study-plan-ring{display:flex;flex-direction:column;align-items:center;gap:6px;flex:1;min-width:0}
+.bs-study-plan-ring-chart{position:relative;display:grid;place-items:center}
+.bs-study-plan-ring-value{position:absolute;font-size:11px;font-weight:800;color:var(--bs-ink);line-height:1}
+.bs-study-plan-ring-label{font-size:10px;font-weight:700;color:var(--bs-muted);text-align:center}
+.bs-study-plan-source{margin:12px 0 0;font-size:11px;font-weight:600;color:var(--bs-muted)}
+.bs-study-plan-timeline{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:0}
+.bs-study-plan-timeline-item{display:grid;grid-template-columns:36px minmax(0,1fr);gap:10px;position:relative}
+.bs-study-plan-timeline-item:not(:last-child) .bs-study-plan-timeline-rail::after{content:"";position:absolute;left:17px;top:34px;bottom:-6px;width:2px;background:#e7f0ea}
+.bs-study-plan-timeline-item--future{opacity:.55}
+.bs-study-plan-timeline-rail{position:relative;display:flex;justify-content:center;padding-top:4px}
+.bs-study-plan-timeline-marker{width:34px;height:34px;border-radius:999px;display:grid;place-items:center;background:#fff;border:2px solid #e7f0ea;color:var(--bs-green-700);flex-shrink:0}
+.bs-study-plan-timeline-marker--done{background:#1FB85A;border-color:#1FB85A;color:#fff}
+.bs-study-plan-timeline-marker--today{background:#fff;border-color:#1FB85A;color:#1FB85A}
+.bs-study-plan-timeline-icon{width:16px;height:16px}
+.bs-study-plan-timeline-check{font-size:14px;font-weight:800;line-height:1}
+.bs-study-plan-timeline-body{padding-bottom:12px;min-width:0}
+.bs-study-plan-day-card,.bs-study-plan-today-card{display:flex;flex-direction:column;gap:2px;padding:12px 14px;border-radius:16px;text-decoration:none;min-width:0}
+.bs-study-plan-day-card{background:#fff;border:1px solid var(--bs-line)}
+.bs-study-plan-day-label{font-size:11px;font-weight:700;color:var(--bs-muted)}
+.bs-study-plan-day-task{font-size:14px;font-weight:800;color:var(--bs-ink);line-height:1.35}
+.bs-study-plan-today-card{background:#1FB85A;border:1px solid #1FB85A;color:#fff;position:relative;padding-right:88px}
+.bs-study-plan-today-label{font-size:11px;font-weight:700;color:rgba(255,255,255,.9)}
+.bs-study-plan-today-task{font-size:14px;font-weight:800;color:#fff;line-height:1.35}
+.bs-study-plan-today-cta{position:absolute;right:14px;top:50%;transform:translateY(-50%);font-size:13px;font-weight:800;color:#fff;white-space:nowrap}
 .bs-study-plan-login-btn{display:inline-flex;min-height:44px;align-items:center;justify-content:center;margin-top:16px;padding:0 24px;border-radius:999px;background:#1FB85A;color:#fff;font-size:14px;font-weight:800;text-decoration:none}
 .bs-study-plan-signup-link{display:inline-block;margin-top:12px;font-size:13px;font-weight:700;color:var(--bs-green-700);text-decoration:none}
 .bs-review-hub-icon-svg{width:22px;height:22px}

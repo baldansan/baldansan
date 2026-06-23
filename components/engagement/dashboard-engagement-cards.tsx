@@ -83,7 +83,7 @@ export function DashboardEngagementQuickActions() {
   const links = [
     { href: "/reminders", label: "Study reminders" },
     { href: "/weekly-report", label: "Weekly report" },
-    { href: "/study-plan", label: "Study plan" },
+    { href: "/study-plan", label: "Сурах төлөвлөгөө" },
     { href: "/notifications", label: "Notifications" },
   ];
 

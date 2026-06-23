@@ -53,9 +53,23 @@ export function writeStoredActiveHskLevel(level: ActiveHskLevel): void {
   if (typeof window === "undefined") return;
   try {
     window.localStorage.setItem(ACTIVE_HSK_LEVEL_KEY, String(level));
+    document.cookie = `${ACTIVE_HSK_LEVEL_KEY}=${encodeURIComponent(String(level))};path=/;max-age=31536000;SameSite=Lax`;
   } catch {
     // ignore
   }
+}
+
+/** Server components: cookie (localStorage mirror) → default HSK 4. */
+export function resolveServerActiveHskLevel(
+  cookieValue: string | undefined | null
+): ActiveHskLevel {
+  return parseActiveHskLevel(cookieValue) ?? 4;
+}
+
+export function primaryCourseIdForActiveLevel(level: ActiveHskLevel): string {
+  if (level === 5) return "hsk5";
+  if (level === 6 || level === "7-9") return "hsk6";
+  return "hsk4";
 }
 
 /** Parse drkameleon / hsk_words level tags into numeric HSK levels. */
