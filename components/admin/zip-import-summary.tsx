@@ -143,7 +143,7 @@ export function ZipImportSummary({ preview, validation, track = "legacy" }: Prop
     ...buildExtraInfo(preview, validation, track),
     ...(hskPreview && !hskPreview.storesJsonSourceNote
       ? [
-          "Critical: Gold Standard HSK packages must store JSON source_note with hskStudyContent.",
+          "Note: legacy text source_note (no hskStudyContent JSON). Import still allowed; vocabulary/quiz load from ZIP tables.",
         ]
       : []),
   ];

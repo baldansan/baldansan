@@ -1,7 +1,7 @@
 /* HSK 3.0 дүрэм — hsk30-durem-hsk1-prototype.html */
 
 .hsk30-pt {
-  font-family: var(--bs-ui, "Onest"), system-ui, sans-serif;
+  font-family: var(--bs-ui, "Nunito"), system-ui, sans-serif;
   color: #13241b;
   line-height: 1.55;
 }

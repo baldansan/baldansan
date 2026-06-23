@@ -29,7 +29,7 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-onest);
+  --font-sans: var(--font-nunito);
   --font-mono: var(--font-geist-mono);
   --font-zh: var(--font-noto-sc);
 }
@@ -41,7 +41,7 @@ html {
 body {
   /* Background + gradient: app/buunduu-theme.css */
   color: var(--bs-ink, var(--foreground));
-  font-family: var(--bs-ui, var(--font-onest), "Segoe UI", system-ui, sans-serif);
+  font-family: var(--bs-ui, var(--font-nunito), "Nunito", system-ui, sans-serif);
   overflow-x: hidden;
   max-width: 100vw;
 }

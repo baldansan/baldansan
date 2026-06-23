@@ -13,14 +13,12 @@ type Props = {
   seriesList: VideoSeriesCard[];
   orphanCount: number;
   seriesProgress?: Record<string, SeriesWatchProgress>;
-  showProgress?: boolean;
 };
 
 export function BichlegSeriesPickerClient({
   seriesList,
   orphanCount,
   seriesProgress = {},
-  showProgress = false,
 }: Props) {
   return (
     <MobileAppShell activeTab="clips" mainClassName={SHELL_MAIN_NARROW}>
@@ -74,13 +72,9 @@ export function BichlegSeriesPickerClient({
                 coverUrl={resolveSeriesThumbnailUrl(series)}
                 episodeBadge={`${series.videoCount} анги`}
                 hskLevel={series.hsk_level}
-                showProgressBar={showProgress}
-                progressPct={showProgress ? pct : undefined}
-                progressLabel={
-                  showProgress
-                    ? `${watchedCount}/${totalCount} анги үзсэн`
-                    : undefined
-                }
+                showProgressBar
+                progressPct={pct}
+                progressLabel={`${watchedCount}/${totalCount} анги үзсэн`}
               />
             );
           })}

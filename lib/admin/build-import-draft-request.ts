@@ -1,5 +1,6 @@
 import type { LessonZipValidation } from "@/lib/import/lesson-zip-import";
 import type { LessonImportPayload } from "@/lib/supabase/admin-import";
+import { resolveChineseHskSourceNoteForValidation } from "@/lib/import/chinese-hsk-source-note";
 import {
   isJsonSourceNote,
   mergeJsonSourceNoteFields,
@@ -34,7 +35,7 @@ export type ImportDraftApiBody = {
 
 function resolveImportSourceNote(
   validation: LessonZipValidation,
-  importTrack?: ImportDraftApiBody["importTrack"]
+  _importTrack?: ImportDraftApiBody["importTrack"]
 ): string | null {
   const fromLesson = validation.lesson?.sourceNote?.trim();
   if (fromLesson && isJsonSourceNote(fromLesson)) {
@@ -57,10 +58,6 @@ function resolveImportSourceNote(
   const manifestSource = validation.manifest?.source?.trim();
   if (manifestSource && isJsonSourceNote(manifestSource)) {
     return manifestSource;
-  }
-
-  if (importTrack === "chinese" || validation.hskProfile) {
-    return null;
   }
 
   const fallbackBase =
@@ -108,7 +105,23 @@ export function buildImportDraftApiBody(
   const allowAutoCreateCourse =
     options?.allowAutoCreateCourse ?? track !== "korean";
 
-  const sourceNote = resolveImportSourceNote(validation, track);
+  const lessonTypeForNote =
+    validation.hskProfile ??
+    validation.lesson?.lessonType ??
+    (validation.manifest as { lessonType?: string } | null)?.lessonType ??
+    null;
+
+  let sourceNote: string | null;
+  let resolutionWarnings: string[] = [];
+  if (track === "chinese" || validation.hskProfile) {
+    const resolved = resolveChineseHskSourceNoteForValidation(validation, {
+      lessonType: lessonTypeForNote,
+    });
+    sourceNote = resolved.sourceNote;
+    resolutionWarnings = resolved.warnings;
+  } else {
+    sourceNote = resolveImportSourceNote(validation, track);
+  }
 
   const lessonType =
     (validation.manifest as { lessonType?: string } | null)?.lessonType ??
@@ -118,10 +131,6 @@ export function buildImportDraftApiBody(
 
   const hskSourceNoteJson =
     sourceNote && isJsonSourceNote(sourceNote) ? sourceNote : null;
-
-  if (track === "chinese" && !hskSourceNoteJson) {
-    return null;
-  }
 
   return {
     courseId,
@@ -149,7 +158,7 @@ export function buildImportDraftApiBody(
     lessonType,
     importedFromZip: true,
     importPayload: validation.importPayload,
-    warnings: validation.warnings,
+    warnings: [...validation.warnings, ...resolutionWarnings],
     importTrack: track,
     allowAutoCreateCourse,
   };
