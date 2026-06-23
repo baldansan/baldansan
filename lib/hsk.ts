@@ -127,6 +127,52 @@ export async function getQuizWordPool(
   return words;
 }
 
+const HANZI_GLYPH_RE = /[\u4e00-\u9fff]/;
+
+/** True when simplified is exactly one CJK character (ignores whitespace). */
+export function isSingleHanziWordText(text: string | null | undefined): boolean {
+  const zh = text?.trim();
+  if (!zh) return false;
+  const glyphs = [...zh].filter((ch) => HANZI_GLYPH_RE.test(ch));
+  return glyphs.length === 1 && glyphs[0] === zh;
+}
+
+/** Lookup catalog rows where simplified is a single hanzi (e.g. 代, not 代表). */
+export async function getSingleCharWordsByGlyphs(
+  glyphs: string[]
+): Promise<Map<string, HskWord>> {
+  const supabase = catalogClient();
+  const unique = [...new Set(glyphs.map((g) => g.trim()).filter(Boolean))];
+  const map = new Map<string, HskWord>();
+  if (!supabase || unique.length === 0) return map;
+
+  for (let i = 0; i < unique.length; i += 200) {
+    const chunk = unique.slice(i, i + 200);
+    const { data, error } = await supabase
+      .from("hsk_words")
+      .select(QUIZ_WORD_SELECT)
+      .in("simplified", chunk)
+      .eq("is_function_word", false);
+
+    if (error) {
+      throw new Error(`getSingleCharWordsByGlyphs: ${error.message}`);
+    }
+
+    for (const row of (data ?? []) as HskWord[]) {
+      const zh = row.simplified?.trim();
+      if (!zh || !isSingleHanziWordText(zh)) continue;
+      const existing = map.get(zh);
+      const freq = row.frequency ?? Number.MAX_SAFE_INTEGER;
+      const existingFreq = existing?.frequency ?? Number.MAX_SAFE_INTEGER;
+      if (!existing || freq < existingFreq) {
+        map.set(zh, row);
+      }
+    }
+  }
+
+  return map;
+}
+
 /** Fetch words by id list (for SRS marathon). */
 export async function getWordsByIds(ids: number[]): Promise<HskWord[]> {
   const supabase = catalogClient();
