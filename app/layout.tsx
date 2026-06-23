@@ -9,7 +9,7 @@ import "@/components/temee/temee-redesign.css";
 
 const onest = Onest({
   variable: "--font-onest",
-  subsets: ["latin", "cyrillic"],
+  subsets: ["latin", "cyrillic", "cyrillic-ext"],
   weight: ["400", "500", "600", "700", "800"],
   display: "swap",
 });
