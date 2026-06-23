@@ -289,7 +289,7 @@ export function ReviewMenuHubClient({
           <span className="bs-tm-card-ic bs-tm-card-ic--green" aria-hidden>
             📅
           </span>
-          <span className="flex-1 min-w-0">
+          <span className="bs-tm-card-body">
             <span className="bs-tm-card-title">Сурах төлөвлөгөө</span>
             <span className="bs-tm-card-sub">Хичээл, давталт, бичлэг</span>
           </span>
@@ -301,7 +301,7 @@ export function ReviewMenuHubClient({
             <span className="bs-tm-card-ic bs-tm-card-ic--blue" aria-hidden>
               📺
             </span>
-            <span className="flex-1 min-w-0">
+            <span className="bs-tm-card-body">
               <span className="bs-tm-card-title">Бичлэг үргэлжлүүлэх</span>
               <span className="bs-tm-card-sub">
                 {bichlegContinue.title} · {bichlegContinue.subtitle}
@@ -315,7 +315,7 @@ export function ReviewMenuHubClient({
           <span className="bs-tm-card-ic bs-tm-card-ic--blue" aria-hidden>
             💡
           </span>
-          <span className="flex-1 min-w-0">
+          <span className="bs-tm-card-body">
             <span className="bs-tm-card-title">Бүх HSK үг</span>
             <span className="bs-tm-card-sub">{memorizeStatus}</span>
           </span>
@@ -326,7 +326,7 @@ export function ReviewMenuHubClient({
           <span className="bs-tm-card-ic bs-tm-card-ic--purple" aria-hidden>
             📝
           </span>
-          <span className="flex-1 min-w-0">
+          <span className="bs-tm-card-body">
             <span className="bs-tm-card-title">HSK бэлтгэл</span>
             <span className="bs-tm-card-sub">{testStatus}</span>
           </span>
@@ -341,7 +341,7 @@ export function ReviewMenuHubClient({
           <span className="bs-tm-card-ic bs-tm-card-ic--green" aria-hidden>
             🧩
           </span>
-          <span className="flex-1 min-w-0">
+          <span className="bs-tm-card-body">
             <span className="bs-tm-card-title">Өгүүлбэрийн бүтэц</span>
             <span className="bs-tm-card-sub">
               {helzuiModuleCount} модуль · суурь
@@ -354,7 +354,7 @@ export function ReviewMenuHubClient({
           <span className="bs-tm-card-ic bs-tm-card-ic--red" aria-hidden>
             📚
           </span>
-          <span className="flex-1 min-w-0">
+          <span className="bs-tm-card-body">
             <span className="bs-tm-card-title">HSK 3.0 дүрэм</span>
             <span className="bs-tm-card-sub">
               {hsk30LevelCount} түвшин · {hsk30PointCount} цэг
