@@ -32,7 +32,9 @@ import {
   resolveLessonHskLevel,
 } from "@/lib/hsk/active-hsk-level";
 import { HelzuiHomeCard } from "@/components/helzui/helzui-home-card";
+import { ZahialgaHomeCard } from "@/components/zahialga/zahialga-home-card";
 import "@/components/helzui/helzui-course.css";
+import "@/components/zahialga/zahialga.css";
 import type { LessonContent } from "@/types/lesson-content";
 
 type Props = {
@@ -185,6 +187,8 @@ export function HomeAppView({ catalog, defaultChipId }: Props) {
           </div>
         </div>
       </div>
+
+      <ZahialgaHomeCard />
 
       {!loggedIn ? (
         <Link

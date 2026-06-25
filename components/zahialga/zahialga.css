@@ -1,0 +1,92 @@
+/* Нүүр хуудасны онцолсон banner */
+.zah-home-banner {
+  position: relative;
+  display: block;
+  margin: 0 0 14px;
+  padding: 18px 16px 16px;
+  border-radius: 1rem;
+  text-decoration: none;
+  color: #fff;
+  background: linear-gradient(135deg, #fd5f20 0%, #e04f18 55%, #c2430d 100%);
+  box-shadow:
+    0 2px 4px rgba(194, 67, 13, 0.18),
+    0 10px 28px rgba(253, 95, 32, 0.28);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.zah-home-banner:hover {
+  transform: translateY(-1px);
+  box-shadow:
+    0 4px 8px rgba(194, 67, 13, 0.2),
+    0 14px 32px rgba(253, 95, 32, 0.32);
+}
+
+.zah-home-banner:active {
+  transform: translateY(0);
+}
+
+.zah-home-banner-badge {
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 3px 9px;
+  border-radius: 999px;
+  background: #f0efd8;
+  color: #c2430d;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+}
+
+.zah-home-banner-body {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.zah-home-banner-text {
+  min-width: 0;
+  flex: 1;
+}
+
+.zah-home-banner-title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  color: #fff;
+}
+
+.zah-home-banner-sub {
+  margin: 5px 0 0;
+  font-size: 12.5px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.zah-home-banner-action {
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  opacity: 0.95;
+}
+
+.zah-home-banner-icon {
+  font-size: 22px;
+  line-height: 1;
+}
+
+.zah-home-banner-chev {
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .zah-home-banner {
+    transition: none;
+  }
+}
