@@ -1,0 +1,741 @@
+/* Захиалгын сургалт — buunduu-surgalt.html дизайн (апп дотор scoped) */
+.zahialga-page {
+  --zah-cream: #f0efd8;
+  --zah-orange: #fd5f20;
+  --zah-orange-dark: #c2430d;
+  --zah-green: #018242;
+  --zah-green-dark: #016234;
+  --zah-ink: #2a2018;
+  --zah-muted: #7c7163;
+  --zah-card: #ffffff;
+  --zah-line: rgba(42, 32, 24, 0.12);
+  --zah-line-soft: rgba(42, 32, 24, 0.07);
+
+  padding: 0 2px 48px;
+  color: var(--zah-ink);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.zah-header {
+  padding: 8px 0 22px;
+}
+
+.zah-brand {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 26px;
+}
+
+.zah-brand-mark {
+  width: 30px;
+  height: 30px;
+  border-radius: 9px;
+  background: var(--zah-orange);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 18px;
+}
+
+.zah-brand-name {
+  font-weight: 800;
+  font-size: 16px;
+  letter-spacing: -0.01em;
+}
+
+.zah-brand-name span {
+  color: var(--zah-orange);
+}
+
+.zah-hero-title {
+  margin: 0;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+}
+
+.zah-hero-title em {
+  font-style: normal;
+  color: var(--zah-orange);
+}
+
+.zah-hero-sub {
+  margin-top: 12px;
+  color: var(--zah-muted);
+  font-size: 15.5px;
+  max-width: 30ch;
+}
+
+.zah-pick {
+  display: flex;
+  gap: 9px;
+  margin: 26px 0 8px;
+}
+
+.zah-ctry {
+  flex: 1;
+  border: 1.5px solid var(--zah-line);
+  border-radius: 16px;
+  padding: 13px 8px 11px;
+  text-align: center;
+  background: var(--zah-card);
+  cursor: pointer;
+  font-family: inherit;
+  transition:
+    transform 0.15s ease,
+    border-color 0.15s ease;
+}
+
+.zah-ctry:hover:not(:disabled) {
+  transform: translateY(-2px);
+}
+
+.zah-ctry[aria-selected="true"] {
+  border-color: var(--zah-orange);
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(253, 95, 32, 0.12);
+}
+
+.zah-ctry:disabled {
+  cursor: default;
+  opacity: 0.62;
+}
+
+.zah-ctry-flag {
+  font-size: 24px;
+  line-height: 1;
+  display: block;
+}
+
+.zah-ctry-label {
+  display: block;
+  font-weight: 800;
+  font-size: 14px;
+  margin-top: 7px;
+}
+
+.zah-ctry-sub {
+  display: block;
+  font-size: 11px;
+  color: var(--zah-muted);
+  margin-top: 1px;
+}
+
+.zah-soon {
+  display: inline-block;
+  margin-top: 5px;
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--zah-green-dark);
+  background: rgba(1, 130, 66, 0.12);
+  padding: 1px 7px;
+  border-radius: 20px;
+}
+
+.zah-panel-note {
+  font-size: 13px;
+  color: var(--zah-muted);
+  margin: 18px 2px 14px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.zah-panel-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--zah-green);
+  flex: none;
+}
+
+.zah-path {
+  position: relative;
+  margin-top: 4px;
+}
+
+.zah-lesson {
+  position: relative;
+  padding-left: 46px;
+  padding-bottom: 14px;
+}
+
+.zah-lesson:last-child {
+  padding-bottom: 0;
+}
+
+.zah-rail {
+  position: absolute;
+  left: 15px;
+  top: 30px;
+  bottom: -2px;
+  width: 0;
+  border-left: 2px dashed rgba(253, 95, 32, 0.35);
+}
+
+.zah-node {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 14px;
+  background: var(--zah-orange);
+  color: #fff;
+}
+
+.zah-lesson--locked .zah-node {
+  background: #fff;
+  border: 2px dashed var(--zah-line);
+  color: var(--zah-muted);
+}
+
+.zah-lock {
+  font-size: 13px;
+  line-height: 1;
+}
+
+.zah-lcard {
+  background: var(--zah-card);
+  border: 1px solid var(--zah-line);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.zah-lhead {
+  width: 100%;
+  border: none;
+  background: none;
+  cursor: pointer;
+  text-align: left;
+  padding: 14px 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--zah-ink);
+  font-family: inherit;
+}
+
+.zah-lhead--locked {
+  cursor: default;
+}
+
+.zah-ltitle {
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 1.25;
+  flex: 1;
+  display: block;
+}
+
+.zah-lsub {
+  display: block;
+  font-weight: 500;
+  font-size: 12.5px;
+  color: var(--zah-muted);
+  margin-top: 2px;
+}
+
+.zah-chev {
+  flex: none;
+  color: var(--zah-muted);
+  transition: transform 0.2s ease;
+}
+
+.zah-lesson--open .zah-chev {
+  transform: rotate(180deg);
+}
+
+.zah-tag-soon {
+  flex: none;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--zah-green-dark);
+  background: rgba(1, 130, 66, 0.1);
+  padding: 3px 9px;
+  border-radius: 20px;
+}
+
+.zah-lbody {
+  display: none;
+  padding: 2px 16px 18px;
+  border-top: 1px solid var(--zah-line-soft);
+}
+
+.zah-lesson--open .zah-lbody {
+  display: block;
+}
+
+.zah-body-p {
+  font-size: 14.5px;
+  margin-top: 12px;
+}
+
+.zah-lbody .zah-body-p:first-child {
+  margin-top: 14px;
+}
+
+.zah-strong {
+  font-weight: 700;
+  color: var(--zah-orange-dark);
+}
+
+.zah-body-h4 {
+  font-weight: 800;
+  font-size: 14px;
+  margin-top: 20px;
+  color: var(--zah-ink);
+}
+
+.zah-facts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9px;
+  margin-top: 14px;
+}
+
+.zah-fact {
+  background: var(--zah-cream);
+  border-radius: 12px;
+  padding: 11px 12px;
+}
+
+.zah-fact b {
+  display: block;
+  font-weight: 900;
+  font-size: 20px;
+  color: var(--zah-orange);
+}
+
+.zah-fact span {
+  display: block;
+  font-size: 11.5px;
+  color: var(--zah-muted);
+  margin-top: 1px;
+  line-height: 1.35;
+}
+
+.zah-steps {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.zah-step-head {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-weight: 800;
+  font-size: 12.5px;
+  line-height: 1.2;
+  margin-bottom: 7px;
+  min-height: 30px;
+}
+
+.zah-step-num {
+  flex: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--zah-orange);
+  color: #fff;
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.zah-phone {
+  background: #fff;
+  border: 1px solid var(--zah-line);
+  border-radius: 14px;
+  padding: 6px;
+}
+
+.zah-scr {
+  background: var(--zah-cream);
+  border-radius: 10px;
+  padding: 10px;
+  min-height: 124px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.zah-scr--end {
+  justify-content: flex-end;
+}
+
+.zah-scr--center {
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.zah-bar {
+  height: 24px;
+  border-radius: 7px;
+  background: #fff;
+  border: 1px solid var(--zah-line-soft);
+  display: flex;
+  align-items: center;
+  padding: 0 8px;
+  font-size: 10.5px;
+  color: var(--zah-muted);
+  gap: 5px;
+}
+
+.zah-bar--full {
+  width: 100%;
+}
+
+.zah-bar--center {
+  justify-content: center;
+}
+
+.zah-bar--code {
+  width: 20px;
+  justify-content: center;
+  padding: 0;
+}
+
+.zah-ob {
+  background: var(--zah-orange);
+  color: #fff;
+  border-radius: 7px;
+  text-align: center;
+  padding: 7px;
+  font-size: 11.5px;
+  font-weight: 600;
+}
+
+.zah-ob--full {
+  width: 100%;
+}
+
+.zah-applogo {
+  width: 28px;
+  height: 28px;
+  border-radius: 7px;
+  background: var(--zah-orange);
+  color: #fff;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+}
+
+.zah-applogo--lg {
+  width: 38px;
+  height: 38px;
+  font-size: 16px;
+}
+
+.zah-app-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #fff;
+  border: 1px solid var(--zah-line-soft);
+  border-radius: 9px;
+  padding: 7px;
+}
+
+.zah-app-label {
+  font-size: 10.5px;
+}
+
+.zah-terms-box {
+  background: #fff;
+  border: 1px solid var(--zah-line-soft);
+  border-radius: 9px;
+  padding: 9px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.zah-terms-box-text {
+  font-size: 10px;
+  color: var(--zah-muted);
+  line-height: 1.45;
+}
+
+.zah-check {
+  font-size: 9.5px;
+  color: var(--zah-muted);
+}
+
+.zah-slider-hint {
+  font-size: 9.5px;
+  color: var(--zah-muted);
+}
+
+.zah-slider {
+  height: 24px;
+  border-radius: 7px;
+  background: #fff;
+  border: 1px solid var(--zah-line-soft);
+  display: flex;
+  align-items: center;
+  padding: 2px;
+}
+
+.zah-slider-knob {
+  width: 28px;
+  height: 18px;
+  border-radius: 5px;
+  background: var(--zah-green);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+}
+
+.zah-code-row {
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+}
+
+.zah-success {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--zah-green-dark);
+  font-size: 10.5px;
+  font-weight: 600;
+}
+
+.zah-cap {
+  font-size: 12px;
+  color: var(--zah-muted);
+  margin-top: 7px;
+  line-height: 1.45;
+}
+
+.zah-cap b {
+  color: var(--zah-ink);
+  font-weight: 600;
+}
+
+.zah-zh {
+  display: inline-block;
+  background: #fbe9df;
+  color: var(--zah-orange-dark);
+  font-size: 10.5px;
+  font-weight: 600;
+  padding: 1px 6px;
+  border-radius: 5px;
+}
+
+.zah-tip {
+  background: rgba(1, 130, 66, 0.07);
+  border-radius: 12px;
+  padding: 11px 13px;
+  margin-top: 14px;
+  font-size: 13px;
+  display: flex;
+  gap: 9px;
+}
+
+.zah-tip-ic {
+  color: var(--zah-green);
+  flex: none;
+  font-weight: 900;
+}
+
+.zah-terms {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 14px;
+  font-size: 13px;
+}
+
+.zah-terms td {
+  padding: 8px 6px;
+  border-bottom: 1px solid var(--zah-line-soft);
+  vertical-align: middle;
+}
+
+.zah-terms tr:last-child td {
+  border-bottom: none;
+}
+
+.zah-term-h {
+  font-weight: 800;
+  font-size: 15px;
+}
+
+.zah-term-py {
+  color: var(--zah-muted);
+  font-size: 11.5px;
+}
+
+.zah-term-mn {
+  text-align: right;
+  font-weight: 600;
+}
+
+.zah-cta {
+  margin-top: 30px;
+  background: var(--zah-green);
+  color: #fff;
+  border-radius: 18px;
+  padding: 20px;
+  text-align: center;
+}
+
+.zah-cta h3 {
+  margin: 0;
+  font-weight: 900;
+  font-size: 18px;
+}
+
+.zah-cta p {
+  font-size: 13.5px;
+  opacity: 0.92;
+  margin-top: 7px;
+}
+
+.zah-cta a {
+  display: inline-block;
+  margin-top: 14px;
+  background: #fff;
+  color: var(--zah-green-dark);
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 14px;
+  padding: 10px 20px;
+  border-radius: 30px;
+}
+
+.zah-footer {
+  text-align: center;
+  margin-top: 26px;
+  font-size: 12px;
+  color: var(--zah-muted);
+}
+
+.zah-back {
+  display: block;
+  margin-top: 16px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--zah-green);
+  text-decoration: none;
+}
+
+/* Нүүр хуудасны онцолсон banner */
+.zah-home-banner {
+  position: relative;
+  display: block;
+  margin: 0 0 14px;
+  padding: 18px 16px 16px;
+  border-radius: 1rem;
+  text-decoration: none;
+  color: #fff;
+  background: linear-gradient(135deg, #fd5f20 0%, #e04f18 55%, #c2430d 100%);
+  box-shadow:
+    0 2px 4px rgba(194, 67, 13, 0.18),
+    0 10px 28px rgba(253, 95, 32, 0.28);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.zah-home-banner:hover {
+  transform: translateY(-1px);
+  box-shadow:
+    0 4px 8px rgba(194, 67, 13, 0.2),
+    0 14px 32px rgba(253, 95, 32, 0.32);
+}
+
+.zah-home-banner:active {
+  transform: translateY(0);
+}
+
+.zah-home-banner-badge {
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 3px 9px;
+  border-radius: 999px;
+  background: #f0efd8;
+  color: #c2430d;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+}
+
+.zah-home-banner-body {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.zah-home-banner-text {
+  min-width: 0;
+  flex: 1;
+}
+
+.zah-home-banner-title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  color: #fff;
+}
+
+.zah-home-banner-sub {
+  margin: 5px 0 0;
+  font-size: 12.5px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.zah-home-banner-action {
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  opacity: 0.95;
+}
+
+.zah-home-banner-icon {
+  font-size: 22px;
+  line-height: 1;
+}
+
+.zah-home-banner-chev {
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .zah-home-banner {
+    transition: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .zah-ctry,
+  .zah-chev {
+    transition: none !important;
+  }
+}
