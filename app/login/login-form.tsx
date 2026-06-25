@@ -6,7 +6,13 @@ import { useEffect, useState } from "react";
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
 import { MobileCard } from "@/components/mobile/mobile-card";
 import { getSafeRedirectPath } from "@/lib/auth/safe-redirect";
-import { getCurrentUser, hasSupabaseConfig, signInWithEmail } from "@/lib/supabase/auth";
+import {
+  getCurrentUser,
+  hasSupabaseConfig,
+  resendSignupConfirmationEmail,
+  signInWithEmail,
+} from "@/lib/supabase/auth";
+import { RESEND_CONFIRMATION_SUCCESS_MESSAGE } from "@/lib/auth/auth-error-messages";
 import { resetProgressSyncDismiss } from "@/lib/supabase/progress-sync";
 
 export function LoginForm() {
@@ -16,6 +22,9 @@ export function LoginForm() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState<string | null>(null);
+  const [showResendConfirmation, setShowResendConfirmation] = useState(false);
+  const [resendMessage, setResendMessage] = useState<string | null>(null);
+  const [resending, setResending] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [checkingSession, setCheckingSession] = useState(true);
   const [alreadyLoggedIn, setAlreadyLoggedIn] = useState(false);
@@ -40,13 +49,19 @@ export function LoginForm() {
   async function handleSubmit(event: React.FormEvent) {
     event.preventDefault();
     setError(null);
+    setResendMessage(null);
+    setShowResendConfirmation(false);
     setSubmitting(true);
 
-    const { data, error: signInError } = await signInWithEmail(email, password);
+    const { data, error: signInError, emailNotConfirmed } = await signInWithEmail(
+      email,
+      password
+    );
     setSubmitting(false);
 
     if (signInError) {
       setError(signInError);
+      setShowResendConfirmation(Boolean(emailNotConfirmed));
       return;
     }
 
@@ -55,6 +70,25 @@ export function LoginForm() {
       router.push(nextPath);
       router.refresh();
     }
+  }
+
+  async function handleResendConfirmation() {
+    if (!email.trim()) {
+      setResendMessage("Эхлээд имэйл хаягаа оруулна уу.");
+      return;
+    }
+
+    setResending(true);
+    setResendMessage(null);
+    const { error: resendError } = await resendSignupConfirmationEmail(email);
+    setResending(false);
+
+    if (resendError) {
+      setResendMessage(resendError);
+      return;
+    }
+
+    setResendMessage(RESEND_CONFIRMATION_SUCCESS_MESSAGE);
   }
 
   return (
@@ -116,8 +150,32 @@ export function LoginForm() {
             </label>
 
             {error ? (
-              <p className="rounded-xl bg-red-50 px-4 py-3 text-sm text-red-800 ring-1 ring-red-200">
-                {error}
+              <div className="rounded-xl bg-red-50 px-4 py-3 text-sm text-red-800 ring-1 ring-red-200">
+                <p>{error}</p>
+                {showResendConfirmation ? (
+                  <button
+                    type="button"
+                    onClick={handleResendConfirmation}
+                    disabled={resending}
+                    className="mt-3 min-h-[40px] w-full rounded-full border border-red-200 bg-white px-4 py-2 text-sm font-semibold text-red-800 disabled:opacity-50"
+                  >
+                    {resending
+                      ? "Илгээж байна..."
+                      : "Баталгаажуулах имэйл дахин илгээх"}
+                  </button>
+                ) : null}
+              </div>
+            ) : null}
+
+            {resendMessage ? (
+              <p
+                className={`rounded-xl px-4 py-3 text-sm ring-1 ${
+                  resendMessage === RESEND_CONFIRMATION_SUCCESS_MESSAGE
+                    ? "bg-emerald-50 text-emerald-800 ring-emerald-200"
+                    : "bg-red-50 text-red-800 ring-red-200"
+                }`}
+              >
+                {resendMessage}
               </p>
             ) : null}
 

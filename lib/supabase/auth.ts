@@ -5,12 +5,14 @@ import type {
 } from "@supabase/supabase-js";
 import { AsyncTimeoutError, withTimeout } from "@/lib/async/with-timeout";
 import { authDevLog } from "@/lib/auth/auth-dev-log";
+import { mapAuthErrorMessage, isEmailNotConfirmedError } from "@/lib/auth/auth-error-messages";
 import { hasSupabaseConfig, supabase } from "@/lib/supabase/client";
 import type { AuthUser } from "@/types/auth";
 
 export type AuthResult<T> = {
   data: T | null;
   error: string | null;
+  emailNotConfirmed?: boolean;
 };
 
 const AUTH_REQUEST_TIMEOUT_MS = 8000;
@@ -19,7 +21,7 @@ const NOT_CONFIGURED_MESSAGE =
   "Supabase is not configured. Add NEXT_PUBLIC_SUPABASE_URL and NEXT_PUBLIC_SUPABASE_ANON_KEY to .env.local.";
 
 function toErrorMessage(error: AuthError | null): string | null {
-  return error?.message ?? null;
+  return mapAuthErrorMessage(error);
 }
 
 function mapUser(user: { id: string; email?: string | null } | null): AuthUser | null {
@@ -101,12 +103,12 @@ async function fetchCurrentUser(): Promise<AuthResult<AuthUser>> {
 
 function formatAuthTransportError(error: unknown): string {
   if (error instanceof AsyncTimeoutError) {
-    return "Auth session check timed out";
+    return mapAuthErrorMessage("Auth session check timed out") ?? "Auth session check timed out";
   }
   if (error instanceof Error) {
-    return error.message;
+    return mapAuthErrorMessage(error.message) ?? error.message;
   }
-  return "Auth request failed";
+  return mapAuthErrorMessage("Auth request failed") ?? "Auth request failed";
 }
 
 export async function getCurrentUser(): Promise<AuthResult<AuthUser>> {
@@ -198,6 +200,25 @@ export async function signInWithEmail(
 
   return {
     data: mapUser(data.user),
+    error: toErrorMessage(error),
+    emailNotConfirmed: isEmailNotConfirmedError(error),
+  };
+}
+
+export async function resendSignupConfirmationEmail(
+  email: string
+): Promise<AuthResult<null>> {
+  if (!supabase) {
+    return notConfigured();
+  }
+
+  const { error } = await supabase.auth.resend({
+    type: "signup",
+    email: email.trim(),
+  });
+
+  return {
+    data: null,
     error: toErrorMessage(error),
   };
 }
