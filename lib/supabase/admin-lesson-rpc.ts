@@ -5,6 +5,7 @@ import { mapLessonReleaseFields } from "@/lib/supabase/lesson-release-map";
 import { enrichLessonContentMeta } from "@/lib/lesson-content-type";
 import type { LessonContent, LessonPublishStatus } from "@/types/lesson-content";
 import type { QuizQuestion, QuizQuestionType } from "@/types/lesson";
+import { parseOptionFeedback } from "@/lib/quiz/option-feedback";
 
 const DEFAULT_QUIZ_TYPES = [
   "Multiple choice",
@@ -68,6 +69,7 @@ type RpcQuizRow = {
   options: unknown;
   correct_answer: string;
   explanation: string | null;
+  option_feedback?: unknown;
   order_index: number;
 };
 
@@ -151,6 +153,7 @@ function mapRpcBundleToLessonContent(
         options: parseOptions(q.options),
         correctAnswer: q.correct_answer,
         explanation: q.explanation ?? "",
+        optionFeedback: parseOptionFeedback(q.option_feedback),
       })
     ),
     quizTypes: DEFAULT_QUIZ_TYPES,

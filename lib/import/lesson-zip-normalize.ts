@@ -2,6 +2,7 @@
 
 import { inferLanguageFromCourseId } from "@/lib/language-track";
 import type { TeachingImageRef } from "@/lib/lesson/teaching-media";
+import { parseOptionFeedback } from "@/lib/quiz/option-feedback";
 import { normalizeQuizType } from "@/lib/supabase/admin-import";
 
 export type ZipImportContext = {
@@ -73,6 +74,7 @@ export type NormalizedZipQuiz = {
   options: unknown;
   correctAnswer: string;
   explanation?: string;
+  optionFeedback?: Record<string, string>;
   skillTags?: string[];
   difficulty?: string;
   lessonSection?: string;
@@ -392,6 +394,9 @@ export function normalizeZipQuizRow(
     explanation:
       trim(item.explanation ?? item.explanationMn ?? item.explanation_mn) ||
       undefined,
+    optionFeedback: parseOptionFeedback(
+      item.optionFeedback ?? item.option_feedback
+    ),
     skillTags,
     difficulty,
     lessonSection,
@@ -450,6 +455,7 @@ export function mapNormalizedQuizToBulkImport(
     options: row.options,
     correctAnswer: row.correctAnswer,
     explanation: row.explanation,
+    optionFeedback: row.optionFeedback,
     skillTags: row.skillTags,
     difficulty: row.difficulty,
     lessonSection: row.lessonSection,

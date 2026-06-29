@@ -48,7 +48,7 @@ import { LessonQuizSentenceOrder } from "@/components/lesson/lesson-quiz-sentenc
 import { SpeakerButton } from "@/components/tts/speaker-button";
 import { containsTargetScript } from "@/lib/tts/infer-lang";
 import { resolveKoreanTtsLang } from "@/lib/lesson/teaching-media";
-import { KoreanAnswerPronunciationBlock } from "@/components/lesson/korean-pronunciation-feedback";
+import { QuizAnswerFeedback } from "@/components/lesson/quiz-answer-feedback";
 import type { LessonContent } from "@/types/lesson-content";
 import type { QuizQuestion } from "@/types/lesson";
 
@@ -532,30 +532,26 @@ export function LessonQuizClient({
                     {isCorrect ? "Зөв!" : "Буруу"}
                   </p>
                   {isLesson0 ? (
-                    <KoreanAnswerPronunciationBlock
-                      correctAnswer={current.correctAnswer}
-                      explanation={current.explanation}
+                    <QuizAnswerFeedback
+                      question={current}
+                      selected={selected}
+                      isCorrect={isCorrect}
+                      ttsLang={ttsLang}
+                      courseId={lesson.courseId}
+                      koreanLesson0
                       lesson={lesson}
                       vocabulary={lesson.vocabulary}
                       pronunciationMap={lesson.vocabularyPronunciationMap}
                       showPronunciation
-                      className="mt-2"
                     />
                   ) : (
-                    <div className="mt-2 flex items-start gap-2">
-                      <p className="min-w-0 flex-1 text-sm leading-6 text-slate-700">
-                        {current.explanation}
-                      </p>
-                      {containsTargetScript(current.explanation) ? (
-                        <SpeakerButton
-                          text={current.explanation}
-                          lang={ttsLang}
-                          courseId={lesson.courseId}
-                          size="sm"
-                          label={`Тайлбар уншуулах`}
-                        />
-                      ) : null}
-                    </div>
+                    <QuizAnswerFeedback
+                      question={current}
+                      selected={selected}
+                      isCorrect={isCorrect}
+                      ttsLang={ttsLang}
+                      courseId={lesson.courseId}
+                    />
                   )}
                 </div>
               )}

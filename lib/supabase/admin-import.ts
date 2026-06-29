@@ -13,6 +13,7 @@ import {
   normalizeLessonIdForQuery,
 } from "@/lib/lesson-id";
 import { fetchLessonRowById } from "@/lib/supabase/content";
+import { parseOptionFeedback } from "@/lib/quiz/option-feedback";
 import { hasSupabaseConfig, supabase } from "@/lib/supabase/client";
 
 export type AdminImportResult<T> = {
@@ -101,6 +102,7 @@ export type NormalizedQuizImport = {
   correctAnswer: string;
   explanation: string;
   orderIndex: number;
+  optionFeedback?: Record<string, string>;
   skillTags?: string[];
   difficulty?: string;
 };
@@ -269,6 +271,7 @@ function mapQuizQuestionToDbRow(
     options: item.options,
     correct_answer: item.correctAnswer,
     explanation: item.explanation,
+    option_feedback: item.optionFeedback ?? null,
     order_index: item.orderIndex ?? fallbackOrder,
   };
 }
@@ -493,6 +496,9 @@ export function validateLessonImportPayload(
           ? item.skillTags.filter((tag): tag is string => typeof tag === "string")
           : undefined;
         const difficulty = String(item.difficulty ?? "").trim() || undefined;
+        const optionFeedback = parseOptionFeedback(
+          item.optionFeedback ?? item.option_feedback
+        );
         quizQuestions.push({
           type,
           question,
@@ -500,6 +506,7 @@ export function validateLessonImportPayload(
           correctAnswer,
           explanation,
           orderIndex,
+          optionFeedback,
           skillTags,
           difficulty,
         });

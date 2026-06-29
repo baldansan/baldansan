@@ -19,6 +19,7 @@ import type {
   LessonPublishStatus,
 } from "@/types/lesson-content";
 import type { QuizQuestion, QuizQuestionType } from "@/types/lesson";
+import { parseOptionFeedback } from "@/lib/quiz/option-feedback";
 
 const DEFAULT_QUIZ_TYPES = [
   "Multiple choice",
@@ -148,6 +149,7 @@ type DbQuizQuestion = {
   options: unknown;
   correct_answer: string;
   explanation: string | null;
+  option_feedback?: unknown;
   order_index: number;
 };
 
@@ -196,6 +198,7 @@ function mapDbQuizRowsToQuestions(
       options: parseOptions(q.options),
       correctAnswer: q.correct_answer,
       explanation: q.explanation ?? "",
+      optionFeedback: parseOptionFeedback(q.option_feedback),
     })
   );
 }
@@ -209,7 +212,7 @@ export async function getSupabaseQuizQuestionsByLessonIdWithClient(
   const quiz = await fetchChildRowsForLesson<DbQuizQuestion>(
     client,
     "quiz_questions",
-    "id, lesson_id, type, question, options, correct_answer, explanation, order_index",
+    "id, lesson_id, type, question, options, correct_answer, explanation, option_feedback, order_index",
     normalizedId
   );
 
@@ -667,7 +670,7 @@ export async function getSupabaseLessonByIdWithClient(
     fetchChildRowsForLesson<DbQuizQuestion>(
       client,
       "quiz_questions",
-      "id, lesson_id, type, question, options, correct_answer, explanation, order_index",
+      "id, lesson_id, type, question, options, correct_answer, explanation, option_feedback, order_index",
       canonicalId
     ),
   ]);
