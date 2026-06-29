@@ -3,7 +3,7 @@
 import { memo } from "react";
 import { SpeakerButton } from "@/components/tts/speaker-button";
 import { LessonPlayerCard } from "@/components/lesson-player/lesson-player-shell";
-import { KoreanAnswerPronunciationBlock } from "@/components/lesson/korean-pronunciation-feedback";
+import { QuizAnswerFeedback } from "@/components/lesson/quiz-answer-feedback";
 import { containsTargetScript } from "@/lib/tts/infer-lang";
 import type { QuizQuestion } from "@/types/lesson";
 import type { VocabularyWord } from "@/types/lesson";
@@ -134,17 +134,27 @@ function LessonStepQuizInner({
             {isCorrect ? "Зөв!" : "Буруу"}
           </p>
           {showPronunciation && lesson ? (
-            <KoreanAnswerPronunciationBlock
-              correctAnswer={question.correctAnswer}
-              explanation={question.explanation}
+            <QuizAnswerFeedback
+              question={question}
+              selected={selected}
+              isCorrect={isCorrect}
+              ttsLang={ttsLang}
+              courseId={courseId}
+              koreanLesson0
               lesson={lesson}
               vocabulary={vocabulary}
               pronunciationMap={pronunciationMap}
               showPronunciation
-              className="mt-2"
             />
           ) : (
-            <p className="mt-1 text-sm text-slate-700">{question.explanation}</p>
+            <QuizAnswerFeedback
+              question={question}
+              selected={selected}
+              isCorrect={isCorrect}
+              ttsLang={ttsLang}
+              courseId={courseId}
+              className="mt-1"
+            />
           )}
         </div>
       ) : null}

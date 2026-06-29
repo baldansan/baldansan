@@ -118,6 +118,8 @@ export type QuizQuestion = {
   options: string[];
   correctAnswer: string;
   explanation: string;
+  /** Per-option feedback keyed by option text (from quiz.json optionFeedback). */
+  optionFeedback?: Record<string, string>;
   /** Optional import metadata — used for distractor generation when present. */
   skillTags?: string[];
   difficulty?: "easy" | "medium" | "hard";
