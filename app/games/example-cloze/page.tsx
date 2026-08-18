@@ -1,5 +1,6 @@
 import { redirect } from "next/navigation";
 
-export default function ExampleClozeGameRedirect() {
+/** Merged into the unified vocab quiz — kept as a redirect for old links. */
+export default function LegacyGameRedirect() {
   redirect("/games/hsk-vocab-quiz?types=example-cloze");
 }

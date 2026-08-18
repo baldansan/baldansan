@@ -117,6 +117,23 @@ export async function fetchVideoSeriesCatalog(): Promise<VideoSeriesCard[]> {
 
   if (error || !rows) return [];
 
+  // First episode per series — used as automatic YouTube thumbnail.
+  const firstEpisodeBySeries = new Map<string, string>();
+  const episodeRes = await client
+    .from("videos")
+    .select("series_id, youtube_id, episode_no")
+    .not("series_id", "is", null)
+    .order("episode_no", { ascending: true, nullsFirst: false });
+  for (const ep of (episodeRes.data ?? []) as {
+    series_id: string | null;
+    youtube_id: string | null;
+  }[]) {
+    if (!ep.series_id || !ep.youtube_id) continue;
+    if (!firstEpisodeBySeries.has(ep.series_id)) {
+      firstEpisodeBySeries.set(ep.series_id, ep.youtube_id);
+    }
+  }
+
   return rows.map((row) => {
     const series = mapSeries(row as Record<string, unknown>)!;
     return {
@@ -124,6 +141,7 @@ export async function fetchVideoSeriesCatalog(): Promise<VideoSeriesCard[]> {
       videoCount: readVideoCount(
         row.videos as { count: number }[] | { count: number } | null
       ),
+      fallbackYoutubeId: firstEpisodeBySeries.get(series.id) ?? null,
     };
   });
 }

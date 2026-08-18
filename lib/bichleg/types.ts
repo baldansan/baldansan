@@ -24,6 +24,8 @@ export type VideoSeriesInfo = {
 
 export type VideoSeriesCard = VideoSeriesInfo & {
   videoCount: number;
+  /** First episode's YouTube id — auto thumbnail when no admin image. */
+  fallbackYoutubeId?: string | null;
 };
 
 export type VideoRow = {
