@@ -13,6 +13,8 @@ const LEVEL_ORDER = ["1-2", "3", "4", "5", "6", "7-9"] as const;
 
 type LevelKey = (typeof LEVEL_ORDER)[number];
 type HandwrittenData = Record<string, string[]>;
+type StoryEntry = { m: string; story: string };
+type StoriesData = Record<string, StoryEntry>;
 
 function readProgress(): Set<string> {
   if (typeof window === "undefined") return new Set();
@@ -37,6 +39,7 @@ function writeProgress(done: Set<string>) {
 
 export function HandwritingCourseClient() {
   const [data, setData] = useState<HandwrittenData | null>(null);
+  const [stories, setStories] = useState<StoriesData>({});
   const [loadError, setLoadError] = useState(false);
   const [level, setLevel] = useState<LevelKey>("1-2");
   const [done, setDone] = useState<Set<string>>(new Set());
@@ -51,6 +54,14 @@ export function HandwritingCourseClient() {
       })
       .catch(() => {
         if (!cancelled) setLoadError(true);
+      });
+    fetch("/data/hsk30_stories.json")
+      .then((r) => (r.ok ? r.json() : {}))
+      .then((json: StoriesData) => {
+        if (!cancelled) setStories(json ?? {});
+      })
+      .catch(() => {
+        // Stories are an enhancement — writing works without them.
       });
     setDone(readProgress());
     return () => {
@@ -186,6 +197,21 @@ export function HandwritingCourseClient() {
                 Хаах
               </button>
             </div>
+            {stories[activeChar] ? (
+              <div className="mb-3 rounded-2xl bg-amber-50 px-4 py-3 ring-1 ring-amber-200">
+                <p className="text-xs font-bold uppercase tracking-wide text-amber-700">
+                  🧠 Толгойдоо ургуулж бод
+                </p>
+                <p className="mt-1 text-sm leading-6 text-amber-900">
+                  {stories[activeChar].story}
+                </p>
+                {stories[activeChar].m ? (
+                  <p className="mt-1 text-xs font-semibold text-amber-700">
+                    Утга: {stories[activeChar].m}
+                  </p>
+                ) : null}
+              </div>
+            ) : null}
             <CharacterWriter
               key={activeChar}
               character={{ hanzi: activeChar, pinyin: [], practice: "write" }}
