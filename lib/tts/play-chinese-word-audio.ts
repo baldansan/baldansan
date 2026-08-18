@@ -1,4 +1,4 @@
-import { buildAudioCmnUrl } from "@/lib/tts/audio-cmn";
+import { buildAudioCmnUrl, buildHsk30AudioUrl } from "@/lib/tts/audio-cmn";
 import { playAudioUrl } from "@/lib/tts/play-pronunciation";
 import { speakText } from "@/lib/tts/speech";
 
@@ -9,9 +9,12 @@ export async function playChineseWordAudio(text: string): Promise<{ ok: boolean 
   const trimmed = text.trim();
   if (!trimmed) return { ok: false };
 
-  const url = buildAudioCmnUrl(trimmed);
-  const audioResult = await playAudioUrl(url);
+  // 1) Human recording (audio-cmn), 2) HSK 3.0 recording, 3) device TTS.
+  const audioResult = await playAudioUrl(buildAudioCmnUrl(trimmed));
   if (audioResult.ok) return { ok: true };
+
+  const hsk30Result = await playAudioUrl(buildHsk30AudioUrl(trimmed));
+  if (hsk30Result.ok) return { ok: true };
 
   const tts = await speakText(trimmed, {
     lang: "zh-CN",
