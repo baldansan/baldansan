@@ -18,12 +18,17 @@ type WizardStep = "level" | "batch" | "study";
 
 type BatchSummary = {
   batchIndex: number;
-  rangeStart: number;
-  rangeEnd: number;
   wordIds: number[];
-  firstSimplified: string;
-  lastSimplified: string;
   studiedCount: number;
+  /** Сэдэвчилсэн бүлэг (mode: "themes") */
+  groupId?: string;
+  title?: string;
+  icon?: string;
+  /** Пиньинь дарааллын багц (mode: "pinyin" fallback) */
+  rangeStart?: number;
+  rangeEnd?: number;
+  firstSimplified?: string;
+  lastSimplified?: string;
 };
 
 function toCatalogLevel(level: ActiveHskLevel): string {
@@ -31,7 +36,10 @@ function toCatalogLevel(level: ActiveHskLevel): string {
 }
 
 function batchLabel(batch: BatchSummary): string {
-  return `Багц ${batch.batchIndex + 1} · ${batch.firstSimplified} → ${batch.lastSimplified}`;
+  if (batch.groupId && batch.title) {
+    return `${batch.icon ?? ""} ${batch.title}`.trim();
+  }
+  return `Багц ${batch.batchIndex + 1} · ${batch.firstSimplified ?? ""} → ${batch.lastSimplified ?? ""}`;
 }
 
 type Props = {
@@ -43,6 +51,7 @@ export function HanziMemorizeClient({ restoreLevel }: Props = {}) {
   const [level, setLevel] = useState<ActiveHskLevel | null>(null);
   const [batches, setBatches] = useState<BatchSummary[]>([]);
   const [totalWords, setTotalWords] = useState(0);
+  const [batchMode, setBatchMode] = useState<"themes" | "pinyin">("pinyin");
   const [activeBatch, setActiveBatch] = useState<BatchSummary | null>(null);
   const [studyQueue, setStudyQueue] = useState<WordSrsQueueItem[]>([]);
   const [userId, setUserId] = useState<string | null>(null);
@@ -74,13 +83,17 @@ export function HanziMemorizeClient({ restoreLevel }: Props = {}) {
         `/api/review/memorize-batches?level=${encodeURIComponent(toCatalogLevel(next))}`
       );
       const json = (await res.json()) as {
+        mode?: "themes" | "pinyin";
         batches?: {
           batchIndex: number;
-          rangeStart: number;
-          rangeEnd: number;
           wordIds: number[];
-          firstSimplified: string;
-          lastSimplified: string;
+          groupId?: string;
+          title?: string;
+          icon?: string;
+          rangeStart?: number;
+          rangeEnd?: number;
+          firstSimplified?: string;
+          lastSimplified?: string;
         }[];
         totalWords?: number;
         error?: string;
@@ -97,6 +110,7 @@ export function HanziMemorizeClient({ restoreLevel }: Props = {}) {
       );
       setBatches(withProgress);
       setTotalWords(json.totalWords ?? 0);
+      setBatchMode(json.mode === "themes" ? "themes" : "pinyin");
       setStep("batch");
     } catch (err) {
       setError(err instanceof Error ? err.message : "Ачаалахад алдаа");
@@ -128,8 +142,11 @@ export function HanziMemorizeClient({ restoreLevel }: Props = {}) {
     setLoading(true);
     setError(null);
     try {
+      const query = batch.groupId
+        ? `group=${encodeURIComponent(batch.groupId)}`
+        : `batch=${batch.batchIndex}`;
       const res = await fetch(
-        `/api/review/memorize-batch?level=${encodeURIComponent(toCatalogLevel(level))}&batch=${batch.batchIndex}`
+        `/api/review/memorize-batch?level=${encodeURIComponent(toCatalogLevel(level))}&${query}`
       );
       const json = (await res.json()) as {
         words?: HskWordRow[];
@@ -167,6 +184,7 @@ export function HanziMemorizeClient({ restoreLevel }: Props = {}) {
       setLevel(null);
       setBatches([]);
       setTotalWords(0);
+      setBatchMode("pinyin");
       return;
     }
   }
@@ -244,9 +262,12 @@ export function HanziMemorizeClient({ restoreLevel }: Props = {}) {
         <button type="button" onClick={goBack} className="bs-mem-back">
           ← HSK түвшин
         </button>
-        <h2 className="bs-mem-step-title">Багц сонгох</h2>
+        <h2 className="bs-mem-step-title">
+          {batchMode === "themes" ? "Сэдэв сонгох" : "Багц сонгох"}
+        </h2>
         <p className="bs-mem-step-sub">
-          {formatActiveHskLevel(level)} · {totalWords} үг · пиньинь дарааллаар
+          {formatActiveHskLevel(level)} · {totalWords} үг ·{" "}
+          {batchMode === "themes" ? "сэдвээр бүлэглэсэн" : "пиньинь дарааллаар"}
         </p>
         <ul className="bs-mem-batch-list">
           {batches.map((b) => (
@@ -272,7 +293,7 @@ export function HanziMemorizeClient({ restoreLevel }: Props = {}) {
     <div className="bs-mem-wizard">
       <h2 className="bs-mem-step-title">HSK түвшин сонгох</h2>
       <p className="bs-mem-step-sub">
-        Пиньинь дарааллаар 30-аар багцлан цээжлэнэ
+        Үгсийг сэдэвчилсэн бүлгээр цээжлэнэ
       </p>
       <div className="bs-mem-chip-grid">
         {HSK_LEVEL_OPTIONS.map((opt) => (

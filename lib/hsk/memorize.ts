@@ -1,6 +1,10 @@
 import { createClient } from "@supabase/supabase-js";
 import type { HskLevel, HskWord } from "@/lib/hsk";
 import { MEMORIZE_BATCH_SIZE } from "@/lib/hsk/pos-catalog";
+import {
+  getWordThemeGroup,
+  getWordThemeGroups,
+} from "@/lib/hsk/word-themes";
 import { hasServerSupabaseConfig } from "@/lib/supabase/server";
 
 const LIGHT_SELECT = "id, simplified";
@@ -141,6 +145,125 @@ export async function fetchMemorizeBatch(
     batchCount,
     firstSimplified,
     lastSimplified,
+  };
+}
+
+/** Түвшний бүх үгийн (id, simplified) хөнгөн мөрүүд — сэдэвчилсэн бүлэгт
+ * дүрмийн үгс мөн ордог тул is_function_word filter ХЭРЭГЛЭХГҮЙ. */
+async function loadLevelLightRows(level: HskLevel): Promise<LightRow[]> {
+  const supabase = catalogClient();
+  if (!supabase) return [];
+
+  const rows: LightRow[] = [];
+  const pageSize = 1000;
+  let from = 0;
+
+  while (true) {
+    const { data, error } = await supabase
+      .from("hsk_words")
+      .select(LIGHT_SELECT)
+      .eq("hsk_level", level)
+      .range(from, from + pageSize - 1);
+
+    if (error) throw new Error(error.message);
+    const chunk = (data ?? []) as LightRow[];
+    rows.push(...chunk);
+    if (chunk.length < pageSize) break;
+    from += pageSize;
+  }
+
+  return rows;
+}
+
+export type MemorizeThemeGroupSummary = {
+  batchIndex: number;
+  groupId: string;
+  title: string;
+  icon: string;
+  wordIds: number[];
+  wordCount: number;
+};
+
+/** Сэдэвчилсэн бүлгүүдийн жагсаалт. Theme файл эсвэл Supabase байхгүй бол
+ * null буцаана → дуудагч тал хуучин пиньинь багц руу fallback хийнэ. */
+export async function fetchMemorizeThemeSummaries(level: HskLevel): Promise<{
+  groups: MemorizeThemeGroupSummary[];
+  totalWords: number;
+} | null> {
+  const themeGroups = await getWordThemeGroups(level);
+  if (!themeGroups) return null;
+
+  const rows = await loadLevelLightRows(level);
+  if (rows.length === 0) return null;
+
+  const idBySimplified = new Map<string, number>();
+  for (const row of rows) {
+    idBySimplified.set(row.simplified, row.id);
+  }
+
+  const groups: MemorizeThemeGroupSummary[] = [];
+  for (const group of themeGroups) {
+    const wordIds = group.words
+      .map((s) => idBySimplified.get(s))
+      .filter((id): id is number => typeof id === "number");
+    if (wordIds.length === 0) continue;
+    groups.push({
+      batchIndex: groups.length,
+      groupId: group.id,
+      title: group.title,
+      icon: group.icon,
+      wordIds,
+      wordCount: wordIds.length,
+    });
+  }
+
+  if (groups.length === 0) return null;
+  const totalWords = groups.reduce((sum, g) => sum + g.wordCount, 0);
+  return { groups, totalWords };
+}
+
+/** Нэг сэдэвчилсэн бүлгийн үгс (theme файлын дарааллаар — түгээмэл нь эхэндээ). */
+export async function fetchMemorizeThemeGroup(
+  level: HskLevel,
+  groupId: string
+): Promise<{
+  words: HskWord[];
+  wordIds: number[];
+  groupId: string;
+  title: string;
+  icon: string;
+} | null> {
+  const group = await getWordThemeGroup(level, groupId);
+  if (!group) return null;
+
+  const supabase = catalogClient();
+  if (!supabase) {
+    return { words: [], wordIds: [], groupId: group.id, title: group.title, icon: group.icon };
+  }
+
+  const { data, error } = await supabase
+    .from("hsk_words")
+    .select(WORD_SELECT)
+    .eq("hsk_level", level)
+    .in("simplified", group.words);
+
+  if (error) throw new Error(error.message);
+
+  const order = new Map(group.words.map((s, i) => [s, i]));
+  const words = ((data ?? []) as HskWord[])
+    .slice()
+    .sort(
+      (a, b) =>
+        (order.get(a.simplified) ?? Number.MAX_SAFE_INTEGER) -
+        (order.get(b.simplified) ?? Number.MAX_SAFE_INTEGER)
+    );
+
+  return {
+    words,
+    wordIds: words.map((w) => w.id),
+    groupId: group.id,
+    title: group.title,
+    icon: group.icon,
   };
 }
 
