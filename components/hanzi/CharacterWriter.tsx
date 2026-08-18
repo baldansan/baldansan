@@ -62,6 +62,8 @@ export function CharacterWriter({ character, mode, onComplete }: Props) {
   );
   const [charIndex, setCharIndex] = useState(0);
   const [practiceMode, setPracticeMode] = useState<PracticeMode>("loading");
+  /** write mode: trace = outline visible; memory = write from memory. */
+  const [writePhase, setWritePhase] = useState<"trace" | "memory">("trace");
   const [strokeDone, setStrokeDone] = useState(0);
   const [strokeTotal, setStrokeTotal] = useState(0);
 
@@ -86,6 +88,7 @@ export function CharacterWriter({ character, mode, onComplete }: Props) {
     let cancelled = false;
     mount.innerHTML = "";
     setPracticeMode("loading");
+    setWritePhase("trace");
     setStrokeDone(0);
     setStrokeTotal(0);
 
@@ -95,24 +98,37 @@ export function CharacterWriter({ character, mode, onComplete }: Props) {
 
     let writer: HanziWriter | null = null;
 
-    function startQuiz() {
+    function startQuiz(memory = false) {
       if (!writer || cancelled) return;
       const w = writer;
       w.cancelQuiz();
       void w.hideCharacter({ duration: 0 });
-      void w.showOutline({ duration: 0 });
+      if (memory) {
+        void w.hideOutline({ duration: 0 });
+      } else {
+        void w.showOutline({ duration: 0 });
+      }
+      setWritePhase(memory ? "memory" : "trace");
       setStrokeDone(0);
       setPracticeMode("quiz");
       void w.quiz({
-        leniency: 1.3,
-        showHintAfterMisses: 2,
-        markStrokeCorrectAfterMisses: 5,
+        leniency: memory ? 1.4 : 1.3,
+        showHintAfterMisses: memory ? 3 : 2,
+        markStrokeCorrectAfterMisses: memory ? 6 : 5,
         highlightOnComplete: true,
         onCorrectStroke: (data) => {
           if (!cancelled) setStrokeDone(data.strokeNum + 1);
         },
         onComplete: () => {
-          if (!cancelled) setPracticeMode("success");
+          if (cancelled) return;
+          if (!memory) {
+            // Consolidation step: write the same character from memory.
+            window.setTimeout(() => {
+              if (!cancelled) startQuiz(true);
+            }, 900);
+          } else {
+            setPracticeMode("success");
+          }
         },
       });
     }
@@ -159,7 +175,7 @@ export function CharacterWriter({ character, mode, onComplete }: Props) {
       },
     });
 
-    actionsRef.current = { quiz: startQuiz, animate: startAnimation };
+    actionsRef.current = { quiz: () => startQuiz(false), animate: startAnimation };
 
     return () => {
       cancelled = true;
@@ -174,8 +190,6 @@ export function CharacterWriter({ character, mode, onComplete }: Props) {
   }, [activeChar, mode]);
 
   const decomposition = isSingleChar ? formatComponents(character) : null;
-  const showStrokeProgress =
-    mode === "write" && practiceMode === "quiz" && strokeTotal > 0;
   const successLabel =
     mode === "write"
       ? HANZI_WRITING_LABELS.success
@@ -211,9 +225,19 @@ export function CharacterWriter({ character, mode, onComplete }: Props) {
         />
       </div>
 
-      {showStrokeProgress ? (
-        <p className="bs-stroke-progress">
-          {strokeDone} / {strokeTotal} зураас
+      {mode === "write" && practiceMode === "quiz" ? (
+        <p
+          className="bs-stroke-progress"
+          style={
+            writePhase === "memory"
+              ? { color: "#b45309", fontWeight: 700 }
+              : undefined
+          }
+        >
+          {writePhase === "trace"
+            ? "1/2 · Дагаж бич"
+            : "2/2 · Санаж бич — жишээгүй!"}
+          {strokeTotal > 0 ? ` · ${strokeDone}/${strokeTotal} зураас` : ""}
         </p>
       ) : null}
 
