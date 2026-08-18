@@ -17,6 +17,7 @@ import {
   type HskQuizQuestion,
 } from "@/lib/games/hsk-quiz-builders";
 import { formatActiveHskLevel } from "@/lib/hsk/active-hsk-level";
+import { useActivityTracker } from "@/lib/analytics/activity-tracker";
 
 type Phase = "loading" | "play" | "done" | "locked";
 
@@ -47,6 +48,7 @@ export function HskQuizGameClient({ config }: { config: HskQuizGameConfig }) {
     dailyMode = false,
     extraQuery = "",
   } = config;
+  useActivityTracker("game", gameType);
 
   const { level: activeLevel, hydrated } = useActiveHskLevel();
   const [phase, setPhase] = useState<Phase>("loading");

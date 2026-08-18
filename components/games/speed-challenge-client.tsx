@@ -16,12 +16,14 @@ import {
 } from "@/lib/games/game-word-pool";
 import { formatActiveHskLevel } from "@/lib/hsk/active-hsk-level";
 import { getAuthenticatedUserId, hasSupabaseConfig } from "@/lib/supabase/auth";
+import { useActivityTracker } from "@/lib/analytics/activity-tracker";
 
 const ROUND_SECONDS = 60;
 
 type Phase = "source" | "loading" | "play" | "done";
 
 export function SpeedChallengeClient() {
+  useActivityTracker("game", "speed-challenge");
   const { level: activeLevel, hydrated } = useActiveHskLevel();
   const [phase, setPhase] = useState<Phase>("source");
   const [isLoggedIn, setIsLoggedIn] = useState(false);

@@ -14,6 +14,7 @@ import { saveGameResult } from "@/lib/games/game-progress";
 import { SpeakerButton } from "@/components/tts/speaker-button";
 import { resolveTtsLang } from "@/lib/tts/infer-lang";
 import type { GameVocabItem } from "@/lib/games/game-types";
+import { useActivityTracker } from "@/lib/analytics/activity-tracker";
 
 function sentenceForTts(sentence: string, answer: string): string {
   return sentence.replace(/＿＿＿|__/g, answer);
@@ -36,6 +37,7 @@ export function MissingWordGameClient({
   isPrelesson = false,
   labels: labelsProp,
 }: Props) {
+  useActivityTracker("game", "missing-word");
   const labels = labelsProp ?? resolveGameLabels(isKorean, isPrelesson);
   const gameContext = { isKorean, isPrelesson };
   const questions = useMemo(

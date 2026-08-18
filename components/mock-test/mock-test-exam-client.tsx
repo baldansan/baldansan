@@ -53,6 +53,7 @@ import {
   fetchCompletedLessonIdsClient,
   saveCheckpointAttempt,
 } from "@/lib/supabase/mock-tests-client";
+import { useActivityTracker } from "@/lib/analytics/activity-tracker";
 
 type Phase = "intro" | "overview" | "section_ready" | "exam" | "writing_grade" | "result";
 
@@ -90,6 +91,7 @@ export function MockTestExamClient({
   lessonTitles,
   returnTo = "/test",
 }: Props) {
+  useActivityTracker("mock", test.id);
   const router = useRouter();
   const skills = useMemo(() => orderedSkillsForTest(test), [test]);
   const realTotalMinutes = useMemo(() => totalRealExamMinutes(test), [test]);

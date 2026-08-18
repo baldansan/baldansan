@@ -13,6 +13,7 @@ import { resolveLessonContentType } from "@/lib/lesson-content-type";
 import type { HskLessonPackage } from "@/types/hsk-lesson-package";
 import type { LessonContent } from "@/types/lesson-content";
 import type { QuizQuestion } from "@/types/lesson";
+import { useActivityTracker } from "@/lib/analytics/activity-tracker";
 
 const HskGuidedLessonPlayer = nextDynamic(
   () =>
@@ -83,6 +84,9 @@ export function LessonWatchClient({
   adminPreview = false,
   nextLessonId = null,
 }: Props) {
+  // Time-on-lesson (Оюу оноо): one tracker for every lesson-watch variant.
+  useActivityTracker("lesson", lesson.id, !adminPreview);
+
   if (lessonPackage) {
     return (
       <SchemaLessonWatchPlayer

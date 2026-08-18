@@ -12,6 +12,7 @@ import {
   getUserSrsWordList,
   type SrsWordListItem,
 } from "@/lib/supabase/user-word-srs";
+import { useActivityTracker } from "@/lib/analytics/activity-tracker";
 
 type Filter = "all" | "bichleg";
 
@@ -25,6 +26,7 @@ function formatDueLabel(dueAt: string, reps: number): string {
 }
 
 export function WordSrsWordsClient() {
+  useActivityTracker("review", "words");
   const [filter, setFilter] = useState<Filter>("all");
   const [items, setItems] = useState<SrsWordListItem[]>([]);
   const [orphans, setOrphans] = useState<UserSavedWordRow[]>([]);

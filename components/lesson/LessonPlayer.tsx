@@ -5,6 +5,7 @@
 // HSK1-ийн ямар ч таамаг бүтэц байхгүй — бүгд өгөгдлөөс.
 
 import { useCallback, useMemo, useState } from "react";
+import { useActivityTracker } from "@/lib/analytics/activity-tracker";
 import type {
   HskLessonPackage as Lesson,
   HskPackageModuleKey as ModuleKey,
@@ -46,6 +47,7 @@ export default function LessonPlayer({
   onExit?: () => void;
 }) {
   const modules = lesson.modules_enabled ?? [];
+  useActivityTracker("lesson", lessonId);
   const overviewIndex = useMemo(() => {
     const hookIdx = modules.indexOf("hook");
     return hookIdx >= 0 ? hookIdx : 0;

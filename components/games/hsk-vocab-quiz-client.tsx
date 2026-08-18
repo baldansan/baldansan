@@ -38,6 +38,7 @@ import {
   HSK_LEVEL_OPTIONS,
   type ActiveHskLevel,
 } from "@/lib/hsk/active-hsk-level";
+import { useActivityTracker } from "@/lib/analytics/activity-tracker";
 
 type Phase = "source" | "setup" | "intro" | "loading" | "play" | "result";
 
@@ -56,6 +57,7 @@ export function HskVocabQuizClient({
   presetTypes = null,
   presetTitle = null,
 }: Props) {
+  useActivityTracker("game", "hsk-vocab-quiz");
   const screenTitle = presetTitle ?? "Үгсийн дасгал";
   const { level: activeLevel, hydrated: levelHydrated } = useActiveHskLevel();
   const [phase, setPhase] = useState<Phase>("source");

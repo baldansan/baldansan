@@ -2,12 +2,14 @@ import Link from "next/link";
 import { AdminPageHeader } from "@/components/admin/admin-page-header";
 import { AnalyticsMetricCard } from "@/components/admin/analytics-metric-card";
 import { LessonAnalyticsTable } from "@/components/admin/lesson-analytics-table";
+import { ActivityTimeSection } from "@/components/admin/activity-time-section";
 import { QuestionAttemptsAnalyticsSection } from "@/components/admin/question-attempts-analytics-section";
 import {
   getAnalyticsQuickSummary,
   getLessonAnalyticsOverview,
 } from "@/lib/supabase/admin-analytics";
 import { getQuestionAttemptsAnalytics } from "@/lib/supabase/question-attempts-analytics";
+import { getActivityTimeOverview } from "@/lib/supabase/activity-time-analytics";
 import { getClassroomAdminSummary } from "@/lib/supabase/admin-classroom-stats";
 
 export const dynamic = "force-dynamic";
@@ -17,12 +19,18 @@ export const metadata = {
 };
 
 export default async function AdminAnalyticsPage() {
-  const [overview, quickSummary, classroomSummary, attemptAnalytics] =
-    await Promise.all([
+  const [
+    overview,
+    quickSummary,
+    classroomSummary,
+    attemptAnalytics,
+    activityTime,
+  ] = await Promise.all([
     getLessonAnalyticsOverview(),
     getAnalyticsQuickSummary(),
     getClassroomAdminSummary(),
     getQuestionAttemptsAnalytics(),
+    getActivityTimeOverview(14),
   ]);
 
   const avgScore =
@@ -108,6 +116,8 @@ export default async function AdminAnalyticsPage() {
           </p>
         ) : null}
       </section>
+
+      <ActivityTimeSection data={activityTime} />
 
       <QuestionAttemptsAnalyticsSection
         totalAttempts={attemptAnalytics.totalAttempts}

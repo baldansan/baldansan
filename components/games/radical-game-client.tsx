@@ -12,6 +12,7 @@ import {
 } from "@/lib/games/radical-game-data";
 import { resolveGameLabels, type GameLabels } from "@/lib/games/game-lesson-meta";
 import { saveGameResult } from "@/lib/games/game-progress";
+import { useActivityTracker } from "@/lib/analytics/activity-tracker";
 
 type Props = {
   lessonId: string;
@@ -42,6 +43,7 @@ export function RadicalGameClient({
   onReturnToSummary,
   onEnterChallenge,
 }: Props) {
+  useActivityTracker("game", "radical");
   const labels = labelsProp ?? resolveGameLabels(false, false);
   const entries = useMemo(
     () => entriesProp ?? getRadicalGameEntries(),

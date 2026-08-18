@@ -19,6 +19,7 @@ import {
 } from "@/lib/hanzi/writing-practice";
 import type { GameVocabItem, StrokeQuestion } from "@/lib/games/game-types";
 import type { HskCharacterNote } from "@/lib/lesson/hsk-lesson-content";
+import { useActivityTracker } from "@/lib/analytics/activity-tracker";
 
 type Props = {
   lessonId: string;
@@ -40,6 +41,7 @@ export function StrokeGameClient({
   hskCharacterNotes = [],
   initialQuestions,
 }: Props) {
+  useActivityTracker("game", "stroke");
   const labels = labelsProp ?? resolveGameLabels(isKorean, isPrelesson);
   const gameContext = { isKorean, isPrelesson, hskCharacterNotes };
   const questions = useMemo(
