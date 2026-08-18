@@ -21,6 +21,9 @@ import {
 import { createServerSupabaseClient } from "@/lib/supabase/server";
 import { enrichLessonContentMeta } from "@/lib/lesson-content-type";
 import type { LessonContent } from "@/types/lesson-content";
+/** Dev-only diagnostics — never log user ids/roles in production. */
+const debugWarn: (...args: unknown[]) => void =
+  process.env.NODE_ENV === "development" ? console.warn : () => {};
 
 async function getServerSupabaseClientOrNull() {
   if (!hasSupabaseConfig) {
@@ -41,14 +44,14 @@ export async function getAdminLessonById(
 
   const client = await getServerSupabaseClientOrNull();
   if (!client) {
-    console.warn("[lesson-fetch] No server Supabase client for admin lesson", {
+    debugWarn("[lesson-fetch] No server Supabase client for admin lesson", {
       lessonId: normalizedId,
     });
     return undefined;
   }
 
   const { data: userData } = await client.auth.getUser();
-  console.warn("[lesson-fetch] Admin lesson fetch attempt", {
+  debugWarn("[lesson-fetch] Admin lesson fetch attempt", {
     lessonId: normalizedId,
     queryCandidates: lessonIdQueryCandidates(normalizedId),
     hasUser: Boolean(userData.user),
@@ -59,7 +62,7 @@ export async function getAdminLessonById(
   try {
     const rpcLesson = await fetchAdminLessonBundleViaRpc(client, normalizedId);
     if (rpcLesson) {
-      console.warn("[lesson-fetch] Admin/full lesson found via RPC", {
+      debugWarn("[lesson-fetch] Admin/full lesson found via RPC", {
         lessonId: normalizedId,
         resolvedId: rpcLesson.id,
         status: rpcLesson.publishStatus,
@@ -71,7 +74,7 @@ export async function getAdminLessonById(
       return enrichLessonContentMeta({ ...rpcLesson, vocabulary });
     }
   } catch (error) {
-    console.warn("[lesson-fetch] Admin lesson RPC fetch failed", {
+    debugWarn("[lesson-fetch] Admin lesson RPC fetch failed", {
       lessonId: normalizedId,
       error,
     });
@@ -85,14 +88,14 @@ export async function getAdminLessonById(
     }
 
     if (!lesson) {
-      console.warn("[lesson-fetch] Admin/full lesson not found", {
+      debugWarn("[lesson-fetch] Admin/full lesson not found", {
         lessonId: normalizedId,
         queryCandidates: lessonIdQueryCandidates(normalizedId),
       });
       return undefined;
     }
 
-    console.warn("[lesson-fetch] Admin/full lesson found", {
+    debugWarn("[lesson-fetch] Admin/full lesson found", {
       lessonId: normalizedId,
       resolvedId: lesson.id,
       status: lesson.publishStatus,
@@ -104,7 +107,7 @@ export async function getAdminLessonById(
     );
     return { ...lesson, vocabulary };
   } catch (error) {
-    console.warn("[lesson-fetch] Admin/full lesson fetch failed; trying RPC", {
+    debugWarn("[lesson-fetch] Admin/full lesson fetch failed; trying RPC", {
       lessonId: normalizedId,
       error,
     });
@@ -118,7 +121,7 @@ export async function getAdminLessonById(
         return enrichLessonContentMeta({ ...rpcLesson, vocabulary });
       }
     } catch (rpcError) {
-      console.warn("[lesson-fetch] Admin lesson RPC retry failed", {
+      debugWarn("[lesson-fetch] Admin lesson RPC retry failed", {
         lessonId: normalizedId,
         error: rpcError,
       });
@@ -143,7 +146,7 @@ export async function getAdminLessonsByCourseId(
   try {
     return await getSupabaseLessonsByCourseIdWithClient(courseId, client);
   } catch (error) {
-    console.warn("[lesson-fetch] Admin lesson list fetch failed", {
+    debugWarn("[lesson-fetch] Admin lesson list fetch failed", {
       courseId,
       error,
     });

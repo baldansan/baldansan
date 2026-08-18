@@ -1,4 +1,5 @@
 {
+  "id": "/",
   "name": "Бөөндөө Сурцгаая",
   "short_name": "Сурцгаая",
   "description": "Богино бичлэг, subtitle, vocabulary, quiz ашиглан Хятад хэл сурах app.",
@@ -6,10 +7,14 @@
   "scope": "/",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#059669",
+  "theme_color": "#1FB85A",
   "orientation": "portrait-primary",
   "lang": "mn",
-  "categories": ["education", "language", "productivity"],
+  "categories": [
+    "education",
+    "language",
+    "productivity"
+  ],
   "icons": [
     {
       "src": "/icons/icon-192.png",

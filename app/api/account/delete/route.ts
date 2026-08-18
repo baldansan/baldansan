@@ -38,6 +38,7 @@ const USER_ID_TABLES = [
   "feedback",
   "student_profiles",
   "teacher_profiles",
+  "organization_members",
 ] as const;
 
 /** Tables whose rows belong to the user via a `student_user_id` column. */
@@ -109,6 +110,20 @@ export async function POST() {
     }
   }
 
+  if (cleanupErrors.length > 0) {
+    // Do NOT delete the auth user if personal data could not be removed —
+    // that would strand orphaned rows and falsely report full deletion.
+    return NextResponse.json(
+      {
+        ok: false,
+        message:
+          "Зарим өгөгдлийг устгаж чадсангүй тул бүртгэл устгаагүй. Дахин оролдоно уу.",
+        cleanupErrors,
+      },
+      { status: 500 }
+    );
+  }
+
   const { error: deleteUserError } = await service.auth.admin.deleteUser(userId);
   if (deleteUserError) {
     return NextResponse.json(
@@ -129,10 +144,11 @@ export async function POST() {
 
 function isIgnorableCleanupError(message: string): boolean {
   const lower = message.toLowerCase();
+  // Only "table/column missing" style errors are ignorable — permission
+  // or RLS errors must surface, otherwise deletion silently leaves data.
   return (
     lower.includes("does not exist") ||
     lower.includes("could not find") ||
-    lower.includes("relation") ||
-    lower.includes("column")
+    lower.includes("schema cache")
   );
 }

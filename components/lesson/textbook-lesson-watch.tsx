@@ -112,7 +112,7 @@ export function TextbookLessonWatchClient({
 
           {audioReady && audioUrl && isDirectAudioUrl(audioUrl) ? (
             <MobileCard>
-              <h2 className="text-sm font-semibold text-[var(--app-text)]">Audio</h2>
+              <h2 className="text-sm font-semibold text-[var(--app-text)]">Аудио</h2>
               <audio controls className="mt-2 w-full" src={audioUrl} />
             </MobileCard>
           ) : null}
