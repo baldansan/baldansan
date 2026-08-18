@@ -65,13 +65,9 @@ export function buildPracticeMatchPairs(
     pinyin: w.pinyin?.trim() ?? "",
   }));
 
-  const expanded = expandList(base, PRACTICE_MIN_SIZE, maxPairs);
-  return shuffleArray(
-    expanded.map((pair, i) => ({
-      ...pair,
-      id: `${pair.id}-${i}`,
-    }))
-  );
+  // NOTE: never pad by repeating pairs — two visually identical cards with
+  // different ids make correct matches fail ~50% of the time.
+  return shuffleArray(base.slice(0, maxPairs));
 }
 
 /** 4 сонголтот утга асуулт — сонгосон үгсээс, цөөн бол давтана. */

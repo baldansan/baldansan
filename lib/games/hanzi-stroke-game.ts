@@ -196,13 +196,16 @@ function generateQuestionsForCharacter(
 export function buildHanziStrokeGameItems(
   vocabulary: GameVocabItem[],
   maxQuestions = 6,
-  characterNotes: HskCharacterNote[] = []
+  characterNotes: HskCharacterNote[] = [],
+  extraCatalog: Record<string, HanziCharacterData> = {}
 ): StrokeQuestion[] {
   const chars = collectLessonCharacters(vocabulary);
   if (chars.length === 0) return [];
 
   const resolved = chars
-    .map((char) => resolveHanziCharacterData(char, vocabulary, characterNotes))
+    .map((char) =>
+      resolveHanziCharacterData(char, vocabulary, characterNotes, extraCatalog)
+    )
     .filter((d): d is HanziCharacterData => d !== null);
 
   if (resolved.length === 0) return [];

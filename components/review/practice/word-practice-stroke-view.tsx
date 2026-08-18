@@ -39,7 +39,8 @@ function buildStrokeTasks(words: HskWordRow[], minTasks = 6): StrokeTask[] {
   for (const word of words) {
     const zh = word.simplified?.trim();
     if (!zh) continue;
-    for (const ch of extractHanziCharacters(zh)) {
+    const wordChars = extractHanziCharacters(zh);
+    for (const ch of wordChars) {
       const key = `${word.id}:${ch}`;
       if (seen.has(key)) continue;
       seen.add(key);
@@ -48,7 +49,9 @@ function buildStrokeTasks(words: HskWordRow[], minTasks = 6): StrokeTask[] {
         word: zh,
         pinyin: word.pinyin?.trim() ?? "—",
         meaning: word.meaning_mn?.trim() ?? "—",
-        radical: word.radical,
+        // The catalog radical belongs to the whole word — attributing it to
+        // every character of a multi-char word teaches wrong radicals.
+        radical: wordChars.length === 1 ? word.radical : null,
       });
     }
   }

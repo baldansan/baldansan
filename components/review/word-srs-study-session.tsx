@@ -17,7 +17,7 @@ import {
   type MouseEvent,
 
   type ReactNode,
-
+  useRef,
 } from "react";
 
 import { WordCharBreakdownPanel } from "@/components/review/word-char-breakdown-panel";
@@ -245,15 +245,25 @@ export function WordSrsStudySession({
 
 
 
+  const selectionSeededRef = useRef(false);
+
   useEffect(() => {
 
-    if (phase !== "summary" || selectedWordIds.size > 0) return;
+    if (phase !== "summary") {
+      selectionSeededRef.current = false;
+      return;
+    }
+
+    // Seed the default selection ONCE per summary visit — re-seeding on every
+    // empty state made "Арилгах" (clear all) impossible to use.
+    if (selectionSeededRef.current) return;
+    selectionSeededRef.current = true;
 
     const words = buildSessionWordRows(initialQueue, finalRatings);
 
     setSelectedWordIds(defaultSelectedWordIds(words));
 
-  }, [phase, finalRatings, initialQueue, selectedWordIds.size]);
+  }, [phase, finalRatings, initialQueue]);
 
 
 

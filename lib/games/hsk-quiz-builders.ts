@@ -154,10 +154,7 @@ export function buildExampleClozeDeck(
     .slice(0, size)
     .map((word) => {
       const correct = word.simplified;
-      const sentence = word.example_zh!.replace(
-        word.simplified,
-        "______"
-      );
+      const sentence = word.example_zh!.split(word.simplified).join("______");
       const wrong = pickDistractors(
         pool.filter((w) => w.id !== word.id),
         OPTION_COUNT - 1,
@@ -202,9 +199,13 @@ export function buildRadicalPickDeck(
 
   for (const word of shuffleArray(pool).slice(0, size)) {
     const correct = word.simplified;
-    const { icon, name } = radicalLabel(word.radical!.trim());
+    const targetRadical = word.radical!.trim();
+    const { icon, name } = radicalLabel(targetRadical);
     let wrong = pickDistractors(
-      pool.filter((w) => w.id !== word.id),
+      // A distractor with the SAME radical would also be a correct answer.
+      pool.filter(
+        (w) => w.id !== word.id && w.radical?.trim() !== targetRadical
+      ),
       OPTION_COUNT - 1,
       (w) => w.simplified,
       new Set([correct])
@@ -341,8 +342,10 @@ export function buildSrsMarathonDeck(
       ),
       8
     );
-    const match = deck.find((q) => q.id === word.id) ?? deck[0];
-    if (match) out.push(match);
+    const match = deck.find((q) => q.id === word.id);
+    if (match && !out.some((q) => q.id === match.id && q.kind === match.kind)) {
+      out.push(match);
+    }
   }
 
   return out.slice(0, size);

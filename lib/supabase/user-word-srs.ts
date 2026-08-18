@@ -365,7 +365,7 @@ export async function getUserWordSrsStats(
 
   const { data: srsRows, error: srsError } = await supabase
     .from("user_word_srs")
-    .select("reps, due_at, last_rating, word_id")
+    .select("reps, due_at, last_rating, word_id, updated_at")
     .eq("user_id", userId)
     .limit(5000);
 
@@ -380,8 +380,10 @@ export async function getUserWordSrsStats(
   ).length;
 
   const ratedToday = rows.filter((r) => {
-    const due = new Date(r.due_at as string);
-    return due >= todayStart && (r.reps as number) > 0;
+    const updated = r.updated_at ? new Date(r.updated_at as string) : null;
+    return (
+      updated != null && updated >= todayStart && r.last_rating != null
+    );
   }).length;
 
   const totalRated = rows.filter((r) => r.last_rating != null).length;
