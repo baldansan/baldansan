@@ -21,6 +21,7 @@ import {
 } from "react";
 
 import { SpeakerButton } from "@/components/tts/speaker-button";
+import { PronunciationPractice } from "@/components/speech/pronunciation-practice";
 import { WordCharBreakdownPanel } from "@/components/review/word-char-breakdown-panel";
 import { WordPracticeLauncher } from "@/components/review/word-practice-launcher";
 import { WordPracticeDonePanel } from "@/components/review/practice/word-practice-done-panel";
@@ -124,6 +125,10 @@ type Props = {
 };
 
 
+
+function isChineseWord(value: string | null | undefined): boolean {
+  return Boolean(value && /[㐀-鿿]/.test(value));
+}
 
 function dedupeQueue(items: WordSrsQueueItem[]): WordSrsQueueItem[] {
 
@@ -979,7 +984,13 @@ export function WordSrsStudySession({
 
       </div>
 
-
+      {isChineseWord(word.simplified) ? (
+        <PronunciationPractice
+          text={word.simplified}
+          pinyin={word.pinyin}
+          className="mt-3"
+        />
+      ) : null}
 
       {flipped ? (
 
