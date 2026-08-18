@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { DeleteAccountCard } from "@/components/account/delete-account-card";
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
 import { MobileCard } from "@/components/mobile/mobile-card";
 import { MobilePageHeader } from "@/components/mobile/mobile-page-header";
@@ -152,6 +153,14 @@ export function SettingsAppView() {
           Dark mode placeholder — одоогоор light app shell ашиглана.
         </p>
       </MobileCard>
+
+      {email ? <div className="mt-4"><DeleteAccountCard /></div> : null}
+
+      <p className="mt-4 text-center text-xs text-[var(--app-muted)]">
+        <Link href="/privacy" className="font-semibold text-emerald-600">
+          Нууцлалын бодлого
+        </Link>
+      </p>
 
       {!onboardingDone ? (
         <p className="mt-4 text-center text-xs text-[var(--app-muted)]">
