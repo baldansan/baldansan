@@ -40,7 +40,7 @@ export function ReportIssueLink({ lessonId = null, variant = "fab" }: Props) {
         className="bs-fb-report-inline"
         onClick={() => setOpen(true)}
       >
-        ❗ Алдаа мэдээлэх
+        💬 Алдаа мэдээлэх
       </button>
     );
   }
@@ -53,7 +53,7 @@ export function ReportIssueLink({ lessonId = null, variant = "fab" }: Props) {
         onClick={() => setOpen(true)}
         aria-label="Алдаа мэдээлэх"
       >
-        ❗
+        💬
       </button>
       {open ? (
         <div className="bs-fb-report-overlay" role="dialog" aria-modal="true">
