@@ -7,13 +7,26 @@ type BeforeInstallPromptEvent = Event & {
   userChoice: Promise<{ outcome: "accepted" | "dismissed" }>;
 };
 
+function isIosBrowser(): boolean {
+  if (typeof window === "undefined") return false;
+  const ua = window.navigator.userAgent;
+  const isIosDevice =
+    /iPad|iPhone|iPod/.test(ua) ||
+    // iPadOS 13+ reports as Mac with touch support.
+    (ua.includes("Macintosh") && window.navigator.maxTouchPoints > 1);
+  return isIosDevice;
+}
+
 export function PwaInstallCard({ className = "" }: { className?: string }) {
   const [deferred, setDeferred] = useState<BeforeInstallPromptEvent | null>(null);
   const [dismissed, setDismissed] = useState(false);
   const [installed, setInstalled] = useState(false);
+  const [isIos, setIsIos] = useState(false);
 
   useEffect(() => {
     if (typeof window === "undefined") return;
+
+    setIsIos(isIosBrowser());
 
     const standalone =
       window.matchMedia("(display-mode: standalone)").matches ||
@@ -47,6 +60,36 @@ export function PwaInstallCard({ className = "" }: { className?: string }) {
   }
 
   if (!deferred) {
+    if (isIos) {
+      return (
+        <section
+          className={`rounded-2xl bg-emerald-50 p-4 text-sm text-emerald-900 ring-1 ring-emerald-200 ${className}`}
+        >
+          <p className="font-semibold">iPhone/iPad дээр app шиг суулгах:</p>
+          <ol className="mt-2 list-inside list-decimal space-y-1 text-emerald-800">
+            <li>
+              Safari-ийн доод талын <strong>Share</strong>{" "}
+              <span aria-hidden>(⬆️ дөрвөлжин дотор сум)</span> товчийг дар
+            </li>
+            <li>
+              <strong>«Нүүр дэлгэцэд нэмэх» (Add to Home Screen)</strong>-ийг
+              сонго
+            </li>
+            <li>
+              Баруун дээд буланд <strong>Нэмэх (Add)</strong> дар — нүүр
+              дэлгэцэд app болж суугдана
+            </li>
+          </ol>
+          <button
+            type="button"
+            onClick={() => setDismissed(true)}
+            className="mt-3 rounded-full border border-emerald-200 bg-white px-4 py-1.5 text-xs font-semibold text-emerald-700"
+          >
+            Ойлголоо
+          </button>
+        </section>
+      );
+    }
     return (
       <section
         className={`rounded-2xl border border-dashed border-slate-200 bg-slate-50/80 p-4 text-sm text-slate-600 ${className}`}

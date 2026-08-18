@@ -9,6 +9,7 @@ const learnerLinks = [
   { href: "/help", label: LEARNER_NAV.help },
   { href: "/feedback", label: "Санал хүсэлт" },
   { href: "/pricing", label: "Үнийн санал" },
+  { href: "/privacy", label: "Нууцлалын бодлого" },
   { href: "/login", label: LEARNER_NAV.login },
   { href: "/profile", label: LEARNER_NAV.profile },
 ] as const;
