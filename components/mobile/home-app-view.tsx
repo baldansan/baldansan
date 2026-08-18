@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import { getSelectedLanguage } from "@/lib/learner-onboarding";
@@ -172,29 +173,46 @@ export function HomeAppView({ catalog, defaultChipId }: Props) {
 
   return (
     <MobileAppShell activeTab="home" mainClassName={SHELL_MAIN_NARROW}>
-      <div className="bs-tm-topbar">
-        <div className="bs-tm-hello">
-          Сайн уу 👋
-          <b>{displayName}</b>
-        </div>
-        <div className="bs-tm-streak-pill">
-          <span aria-hidden>🔥</span>
-          <div>
-            <b>{streak}</b>
-            <span>өдөр</span>
+      <section className="relative mb-4 overflow-hidden rounded-[24px] bg-gradient-to-br from-[#1FB85A] via-emerald-500 to-emerald-700 p-5 text-white shadow-[0_10px_30px_rgba(31,184,90,0.28)]">
+        <div
+          aria-hidden
+          className="absolute -right-10 -top-12 h-40 w-40 rounded-full bg-white/10"
+        />
+        <div
+          aria-hidden
+          className="absolute -bottom-14 -left-10 h-36 w-36 rounded-full bg-white/10"
+        />
+        <div className="relative z-10 flex items-center gap-3">
+          <div className="min-w-0 flex-1">
+            <p className="text-sm font-semibold text-emerald-50">Сайн уу 👋</p>
+            <p className="truncate text-2xl font-extrabold leading-tight">
+              {displayName}
+            </p>
+            <div className="mt-3 flex flex-wrap items-center gap-2">
+              <span className="inline-flex items-center gap-1.5 rounded-full bg-white/15 px-3 py-1.5 text-xs font-bold ring-1 ring-white/25">
+                <span aria-hidden>🔥</span>
+                {streak} өдөр
+              </span>
+              {!loggedIn ? (
+                <Link
+                  href="/login"
+                  className="inline-flex items-center rounded-full bg-white px-4 py-1.5 text-xs font-extrabold text-emerald-700 shadow-sm active:bg-emerald-50"
+                >
+                  Нэвтрэх →
+                </Link>
+              ) : null}
+            </div>
           </div>
+          <Image
+            src="/temee/temee-hero.png"
+            alt=""
+            width={104}
+            height={104}
+            priority
+            className="pointer-events-none -mb-8 -mr-1 h-[104px] w-[104px] shrink-0 select-none object-contain drop-shadow-[0_6px_12px_rgba(0,0,0,0.18)]"
+          />
         </div>
-      </div>
-
-
-      {!loggedIn ? (
-        <Link
-          href="/login"
-          className="mb-3 block text-center text-xs font-bold text-[#1fb85a]"
-        >
-          Нэвтрэх →
-        </Link>
-      ) : null}
+      </section>
 
       {activeCourse?.available && lessonIds.length > 0 ? (
         <Link href={continueHref} className="bs-tm-continue">
@@ -251,7 +269,22 @@ export function HomeAppView({ catalog, defaultChipId }: Props) {
       {selectedLang !== "ko" ? <HelzuiHomeCard /> : null}
 
       {activeCourse && !activeCourse.available ? (
-        <p className="bs-tm-catalog-empty">Энэ курс удахгүй нээгдэнэ.</p>
+        <div className="mt-2 flex flex-col items-center gap-3 rounded-[24px] bg-white px-6 py-8 text-center shadow-sm ring-1 ring-slate-100">
+          <Image
+            src="/temee/temee-think.png"
+            alt=""
+            width={112}
+            height={112}
+            className="h-28 w-28 rounded-[22px] object-cover"
+          />
+          <p className="text-sm font-bold text-[var(--app-text)]">
+            Энэ курс удахгүй нээгдэнэ
+          </p>
+          <p className="text-xs leading-5 text-[var(--app-muted)]">
+            Бид контентыг нь бэлдэж байна. Одоохондоо нээлттэй байгаа
+            хичээлүүдээс үргэлжлүүлээрэй.
+          </p>
+        </div>
       ) : activeCourse && lessons.length > 0 ? (
         <HomeLessonList
           heading={courseListHeading}
