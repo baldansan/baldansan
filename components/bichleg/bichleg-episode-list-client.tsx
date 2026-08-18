@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { BichlegVideoCard } from "@/components/temee/bichleg-video-card";
+import { youtubeThumbUrl } from "@/lib/bichleg/youtube-thumb";
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
 import { SHELL_MAIN_NARROW } from "@/lib/app-shell-classes";
 import {
@@ -138,6 +139,7 @@ export function BichlegEpisodeListClient({
                 titleMn={label}
                 titleZh={episode.title_zh}
                 hanzi={episodeHanzi(episode)}
+                coverUrl={youtubeThumbUrl(episode.youtube_id)}
                 thumbIndex={index}
                 episodeBadge={
                   episode.episode_no != null

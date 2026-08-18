@@ -34,41 +34,11 @@ const CHINESE_HSK_GAMES: GameCard[] = [
   {
     id: "hsk-vocab-quiz",
     slug: "hsk-vocab-quiz",
-    title: "Үгсийн дасгал",
-    desc: "Утга, ханз, пиньинь",
+    title: "Үгийн сорил",
+    desc: "Утга · пиньинь · бүрдэл · клоз",
     icon: "🎯",
     gradient: "linear-gradient(145deg, #14b8a6, #0d9488)",
     badge: "Quiz",
-    global: true,
-  },
-  {
-    id: "srs-marathon",
-    slug: "srs-marathon",
-    title: "SRS марафон",
-    desc: "Давталтын үгээр",
-    icon: "🏃",
-    gradient: "linear-gradient(145deg, #9b6bff, #6d28d9)",
-    badge: "SRS",
-    global: true,
-  },
-  {
-    id: "radical",
-    slug: "radical",
-    title: "Ханз задлах",
-    desc: "Бүрэлдэхүүн сонгох",
-    icon: "🧱",
-    gradient: "linear-gradient(145deg, #ff8a3d, #e65c2e)",
-    badge: "Задлах",
-    global: true,
-  },
-  {
-    id: "speed",
-    slug: "speed",
-    title: "Хурдны тэмцээн",
-    desc: "60 секундэд хэдэн зөв?",
-    icon: "⚡",
-    gradient: "linear-gradient(145deg, #ff6b9d, #db2777)",
-    badge: "Хурд",
     global: true,
   },
   {
@@ -81,7 +51,24 @@ const CHINESE_HSK_GAMES: GameCard[] = [
     badge: "Өдөр",
     global: true,
   },
+  {
+    id: "mock-tests",
+    slug: "mock-tests",
+    title: "Мок шалгалт",
+    desc: "HSK шалгалтын бэлтгэл",
+    icon: "🎓",
+    gradient: "linear-gradient(145deg, #9b6bff, #6d28d9)",
+    badge: "HSK",
+    global: true,
+  },
 ];
+
+/** Secondary variants kept as small links — not primary tiles. */
+const EXTRA_GAME_LINKS = [
+  { slug: "speed", label: "⚡ Хурдны тэмцээн" },
+  { slug: "radical", label: "🧱 Ханз задлах" },
+  { slug: "srs-marathon", label: "🏃 SRS марафон" },
+] as const;
 
 function gamesForLanguage(
   lang: SelectedLanguage | null,
@@ -98,25 +85,7 @@ function gamesForLanguage(
       desc: labels.matchDesc,
       icon: "🔗",
       gradient: "linear-gradient(145deg, #9b6bff, #6d28d9)",
-      badge: "Шинэ",
-    },
-    {
-      id: "translate",
-      slug: "translate",
-      title: labels.translateTitle,
-      desc: labels.translateDesc,
-      icon: "🌐",
-      gradient: "linear-gradient(145deg, #4d9fff, #2563eb)",
-      badge: "Шинэ",
-    },
-    {
-      id: "missing-word",
-      slug: "missing-word",
-      title: labels.missingWordTitle,
-      desc: labels.missingWordDesc,
-      icon: "✏️",
-      gradient: "linear-gradient(145deg, #ff8a3d, #e65c2e)",
-      badge: "Шинэ",
+      badge: "Хос",
     },
     {
       id: "arrange",
@@ -125,7 +94,7 @@ function gamesForLanguage(
       desc: labels.arrangeDesc,
       icon: "🔢",
       gradient: "linear-gradient(145deg, #1fb85a, #0e9c47)",
-      badge: "Шинэ",
+      badge: "Дараалал",
     },
     {
       id: "stroke",
@@ -134,7 +103,7 @@ function gamesForLanguage(
       desc: labels.strokeDesc,
       icon: "🖊️",
       gradient: "linear-gradient(145deg, #ff6b9d, #db2777)",
-      badge: "Шинэ",
+      badge: "Бүрдэл",
     },
   ];
 }
@@ -237,7 +206,7 @@ export function GamesAppView({ lessonIds, lessonTitles }: Props) {
 
       {lang === "zh" ? (
         <>
-          <p className="bs-tm-sec">HSK тоглоомууд</p>
+          <p className="bs-tm-sec">Тоглоомууд</p>
           <div className="bs-tm-game-grid">
             {CHINESE_HSK_GAMES.map((game) => (
               <GameTile
@@ -275,6 +244,20 @@ export function GamesAppView({ lessonIds, lessonTitles }: Props) {
           return <GameTile key={game.id} game={game} href={href} />;
         })}
       </div>
+
+      {lang === "zh" ? (
+        <div className="mt-4 flex flex-wrap gap-2 pb-6">
+          {EXTRA_GAME_LINKS.map((link) => (
+            <Link
+              key={link.slug}
+              href={`/games/${link.slug}`}
+              className="rounded-full bg-white px-4 py-2 text-xs font-semibold text-slate-600 ring-1 ring-slate-200"
+            >
+              {link.label}
+            </Link>
+          ))}
+        </div>
+      ) : null}
     </MobileAppShell>
   );
 }

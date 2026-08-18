@@ -196,7 +196,7 @@ export function ProfileSrsStats({
 
       {isChinese ? (
         <Link
-          href="/games/meaning"
+          href="/games/hsk-vocab-quiz?types=meaning"
           className="bs-tm-card mt-2"
         >
           <span className="bs-tm-card-ic bs-tm-card-ic--purple" aria-hidden>
