@@ -55,6 +55,13 @@ import {
 
 } from "@/lib/srs/local-word-srs";
 
+import {
+  clearSessionResume,
+  queueSignature,
+  readSessionResume,
+  writeSessionResume,
+} from "@/lib/srs/session-resume";
+
 import type { WordSrsQueueItem, WordSrsRating } from "@/lib/srs/word-srs-types";
 
 import { hasSupabaseConfig } from "@/lib/supabase/auth";
@@ -107,6 +114,12 @@ type Props = {
   onNextBatch?: () => void;
 
   nextBatchLabel?: string;
+
+  /**
+   * Өгвөл session-ий байрлалыг localStorage-д хадгалж,
+   * дундаас нь гарсан бол дараагийн удаа тэр картаас үргэлжлүүлнэ.
+   */
+  resumeKey?: string;
 
 };
 
@@ -175,6 +188,8 @@ export function WordSrsStudySession({
 
   nextBatchLabel,
 
+  resumeKey,
+
 }: Props) {
 
   const [phase, setPhase] = useState<SessionPhase>(
@@ -186,6 +201,12 @@ export function WordSrsStudySession({
   const [queue, setQueue] = useState(initialQueue);
 
   const [practiceQueue, setPracticeQueue] = useState<WordSrsQueueItem[]>([]);
+
+  // Багцын гарын үсэг — resume бичлэг өөр багцад таарахаас сэргийлнэ.
+  const resumeSig = useMemo(
+    () => queueSignature(initialQueue.map((item) => item.word.id)),
+    [initialQueue]
+  );
 
   const [index, setIndex] = useState(0);
 
@@ -217,6 +238,24 @@ export function WordSrsStudySession({
 
   const activeQueue = phase === "practice" ? practiceQueue : queue;
 
+  // Байрлал хадгалах: карт урагшлах бүрд бичнэ, session дуусахад арилгана.
+  useEffect(() => {
+    if (!resumeKey) return;
+    if (phase === "study") {
+      if (index > 0 && index < queue.length) {
+        writeSessionResume(resumeKey, {
+          sig: resumeSig,
+          index,
+          done: sessionDone,
+        });
+      }
+      return;
+    }
+    if (phase === "summary") {
+      clearSessionResume(resumeKey);
+    }
+  }, [resumeKey, phase, index, queue.length, sessionDone, resumeSig]);
+
 
 
   useEffect(() => {
@@ -225,11 +264,18 @@ export function WordSrsStudySession({
 
     setPracticeQueue([]);
 
-    setIndex(0);
+    // Дундаас нь гарсан бол хадгалсан байрлалаас үргэлжлүүлнэ.
+    const saved = resumeKey ? readSessionResume(resumeKey) : null;
+    const resumeIndex =
+      saved && saved.sig === resumeSig && saved.index < initialQueue.length
+        ? saved.index
+        : 0;
+
+    setIndex(resumeIndex);
 
     setFlipped(false);
 
-    setSessionDone(0);
+    setSessionDone(resumeIndex > 0 ? (saved?.done ?? 0) : 0);
 
     setFinalRatings(new Map());
 
@@ -242,7 +288,7 @@ export function WordSrsStudySession({
 
     setPhase(initialQueue.length === 0 ? "summary" : "study");
 
-  }, [initialQueue]);
+  }, [initialQueue, resumeKey, resumeSig]);
 
 
 
