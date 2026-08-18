@@ -8,6 +8,7 @@ import { recordWritingCharRemote } from "@/lib/analytics/learner-records";
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
 import { MobileCard } from "@/components/mobile/mobile-card";
 import { MobilePageHeader } from "@/components/mobile/mobile-page-header";
+import { SpeakerButton } from "@/components/tts/speaker-button";
 import "@/components/lesson/lesson-player.css";
 
 const PROGRESS_KEY = "buunduu-handwriting-progress-v1";
@@ -283,9 +284,18 @@ export function HandwritingCourseClient() {
         >
           <div className="max-h-[92vh] w-full max-w-[430px] overflow-y-auto rounded-t-3xl bg-white p-4 pb-[max(1rem,env(safe-area-inset-bottom))]">
             <div className="mb-2 flex items-center justify-between">
-              <p className="text-sm font-bold text-[var(--app-text)]">
-                {activeChar} · Бичих дасгал
-              </p>
+              <div className="flex items-center gap-2">
+                <p className="text-sm font-bold text-[var(--app-text)]">
+                  {activeChar} · Бичих дасгал
+                </p>
+                <SpeakerButton
+                  text={activeChar}
+                  lang="zh"
+                  size="sm"
+                  label="Дуудлага сонсох"
+                  showInlineError={false}
+                />
+              </div>
               <button
                 type="button"
                 onClick={() => setActiveChar(null)}

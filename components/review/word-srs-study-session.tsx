@@ -20,6 +20,7 @@ import {
   useRef,
 } from "react";
 
+import { SpeakerButton } from "@/components/tts/speaker-button";
 import { WordCharBreakdownPanel } from "@/components/review/word-char-breakdown-panel";
 import { WordPracticeLauncher } from "@/components/review/word-practice-launcher";
 import { WordPracticeDonePanel } from "@/components/review/practice/word-practice-done-panel";
@@ -873,13 +874,32 @@ export function WordSrsStudySession({
 
               <p className="bs-srs-hanzi-only">{word.simplified}</p>
 
+              <SpeakerButton
+                text={word.simplified}
+                lang="zh"
+                size="lg"
+                label="Дуудлага сонсох"
+                stopPropagation
+                showInlineError={false}
+              />
+
               <p className="bs-srs-tap-hint">Дарж харуулна</p>
 
             </div>
 
             <div className="bs-srs-flip-face bs-srs-flip-back">
 
-              <p className="bs-srs-pinyin">{word.pinyin ?? "—"}</p>
+              <div className="flex items-center justify-center gap-2">
+                <p className="bs-srs-pinyin">{word.pinyin ?? "—"}</p>
+                <SpeakerButton
+                  text={word.simplified}
+                  lang="zh"
+                  size="md"
+                  label="Дуудлага сонсох"
+                  stopPropagation
+                  showInlineError={false}
+                />
+              </div>
 
               <p className="bs-srs-meaning">{word.meaning_mn ?? "—"}</p>
 
