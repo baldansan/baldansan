@@ -15,6 +15,8 @@ type LevelKey = (typeof LEVEL_ORDER)[number];
 type HandwrittenData = Record<string, string[]>;
 type StoryEntry = { m: string; story: string };
 type StoriesData = Record<string, StoryEntry>;
+type HandwritingGroup = { title: string; radical: string; chars: string[] };
+type GroupsData = Record<string, HandwritingGroup[]>;
 
 function readProgress(): Set<string> {
   if (typeof window === "undefined") return new Set();
@@ -39,11 +41,13 @@ function writeProgress(done: Set<string>) {
 
 export function HandwritingCourseClient() {
   const [data, setData] = useState<HandwrittenData | null>(null);
+  const [groups, setGroups] = useState<GroupsData | null>(null);
   const [stories, setStories] = useState<StoriesData>({});
   const [loadError, setLoadError] = useState(false);
   const [level, setLevel] = useState<LevelKey>("1-2");
   const [done, setDone] = useState<Set<string>>(new Set());
   const [activeChar, setActiveChar] = useState<string | null>(null);
+  const [collapsed, setCollapsed] = useState<Set<string>>(new Set());
 
   useEffect(() => {
     let cancelled = false;
@@ -54,6 +58,14 @@ export function HandwritingCourseClient() {
       })
       .catch(() => {
         if (!cancelled) setLoadError(true);
+      });
+    fetch("/data/hsk30_handwriting_groups.json")
+      .then((r) => (r.ok ? r.json() : Promise.reject(new Error("load"))))
+      .then((json: GroupsData) => {
+        if (!cancelled) setGroups(json);
+      })
+      .catch(() => {
+        // Groups are an enhancement — the flat grid still works without them.
       });
     fetch("/data/hsk30_stories.json")
       .then((r) => (r.ok ? r.json() : {}))
@@ -69,7 +81,15 @@ export function HandwritingCourseClient() {
     };
   }, []);
 
-  const chars = useMemo(() => data?.[level] ?? [], [data, level]);
+  const levelGroups = useMemo(() => groups?.[level] ?? null, [groups, level]);
+  // Group order (simple → complex) when groups are available, flat list otherwise.
+  const chars = useMemo(
+    () =>
+      levelGroups
+        ? levelGroups.flatMap((g) => g.chars)
+        : (data?.[level] ?? []),
+    [levelGroups, data, level]
+  );
   const doneCount = useMemo(
     () => chars.filter((c) => done.has(c)).length,
     [chars, done]
@@ -82,13 +102,22 @@ export function HandwritingCourseClient() {
       writeProgress(next);
       return next;
     });
-    // Auto-advance to the next unwritten character.
+    // Auto-advance to the next unwritten character in group order.
     const idx = chars.indexOf(char);
     const nextChar =
       chars.slice(idx + 1).find((c) => !done.has(c) && c !== char) ??
       chars.find((c) => !done.has(c) && c !== char) ??
       null;
     setActiveChar(nextChar);
+  }
+
+  function toggleGroup(key: string) {
+    setCollapsed((prev) => {
+      const next = new Set(prev);
+      if (next.has(key)) next.delete(key);
+      else next.add(key);
+      return next;
+    });
   }
 
   return (
@@ -159,22 +188,85 @@ export function HandwritingCourseClient() {
             </p>
           </MobileCard>
 
-          <div className="grid grid-cols-6 gap-1.5 pb-6 sm:grid-cols-8">
-            {chars.map((c) => (
-              <button
-                key={c}
-                type="button"
-                onClick={() => setActiveChar(c)}
-                className={`flex aspect-square items-center justify-center rounded-xl text-xl font-semibold transition-colors ${
+          {levelGroups ? (
+            <div className="space-y-3 pb-6">
+              {levelGroups.map((group, gi) => {
+                const key = `${level}:${gi}`;
+                const isOpen = !collapsed.has(key);
+                const groupDone = group.chars.filter((c) =>
                   done.has(c)
-                    ? "bg-emerald-500 text-white"
-                    : "bg-white text-[var(--app-text)] ring-1 ring-slate-200 active:bg-emerald-50"
-                }`}
-              >
-                {c}
-              </button>
-            ))}
-          </div>
+                ).length;
+                const complete = groupDone === group.chars.length;
+                return (
+                  <section
+                    key={key}
+                    className="overflow-hidden rounded-2xl bg-white ring-1 ring-slate-200"
+                  >
+                    <button
+                      type="button"
+                      onClick={() => toggleGroup(key)}
+                      aria-expanded={isOpen}
+                      className="flex w-full items-center justify-between gap-2 px-4 py-3 text-left"
+                    >
+                      <span className="min-w-0">
+                        <span className="block truncate text-sm font-bold text-[var(--app-text)]">
+                          {group.title}
+                        </span>
+                        <span
+                          className={`block text-xs font-semibold ${
+                            complete
+                              ? "text-emerald-600"
+                              : "text-[var(--app-muted)]"
+                          }`}
+                        >
+                          {groupDone}/{group.chars.length} бичсэн
+                          {complete ? " ✓" : ""}
+                        </span>
+                      </span>
+                      <span className="shrink-0 text-xs text-[var(--app-muted)]">
+                        {isOpen ? "▲" : "▼"}
+                      </span>
+                    </button>
+                    {isOpen ? (
+                      <div className="grid grid-cols-6 gap-1.5 px-3 pb-3 sm:grid-cols-8">
+                        {group.chars.map((c) => (
+                          <button
+                            key={c}
+                            type="button"
+                            onClick={() => setActiveChar(c)}
+                            className={`flex aspect-square items-center justify-center rounded-xl text-xl font-semibold transition-colors ${
+                              done.has(c)
+                                ? "bg-emerald-500 text-white"
+                                : "bg-slate-50 text-[var(--app-text)] ring-1 ring-slate-200 active:bg-emerald-50"
+                            }`}
+                          >
+                            {c}
+                          </button>
+                        ))}
+                      </div>
+                    ) : null}
+                  </section>
+                );
+              })}
+            </div>
+          ) : (
+            <div className="grid grid-cols-6 gap-1.5 pb-6 sm:grid-cols-8">
+              {chars.map((c) => (
+                <button
+                  key={c}
+                  type="button"
+                  onClick={() => setActiveChar(c)}
+                  className={`flex aspect-square items-center justify-center rounded-xl text-xl font-semibold transition-colors ${
+                    done.has(c)
+                      ? "bg-emerald-500 text-white"
+                      : "bg-white text-[var(--app-text)] ring-1 ring-slate-200 active:bg-emerald-50"
+                  }`}
+                >
+                  {c}
+                </button>
+              ))}
+            </div>
+          )}
         </>
       )}
 
