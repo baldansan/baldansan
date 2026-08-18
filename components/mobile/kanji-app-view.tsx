@@ -101,6 +101,24 @@ export function KanjiAppView({ entries, lessonVocab, lang = null }: Props) {
 
       {lang !== "ko" ? (
         <Link
+          href="/dictionary"
+          className="mb-3 flex items-center gap-3 rounded-2xl bg-gradient-to-r from-sky-500 to-sky-600 px-4 py-3.5 text-white shadow-sm"
+        >
+          <span className="text-2xl" aria-hidden>
+            📖
+          </span>
+          <span className="min-w-0 flex-1">
+            <span className="block text-sm font-bold">Толь бичиг</span>
+            <span className="block text-xs text-sky-50">
+              Ханз · пиньинь · монголоор хайх — дуудлагатай
+            </span>
+          </span>
+          <span aria-hidden>›</span>
+        </Link>
+      ) : null}
+
+      {lang !== "ko" ? (
+        <Link
           href="/kanji/handwriting"
           className="mb-4 flex items-center gap-3 rounded-2xl bg-gradient-to-r from-emerald-500 to-emerald-600 px-4 py-3.5 text-white shadow-sm"
         >
