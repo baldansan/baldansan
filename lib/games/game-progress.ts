@@ -1,3 +1,4 @@
+import { recordGameResultRemote } from "@/lib/analytics/learner-records";
 import type { GameType } from "@/lib/games/game-types";
 
 export type GameResult = {
@@ -41,6 +42,8 @@ export function saveGameResult(result: GameResult): void {
   const results = readResults();
   results.push(result);
   writeResults(results);
+  // Server copy for logged-in learners (silent on failure; localStorage stays primary).
+  recordGameResultRemote(result);
 }
 
 export function getRecentGameResults(limit = 20): GameResult[] {

@@ -13,6 +13,7 @@ import { DAILY_SRS_GOAL, type WordSrsQueueItem } from "@/lib/srs/word-srs-types"
 import { fetchHskWordsByLevel } from "@/lib/supabase/hsk-words";
 import { getAuthenticatedUserId, hasSupabaseConfig } from "@/lib/supabase/auth";
 import { getDueWordQueue } from "@/lib/supabase/user-word-srs";
+import { useActivityTracker } from "@/lib/analytics/activity-tracker";
 
 type LoadState = "loading" | "ready" | "error";
 
@@ -22,6 +23,7 @@ type Props = {
 };
 
 export function ReviewSrsClient({ embedded = false }: Props) {
+  useActivityTracker("review", "daily");
   const { level: activeLevel, hydrated } = useActiveHskLevel();
   const [loadState, setLoadState] = useState<LoadState>("loading");
   const [error, setError] = useState<string | null>(null);

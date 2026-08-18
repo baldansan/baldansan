@@ -19,6 +19,7 @@ import { RadicalHanziPanel } from "@/components/games/radical-hanzi-panel";
 import { resolveGameLabels } from "@/lib/games/game-lesson-meta";
 import { saveGameResult } from "@/lib/games/game-progress";
 import { formatActiveHskLevel } from "@/lib/hsk/active-hsk-level";
+import { useActivityTracker } from "@/lib/analytics/activity-tracker";
 
 type Props = {
   lessonId: string;
@@ -42,6 +43,7 @@ export function RadicalChallengeClient({
   entries: entriesProp,
   onExitChallenge,
 }: Props) {
+  useActivityTracker("game", "radical-challenge");
   const { level: hskLevel } = useActiveHskLevel();
   const labels = resolveGameLabels(false, false);
 

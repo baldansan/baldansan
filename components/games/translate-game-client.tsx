@@ -14,6 +14,7 @@ import { saveGameResult } from "@/lib/games/game-progress";
 import { SpeakerButton } from "@/components/tts/speaker-button";
 import { resolveTtsLang } from "@/lib/tts/infer-lang";
 import type { GameVocabItem } from "@/lib/games/game-types";
+import { useActivityTracker } from "@/lib/analytics/activity-tracker";
 
 type Props = {
   lessonId: string;
@@ -32,6 +33,7 @@ export function TranslateGameClient({
   isPrelesson = false,
   labels: labelsProp,
 }: Props) {
+  useActivityTracker("game", "translate");
   const labels = labelsProp ?? resolveGameLabels(isKorean, isPrelesson);
   const gameContext = { isKorean, isPrelesson, vocabulary };
   const questions = useMemo(

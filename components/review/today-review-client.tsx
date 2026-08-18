@@ -15,6 +15,7 @@ import {
   getDueReviews,
 } from "@/lib/supabase/reviews";
 import { SrsRatingButtons } from "./srs-rating-buttons";
+import { useActivityTracker } from "@/lib/analytics/activity-tracker";
 
 type QueueEntry = {
   row: ReviewRow;
@@ -22,6 +23,7 @@ type QueueEntry = {
 };
 
 export function TodayReviewClient() {
+  useActivityTracker("review", "today");
   const [loadState, setLoadState] = useState<"loading" | "ready" | "error">(
     "loading"
   );

@@ -9,8 +9,10 @@ import {
   defaultGameWordSource,
 } from "@/lib/games/game-word-pool";
 import { getAuthenticatedUserId, hasSupabaseConfig } from "@/lib/supabase/auth";
+import { useActivityTracker } from "@/lib/analytics/activity-tracker";
 
 export function SrsMarathonClient() {
+  useActivityTracker("game", "srs-marathon");
   const { level: activeLevel, hydrated } = useActiveHskLevel();
   const [wordIds, setWordIds] = useState<string | null>(null);
   const [poolNote, setPoolNote] = useState<string | null>(null);

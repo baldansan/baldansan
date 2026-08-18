@@ -49,6 +49,7 @@ import {
   type BichlegVideoLayout,
 } from "@/lib/bichleg/video-layout";
 import type { BichlegWordStatus } from "@/lib/supabase/saved-words";
+import { useActivityTracker } from "@/lib/analytics/activity-tracker";
 import {
   fetchBichlegWordStatus,
   fetchVideoSubtitlesClient,
@@ -177,6 +178,8 @@ export function BichlegFeedClient({
   >({});
 
   const activeVideo = videos[activeIndex] ?? null;
+  // Time-on-video (Оюу оноо): re-keys per active video in the feed.
+  useActivityTracker("video", activeVideo?.id ?? null, Boolean(activeVideo));
 
   useEffect(() => {
     const ids = [...new Set(videos.map((v) => v.youtube_id))];

@@ -3,6 +3,8 @@
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import { CharacterWriter } from "@/components/hanzi/CharacterWriter";
+import { useActivityTracker } from "@/lib/analytics/activity-tracker";
+import { recordWritingCharRemote } from "@/lib/analytics/learner-records";
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
 import { MobileCard } from "@/components/mobile/mobile-card";
 import { MobilePageHeader } from "@/components/mobile/mobile-page-header";
@@ -48,6 +50,8 @@ export function HandwritingCourseClient() {
   const [done, setDone] = useState<Set<string>>(new Set());
   const [activeChar, setActiveChar] = useState<string | null>(null);
   const [collapsed, setCollapsed] = useState<Set<string>>(new Set());
+
+  useActivityTracker("writing", level);
 
   useEffect(() => {
     let cancelled = false;
@@ -96,6 +100,7 @@ export function HandwritingCourseClient() {
   );
 
   function markDone(char: string) {
+    recordWritingCharRemote(char);
     setDone((prev) => {
       const next = new Set(prev);
       next.add(char);

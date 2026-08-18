@@ -1,5 +1,6 @@
 import nextDynamic from "next/dynamic";
 import { notFound } from "next/navigation";
+import { ActivityTracker } from "@/components/analytics/activity-tracker";
 import { LessonUnavailable } from "@/components/lesson-unavailable";
 import {
   findNextLessonId,
@@ -99,23 +100,33 @@ export default async function LessonTrainingPage({
     : await getPublicLessonSummariesByCourseId(lesson.courseId);
   const nextLessonId = findNextLessonId(lesson.id, courseLessons);
 
+  const tracker = (
+    <ActivityTracker surface="lesson" refId={lesson.id} enabled={!adminPreview} />
+  );
+
   if (isHskStructuredLesson(lesson)) {
     return (
-      <HskGuidedLessonPlayer
+      <>
+        {tracker}
+        <HskGuidedLessonPlayer
+          lesson={lesson}
+          nextLessonId={nextLessonId}
+          adminPreview={adminPreview}
+          routeLessonId={routeLessonId}
+        />
+      </>
+    );
+  }
+
+  return (
+    <>
+      {tracker}
+      <GuidedLessonPlayer
         lesson={lesson}
         nextLessonId={nextLessonId}
         adminPreview={adminPreview}
         routeLessonId={routeLessonId}
       />
-    );
-  }
-
-  return (
-    <GuidedLessonPlayer
-      lesson={lesson}
-      nextLessonId={nextLessonId}
-      adminPreview={adminPreview}
-      routeLessonId={routeLessonId}
-    />
+    </>
   );
 }

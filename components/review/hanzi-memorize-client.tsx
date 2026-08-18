@@ -13,6 +13,7 @@ import type { WordSrsQueueItem } from "@/lib/srs/word-srs-types";
 import type { HskWordRow } from "@/lib/supabase/hsk-words";
 import { getAuthenticatedUserId, hasSupabaseConfig } from "@/lib/supabase/auth";
 import { countStudiedAmongWordIds } from "@/lib/supabase/user-word-srs";
+import { useActivityTracker } from "@/lib/analytics/activity-tracker";
 
 type WizardStep = "level" | "batch" | "study";
 
@@ -39,6 +40,7 @@ type Props = {
 };
 
 export function HanziMemorizeClient({ restoreLevel }: Props = {}) {
+  useActivityTracker("review", "memorize");
   const [step, setStep] = useState<WizardStep>("level");
   const [level, setLevel] = useState<ActiveHskLevel | null>(null);
   const [batches, setBatches] = useState<BatchSummary[]>([]);
