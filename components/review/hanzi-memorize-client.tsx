@@ -9,6 +9,7 @@ import {
   type ActiveHskLevel,
 } from "@/lib/hsk/active-hsk-level";
 import { countLocalStudiedAmong } from "@/lib/srs/local-word-srs";
+import { hasSessionResume } from "@/lib/srs/session-resume";
 import type { WordSrsQueueItem } from "@/lib/srs/word-srs-types";
 import type { HskWordRow } from "@/lib/supabase/hsk-words";
 import { getAuthenticatedUserId, hasSupabaseConfig } from "@/lib/supabase/auth";
@@ -41,6 +42,17 @@ function batchLabel(batch: BatchSummary): string {
     return `${batch.icon ?? ""} ${batch.title}`.trim();
   }
   return `Багц ${batch.batchIndex + 1} · ${batch.firstSimplified ?? ""} → ${batch.lastSimplified ?? ""}`;
+}
+
+/** Зураглалын зангилааны нэр (icon-гүй — icon нь дугуйд орно). */
+function nodeTitle(batch: BatchSummary): string {
+  if (batch.groupId && batch.title) return batch.title;
+  return `Багц ${batch.batchIndex + 1}`;
+}
+
+function resumeKeyFor(level: ActiveHskLevel, batch: BatchSummary): string {
+  const group = batch.groupId ?? `batch-${batch.batchIndex}`;
+  return `memorize:${toCatalogLevel(level)}:${group}`;
 }
 
 type Props = {
@@ -224,6 +236,7 @@ export function HanziMemorizeClient({ restoreLevel }: Props = {}) {
         <WordSrsStudySession
           queue={studyQueue}
           userId={userId}
+          resumeKey={resumeKeyFor(level, activeBatch)}
           title="Ханз цээжлэх"
           subtitle={`${hskLabel} · ${batchLabel(activeBatch)}`}
           hskLevelLabel={hskLabel}
@@ -259,34 +272,93 @@ export function HanziMemorizeClient({ restoreLevel }: Props = {}) {
   }
 
   if (step === "batch" && level) {
+    const hskLabel = formatActiveHskLevel(level);
+    const totalStudied = batches.reduce((sum, b) => sum + b.studiedCount, 0);
+    const passPercent =
+      totalWords > 0
+        ? Math.min(100, Math.round((totalStudied / totalWords) * 100))
+        : 0;
+    const currentIdx = batches.findIndex(
+      (b) => b.wordIds.length > 0 && b.studiedCount < b.wordIds.length
+    );
+
     return (
       <div className="bs-mem-wizard">
         <button type="button" onClick={goBack} className="bs-mem-back">
           ← HSK түвшин
         </button>
         <h2 className="bs-mem-step-title">
-          {batchMode === "themes" ? "Сэдэв сонгох" : "Багц сонгох"}
+          {batchMode === "themes" ? "Цээжлэх зам 🗺️" : "Багц сонгох"}
         </h2>
         <p className="bs-mem-step-sub">
-          {formatActiveHskLevel(level)} · {totalWords} үг ·{" "}
+          {hskLabel} · {totalWords} үг ·{" "}
           {batchMode === "themes" ? "сэдвээр бүлэглэсэн" : "пиньинь дарааллаар"}
         </p>
-        <ul className="bs-mem-batch-list">
-          {batches.map((b) => (
-            <li key={b.batchIndex}>
-              <button
-                type="button"
-                className="bs-mem-batch-btn"
-                onClick={() => void handleSelectBatch(b)}
+
+        <div className="bs-mem-pass-card">
+          <div className="bs-mem-pass-top">
+            <span>🎯 {hskLabel} давах бэлтгэл</span>
+            <span className="bs-mem-pass-pct">{passPercent}%</span>
+          </div>
+          <div className="bs-mem-pass-bar">
+            <span style={{ width: `${passPercent}%` }} />
+          </div>
+          <p className="bs-mem-pass-hint">
+            {totalStudied}/{totalWords} үг үзсэн — үг бүр таны хувийг өсгөнө!
+          </p>
+        </div>
+
+        <ol className="bs-mem-map">
+          {batches.map((b, i) => {
+            const total = b.wordIds.length;
+            const isDone = total > 0 && b.studiedCount >= total;
+            const isCurrent = i === currentIdx;
+            const isStarted = b.studiedCount > 0 && !isDone;
+            const canResume = hasSessionResume(resumeKeyFor(level, b));
+            const pct =
+              total > 0 ? Math.round((b.studiedCount / total) * 100) : 0;
+            const state = isDone
+              ? "done"
+              : isCurrent
+                ? "current"
+                : isStarted
+                  ? "started"
+                  : "todo";
+            return (
+              <li
+                key={b.groupId ?? b.batchIndex}
+                className={`bs-mem-map-node bs-mem-map-${state}`}
+                data-pos={i % 4}
               >
-                <span className="bs-mem-batch-label">{batchLabel(b)}</span>
-                <span className="bs-mem-batch-progress">
-                  {b.studiedCount}/{b.wordIds.length} сурсан
-                </span>
-              </button>
-            </li>
-          ))}
-        </ul>
+                <button
+                  type="button"
+                  className="bs-mem-map-btn"
+                  onClick={() => void handleSelectBatch(b)}
+                >
+                  {isCurrent ? (
+                    <span className="bs-mem-map-here">
+                      {canResume ? "▶ Үргэлжлүүлэх" : "Та энд байна"}
+                    </span>
+                  ) : null}
+                  <span
+                    className="bs-mem-map-ring"
+                    style={{
+                      background: `conic-gradient(#10b981 ${pct}%, #e2e8f0 0)`,
+                    }}
+                  >
+                    <span className="bs-mem-map-circle" aria-hidden>
+                      {isDone ? "⭐" : (b.icon ?? "📦")}
+                    </span>
+                  </span>
+                  <span className="bs-mem-map-title">{nodeTitle(b)}</span>
+                  <span className="bs-mem-map-count">
+                    {b.studiedCount}/{total} үзсэн
+                  </span>
+                </button>
+              </li>
+            );
+          })}
+        </ol>
       </div>
     );
   }
