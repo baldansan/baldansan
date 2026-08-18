@@ -223,18 +223,18 @@ export function ProfileDashboard() {
         <AchievementList />
 
         <section className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:p-6">
-          <h2 className="text-lg font-semibold text-slate-900">Engagement shortcuts</h2>
+          <h2 className="text-lg font-semibold text-slate-900">Миний хэрэгслүүд</h2>
           <div className="mt-4 flex flex-wrap gap-2">
-            <Link href="/reminders" className="rounded-full border border-emerald-200 bg-emerald-50 px-4 py-2 text-sm font-semibold text-emerald-800">Reminders</Link>
-            <Link href="/weekly-report" className="rounded-full border border-emerald-200 bg-emerald-50 px-4 py-2 text-sm font-semibold text-emerald-800">Weekly report</Link>
-            <Link href="/notifications" className="rounded-full border border-emerald-200 bg-emerald-50 px-4 py-2 text-sm font-semibold text-emerald-800">Notifications</Link>
+            <Link href="/reminders" className="rounded-full border border-emerald-200 bg-emerald-50 px-4 py-2 text-sm font-semibold text-emerald-800">Сануулга</Link>
+            <Link href="/weekly-report" className="rounded-full border border-emerald-200 bg-emerald-50 px-4 py-2 text-sm font-semibold text-emerald-800">7 хоногийн тайлан</Link>
+            <Link href="/notifications" className="rounded-full border border-emerald-200 bg-emerald-50 px-4 py-2 text-sm font-semibold text-emerald-800">Мэдэгдэл</Link>
             <Link href="/study-plan" className="rounded-full border border-emerald-200 bg-emerald-50 px-4 py-2 text-sm font-semibold text-emerald-800">Сурах төлөвлөгөө</Link>
             {features.b2b ? (
-              <Link href="/my-assignments" className="rounded-full border border-emerald-200 bg-emerald-50 px-4 py-2 text-sm font-semibold text-emerald-800">My assignments</Link>
+              <Link href="/my-assignments" className="rounded-full border border-emerald-200 bg-emerald-50 px-4 py-2 text-sm font-semibold text-emerald-800">Миний даалгавар</Link>
             ) : null}
           </div>
           <p className="mt-3 text-xs text-slate-500">
-            Notification preferences (push/email) — ирээдүйд нэмэгдэнэ. Одоогоор in-app only.
+            Push/имэйл мэдэгдэл ирээдүйд нэмэгдэнэ.
           </p>
         </section>
 

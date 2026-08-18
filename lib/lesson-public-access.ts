@@ -52,16 +52,9 @@ export async function resolveLessonPageAccess(
   if (wantsAdminPreview) {
     const adminLesson = await getAdminLessonById(normalizedId);
 
-    if (adminLesson) {
-      const publishStatus = getLessonPublishStatus(adminLesson);
-
-      if (publishStatus !== "available") {
-        return { kind: "ok", lesson: adminLesson, adminPreview: true };
-      }
-
-      if (isAdmin) {
-        return { kind: "ok", lesson: adminLesson, adminPreview: true };
-      }
+    if (adminLesson && isAdmin) {
+      // Draft/archived lessons are only ever returned to verified admins.
+      return { kind: "ok", lesson: adminLesson, adminPreview: true };
     }
 
     const routeStatus = await getLessonRouteStatus(normalizedId);

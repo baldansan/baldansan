@@ -2,6 +2,9 @@ import "server-only";
 
 import { isAdminRole } from "@/lib/supabase/admin";
 import { createServerSupabaseClient } from "@/lib/supabase/server";
+/** Dev-only diagnostics — never log user ids/roles in production. */
+const debugWarn: (...args: unknown[]) => void =
+  process.env.NODE_ENV === "development" ? console.warn : () => {};
 
 async function resolveServerUserId(
   client: NonNullable<Awaited<ReturnType<typeof createServerSupabaseClient>>>
@@ -29,13 +32,13 @@ export async function isCurrentUserAdminServer(): Promise<boolean> {
   try {
     const userId = await resolveServerUserId(client);
     if (!userId) {
-      console.warn("[admin-server] No authenticated user for admin check");
+      debugWarn("[admin-server] No authenticated user for admin check");
       return false;
     }
 
     const { data: isAdminRpc, error: rpcError } = await client.rpc("is_admin");
     if (!rpcError && typeof isAdminRpc === "boolean") {
-      console.warn("[admin-server] Admin check via is_admin RPC", {
+      debugWarn("[admin-server] Admin check via is_admin RPC", {
         userId,
         isAdmin: isAdminRpc,
       });
@@ -49,7 +52,7 @@ export async function isCurrentUserAdminServer(): Promise<boolean> {
       .maybeSingle();
 
     if (profileError || !profile) {
-      console.warn("[admin-server] Admin profile lookup failed", {
+      debugWarn("[admin-server] Admin profile lookup failed", {
         userId,
         message: profileError?.message ?? "no profile row",
       });
@@ -57,14 +60,14 @@ export async function isCurrentUserAdminServer(): Promise<boolean> {
     }
 
     const isAdmin = isAdminRole(profile.role);
-    console.warn("[admin-server] Admin check via admin_profiles", {
+    debugWarn("[admin-server] Admin check via admin_profiles", {
       userId,
       role: profile.role,
       isAdmin,
     });
     return isAdmin;
   } catch (error) {
-    console.warn("[admin-server] Admin check failed", { error });
+    debugWarn("[admin-server] Admin check failed", { error });
     return false;
   }
 }

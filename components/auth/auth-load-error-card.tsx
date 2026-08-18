@@ -78,12 +78,6 @@ export function AuthLoadErrorCard({
             Дахин оролдох
           </button>
         ) : null}
-        <Link
-          href="/debug/local-health"
-          className="inline-flex rounded-full border border-slate-200 px-5 py-2.5 text-sm font-semibold text-slate-700"
-        >
-          Local health
-        </Link>
         {!result.sessionPresent ? (
           <Link
             href="/login"
