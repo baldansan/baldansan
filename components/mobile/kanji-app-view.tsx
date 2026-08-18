@@ -99,6 +99,26 @@ export function KanjiAppView({ entries, lessonVocab, lang = null }: Props) {
         badge={`${entries.length}`}
       />
 
+      {lang !== "ko" ? (
+        <Link
+          href="/kanji/handwriting"
+          className="mb-4 flex items-center gap-3 rounded-2xl bg-gradient-to-r from-emerald-500 to-emerald-600 px-4 py-3.5 text-white shadow-sm"
+        >
+          <span className="text-2xl" aria-hidden>
+            ✍️
+          </span>
+          <span className="min-w-0 flex-1">
+            <span className="block text-sm font-bold">
+              Бичих сургалт · 写字练习
+            </span>
+            <span className="block text-xs text-emerald-50">
+              HSK 3.0 — гараар бичиж сурах ёстой 1200 ханз
+            </span>
+          </span>
+          <span aria-hidden>›</span>
+        </Link>
+      ) : null}
+
       <div className="mb-4">
         <input
           type="search"

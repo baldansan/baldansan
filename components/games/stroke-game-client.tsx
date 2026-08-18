@@ -17,7 +17,7 @@ import {
   HANZI_WRITING_LABELS,
   resolveLessonPracticeHanzi,
 } from "@/lib/hanzi/writing-practice";
-import type { GameVocabItem } from "@/lib/games/game-types";
+import type { GameVocabItem, StrokeQuestion } from "@/lib/games/game-types";
 import type { HskCharacterNote } from "@/lib/lesson/hsk-lesson-content";
 
 type Props = {
@@ -27,6 +27,8 @@ type Props = {
   isPrelesson?: boolean;
   labels?: GameLabels;
   hskCharacterNotes?: HskCharacterNote[];
+  /** Precomputed on the server (full breakdown catalog); client fallback otherwise. */
+  initialQuestions?: StrokeQuestion[];
 };
 
 export function StrokeGameClient({
@@ -36,12 +38,16 @@ export function StrokeGameClient({
   isPrelesson = false,
   labels: labelsProp,
   hskCharacterNotes = [],
+  initialQuestions,
 }: Props) {
   const labels = labelsProp ?? resolveGameLabels(isKorean, isPrelesson);
   const gameContext = { isKorean, isPrelesson, hskCharacterNotes };
   const questions = useMemo(
-    () => buildStrokeGameItems(vocabulary, 6, gameContext),
-    [vocabulary, isKorean, isPrelesson, hskCharacterNotes]
+    () =>
+      initialQuestions && initialQuestions.length > 0
+        ? initialQuestions
+        : buildStrokeGameItems(vocabulary, 6, gameContext),
+    [initialQuestions, vocabulary, isKorean, isPrelesson, hskCharacterNotes]
   );
   const [index, setIndex] = useState(0);
   const [selected, setSelected] = useState<string | null>(null);
@@ -88,15 +94,17 @@ export function StrokeGameClient({
     setSelected(option);
     setRevealed(true);
     const isCorrect = option === current.correctComponent;
-    const nextCorrect = isCorrect ? correctCount + 1 : correctCount;
     if (isCorrect) {
       setCorrectCount((c) => c + 1);
       setScore((s) => s + 10);
     }
-    if (index >= total - 1) finishGame(nextCorrect);
   }
 
   function handleNext() {
+    if (index >= total - 1) {
+      finishGame(correctCount);
+      return;
+    }
     setIndex((i) => i + 1);
     setSelected(null);
     setRevealed(false);
@@ -243,13 +251,13 @@ export function StrokeGameClient({
               {HANZI_WRITING_LABELS.traceWriteLong}
             </Link>
           ) : null}
-          {revealed && index < total - 1 ? (
+          {revealed ? (
             <button
               type="button"
               onClick={handleNext}
               className="mt-4 min-h-[48px] w-full app-btn-primary py-3"
             >
-              Дараах
+              {index < total - 1 ? "Дараах" : "Дуусгах"}
             </button>
           ) : null}
         </>

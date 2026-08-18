@@ -374,7 +374,8 @@ function noteToCharacterData(note: HskCharacterNote): HanziCharacterData | null 
 export function resolveHanziCharacterData(
   character: string,
   vocabulary: GameVocabItem[],
-  characterNotes: HskCharacterNote[] = []
+  characterNotes: HskCharacterNote[] = [],
+  extraCatalog: Record<string, HanziCharacterData> = {}
 ): HanziCharacterData | null {
   const char = character.trim();
   if (!char || char.length !== 1) return null;
@@ -387,13 +388,19 @@ export function resolveHanziCharacterData(
 
   const builtIn = ALL_CATALOG[char];
   if (builtIn) {
-    const vocabWord = vocabulary.find((w) => w.chinese.includes(char));
+    // Only override with vocabulary values when the vocabulary entry IS this
+    // exact character — word-level pinyin/meaning (e.g. 你好) must never be
+    // shown as the reading of a single glyph (好).
+    const exactWord = vocabulary.find((w) => w.chinese.trim() === char);
     return {
       ...builtIn,
-      pinyin: vocabWord?.pinyin || builtIn.pinyin,
-      meaningMn: vocabWord?.mongolian || builtIn.meaningMn,
+      pinyin: exactWord?.pinyin || builtIn.pinyin,
+      meaningMn: exactWord?.mongolian || builtIn.meaningMn,
     };
   }
+
+  const extra = extraCatalog[char];
+  if (extra) return extra;
 
   return null;
 }

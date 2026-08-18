@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useCallback, useEffect, useId, useRef, useState } from "react";
 import HanziWriter from "hanzi-writer";
+import { localHanziCharDataLoader } from "@/lib/hanzi/character-data-loader";
 import { HANZI_WRITING_LABELS } from "@/lib/hanzi/writing-practice";
 
 type PracticeMode = "idle" | "animating" | "quiz" | "success";
@@ -43,7 +44,9 @@ export function HanziWriterPractice({
 
     async function init() {
       try {
-        await HanziWriter.loadCharacterData(character);
+        await HanziWriter.loadCharacterData(character, {
+          charDataLoader: localHanziCharDataLoader,
+        });
         if (cancelled) return;
 
         const mount = document.getElementById(containerId);
@@ -57,8 +60,10 @@ export function HanziWriterPractice({
           showOutline: true,
           strokeAnimationSpeed: 1,
           drawingColor: "#059669",
+          drawingWidth: 10,
           outlineColor: "#d1d5db",
           highlightColor: "#10b981",
+          charDataLoader: localHanziCharDataLoader,
         });
 
         await resetWriterSurface(writer);
@@ -90,7 +95,8 @@ export function HanziWriterPractice({
     writer.cancelQuiz();
     setMode("animating");
     await writer.animateCharacter({
-      onComplete: () => {
+      onComplete: (result?: { canceled?: boolean }) => {
+        if (result?.canceled) return;
         void resetWriterSurface(writer);
         setMode("idle");
       },
@@ -104,7 +110,9 @@ export function HanziWriterPractice({
     await resetWriterSurface(writer);
     setMode("quiz");
     await writer.quiz({
-      showHintAfterMisses: 3,
+      leniency: 1.3,
+      showHintAfterMisses: 2,
+      markStrokeCorrectAfterMisses: 5,
       highlightOnComplete: true,
       onComplete: () => setMode("success"),
     });
@@ -117,17 +125,18 @@ export function HanziWriterPractice({
     setMode("idle");
   }
 
-  if (loading) {
-    return (
-      <p className="py-12 text-center text-sm text-[var(--app-muted)]">
-        {HANZI_WRITING_LABELS.loading}
-      </p>
-    );
-  }
+  const showFallback = dataAvailable === false;
 
-  if (dataAvailable === false) {
-    return (
-      <div className="text-center">
+  return (
+    <div>
+      {loading ? (
+        <p className="py-4 text-center text-sm text-[var(--app-muted)]">
+          {HANZI_WRITING_LABELS.loading}
+        </p>
+      ) : null}
+
+      {showFallback ? (
+        <div className="text-center">
         {strokeOrderImageUrl ? (
           <div className="relative mx-auto mb-4 h-64 w-64">
             <Image
@@ -151,12 +160,10 @@ export function HanziWriterPractice({
             {HANZI_WRITING_LABELS.done}
           </button>
         ) : null}
-      </div>
-    );
-  }
+        </div>
+      ) : null}
 
-  return (
-    <div>
+      <div style={loading || showFallback ? { display: "none" } : undefined}>
       <p className="mb-2 text-center text-xs font-semibold uppercase tracking-wide text-emerald-700">
         {HANZI_WRITING_LABELS.strokeOrder}
       </p>
@@ -219,6 +226,7 @@ export function HanziWriterPractice({
         >
           {HANZI_WRITING_LABELS.done}
         </button>
+      </div>
       </div>
     </div>
   );

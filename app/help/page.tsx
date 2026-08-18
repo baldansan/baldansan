@@ -65,6 +65,26 @@ export default function HelpPage() {
         ))}
       </div>
 
+      <article className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:rounded-3xl">
+        <h2 className="font-semibold text-slate-900">
+          Нээлттэй эх сурвалжууд
+        </h2>
+        <p className="mt-2 text-sm leading-6 text-slate-600">
+          Ханзны зурлагын өгөгдөл: Hanzi Writer / Make Me a Hanzi (MIT, Arphic
+          PL). HSK 3.0 үг, ханз, бичгийн жагсаалт:{" "}
+          <a
+            href="https://github.com/krmanik/HSK-3.0"
+            className="font-semibold text-emerald-700"
+            target="_blank"
+            rel="noreferrer"
+          >
+            krmanik/HSK-3.0
+          </a>{" "}
+          (CC BY-SA 4.0), CC-CEDICT толь (CC BY-SA 4.0). Эдгээр өгөгдлөөс
+          үүсмэл жагсаалтууд мөн CC BY-SA 4.0 нөхцөлтэй.
+        </p>
+      </article>
+
       <p className="text-xs text-slate-500">{AUDIO_CMN_ATTRIBUTION}</p>
 
       <section className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">

@@ -43,7 +43,11 @@ function readStore(): LocalSrsStore {
 
 function writeStore(store: LocalSrsStore) {
   if (typeof window === "undefined") return;
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(store));
+  try {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(store));
+  } catch {
+    // Storage full/unavailable — rating still applies in-memory for session.
+  }
 }
 
 function srsKey(wordId: number): string {
@@ -151,7 +155,11 @@ function readSessionForgot(): Set<number> {
 
 function writeSessionForgot(ids: Set<number>) {
   if (typeof window === "undefined") return;
-  sessionStorage.setItem(SESSION_KEY, JSON.stringify([...ids]));
+  try {
+    sessionStorage.setItem(SESSION_KEY, JSON.stringify([...ids]));
+  } catch {
+    // Storage unavailable — non-critical session hint only.
+  }
 }
 
 export function rateLocalWordSrs(
@@ -183,6 +191,7 @@ export function rateLocalWordSrs(
     interval_days: update.interval_days,
     due_at: update.due_at.toISOString(),
     last_rating: update.last_rating,
+    updated_at: new Date().toISOString(),
   };
 
   store.rows[key] = row;
@@ -220,8 +229,9 @@ export function getLocalWordSrsStats(
   const studiedCount = rows.filter((r) => r.reps > 0).length;
   const dueToday = rows.filter((r) => new Date(r.due_at).getTime() <= now).length;
   const dailyDone = rows.filter((r) => {
-    if (r.reps <= 0) return false;
-    return new Date(r.due_at).getTime() >= todayStart.getTime();
+    if (r.last_rating == null) return false;
+    const ratedAt = r.updated_at ? new Date(r.updated_at).getTime() : 0;
+    return ratedAt >= todayStart.getTime();
   }).length;
   const knownTotal = rows.filter((r) => r.last_rating === "known").length;
   const ratedTotal = rows.filter((r) => r.last_rating != null).length;

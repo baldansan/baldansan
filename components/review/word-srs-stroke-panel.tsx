@@ -86,8 +86,11 @@ export function WordSrsStrokePanel({
             </div>
           ) : null}
           <CharacterWriter
-            key={activeChar}
-            character={toHskCharacter(activeChar, wordRadical)}
+            key={`${charIndex}-${activeChar}`}
+            character={toHskCharacter(
+              activeChar,
+              chars.length === 1 ? wordRadical : null
+            )}
             mode="recognize"
           />
           <button

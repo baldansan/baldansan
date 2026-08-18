@@ -43,7 +43,9 @@ export function applyWordSrsRating(
 
   if (rating === "hard") {
     ease = Math.max(MIN_EASE, ease - 0.15);
-    interval_days = interval_days * 1.2;
+    // A new/reset card has interval 0 — multiplying keeps it permanently due.
+    // "Hard" on a fresh card means "saw it, shaky": schedule 1 day out.
+    interval_days = interval_days > 0 ? interval_days * 1.2 : 1;
     return {
       reps: reps + 1,
       ease,

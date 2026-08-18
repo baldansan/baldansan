@@ -6,7 +6,6 @@ import dynamic from "next/dynamic";
 import { GamePracticeLinks } from "@/components/games/game-practice-links";
 import { SpeakerButton } from "@/components/tts/speaker-button";
 import {
-  findNextPracticeChar,
   HANZI_WRITING_LABELS,
   isWritingPracticeEnabled,
   resolveStrokeOrderImageUrl,
@@ -91,9 +90,10 @@ export function KanjiDetailClient({
     ? resolveStrokeOrderImageUrl(activeChar, characterNotes)
     : undefined;
 
-  const nextChar = activeChar
-    ? findNextPracticeChar(activeChar, practiceChars)
-    : null;
+  const nextChar =
+    activeChar && activeCharIndex < practiceChars.length - 1
+      ? practiceChars[activeCharIndex + 1] ?? null
+      : null;
 
   function openWriteSheet() {
     if (!writingEnabled) return;
@@ -101,9 +101,9 @@ export function KanjiDetailClient({
   }
 
   function handleNextCharacter() {
-    if (!nextChar) return;
-    const nextIndex = practiceChars.indexOf(nextChar);
-    if (nextIndex >= 0) setActiveCharIndex(nextIndex);
+    if (activeCharIndex < practiceChars.length - 1) {
+      setActiveCharIndex(activeCharIndex + 1);
+    }
   }
 
   return (

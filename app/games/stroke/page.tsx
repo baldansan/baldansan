@@ -1,10 +1,14 @@
 import { StrokeGameClient } from "@/components/games/stroke-game-client";
 import { getLessonGameContext } from "@/lib/games/game-data";
+import { buildServerBreakdownCatalog } from "@/lib/games/hanzi-breakdown-catalog-server";
+import { buildHanziStrokeGameItems } from "@/lib/games/hanzi-stroke-game";
+import { collectLessonCharacters } from "@/lib/games/hanzi-component-data";
+import type { StrokeQuestion } from "@/lib/games/game-types";
 
 export const dynamic = "force-dynamic";
 
 export const metadata = {
-  title: "\u0414\u0443\u0442\u0443\u0443 \u0431\u04af\u0440\u0434\u044d\u043b \u2014 \u0422\u043e\u0433\u043b\u043e\u043e\u043c",
+  title: "Дутуу бүрдэл — Тоглоом",
 };
 
 type PageProps = {
@@ -14,6 +18,24 @@ type PageProps = {
 export default async function StrokeGamePage({ searchParams }: PageProps) {
   const { lessonId = "1" } = await searchParams;
   const context = await getLessonGameContext(lessonId);
+
+  // Hanzi lessons: build the questions on the server, backed by the full
+  // char-breakdown catalog (~9500 chars) so imported lessons are covered.
+  let initialQuestions: StrokeQuestion[] | undefined;
+  if (!context.isKorean) {
+    const chars = collectLessonCharacters(context.vocabulary);
+    const extraCatalog = await buildServerBreakdownCatalog(
+      chars,
+      context.vocabulary
+    );
+    initialQuestions = buildHanziStrokeGameItems(
+      context.vocabulary,
+      6,
+      context.hskCharacterNotes ?? [],
+      extraCatalog
+    );
+  }
+
   return (
     <StrokeGameClient
       lessonId={lessonId}
@@ -22,6 +44,7 @@ export default async function StrokeGamePage({ searchParams }: PageProps) {
       isPrelesson={context.isPrelesson}
       labels={context.labels}
       hskCharacterNotes={context.hskCharacterNotes}
+      initialQuestions={initialQuestions}
     />
   );
 }
