@@ -2,6 +2,8 @@
 
 import { useSearchParams } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
+import { tr } from "@/lib/i18n/translate";
+import { useUiLocale } from "@/lib/i18n/ui-locale";
 import { ConfusableChars } from "@/components/hanzi/confusable-chars";
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
 import { MobileCard } from "@/components/mobile/mobile-card";
@@ -61,6 +63,7 @@ function levelBadge(word: DictionaryWord): string | null {
 }
 
 function ResultRow({ word }: { word: DictionaryWord }) {
+  const locale = useUiLocale();
   const [open, setOpen] = useState(false);
   const badge = levelBadge(word);
   const meaning = word.meaning_mn || word.meaning_en || "";
@@ -103,7 +106,7 @@ function ResultRow({ word }: { word: DictionaryWord }) {
             ) : null}
             {hasExample ? (
               <span className="text-[10px] text-slate-400">
-                {open ? "жишээ хаах ▴" : "жишээ ▾"}
+                {tr(locale, open ? "жишээ хаах ▴" : "жишээ ▾")}
               </span>
             ) : null}
           </span>
@@ -154,6 +157,7 @@ function ResultRow({ word }: { word: DictionaryWord }) {
 }
 
 export function DictionaryClient() {
+  const locale = useUiLocale();
   const searchParams = useSearchParams();
   const [query, setQuery] = useState("");
   const [radical, setRadical] = useState<string | null>(null);
@@ -218,8 +222,8 @@ export function DictionaryClient() {
   return (
     <MobileAppShell activeTab="kanji" mainClassName={SHELL_MAIN_NARROW}>
       <MobilePageHeader
-        title="Толь бичиг 📖"
-        subtitle="Ханз · пиньинь · монгол утгаар хайх"
+        title={`${tr(locale, "Толь бичиг")} 📖`}
+        subtitle={tr(locale, "Ханз · пиньинь · монгол утгаар хайх")}
       />
 
       <div className="mb-3">
@@ -239,12 +243,12 @@ export function DictionaryClient() {
       {!searched && !loading ? (
         <MobileCard>
           <p className="text-sm font-semibold text-[var(--app-text)]">
-            Юугаар ч хайж болно:
+            {tr(locale, "Юугаар ч хайж болно:")}
           </p>
           <ul className="mt-2 space-y-1 text-sm text-[var(--app-muted)]">
-            <li>• Ханзаар — 爱情</li>
-            <li>• Пиньиньгээр — ai, xuexi (аялгагүй ч болно)</li>
-            <li>• Монголоор — хайр, сурах</li>
+            <li>• {tr(locale, "Ханзаар — 爱情")}</li>
+            <li>• {tr(locale, "Пиньиньгээр — ai, xuexi (аялгагүй ч болно)")}</li>
+            <li>• {tr(locale, "Монголоор — хайр, сурах")}</li>
           </ul>
           <div className="mt-3 flex flex-wrap gap-2">
             {EXAMPLES.map((ex) => (
@@ -259,7 +263,7 @@ export function DictionaryClient() {
             ))}
           </div>
           <p className="mt-4 text-sm font-semibold text-[var(--app-text)]">
-            🧩 Язгуураар үзэх:
+            🧩 {tr(locale, "Язгуураар үзэх")}:
           </p>
           <div className="mt-2 flex flex-wrap gap-1.5">
             {COMMON_RADICALS.map((item) => (
@@ -284,34 +288,34 @@ export function DictionaryClient() {
         <div className="mb-2 flex items-center gap-2">
           <p className="text-sm font-bold text-[var(--app-text)]">
             {radical} {COMMON_RADICALS.find((x) => x.r === radical)?.mn ?? ""} ·{" "}
-            {results.length} үг
+            {results.length} {tr(locale, "үг")}
           </p>
           <button
             type="button"
             onClick={() => setRadical(null)}
             className="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-500"
           >
-            ✕ Хаах
+            ✕ {tr(locale, "Хаах")}
           </button>
         </div>
       ) : null}
 
       {loading ? (
         <p className="py-4 text-center text-sm text-[var(--app-muted)]">
-          Хайж байна…
+          {tr(locale, "Хайж байна…")}
         </p>
       ) : null}
 
       {error ? (
         <MobileCard className="text-center">
-          <p className="text-sm text-rose-600">{error}</p>
+          <p className="text-sm text-rose-600">{tr(locale, error)}</p>
         </MobileCard>
       ) : null}
 
       {!loading && searched && !error && results.length === 0 ? (
         <MobileCard className="text-center">
           <p className="text-sm text-[var(--app-muted)]">
-            &laquo;{query.trim()}&raquo; олдсонгүй. Өөр үгээр хайгаад үзээрэй.
+            &laquo;{query.trim()}&raquo; {tr(locale, "олдсонгүй. Өөр үгээр хайгаад үзээрэй.")}
           </p>
         </MobileCard>
       ) : null}

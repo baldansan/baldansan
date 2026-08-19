@@ -1,6 +1,8 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
+import { tr } from "@/lib/i18n/translate";
+import { useUiLocale } from "@/lib/i18n/ui-locale";
 import {
   parsePinyinSyllables,
   toneContour,
@@ -212,6 +214,7 @@ function readConflictFlag(): boolean {
 }
 
 export function PronunciationPractice({ text, pinyin, className }: Props) {
+  const locale = useUiLocale();
   const [phase, setPhase] = useState<Phase>("idle");
   const [verdict, setVerdict] = useState<Verdict | null>(null);
   const [heard, setHeard] = useState<string>("");
@@ -423,14 +426,16 @@ export function PronunciationPractice({ text, pinyin, className }: Props) {
   const syllables = pinyin ? parsePinyinSyllables(pinyin) : [];
   const toneHints = syllables
     .filter((s) => s.tone > 0 || syllables.length <= 3)
-    .map((s) => `${s.syllable} — ${TONE_LABELS_MN[s.tone] ?? ""}`);
+    .map((s) => `${s.syllable} — ${tr(locale, TONE_LABELS_MN[s.tone] ?? "")}`);
 
   if (phase === "unsupported") {
     return (
       <div className={className}>
         <p className="rounded-xl bg-slate-50 px-3 py-2 text-xs text-slate-500 ring-1 ring-slate-200">
-          Энэ хөтөч дуу таних боломж дэмжихгүй байна. Chrome (Android) дээр
-          туршаад үзээрэй.
+          {tr(
+            locale,
+            "Энэ хөтөч дуу таних боломж дэмжихгүй байна. Chrome (Android) дээр туршаад үзээрэй."
+          )}
         </p>
       </div>
     );
@@ -440,15 +445,17 @@ export function PronunciationPractice({ text, pinyin, className }: Props) {
     return (
       <div className={className}>
         <p className="rounded-xl bg-amber-50 px-3 py-2 text-xs text-amber-700 ring-1 ring-amber-200">
-          Микрофоны зөвшөөрөл хэрэгтэй — хөтчийн тохиргооноос зөвшөөрөөд дахин
-          дараарай.
+          {tr(
+            locale,
+            "Микрофоны зөвшөөрөл хэрэгтэй — хөтчийн тохиргооноос зөвшөөрөөд дахин дараарай."
+          )}
         </p>
         <button
           type="button"
           onClick={() => void start()}
           className="mt-2 rounded-full bg-emerald-600 px-4 py-2 text-xs font-bold text-white"
         >
-          🎤 Дахин оролдох
+          {tr(locale, "🎤 Дахин оролдох")}
         </button>
       </div>
     );
@@ -462,7 +469,7 @@ export function PronunciationPractice({ text, pinyin, className }: Props) {
           onClick={() => void start()}
           className="flex w-full items-center justify-center gap-2 rounded-2xl border border-emerald-200 bg-emerald-50 px-4 py-3 text-sm font-bold text-emerald-700"
         >
-          🎤 Дагаж хэлээд шалгуулах
+          {tr(locale, "🎤 Дагаж хэлээд шалгуулах")}
         </button>
       ) : null}
 
@@ -474,8 +481,8 @@ export function PronunciationPractice({ text, pinyin, className }: Props) {
           </span>
           <span className="text-sm font-bold text-rose-600">
             {roundMode === "pitch"
-              ? `Аялгыг бичиж байна — «${text}» гэж хэлээрэй`
-              : `Сонсож байна — «${text}» гэж хэлээрэй`}
+              ? `${tr(locale, "Аялгыг бичиж байна")} — «${text}» ${tr(locale, "гэж хэлээрэй")}`
+              : `${tr(locale, "Сонсож байна")} — «${text}» ${tr(locale, "гэж хэлээрэй")}`}
           </span>
         </div>
       ) : null}
@@ -484,36 +491,36 @@ export function PronunciationPractice({ text, pinyin, className }: Props) {
         <div className="rounded-2xl border border-[var(--app-border,#e2e8f0)] bg-white p-3">
           {roundMode === "pitch" ? (
             <p className="text-sm font-bold text-emerald-700">
-              🎵 Аялгын муруй — жишигтэй харьцуулаарай
+              {tr(locale, "🎵 Аялгын муруй — жишигтэй харьцуулаарай")}
             </p>
           ) : recognitionAvailable ? (
             verdict === "perfect" ? (
               <p className="text-sm font-bold text-emerald-600">
-                ✅ Маш сайн! «{text}» гэж зөв сонсогдлоо
+                {tr(locale, "✅ Маш сайн!")} «{text}» {tr(locale, "гэж зөв сонсогдлоо")}
               </p>
             ) : verdict === "close" ? (
               <p className="text-sm font-bold text-amber-600">
-                🟡 Ойрхон байна — надад «{heard}» гэж сонсогдлоо
+                {tr(locale, "🟡 Ойрхон байна — надад")} «{heard}» {tr(locale, "гэж сонсогдлоо")}
               </p>
             ) : heard ? (
               <p className="text-sm font-bold text-rose-600">
-                ❌ Надад «{heard}» гэж сонсогдлоо — дахиад сонсоод давтаарай
+                {tr(locale, "❌ Надад")} «{heard}» {tr(locale, "гэж сонсогдлоо — дахиад сонсоод давтаарай")}
               </p>
             ) : conflictJustDetected ? (
               <p className="text-xs font-semibold text-amber-700">
-                ⚠️ Таны утсан дээр таних систем ба аялгын хэмжигч микрофоныг
-                зэрэг ашиглаж чадахгүй байна. Дараагийн оролдлогоос таних
-                горимоор ажиллана — аялгаа «🎵 Аялга шалгах» товчоор тусад нь
-                шалгаарай.
+                {tr(
+                  locale,
+                  "⚠️ Таны утсан дээр таних систем ба аялгын хэмжигч микрофоныг зэрэг ашиглаж чадахгүй байна. Дараагийн оролдлогоос таних горимоор ажиллана — аялгаа «🎵 Аялга шалгах» товчоор тусад нь шалгаарай."
+                )}
               </p>
             ) : (
               <p className="text-sm font-bold text-slate-500">
-                🤔 Дуу сонсогдсонгүй — микрофондоо ойртож тод хэлээрэй
+                {tr(locale, "🤔 Дуу сонсогдсонгүй — микрофондоо ойртож тод хэлээрэй")}
               </p>
             )
           ) : (
             <p className="text-xs font-semibold text-slate-500">
-              (Энэ хөтөч үг таних дэмжихгүй тул зөвхөн аялгын муруй харуулав)
+              {tr(locale, "(Энэ хөтөч үг таних дэмжихгүй тул зөвхөн аялгын муруй харуулав)")}
             </p>
           )}
 
@@ -522,10 +529,10 @@ export function PronunciationPractice({ text, pinyin, className }: Props) {
               <canvas
                 ref={canvasRef}
                 className="mt-2 h-24 w-full"
-                aria-label="Аялгын муруй"
+                aria-label={tr(locale, "Аялгын муруй")}
               />
               <p className="mt-1 text-[10px] font-semibold text-slate-400">
-                Саарал тасархай = жишиг аялга · Ногоон = таны дуу
+                {tr(locale, "Саарал тасархай = жишиг аялга · Ногоон = таны дуу")}
               </p>
             </>
           ) : null}
@@ -542,7 +549,7 @@ export function PronunciationPractice({ text, pinyin, className }: Props) {
               onClick={() => void start()}
               className="rounded-full bg-emerald-600 px-4 py-2 text-xs font-bold text-white"
             >
-              🎤 Дахин хэлэх
+              {tr(locale, "🎤 Дахин хэлэх")}
             </button>
             {roundMode !== "pitch" ? (
               <button
@@ -550,7 +557,7 @@ export function PronunciationPractice({ text, pinyin, className }: Props) {
                 onClick={() => void start("pitch")}
                 className="rounded-full bg-white px-4 py-2 text-xs font-bold text-emerald-700 ring-1 ring-emerald-300"
               >
-                🎵 Аялга шалгах
+                {tr(locale, "🎵 Аялга шалгах")}
               </button>
             ) : null}
           </div>
