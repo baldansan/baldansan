@@ -31,6 +31,7 @@ import {
 } from "@/lib/supabase/user-word-srs";
 import type { BichlegContinueTarget } from "@/lib/bichleg/types";
 import { fetchBichlegContinueTargetClient } from "@/lib/supabase/video-progress-client";
+import { fetchMistakes } from "@/lib/supabase/mistake-book";
 
 type Props = {
   testCount: number;
@@ -68,6 +69,8 @@ export function ReviewMenuHubClient({
   const [loading, setLoading] = useState(true);
   const [bichlegContinue, setBichlegContinue] =
     useState<BichlegContinueTarget | null>(null);
+  const [mistakeCount, setMistakeCount] = useState<number | null>(null);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   const loadStats = useCallback(async () => {
     if (!hydrated) return;
@@ -93,7 +96,11 @@ export function ReviewMenuHubClient({
         setDisplayName(email.split("@")[0] ?? "Суралцагч");
       }
 
+      setIsLoggedIn(Boolean(userId));
       if (userId) {
+        void fetchMistakes(userId)
+          .then(({ mistakes }) => setMistakeCount(mistakes.length))
+          .catch(() => setMistakeCount(null));
         const { data } = await getUserWordSrsStats(userId);
         if (data) {
           dueCards = data.dueToday;
@@ -326,6 +333,30 @@ export function ReviewMenuHubClient({
           <span className="bs-tm-card-body">
             <span className="bs-tm-card-title">{tr(locale, "Бүх HSK үг")}</span>
             <span className="bs-tm-card-sub">{memorizeStatus}</span>
+          </span>
+          <span className="bs-tm-card-chev" aria-hidden>›</span>
+        </Link>
+
+        <Link href="/review/mistakes" className="bs-tm-card">
+          <span className="bs-tm-card-ic bs-tm-card-ic--red" aria-hidden>
+            ❌
+          </span>
+          <span className="bs-tm-card-body">
+            <span className="bs-tm-card-title">
+              {tr(locale, "Миний алдаанууд")}
+              {mistakeCount != null && mistakeCount > 0
+                ? ` · ${mistakeCount}`
+                : ""}
+            </span>
+            <span className="bs-tm-card-sub">
+              {!isLoggedIn
+                ? tr(locale, "Нэвтэрч орвол хадгалагдана")
+                : mistakeCount == null
+                  ? "…"
+                  : mistakeCount > 0
+                    ? `${mistakeCount} ${tr(locale, "идэвхтэй алдаа")}`
+                    : tr(locale, "Алдаа алга — маш сайн! ✅")}
+            </span>
           </span>
           <span className="bs-tm-card-chev" aria-hidden>›</span>
         </Link>
