@@ -8,6 +8,8 @@ import {
   type WordPracticeMode,
 } from "@/lib/review/word-practice-types";
 import type { WordSrsRating } from "@/lib/srs/word-srs-types";
+import { tr } from "@/lib/i18n/translate";
+import { useUiLocale } from "@/lib/i18n/ui-locale";
 
 type Props = {
   title: string;
@@ -46,6 +48,7 @@ export function WordPracticeLauncher({
   onNextBatch,
   nextBatchLabel = "Дараагийн багц руу →",
 }: Props) {
+  const locale = useUiLocale();
   const [knownOpen, setKnownOpen] = useState(false);
   const counts = useMemo(() => countByRating(words), [words]);
   const selectedCount = selectedIds.size;
@@ -82,28 +85,28 @@ export function WordPracticeLauncher({
         {subtitle ? <p className="bs-wpl-sub">{subtitle}</p> : null}
       </header>
 
-      <div className="bs-wpl-chips" aria-label="Дүгнэлт">
+      <div className="bs-wpl-chips" aria-label={tr(locale, "Дүгнэлт")}>
         <span className="bs-wpl-chip bs-wpl-chip--known">
-          Мэдсэн {counts.known}
+          {tr(locale, "Мэдсэн")} {counts.known}
         </span>
         <span className="bs-wpl-chip bs-wpl-chip--hard">
-          Эргэлзсэн {counts.hard}
+          {tr(locale, "Эргэлзсэн")} {counts.hard}
         </span>
         <span className="bs-wpl-chip bs-wpl-chip--forgot">
-          Мартсан {counts.forgot}
+          {tr(locale, "Мартсан")} {counts.forgot}
         </span>
       </div>
 
       <section className="bs-wpl-section">
         <div className="bs-wpl-section-head">
-          <h3 className="bs-wpl-section-title">Үг сонгох</h3>
+          <h3 className="bs-wpl-section-title">{tr(locale, "Үг сонгох")}</h3>
           <div className="bs-wpl-bulk">
             <button type="button" className="bs-wpl-bulk-btn" onClick={selectAll}>
-              Бүгдийг сонгох
+              {tr(locale, "Бүгдийг сонгох")}
             </button>
             <span className="bs-wpl-bulk-sep">·</span>
             <button type="button" className="bs-wpl-bulk-btn" onClick={clearAll}>
-              Арилгах
+              {tr(locale, "Арилгах")}
             </button>
           </div>
         </div>
@@ -131,7 +134,7 @@ export function WordPracticeLauncher({
                         aria-hidden
                       />
                       <span className="bs-wpl-group-label">
-                        {group.label} ({group.items.length})
+                        {tr(locale, group.label)} ({group.items.length})
                       </span>
                       <span className="bs-wpl-group-chevron">
                         {knownOpen ? "▾" : "▸"}
@@ -144,7 +147,7 @@ export function WordPracticeLauncher({
                         aria-hidden
                       />
                       <span className="bs-wpl-group-label">
-                        {group.label} ({group.items.length})
+                        {tr(locale, group.label)} ({group.items.length})
                       </span>
                       <button
                         type="button"
@@ -153,7 +156,9 @@ export function WordPracticeLauncher({
                           toggleGroup(group.items, !groupAllSelected)
                         }
                       >
-                        {groupAllSelected ? "Бүгдийг хас" : "Бүгдийг сонго"}
+                        {groupAllSelected
+                          ? tr(locale, "Бүгдийг хас")
+                          : tr(locale, "Бүгдийг сонго")}
                       </button>
                     </>
                   )}
@@ -195,7 +200,9 @@ export function WordPracticeLauncher({
 
           {unrated.length > 0 ? (
             <div className="bs-wpl-group">
-              <p className="bs-wpl-group-label px-1">Үнэлээгүй ({unrated.length})</p>
+              <p className="bs-wpl-group-label px-1">
+                {tr(locale, "Үнэлээгүй")} ({unrated.length})
+              </p>
               <ul className="bs-wpl-word-list">
                 {unrated.map((word) => (
                   <li key={word.id}>
@@ -226,11 +233,11 @@ export function WordPracticeLauncher({
       </section>
 
       <section className="bs-wpl-section">
-        <h3 className="bs-wpl-section-title">Дасгал сонгох</h3>
+        <h3 className="bs-wpl-section-title">{tr(locale, "Дасгал сонгох")}</h3>
         <p className="bs-wpl-section-hint">
           {selectedCount > 0
-            ? `${selectedCount} үг сонгогдсон`
-            : "Эхлээд дор хаяж нэг үг сонгоно уу"}
+            ? `${selectedCount} ${tr(locale, "үг сонгогдсон")}`
+            : tr(locale, "Эхлээд дор хаяж нэг үг сонгоно уу")}
         </p>
         <div className="bs-wpl-practice-grid">
           {PRACTICE_CARDS.map((card) => {
@@ -245,10 +252,12 @@ export function WordPracticeLauncher({
                 onClick={() => onStartPractice(card.mode)}
               >
                 <span className="bs-wpl-practice-emoji">{card.emoji}</span>
-                <span className="bs-wpl-practice-title">{card.title}</span>
-                <span className="bs-wpl-practice-desc">{card.description}</span>
+                <span className="bs-wpl-practice-title">{tr(locale, card.title)}</span>
+                <span className="bs-wpl-practice-desc">{tr(locale, card.description)}</span>
                 <span className="bs-wpl-practice-count">
-                  {enabled ? `${selectedCount} үгээр` : "Удахгүй"}
+                  {enabled
+                    ? `${selectedCount} ${tr(locale, "үгээр")}`
+                    : tr(locale, "Удахгүй")}
                 </span>
               </button>
             );
@@ -258,7 +267,7 @@ export function WordPracticeLauncher({
 
       {onNextBatch ? (
         <button type="button" className="bs-wpl-next-batch" onClick={onNextBatch}>
-          {nextBatchLabel}
+          {tr(locale, nextBatchLabel)}
         </button>
       ) : null}
     </div>
