@@ -249,7 +249,6 @@ export function VocabularyFlashcardStudy({
                     lang={ttsLang}
                     courseId={lesson.courseId}
                     hskLevel={current.hskLevel}
-                    audioUrl={wordAudioUrl}
                     size="sm"
                     label={`Жишээ уншуулах: ${current.exampleChinese}`}
                   />
