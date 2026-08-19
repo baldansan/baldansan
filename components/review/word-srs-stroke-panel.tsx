@@ -1,6 +1,7 @@
 "use client";
 
 import dynamic from "next/dynamic";
+import "@/components/lesson/lesson-player.css";
 import { useEffect, useMemo, useState } from "react";
 import { tr } from "@/lib/i18n/translate";
 import { useUiLocale } from "@/lib/i18n/ui-locale";
@@ -45,6 +46,8 @@ export function WordSrsStrokePanel({
     [simplified]
   );
   const [open, setOpen] = useState(false);
+  /** write = өөрөө бичих (үндсэн); recognize = зурлагын анимац харах */
+  const [panelMode, setPanelMode] = useState<"write" | "recognize">("write");
   const [charIndex, setCharIndex] = useState(0);
 
   useEffect(() => {
@@ -63,13 +66,28 @@ export function WordSrsStrokePanel({
   return (
     <div className="bs-srs-stroke">
       {!open ? (
-        <button
-          type="button"
-          className="bs-srs-stroke-toggle"
-          onClick={() => setOpen(true)}
-        >
-          {tr(locale, "Зурлага үзэх")}
-        </button>
+        <div className="flex gap-2">
+          <button
+            type="button"
+            className="bs-srs-stroke-toggle flex-1"
+            onClick={() => {
+              setPanelMode("write");
+              setOpen(true);
+            }}
+          >
+            ✍️ {tr(locale, "Бичиж үзэх")}
+          </button>
+          <button
+            type="button"
+            className="bs-srs-stroke-toggle flex-1"
+            onClick={() => {
+              setPanelMode("recognize");
+              setOpen(true);
+            }}
+          >
+            {tr(locale, "Зурлага үзэх")}
+          </button>
+        </div>
       ) : (
         <div className="bs-srs-stroke-body">
           {chars.length > 1 ? (
@@ -89,12 +107,12 @@ export function WordSrsStrokePanel({
             </div>
           ) : null}
           <CharacterWriter
-            key={`${charIndex}-${activeChar}`}
+            key={`${panelMode}-${charIndex}-${activeChar}`}
             character={toHskCharacter(
               activeChar,
               chars.length === 1 ? wordRadical : null
             )}
-            mode="recognize"
+            mode={panelMode}
           />
           <button
             type="button"

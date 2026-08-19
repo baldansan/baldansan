@@ -1,6 +1,7 @@
 "use client";
 
 import dynamic from "next/dynamic";
+import "@/components/lesson/lesson-player.css";
 import { useMemo, useState } from "react";
 import { tr } from "@/lib/i18n/translate";
 import { useUiLocale } from "@/lib/i18n/ui-locale";
