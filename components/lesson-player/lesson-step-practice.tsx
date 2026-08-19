@@ -1,5 +1,8 @@
 "use client";
 
+import { tr } from "@/lib/i18n/translate";
+import { useUiLocale } from "@/lib/i18n/ui-locale";
+
 import { LessonPlayerCard } from "@/components/lesson-player/lesson-player-shell";
 import { KoreanAnswerPronunciationBlock } from "@/components/lesson/korean-pronunciation-feedback";
 import type { PracticeQuestion } from "@/types/lesson-player";
@@ -33,6 +36,7 @@ export function LessonStepPractice({
   pronunciationMap,
   showPronunciation = false,
 }: Props) {
+  const locale = useUiLocale();
   const isCorrect = selected === question.correctAnswer;
 
   function optionClass(option: string) {
@@ -58,7 +62,7 @@ export function LessonStepPractice({
         {title}
       </p>
       <p className="mt-1 text-sm text-slate-500">
-        Дасгал {questionIndex + 1} / {total}
+        {tr(locale, "Дасгал")} {questionIndex + 1} / {total}
       </p>
       <h2 className="mt-4 text-lg font-bold leading-snug text-slate-900">
         {question.prompt}
@@ -86,9 +90,9 @@ export function LessonStepPractice({
               : "mt-4 rounded-xl bg-red-50 p-3 text-sm text-red-800 ring-1 ring-red-200"
           }
         >
-          <p className="font-semibold">{isCorrect ? "Зөв!" : "Буруу"}</p>
+          <p className="font-semibold">{tr(locale, isCorrect ? "Зөв!" : "Буруу")}</p>
           {!isCorrect ? (
-            <p className="mt-1">Зөв хариулт:</p>
+            <p className="mt-1">{tr(locale, "Зөв хариулт:")}</p>
           ) : null}
           <KoreanAnswerPronunciationBlock
             correctAnswer={question.correctAnswer}

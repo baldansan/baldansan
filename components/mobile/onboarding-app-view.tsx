@@ -3,6 +3,8 @@
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
+import { tr } from "@/lib/i18n/translate";
+import { useUiLocale } from "@/lib/i18n/ui-locale";
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
 import { MobileCard } from "@/components/mobile/mobile-card";
 import { PwaInstallCard } from "@/components/pwa-install-card";
@@ -41,6 +43,7 @@ const guideSteps = [
 ];
 
 export function OnboardingAppView() {
+  const locale = useUiLocale();
   const router = useRouter();
   const [phase, setPhase] = useState<"pick" | "guide">("pick");
   const [existingLang, setExistingLang] = useState<SelectedLanguage | null>(null);
@@ -68,12 +71,15 @@ export function OnboardingAppView() {
     <MobileAppShell activeTab="profile" showBottomNav={phase === "guide"}>
       <section className="mb-5">
         <h1 className="text-xl font-bold text-[var(--app-text)]">
-          {phase === "pick" ? "Ямар хэл сурах вэ?" : "App хэрхэн ажилладаг вэ?"}
+          {tr(locale, phase === "pick" ? "Ямар хэл сурах вэ?" : "App хэрхэн ажилладаг вэ?")}
         </h1>
         <p className="mt-2 text-sm text-[var(--app-muted)]">
-          {phase === "pick"
-            ? "Сонгосон хэлний хичээлүүд л харагдана. Дараа нь Settings-оос солих боломжтой."
-            : "Шинэ хэрэглэгчид зориулсан богино заавар."}
+          {tr(
+            locale,
+            phase === "pick"
+              ? "Сонгосон хэлний хичээлүүд л харагдана. Дараа нь Settings-оос солих боломжтой."
+              : "Шинэ хэрэглэгчид зориулсан богино заавар."
+          )}
         </p>
       </section>
 
@@ -89,7 +95,7 @@ export function OnboardingAppView() {
               <span aria-hidden className="text-2xl">
                 {option.emoji}
               </span>
-              <span className="flex-1 text-base font-semibold">{option.label}</span>
+              <span className="flex-1 text-base font-semibold">{tr(locale, option.label)}</span>
               <span className="text-[var(--app-muted)]">›</span>
             </button>
           ))}
@@ -99,7 +105,7 @@ export function OnboardingAppView() {
               className="mt-2 text-sm font-semibold text-emerald-600"
               onClick={() => setPhase("guide")}
             >
-              Заавар үзэх →
+              {tr(locale, "Заавар үзэх →")}
             </button>
           ) : null}
         </div>
@@ -108,15 +114,19 @@ export function OnboardingAppView() {
           {existingLang ? (
             <MobileCard className="mb-4 border-emerald-200 bg-emerald-50">
               <p className="text-sm font-semibold text-emerald-900">
-                Сонгосон хэл:{" "}
-                {LANGUAGE_SELECTION_OPTIONS.find((o) => o.lang === existingLang)?.label}
+                {tr(locale, "Сонгосон хэл:")}{" "}
+                {tr(
+                  locale,
+                  LANGUAGE_SELECTION_OPTIONS.find((o) => o.lang === existingLang)
+                    ?.label ?? ""
+                )}
               </p>
               <button
                 type="button"
                 className="mt-2 text-xs font-semibold text-emerald-700 underline"
                 onClick={() => setPhase("pick")}
               >
-                Хэл солих
+                {tr(locale, "Хэл солих")}
               </button>
             </MobileCard>
           ) : null}
@@ -129,13 +139,13 @@ export function OnboardingAppView() {
             {guideSteps.map((step, index) => (
               <MobileCard key={step.title} padding="lg">
                 <span className="text-xs font-semibold text-emerald-600">
-                  Алхам {index + 1}
+                  {tr(locale, "Алхам")} {index + 1}
                 </span>
                 <h2 className="mt-1 text-base font-semibold text-[var(--app-text)]">
-                  {step.title}
+                  {tr(locale, step.title)}
                 </h2>
                 <p className="mt-2 text-sm leading-6 text-[var(--app-muted)]">
-                  {step.body}
+                  {tr(locale, step.body)}
                 </p>
               </MobileCard>
             ))}
@@ -143,13 +153,13 @@ export function OnboardingAppView() {
 
           <div className="flex flex-col gap-2">
             <button type="button" className="app-btn-primary" onClick={handleContinueHome}>
-              Нүүр хуудас руу
+              {tr(locale, "Нүүр хуудас руу")}
             </button>
             <Link href="/login" className="app-btn-secondary text-center">
-              Нэвтрэх
+              {tr(locale, "Нэвтрэх")}
             </Link>
             <Link href="/help" className="text-center text-sm font-semibold text-emerald-600">
-              Тусламж
+              {tr(locale, "Тусламж")}
             </Link>
           </div>
         </>

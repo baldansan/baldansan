@@ -1,6 +1,9 @@
 "use client";
 
 import { LessonPlayerCard } from "@/components/lesson-player/lesson-player-shell";
+import { tr } from "@/lib/i18n/translate";
+import { useUiLocale } from "@/lib/i18n/ui-locale";
+
 
 type Props = {
   title: string;
@@ -8,10 +11,11 @@ type Props = {
 };
 
 export function LessonStepSummary({ title, text }: Props) {
+  const locale = useUiLocale();
   return (
     <LessonPlayerCard>
       <p className="text-xs font-bold uppercase tracking-wide text-emerald-600">
-        Эхлэл
+        {tr(locale, "Эхлэл")}
       </p>
       <h1 className="mt-2 text-xl font-bold leading-snug text-slate-900">
         {title}

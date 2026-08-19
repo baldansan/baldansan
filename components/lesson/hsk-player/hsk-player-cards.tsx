@@ -1,5 +1,8 @@
 "use client";
 
+import { tr } from "@/lib/i18n/translate";
+import { useUiLocale } from "@/lib/i18n/ui-locale";
+
 import Link from "next/link";
 import type { ReactNode } from "react";
 import { DialogueModule } from "@/components/lesson-modules/dialogue-module";
@@ -170,12 +173,13 @@ export function KeyPhraseCard({
   stepMedia: HskGuidedStepMediaRef;
   teachingImages?: TeachingImage[];
 }) {
+  const locale = useUiLocale();
   const lang = resolveTtsLang({ courseId: lesson.courseId });
 
   return (
     <HskPlayerCard>
       <p className="text-xs font-bold uppercase tracking-wide" style={{ color: HSK_PLAYER.muted }}>
-        Гол хэллэг
+        {tr(locale, "Гол хэллэг")}
       </p>
       <HskStepImageSlot
         stepType="key-phrase"
@@ -511,6 +515,7 @@ export function VocabularyFlashcardPreview({
   stepMedia?: HskGuidedStepMediaRef;
   teachingImages?: TeachingImage[];
 }) {
+  const locale = useUiLocale();
   const mediaSlot = stepMedia ? (
     <HskStepImageSlot
       stepType="vocabulary"
@@ -536,7 +541,7 @@ export function VocabularyFlashcardPreview({
       teacherNote="Эхлээд ханьж үзээд, дараа нь flashcard-аар бүрэн давтана."
       mediaSlot={mediaSlot}
       footerCta={{
-        label: word ? "🃏 Flashcard-аар үргэлжлүүлэх" : "Үгийн сан руу",
+        label: tr(locale, word ? "🃏 Flashcard-аар үргэлжлүүлэх" : "Үгийн сан руу"),
         href: vocabHref,
       }}
     />
@@ -582,6 +587,7 @@ export function CommonMistakesCard({
   media?: HskStudyContent["media"];
   teachingImages?: TeachingImage[];
 }) {
+  const locale = useUiLocale();
   const stepMedia: HskGuidedStepMediaRef = {
     imageId: step.imageId,
     mediaSection: step.mediaSection,
@@ -596,7 +602,7 @@ export function CommonMistakesCard({
   return (
     <HskPlayerCard>
       <p className="text-xs font-bold uppercase tracking-wide" style={{ color: HSK_PLAYER.muted }}>
-        {step.titleMn || "Түгээмэл алдаа"}
+        {step.titleMn || tr(locale, "Түгээмэл алдаа")}
       </p>
       <HskStepImageSlot
         stepType="common-mistake"
@@ -623,7 +629,7 @@ export function CommonMistakesCard({
               className="rounded-2xl px-3 py-3 text-center"
               style={{ backgroundColor: HSK_PLAYER.softPink }}
             >
-              <p className="text-xs font-semibold text-rose-700">❌ Буруу</p>
+              <p className="text-xs font-semibold text-rose-700">❌ {tr(locale, "Буруу")}</p>
               <p className="mt-1 text-lg font-bold" style={{ color: HSK_PLAYER.text }}>
                 {pair.wrong ?? pair.pinyin ?? pair.chinese}
               </p>
@@ -632,7 +638,7 @@ export function CommonMistakesCard({
               className="rounded-2xl px-3 py-3 text-center"
               style={{ backgroundColor: HSK_PLAYER.softGreen }}
             >
-              <p className="text-xs font-semibold text-emerald-700">✅ Зөв</p>
+              <p className="text-xs font-semibold text-emerald-700">✅ {tr(locale, "Зөв")}</p>
               <p className="mt-1 text-lg font-bold" style={{ color: HSK_PLAYER.text }}>
                 {pair.correct ?? pair.pinyin ?? pair.chinese}
               </p>
@@ -660,6 +666,7 @@ export function PracticeMenuCard({
   lessonId: string;
   workbookHref?: string;
 }) {
+  const locale = useUiLocale();
   const strokeHref = `/games/stroke?lessonId=${encodeURIComponent(lessonId)}`;
   const items = [
     { label: "Үгийн сан давтах", href: `${vocabHref}?view=flashcard`, icon: "📇", bg: HSK_PLAYER.softBlue },
@@ -674,10 +681,10 @@ export function PracticeMenuCard({
   return (
     <HskPlayerCard>
       <h2 className="text-lg font-bold" style={{ color: HSK_PLAYER.text }}>
-        Бататгах
+        {tr(locale, "Бататгах")}
       </h2>
       <p className="mt-1 text-sm" style={{ color: HSK_PLAYER.muted }}>
-        Аль ч сонголтоор бататгаж болно.
+        {tr(locale, "Аль ч сонголтоор бататгаж болно.")}
       </p>
       <div className="mt-4 grid grid-cols-2 gap-2">
         {items.map((item) => (
@@ -691,7 +698,7 @@ export function PracticeMenuCard({
               {item.icon}
             </span>
             <span className="text-xs font-semibold" style={{ color: HSK_PLAYER.text }}>
-              {item.label}
+              {tr(locale, item.label)}
             </span>
           </Link>
         ))}
@@ -724,6 +731,7 @@ export function LessonCompleteCard({
   /** Хичээлийн үгс SRS давталтад товлогдсон үр дүн (null — хараахан дуусаагүй). */
   srsSeed?: { added: number; already: number } | null;
 }) {
+  const locale = useUiLocale();
   const srsTotal = srsSeed ? srsSeed.added + srsSeed.already : 0;
   const showSrsBlock = srsSeed != null && srsTotal > 0;
   return (
@@ -750,7 +758,7 @@ export function LessonCompleteCard({
           </p>
         )}
         <h2 className="mt-3 text-xl font-bold" style={{ color: HSK_PLAYER.text }}>
-          Маш сайн!
+          {tr(locale, "Маш сайн!")}
         </h2>
         <p className="mt-2 text-sm leading-6" style={{ color: HSK_PLAYER.muted }}>
           {message}
@@ -759,11 +767,11 @@ export function LessonCompleteCard({
           <div className="mt-4 w-full rounded-2xl border border-emerald-200 bg-emerald-50 px-4 py-3">
             {srsSeed.added > 0 ? (
               <p className="break-words text-sm font-semibold text-emerald-700">
-                🎉 {srsSeed.added} шинэ үг маргааш давтагдахаар товлогдлоо
+                🎉 {srsSeed.added} {tr(locale, "шинэ үг маргааш давтагдахаар товлогдлоо")}
               </p>
             ) : (
               <p className="break-words text-sm font-semibold text-emerald-700">
-                Бүх үг аль хэдийн давталтад байна ✅
+                {tr(locale, "Бүх үг аль хэдийн давталтад байна ✅")}
               </p>
             )}
           </div>
@@ -772,22 +780,22 @@ export function LessonCompleteCard({
       <div className="mt-6 flex flex-col gap-2">
         {showSrsBlock ? (
           <Link href="/review/words" className="app-btn-primary w-full text-center">
-            Одоо давтах →
+            {tr(locale, "Одоо давтах →")}
           </Link>
         ) : null}
         <Link href={quizHref} className="app-btn-primary w-full text-center">
-          Quiz өгөх
+          {tr(locale, "Quiz өгөх")}
         </Link>
         <Link href={vocabHref} className="app-btn-secondary w-full text-center">
-          Үгийн сан давтах
+          {tr(locale, "Үгийн сан давтах")}
         </Link>
         {nextHref ? (
           <Link href={nextHref} className="app-btn-outline-green w-full text-center">
-            Дараагийн хичээл
+            {tr(locale, "Дараагийн хичээл")}
           </Link>
         ) : (
           <Link href={detailHref} className="app-btn-outline-green w-full text-center">
-            Хичээл рүү буцах
+            {tr(locale, "Хичээл рүү буцах")}
           </Link>
         )}
         <button
@@ -795,7 +803,7 @@ export function LessonCompleteCard({
           onClick={onRestart}
           className="mt-1 text-sm font-medium text-slate-500 hover:text-emerald-600"
         >
-          Дахин эхлэх
+          {tr(locale, "Дахин эхлэх")}
         </button>
       </div>
     </HskPlayerCard>
@@ -970,6 +978,7 @@ export function CharactersLessonCard({
   teachingImages?: TeachingImage[];
   lessonId: string;
 }) {
+  const locale = useUiLocale();
   const stepMedia: HskGuidedStepMediaRef = {
     imageId: step.imageId,
     mediaSection: step.mediaSection,
@@ -1030,7 +1039,7 @@ export function CharactersLessonCard({
         href={strokeHref}
         className="app-btn-primary mt-4 block w-full text-center"
       >
-        Зураасны дараалал — дагаж бичих
+        {tr(locale, "Зураасны дараалал — дагаж бичих")}
       </Link>
     </HskPlayerCard>
   );

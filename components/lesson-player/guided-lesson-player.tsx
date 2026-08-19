@@ -1,5 +1,8 @@
 "use client";
 
+import { tr } from "@/lib/i18n/translate";
+import { useUiLocale } from "@/lib/i18n/ui-locale";
+
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
@@ -69,6 +72,7 @@ export function GuidedLessonPlayer({
   adminPreview = false,
   routeLessonId,
 }: Props) {
+  const locale = useUiLocale();
   const router = useRouter();
   const progressKey = routeLessonId;
 
@@ -387,7 +391,7 @@ export function GuidedLessonPlayer({
     return (
       <MobileAppShell activeTab="study" showBottomNav={false}>
         <p className="py-16 text-center text-sm text-[var(--app-muted)]">
-          Хичээл ачаалж байна...
+          {tr(locale, "Хичээл ачаалж байна...")}
         </p>
       </MobileAppShell>
     );
@@ -421,7 +425,7 @@ export function GuidedLessonPlayer({
             onClick={handlePrimaryAction}
             className={lessonPlayerPrimaryBtnClass(isPrimaryDisabled())}
           >
-            {primaryCtaLabel()}
+            {tr(locale, primaryCtaLabel())}
           </button>
         }
       >
@@ -538,7 +542,7 @@ export function GuidedLessonPlayer({
           href={lessonPreviewPath(lesson.id, { adminPreview })}
           className="mt-4 block text-center text-xs text-[var(--app-muted)] hover:text-emerald-600"
         >
-          Хичээлийн дэлгэрэнгүй рүү
+          {tr(locale, "Хичээлийн дэлгэрэнгүй рүү")}
         </Link>
       ) : null}
     </MobileAppShell>

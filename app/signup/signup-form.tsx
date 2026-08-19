@@ -1,6 +1,9 @@
 "use client";
 
 import Link from "next/link";
+import { tr } from "@/lib/i18n/translate";
+import { useUiLocale } from "@/lib/i18n/ui-locale";
+
 import { useRouter, useSearchParams } from "next/navigation";
 import { useState } from "react";
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
@@ -10,6 +13,7 @@ import { getSession, hasSupabaseConfig, signUpWithEmail } from "@/lib/supabase/a
 import { resetProgressSyncDismiss } from "@/lib/supabase/progress-sync";
 
 export function SignupForm() {
+  const locale = useUiLocale();
   const router = useRouter();
   const searchParams = useSearchParams();
   const nextPath = getSafeRedirectPath(searchParams.get("next"));
@@ -26,12 +30,12 @@ export function SignupForm() {
     setError(null);
 
     if (password.length < 6) {
-      setError("Нууц үг хамгийн багадаа 6 тэмдэгт байх ёстой.");
+      setError(tr(locale, "Нууц үг хамгийн багадаа 6 тэмдэгт байх ёстой."));
       return;
     }
 
     if (password !== confirmPassword) {
-      setError("Нууц үг таарахгүй байна.");
+      setError(tr(locale, "Нууц үг таарахгүй байна."));
       return;
     }
 
@@ -60,10 +64,10 @@ export function SignupForm() {
     <MobileAppShell activeTab="profile" showBottomNav={false}>
       <section className="py-4">
         <h1 className="text-2xl font-bold tracking-tight text-[var(--app-text)]">
-          Бүртгүүлэх
+          {tr(locale, "Бүртгүүлэх")}
         </h1>
         <p className="mt-2 text-sm text-[var(--app-muted)]">
-          Аккаунт үүсгээд ахицаа хадгалах боломжтой.
+          {tr(locale, "Аккаунт үүсгээд ахицаа хадгалах боломжтой.")}
         </p>
       </section>
 
@@ -75,7 +79,7 @@ export function SignupForm() {
       ) : success ? (
         <MobileCard>
           <p className="text-sm leading-6 text-[var(--app-text)]">
-            Бүртгэл үүсгэлээ. Имэйл баталгаажуулалт шаардлагатай байж магадгүй.
+            {tr(locale, "Бүртгэл үүсгэлээ. Имэйл баталгаажуулалт шаардлагатай байж магадгүй.")}
           </p>
           <div className="mt-4">
             {hasSession ? (
@@ -83,7 +87,7 @@ export function SignupForm() {
                 href={nextPath}
                 className="inline-flex min-h-[44px] w-full items-center justify-center rounded-full bg-emerald-500 px-6 py-3 text-sm font-semibold text-white"
               >
-                Профайл руу →
+                {tr(locale, "Профайл руу →")}
               </Link>
             ) : (
               <Link
@@ -94,7 +98,7 @@ export function SignupForm() {
                 }
                 className="inline-flex min-h-[44px] w-full items-center justify-center rounded-full bg-emerald-500 px-6 py-3 text-sm font-semibold text-white"
               >
-                Нэвтрэх →
+                {tr(locale, "Нэвтрэх")} →
               </Link>
             )}
           </div>
@@ -103,7 +107,7 @@ export function SignupForm() {
         <MobileCard>
           <form onSubmit={handleSubmit} className="flex flex-col gap-4">
             <label className="block text-sm font-medium text-[var(--app-text)]">
-              Имэйл
+              {tr(locale, "Имэйл")}
               <input
                 type="email"
                 autoComplete="email"
@@ -115,7 +119,7 @@ export function SignupForm() {
             </label>
 
             <label className="block text-sm font-medium text-[var(--app-text)]">
-              Нууц үг
+              {tr(locale, "Нууц үг")}
               <input
                 type="password"
                 autoComplete="new-password"
@@ -128,7 +132,7 @@ export function SignupForm() {
             </label>
 
             <label className="block text-sm font-medium text-[var(--app-text)]">
-              Нууц үг давтах
+              {tr(locale, "Нууц үг давтах")}
               <input
                 type="password"
                 autoComplete="new-password"
@@ -151,11 +155,11 @@ export function SignupForm() {
               disabled={submitting}
               className="min-h-[44px] w-full rounded-full bg-emerald-500 px-6 py-3 text-sm font-semibold text-white disabled:opacity-50"
             >
-              {submitting ? "Бүртгэж байна..." : "Бүртгүүлэх"}
+              {tr(locale, submitting ? "Бүртгэж байна..." : "Бүртгүүлэх")}
             </button>
 
             <p className="text-center text-sm text-[var(--app-muted)]">
-              Бүртгэлтэй юу?{" "}
+              {tr(locale, "Бүртгэлтэй юу?")}{" "}
               <Link
                 href={
                   searchParams.get("next")
@@ -164,7 +168,7 @@ export function SignupForm() {
                 }
                 className="font-medium text-emerald-700"
               >
-                Нэвтрэх
+                {tr(locale, "Нэвтрэх")}
               </Link>
             </p>
           </form>

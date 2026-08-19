@@ -1,5 +1,8 @@
 "use client";
 
+import { tr } from "@/lib/i18n/translate";
+import { useUiLocale } from "@/lib/i18n/ui-locale";
+
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { ProfileAchievementBadges } from "@/components/profile/profile-achievement-badges";
@@ -34,6 +37,7 @@ export function ProfileSrsStats({
   streak,
   completedLessons,
 }: Props) {
+  const locale = useUiLocale();
   const { level: activeLevel, hydrated } = useActiveHskLevel();
   const [stats, setStats] = useState<UserWordSrsStats | null>(null);
   const [loading, setLoading] = useState(true);
@@ -118,17 +122,17 @@ export function ProfileSrsStats({
         <div className="bs-tm-stat">
           <div className="bs-tm-stat-ic" aria-hidden>📚</div>
           <div className="bs-tm-stat-n">{studied}</div>
-          <div className="bs-tm-stat-l">Сурсан үг</div>
+          <div className="bs-tm-stat-l">{tr(locale, "Сурсан үг")}</div>
         </div>
         <div className="bs-tm-stat">
           <div className="bs-tm-stat-ic" aria-hidden>🎯</div>
           <div className="bs-tm-stat-n">{accuracy}%</div>
-          <div className="bs-tm-stat-l">Нарийвчлал</div>
+          <div className="bs-tm-stat-l">{tr(locale, "Нарийвчлал")}</div>
         </div>
         <div className="bs-tm-stat">
           <div className="bs-tm-stat-ic" aria-hidden>🎮</div>
           <div className="bs-tm-stat-n">{gamePlayed}</div>
-          <div className="bs-tm-stat-l">Тоглосон</div>
+          <div className="bs-tm-stat-l">{tr(locale, "Тоглосон")}</div>
         </div>
       </div>
 
@@ -142,7 +146,7 @@ export function ProfileSrsStats({
 
       {stats?.hskProgress?.length ? (
         <>
-          <p className="bs-tm-sec">📊 HSK түвшний явц</p>
+          <p className="bs-tm-sec">{tr(locale, "📊 HSK түвшний явц")}</p>
           <div className="bs-tm-card bs-tm-lvl-card">
             {stats.hskProgress.map((row) => {
               const pct =
@@ -165,22 +169,22 @@ export function ProfileSrsStats({
         </>
       ) : null}
 
-      <p className="bs-tm-sec">🎮 Тоглоомын статистик</p>
+      <p className="bs-tm-sec">{tr(locale, "🎮 Тоглоомын статистик")}</p>
       <div className="bs-tm-stat-row" style={{ marginBottom: 18 }}>
         <div className="bs-tm-stat">
           <div className="bs-tm-stat-ic" aria-hidden>🎮</div>
           <div className="bs-tm-stat-n">{gamePlayed}</div>
-          <div className="bs-tm-stat-l">Тоглосон</div>
+          <div className="bs-tm-stat-l">{tr(locale, "Тоглосон")}</div>
         </div>
         <div className="bs-tm-stat">
           <div className="bs-tm-stat-ic" aria-hidden>🏆</div>
           <div className="bs-tm-stat-n">{gameBest}</div>
-          <div className="bs-tm-stat-l">Дээд оноо</div>
+          <div className="bs-tm-stat-l">{tr(locale, "Дээд оноо")}</div>
         </div>
         <div className="bs-tm-stat">
           <div className="bs-tm-stat-ic" aria-hidden>✅</div>
           <div className="bs-tm-stat-n">{gamesCompleted}</div>
-          <div className="bs-tm-stat-l">Дуусгасан</div>
+          <div className="bs-tm-stat-l">{tr(locale, "Дуусгасан")}</div>
         </div>
       </div>
 
@@ -189,7 +193,7 @@ export function ProfileSrsStats({
           ⚙️
         </span>
         <span className="flex-1">
-          <span className="bs-tm-card-title">Тохиргоо</span>
+          <span className="bs-tm-card-title">{tr(locale, "Тохиргоо")}</span>
         </span>
         <span className="bs-tm-card-chev" aria-hidden>›</span>
       </Link>
@@ -203,8 +207,8 @@ export function ProfileSrsStats({
             🎯
           </span>
           <span className="bs-tm-card-body">
-            <span className="bs-tm-card-title">Утга сонгох тоглоом</span>
-            <span className="bs-tm-card-sub">Тоглоомын хэсэг</span>
+            <span className="bs-tm-card-title">{tr(locale, "Утга сонгох тоглоом")}</span>
+            <span className="bs-tm-card-sub">{tr(locale, "Тоглоомын хэсэг")}</span>
           </span>
           <span className="bs-tm-card-chev" aria-hidden>›</span>
         </Link>

@@ -1,5 +1,8 @@
 "use client";
 
+import { tr } from "@/lib/i18n/translate";
+import { useUiLocale } from "@/lib/i18n/ui-locale";
+
 import Link from "next/link";
 import { LessonPlayerCard } from "@/components/lesson-player/lesson-player-shell";
 import { lessonPreviewPath } from "@/lib/lesson-publish";
@@ -33,6 +36,7 @@ export function LessonStepResult({
   simplified = false,
   srsSeed = null,
 }: Props) {
+  const locale = useUiLocale();
   const quizPercent =
     quizTotal > 0 ? Math.round((quizCorrect / quizTotal) * 100) : 100;
   const srsTotal = srsSeed ? srsSeed.added + srsSeed.already : 0;
@@ -63,14 +67,14 @@ export function LessonStepResult({
           🏆
         </p>
         <h1 className="mt-3 break-words text-xl font-bold text-slate-900">
-          Хичээл дууслаа!
+          {tr(locale, "Хичээл дууслаа!")}
         </h1>
         {!simplified ? (
           <p className="mt-2 max-w-full break-words text-sm text-slate-600">
-            {stepsCompleted} / {totalSteps} алхам ·{" "}
+            {stepsCompleted} / {totalSteps} {tr(locale, "алхам")} ·{" "}
             {quizTotal > 0
               ? `Quiz ${quizCorrect}/${quizTotal} (${quizPercent}%)`
-              : "Quiz байхгүй"}
+              : tr(locale, "Quiz байхгүй")}
           </p>
         ) : null}
         {!simplified ? (
@@ -78,18 +82,18 @@ export function LessonStepResult({
         ) : null}
         {!simplified && !passed && quizTotal > 0 ? (
           <p className="mt-2 text-sm text-amber-700">
-            {PASSING_QUIZ_PERCENT}%-аас дээш оноо авахад хичээл бүрэн дуусна.
+            {PASSING_QUIZ_PERCENT}{tr(locale, "%-аас дээш оноо авахад хичээл бүрэн дуусна.")}
           </p>
         ) : null}
         {showSrsBlock ? (
           <div className="mt-4 w-full rounded-2xl border border-emerald-200 bg-emerald-50 px-4 py-3">
             {srsSeed.added > 0 ? (
               <p className="break-words text-sm font-semibold text-emerald-700">
-                🎉 {srsSeed.added} шинэ үг маргааш давтагдахаар товлогдлоо
+                🎉 {srsSeed.added} {tr(locale, "шинэ үг маргааш давтагдахаар товлогдлоо")}
               </p>
             ) : (
               <p className="break-words text-sm font-semibold text-emerald-700">
-                Бүх үг аль хэдийн давталтад байна ✅
+                {tr(locale, "Бүх үг аль хэдийн давталтад байна ✅")}
               </p>
             )}
           </div>
@@ -101,7 +105,7 @@ export function LessonStepResult({
           <>
             {quizTotal > 0 ? (
               <Link href={quizHref} className="app-btn-secondary w-full">
-                Quiz өгөх
+                {tr(locale, "Quiz өгөх")}
               </Link>
             ) : null}
             <button
@@ -109,15 +113,15 @@ export function LessonStepResult({
               onClick={onRestart}
               className="app-btn-secondary w-full"
             >
-              Дахин үзэх
+              {tr(locale, "Дахин үзэх")}
             </button>
             {nextTrainingHref ? (
               <Link href={nextTrainingHref} className="app-btn-primary w-full">
-                Дараагийн хичээл
+                {tr(locale, "Дараагийн хичээл")}
               </Link>
             ) : nextHref ? (
               <Link href={nextHref} className="app-btn-primary w-full">
-                Дараагийн хичээл
+                {tr(locale, "Дараагийн хичээл")}
               </Link>
             ) : null}
           </>
@@ -125,34 +129,34 @@ export function LessonStepResult({
           <>
         {showSrsBlock ? (
           <Link href="/review/words" className="app-btn-primary w-full">
-            Одоо давтах →
+            {tr(locale, "Одоо давтах →")}
           </Link>
         ) : null}
         {quizTotal > 0 ? (
           <Link href={quizHref} className="app-btn-secondary w-full">
-            Өөрийгөө шалгах
+            {tr(locale, "Өөрийгөө шалгах")}
           </Link>
         ) : null}
         <Link href={studyHref} className="app-btn-secondary w-full">
-          Судлах хэсэг рүү
+          {tr(locale, "Судлах хэсэг рүү")}
         </Link>
         {nextTrainingHref ? (
           <Link href={nextTrainingHref} className="app-btn-primary w-full">
-            Дараагийн хичээл
+            {tr(locale, "Дараагийн хичээл")}
           </Link>
         ) : nextHref ? (
           <Link href={nextHref} className="app-btn-primary w-full">
-            Дараагийн хичээл
+            {tr(locale, "Дараагийн хичээл")}
           </Link>
         ) : null}
         <Link
           href={vocabHref}
           className="app-btn-outline-green w-full"
         >
-          Картаар давтах
+          {tr(locale, "Картаар давтах")}
         </Link>
         <button type="button" onClick={onRestart} className="app-btn-outline-green w-full">
-          Дахин үзэх
+          {tr(locale, "Дахин үзэх")}
         </button>
           </>
         )}
@@ -172,6 +176,7 @@ export function LessonStepNextLesson({
   nextLessonId: string | null;
   adminPreview?: boolean;
 }) {
+  const locale = useUiLocale();
   const nextTrainingHref = nextLessonId
     ? lessonTrainingPath(nextLessonId, { preview: adminPreview })
     : null;
@@ -179,7 +184,7 @@ export function LessonStepNextLesson({
 
   return (
     <LessonPlayerCard>
-      <h1 className="text-lg font-bold text-slate-900">Баяр хүргэе!</h1>
+      <h1 className="text-lg font-bold text-slate-900">{tr(locale, "Баяр хүргэе!")}</h1>
       <p className="mt-2 break-words text-sm text-slate-600">{title}</p>
       {subtitle ? (
         <p className="mt-1 text-base font-semibold text-emerald-700">{subtitle}</p>
@@ -187,11 +192,11 @@ export function LessonStepNextLesson({
       <div className="mt-6 flex flex-col gap-2.5">
         {nextTrainingHref ? (
           <Link href={nextTrainingHref} className="app-btn-primary w-full">
-            Дараагийн хичээл рүү
+            {tr(locale, "Дараагийн хичээл рүү")}
           </Link>
         ) : (
           <Link href={studyHref} className="app-btn-primary w-full">
-            Судлах хэсэг рүү
+            {tr(locale, "Судлах хэсэг рүү")}
           </Link>
         )}
       </div>

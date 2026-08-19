@@ -1,6 +1,9 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { tr } from "@/lib/i18n/translate";
+import { useUiLocale } from "@/lib/i18n/ui-locale";
+
 import { getAchievementsUnified } from "@/lib/engagement/engagement-service";
 import { getAllLessonProgress } from "@/lib/progress";
 import {
@@ -24,6 +27,7 @@ export function ProfileAchievementBadges({
   accuracyPct,
   activeLevel,
 }: Props) {
+  const locale = useUiLocale();
   const [earnedKeys, setEarnedKeys] = useState<Set<string>>(new Set());
 
   useEffect(() => {
@@ -47,7 +51,7 @@ export function ProfileAchievementBadges({
 
   return (
     <>
-      <p className="bs-tm-sec">🏆 Амжилтын тэмдэг</p>
+      <p className="bs-tm-sec">{tr(locale, "🏆 Амжилтын тэмдэг")}</p>
       <div className="bs-tm-badges">
         {PROFILE_BADGE_DEFS.map((badge) => {
           const on = badge.isEarned(ctx);
@@ -58,7 +62,7 @@ export function ProfileAchievementBadges({
               style={on && badge.bgOn ? { background: badge.bgOn } : undefined}
             >
               <span aria-hidden>{badge.emoji}</span>
-              <span>{badge.label}</span>
+              <span>{tr(locale, badge.label)}</span>
             </div>
           );
         })}
