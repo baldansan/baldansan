@@ -2,6 +2,8 @@
 
 import Link from "next/link";
 import { APP_NAV_ITEMS, type AppNavTab } from "@/lib/app-navigation";
+import { tr } from "@/lib/i18n/translate";
+import { useUiLocale } from "@/lib/i18n/ui-locale";
 
 export type BottomNavTab = AppNavTab;
 
@@ -13,6 +15,7 @@ export default function BottomNav({
   /** Inside BottomNavChrome — skip outer card chrome. */
   embedded?: boolean;
 }) {
+  const locale = useUiLocale();
   return (
     <nav
       className={embedded ? "bs-bottomnav bs-bottomnav-embedded" : "bs-bottomnav"}
@@ -25,7 +28,7 @@ export default function BottomNav({
           className={active === item.key ? "bs-on" : ""}
         >
           {item.icon}
-          {item.label}
+          {tr(locale, item.label)}
         </Link>
       ))}
     </nav>

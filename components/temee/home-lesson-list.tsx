@@ -2,6 +2,8 @@
 
 import Link from "next/link";
 import { lessonPath } from "@/lib/content";
+import { tr } from "@/lib/i18n/translate";
+import { useUiLocale } from "@/lib/i18n/ui-locale";
 import type { LessonStatus } from "@/lib/progress";
 import type { LessonContent } from "@/types/lesson-content";
 
@@ -24,9 +26,12 @@ export function HomeLessonList({
   progressPercent,
   allLessonsHref,
 }: Props) {
+  const locale = useUiLocale();
   if (lessons.length === 0) {
     return (
-      <p className="bs-tm-catalog-empty">Одоогоор хичээл алга.</p>
+      <p className="bs-tm-catalog-empty">
+        {tr(locale, "Одоогоор хичээл алга.")}
+      </p>
     );
   }
 
@@ -35,7 +40,7 @@ export function HomeLessonList({
       <header className="bs-tm-lesson-catalog-head">
         <h2 className="bs-tm-lesson-catalog-title">{heading}</h2>
         <p className="bs-tm-lesson-catalog-meta">
-          {completedCount}/{totalCount} хичээл · {progressPercent}%
+          {completedCount}/{totalCount} {tr(locale, "хичээл")} · {progressPercent}%
         </p>
         <div className="bs-tm-lesson-catalog-bar">
           <i style={{ width: `${progressPercent}%` }} />
@@ -84,7 +89,7 @@ export function HomeLessonList({
 
       {allLessonsHref ? (
         <Link href={allLessonsHref} className="bs-tm-lesson-catalog-all">
-          Бүх хичээл харах →
+          {tr(locale, "Бүх хичээл харах")} →
         </Link>
       ) : null}
     </section>

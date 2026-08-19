@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { PublicPageShell } from "@/components/public-page-shell";
+import { SwitchToZhButton } from "@/components/i18n/switch-to-zh-button";
 
 export const metadata = {
   title: "应用介绍 — Бөөндөө Сурцгаая",
@@ -34,6 +35,10 @@ export default function ChineseIntroPage() {
         </h1>
         <p className="mt-2 text-slate-600">
           Багш нарт зориулсан хятад хэл дээрх танилцуулга
+        </p>
+        <SwitchToZhButton />
+        <p className="mt-2 text-xs text-slate-500">
+          点击后应用界面（菜单、按钮）将显示中文，随时可在「设置 → 界面语言」切换回蒙古语。
         </p>
       </section>
 
