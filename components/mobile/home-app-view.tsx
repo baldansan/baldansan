@@ -33,9 +33,9 @@ import {
   resolveLessonHskLevel,
 } from "@/lib/hsk/active-hsk-level";
 import { HelzuiHomeCard } from "@/components/helzui/helzui-home-card";
+import "@/components/helzui/helzui-course.css";
 import { tr } from "@/lib/i18n/translate";
 import { useUiLocale } from "@/lib/i18n/ui-locale";
-import "@/components/helzui/helzui-course.css";
 import type { LessonContent } from "@/types/lesson-content";
 
 type Props = {
@@ -188,12 +188,10 @@ export function HomeAppView({ catalog, defaultChipId }: Props) {
         <div className="relative z-10 flex items-center gap-3">
           <div className="min-w-0 flex-1">
             <p className="text-sm font-semibold text-emerald-50">
-              {tr(locale, "Сайн уу 👋")}
+              {tr(locale, "Сайн уу")} 👋
             </p>
             <p className="truncate text-2xl font-extrabold leading-tight">
-              {displayName === "Суралцагч"
-                ? tr(locale, "Суралцагч")
-                : displayName}
+              {displayName === "Суралцагч" ? tr(locale, "Суралцагч") : displayName}
             </p>
             <div className="mt-3 flex flex-wrap items-center gap-2">
               <span className="inline-flex items-center gap-1.5 rounded-full bg-white/15 px-3 py-1.5 text-xs font-bold ring-1 ring-white/25">
@@ -228,9 +226,7 @@ export function HomeAppView({ catalog, defaultChipId }: Props) {
           </span>
           <span className="min-w-0 flex-1">
             <p className="bs-tm-continue-kicker">{tr(locale, "Үргэлжлүүлэх")}</p>
-            <p className="bs-tm-continue-title">
-              {continueTitle.replace(/^Хичээл /, `${tr(locale, "Хичээл")} `)}
-            </p>
+            <p className="bs-tm-continue-title">{continueTitle}</p>
           </span>
           <span className="bs-tm-card-chev" aria-hidden>
             ›

@@ -27,10 +27,11 @@ export function HomeLessonList({
   allLessonsHref,
 }: Props) {
   const locale = useUiLocale();
-
   if (lessons.length === 0) {
     return (
-      <p className="bs-tm-catalog-empty">{tr(locale, "Одоогоор хичээл алга.")}</p>
+      <p className="bs-tm-catalog-empty">
+        {tr(locale, "Одоогоор хичээл алга.")}
+      </p>
     );
   }
 
@@ -39,8 +40,7 @@ export function HomeLessonList({
       <header className="bs-tm-lesson-catalog-head">
         <h2 className="bs-tm-lesson-catalog-title">{heading}</h2>
         <p className="bs-tm-lesson-catalog-meta">
-          {completedCount}/{totalCount} {tr(locale, "хичээл")} ·{" "}
-          {progressPercent}%
+          {completedCount}/{totalCount} {tr(locale, "хичээл")} · {progressPercent}%
         </p>
         <div className="bs-tm-lesson-catalog-bar">
           <i style={{ width: `${progressPercent}%` }} />
@@ -89,7 +89,7 @@ export function HomeLessonList({
 
       {allLessonsHref ? (
         <Link href={allLessonsHref} className="bs-tm-lesson-catalog-all">
-          {tr(locale, "Бүх хичээл харах →")}
+          {tr(locale, "Бүх хичээл харах")} →
         </Link>
       ) : null}
     </section>
