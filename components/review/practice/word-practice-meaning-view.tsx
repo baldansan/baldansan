@@ -1,6 +1,8 @@
 "use client";
 
 import { useCallback, useMemo, useState } from "react";
+import { tr } from "@/lib/i18n/translate";
+import { useUiLocale } from "@/lib/i18n/ui-locale";
 import { shuffleArray } from "@/lib/games/game-data-core";
 import {
   buildPracticeMatchPairs,
@@ -62,6 +64,7 @@ function WordPracticeMatchBoard({
   onComplete: () => void;
   onBackToSummary: () => void;
 }) {
+  const locale = useUiLocale();
   const leftItems = useMemo(
     () => shuffleArray(pairs.map((p) => ({ id: p.id, label: p.mongolian }))),
     [pairs, gameKey]
@@ -109,12 +112,12 @@ function WordPracticeMatchBoard({
   return (
     <div className="bs-wpl-meaning">
       <button type="button" onClick={onBackToSummary} className="bs-mem-back">
-        ← Дүгнэлт рүү
+        ← {tr(locale, "Дүгнэлт рүү")}
       </button>
       <header className="bs-wpl-stroke-head">
-        <h2 className="bs-wpl-stroke-title">🔀 Утга тааруулах</h2>
+        <h2 className="bs-wpl-stroke-title">🔀 {tr(locale, "Утга тааруулах")}</h2>
         <p className="bs-wpl-stroke-meta">
-          {matchedCount} / {total} хос
+          {matchedCount} / {total} {tr(locale, "хос")}
         </p>
       </header>
       <div className="bs-wpl-match-grid">
@@ -165,7 +168,7 @@ function WordPracticeMatchBoard({
           })}
         </div>
       </div>
-      <p className="bs-wpl-match-hint">Монгол утга ба ханзыг хослуулна уу</p>
+      <p className="bs-wpl-match-hint">{tr(locale, "Монгол утга ба ханзыг хослуулна уу")}</p>
     </div>
   );
 }
@@ -181,6 +184,7 @@ function WordPracticeMeaningQuiz({
   onComplete: () => void;
   onBackToSummary: () => void;
 }) {
+  const locale = useUiLocale();
   const deck = useMemo(
     () => buildPracticeMeaningDeck(hskWords),
     [hskWords, gameKey]
@@ -197,14 +201,14 @@ function WordPracticeMeaningQuiz({
     return (
       <div className="bs-srs-done">
         <p className="text-sm text-[var(--app-muted)]">
-          Утга асуулт бүрдэж чадсангүй.
+          {tr(locale, "Утга асуулт бүрдэж чадсангүй.")}
         </p>
         <button
           type="button"
           onClick={onBackToSummary}
           className="mt-4 min-h-[44px] w-full rounded-[14px] bg-[#eaf0ed] text-sm font-extrabold text-[#3b473f]"
         >
-          Дүгнэлт рүү буцах
+          {tr(locale, "Дүгнэлт рүү буцах")}
         </button>
       </div>
     );
@@ -232,17 +236,17 @@ function WordPracticeMeaningQuiz({
   return (
     <div className="bs-wpl-meaning">
       <button type="button" onClick={onBackToSummary} className="bs-mem-back">
-        ← Дүгнэлт рүү
+        ← {tr(locale, "Дүгнэлт рүү")}
       </button>
       <header className="bs-wpl-stroke-head">
-        <h2 className="bs-wpl-stroke-title">🔀 Утга тааруулах</h2>
+        <h2 className="bs-wpl-stroke-title">🔀 {tr(locale, "Утга тааруулах")}</h2>
         <p className="bs-wpl-stroke-meta">
-          {index + 1} / {total} · зөв {correctCount}
+          {index + 1} / {total} · {tr(locale, "зөв")} {correctCount}
         </p>
       </header>
       <div className="bs-meaning-card">
         <p className="text-center text-sm font-bold text-[var(--bs-muted)]">
-          Энэ үгийн утга?
+          {tr(locale, "Энэ үгийн утга?")}
         </p>
         <p className="bs-meaning-hanzi">{current.hanzi}</p>
         {current.pinyin ? (

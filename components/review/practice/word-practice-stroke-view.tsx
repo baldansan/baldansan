@@ -2,6 +2,8 @@
 
 import dynamic from "next/dynamic";
 import { useMemo, useState } from "react";
+import { tr } from "@/lib/i18n/translate";
+import { useUiLocale } from "@/lib/i18n/ui-locale";
 import { extractHanziCharacters } from "@/lib/hanzi/writing-practice";
 import type { HskWordRow } from "@/lib/supabase/hsk-words";
 import type { HskCharacter } from "@/types/hsk-lesson-package";
@@ -85,6 +87,7 @@ export function WordPracticeStrokeView({
   onComplete,
   onBackToSummary,
 }: Props) {
+  const locale = useUiLocale();
   const tasks = useMemo(() => buildStrokeTasks(words), [words, gameKey]);
   const [index, setIndex] = useState(0);
 
@@ -95,14 +98,14 @@ export function WordPracticeStrokeView({
     return (
       <div className="bs-srs-done">
         <p className="text-sm text-[var(--app-muted)]">
-          Сонгосон үгсэд бичих ханз олдсонгүй.
+          {tr(locale, "Сонгосон үгсэд бичих ханз олдсонгүй.")}
         </p>
         <button
           type="button"
           onClick={onBackToSummary}
           className="mt-4 min-h-[44px] w-full rounded-[14px] bg-[#eaf0ed] text-sm font-extrabold text-[#3b473f]"
         >
-          Дүгнэлт рүү буцах
+          {tr(locale, "Дүгнэлт рүү буцах")}
         </button>
       </div>
     );
@@ -119,16 +122,16 @@ export function WordPracticeStrokeView({
   return (
     <div className="bs-wpl-stroke">
       <button type="button" onClick={onBackToSummary} className="bs-mem-back">
-        ← Дүгнэлт рүү
+        ← {tr(locale, "Дүгнэлт рүү")}
       </button>
       <header className="bs-wpl-stroke-head">
-        <h2 className="bs-wpl-stroke-title">✏️ Зурлагын дасгал</h2>
+        <h2 className="bs-wpl-stroke-title">✏️ {tr(locale, "Зурлагын дасгал")}</h2>
         <p className="bs-wpl-stroke-meta">
           {index + 1} / {total} · {current.word} ({current.meaning})
         </p>
       </header>
       <p className="bs-wpl-stroke-hint">
-        Ханзыг өөрөө зур. Буруу зураасанд шууд засна.
+        {tr(locale, "Ханзыг өөрөө зур. Буруу зураасанд шууд засна.")}
       </p>
       <CharacterWriter
         key={`${gameKey}-${current.char}-${index}`}

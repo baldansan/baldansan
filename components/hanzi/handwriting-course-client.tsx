@@ -3,6 +3,8 @@
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import { CharacterWriter } from "@/components/hanzi/CharacterWriter";
+import { tr } from "@/lib/i18n/translate";
+import { useUiLocale } from "@/lib/i18n/ui-locale";
 import { useActivityTracker } from "@/lib/analytics/activity-tracker";
 import { recordWritingCharRemote } from "@/lib/analytics/learner-records";
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
@@ -43,6 +45,7 @@ function writeProgress(done: Set<string>) {
 }
 
 export function HandwritingCourseClient() {
+  const locale = useUiLocale();
   const [data, setData] = useState<HandwrittenData | null>(null);
   const [groups, setGroups] = useState<GroupsData | null>(null);
   const [stories, setStories] = useState<StoriesData>({});
@@ -132,12 +135,12 @@ export function HandwritingCourseClient() {
         href="/kanji"
         className="mb-3 inline-flex items-center text-sm font-medium text-[var(--app-muted)] transition-colors hover:text-emerald-600"
       >
-        ← Үсэг рүү буцах
+        {tr(locale, "← Үсэг рүү буцах")}
       </Link>
 
       <MobilePageHeader
-        title="Бичих сургалт · 写字练习"
-        subtitle="HSK 3.0 стандартын гараар бичиж сурах ёстой ханзнууд"
+        title={tr(locale, "Бичих сургалт · 写字练习")}
+        subtitle={tr(locale, "HSK 3.0 стандартын гараар бичиж сурах ёстой ханзнууд")}
       />
 
       <div className="mb-3 flex flex-wrap gap-2">
@@ -160,19 +163,19 @@ export function HandwritingCourseClient() {
       {loadError ? (
         <MobileCard padding="lg">
           <p className="text-sm text-[var(--app-muted)]">
-            Өгөгдөл ачаалагдсангүй. Сүлжээгээ шалгаад дахин оролдоно уу.
+            {tr(locale, "Өгөгдөл ачаалагдсангүй. Сүлжээгээ шалгаад дахин оролдоно уу.")}
           </p>
         </MobileCard>
       ) : data == null ? (
         <MobileCard padding="lg">
-          <p className="text-sm text-[var(--app-muted)]">Ачаалж байна…</p>
+          <p className="text-sm text-[var(--app-muted)]">{tr(locale, "Ачаалж байна…")}</p>
         </MobileCard>
       ) : (
         <>
           <MobileCard padding="lg" className="mb-4">
             <div className="flex items-center justify-between gap-2">
               <p className="text-sm font-bold text-[var(--app-text)]">
-                {doneCount}/{chars.length} бичсэн
+                {doneCount}/{chars.length} {tr(locale, "бичсэн")}
               </p>
               <p className="text-xs text-[var(--app-muted)]">
                 {chars.length > 0
@@ -190,7 +193,7 @@ export function HandwritingCourseClient() {
               />
             </div>
             <p className="mt-2 text-xs leading-5 text-[var(--app-muted)]">
-              Ханз дээр дарж бичээрэй: эхлээд дагаж, дараа нь санаж бичнэ.
+              {tr(locale, "Ханз дээр дарж бичээрэй: эхлээд дагаж, дараа нь санаж бичнэ.")}
             </p>
           </MobileCard>
 
@@ -225,7 +228,7 @@ export function HandwritingCourseClient() {
                               : "text-[var(--app-muted)]"
                           }`}
                         >
-                          {groupDone}/{group.chars.length} бичсэн
+                          {groupDone}/{group.chars.length} {tr(locale, "бичсэн")}
                           {complete ? " ✓" : ""}
                         </span>
                       </span>
@@ -286,13 +289,13 @@ export function HandwritingCourseClient() {
             <div className="mb-2 flex items-center justify-between">
               <div className="flex items-center gap-2">
                 <p className="text-sm font-bold text-[var(--app-text)]">
-                  {activeChar} · Бичих дасгал
+                  {activeChar} · {tr(locale, "Бичих дасгал")}
                 </p>
                 <SpeakerButton
                   text={activeChar}
                   lang="zh"
                   size="sm"
-                  label="Дуудлага сонсох"
+                  label={tr(locale, "Дуудлага сонсох")}
                   showInlineError={false}
                 />
               </div>
@@ -301,20 +304,20 @@ export function HandwritingCourseClient() {
                 onClick={() => setActiveChar(null)}
                 className="rounded-full bg-slate-100 px-3 py-1.5 text-xs font-semibold text-slate-600"
               >
-                Хаах
+                {tr(locale, "Хаах")}
               </button>
             </div>
             {stories[activeChar] ? (
               <div className="mb-3 rounded-2xl bg-amber-50 px-4 py-3 ring-1 ring-amber-200">
                 <p className="text-xs font-bold uppercase tracking-wide text-amber-700">
-                  🧠 Толгойдоо ургуулж бод
+                  {tr(locale, "🧠 Толгойдоо ургуулж бод")}
                 </p>
                 <p className="mt-1 text-sm leading-6 text-amber-900">
                   {stories[activeChar].story}
                 </p>
                 {stories[activeChar].m ? (
                   <p className="mt-1 text-xs font-semibold text-amber-700">
-                    Утга: {stories[activeChar].m}
+                    {tr(locale, "Утга:")} {stories[activeChar].m}
                   </p>
                 ) : null}
               </div>

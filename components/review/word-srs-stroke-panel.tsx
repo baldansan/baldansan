@@ -2,6 +2,8 @@
 
 import dynamic from "next/dynamic";
 import { useEffect, useMemo, useState } from "react";
+import { tr } from "@/lib/i18n/translate";
+import { useUiLocale } from "@/lib/i18n/ui-locale";
 import { extractHanziCharacters } from "@/lib/hanzi/writing-practice";
 import type { HskCharacter } from "@/types/hsk-lesson-package";
 
@@ -37,6 +39,7 @@ export function WordSrsStrokePanel({
   wordRadical,
   active = true,
 }: Props) {
+  const locale = useUiLocale();
   const chars = useMemo(
     () => extractHanziCharacters(simplified),
     [simplified]
@@ -65,12 +68,12 @@ export function WordSrsStrokePanel({
           className="bs-srs-stroke-toggle"
           onClick={() => setOpen(true)}
         >
-          Зурлага үзэх
+          {tr(locale, "Зурлага үзэх")}
         </button>
       ) : (
         <div className="bs-srs-stroke-body">
           {chars.length > 1 ? (
-            <div className="bs-srs-stroke-tabs" role="tablist" aria-label="Ханз сонгох">
+            <div className="bs-srs-stroke-tabs" role="tablist" aria-label={tr(locale, "Ханз сонгох")}>
               {chars.map((ch, i) => (
                 <button
                   key={`${ch}-${i}`}
@@ -98,7 +101,7 @@ export function WordSrsStrokePanel({
             className="bs-srs-stroke-hide"
             onClick={() => setOpen(false)}
           >
-            Хаах
+            {tr(locale, "Хаах")}
           </button>
         </div>
       )}

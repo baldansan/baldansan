@@ -1,6 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { tr } from "@/lib/i18n/translate";
+import { useUiLocale } from "@/lib/i18n/ui-locale";
 import { RadicalGameClient } from "@/components/games/radical-game-client";
 import type { RadicalGameEntry } from "@/lib/games/radical-game-data";
 
@@ -15,6 +17,7 @@ export function WordPracticeRadicalView({
   gameKey,
   onBackToSummary,
 }: Props) {
+  const locale = useUiLocale();
   const [entries, setEntries] = useState<RadicalGameEntry[] | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
@@ -58,7 +61,7 @@ export function WordPracticeRadicalView({
   if (loading) {
     return (
       <p className="py-12 text-center text-sm text-[var(--app-muted)]">
-        Задлах тоглоом ачааллаж байна…
+        {tr(locale, "Задлах тоглоом ачааллаж байна…")}
       </p>
     );
   }
@@ -67,14 +70,14 @@ export function WordPracticeRadicalView({
     return (
       <div className="bs-srs-done">
         <p className="text-sm text-red-600">
-          {error ?? "Эдгээр үгсэд задлах өгөгдөл олдсонгүй."}
+          {tr(locale, error ?? "Эдгээр үгсэд задлах өгөгдөл олдсонгүй.")}
         </p>
         <button
           type="button"
           onClick={onBackToSummary}
           className="mt-4 min-h-[44px] w-full rounded-[14px] bg-[#eaf0ed] text-sm font-extrabold text-[#3b473f]"
         >
-          Дүгнэлт рүү буцах
+          {tr(locale, "Дүгнэлт рүү буцах")}
         </button>
       </div>
     );

@@ -2,6 +2,8 @@
 
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
+import { tr } from "@/lib/i18n/translate";
+import { useUiLocale } from "@/lib/i18n/ui-locale";
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
 import { MobileCard } from "@/components/mobile/mobile-card";
 import { MobilePageHeader } from "@/components/mobile/mobile-page-header";
@@ -42,6 +44,7 @@ type Props = {
 };
 
 export function KanjiAppView({ entries, lessonVocab, lang = null }: Props) {
+  const locale = useUiLocale();
   const [search, setSearch] = useState("");
   const [filter, setFilter] = useState<FilterId>("all");
   const [learnedKeys, setLearnedKeys] = useState<Set<string>>(new Set());
@@ -94,8 +97,8 @@ export function KanjiAppView({ entries, lessonVocab, lang = null }: Props) {
   return (
     <MobileAppShell activeTab="kanji" >
       <MobilePageHeader
-        title={lettersPageTitle(lang)}
-        subtitle={lettersPageSubtitle(lang)}
+        title={tr(locale, lettersPageTitle(lang))}
+        subtitle={tr(locale, lettersPageSubtitle(lang))}
         badge={`${entries.length}`}
       />
 
@@ -108,9 +111,9 @@ export function KanjiAppView({ entries, lessonVocab, lang = null }: Props) {
             📖
           </span>
           <span className="min-w-0 flex-1">
-            <span className="block text-sm font-bold">Толь бичиг</span>
+            <span className="block text-sm font-bold">{tr(locale, "Толь бичиг")}</span>
             <span className="block text-xs text-sky-50">
-              Ханз · пиньинь · монголоор хайх — дуудлагатай
+              {tr(locale, "Ханз · пиньинь · монголоор хайх — дуудлагатай")}
             </span>
           </span>
           <span aria-hidden>›</span>
@@ -127,10 +130,10 @@ export function KanjiAppView({ entries, lessonVocab, lang = null }: Props) {
           </span>
           <span className="min-w-0 flex-1">
             <span className="block text-sm font-bold">
-              Бичих сургалт · 写字练习
+              {tr(locale, "Бичих сургалт · 写字练习")}
             </span>
             <span className="block text-xs text-emerald-50">
-              HSK 3.0 — гараар бичиж сурах ёстой 1200 ханз
+              {tr(locale, "HSK 3.0 — гараар бичиж сурах ёстой 1200 ханз")}
             </span>
           </span>
           <span aria-hidden>›</span>
@@ -140,7 +143,7 @@ export function KanjiAppView({ entries, lessonVocab, lang = null }: Props) {
       <div className="mb-4">
         <input
           type="search"
-          placeholder={lettersSearchPlaceholder(lang)}
+          placeholder={tr(locale, lettersSearchPlaceholder(lang))}
           value={search}
           onChange={(e) => setSearch(e.target.value)}
           className="w-full rounded-2xl border border-[var(--app-border)] bg-white px-4 py-3 text-sm outline-none ring-emerald-500 placeholder:text-slate-400 focus:border-emerald-300 focus:ring-2"
@@ -155,7 +158,7 @@ export function KanjiAppView({ entries, lessonVocab, lang = null }: Props) {
             onClick={() => setFilter(item.id)}
             className={`app-chip ${filter === item.id ? "app-chip-active" : ""}`}
           >
-            {item.label}
+            {tr(locale, item.label)}
           </button>
         ))}
       </div>
@@ -163,13 +166,13 @@ export function KanjiAppView({ entries, lessonVocab, lang = null }: Props) {
       {filtered.length === 0 ? (
         <MobileCard className="text-center">
           <p className="text-sm text-[var(--app-muted)]">
-            {lettersEmptyMessage(lang)}
+            {tr(locale, lettersEmptyMessage(lang))}
           </p>
           <Link
             href={lessonsHref}
             className="mt-3 inline-block text-sm font-semibold text-emerald-600"
           >
-            Хичээл үзэх →
+            {tr(locale, "Хичээл үзэх")} →
           </Link>
         </MobileCard>
       ) : (

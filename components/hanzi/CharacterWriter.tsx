@@ -2,6 +2,8 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import HanziWriter from "hanzi-writer";
+import { tr } from "@/lib/i18n/translate";
+import { useUiLocale } from "@/lib/i18n/ui-locale";
 import { localHanziCharDataLoader } from "@/lib/hanzi/character-data-loader";
 import { HANZI_WRITING_LABELS } from "@/lib/hanzi/writing-practice";
 import type { HskCharacter } from "@/types/hsk-lesson-package";
@@ -47,6 +49,7 @@ function formatComponents(character: HskCharacter): string | null {
 }
 
 export function CharacterWriter({ character, mode, onComplete }: Props) {
+  const locale = useUiLocale();
   const containerRef = useRef<HTMLDivElement | null>(null);
   const actionsRef = useRef<{ quiz: () => void; animate: () => void } | null>(
     null
@@ -192,27 +195,27 @@ export function CharacterWriter({ character, mode, onComplete }: Props) {
   const decomposition = isSingleChar ? formatComponents(character) : null;
   const successLabel =
     mode === "write"
-      ? HANZI_WRITING_LABELS.success
-      : HANZI_WRITING_LABELS.strokeOrder;
+      ? tr(locale, HANZI_WRITING_LABELS.success)
+      : tr(locale, HANZI_WRITING_LABELS.strokeOrder);
 
   return (
     <div className="bs-char-writer">
       {chars.length > 1 ? (
         <p className="bs-stroke-progress">
-          {activeChar} · {safeIndex + 1}/{chars.length} ханз
+          {activeChar} · {safeIndex + 1}/{chars.length} {tr(locale, "ханз")}
         </p>
       ) : null}
 
       <div
         className="bs-mizige"
-        aria-label={`${character.hanzi} ${HANZI_WRITING_LABELS.write}`}
+        aria-label={`${character.hanzi} ${tr(locale, HANZI_WRITING_LABELS.write)}`}
       >
         <MizigeGrid />
         {practiceMode === "loading" ? (
-          <p className="bs-mizige-loading">{HANZI_WRITING_LABELS.loading}</p>
+          <p className="bs-mizige-loading">{tr(locale, HANZI_WRITING_LABELS.loading)}</p>
         ) : null}
         {practiceMode === "unavailable" ? (
-          <p className="bs-mizige-loading">{HANZI_WRITING_LABELS.unavailable}</p>
+          <p className="bs-mizige-loading">{tr(locale, HANZI_WRITING_LABELS.unavailable)}</p>
         ) : null}
         <div
           ref={containerRef}
@@ -235,9 +238,11 @@ export function CharacterWriter({ character, mode, onComplete }: Props) {
           }
         >
           {writePhase === "trace"
-            ? "1/2 · Дагаж бич"
-            : "2/2 · Санаж бич — жишээгүй!"}
-          {strokeTotal > 0 ? ` · ${strokeDone}/${strokeTotal} зураас` : ""}
+            ? tr(locale, "1/2 · Дагаж бич")
+            : tr(locale, "2/2 · Санаж бич — жишээгүй!")}
+          {strokeTotal > 0
+            ? ` · ${strokeDone}/${strokeTotal} ${tr(locale, "зураас")}`
+            : ""}
         </p>
       ) : null}
 
@@ -248,19 +253,19 @@ export function CharacterWriter({ character, mode, onComplete }: Props) {
       <dl className="bs-char-meta">
         {isSingleChar && character.radical ? (
           <>
-            <dt>{HANZI_WRITING_LABELS.radical}</dt>
+            <dt>{tr(locale, HANZI_WRITING_LABELS.radical)}</dt>
             <dd>{character.radical}</dd>
           </>
         ) : null}
         {strokeTotal > 0 ? (
           <>
-            <dt>{HANZI_WRITING_LABELS.strokeCount}</dt>
+            <dt>{tr(locale, HANZI_WRITING_LABELS.strokeCount)}</dt>
             <dd>{strokeTotal}</dd>
           </>
         ) : null}
         {decomposition ? (
           <>
-            <dt>{HANZI_WRITING_LABELS.components}</dt>
+            <dt>{tr(locale, HANZI_WRITING_LABELS.components)}</dt>
             <dd className="bs-char-decomp">{decomposition}</dd>
           </>
         ) : null}
@@ -272,13 +277,13 @@ export function CharacterWriter({ character, mode, onComplete }: Props) {
           className="bs-cta"
           onClick={() => setCharIndex(safeIndex + 1)}
         >
-          {HANZI_WRITING_LABELS.nextCharacter}
+          {tr(locale, HANZI_WRITING_LABELS.nextCharacter)}
         </button>
       ) : null}
 
       {practiceMode === "success" && isLastChar && onComplete ? (
         <button type="button" className="bs-cta" onClick={onComplete}>
-          {HANZI_WRITING_LABELS.done}
+          {tr(locale, HANZI_WRITING_LABELS.done)}
         </button>
       ) : null}
 
@@ -288,7 +293,7 @@ export function CharacterWriter({ character, mode, onComplete }: Props) {
           className="bs-cta bs-cta-muted"
           onClick={onComplete}
         >
-          {HANZI_WRITING_LABELS.done}
+          {tr(locale, HANZI_WRITING_LABELS.done)}
         </button>
       ) : null}
 
@@ -299,7 +304,7 @@ export function CharacterWriter({ character, mode, onComplete }: Props) {
           className="bs-cta bs-cta-muted"
           onClick={() => actionsRef.current?.animate()}
         >
-          {HANZI_WRITING_LABELS.watchStrokes}
+          {tr(locale, HANZI_WRITING_LABELS.watchStrokes)}
         </button>
       ) : null}
 
@@ -309,7 +314,7 @@ export function CharacterWriter({ character, mode, onComplete }: Props) {
           className="bs-cta bs-cta-muted"
           onClick={() => actionsRef.current?.quiz()}
         >
-          {HANZI_WRITING_LABELS.retry}
+          {tr(locale, HANZI_WRITING_LABELS.retry)}
         </button>
       ) : null}
     </div>
