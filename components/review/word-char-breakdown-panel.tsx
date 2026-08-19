@@ -2,6 +2,8 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { tr } from "@/lib/i18n/translate";
+import { useUiLocale } from "@/lib/i18n/ui-locale";
 import {
   resolveWordBreakdownViewsAsync,
   type CharBreakdownView,
@@ -26,6 +28,7 @@ function BreakdownBlock({
   view: CharBreakdownView;
   showCharLabel: boolean;
 }) {
+  const locale = useUiLocale();
   const radical = view.radicalLine ?? view.radicalFallback;
 
   return (
@@ -35,18 +38,18 @@ function BreakdownBlock({
       ) : null}
       {view.parts.length > 0 ? (
         <p className="bs-srs-decomp-line">
-          <span className="bs-srs-decomp-k">Бүрэлдэхүүн:</span>{" "}
+          <span className="bs-srs-decomp-k">{tr(locale, "Бүрэлдэхүүн:")}</span>{" "}
           {view.parts.map(formatComponentPart).join(" + ")}
         </p>
       ) : null}
       {view.structure ? (
         <p className="bs-srs-decomp-line">
-          <span className="bs-srs-decomp-k">Бүтэц:</span> {view.structure}
+          <span className="bs-srs-decomp-k">{tr(locale, "Бүтэц:")}</span> {view.structure}
         </p>
       ) : null}
       {radical ? (
         <p className="bs-srs-decomp-line">
-          <span className="bs-srs-decomp-k">Язгуур:</span> {radical.glyph}
+          <span className="bs-srs-decomp-k">{tr(locale, "Язгуур:")}</span> {radical.glyph}
           {radical.labelMn ? ` (${radical.labelMn})` : null}
         </p>
       ) : null}
@@ -66,6 +69,7 @@ function BreakdownBlock({
 }
 
 export function WordCharBreakdownPanel({ text, wordRadical }: Props) {
+  const locale = useUiLocale();
   const [views, setViews] = useState<CharBreakdownView[] | null>(null);
 
   useEffect(() => {
@@ -91,7 +95,7 @@ export function WordCharBreakdownPanel({ text, wordRadical }: Props) {
 
   return (
     <div className="bs-srs-decomp">
-      <p className="bs-srs-decomp-title">🧩 Ханзны задаргаа</p>
+      <p className="bs-srs-decomp-title">{tr(locale, "🧩 Ханзны задаргаа")}</p>
       {views.map((view) => (
         <BreakdownBlock
           key={view.char}
@@ -101,7 +105,7 @@ export function WordCharBreakdownPanel({ text, wordRadical }: Props) {
       ))}
       <ConfusableChars text={text} />
       <Link href="/games/radical" className="bs-srs-decomp-link">
-        Задлах тоглоом руу →
+        {tr(locale, "Задлах тоглоом руу →")}
       </Link>
     </div>
   );

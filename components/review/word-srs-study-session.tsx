@@ -34,6 +34,10 @@ import { WordSrsRatingButtons } from "@/components/review/word-srs-rating-button
 
 import { getPrimaryPosLabelMn } from "@/lib/hsk/pos-catalog";
 
+import { tr } from "@/lib/i18n/translate";
+
+import { useUiLocale } from "@/lib/i18n/ui-locale";
+
 import {
 
   buildSessionWordRows,
@@ -196,6 +200,8 @@ export function WordSrsStudySession({
   resumeKey,
 
 }: Props) {
+
+  const locale = useUiLocale();
 
   const [phase, setPhase] = useState<SessionPhase>(
 
@@ -365,9 +371,9 @@ export function WordSrsStudySession({
 
     phase === "practice"
 
-      ? `${index + 1}/${total} карт · давталт`
+      ? `${index + 1}/${total} ${tr(locale, "карт")} · ${tr(locale, "давталт")}`
 
-      : `${sessionDone} / ${goal} · ${index + 1}/${total} карт`;
+      : `${sessionDone} / ${goal} · ${index + 1}/${total} ${tr(locale, "карт")}`;
 
 
 
@@ -611,9 +617,13 @@ export function WordSrsStudySession({
 
       <WordPracticeLauncher
 
-        title={sessionDone > 0 ? completeTitle : "Энэ багц хоосон"}
+        title={tr(locale, sessionDone > 0 ? completeTitle : "Энэ багц хоосон")}
 
-        subtitle={completeMessage}
+        subtitle={
+          typeof completeMessage === "string"
+            ? tr(locale, completeMessage)
+            : completeMessage
+        }
 
         words={sessionWords}
 
@@ -676,8 +686,8 @@ export function WordSrsStudySession({
   if (phase === "practice-done" && activePracticeMode) {
     const detail =
       activePracticeMode === "srs-retry"
-        ? `${practiceQueue.length} үгийг дахин үнэллээ.`
-        : `${selectedPracticeWords.length} үгээр дасгал хийлээ.`;
+        ? `${practiceQueue.length} ${tr(locale, "үгийг дахин үнэллээ.")}`
+        : `${selectedPracticeWords.length} ${tr(locale, "үгээр дасгал хийлээ.")}`;
 
     return (
       <WordPracticeDonePanel
@@ -699,19 +709,21 @@ export function WordSrsStudySession({
 
         <h2 className="text-xl font-bold text-[var(--app-text)]">
 
-          {sessionDone > 0 ? completeTitle : "Энэ багц хоосон"}
+          {tr(locale, sessionDone > 0 ? completeTitle : "Энэ багц хоосон")}
 
         </h2>
 
         <p className="mt-2 text-sm text-[var(--app-muted)]">
 
-          {completeMessage ??
+          {(typeof completeMessage === "string"
+            ? tr(locale, completeMessage)
+            : completeMessage) ??
 
             (sessionDone > 0
 
-              ? `${sessionDone} карт үнэллээ.`
+              ? `${sessionDone} ${tr(locale, "карт үнэллээ.")}`
 
-              : "Сонгосон шүүлтэд үг олдсонгүй.")}
+              : tr(locale, "Сонгосон шүүлтэд үг олдсонгүй."))}
 
         </p>
 
@@ -727,7 +739,7 @@ export function WordSrsStudySession({
 
           >
 
-            Буцах
+            {tr(locale, "Буцах")}
 
           </button>
 
@@ -771,9 +783,12 @@ export function WordSrsStudySession({
 
 
 
-  const posDisplay = getPrimaryPosLabelMn(word.pos);
+  const posLabelMn = getPrimaryPosLabelMn(word.pos);
 
-  const studyTitle = phase === "practice" ? "Дахин давталт" : title;
+  const posDisplay = posLabelMn ? tr(locale, posLabelMn) : null;
+
+  const studyTitle =
+    phase === "practice" ? tr(locale, "Дахин давталт") : tr(locale, title);
 
 
 
@@ -793,7 +808,7 @@ export function WordSrsStudySession({
 
         >
 
-          ← Дүгнэлт рүү
+          ← {tr(locale, "Дүгнэлт рүү")}
 
         </button>
 
@@ -819,7 +834,7 @@ export function WordSrsStudySession({
 
             <p className="mt-0.5 text-xs font-bold text-[var(--app-muted)]">
 
-              {practiceQueue.length} сонгосон үг
+              {practiceQueue.length} {tr(locale, "сонгосон үг")}
 
             </p>
 
@@ -845,7 +860,7 @@ export function WordSrsStudySession({
 
           <p className="mt-2 text-[11px] text-[var(--app-muted)]">
 
-            Нэвтэрвэл ахицаа бүх төхөөрөмж дээр хадгална.{" "}
+            {tr(locale, "Нэвтэрвэл ахицаа бүх төхөөрөмж дээр хадгална.")}{" "}
 
             <Link
 
@@ -855,7 +870,7 @@ export function WordSrsStudySession({
 
             >
 
-              Нэвтрэх
+              {tr(locale, "Нэвтрэх")}
 
             </Link>
 
@@ -895,7 +910,7 @@ export function WordSrsStudySession({
 
             onClick={handleToggleFavorite}
 
-            aria-label={isFavorite ? "Дуртлаас хасах" : "Дуртлаад нэмэх"}
+            aria-label={tr(locale, isFavorite ? "Дуртлаас хасах" : "Дуртлаад нэмэх")}
 
             aria-pressed={isFavorite}
 
@@ -915,7 +930,7 @@ export function WordSrsStudySession({
 
           onClick={() => setFlipped((f) => !f)}
 
-          aria-label={flipped ? "Урд тал руу буцах" : "Ар талыг харах"}
+          aria-label={tr(locale, flipped ? "Урд тал руу буцах" : "Ар талыг харах")}
 
         >
 
@@ -929,12 +944,12 @@ export function WordSrsStudySession({
                 text={word.simplified}
                 lang="zh"
                 size="lg"
-                label="Дуудлага сонсох"
+                label={tr(locale, "Дуудлага сонсох")}
                 stopPropagation
                 showInlineError={false}
               />
 
-              <p className="bs-srs-tap-hint">Дарж харуулна</p>
+              <p className="bs-srs-tap-hint">{tr(locale, "Дарж харуулна")}</p>
 
             </div>
 
@@ -946,7 +961,7 @@ export function WordSrsStudySession({
                   text={word.simplified}
                   lang="zh"
                   size="md"
-                  label="Дуудлага сонсох"
+                  label={tr(locale, "Дуудлага сонсох")}
                   stopPropagation
                   showInlineError={false}
                 />
@@ -1036,7 +1051,7 @@ export function WordSrsStudySession({
 
         <p className="mt-3 text-center text-xs text-[var(--app-muted)]">
 
-          Картыг дарж пиньинь, утга, жишээг харна
+          {tr(locale, "Картыг дарж пиньинь, утга, жишээг харна")}
 
         </p>
 
