@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useMemo } from "react";
+import { useEffect, useState } from "react";
 import { HskLevelSelector } from "@/components/hsk/hsk-level-selector";
 import { tr } from "@/lib/i18n/translate";
 import { useUiLocale } from "@/lib/i18n/ui-locale";
@@ -19,10 +19,12 @@ function isActiveGamePath(pathname: string): boolean {
 export function MobileShellHeader() {
   const locale = useUiLocale();
   const pathname = usePathname() ?? "";
-  const showChinese = useMemo(
-    () => getSelectedLanguage() === "zh",
-    [pathname]
-  );
+  // Сервер дээр localStorage байхгүй тул render үед уншвал hydration
+  // warning өгдөг байсан — mount-ын дараа л шалгана.
+  const [showChinese, setShowChinese] = useState(false);
+  useEffect(() => {
+    setShowChinese(getSelectedLanguage() === "zh");
+  }, [pathname]);
 
   if (!showChinese) return null;
 
