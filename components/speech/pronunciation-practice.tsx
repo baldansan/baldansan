@@ -197,6 +197,19 @@ type Props = {
 };
 
 const LISTEN_TIMEOUT_MS = 5000;
+const PITCH_ONLY_MS = 3000;
+/** Зарим Android утсан дээр таних систем + хэмжигч микрофоныг зэрэг авч чаддаггүй. */
+const CONFLICT_KEY = "buunduu-pron-mic-conflict-v1";
+
+type RoundMode = "both" | "rec" | "pitch";
+
+function readConflictFlag(): boolean {
+  try {
+    return localStorage.getItem(CONFLICT_KEY) === "1";
+  } catch {
+    return false;
+  }
+}
 
 export function PronunciationPractice({ text, pinyin, className }: Props) {
   const [phase, setPhase] = useState<Phase>("idle");
@@ -204,12 +217,16 @@ export function PronunciationPractice({ text, pinyin, className }: Props) {
   const [heard, setHeard] = useState<string>("");
   const [hasPitch, setHasPitch] = useState(false);
   const [recognitionAvailable, setRecognitionAvailable] = useState(true);
+  const [roundMode, setRoundMode] = useState<RoundMode>("both");
+  const [conflictJustDetected, setConflictJustDetected] = useState(false);
 
   const recognitionRef = useRef<SpeechRecognitionLike | null>(null);
   const pitchRef = useRef<PitchRecorderHandle | null>(null);
   const samplesRef = useRef<PitchSample[]>([]);
   const timeoutRef = useRef<number | null>(null);
+  const pitchDelayRef = useRef<number | null>(null);
   const gotResultRef = useRef(false);
+  const roundModeRef = useRef<RoundMode>("both");
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
 
   // Үг солигдоход бүгдийг цэвэрлэнэ
@@ -230,6 +247,10 @@ export function PronunciationPractice({ text, pinyin, className }: Props) {
       window.clearTimeout(timeoutRef.current);
       timeoutRef.current = null;
     }
+    if (pitchDelayRef.current != null) {
+      window.clearTimeout(pitchDelayRef.current);
+      pitchDelayRef.current = null;
+    }
     if (recognitionRef.current) {
       try {
         recognitionRef.current.abort();
@@ -249,17 +270,39 @@ export function PronunciationPractice({ text, pinyin, className }: Props) {
       window.clearTimeout(timeoutRef.current);
       timeoutRef.current = null;
     }
+    if (pitchDelayRef.current != null) {
+      window.clearTimeout(pitchDelayRef.current);
+      pitchDelayRef.current = null;
+    }
     if (pitchRef.current) {
       samplesRef.current = pitchRef.current.stop();
       pitchRef.current = null;
     }
     setHasPitch(samplesRef.current.length >= 3);
+
+    // Зөрчил илрүүлэх: дуу бичигдсэн атлаа таних систем юу ч сонсоогүй бол
+    // энэ төхөөрөмж дээр микрофоныг хуваалцаж чадахгүй гэж үзээд
+    // дараагийн оролдлогуудыг таних-л горимд шилжүүлнэ.
+    if (
+      roundModeRef.current === "both" &&
+      !gotResultRef.current &&
+      samplesRef.current.length >= 5
+    ) {
+      try {
+        localStorage.setItem(CONFLICT_KEY, "1");
+      } catch {
+        // ignore
+      }
+      setConflictJustDetected(true);
+    }
+
     setPhase("done");
   }, []);
 
-  const start = useCallback(async () => {
+  const start = useCallback(async (wanted?: RoundMode) => {
     setVerdict(null);
     setHeard("");
+    setConflictJustDetected(false);
     gotResultRef.current = false;
     samplesRef.current = [];
 
@@ -273,20 +316,34 @@ export function PronunciationPractice({ text, pinyin, className }: Props) {
     }
     setRecognitionAvailable(Boolean(Ctor));
 
-    // Аялгын муруйд — микрофон
-    if (hasMedia) {
+    // Горим: зөрчилтэй төхөөрөмж дээр таних + хэмжигчийг зэрэг ажиллуулахгүй
+    const mode: RoundMode =
+      wanted === "pitch" || !Ctor
+        ? "pitch"
+        : readConflictFlag()
+          ? "rec"
+          : "both";
+    roundModeRef.current = mode;
+    setRoundMode(mode);
+
+    // Зөвхөн аялга хэмжих горим — таних системгүй, 3 секунд бичнэ
+    if (mode === "pitch") {
+      if (!hasMedia) {
+        setPhase("unsupported");
+        return;
+      }
       try {
         pitchRef.current = await startPitchRecorder();
       } catch {
-        pitchRef.current = null;
-        if (!Ctor) {
-          setPhase("denied");
-          return;
-        }
+        setPhase("denied");
+        return;
       }
+      setPhase("listening");
+      timeoutRef.current = window.setTimeout(() => finish(), PITCH_ONLY_MS);
+      return;
     }
 
-    // Ярианы таних
+    // Ярианы таних (эхэлж микрофоныг таних системд өгнө)
     if (Ctor) {
       try {
         const rec = new Ctor();
@@ -322,6 +379,21 @@ export function PronunciationPractice({ text, pinyin, className }: Props) {
       } catch {
         recognitionRef.current = null;
       }
+    }
+
+    // «both» горимд хэмжигчийг таних систем эхэлснээс хойш жаахан
+    // хоцроож асаана — микрофоныг таних системд түрүүлж өгнө.
+    if (mode === "both" && hasMedia) {
+      pitchDelayRef.current = window.setTimeout(() => {
+        pitchDelayRef.current = null;
+        void startPitchRecorder()
+          .then((handle) => {
+            pitchRef.current = handle;
+          })
+          .catch(() => {
+            pitchRef.current = null;
+          });
+      }, 300);
     }
 
     setPhase("listening");
@@ -401,14 +473,20 @@ export function PronunciationPractice({ text, pinyin, className }: Props) {
             <span className="relative inline-flex h-3 w-3 rounded-full bg-rose-500" />
           </span>
           <span className="text-sm font-bold text-rose-600">
-            Сонсож байна — «{text}» гэж хэлээрэй
+            {roundMode === "pitch"
+              ? `Аялгыг бичиж байна — «${text}» гэж хэлээрэй`
+              : `Сонсож байна — «${text}» гэж хэлээрэй`}
           </span>
         </div>
       ) : null}
 
       {phase === "done" ? (
         <div className="rounded-2xl border border-[var(--app-border,#e2e8f0)] bg-white p-3">
-          {recognitionAvailable ? (
+          {roundMode === "pitch" ? (
+            <p className="text-sm font-bold text-emerald-700">
+              🎵 Аялгын муруй — жишигтэй харьцуулаарай
+            </p>
+          ) : recognitionAvailable ? (
             verdict === "perfect" ? (
               <p className="text-sm font-bold text-emerald-600">
                 ✅ Маш сайн! «{text}» гэж зөв сонсогдлоо
@@ -420,6 +498,13 @@ export function PronunciationPractice({ text, pinyin, className }: Props) {
             ) : heard ? (
               <p className="text-sm font-bold text-rose-600">
                 ❌ Надад «{heard}» гэж сонсогдлоо — дахиад сонсоод давтаарай
+              </p>
+            ) : conflictJustDetected ? (
+              <p className="text-xs font-semibold text-amber-700">
+                ⚠️ Таны утсан дээр таних систем ба аялгын хэмжигч микрофоныг
+                зэрэг ашиглаж чадахгүй байна. Дараагийн оролдлогоос таних
+                горимоор ажиллана — аялгаа «🎵 Аялга шалгах» товчоор тусад нь
+                шалгаарай.
               </p>
             ) : (
               <p className="text-sm font-bold text-slate-500">
@@ -451,13 +536,24 @@ export function PronunciationPractice({ text, pinyin, className }: Props) {
             </p>
           ) : null}
 
-          <button
-            type="button"
-            onClick={() => void start()}
-            className="mt-2 rounded-full bg-emerald-600 px-4 py-2 text-xs font-bold text-white"
-          >
-            🎤 Дахин хэлэх
-          </button>
+          <div className="mt-2 flex flex-wrap gap-2">
+            <button
+              type="button"
+              onClick={() => void start()}
+              className="rounded-full bg-emerald-600 px-4 py-2 text-xs font-bold text-white"
+            >
+              🎤 Дахин хэлэх
+            </button>
+            {roundMode !== "pitch" ? (
+              <button
+                type="button"
+                onClick={() => void start("pitch")}
+                className="rounded-full bg-white px-4 py-2 text-xs font-bold text-emerald-700 ring-1 ring-emerald-300"
+              >
+                🎵 Аялга шалгах
+              </button>
+            ) : null}
+          </div>
         </div>
       ) : null}
     </div>
