@@ -1,7 +1,7 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { AdminPreviewBanner } from "@/components/admin-preview-banner";
 import {
   CharactersLessonCard,
@@ -34,6 +34,10 @@ import type { HskGuidedStepMediaRef } from "@/lib/lesson/hsk-media";
 import { HSK_PLAYER } from "@/lib/lesson/hsk-player/hsk-player-theme";
 import { lessonPreviewPath } from "@/lib/lesson-publish";
 import { markLessonCompletedSmart, markLessonStartedSmart } from "@/lib/progress";
+import {
+  seedLessonWordsIntoSrs,
+  type SeedLessonWordsResult,
+} from "@/lib/srs/seed-lesson-words";
 import type { LessonContent } from "@/types/lesson-content";
 
 type Props = {
@@ -146,6 +150,21 @@ export function HskGuidedLessonPlayer({
       void markLessonCompletedSmart(lesson.id);
     }
   }, [stepIndex, totalSteps, lesson.id]);
+
+  // Хичээл дуусахад үгсийг SRS давталтад автоматаар товлоно.
+  // ref тэмдэг — давхар дуудагдахаас (StrictMode, дахин render) хамгаална.
+  const [srsSeed, setSrsSeed] = useState<SeedLessonWordsResult | null>(null);
+  const srsSeededForLessonRef = useRef<string | null>(null);
+
+  useEffect(() => {
+    if (currentStep?.type !== "complete") return;
+    if (srsSeededForLessonRef.current === lesson.id) return;
+    srsSeededForLessonRef.current = lesson.id;
+
+    void seedLessonWordsIntoSrs(lesson.id, lesson.vocabulary)
+      .then(setSrsSeed)
+      .catch(() => setSrsSeed({ added: 0, already: 0 }));
+  }, [currentStep?.type, lesson.id, lesson.vocabulary]);
 
   const isLastStep = stepIndex >= totalSteps - 1;
   const stepTransitionKey = `${stepIndex}-${currentStep?.type ?? "none"}`;
@@ -343,6 +362,7 @@ export function HskGuidedLessonPlayer({
               media={content.study.media}
               stepMedia={stepMediaRef(currentStep)}
               teachingImages={lesson.teachingImages}
+              srsSeed={srsSeed}
             />
           ) : null}
 

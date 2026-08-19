@@ -5,6 +5,7 @@ import { LessonPlayerCard } from "@/components/lesson-player/lesson-player-shell
 import { lessonPreviewPath } from "@/lib/lesson-publish";
 import { lessonTrainingPath } from "@/lib/content";
 import { PASSING_QUIZ_PERCENT } from "@/lib/progress";
+import type { SeedLessonWordsResult } from "@/lib/srs/seed-lesson-words";
 
 type Props = {
   lessonId: string;
@@ -16,6 +17,8 @@ type Props = {
   totalSteps: number;
   onRestart: () => void;
   simplified?: boolean;
+  /** Хичээлийн үгс SRS давталтад товлогдсон үр дүн (null — хараахан дуусаагүй). */
+  srsSeed?: SeedLessonWordsResult | null;
 };
 
 export function LessonStepResult({
@@ -28,9 +31,12 @@ export function LessonStepResult({
   totalSteps,
   onRestart,
   simplified = false,
+  srsSeed = null,
 }: Props) {
   const quizPercent =
     quizTotal > 0 ? Math.round((quizCorrect / quizTotal) * 100) : 100;
+  const srsTotal = srsSeed ? srsSeed.added + srsSeed.already : 0;
+  const showSrsBlock = !simplified && srsSeed != null && srsTotal > 0;
   const passed = quizTotal === 0 || quizPercent >= PASSING_QUIZ_PERCENT;
   const xp = passed ? Math.max(10, quizCorrect * 5) : quizCorrect * 2;
 
@@ -75,6 +81,19 @@ export function LessonStepResult({
             {PASSING_QUIZ_PERCENT}%-аас дээш оноо авахад хичээл бүрэн дуусна.
           </p>
         ) : null}
+        {showSrsBlock ? (
+          <div className="mt-4 w-full rounded-2xl border border-emerald-200 bg-emerald-50 px-4 py-3">
+            {srsSeed.added > 0 ? (
+              <p className="break-words text-sm font-semibold text-emerald-700">
+                🎉 {srsSeed.added} шинэ үг маргааш давтагдахаар товлогдлоо
+              </p>
+            ) : (
+              <p className="break-words text-sm font-semibold text-emerald-700">
+                Бүх үг аль хэдийн давталтад байна ✅
+              </p>
+            )}
+          </div>
+        ) : null}
       </div>
 
       <div className="mt-6 flex w-full flex-col gap-2.5 overflow-hidden">
@@ -104,6 +123,11 @@ export function LessonStepResult({
           </>
         ) : (
           <>
+        {showSrsBlock ? (
+          <Link href="/review/words" className="app-btn-primary w-full">
+            Одоо давтах →
+          </Link>
+        ) : null}
         {quizTotal > 0 ? (
           <Link href={quizHref} className="app-btn-secondary w-full">
             Өөрийгөө шалгах

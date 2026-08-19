@@ -4,7 +4,7 @@ import {
   countTodayFromSupabaseCounts,
 } from "@/lib/retention/daily-activity";
 import {
-  computeCurrentStreak,
+  computeStreakWithFreeze,
   computeLongestStreak,
   getActiveDatesFromSupabaseRows,
   getLastActiveDate,
@@ -335,7 +335,7 @@ export async function recomputeAndSaveSupabaseStreak(
 
   const activeDates = getActiveDatesFromSupabaseRows(activeRows);
   const today = toLocalDateKey();
-  const currentStreak = computeCurrentStreak(activeDates, today);
+  const currentStreak = computeStreakWithFreeze(activeDates, today).streak;
   const longestStreak = computeLongestStreak(activeDates);
   const lastActiveDate = getLastActiveDate(activeDates);
 
@@ -413,7 +413,8 @@ export async function getSupabaseRetentionSummary(
   const todayKey = toLocalDateKey();
   const { weekActivity, activeDaysThisWeek } = getWeekActivity(activeDates, todayKey);
 
-  const computedCurrent = computeCurrentStreak(activeDates, todayKey);
+  const streakInfo = computeStreakWithFreeze(activeDates, todayKey);
+  const computedCurrent = streakInfo.streak;
   const computedLongest = Math.max(
     computeLongestStreak(activeDates),
     streakResult.data?.longest_streak ?? 0
@@ -425,6 +426,10 @@ export async function getSupabaseRetentionSummary(
       today,
       goalProgress,
       currentStreak: streakResult.data?.current_streak ?? computedCurrent,
+      streakFreeze: {
+        usedThisMonth: streakInfo.freezesUsedThisMonth,
+        total: streakInfo.freezesTotal,
+      },
       longestStreak: streakResult.data?.longest_streak ?? computedLongest,
       activeDaysThisWeek,
       weekActivity,

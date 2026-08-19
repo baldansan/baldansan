@@ -42,6 +42,69 @@ export function computeCurrentStreak(
   return streak;
 }
 
+/** Streak хамгаалалт (freeze): сард автоматаар хэрэглэгдэх дээд тоо. */
+export const STREAK_FREEZES_PER_MONTH = 2;
+
+export type StreakWithFreeze = {
+  streak: number;
+  /** Энэ сард хэрэглэгдсэн хамгаалалтын тоо. */
+  freezesUsedThisMonth: number;
+  /** Сарын нийт хамгаалалт (STREAK_FREEZES_PER_MONTH). */
+  freezesTotal: number;
+};
+
+/**
+ * Streak-ийг «хамгаалалттай» тооцно: 1 өдөр алгассан ч streak тасрахгүй.
+ * Хамгаалалт нь зөвхөн ГАНЦ өдрийн цоорхойг нөхнө (2 өдөр дараалж алгасвал
+ * тасарна) ба алгассан өдрийн сар бүрд хамгийн ихдээ
+ * STREAK_FREEZES_PER_MONTH удаа автоматаар хэрэглэгдэнэ.
+ */
+export function computeStreakWithFreeze(
+  activeDates: string[],
+  referenceDate = toLocalDateKey(),
+  freezesPerMonth = STREAK_FREEZES_PER_MONTH
+): StreakWithFreeze {
+  const currentMonth = referenceDate.slice(0, 7);
+  const set = new Set(activeDates);
+  if (set.size === 0) {
+    return { streak: 0, freezesUsedThisMonth: 0, freezesTotal: freezesPerMonth };
+  }
+
+  // Өнөөдөр идэвхгүй байх нь алдаа биш — өдөр дуусаагүй тул өчигдрөөс эхэлнэ.
+  let cursor = referenceDate;
+  if (!set.has(cursor)) {
+    cursor = addDays(referenceDate, -1);
+  }
+
+  const freezeByMonth = new Map<string, number>();
+  let streak = 0;
+
+  for (;;) {
+    if (set.has(cursor)) {
+      streak += 1;
+      cursor = addDays(cursor, -1);
+      continue;
+    }
+    // Цоорхой: өмнөх өдөр нь идэвхтэй бөгөөд тухайн сарын хамгаалалт
+    // дуусаагүй бол freeze хэрэглэж үргэлжлүүлнэ.
+    const prev = addDays(cursor, -1);
+    const month = cursor.slice(0, 7);
+    const used = freezeByMonth.get(month) ?? 0;
+    if (set.has(prev) && used < freezesPerMonth) {
+      freezeByMonth.set(month, used + 1);
+      cursor = prev;
+      continue;
+    }
+    break;
+  }
+
+  return {
+    streak,
+    freezesUsedThisMonth: freezeByMonth.get(currentMonth) ?? 0,
+    freezesTotal: freezesPerMonth,
+  };
+}
+
 export function computeLongestStreak(activeDates: string[]): number {
   if (activeDates.length === 0) return 0;
 

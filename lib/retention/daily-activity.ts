@@ -6,6 +6,7 @@ import {
   addDays,
   computeCurrentStreak,
   computeLongestStreak,
+  computeStreakWithFreeze,
   getActiveDatesFromLog,
   getLastActiveDate,
   getWeekActivity,
@@ -257,7 +258,7 @@ export function recordLocalActivity(
   }
 
   const activeDates = getActiveDatesFromLog(nextLog);
-  const currentStreak = computeCurrentStreak(activeDates, today);
+  const currentStreak = computeStreakWithFreeze(activeDates, today).streak;
 
   writeRetentionStore({
     ...store,
@@ -297,13 +298,22 @@ export function getLocalRetentionSummary(): LearningRetentionSummary {
   const todayActivity = countTodayFromLog(store.activityLog, today);
   const goalProgress = buildGoalProgress(store.dailyGoal, todayActivity);
   const { weekActivity, activeDaysThisWeek } = getWeekActivity(activeDates, today);
+  const streakInfo = computeStreakWithFreeze(activeDates, today);
 
   return {
     goal: { ...store.dailyGoal },
     today: todayActivity,
     goalProgress,
-    currentStreak: computeCurrentStreak(activeDates, today),
-    longestStreak: Math.max(store.longestStreak, computeLongestStreak(activeDates)),
+    currentStreak: streakInfo.streak,
+    longestStreak: Math.max(
+      store.longestStreak,
+      computeLongestStreak(activeDates),
+      streakInfo.streak
+    ),
+    streakFreeze: {
+      usedThisMonth: streakInfo.freezesUsedThisMonth,
+      total: streakInfo.freezesTotal,
+    },
     activeDaysThisWeek,
     weekActivity,
     lastActiveDate: getLastActiveDate(activeDates),

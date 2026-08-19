@@ -710,6 +710,7 @@ export function LessonCompleteCard({
   media,
   stepMedia,
   teachingImages,
+  srsSeed = null,
 }: {
   message: string;
   vocabHref: string;
@@ -720,7 +721,11 @@ export function LessonCompleteCard({
   media?: HskStudyContent["media"];
   stepMedia?: HskGuidedStepMediaRef;
   teachingImages?: TeachingImage[];
+  /** Хичээлийн үгс SRS давталтад товлогдсон үр дүн (null — хараахан дуусаагүй). */
+  srsSeed?: { added: number; already: number } | null;
 }) {
+  const srsTotal = srsSeed ? srsSeed.added + srsSeed.already : 0;
+  const showSrsBlock = srsSeed != null && srsTotal > 0;
   return (
     <HskPlayerCard>
       {stepMedia ? (
@@ -750,8 +755,26 @@ export function LessonCompleteCard({
         <p className="mt-2 text-sm leading-6" style={{ color: HSK_PLAYER.muted }}>
           {message}
         </p>
+        {showSrsBlock ? (
+          <div className="mt-4 w-full rounded-2xl border border-emerald-200 bg-emerald-50 px-4 py-3">
+            {srsSeed.added > 0 ? (
+              <p className="break-words text-sm font-semibold text-emerald-700">
+                🎉 {srsSeed.added} шинэ үг маргааш давтагдахаар товлогдлоо
+              </p>
+            ) : (
+              <p className="break-words text-sm font-semibold text-emerald-700">
+                Бүх үг аль хэдийн давталтад байна ✅
+              </p>
+            )}
+          </div>
+        ) : null}
       </div>
       <div className="mt-6 flex flex-col gap-2">
+        {showSrsBlock ? (
+          <Link href="/review/words" className="app-btn-primary w-full text-center">
+            Одоо давтах →
+          </Link>
+        ) : null}
         <Link href={quizHref} className="app-btn-primary w-full text-center">
           Quiz өгөх
         </Link>

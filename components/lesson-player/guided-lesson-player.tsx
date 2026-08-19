@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { AdminPreviewBanner } from "@/components/admin-preview-banner";
 import {
   LessonPlayerShell,
@@ -48,6 +48,10 @@ import {
   vocabularyWordKey,
 } from "@/lib/progress";
 import { buildQuizDetailedAnswer } from "@/lib/quiz-answers";
+import {
+  seedLessonWordsIntoSrs,
+  type SeedLessonWordsResult,
+} from "@/lib/srs/seed-lesson-words";
 import type { LessonContent } from "@/types/lesson-content";
 import type { LessonPlayerSession, LessonStep } from "@/types/lesson-player";
 import type { VocabularyWord } from "@/types/lesson";
@@ -207,6 +211,23 @@ export function GuidedLessonPlayer({
     void completeLessonIfPassed();
     // eslint-disable-next-line react-hooks/exhaustive-deps -- run when result step is reached
   }, [currentStep?.type, session.stepIndex]);
+
+  // Хичээл дуусахад үгсийг SRS давталтад автоматаар товлоно.
+  // ref тэмдэг — давхар дуудагдахаас (StrictMode, дахин render) хамгаална.
+  const [srsSeed, setSrsSeed] = useState<SeedLessonWordsResult | null>(null);
+  const srsSeededForLessonRef = useRef<string | null>(null);
+
+  useEffect(() => {
+    if (currentStep?.type !== "result") return;
+    if (isLesson0 || isKorean) return; // Солонгос хичээлд хамаарахгүй
+    if (srsSeededForLessonRef.current === lesson.id) return;
+    srsSeededForLessonRef.current = lesson.id;
+
+    void seedLessonWordsIntoSrs(lesson.id, lesson.vocabulary)
+      .then(setSrsSeed)
+      .catch(() => setSrsSeed({ added: 0, already: 0 }));
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- once per lesson result
+  }, [currentStep?.type, lesson.id]);
 
   function handlePrimaryAction() {
     if (!currentStep) return;
@@ -498,6 +519,7 @@ export function GuidedLessonPlayer({
             totalSteps={displayProgress.total}
             onRestart={handleRestart}
             simplified={isLesson0}
+            srsSeed={srsSeed}
           />
         ) : null}
 
