@@ -14,7 +14,8 @@ export type GameType =
   | "srs-marathon"
   | "daily-challenge"
   | "speed-challenge"
-  | "hsk-vocab-quiz";
+  | "hsk-vocab-quiz"
+  | "dictation";
 
 export type GameVocabItem = {
   id: string;

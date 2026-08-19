@@ -29,6 +29,7 @@ import {
   type VocabQuizLevelConfig,
 } from "@/lib/games/hsk-vocab-quiz";
 import { saveGameResult } from "@/lib/games/game-progress";
+import { playChineseWordAudio } from "@/lib/tts/play-chinese-word-audio";
 import type {
   HskQuizKind,
   HskQuizQuestion,
@@ -41,6 +42,18 @@ import {
 import { useActivityTracker } from "@/lib/analytics/activity-tracker";
 
 type Phase = "source" | "setup" | "intro" | "loading" | "play" | "result";
+
+/** Тохиргооны чипүүд — асуултын төрөл сонгох. */
+const QUIZ_KIND_CHIPS: { kind: HskQuizKind; label: string }[] = [
+  { kind: "meaning", label: "💡 Утга" },
+  { kind: "word-recall", label: "🀄 Ханз" },
+  { kind: "pinyin", label: "🔤 Пиньинь" },
+  { kind: "example-cloze", label: "✍️ Жишээ" },
+  { kind: "radical-pick", label: "🧩 Радикал" },
+  { kind: "listening", label: "👂 Сонсгол" },
+];
+
+const ALL_QUIZ_KINDS: HskQuizKind[] = QUIZ_KIND_CHIPS.map((c) => c.kind);
 
 function toCatalogLevel(level: ActiveHskLevel): HskLevel {
   return level === "7-9" ? "7-9" : (String(level) as HskLevel);
@@ -69,6 +82,9 @@ export function HskVocabQuizClient({
   const [testLevel, setTestLevel] = useState<ActiveHskLevel>(5);
   const [config, setConfig] = useState<VocabQuizLevelConfig>(
     getVocabQuizConfig("5")
+  );
+  const [selectedKinds, setSelectedKinds] = useState<HskQuizKind[]>(
+    presetTypes && presetTypes.length > 0 ? presetTypes : ALL_QUIZ_KINDS
   );
   const [deck, setDeck] = useState<HskQuizQuestion[]>([]);
   const [index, setIndex] = useState(0);
@@ -150,8 +166,8 @@ export function HskVocabQuizClient({
     setError(null);
     try {
       const typesQuery =
-        presetTypes && presetTypes.length > 0
-          ? `&types=${encodeURIComponent(presetTypes.join(","))}`
+        selectedKinds.length > 0
+          ? `&types=${encodeURIComponent(selectedKinds.join(","))}`
           : "";
       const res = await fetch(
         `/api/games/hsk-vocab-quiz-deck?level=${encodeURIComponent(catalogLevel)}${typesQuery}${wordSourceQuery}`
@@ -180,7 +196,27 @@ export function HskVocabQuizClient({
       setError("Сүлжээний алдаа.");
       setPhase("setup");
     }
-  }, [catalogLevel, config.secondsPerQuestion, presetTypes, wordSourceQuery]);
+  }, [catalogLevel, config.secondsPerQuestion, selectedKinds, wordSourceQuery]);
+
+  function toggleKind(kind: HskQuizKind) {
+    setSelectedKinds((prev) => {
+      if (prev.includes(kind)) {
+        // Дор хаяж нэг төрөл үлдэх ёстой
+        return prev.length > 1 ? prev.filter((k) => k !== kind) : prev;
+      }
+      return [...prev, kind];
+    });
+  }
+
+  // Сонсголын асуулт гарч ирэхэд аудиог автоматаар НЭГ удаа тоглуулна.
+  const lastListeningPlayRef = useRef<string | null>(null);
+  useEffect(() => {
+    if (phase !== "play" || !current || current.kind !== "listening") return;
+    const key = `${current.id}-${index}`;
+    if (lastListeningPlayRef.current === key) return;
+    lastListeningPlayRef.current = key;
+    void playChineseWordAudio(current.correct);
+  }, [phase, current, index]);
 
   useEffect(() => {
     if (phase !== "play" || locked || !current) return;
@@ -277,9 +313,9 @@ export function HskVocabQuizClient({
       <div className="bs-mock-setup">
         <h1 className="bs-mock-title">{screenTitle}</h1>
         <p className="bs-mock-sub">
-          {presetTypes?.length === 1
+          {selectedKinds.length === 1
             ? "Сонгосон үгсээр нэг төрлийн асуулт"
-            : "HSK түвшний vocabulary quiz — утга, ханз, пиньинь, жишээ"}
+            : "HSK түвшний vocabulary quiz — утга, ханз, пиньинь, сонсгол, жишээ"}
         </p>
         {poolNote ? (
           <p className="mt-2 text-xs font-semibold text-amber-700">{poolNote}</p>
@@ -304,6 +340,22 @@ export function HskVocabQuizClient({
                 onClick={() => selectLevel(opt.value)}
               >
                 {opt.label}
+              </button>
+            );
+          })}
+        </div>
+        <h2 className="bs-mem-step-title mt-4">Асуултын төрөл</h2>
+        <div className="bs-mem-chip-grid mt-3">
+          {QUIZ_KIND_CHIPS.map((chip) => {
+            const active = selectedKinds.includes(chip.kind);
+            return (
+              <button
+                key={chip.kind}
+                type="button"
+                className={`bs-mem-chip ${active ? "bs-mock-chip--active" : ""}`}
+                onClick={() => toggleKind(chip.kind)}
+              >
+                {chip.label}
               </button>
             );
           })}
@@ -353,9 +405,9 @@ export function HskVocabQuizClient({
         <ul className="bs-mock-rules mt-4">
           <li>
             {config.questions} асуулт
-            {presetTypes?.length === 1
-              ? ` — ${presetTitle ?? presetTypes[0]}`
-              : " — утга, ханз, пиньинь, жишээ, радикал"}
+            {selectedKinds.length === 1
+              ? ` — ${presetTitle ?? selectedKinds[0]}`
+              : " — утга, ханз, пиньинь, сонсгол, жишээ, радикал"}
           </li>
           <li>Асуулт бүрт {config.secondsPerQuestion} секунд</li>
           <li>Буруу хариулсан ч үргэлжлэнэ (амь алдахгүй)</li>
@@ -459,6 +511,31 @@ export function HskVocabQuizClient({
         <p className="text-center text-sm font-bold text-[var(--bs-muted)]">
           {current.promptLabel}
         </p>
+        {current.kind === "listening" ? (
+          <div className="mt-3 flex flex-col items-center gap-2">
+            <button
+              type="button"
+              onClick={() => void playChineseWordAudio(current.correct)}
+              className="flex h-20 w-20 items-center justify-center rounded-full bg-[var(--bs-green-50)] text-4xl shadow-sm ring-2 ring-[var(--bs-green)] active:scale-95"
+              aria-label="Дахин сонсох"
+            >
+              🔊
+            </button>
+            <p className="text-[11px] font-bold text-[var(--bs-muted)]">
+              Дарж дахин сонсоно
+            </p>
+            {locked ? (
+              <div className="text-center">
+                <p className="bs-meaning-hanzi">{current.hanzi}</p>
+                {current.pinyin ? (
+                  <p className="text-sm font-extrabold text-[var(--bs-green)]">
+                    {current.pinyin}
+                  </p>
+                ) : null}
+              </div>
+            ) : null}
+          </div>
+        ) : null}
         {current.display ? (
           isHanziDisplay && current.kind !== "example-cloze" ? (
             <p className="bs-meaning-hanzi">{current.display}</p>
@@ -469,7 +546,10 @@ export function HskVocabQuizClient({
           )
         ) : null}
         {current.subDisplay &&
-        !(current.kind === "word-recall" && !locked) ? (
+        !(
+          (current.kind === "word-recall" || current.kind === "listening") &&
+          !locked
+        ) ? (
           <p className="text-center text-sm font-extrabold text-[var(--bs-green)]">
             {current.subDisplay}
           </p>

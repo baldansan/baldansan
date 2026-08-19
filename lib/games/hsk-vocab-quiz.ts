@@ -28,13 +28,23 @@ export function getVocabQuizConfig(level: HskLevel): VocabQuizLevelConfig {
   return HSK_VOCAB_QUIZ_CONFIG[level] ?? HSK_VOCAB_QUIZ_CONFIG["1"];
 }
 
+/** Үгийн сорилын үндсэн холимог — сонсголын асуулт мөн ордог. */
+export const VOCAB_QUIZ_KINDS: HskQuizKind[] = [
+  "meaning",
+  "word-recall",
+  "pinyin",
+  "example-cloze",
+  "radical-pick",
+  "listening",
+];
+
 export function buildHskVocabQuizDeck(
   words: HskWord[],
   level: HskLevel,
   kinds?: HskQuizKind[]
 ): HskQuizQuestion[] {
   const { questions } = getVocabQuizConfig(level);
-  return buildSrsMarathonDeck(words, questions, kinds);
+  return buildSrsMarathonDeck(words, questions, kinds ?? VOCAB_QUIZ_KINDS);
 }
 
 export function evaluateVocabQuiz(

@@ -1,5 +1,6 @@
 import componentMeanings from "@/data/component_meanings.json";
 import { shuffleArray } from "@/lib/games/game-data-core";
+import { toPinyinSortKey } from "@/lib/hsk/pinyin-sort";
 import type { HskWord } from "@/lib/hsk";
 
 export type HskQuizKind =
@@ -7,7 +8,8 @@ export type HskQuizKind =
   | "word-recall"
   | "pinyin"
   | "example-cloze"
-  | "radical-pick";
+  | "radical-pick"
+  | "listening";
 
 export type HskQuizQuestion = {
   id: number;
@@ -238,6 +240,68 @@ export function buildRadicalPickDeck(
   return questions;
 }
 
+/**
+ * «Сонсоод ол»: аудио тоглоод сонссон үгийн ханзыг 4 сонголтоос олно.
+ * Distractor-т ижил (аялгагүй) пиньинтэй үгсийг оруулахгүй — тэд мөн
+ * «зөв сонсогдох» тул. Боломжтой бол ижил урттай ханз сонгоно.
+ */
+export function buildListeningDeck(
+  words: HskWord[],
+  size = 15
+): HskQuizQuestion[] {
+  const pool = words.filter(
+    (w) => w.simplified && w.pinyin?.trim() && w.meaning_mn?.trim()
+  );
+  if (pool.length < OPTION_COUNT) return [];
+
+  const questions: HskQuizQuestion[] = [];
+
+  for (const word of shuffleArray(pool).slice(0, size)) {
+    const correct = word.simplified;
+    const correctKey = toPinyinSortKey(word.pinyin);
+    const candidates = pool.filter(
+      (w) =>
+        w.id !== word.id &&
+        w.simplified !== correct &&
+        toPinyinSortKey(w.pinyin) !== correctKey
+    );
+    const sameLength = candidates.filter(
+      (w) => w.simplified.length === correct.length
+    );
+    let wrong = pickDistractors(
+      sameLength,
+      OPTION_COUNT - 1,
+      (w) => w.simplified,
+      new Set([correct])
+    );
+    if (wrong.length < OPTION_COUNT - 1) {
+      wrong = [
+        ...wrong,
+        ...pickDistractors(
+          candidates,
+          OPTION_COUNT - 1 - wrong.length,
+          (w) => w.simplified,
+          new Set([correct, ...wrong])
+        ),
+      ];
+    }
+    if (wrong.length < OPTION_COUNT - 1) continue;
+
+    questions.push({
+      id: word.id,
+      kind: "listening",
+      correct,
+      options: mcqOptions(correct, wrong),
+      promptLabel: "Сонссон үгээ сонго",
+      subDisplay: word.meaning_mn!.trim(),
+      hanzi: correct,
+      pinyin: word.pinyin ?? undefined,
+    });
+  }
+
+  return questions;
+}
+
 const MARATHON_KINDS: HskQuizKind[] = [
   "meaning",
   "word-recall",
@@ -282,6 +346,8 @@ function singleKindDeck(
       return buildExampleClozeDeck(words, size);
     case "radical-pick":
       return buildRadicalPickDeck(words, size);
+    case "listening":
+      return buildListeningDeck(words, size);
     case "meaning": {
       const pool = words.filter((w) => w.meaning_mn?.trim() && w.simplified);
       if (pool.length < OPTION_COUNT) return [];
@@ -328,6 +394,7 @@ export function buildSrsMarathonDeck(
       pinyin: buildPinyinDeck,
       "example-cloze": buildExampleClozeDeck,
       "radical-pick": buildRadicalPickDeck,
+      listening: buildListeningDeck,
     } as const;
 
     const deck = deckBuilders[kind](
@@ -338,7 +405,9 @@ export function buildSrsMarathonDeck(
             ? w.example_zh?.includes(w.simplified)
             : kind === "pinyin"
               ? w.pinyin
-              : w.meaning_mn
+              : kind === "listening"
+                ? w.pinyin && w.meaning_mn
+                : w.meaning_mn
       ),
       8
     );
