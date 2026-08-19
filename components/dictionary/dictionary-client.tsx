@@ -4,6 +4,7 @@ import { useSearchParams } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import { tr } from "@/lib/i18n/translate";
 import { useUiLocale } from "@/lib/i18n/ui-locale";
+import { DrawInputSheet } from "@/components/dictionary/draw-input-sheet";
 import { ConfusableChars } from "@/components/hanzi/confusable-chars";
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
 import { MobileCard } from "@/components/mobile/mobile-card";
@@ -165,6 +166,7 @@ export function DictionaryClient() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [searched, setSearched] = useState(false);
+  const [drawOpen, setDrawOpen] = useState(false);
   const requestIdRef = useRef(0);
 
   // /dictionary?q=清 маягийн шууд линк (андуурагдах ханзны чипээс)
@@ -226,19 +228,37 @@ export function DictionaryClient() {
         subtitle={tr(locale, "Ханз · пиньинь · монгол утгаар хайх")}
       />
 
-      <div className="mb-3">
+      <div className="mb-3 flex gap-2">
         <input
           type="search"
           autoFocus
+          lang="zh-Hans"
           placeholder="爱 / ai / хайр …"
           value={query}
           onChange={(e) => {
             setQuery(e.target.value);
             if (e.target.value.trim()) setRadical(null);
           }}
-          className="w-full rounded-2xl border border-[var(--app-border)] bg-white px-4 py-3 text-base outline-none ring-emerald-500 placeholder:text-slate-400 focus:border-emerald-300 focus:ring-2"
+          className="min-w-0 flex-1 rounded-2xl border border-[var(--app-border)] bg-white px-4 py-3 text-base outline-none ring-emerald-500 placeholder:text-slate-400 focus:border-emerald-300 focus:ring-2"
         />
+        <button
+          type="button"
+          onClick={() => setDrawOpen(true)}
+          aria-label={tr(locale, "Зурж хайх")}
+          className="flex h-[50px] w-[50px] shrink-0 items-center justify-center rounded-2xl bg-emerald-500 text-xl text-white shadow-sm"
+        >
+          ✍️
+        </button>
       </div>
+
+      <DrawInputSheet
+        open={drawOpen}
+        onClose={() => setDrawOpen(false)}
+        onPick={(char) => {
+          setRadical(null);
+          setQuery((q) => `${q.trim()}${char}`);
+        }}
+      />
 
       {!searched && !loading ? (
         <MobileCard>

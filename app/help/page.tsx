@@ -81,7 +81,18 @@ export default function HelpPage() {
             krmanik/HSK-3.0
           </a>{" "}
           (CC BY-SA 4.0), CC-CEDICT толь (CC BY-SA 4.0). Эдгээр өгөгдлөөс
-          үүсмэл жагсаалтууд мөн CC BY-SA 4.0 нөхцөлтэй.
+          үүсмэл жагсаалтууд мөн CC BY-SA 4.0 нөхцөлтэй. Гараар зурж ханз
+          таних:{" "}
+          <a
+            href="https://github.com/gugray/HanziLookupJS"
+            className="font-semibold text-emerald-700"
+            target="_blank"
+            rel="noreferrer"
+          >
+            HanziLookupJS
+          </a>{" "}
+          (GPL; өгөгдөл нь Make Me a Hanzi-гаас, Arphic PL — лицензүүд
+          /vendor/hanzilookup/ хавтаст хамт тархана).
         </p>
       </article>
 

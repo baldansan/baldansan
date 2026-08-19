@@ -18,8 +18,12 @@ type PracticeMode =
 
 type Props = {
   character: HskCharacter;
-  /** write = traced quiz; recognize = stroke animation only */
-  mode: "write" | "recognize";
+  /**
+   * write = traced quiz (дагаж → санаж);
+   * recognize = stroke animation only;
+   * recall = шууд санаж бичих (жишээ, outline огт харуулахгүй)
+   */
+  mode: "write" | "recognize" | "recall";
   onComplete?: () => void;
 };
 
@@ -51,9 +55,11 @@ function formatComponents(character: HskCharacter): string | null {
 export function CharacterWriter({ character, mode, onComplete }: Props) {
   const locale = useUiLocale();
   const containerRef = useRef<HTMLDivElement | null>(null);
-  const actionsRef = useRef<{ quiz: () => void; animate: () => void } | null>(
-    null
-  );
+  const actionsRef = useRef<{
+    quiz: () => void;
+    animate: () => void;
+    hint: () => void;
+  } | null>(null);
 
   // Multi-character entries (words) are practiced one character at a time.
   const chars = useMemo(
@@ -155,7 +161,9 @@ export function CharacterWriter({ character, mode, onComplete }: Props) {
       width: size,
       height: size,
       padding: Math.round(size * 0.07),
-      showOutline: true,
+      // recall горимд хариулт (outline/ханз) урьдчилж огт харагдах ёсгүй
+      showCharacter: false,
+      showOutline: mode !== "recall",
       strokeAnimationSpeed: 1,
       delayBetweenStrokes: 350,
       drawingColor: "#059669",
@@ -171,6 +179,7 @@ export function CharacterWriter({ character, mode, onComplete }: Props) {
         setStrokeTotal(total);
         setPracticeMode("ready");
         if (mode === "write") startQuiz();
+        else if (mode === "recall") startQuiz(true);
         else startAnimation();
       },
       onLoadCharDataError: () => {
@@ -178,7 +187,20 @@ export function CharacterWriter({ character, mode, onComplete }: Props) {
       },
     });
 
-    actionsRef.current = { quiz: () => startQuiz(false), animate: startAnimation };
+    function showHint() {
+      if (!writer || cancelled) return;
+      const w = writer;
+      void w.showOutline({ duration: 150 });
+      window.setTimeout(() => {
+        if (!cancelled) void w.hideOutline({ duration: 300 });
+      }, 1600);
+    }
+
+    actionsRef.current = {
+      quiz: () => startQuiz(mode === "recall"),
+      animate: startAnimation,
+      hint: showHint,
+    };
 
     return () => {
       cancelled = true;
@@ -194,15 +216,16 @@ export function CharacterWriter({ character, mode, onComplete }: Props) {
 
   const decomposition = isSingleChar ? formatComponents(character) : null;
   const successLabel =
-    mode === "write"
-      ? tr(locale, HANZI_WRITING_LABELS.success)
-      : tr(locale, HANZI_WRITING_LABELS.strokeOrder);
+    mode === "recognize"
+      ? tr(locale, HANZI_WRITING_LABELS.strokeOrder)
+      : tr(locale, HANZI_WRITING_LABELS.success);
 
   return (
     <div className="bs-char-writer">
       {chars.length > 1 ? (
         <p className="bs-stroke-progress">
-          {activeChar} · {safeIndex + 1}/{chars.length} {tr(locale, "ханз")}
+          {mode === "recall" ? "❓" : activeChar} · {safeIndex + 1}/
+          {chars.length} {tr(locale, "ханз")}
         </p>
       ) : null}
 
@@ -228,7 +251,7 @@ export function CharacterWriter({ character, mode, onComplete }: Props) {
         />
       </div>
 
-      {mode === "write" && practiceMode === "quiz" ? (
+      {(mode === "write" || mode === "recall") && practiceMode === "quiz" ? (
         <p
           className="bs-stroke-progress"
           style={
@@ -237,16 +260,28 @@ export function CharacterWriter({ character, mode, onComplete }: Props) {
               : undefined
           }
         >
-          {writePhase === "trace"
-            ? tr(locale, "1/2 · Дагаж бич")
-            : tr(locale, "2/2 · Санаж бич — жишээгүй!")}
+          {mode === "recall"
+            ? tr(locale, "🧠 Санаж бич")
+            : writePhase === "trace"
+              ? tr(locale, "1/2 · Дагаж бич")
+              : tr(locale, "2/2 · Санаж бич — жишээгүй!")}
           {strokeTotal > 0
             ? ` · ${strokeDone}/${strokeTotal} ${tr(locale, "зураас")}`
             : ""}
         </p>
       ) : null}
 
-      {practiceMode === "success" && mode === "write" ? (
+      {mode === "recall" && practiceMode === "quiz" ? (
+        <button
+          type="button"
+          className="bs-cta bs-cta-muted"
+          onClick={() => actionsRef.current?.hint()}
+        >
+          {tr(locale, "💡 Сануулга харах")}
+        </button>
+      ) : null}
+
+      {practiceMode === "success" && (mode === "write" || mode === "recall") ? (
         <p className="bs-stroke-success">{successLabel}</p>
       ) : null}
 
@@ -308,7 +343,7 @@ export function CharacterWriter({ character, mode, onComplete }: Props) {
         </button>
       ) : null}
 
-      {mode === "write" && practiceMode === "success" ? (
+      {(mode === "write" || mode === "recall") && practiceMode === "success" ? (
         <button
           type="button"
           className="bs-cta bs-cta-muted"

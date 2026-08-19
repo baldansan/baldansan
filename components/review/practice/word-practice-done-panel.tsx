@@ -7,6 +7,7 @@ import type { WordPracticeMode } from "@/lib/review/word-practice-types";
 const TITLES: Record<WordPracticeMode, string> = {
   radical: "Задлах дасгал дууслаа",
   stroke: "Зурлагын дасгал дууслаа",
+  "recall-write": "Санаж бичих дууслаа",
   "meaning-match": "Утга тааруулах дууслаа",
   "srs-retry": "Давталт дууслаа",
 };

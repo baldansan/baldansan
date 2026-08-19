@@ -27,6 +27,7 @@ import { WordPracticeLauncher } from "@/components/review/word-practice-launcher
 import { WordPracticeDonePanel } from "@/components/review/practice/word-practice-done-panel";
 import { WordPracticeMeaningView } from "@/components/review/practice/word-practice-meaning-view";
 import { WordPracticeRadicalView } from "@/components/review/practice/word-practice-radical-view";
+import { WordPracticeRecallView } from "@/components/review/practice/word-practice-recall-view";
 import { WordPracticeStrokeView } from "@/components/review/practice/word-practice-stroke-view";
 import { WordSrsStrokePanel } from "@/components/review/word-srs-stroke-panel";
 
@@ -189,6 +190,7 @@ export function WordSrsStudySession({
   enabledPracticeModes = [
     "radical",
     "stroke",
+    "recall-write",
     "meaning-match",
     "srs-retry",
   ],
@@ -567,6 +569,7 @@ export function WordSrsStudySession({
     if (
       mode === "radical" ||
       mode === "stroke" ||
+      mode === "recall-write" ||
       mode === "meaning-match"
     ) {
       if (selectedPracticeWords.length === 0) return;
@@ -663,6 +666,17 @@ export function WordSrsStudySession({
     if (activePracticeMode === "stroke") {
       return (
         <WordPracticeStrokeView
+          words={selectedPracticeWords}
+          gameKey={practiceGameKey}
+          onComplete={finishExternalPractice}
+          onBackToSummary={backToSummary}
+        />
+      );
+    }
+
+    if (activePracticeMode === "recall-write") {
+      return (
+        <WordPracticeRecallView
           words={selectedPracticeWords}
           gameKey={practiceGameKey}
           onComplete={finishExternalPractice}
