@@ -53,6 +53,11 @@ export function HandwritingCourseClient() {
   const [level, setLevel] = useState<LevelKey>("1-2");
   const [done, setDone] = useState<Set<string>>(new Set());
   const [activeChar, setActiveChar] = useState<string | null>(null);
+  /** Санаж бичих сорил: бүлгийн ханзуудыг утгаас нь цээжээр бичнэ. */
+  const [recall, setRecall] = useState<{
+    chars: string[];
+    index: number;
+  } | null>(null);
   const [collapsed, setCollapsed] = useState<Set<string>>(new Set());
 
   useActivityTracker("writing", level);
@@ -120,6 +125,13 @@ export function HandwritingCourseClient() {
     setActiveChar(nextChar);
   }
 
+  function startRecall(chars: string[]) {
+    // Зөвхөн утгатай (түүхтэй) ханзаар сорил хийнэ — асуулт харуулах юмгүй бол алгасна.
+    const withMeaning = chars.filter((c) => stories[c]?.m);
+    if (withMeaning.length === 0) return;
+    setRecall({ chars: withMeaning, index: 0 });
+  }
+
   function toggleGroup(key: string) {
     setCollapsed((prev) => {
       const next = new Set(prev);
@@ -130,7 +142,10 @@ export function HandwritingCourseClient() {
   }
 
   return (
-    <MobileAppShell activeTab="kanji" showBottomNav={activeChar == null}>
+    <MobileAppShell
+      activeTab="kanji"
+      showBottomNav={activeChar == null && recall == null}
+    >
       <Link
         href="/kanji"
         className="mb-3 inline-flex items-center text-sm font-medium text-[var(--app-muted)] transition-colors hover:text-emerald-600"
@@ -237,22 +252,35 @@ export function HandwritingCourseClient() {
                       </span>
                     </button>
                     {isOpen ? (
-                      <div className="grid grid-cols-6 gap-1.5 px-3 pb-3 sm:grid-cols-8">
-                        {group.chars.map((c) => (
-                          <button
-                            key={c}
-                            type="button"
-                            onClick={() => setActiveChar(c)}
-                            className={`flex aspect-square items-center justify-center rounded-xl text-xl font-semibold transition-colors ${
-                              done.has(c)
-                                ? "bg-emerald-500 text-white"
-                                : "bg-slate-50 text-[var(--app-text)] ring-1 ring-slate-200 active:bg-emerald-50"
-                            }`}
-                          >
-                            {c}
-                          </button>
-                        ))}
-                      </div>
+                      <>
+                        <div className="grid grid-cols-6 gap-1.5 px-3 pb-3 sm:grid-cols-8">
+                          {group.chars.map((c) => (
+                            <button
+                              key={c}
+                              type="button"
+                              onClick={() => setActiveChar(c)}
+                              className={`flex aspect-square items-center justify-center rounded-xl text-xl font-semibold transition-colors ${
+                                done.has(c)
+                                  ? "bg-emerald-500 text-white"
+                                  : "bg-slate-50 text-[var(--app-text)] ring-1 ring-slate-200 active:bg-emerald-50"
+                              }`}
+                            >
+                              {c}
+                            </button>
+                          ))}
+                        </div>
+                        {group.chars.some((c) => stories[c]?.m) ? (
+                          <div className="px-3 pb-3">
+                            <button
+                              type="button"
+                              onClick={() => startRecall(group.chars)}
+                              className="w-full rounded-xl bg-amber-100 px-3 py-2.5 text-sm font-bold text-amber-800 ring-1 ring-amber-200"
+                            >
+                              🧠 {tr(locale, "Санаж бичих сорил")}
+                            </button>
+                          </div>
+                        ) : null}
+                      </>
                     ) : null}
                   </section>
                 );
@@ -328,6 +356,77 @@ export function HandwritingCourseClient() {
               mode="write"
               onComplete={() => markDone(activeChar)}
             />
+          </div>
+        </div>
+      ) : null}
+
+      {recall ? (
+        <div
+          className="fixed inset-0 z-[70] flex items-end justify-center bg-slate-900/50 p-3"
+          role="dialog"
+          aria-modal="true"
+        >
+          <div className="max-h-[92vh] w-full max-w-[430px] overflow-y-auto rounded-t-3xl bg-white p-4 pb-[max(1rem,env(safe-area-inset-bottom))]">
+            <div className="mb-2 flex items-center justify-between">
+              <p className="text-sm font-bold text-[var(--app-text)]">
+                🧠 {tr(locale, "Санаж бичих сорил")} · {recall.index + 1}/
+                {recall.chars.length}
+              </p>
+              <button
+                type="button"
+                onClick={() => setRecall(null)}
+                className="rounded-full bg-slate-100 px-3 py-1.5 text-xs font-semibold text-slate-600"
+              >
+                {tr(locale, "Хаах")}
+              </button>
+            </div>
+            {(() => {
+              const c = recall.chars[recall.index]!;
+              const meaning = stories[c]?.m ?? "";
+              return (
+                <>
+                  <div className="mb-3 rounded-2xl bg-amber-50 px-4 py-3 text-center ring-1 ring-amber-200">
+                    <p className="text-base font-bold text-amber-900">
+                      {meaning}
+                    </p>
+                    <div className="mt-1 flex items-center justify-center gap-2">
+                      <SpeakerButton
+                        text={c}
+                        lang="zh"
+                        size="sm"
+                        label={tr(locale, "Дуудлага сонсох")}
+                        showInlineError={false}
+                      />
+                    </div>
+                    <p className="mt-1 text-xs text-amber-700">
+                      {tr(locale, "Энэ утгатай ханзыг цээжээрээ бич")}
+                    </p>
+                  </div>
+                  <CharacterWriter
+                    key={`recall-${c}`}
+                    character={{ hanzi: c, pinyin: [], practice: "write" }}
+                    mode="recall"
+                    onComplete={() => {
+                      recordWritingCharRemote(c);
+                      setDone((prev) => {
+                        const next = new Set(prev);
+                        next.add(c);
+                        writeProgress(next);
+                        return next;
+                      });
+                      if (recall.index >= recall.chars.length - 1) {
+                        setRecall(null);
+                      } else {
+                        setRecall({
+                          chars: recall.chars,
+                          index: recall.index + 1,
+                        });
+                      }
+                    }}
+                  />
+                </>
+              );
+            })()}
           </div>
         </div>
       ) : null}

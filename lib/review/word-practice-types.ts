@@ -11,6 +11,7 @@ export type SessionWordRow = {
 export type WordPracticeMode =
   | "radical"
   | "stroke"
+  | "recall-write"
   | "meaning-match"
   | "srs-retry";
 
@@ -33,6 +34,12 @@ export const PRACTICE_CARDS: PracticeCardDef[] = [
     emoji: "✏️",
     title: "Зурлагын дасгал",
     description: "Ханз бичих",
+  },
+  {
+    mode: "recall-write",
+    emoji: "🧠",
+    title: "Санаж бичих",
+    description: "Утгаас нь ханз бичих",
   },
   {
     mode: "meaning-match",
