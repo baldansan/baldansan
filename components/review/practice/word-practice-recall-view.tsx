@@ -1,6 +1,7 @@
 "use client";
 
 import dynamic from "next/dynamic";
+import "@/components/lesson/lesson-player.css";
 import { useMemo, useState } from "react";
 import { SpeakerButton } from "@/components/tts/speaker-button";
 import { extractHanziCharacters } from "@/lib/hanzi/writing-practice";
