@@ -13,6 +13,8 @@ import { SpeakerButton } from "@/components/tts/speaker-button";
 import { resolveTtsLang } from "@/lib/tts/infer-lang";
 import type { GameVocabItem } from "@/lib/games/game-types";
 import { useActivityTracker } from "@/lib/analytics/activity-tracker";
+import { useUiLocale } from "@/lib/i18n/ui-locale";
+import { tr } from "@/lib/i18n/translate";
 
 type Props = {
   lessonId: string;
@@ -32,6 +34,7 @@ export function ArrangeGameClient({
   labels: labelsProp,
 }: Props) {
   useActivityTracker("game", "arrange");
+  const locale = useUiLocale();
   const labels = labelsProp ?? resolveGameLabels(isKorean, isPrelesson);
   const gameContext = { isKorean, isPrelesson };
   const questions = useMemo(
@@ -182,7 +185,9 @@ export function ArrangeGameClient({
             <p
               className={`mb-3 text-center text-sm font-semibold ${isCorrect ? "text-emerald-600" : "text-red-600"}`}
             >
-              {isCorrect ? "Зөв!" : `Зөв: ${current.target}`}
+              {isCorrect
+                ? tr(locale, "Зөв!")
+                : `${tr(locale, "Зөв:")} ${current.target}`}
             </p>
           ) : null}
           <div className="mb-4 flex flex-wrap gap-2">
@@ -217,7 +222,10 @@ export function ArrangeGameClient({
             disabled={!checked && picked.length === 0}
             className="min-h-[48px] w-full app-btn-primary py-3 text-sm font-bold disabled:opacity-50"
           >
-            {checked ? (qIndex < total - 1 ? "Дараах" : "Дуусгах") : "Шалгах"}
+            {tr(
+              locale,
+              checked ? (qIndex < total - 1 ? "Дараах" : "Дуусгах") : "Шалгах"
+            )}
           </button>
         </>
       ) : null}

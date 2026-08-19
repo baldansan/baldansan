@@ -13,6 +13,8 @@ import {
 import { resolveGameLabels, type GameLabels } from "@/lib/games/game-lesson-meta";
 import { saveGameResult } from "@/lib/games/game-progress";
 import { useActivityTracker } from "@/lib/analytics/activity-tracker";
+import { useUiLocale } from "@/lib/i18n/ui-locale";
+import { tr } from "@/lib/i18n/translate";
 
 type Props = {
   lessonId: string;
@@ -44,6 +46,7 @@ export function RadicalGameClient({
   onEnterChallenge,
 }: Props) {
   useActivityTracker("game", "radical");
+  const locale = useUiLocale();
   const labels = labelsProp ?? resolveGameLabels(false, false);
   const entries = useMemo(
     () => entriesProp ?? getRadicalGameEntries(),
@@ -169,16 +172,19 @@ export function RadicalGameClient({
       <GameShell mainClassName=" bg-[#f1f6f3] px-5 pt-6">
         <div className="rounded-[24px] bg-white p-8 text-center shadow-[0_12px_30px_rgba(25,40,30,0.10)]">
           <p className="text-sm font-bold text-[var(--app-text)]">
-            {customWordSet
-              ? "Эдгээр үгсэд задлах тоглоомын өгөгдөл олдсонгүй."
-              : "Тоглоомын өгөгдөл олдсонгүй."}
+            {tr(
+              locale,
+              customWordSet
+                ? "Эдгээр үгсэд задлах тоглоомын өгөгдөл олдсонгүй."
+                : "Тоглоомын өгөгдөл олдсонгүй."
+            )}
           </p>
           {returnHref ? (
             <Link
               href={returnHref}
               className="mt-4 inline-flex min-h-[44px] items-center justify-center rounded-[14px] bg-[var(--app-primary)] px-5 text-sm font-extrabold text-white"
             >
-              Багц руу буцах
+              {tr(locale, "Багц руу буцах")}
             </Link>
           ) : null}
         </div>
@@ -189,7 +195,10 @@ export function RadicalGameClient({
   if (finished) {
     return (
       <GameShell mainClassName=" bg-[#f1f6f3] px-5 pt-6">
-        <RadicalGameTop title={labels.radicalTitle} counter={`${total} / ${total}`} />
+        <RadicalGameTop
+          title={tr(locale, labels.radicalTitle)}
+          counter={`${total} / ${total}`}
+        />
         <div className="mb-4 h-2 overflow-hidden rounded-full bg-[#e1ebe5]">
           <div className="h-full w-full rounded-full bg-[var(--app-primary)] transition-all" />
         </div>
@@ -197,10 +206,11 @@ export function RadicalGameClient({
         <div className="rounded-[24px] bg-white p-10 text-center shadow-[0_12px_30px_rgba(25,40,30,0.10)]">
           <p className="text-[54px] leading-none">🏆</p>
           <h2 className="mt-2 text-xl font-extrabold text-[var(--app-text)]">
-            Бүх ханз дууслаа!
+            {tr(locale, "Бүх ханз дууслаа!")}
           </h2>
           <p className="mt-2 text-sm text-[var(--app-muted)]">
-            Оноо: <b className="text-[var(--app-text)]">{score}</b> · Нарийвчлал:{" "}
+            {tr(locale, "Оноо:")} <b className="text-[var(--app-text)]">{score}</b> ·{" "}
+            {tr(locale, "Нарийвчлал:")}{" "}
             <b className="text-[var(--app-text)]">{accuracy}%</b>
           </p>
           <button
@@ -208,7 +218,7 @@ export function RadicalGameClient({
             onClick={restart}
             className="mt-4 min-h-[48px] w-full max-w-[200px] rounded-[15px] bg-[var(--app-primary)] px-5 py-3 text-[15px] font-extrabold text-white active:bg-[var(--app-primary-dark)]"
           >
-            Дахин эхлэх
+            {tr(locale, "Дахин эхлэх")}
           </button>
           {onReturnToSummary ? (
             <button
@@ -216,14 +226,14 @@ export function RadicalGameClient({
               onClick={onReturnToSummary}
               className="mt-3 inline-flex min-h-[48px] w-full max-w-[200px] items-center justify-center rounded-[15px] bg-[#eaf0ed] px-5 py-3 text-[15px] font-extrabold text-[#3b473f]"
             >
-              Дүгнэлт рүү буцах
+              {tr(locale, "Дүгнэлт рүү буцах")}
             </button>
           ) : returnHref ? (
             <Link
               href={returnHref}
               className="mt-3 inline-flex min-h-[48px] w-full max-w-[200px] items-center justify-center rounded-[15px] bg-[#eaf0ed] px-5 py-3 text-[15px] font-extrabold text-[#3b473f]"
             >
-              Багц руу буцах
+              {tr(locale, "Багц руу буцах")}
             </Link>
           ) : null}
         </div>
@@ -238,7 +248,7 @@ export function RadicalGameClient({
   return (
     <GameShell mainClassName=" bg-[#f1f6f3] px-5 pt-6 pb-8">
       <RadicalGameTop
-        title={labels.radicalTitle}
+        title={tr(locale, labels.radicalTitle)}
         counter={`${index + 1} / ${total}`}
       />
 
@@ -258,7 +268,7 @@ export function RadicalGameClient({
             onClick={onEnterChallenge}
             className="rounded-full bg-[#fff4e0] px-3.5 py-1.5 text-xs font-extrabold text-[#b9760a]"
           >
-            ⚡ Сорилт
+            {tr(locale, "⚡ Сорилт")}
           </button>
         </div>
       ) : null}
@@ -272,13 +282,13 @@ export function RadicalGameClient({
         />
 
         <p className="mt-3.5 text-sm font-extrabold text-[#33433b]">
-          Бүрдэл хэсгүүдийг зөв дарааллаар нь сонго
+          {tr(locale, "Бүрдэл хэсгүүдийг зөв дарааллаар нь сонго")}
         </p>
 
         <div className="flex min-h-[78px] flex-wrap items-center justify-center gap-2 rounded-[18px] border-2 border-dashed border-[#c6d4cc] bg-[#fbfffd] px-3 py-3">
           {selected.length === 0 ? (
             <span className="text-[13px] font-extrabold text-[#9fb0a7]">
-              Бүрдлүүдийг энд дараалуулна
+              {tr(locale, "Бүрдлүүдийг энд дараалуулна")}
             </span>
           ) : (
             selected.map((slot, slotIndex) => (
@@ -333,7 +343,7 @@ export function RadicalGameClient({
             disabled={locked}
             className="min-h-[48px] flex-1 rounded-[15px] bg-[#eaf0ed] px-4 py-3 text-[15px] font-extrabold text-[#3b473f] disabled:opacity-50"
           >
-            Цэвэрлэх
+            {tr(locale, "Цэвэрлэх")}
           </button>
           <button
             type="button"
@@ -341,14 +351,14 @@ export function RadicalGameClient({
             disabled={locked || selected.length === 0}
             className="min-h-[48px] flex-1 rounded-[15px] bg-[var(--app-primary)] px-4 py-3 text-[15px] font-extrabold text-white active:bg-[var(--app-primary-dark)] disabled:opacity-50"
           >
-            Шалгах
+            {tr(locale, "Шалгах")}
           </button>
         </div>
 
         {checkResult === "ok" ? (
           <div className="mt-3.5 rounded-[18px] border border-[#b6e6c8] bg-[var(--app-primary-light)] p-[15px] leading-relaxed">
             <h3 className="text-base font-bold text-[var(--app-text)]">
-              ✅ Зөв! +{lastGain} оноо
+              {tr(locale, "✅ Зөв!")} +{lastGain} {tr(locale, "оноо")}
             </h3>
             <div className="mt-2.5 rounded-[14px] border border-[var(--app-border)] bg-white p-3 text-sm">
               💡 <b>{current.char}</b> ({current.pinyin}) — {current.meaning_mn}
@@ -377,11 +387,13 @@ export function RadicalGameClient({
         {checkResult === "no" ? (
           <div className="mt-3.5 rounded-[18px] border border-[#fbcfcf] bg-[#fef2f2] p-[15px] leading-relaxed">
             <h3 className="text-base font-bold text-[var(--app-text)]">
-              ❌ Дараалал/бүрдэл буруу
+              {tr(locale, "❌ Дараалал/бүрдэл буруу")}
             </h3>
             <p className="mt-1 text-sm text-[var(--app-muted)]">
-              Илүү (хууран мэхлэх) бүрдлийг хасаад, зөв хэсгүүдийг дарааллаар нь
-              сонгоорой.
+              {tr(
+                locale,
+                "Илүү (хууран мэхлэх) бүрдлийг хасаад, зөв хэсгүүдийг дарааллаар нь сонгоорой."
+              )}
             </p>
           </div>
         ) : null}
@@ -392,7 +404,7 @@ export function RadicalGameClient({
             onClick={handleNext}
             className="mt-3 min-h-[48px] w-full rounded-[15px] bg-[var(--app-primary)] px-4 py-3 text-[15px] font-extrabold text-white active:bg-[var(--app-primary-dark)]"
           >
-            {index >= total - 1 ? "Дуусгах →" : "Дараагийн ханз →"}
+            {tr(locale, index >= total - 1 ? "Дуусгах →" : "Дараагийн ханз →")}
           </button>
         ) : null}
       </div>
@@ -426,12 +438,13 @@ function RadicalGameStats({
   streak: number;
   accuracy: number;
 }) {
+  const locale = useUiLocale();
   return (
     <div className="mb-4 grid grid-cols-3 gap-2.5">
       {[
-        { value: score, label: "Оноо" },
-        { value: streak, label: "Цуваа 🔥" },
-        { value: `${accuracy}%`, label: "Нарийвчлал" },
+        { value: score, label: tr(locale, "Оноо") },
+        { value: streak, label: tr(locale, "Цуваа 🔥") },
+        { value: `${accuracy}%`, label: tr(locale, "Нарийвчлал") },
       ].map((stat) => (
         <div
           key={stat.label}

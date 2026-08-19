@@ -20,6 +20,8 @@ import {
 import type { GameVocabItem, StrokeQuestion } from "@/lib/games/game-types";
 import type { HskCharacterNote } from "@/lib/lesson/hsk-lesson-content";
 import { useActivityTracker } from "@/lib/analytics/activity-tracker";
+import { useUiLocale } from "@/lib/i18n/ui-locale";
+import { tr } from "@/lib/i18n/translate";
 
 type Props = {
   lessonId: string;
@@ -42,6 +44,7 @@ export function StrokeGameClient({
   initialQuestions,
 }: Props) {
   useActivityTracker("game", "stroke");
+  const locale = useUiLocale();
   const labels = labelsProp ?? resolveGameLabels(isKorean, isPrelesson);
   const gameContext = { isKorean, isPrelesson, hskCharacterNotes };
   const questions = useMemo(
@@ -193,12 +196,12 @@ export function StrokeGameClient({
                 </p>
                 {isStrokeOrder ? (
                   <p className="mt-1 text-xs text-[var(--app-muted)]">
-                    Зураасны дараалал
+                    {tr(locale, "Зураасны дараалал")}
                   </p>
                 ) : null}
                 {isComponent ? (
                   <p className="mt-1 text-xs text-[var(--app-muted)]">
-                    偏旁 / бүрдэл
+                    {tr(locale, "偏旁 / бүрдэл")}
                   </p>
                 ) : null}
               </>
@@ -259,7 +262,7 @@ export function StrokeGameClient({
               onClick={handleNext}
               className="mt-4 min-h-[48px] w-full app-btn-primary py-3"
             >
-              {index < total - 1 ? "Дараах" : "Дуусгах"}
+              {tr(locale, index < total - 1 ? "Дараах" : "Дуусгах")}
             </button>
           ) : null}
         </>

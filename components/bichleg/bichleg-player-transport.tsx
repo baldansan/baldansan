@@ -1,6 +1,8 @@
 "use client";
 
 import { BichlegSkipIcon } from "@/components/bichleg/bichleg-skip-icon";
+import { useUiLocale } from "@/lib/i18n/ui-locale";
+import { tr } from "@/lib/i18n/translate";
 
 type Props = {
   isPlaying: boolean;
@@ -15,12 +17,17 @@ export function BichlegPlayerTransport({
   onTogglePlay,
   onForward,
 }: Props) {
+  const locale = useUiLocale();
   return (
-    <div className="bs-bichleg-transport" role="group" aria-label="Тоглуулагч">
+    <div
+      className="bs-bichleg-transport"
+      role="group"
+      aria-label={tr(locale, "Тоглуулагч")}
+    >
       <button
         type="button"
         className="bs-bichleg-transport-btn"
-        aria-label="3 секунд ухраах"
+        aria-label={tr(locale, "3 секунд ухраах")}
         onClick={onRewind}
       >
         <BichlegSkipIcon direction="back" className="bs-bichleg-skip-icon" />
@@ -28,7 +35,7 @@ export function BichlegPlayerTransport({
       <button
         type="button"
         className="bs-bichleg-transport-btn bs-bichleg-transport-btn--play"
-        aria-label={isPlaying ? "Зогсоох" : "Тоглуулах"}
+        aria-label={tr(locale, isPlaying ? "Зогсоох" : "Тоглуулах")}
         onClick={onTogglePlay}
       >
         {isPlaying ? (
@@ -44,7 +51,7 @@ export function BichlegPlayerTransport({
       <button
         type="button"
         className="bs-bichleg-transport-btn"
-        aria-label="3 секунд урагшлуулах"
+        aria-label={tr(locale, "3 секунд урагшлуулах")}
         onClick={onForward}
       >
         <BichlegSkipIcon direction="forward" className="bs-bichleg-skip-icon" />

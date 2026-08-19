@@ -1,6 +1,8 @@
 "use client";
 
 import { orderHintFromStructure } from "@/lib/games/radical-game-data";
+import { useUiLocale, type UiLocale } from "@/lib/i18n/ui-locale";
+import { tr } from "@/lib/i18n/translate";
 
 type HanziEntry = {
   char: string;
@@ -19,8 +21,12 @@ type Props = {
   extraHint?: string;
 };
 
-export function structureGuideText(structure: string, partCount: number): string {
-  return `${partCount} хэсэг · ${orderHintFromStructure(structure)}`;
+export function structureGuideText(
+  structure: string,
+  partCount: number,
+  locale: UiLocale = "mn"
+): string {
+  return `${partCount} ${tr(locale, "хэсэг")} · ${tr(locale, orderHintFromStructure(structure))}`;
 }
 
 export function RadicalHanziToggle({
@@ -32,6 +38,7 @@ export function RadicalHanziToggle({
   onToggle: () => void;
   disabled?: boolean;
 }) {
+  const locale = useUiLocale();
   return (
     <button
       type="button"
@@ -39,7 +46,7 @@ export function RadicalHanziToggle({
       disabled={disabled}
       className="rounded-full border border-[var(--app-border)] bg-white px-3 py-1.5 text-xs font-extrabold text-[var(--app-text)] shadow-sm disabled:opacity-50"
     >
-      {hideHanzi ? "👁 Ханз харах" : "🙈 Ханз нуух"}
+      {tr(locale, hideHanzi ? "👁 Ханз харах" : "🙈 Ханз нуух")}
     </button>
   );
 }
@@ -52,8 +59,9 @@ export function RadicalHanziPanel({
   badge = "Шинэ",
   extraHint,
 }: Props) {
+  const locale = useUiLocale();
   const showChar = !hideHanzi || revealed;
-  const guide = structureGuideText(entry.structure, entry.answer.length);
+  const guide = structureGuideText(entry.structure, entry.answer.length, locale);
 
   return (
     <>
@@ -83,7 +91,7 @@ export function RadicalHanziPanel({
           </div>
         </div>
         <span className="shrink-0 rounded-full bg-[var(--app-primary-light)] px-2.5 py-1 text-[11px] font-extrabold text-[var(--app-primary-dark)]">
-          {badge}
+          {tr(locale, badge)}
         </span>
       </div>
 
@@ -91,14 +99,14 @@ export function RadicalHanziPanel({
         <RadicalHanziToggle hideHanzi={hideHanzi} onToggle={onToggleHide} />
         {showChar && hideHanzi ? (
           <span className="text-[10px] font-bold text-[var(--app-primary-dark)]">
-            Ханз нээгдлээ
+            {tr(locale, "Ханз нээгдлээ")}
           </span>
         ) : null}
       </div>
 
       {!hideHanzi || revealed ? (
         <p className="mt-2 text-[11px] text-[var(--app-muted)]">
-          Дараалал: {orderHintFromStructure(entry.structure)}
+          {tr(locale, "Дараалал:")} {tr(locale, orderHintFromStructure(entry.structure))}
           {extraHint ?? ""}
         </p>
       ) : null}
