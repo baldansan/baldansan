@@ -1,5 +1,8 @@
 "use client";
 
+import { tr } from "@/lib/i18n/translate";
+import { useUiLocale } from "@/lib/i18n/ui-locale";
+
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useCallback, useEffect, useState } from "react";
@@ -54,6 +57,7 @@ function ProfileAvatar({ displayName, guest }: { displayName: string; guest?: bo
 }
 
 export function ProfileAppView() {
+  const locale = useUiLocale();
   const router = useRouter();
   const { level: activeLevel, hydrated } = useActiveHskLevel();
   const [loadState, setLoadState] = useState<LoadState>("loading");
@@ -205,7 +209,7 @@ export function ProfileAppView() {
         activeTab="profile"
         >
         <p className="py-16 text-center text-sm text-[var(--app-muted)]">
-          Ачааллаж байна…
+          {tr(locale, "Ачааллаж байна…")}
         </p>
       </MobileAppShell>
     );
@@ -217,8 +221,8 @@ export function ProfileAppView() {
         activeTab="profile"
         >
         <AuthLoadErrorCard
-          title="Профайл ачаалахад алдаа гарлаа"
-          description="Auth эсвэл профайл мэдээлэл татахад алдаа гарлаа."
+          title={tr(locale, "Профайл ачаалахад алдаа гарлаа")}
+          description={tr(locale, "Auth эсвэл профайл мэдээлэл татахад алдаа гарлаа.")}
           result={{
             ...(checkResult ?? buildFallbackAuthCheckResult(PROFILE_ROUTE, profileError ?? "Unknown error")),
             error: profileError ?? checkResult?.error ?? "Unknown error",
@@ -232,23 +236,23 @@ export function ProfileAppView() {
 
   if (!user) {
     const guestLevelLabel = hydrated
-      ? `${formatActiveHskLevel(activeLevel)} суралцагч`
-      : "Суралцагч";
+      ? `${formatActiveHskLevel(activeLevel)} ${tr(locale, "суралцагч")}`
+      : tr(locale, "Суралцагч");
 
     return (
       <MobileAppShell
         activeTab="profile"
         >
         <div className="bs-tm-phead">
-          <ProfileAvatar displayName="Зочин" guest />
-          <h1 className="bs-tm-pname">Зочин хэрэглэгч</h1>
+          <ProfileAvatar displayName={tr(locale, "Зочин")} guest />
+          <h1 className="bs-tm-pname">{tr(locale, "Зочин хэрэглэгч")}</h1>
           <p className="bs-tm-prank">{guestLevelLabel}</p>
           {streak > 0 ? (
-            <span className="bs-tm-plvlbadge">🔥 {streak} өдөр дараалан</span>
+            <span className="bs-tm-plvlbadge">🔥 {streak} {tr(locale, "өдөр дараалан")}</span>
           ) : null}
           {streakFreeze ? (
             <span className="bs-tm-plvlbadge">
-              🧊 Хамгаалалт: {streakFreeze.total - streakFreeze.usedThisMonth}/
+              {tr(locale, "🧊 Хамгаалалт:")} {streakFreeze.total - streakFreeze.usedThisMonth}/
               {streakFreeze.total}
             </span>
           ) : null}
@@ -256,7 +260,7 @@ export function ProfileAppView() {
 
         {!hasSupabaseConfig ? (
           <MobileCard className="mb-4 border border-amber-200 bg-amber-50 !p-3 text-xs text-amber-900">
-            Supabase тохиргоо дутуу. Ахицаа зөвхөн энэ төхөөрөмж дээр хадгална.
+            {tr(locale, "Supabase тохиргоо дутуу. Ахицаа зөвхөн энэ төхөөрөмж дээр хадгална.")}
           </MobileCard>
         ) : null}
 
@@ -268,29 +272,29 @@ export function ProfileAppView() {
 
         <MobileCard padding="sm" className="mb-5 text-center !p-4">
           <p className="text-sm font-bold text-[var(--app-text)]">
-            Бүх төхөөрөмж дээр хадгалах уу?
+            {tr(locale, "Бүх төхөөрөмж дээр хадгалах уу?")}
           </p>
           <p className="mt-1 text-xs text-[var(--app-muted)]">
-            Нэвтэрвэл SRS, streak, тоглоомын оноо синк хийгдэнэ.
+            {tr(locale, "Нэвтэрвэл SRS, streak, тоглоомын оноо синк хийгдэнэ.")}
           </p>
           <Link
             href="/login"
             className="mt-4 inline-flex min-h-[44px] w-full items-center justify-center app-btn-primary px-6 py-3"
           >
-            Нэвтрэх
+            {tr(locale, "Нэвтрэх")}
           </Link>
           <Link
             href="/signup"
             className="mt-3 block text-sm font-semibold text-emerald-600"
           >
-            Бүртгүүлэх
+            {tr(locale, "Бүртгүүлэх")}
           </Link>
         </MobileCard>
       </MobileAppShell>
     );
   }
 
-  const displayName = user.email?.split("@")[0] ?? "Хэрэглэгч";
+  const displayName = user.email?.split("@")[0] ?? tr(locale, "Хэрэглэгч");
 
   return (
     <MobileAppShell
@@ -300,14 +304,16 @@ export function ProfileAppView() {
         <ProfileAvatar displayName={displayName} />
         <h1 className="bs-tm-pname">{displayName}</h1>
         <p className="bs-tm-prank">
-          {hydrated ? `${formatActiveHskLevel(activeLevel)} суралцагч` : "Суралцагч"}
+          {hydrated
+            ? `${formatActiveHskLevel(activeLevel)} ${tr(locale, "суралцагч")}`
+            : tr(locale, "Суралцагч")}
         </p>
         {streak > 0 ? (
-          <span className="bs-tm-plvlbadge">🔥 {streak} өдөр дараалан</span>
+          <span className="bs-tm-plvlbadge">🔥 {streak} {tr(locale, "өдөр дараалан")}</span>
         ) : null}
         {streakFreeze ? (
           <span className="bs-tm-plvlbadge">
-            🧊 Хамгаалалт: {streakFreeze.total - streakFreeze.usedThisMonth}/
+            {tr(locale, "🧊 Хамгаалалт:")} {streakFreeze.total - streakFreeze.usedThisMonth}/
             {streakFreeze.total}
           </span>
         ) : null}
@@ -315,7 +321,7 @@ export function ProfileAppView() {
 
       {profileError ? (
         <MobileCard className="mb-4 border border-amber-200 bg-amber-50 !p-3 text-xs text-amber-900">
-          Зарим профайл мэдээлэл ачаалж чадсангүй: {profileError}
+          {tr(locale, "Зарим профайл мэдээлэл ачаалж чадсангүй:")} {profileError}
         </MobileCard>
       ) : null}
 
@@ -331,7 +337,7 @@ export function ProfileAppView() {
             ⚙️
           </span>
           <span className="flex-1">
-            <span className="bs-tm-card-title">Админ самбар</span>
+            <span className="bs-tm-card-title">{tr(locale, "Админ самбар")}</span>
           </span>
           <span className="bs-tm-card-chev" aria-hidden>›</span>
         </Link>
@@ -348,7 +354,7 @@ export function ProfileAppView() {
         </span>
         <span className="flex-1">
           <span className="bs-tm-card-title">
-            {signingOut ? "Гарч байна…" : "Гарах"}
+            {tr(locale, signingOut ? "Гарч байна…" : "Гарах")}
           </span>
         </span>
       </button>

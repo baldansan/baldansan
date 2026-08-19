@@ -1,5 +1,8 @@
 "use client";
 
+import { tr } from "@/lib/i18n/translate";
+import { useUiLocale } from "@/lib/i18n/ui-locale";
+
 import { memo } from "react";
 import { SpeakerButton } from "@/components/tts/speaker-button";
 import { LessonPlayerCard } from "@/components/lesson-player/lesson-player-shell";
@@ -49,6 +52,7 @@ function LessonStepQuizInner({
   pronunciationMap,
   showPronunciation = false,
 }: Props) {
+  const locale = useUiLocale();
   const isCorrect = selected === question.correctAnswer;
 
   function optionClass(option: string) {
@@ -71,7 +75,7 @@ function LessonStepQuizInner({
   return (
     <LessonPlayerCard>
       <p className="text-sm font-medium text-emerald-700">
-        Асуулт {index + 1} / {total}
+        {tr(locale, "Асуулт")} {index + 1} / {total}
       </p>
       <div className="mt-3 flex items-start gap-2">
         <h2 className="min-w-0 flex-1 text-lg font-bold leading-snug text-slate-900">
@@ -109,7 +113,7 @@ function LessonStepQuizInner({
                 lang={ttsLang}
                 courseId={courseId}
                 size="sm"
-                label={`Сонголт: ${option}`}
+                label={`${tr(locale, "Сонголт:")} ${option}`}
               />
             ) : null}
           </div>
@@ -131,7 +135,7 @@ function LessonStepQuizInner({
                 : "text-sm font-semibold text-red-800"
             }
           >
-            {isCorrect ? "Зөв!" : "Буруу"}
+            {tr(locale, isCorrect ? "Зөв!" : "Буруу")}
           </p>
           {showPronunciation && lesson ? (
             <QuizAnswerFeedback

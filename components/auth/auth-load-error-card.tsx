@@ -1,6 +1,9 @@
 "use client";
 
 import Link from "next/link";
+import { tr } from "@/lib/i18n/translate";
+import { useUiLocale } from "@/lib/i18n/ui-locale";
+
 import { LocalDebugPanel } from "@/components/dev/local-debug-panel";
 import { shouldShowLocalDebugDetails } from "@/lib/dev/local-debug";
 import type { ClientAuthCheckResult } from "@/lib/auth/client-auth-check";
@@ -23,14 +26,15 @@ export function AuthLoadErrorCard({
   route,
   onRetry,
 }: Props) {
+  const locale = useUiLocale();
   const displayTitle = result.timedOut
-    ? "Auth шалгалт хэт удаж байна"
+    ? tr(locale, "Auth шалгалт хэт удаж байна")
     : result.supabaseConfigured
-      ? title
-      : "Supabase тохиргоо дутуу байна";
+      ? tr(locale, title)
+      : tr(locale, "Supabase тохиргоо дутуу байна");
 
   const displayDescription = result.supabaseConfigured
-    ? description
+    ? tr(locale, description)
     : ".env.local файлд NEXT_PUBLIC_SUPABASE_URL болон NEXT_PUBLIC_SUPABASE_ANON_KEY нэмнэ үү.";
 
   return (
@@ -75,7 +79,7 @@ export function AuthLoadErrorCard({
             onClick={onRetry}
             className="inline-flex rounded-full bg-emerald-500 px-5 py-2.5 text-sm font-semibold text-white hover:bg-emerald-600"
           >
-            Дахин оролдох
+            {tr(locale, "Дахин оролдох")}
           </button>
         ) : null}
         {!result.sessionPresent ? (
@@ -83,7 +87,7 @@ export function AuthLoadErrorCard({
             href="/login"
             className="inline-flex rounded-full border border-slate-200 px-5 py-2.5 text-sm font-semibold text-slate-700"
           >
-            Нэвтрэх
+            {tr(locale, "Нэвтрэх")}
           </Link>
         ) : null}
       </div>

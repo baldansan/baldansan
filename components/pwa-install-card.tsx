@@ -1,6 +1,9 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { tr } from "@/lib/i18n/translate";
+import { useUiLocale } from "@/lib/i18n/ui-locale";
+
 
 type BeforeInstallPromptEvent = Event & {
   prompt: () => Promise<void>;
@@ -18,6 +21,7 @@ function isIosBrowser(): boolean {
 }
 
 export function PwaInstallCard({ className = "" }: { className?: string }) {
+  const locale = useUiLocale();
   const [deferred, setDeferred] = useState<BeforeInstallPromptEvent | null>(null);
   const [dismissed, setDismissed] = useState(false);
   const [installed, setInstalled] = useState(false);
@@ -65,19 +69,22 @@ export function PwaInstallCard({ className = "" }: { className?: string }) {
         <section
           className={`rounded-2xl bg-emerald-50 p-4 text-sm text-emerald-900 ring-1 ring-emerald-200 ${className}`}
         >
-          <p className="font-semibold">iPhone/iPad дээр app шиг суулгах:</p>
+          <p className="font-semibold">{tr(locale, "iPhone/iPad дээр app шиг суулгах:")}</p>
           <ol className="mt-2 list-inside list-decimal space-y-1 text-emerald-800">
             <li>
-              Safari-ийн доод талын <strong>Share</strong>{" "}
-              <span aria-hidden>(⬆️ дөрвөлжин дотор сум)</span> товчийг дар
+              {tr(locale, "Safari-ийн доод талын")} <strong>Share</strong>{" "}
+              <span aria-hidden>{tr(locale, "(⬆️ дөрвөлжин дотор сум)")}</span> {tr(locale, "товчийг дар")}
             </li>
             <li>
-              <strong>«Нүүр дэлгэцэд нэмэх» (Add to Home Screen)</strong>-ийг
-              сонго
+              <strong>
+                {tr(locale, "«Нүүр дэлгэцэд нэмэх» (Add to Home Screen)")}
+              </strong>
+              {tr(locale, "-ийг сонго")}
             </li>
             <li>
-              Баруун дээд буланд <strong>Нэмэх (Add)</strong> дар — нүүр
-              дэлгэцэд app болж суугдана
+              {tr(locale, "Баруун дээд буланд")}{" "}
+              <strong>{tr(locale, "Нэмэх (Add)")}</strong>{" "}
+              {tr(locale, "дар — нүүр дэлгэцэд app болж суугдана")}
             </li>
           </ol>
           <button
@@ -85,7 +92,7 @@ export function PwaInstallCard({ className = "" }: { className?: string }) {
             onClick={() => setDismissed(true)}
             className="mt-3 rounded-full border border-emerald-200 bg-white px-4 py-1.5 text-xs font-semibold text-emerald-700"
           >
-            Ойлголоо
+            {tr(locale, "Ойлголоо")}
           </button>
         </section>
       );
@@ -95,8 +102,8 @@ export function PwaInstallCard({ className = "" }: { className?: string }) {
         className={`rounded-2xl border border-dashed border-slate-200 bg-slate-50/80 p-4 text-sm text-slate-600 ${className}`}
       >
         <p>
-          Chrome/Edge дээр Share → <strong>Install app</strong> эсвэл address bar
-          дээрх install товчоор app шиг нэмж болно.
+          {tr(locale, "Chrome/Edge дээр Share →")} <strong>Install app</strong>{" "}
+          {tr(locale, "эсвэл address bar дээрх install товчоор app шиг нэмж болно.")}
         </p>
       </section>
     );
@@ -106,9 +113,9 @@ export function PwaInstallCard({ className = "" }: { className?: string }) {
     <section
       className={`rounded-2xl bg-emerald-50 p-5 ring-1 ring-emerald-200 sm:p-6 ${className}`}
     >
-      <h2 className="text-base font-semibold text-emerald-900">App суулгах</h2>
+      <h2 className="text-base font-semibold text-emerald-900">{tr(locale, "App суулгах")}</h2>
       <p className="mt-2 text-sm text-emerald-800">
-        Утас/компьютер дээрээ app шиг хадгалж ашиглаарай.
+        {tr(locale, "Утас/компьютер дээрээ app шиг хадгалж ашиглаарай.")}
       </p>
       <div className="mt-4 flex flex-wrap gap-2">
         <button
@@ -123,7 +130,7 @@ export function PwaInstallCard({ className = "" }: { className?: string }) {
           onClick={() => setDismissed(true)}
           className="rounded-full border border-slate-200 bg-white px-5 py-2.5 text-sm font-semibold text-slate-600"
         >
-          Дараа
+          {tr(locale, "Дараа")}
         </button>
       </div>
     </section>

@@ -1,4 +1,7 @@
 "use client";
+
+import { tr } from "@/lib/i18n/translate";
+import { useUiLocale } from "@/lib/i18n/ui-locale";
 // components/lesson/LessonPlayer.tsx
 // Schema-driven хичээлийн player.
 // lesson.modules_enabled-ийг ДАРААЛЛААР нь уншиж, модуль бүрийн компонентыг үзүүлнэ.
@@ -46,6 +49,7 @@ export default function LessonPlayer({
   lesson: Lesson;
   onExit?: () => void;
 }) {
+  const locale = useUiLocale();
   const modules = lesson.modules_enabled ?? [];
   useActivityTracker("lesson", lessonId);
   const overviewIndex = useMemo(() => {
@@ -138,19 +142,23 @@ export default function LessonPlayer({
       case "recap":
         return <RecapModule lesson={lesson} onDone={next} />;
       default:
-        return <ComingSoon label={MODULE_LABEL[current] ?? current} onNext={next} />;
+        return <ComingSoon label={tr(locale, MODULE_LABEL[current] ?? current)} onNext={next} />;
     }
   }
 
   return (
     <div className="bs-root">
       <div className="bs-topbar">
-        <button className="bs-iconbtn" onClick={handleBack} aria-label="Буцах">
+        <button className="bs-iconbtn" onClick={handleBack} aria-label={tr(locale, "Буцах")}>
           ←
         </button>
         <div className="bs-ttl">
           <h1>
-            {lesson.level} · {lesson.lesson_number}-р хичээл — {lesson.title.mn}
+            {lesson.level} ·{" "}
+            {locale === "zh"
+              ? `第${lesson.lesson_number}课`
+              : `${lesson.lesson_number}-р хичээл`}{" "}
+            — {lesson.title.mn}
           </h1>
           <p>{lesson.title.zh}</p>
         </div>

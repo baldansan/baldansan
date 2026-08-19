@@ -1,5 +1,8 @@
 "use client";
 
+import { tr } from "@/lib/i18n/translate";
+import { useUiLocale } from "@/lib/i18n/ui-locale";
+
 import { useRouter } from "next/navigation";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { AdminPreviewBanner } from "@/components/admin-preview-banner";
@@ -83,6 +86,7 @@ export function HskGuidedLessonPlayer({
   adminPreview = false,
   routeLessonId,
 }: Props) {
+  const locale = useUiLocale();
   const router = useRouter();
   const content = useMemo(() => buildHskPlayerContent(lesson), [lesson]);
   const stepPlan = useMemo(() => buildHskPlayerStepPlanFromLesson(lesson), [lesson]);
@@ -173,7 +177,7 @@ export function HskGuidedLessonPlayer({
     return (
       <MobileAppShell activeTab="study" showBottomNav={false}>
         <p className="py-16 text-center text-sm text-[var(--app-muted)]">
-          Хичээл ачаалж байна...
+          {tr(locale, "Хичээл ачаалж байна...")}
         </p>
       </MobileAppShell>
     );
@@ -201,7 +205,7 @@ export function HskGuidedLessonPlayer({
           <PageTransition transitionKey={stepTransitionKey}>
           {currentStep?.type === "teacher-intro" ? (
             <TeacherSpeechCard
-              title={currentStep.titleMn || "Багшийн тайлбар"}
+              title={currentStep.titleMn || tr(locale, "Багшийн тайлбар")}
               bullets={
                 currentStep.bulletsMn.length > 0
                   ? currentStep.bulletsMn
@@ -382,14 +386,14 @@ export function HskGuidedLessonPlayer({
                 disabled={stepIndex === 0}
                 className="min-h-[44px] flex-1 rounded-full border border-slate-200 bg-white text-sm font-semibold text-slate-700 disabled:opacity-40"
               >
-                ← Өмнөх
+                ← {tr(locale, "Өмнөх")}
               </button>
               <button
                 type="button"
                 onClick={goNext}
                 className="min-h-[44px] flex-1 rounded-full border border-slate-200 bg-white text-sm font-semibold text-slate-700"
               >
-                {isLastStep ? "Дуусгах" : "Дараагийнх →"}
+                {isLastStep ? tr(locale, "Дуусгах") : `${tr(locale, "Дараагийнх")} →`}
               </button>
             </div>
             <button
@@ -398,7 +402,7 @@ export function HskGuidedLessonPlayer({
               className={lessonPlayerPrimaryBtnClass(false)}
               style={{ backgroundColor: HSK_PLAYER.primary }}
             >
-              Үргэлжлүүлэх
+              {tr(locale, "Үргэлжлүүлэх")}
             </button>
           </div>
         ) : null}

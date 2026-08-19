@@ -1,6 +1,9 @@
 "use client";
 
 import type { ReactNode } from "react";
+import { tr } from "@/lib/i18n/translate";
+import { useUiLocale } from "@/lib/i18n/ui-locale";
+
 
 type Props = {
   children: ReactNode;
@@ -21,6 +24,7 @@ export function LessonPlayerShell({
   bottomCta,
   hideBottomCta = false,
 }: Props) {
+  const locale = useUiLocale();
   const progressPercent =
     totalSteps > 0 ? Math.round(((stepIndex + 1) / totalSteps) * 100) : 0;
 
@@ -32,7 +36,7 @@ export function LessonPlayerShell({
             type="button"
             onClick={onClose}
             className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white text-lg text-slate-600 shadow-sm ring-1 ring-slate-200 transition-colors hover:bg-slate-50"
-            aria-label="Хаах"
+            aria-label={tr(locale, "Хаах")}
           >
             ✕
           </button>
@@ -44,7 +48,7 @@ export function LessonPlayerShell({
               />
             </div>
             <p className="mt-1.5 text-center text-xs font-medium text-slate-500">
-              Алхам {Math.min(stepIndex + 1, totalSteps)} / {totalSteps}
+              {tr(locale, "Алхам")} {Math.min(stepIndex + 1, totalSteps)} / {totalSteps}
             </p>
           </div>
           <details className="relative shrink-0">
@@ -57,7 +61,7 @@ export function LessonPlayerShell({
                 onClick={onRestart}
                 className="block w-full px-4 py-2.5 text-left text-sm font-medium text-slate-700 hover:bg-slate-50"
               >
-                Дахин эхлэх
+                {tr(locale, "Дахин эхлэх")}
               </button>
             </div>
           </details>
