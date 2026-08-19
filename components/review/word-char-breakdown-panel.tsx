@@ -6,6 +6,7 @@ import {
   resolveWordBreakdownViewsAsync,
   type CharBreakdownView,
 } from "@/lib/hanzi/char-breakdown-data";
+import { ConfusableChars } from "@/components/hanzi/confusable-chars";
 
 type Props = {
   text: string;
@@ -98,6 +99,7 @@ export function WordCharBreakdownPanel({ text, wordRadical }: Props) {
           showCharLabel={showCharLabels}
         />
       ))}
+      <ConfusableChars text={text} />
       <Link href="/games/radical" className="bs-srs-decomp-link">
         Задлах тоглоом руу →
       </Link>
