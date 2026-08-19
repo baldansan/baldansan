@@ -17,6 +17,7 @@ import { recordWritingResult } from "@/lib/srs/writing-srs-sync";
 import { getAuthenticatedUserId } from "@/lib/supabase/auth";
 import { hasSupabaseConfig } from "@/lib/supabase/client";
 import { fetchServerWritingEntries } from "@/lib/supabase/user-writing-srs";
+import { fetchMistakes } from "@/lib/supabase/mistake-book";
 import type { WordSrsRating } from "@/lib/srs/word-srs-types";
 
 const CharacterWriter = dynamic(
@@ -46,6 +47,7 @@ export function WritingReviewClient() {
   });
   const [lastRating, setLastRating] = useState<WordSrsRating | null>(null);
   const [remaining, setRemaining] = useState(0);
+  const [mistakeCount, setMistakeCount] = useState(0);
 
   const loadQueue = useCallback(async () => {
     setPhase("loading");
@@ -95,6 +97,20 @@ export function WritingReviewClient() {
     if (index >= queue.length - 1) {
       setRemaining(countDueLocalWriting());
       setPhase("done");
+      // Гинжин урсгал: дараагийн алхам болгож алдааны дэвтрийг санал болгоно.
+      if (hasSupabaseConfig) {
+        void (async () => {
+          try {
+            const { userId } = await getAuthenticatedUserId();
+            if (!userId) return;
+            const res = await fetchMistakes(userId);
+            const rows = (res as { data?: unknown[] }).data;
+            setMistakeCount(Array.isArray(rows) ? rows.length : 0);
+          } catch {
+            // чимээгүй
+          }
+        })();
+      }
       return;
     }
     setIndex((i) => i + 1);
@@ -154,6 +170,14 @@ export function WritingReviewClient() {
           >
             {tr(locale, "Үргэлжлүүлэх")} · {remaining}
           </button>
+        ) : null}
+        {mistakeCount > 0 ? (
+          <Link
+            href="/review/mistakes"
+            className="mt-3 block min-h-[48px] w-full rounded-[14px] bg-rose-50 py-3.5 text-center text-sm font-extrabold text-rose-700 ring-1 ring-rose-200"
+          >
+            ❌ {tr(locale, "Алдаагаа засах")} ({mistakeCount}) →
+          </Link>
         ) : null}
         <Link
           href="/review"

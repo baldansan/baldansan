@@ -4,6 +4,9 @@ import { useCallback, useEffect, useState, type ReactNode } from "react";
 import { HskLevelSelector } from "@/components/hsk/hsk-level-selector";
 import { useActiveHskLevel } from "@/components/providers/active-hsk-level-provider";
 import { WordSrsStudySession } from "@/components/review/word-srs-study-session";
+import { tr } from "@/lib/i18n/translate";
+import { useUiLocale } from "@/lib/i18n/ui-locale";
+import { countDueLocalWriting } from "@/lib/srs/writing-srs";
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
 import { SHELL_MAIN_REVIEW } from "@/lib/app-shell-classes";
 import { formatActiveHskLevel } from "@/lib/hsk/active-hsk-level";
@@ -23,6 +26,11 @@ type Props = {
 };
 
 export function ReviewSrsClient({ embedded = false }: Props) {
+  const locale = useUiLocale();
+  const [writingDue, setWritingDue] = useState(0);
+  useEffect(() => {
+    setWritingDue(countDueLocalWriting());
+  }, []);
   useActivityTracker("review", "daily");
   const { level: activeLevel, hydrated } = useActiveHskLevel();
   const [loadState, setLoadState] = useState<LoadState>("loading");
@@ -154,6 +162,18 @@ export function ReviewSrsClient({ embedded = false }: Props) {
         onRestart={() => void loadQueue()}
         completeTitle="✅ Өнөөдрийн давталт дууслаа!"
         completeMessage="Өнөөдрийн карт дууслаа."
+        onNextBatch={
+          writingDue > 0
+            ? () => {
+                window.location.href = "/review/writing";
+              }
+            : undefined
+        }
+        nextBatchLabel={
+          writingDue > 0
+            ? `✍️ ${tr(locale, "Одоо бичих давталт")} (${writingDue}) →`
+            : undefined
+        }
       />
     </>
   );
