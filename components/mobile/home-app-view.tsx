@@ -34,6 +34,8 @@ import {
 } from "@/lib/hsk/active-hsk-level";
 import { HelzuiHomeCard } from "@/components/helzui/helzui-home-card";
 import "@/components/helzui/helzui-course.css";
+import { tr } from "@/lib/i18n/translate";
+import { useUiLocale } from "@/lib/i18n/ui-locale";
 import type { LessonContent } from "@/types/lesson-content";
 
 type Props = {
@@ -50,6 +52,7 @@ function resolveCatalogChipLevel(entry: MobileCourseCatalogEntry): number | null
 }
 
 export function HomeAppView({ catalog, defaultChipId }: Props) {
+  const locale = useUiLocale();
   const { level: activeHskLevel, hydrated: hskHydrated } = useActiveHskLevel();
   const [selectedLang, setSelectedLang] = useState<ReturnType<typeof getSelectedLanguage>>(null);
   const [activeChip, setActiveChip] = useState(defaultChipId);
@@ -184,21 +187,23 @@ export function HomeAppView({ catalog, defaultChipId }: Props) {
         />
         <div className="relative z-10 flex items-center gap-3">
           <div className="min-w-0 flex-1">
-            <p className="text-sm font-semibold text-emerald-50">Сайн уу 👋</p>
+            <p className="text-sm font-semibold text-emerald-50">
+              {tr(locale, "Сайн уу")} 👋
+            </p>
             <p className="truncate text-2xl font-extrabold leading-tight">
-              {displayName}
+              {displayName === "Суралцагч" ? tr(locale, "Суралцагч") : displayName}
             </p>
             <div className="mt-3 flex flex-wrap items-center gap-2">
               <span className="inline-flex items-center gap-1.5 rounded-full bg-white/15 px-3 py-1.5 text-xs font-bold ring-1 ring-white/25">
                 <span aria-hidden>🔥</span>
-                {streak} өдөр
+                {streak} {tr(locale, "өдөр")}
               </span>
               {!loggedIn ? (
                 <Link
                   href="/login"
                   className="inline-flex items-center rounded-full bg-white px-4 py-1.5 text-xs font-extrabold text-emerald-700 shadow-sm active:bg-emerald-50"
                 >
-                  Нэвтрэх →
+                  {tr(locale, "Нэвтрэх")} →
                 </Link>
               ) : null}
             </div>
@@ -220,7 +225,7 @@ export function HomeAppView({ catalog, defaultChipId }: Props) {
             ▶
           </span>
           <span className="min-w-0 flex-1">
-            <p className="bs-tm-continue-kicker">Үргэлжлүүлэх</p>
+            <p className="bs-tm-continue-kicker">{tr(locale, "Үргэлжлүүлэх")}</p>
             <p className="bs-tm-continue-title">{continueTitle}</p>
           </span>
           <span className="bs-tm-card-chev" aria-hidden>
@@ -241,7 +246,9 @@ export function HomeAppView({ catalog, defaultChipId }: Props) {
             📺
           </span>
           <span className="min-w-0 flex-1">
-            <p className="bs-tm-continue-kicker">Бичлэг үргэлжлүүлэх</p>
+            <p className="bs-tm-continue-kicker">
+              {tr(locale, "Бичлэг үргэлжлүүлэх")}
+            </p>
             <p className="bs-tm-continue-title">{bichlegContinue.title}</p>
           </span>
           <span className="bs-tm-card-chev" aria-hidden>
@@ -278,11 +285,13 @@ export function HomeAppView({ catalog, defaultChipId }: Props) {
             className="h-28 w-28 rounded-[22px] object-cover"
           />
           <p className="text-sm font-bold text-[var(--app-text)]">
-            Энэ курс удахгүй нээгдэнэ
+            {tr(locale, "Энэ курс удахгүй нээгдэнэ")}
           </p>
           <p className="text-xs leading-5 text-[var(--app-muted)]">
-            Бид контентыг нь бэлдэж байна. Одоохондоо нээлттэй байгаа
-            хичээлүүдээс үргэлжлүүлээрэй.
+            {tr(
+              locale,
+              "Бид контентыг нь бэлдэж байна. Одоохондоо нээлттэй байгаа хичээлүүдээс үргэлжлүүлээрэй."
+            )}
           </p>
         </div>
       ) : activeCourse && lessons.length > 0 ? (
