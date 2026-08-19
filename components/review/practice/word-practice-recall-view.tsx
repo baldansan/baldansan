@@ -5,6 +5,7 @@ import "@/components/lesson/lesson-player.css";
 import { useMemo, useState } from "react";
 import { SpeakerButton } from "@/components/tts/speaker-button";
 import { extractHanziCharacters } from "@/lib/hanzi/writing-practice";
+import { recordWritingResult } from "@/lib/srs/writing-srs-sync";
 import { tr } from "@/lib/i18n/translate";
 import { useUiLocale } from "@/lib/i18n/ui-locale";
 import type { HskWordRow } from "@/lib/supabase/hsk-words";
@@ -23,6 +24,7 @@ const CharacterWriter = dynamic(
 
 type RecallTask = {
   word: string;
+  wordId: number | null;
   pinyin: string | null;
   meaning: string;
   charCount: number;
@@ -49,6 +51,7 @@ function buildRecallTasks(words: HskWordRow[]): RecallTask[] {
     seen.add(zh);
     out.push({
       word: zh,
+      wordId: word.id ?? null,
       pinyin: word.pinyin?.trim() || null,
       meaning,
       charCount: chars.length,
@@ -145,6 +148,17 @@ export function WordPracticeRecallView({
         key={`${gameKey}-${current.word}-${index}`}
         character={toHskCharacter(current)}
         mode="recall"
+        onResult={(result) =>
+          recordWritingResult(
+            {
+              key: current.word,
+              wordId: current.wordId,
+              pinyin: current.pinyin,
+              meaning: current.meaning,
+            },
+            result
+          )
+        }
         onComplete={handleWordDone}
       />
     </div>

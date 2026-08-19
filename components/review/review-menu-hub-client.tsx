@@ -32,6 +32,7 @@ import {
 import type { BichlegContinueTarget } from "@/lib/bichleg/types";
 import { fetchBichlegContinueTargetClient } from "@/lib/supabase/video-progress-client";
 import { fetchMistakes } from "@/lib/supabase/mistake-book";
+import { countDueLocalWriting } from "@/lib/srs/writing-srs";
 
 type Props = {
   testCount: number;
@@ -70,6 +71,7 @@ export function ReviewMenuHubClient({
   const [bichlegContinue, setBichlegContinue] =
     useState<BichlegContinueTarget | null>(null);
   const [mistakeCount, setMistakeCount] = useState<number | null>(null);
+  const [writingDue, setWritingDue] = useState(0);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   const loadStats = useCallback(async () => {
@@ -181,6 +183,10 @@ export function ReviewMenuHubClient({
   useEffect(() => {
     void loadStats();
   }, [loadStats]);
+
+  useEffect(() => {
+    setWritingDue(countDueLocalWriting());
+  }, []);
 
   const progressPct =
     stats.dailyGoal > 0
@@ -333,6 +339,24 @@ export function ReviewMenuHubClient({
           <span className="bs-tm-card-body">
             <span className="bs-tm-card-title">{tr(locale, "Бүх HSK үг")}</span>
             <span className="bs-tm-card-sub">{memorizeStatus}</span>
+          </span>
+          <span className="bs-tm-card-chev" aria-hidden>›</span>
+        </Link>
+
+        <Link href="/review/writing" className="bs-tm-card">
+          <span className="bs-tm-card-ic bs-tm-card-ic--blue" aria-hidden>
+            ✍️
+          </span>
+          <span className="bs-tm-card-body">
+            <span className="bs-tm-card-title">
+              {tr(locale, "Бичих давталт")}
+              {writingDue > 0 ? ` · ${writingDue}` : ""}
+            </span>
+            <span className="bs-tm-card-sub">
+              {writingDue > 0
+                ? `${writingDue} ${tr(locale, "ханз бичихээр хүлээж байна")}`
+                : tr(locale, "Бичсэн ханзууд чинь энд давтагдана")}
+            </span>
           </span>
           <span className="bs-tm-card-chev" aria-hidden>›</span>
         </Link>
