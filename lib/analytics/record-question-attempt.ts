@@ -21,7 +21,8 @@ export type QuestionAttemptStage =
   | "hsk4"
   | "hsk5"
   | "hsk6"
-  | "hsk7";
+  | "hsk7"
+  | "mistake_review";
 
 export type QuestionAttemptType = "choice" | "judge" | "order" | "fill";
 
