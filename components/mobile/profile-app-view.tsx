@@ -61,6 +61,10 @@ export function ProfileAppView() {
   const [isAdmin, setIsAdmin] = useState(false);
   const [completedLessons, setCompletedLessons] = useState(0);
   const [streak, setStreak] = useState(0);
+  const [streakFreeze, setStreakFreeze] = useState<{
+    usedThisMonth: number;
+    total: number;
+  } | null>(null);
   const [signingOut, setSigningOut] = useState(false);
   const [checkResult, setCheckResult] = useState<ClientAuthCheckResult | null>(
     null
@@ -92,6 +96,7 @@ export function ProfileAppView() {
         try {
           const retention = await getStreakUnified();
           setStreak(retention?.currentStreak ?? 0);
+          setStreakFreeze(retention?.streakFreeze ?? null);
         } catch {
           setStreak(0);
         }
@@ -128,6 +133,7 @@ export function ProfileAppView() {
             "getStreakUnifiedGuest"
           );
           setStreak(retention?.currentStreak ?? 0);
+          setStreakFreeze(retention?.streakFreeze ?? null);
         } catch {
           setStreak(0);
         }
@@ -150,6 +156,7 @@ export function ProfileAppView() {
           "getStreakUnified"
         );
         setStreak(retention?.currentStreak ?? 0);
+          setStreakFreeze(retention?.streakFreeze ?? null);
       } catch (error) {
         setStreak(0);
         const message =
@@ -239,6 +246,12 @@ export function ProfileAppView() {
           {streak > 0 ? (
             <span className="bs-tm-plvlbadge">🔥 {streak} өдөр дараалан</span>
           ) : null}
+          {streakFreeze ? (
+            <span className="bs-tm-plvlbadge">
+              🧊 Хамгаалалт: {streakFreeze.total - streakFreeze.usedThisMonth}/
+              {streakFreeze.total}
+            </span>
+          ) : null}
         </div>
 
         {!hasSupabaseConfig ? (
@@ -291,6 +304,12 @@ export function ProfileAppView() {
         </p>
         {streak > 0 ? (
           <span className="bs-tm-plvlbadge">🔥 {streak} өдөр дараалан</span>
+        ) : null}
+        {streakFreeze ? (
+          <span className="bs-tm-plvlbadge">
+            🧊 Хамгаалалт: {streakFreeze.total - streakFreeze.usedThisMonth}/
+            {streakFreeze.total}
+          </span>
         ) : null}
       </div>
 

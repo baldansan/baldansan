@@ -162,6 +162,47 @@ function writeSessionForgot(ids: Set<number>) {
   }
 }
 
+/**
+ * Хичээлээс ирсэн үгсийг зочны SRS-д «шинэ карт» байдлаар нэмнэ.
+ * Аль хэдийн байгаа entry-г ОГТ өөрчлөхгүй — зөвхөн шинийг нэмнэ.
+ */
+export function seedLocalNewWords(
+  wordIds: number[],
+  dueAtIso: string
+): { added: number; already: number } {
+  if (typeof window === "undefined" || wordIds.length === 0) {
+    return { added: 0, already: 0 };
+  }
+
+  const store = readStore();
+  const nowIso = new Date().toISOString();
+  let added = 0;
+  let already = 0;
+
+  for (const wordId of new Set(wordIds)) {
+    const key = srsKey(wordId);
+    if (store.rows[key]) {
+      already += 1;
+      continue;
+    }
+    store.rows[key] = {
+      id: `local-${wordId}`,
+      user_id: "local",
+      word_id: wordId,
+      reps: 0,
+      ease: 2.5,
+      interval_days: 0,
+      due_at: dueAtIso,
+      last_rating: null,
+      updated_at: nowIso,
+    };
+    added += 1;
+  }
+
+  if (added > 0) writeStore(store);
+  return { added, already };
+}
+
 export function rateLocalWordSrs(
   wordId: number,
   rating: WordSrsRating,

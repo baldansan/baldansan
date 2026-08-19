@@ -79,6 +79,8 @@ export type LearningRetentionSummary = {
   goalProgress: GoalProgress;
   currentStreak: number;
   longestStreak: number;
+  /** Streak хамгаалалт (🧊): энэ сард хэрэглэгдсэн/нийт. */
+  streakFreeze?: { usedThisMonth: number; total: number };
   activeDaysThisWeek: number;
   weekActivity: boolean[];
   lastActiveDate: string | null;
