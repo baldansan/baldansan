@@ -8,6 +8,8 @@ import { SHELL_MAIN_NARROW } from "@/lib/app-shell-classes";
 import { seriesCoverInitial } from "@/lib/bichleg/series-cover";
 import { resolveSeriesThumbnailUrl } from "@/lib/bichleg/series-thumbnail";
 import type { SeriesWatchProgress, VideoSeriesCard } from "@/lib/bichleg/types";
+import { useUiLocale } from "@/lib/i18n/ui-locale";
+import { tr } from "@/lib/i18n/translate";
 
 type Props = {
   seriesList: VideoSeriesCard[];
@@ -20,9 +22,10 @@ export function BichlegSeriesPickerClient({
   orphanCount,
   seriesProgress = {},
 }: Props) {
+  const locale = useUiLocale();
   return (
     <MobileAppShell activeTab="clips" mainClassName={SHELL_MAIN_NARROW}>
-      <h1 className="bs-tm-page-title">Бичлэг</h1>
+      <h1 className="bs-tm-page-title">{tr(locale, "Бичлэг")}</h1>
 
       <div className="bs-tm-bichleg-greet">
         <TemeeEmojiIcon
@@ -32,9 +35,11 @@ export function BichlegSeriesPickerClient({
           height={72}
         />
         <div>
-          <p className="bs-tm-bichleg-greet-title">Өнөөдөр юу үзэх вэ? 📺</p>
+          <p className="bs-tm-bichleg-greet-title">
+            {tr(locale, "Өнөөдөр юу үзэх вэ? 📺")}
+          </p>
           <p className="bs-tm-bichleg-greet-sub">
-            Тэмээ багштай хамт хятад контент үзээрэй
+            {tr(locale, "Тэмээ багштай хамт хятад контент үзээрэй")}
           </p>
         </div>
       </div>
@@ -42,10 +47,11 @@ export function BichlegSeriesPickerClient({
       {seriesList.length === 0 && orphanCount === 0 ? (
         <div className="bs-bichleg-pick-empty">
           <p className="text-sm font-bold text-[var(--app-text)]">
-            Бичлэг олдсонгүй
+            {tr(locale, "Бичлэг олдсонгүй")}
           </p>
           <p className="mt-2 text-xs text-[var(--app-muted)]">
-            Админ импорт эсвэл <code>npm run load:videos</code> ашиглана уу.
+            {tr(locale, "Админ импорт эсвэл")} <code>npm run load:videos</code>{" "}
+            {tr(locale, "ашиглана уу.")}
           </p>
         </div>
       ) : (
@@ -70,11 +76,11 @@ export function BichlegSeriesPickerClient({
                 hanzi={seriesCoverInitial(series.title_zh)}
                 thumbIndex={index}
                 coverUrl={resolveSeriesThumbnailUrl(series)}
-                episodeBadge={`${series.videoCount} анги`}
+                episodeBadge={`${series.videoCount} ${tr(locale, "анги")}`}
                 hskLevel={series.hsk_level}
                 showProgressBar
                 progressPct={pct}
-                progressLabel={`${watchedCount}/${totalCount} анги үзсэн`}
+                progressLabel={`${watchedCount}/${totalCount} ${tr(locale, "анги үзсэн")}`}
               />
             );
           })}
@@ -82,11 +88,11 @@ export function BichlegSeriesPickerClient({
             <BichlegVideoCard
               href="/bichleg/other"
               layout="catalog"
-              titleMn="Бусад бичлэг"
+              titleMn={tr(locale, "Бусад бичлэг")}
               titleZh="其他视频"
               hanzi="其"
               thumbIndex={seriesList.length}
-              episodeBadge={`${orphanCount} анги`}
+              episodeBadge={`${orphanCount} ${tr(locale, "анги")}`}
             />
           ) : null}
         </div>

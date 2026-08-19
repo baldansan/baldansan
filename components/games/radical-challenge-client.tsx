@@ -20,6 +20,8 @@ import { resolveGameLabels } from "@/lib/games/game-lesson-meta";
 import { saveGameResult } from "@/lib/games/game-progress";
 import { formatActiveHskLevel } from "@/lib/hsk/active-hsk-level";
 import { useActivityTracker } from "@/lib/analytics/activity-tracker";
+import { useUiLocale } from "@/lib/i18n/ui-locale";
+import { tr } from "@/lib/i18n/translate";
 
 type Props = {
   lessonId: string;
@@ -44,6 +46,7 @@ export function RadicalChallengeClient({
   onExitChallenge,
 }: Props) {
   useActivityTracker("game", "radical-challenge");
+  const locale = useUiLocale();
   const { level: hskLevel } = useActiveHskLevel();
   const labels = resolveGameLabels(false, false);
 
@@ -294,13 +297,14 @@ export function RadicalChallengeClient({
     return (
       <GameShell mainClassName=" bg-[#f1f6f3] px-5 pt-6">
         <p className="py-16 text-center text-sm text-[var(--app-muted)]">
-          {formatActiveHskLevel(hskLevel)} түвшинд сорилтын ханз олдсонгүй.
+          {formatActiveHskLevel(hskLevel)}{" "}
+          {tr(locale, "түвшинд сорилтын ханз олдсонгүй.")}
         </p>
         <Link
           href="/games/radical"
           className="mx-auto block w-fit rounded-[14px] bg-[var(--app-primary)] px-5 py-3 text-sm font-extrabold text-white"
         >
-          ← Энгийн горим
+          {tr(locale, "← Энгийн горим")}
         </Link>
       </GameShell>
     );
@@ -312,9 +316,9 @@ export function RadicalChallengeClient({
       <GameShell mainClassName=" bg-[#f1f6f3] px-5 pt-6 pb-8">
         <ChallengeHeader
           lives={lives}
-          title={labels.radicalTitle}
-          counter={won ? `${total} / ${total}` : "Дууслаа"}
-          tierLabel={tier.label}
+          title={tr(locale, labels.radicalTitle)}
+          counter={won ? `${total} / ${total}` : tr(locale, "Дууслаа")}
+          tierLabel={tr(locale, tier.label)}
           tierClass={tier.badgeClass}
         />
         <div className="mb-3 h-[9px] overflow-hidden rounded-full bg-[#e1ebe5]">
@@ -324,19 +328,20 @@ export function RadicalChallengeClient({
         <div className="rounded-[22px] bg-white p-8 text-center shadow-[0_12px_30px_rgba(25,40,30,0.10)]">
           <p className="text-[52px] leading-none">{won ? "🏆" : "💪"}</p>
           <h2 className="mt-2 text-xl font-extrabold text-[var(--app-text)]">
-            {won ? "Бүх ханз дууслаа!" : "Амь дууслаа"}
+            {tr(locale, won ? "Бүх ханз дууслаа!" : "Амь дууслаа")}
           </h2>
           <p className="mt-2 text-sm text-[var(--app-muted)]">
-            Оноо: <b className="text-[var(--app-text)]">{score}</b> · Нарийвчлал:{" "}
+            {tr(locale, "Оноо:")} <b className="text-[var(--app-text)]">{score}</b> ·{" "}
+            {tr(locale, "Нарийвчлал:")}{" "}
             <b className="text-[var(--app-text)]">{accuracy}%</b> · {correct}/
-            {total} ханз
+            {total} {tr(locale, "ханз")}
           </p>
           <button
             type="button"
             onClick={restart}
             className="mt-4 min-h-[48px] rounded-[14px] bg-[var(--app-primary)] px-6 py-3 text-[15px] font-extrabold text-white"
           >
-            Дахин эхлэх
+            {tr(locale, "Дахин эхлэх")}
           </button>
         </div>
       </GameShell>
@@ -346,16 +351,16 @@ export function RadicalChallengeClient({
   if (!current) return null;
 
   const breakdown = entryToBreakdown(current);
-  const hideNamesNote = !tier.showNames ? " · нэр нуугдсан" : "";
+  const hideNamesNote = !tier.showNames ? tr(locale, " · нэр нуугдсан") : "";
   const hanziRevealed = roundResult === "ok" || roundResult === "timeout";
 
   return (
     <GameShell mainClassName=" bg-[#f1f6f3] px-[18px] pt-5 pb-8">
       <ChallengeHeader
         lives={lives}
-        title={labels.radicalTitle}
+        title={tr(locale, labels.radicalTitle)}
         counter={`${round + 1} / ${total}`}
-        tierLabel={tier.label}
+        tierLabel={tr(locale, tier.label)}
         tierClass={tier.badgeClass}
       />
 
@@ -375,14 +380,14 @@ export function RadicalChallengeClient({
             onClick={onExitChallenge}
             className="text-xs font-bold text-[var(--app-primary-dark)] underline"
           >
-            ← Энгийн горим
+            {tr(locale, "← Энгийн горим")}
           </button>
         ) : (
         <Link
           href="/games/radical"
           className="text-xs font-bold text-[var(--app-primary-dark)] underline"
         >
-          ← Энгийн горим
+          {tr(locale, "← Энгийн горим")}
         </Link>
         )}
       </div>
@@ -397,13 +402,13 @@ export function RadicalChallengeClient({
         />
 
         <p className="mt-3 text-[13px] font-extrabold text-[#33433b]">
-          Бүрдэл хэсгүүдийг зөв дарааллаар нь сонго
+          {tr(locale, "Бүрдэл хэсгүүдийг зөв дарааллаар нь сонго")}
         </p>
 
         <div className="flex min-h-[66px] flex-wrap items-center justify-center gap-2 rounded-2xl border-2 border-dashed border-[#c6d4cc] bg-[#fbfffd] px-2.5 py-2.5">
           {selected.length === 0 ? (
             <span className="text-xs font-extrabold text-[#9fb0a7]">
-              Бүрдлүүдийг энд дараалуулна
+              {tr(locale, "Бүрдлүүдийг энд дараалуулна")}
             </span>
           ) : (
             selected.map((slot, slotIndex) => (
@@ -468,7 +473,7 @@ export function RadicalChallengeClient({
             disabled={locked}
             className="min-h-[46px] flex-1 rounded-[14px] bg-[#eaf0ed] text-sm font-extrabold text-[#3b473f] disabled:opacity-50"
           >
-            Цэвэр
+            {tr(locale, "Цэвэр")}
           </button>
           <button
             type="button"
@@ -476,16 +481,17 @@ export function RadicalChallengeClient({
             disabled={locked || selected.length === 0}
             className="min-h-[46px] flex-1 rounded-[14px] bg-[var(--app-primary)] text-sm font-extrabold text-white disabled:opacity-50"
           >
-            Шалгах
+            {tr(locale, "Шалгах")}
           </button>
         </div>
 
         {roundResult === "ok" ? (
           <div className="mt-3 rounded-2xl border border-[#b6e6c8] bg-[var(--app-primary-light)] p-3 leading-relaxed">
             <h3 className="text-[15px] font-bold">
-              ✅ Зөв! +{lastGain.total}{" "}
+              {tr(locale, "✅ Зөв!")} +{lastGain.total}{" "}
               <span className="font-semibold text-[var(--app-muted)]">
-                ({lastGain.base}+хурд {lastGain.speed}+цуваа {lastGain.streakBonus})
+                ({lastGain.base}+{tr(locale, "хурд")} {lastGain.speed}+
+                {tr(locale, "цуваа")} {lastGain.streakBonus})
               </span>
             </h3>
             <div className="mt-2 rounded-xl border border-[var(--app-border)] bg-white p-2.5 text-[13px]">
@@ -510,24 +516,28 @@ export function RadicalChallengeClient({
 
         {roundResult === "wrong" && !hintUsed ? (
           <div className="mt-3 rounded-2xl border border-[#fbcfcf] bg-[#fef2f2] p-3">
-            <h3 className="text-[15px] font-bold">❌ Буруу −1 ❤️ −5 оноо</h3>
+            <h3 className="text-[15px] font-bold">
+              {tr(locale, "❌ Буруу −1 ❤️ −5 оноо")}
+            </h3>
             <p className="mt-1 text-sm text-[var(--app-muted)]">
-              Дахин оролдоорой (цаг үргэлжилж байна).
+              {tr(locale, "Дахин оролдоорой (цаг үргэлжилж байна).")}
             </p>
           </div>
         ) : null}
 
         {roundResult === "wrong" && hintUsed ? (
           <div className="mt-3 rounded-2xl border border-[#fbcfcf] bg-[#fef2f2] p-3 text-sm">
-            💡 Эхний бүрдлийг тавилаа (−5 оноо).
+            {tr(locale, "💡 Эхний бүрдлийг тавилаа (−5 оноо).")}
           </div>
         ) : null}
 
         {roundResult === "timeout" ? (
           <div className="mt-3 rounded-2xl border border-[#fbcfcf] bg-[#fef2f2] p-3">
-            <h3 className="text-[15px] font-bold">⏰ Цаг дууслаа! −1 ❤️</h3>
+            <h3 className="text-[15px] font-bold">
+              {tr(locale, "⏰ Цаг дууслаа! −1 ❤️")}
+            </h3>
             <p className="mt-1 text-sm text-[var(--app-muted)]">
-              Зөв хариу: <b>{current.answer.join(" + ")}</b>
+              {tr(locale, "Зөв хариу:")} <b>{current.answer.join(" + ")}</b>
             </p>
           </div>
         ) : null}
@@ -538,7 +548,7 @@ export function RadicalChallengeClient({
             onClick={handleNext}
             className="mt-3 min-h-[46px] w-full rounded-[14px] bg-[var(--app-primary)] text-[15px] font-extrabold text-white"
           >
-            {round >= total - 1 ? "Дуусгах →" : "Дараагийн →"}
+            {tr(locale, round >= total - 1 ? "Дуусгах →" : "Дараагийн →")}
           </button>
         ) : null}
       </div>
@@ -593,12 +603,13 @@ function ChallengeStats({
   streak: number;
   accuracy: number;
 }) {
+  const locale = useUiLocale();
   return (
     <div className="mb-3.5 grid grid-cols-3 gap-2">
       {[
-        { value: score, label: "Оноо" },
-        { value: streak, label: "Цуваа 🔥" },
-        { value: `${accuracy}%`, label: "Нарийвчлал" },
+        { value: score, label: tr(locale, "Оноо") },
+        { value: streak, label: tr(locale, "Цуваа 🔥") },
+        { value: `${accuracy}%`, label: tr(locale, "Нарийвчлал") },
       ].map((stat) => (
         <div
           key={stat.label}

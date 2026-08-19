@@ -40,6 +40,8 @@ import {
   type ActiveHskLevel,
 } from "@/lib/hsk/active-hsk-level";
 import { useActivityTracker } from "@/lib/analytics/activity-tracker";
+import { useUiLocale } from "@/lib/i18n/ui-locale";
+import { tr } from "@/lib/i18n/translate";
 
 type Phase = "source" | "setup" | "intro" | "loading" | "play" | "result";
 
@@ -71,7 +73,8 @@ export function HskVocabQuizClient({
   presetTitle = null,
 }: Props) {
   useActivityTracker("game", "hsk-vocab-quiz");
-  const screenTitle = presetTitle ?? "Үгсийн дасгал";
+  const locale = useUiLocale();
+  const screenTitle = tr(locale, presetTitle ?? "Үгсийн дасгал");
   const { level: activeLevel, hydrated: levelHydrated } = useActiveHskLevel();
   const [phase, setPhase] = useState<Phase>("source");
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -285,7 +288,7 @@ export function HskVocabQuizClient({
     return wrap(
       <div className="bs-mock-setup">
         <h1 className="bs-mock-title">{screenTitle}</h1>
-        <p className="bs-mock-sub">Эхлээд ямар үгсээр тоглохоо сонгоно уу</p>
+        <p className="bs-mock-sub">{tr(locale, "Эхлээд ямар үгсээр тоглохоо сонгоно уу")}</p>
         <GameWordSourcePicker
           value={wordSource}
           onChange={setWordSource}
@@ -297,11 +300,11 @@ export function HskVocabQuizClient({
           disabled={sourceLoading}
           onClick={() => void confirmSource()}
         >
-          {sourceLoading ? "Бэлдэж байна…" : "Үргэлжлүүлэх →"}
+          {tr(locale, sourceLoading ? "Бэлдэж байна…" : "Үргэлжлүүлэх →")}
         </button>
         {!embedded ? (
           <Link href="/games" className="bs-meaning-link mt-4 block text-center">
-            ← Тоглоом руу
+            {tr(locale, "← Тоглоом руу")}
           </Link>
         ) : null}
       </div>
@@ -313,22 +316,29 @@ export function HskVocabQuizClient({
       <div className="bs-mock-setup">
         <h1 className="bs-mock-title">{screenTitle}</h1>
         <p className="bs-mock-sub">
-          {selectedKinds.length === 1
-            ? "Сонгосон үгсээр нэг төрлийн асуулт"
-            : "HSK түвшний vocabulary quiz — утга, ханз, пиньинь, сонсгол, жишээ"}
+          {tr(
+            locale,
+            selectedKinds.length === 1
+              ? "Сонгосон үгсээр нэг төрлийн асуулт"
+              : "HSK түвшний vocabulary quiz — утга, ханз, пиньинь, сонсгол, жишээ"
+          )}
         </p>
         {poolNote ? (
-          <p className="mt-2 text-xs font-semibold text-amber-700">{poolNote}</p>
+          <p className="mt-2 text-xs font-semibold text-amber-700">
+            {tr(locale, poolNote)}
+          </p>
         ) : null}
-        {error ? <p className="mt-3 text-sm text-red-600">{error}</p> : null}
+        {error ? (
+          <p className="mt-3 text-sm text-red-600">{tr(locale, error)}</p>
+        ) : null}
         <button
           type="button"
           className="bs-mem-back"
           onClick={() => setPhase("source")}
         >
-          ← Үгийн эх
+          {tr(locale, "← Үгийн эх")}
         </button>
-        <h2 className="bs-mem-step-title mt-4">Түвшин сонгох</h2>
+        <h2 className="bs-mem-step-title mt-4">{tr(locale, "Түвшин сонгох")}</h2>
         <div className="bs-mem-chip-grid mt-3">
           {HSK_LEVEL_OPTIONS.map((opt) => {
             const active = testLevel === opt.value;
@@ -344,7 +354,7 @@ export function HskVocabQuizClient({
             );
           })}
         </div>
-        <h2 className="bs-mem-step-title mt-4">Асуултын төрөл</h2>
+        <h2 className="bs-mem-step-title mt-4">{tr(locale, "Асуултын төрөл")}</h2>
         <div className="bs-mem-chip-grid mt-3">
           {QUIZ_KIND_CHIPS.map((chip) => {
             const active = selectedKinds.includes(chip.kind);
@@ -355,23 +365,25 @@ export function HskVocabQuizClient({
                 className={`bs-mem-chip ${active ? "bs-mock-chip--active" : ""}`}
                 onClick={() => toggleKind(chip.kind)}
               >
-                {chip.label}
+                {tr(locale, chip.label)}
               </button>
             );
           })}
         </div>
         <div className="bs-mock-info-card mt-4">
           <p className="bs-mock-info-row">
-            <span>Асуулт</span>
+            <span>{tr(locale, "Асуулт")}</span>
             <strong>{config.questions}</strong>
           </p>
           <p className="bs-mock-info-row">
-            <span>Тэнцэх оноо</span>
+            <span>{tr(locale, "Тэнцэх оноо")}</span>
             <strong>{config.passPct}%</strong>
           </p>
           <p className="bs-mock-info-row">
-            <span>Асуулт бүр</span>
-            <strong>{config.secondsPerQuestion} сек</strong>
+            <span>{tr(locale, "Асуулт бүр")}</span>
+            <strong>
+              {config.secondsPerQuestion} {tr(locale, "сек")}
+            </strong>
           </p>
         </div>
         <button
@@ -379,11 +391,11 @@ export function HskVocabQuizClient({
           className="bs-mock-primary-btn mt-5"
           onClick={() => setPhase("intro")}
         >
-          Үргэлжлүүлэх →
+          {tr(locale, "Үргэлжлүүлэх →")}
         </button>
         {!embedded ? (
           <Link href="/games" className="bs-meaning-link mt-4 block text-center">
-            ← Тоглоом руу
+            {tr(locale, "← Тоглоом руу")}
           </Link>
         ) : null}
       </div>
@@ -398,27 +410,33 @@ export function HskVocabQuizClient({
           className="bs-mem-back"
           onClick={() => setPhase("setup")}
         >
-          ← Түвшин
+          {tr(locale, "← Түвшин")}
         </button>
         <h1 className="bs-mock-title">{formatVocabQuizLevelLabel(catalogLevel)}</h1>
-        <p className="bs-mock-sub">Дасгал эхлэхийн өмнө</p>
+        <p className="bs-mock-sub">{tr(locale, "Дасгал эхлэхийн өмнө")}</p>
         <ul className="bs-mock-rules mt-4">
           <li>
-            {config.questions} асуулт
+            {config.questions} {tr(locale, "асуулт")}
             {selectedKinds.length === 1
-              ? ` — ${presetTitle ?? selectedKinds[0]}`
-              : " — утга, ханз, пиньинь, сонсгол, жишээ, радикал"}
+              ? ` — ${presetTitle ? tr(locale, presetTitle) : selectedKinds[0]}`
+              : tr(locale, " — утга, ханз, пиньинь, сонсгол, жишээ, радикал")}
           </li>
-          <li>Асуулт бүрт {config.secondsPerQuestion} секунд</li>
-          <li>Буруу хариулсан ч үргэлжлэнэ (амь алдахгүй)</li>
-          <li>{config.passPct}%+ зөв хариулбал <strong>тэнцэнэ</strong></li>
+          <li>
+            {tr(locale, "Асуулт бүрт")} {config.secondsPerQuestion}{" "}
+            {tr(locale, "секунд")}
+          </li>
+          <li>{tr(locale, "Буруу хариулсан ч үргэлжлэнэ (амь алдахгүй)")}</li>
+          <li>
+            {config.passPct}%+ {tr(locale, "зөв хариулбал")}{" "}
+            <strong>{tr(locale, "тэнцэнэ")}</strong>
+          </li>
         </ul>
         <button
           type="button"
           className="bs-mock-primary-btn mt-6"
           onClick={() => void startTest()}
         >
-          Шалгалт эхлүүлэх
+          {tr(locale, "Шалгалт эхлүүлэх")}
         </button>
       </div>
     );
@@ -427,7 +445,7 @@ export function HskVocabQuizClient({
   if (phase === "loading") {
     return wrap(
       <p className="py-16 text-center text-sm text-[var(--app-muted)]">
-        Асуулт бэлдэж байна…
+        {tr(locale, "Асуулт бэлдэж байна…")}
       </p>
     );
   }
@@ -437,20 +455,24 @@ export function HskVocabQuizClient({
     return wrap(
       <div className="bs-mock-result">
         <p className="bs-mock-result-badge">
-          {result.passed ? "✅ Тэнцсэн" : "❌ Тэнцээгүй"}
+          {tr(locale, result.passed ? "✅ Тэнцсэн" : "❌ Тэнцээгүй")}
         </p>
         <h2 className="bs-mock-title mt-2">
           {formatVocabQuizLevelLabel(catalogLevel)} · {screenTitle}
         </h2>
         <p className="bs-mock-score-pct">{result.accuracy}%</p>
         <p className="bs-mock-sub">
-          Зөв: {result.correct} / {result.total} · Тэнцэх: {result.passPct}%
+          {tr(locale, "Зөв:")} {result.correct} / {result.total} ·{" "}
+          {tr(locale, "Тэнцэх:")} {result.passPct}%
         </p>
         <div className="bs-mock-info-card mt-4">
           <p className="text-sm leading-relaxed text-[var(--bs-ink-2)]">
-            {result.passed
-              ? "Сайн байна! Энэ түвшний үгсийн дасгалд бэлэн байна."
-              : "Дахин давтаад дасгалаа давтан хийнэ үү."}
+            {tr(
+              locale,
+              result.passed
+                ? "Сайн байна! Энэ түвшний үгсийн дасгалд бэлэн байна."
+                : "Дахин давтаад дасгалаа давтан хийнэ үү."
+            )}
           </p>
         </div>
         <button
@@ -461,11 +483,11 @@ export function HskVocabQuizClient({
             setDeck([]);
           }}
         >
-          Дахин оролдох
+          {tr(locale, "Дахин оролдох")}
         </button>
         {!embedded ? (
           <Link href="/games" className="bs-meaning-link mt-3 block text-center">
-            ← Тоглоом руу
+            {tr(locale, "← Тоглоом руу")}
           </Link>
         ) : null}
       </div>
@@ -504,7 +526,7 @@ export function HskVocabQuizClient({
         />
       </div>
       <p className="mb-3 text-center text-[11px] font-bold text-[var(--bs-muted)]">
-        ⏱ {timeLeft} сек · Зөв {correctCount}
+        ⏱ {timeLeft} {tr(locale, "сек")} · {tr(locale, "Зөв")} {correctCount}
       </p>
 
       <div className="bs-meaning-card">
@@ -517,12 +539,12 @@ export function HskVocabQuizClient({
               type="button"
               onClick={() => void playChineseWordAudio(current.correct)}
               className="flex h-20 w-20 items-center justify-center rounded-full bg-[var(--bs-green-50)] text-4xl shadow-sm ring-2 ring-[var(--bs-green)] active:scale-95"
-              aria-label="Дахин сонсох"
+              aria-label={tr(locale, "Дахин сонсох")}
             >
               🔊
             </button>
             <p className="text-[11px] font-bold text-[var(--bs-muted)]">
-              Дарж дахин сонсоно
+              {tr(locale, "Дарж дахин сонсоно")}
             </p>
             {locked ? (
               <div className="text-center">
@@ -597,12 +619,12 @@ export function HskVocabQuizClient({
         type="button"
         className="bs-mem-back mt-4"
         onClick={() => {
-          if (confirm("Шалгалтаас гарах уу? Явц хадгалагдахгүй.")) {
+          if (confirm(tr(locale, "Шалгалтаас гарах уу? Явц хадгалагдахгүй."))) {
             finishTest(correctRef.current);
           }
         }}
       >
-        Шалгалт дуусгах
+        {tr(locale, "Шалгалт дуусгах")}
       </button>
     </div>
   );

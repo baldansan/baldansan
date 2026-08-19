@@ -18,6 +18,8 @@ import {
 } from "@/lib/games/hsk-quiz-builders";
 import { formatActiveHskLevel } from "@/lib/hsk/active-hsk-level";
 import { useActivityTracker } from "@/lib/analytics/activity-tracker";
+import { useUiLocale } from "@/lib/i18n/ui-locale";
+import { tr } from "@/lib/i18n/translate";
 
 type Phase = "loading" | "play" | "done" | "locked";
 
@@ -49,6 +51,7 @@ export function HskQuizGameClient({ config }: { config: HskQuizGameConfig }) {
     extraQuery = "",
   } = config;
   useActivityTracker("game", gameType);
+  const locale = useUiLocale();
 
   const { level: activeLevel, hydrated } = useActiveHskLevel();
   const [phase, setPhase] = useState<Phase>("loading");
@@ -233,7 +236,7 @@ export function HskQuizGameClient({ config }: { config: HskQuizGameConfig }) {
   if (!hydrated || phase === "loading") {
     return (
       <GameShell mainClassName=" px-4 py-12 text-center text-sm text-[var(--app-muted)]">
-        Ачааллаж байна…
+        {tr(locale, "Ачааллаж байна…")}
       </GameShell>
     );
   }
@@ -243,17 +246,17 @@ export function HskQuizGameClient({ config }: { config: HskQuizGameConfig }) {
       <GameShell mainClassName=" px-4 pb-8">
         <div className="bs-meaning-done">
           <h2 className="text-xl font-extrabold text-[var(--bs-ink)]">
-            ✅ Өнөөдрийн сорил дууссан
+            {tr(locale, "✅ Өнөөдрийн сорил дууссан")}
           </h2>
           <p className="bs-meaning-final-score mt-3">⭐ {dailyDone.score}</p>
           <p className="mt-1 text-sm text-[var(--app-muted)]">
-            Зөв: {dailyDone.correct} / {dailyDone.total}
+            {tr(locale, "Зөв:")} {dailyDone.correct} / {dailyDone.total}
           </p>
           <p className="mt-2 text-xs text-[var(--app-muted)]">
-            Маргааш шинэ 10 асуулт нээгдэнэ.
+            {tr(locale, "Маргааш шинэ 10 асуулт нээгдэнэ.")}
           </p>
           <Link href="/games" className="bs-meaning-link mt-5">
-            ← Тоглоом руу
+            {tr(locale, "← Тоглоом руу")}
           </Link>
         </div>
       </GameShell>
@@ -266,15 +269,18 @@ export function HskQuizGameClient({ config }: { config: HskQuizGameConfig }) {
       <GameShell mainClassName=" px-4 pb-8">
         <div className="bs-meaning-done">
           <h2 className="text-xl font-extrabold text-[var(--bs-ink)]">
-            {error ? "Тоглоом эхлэхгүй" : won ? "🏆 Төгс!" : "Тоглоом дууслаа"}
+            {tr(
+              locale,
+              error ? "Тоглоом эхлэхгүй" : won ? "🏆 Төгс!" : "Тоглоом дууслаа"
+            )}
           </h2>
           {error ? (
-            <p className="mt-2 text-sm text-red-600">{error}</p>
+            <p className="mt-2 text-sm text-red-600">{tr(locale, error)}</p>
           ) : (
             <>
               <p className="bs-meaning-final-score">⭐ {score}</p>
               <p className="mt-1 text-sm text-[var(--app-muted)]">
-                Зөв: {correctCount} / {total}
+                {tr(locale, "Зөв:")} {correctCount} / {total}
               </p>
             </>
           )}
@@ -284,11 +290,11 @@ export function HskQuizGameClient({ config }: { config: HskQuizGameConfig }) {
               onClick={() => void loadDeck()}
               className="bs-meaning-primary-btn mt-5"
             >
-              Дахин тоглох
+              {tr(locale, "Дахин тоглох")}
             </button>
           ) : null}
           <Link href="/games" className="bs-meaning-link mt-3">
-            ← Тоглоом руу
+            {tr(locale, "← Тоглоом руу")}
           </Link>
         </div>
       </GameShell>
@@ -302,7 +308,7 @@ export function HskQuizGameClient({ config }: { config: HskQuizGameConfig }) {
       <div className="mb-3 flex items-center justify-between gap-2">
         <div>
           <h1 className="text-base font-extrabold text-[var(--bs-ink)]">
-            {title}
+            {tr(locale, title)}
           </h1>
           <p className="text-[11px] font-bold text-[var(--bs-muted)]">
             {formatActiveHskLevel(activeLevel)}
@@ -312,7 +318,7 @@ export function HskQuizGameClient({ config }: { config: HskQuizGameConfig }) {
       </div>
 
       <div className="mb-3 flex items-center justify-between text-sm font-extrabold">
-        <span className="text-red-500" aria-label={`${lives} амь`}>
+        <span className="text-red-500" aria-label={`${lives} ${tr(locale, "амь")}`}>
           {"❤️".repeat(lives)}
           <span className="opacity-30">
             {"🖤".repeat(maxLives - lives)}
@@ -331,7 +337,7 @@ export function HskQuizGameClient({ config }: { config: HskQuizGameConfig }) {
         />
       </div>
       <p className="mb-3 text-center text-[11px] font-bold text-[var(--bs-muted)]">
-        ⏱ {timeLeft} сек
+        ⏱ {timeLeft} {tr(locale, "сек")}
       </p>
 
       <div className="bs-meaning-card">
@@ -389,7 +395,7 @@ export function HskQuizGameClient({ config }: { config: HskQuizGameConfig }) {
       </div>
 
       <Link href="/games" className="bs-meaning-link mt-4">
-        ← Буцах
+        {tr(locale, "← Буцах")}
       </Link>
     </GameShell>
   );

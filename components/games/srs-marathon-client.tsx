@@ -10,9 +10,12 @@ import {
 } from "@/lib/games/game-word-pool";
 import { getAuthenticatedUserId, hasSupabaseConfig } from "@/lib/supabase/auth";
 import { useActivityTracker } from "@/lib/analytics/activity-tracker";
+import { useUiLocale } from "@/lib/i18n/ui-locale";
+import { tr } from "@/lib/i18n/translate";
 
 export function SrsMarathonClient() {
   useActivityTracker("game", "srs-marathon");
+  const locale = useUiLocale();
   const { level: activeLevel, hydrated } = useActiveHskLevel();
   const [wordIds, setWordIds] = useState<string | null>(null);
   const [poolNote, setPoolNote] = useState<string | null>(null);
@@ -41,7 +44,7 @@ export function SrsMarathonClient() {
   if (!hydrated || loading) {
     return (
       <GameShell mainClassName=" px-4 py-12 text-center text-sm text-[var(--app-muted)]">
-        SRS үгс ачааллаж байна…
+        {tr(locale, "SRS үгс ачааллаж байна…")}
       </GameShell>
     );
   }
@@ -49,7 +52,7 @@ export function SrsMarathonClient() {
   if (!wordIds) {
     return (
       <GameShell mainClassName=" px-4 py-12 text-center text-sm text-red-600">
-        Давталтын үг олдсонгүй. Эхлээд Давтах хэсэгт орно уу.
+        {tr(locale, "Давталтын үг олдсонгүй. Эхлээд Давтах хэсэгт орно уу.")}
       </GameShell>
     );
   }
@@ -58,7 +61,7 @@ export function SrsMarathonClient() {
     <>
       {poolNote ? (
         <p className="mx-auto mb-2 max-w-[430px] px-4 text-center text-xs font-semibold text-amber-700">
-          {poolNote}
+          {tr(locale, poolNote)}
         </p>
       ) : null}
       <HskQuizGameClient

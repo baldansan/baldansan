@@ -10,6 +10,8 @@ import {
   resolveGameLabels,
 } from "@/lib/games/game-lesson-meta";
 import { getGameStats } from "@/lib/games/game-progress";
+import { useUiLocale } from "@/lib/i18n/ui-locale";
+import { tr } from "@/lib/i18n/translate";
 import { resolveContinueLearning } from "@/lib/learner-progress";
 import { getSelectedLanguage } from "@/lib/learner-onboarding";
 import type { SelectedLanguage } from "@/lib/language-track";
@@ -119,9 +121,10 @@ function gamesForLanguage(
 }
 
 function GameTile({ game, href }: { game: GameCard; href: string }) {
+  const locale = useUiLocale();
   return (
     <Link href={href} className="bs-tm-game-tile">
-      <span className="bs-tm-game-tile-badge">{game.badge}</span>
+      <span className="bs-tm-game-tile-badge">{tr(locale, game.badge)}</span>
       <span
         className="bs-tm-game-tile-ic"
         style={{ background: game.gradient }}
@@ -129,13 +132,14 @@ function GameTile({ game, href }: { game: GameCard; href: string }) {
       >
         {game.icon}
       </span>
-      <p className="bs-tm-game-tile-title">{game.title}</p>
-      <p className="bs-tm-game-tile-sub">{game.desc}</p>
+      <p className="bs-tm-game-tile-title">{tr(locale, game.title)}</p>
+      <p className="bs-tm-game-tile-sub">{tr(locale, game.desc)}</p>
     </Link>
   );
 }
 
 export function GamesAppView({ lessonIds, lessonTitles }: Props) {
+  const locale = useUiLocale();
   const [lang, setLang] = useState<SelectedLanguage | null>(null);
   const [played, setPlayed] = useState(0);
   const [bestScore, setBestScore] = useState(0);
@@ -188,7 +192,7 @@ export function GamesAppView({ lessonIds, lessonTitles }: Props) {
 
   return (
     <MobileAppShell activeTab="games" mainClassName={SHELL_MAIN_NARROW}>
-      <h1 className="bs-tm-page-title">Тоглоом 🎮</h1>
+      <h1 className="bs-tm-page-title">{tr(locale, "Тоглоом")} 🎮</h1>
 
       <div className="bs-tm-stat-row">
         <div className="bs-tm-stat">
@@ -196,27 +200,27 @@ export function GamesAppView({ lessonIds, lessonTitles }: Props) {
             🎮
           </div>
           <div className="bs-tm-stat-n">{played}</div>
-          <div className="bs-tm-stat-l">Тоглосон</div>
+          <div className="bs-tm-stat-l">{tr(locale, "Тоглосон")}</div>
         </div>
         <div className="bs-tm-stat">
           <div className="bs-tm-stat-ic" aria-hidden>
             🏆
           </div>
           <div className="bs-tm-stat-n">{bestScore}</div>
-          <div className="bs-tm-stat-l">Дээд оноо</div>
+          <div className="bs-tm-stat-l">{tr(locale, "Дээд оноо")}</div>
         </div>
         <div className="bs-tm-stat">
           <div className="bs-tm-stat-ic" aria-hidden>
             🎯
           </div>
           <div className="bs-tm-stat-n">{avgAccuracy}%</div>
-          <div className="bs-tm-stat-l">Нарийвчлал</div>
+          <div className="bs-tm-stat-l">{tr(locale, "Нарийвчлал")}</div>
         </div>
       </div>
 
       {lang === "zh" ? (
         <>
-          <p className="bs-tm-sec">Тоглоомууд</p>
+          <p className="bs-tm-sec">{tr(locale, "Тоглоомууд")}</p>
           <div className="bs-tm-game-grid">
             {CHINESE_HSK_GAMES.map((game) => (
               <GameTile
@@ -237,15 +241,15 @@ export function GamesAppView({ lessonIds, lessonTitles }: Props) {
           height={64}
         />
         <span className="flex-1 min-w-0">
-          <p className="bs-tm-game-feat-kicker">Тоглоомын чиглэл</p>
+          <p className="bs-tm-game-feat-kicker">{tr(locale, "Тоглоомын чиглэл")}</p>
           <p className="bs-tm-game-feat-title">
-            {lessonTitle ?? "Одоогийн хичээлийн үгээр"}
+            {lessonTitle ?? tr(locale, "Одоогийн хичээлийн үгээр")}
           </p>
-          <p className="bs-tm-game-feat-sub">SRS марафон эхлүүлэх →</p>
+          <p className="bs-tm-game-feat-sub">{tr(locale, "SRS марафон эхлүүлэх →")}</p>
         </span>
       </Link>
 
-      <p className="bs-tm-sec">Хичээлийн дасгалууд</p>
+      <p className="bs-tm-sec">{tr(locale, "Хичээлийн дасгалууд")}</p>
       <div className="bs-tm-game-grid">
         {games.map((game) => {
           const href = game.global
@@ -263,7 +267,7 @@ export function GamesAppView({ lessonIds, lessonTitles }: Props) {
               href={`/games/${link.slug}`}
               className="rounded-full bg-white px-4 py-2 text-xs font-semibold text-slate-600 ring-1 ring-slate-200"
             >
-              {link.label}
+              {tr(locale, link.label)}
             </Link>
           ))}
         </div>

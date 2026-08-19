@@ -13,6 +13,8 @@ import {
 } from "@/lib/games/game-word-pool";
 import { useActiveHskLevel } from "@/components/providers/active-hsk-level-provider";
 import { getAuthenticatedUserId, hasSupabaseConfig } from "@/lib/supabase/auth";
+import { useUiLocale } from "@/lib/i18n/ui-locale";
+import { tr } from "@/lib/i18n/translate";
 
 type Props = {
   lessonId: string;
@@ -29,6 +31,7 @@ export function RadicalGamePageClient({
   initialChallenge = false,
   initialWordIds = [],
 }: Props) {
+  const locale = useUiLocale();
   const { level: activeLevel, hydrated } = useActiveHskLevel();
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [wordSource, setWordSource] = useState<GameWordSource>("catalog");
@@ -113,8 +116,10 @@ export function RadicalGamePageClient({
     return (
       <GameShell mainClassName=" px-4 pb-8">
         <div className="bs-mock-setup">
-          <h1 className="bs-mock-title">Ханз задлах</h1>
-          <p className="bs-mock-sub">Ямар үгсийн ханзыг задлах вэ?</p>
+          <h1 className="bs-mock-title">{tr(locale, "Ханз задлах")}</h1>
+          <p className="bs-mock-sub">
+            {tr(locale, "Ямар үгсийн ханзыг задлах вэ?")}
+          </p>
           <GameWordSourcePicker
             value={wordSource}
             onChange={setWordSource}
@@ -127,17 +132,17 @@ export function RadicalGamePageClient({
             disabled={sourceLoading}
             onClick={() => void confirmSource()}
           >
-            {sourceLoading ? "Бэлдэж байна…" : "Эхлэх →"}
+            {tr(locale, sourceLoading ? "Бэлдэж байна…" : "Эхлэх →")}
           </button>
           <button
             type="button"
             className="bs-meaning-link mt-3 block w-full text-center"
             onClick={skipToDefault}
           >
-            Жишээ ханзаар тоглох
+            {tr(locale, "Жишээ ханзаар тоглох")}
           </button>
           <Link href="/games" className="bs-meaning-link mt-3 block text-center">
-            ← Тоглоом руу
+            {tr(locale, "← Тоглоом руу")}
           </Link>
         </div>
       </GameShell>
@@ -147,7 +152,7 @@ export function RadicalGamePageClient({
   if (!entries) {
     return (
       <GameShell mainClassName=" px-4 py-12 text-center text-sm text-[var(--app-muted)]">
-        Ачааллаж байна…
+        {tr(locale, "Ачааллаж байна…")}
       </GameShell>
     );
   }

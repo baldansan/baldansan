@@ -15,6 +15,8 @@ import { SpeakerButton } from "@/components/tts/speaker-button";
 import { resolveTtsLang } from "@/lib/tts/infer-lang";
 import type { GameVocabItem } from "@/lib/games/game-types";
 import { useActivityTracker } from "@/lib/analytics/activity-tracker";
+import { useUiLocale } from "@/lib/i18n/ui-locale";
+import { tr } from "@/lib/i18n/translate";
 
 function sentenceForTts(sentence: string, answer: string): string {
   return sentence.replace(/＿＿＿|__/g, answer);
@@ -38,6 +40,7 @@ export function MissingWordGameClient({
   labels: labelsProp,
 }: Props) {
   useActivityTracker("game", "missing-word");
+  const locale = useUiLocale();
   const labels = labelsProp ?? resolveGameLabels(isKorean, isPrelesson);
   const gameContext = { isKorean, isPrelesson };
   const questions = useMemo(
@@ -147,7 +150,7 @@ export function MissingWordGameClient({
                 lang={ttsLang}
                 courseId={courseId}
                 size="sm"
-                label="Өгүүлбэр уншуулах"
+                label={tr(locale, "Өгүүлбэр уншуулах")}
               />
             </div>
             <p className="mt-2 text-center text-xs text-[var(--app-muted)]">
@@ -178,7 +181,7 @@ export function MissingWordGameClient({
               onClick={handleNext}
               className="mt-4 min-h-[48px] w-full app-btn-primary py-3"
             >
-              Дараах
+              {tr(locale, "Дараах")}
             </button>
           ) : null}
         </>

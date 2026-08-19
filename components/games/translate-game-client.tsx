@@ -15,6 +15,8 @@ import { SpeakerButton } from "@/components/tts/speaker-button";
 import { resolveTtsLang } from "@/lib/tts/infer-lang";
 import type { GameVocabItem } from "@/lib/games/game-types";
 import { useActivityTracker } from "@/lib/analytics/activity-tracker";
+import { useUiLocale } from "@/lib/i18n/ui-locale";
+import { tr } from "@/lib/i18n/translate";
 
 type Props = {
   lessonId: string;
@@ -34,6 +36,7 @@ export function TranslateGameClient({
   labels: labelsProp,
 }: Props) {
   useActivityTracker("game", "translate");
+  const locale = useUiLocale();
   const labels = labelsProp ?? resolveGameLabels(isKorean, isPrelesson);
   const gameContext = { isKorean, isPrelesson, vocabulary };
   const questions = useMemo(
@@ -134,7 +137,7 @@ export function TranslateGameClient({
         score={score}
       />
       <span className="mb-3 inline-flex rounded-full bg-blue-100 px-3 py-1.5 text-xs font-bold text-blue-800 ring-1 ring-blue-200">
-        {labels.translateBadge}
+        {tr(locale, labels.translateBadge)}
       </span>
       <GameProgressPill current={index + 1} total={total} />
       {current ? (
@@ -155,7 +158,7 @@ export function TranslateGameClient({
               <p className="mt-2 text-lg text-emerald-700">{current.pinyin}</p>
             ) : null}
             <p className="mt-4 text-sm text-[var(--app-muted)]">
-              Зөв хариултыг сонгоно уу
+              {tr(locale, "Зөв хариултыг сонгоно уу")}
             </p>
           </GameCard>
           <div className="flex flex-col gap-2">
@@ -182,7 +185,7 @@ export function TranslateGameClient({
               onClick={handleNext}
               className="mt-4 min-h-[48px] w-full app-btn-primary py-3"
             >
-              Дараах
+              {tr(locale, "Дараах")}
             </button>
           ) : null}
         </>

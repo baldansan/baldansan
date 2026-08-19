@@ -17,6 +17,8 @@ import {
 import { formatActiveHskLevel } from "@/lib/hsk/active-hsk-level";
 import { getAuthenticatedUserId, hasSupabaseConfig } from "@/lib/supabase/auth";
 import { useActivityTracker } from "@/lib/analytics/activity-tracker";
+import { useUiLocale } from "@/lib/i18n/ui-locale";
+import { tr } from "@/lib/i18n/translate";
 
 const ROUND_SECONDS = 60;
 
@@ -24,6 +26,7 @@ type Phase = "source" | "loading" | "play" | "done";
 
 export function SpeedChallengeClient() {
   useActivityTracker("game", "speed-challenge");
+  const locale = useUiLocale();
   const { level: activeLevel, hydrated } = useActiveHskLevel();
   const [phase, setPhase] = useState<Phase>("source");
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -164,7 +167,7 @@ export function SpeedChallengeClient() {
   if (!hydrated) {
     return (
       <GameShell mainClassName=" px-4 py-12 text-center text-sm text-[var(--app-muted)]">
-        Ачааллаж байна…
+        {tr(locale, "Ачааллаж байна…")}
       </GameShell>
     );
   }
@@ -173,8 +176,10 @@ export function SpeedChallengeClient() {
     return (
       <GameShell mainClassName=" px-4 pb-8">
         <div className="bs-mock-setup">
-          <h1 className="bs-mock-title">Хурдны тэмцээн</h1>
-          <p className="bs-mock-sub">60 секундэд хэдэн зөв хариулах вэ?</p>
+          <h1 className="bs-mock-title">{tr(locale, "Хурдны тэмцээн")}</h1>
+          <p className="bs-mock-sub">
+            {tr(locale, "60 секундэд хэдэн зөв хариулах вэ?")}
+          </p>
           <GameWordSourcePicker
             value={wordSource}
             onChange={setWordSource}
@@ -186,10 +191,10 @@ export function SpeedChallengeClient() {
             disabled={sourceLoading}
             onClick={() => void confirmSource()}
           >
-            {sourceLoading ? "Бэлдэж байна…" : "Эхлэх →"}
+            {tr(locale, sourceLoading ? "Бэлдэж байна…" : "Эхлэх →")}
           </button>
           <Link href="/games" className="bs-meaning-link mt-4 block text-center">
-            ← Тоглоом руу
+            {tr(locale, "← Тоглоом руу")}
           </Link>
         </div>
       </GameShell>
@@ -199,7 +204,7 @@ export function SpeedChallengeClient() {
   if (phase === "loading") {
     return (
       <GameShell mainClassName=" px-4 py-12 text-center text-sm text-[var(--app-muted)]">
-        Асуулт бэлдэж байна…
+        {tr(locale, "Асуулт бэлдэж байна…")}
       </GameShell>
     );
   }
@@ -209,15 +214,16 @@ export function SpeedChallengeClient() {
       <GameShell mainClassName=" px-4 pb-8">
         <div className="bs-meaning-done">
           <h2 className="text-xl font-extrabold text-[var(--bs-ink)]">
-            {error ? "Тоглоом эхлэхгүй" : "⏱ Цаг дууслаа!"}
+            {tr(locale, error ? "Тоглоом эхлэхгүй" : "⏱ Цаг дууслаа!")}
           </h2>
           {error ? (
-            <p className="mt-2 text-sm text-red-600">{error}</p>
+            <p className="mt-2 text-sm text-red-600">{tr(locale, error)}</p>
           ) : (
             <>
               <p className="bs-meaning-final-score">⭐ {score}</p>
               <p className="mt-1 text-sm text-[var(--app-muted)]">
-                Зөв: {correctCount} · Цуваа {streak}
+                {tr(locale, "Зөв:")} {correctCount} · {tr(locale, "Цуваа")}{" "}
+                {streak}
               </p>
             </>
           )}
@@ -226,10 +232,10 @@ export function SpeedChallengeClient() {
             onClick={() => setPhase("source")}
             className="bs-meaning-primary-btn mt-5"
           >
-            Дахин тоглох
+            {tr(locale, "Дахин тоглох")}
           </button>
           <Link href="/games" className="bs-meaning-link mt-3">
-            ← Тоглоом руу
+            {tr(locale, "← Тоглоом руу")}
           </Link>
         </div>
       </GameShell>
@@ -245,10 +251,10 @@ export function SpeedChallengeClient() {
       <div className="mb-3 flex items-center justify-between gap-2">
         <div>
           <h1 className="text-base font-extrabold text-[var(--bs-ink)]">
-            Хурдны тэмцээн
+            {tr(locale, "Хурдны тэмцээн")}
           </h1>
           <p className="text-[11px] font-bold text-[var(--bs-muted)]">
-            {formatActiveHskLevel(activeLevel)} · 60 сек
+            {formatActiveHskLevel(activeLevel)} · 60 {tr(locale, "сек")}
           </p>
         </div>
         <HskLevelSelector className="shrink-0" />
@@ -257,7 +263,10 @@ export function SpeedChallengeClient() {
       <div className="mb-3 flex items-center justify-between text-sm font-extrabold">
         <span className="text-[var(--bs-green-700)]">⭐ {score}</span>
         <span className="text-amber-600">🔥 {streak}</span>
-        <span className="text-[var(--bs-muted)]">⏱ {timeLeft}с</span>
+        <span className="text-[var(--bs-muted)]">
+          ⏱ {timeLeft}
+          {tr(locale, "с")}
+        </span>
       </div>
 
       <div className="mb-4 h-3 overflow-hidden rounded-full bg-[#e1ebe5]">
@@ -309,7 +318,7 @@ export function SpeedChallengeClient() {
       </div>
 
       <Link href="/games" className="bs-meaning-link mt-4">
-        ← Буцах
+        {tr(locale, "← Буцах")}
       </Link>
     </GameShell>
   );

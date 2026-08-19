@@ -1,6 +1,8 @@
 "use client";
 
 import type { SubtitleSlangNote } from "@/lib/bichleg/types";
+import { useUiLocale } from "@/lib/i18n/ui-locale";
+import { tr } from "@/lib/i18n/translate";
 
 type Props = {
   note: SubtitleSlangNote;
@@ -13,13 +15,14 @@ function registerClass(register: string): string {
 }
 
 export function BichlegSlangSheet({ note, onClose }: Props) {
+  const locale = useUiLocale();
   return (
     <div className="bs-bichleg-sheet-backdrop" onClick={onClose}>
       <div
         className="bs-bichleg-sheet bs-bichleg-sheet--slang"
         onClick={(event) => event.stopPropagation()}
       >
-        <p className="bs-bichleg-sheet-title">Залуусын хэллэг</p>
+        <p className="bs-bichleg-sheet-title">{tr(locale, "Залуусын хэллэг")}</p>
         <div className="bs-bl-slang-head">
           {note.term ? (
             <p className="bs-bl-slang-term hanzi">{note.term}</p>
@@ -39,7 +42,7 @@ export function BichlegSlangSheet({ note, onClose }: Props) {
           className="bs-bichleg-sheet-btn bs-bichleg-sheet-btn--full"
           onClick={onClose}
         >
-          ▶ Үргэлжлүүлэх
+          {tr(locale, "▶ Үргэлжлүүлэх")}
         </button>
       </div>
     </div>

@@ -13,6 +13,8 @@ import { SpeakerButton } from "@/components/tts/speaker-button";
 import { resolveTtsLang } from "@/lib/tts/infer-lang";
 import type { GameVocabItem, MatchPair } from "@/lib/games/game-types";
 import { useActivityTracker } from "@/lib/analytics/activity-tracker";
+import { useUiLocale } from "@/lib/i18n/ui-locale";
+import { tr } from "@/lib/i18n/translate";
 
 type Props = {
   lessonId: string;
@@ -32,6 +34,7 @@ export function MatchGameClient({
   labels: labelsProp,
 }: Props) {
   useActivityTracker("game", "match");
+  const locale = useUiLocale();
   const labels = labelsProp ?? resolveGameLabels(isKorean, isPrelesson);
   const gameContext = { isPrelesson };
   const pairs = useMemo(
@@ -227,7 +230,7 @@ export function MatchGameClient({
         </GameCard>
       </div>
       <p className="mt-3 text-center text-xs text-[var(--app-muted)]">
-        Зүүн ба баруун талаас нэг нэгийг сонгоно уу
+        {tr(locale, "Зүүн ба баруун талаас нэг нэгийг сонгоно уу")}
       </p>
     </GameShell>
   );

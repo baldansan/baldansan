@@ -50,6 +50,8 @@ import {
 } from "@/lib/bichleg/video-layout";
 import type { BichlegWordStatus } from "@/lib/supabase/saved-words";
 import { useActivityTracker } from "@/lib/analytics/activity-tracker";
+import { useUiLocale } from "@/lib/i18n/ui-locale";
+import { tr } from "@/lib/i18n/translate";
 import {
   fetchBichlegWordStatus,
   fetchVideoSubtitlesClient,
@@ -137,6 +139,7 @@ export function BichlegFeedClient({
   progressByVideoId: initialProgress = {},
   initialActiveIndex = 0,
 }: Props) {
+  const locale = useUiLocale();
   const feedRef = useRef<HTMLDivElement>(null);
   const playerRef = useRef<YtPlayer | null>(null);
   const subtitlesLoadedRef = useRef<Set<string>>(new Set());
@@ -479,7 +482,9 @@ export function BichlegFeedClient({
       setCurrentTime(next);
     });
     setSkipOverlay(
-      deltaSec < 0 ? `-${BICHLEG_SKIP_SECONDS}с` : `+${BICHLEG_SKIP_SECONDS}с`
+      deltaSec < 0
+        ? `-${BICHLEG_SKIP_SECONDS}${tr(locale, "с")}`
+        : `+${BICHLEG_SKIP_SECONDS}${tr(locale, "с")}`
     );
     ensureUnmuted();
   }
@@ -585,17 +590,17 @@ export function BichlegFeedClient({
     });
     if (result.ok) {
       if (result.isFunctionWord) {
-        setToast("Дүрмийн үг тул давталтад оруулахгүй");
+        setToast(tr(locale, "Дүрмийн үг тул давталтад оруулахгүй"));
       } else if (result.alreadyInSrs || (result.linkedToSrs && result.inCatalog)) {
-        setToast("Давталтад нэмэгдсэн ✓");
+        setToast(tr(locale, "Давталтад нэмэгдсэн ✓"));
       } else if (result.inCatalog === false) {
-        setToast("Толь бичигт байхгүй — зөвхөн миний үгсэд хадгаллаа");
+        setToast(tr(locale, "Толь бичигт байхгүй — зөвхөн миний үгсэд хадгаллаа"));
       } else if (result.duplicate) {
-        setToast("Аль хэдийн хадгалсан");
+        setToast(tr(locale, "Аль хэдийн хадгалсан"));
       } else if (result.linkedToSrs) {
-        setToast("Давталтад нэмлээ ✓");
+        setToast(tr(locale, "Давталтад нэмлээ ✓"));
       } else {
-        setToast("Хадгаллаа ✓");
+        setToast(tr(locale, "Хадгаллаа ✓"));
       }
       setPickedWord(null);
       setWordStatus(null);
@@ -635,17 +640,19 @@ export function BichlegFeedClient({
           href={backHref}
           className="mb-4 inline-flex text-sm font-bold text-[var(--app-muted)] hover:text-emerald-600"
         >
-          ← Буцах
+          {tr(locale, "← Буцах")}
         </Link>
         <div className="bs-bichleg-empty relative min-h-[50vh]">
           <p className="text-base font-bold">
-            {feedTitle ? `${feedTitle} — бичлэг байхгүй` : "Бичлэг олдсонгүй"}
+            {feedTitle
+              ? `${feedTitle} — ${tr(locale, "бичлэг байхгүй")}`
+              : tr(locale, "Бичлэг олдсонгүй")}
           </p>
           <p className="mt-2 text-sm text-[var(--bs-muted)]">
-            Өөр цуврал сонгоод дахин оролдоно уу.
+            {tr(locale, "Өөр цуврал сонгоод дахин оролдоно уу.")}
           </p>
           <Link href={backHref} className="bs-bichleg-back-link mt-4">
-            ← Цуврал сонгох
+            {tr(locale, "← Цуврал сонгох")}
           </Link>
         </div>
       </AppShell>
@@ -658,7 +665,11 @@ export function BichlegFeedClient({
   return (
     <AppShell activeTab="clips" showBottomNav={false} immersive>
       <div className="bs-bichleg-shell">
-        <Link href={backHref} className="bs-bichleg-back" aria-label="Буцах">
+        <Link
+          href={backHref}
+          className="bs-bichleg-back"
+          aria-label={tr(locale, "Буцах")}
+        >
           ←
         </Link>
 
@@ -666,9 +677,13 @@ export function BichlegFeedClient({
           {videos.map((video, index) => {
             const isActive = index === activeIndex;
             const completed = Boolean(progressByVideoId[video.id]?.completed);
-            const seriesBadge = formatSeriesEpisodeBadge(null, video.episode_no, {
+            const seriesBadgeMn = formatSeriesEpisodeBadge(null, video.episode_no, {
               completed,
             });
+            const seriesBadge =
+              locale === "zh"
+                ? (seriesBadgeMn?.replace(/(\d+)-р анги/, "第$1集") ?? null)
+                : seriesBadgeMn;
             const videoLayout =
               layoutByYoutubeId[video.youtube_id] ?? "portrait";
             return (
@@ -730,7 +745,7 @@ export function BichlegFeedClient({
                       <button
                         type="button"
                         className="bs-bichleg-subs-panel"
-                        aria-label="Энэ мөрийн эхнээс сонсох"
+                        aria-label={tr(locale, "Энэ мөрийн эхнээс сонсох")}
                         onClick={() => seekToSubtitle(activeSubtitle)}
                       >
                         <span className="bs-bl-time-badge">
@@ -751,7 +766,7 @@ export function BichlegFeedClient({
                         <button
                           type="button"
                           className="bs-bl-slang-badge"
-                          aria-label="Залуусын хэллэг"
+                          aria-label={tr(locale, "Залуусын хэллэг")}
                           onClick={() => handleSlangOpen(activeSubtitle.slang_note!)}
                         >
                           💬
@@ -766,7 +781,7 @@ export function BichlegFeedClient({
                     <button
                       type="button"
                       className={`bs-bichleg-action ${liked[video.id] ? "bs-bichleg-action--on" : ""}`}
-                      aria-label="Дуртай"
+                      aria-label={tr(locale, "Дуртай")}
                       onClick={() =>
                         setLiked((p) => ({
                           ...p,
@@ -779,7 +794,7 @@ export function BichlegFeedClient({
                     <button
                       type="button"
                       className={`bs-bichleg-action ${bookmarked[video.id] ? "bs-bichleg-action--on" : ""}`}
-                      aria-label="Хадгалах"
+                      aria-label={tr(locale, "Хадгалах")}
                       onClick={() =>
                         setBookmarked((p) => ({
                           ...p,
@@ -792,7 +807,7 @@ export function BichlegFeedClient({
                     <button
                       type="button"
                       className="bs-bichleg-action"
-                      aria-label="Түлхүүр үгс"
+                      aria-label={tr(locale, "Түлхүүр үгс")}
                       onClick={() => setShowKeys(true)}
                     >
                       <BichlegIcon name="book" className="bs-bichleg-action-icon" />
@@ -800,7 +815,7 @@ export function BichlegFeedClient({
                     <button
                       type="button"
                       className="bs-bichleg-action"
-                      aria-label="Дахин эхлэх"
+                      aria-label={tr(locale, "Дахин эхлэх")}
                       onClick={() => {
                         runOnPlayer((player) => {
                           player.seekTo(0, true);
@@ -822,7 +837,7 @@ export function BichlegFeedClient({
             type="button"
             className={`bs-bichleg-ctrl-btn ${showPinyin ? "bs-bichleg-ctrl-btn--on" : ""}`}
             aria-pressed={showPinyin}
-            aria-label="Пиньинь харуулах"
+            aria-label={tr(locale, "Пиньинь харуулах")}
             onClick={() => setShowPinyin((on) => !on)}
           >
             拼
@@ -831,7 +846,7 @@ export function BichlegFeedClient({
             type="button"
             className={`bs-bichleg-ctrl-btn ${showMn ? "bs-bichleg-ctrl-btn--on" : ""}`}
             aria-pressed={showMn}
-            aria-label="Монгол орчуулга харуулах"
+            aria-label={tr(locale, "Монгол орчуулга харуулах")}
             onClick={() => setShowMn((on) => !on)}
           >
             MN
@@ -848,8 +863,8 @@ export function BichlegFeedClient({
           <button
             type="button"
             className={`bs-bichleg-ctrl-btn bs-bichleg-ctrl-btn--offset ${userSubtitleOffset !== 0 ? "bs-bichleg-ctrl-btn--on" : ""}`}
-            aria-label="Хадмалын цаг"
-            title="Хадмалын цаг"
+            aria-label={tr(locale, "Хадмалын цаг")}
+            title={tr(locale, "Хадмалын цаг")}
             onClick={cycleUserSubtitleOffset}
           >
             {formatUserSubtitleOffsetLabel(userSubtitleOffset)}
@@ -860,7 +875,7 @@ export function BichlegFeedClient({
               className="bs-bichleg-ctrl-btn bs-bichleg-ctrl-btn--warn"
               onClick={() => setMuted(false)}
             >
-              Дууг асаах
+              {tr(locale, "Дууг асаах")}
             </button>
           ) : null}
         </div>
@@ -890,7 +905,7 @@ export function BichlegFeedClient({
               !wordStatus.inCatalog &&
               !wordStatus.inSrs ? (
                 <p className="bs-bichleg-sheet-note">
-                  Толь бичигт байхгүй — зөвхөн миний үгсэд хадгалагдлаа
+                  {tr(locale, "Толь бичигт байхгүй — зөвхөн миний үгсэд хадгалагдлаа")}
                 </p>
               ) : null}
               <div className="bs-bichleg-sheet-actions">
@@ -899,7 +914,7 @@ export function BichlegFeedClient({
                   className="bs-bichleg-sheet-btn"
                   onClick={handleContinue}
                 >
-                  ▶ Үргэлжлүүлэх
+                  {tr(locale, "▶ Үргэлжлүүлэх")}
                 </button>
                 {statusLoading ? (
                   <button
@@ -907,7 +922,7 @@ export function BichlegFeedClient({
                     className="bs-bichleg-sheet-btn bs-bichleg-sheet-btn--primary"
                     disabled
                   >
-                    Шалгаж байна…
+                    {tr(locale, "Шалгаж байна…")}
                   </button>
                 ) : wordStatus?.inSrs ? (
                   <button
@@ -915,7 +930,7 @@ export function BichlegFeedClient({
                     className="bs-bichleg-sheet-btn bs-bichleg-sheet-btn--done"
                     disabled
                   >
-                    Давталтад нэмэгдсэн ✓
+                    {tr(locale, "Давталтад нэмэгдсэн ✓")}
                   </button>
                 ) : (
                   <button
@@ -923,7 +938,7 @@ export function BichlegFeedClient({
                     className="bs-bichleg-sheet-btn bs-bichleg-sheet-btn--primary"
                     onClick={() => void handleSaveWord()}
                   >
-                    ＋ Үгсэд нэмэх
+                    {tr(locale, "＋ Үгсэд нэмэх")}
                   </button>
                 )}
               </div>
@@ -940,7 +955,7 @@ export function BichlegFeedClient({
               className="bs-bichleg-sheet bs-bichleg-sheet--keys"
               onClick={(e) => e.stopPropagation()}
             >
-              <p className="bs-bichleg-sheet-title">Түлхүүр үгс</p>
+              <p className="bs-bichleg-sheet-title">{tr(locale, "Түлхүүр үгс")}</p>
               <ul className="bs-bichleg-key-list">
                 {keyWords.length ? (
                   keyWords.map((w) => (
@@ -960,7 +975,9 @@ export function BichlegFeedClient({
                     </li>
                   ))
                 ) : (
-                  <li className="bs-bichleg-key-empty">Түлхүүр үг байхгүй</li>
+                  <li className="bs-bichleg-key-empty">
+                    {tr(locale, "Түлхүүр үг байхгүй")}
+                  </li>
                 )}
               </ul>
             </div>

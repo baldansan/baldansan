@@ -16,6 +16,8 @@ import {
   HSK_LEVEL_OPTIONS,
   type ActiveHskLevel,
 } from "@/lib/hsk/active-hsk-level";
+import { useUiLocale } from "@/lib/i18n/ui-locale";
+import { tr } from "@/lib/i18n/translate";
 
 type Phase = "setup" | "loading" | "play" | "result";
 type InputMode = "tiles" | "pinyin";
@@ -26,6 +28,7 @@ function toCatalogLevel(level: ActiveHskLevel): HskLevel {
 
 export function DictationGameClient() {
   useActivityTracker("game", "dictation");
+  const locale = useUiLocale();
   const { level: activeLevel, hydrated: levelHydrated } = useActiveHskLevel();
 
   const [phase, setPhase] = useState<Phase>("setup");
@@ -133,12 +136,14 @@ export function DictationGameClient() {
     return (
       <GameShell mainClassName=" px-4 pb-8">
         <div className="bs-mock-setup">
-          <h1 className="bs-mock-title">Диктант 👂</h1>
+          <h1 className="bs-mock-title">{tr(locale, "Диктант")} 👂</h1>
           <p className="bs-mock-sub">
-            Аудио сонсоод үгийг ханзаар угсар, эсвэл пиньиньгээр бич
+            {tr(locale, "Аудио сонсоод үгийг ханзаар угсар, эсвэл пиньиньгээр бич")}
           </p>
-          {error ? <p className="mt-3 text-sm text-red-600">{error}</p> : null}
-          <h2 className="bs-mem-step-title mt-4">Түвшин сонгох</h2>
+          {error ? (
+            <p className="mt-3 text-sm text-red-600">{tr(locale, error)}</p>
+          ) : null}
+          <h2 className="bs-mem-step-title mt-4">{tr(locale, "Түвшин сонгох")}</h2>
           <div className="bs-mem-chip-grid mt-3">
             {HSK_LEVEL_OPTIONS.map((opt) => {
               const active = testLevel === opt.value;
@@ -155,19 +160,19 @@ export function DictationGameClient() {
             })}
           </div>
           <ul className="bs-mock-rules mt-4">
-            <li>10 асуулт — үг бүрийг сонсоод бичнэ</li>
-            <li>Ханз угсрах эсвэл пиньинь бичих (аялгагүй ok: aiqing)</li>
-            <li>🔊 товчоор хэдэн ч удаа дахин сонсож болно</li>
+            <li>{tr(locale, "10 асуулт — үг бүрийг сонсоод бичнэ")}</li>
+            <li>{tr(locale, "Ханз угсрах эсвэл пиньинь бичих (аялгагүй ok: aiqing)")}</li>
+            <li>{tr(locale, "🔊 товчоор хэдэн ч удаа дахин сонсож болно")}</li>
           </ul>
           <button
             type="button"
             className="bs-mock-primary-btn mt-5"
             onClick={() => void startGame()}
           >
-            Эхлүүлэх
+            {tr(locale, "Эхлүүлэх")}
           </button>
           <Link href="/games" className="bs-meaning-link mt-4 block text-center">
-            ← Тоглоом руу
+            {tr(locale, "← Тоглоом руу")}
           </Link>
         </div>
       </GameShell>
@@ -178,7 +183,7 @@ export function DictationGameClient() {
     return (
       <GameShell mainClassName=" px-4 pb-8">
         <p className="py-16 text-center text-sm text-[var(--app-muted)]">
-          Асуулт бэлдэж байна…
+          {tr(locale, "Асуулт бэлдэж байна…")}
         </p>
       </GameShell>
     );
@@ -190,18 +195,23 @@ export function DictationGameClient() {
       <GameShell mainClassName=" px-4 pb-8">
         <div className="bs-mock-result">
           <p className="bs-mock-result-badge">
-            {accuracy >= 60 ? "✅ Сайн байна" : "💪 Дахиад давт"}
+            {tr(locale, accuracy >= 60 ? "✅ Сайн байна" : "💪 Дахиад давт")}
           </p>
-          <h2 className="bs-mock-title mt-2">Диктант · HSK {catalogLevel}</h2>
+          <h2 className="bs-mock-title mt-2">
+            {tr(locale, "Диктант")} · HSK {catalogLevel}
+          </h2>
           <p className="bs-mock-score-pct">{accuracy}%</p>
           <p className="bs-mock-sub">
-            Зөв: {correctCount} / {total}
+            {tr(locale, "Зөв:")} {correctCount} / {total}
           </p>
           <div className="bs-mock-info-card mt-4">
             <p className="text-sm leading-relaxed text-[var(--bs-ink-2)]">
-              {accuracy >= 60
-                ? "Сонсох чадвар сайжирч байна. Үргэлжлүүлээрэй!"
-                : "Сонссон үгээ давтаж хэлээд дахин оролдоорой."}
+              {tr(
+                locale,
+                accuracy >= 60
+                  ? "Сонсох чадвар сайжирч байна. Үргэлжлүүлээрэй!"
+                  : "Сонссон үгээ давтаж хэлээд дахин оролдоорой."
+              )}
             </p>
           </div>
           <button
@@ -212,10 +222,10 @@ export function DictationGameClient() {
               setDeck([]);
             }}
           >
-            Дахин тоглох
+            {tr(locale, "Дахин тоглох")}
           </button>
           <Link href="/games" className="bs-meaning-link mt-3 block text-center">
-            ← Тоглоом руу
+            {tr(locale, "← Тоглоом руу")}
           </Link>
         </div>
       </GameShell>
@@ -233,7 +243,7 @@ export function DictationGameClient() {
         <div className="mb-3 flex items-center justify-between gap-2">
           <div>
             <h1 className="text-base font-extrabold text-[var(--bs-ink)]">
-              Диктант 👂
+              {tr(locale, "Диктант")} 👂
             </h1>
             <p className="text-[11px] font-bold text-[var(--bs-muted)]">
               HSK {catalogLevel}
@@ -253,7 +263,7 @@ export function DictationGameClient() {
 
         <div className="bs-meaning-card">
           <p className="text-center text-sm font-bold text-[var(--bs-muted)]">
-            Сонсоод бич
+            {tr(locale, "Сонсоод бич")}
           </p>
 
           <div className="mt-3 flex flex-col items-center gap-2">
@@ -261,12 +271,12 @@ export function DictationGameClient() {
               type="button"
               onClick={() => void playChineseWordAudio(current.hanzi)}
               className="flex h-20 w-20 items-center justify-center rounded-full bg-[var(--bs-green-50)] text-4xl shadow-sm ring-2 ring-[var(--bs-green)] active:scale-95"
-              aria-label="Дахин сонсох"
+              aria-label={tr(locale, "Дахин сонсох")}
             >
               🔊
             </button>
             <p className="text-[11px] font-bold text-[var(--bs-muted)]">
-              Дарж дахин сонсоно
+              {tr(locale, "Дарж дахин сонсоно")}
             </p>
           </div>
 
@@ -282,7 +292,7 @@ export function DictationGameClient() {
                   }`}
                   onClick={() => setMode("tiles")}
                 >
-                  🀄 Угсрах
+                  {tr(locale, "🀄 Угсрах")}
                 </button>
                 <button
                   type="button"
@@ -293,7 +303,7 @@ export function DictationGameClient() {
                   }`}
                   onClick={() => setMode("pinyin")}
                 >
-                  🔤 Пиньинь бичих
+                  {tr(locale, "🔤 Пиньинь бичих")}
                 </button>
               </div>
 
@@ -302,7 +312,7 @@ export function DictationGameClient() {
                   <div className="mt-4 flex min-h-[56px] items-center justify-center gap-2 rounded-2xl bg-slate-50 px-3 py-2">
                     {usedTiles.length === 0 ? (
                       <p className="text-xs font-semibold text-[var(--bs-muted)]">
-                        Доорх ханзнаас дарж угсарна
+                        {tr(locale, "Доорх ханзнаас дарж угсарна")}
                       </p>
                     ) : (
                       usedTiles.map((tileIndex, pos) => (
@@ -315,7 +325,7 @@ export function DictationGameClient() {
                               prev.filter((_, i) => i !== pos)
                             )
                           }
-                          aria-label="Буцаах"
+                          aria-label={tr(locale, "Буцаах")}
                         >
                           {current.tiles[tileIndex]}
                         </button>
@@ -350,7 +360,7 @@ export function DictationGameClient() {
                   type="text"
                   value={pinyinInput}
                   onChange={(e) => setPinyinInput(e.target.value)}
-                  placeholder="жишээ: aiqing"
+                  placeholder={tr(locale, "жишээ: aiqing")}
                   autoCapitalize="none"
                   autoCorrect="off"
                   spellCheck={false}
@@ -364,7 +374,7 @@ export function DictationGameClient() {
                 disabled={!canCheck}
                 onClick={checkAnswer}
               >
-                Шалгах
+                {tr(locale, "Шалгах")}
               </button>
             </>
           ) : (
@@ -381,11 +391,11 @@ export function DictationGameClient() {
                     wasCorrect ? "text-emerald-700" : "text-red-600"
                   }`}
                 >
-                  {wasCorrect ? "✅ Зөв!" : "❌ Буруу"}
+                  {tr(locale, wasCorrect ? "✅ Зөв!" : "❌ Буруу")}
                 </p>
                 {!wasCorrect ? (
                   <p className="mt-1 text-xs font-semibold text-[var(--bs-muted)]">
-                    Таны хариулт:{" "}
+                    {tr(locale, "Таны хариулт:")}{" "}
                     {mode === "tiles" ? assembled : pinyinInput.trim()}
                   </p>
                 ) : null}
@@ -402,14 +412,16 @@ export function DictationGameClient() {
                 className="bs-mock-primary-btn mt-4"
                 onClick={nextQuestion}
               >
-                {index >= deck.length - 1 ? "Дуусгах" : "Дараагийнх →"}
+                {index >= deck.length - 1
+                  ? tr(locale, "Дуусгах")
+                  : `${tr(locale, "Дараагийнх")} →`}
               </button>
             </>
           )}
         </div>
 
         <p className="mt-3 text-center text-[11px] font-bold text-[var(--bs-muted)]">
-          Зөв {correctCount} / {total}
+          {tr(locale, "Зөв")} {correctCount} / {total}
         </p>
       </div>
     </GameShell>

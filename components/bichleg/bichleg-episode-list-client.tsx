@@ -19,6 +19,8 @@ import type {
   VideoEpisodeItem,
   VideoSeriesInfo,
 } from "@/lib/bichleg/types";
+import { useUiLocale } from "@/lib/i18n/ui-locale";
+import { tr } from "@/lib/i18n/translate";
 
 type Props = {
   seriesId: string;
@@ -43,17 +45,21 @@ export function BichlegEpisodeListClient({
   episodes,
   progressByVideoId = {},
 }: Props) {
+  const locale = useUiLocale();
   const isOther = seriesId === "other";
   const titleMn =
-    series?.title_mn ?? series?.title_zh ?? (isOther ? "Бусад бичлэг" : seriesId);
+    series?.title_mn ??
+    series?.title_zh ??
+    (isOther ? tr(locale, "Бусад бичлэг") : seriesId);
   const hskLevel = series?.hsk_level ?? episodes[0]?.hsk_level ?? null;
 
   const headerMeta =
     episodes.length > 0
-      ? formatSeriesHeaderMeta(episodes.length, hskLevel)
-      : isOther
-        ? "Цувралгүй бичлэг"
-        : "Анги олдсонгүй";
+      ? formatSeriesHeaderMeta(episodes.length, hskLevel).replace(
+          "анги",
+          tr(locale, "анги")
+        )
+      : tr(locale, isOther ? "Цувралгүй бичлэг" : "Анги олдсонгүй");
 
   const continueVideoId = resolveSeriesContinueVideoId(episodes, progressByVideoId);
   const continueEpisode = continueVideoId
@@ -72,7 +78,7 @@ export function BichlegEpisodeListClient({
   return (
     <MobileAppShell activeTab="clips" mainClassName={SHELL_MAIN_NARROW}>
       <Link href="/bichleg" className="bs-mem-back">
-        ← Цуврал сонгох
+        {tr(locale, "← Цуврал сонгох")}
       </Link>
       <h1 className="bs-tm-page-title">{titleMn}</h1>
       <p className="mb-4 text-sm font-semibold text-[#7a8c82]">{headerMeta}</p>
@@ -80,15 +86,15 @@ export function BichlegEpisodeListClient({
       {episodes.length === 0 ? (
         <div className="bs-bichleg-pick-empty">
           <p className="text-sm font-bold text-[var(--app-text)]">
-            Энэ цувралд бичлэг байхгүй
+            {tr(locale, "Энэ цувралд бичлэг байхгүй")}
           </p>
           <p className="mt-2 text-xs text-[var(--app-muted)]">
             {isOther
-              ? "series_id хоосон бичлэг олдсонгүй."
-              : `series_id «${seriesId}»-тай бичлэг олдсонгүй. Импорт шалгана уу.`}
+              ? tr(locale, "series_id хоосон бичлэг олдсонгүй.")
+              : `series_id «${seriesId}»${tr(locale, "-тай бичлэг олдсонгүй. Импорт шалгана уу.")}`}
           </p>
           <Link href="/bichleg" className="bs-bichleg-back-link mt-4">
-            ← Цуврал сонгох
+            {tr(locale, "← Цуврал сонгох")}
           </Link>
         </div>
       ) : (
@@ -100,7 +106,7 @@ export function BichlegEpisodeListClient({
               </span>
               <span className="min-w-0 flex-1">
                 <p className="bs-tm-continue-kicker">
-                  {hasPartialProgress ? "Үргэлжлүүлэх" : "Эхлэх"}
+                  {tr(locale, hasPartialProgress ? "Үргэлжлүүлэх" : "Эхлэх")}
                 </p>
                 <p className="bs-tm-continue-title">{continueLabel}</p>
               </span>
@@ -142,17 +148,21 @@ export function BichlegEpisodeListClient({
                 coverUrl={youtubeThumbUrl(episode.youtube_id)}
                 thumbIndex={index}
                 episodeBadge={
-                  episode.episode_no != null
-                    ? `${episode.episode_no}-р анги`
-                    : `${index + 1}-р анги`
+                  locale === "zh"
+                    ? `第${episode.episode_no ?? index + 1}集`
+                    : episode.episode_no != null
+                      ? `${episode.episode_no}-р анги`
+                      : `${index + 1}-р анги`
                 }
                 hskLevel={episode.hsk_level}
                 progressPct={partialPct > 0 ? partialPct : undefined}
                 progressLabel={
                   completed
-                    ? "Дууссан ✓"
+                    ? tr(locale, "Дууссан ✓")
                     : partialLabel
-                      ? `${partialLabel} үзсэн`
+                      ? locale === "zh"
+                        ? `已看 ${partialLabel}`
+                        : `${partialLabel} үзсэн`
                       : undefined
                 }
               />
