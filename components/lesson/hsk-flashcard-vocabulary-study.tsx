@@ -295,9 +295,20 @@ export function HskFlashcardVocabularyStudy({
             {current?.exampleChinese || current?.exampleMongolian ? (
               <div className="mt-2 w-full rounded-2xl bg-slate-50 p-3 ring-1 ring-slate-200">
                 {current.exampleChinese ? (
-                  <p className="text-sm font-medium text-slate-900">
-                    {current.exampleChinese}
-                  </p>
+                  <div className="flex items-start justify-between gap-2">
+                    <p className="min-w-0 flex-1 text-sm font-medium text-slate-900">
+                      {current.exampleChinese}
+                    </p>
+                    <SpeakerButton
+                      text={current.exampleChinese}
+                      lang={ttsLang}
+                      courseId={lesson.courseId}
+                      hskLevel={current.hskLevel}
+                      size="sm"
+                      label={`Жишээ уншуулах: ${current.exampleChinese}`}
+                      stopPropagation
+                    />
+                  </div>
                 ) : null}
                 {current.examplePinyin ? (
                   <p className="text-xs text-emerald-700">{current.examplePinyin}</p>
