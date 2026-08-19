@@ -7,6 +7,8 @@ import { useActiveHskLevel } from "@/components/providers/active-hsk-level-provi
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
 import { SHELL_MAIN_REVIEW } from "@/lib/app-shell-classes";
 import { getStreakUnified } from "@/lib/retention/retention-service";
+import { tr } from "@/lib/i18n/translate";
+import { useUiLocale } from "@/lib/i18n/ui-locale";
 import {
   buildLocalQueue,
   getLocalWordSrsStats,
@@ -52,6 +54,7 @@ export function ReviewMenuHubClient({
   hsk30LevelCount,
   hsk30PointCount,
 }: Props) {
+  const locale = useUiLocale();
   const { level: activeLevel, hydrated } = useActiveHskLevel();
   const [displayName, setDisplayName] = useState("Суралцагч");
   const [stats, setStats] = useState<HubStats>({
@@ -177,25 +180,30 @@ export function ReviewMenuHubClient({
       ? Math.min(100, Math.round((stats.dailyDone / stats.dailyGoal) * 100))
       : 0;
 
+  const shownName =
+    displayName === "Суралцагч" ? tr(locale, "Суралцагч") : displayName;
+
   const dueLabel =
     stats.dueCards > 0
-      ? `${stats.dueCards} карт хүлээж байна`
-      : "Өнөөдөр давтах зүйл алга";
+      ? `${stats.dueCards} ${tr(locale, "карт хүлээж байна")}`
+      : tr(locale, "Өнөөдөр давтах зүйл алга");
 
   const dailyGoalDone =
     !loading && stats.dailyDone >= stats.dailyGoal && stats.dailyGoal > 0;
 
   const greetTitle = dailyGoalDone
-    ? "Өдрийн зорилт дууслаа! 🎉"
-    : "Өнөөдрийн давталтаа хийе!";
+    ? tr(locale, "Өдрийн зорилт дууслаа! 🎉")
+    : tr(locale, "Өнөөдрийн давталтаа хийе!");
   const greetSub = dailyGoalDone
-    ? `Гайхалтай, ${displayName}! Үргэлжлүүлээрэй`
-    : `${stats.dailyDone}/${stats.dailyGoal} карт · ${displayName}`;
+    ? `${tr(locale, "Гайхалтай,")} ${shownName}! ${tr(locale, "Үргэлжлүүлээрэй")}`
+    : `${stats.dailyDone}/${stats.dailyGoal} ${tr(locale, "карт")} · ${shownName}`;
 
-  const memorizeStatus = "Бүх түвшний үгийн сан";
+  const memorizeStatus = tr(locale, "Бүх түвшний үгийн сан");
 
   const testStatus =
-    testCount > 0 ? `${testCount} шалгалт бэлэн` : "Тест оруулаагүй байна";
+    testCount > 0
+      ? `${testCount} ${tr(locale, "шалгалт бэлэн")}`
+      : tr(locale, "Тест оруулаагүй байна");
 
   return (
     <MobileAppShell
@@ -206,14 +214,14 @@ export function ReviewMenuHubClient({
       <div className="bs-review-hub">
         <div className="bs-tm-topbar">
           <div className="bs-tm-hello">
-            Сайн уу 👋
-            <b>{displayName}</b>
+            {tr(locale, "Сайн уу 👋")}
+            <b>{shownName}</b>
           </div>
           <div className="bs-tm-streak-pill">
             <span aria-hidden>🔥</span>
             <div>
               <b>{stats.streak}</b>
-              <span>өдөр</span>
+              <span>{tr(locale, "өдөр")}</span>
             </div>
           </div>
         </div>
@@ -227,10 +235,10 @@ export function ReviewMenuHubClient({
           />
           <div className="bs-tm-bubble">
             <p className="bs-tm-bubble-title">
-              {loading ? "Ачааллаж байна…" : greetTitle}
+              {loading ? tr(locale, "Ачааллаж байна…") : greetTitle}
             </p>
             <p className="bs-tm-bubble-sub">
-              {loading ? "Түр хүлээнэ үү" : greetSub}
+              {loading ? tr(locale, "Түр хүлээнэ үү") : greetSub}
             </p>
           </div>
         </div>
@@ -243,7 +251,7 @@ export function ReviewMenuHubClient({
             <div className="bs-tm-stat-n">
               {loading ? "—" : stats.studiedCount}
             </div>
-            <div className="bs-tm-stat-l">Сурсан үг</div>
+            <div className="bs-tm-stat-l">{tr(locale, "Сурсан үг")}</div>
           </div>
           <div className="bs-tm-stat">
             <div className="bs-tm-stat-ic" aria-hidden>
@@ -252,7 +260,7 @@ export function ReviewMenuHubClient({
             <div className="bs-tm-stat-n">
               {loading ? "—" : `${stats.accuracyPct}%`}
             </div>
-            <div className="bs-tm-stat-l">Нарийвчлал</div>
+            <div className="bs-tm-stat-l">{tr(locale, "Нарийвчлал")}</div>
           </div>
           <div className="bs-tm-stat">
             <div className="bs-tm-stat-ic" aria-hidden>
@@ -261,11 +269,11 @@ export function ReviewMenuHubClient({
             <div className="bs-tm-stat-n">
               {loading ? "—" : stats.dailyDone}
             </div>
-            <div className="bs-tm-stat-l">Өнөөдөр</div>
+            <div className="bs-tm-stat-l">{tr(locale, "Өнөөдөр")}</div>
           </div>
         </div>
 
-        <p className="bs-tm-sec">Өнөөдөр юу хийх вэ?</p>
+        <p className="bs-tm-sec">{tr(locale, "Өнөөдөр юу хийх вэ?")}</p>
 
         <Link href="/review/daily" className="bs-tm-feat">
           <TemeeEmojiIcon
@@ -275,9 +283,9 @@ export function ReviewMenuHubClient({
             height={70}
           />
           <div className="flex-1 min-w-0">
-            <p className="bs-tm-feat-title">Өнөөдрийн давталт 🔥</p>
+            <p className="bs-tm-feat-title">{tr(locale, "Өнөөдрийн давталт 🔥")}</p>
             <p className="bs-tm-feat-sub">
-              {loading ? "Ачааллаж байна…" : dueLabel}
+              {loading ? tr(locale, "Ачааллаж байна…") : dueLabel}
             </p>
             <div className="bs-tm-feat-bar">
               <i style={{ width: `${loading ? 0 : progressPct}%` }} />
@@ -290,8 +298,8 @@ export function ReviewMenuHubClient({
             📅
           </span>
           <span className="bs-tm-card-body">
-            <span className="bs-tm-card-title">Сурах төлөвлөгөө</span>
-            <span className="bs-tm-card-sub">Хичээл, давталт, бичлэг</span>
+            <span className="bs-tm-card-title">{tr(locale, "Сурах төлөвлөгөө")}</span>
+            <span className="bs-tm-card-sub">{tr(locale, "Хичээл, давталт, бичлэг")}</span>
           </span>
           <span className="bs-tm-card-chev" aria-hidden>›</span>
         </Link>
@@ -302,7 +310,7 @@ export function ReviewMenuHubClient({
               📺
             </span>
             <span className="bs-tm-card-body">
-              <span className="bs-tm-card-title">Бичлэг үргэлжлүүлэх</span>
+              <span className="bs-tm-card-title">{tr(locale, "Бичлэг үргэлжлүүлэх")}</span>
               <span className="bs-tm-card-sub">
                 {bichlegContinue.title} · {bichlegContinue.subtitle}
               </span>
@@ -316,7 +324,7 @@ export function ReviewMenuHubClient({
             💡
           </span>
           <span className="bs-tm-card-body">
-            <span className="bs-tm-card-title">Бүх HSK үг</span>
+            <span className="bs-tm-card-title">{tr(locale, "Бүх HSK үг")}</span>
             <span className="bs-tm-card-sub">{memorizeStatus}</span>
           </span>
           <span className="bs-tm-card-chev" aria-hidden>›</span>
@@ -327,14 +335,14 @@ export function ReviewMenuHubClient({
             📝
           </span>
           <span className="bs-tm-card-body">
-            <span className="bs-tm-card-title">HSK бэлтгэл</span>
+            <span className="bs-tm-card-title">{tr(locale, "HSK бэлтгэл")}</span>
             <span className="bs-tm-card-sub">{testStatus}</span>
           </span>
           <span className="bs-tm-card-chev" aria-hidden>›</span>
         </Link>
 
         <p className="bs-tm-sec" style={{ marginTop: 18 }}>
-          Дүрэм
+          {tr(locale, "Дүрэм")}
         </p>
 
         <Link href="/review/grammar/structure" className="bs-tm-card">
@@ -342,9 +350,9 @@ export function ReviewMenuHubClient({
             🧩
           </span>
           <span className="bs-tm-card-body">
-            <span className="bs-tm-card-title">Өгүүлбэрийн бүтэц</span>
+            <span className="bs-tm-card-title">{tr(locale, "Өгүүлбэрийн бүтэц")}</span>
             <span className="bs-tm-card-sub">
-              {helzuiModuleCount} модуль · суурь
+              {helzuiModuleCount} {tr(locale, "модуль")} · {tr(locale, "суурь")}
             </span>
           </span>
           <span className="bs-tm-card-chev" aria-hidden>›</span>
@@ -355,12 +363,12 @@ export function ReviewMenuHubClient({
             📚
           </span>
           <span className="bs-tm-card-body">
-            <span className="bs-tm-card-title">HSK 3.0 дүрэм</span>
+            <span className="bs-tm-card-title">{tr(locale, "HSK 3.0 дүрэм")}</span>
             <span className="bs-tm-card-sub">
-              {hsk30LevelCount} түвшин · {hsk30PointCount} цэг
+              {hsk30LevelCount} {tr(locale, "түвшин")} · {hsk30PointCount} {tr(locale, "цэг")}
             </span>
           </span>
-          <span className="bs-tm-badge-new">ШИНЭ</span>
+          <span className="bs-tm-badge-new">{tr(locale, "ШИНЭ")}</span>
         </Link>
       </div>
     </MobileAppShell>

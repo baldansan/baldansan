@@ -4,6 +4,8 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useMemo } from "react";
 import { HskLevelSelector } from "@/components/hsk/hsk-level-selector";
+import { tr } from "@/lib/i18n/translate";
+import { useUiLocale } from "@/lib/i18n/ui-locale";
 import { getSelectedLanguage } from "@/lib/learner-onboarding";
 
 function isHomePath(pathname: string): boolean {
@@ -15,6 +17,7 @@ function isActiveGamePath(pathname: string): boolean {
 }
 
 export function MobileShellHeader() {
+  const locale = useUiLocale();
   const pathname = usePathname() ?? "";
   const showChinese = useMemo(
     () => getSelectedLanguage() === "zh",
@@ -37,9 +40,9 @@ export function MobileShellHeader() {
         <Link
           href="/games"
           className="inline-flex min-h-[36px] items-center gap-1 rounded-full border border-[var(--app-border)] bg-white px-3.5 py-1.5 text-sm font-bold text-[var(--app-text)] shadow-sm active:bg-slate-50"
-          aria-label="Буцах"
+          aria-label={tr(locale, "Буцах")}
         >
-          ← Буцах
+          ← {tr(locale, "Буцах")}
         </Link>
       </header>
     );

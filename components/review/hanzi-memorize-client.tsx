@@ -15,6 +15,8 @@ import type { HskWordRow } from "@/lib/supabase/hsk-words";
 import { getAuthenticatedUserId, hasSupabaseConfig } from "@/lib/supabase/auth";
 import { countStudiedAmongWordIds } from "@/lib/supabase/user-word-srs";
 import { useActivityTracker } from "@/lib/analytics/activity-tracker";
+import { tr } from "@/lib/i18n/translate";
+import { useUiLocale, type UiLocale } from "@/lib/i18n/ui-locale";
 
 type WizardStep = "level" | "batch" | "study";
 
@@ -37,17 +39,17 @@ function toCatalogLevel(level: ActiveHskLevel): string {
   return level === "7-9" ? "7-9" : String(level);
 }
 
-function batchLabel(batch: BatchSummary): string {
+function batchLabel(batch: BatchSummary, locale: UiLocale): string {
   if (batch.groupId && batch.title) {
     return `${batch.icon ?? ""} ${batch.title}`.trim();
   }
-  return `Багц ${batch.batchIndex + 1} · ${batch.firstSimplified ?? ""} → ${batch.lastSimplified ?? ""}`;
+  return `${tr(locale, "Багц")} ${batch.batchIndex + 1} · ${batch.firstSimplified ?? ""} → ${batch.lastSimplified ?? ""}`;
 }
 
 /** Зураглалын зангилааны нэр (icon-гүй — icon нь дугуйд орно). */
-function nodeTitle(batch: BatchSummary): string {
+function nodeTitle(batch: BatchSummary, locale: UiLocale): string {
   if (batch.groupId && batch.title) return batch.title;
-  return `Багц ${batch.batchIndex + 1}`;
+  return `${tr(locale, "Багц")} ${batch.batchIndex + 1}`;
 }
 
 function resumeKeyFor(level: ActiveHskLevel, batch: BatchSummary): string {
@@ -60,6 +62,7 @@ type Props = {
 };
 
 export function HanziMemorizeClient({ restoreLevel }: Props = {}) {
+  const locale = useUiLocale();
   useActivityTracker("review", "memorize");
   const [step, setStep] = useState<WizardStep>("level");
   const [level, setLevel] = useState<ActiveHskLevel | null>(null);
@@ -206,7 +209,7 @@ export function HanziMemorizeClient({ restoreLevel }: Props = {}) {
   if (loading) {
     return (
       <p className="py-12 text-center text-sm text-[var(--app-muted)]">
-        Ачааллаж байна…
+        {tr(locale, "Ачааллаж байна…")}
       </p>
     );
   }
@@ -214,13 +217,13 @@ export function HanziMemorizeClient({ restoreLevel }: Props = {}) {
   if (error) {
     return (
       <div className="py-8 text-center">
-        <p className="text-sm text-red-600">{error}</p>
+        <p className="text-sm text-red-600">{tr(locale, error)}</p>
         <button
           type="button"
           onClick={goBack}
           className="mt-4 rounded-[14px] bg-[var(--app-primary)] px-5 py-2.5 text-sm font-bold text-white"
         >
-          Буцах
+          {tr(locale, "Буцах")}
         </button>
       </div>
     );
@@ -231,14 +234,14 @@ export function HanziMemorizeClient({ restoreLevel }: Props = {}) {
     return (
       <>
         <button type="button" onClick={goBack} className="bs-mem-back">
-          ← Багцууд руу
+          ← {tr(locale, "Багцууд руу")}
         </button>
         <WordSrsStudySession
           queue={studyQueue}
           userId={userId}
           resumeKey={resumeKeyFor(level, activeBatch)}
-          title="Ханз цээжлэх"
-          subtitle={`${hskLabel} · ${batchLabel(activeBatch)}`}
+          title={tr(locale, "Ханз цээжлэх")}
+          subtitle={`${hskLabel} · ${batchLabel(activeBatch, locale)}`}
           hskLevelLabel={hskLabel}
           showLoginHint
           showPracticeLauncher
@@ -264,8 +267,8 @@ export function HanziMemorizeClient({ restoreLevel }: Props = {}) {
               );
             });
           }}
-          completeTitle="✅ Багц дууслаа!"
-          completeMessage={`${batchLabel(activeBatch)} дууслаа.`}
+          completeTitle={tr(locale, "✅ Багц дууслаа!")}
+          completeMessage={`${batchLabel(activeBatch, locale)} ${tr(locale, "дууслаа.")}`}
         />
       </>
     );
@@ -285,26 +288,31 @@ export function HanziMemorizeClient({ restoreLevel }: Props = {}) {
     return (
       <div className="bs-mem-wizard">
         <button type="button" onClick={goBack} className="bs-mem-back">
-          ← HSK түвшин
+          ← {tr(locale, "HSK түвшин")}
         </button>
         <h2 className="bs-mem-step-title">
-          {batchMode === "themes" ? "Цээжлэх зам 🗺️" : "Багц сонгох"}
+          {batchMode === "themes"
+            ? tr(locale, "Цээжлэх зам 🗺️")
+            : tr(locale, "Багц сонгох")}
         </h2>
         <p className="bs-mem-step-sub">
-          {hskLabel} · {totalWords} үг ·{" "}
-          {batchMode === "themes" ? "сэдвээр бүлэглэсэн" : "пиньинь дарааллаар"}
+          {hskLabel} · {totalWords} {tr(locale, "үг")} ·{" "}
+          {batchMode === "themes"
+            ? tr(locale, "сэдвээр бүлэглэсэн")
+            : tr(locale, "пиньинь дарааллаар")}
         </p>
 
         <div className="bs-mem-pass-card">
           <div className="bs-mem-pass-top">
-            <span>🎯 {hskLabel} давах бэлтгэл</span>
+            <span>🎯 {hskLabel} {tr(locale, "давах бэлтгэл")}</span>
             <span className="bs-mem-pass-pct">{passPercent}%</span>
           </div>
           <div className="bs-mem-pass-bar">
             <span style={{ width: `${passPercent}%` }} />
           </div>
           <p className="bs-mem-pass-hint">
-            {totalStudied}/{totalWords} үг үзсэн — үг бүр таны хувийг өсгөнө!
+            {totalStudied}/{totalWords}{" "}
+            {tr(locale, "үг үзсэн — үг бүр таны хувийг өсгөнө!")}
           </p>
         </div>
 
@@ -337,7 +345,9 @@ export function HanziMemorizeClient({ restoreLevel }: Props = {}) {
                 >
                   {isCurrent ? (
                     <span className="bs-mem-map-here">
-                      {canResume ? "▶ Үргэлжлүүлэх" : "Та энд байна"}
+                      {canResume
+                        ? `▶ ${tr(locale, "Үргэлжлүүлэх")}`
+                        : tr(locale, "Та энд байна")}
                     </span>
                   ) : null}
                   <span
@@ -350,9 +360,9 @@ export function HanziMemorizeClient({ restoreLevel }: Props = {}) {
                       {isDone ? "⭐" : (b.icon ?? "📦")}
                     </span>
                   </span>
-                  <span className="bs-mem-map-title">{nodeTitle(b)}</span>
+                  <span className="bs-mem-map-title">{nodeTitle(b, locale)}</span>
                   <span className="bs-mem-map-count">
-                    {b.studiedCount}/{total} үзсэн
+                    {b.studiedCount}/{total} {tr(locale, "үзсэн")}
                   </span>
                 </button>
               </li>
@@ -365,9 +375,9 @@ export function HanziMemorizeClient({ restoreLevel }: Props = {}) {
 
   return (
     <div className="bs-mem-wizard">
-      <h2 className="bs-mem-step-title">HSK түвшин сонгох</h2>
+      <h2 className="bs-mem-step-title">{tr(locale, "HSK түвшин сонгох")}</h2>
       <p className="bs-mem-step-sub">
-        Үгсийг сэдэвчилсэн бүлгээр цээжлэнэ
+        {tr(locale, "Үгсийг сэдэвчилсэн бүлгээр цээжлэнэ")}
       </p>
       <div className="bs-mem-chip-grid">
         {HSK_LEVEL_OPTIONS.map((opt) => (
