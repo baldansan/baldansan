@@ -6,6 +6,7 @@ const VALID_KINDS: HskQuizKind[] = [
   "pinyin",
   "example-cloze",
   "radical-pick",
+  "listening",
 ];
 
 export function parseQuizTypesParam(raw: string | null): HskQuizKind[] | null {
@@ -26,6 +27,7 @@ export const LEGACY_GAME_TYPE_PRESETS: Record<string, HskQuizKind[]> = {
   pinyin: ["pinyin"],
   "example-cloze": ["example-cloze"],
   "radical-pick": ["radical-pick"],
+  listening: ["listening"],
 };
 
 export function presetTitleForKinds(kinds: HskQuizKind[] | null): string | null {
@@ -36,6 +38,7 @@ export function presetTitleForKinds(kinds: HskQuizKind[] | null): string | null 
     pinyin: "Пиньинь сонгох",
     "example-cloze": "Жишээ бөглөх",
     "radical-pick": "Радикал таних",
+    listening: "Сонсоод олох",
   };
   return titles[kinds[0]];
 }
