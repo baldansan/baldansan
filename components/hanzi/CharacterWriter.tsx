@@ -25,6 +25,11 @@ type Props = {
    */
   mode: "write" | "recognize" | "recall";
   onComplete?: () => void;
+  /**
+   * Бичилт бүрэн дуусахад (сүүлийн ханзны дараа) бодит гүйцэтгэлийг
+   * буцаана — бичих SRS-ийн автомат үнэлгээнд ашиглана.
+   */
+  onResult?: (result: { mistakes: number; usedHint: boolean }) => void;
 };
 
 const CJK_RE = /[㐀-鿿]/;
@@ -52,7 +57,7 @@ function formatComponents(character: HskCharacter): string | null {
   return `${character.hanzi} = ${parts.join(" + ")}`;
 }
 
-export function CharacterWriter({ character, mode, onComplete }: Props) {
+export function CharacterWriter({ character, mode, onComplete, onResult }: Props) {
   const locale = useUiLocale();
   const containerRef = useRef<HTMLDivElement | null>(null);
   const actionsRef = useRef<{
@@ -75,15 +80,34 @@ export function CharacterWriter({ character, mode, onComplete }: Props) {
   const [writePhase, setWritePhase] = useState<"trace" | "memory">("trace");
   const [strokeDone, setStrokeDone] = useState(0);
   const [strokeTotal, setStrokeTotal] = useState(0);
+  /** Бүх ханзны туршид хуримтлагдсан буруу зураас + сануулга. */
+  const mistakesRef = useRef(0);
+  const usedHintRef = useRef(false);
+  const resultSentRef = useRef(false);
 
   useEffect(() => {
     setCharIndex(0);
+    mistakesRef.current = 0;
+    usedHintRef.current = false;
+    resultSentRef.current = false;
   }, [character.hanzi]);
 
   const safeIndex = Math.min(charIndex, Math.max(chars.length - 1, 0));
   const activeChar = chars[safeIndex] ?? null;
   const isLastChar = safeIndex >= chars.length - 1;
   const isSingleChar = chars.length === 1;
+
+  const isLastCharRef = useRef(isLastChar);
+  isLastCharRef.current = isLastChar;
+
+  function emitResultIfDone() {
+    if (!isLastCharRef.current || resultSentRef.current) return;
+    resultSentRef.current = true;
+    onResult?.({
+      mistakes: mistakesRef.current,
+      usedHint: usedHintRef.current,
+    });
+  }
 
   useEffect(() => {
     const mount = containerRef.current;
@@ -125,6 +149,10 @@ export function CharacterWriter({ character, mode, onComplete }: Props) {
         showHintAfterMisses: memory ? 3 : 2,
         markStrokeCorrectAfterMisses: memory ? 6 : 5,
         highlightOnComplete: true,
+        onMistake: () => {
+          // Дагаж бичих шат оноонд тооцогдохгүй — санах шат л хэмжигдэнэ.
+          if (memory) mistakesRef.current += 1;
+        },
         onCorrectStroke: (data) => {
           if (!cancelled) setStrokeDone(data.strokeNum + 1);
         },
@@ -137,6 +165,7 @@ export function CharacterWriter({ character, mode, onComplete }: Props) {
             }, 900);
           } else {
             setPracticeMode("success");
+            emitResultIfDone();
           }
         },
       });
@@ -189,6 +218,7 @@ export function CharacterWriter({ character, mode, onComplete }: Props) {
 
     function showHint() {
       if (!writer || cancelled) return;
+      usedHintRef.current = true;
       const w = writer;
       void w.showOutline({ duration: 150 });
       window.setTimeout(() => {

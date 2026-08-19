@@ -7,6 +7,8 @@ import { tr } from "@/lib/i18n/translate";
 import { useUiLocale } from "@/lib/i18n/ui-locale";
 import { useActivityTracker } from "@/lib/analytics/activity-tracker";
 import { recordWritingCharRemote } from "@/lib/analytics/learner-records";
+import { seedLocalWritingSrs } from "@/lib/srs/writing-srs";
+import { recordWritingResult } from "@/lib/srs/writing-srs-sync";
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
 import { MobileCard } from "@/components/mobile/mobile-card";
 import { MobilePageHeader } from "@/components/mobile/mobile-page-header";
@@ -110,6 +112,8 @@ export function HandwritingCourseClient() {
 
   function markDone(char: string) {
     recordWritingCharRemote(char);
+    // Бичсэн ханзыг бичих SRS-д «маргааш давтах» болгож нэмнэ (байвал өөрчлөхгүй).
+    seedLocalWritingSrs({ key: char, meaning: stories[char]?.m ?? null });
     setDone((prev) => {
       const next = new Set(prev);
       next.add(char);
@@ -406,6 +410,12 @@ export function HandwritingCourseClient() {
                     key={`recall-${c}`}
                     character={{ hanzi: c, pinyin: [], practice: "write" }}
                     mode="recall"
+                    onResult={(result) =>
+                      recordWritingResult(
+                        { key: c, meaning: stories[c]?.m ?? null },
+                        result
+                      )
+                    }
                     onComplete={() => {
                       recordWritingCharRemote(c);
                       setDone((prev) => {

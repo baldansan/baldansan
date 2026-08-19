@@ -6,6 +6,7 @@ import { useEffect, useMemo, useState } from "react";
 import { tr } from "@/lib/i18n/translate";
 import { useUiLocale } from "@/lib/i18n/ui-locale";
 import { extractHanziCharacters } from "@/lib/hanzi/writing-practice";
+import { recordWritingResult } from "@/lib/srs/writing-srs-sync";
 import type { HskCharacter } from "@/types/hsk-lesson-package";
 
 const CharacterWriter = dynamic(
@@ -24,6 +25,10 @@ type Props = {
   wordRadical?: string | null;
   /** Collapse stroke UI when card flips back or advances. */
   active?: boolean;
+  /** Бичих SRS бүртгэлд (сонголттой). */
+  wordId?: number | null;
+  pinyin?: string | null;
+  meaning?: string | null;
 };
 
 function toHskCharacter(hanzi: string, radical?: string | null): HskCharacter {
@@ -39,6 +44,9 @@ export function WordSrsStrokePanel({
   simplified,
   wordRadical,
   active = true,
+  wordId = null,
+  pinyin = null,
+  meaning = null,
 }: Props) {
   const locale = useUiLocale();
   const chars = useMemo(
@@ -113,6 +121,15 @@ export function WordSrsStrokePanel({
               chars.length === 1 ? wordRadical : null
             )}
             mode={panelMode}
+            onResult={
+              panelMode === "write"
+                ? (result) =>
+                    recordWritingResult(
+                      { key: simplified, wordId, pinyin, meaning },
+                      result
+                    )
+                : undefined
+            }
           />
           <button
             type="button"

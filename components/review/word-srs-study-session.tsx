@@ -1045,6 +1045,12 @@ export function WordSrsStudySession({
 
           active={flipped}
 
+          wordId={word.id ?? null}
+
+          pinyin={word.pinyin ?? null}
+
+          meaning={word.meaning_mn ?? null}
+
         />
 
       ) : null}
