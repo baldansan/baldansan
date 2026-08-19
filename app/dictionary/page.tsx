@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import { DictionaryClient } from "@/components/dictionary/dictionary-client";
 
 export const metadata: Metadata = {
@@ -8,5 +9,9 @@ export const metadata: Metadata = {
 };
 
 export default function DictionaryPage() {
-  return <DictionaryClient />;
+  return (
+    <Suspense fallback={null}>
+      <DictionaryClient />
+    </Suspense>
+  );
 }

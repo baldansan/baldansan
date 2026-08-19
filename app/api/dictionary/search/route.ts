@@ -49,8 +49,9 @@ export async function GET(request: Request) {
   try {
     const { searchParams } = new URL(request.url);
     const q = sanitizeQuery(searchParams.get("q") ?? "");
+    const radical = sanitizeQuery(searchParams.get("radical") ?? "");
 
-    if (q.length < 1) {
+    if (q.length < 1 && radical.length < 1) {
       return Response.json({ query: q, results: [] });
     }
 
@@ -60,6 +61,20 @@ export async function GET(request: Request) {
         { error: "Supabase тохиргоо байхгүй." },
         { status: 503 }
       );
+    }
+
+    // Язгуураар үзэх горим: ?radical=氵 — тухайн язгууртай үгс
+    if (radical.length >= 1 && q.length < 1) {
+      const { data, error } = await supabase
+        .from("hsk_words")
+        .select(WORD_SELECT)
+        .eq("radical", radical)
+        .order("frequency", { ascending: true, nullsFirst: false })
+        .limit(60);
+      if (error) {
+        return Response.json({ error: error.message }, { status: 500 });
+      }
+      return Response.json({ query: "", radical, results: data ?? [] });
     }
 
     const { data, error } = await supabase
