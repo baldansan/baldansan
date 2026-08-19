@@ -17,8 +17,22 @@ import {
   languageTrackLabel,
 } from "@/lib/language-track";
 import { getCurrentUser, hasSupabaseConfig } from "@/lib/supabase/auth";
+import { tr } from "@/lib/i18n/translate";
+import {
+  setUiLocale,
+  useUiLocale,
+  type UiLocale,
+} from "@/lib/i18n/ui-locale";
 
 export function SettingsAppView() {
+  const uiLocale = useUiLocale();
+
+  const switchUiLocale = (next: UiLocale) => {
+    if (next === uiLocale) return;
+    setUiLocale(next);
+    window.location.reload();
+  };
+
   const [email, setEmail] = useState<string | null>(null);
   const [language, setLanguage] = useState<SelectedLanguage | null>(null);
   const [onboardingDone, setOnboardingDone] = useState(true);
@@ -50,7 +64,38 @@ export function SettingsAppView() {
         ← Профайл руу буцах
       </Link>
 
-      <MobilePageHeader title="Тохиргоо" subtitle="Бүртгэл болон app-ийн тохиргоо" />
+      <MobilePageHeader
+        title={tr(uiLocale, "Тохиргоо")}
+        subtitle={tr(uiLocale, "Бүртгэл болон app-ийн тохиргоо")}
+      />
+
+      <MobileCard padding="lg" className="mb-4">
+        <h2 className="text-sm font-bold text-[var(--app-text)]">
+          {uiLocale === "zh" ? "界面语言 · Хэлний тохиргоо" : "Хэлний тохиргоо · 界面语言"}
+        </h2>
+        <p className="mt-1 text-xs text-[var(--app-muted)]">
+          {tr(
+            uiLocale,
+            "Апп ямар хэлээр харагдахыг сонгоно (хичээлийн контент өөрчлөгдөхгүй)"
+          )}
+        </p>
+        <div className="mt-3 flex gap-2">
+          <button
+            type="button"
+            onClick={() => switchUiLocale("mn")}
+            className={`app-chip ${uiLocale === "mn" ? "app-chip-active" : ""}`}
+          >
+            🇲🇳 Монгол
+          </button>
+          <button
+            type="button"
+            onClick={() => switchUiLocale("zh")}
+            className={`app-chip ${uiLocale === "zh" ? "app-chip-active" : ""}`}
+          >
+            🇨🇳 中文
+          </button>
+        </div>
+      </MobileCard>
 
       {!language ? (
         <MobileCard className="mb-4 border-amber-200 bg-amber-50">

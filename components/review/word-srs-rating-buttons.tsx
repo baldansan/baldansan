@@ -1,3 +1,7 @@
+"use client";
+
+import { tr } from "@/lib/i18n/translate";
+import { useUiLocale } from "@/lib/i18n/ui-locale";
 import type { WordSrsRating } from "@/lib/srs/word-srs-types";
 
 type Props = {
@@ -6,6 +10,7 @@ type Props = {
 };
 
 export function WordSrsRatingButtons({ disabled, onRate }: Props) {
+  const locale = useUiLocale();
   return (
     <div className="bs-srs-rating-row">
       <button
@@ -14,7 +19,7 @@ export function WordSrsRatingButtons({ disabled, onRate }: Props) {
         onClick={() => onRate("forgot")}
         className="bs-srs-rating-btn bs-srs-rating-forgot"
       >
-        Мартсан
+        {tr(locale, "Мартсан")}
       </button>
       <button
         type="button"
@@ -22,7 +27,7 @@ export function WordSrsRatingButtons({ disabled, onRate }: Props) {
         onClick={() => onRate("hard")}
         className="bs-srs-rating-btn bs-srs-rating-hard"
       >
-        Эргэлзсэн
+        {tr(locale, "Эргэлзсэн")}
       </button>
       <button
         type="button"
@@ -30,7 +35,7 @@ export function WordSrsRatingButtons({ disabled, onRate }: Props) {
         onClick={() => onRate("known")}
         className="bs-srs-rating-btn bs-srs-rating-known"
       >
-        Мэдсэн
+        {tr(locale, "Мэдсэн")}
       </button>
     </div>
   );
