@@ -150,6 +150,8 @@ export function CharacterWriter({ character, mode, onComplete, onResult }: Props
         markStrokeCorrectAfterMisses: memory ? 6 : 5,
         highlightOnComplete: true,
         onMistake: () => {
+          // Утсан дээр зөөлөн чичиргээ — буруу зураасын мэдрэгдэхүйц дохио.
+          if (typeof navigator !== "undefined") navigator.vibrate?.(40);
           // Дагаж бичих шат оноонд тооцогдохгүй — санах шат л хэмжигдэнэ.
           if (memory) mistakesRef.current += 1;
         },

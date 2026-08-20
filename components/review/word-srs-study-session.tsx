@@ -225,6 +225,9 @@ export function WordSrsStudySession({
 
   const [flipped, setFlipped] = useState(false);
 
+  // Ханзны задаргаа/андуурагдах ханз — анхдагчаар эвхээстэй (картын хурд чухал).
+  const [detailsOpen, setDetailsOpen] = useState(false);
+
   const [submitting, setSubmitting] = useState(false);
 
   const [sessionDone, setSessionDone] = useState(0);
@@ -474,6 +477,8 @@ export function WordSrsStudySession({
     });
 
     setFlipped(false);
+
+    setDetailsOpen(false);
 
     setSubmitting(false);
 
@@ -1023,20 +1028,6 @@ export function WordSrsStudySession({
 
       {flipped ? (
 
-        <WordCharBreakdownPanel
-
-          text={word.simplified}
-
-          wordRadical={word.radical}
-
-        />
-
-      ) : null}
-
-
-
-      {flipped ? (
-
         <WordSrsStrokePanel
 
           simplified={word.simplified}
@@ -1058,16 +1049,45 @@ export function WordSrsStudySession({
 
 
       {flipped ? (
+        <div className="mt-3">
+          <button
+            type="button"
+            onClick={() => setDetailsOpen((v) => !v)}
+            className="w-full rounded-[14px] border border-[var(--app-border,#e2e8f0)] bg-white px-4 py-2.5 text-sm font-bold text-[var(--app-text)]"
+            aria-expanded={detailsOpen}
+          >
+            🧩 {tr(locale, "Ханзны задаргаа")}{" "}
+            <span aria-hidden>{detailsOpen ? "▴" : "▾"}</span>
+          </button>
+          {detailsOpen ? (
+            <WordCharBreakdownPanel
+              text={word.simplified}
+              wordRadical={word.radical}
+            />
+          ) : null}
+        </div>
+      ) : null}
 
-        <WordSrsRatingButtons
 
-          disabled={submitting}
 
-          onRate={(rating) => void handleRate(rating)}
+      {flipped ? (
+        <div
+          className="sticky z-20 mt-3 rounded-[18px] bg-white/90 p-1.5 shadow-[0_-4px_18px_rgba(16,32,51,0.10)] backdrop-blur-sm"
+          style={{ bottom: "calc(env(safe-area-inset-bottom, 0px) + 84px)" }}
+        >
+          <WordSrsRatingButtons
+            disabled={submitting}
+            onRate={(rating) => void handleRate(rating)}
+          />
+        </div>
+      ) : null}
 
-        />
+      {flipped ? (
+        /* Sticky самбарын доорх элементүүд бүрэн гүйлгэгдэж харагдах зай */
+        <div className="h-16" aria-hidden />
+      ) : null}
 
-      ) : (
+      {!flipped ? (
 
         <p className="mt-3 text-center text-xs text-[var(--app-muted)]">
 
@@ -1075,7 +1095,7 @@ export function WordSrsStudySession({
 
         </p>
 
-      )}
+      ) : null}
 
     </>
 

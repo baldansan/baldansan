@@ -197,9 +197,13 @@ export function ReviewMenuHubClient({
     displayName === "Суралцагч" ? tr(locale, "Суралцагч") : displayName;
 
   const dueLabel =
-    stats.dueCards > 0
-      ? `${stats.dueCards} ${tr(locale, "карт хүлээж байна")}`
-      : tr(locale, "Өнөөдөр давтах зүйл алга");
+    stats.dueCards > 0 && writingDue > 0
+      ? `${stats.dueCards} ${tr(locale, "унших")} · ${writingDue} ${tr(locale, "бичих карт хүлээж байна")}`
+      : stats.dueCards > 0
+        ? `${stats.dueCards} ${tr(locale, "карт хүлээж байна")}`
+        : writingDue > 0
+          ? `${writingDue} ${tr(locale, "бичих карт хүлээж байна")}`
+          : tr(locale, "Өнөөдөр давтах зүйл алга");
 
   const dailyGoalDone =
     !loading && stats.dailyDone >= stats.dailyGoal && stats.dailyGoal > 0;
