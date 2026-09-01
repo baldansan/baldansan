@@ -2,6 +2,7 @@ import { inferLanguageTagFromCourseId } from "@/lib/language-track";
 import type { LessonZipValidation } from "@/lib/import/lesson-zip-import";
 import type { ImportDraftApiBody } from "@/lib/admin/build-import-draft-request";
 import {
+  applyQuizAudioUploads,
   finalizePackageMediaImport,
   type PackageMediaUploadResult,
 } from "@/lib/admin/package-media-import";
@@ -268,9 +269,24 @@ export async function importLessonPackage(
 
   const resolvedLessonId = shell.resolvedLessonId;
 
+  // Upload media BEFORE content import so listening-quiz audio ZIP paths
+  // resolve to Storage URLs when quiz rows are inserted.
+  const mediaResult = await finalizePackageMediaImport({
+    validation,
+    courseId,
+    lessonId: resolvedLessonId,
+  });
+  warnings.push(...mediaResult.warnings);
+
+  const importPayload = applyQuizAudioUploads(
+    validation.importPayload,
+    mediaResult.mediaFailures,
+    warnings
+  );
+
   const imported = await bulkImportLessonContent(
     resolvedLessonId,
-    validation.importPayload,
+    importPayload,
     {
       mode: "replace",
     }
@@ -285,20 +301,13 @@ export async function importLessonPackage(
       vocabularyInserted: 0,
       quizInserted: 0,
       subtitlesInserted: 0,
-      mediaUploaded: 0,
-      mediaFailures: [],
+      mediaUploaded: mediaResult.mediaUploaded,
+      mediaFailures: mediaResult.mediaFailures,
       warnings,
       errors: [imported.error ?? "Bulk content import failed."],
       created: shell.created,
     };
   }
-
-  const mediaResult = await finalizePackageMediaImport({
-    validation,
-    courseId,
-    lessonId: resolvedLessonId,
-  });
-  warnings.push(...mediaResult.warnings);
 
   logAdminActivityFireAndForget({
     action: ADMIN_ACTIVITY_ACTIONS.bulkImportCompleted,

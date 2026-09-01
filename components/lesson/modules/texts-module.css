@@ -159,6 +159,16 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
+  border-radius: 12px;
+  margin: 0 -8px;
+  padding: 4px 8px;
+  transition: background-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* 课文 сонсох үед subtitle-тэй тулгаж идэвхтэй өгүүлбэрийг тодруулна */
+.bs-txt-sentence--active {
+  background: color-mix(in srgb, var(--bs-green, #1FB85A) 12%, transparent);
+  box-shadow: inset 3px 0 0 var(--bs-green, #1FB85A);
 }
 
 .bs-txt-ruby-line {

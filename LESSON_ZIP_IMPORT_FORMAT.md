@@ -141,7 +141,9 @@ Supported types: **`multiple_choice`**, **`cloze`** only (same as bulk import).
 
 `correctAnswer` must match one of `options` (for `multiple_choice`).
 
-Optional fields: `lessonSection`, `phase` (`check` | `practice`), `orderIndex`, `skillTags`, `difficulty`, `id`.
+Optional fields: `lessonSection`, `phase` (`check` | `practice`), `orderIndex`, `skillTags`, `difficulty`, `id`, `audio`.
+
+**Listening questions:** `audio` may be a ZIP-relative path (`audio/clip.mp3`, uploaded to Storage and written to `quiz_questions.audio_url`) or an absolute `https://` URL. The player shows a 🔊 Сонсох button above the options. Chinese/HSK packages may also ship a separate `listening_quiz_draft.json` (see docs/BUUNDUU_CHINESE_HSK_PACKAGE_V1.md) whose rows are appended after quiz.json.
 
 ```json
 [
@@ -178,7 +180,9 @@ See [KOREAN_LESSON_PACKAGE_SPEC.md](./KOREAN_LESSON_PACKAGE_SPEC.md) for full Te
 ]
 ```
 
-Aliases: `start`/`end` instead of `startTime`/`endTime`.
+Aliases: `start`/`end` instead of `startTime`/`endTime`. Time format: `mm:ss`, `mm:ss.t`, `h:mm:ss` or plain seconds.
+
+For Chinese/HSK package lessons the lesson-path player uses these rows to highlight the matching 课文 sentence while its audio plays (matched by `chinese` text — copy the sentence `zh` exactly from texts.json).
 
 ---
 

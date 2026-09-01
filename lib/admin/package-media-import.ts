@@ -16,6 +16,7 @@ import {
 } from "@/lib/lesson/teaching-media";
 import { buildVocabPronunciationMapFromRows } from "@/lib/import/korean-lesson-normalize";
 import { updateLessonMedia } from "@/lib/supabase/admin-content";
+import type { LessonImportPayload } from "@/lib/supabase/admin-import";
 import { hasSupabaseConfig, supabase } from "@/lib/supabase/client";
 import { LESSON_MEDIA_BUCKET } from "@/lib/supabase/media-upload";
 
@@ -152,6 +153,97 @@ export function resolveMediaUrl(
   return fallback?.publicUrl ?? undefined;
 }
 
+/** Exact zip-path match only — no fallback to unrelated uploads. */
+function resolveUploadUrlByPath(
+  uploads: PackageMediaUploadResult[],
+  zipPath: string,
+  kind: "audio" | "image"
+): string | undefined {
+  const normalized = normalizeZipPath(zipPath).toLowerCase();
+  const match = uploads.find(
+    (item) =>
+      item.kind === kind &&
+      !item.error &&
+      item.publicUrl &&
+      normalizeZipPath(item.zipPath).toLowerCase() === normalized
+  );
+  return match?.publicUrl ?? undefined;
+}
+
+/**
+ * Resolve listening-question audio ZIP paths to uploaded Storage URLs.
+ * Runs after Storage upload, before bulk content import.
+ */
+export function applyQuizAudioUploads(
+  payload: LessonImportPayload,
+  uploads: PackageMediaUploadResult[],
+  warnings: string[]
+): LessonImportPayload {
+  const hasAudioRefs = payload.quizQuestions.some((item) => item.audioFile);
+  if (!hasAudioRefs) return payload;
+
+  const quizQuestions = payload.quizQuestions.map((item) => {
+    if (item.audioUrl || !item.audioFile) return item;
+    const url = resolveUploadUrlByPath(uploads, item.audioFile, "audio");
+    if (!url) {
+      warnings.push(
+        `Quiz audio "${item.audioFile}" Storage URL олдсонгүй — асуулт audio-гүй импортлогдлоо.`
+      );
+      return { ...item, audioFile: undefined };
+    }
+    return { ...item, audioUrl: url, audioFile: undefined };
+  });
+
+  return { ...payload, quizQuestions };
+}
+
+/**
+ * API-route import flow inserts quiz rows BEFORE media upload, so listening
+ * question audio_url is patched here after Storage upload (matched by
+ * lesson_id + order_index).
+ */
+export async function applyQuizAudioUrlsAfterUpload(input: {
+  lessonId: string;
+  quizQuestions: LessonImportPayload["quizQuestions"];
+  uploads: PackageMediaUploadResult[];
+}): Promise<{ updated: number; warnings: string[] }> {
+  const warnings: string[] = [];
+  const pending = input.quizQuestions.filter(
+    (item) => item.audioFile && !item.audioUrl
+  );
+  if (pending.length === 0) return { updated: 0, warnings };
+  if (!supabase || !hasSupabaseConfig) {
+    warnings.push("Supabase тохиргоогүй — quiz audio URL хадгалагдсангүй.");
+    return { updated: 0, warnings };
+  }
+
+  let updated = 0;
+  for (const item of pending) {
+    const audioFile = item.audioFile as string;
+    const url = resolveUploadUrlByPath(input.uploads, audioFile, "audio");
+    if (!url) {
+      warnings.push(
+        `Quiz audio "${audioFile}" Storage URL олдсонгүй — асуулт audio-гүй үлдлээ.`
+      );
+      continue;
+    }
+    const { error } = await supabase
+      .from("quiz_questions")
+      .update({ audio_url: url })
+      .eq("lesson_id", input.lessonId)
+      .eq("order_index", item.orderIndex);
+    if (error) {
+      warnings.push(
+        `Quiz audio URL хадгалахад алдаа ("${audioFile}"): ${error.message}`
+      );
+    } else {
+      updated += 1;
+    }
+  }
+
+  return { updated, warnings };
+}
+
 export function resolveTeachingImagesFromUploads(
   refs: TeachingImageRef[] | undefined,
   uploads: PackageMediaUploadResult[]
@@ -202,9 +294,26 @@ function resolveHeroThumbnailUrl(
         img.type?.toLowerCase() === "teacher-intro"
     ) ?? teachingImages[0];
 
-  if (!heroImage?.file && !heroImage?.url) return undefined;
-  if (heroImage.url) return heroImage.url;
-  return resolveMediaUrl(uploads, heroImage.file, "image");
+  if (heroImage?.url) return heroImage.url;
+  if (heroImage?.file) {
+    const fromTeachingFile = resolveMediaUrl(uploads, heroImage.file, "image");
+    if (fromTeachingFile) return fromTeachingFile;
+  }
+
+  // Last resort: an uploaded image named cover/hero/thumbnail — or the only image.
+  const imageUploads = uploads.filter(
+    (item) => item.kind === "image" && !item.error && item.publicUrl
+  );
+  const byFileName = (pattern: RegExp) =>
+    imageUploads.find((item) =>
+      pattern.test(item.zipPath.split("/").pop() ?? "")
+    );
+  const coverUpload =
+    byFileName(/^cover\./i) ??
+    byFileName(/^hero\./i) ??
+    byFileName(/^thumb(nail)?\./i) ??
+    (imageUploads.length === 1 ? imageUploads[0] : undefined);
+  return coverUpload?.publicUrl ?? undefined;
 }
 
 function buildVocabAudioMapFromUploads(

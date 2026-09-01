@@ -150,6 +150,7 @@ type DbQuizQuestion = {
   correct_answer: string;
   explanation: string | null;
   option_feedback?: unknown;
+  audio_url?: string | null;
   order_index: number;
 };
 
@@ -199,6 +200,7 @@ function mapDbQuizRowsToQuestions(
       correctAnswer: q.correct_answer,
       explanation: q.explanation ?? "",
       optionFeedback: parseOptionFeedback(q.option_feedback),
+      audioUrl: q.audio_url?.trim() || undefined,
     })
   );
 }
@@ -212,7 +214,7 @@ export async function getSupabaseQuizQuestionsByLessonIdWithClient(
   const quiz = await fetchChildRowsForLesson<DbQuizQuestion>(
     client,
     "quiz_questions",
-    "id, lesson_id, type, question, options, correct_answer, explanation, option_feedback, order_index",
+    "id, lesson_id, type, question, options, correct_answer, explanation, option_feedback, audio_url, order_index",
     normalizedId
   );
 
@@ -670,7 +672,7 @@ export async function getSupabaseLessonByIdWithClient(
     fetchChildRowsForLesson<DbQuizQuestion>(
       client,
       "quiz_questions",
-      "id, lesson_id, type, question, options, correct_answer, explanation, option_feedback, order_index",
+      "id, lesson_id, type, question, options, correct_answer, explanation, option_feedback, audio_url, order_index",
       canonicalId
     ),
   ]);

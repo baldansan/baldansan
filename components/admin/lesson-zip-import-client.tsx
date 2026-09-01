@@ -19,7 +19,10 @@ import {
   type ImportDraftApiBody,
 } from "@/lib/admin/build-import-draft-request";
 import type { LessonPackageImportResult } from "@/lib/admin/import-lesson-package";
-import { finalizePackageMediaImport } from "@/lib/admin/package-media-import";
+import {
+  applyQuizAudioUrlsAfterUpload,
+  finalizePackageMediaImport,
+} from "@/lib/admin/package-media-import";
 import { parseChineseLessonZip } from "@/lib/import/chinese-lesson-zip-import";
 import { parseKoreanLessonZip } from "@/lib/import/korean-lesson-zip-import";
 import { KOREAN_COURSE_SETUP_SQL } from "@/lib/import/korean-lesson-normalize";
@@ -214,6 +217,11 @@ export function LessonZipImportClient({
           courseId: payload.courseId,
           lessonId: result.lessonId,
         });
+        const quizAudioResult = await applyQuizAudioUrlsAfterUpload({
+          lessonId: result.lessonId,
+          quizQuestions: payload.importPayload.quizQuestions,
+          uploads: mediaResult.mediaFailures,
+        });
         result = {
           ...result,
           mediaUploaded: mediaResult.mediaUploaded,
@@ -222,7 +230,16 @@ export function LessonZipImportClient({
           heroImageFound: mediaResult.heroImageFound,
           imageStorageStatus: mediaResult.imageStorageStatus,
           mediaFailures: mediaResult.mediaFailures,
-          warnings: [...(result.warnings ?? []), ...mediaResult.warnings],
+          warnings: [
+            ...(result.warnings ?? []),
+            ...mediaResult.warnings,
+            ...quizAudioResult.warnings,
+            ...(quizAudioResult.updated > 0
+              ? [
+                  `Listening quiz audio: ${quizAudioResult.updated} асуултад audio URL холбогдлоо.`,
+                ]
+              : []),
+          ],
           audioUrl: mediaResult.audioUrl ?? result.audioUrl,
           thumbnailUrl: mediaResult.thumbnailUrl ?? result.thumbnailUrl,
         };
@@ -545,8 +562,15 @@ ZIP layer (chinese-hsk):
 Bulk import layer (validateLessonImportPayload):
   vocabulary[]   → chinese|target + mongolian (required per row)
   quizQuestions[] → question|prompt + correctAnswer|answer;
-                   multiple_choice needs options.length >= 2
+                   multiple_choice needs options.length >= 2;
+                   optional audio (ZIP path audio/…) or audioUrl (absolute)
+                   → quiz_questions.audio_url (listening question)
   subtitles[]    → chinese|target + mongolian + start|startTime + end|endTime
+                   (mm:ss[.t] / h:mm:ss / seconds) → 课文 sentence highlight sync
+  listening_quiz_draft.json → optional; question + audio + options[] + answer
+                   (option index "0"-based or text); merged after quiz.json
+  images/cover.* → auto-detected lesson thumbnail when lesson.json
+                   thumbnailFile / media.json hero is missing
 
 Full package doc: docs/BUUNDUU_CHINESE_HSK_PACKAGE_V1.md`}
             </pre>

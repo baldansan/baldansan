@@ -79,9 +79,21 @@ function LessonCard({
 }) {
   const isLocked = lesson.status === "locked";
   const lessonNumber = resolveLessonOrder(lesson);
+  const coverUrl = lesson.thumbnailUrl || lesson.imageUrl;
 
   return (
-    <article className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:rounded-3xl sm:p-6">
+    <article className="overflow-hidden rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:rounded-3xl sm:p-6">
+      {coverUrl ? (
+        <div className="-mx-5 -mt-5 mb-4 sm:-mx-6 sm:-mt-6">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={coverUrl}
+            alt={`${lesson.title} cover`}
+            loading="lazy"
+            className="aspect-[16/9] w-full object-cover"
+          />
+        </div>
+      ) : null}
       <div className="flex flex-wrap items-start justify-between gap-3">
         <div className="min-w-0 flex-1">
           <p className="text-xs font-medium text-emerald-600">

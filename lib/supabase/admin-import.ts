@@ -76,6 +76,13 @@ export type QuizImportItem = {
   order_index?: number;
   skillTags?: string[];
   difficulty?: string;
+  /** Listening question audio: ZIP path (resolved to Storage URL on package import). */
+  audio?: string;
+  audioFile?: string;
+  audio_file?: string;
+  /** Listening question audio: already-absolute URL. */
+  audioUrl?: string;
+  audio_url?: string;
 };
 
 export type NormalizedSubtitleImport = {
@@ -105,6 +112,10 @@ export type NormalizedQuizImport = {
   optionFeedback?: Record<string, string>;
   skillTags?: string[];
   difficulty?: string;
+  /** Absolute audio URL for listening questions (written to quiz_questions.audio_url). */
+  audioUrl?: string;
+  /** ZIP-relative audio path — package import resolves this to audioUrl after Storage upload. */
+  audioFile?: string;
 };
 
 export type LessonImportPayload = {
@@ -272,6 +283,7 @@ function mapQuizQuestionToDbRow(
     correct_answer: item.correctAnswer,
     explanation: item.explanation,
     option_feedback: item.optionFeedback ?? null,
+    audio_url: item.audioUrl ?? null,
     order_index: item.orderIndex ?? fallbackOrder,
   };
 }
@@ -499,6 +511,15 @@ export function validateLessonImportPayload(
         const optionFeedback = parseOptionFeedback(
           item.optionFeedback ?? item.option_feedback
         );
+        const audioRaw = String(
+          item.audio ??
+            item.audioFile ??
+            item.audio_file ??
+            item.audioUrl ??
+            item.audio_url ??
+            ""
+        ).trim();
+        const isAbsoluteAudio = /^https?:\/\//i.test(audioRaw);
         quizQuestions.push({
           type,
           question,
@@ -509,6 +530,8 @@ export function validateLessonImportPayload(
           optionFeedback,
           skillTags,
           difficulty,
+          audioUrl: isAbsoluteAudio ? audioRaw : undefined,
+          audioFile: audioRaw && !isAbsoluteAudio ? audioRaw : undefined,
         });
       }
     }

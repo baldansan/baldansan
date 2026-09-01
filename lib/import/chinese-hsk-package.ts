@@ -9,11 +9,13 @@ import {
 import {
   buildLessonImportPreview,
   extractZipMediaFiles,
+  findCoverImageFile,
   mapZipPackageToBulkImport,
   type LessonZipMediaFile,
   type LessonZipPackage,
   type LessonZipValidation,
 } from "@/lib/import/lesson-zip-import";
+import { normalizeListeningQuizDraft } from "@/lib/import/chinese-hsk-listening-quiz";
 import { normalizeZipPath } from "@/lib/import/zip-path";
 import { readJsonFromZip, readJsonFromZipFirst } from "@/lib/import/zip-json-read";
 import { validateLessonImportPayload } from "@/lib/supabase/admin-import";
@@ -314,6 +316,29 @@ export async function parseChineseHskLessonZip(file: File): Promise<LessonZipVal
         ? normalizeZipQuiz(rawFiles.quiz as Record<string, unknown>[], errors, warnings)
         : [];
 
+    // listening_quiz_draft.json — merge listening questions after quiz.json rows.
+    const listeningDraftResult = await readJsonFileFirst(zip, [
+      "listening_quiz_draft.json",
+      "listening-quiz-draft.json",
+    ]);
+    if (listeningDraftResult.data != null) {
+      const maxOrder = quizQuestions.reduce(
+        (max, row) => Math.max(max, row.orderIndex ?? 0),
+        quizQuestions.length
+      );
+      const listeningRows = normalizeListeningQuizDraft(
+        listeningDraftResult.data,
+        maxOrder,
+        warnings
+      );
+      if (listeningRows.length > 0) {
+        quizQuestions.push(...listeningRows);
+        warnings.push(
+          `listening_quiz_draft.json: ${listeningRows.length} сонсголын асуулт quiz-д нэгтгэгдэнэ.`
+        );
+      }
+    }
+
     const subtitles = Array.isArray(rawFiles.subtitles)
       ? rawFiles.subtitles.filter(
           (row): row is Record<string, unknown> =>
@@ -323,6 +348,23 @@ export async function parseChineseHskLessonZip(file: File): Promise<LessonZipVal
 
     const mediaFiles: LessonZipMediaFile[] = await extractZipMediaFiles(zip);
     const hasQaReport = zipHasFile(zip, "QA_REPORT.md") || zipHasFile(zip, "qa_report.md");
+
+    // Listening quiz audio refs must exist in the ZIP (warning only).
+    const zipMediaPaths = new Set(
+      mediaFiles.map((file) => normalizeZipPath(file.zipPath).toLowerCase())
+    );
+    for (const row of quizQuestions) {
+      const audioFile = String(row.audioFile ?? "").trim();
+      if (
+        audioFile &&
+        !/^https?:\/\//i.test(audioFile) &&
+        !zipMediaPaths.has(normalizeZipPath(audioFile).toLowerCase())
+      ) {
+        warnings.push(
+          `quiz audio "${audioFile}" listed but not found in ZIP — listening question imports without audio.`
+        );
+      }
+    }
 
     const hskValidation = validateChineseHskPackage(rawFiles, hskManifest, {
       vocabularyRowCount: vocabulary.length,
@@ -439,6 +481,18 @@ export async function parseChineseHskLessonZip(file: File): Promise<LessonZipVal
       lesson.lessonType =
         lesson.lessonType ?? resolveHskImportLessonType(hskManifest, rawFiles.lesson);
       lesson.status = "draft";
+    }
+
+    // Cover fallback: images/cover.* (or hero/thumbnail/only image) becomes the
+    // lesson thumbnail when neither lesson.json thumbnailFile nor media.json hero is set.
+    if (lesson && !lesson.thumbnailFile) {
+      const coverFile = findCoverImageFile(mediaFiles);
+      if (coverFile) {
+        lesson.thumbnailFile = coverFile.zipPath;
+        warnings.push(
+          `Cover image auto-detected: "${coverFile.zipPath}" → lesson thumbnail.`
+        );
+      }
     }
 
     const pkg: LessonZipPackage & { hskMeta?: typeof hskValidation.meta } = {

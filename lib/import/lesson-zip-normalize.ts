@@ -80,6 +80,8 @@ export type NormalizedZipQuiz = {
   lessonSection?: string;
   phase?: string;
   orderIndex?: number;
+  /** Listening question audio: ZIP-relative path (audio/…) or absolute URL. */
+  audioFile?: string;
 };
 
 function isRecord(value: unknown): value is Record<string, unknown> {
@@ -402,6 +404,9 @@ export function normalizeZipQuizRow(
     lessonSection,
     phase,
     orderIndex,
+    audioFile:
+      trim(item.audio ?? item.audioFile ?? item.audio_file ?? item.audioUrl ?? item.audio_url) ||
+      undefined,
   };
 }
 
@@ -461,6 +466,7 @@ export function mapNormalizedQuizToBulkImport(
     lessonSection: row.lessonSection,
     phase: row.phase,
     orderIndex: row.orderIndex,
+    audio: row.audioFile,
   }));
 }
 

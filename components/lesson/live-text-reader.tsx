@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import type {
   HskPackageParagraphSummary,
   HskPackageShortText,
@@ -42,9 +42,15 @@ function buildVocabMap(words: HskPackageVocabItem[]): Map<string, VocabHint> {
 type Props = {
   text: HskPackageShortText;
   vocabulary?: HskPackageVocabItem[];
+  /** Sentence highlighted while 课文 audio plays (subtitle_lines sync). */
+  activeSentenceIndex?: number | null;
 };
 
-export function LiveTextReader({ text, vocabulary = [] }: Props) {
+export function LiveTextReader({
+  text,
+  vocabulary = [],
+  activeSentenceIndex = null,
+}: Props) {
   const vocabByZh = useMemo(() => buildVocabMap(vocabulary), [vocabulary]);
   const vocabWords = useMemo(() => [...vocabByZh.keys()], [vocabByZh]);
   const sentences: HskPackageTextSentence[] = text.sentences ?? [];
@@ -58,11 +64,21 @@ export function LiveTextReader({ text, vocabulary = [] }: Props) {
     null
   );
 
+  const sentenceRefs = useRef<Array<HTMLDivElement | null>>([]);
+
   useEffect(() => {
     setShowPinyin(loadTextReaderShowPinyin());
     setShowMn(loadTextReaderShowMn());
     setPrefsReady(true);
   }, []);
+
+  useEffect(() => {
+    if (activeSentenceIndex == null) return;
+    sentenceRefs.current[activeSentenceIndex]?.scrollIntoView({
+      behavior: "smooth",
+      block: "center",
+    });
+  }, [activeSentenceIndex]);
 
   function togglePinyin() {
     setShowPinyin((prev) => {
@@ -146,10 +162,17 @@ export function LiveTextReader({ text, vocabulary = [] }: Props) {
     const tokens = coalesceSentenceTokens(sentence, vocabWords);
     const allowNonVocabTap = Boolean(sentence.word_tap);
 
+    const isActive = activeSentenceIndex === si;
+
     return (
       <div
         key={si}
-        className={`bs-txt-sentence${hasNote ? " bs-txt-sentence--noted" : ""}`}
+        ref={(el) => {
+          sentenceRefs.current[si] = el;
+        }}
+        className={`bs-txt-sentence${hasNote ? " bs-txt-sentence--noted" : ""}${
+          isActive ? " bs-txt-sentence--active" : ""
+        }`}
       >
         <div className="bs-txt-ruby-line">
           {tokens.map((tok, ti2) =>
