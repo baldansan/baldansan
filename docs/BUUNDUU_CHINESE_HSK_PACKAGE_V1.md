@@ -17,9 +17,10 @@ hsk-lesson.zip
 ├── notes.json             (optional)
 ├── workbook.json          (profile-dependent)
 ├── audio-manifest.json    (optional)
-├── subtitles.json         (optional)
+├── subtitles.json         (optional — 课文 highlight sync, see below)
+├── listening_quiz_draft.json (optional — listening quiz, see below)
 ├── audio/                 (optional)
-├── images/                (optional)
+├── images/                (optional — cover.jpg → lesson thumbnail, see below)
 ├── README.md              (optional)
 └── QA_REPORT.md           (optional — recommended)
 ```
@@ -108,6 +109,61 @@ If `lessonProfile` is missing but `hskLevel` is set:
   }
 }
 ```
+
+## subtitles.json — 课文 sentence sync
+
+```json
+[
+  {
+    "start": "00:03",
+    "end": "00:07.5",
+    "chinese": "尊敬的各位来宾，大家好。",
+    "pinyin": "Zūnjìng de gèwèi láibīn, dàjiā hǎo.",
+    "mongolian": "Эрхэм зочид оо, та бүхэнд энэ өдрийн мэнд хүргэе."
+  }
+]
+```
+
+- Aliases: `startTime`/`endTime` for `start`/`end`. Time format: `mm:ss`, `mm:ss.t`, `h:mm:ss` or plain seconds.
+- Rows import into `subtitle_lines`. Required per row: `chinese`, `mongolian`, `start`, `end` (`pinyin` optional).
+- **Player behavior:** while a 课文 audio plays in the lesson path (Богино эх), the sentence whose subtitle window contains the playback time is highlighted and scrolled into view. Matching is by **chinese text** (whitespace/punctuation-insensitive), so one flat list covers every 课文 in the lesson — copy each sentence's `zh` exactly from texts.json.
+- One lesson typically has 2 texts with separate audio files; timestamps are per audio file (both texts can start at 00:00 — text matching keeps them apart).
+
+## Listening quiz (quiz.json `audio` / listening_quiz_draft.json)
+
+Two equivalent ways to ship listening questions:
+
+**A. quiz.json items with `audio`:**
+
+```json
+{
+  "id": "q31",
+  "type": "choice",
+  "question": "Сонсоод зөв хариуг сонго.",
+  "audio": "audio/hsk5a-l12-wb-q01.mp3",
+  "options": ["Нисэх буудалд", "Зочид буудалд", "Их сургуульд"],
+  "answer": "Зочид буудалд",
+  "explanation": "..."
+}
+```
+
+**B. Separate `listening_quiz_draft.json`** (array or `{"questions": [...]}`) — items use `question`, `audio`, `options[]`, `answer` (option index `"0"`-based OR option text), `explanation_mn`. These rows are appended after quiz.json questions with `skillTags: ["listening"]`.
+
+Import behavior:
+
+- `audio` is a ZIP-relative path (`audio/...`) uploaded to Storage; the resulting public URL is written to `quiz_questions.audio_url` (migration 053). An absolute `https://` URL is also accepted and stored as-is.
+- A missing audio file in the ZIP is a **warning** — the question imports without audio.
+- Player: a question with `audio_url` shows a 🔊 Сонсох play/pause button above the options (both the lesson-path quiz stage and the standalone quiz page). TTS question read-out is suppressed for these questions.
+
+## Lesson cover image (images/)
+
+Thumbnail resolution order at import:
+
+1. `lesson.json` `thumbnailFile` (ZIP path)
+2. `media.json` image with `role: "hero"`
+3. **Auto-detect:** `images/cover.*` → `hero.*` → `thumbnail.*` → the only image in the ZIP
+
+The chosen image uploads to Storage and is written to `lessons.thumbnail_url` + `lessons.image_url`, clearing the admin "Image missing" flag. The cover renders on the lesson detail page and the course lesson list card (16:9, `images/cover.jpg` recommended, no text, app green-dark palette).
 
 ## Import behavior
 

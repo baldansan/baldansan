@@ -246,7 +246,13 @@ export default function LessonPathPlayer({
           </>
         );
       case "text":
-        return <TextsModule lesson={lesson} onDone={finishModuleStage} />;
+        return (
+          <TextsModule
+            lesson={lesson}
+            timedSubtitles={lessonContent.timedSubtitles}
+            onDone={finishModuleStage}
+          />
+        );
       case "grammar":
         return <GrammarModule lessonId={lessonId} lesson={lesson} onDone={finishModuleStage} />;
       case "practice":

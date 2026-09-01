@@ -49,6 +49,7 @@ import { SpeakerButton } from "@/components/tts/speaker-button";
 import { containsTargetScript } from "@/lib/tts/infer-lang";
 import { resolveKoreanTtsLang } from "@/lib/lesson/teaching-media";
 import { QuizAnswerFeedback } from "@/components/lesson/quiz-answer-feedback";
+import { QuizAudioButton } from "@/components/lesson/quiz-audio-button";
 import type { LessonContent } from "@/types/lesson-content";
 import type { QuizQuestion } from "@/types/lesson";
 
@@ -477,7 +478,7 @@ export function LessonQuizClient({
                 <h2 className="min-w-0 flex-1 text-lg font-semibold leading-snug text-slate-900 sm:text-xl">
                   {current.question}
                 </h2>
-                {containsTargetScript(current.question) ? (
+                {!current.audioUrl && containsTargetScript(current.question) ? (
                   <SpeakerButton
                     text={current.question}
                     lang={ttsLang}
@@ -486,6 +487,14 @@ export function LessonQuizClient({
                   />
                 ) : null}
               </div>
+
+              {current.audioUrl ? (
+                <QuizAudioButton
+                  key={current.audioUrl}
+                  audioUrl={current.audioUrl}
+                  className="mt-4"
+                />
+              ) : null}
 
               <div className="mt-5 flex flex-col gap-2.5">
                 {current.options.map((option) => (

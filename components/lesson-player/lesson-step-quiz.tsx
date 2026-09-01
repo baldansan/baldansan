@@ -7,6 +7,7 @@ import { memo } from "react";
 import { SpeakerButton } from "@/components/tts/speaker-button";
 import { LessonPlayerCard } from "@/components/lesson-player/lesson-player-shell";
 import { QuizAnswerFeedback } from "@/components/lesson/quiz-answer-feedback";
+import { QuizAudioButton } from "@/components/lesson/quiz-audio-button";
 import { containsTargetScript } from "@/lib/tts/infer-lang";
 import type { QuizQuestion } from "@/types/lesson";
 import type { VocabularyWord } from "@/types/lesson";
@@ -81,7 +82,7 @@ function LessonStepQuizInner({
         <h2 className="min-w-0 flex-1 text-lg font-bold leading-snug text-slate-900">
           {question.question}
         </h2>
-        {containsTargetScript(question.question) ? (
+        {!question.audioUrl && containsTargetScript(question.question) ? (
           <SpeakerButton
             text={question.question}
             lang={ttsLang}
@@ -90,6 +91,14 @@ function LessonStepQuizInner({
           />
         ) : null}
       </div>
+
+      {question.audioUrl ? (
+        <QuizAudioButton
+          key={question.audioUrl}
+          audioUrl={question.audioUrl}
+          className="mt-4"
+        />
+      ) : null}
 
       <div className="mt-5 flex flex-col gap-2.5">
         {question.options.map((option) => (

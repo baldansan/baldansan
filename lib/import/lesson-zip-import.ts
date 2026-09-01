@@ -178,6 +178,29 @@ export async function extractZipMediaFiles(
   return media;
 }
 
+/**
+ * Find the package cover image among extracted ZIP media files.
+ * Preference: images/cover.* → hero.* → thumb(nail).* → the only image in the ZIP.
+ */
+export function findCoverImageFile(
+  mediaFiles: LessonZipMediaFile[]
+): LessonZipMediaFile | null {
+  const images = mediaFiles.filter((file) => file.kind === "image");
+  if (images.length === 0) return null;
+
+  const byName = (pattern: RegExp) =>
+    images.find((file) => pattern.test(file.fileName)) ?? null;
+
+  return (
+    byName(/^cover\./i) ??
+    byName(/^hero\./i) ??
+    byName(/^thumb(nail)?\./i) ??
+    byName(/cover/i) ??
+    byName(/hero/i) ??
+    (images.length === 1 ? images[0] : null)
+  );
+}
+
 function parseArrayFile(
   raw: unknown,
   field: string,
@@ -288,6 +311,19 @@ export function validateLessonZipPackage(
     if (audioFile && !zipPathExists(zipPaths, audioFile)) {
       warnings.push(
         `vocabulary audioFile "${audioFile}" listed but not found in ZIP — per-word audio is not stored in DB yet.`
+      );
+    }
+  }
+
+  for (const row of pkg.quizQuestions) {
+    const audioFile = String(row.audioFile ?? "").trim();
+    if (
+      audioFile &&
+      !/^https?:\/\//i.test(audioFile) &&
+      !zipPathExists(zipPaths, audioFile)
+    ) {
+      warnings.push(
+        `quiz audio "${audioFile}" listed but not found in ZIP — listening question imports without audio.`
       );
     }
   }

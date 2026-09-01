@@ -120,6 +120,8 @@ export type QuizQuestion = {
   explanation: string;
   /** Per-option feedback keyed by option text (from quiz.json optionFeedback). */
   optionFeedback?: Record<string, string>;
+  /** Listening question audio clip URL (quiz_questions.audio_url). */
+  audioUrl?: string;
   /** Optional import metadata — used for distractor generation when present. */
   skillTags?: string[];
   difficulty?: "easy" | "medium" | "hard";
