@@ -10,6 +10,8 @@ export const LEARNER_COURSE_PROBE_IDS = [
   "hsk6",
   "hsk5",
   "hsk4",
+  "hsk3",
+  "hsk2",
   "hsk1",
   "hsk",
   "korean-level-1",
