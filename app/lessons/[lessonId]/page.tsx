@@ -28,6 +28,7 @@ import {
   koreanVocabularyStudyCtaLabel,
 } from "@/lib/lesson/korean-vocabulary-ui";
 import { HskLessonDetailView } from "@/components/lesson/hsk-lesson-detail-view";
+import { DownloadLessonButton } from "@/components/lesson/download-lesson-button";
 import { isHskStructuredLesson } from "@/lib/lesson/hsk-lesson-content";
 import { TeacherAssignmentCta } from "@/components/teacher/teacher-assignment-cta";
 import { MobileCard } from "@/components/mobile/mobile-card";
@@ -104,6 +105,7 @@ export default async function LessonDetailPage({
           >
             ← Курс руу буцах
           </Link>
+          <DownloadLessonButton lessonId={lesson.id} />
           <HskLessonDetailView lesson={lesson} adminPreview={adminPreview} />
         </div>
       </MobileAppShell>
@@ -248,6 +250,7 @@ export default async function LessonDetailPage({
           />
         </MobileCard>
 
+        <DownloadLessonButton lessonId={lesson.id} />
         <LessonProgressCard lessonId={lesson.id} quizCount={lesson.quizCount} />
         <TeacherAssignmentCta lessonId={lesson.id} />
       </div>
