@@ -48,7 +48,7 @@ async function appendKoreanCourses(
   return next;
 }
 
-const HSK_CATALOG_LEVELS = ["hsk6", "hsk5", "hsk4"] as const;
+const HSK_CATALOG_LEVELS = ["hsk6", "hsk5", "hsk4", "hsk3", "hsk2", "hsk1"] as const;
 
 async function appendHskCourse(
   catalog: Course[],

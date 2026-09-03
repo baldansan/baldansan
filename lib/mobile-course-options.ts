@@ -23,6 +23,9 @@ type CourseMeta = {
 };
 
 export const HSK_HOME_LEVELS = [
+  { chipId: "hsk1", chipLabel: "HSK 1", courseId: "hsk1" },
+  { chipId: "hsk2", chipLabel: "HSK 2", courseId: "hsk2" },
+  { chipId: "hsk3", chipLabel: "HSK 3", courseId: "hsk3" },
   { chipId: "hsk4", chipLabel: "HSK 4", courseId: "hsk4" },
   { chipId: "hsk5", chipLabel: "HSK 5", courseId: "hsk5" },
   { chipId: "hsk6", chipLabel: "HSK 6", courseId: "hsk6" },

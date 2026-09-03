@@ -22,7 +22,14 @@ type KoreanLoadResult = {
   lessons: Awaited<ReturnType<typeof getPublicLessonSummariesByCourseId>>;
 } | null;
 
-const HSK_LEVEL_IDS: HskHomeLevelId[] = ["hsk4", "hsk5", "hsk6"];
+const HSK_LEVEL_IDS: HskHomeLevelId[] = [
+  "hsk1",
+  "hsk2",
+  "hsk3",
+  "hsk4",
+  "hsk5",
+  "hsk6",
+];
 
 async function loadKoreanCourseForHome(): Promise<KoreanLoadResult> {
   const candidates = ["korean-level-1", "korean-1", "korean-survival"] as const;
@@ -55,6 +62,9 @@ async function loadHskLevelForHome(courseId: HskHomeLevelId) {
   ]);
 
   const defaultTitles: Record<HskHomeLevelId, string> = {
+    hsk1: "HSK 1",
+    hsk2: "HSK 2",
+    hsk3: "HSK 3",
     hsk4: "HSK 4",
     hsk5: "HSK 5",
     hsk6: "HSK 6",
