@@ -52,6 +52,7 @@ export function HomeLessonList({
           const status = statusByLesson[lesson.id] ?? "not_started";
           const completed = status === "completed";
           const lessonNo = index + 1;
+          const coverUrl = lesson.thumbnailUrl || lesson.imageUrl;
 
           return (
             <li key={lesson.id}>
@@ -67,6 +68,12 @@ export function HomeLessonList({
                 >
                   {lessonNo}
                 </span>
+                {coverUrl ? (
+                  <span className="bs-tm-lesson-thumb" aria-hidden>
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img src={coverUrl} alt="" loading="lazy" />
+                  </span>
+                ) : null}
                 <span className="bs-tm-lesson-body">
                   <span className="bs-tm-lesson-zh hanzi">
                     {lesson.chineseTitle}
