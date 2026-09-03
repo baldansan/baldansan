@@ -28,11 +28,21 @@ export function PwaServiceWorkerRegister() {
     });
 
     if (disable || isLocalDevHost(hostname)) {
-      void (async () => {
-        const registrations = await navigator.serviceWorker.getRegistrations();
-        await Promise.all(registrations.map((registration) => registration.unregister()));
-        await clearServiceWorkerCaches();
-      })();
+      // Local dev / test hosts: fully remove SW + caches.
+      // Admin/debug pages on production: do nothing — the SW already
+      // bypasses those routes, and clearing caches here would wipe
+      // lessons the user downloaded for offline study.
+      const devHost =
+        process.env.NODE_ENV === "development" ||
+        process.env.NODE_ENV === "test" ||
+        isLocalDevHost(hostname);
+      if (devHost) {
+        void (async () => {
+          const registrations = await navigator.serviceWorker.getRegistrations();
+          await Promise.all(registrations.map((registration) => registration.unregister()));
+          await clearServiceWorkerCaches();
+        })();
+      }
       return;
     }
 
