@@ -101,6 +101,33 @@ export function HomeAppView({ catalog, defaultChipId }: Props) {
     if (chip) setActiveChip(chip);
   }, [visibleCatalog]);
 
+  // Restore the last course the user picked; first-time visitors get a
+  // start guide instead (defaultChipId already points them at HSK 1).
+  const [showStartGuide, setShowStartGuide] = useState(false);
+  useEffect(() => {
+    try {
+      const saved = window.localStorage.getItem("bs:homeChip");
+      if (saved && catalog.some((entry) => entry.chipId === saved && entry.available)) {
+        setActiveChip(saved);
+      } else if (!saved) {
+        setShowStartGuide(true);
+      }
+    } catch {
+      // ignore
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  const pickChip = (chipId: string) => {
+    setActiveChip(chipId);
+    setShowStartGuide(false);
+    try {
+      window.localStorage.setItem("bs:homeChip", chipId);
+    } catch {
+      // ignore
+    }
+  };
+
   useEffect(() => {
     if (visibleCatalog.some((entry) => entry.chipId === activeChip)) return;
     const fallback =
@@ -257,6 +284,36 @@ export function HomeAppView({ catalog, defaultChipId }: Props) {
         </Link>
       ) : null}
 
+      {showStartGuide ? (
+        <div className="mb-3 rounded-[20px] bg-white p-4 shadow-sm ring-1 ring-emerald-100">
+          <p className="text-sm font-bold text-[var(--app-text)]">
+            👋 {tr(locale, "Хятад хэлийг шинээр эхэлж байна уу?")}
+          </p>
+          <p className="mt-1 text-xs leading-5 text-[var(--app-muted)]">
+            {tr(
+              locale,
+              "HSK 1-ээс эхлээрэй — дуудлага, хөгөөс эхлээд алхам алхмаар заана. Аль хэдийн суралцдаг бол доороос түвшнээ сонгоорой."
+            )}
+          </p>
+          <div className="mt-3 flex flex-wrap gap-2">
+            <button
+              type="button"
+              onClick={() => pickChip("hsk1")}
+              className="inline-flex items-center rounded-full bg-emerald-600 px-4 py-2 text-xs font-extrabold text-white shadow-sm active:bg-emerald-700"
+            >
+              {tr(locale, "HSK 1-ээс эхлэх")} →
+            </button>
+            <button
+              type="button"
+              onClick={() => pickChip(activeChip)}
+              className="inline-flex items-center rounded-full bg-slate-100 px-4 py-2 text-xs font-bold text-slate-600 active:bg-slate-200"
+            >
+              {tr(locale, "Би түвшнээ мэднэ")}
+            </button>
+          </div>
+        </div>
+      ) : null}
+
       {visibleCatalog.length > 1 ? (
         <div className="bs-tm-chip-row">
           {visibleCatalog.map((chip) => (
@@ -264,7 +321,7 @@ export function HomeAppView({ catalog, defaultChipId }: Props) {
               key={chip.chipId}
               type="button"
               disabled={!chip.available}
-              onClick={() => chip.available && setActiveChip(chip.chipId)}
+              onClick={() => chip.available && pickChip(chip.chipId)}
               className={`bs-tm-chip ${activeChip === chip.chipId ? "bs-tm-chip--on" : ""}`}
             >
               {chip.chipLabel}

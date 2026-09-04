@@ -113,11 +113,13 @@ export function defaultHomeChipId(
   catalog: MobileCourseCatalogEntry[]
 ): string {
   return (
+    catalog.find((entry) => entry.available && entry.courseId === "hsk1")
+      ?.chipId ??
     catalog.find((entry) => entry.available && entry.courseId === "hsk5")
       ?.chipId ??
     catalog.find((entry) => entry.available && entry.courseId === "hsk4")
       ?.chipId ??
     catalog.find((entry) => entry.available)?.chipId ??
-    "hsk5"
+    "hsk1"
   );
 }
