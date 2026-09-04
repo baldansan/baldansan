@@ -69,6 +69,22 @@ export function SettingsAppView() {
         subtitle={tr(uiLocale, "Бүртгэл болон app-ийн тохиргоо")}
       />
 
+      <Link
+        href="/baljmaa"
+        className="mb-4 flex items-center gap-3 rounded-2xl bg-gradient-to-r from-[#6b1f3f] to-[#8f2f55] px-4 py-3.5 text-white shadow-md active:opacity-90"
+      >
+        <span aria-hidden className="text-xl">
+          🌟
+        </span>
+        <span className="min-w-0 flex-1">
+          <span className="block text-sm font-extrabold">Зөвхөн Балжмаад</span>
+          <span className="block text-xs text-white/80">
+            Шанхайн уулзалтын танилцуулга — цээжлэх хэсэг
+          </span>
+        </span>
+        <span aria-hidden>›</span>
+      </Link>
+
       <MobileCard padding="lg" className="mb-4">
         <h2 className="text-sm font-bold text-[var(--app-text)]">
           {uiLocale === "zh" ? "界面语言 · Хэлний тохиргоо" : "Хэлний тохиргоо · 界面语言"}
