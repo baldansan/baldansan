@@ -24,6 +24,7 @@ import {
   recordQuestionAttempt,
 } from "@/lib/analytics/record-question-attempt";
 import { QuestionFeedbackButtons } from "@/components/feedback/question-feedback-buttons";
+import { resurfaceWrongQuizWord } from "@/lib/srs/seed-weak-words";
 import { resolveKoreanTtsLang } from "@/lib/lesson/teaching-media";
 import type { LessonContent } from "@/types/lesson-content";
 import type { QuizQuestion } from "@/types/lesson";
@@ -187,6 +188,13 @@ export function LessonPathQuizStage({
       correctAnswer: current.correctAnswer,
       timeSpentMs: getElapsed(),
     });
+    if (!ok) {
+      // Буруу хариулсан үгийн асуултын үг маргааш давталтад эргэж ирнэ.
+      resurfaceWrongQuizWord({
+        correctAnswer: current.correctAnswer,
+        vocabulary: lesson.vocabulary,
+      });
+    }
   }
 
   function handleSelect(option: string) {

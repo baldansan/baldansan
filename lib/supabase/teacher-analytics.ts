@@ -119,14 +119,14 @@ function buildNeedsAttention(
       items.push({
         kind: "invited_unlinked",
         label: s.displayName,
-        detail: "Account not linked",
+        detail: "Апп дээрх бүртгэлтэй холбогдоогүй",
       });
     }
     if (s.studentUserId && s.assignmentsCompleted === 0 && s.assignmentsAssigned > 0) {
       items.push({
         kind: "student_no_completions",
         label: s.displayName,
-        detail: "0 assignments completed",
+        detail: "Нэг ч даалгавар дуусгаагүй",
       });
     }
   }
@@ -136,7 +136,7 @@ function buildNeedsAttention(
       items.push({
         kind: "low_assignment_completion",
         label: a.title,
-        detail: `${a.completionRate}% completion`,
+        detail: `Гүйцэтгэл ${a.completionRate}%`,
       });
     }
   }
@@ -144,7 +144,7 @@ function buildNeedsAttention(
   if (avgQuiz != null && avgQuiz < 70) {
     items.push({
       kind: "low_quiz_average",
-      label: "Class average quiz",
+      label: "Ангийн дасгалын дундаж",
       detail: `${avgQuiz}%`,
     });
   }
@@ -204,8 +204,8 @@ export async function getTeacherOverviewMetrics(): Promise<
       name: c.name,
       reason:
         (c.studentCount ?? 0) === 0
-          ? "No students enrolled"
-          : "No assignments yet",
+          ? "Сурагч бүртгэгдээгүй"
+          : "Даалгавар хараахан өгөөгүй",
     }));
 
   return withWarnings(

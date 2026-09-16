@@ -101,6 +101,17 @@ export type TeacherDashboardStats = {
   recentAssignments: Assignment[];
 };
 
+/**
+ * assignments.lesson_id is NOT NULL, so an assignment the teacher writes
+ * themselves (classroom or offline work, no lesson attached) is stored with
+ * this sentinel lesson id instead of a real lesson.
+ */
+export const CUSTOM_ASSIGNMENT_LESSON_ID = "custom";
+
+export function isCustomAssignment(lessonId: string | null | undefined): boolean {
+  return !lessonId || lessonId === CUSTOM_ASSIGNMENT_LESSON_ID;
+}
+
 export const ASSIGNMENT_TYPES = [
   "full_lesson",
   "watch",

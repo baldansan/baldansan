@@ -740,6 +740,46 @@ export async function enrichVocabularyWithDbIds<
   }
 }
 
+/** One row of the lesson catalog a teacher picks from when assigning work. */
+export type AssignableLesson = {
+  id: string;
+  title: string;
+  courseId: string;
+  courseTitle: string | null;
+  status: string;
+};
+
+/**
+ * Lesson catalog for the teacher's assignment picker: published lessons only,
+ * grouped by course, in course/lesson order.
+ */
+export async function getSupabaseAssignableLessons(): Promise<
+  AssignableLesson[]
+> {
+  if (!hasSupabaseConfig || !supabase) return [];
+
+  const { data, error } = await supabase
+    .from("lessons")
+    .select("id, title, course_id, status, order_index, courses(title, order_index)")
+    .order("order_index", { ascending: true });
+
+  if (error) throw error;
+
+  return (data ?? [])
+    .map((row) => {
+      const r = row as unknown as Record<string, unknown>;
+      const joined = r.courses as { title?: string } | null;
+      return {
+        id: String(r.id),
+        title: String(r.title ?? r.id),
+        courseId: String(r.course_id ?? ""),
+        courseTitle: joined?.title ? String(joined.title) : null,
+        status: String(r.status ?? "available"),
+      };
+    })
+    .filter((lesson) => lesson.status !== "archived");
+}
+
 export async function getSupabaseLessonIds(): Promise<string[]> {
   if (!hasSupabaseConfig || !supabase) return [];
 

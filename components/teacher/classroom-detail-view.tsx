@@ -6,10 +6,13 @@ import { AddStudentForm } from "@/components/teacher/add-student-form";
 import { StudentInviteForm } from "@/components/teacher/student-invite-form";
 import { AssignmentProgressTable } from "@/components/teacher/assignment-progress-table";
 import { ClassProgressTable } from "@/components/teacher/class-progress-table";
+import { ClassAssignmentComposer } from "@/components/teacher/class-assignment-composer";
+import { StudentWeakSpotsSection } from "@/components/teacher/student-weak-spots-section";
 import { NeedsAttentionCard } from "@/components/teacher/needs-attention-card";
 import { ReportExportCard } from "@/components/teacher/report-export-card";
 import { TeacherMetricCard } from "@/components/teacher/teacher-metric-card";
 import { PublicPageShell } from "@/components/public-page-shell";
+import { isCustomAssignment } from "@/lib/classroom/types";
 import type {
   ClassroomProgressAnalytics,
   StudentProgressRow,
@@ -59,7 +62,7 @@ export function ClassroomDetailView({ classroomId }: Props) {
   if (loading) {
     return (
       <PublicPageShell active="help" showBottomNav={false}>
-        <p className="text-sm text-slate-600">Loading…</p>
+        <p className="text-sm text-slate-600">Ачаалж байна…</p>
       </PublicPageShell>
     );
   }
@@ -67,9 +70,9 @@ export function ClassroomDetailView({ classroomId }: Props) {
   if (!analytics) {
     return (
       <PublicPageShell active="help" showBottomNav={false}>
-        <p className="text-sm text-slate-600">{error ?? "Class not found."}</p>
+        <p className="text-sm text-slate-600">{error ?? "Анги олдсонгүй."}</p>
         <Link href="/teacher/classes" className="mt-2 text-sm text-emerald-600">
-          ← Classes
+          ← Миний ангиуд
         </Link>
       </PublicPageShell>
     );
@@ -106,20 +109,20 @@ export function ClassroomDetailView({ classroomId }: Props) {
 
       <section className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         <TeacherMetricCard
-          label="Students"
+          label="Сурагчид"
           value={String(analytics.totalStudents)}
-          sub={`${analytics.activeStudents} active`}
+          sub={`${analytics.activeStudents} идэвхтэй`}
         />
         <TeacherMetricCard
-          label="Assignments"
+          label="Даалгавар"
           value={String(analytics.assignmentsCount)}
         />
         <TeacherMetricCard
-          label="Completion rate"
+          label="Гүйцэтгэлийн хувь"
           value={`${analytics.completionRate}%`}
         />
         <TeacherMetricCard
-          label="Avg quiz"
+          label="Дасгалын дундаж"
           value={
             analytics.averageQuizPercentage != null
               ? `${analytics.averageQuizPercentage}%`
@@ -129,21 +132,53 @@ export function ClassroomDetailView({ classroomId }: Props) {
       </section>
 
       <section>
-        <h2 className="text-lg font-semibold text-slate-900">Needs attention</h2>
+        <h2 className="text-lg font-semibold text-slate-900">Анхаарах зүйл</h2>
         <div className="mt-3">
           <NeedsAttentionCard items={analytics.needsAttention} />
         </div>
       </section>
 
       <section>
-        <h2 className="text-lg font-semibold text-slate-900">Student progress</h2>
+        <h2 className="text-lg font-semibold text-slate-900">Сурагчдын ахиц</h2>
         <div className="mt-3">
           <ClassProgressTable rows={students} />
         </div>
       </section>
 
       <section>
-        <h2 className="text-lg font-semibold text-slate-900">Assignments</h2>
+        <h2 className="text-lg font-semibold text-slate-900">
+          Сурагч бүрийн сул тал
+        </h2>
+        <p className="mt-1 text-sm text-slate-600">
+          Сурагч хаана, ямар хичээл дээр алдаж байгаа нь хамгийн их алдсанаас
+          эхэлж жагсана. Хажуугийн товчоор тэр хичээлийг тухайн сурагчид онилж
+          давтуулна.
+        </p>
+        <div className="mt-3">
+          <StudentWeakSpotsSection
+            classroomId={classroomId}
+            onAssigned={() => void load()}
+          />
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-lg font-semibold text-slate-900">
+          Ангид даалгавар өгөх
+        </h2>
+        <p className="mt-1 text-sm text-slate-600">
+          Бэлэн хичээлийг сонгож өгөх, эсвэл ангид хийх ажлаа өөрөө бичиж өгнө.
+        </p>
+        <div className="mt-3">
+          <ClassAssignmentComposer
+            classroomId={classroomId}
+            onCreated={() => void load()}
+          />
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-lg font-semibold text-slate-900">Даалгаврууд</h2>
         <ul className="mt-3 flex flex-col gap-2">
           {analytics.assignmentSummaries.map((a) => (
             <li
@@ -157,11 +192,13 @@ export function ClassroomDetailView({ classroomId }: Props) {
                 {a.title}
               </Link>
               <p className="text-xs text-slate-500">
-                Lesson {a.lessonId}
-                {a.dueDate ? ` · Due ${a.dueDate}` : ""} · {a.completedCount}/
+                {isCustomAssignment(a.lessonId)
+                  ? "Хичээл хавсаргаагүй"
+                  : `Хичээл ${a.lessonId}`}
+                {a.dueDate ? ` · Дуусах ${a.dueDate}` : ""} · {a.completedCount}/
                 {a.totalCount} ({a.completionRate}%)
                 {a.averageQuizPercentage != null
-                  ? ` · avg ${a.averageQuizPercentage}%`
+                  ? ` · дундаж ${a.averageQuizPercentage}%`
                   : ""}
               </p>
             </li>
@@ -170,7 +207,7 @@ export function ClassroomDetailView({ classroomId }: Props) {
       </section>
 
       <section>
-        <h2 className="text-lg font-semibold text-slate-900">Class report</h2>
+        <h2 className="text-lg font-semibold text-slate-900">Ангийн тайлан</h2>
         <div className="mt-3">
           <ReportExportCard
             markdown={reportMarkdown}
@@ -180,19 +217,19 @@ export function ClassroomDetailView({ classroomId }: Props) {
       </section>
 
       <section>
-        <h2 className="text-lg font-semibold text-slate-900">Student invite</h2>
+        <h2 className="text-lg font-semibold text-slate-900">Сурагч урих</h2>
         <div className="mt-3 flex flex-wrap gap-2">
           <Link
             href={`/teacher/classes/${classroomId}/students/import`}
             className="inline-flex rounded-full border border-emerald-200 bg-emerald-50 px-4 py-2 text-sm font-semibold text-emerald-800"
           >
-            Bulk import students →
+            Сурагчдыг бөөнөөр оруулах →
           </Link>
           <Link
             href={`/teacher/classes/${classroomId}/invitations`}
             className="inline-flex rounded-full border border-slate-200 px-4 py-2 text-sm font-semibold text-slate-700"
           >
-            Invitations →
+            Урилгууд →
           </Link>
         </div>
         <div className="mt-3">
@@ -206,7 +243,7 @@ export function ClassroomDetailView({ classroomId }: Props) {
       </section>
 
       <section>
-        <h2 className="text-lg font-semibold text-slate-900">Add student (manual)</h2>
+        <h2 className="text-lg font-semibold text-slate-900">Сурагч гараар нэмэх</h2>
         <AddStudentForm classroomId={classroomId} onAdded={() => void load()} />
       </section>
 
@@ -215,13 +252,13 @@ export function ClassroomDetailView({ classroomId }: Props) {
           href={`/teacher/assignments/new?classroom=${classroomId}`}
           className="rounded-full bg-emerald-500 px-4 py-2 text-sm font-semibold text-white"
         >
-          Create assignment
+          Даалгаврын дэлгэрэнгүй маягт
         </Link>
         <Link
           href="/teacher/reports"
           className="rounded-full border border-slate-200 px-4 py-2 text-sm font-semibold text-slate-700"
         >
-          All reports
+          Бүх тайлан
         </Link>
       </div>
     </PublicPageShell>

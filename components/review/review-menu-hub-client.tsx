@@ -389,6 +389,21 @@ export function ReviewMenuHubClient({
           <span className="bs-tm-card-chev" aria-hidden>›</span>
         </Link>
 
+        <Link href="/review/weak-spots" className="bs-tm-card">
+          <span className="bs-tm-card-ic bs-tm-card-ic--purple" aria-hidden>
+            📉
+          </span>
+          <span className="bs-tm-card-body">
+            <span className="bs-tm-card-title">{tr(locale, "Миний сул тал")}</span>
+            <span className="bs-tm-card-sub">
+              {!isLoggedIn
+                ? tr(locale, "Нэвтэрч орвол харагдана")
+                : tr(locale, "Алдааны задаргаа, юуг давтах нь")}
+            </span>
+          </span>
+          <span className="bs-tm-card-chev" aria-hidden>›</span>
+        </Link>
+
         <Link href="/review/tests" className="bs-tm-card">
           <span className="bs-tm-card-ic bs-tm-card-ic--purple" aria-hidden>
             📝

@@ -118,6 +118,59 @@ export type RecentQuizRow = {
   at: string | null;
 };
 
+/** Where the evidence for a weak lesson came from. Never guessed. */
+export type WeakSpotSource = "question_attempts" | "quiz_attempts" | "both";
+
+export type WeakStageRow = {
+  stage: string;
+  attemptCount: number;
+  wrongCount: number;
+  accuracyPercent: number;
+};
+
+export type StudentWeakLesson = {
+  lessonId: string;
+  lessonTitle: string | null;
+  courseId: string | null;
+  /** question_attempts rows for this student on this lesson. */
+  attemptCount: number;
+  /** Wrong answers among those rows. */
+  wrongCount: number;
+  /** Distinct questions the student got wrong at least once. */
+  missedQuestionCount: number;
+  /** Correct share of question_attempts, 0–100. Null when there are none. */
+  accuracyPercent: number | null;
+  stages: WeakStageRow[];
+  quizAttemptCount: number;
+  latestQuizPercentage: number | null;
+  latestQuizScore: number | null;
+  latestQuizTotal: number | null;
+  lastAttemptAt: string | null;
+  source: WeakSpotSource;
+};
+
+export type StudentWeakSpots = {
+  studentRowId: string;
+  displayName: string;
+  email: string | null;
+  studentUserId: string | null;
+  /** True only when at least one real attempt row was read for this student. */
+  hasData: boolean;
+  /** Mongolian explanation shown instead of numbers when hasData is false. */
+  noDataReason: string | null;
+  totalAttempts: number;
+  totalWrong: number;
+  overallAccuracyPercent: number | null;
+  weakLessons: StudentWeakLesson[];
+};
+
+export type ClassroomWeakSpots = {
+  classroomId: string;
+  students: StudentWeakSpots[];
+  /** True when the attempt tables could not be read at all (RLS / config). */
+  attemptsBlocked: boolean;
+};
+
 export type NeedsAttentionItem = {
   kind:
     | "student_no_completions"

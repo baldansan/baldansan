@@ -8,7 +8,7 @@ export function NeedsAttentionCard({ items }: Props) {
   if (items.length === 0) {
     return (
       <p className="rounded-xl bg-emerald-50 px-4 py-3 text-sm text-emerald-800 ring-1 ring-emerald-100">
-        No urgent items — class is on track.
+        Яаралтай зүйл алга — анги хэвийн явж байна.
       </p>
     );
   }

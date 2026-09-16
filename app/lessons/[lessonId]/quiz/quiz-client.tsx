@@ -37,6 +37,7 @@ import {
   gradeQuizSentenceOrder,
   isQuizSentenceOrderQuestion,
 } from "@/lib/quiz/sentence-order";
+import { resurfaceWrongQuizWord } from "@/lib/srs/seed-weak-words";
 import { useQuestionTimer } from "@/lib/analytics/attempt-metrics";
 import {
   mapQuizQuestionType,
@@ -232,6 +233,13 @@ export function LessonQuizClient({
       correctAnswer: current.correctAnswer,
       timeSpentMs: getElapsed(),
     });
+    if (!correct) {
+      // Буруу хариулсан үгийн асуултын үг маргааш давталтад эргэж ирнэ.
+      resurfaceWrongQuizWord({
+        correctAnswer: current.correctAnswer,
+        vocabulary: lesson.vocabulary,
+      });
+    }
   }
 
   function handleSelect(option: string) {

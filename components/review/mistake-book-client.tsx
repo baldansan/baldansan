@@ -408,6 +408,21 @@ export function MistakeBookClient() {
         {mistakes.length > 0 ? ` · ${mistakes.length}` : ""}
       </h2>
 
+      <Link href="/review/weak-spots" className="bs-tm-card mt-3">
+        <span className="bs-tm-card-ic bs-tm-card-ic--purple" aria-hidden>
+          📉
+        </span>
+        <span className="bs-tm-card-body">
+          <span className="bs-tm-card-title">{tr(locale, "Миний сул тал")}</span>
+          <span className="bs-tm-card-sub">
+            {tr(locale, "Алдааны задаргаа, юуг давтах нь")}
+          </span>
+        </span>
+        <span className="bs-tm-card-chev" aria-hidden>
+          ›
+        </span>
+      </Link>
+
       {error ? <p className="mt-2 text-sm text-red-600">{tr(locale, error)}</p> : null}
 
       {mistakes.length === 0 && !error ? (

@@ -738,6 +738,13 @@ export async function createAssignment(input: {
   instructions?: string;
   dueDate?: string;
   status?: string;
+  /**
+   * Seed assignment_results only for these students (must already belong to the
+   * classroom). Omit for the default behaviour: every linked student in the class.
+   */
+  targetStudentUserIds?: string[];
+  /** metadata written onto the seeded assignment_results rows. */
+  resultMetadata?: Record<string, unknown>;
 }): Promise<ClassroomResult<Assignment>> {
   if (!supabase) return notConfigured();
   const userId = await requireUserId();
@@ -785,16 +792,23 @@ export async function createAssignment(input: {
     .eq("classroom_id", input.classroomId)
     .not("student_user_id", "is", null);
 
-  const studentIds = (students ?? [])
+  const classStudentIds = (students ?? [])
     .map((s) => s.student_user_id)
     .filter(Boolean) as string[];
 
-  if (studentIds.length > 0) {
+  // A targeted assignment still belongs to the class (assignments are per
+  // classroom), but only the named students get a result row to work on.
+  const targeted = input.targetStudentUserIds
+    ? classStudentIds.filter((id) => input.targetStudentUserIds?.includes(id))
+    : classStudentIds;
+
+  if (targeted.length > 0) {
     await supabase.from("assignment_results").insert(
-      studentIds.map((sid) => ({
+      targeted.map((sid) => ({
         assignment_id: assignment.id,
         student_user_id: sid,
         status: "not_started",
+        metadata: input.resultMetadata ?? {},
       }))
     );
   }
