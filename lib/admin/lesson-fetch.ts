@@ -37,10 +37,21 @@ const getServerSupabaseClientOrNull = cache(
   }
 );
 
-/** Admin/full server fetch: any publish status (RLS + optional RPC fallback). */
-export const getAdminLessonById = cache(async function getAdminLessonById(
-  lessonId: string
+/**
+ * @param withVocabularyDbIds Look up the `vocabulary_words` row id for each
+ * word — one extra query per lesson, needed only by the editor. QA reports and
+ * list views pass `false`.
+ */
+async function loadAdminLesson(
+  lessonId: string,
+  withVocabularyDbIds: boolean
 ): Promise<LessonContent | undefined> {
+  const enrichVocabulary = async <T extends { chinese: string; dbId?: number }>(
+    resolvedId: string,
+    words: T[]
+  ): Promise<T[]> =>
+    withVocabularyDbIds ? enrichVocabularyWithDbIds(resolvedId, words) : words;
+
   const normalizedId = normalizeLessonRouteId(lessonId);
 
   if (!hasSupabaseConfig) {
@@ -76,7 +87,7 @@ export const getAdminLessonById = cache(async function getAdminLessonById(
         resolvedId: rpcLesson.id,
         status: rpcLesson.publishStatus,
       });
-      const vocabulary = await enrichVocabularyWithDbIds(
+      const vocabulary = await enrichVocabulary(
         rpcLesson.id,
         rpcLesson.vocabulary
       );
@@ -110,10 +121,7 @@ export const getAdminLessonById = cache(async function getAdminLessonById(
       status: lesson.publishStatus,
     });
 
-    const vocabulary = await enrichVocabularyWithDbIds(
-      lesson.id,
-      lesson.vocabulary
-    );
+    const vocabulary = await enrichVocabulary(lesson.id, lesson.vocabulary);
     return { ...lesson, vocabulary };
   } catch (error) {
     debugWarn("[lesson-fetch] Admin/full lesson fetch failed; trying RPC", {
@@ -123,7 +131,7 @@ export const getAdminLessonById = cache(async function getAdminLessonById(
     try {
       const rpcLesson = await fetchAdminLessonBundleViaRpc(client, normalizedId);
       if (rpcLesson) {
-        const vocabulary = await enrichVocabularyWithDbIds(
+        const vocabulary = await enrichVocabulary(
           rpcLesson.id,
           rpcLesson.vocabulary
         );
@@ -137,6 +145,22 @@ export const getAdminLessonById = cache(async function getAdminLessonById(
     }
     return undefined;
   }
+}
+
+/** Admin/full server fetch: any publish status (RLS + optional RPC fallback). */
+export const getAdminLessonById = cache(
+  async function getAdminLessonById(
+    lessonId: string
+  ): Promise<LessonContent | undefined> {
+    return loadAdminLesson(lessonId, true);
+  }
+);
+
+/** Same bundle, minus the per-lesson vocabulary id lookup QA never reads. */
+const getAdminLessonForQa = cache(async function getAdminLessonForQa(
+  lessonId: string
+): Promise<LessonContent | undefined> {
+  return loadAdminLesson(lessonId, false);
 });
 
 /** Admin server list: all lessons in course regardless of publish status. */
@@ -218,7 +242,7 @@ async function buildQaReports(
   const lessons = await mapWithConcurrency(
     summaries,
     ADMIN_LESSON_FETCH_CONCURRENCY,
-    (summary) => getAdminLessonById(summary.id)
+    (summary) => getAdminLessonForQa(summary.id)
   );
 
   return lessons
