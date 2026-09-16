@@ -89,6 +89,11 @@ export function AdminDashboard({ metrics, activity, windowDays }: Props) {
   const window = splitActivityWindow(activity, windowDays);
   const comparisonLabel = `өмнөх ${windowDays} хоногтой харьцуулахад`;
 
+  // When the activity table isn't reachable there is no zero to report — a
+  // hard 0 would read as "nobody is using the app", which is a different claim.
+  const activityAvailable = activity.warnings.length === 0;
+  const unavailableLabel = "хэрэглээний хүснэгт идэвхжээгүй";
+
   const attentionItems: AttentionItem[] = [
     {
       count: lessonStatus.draftCount,
@@ -164,15 +169,22 @@ export function AdminDashboard({ metrics, activity, windowDays }: Props) {
         <div className="grid grid-cols-2 gap-3 lg:grid-cols-4">
           <AdminMetricCard
             label="Суралцсан хугацаа"
-            value={`${formatNumber(window.currentMinutes)} мин`}
+            value={
+              activityAvailable
+                ? `${formatNumber(window.currentMinutes)} мин`
+                : "—"
+            }
             icon="⏱"
             trend={{
-              percent: window.hasPrevious
-                ? percentChange(window.currentMinutes, window.previousMinutes)
-                : null,
-              label: window.hasPrevious
-                ? comparisonLabel
-                : "харьцуулах өмнөх өгөгдөл алга",
+              percent:
+                activityAvailable && window.hasPrevious
+                  ? percentChange(window.currentMinutes, window.previousMinutes)
+                  : null,
+              label: !activityAvailable
+                ? unavailableLabel
+                : window.hasPrevious
+                  ? comparisonLabel
+                  : "харьцуулах өмнөх өгөгдөл алга",
             }}
           />
           <AdminMetricCard
@@ -185,28 +197,40 @@ export function AdminDashboard({ metrics, activity, windowDays }: Props) {
             )}
             icon="🧑‍🎓"
             trend={{
-              percent: window.hasPrevious
-                ? percentChange(window.currentLearners, window.previousLearners)
-                : null,
-              label: window.hasPrevious
-                ? comparisonLabel
-                : "хичээл эхлүүлсэн нийт хүн",
+              percent:
+                activityAvailable && window.hasPrevious
+                  ? percentChange(
+                      window.currentLearners,
+                      window.previousLearners
+                    )
+                  : null,
+              label:
+                activityAvailable && window.hasPrevious
+                  ? comparisonLabel
+                  : "хичээл эхлүүлсэн нийт хүн",
             }}
           />
           <AdminMetricCard
             label="Идэвхтэй өдөр"
-            value={`${formatNumber(window.currentActiveDays)}/${windowDays}`}
+            value={
+              activityAvailable
+                ? `${formatNumber(window.currentActiveDays)}/${windowDays}`
+                : "—"
+            }
             icon="📆"
             trend={{
-              percent: window.hasPrevious
-                ? percentChange(
-                    window.currentActiveDays,
-                    window.previousActiveDays
-                  )
-                : null,
-              label: window.hasPrevious
-                ? comparisonLabel
-                : "хэрэглээ бүртгэгдсэн өдөр",
+              percent:
+                activityAvailable && window.hasPrevious
+                  ? percentChange(
+                      window.currentActiveDays,
+                      window.previousActiveDays
+                    )
+                  : null,
+              label: !activityAvailable
+                ? unavailableLabel
+                : window.hasPrevious
+                  ? comparisonLabel
+                  : "хэрэглээ бүртгэгдсэн өдөр",
             }}
           />
           <AdminMetricCard
@@ -228,9 +252,9 @@ export function AdminDashboard({ metrics, activity, windowDays }: Props) {
         days={window.currentDays}
         title={`Сүүлийн ${windowDays} хоногийн суралцах хугацаа`}
         emptyMessage={
-          activity.warnings.length > 0
-            ? activity.warnings[0]
-            : "Энэ хугацаанд бүртгэгдсэн хэрэглээ алга."
+          activityAvailable
+            ? "Энэ хугацаанд бүртгэгдсэн хэрэглээ алга."
+            : "Хэрэглээний хэмжилт идэвхжээгүй байна — Supabase дээр 050_learner_activity.sql миграцыг ажиллуулснаар энэ график дүүрнэ."
         }
       />
 
