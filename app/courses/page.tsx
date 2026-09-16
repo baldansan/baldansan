@@ -12,16 +12,29 @@ export const metadata = {
   description: "Сурах чиглэлээ сонго — HSK4, HSK5, Korean.",
 };
 
-async function appendKoreanCourses(
-  catalog: Course[],
-  lessonCounts: Record<string, number>
-): Promise<Course[]> {
-  const next = [...catalog];
-  const koreanIds = ["korean-level-1", "korean-1", "korean-survival"] as const;
+/**
+ * One course's lessons + metadata. Loading these per course in a `for … await`
+ * loop meant nine courses × two queries ran end to end, which is what made this
+ * page take ~11s; every caller below fans them out instead.
+ */
+async function loadCourseSource(courseId: string) {
+  const [lessons, course] = await Promise.all([
+    getPublicLessonsByCourseId(courseId),
+    getCourseContentById(courseId),
+  ]);
+  return { courseId, lessons, course };
+}
 
-  for (const courseId of koreanIds) {
-    const lessons = await getPublicLessonsByCourseId(courseId);
-    const course = await getCourseContentById(courseId);
+type CourseSource = Awaited<ReturnType<typeof loadCourseSource>>;
+
+function appendKoreanCourses(
+  catalog: Course[],
+  lessonCounts: Record<string, number>,
+  sources: CourseSource[]
+): Course[] {
+  const next = [...catalog];
+
+  for (const { courseId, lessons, course } of sources) {
     lessonCounts[courseId] = lessons.length;
 
     if ((course || lessons.length > 0) && !next.some((c) => c.id === courseId)) {
@@ -49,16 +62,17 @@ async function appendKoreanCourses(
 }
 
 const HSK_CATALOG_LEVELS = ["hsk6", "hsk5", "hsk4", "hsk3", "hsk2", "hsk1"] as const;
+const KOREAN_CATALOG_IDS = [
+  "korean-level-1",
+  "korean-1",
+  "korean-survival",
+] as const;
 
-async function appendHskCourse(
+function appendHskCourse(
   catalog: Course[],
   lessonCounts: Record<string, number>,
-  courseId: (typeof HSK_CATALOG_LEVELS)[number]
-): Promise<Course[]> {
-  const [lessons, course] = await Promise.all([
-    getPublicLessonsByCourseId(courseId),
-    getCourseContentById(courseId),
-  ]);
+  { courseId, lessons, course }: CourseSource
+): Course[] {
   lessonCounts[courseId] = lessons.length;
 
   if (!course && lessons.length === 0) {
@@ -90,10 +104,19 @@ export default async function CoursesPage() {
       ? { ...course, lessons: helzui.modules.length }
       : course
   );
-  for (const courseId of HSK_CATALOG_LEVELS) {
-    catalog = await appendHskCourse(catalog, lessonCounts, courseId);
+  const [hskSources, koreanSources] = await Promise.all([
+    Promise.all(HSK_CATALOG_LEVELS.map(loadCourseSource)),
+    Promise.all(KOREAN_CATALOG_IDS.map(loadCourseSource)),
+  ]);
+
+  for (const source of hskSources) {
+    catalog = appendHskCourse(catalog, lessonCounts, source);
   }
-  const catalogCourses = await appendKoreanCourses(catalog, lessonCounts);
+  const catalogCourses = appendKoreanCourses(
+    catalog,
+    lessonCounts,
+    koreanSources
+  );
   lessonCounts["helzui-suuri"] = helzui.modules.length;
 
   const courseCards = catalogCourses.map((course) => ({
