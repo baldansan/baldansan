@@ -1,12 +1,9 @@
 import { PageLoadingSkeleton } from "@/components/page-loading-skeleton";
 
+/**
+ * Rendered inside `AdminLayoutShell`'s `<main>`, so it must NOT repeat the
+ * layout chrome — doing so painted a second sidebar over the content area.
+ */
 export default function AdminLoading() {
-  return (
-    <div className="admin-layout flex min-h-screen">
-      <div className="hidden w-[240px] shrink-0 bg-slate-900 lg:block" />
-      <div className="admin-main flex-1">
-        <PageLoadingSkeleton rows={4} />
-      </div>
-    </div>
-  );
+  return <PageLoadingSkeleton rows={4} />;
 }

@@ -4,7 +4,13 @@ import {
   MIN_QUIZ_FOR_PUBLISH,
   MIN_VOCABULARY_FOR_PUBLISH,
 } from "@/lib/admin/import-qa";
-import { getHsk5LessonsWithQa, getAdminLessonsByCourseId } from "@/lib/admin/lesson-fetch";
+import {
+  getAllAdminLessonsWithQa,
+  getHsk5LessonsWithQa,
+  getAdminLessonsByCourseId,
+} from "@/lib/admin/lesson-fetch";
+import { LEARNER_COURSE_PROBE_IDS } from "@/lib/language-track";
+import type { LessonContent } from "@/types/lesson-content";
 import { getAdminPublishStatus } from "@/lib/admin/lesson-status";
 import type { LessonQaReport, LessonQaStatus } from "@/lib/admin/lesson-qa";
 import { canonicalLessonId, lessonIdsMatch } from "@/lib/lesson-id";
@@ -108,7 +114,6 @@ export type ReleaseWorkflowMetrics = {
   migrationPending: boolean;
 };
 
-const DEFAULT_COURSE_ID = "hsk5";
 
 async function getServerClient() {
   if (!hasSupabaseConfig) {
@@ -209,11 +214,39 @@ function buildAttentionList(reports: LessonQaReport[]): AttentionLesson[] {
     }
   }
 
-  return items.sort((a, b) => Number(a.lessonId) - Number(b.lessonId));
+  return items.sort((a, b) =>
+    a.lessonId.localeCompare(b.lessonId, undefined, { numeric: true })
+  );
+}
+
+/**
+ * Every lesson the learner app can reach, across all course catalogs.
+ *
+ * The dashboard used to count only `hsk5`, so it reported 18 lessons while the
+ * app actually ships HSK1, HSK2, HSK5A and the Korean track.
+ */
+async function getAllAdminLessonSummaries(): Promise<LessonContent[]> {
+  const lists = await Promise.all(
+    LEARNER_COURSE_PROBE_IDS.map((courseId) =>
+      getAdminLessonsByCourseId(courseId)
+    )
+  );
+
+  const seen = new Set<string>();
+  const lessons: LessonContent[] = [];
+  for (const list of lists) {
+    for (const lesson of list) {
+      if (seen.has(lesson.id)) continue;
+      seen.add(lesson.id);
+      lessons.push(lesson);
+    }
+  }
+
+  return lessons;
 }
 
 export async function getLessonStatusMetrics(): Promise<LessonStatusMetrics> {
-  const lessons = await getAdminLessonsByCourseId(DEFAULT_COURSE_ID);
+  const lessons = await getAllAdminLessonSummaries();
 
   let draftCount = 0;
   let availableCount = 0;
@@ -235,12 +268,12 @@ export async function getLessonStatusMetrics(): Promise<LessonStatusMetrics> {
 }
 
 export async function getContentQaMetrics(): Promise<ContentQaMetrics> {
-  const reports = await getHsk5LessonsWithQa();
+  const reports = await getAllAdminLessonsWithQa();
   return computeContentQaFromReports(reports);
 }
 
 export async function getMediaReadinessMetrics(): Promise<MediaReadinessMetrics> {
-  const lessons = await getAdminLessonsByCourseId(DEFAULT_COURSE_ID);
+  const lessons = await getAllAdminLessonSummaries();
 
   let mediaReadyCount = 0;
   let mediaPendingCount = 0;
@@ -622,7 +655,7 @@ export async function getReleaseWorkflowMetrics(): Promise<{
 export async function getAdminDashboardMetrics(): Promise<AdminDashboardMetrics> {
   const warnings: string[] = [];
 
-  const reports = await getHsk5LessonsWithQa();
+  const reports = await getAllAdminLessonsWithQa();
   const contentQa = computeContentQaFromReports(reports);
   const needsAttention = buildAttentionList(reports);
 

@@ -5,17 +5,22 @@ export type AdminNavItem = {
   match: (pathname: string) => boolean;
 };
 
-/** Daily-use sidebar links. */
+export type AdminNavSection = {
+  title: string;
+  items: AdminNavItem[];
+};
+
+/** Daily-use sidebar links — what content work actually touches. */
 export const ADMIN_NAV_PRIMARY: AdminNavItem[] = [
   {
     href: "/admin",
-    label: "Dashboard",
+    label: "Хяналтын самбар",
     icon: "📊",
     match: (p) => p === "/admin",
   },
   {
     href: "/admin/lessons",
-    label: "Lessons",
+    label: "Хичээлүүд",
     icon: "📚",
     match: (p) =>
       p.startsWith("/admin/lessons") &&
@@ -23,8 +28,14 @@ export const ADMIN_NAV_PRIMARY: AdminNavItem[] = [
       !p.startsWith("/admin/import"),
   },
   {
+    href: "/admin/lessons/new",
+    label: "Шинэ хичээл",
+    icon: "➕",
+    match: (p) => p === "/admin/lessons/new",
+  },
+  {
     href: "/admin/import",
-    label: "Import ZIP",
+    label: "ZIP импорт",
     icon: "📦",
     match: (p) => p.startsWith("/admin/import"),
   },
@@ -34,49 +45,53 @@ export const ADMIN_NAV_PRIMARY: AdminNavItem[] = [
     icon: "▶",
     match: (p) => p.startsWith("/admin/bichleg"),
   },
-  {
-    href: "/admin/lessons/new",
-    label: "Create lesson",
-    icon: "➕",
-    match: (p) => p === "/admin/lessons/new",
-  },
-  {
-    href: "/admin/settings",
-    label: "Settings",
-    icon: "⚙️",
-    match: (p) => p.startsWith("/admin/settings"),
-  },
 ];
 
-/** Collapsed sidebar / settings — power-user tools. */
-export const ADMIN_NAV_ADVANCED: AdminNavItem[] = [
-  {
-    href: "/admin/activity",
-    label: "Activity",
-    icon: "📋",
-    match: (p) => p.startsWith("/admin/activity"),
-  },
-  {
-    href: "/admin/tasks",
-    label: "Tasks",
-    icon: "✅",
-    match: (p) => p.startsWith("/admin/tasks"),
-  },
-  {
-    href: "/admin/learner",
-    label: "Learner",
-    icon: "🧑‍🎓",
-    match: (p) => p.startsWith("/admin/learner"),
-  },
+/** Reporting and people — reviewed weekly rather than daily. */
+export const ADMIN_NAV_INSIGHTS: AdminNavItem[] = [
   {
     href: "/admin/analytics",
-    label: "Analytics",
+    label: "Тайлан",
     icon: "📈",
     match: (p) => p.startsWith("/admin/analytics"),
   },
   {
+    href: "/admin/learner",
+    label: "Суралцагч",
+    icon: "🧑‍🎓",
+    match: (p) => p.startsWith("/admin/learner"),
+  },
+  {
+    href: "/admin/b2b",
+    label: "Байгууллага",
+    icon: "🏫",
+    match: (p) => p.startsWith("/admin/b2b"),
+  },
+  {
+    href: "/admin/tasks",
+    label: "Даалгавар",
+    icon: "✅",
+    match: (p) => p.startsWith("/admin/tasks"),
+  },
+];
+
+/** Collapsed by default — power-user and release tooling. */
+export const ADMIN_NAV_ADVANCED: AdminNavItem[] = [
+  {
+    href: "/admin/settings",
+    label: "Тохиргоо",
+    icon: "⚙️",
+    match: (p) => p.startsWith("/admin/settings"),
+  },
+  {
+    href: "/admin/activity",
+    label: "Үйлдлийн лог",
+    icon: "📋",
+    match: (p) => p.startsWith("/admin/activity"),
+  },
+  {
     href: "/admin/system-check",
-    label: "System check",
+    label: "Системийн шалгалт",
     icon: "🔍",
     match: (p) => p.startsWith("/admin/system-check"),
   },
@@ -88,84 +103,74 @@ export const ADMIN_NAV_ADVANCED: AdminNavItem[] = [
   },
   {
     href: "/admin/prompts",
-    label: "Prompts",
+    label: "Prompt сан",
     icon: "💬",
     match: (p) => p.startsWith("/admin/prompts"),
   },
   {
-    href: "/admin/final-audit",
-    label: "Final audit",
-    icon: "📝",
-    match: (p) => p.startsWith("/admin/final-audit"),
-  },
-];
-
-/** Extra admin routes (not in main sidebar list). */
-export const ADMIN_NAV_EXTRA: AdminNavItem[] = [
-  {
     href: "/admin/lesson-builder",
-    label: "Lesson Builder",
+    label: "Хичээл угсрагч",
     icon: "🛠",
     match: (p) => p.startsWith("/admin/lesson-builder"),
   },
   {
-    href: "/admin/b2b",
-    label: "B2B CRM",
-    icon: "🏫",
-    match: (p) => p.startsWith("/admin/b2b"),
+    href: "/admin/final-audit",
+    label: "Эцсийн шалгалт",
+    icon: "📝",
+    match: (p) => p.startsWith("/admin/final-audit"),
   },
   {
     href: "/admin/security-audit",
-    label: "Security audit",
+    label: "Аюулгүй байдал",
     icon: "🔒",
     match: (p) => p.startsWith("/admin/security-audit"),
   },
   {
     href: "/admin/launch-candidate",
-    label: "Launch candidate",
+    label: "Хувилбарын бэлэн байдал",
     icon: "🚀",
     match: (p) => p.startsWith("/admin/launch-candidate"),
   },
   {
     href: "/admin/launch-signoff",
-    label: "Launch sign-off",
+    label: "Гаргалтын баталгаа",
     icon: "✍️",
     match: (p) => p.startsWith("/admin/launch-signoff"),
   },
 ];
 
-/** @deprecated Use ADMIN_NAV_PRIMARY — kept for any legacy imports. */
-export const ADMIN_NAV_SECTIONS = [
-  { title: "Main", items: ADMIN_NAV_PRIMARY },
-  { title: "Advanced", items: ADMIN_NAV_ADVANCED },
+export const ADMIN_NAV_SECTIONS: AdminNavSection[] = [
+  { title: "Контент", items: ADMIN_NAV_PRIMARY },
+  { title: "Тайлан ба хэрэглэгч", items: ADMIN_NAV_INSIGHTS },
 ];
 
 export const ADMIN_NAV_SECONDARY: AdminNavItem[] = [
   {
     href: "/",
-    label: "Learner app",
+    label: "Сурагчийн апп",
     icon: "🏠",
     match: () => false,
   },
 ];
 
+/** Every navigable admin destination — used for search and the settings index. */
+export const ADMIN_NAV_ALL: AdminNavItem[] = [
+  ...ADMIN_NAV_PRIMARY,
+  ...ADMIN_NAV_INSIGHTS,
+  ...ADMIN_NAV_ADVANCED,
+];
+
 export function resolveAdminPageTitle(pathname: string): string {
-  if (pathname === "/admin") return "Dashboard";
-  if (pathname === "/admin/lessons") return "Lessons";
-  if (pathname === "/admin/lessons/new") return "Create Lesson";
-  if (pathname === "/admin/import") return "Import ZIP";
-  if (pathname.startsWith("/admin/bichleg")) return "Бичлэг";
-  if (pathname === "/admin/settings") return "Settings";
+  if (pathname === "/admin") return "Хяналтын самбар";
+  if (pathname === "/admin/lessons/new") return "Шинэ хичээл";
+
   if (pathname.includes("/admin/lessons/") && pathname.includes("/edit")) {
-    return "Edit Lesson";
+    return "Хичээл засах";
   }
   if (pathname.includes("/admin/lessons/") && pathname.includes("/teacher")) {
     return "Багшийн давхарга";
   }
-  if (pathname.startsWith("/admin/activity")) return "Activity Log";
-  if (pathname.startsWith("/admin/tasks")) return "Task Center";
-  if (pathname.startsWith("/admin/analytics")) return "Analytics";
-  if (pathname.startsWith("/admin/system-check")) return "System Check";
-  if (pathname.startsWith("/admin/lesson-builder")) return "Lesson Builder";
-  return "Admin";
+
+  const match = ADMIN_NAV_ALL.find((item) => item.match(pathname));
+  return match?.label ?? "Админ";
 }

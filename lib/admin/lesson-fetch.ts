@@ -1,5 +1,7 @@
 import "server-only";
 
+import { cache } from "react";
+
 import { analyzeLessonQa, type LessonQaReport } from "@/lib/admin/lesson-qa";
 import { LEARNER_COURSE_PROBE_IDS } from "@/lib/language-track";
 import {
@@ -33,7 +35,7 @@ async function getServerSupabaseClientOrNull() {
 }
 
 /** Admin/full server fetch: any publish status (RLS + optional RPC fallback). */
-export async function getAdminLessonById(
+export const getAdminLessonById = cache(async function getAdminLessonById(
   lessonId: string
 ): Promise<LessonContent | undefined> {
   const normalizedId = normalizeLessonRouteId(lessonId);
@@ -128,31 +130,33 @@ export async function getAdminLessonById(
     }
     return undefined;
   }
-}
+});
 
 /** Admin server list: all lessons in course regardless of publish status. */
-export async function getAdminLessonsByCourseId(
-  courseId: string
-): Promise<LessonContent[]> {
-  if (!hasSupabaseConfig) {
-    return getLocalLessonsByCourseId(courseId);
-  }
+export const getAdminLessonsByCourseId = cache(
+  async function getAdminLessonsByCourseId(
+    courseId: string
+  ): Promise<LessonContent[]> {
+    if (!hasSupabaseConfig) {
+      return getLocalLessonsByCourseId(courseId);
+    }
 
-  const client = await getServerSupabaseClientOrNull();
-  if (!client) {
-    return [];
-  }
+    const client = await getServerSupabaseClientOrNull();
+    if (!client) {
+      return [];
+    }
 
-  try {
-    return await getSupabaseLessonsByCourseIdWithClient(courseId, client);
-  } catch (error) {
-    debugWarn("[lesson-fetch] Admin lesson list fetch failed", {
-      courseId,
-      error,
-    });
-    return [];
+    try {
+      return await getSupabaseLessonsByCourseIdWithClient(courseId, client);
+    } catch (error) {
+      debugWarn("[lesson-fetch] Admin lesson list fetch failed", {
+        courseId,
+        error,
+      });
+      return [];
+    }
   }
-}
+);
 
 export async function getAdminLessonOrderIndex(
   lessonId: string
@@ -167,40 +171,92 @@ export async function getAdminLessonOrderIndex(
   return resolved?.row.order_index ?? null;
 }
 
-export async function getHsk5LessonsWithQa(): Promise<LessonQaReport[]> {
-  const summaries = await getAdminLessonsByCourseId("hsk5");
-  const reports: LessonQaReport[] = [];
+/**
+ * Map over `items` with a bounded number of in-flight promises.
+ *
+ * Admin QA reports need a deep fetch per lesson. Doing that in a `for … await`
+ * loop meant ~60 lessons × 3 round trips serialized end to end, which is what
+ * made `/admin/lessons` take two minutes. A small pool keeps Supabase happy
+ * while cutting wall-clock time by roughly the pool size.
+ */
+async function mapWithConcurrency<Item, Result>(
+  items: readonly Item[],
+  limit: number,
+  mapper: (item: Item) => Promise<Result>
+): Promise<Result[]> {
+  const results: Result[] = new Array(items.length);
+  let cursor = 0;
 
-  for (const summary of summaries) {
-    const lesson = await getAdminLessonById(summary.id);
-    if (lesson) {
-      reports.push(analyzeLessonQa(lesson));
-    }
-  }
-
-  return reports.sort((a, b) => Number(a.lesson.id) - Number(b.lesson.id));
-}
-
-/** Admin list: lessons across HSK + Korean (and other probed) course catalogs. */
-export async function getAllAdminLessonsWithQa(): Promise<LessonQaReport[]> {
-  const seen = new Set<string>();
-  const reports: LessonQaReport[] = [];
-
-  for (const courseId of LEARNER_COURSE_PROBE_IDS) {
-    const summaries = await getAdminLessonsByCourseId(courseId);
-    for (const summary of summaries) {
-      if (seen.has(summary.id)) continue;
-      seen.add(summary.id);
-      const lesson = await getAdminLessonById(summary.id);
-      if (lesson) {
-        reports.push(analyzeLessonQa(lesson));
+  const workers = Array.from(
+    { length: Math.min(Math.max(limit, 1), items.length) },
+    async () => {
+      for (;;) {
+        const index = cursor++;
+        if (index >= items.length) return;
+        results[index] = await mapper(items[index]);
       }
     }
-  }
+  );
 
-  return reports.sort((a, b) => {
-    const courseCompare = a.lesson.courseId.localeCompare(b.lesson.courseId);
-    if (courseCompare !== 0) return courseCompare;
-    return String(a.lesson.id).localeCompare(String(b.lesson.id));
-  });
+  await Promise.all(workers);
+  return results;
 }
+
+/** How many lesson bundles to load at once. */
+const ADMIN_LESSON_FETCH_CONCURRENCY = 8;
+
+async function buildQaReports(
+  summaries: readonly LessonContent[]
+): Promise<LessonQaReport[]> {
+  const lessons = await mapWithConcurrency(
+    summaries,
+    ADMIN_LESSON_FETCH_CONCURRENCY,
+    (summary) => getAdminLessonById(summary.id)
+  );
+
+  return lessons
+    .filter((lesson): lesson is LessonContent => Boolean(lesson))
+    .map((lesson) => analyzeLessonQa(lesson));
+}
+
+/**
+ * Deduped per request: the admin dashboard asks several metric builders for
+ * the same HSK5 QA reports, and without this each one re-ran the whole fetch.
+ */
+export const getHsk5LessonsWithQa = cache(
+  async function getHsk5LessonsWithQa(): Promise<LessonQaReport[]> {
+    const summaries = await getAdminLessonsByCourseId("hsk5");
+    const reports = await buildQaReports(summaries);
+
+    return reports.sort((a, b) => Number(a.lesson.id) - Number(b.lesson.id));
+  }
+);
+
+/** Admin list: lessons across HSK + Korean (and other probed) course catalogs. */
+export const getAllAdminLessonsWithQa = cache(
+  async function getAllAdminLessonsWithQa(): Promise<LessonQaReport[]> {
+    const courseLists = await Promise.all(
+      LEARNER_COURSE_PROBE_IDS.map((courseId) =>
+        getAdminLessonsByCourseId(courseId)
+      )
+    );
+
+    const seen = new Set<string>();
+    const summaries: LessonContent[] = [];
+    for (const list of courseLists) {
+      for (const summary of list) {
+        if (seen.has(summary.id)) continue;
+        seen.add(summary.id);
+        summaries.push(summary);
+      }
+    }
+
+    const reports = await buildQaReports(summaries);
+
+    return reports.sort((a, b) => {
+      const courseCompare = a.lesson.courseId.localeCompare(b.lesson.courseId);
+      if (courseCompare !== 0) return courseCompare;
+      return String(a.lesson.id).localeCompare(String(b.lesson.id));
+    });
+  }
+);

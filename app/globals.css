@@ -1,6 +1,12 @@
 @import "tailwindcss";
 
 :root {
+  /*
+   * The app is a light-only design. Without this, Chrome's "auto dark mode for
+   * web contents" repaints every surface dark on a dark-themed OS, which made
+   * the admin CMS unreadable on projectors and dark-mode laptops.
+   */
+  color-scheme: light;
   --background: #ffffff;
   --foreground: #171717;
   --learner-max-width: 960px;
