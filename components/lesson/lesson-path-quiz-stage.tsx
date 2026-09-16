@@ -12,6 +12,8 @@ import {
   saveBsQuizProgress,
   type BsQuizStepProgress,
 } from "@/lib/lesson/bs-step-progress";
+import { saveQuizResultSmart } from "@/lib/progress";
+import { buildQuizDetailedAnswer, type QuizDetailedAnswer } from "@/lib/quiz-answers";
 import { prepareLessonQuizQuestions } from "@/lib/quiz/smart-options";
 import {
   gradeQuizSentenceOrder,
@@ -160,6 +162,16 @@ export function LessonPathQuizStage({
 
   const current = quizQuestions[currentIndex];
   const getElapsed = useQuestionTimer(`${lessonId}:quiz:${currentIndex}`);
+  /**
+   * Answers for the run, saved as one attempt when the learner finishes.
+   *
+   * This stage used to record only per-question rows, so a learner who did the
+   * whole lesson journey produced no `user_quiz_attempts` row at all — which is
+   * what every score, grade and report in the admin is built on. Resuming a
+   * half-finished quiz keeps only the answers given in this sitting; the score
+   * and total are still the full run's.
+   */
+  const answersRef = useRef<QuizDetailedAnswer[]>([]);
   const currentIsSentenceOrder = current
     ? isQuizSentenceOrderQuestion(current)
     : false;
@@ -188,6 +200,16 @@ export function LessonPathQuizStage({
       correctAnswer: current.correctAnswer,
       timeSpentMs: getElapsed(),
     });
+    answersRef.current.push({
+      ...buildQuizDetailedAnswer(
+        current,
+        current.orderIndex ?? currentIndex,
+        answer
+      ),
+      // Sentence-order answers are graded by comparison, not string equality.
+      isCorrect: ok,
+    });
+
     if (!ok) {
       // Буруу хариулсан үгийн асуултын үг маргааш давталтад эргэж ирнэ.
       resurfaceWrongQuizWord({
@@ -236,6 +258,18 @@ export function LessonPathQuizStage({
         },
         nextResults
       );
+
+      if (total > 0) {
+        // Fire-and-forget: a failed save must never block the learner.
+        void saveQuizResultSmart(
+          lessonId,
+          nextCorrect,
+          total,
+          Math.round((nextCorrect / total) * 100),
+          answersRef.current
+        );
+      }
+
       onFinished();
       return;
     }
