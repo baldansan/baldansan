@@ -80,6 +80,13 @@ export const ADMIN_NAV_INSIGHTS: AdminNavItem[] = [
     match: (p) => p === "/admin/learner" || p.startsWith("/admin/learner?"),
   },
   {
+    href: "/admin/center",
+    label: "Сургалтын төв",
+    icon: "🏢",
+    hint: "Бүх бүлгийг багш, түвшин, үнэлгээгээр нь харьцуулах.",
+    match: (p) => p === "/admin/center" || p.startsWith("/admin/center/"),
+  },
+  {
     href: "/admin/b2b",
     label: "Байгууллага",
     icon: "🏫",
