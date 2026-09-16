@@ -17,12 +17,19 @@ function ToolGrid({ items }: { items: typeof ADMIN_NAV_ADVANCED }) {
         <Link
           key={item.href}
           href={item.href}
-          className="rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm font-medium text-slate-800 shadow-sm transition-colors hover:border-emerald-200 hover:text-emerald-800"
+          className="rounded-xl border border-slate-200 bg-white px-4 py-3 shadow-sm transition-colors hover:border-emerald-200"
         >
-          <span aria-hidden className="mr-2">
-            {item.icon}
+          <span className="text-sm font-semibold text-slate-800">
+            <span aria-hidden className="mr-2">
+              {item.icon}
+            </span>
+            {item.label}
           </span>
-          {item.label}
+          {item.hint ? (
+            <span className="mt-1 block text-xs leading-5 text-slate-500">
+              {item.hint}
+            </span>
+          ) : null}
         </Link>
       ))}
     </div>

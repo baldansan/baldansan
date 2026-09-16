@@ -34,11 +34,22 @@ function NavLink({
   );
 }
 
-function SectionHeading({ children }: { children: React.ReactNode }) {
+function SectionHeading({
+  title,
+  description,
+}: {
+  title: string;
+  description: string;
+}) {
   return (
-    <p className="px-3 pb-1 pt-4 text-[10px] font-bold uppercase tracking-wider text-slate-500">
-      {children}
-    </p>
+    <div className="px-3 pb-1.5 pt-4">
+      <p className="text-[10px] font-bold uppercase tracking-wider text-emerald-400">
+        {title}
+      </p>
+      <p className="mt-0.5 text-[10px] leading-4 text-slate-500">
+        {description}
+      </p>
+    </div>
   );
 }
 
@@ -52,9 +63,12 @@ export function AdminNavBody({
 }) {
   return (
     <>
-      {ADMIN_NAV_SECTIONS.map((section, index) => (
+      {ADMIN_NAV_SECTIONS.map((section) => (
         <div key={section.title}>
-          {index === 0 ? null : <SectionHeading>{section.title}</SectionHeading>}
+          <SectionHeading
+            title={section.title}
+            description={section.description}
+          />
           <ul className="flex flex-col gap-0.5">
             {section.items.map((item) => (
               <li key={item.href}>
@@ -103,15 +117,23 @@ export function AdminSidebar() {
 
   return (
     <aside className="admin-sidebar hidden w-[240px] shrink-0 flex-col lg:flex">
-      <div className="border-b border-white/10 px-5 py-5">
-        <p className="text-xs font-semibold uppercase tracking-wider text-slate-400">
-          Бөөндөө Сурцгаая
-        </p>
-        <p className="mt-1 text-base font-bold text-white">Удирдлагын хэсэг</p>
+      <div className="flex items-center gap-3 border-b border-white/10 px-5 py-4">
+        <span
+          aria-hidden
+          className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-[var(--admin-sidebar-active)] text-lg"
+        >
+          🐫
+        </span>
+        <div className="min-w-0">
+          <p className="truncate text-sm font-bold text-white">
+            Бөөндөө Сурцгаая
+          </p>
+          <p className="text-[10px] text-slate-400">Удирдлагын хэсэг</p>
+        </div>
       </div>
       <nav
         aria-label="Админ цэс"
-        className="flex-1 overflow-y-auto px-3 pb-6 pt-3"
+        className="flex-1 overflow-y-auto px-3 pb-6 pt-1"
       >
         <AdminNavBody pathname={pathname} />
       </nav>

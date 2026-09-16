@@ -1,11 +1,25 @@
 import Link from "next/link";
 
+import { AdminActivityChart } from "@/components/admin/admin-activity-chart";
+import {
+  AdminAttentionPanel,
+  type AttentionItem,
+} from "@/components/admin/admin-attention-panel";
 import { AdminMetricCard } from "@/components/admin/admin-metric-card";
+import type { ActivityTimeOverview } from "@/lib/supabase/activity-time-analytics";
 import type { AdminDashboardMetrics } from "@/lib/supabase/admin-analytics";
 
 type Props = {
   metrics: AdminDashboardMetrics;
+  activity: ActivityTimeOverview;
+  windowDays: number;
 };
+
+const WINDOW_OPTIONS = [
+  { days: 7, label: "7 хоног" },
+  { days: 30, label: "30 хоног" },
+  { days: 90, label: "90 хоног" },
+];
 
 const numberFormatter = new Intl.NumberFormat("mn-MN");
 
@@ -24,14 +38,43 @@ function formatDateTime(value: string): string {
   });
 }
 
-const QUICK_ACTIONS = [
-  { href: "/admin/lessons", label: "Хичээлүүд", icon: "📚" },
-  { href: "/admin/import", label: "ZIP импорт", icon: "📦" },
-  { href: "/admin/bichleg", label: "Бичлэг", icon: "▶" },
-  { href: "/admin/analytics", label: "Тайлан", icon: "📈" },
-];
+function percentChange(current: number, previous: number): number | null {
+  if (previous <= 0) return null;
+  return ((current - previous) / previous) * 100;
+}
 
-export function AdminDashboard({ metrics }: Props) {
+/**
+ * Splits a double-length activity window into "this period" and "the one
+ * before it", which is what the change pills on the cards compare.
+ */
+function splitActivityWindow(
+  activity: ActivityTimeOverview,
+  windowDays: number
+) {
+  const days = [...activity.days].sort((a, b) => a.day.localeCompare(b.day));
+  const current = days.slice(-windowDays);
+  const previous = days.slice(-windowDays * 2, -windowDays);
+
+  const sumMinutes = (rows: typeof days) =>
+    rows.reduce((total, row) => total + row.totalMinutes, 0);
+  const peakLearners = (rows: typeof days) =>
+    rows.reduce((peak, row) => Math.max(peak, row.learners), 0);
+  const activeDays = (rows: typeof days) =>
+    rows.filter((row) => row.totalMinutes > 0).length;
+
+  return {
+    currentDays: current,
+    currentMinutes: sumMinutes(current),
+    previousMinutes: sumMinutes(previous),
+    currentLearners: peakLearners(current),
+    previousLearners: peakLearners(previous),
+    currentActiveDays: activeDays(current),
+    previousActiveDays: activeDays(previous),
+    hasPrevious: previous.length > 0,
+  };
+}
+
+export function AdminDashboard({ metrics, activity, windowDays }: Props) {
   const {
     lessonStatus,
     contentTotals,
@@ -43,104 +86,128 @@ export function AdminDashboard({ metrics }: Props) {
     warnings,
   } = metrics;
 
+  const window = splitActivityWindow(activity, windowDays);
+  const comparisonLabel = `өмнөх ${windowDays} хоногтой харьцуулахад`;
+
+  const attentionItems: AttentionItem[] = [
+    {
+      count: lessonStatus.draftCount,
+      label: "Ноорог хичээл",
+      description: "Бэлэн болмогц нийтлэх шаардлагатай.",
+      href: "/admin/lessons",
+    },
+    {
+      count: contentQa.needsReviewCount,
+      label: "Шалгах шаардлагатай",
+      description: "QA анхааруулгатай хичээлүүд.",
+      href: "/admin/lessons",
+    },
+    {
+      count: contentQa.lessonsMissingVocabulary,
+      label: "Үгсийн сан дутуу",
+      description: "Нэг ч үг бүртгэгдээгүй хичээл.",
+      href: "/admin/lessons",
+    },
+    {
+      count: contentQa.lessonsMissingQuiz,
+      label: "Дасгал дутуу",
+      description: "Асуулт байхгүй хичээл.",
+      href: "/admin/lessons",
+    },
+    {
+      count: media.mediaMissingCount,
+      label: "Медиа дутуу",
+      description: "Аудио эсвэл бичлэг нь дутуу.",
+      href: "/admin/lessons",
+    },
+    {
+      count: needsAttention.length,
+      label: "Нийт анхааруулга",
+      description: "Дэлгэрэнгүйг доорх жагсаалтаас үз.",
+      href: "/admin/lessons",
+    },
+  ];
+
   return (
     <div className="flex flex-col gap-6">
       <header className="admin-page-header">
-        <div>
-          <h1 className="text-2xl font-bold tracking-tight text-slate-900">
-            Хяналтын самбар
+        <div className="min-w-0">
+          <h1 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
+            Тавтай морил 👋
           </h1>
           <p className="mt-1 text-sm text-slate-500">
-            Контентын төлөв, сурагчдын идэвх — бүх хичээлийн нэгдсэн зураглал.
+            Бөөндөө Сурцгаая — контент болон суралцагчдын нэгдсэн төлөв.
           </p>
         </div>
-        <div className="flex flex-wrap gap-2">
-          {QUICK_ACTIONS.map((action) => (
-            <Link
-              key={action.href}
-              href={action.href}
-              className="admin-btn-secondary text-sm"
-            >
-              <span aria-hidden>{action.icon}</span> {action.label}
-            </Link>
-          ))}
-        </div>
+        <nav aria-label="Хугацааны хүрээ" className="flex flex-wrap gap-1.5">
+          {WINDOW_OPTIONS.map((option) => {
+            const active = option.days === windowDays;
+            return (
+              <Link
+                key={option.days}
+                href={`/admin?days=${option.days}`}
+                aria-current={active ? "true" : undefined}
+                className={
+                  active
+                    ? "rounded-full bg-slate-900 px-3.5 py-1.5 text-xs font-semibold text-white"
+                    : "rounded-full border border-slate-200 bg-white px-3.5 py-1.5 text-xs font-semibold text-slate-600 hover:border-emerald-200 hover:text-emerald-700"
+                }
+              >
+                Сүүлийн {option.label}
+              </Link>
+            );
+          })}
+        </nav>
       </header>
 
-      <section aria-labelledby="dash-lessons">
-        <h2 id="dash-lessons" className="admin-section-title">
-          Хичээлийн төлөв
-        </h2>
-        <div className="mt-3 grid grid-cols-2 gap-3 sm:grid-cols-4">
+      <section aria-label="Гол үзүүлэлт">
+        <div className="grid grid-cols-2 gap-3 lg:grid-cols-4">
           <AdminMetricCard
-            label="Нийт хичээл"
-            value={formatNumber(lessonStatus.totalLessons)}
-            hint="Бүх түвшин"
+            label="Суралцсан хугацаа"
+            value={`${formatNumber(window.currentMinutes)} мин`}
+            icon="⏱"
+            trend={{
+              percent: window.hasPrevious
+                ? percentChange(window.currentMinutes, window.previousMinutes)
+                : null,
+              label: window.hasPrevious
+                ? comparisonLabel
+                : "харьцуулах өмнөх өгөгдөл алга",
+            }}
           />
-          <AdminMetricCard
-            label="Нийтлэгдсэн"
-            value={formatNumber(lessonStatus.availableCount)}
-            accent="emerald"
-            hint="Сурагчдад нээлттэй"
-          />
-          <AdminMetricCard
-            label="Ноорог"
-            value={formatNumber(lessonStatus.draftCount)}
-            accent="amber"
-            hint="Хараахан нийтлэгдээгүй"
-          />
-          <AdminMetricCard
-            label="Шалгах шаардлагатай"
-            value={formatNumber(contentQa.needsReviewCount)}
-            accent={contentQa.needsReviewCount > 0 ? "amber" : "emerald"}
-            hint="QA анхааруулга"
-          />
-        </div>
-      </section>
-
-      <section aria-labelledby="dash-content">
-        <h2 id="dash-content" className="admin-section-title">
-          Контентын сан
-        </h2>
-        <div className="mt-3 grid grid-cols-2 gap-3 sm:grid-cols-4">
-          <AdminMetricCard
-            label="Үгсийн сан"
-            value={formatNumber(contentTotals.totalVocabularyWords)}
-            hint="Бүртгэлтэй үг"
-          />
-          <AdminMetricCard
-            label="Дасгалын асуулт"
-            value={formatNumber(contentTotals.totalQuizQuestions)}
-          />
-          <AdminMetricCard
-            label="Хадмал мөр"
-            value={formatNumber(contentTotals.totalSubtitleLines)}
-          />
-          <AdminMetricCard
-            label="Нийтлэхэд бэлэн"
-            value={formatNumber(contentQa.lessonsReadyToPublish)}
-            accent="emerald"
-          />
-        </div>
-      </section>
-
-      <section aria-labelledby="dash-learners">
-        <h2 id="dash-learners" className="admin-section-title">
-          Сурагчдын идэвх
-        </h2>
-        <div className="mt-3 grid grid-cols-2 gap-3 sm:grid-cols-4">
           <AdminMetricCard
             label="Идэвхтэй суралцагч"
-            value={formatNumber(learnerProgress.usersWithLessonProgress)}
-            hint="Хичээл эхэлсэн"
+            value={formatNumber(
+              Math.max(
+                window.currentLearners,
+                learnerProgress.usersWithLessonProgress
+              )
+            )}
+            icon="🧑‍🎓"
+            trend={{
+              percent: window.hasPrevious
+                ? percentChange(window.currentLearners, window.previousLearners)
+                : null,
+              label: window.hasPrevious
+                ? comparisonLabel
+                : "хичээл эхлүүлсэн нийт хүн",
+            }}
           />
           <AdminMetricCard
-            label="Дуусгасан хичээл"
-            value={formatNumber(learnerProgress.completedLessonRows)}
-          />
-          <AdminMetricCard
-            label="Сурсан үг"
-            value={formatNumber(learnerProgress.learnedVocabularyRows)}
+            label="Идэвхтэй өдөр"
+            value={`${formatNumber(window.currentActiveDays)}/${windowDays}`}
+            icon="📆"
+            trend={{
+              percent: window.hasPrevious
+                ? percentChange(
+                    window.currentActiveDays,
+                    window.previousActiveDays
+                  )
+                : null,
+              label: window.hasPrevious
+                ? comparisonLabel
+                : "хэрэглээ бүртгэгдсэн өдөр",
+            }}
           />
           <AdminMetricCard
             label="Дасгалын дундаж"
@@ -149,43 +216,94 @@ export function AdminDashboard({ metrics }: Props) {
                 ? "—"
                 : `${Math.round(learnerProgress.averageQuizPercentage)}%`
             }
-            accent="emerald"
+            icon="🎯"
             hint={`${formatNumber(learnerProgress.quizAttempts)} оролдлого`}
+          />
+        </div>
+      </section>
+
+      <AdminAttentionPanel items={attentionItems} />
+
+      <AdminActivityChart
+        days={window.currentDays}
+        title={`Сүүлийн ${windowDays} хоногийн суралцах хугацаа`}
+        emptyMessage={
+          activity.warnings.length > 0
+            ? activity.warnings[0]
+            : "Энэ хугацаанд бүртгэгдсэн хэрэглээ алга."
+        }
+      />
+
+      <section aria-labelledby="dash-content">
+        <h2 id="dash-content" className="admin-section-title">
+          Контентын сан
+        </h2>
+        <p className="admin-section-desc">
+          Бүх түвшний хичээл, үг, дасгалын нэгдсэн тоо.
+        </p>
+        <div className="mt-3 grid grid-cols-2 gap-3 lg:grid-cols-4">
+          <AdminMetricCard
+            label="Нийт хичээл"
+            value={formatNumber(lessonStatus.totalLessons)}
+            icon="📚"
+            hint={`${formatNumber(lessonStatus.availableCount)} нийтлэгдсэн · ${formatNumber(lessonStatus.draftCount)} ноорог`}
+          />
+          <AdminMetricCard
+            label="Үгсийн сан"
+            value={formatNumber(contentTotals.totalVocabularyWords)}
+            icon="🔤"
+            hint="Бүртгэлтэй үг"
+          />
+          <AdminMetricCard
+            label="Дасгалын асуулт"
+            value={formatNumber(contentTotals.totalQuizQuestions)}
+            icon="❓"
+            hint="Бүх түвшин"
+          />
+          <AdminMetricCard
+            label="Нийтлэхэд бэлэн"
+            value={formatNumber(contentQa.lessonsReadyToPublish)}
+            icon="✅"
+            hint={`Медиа бэлэн: ${formatNumber(media.mediaReadyCount)}`}
+          />
+        </div>
+      </section>
+
+      <section aria-labelledby="dash-learners">
+        <h2 id="dash-learners" className="admin-section-title">
+          Суралцагчдын үр дүн
+        </h2>
+        <p className="admin-section-desc">
+          Апп дээр бүртгэгдсэн ахиц.
+        </p>
+        <div className="mt-3 grid grid-cols-2 gap-3 lg:grid-cols-4">
+          <AdminMetricCard
+            label="Хичээл эхэлсэн"
+            value={formatNumber(learnerProgress.usersWithLessonProgress)}
+            icon="🚀"
+            hint="Суралцагчийн тоо"
+          />
+          <AdminMetricCard
+            label="Дуусгасан хичээл"
+            value={formatNumber(learnerProgress.completedLessonRows)}
+            icon="🏁"
+          />
+          <AdminMetricCard
+            label="Сурсан үг"
+            value={formatNumber(learnerProgress.learnedVocabularyRows)}
+            icon="🧠"
+          />
+          <AdminMetricCard
+            label="Дасгалын оролдлого"
+            value={formatNumber(learnerProgress.quizAttempts)}
+            icon="📝"
           />
         </div>
         {learnerProgress.limitedByRls ? (
           <p className="mt-2 text-xs text-slate-500">
-            Зарим тоо RLS-ийн улмаас зөвхөн өөрийн өгөгдлөөр хязгаарлагдсан
-            байж болно.
+            Зарим тоо RLS-ийн улмаас хязгаарлагдсан байж болно.
           </p>
         ) : null}
-      </section>
-
-      <section aria-labelledby="dash-media">
-        <h2 id="dash-media" className="admin-section-title">
-          Медиа бэлэн байдал
-        </h2>
-        <div className="mt-3 grid grid-cols-2 gap-3 sm:grid-cols-4">
-          <AdminMetricCard
-            label="Бэлэн"
-            value={formatNumber(media.mediaReadyCount)}
-            accent="emerald"
-          />
-          <AdminMetricCard
-            label="Хүлээгдэж буй"
-            value={formatNumber(media.mediaPendingCount)}
-            accent="amber"
-          />
-          <AdminMetricCard
-            label="Дутуу"
-            value={formatNumber(media.mediaMissingCount)}
-            accent={media.mediaMissingCount > 0 ? "amber" : "emerald"}
-          />
-          <AdminMetricCard
-            label="Аудиотай"
-            value={formatNumber(media.withAudioCount)}
-          />
-        </div>
       </section>
 
       <div className="grid gap-4 lg:grid-cols-2">
@@ -235,9 +353,17 @@ export function AdminDashboard({ metrics }: Props) {
         </section>
 
         <section className="admin-panel p-5" aria-labelledby="dash-recent">
-          <h2 id="dash-recent" className="admin-section-title">
-            Сүүлийн дасгалын оролдлого
-          </h2>
+          <div className="flex items-baseline justify-between gap-3">
+            <h2 id="dash-recent" className="admin-section-title">
+              Сүүлийн дасгалын оролдлого
+            </h2>
+            <Link
+              href="/admin/analytics"
+              className="text-xs font-semibold text-emerald-700 hover:underline"
+            >
+              Тайлан →
+            </Link>
+          </div>
 
           {recentQuizAttempts.length === 0 ? (
             <p className="mt-4 text-sm text-slate-500">
