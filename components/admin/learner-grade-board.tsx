@@ -3,7 +3,9 @@
 import Link from "next/link";
 import { useMemo, useState } from "react";
 
+import { DEMO_BADGE_LABEL, DEMO_DATA_NOTE } from "@/lib/demo-data";
 import {
+  LEARNER_GRADE_BUCKETS,
   LEARNER_GRADE_LABELS,
   LEARNER_GRADE_RANGES,
   LEARNER_GRADE_TONES,
@@ -61,11 +63,19 @@ export function GradeChip({
 export function LearnerGradeBoardView({ board }: Props) {
   const [query, setQuery] = useState("");
   const [openBucket, setOpenBucket] = useState<LearnerGradeBucket | null>(null);
+  // Real learners are the default view: a mixed count would quietly overstate
+  // how many people actually use the app.
+  const [showDemo, setShowDemo] = useState(false);
+
+  const scopedRows = useMemo(
+    () => (showDemo ? board.rows : board.rows.filter((row) => !row.isDemo)),
+    [board.rows, showDemo]
+  );
 
   const filteredRows = useMemo(() => {
     const needle = query.trim().toLowerCase();
-    if (!needle) return board.rows;
-    return board.rows.filter((row) => {
+    if (!needle) return scopedRows;
+    return scopedRows.filter((row) => {
       const haystack = [
         row.userId,
         row.displayName ?? "",
@@ -75,22 +85,41 @@ export function LearnerGradeBoardView({ board }: Props) {
         .toLowerCase();
       return haystack.includes(needle);
     });
-  }, [board.rows, query]);
+  }, [scopedRows, query]);
 
   const groups = useMemo(
     () =>
-      board.distribution.map(({ bucket }) => ({
+      LEARNER_GRADE_BUCKETS.map((bucket) => ({
         bucket,
         rows: filteredRows.filter((row) => row.score.grade === bucket),
       })),
-    [board.distribution, filteredRows]
+    [filteredRows]
   );
+
+  // Recount from the rows actually on screen, so the cards match the tables.
+  const distribution = useMemo(
+    () =>
+      LEARNER_GRADE_BUCKETS.map((bucket) => ({
+        bucket,
+        count: scopedRows.filter((row) => row.score.grade === bucket).length,
+      })),
+    [scopedRows]
+  );
+
+  const ratedRows = scopedRows.filter((row) => row.score.total != null);
+  const averageScore =
+    ratedRows.length > 0
+      ? Math.round(
+          ratedRows.reduce((sum, row) => sum + (row.score.total ?? 0), 0) /
+            ratedRows.length
+        )
+      : null;
 
   return (
     <div className="flex flex-col gap-5">
       <section aria-label="Үнэлгээний хураангуй">
         <div className="grid grid-cols-3 gap-2 sm:grid-cols-6">
-          {board.distribution.map(({ bucket, count }) => (
+          {distribution.map(({ bucket, count }) => (
             <button
               key={bucket}
               type="button"
@@ -128,13 +157,29 @@ export function LearnerGradeBoardView({ board }: Props) {
           className="admin-input sm:max-w-sm"
         />
         <p className="text-xs text-slate-500">
-          Нийт {formatNumber(board.rows.length)} суралцагч ·{" "}
-          {formatNumber(board.ratedCount)} нь үнэлэгдсэн
-          {board.averageScore != null
-            ? ` · дундаж ${board.averageScore} оноо`
-            : ""}
+          Нийт {formatNumber(scopedRows.length)} суралцагч ·{" "}
+          {formatNumber(ratedRows.length)} нь үнэлэгдсэн
+          {averageScore != null ? ` · дундаж ${averageScore} оноо` : ""}
         </p>
       </section>
+
+      {board.demoCount > 0 ? (
+        <section className="flex flex-wrap items-center gap-3 rounded-2xl border border-amber-200 bg-amber-50/70 px-4 py-3">
+          <p className="min-w-0 flex-1 text-xs leading-5 text-amber-900">
+            {showDemo
+              ? DEMO_DATA_NOTE
+              : `${formatNumber(board.demoCount)} жишээ суралцагчийг нуусан байна — эдгээр нь үзүүлэх зорилгоор үүсгэсэн өгөгдөл.`}
+          </p>
+          <button
+            type="button"
+            onClick={() => setShowDemo((value) => !value)}
+            aria-pressed={showDemo}
+            className="shrink-0 rounded-full border border-amber-300 bg-white px-3.5 py-1.5 text-xs font-semibold text-amber-900 hover:border-amber-400"
+          >
+            {showDemo ? "Жишээг нуух" : "Жишээг харуулах"}
+          </button>
+        </section>
+      ) : null}
 
       {groups.map(({ bucket, rows }) => {
         if (rows.length === 0 && openBucket !== bucket) return null;
@@ -186,6 +231,11 @@ export function LearnerGradeBoardView({ board }: Props) {
                           >
                             {learnerLabel(row.userId, row.displayName)}
                           </Link>
+                          {row.isDemo ? (
+                            <span className="ml-2 rounded-full bg-amber-100 px-2 py-0.5 text-[10px] font-bold text-amber-900">
+                              {DEMO_BADGE_LABEL}
+                            </span>
+                          ) : null}
                           {row.email ? (
                             <span className="block text-xs text-slate-500">
                               {row.email}
@@ -243,10 +293,11 @@ export function LearnerGradeBoardView({ board }: Props) {
         );
       })}
 
-      {board.rows.length === 0 ? (
+      {scopedRows.length === 0 ? (
         <p className="admin-panel p-6 text-sm text-slate-600">
-          Одоогоор дасгал хийсэн суралцагч алга. Хэрэглэгчид дасгал ажиллаж
-          эхэлмэгц энд үнэлгээ гарч ирнэ.
+          {board.demoCount > 0 && !showDemo
+            ? "Жинхэнэ суралцагчийн бүртгэл хараахан алга. Жишээ өгөгдлийг харахыг хүсвэл дээрх товчийг дар."
+            : "Одоогоор дасгал хийсэн суралцагч алга. Хэрэглэгчид дасгал ажиллаж эхэлмэгц энд үнэлгээ гарч ирнэ."}
         </p>
       ) : null}
 

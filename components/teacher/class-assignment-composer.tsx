@@ -2,11 +2,13 @@
 
 import { useEffect, useMemo, useState } from "react";
 
+import { AssignmentAttachmentPicker } from "@/components/teacher/assignment-attachment-picker";
+import { ASSIGNMENT_TYPES } from "@/lib/classroom/types";
+import type { ClassroomStudent } from "@/lib/classroom/types";
 import {
-  ASSIGNMENT_TYPES,
-  CUSTOM_ASSIGNMENT_LESSON_ID,
-} from "@/lib/classroom/types";
-import { createAssignment } from "@/lib/supabase/classrooms";
+  createAssignment,
+  getClassroomStudents,
+} from "@/lib/supabase/classrooms";
 import {
   getSupabaseAssignableLessons,
   type AssignableLesson,
@@ -18,6 +20,9 @@ type Props = {
 };
 
 type Mode = "lesson" | "custom";
+
+/** «Бүх анги» сонголтын утга — сурагчийн ID-тай давхцахгүй. */
+const WHOLE_CLASS = "";
 
 const ASSIGNMENT_TYPE_LABELS: Record<string, string> = {
   full_lesson: "Бүтэн хичээл",
@@ -37,6 +42,11 @@ export function ClassAssignmentComposer({ classroomId, onCreated }: Props) {
   const [titleTouched, setTitleTouched] = useState(false);
   const [instructions, setInstructions] = useState("");
   const [dueDate, setDueDate] = useState("");
+  const [targetStudentUserId, setTargetStudentUserId] = useState(WHOLE_CLASS);
+  const [students, setStudents] = useState<ClassroomStudent[]>([]);
+  const [attachment, setAttachment] = useState<File | null>(null);
+  // Даалгавар амжилттай үүссэний дараа file input-ыг цэвэрлэхэд ашиглана.
+  const [attachmentResetKey, setAttachmentResetKey] = useState(0);
   const [saving, setSaving] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [notice, setNotice] = useState<string | null>(null);
@@ -64,6 +74,19 @@ export function ClassAssignmentComposer({ classroomId, onCreated }: Props) {
     };
   }, []);
 
+  useEffect(() => {
+    let cancelled = false;
+    void (async () => {
+      const { data } = await getClassroomStudents(classroomId);
+      if (cancelled) return;
+      // Зөвхөн апп дээрх бүртгэлтэй холбогдсон сурагчийг онилж болно.
+      setStudents((data ?? []).filter((s) => s.studentUserId));
+    })();
+    return () => {
+      cancelled = true;
+    };
+  }, [classroomId]);
+
   const groupedLessons = useMemo(() => {
     const groups = new Map<string, AssignableLesson[]>();
     for (const lesson of lessons) {
@@ -79,6 +102,14 @@ export function ClassAssignmentComposer({ classroomId, onCreated }: Props) {
     () => lessons.find((l) => l.id === lessonId) ?? null,
     [lessons, lessonId]
   );
+
+  const targetLabel = useMemo(() => {
+    if (!targetStudentUserId) return "";
+    const found = students.find(
+      (s) => s.studentUserId === targetStudentUserId
+    );
+    return found?.displayName ?? found?.email ?? "сонгосон";
+  }, [students, targetStudentUserId]);
 
   // Багш гарчгаа гараар бичээгүй байвал сонгосон хичээлээр санал болгоно.
   const effectiveTitle =
@@ -98,24 +129,40 @@ export function ClassAssignmentComposer({ classroomId, onCreated }: Props) {
 
     const { data, error: createError } = await createAssignment({
       classroomId,
-      lessonId: mode === "lesson" ? lessonId : CUSTOM_ASSIGNMENT_LESSON_ID,
+      // Хичээл хавсраагүй даалгаварт NULL бичнэ — хиймэл 'custom' утга хэрэггүй.
+      lessonId: mode === "lesson" ? lessonId : null,
       assignmentType: mode === "lesson" ? assignmentType : "review",
       title: effectiveTitle,
       instructions,
       dueDate: dueDate || undefined,
+      targetStudentUserId: targetStudentUserId || null,
+      attachment,
     });
 
     setSaving(false);
-    if (createError || !data) {
+    if (!data) {
       setError(createError ?? "Даалгавар үүсгэж чадсангүй.");
       return;
     }
+    if (createError) {
+      // Даалгавар үүссэн ч хавсралт байршуулахад алдаа гарсан тохиолдол.
+      setError(`Даалгавар үүссэн ч файл хавсаргаж чадсангүй: ${createError}`);
+    } else {
+      setError(null);
+    }
 
-    setNotice(`«${data.title}» даалгаврыг ангид өглөө.`);
+    setNotice(
+      targetStudentUserId
+        ? `«${data.title}» даалгаврыг ${targetLabel} сурагчид өглөө. Ангийн бусад сурагчид энэ даалгавар харагдахгүй.`
+        : `«${data.title}» даалгаврыг ангид өглөө.`
+    );
     setTitle("");
     setTitleTouched(false);
     setInstructions("");
     setDueDate("");
+    setAttachment(null);
+    setAttachmentResetKey((k) => k + 1);
+    setTargetStudentUserId(WHOLE_CLASS);
     onCreated?.();
   }
 
@@ -247,6 +294,47 @@ export function ClassAssignmentComposer({ classroomId, onCreated }: Props) {
         />
       </label>
 
+      <label className="flex flex-col gap-1 text-sm">
+        <span className="font-medium text-slate-700">Хэнд өгөх</span>
+        <select
+          value={targetStudentUserId}
+          onChange={(e) => setTargetStudentUserId(e.target.value)}
+          className="rounded-lg border border-slate-200 px-3 py-2"
+        >
+          <option value={WHOLE_CLASS}>Бүх анги</option>
+          {students.map((s) => (
+            <option key={s.id} value={s.studentUserId ?? ""}>
+              {s.displayName ?? s.email ?? "Сурагч"}
+            </option>
+          ))}
+        </select>
+      </label>
+
+      {targetStudentUserId ? (
+        <p className="rounded-lg bg-emerald-50 px-3 py-2 text-xs text-emerald-900 ring-1 ring-emerald-200">
+          Энэ даалгавар болон хавсралтыг зөвхөн {targetLabel} харна. Ангийн
+          бусад сурагчид гарчиг нь ч харагдахгүй.
+        </p>
+      ) : (
+        <p className="rounded-lg bg-slate-50 px-3 py-2 text-xs text-slate-600">
+          Ангийн бүх сурагч энэ даалгаврыг харна.
+        </p>
+      )}
+
+      {students.length === 0 ? (
+        <p className="text-xs text-slate-500">
+          Нэг сурагчид онилж өгөхийн тулд тухайн сурагчийн апп дээрх бүртгэлийг
+          ангийн жагсаалттай холбосон байх шаардлагатай.
+        </p>
+      ) : null}
+
+      <AssignmentAttachmentPicker
+        key={attachmentResetKey}
+        value={attachment}
+        onChange={setAttachment}
+        disabled={saving}
+      />
+
       {error ? (
         <p className="rounded-lg bg-red-50 px-3 py-2 text-sm text-red-800">
           {error}
@@ -267,7 +355,7 @@ export function ClassAssignmentComposer({ classroomId, onCreated }: Props) {
       </button>
 
       <p className="text-xs text-slate-500">
-        Файл хавсаргах боломж одоогоор алга — зааврыг текстээр бичнэ үү.
+        Хавсаргасан файлыг зөвхөн энэ даалгаврыг харж буй хүн татна.
       </p>
     </form>
   );

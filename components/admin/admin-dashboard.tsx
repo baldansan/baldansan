@@ -8,6 +8,7 @@ import {
 import { AdminMetricCard } from "@/components/admin/admin-metric-card";
 import { GradeChip } from "@/components/admin/learner-grade-board";
 import {
+  LEARNER_GRADE_BUCKETS,
   LEARNER_GRADE_LABELS,
   LEARNER_GRADE_RANGES,
 } from "@/lib/learner-grade";
@@ -105,6 +106,30 @@ export function AdminDashboard({
   // hard 0 would read as "nobody is using the app", which is a different claim.
   const activityAvailable = activity.warnings.length === 0;
   const unavailableLabel = "хэрэглээний хүснэгт идэвхжээгүй";
+
+  // The dashboard is the owner's own view of the product, so it counts real
+  // learners only; the seeded demo centre is reported separately.
+  const gradeSummary = (() => {
+    if (!grades) return null;
+    const real = grades.rows.filter((row) => !row.isDemo);
+    const rated = real.filter((row) => row.score.total != null);
+    return {
+      total: real.length,
+      rated: rated.length,
+      demoCount: grades.demoCount,
+      averageScore:
+        rated.length > 0
+          ? Math.round(
+              rated.reduce((sum, row) => sum + (row.score.total ?? 0), 0) /
+                rated.length
+            )
+          : null,
+      distribution: LEARNER_GRADE_BUCKETS.map((bucket) => ({
+        bucket,
+        count: real.filter((row) => row.score.grade === bucket).length,
+      })),
+    };
+  })();
 
   const attentionItems: AttentionItem[] = [
     {
@@ -305,7 +330,7 @@ export function AdminDashboard({
         </div>
       </section>
 
-      {grades && grades.rows.length > 0 ? (
+      {gradeSummary && gradeSummary.total > 0 ? (
         <section className="admin-panel p-5" aria-labelledby="dash-grades">
           <div className="flex flex-wrap items-baseline justify-between gap-3">
             <div>
@@ -313,9 +338,12 @@ export function AdminDashboard({
                 Суралцагчдын үнэлгээ
               </h2>
               <p className="admin-section-desc mt-0.5">
-                {formatNumber(grades.ratedCount)} суралцагч үнэлэгдсэн
-                {grades.averageScore != null
-                  ? ` · дундаж ${grades.averageScore} оноо`
+                {formatNumber(gradeSummary.rated)} суралцагч үнэлэгдсэн
+                {gradeSummary.averageScore != null
+                  ? ` · дундаж ${gradeSummary.averageScore} оноо`
+                  : ""}
+                {gradeSummary.demoCount > 0
+                  ? ` · ${formatNumber(gradeSummary.demoCount)} жишээ мөрийг оруулаагүй`
                   : ""}
               </p>
             </div>
@@ -328,7 +356,7 @@ export function AdminDashboard({
           </div>
 
           <div className="mt-4 grid grid-cols-3 gap-2 sm:grid-cols-6">
-            {grades.distribution.map(({ bucket, count }) => (
+            {gradeSummary.distribution.map(({ bucket, count }) => (
               <Link
                 key={bucket}
                 href="/admin/learners"

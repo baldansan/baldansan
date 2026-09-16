@@ -7,6 +7,7 @@ import type {
   TeacherAssignmentSummaryItem,
   TeacherOverviewMetrics,
 } from "@/lib/teacher/analytics-types";
+import { assignmentLessonLabel } from "@/lib/classroom/types";
 import type { Assignment, AssignmentResult, ClassroomStudent } from "@/lib/classroom/types";
 
 function avg(nums: number[]): number | null {
@@ -71,7 +72,7 @@ export function buildClassReportMarkdown(
   lines.push("## Assignments", "");
   for (const a of analytics.assignmentSummaries) {
     lines.push(
-      `- ${a.title} (Lesson ${a.lessonId}): ${a.completedCount}/${a.totalCount} (${a.completionRate}%)`
+      `- ${a.title} (${assignmentLessonLabel(a.lessonId)}): ${a.completedCount}/${a.totalCount} (${a.completionRate}%)`
     );
   }
   lines.push("");
@@ -96,7 +97,7 @@ export function buildAssignmentReportMarkdown(
     `## ${a.title}`,
     "",
     `- Class: ${a.classroomName ?? "—"}`,
-    `- Lesson: ${a.lessonId}`,
+    `- ${assignmentLessonLabel(a.lessonId)}`,
     `- Type: ${a.assignmentType}`,
     `- Due: ${a.dueDate ?? "—"}`,
     `- Completion: ${analytics.completedCount}/${analytics.totalStudents} (${analytics.completionRate}%)`,

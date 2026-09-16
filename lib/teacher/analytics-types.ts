@@ -95,7 +95,8 @@ export type MissingStudentRow = {
 export type TeacherAssignmentSummaryItem = {
   assignmentId: string;
   title: string;
-  lessonId: string;
+  /** Null for a teacher's own task with no lesson attached (migration 058). */
+  lessonId: string | null;
   classroomId: string;
   classroomName: string | null;
   dueDate: string | null;

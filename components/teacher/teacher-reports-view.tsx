@@ -21,6 +21,7 @@ import {
   getTeacherAssignmentSummary,
   getTeacherOverviewMetrics,
 } from "@/lib/supabase/teacher-analytics";
+import { assignmentLessonLabel } from "@/lib/classroom/types";
 import { getTeacherClassrooms } from "@/lib/supabase/classrooms";
 
 type ClassReportRow = {
@@ -242,9 +243,10 @@ export function TeacherReportsView() {
                   {a.title}
                 </Link>
                 <p className="text-xs text-slate-500">
-                  {a.classroomName} · Lesson {a.lessonId}
-                  {a.dueDate ? ` · Due ${a.dueDate}` : ""} · {a.completionRate}%
-                  completion · avg {a.averageQuizPercentage ?? "—"}%
+                  {a.classroomName} · {assignmentLessonLabel(a.lessonId)}
+                  {a.dueDate ? ` · Хугацаа ${a.dueDate}` : ""} ·{" "}
+                  {a.completionRate}% гүйцэтгэл · дундаж{" "}
+                  {a.averageQuizPercentage ?? "—"}%
                 </p>
               </li>
             ))}

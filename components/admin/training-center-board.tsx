@@ -1,5 +1,6 @@
 "use client";
 
+import { DEMO_BADGE_LABEL, DEMO_DATA_NOTE } from "@/lib/demo-data";
 import Link from "next/link";
 import { useMemo, useState } from "react";
 
@@ -346,6 +347,12 @@ export function TrainingCenterBoard({ overview }: Props) {
         </section>
       ) : (
         <>
+          {overview.classes.some((row) => row.isDemo) ? (
+            <p className="rounded-2xl border border-amber-200 bg-amber-50/70 px-4 py-3 text-xs leading-5 text-amber-900">
+              {DEMO_DATA_NOTE}
+            </p>
+          ) : null}
+
           <section className="flex flex-col gap-3">
             <div className="flex flex-wrap items-center gap-2">
               <span className="admin-label">Эрэмбэлэх</span>
@@ -394,6 +401,11 @@ export function TrainingCenterBoard({ overview }: Props) {
                       <span className="font-medium text-slate-900">
                         {row.name}
                       </span>
+                      {row.isDemo ? (
+                        <span className="ml-2 rounded-full bg-amber-100 px-2 py-0.5 text-[10px] font-bold text-amber-900">
+                          {DEMO_BADGE_LABEL}
+                        </span>
+                      ) : null}
                       {row.scheduleNote ? (
                         <span className="block text-xs text-slate-500">
                           {row.scheduleNote}

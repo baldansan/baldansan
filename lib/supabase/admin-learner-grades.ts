@@ -1,5 +1,6 @@
 import "server-only";
 
+import { isDemoId } from "@/lib/demo-data";
 import {
   computeLearnerScore,
   type LearnerGradeBucket,
@@ -10,6 +11,8 @@ import { createServerSupabaseClient } from "@/lib/supabase/server";
 
 export type LearnerGradeRow = {
   userId: string;
+  /** Created by the demo seed rather than by a real person. */
+  isDemo: boolean;
   /** Name from a classroom roster when one exists, otherwise null. */
   displayName: string | null;
   email: string | null;
@@ -26,6 +29,8 @@ export type LearnerGradeRow = {
 
 export type LearnerGradeBoard = {
   rows: LearnerGradeRow[];
+  /** How many of `rows` came from the demo seed. */
+  demoCount: number;
   /** Counts per bucket in A → F → unrated order. */
   distribution: { bucket: LearnerGradeBucket; count: number }[];
   ratedCount: number;
@@ -117,6 +122,7 @@ export async function getLearnerGradeBoard(
   const warnings: string[] = [];
   const empty: LearnerGradeBoard = {
     rows: [],
+    demoCount: 0,
     distribution: [],
     ratedCount: 0,
     averageScore: null,
@@ -258,6 +264,7 @@ export async function getLearnerGradeBoard(
 
       return {
         userId,
+        isDemo: isDemoId(userId),
         displayName: roster?.displayName ?? null,
         email: roster?.email ?? null,
         quizAttempts: acc.quizAttempts,
@@ -298,6 +305,7 @@ export async function getLearnerGradeBoard(
 
   return {
     rows,
+    demoCount: rows.filter((row) => row.isDemo).length,
     distribution: (["A", "B", "C", "D", "F", "unrated"] as const).map(
       (bucket) => ({ bucket, count: counts.get(bucket) ?? 0 })
     ),

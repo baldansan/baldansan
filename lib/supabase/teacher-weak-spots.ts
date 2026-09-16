@@ -421,18 +421,24 @@ export function weakLessonReason(lesson: StudentWeakLesson): string {
 export type AssignWeakLessonInput = {
   classroomId: string;
   studentUserId: string;
+  /**
+   * Зөвхөн БАГШИД харуулах мэдэгдэлд ашиглана. Даалгаврын гарчиг, зааварт
+   * ХЭЗЭЭ Ч бүү бич — сурагчийн нэр тэнд ороод байсан нь ангийнхад нь задарч
+   * байсан гол шалтгаан (058 засварын тайлбарыг үз).
+   */
   studentName: string;
   lesson: StudentWeakLesson;
   dueDate?: string;
+  /** Заавал биш хавсралт (жишээ нь давтлагын хуудас). */
+  attachment?: File | null;
 };
 
 /**
  * Сул хичээлийг ТУХАЙН сурагчид онилж өгнө.
  *
- * Схемийн хязгаарлалт: assignments нь ангийн түвшний хүснэгт (нэг мөр = нэг
- * анги), сурагчийн талбар байхгүй. Тиймээс зорилтот сурагчийг
- * (1) даалгаврын instructions дотор нэрлэж, (2) зөвхөн түүнд assignment_results
- * мөр үүсгэж, (3) тэр мөрийн metadata дотор target_student_user_id-г бичнэ.
+ * 058 засвараас хойш зорилтот сурагч нь assignments.target_student_user_id
+ * баганад бичигдэнэ. RLS нь тэр мөрийг ангийн бусад сурагчаас нууна, тиймээс
+ * гарчиг, зааварт сурагчийн нэрийг бичих ШААРДЛАГАГҮЙ (бичих ч ёсгүй).
  */
 export async function assignWeakLessonToStudent(
   input: AssignWeakLessonInput
@@ -440,10 +446,9 @@ export async function assignWeakLessonToStudent(
   const { lesson } = input;
   const label = weakLessonLabel(lesson);
   const reason = weakLessonReason(lesson);
-  const title = `${input.studentName} — ${label} дахин давтах`;
+  const title = `${label} — дахин давтах`;
 
   const instructionLines = [
-    `Зорилтот сурагч: ${input.studentName}.`,
     reason ? `Шалтгаан: ${reason}.` : null,
     lesson.stages.length > 0
       ? `Хамгийн их алдсан хэсэг: ${lesson.stages
@@ -451,7 +456,7 @@ export async function assignWeakLessonToStudent(
           .map((s) => `${s.stage} — ${s.wrongCount} алдаа`)
           .join("; ")}.`
       : null,
-    "Энэ даалгавар нь ангийн жагсаалтад харагдах ч зөвхөн дээрх сурагчид оноогдсон.",
+    "Энэ даалгаврыг зөвхөн та харж байна.",
   ].filter((line): line is string => Boolean(line));
 
   const { data, error } = await createAssignment({
@@ -461,9 +466,9 @@ export async function assignWeakLessonToStudent(
     title,
     instructions: instructionLines.join(" "),
     dueDate: input.dueDate,
-    targetStudentUserIds: [input.studentUserId],
+    targetStudentUserId: input.studentUserId,
+    attachment: input.attachment ?? null,
     resultMetadata: {
-      target_student_user_id: input.studentUserId,
       assigned_reason: reason,
       weak_lesson_id: lesson.lessonId,
       missed_question_count: lesson.missedQuestionCount,

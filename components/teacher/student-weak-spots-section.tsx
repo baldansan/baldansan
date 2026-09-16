@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useState } from "react";
 
+import { AssignmentAttachmentPicker } from "@/components/teacher/assignment-attachment-picker";
 import { formatMongoliaDateTime } from "@/lib/datetime/mongolia-time";
 import {
   assignWeakLessonToStudent,
@@ -99,6 +100,8 @@ export function StudentWeakSpotsSection({ classroomId, onAssigned }: Props) {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [dueDate, setDueDate] = useState("");
+  const [attachment, setAttachment] = useState<File | null>(null);
+  const [attachmentResetKey, setAttachmentResetKey] = useState(0);
   const [busyKey, setBusyKey] = useState<string | null>(null);
   const [notice, setNotice] = useState<string | null>(null);
   const [reloadToken, setReloadToken] = useState(0);
@@ -138,14 +141,26 @@ export function StudentWeakSpotsSection({ classroomId, onAssigned }: Props) {
       studentName: student.displayName,
       lesson,
       dueDate: dueDate || undefined,
+      attachment,
     });
     setBusyKey(null);
-    if (assignError || !created) {
+    if (!created) {
       setError(assignError ?? "Даалгавар үүсгэж чадсангүй.");
       return;
     }
-    setError(null);
-    setNotice(`«${created.title}» даалгавар үүслээ.`);
+    // Даалгавар үүссэн ч хавсралт байршуулахад алдаа гарсан байж болно.
+    setError(
+      assignError
+        ? `Даалгавар үүссэн ч файл хавсаргаж чадсангүй: ${assignError}`
+        : null
+    );
+    // Сурагчийн нэрийг ЗӨВХӨН энд, багшийн дэлгэц дээр бичнэ. Даалгаврын
+    // гарчиг, зааварт нэр орохгүй — тэнд байсан нь ангийнханд задардаг байсан.
+    setNotice(
+      `«${created.title}» даалгаврыг ${student.displayName} сурагчид өглөө. Энэ даалгаврыг зөвхөн тэр сурагч харна.`
+    );
+    setAttachment(null);
+    setAttachmentResetKey((k) => k + 1);
     reload();
     onAssigned?.();
   }
@@ -176,6 +191,12 @@ export function StudentWeakSpotsSection({ classroomId, onAssigned }: Props) {
       <p className="text-xs text-slate-500">
         Бүх тоо сурагчийн бодит оролдлогоос гарсан. Оролдлого бүртгэгдээгүй бол
         энд тоо харагдахгүй.
+      </p>
+
+      <p className="rounded-lg bg-emerald-50 px-3 py-2 text-xs text-emerald-900 ring-1 ring-emerald-200">
+        Эндээс өгсөн давталтыг ЗӨВХӨН тухайн сурагч харна — ангийн бусад сурагчид
+        гарчиг, заавар, хавсралт нь харагдахгүй. Сурагчийн нэрийг даалгаврын
+        гарчигт бичихгүй.
       </p>
 
       {warnings.map((w) => (
@@ -219,6 +240,16 @@ export function StudentWeakSpotsSection({ classroomId, onAssigned }: Props) {
           className="rounded-lg border border-slate-200 px-3 py-2"
         />
       </label>
+
+      <div className="max-w-md">
+        <AssignmentAttachmentPicker
+          key={attachmentResetKey}
+          value={attachment}
+          onChange={setAttachment}
+          disabled={busyKey !== null}
+          label="Давталтад файл хавсаргах (заавал биш)"
+        />
+      </div>
 
       {students.length === 0 ? (
         <p className="text-sm text-slate-600">

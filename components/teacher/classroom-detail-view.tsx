@@ -207,6 +207,33 @@ export function ClassroomDetailView({ classroomId }: Props) {
       </section>
 
       <section>
+        <h2 className="text-lg font-semibold text-slate-900">Ангийн хэрэгсэл</h2>
+        <p className="mt-1 text-sm text-slate-600">
+          Ирц, шалгалт, хэвлэх тайлан — тус тусдаа хуудсанд.
+        </p>
+        <div className="mt-3 flex flex-wrap gap-2">
+          <Link
+            href={`/teacher/classes/${classroomId}/attendance`}
+            className="inline-flex rounded-full border border-slate-200 px-4 py-2 text-sm font-semibold text-slate-700 hover:border-emerald-200 hover:text-emerald-800"
+          >
+            🗓 Ирцийн бүртгэл →
+          </Link>
+          <Link
+            href={`/teacher/classes/${classroomId}/exams`}
+            className="inline-flex rounded-full border border-slate-200 px-4 py-2 text-sm font-semibold text-slate-700 hover:border-emerald-200 hover:text-emerald-800"
+          >
+            📝 Ангийн шалгалт →
+          </Link>
+          <Link
+            href={`/teacher/classes/${classroomId}/report`}
+            className="inline-flex rounded-full border border-slate-200 px-4 py-2 text-sm font-semibold text-slate-700 hover:border-emerald-200 hover:text-emerald-800"
+          >
+            🖨 Хэвлэх тайлан →
+          </Link>
+        </div>
+      </section>
+
+      <section>
         <h2 className="text-lg font-semibold text-slate-900">Ангийн тайлан</h2>
         <div className="mt-3">
           <ReportExportCard

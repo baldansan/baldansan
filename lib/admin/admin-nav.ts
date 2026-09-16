@@ -84,7 +84,21 @@ export const ADMIN_NAV_INSIGHTS: AdminNavItem[] = [
     label: "Сургалтын төв",
     icon: "🏢",
     hint: "Бүх бүлгийг багш, түвшин, үнэлгээгээр нь харьцуулах.",
-    match: (p) => p === "/admin/center" || p.startsWith("/admin/center/"),
+    match: (p) => p === "/admin/center",
+  },
+  {
+    href: "/admin/center/report",
+    label: "Төвийн тайлан",
+    icon: "🖨",
+    hint: "Хэвлэхэд бэлэн нэгдсэн тайлан.",
+    match: (p) => p.startsWith("/admin/center/report"),
+  },
+  {
+    href: "/admin/center/certificate",
+    label: "Курс дүүргэлтийн бичиг",
+    icon: "🎖",
+    hint: "Курсээ дүүргэсэн сурагчид олгох бичиг.",
+    match: (p) => p.startsWith("/admin/center/certificate"),
   },
   {
     href: "/admin/b2b",

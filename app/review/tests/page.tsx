@@ -1,5 +1,6 @@
 import { MockTestListClient } from "@/components/mock-test/mock-test-list-client";
 import { ReviewSubScreen } from "@/components/review/review-sub-screen";
+import { ClassExamLearnerCard } from "@/components/teacher/class-exam-learner-card";
 import { loadMockTestListPageData } from "@/lib/supabase/mock-tests-server";
 
 export const dynamic = "force-dynamic";
@@ -12,6 +13,8 @@ export default async function ReviewTestsPage() {
   const { tests, latestScores } = await loadMockTestListPageData();
   return (
     <ReviewSubScreen>
+      {/* Багшийн ангид товлосон шалгалт — байхгүй бол юу ч харагдахгүй. */}
+      <ClassExamLearnerCard />
       <MockTestListClient
         tests={tests}
         latestScores={latestScores}

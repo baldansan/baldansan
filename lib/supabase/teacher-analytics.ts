@@ -525,7 +525,9 @@ export async function getTeacherAssignmentSummary(): Promise<
   const assignments = (data ?? []).map((row) => ({
     id: String(row.id),
     title: String(row.title),
-    lessonId: String(row.lesson_id),
+    // lesson_id is nullable since migration 058 — a teacher's own task has no
+    // lesson attached, and String(null) would print the word "null".
+    lessonId: row.lesson_id ? String(row.lesson_id) : null,
     classroomId: String(row.classroom_id),
     classroomName: (row.classrooms as { name?: string } | null)?.name ?? null,
     dueDate: row.due_date ? String(row.due_date) : null,

@@ -1,15 +1,17 @@
 import { hasSupabaseConfig, supabase } from "@/lib/supabase/client";
 import { getAuthenticatedUserId } from "@/lib/supabase/auth";
-import type {
-  Assignment,
-  AssignmentResult,
-  Classroom,
-  ClassroomStudent,
-  ClassroomVisibility,
-  StudentAssignment,
-  StudentProfile,
-  TeacherDashboardStats,
-  TeacherProfile,
+import {
+  CUSTOM_ASSIGNMENT_LESSON_ID,
+  type Assignment,
+  type AssignmentAttachment,
+  type AssignmentResult,
+  type Classroom,
+  type ClassroomStudent,
+  type ClassroomVisibility,
+  type StudentAssignment,
+  type StudentProfile,
+  type TeacherDashboardStats,
+  type TeacherProfile,
 } from "@/lib/classroom/types";
 
 export type ClassroomResult<T> = { data: T | null; error: string | null };
@@ -70,6 +72,11 @@ export function mapClassroomFromRow(row: Record<string, unknown>): Classroom {
     updatedAt: row.updated_at ? String(row.updated_at) : undefined,
     organizationName: orgs?.name ?? null,
     isPersonal: !row.organization_id,
+    deliveryMode: row.delivery_mode
+      ? (String(row.delivery_mode) as Classroom["deliveryMode"])
+      : null,
+    scheduleNote: row.schedule_note ? String(row.schedule_note) : null,
+    courseId: row.course_id ? String(row.course_id) : null,
   };
 }
 
@@ -109,7 +116,11 @@ export function mapAssignmentFromRow(
   return {
     id: String(row.id),
     classroomId: String(row.classroom_id),
-    lessonId: String(row.lesson_id),
+    // 058-аас хойш lesson_id нь NULL байж болно. Хуучин мөрүүдэд 'custom' гэж
+    // бичигдсэн байдаг тул хоёуланг нь нэг утга болгож нэгтгэнэ.
+    lessonId: row.lesson_id
+      ? String(row.lesson_id)
+      : CUSTOM_ASSIGNMENT_LESSON_ID,
     assignmentType: String(row.assignment_type ?? "full_lesson"),
     title: String(row.title),
     instructions: row.instructions ? String(row.instructions) : null,
@@ -119,10 +130,34 @@ export function mapAssignmentFromRow(
       ? String(row.organization_id)
       : orgFromJoin,
     createdBy: row.created_by ? String(row.created_by) : null,
+    targetStudentUserId: row.target_student_user_id
+      ? String(row.target_student_user_id)
+      : null,
+    attachment: mapAssignmentAttachment(row),
     createdAt: row.created_at ? String(row.created_at) : undefined,
     updatedAt: row.updated_at ? String(row.updated_at) : undefined,
     classroomName: name,
     organizationName: orgNested?.name ?? null,
+  };
+}
+
+function mapAssignmentAttachment(
+  row: Record<string, unknown>
+): AssignmentAttachment | null {
+  if (!row.attachment_path) return null;
+  const path = String(row.attachment_path);
+  return {
+    path,
+    name: row.attachment_name
+      ? String(row.attachment_name)
+      : path.split("/").pop() || path,
+    sizeBytes:
+      row.attachment_size_bytes != null
+        ? Number(row.attachment_size_bytes)
+        : null,
+    mimeType: row.attachment_mime_type
+      ? String(row.attachment_mime_type)
+      : null,
   };
 }
 
@@ -730,25 +765,43 @@ export async function getAssignmentById(
   };
 }
 
-export async function createAssignment(input: {
+export type CreateAssignmentInput = {
   classroomId: string;
-  lessonId: string;
+  /**
+   * Хичээлийн ID. Хичээл хавсраагүй (багшийн өөрийн) даалгаварт null өгнө —
+   * 058-аас хойш assignments.lesson_id нь NULL байж болно.
+   */
+  lessonId: string | null;
   assignmentType: string;
   title: string;
   instructions?: string;
   dueDate?: string;
   status?: string;
   /**
-   * Seed assignment_results only for these students (must already belong to the
-   * classroom). Omit for the default behaviour: every linked student in the class.
+   * Зорилтот сурагч. null/undefined бол ангид бүхэлд нь өгнө.
+   *
+   * Утга өгвөл assignments.target_student_user_id багана руу бичигдэж, RLS нь
+   * тухайн мөрийг ангийн бусад сурагчаас НУУНА. Сурагчийн нэрийг instructions
+   * дотор бүү бич — өмнө нь тэгснээс болж нэр задардаг байсан.
    */
-  targetStudentUserIds?: string[];
-  /** metadata written onto the seeded assignment_results rows. */
+  targetStudentUserId?: string | null;
+  /** assignment_results мөрүүдэд бичих нэмэлт мэдээлэл. */
   resultMetadata?: Record<string, unknown>;
-}): Promise<ClassroomResult<Assignment>> {
+  /** Заавал биш хавсралт — даалгавар үүссэний дараа байршуулна. */
+  attachment?: File | null;
+};
+
+export async function createAssignment(
+  input: CreateAssignmentInput
+): Promise<ClassroomResult<Assignment>> {
   if (!supabase) return notConfigured();
   const userId = await requireUserId();
   if (!userId) return { data: null, error: "Not signed in." };
+
+  if (input.attachment) {
+    const invalid = validateAssignmentAttachment(input.attachment);
+    if (invalid) return { data: null, error: invalid };
+  }
 
   const { data: classroom, error: classLookupError } = await supabase
     .from("classrooms")
@@ -767,11 +820,17 @@ export async function createAssignment(input: {
     ? String(classroom.organization_id)
     : null;
 
+  const targetStudentUserId = input.targetStudentUserId?.trim() || null;
+
   const { data, error } = await supabase
     .from("assignments")
     .insert({
       classroom_id: input.classroomId,
-      lesson_id: input.lessonId,
+      // Хиймэл 'custom' утгыг дахин бичихгүй — хоосон бол NULL.
+      lesson_id:
+        input.lessonId && input.lessonId !== CUSTOM_ASSIGNMENT_LESSON_ID
+          ? input.lessonId
+          : null,
       assignment_type: input.assignmentType,
       title: input.title.trim(),
       instructions: input.instructions?.trim() || null,
@@ -779,12 +838,13 @@ export async function createAssignment(input: {
       status: input.status ?? "assigned",
       organization_id: organizationId,
       created_by: userId,
+      target_student_user_id: targetStudentUserId,
     })
     .select("*, classrooms(name, organization_id)")
     .single();
 
   if (error) return { data: null, error: toError(error) };
-  const assignment = mapAssignmentFromRow(data as Record<string, unknown>);
+  let assignment = mapAssignmentFromRow(data as Record<string, unknown>);
 
   const { data: students } = await supabase
     .from("classroom_students")
@@ -796,21 +856,37 @@ export async function createAssignment(input: {
     .map((s) => s.student_user_id)
     .filter(Boolean) as string[];
 
-  // A targeted assignment still belongs to the class (assignments are per
-  // classroom), but only the named students get a result row to work on.
-  const targeted = input.targetStudentUserIds
-    ? classStudentIds.filter((id) => input.targetStudentUserIds?.includes(id))
+  // Онилсон даалгавар ч ангид харьяалагдана, гэхдээ ажиллах мөр нь зөвхөн
+  // зорилтот сурагчид үүснэ.
+  const seedFor = targetStudentUserId
+    ? classStudentIds.filter((id) => id === targetStudentUserId)
     : classStudentIds;
 
-  if (targeted.length > 0) {
+  if (seedFor.length > 0) {
     await supabase.from("assignment_results").insert(
-      targeted.map((sid) => ({
+      seedFor.map((sid) => ({
         assignment_id: assignment.id,
         student_user_id: sid,
         status: "not_started",
         metadata: input.resultMetadata ?? {},
       }))
     );
+  }
+
+  if (input.attachment) {
+    const uploaded = await uploadAssignmentAttachment({
+      classroomId: input.classroomId,
+      assignmentId: assignment.id,
+      file: input.attachment,
+    });
+    if (uploaded.error) {
+      // Даалгавар аль хэдийн үүссэн тул алдааг нуухгүй, гэхдээ даалгаврыг
+      // буцаана — багш хавсралтыг дараа нь дахин оруулж болно.
+      return { data: assignment, error: uploaded.error };
+    }
+    if (uploaded.data) {
+      assignment = { ...assignment, attachment: uploaded.data };
+    }
   }
 
   return { data: assignment, error: null };
@@ -859,6 +935,197 @@ export async function deleteAssignment(
   return { data: null, error: null };
 }
 
+// --- Assignment attachments ---
+//
+// Тусдаа uploader бичээгүй: lib/supabase/media-upload.ts нь зөвхөн админд
+// зориулагдсан (lesson-media bucket хатуу бичигдсэн, isCurrentUserAdmin()
+// шалгалттай) тул багшийн урсгалд тохирохгүй. Доорх функцууд түүнтэй ижил
+// хэв маягийг (шалгалт → зам → upload) дагасан боловч багшийн bucket-тэй
+// ажиллана.
+
+export const ASSIGNMENT_ATTACHMENTS_BUCKET = "assignment-attachments";
+
+/** Хавсралтын дээд хэмжээ. UI дээр мөн энэ тоог харуулна. */
+export const ASSIGNMENT_ATTACHMENT_MAX_BYTES = 20 * 1024 * 1024;
+
+/** Зөвшөөрөгдсөн өргөтгөлүүд. */
+export const ASSIGNMENT_ATTACHMENT_EXTENSIONS = [
+  "pdf",
+  "doc",
+  "docx",
+  "png",
+  "jpg",
+  "jpeg",
+  "webp",
+  "mp3",
+  "m4a",
+  "txt",
+] as const;
+
+/** Татаж авах холбоосын хүчинтэй хугацаа (секунд). */
+const ASSIGNMENT_ATTACHMENT_SIGNED_URL_SECONDS = 10 * 60;
+
+function attachmentExtension(fileName: string): string {
+  const parts = fileName.toLowerCase().split(".");
+  return parts.length > 1 ? parts[parts.length - 1]! : "";
+}
+
+export function formatAttachmentSize(bytes: number | null): string {
+  if (bytes == null || bytes <= 0) return "—";
+  if (bytes < 1024) return `${bytes} B`;
+  if (bytes < 1024 * 1024) return `${Math.round(bytes / 1024)} KB`;
+  return `${(bytes / (1024 * 1024)).toFixed(1)} MB`;
+}
+
+/** input[accept] утга. */
+export function assignmentAttachmentAcceptAttribute(): string {
+  return ASSIGNMENT_ATTACHMENT_EXTENSIONS.map((ext) => `.${ext}`).join(",");
+}
+
+/** Багшид харуулах хязгаарын тайлбар. */
+export function assignmentAttachmentHint(): string {
+  return `${ASSIGNMENT_ATTACHMENT_EXTENSIONS.join(", ")} · дээд тал нь ${Math.round(
+    ASSIGNMENT_ATTACHMENT_MAX_BYTES / (1024 * 1024)
+  )}MB`;
+}
+
+/** Алдаа байвал монголоор тайлбарлана, зөв бол null. */
+export function validateAssignmentAttachment(file: File): string | null {
+  const ext = attachmentExtension(file.name);
+  if (!ext || !ASSIGNMENT_ATTACHMENT_EXTENSIONS.includes(ext as never)) {
+    return `Зөвшөөрөгдөх файлын төрөл: ${ASSIGNMENT_ATTACHMENT_EXTENSIONS.join(", ")}.`;
+  }
+  if (file.size <= 0) {
+    return "Файл хоосон байна.";
+  }
+  if (file.size > ASSIGNMENT_ATTACHMENT_MAX_BYTES) {
+    return `Файл хэтэрхий том байна. Дээд хэмжээ ${Math.round(
+      ASSIGNMENT_ATTACHMENT_MAX_BYTES / (1024 * 1024)
+    )}MB.`;
+  }
+  return null;
+}
+
+/**
+ * Storage доторх зам. Storage RLS нь эхний хоёр хэсгээр
+ * (classrooms/{classroomId}) багшийн эрхийг шалгадаг тул бүтцийг бүү өөрчил.
+ */
+export function getAssignmentAttachmentPath(
+  classroomId: string,
+  assignmentId: string,
+  file: File
+): string {
+  const safeName =
+    file.name
+      .replace(/[^a-zA-Z0-9._-]/g, "_")
+      .replace(/_+/g, "_")
+      .slice(0, 80) || "attachment";
+  return `classrooms/${classroomId}/assignments/${assignmentId}/${Date.now()}-${safeName}`;
+}
+
+export async function uploadAssignmentAttachment(input: {
+  classroomId: string;
+  assignmentId: string;
+  file: File;
+}): Promise<ClassroomResult<AssignmentAttachment>> {
+  if (!supabase || !hasSupabaseConfig) return notConfigured();
+
+  const invalid = validateAssignmentAttachment(input.file);
+  if (invalid) return { data: null, error: invalid };
+
+  const path = getAssignmentAttachmentPath(
+    input.classroomId,
+    input.assignmentId,
+    input.file
+  );
+
+  const { error: uploadError } = await supabase.storage
+    .from(ASSIGNMENT_ATTACHMENTS_BUCKET)
+    .upload(path, input.file, {
+      cacheControl: "3600",
+      upsert: false,
+      contentType: input.file.type || undefined,
+    });
+
+  if (uploadError) {
+    return { data: null, error: uploadError.message };
+  }
+
+  const attachment: AssignmentAttachment = {
+    path,
+    name: input.file.name,
+    sizeBytes: input.file.size,
+    mimeType: input.file.type || null,
+  };
+
+  const { error: updateError } = await supabase
+    .from("assignments")
+    .update({
+      attachment_path: attachment.path,
+      attachment_name: attachment.name,
+      attachment_size_bytes: attachment.sizeBytes,
+      attachment_mime_type: attachment.mimeType,
+    })
+    .eq("id", input.assignmentId);
+
+  if (updateError) {
+    // Мөр шинэчлэгдээгүй бол файл нь ямар ч даалгавартай холбогдоогүй үлдэнэ —
+    // сурагч уншиж чадахгүй тул устгаад алдааг буцаана.
+    await supabase.storage
+      .from(ASSIGNMENT_ATTACHMENTS_BUCKET)
+      .remove([attachment.path]);
+    return { data: null, error: toError(updateError) };
+  }
+
+  return { data: attachment, error: null };
+}
+
+export async function removeAssignmentAttachment(
+  assignmentId: string,
+  path: string
+): Promise<ClassroomResult<null>> {
+  if (!supabase) return notConfigured();
+
+  const { error: updateError } = await supabase
+    .from("assignments")
+    .update({
+      attachment_path: null,
+      attachment_name: null,
+      attachment_size_bytes: null,
+      attachment_mime_type: null,
+    })
+    .eq("id", assignmentId);
+
+  if (updateError) return { data: null, error: toError(updateError) };
+
+  const { error: removeError } = await supabase.storage
+    .from(ASSIGNMENT_ATTACHMENTS_BUCKET)
+    .remove([path]);
+
+  if (removeError) return { data: null, error: removeError.message };
+  return { data: null, error: null };
+}
+
+/**
+ * Хавсралтыг татах хугацаатай холбоос. Bucket нь private тул ил URL байхгүй —
+ * эрхгүй хүн зам нь мэдэгдсэн ч татаж чадахгүй.
+ */
+export async function getAssignmentAttachmentUrl(
+  path: string
+): Promise<ClassroomResult<string>> {
+  if (!supabase) return notConfigured();
+
+  const { data, error } = await supabase.storage
+    .from(ASSIGNMENT_ATTACHMENTS_BUCKET)
+    .createSignedUrl(path, ASSIGNMENT_ATTACHMENT_SIGNED_URL_SECONDS);
+
+  if (error) return { data: null, error: error.message };
+  if (!data?.signedUrl) {
+    return { data: null, error: "Татах холбоос үүсгэж чадсангүй." };
+  }
+  return { data: data.signedUrl, error: null };
+}
+
 export async function getStudentAssignments(): Promise<
   ClassroomResult<StudentAssignment[]>
 > {
@@ -884,7 +1151,7 @@ export async function getStudentAssignments(): Promise<
   if (assignError) return { data: null, error: toError(assignError) };
 
   const assignmentIds = (assignments ?? []).map((a) => String(a.id));
-  let resultsMap = new Map<string, AssignmentResult>();
+  const resultsMap = new Map<string, AssignmentResult>();
 
   if (assignmentIds.length > 0) {
     const { data: results } = await supabase
@@ -913,9 +1180,7 @@ export async function getStudentAssignments(): Promise<
       quizScore: result?.quizScore ?? null,
       quizTotal: result?.quizTotal ?? null,
       completedAt: result?.completedAt ?? null,
-      teacherLabel: classrooms?.teacher_user_id
-        ? `Class teacher`
-        : null,
+      teacherLabel: classrooms?.teacher_user_id ? "Ангийн багш" : null,
     };
   });
 

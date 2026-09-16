@@ -338,7 +338,7 @@ export function LessonQuizClient({
 
       <section className="overflow-hidden">
         <h1 className="break-words text-xl font-bold leading-snug tracking-tight sm:text-3xl">
-          Quiz — {lesson.title}
+          Дасгал — {lesson.title}
         </h1>
         <p className="mt-1 break-words text-lg text-slate-700">{lesson.chineseTitle}</p>
         <p className="mt-2 text-sm text-slate-600 sm:text-base">
@@ -348,8 +348,8 @@ export function LessonQuizClient({
 
       {total === 0 ? (
         <EmptyState
-          title="Quiz асуулт байхгүй"
-          description="Энэ хичээлд quiz асуулт одоогоор байхгүй байна. Үгийн сан эсвэл хичээл үзэх хэсгээс үргэлжлүүлнэ үү."
+          title="Дасгалын асуулт байхгүй"
+          description="Энэ хичээлд дасгалын асуулт одоогоор байхгүй байна. Үгийн сан эсвэл хичээлээ үзэх хэсгээс үргэлжлүүлнэ үү."
           action={
             <>
               <Link

@@ -1,5 +1,7 @@
 import "server-only";
 
+import { isDemoId } from "@/lib/demo-data";
+
 import {
   computeClassLearnerScore,
   gradeFromScore,
@@ -25,6 +27,8 @@ export type ClassDeliveryMode = "in_person" | "online" | "hybrid";
 
 export type TrainingCenterOrganizationOption = {
   id: string;
+  /** Created by the demo seed rather than being a real centre. */
+  isDemo: boolean;
   name: string;
   organizationType: string | null;
   status: string | null;
@@ -33,6 +37,8 @@ export type TrainingCenterOrganizationOption = {
 
 export type TrainingCenterClassRow = {
   classroomId: string;
+  /** Created by the demo seed rather than being a real class. */
+  isDemo: boolean;
   name: string;
   /** Free-text level from the class row, when the centre filled one in. */
   level: string | null;
@@ -506,6 +512,7 @@ export async function getTrainingCenterOverview(
       if (!id) return null;
       return {
         id,
+        isDemo: isDemoId(id),
         name: organizationNames.get(id) ?? id,
         organizationType: text(row.organization_type),
         status: text(row.status),
@@ -792,6 +799,7 @@ export async function getTrainingCenterOverview(
 
     return {
       classroomId: classroom.id,
+      isDemo: isDemoId(classroom.id),
       name: classroom.name,
       level: classroom.level,
       courseId: classroom.courseId,

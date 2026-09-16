@@ -167,22 +167,26 @@ function buildHangulFoundationSteps(
     questions: practiceQuestions,
   });
 
-  steps.push({
-    type: "quiz_intro",
-    displayPhase: 11,
-    title: "Quiz",
-    text: "Одоо богино quiz өгөөд хэр ойлгосноо шалгаарай.",
-  });
-
-  enhancedQuiz.forEach((question, index) => {
+  // Only promise a quiz when there is one: a lesson whose questions were never
+  // imported used to show the intro step followed by nothing.
+  if (enhancedQuiz.length > 0) {
     steps.push({
-      type: "quiz_question",
+      type: "quiz_intro",
       displayPhase: 11,
-      question,
-      index,
-      total: enhancedQuiz.length,
+      title: "Дасгал",
+      text: "Одоо богино дасгал ажиллаад хэр ойлгосноо шалгаарай.",
     });
-  });
+
+    enhancedQuiz.forEach((question, index) => {
+      steps.push({
+        type: "quiz_question",
+        displayPhase: 11,
+        question,
+        index,
+        total: enhancedQuiz.length,
+      });
+    });
+  }
 
   steps.push({ type: "result", displayPhase: 12 });
 
@@ -234,7 +238,7 @@ function buildKoreanPrelessonSteps(
     steps.push({
       type: "quiz_intro",
       title: "Өөрийгөө шалгах",
-      text: "Одоо богино quiz өгөөд хэр ойлгосноо шалгаарай.",
+      text: "Одоо богино дасгал ажиллаад хэр ойлгосноо шалгаарай.",
     });
 
     enhancedQuiz.forEach((question, index) => {
@@ -274,7 +278,7 @@ function buildGenericSteps(
       text:
         lesson.description?.trim() ||
         lesson.subtitle?.trim() ||
-        `${lesson.title} — үг, дасгал, quiz.`,
+        `${lesson.title} — үг, дүрэм, дасгал.`,
     },
   ];
 
@@ -296,7 +300,7 @@ function buildGenericSteps(
   if (enhancedQuiz.length > 0) {
     steps.push({
       type: "quiz_intro",
-      title: "Quiz",
+      title: "Дасгал",
       text: "Сурсан зүйлээ шалгаарай.",
     });
 
