@@ -13,17 +13,17 @@ export function getLessonShortWarnings(report: LessonQaReport): string[] {
   const warnings: string[] = [];
 
   if (!hasAudioUrl(lesson) && !prelesson) {
-    warnings.push("Audio missing");
+    warnings.push("Аудио алга");
   }
   if (!hasThumbnailUrl(lesson) && !prelesson) {
     if (hasHskPackageImagesNeedingStorage(lesson)) {
-      warnings.push("Package images / Needs storage");
+      warnings.push("Багцын зураг — Storage хэрэгтэй");
     } else {
-      warnings.push("Image missing");
+      warnings.push("Зураг алга");
     }
   }
   if (report.qaStatus === "needs_review") {
-    warnings.push("Needs review");
+    warnings.push("Шалгах шаардлагатай");
   }
 
   return warnings;

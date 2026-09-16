@@ -121,23 +121,23 @@ export function analyzeLessonQa(lesson: LessonContent): LessonQaReport {
   if (!hasMetadata) {
     warnings.push(
       prelesson
-        ? "Metadata incomplete (title and target title required)"
-        : "Metadata incomplete"
+        ? "Мэдээлэл дутуу (гарчиг ба зорилтот гарчиг шаардлагатай)"
+        : "Мэдээлэл дутуу"
     );
   }
   if (subtitleCount === 0 && !subtitlesOptional) {
-    warnings.push("No subtitles");
+    warnings.push("Хадмал алга");
   }
   if (vocabularyActual === 0) {
-    warnings.push("No vocabulary");
+    warnings.push("Үгсийн сан алга");
   }
   if (quizActual === 0) {
-    warnings.push("No quiz questions");
+    warnings.push("Дасгалын асуулт алга");
   }
   const vocabMismatch = lesson.vocabularyCount !== vocabularyActual;
   const quizMismatch = lesson.quizCount !== quizActual;
   if (vocabMismatch || quizMismatch) {
-    warnings.push("Count mismatch");
+    warnings.push("Тоо зөрүүтэй");
   }
 
   warnings.push(...getLessonMediaWarnings(lesson));

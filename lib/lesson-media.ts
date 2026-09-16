@@ -62,20 +62,20 @@ export function getLessonMediaWarnings(lesson: LessonContent): string[] {
   const status = normalizeMediaStatus(lesson.mediaStatus);
 
   if (lessonNeedsVideo(lesson) && !hasVideoUrl(lesson)) {
-    warnings.push("No video URL");
+    warnings.push("Бичлэг алга");
   }
   if (status === "pending") {
-    warnings.push("Media pending");
+    warnings.push("Медиа хүлээгдэж байна");
   }
   if (!hasThumbnailUrl(lesson)) {
     if (hasHskPackageImagesNeedingStorage(lesson)) {
-      warnings.push("Package images found (needs storage upload)");
+      warnings.push("Багцад зураг бий — Storage-д байршуулах хэрэгтэй");
     } else {
-      warnings.push("Thumbnail missing");
+      warnings.push("Нүүр зураг алга");
     }
   }
   if (!hasAudioUrl(lesson)) {
-    warnings.push("Audio missing");
+    warnings.push("Аудио алга");
   }
 
   return warnings;

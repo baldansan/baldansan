@@ -10,8 +10,8 @@ const tone: Record<LessonQaStatus, string> = {
 };
 
 const label: Record<LessonQaStatus, string> = {
-  complete: "Complete",
-  needs_review: "Needs review",
+  complete: "Бүрэн",
+  needs_review: "Шалгах шаардлагатай",
 };
 
 export function LessonQaBadge({ status }: Props) {

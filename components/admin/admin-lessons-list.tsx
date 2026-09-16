@@ -50,7 +50,7 @@ export function AdminLessonsList({ reports }: Props) {
     <div className="flex flex-col gap-6">
       <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
         <div>
-          <h1 className="text-2xl font-bold text-slate-900">Lessons</h1>
+          <h1 className="text-2xl font-bold text-slate-900">Хичээлүүд</h1>
           <p className="mt-1 text-sm text-slate-600">
             {reports.length} хичээл
           </p>
@@ -93,7 +93,7 @@ export function AdminLessonsList({ reports }: Props) {
           title="Хичээл олдсонгүй"
           description={
             reports.length === 0
-              ? "Одоогоор хичээл байхгүй. Import ZIP эсвэл шинэ хичээл үүсгэнэ үү."
+              ? "Одоогоор хичээл байхгүй. ZIP импорт хийх эсвэл шинэ хичээл үүсгэнэ үү."
               : "Хайлт эсвэл шүүлтийг өөрчилж үзнэ үү."
           }
           action={
@@ -110,13 +110,13 @@ export function AdminLessonsList({ reports }: Props) {
           <table className="min-w-full text-left text-sm">
             <thead className="border-b border-slate-100 bg-slate-50/80 text-xs font-medium uppercase tracking-wide text-slate-500">
               <tr>
-                <th className="px-4 py-3">Lesson</th>
-                <th className="px-4 py-3">Course</th>
-                <th className="px-4 py-3">Status</th>
-                <th className="px-4 py-3">Vocab</th>
-                <th className="px-4 py-3">Quiz</th>
-                <th className="px-4 py-3">Audio</th>
-                <th className="px-4 py-3">Actions</th>
+                <th className="px-4 py-3">Хичээл</th>
+                <th className="px-4 py-3">Курс</th>
+                <th className="px-4 py-3">Статус</th>
+                <th className="px-4 py-3">Үг</th>
+                <th className="px-4 py-3">Дасгал</th>
+                <th className="px-4 py-3">Аудио</th>
+                <th className="px-4 py-3">Үйлдэл</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-slate-100">
@@ -145,7 +145,7 @@ export function AdminLessonsList({ reports }: Props) {
                           }
                           className="mt-1 text-xs font-medium text-slate-500 hover:text-emerald-700"
                         >
-                          {showAdvanced ? "Hide" : "Advanced details"} ▾
+                          {showAdvanced ? "Хураах" : "Дэлгэрэнгүй"} ▾
                         </button>
                       ) : null}
                       {showAdvanced ? (

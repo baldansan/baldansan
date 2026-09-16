@@ -190,27 +190,27 @@ function buildAttentionList(reports: LessonQaReport[]): AttentionLesson[] {
     const issues: string[] = [];
 
     if (report.subtitleCount === 0 && !lessonSubtitlesOptional(report.lesson)) {
-      issues.push("Missing subtitles");
+      issues.push("Хадмал дутуу");
     }
     if (report.vocabularyActual === 0) {
-      issues.push("Missing vocabulary");
+      issues.push("Үгсийн сан дутуу");
     } else if (report.vocabularyActual < MIN_VOCABULARY_FOR_PUBLISH) {
-      issues.push(`Vocabulary below ${MIN_VOCABULARY_FOR_PUBLISH}`);
+      issues.push(`Үгсийн сан ${MIN_VOCABULARY_FOR_PUBLISH}-аас цөөн`);
     }
     if (report.quizActual === 0) {
-      issues.push("Missing quiz");
+      issues.push("Дасгал дутуу");
     } else if (report.quizActual < MIN_QUIZ_FOR_PUBLISH) {
-      issues.push(`Quiz below ${MIN_QUIZ_FOR_PUBLISH}`);
+      issues.push(`Дасгал ${MIN_QUIZ_FOR_PUBLISH}-аас цөөн`);
     }
     if (
       lessonNeedsVideo(report.lesson) &&
       (normalizeMediaStatus(report.lesson.mediaStatus) === "missing" ||
         !hasVideoUrl(report.lesson))
     ) {
-      issues.push("Media missing");
+      issues.push("Медиа дутуу");
     }
     if (report.qaStatus === "needs_review" && issues.length === 0) {
-      issues.push("Needs review");
+      issues.push("Шалгах шаардлагатай");
     }
 
     if (issues.length > 0) {
