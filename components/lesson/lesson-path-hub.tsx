@@ -30,6 +30,11 @@ export function LessonPathHub({
 }: Props) {
   const allIds = plan.stages.map((s) => s.id);
   const completedCount = progress.completedStageIds.length;
+  const titleMn = lessonDisplayTitleMn(lesson.title.mn);
+  // Сэдэв нь нэртэйгээ ижил байвал давхардуулж харуулах утгагүй —
+  // «你好 / Сэдэв: Сайн уу» гэж хоёр мөр эзлэхгүй.
+  const themeRaw = lessonDisplayTitleMn(lesson.theme?.mn);
+  const themeLabel = themeRaw && themeRaw !== titleMn ? themeRaw : "";
 
   return (
     <div className="bs-path-hub">
@@ -46,7 +51,7 @@ export function LessonPathHub({
           <h1>
             {lesson.level} · {lesson.lesson_number}-р хичээл
           </h1>
-          <p>{lessonDisplayTitleMn(lesson.title.mn)}</p>
+          <p>{titleMn}</p>
         </div>
       </div>
 
@@ -56,8 +61,8 @@ export function LessonPathHub({
           {formatPathProgress(completedCount, plan.stages.length)} ·{" "}
           {formatPathDuration(plan.totalMinutes)}
         </p>
-        {lesson.theme?.mn ? (
-          <p className="bs-path-theme">Сэдэв: {lesson.theme.mn}</p>
+        {themeLabel ? (
+          <p className="bs-path-theme">Сэдэв: {themeLabel}</p>
         ) : null}
       </div>
 
