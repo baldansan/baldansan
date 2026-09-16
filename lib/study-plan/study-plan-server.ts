@@ -296,6 +296,9 @@ function mapQuestion(raw: Record<string, unknown>): MockTestQuestionRow {
     tags: [],
     target_lesson_id: raw.target_lesson_id ? String(raw.target_lesson_id) : null,
     explanation_mn: null,
+    audio_start_sec: null,
+    audio_end_sec: null,
+    audio_transcript: null,
   };
 }
 

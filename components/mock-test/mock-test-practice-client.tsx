@@ -115,7 +115,13 @@ export function MockTestPracticeClient({ test, questions, lessonTitles }: Props)
       .filter((url): url is string => Boolean(url));
     if (urls.length < 2) return null;
     const first = urls[0];
-    return urls.every((url) => url === first) ? first : null;
+    if (!urls.every((url) => url === first)) return null;
+    // Асуулт бүрийн хэсэг (эхлэх/дуусах секунд) мэдэгдэж байвал нэг том
+    // тоглуулагч хэрэггүй — асуулт бүр өөрийн хэсгээ тоглуулна.
+    const everySliced = activeQuestions
+      .filter((item) => item.audio_url)
+      .every((item) => item.audio_start_sec != null);
+    return everySliced ? null : first;
   }, [activeQuestions]);
   const question = activeQuestions[index] ?? null;
   const getElapsed = useQuestionTimer(question?.id ?? "none");

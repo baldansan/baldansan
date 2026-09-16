@@ -65,9 +65,37 @@ function OptionMark({ state }: { state: OptionState }) {
  * Асуулт солигдоход дуудагч талаас `key={url}` өгч дахин мountлуулна —
  * effect дотор setState хийхээс зайлсхийсэн.
  */
-export function PracticeAudio({ url }: { url: string }) {
+export function PracticeAudio({
+  url,
+  startSec = null,
+  endSec = null,
+}: {
+  url: string;
+  /** Хэсгийн бүтэн бичлэг дэх энэ асуултын эхлэх секунд. */
+  startSec?: number | null;
+  endSec?: number | null;
+}) {
   const ref = useRef<HTMLAudioElement>(null);
   const [playing, setPlaying] = useState(false);
+  const sliced = startSec != null;
+
+  /**
+   * Зөвхөн энэ асуултын хэсгийг тоглуулна: эхлэхдээ startSec рүү үсэрч,
+   * endSec дээр зогсоно. Хэрэглэгч гар аргаар хэсгээс гарвал таслахгүй —
+   * зөвхөн энэ хэсгийг дуусгах үед л зогсооно.
+   */
+  const playFromStart = () => {
+    const el = ref.current;
+    if (!el) return;
+    if (sliced) el.currentTime = startSec;
+    void el.play();
+  };
+
+  const handleTimeUpdate = () => {
+    const el = ref.current;
+    if (!el || endSec == null) return;
+    if (el.currentTime >= endSec) el.pause();
+  };
 
   return (
     <div className="bs-mtp-audio">
@@ -79,35 +107,35 @@ export function PracticeAudio({ url }: { url: string }) {
           if (!el) return;
           if (playing) {
             el.pause();
-          } else {
-            void el.play();
+            return;
           }
+          // Хэсгээс гадуур байвал эхнээс нь эхэлнэ.
+          if (
+            sliced &&
+            (el.currentTime < startSec ||
+              (endSec != null && el.currentTime >= endSec))
+          ) {
+            el.currentTime = startSec;
+          }
+          void el.play();
         }}
       >
         <span aria-hidden>{playing ? "⏸" : "▶"}</span>
         {playing ? "Түр зогсоох" : "Сонсох"}
       </button>
-      <button
-        type="button"
-        className="bs-mtp-audio-again"
-        onClick={() => {
-          const el = ref.current;
-          if (!el) return;
-          el.currentTime = 0;
-          void el.play();
-        }}
-      >
+      <button type="button" className="bs-mtp-audio-again" onClick={playFromStart}>
         ⟲ Эхнээс
       </button>
       <audio
         ref={ref}
-        src={url}
-        preload="none"
+        src={sliced ? `${url}#t=${startSec}` : url}
+        preload="metadata"
         controls
         className="bs-mtp-audio-el"
         onPlay={() => setPlaying(true)}
         onPause={() => setPlaying(false)}
         onEnded={() => setPlaying(false)}
+        onTimeUpdate={handleTimeUpdate}
       />
     </div>
   );
@@ -437,10 +465,29 @@ export function MockTestPracticeQuestion({
     <div className="bs-mtp-card">
       <p className="bs-mtp-qno">Асуулт {question.q_no}</p>
       {question.audio_url && !hideAudio ? (
-        <PracticeAudio key={question.audio_url} url={question.audio_url} />
+        <PracticeAudio
+          key={`${question.audio_url}#${question.audio_start_sec ?? 0}`}
+          url={question.audio_url}
+          startSec={question.audio_start_sec}
+          endSec={question.audio_end_sec}
+        />
       ) : null}
       <Stem question={question} />
       {body}
+      {revealed && question.audio_transcript?.trim() ? (
+        <section className="bs-mtp-transcript">
+          <p className="bs-mtp-transcript-label">Сонссон бичвэр</p>
+          <p className="bs-mtp-transcript-text hanzi">
+            {question.audio_transcript.trim()}
+          </p>
+          <p className="bs-mtp-transcript-note">
+            Энэ бичвэрийг яриа таних програмаар автоматаар буулгасан тул
+            нэр, ховор үг дээр алдаа гарсан байж болно. Албан ёсны HSK
+            материалд сонсголын эх бичвэр нийтлэгддэггүй.
+          </p>
+        </section>
+      ) : null}
+
       {revealed && feedback ? (
         <PracticeFeedbackPanel
           feedback={feedback}

@@ -97,6 +97,13 @@ function mapQuestion(raw: Record<string, unknown>): MockTestQuestionRow {
     tags: Array.isArray(raw.tags) ? raw.tags.map(String) : [],
     target_lesson_id: raw.target_lesson_id ? String(raw.target_lesson_id) : null,
     explanation_mn: raw.explanation_mn ? String(raw.explanation_mn) : null,
+    audio_start_sec:
+      raw.audio_start_sec != null ? Number(raw.audio_start_sec) : null,
+    audio_end_sec:
+      raw.audio_end_sec != null ? Number(raw.audio_end_sec) : null,
+    audio_transcript: raw.audio_transcript
+      ? String(raw.audio_transcript)
+      : null,
   };
 }
 

@@ -48,6 +48,11 @@ export type MockTestQuestionRow = {
   tags: string[];
   target_lesson_id: string | null;
   explanation_mn: string | null;
+  /** Хэсгийн бүтэн бичлэг дэх энэ асуултын эхлэх/дуусах секунд. */
+  audio_start_sec: number | null;
+  audio_end_sec: number | null;
+  /** Бичлэгийн хятад текст — АВТОМАТААР гаргасан, алдаатай байж болно. */
+  audio_transcript: string | null;
 };
 
 export type MockTestAnswers = Record<string, string>;
