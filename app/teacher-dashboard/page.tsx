@@ -1,9 +1,9 @@
 import { TeacherDashboardView } from "@/components/b2b/teacher-dashboard-view";
 
 export const metadata = {
-  title: "Teacher dashboard — Бөөндөө Сурцгаая",
+  title: "Багшийн самбар — Бөөндөө Сурцгаая",
   description:
-    "Teacher dashboard — class progress, assignments, analytics, and reports.",
+    "Багшийн самбар — ангийн ахиц, даалгавар, тайлан.",
 };
 
 export default function TeacherDashboardPage() {

@@ -30,13 +30,41 @@ import {
   getTeacherRecentClassActivity,
 } from "@/lib/supabase/teacher-analytics";
 
+/** Shown before a teacher profile exists, so the empty state explains itself. */
+const TEACHER_CAPABILITIES = [
+  {
+    icon: "👥",
+    title: "Анги, оюутны бүртгэл",
+    detail:
+      "Анги үүсгээд оюутнуудаа имэйлээр эсвэл жагсаалтаар нэг дор урина.",
+  },
+  {
+    icon: "📝",
+    title: "Даалгавар оноох",
+    detail:
+      "HSK түвшин бүрийн хичээлээс сонгож, хугацаатай даалгавар өгнө.",
+  },
+  {
+    icon: "📊",
+    title: "Ахицын хяналт",
+    detail:
+      "Хэн дуусгасан, хэн хоцорч байгаа, дасгалын дундаж оноог хичээл тус бүрээр харна.",
+  },
+  {
+    icon: "📄",
+    title: "Тайлан татах",
+    detail:
+      "Ангийн гүйцэтгэлийг тайлан болгон гаргаж, хэлтэс дээрээ хуваалцана.",
+  },
+];
+
 const QUICK_ACTIONS = [
-  { href: "/teacher/reports", label: "View class reports" },
-  { href: "/teacher/assignments", label: "View assignments" },
-  { href: "/teacher/assignments/new", label: "Create assignment" },
-  { href: "/teacher/classes/new", label: "Create class" },
-  { href: "/teacher/classes", label: "My classes" },
-  { href: "/courses/hsk5", label: "Courses", primary: true },
+  { href: "/teacher/reports", label: "Ангийн тайлан" },
+  { href: "/teacher/assignments", label: "Даалгаврууд" },
+  { href: "/teacher/assignments/new", label: "Даалгавар үүсгэх" },
+  { href: "/teacher/classes/new", label: "Анги үүсгэх" },
+  { href: "/teacher/classes", label: "Миний ангиуд" },
+  { href: "/courses", label: "Хичээлүүд", primary: true },
 ];
 
 export function TeacherDashboardView() {
@@ -87,7 +115,7 @@ export function TeacherDashboardView() {
   if (loggedIn === null) {
     return (
       <PublicPageShell active="help" showBottomNav={false}>
-        <p className="text-sm text-slate-600">Loading…</p>
+        <p className="text-sm text-slate-600">Ачаалж байна…</p>
       </PublicPageShell>
     );
   }
@@ -96,9 +124,9 @@ export function TeacherDashboardView() {
     return (
       <PublicPageShell active="help" showBottomNav={false}>
         <section className="rounded-2xl bg-white p-6 ring-1 ring-slate-200">
-          <h1 className="text-2xl font-bold text-slate-900">Teacher dashboard</h1>
+          <h1 className="text-2xl font-bold text-slate-900">Багшийн самбар</h1>
           <p className="mt-2 text-sm text-slate-600">
-            Багшийн dashboard-д нэвтрэх шаардлагатай.
+            Багшийн самбарт хандахын тулд нэвтэрнэ үү.
           </p>
           <div className="mt-4 flex flex-wrap gap-3">
             <Link
@@ -111,7 +139,7 @@ export function TeacherDashboardView() {
               href="/demo"
               className="rounded-full border border-emerald-200 bg-emerald-50 px-5 py-2 text-sm font-semibold text-emerald-800"
             >
-              Demo үзэх
+              Танилцуулга үзэх
             </Link>
           </div>
         </section>
@@ -122,7 +150,7 @@ export function TeacherDashboardView() {
   if (profile === undefined) {
     return (
       <PublicPageShell active="help" showBottomNav={false}>
-        <p className="text-sm text-slate-600">Loading dashboard…</p>
+        <p className="text-sm text-slate-600">Самбарыг ачаалж байна…</p>
       </PublicPageShell>
     );
   }
@@ -131,16 +159,51 @@ export function TeacherDashboardView() {
     return (
       <PublicPageShell active="help" showBottomNav={false}>
         <section className="rounded-2xl bg-white p-6 ring-1 ring-slate-200">
-          <h1 className="text-2xl font-bold">Багшийн dashboard</h1>
-          <p className="mt-2 text-sm text-slate-600">
-            Classroom ашиглахын өмнө багшийн profile үүсгэнэ.
+          <p className="text-sm font-semibold uppercase tracking-wide text-emerald-600">
+            Багш
           </p>
-          <Link
-            href="/teacher/setup"
-            className="mt-4 inline-flex rounded-full bg-emerald-500 px-5 py-2 text-sm font-semibold text-white"
-          >
-            Багшийн profile үүсгэх
-          </Link>
+          <h1 className="mt-1 text-2xl font-bold text-slate-900 sm:text-3xl">
+            Багшийн самбар
+          </h1>
+          <p className="mt-2 max-w-2xl text-sm leading-6 text-slate-600">
+            Анги үүсгэж, оюутнуудаа урьж, даалгавар оноон, ахицыг нь нэг дороос
+            хянана. Эхлэхийн тулд багшийн профайлаа үүсгэнэ үү — нэг минут
+            болно.
+          </p>
+
+          <ul className="mt-5 grid gap-3 sm:grid-cols-2">
+            {TEACHER_CAPABILITIES.map((item) => (
+              <li
+                key={item.title}
+                className="rounded-xl bg-slate-50 px-4 py-3 ring-1 ring-slate-200"
+              >
+                <p className="text-sm font-semibold text-slate-900">
+                  <span aria-hidden className="mr-2">
+                    {item.icon}
+                  </span>
+                  {item.title}
+                </p>
+                <p className="mt-1 text-xs leading-5 text-slate-600">
+                  {item.detail}
+                </p>
+              </li>
+            ))}
+          </ul>
+
+          <div className="mt-5 flex flex-wrap gap-2">
+            <Link
+              href="/teacher/setup"
+              className="inline-flex rounded-full bg-emerald-500 px-5 py-2.5 text-sm font-semibold text-white hover:bg-emerald-600"
+            >
+              Багшийн профайл үүсгэх →
+            </Link>
+            <Link
+              href="/courses"
+              className="inline-flex rounded-full border border-slate-200 px-5 py-2.5 text-sm font-semibold text-slate-700 hover:border-emerald-200"
+            >
+              Хичээлүүдийг үзэх
+            </Link>
+          </div>
         </section>
       </PublicPageShell>
     );
@@ -158,10 +221,10 @@ export function TeacherDashboardView() {
     <PublicPageShell active="help" showBottomNav={false}>
       <section>
         <p className="text-sm font-semibold uppercase tracking-wide text-emerald-600">
-          Teacher
+          Багш
         </p>
         <h1 className="mt-1 text-3xl font-bold tracking-tight sm:text-4xl">
-          Багшийн dashboard
+          Багшийн самбар
         </h1>
         <p className="mt-2 text-sm leading-6 text-slate-600">
           Анги, даалгавар, сурагчийн ахицыг нэг дор хянах хэсэг.
@@ -185,7 +248,7 @@ export function TeacherDashboardView() {
       </section>
 
       <section>
-        <h2 className="text-lg font-semibold text-slate-900">My organizations</h2>
+        <h2 className="text-lg font-semibold text-slate-900">Миний байгууллагууд</h2>
         {myOrganizations.length > 0 ? (
           <ul className="mt-3 flex flex-col gap-2">
             {myOrganizations.map((org) => (
@@ -204,7 +267,7 @@ export function TeacherDashboardView() {
                   href={`/organization/${org.id}`}
                   className="text-sm font-semibold text-emerald-600 hover:text-emerald-800"
                 >
-                  Open dashboard →
+                  Самбар нээх →
                 </Link>
               </li>
             ))}
@@ -212,14 +275,14 @@ export function TeacherDashboardView() {
         ) : (
           <div className="mt-3 rounded-xl bg-slate-50 px-4 py-3 ring-1 ring-slate-200">
             <p className="text-sm text-slate-600">
-              Organization account дараагийн шатанд холбогдоно.
+              Байгууллагын бүртгэл хараахан холбогдоогүй байна.
             </p>
             <div className="mt-3 flex flex-wrap gap-2">
               <Link
                 href="/organization"
                 className="rounded-full border border-slate-200 px-4 py-2 text-sm font-semibold text-slate-700"
               >
-                Organization hub
+                Байгууллагын хэсэг
               </Link>
               <Link
                 href="/school-inquiry"
@@ -235,7 +298,7 @@ export function TeacherDashboardView() {
       {orgPilot && myOrganizations[0] ? (
         <section>
           <h2 className="text-lg font-semibold text-slate-900">
-            Organization pilot — {myOrganizations[0].name}
+            Байгууллагын туршилт — {myOrganizations[0].name}
           </h2>
           <div className="mt-3">
             <PilotReadinessCard
@@ -262,9 +325,9 @@ export function TeacherDashboardView() {
       ) : null}
 
       <section>
-        <h2 className="text-lg font-semibold text-slate-900">Personal classes</h2>
+        <h2 className="text-lg font-semibold text-slate-900">Хувийн ангиуд</h2>
         {personalClasses.length === 0 ? (
-          <p className="mt-2 text-sm text-slate-600">No personal classes yet.</p>
+          <p className="mt-2 text-sm text-slate-600">Одоогоор хувийн анги алга.</p>
         ) : (
           <ul className="mt-3 flex flex-col gap-2">
             {personalClasses.slice(0, 5).map((c) => (
@@ -273,7 +336,7 @@ export function TeacherDashboardView() {
                   href={`/teacher/classes/${c.id}`}
                   className="block rounded-xl bg-white px-4 py-3 text-sm ring-1 ring-slate-200 hover:ring-emerald-200"
                 >
-                  {c.name} · {c.studentCount ?? 0} students
+                  {c.name} · {c.studentCount ?? 0} сурагч
                 </Link>
               </li>
             ))}
@@ -283,16 +346,16 @@ export function TeacherDashboardView() {
           href="/teacher/classes/new"
           className="mt-2 inline-block text-sm text-emerald-600"
         >
-          Create personal class →
+          Хувийн анги үүсгэх →
         </Link>
       </section>
 
       <section>
-        <h2 className="text-lg font-semibold text-slate-900">Organization classes</h2>
+        <h2 className="text-lg font-semibold text-slate-900">Байгууллагын ангиуд</h2>
         {orgClasses.length === 0 ? (
           <p className="mt-2 text-sm text-slate-600">
-            No organization classes yet. Join an organization or create one from the org
-            dashboard.
+            Байгууллагын анги алга. Байгууллагад нэгдэх эсвэл байгууллагын
+            самбараас шинэ анги үүсгэнэ үү.
           </p>
         ) : (
           <ul className="mt-3 flex flex-col gap-2">
@@ -304,7 +367,7 @@ export function TeacherDashboardView() {
                 >
                   {c.name}
                   {c.organizationName ? ` · ${c.organizationName}` : ""} ·{" "}
-                  {c.studentCount ?? 0} students
+                  {c.studentCount ?? 0} сурагч
                 </Link>
               </li>
             ))}
@@ -315,7 +378,7 @@ export function TeacherDashboardView() {
             href={`/teacher/classes/new?organizationId=${myOrganizations[0].id}`}
             className="mt-2 inline-block text-sm text-emerald-600"
           >
-            Create organization class →
+            Байгууллагын анги үүсгэх →
           </Link>
         ) : null}
       </section>
@@ -323,25 +386,25 @@ export function TeacherDashboardView() {
       {metrics ? (
         <section className="grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
           <TeacherMetricCard
-            label="Classes"
+            label="Ангиуд"
             value={String(metrics.classroomCount)}
-            sub={`${metrics.activeClassroomCount} active`}
+            sub={`${metrics.activeClassroomCount} идэвхтэй`}
           />
           <TeacherMetricCard
-            label="Students"
+            label="Сурагчид"
             value={String(metrics.studentCount)}
           />
           <TeacherMetricCard
-            label="Assignments"
+            label="Даалгавар"
             value={String(metrics.assignmentCount)}
           />
           <TeacherMetricCard
-            label="Completed"
+            label="Дуусгасан"
             value={String(metrics.completedResultCount)}
-            sub="assignment results"
+            sub="даалгаврын үр дүн"
           />
           <TeacherMetricCard
-            label="Avg quiz"
+            label="Дасгалын дундаж"
             value={
               metrics.averageQuizPercentage != null
                 ? `${metrics.averageQuizPercentage}%`
@@ -352,9 +415,9 @@ export function TeacherDashboardView() {
       ) : null}
 
       <section>
-        <h2 className="text-lg font-semibold text-slate-900">Recent class activity</h2>
+        <h2 className="text-lg font-semibold text-slate-900">Ангийн сүүлийн үйл ажиллагаа</h2>
         {activity.length === 0 ? (
-          <p className="mt-2 text-sm text-slate-600">No recent activity yet.</p>
+          <p className="mt-2 text-sm text-slate-600">Одоогоор бүртгэгдсэн үйл ажиллагаа алга.</p>
         ) : (
           <ul className="mt-3 flex flex-col gap-2">
             {activity.map((item) => (
@@ -376,27 +439,27 @@ export function TeacherDashboardView() {
       </section>
 
       <section>
-        <h2 className="text-lg font-semibold text-slate-900">Classes needing attention</h2>
+        <h2 className="text-lg font-semibold text-slate-900">Анхаарал шаардсан ангиуд</h2>
         <div className="mt-3">
           <NeedsAttentionCard items={needsAttentionItems} />
         </div>
       </section>
 
       <section>
-        <h2 className="text-lg font-semibold text-slate-900">Quick reports</h2>
+        <h2 className="text-lg font-semibold text-slate-900">Түргэн тайлан</h2>
         <p className="mt-1 text-sm text-slate-600">
-          Class progress, assignment completion, and exportable markdown reports.
+          Ангийн ахиц, даалгаврын гүйцэтгэл, татаж авах боломжтой тайлан.
         </p>
         <Link
           href="/teacher/reports"
           className="mt-3 inline-flex rounded-full bg-emerald-500 px-5 py-2 text-sm font-semibold text-white hover:bg-emerald-600"
         >
-          Open class reports →
+          Ангийн тайлан нээх →
         </Link>
       </section>
 
       <section>
-        <h2 className="text-lg font-semibold text-slate-900">Quick actions</h2>
+        <h2 className="text-lg font-semibold text-slate-900">Түргэн үйлдэл</h2>
         <div className="mt-3 flex flex-wrap gap-2">
           {QUICK_ACTIONS.map((action) => (
             <Link
@@ -416,7 +479,7 @@ export function TeacherDashboardView() {
 
       <section>
         <h2 className="text-lg font-semibold text-slate-900">
-          Recommended classroom workflow
+          Ангитай ажиллах зөвлөмж
         </h2>
         <div className="mt-3">
           <B2BSteps steps={CLASSROOM_WORKFLOW_STEPS} />
