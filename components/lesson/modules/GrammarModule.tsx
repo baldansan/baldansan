@@ -4,6 +4,9 @@
 
 import { useState } from "react";
 import { GrammarPointView } from "@/components/lesson/modules/grammar-point-view";
+import { DeepGrammarPanel } from "@/components/lesson/deep/deep-teaching-blocks";
+import { DeepGrammarDrill } from "@/components/lesson/deep/deep-grammar-drill";
+import type { LessonDeepTeaching } from "@/types/lesson-deep-teaching";
 import type { HskLessonPackage, HskPackageGrammarPoint } from "@/types/hsk-lesson-package";
 import "./grammar-module.css";
 import "./teacher-overlay.css";
@@ -12,10 +15,13 @@ import "./exercises-module.css";
 export default function GrammarModule({
   lessonId,
   lesson,
+  deep = null,
   onDone,
 }: {
   lessonId: string;
   lesson: HskLessonPackage;
+  /** Нэмэлт, гүнзгий тайлбар — байхгүй бол юу ч өөрчлөгдөхгүй. */
+  deep?: LessonDeepTeaching | null;
   onDone: () => void;
 }) {
   const points: HskPackageGrammarPoint[] = [
@@ -60,6 +66,12 @@ export default function GrammarModule({
   const showCollocations =
     gi === 0 && lesson.collocations && lesson.collocations.length > 0;
 
+  // Нэмэлт тайлбарыг дүрмийн НЭРЭЭР нь тааруулна; олдохгүй бол дараалалаар.
+  const deepPoint =
+    deep?.grammar?.find((row) => row.point.trim() === point.point.trim()) ??
+    deep?.grammar?.[gi] ??
+    null;
+
   const exercises = point.exercises ?? [];
   const needsManualAdvance = exercises.length === 0;
 
@@ -84,6 +96,20 @@ export default function GrammarModule({
         isLastPoint={gi === total - 1}
         onComplete={goNextPoint}
       />
+
+      {deepPoint ? (
+        <>
+          <DeepGrammarPanel grammar={deepPoint} />
+          {deepPoint.drills?.length ? (
+            <DeepGrammarDrill
+              key={`${lessonId}-${gi}`}
+              lessonId={lessonId}
+              pointKey={deepPoint.point}
+              drills={deepPoint.drills}
+            />
+          ) : null}
+        </>
+      ) : null}
 
       {needsManualAdvance ? (
         <div className="bs-navrow">

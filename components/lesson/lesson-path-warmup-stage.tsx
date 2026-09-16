@@ -6,6 +6,8 @@ import { TemeeEmojiIcon } from "@/components/temee/temee-emoji-icon";
 import type { LessonPathPlan } from "@/lib/lesson/build-lesson-path";
 import type { HskLessonPackage } from "@/types/hsk-lesson-package";
 import { lessonDisplayTitleMn } from "@/lib/course-display-meta";
+import { DeepPronunciationPanel } from "@/components/lesson/deep/deep-teaching-blocks";
+import type { LessonDeepTeaching } from "@/types/lesson-deep-teaching";
 
 type Props = {
   lesson: HskLessonPackage;
@@ -13,6 +15,8 @@ type Props = {
   onStart?: () => void;
   /** Full warmup stage: dialogues / pronunciation modules after intro */
   showWarmupModules?: boolean;
+  /** Нэмэлт, гүнзгий тайлбар — байхгүй бол юу ч өөрчлөгдөхгүй. */
+  deep?: LessonDeepTeaching | null;
 };
 
 function count<T>(arr: T[] | undefined): number {
@@ -28,6 +32,7 @@ export function LessonPathWarmupStage({
   plan,
   onStart,
   showWarmupModules = false,
+  deep = null,
 }: Props) {
   const vocabN = count(lesson.vocabulary);
   const grammarN = count(lesson.grammar);
@@ -136,6 +141,9 @@ export function LessonPathWarmupStage({
 
       {showWarmupModules && plan.warmupExtras.includes("dialogues") ? (
         <DialoguesModule lesson={lesson} onDone={() => {}} />
+      ) : null}
+      {showWarmupModules && deep?.pronunciation ? (
+        <DeepPronunciationPanel pronunciation={deep.pronunciation} />
       ) : null}
       {showWarmupModules && plan.warmupExtras.includes("pronunciation") ? (
         <PronunciationModule lesson={lesson} onDone={() => {}} />

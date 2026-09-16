@@ -16,6 +16,8 @@ import type {
 import { CharacterDecompositionHint } from "@/components/hanzi/CharacterDecompositionHint";
 import { resolveDecompositionCharacters } from "@/lib/hanzi/character-decomposition";
 import SpeakButton from "../SpeakButton";
+import { DeepWordPanel } from "@/components/lesson/deep/deep-teaching-blocks";
+import { findDeepWord, type LessonDeepTeaching } from "@/types/lesson-deep-teaching";
 
 function vocabKey(w: VocabItem): string {
   return String(w.id ?? w.zh);
@@ -39,10 +41,13 @@ function isCommonFrequency(frequency?: number): boolean {
 export default function VocabularyCard({
   lessonId,
   lesson,
+  deep = null,
   onDone,
 }: {
   lessonId: string;
   lesson: Lesson;
+  /** Нэмэлт, гүнзгий тайлбар — байхгүй бол юу ч өөрчлөгдөхгүй. */
+  deep?: LessonDeepTeaching | null;
   onDone: () => void;
 }) {
   const words: VocabItem[] = lesson.vocabulary ?? [];
@@ -53,6 +58,7 @@ export default function VocabularyCard({
 
   const total = words.length;
   const w = words[i];
+  const deepWord = findDeepWord(deep, w?.zh ?? "");
 
   const hasExample = useMemo(
     () => Boolean(w && w.example_zh && w.example_zh.trim().length > 0),
@@ -263,6 +269,8 @@ export default function VocabularyCard({
             <SpeakButton text={w.example_zh as string} title="Жишээг сонсох" />
           </div>
         )}
+
+        {deepWord ? <DeepWordPanel key={w.zh} word={deepWord} /> : null}
       </div>
 
       <div className="bs-vbtns">

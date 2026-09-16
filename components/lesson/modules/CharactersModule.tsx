@@ -5,6 +5,11 @@ import { CharacterDecompositionHint } from "@/components/hanzi/CharacterDecompos
 import { CharacterWriter } from "@/components/hanzi/CharacterWriter";
 import { markBsModuleCompleted } from "@/lib/lesson/bs-step-progress";
 import { HANZI_WRITING_LABELS } from "@/lib/hanzi/writing-practice";
+import { DeepHanziPanel } from "@/components/lesson/deep/deep-teaching-blocks";
+import {
+  findDeepHanzi,
+  type LessonDeepTeaching,
+} from "@/types/lesson-deep-teaching";
 import type {
   HskCharacter,
   HskLessonPackage as Lesson,
@@ -13,10 +18,13 @@ import type {
 export default function CharactersModule({
   lessonId,
   lesson,
+  deep = null,
   onDone,
 }: {
   lessonId: string;
   lesson: Lesson;
+  /** Нэмэлт, гүнзгий тайлбар — байхгүй бол юу ч өөрчлөгдөхгүй. */
+  deep?: LessonDeepTeaching | null;
   onDone: () => void;
 }) {
   const characters = useMemo(
@@ -67,6 +75,13 @@ export default function CharactersModule({
       </div>
 
       <CharacterDecompositionHint char={current.hanzi} />
+
+      {(() => {
+        const deepHanzi = findDeepHanzi(deep, current.hanzi);
+        return deepHanzi ? (
+          <DeepHanziPanel key={current.hanzi} hanzi={deepHanzi} />
+        ) : null;
+      })()}
 
       <CharacterWriter
         key={`${current.hanzi}-${index}`}

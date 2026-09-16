@@ -10,6 +10,7 @@ import {
 import { isHskStructuredLesson } from "@/lib/lesson/hsk-lesson-content";
 import { resolveHskLessonPackageFromLesson } from "@/lib/lesson/resolve-hsk-lesson-package";
 import { loadLessonQuizQuestionsForPage } from "@/lib/lesson/quiz-page-loader";
+import { fetchLessonDeepTeaching } from "@/lib/supabase/lesson-deep-teaching";
 import { toLessonListSummary } from "@/lib/lesson/lesson-summary";
 import { LessonWatchClient } from "./watch-client";
 
@@ -67,10 +68,13 @@ export default async function LessonWatchPage({
     ReturnType<typeof loadLessonQuizQuestionsForPage>
   >["questions"] = [];
   let useDatabaseQuizOptions = false;
+  let deep: Awaited<ReturnType<typeof fetchLessonDeepTeaching>> = null;
   if (lessonPackage) {
     const quizData = await loadLessonQuizQuestionsForPage(lessonId, lesson);
     quizQuestions = quizData.questions;
     useDatabaseQuizOptions = quizData.fromDatabase;
+    // Нэмэлт агуулга — байхгүй бол null, хичээл урьдын адил ажиллана.
+    deep = await fetchLessonDeepTeaching(lessonId);
   }
 
   return (
@@ -81,6 +85,7 @@ export default async function LessonWatchPage({
       useDatabaseQuizOptions={useDatabaseQuizOptions}
       adminPreview={adminPreview}
       nextLessonId={nextLessonId}
+      deep={deep}
     />
   );
 }

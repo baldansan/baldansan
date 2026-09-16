@@ -11,6 +11,7 @@ import { VideoLessonWatchClient } from "@/components/lesson/video-lesson-watch";
 import { isHskStructuredLesson } from "@/lib/lesson/hsk-lesson-content";
 import { resolveLessonContentType } from "@/lib/lesson-content-type";
 import type { HskLessonPackage } from "@/types/hsk-lesson-package";
+import type { LessonDeepTeaching } from "@/types/lesson-deep-teaching";
 import type { LessonContent } from "@/types/lesson-content";
 import type { QuizQuestion } from "@/types/lesson";
 import { useActivityTracker } from "@/lib/analytics/activity-tracker";
@@ -36,6 +37,8 @@ type Props = {
   useDatabaseQuizOptions?: boolean;
   adminPreview?: boolean;
   nextLessonId?: string | null;
+  /** Нэмэлт, гүнзгий заах агуулга (HSK1/HSK2). Байхгүй бол хуучнаараа. */
+  deep?: LessonDeepTeaching | null;
 };
 
 function SchemaLessonWatchPlayer({
@@ -46,6 +49,7 @@ function SchemaLessonWatchPlayer({
   useDatabaseQuizOptions = false,
   nextLessonId = null,
   adminPreview = false,
+  deep = null,
 }: {
   lessonId: string;
   lesson: LessonContent;
@@ -54,6 +58,7 @@ function SchemaLessonWatchPlayer({
   useDatabaseQuizOptions?: boolean;
   nextLessonId?: string | null;
   adminPreview?: boolean;
+  deep?: LessonDeepTeaching | null;
 }) {
   const router = useRouter();
 
@@ -69,6 +74,7 @@ function SchemaLessonWatchPlayer({
           useDatabaseQuizOptions={useDatabaseQuizOptions}
           nextLessonId={nextLessonId}
           adminPreview={adminPreview}
+          deep={deep}
           onExit={() => router.back()}
         />
       </div>
@@ -83,6 +89,7 @@ export function LessonWatchClient({
   useDatabaseQuizOptions = false,
   adminPreview = false,
   nextLessonId = null,
+  deep = null,
 }: Props) {
   // Time-on-lesson (Оюу оноо): one tracker for every lesson-watch variant.
   useActivityTracker("lesson", lesson.id, !adminPreview);
@@ -97,6 +104,7 @@ export function LessonWatchClient({
         useDatabaseQuizOptions={useDatabaseQuizOptions}
         nextLessonId={nextLessonId}
         adminPreview={adminPreview}
+        deep={deep}
       />
     );
   }

@@ -18,6 +18,7 @@ import {
   markLessonStartedSmart,
 } from "@/lib/progress";
 import type { HskLessonPackage } from "@/types/hsk-lesson-package";
+import type { LessonDeepTeaching } from "@/types/lesson-deep-teaching";
 import type { LessonContent } from "@/types/lesson-content";
 import type { QuizQuestion } from "@/types/lesson";
 import { LessonPathHub } from "./lesson-path-hub";
@@ -45,6 +46,8 @@ type Props = {
   useDatabaseQuizOptions?: boolean;
   nextLessonId?: string | null;
   adminPreview?: boolean;
+  /** Нэмэлт, гүнзгий заах агуулга — байхгүй бол хичээл урьдын адил. */
+  deep?: LessonDeepTeaching | null;
   onExit?: () => void;
 };
 
@@ -56,6 +59,7 @@ export default function LessonPathPlayer({
   useDatabaseQuizOptions = false,
   nextLessonId = null,
   adminPreview = false,
+  deep = null,
   onExit,
 }: Props) {
   const plan = useMemo(
@@ -224,6 +228,7 @@ export default function LessonPathPlayer({
             plan={pathPlan}
             onStart={handleFinishStage}
             showWarmupModules
+            deep={deep}
           />
         );
       case "vocabulary":
@@ -233,6 +238,7 @@ export default function LessonPathPlayer({
               <VocabularyCard
                 lessonId={lessonId}
                 lesson={lesson}
+                deep={deep}
                 onDone={finishModuleStage}
               />
             ) : null}
@@ -240,6 +246,7 @@ export default function LessonPathPlayer({
               <CharactersModule
                 lessonId={lessonId}
                 lesson={lesson}
+                deep={deep}
                 onDone={finishModuleStage}
               />
             ) : null}
@@ -254,7 +261,14 @@ export default function LessonPathPlayer({
           />
         );
       case "grammar":
-        return <GrammarModule lessonId={lessonId} lesson={lesson} onDone={finishModuleStage} />;
+        return (
+          <GrammarModule
+            lessonId={lessonId}
+            lesson={lesson}
+            deep={deep}
+            onDone={finishModuleStage}
+          />
+        );
       case "practice":
         return pathPlan.practiceSource ? (
           <ExercisesModule
