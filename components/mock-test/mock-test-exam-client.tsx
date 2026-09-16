@@ -562,6 +562,17 @@ export function MockTestExamClient({
               Табаар чөлөөтэй шилжинэ. Аудио дахин сонсоно.
             </span>
           </button>
+          <Link
+            href={`/review/practice/${test.id}`}
+            className="bs-mt-mode-card bs-mt-mode-card--practice"
+          >
+            <span className="bs-mt-mode-card-title">Сурах горим</span>
+            <span className="bs-mt-mode-card-meta">Цаг хэмжихгүй</span>
+            <span className="bs-mt-mode-card-desc">
+              Хариулсан даруйд зөв хариулт, яагаад тэр болсон тайлбар шууд
+              гарна. Хэсэг хэсгээр нь дасгал хийнэ.
+            </span>
+          </Link>
         </div>
 
         {showDevTools ? (

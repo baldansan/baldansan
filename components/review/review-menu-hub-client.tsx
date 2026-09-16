@@ -404,6 +404,21 @@ export function ReviewMenuHubClient({
           <span className="bs-tm-card-chev" aria-hidden>›</span>
         </Link>
 
+        <Link href="/review/practice" className="bs-tm-card">
+          <span className="bs-tm-card-ic bs-tm-card-ic--green" aria-hidden>
+            🎯
+          </span>
+          <span className="bs-tm-card-body">
+            <span className="bs-tm-card-title">
+              {tr(locale, "Шалгалтын дасгал")}
+            </span>
+            <span className="bs-tm-card-sub">
+              {tr(locale, "Цаггүй · алдсан бүрд тайлбар шууд гарна")}
+            </span>
+          </span>
+          <span className="bs-tm-badge-new">{tr(locale, "ШИНЭ")}</span>
+        </Link>
+
         <Link href="/review/tests" className="bs-tm-card">
           <span className="bs-tm-card-ic bs-tm-card-ic--purple" aria-hidden>
             📝
