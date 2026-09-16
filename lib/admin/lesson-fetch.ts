@@ -5,6 +5,7 @@ import { cache } from "react";
 import { analyzeLessonQa, type LessonQaReport } from "@/lib/admin/lesson-qa";
 import { LEARNER_COURSE_PROBE_IDS } from "@/lib/language-track";
 import {
+  canonicalLessonId,
   lessonIdQueryCandidates,
   normalizeLessonRouteId,
 } from "@/lib/lesson-id";
@@ -236,18 +237,139 @@ async function mapWithConcurrency<Item, Result>(
 /** How many lesson bundles to load at once. */
 const ADMIN_LESSON_FETCH_CONCURRENCY = 24;
 
+type LessonChildCounts = {
+  subtitles: number;
+  vocabulary: number;
+  quiz: number;
+};
+
+function readEmbeddedCount(value: unknown): number {
+  // PostgREST returns an embedded aggregate as [{ count: n }].
+  if (Array.isArray(value)) {
+    const first = value[0] as { count?: unknown } | undefined;
+    return typeof first?.count === "number" ? first.count : 0;
+  }
+  if (value && typeof (value as { count?: unknown }).count === "number") {
+    return (value as { count: number }).count;
+  }
+  return 0;
+}
+
+/**
+ * Row counts for every lesson in a course, in one query.
+ *
+ * QA only needs how many subtitles / words / questions a lesson has, so pulling
+ * the whole bundle per lesson was the expensive way to ask. Returns null when
+ * the embedded-count select is unavailable, and the caller falls back to the
+ * per-lesson bundle fetch.
+ */
+async function fetchLessonChildCounts(
+  courseId: string
+): Promise<Map<string, LessonChildCounts> | null> {
+  const client = await getServerSupabaseClientOrNull();
+  if (!client) return null;
+
+  try {
+    const { data, error } = await client
+      .from("lessons")
+      .select(
+        "id, subtitle_lines(count), vocabulary_words(count), quiz_questions(count)"
+      )
+      .eq("course_id", courseId);
+
+    if (error || !data) {
+      debugWarn("[lesson-fetch] Embedded QA counts unavailable", {
+        courseId,
+        error,
+      });
+      return null;
+    }
+
+    const counts = new Map<string, LessonChildCounts>();
+    for (const row of data as Record<string, unknown>[]) {
+      const id = canonicalLessonId(String(row.id));
+      counts.set(id, {
+        subtitles: readEmbeddedCount(row.subtitle_lines),
+        vocabulary: readEmbeddedCount(row.vocabulary_words),
+        quiz: readEmbeddedCount(row.quiz_questions),
+      });
+    }
+    return counts;
+  } catch (error) {
+    debugWarn("[lesson-fetch] Embedded QA count query failed", {
+      courseId,
+      error,
+    });
+    return null;
+  }
+}
+
+/**
+ * `analyzeLessonQa` only reads the *lengths* of these arrays, so filling them
+ * with placeholders lets a counts-only read produce the same report a full
+ * bundle would — including the metadata-vs-actual mismatch check.
+ */
+function lessonSnapshotFromCounts(
+  summary: LessonContent,
+  counts: LessonChildCounts
+): LessonContent {
+  return {
+    ...summary,
+    timedSubtitles: Array.from({ length: counts.subtitles }, () => ({
+      start: "00:00:00",
+      end: "00:00:01",
+      chinese: "—",
+      pinyin: "",
+      mongolian: "—",
+    })),
+    vocabulary: Array.from({ length: counts.vocabulary }, (_, index) => ({
+      id: `qa-${index}`,
+      chinese: "—",
+      pinyin: "",
+      mongolian: "—",
+      hskLevel: "",
+      exampleChinese: "",
+      exampleMongolian: "",
+    })),
+    quizQuestions: Array.from({ length: counts.quiz }, (_, index) => ({
+      id: `qa-${index}`,
+      type: "multiple_choice" as const,
+      question: "—",
+      options: ["—"],
+      correctAnswer: "—",
+      explanation: "",
+    })),
+  };
+}
+
 async function buildQaReports(
-  summaries: readonly LessonContent[]
+  summaries: readonly LessonContent[],
+  countsByLesson?: Map<string, LessonChildCounts> | null
 ): Promise<LessonQaReport[]> {
+  const cheap: LessonQaReport[] = [];
+  const needsBundle: LessonContent[] = [];
+
+  for (const summary of summaries) {
+    const counts = countsByLesson?.get(canonicalLessonId(summary.id));
+    if (counts) {
+      cheap.push(analyzeLessonQa(lessonSnapshotFromCounts(summary, counts)));
+    } else {
+      needsBundle.push(summary);
+    }
+  }
+
   const lessons = await mapWithConcurrency(
-    summaries,
+    needsBundle,
     ADMIN_LESSON_FETCH_CONCURRENCY,
     (summary) => getAdminLessonForQa(summary.id)
   );
 
-  return lessons
-    .filter((lesson): lesson is LessonContent => Boolean(lesson))
-    .map((lesson) => analyzeLessonQa(lesson));
+  return [
+    ...cheap,
+    ...lessons
+      .filter((lesson): lesson is LessonContent => Boolean(lesson))
+      .map((lesson) => analyzeLessonQa(lesson)),
+  ];
 }
 
 /**
@@ -256,21 +378,29 @@ async function buildQaReports(
  */
 export const getHsk5LessonsWithQa = cache(
   async function getHsk5LessonsWithQa(): Promise<LessonQaReport[]> {
-    const summaries = await getAdminLessonsByCourseId("hsk5");
-    const reports = await buildQaReports(summaries);
+    const [summaries, counts] = await Promise.all([
+      getAdminLessonsByCourseId("hsk5"),
+      fetchLessonChildCounts("hsk5"),
+    ]);
+    const reports = await buildQaReports(summaries, counts);
 
-    return reports.sort((a, b) => Number(a.lesson.id) - Number(b.lesson.id));
+    return reports.sort((a, b) =>
+      a.lesson.id.localeCompare(b.lesson.id, undefined, { numeric: true })
+    );
   }
 );
 
 /** Admin list: lessons across HSK + Korean (and other probed) course catalogs. */
 export const getAllAdminLessonsWithQa = cache(
   async function getAllAdminLessonsWithQa(): Promise<LessonQaReport[]> {
-    const courseLists = await Promise.all(
-      LEARNER_COURSE_PROBE_IDS.map((courseId) =>
-        getAdminLessonsByCourseId(courseId)
-      )
-    );
+    const [courseLists, countLists] = await Promise.all([
+      Promise.all(
+        LEARNER_COURSE_PROBE_IDS.map((courseId) =>
+          getAdminLessonsByCourseId(courseId)
+        )
+      ),
+      Promise.all(LEARNER_COURSE_PROBE_IDS.map(fetchLessonChildCounts)),
+    ]);
 
     const seen = new Set<string>();
     const summaries: LessonContent[] = [];
@@ -282,12 +412,22 @@ export const getAllAdminLessonsWithQa = cache(
       }
     }
 
-    const reports = await buildQaReports(summaries);
+    const counts = new Map<string, LessonChildCounts>();
+    for (const list of countLists) {
+      if (!list) continue;
+      for (const [lessonId, value] of list) {
+        counts.set(lessonId, value);
+      }
+    }
+
+    const reports = await buildQaReports(summaries, counts);
 
     return reports.sort((a, b) => {
       const courseCompare = a.lesson.courseId.localeCompare(b.lesson.courseId);
       if (courseCompare !== 0) return courseCompare;
-      return String(a.lesson.id).localeCompare(String(b.lesson.id));
+      return a.lesson.id.localeCompare(b.lesson.id, undefined, {
+        numeric: true,
+      });
     });
   }
 );
