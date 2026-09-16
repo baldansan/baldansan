@@ -27,12 +27,15 @@ import type { LessonContent } from "@/types/lesson-content";
 const debugWarn: (...args: unknown[]) => void =
   process.env.NODE_ENV === "development" ? console.warn : () => {};
 
-async function getServerSupabaseClientOrNull() {
-  if (!hasSupabaseConfig) {
-    return null;
+/** One client per request — building it re-parses cookies every time. */
+const getServerSupabaseClientOrNull = cache(
+  async function getServerSupabaseClientOrNull() {
+    if (!hasSupabaseConfig) {
+      return null;
+    }
+    return createServerSupabaseClient();
   }
-  return createServerSupabaseClient();
-}
+);
 
 /** Admin/full server fetch: any publish status (RLS + optional RPC fallback). */
 export const getAdminLessonById = cache(async function getAdminLessonById(
@@ -52,13 +55,17 @@ export const getAdminLessonById = cache(async function getAdminLessonById(
     return undefined;
   }
 
-  const { data: userData } = await client.auth.getUser();
-  debugWarn("[lesson-fetch] Admin lesson fetch attempt", {
-    lessonId: normalizedId,
-    queryCandidates: lessonIdQueryCandidates(normalizedId),
-    hasUser: Boolean(userData.user),
-    userId: userData.user?.id ?? null,
-  });
+  // Dev-only: this is a network round trip to Supabase auth, and it was being
+  // paid once per lesson purely to fill in a log line that production drops.
+  if (process.env.NODE_ENV === "development") {
+    const { data: userData } = await client.auth.getUser();
+    debugWarn("[lesson-fetch] Admin lesson fetch attempt", {
+      lessonId: normalizedId,
+      queryCandidates: lessonIdQueryCandidates(normalizedId),
+      hasUser: Boolean(userData.user),
+      userId: userData.user?.id ?? null,
+    });
+  }
 
   // RPC first: SECURITY DEFINER bundle load works for draft + alphanumeric ids.
   try {
@@ -203,7 +210,7 @@ async function mapWithConcurrency<Item, Result>(
 }
 
 /** How many lesson bundles to load at once. */
-const ADMIN_LESSON_FETCH_CONCURRENCY = 8;
+const ADMIN_LESSON_FETCH_CONCURRENCY = 12;
 
 async function buildQaReports(
   summaries: readonly LessonContent[]

@@ -1,5 +1,6 @@
 import type { SupabaseClient } from "@supabase/supabase-js";
 import type { ImportDraftApiBody } from "@/lib/admin/build-import-draft-request";
+import { courseDisplaySubtitle } from "@/lib/course-display-meta";
 import { inferLanguageTagFromCourseId } from "@/lib/language-track";
 import { canonicalLessonId } from "@/lib/lesson-id";
 import {
@@ -188,9 +189,11 @@ async function ensureDraftCourseExists(
   const { error: insertError } = await client.from("courses").insert({
     id: courseId,
     title: courseTitleFromId(courseId),
+    // Learner-facing copy: this lands on the home screen, so it must never
+    // read like importer boilerplate.
     description: isKorean
-      ? "Korean Level 1 — auto-created from ZIP import."
-      : `Auto-created from ZIP import (${courseId}).`,
+      ? "Ажилд явах Korean"
+      : courseDisplaySubtitle(courseId, null, ""),
     level: isKorean ? "Korean" : "HSK",
     status: "available",
     order_index: 10,

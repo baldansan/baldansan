@@ -11,6 +11,10 @@ import { enrichLessonContentMeta } from "@/lib/lesson-content-type";
 import { hasSupabaseConfig, supabase } from "@/lib/supabase/client";
 import type { SupabaseClient } from "@supabase/supabase-js";
 import { normalizeCourseCoverUrl } from "@/lib/course-cover";
+import {
+  courseDisplaySubtitle,
+  courseDisplayTitle,
+} from "@/lib/course-display-meta";
 import type { Course } from "@/types/course";
 import type {
   CourseContent,
@@ -317,9 +321,9 @@ function mapDbCourseToCatalog(course: DbCourse, lessonCount: number): Course {
   const status = course.status === "available" ? "available" : "coming_soon";
   return {
     id: course.id,
-    title: course.title,
+    title: courseDisplayTitle(course.id, course.title),
     level: course.level ?? "",
-    description: course.description ?? "",
+    description: courseDisplaySubtitle(course.id, course.description),
     lessons: lessonCount,
     vocabulary: 0,
     status,
@@ -335,8 +339,8 @@ function buildCourseContent(
   const totalVocab = lessons.reduce((sum, l) => sum + l.vocabularyCount, 0);
   return {
     id: course.id,
-    title: course.title,
-    subtitle: course.description ?? "",
+    title: courseDisplayTitle(course.id, course.title),
+    subtitle: courseDisplaySubtitle(course.id, course.description),
     coverUrl: normalizeCourseCoverUrl(course.cover_url),
     stats: [
       { label: `${lessons.length} lessons` },

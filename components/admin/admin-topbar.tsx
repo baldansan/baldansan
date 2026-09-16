@@ -2,26 +2,26 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { AdminNavBody } from "@/components/admin/admin-sidebar";
 import { resolveAdminPageTitle } from "@/lib/admin/admin-nav";
 
 export function AdminTopbar() {
   const pathname = usePathname();
   const title = resolveAdminPageTitle(pathname);
-  const [menuOpen, setMenuOpen] = useState(false);
 
-  // Route changes should never leave the drawer hanging open.
-  useEffect(() => {
-    setMenuOpen(false);
-  }, [pathname]);
+  // Held as "which route is the drawer open for", so navigating away closes it
+  // without an effect that re-renders on every route change.
+  const [openForRoute, setOpenForRoute] = useState<string | null>(null);
+  const menuOpen = openForRoute === pathname;
+  const setMenuOpen = (open: boolean) => setOpenForRoute(open ? pathname : null);
 
   return (
     <header className="admin-topbar sticky top-0 z-30 shrink-0">
       <div className="flex items-center gap-3 px-4 py-3 lg:px-6">
         <button
           type="button"
-          onClick={() => setMenuOpen((open) => !open)}
+          onClick={() => setMenuOpen(!menuOpen)}
           aria-expanded={menuOpen}
           aria-controls="admin-mobile-nav"
           className="admin-btn-ghost shrink-0 px-3 lg:hidden"
