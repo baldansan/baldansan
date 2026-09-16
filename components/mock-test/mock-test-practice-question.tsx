@@ -21,6 +21,12 @@ type Props = {
   onAnswer: (value: string) => void;
   onSelfGrade: (isCorrect: boolean) => void;
   feedback: PracticeFeedback | null;
+  /**
+   * Энэ асуултын аудио нь хэсгийн БҮТЭН бичлэг (олон асуулт дундаа
+   * хуваалцдаг) тул дээд талд нэг тоглуулагчаар тусад нь харуулж байгаа —
+   * картан дотор давхардуулахгүй.
+   */
+  hideAudio?: boolean;
 };
 
 /** Сонголт бүрийн харагдах төлөв — будаж харуулахад хэрэглэнэ. */
@@ -59,7 +65,7 @@ function OptionMark({ state }: { state: OptionState }) {
  * Асуулт солигдоход дуудагч талаас `key={url}` өгч дахин мountлуулна —
  * effect дотор setState хийхээс зайлсхийсэн.
  */
-function PracticeAudio({ url }: { url: string }) {
+export function PracticeAudio({ url }: { url: string }) {
   const ref = useRef<HTMLAudioElement>(null);
   const [playing, setPlaying] = useState(false);
 
@@ -353,6 +359,7 @@ export function MockTestPracticeQuestion({
   onAnswer,
   onSelfGrade,
   feedback,
+  hideAudio = false,
 }: Props) {
   const options = question.options ?? [];
   const hasImageOptions = options.some((opt) => opt.image_url);
@@ -429,7 +436,7 @@ export function MockTestPracticeQuestion({
   return (
     <div className="bs-mtp-card">
       <p className="bs-mtp-qno">Асуулт {question.q_no}</p>
-      {question.audio_url ? (
+      {question.audio_url && !hideAudio ? (
         <PracticeAudio key={question.audio_url} url={question.audio_url} />
       ) : null}
       <Stem question={question} />

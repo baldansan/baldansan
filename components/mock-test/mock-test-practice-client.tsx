@@ -3,7 +3,10 @@
 import Link from "next/link";
 import { useCallback, useMemo, useState } from "react";
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
-import { MockTestPracticeQuestion } from "@/components/mock-test/mock-test-practice-question";
+import {
+  MockTestPracticeQuestion,
+  PracticeAudio,
+} from "@/components/mock-test/mock-test-practice-question";
 import { useActivityTracker } from "@/lib/analytics/activity-tracker";
 import { useQuestionTimer } from "@/lib/analytics/attempt-metrics";
 import {
@@ -94,7 +97,26 @@ export function MockTestPracticeClient({ test, questions, lessonTitles }: Props)
   const [answered, setAnswered] = useState<Answered[]>([]);
 
   const activeGroup = groups.find((group) => group.key === groupKey) ?? null;
-  const activeQuestions = activeGroup?.questions ?? [];
+  const activeQuestions = useMemo(
+    () => activeGroup?.questions ?? [],
+    [activeGroup]
+  );
+
+  /**
+   * HSK 2–6-ийн шалгалтуудад асуулт бүрийн `audio_url` нь ТУС АСУУЛТЫН биш,
+   * ХЭСГИЙН бүтэн бичлэг (30 орчим минут) байдаг. Түүнийг асуулт бүрийн дотор
+   * тавибал хүн бүр асуулт дээр эхнээс нь сонсох болно — утгагүй. Тиймээс
+   * олон асуулт нэг л файл хуваалцаж байвал дээд талд НЭГ тоглуулагч
+   * байрлуулж, асуулт солигдоход зогсохгүй үргэлжлүүлнэ.
+   */
+  const sharedAudioUrl = useMemo(() => {
+    const urls = activeQuestions
+      .map((item) => item.audio_url)
+      .filter((url): url is string => Boolean(url));
+    if (urls.length < 2) return null;
+    const first = urls[0];
+    return urls.every((url) => url === first) ? first : null;
+  }, [activeQuestions]);
   const question = activeQuestions[index] ?? null;
   const getElapsed = useQuestionTimer(question?.id ?? "none");
 
@@ -394,6 +416,20 @@ export function MockTestPracticeClient({ test, questions, lessonTitles }: Props)
           {activeGroup.desc}
         </p>
 
+        {sharedAudioUrl ? (
+          <section className="bs-mtp-section-audio">
+            <p className="bs-mtp-section-audio-label">
+              Хэсгийн бүтэн бичлэг · асуулт солигдоход зогсохгүй
+            </p>
+            <PracticeAudio key={sharedAudioUrl} url={sharedAudioUrl} />
+            <p className="bs-mtp-section-audio-note">
+              Энэ шалгалтын аудио нь хэсэг бүрээр нэг файл байдаг тул асуулт
+              тус бүрээр тасалж өгөх боломжгүй. Жинхэнэ шалгалтын адил дараалан
+              сонсоод, хүссэн газраа буцааж болно.
+            </p>
+          </section>
+        ) : null}
+
         <MockTestPracticeQuestion
           question={question}
           answer={answer}
@@ -401,6 +437,7 @@ export function MockTestPracticeClient({ test, questions, lessonTitles }: Props)
           onAnswer={handleAnswer}
           onSelfGrade={handleSelfGrade}
           feedback={feedback}
+          hideAudio={Boolean(sharedAudioUrl)}
         />
 
         {revealed && lessonId && lessonTitle ? (
