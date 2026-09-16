@@ -12,7 +12,11 @@ import {
 import { LEARNER_COURSE_PROBE_IDS } from "@/lib/language-track";
 import type { LessonContent } from "@/types/lesson-content";
 import { getAdminPublishStatus } from "@/lib/admin/lesson-status";
-import type { LessonQaReport, LessonQaStatus } from "@/lib/admin/lesson-qa";
+import {
+  lessonSubtitlesOptional,
+  type LessonQaReport,
+  type LessonQaStatus,
+} from "@/lib/admin/lesson-qa";
 import { canonicalLessonId, lessonIdsMatch } from "@/lib/lesson-id";
 import {
   parseQuizAttemptAnswers,
@@ -23,6 +27,7 @@ import {
   hasThumbnailUrl,
   hasVideoUrl,
   isMediaReady,
+  lessonNeedsVideo,
   normalizeMediaStatus,
 } from "@/lib/lesson-media";
 import { calculateReleaseReadiness } from "@/lib/admin/release-readiness";
@@ -124,7 +129,7 @@ async function getServerClient() {
 
 function isPublishReadyReport(report: LessonQaReport): boolean {
   return (
-    report.subtitleCount > 0 &&
+    (lessonSubtitlesOptional(report.lesson) || report.subtitleCount > 0) &&
     report.vocabularyActual >= MIN_VOCABULARY_FOR_PUBLISH &&
     report.quizActual >= MIN_QUIZ_FOR_PUBLISH
   );
@@ -140,7 +145,9 @@ function computeContentQaFromReports(
   let needsReviewCount = 0;
 
   for (const report of reports) {
-    if (report.subtitleCount === 0) lessonsMissingSubtitles += 1;
+    if (report.subtitleCount === 0 && !lessonSubtitlesOptional(report.lesson)) {
+      lessonsMissingSubtitles += 1;
+    }
     if (report.vocabularyActual === 0) lessonsMissingVocabulary += 1;
     if (report.quizActual === 0) lessonsMissingQuiz += 1;
     if (isPublishReadyReport(report)) lessonsReadyToPublish += 1;
@@ -182,7 +189,7 @@ function buildAttentionList(reports: LessonQaReport[]): AttentionLesson[] {
   for (const report of reports) {
     const issues: string[] = [];
 
-    if (report.subtitleCount === 0) {
+    if (report.subtitleCount === 0 && !lessonSubtitlesOptional(report.lesson)) {
       issues.push("Missing subtitles");
     }
     if (report.vocabularyActual === 0) {
@@ -196,8 +203,9 @@ function buildAttentionList(reports: LessonQaReport[]): AttentionLesson[] {
       issues.push(`Quiz below ${MIN_QUIZ_FOR_PUBLISH}`);
     }
     if (
-      normalizeMediaStatus(report.lesson.mediaStatus) === "missing" ||
-      !hasVideoUrl(report.lesson)
+      lessonNeedsVideo(report.lesson) &&
+      (normalizeMediaStatus(report.lesson.mediaStatus) === "missing" ||
+        !hasVideoUrl(report.lesson))
     ) {
       issues.push("Media missing");
     }

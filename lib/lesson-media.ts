@@ -30,7 +30,21 @@ export function hasAudioUrl(lesson: Pick<LessonContent, "audioUrl">): boolean {
   return Boolean(lesson.audioUrl?.trim());
 }
 
+/**
+ * Textbook and exam lessons are taught from the page and its audio; only video
+ * lessons are incomplete without a video file.
+ */
+export function lessonNeedsVideo(
+  lesson: Pick<LessonContent, "contentType">
+): boolean {
+  return lesson.contentType !== "textbook" && lesson.contentType !== "exam";
+}
+
 export function isMediaReady(lesson: LessonContent): boolean {
+  if (!lessonNeedsVideo(lesson)) {
+    return normalizeMediaStatus(lesson.mediaStatus) === "ready" ||
+      hasAudioUrl(lesson);
+  }
   return (
     normalizeMediaStatus(lesson.mediaStatus) === "ready" && hasVideoUrl(lesson)
   );
@@ -47,7 +61,7 @@ export function getLessonMediaWarnings(lesson: LessonContent): string[] {
   const warnings: string[] = [];
   const status = normalizeMediaStatus(lesson.mediaStatus);
 
-  if (!hasVideoUrl(lesson)) {
+  if (lessonNeedsVideo(lesson) && !hasVideoUrl(lesson)) {
     warnings.push("No video URL");
   }
   if (status === "pending") {

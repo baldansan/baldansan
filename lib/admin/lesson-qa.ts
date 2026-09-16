@@ -6,6 +6,7 @@ import {
 import {
   getLessonMediaWarnings,
   isMediaReady,
+  lessonNeedsVideo,
   normalizeMediaStatus,
 } from "@/lib/lesson-media";
 import type { LessonContent } from "@/types/lesson-content";
@@ -107,6 +108,9 @@ export function analyzeLessonQaFromCounts(
 
 export function analyzeLessonQa(lesson: LessonContent): LessonQaReport {
   const prelesson = isPrelessonPackage(lesson);
+  // Timed subtitles belong to video lessons. A textbook lesson teaches from the
+  // page, so having none is the normal shape, not a gap.
+  const subtitlesOptional = prelesson || !lessonNeedsVideo(lesson);
   const subtitleCount = lesson.timedSubtitles?.length ?? 0;
   const vocabularyActual = lesson.vocabulary?.length ?? 0;
   const quizActual = lesson.quizQuestions?.length ?? 0;
@@ -121,10 +125,8 @@ export function analyzeLessonQa(lesson: LessonContent): LessonQaReport {
         : "Metadata incomplete"
     );
   }
-  if (subtitleCount === 0) {
-    warnings.push(
-      prelesson ? "PreLesson: no subtitles (optional)" : "No subtitles"
-    );
+  if (subtitleCount === 0 && !subtitlesOptional) {
+    warnings.push("No subtitles");
   }
   if (vocabularyActual === 0) {
     warnings.push("No vocabulary");
@@ -142,7 +144,7 @@ export function analyzeLessonQa(lesson: LessonContent): LessonQaReport {
 
   const qaStatus: LessonQaStatus =
     hasMetadata &&
-    (prelesson || subtitleCount > 0) &&
+    (subtitlesOptional || subtitleCount > 0) &&
     vocabularyActual > 0 &&
     quizActual > 0 &&
     !vocabMismatch &&
@@ -208,11 +210,15 @@ export function summarizeLessonQa(reports: LessonQaReport[]): LessonQaSummary {
   };
 }
 
+/** True when this lesson's format means timed subtitles are not expected. */
+export function lessonSubtitlesOptional(lesson: LessonContent): boolean {
+  return isPrelessonPackage(lesson) || !lessonNeedsVideo(lesson);
+}
+
 export function isPublishReady(report: LessonQaReport): boolean {
-  const prelesson = isPrelessonPackage(report.lesson);
   return (
     report.hasMetadata &&
-    (prelesson || report.subtitleCount > 0) &&
+    (lessonSubtitlesOptional(report.lesson) || report.subtitleCount > 0) &&
     report.vocabularyActual > 0 &&
     report.quizActual > 0
   );
