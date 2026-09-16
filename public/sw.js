@@ -4,8 +4,20 @@
  * - Static assets (/_next/static, icons, covers, temee): cache-first.
  * - Supabase Storage PUBLIC objects (lesson audio/covers): cache-first.
  * Never caches Supabase REST/auth, /api, /admin.
+ *
+ * ДУУ, БИЧЛЭГИЙН ТУХАЙ (v4-т зассан):
+ * <audio> нь файлын дунд рүү үсрэхдээ Range хүсэлт илгээдэг. Service worker
+ * түүнийг таслан авч, кэшэнд хадгалсан opaque (type: "opaque", status: 0)
+ * хариуг буцаавал хөтөч уг эх сурвалжийг ашиглаж чадахгүй —
+ * MEDIA_ERR_SRC_NOT_SUPPORTED алдаа өгч, тоглуулагч зогсоно. Тиймээс:
+ *   • Range хүсэлтийг service worker ОГТ хөндөхгүй (хөтөчид шууд үлдээнэ);
+ *   • opaque хариуг кэшлэхгүй — уншиж болдоггүй, хэмжээ нь ч том;
+ *   • 8МБ-аас том файлыг кэшлэхгүй (шалгалтын 35 минутын бичлэг).
+ * Хичээлийн богино клипүүд урьдын адил кэшлэгдэж, офлайн ажиллана —
+ * offline-lesson-prefetch нь тэднийг cors горимоор татдаг тул уншигдах
+ * (opaque биш) хариу болж кэшэнд ордог.
  */
-const VERSION = "v3";
+const VERSION = "v4";
 const OFFLINE_CACHE = `buunduu-surtsgaay-offline-${VERSION}`;
 const PAGES_CACHE = `buunduu-pages-${VERSION}`;
 const STATIC_CACHE = `buunduu-static-${VERSION}`;
@@ -114,11 +126,26 @@ async function trimCache(cacheName, maxEntries) {
   }
 }
 
+/**
+ * Кэшлэж болох хариу мөн үү.
+ *
+ * opaque хариуг (өөр домэйнээс no-cors горимоор ирсэн) БИТГИЙ кэшил:
+ * доторх агуулгыг нь уншиж чадахгүй, Range хүсэлтэд тохирохгүй, бас
+ * квотаас хэдэн МБ-аар иддэг. 206 (хэсэгчилсэн) хариуг Cache API өөрөө
+ * хүлээж авдаггүй.
+ */
+/** Кэшэнд хийхийг зөвшөөрөх хамгийн том файл (8МБ). */
+const MAX_CACHEABLE_BYTES = 8 * 1024 * 1024;
+
 function cacheableCopy(response) {
   if (!response) return null;
-  if (response.type === "opaque") return response.clone();
-  if (response.ok) return response.clone();
-  return null;
+  if (response.type === "opaque") return null;
+  if (response.status === 206) return null;
+  if (!response.ok) return null;
+  // Шалгалтын бүтэн бичлэг 30–40МБ — офлайн хэрэгцээнд биш, квотыг иднэ.
+  const length = Number(response.headers.get("content-length") || 0);
+  if (length > MAX_CACHEABLE_BYTES) return null;
+  return response.clone();
 }
 
 /** Cache-first with background-less network fallback. */
@@ -129,7 +156,12 @@ async function cacheFirst(request, cacheName, maxEntries) {
   const response = await fetch(request);
   const copy = cacheableCopy(response);
   if (copy) {
-    cache.put(request, copy).then(() => trimCache(cacheName, maxEntries));
+    // Cache.put зарим хариуг (206, opaqueredirect) хүлээж авалгүй алдаа
+    // шиднэ — тэр нь хариуг өөрийг нь унагаах ёсгүй.
+    cache
+      .put(request, copy)
+      .then(() => trimCache(cacheName, maxEntries))
+      .catch(() => {});
   }
   return response;
 }
@@ -196,6 +228,11 @@ self.addEventListener("fetch", (event) => {
 
   const url = new URL(event.request.url);
   if (shouldBypass(url)) return;
+
+  // Range хүсэлт (дууны дунд рүү үсрэх) — хөтөч өөрөө шийднэ. Service worker
+  // оролцвол кэшнээс бүтэн/opaque хариу буцааж, тоглуулагчийг эвдэнэ.
+  if (event.request.headers.has("range")) return;
+
 
   if (event.request.mode === "navigate") {
     event.respondWith(handleNavigation(event));

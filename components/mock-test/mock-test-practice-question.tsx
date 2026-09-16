@@ -97,6 +97,22 @@ export function PracticeAudio({
     if (el.currentTime >= endSec) el.pause();
   };
 
+  /**
+   * `#t=` хэлтэрхий заримдаа ажиллахгүй (хөтөч, серверээс хамаарна) тул
+   * мета мэдээлэл ачаалагдмагц гараар нь эхлэх цэг рүү нь аваачна.
+   */
+  const handleLoadedMetadata = () => {
+    const el = ref.current;
+    if (!el || !sliced) return;
+    if (el.currentTime < startSec) {
+      try {
+        el.currentTime = startSec;
+      } catch {
+        // seek дэмжигдэхгүй бол эхнээс нь тоглоно — эвдрэхээсээ дээр.
+      }
+    }
+  };
+
   return (
     <div className="bs-mtp-audio">
       <button
@@ -136,6 +152,7 @@ export function PracticeAudio({
         onPause={() => setPlaying(false)}
         onEnded={() => setPlaying(false)}
         onTimeUpdate={handleTimeUpdate}
+        onLoadedMetadata={handleLoadedMetadata}
       />
     </div>
   );
