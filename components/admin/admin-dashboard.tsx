@@ -6,12 +6,19 @@ import {
   type AttentionItem,
 } from "@/components/admin/admin-attention-panel";
 import { AdminMetricCard } from "@/components/admin/admin-metric-card";
+import { GradeChip } from "@/components/admin/learner-grade-board";
+import {
+  LEARNER_GRADE_LABELS,
+  LEARNER_GRADE_RANGES,
+} from "@/lib/learner-grade";
 import type { ActivityTimeOverview } from "@/lib/supabase/activity-time-analytics";
+import type { LearnerGradeBoard } from "@/lib/supabase/admin-learner-grades";
 import type { AdminDashboardMetrics } from "@/lib/supabase/admin-analytics";
 
 type Props = {
   metrics: AdminDashboardMetrics;
   activity: ActivityTimeOverview;
+  grades: LearnerGradeBoard | null;
   windowDays: number;
 };
 
@@ -74,7 +81,12 @@ function splitActivityWindow(
   };
 }
 
-export function AdminDashboard({ metrics, activity, windowDays }: Props) {
+export function AdminDashboard({
+  metrics,
+  activity,
+  grades,
+  windowDays,
+}: Props) {
   const {
     lessonStatus,
     contentTotals,
@@ -292,6 +304,51 @@ export function AdminDashboard({ metrics, activity, windowDays }: Props) {
           />
         </div>
       </section>
+
+      {grades && grades.rows.length > 0 ? (
+        <section className="admin-panel p-5" aria-labelledby="dash-grades">
+          <div className="flex flex-wrap items-baseline justify-between gap-3">
+            <div>
+              <h2 id="dash-grades" className="admin-section-title">
+                Суралцагчдын үнэлгээ
+              </h2>
+              <p className="admin-section-desc mt-0.5">
+                {formatNumber(grades.ratedCount)} суралцагч үнэлэгдсэн
+                {grades.averageScore != null
+                  ? ` · дундаж ${grades.averageScore} оноо`
+                  : ""}
+              </p>
+            </div>
+            <Link
+              href="/admin/learners"
+              className="text-xs font-semibold text-emerald-700 hover:underline"
+            >
+              Бүтэн жагсаалт →
+            </Link>
+          </div>
+
+          <div className="mt-4 grid grid-cols-3 gap-2 sm:grid-cols-6">
+            {grades.distribution.map(({ bucket, count }) => (
+              <Link
+                key={bucket}
+                href="/admin/learners"
+                title={LEARNER_GRADE_LABELS[bucket]}
+                className="rounded-xl border border-slate-200 bg-white px-3 py-2.5 transition-colors hover:border-emerald-200"
+              >
+                <span className="flex items-center gap-2">
+                  <GradeChip bucket={bucket} size="sm" />
+                  <span className="text-lg font-bold text-slate-900">
+                    {formatNumber(count)}
+                  </span>
+                </span>
+                <span className="mt-0.5 block text-[11px] leading-4 text-slate-500">
+                  {LEARNER_GRADE_RANGES[bucket]}
+                </span>
+              </Link>
+            ))}
+          </div>
+        </section>
+      ) : null}
 
       <section aria-labelledby="dash-learners">
         <h2 id="dash-learners" className="admin-section-title">

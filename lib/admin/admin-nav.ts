@@ -66,11 +66,18 @@ export const ADMIN_NAV_INSIGHTS: AdminNavItem[] = [
     match: (p) => p.startsWith("/admin/analytics"),
   },
   {
+    href: "/admin/learners",
+    label: "Суралцагчдын үнэлгээ",
+    icon: "🎓",
+    hint: "A–F үнэлгээ, бүлэг тус бүрийн жагсаалт.",
+    match: (p) => p.startsWith("/admin/learners"),
+  },
+  {
     href: "/admin/learner",
-    label: "Суралцагч",
+    label: "Суралцагчийн дэлгэрэнгүй",
     icon: "🧑‍🎓",
-    hint: "Хэрэглэгч бүрийн ахиц.",
-    match: (p) => p.startsWith("/admin/learner"),
+    hint: "Нэг хэрэглэгчийн ахиц, гацсан цэг.",
+    match: (p) => p === "/admin/learner" || p.startsWith("/admin/learner?"),
   },
   {
     href: "/admin/b2b",
