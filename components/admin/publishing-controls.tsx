@@ -77,21 +77,21 @@ export function PublishingControls({ lesson, initialCompleteness }: Props) {
 
   return (
     <section className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:p-6">
-      <h2 className="text-base font-semibold text-slate-900">Publishing controls</h2>
+      <h2 className="text-base font-semibold text-slate-900">Нийтлэх удирдлага</h2>
       <p className="mt-1 text-sm text-slate-600">
         Нийтлэх, ноорог руу буцаах, архивлах.
       </p>
 
       <div className="mt-4 flex flex-wrap items-center gap-2">
-        <span className="text-sm text-slate-600">Current status:</span>
+        <span className="text-sm text-slate-600">Одоогийн төлөв:</span>
         <LessonStatusBadge status={publishStatus} />
       </div>
 
       {!canPublish ? (
         <p className="mt-4 rounded-xl bg-amber-50 px-4 py-3 text-sm text-amber-900 ring-1 ring-amber-200">
           {prelesson
-            ? "Release checklist бүрэн болоогүй. PreLesson-д title, target title, ≥5 vocabulary, ≥3 quiz, approval эсвэл QA passed шаардлагатай. Video/audio/subtitles заавал биш."
-            : "Release checklist бүрэн болоогүй байна. Metadata, subtitles, ≥5 vocabulary, ≥3 quiz, QA passed, approval шаардлагатай."}
+            ? "Шалгах жагсаалт бүрэн биш байна. Бэлтгэл хичээлд гарчиг, хятад гарчиг, 5-аас доошгүй үг, 3-аас доошгүй дасгал, мөн баталгаа эсвэл чанарын шалгалт давсан байх шаардлагатай. Бичлэг, аудио, хадмал заавал биш."
+            : "Шалгах жагсаалт бүрэн биш байна. Ерөнхий мэдээлэл, хадмал, 5-аас доошгүй үг, 3-аас доошгүй дасгал, чанарын шалгалт давсан байх, баталгаа шаардлагатай."}
         </p>
       ) : null}
 
@@ -108,7 +108,7 @@ export function PublishingControls({ lesson, initialCompleteness }: Props) {
           onClick={() => handleStatus("available", "publish")}
           className="rounded-full bg-emerald-500 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-emerald-600 disabled:cursor-not-allowed disabled:bg-slate-200 disabled:text-slate-500"
         >
-          {busy === "publish" ? "Publishing…" : "Publish lesson"}
+          {busy === "publish" ? "Нийтэлж байна…" : "Хичээл нийтлэх"}
         </button>
         <button
           type="button"
@@ -116,7 +116,7 @@ export function PublishingControls({ lesson, initialCompleteness }: Props) {
           onClick={() => handleStatus("draft", "draft")}
           className="rounded-full border border-slate-200 bg-white px-5 py-2.5 text-sm font-semibold text-slate-700 transition-colors hover:border-emerald-200 hover:text-emerald-700 disabled:cursor-not-allowed disabled:opacity-50"
         >
-          {busy === "draft" ? "Saving…" : "Move to draft"}
+          {busy === "draft" ? "Хадгалж байна…" : "Ноорог болгох"}
         </button>
         <button
           type="button"
@@ -124,7 +124,7 @@ export function PublishingControls({ lesson, initialCompleteness }: Props) {
           onClick={() => handleStatus("archived", "archive")}
           className="rounded-full border border-slate-200 bg-white px-5 py-2.5 text-sm font-semibold text-slate-700 transition-colors hover:border-amber-200 hover:text-amber-800 disabled:cursor-not-allowed disabled:opacity-50"
         >
-          {busy === "archive" ? "Archiving…" : "Archive lesson"}
+          {busy === "archive" ? "Архивлаж байна…" : "Хичээл архивлах"}
         </button>
       </div>
 
@@ -136,7 +136,7 @@ export function PublishingControls({ lesson, initialCompleteness }: Props) {
               : "bg-slate-50 ring-slate-200"
           }`}
         >
-          Metadata {completeness.hasMetadata ? "✓" : "—"}
+          Ерөнхий мэдээлэл {completeness.hasMetadata ? "✓" : "—"}
         </li>
         <li
           className={`rounded-full px-2.5 py-1 ring-1 ${
@@ -145,8 +145,8 @@ export function PublishingControls({ lesson, initialCompleteness }: Props) {
               : "bg-slate-50 ring-slate-200"
           }`}
         >
-          Subtitles: {completeness.subtitleCount}
-          {prelesson && completeness.subtitleCount === 0 ? " (optional)" : ""}
+          Хадмал: {completeness.subtitleCount}
+          {prelesson && completeness.subtitleCount === 0 ? " (заавал биш)" : ""}
         </li>
         <li
           className={`rounded-full px-2.5 py-1 ring-1 ${
@@ -155,7 +155,7 @@ export function PublishingControls({ lesson, initialCompleteness }: Props) {
               : "bg-slate-50 ring-slate-200"
           }`}
         >
-          Vocabulary: {completeness.vocabularyCount}
+          Үгсийн сан: {completeness.vocabularyCount}
         </li>
         <li
           className={`rounded-full px-2.5 py-1 ring-1 ${
@@ -164,7 +164,7 @@ export function PublishingControls({ lesson, initialCompleteness }: Props) {
               : "bg-slate-50 ring-slate-200"
           }`}
         >
-          Quiz: {completeness.quizCount}
+          Дасгал: {completeness.quizCount}
         </li>
         <li
           className={`rounded-full px-2.5 py-1 ring-1 ${
@@ -173,7 +173,7 @@ export function PublishingControls({ lesson, initialCompleteness }: Props) {
               : "bg-amber-50 text-amber-800 ring-amber-200"
           }`}
         >
-          Approval {readiness.approvalReady ? "✓" : "pending"}
+          Баталгаа {readiness.approvalReady ? "✓" : "хүлээгдэж байна"}
         </li>
       </ul>
     </section>

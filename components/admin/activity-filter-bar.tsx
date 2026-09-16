@@ -1,5 +1,10 @@
 "use client";
 
+import {
+  labelForAction,
+  labelForEntityType,
+} from "@/components/admin/activity-badge";
+
 export type ActivityActionFilter = "all" | string;
 export type ActivityEntityFilter = "all" | string;
 export type ActivityDateFilter = "all" | "today" | "7d" | "30d";
@@ -57,14 +62,14 @@ export function ActivityFilterBar({
             htmlFor="activity-search"
             className="text-xs font-semibold uppercase tracking-wide text-slate-500"
           >
-            Search
+            Хайх
           </label>
           <input
             id="activity-search"
             type="search"
             value={search}
             onChange={(e) => onSearchChange(e.target.value)}
-            placeholder="Title, description, action…"
+            placeholder="Гарчиг, тайлбар, үйлдэл…"
             className="mt-2 w-full rounded-xl border border-slate-200 px-3 py-2 text-sm outline-none focus:border-emerald-400 focus:ring-2 focus:ring-emerald-100"
           />
         </div>
@@ -75,7 +80,7 @@ export function ActivityFilterBar({
               htmlFor="activity-action"
               className="text-xs font-semibold uppercase tracking-wide text-slate-500"
             >
-              Action
+              Үйлдэл
             </label>
             <select
               id="activity-action"
@@ -83,10 +88,10 @@ export function ActivityFilterBar({
               onChange={(e) => onActionChange(e.target.value)}
               className="mt-2 w-full rounded-xl border border-slate-200 px-3 py-2 text-sm"
             >
-              <option value="all">All</option>
+              <option value="all">Бүгд</option>
               {actionOptions.map((opt) => (
                 <option key={opt} value={opt}>
-                  {opt.replaceAll("_", " ")}
+                  {labelForAction(opt)}
                 </option>
               ))}
             </select>
@@ -97,7 +102,7 @@ export function ActivityFilterBar({
               htmlFor="activity-entity"
               className="text-xs font-semibold uppercase tracking-wide text-slate-500"
             >
-              Entity type
+              Юун дээр хийсэн
             </label>
             <select
               id="activity-entity"
@@ -105,10 +110,10 @@ export function ActivityFilterBar({
               onChange={(e) => onEntityTypeChange(e.target.value)}
               className="mt-2 w-full rounded-xl border border-slate-200 px-3 py-2 text-sm"
             >
-              <option value="all">All</option>
+              <option value="all">Бүгд</option>
               {entityOptions.map((opt) => (
                 <option key={opt} value={opt}>
-                  {opt}
+                  {labelForEntityType(opt)}
                 </option>
               ))}
             </select>
@@ -119,7 +124,7 @@ export function ActivityFilterBar({
               htmlFor="activity-date"
               className="text-xs font-semibold uppercase tracking-wide text-slate-500"
             >
-              Date range
+              Хугацаа
             </label>
             <select
               id="activity-date"
@@ -129,10 +134,10 @@ export function ActivityFilterBar({
               }
               className="mt-2 w-full rounded-xl border border-slate-200 px-3 py-2 text-sm"
             >
-              <option value="all">All</option>
-              <option value="today">Today</option>
-              <option value="7d">Last 7 days</option>
-              <option value="30d">Last 30 days</option>
+              <option value="all">Бүгд</option>
+              <option value="today">Өнөөдөр</option>
+              <option value="7d">Сүүлийн 7 хоног</option>
+              <option value="30d">Сүүлийн 30 хоног</option>
             </select>
           </div>
 
@@ -141,7 +146,7 @@ export function ActivityFilterBar({
               htmlFor="activity-diff"
               className="text-xs font-semibold uppercase tracking-wide text-slate-500"
             >
-              Diff
+              Өөрчлөлт
             </label>
             <select
               id="activity-diff"
@@ -151,9 +156,9 @@ export function ActivityFilterBar({
               }
               className="mt-2 w-full rounded-xl border border-slate-200 px-3 py-2 text-sm"
             >
-              <option value="all">All</option>
-              <option value="has_diff">Has diff</option>
-              <option value="no_diff">No diff</option>
+              <option value="all">Бүгд</option>
+              <option value="has_diff">Өөрчлөлттэй</option>
+              <option value="no_diff">Өөрчлөлтгүй</option>
             </select>
           </div>
 
@@ -162,7 +167,7 @@ export function ActivityFilterBar({
               htmlFor="activity-rollback"
               className="text-xs font-semibold uppercase tracking-wide text-slate-500"
             >
-              Rollback
+              Буцаах боломж
             </label>
             <select
               id="activity-rollback"
@@ -172,9 +177,9 @@ export function ActivityFilterBar({
               }
               className="mt-2 w-full rounded-xl border border-slate-200 px-3 py-2 text-sm"
             >
-              <option value="all">All</option>
-              <option value="available">Rollback available</option>
-              <option value="unsupported">Unsupported</option>
+              <option value="all">Бүгд</option>
+              <option value="available">Буцаах боломжтой</option>
+              <option value="unsupported">Буцаах боломжгүй</option>
             </select>
           </div>
 
@@ -183,13 +188,13 @@ export function ActivityFilterBar({
               htmlFor="activity-lesson"
               className="text-xs font-semibold uppercase tracking-wide text-slate-500"
             >
-              Lesson ID
+              Хичээлийн ID
             </label>
             <input
               id="activity-lesson"
               value={lessonId}
               onChange={(e) => onLessonIdChange(e.target.value)}
-              placeholder="e.g. 5"
+              placeholder="жишээ нь 5"
               className="mt-2 w-full rounded-xl border border-slate-200 px-3 py-2 text-sm"
             />
           </div>
@@ -199,7 +204,7 @@ export function ActivityFilterBar({
               htmlFor="activity-actor"
               className="text-xs font-semibold uppercase tracking-wide text-slate-500"
             >
-              Actor (email contains)
+              Гүйцэтгэсэн хүн (и-мэйлээр)
             </label>
             <input
               id="activity-actor"
@@ -212,7 +217,7 @@ export function ActivityFilterBar({
         </div>
 
         <p className="text-xs text-slate-500">
-          Showing {resultCount} event{resultCount === 1 ? "" : "s"}
+          Нийт {resultCount} үйлдэл харагдаж байна
         </p>
       </div>
     </section>

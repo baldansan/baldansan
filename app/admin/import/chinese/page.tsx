@@ -4,16 +4,16 @@ export const dynamic = "force-dynamic";
 export const revalidate = 0;
 
 export const metadata = {
-  title: "Chinese / HSK Lesson Import — Admin",
-  description: "Upload HSK and Chinese lesson ZIP packages for draft import.",
+  title: "Хятад / HSK хичээл оруулах — Удирдлагын хэсэг",
+  description: "HSK болон хятад хэлний хичээлийн ZIP багцыг ноороглон оруулах.",
 };
 
 export default function AdminChineseImportPage() {
   return (
     <LessonZipImportClient
       track="chinese"
-      title="Chinese / HSK Lesson Import"
-      description="HSK profile-aware ZIP import — level-specific validation, draft-only import."
+      title="Хятад / HSK хичээл оруулах"
+      description="HSK түвшинг таньдаг ZIP багц оруулалт — түвшин тус бүрийн шалгалттай, зөвхөн ноорог болгож оруулна."
       backHref="/admin/import"
       templateHint="content/templates/chinese-lesson-zip-package/"
       formatDocHint="docs/BUUNDUU_CHINESE_HSK_PACKAGE_V1.md"

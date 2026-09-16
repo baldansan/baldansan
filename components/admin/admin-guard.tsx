@@ -89,7 +89,7 @@ export function AdminGuard({ children }: Props) {
       });
     } catch (error) {
       const message =
-        error instanceof Error ? error.message : "Admin auth check failed";
+        error instanceof Error ? error.message : "Админ эрхийн шалгалт амжилтгүй боллоо";
       authDevLog("admin guard check error", message);
       finishWithError(message);
     }
@@ -113,7 +113,7 @@ export function AdminGuard({ children }: Props) {
         className="mx-auto w-full max-w-5xl rounded-2xl border border-slate-200 bg-white p-6 shadow-sm"
         aria-live="polite"
       >
-        <p className="text-sm font-medium text-slate-700">Admin шалгаж байна...</p>
+        <p className="text-sm font-medium text-slate-700">Админ эрхийг шалгаж байна…</p>
         <p className="mt-1 text-xs text-slate-500">
           Нэвтрэлт болон эрхийг баталгаажуулж байна.
         </p>
@@ -139,10 +139,10 @@ export function AdminGuard({ children }: Props) {
   if (state === "error") {
     return (
       <AuthLoadErrorCard
-        title="Admin auth шалгалт амжилтгүй"
-        description="Admin эрх шалгах үед алдаа гарлаа. Supabase холболт эсвэл нэвтрэлтийг шалгана уу."
+        title="Админ эрхийн шалгалт амжилтгүй"
+        description="Админ эрх шалгах үед алдаа гарлаа. Supabase холболт эсвэл нэвтрэлтийг шалгана уу."
         result={
-          checkResult ?? buildFallbackAuthCheckResult(route, "Admin auth check failed")
+          checkResult ?? buildFallbackAuthCheckResult(route, "Админ эрхийн шалгалт амжилтгүй боллоо")
         }
         route={route}
         onRetry={() => setAttempt((value) => value + 1)}
@@ -153,7 +153,7 @@ export function AdminGuard({ children }: Props) {
   if (state === "login") {
     return (
       <EmptyState
-        title="Admin хэсэгт нэвтрэх шаардлагатай"
+        title="Админ хэсэгт нэвтрэх шаардлагатай"
         description={
           checkResult?.supabaseConfigured
             ? "Контент удирдах хэсэгт хандахын тулд эхлээд нэвтэрнэ үү."
@@ -174,7 +174,7 @@ export function AdminGuard({ children }: Props) {
   if (state === "denied") {
     return (
       <EmptyState
-        title="Admin эрх шаардлагатай"
+        title="Админ эрх шаардлагатай"
         description="Энэ хэсэг зөвхөн контент удирдах эрхтэй хэрэглэгчдэд зориулагдсан."
         action={
           <Link

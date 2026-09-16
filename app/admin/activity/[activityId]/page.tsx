@@ -8,7 +8,7 @@ type Props = {
 
 export async function generateMetadata({ params }: Props) {
   const { activityId } = await params;
-  return { title: `Activity ${activityId} — Admin` };
+  return { title: `Үйлдэл ${activityId} — Удирдлагын хэсэг` };
 }
 
 export default async function AdminActivityDetailPage({ params }: Props) {
@@ -18,10 +18,10 @@ export default async function AdminActivityDetailPage({ params }: Props) {
     <div className="flex flex-col gap-4">
       <section>
         <h1 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
-          Activity detail
+          Үйлдлийн дэлгэрэнгүй
         </h1>
         <p className="mt-2 text-sm text-slate-600">
-          Before/after snapshots and field-level diff preview.
+          Өөрчлөлтийн өмнөх, дараах хуулбар болон талбар бүрийн ялгааг харах.
         </p>
       </section>
       <ActivityDetailLoader activityId={activityId} />

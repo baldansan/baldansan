@@ -105,7 +105,7 @@ export function LessonEditSimplePanel({
           </div>
 
           <label className="mt-4 block">
-            <span className="text-xs font-medium text-slate-500">Lesson title</span>
+            <span className="text-xs font-medium text-slate-500">Хичээлийн нэр</span>
             <input
               type="text"
               value={values.title}
@@ -116,7 +116,7 @@ export function LessonEditSimplePanel({
             />
           </label>
           <label className="mt-2 block">
-            <span className="text-xs font-medium text-slate-500">Target title</span>
+            <span className="text-xs font-medium text-slate-500">Гадаад хэл дээрх нэр</span>
             <input
               type="text"
               value={values.chineseTitle}
@@ -129,10 +129,10 @@ export function LessonEditSimplePanel({
 
           <dl className="mt-5 grid grid-cols-2 gap-3 sm:grid-cols-4">
             {[
-              ["Vocabulary", vocabularyCount],
-              ["Quiz", quizCount],
-              ["Audio", audioCount],
-              ["Images", imageCount],
+              ["Үгсийн сан", vocabularyCount],
+              ["Дасгал", quizCount],
+              ["Аудио", audioCount],
+              ["Зураг", imageCount],
             ].map(([label, value]) => (
               <div key={label}>
                 <dt className="text-xs text-slate-500">{label}</dt>
@@ -166,7 +166,7 @@ export function LessonEditSimplePanel({
             })}
             className="inline-flex rounded-full border border-emerald-200 bg-emerald-50 px-5 py-2.5 text-sm font-semibold text-emerald-800 transition-colors hover:bg-emerald-100"
           >
-            Preview
+            Урьдчилж харах
           </Link>
           <LessonPublishToggle
             lessonId={lesson.id}
@@ -180,13 +180,13 @@ export function LessonEditSimplePanel({
             onClick={() => void handleSave()}
             className="inline-flex rounded-full bg-emerald-500 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-emerald-600 disabled:cursor-not-allowed disabled:bg-slate-200 disabled:text-slate-500"
           >
-            {busy ? "Saving…" : "Save"}
+            {busy ? "Хадгалж байна…" : "Хадгалах"}
           </button>
           <Link
             href="/admin/lessons"
             className="inline-flex rounded-full border border-slate-200 px-5 py-2.5 text-sm font-medium text-slate-700 transition-colors hover:border-emerald-200 hover:text-emerald-700"
           >
-            Back
+            Буцах
           </Link>
         </div>
       </div>

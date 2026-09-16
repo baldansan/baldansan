@@ -88,7 +88,7 @@ export function LessonMediaEditor({ lesson, onSaved }: Props) {
       setWarnings(result.data.warnings);
     }
 
-    setSuccess("Media metadata хадгалагдлаа.");
+    setSuccess("Медиа мэдээлэл хадгалагдлаа.");
     onSaved?.();
     router.refresh();
   }, [lesson.id, onSaved, router, values]);
@@ -96,7 +96,7 @@ export function LessonMediaEditor({ lesson, onSaved }: Props) {
   const handleClear = useCallback(async () => {
     if (
       !window.confirm(
-        "Video, thumbnail, audio URL болон source note-ийг цэвэрлэх үү?"
+        "Бичлэг, нүүр зураг, аудионы холбоос болон эх сурвалжийн тэмдэглэлийг цэвэрлэх үү?"
       )
     ) {
       return;
@@ -122,7 +122,7 @@ export function LessonMediaEditor({ lesson, onSaved }: Props) {
       sourceNote: "",
       mediaStatus: "missing",
     });
-    setSuccess("Media metadata цэвэрлэгдлээ.");
+    setSuccess("Медиа мэдээлэл цэвэрлэгдлээ.");
     onSaved?.();
     router.refresh();
   }, [lesson.id, onSaved, router]);
@@ -137,8 +137,8 @@ export function LessonMediaEditor({ lesson, onSaved }: Props) {
   return (
     <div className="flex flex-col gap-4">
       <AdminEditorSection
-        title="Media & Teaching Visuals"
-        description="Thumbnail, lesson audio, video, and Korean teaching diagrams."
+        title="Медиа ба заах материал"
+        description="Нүүр зураг, хичээлийн аудио, бичлэг, солонгос хэлний заах зургууд."
       >
         <LessonMediaTeachingPanel lesson={lesson} />
       </AdminEditorSection>
@@ -152,18 +152,18 @@ export function LessonMediaEditor({ lesson, onSaved }: Props) {
       />
 
       <AdminEditorSection
-        title="Media URLs (manual)"
-        description="Paste external URLs or override uploaded Storage links."
+        title="Медиа холбоос (гараар)"
+        description="Гадаад холбоос буулгах эсвэл байршуулсан холбоосыг солино."
       >
         <div className="mb-4 flex flex-wrap items-center gap-2">
-          <span className="text-sm text-slate-600">Current status:</span>
+          <span className="text-sm text-slate-600">Одоогийн төлөв:</span>
           <MediaStatusBadge status={values.mediaStatus} />
           <button
             type="button"
             onClick={handleSuggestStatus}
             className="rounded-full border border-slate-200 px-3 py-1 text-xs font-medium text-slate-600 hover:border-emerald-200 hover:text-emerald-700"
           >
-            Auto-set status from URLs
+            Холбоосоос төлөвийг автоматаар тогтоох
           </button>
         </div>
 
@@ -171,18 +171,18 @@ export function LessonMediaEditor({ lesson, onSaved }: Props) {
           <div className="mb-4 grid gap-3 rounded-xl bg-slate-50 p-4 ring-1 ring-slate-200 sm:grid-cols-3">
             {values.thumbnailUrl ? (
               <div>
-                <p className="text-xs font-medium text-slate-500">Thumbnail</p>
+                <p className="text-xs font-medium text-slate-500">Нүүр зураг</p>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src={values.thumbnailUrl}
-                  alt="Thumbnail preview"
+                  alt="Нүүр зургийн урьдчилсан харагдац"
                   className="mt-1 max-h-24 rounded-lg border border-slate-200 object-cover"
                 />
               </div>
             ) : null}
             {values.audioUrl ? (
               <div>
-                <p className="text-xs font-medium text-slate-500">Audio</p>
+                <p className="text-xs font-medium text-slate-500">Аудио</p>
                 {isDirectAudioUrl(values.audioUrl) ? (
                   <audio
                     controls
@@ -196,14 +196,14 @@ export function LessonMediaEditor({ lesson, onSaved }: Props) {
                     rel="noopener noreferrer"
                     className="mt-1 block text-xs text-emerald-700"
                   >
-                    Open audio
+                    Аудио нээх
                   </a>
                 )}
               </div>
             ) : null}
             {values.videoUrl ? (
               <div className="sm:col-span-1">
-                <p className="text-xs font-medium text-slate-500">Video</p>
+                <p className="text-xs font-medium text-slate-500">Бичлэг</p>
                 {isDirectVideoUrl(values.videoUrl) ? (
                   <video
                     controls
@@ -217,7 +217,7 @@ export function LessonMediaEditor({ lesson, onSaved }: Props) {
                     rel="noopener noreferrer"
                     className="mt-1 block text-xs text-emerald-700"
                   >
-                    Open video
+                    Бичлэг нээх
                   </a>
                 )}
               </div>
@@ -227,7 +227,7 @@ export function LessonMediaEditor({ lesson, onSaved }: Props) {
 
         <div className="grid gap-4 sm:grid-cols-2">
           <label className="block text-sm sm:col-span-2">
-            <span className="font-medium text-slate-700">Video URL</span>
+            <span className="font-medium text-slate-700">Бичлэгийн холбоос</span>
             <input
               type="url"
               value={values.videoUrl}
@@ -239,7 +239,7 @@ export function LessonMediaEditor({ lesson, onSaved }: Props) {
             />
           </label>
           <label className="block text-sm sm:col-span-2">
-            <span className="font-medium text-slate-700">Thumbnail URL</span>
+            <span className="font-medium text-slate-700">Нүүр зургийн холбоос</span>
             <input
               type="url"
               value={values.thumbnailUrl}
@@ -251,7 +251,7 @@ export function LessonMediaEditor({ lesson, onSaved }: Props) {
             />
           </label>
           <label className="block text-sm sm:col-span-2">
-            <span className="font-medium text-slate-700">Audio URL</span>
+            <span className="font-medium text-slate-700">Аудионы холбоос</span>
             <input
               type="url"
               value={values.audioUrl}
@@ -263,19 +263,19 @@ export function LessonMediaEditor({ lesson, onSaved }: Props) {
             />
           </label>
           <label className="block text-sm sm:col-span-2">
-            <span className="font-medium text-slate-700">Source note</span>
+            <span className="font-medium text-slate-700">Эх сурвалжийн тэмдэглэл</span>
             <textarea
               value={values.sourceNote}
               onChange={(e) =>
                 setValues((prev) => ({ ...prev, sourceNote: e.target.value }))
               }
               rows={3}
-              placeholder="Platform, rights, original filename…"
+              placeholder="Эх сурвалж, зохиогчийн эрх, файлын анхны нэр…"
               className={adminInputClass}
             />
           </label>
           <label className="block text-sm">
-            <span className="font-medium text-slate-700">Media status</span>
+            <span className="font-medium text-slate-700">Медиагийн төлөв</span>
             <select
               value={values.mediaStatus}
               onChange={(e) =>
@@ -299,7 +299,7 @@ export function LessonMediaEditor({ lesson, onSaved }: Props) {
 
         {warnings.length > 0 ? (
           <div className="rounded-xl bg-amber-50 px-4 py-3 text-sm text-amber-900 ring-1 ring-amber-200">
-            <p className="font-semibold">Warnings</p>
+            <p className="font-semibold">Анхааруулга</p>
             <ul className="mt-2 list-inside list-disc">
               {warnings.map((msg) => (
                 <li key={msg}>{msg}</li>
@@ -315,7 +315,7 @@ export function LessonMediaEditor({ lesson, onSaved }: Props) {
             disabled={busy !== null}
             className="rounded-full bg-emerald-500 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-emerald-600 disabled:opacity-60"
           >
-            {busy === "save" ? "Saving…" : "Save media URLs"}
+            {busy === "save" ? "Хадгалж байна…" : "Холбоосыг хадгалах"}
           </button>
           <button
             type="button"
@@ -323,7 +323,7 @@ export function LessonMediaEditor({ lesson, onSaved }: Props) {
             disabled={busy !== null}
             className="rounded-full border border-slate-200 px-5 py-2.5 text-sm font-medium text-slate-700 transition-colors hover:border-red-200 hover:text-red-700 disabled:opacity-60"
           >
-            {busy === "clear" ? "Clearing…" : "Clear media"}
+            {busy === "clear" ? "Цэвэрлэж байна…" : "Медиаг цэвэрлэх"}
           </button>
         </div>
       </AdminEditorSection>

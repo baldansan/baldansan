@@ -60,7 +60,7 @@ export function AdminEditLessonNotFound({ lessonId }: Props) {
     return (
       <EmptyState
         title="Хичээл ачаалж байна…"
-        description={`"${lessonId}" — импортолсон draft хичээлийг ачаалж байна.`}
+        description={`"${lessonId}" — оруулсан ноорог хичээлийг ачаалж байна.`}
       />
     );
   }
@@ -68,9 +68,9 @@ export function AdminEditLessonNotFound({ lessonId }: Props) {
   return (
     <EmptyState
       title="Хичээл олдсонгүй"
-      description={`"${lessonId}" ID-тай хичээл байхгүй. Supabase эсвэл local fallback шалгана уу.${
+      description={`"${lessonId}" ID-тай хичээл олдсонгүй. Хичээл устсан эсвэл ID буруу байж магадгүй.${
         localDraftIds.length
-          ? ` Local draft ids: ${localDraftIds.join(", ")}`
+          ? ` Энэ төхөөрөмж дээр хадгалагдсан ноорог: ${localDraftIds.join(", ")}`
           : ""
       }`}
       action={
@@ -78,7 +78,7 @@ export function AdminEditLessonNotFound({ lessonId }: Props) {
           href="/admin/lessons"
           className="text-sm font-medium text-emerald-700 hover:text-emerald-800"
         >
-          ← Хичээл удирдах
+          ← Хичээлүүд рүү буцах
         </Link>
       }
     />

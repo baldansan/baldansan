@@ -1,7 +1,7 @@
 import { AdminB2BInquiryDetail } from "@/components/admin/b2b/admin-b2b-inquiry-detail";
 
 export const metadata = {
-  title: "Inquiry detail — Admin B2B",
+  title: "Хүсэлтийн дэлгэрэнгүй — B2B",
 };
 
 type Props = {

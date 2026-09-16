@@ -11,14 +11,14 @@ const STAGE_OPTIONS: { value: QuestionAttemptStageFilter; label: string }[] = [
   { value: "all", label: "Бүгд" },
   { value: "grammar_exercise", label: "Дүрэм / дасгал" },
   { value: "quiz", label: "Сорил" },
-  { value: "mock_exam", label: "Mock шалгалт" },
+  { value: "mock_exam", label: "Мок шалгалт" },
   { value: "word_practice", label: "Үг дасгал" },
 ];
 
 const STAGE_LABEL: Record<string, string> = {
   grammar_exercise: "Дүрэм/дасгал",
   quiz: "Сорил",
-  mock_exam: "Mock",
+  mock_exam: "Мок",
   word_practice: "Үг",
 };
 
@@ -130,7 +130,7 @@ export function QuestionAttemptsAnalyticsSection({
           </p>
         </div>
         <label className="flex flex-col gap-1 text-sm">
-          <span className="font-medium text-slate-700">Стадиар шүүх</span>
+          <span className="font-medium text-slate-700">Үе шатаар шүүх</span>
           <select
             className="admin-input min-w-[180px]"
             value={stage}
@@ -169,7 +169,7 @@ export function QuestionAttemptsAnalyticsSection({
               <tr>
                 <th className="text-left">Хичээл</th>
                 <th className="text-left">Асуулт ID</th>
-                <th className="text-left">Стади</th>
+                <th className="text-left">Үе шат</th>
                 <th className="text-left">Төрөл</th>
                 <th className="text-right">Оролдлого</th>
                 <th className="text-left">Буруу %</th>

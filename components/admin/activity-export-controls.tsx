@@ -23,7 +23,7 @@ export function ActivityExportControls({ rows }: Props) {
 
   function handleCsvDownload() {
     if (rows.length === 0) {
-      showMessage("Export хийх activity байхгүй.");
+      showMessage("Гаргах үйлдлийн бүртгэл алга.");
       return;
     }
     downloadTextFile(
@@ -31,12 +31,12 @@ export function ActivityExportControls({ rows }: Props) {
       "admin-activity-log.csv",
       "text/csv;charset=utf-8"
     );
-    showMessage(`${rows.length} row CSV татагдлаа.`);
+    showMessage(`${rows.length} мөр CSV татагдлаа.`);
   }
 
   function handleJsonDownload() {
     if (rows.length === 0) {
-      showMessage("Export хийх activity байхгүй.");
+      showMessage("Гаргах үйлдлийн бүртгэл алга.");
       return;
     }
     downloadTextFile(
@@ -44,27 +44,29 @@ export function ActivityExportControls({ rows }: Props) {
       "admin-activity-log.json",
       "application/json;charset=utf-8"
     );
-    showMessage(`${rows.length} row JSON татагдлаа.`);
+    showMessage(`${rows.length} мөр JSON татагдлаа.`);
   }
 
   async function handleCopyJson() {
     if (rows.length === 0) {
-      showMessage("Export хийх activity байхгүй.");
+      showMessage("Гаргах үйлдлийн бүртгэл алга.");
       return;
     }
     const copied = await copyTextToClipboard(buildActivityJson(rows));
     showMessage(
       copied
-        ? `${rows.length} row JSON clipboard-д хууллаа.`
-        : "Clipboard хуулалт амжилтгүй."
+        ? `${rows.length} мөр JSON хуулагдлаа.`
+        : "Хуулж чадсангүй."
     );
   }
 
   return (
     <section className="rounded-2xl bg-white p-4 shadow-sm ring-1 ring-slate-200 sm:p-5">
-      <h2 className="text-sm font-semibold text-slate-900">Export activity log</h2>
+      <h2 className="text-sm font-semibold text-slate-900">
+        Үйлдлийн бүртгэлийг гаргах
+      </h2>
       <p className="mt-1 text-xs text-slate-600">
-        Current filtered view ({rows.length} row{rows.length === 1 ? "" : "s"}).
+        Одоогийн шүүлтээр {rows.length} мөр харагдаж байна.
       </p>
       <div className="mt-4 flex flex-wrap gap-2">
         <button
@@ -72,21 +74,21 @@ export function ActivityExportControls({ rows }: Props) {
           onClick={handleCsvDownload}
           className="inline-flex rounded-full border border-emerald-200 bg-emerald-50 px-4 py-2 text-sm font-semibold text-emerald-800 transition-colors hover:bg-emerald-100"
         >
-          Export CSV
+          CSV гаргах
         </button>
         <button
           type="button"
           onClick={handleJsonDownload}
           className="inline-flex rounded-full border border-emerald-200 bg-emerald-50 px-4 py-2 text-sm font-semibold text-emerald-800 transition-colors hover:bg-emerald-100"
         >
-          Export JSON
+          JSON гаргах
         </button>
         <button
           type="button"
           onClick={handleCopyJson}
           className="inline-flex rounded-full border border-slate-200 px-4 py-2 text-sm font-medium text-slate-700 transition-colors hover:border-emerald-200 hover:text-emerald-700"
         >
-          Copy JSON
+          JSON хуулах
         </button>
       </div>
       {message ? (

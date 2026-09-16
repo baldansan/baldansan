@@ -28,10 +28,10 @@ const HSK_LEVELS: HskTargetLevel[] = [
 ];
 
 const TONES: { id: LessonPromptTone; label: string }[] = [
-  { id: "emotional_drama", label: "Emotional short drama" },
-  { id: "daily_conversation", label: "Daily conversation" },
-  { id: "taobao_practical", label: "Taobao practical Chinese" },
-  { id: "workplace", label: "Workplace conversation" },
+  { id: "emotional_drama", label: "Сэтгэл хөдөлгөм богино драм" },
+  { id: "daily_conversation", label: "Өдөр тутмын яриа" },
+  { id: "taobao_practical", label: "Taobao худалдааны хятад хэл" },
+  { id: "workplace", label: "Ажлын байрны яриа" },
 ];
 
 export function LessonPromptGenerator({ lesson }: Props) {
@@ -88,9 +88,9 @@ export function LessonPromptGenerator({ lesson }: Props) {
     setCopySuccess(null);
     try {
       await navigator.clipboard.writeText(text);
-      setCopySuccess("Prompt clipboard руу хууллаа.");
+      setCopySuccess("Prompt хуулагдлаа.");
     } catch {
-      setCopyError("Clipboard хуулахад алдаа. Prompt-оо гараар copy хийнэ үү.");
+      setCopyError("Хуулж чадсангүй. Prompt-оо гараар хуулна уу.");
     }
   }
 
@@ -104,13 +104,13 @@ export function LessonPromptGenerator({ lesson }: Props) {
 
   return (
     <AdminEditorSection
-      title="Lesson content prompt generator"
-      description="ChatGPT/Cursor-д өгөх JSON prompt үүсгэнэ. API дуудахгүй — зөвхөн текст."
+      title="Хичээлийн агуулгын prompt үүсгэгч"
+      description="ChatGPT/Cursor-т өгөх JSON prompt үүсгэнэ. Ямар нэг үйлчилгээ рүү хандахгүй — зөвхөн текст бэлдэнэ."
     >
       <div className="flex flex-col gap-4">
         <div className="grid gap-3 sm:grid-cols-2">
           <label className="text-sm text-slate-700">
-            Target HSK level
+            HSK түвшин
             <select
               value={hskLevel}
               onChange={(e) => setHskLevel(e.target.value as HskTargetLevel)}
@@ -124,7 +124,7 @@ export function LessonPromptGenerator({ lesson }: Props) {
             </select>
           </label>
           <label className="text-sm text-slate-700">
-            Tone
+            Өнгө аяс
             <select
               value={tone}
               onChange={(e) => setTone(e.target.value as LessonPromptTone)}
@@ -138,7 +138,7 @@ export function LessonPromptGenerator({ lesson }: Props) {
             </select>
           </label>
           <label className="text-sm text-slate-700">
-            Subtitle lines
+            Хадмалын мөрийн тоо
             <input
               type="number"
               min={1}
@@ -151,7 +151,7 @@ export function LessonPromptGenerator({ lesson }: Props) {
             />
           </label>
           <label className="text-sm text-slate-700">
-            Vocabulary count
+            Үгийн тоо
             <input
               type="number"
               min={1}
@@ -164,7 +164,7 @@ export function LessonPromptGenerator({ lesson }: Props) {
             />
           </label>
           <label className="text-sm text-slate-700">
-            Quiz count
+            Дасгалын тоо
             <input
               type="number"
               min={1}
@@ -183,13 +183,13 @@ export function LessonPromptGenerator({ lesson }: Props) {
               onChange={(e) => setIncludePinyin(e.target.checked)}
               className="rounded border-slate-300 text-emerald-600 focus:ring-emerald-500"
             />
-            Include pinyin
+            Пиньинь оруулах
           </label>
         </div>
 
         <div className="rounded-xl bg-slate-50 px-3 py-2 text-xs text-slate-600 ring-1 ring-slate-200">
           <p>
-            <span className="font-medium text-slate-800">Lesson:</span>{" "}
+            <span className="font-medium text-slate-800">Хичээл:</span>{" "}
             {lesson.title} · {lesson.chineseTitle}
           </p>
           {lesson.subtitle ? (
@@ -202,19 +202,19 @@ export function LessonPromptGenerator({ lesson }: Props) {
           onClick={() => setShowPreview((v) => !v)}
           className="w-fit text-sm font-medium text-emerald-700 hover:text-emerald-800"
         >
-          {showPreview ? "Example prompt preview нуух" : "Example prompt preview"}
+          {showPreview ? "Жишээ prompt нуух" : "Жишээ prompt харах"}
         </button>
         {showPreview ? (
           <p className="text-xs text-slate-500">{PROMPT_EXAMPLE_PREVIEW}</p>
         ) : null}
 
         <label className="block text-sm font-medium text-slate-700">
-          Generated prompt (editable)
+          Үүсгэсэн prompt (засаж болно)
           <textarea
             value={promptText}
             onChange={(e) => setPromptText(e.target.value)}
             rows={16}
-            placeholder="Generate prompt дарж эхлэнэ үү…"
+            placeholder="«Prompt үүсгэх» товчийг дарж эхэлнэ үү…"
             className={`${adminInputClass} font-mono text-xs leading-relaxed`}
             spellCheck={false}
           />
@@ -222,7 +222,7 @@ export function LessonPromptGenerator({ lesson }: Props) {
 
         {!promptText.trim() ? (
           <p className="text-xs text-slate-500">
-            Preview: {displayPrompt.slice(0, 120)}…
+            Урьдчилж харах: {displayPrompt.slice(0, 120)}…
           </p>
         ) : null}
 
@@ -234,21 +234,21 @@ export function LessonPromptGenerator({ lesson }: Props) {
             onClick={handleGenerate}
             className="rounded-full bg-emerald-500 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-emerald-600"
           >
-            Generate prompt
+            Prompt үүсгэх
           </button>
           <button
             type="button"
             onClick={handleCopy}
             className="rounded-full border border-emerald-200 bg-emerald-50 px-5 py-2.5 text-sm font-semibold text-emerald-800 transition-colors hover:bg-emerald-100"
           >
-            Copy prompt
+            Prompt хуулах
           </button>
           <button
             type="button"
             onClick={handleClear}
             className="rounded-full border border-slate-200 px-5 py-2.5 text-sm font-medium text-slate-700 transition-colors hover:border-slate-300"
           >
-            Clear
+            Цэвэрлэх
           </button>
         </div>
       </div>

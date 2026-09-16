@@ -50,54 +50,54 @@ type Props = {
 };
 
 const categories: { value: TaskCategoryFilter; label: string }[] = [
-  { value: "all", label: "All" },
-  { value: "content", label: "Content" },
-  { value: "qa", label: "QA" },
-  { value: "media", label: "Media" },
-  { value: "release", label: "Release" },
-  { value: "analytics", label: "Analytics" },
-  { value: "backup", label: "Backup" },
-  { value: "system", label: "System" },
+  { value: "all", label: "Бүгд" },
+  { value: "content", label: "Контент" },
+  { value: "qa", label: "Чанарын шалгалт" },
+  { value: "media", label: "Медиа" },
+  { value: "release", label: "Хувилбар" },
+  { value: "analytics", label: "Тайлан" },
+  { value: "backup", label: "Нөөц хуулбар" },
+  { value: "system", label: "Систем" },
 ];
 
 const severities: { value: TaskSeverityFilter; label: string }[] = [
-  { value: "all", label: "All" },
-  { value: "critical", label: "Critical" },
-  { value: "warning", label: "Warning" },
-  { value: "info", label: "Info" },
-  { value: "success", label: "Success" },
+  { value: "all", label: "Бүгд" },
+  { value: "critical", label: "Ноцтой" },
+  { value: "warning", label: "Анхааруулга" },
+  { value: "info", label: "Мэдээлэл" },
+  { value: "success", label: "Амжилттай" },
 ];
 
 const statuses: { value: TaskStatusFilter; label: string }[] = [
-  { value: "active", label: "Active" },
-  { value: "open", label: "Open" },
-  { value: "in_progress", label: "In progress" },
-  { value: "resolved", label: "Resolved" },
-  { value: "dismissed", label: "Dismissed" },
-  { value: "all", label: "All" },
+  { value: "active", label: "Идэвхтэй" },
+  { value: "open", label: "Нээлттэй" },
+  { value: "in_progress", label: "Хийгдэж байна" },
+  { value: "resolved", label: "Шийдэгдсэн" },
+  { value: "dismissed", label: "Хаасан" },
+  { value: "all", label: "Бүгд" },
 ];
 
 const priorities: { value: TaskPriorityFilter; label: string }[] = [
-  { value: "all", label: "All" },
-  { value: "low", label: "Low" },
-  { value: "normal", label: "Normal" },
-  { value: "high", label: "High" },
-  { value: "urgent", label: "Urgent" },
+  { value: "all", label: "Бүгд" },
+  { value: "low", label: "Бага" },
+  { value: "normal", label: "Энгийн" },
+  { value: "high", label: "Өндөр" },
+  { value: "urgent", label: "Яаралтай" },
 ];
 
 const dueFilters: { value: TaskDueFilter; label: string }[] = [
-  { value: "all", label: "All due dates" },
-  { value: "overdue", label: "Overdue" },
-  { value: "due_this_week", label: "Due this week" },
-  { value: "no_due_date", label: "No due date" },
+  { value: "all", label: "Бүх огноо" },
+  { value: "overdue", label: "Хугацаа хэтэрсэн" },
+  { value: "due_this_week", label: "Энэ долоо хоногт дуусах" },
+  { value: "no_due_date", label: "Огноогүй" },
 ];
 
 const quickFilters: { value: TaskQuickFilter; label: string }[] = [
-  { value: "all", label: "All tasks" },
-  { value: "needs_action", label: "Needs action" },
-  { value: "ready_to_publish", label: "Ready to publish" },
-  { value: "content_missing", label: "Content missing" },
-  { value: "media_missing", label: "Media missing" },
+  { value: "all", label: "Бүх ажил" },
+  { value: "needs_action", label: "Арга хэмжээ авах" },
+  { value: "ready_to_publish", label: "Нийтлэхэд бэлэн" },
+  { value: "content_missing", label: "Контент дутуу" },
+  { value: "media_missing", label: "Медиа дутуу" },
 ];
 
 function selectClassName(active: boolean): string {
@@ -131,21 +131,21 @@ export function TaskFilterBar({
             htmlFor="task-search"
             className="text-xs font-semibold uppercase tracking-wide text-slate-500"
           >
-            Search
+            Хайх
           </label>
           <input
             id="task-search"
             type="search"
             value={search}
             onChange={(e) => onSearchChange(e.target.value)}
-            placeholder="Lesson title, id, task title…"
+            placeholder="Хичээлийн нэр, ID, ажлын нэр…"
             className="mt-2 w-full rounded-xl border border-slate-200 px-3 py-2 text-sm outline-none focus:border-emerald-400 focus:ring-2 focus:ring-emerald-100"
           />
         </div>
 
         <div>
           <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">
-            Quick filter
+            Түргэн шүүлт
           </p>
           <div className="mt-2 flex flex-wrap gap-2">
             {quickFilters.map((item) => (
@@ -167,7 +167,7 @@ export function TaskFilterBar({
               htmlFor="task-status"
               className="text-xs font-semibold uppercase tracking-wide text-slate-500"
             >
-              Status
+              Төлөв
             </label>
             <select
               id="task-status"
@@ -190,7 +190,7 @@ export function TaskFilterBar({
               htmlFor="task-priority"
               className="text-xs font-semibold uppercase tracking-wide text-slate-500"
             >
-              Priority
+              Ач холбогдол
             </label>
             <select
               id="task-priority"
@@ -213,7 +213,7 @@ export function TaskFilterBar({
               htmlFor="task-due"
               className="text-xs font-semibold uppercase tracking-wide text-slate-500"
             >
-              Due
+              Дуусах хугацаа
             </label>
             <select
               id="task-due"
@@ -236,7 +236,7 @@ export function TaskFilterBar({
               htmlFor="task-category"
               className="text-xs font-semibold uppercase tracking-wide text-slate-500"
             >
-              Category
+              Ангилал
             </label>
             <select
               id="task-category"
@@ -259,7 +259,7 @@ export function TaskFilterBar({
               htmlFor="task-severity"
               className="text-xs font-semibold uppercase tracking-wide text-slate-500"
             >
-              Severity
+              Хэр ноцтой
             </label>
             <select
               id="task-severity"
@@ -279,7 +279,7 @@ export function TaskFilterBar({
         </div>
 
         <p className="text-xs text-slate-500">
-          Showing {resultCount} task{resultCount === 1 ? "" : "s"}
+          Нийт {resultCount} ажил харагдаж байна
         </p>
       </div>
     </section>

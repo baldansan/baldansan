@@ -654,13 +654,13 @@ export function getPromptLibraryEntries(): PromptLibraryEntry[] {
 }
 
 export const IMPROVEMENT_ISSUE_LABELS: Record<ImprovementIssueType, string> = {
-  full_lesson: "Full lesson",
-  missing_content: "Missing content",
-  quiz_quality: "Quiz quality",
-  vocabulary: "Vocabulary",
-  subtitles: "Subtitles",
-  publish_readiness: "Publish ready",
-  question_fix: "Question fix",
-  vocabulary_fix: "Vocabulary fix",
-  import_cleanup: "Import cleanup",
+  full_lesson: "Бүтэн хичээл",
+  missing_content: "Дутуу агуулга",
+  quiz_quality: "Дасгалын чанар",
+  vocabulary: "Үгсийн сан",
+  subtitles: "Хадмал",
+  publish_readiness: "Нийтлэхэд бэлэн",
+  question_fix: "Асуулт засах",
+  vocabulary_fix: "Үг засах",
+  import_cleanup: "Оруулсны дараах цэгцлэл",
 };

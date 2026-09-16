@@ -83,7 +83,7 @@ export function BichlegAdminClient({ initialSeries }: Props) {
     const raw = offsetDrafts[videoId];
     const value = Number(raw);
     if (!Number.isFinite(value)) {
-      setError("subtitle_offset_sec тоо оруулна уу.");
+      setError("Цаг зөрүүг тоогоор бичнэ үү.");
       return;
     }
 
@@ -372,7 +372,7 @@ export function BichlegAdminClient({ initialSeries }: Props) {
           {seriesDetail ? (
             <AdminEditorSection
               title="Категорийн зураг"
-              description="Бичлэг хуудсан дээрх картын thumbnail. JPEG, PNG, WebP — 5MB хүртэл."
+              description="Бичлэг хуудсан дээрх картын нүүр зураг. JPEG, PNG, WebP — 5MB хүртэл."
             >
               <div className="flex flex-col gap-4 sm:flex-row sm:items-start">
                 <div className="overflow-hidden rounded-2xl ring-1 ring-slate-200">
@@ -479,7 +479,7 @@ export function BichlegAdminClient({ initialSeries }: Props) {
                               disabled={busy === `offset-${ep.id}`}
                               onClick={() => void saveOffset(ep.id)}
                             >
-                              Хадгал
+                              Хадгалах
                             </button>
                           </div>
                         </td>

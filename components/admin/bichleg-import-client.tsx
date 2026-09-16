@@ -208,7 +208,7 @@ export function BichlegImportClient() {
           href="/admin/import"
           className="text-sm font-medium text-emerald-700 hover:text-emerald-800"
         >
-          ← Import hub
+          ← Оруулах төв
         </Link>
         <h1 className="mt-2 text-2xl font-bold text-slate-900">
           Бичлэг хадмал импорт
@@ -227,7 +227,7 @@ export function BichlegImportClient() {
 
       <AdminEditorSection
         title="JSON файлууд"
-        description="Нэг эсвэл хэд хэдэн .json файл чирч оруулна уу (drag & drop эсвэл сонгох)."
+        description="Нэг эсвэл хэд хэдэн .json файлыг чирч оруулах эсвэл сонгоно уу."
       >
         <div
           className={`rounded-2xl border-2 border-dashed px-5 py-10 text-center transition-colors ${

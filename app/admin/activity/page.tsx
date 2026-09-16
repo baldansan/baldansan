@@ -4,7 +4,7 @@ import { AdminPageHeader } from "@/components/admin/admin-page-header";
 export const dynamic = "force-dynamic";
 
 export const metadata = {
-  title: "Admin activity — Buunduu Surtsgaay",
+  title: "Үйлдлийн бүртгэл — Buunduu Surtsgaay",
 };
 
 type Props = {
@@ -17,12 +17,12 @@ export default async function AdminActivityPage({ searchParams }: Props) {
   return (
     <div className="flex flex-col gap-6">
       <AdminPageHeader
-        title="Activity Log"
-        description="Admin хэрэглэгчдийн хийсэн lesson, content, publish, task өөрчлөлтийн түүх."
+        title="Үйлдлийн бүртгэл"
+        description="Админ хэрэглэгчдийн хийсэн хичээл, контент, нийтлэлт, ажлын өөрчлөлтийн түүх."
         actions={
           lessonId ? (
             <span className="admin-badge admin-badge-neutral">
-              Lesson {lessonId}
+              Хичээл {lessonId}
             </span>
           ) : null
         }

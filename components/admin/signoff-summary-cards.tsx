@@ -14,10 +14,10 @@ type Props = {
 };
 
 const STATUS_OPTIONS: { value: SignoffCheckStatus; label: string }[] = [
-  { value: "not_checked", label: "Not checked" },
-  { value: "pass", label: "Pass" },
-  { value: "warning", label: "Warning" },
-  { value: "fail", label: "Fail" },
+  { value: "not_checked", label: "Шалгаагүй" },
+  { value: "pass", label: "Давсан" },
+  { value: "warning", label: "Анхааруулга" },
+  { value: "fail", label: "Амжилтгүй" },
 ];
 
 function statusClass(status: SignoffCheckStatus): string {
@@ -30,7 +30,7 @@ function statusClass(status: SignoffCheckStatus): string {
 export function SignoffSummaryCards({ cards, onUpdate }: Props) {
   return (
     <section className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:p-6">
-      <h2 className="text-lg font-semibold text-slate-900">Sign-off summary</h2>
+      <h2 className="text-lg font-semibold text-slate-900">Баталгааны товчоо</h2>
       <div className="mt-4 grid gap-3 sm:grid-cols-2">
         {SIGNOFF_SUMMARY_CARDS.map((def) => {
           const card = cards.find((c) => c.id === def.id) ?? {
@@ -52,7 +52,7 @@ export function SignoffSummaryCards({ cards, onUpdate }: Props) {
                     onUpdate(def.id, e.target.value as SignoffCheckStatus)
                   }
                   className="rounded-lg border border-slate-200 bg-white px-2 py-1 text-xs font-medium"
-                  aria-label={`Status for ${def.label}`}
+                  aria-label={`${def.label} — төлөв`}
                 >
                   {STATUS_OPTIONS.map((opt) => (
                     <option key={opt.value} value={opt.value}>
@@ -65,7 +65,7 @@ export function SignoffSummaryCards({ cards, onUpdate }: Props) {
                     href={def.href}
                     className="text-xs font-semibold text-emerald-800 hover:underline"
                   >
-                    Open local
+                    Дотоод хуудсыг нээх
                   </Link>
                 ) : null}
                 {def.productionPath ? (
@@ -75,7 +75,7 @@ export function SignoffSummaryCards({ cards, onUpdate }: Props) {
                     rel="noopener noreferrer"
                     className="text-xs font-semibold text-emerald-800 hover:underline"
                   >
-                    Production
+                    Ажлын орчин
                   </a>
                 ) : null}
               </div>

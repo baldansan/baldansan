@@ -46,13 +46,13 @@ export function SignoffReportExportCard({
 
   return (
     <section className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:p-6">
-      <h2 className="text-lg font-semibold text-slate-900">Save &amp; export</h2>
+      <h2 className="text-lg font-semibold text-slate-900">Хадгалах ба гаргах</h2>
       <p className="mt-2 text-sm text-slate-600">
-        Stored in this browser (localStorage key: buunduu-launch-signoff).
+        Энэ хөтөч дээр хадгалагдана (localStorage түлхүүр: buunduu-launch-signoff).
       </p>
       {savedAt ? (
         <p className="mt-2 text-xs text-slate-500">
-          Last saved: {formatMongoliaDateTimeWithLabel(savedAt)}
+          Сүүлд хадгалсан: {formatMongoliaDateTimeWithLabel(savedAt)}
         </p>
       ) : null}
       <div className="mt-4 flex flex-wrap gap-2">
@@ -61,7 +61,7 @@ export function SignoffReportExportCard({
           onClick={onSave}
           className="inline-flex rounded-full bg-emerald-500 px-4 py-2 text-sm font-semibold text-white hover:bg-emerald-600"
         >
-          Save sign-off
+          Баталгааг хадгалах
         </button>
         <button
           type="button"
@@ -72,7 +72,7 @@ export function SignoffReportExportCard({
               : "border-slate-200 bg-white text-slate-700"
           }`}
         >
-          {resetConfirm ? "Confirm reset sign-off" : "Reset sign-off"}
+          {resetConfirm ? "Цэвэрлэхийг баталгаажуулах" : "Баталгааг цэвэрлэх"}
         </button>
       </div>
       <div className="mt-4 flex flex-wrap gap-2 border-t border-slate-100 pt-4">
@@ -81,7 +81,7 @@ export function SignoffReportExportCard({
           onClick={() => void copyMarkdown()}
           className="inline-flex rounded-full border border-slate-200 bg-slate-50 px-4 py-2 text-sm font-semibold text-slate-700 hover:border-emerald-200"
         >
-          {copied ? "Copied!" : "Copy sign-off report"}
+          {copied ? "Хуулагдлаа!" : "Баталгааны тайланг хуулах"}
         </button>
         <button
           type="button"
@@ -94,7 +94,7 @@ export function SignoffReportExportCard({
           }
           className="inline-flex rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:border-emerald-200"
         >
-          Download JSON
+          JSON татах
         </button>
         <button
           type="button"
@@ -107,7 +107,7 @@ export function SignoffReportExportCard({
           }
           className="inline-flex rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:border-emerald-200"
         >
-          Download Markdown
+          Markdown татах
         </button>
       </div>
     </section>

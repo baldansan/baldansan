@@ -25,6 +25,26 @@ const STATUS_OPTIONS: OrganizationStatus[] = [
   "closed",
 ];
 
+/** Зөвхөн дэлгэцэнд харуулах нэр — өгөгдлийн утгыг өөрчлөхгүй. */
+const TYPE_LABELS: Record<string, string> = {
+  training_center: "Сургалтын төв",
+  school: "Сургууль",
+  university: "Их сургууль",
+  teacher: "Багш (хувь хүн)",
+  company: "Компани",
+  other: "Бусад",
+};
+
+const STATUS_LABELS: Record<string, string> = {
+  lead: "Сонирхсон",
+  contacted: "Холбоо барьсан",
+  demo_scheduled: "Танилцуулга товлосон",
+  pilot: "Туршилт",
+  active: "Идэвхтэй",
+  paused: "Түр зогссон",
+  closed: "Хаасан",
+};
+
 export function AdminB2BOrganizationForm() {
   const router = useRouter();
   const [name, setName] = useState("");
@@ -70,10 +90,10 @@ export function AdminB2BOrganizationForm() {
           href="/admin/b2b/organizations"
           className="text-sm text-slate-600 hover:text-emerald-600"
         >
-          ← Organizations
+          ← Байгууллагууд
         </Link>
         <h1 className="mt-2 text-2xl font-bold tracking-tight">
-          Create organization
+          Байгууллага үүсгэх
         </h1>
       </section>
 
@@ -82,7 +102,7 @@ export function AdminB2BOrganizationForm() {
         className="flex flex-col gap-4 rounded-2xl bg-white p-5 ring-1 ring-slate-200"
       >
         <label className="flex flex-col gap-1 text-sm">
-          <span className="font-medium">Name *</span>
+          <span className="font-medium">Нэр *</span>
           <input
             required
             value={name}
@@ -91,7 +111,7 @@ export function AdminB2BOrganizationForm() {
           />
         </label>
         <label className="flex flex-col gap-1 text-sm">
-          <span className="font-medium">Type</span>
+          <span className="font-medium">Төрөл</span>
           <select
             value={organizationType}
             onChange={(e) =>
@@ -101,13 +121,13 @@ export function AdminB2BOrganizationForm() {
           >
             {TYPE_OPTIONS.map((t) => (
               <option key={t} value={t}>
-                {t}
+                {TYPE_LABELS[t] ?? t}
               </option>
             ))}
           </select>
         </label>
         <label className="flex flex-col gap-1 text-sm">
-          <span className="font-medium">Status</span>
+          <span className="font-medium">Төлөв</span>
           <select
             value={status}
             onChange={(e) => setStatus(e.target.value as OrganizationStatus)}
@@ -115,13 +135,13 @@ export function AdminB2BOrganizationForm() {
           >
             {STATUS_OPTIONS.map((s) => (
               <option key={s} value={s}>
-                {s}
+                {STATUS_LABELS[s] ?? s}
               </option>
             ))}
           </select>
         </label>
         <label className="flex flex-col gap-1 text-sm">
-          <span className="font-medium">Website</span>
+          <span className="font-medium">Вэбсайт</span>
           <input
             value={website}
             onChange={(e) => setWebsite(e.target.value)}
@@ -130,7 +150,7 @@ export function AdminB2BOrganizationForm() {
         </label>
         <div className="grid gap-4 sm:grid-cols-2">
           <label className="flex flex-col gap-1 text-sm">
-            <span className="font-medium">Email</span>
+            <span className="font-medium">И-мэйл</span>
             <input
               type="email"
               value={email}
@@ -139,7 +159,7 @@ export function AdminB2BOrganizationForm() {
             />
           </label>
           <label className="flex flex-col gap-1 text-sm">
-            <span className="font-medium">Phone</span>
+            <span className="font-medium">Утас</span>
             <input
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
@@ -148,7 +168,7 @@ export function AdminB2BOrganizationForm() {
           </label>
         </div>
         <label className="flex flex-col gap-1 text-sm">
-          <span className="font-medium">Address</span>
+          <span className="font-medium">Хаяг</span>
           <input
             value={address}
             onChange={(e) => setAddress(e.target.value)}
@@ -156,7 +176,7 @@ export function AdminB2BOrganizationForm() {
           />
         </label>
         <label className="flex flex-col gap-1 text-sm">
-          <span className="font-medium">Notes</span>
+          <span className="font-medium">Тэмдэглэл</span>
           <textarea
             value={notes}
             onChange={(e) => setNotes(e.target.value)}
@@ -174,7 +194,7 @@ export function AdminB2BOrganizationForm() {
           disabled={saving}
           className="rounded-full bg-emerald-500 px-6 py-3 text-sm font-semibold text-white disabled:opacity-60"
         >
-          {saving ? "Creating…" : "Create organization"}
+          {saving ? "Үүсгэж байна…" : "Байгууллага үүсгэх"}
         </button>
       </form>
     </div>

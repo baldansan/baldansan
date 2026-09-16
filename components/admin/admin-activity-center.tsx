@@ -116,7 +116,7 @@ export function AdminActivityCenter({ initialLessonId = "" }: Props) {
     <div className="flex flex-col gap-6">
       {warnings.length > 0 ? (
         <div className="rounded-xl bg-amber-50 px-4 py-3 text-sm text-amber-900 ring-1 ring-amber-200">
-          <p className="font-semibold">Activity log notes</p>
+          <p className="font-semibold">Үйлдлийн бүртгэлийн анхааруулга</p>
           <ul className="mt-2 list-inside list-disc">
             {warnings.map((warning) => (
               <li key={warning}>{warning}</li>
@@ -127,18 +127,18 @@ export function AdminActivityCenter({ initialLessonId = "" }: Props) {
 
       {loading ? (
         <p className="rounded-2xl bg-slate-50 px-6 py-8 text-center text-sm text-slate-600 ring-1 ring-slate-200">
-          Activity log ачааллаж байна…
+          Үйлдлийн бүртгэлийг ачаалж байна…
         </p>
       ) : null}
 
       <section>
-        <h2 className="text-lg font-semibold text-slate-900">Summary</h2>
+        <h2 className="text-lg font-semibold text-slate-900">Хураангуй</h2>
         <div className="mt-3">
           <ActivitySummaryCards summary={loadedSummary} />
         </div>
         <p className="mt-2 text-xs text-slate-500">
-          Loaded {loadedSummary.total} total · showing {displaySummary.total}{" "}
-          after filters.
+          Нийт {loadedSummary.total} бүртгэл ачаалсан · шүүлтийн дараа{" "}
+          {displaySummary.total} харагдаж байна.
         </p>
       </section>
 

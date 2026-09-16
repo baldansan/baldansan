@@ -19,19 +19,19 @@ export function LessonTasksCard({ lessonId, tasks, bare = false }: Props) {
         <div className="flex flex-wrap items-start justify-between gap-3">
           <div>
             <h2 className="text-base font-semibold text-slate-900">
-              Tasks for this lesson
+              Энэ хичээлийн ажил
             </h2>
             <p className="mt-1 text-sm text-slate-600">
               {tasks.length === 0
-                ? "No active tasks for this lesson."
-                : `${tasks.length} active task${tasks.length === 1 ? "" : "s"}.`}
+                ? "Энэ хичээлд хийх ажил алга."
+                : `Хийх ажил ${tasks.length}.`}
             </p>
           </div>
           <Link
             href={`/admin/tasks?lessonId=${encodeURIComponent(lessonId)}`}
             className="inline-flex rounded-full border border-emerald-200 bg-emerald-50 px-4 py-2 text-xs font-semibold text-emerald-800 transition-colors hover:bg-emerald-100 sm:text-sm"
           >
-            Open task center →
+            Ажлын төв нээх →
           </Link>
         </div>
       ) : (
@@ -40,7 +40,7 @@ export function LessonTasksCard({ lessonId, tasks, bare = false }: Props) {
             href={`/admin/tasks?lessonId=${encodeURIComponent(lessonId)}`}
             className="inline-flex rounded-full border border-emerald-200 bg-emerald-50 px-4 py-2 text-xs font-semibold text-emerald-800 transition-colors hover:bg-emerald-100 sm:text-sm"
           >
-            Open task center →
+            Ажлын төв нээх →
           </Link>
         </div>
       )}
@@ -55,7 +55,7 @@ export function LessonTasksCard({ lessonId, tasks, bare = false }: Props) {
         </ul>
       ) : (
         <p className={`text-sm text-emerald-800 ${bare ? "" : "mt-4"}`}>
-          Бүх зүйл хэвийн — urgent task алга.
+          Бүх зүйл хэвийн — яаралтай ажил алга.
         </p>
       )}
     </>

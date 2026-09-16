@@ -33,9 +33,9 @@ function ReadinessBadge({ status }: { status: ImportQaStatus | null }) {
     missing_content: "bg-slate-100 text-slate-600 ring-slate-200",
   };
   const labels: Record<ImportQaStatus, string> = {
-    ready: "Ready",
-    needs_review: "Needs review",
-    missing_content: "Missing content",
+    ready: "Бэлэн",
+    needs_review: "Шалгах шаардлагатай",
+    missing_content: "Агуулга дутуу",
   };
 
   return (
@@ -64,7 +64,7 @@ export function LessonPackageSummary({
       <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
         <div>
           <h2 className="text-base font-semibold text-slate-900">
-            Lesson package summary
+            Хичээлийн багцын товч мэдээлэл
           </h2>
           <p className="mt-1 text-sm text-slate-600">
             {lesson.title} · {lesson.chineseTitle}
@@ -77,52 +77,56 @@ export function LessonPackageSummary({
       </div>
 
       {loading ? (
-        <p className="mt-4 text-sm text-slate-500">QA шалгаж байна…</p>
+        <p className="mt-4 text-sm text-slate-500">
+          Чанарын шалгалт хийж байна…
+        </p>
       ) : loadError ? (
         <p className="mt-4 text-sm text-red-800">{loadError}</p>
       ) : qaReport ? (
         <div className="mt-4 flex flex-col gap-4">
           <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
             <AdminSummaryCard
-              label="Subtitles"
+              label="Хадмал"
               value={qaReport.subtitleCount}
             />
             <AdminSummaryCard
-              label="Vocabulary"
+              label="Үгсийн сан"
               value={qaReport.vocabularyCount}
-              hint={`min ${MIN_VOCABULARY_FOR_PUBLISH} to publish`}
+              hint={`нийтлэхэд хамгийн багадаа ${MIN_VOCABULARY_FOR_PUBLISH}`}
             />
             <AdminSummaryCard
-              label="Quiz"
+              label="Дасгал"
               value={qaReport.quizCount}
-              hint={`min ${MIN_QUIZ_FOR_PUBLISH} to publish`}
+              hint={`нийтлэхэд хамгийн багадаа ${MIN_QUIZ_FOR_PUBLISH}`}
             />
             <AdminSummaryCard
-              label="Metadata"
-              value={qaReport.hasMetadata ? "Complete" : "Incomplete"}
+              label="Ерөнхий мэдээлэл"
+              value={qaReport.hasMetadata ? "Бүрэн" : "Дутуу"}
             />
           </div>
 
           <ul className="grid gap-2 text-sm text-slate-700 sm:grid-cols-2">
             <li>
-              Missing Mongolian translations:{" "}
-              {missingTranslationCount === 0 ? "none" : missingTranslationCount}
+              Монгол орчуулга дутуу:{" "}
+              {missingTranslationCount === 0 ? "алга" : missingTranslationCount}
             </li>
             <li>
-              Duplicate vocabulary:{" "}
+              Давхардсан үг:{" "}
               {qaReport.duplicateVocabularyChinese.length > 0
                 ? qaReport.duplicateVocabularyChinese.join(", ")
-                : "none"}
+                : "алга"}
             </li>
             <li>
-              Quiz answer mismatches: {qaReport.quizAnswerMismatchCount}
+              Дасгалын хариулт таарахгүй: {qaReport.quizAnswerMismatchCount}
             </li>
             <li>
-              Publish readiness:{" "}
+              Нийтлэхэд бэлэн эсэх:{" "}
               {qaReport.status === "ready" ? (
-                <span className="font-medium text-emerald-700">Ready</span>
+                <span className="font-medium text-emerald-700">Бэлэн</span>
               ) : (
-                <span className="font-medium text-amber-800">Needs review</span>
+                <span className="font-medium text-amber-800">
+                  Шалгах шаардлагатай
+                </span>
               )}
             </li>
           </ul>
@@ -130,7 +134,7 @@ export function LessonPackageSummary({
           {Object.keys(qaReport.hskDistribution).length > 0 ? (
             <div>
               <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">
-                HSK distribution
+                HSK түвшингийн хуваарилалт
               </p>
               <div className="mt-2 flex flex-wrap gap-2">
                 {Object.entries(qaReport.hskDistribution).map(([level, count]) => (
@@ -147,7 +151,7 @@ export function LessonPackageSummary({
 
           {qaReport.errors.length > 0 ? (
             <div className="rounded-xl bg-red-50 px-4 py-3 text-sm text-red-800 ring-1 ring-red-200">
-              <p className="font-semibold">Errors</p>
+              <p className="font-semibold">Алдаа</p>
               <ul className="mt-2 list-inside list-disc">
                 {qaReport.errors.map((msg) => (
                   <li key={msg}>{msg}</li>
@@ -158,13 +162,13 @@ export function LessonPackageSummary({
 
           {qaReport.warnings.length > 0 ? (
             <div className="rounded-xl bg-amber-50 px-4 py-3 text-sm text-amber-900 ring-1 ring-amber-200">
-              <p className="font-semibold">Warnings</p>
+              <p className="font-semibold">Анхааруулга</p>
               <ul className="mt-2 max-h-32 list-inside list-disc overflow-auto">
                 {qaReport.warnings.slice(0, 8).map((msg) => (
                   <li key={msg}>{msg}</li>
                 ))}
                 {qaReport.warnings.length > 8 ? (
-                  <li>…and {qaReport.warnings.length - 8} more</li>
+                  <li>…бас {qaReport.warnings.length - 8} анхааруулга байна</li>
                 ) : null}
               </ul>
             </div>
@@ -172,7 +176,7 @@ export function LessonPackageSummary({
         </div>
       ) : (
         <p className="mt-4 text-sm text-slate-500">
-          Select a lesson to view package summary.
+          Товч мэдээллийг харахын тулд хичээл сонгоно уу.
         </p>
       )}
     </section>

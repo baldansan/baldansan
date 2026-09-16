@@ -4,7 +4,7 @@ import { getAdminB2BMetrics } from "@/lib/supabase/admin-b2b-metrics";
 export const dynamic = "force-dynamic";
 
 export const metadata = {
-  title: "B2B CRM — Admin",
+  title: "Сургууль, байгууллага — Удирдлагын хэсэг",
 };
 
 export default async function AdminB2BPage() {

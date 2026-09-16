@@ -11,10 +11,10 @@ export function AdminDashboardError({ errorMessage, warnings = [] }: Props) {
   return (
     <div className="flex flex-col gap-6">
       <section className="admin-panel p-5 sm:p-6">
-        <h1 className="text-xl font-bold text-slate-900">Admin dashboard</h1>
+        <h1 className="text-xl font-bold text-slate-900">Хяналтын самбар</h1>
         <p className="mt-2 text-sm text-slate-600">
-          Dashboard metrics could not be loaded. Other admin pages (import, lessons,
-          analytics) should still work.
+          Самбарын үзүүлэлтийг ачаалж чадсангүй. Бусад хуудас (оруулах,
+          хичээлүүд, тайлан) хэвийн ажиллах ёстой.
         </p>
         <p className="mt-3 rounded-xl border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-amber-900">
           {errorMessage}
@@ -31,19 +31,19 @@ export function AdminDashboardError({ errorMessage, warnings = [] }: Props) {
             href="/admin/import/chinese"
             className="inline-flex rounded-full bg-emerald-500 px-5 py-2.5 text-sm font-semibold text-white hover:bg-emerald-600"
           >
-            Chinese import →
+            Хятад хэл оруулах →
           </Link>
           <Link
             href="/admin/lessons"
             className="inline-flex rounded-full border border-slate-200 px-5 py-2.5 text-sm font-semibold text-slate-700 hover:border-emerald-200"
           >
-            Lessons →
+            Хичээлүүд →
           </Link>
           <Link
             href="/debug/local-health"
             className="inline-flex rounded-full border border-slate-200 px-5 py-2.5 text-sm font-semibold text-slate-700 hover:border-emerald-200"
           >
-            Local health →
+            Дотоод байдлын шалгалт →
           </Link>
         </div>
         {shouldShowLocalDebugDetails() ? (

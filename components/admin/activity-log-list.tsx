@@ -20,7 +20,7 @@ export function ActivityLogList({ rows, compact = false }: Props) {
   if (rows.length === 0) {
     return (
       <p className="rounded-2xl bg-slate-50 px-6 py-8 text-center text-sm text-slate-600 ring-1 ring-slate-200">
-        Одоогоор activity бүртгэл алга.
+        Одоогоор үйлдлийн бүртгэл алга.
       </p>
     );
   }
@@ -38,17 +38,17 @@ export function ActivityLogList({ rows, compact = false }: Props) {
               <EntityTypeBadge entityType={row.entityType} />
               {activityHasDiffPreview(row) ? (
                 <span className="inline-flex rounded-full bg-sky-50 px-2.5 py-0.5 text-xs font-semibold text-sky-800 ring-1 ring-sky-200">
-                  Diff available
+                  Өөрчлөлттэй
                 </span>
               ) : null}
               {activityRollbackAvailable(row) ? (
                 <span className="inline-flex rounded-full bg-emerald-50 px-2.5 py-0.5 text-xs font-semibold text-emerald-800 ring-1 ring-emerald-200">
-                  Rollback available
+                  Буцаах боломжтой
                 </span>
               ) : null}
               {row.lessonId ? (
                 <span className="font-mono text-xs text-slate-500">
-                  Lesson {row.lessonId}
+                  Хичээл {row.lessonId}
                 </span>
               ) : null}
             </div>
@@ -65,7 +65,7 @@ export function ActivityLogList({ rows, compact = false }: Props) {
             </p>
 
             <p className="mt-3 text-xs font-semibold text-emerald-700">
-              View activity detail →
+              Дэлгэрэнгүй харах →
             </p>
           </Link>
         </li>

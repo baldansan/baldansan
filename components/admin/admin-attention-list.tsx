@@ -8,7 +8,7 @@ type Props = {
 
 export function AdminAttentionList({
   items,
-  emptyMessage = "All lessons look good — no urgent issues.",
+  emptyMessage = "Бүх хичээл хэвийн — яаралтай асуудал алга.",
 }: Props) {
   if (items.length === 0) {
     return (
@@ -40,7 +40,7 @@ export function AdminAttentionList({
             href={`/admin/lessons/${item.lessonId}/edit`}
             className="shrink-0 text-sm font-medium text-emerald-700 hover:text-emerald-800"
           >
-            Edit →
+            Засах →
           </Link>
         </li>
       ))}

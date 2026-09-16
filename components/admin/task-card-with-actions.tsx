@@ -22,32 +22,35 @@ const severityStyles: Record<
   AdminTaskSeverity,
   { badge: string; label: string }
 > = {
-  critical: { badge: "bg-red-50 text-red-800 ring-red-200", label: "Critical" },
+  critical: { badge: "bg-red-50 text-red-800 ring-red-200", label: "Ноцтой" },
   warning: {
     badge: "bg-amber-50 text-amber-900 ring-amber-200",
-    label: "Warning",
+    label: "Анхааруулга",
   },
-  info: { badge: "bg-sky-50 text-sky-800 ring-sky-200", label: "Info" },
+  info: { badge: "bg-sky-50 text-sky-800 ring-sky-200", label: "Мэдээлэл" },
   success: {
     badge: "bg-emerald-50 text-emerald-800 ring-emerald-200",
-    label: "Success",
+    label: "Амжилттай",
   },
 };
 
 const statusStyles: Record<AdminTaskStatus, { badge: string; label: string }> =
   {
-    open: { badge: "bg-slate-100 text-slate-700 ring-slate-200", label: "Open" },
+    open: {
+      badge: "bg-slate-100 text-slate-700 ring-slate-200",
+      label: "Нээлттэй",
+    },
     in_progress: {
       badge: "bg-sky-50 text-sky-800 ring-sky-200",
-      label: "In progress",
+      label: "Хийгдэж байна",
     },
     resolved: {
       badge: "bg-emerald-50 text-emerald-800 ring-emerald-200",
-      label: "Resolved",
+      label: "Шийдэгдсэн",
     },
     dismissed: {
       badge: "bg-slate-100 text-slate-500 ring-slate-200",
-      label: "Dismissed",
+      label: "Хаасан",
     },
   };
 
@@ -55,23 +58,23 @@ const priorityStyles: Record<
   AdminTaskPriority,
   { badge: string; label: string }
 > = {
-  low: { badge: "bg-slate-50 text-slate-600 ring-slate-200", label: "Low" },
+  low: { badge: "bg-slate-50 text-slate-600 ring-slate-200", label: "Бага" },
   normal: {
     badge: "bg-slate-100 text-slate-700 ring-slate-200",
-    label: "Normal",
+    label: "Энгийн",
   },
-  high: { badge: "bg-amber-50 text-amber-900 ring-amber-200", label: "High" },
-  urgent: { badge: "bg-red-50 text-red-800 ring-red-200", label: "Urgent" },
+  high: { badge: "bg-amber-50 text-amber-900 ring-amber-200", label: "Өндөр" },
+  urgent: { badge: "bg-red-50 text-red-800 ring-red-200", label: "Яаралтай" },
 };
 
 const categoryLabels: Record<AdminTask["category"], string> = {
-  content: "Content",
-  qa: "QA",
-  media: "Media",
-  release: "Release",
-  analytics: "Analytics",
-  backup: "Backup",
-  system: "System",
+  content: "Контент",
+  qa: "Чанарын шалгалт",
+  media: "Медиа",
+  release: "Хувилбар",
+  analytics: "Тайлан",
+  backup: "Нөөц хуулбар",
+  system: "Систем",
   b2b: "B2B",
 };
 
@@ -148,13 +151,13 @@ export function TaskCardWithActions({ task, compact = false }: Props) {
                 : "bg-slate-50 text-slate-600 ring-slate-200"
             }`}
           >
-            Due {task.dueDate}
-            {overdue ? " · Overdue" : ""}
+            Дуусах {task.dueDate}
+            {overdue ? " · Хугацаа хэтэрсэн" : ""}
           </span>
         ) : null}
         {task.lessonId ? (
           <span className="font-mono text-xs text-slate-500">
-            Lesson {task.lessonId}
+            Хичээл {task.lessonId}
             {task.lessonTitle ? ` · ${task.lessonTitle}` : ""}
           </span>
         ) : null}
@@ -165,7 +168,7 @@ export function TaskCardWithActions({ task, compact = false }: Props) {
 
       {task.adminNote && !expanded ? (
         <p className="mt-2 text-xs text-slate-500">
-          Note: {task.adminNote.slice(0, 120)}
+          Тэмдэглэл: {task.adminNote.slice(0, 120)}
           {task.adminNote.length > 120 ? "…" : ""}
         </p>
       ) : null}
@@ -198,7 +201,7 @@ export function TaskCardWithActions({ task, compact = false }: Props) {
             })}
             className="inline-flex rounded-full border border-sky-200 bg-sky-50 px-4 py-2 text-xs font-semibold text-sky-800 hover:bg-sky-100 disabled:opacity-50 sm:text-sm"
           >
-            Start
+            Эхлэх
           </button>
         ) : null}
 
@@ -213,7 +216,7 @@ export function TaskCardWithActions({ task, compact = false }: Props) {
               })}
               className="inline-flex rounded-full border border-emerald-200 bg-emerald-50 px-4 py-2 text-xs font-semibold text-emerald-800 hover:bg-emerald-100 disabled:opacity-50 sm:text-sm"
             >
-              Resolve
+              Шийдсэн болгох
             </button>
             <button
               type="button"
@@ -224,7 +227,7 @@ export function TaskCardWithActions({ task, compact = false }: Props) {
               })}
               className="inline-flex rounded-full border border-slate-200 px-4 py-2 text-xs font-medium text-slate-700 hover:border-slate-300 disabled:opacity-50 sm:text-sm"
             >
-              Dismiss
+              Хаах
             </button>
           </>
         ) : null}
@@ -239,7 +242,7 @@ export function TaskCardWithActions({ task, compact = false }: Props) {
             })}
             className="inline-flex rounded-full border border-slate-200 px-4 py-2 text-xs font-medium text-slate-700 hover:border-emerald-200 hover:text-emerald-700 disabled:opacity-50 sm:text-sm"
           >
-            Reopen
+            Дахин нээх
           </button>
         ) : null}
 
@@ -249,7 +252,7 @@ export function TaskCardWithActions({ task, compact = false }: Props) {
             onClick={() => setExpanded((v) => !v)}
             className="inline-flex rounded-full border border-slate-200 px-4 py-2 text-xs font-medium text-slate-700 hover:border-emerald-200 hover:text-emerald-700 sm:text-sm"
           >
-            {expanded ? "Hide details" : "Edit details"}
+            {expanded ? "Дэлгэрэнгүйг нуух" : "Дэлгэрэнгүйг засах"}
           </button>
         ) : null}
       </div>
@@ -266,7 +269,7 @@ export function TaskCardWithActions({ task, compact = false }: Props) {
                 htmlFor={`priority-${task.taskKey}`}
                 className="text-xs font-semibold uppercase tracking-wide text-slate-500"
               >
-                Priority
+                Ач холбогдол
               </label>
               <select
                 id={`priority-${task.taskKey}`}
@@ -276,10 +279,10 @@ export function TaskCardWithActions({ task, compact = false }: Props) {
                 }
                 className="mt-1 w-full rounded-xl border border-slate-200 px-3 py-2 text-sm"
               >
-                <option value="low">Low</option>
-                <option value="normal">Normal</option>
-                <option value="high">High</option>
-                <option value="urgent">Urgent</option>
+                <option value="low">Бага</option>
+                <option value="normal">Энгийн</option>
+                <option value="high">Өндөр</option>
+                <option value="urgent">Яаралтай</option>
               </select>
             </div>
             <div>
@@ -287,7 +290,7 @@ export function TaskCardWithActions({ task, compact = false }: Props) {
                 htmlFor={`due-${task.taskKey}`}
                 className="text-xs font-semibold uppercase tracking-wide text-slate-500"
               >
-                Due date
+                Дуусах огноо
               </label>
               <input
                 id={`due-${task.taskKey}`}
@@ -303,7 +306,7 @@ export function TaskCardWithActions({ task, compact = false }: Props) {
               htmlFor={`note-${task.taskKey}`}
               className="text-xs font-semibold uppercase tracking-wide text-slate-500"
             >
-              Admin note
+              Админы тэмдэглэл
             </label>
             <textarea
               id={`note-${task.taskKey}`}
@@ -311,7 +314,7 @@ export function TaskCardWithActions({ task, compact = false }: Props) {
               onChange={(e) => setAdminNote(e.target.value)}
               rows={3}
               className="mt-1 w-full rounded-xl border border-slate-200 px-3 py-2 text-sm"
-              placeholder="Internal note for this task…"
+              placeholder="Энэ ажилд зориулсан дотоод тэмдэглэл…"
             />
           </div>
           <button
@@ -320,7 +323,7 @@ export function TaskCardWithActions({ task, compact = false }: Props) {
             onClick={() => void handleSaveDetails()}
             className="mt-4 inline-flex rounded-full bg-emerald-500 px-5 py-2 text-sm font-semibold text-white hover:bg-emerald-600 disabled:opacity-50"
           >
-            Save task details
+            Хадгалах
           </button>
         </div>
       ) : null}

@@ -25,10 +25,10 @@ export function ZipImportValidationErrors({ validation }: Props) {
         id="zip-validation-errors-heading"
         className="text-base font-semibold text-red-900"
       >
-        Validation алдаа ({formatted.length})
+        Шалгалтын алдаа ({formatted.length})
       </h2>
       <p className="mt-1 text-sm text-red-800">
-        Дараах алдааг зассаны дараа дахин Parse / Validate дарна уу.
+        Дараах алдааг зассны дараа дахин «Шалгах» товчийг дарна уу.
       </p>
       <ol className="mt-4 space-y-3">
         {formatted.map((item, index) => (
@@ -43,7 +43,7 @@ export function ZipImportValidationErrors({ validation }: Props) {
                 {item.expected ? (
                   <div>
                     <dt className="font-semibold uppercase tracking-wide text-red-700">
-                      Expected
+                      Байх ёстой
                     </dt>
                     <dd className="mt-0.5">{item.expected}</dd>
                   </div>
@@ -51,7 +51,7 @@ export function ZipImportValidationErrors({ validation }: Props) {
                 {item.found ? (
                   <div>
                     <dt className="font-semibold uppercase tracking-wide text-red-700">
-                      Found
+                      Байгаа нь
                     </dt>
                     <dd className="mt-0.5">{item.found}</dd>
                   </div>

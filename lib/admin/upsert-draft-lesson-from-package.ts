@@ -172,7 +172,7 @@ async function ensureDraftCourseExists(
     .maybeSingle();
 
   if (error) {
-    return { ok: false, error: `Course lookup failed: ${error.message}` };
+    return { ok: false, error: `Курсийг шалгаж чадсангүй: ${error.message}` };
   }
   if (data) {
     return { ok: true };
@@ -181,7 +181,7 @@ async function ensureDraftCourseExists(
   if (!allowAutoCreate) {
     return {
       ok: false,
-      error: `${courseId} course байхгүй байна. Эхлээд course үүсгэнэ үү.`,
+      error: `${courseId} курс байхгүй байна. Эхлээд курсээ үүсгэнэ үү.`,
     };
   }
 
@@ -205,7 +205,7 @@ async function ensureDraftCourseExists(
     }
     return {
       ok: false,
-      error: `Course not found: ${courseId}. ${insertError.message}`,
+      error: `${courseId} курс олдсонгүй. ${insertError.message}`,
     };
   }
 
@@ -353,7 +353,7 @@ export async function upsertDraftLessonFromPackage(
       resolvedLessonId: packageLessonId,
       packageLessonId,
       created: false,
-      error: "courseId and lessonId are required.",
+      error: "courseId болон lessonId заавал шаардлагатай.",
       warnings,
     };
   }
@@ -375,7 +375,7 @@ export async function upsertDraftLessonFromPackage(
   }
   if (courseReady.created) {
     warnings.push(
-      `Course "${courseId}" was auto-created (${courseTitleFromId(courseId)}).`
+      `"${courseId}" курс автоматаар үүслээ (${courseTitleFromId(courseId)}).`
     );
   }
 
@@ -479,7 +479,7 @@ export async function upsertDraftLessonFromPackage(
 
   if (inserted.resolvedLessonId !== packageLessonId) {
     warnings.push(
-      `Package lessonId "${packageLessonId}" stored in source_note; database id is "${inserted.resolvedLessonId}".`
+      `Багцын lessonId "${packageLessonId}"-ийг source_note дотор хадгаллаа; өгөгдлийн сан дахь id нь "${inserted.resolvedLessonId}".`
     );
   }
 

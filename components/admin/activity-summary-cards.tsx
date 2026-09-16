@@ -8,20 +8,20 @@ type Props = {
 export function ActivitySummaryCards({ summary }: Props) {
   return (
     <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
-      <AdminMetricCard label="Total logs" value={summary.total} />
-      <AdminMetricCard label="Today" value={summary.today} accent="emerald" />
+      <AdminMetricCard label="Нийт бүртгэл" value={summary.total} />
+      <AdminMetricCard label="Өнөөдөр" value={summary.today} accent="emerald" />
       <AdminMetricCard
-        label="Rollback available"
+        label="Буцаах боломжтой"
         value={summary.rollbackAvailable}
         accent="emerald"
       />
       <AdminMetricCard
-        label="Publish/release"
+        label="Нийтлэлт / хувилбар"
         value={summary.publishReleaseActions}
         accent="amber"
       />
-      <AdminMetricCard label="Task actions" value={summary.taskActions} />
-      <AdminMetricCard label="Content actions" value={summary.contentActions} />
+      <AdminMetricCard label="Ажлын үйлдэл" value={summary.taskActions} />
+      <AdminMetricCard label="Контентын үйлдэл" value={summary.contentActions} />
     </div>
   );
 }

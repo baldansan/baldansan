@@ -10,7 +10,7 @@ export function ImportHub() {
   return (
     <div className="flex flex-col gap-8">
       <div>
-        <h1 className="text-2xl font-bold text-slate-900">Lesson Import</h1>
+        <h1 className="text-2xl font-bold text-slate-900">Хичээл оруулах</h1>
         <p className="mt-2 text-sm text-slate-600">
           Хэл бүрийн номын бүтэц өөр тул зөв import төрлөө сонгоно уу.
         </p>
@@ -25,11 +25,11 @@ export function ImportHub() {
             Хятад / HSK хичээл импортлох
           </h2>
           <p className="mt-2 flex-1 text-sm text-slate-600">
-            HSK, subtitle, pinyin, hanzi, vocabulary, quiz, workbook/audio
-            package.
+            HSK багц: хадмал, пиньинь, ханз, үгсийн сан, дасгал, дасгалын ном,
+            аудио.
           </p>
           <Link href="/admin/import/chinese" className={btnPrimary}>
-            Chinese Import
+            Хятад хичээл оруулах
           </Link>
         </article>
 
@@ -41,7 +41,7 @@ export function ImportHub() {
             Бичлэг хадмал импортлох
           </h2>
           <p className="mt-2 flex-1 text-sm text-slate-600">
-            Богино видеоны JSON хадмал (video_id, youtube_id, subtitles, words).
+            Богино бичлэгийн JSON хадмал (video_id, youtube_id, subtitles, words).
           </p>
           <div className="mt-5 flex flex-wrap gap-2">
             <Link href="/admin/import/bichleg" className={btnPrimary}>
@@ -64,17 +64,17 @@ export function ImportHub() {
             Солонгос номын хичээл импортлох
           </h2>
           <p className="mt-2 flex-1 text-sm text-slate-600">
-            한글, romanization, grammar, practice, vocabulary, quiz,
-            audio/images package.
+            Солонгос багц: 한글, латин галиг, дүрэм, дасгал, үгсийн сан, аудио,
+            зураг.
           </p>
           <Link href="/admin/import/korean" className={btnPrimary}>
-            Korean Import
+            Солонгос хичээл оруулах
           </Link>
         </article>
       </div>
 
       <p className="text-sm text-slate-500">
-        Legacy unified ZIP import (auto-detect track):{" "}
+        Хуучин нэгдсэн ZIP оруулах (төрлийг өөрөө таних):{" "}
         <Link
           href="/admin/import/legacy"
           className="font-medium text-emerald-700 hover:text-emerald-800"

@@ -27,7 +27,7 @@ export function LessonDuplicateCard({
   sourceChineseTitle,
 }: Props) {
   const [newId, setNewId] = useState("");
-  const [title, setTitle] = useState(`${sourceTitle} Copy`);
+  const [title, setTitle] = useState(`${sourceTitle} — хуулбар`);
   const [chineseTitle, setChineseTitle] = useState(sourceChineseTitle);
   const [orderIndex, setOrderIndex] = useState("");
   const [busy, setBusy] = useState(false);
@@ -69,7 +69,7 @@ export function LessonDuplicateCard({
     const order = Number(orderIndex);
     if (!newId.trim()) {
       setBusy(false);
-      setError("New lesson ID заавал.");
+      setError("Шинэ хичээлийн ID-г заавал бөглөнө үү.");
       return;
     }
     if (newId.trim() === sourceLessonId) {
@@ -79,12 +79,12 @@ export function LessonDuplicateCard({
     }
     if (!title.trim()) {
       setBusy(false);
-      setError("New title заавал.");
+      setError("Шинэ гарчгийг заавал бөглөнө үү.");
       return;
     }
     if (!Number.isFinite(order) || order < 1) {
       setBusy(false);
-      setError("Order index 1-ээс эхлэх тоо байх ёстой.");
+      setError("Эрэмбийн дугаар 1-ээс эхэлсэн тоо байх ёстой.");
       return;
     }
 
@@ -104,18 +104,18 @@ export function LessonDuplicateCard({
 
     if (result.data) {
       setCreatedId(result.data.id);
-      setSuccess("Lesson амжилттай хууллаа.");
+      setSuccess("Хичээл амжилттай хувилагдлаа.");
     }
   }, [sourceLessonId, newId, title, chineseTitle, orderIndex]);
 
   return (
     <AdminEditorSection
-      title="Duplicate lesson"
-      description="Энэ хичээлийг шинэ draft lesson болгон хуулна. Эх хичээл, user progress, admin profile өөрчлөгдөхгүй."
+      title="Хичээл хувилах"
+      description="Энэ хичээлийг шинэ ноорог хичээл болгон хувилна. Эх хичээл болон суралцагчдын ахиц өөрчлөгдөхгүй."
     >
       <div className="grid gap-4 sm:grid-cols-2">
         <label className="block text-sm font-medium text-slate-700">
-          New lesson ID
+          Шинэ хичээлийн ID
           <input
             className={adminInputClass}
             value={newId}
@@ -124,7 +124,7 @@ export function LessonDuplicateCard({
           />
         </label>
         <label className="block text-sm font-medium text-slate-700">
-          Order index
+          Эрэмбийн дугаар
           <input
             className={adminInputClass}
             type="number"
@@ -134,7 +134,7 @@ export function LessonDuplicateCard({
           />
         </label>
         <label className="block text-sm font-medium text-slate-700 sm:col-span-2">
-          New title
+          Шинэ гарчиг
           <input
             className={adminInputClass}
             value={title}
@@ -142,7 +142,7 @@ export function LessonDuplicateCard({
           />
         </label>
         <label className="block text-sm font-medium text-slate-700 sm:col-span-2">
-          New Chinese title
+          Шинэ хятад гарчиг
           <input
             className={adminInputClass}
             value={chineseTitle}
@@ -172,7 +172,7 @@ export function LessonDuplicateCard({
         onClick={handleDuplicate}
         className="mt-4 rounded-full bg-emerald-500 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-emerald-600 disabled:cursor-not-allowed disabled:bg-slate-200 disabled:text-slate-500"
       >
-        {busy ? "Duplicating…" : "Duplicate as draft"}
+        {busy ? "Хувилж байна…" : "Ноорог болгон хувилах"}
       </button>
     </AdminEditorSection>
   );

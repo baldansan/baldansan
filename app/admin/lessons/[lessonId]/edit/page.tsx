@@ -21,7 +21,7 @@ type Props = {
 
 export async function generateMetadata({ params }: Props) {
   const { lessonId } = await params;
-  return { title: `Edit lesson ${lessonId} — Admin` };
+  return { title: `Хичээл ${lessonId} засах — Удирдлагын хэсэг` };
 }
 
 export default async function AdminEditLessonPage({ params }: Props) {

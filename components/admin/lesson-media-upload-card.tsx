@@ -57,7 +57,7 @@ function UploadSlot({
     const upload = await uploadLessonMediaFile(lesson.id, file, mediaType);
     if (upload.error || !upload.publicUrl) {
       setBusy(false);
-      setError(upload.error ?? "Upload амжилтгүй.");
+      setError(upload.error ?? "Байршуулж чадсангүй.");
       return;
     }
 
@@ -92,7 +92,7 @@ function UploadSlot({
       inputRef.current.value = "";
     }
 
-    setSuccess(`${title} амжилттай upload хийгдлээ.`);
+    setSuccess(`${title} амжилттай байршууллаа.`);
     onUploaded?.();
     router.refresh();
   }, [lesson, mediaType, onUploaded, router, title]);
@@ -110,7 +110,7 @@ function UploadSlot({
             // eslint-disable-next-line @next/next/no-img-element
             <img
               src={trimmedUrl}
-              alt={`${lesson.title} thumbnail`}
+              alt={`${lesson.title} — нүүр зураг`}
               className="max-h-40 rounded-lg border border-slate-200 object-cover"
             />
           ) : mediaType === "audio" ? (
@@ -123,7 +123,7 @@ function UploadSlot({
                 rel="noopener noreferrer"
                 className="text-sm font-medium text-emerald-700 hover:text-emerald-800"
               >
-                Open audio →
+                Аудио нээх →
               </a>
             )
           ) : isDirectVideoUrl(trimmedUrl) ? (
@@ -139,13 +139,13 @@ function UploadSlot({
               rel="noopener noreferrer"
               className="text-sm font-medium text-emerald-700 hover:text-emerald-800"
             >
-              Open video →
+              Бичлэг нээх →
             </a>
           )}
           <p className="mt-2 break-all text-xs text-slate-500">{trimmedUrl}</p>
         </div>
       ) : (
-        <p className="mt-3 text-xs text-slate-400">No file uploaded yet.</p>
+        <p className="mt-3 text-xs text-slate-400">Одоогоор файл байршуулаагүй байна.</p>
       )}
 
       <div className="mt-3 flex flex-col gap-2 sm:flex-row sm:items-center">
@@ -161,7 +161,7 @@ function UploadSlot({
           disabled={busy}
           className="rounded-full bg-emerald-500 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-emerald-600 disabled:opacity-60"
         >
-          {busy ? "Uploading…" : `Upload ${title.toLowerCase()}`}
+          {busy ? "Байршуулж байна…" : `${title} байршуулах`}
         </button>
       </div>
 
@@ -174,32 +174,33 @@ export function LessonMediaUploadCard({ lesson, onUploaded }: Props) {
   return (
     <section className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:p-6">
       <h2 className="text-base font-semibold text-slate-900">
-        Upload media files
+        Медиа файл байршуулах
       </h2>
       <p className="mt-1 text-sm text-slate-600">
-        Supabase Storage bucket <code className="text-xs">lesson-media</code>.
-        Public URLs are saved to lesson media fields automatically.
+        Файлууд Supabase Storage-ийн{" "}
+        <code className="text-xs">lesson-media</code> хадгалалтад орно. Нээлттэй
+        холбоос нь хичээлийн медиа талбарт автоматаар хадгалагдана.
       </p>
 
       <div className="mt-4 grid gap-4 lg:grid-cols-1">
         <UploadSlot
           lesson={lesson}
           mediaType="thumbnail"
-          title="Thumbnail"
+          title="Нүүр зураг"
           currentUrl={lesson.thumbnailUrl}
           onUploaded={onUploaded}
         />
         <UploadSlot
           lesson={lesson}
           mediaType="audio"
-          title="Audio"
+          title="Аудио"
           currentUrl={lesson.audioUrl}
           onUploaded={onUploaded}
         />
         <UploadSlot
           lesson={lesson}
           mediaType="video"
-          title="Video"
+          title="Бичлэг"
           currentUrl={lesson.videoUrl}
           onUploaded={onUploaded}
         />

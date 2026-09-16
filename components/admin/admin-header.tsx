@@ -8,9 +8,9 @@ type Props = {
 };
 
 export function AdminHeader({
-  title = "Admin",
+  title = "Админ",
   backHref = "/admin",
-  backLabel = "← Admin",
+  backLabel = "← Админ",
 }: Props) {
   return (
     <header className="mx-auto flex w-full max-w-5xl flex-col gap-3 px-4 py-4 sm:flex-row sm:items-center sm:justify-between sm:px-6">
@@ -29,49 +29,49 @@ export function AdminHeader({
           href="/admin/b2b"
           className="text-slate-600 transition-colors hover:text-emerald-600"
         >
-          B2B CRM
+          Сургууль, байгууллага
         </Link>
         <Link
           href="/admin/activity"
           className="text-slate-600 transition-colors hover:text-emerald-600"
         >
-          Activity
+          Үйлдлийн бүртгэл
         </Link>
         <Link
           href="/admin/system-check"
           className="text-slate-600 transition-colors hover:text-emerald-600"
         >
-          System check
+          Системийн шалгалт
         </Link>
         <Link
           href="/admin/final-audit"
           className="text-slate-600 transition-colors hover:text-emerald-600"
         >
-          Final Audit
+          Эцсийн үзлэг
         </Link>
         <Link
           href="/admin/tasks"
           className="text-slate-600 transition-colors hover:text-emerald-600"
         >
-          Tasks
+          Ажлууд
         </Link>
         <Link
           href="/admin/lesson-builder"
           className="text-slate-600 transition-colors hover:text-emerald-600"
         >
-          Lesson Builder
+          Хичээл угсрах
         </Link>
         <Link
           href="/admin/prompts"
           className="text-slate-600 transition-colors hover:text-emerald-600"
         >
-          Prompts
+          Prompt-ууд
         </Link>
         <Link
           href="/admin/analytics"
           className="text-slate-600 transition-colors hover:text-emerald-600"
         >
-          Analytics
+          Тайлан
         </Link>
         <Link
           href="/admin/lessons"

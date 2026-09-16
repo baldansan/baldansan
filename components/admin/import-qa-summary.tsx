@@ -29,9 +29,9 @@ function StatusBadge({ status }: { status: ImportQaStatus }) {
     missing_content: "bg-slate-100 text-slate-600 ring-slate-200",
   };
   const labels: Record<ImportQaStatus, string> = {
-    ready: "Ready to publish",
-    needs_review: "Needs review",
-    missing_content: "Missing content",
+    ready: "Нийтлэхэд бэлэн",
+    needs_review: "Шалгах шаардлагатай",
+    missing_content: "Контент дутуу",
   };
   return (
     <span
@@ -64,7 +64,9 @@ export function ImportQaSummary({
     setLoading(false);
 
     if (subs.error || vocab.error || quiz.error) {
-      setLoadError(subs.error ?? vocab.error ?? quiz.error ?? "QA уншихад алдаа.");
+      setLoadError(
+        subs.error ?? vocab.error ?? quiz.error ?? "Шалгалтыг уншихад алдаа гарлаа."
+      );
       return;
     }
 
@@ -103,11 +105,11 @@ export function ImportQaSummary({
 
   return (
     <AdminEditorSection
-      title="Import QA summary"
-      description={`Publish readiness: ≥${MIN_VOCABULARY_FOR_PUBLISH} vocabulary, ≥${MIN_QUIZ_FOR_PUBLISH} quiz, no answer mismatches, Mongolian complete.`}
+      title="Оруулсан контентын чанарын шалгалт"
+      description={`Нийтлэхэд бэлэн болох нөхцөл: ${MIN_VOCABULARY_FOR_PUBLISH}-аас доошгүй үг, ${MIN_QUIZ_FOR_PUBLISH}-аас доошгүй дасгал, хариулт зөрөхгүй, монгол орчуулга бүрэн.`}
     >
       {loading ? (
-        <p className="text-sm text-slate-500">QA шалгаж байна…</p>
+        <p className="text-sm text-slate-500">Шалгаж байна…</p>
       ) : loadError ? (
         <p className="text-sm text-red-800">{loadError}</p>
       ) : report ? (
@@ -116,33 +118,34 @@ export function ImportQaSummary({
 
           <ul className="grid gap-2 text-sm text-slate-700 sm:grid-cols-2">
             <li>
-              Metadata: {report.hasMetadata ? "✓ present" : "✗ incomplete"}
+              Ерөнхий мэдээлэл: {report.hasMetadata ? "✓ бүрэн" : "✗ дутуу"}
             </li>
-            <li>Subtitles: {report.subtitleCount}</li>
-            <li>Vocabulary: {report.vocabularyCount}</li>
-            <li>Quiz questions: {report.quizCount}</li>
+            <li>Хадмал: {report.subtitleCount}</li>
+            <li>Үгсийн сан: {report.vocabularyCount}</li>
+            <li>Дасгалын асуулт: {report.quizCount}</li>
             <li>
-              Missing pinyin: subtitles {report.missingPinyinSubtitleCount}, vocab{" "}
+              Пиньинь дутуу: хадмал {report.missingPinyinSubtitleCount}, үг{" "}
               {report.missingPinyinVocabCount}
             </li>
             <li>
-              Missing Mongolian: subtitles {report.missingMongolianSubtitleCount},
-              vocab {report.missingMongolianVocabCount}
+              Монгол орчуулга дутуу: хадмал{" "}
+              {report.missingMongolianSubtitleCount}, үг{" "}
+              {report.missingMongolianVocabCount}
             </li>
-            <li>Quiz answer mismatches: {report.quizAnswerMismatchCount}</li>
-            <li>Empty examples: {report.emptyExampleCount}</li>
+            <li>Хариулт зөрсөн дасгал: {report.quizAnswerMismatchCount}</li>
+            <li>Хоосон жишээ: {report.emptyExampleCount}</li>
             <li>
-              Duplicate vocabulary:{" "}
+              Давхардсан үг:{" "}
               {report.duplicateVocabularyChinese.length > 0
                 ? report.duplicateVocabularyChinese.join(", ")
-                : "none"}
+                : "алга"}
             </li>
           </ul>
 
           {Object.keys(report.hskDistribution).length > 0 ? (
             <div>
               <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">
-                HSK distribution
+                HSK түвшний хуваарилалт
               </p>
               <div className="mt-2 flex flex-wrap gap-2">
                 {Object.entries(report.hskDistribution).map(([level, count]) => (
@@ -159,7 +162,7 @@ export function ImportQaSummary({
 
           {report.errors.length > 0 ? (
             <div className="rounded-xl bg-red-50 px-4 py-3 text-sm text-red-800 ring-1 ring-red-200">
-              <p className="font-semibold">Errors</p>
+              <p className="font-semibold">Алдаа</p>
               <ul className="mt-2 list-inside list-disc">
                 {report.errors.map((msg) => (
                   <li key={msg}>{msg}</li>
@@ -170,7 +173,7 @@ export function ImportQaSummary({
 
           {report.warnings.length > 0 ? (
             <div className="rounded-xl bg-amber-50 px-4 py-3 text-sm text-amber-900 ring-1 ring-amber-200">
-              <p className="font-semibold">Warnings</p>
+              <p className="font-semibold">Анхааруулга</p>
               <ul className="mt-2 max-h-40 list-inside list-disc overflow-auto">
                 {report.warnings.map((msg) => (
                   <li key={msg}>{msg}</li>

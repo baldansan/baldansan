@@ -52,7 +52,7 @@ export function LessonExportCard({ lessonId }: Props) {
     const payloadResult = await getLessonExportPayload(lessonId);
     if (payloadResult.error || !payloadResult.data) {
       setBusy(false);
-      setError(payloadResult.error ?? "Export амжилтгүй.");
+      setError(payloadResult.error ?? "Гаргаж авахад алдаа гарлаа.");
       return;
     }
 
@@ -74,7 +74,7 @@ export function LessonExportCard({ lessonId }: Props) {
         quizQuestions: payloadResult.data.quizQuestions.length,
       },
     });
-    setSuccess("Export JSON бэлэн боллоо.");
+    setSuccess("JSON нөөц хуулбар бэлэн боллоо.");
   }, [lessonId, applyPayload]);
 
   const handleCopy = useCallback(async () => {
@@ -82,14 +82,14 @@ export function LessonExportCard({ lessonId }: Props) {
     setSuccess(null);
 
     if (!jsonText.trim()) {
-      setError("Эхлээд Generate export JSON дарна уу.");
+      setError("Эхлээд «JSON нөөц үүсгэх» товчийг дарна уу.");
       return;
     }
 
     try {
       if (navigator.clipboard?.writeText) {
         await navigator.clipboard.writeText(jsonText);
-        setSuccess("JSON clipboard руу хууллаа.");
+        setSuccess("JSON хуулагдлаа.");
         return;
       }
     } catch {
@@ -104,10 +104,10 @@ export function LessonExportCard({ lessonId }: Props) {
       textarea.select();
       try {
         document.execCommand("copy");
-        setSuccess("JSON clipboard руу хууллаа.");
+        setSuccess("JSON хуулагдлаа.");
         return;
       } catch {
-        setError("Clipboard ашиглах боломжгүй. Textarea-аас гараар хуулна уу.");
+        setError("Хуулах боломжгүй байна. Доорх талбараас гараар хуулна уу.");
       }
     }
   }, [jsonText, lessonId]);
@@ -117,7 +117,7 @@ export function LessonExportCard({ lessonId }: Props) {
     setSuccess(null);
 
     if (!jsonText.trim()) {
-      setError("Эхлээд Generate export JSON дарна уу.");
+      setError("Эхлээд «JSON нөөц үүсгэх» товчийг дарна уу.");
       return;
     }
 
@@ -140,25 +140,25 @@ export function LessonExportCard({ lessonId }: Props) {
 
   return (
     <AdminEditorSection
-      title="Export lesson backup"
-      description="Энэ хичээлийн metadata, subtitle, vocabulary, quiz-г JSON backup болгон хуулна. Bulk import-д content array-уудыг paste хийж болно (`lesson` блокийг import үл тооно)."
+      title="Хичээлийн нөөц хуулбар гаргах"
+      description="Энэ хичээлийн ерөнхий мэдээлэл, хадмал, үгсийн сан, дасгалыг JSON нөөц хуулбар болгон гаргана. Бөөнөөр оруулах хэсэгт агуулгын жагсаалтуудыг наан ашиглаж болно (`lesson` хэсгийг тооцохгүй)."
     >
       {stats ? (
         <div className="flex flex-wrap gap-2 text-sm">
           <span className="rounded-full bg-slate-100 px-3 py-1 ring-1 ring-slate-200">
-            Subtitles: {stats.subtitles}
+            Хадмал: {stats.subtitles}
           </span>
           <span className="rounded-full bg-slate-100 px-3 py-1 ring-1 ring-slate-200">
-            Vocabulary: {stats.vocabulary}
+            Үгсийн сан: {stats.vocabulary}
           </span>
           <span className="rounded-full bg-slate-100 px-3 py-1 ring-1 ring-slate-200">
-            Quiz: {stats.quizQuestions}
+            Дасгал: {stats.quizQuestions}
           </span>
           <span className="rounded-full bg-emerald-50 px-3 py-1 text-emerald-800 ring-1 ring-emerald-200">
-            Status: {stats.status}
+            Төлөв: {stats.status}
           </span>
           <span className="rounded-full bg-slate-100 px-3 py-1 text-xs text-slate-600 ring-1 ring-slate-200">
-            Exported: {formatMongoliaDateTimeWithLabel(stats.exportedAt)}
+            Гаргасан: {formatMongoliaDateTimeWithLabel(stats.exportedAt)}
           </span>
         </div>
       ) : null}
@@ -170,7 +170,7 @@ export function LessonExportCard({ lessonId }: Props) {
           onClick={handleGenerate}
           className="rounded-full bg-emerald-500 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-emerald-600 disabled:cursor-not-allowed disabled:bg-slate-200 disabled:text-slate-500"
         >
-          {busy ? "Generating…" : "Generate export JSON"}
+          {busy ? "Үүсгэж байна…" : "JSON нөөц үүсгэх"}
         </button>
         <button
           type="button"
@@ -178,7 +178,7 @@ export function LessonExportCard({ lessonId }: Props) {
           onClick={handleCopy}
           className="rounded-full border border-emerald-200 bg-emerald-50 px-5 py-2.5 text-sm font-semibold text-emerald-800 transition-colors hover:bg-emerald-100 disabled:opacity-50"
         >
-          Copy JSON
+          JSON хуулах
         </button>
         <button
           type="button"
@@ -186,25 +186,25 @@ export function LessonExportCard({ lessonId }: Props) {
           onClick={handleDownload}
           className="rounded-full border border-slate-200 px-5 py-2.5 text-sm font-medium text-slate-700 transition-colors hover:border-emerald-200 hover:text-emerald-700 disabled:opacity-50"
         >
-          Download JSON
+          JSON татаж авах
         </button>
         <button
           type="button"
           onClick={handleClear}
           className="rounded-full border border-slate-200 px-5 py-2.5 text-sm font-medium text-slate-700 transition-colors hover:border-emerald-200 hover:text-emerald-700"
         >
-          Clear
+          Цэвэрлэх
         </button>
       </div>
 
       <label className="mt-4 block text-sm font-medium text-slate-700">
-        Export JSON
+        Гаргасан JSON
         <textarea
           id={`lesson-export-json-${lessonId}`}
           className={`${adminInputClass} mt-1 min-h-[220px] font-mono text-xs`}
           value={jsonText}
           readOnly
-          placeholder="Generate export JSON дарсны дараа энд харагдана."
+          placeholder="«JSON нөөц үүсгэх» товчийг дарсны дараа энд харагдана."
           rows={12}
         />
       </label>

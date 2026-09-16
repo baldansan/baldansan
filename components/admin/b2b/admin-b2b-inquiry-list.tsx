@@ -17,6 +17,34 @@ const STATUS_OPTIONS: B2BInquiryStatus[] = [
   "archived",
 ];
 
+/** Зөвхөн дэлгэцэнд харуулах нэр — өгөгдлийн утгыг өөрчлөхгүй. */
+const STATUS_LABELS: Record<string, string> = {
+  new: "Шинэ",
+  contacted: "Холбоо барьсан",
+  demo_scheduled: "Танилцуулга товлосон",
+  proposal_sent: "Санал илгээсэн",
+  pilot: "Туршилт",
+  won: "Гэрээ байгуулсан",
+  lost: "Татгалзсан",
+  archived: "Архивласан",
+};
+
+const ORG_TYPE_LABELS: Record<string, string> = {
+  training_center: "Сургалтын төв",
+  school: "Сургууль",
+  university: "Их сургууль",
+  teacher: "Багш (хувь хүн)",
+  company: "Компани",
+  other: "Бусад",
+};
+
+const PACKAGE_LABELS: Record<string, string> = {
+  teacher: "Багшийн багц",
+  school: "Сургуулийн багц",
+  training_center: "Сургалтын төвийн багц",
+  custom: "Тусгай багц",
+};
+
 export function AdminB2BInquiryList() {
   const [inquiries, setInquiries] = useState<B2BInquiry[]>([]);
   const [loading, setLoading] = useState(true);
@@ -56,16 +84,16 @@ export function AdminB2BInquiryList() {
   );
 
   if (loading) {
-    return <p className="text-sm text-slate-600">Loading inquiries…</p>;
+    return <p className="text-sm text-slate-600">Ачаалж байна…</p>;
   }
 
   return (
     <div className="flex flex-col gap-6">
       <section>
         <Link href="/admin/b2b" className="text-sm text-slate-600 hover:text-emerald-600">
-          ← B2B CRM
+          ← Сургууль, байгууллага
         </Link>
-        <h1 className="mt-2 text-2xl font-bold tracking-tight">Inquiries</h1>
+        <h1 className="mt-2 text-2xl font-bold tracking-tight">Ирсэн хүсэлтүүд</h1>
         {error ? (
           <p className="mt-2 rounded-lg bg-red-50 px-3 py-2 text-sm text-red-800">
             {error}
@@ -77,7 +105,7 @@ export function AdminB2BInquiryList() {
         <input
           value={search}
           onChange={(e) => setSearch(e.target.value)}
-          placeholder="Search organization, contact, email…"
+          placeholder="Байгууллага, холбоо барих хүн, и-мэйлээр хайх…"
           className="rounded-lg border border-slate-200 px-3 py-2 text-sm sm:min-w-[240px]"
         />
         <select
@@ -85,10 +113,10 @@ export function AdminB2BInquiryList() {
           onChange={(e) => setStatusFilter(e.target.value)}
           className="rounded-lg border border-slate-200 px-3 py-2 text-sm"
         >
-          <option value="all">All statuses</option>
+          <option value="all">Бүх төлөв</option>
           {STATUS_OPTIONS.map((s) => (
             <option key={s} value={s}>
-              {s}
+              {STATUS_LABELS[s] ?? s}
             </option>
           ))}
         </select>
@@ -97,10 +125,10 @@ export function AdminB2BInquiryList() {
           onChange={(e) => setTypeFilter(e.target.value)}
           className="rounded-lg border border-slate-200 px-3 py-2 text-sm"
         >
-          <option value="all">All types</option>
+          <option value="all">Бүх төрөл</option>
           {orgTypes.map((t) => (
             <option key={t} value={t}>
-              {t}
+              {ORG_TYPE_LABELS[t] ?? t}
             </option>
           ))}
         </select>
@@ -110,12 +138,12 @@ export function AdminB2BInquiryList() {
         <table className="w-full min-w-[720px] text-left text-sm">
           <thead className="bg-slate-50 text-xs uppercase text-slate-500">
             <tr>
-              <th className="px-4 py-3">Organization</th>
-              <th className="px-4 py-3">Contact</th>
-              <th className="px-4 py-3">Type</th>
-              <th className="px-4 py-3">Package</th>
-              <th className="px-4 py-3">Status</th>
-              <th className="px-4 py-3">Created</th>
+              <th className="px-4 py-3">Байгууллага</th>
+              <th className="px-4 py-3">Холбоо барих</th>
+              <th className="px-4 py-3">Төрөл</th>
+              <th className="px-4 py-3">Багц</th>
+              <th className="px-4 py-3">Төлөв</th>
+              <th className="px-4 py-3">Ирсэн огноо</th>
               <th className="px-4 py-3"></th>
             </tr>
           </thead>
@@ -132,12 +160,18 @@ export function AdminB2BInquiryList() {
                   </div>
                 </td>
                 <td className="px-4 py-3 text-slate-600">
-                  {i.organizationType ?? "—"}
+                  {i.organizationType
+                    ? ORG_TYPE_LABELS[i.organizationType] ?? i.organizationType
+                    : "—"}
                 </td>
                 <td className="px-4 py-3 text-slate-600">
-                  {i.interestedPackage ?? "—"}
+                  {i.interestedPackage
+                    ? PACKAGE_LABELS[i.interestedPackage] ?? i.interestedPackage
+                    : "—"}
                 </td>
-                <td className="px-4 py-3 text-slate-600">{i.status}</td>
+                <td className="px-4 py-3 text-slate-600">
+                  {STATUS_LABELS[i.status] ?? i.status}
+                </td>
                 <td className="px-4 py-3 text-xs text-slate-500">
                   {formatMongoliaDateTimeWithLabel(i.createdAt)}
                 </td>
@@ -146,7 +180,7 @@ export function AdminB2BInquiryList() {
                     href={`/admin/b2b/inquiries/${i.id}`}
                     className="text-emerald-600 hover:text-emerald-800"
                   >
-                    View
+                    Харах
                   </Link>
                 </td>
               </tr>
@@ -155,7 +189,9 @@ export function AdminB2BInquiryList() {
         </table>
       </div>
       {filtered.length === 0 ? (
-        <p className="text-sm text-slate-600">No inquiries match filters.</p>
+        <p className="text-sm text-slate-600">
+          Шүүлтэд тохирох хүсэлт олдсонгүй.
+        </p>
       ) : null}
     </div>
   );

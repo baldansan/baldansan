@@ -86,7 +86,7 @@ export function LessonFormFields({
   return (
     <div className="grid gap-4 sm:grid-cols-2">
       <label className="block text-sm font-medium text-slate-700">
-        Lesson ID
+        Хичээлийн ID
         <input
           className={inputClass}
           value={values.id}
@@ -96,7 +96,7 @@ export function LessonFormFields({
         />
       </label>
       <label className="block text-sm font-medium text-slate-700">
-        Course ID
+        Курсын ID
         <input
           className={inputClass}
           value={values.courseId}
@@ -106,7 +106,7 @@ export function LessonFormFields({
         />
       </label>
       <label className="block text-sm font-medium text-slate-700 sm:col-span-2">
-        Title
+        Гарчиг
         <input
           className={inputClass}
           value={values.title}
@@ -115,7 +115,7 @@ export function LessonFormFields({
         />
       </label>
       <label className="block text-sm font-medium text-slate-700 sm:col-span-2">
-        Chinese title
+        Хятад гарчиг
         <input
           className={inputClass}
           value={values.chineseTitle}
@@ -124,7 +124,7 @@ export function LessonFormFields({
         />
       </label>
       <label className="block text-sm font-medium text-slate-700 sm:col-span-2">
-        Subtitle
+        Дэд гарчиг
         <input
           className={inputClass}
           value={values.subtitle}
@@ -133,7 +133,7 @@ export function LessonFormFields({
         />
       </label>
       <label className="block text-sm font-medium text-slate-700 sm:col-span-2">
-        Description
+        Тайлбар
         <textarea
           className={`${inputClass} min-h-[88px]`}
           value={values.description}
@@ -143,17 +143,17 @@ export function LessonFormFields({
         />
       </label>
       <label className="block text-sm font-medium text-slate-700">
-        Duration
+        Үргэлжлэх хугацаа
         <input
           className={inputClass}
           value={values.duration}
           disabled={readOnly}
           onChange={(e) => update("duration", e.target.value)}
-          placeholder="8 min"
+          placeholder="8 мин"
         />
       </label>
       <label className="block text-sm font-medium text-slate-700">
-        Status
+        Төлөв
         <select
           className={inputClass}
           value={values.status}
@@ -162,14 +162,14 @@ export function LessonFormFields({
             update("status", e.target.value as AdminContentStatus)
           }
         >
-          <option value="draft">draft</option>
-          <option value="available">available</option>
-          <option value="archived">archived</option>
+          <option value="draft">Ноорог</option>
+          <option value="available">Нийтлэгдсэн</option>
+          <option value="archived">Архивласан</option>
         </select>
       </label>
       {showOrderIndex ? (
         <label className="block text-sm font-medium text-slate-700">
-          Order index
+          Дарааллын дугаар
           <input
             className={inputClass}
             type="number"
@@ -189,7 +189,7 @@ export function LessonFormFields({
       {!hideCounts ? (
         <>
       <label className="block text-sm font-medium text-slate-700">
-        Vocabulary count
+        Үгсийн тоо
         <input
           className={inputClass}
           type="number"
@@ -200,7 +200,7 @@ export function LessonFormFields({
         />
       </label>
       <label className="block text-sm font-medium text-slate-700">
-        Quiz count
+        Дасгалын тоо
         <input
           className={inputClass}
           type="number"

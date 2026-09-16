@@ -10,7 +10,7 @@ export function PromptLibraryView() {
     <div className="flex flex-col gap-8">
       <section>
         <h1 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
-          Prompt library
+          Prompt-ын сан
         </h1>
         <p className="mt-2 text-sm text-slate-600">
           Хичээл үүсгэх, засах, сайжруулахад ашиглах copy-ready prompt-ууд.
@@ -19,10 +19,10 @@ export function PromptLibraryView() {
       </section>
 
       <div className="rounded-xl bg-amber-50 px-4 py-3 text-sm text-amber-900 ring-1 ring-amber-200">
-        <p className="font-semibold">Workflow</p>
+        <p className="font-semibold">Ажлын урсгал</p>
         <p className="mt-1">
-          Analytics issue → Copy prompt → ChatGPT JSON → Bulk import → QA →
-          Preview → Backup → Publish
+          Тайлангаас асуудал олох → Prompt хуулах → ChatGPT JSON → Бөөнөөр
+          оруулах → Чанарын шалгалт → Урьдчилж харах → Нөөц хуулбар → Нийтлэх
         </p>
       </div>
 

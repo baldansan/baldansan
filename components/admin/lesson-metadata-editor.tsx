@@ -89,7 +89,7 @@ export function LessonMetadataEditor({
       return;
     }
 
-    setSuccess("Metadata хадгалагдлаа.");
+    setSuccess("Ерөнхий мэдээлэл хадгалагдлаа.");
     onSaved?.();
     router.refresh();
   }, [lesson.id, values, onSaved, router]);
@@ -117,14 +117,14 @@ export function LessonMetadataEditor({
       onCountsRefreshed?.(result.data.vocabularyCount, result.data.quizCount);
     }
 
-    setSuccess("Counts шинэчлэгдлээ.");
+    setSuccess("Тоо шинэчлэгдлээ.");
     router.refresh();
   }, [lesson.id, onCountsRefreshed, router]);
 
   return (
     <AdminEditorSection
-      title="Lesson metadata"
-      description="Гарчиг, тайлбар, статус, order index, count-уудыг Supabase-д хадгална."
+      title="Хичээлийн ерөнхий мэдээлэл"
+      description="Гарчиг, тайлбар, төлөв, дарааллын дугаар, тоонуудыг хадгална."
     >
       <LessonFormFields
         values={values}
@@ -135,22 +135,22 @@ export function LessonMetadataEditor({
 
       {vocabMismatch ? (
         <p className="mt-4 rounded-xl bg-amber-50 px-4 py-3 text-sm text-amber-900 ring-1 ring-amber-200">
-          Vocabulary count metadata actual count-тай зөрж байна. (DB: {vocabMeta}{" "}
+          Үгсийн тоо бодит тоотой зөрж байна. (Бүртгэлд: {vocabMeta}{" "}
           · бодит: {vocabActual})
         </p>
       ) : null}
 
       {quizMismatch ? (
         <p className="mt-3 rounded-xl bg-amber-50 px-4 py-3 text-sm text-amber-900 ring-1 ring-amber-200">
-          Quiz count metadata actual count-тай зөрж байна. (DB: {quizMeta} · бодит:{" "}
+          Дасгалын тоо бодит тоотой зөрж байна. (Бүртгэлд: {quizMeta} · бодит:{" "}
           {quizActual})
         </p>
       ) : null}
 
       {statusAvailableWarning ? (
         <p className="mt-3 rounded-xl bg-amber-50 px-4 py-3 text-sm text-amber-900 ring-1 ring-amber-200">
-          Available болгохоос өмнө subtitle, vocabulary, quiz бүрэн эсэхийг
-          шалгана уу. Publishing controls дээр илүү хатуу шалгалт хийнэ.
+          Нийтлэхээс өмнө хадмал, үгсийн сан, дасгал бүрэн эсэхийг шалгана уу.
+          Нийтлэх хэсэгт илүү нарийн шалгалт хийгдэнэ.
         </p>
       ) : null}
 
@@ -165,7 +165,7 @@ export function LessonMetadataEditor({
           onClick={handleSave}
           className="rounded-full bg-emerald-500 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-emerald-600 disabled:cursor-not-allowed disabled:bg-slate-200 disabled:text-slate-500"
         >
-          {busy === "save" ? "Saving…" : "Save metadata"}
+          {busy === "save" ? "Хадгалж байна…" : "Мэдээллийг хадгалах"}
         </button>
         <button
           type="button"
@@ -173,7 +173,7 @@ export function LessonMetadataEditor({
           onClick={handleRefreshCounts}
           className="rounded-full border border-emerald-200 bg-emerald-50 px-5 py-2.5 text-sm font-semibold text-emerald-800 transition-colors hover:bg-emerald-100 disabled:opacity-50"
         >
-          {busy === "refresh" ? "Refreshing…" : "Refresh counts"}
+          {busy === "refresh" ? "Шинэчилж байна…" : "Тоог шинэчлэх"}
         </button>
         <Link
           href={lessonPreviewPath(lesson.id, {
@@ -181,13 +181,13 @@ export function LessonMetadataEditor({
           })}
           className="inline-flex justify-center rounded-full border border-slate-200 px-5 py-2.5 text-sm font-medium text-slate-700 transition-colors hover:border-emerald-200 hover:text-emerald-700"
         >
-          Preview lesson
+          Хичээлийг урьдчилж харах
         </Link>
         <Link
           href="/admin/lessons"
           className="inline-flex justify-center rounded-full border border-slate-200 px-5 py-2.5 text-sm font-medium text-slate-700 transition-colors hover:border-emerald-200 hover:text-emerald-700"
         >
-          ← Content QA
+          ← Хичээлүүд рүү буцах
         </Link>
       </div>
     </AdminEditorSection>

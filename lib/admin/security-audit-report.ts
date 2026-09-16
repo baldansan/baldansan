@@ -91,14 +91,14 @@ export function buildSecurityAuditMarkdown(
 ): string {
   const exported = buildSecurityAuditReport(report);
   const lines: string[] = [
-    "# Buunduu Surtsgaay — Security / RLS Audit Report",
+    "# Бөөндөө Сурцгаая — Аюулгүй байдал / RLS-ийн үзлэгийн тайлан",
     "",
     `- **Production URL:** ${exported.productionUrl}`,
     `- **Generated:** ${exported.generatedAt}`,
     `- **Launch recommendation:** ${exported.launchRecommendation}`,
     `- **Reason:** ${exported.launchRecommendationReason}`,
     "",
-    "## Summary",
+    "## Товч дүн",
     "",
     "| Result | Count |",
     "|--------|-------|",
@@ -111,7 +111,7 @@ export function buildSecurityAuditMarkdown(
   ];
 
   if (exported.summary.blockers.length > 0) {
-    lines.push("## Launch blockers (fail)", "");
+    lines.push("## Гаргалтыг зогсоох асуудлууд", "");
     for (const item of exported.summary.blockers) {
       lines.push(`- **${item.label}** — ${item.detail ?? ""}`);
     }
@@ -119,7 +119,7 @@ export function buildSecurityAuditMarkdown(
   }
 
   if (exported.summary.warnings.length > 0) {
-    lines.push("## Warnings", "");
+    lines.push("## Анхааруулга", "");
     for (const item of exported.summary.warnings) {
       lines.push(`- **${item.label}** — ${item.detail ?? ""}`);
     }
@@ -129,7 +129,7 @@ export function buildSecurityAuditMarkdown(
   const groups = [...new Set(report.checks.map((c) => c.group))];
   for (const group of groups) {
     lines.push(`## ${group.replace(/_/g, " ")}`, "");
-    lines.push("| Check | Result | Details |");
+    lines.push("| Шалгалт | Үр дүн | Тайлбар |");
     lines.push("|-------|--------|---------|");
     for (const item of report.checks.filter((c) => c.group === group)) {
       const detail = (item.detail ?? "—").replace(/\|/g, "\\|").replace(/\n/g, " ");

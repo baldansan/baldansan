@@ -15,7 +15,7 @@ import { getClassroomAdminSummary } from "@/lib/supabase/admin-classroom-stats";
 export const dynamic = "force-dynamic";
 
 export const metadata = {
-  title: "Learning analytics — Admin",
+  title: "Суралцахуйн тайлан — Удирдлагын хэсэг",
 };
 
 export default async function AdminAnalyticsPage() {
@@ -41,18 +41,18 @@ export default async function AdminAnalyticsPage() {
   return (
     <div className="flex flex-col gap-6">
       <AdminPageHeader
-        title="Learning Analytics"
-        description="Хичээл бүрийн суралцагчийн ахиц, quiz оноо, vocabulary engagement-г харна."
+        title="Суралцахуйн тайлан"
+        description="Хичээл бүрийн суралцагчийн ахиц, дасгалын оноо, үгсийн сангийн ашиглалтыг харна."
         actions={
           <Link href="/admin/tasks" className="admin-btn-secondary">
-            View tasks
+            Ажлууд харах
           </Link>
         }
       />
 
       {overview.warnings.length > 0 ? (
         <div className="admin-panel border-amber-200 bg-amber-50 p-4 text-sm text-amber-900">
-          <p className="font-semibold">Analytics notes</p>
+          <p className="font-semibold">Тайлангийн тэмдэглэл</p>
           <ul className="mt-2 list-inside list-disc">
             {overview.warnings.map((warning) => (
               <li key={warning}>{warning}</li>
@@ -62,56 +62,56 @@ export default async function AdminAnalyticsPage() {
       ) : null}
 
       <section>
-        <h2 className="admin-section-title">Overview</h2>
+        <h2 className="admin-section-title">Ерөнхий байдал</h2>
         <div className="mt-3 grid grid-cols-2 gap-3 sm:grid-cols-5">
           <AnalyticsMetricCard
-            label="Total lessons"
+            label="Нийт хичээл"
             value={overview.totalLessons}
           />
           <AnalyticsMetricCard
-            label="Started lessons"
+            label="Эхэлсэн хичээл"
             value={overview.totalStarted}
-            hint="Unique learners started"
+            hint="Эхэлсэн суралцагчийн тоо"
           />
           <AnalyticsMetricCard
-            label="Completed"
+            label="Дууссан"
             value={overview.totalCompleted}
           />
           <AnalyticsMetricCard
-            label="Quiz attempts"
+            label="Дасгалын оролдлого"
             value={overview.totalQuizAttempts}
           />
-          <AnalyticsMetricCard label="Avg quiz score" value={avgScore} />
+          <AnalyticsMetricCard label="Дасгалын дундаж оноо" value={avgScore} />
         </div>
       </section>
 
       <section className="admin-panel p-5 sm:p-6">
         <div className="flex flex-wrap items-start justify-between gap-3">
           <div>
-            <h2 className="admin-section-title">Task center</h2>
+            <h2 className="admin-section-title">Ажлын төв</h2>
             <p className="admin-section-desc">
-              Analytics insights also generate admin tasks (low scores, difficult
-              questions, low vocabulary engagement).
+              Тайлангийн дүн шинжилгээнээс админд хийх ажил автоматаар үүснэ
+              (бага оноо, хүнд асуулт, үгсийн сан бага ашиглагдсан).
             </p>
           </div>
           <Link href="/admin/tasks" className="admin-btn-primary">
-            View generated tasks
+            Үүссэн ажлуудыг харах
           </Link>
         </div>
         {quickSummary.difficultQuestionsCount > 0 ||
         quickSummary.wordsNeverLearnedCount > 0 ? (
           <p className="mt-3 text-sm text-amber-800">
             {quickSummary.difficultQuestionsCount > 0
-              ? `${quickSummary.difficultQuestionsCount} difficult question(s). `
+              ? `Хүнд асуулт ${quickSummary.difficultQuestionsCount}. `
               : ""}
             {quickSummary.wordsNeverLearnedCount > 0
-              ? `${quickSummary.wordsNeverLearnedCount} word(s) never learned. `
+              ? `Сураагүй үг ${quickSummary.wordsNeverLearnedCount}. `
               : ""}
             <Link
               href="/admin/tasks"
               className="font-semibold text-emerald-700 hover:text-emerald-800"
             >
-              Open task center →
+              Ажлын төв нээх →
             </Link>
           </p>
         ) : null}
@@ -126,31 +126,31 @@ export default async function AdminAnalyticsPage() {
       />
 
       <section>
-        <h2 className="admin-section-title">Deep insights</h2>
+        <h2 className="admin-section-title">Дэлгэрэнгүй дүн шинжилгээ</h2>
         <div className="mt-3 grid gap-3 sm:grid-cols-2">
           <Link href="/admin/analytics/questions" className="admin-panel block p-5 hover:shadow-md">
-            <p className="font-semibold text-slate-900">Question insights</p>
+            <p className="font-semibold text-slate-900">Асуултын дүн шинжилгээ</p>
             <p className="mt-1 text-sm text-slate-600">
-              Quiz асуулт бүрийн зөв/буруу хариултын үзүүлэлт.
+              Дасгалын асуулт бүрийн зөв, буруу хариултын үзүүлэлт.
             </p>
             <p className="mt-2 text-xs text-amber-800">
-              {quickSummary.difficultQuestionsCount} difficult question(s)
+              Хүнд асуулт {quickSummary.difficultQuestionsCount}
             </p>
           </Link>
           <Link href="/admin/analytics/vocabulary" className="admin-panel block p-5 hover:shadow-md">
-            <p className="font-semibold text-slate-900">Vocabulary insights</p>
+            <p className="font-semibold text-slate-900">Үгсийн сангийн дүн шинжилгээ</p>
             <p className="mt-1 text-sm text-slate-600">
-              Хамгийн их/бага сурсан үгс, engagement.
+              Хамгийн их, хамгийн бага сурсан үгс болон ашиглалт.
             </p>
             <p className="mt-2 text-xs text-amber-800">
-              {quickSummary.wordsNeverLearnedCount} word(s) never learned
+              Сураагүй үг {quickSummary.wordsNeverLearnedCount}
             </p>
           </Link>
         </div>
       </section>
 
       <section>
-        <h2 className="admin-section-title">Per-lesson analytics</h2>
+        <h2 className="admin-section-title">Хичээл тус бүрийн тайлан</h2>
         <div className="mt-4">
           <LessonAnalyticsTable lessons={overview.lessons} />
         </div>

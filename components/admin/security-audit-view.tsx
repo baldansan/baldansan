@@ -18,7 +18,7 @@ import {
 } from "@/lib/admin/security-audit-report";
 
 const SQL_INSTRUCTIONS =
-  "Run supabase/verify/production_verification.sql in Supabase SQL Editor.";
+  "supabase/verify/production_verification.sql-ийг Supabase SQL Editor дээр ажиллуулна уу.";
 
 function resultClass(result: SecurityCheckResult): string {
   if (result === "pass") return "bg-emerald-50 text-emerald-800 ring-emerald-200";
@@ -40,7 +40,7 @@ export function SecurityAuditView() {
     try {
       setReport(await runSecurityAuditChecks());
     } catch {
-      setError("Security audit could not complete.");
+      setError("Аюулгүй байдлын үзлэгийг дуусгаж чадсангүй.");
     } finally {
       setLoading(false);
     }
@@ -71,10 +71,10 @@ export function SecurityAuditView() {
       <section className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:p-6">
         <div className="flex flex-wrap items-center justify-between gap-3">
           <div>
-            <h2 className="text-lg font-semibold text-slate-900">Summary</h2>
+            <h2 className="text-lg font-semibold text-slate-900">Товчоо</h2>
             <p className="mt-1 text-sm text-slate-600">
-              Automated + manual security checks. Env values and keys are never
-              displayed.
+              Автомат болон гараар хийх шалгалтууд. Орчны утга, түлхүүрүүд
+              хэзээ ч харагдахгүй.
             </p>
           </div>
           <button
@@ -83,13 +83,14 @@ export function SecurityAuditView() {
             disabled={loading}
             className="inline-flex rounded-full border border-emerald-200 bg-emerald-50 px-4 py-2 text-sm font-semibold text-emerald-800 hover:bg-emerald-100 disabled:opacity-60"
           >
-            {loading ? "Running…" : "Re-run audit"}
+            {loading ? "Ажиллаж байна…" : "Дахин шалгах"}
           </button>
         </div>
         {summary ? (
           <p className="mt-3 text-sm text-slate-700">
-            {summary.pass} pass · {summary.warn} warn · {summary.fail} fail ·{" "}
-            {summary.manual} manual · launch: {summary.launchRecommendation}
+            {summary.pass} давсан · {summary.warn} анхааруулга ·{" "}
+            {summary.fail} амжилтгүй · {summary.manual} гараар · гаргалт:{" "}
+            {summary.launchRecommendation}
             {report ? ` · ${formatMongoliaDateTimeWithLabel(report.ranAt)}` : ""}
           </p>
         ) : null}
@@ -97,43 +98,43 @@ export function SecurityAuditView() {
       </section>
 
       <section className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:p-6">
-        <h2 className="text-lg font-semibold text-slate-900">Related audits</h2>
+        <h2 className="text-lg font-semibold text-slate-900">Холбоотой үзлэгүүд</h2>
         <div className="mt-3 flex flex-wrap gap-2">
           <Link
             href="/admin/system-check"
             className="inline-flex rounded-full border border-emerald-200 bg-emerald-50 px-4 py-2 text-sm font-semibold text-emerald-800 hover:bg-emerald-100"
           >
-            System check
+            Системийн шалгалт
           </Link>
           <Link
             href="/admin/production-qa"
             className="inline-flex rounded-full border border-emerald-200 bg-emerald-50 px-4 py-2 text-sm font-semibold text-emerald-800 hover:bg-emerald-100"
           >
-            Production QA
+            Чанарын шалгалт
           </Link>
           <Link
             href="/admin/security-audit"
             className="inline-flex rounded-full border border-emerald-200 bg-emerald-50 px-4 py-2 text-sm font-semibold text-emerald-800 hover:bg-emerald-100"
           >
-            Security audit
+            Аюулгүй байдлын үзлэг
           </Link>
           <Link
             href="/admin/launch-candidate"
             className="inline-flex rounded-full border border-emerald-200 bg-emerald-50 px-4 py-2 text-sm font-semibold text-emerald-800 hover:bg-emerald-100"
           >
-            Launch Candidate
+            Гаргалтын хувилбар
           </Link>
           <Link
             href="/admin/launch-signoff"
             className="inline-flex rounded-full border border-emerald-200 bg-white px-4 py-2 text-sm font-semibold text-emerald-800 hover:bg-emerald-50"
           >
-            Launch Sign-off
+            Гаргалтын баталгаа
           </Link>
           <Link
             href="/admin/final-audit"
             className="inline-flex rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:border-emerald-200"
           >
-            Final audit
+            Эцсийн үзлэг
           </Link>
         </div>
         <p className="mt-3 text-xs text-slate-500">{SQL_INSTRUCTIONS}</p>
@@ -141,7 +142,7 @@ export function SecurityAuditView() {
 
       {loading && !report ? (
         <p className="rounded-2xl bg-slate-50 px-6 py-8 text-center text-sm text-slate-600 ring-1 ring-slate-200">
-          Security audit ачааллаж байна…
+          Аюулгүй байдлын үзлэг ачаалж байна…
         </p>
       ) : null}
 
@@ -185,10 +186,10 @@ export function SecurityAuditView() {
         : null}
 
       <section className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:p-6">
-        <h2 className="text-lg font-semibold text-slate-900">Launch blockers</h2>
+        <h2 className="text-lg font-semibold text-slate-900">Гаргахад саад болж буй зүйлс</h2>
         {blockers.length === 0 ? (
           <p className="mt-3 text-sm text-emerald-800">
-            Security audit has no automatic blockers.
+            Автомат шалгалтаас саад олдсонгүй.
           </p>
         ) : (
           <ul className="mt-3 space-y-2">
@@ -208,7 +209,7 @@ export function SecurityAuditView() {
         {warnings.length > 0 ? (
           <>
             <h3 className="mt-6 text-sm font-semibold text-amber-900">
-              Warnings
+              Анхааруулга
             </h3>
             <ul className="mt-2 space-y-2">
               {warnings.map((item) => (
@@ -226,14 +227,14 @@ export function SecurityAuditView() {
 
       {report ? (
         <section className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:p-6">
-          <h2 className="text-lg font-semibold text-slate-900">Export report</h2>
+          <h2 className="text-lg font-semibold text-slate-900">Тайлан гаргах</h2>
           <div className="mt-4 flex flex-wrap gap-2">
             <button
               type="button"
               onClick={() => void copyReport()}
               className="inline-flex rounded-full border border-slate-200 bg-slate-50 px-4 py-2 text-sm font-semibold text-slate-700 hover:border-emerald-200"
             >
-              {copied ? "Copied!" : "Copy security report"}
+              {copied ? "Хуулагдлаа!" : "Аюулгүй байдлын тайланг хуулах"}
             </button>
             <button
               type="button"
@@ -246,7 +247,7 @@ export function SecurityAuditView() {
               }
               className="inline-flex rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:border-emerald-200"
             >
-              Download JSON
+              JSON татах
             </button>
             <button
               type="button"
@@ -259,7 +260,7 @@ export function SecurityAuditView() {
               }
               className="inline-flex rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:border-emerald-200"
             >
-              Download Markdown
+              Markdown татах
             </button>
           </div>
         </section>

@@ -78,22 +78,23 @@ export function LessonAnalyticsImprovementSection({ detail }: Props) {
   return (
     <section>
       <h2 className="text-lg font-semibold text-slate-900">
-        Content improvement prompts
+        Контент сайжруулах prompt
       </h2>
       <p className="mt-1 text-sm text-slate-600">
-        Analytics + QA signals → copy-ready ChatGPT/Cursor prompts (no API call).
+        Тайлан болон чанарын шалгалтын үзүүлэлтээс хуулахад бэлэн prompt
+        үүсгэнэ (API дуудлага хийхгүй).
       </p>
       <div className="mt-4 flex flex-col gap-4">
         <ImprovementPromptCard
-          title="Improve this lesson"
+          title="Энэ хичээлийг сайжруулах"
           subtitle={
             metrics.averageQuizPercentage != null &&
             metrics.averageQuizPercentage < 70
-              ? `Low avg quiz score (${metrics.averageQuizPercentage}%) included in prompt.`
+              ? `Дасгалын дундаж оноо бага (${metrics.averageQuizPercentage}%) — prompt-д тусгав.`
               : metrics.completionRate != null &&
                   metrics.completionRate < 30
-                ? `Low completion (${metrics.completionRate}%) included in prompt.`
-                : "Uses content warnings and learner signals when available."
+                ? `Дуусгалт бага (${metrics.completionRate}%) — prompt-д тусгав.`
+                : "Контентын анхааруулга, суралцагчийн үзүүлэлтийг боломжтой үед ашиглана."
           }
           prompt={lessonPrompt}
           issueType="full_lesson"
@@ -104,14 +105,14 @@ export function LessonAnalyticsImprovementSection({ detail }: Props) {
         {difficultQuestions.length > 0 ? (
           <div className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200">
             <h3 className="text-base font-semibold text-slate-900">
-              Difficult question fix prompts
+              Хүндрэлтэй асуултыг засах prompt
             </h3>
             <ul className="mt-3 flex flex-col gap-3 divide-y divide-slate-100">
               {difficultQuestions.slice(0, 5).map((q) => (
                 <li key={q.questionKey} className="pt-3 first:pt-0">
                   <p className="text-sm text-slate-800">{q.question}</p>
                   <p className="mt-1 text-xs text-slate-500">
-                    {q.accuracyPercent}% accuracy · {q.attemptsCount} attempts
+                    Зөв {q.accuracyPercent}% · {q.attemptsCount} оролдлого
                   </p>
                   <ImprovementPromptCopyButton
                     className="mt-2"
@@ -127,7 +128,7 @@ export function LessonAnalyticsImprovementSection({ detail }: Props) {
           .length > 0 ? (
           <div className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200">
             <h3 className="text-base font-semibold text-slate-900">
-              Weak vocabulary prompts
+              Сул сурсан үгийг сайжруулах prompt
             </h3>
             <ul className="mt-3 flex flex-col gap-3 divide-y divide-slate-100">
               {vocabularyEngagement
@@ -143,7 +144,7 @@ export function LessonAnalyticsImprovementSection({ detail }: Props) {
                     </p>
                     <ImprovementPromptCopyButton
                       className="mt-2"
-                      label="Generate vocabulary improvement prompt"
+                      label="Үгийн сайжруулах prompt үүсгэх"
                       prompt={buildVocabularyImprovementPrompt(w, lessonStub)}
                     />
                   </li>

@@ -7,7 +7,7 @@ type Props = {
 export function JsonSnapshotViewer({
   title,
   data,
-  emptyLabel = "Snapshot not captured for this action.",
+  emptyLabel = "Энэ үйлдлийн хуулбар хадгалагдаагүй.",
 }: Props) {
   return (
     <section className="rounded-2xl bg-white p-4 shadow-sm ring-1 ring-slate-200 sm:p-5">
@@ -17,7 +17,7 @@ export function JsonSnapshotViewer({
       ) : (
         <details className="mt-3" open>
           <summary className="cursor-pointer text-xs font-medium text-emerald-700">
-            View JSON
+            JSON харах
           </summary>
           <pre className="mt-2 overflow-x-auto rounded-lg bg-slate-50 p-3 text-xs text-slate-700">
             {JSON.stringify(data, null, 2)}

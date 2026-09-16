@@ -12,7 +12,7 @@ type Props = {
 
 export async function generateMetadata({ params }: Props) {
   const { lessonId } = await params;
-  return { title: `Багшийн давхарга — ${lessonId} — Admin` };
+  return { title: `Багшийн давхарга — ${lessonId} — Удирдлагын хэсэг` };
 }
 
 export default async function AdminLessonTeacherOverlayPage({ params }: Props) {

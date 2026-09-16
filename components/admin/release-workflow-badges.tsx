@@ -17,6 +17,20 @@ const qaStyles: Record<LessonWorkflowQaStatus, string> = {
   failed: "bg-red-50 text-red-800 ring-red-200",
 };
 
+const releaseLabels: Record<LessonReleaseStatus, string> = {
+  draft: "Ноорог",
+  in_review: "Шалгаж байна",
+  approved: "Батлагдсан",
+  published: "Нийтлэгдсэн",
+  archived: "Архивласан",
+};
+
+const qaLabels: Record<LessonWorkflowQaStatus, string> = {
+  needs_review: "Шалгах шаардлагатай",
+  passed: "давсан",
+  failed: "давсангүй",
+};
+
 export function ReleaseStatusBadge({
   status = "draft",
 }: {
@@ -27,7 +41,7 @@ export function ReleaseStatusBadge({
     <span
       className={`inline-flex rounded-full px-2.5 py-0.5 text-xs font-medium ring-1 ${releaseStyles[key]}`}
     >
-      {key.replace("_", " ")}
+      {releaseLabels[key]}
     </span>
   );
 }
@@ -42,7 +56,9 @@ export function WorkflowQaBadge({
     <span
       className={`inline-flex rounded-full px-2.5 py-0.5 text-xs font-medium ring-1 ${qaStyles[key]}`}
     >
-      QA {key.replace("_", " ")}
+      {key === "needs_review"
+        ? qaLabels[key]
+        : `Чанарын шалгалт ${qaLabels[key]}`}
     </span>
   );
 }

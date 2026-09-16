@@ -1,7 +1,7 @@
 import { AdminB2BOrganizationDetail } from "@/components/admin/b2b/admin-b2b-organization-detail";
 
 export const metadata = {
-  title: "Organization detail — Admin B2B",
+  title: "Байгууллагын дэлгэрэнгүй — B2B",
 };
 
 type Props = {

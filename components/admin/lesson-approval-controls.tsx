@@ -63,10 +63,10 @@ export function LessonApprovalControls({ lesson }: Props) {
   return (
     <section className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:p-6">
       <h2 className="text-base font-semibold text-slate-900">
-        Release approval
+        Хувилбарын баталгаа
       </h2>
       <p className="mt-1 text-sm text-slate-600">
-        Internal release_status / qa_status — public publish тусдаа хэвээр.
+        Дотоод баталгааны төлөв. Хэрэглэгчдэд нийтлэх нь үүнээс тусдаа үйлдэл.
       </p>
 
       <div className="mt-3 flex flex-wrap gap-2">
@@ -74,14 +74,14 @@ export function LessonApprovalControls({ lesson }: Props) {
         <WorkflowQaBadge status={qaStatus} />
         {lesson.approvedAt ? (
           <span className="text-xs text-slate-500">
-            Approved {formatMongoliaDateTimeWithLabel(lesson.approvedAt)}
+            Батлагдсан {formatMongoliaDateTimeWithLabel(lesson.approvedAt)}
           </span>
         ) : null}
       </div>
 
       <div className="mt-4 grid gap-4 sm:grid-cols-2">
         <label className="block text-sm">
-          <span className="font-medium text-slate-700">Release status</span>
+          <span className="font-medium text-slate-700">Хувилбарын төлөв</span>
           <select
             value={releaseStatus}
             onChange={(e) =>
@@ -89,15 +89,17 @@ export function LessonApprovalControls({ lesson }: Props) {
             }
             className="mt-1 w-full rounded-xl border border-slate-200 px-3 py-2 text-sm"
           >
-            <option value="draft">draft</option>
-            <option value="in_review">in_review</option>
-            <option value="approved">approved</option>
-            <option value="published">published</option>
-            <option value="archived">archived</option>
+            <option value="draft">Ноорог</option>
+            <option value="in_review">Шалгаж байна</option>
+            <option value="approved">Батлагдсан</option>
+            <option value="published">Нийтлэгдсэн</option>
+            <option value="archived">Архивласан</option>
           </select>
         </label>
         <label className="block text-sm">
-          <span className="font-medium text-slate-700">QA status</span>
+          <span className="font-medium text-slate-700">
+            Чанарын шалгалтын төлөв
+          </span>
           <select
             value={qaStatus}
             onChange={(e) =>
@@ -105,21 +107,23 @@ export function LessonApprovalControls({ lesson }: Props) {
             }
             className="mt-1 w-full rounded-xl border border-slate-200 px-3 py-2 text-sm"
           >
-            <option value="needs_review">needs_review</option>
-            <option value="passed">passed</option>
-            <option value="failed">failed</option>
+            <option value="needs_review">Шалгах шаардлагатай</option>
+            <option value="passed">Давсан</option>
+            <option value="failed">Давсангүй</option>
           </select>
         </label>
       </div>
 
       <label className="mt-4 block text-sm">
-        <span className="font-medium text-slate-700">Release notes</span>
+        <span className="font-medium text-slate-700">
+          Хувилбарын тэмдэглэл
+        </span>
         <textarea
           value={notes}
           onChange={(e) => setNotes(e.target.value)}
           rows={3}
           className="mt-1 w-full rounded-xl border border-slate-200 px-3 py-2 text-sm"
-          placeholder="Review notes for this release…"
+          placeholder="Энэ хувилбарын тухай тэмдэглэл…"
         />
       </label>
 
@@ -128,7 +132,7 @@ export function LessonApprovalControls({ lesson }: Props) {
           type="button"
           disabled={busy !== null}
           onClick={() =>
-            void runAction("Mark in review", async () => {
+            void runAction("Шалгалтад өгөх", async () => {
               const r = await markLessonReviewed(lesson.id);
               if (!r.error) setReleaseStatus("in_review");
               return r;
@@ -136,13 +140,13 @@ export function LessonApprovalControls({ lesson }: Props) {
           }
           className="rounded-full border border-sky-200 bg-sky-50 px-4 py-2 text-sm font-semibold text-sky-800 hover:bg-sky-100 disabled:opacity-50"
         >
-          {busy === "Mark in review" ? "…" : "Mark in review"}
+          {busy === "Шалгалтад өгөх" ? "…" : "Шалгалтад өгөх"}
         </button>
         <button
           type="button"
           disabled={busy !== null}
           onClick={() =>
-            void runAction("Mark QA passed", async () => {
+            void runAction("Чанарын шалгалт давсан гэж тэмдэглэх", async () => {
               const r = await updateLessonQaStatus(lesson.id, "passed");
               if (!r.error) setQaStatus("passed");
               return r;
@@ -150,16 +154,18 @@ export function LessonApprovalControls({ lesson }: Props) {
           }
           className="rounded-full border border-emerald-200 bg-emerald-50 px-4 py-2 text-sm font-semibold text-emerald-800 hover:bg-emerald-100 disabled:opacity-50"
         >
-          {busy === "Mark QA passed" ? "…" : "Mark QA passed"}
+          {busy === "Чанарын шалгалт давсан гэж тэмдэглэх"
+            ? "…"
+            : "Чанарын шалгалт давсан"}
         </button>
         <button
           type="button"
           disabled={busy !== null}
           onClick={() =>
-            void runAction("Approve for publish", async () => {
+            void runAction("Нийтлэхийг батлах", async () => {
               const { data: user } = await getCurrentUser();
               if (!user?.id) {
-                return { error: "Sign in required to approve." };
+                return { error: "Батлахын тулд эхлээд нэвтэрнэ үү." };
               }
               const r = await approveLessonForPublish(
                 lesson.id,
@@ -175,13 +181,13 @@ export function LessonApprovalControls({ lesson }: Props) {
           }
           className="rounded-full bg-emerald-500 px-4 py-2 text-sm font-semibold text-white hover:bg-emerald-600 disabled:opacity-50"
         >
-          {busy === "Approve for publish" ? "…" : "Approve for publish"}
+          {busy === "Нийтлэхийг батлах" ? "…" : "Нийтлэхийг батлах"}
         </button>
         <button
           type="button"
           disabled={busy !== null}
           onClick={() =>
-            void runAction("Save release fields", async () => {
+            void runAction("Хувилбарын тэмдэглэл хадгалах", async () => {
               const statusR = await updateLessonReleaseStatus(
                 lesson.id,
                 releaseStatus
@@ -194,7 +200,9 @@ export function LessonApprovalControls({ lesson }: Props) {
           }
           className="rounded-full border border-slate-200 px-4 py-2 text-sm font-medium text-slate-700 hover:border-emerald-200 disabled:opacity-50"
         >
-          {busy === "Save release fields" ? "…" : "Save release notes"}
+          {busy === "Хувилбарын тэмдэглэл хадгалах"
+            ? "…"
+            : "Хувилбарын тэмдэглэл хадгалах"}
         </button>
       </div>
 

@@ -5,7 +5,7 @@ import { getAdminTaskCenterData } from "@/lib/supabase/admin-tasks";
 export const dynamic = "force-dynamic";
 
 export const metadata = {
-  title: "Admin task center — Buunduu Surtsgaay",
+  title: "Ажлын төв — Buunduu Surtsgaay",
 };
 
 type Props = {
@@ -19,12 +19,12 @@ export default async function AdminTasksPage({ searchParams }: Props) {
   return (
     <div className="flex flex-col gap-6">
       <AdminPageHeader
-        title="Task Center"
-        description="Контент, QA, media, analytics, release workflow-ийн хийх ажлуудыг нэг дор харна."
+        title="Ажлын төв"
+        description="Контент, чанарын шалгалт, медиа, тайлан, хувилбар гаргах урсгалын хийх ажлуудыг нэг дор харна."
         actions={
           lessonId ? (
             <span className="admin-badge admin-badge-neutral">
-              Lesson {lessonId}
+              Хичээл {lessonId}
             </span>
           ) : null
         }

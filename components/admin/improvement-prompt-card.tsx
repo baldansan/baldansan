@@ -72,9 +72,9 @@ export function ImprovementPromptCard({
     setCopyError(null);
     const ok = await copyTextToClipboard(text);
     if (ok) {
-      setCopySuccess("Prompt clipboard руу хууллаа.");
+      setCopySuccess("Prompt хуулагдлаа.");
     } else {
-      setCopyError("Clipboard хуулахад алдаа. Prompt-оо гараар copy хийнэ үү.");
+      setCopyError("Хуулж чадсангүй. Prompt-оо гараар хуулна уу.");
     }
   }, [promptText]);
 
@@ -98,7 +98,7 @@ export function ImprovementPromptCard({
             </span>
             {relatedLessonId ? (
               <span className="font-mono text-xs text-slate-500">
-                Lesson {relatedLessonId}
+                Хичээл {relatedLessonId}
               </span>
             ) : null}
           </div>
@@ -111,7 +111,7 @@ export function ImprovementPromptCard({
           onClick={() => setCollapsed((c) => !c)}
           className="text-xs font-medium text-emerald-700 hover:text-emerald-800"
         >
-          {collapsed ? "Expand" : "Collapse"}
+          {collapsed ? "Дэлгэх" : "Хураах"}
         </button>
       </div>
 
@@ -131,7 +131,7 @@ export function ImprovementPromptCard({
               onClick={() => void handleCopy()}
               className="rounded-full bg-emerald-500 px-5 py-2 text-sm font-semibold text-white hover:bg-emerald-600"
             >
-              Copy prompt
+              Prompt хуулах
             </button>
             {onRegenerate ? (
               <button
@@ -139,7 +139,7 @@ export function ImprovementPromptCard({
                 onClick={handleRegenerate}
                 className="rounded-full border border-emerald-200 bg-emerald-50 px-5 py-2 text-sm font-semibold text-emerald-800 hover:bg-emerald-100"
               >
-                Regenerate
+                Дахин үүсгэх
               </button>
             ) : null}
           </div>
@@ -158,7 +158,7 @@ type InlineProps = {
 
 /** Compact copy button for analytics table rows. */
 export function ImprovementPromptCopyButton({
-  label = "Generate fix prompt",
+  label = "Засварын prompt үүсгэх",
   prompt,
   className = "",
 }: InlineProps) {
@@ -188,11 +188,13 @@ export function ImprovementPromptCopyButton({
       </button>
       {copySuccess ? (
         <p className="mt-0.5 text-xs text-emerald-700">
-          Prompt clipboard руу хууллаа.
+          Prompt хуулагдлаа.
         </p>
       ) : null}
       {copyError ? (
-        <p className="mt-0.5 text-xs text-red-700">Copy failed — select manually.</p>
+        <p className="mt-0.5 text-xs text-red-700">
+          Хуулж чадсангүй — гараар сонгож хуулна уу.
+        </p>
       ) : null}
     </div>
   );

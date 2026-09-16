@@ -142,10 +142,10 @@ export function LessonZipImportClient({
         return;
       }
       if (!result.ok || errorMessages.length > 0) {
-        setError("Validation алдаатай — доорх алдааг засна уу.");
+        setError("Шалгалт давсангүй — доорх алдааг засна уу.");
       }
     } catch {
-      setError("ZIP parse хийхэд алдаа гарлаа.");
+      setError("ZIP файлыг уншихад алдаа гарлаа.");
       setValidation(null);
       setParsedPackage(null);
     } finally {
@@ -160,7 +160,7 @@ export function LessonZipImportClient({
     try {
       const packageToImport = await resolveImportPackage();
       if (!packageToImport) {
-        setError("ZIP parse data missing. Please validate again.");
+        setError("ZIP-ийн мэдээлэл алга. Дахин шалгана уу.");
         return;
       }
 
@@ -169,7 +169,7 @@ export function LessonZipImportClient({
         allowAutoCreateCourse: track !== "korean",
       });
       if (!payload) {
-        setError("ZIP parse data missing. Please validate again.");
+        setError("ZIP-ийн мэдээлэл алга. Дахин шалгана уу.");
         return;
       }
 
@@ -185,7 +185,7 @@ export function LessonZipImportClient({
         result = JSON.parse(responseText) as LessonPackageImportResult;
       } catch {
         setError(
-          `Import failed (${response.status}): ${responseText.slice(0, 200) || "Invalid response"}`
+          `Оруулж чадсангүй (${response.status}): ${responseText.slice(0, 200) || "Хариу буруу байна"}`
         );
         return;
       }
@@ -203,9 +203,9 @@ export function LessonZipImportClient({
           }) ?? [];
         const message =
           detailLines.length > 0
-            ? `Import failed\n${detailLines.join("\n")}`
+            ? `Оруулж чадсангүй\n${detailLines.join("\n")}`
             : result.errors?.join(" ") ||
-              `Import failed with status ${response.status}.`;
+              `Оруулж чадсангүй (алдааны код ${response.status}).`;
         setError(message);
         setImportResult(result);
         return;
@@ -236,7 +236,7 @@ export function LessonZipImportClient({
             ...quizAudioResult.warnings,
             ...(quizAudioResult.updated > 0
               ? [
-                  `Listening quiz audio: ${quizAudioResult.updated} асуултад audio URL холбогдлоо.`,
+                  `Сонсголын дасгал: ${quizAudioResult.updated} асуултад аудио холбогдлоо.`,
                 ]
               : []),
           ],
@@ -266,7 +266,7 @@ export function LessonZipImportClient({
       setError(
         importError instanceof Error
           ? importError.message
-          : "Import хийхэд алдаа гарлаа."
+          : "Оруулахад алдаа гарлаа."
       );
     } finally {
       setBusy(null);
@@ -290,23 +290,23 @@ export function LessonZipImportClient({
             href={backHref}
             className="text-sm font-medium text-emerald-700 hover:text-emerald-800"
           >
-            ← Import hub
+            ← Оруулах төв
           </Link>
           <h1 className="mt-2 text-2xl font-bold text-slate-900">{title}</h1>
           <p className="mt-1 text-sm text-slate-600">{description}</p>
           {track === "chinese" ? (
             <p className="mt-2 text-xs text-slate-500">
-              Зөвхөн Хятад/HSK ZIP энд upload хийнэ. Солонгос package бол{" "}
+              Зөвхөн Хятад/HSK ZIP-ийг энд байршуулна. Солонгос багц бол{" "}
               <Link href="/admin/import/korean" className="font-medium text-emerald-700">
-                Korean importer
+                Солонгос оруулах хуудас
               </Link>{" "}
               ашиглана.
             </p>
           ) : track === "korean" ? (
             <p className="mt-2 text-xs text-slate-500">
-              Зөвхөн Солонгос номын ZIP энд upload хийнэ. HSK package бол{" "}
+              Зөвхөн Солонгос номын ZIP-ийг энд байршуулна. HSK багц бол{" "}
               <Link href="/admin/import/chinese" className="font-medium text-emerald-700">
-                Chinese importer
+                Хятад оруулах хуудас
               </Link>{" "}
               ашиглана.
             </p>
@@ -317,7 +317,7 @@ export function LessonZipImportClient({
       {wrongImporter ? (
         <section className="rounded-2xl bg-red-50 p-5 ring-1 ring-red-200 sm:p-6">
           <h2 className="text-base font-semibold text-red-900">
-            Буруу importer сонгогдлоо
+            Буруу оруулах хуудас сонгогджээ
           </h2>
           <p className="mt-2 text-sm text-red-800">{wrongImporter.message}</p>
           <p className="mt-2 text-xs text-red-700">
@@ -330,8 +330,8 @@ export function LessonZipImportClient({
       ) : null}
 
       <AdminEditorSection
-        title="ZIP package"
-        description="ZIP файл сонгоод Parse / Validate дарна."
+        title="ZIP багц"
+        description="ZIP файлаа сонгоод «Шалгах» товчийг дарна."
       >
         <input
           type="file"
@@ -362,7 +362,7 @@ export function LessonZipImportClient({
               void handleParse();
             }}
           >
-            {busy === "parse" ? "Parsing…" : "Parse / Validate"}
+            {busy === "parse" ? "Шалгаж байна…" : "Шалгах"}
           </button>
         </div>
       </AdminEditorSection>
@@ -375,8 +375,8 @@ export function LessonZipImportClient({
 
       {showKoreanCourseSql ? (
         <AdminCollapsibleSection
-          title="korean-1 course setup SQL"
-          description="Run in Supabase SQL editor before importing Korean lessons."
+          title="korean-1 курс үүсгэх SQL"
+          description="Солонгос хичээл оруулахын өмнө Supabase-ийн SQL editor дээр ажиллуулна."
         >
           <pre className="overflow-x-auto rounded-xl bg-slate-900 p-4 text-xs text-slate-100">
             {KOREAN_COURSE_SETUP_SQL}
@@ -402,22 +402,25 @@ export function LessonZipImportClient({
               void handleImport();
             }}
           >
-            {busy === "import" ? "Importing…" : "Import as draft"}
+            {busy === "import" ? "Оруулж байна…" : "Ноорог болгон оруулах"}
           </button>
           <button type="button" className={btnGhost} onClick={clearAll}>
-            Clear
+            Цэвэрлэх
           </button>
           <Link href="/admin/lessons" className={btnSecondary}>
-            Go to lessons
+            Хичээлүүд рүү очих
           </Link>
         </div>
       ) : null}
 
       {importResult && !importResult.ok ? (
         <section className="rounded-2xl bg-red-50 p-5 ring-1 ring-red-200 sm:p-6">
-          <h2 className="text-base font-semibold text-red-900">Import failed</h2>
+          <h2 className="text-base font-semibold text-red-900">
+            Оруулж чадсангүй
+          </h2>
           <p className="mt-1 text-sm text-red-800">
-            Lesson ID: <strong>{importResult.lessonId || validation?.preview?.lessonId}</strong>
+            Хичээлийн ID:{" "}
+            <strong>{importResult.lessonId || validation?.preview?.lessonId}</strong>
           </p>
           {importResult.validationDetails?.length ? (
             <ul className="mt-3 space-y-2 text-sm text-red-900">
@@ -451,39 +454,39 @@ export function LessonZipImportClient({
       {importComplete && lessonId ? (
         <section className="rounded-2xl bg-emerald-50 p-5 ring-1 ring-emerald-200 sm:p-6">
           <h2 className="text-base font-semibold text-emerald-900">
-            Import complete
+            Оруулж дууслаа
           </h2>
           <p className="mt-1 text-sm text-emerald-800">
             {importResult?.message ??
               (importResult?.created
-                ? "Шинэ draft lesson үүсгээд import амжилттай хийлээ."
-                : "Одоо байгаа draft lesson дээр import хийлээ.")}
+                ? "Шинэ ноорог хичээл үүсгээд амжилттай орууллаа."
+                : "Одоо байгаа ноорог хичээл рүү орууллаа.")}
           </p>
           <p className="mt-2 text-sm text-emerald-800">
-            Lesson ID: <strong>{lessonId}</strong>
+            Хичээлийн ID: <strong>{lessonId}</strong>
             {importResult?.packageLessonId &&
             importResult.packageLessonId !== lessonId ? (
               <>
                 {" "}
-                (package: <strong>{importResult.packageLessonId}</strong>)
+                (багц: <strong>{importResult.packageLessonId}</strong>)
               </>
             ) : null}
-            . Vocabulary: {importResult?.vocabularyInserted}, quiz:{" "}
+            . Үгсийн сан: {importResult?.vocabularyInserted}, дасгал:{" "}
             {importResult?.quizInserted}
             {importResult?.oldQuizCountDeleted != null ? (
               <>
                 {" "}
-                (deleted {importResult.oldQuizCountDeleted}, inserted{" "}
-                {importResult.newQuizCountInserted ?? importResult.quizInserted})
+                ({importResult.oldQuizCountDeleted} устгаж,{" "}
+                {importResult.newQuizCountInserted ?? importResult.quizInserted} нэмлээ)
               </>
             ) : null}
-            , subtitles: {importResult?.subtitlesInserted}.
+            , хадмал: {importResult?.subtitlesInserted}.
             {importResult?.mediaUploaded != null ? (
               <>
                 {" "}
-                Media uploaded: {importResult.mediaUploaded}
+                Байршуулсан медиа: {importResult.mediaUploaded}
                 {importResult.uploadedImageCount != null ? (
-                  <> ({importResult.uploadedImageCount} images)</>
+                  <> ({importResult.uploadedImageCount} зураг)</>
                 ) : null}
                 .
               </>
@@ -491,7 +494,7 @@ export function LessonZipImportClient({
             {importResult?.imageStorageStatus ? (
               <>
                 {" "}
-                Image storage: {importResult.imageStorageStatus}.
+                Зургийн сан: {importResult.imageStorageStatus}.
               </>
             ) : null}
           </p>
@@ -507,46 +510,46 @@ export function LessonZipImportClient({
               href={`/admin/lessons/${encodeURIComponent(lessonId)}/edit`}
               className={btnPrimary}
             >
-              Edit lesson
+              Хичээл засах
             </Link>
             <Link
               href={lessonPreviewPath(lessonId, { adminPreview: true })}
               className={btnSecondary}
             >
-              Preview lesson
+              Урьдчилж харах
             </Link>
             <Link
               href={`/lessons/${encodeURIComponent(lessonId)}/vocabulary?preview=admin`}
               className={btnSecondary}
             >
-              Vocabulary
+              Үгсийн сан
             </Link>
             <Link
               href={`/lessons/${encodeURIComponent(lessonId)}/quiz?preview=admin`}
               className={btnSecondary}
             >
-              Quiz
+              Дасгал
             </Link>
             <Link href="/admin/lessons" className={btnSecondary}>
-              Go to lessons
+              Хичээлүүд рүү очих
             </Link>
           </div>
         </section>
       ) : null}
 
       <AdminCollapsibleSection
-        title="Format reference"
-        description="Package structure and example files."
+        title="Форматын лавлах"
+        description="Багцын бүтэц ба жишээ файлууд."
       >
         <p className="text-sm text-slate-600">
-          Template:{" "}
-          <code className="rounded bg-slate-100 px-1">{templateHint}</code>, doc:{" "}
+          Загвар:{" "}
+          <code className="rounded bg-slate-100 px-1">{templateHint}</code>, заавар:{" "}
           <code className="rounded bg-slate-100 px-1">{formatDocHint}</code>
         </p>
         {track === "chinese" ? (
           <details className="mt-3 rounded-xl border border-slate-200 bg-slate-50 p-3">
             <summary className="cursor-pointer text-sm font-medium text-slate-700">
-              Expected validator schema (read-only)
+              Шалгуурын бүтэц (зөвхөн унших)
             </summary>
             <pre className="mt-2 max-h-64 overflow-auto whitespace-pre-wrap text-xs text-slate-600">
               {`No Zod — manual validators in lib/import/* and lib/supabase/admin-import.ts
@@ -579,7 +582,7 @@ Full package doc: docs/BUUNDUU_CHINESE_HSK_PACKAGE_V1.md`}
         {validation ? (
           <details className="mt-3 rounded-xl border border-slate-200 bg-slate-50 p-3">
             <summary className="cursor-pointer text-sm font-medium text-slate-700">
-              Raw validation debug
+              Шалгалтын түүхий мэдээлэл
             </summary>
             <pre className="mt-2 max-h-48 overflow-auto text-xs text-slate-600">
               {JSON.stringify(

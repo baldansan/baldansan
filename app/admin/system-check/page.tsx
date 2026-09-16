@@ -4,15 +4,15 @@ import { SystemCheckView } from "@/components/admin/system-check-view";
 export const dynamic = "force-dynamic";
 
 export const metadata = {
-  title: "System check — Admin",
+  title: "Системийн шалгалт — Удирдлагын хэсэг",
 };
 
 export default function AdminSystemCheckPage() {
   return (
     <div className="flex flex-col gap-6">
       <AdminPageHeader
-        title="System Check"
-        description="Read-only production readiness checks for Supabase env, auth, admin access, content reads, tasks, activity log, and storage."
+        title="Системийн шалгалт"
+        description="Supabase тохиргоо, нэвтрэлт, админы эрх, контент унших, ажил, үйлдлийн бүртгэл, файл хадгалалтын бэлэн байдлыг зөвхөн харах шалгалт."
       />
       <SystemCheckView />
     </div>

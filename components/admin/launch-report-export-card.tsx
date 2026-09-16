@@ -56,13 +56,13 @@ export function LaunchReportExportCard({
 
   return (
     <section className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:p-6">
-      <h2 className="text-lg font-semibold text-slate-900">Save &amp; export</h2>
+      <h2 className="text-lg font-semibold text-slate-900">Хадгалах ба гаргах</h2>
       <p className="mt-2 text-sm text-slate-600">
-        Stored in this browser (localStorage key: buunduu-launch-candidate).
+        Энэ хөтөч дээр хадгалагдана (localStorage түлхүүр: buunduu-launch-candidate).
       </p>
       {savedAt ? (
         <p className="mt-2 text-xs text-slate-500">
-          Last saved: {formatMongoliaDateTimeWithLabel(savedAt)}
+          Сүүлд хадгалсан: {formatMongoliaDateTimeWithLabel(savedAt)}
         </p>
       ) : null}
       <div className="mt-4 flex flex-wrap gap-2">
@@ -71,7 +71,7 @@ export function LaunchReportExportCard({
           onClick={onSave}
           className="inline-flex rounded-full bg-emerald-500 px-4 py-2 text-sm font-semibold text-white hover:bg-emerald-600"
         >
-          Save checklist
+          Жагсаалтыг хадгалах
         </button>
         <button
           type="button"
@@ -82,7 +82,7 @@ export function LaunchReportExportCard({
               : "border-slate-200 bg-white text-slate-700"
           }`}
         >
-          {resetConfirm ? "Confirm reset all" : "Reset checklist"}
+          {resetConfirm ? "Цэвэрлэхийг баталгаажуулах" : "Жагсаалтыг цэвэрлэх"}
         </button>
       </div>
       <div className="mt-4 flex flex-wrap gap-2 border-t border-slate-100 pt-4">
@@ -91,7 +91,7 @@ export function LaunchReportExportCard({
           onClick={() => void copyMarkdown()}
           className="inline-flex rounded-full border border-slate-200 bg-slate-50 px-4 py-2 text-sm font-semibold text-slate-700 hover:border-emerald-200"
         >
-          {copied ? "Copied!" : "Copy Markdown report"}
+          {copied ? "Хуулагдлаа!" : "Markdown тайланг хуулах"}
         </button>
         <button
           type="button"
@@ -104,7 +104,7 @@ export function LaunchReportExportCard({
           }
           className="inline-flex rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:border-emerald-200"
         >
-          Download JSON report
+          JSON тайлан татах
         </button>
         <button
           type="button"
@@ -117,7 +117,7 @@ export function LaunchReportExportCard({
           }
           className="inline-flex rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:border-emerald-200"
         >
-          Download Markdown report
+          Markdown тайлан татах
         </button>
       </div>
     </section>

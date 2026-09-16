@@ -11,7 +11,7 @@ type Props = {
 
 export async function generateMetadata({ params }: Props) {
   const { lessonId } = await params;
-  return { title: `Lesson ${lessonId} analytics — Admin` };
+  return { title: `Хичээл ${lessonId} — Тайлан — Удирдлагын хэсэг` };
 }
 
 export default async function AdminLessonAnalyticsPage({ params }: Props) {
@@ -22,13 +22,13 @@ export default async function AdminLessonAnalyticsPage({ params }: Props) {
     return (
       <EmptyState
         title="Хичээл олдсонгүй"
-        description={`"${lessonId}" ID-тай хичээл analytics-д байхгүй.`}
+        description={`"${lessonId}" ID-тай хичээл тайланд байхгүй байна.`}
         action={
           <Link
             href="/admin/analytics"
             className="text-sm font-medium text-emerald-700 hover:text-emerald-800"
           >
-            ← Learning analytics
+            ← Суралцахуйн тайлан
           </Link>
         }
       />

@@ -51,70 +51,70 @@ function buildSteps(
     return [
       {
         number: 1,
-        title: "Draft lesson",
-        description: "Create lesson metadata",
+        title: "Ноорог хичээл",
+        description: "Хичээлийн ерөнхий мэдээллийг үүсгэх",
         status: "pending",
-        statusLabel: "No lesson selected",
+        statusLabel: "Хичээл сонгоогүй",
         href: "/admin/lessons/new",
-        hrefLabel: "Create draft →",
+        hrefLabel: "Ноорог үүсгэх →",
       },
       {
         number: 2,
         title: "Prompt",
-        description: "Generate ChatGPT JSON prompt",
+        description: "ChatGPT-д өгөх JSON prompt бэлдэх",
         status: "blocked",
-        statusLabel: "Select a lesson first",
+        statusLabel: "Эхлээд хичээл сонгоно уу",
       },
       {
         number: 3,
-        title: "Import content",
-        description: "Paste/import subtitles, vocabulary, quiz",
+        title: "Контент оруулах",
+        description: "Хадмал, үгсийн сан, дасгалыг оруулах",
         status: "blocked",
-        statusLabel: "Select a lesson first",
+        statusLabel: "Эхлээд хичээл сонгоно уу",
       },
       {
         number: 4,
-        title: "QA",
-        description: "Check metadata, subtitles, vocabulary, quiz",
+        title: "Чанарын шалгалт",
+        description: "Ерөнхий мэдээлэл, хадмал, үгсийн сан, дасгалыг шалгах",
         status: "blocked",
-        statusLabel: "Select a lesson first",
+        statusLabel: "Эхлээд хичээл сонгоно уу",
       },
       {
         number: 5,
-        title: "Media",
-        description: "Upload / attach media",
+        title: "Медиа",
+        description: "Медиа байршуулах, холбох",
         status: "blocked",
-        statusLabel: "Select a lesson first",
+        statusLabel: "Эхлээд хичээл сонгоно уу",
       },
       {
         number: 6,
-        title: "Preview",
-        description: "Admin preview lesson",
+        title: "Урьдчилж харах",
+        description: "Хичээлийг админаар урьдчилж харах",
         status: "blocked",
-        statusLabel: "Select a lesson first",
+        statusLabel: "Эхлээд хичээл сонгоно уу",
       },
       {
         number: 7,
-        title: "Backup",
-        description: "Export lesson JSON",
+        title: "Нөөц хуулбар",
+        description: "Хичээлийн JSON-г гаргах",
         status: "blocked",
-        statusLabel: "Select a lesson first",
+        statusLabel: "Эхлээд хичээл сонгоно уу",
       },
       {
         number: 8,
-        title: "Publish",
-        description: "Publish when QA ready",
+        title: "Нийтлэх",
+        description: "Шалгалт давсны дараа нийтлэх",
         status: "blocked",
-        statusLabel: "Select a lesson first",
+        statusLabel: "Эхлээд хичээл сонгоно уу",
       },
       {
         number: 9,
-        title: "Task review",
-        description: "Review generated admin tasks",
+        title: "Ажлын шалгалт",
+        description: "Үүссэн админы ажлуудыг шалгах",
         status: "blocked",
-        statusLabel: "Select a lesson first",
+        statusLabel: "Эхлээд хичээл сонгоно уу",
         href: "/admin/tasks",
-        hrefLabel: "Open task center →",
+        hrefLabel: "Ажлын төв нээх →",
       },
     ];
   }
@@ -130,25 +130,25 @@ function buildSteps(
 
   const previewLinks = [
     {
-      label: "Overview",
+      label: "Тойм",
       href: lessonPreviewPath(lesson.id, { adminPreview: true }),
     },
     {
-      label: "Watch",
+      label: "Бичлэг үзэх",
       href: lessonPreviewPath(lesson.id, {
         adminPreview: true,
         subpath: "watch",
       }),
     },
     {
-      label: "Vocabulary",
+      label: "Үгсийн сан",
       href: lessonPreviewPath(lesson.id, {
         adminPreview: true,
         subpath: "vocabulary",
       }),
     },
     {
-      label: "Quiz",
+      label: "Дасгал",
       href: lessonPreviewPath(lesson.id, {
         adminPreview: true,
         subpath: "quiz",
@@ -157,17 +157,17 @@ function buildSteps(
   ];
 
   let step1Status: StepStatus = "warning";
-  let step1Label = "Metadata incomplete";
+  let step1Label = "Ерөнхий мэдээлэл дутуу";
   if (qaReport?.hasMetadata) {
     step1Status = "done";
-    step1Label = "Draft created · metadata complete";
+    step1Label = "Ноорог үүссэн · мэдээлэл бүрэн";
   } else if (lesson) {
     step1Status = "warning";
-    step1Label = "Draft exists · fill metadata";
+    step1Label = "Ноорог байна · мэдээллээ бөглөнө үү";
   }
 
   let step3Status: StepStatus = "pending";
-  let step3Label = "No content imported yet";
+  let step3Label = "Контент хараахан ороогүй";
   if (
     qaReport &&
     qaReport.subtitleCount > 0 &&
@@ -175,155 +175,155 @@ function buildSteps(
     qaReport.quizCount >= MIN_QUIZ_FOR_PUBLISH
   ) {
     step3Status = "done";
-    step3Label = "Content imported";
+    step3Label = "Контент орсон";
   } else if (hasContent) {
     step3Status = "warning";
-    step3Label = "Partial content — import or add more";
+    step3Label = "Контент дутуу — нэмж оруулна уу";
   }
 
   let step4Status: StepStatus = "pending";
-  let step4Label = "Run QA check";
+  let step4Label = "Чанарын шалгалт хийх";
   if (qaStatus === "ready") {
     step4Status = "done";
-    step4Label = "QA passed";
+    step4Label = "Чанарын шалгалт давсан";
   } else if (qaStatus === "needs_review") {
     step4Status = "warning";
-    step4Label = "Needs review";
+    step4Label = "Шалгах шаардлагатай";
   } else if (qaStatus === "missing_content") {
     step4Status = "pending";
-    step4Label = "Missing content";
+    step4Label = "Контент дутуу";
   }
 
   let step5Status: StepStatus = "pending";
-  let step5Label = "Upload thumbnail, audio, or video";
+  let step5Label = "Нүүр зураг, аудио эсвэл бичлэг байршуулах";
   if (isMediaReady(lesson)) {
     step5Status = "done";
-    step5Label = "Media ready (video attached)";
+    step5Label = "Медиа бэлэн (бичлэг холбогдсон)";
   } else if (
     hasVideoUrl(lesson) ||
     hasThumbnailUrl(lesson) ||
     hasAudioUrl(lesson)
   ) {
     step5Status = "warning";
-    step5Label = "Partial media — add video for ready status";
+    step5Label = "Медиа дутуу — бичлэг нэмвэл бэлэн болно";
   }
 
   let step7Status: StepStatus = "blocked";
-  let step7Label = "QA must pass first";
+  let step7Label = "Эхлээд чанарын шалгалт давах ёстой";
   if (publishStatus === "available") {
     step7Status = "done";
-    step7Label = "Published";
+    step7Label = "Нийтлэгдсэн";
   } else if (qaReady) {
     step7Status = "warning";
-    step7Label = "Ready to publish";
+    step7Label = "Нийтлэхэд бэлэн";
   }
 
   return [
     {
       number: 1,
-      title: "Draft lesson",
-      description: "Create lesson metadata",
+      title: "Ноорог хичээл",
+      description: "Хичээлийн ерөнхий мэдээллийг үүсгэх",
       status: step1Status,
       statusLabel: step1Label,
       href: "/admin/lessons/new",
-      hrefLabel: "New draft →",
-      extraLinks: [{ label: "Edit metadata →", href: editHref }],
+      hrefLabel: "Шинэ ноорог →",
+      extraLinks: [{ label: "Ерөнхий мэдээлэл засах", href: editHref }],
     },
     {
       number: 2,
       title: "Prompt",
-      description: "Generate ChatGPT JSON prompt",
+      description: "ChatGPT-д өгөх JSON prompt бэлдэх",
       status: "pending",
-      statusLabel: "Manual — copy prompt in edit page",
+      statusLabel: "Гараар — засах хуудаснаас prompt-оо хуулна",
       href: editHref,
-      hrefLabel: "Open prompt generator →",
+      hrefLabel: "Prompt үүсгэгч нээх →",
       extraLinks: [
-        { label: "Prompt library →", href: "/admin/prompts" },
+        { label: "Prompt-ийн сан", href: "/admin/prompts" },
         {
-          label: "Improve with prompts →",
+          label: "Prompt-оор сайжруулах",
           href: `${editHref}#content-improvement`,
         },
       ],
     },
     {
       number: 3,
-      title: "Import content",
-      description: "Paste/import subtitles, vocabulary, quiz",
+      title: "Контент оруулах",
+      description: "Хадмал, үгсийн сан, дасгалыг оруулах",
       status: step3Status,
       statusLabel: step3Label,
       href: editHref,
-      hrefLabel: "Bulk import →",
+      hrefLabel: "Бөөнөөр оруулах →",
     },
     {
       number: 4,
-      title: "QA",
-      description: "Check metadata, subtitles, vocabulary, quiz",
+      title: "Чанарын шалгалт",
+      description: "Ерөнхий мэдээлэл, хадмал, үгсийн сан, дасгалыг шалгах",
       status: step4Status,
       statusLabel: step4Label,
       href: editHref,
-      hrefLabel: "Import QA on edit page →",
+      hrefLabel: "Засах хуудасны чанарын шалгалт →",
       extraLinks: [
         {
-          label: "Release checklist →",
+          label: "Нийтлэхийн өмнөх шалгах жагсаалт",
           href: `${editHref}#release-readiness`,
         },
       ],
     },
     {
       number: 5,
-      title: "Media",
-      description: "Upload / attach media",
+      title: "Медиа",
+      description: "Медиа байршуулах, холбох",
       status: step5Status,
       statusLabel: step5Label,
       href: editHref,
-      hrefLabel: "Upload media →",
+      hrefLabel: "Медиа байршуулах →",
     },
     {
       number: 6,
-      title: "Preview",
-      description: "Admin preview lesson",
+      title: "Урьдчилж харах",
+      description: "Хичээлийг админаар урьдчилж харах",
       status: hasContent || publishStatus === "available" ? "done" : "pending",
       statusLabel:
         hasContent || publishStatus === "available"
-          ? "Preview available"
-          : "Add content to preview",
+          ? "Урьдчилж харах боломжтой"
+          : "Эхлээд контент нэмнэ үү",
       extraLinks: previewLinks,
     },
     {
       number: 7,
-      title: "Backup",
-      description: "Export lesson JSON",
+      title: "Нөөц хуулбар",
+      description: "Хичээлийн JSON-г гаргах",
       status: hasContent ? "pending" : "warning",
       statusLabel: hasContent
-        ? "Export before publish or replace"
-        : "Import content first",
+        ? "Нийтлэх эсвэл солихын өмнө хуулбар гаргана уу"
+        : "Эхлээд контент оруулна уу",
       href: editHref,
-      hrefLabel: "Export backup →",
+      hrefLabel: "Нөөц хуулбар гаргах →",
     },
       {
         number: 8,
-        title: "Publish",
-        description: "Publish when QA ready",
+        title: "Нийтлэх",
+        description: "Шалгалт давсны дараа нийтлэх",
         status: step7Status,
         statusLabel: step7Label,
         href: qaReady || publishStatus === "available" ? editHref : undefined,
         hrefLabel:
           publishStatus === "available"
-            ? "Manage publish status →"
+            ? "Нийтлэх төлөв удирдах →"
             : qaReady
-              ? "Publishing controls →"
+              ? "Нийтлэх тохиргоо →"
               : undefined,
         extraLinks: [
           {
-            label: "Approve for publish →",
+            label: "Нийтлэхийг батлах",
             href: `${editHref}#release-readiness`,
           },
         ],
       },
       {
         number: 9,
-        title: "Task review",
-        description: "Review generated admin tasks before publish",
+        title: "Ажлын шалгалт",
+        description: "Нийтлэхийн өмнө үүссэн админы ажлуудыг шалгах",
         status:
           publishStatus === "available"
             ? "done"
@@ -332,15 +332,15 @@ function buildSteps(
               : "blocked",
         statusLabel:
           publishStatus === "available"
-            ? "Published — monitor analytics tasks"
+            ? "Нийтлэгдсэн — тайлангийн ажлуудыг хянана"
             : hasContent
-              ? "Check task center for blockers"
-              : "Add content first",
+              ? "Саад болох ажил байгаа эсэхийг ажлын төвөөс шалгана"
+              : "Эхлээд контент нэмнэ үү",
         href: "/admin/tasks",
-        hrefLabel: "Open task center →",
+        hrefLabel: "Ажлын төв нээх →",
         extraLinks: [
           {
-            label: `Tasks for lesson ${lesson.id} →`,
+            label: `${lesson.id} хичээлийн ажлууд`,
             href: `/admin/tasks?lessonId=${encodeURIComponent(lesson.id)}`,
           },
         ],
@@ -358,11 +358,11 @@ export function LessonBuilderChecklist({
   return (
     <section className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:p-6">
       <h2 className="text-base font-semibold text-slate-900">
-        Workflow checklist
+        Ажлын урсгалын шалгах жагсаалт
       </h2>
       <p className="mt-1 text-sm text-slate-600">
-        Draft → Prompt → Improve → Import → QA → Media → Preview → Backup →
-        Publish
+        Ноорог → Prompt → Сайжруулах → Оруулах → Чанарын шалгалт → Медиа →
+        Урьдчилж харах → Нөөц хуулбар → Нийтлэх
       </p>
 
       {loading ? (
@@ -377,7 +377,7 @@ export function LessonBuilderChecklist({
               <div className="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
                 <div>
                   <p className="text-sm font-semibold text-slate-900">
-                    Step {step.number} — {step.title}
+                    {step.number}-р алхам — {step.title}
                   </p>
                   <p className="mt-0.5 text-sm text-slate-600">
                     {step.description}

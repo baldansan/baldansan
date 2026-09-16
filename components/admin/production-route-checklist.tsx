@@ -19,10 +19,10 @@ type Props = {
 };
 
 const STATUS_OPTIONS: { value: QaCheckStatus; label: string }[] = [
-  { value: "not_checked", label: "Not checked" },
-  { value: "pass", label: "Pass" },
-  { value: "warning", label: "Warning" },
-  { value: "fail", label: "Fail" },
+  { value: "not_checked", label: "Шалгаагүй" },
+  { value: "pass", label: "Давсан" },
+  { value: "warning", label: "Анхааруулга" },
+  { value: "fail", label: "Амжилтгүй" },
 ];
 
 function statusSelectClass(status: QaCheckStatus): string {
@@ -60,7 +60,7 @@ export function ProductionRouteChecklist({ section, items, onUpdate }: Props) {
                 </p>
                 <p className="mt-1 text-xs text-slate-600">{item.purpose}</p>
                 <p className="mt-1 text-xs text-emerald-800">
-                  Expected: {item.expected}
+                  Хүлээгдэж буй: {item.expected}
                 </p>
               </div>
               {item.productionPath ? (
@@ -70,13 +70,13 @@ export function ProductionRouteChecklist({ section, items, onUpdate }: Props) {
                   rel="noopener noreferrer"
                   className="inline-flex shrink-0 rounded-full border border-emerald-200 bg-white px-3 py-1 text-xs font-semibold text-emerald-800 hover:bg-emerald-50"
                 >
-                  Open on production
+                  Ажлын орчинд нээх
                 </a>
               ) : null}
             </div>
             <div className="mt-3 flex flex-col gap-2 sm:flex-row sm:items-center">
               <label className="sr-only" htmlFor={`qa-status-${item.id}`}>
-                Status for {item.label}
+                {item.label} — төлөв
               </label>
               <select
                 id={`qa-status-${item.id}`}
@@ -100,7 +100,7 @@ export function ProductionRouteChecklist({ section, items, onUpdate }: Props) {
                 onChange={(event) =>
                   onUpdate(item.id, { notes: event.target.value })
                 }
-                placeholder="Notes (optional)"
+                placeholder="Тэмдэглэл (заавал биш)"
                 rows={2}
                 className="min-h-[2.5rem] flex-1 rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm text-slate-700 placeholder:text-slate-400"
               />

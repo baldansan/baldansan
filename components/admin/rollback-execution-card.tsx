@@ -29,12 +29,12 @@ export function RollbackExecutionCard({ activity }: Props) {
     setLoading(false);
 
     if (result.error || !result.data) {
-      setError(result.error ?? "Rollback амжилтгүй.");
+      setError(result.error ?? "Буцаах үйлдэл амжилтгүй боллоо.");
       return;
     }
 
     setSuccess(
-      `Rollback амжилттай. ${result.data.restoredFields.join(", ")} сэргээгдлээ.`
+      `Амжилттай буцаалаа. ${result.data.restoredFields.join(", ")} сэргээгдлээ.`
     );
     router.refresh();
   }
@@ -42,14 +42,16 @@ export function RollbackExecutionCard({ activity }: Props) {
   return (
     <section className="rounded-2xl bg-amber-50/60 p-4 ring-1 ring-amber-200 sm:p-5">
       <div className="flex flex-wrap items-center gap-2">
-        <h3 className="text-sm font-semibold text-slate-900">Rollback</h3>
+        <h3 className="text-sm font-semibold text-slate-900">
+          Өөрчлөлтийг буцаах
+        </h3>
         {eligibility.supported ? (
           <span className="inline-flex rounded-full bg-emerald-50 px-2.5 py-0.5 text-xs font-semibold text-emerald-800 ring-1 ring-emerald-200">
-            Rollback available
+            Буцаах боломжтой
           </span>
         ) : (
           <span className="inline-flex rounded-full bg-slate-100 px-2.5 py-0.5 text-xs font-semibold text-slate-600 ring-1 ring-slate-200">
-            Unsupported
+            Буцаах боломжгүй
           </span>
         )}
       </div>
@@ -57,7 +59,7 @@ export function RollbackExecutionCard({ activity }: Props) {
       {eligibility.supported ? (
         <>
           <p className="mt-2 text-sm text-slate-700">
-            Before snapshot-оос дараах field-үүдийг сэргээнэ:
+            Өмнөх хувилбарын хуулбараас дараах талбаруудыг сэргээнэ:
           </p>
           <p className="mt-1 font-mono text-xs text-slate-800">
             {eligibility.restoredFields.join(", ")}
@@ -66,13 +68,14 @@ export function RollbackExecutionCard({ activity }: Props) {
       ) : (
         <p className="mt-2 text-sm text-slate-700">
           {eligibility.reason ??
-            "Rollback энэ action дээр одоогоор дэмжигдээгүй."}
+            "Энэ үйлдлийг одоогоор буцаах боломжгүй."}
         </p>
       )}
 
       <p className="mt-3 text-xs text-amber-900">
-        Rollback нь зөвхөн сонгосон metadata/status/media/release fields-г
-        сэргээнэ. Subtitle/vocabulary/quiz bulk rollback одоогоор идэвхгүй.
+        Буцаах үйлдэл нь зөвхөн ерөнхий мэдээлэл, төлөв, медиа, хувилбарын
+        талбаруудыг сэргээнэ. Хадмал, үгсийн сан, дасгалыг бөөнөөр буцаах
+        боломж одоогоор идэвхгүй.
       </p>
 
       {eligibility.supported ? (
@@ -83,7 +86,7 @@ export function RollbackExecutionCard({ activity }: Props) {
             onChange={(event) => setConfirmed(event.target.checked)}
             className="mt-1 rounded border-slate-300 text-emerald-600 focus:ring-emerald-500"
           />
-          <span>Би rollback хийх гэж буй өөрчлөлтийг ойлгож байна.</span>
+          <span>Би энэ өөрчлөлтийг буцаахыг ойлгож байна.</span>
         </label>
       ) : null}
 
@@ -102,14 +105,14 @@ export function RollbackExecutionCard({ activity }: Props) {
                 href={`/admin/lessons/${activity.lessonId}/edit`}
                 className="font-semibold text-emerald-800 hover:text-emerald-900"
               >
-                Open lesson edit →
+                Хичээл засах →
               </Link>
             ) : null}
             <Link
               href="/admin/activity"
               className="font-semibold text-emerald-800 hover:text-emerald-900"
             >
-              Activity log →
+              Үйлдлийн бүртгэл →
             </Link>
           </div>
         </div>
@@ -123,7 +126,7 @@ export function RollbackExecutionCard({ activity }: Props) {
             onClick={handleRollback}
             className="rounded-full bg-emerald-500 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-emerald-600 disabled:cursor-not-allowed disabled:bg-slate-300"
           >
-            {loading ? "Rolling back…" : "Execute rollback"}
+            {loading ? "Буцааж байна…" : "Буцаах"}
           </button>
         </div>
       ) : null}

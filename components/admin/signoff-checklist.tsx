@@ -16,10 +16,10 @@ type Props = {
 };
 
 const STATUS_OPTIONS: { value: SignoffCheckStatus; label: string }[] = [
-  { value: "not_checked", label: "Not checked" },
-  { value: "pass", label: "Pass" },
-  { value: "warning", label: "Warning" },
-  { value: "fail", label: "Fail" },
+  { value: "not_checked", label: "Шалгаагүй" },
+  { value: "pass", label: "Давсан" },
+  { value: "warning", label: "Анхааруулга" },
+  { value: "fail", label: "Амжилтгүй" },
 ];
 
 function statusSelectClass(status: SignoffCheckStatus): string {
@@ -33,7 +33,7 @@ export function SignoffChecklist({ items, onUpdate }: Props) {
   return (
     <section className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:p-6">
       <h2 className="text-lg font-semibold text-slate-900">
-        Final sign-off checklist
+        Эцсийн баталгааны шалгах жагсаалт
       </h2>
       <ul className="mt-4 flex flex-col gap-3">
         {items.map((item) => (
@@ -50,7 +50,7 @@ export function SignoffChecklist({ items, onUpdate }: Props) {
                   rel="noopener noreferrer"
                   className="shrink-0 text-xs font-semibold text-emerald-800 hover:underline"
                 >
-                  Open on production
+                  Ажлын орчинд нээх
                 </a>
               ) : null}
             </div>
@@ -73,7 +73,7 @@ export function SignoffChecklist({ items, onUpdate }: Props) {
               <textarea
                 value={item.notes}
                 onChange={(e) => onUpdate(item.id, { notes: e.target.value })}
-                placeholder="Notes (optional)"
+                placeholder="Тэмдэглэл (заавал биш)"
                 rows={2}
                 className="min-h-[2.5rem] flex-1 rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm"
               />
@@ -102,9 +102,9 @@ export function SignoffBlockersList({ items, decision }: BlockersProps) {
   ) {
     return (
       <section className="rounded-2xl bg-emerald-50 p-5 ring-1 ring-emerald-200 sm:p-6">
-        <h2 className="text-lg font-semibold text-emerald-900">Launch blockers</h2>
+        <h2 className="text-lg font-semibold text-emerald-900">Гаргахад саад болж буй зүйлс</h2>
         <p className="mt-3 text-sm text-emerald-800">
-          Launch sign-off complete. Production is ready for controlled launch.
+          Гаргалтын баталгаа дууссан. Ажлын орчин гаргахад бэлэн байна.
         </p>
       </section>
     );
@@ -112,15 +112,15 @@ export function SignoffBlockersList({ items, decision }: BlockersProps) {
 
   return (
     <section className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:p-6">
-      <h2 className="text-lg font-semibold text-slate-900">Launch blockers</h2>
+      <h2 className="text-lg font-semibold text-slate-900">Гаргахад саад болж буй зүйлс</h2>
       {blockedByDecision ? (
         <p className="mt-3 rounded-lg bg-red-50 px-3 py-2 text-sm text-red-900 ring-1 ring-red-100">
-          Decision is <strong>blocked</strong> — resolve issues before go-live.
+          Шийдвэр <strong>blocked</strong> байна — гаргахаас өмнө асуудлыг шийднэ үү.
         </p>
       ) : null}
       {failed.length === 0 && !blockedByDecision ? (
         <p className="mt-3 text-sm text-emerald-800">
-          No failed checklist items. Review decision and warnings before go-live.
+          Амжилтгүй зүйл алга. Гаргахаас өмнө шийдвэр, анхааруулгуудыг хянана уу.
         </p>
       ) : (
         <ul className="mt-3 space-y-2">
@@ -139,7 +139,7 @@ export function SignoffBlockersList({ items, decision }: BlockersProps) {
       )}
       {warnings.length > 0 ? (
         <>
-          <h3 className="mt-6 text-sm font-semibold text-amber-900">Warnings</h3>
+          <h3 className="mt-6 text-sm font-semibold text-amber-900">Анхааруулга</h3>
           <ul className="mt-2 space-y-2">
             {warnings.map((item) => (
               <li

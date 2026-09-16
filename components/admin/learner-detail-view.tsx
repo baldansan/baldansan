@@ -42,7 +42,7 @@ const STAGE_LABEL: Record<string, string> = {
   hsk6: "HSK 6",
   hsk7: "HSK 7-9",
   quiz: "Сорил",
-  mock_exam: "Mock",
+  mock_exam: "Мок шалгалт",
   word_practice: "Үг",
   order: "Эвлүүлэх",
   subject: "Өгүүлэгдэхүүн",
@@ -115,7 +115,7 @@ export function LearnerDetailView({ learners, detail }: Props) {
             <p className="text-2xl font-black text-emerald-700">
               {detail.feedback.length}
             </p>
-            <p className="text-xs font-bold text-slate-500">Feedback</p>
+            <p className="text-xs font-bold text-slate-500">Санал хүсэлт</p>
           </div>
         </div>
       </section>
@@ -123,12 +123,12 @@ export function LearnerDetailView({ learners, detail }: Props) {
       {detail.mockAttempts.length > 0 ? (
         <section className="admin-panel overflow-x-auto p-0">
           <h3 className="border-b border-slate-100 px-4 py-3 text-sm font-semibold">
-            Mock exam түүх
+            Мок шалгалтын түүх
           </h3>
           <table className="admin-table w-full text-sm">
             <thead>
               <tr>
-                <th>Test</th>
+                <th>Шалгалт</th>
                 <th>Оноо</th>
                 <th>Дууссан</th>
               </tr>
@@ -160,7 +160,7 @@ export function LearnerDetailView({ learners, detail }: Props) {
               <tr>
                 <th>Цаг</th>
                 <th>Хичээл</th>
-                <th>Стади</th>
+                <th>Үе шат</th>
                 <th>Асуулт</th>
                 <th>Оролд.</th>
                 <th>Үр дүн</th>
@@ -198,7 +198,7 @@ export function LearnerDetailView({ learners, detail }: Props) {
               <tr>
                 <th>Хичээл</th>
                 <th>Асуулт</th>
-                <th>Стади</th>
+                <th>Үе шат</th>
                 <th>Буруу</th>
                 <th>Нийт</th>
                 <th>Дунд хугацаа</th>
@@ -298,10 +298,10 @@ export function LearnerDetailView({ learners, detail }: Props) {
 
       <section className="admin-panel overflow-x-auto p-0">
         <h3 className="border-b border-slate-100 px-4 py-3 text-sm font-semibold">
-          Бүх feedback
+          Бүх санал хүсэлт
         </h3>
         {detail.feedback.length === 0 ? (
-          <p className="px-4 py-6 text-sm text-slate-500">Feedback байхгүй.</p>
+          <p className="px-4 py-6 text-sm text-slate-500">Санал хүсэлт байхгүй.</p>
         ) : (
           <ul className="divide-y divide-slate-100">
             {detail.feedback.map((row) => (

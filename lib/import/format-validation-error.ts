@@ -28,9 +28,9 @@ export function formatValidationError(raw: string): FormattedValidationError {
     const [, path, fieldLabel] = match;
     return {
       path,
-      issue: `${fieldLabel} is required`,
-      expected: `non-empty ${fieldLabel}`,
-      found: "(missing or empty)",
+      issue: `${fieldLabel} заавал байх ёстой`,
+      expected: `хоосон биш ${fieldLabel}`,
+      found: "(дутуу эсвэл хоосон)",
       raw: trimmed,
     };
   }
@@ -40,9 +40,9 @@ export function formatValidationError(raw: string): FormattedValidationError {
     const [, path, kind] = match;
     return {
       path,
-      issue: `must be a ${kind}`,
+      issue: `${kind} төрөлтэй байх ёстой`,
       expected: kind,
-      found: "wrong type or missing",
+      found: "буруу төрөл эсвэл дутуу",
       raw: trimmed,
     };
   }
@@ -52,9 +52,9 @@ export function formatValidationError(raw: string): FormattedValidationError {
     const [, path] = match;
     return {
       path,
-      issue: "file or field not found in ZIP",
-      expected: "present in ZIP package",
-      found: "missing",
+      issue: "ZIP багцаас файл эсвэл талбар олдсонгүй",
+      expected: "ZIP багц дотор байх ёстой",
+      found: "дутуу",
       raw: trimmed,
     };
   }
@@ -95,12 +95,12 @@ export function collectValidationErrorMessages(
 
   if (!validation.preview) {
     messages.push(
-      "Preview could not be built — check manifest.json, lesson.json, and importContext."
+      "Урьдчилж харах хэсгийг үүсгэж чадсангүй — manifest.json, lesson.json болон importContext-ийг шалгана уу."
     );
   }
   if (!validation.importPayload) {
     messages.push(
-      "Import payload missing — bulk import data was not produced (fix errors above first)."
+      "Оруулах өгөгдөл дутуу — бөөнөөр оруулах өгөгдөл үүсээгүй (эхлээд дээрх алдаануудыг засна уу)."
     );
   }
   if (validation.contentValidation && !validation.contentValidation.valid) {
@@ -109,7 +109,9 @@ export function collectValidationErrorMessages(
     }
   }
   if (!validation.ok && messages.length === 0) {
-    messages.push("Validation failed — see Raw validation debug below.");
+    messages.push(
+      "Шалгалт амжилтгүй — доорх «Шалгалтын түүхий мэдээлэл» хэсгийг харна уу."
+    );
   }
 
   return messages;

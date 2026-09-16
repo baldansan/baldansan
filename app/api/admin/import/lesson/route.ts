@@ -26,19 +26,19 @@ export async function POST(request: Request) {
 
   if (!body.courseId?.trim()) {
     return NextResponse.json(
-      { ok: false, errors: ["courseId missing in manifest.json."] },
+      { ok: false, errors: ["manifest.json дотор courseId алга байна."] },
       { status: 400 }
     );
   }
   if (!body.lessonId?.trim()) {
     return NextResponse.json(
-      { ok: false, errors: ["lessonId missing in manifest.json."] },
+      { ok: false, errors: ["manifest.json дотор lessonId алга байна."] },
       { status: 400 }
     );
   }
   if (!body.importPayload) {
     return NextResponse.json(
-      { ok: false, errors: ["ZIP parse data missing. Please validate again."] },
+      { ok: false, errors: ["ZIP багцын мэдээлэл алга. Дахин шалгана уу."] },
       { status: 400 }
     );
   }

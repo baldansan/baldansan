@@ -24,6 +24,14 @@ type Props = {
   initialLessonFilter?: string;
 };
 
+/** Display-only labels. Keys stay as the raw engagement values. */
+const ENGAGEMENT_LABEL: Record<string, string> = {
+  high: "Өндөр",
+  medium: "Дунд",
+  low: "Бага",
+  none: "Алга",
+};
+
 function engagementBadge(level: VocabularyEngagementLevel) {
   switch (level) {
     case "high":
@@ -107,21 +115,21 @@ export function VocabularyInsightsView({
     showAttention?: boolean;
   }) {
     if (rows.length === 0) {
-      return <p className="mt-3 text-sm text-slate-500">No words match.</p>;
+      return <p className="mt-3 text-sm text-slate-500">Тохирох үг алга.</p>;
     }
     return (
       <div className="mt-4 overflow-x-auto rounded-2xl bg-white shadow-sm ring-1 ring-slate-200">
         <table className="min-w-full text-left text-sm">
           <thead className="bg-slate-50 text-xs uppercase text-slate-500">
             <tr>
-              <th className="px-4 py-3">Chinese</th>
-              <th className="px-4 py-3">Pinyin</th>
-              <th className="px-4 py-3">Mongolian</th>
+              <th className="px-4 py-3">Хятад</th>
+              <th className="px-4 py-3">Пиньинь</th>
+              <th className="px-4 py-3">Монгол</th>
               <th className="px-4 py-3">HSK</th>
-              <th className="px-4 py-3">Learned</th>
-              <th className="px-4 py-3">Engagement</th>
-              <th className="px-4 py-3">Lesson</th>
-              <th className="px-4 py-3">Actions</th>
+              <th className="px-4 py-3">Сурсан</th>
+              <th className="px-4 py-3">Идэвх</th>
+              <th className="px-4 py-3">Хичээл</th>
+              <th className="px-4 py-3">Үйлдэл</th>
             </tr>
           </thead>
           <tbody className="divide-y divide-slate-100">
@@ -136,10 +144,10 @@ export function VocabularyInsightsView({
                   <span
                     className={`inline-flex rounded-full px-2 py-0.5 text-xs font-medium ring-1 ${engagementBadge(row.engagement)}`}
                   >
-                    {row.engagement}
+                    {ENGAGEMENT_LABEL[row.engagement] ?? row.engagement}
                   </span>
                   {showAttention && row.learnedCount === 0 ? (
-                    <span className="ml-1 text-xs text-amber-700">Attention</span>
+                    <span className="ml-1 text-xs text-amber-700">Анхаарах</span>
                   ) : null}
                 </td>
                 <td className="px-4 py-3 font-mono text-xs">{row.lessonId}</td>
@@ -149,17 +157,17 @@ export function VocabularyInsightsView({
                       href={`/admin/analytics/lessons/${row.lessonId}`}
                       className="font-medium text-emerald-700 hover:text-emerald-800"
                     >
-                      Analytics
+                      Тайлан
                     </Link>
                     <Link
                       href={`/admin/lessons/${row.lessonId}/edit`}
                       className="font-medium text-slate-600 hover:text-emerald-700"
                     >
-                      Edit
+                      Засах
                     </Link>
                     {(showAttention || row.engagement === "low" || row.engagement === "none") ? (
                       <ImprovementPromptCopyButton
-                        label="Generate vocabulary improvement prompt"
+                        label="Үгийн сайжруулах prompt үүсгэх"
                         prompt={buildVocabularyImprovementPrompt(row)}
                       />
                     ) : null}
@@ -177,7 +185,7 @@ export function VocabularyInsightsView({
     <div className="flex flex-col gap-8">
       <section>
         <h1 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
-          Vocabulary insights
+          Үгсийн сангийн дүн шинжилгээ
         </h1>
         <p className="mt-2 text-sm text-slate-600">
           Суралцагчид ямар үгсийг хамгийн их сурч, ямар үгс орхигдож
@@ -187,7 +195,7 @@ export function VocabularyInsightsView({
 
       {overview.warnings.length > 0 ? (
         <div className="rounded-xl bg-amber-50 px-4 py-3 text-sm text-amber-900 ring-1 ring-amber-200">
-          <p className="font-semibold">Analytics notes</p>
+          <p className="font-semibold">Тайлангийн анхааруулга</p>
           <ul className="mt-2 list-inside list-disc">
             {overview.warnings.map((warning) => (
               <li key={warning}>{warning}</li>
@@ -197,33 +205,33 @@ export function VocabularyInsightsView({
       ) : null}
 
       <section>
-        <h2 className="text-lg font-semibold text-slate-900">Summary</h2>
+        <h2 className="text-lg font-semibold text-slate-900">Хураангуй</h2>
         <div className="mt-3 grid grid-cols-2 gap-3 sm:grid-cols-4">
           <AnalyticsMetricCard
-            label="Total vocabulary"
+            label="Нийт үг"
             value={overview.totalVocabularyWords}
           />
           <AnalyticsMetricCard
-            label="Learned rows"
+            label="Сурсан бүртгэл"
             value={overview.learnedRows}
           />
           <AnalyticsMetricCard
-            label="Unique learned"
+            label="Давхардалгүй сурсан үг"
             value={overview.uniqueLearnedWords}
           />
           <AnalyticsMetricCard
-            label="Never learned"
+            label="Огт сураагүй үг"
             value={overview.wordsNeverLearned}
           />
         </div>
       </section>
 
       <section>
-        <h2 className="text-lg font-semibold text-slate-900">Filters</h2>
+        <h2 className="text-lg font-semibold text-slate-900">Шүүлт</h2>
         <div className="mt-3 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
           <input
             type="search"
-            placeholder="Search Chinese / pinyin / Mongolian…"
+            placeholder="Хятад / пиньинь / монголоор хайх…"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             className="rounded-xl border border-slate-200 px-3 py-2 text-sm"
@@ -233,7 +241,7 @@ export function VocabularyInsightsView({
             onChange={(e) => setLessonFilter(e.target.value)}
             className="rounded-xl border border-slate-200 px-3 py-2 text-sm"
           >
-            <option value="all">All lessons</option>
+            <option value="all">Бүх хичээл</option>
             {lessonOptions.map(([id, title]) => (
               <option key={id} value={id}>
                 {id} — {title}
@@ -245,7 +253,7 @@ export function VocabularyInsightsView({
             onChange={(e) => setHskFilter(e.target.value)}
             className="rounded-xl border border-slate-200 px-3 py-2 text-sm"
           >
-            <option value="all">All HSK levels</option>
+            <option value="all">Бүх HSK түвшин</option>
             {hskOptions.map((level) => (
               <option key={level} value={level}>
                 {level}
@@ -259,23 +267,25 @@ export function VocabularyInsightsView({
             }
             className="rounded-xl border border-slate-200 px-3 py-2 text-sm"
           >
-            <option value="all">All engagement</option>
-            <option value="high">High</option>
-            <option value="medium">Medium</option>
-            <option value="low">Low</option>
-            <option value="none">None</option>
+            <option value="all">Бүх идэвх</option>
+            <option value="high">Өндөр</option>
+            <option value="medium">Дунд</option>
+            <option value="low">Бага</option>
+            <option value="none">Алга</option>
           </select>
         </div>
       </section>
 
       <section>
-        <h2 className="text-lg font-semibold text-slate-900">Most learned</h2>
+        <h2 className="text-lg font-semibold text-slate-900">
+          Хамгийн их сурсан үг
+        </h2>
         <WordTable rows={mostLearned} />
       </section>
 
       <section>
         <h2 className="text-lg font-semibold text-slate-900">
-          Least learned / never learned
+          Хамгийн бага сурсан / огт сураагүй үг
         </h2>
         <WordTable rows={leastLearned} showAttention />
       </section>
@@ -285,13 +295,13 @@ export function VocabularyInsightsView({
           href="/admin/analytics"
           className="inline-flex rounded-full border border-slate-200 px-5 py-2.5 text-sm font-medium text-slate-700 hover:border-emerald-200 hover:text-emerald-700"
         >
-          Back to analytics
+          Тайлан руу буцах
         </Link>
         <Link
           href="/admin/analytics/questions"
           className="inline-flex rounded-full border border-emerald-200 bg-emerald-50 px-5 py-2.5 text-sm font-semibold text-emerald-800 hover:bg-emerald-100"
         >
-          Question insights
+          Асуултын дүн шинжилгээ
         </Link>
       </div>
     </div>

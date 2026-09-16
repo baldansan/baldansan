@@ -25,6 +25,44 @@ const STATUS_OPTIONS: B2BInquiryStatus[] = [
   "archived",
 ];
 
+/** Зөвхөн дэлгэцэнд харуулах нэр — өгөгдлийн утгыг өөрчлөхгүй. */
+const STATUS_LABELS: Record<string, string> = {
+  new: "Шинэ",
+  contacted: "Холбоо барьсан",
+  demo_scheduled: "Танилцуулга товлосон",
+  proposal_sent: "Санал илгээсэн",
+  pilot: "Туршилт",
+  won: "Гэрээ байгуулсан",
+  lost: "Татгалзсан",
+  archived: "Архивласан",
+};
+
+const ORG_TYPE_LABELS: Record<string, string> = {
+  training_center: "Сургалтын төв",
+  school: "Сургууль",
+  university: "Их сургууль",
+  teacher: "Багш (хувь хүн)",
+  company: "Компани",
+  other: "Бусад",
+};
+
+const PACKAGE_LABELS: Record<string, string> = {
+  teacher: "Багшийн багц",
+  school: "Сургуулийн багц",
+  training_center: "Сургалтын төвийн багц",
+  custom: "Тусгай багц",
+};
+
+const SOURCE_LABELS: Record<string, string> = {
+  school_inquiry_page: "Сургуулийн хүсэлтийн хуудас",
+};
+
+const ACTIVITY_ACTION_LABELS: Record<string, string> = {
+  note_added: "Тэмдэглэл нэмсэн",
+  status_updated: "Төлөв өөрчилсөн",
+  organization_created: "Байгууллага үүсгэсэн",
+};
+
 type Props = {
   inquiryId: string;
 };
@@ -134,7 +172,7 @@ export function AdminB2BInquiryDetail({ inquiryId }: Props) {
       await addB2BInquiryActivity(
         inquiryId,
         "organization_created",
-        `Organization created: ${res.data.name}`,
+        `Байгууллага үүсгэлээ: ${res.data.name}`,
         { organizationId: res.data.id }
       );
       void load();
@@ -142,15 +180,15 @@ export function AdminB2BInquiryDetail({ inquiryId }: Props) {
   }
 
   if (loading) {
-    return <p className="text-sm text-slate-600">Loading inquiry…</p>;
+    return <p className="text-sm text-slate-600">Ачаалж байна…</p>;
   }
 
   if (!inquiry) {
     return (
       <div>
-        <p className="text-sm text-slate-600">{error ?? "Inquiry not found."}</p>
+        <p className="text-sm text-slate-600">{error ?? "Хүсэлт олдсонгүй."}</p>
         <Link href="/admin/b2b/inquiries" className="mt-2 text-sm text-emerald-600">
-          ← Inquiries
+          ← Хүсэлтүүд
         </Link>
       </div>
     );
@@ -163,7 +201,7 @@ export function AdminB2BInquiryDetail({ inquiryId }: Props) {
           href="/admin/b2b/inquiries"
           className="text-sm text-slate-600 hover:text-emerald-600"
         >
-          ← Inquiries
+          ← Хүсэлтүүд
         </Link>
         <h1 className="mt-2 text-2xl font-bold tracking-tight">
           {inquiry.organizationName}
@@ -179,31 +217,43 @@ export function AdminB2BInquiryDetail({ inquiryId }: Props) {
       </section>
 
       <section className="rounded-2xl bg-white p-5 ring-1 ring-slate-200">
-        <h2 className="font-semibold text-slate-900">Inquiry details</h2>
+        <h2 className="font-semibold text-slate-900">Хүсэлтийн мэдээлэл</h2>
         <dl className="mt-3 grid gap-2 text-sm sm:grid-cols-2">
           <div>
-            <dt className="text-slate-500">Type</dt>
-            <dd>{inquiry.organizationType ?? "—"}</dd>
+            <dt className="text-slate-500">Төрөл</dt>
+            <dd>
+              {inquiry.organizationType
+                ? ORG_TYPE_LABELS[inquiry.organizationType] ??
+                  inquiry.organizationType
+                : "—"}
+            </dd>
           </div>
           <div>
-            <dt className="text-slate-500">Students</dt>
+            <dt className="text-slate-500">Сурагчийн тоо</dt>
             <dd>{inquiry.studentCount ?? "—"}</dd>
           </div>
           <div>
-            <dt className="text-slate-500">Package</dt>
-            <dd>{inquiry.interestedPackage ?? "—"}</dd>
+            <dt className="text-slate-500">Багц</dt>
+            <dd>
+              {inquiry.interestedPackage
+                ? PACKAGE_LABELS[inquiry.interestedPackage] ??
+                  inquiry.interestedPackage
+                : "—"}
+            </dd>
           </div>
           <div>
-            <dt className="text-slate-500">Source</dt>
-            <dd>{inquiry.source}</dd>
+            <dt className="text-slate-500">Хаанаас ирсэн</dt>
+            <dd>{SOURCE_LABELS[inquiry.source] ?? inquiry.source}</dd>
           </div>
           <div>
-            <dt className="text-slate-500">Created</dt>
+            <dt className="text-slate-500">Ирсэн огноо</dt>
             <dd>{formatMongoliaDateTimeWithLabel(inquiry.createdAt)}</dd>
           </div>
           <div>
-            <dt className="text-slate-500">Assigned to</dt>
-            <dd className="text-slate-400">{inquiry.assignedTo ?? "Unassigned"}</dd>
+            <dt className="text-slate-500">Хариуцагч</dt>
+            <dd className="text-slate-400">
+              {inquiry.assignedTo ?? "Хариуцагч тодорхойгүй"}
+            </dd>
           </div>
         </dl>
         {inquiry.message ? (
@@ -215,7 +265,7 @@ export function AdminB2BInquiryDetail({ inquiryId }: Props) {
 
       <section className="rounded-2xl bg-white p-5 ring-1 ring-slate-200">
         <label className="flex flex-col gap-1 text-sm">
-          <span className="font-medium text-slate-700">Status</span>
+          <span className="font-medium text-slate-700">Төлөв</span>
           <select
             value={status}
             onChange={(e) => setStatus(e.target.value as B2BInquiryStatus)}
@@ -223,7 +273,7 @@ export function AdminB2BInquiryDetail({ inquiryId }: Props) {
           >
             {STATUS_OPTIONS.map((s) => (
               <option key={s} value={s}>
-                {s}
+                {STATUS_LABELS[s] ?? s}
               </option>
             ))}
           </select>
@@ -234,13 +284,13 @@ export function AdminB2BInquiryDetail({ inquiryId }: Props) {
           onClick={() => void handleSaveStatus()}
           className="mt-3 rounded-full bg-emerald-500 px-4 py-2 text-sm font-semibold text-white disabled:opacity-60"
         >
-          Save status
+          {saving ? "Хадгалж байна…" : "Төлөв хадгалах"}
         </button>
       </section>
 
       <section className="rounded-2xl bg-white p-5 ring-1 ring-slate-200">
         <label className="flex flex-col gap-1 text-sm">
-          <span className="font-medium text-slate-700">Admin note</span>
+          <span className="font-medium text-slate-700">Админы тэмдэглэл</span>
           <textarea
             value={adminNote}
             onChange={(e) => setAdminNote(e.target.value)}
@@ -254,7 +304,7 @@ export function AdminB2BInquiryDetail({ inquiryId }: Props) {
           onClick={() => void handleSaveNote()}
           className="mt-3 rounded-full border border-slate-200 px-4 py-2 text-sm font-semibold text-slate-700"
         >
-          Save note
+          Тэмдэглэл хадгалах
         </button>
       </section>
 
@@ -265,23 +315,25 @@ export function AdminB2BInquiryDetail({ inquiryId }: Props) {
           onClick={() => void handleCreateOrganization()}
           className="rounded-full bg-emerald-500 px-4 py-2 text-sm font-semibold text-white disabled:opacity-60"
         >
-          Create organization from inquiry
+          Энэ хүсэлтээс байгууллага үүсгэх
         </button>
         {orgLink ? (
           <Link
             href={`/admin/b2b/organizations/${orgLink}`}
             className="rounded-full border border-emerald-200 bg-emerald-50 px-4 py-2 text-sm font-semibold text-emerald-800"
           >
-            View organization →
+            Байгууллагыг харах →
           </Link>
         ) : null}
       </section>
 
       {orgLink || status === "pilot" || status === "won" ? (
         <section className="rounded-2xl bg-emerald-50 p-5 ring-1 ring-emerald-200">
-          <h2 className="font-semibold text-emerald-900">Next step: bulk import</h2>
+          <h2 className="font-semibold text-emerald-900">
+            Дараагийн алхам: гишүүдийг бөөнөөр оруулах
+          </h2>
           <p className="mt-2 text-sm text-emerald-800">
-            Bulk import teachers/students during pilot setup.
+            Туршилтын бэлтгэл хийх үедээ багш, сурагчдыг бөөнөөр оруулна.
           </p>
           {orgLink ? (
             <div className="mt-3 flex flex-wrap gap-2">
@@ -289,35 +341,38 @@ export function AdminB2BInquiryDetail({ inquiryId }: Props) {
                 href={`/organization/${orgLink}/members/import`}
                 className="rounded-full bg-emerald-500 px-4 py-2 text-sm font-semibold text-white"
               >
-                Bulk import members →
+                Гишүүдийг бөөнөөр оруулах →
               </Link>
               <Link
                 href={`/organization/${orgLink}/setup`}
                 className="rounded-full border border-emerald-300 px-4 py-2 text-sm font-semibold text-emerald-800"
               >
-                Setup wizard →
+                Тохиргооны алхмууд →
               </Link>
             </div>
           ) : (
             <p className="mt-2 text-sm text-emerald-800">
-              Create organization first, then use bulk import pages.
+              Эхлээд байгууллагаа үүсгэсний дараа гишүүдийг бөөнөөр оруулах
+              боломжтой болно.
             </p>
           )}
         </section>
       ) : null}
 
       <section className="rounded-2xl bg-white p-5 ring-1 ring-slate-200">
-        <h2 className="font-semibold text-slate-900">Activity</h2>
+        <h2 className="font-semibold text-slate-900">Үйлдлийн бүртгэл</h2>
         <ul className="mt-3 flex flex-col gap-2">
           {activity.length === 0 ? (
-            <li className="text-sm text-slate-600">No activity yet.</li>
+            <li className="text-sm text-slate-600">Одоогоор үйлдэл алга.</li>
           ) : (
             activity.map((a) => (
               <li
                 key={a.id}
                 className="rounded-lg bg-slate-50 px-3 py-2 text-sm text-slate-700"
               >
-                <span className="font-medium">{a.action}</span>
+                <span className="font-medium">
+                  {ACTIVITY_ACTION_LABELS[a.action] ?? a.action}
+                </span>
                 {a.note ? <span> — {a.note}</span> : null}
                 <span className="block text-xs text-slate-400">
                   {formatMongoliaDateTimeWithLabel(a.createdAt)}
@@ -330,7 +385,7 @@ export function AdminB2BInquiryDetail({ inquiryId }: Props) {
           <input
             value={activityNote}
             onChange={(e) => setActivityNote(e.target.value)}
-            placeholder="Add activity note…"
+            placeholder="Тэмдэглэл бичих…"
             className="flex-1 rounded-lg border border-slate-200 px-3 py-2 text-sm"
           />
           <button
@@ -339,7 +394,7 @@ export function AdminB2BInquiryDetail({ inquiryId }: Props) {
             onClick={() => void handleAddActivity()}
             className="rounded-full border border-slate-200 px-4 py-2 text-sm font-semibold text-slate-700"
           >
-            Add note
+            Тэмдэглэл нэмэх
           </button>
         </div>
       </section>

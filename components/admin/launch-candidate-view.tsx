@@ -101,7 +101,7 @@ export function LaunchCandidateView() {
   if (!hydrated) {
     return (
       <p className="rounded-2xl bg-slate-50 px-6 py-8 text-center text-sm text-slate-600 ring-1 ring-slate-200">
-        Launch candidate ачааллаж байна…
+        Гаргалтын хувилбар ачаалж байна…
       </p>
     );
   }
@@ -111,11 +111,11 @@ export function LaunchCandidateView() {
   return (
     <div className="flex flex-col gap-6">
       <section className="rounded-2xl bg-emerald-50/60 p-5 ring-1 ring-emerald-100 sm:p-6">
-        <h2 className="text-lg font-semibold text-slate-900">Production summary</h2>
+        <h2 className="text-lg font-semibold text-slate-900">Ажлын орчны товчоо</h2>
         <p className="mt-2 font-mono text-sm text-emerald-800">{PRODUCTION_URL}</p>
         <p className="mt-2 text-sm text-slate-600">
-          {summary.pass} pass · {summary.warning} warn · {summary.fail} fail ·{" "}
-          {summary.not_checked} not checked
+          {summary.pass} давсан · {summary.warning} анхааруулга ·{" "}
+          {summary.fail} амжилтгүй · {summary.not_checked} шалгаагүй
         </p>
         <div className="mt-4 flex flex-wrap gap-2">
           <a
@@ -124,31 +124,31 @@ export function LaunchCandidateView() {
             rel="noopener noreferrer"
             className="inline-flex rounded-full bg-emerald-500 px-4 py-2 text-sm font-semibold text-white hover:bg-emerald-600"
           >
-            Deployment check
+            Байршуулалтын шалгалт
           </a>
           <Link
             href="/admin/system-check"
             className="inline-flex rounded-full border border-emerald-200 bg-white px-4 py-2 text-sm font-semibold text-emerald-800 hover:bg-emerald-50"
           >
-            System check
+            Системийн шалгалт
           </Link>
           <Link
             href="/admin/production-qa"
             className="inline-flex rounded-full border border-emerald-200 bg-white px-4 py-2 text-sm font-semibold text-emerald-800 hover:bg-emerald-50"
           >
-            Production QA
+            Чанарын шалгалт
           </Link>
           <Link
             href="/admin/security-audit"
             className="inline-flex rounded-full border border-emerald-200 bg-white px-4 py-2 text-sm font-semibold text-emerald-800 hover:bg-emerald-50"
           >
-            Security audit
+            Аюулгүй байдлын үзлэг
           </Link>
           <Link
             href="/admin/final-audit"
             className="inline-flex rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:border-emerald-200"
           >
-            Final audit
+            Эцсийн үзлэг
           </Link>
         </div>
       </section>
@@ -187,28 +187,28 @@ export function LaunchCandidateView() {
 
       <section className="rounded-2xl bg-emerald-50/80 p-5 ring-1 ring-emerald-200 sm:p-6">
         <h2 className="text-base font-semibold text-emerald-900">
-          Proceed to Launch Sign-off
+          Гаргалтын баталгаа руу шилжих
         </h2>
         <p className="mt-2 text-sm text-emerald-800">
-          After smoke test and launch candidate decision, complete final go/no-go
-          sign-off with version, owner, and export.
+          Шалгалт хийж, гаргах шийдвэрээ гаргасны дараа хувилбар, хариуцагчаа
+          бичиж, эцсийн баталгааг гүйцээгээд тайлангаа гаргана.
         </p>
         <Link
           href="/admin/launch-signoff"
           className="mt-4 inline-flex rounded-full bg-emerald-600 px-5 py-2.5 text-sm font-semibold text-white hover:bg-emerald-700"
         >
-          Proceed to Launch Sign-off →
+          Гаргалтын баталгаа руу →
         </Link>
       </section>
 
       <section className="rounded-2xl bg-slate-50 p-5 ring-1 ring-slate-200">
-        <h2 className="text-base font-semibold text-slate-900">Go-live docs</h2>
+        <h2 className="text-base font-semibold text-slate-900">Гаргалтын баримт бичиг</h2>
         <p className="mt-2 text-sm text-slate-600">
           GO_LIVE_NOTES.md · ROLLBACK_PLAN.md · POST_LAUNCH_MONITORING.md ·
           PHASE_6_LAUNCH_SUMMARY.md
         </p>
         <p className="mt-2 text-xs text-slate-500">
-          Sections: {Object.values(LAUNCH_SECTION_LABELS).join(" · ")}
+          Хэсгүүд: {Object.values(LAUNCH_SECTION_LABELS).join(" · ")}
         </p>
       </section>
     </div>

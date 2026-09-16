@@ -17,10 +17,10 @@ type Props = {
 };
 
 function decisionLabel(value: SignoffDecisionValue): string {
-  if (value === "go_live") return "Go live";
-  if (value === "needs_review") return "Needs review";
-  if (value === "blocked") return "Blocked";
-  return "Not decided";
+  if (value === "go_live") return "Гаргая";
+  if (value === "needs_review") return "Шалгах шаардлагатай";
+  if (value === "blocked") return "Түр зогсоосон";
+  return "Шийдээгүй";
 }
 
 function decisionClass(value: SignoffDecisionValue): string {
@@ -39,7 +39,7 @@ export function SignoffDecisionCard({
 }: Props) {
   return (
     <section className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:p-6">
-      <h2 className="text-lg font-semibold text-slate-900">Go / No-Go decision</h2>
+      <h2 className="text-lg font-semibold text-slate-900">Гаргах эсэх шийдвэр</h2>
       <p className="mt-2">
         <span
           className={`inline-flex rounded-full px-3 py-1 text-sm font-semibold ring-1 ${decisionClass(decision.value)}`}
@@ -49,13 +49,13 @@ export function SignoffDecisionCard({
       </p>
       {decision.updatedAt && decision.value !== "not_decided" ? (
         <p className="mt-2 text-xs text-slate-500">
-          Updated: {formatMongoliaDateTimeWithLabel(decision.updatedAt)}
+          Шинэчилсэн: {formatMongoliaDateTimeWithLabel(decision.updatedAt)}
         </p>
       ) : null}
 
       <div className="mt-4 grid gap-4 sm:grid-cols-2">
         <label className="flex flex-col gap-1 text-sm">
-          <span className="font-medium text-slate-700">Launch version</span>
+          <span className="font-medium text-slate-700">Гаргах хувилбар</span>
           <input
             type="text"
             value={meta.versionLabel}
@@ -65,46 +65,46 @@ export function SignoffDecisionCard({
           />
         </label>
         <label className="flex flex-col gap-1 text-sm">
-          <span className="font-medium text-slate-700">Launch owner</span>
+          <span className="font-medium text-slate-700">Хариуцагч</span>
           <input
             type="text"
             value={meta.owner}
             onChange={(e) => onMetaChange({ owner: e.target.value })}
-            placeholder="Name or team"
+            placeholder="Нэр эсвэл баг"
             className="rounded-lg border border-slate-200 px-3 py-2"
           />
         </label>
       </div>
 
       <label className="mt-4 flex flex-col gap-1 text-sm">
-        <span className="font-medium text-slate-700">Launch notes</span>
+        <span className="font-medium text-slate-700">Гаргалтын тэмдэглэл</span>
         <textarea
           value={meta.launchNotes}
           onChange={(e) => onMetaChange({ launchNotes: e.target.value })}
           rows={3}
-          placeholder="Summary of launch scope, timing, or approvals"
+          placeholder="Хамрах хүрээ, хугацаа, зөвшөөрлийн товч"
           className="rounded-lg border border-slate-200 px-3 py-2"
         />
       </label>
 
       <label className="mt-4 flex flex-col gap-1 text-sm">
-        <span className="font-medium text-slate-700">Known issues</span>
+        <span className="font-medium text-slate-700">Мэдэгдэж буй алдаа</span>
         <textarea
           value={meta.knownIssues}
           onChange={(e) => onMetaChange({ knownIssues: e.target.value })}
           rows={3}
-          placeholder="Accepted limitations or open bugs at launch"
+          placeholder="Хүлээн зөвшөөрсөн хязгаарлалт эсвэл засаагүй алдаа"
           className="rounded-lg border border-slate-200 px-3 py-2"
         />
       </label>
 
       <label className="mt-4 flex flex-col gap-1 text-sm">
-        <span className="font-medium text-slate-700">Final decision note</span>
+        <span className="font-medium text-slate-700">Эцсийн шийдвэрийн тэмдэглэл</span>
         <textarea
           value={meta.finalDecisionNote}
           onChange={(e) => onMetaChange({ finalDecisionNote: e.target.value })}
           rows={2}
-          placeholder="Rationale for go_live, needs_review, or blocked"
+          placeholder="go_live, needs_review, blocked шийдвэрийн үндэслэл"
           className="rounded-lg border border-slate-200 px-3 py-2"
         />
       </label>
@@ -115,28 +115,28 @@ export function SignoffDecisionCard({
           onClick={() => onSetDecision("go_live")}
           className="inline-flex rounded-full bg-emerald-500 px-4 py-2 text-sm font-semibold text-white hover:bg-emerald-600"
         >
-          Go live
+          Гаргая
         </button>
         <button
           type="button"
           onClick={() => onSetDecision("needs_review")}
           className="inline-flex rounded-full border border-amber-200 bg-amber-50 px-4 py-2 text-sm font-semibold text-amber-900 hover:bg-amber-100"
         >
-          Needs review
+          Шалгах шаардлагатай
         </button>
         <button
           type="button"
           onClick={() => onSetDecision("blocked")}
           className="inline-flex rounded-full border border-red-200 bg-red-50 px-4 py-2 text-sm font-semibold text-red-900 hover:bg-red-100"
         >
-          Blocked
+          Түр зогсоох
         </button>
         <button
           type="button"
           onClick={onResetDecision}
           className="inline-flex rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:border-red-200"
         >
-          Reset decision
+          Шийдвэрийг цэвэрлэх
         </button>
       </div>
     </section>

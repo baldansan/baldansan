@@ -168,11 +168,11 @@ export function LessonTeacherOverlayEditor({ lesson, initial }: Props) {
         <section className="admin-panel p-4">
           <h2 className="admin-section-title">Дүрэм ба үгийн тайлбар</h2>
           <p className="admin-section-desc mt-1">
-            Grammar + wordExplanation — item сонгоод засна.
+            Дүрэм болон үгийн тайлбар — нэгийг нь сонгоод засна.
           </p>
           <ul className="mt-3 space-y-1">
             {state.grammarItems.length === 0 ? (
-              <li className="text-sm text-slate-500">Одоогоор item алга.</li>
+              <li className="text-sm text-slate-500">Одоогоор юу ч алга.</li>
             ) : (
               state.grammarItems.map((item) => (
                 <li key={item.key}>
@@ -232,8 +232,8 @@ export function LessonTeacherOverlayEditor({ lesson, initial }: Props) {
               ) : (
                 <div className="mt-4 space-y-3">
                   <p className="text-xs text-slate-500">
-                    Бэлэн блок paste хийж болно. Зөвхөн teacher талбарууд (structure,
-                    teacher_notes, common_mistakes, check).
+                    Бэлэн блокыг энд буулгаж болно. Зөвхөн багшийн талбарууд
+                    (structure, teacher_notes, common_mistakes, check).
                   </p>
                   <textarea
                     className="admin-textarea min-h-[220px] font-mono text-xs"
@@ -257,7 +257,7 @@ export function LessonTeacherOverlayEditor({ lesson, initial }: Props) {
               )}
             </>
           ) : (
-            <p className="text-sm text-slate-500">Засах item сонгоно уу.</p>
+            <p className="text-sm text-slate-500">Засах зүйлээ зүүн талаас сонгоно уу.</p>
           )}
         </section>
       </div>

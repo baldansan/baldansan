@@ -40,8 +40,8 @@ export function LessonDeleteConfirmDialog({
           Хичээл устгах
         </h2>
         <p className="mt-2 text-sm leading-6 text-slate-600">
-          Энэ хичээлийг устгах уу? Үгийн сан, quiz, subtitle зэрэг холбоотой
-          content мөн устаж магадгүй.
+          Энэ хичээлийг устгах уу? Үгсийн сан, дасгал, хадмал зэрэг холбоотой
+          материал мөн устаж магадгүй.
         </p>
         {lessonTitle ? (
           <p className="mt-2 break-words text-sm font-medium text-slate-800">
@@ -71,7 +71,7 @@ export function LessonDeleteConfirmDialog({
             disabled={busy}
             className="rounded-xl border border-slate-200 px-4 py-2.5 text-sm font-semibold text-slate-700 hover:bg-slate-50 disabled:opacity-50"
           >
-            Cancel
+            Болих
           </button>
           <button
             type="button"
@@ -79,7 +79,7 @@ export function LessonDeleteConfirmDialog({
             disabled={busy || !canDelete}
             className="rounded-xl bg-red-600 px-4 py-2.5 text-sm font-semibold text-white hover:bg-red-700 disabled:cursor-not-allowed disabled:bg-slate-300"
           >
-            {busy ? "Устгаж байна…" : "Delete lesson"}
+            {busy ? "Устгаж байна…" : "Хичээл устгах"}
           </button>
         </div>
       </div>

@@ -4,7 +4,7 @@ import { getVocabularyInsightsOverview } from "@/lib/supabase/admin-analytics";
 export const dynamic = "force-dynamic";
 
 export const metadata = {
-  title: "Vocabulary insights — Admin analytics",
+  title: "Үгсийн сангийн дүн шинжилгээ — Тайлан",
 };
 
 type Props = {

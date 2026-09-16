@@ -44,30 +44,30 @@ export function calculateReleaseReadiness(
   if (!metadataReady) {
     issues.push(
       prelesson
-        ? "Metadata incomplete (title and target title required)"
-        : "Metadata incomplete (title, Chinese title, summary)"
+        ? "Ерөнхий мэдээлэл дутуу (гарчиг, гадаад хэл дээрх гарчиг заавал)"
+        : "Ерөнхий мэдээлэл дутуу (гарчиг, хятад гарчиг, тайлбар)"
     );
   }
 
   const hasSubtitles = lesson.timedSubtitles.length > 0;
   const subtitlesReady = prelesson ? true : hasSubtitles;
   if (!prelesson && !hasSubtitles) {
-    issues.push("No subtitles");
+    issues.push("Хадмал алга");
   } else if (prelesson && !hasSubtitles) {
-    warnings.push("PreLesson: no subtitles (optional for publish)");
+    warnings.push("Бэлтгэл хичээл: хадмал алга (нийтлэхэд заавал биш)");
   }
 
   const vocabularyReady = lesson.vocabulary.length >= MIN_VOCABULARY_FOR_PUBLISH;
   if (!vocabularyReady) {
     issues.push(
-      `Vocabulary below minimum (${lesson.vocabulary.length}/${MIN_VOCABULARY_FOR_PUBLISH})`
+      `Үгсийн сан хүрэлцэхгүй (${lesson.vocabulary.length}/${MIN_VOCABULARY_FOR_PUBLISH})`
     );
   }
 
   const quizReady = lesson.quizQuestions.length >= MIN_QUIZ_FOR_PUBLISH;
   if (!quizReady) {
     issues.push(
-      `Quiz below minimum (${lesson.quizQuestions.length}/${MIN_QUIZ_FOR_PUBLISH})`
+      `Дасгал хүрэлцэхгүй (${lesson.quizQuestions.length}/${MIN_QUIZ_FOR_PUBLISH})`
     );
   }
 
@@ -77,9 +77,11 @@ export function calculateReleaseReadiness(
     lesson.mediaStatus === "ready" ||
     Boolean(lesson.videoUrl?.trim());
   if (!mediaReady && !mediaOptional) {
-    warnings.push("Media not marked ready (video URL or media_status)");
+    warnings.push("Медиа бэлэн гэж тэмдэглэгдээгүй (бичлэгийн URL эсвэл media_status)");
   } else if (mediaOptional && !mediaReady) {
-    warnings.push("PreLesson: no video/audio/thumbnail (optional for publish)");
+    warnings.push(
+      "Бэлтгэл хичээл: бичлэг/аудио/нүүр зураг алга (нийтлэхэд заавал биш)"
+    );
   }
 
   let qaReady = prelesson
@@ -116,7 +118,7 @@ export function calculateReleaseReadiness(
     (releaseStatus === "approved" || workflowQa === "passed");
 
   if (readyToApprove && !approvalReady) {
-    warnings.push("Awaiting admin approval for publish");
+    warnings.push("Нийтлэхийн тулд админы баталгаа хүлээж байна");
   }
 
   const backupRecommended = readyToApprove;

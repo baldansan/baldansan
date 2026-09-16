@@ -33,7 +33,7 @@ export function ActivityDetailView({ activity }: Props) {
 
         <dl className="mt-4 grid gap-3 text-sm sm:grid-cols-2">
           <div>
-            <dt className="text-slate-500">Actor</dt>
+            <dt className="text-slate-500">Гүйцэтгэсэн хүн</dt>
             <dd className="text-slate-900">{formatActivityActor(activity)}</dd>
           </div>
           <div>
@@ -44,13 +44,13 @@ export function ActivityDetailView({ activity }: Props) {
           </div>
           {activity.entityId ? (
             <div>
-              <dt className="text-slate-500">Entity ID</dt>
+              <dt className="text-slate-500">Бичлэгийн ID</dt>
               <dd className="font-mono text-slate-900">{activity.entityId}</dd>
             </div>
           ) : null}
           {activity.lessonId ? (
             <div>
-              <dt className="text-slate-500">Lesson ID</dt>
+              <dt className="text-slate-500">Хичээлийн ID</dt>
               <dd className="font-mono text-slate-900">{activity.lessonId}</dd>
             </div>
           ) : null}
@@ -58,18 +58,18 @@ export function ActivityDetailView({ activity }: Props) {
       </section>
 
       <JsonSnapshotViewer
-        title="Activity metadata"
+        title="Үйлдлийн ерөнхий мэдээлэл"
         data={
           Object.keys(activity.metadata).length > 0 ? activity.metadata : null
         }
-        emptyLabel="No metadata recorded."
+        emptyLabel="Ерөнхий мэдээлэл бүртгэгдээгүй."
       />
 
       <JsonSnapshotViewer
-        title="Before snapshot"
+        title="Өмнөх хувилбарын хуулбар"
         data={activity.beforeSnapshot}
       />
-      <JsonSnapshotViewer title="After snapshot" data={activity.afterSnapshot} />
+      <JsonSnapshotViewer title="Дараах хувилбарын хуулбар" data={activity.afterSnapshot} />
 
       <ActivityDiffViewer activity={activity} />
       <RollbackExecutionCard activity={activity} />
@@ -79,21 +79,21 @@ export function ActivityDetailView({ activity }: Props) {
           href="/admin/activity"
           className="inline-flex rounded-full border border-slate-200 px-5 py-2.5 text-sm font-medium text-slate-700 transition-colors hover:border-emerald-200 hover:text-emerald-700"
         >
-          ← Back to activity log
+          ← Үйлдлийн бүртгэл рүү буцах
         </Link>
         {activity.lessonId ? (
           <Link
             href={`/admin/lessons/${activity.lessonId}/edit`}
             className="inline-flex rounded-full bg-emerald-500 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-emerald-600"
           >
-            Open lesson edit
+            Хичээлийг засах
           </Link>
         ) : null}
         <Link
           href="/admin"
           className="inline-flex rounded-full border border-emerald-200 bg-emerald-50 px-5 py-2.5 text-sm font-semibold text-emerald-800 transition-colors hover:bg-emerald-100"
         >
-          Admin dashboard
+          Хяналтын самбар
         </Link>
       </section>
     </div>

@@ -82,7 +82,7 @@ function rowToHistoryTask(row: PersistedAdminTaskRow): AdminTask {
     actionHref: row.lesson_id
       ? `/admin/lessons/${row.lesson_id}/edit`
       : undefined,
-    actionLabel: row.lesson_id ? "Edit lesson" : undefined,
+    actionLabel: row.lesson_id ? "Хичээл засах" : undefined,
   };
 }
 

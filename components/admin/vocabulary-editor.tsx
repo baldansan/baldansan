@@ -68,11 +68,11 @@ export function VocabularyEditor({
   }, [items]);
 
   function validate(): string | null {
-    if (!form.chinese.trim()) return "Chinese заавал.";
-    if (!form.mongolian.trim()) return "Mongolian заавал.";
+    if (!form.chinese.trim()) return "Хятад үгийг заавал бөглөнө үү.";
+    if (!form.mongolian.trim()) return "Монгол орчуулгыг заавал бөглөнө үү.";
     if (form.orderIndex.trim()) {
       const n = Number(form.orderIndex);
-      if (!Number.isFinite(n) || n < 1) return "Order index тоо байх ёстой.";
+      if (!Number.isFinite(n) || n < 1) return "Дарааллын дугаар тоо байх ёстой.";
     }
     return null;
   }
@@ -106,7 +106,7 @@ export function VocabularyEditor({
       return;
     }
 
-    setSuccess("Vocabulary нэмэгдлээ. Lesson count шинэчлэгдлээ.");
+    setSuccess("Үг нэмэгдлээ. Хичээлийн тоо шинэчлэгдлээ.");
     setForm({
       ...emptyForm,
       hskLevel: form.hskLevel,
@@ -127,20 +127,20 @@ export function VocabularyEditor({
       setError(result.error);
       return;
     }
-    setSuccess("Vocabulary устгагдлаа. Lesson count шинэчлэгдлээ.");
+    setSuccess("Үг устгагдлаа. Хичээлийн тоо шинэчлэгдлээ.");
     await load();
   }
 
   return (
     <AdminEditorSection
-      title={`Vocabulary editor (${items.length})`}
-      description="Words for vocabulary page and progress dbId mapping."
+      title={`Үгсийн сан засварлах (${items.length})`}
+      description="Үгсийн сангийн хуудсанд гарах үгс, суралцагчийн ахицад холбогдоно."
     >
       <AdminAlert error={error} success={success} />
 
       <div className="grid gap-3 sm:grid-cols-2">
         <label className="block text-sm font-medium text-slate-700 sm:col-span-2">
-          Chinese
+          Хятад үг
           <input
             className={adminInputClass}
             value={form.chinese}
@@ -156,7 +156,7 @@ export function VocabularyEditor({
           />
         </label>
         <label className="block text-sm font-medium text-slate-700 sm:col-span-2">
-          Mongolian
+          Монгол орчуулга
           <input
             className={adminInputClass}
             value={form.mongolian}
@@ -164,7 +164,7 @@ export function VocabularyEditor({
           />
         </label>
         <label className="block text-sm font-medium text-slate-700">
-          HSK level
+          HSK түвшин
           <select
             className={adminInputClass}
             value={form.hskLevel}
@@ -178,7 +178,7 @@ export function VocabularyEditor({
           </select>
         </label>
         <label className="block text-sm font-medium text-slate-700">
-          Order index
+          Дарааллын дугаар
           <input
             className={adminInputClass}
             type="number"
@@ -188,7 +188,7 @@ export function VocabularyEditor({
           />
         </label>
         <label className="block text-sm font-medium text-slate-700 sm:col-span-2">
-          Example Chinese
+          Жишээ өгүүлбэр (хятад)
           <input
             className={adminInputClass}
             value={form.exampleChinese}
@@ -198,7 +198,7 @@ export function VocabularyEditor({
           />
         </label>
         <label className="block text-sm font-medium text-slate-700 sm:col-span-2">
-          Example Mongolian
+          Жишээ өгүүлбэр (монгол)
           <input
             className={adminInputClass}
             value={form.exampleMongolian}
@@ -215,13 +215,13 @@ export function VocabularyEditor({
         disabled={saving}
         className="mt-4 rounded-full bg-emerald-500 px-5 py-2.5 text-sm font-semibold text-white hover:bg-emerald-600 disabled:opacity-60"
       >
-        {saving ? "Saving..." : "Add vocabulary word"}
+        {saving ? "Хадгалж байна…" : "Үг нэмэх"}
       </button>
 
       {loading ? (
-        <p className="mt-4 text-sm text-slate-500">Ачааллаж байна...</p>
+        <p className="mt-4 text-sm text-slate-500">Ачаалж байна…</p>
       ) : items.length === 0 ? (
-        <p className="mt-4 text-sm text-amber-800">No vocabulary yet</p>
+        <p className="mt-4 text-sm text-amber-800">Одоогоор үг алга</p>
       ) : (
         <ul className="mt-4 space-y-2">
           {items.map((word) => (
@@ -250,7 +250,7 @@ export function VocabularyEditor({
                 disabled={deletingId === word.id}
                 className="shrink-0 rounded-full border border-red-200 px-3 py-1 text-xs font-medium text-red-700 hover:bg-red-50"
               >
-                {deletingId === word.id ? "…" : "Delete"}
+                {deletingId === word.id ? "…" : "Устгах"}
               </button>
             </li>
           ))}

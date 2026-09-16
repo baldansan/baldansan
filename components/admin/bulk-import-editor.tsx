@@ -97,10 +97,10 @@ export function BulkImportEditor({ lessonId, onImportSuccess }: Props) {
     }
     const warnNote =
       result.warnings.length > 0
-        ? ` (${result.warnings.length} warning(s) — import allowed)`
+        ? ` (${result.warnings.length} анхааруулга — оруулж болно)`
         : "";
     setSuccess(
-      `Validation OK: ${result.counts.subtitles} subtitles, ${result.counts.vocabulary} vocabulary, ${result.counts.quizQuestions} quiz.${warnNote}`
+      `Шалгалт давлаа: ${result.counts.subtitles} хадмал, ${result.counts.vocabulary} үг, ${result.counts.quizQuestions} дасгал.${warnNote}`
     );
   }, [rawJson]);
 
@@ -109,7 +109,7 @@ export function BulkImportEditor({ lessonId, onImportSuccess }: Props) {
     setSuccess(null);
 
     if (mode === "replace" && !replaceConfirmed) {
-      setError("Replace үйлдлийг баталгаажуулна уу.");
+      setError("Солих үйлдлийг баталгаажуулна уу.");
       return;
     }
 
@@ -139,8 +139,8 @@ export function BulkImportEditor({ lessonId, onImportSuccess }: Props) {
     const summary = imported.data;
     setSuccess(
       summary
-        ? `Import амжилттай боллоо. (${summary.mode}: +${summary.subtitlesInserted} subtitles, +${summary.vocabularyInserted} vocabulary, +${summary.quizQuestionsInserted} quiz)`
-        : "Import амжилттай боллоо."
+        ? `Амжилттай орууллаа. (${summary.mode}: +${summary.subtitlesInserted} хадмал, +${summary.vocabularyInserted} үг, +${summary.quizQuestionsInserted} дасгал)`
+        : "Амжилттай орууллаа."
     );
     onImportSuccess?.();
     void getLessonContentRowCounts(lessonId).then((r) => {
@@ -160,8 +160,8 @@ export function BulkImportEditor({ lessonId, onImportSuccess }: Props) {
 
   return (
     <AdminEditorSection
-      title="Bulk import content"
-      description="ChatGPT/Cursor-оор үүсгэсэн JSON content-оо энд paste хийнэ. Export backup JSON (`lesson`, `exportedAt`) paste хийвэл metadata блокийг үл тооно — зөвхөн subtitles, vocabulary, quizQuestions import хийнэ."
+      title="Контент бөөнөөр оруулах"
+      description="ChatGPT/Cursor-оор үүсгэсэн JSON-оо энд буулгана. Нөөц хуулбарын JSON (`lesson`, `exportedAt`) буулгавал ерөнхий мэдээллийн хэсгийг тооцохгүй — зөвхөн subtitles, vocabulary, quizQuestions хэсгийг оруулна."
     >
       <div className="flex flex-col gap-4">
         <button
@@ -169,7 +169,7 @@ export function BulkImportEditor({ lessonId, onImportSuccess }: Props) {
           onClick={() => setShowExample((v) => !v)}
           className="w-fit text-sm font-medium text-emerald-700 hover:text-emerald-800"
         >
-          {showExample ? "Example JSON нуух" : "Example JSON харах"}
+          {showExample ? "Жишээ JSON нуух" : "Жишээ JSON харах"}
         </button>
 
         {showExample ? (
@@ -179,7 +179,7 @@ export function BulkImportEditor({ lessonId, onImportSuccess }: Props) {
         ) : null}
 
         <label className="block text-sm font-medium text-slate-700">
-          Lesson JSON
+          Хичээлийн JSON
           <textarea
             value={rawJson}
             onChange={(e) => setRawJson(e.target.value)}
@@ -191,7 +191,7 @@ export function BulkImportEditor({ lessonId, onImportSuccess }: Props) {
         </label>
 
         <fieldset className="flex flex-col gap-2 sm:flex-row sm:items-center">
-          <legend className="sr-only">Import mode</legend>
+          <legend className="sr-only">Оруулах горим</legend>
           <label className="flex cursor-pointer items-center gap-2 text-sm text-slate-700">
             <input
               type="radio"
@@ -203,7 +203,7 @@ export function BulkImportEditor({ lessonId, onImportSuccess }: Props) {
               }}
               className="text-emerald-600 focus:ring-emerald-500"
             />
-            Append to existing content
+            Одоо байгаа контент дээр нэмэх
           </label>
           <label className="flex cursor-pointer items-center gap-2 text-sm text-slate-700">
             <input
@@ -213,30 +213,30 @@ export function BulkImportEditor({ lessonId, onImportSuccess }: Props) {
               onChange={() => setMode("replace")}
               className="text-emerald-600 focus:ring-emerald-500"
             />
-            Replace existing content
+            Одоо байгаа контентыг солих
           </label>
         </fieldset>
 
         {existingCounts ? (
           <p className="text-sm text-slate-600">
-            Одоогийн контент: {existingCounts.subtitles} subtitles ·{" "}
-            {existingCounts.vocabulary} vocabulary ·{" "}
-            {existingCounts.quizQuestions} quiz
+            Одоогийн контент: {existingCounts.subtitles} хадмал ·{" "}
+            {existingCounts.vocabulary} үг ·{" "}
+            {existingCounts.quizQuestions} дасгал
           </p>
         ) : null}
 
         {mode === "replace" ? (
           <div className="space-y-3 rounded-xl bg-amber-50 px-4 py-3 text-sm text-amber-900 ring-1 ring-amber-200">
             <p>
-              Replace нь одоогийн subtitle/vocabulary/quiz-г устгаад шинэ JSON-аар
+              Солих горим нь одоогийн хадмал, үг, дасгалыг устгаад шинэ JSON-оор
               солино.
             </p>
             <p>
-              Энэ үйлдэл буцаах боломжгүй байж магадгүй. Export backup хийсэн
-              эсэхээ шалгана уу.
+              Энэ үйлдлийг буцаах боломжгүй байж магадгүй. Нөөц хуулбараа
+              гаргасан эсэхээ шалгана уу.
             </p>
             <p className="font-medium text-amber-950">
-              Эхлээд Export lesson backup хийхийг зөвлөж байна.
+              Эхлээд хичээлийн нөөц хуулбарыг гаргахыг зөвлөж байна.
             </p>
             <label className="flex cursor-pointer items-start gap-2">
               <input
@@ -252,15 +252,15 @@ export function BulkImportEditor({ lessonId, onImportSuccess }: Props) {
 
         {validation?.valid ? (
           <p className="text-sm text-emerald-800">
-            Ready to import: {validation.counts.subtitles} subtitles ·{" "}
-            {validation.counts.vocabulary} vocabulary ·{" "}
-            {validation.counts.quizQuestions} quiz questions
+            Оруулахад бэлэн: {validation.counts.subtitles} хадмал ·{" "}
+            {validation.counts.vocabulary} үг ·{" "}
+            {validation.counts.quizQuestions} дасгалын асуулт
           </p>
         ) : null}
 
         {validation && !validation.valid && validation.errors.length > 0 ? (
           <div className="rounded-xl bg-red-50 px-4 py-3 text-sm text-red-800 ring-1 ring-red-200">
-            <p className="font-semibold">Errors (import blocked)</p>
+            <p className="font-semibold">Алдаа (оруулах боломжгүй)</p>
             <ul className="mt-2 max-h-32 list-inside list-disc overflow-auto">
               {validation.errors.map((msg) => (
                 <li key={msg}>{msg}</li>
@@ -271,7 +271,7 @@ export function BulkImportEditor({ lessonId, onImportSuccess }: Props) {
 
         {warnings.length > 0 ? (
           <div className="rounded-xl bg-amber-50 px-4 py-3 text-sm text-amber-900 ring-1 ring-amber-200">
-            <p className="font-semibold">Warnings (import allowed)</p>
+            <p className="font-semibold">Анхааруулга (оруулж болно)</p>
             <ul className="mt-2 max-h-32 list-inside list-disc overflow-auto">
               {warnings.map((msg) => (
                 <li key={msg}>{msg}</li>
@@ -289,7 +289,7 @@ export function BulkImportEditor({ lessonId, onImportSuccess }: Props) {
             onClick={handleValidate}
             className="rounded-full border border-emerald-200 bg-emerald-50 px-5 py-2.5 text-sm font-semibold text-emerald-800 transition-colors hover:bg-emerald-100 disabled:cursor-not-allowed disabled:opacity-50"
           >
-            {busy === "validate" ? "Validating…" : "Validate JSON"}
+            {busy === "validate" ? "Шалгаж байна…" : "JSON шалгах"}
           </button>
           <button
             type="button"
@@ -301,7 +301,7 @@ export function BulkImportEditor({ lessonId, onImportSuccess }: Props) {
             onClick={handleImport}
             className="rounded-full bg-emerald-500 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-emerald-600 disabled:cursor-not-allowed disabled:bg-slate-200 disabled:text-slate-500"
           >
-            {busy === "import" ? "Importing…" : "Import content"}
+            {busy === "import" ? "Оруулж байна…" : "Контент оруулах"}
           </button>
           <button
             type="button"
@@ -309,13 +309,14 @@ export function BulkImportEditor({ lessonId, onImportSuccess }: Props) {
             onClick={handleClear}
             className="rounded-full border border-slate-200 px-5 py-2.5 text-sm font-medium text-slate-700 transition-colors hover:border-slate-300"
           >
-            Clear
+            Цэвэрлэх
           </button>
         </div>
 
         <p className="text-xs text-slate-500">
-          Format: project root <code className="text-emerald-800">LESSON_IMPORT_FORMAT.md</code>.
-          Replace mode зөвхөн энэ хичээлийн subtitle/vocabulary/quiz мөрүүдийг устгана.
+          Формат: төслийн үндсэн хавтасны{" "}
+          <code className="text-emerald-800">LESSON_IMPORT_FORMAT.md</code>. Солих
+          горим нь зөвхөн энэ хичээлийн хадмал, үг, дасгалын мөрүүдийг устгана.
         </p>
       </div>
     </AdminEditorSection>

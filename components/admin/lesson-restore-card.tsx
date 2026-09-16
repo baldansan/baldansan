@@ -49,7 +49,7 @@ export function LessonRestoreCard({
       setError(result.validation.errors.join(" "));
       return;
     }
-    setSuccess("Backup JSON зөв. Restore хийж болно.");
+    setSuccess("Нөөц хуулбарын JSON зөв байна. Одоо сэргээж болно.");
   }, [rawJson]);
 
   const handleRestore = useCallback(async () => {
@@ -57,7 +57,7 @@ export function LessonRestoreCard({
     setSuccess(null);
 
     if (needsConfirm && !confirmed) {
-      setError("Replace үйлдлийг баталгаажуулна уу.");
+      setError("Солих үйлдлийг баталгаажуулна уу.");
       return;
     }
 
@@ -76,8 +76,8 @@ export function LessonRestoreCard({
 
     setSuccess(
       result.data
-        ? `Backup restore амжилттай (${result.data.mode}${result.data.restoreMetadata ? ", metadata" : ", content only"}).`
-        : "Backup restore амжилттай."
+        ? `Нөөц хуулбараас амжилттай сэргээлээ (${result.data.mode === "replace" ? "солих" : "нэмэх"}${result.data.restoreMetadata ? ", ерөнхий мэдээлэлтэй" : ", зөвхөн агуулга"}).`
+        : "Нөөц хуулбараас амжилттай сэргээлээ."
     );
     onRestoreSuccess?.();
     router.refresh();
@@ -95,11 +95,11 @@ export function LessonRestoreCard({
 
   return (
     <AdminEditorSection
-      title="Restore from backup JSON"
-      description="Export backup JSON-оо энд paste хийж одоогийн хичээлд сэргээнэ. Lesson ID өөрчлөгдөхгүй; user progress хөндөгдөхгүй."
+      title="Нөөц хуулбараас сэргээх"
+      description="Гаргаж авсан JSON нөөц хуулбараа энд наагаад одоогийн хичээлд сэргээнэ. Хичээлийн ID өөрчлөгдөхгүй, суралцагчдын ахиц хөндөгдөхгүй."
     >
       <label className="block text-sm font-medium text-slate-700">
-        Backup JSON
+        Нөөц хуулбарын JSON
         <textarea
           value={rawJson}
           onChange={(e) => {
@@ -108,7 +108,7 @@ export function LessonRestoreCard({
             setConfirmed(false);
           }}
           rows={12}
-          placeholder='Export backup эсвэл { "lesson", "subtitles", "vocabulary", "quizQuestions" }'
+          placeholder='Гаргасан нөөц хуулбар эсвэл { "lesson", "subtitles", "vocabulary", "quizQuestions" }'
           className={`${adminInputClass} font-mono text-xs`}
           spellCheck={false}
         />
@@ -126,7 +126,7 @@ export function LessonRestoreCard({
             }}
             className="text-emerald-600 focus:ring-emerald-500"
           />
-          Append to existing content
+          Одоогийн агуулга дээр нэмэх
         </label>
         <label className="flex cursor-pointer items-center gap-2 text-sm text-slate-700">
           <input
@@ -136,19 +136,19 @@ export function LessonRestoreCard({
             onChange={() => setMode("replace")}
             className="text-emerald-600 focus:ring-emerald-500"
           />
-          Replace current content
+          Одоогийн агуулгыг солих
         </label>
       </div>
 
       {mode === "replace" ? (
         <div className="mt-3 space-y-3 rounded-xl bg-amber-50 px-4 py-3 text-sm text-amber-900 ring-1 ring-amber-200">
           <p>
-            Replace нь одоогийн subtitle/vocabulary/quiz-г устгаад backup-аас
-            дахин оруулна.
+            Солих сонголт нь одоогийн хадмал, үгсийн сан, дасгалыг устгаад нөөц
+            хуулбараас дахин оруулна.
           </p>
           <p>
-            Энэ үйлдэл буцаах боломжгүй байж магадгүй. Export backup хийсэн
-            эсэхээ шалгана уу.
+            Энэ үйлдлийг буцаах боломжгүй байж магадгүй. Нөөц хуулбараа өмнө нь
+            гаргаж авсан эсэхээ шалгана уу.
           </p>
           <label className="flex cursor-pointer items-start gap-2">
             <input
@@ -164,7 +164,7 @@ export function LessonRestoreCard({
 
       <fieldset className="mt-4 flex flex-col gap-2">
         <legend className="text-sm font-medium text-slate-700">
-          Restore scope
+          Юуг сэргээх вэ
         </legend>
         <label className="flex cursor-pointer items-center gap-2 text-sm text-slate-700">
           <input
@@ -174,7 +174,7 @@ export function LessonRestoreCard({
             onChange={() => setRestoreMetadata(false)}
             className="text-emerald-600 focus:ring-emerald-500"
           />
-          Restore content only (ignore lesson metadata)
+          Зөвхөн агуулгыг сэргээх (ерөнхий мэдээллийг хөндөхгүй)
         </label>
         <label className="flex cursor-pointer items-center gap-2 text-sm text-slate-700">
           <input
@@ -184,25 +184,28 @@ export function LessonRestoreCard({
             onChange={() => setRestoreMetadata(true)}
             className="text-emerald-600 focus:ring-emerald-500"
           />
-          Restore metadata + content (status → draft if backup was available)
+          Ерөнхий мэдээлэл + агуулгыг сэргээх (нөөц нь нийтлэгдсэн байсан бол
+          төлөв нь ноорог болно)
         </label>
       </fieldset>
 
       {preview?.validation.valid ? (
         <div className="mt-4 rounded-xl bg-slate-50 px-4 py-3 text-sm text-slate-700 ring-1 ring-slate-200">
-          <p className="font-semibold text-slate-900">Backup summary</p>
+          <p className="font-semibold text-slate-900">
+            Нөөц хуулбарын товч мэдээлэл
+          </p>
           <ul className="mt-2 list-inside list-disc space-y-1">
             {preview.summary.sourceLessonId ? (
-              <li>Source lesson: {preview.summary.sourceLessonId}</li>
+              <li>Эх хичээл: {preview.summary.sourceLessonId}</li>
             ) : null}
             {preview.summary.title ? (
-              <li>Title: {preview.summary.title}</li>
+              <li>Гарчиг: {preview.summary.title}</li>
             ) : null}
-            <li>Subtitles: {preview.summary.subtitleCount}</li>
-            <li>Vocabulary: {preview.summary.vocabularyCount}</li>
-            <li>Quiz: {preview.summary.quizCount}</li>
+            <li>Хадмал: {preview.summary.subtitleCount}</li>
+            <li>Үгсийн сан: {preview.summary.vocabularyCount}</li>
+            <li>Дасгал: {preview.summary.quizCount}</li>
             {preview.summary.exportedAt ? (
-              <li>Exported: {formatMongoliaDateTimeWithLabel(preview.summary.exportedAt)}</li>
+              <li>Гаргасан: {formatMongoliaDateTimeWithLabel(preview.summary.exportedAt)}</li>
             ) : null}
           </ul>
         </div>
@@ -219,7 +222,7 @@ export function LessonRestoreCard({
           onClick={handlePreview}
           className="rounded-full border border-emerald-200 bg-emerald-50 px-5 py-2.5 text-sm font-semibold text-emerald-800 transition-colors hover:bg-emerald-100 disabled:opacity-50"
         >
-          {busy === "preview" ? "Parsing…" : "Parse backup"}
+          {busy === "preview" ? "Шалгаж байна…" : "Нөөц хуулбарыг шалгах"}
         </button>
         <button
           type="button"
@@ -231,7 +234,7 @@ export function LessonRestoreCard({
           onClick={handleRestore}
           className="rounded-full bg-emerald-500 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-emerald-600 disabled:cursor-not-allowed disabled:bg-slate-200 disabled:text-slate-500"
         >
-          {busy === "restore" ? "Restoring…" : "Restore backup"}
+          {busy === "restore" ? "Сэргээж байна…" : "Нөөцөөс сэргээх"}
         </button>
       </div>
     </AdminEditorSection>

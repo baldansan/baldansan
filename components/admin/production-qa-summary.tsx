@@ -24,15 +24,15 @@ export function ProductionQaSummary({ items }: Props) {
 
   return (
     <section className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:p-6">
-      <h2 className="text-lg font-semibold text-slate-900">Checklist summary</h2>
+      <h2 className="text-lg font-semibold text-slate-900">Шалгалтын товчоо</h2>
       <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-5">
         {(
           [
-            ["pass", summary.pass, "Pass"],
-            ["warning", summary.warning, "Warning"],
-            ["fail", summary.fail, "Fail"],
-            ["not_checked", summary.not_checked, "Not checked"],
-            ["total", summary.total, "Total"],
+            ["pass", summary.pass, "Давсан"],
+            ["warning", summary.warning, "Анхааруулга"],
+            ["fail", summary.fail, "Амжилтгүй"],
+            ["not_checked", summary.not_checked, "Шалгаагүй"],
+            ["total", summary.total, "Нийт"],
           ] as const
         ).map(([key, value, label]) => (
           <div
@@ -50,7 +50,7 @@ export function ProductionQaSummary({ items }: Props) {
         <span
           className={`inline-flex rounded-full px-3 py-1 text-sm font-semibold capitalize ring-1 ${recommendationClass(summary.launchRecommendation)}`}
         >
-          Launch: {summary.launchRecommendation}
+          Гаргалт: {summary.launchRecommendation}
         </span>
       </p>
     </section>
@@ -64,10 +64,10 @@ export function ProductionQaBlockers({ items }: Props) {
 
   return (
     <section className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:p-6">
-      <h2 className="text-lg font-semibold text-slate-900">Launch blockers</h2>
+      <h2 className="text-lg font-semibold text-slate-900">Гаргахад саад болж буй зүйлс</h2>
       {failed.length === 0 ? (
         <p className="mt-3 text-sm text-emerald-800">
-          No launch blockers found from manual checklist.
+          Гараар шалгасан жагсаалтаас саад олдсонгүй.
         </p>
       ) : (
         <ul className="mt-3 space-y-2">
@@ -90,7 +90,7 @@ export function ProductionQaBlockers({ items }: Props) {
 
       {warnings.length > 0 ? (
         <>
-          <h3 className="mt-6 text-sm font-semibold text-amber-900">Warnings</h3>
+          <h3 className="mt-6 text-sm font-semibold text-amber-900">Анхааруулга</h3>
           <ul className="mt-2 space-y-2">
             {warnings.map((item) => (
               <li

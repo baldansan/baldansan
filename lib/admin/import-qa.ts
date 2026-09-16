@@ -97,12 +97,12 @@ export function analyzeStoredLessonContent(
       missingPinyinSubtitleCount += 1;
     }
     if (sub.mongolian?.trim() && isShortMongolian(sub.mongolian)) {
-      warnings.push(`Subtitle ${i + 1}: Mongolian translation looks very short.`);
+      warnings.push(`${i + 1}-р хадмал: монгол орчуулга хэт богино байна.`);
     }
     const rangeKey = `${sub.start_time}|${sub.end_time}`;
     if (timeRanges.has(rangeKey)) {
       warnings.push(
-        `Duplicate subtitle time range ${sub.start_time}–${sub.end_time} (lines ${timeRanges.get(rangeKey)! + 1} and ${i + 1}).`
+        `Хадмалын ${sub.start_time}–${sub.end_time} хугацаа давхардсан (${timeRanges.get(rangeKey)! + 1} ба ${i + 1}-р мөр).`
       );
     } else {
       timeRanges.set(rangeKey, i);
@@ -118,10 +118,10 @@ export function analyzeStoredLessonContent(
       missingPinyinVocabCount += 1;
     }
     if (!word.hsk_level?.trim()) {
-      warnings.push(`Vocabulary "${chinese || i + 1}": missing HSK level.`);
+      warnings.push(`"${chinese || i + 1}" үг: HSK түвшин дутуу.`);
     }
     if (word.mongolian?.trim() && isShortMongolian(word.mongolian)) {
-      warnings.push(`Vocabulary "${chinese}": Mongolian translation looks very short.`);
+      warnings.push(`"${chinese}" үг: монгол орчуулга хэт богино байна.`);
     }
     if (!word.example_chinese?.trim() || !word.example_mongolian?.trim()) {
       emptyExampleCount += 1;
@@ -146,13 +146,15 @@ export function analyzeStoredLessonContent(
     const correct = q.correct_answer?.trim() ?? "";
     if (options.length >= 2 && correct && !options.includes(correct)) {
       quizAnswerMismatchCount += 1;
-      errors.push(`Quiz ${i + 1}: correctAnswer is not in options.`);
+      errors.push(
+        `${i + 1}-р дасгал: зөв хариулт (correctAnswer) сонголтуудын дунд алга.`
+      );
     }
   }
 
   if (duplicateVocabularyChinese.length > 0) {
     warnings.push(
-      `Duplicate vocabulary Chinese: ${duplicateVocabularyChinese.join(", ")}`
+      `Давхардсан хятад үг: ${duplicateVocabularyChinese.join(", ")}`
     );
   }
 
@@ -167,10 +169,10 @@ export function analyzeStoredLessonContent(
     duplicateVocabularyChinese,
   });
 
-  if (subtitleCount === 0) warnings.push("No subtitles.");
-  if (vocabularyCount === 0) warnings.push("No vocabulary.");
-  if (quizCount === 0) warnings.push("No quiz questions.");
-  if (!hasMetadata) warnings.push("Metadata incomplete.");
+  if (subtitleCount === 0) warnings.push("Хадмал алга.");
+  if (vocabularyCount === 0) warnings.push("Үгсийн сан алга.");
+  if (quizCount === 0) warnings.push("Дасгалын асуулт алга.");
+  if (!hasMetadata) warnings.push("Ерөнхий мэдээлэл дутуу.");
 
   return {
     status,
@@ -239,48 +241,48 @@ export function analyzeImportPayloadExtras(
   const errors: string[] = [];
   const warnings: string[] = [];
   const isKorean = context?.isKorean ?? false;
-  const readingLabel = isKorean ? "reading/romanization" : "pinyin/reading";
-  const levelLabel = isKorean ? "level" : "HSK level";
+  const readingLabel = isKorean ? "дуудлага (romanization)" : "пиньинь";
+  const levelLabel = isKorean ? "түвшин" : "HSK түвшин";
 
   const timeRanges = new Map<string, number>();
   payload.subtitles.forEach((sub, i) => {
     const key = `${sub.startTime}|${sub.endTime}`;
     if (timeRanges.has(key)) {
       errors.push(
-        `Duplicate subtitle time range ${sub.startTime}–${sub.endTime} (indices ${timeRanges.get(key)} and ${i}).`
+        `Хадмалын ${sub.startTime}–${sub.endTime} хугацаа давхардсан (${timeRanges.get(key)} ба ${i} дугаарт).`
       );
     } else {
       timeRanges.set(key, i);
     }
     if (!sub.pinyin?.trim()) {
-      warnings.push(`subtitles[${i}]: missing ${readingLabel}.`);
+      warnings.push(`subtitles[${i}]: ${readingLabel} дутуу.`);
     }
     if (sub.mongolian.trim() && isShortMongolian(sub.mongolian)) {
-      warnings.push(`subtitles[${i}]: Mongolian translation looks very short.`);
+      warnings.push(`subtitles[${i}]: монгол орчуулга хэт богино байна.`);
     }
   });
 
   const seenVocab = new Map<string, number>();
   payload.vocabulary.forEach((word, i) => {
     if (!word.pinyin?.trim()) {
-      warnings.push(`vocabulary[${i}]: missing ${readingLabel}.`);
+      warnings.push(`vocabulary[${i}]: ${readingLabel} дутуу.`);
     }
     if (!word.hskLevel?.trim()) {
       warnings.push(
-        `vocabulary[${i}] "${word.chinese}": missing ${levelLabel}.`
+        `vocabulary[${i}] "${word.chinese}": ${levelLabel} дутуу.`
       );
     }
     if (word.mongolian.trim() && isShortMongolian(word.mongolian)) {
       warnings.push(
-        `vocabulary[${i}] "${word.chinese}": Mongolian translation looks very short.`
+        `vocabulary[${i}] "${word.chinese}": монгол орчуулга хэт богино байна.`
       );
     }
     if (!word.exampleChinese?.trim() || !word.exampleMongolian?.trim()) {
-      warnings.push(`vocabulary[${i}] "${word.chinese}": missing example sentence.`);
+      warnings.push(`vocabulary[${i}] "${word.chinese}": жишээ өгүүлбэр дутуу.`);
     }
     if (seenVocab.has(word.chinese)) {
       errors.push(
-        `Duplicate vocabulary target "${word.chinese}" (indices ${seenVocab.get(word.chinese)} and ${i}).`
+        `"${word.chinese}" үг давхардсан (${seenVocab.get(word.chinese)} ба ${i} дугаарт).`
       );
     } else {
       seenVocab.set(word.chinese, i);
@@ -293,7 +295,9 @@ export function analyzeImportPayloadExtras(
       q.correctAnswer &&
       !q.options.includes(q.correctAnswer)
     ) {
-      errors.push(`quizQuestions[${i}]: correctAnswer is not in options.`);
+      errors.push(
+        `quizQuestions[${i}]: зөв хариулт (correctAnswer) сонголтуудын дунд алга.`
+      );
     }
   });
 

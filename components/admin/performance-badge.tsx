@@ -16,11 +16,11 @@ export function PerformanceBadge({ kind, label }: Props) {
   const text =
     label ??
     (kind === "high"
-      ? "High"
+      ? "Өндөр"
       : kind === "low"
-        ? "Low"
+        ? "Бага"
         : kind === "none"
-          ? "No activity"
+          ? "Идэвх алга"
           : "—");
 
   return (

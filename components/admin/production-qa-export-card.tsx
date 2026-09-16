@@ -67,15 +67,15 @@ export function ProductionQaExportCard({
   return (
     <section className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:p-6">
       <h2 className="text-lg font-semibold text-slate-900">
-        Save &amp; export
+        Хадгалах ба гаргах
       </h2>
       <p className="mt-2 text-sm text-slate-600">
-        Checklist status is stored in this browser (localStorage). Export a
-        report after each production deploy review.
+        Шалгалтын төлөв энэ хөтөч дээр хадгалагдана (localStorage). Байршуулалт
+        бүрийн дараа тайлангаа гаргаж авна уу.
       </p>
       {savedAt ? (
         <p className="mt-2 text-xs text-slate-500">
-          Last saved: {formatMongoliaDateTimeWithLabel(savedAt)}
+          Сүүлд хадгалсан: {formatMongoliaDateTimeWithLabel(savedAt)}
         </p>
       ) : null}
 
@@ -85,7 +85,7 @@ export function ProductionQaExportCard({
           onClick={onSave}
           className="inline-flex rounded-full bg-emerald-500 px-4 py-2 text-sm font-semibold text-white hover:bg-emerald-600"
         >
-          Save checklist
+          Жагсаалтыг хадгалах
         </button>
         <button
           type="button"
@@ -96,7 +96,7 @@ export function ProductionQaExportCard({
               : "border-slate-200 bg-white text-slate-700 hover:border-red-200"
           }`}
         >
-          {resetConfirm ? "Confirm reset" : "Reset checklist"}
+          {resetConfirm ? "Цэвэрлэхийг баталгаажуулах" : "Жагсаалтыг цэвэрлэх"}
         </button>
       </div>
 
@@ -106,28 +106,28 @@ export function ProductionQaExportCard({
           onClick={() => void copyReport("json")}
           className="inline-flex rounded-full border border-slate-200 bg-slate-50 px-4 py-2 text-sm font-semibold text-slate-700 hover:border-emerald-200"
         >
-          {copied === "json" ? "Copied!" : "Copy QA report (JSON)"}
+          {copied === "json" ? "Хуулагдлаа!" : "Тайланг хуулах (JSON)"}
         </button>
         <button
           type="button"
           onClick={() => void copyReport("markdown")}
           className="inline-flex rounded-full border border-slate-200 bg-slate-50 px-4 py-2 text-sm font-semibold text-slate-700 hover:border-emerald-200"
         >
-          {copied === "markdown" ? "Copied!" : "Copy Markdown report"}
+          {copied === "markdown" ? "Хуулагдлаа!" : "Markdown тайланг хуулах"}
         </button>
         <button
           type="button"
           onClick={downloadJson}
           className="inline-flex rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:border-emerald-200"
         >
-          Download JSON report
+          JSON тайлан татах
         </button>
         <button
           type="button"
           onClick={downloadMarkdown}
           className="inline-flex rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:border-emerald-200"
         >
-          Download Markdown report
+          Markdown тайлан татах
         </button>
       </div>
     </section>

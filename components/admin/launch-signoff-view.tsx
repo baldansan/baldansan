@@ -109,7 +109,7 @@ export function LaunchSignoffView() {
   if (!hydrated) {
     return (
       <p className="rounded-2xl bg-slate-50 px-6 py-8 text-center text-sm text-slate-600 ring-1 ring-slate-200">
-        Launch sign-off ачааллаж байна…
+        Гаргалтын баталгаа ачаалж байна…
       </p>
     );
   }
@@ -120,12 +120,12 @@ export function LaunchSignoffView() {
     <div className="flex flex-col gap-6">
       <section className="rounded-2xl bg-emerald-50/60 p-5 ring-1 ring-emerald-100 sm:p-6">
         <h2 className="text-lg font-semibold text-slate-900">
-          Production information
+          Ажлын орчны мэдээлэл
         </h2>
         <p className="mt-2 font-mono text-sm text-emerald-800">{PRODUCTION_URL}</p>
         <p className="mt-2 text-sm text-slate-600">
-          {summary.pass} pass · {summary.warning} warn · {summary.fail} fail ·{" "}
-          {summary.not_checked} not checked
+          {summary.pass} давсан · {summary.warning} анхааруулга ·{" "}
+          {summary.fail} амжилтгүй · {summary.not_checked} шалгаагүй
         </p>
         <div className="mt-4 flex flex-wrap gap-2">
           <a
@@ -134,37 +134,37 @@ export function LaunchSignoffView() {
             rel="noopener noreferrer"
             className="inline-flex rounded-full bg-emerald-500 px-4 py-2 text-sm font-semibold text-white hover:bg-emerald-600"
           >
-            Deployment check
+            Байршуулалтын шалгалт
           </a>
           <Link
             href="/admin/system-check"
             className="inline-flex rounded-full border border-emerald-200 bg-white px-4 py-2 text-sm font-semibold text-emerald-800 hover:bg-emerald-50"
           >
-            System check
+            Системийн шалгалт
           </Link>
           <Link
             href="/admin/production-qa"
             className="inline-flex rounded-full border border-emerald-200 bg-white px-4 py-2 text-sm font-semibold text-emerald-800 hover:bg-emerald-50"
           >
-            Production QA
+            Чанарын шалгалт
           </Link>
           <Link
             href="/admin/security-audit"
             className="inline-flex rounded-full border border-emerald-200 bg-white px-4 py-2 text-sm font-semibold text-emerald-800 hover:bg-emerald-50"
           >
-            Security audit
+            Аюулгүй байдлын үзлэг
           </Link>
           <Link
             href="/admin/launch-candidate"
             className="inline-flex rounded-full border border-emerald-200 bg-white px-4 py-2 text-sm font-semibold text-emerald-800 hover:bg-emerald-50"
           >
-            Launch candidate
+            Гаргалтын хувилбар
           </Link>
           <Link
             href="/admin/final-audit"
             className="inline-flex rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:border-emerald-200"
           >
-            Final audit
+            Эцсийн үзлэг
           </Link>
         </div>
       </section>
@@ -187,7 +187,7 @@ export function LaunchSignoffView() {
       />
 
       <section className="rounded-2xl bg-slate-50 p-5 ring-1 ring-slate-200">
-        <h2 className="text-base font-semibold text-slate-900">Sign-off docs</h2>
+        <h2 className="text-base font-semibold text-slate-900">Баталгааны баримт бичиг</h2>
         <p className="mt-2 text-sm text-slate-600">
           LAUNCH_SIGNOFF.md · GO_LIVE_NOTES.md · ROLLBACK_PLAN.md ·
           POST_LAUNCH_MONITORING.md

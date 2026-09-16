@@ -70,14 +70,14 @@ export function AdminTaskCenter({
     ? warnings
     : [
         ...warnings,
-        "Persistent task actions require migration 006_admin_tasks.sql.",
+        "Ажлын төлөвийг хадгалахын тулд 006_admin_tasks.sql migration хэрэгтэй.",
       ];
 
   return (
     <div className="flex flex-col gap-6">
       {allWarnings.length > 0 ? (
         <div className="rounded-xl bg-amber-50 px-4 py-3 text-sm text-amber-900 ring-1 ring-amber-200">
-          <p className="font-semibold">Task center notes</p>
+          <p className="font-semibold">Ажлын төвийн анхааруулга</p>
           <ul className="mt-2 list-inside list-disc">
             {[...new Set(allWarnings)].map((warning) => (
               <li key={warning}>{warning}</li>
@@ -87,7 +87,7 @@ export function AdminTaskCenter({
       ) : null}
 
       <section>
-        <h2 className="text-lg font-semibold text-slate-900">Summary</h2>
+        <h2 className="text-lg font-semibold text-slate-900">Хураангуй</h2>
         <div className="mt-3">
           <TaskSummaryCards summary={summary} />
           <TaskSummarySecondaryCards summary={summary} />
@@ -115,7 +115,7 @@ export function AdminTaskCenter({
       {filteredTasks.length === 0 ? (
         <div className="rounded-2xl bg-emerald-50 px-6 py-10 text-center ring-1 ring-emerald-200">
           <p className="text-sm font-medium text-emerald-900">
-            Бүх зүйл хэвийн байна. Одоогоор хийх urgent task алга.
+            Бүх зүйл хэвийн байна. Одоогоор яаралтай хийх ажил алга.
           </p>
         </div>
       ) : (

@@ -110,10 +110,10 @@ export function LessonEditForm({
       />
 
       <AdminCollapsibleSection
-        title="Advanced tools"
-        description="Content editors, backup/restore, publish workflow, QA, and activity log."
+        title="Нэмэлт хэрэгслүүд"
+        description="Контент засварлах, нөөц хуулбар, нийтлэх урсгал, чанарын шалгалт, үйлдлийн бүртгэл."
       >
-        <AdminToolGroup title="Full metadata">
+        <AdminToolGroup title="Бүрэн мэдээлэл">
           <LessonMetadataEditor
             lesson={lesson}
             orderIndex={orderIndex}
@@ -130,11 +130,11 @@ export function LessonEditForm({
           />
         </AdminToolGroup>
 
-        <AdminToolGroup title="Media">
+        <AdminToolGroup title="Медиа">
           <LessonMediaEditor lesson={lesson} />
         </AdminToolGroup>
 
-        <AdminToolGroup title="Subtitles, vocabulary, quiz">
+        <AdminToolGroup title="Хадмал, үгсийн сан, дасгал">
           <SubtitleEditor
             lessonId={lesson.id}
             onSubtitleCountChange={setSubtitleCount}
@@ -152,7 +152,7 @@ export function LessonEditForm({
           />
         </AdminToolGroup>
 
-        <AdminToolGroup title="Publish workflow">
+        <AdminToolGroup title="Нийтлэх урсгал">
           <ReleaseReadinessCard lesson={lesson} />
           <LessonApprovalControls lesson={lesson} />
           <PublishingControls
@@ -190,7 +190,7 @@ export function LessonEditForm({
           quizCount={quizActual}
         />
 
-        <AdminToolGroup title="Activity log">
+        <AdminToolGroup title="Үйлдлийн бүртгэл">
           <LessonActivityCard lessonId={lesson.id} bare />
         </AdminToolGroup>
 
@@ -199,7 +199,7 @@ export function LessonEditForm({
             href={`/admin/analytics/lessons/${lesson.id}`}
             className="inline-flex rounded-full border border-slate-200 px-4 py-2 font-medium text-slate-700 hover:border-emerald-200 hover:text-emerald-700"
           >
-            Lesson analytics
+            Хичээлийн тайлан
           </Link>
         </div>
       </AdminCollapsibleSection>

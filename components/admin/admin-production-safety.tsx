@@ -20,37 +20,37 @@ export function AdminProductionSafety({
 }: Props) {
   const checks = [
     {
-      label: "Admin RLS policies",
+      label: "Админы RLS дүрмүүд",
       detail: "002_admin_content_policies + admin_profiles",
       status: "needs check" as const,
       href: "/admin/final-audit",
     },
     {
-      label: "Media bucket (lesson-media)",
-      detail: "Supabase Storage policies configured",
+      label: "Медиа хадгалах сан (lesson-media)",
+      detail: "Supabase Storage-ийн дүрмүүд тохируулсан",
       status: "needs check" as const,
       href: "/admin/final-audit",
     },
     {
-      label: "Activity log",
+      label: "Үйлдлийн бүртгэл",
       detail:
         activityWarnings.length > 0
           ? activityWarnings[0]
-          : `${adminActivitySummary.total} logged actions`,
+          : `${adminActivitySummary.total} бүртгэгдсэн үйлдэл`,
       status: activityWarnings.length > 0 ? ("needs check" as const) : ("ready" as const),
       href: "/admin/activity",
     },
     {
-      label: "Admin tasks table",
+      label: "Админы ажлын хүснэгт",
       detail: "006_admin_tasks migration",
       status: "ready" as const,
       href: "/admin/tasks",
     },
     {
-      label: "Release workflow",
+      label: "Хувилбар гаргах урсгал",
       detail: releaseMigrationPending
-        ? "Run migration 005_lesson_release_workflow"
-        : "Release columns available",
+        ? "005_lesson_release_workflow migration-ийг ажиллуулна"
+        : "Хувилбарын багана бэлэн",
       status: releaseMigrationPending ? ("needs check" as const) : ("ready" as const),
       href: "/admin/final-audit",
     },
@@ -85,7 +85,7 @@ export function AdminProductionSafety({
               href={item.href}
               className="mt-2 inline-block text-xs font-semibold text-emerald-700 hover:text-emerald-800"
             >
-              Open →
+              Нээх →
             </Link>
           </li>
         ))}
@@ -94,26 +94,26 @@ export function AdminProductionSafety({
       <div className="grid gap-4 lg:grid-cols-2">
         <section className="rounded-xl bg-white p-4 ring-1 ring-slate-200">
           <h3 className="text-sm font-semibold text-slate-900">
-            Latest admin activity
+            Сүүлийн үйлдлүүд
           </h3>
           {recentAdminActivity.length > 0 ? (
             <div className="mt-3">
               <ActivityLogList rows={recentAdminActivity.slice(0, 3)} compact />
             </div>
           ) : (
-            <p className="mt-2 text-sm text-slate-600">No activity logged yet.</p>
+            <p className="mt-2 text-sm text-slate-600">Одоогоор бүртгэгдсэн үйлдэл алга.</p>
           )}
           <Link
             href="/admin/activity"
             className="mt-3 inline-block text-xs font-semibold text-emerald-700"
           >
-            Full activity log →
+            Бүх үйлдлийн бүртгэл →
           </Link>
         </section>
 
         <section className="rounded-xl bg-white p-4 ring-1 ring-slate-200">
           <h3 className="text-sm font-semibold text-slate-900">
-            Unresolved critical tasks
+            Шийдэгдээгүй ноцтой ажлууд
           </h3>
           {criticalTasks.length > 0 ? (
             <ul className="mt-3 space-y-2 text-sm">
@@ -121,19 +121,19 @@ export function AdminProductionSafety({
                 <li key={task.taskKey} className="rounded-lg bg-amber-50/60 px-3 py-2">
                   <p className="font-medium text-slate-900">{task.title}</p>
                   {task.lessonId ? (
-                    <p className="text-xs text-slate-600">Lesson {task.lessonId}</p>
+                    <p className="text-xs text-slate-600">{task.lessonId}-р хичээл</p>
                   ) : null}
                 </li>
               ))}
             </ul>
           ) : (
-            <p className="mt-2 text-sm text-slate-600">No critical tasks open.</p>
+            <p className="mt-2 text-sm text-slate-600">Ноцтой ажил алга.</p>
           )}
           <Link
             href="/admin/tasks"
             className="mt-3 inline-block text-xs font-semibold text-emerald-700"
           >
-            Task center →
+            Ажлын төв →
           </Link>
         </section>
       </div>

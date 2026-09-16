@@ -39,7 +39,7 @@ export async function importDraftLessonOnServer(
   }
 
   if (!body.importPayload) {
-    return fail(["ZIP parse data missing. Please validate again."]);
+    return fail(["ZIP багцын мэдээлэл алга. Дахин шалгана уу."]);
   }
 
   const shell = await upsertDraftLessonFromPackage(client, body);
@@ -64,7 +64,7 @@ export async function importDraftLessonOnServer(
   );
 
   if (imported.error || !imported.data) {
-    return fail([imported.error ?? "Bulk content import failed."], {
+    return fail([imported.error ?? "Агуулгыг бөөнөөр оруулж чадсангүй."], {
       lessonId: resolvedLessonId,
       created: shell.created,
     });
@@ -75,8 +75,8 @@ export async function importDraftLessonOnServer(
   revalidatePath(`/lessons/${resolvedLessonId}/quiz`);
 
   const message = shell.created
-    ? "Шинэ draft lesson үүсгээд import амжилттай хийлээ."
-    : "Одоо байгаа draft lesson дээр import хийлээ.";
+    ? "Шинэ ноорог хичээл үүсгээд багцыг амжилттай оруулж дууслаа."
+    : "Одоо байгаа ноорог хичээл дээр багцыг оруулж дууслаа.";
 
   const result: LessonPackageImportResult = {
     ok: true,

@@ -4,7 +4,7 @@ import { getQuestionInsightsOverview } from "@/lib/supabase/admin-analytics";
 export const dynamic = "force-dynamic";
 
 export const metadata = {
-  title: "Question insights — Admin analytics",
+  title: "Асуултын дүн шинжилгээ — Тайлан",
 };
 
 type Props = {

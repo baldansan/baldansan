@@ -40,7 +40,7 @@ export function AdminActivityPreviewLoader({ recentLimit = 5 }: Props) {
   if (loading) {
     return (
       <p className="rounded-2xl bg-slate-50 px-6 py-8 text-center text-sm text-slate-600 ring-1 ring-slate-200">
-        Activity log ачааллаж байна…
+        Үйлдлийн бүртгэлийг ачаалж байна…
       </p>
     );
   }

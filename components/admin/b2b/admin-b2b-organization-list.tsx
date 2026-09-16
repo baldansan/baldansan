@@ -15,6 +15,26 @@ const STATUS_OPTIONS: OrganizationStatus[] = [
   "closed",
 ];
 
+/** Зөвхөн дэлгэцэнд харуулах нэр — өгөгдлийн утгыг өөрчлөхгүй. */
+const STATUS_LABELS: Record<string, string> = {
+  lead: "Сонирхсон",
+  contacted: "Холбоо барьсан",
+  demo_scheduled: "Танилцуулга товлосон",
+  pilot: "Туршилт",
+  active: "Идэвхтэй",
+  paused: "Түр зогссон",
+  closed: "Хаасан",
+};
+
+const TYPE_LABELS: Record<string, string> = {
+  training_center: "Сургалтын төв",
+  school: "Сургууль",
+  university: "Их сургууль",
+  teacher: "Багш (хувь хүн)",
+  company: "Компани",
+  other: "Бусад",
+};
+
 export function AdminB2BOrganizationList() {
   const [organizations, setOrganizations] = useState<Organization[]>([]);
   const [loading, setLoading] = useState(true);
@@ -52,16 +72,16 @@ export function AdminB2BOrganizationList() {
   );
 
   if (loading) {
-    return <p className="text-sm text-slate-600">Loading organizations…</p>;
+    return <p className="text-sm text-slate-600">Ачаалж байна…</p>;
   }
 
   return (
     <div className="flex flex-col gap-6">
       <section>
         <Link href="/admin/b2b" className="text-sm text-slate-600 hover:text-emerald-600">
-          ← B2B CRM
+          ← Сургууль, байгууллага
         </Link>
-        <h1 className="mt-2 text-2xl font-bold tracking-tight">Organizations</h1>
+        <h1 className="mt-2 text-2xl font-bold tracking-tight">Байгууллагууд</h1>
         {error ? (
           <p className="mt-2 rounded-lg bg-red-50 px-3 py-2 text-sm text-red-800">
             {error}
@@ -74,7 +94,7 @@ export function AdminB2BOrganizationList() {
           href="/admin/b2b/organizations/new"
           className="rounded-full bg-emerald-500 px-4 py-2 text-sm font-semibold text-white"
         >
-          Create organization
+          Байгууллага үүсгэх
         </Link>
       </div>
 
@@ -82,7 +102,7 @@ export function AdminB2BOrganizationList() {
         <input
           value={search}
           onChange={(e) => setSearch(e.target.value)}
-          placeholder="Search name, email…"
+          placeholder="Нэр, и-мэйлээр хайх…"
           className="rounded-lg border border-slate-200 px-3 py-2 text-sm sm:min-w-[200px]"
         />
         <select
@@ -90,10 +110,10 @@ export function AdminB2BOrganizationList() {
           onChange={(e) => setStatusFilter(e.target.value)}
           className="rounded-lg border border-slate-200 px-3 py-2 text-sm"
         >
-          <option value="all">All statuses</option>
+          <option value="all">Бүх төлөв</option>
           {STATUS_OPTIONS.map((s) => (
             <option key={s} value={s}>
-              {s}
+              {STATUS_LABELS[s] ?? s}
             </option>
           ))}
         </select>
@@ -102,10 +122,10 @@ export function AdminB2BOrganizationList() {
           onChange={(e) => setTypeFilter(e.target.value)}
           className="rounded-lg border border-slate-200 px-3 py-2 text-sm"
         >
-          <option value="all">All types</option>
+          <option value="all">Бүх төрөл</option>
           {orgTypes.map((t) => (
             <option key={t} value={t}>
-              {t}
+              {TYPE_LABELS[t] ?? t}
             </option>
           ))}
         </select>
@@ -115,11 +135,11 @@ export function AdminB2BOrganizationList() {
         <table className="w-full min-w-[640px] text-left text-sm">
           <thead className="bg-slate-50 text-xs uppercase text-slate-500">
             <tr>
-              <th className="px-4 py-3">Name</th>
-              <th className="px-4 py-3">Type</th>
-              <th className="px-4 py-3">Status</th>
-              <th className="px-4 py-3">Contact</th>
-              <th className="px-4 py-3">Members</th>
+              <th className="px-4 py-3">Нэр</th>
+              <th className="px-4 py-3">Төрөл</th>
+              <th className="px-4 py-3">Төлөв</th>
+              <th className="px-4 py-3">Холбоо барих</th>
+              <th className="px-4 py-3">Гишүүд</th>
               <th className="px-4 py-3"></th>
             </tr>
           </thead>
@@ -127,8 +147,12 @@ export function AdminB2BOrganizationList() {
             {filtered.map((o) => (
               <tr key={o.id}>
                 <td className="px-4 py-3 font-medium text-slate-900">{o.name}</td>
-                <td className="px-4 py-3 text-slate-600">{o.organizationType}</td>
-                <td className="px-4 py-3 text-slate-600">{o.status}</td>
+                <td className="px-4 py-3 text-slate-600">
+                  {TYPE_LABELS[o.organizationType] ?? o.organizationType}
+                </td>
+                <td className="px-4 py-3 text-slate-600">
+                  {STATUS_LABELS[o.status] ?? o.status}
+                </td>
                 <td className="px-4 py-3 text-xs text-slate-500">
                   {o.email ?? o.phone ?? "—"}
                 </td>
@@ -138,7 +162,7 @@ export function AdminB2BOrganizationList() {
                     href={`/admin/b2b/organizations/${o.id}`}
                     className="text-emerald-600 hover:text-emerald-800"
                   >
-                    View
+                    Харах
                   </Link>
                 </td>
               </tr>

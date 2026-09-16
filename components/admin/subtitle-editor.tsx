@@ -66,13 +66,13 @@ export function SubtitleEditor({
 
   function validate(): string | null {
     if (!form.startTime.trim() || !form.endTime.trim()) {
-      return "Start/end time заавал.";
+      return "Эхлэх, дуусах хугацааг заавал бөглөнө үү.";
     }
-    if (!form.chinese.trim()) return "Chinese заавал.";
-    if (!form.mongolian.trim()) return "Mongolian заавал.";
+    if (!form.chinese.trim()) return "Хятад өгүүлбэрийг заавал бөглөнө үү.";
+    if (!form.mongolian.trim()) return "Монгол орчуулгыг заавал бөглөнө үү.";
     if (form.orderIndex.trim()) {
       const n = Number(form.orderIndex);
-      if (!Number.isFinite(n) || n < 1) return "Order index тоо байх ёстой.";
+      if (!Number.isFinite(n) || n < 1) return "Дарааллын дугаар тоо байх ёстой.";
     }
     return null;
   }
@@ -105,7 +105,7 @@ export function SubtitleEditor({
       return;
     }
 
-    setSuccess("Subtitle нэмэгдлээ.");
+    setSuccess("Хадмал мөр нэмэгдлээ.");
     setForm({
       ...emptyForm,
       orderIndex: form.orderIndex.trim()
@@ -125,20 +125,20 @@ export function SubtitleEditor({
       setError(result.error);
       return;
     }
-    setSuccess("Subtitle устгагдлаа.");
+    setSuccess("Хадмал мөр устгагдлаа.");
     await load();
   }
 
   return (
     <AdminEditorSection
-      title={`Subtitle editor (${items.length})`}
-      description="Timed lines for the watch page."
+      title={`Хадмал засварлах (${items.length})`}
+      description="Бичлэг үзэх хуудсанд хугацаагаар гарах мөрүүд."
     >
       <AdminAlert error={error} success={success} />
 
       <div className="grid gap-3 sm:grid-cols-2">
         <label className="block text-sm font-medium text-slate-700">
-          Start time
+          Эхлэх хугацаа
           <input
             className={adminInputClass}
             value={form.startTime}
@@ -147,7 +147,7 @@ export function SubtitleEditor({
           />
         </label>
         <label className="block text-sm font-medium text-slate-700">
-          End time
+          Дуусах хугацаа
           <input
             className={adminInputClass}
             value={form.endTime}
@@ -156,7 +156,7 @@ export function SubtitleEditor({
           />
         </label>
         <label className="block text-sm font-medium text-slate-700 sm:col-span-2">
-          Chinese
+          Хятад
           <input
             className={adminInputClass}
             value={form.chinese}
@@ -172,7 +172,7 @@ export function SubtitleEditor({
           />
         </label>
         <label className="block text-sm font-medium text-slate-700 sm:col-span-2">
-          Mongolian
+          Монгол
           <input
             className={adminInputClass}
             value={form.mongolian}
@@ -180,7 +180,7 @@ export function SubtitleEditor({
           />
         </label>
         <label className="block text-sm font-medium text-slate-700">
-          Order index
+          Дарааллын дугаар
           <input
             className={adminInputClass}
             type="number"
@@ -197,13 +197,13 @@ export function SubtitleEditor({
         disabled={saving}
         className="mt-4 rounded-full bg-emerald-500 px-5 py-2.5 text-sm font-semibold text-white hover:bg-emerald-600 disabled:opacity-60"
       >
-        {saving ? "Saving..." : "Add subtitle line"}
+        {saving ? "Хадгалж байна…" : "Хадмал мөр нэмэх"}
       </button>
 
       {loading ? (
-        <p className="mt-4 text-sm text-slate-500">Ачааллаж байна...</p>
+        <p className="mt-4 text-sm text-slate-500">Ачаалж байна…</p>
       ) : items.length === 0 ? (
-        <p className="mt-4 text-sm text-amber-800">No subtitles yet</p>
+        <p className="mt-4 text-sm text-amber-800">Одоогоор хадмал алга</p>
       ) : (
         <ul className="mt-4 space-y-2">
           {items.map((line) => (
@@ -227,7 +227,7 @@ export function SubtitleEditor({
                 disabled={deletingId === line.id}
                 className="shrink-0 rounded-full border border-red-200 px-3 py-1 text-xs font-medium text-red-700 hover:bg-red-50 disabled:opacity-50"
               >
-                {deletingId === line.id ? "…" : "Delete"}
+                {deletingId === line.id ? "…" : "Устгах"}
               </button>
             </li>
           ))}

@@ -16,109 +16,109 @@ type AuditSection = {
 
 const SECTIONS: AuditSection[] = [
   {
-    title: "Admin access",
+    title: "Админы хандалт",
     items: [
-      { label: "AdminGuard on /admin routes", status: "ready", href: "/admin" },
+      { label: "AdminGuard нь /admin хуудсуудыг хамгаална", status: "ready", href: "/admin" },
       {
-        label: "admin_profiles bootstrap (Supabase SQL Editor)",
+        label: "admin_profiles хүснэгтийг үүсгэх (Supabase SQL Editor)",
         status: "needs check",
         href: "/admin/final-audit",
-        note: "Run supabase/admin/001_admin_profiles_setup.sql",
+        note: "supabase/admin/001_admin_profiles_setup.sql-ийг ажиллуулна",
       },
-      { label: "Admin role check (is_admin)", status: "ready", href: "/admin" },
+      { label: "Админ эрхийн шалгалт (is_admin)", status: "ready", href: "/admin" },
       {
-        label: "Admin link visible only for admins",
+        label: "Админ холбоос зөвхөн админд харагдана",
         status: "ready",
         href: "/",
-        note: "Header AuthStatus component",
+        note: "Толгой хэсгийн AuthStatus хэсэг",
       },
     ],
   },
   {
-    title: "Content management",
+    title: "Контент удирдлага",
     items: [
-      { label: "Draft lesson creation", status: "ready", href: "/admin/lessons/new" },
-      { label: "Metadata edit/save", status: "ready", href: "/admin/lessons/5/edit" },
-      { label: "Subtitle editor", status: "ready", href: "/admin/lessons/5/edit" },
-      { label: "Vocabulary editor", status: "ready", href: "/admin/lessons/5/edit" },
-      { label: "Quiz editor", status: "ready", href: "/admin/lessons/5/edit" },
-      { label: "Bulk JSON import", status: "ready", href: "/admin/lessons/5/edit" },
-      { label: "Prompt generator + import QA", status: "ready", href: "/admin/lessons/5/edit" },
-      { label: "Export backup JSON", status: "ready", href: "/admin/lessons/5/edit" },
-      { label: "Duplicate / restore", status: "ready", href: "/admin/lessons/5/edit" },
-      { label: "Guided Lesson Builder", status: "ready", href: "/admin/lesson-builder" },
-      { label: "Prompt library", status: "ready", href: "/admin/prompts" },
+      { label: "Ноорог хичээл үүсгэх", status: "ready", href: "/admin/lessons/new" },
+      { label: "Ерөнхий мэдээлэл засаж хадгалах", status: "ready", href: "/admin/lessons/5/edit" },
+      { label: "Хадмал засварлагч", status: "ready", href: "/admin/lessons/5/edit" },
+      { label: "Үгсийн сангийн засварлагч", status: "ready", href: "/admin/lessons/5/edit" },
+      { label: "Дасгалын засварлагч", status: "ready", href: "/admin/lessons/5/edit" },
+      { label: "JSON-оор бөөнөөр оруулах", status: "ready", href: "/admin/lessons/5/edit" },
+      { label: "Prompt үүсгэх ба оруулсан өгөгдлийн шалгалт", status: "ready", href: "/admin/lessons/5/edit" },
+      { label: "JSON нөөц хуулбар гаргах", status: "ready", href: "/admin/lessons/5/edit" },
+      { label: "Хувилах / сэргээх", status: "ready", href: "/admin/lessons/5/edit" },
+      { label: "Хичээл угсрах туслах", status: "ready", href: "/admin/lesson-builder" },
+      { label: "Prompt-ын сан", status: "ready", href: "/admin/prompts" },
     ],
   },
   {
-    title: "Release workflow",
+    title: "Хувилбар гаргах урсгал",
     items: [
-      { label: "QA readiness checklist", status: "ready", href: "/admin/lessons/5/edit" },
-      { label: "Approve for publish", status: "ready", href: "/admin/lessons/5/edit" },
-      { label: "Publish / unpublish / archive", status: "ready", href: "/admin/lessons/5/edit" },
-      { label: "Public course list (available only)", status: "ready", href: "/courses/hsk5" },
+      { label: "Чанарын бэлэн байдлын жагсаалт", status: "ready", href: "/admin/lessons/5/edit" },
+      { label: "Нийтлэхийг батлах", status: "ready", href: "/admin/lessons/5/edit" },
+      { label: "Нийтлэх / нийтлэхээ болих / архивлах", status: "ready", href: "/admin/lessons/5/edit" },
+      { label: "Нийтийн курсын жагсаалт (зөвхөн нийтлэгдсэн)", status: "ready", href: "/courses/hsk5" },
       {
-        label: "Admin preview (?preview=admin)",
+        label: "Админаар урьдчилж харах (?preview=admin)",
         status: "ready",
         href: "/lessons/5?preview=admin",
       },
       {
-        label: "Non-admin blocked from draft preview",
+        label: "Админ бус хүн ноорог харж чадахгүй",
         status: "ready",
         href: "/lessons/5?preview=admin",
       },
     ],
   },
   {
-    title: "Media",
+    title: "Медиа",
     items: [
-      { label: "Media metadata fields", status: "ready", href: "/admin/lessons/5/edit" },
+      { label: "Медиагийн ерөнхий мэдээллийн талбарууд", status: "ready", href: "/admin/lessons/5/edit" },
       {
-        label: "Storage bucket lesson-media",
+        label: "lesson-media хадгалах сан",
         status: "needs check",
-        note: "Run supabase/storage/001_lesson_media_bucket_policies.sql",
+        note: "supabase/storage/001_lesson_media_bucket_policies.sql-ийг ажиллуулна",
       },
-      { label: "Media upload + URL paste", status: "ready", href: "/admin/lessons/5/edit" },
+      { label: "Медиа байршуулах ба хаяг буулгах", status: "ready", href: "/admin/lessons/5/edit" },
     ],
   },
   {
-    title: "Analytics",
+    title: "Тайлан",
     items: [
-      { label: "Admin dashboard metrics", status: "ready", href: "/admin" },
-      { label: "Per-lesson analytics", status: "ready", href: "/admin/analytics/lessons/5" },
-      { label: "Question analytics", status: "ready", href: "/admin/analytics/questions" },
+      { label: "Хяналтын самбарын үзүүлэлт", status: "ready", href: "/admin" },
+      { label: "Хичээл тус бүрийн тайлан", status: "ready", href: "/admin/analytics/lessons/5" },
+      { label: "Асуултын тайлан", status: "ready", href: "/admin/analytics/questions" },
       {
-        label: "Vocabulary analytics",
+        label: "Үгсийн сангийн тайлан",
         status: "ready",
         href: "/admin/analytics/vocabulary",
       },
     ],
   },
   {
-    title: "Operations",
+    title: "Өдөр тутмын ажиллагаа",
     items: [
-      { label: "Task center", status: "ready", href: "/admin/tasks" },
+      { label: "Ажлын төв", status: "ready", href: "/admin/tasks" },
       {
-        label: "Persistent admin tasks (006)",
+        label: "Админы ажил хадгалагдана (006)",
         status: "needs check",
         href: "/admin/tasks",
-        note: "Requires migration 006 in Supabase",
+        note: "Supabase дээр 006 migration хийсэн байх шаардлагатай",
       },
       {
-        label: "Activity log display (client session)",
+        label: "Үйлдлийн бүртгэл харагдана (хөтчийн сешн)",
         status: "ready",
         href: "/admin/activity",
       },
       {
-        label: "Activity detail + diff + rollback",
+        label: "Үйлдлийн дэлгэрэнгүй, зөрүү, буцаалт",
         status: "ready",
         href: "/admin/activity",
       },
-      { label: "Export activity CSV/JSON", status: "ready", href: "/admin/activity" },
+      { label: "Үйлдлийн бүртгэлийг CSV/JSON-оор гаргах", status: "ready", href: "/admin/activity" },
     ],
   },
   {
-    title: "Supabase migrations (manual SQL Editor)",
+    title: "Supabase migration (SQL Editor дээр гараар)",
     items: [
       { label: "001_initial_schema.sql", status: "needs check" },
       { label: "002_lesson_media_fields.sql", status: "needs check" },
@@ -130,115 +130,115 @@ const SECTIONS: AuditSection[] = [
       { label: "007_admin_activity_log.sql", status: "needs check" },
       { label: "008_admin_activity_snapshots.sql", status: "needs check" },
       {
-        label: "Auth + admin RLS policies",
+        label: "Нэвтрэлт ба админы RLS дүрмүүд",
         status: "needs check",
         note: "001_auth_rls + 002_admin_content_policies",
       },
     ],
   },
   {
-    title: "Phase 6 launch candidate",
+    title: "6-р үе шат — гаргахад бэлтгэсэн хувилбар",
     items: [
       {
-        label: "Deployment check (/deployment-check)",
+        label: "Байршуулалтын шалгалт (/deployment-check)",
         status: "ready",
         href: "/deployment-check",
       },
       {
-        label: "System check (/admin/system-check)",
+        label: "Системийн шалгалт (/admin/system-check)",
         status: "ready",
         href: "/admin/system-check",
       },
       {
-        label: "Production QA (/admin/production-qa)",
+        label: "Чанарын шалгалт (/admin/production-qa)",
         status: "ready",
         href: "/admin/production-qa",
       },
       {
-        label: "Security / RLS audit (/admin/security-audit)",
+        label: "Аюулгүй байдал / RLS үзлэг (/admin/security-audit)",
         status: "ready",
         href: "/admin/security-audit",
       },
       {
-        label: "Supabase verification SQL",
+        label: "Supabase-ийн шалгах SQL",
         status: "needs check",
-        note: "supabase/verify/production_verification.sql — no fail rows",
+        note: "supabase/verify/production_verification.sql — алдаатай мөр байхгүй",
       },
       {
-        label: "Vercel env + Auth URLs",
+        label: "Vercel-ийн орчны хувьсагч ба Auth хаягууд",
         status: "needs check",
-        note: "https://baldansan.vercel.app in Supabase Auth config",
+        note: "Supabase Auth тохиргоонд https://baldansan.vercel.app байх ёстой",
       },
       {
-        label: "Launch candidate status",
+        label: "Гаргахад бэлтгэсэн хувилбарын төлөв",
         status: "ready",
         href: "/admin/launch-candidate",
-        note: "Final smoke test + go-live decision",
+        note: "Эцсийн шалгалт ба гаргах шийдвэр",
       },
       {
-        label: "Production launch sign-off",
+        label: "Гаргалтын эцсийн баталгаа",
         status: "ready",
         href: "/admin/launch-signoff",
-        note: "Go/no-go decision + export",
+        note: "Гаргах эсэх шийдвэр ба тайлан гаргах",
       },
     ],
   },
   {
-    title: "Phase 6 deployment readiness",
+    title: "6-р үе шат — байршуулалтын бэлэн байдал",
     items: [
       {
-        label: "Deployment check route (/deployment-check)",
+        label: "Байршуулалтын шалгалтын хуудас (/deployment-check)",
         status: "ready",
         href: "/deployment-check",
       },
       {
-        label: "System check route (/admin/system-check)",
+        label: "Системийн шалгалтын хуудас (/admin/system-check)",
         status: "ready",
         href: "/admin/system-check",
       },
       {
-        label: "Production QA route (/admin/production-qa)",
+        label: "Чанарын шалгалтын хуудас (/admin/production-qa)",
         status: "ready",
         href: "/admin/production-qa",
       },
       {
-        label: "Security audit route (/admin/security-audit)",
+        label: "Аюулгүй байдлын үзлэгийн хуудас (/admin/security-audit)",
         status: "ready",
         href: "/admin/security-audit",
       },
       {
-        label: "Vercel env configured (URL + anon key)",
+        label: "Vercel-ийн орчны хувьсагч тохируулсан (URL + anon key)",
         status: "needs check",
         href: "/admin/system-check",
-        note: "Verify on production after deploy",
+        note: "Байршуулсны дараа ажлын орчинд шалгана",
       },
       {
-        label: "Supabase Auth Site URL + Redirect URLs",
+        label: "Supabase Auth-ийн Site URL ба Redirect URL",
         status: "needs check",
-        note: "Configure for https://baldansan.vercel.app",
+        note: "https://baldansan.vercel.app-д тохируулна",
       },
       {
-        label: "Production verification SQL",
+        label: "Ажлын орчныг шалгах SQL",
         status: "needs check",
         note: "supabase/verify/production_verification.sql",
       },
       {
-        label: "Deployment docs (DEPLOYMENT_PLAN.md)",
+        label: "Байршуулалтын баримт (DEPLOYMENT_PLAN.md)",
         status: "ready",
-        note: "Phase 6 Steps 1–5",
+        note: "6-р үе шатны 1–5 алхам",
       },
     ],
   },
   {
-    title: "Security",
+    title: "Аюулгүй байдал",
     items: [
-      { label: ".env.local gitignored", status: "ready" },
-      { label: "No service_role in client code", status: "ready" },
-      { label: "No secret keys in repo", status: "ready" },
+      { label: ".env.local файл git-д ороогүй", status: "ready" },
+      { label: "Клиент код дотор service_role байхгүй", status: "ready" },
+      { label: "Репод нууц түлхүүр байхгүй", status: "ready" },
       {
-        label: "RLS applied in production Supabase",
+        label: "Ажлын Supabase дээр RLS идэвхжсэн",
         status: "needs check",
-        note: "Verify before Phase 6 deploy",
+        note: "6-р үе шатны байршуулалтаас өмнө шалгана",
       },
     ],
   },
@@ -259,12 +259,13 @@ export function FinalAuditChecklist() {
     <div className="flex flex-col gap-8">
       <section className="rounded-2xl bg-emerald-50/60 p-5 ring-1 ring-emerald-100">
         <h2 className="text-base font-semibold text-slate-900">
-          Phase 5 Final Audit — May 2026
+          5-р үе шатны эцсийн үзлэг — 2026 оны 5 сар
         </h2>
         <p className="mt-2 text-sm text-slate-700">
-          Code audit complete. Items marked <strong>needs check</strong> require
-          manual verification in your Supabase project (migrations, RLS, storage).
-          Activity log reads use the browser admin session — same as writes.
+          Кодын үзлэг дууслаа. <strong>needs check</strong> гэж тэмдэглэсэн
+          зүйлсийг та Supabase төсөл дээрээ гараар шалгана (migration, RLS,
+          файл хадгалалт). Үйлдлийн бүртгэлийг бичихдээ ч уншихдаа ч хөтөч
+          дээр нэвтэрсэн админы эрхийг ашиглана.
         </p>
       </section>
 
@@ -311,66 +312,66 @@ export function FinalAuditChecklist() {
       ))}
 
       <section className="rounded-2xl bg-emerald-50/60 p-5 ring-1 ring-emerald-100">
-        <h2 className="text-base font-semibold text-slate-900">Phase 6 next</h2>
+        <h2 className="text-base font-semibold text-slate-900">Дараагийн алхам — 6-р үе шат</h2>
         <p className="mt-2 text-sm text-slate-700">
-          Steps 1–5 complete — run{" "}
+          1–5 алхам дууссан. Гаргахын өмнө{" "}
           <Link href="/admin/security-audit" className="font-medium text-emerald-800 hover:underline">
-            Security / RLS Audit
+            Аюулгүй байдал / RLS үзлэг
           </Link>{" "}
-          and{" "}
+          болон{" "}
           <Link href="/admin/production-qa" className="font-medium text-emerald-800 hover:underline">
-            Production QA
+            Чанарын шалгалтыг
           </Link>{" "}
-          before launch candidate sign-off.
+          ажиллуулна уу.
         </p>
         <div className="mt-4 flex flex-wrap gap-2">
           <Link
             href="/admin/security-audit"
             className="inline-flex rounded-full bg-emerald-500 px-5 py-2.5 text-sm font-semibold text-white hover:bg-emerald-600"
           >
-            Security audit
+            Аюулгүй байдлын үзлэг
           </Link>
           <Link
             href="/admin/production-qa"
             className="inline-flex rounded-full bg-emerald-500 px-5 py-2.5 text-sm font-semibold text-white hover:bg-emerald-600"
           >
-            Production QA
+            Чанарын шалгалт
           </Link>
           <Link
             href="/admin/system-check"
             className="inline-flex rounded-full bg-emerald-500 px-5 py-2.5 text-sm font-semibold text-white hover:bg-emerald-600"
           >
-            System check
+            Системийн шалгалт
           </Link>
           <Link
             href="/admin"
             className="inline-flex rounded-full border border-emerald-200 bg-white px-5 py-2.5 text-sm font-semibold text-emerald-800 hover:bg-emerald-50"
           >
-            Admin dashboard
+            Хяналтын самбар
           </Link>
           <Link
             href="/admin/activity"
             className="inline-flex rounded-full border border-emerald-200 bg-white px-5 py-2.5 text-sm font-semibold text-emerald-800 hover:bg-emerald-50"
           >
-            Activity log
+            Үйлдлийн бүртгэл
           </Link>
           <Link
             href="/admin/launch-candidate"
             className="inline-flex rounded-full border border-emerald-200 bg-white px-5 py-2.5 text-sm font-semibold text-emerald-800 hover:bg-emerald-50"
           >
-            Launch Candidate
+            Гаргахад бэлтгэсэн хувилбар
           </Link>
           <Link
             href="/admin/launch-signoff"
             className="inline-flex rounded-full border border-emerald-200 bg-emerald-50 px-5 py-2.5 text-sm font-semibold text-emerald-800 hover:bg-emerald-100"
           >
-            Launch Sign-off
+            Гаргалтын баталгаа
           </Link>
           <Link
             href="/courses/hsk5"
             className="inline-flex rounded-full border border-slate-200 bg-white px-5 py-2.5 text-sm font-semibold text-slate-700 hover:border-emerald-200"
           >
-            Public course
+            Нийтийн курс
           </Link>
         </div>
       </section>

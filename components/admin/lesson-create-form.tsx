@@ -12,15 +12,15 @@ import { createDraftLesson, getNextLessonOrderIndex } from "@/lib/supabase/admin
 import { hasSupabaseConfig } from "@/lib/supabase/client";
 
 function validate(values: LessonFormValues): string | null {
-  if (!values.id.trim()) return "Lesson ID заавал.";
-  if (!values.courseId.trim()) return "Course ID заавал.";
-  if (!values.title.trim()) return "Title заавал.";
-  if (!values.chineseTitle.trim()) return "Chinese title заавал.";
-  if (!values.status) return "Status заавал.";
+  if (!values.id.trim()) return "Хичээлийн ID-г заавал бөглөнө үү.";
+  if (!values.courseId.trim()) return "Курсын ID-г заавал бөглөнө үү.";
+  if (!values.title.trim()) return "Гарчгийг заавал бөглөнө үү.";
+  if (!values.chineseTitle.trim()) return "Хятад гарчгийг заавал бөглөнө үү.";
+  if (!values.status) return "Төлөвийг заавал сонгоно уу.";
   if (values.orderIndex.trim()) {
     const n = Number(values.orderIndex);
     if (!Number.isFinite(n) || n < 1) {
-      return "Order index тоо байх ёстой.";
+      return "Дарааллын дугаар тоо байх ёстой.";
     }
   }
   return null;
@@ -89,8 +89,8 @@ export function LessonCreateForm() {
       <div>
         <h1 className="text-2xl font-bold text-slate-900">Шинэ хичээл</h1>
         <p className="mt-2 text-sm text-slate-600">
-          Metadata-г Supabase <code className="text-xs">lessons</code> хүснэгтэд
-          ноорог болгон хадгална. Subtitle / vocabulary / quiz дараагийн алхам.
+          Ерөнхий мэдээллийг ноорог хичээл болгон хадгална. Хадмал, үгсийн сан,
+          дасгалыг дараагийн алхамд нэмнэ.
         </p>
       </div>
 
@@ -126,13 +126,13 @@ export function LessonCreateForm() {
             disabled={saving}
             className="rounded-full bg-emerald-500 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-emerald-600 disabled:cursor-not-allowed disabled:opacity-60"
           >
-            {saving ? "Saving..." : "Save draft"}
+            {saving ? "Хадгалж байна…" : "Ноорог хадгалах"}
           </button>
           <Link
             href="/admin/lessons"
             className="inline-flex justify-center rounded-full border border-slate-200 px-6 py-3 text-sm font-medium text-slate-700 transition-colors hover:border-emerald-200 hover:text-emerald-700"
           >
-            ← Content QA
+            ← Хичээлүүд рүү буцах
           </Link>
         </div>
       </section>

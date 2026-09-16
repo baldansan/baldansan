@@ -52,9 +52,9 @@ export function isMediaReady(lesson: LessonContent): boolean {
 
 export function mediaStatusLabel(status?: string | null): string {
   const normalized = normalizeMediaStatus(status);
-  if (normalized === "ready") return "Ready";
-  if (normalized === "pending") return "Pending";
-  return "Missing";
+  if (normalized === "ready") return "Бэлэн";
+  if (normalized === "pending") return "Хүлээгдэж байна";
+  return "Дутуу";
 }
 
 export function getLessonMediaWarnings(lesson: LessonContent): string[] {

@@ -59,22 +59,22 @@ export function summarizeLaunchCandidate(
   const cardFailCount = cards.filter((c) => c.status === "fail").length;
 
   let recommendedNextAction =
-    "Complete smoke test checklist and mark launch decision.";
+    "Хурдан шалгалтын жагсаалтыг бөглөж, гаргалтын шийдвэрээ тэмдэглэнэ үү.";
   if (failedItems.length > 0 || cardFailCount > 0) {
     recommendedNextAction =
-      "Resolve fail items and status cards before go-live.";
+      "Гаргахаас өмнө амжилтгүй зүйлс болон төлвийн картуудыг засна уу.";
   } else if (decision.value === "launch_candidate") {
     recommendedNextAction =
-      "Launch candidate approved — follow GO_LIVE_NOTES.md for release.";
+      "Гаргахад нэр дэвшсэн хувилбар батлагдлаа — гаргахдаа GO_LIVE_NOTES.md-ийг дагана уу.";
   } else if (decision.value === "needs_review") {
     recommendedNextAction =
-      "Document open warnings and obtain sign-off before release.";
+      "Үлдсэн анхааруулгуудыг тэмдэглэж, хувилбар гаргахын өмнө баталгаа аваарай.";
   } else if (
     warningItems.length > 0 ||
     countStatus(items, "not_checked") > 0
   ) {
     recommendedNextAction =
-      "Finish unchecked items and review warnings.";
+      "Шалгаагүй зүйлсийг дуусгаж, анхааруулгуудыг хянана уу.";
   }
 
   return {
@@ -130,28 +130,28 @@ export function buildLaunchCandidateMarkdown(
 ): string {
   const report = buildLaunchCandidateReport(items, cards, decision);
   const lines: string[] = [
-    "# Buunduu Surtsgaay — Launch Candidate Report",
+    "# Бөөндөө Сурцгаая — Гаргахад нэр дэвшсэн хувилбарын тайлан",
     "",
-    `- **Production URL:** ${report.productionUrl}`,
-    `- **Generated:** ${report.generatedAt}`,
-    `- **Decision:** ${report.decision}`,
-    `- **Decision updated:** ${report.decisionUpdatedAt}`,
-    `- **Recommended next action:** ${report.recommendedNextAction}`,
+    `- **Ажлын орчны URL:** ${report.productionUrl}`,
+    `- **Үүсгэсэн:** ${report.generatedAt}`,
+    `- **Шийдвэр:** ${report.decision}`,
+    `- **Шийдвэр шинэчлэгдсэн:** ${report.decisionUpdatedAt}`,
+    `- **Дараагийн санал болгох алхам:** ${report.recommendedNextAction}`,
     "",
-    "## Summary",
+    "## Хураангуй",
     "",
-    "| Metric | Count |",
+    "| Үзүүлэлт | Тоо |",
     "|--------|-------|",
-    `| Pass | ${report.summary.pass} |`,
-    `| Warning | ${report.summary.warning} |`,
-    `| Fail | ${report.summary.fail} |`,
-    `| Not checked | ${report.summary.not_checked} |`,
-    `| Status card fails | ${report.summary.cardFailCount} |`,
+    `| Амжилттай | ${report.summary.pass} |`,
+    `| Анхааруулга | ${report.summary.warning} |`,
+    `| Амжилтгүй | ${report.summary.fail} |`,
+    `| Шалгаагүй | ${report.summary.not_checked} |`,
+    `| Амжилтгүй төлвийн карт | ${report.summary.cardFailCount} |`,
     "",
   ];
 
   if (report.summary.failedItems.length > 0) {
-    lines.push("## Launch blockers (fail)", "");
+    lines.push("## Гаргахад саад болж буй зүйлс (амжилтгүй)", "");
     for (const item of report.summary.failedItems) {
       lines.push(`- **${item.label}**${item.notes ? ` — ${item.notes}` : ""}`);
     }
@@ -159,14 +159,19 @@ export function buildLaunchCandidateMarkdown(
   }
 
   if (report.summary.warningItems.length > 0) {
-    lines.push("## Warnings", "");
+    lines.push("## Анхааруулга", "");
     for (const item of report.summary.warningItems) {
       lines.push(`- **${item.label}**${item.notes ? ` — ${item.notes}` : ""}`);
     }
     lines.push("");
   }
 
-  lines.push("## Launch status cards", "", "| Card | Status |", "|------|--------|");
+  lines.push(
+    "## Гаргалтын төлвийн картууд",
+    "",
+    "| Карт | Төлөв |",
+    "|------|--------|"
+  );
   for (const card of report.statusCards) {
     lines.push(`| ${card.label} | ${card.status} |`);
   }
@@ -175,7 +180,7 @@ export function buildLaunchCandidateMarkdown(
   const sections = [...new Set(items.map((i) => i.section))];
   for (const section of sections) {
     lines.push(`## ${LAUNCH_SECTION_LABELS[section]}`, "");
-    lines.push("| Test | Status | Notes |");
+    lines.push("| Шалгалт | Төлөв | Тэмдэглэл |");
     lines.push("|------|--------|-------|");
     for (const item of items.filter((i) => i.section === section)) {
       const notes = item.notes.replace(/\|/g, "\\|").replace(/\n/g, " ") || "—";
@@ -184,7 +189,7 @@ export function buildLaunchCandidateMarkdown(
     lines.push("");
   }
 
-  lines.push("## Known limitations", "");
+  lines.push("## Мэдэгдэж буй хязгаарлалт", "");
   for (const limit of report.knownLimitations) {
     lines.push(`- ${limit}`);
   }

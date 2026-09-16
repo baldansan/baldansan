@@ -15,10 +15,10 @@ type Props = {
 };
 
 const STATUS_OPTIONS: { value: LaunchCheckStatus; label: string }[] = [
-  { value: "not_checked", label: "Not checked" },
-  { value: "pass", label: "Pass" },
-  { value: "warning", label: "Warning" },
-  { value: "fail", label: "Fail" },
+  { value: "not_checked", label: "Шалгаагүй" },
+  { value: "pass", label: "Давсан" },
+  { value: "warning", label: "Анхааруулга" },
+  { value: "fail", label: "Амжилтгүй" },
 ];
 
 function statusClass(status: LaunchCheckStatus): string {
@@ -32,9 +32,9 @@ export function LaunchStatusCard({ cards, onUpdate, blockerCount }: Props) {
   return (
     <section className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:p-6">
       <div className="flex flex-wrap items-center justify-between gap-2">
-        <h2 className="text-lg font-semibold text-slate-900">Launch status</h2>
+        <h2 className="text-lg font-semibold text-slate-900">Гаргалтын төлөв</h2>
         <span className="text-sm text-slate-600">
-          Smoke test fails: <strong>{blockerCount}</strong>
+          Амжилтгүй шалгалт: <strong>{blockerCount}</strong>
         </span>
       </div>
       <div className="mt-4 grid gap-3 sm:grid-cols-2">
@@ -53,7 +53,7 @@ export function LaunchStatusCard({ cards, onUpdate, blockerCount }: Props) {
               <p className="mt-1 text-xs text-slate-600">{def.description}</p>
               {def.id === "card-launch-blockers" ? (
                 <p className="mt-2 text-xs font-medium text-slate-700">
-                  Computed fails: {blockerCount}
+                  Тоологдсон алдаа: {blockerCount}
                 </p>
               ) : null}
               <div className="mt-3 flex flex-wrap items-center gap-2">
@@ -63,7 +63,7 @@ export function LaunchStatusCard({ cards, onUpdate, blockerCount }: Props) {
                     onUpdate(def.id, e.target.value as LaunchCheckStatus)
                   }
                   className="rounded-lg border border-slate-200 bg-white px-2 py-1 text-xs font-medium"
-                  aria-label={`Status for ${def.label}`}
+                  aria-label={`${def.label} — төлөв`}
                 >
                   {STATUS_OPTIONS.map((opt) => (
                     <option key={opt.value} value={opt.value}>
@@ -76,7 +76,7 @@ export function LaunchStatusCard({ cards, onUpdate, blockerCount }: Props) {
                     href={def.href}
                     className="text-xs font-semibold text-emerald-800 hover:underline"
                   >
-                    Open local
+                    Дотоод хуудсыг нээх
                   </Link>
                 ) : null}
                 {def.productionPath ? (
@@ -86,7 +86,7 @@ export function LaunchStatusCard({ cards, onUpdate, blockerCount }: Props) {
                     rel="noopener noreferrer"
                     className="text-xs font-semibold text-emerald-800 hover:underline"
                   >
-                    Production
+                    Ажлын орчин
                   </a>
                 ) : null}
               </div>

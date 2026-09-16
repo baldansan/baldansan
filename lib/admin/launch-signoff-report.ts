@@ -56,22 +56,22 @@ export function summarizeLaunchSignoff(
   const cardFailCount = cards.filter((c) => c.status === "fail").length;
 
   let recommendedNextAction =
-    "Complete final sign-off checklist and record go/no-go decision.";
+    "Эцсийн баталгааны жагсаалтыг бөглөж, гаргах эсэх шийдвэрээ тэмдэглэнэ үү.";
   if (decision.value === "blocked" || failedItems.length > 0 || cardFailCount > 0) {
     recommendedNextAction =
-      "Resolve blockers before go-live. Review ROLLBACK_PLAN.md if needed.";
+      "Гаргахаас өмнө саад болж буй зүйлсийг засна уу. Шаардлагатай бол ROLLBACK_PLAN.md-ийг үзнэ үү.";
   } else if (decision.value === "go_live") {
     recommendedNextAction =
-      "Go-live approved — follow GO_LIVE_NOTES.md and POST_LAUNCH_MONITORING.md.";
+      "Гаргахыг зөвшөөрлөө — GO_LIVE_NOTES.md болон POST_LAUNCH_MONITORING.md-ийг дагана уу.";
   } else if (decision.value === "needs_review") {
     recommendedNextAction =
-      "Document open warnings and obtain stakeholder sign-off.";
+      "Үлдсэн анхааруулгуудыг тэмдэглэж, хариуцагчдаас баталгаа аваарай.";
   } else if (
     warningItems.length > 0 ||
     countStatus(items, "not_checked") > 0
   ) {
     recommendedNextAction =
-      "Finish unchecked items and review warnings before go_live.";
+      "Гаргахаас өмнө шалгаагүй зүйлсийг дуусгаж, анхааруулгуудыг хянана уу.";
   }
 
   return {
@@ -123,40 +123,45 @@ export function buildLaunchSignoffReport(
 export function buildLaunchSignoffMarkdown(state: LaunchSignoffState): string {
   const report = buildLaunchSignoffReport(state);
   const lines: string[] = [
-    "# Buunduu Surtsgaay — Production Launch Sign-off Report",
+    "# Бөөндөө Сурцгаая — Ажлын орчинд гаргах баталгааны тайлан",
     "",
-    `- **Production URL:** ${report.productionUrl}`,
-    `- **Generated:** ${report.generatedAt}`,
-    `- **Version:** ${report.versionLabel}`,
-    `- **Owner:** ${report.owner || "—"}`,
-    `- **Decision:** ${report.decision}`,
-    `- **Decision updated:** ${report.decisionUpdatedAt}`,
-    `- **Recommended next action:** ${report.recommendedNextAction}`,
+    `- **Ажлын орчны URL:** ${report.productionUrl}`,
+    `- **Үүсгэсэн:** ${report.generatedAt}`,
+    `- **Хувилбар:** ${report.versionLabel}`,
+    `- **Хариуцагч:** ${report.owner || "—"}`,
+    `- **Шийдвэр:** ${report.decision}`,
+    `- **Шийдвэр шинэчлэгдсэн:** ${report.decisionUpdatedAt}`,
+    `- **Дараагийн санал болгох алхам:** ${report.recommendedNextAction}`,
     "",
-    "## Summary",
+    "## Хураангуй",
     "",
-    "| Metric | Count |",
+    "| Үзүүлэлт | Тоо |",
     "|--------|-------|",
-    `| Pass | ${report.summary.pass} |`,
-    `| Warning | ${report.summary.warning} |`,
-    `| Fail | ${report.summary.fail} |`,
-    `| Not checked | ${report.summary.not_checked} |`,
-    `| Status card fails | ${report.summary.cardFailCount} |`,
+    `| Амжилттай | ${report.summary.pass} |`,
+    `| Анхааруулга | ${report.summary.warning} |`,
+    `| Амжилтгүй | ${report.summary.fail} |`,
+    `| Шалгаагүй | ${report.summary.not_checked} |`,
+    `| Амжилтгүй төлвийн карт | ${report.summary.cardFailCount} |`,
     "",
   ];
 
   if (report.launchNotes.trim()) {
-    lines.push("## Launch notes", "", report.launchNotes.trim(), "");
+    lines.push("## Гаргалтын тэмдэглэл", "", report.launchNotes.trim(), "");
   }
   if (report.knownIssues.trim()) {
-    lines.push("## Known issues", "", report.knownIssues.trim(), "");
+    lines.push("## Мэдэгдэж буй алдаа", "", report.knownIssues.trim(), "");
   }
   if (report.finalDecisionNote.trim()) {
-    lines.push("## Final decision note", "", report.finalDecisionNote.trim(), "");
+    lines.push(
+      "## Эцсийн шийдвэрийн тэмдэглэл",
+      "",
+      report.finalDecisionNote.trim(),
+      ""
+    );
   }
 
   if (report.summary.failedItems.length > 0) {
-    lines.push("## Launch blockers (fail)", "");
+    lines.push("## Гаргахад саад болж буй зүйлс (амжилтгүй)", "");
     for (const item of report.summary.failedItems) {
       lines.push(`- **${item.label}**${item.notes ? ` — ${item.notes}` : ""}`);
     }
@@ -164,20 +169,29 @@ export function buildLaunchSignoffMarkdown(state: LaunchSignoffState): string {
   }
 
   if (report.summary.warningItems.length > 0) {
-    lines.push("## Warnings", "");
+    lines.push("## Анхааруулга", "");
     for (const item of report.summary.warningItems) {
       lines.push(`- **${item.label}**${item.notes ? ` — ${item.notes}` : ""}`);
     }
     lines.push("");
   }
 
-  lines.push("## Sign-off summary cards", "", "| Card | Status |", "|------|--------|");
+  lines.push(
+    "## Баталгааны хураангуй картууд",
+    "",
+    "| Карт | Төлөв |",
+    "|------|--------|"
+  );
   for (const card of report.statusCards) {
     lines.push(`| ${card.label} | ${card.status} |`);
   }
   lines.push("");
 
-  lines.push("## Final sign-off checklist", "", "| Check | Status | Notes |");
+  lines.push(
+    "## Эцсийн баталгааны шалгах жагсаалт",
+    "",
+    "| Шалгалт | Төлөв | Тэмдэглэл |"
+  );
   lines.push("|-------|--------|-------|");
   for (const item of report.checklist) {
     const notes = item.notes.replace(/\|/g, "\\|").replace(/\n/g, " ") || "—";

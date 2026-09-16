@@ -22,7 +22,7 @@ export function LessonStatusBadge({ status }: Props) {
       className={`inline-flex rounded-full px-2.5 py-0.5 text-xs font-medium ring-1 ${tone[normalized]}`}
     >
       {adminStatusLabel(normalized)}
-      {status === "locked" ? " (locked)" : null}
+      {status === "locked" ? " (түгжээтэй)" : null}
     </span>
   );
 }

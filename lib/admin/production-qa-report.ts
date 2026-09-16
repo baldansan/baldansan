@@ -71,19 +71,19 @@ export function summarizeQaStatus(items: QaCheckItem[]): QaStatusSummary {
 
 function recommendationReason(summary: QaStatusSummary): string {
   if (summary.launchRecommendation === "blocked") {
-    return `${summary.fail} failed check(s) must be resolved before launch.`;
+    return `Гаргахаас өмнө амжилтгүй болсон ${summary.fail} шалгалтыг засах шаардлагатай.`;
   }
   if (summary.launchRecommendation === "needs review") {
     const parts: string[] = [];
     if (summary.warning > 0) {
-      parts.push(`${summary.warning} warning(s)`);
+      parts.push(`${summary.warning} анхааруулга`);
     }
     if (summary.not_checked > 0) {
-      parts.push(`${summary.not_checked} not checked`);
+      parts.push(`${summary.not_checked} шалгаагүй`);
     }
-    return `Review remaining items: ${parts.join(", ")}.`;
+    return `Үлдсэн зүйлсийг хянана уу: ${parts.join(", ")}.`;
   }
-  return "All checklist items passed.";
+  return "Шалгах жагсаалтын бүх зүйл амжилттай.";
 }
 
 export function buildProductionQaReport(items: QaCheckItem[]): ProductionQaReport {
@@ -112,27 +112,27 @@ export function buildProductionQaReport(items: QaCheckItem[]): ProductionQaRepor
 export function buildProductionQaMarkdown(items: QaCheckItem[]): string {
   const report = buildProductionQaReport(items);
   const lines: string[] = [
-    "# Buunduu Surtsgaay — Production QA Report",
+    "# Бөөндөө Сурцгаая — Ажлын орчны чанарын шалгалтын тайлан",
     "",
-    `- **Production URL:** ${report.productionUrl}`,
-    `- **Generated:** ${report.generatedAt}`,
-    `- **Launch recommendation:** ${report.launchRecommendation}`,
-    `- **Reason:** ${report.launchRecommendationReason}`,
+    `- **Ажлын орчны URL:** ${report.productionUrl}`,
+    `- **Үүсгэсэн:** ${report.generatedAt}`,
+    `- **Гаргалтын зөвлөмж:** ${report.launchRecommendation}`,
+    `- **Шалтгаан:** ${report.launchRecommendationReason}`,
     "",
-    "## Summary",
+    "## Хураангуй",
     "",
-    `| Status | Count |`,
+    `| Төлөв | Тоо |`,
     `|--------|-------|`,
-    `| Pass | ${report.summary.pass} |`,
-    `| Warning | ${report.summary.warning} |`,
-    `| Fail | ${report.summary.fail} |`,
-    `| Not checked | ${report.summary.not_checked} |`,
-    `| **Total** | **${report.summary.total}** |`,
+    `| Амжилттай | ${report.summary.pass} |`,
+    `| Анхааруулга | ${report.summary.warning} |`,
+    `| Амжилтгүй | ${report.summary.fail} |`,
+    `| Шалгаагүй | ${report.summary.not_checked} |`,
+    `| **Нийт** | **${report.summary.total}** |`,
     "",
   ];
 
   if (report.summary.failedItems.length > 0) {
-    lines.push("## Launch blockers (fail)", "");
+    lines.push("## Гаргахад саад болж буй зүйлс (амжилтгүй)", "");
     for (const item of report.summary.failedItems) {
       lines.push(
         `- **${item.label}** (${item.route ?? item.section})${
@@ -147,7 +147,7 @@ export function buildProductionQaMarkdown(items: QaCheckItem[]): string {
     (item) => item.status === "warning" || item.status === "not_checked"
   );
   if (warnings.length > 0) {
-    lines.push("## Warnings / not checked", "");
+    lines.push("## Анхааруулга / шалгаагүй", "");
     for (const item of warnings) {
       lines.push(
         `- **${item.label}** [${item.status}]${
@@ -161,7 +161,7 @@ export function buildProductionQaMarkdown(items: QaCheckItem[]): string {
   const sections = [...new Set(items.map((item) => item.section))];
   for (const section of sections) {
     lines.push(`## ${QA_SECTION_LABELS[section]}`, "");
-    lines.push("| Item | Route | Status | Notes |");
+    lines.push("| Зүйл | Хуудас | Төлөв | Тэмдэглэл |");
     lines.push("|------|-------|--------|-------|");
     for (const item of items.filter((i) => i.section === section)) {
       const route = item.route ?? "—";

@@ -54,76 +54,82 @@ export function ReleaseReadinessCard({ lesson }: Props) {
 
   const rows: CheckRow[] = [
     {
-      label: "Metadata",
+      label: "Ерөнхий мэдээлэл",
       ready: readiness.metadataReady,
-      hint: readiness.metadataReady ? "OK" : "Title, Chinese title, summary",
+      hint: readiness.metadataReady
+        ? "Бүрэн"
+        : "Гарчиг, хятад гарчиг, тайлбар",
       href: editHref,
-      hrefLabel: "Edit metadata",
+      hrefLabel: "Ерөнхий мэдээлэл засах",
     },
     {
-      label: prelesson ? "Subtitles (optional)" : "Subtitles",
+      label: prelesson ? "Хадмал (заавал биш)" : "Хадмал",
       ready: readiness.subtitlesReady,
       recommended: prelesson && !readiness.subtitlesReady,
       hint: readiness.subtitlesReady
-        ? `${lesson.timedSubtitles.length} lines`
+        ? `${lesson.timedSubtitles.length} мөр`
         : prelesson
-          ? "PreLesson: subtitles optional"
-          : "Import or add subtitles",
+          ? "Бэлтгэл хичээлд хадмал заавал биш"
+          : "Хадмал оруулах эсвэл нэмэх",
       href: editHref,
-      hrefLabel: "Bulk import",
+      hrefLabel: "Бөөнөөр оруулах",
     },
     {
-      label: "Vocabulary",
+      label: "Үгсийн сан",
       ready: readiness.vocabularyReady,
-      hint: `${lesson.vocabulary.length} words (min 5)`,
+      hint: `${lesson.vocabulary.length} үг (хамгийн багадаа 5)`,
       href: editHref,
-      hrefLabel: "Edit vocabulary",
+      hrefLabel: "Үгсийн сан засах",
     },
     {
-      label: "Quiz",
+      label: "Дасгал",
       ready: readiness.quizReady,
-      hint: `${lesson.quizQuestions.length} questions (min 3)`,
+      hint: `${lesson.quizQuestions.length} асуулт (хамгийн багадаа 3)`,
       href: editHref,
-      hrefLabel: "Edit quiz",
+      hrefLabel: "Дасгал засах",
     },
     {
-      label: "Media",
+      label: "Медиа",
       ready: readiness.mediaReady,
-      hint: readiness.mediaReady ? "Media ready" : "Upload video or set media_status",
+      hint: readiness.mediaReady
+        ? "Медиа бэлэн"
+        : "Бичлэг байршуулах эсвэл медиагийн төлвийг тохируулах",
       href: editHref,
-      hrefLabel: "Media upload",
+      hrefLabel: "Медиа байршуулах",
     },
     {
-      label: "QA",
+      label: "Чанарын шалгалт",
       ready: readiness.qaReady,
-      hint: readiness.qaReady ? "Content QA passed" : "Fix import QA issues",
+      hint: readiness.qaReady
+        ? "Агуулгын чанарын шалгалт давсан"
+        : "Чанарын шалгалтын алдааг засах",
       href: editHref,
-      hrefLabel: "Import QA",
+      hrefLabel: "Чанарын шалгалт",
     },
     {
-      label: "Backup",
+      label: "Нөөц хуулбар",
       ready: false,
       recommended: readiness.backupRecommended,
-      hint: "Export JSON backup before publish",
+      hint: "Нийтлэхээс өмнө JSON нөөц хуулбар гаргаж авах",
       href: editHref,
-      hrefLabel: "Export backup",
+      hrefLabel: "Нөөц хуулбар гаргах",
     },
     {
-      label: "Preview",
+      label: "Урьдчилж харах",
       ready: false,
       recommended: readiness.previewRecommended,
-      hint: "Admin preview all lesson routes",
+      hint: "Хичээлийн бүх хэсгийг урьдчилж шалгах",
       href: lessonPreviewPath(lesson.id, { adminPreview }),
-      hrefLabel: "Preview lesson",
+      hrefLabel: "Хичээл урьдчилж харах",
     },
     {
-      label: "Approval",
+      label: "Баталгаа",
       ready: readiness.approvalReady,
       hint: readiness.approvalReady
-        ? `Approved${lesson.approvedAt ? "" : ""}`
-        : "Mark QA passed → Approve for publish",
+        ? "Батлагдсан"
+        : "Чанарын шалгалт давсан гэж тэмдэглээд → Нийтлэхийг батлах",
       href: editHref,
-      hrefLabel: "Approval controls",
+      hrefLabel: "Баталгааны хэсэг",
     },
   ];
 
@@ -132,23 +138,25 @@ export function ReleaseReadinessCard({ lesson }: Props) {
       id="release-readiness"
       className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:p-6"
     >
-      <h2 className="text-base font-semibold text-slate-900">Release readiness</h2>
+      <h2 className="text-base font-semibold text-slate-900">
+        Нийтлэхэд бэлэн эсэх
+      </h2>
       <p className="mt-1 text-sm text-slate-600">
-        Publish хийхээс өмнөх checklist.
+        Нийтлэхээс өмнө шалгах жагсаалт.
       </p>
 
       <div className="mt-4 flex flex-wrap gap-2">
         {readiness.readyToPublish ? (
           <span className="rounded-full bg-emerald-50 px-3 py-1 text-xs font-semibold text-emerald-800 ring-1 ring-emerald-200">
-            Ready to publish
+            Нийтлэхэд бэлэн
           </span>
         ) : readiness.readyToApprove ? (
           <span className="rounded-full bg-sky-50 px-3 py-1 text-xs font-semibold text-sky-800 ring-1 ring-sky-200">
-            Ready to approve
+            Батлахад бэлэн
           </span>
         ) : (
           <span className="rounded-full bg-amber-50 px-3 py-1 text-xs font-semibold text-amber-900 ring-1 ring-amber-200">
-            Needs review
+            Шалгах шаардлагатай
           </span>
         )}
       </div>

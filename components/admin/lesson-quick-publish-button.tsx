@@ -53,11 +53,11 @@ export function LessonQuickPublishButton({
         onClick={handlePublish}
         className={buttonClass}
       >
-        {busy ? "Publishing…" : "Publish"}
+        {busy ? "Нийтэлж байна…" : "Нийтлэх"}
       </button>
       {error ? (
         <span className="text-[10px] text-red-700" title={error}>
-          Failed
+          Амжилтгүй
         </span>
       ) : null}
     </span>

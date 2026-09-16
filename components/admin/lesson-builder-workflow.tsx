@@ -78,7 +78,9 @@ export function LessonBuilderWorkflow({
     setQaLoading(false);
 
     if (subs.error || vocab.error || quiz.error) {
-      setQaError(subs.error ?? vocab.error ?? quiz.error ?? "QA уншихад алдаа.");
+      setQaError(
+        subs.error ?? vocab.error ?? quiz.error ?? "Шалгалтыг уншихад алдаа гарлаа."
+      );
       setQaReport(null);
       return;
     }
@@ -123,20 +125,19 @@ export function LessonBuilderWorkflow({
     <div className="flex flex-col gap-6">
       <section>
         <h1 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
-          Lesson Builder
+          Хичээл бэлтгэх
         </h1>
         <p className="mt-2 text-sm text-slate-600">
-          Шинэ хичээлийг draft үүсгэхээс publish хийх хүртэл алхамчилж бэлдэнэ.
+          Шинэ хичээлийг ноорогоос эхлээд нийтлэх хүртэл алхам алхмаар бэлдэнэ.
         </p>
       </section>
 
       <section className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:p-6">
         <h2 className="text-base font-semibold text-slate-900">
-          Select lesson
+          Хичээл сонгох
         </h2>
         <p className="mt-1 text-sm text-slate-600">
-          Existing HSK5 lessons from Supabase. Search by id, title, or Chinese
-          title.
+          Supabase дээрх HSK5 хичээлүүд. ID, гарчиг эсвэл хятад гарчгаар хайна.
         </p>
 
         <input
@@ -191,7 +192,7 @@ export function LessonBuilderWorkflow({
         {selectedLesson && selectedReport ? (
           <div className="mt-4 rounded-xl bg-emerald-50/60 p-4 ring-1 ring-emerald-100">
             <p className="text-xs font-semibold uppercase tracking-wide text-emerald-800">
-              Selected lesson
+              Сонгосон хичээл
             </p>
             <dl className="mt-2 grid gap-2 text-sm sm:grid-cols-2">
               <div>
@@ -199,7 +200,7 @@ export function LessonBuilderWorkflow({
                 <dd className="font-mono text-slate-900">{selectedLesson.id}</dd>
               </div>
               <div>
-                <dt className="text-slate-500">Status</dt>
+                <dt className="text-slate-500">Төлөв</dt>
                 <dd>
                   <LessonStatusBadge
                     status={getAdminPublishStatus(selectedLesson)}
@@ -207,73 +208,71 @@ export function LessonBuilderWorkflow({
                 </dd>
               </div>
               <div>
-                <dt className="text-slate-500">Title</dt>
+                <dt className="text-slate-500">Гарчиг</dt>
                 <dd className="text-slate-900">{selectedLesson.title}</dd>
               </div>
               <div>
-                <dt className="text-slate-500">Chinese title</dt>
+                <dt className="text-slate-500">Хятад гарчиг</dt>
                 <dd className="text-slate-900">{selectedLesson.chineseTitle}</dd>
               </div>
               <div>
-                <dt className="text-slate-500">Subtitles</dt>
+                <dt className="text-slate-500">Хадмал</dt>
                 <dd className="text-slate-900">
                   {qaReport?.subtitleCount ?? selectedReport.subtitleCount}
                 </dd>
               </div>
               <div>
-                <dt className="text-slate-500">Vocabulary</dt>
+                <dt className="text-slate-500">Үгсийн сан</dt>
                 <dd className="text-slate-900">
                   {qaReport?.vocabularyCount ?? selectedReport.vocabularyActual}
                 </dd>
               </div>
               <div>
-                <dt className="text-slate-500">Quiz</dt>
+                <dt className="text-slate-500">Дасгал</dt>
                 <dd className="text-slate-900">
                   {qaReport?.quizCount ?? selectedReport.quizActual}
                 </dd>
               </div>
               <div>
-                <dt className="text-slate-500">Media status</dt>
+                <dt className="text-slate-500">Медиагийн төлөв</dt>
                 <dd>
                   <MediaStatusBadge status={selectedLesson.mediaStatus} />
                 </dd>
               </div>
               <div>
-                <dt className="text-slate-500">Admin activity</dt>
+                <dt className="text-slate-500">Админы үйлдэл</dt>
                 <dd className="text-slate-900">
-                  {activityCountByLesson[selectedLesson.id] ?? 0} logged action
-                  {(activityCountByLesson[selectedLesson.id] ?? 0) === 1
-                    ? ""
-                    : "s"}
+                  {activityCountByLesson[selectedLesson.id] ?? 0} үйлдэл
+                  бүртгэгдсэн
                   {" · "}
                   <Link
                     href={`/admin/activity?lessonId=${encodeURIComponent(selectedLesson.id)}`}
                     className="font-medium text-emerald-700 hover:text-emerald-800"
                   >
-                    View log →
+                    Бүртгэл харах →
                   </Link>
                 </dd>
               </div>
               <div>
-                <dt className="text-slate-500">Video URL</dt>
+                <dt className="text-slate-500">Бичлэгийн холбоос</dt>
                 <dd className="text-slate-900">
-                  {hasVideoUrl(selectedLesson) ? "Present" : "Missing"}
+                  {hasVideoUrl(selectedLesson) ? "Байгаа" : "Байхгүй"}
                 </dd>
               </div>
               <div>
-                <dt className="text-slate-500">Thumbnail</dt>
+                <dt className="text-slate-500">Нүүр зураг</dt>
                 <dd className="text-slate-900">
-                  {hasThumbnailUrl(selectedLesson) ? "Present" : "Missing"}
+                  {hasThumbnailUrl(selectedLesson) ? "Байгаа" : "Байхгүй"}
                 </dd>
               </div>
               <div>
-                <dt className="text-slate-500">Audio</dt>
+                <dt className="text-slate-500">Аудио</dt>
                 <dd className="text-slate-900">
-                  {hasAudioUrl(selectedLesson) ? "Present" : "Missing"}
+                  {hasAudioUrl(selectedLesson) ? "Байгаа" : "Байхгүй"}
                 </dd>
               </div>
               <div>
-                <dt className="text-slate-500">QA status</dt>
+                <dt className="text-slate-500">Чанарын шалгалт</dt>
                 <dd>
                   {qaReport ? (
                     <span
@@ -284,13 +283,13 @@ export function LessonBuilderWorkflow({
                       }`}
                     >
                       {qaReport.status === "ready"
-                        ? "Ready to publish"
+                        ? "Нийтлэхэд бэлэн"
                         : qaReport.status === "needs_review"
-                          ? "Needs review"
-                          : "Missing content"}
+                          ? "Шалгах шаардлагатай"
+                          : "Контент дутуу"}
                     </span>
                   ) : qaLoading ? (
-                    <span className="text-slate-500">Loading…</span>
+                    <span className="text-slate-500">Ачаалж байна…</span>
                   ) : (
                     <LessonQaBadge status={selectedReport.qaStatus} />
                   )}
@@ -304,7 +303,7 @@ export function LessonBuilderWorkflow({
                 })}
                 className="text-emerald-700 hover:text-emerald-800"
               >
-                Admin preview →
+                Админаар урьдчилж харах →
               </Link>
               <Link
                 href={lessonPreviewPath(selectedLesson.id, {
@@ -313,7 +312,7 @@ export function LessonBuilderWorkflow({
                 })}
                 className="text-slate-600 hover:text-emerald-700"
               >
-                Watch →
+                Бичлэг үзэх →
               </Link>
               <Link
                 href={lessonPreviewPath(selectedLesson.id, {
@@ -322,7 +321,7 @@ export function LessonBuilderWorkflow({
                 })}
                 className="text-slate-600 hover:text-emerald-700"
               >
-                Vocabulary →
+                Үгсийн сан →
               </Link>
               <Link
                 href={lessonPreviewPath(selectedLesson.id, {
@@ -331,7 +330,7 @@ export function LessonBuilderWorkflow({
                 })}
                 className="text-slate-600 hover:text-emerald-700"
               >
-                Quiz →
+                Дасгал →
               </Link>
             </div>
           </div>
@@ -340,27 +339,27 @@ export function LessonBuilderWorkflow({
 
       <section className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:p-6">
         <h2 className="text-base font-semibold text-slate-900">
-          Quick actions
+          Түргэн үйлдэл
         </h2>
         <div className="mt-4 flex flex-wrap gap-2">
           <Link
             href="/admin/import"
             className="inline-flex rounded-full border border-emerald-200 bg-emerald-50 px-4 py-2 text-sm font-semibold text-emerald-800 transition-colors hover:bg-emerald-100"
           >
-            ZIP import хийх
+            ZIP багц оруулах
           </Link>
           <Link
             href="/admin/lessons/new"
             className="inline-flex rounded-full bg-emerald-500 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-emerald-600"
           >
-            New draft lesson
+            Шинэ ноорог хичээл
           </Link>
           {editHref ? (
             <Link
               href={editHref}
               className="inline-flex rounded-full border border-emerald-200 bg-emerald-50 px-4 py-2 text-sm font-semibold text-emerald-800 transition-colors hover:bg-emerald-100"
             >
-              Edit selected lesson
+              Сонгосон хичээлийг засах
             </Link>
           ) : null}
           {selectedLesson ? (
@@ -371,7 +370,7 @@ export function LessonBuilderWorkflow({
                 })}
                 className="inline-flex rounded-full border border-slate-200 px-4 py-2 text-sm font-medium text-slate-700 transition-colors hover:border-emerald-200 hover:text-emerald-700"
               >
-                Admin preview
+                Админаар урьдчилж харах
               </Link>
               <Link
                 href={lessonPreviewPath(selectedLesson.id, {
@@ -380,13 +379,13 @@ export function LessonBuilderWorkflow({
                 })}
                 className="inline-flex rounded-full border border-slate-200 px-4 py-2 text-sm font-medium text-slate-700 transition-colors hover:border-emerald-200 hover:text-emerald-700"
               >
-                Watch preview
+                Бичлэгийг урьдчилж харах
               </Link>
               <Link
                 href={editHref!}
                 className="inline-flex rounded-full border border-slate-200 px-4 py-2 text-sm font-medium text-slate-700 transition-colors hover:border-emerald-200 hover:text-emerald-700"
               >
-                Export backup
+                Нөөц хуулбар гаргах
               </Link>
             </>
           ) : null}
@@ -394,7 +393,7 @@ export function LessonBuilderWorkflow({
             href="/admin/lessons"
             className="inline-flex rounded-full border border-slate-200 px-4 py-2 text-sm font-medium text-slate-700 transition-colors hover:border-emerald-200 hover:text-emerald-700"
           >
-            Content QA dashboard
+            Контентын чанарын самбар
           </Link>
         </div>
       </section>

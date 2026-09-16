@@ -61,11 +61,11 @@ export function LessonPublishToggle({
 
   const label = published
     ? busy
-      ? "Unpublishing…"
-      : "Unpublish"
+      ? "Нийтлэхээ болиж байна…"
+      : "Нийтлэхээ болих"
     : busy
-      ? "Publishing…"
-      : "Publish";
+      ? "Нийтэлж байна…"
+      : "Нийтлэх";
 
   return (
     <span className="inline-flex flex-col gap-0.5">
@@ -87,7 +87,7 @@ export function LessonPublishToggle({
       </button>
       {error ? (
         <span className="text-[10px] text-red-700" title={error}>
-          Failed
+          Амжилтгүй
         </span>
       ) : null}
     </span>

@@ -9,7 +9,7 @@ import {
 export const dynamic = "force-dynamic";
 
 export const metadata = {
-  title: "Суралцагч — Admin",
+  title: "Суралцагч — Удирдлагын хэсэг",
 };
 
 type Props = {
@@ -35,7 +35,7 @@ export default async function AdminLearnerPage({ searchParams }: Props) {
     <div className="flex flex-col gap-6">
       <AdminPageHeader
         title="Суралцагчийн дэлгэрэнгүй"
-        description="Нэг идэвхтэй beta tester-ийн жинхэнэ туршлага — оролдлого, гацсан цэг, feedback."
+        description="Нэг идэвхтэй туршигчийн жинхэнэ туршлага — оролдлого, гацсан цэг, санал хүсэлт."
       />
       <Suspense fallback={<p className="text-sm text-slate-500">Ачаалж байна…</p>}>
         <LearnerDetailView learners={learners} detail={detail} />

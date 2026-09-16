@@ -5,7 +5,7 @@ export const dynamic = "force-dynamic";
 export const revalidate = 0;
 
 export const metadata = {
-  title: "Бичлэг удирдлага — Admin",
+  title: "Бичлэг удирдах — Удирдлагын хэсэг",
   description: "Цуврал болон ангиудыг удирдах.",
 };
 

@@ -21,22 +21,30 @@ export function LessonMediaTeachingPanel({ lesson }: Props) {
 
   return (
     <div className="rounded-xl border border-slate-200 bg-slate-50 p-4">
-      <h3 className="text-sm font-semibold text-slate-900">Media status</h3>
+      <h3 className="text-sm font-semibold text-slate-900">Медиагийн төлөв</h3>
       <ul className="mt-2 space-y-1 text-sm text-slate-700">
-        <li>{hasThumb ? "✓ Thumbnail" : "○ Thumbnail — missing"}</li>
-        <li>{hasAudio ? "✓ Lesson audio" : "○ Lesson audio — TTS fallback OK"}</li>
-        <li>{hasVideo ? "✓ Video URL" : "○ Video — optional for Korean textbook"}</li>
+        <li>{hasThumb ? "✓ Нүүр зураг" : "○ Нүүр зураг — дутуу"}</li>
+        <li>
+          {hasAudio
+            ? "✓ Хичээлийн аудио"
+            : "○ Хичээлийн аудио — байхгүй бол хиймэл дуу уншина"}
+        </li>
+        <li>
+          {hasVideo
+            ? "✓ Бичлэгийн холбоос"
+            : "○ Бичлэг — солонгос хэлний сурах бичигт заавал биш"}
+        </li>
         <li>
           {teachingImages.length > 0
-            ? `✓ Teaching visuals (${teachingImages.length})`
-            : "○ Teaching visuals — optional"}
+            ? `✓ Заах зураг (${teachingImages.length})`
+            : "○ Заах зураг — заавал биш"}
         </li>
       </ul>
 
       {teachingImages.length > 0 ? (
         <div className="mt-3">
           <p className="text-xs font-medium uppercase tracking-wide text-slate-500">
-            Imported teaching images
+            Оруулсан заах зургууд
           </p>
           <ul className="mt-1 list-inside list-disc text-xs text-slate-600">
             {teachingImages.map((image) => (
@@ -49,7 +57,7 @@ export function LessonMediaTeachingPanel({ lesson }: Props) {
       {isKorean ? (
         <div className="mt-4 rounded-lg bg-white p-3 ring-1 ring-emerald-100">
           <p className="text-xs font-semibold text-emerald-800">
-            Recommended Korean teaching visuals
+            Солонгос хэлний санал болгож буй заах зургууд
           </p>
           <ul className="mt-2 space-y-1 text-xs text-slate-600">
             {KOREAN_TEACHING_VISUAL_RECOMMENDATIONS.map((item) => (
@@ -60,17 +68,18 @@ export function LessonMediaTeachingPanel({ lesson }: Props) {
             ))}
           </ul>
           <p className="mt-3 text-xs leading-5 text-slate-500">
-            Images can be included in ZIP under <code className="text-emerald-700">images/</code>{" "}
-            and referenced from <code className="text-emerald-700">lesson.json</code>{" "}
-            <code className="text-emerald-700">teachingImages</code> array. Per-word audio goes in{" "}
-            <code className="text-emerald-700">audio/</code> with{" "}
-            <code className="text-emerald-700">audioFile</code> on vocabulary rows.
+            Зургуудыг ZIP багцын <code className="text-emerald-700">images/</code>{" "}
+            хавтсанд хийж, <code className="text-emerald-700">lesson.json</code>{" "}
+            файлын <code className="text-emerald-700">teachingImages</code> жагсаалтад
+            бичнэ. Үг бүрийн аудио{" "}
+            <code className="text-emerald-700">audio/</code> хавтсанд орж, үгийн
+            мөрөнд <code className="text-emerald-700">audioFile</code> гэж заана.
           </p>
         </div>
       ) : (
         <p className="mt-3 text-xs text-slate-500">
-          Upload thumbnail, audio, or video above. External URLs can be pasted in the manual
-          fields below.
+          Нүүр зураг, аудио, бичлэгээ дээр талд байршуулна уу. Гадаад холбоосыг доорх
+          гараар бөглөх хэсэгт буулгаж болно.
         </p>
       )}
     </div>

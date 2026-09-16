@@ -18,10 +18,10 @@ type Props = {
 };
 
 const STATUS_OPTIONS: { value: LaunchCheckStatus; label: string }[] = [
-  { value: "not_checked", label: "Not checked" },
-  { value: "pass", label: "Pass" },
-  { value: "warning", label: "Warning" },
-  { value: "fail", label: "Fail" },
+  { value: "not_checked", label: "Шалгаагүй" },
+  { value: "pass", label: "Давсан" },
+  { value: "warning", label: "Анхааруулга" },
+  { value: "fail", label: "Амжилтгүй" },
 ];
 
 function statusSelectClass(status: LaunchCheckStatus): string {
@@ -55,7 +55,7 @@ export function LaunchChecklist({ section, items, onUpdate }: Props) {
                   rel="noopener noreferrer"
                   className="shrink-0 text-xs font-semibold text-emerald-800 hover:underline"
                 >
-                  Open on production
+                  Ажлын орчинд нээх
                 </a>
               ) : null}
             </div>
@@ -80,7 +80,7 @@ export function LaunchChecklist({ section, items, onUpdate }: Props) {
                 onChange={(e) =>
                   onUpdate(item.id, { notes: e.target.value })
                 }
-                placeholder="Notes (optional)"
+                placeholder="Тэмдэглэл (заавал биш)"
                 rows={2}
                 className="min-h-[2.5rem] flex-1 rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm"
               />
@@ -98,10 +98,10 @@ export function LaunchBlockersList({ items }: { items: LaunchCheckItem[] }) {
 
   return (
     <section className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:p-6">
-      <h2 className="text-lg font-semibold text-slate-900">Launch blockers</h2>
+      <h2 className="text-lg font-semibold text-slate-900">Гаргахад саад болж буй зүйлс</h2>
       {failed.length === 0 ? (
         <p className="mt-3 text-sm text-emerald-800">
-          Launch candidate has no manual blockers.
+          Гараар шалгасан саад олдсонгүй.
         </p>
       ) : (
         <ul className="mt-3 space-y-2">
@@ -120,7 +120,7 @@ export function LaunchBlockersList({ items }: { items: LaunchCheckItem[] }) {
       )}
       {warnings.length > 0 ? (
         <>
-          <h3 className="mt-6 text-sm font-semibold text-amber-900">Warnings</h3>
+          <h3 className="mt-6 text-sm font-semibold text-amber-900">Анхааруулга</h3>
           <ul className="mt-2 space-y-2">
             {warnings.map((item) => (
               <li

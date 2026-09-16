@@ -8,25 +8,25 @@ type Props = {
 export function TaskSummaryCards({ summary }: Props) {
   return (
     <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
-      <AdminMetricCard label="Open" value={summary.openCount} />
+      <AdminMetricCard label="Нээлттэй" value={summary.openCount} />
       <AdminMetricCard
-        label="In progress"
+        label="Хийгдэж байна"
         value={summary.inProgressCount}
         accent="emerald"
       />
       <AdminMetricCard
-        label="Overdue"
+        label="Хугацаа хэтэрсэн"
         value={summary.overdueCount}
         accent="amber"
       />
       <AdminMetricCard
-        label="Urgent"
+        label="Яаралтай"
         value={summary.urgentCount}
         accent="amber"
       />
-      <AdminMetricCard label="Resolved" value={summary.resolvedCount} />
+      <AdminMetricCard label="Шийдэгдсэн" value={summary.resolvedCount} />
       <AdminMetricCard
-        label="Dismissed"
+        label="Хаасан"
         value={summary.dismissedCount}
         accent="slate"
       />
@@ -37,19 +37,19 @@ export function TaskSummaryCards({ summary }: Props) {
 export function TaskSummarySecondaryCards({ summary }: Props) {
   return (
     <div className="mt-3 grid grid-cols-2 gap-3 sm:grid-cols-4">
-      <AdminMetricCard label="Active tasks" value={summary.activeCount} />
+      <AdminMetricCard label="Идэвхтэй ажил" value={summary.activeCount} />
       <AdminMetricCard
-        label="Critical"
+        label="Ноцтой"
         value={summary.criticalCount}
         accent="amber"
       />
       <AdminMetricCard
-        label="Ready to publish"
+        label="Нийтлэхэд бэлэн"
         value={summary.readyToPublishCount}
         accent="emerald"
       />
       <AdminMetricCard
-        label="Media issues"
+        label="Медиагийн асуудал"
         value={summary.mediaIssuesCount}
         accent="amber"
       />

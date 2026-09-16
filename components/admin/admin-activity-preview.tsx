@@ -18,34 +18,34 @@ export function AdminActivityPreview({ summary, recentRows }: Props) {
       <div className="flex flex-wrap items-end justify-between gap-3">
         <div>
           <h2 className="text-lg font-semibold text-slate-900">
-            Recent activity
+            Сүүлийн үйлдлүүд
           </h2>
           <p className="mt-1 text-sm text-slate-600">
-            Best-effort audit trail of admin lesson, content, and task actions.
+            Хичээл, контент, ажлын үйлдлийн бүртгэл.
           </p>
         </div>
         <Link
           href="/admin/activity"
           className="inline-flex rounded-full bg-emerald-500 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-emerald-600"
         >
-          View activity log
+          Үйлдлийн бүртгэл харах
         </Link>
       </div>
 
       <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
-        <AdminMetricCard label="Total logged" value={summary.total} />
-        <AdminMetricCard label="Today" value={summary.today} accent="emerald" />
-        <AdminMetricCard label="Content" value={summary.contentActions} />
+        <AdminMetricCard label="Нийт бүртгэл" value={summary.total} />
+        <AdminMetricCard label="Өнөөдөр" value={summary.today} accent="emerald" />
+        <AdminMetricCard label="Контент" value={summary.contentActions} />
         <AdminMetricCard
-          label="Rollback available"
+          label="Буцаах боломжтой"
           value={summary.rollbackAvailable}
           accent="emerald"
         />
       </div>
 
       <AdminCard
-        title="Activity log"
-        description={`${summary.today} today · ${summary.taskActions} task actions`}
+        title="Үйлдлийн бүртгэл"
+        description={`Өнөөдөр ${summary.today} · ажлын үйлдэл ${summary.taskActions}`}
         href="/admin/activity"
       />
 
@@ -53,7 +53,7 @@ export function AdminActivityPreview({ summary, recentRows }: Props) {
         <ActivityLogList rows={recentRows} compact />
       ) : (
         <p className="text-sm text-slate-600">
-          No activity logged yet — actions will appear after admin workflows run.
+          Одоогоор бүртгэл алга — үйлдэл хийсний дараа энд харагдана.
         </p>
       )}
     </section>

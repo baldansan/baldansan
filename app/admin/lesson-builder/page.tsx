@@ -6,7 +6,7 @@ import { getAdminTasks } from "@/lib/supabase/admin-tasks";
 export const dynamic = "force-dynamic";
 
 export const metadata = {
-  title: "Lesson Builder — Admin",
+  title: "Хичээл бүтээгч — Удирдлагын хэсэг",
 };
 
 export default async function LessonBuilderPage() {

@@ -88,48 +88,48 @@ export function LessonImprovementPrompts({
   return (
     <div id="content-improvement" className="flex flex-col gap-4">
       <ImprovementPromptCard
-        title="Improve full lesson JSON"
-        subtitle="Holistic improvement using current QA warnings and lesson context."
+        title="Бүтэн хичээлийн JSON-г сайжруулах"
+        subtitle="Одоогийн анхааруулга болон хичээлийн агуулгад тулгуурлан бүхэлд нь сайжруулна."
         prompt={buildLessonImprovementPrompt(lesson, qa)}
         issueType="full_lesson"
         relatedLessonId={lesson.id}
         defaultCollapsed
       />
       <ImprovementPromptCard
-        title="Fix missing subtitle / vocabulary / quiz"
-        subtitle="Fill empty sections to meet publish minimums."
+        title="Дутуу хадмал / үгсийн сан / дасгалыг нөхөх"
+        subtitle="Нийтлэхэд шаардлагатай доод хэмжээнд хүргэж хоосон хэсгүүдийг бөглөнө."
         prompt={buildMissingContentPrompt(lesson, qaSummary)}
         issueType="missing_content"
         relatedLessonId={lesson.id}
         defaultCollapsed
       />
       <ImprovementPromptCard
-        title="Improve quiz quality"
-        subtitle="Clearer questions, better distractors, Mongolian explanations."
+        title="Дасгалын чанарыг сайжруулах"
+        subtitle="Асуултыг тодорхой болгож, буруу хариултуудыг сайжруулж, монгол тайлбар нэмнэ."
         prompt={buildQuizQualityPrompt(lesson, qaSummary)}
         issueType="quiz_quality"
         relatedLessonId={lesson.id}
         defaultCollapsed
       />
       <ImprovementPromptCard
-        title="Improve vocabulary examples"
-        subtitle="Stronger example sentences and natural Mongolian glosses."
+        title="Үгийн жишээ өгүүлбэрийг сайжруулах"
+        subtitle="Илүү тодорхой жишээ өгүүлбэр, жам ёсны монгол орчуулга."
         prompt={buildVocabularyExamplesPrompt(lesson, weakVocab)}
         issueType="vocabulary"
         relatedLessonId={lesson.id}
         defaultCollapsed
       />
       <ImprovementPromptCard
-        title="Fix subtitles (pinyin + Mongolian)"
-        subtitle="Repair missing translations on timed subtitle lines."
+        title="Хадмал засах (пиньинь + монгол)"
+        subtitle="Хадмалын мөрүүдэд дутуу байгаа орчуулгыг нөхнө."
         prompt={buildSubtitleImprovementPrompt(lesson, subtitleIssues)}
         issueType="subtitles"
         relatedLessonId={lesson.id}
         defaultCollapsed
       />
       <ImprovementPromptCard
-        title="Prepare publish-ready content"
-        subtitle="Checklist-driven JSON to pass import QA and publish."
+        title="Нийтлэхэд бэлэн агуулга бэлдэх"
+        subtitle="Шалгах жагсаалтад тулгуурлан чанарын шалгалтыг давж нийтлэхэд бэлэн JSON гаргана."
         prompt={buildPublishReadinessPrompt(lesson, qa)}
         issueType="publish_readiness"
         relatedLessonId={lesson.id}

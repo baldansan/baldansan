@@ -1,7 +1,4 @@
-import {
-  mediaStatusLabel,
-  normalizeMediaStatus,
-} from "@/lib/lesson-media";
+import { normalizeMediaStatus } from "@/lib/lesson-media";
 import type { LessonMediaStatus } from "@/types/lesson-content";
 
 type Props = {
@@ -14,13 +11,19 @@ const tone: Record<LessonMediaStatus, string> = {
   ready: "bg-emerald-50 text-emerald-800 ring-emerald-200",
 };
 
+const label: Record<LessonMediaStatus, string> = {
+  missing: "Дутуу",
+  pending: "Хүлээгдэж байна",
+  ready: "Бэлэн",
+};
+
 export function MediaStatusBadge({ status }: Props) {
   const normalized = normalizeMediaStatus(status);
   return (
     <span
       className={`inline-flex rounded-full px-2.5 py-0.5 text-xs font-medium ring-1 ${tone[normalized]}`}
     >
-      {mediaStatusLabel(status)}
+      {label[normalized]}
     </span>
   );
 }

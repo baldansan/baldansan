@@ -202,5 +202,5 @@ export function mediaTypeAcceptAttribute(mediaType: LessonMediaType): string {
 
 export function mediaTypeHint(mediaType: LessonMediaType): string {
   const rules = MEDIA_RULES[mediaType];
-  return `${[...rules.extensions].join(", ")} · max ${formatMaxSize(rules.maxBytes)}`;
+  return `${[...rules.extensions].join(", ")} · дээд тал нь ${formatMaxSize(rules.maxBytes)}`;
 }

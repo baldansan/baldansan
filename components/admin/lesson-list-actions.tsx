@@ -132,7 +132,9 @@ export function LessonListActions({
             onClick={() => void handlePublish("draft")}
             className={`${actionLinkClass} text-amber-800 hover:text-amber-900`}
           >
-            {busy === "unpublish" ? "Буцааж байна…" : "Буцаах"}
+            {busy === "unpublish"
+              ? "Нийтлэхээ болиж байна…"
+              : "Нийтлэхээ болих"}
           </button>
         ) : (
           <button
@@ -141,7 +143,7 @@ export function LessonListActions({
             onClick={() => void handlePublish("available")}
             className={`${actionLinkClass} text-emerald-700 hover:text-emerald-800`}
           >
-            {busy === "publish" ? "Нийтлэж байна…" : "Нийтлэх"}
+            {busy === "publish" ? "Нийтэлж байна…" : "Нийтлэх"}
           </button>
         )}
 

@@ -37,7 +37,7 @@ export function ActivityDetailLoader({ activityId }: Props) {
   if (loading) {
     return (
       <p className="rounded-2xl bg-slate-50 px-6 py-8 text-center text-sm text-slate-600 ring-1 ring-slate-200">
-        Activity detail ачааллаж байна…
+        Үйлдлийн дэлгэрэнгүйг ачаалж байна…
       </p>
     );
   }
@@ -52,7 +52,7 @@ export function ActivityDetailLoader({ activityId }: Props) {
           href="/admin/activity"
           className="text-sm font-medium text-emerald-700 hover:text-emerald-800"
         >
-          ← Back to activity log
+          ← Үйлдлийн бүртгэл рүү буцах
         </Link>
       </div>
     );
@@ -61,14 +61,14 @@ export function ActivityDetailLoader({ activityId }: Props) {
   if (!activity) {
     return (
       <EmptyState
-        title="Activity not found"
-        description={`No activity log entry with id "${activityId}".`}
+        title="Үйлдэл олдсонгүй"
+        description={`"${activityId}" дугаартай үйлдлийн бүртгэл алга.`}
         action={
           <Link
             href="/admin/activity"
             className="text-sm font-medium text-emerald-700 hover:text-emerald-800"
           >
-            ← Back to activity log
+            ← Үйлдлийн бүртгэл рүү буцах
           </Link>
         }
       />

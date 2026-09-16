@@ -72,16 +72,16 @@ export function QuizEditor({
   }
 
   function validate(): string | null {
-    if (!form.question.trim()) return "Question заавал.";
+    if (!form.question.trim()) return "Асуултыг заавал бөглөнө үү.";
     const options = parseOptions(form.optionsText);
-    if (options.length < 2) return "Хамгийн багадаа 2 сонголт.";
-    if (!form.correctAnswer.trim()) return "Correct answer заавал.";
+    if (options.length < 2) return "Хамгийн багадаа 2 сонголт оруулна уу.";
+    if (!form.correctAnswer.trim()) return "Зөв хариултыг заавал бөглөнө үү.";
     if (!options.includes(form.correctAnswer.trim())) {
-      return "Correct answer нь сонголтуудын нэг байх ёстой.";
+      return "Зөв хариулт нь сонголтуудын нэг байх ёстой.";
     }
     if (form.orderIndex.trim()) {
       const n = Number(form.orderIndex);
-      if (!Number.isFinite(n) || n < 1) return "Order index тоо байх ёстой.";
+      if (!Number.isFinite(n) || n < 1) return "Дарааллын дугаар тоо байх ёстой.";
     }
     return null;
   }
@@ -116,7 +116,7 @@ export function QuizEditor({
       return;
     }
 
-    setSuccess("Quiz question нэмэгдлээ. Lesson count шинэчлэгдлээ.");
+    setSuccess("Асуулт нэмэгдлээ. Хичээлийн тоо шинэчлэгдлээ.");
     setForm({
       ...emptyForm,
       type: form.type,
@@ -137,20 +137,20 @@ export function QuizEditor({
       setError(result.error);
       return;
     }
-    setSuccess("Quiz устгагдлаа. Lesson count шинэчлэгдлээ.");
+    setSuccess("Асуулт устгагдлаа. Хичээлийн тоо шинэчлэгдлээ.");
     await load();
   }
 
   return (
     <AdminEditorSection
-      title={`Quiz editor (${items.length})`}
-      description="One option per line in the options field."
+      title={`Дасгал засварлах (${items.length})`}
+      description="Сонголтын хэсэгт нэг мөрөнд нэг сонголт бичнэ."
     >
       <AdminAlert error={error} success={success} />
 
       <div className="grid gap-3">
         <label className="block text-sm font-medium text-slate-700">
-          Type
+          Төрөл
           <select
             className={adminInputClass}
             value={form.type}
@@ -161,12 +161,12 @@ export function QuizEditor({
               })
             }
           >
-            <option value="multiple_choice">multiple_choice</option>
-            <option value="cloze">cloze</option>
+            <option value="multiple_choice">Сонголттой асуулт</option>
+            <option value="cloze">Нөхөх асуулт</option>
           </select>
         </label>
         <label className="block text-sm font-medium text-slate-700">
-          Question
+          Асуулт
           <textarea
             className={`${adminInputClass} min-h-[72px]`}
             value={form.question}
@@ -175,7 +175,7 @@ export function QuizEditor({
           />
         </label>
         <label className="block text-sm font-medium text-slate-700">
-          Options (one per line)
+          Сонголтууд (нэг мөрөнд нэг)
           <textarea
             className={`${adminInputClass} min-h-[88px]`}
             value={form.optionsText}
@@ -185,7 +185,7 @@ export function QuizEditor({
           />
         </label>
         <label className="block text-sm font-medium text-slate-700">
-          Correct answer
+          Зөв хариулт
           <input
             className={adminInputClass}
             value={form.correctAnswer}
@@ -193,7 +193,7 @@ export function QuizEditor({
           />
         </label>
         <label className="block text-sm font-medium text-slate-700">
-          Explanation
+          Тайлбар
           <input
             className={adminInputClass}
             value={form.explanation}
@@ -201,7 +201,7 @@ export function QuizEditor({
           />
         </label>
         <label className="block text-sm font-medium text-slate-700">
-          Order index
+          Дарааллын дугаар
           <input
             className={adminInputClass}
             type="number"
@@ -218,13 +218,13 @@ export function QuizEditor({
         disabled={saving}
         className="mt-4 rounded-full bg-emerald-500 px-5 py-2.5 text-sm font-semibold text-white hover:bg-emerald-600 disabled:opacity-60"
       >
-        {saving ? "Saving..." : "Add quiz question"}
+        {saving ? "Хадгалж байна…" : "Асуулт нэмэх"}
       </button>
 
       {loading ? (
-        <p className="mt-4 text-sm text-slate-500">Ачааллаж байна...</p>
+        <p className="mt-4 text-sm text-slate-500">Ачаалж байна…</p>
       ) : items.length === 0 ? (
-        <p className="mt-4 text-sm text-amber-800">No quiz questions yet</p>
+        <p className="mt-4 text-sm text-amber-800">Одоогоор асуулт алга</p>
       ) : (
         <ul className="mt-4 space-y-2">
           {items.map((q) => (
@@ -234,11 +234,11 @@ export function QuizEditor({
             >
               <div className="text-sm">
                 <span className="text-xs text-slate-500">
-                  #{q.order_index} · {q.type} · {q.options.length} options
+                  #{q.order_index} · {q.type} · {q.options.length} сонголт
                 </span>
                 <p className="mt-1 font-medium text-slate-900">{q.question}</p>
                 <p className="text-xs text-slate-500">
-                  Answer: {q.correct_answer}
+                  Хариулт: {q.correct_answer}
                 </p>
               </div>
               <button
@@ -247,7 +247,7 @@ export function QuizEditor({
                 disabled={deletingId === q.id}
                 className="shrink-0 rounded-full border border-red-200 px-3 py-1 text-xs font-medium text-red-700 hover:bg-red-50"
               >
-                {deletingId === q.id ? "…" : "Delete"}
+                {deletingId === q.id ? "…" : "Устгах"}
               </button>
             </li>
           ))}

@@ -35,7 +35,7 @@ export function SystemCheckView() {
       const next = await runSystemChecks();
       setReport(next);
     } catch {
-      setError("System checks could not complete.");
+      setError("Системийн шалгалтыг дуусгаж чадсангүй.");
     } finally {
       setLoading(false);
     }
@@ -72,10 +72,10 @@ export function SystemCheckView() {
       <section className="admin-panel p-5 sm:p-6">
         <div className="flex flex-wrap items-center justify-between gap-3">
           <div>
-            <h2 className="text-lg font-semibold text-slate-900">Summary</h2>
+            <h2 className="text-lg font-semibold text-slate-900">Товчоо</h2>
             <p className="mt-1 text-sm text-slate-600">
-              App-side verification using the current browser session. Env
-              values and keys are never displayed.
+              Одоогийн хөтчийн сешнээр аппын талаас шалгана. Орчны утга,
+              түлхүүрүүд хэзээ ч харагдахгүй.
             </p>
           </div>
           <button
@@ -84,13 +84,14 @@ export function SystemCheckView() {
             disabled={loading}
             className="admin-btn-secondary disabled:opacity-60"
           >
-            {loading ? "Running…" : "Re-run checks"}
+            {loading ? "Ажиллаж байна…" : "Дахин шалгах"}
           </button>
         </div>
         {report ? (
           <p className="mt-3 text-sm text-slate-700">
-            {passCount} pass · {warnCount} warn · {failCount} fail · {total}{" "}
-            total · last run {formatMongoliaDateTimeWithLabel(report.ranAt)}
+            {passCount} давсан · {warnCount} анхааруулга · {failCount} амжилтгүй ·{" "}
+            нийт {total} · сүүлд ажилласан{" "}
+            {formatMongoliaDateTimeWithLabel(report.ranAt)}
           </p>
         ) : null}
         {error ? (
@@ -100,27 +101,27 @@ export function SystemCheckView() {
 
       <section className="admin-panel p-5 sm:p-6">
         <h2 className="text-lg font-semibold text-slate-900">
-          Supabase SQL verification
+          Supabase SQL шалгалт
         </h2>
         <p className="mt-2 text-sm text-slate-600">
           {SQL_VERIFICATION_INSTRUCTIONS}
         </p>
         <p className="mt-2 text-xs text-slate-500">
-          See supabase/verify/README.md for pass/warn/fail meanings and common
-          fixes.
+          pass/warn/fail-ийн утга болон түгээмэл засварыг
+          supabase/verify/README.md файлаас үзнэ үү.
         </p>
         <button
           type="button"
           onClick={() => void copySqlInstructions()}
           className="admin-btn-ghost mt-4"
         >
-          {copied ? "Copied!" : "Copy SQL verification instructions"}
+          {copied ? "Хуулагдлаа!" : "SQL шалгах зааврыг хуулах"}
         </button>
       </section>
 
       {loading && !report ? (
         <p className="admin-panel px-6 py-8 text-center text-sm text-slate-600">
-          System check ачааллаж байна…
+          Системийн шалгалт ачаалж байна…
         </p>
       ) : null}
 
@@ -162,7 +163,7 @@ export function SystemCheckView() {
 
       <section className="rounded-2xl bg-emerald-50/60 p-5 ring-1 ring-emerald-100">
         <h2 className="text-base font-semibold text-slate-900">
-          Deployment docs
+          Байршуулалтын баримт бичиг
         </h2>
         <ul className="mt-3 space-y-1 text-sm">
           <li>
@@ -170,7 +171,7 @@ export function SystemCheckView() {
               href="/deployment-check"
               className="font-medium text-emerald-800 hover:underline"
             >
-              Public deployment check
+              Нийтийн байршуулалтын шалгалт
             </Link>
           </li>
           <li>
@@ -178,7 +179,7 @@ export function SystemCheckView() {
               href="/admin/final-audit"
               className="font-medium text-emerald-800 hover:underline"
             >
-              Phase 5 Final Audit
+              5-р үе шатны эцсийн үзлэг
             </Link>
           </li>
         </ul>

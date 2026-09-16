@@ -60,7 +60,7 @@ function notConfigured(): LessonPackageImportResult {
     mediaUploaded: 0,
     mediaFailures: [],
     warnings: [],
-    errors: ["Supabase is not configured."],
+    errors: ["Supabase тохируулаагүй байна."],
   };
 }
 
@@ -181,18 +181,18 @@ async function upsertLessonShell(
   warnings?: string[];
 }> {
   if (!supabase) {
-    return { ok: false, error: "Supabase is not configured." };
+    return { ok: false, error: "Supabase тохируулаагүй байна." };
   }
 
   const body = buildImportDraftBodyFromValidation(validation);
   if (!body) {
     if (!validation.preview?.courseId && !validation.lesson?.courseId) {
-      return { ok: false, error: "courseId missing in manifest.json." };
+      return { ok: false, error: "manifest.json дотор courseId алга байна." };
     }
     if (!validation.preview?.lessonId) {
-      return { ok: false, error: "lessonId missing in manifest.json." };
+      return { ok: false, error: "manifest.json дотор lessonId алга байна." };
     }
-    return { ok: false, error: "ZIP parse data missing. Please validate again." };
+    return { ok: false, error: "ZIP багцын мэдээлэл алга. Дахин шалгана уу." };
   }
 
   const result = await upsertDraftLessonFromPackage(supabase, body);
@@ -235,10 +235,10 @@ export async function importLessonPackage(
       mediaFailures: [],
       warnings: validation.warnings,
       errors: missingParsed
-        ? ["ZIP parse data missing. Please validate again."]
+        ? ["ZIP багцын мэдээлэл алга. Дахин шалгана уу."]
         : validation.errors.length
           ? validation.errors
-          : ["ZIP package validation failed."],
+          : ["ZIP багц шалгалт давсангүй."],
     };
   }
 
@@ -304,7 +304,7 @@ export async function importLessonPackage(
       mediaUploaded: mediaResult.mediaUploaded,
       mediaFailures: mediaResult.mediaFailures,
       warnings,
-      errors: [imported.error ?? "Bulk content import failed."],
+      errors: [imported.error ?? "Агуулгыг бөөнөөр оруулж чадсангүй."],
       created: shell.created,
     };
   }
@@ -330,8 +330,8 @@ export async function importLessonPackage(
   });
 
   const message = shell.created
-    ? "Шинэ draft lesson үүсгээд import амжилттай хийлээ."
-    : "Одоо байгаа draft lesson дээр import хийлээ.";
+    ? "Шинэ ноорог хичээл үүсгээд багцыг амжилттай оруулж дууслаа."
+    : "Одоо байгаа ноорог хичээл дээр багцыг оруулж дууслаа.";
 
   const result: LessonPackageImportResult = {
     ok: true,

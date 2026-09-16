@@ -74,7 +74,7 @@ export function ProductionQaView() {
   if (!hydrated) {
     return (
       <p className="rounded-2xl bg-slate-50 px-6 py-8 text-center text-sm text-slate-600 ring-1 ring-slate-200">
-        Production QA ачааллаж байна…
+        Чанарын шалгалт ачаалж байна…
       </p>
     );
   }
@@ -82,11 +82,11 @@ export function ProductionQaView() {
   return (
     <div className="flex flex-col gap-6">
       <section className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:p-6">
-        <h2 className="text-lg font-semibold text-slate-900">Production URL</h2>
+        <h2 className="text-lg font-semibold text-slate-900">Ажлын орчны хаяг</h2>
         <p className="mt-2 font-mono text-sm text-emerald-800">{PRODUCTION_URL}</p>
         <p className="mt-2 text-sm text-slate-600">
-          Open production routes in a new tab, verify manually, then mark pass /
-          warning / fail below. Automated checks:{" "}
+          Ажлын орчны хуудсыг шинэ цонхонд нээж гараар шалгаад доор төлөвийг
+          нь тэмдэглэнэ үү. Автомат шалгалтууд:{" "}
           <a
             href={productionUrl("/deployment-check")}
             target="_blank"
@@ -113,7 +113,7 @@ export function ProductionQaView() {
             rel="noopener noreferrer"
             className="inline-flex rounded-full bg-emerald-500 px-4 py-2 text-sm font-semibold text-white hover:bg-emerald-600"
           >
-            Open production home
+            Ажлын нүүр хуудсыг нээх
           </a>
           <a
             href={productionUrl("/deployment-check")}
@@ -121,7 +121,7 @@ export function ProductionQaView() {
             rel="noopener noreferrer"
             className="inline-flex rounded-full border border-emerald-200 bg-emerald-50 px-4 py-2 text-sm font-semibold text-emerald-800 hover:bg-emerald-100"
           >
-            Open deployment check
+            Байршуулалтын шалгалтыг нээх
           </a>
           <a
             href={productionUrl("/admin/system-check")}
@@ -129,25 +129,25 @@ export function ProductionQaView() {
             rel="noopener noreferrer"
             className="inline-flex rounded-full border border-emerald-200 bg-emerald-50 px-4 py-2 text-sm font-semibold text-emerald-800 hover:bg-emerald-100"
           >
-            Open production admin system check
+            Ажлын орчны системийн шалгалтыг нээх
           </a>
           <Link
             href="/admin/security-audit"
             className="inline-flex rounded-full border border-emerald-200 bg-white px-4 py-2 text-sm font-semibold text-emerald-800 hover:bg-emerald-50"
           >
-            Security / RLS Audit
+            Аюулгүй байдал / RLS үзлэг
           </Link>
           <Link
             href="/admin/launch-candidate"
             className="inline-flex rounded-full border border-emerald-200 bg-white px-4 py-2 text-sm font-semibold text-emerald-800 hover:bg-emerald-50"
           >
-            Launch Candidate Report
+            Гаргалтын хувилбарын тайлан
           </Link>
           <Link
             href="/admin/launch-signoff"
             className="inline-flex rounded-full border border-emerald-200 bg-emerald-50 px-4 py-2 text-sm font-semibold text-emerald-800 hover:bg-emerald-100"
           >
-            Launch Sign-off
+            Гаргалтын баталгаа
           </Link>
         </div>
       </section>

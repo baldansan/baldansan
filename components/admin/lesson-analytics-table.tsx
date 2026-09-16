@@ -53,22 +53,22 @@ function lessonNeedsAttention(lesson: LessonAnalyticsMetrics): boolean {
 
 function attentionReasons(lesson: LessonAnalyticsMetrics): string[] {
   const reasons: string[] = [];
-  if (lesson.quizAttemptCount === 0) reasons.push("No quiz attempts");
+  if (lesson.quizAttemptCount === 0) reasons.push("Дасгал өгөөгүй");
   if (
     lesson.averageQuizPercentage != null &&
     lesson.averageQuizPercentage < 70
   ) {
-    reasons.push("Low avg score");
+    reasons.push("Дундаж оноо бага");
   }
   if (
     lesson.startedCount > 0 &&
     (lesson.completionRate == null || lesson.completionRate < 30)
   ) {
-    reasons.push("Low completion");
+    reasons.push("Дуусгалт бага");
   }
-  if (lesson.quizQuestionCount === 0) reasons.push("Missing quiz");
-  if (lesson.vocabularyCount === 0) reasons.push("Missing vocabulary");
-  if (lesson.mediaStatus === "missing") reasons.push("Media missing");
+  if (lesson.quizQuestionCount === 0) reasons.push("Дасгал дутуу");
+  if (lesson.vocabularyCount === 0) reasons.push("Үгсийн сан дутуу");
+  if (lesson.mediaStatus === "missing") reasons.push("Медиа дутуу");
   return reasons;
 }
 
@@ -122,10 +122,10 @@ export function LessonAnalyticsTable({ lessons }: Props) {
           onChange={(e) => setStatusFilter(e.target.value as StatusFilter)}
           className="admin-select"
         >
-          <option value="all">Status: All</option>
-          <option value="draft">draft</option>
-          <option value="available">available</option>
-          <option value="archived">archived</option>
+          <option value="all">Төлөв: Бүгд</option>
+          <option value="draft">Ноорог</option>
+          <option value="available">Нийтлэгдсэн</option>
+          <option value="archived">Архивласан</option>
         </select>
         <select
           value={performanceFilter}
@@ -134,17 +134,17 @@ export function LessonAnalyticsTable({ lessons }: Props) {
           }
           className="admin-select"
         >
-          <option value="all">Performance: All</option>
-          <option value="high">High completion</option>
-          <option value="low">Low completion</option>
-          <option value="none">No activity</option>
+          <option value="all">Гүйцэтгэл: Бүгд</option>
+          <option value="high">Дуусгалт өндөр</option>
+          <option value="low">Дуусгалт бага</option>
+          <option value="none">Идэвх алга</option>
         </select>
       </div>
 
       {needsAttention.length > 0 ? (
         <section className="rounded-2xl bg-amber-50/60 p-4 ring-1 ring-amber-100 sm:p-5">
           <h3 className="text-sm font-semibold text-amber-900">
-            Needs attention ({needsAttention.length})
+            Анхаарах шаардлагатай ({needsAttention.length})
           </h3>
           <ul className="mt-3 flex flex-col gap-2">
             {needsAttention.map((lesson) => (
@@ -162,7 +162,7 @@ export function LessonAnalyticsTable({ lessons }: Props) {
                   href={`/admin/analytics/lessons/${lesson.lessonId}`}
                   className="text-xs font-medium text-emerald-700 hover:text-emerald-800"
                 >
-                  View details →
+                  Дэлгэрэнгүй харах →
                 </Link>
               </li>
             ))}
@@ -174,16 +174,16 @@ export function LessonAnalyticsTable({ lessons }: Props) {
         <table className="admin-table">
           <thead>
             <tr>
-              <th className="px-3 py-3">Lesson</th>
-              <th className="px-3 py-3">Status</th>
-              <th className="px-3 py-3">Started</th>
-              <th className="px-3 py-3">Done</th>
-              <th className="px-3 py-3">Completion</th>
-              <th className="px-3 py-3">Quiz</th>
-              <th className="px-3 py-3">Avg score</th>
-              <th className="px-3 py-3">Words</th>
-              <th className="px-3 py-3">QA / Media</th>
-              <th className="px-3 py-3">Links</th>
+              <th className="px-3 py-3">Хичээл</th>
+              <th className="px-3 py-3">Төлөв</th>
+              <th className="px-3 py-3">Эхэлсэн</th>
+              <th className="px-3 py-3">Дуусгасан</th>
+              <th className="px-3 py-3">Дуусгалт</th>
+              <th className="px-3 py-3">Дасгал</th>
+              <th className="px-3 py-3">Дундаж оноо</th>
+              <th className="px-3 py-3">Үг</th>
+              <th className="px-3 py-3">Чанар / Медиа</th>
+              <th className="px-3 py-3">Холбоос</th>
             </tr>
           </thead>
           <tbody>
@@ -239,13 +239,13 @@ export function LessonAnalyticsTable({ lessons }: Props) {
                       href={`/admin/analytics/lessons/${lesson.lessonId}`}
                       className="text-emerald-700 hover:text-emerald-800"
                     >
-                      View details
+                      Дэлгэрэнгүй
                     </Link>
                     <Link
                       href={`/admin/lessons/${lesson.lessonId}/edit`}
                       className="text-slate-600 hover:text-emerald-700"
                     >
-                      Edit lesson
+                      Хичээл засах
                     </Link>
                   </div>
                 </td>
@@ -255,7 +255,7 @@ export function LessonAnalyticsTable({ lessons }: Props) {
         </table>
         {filtered.length === 0 ? (
           <p className="p-6 text-center text-sm text-slate-500">
-            No lessons match filters.
+            Шүүлтэд тохирох хичээл алга.
           </p>
         ) : null}
       </div>

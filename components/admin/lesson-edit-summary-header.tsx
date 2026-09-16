@@ -63,19 +63,19 @@ export function LessonEditSummaryHeader({
             {lesson.id} · {lesson.courseId}
           </p>
           <div className="mt-3 flex flex-wrap gap-2">
-            <CountPill label="Vocabulary" value={vocabularyCount} />
-            <CountPill label="Quiz" value={quizCount} />
+            <CountPill label="Үгсийн сан" value={vocabularyCount} />
+            <CountPill label="Дасгал" value={quizCount} />
             <CountPill
-              label="Subtitles"
-              value={subtitleCount > 0 ? subtitleCount : prelesson ? "none" : 0}
+              label="Хадмал"
+              value={subtitleCount > 0 ? subtitleCount : prelesson ? "алга" : 0}
             />
-            <CountPill label="Audio" value={audioCount} />
-            <CountPill label="Images" value={imageCount} />
-            {videoCount > 0 ? <CountPill label="Video" value={videoCount} /> : null}
+            <CountPill label="Аудио" value={audioCount} />
+            <CountPill label="Зураг" value={imageCount} />
+            {videoCount > 0 ? <CountPill label="Бичлэг" value={videoCount} /> : null}
           </div>
           {publishStatus === "draft" && readiness.readyToPublish ? (
             <p className="mt-3 text-sm text-emerald-800">
-              Publish-ready — {adminStatusLabel("available")} болгох боломжтой.
+              Нийтлэхэд бэлэн — {adminStatusLabel("available")} болгох боломжтой.
             </p>
           ) : null}
         </div>
@@ -96,13 +96,13 @@ export function LessonEditSummaryHeader({
             })}
             className="inline-flex rounded-full border border-emerald-200 bg-emerald-50 px-5 py-2.5 text-sm font-semibold text-emerald-800 transition-colors hover:bg-emerald-100"
           >
-            Preview
+            Урьдчилж харах
           </Link>
           <Link
             href="/admin/lessons"
             className="inline-flex rounded-full border border-slate-200 px-5 py-2.5 text-sm font-medium text-slate-700 transition-colors hover:border-emerald-200 hover:text-emerald-700"
           >
-            ← Lessons
+            ← Хичээлүүд
           </Link>
         </div>
       </div>

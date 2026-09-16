@@ -61,6 +61,86 @@ const ROLE_OPTIONS: OrganizationMemberRole[] = [
   "student",
 ];
 
+/** Зөвхөн дэлгэцэнд харуулах нэр — өгөгдлийн утгыг өөрчлөхгүй. */
+const TYPE_LABELS: Record<string, string> = {
+  training_center: "Сургалтын төв",
+  school: "Сургууль",
+  university: "Их сургууль",
+  teacher: "Багш (хувь хүн)",
+  company: "Компани",
+  other: "Бусад",
+};
+
+const STATUS_LABELS: Record<string, string> = {
+  lead: "Сонирхсон",
+  contacted: "Холбоо барьсан",
+  demo_scheduled: "Танилцуулга товлосон",
+  pilot: "Туршилт",
+  active: "Идэвхтэй",
+  paused: "Түр зогссон",
+  closed: "Хаасан",
+};
+
+const ROLE_LABELS: Record<string, string> = {
+  owner: "Эзэмшигч",
+  manager: "Менежер",
+  teacher: "Багш",
+  assistant: "Туслах",
+  student: "Сурагч",
+};
+
+const MEMBER_STATUS_LABELS: Record<string, string> = {
+  invited: "Уригдсан",
+  active: "Идэвхтэй",
+  inactive: "Идэвхгүй",
+};
+
+const ONBOARDING_STATUS_LABELS: Record<string, string> = {
+  not_started: "Эхлээгүй",
+  in_progress: "Хийгдэж байна",
+  ready_for_pilot: "Туршилтад бэлэн",
+  pilot_running: "Туршилт явж байна",
+  completed: "Дууссан",
+  paused: "Түр зогссон",
+};
+
+const PILOT_STAGE_LABELS: Record<string, string> = {
+  inquiry: "Хүсэлт ирсэн",
+  organization_setup: "Байгууллагын тохиргоо",
+  teacher_setup: "Багш бүртгэх",
+  classroom_setup: "Анги үүсгэх",
+  assignment_setup: "Даалгавар үүсгэх",
+  student_invite: "Сурагч урих",
+  pilot_ready: "Туршилтад бэлэн",
+  pilot_running: "Туршилт явж байна",
+  pilot_review: "Туршилтын дүгнэлт",
+};
+
+const VISIBILITY_LABELS: Record<string, string> = {
+  private: "Хаалттай",
+  organization: "Байгууллагын",
+  archived: "Архивласан",
+};
+
+const ASSIGNMENT_STATUS_LABELS: Record<string, string> = {
+  assigned: "Өгсөн",
+  draft: "Ноорог",
+  active: "Идэвхтэй",
+  closed: "Хаасан",
+  archived: "Архивласан",
+};
+
+const INQUIRY_STATUS_LABELS: Record<string, string> = {
+  new: "Шинэ",
+  contacted: "Холбоо барьсан",
+  demo_scheduled: "Танилцуулга товлосон",
+  proposal_sent: "Санал илгээсэн",
+  pilot: "Туршилт",
+  won: "Гэрээ байгуулсан",
+  lost: "Татгалзсан",
+  archived: "Архивласан",
+};
+
 type Props = {
   organizationId: string;
 };
@@ -180,15 +260,15 @@ export function AdminB2BOrganizationDetail({ organizationId }: Props) {
   }
 
   if (loading) {
-    return <p className="text-sm text-slate-600">Loading organization…</p>;
+    return <p className="text-sm text-slate-600">Ачаалж байна…</p>;
   }
 
   if (!org) {
     return (
       <div>
-        <p className="text-sm text-slate-600">{error ?? "Organization not found."}</p>
+        <p className="text-sm text-slate-600">{error ?? "Байгууллага олдсонгүй."}</p>
         <Link href="/admin/b2b/organizations" className="mt-2 text-sm text-emerald-600">
-          ← Organizations
+          ← Байгууллагууд
         </Link>
       </div>
     );
@@ -201,32 +281,32 @@ export function AdminB2BOrganizationDetail({ organizationId }: Props) {
           href="/admin/b2b/organizations"
           className="text-sm text-slate-600 hover:text-emerald-600"
         >
-          ← Organizations
+          ← Байгууллагууд
         </Link>
         <h1 className="mt-2 text-2xl font-bold tracking-tight">{org.name}</h1>
         <Link
           href={`/organization/${organizationId}`}
           className="mt-2 inline-flex rounded-full border border-emerald-200 bg-emerald-50 px-4 py-2 text-sm font-semibold text-emerald-800"
         >
-          Open organization dashboard →
+          Байгууллагын самбар нээх →
         </Link>
         <Link
           href={`/organization/${organizationId}/reports`}
           className="mt-2 ml-2 inline-flex rounded-full border border-slate-200 px-4 py-2 text-sm font-semibold text-slate-700"
         >
-          Organization reports →
+          Байгууллагын тайлан →
         </Link>
         <Link
           href={`/organization/${organizationId}/setup`}
           className="mt-2 ml-2 inline-flex rounded-full border border-slate-200 px-4 py-2 text-sm font-semibold text-slate-700"
         >
-          Setup wizard →
+          Тохиргооны алхмууд →
         </Link>
         <Link
           href={`/organization/${organizationId}/members/import`}
           className="mt-2 ml-2 inline-flex rounded-full border border-emerald-200 bg-emerald-50 px-4 py-2 text-sm font-semibold text-emerald-800"
         >
-          Bulk import members →
+          Гишүүдийг бөөнөөр оруулах →
         </Link>
         {error ? (
           <p className="mt-2 rounded-lg bg-red-50 px-3 py-2 text-sm text-red-800">
@@ -236,49 +316,56 @@ export function AdminB2BOrganizationDetail({ organizationId }: Props) {
       </section>
 
       <section className="rounded-2xl bg-white p-5 ring-1 ring-slate-200">
-        <h2 className="font-semibold text-slate-900">Invitations</h2>
+        <h2 className="font-semibold text-slate-900">Урилга</h2>
         <p className="mt-2 text-sm text-slate-600">
-          Pending {invitationCounts.pending} · Accepted {invitationCounts.accepted} ·
-          Expired/revoked {invitationCounts.inactive}
+          Хүлээгдэж байна {invitationCounts.pending} · Хүлээн авсан{" "}
+          {invitationCounts.accepted} · Хугацаа дууссан/цуцалсан{" "}
+          {invitationCounts.inactive}
         </p>
         <p className="mt-1 text-sm text-slate-600">
-          Email delivery — sent {emailDeliveryCounts.sent} · failed{" "}
-          {emailDeliveryCounts.failed} · skipped {emailDeliveryCounts.skipped}
+          И-мэйл илгээлт — илгээсэн {emailDeliveryCounts.sent} · амжилтгүй{" "}
+          {emailDeliveryCounts.failed} · алгассан {emailDeliveryCounts.skipped}
         </p>
         <div className="mt-3 flex flex-wrap gap-2">
           <Link
             href={`/organization/${organizationId}/invitations`}
             className="rounded-full border border-emerald-200 bg-emerald-50 px-4 py-2 text-sm font-semibold text-emerald-800"
           >
-            Organization invitations →
+            Байгууллагын урилгууд →
           </Link>
           <Link
             href={`/organization/${organizationId}/members`}
             className="rounded-full border border-slate-200 px-4 py-2 text-sm font-semibold text-slate-700"
           >
-            Members + create invite →
+            Гишүүд ба урилга үүсгэх →
           </Link>
         </div>
       </section>
 
       <section className="rounded-2xl bg-white p-5 ring-1 ring-slate-200">
-        <h2 className="font-semibold text-slate-900">Pilot onboarding</h2>
+        <h2 className="font-semibold text-slate-900">Туршилтын бэлтгэл</h2>
         {pilotSummary ? (
           <>
             <p className="mt-2 text-sm text-slate-600">
-              Status: {pilotSummary.onboarding?.onboardingStatus ?? "not_started"} ·
-              Stage: {pilotSummary.onboarding?.pilotStage ?? "inquiry"} · Score:{" "}
-              {pilotSummary.readiness.score}%
+              Төлөв:{" "}
+              {ONBOARDING_STATUS_LABELS[
+                pilotSummary.onboarding?.onboardingStatus ?? "not_started"
+              ] ?? "Эхлээгүй"}{" "}
+              · Алхам:{" "}
+              {PILOT_STAGE_LABELS[
+                pilotSummary.onboarding?.pilotStage ?? "inquiry"
+              ] ?? "Хүсэлт ирсэн"}{" "}
+              · Бэлэн байдал: {pilotSummary.readiness.score}%
             </p>
             {pilotSummary.onboarding?.targetStartDate ? (
               <p className="text-sm text-slate-600">
-                Target start: {pilotSummary.onboarding.targetStartDate} · Students:{" "}
-                {pilotSummary.onboarding.targetStudentCount ?? "—"}
+                Эхлэх огноо: {pilotSummary.onboarding.targetStartDate} · Сурагчийн
+                тоо: {pilotSummary.onboarding.targetStudentCount ?? "—"}
               </p>
             ) : null}
             {pilotSummary.onboarding?.pilotGoal ? (
               <p className="mt-1 text-sm text-slate-600">
-                Goal: {pilotSummary.onboarding.pilotGoal}
+                Зорилго: {pilotSummary.onboarding.pilotGoal}
               </p>
             ) : null}
             <div className="mt-3">
@@ -292,7 +379,9 @@ export function AdminB2BOrganizationDetail({ organizationId }: Props) {
             </div>
           </>
         ) : (
-          <p className="mt-2 text-sm text-slate-600">No onboarding record yet.</p>
+          <p className="mt-2 text-sm text-slate-600">
+            Бэлтгэлийн бүртгэл хараахан үүсээгүй байна.
+          </p>
         )}
         <div className="mt-4 flex flex-wrap gap-2">
           <button
@@ -310,7 +399,7 @@ export function AdminB2BOrganizationDetail({ organizationId }: Props) {
             }}
             className="rounded-full border border-slate-200 px-4 py-2 text-sm font-semibold text-slate-700"
           >
-            Seed onboarding tasks
+            Бэлтгэлийн ажлуудыг үүсгэх
           </button>
           <button
             type="button"
@@ -327,7 +416,7 @@ export function AdminB2BOrganizationDetail({ organizationId }: Props) {
             }}
             className="rounded-full border border-slate-200 px-4 py-2 text-sm font-semibold text-slate-700"
           >
-            Mark in progress
+            «Хийгдэж байна» болгох
           </button>
           <button
             type="button"
@@ -341,7 +430,7 @@ export function AdminB2BOrganizationDetail({ organizationId }: Props) {
             }}
             className="rounded-full bg-emerald-500 px-4 py-2 text-sm font-semibold text-white"
           >
-            Mark ready for pilot
+            «Туршилтад бэлэн» болгох
           </button>
           <button
             type="button"
@@ -357,14 +446,14 @@ export function AdminB2BOrganizationDetail({ organizationId }: Props) {
             }}
             className="rounded-full border border-amber-200 px-4 py-2 text-sm font-semibold text-amber-800"
           >
-            Pause onboarding
+            Бэлтгэлийг түр зогсоох
           </button>
         </div>
       </section>
 
       <section className="flex flex-col gap-4 rounded-2xl bg-white p-5 ring-1 ring-slate-200">
         <label className="flex flex-col gap-1 text-sm">
-          <span className="font-medium">Name</span>
+          <span className="font-medium">Нэр</span>
           <input
             value={org.name}
             onChange={(e) => setOrg({ ...org, name: e.target.value })}
@@ -372,7 +461,7 @@ export function AdminB2BOrganizationDetail({ organizationId }: Props) {
           />
         </label>
         <label className="flex flex-col gap-1 text-sm">
-          <span className="font-medium">Type</span>
+          <span className="font-medium">Төрөл</span>
           <select
             value={org.organizationType}
             onChange={(e) =>
@@ -385,13 +474,13 @@ export function AdminB2BOrganizationDetail({ organizationId }: Props) {
           >
             {TYPE_OPTIONS.map((t) => (
               <option key={t} value={t}>
-                {t}
+                {TYPE_LABELS[t] ?? t}
               </option>
             ))}
           </select>
         </label>
         <label className="flex flex-col gap-1 text-sm">
-          <span className="font-medium">Status</span>
+          <span className="font-medium">Төлөв</span>
           <select
             value={org.status}
             onChange={(e) =>
@@ -401,14 +490,14 @@ export function AdminB2BOrganizationDetail({ organizationId }: Props) {
           >
             {STATUS_OPTIONS.map((s) => (
               <option key={s} value={s}>
-                {s}
+                {STATUS_LABELS[s] ?? s}
               </option>
             ))}
           </select>
         </label>
         <div className="grid gap-4 sm:grid-cols-2">
           <label className="flex flex-col gap-1 text-sm">
-            <span className="font-medium">Email</span>
+            <span className="font-medium">И-мэйл</span>
             <input
               value={org.email ?? ""}
               onChange={(e) => setOrg({ ...org, email: e.target.value || null })}
@@ -416,7 +505,7 @@ export function AdminB2BOrganizationDetail({ organizationId }: Props) {
             />
           </label>
           <label className="flex flex-col gap-1 text-sm">
-            <span className="font-medium">Phone</span>
+            <span className="font-medium">Утас</span>
             <input
               value={org.phone ?? ""}
               onChange={(e) => setOrg({ ...org, phone: e.target.value || null })}
@@ -425,7 +514,7 @@ export function AdminB2BOrganizationDetail({ organizationId }: Props) {
           </label>
         </div>
         <label className="flex flex-col gap-1 text-sm">
-          <span className="font-medium">Website</span>
+          <span className="font-medium">Вэбсайт</span>
           <input
             value={org.website ?? ""}
             onChange={(e) => setOrg({ ...org, website: e.target.value || null })}
@@ -433,7 +522,7 @@ export function AdminB2BOrganizationDetail({ organizationId }: Props) {
           />
         </label>
         <label className="flex flex-col gap-1 text-sm">
-          <span className="font-medium">Address</span>
+          <span className="font-medium">Хаяг</span>
           <input
             value={org.address ?? ""}
             onChange={(e) => setOrg({ ...org, address: e.target.value || null })}
@@ -441,7 +530,7 @@ export function AdminB2BOrganizationDetail({ organizationId }: Props) {
           />
         </label>
         <label className="flex flex-col gap-1 text-sm">
-          <span className="font-medium">Notes</span>
+          <span className="font-medium">Тэмдэглэл</span>
           <textarea
             value={org.notes ?? ""}
             onChange={(e) => setOrg({ ...org, notes: e.target.value || null })}
@@ -455,26 +544,26 @@ export function AdminB2BOrganizationDetail({ organizationId }: Props) {
           onClick={() => void handleSaveOrg()}
           className="self-start rounded-full bg-emerald-500 px-5 py-2 text-sm font-semibold text-white disabled:opacity-60"
         >
-          Save organization
+          {saving ? "Хадгалж байна…" : "Хадгалах"}
         </button>
       </section>
 
       <section className="rounded-2xl bg-white p-5 ring-1 ring-slate-200">
-        <h2 className="font-semibold text-slate-900">Members</h2>
+        <h2 className="font-semibold text-slate-900">Гишүүд</h2>
         <p className="mt-1 text-sm text-slate-600">
-          {members.length} total ·{" "}
-          {members.filter((m) => m.status === "invited").length} invited ·{" "}
-          {members.filter((m) => m.status === "active").length} active
+          Нийт {members.length} ·{" "}
+          {members.filter((m) => m.status === "invited").length} уригдсан ·{" "}
+          {members.filter((m) => m.status === "active").length} идэвхтэй
         </p>
         <Link
           href={`/organization/${organizationId}/members/import`}
           className="mt-2 inline-block text-sm font-semibold text-emerald-600"
         >
-          Bulk import members →
+          Гишүүдийг бөөнөөр оруулах →
         </Link>
         <ul className="mt-3 flex flex-col gap-2">
           {members.length === 0 ? (
-            <li className="text-sm text-slate-600">No members yet.</li>
+            <li className="text-sm text-slate-600">Одоогоор гишүүн алга.</li>
           ) : (
             members.map((m) => (
               <li
@@ -482,7 +571,9 @@ export function AdminB2BOrganizationDetail({ organizationId }: Props) {
                 className="flex flex-wrap items-center justify-between gap-2 rounded-lg bg-slate-50 px-3 py-2 text-sm"
               >
                 <span>
-                  {m.displayName ?? m.email ?? "Member"} · {m.role} · {m.status}
+                  {m.displayName ?? m.email ?? "Гишүүн"} ·{" "}
+                  {ROLE_LABELS[m.role] ?? m.role} ·{" "}
+                  {MEMBER_STATUS_LABELS[m.status] ?? m.status}
                   {m.userId ? (
                     <span className="text-xs text-slate-500"> · {m.userId}</span>
                   ) : null}
@@ -492,7 +583,7 @@ export function AdminB2BOrganizationDetail({ organizationId }: Props) {
                   onClick={() => void handleRemoveMember(m.id)}
                   className="text-xs text-red-600 hover:text-red-800"
                 >
-                  Remove
+                  Хасах
                 </button>
               </li>
             ))
@@ -502,17 +593,17 @@ export function AdminB2BOrganizationDetail({ organizationId }: Props) {
           onSubmit={(e) => void handleAddMember(e)}
           className="mt-4 flex flex-col gap-3 border-t border-slate-100 pt-4"
         >
-          <h3 className="text-sm font-medium text-slate-700">Add member</h3>
+          <h3 className="text-sm font-medium text-slate-700">Гишүүн нэмэх</h3>
           <input
             value={memberName}
             onChange={(e) => setMemberName(e.target.value)}
-            placeholder="Display name"
+            placeholder="Харагдах нэр"
             className="rounded-lg border border-slate-200 px-3 py-2 text-sm"
           />
           <input
             value={memberEmail}
             onChange={(e) => setMemberEmail(e.target.value)}
-            placeholder="Email"
+            placeholder="И-мэйл"
             className="rounded-lg border border-slate-200 px-3 py-2 text-sm"
           />
           <select
@@ -524,14 +615,14 @@ export function AdminB2BOrganizationDetail({ organizationId }: Props) {
           >
             {ROLE_OPTIONS.map((r) => (
               <option key={r} value={r}>
-                {r}
+                {ROLE_LABELS[r] ?? r}
               </option>
             ))}
           </select>
           <input
             value={memberUserId}
             onChange={(e) => setMemberUserId(e.target.value)}
-            placeholder="User ID (optional UUID)"
+            placeholder="Хэрэглэгчийн ID (заавал биш, UUID)"
             className="rounded-lg border border-slate-200 px-3 py-2 text-sm"
           />
           <button
@@ -539,29 +630,33 @@ export function AdminB2BOrganizationDetail({ organizationId }: Props) {
             disabled={saving}
             className="self-start rounded-full border border-slate-200 px-4 py-2 text-sm font-semibold text-slate-700"
           >
-            Add member
+            Гишүүн нэмэх
           </button>
         </form>
       </section>
 
       <section className="rounded-2xl bg-white p-5 ring-1 ring-slate-200">
-        <h2 className="font-semibold text-slate-900">Organization classrooms</h2>
+        <h2 className="font-semibold text-slate-900">Байгууллагын ангиуд</h2>
         <ul className="mt-3 flex flex-col gap-2">
           {classrooms.length === 0 ? (
-            <li className="text-sm text-slate-600">No classrooms linked yet.</li>
+            <li className="text-sm text-slate-600">
+              Одоогоор холбогдсон анги алга.
+            </li>
           ) : (
             classrooms.map((c) => (
               <li
                 key={c.id}
                 className="rounded-lg bg-slate-50 px-3 py-2 text-sm"
               >
-                {c.name} · {c.visibility ?? "private"} · {c.studentCount ?? 0} students
+                {c.name} ·{" "}
+                {VISIBILITY_LABELS[c.visibility ?? "private"] ?? c.visibility} ·{" "}
+                {c.studentCount ?? 0} сурагч
                 {c.id ? (
                   <Link
                     href={`/teacher/classes/${c.id}`}
                     className="ml-2 text-emerald-600 hover:text-emerald-800"
                   >
-                    View
+                    Харах
                   </Link>
                 ) : null}
               </li>
@@ -571,22 +666,25 @@ export function AdminB2BOrganizationDetail({ organizationId }: Props) {
       </section>
 
       <section className="rounded-2xl bg-white p-5 ring-1 ring-slate-200">
-        <h2 className="font-semibold text-slate-900">Organization assignments</h2>
+        <h2 className="font-semibold text-slate-900">Байгууллагын даалгаврууд</h2>
         <ul className="mt-3 flex flex-col gap-2">
           {assignments.length === 0 ? (
-            <li className="text-sm text-slate-600">No assignments linked yet.</li>
+            <li className="text-sm text-slate-600">
+              Одоогоор холбогдсон даалгавар алга.
+            </li>
           ) : (
             assignments.map((a) => (
               <li
                 key={a.id}
                 className="rounded-lg bg-slate-50 px-3 py-2 text-sm"
               >
-                {a.title} · {a.classroomName ?? "classroom"} · {a.status}
+                {a.title} · {a.classroomName ?? "Анги"} ·{" "}
+                {ASSIGNMENT_STATUS_LABELS[a.status] ?? a.status}
                 <Link
                   href={`/teacher/assignments/${a.id}`}
                   className="ml-2 text-emerald-600 hover:text-emerald-800"
                 >
-                  View
+                  Харах
                 </Link>
               </li>
             ))
@@ -596,7 +694,7 @@ export function AdminB2BOrganizationDetail({ organizationId }: Props) {
 
       {relatedInquiries.length > 0 ? (
         <section className="rounded-2xl bg-white p-5 ring-1 ring-slate-200">
-          <h2 className="font-semibold text-slate-900">Related inquiries</h2>
+          <h2 className="font-semibold text-slate-900">Холбоотой хүсэлтүүд</h2>
           <ul className="mt-3 flex flex-col gap-2">
             {relatedInquiries.map((i) => (
               <li key={i.id}>
@@ -604,7 +702,8 @@ export function AdminB2BOrganizationDetail({ organizationId }: Props) {
                   href={`/admin/b2b/inquiries/${i.id}`}
                   className="text-sm text-emerald-600 hover:text-emerald-800"
                 >
-                  {i.organizationName} — {i.status} (
+                  {i.organizationName} —{" "}
+                  {INQUIRY_STATUS_LABELS[i.status] ?? i.status} (
                   {formatMongoliaDateTime(i.createdAt, "date")})
                 </Link>
               </li>

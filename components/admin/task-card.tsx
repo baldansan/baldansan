@@ -7,30 +7,30 @@ const severityStyles: Record<
 > = {
   critical: {
     badge: "bg-red-50 text-red-800 ring-red-200",
-    label: "Critical",
+    label: "Ноцтой",
   },
   warning: {
     badge: "bg-amber-50 text-amber-900 ring-amber-200",
-    label: "Warning",
+    label: "Анхааруулга",
   },
   info: {
     badge: "bg-sky-50 text-sky-800 ring-sky-200",
-    label: "Info",
+    label: "Мэдээлэл",
   },
   success: {
     badge: "bg-emerald-50 text-emerald-800 ring-emerald-200",
-    label: "Success",
+    label: "Амжилттай",
   },
 };
 
 const categoryLabels: Record<AdminTask["category"], string> = {
-  content: "Content",
-  qa: "QA",
-  media: "Media",
-  release: "Release",
-  analytics: "Analytics",
-  backup: "Backup",
-  system: "System",
+  content: "Контент",
+  qa: "Чанарын шалгалт",
+  media: "Медиа",
+  release: "Хувилбар",
+  analytics: "Тайлан",
+  backup: "Нөөц хуулбар",
+  system: "Систем",
   b2b: "B2B",
 };
 
@@ -54,7 +54,7 @@ export function TaskCard({ task }: Props) {
         </span>
         {task.lessonId ? (
           <span className="font-mono text-xs text-slate-500">
-            Lesson {task.lessonId}
+            Хичээл {task.lessonId}
             {task.lessonTitle ? ` · ${task.lessonTitle}` : ""}
           </span>
         ) : null}

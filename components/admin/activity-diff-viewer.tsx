@@ -16,9 +16,9 @@ export function ActivityDiffViewer({ activity, diff }: Props) {
   if (!result.hasDiff) {
     return (
       <section className="rounded-2xl bg-white p-4 shadow-sm ring-1 ring-slate-200 sm:p-5">
-        <h3 className="text-sm font-semibold text-slate-900">Field diff</h3>
+        <h3 className="text-sm font-semibold text-slate-900">Талбарын өөрчлөлт</h3>
         <p className="mt-2 text-sm text-slate-600">
-          No field-level diff available.
+          Талбар тус бүрийн өөрчлөлт бүртгэгдээгүй.
         </p>
       </section>
     );
@@ -26,23 +26,23 @@ export function ActivityDiffViewer({ activity, diff }: Props) {
 
   return (
     <section className="rounded-2xl bg-white p-4 shadow-sm ring-1 ring-slate-200 sm:p-5">
-      <h3 className="text-sm font-semibold text-slate-900">Field diff</h3>
+      <h3 className="text-sm font-semibold text-slate-900">Талбарын өөрчлөлт</h3>
       <p className="mt-1 text-xs text-slate-500">
-        Shallow comparison of before and after snapshots.
+        Өмнөх ба дараах хуулбарыг дээд түвшинд харьцуулав.
       </p>
 
       {result.changed.length > 0 ? (
         <div className="mt-4">
           <h4 className="text-xs font-semibold uppercase tracking-wide text-slate-500">
-            Changed
+            Өөрчлөгдсөн
           </h4>
           <div className="mt-2 overflow-x-auto">
             <table className="min-w-full text-left text-sm">
               <thead>
                 <tr className="border-b border-slate-200 text-xs text-slate-500">
-                  <th className="py-2 pr-4 font-semibold">Field</th>
-                  <th className="py-2 pr-4 font-semibold">Before</th>
-                  <th className="py-2 font-semibold">After</th>
+                  <th className="py-2 pr-4 font-semibold">Талбар</th>
+                  <th className="py-2 pr-4 font-semibold">Өмнө</th>
+                  <th className="py-2 font-semibold">Дараа</th>
                 </tr>
               </thead>
               <tbody>
@@ -68,7 +68,7 @@ export function ActivityDiffViewer({ activity, diff }: Props) {
       {result.added.length > 0 ? (
         <div className="mt-4">
           <h4 className="text-xs font-semibold uppercase tracking-wide text-slate-500">
-            Added fields
+            Нэмэгдсэн талбар
           </h4>
           <ul className="mt-2 space-y-1 text-sm text-slate-700">
             {result.added.map((row) => (
@@ -85,13 +85,13 @@ export function ActivityDiffViewer({ activity, diff }: Props) {
       {result.removed.length > 0 ? (
         <div className="mt-4">
           <h4 className="text-xs font-semibold uppercase tracking-wide text-slate-500">
-            Removed fields
+            Хасагдсан талбар
           </h4>
           <ul className="mt-2 space-y-1 text-sm text-slate-700">
             {result.removed.map((row) => (
               <li key={row.field}>
                 <span className="font-mono text-xs">{row.field}</span>
-                {" was "}
+                {" өмнө нь "}
                 {formatDiffValue(row.before)}
               </li>
             ))}
