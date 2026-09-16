@@ -234,7 +234,7 @@ async function mapWithConcurrency<Item, Result>(
 }
 
 /** How many lesson bundles to load at once. */
-const ADMIN_LESSON_FETCH_CONCURRENCY = 12;
+const ADMIN_LESSON_FETCH_CONCURRENCY = 24;
 
 async function buildQaReports(
   summaries: readonly LessonContent[]
