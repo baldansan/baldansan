@@ -22,7 +22,7 @@ export function DailyGoalCard({ summary }: Props) {
       met: summary.goalProgress.words.met,
     },
     {
-      label: "Quiz",
+      label: "Сорил",
       current: summary.goalProgress.quizzes.current,
       target: summary.goalProgress.quizzes.target,
       met: summary.goalProgress.quizzes.met,

@@ -25,7 +25,7 @@ type PracticeQuestion = {
 };
 
 const STAGE_LABELS: Record<string, string> = {
-  quiz: "Quiz",
+  quiz: "Сорил",
   word_practice: "Үгийн дасгал",
   mock_exam: "Мок шалгалт",
   grammar: "Дүрэм",

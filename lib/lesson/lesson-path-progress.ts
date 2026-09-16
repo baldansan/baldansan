@@ -35,8 +35,13 @@ function buildProgress(
     allStageIds.filter((id) => completedStageIds.includes(id))
   );
   const orderedCompleted = allStageIds.filter((id) => completedSet.has(id));
+  // lastStageId нь суралцагч хамгийн сүүлд ОРСОН үе. Түүнийг аль хэдийн
+  // дуусгасан бол «дараа нь хийх үе» болгож болохгүй — эс бөгөөс үлдсэн
+  // үеүүд бүгд түгжигдэж, хичээл дуусахгүй болно.
+  const openLast =
+    lastStageId && !completedSet.has(lastStageId) ? lastStageId : null;
   const nextIncomplete =
-    lastStageId ??
+    openLast ??
     allStageIds.find((id) => !completedSet.has(id)) ??
     null;
 
@@ -233,8 +238,18 @@ export function getLessonPathStageStatus(
 ): "completed" | "current" | "upcoming" {
   if (progress.completedStageIds.includes(stageId)) return "completed";
 
+  // ЧУХАЛ: lastStageId нь дуусгасан үе рүү заасан байвал түүнийг ТООЦОХГҮЙ.
+  // Өмнө нь тооцдог байсан тул суралцагч дуусгасан үеэ дахин нээмэгц
+  // дараагийн бүх үе «Эхлээд өмнөхөө дуусга» болж түгжигдэж, хичээлээ
+  // дуусгах боломжгүй болдог байв.
+  const lastOpen =
+    progress.lastStageId &&
+    !progress.completedStageIds.includes(progress.lastStageId)
+      ? progress.lastStageId
+      : null;
+
   const firstOpen =
-    progress.lastStageId ??
+    lastOpen ??
     allStageIds.find((id) => !progress.completedStageIds.includes(id)) ??
     allStageIds[0];
 

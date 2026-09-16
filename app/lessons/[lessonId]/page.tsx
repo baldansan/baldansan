@@ -206,7 +206,7 @@ export default async function LessonDetailPage({
         </MobileCard>
 
         <MobileCard padding="lg">
-          <h2 className="text-sm font-bold text-[var(--app-text)]">Quiz</h2>
+          <h2 className="text-sm font-bold text-[var(--app-text)]">Сорил</h2>
           <p className="mt-1 text-sm text-[var(--app-muted)]">
             {lesson.quizCount} quiz асуулт
           </p>

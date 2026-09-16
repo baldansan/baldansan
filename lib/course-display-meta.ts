@@ -58,6 +58,26 @@ export function courseDisplayTitle(
   return fallback ?? courseId;
 }
 
+/**
+ * Хичээлийн монгол нэрнээс «HSK1 1-р хичээл — » гэсэн угтварыг хасна.
+ *
+ * Өгөгдлийн санд нэр нь «HSK1 1-р хичээл — Сайн уу» гэж бүтнээрээ
+ * бичигдсэн байдаг. Дэлгэц дээр түвшин, дугаарыг нь тусад нь харуулдаг тул
+ * угтварыг хасахгүй бол «HSK1 · 1-р хичээл / HSK1 1-р хичээл — Сайн уу»
+ * гэж хоёр удаа давтагдаж харагдана.
+ *
+ * Угтвар олдохгүй бол нэрийг хэвээр нь буцаана — юу ч гээхгүй.
+ */
+const LESSON_TITLE_PREFIX =
+  /^\s*HSK\s*\d+\s*[·.]?\s*\d+\s*-?\s*р\s+хичээл\s*[—–-]\s*/iu;
+
+export function lessonDisplayTitleMn(title: string | null | undefined): string {
+  const text = (title ?? "").trim();
+  if (!text) return "";
+  const stripped = text.replace(LESSON_TITLE_PREFIX, "").trim();
+  return stripped || text;
+}
+
 /** Canonical one-line course description, or "" when there is nothing to say. */
 export function courseDisplaySubtitle(
   courseId: string,

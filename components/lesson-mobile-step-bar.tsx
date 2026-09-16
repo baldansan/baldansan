@@ -25,7 +25,7 @@ function buildSteps(contentType: ReturnType<typeof resolveLessonContentType>) {
     { id: "detail" as const, label: "Тойм" },
     { id: "watch" as const, label: watchLabel, subpath: "watch" as const },
     { id: "vocabulary" as const, label: "Үг", subpath: "vocabulary" as const },
-    { id: "quiz" as const, label: "Quiz", subpath: "quiz" as const },
+    { id: "quiz" as const, label: "Сорил", subpath: "quiz" as const },
   ];
 }
 

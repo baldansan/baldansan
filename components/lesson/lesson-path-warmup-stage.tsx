@@ -5,6 +5,7 @@ import PronunciationModule from "@/components/lesson/modules/PronunciationModule
 import { TemeeEmojiIcon } from "@/components/temee/temee-emoji-icon";
 import type { LessonPathPlan } from "@/lib/lesson/build-lesson-path";
 import type { HskLessonPackage } from "@/types/hsk-lesson-package";
+import { lessonDisplayTitleMn } from "@/lib/course-display-meta";
 
 type Props = {
   lesson: HskLessonPackage;
@@ -83,7 +84,8 @@ export function LessonPathWarmupStage({
           сурна 🌸
         </p>
         <p className="bs-tm-intro-bubble-sub">
-          «{lesson.title.mn}» — {lesson.level} {lesson.lesson_number}-р хичээл
+          «{lessonDisplayTitleMn(lesson.title.mn)}» — {lesson.level}{" "}
+          {lesson.lesson_number}-р хичээл
         </p>
       </div>
 

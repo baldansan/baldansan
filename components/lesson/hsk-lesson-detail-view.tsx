@@ -82,7 +82,7 @@ export function HskLessonDetailView({ lesson, adminPreview = false }: Props) {
       step: "3",
       href: quizHref,
       icon: "✓",
-      title: "Quiz",
+      title: "Сорил",
       desc: quizStepLabel ?? `${lesson.quizCount} асуулт`,
     },
     {

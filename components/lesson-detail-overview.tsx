@@ -122,7 +122,7 @@ export function LessonDetailOverview({
       step: "3",
       href: quizHref,
       icon: "✓",
-      title: "Quiz",
+      title: "Сорил",
       desc: `${lesson.quizCount} асуулт`,
     },
   ];
