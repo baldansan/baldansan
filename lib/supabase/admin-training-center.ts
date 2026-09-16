@@ -737,8 +737,10 @@ export async function getTrainingCenterOverview(
     const possible = linked.length * assignmentCount;
     const averageScore = mean(scores);
     const completionRate = rate(completed, possible);
+    // No recorded seconds is "not measured", not "studied for zero minutes" —
+    // learners who joined before the tracker shipped have no rows at all.
     const averageStudyMinutes =
-      studyMinutesUnavailable || linked.length === 0
+      studyMinutesUnavailable || linked.length === 0 || activeSeconds <= 0
         ? null
         : Math.round(activeSeconds / 60 / linked.length);
 
