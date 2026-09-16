@@ -62,14 +62,12 @@ export function CoursesListAppView({ courses }: Props) {
           {visibleCourses.map((course) => (
             <MobileCard key={course.id} padding="lg" className="!p-0 overflow-hidden">
               <div className="p-4">
-                <div
-                  className={
-                    course.coverUrl ? "flex items-start gap-3" : undefined
-                  }
-                >
-                  {course.coverUrl ? (
-                    <CourseCover src={course.coverUrl} alt={course.title} />
-                  ) : null}
+                <div className="flex items-start gap-3">
+                  <CourseCover
+                    src={course.coverUrl ?? ""}
+                    alt={course.title}
+                    label={course.title}
+                  />
                   <div className="min-w-0 flex-1">
                     <div className="flex items-start justify-between gap-2">
                       <h2 className="text-base font-bold text-[var(--app-text)]">
