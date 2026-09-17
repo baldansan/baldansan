@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="mn">
+<head>
+<meta charset="utf-8">
+<title>Бөөндөө Сурцгаая — танилцуулга</title>
+<link rel="stylesheet" href="fonts/nunito.css">
+<style>
+  :root{
+    --green:#1fb85a; --green-700:#149247; --green-800:#0f7338; --green-50:#eaf8f0; --green-100:#d6f1e0;
+    --amber:#f2a93b; --amber-50:#fdf4e5;
+    --ink:#0f1b14; --ink-2:#3c4a41; --muted:#7e8b83; --line:#e3e9e5; --bg:#f4f7f5;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{background:#fff}
+  body{width:1600px;font-family:"Nunito",system-ui,sans-serif;color:var(--ink);-webkit-font-smoothing:antialiased}
+  .zh{font-family:"Noto Sans CJK SC","Noto Sans CJK JP","Noto Sans CJK HK",sans-serif}
+  .poster{width:1600px;background:#fff;position:relative;overflow:hidden}
+
+  /* ---------------- толгой ---------------- */
+  .hero{position:relative;padding:64px 80px 56px;color:#fff;
+    background:linear-gradient(135deg,#1fb85a 0%,#149247 55%,#0f7338 100%);overflow:hidden}
+  .hero:before{content:"";position:absolute;right:-140px;top:-160px;width:520px;height:520px;border-radius:50%;background:rgba(255,255,255,.10)}
+  .hero:after{content:"";position:absolute;right:120px;bottom:-220px;width:380px;height:380px;border-radius:50%;background:rgba(255,255,255,.07)}
+  .hero-zh{position:absolute;right:88px;top:52px;font-size:150px;line-height:1;font-weight:900;color:rgba(255,255,255,.14);letter-spacing:6px;z-index:0}
+  .hero-inner{position:relative;z-index:1}
+  .brand{display:flex;align-items:center;gap:22px;margin-bottom:26px}
+  .logo{width:78px;height:78px;border-radius:22px;background:#fff;color:var(--green-700);display:grid;place-items:center;font-size:44px;font-weight:900;box-shadow:0 10px 30px rgba(0,0,0,.18)}
+  .brand h1{font-size:60px;font-weight:900;letter-spacing:-.5px;line-height:1.05}
+  .brand p{font-size:20px;font-weight:700;opacity:.9;margin-top:4px}
+  .tagline{font-size:34px;font-weight:800;line-height:1.35;max-width:1060px}
+  .tagline b{background:rgba(255,255,255,.18);padding:2px 12px;border-radius:12px}
+  .sub{margin-top:18px;font-size:20px;font-weight:600;opacity:.92;max-width:1000px;line-height:1.5}
+  .pill-row{display:flex;gap:12px;margin-top:26px;flex-wrap:wrap}
+  .pill{padding:10px 18px;border-radius:999px;background:rgba(255,255,255,.16);border:1.5px solid rgba(255,255,255,.35);font-size:17px;font-weight:800}
+
+  /* ---------------- тоонууд ---------------- */
+  .stats{display:grid;grid-template-columns:repeat(7,1fr);gap:0;margin:0 80px;transform:translateY(-34px);
+    background:#fff;border-radius:22px;box-shadow:0 18px 50px rgba(15,27,20,.12);border:1px solid var(--line);overflow:hidden}
+  .stat{padding:26px 14px 22px;text-align:center;border-right:1px solid var(--line)}
+  .stat:last-child{border-right:none}
+  .stat b{display:block;font-size:44px;font-weight:900;color:var(--green-700);line-height:1;letter-spacing:-1px}
+  .stat span{display:block;margin-top:8px;font-size:15px;font-weight:700;color:var(--ink-2);line-height:1.3}
+
+  /* ---------------- хэсгүүд ---------------- */
+  .section{padding:22px 80px 0}
+  .sec-title{display:flex;align-items:center;gap:14px;margin-bottom:22px}
+  .sec-title .n{width:42px;height:42px;border-radius:13px;background:var(--green);color:#fff;display:grid;place-items:center;font-size:22px;font-weight:900}
+  .sec-title h2{font-size:34px;font-weight:900;letter-spacing:-.3px}
+  .sec-title p{font-size:17px;font-weight:600;color:var(--muted);margin-left:auto}
+
+  .cols{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+  .card{background:var(--bg);border:1px solid var(--line);border-radius:22px;padding:26px 28px}
+  .card h3{font-size:24px;font-weight:900;margin-bottom:6px;display:flex;align-items:center;gap:10px}
+  .card h3 .tag{font-size:13px;font-weight:800;padding:4px 10px;border-radius:999px;background:var(--green-100);color:var(--green-800);letter-spacing:.04em;text-transform:uppercase}
+  .card .lead{font-size:16px;color:var(--muted);font-weight:600;margin-bottom:16px}
+  .feat{display:grid;grid-template-columns:1fr 1fr;gap:12px 18px}
+  .feat li{list-style:none;display:flex;gap:11px;align-items:flex-start;font-size:17px;line-height:1.4;font-weight:600;color:var(--ink-2)}
+  .feat li i{flex-shrink:0;width:30px;height:30px;border-radius:9px;background:#fff;border:1px solid var(--line);display:grid;place-items:center;font-style:normal;font-size:16px}
+  .feat li b{color:var(--ink);font-weight:800}
+
+  /* ---------------- хичээлийн урсгал ---------------- */
+  .flow{margin-top:24px;background:#fff;border:1px solid var(--line);border-radius:22px;padding:22px 26px}
+  .flow-head{display:flex;align-items:baseline;gap:14px;margin-bottom:16px}
+  .flow-head h3{font-size:21px;font-weight:900}
+  .flow-head p{font-size:15px;font-weight:600;color:var(--muted)}
+  .steps{display:flex;align-items:stretch;gap:0}
+  .step{flex:1;position:relative;padding:14px 10px 12px 14px;border-radius:14px;background:var(--green-50);border:1px solid var(--green-100);margin-right:18px}
+  .step:last-child{margin-right:0}
+  .step:not(:last-child):after{content:"›";position:absolute;right:-16px;top:50%;transform:translateY(-50%);font-size:26px;font-weight:900;color:var(--green)}
+  .step .k{font-size:12px;font-weight:900;color:var(--green-700);letter-spacing:.06em}
+  .step .t{font-size:17px;font-weight:900;margin-top:2px}
+  .step .d{font-size:13px;font-weight:600;color:var(--ink-2);margin-top:4px;line-height:1.35}
+
+  /* ---------------- давуу тал ---------------- */
+  .adv{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  .adv .a{position:relative;background:#fff;border:1.5px solid var(--line);border-radius:22px;padding:26px 26px 24px;min-height:210px}
+  .adv .a .num{position:absolute;top:18px;right:22px;font-size:54px;font-weight:900;color:var(--green-50);line-height:1}
+  .adv .a .ic{width:52px;height:52px;border-radius:15px;display:grid;place-items:center;font-size:26px;background:var(--green-50);margin-bottom:14px}
+  .adv .a h4{font-size:22px;font-weight:900;line-height:1.25;margin-bottom:8px;letter-spacing:-.2px}
+  .adv .a p{font-size:15.5px;line-height:1.5;color:var(--ink-2);font-weight:600}
+  .adv .a p b{color:var(--green-800);font-weight:800}
+
+  /* ---------------- HSK1 highlight ---------------- */
+  .hsk1{margin-top:24px;display:grid;grid-template-columns:1.1fr 2fr;gap:0;border-radius:22px;overflow:hidden;border:1px solid var(--line)}
+  .hsk1 .l{background:var(--ink);color:#fff;padding:28px 30px}
+  .hsk1 .l .eyebrow{font-size:13px;font-weight:900;letter-spacing:.1em;text-transform:uppercase;color:#7ee2a4}
+  .hsk1 .l h3{font-size:30px;font-weight:900;line-height:1.15;margin-top:8px}
+  .hsk1 .l p{margin-top:12px;font-size:16px;line-height:1.55;opacity:.85;font-weight:600}
+  .hsk1 .r{background:var(--amber-50);padding:24px 30px;display:grid;grid-template-columns:repeat(4,1fr);gap:14px;align-content:center}
+  .hsk1 .r .m b{display:block;font-size:40px;font-weight:900;color:#b45309;line-height:1}
+  .hsk1 .r .m span{display:block;margin-top:6px;font-size:14px;font-weight:700;color:#7c4a12;line-height:1.35}
+  .hsk1 .r .foot{grid-column:1/-1;margin-top:6px;font-size:15px;font-weight:700;color:#7c4a12;border-top:1px solid #f1dfbf;padding-top:12px}
+
+  /* ---------------- хөл ---------------- */
+  .footer{margin-top:34px;padding:34px 80px 44px;background:var(--bg);border-top:1px solid var(--line);display:flex;align-items:center;gap:34px}
+  .footer .qr{width:150px;height:150px;background:#fff;border:1px solid var(--line);border-radius:18px;padding:12px}
+  .footer .qr svg{width:100%;height:100%}
+  .footer .f-body{flex:1}
+  .footer .url{font-size:36px;font-weight:900;color:var(--green-700);letter-spacing:-.3px}
+  .footer .f-sub{font-size:17px;font-weight:600;color:var(--ink-2);margin-top:8px;line-height:1.5;max-width:900px}
+  .footer .who{text-align:right}
+  .footer .who b{display:block;font-size:20px;font-weight:900}
+  .footer .who span{display:block;font-size:15px;font-weight:600;color:var(--muted);margin-top:4px;line-height:1.4}
+</style>
+</head>
+<body>
+<div class="poster">
+
+  <!-- ===================== ТОЛГОЙ ===================== -->
+  <header class="hero">
+    <div class="hero-zh zh">学习</div>
+    <div class="hero-inner">
+      <div class="brand">
+        <div class="logo">Б</div>
+        <div>
+          <h1>Бөөндөө Сурцгаая</h1>
+          <p>Монгол хүнд зориулсан хятад хэлний (HSK) сургалтын апп</p>
+        </div>
+      </div>
+      <p class="tagline">Албан ёсны <b>HSK Standard Course</b> сурах бичгийг бүтнээр нь монгол хэлээр, утсан дээр — багш, сургалтын төвийн хэрэгслийн хамт.</p>
+      <p class="sub">Хятадтай өдөр бүр ажилладаг Буундуу Каргогийн (2019 оноос, 37 салбар) дотоод хэрэгцээнээс төрсөн.
+        Англи хэлээр дамжуулж биш, монгол хэлний өнцгөөс тайлбарладаг.</p>
+      <div class="pill-row">
+        <span class="pill">HSK 1–6</span>
+        <span class="pill">HSK 3.0 дүрэм</span>
+        <span class="pill">Утас + компьютер</span>
+        <span class="pill">Офлайн ажиллана</span>
+        <span class="pill">Бүгд монголоор</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================== ТООНУУД ===================== -->
+  <section class="stats">
+    <div class="stat"><b>6</b><span>HSK курс<br>(1–6 түвшин)</span></div>
+    <div class="stat"><b>68</b><span>Бүтэн<br>хичээл</span></div>
+    <div class="stat"><b>1,716</b><span>Хичээлийн үг<br>аудио, жишээтэй</span></div>
+    <div class="stat"><b>10,057</b><span>Толь бичгийн үг<br>HSK 1–9</span></div>
+    <div class="stat"><b>10</b><span>Загвар шалгалт<br>862 асуулт</span></div>
+    <div class="stat"><b>854</b><span>Асуултын<br>монгол тайлбар</span></div>
+    <div class="stat"><b>20</b><span>Дасгалын<br>тоглоом</span></div>
+  </section>
+
+  <!-- ===================== 1. ЮУ ХИЙЖ ЧАДАХ ВЭ ===================== -->
+  <section class="section" style="padding-top:0">
+    <div class="sec-title">
+      <span class="n">1</span>
+      <h2>Бид юу хийж чадах вэ</h2>
+      <p>Бүгд өнөөдөр ажиллаж байгаа функцууд</p>
+    </div>
+
+    <div class="cols">
+      <div class="card">
+        <h3>Суралцагчид <span class="tag">B2C</span></h3>
+        <p class="lead">Номоо дагаад сурна, алдсанаа мартахгүй</p>
+        <ul class="feat">
+          <li><i>📚</i><span><b>7 үет хичээл</b> — зорилго, үг, эх, дүрэм, дасгал, сорил, дүгнэлт</span></li>
+          <li><i>✍️</i><span><b>Ханз бичих</b> — зурлагын дараалал, гараар бичиж шалгуулна</span></li>
+          <li><i>🔁</i><span><b>Давталт (SRS)</b> — алдсан үг өөрөө эргэж гарч ирнэ</span></li>
+          <li><i>❌</i><span><b>Алдааны дэвтэр</b> — алдсан асуулт бүр хадгалагдана</span></li>
+          <li><i>📉</i><span><b>Миний сул тал</b> — дүрэм, үг, сонсгол алинд нь алдаж байгааг задална</span></li>
+          <li><i>📝</i><span><b>Загвар шалгалт 3 горим</b> — жинхэнэ, дадлага, «сурах» (шууд тайлбартай)</span></li>
+          <li><i>🎧</i><span><b>Сонсгол</b> — 415 асуулт бүр өөрийн аудио хэсэгтэй</span></li>
+          <li><i>🎮</i><span><b>20 тоглоом</b> — өдрийн сорилт, хурд, сонсох, орчуулах</span></li>
+          <li><i>📖</i><span><b>Толь бичиг</b> — 10,057 үг, ханз задаргаа, гар бичмэл таних</span></li>
+          <li><i>📅</i><span><b>Сурах төлөвлөгөө</b>, 7 хоногийн тайлан, өдрийн зорилт</span></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Багш, сургалтын төвд <span class="tag">B2B</span></h3>
+        <p class="lead">Анги бүрийг нэг дэлгэцнээс удирдана</p>
+        <ul class="feat">
+          <li><i>🏫</i><span><b>Анги удирдах</b> — сурагч урих, импортлох; танхим / онлайн</span></li>
+          <li><i>📤</i><span><b>Даалгавар</b> — бэлэн хичээл илгээх, эсвэл өөрийн PDF, аудио, зураг хавсаргах</span></li>
+          <li><i>🎯</i><span><b>Сурагчид зориулсан даалгавар</b> — тухайн хүүхдийн сул талд тохируулж</span></li>
+          <li><i>🗓️</i><span><b>Ирц</b> бүртгэл</span></li>
+          <li><i>🧪</i><span><b>Ангийн шалгалт</b> товлох — загвар шалгалтаас</span></li>
+          <li><i>🅰️</i><span><b>A–F дүн</b> — дасгал, шалгалт, дуусгалт, идэвх 4 үзүүлэлтээр автоматаар</span></li>
+          <li><i>🔍</i><span><b>Сурагч бүрийн сул тал</b> — багш хэн юунд алдаж байгааг хардаг</span></li>
+          <li><i>📊</i><span><b>Ангийн тайлан</b>, сургалтын төвийн тойм</span></li>
+          <li><i>🏅</i><span><b>Сертификат</b> хэвлэх</span></li>
+          <li><i>🛠️</i><span><b>Админ 40 хуудас</b> — агуулга, чанарын шалгалт, аналитик, бүгд монголоор</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="flow">
+      <div class="flow-head">
+        <h3>Нэг хичээл хэрхэн явагддаг вэ</h3>
+        <p>~29 минут · сурах бичгийн дараалал хэвээр</p>
+      </div>
+      <div class="steps">
+        <div class="step"><div class="k">1-Р ҮЕ</div><div class="t">Зорилго</div><div class="d">Юу сурах, дуудлагын халаалт</div></div>
+        <div class="step"><div class="k">2-Р ҮЕ</div><div class="t">Шинэ үгс</div><div class="d">Карт, аудио, ханз бичих</div></div>
+        <div class="step"><div class="k">3-Р ҮЕ</div><div class="t">Эх бичвэр</div><div class="d">Яриа, үг бүрийг дарж үзэх</div></div>
+        <div class="step"><div class="k">4-Р ҮЕ</div><div class="t">Дүрэм</div><div class="d">Алхам алхмаар, дасгалтай</div></div>
+        <div class="step"><div class="k">5-Р ҮЕ</div><div class="t">Дасгал</div><div class="d">Сурах бичгийн 60 хүртэл дасгал</div></div>
+        <div class="step"><div class="k">6-Р ҮЕ</div><div class="t">Сорил</div><div class="d">Алдаа дэвтэрт орно</div></div>
+        <div class="step"><div class="k">7-Р ҮЕ</div><div class="t">Дүгнэлт</div><div class="d">Өнөөдрийн олз, дараагийн хичээл</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 2. ДАВУУ ТАЛ ===================== -->
+  <section class="section" style="padding-top:34px">
+    <div class="sec-title">
+      <span class="n">2</span>
+      <h2>Бидний давуу тал</h2>
+      <p>Бусад аппаас юугаараа ялгаатай вэ</p>
+    </div>
+
+    <div class="adv">
+      <div class="a"><div class="num">01</div><div class="ic">🇲🇳</div>
+        <h4>Монгол хүнд зориулж бичсэн</h4>
+        <p>Англи хэлээр дамжуулахгүй. <b>Монгол хэлтэй харьцуулж</b> тайлбарлана: «монголд нөхцөл залгадаг бол хятадад үгийн дараалал шийднэ». Duolingo, HelloChinese-д монгол хэл байхгүй.</p></div>
+      <div class="a"><div class="num">02</div><div class="ic">📘</div>
+        <h4>Албан ёсны сурах бичгийн дагуу</h4>
+        <p>HSK Standard Course 1–6-ийн хичээл бүр, дасгал бүр. <b>Их сургууль, сургалтын төвийн хөтөлбөртэй шууд нийцнэ</b> — багш номоо орхихгүй, апп нь номыг дагана.</p></div>
+      <div class="a"><div class="num">03</div><div class="ic">💡</div>
+        <h4>Алдааг тайлбарладаг</h4>
+        <p>Зөвхөн ✓ / ✗ биш. Шалгалтын 854 асуулт, дүрмийн дасгал бүр <b>«яагаад энэ хариулт зөв бэ»</b> гэдгийг монголоор хэлдэг — хариулсан даруйд.</p></div>
+      <div class="a"><div class="num">04</div><div class="ic">🔁</div>
+        <h4>Алдсанаа мартуулахгүй</h4>
+        <p>Давталт, алдааны дэвтэр, сул талын задаргаа <b>хоорондоо холбоотой</b>: алдсан үг дараагийн давталтад өөрөө гарч ирнэ, багш нь ч хардаг.</p></div>
+      <div class="a"><div class="num">05</div><div class="ic">👩‍🏫</div>
+        <h4>Багшид зориулсан бүрэн хэрэгсэл</h4>
+        <p>Анги, даалгавар, ирц, шалгалт, A–F дүн, тайлан, сертификат. <b>Сурагч бүрийн сул талыг хараад зориулсан даалгавар</b> өгнө — 12 ангитай төвд ч, нэг багшид ч.</p></div>
+      <div class="a"><div class="num">06</div><div class="ic">🚚</div>
+        <h4>Хэрэгцээг нь мэддэг компани хийсэн</h4>
+        <p>Буундуу Карго <b>2019 оноос Хятадтай өдөр бүр</b> ажилладаг, 37 салбартай. Хэл яагаад хэрэгтэйг ажил дээрээ мэддэг тул апп нь бодит хэрэгцээнд зориулагдсан.</p></div>
+    </div>
+
+    <div class="hsk1">
+      <div class="l">
+        <div class="eyebrow">Суурь түвшинд онцгой анхаарал</div>
+        <h3>HSK1 — хичээл бүрийг гүнзгий заана</h3>
+        <p>Анхлан суралцагч юуг ч «мэднэ байлгүй» гэж алгасахгүй. Үг бүр, дүрэм бүр, ханз бүрийг багш шиг тайлбарлаж, шууд шалгуулна.</p>
+      </div>
+      <div class="r">
+        <div class="m"><b>167</b><span>үг — тайлбар, хэрэглээ, 3–5 жишээ, алдаа</span></div>
+        <div class="m"><b>75</b><span>дүрэм — алхам алхмаар, дасгалтай</span></div>
+        <div class="m"><b>52</b><span>ханз — язгуур, бүтэц, андуурч болох ханз</span></div>
+        <div class="m"><b>45</b><span>дуудлагын дасгал — ойролцоо хос</span></div>
+        <div class="foot">Нийт 956 жишээ өгүүлбэр · 290 «түгээмэл алдаа» тэмдэглэл · жишээ бүр зөвхөн сурсан үгсээр</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ХӨЛ ===================== -->
+  <footer class="footer">
+    <div class="qr">__QR__</div>
+    <div class="f-body">
+      <div class="url">baldansan.vercel.app</div>
+      <div class="f-sub">Утаснаасаа нээгээд «Нүүр дэлгэцэнд нэмэх» — апп шиг суулгагдана. Сургалтын төв, их сургуулийн ангийг холбоход бид тусална.</div>
+    </div>
+    <div class="who">
+      <b>Буундуу Карго</b>
+      <span>Хятад–Монгол ложистик, 2019 оноос<br>Улаанбаатар</span>
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>
