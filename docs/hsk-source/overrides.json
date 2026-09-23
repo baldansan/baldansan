@@ -36,5 +36,12 @@
   "extra_starts": [
    168
   ]
+ },
+ "HSK_Standard_Course_5A_Teacher_39_s_Book": {
+  "first_start": 5
+ },
+ "HSK_Standard_Course_5B_Teacher_39_s_Book": {
+  "first_start": 5,
+  "first_lesson": 19
  }
 }

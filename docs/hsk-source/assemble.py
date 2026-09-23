@@ -84,7 +84,7 @@ def teacher_appendix_start(files):
             return n
     return None
 
-def teacher_lesson_starts(files):
+def teacher_lesson_starts(files, book=None):
     """Багшийн ном: хичээл бүр «教学目标»-аар эхэлж, «本课小结»-ээр төгсдөг. Хоёр
     дохиог нэгтгэнэ (OCR аль нэгийг алгасаж болно), гарчиг/өмнөх үгийн хуудсыг хасна."""
     app = teacher_appendix_start(files) or 10**6
@@ -97,7 +97,17 @@ def teacher_lesson_starts(files):
             continue
         if "教学目标" in t: goals.append(n)
         if "本课小结" in t: summaries.append(n)
-    if not goals: return []
+    if not goals or (book and OVERRIDES.get(book, {}).get("first_start")):
+        # HSK5 багшийн ном: «教学目标» байхгүй, хичээл бүр «小结与布置作业»-аар төгсдөг.
+        # Эхлэл = өмнөх хичээлийн 小结 + 1; 1-р хичээлийн эхлэл overrides.first_start (гарчгийн зураг хуудас).
+        first = int(OVERRIDES.get(book, {}).get("first_start", 0)) if book else 0
+        summ = []
+        for f in files:
+            n = int(re.search(r"p(\d+)\.txt$", f).group(1))
+            if n >= app or n < first: continue
+            if re.search(r"小结与布置作业|布置作业", open(f, encoding="utf-8", errors="replace").read()): summ.append(n)
+        if not first or not summ: return []
+        return [first] + [x + 1 for x in summ[:-1]]
     first = goals[0]
     # сүүлийн 小结-ийн дараа хичээл байхгүй — түүнийг эхлэл болгохгүй
     cands = sorted(set(goals) | set(x + 1 for x in summaries[:-1] if x + 1 > first))
@@ -128,7 +138,7 @@ def lesson_starts(book, files):
     if book in OVERRIDES and OVERRIDES[book].get("starts"):
         return [int(x) for x in OVERRIDES[book]["starts"]]
     if "Teacher" in book:
-        st = teacher_lesson_starts(files)
+        st = teacher_lesson_starts(files, book)
         extra = OVERRIDES.get(book, {}).get("extra_starts", [])
         excl = set(int(x) for x in OVERRIDES.get(book, {}).get("exclude_starts", []))
         return sorted((set(st) | set(int(x) for x in extra)) - excl)
