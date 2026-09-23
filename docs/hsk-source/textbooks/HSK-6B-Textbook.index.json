@@ -1,0 +1,128 @@
+{
+ "book": "HSK-6B-Textbook",
+ "pages": 256,
+ "printed_offset": 15,
+ "expected_lessons": 20,
+ "lessons": [
+  {
+   "lesson": 21,
+   "start_page": 17,
+   "end_page": 25,
+   "printed_page": 2
+  },
+  {
+   "lesson": 22,
+   "start_page": 26,
+   "end_page": 35,
+   "printed_page": 11
+  },
+  {
+   "lesson": 23,
+   "start_page": 36,
+   "end_page": 44,
+   "printed_page": 21
+  },
+  {
+   "lesson": 24,
+   "start_page": 45,
+   "end_page": 54,
+   "printed_page": 30
+  },
+  {
+   "lesson": 25,
+   "start_page": 55,
+   "end_page": 64,
+   "printed_page": 40
+  },
+  {
+   "lesson": 26,
+   "start_page": 65,
+   "end_page": 73,
+   "printed_page": 50
+  },
+  {
+   "lesson": 27,
+   "start_page": 74,
+   "end_page": 83,
+   "printed_page": 59
+  },
+  {
+   "lesson": 28,
+   "start_page": 84,
+   "end_page": 94,
+   "printed_page": 69
+  },
+  {
+   "lesson": 29,
+   "start_page": 95,
+   "end_page": 105,
+   "printed_page": 80
+  },
+  {
+   "lesson": 30,
+   "start_page": 106,
+   "end_page": 114,
+   "printed_page": 91
+  },
+  {
+   "lesson": 31,
+   "start_page": 115,
+   "end_page": 124,
+   "printed_page": 100
+  },
+  {
+   "lesson": 32,
+   "start_page": 125,
+   "end_page": 136,
+   "printed_page": 110
+  },
+  {
+   "lesson": 33,
+   "start_page": 137,
+   "end_page": 145,
+   "printed_page": 122
+  },
+  {
+   "lesson": 34,
+   "start_page": 146,
+   "end_page": 156,
+   "printed_page": 131
+  },
+  {
+   "lesson": 35,
+   "start_page": 157,
+   "end_page": 167,
+   "printed_page": 142
+  },
+  {
+   "lesson": 36,
+   "start_page": 168,
+   "end_page": 178,
+   "printed_page": 153
+  },
+  {
+   "lesson": 37,
+   "start_page": 179,
+   "end_page": 189,
+   "printed_page": 164
+  },
+  {
+   "lesson": 38,
+   "start_page": 190,
+   "end_page": 200,
+   "printed_page": 175
+  },
+  {
+   "lesson": 39,
+   "start_page": 201,
+   "end_page": 210,
+   "printed_page": 186
+  },
+  {
+   "lesson": 40,
+   "start_page": 211,
+   "end_page": 256,
+   "printed_page": 196
+  }
+ ]
+}

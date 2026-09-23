@@ -1,0 +1,40 @@
+{
+ "HSK-1-Textbook": {
+  "extra_starts": [
+   22,
+   28
+  ]
+ },
+ "HSK-3-Textbook": {
+  "exclude_starts": [
+   7
+  ]
+ },
+ "HSK-4B-Textbook": {
+  "exclude_starts": [
+   10
+  ],
+  "first_lesson": 11
+ },
+ "HSK-5B-Textbook": {
+  "first_lesson": 19
+ },
+ "HSK-6B-Textbook": {
+  "first_lesson": 21,
+  "exclude_starts": [
+   9,
+   49
+  ],
+  "extra_starts": [
+   157
+  ]
+ },
+ "HSK-6A-Textbook": {
+  "exclude_starts": [
+   7
+  ],
+  "extra_starts": [
+   168
+  ]
+ }
+}

@@ -1,0 +1,68 @@
+{
+ "book": "HSK-4A-Textbook",
+ "pages": 153,
+ "printed_offset": 9,
+ "expected_lessons": 10,
+ "lessons": [
+  {
+   "lesson": 1,
+   "start_page": 11,
+   "end_page": 22,
+   "printed_page": 2
+  },
+  {
+   "lesson": 2,
+   "start_page": 23,
+   "end_page": 34,
+   "printed_page": 14
+  },
+  {
+   "lesson": 3,
+   "start_page": 35,
+   "end_page": 48,
+   "printed_page": 26
+  },
+  {
+   "lesson": 4,
+   "start_page": 49,
+   "end_page": 60,
+   "printed_page": 40
+  },
+  {
+   "lesson": 5,
+   "start_page": 61,
+   "end_page": 74,
+   "printed_page": 52
+  },
+  {
+   "lesson": 6,
+   "start_page": 75,
+   "end_page": 86,
+   "printed_page": 66
+  },
+  {
+   "lesson": 7,
+   "start_page": 87,
+   "end_page": 98,
+   "printed_page": 78
+  },
+  {
+   "lesson": 8,
+   "start_page": 99,
+   "end_page": 110,
+   "printed_page": 90
+  },
+  {
+   "lesson": 9,
+   "start_page": 111,
+   "end_page": 124,
+   "printed_page": 102
+  },
+  {
+   "lesson": 10,
+   "start_page": 125,
+   "end_page": 153,
+   "printed_page": 116
+  }
+ ]
+}

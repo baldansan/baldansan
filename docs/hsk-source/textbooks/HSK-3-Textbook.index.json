@@ -1,0 +1,128 @@
+{
+ "book": "HSK-3-Textbook",
+ "pages": 209,
+ "printed_offset": 16,
+ "expected_lessons": 20,
+ "lessons": [
+  {
+   "lesson": 1,
+   "start_page": 17,
+   "end_page": 26,
+   "printed_page": 1
+  },
+  {
+   "lesson": 2,
+   "start_page": 27,
+   "end_page": 35,
+   "printed_page": 11
+  },
+  {
+   "lesson": 3,
+   "start_page": 36,
+   "end_page": 44,
+   "printed_page": 20
+  },
+  {
+   "lesson": 4,
+   "start_page": 45,
+   "end_page": 52,
+   "printed_page": 29
+  },
+  {
+   "lesson": 5,
+   "start_page": 53,
+   "end_page": 61,
+   "printed_page": 37
+  },
+  {
+   "lesson": 6,
+   "start_page": 62,
+   "end_page": 70,
+   "printed_page": 46
+  },
+  {
+   "lesson": 7,
+   "start_page": 71,
+   "end_page": 79,
+   "printed_page": 55
+  },
+  {
+   "lesson": 8,
+   "start_page": 80,
+   "end_page": 87,
+   "printed_page": 64
+  },
+  {
+   "lesson": 9,
+   "start_page": 88,
+   "end_page": 96,
+   "printed_page": 72
+  },
+  {
+   "lesson": 10,
+   "start_page": 97,
+   "end_page": 105,
+   "printed_page": 81
+  },
+  {
+   "lesson": 11,
+   "start_page": 106,
+   "end_page": 113,
+   "printed_page": 90
+  },
+  {
+   "lesson": 12,
+   "start_page": 114,
+   "end_page": 122,
+   "printed_page": 98
+  },
+  {
+   "lesson": 13,
+   "start_page": 123,
+   "end_page": 131,
+   "printed_page": 107
+  },
+  {
+   "lesson": 14,
+   "start_page": 132,
+   "end_page": 140,
+   "printed_page": 116
+  },
+  {
+   "lesson": 15,
+   "start_page": 141,
+   "end_page": 150,
+   "printed_page": 125
+  },
+  {
+   "lesson": 16,
+   "start_page": 151,
+   "end_page": 158,
+   "printed_page": 135
+  },
+  {
+   "lesson": 17,
+   "start_page": 159,
+   "end_page": 166,
+   "printed_page": 143
+  },
+  {
+   "lesson": 18,
+   "start_page": 167,
+   "end_page": 174,
+   "printed_page": 151
+  },
+  {
+   "lesson": 19,
+   "start_page": 175,
+   "end_page": 183,
+   "printed_page": 159
+  },
+  {
+   "lesson": 20,
+   "start_page": 184,
+   "end_page": 209,
+   "printed_page": 168
+  }
+ ]
+}
