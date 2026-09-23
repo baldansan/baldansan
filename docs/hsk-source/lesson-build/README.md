@@ -54,3 +54,11 @@ npx tsx scripts/validate-lesson-zip.mts ../hskN-lNN.zip   # errors: [] байх 
 
 `/admin/import/chinese` → zip → preview (20 үг, 24 сорил, 9 аудио) → импорт.
 Хичээл `draft` төлөвтэй орно — хараад `available`/`published` болго.
+
+## 6. Автоматжуулсан дамжлага (L03–L05-д ашигласан)
+
+1. `prep.py N` — сурах бичиг/багшийн ном/хавсралтын текстийг корпусоос тасалж, дасгалын номын хуудсыг OCR хийж, зургуудыг гаргаж, аудиог хувааж (`L0N/prep.json`-д тайлан) бэлтгэнэ.
+2. `FACTSHEET-TASK.md` → 1 агент (opus) зургуудыг харж `INSTRUCTIONS-L0N.md` баримтын хуудас бичнэ (үг, яриа, дүрэм, дасгалын хариулт).
+3. `AGENT-TEXTS.md` + `AGENT-GRAMMAR.md` (зэрэг) → дараа `AGENT-WORKBOOK.md` (texts.json-оос хөрвүүлж, vocabulary орчуулгыг нийцүүлнэ).
+4. `check.py N` (нийцлийн шалгалт) → zip → `npx tsx scripts/validate-lesson-zip.mts`.
+Хичээл бүрт ~1 цаг, ~1.2M агентын токен.
