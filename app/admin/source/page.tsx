@@ -27,8 +27,8 @@ export default async function AdminSourcePage() {
 
       {rows.length === 0 ? (
         <p className="rounded-xl border border-dashed border-slate-300 bg-white p-6 text-sm text-slate-600">
-          Одоогоор эх сурвалж ороогүй байна. <code>supabase/content/006_hsk3_source_lessons.sql</code>-ийг
-          Supabase SQL editor дээр ажиллуулна.
+          Одоогоор эх сурвалж ороогүй байна. Эхлээд <code>supabase/migrations/062_hsk_source_lessons.sql</code>,
+          дараа нь <code>supabase/content/006…011_*_source_lessons.sql</code> файлуудыг Supabase SQL editor дээр ажиллуулна.
         </p>
       ) : null}
 
