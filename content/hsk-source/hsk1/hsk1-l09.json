@@ -1,0 +1,1707 @@
+{
+ "level": "hsk1",
+ "lesson": 9,
+ "book": "HSK1",
+ "title_zh": "你儿子在哪儿工作",
+ "title_pinyin": "Nǐ érzi zài nǎr gōngzuò",
+ "title_en": "Where does your son work",
+ "textbook": {
+  "ref": {
+   "book": "textbook",
+   "pages": [
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91
+   ]
+  },
+  "warmup": [
+   {
+    "instruction_zh": "给下面的词语选择对应的图片",
+    "instruction_en": "Match the pictures with the words.",
+    "items": [
+     "①爸爸 bàba",
+     "②医生 yīshēng",
+     "③医院 yīyuàn",
+     "④椅子 yǐzi",
+     "⑤猫 māo",
+     "⑥狗 gǒu"
+    ],
+    "pictures_desc_en": [
+     "A: a grey tabby cat lying down",
+     "B: a yellow Labrador dog lying down with its tongue out",
+     "C: a wooden chair",
+     "D: a hospital ward with a bed",
+     "E: a woman doctor with glasses and a stethoscope sitting at a desk",
+     "F: a smiling man with a boy hugging him from behind"
+    ]
+   }
+  ],
+  "pronunciation": [
+   {
+    "title_zh": "双音节词语的声调搭配（4）：四声和各声调的搭配",
+    "rows": [
+     "miànbāo 面包",
+     "miàntiáo 面条",
+     "diànnǎo 电脑",
+     "diànhuà 电话"
+    ],
+    "notes_zh": [
+     "［声调模式图：4+1、4+2、4+3、4+4；配图：面包、面条、电脑、电话］"
+    ],
+    "notes_en": [
+     "Tone Collocation in Disyllabic Words (4): 4th tone + 1st/2nd/3rd/4th tone"
+    ]
+   },
+   {
+    "title_zh": "双音节词语的声调搭配（4）——听录音并跟读，注意声调的搭配",
+    "rows": [
+     "xiàtiān　qùnián　tiào wǔ　shuì jiào",
+     "diàndēng　diànchí　diànyǐng　diànshì",
+     "chàng gē　fùxí　Hànyǔ　Hànzì",
+     "jiànkāng　dìtú　dìtiě　jiàn miàn"
+    ],
+    "notes_zh": [
+     "听录音并跟读，注意声调的搭配（09-4）"
+    ],
+    "notes_en": [
+     "Listen to the recording and read after it. Pay attention to the collocation of tones."
+    ]
+   }
+  ],
+  "texts": [
+   {
+    "n": 1,
+    "title_zh": "在家",
+    "title_en": "At home",
+    "kind": "dialogue",
+    "lines": [
+     {
+      "speaker": "A",
+      "zh": "小猫在哪儿？",
+      "pinyin": "Xiǎo māo zài nǎr?"
+     },
+     {
+      "speaker": "B",
+      "zh": "小猫在那儿。",
+      "pinyin": "Xiǎo māo zài nàr."
+     },
+     {
+      "speaker": "A",
+      "zh": "小狗在哪儿？",
+      "pinyin": "Xiǎo gǒu zài nǎr?"
+     },
+     {
+      "speaker": "B",
+      "zh": "小狗在椅子下面。",
+      "pinyin": "Xiǎo gǒu zài yǐzi xiàmiàn."
+     }
+    ],
+    "english_version": "A: Where is the kitty?\nB: The kitty is over there.\nA: Where is the puppy?\nB: The puppy is under the chair.",
+    "new_words": [
+     {
+      "n": 1,
+      "zh": "小",
+      "pinyin": "xiǎo",
+      "pos": "adj.",
+      "en": "small, little",
+      "text": 1
+     },
+     {
+      "n": 2,
+      "zh": "猫",
+      "pinyin": "māo",
+      "pos": "n.",
+      "en": "cat",
+      "text": 1
+     },
+     {
+      "n": 3,
+      "zh": "在",
+      "pinyin": "zài",
+      "pos": "v.",
+      "en": "to be in/on/at",
+      "text": 1
+     },
+     {
+      "n": 4,
+      "zh": "那儿",
+      "pinyin": "nàr",
+      "pos": "pron.",
+      "en": "there",
+      "text": 1
+     },
+     {
+      "n": 5,
+      "zh": "狗",
+      "pinyin": "gǒu",
+      "pos": "n.",
+      "en": "dog",
+      "text": 1
+     },
+     {
+      "n": 6,
+      "zh": "椅子",
+      "pinyin": "yǐzi",
+      "pos": "n.",
+      "en": "chair",
+      "text": 1
+     },
+     {
+      "n": 7,
+      "zh": "下面（下）",
+      "pinyin": "xiàmiàn(xià)",
+      "pos": "n.",
+      "en": "under, below",
+      "text": 1
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "title_zh": "在车站",
+    "title_en": "At the railway station",
+    "kind": "dialogue",
+    "lines": [
+     {
+      "speaker": "A",
+      "zh": "你在哪儿工作？",
+      "pinyin": "Nǐ zài nǎr gōngzuò?"
+     },
+     {
+      "speaker": "B",
+      "zh": "我在学校工作。",
+      "pinyin": "Wǒ zài xuéxiào gōngzuò?"
+     },
+     {
+      "speaker": "A",
+      "zh": "你儿子在哪儿工作？",
+      "pinyin": "Nǐ érzi zài nǎr gōngzuò?"
+     },
+     {
+      "speaker": "B",
+      "zh": "我儿子在医院工作，他是医生。",
+      "pinyin": "Wǒ érzi zài yīyuàn gōngzuò, tā shì yīshēng."
+     }
+    ],
+    "english_version": "A: Where do you work?\nB: I work in a school.\nA: Where does your son work?\nB: My son works in a hospital. He is a doctor.",
+    "new_words": [
+     {
+      "n": 8,
+      "zh": "在",
+      "pinyin": "zài",
+      "pos": "prep.",
+      "en": "in/on/at",
+      "text": 2
+     },
+     {
+      "n": 9,
+      "zh": "哪儿",
+      "pinyin": "nǎr",
+      "pos": "pron.",
+      "en": "where",
+      "text": 2
+     },
+     {
+      "n": 10,
+      "zh": "工作",
+      "pinyin": "gōngzuò",
+      "pos": "v./n.",
+      "en": "to work; job",
+      "text": 2
+     },
+     {
+      "n": 11,
+      "zh": "儿子",
+      "pinyin": "érzi",
+      "pos": "n.",
+      "en": "son",
+      "text": 2
+     },
+     {
+      "n": 12,
+      "zh": "医院",
+      "pinyin": "yīyuàn",
+      "pos": "n",
+      "en": "hospital",
+      "text": 2
+     },
+     {
+      "n": 13,
+      "zh": "医生",
+      "pinyin": "yīshēng",
+      "pos": "n.",
+      "en": "doctor",
+      "text": 2
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "title_zh": "打电话",
+    "title_en": "On the phone",
+    "kind": "dialogue",
+    "lines": [
+     {
+      "speaker": "A",
+      "zh": "你爸爸在家吗？",
+      "pinyin": "Nǐ bàba zài jiā ma?"
+     },
+     {
+      "speaker": "B",
+      "zh": "不在家。",
+      "pinyin": "Bú zài jiā."
+     },
+     {
+      "speaker": "A",
+      "zh": "他在哪儿呢？",
+      "pinyin": "Tā zài nǎr ne?"
+     },
+     {
+      "speaker": "B",
+      "zh": "他在医院。",
+      "pinyin": "Tā zài yīyuàn."
+     }
+    ],
+    "english_version": "A: Is your father at home?\nB: No, he isn’t.\nA: Where is he?\nB: He is in the hospital.",
+    "new_words": [
+     {
+      "n": 14,
+      "zh": "爸爸",
+      "pinyin": "bàba",
+      "pos": "n.",
+      "en": "father",
+      "text": 3
+     }
+    ]
+   }
+  ],
+  "grammar": [
+   {
+    "n": 1,
+    "title_zh": "动词“在”",
+    "title_en": "The Verb “在”",
+    "explanation_zh": "“在”是动词，后边加上表示位置的词语做句子的谓语，用于指示人或者事物的位置。例如：",
+    "explanation_en": "“在” is a verb. When it is followed by a word of locality and acts as the predicate of a sentence, it indicates the location of somebody or something. For example:",
+    "structure_rows": [
+     "Subject | Predicate: 在 | Predicate: Word of Locality/Direction",
+     "我朋友 | 在 | 学校。",
+     "我妈妈 | 在 | 家。",
+     "小狗 | 在 | 椅子下面。"
+    ],
+    "examples": [
+     {
+      "n": 1,
+      "zh": "我朋友在学校。"
+     },
+     {
+      "n": 2,
+      "zh": "我妈妈在家。"
+     },
+     {
+      "n": 3,
+      "zh": "小狗在椅子下面。"
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "title_zh": "疑问代词“哪儿”",
+    "title_en": "The Interrogative Pronoun “哪儿”",
+    "explanation_zh": "疑问代词“哪儿”用于疑问句中，询问人或事物的位置。例如：",
+    "explanation_en": "The interrogative pronoun “哪儿” is used to ask about the location of somebody or something. For example:",
+    "examples": [
+     {
+      "n": 1,
+      "zh": "我的杯子在哪儿？"
+     },
+     {
+      "n": 2,
+      "zh": "你的中国朋友在哪儿？"
+     },
+     {
+      "n": 3,
+      "zh": "小猫在哪儿？"
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "title_zh": "介词“在”",
+    "title_en": "The Preposition “在”",
+    "explanation_zh": "“在”也是介词，后边加上表示位置的词语，用于介绍动作行为发生的位置。例如：",
+    "explanation_en": "“在” can also act as a preposition, used before a word of locality to introduce the place where an action or behavior takes place. For example:",
+    "structure_rows": [
+     "Subject | Predicate: 在 | Predicate: Word of Locality/Direction | Predicate: Verb",
+     "我 | 在 | 朋友家 | 喝茶。",
+     "他们 | 在 | 学校 | 看书。",
+     "我儿子 | 在 | 医院 | 工作。"
+    ],
+    "examples": [
+     {
+      "n": 1,
+      "zh": "我在朋友家喝茶。"
+     },
+     {
+      "n": 2,
+      "zh": "他们在学校看书。"
+     },
+     {
+      "n": 3,
+      "zh": "我儿子在医院工作。"
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "title_zh": "疑问助词“呢”（2）",
+    "title_en": "The Interrogative Particle “呢” (2)",
+    "explanation_zh": "疑问助词“呢”用在句末，表示疑问，用于询问人或事物的位置。例如：",
+    "explanation_en": "Used at the end of a sentence, the interrogative particle “呢” asks about the location of somebody or something. For example:",
+    "examples": [
+     {
+      "n": 1,
+      "zh": "我的小猫呢？"
+     },
+     {
+      "n": 2,
+      "zh": "我的杯子呢？"
+     },
+     {
+      "n": 3,
+      "zh": "他在哪儿呢？"
+     }
+    ]
+   }
+  ],
+  "exercises": [
+   {
+    "n": 1,
+    "type_zh": "分角色朗读课文",
+    "instruction_zh": "分角色朗读课文",
+    "instruction_en": "Role-play the dialogues.",
+    "items": []
+   },
+   {
+    "n": 2,
+    "type_zh": "回答问题",
+    "instruction_zh": "根据课文内容回答问题。",
+    "instruction_en": "Answer the questions based on the dialogues.",
+    "items": [
+     {
+      "n": 1,
+      "zh": "小狗在哪儿？",
+      "pinyin": "Xiǎo gǒu zài nǎr?"
+     },
+     {
+      "n": 2,
+      "zh": "他在哪儿工作？",
+      "pinyin": "Tā zài nǎr gōngzuò?"
+     },
+     {
+      "n": 3,
+      "zh": "他儿子在哪儿工作？",
+      "pinyin": "Tā érzi zài nǎr gōngzuò?"
+     },
+     {
+      "n": 4,
+      "zh": "她爸爸在家吗？",
+      "pinyin": "Tā bàba zài jiā ma?"
+     },
+     {
+      "n": 5,
+      "zh": "她爸爸在哪儿呢？",
+      "pinyin": "Tā bàba zài nǎr ne?"
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "type_zh": "描述图片",
+    "instruction_zh": "用本课新学的语言点和词语描述图片",
+    "instruction_en": "Describe the pictures using the newly-learned language points ard words.",
+    "items": [
+     {
+      "n": 1,
+      "zh": "________在________。",
+      "pinyin": "______ zài ______.",
+      "picture_desc_en": "an orange tabby cat sitting on a small blue plastic chair"
+     },
+     {
+      "n": 2,
+      "zh": "________在________。",
+      "pinyin": "______ zài ______.",
+      "picture_desc_en": "a small child in a yellow top crouching under a tall metal bar stool"
+     },
+     {
+      "n": 3,
+      "zh": "我妈妈是________，她在________。",
+      "pinyin": "Wǒ māma shì ______, tā zài ______.",
+      "picture_desc_en": "a woman doctor in a white coat with a stethoscope, sitting at a desk and talking with a man"
+     },
+     {
+      "n": 4,
+      "zh": "我女儿是________，她不________。",
+      "pinyin": "Wǒ nǚ’ér shì ______, tā bù ______.",
+      "picture_desc_en": "a smiling young woman with a backpack holding books and folders"
+     }
+    ]
+   }
+  ],
+  "characters": {
+   "knowledge_title_zh": "认识独体字／汉字结构（4）：半包围结构／汉字偏旁“辶”和“门”",
+   "knowledge_zh": "1 认识独体字\n（1）“在”，字形像草木初生于土上，现在意思是“存活、存在”。［字形演变图4步 → 在］［田字格笔顺6步］\n（2）“子”，本义是婴儿，现在意思很多，如“儿子”、“电子”。［字形演变图4步 → 子］［田字格：㇇ 了 子］\n（3）“工”，字形像工匠的曲尺，现在意思很多，如“工人”、“工作”。［字形演变图4步 → 工］［田字格：一 丅 工］\n2 汉字结构（4）：半包围结构\n合体结构中还包括半包围结构和全包围结构（见第10课），本课的半包围结构又分为两面包围结构和三面包围结构。\n结构 Structure | 例字 Example Characters | 图解 Illustrations\n半包围结构 half-enclosure | 店 diàn store、习 xí to study、这 zhè this、同 tóng same、凶 xiōng fierce、医 yī doctor | ［图解：店 习 这 同 凶 医］\n3 汉字偏旁“辶”和“门”\n偏旁 | 解释 | 例字\n辶 | 走之旁，一般和走路有关系。 | 这 zhè this、送 sòng to send\n门 | 门字框，一般和房间、房门有关。 | 问 wèn to ask、间 jiān a measure word for rooms",
+   "knowledge_en": "Single-Component Characters: (1) The original form of “在” is like grass sprouting from the earth. Now it means “to live/exist”. (2) “子” originally meant “baby”. Now it has many meanings, such as “儿子(son)” and “电子(electron)”. (3) “工” was originally shaped like a craftsman’s zigzag ruler. Now it has many meanings, such as “工人(worker)” and “工作(to work; job)”.\nStructure of Chinese Characters (4): half-enclosure — There are another two kinds of compound structures—the half-enclosure structure and the enclosure structure (see Lesson 10). The half-enclosure structure in this lesson includes the structure enclosed by two sides and the structure enclosed by three sides.\nChinese Radicals: “辶” and “门” — The radical “辶” is usually related to “walking”. The radical “门” is usually related to a room or a door.",
+   "characters": [
+    {
+     "zh": "在",
+     "pinyin": "zài",
+     "note_zh": "独体字：字形像草木初生于土上，现在意思是“存活、存在”（字形演变图4步 + 田字格笔顺6步）"
+    },
+    {
+     "zh": "子",
+     "pinyin": "zǐ",
+     "note_zh": "独体字：本义是婴儿，现在意思很多，如“儿子”“电子”（字形演变图4步 + 笔顺：㇇ 了 子）"
+    },
+    {
+     "zh": "工",
+     "pinyin": "gōng",
+     "note_zh": "独体字：字形像工匠的曲尺，现在意思很多，如“工人”“工作”（字形演变图4步 + 笔顺：一 丅 工）"
+    },
+    {
+     "zh": "店",
+     "pinyin": "diàn",
+     "note_zh": "半包围结构例字（store）"
+    },
+    {
+     "zh": "习",
+     "pinyin": "xí",
+     "note_zh": "半包围结构例字（to study）"
+    },
+    {
+     "zh": "这",
+     "pinyin": "zhè",
+     "note_zh": "半包围结构例字（this）；偏旁“辶”例字"
+    },
+    {
+     "zh": "同",
+     "pinyin": "tóng",
+     "note_zh": "半包围结构例字（same）"
+    },
+    {
+     "zh": "凶",
+     "pinyin": "xiōng",
+     "note_zh": "半包围结构例字（fierce）"
+    },
+    {
+     "zh": "医",
+     "pinyin": "yī",
+     "note_zh": "半包围结构例字（doctor）"
+    },
+    {
+     "zh": "送",
+     "pinyin": "sòng",
+     "note_zh": "偏旁“辶”例字（to send）"
+    },
+    {
+     "zh": "问",
+     "pinyin": "wèn",
+     "note_zh": "偏旁“门”例字（to ask）"
+    },
+    {
+     "zh": "间",
+     "pinyin": "jiān",
+     "note_zh": "偏旁“门”例字（a measure word for rooms）"
+    }
+   ]
+  },
+  "application": [
+   {
+    "title_zh": "双人活动",
+    "instruction_zh": "两人一组，根据实际情况进行问答练习。",
+    "instruction_en": "Work in pairs and ask and answer questions according to the actual situations.",
+    "example_zh": [
+     "例如：",
+     "（1）A：……在哪儿？ zài nǎr?",
+     "B：……在…… zài",
+     "（2）A：……在哪儿工作？ zài nǎr gōngzuò?",
+     "B：……在……工作，他／她是…… zài gōngzuò, tā / tā shì"
+    ]
+   },
+   {
+    "title_zh": "小组活动",
+    "instruction_zh": "3～4人一组，互相介绍自己的朋友、同学的工作情况并记录，每组请一位同学报告情况。",
+    "instruction_en": "Work in groups of 3-4. Tell each other about the jobs of your friends or classmates and take notes Each group chooses one member to make a report.",
+    "example_zh": [
+     "表格： | 朋友／同学 Friend/Classmate | 工作 Job",
+     "1 | 李朋 Lǐ Péng | 是医生，在医院工作。 Shì yīshēng, zài yīyuàn gōngzuò.",
+     "2–5 | （空行） | （空行）"
+    ]
+   }
+  ]
+ },
+ "teacher": {
+  "ref": {
+   "book": "teacher",
+   "pages": [
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62
+   ]
+  },
+  "objectives_zh": [
+   "重点词语：学生能够熟练掌握“小、那儿、椅子、下面、工作、儿子、医院、医生、爸爸”的词义和用法",
+   "语言点：学生能够了解并掌握：（1）动词“在”（2）疑问代词“哪儿”（3）介词“在”（4）疑问助词“呢”（2）：用于询问人或事物的位置",
+   "语音：学生熟悉双音节词语的四声音节和各声调搭配的声调模式，并能正确朗读",
+   "汉字：学生能够：（1）熟练认读本课生词（2）独立书写独体字“在、子、工”（3）了解汉字的半包围结构（4）了解“辶（走之旁）、门（门字框）”所表示的意思",
+   "功能：学生能够：（1）询问和表达人或者事物所处的位置（2）询问和表达动作行为发生的位置和场所（3）正确使用疑问助词“呢”询问人或事物的位置"
+  ],
+  "steps": [
+   {
+    "title_zh": "一 复习旧课",
+    "body_zh": "1. 教师出示第8课生词卡片，要求学生快速认读下列生词。\n想、喝、茶、吃、米饭、下午、商店、买、个、杯子、这、多少、钱、块、那\n2. 教师根据第8课重点内容简单提问，活跃课堂气氛。\n（1）今天中午你想吃什么？\n（2）你想喝茶吗？\n（3）今天晚上你想做什么？\n（4）你们班有多少学生？\n（5）你的汉语书多少钱？\n（6）你的杯子多少钱？"
+   },
+   {
+    "title_zh": "二 学习新课 1 热身",
+    "body_zh": "教师可依次出示热身部分的词语卡片，要求学生集体认读，然后请单个学生说出对应图片的编号，教师评判正误。最后全体学生再次齐读热身环节的所有词语，要求语音标准、声调准确。\n答案：①F　②E　③D　④C　⑤A　⑥B"
+   },
+   {
+    "title_zh": "2 生词",
+    "body_zh": "（1）生词快速认读及正音\n小、猫、在、那儿、狗、椅子、下面（下）、哪儿、工作、儿子、医院、医生、爸爸\n• 教师使用生词卡片有拼音和汉字的一面，带领学生快速认读一遍本课生词；\n• 使用生词卡片只有汉字的一面，带领学生再次认读本课生词；\n• 请单个学生独自认读2–3个生词；\n• 最后全体学生再快速认读一遍本课所有生词。\n［注意框，见notes_zh］\n（2）重点生词扩展及常用搭配\n小—小学生—小朋友—小商店—小杯子—小猫—小狗\n那儿 ↔ 这儿 ↔ 哪儿\n椅子—一把椅子\n下面—椅子下面—书下面\n工作—你的工作—我的工作—他的工作—李月的工作\n　—李月的工作是老师。\n　—不工作\n　—你妈妈工作吗？—我妈妈不工作。\n儿子—一个儿子\n　—你儿子—他儿子—李老师的儿子\n　↔ 女儿\n医院—去医院\n　—你去哪儿？—我去医院。\n医生—是医生—他是医生—李老师的儿子是医生。\n爸爸—你爸爸—我爸爸—他爸爸—我朋友的爸爸\n　—我朋友的爸爸是医生。\n　↔ 妈妈\n练习册相关练习：第57页／一／第一部分，第60页／二／第一部分"
+   },
+   {
+    "title_zh": "3 语言点（1）动词“在”（2）疑问代词“哪儿”",
+    "body_zh": "① 语言点解析\n“在”可以是动词，后边加上表示位置的词语做句子的谓语，用于指示人或者事物的位置。其否定形式是“不在”。\n［句型框］主语＋（不）在＋地点／方位词语。\n“哪儿”是疑问代词，用于疑问句中，询问人或事物的位置。\n［句型框］主语＋在＋哪儿？\n② 语言点导入\n教师可利用教室里的实物或者图片进行导入，比如教师可以将自己的汉语书放在杯子下边，对这个情景提问。\n教师：这是什么？\n学生：这是汉语书。\n教师：汉语书在哪儿？\n学生：汉语书在杯子下面。\n其他目标句：小狗在椅子下面。\n李老师在学校。\n大卫在中国朋友家。\n他是医生，他在医院。\n③ 语言点操练\n教师可组织学生根据实际情况进行问答练习。\n参考问题：你有小狗吗？它在哪儿？\n你的汉语书在哪儿？\n你的杯子在哪儿？\n你爸爸／妈妈在哪儿？\n你的汉语老师在哪儿？\n你的中国朋友在哪儿？"
+   },
+   {
+    "title_zh": "3 语言点（3）介词“在”",
+    "body_zh": "① 语言点解析\n“在”也可以是介词，后边加上表示位置的词语，用于介绍动作行为发生的位置。\n［句型框］主语＋在＋地点／方位词语＋动词。\n② 语言点导入\n教师可利用本课热身图片E、D进行导入。\n教师：她是谁？\n学生：她是医生。\n教师：这是什么地方？\n学生：这是医院。\n教师：医生在哪儿工作？\n学生：医生在医院工作。\n其他目标句：老师在学校工作。\n大卫在北京学习汉语。\n我在中国朋友家吃中国菜。\n③ 语言点操练\n教师可组织学生根据实际情况进行问答练习。\n参考问题：你在哪儿学习汉语？\n你在哪儿吃午饭？\n你在哪儿看书？\n你爸爸在哪儿工作？\n你妈妈在哪儿工作？"
+   },
+   {
+    "title_zh": "3 语言点（4）疑问助词“呢”（2）",
+    "body_zh": "① 语言点解析\n疑问助词“呢”用在句末，表示疑问，可以用于询问人或者事物的位置。\n［句型框］主语＋在＋哪儿＋呢？\n上面这个句型中，“呢”也可以直接用在主语后，询问位置。\n［句型框］主语＋呢？\n② 语言点操练\n教师可组织学生根据实际情况进行问答练习。\n参考问题：你朋友在哪儿呢？\n昨天下午你在哪儿呢？\n昨天晚上你在哪儿呢？\n他的小狗呢？\n你的汉语书呢？\n你的杯子呢？"
+   },
+   {
+    "title_zh": "4 课文",
+    "body_zh": "课文1\n（1）让学生听两遍录音并回答下列问题：\n小猫在哪儿？\n小狗在哪儿？\n（2）根据学生的回答，教师领说目标句，并请学生单个复述：\n小猫在那儿。小狗在椅子下面。\n（3）教师领读课文两遍，然后让学生分角色朗读课文。\n（4）模仿练习\n教师组织学生两人一组，根据提示进行对话练习。\nA：我的杯子在哪儿？\nB：你的杯子在……。\nA：我的汉语书在哪儿？\nB：你的汉语书在……。\n［补充词语框］补充词语：书包 shūbāo、笔 bǐ、手机 shǒujī、眼镜 yǎnjìng、钱包 qiánbāo、自行车 zìxíngchē（可制成图卡）\n课文2\n（1）让学生听两遍录音并回答下列问题：\n他在哪儿工作？\n他儿子也在学校工作吗？\n他儿子在哪儿工作？\n（2）根据学生的回答，教师领说目标句，并请学生单个复述：\n他在学校工作，他儿子不在学校工作。他儿子在医院工作，他是医生。\n（3）教师领读课文两遍，然后让学生分角色朗读课文。\n（4）模仿练习\n教师组织学生两人一组，根据提示进行对话练习。\nA：你爸爸在哪儿工作？\nB：我爸爸在……工作。\nA：你妈妈在哪儿工作？\nB：我妈妈在……工作。\nA：你工作吗？\nB：我不……，我是……。\n课文3\n（1）让学生听两遍录音并回答下列问题：\n她爸爸在家吗？\n她爸爸在哪儿？\n（2）根据学生的回答，教师领说目标句，并请学生单个复述：\n她爸爸不在家，在医院。\n（3）教师领读课文两遍，然后让学生分角色朗读课文。\n（4）模仿练习\n教师组织学生两人一组，根据提示模拟打电话。\nA：你好，请问……（名字）在家吗？\nB：……（名字）不在家。\nA：他／她在哪儿呢？\nB：他／她在……。（地方）\nA：谢谢。\nB：不客气。"
+   },
+   {
+    "title_zh": "5 语音",
+    "body_zh": "双音节词语的声调搭配（4）：四声和各声调的搭配\n教师可利用课本第68页的例词、声调模式和图片进行教学。教师分别朗读各声调组合的标准词，让学生一边看调型图一边跟读模仿，并根据图片理解词义。\n之后教师可利用课本第68页的练习部分，组织学生进行朗读正音练习。朗读时教师要提醒学生注意各声调搭配的标准词的示范作用。\n［注意框，见notes_zh］\n练习册相关练习：第63页／三"
+   },
+   {
+    "title_zh": "6 汉字",
+    "body_zh": "① 知识点解析\n独体字\n在：字形像草木初生于土上，现在意思是“存活、存在”。\n子：本义是婴儿，现在意思很多，如“儿子”“电子”。\n工：字形像工匠的曲尺，现在意思很多，如“工人”“工作”。\n偏旁\n辶：走之旁，一般和走路有关系。\n门：门字框，一般和房间、房门有关。\n② 汉字练习\n• 教师板书或者用手指在空中书写本课独体字“在、子、工”，带领学生一起识记独体字的笔画笔顺。\n• 教师板书本课偏旁“辶、门”，提示学生注意这两个偏旁的笔画和笔顺，并书写各自的代表汉字，帮助学生识记偏旁的意义。\n• 教师通过板书例字，给学生展示汉字的另一种合体结构：半包围结构。\n• 补充练习\n辨认下列汉字并组词\n子（　）／字（　）　哪（　）／那（　）　朋（　）／明（　）\n练习册相关练习：第64页／四"
+   },
+   {
+    "title_zh": "7 补充课堂活动——他／她在哪儿工作",
+    "body_zh": "教师可准备一些不同职业的人物图片，如老师、医生、售货员、银行职员等，请学生两人一组，交替做出不同职业人物的典型动作，并对图片内容进行描述。\n例如：他是售货员，他在商店工作。\n［补充词语框］补充词语：售货员 shòuhuòyuán、银行 yínháng 职员 zhíyuán、……"
+   },
+   {
+    "title_zh": "附注：建议教学用具",
+    "body_zh": "1. 生词卡片：第8、9课生词卡片\n2. 独体字卡片：第9课独体字卡片\n3. 补充词语图卡：日常物品\n4. 补充活动图片：职业人物"
+   }
+  ],
+  "notes_zh": [
+   "注意：教师要引导学生注意双音节词语的声调模式，力求声调准确。要引导学生注意“哪儿”、“那儿”声调的不同。（生词）",
+   "注意：在两个四声音节相连的双音节词语中，第二个四声音节的音高起始点要比第一个四声音节的音高起始点稍低。（语音）"
+  ],
+  "warmup_answers_zh": [
+   "答案：①F　②E　③D　④C　⑤A　⑥B"
+  ],
+  "text_questions": [
+   {
+    "text": 1,
+    "q_zh": "小猫在哪儿？",
+    "a_zh": "小猫在那儿。"
+   },
+   {
+    "text": 1,
+    "q_zh": "小狗在哪儿？",
+    "a_zh": "小狗在椅子下面。"
+   },
+   {
+    "text": 2,
+    "q_zh": "他在哪儿工作？"
+   },
+   {
+    "text": 2,
+    "q_zh": "他儿子也在学校工作吗？"
+   },
+   {
+    "text": 2,
+    "q_zh": "他儿子在哪儿工作？"
+   },
+   {
+    "text": 3,
+    "q_zh": "她爸爸在家吗？"
+   },
+   {
+    "text": 3,
+    "q_zh": "她爸爸在哪儿？"
+   }
+  ],
+  "summary_zh": "• 语言点：动词“在”（在＋地点／方位词语）\n　疑问代词“哪儿”\n　介词“在”（在＋地点／方位词语＋动词）\n　疑问助词“呢”询问位置\n• 语音：双音节词语的声调搭配（4）：四声和各声调的搭配\n• 汉字：独体字“在、子、工”\n　偏旁“辶、门”"
+ },
+ "workbook": {
+  "ref": {
+   "book": "workbook",
+   "pages": [
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72
+   ]
+  },
+  "sections": [
+   {
+    "n": "一、听力 第一部分",
+    "type_zh": "听力 第一部分",
+    "instruction_zh": "第1–4题：听词或短语，判断对错",
+    "instruction_en": "Questions 1-4: Listen to the words or phrases and decide whether the pictures are right or wrong based on what you hear.",
+    "items": [
+     {
+      "n": "例1",
+      "zh": "很高兴",
+      "pinyin": "hěn gāoxìng",
+      "transcript_zh": "很高兴",
+      "picture_desc_en": "a smiling young woman with long hair. Printed English: very happy",
+      "answer": "√",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        65
+       ]
+      }
+     },
+     {
+      "n": "例2",
+      "zh": "看电影",
+      "pinyin": "kàn diànyǐng",
+      "transcript_zh": "看电影",
+      "picture_desc_en": "an older man in a suit sitting and reading papers. Printed English: to see a movie",
+      "answer": "×",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        65
+       ]
+      }
+     },
+     {
+      "n": 1,
+      "zh": "",
+      "transcript_zh": "医院",
+      "picture_desc_en": "an open-plan office with cubicles and computers",
+      "answer": "×",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        48
+       ]
+      }
+     },
+     {
+      "n": 2,
+      "zh": "",
+      "transcript_zh": "医生",
+      "picture_desc_en": "a smiling woman doctor with a stethoscope",
+      "answer": "√",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        48
+       ]
+      }
+     },
+     {
+      "n": 3,
+      "zh": "",
+      "transcript_zh": "椅子",
+      "picture_desc_en": "a chair with a padded seat and metal legs",
+      "answer": "√",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        48
+       ]
+      }
+     },
+     {
+      "n": 4,
+      "zh": "",
+      "transcript_zh": "小猫",
+      "picture_desc_en": "a puppy lying down with its head on its paws",
+      "answer": "×",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        48
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "一、听力 第二部分",
+    "type_zh": "听力 第二部分",
+    "instruction_zh": "第5–8题：听对话，选择与对话内容一致的图片",
+    "instruction_en": "Questions 5-8: Listen to the dialogues and choose the right picture for each dialogue you hear.",
+    "items": [
+     {
+      "n": "例",
+      "zh": "女：你好！ 男：你好！很高兴认识你。",
+      "pinyin": "Nǐ hǎo! / Nǐ hǎo! Hěn gāoxìng rènshi nǐ.",
+      "transcript_zh": "女：你好！ 男：你好！很高兴认识你。",
+      "options": {
+       "A": "[picture] a smiling woman teacher with a group of children in a classroom, alphabet chart on the wall",
+       "B": "[picture] a dog sitting on a wooden chair",
+       "C": "[picture] a man and a woman in business suits shaking hands in front of an elevator",
+       "D": "[picture] a woman doctor with a stethoscope in the foreground; a patient in bed and medical staff behind",
+       "E": "[picture] a cat crouching under a piece of wooden furniture"
+      },
+      "picture_desc_en": "Printed English: How do you do? / How do you do? Nice to meet you.",
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        66
+       ]
+      }
+     },
+     {
+      "n": 5,
+      "zh": "",
+      "options": {
+       "A": "[picture] a smiling woman teacher with a group of children in a classroom, alphabet chart on the wall",
+       "B": "[picture] a dog sitting on a wooden chair",
+       "C": "[picture] a man and a woman in business suits shaking hands in front of an elevator",
+       "D": "[picture] a woman doctor with a stethoscope in the foreground; a patient in bed and medical staff behind",
+       "E": "[picture] a cat crouching under a piece of wooden furniture"
+      },
+      "transcript_zh": "男：我的猫呢？ 女：在椅子下面。",
+      "answer": "E",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        49
+       ]
+      }
+     },
+     {
+      "n": 6,
+      "zh": "",
+      "options": {
+       "A": "[picture] a smiling woman teacher with a group of children in a classroom, alphabet chart on the wall",
+       "B": "[picture] a dog sitting on a wooden chair",
+       "C": "[picture] a man and a woman in business suits shaking hands in front of an elevator",
+       "D": "[picture] a woman doctor with a stethoscope in the foreground; a patient in bed and medical staff behind",
+       "E": "[picture] a cat crouching under a piece of wooden furniture"
+      },
+      "transcript_zh": "男：你妈妈是医生吗？ 女：不是，我妈妈是老师，她在学校工作。",
+      "answer": "A",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        49
+       ]
+      }
+     },
+     {
+      "n": 7,
+      "zh": "",
+      "options": {
+       "A": "[picture] a smiling woman teacher with a group of children in a classroom, alphabet chart on the wall",
+       "B": "[picture] a dog sitting on a wooden chair",
+       "C": "[picture] a man and a woman in business suits shaking hands in front of an elevator",
+       "D": "[picture] a woman doctor with a stethoscope in the foreground; a patient in bed and medical staff behind",
+       "E": "[picture] a cat crouching under a piece of wooden furniture"
+      },
+      "transcript_zh": "男：我的狗在哪儿？ 女：在椅子上面。",
+      "answer": "B",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        49
+       ]
+      }
+     },
+     {
+      "n": 8,
+      "zh": "",
+      "options": {
+       "A": "[picture] a smiling woman teacher with a group of children in a classroom, alphabet chart on the wall",
+       "B": "[picture] a dog sitting on a wooden chair",
+       "C": "[picture] a man and a woman in business suits shaking hands in front of an elevator",
+       "D": "[picture] a woman doctor with a stethoscope in the foreground; a patient in bed and medical staff behind",
+       "E": "[picture] a cat crouching under a piece of wooden furniture"
+      },
+      "transcript_zh": "女：你朋友在哪儿工作？ 男：她是医生，在医院工作。",
+      "answer": "D",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        49
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "一、听力 第三部分",
+    "type_zh": "听力 第三部分",
+    "instruction_zh": "第9–12题：听句子，回答问题",
+    "instruction_en": "Questions 9-12: Listen to the sentences and answer the questions.",
+    "items": [
+     {
+      "n": "例",
+      "zh": "下午我去商店，我想买一些水果。 问：她下午去哪里？",
+      "pinyin": "Xiàwǔ wǒ qù shāngdiàn, wǒ xiǎng mǎi yìxiē shuǐguǒ. / Tā xiàwǔ qù nǎli?",
+      "transcript_zh": "下午我去商店，我想买一些水果。 问：她下午去哪里？",
+      "options": {
+       "A": "商店 shāngdiàn store",
+       "B": "医院 yīyuàn hospital",
+       "C": "学校 xuéxiào school"
+      },
+      "picture_desc_en": "Printed English: I’m going to the store this afternoon. I want to buy some fruit. Question: Where is she going this afternoon?",
+      "answer": "A",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        67
+       ]
+      }
+     },
+     {
+      "n": 9,
+      "zh": "",
+      "transcript_zh": "这是我的小猫，在椅子下面。 问：他／她的猫在哪儿？",
+      "options": {
+       "A": "椅子上 yǐzi shang",
+       "B": "桌子上 zhuōzi shang",
+       "C": "椅子下 yǐzi xia"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        49
+       ]
+      }
+     },
+     {
+      "n": 10,
+      "zh": "",
+      "transcript_zh": "他儿子叫李朋，在商店工作。 问：他儿子在哪儿工作？",
+      "options": {
+       "A": "商店 shāngdiàn",
+       "B": "医院 yīyuàn",
+       "C": "学校 xuéxiào"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        49
+       ]
+      }
+     },
+     {
+      "n": 11,
+      "zh": "",
+      "transcript_zh": "他爸爸是医生，妈妈不工作。 问：他妈妈在哪儿工作？",
+      "options": {
+       "A": "商店 shāngdiàn",
+       "B": "学校 xuéxiào",
+       "C": "不工作 bù gōngzuò"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        49
+       ]
+      }
+     },
+     {
+      "n": 12,
+      "zh": "",
+      "transcript_zh": "她儿子在中国，她女儿在美国。 问：她女儿在哪儿？",
+      "options": {
+       "A": "中国 Zhōngguó",
+       "B": "美国 Měiguó",
+       "C": "家 jiā"
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        49
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第一部分",
+    "type_zh": "阅读 第一部分",
+    "instruction_zh": "第13–17：看图片，判断图片内容是否与提示词一致",
+    "instruction_en": "Questions 13-17: Look at the pictures and decide whether the given words are right or wrong.",
+    "items": [
+     {
+      "n": "例1",
+      "zh": "电视",
+      "pinyin": "diànshì",
+      "picture_desc_en": "an open laptop computer. Printed English: television",
+      "answer": "×",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        68
+       ]
+      }
+     },
+     {
+      "n": "例2",
+      "zh": "飞机",
+      "pinyin": "fēijī",
+      "picture_desc_en": "an airplane in flight. Printed English: airplane",
+      "answer": "√",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        68
+       ]
+      }
+     },
+     {
+      "n": 13,
+      "zh": "茶",
+      "pinyin": "chá",
+      "picture_desc_en": "a glass of juice next to cut oranges",
+      "answer": "×",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        50
+       ]
+      }
+     },
+     {
+      "n": 14,
+      "zh": "老师",
+      "pinyin": "lǎoshī",
+      "picture_desc_en": "a smiling woman in medical scrubs with a stethoscope, holding a tablet, in a hospital",
+      "answer": "×",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        50
+       ]
+      }
+     },
+     {
+      "n": 15,
+      "zh": "在医院",
+      "pinyin": "zài yīyuàn",
+      "picture_desc_en": "a nurse in a cap tending a patient lying in a hospital bed",
+      "answer": "√",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        50
+       ]
+      }
+     },
+     {
+      "n": 16,
+      "zh": "爸爸、儿子",
+      "pinyin": "bàba érzi",
+      "picture_desc_en": "a smiling man with a boy on his back",
+      "answer": "√",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        50
+       ]
+      }
+     },
+     {
+      "n": 17,
+      "zh": "杯子",
+      "pinyin": "bēizi",
+      "picture_desc_en": "an office swivel chair",
+      "answer": "×",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        50
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第二部分",
+    "type_zh": "阅读 第二部分",
+    "instruction_zh": "第18–22题：看问题，选择正确的回答",
+    "instruction_en": "Questions 18-22: Read the questions and choose the right answer to each of them.",
+    "items": [
+     {
+      "n": "例",
+      "zh": "你喝水吗？",
+      "pinyin": "Nǐ hē shuǐ ma?",
+      "options": {
+       "A": "我是学生，我不工作。 Wǒ shì xuésheng, wǒ bù gōngzuò.",
+       "B": "不在，李老师在医院。 Bú zài, Lǐ lǎoshī zài yīyuàn.",
+       "C": "在那儿，椅子下面。 Zài nàr, yǐzi xiàmiàn.",
+       "D": "她是老师，在学校工作。 Tā shì lǎoshī, zài xuéxiào gōngzuò.",
+       "E": "杯子在这儿。 Bēizi zài zhèr.",
+       "F": "好的，谢谢！ Hǎo de, xièxie!"
+      },
+      "picture_desc_en": "Printed English: Would you like some water?",
+      "answer": "F",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        69
+       ]
+      }
+     },
+     {
+      "n": 18,
+      "zh": "你在哪儿工作？",
+      "pinyin": "Nǐ zài nǎr gōngzuò?",
+      "options": {
+       "A": "我是学生，我不工作。 Wǒ shì xuésheng, wǒ bù gōngzuò.",
+       "B": "不在，李老师在医院。 Bú zài, Lǐ lǎoshī zài yīyuàn.",
+       "C": "在那儿，椅子下面。 Zài nàr, yǐzi xiàmiàn.",
+       "D": "她是老师，在学校工作。 Tā shì lǎoshī, zài xuéxiào gōngzuò.",
+       "E": "杯子在这儿。 Bēizi zài zhèr.",
+       "F": "好的，谢谢！ Hǎo de, xièxie!"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        51
+       ]
+      }
+     },
+     {
+      "n": 19,
+      "zh": "我的小狗在哪儿？",
+      "pinyin": "Wǒ de xiǎo gǒu zài nǎr?",
+      "options": {
+       "A": "我是学生，我不工作。 Wǒ shì xuésheng, wǒ bù gōngzuò.",
+       "B": "不在，李老师在医院。 Bú zài, Lǐ lǎoshī zài yīyuàn.",
+       "C": "在那儿，椅子下面。 Zài nàr, yǐzi xiàmiàn.",
+       "D": "她是老师，在学校工作。 Tā shì lǎoshī, zài xuéxiào gōngzuò.",
+       "E": "杯子在这儿。 Bēizi zài zhèr.",
+       "F": "好的，谢谢！ Hǎo de, xièxie!"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        51
+       ]
+      }
+     },
+     {
+      "n": 20,
+      "zh": "我的杯子呢？",
+      "pinyin": "Wǒ de bēizi ne?",
+      "options": {
+       "A": "我是学生，我不工作。 Wǒ shì xuésheng, wǒ bù gōngzuò.",
+       "B": "不在，李老师在医院。 Bú zài, Lǐ lǎoshī zài yīyuàn.",
+       "C": "在那儿，椅子下面。 Zài nàr, yǐzi xiàmiàn.",
+       "D": "她是老师，在学校工作。 Tā shì lǎoshī, zài xuéxiào gōngzuò.",
+       "E": "杯子在这儿。 Bēizi zài zhèr.",
+       "F": "好的，谢谢！ Hǎo de, xièxie!"
+      },
+      "answer": "E",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        51
+       ]
+      }
+     },
+     {
+      "n": 21,
+      "zh": "你女儿在哪儿工作？",
+      "pinyin": "Nǐ nǚ’ér zài nǎr gōngzuò?",
+      "options": {
+       "A": "我是学生，我不工作。 Wǒ shì xuésheng, wǒ bù gōngzuò.",
+       "B": "不在，李老师在医院。 Bú zài, Lǐ lǎoshī zài yīyuàn.",
+       "C": "在那儿，椅子下面。 Zài nàr, yǐzi xiàmiàn.",
+       "D": "她是老师，在学校工作。 Tā shì lǎoshī, zài xuéxiào gōngzuò.",
+       "E": "杯子在这儿。 Bēizi zài zhèr.",
+       "F": "好的，谢谢！ Hǎo de, xièxie!"
+      },
+      "answer": "D",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        51
+       ]
+      }
+     },
+     {
+      "n": 22,
+      "zh": "请问，李老师在吗？",
+      "pinyin": "Qǐngwèn, Lǐ lǎoshī zài ma?",
+      "options": {
+       "A": "我是学生，我不工作。 Wǒ shì xuésheng, wǒ bù gōngzuò.",
+       "B": "不在，李老师在医院。 Bú zài, Lǐ lǎoshī zài yīyuàn.",
+       "C": "在那儿，椅子下面。 Zài nàr, yǐzi xiàmiàn.",
+       "D": "她是老师，在学校工作。 Tā shì lǎoshī, zài xuéxiào gōngzuò.",
+       "E": "杯子在这儿。 Bēizi zài zhèr.",
+       "F": "好的，谢谢！ Hǎo de, xièxie!"
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        51
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第三部分",
+    "type_zh": "阅读 第三部分",
+    "instruction_zh": "第23–30题：看句子，选择正确的词语填空",
+    "instruction_en": "Questions 23-30: Read the sentences and choose the right words to fill in the brackets.",
+    "word_bank": [
+     [
+      "A 在 zài",
+      "B 哪儿 nǎr",
+      "C 呢 ne",
+      "D 名字 míngzi",
+      "E 什么 shénme"
+     ],
+     [
+      "F 家 jiā",
+      "G 学校 xuéxiào",
+      "H 医院 yīyuàn",
+      "I 商店 shāngdiàn"
+     ]
+    ],
+    "items": [
+     {
+      "n": "例",
+      "zh": "你叫什么（________）？",
+      "pinyin": "Nǐ jiào shénme",
+      "picture_desc_en": "Printed English: What is your name?",
+      "answer": "D",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        70
+       ]
+      }
+     },
+     {
+      "n": 23,
+      "zh": "你爸爸做（________）工作？",
+      "pinyin": "Nǐ bàba zuò ______ gōngzuò?",
+      "answer": "E",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        52
+       ]
+      }
+     },
+     {
+      "n": 24,
+      "zh": "你好，请问王老师在（________）？",
+      "pinyin": "Nǐ hǎo, qǐngwèn Wáng lǎoshī zài",
+      "answer": "B",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        52
+       ]
+      }
+     },
+     {
+      "n": 25,
+      "zh": "我儿子是医生，（________）医院工作。",
+      "pinyin": "Wǒ érzi shì yīshēng, ______ yīyuàn gōngzuò.",
+      "answer": "A",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        52
+       ]
+      }
+     },
+     {
+      "n": 26,
+      "zh": "你的猫（________）？",
+      "pinyin": "Nǐ de māo",
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        52
+       ]
+      }
+     },
+     {
+      "n": 27,
+      "zh": "你（________）有几口人？",
+      "pinyin": "Nǐ ______ yǒu jǐ kǒu rén?",
+      "answer": "F",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        52
+       ]
+      }
+     },
+     {
+      "n": 28,
+      "zh": "我想去（________）买一个杯子。",
+      "pinyin": "Wǒ xiǎng qù ______ mǎi yí ge bēizi.",
+      "answer": "I",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        52
+       ]
+      }
+     },
+     {
+      "n": 29,
+      "zh": "明天下午我想去（________）看书。",
+      "pinyin": "Míngtiān xiàwǔ wǒ xiǎng qù ______ kàn shū.",
+      "answer": "G",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        52
+       ]
+      }
+     },
+     {
+      "n": 30,
+      "zh": "他爸爸是医生，在（________）工作。",
+      "pinyin": "Tā bàba shì yīshēng, zài ______ gōngzuò.",
+      "answer": "H",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        52
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "三、语音 第一部分",
+    "type_zh": "语音 第一部分 听力",
+    "instruction_zh": "第1–8题：听录音，选择听到的双音节词语",
+    "instruction_en": "Questions 1-8: Listen to the recording and mark the disyllabic words you hear.",
+    "items": [
+     {
+      "n": 1,
+      "zh": "bàn tiān　bài nián",
+      "options": {
+       "1": "bàn tiān",
+       "2": "bài nián"
+      },
+      "transcript_zh": "bàntiān（半天）",
+      "answer": "bàn tiān",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        53
+       ]
+      }
+     },
+     {
+      "n": 2,
+      "zh": "lùyīn　lùrén",
+      "options": {
+       "1": "lùyīn",
+       "2": "lùrén"
+      },
+      "transcript_zh": "lùyīn（录音）",
+      "answer": "lùyīn",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        53
+       ]
+      }
+     },
+     {
+      "n": 3,
+      "zh": "hùxiāng　bù liáng",
+      "options": {
+       "1": "hùxiāng",
+       "2": "bù liáng"
+      },
+      "transcript_zh": "hùxiāng（互相）",
+      "answer": "hùxiāng",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        53
+       ]
+      }
+     },
+     {
+      "n": 4,
+      "zh": "dànshì　dàshǐ",
+      "options": {
+       "1": "dànshì",
+       "2": "dàshǐ"
+      },
+      "transcript_zh": "dànshì（但是）",
+      "answer": "dànshì",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        53
+       ]
+      }
+     },
+     {
+      "n": 5,
+      "zh": "jiàn miàn　jiànkāng",
+      "options": {
+       "1": "jiàn miàn",
+       "2": "jiànkāng"
+      },
+      "transcript_zh": "jiànkāng（健康）",
+      "answer": "jiànkāng",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        53
+       ]
+      }
+     },
+     {
+      "n": 6,
+      "zh": "huàbǐ　huàmiàn",
+      "options": {
+       "1": "huàbǐ",
+       "2": "huàmiàn"
+      },
+      "transcript_zh": "huàmiàn（画面）",
+      "answer": "huàmiàn",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        53
+       ]
+      }
+     },
+     {
+      "n": 7,
+      "zh": "zìjǐ　zìlì",
+      "options": {
+       "1": "zìjǐ",
+       "2": "zìlì"
+      },
+      "transcript_zh": "zìjǐ（自己）",
+      "answer": "zìjǐ",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        53
+       ]
+      }
+     },
+     {
+      "n": 8,
+      "zh": "yùdào　yùxiǎng",
+      "options": {
+       "1": "yùdào",
+       "2": "yùxiǎng"
+      },
+      "transcript_zh": "yùdào（遇到）",
+      "answer": "yùdào",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        53
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "三、语音 第二部分",
+    "type_zh": "语音 第二部分 听力",
+    "instruction_zh": "第9–16题：听录音，给下列词语标注声调",
+    "instruction_en": "Questions 9-16: Listen to the recording and add the tone marks to the following words.",
+    "items": [
+     {
+      "n": 9,
+      "zh": "zaijian　zaixian",
+      "transcript_zh": "zàijiàn（再见）　zàixiàn（在线）",
+      "answer": "zàijiàn　zàixiàn",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        53
+       ]
+      }
+     },
+     {
+      "n": 10,
+      "zh": "ban dian　ban nian",
+      "transcript_zh": "bàn diǎn（半点）　bàn nián（半年）",
+      "answer": "bàn diǎn　bàn nián",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        53
+       ]
+      }
+     },
+     {
+      "n": 11,
+      "zh": "dianying　dianshi",
+      "transcript_zh": "diànyǐng（电影）　diànshì（电视）",
+      "answer": "diànyǐng　diànshì",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        53
+       ]
+      }
+     },
+     {
+      "n": 12,
+      "zh": "yundong　yunxing",
+      "transcript_zh": "yùndòng（运动）　yùnxíng（运行）",
+      "answer": "yùndòng　yùnxíng",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        53
+       ]
+      }
+     },
+     {
+      "n": 13,
+      "zh": "huozhe　huoche",
+      "transcript_zh": "huòzhě（或者）　huǒchē（火车）",
+      "answer": "huòzhě　huǒchē",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        53
+       ]
+      }
+     },
+     {
+      "n": 14,
+      "zh": "shui jiao　shijie",
+      "transcript_zh": "shuì jiào（睡觉）　shìjiè（世界）",
+      "answer": "shuì jiào　shìjiè",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        53
+       ]
+      }
+     },
+     {
+      "n": 15,
+      "zh": "jijie　ditie",
+      "transcript_zh": "jìjié（季节）　dìtiě（地铁）",
+      "answer": "jìjié　dìtiě",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        53
+       ]
+      }
+     },
+     {
+      "n": 16,
+      "zh": "banfa　bianhua",
+      "transcript_zh": "bànfǎ（办法）　biànhuà（变化）",
+      "answer": "bànfǎ　biànhuà",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        53
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "四、汉字 第一部分",
+    "type_zh": "汉字 偏旁归类",
+    "instruction_zh": "第1–2题：看汉字，找出含有下列偏旁的汉字",
+    "instruction_en": "Questions 1-2: Look at the characters and group the characters with the same radical.",
+    "items": [
+     {
+      "n": 1,
+      "zh": "辶：________",
+      "options": {
+       "A": "问",
+       "B": "道",
+       "C": "闪",
+       "D": "边",
+       "E": "送",
+       "F": "间",
+       "G": "闷",
+       "H": "这"
+      },
+      "answer": "B D E H",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        53
+       ]
+      }
+     },
+     {
+      "n": 2,
+      "zh": "门：________",
+      "options": {
+       "A": "问",
+       "B": "道",
+       "C": "闪",
+       "D": "边",
+       "E": "送",
+       "F": "间",
+       "G": "闷",
+       "H": "这"
+      },
+      "answer": "A C F G",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        53
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "四、汉字 第二部分",
+    "type_zh": "汉字 写独体字",
+    "instruction_zh": "第3题：看笔顺，写独体字",
+    "instruction_en": "Question 3: Look at the stroke order and practice writing the single-component characters.",
+    "items": [
+     {
+      "n": "3-在",
+      "zh": "在",
+      "pinyin": "zài",
+      "hint_zh": "笔顺图6步：一 → ナ → … → 在（中间步骤为部分笔画图）；田字格书写练习"
+     },
+     {
+      "n": "3-子",
+      "zh": "子",
+      "pinyin": "zǐ",
+      "hint_zh": "笔顺：㇇ → 了 → 子；田字格书写练习"
+     },
+     {
+      "n": "3-工",
+      "zh": "工",
+      "pinyin": "gōng",
+      "hint_zh": "笔顺：一 → 丅 → 工；田字格书写练习"
+     }
+    ]
+   }
+  ],
+  "answers_ref": {
+   "book": "workbook_answers",
+   "pages": [
+    48,
+    49,
+    50,
+    51,
+    52,
+    53
+   ]
+  }
+ },
+ "unclear": [
+  "Сурах бичиг PDF х.85 课文2 B-ийн мөр: пиньинь «Wǒ zài xuéxiào gōngzuò?» (асуултын тэмдэгтэй), ханз «我在学校工作。» (цэгтэй) — номын зөрүү, номд байгаагаар хоёуланг нь үлдээсэн (зургийг 250dpi-ээр томруулж шалгасан).",
+  "课文2-ийн гарчиг «在车站 At the railway station» — яриа (ажлын газар асуух) болон зураг (цагаан халаадтай эмч) буудалтай холбоогүй мэт; номд байгаагаар.",
+  "生词 12 医院 — үгийн ай «n» цэггүй хэвлэгдсэн (бусад нь «n.»); номд байгаагаар.",
+  "生词 7 «下面（下） xiàmiàn(xià)» — номд нэг мөрөнд хаалттай хэвлэгдсэн тул zh/pinyin-д хаалттай нь үлдээсэн.",
+  "练习3 instruction_en «language points ard words» — номын үсгийн алдаа («and»), байгаагаар.",
+  "运用2 小组活动 instruction_en «take notes Each group…» — цэг дутуу, номд байгаагаар. Хүснэгтэд зөвхөн 1-р мөр (李朋) бөглөгдсөн, 2–5-р мөр хоосон.",
+  "练习2 асуулт 4–5 «她爸爸…» гэж, харин 课文3-т «你爸爸…／他在哪儿呢？» — өөр хүний өнцгөөс асууж буй тул зөрүү биш байж болох ч тэмдэглэв.",
+  "Энэ хичээлд 文化 болон 课堂用语 хэсэг байхгүй (сурах бичиг PDF х.84–91-ийг бүгдийг шалгасан).",
+  "Багшийн номын PDF х.55 бол 第8课-ийн «附注：建议教学用具» (第7、8课生词卡片 …) — 第9课-д хамаарахгүй тул teacher.ref-д оруулаагүй; 第9课 = PDF х.56–62.",
+  "Багшийн ном 课文 асуулт: 课文1-ийн 目标句 «小猫在那儿。小狗在椅子下面。» хоёр асуултад өгүүлбэр тус бүрээр яг тохирох тул a_zh-д хуваасан. 课文2 («他在学校工作，他儿子不在学校工作。他儿子在医院工作，他是医生。») ба 课文3 («她爸爸不在家，在医院。») 目标句-ийг хуваагаагүй — teacher.steps «4 课文»-д бүтнээр.",
+  "Багшийн ном 汉字 补充练习 «辨认下列汉字并组词 子/字、哪/那、朋/明» — хариулт хэвлэгдээгүй; teacher.steps «6 汉字»-д.",
+  "Сурах бичгийн 练习2 回答问题、练习3 描述图片、运用 — хариулт хэвлэгдээгүй.",
+  "Аудио файлын нэр мэдэгдэхгүй тул audio талбар орхисон. Номын CD тэмдэг: сурах бичиг 课文1–3 = 09-1／09-2／09-3; 拼音 声调搭配 = 09-4; дасгалын ном 听力 = 09-1, 语音 = 09-2.",
+  "Ханзны эртний хэлбэрийн хувьсал (在/子/工 тус бүр 4 шат) ба 田字格 зурлагын дараалал (在 6 алхам; 子 ㇇ 了 子；工 一 丅 工), 半包围结构-ийн 图解 — зөвхөн зурагт; Unicode-оор бүрэн дүрслэх боломжгүй хэсгийг «［图］»/алхмын тоогоор тэмдэглэсэн. 在-ийн завсрын алхмууд (дасгалын ном PDF х.72) хэсэгчилсэн зурлагын дүрс.",
+  "Сурах бичгийн 拼音 хэсгийн дуудлагын хэлбэрийн (调型) зураг ба 面包/面条/电脑/电话 зургууд — notes_zh-д «［…］» гэж.",
+  "Дасгалын номын хариулт ХОЁР эх сурвалжид: тусдаа хариултын ном (workbook_answers PDF х.48–53) ба багшийн номын хавсралт 参考答案 (teacher PDF х.121) — бүгд тохирч байна (1–4: ×√√×, 5–8: EABD, 9–12: CACB, 13–17: ××√√×, 18–22: ACEDB, 23–26: EBAC, 27–30: FIGH, 语音 1–16, 汉字 1: BDEH, 2: ACFG). answer_ref = workbook_answers.",
+  "Дасгалын номын 听力 бичвэр (transcript_zh) ба 语音 1–16-ийн ханз — багшийн номын хавсралт PDF х.120–121-ээс; дасгалын номд хэвлэгдээгүй.",
+  "Дасгалын ном 听力 第三部分 9–12-т асуулт хэвлэгдээгүй (зөвхөн A/B/C сонголт) — zh хоосон, асуулт transcript_zh-д.",
+  "Дасгалын ном 语音 第一部分 (1–8) сонголтод үсэг байхгүй — options-д «1»/«2» түлхүүрээр, answer-д сонгосон үеийг дасгалын номын бичлэгээр (жишээ нь «bàn tiān», хавсралтад «bàntiān» зайгүй) бичсэн.",
+  "Дасгалын номын 例如 мөрүүдийн англи орчуулга (very happy, How do you do? …) — item-д англи текстийн талбар байхгүй тул picture_desc_en-д «Printed English:» угтвартай оруулсан.",
+  "Дасгалын ном 阅读 第一部分 заавар «第13–17：…» — «题» үг дутуу хэвлэгдсэн, номд байгаагаар.",
+  "Дасгалын ном 阅读 第三部分 24, 26 болон жишээний пиньинь мөр хоосон зайгаар төгсдөг (номд хэвлэгдсэнээр, «______» нэмээгүй).",
+  "Дасгалын номын 三、语音 болон 四、汉字 хэсгийн дугаарлалт 1-ээс дахин эхэлдэг (номд байгаагаар).",
+  "Зургийн тайлбарууд (picture_desc_en, pictures_desc_en, options-ийн [picture]) зургаас товч, объектив дүрсэлсэн."
+ ],
+ "verified_pages": [
+  48,
+  49,
+  50,
+  51,
+  52,
+  53,
+  55,
+  56,
+  57,
+  58,
+  59,
+  60,
+  61,
+  62,
+  65,
+  66,
+  67,
+  68,
+  69,
+  70,
+  71,
+  72,
+  84,
+  85,
+  86,
+  87,
+  88,
+  89,
+  90,
+  91,
+  120,
+  121
+ ],
+ "schema_version": 1
+}

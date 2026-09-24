@@ -1,0 +1,1486 @@
+{
+ "level": "hsk1",
+ "lesson": 2,
+ "book": "HSK1",
+ "title_zh": "谢谢你",
+ "title_pinyin": "Xièxie nǐ",
+ "title_en": "Thank you",
+ "textbook": {
+  "ref": {
+   "book": "textbook",
+   "pages": [
+    28,
+    29,
+    30,
+    31,
+    32,
+    33
+   ]
+  },
+  "pronunciation": [
+   {
+    "title_zh": "1 汉语拼音的声母和韵母（2）",
+    "notes_en": [
+     "Initials and Finals of Chinese Pinyin (2)"
+    ],
+    "rows": [
+     "声母 Initials（2）",
+     "zh ch sh r",
+     "z c s",
+     "韵母 Finals（2）",
+     "ou iou (iu)",
+     "an ian uan üan",
+     "en in uen (un) ün",
+     "ang iang uang",
+     "eng ing ueng",
+     "ong iong"
+    ]
+   },
+   {
+    "title_zh": "看图片，朗读下列单音节词语",
+    "notes_en": [
+     "Look at the pictures and read the monosyllabic words aloud.",
+     "[pictures] sān: golden numeral 3; shān: snowy mountain peaks; zhōng: clock set in a ship's anchor-shaped stand; yáng: sheep; líng: golden numeral 0; cài: plate of stir-fried dish; shǒu: open hand; xióng: black bear; yún: clouds in the sky; xīng: stars in the night sky; yuán: Chinese banknotes (100, 20 yuan); rén: crowd of people; chuán: rowing boat; chuáng: bed; chī: girl eating an apple; rè: hot man in front of an electric fan"
+    ],
+    "rows": [
+     "sān shān zhōng yáng",
+     "líng cài shǒu xióng",
+     "yún xīng yuán rén",
+     "chuán chuáng chī rè"
+    ]
+   },
+   {
+    "title_zh": "看图片，朗读下列双音节词语",
+    "notes_en": [
+     "Look at the pictures and read the disyllabic words aloud.",
+     "[pictures] bīngxiāng: refrigerator; jīdàn: egg; sījī: driver at the wheel of a bus; zúqiú: football; jīchǎng: woman with luggage watching a plane at an airport; pá shān: hiker climbing a mountain; shǒubiǎo: wristwatch; xióngmāo: pandas"
+    ],
+    "rows": [
+     "bīngxiāng jīdàn sījī zúqiú",
+     "jīchǎng pá shān shǒubiǎo xióngmāo"
+    ]
+   },
+   {
+    "title_zh": "2 汉语的轻声 例如",
+    "notes_en": [
+     "The Neutral Tone. For example:",
+     "[pictures] mother and daughter; grandfather with grandson; grandmother with granddaughter; father with son"
+    ],
+    "rows": [
+     "māma 妈妈",
+     "yéye 爷爷",
+     "nǎinai 奶奶",
+     "bàba 爸爸"
+    ]
+   },
+   {
+    "title_zh": "朗读下列音节，注意轻声的读法",
+    "notes_en": [
+     "Read the syllables aloud and pay attention to the neutral tone."
+    ],
+    "rows": [
+     "zhuōzi fángzi yǐzi guìzi",
+     "tāmen rénmen wǒmen dìdi",
+     "yīfu érzi xǐhuan rènshi",
+     "xiānsheng péngyou wǎnshang piàoliang"
+    ]
+   },
+   {
+    "title_zh": "3 拼音规则（1）：标调法和省写 （1）标调法 朗读下列音节，注意声调标注的位置",
+    "notes_en": [
+     "Read the syllables aloud and pay attention to the positions of the tone marks."
+    ],
+    "rows": [
+     "xuéxiào bāng máng lánqiú nǚ'ér",
+     "yóu yǒng shǒubiǎo zhōngyú gōngsī",
+     "shíjiān shēntǐ kǎoshì guójiā",
+     "bàozhǐ hǎochī xièxie kèqi"
+    ]
+   },
+   {
+    "title_zh": "3 拼音规则（1）：标调法和省写 （2）省写 朗读下列音节，注意韵母省写的部分",
+    "notes_en": [
+     "Read the syllables aloud and pay attention to the abbreviated finals."
+    ],
+    "rows": [
+     "xiūxi shuì jiào lúnchuán niúnǎi",
+     "píjiǔ ángguì liúyán kāi huì",
+     "tǎolùn zúqiú Lúndūn shīrùn",
+     "cánkuì shuǐguǒ táozuì shùnlì"
+    ]
+   }
+  ],
+  "texts": [
+   {
+    "n": 1,
+    "kind": "dialogue",
+    "lines": [
+     {
+      "speaker": "A",
+      "zh": "谢谢！",
+      "pinyin": "Xièxie!"
+     },
+     {
+      "speaker": "B",
+      "zh": "不谢！",
+      "pinyin": "Bú xiè!"
+     }
+    ],
+    "new_words": [
+     {
+      "n": 1,
+      "zh": "谢谢",
+      "pinyin": "xièxie",
+      "pos": "v.",
+      "en": "to thank",
+      "text": 1
+     },
+     {
+      "n": 2,
+      "zh": "不",
+      "pinyin": "bù",
+      "pos": "adv.",
+      "en": "no, not",
+      "text": 1
+     }
+    ],
+    "english_version": "A: Thank you!\nB: Sure!"
+   },
+   {
+    "n": 2,
+    "kind": "dialogue",
+    "lines": [
+     {
+      "speaker": "A",
+      "zh": "谢谢你！",
+      "pinyin": "Xièxie nǐ!"
+     },
+     {
+      "speaker": "B",
+      "zh": "不客气！",
+      "pinyin": "Bú kèqi!"
+     }
+    ],
+    "new_words": [
+     {
+      "n": 3,
+      "zh": "不客气",
+      "pinyin": "bú kèqi",
+      "en": "you're welcome, don't mention it",
+      "text": 2
+     }
+    ],
+    "english_version": "A: Thank you!\nB: You're welcome!"
+   },
+   {
+    "n": 3,
+    "kind": "dialogue",
+    "lines": [
+     {
+      "speaker": "A",
+      "zh": "再见！",
+      "pinyin": "Zàijiàn!"
+     },
+     {
+      "speaker": "B",
+      "zh": "再见！",
+      "pinyin": "Zàijiàn!"
+     }
+    ],
+    "new_words": [
+     {
+      "n": 4,
+      "zh": "再见",
+      "pinyin": "zàijiàn",
+      "pos": "v.",
+      "en": "to see you around",
+      "text": 3
+     }
+    ],
+    "english_version": "A: Goodbye!\nB: Bye!"
+   }
+  ],
+  "classroom_expressions": [
+   {
+    "zh": "打开书。",
+    "pinyin": "Dǎkāi shū.",
+    "en": "Open your book."
+   },
+   {
+    "zh": "请大声读。",
+    "pinyin": "Qǐng dà shēng dú.",
+    "en": "Read aloud."
+   },
+   {
+    "zh": "再读一遍。",
+    "pinyin": "Zài dú yí biàn.",
+    "en": "Read once again. /Repeat."
+   },
+   {
+    "zh": "一起读。",
+    "pinyin": "Yìqǐ dú.",
+    "en": "Read together."
+   },
+   {
+    "zh": "有问题吗？",
+    "pinyin": "Yǒu wèntí ma?",
+    "en": "Any questions?"
+   }
+  ],
+  "grammar": [
+   {
+    "n": 1,
+    "title_zh": "汉语的轻声",
+    "title_en": "The Neutral Tone",
+    "explanation_zh": "汉语中除了四声以外，还有一个读得又短又轻的声调，叫作“轻声”。例如：",
+    "explanation_en": "Apart from the four tones mentioned previously, there is another tone in Chinese, which is short and light, known as “the neutral tone”. For example:",
+    "examples": [
+     {
+      "n": 1,
+      "zh": "妈妈",
+      "note_zh": "māma"
+     },
+     {
+      "n": 2,
+      "zh": "爷爷",
+      "note_zh": "yéye"
+     },
+     {
+      "n": 3,
+      "zh": "奶奶",
+      "note_zh": "nǎinai"
+     },
+     {
+      "n": 4,
+      "zh": "爸爸",
+      "note_zh": "bàba"
+     }
+    ],
+    "practice_instruction_zh": "朗读下列音节，注意轻声的读法 Read the syllables aloud and pay attention to the neutral tone.（音节见 textbook.pronunciation）"
+   },
+   {
+    "n": 2,
+    "title_zh": "拼音规则（1）：标调法和省写",
+    "title_en": "Rules of Pinyin (1): Tone Marking and Abbreviation",
+    "explanation_zh": "（1）标调法\n汉语拼音的声调必须标注在元音字母上。当一个韵母含有两个或者两个以上元音字母时，调号标注在开口度较大的那个元音字母上。调号标注的主要元音顺序为a、o、e、i、u、ü，但iu是个例外，iu是iou的省略形式，声调标注在u上。轻声音节不标声调。\n（2）省写\niou、uei、uen前面加声母的时候，写成：iu、ui、un。例如niu、gui、lun。",
+    "explanation_en": "(1) Tone Marking\nTone marks in Chinese pinyin are put above vowels. When there are two or more vowels in the final of a syllable, the tone should be marked on the one that is pronounced with the mouth more wide-open, the sequence being “a, o, e, i, u, ü” in the descending order. The compound final iu is an exception to this rule, in which the tone mark is put on u rather than i as iu is the abbreviation of iou. The neutral tone is unmarked.\n(2) Abbreviation\nWhen iou, uei or uen follows an initial, they are written as iu, ui and un respectively, for example, niu, gui, lun.",
+    "structure_rows": [
+     "iou → iu",
+     "uei → ui",
+     "uen → un"
+    ],
+    "examples": [
+     {
+      "n": 1,
+      "zh": "niu",
+      "note_zh": "iou → iu"
+     },
+     {
+      "n": 2,
+      "zh": "gui",
+      "note_zh": "uei → ui"
+     },
+     {
+      "n": 3,
+      "zh": "lun",
+      "note_zh": "uen → un"
+     }
+    ],
+    "practice_instruction_zh": "朗读下列音节，注意声调标注的位置／朗读下列音节，注意韵母省写的部分（音节见 textbook.pronunciation）"
+   }
+  ],
+  "exercises": [],
+  "characters": {
+   "knowledge_title_zh": "汉字的笔画（2）：㇕、㇄、亅；认识独体字",
+   "knowledge_zh": "1 汉字的笔画（2）：㇕、㇄、亅\n笔画名称 | 运笔方向 | 例字\n㇕ 横折 héngzhé | [运笔方向图] | 口 kǒu、日 rì\n㇄ 竖折 shùzhé | [运笔方向图] | 山 shān、出 chū\n亅 竖钩 shùgōu | [运笔方向图] | 丁 dīng、小 xiǎo\n2 认识独体字\n（1）“口”，本义是嘴巴，字形像人张开的嘴巴。\n（2）“见”，字形上边是“目”，下边是“人”，意思是“睁着眼睛看”。\n（3）“山”，字形像起伏的山峰，意思是“山峰”。\n（4）“小”，字形像细微的沙，现在意思与“大”相对。\n（5）“不”，原来表示一种工具，现在虚化为副词，表示否定。",
+   "knowledge_en": "Strokes of Chinese Characters (2): ㇕, ㇄, 亅\nStroke | Direction | Example Characters\n㇕ héngzhé horizontal-turning | 口 kǒu mouth; 日 rì sun\n㇄ shùzhé vertical-turning | 山 shān mountain; 出 chū to come/go out\n亅 shùgōu vertical hook | 丁 dīng man, member of a family; 小 xiǎo small, little\nSingle-Component Characters\n(1) The basic meaning of “口” is “mouth”, and the character is shaped like a mouth.\n(2) Its traditional form of “见” has a “目 (eye)” on the top and a “人 (person)” at the bottom, meaning “watching with eyes open”.\n(3) “山” means “mountain” and was originally shaped like rolling mountains.\n(4) “小” was originally shaped like tiny grains of sand. Now it means “small”, opposite to “大 (big)”.\n(5) “不” originally referred to a tool. Now it's a negative adverb.",
+   "characters": [
+    {
+     "zh": "口",
+     "pinyin": "kǒu",
+     "note_zh": "本义是嘴巴，字形像人张开的嘴巴。\n字形演变图（古文字 → 口）\n笔顺：丨 → 冂 → 口"
+    },
+    {
+     "zh": "见",
+     "pinyin": "jiàn",
+     "note_zh": "字形上边是“目”，下边是“人”，意思是“睁着眼睛看”。\n字形演变图（古文字 → 见）\n笔顺：丨 → 冂 → 冂丿 → 见"
+    },
+    {
+     "zh": "山",
+     "pinyin": "shān",
+     "note_zh": "字形像起伏的山峰，意思是“山峰”。\n字形演变图（古文字 → 山）\n笔顺：丨 → 丨㇄ → 山"
+    },
+    {
+     "zh": "小",
+     "pinyin": "xiǎo",
+     "note_zh": "字形像细微的沙，现在意思与“大”相对。\n字形演变图（古文字 → 小）\n笔顺：亅 → 亅丿 → 小"
+    },
+    {
+     "zh": "不",
+     "pinyin": "bù",
+     "note_zh": "原来表示一种工具，现在虚化为副词，表示否定。\n字形演变图（古文字 → 不）\n笔顺：一 → 丆 → 丆丨 → 不"
+    }
+   ]
+  }
+ },
+ "teacher": {
+  "ref": {
+   "book": "teacher",
+   "pages": [
+    8,
+    9,
+    10,
+    11,
+    12
+   ]
+  },
+  "objectives_zh": [
+   "重点句型：学生能够了解并掌握：（1）谢谢！（2）不谢！不客气！（3）再见！",
+   "语音：学生能够：（1）熟练朗读本课的7个声母、18个韵母（2）熟悉含有轻声音节的双音节词语的声调模式（3）熟悉拼音规则的标调法和省写规则",
+   "汉字：学生能够：（1）熟练认读本课生词（2）掌握“㇕、㇄、亅”三种笔画的正确写法（3）独立书写独体字“口、见、山、小、不”",
+   "功能：学生能够：（1）表达感谢（2）告别"
+  ],
+  "steps": [
+   {
+    "title_zh": "一 复习旧课",
+    "body_zh": "1. 教师和学生之间用“你好”、“你们好”、“您好”进行简单问候，组织学生进入上课状态。\n2. 教师出示第1课的拼音卡片（或挂图），要求学生朗读第一课所学的声母和韵母。\n3. 教师出示第1课独体字卡片，要求学生快速认读，语音准确。"
+   },
+   {
+    "title_zh": "二 学习新课 1 语音 （1）声母",
+    "body_zh": "本课声母：\nzh | ch | sh | r\nz | c | s |\n（注意：见 notes_zh）\n练习册相关练习：第5页／四"
+   },
+   {
+    "title_zh": "1 语音 （2）韵母",
+    "body_zh": "本课韵母：\nou | iou（iu） | |\nan | ian | uan | üan\nen | in | uen（un） | ün\nang | iang | uang |\neng | ing | ueng |\nong | iong | |\n（注意：见 notes_zh）\n练习册相关练习：第6页／五"
+   },
+   {
+    "title_zh": "1 语音 （3）汉语的轻声",
+    "body_zh": "汉语中的声调除了基本的四声以外，还有一个读得又短又轻的声调，叫作“轻声”。在说话时，轻声音节的音高是由前一个音节的音高决定的。第一声后边的轻声是半低的轻声音节，第二声后边的轻声音高居中，第三声后边的轻声是半高的轻声音节，而第四声后边的轻声音节音高较低。轻声的读法，一般来说是在第一声、第二声、第四声后面读得比前一个音节要低，而第三声后面读得比前一个音节要高一些。\n教师可利用课本第10页的轻声音节词语，组织学生进行朗读。"
+   },
+   {
+    "title_zh": "1 语音 （4）拼音规则（1）：标调法和省写 ① 标调法",
+    "body_zh": "第一声 | 第二声 | 第三声 | 第四声\nˉ | ˊ | ˇ | ˋ\n汉语拼音的声调必须标注在主要元音字母上。当一个韵母含有两个或者两个以上元音字母时，调号标注在开口度较大的那个元音字母上。调号标注的主要元音顺序为a、o、e、i、u、ü，但iu是个例外，iu是iou的省略形式，声调标注在u上。轻声音节不标声调。\n补充材料\n《标调歌》Biāo Diào Gē\n看见a母别放过，Kànjiàn a mǔ bié fàngguò,\n没有a母找o、e。Méiyǒu a mǔ zhǎo o、e.\ni、u并列标在后，i、u bìngliè biāo zài hòu,\n单个韵母不用说。Dān gè yùnmǔ búyòng shuō.\ni上标调点不搁。i shàng biāo diào diǎn bù gē.\n练习册相关练习：第6页／六"
+   },
+   {
+    "title_zh": "1 语音 （4）拼音规则（1）：标调法和省写 ② 省写",
+    "body_zh": "iou、uei、uen前面加声母的时候，写成：iu、ui、un。例如：niú、guǐ、lùn。\n教师可利用课本第11页的练习，引导学生注意这三个省写韵母在音节中出现的形式。"
+   },
+   {
+    "title_zh": "2 课文",
+    "body_zh": "· 教师领读三段课文，要求学生跟读模仿。注意语音语调自然流畅。\n· 教师组织学生两人一组分角色读课文，然后请个别学生朗读，检查朗读情况。\n练习册相关练习：第6页／七"
+   },
+   {
+    "title_zh": "3 汉字",
+    "body_zh": "① 知识点解析\n笔画\n㇕（横折）、㇄（竖折）、亅（竖钩）\n独体字\n口：本义是嘴巴，字形像人张开的嘴巴。\n见：繁体字形上边是“目”，下边是“人”，意思是“睁着眼睛看”。\n山：字形像起伏的山峰，意思是“山峰”。\n小：字形像细微的沙，现在意思与“大”相对。\n不：原来表示一种工具，现在虚化为副词，表示否定。\n② 汉字练习\n· 教师板书本课笔画“㇕、㇄、亅”，给学生展示各个笔画的运笔方向，并书写各自的代表汉字，帮助学生识记笔画。\n· 教师板书或者用手指在空中书写本课独体字“口、见、山、小、不”，带领学生识记独体字的笔画笔顺。\n· 补充练习\n给下列汉字注音并组词\n见（　　）________\n不（　　）________\n练习册相关练习：第7页／八"
+   },
+   {
+    "title_zh": "4 课堂用语",
+    "body_zh": "教师带领学生朗读课堂用语，并使学生熟悉其含义。练习课堂用语时可以只标注拼音，不出现汉字。\n（1）打开书。\n（2）请大声读。\n（3）再读一遍。\n（4）一起读。\n（5）有问题吗？"
+   },
+   {
+    "title_zh": "5 补充课堂活动——听一听，找一找",
+    "body_zh": "教师把本班学生分为A、B两组，把36个韵母分别制作成卡片（两套），打乱顺序分发给两组学生。教师随机朗读36个韵母，并在黑板上划分出A、B两个区域，要求各组学生按照老师朗读的顺序，把自己手中的韵母卡片排列在黑板上各组的区域内。最后，教师再次朗读一遍全部韵母，并订正A、B两组的答案。正确率高的一组获胜。\n如按以下括号中的顺序朗读韵母：\nA组：（1）ie（3）o（5）iu（7）eng（9）ü（11）iong（13）ai（15）er（17）uo（19）an（21）en（23）uang（25）i（27）ing（29）ua（31）uan（33）ia（35）ian\nB组：（2）ei（4）ün（6）ao（8）e（10）un（12）ou（14）ang（16）iao（18）in（20）ui（22）a（24）uai（26）ün（28）u（30）ong（32）üan（34）ueng（36）iang"
+   },
+   {
+    "title_zh": "附注：建议教学用具",
+    "body_zh": "1. 拼音卡片：第1、2课拼音卡片（或挂图）\n2. 独体字卡片：第1、2课独体字卡片"
+   }
+  ],
+  "notes_zh": [
+   "注意：z、c、s这组声母的发音部位是舌尖前。发z、c时，舌尖前部与上齿背接触，然后马上打开形成缝隙，z没有强烈的气流通过，而c则有明显的气流通过。发s时，舌尖前与上齿背始终不接触，保留缝隙使气流流出。如果是欧美学生，建议可以先教s，由s带出z和c。（具体的发音辨析将在第3课出现，本课学生第一次接触，简单提示发音要点即可。）",
+   "注意：zh、ch、sh、r是一组翘舌音，是由翘起的舌尖和硬腭前部配合而发音的。发zh、ch时，舌尖要先和硬腭接触，然后打开一条缝隙让气流通过，发zh时没有强烈的气流呼出，而发ch时呼出的气流很强。发sh时，舌尖不要与硬腭接触，要始终保持一条缝隙。与sh不同，在发r时声带要振动。（具体的发音辨析将在第4课出现，本课学生第一次接触，简单提示发音要点即可。）",
+   "注意：前鼻音和后鼻音也是容易发生混淆的两组音。我们练习发音时应该从两方面来注意它们的区别：一是发音部位不同，发前鼻音n[n]时舌尖要抵住上齿龈，而发后鼻音ng[ŋ]时，舌头的后部要拱起，舌根向后收缩，抵住软腭；二是开口度不同，发n[n]时上下齿相对，开口较小，而发ng[ŋ]时开口度较大。（具体的发音辨析将在第4课出现，本课学生第一次接触，简单提示发音要点即可。）",
+   "注意：a、e、i三个单韵母的开口度依次减小，相应的前鼻音韵母an、en、in以及后鼻音韵母ang、eng、ing的开口度也依次减小。开口度的大小是发好这两组音的关键。",
+   "注意：汉语的复韵母由两个或者三个音素组成，根据主要元音在复韵母中的不同位置，复韵母可以分为前响二合元音韵母、后响二合元音韵母和中响三合元音韵母。\n前响二合元音韵发音时舌位从第一个音的位置滑到第二个音的位置，第一个音发音时间较长，较为响亮。如：ai ei ao ou\n后响二合元音韵母发音时舌位从第一个音的位置滑到第二个音的位置，第二个音发音时间较长，较为响亮。如：ia ua uo ie üe\n中响三合元音韵母由三个音素组成，发音时中间的一个音发音时间最长，最响亮。如：uai uei（ui） iao iou（iu）"
+  ],
+  "summary_zh": "· 感谢和告别：谢谢！不谢！不客气！再见！\n· 语音：声母7个、韵母18个\n　汉语的轻声\n　拼音规则（1）：标调法和省写\n· 汉字：独体字“口、见、山、小、不”"
+ },
+ "workbook": {
+  "ref": {
+   "book": "workbook",
+   "pages": [
+    13,
+    14,
+    15,
+    16
+   ]
+  },
+  "sections": [
+   {
+    "n": "一",
+    "type_zh": "朗读",
+    "instruction_zh": "朗读下列单音节词语",
+    "instruction_en": "Read the monosyllabic words aloud.",
+    "items": [
+     {
+      "zh": "zhī zhí zhǐ zhì"
+     },
+     {
+      "zh": "chuāng chuáng chuǎng chuàng"
+     },
+     {
+      "zh": "xiāng xiáng xiǎng xiàng"
+     },
+     {
+      "zh": "shēn shén shěn shèn"
+     },
+     {
+      "zh": "zān zán zǎn zàn"
+     },
+     {
+      "zh": "xuān xuán xuǎn xuàn"
+     },
+     {
+      "zh": "yīng yíng yǐng yìng"
+     },
+     {
+      "zh": "rāng ráng rǎng ràng"
+     }
+    ]
+   },
+   {
+    "n": "二",
+    "type_zh": "朗读",
+    "instruction_zh": "朗读下列双音节词语",
+    "instruction_en": "Read the disyllabic words aloud.",
+    "items": [
+     {
+      "zh": "rènzhēn rúguǒ xǐ zǎo zhàopiàn"
+     },
+     {
+      "zh": "cídiǎn yǐqián yǐhòu yǐnliào"
+     },
+     {
+      "zh": "zháojí huǒchē zìjǐ yǎnjìng"
+     },
+     {
+      "zh": "tóngxué tóngshì tóngyì tūrán"
+     },
+     {
+      "zh": "yìsi zhàngfu tóufa shìqing"
+     }
+    ]
+   },
+   {
+    "n": "三",
+    "type_zh": "读一读，猜一猜",
+    "instruction_zh": "读一读，猜一猜：给下列图片选择相应的词语",
+    "instruction_en": "Read and Guess: Match the pictures with the words.",
+    "items": [
+     {
+      "n": 1,
+      "zh": "（　　）",
+      "picture_desc_en": "hamburger",
+      "options": {
+       "A": "qiǎokèlì",
+       "B": "shāfā",
+       "C": "xiāngbīn",
+       "D": "màikèfēng",
+       "E": "hànbǎo"
+      },
+      "answer": "E",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        8
+       ]
+      }
+     },
+     {
+      "n": 2,
+      "zh": "（　　）",
+      "picture_desc_en": "two champagne glasses",
+      "options": {
+       "A": "qiǎokèlì",
+       "B": "shāfā",
+       "C": "xiāngbīn",
+       "D": "màikèfēng",
+       "E": "hànbǎo"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        8
+       ]
+      }
+     },
+     {
+      "n": 3,
+      "zh": "（　　）",
+      "picture_desc_en": "microphone with cable",
+      "options": {
+       "A": "qiǎokèlì",
+       "B": "shāfā",
+       "C": "xiāngbīn",
+       "D": "màikèfēng",
+       "E": "hànbǎo"
+      },
+      "answer": "D",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        8
+       ]
+      }
+     },
+     {
+      "n": 4,
+      "zh": "（　　）",
+      "picture_desc_en": "pieces of chocolate",
+      "options": {
+       "A": "qiǎokèlì",
+       "B": "shāfā",
+       "C": "xiāngbīn",
+       "D": "màikèfēng",
+       "E": "hànbǎo"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        8
+       ]
+      }
+     },
+     {
+      "n": 5,
+      "zh": "（　　）",
+      "picture_desc_en": "sofa",
+      "options": {
+       "A": "qiǎokèlì",
+       "B": "shāfā",
+       "C": "xiāngbīn",
+       "D": "màikèfēng",
+       "E": "hànbǎo"
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        8
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "四",
+    "type_zh": "听力",
+    "instruction_zh": "听录音，写出听到的声母并朗读",
+    "instruction_en": "Listen to the recording, write down the initials you hear and read the syllables aloud.",
+    "items": [
+     {
+      "n": 1,
+      "zh": "____én",
+      "transcript_zh": "rén（人）",
+      "answer": "r",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        9
+       ]
+      }
+     },
+     {
+      "n": 2,
+      "zh": "____én",
+      "transcript_zh": "shén（神）",
+      "answer": "sh",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        9
+       ]
+      }
+     },
+     {
+      "n": 3,
+      "zh": "____āng",
+      "transcript_zh": "zhāng（张）",
+      "answer": "zh",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        9
+       ]
+      }
+     },
+     {
+      "n": 4,
+      "zh": "____āng",
+      "transcript_zh": "zāng（脏）",
+      "answer": "z",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        9
+       ]
+      }
+     },
+     {
+      "n": 5,
+      "zh": "____ǒu",
+      "transcript_zh": "shǒu（手）",
+      "answer": "sh",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        9
+       ]
+      }
+     },
+     {
+      "n": 6,
+      "zh": "____uō",
+      "transcript_zh": "zhuō（桌）",
+      "answer": "zh",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        9
+       ]
+      }
+     },
+     {
+      "n": 7,
+      "zh": "____uò",
+      "transcript_zh": "zuò（做）",
+      "answer": "z",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        9
+       ]
+      }
+     },
+     {
+      "n": 8,
+      "zh": "____àn",
+      "transcript_zh": "zhàn（站）",
+      "answer": "zh",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        9
+       ]
+      }
+     },
+     {
+      "n": 9,
+      "zh": "____ì",
+      "transcript_zh": "zì（字）",
+      "answer": "z",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        9
+       ]
+      }
+     },
+     {
+      "n": 10,
+      "zh": "____ān",
+      "transcript_zh": "sān（三）",
+      "answer": "s",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        9
+       ]
+      }
+     },
+     {
+      "n": 11,
+      "zh": "____ì",
+      "transcript_zh": "sì（四）",
+      "answer": "s",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        9
+       ]
+      }
+     },
+     {
+      "n": 12,
+      "zh": "____án",
+      "transcript_zh": "zán（咱）",
+      "answer": "z",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        9
+       ]
+      }
+     },
+     {
+      "n": 13,
+      "zh": "____á",
+      "transcript_zh": "chá（茶）",
+      "answer": "ch",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        9
+       ]
+      }
+     },
+     {
+      "n": 14,
+      "zh": "____áng",
+      "transcript_zh": "cháng（常）",
+      "answer": "ch",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        9
+       ]
+      }
+     },
+     {
+      "n": 15,
+      "zh": "____ǒu",
+      "transcript_zh": "zǒu（走）",
+      "answer": "z",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        9
+       ]
+      }
+     },
+     {
+      "n": 16,
+      "zh": "____ōu",
+      "transcript_zh": "zhōu（周）",
+      "answer": "zh",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        9
+       ]
+      }
+     },
+     {
+      "n": 17,
+      "zh": "____ōng",
+      "transcript_zh": "zhōng（中）",
+      "answer": "zh",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        9
+       ]
+      }
+     },
+     {
+      "n": 18,
+      "zh": "____ài",
+      "transcript_zh": "cài（菜）",
+      "answer": "c",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        9
+       ]
+      }
+     },
+     {
+      "n": 19,
+      "zh": "____è",
+      "transcript_zh": "rè（热）",
+      "answer": "r",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        9
+       ]
+      }
+     },
+     {
+      "n": 20,
+      "zh": "____ē",
+      "transcript_zh": "chē（车）",
+      "answer": "ch",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        9
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "五",
+    "type_zh": "听力",
+    "instruction_zh": "听录音，写出听到的韵母并朗读",
+    "instruction_en": "Listen to the recording, write down the finals you hear and read the syllables aloud.",
+    "items": [
+     {
+      "n": 1,
+      "zh": "m____",
+      "transcript_zh": "mén（门）",
+      "answer": "én",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        9
+       ]
+      }
+     },
+     {
+      "n": 2,
+      "zh": "sh____",
+      "transcript_zh": "shān（山）",
+      "answer": "ān",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        9
+       ]
+      }
+     },
+     {
+      "n": 3,
+      "zh": "x____",
+      "transcript_zh": "xióng（熊）",
+      "answer": "ióng",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        9
+       ]
+      }
+     },
+     {
+      "n": 4,
+      "zh": "y____",
+      "transcript_zh": "yòng（用）",
+      "answer": "òng",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        9
+       ]
+      }
+     },
+     {
+      "n": 5,
+      "zh": "sh____",
+      "transcript_zh": "shuāng（双）",
+      "answer": "uāng",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        9
+       ]
+      }
+     },
+     {
+      "n": 6,
+      "zh": "x____",
+      "transcript_zh": "xiǎng（想）",
+      "answer": "iǎng",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        9
+       ]
+      }
+     },
+     {
+      "n": 7,
+      "zh": "x____",
+      "transcript_zh": "xīn（新）",
+      "answer": "īn",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        9
+       ]
+      }
+     },
+     {
+      "n": 8,
+      "zh": "ch____",
+      "transcript_zh": "chàng（唱）",
+      "answer": "àng",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        9
+       ]
+      }
+     },
+     {
+      "n": 9,
+      "zh": "n____",
+      "transcript_zh": "néng（能）",
+      "answer": "éng",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        9
+       ]
+      }
+     },
+     {
+      "n": 10,
+      "zh": "k____",
+      "transcript_zh": "kùn（困）",
+      "answer": "ùn",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        9
+       ]
+      }
+     },
+     {
+      "n": 11,
+      "zh": "f____",
+      "transcript_zh": "fēng（风）",
+      "answer": "ēng",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        9
+       ]
+      }
+     },
+     {
+      "n": 12,
+      "zh": "l____",
+      "transcript_zh": "líng（零）",
+      "answer": "íng",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        9
+       ]
+      }
+     },
+     {
+      "n": 13,
+      "zh": "g____",
+      "transcript_zh": "guān（关）",
+      "answer": "uān",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        9
+       ]
+      }
+     },
+     {
+      "n": 14,
+      "zh": "y____",
+      "transcript_zh": "yuǎn（远）",
+      "answer": "uǎn",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        9
+       ]
+      }
+     },
+     {
+      "n": 15,
+      "zh": "h____",
+      "transcript_zh": "huàn（换）",
+      "answer": "uàn",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        9
+       ]
+      }
+     },
+     {
+      "n": 16,
+      "zh": "sh____",
+      "transcript_zh": "shǒu（手）",
+      "answer": "ǒu",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        9
+       ]
+      }
+     },
+     {
+      "n": 17,
+      "zh": "ch____",
+      "transcript_zh": "chuán（船）",
+      "answer": "uán",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        9
+       ]
+      }
+     },
+     {
+      "n": 18,
+      "zh": "ch____",
+      "transcript_zh": "chuáng（床）",
+      "answer": "uáng",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        9
+       ]
+      }
+     },
+     {
+      "n": 19,
+      "zh": "x____",
+      "transcript_zh": "xiān（先）",
+      "answer": "iān",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        9
+       ]
+      }
+     },
+     {
+      "n": 20,
+      "zh": "j____",
+      "transcript_zh": "jiǔ（酒）",
+      "answer": "iǔ",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        9
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "六",
+    "type_zh": "听力",
+    "instruction_zh": "听录音，写出听到的声调并朗读",
+    "instruction_en": "Listen to the recording, add the tone marks you hear and read the syllables aloud.",
+    "items": [
+     {
+      "n": 1,
+      "zh": "zhong",
+      "transcript_zh": "zhōng（中）",
+      "answer": "zhōng",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        10
+       ]
+      }
+     },
+     {
+      "n": 2,
+      "zh": "mian",
+      "transcript_zh": "miàn（面）",
+      "answer": "miàn",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        10
+       ]
+      }
+     },
+     {
+      "n": 3,
+      "zh": "fan",
+      "transcript_zh": "fàn（饭）",
+      "answer": "fàn",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        10
+       ]
+      }
+     },
+     {
+      "n": 4,
+      "zh": "cai",
+      "transcript_zh": "cài（菜）",
+      "answer": "cài",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        10
+       ]
+      }
+     },
+     {
+      "n": 5,
+      "zh": "neng",
+      "transcript_zh": "néng（能）",
+      "answer": "néng",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        10
+       ]
+      }
+     },
+     {
+      "n": 6,
+      "zh": "zhan",
+      "transcript_zh": "zhàn（站）",
+      "answer": "zhàn",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        10
+       ]
+      }
+     },
+     {
+      "n": 7,
+      "zh": "chang",
+      "transcript_zh": "chǎng（场）",
+      "answer": "chǎng",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        10
+       ]
+      }
+     },
+     {
+      "n": 8,
+      "zh": "shou",
+      "transcript_zh": "shǒu（手）",
+      "answer": "shǒu",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        10
+       ]
+      }
+     },
+     {
+      "n": 9,
+      "zh": "shui",
+      "transcript_zh": "shuǐ（水）",
+      "answer": "shuǐ",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        10
+       ]
+      }
+     },
+     {
+      "n": 10,
+      "zh": "qing",
+      "transcript_zh": "qīng（清）",
+      "answer": "qīng",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        10
+       ]
+      }
+     },
+     {
+      "n": 11,
+      "zh": "sheng",
+      "transcript_zh": "shěng（省）",
+      "answer": "shěng",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        10
+       ]
+      }
+     },
+     {
+      "n": 12,
+      "zh": "huang",
+      "transcript_zh": "huáng（黄）",
+      "answer": "huáng",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        10
+       ]
+      }
+     },
+     {
+      "n": 13,
+      "zh": "hong",
+      "transcript_zh": "hóng（红）",
+      "answer": "hóng",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        10
+       ]
+      }
+     },
+     {
+      "n": 14,
+      "zh": "lan",
+      "transcript_zh": "lán（蓝）",
+      "answer": "lán",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        10
+       ]
+      }
+     },
+     {
+      "n": 15,
+      "zh": "re",
+      "transcript_zh": "rè（热）",
+      "answer": "rè",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        10
+       ]
+      }
+     },
+     {
+      "n": 16,
+      "zh": "rou",
+      "transcript_zh": "ròu（肉）",
+      "answer": "ròu",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        10
+       ]
+      }
+     },
+     {
+      "n": 17,
+      "zh": "cha",
+      "transcript_zh": "chá（茶）",
+      "answer": "chá",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        10
+       ]
+      }
+     },
+     {
+      "n": 18,
+      "zh": "xiang",
+      "transcript_zh": "xiǎng（想）",
+      "answer": "xiǎng",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        10
+       ]
+      }
+     },
+     {
+      "n": 19,
+      "zh": "cao",
+      "transcript_zh": "cāo（操）",
+      "answer": "cāo",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        10
+       ]
+      }
+     },
+     {
+      "n": 20,
+      "zh": "suan",
+      "transcript_zh": "suàn（算）",
+      "answer": "suàn",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        10
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "七",
+    "type_zh": "看图片，选择正确的对话",
+    "instruction_zh": "看图片，选择正确的对话",
+    "instruction_en": "Match the pictures with the dialogues.",
+    "items": [
+     {
+      "n": 1,
+      "zh": "（　　）",
+      "picture_desc_en": "a man and a woman shaking hands across an office desk with a laptop",
+      "options": {
+       "(1)": "A：谢谢你！ Xièxie nǐ! B：不客气！ Bú kèqi!",
+       "(2)": "A：再见！ Zàijiàn! B：再见！ Zàijiàn!",
+       "(3)": "A：对不起！ Duìbuqǐ! B：没关系！ Méi guānxi!",
+       "(4)": "A：你好！ Nǐ hǎo! B：你好！ Nǐ hǎo!"
+      },
+      "answer": "(4)",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        10
+       ]
+      }
+     },
+     {
+      "n": 2,
+      "zh": "（　　）",
+      "picture_desc_en": "a smiling woman receiving a wrapped gift box",
+      "options": {
+       "(1)": "A：谢谢你！ Xièxie nǐ! B：不客气！ Bú kèqi!",
+       "(2)": "A：再见！ Zàijiàn! B：再见！ Zàijiàn!",
+       "(3)": "A：对不起！ Duìbuqǐ! B：没关系！ Méi guānxi!",
+       "(4)": "A：你好！ Nǐ hǎo! B：你好！ Nǐ hǎo!"
+      },
+      "answer": "(1)",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        10
+       ]
+      }
+     },
+     {
+      "n": 3,
+      "zh": "（　　）",
+      "picture_desc_en": "a young woman with a suitcase and shoulder bag turning back and waving",
+      "options": {
+       "(1)": "A：谢谢你！ Xièxie nǐ! B：不客气！ Bú kèqi!",
+       "(2)": "A：再见！ Zàijiàn! B：再见！ Zàijiàn!",
+       "(3)": "A：对不起！ Duìbuqǐ! B：没关系！ Méi guānxi!",
+       "(4)": "A：你好！ Nǐ hǎo! B：你好！ Nǐ hǎo!"
+      },
+      "answer": "(2)",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        11
+       ]
+      }
+     },
+     {
+      "n": 4,
+      "zh": "（　　）",
+      "picture_desc_en": "a man in a suit kneeling with his palms pressed together in front of a seated woman holding a laptop",
+      "options": {
+       "(1)": "A：谢谢你！ Xièxie nǐ! B：不客气！ Bú kèqi!",
+       "(2)": "A：再见！ Zàijiàn! B：再见！ Zàijiàn!",
+       "(3)": "A：对不起！ Duìbuqǐ! B：没关系！ Méi guānxi!",
+       "(4)": "A：你好！ Nǐ hǎo! B：你好！ Nǐ hǎo!"
+      },
+      "answer": "(3)",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        11
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "八 1",
+    "type_zh": "汉字 描写笔画",
+    "instruction_zh": "汉字：1. 描写每组汉字中相应的笔画",
+    "instruction_en": "Chinese Characters: 1. Trace the corresponding stroke in each pair of characters.",
+    "items": [
+     {
+      "n": "(1)",
+      "zh": "口　日",
+      "hint_zh": "héngzhé ㇕"
+     },
+     {
+      "n": "(2)",
+      "zh": "山　出",
+      "hint_zh": "shùzhé ㇄"
+     },
+     {
+      "n": "(3)",
+      "zh": "丁　小",
+      "hint_zh": "shùgōu 亅"
+     }
+    ]
+   },
+   {
+    "n": "八 2",
+    "type_zh": "汉字 看笔顺，写独体字",
+    "instruction_zh": "2. 看笔顺，写独体字",
+    "instruction_en": "Look at the stroke order and practice writing the single-component characters.",
+    "items": [
+     {
+      "zh": "口",
+      "hint_zh": "kǒu　丨 冂 口"
+     },
+     {
+      "zh": "见",
+      "hint_zh": "jiàn　丨 冂 冂丿 见"
+     },
+     {
+      "zh": "山",
+      "hint_zh": "shān　丨 丨㇄ 山"
+     },
+     {
+      "zh": "小",
+      "hint_zh": "xiǎo　亅 亅丿 小"
+     },
+     {
+      "zh": "不",
+      "hint_zh": "bù　一 丆 丆丨 不"
+     }
+    ]
+   }
+  ],
+  "answers_ref": {
+   "book": "workbook_answers",
+   "pages": [
+    8,
+    9,
+    10,
+    11
+   ]
+  }
+ },
+ "unclear": [
+  "HSK1 L02-д 注释 (дүрэм) ба сурах бичгийн 练习 хэсэг байхгүй. Validator grammar[] хоосон байхыг зөвшөөрөхгүй тул 拼音 дүрмүүдийг (汉语的轻声 ; 拼音规则（1）：标调法和省写) grammar[]-д тайлбар+жишээтэй нь оруулсан; тэдгээрийн уншлагын мөрүүд (02-7/02-8/02-9) зөвхөн textbook.pronunciation[]-д. textbook.exercises = [] (номд байхгүй).",
+  "Аудио файлын нэр мэдэгдэхгүй тул audio талбар орхисон. Номын CD дугаарууд: сурах бичиг 02-1…02-3 (课文1–3), 02-4 (声母韵母), 02-5 (单音节), 02-6 (双音节), 02-7 (轻声), 02-8 (标调), 02-9 (省写), 02-10 (课堂用语); дасгалын ном 02-1 (一), 02-2 (二), 02-3 (四), 02-4 (五), 02-5 (六).",
+  "Сурах бичиг PDF х.31 标调法 : «声调必须标注在元音字母上», багшийн ном PDF х.10: «…标注在主要元音字母上» — зөрүү, номд байгаагаар тус тусад нь.",
+  "省写-ийн жишээ: сурах бичиг «niu、gui、lun» (хөггүй), багшийн ном PDF х.10 «niú、guǐ、lùn» (хөгтэй) — номд байгаагаар.",
+  "Сурах бичиг PDF х.32 (2) «见»: хятад бичвэрт «字形上边是“目”…» (繁体 гэж заагаагүй), англид «Its traditional form of “见”…» (繁体 хэлбэр 見 биш 见 хэвлэгдсэн); багшийн ном PDF х.11 «繁体字形上边是“目”…» — номд байгаагаар.",
+  "Багшийн ном PDF х.12 补充课堂活动 A/B бүлэг: «36个韵母» гэсэн ч ün хоёр удаа (4) ба (26)-д давтагдсан, üe жагсаалтад алга — номд байгаагаар.",
+  "Багшийн ном PDF х.9 注意 : «前响二合元音韵发音时…» («韵母»-ийн «母» дутуу) — номд байгаагаар.",
+  "Зурлагын тэмдэг: номд ㄱ/ㄴ/亅 хэлбэрийн дүрс; Unicode-оор ㇕(横折)、㇄(竖折)、亅(竖钩) гэж бичсэн. 运笔方向 багана нь зөвхөн зураг.",
+  "独体字-ийн 笔顺 (сурах бичиг х.32–33 田字格 , дасгалын ном х.15–16): завсрын алхмууд нь ханзны хэсэг-дүрс тул ойролцоо тэмдэгтээр бичсэн (冂丿 = 冂+撇 , 丨㇄ = 竖+竖折 , 亅丿 = 竖钩+撇 , 丆丨 = 丆+竖). Сурах бичгийн 字形演变 (古文字) зургууд текстээр бичигдэх боломжгүй.",
+  "Дасгалын номын 七-ийн зургууд номд дугааргүй; дээрээс доош 1–4 гэж дугаарласан (багшийн номын хариулт «1.（4） 2.（1） 3.（2） 4.（3）»-тэй тохирно).",
+  "Дасгалын номын хариулт: workbook_answers PDF х.8–11 (baulchino.com-ын бөглөсөн дасгалын ном, х.8-ын дээд хэсэг нь 第1课-ийн 七) ба багшийн номын хавсралт PDF х.107 «练习册听力文本及参考答案» — бүх хариулт (三 E C D A B; 四 , 五 , 六 20×3; 七) хоёр эх сурвалжид таарч байна. 四/五/六-ийн сонсголын бичвэр (transcript_zh) багшийн ном PDF х.107-оос. Багшийн ном PDF х.108 нь 第3课 тул ороогүй.",
+  "Дасгалын номын 一、二、八 (朗读 , 描写 , 书写) хариултгүй даалгавар — answer талбаргүй."
+ ],
+ "verified_pages": [
+  8,
+  9,
+  10,
+  11,
+  12,
+  13,
+  14,
+  15,
+  16,
+  28,
+  29,
+  30,
+  31,
+  32,
+  33,
+  107
+ ],
+ "schema_version": 1
+}

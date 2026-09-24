@@ -1,0 +1,1648 @@
+{
+ "level": "hsk1",
+ "lesson": 13,
+ "book": "HSK1",
+ "title_zh": "他在学做中国菜呢",
+ "title_pinyin": "Tā zài xué zuò Zhōngguó cài ne",
+ "title_en": "He is learning to cook Chinese food",
+ "textbook": {
+  "ref": {
+   "book": "textbook",
+   "pages": [
+    118,
+    119,
+    120,
+    121,
+    122,
+    123
+   ]
+  },
+  "warmup": [
+   {
+    "instruction_zh": "给下面的词语选择对应的图片",
+    "instruction_en": "Match the pictures with the words/phrases.",
+    "items": [
+     "①看电视 kàn diànshì",
+     "②看书 kàn shū",
+     "③睡觉 shuì jiào",
+     "④打电话 dǎ diànhuà",
+     "⑤做饭 zuò fàn",
+     "⑥学习 xuéxí"
+    ],
+    "pictures_desc_en": [
+     "A: a young woman asleep in bed with her head on a pillow",
+     "B: a young man and a woman relaxing on a sofa in a living room watching TV",
+     "C: a smiling young man talking on a mobile phone",
+     "D: a young woman in a light blue shirt reading a book",
+     "E: a young couple cooking together in a kitchen, cutting vegetables",
+     "F: students sitting at desks in a classroom, smiling"
+    ]
+   }
+  ],
+  "pronunciation": [
+   {
+    "title_zh": "三音节词语的声调搭配（2）：二声音节开头",
+    "rows": [
+     "2+1+1：yánjiūshēng postgraduate | 2+1+2：tán gāngqín to play the piano | 2+1+3：túshūguǎn library | 2+1+4：wéishēngsù vitamin",
+     "2+2+1：yínhángjiā banker | 2+2+2：Hánguó rén Korean (people) | 2+2+3：Hánguó yǔ Korean (language) | 2+2+4：rénmínbì RMB",
+     "2+3+1：yóuyǒngyī swimming suit | 2+3+2：yóuyǒngchí swimming pool | 2+3+3：yóuyǒngguǎn natatorium | 2+3+4：niúzǎikù jean",
+     "2+4+1：móshùshī magician | 2+4+2：fúwùyuán waiter, waitress | 2+4+3：bówùguǎn museum | 2+4+4：míngxìnpiàn postcard"
+    ],
+    "notes_en": [
+     "Tone Collocation in Trisyllabic Words (2): words starting with a second-tone syllable"
+    ]
+   }
+  ],
+  "texts": [
+   {
+    "n": 1,
+    "title_zh": "打电话",
+    "title_en": "On the phone",
+    "kind": "dialogue",
+    "lines": [
+     {
+      "speaker": "A",
+      "zh": "喂，你在做什么呢？",
+      "pinyin": "Wèi, nǐ zài zuò shénme ne?"
+     },
+     {
+      "speaker": "B",
+      "zh": "我在看书呢。",
+      "pinyin": "Wǒ zài kàn shū ne."
+     },
+     {
+      "speaker": "A",
+      "zh": "大卫也在看书吗？",
+      "pinyin": "Dàwèi yě zài kàn shū ma?"
+     },
+     {
+      "speaker": "B",
+      "zh": "他没看书，他在学做中国菜呢。",
+      "pinyin": "Tā méi kàn shū, tā zài xué zuò Zhōngguó cài ne."
+     }
+    ],
+    "english_version": "A: Hello, what are you doing?\nB: I’m reading.\nA: Is David reading too?\nB: No, he isn’t. He is learning to cook Chinese food.",
+    "new_words": [
+     {
+      "n": 1,
+      "zh": "喂",
+      "pinyin": "wèi",
+      "pos": "int.",
+      "en": "hello, hey",
+      "text": 1
+     },
+     {
+      "n": 2,
+      "zh": "也",
+      "pinyin": "yě",
+      "pos": "adv.",
+      "en": "also, too",
+      "text": 1,
+      "star": true
+     },
+     {
+      "n": 3,
+      "zh": "学习（学）",
+      "pinyin": "xuéxí (xué)",
+      "pos": "v.",
+      "en": "to study, to learn",
+      "text": 1
+     }
+    ],
+    "proper_nouns": [
+     {
+      "zh": "大卫",
+      "pinyin": "Dàwèi",
+      "en": "David"
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "title_zh": "在咖啡馆儿",
+    "title_en": "In a coffee house",
+    "kind": "dialogue",
+    "lines": [
+     {
+      "speaker": "A",
+      "zh": "昨天上午你在做什么呢？",
+      "pinyin": "Zuótiān shàngwǔ nǐ zài zuò shénme ne?"
+     },
+     {
+      "speaker": "B",
+      "zh": "我在睡觉呢。你呢？",
+      "pinyin": "Wǒ zài shuì jiào ne. Nǐ ne?"
+     },
+     {
+      "speaker": "A",
+      "zh": "我在家看电视呢。你喜欢看电视吗？",
+      "pinyin": "Wǒ zài jiā kàn diànshì ne. Nǐ xǐhuan kàn diànshì ma?"
+     },
+     {
+      "speaker": "B",
+      "zh": "我不喜欢看电视，我喜欢看电影。",
+      "pinyin": "Wǒ bù xǐhuan kàn diànshì, wǒ xǐhuan kàn diànyǐng."
+     }
+    ],
+    "english_version": "A: What were you doing yesterday morning?\nB: I was sleeping. What about you?\nA: I was watching TV at home. Do you like watching TV?\nB: No, I don’t. I like seeing movies.",
+    "new_words": [
+     {
+      "n": 4,
+      "zh": "上午",
+      "pinyin": "shàngwǔ",
+      "pos": "n.",
+      "en": "morning, before noon",
+      "text": 2
+     },
+     {
+      "n": 5,
+      "zh": "睡觉",
+      "pinyin": "shuì jiào",
+      "pos": "v.",
+      "en": "to sleep",
+      "text": 2
+     },
+     {
+      "n": 6,
+      "zh": "电视",
+      "pinyin": "diànshì",
+      "pos": "n.",
+      "en": "television",
+      "text": 2
+     },
+     {
+      "n": 7,
+      "zh": "喜欢",
+      "pinyin": "xǐhuan",
+      "pos": "v.",
+      "en": "to like, to be fond of",
+      "text": 2
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "title_zh": "在学校办公室",
+    "title_en": "In the school office",
+    "kind": "dialogue",
+    "lines": [
+     {
+      "speaker": "A",
+      "zh": "82304155，这是李老师的电话吗？",
+      "pinyin": "Bā èr sān líng sì yāo wǔ wǔ, zhè shì Lǐ lǎoshī de diànhuà ma?"
+     },
+     {
+      "speaker": "B",
+      "zh": "不是。她的电话是82304156。",
+      "pinyin": "Bú shì. Tā de diànhuà shì bā èr sān líng sì yāo wǔ liù."
+     },
+     {
+      "speaker": "A",
+      "zh": "好，我现在给她打电话。",
+      "pinyin": "Hǎo, wǒ xiànzài gěi tā dǎ diànhuà."
+     },
+     {
+      "speaker": "B",
+      "zh": "她在工作呢，你下午打吧。",
+      "pinyin": "Tā zài gōngzuò ne, nǐ xiàwǔ dǎ ba."
+     }
+    ],
+    "english_version": "A: 82304155. Is that Ms. Li’s telephone number?\nB: No. Her number is 82304156.\nA: OK. I’ll call her right now.\nB: She is working. Call her in the afternoon.",
+    "new_words": [
+     {
+      "n": 8,
+      "zh": "给",
+      "pinyin": "gěi",
+      "pos": "prep.",
+      "en": "to",
+      "text": 3,
+      "star": true
+     },
+     {
+      "n": 9,
+      "zh": "打电话",
+      "pinyin": "dǎ diànhuà",
+      "en": "to make a phone call",
+      "text": 3
+     },
+     {
+      "n": 10,
+      "zh": "吧",
+      "pinyin": "ba",
+      "pos": "part.",
+      "en": "a modal particle used at the end of a sentence to indicate consultation, a suggestion, request or command",
+      "text": 3,
+      "star": true
+     }
+    ]
+   }
+  ],
+  "grammar": [
+   {
+    "n": 1,
+    "title_zh": "叹词“喂”",
+    "title_en": "The Interjection “喂”",
+    "explanation_zh": "给某人打电话或者接听别人电话开头时的常用语。例如：",
+    "explanation_en": "The word is often used when calling someone or answering a phone call. For example:",
+    "examples": [
+     {
+      "n": 1,
+      "zh": "A：喂，李老师在家吗？\nB：她不在家，去学校了。"
+     },
+     {
+      "n": 2,
+      "zh": "A：喂，你是张小姐吗？\nB：对，您是？"
+     },
+     {
+      "n": 3,
+      "zh": "A：喂，你在做什么呢？\nB：我在看书呢。"
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "title_zh": "“在……呢”表示动作正在进行",
+    "title_en": "“在……呢” Used to Indicate an Action in Progress",
+    "explanation_zh": "动词前边加上副词“在”，或者句末用语气助词“呢”表示动作正在进行。例如：\n“没（在）＋动词／动词词组”表示否定，句尾不能用“呢”。例如：",
+    "explanation_en": "An action in progress can be expressed by adding the adverb “在” before a verb or by using the modal particle “呢” at the end of a sentence. For example:\nThe negative form is “没（在）+ Verb/Verb Phrase”, without “呢” at the end of the sentence. For example:",
+    "structure_rows": [
+     " | 在 | Verb+Object | （呢）",
+     "我 | 在 | 睡觉 | 呢。",
+     "你 | 在 | 做什么 | 呢？",
+     "小王 | 在 | 学习汉语。 | ",
+     "Subject | Predicate: 没（在） | Predicate: Verb / Verb Phrase",
+     "我 | 没在 | 看电视。",
+     "他们 | 没在 | 工作。",
+     "他 | 没 | 看书。"
+    ],
+    "examples": [
+     {
+      "n": 1,
+      "zh": "我在睡觉呢。"
+     },
+     {
+      "n": 2,
+      "zh": "你在做什么呢？"
+     },
+     {
+      "n": 3,
+      "zh": "小王在学习汉语。"
+     },
+     {
+      "n": 4,
+      "zh": "我没在看电视。"
+     },
+     {
+      "n": 5,
+      "zh": "他们没在工作。"
+     },
+     {
+      "n": 6,
+      "zh": "他没看书。"
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "title_zh": "电话号码的表达",
+    "title_en": "Expression of Telephone Numbers",
+    "explanation_zh": "电话号码的读法与一般数字的读法有所不同。电话号码要一位一位地读。号码中的数字“1”要读成“yāo”。例如：",
+    "explanation_en": "Telephone numbers are read in a different way than general numbers. They are read digit by digit. The number “1” in a telephone number is read “yāo”. For example:",
+    "examples": [
+     {
+      "n": 1,
+      "zh": "8069478　bā líng liù jiǔ sì qī bā"
+     },
+     {
+      "n": 2,
+      "zh": "13851897623　yāo sān bā wǔ yāo bā jiǔ qī liù èr sān"
+     },
+     {
+      "n": 3,
+      "zh": "82304156　bā èr sān líng sì yāo wǔ liù"
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "title_zh": "语气助词“吧”",
+    "title_en": "The Modal Particle “吧”",
+    "explanation_zh": "语气助词“吧”用在祈使句末尾，表示建议或者命令别人，使语气缓和。例如：",
+    "explanation_en": "When used at the end of an imperative sentence, the modal particle “吧” indicates a suggestion or command with a softened mood. For example:",
+    "examples": [
+     {
+      "n": 1,
+      "zh": "A：这儿没有人，请坐吧。\nB：谢谢。"
+     },
+     {
+      "n": 2,
+      "zh": "A：今天我们在家吃饭吧。\nB：好。"
+     },
+     {
+      "n": 3,
+      "zh": "A：我现在给她打电话。\nB：她在工作呢，你下午打吧。"
+     }
+    ]
+   }
+  ],
+  "exercises": [
+   {
+    "n": 1,
+    "type_zh": "分角色朗读课文",
+    "instruction_zh": "分角色朗读课文",
+    "instruction_en": "Role-play the dialogues.",
+    "items": []
+   },
+   {
+    "n": 2,
+    "type_zh": "回答问题",
+    "instruction_zh": "根据课文内容回答问题",
+    "instruction_en": "Answer the questions based on the dialogues.",
+    "items": [
+     {
+      "n": 1,
+      "zh": "大卫在做什么呢？",
+      "pinyin": "Dàwèi zài zuò shénme ne?"
+     },
+     {
+      "n": 2,
+      "zh": "昨天上午他在看书吗？",
+      "pinyin": "Zuótiān shàngwǔ tā zài kàn shū ma?"
+     },
+     {
+      "n": 3,
+      "zh": "他们都喜欢看电视吗？",
+      "pinyin": "Tāmen dōu xǐhuan kàn diànshì ma?"
+     },
+     {
+      "n": 4,
+      "zh": "李老师的电话号码是多少？",
+      "pinyin": "Lǐ lǎoshī de diànhuà hàomǎ shì duōshao?"
+     },
+     {
+      "n": 5,
+      "zh": "李老师在做什么呢？",
+      "pinyin": "Lǐ lǎoshī zài zuò shénme ne?"
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "type_zh": "描述图片",
+    "instruction_zh": "用本课新学的语言点和词语描述图片",
+    "instruction_en": "Describe the pictures using the newly-learned language points and words.",
+    "items": [
+     {
+      "n": 1,
+      "zh": "安妮（Anne）在________呢。",
+      "pinyin": "Ānni zài ne.",
+      "picture_desc_en": "a young woman in a striped top sitting on a white sofa, smiling and talking on a mobile phone"
+     },
+     {
+      "n": 2,
+      "zh": "妈妈在________。",
+      "pinyin": "Māma zài",
+      "picture_desc_en": "a woman standing at a stove in a kitchen, cooking with a pot"
+     },
+     {
+      "n": 3,
+      "zh": "他没看书，在________。",
+      "pinyin": "Tā méi kàn shū, zài",
+      "picture_desc_en": "a man seen from behind sitting in a white armchair with his hands behind his head, facing a TV set showing a mountain scene"
+     },
+     {
+      "n": 4,
+      "zh": "她没工作，________呢。",
+      "pinyin": "Tā méi gōngzuò, ne.",
+      "picture_desc_en": "a woman in a dark suit asleep with her head on her arms at an office desk with a keyboard, a mouse and a cup"
+     }
+    ]
+   }
+  ],
+  "characters": {
+   "knowledge_title_zh": "认识独体字／汉字偏旁“日”和“目”",
+   "knowledge_zh": "1 认识独体字\n（1）“日”是太阳的形象，本义是太阳。\n（2）“目”是眼睛的形象，本义是眼睛。\n（3）“习”，本义是“学”过后再反复地温习，达到熟练的程度，现在“学”和“习”没什么差异。\n2 汉字偏旁“日”和“目”\n偏旁 | 解释 | 例字\n日 | 日字旁，一般和时间有关系。 | 明 míng、时 shí\n目 | 目字旁，一般和眼睛有关系。 | 眼 yǎn、睡 shuì",
+   "knowledge_en": "Single-Component Characters: (1) The character “日” uses the image of the sun and its basic meaning is “the sun”. (2) The character “目” uses the image of an eye and its basic meaning is “eye”. (3) The original meaning of “习” was to learn and repeatedly review to achieve proficiency. In modern Chinese, however, it means pretty much the same as “学 (to study/learn)”.\nThe Chinese Radicals “日” and “目” — The radical “日” is usually related to time: 明 míng next; 时 shí time. The radical “目” is usually related to the eyes: 眼 yǎn eye; 睡 shuì to sleep.",
+   "characters": [
+    {
+     "zh": "日",
+     "pinyin": "rì",
+     "note_zh": "独体字：太阳的形象，本义是太阳（字形演变图4步 + 笔顺：丨→冂→冃→日）"
+    },
+    {
+     "zh": "目",
+     "pinyin": "mù",
+     "note_zh": "独体字：眼睛的形象，本义是眼睛（字形演变图4步 + 笔顺图5步：丨→冂→冃→…→目）"
+    },
+    {
+     "zh": "习",
+     "pinyin": "xí",
+     "note_zh": "独体字：本义是“学”过后再反复地温习（字形演变图4步 + 笔顺图3步：𠃌→𠃌丶→习）"
+    },
+    {
+     "zh": "明",
+     "pinyin": "míng",
+     "note_zh": "偏旁“日（日字旁）”例字（next）"
+    },
+    {
+     "zh": "时",
+     "pinyin": "shí",
+     "note_zh": "偏旁“日（日字旁）”例字（time）"
+    },
+    {
+     "zh": "眼",
+     "pinyin": "yǎn",
+     "note_zh": "偏旁“目（目字旁）”例字（eye）"
+    },
+    {
+     "zh": "睡",
+     "pinyin": "shuì",
+     "note_zh": "偏旁“目（目字旁）”例字（to sleep）"
+    }
+   ]
+  },
+  "application": [
+   {
+    "title_zh": "双人活动",
+    "instruction_zh": "两人一组，用“昨天……点，我在……（呢）”说说自己昨天的活动。",
+    "instruction_en": "Work in pairs and talk about what you did yesterday using the pattern “昨天……点，我在……（呢）”.",
+    "example_zh": [
+     "例如：",
+     "A：昨天下午五点，你在做什么呢？ Zuótiān xiàwǔ wǔ diǎn, nǐ zài zuò shénme ne?",
+     "B：昨天下午五点，我在学习呢。 Zuótiān xiàwǔ wǔ diǎn, wǒ zài xuéxí ne.",
+     "提示框：吃饭 chī fàn　买东西 mǎi dōngxi　看电视 kàn diànshì　打电话 dǎ diànhuà　睡觉 shuì jiào"
+    ]
+   },
+   {
+    "title_zh": "小组活动",
+    "instruction_zh": "3～4人一组，互相询问电话号码并记录，每组请一位同学报告情况。",
+    "instruction_en": "Work in groups of 3-4. Ask each other’s telephone numbers and take notes. Each group chooses one member to make a report.",
+    "example_zh": [
+     "表格：姓名 Name | 电话 Phone Number",
+     "1 | 小王 Xiǎo Wáng | 139-0135-1290",
+     "（另有3行空白）"
+    ]
+   }
+  ]
+ },
+ "teacher": {
+  "ref": {
+   "book": "teacher",
+   "pages": [
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91
+   ]
+  },
+  "objectives_zh": [
+   "重点词语：学生能够熟练掌握“学习、上午、睡觉、电视、喜欢、打电话、也”的词义和用法",
+   "语言点：学生能够了解并掌握：（1）叹词“喂”（2）“在……呢”表示动作正在进行（3）电话号码的表达（4）语气助词“吧”：用在祈使句末尾，委婉表达建议或者命令",
+   "语音：学生熟悉二声音节开头的三音节词语的声调模式，并能正确朗读",
+   "汉字：学生能够：（1）熟练认读本课生词（2）独立书写独体字“日、目、习”（3）了解“日（日字旁）、目（目字旁）”所表示的意思",
+   "功能：学生能够：（1）询问和简单描述某人什么时间在做什么（2）询问和回答电话号码（3）委婉地表达建议或命令"
+  ],
+  "steps": [
+   {
+    "title_zh": "一 复习旧课",
+    "body_zh": "1. 教师出示第12课生词卡片，要求学生快速认读下列生词。\n天气、怎么样、太……了、热、冷、下雨、\n小姐、来、身体、爱、些、水果、水\n2. 教师根据第12课重点内容简单提问，活跃课堂气氛。\n（1）今天天气怎么样？明天呢？\n（2）今天会下雨吗？\n（3）你爱吃什么水果？（教师可根据当地实际情况补充两三种常见水果名称）\n（4）你身体怎么样？\n（5）你爸爸／妈妈／……身体怎么样？"
+   },
+   {
+    "title_zh": "二 学习新课 1 热身",
+    "body_zh": "教师可按照性别或者座位把全班学生分成两组，要求一组学生按照词语编号逐个齐读所列词语，另一组学生说出对应的图片编号，教师评判正误。最后全体学生再次齐读热身环节的所有词语，要求语音标准、声调准确。\n答案：①B　②D　③A　④C　⑤E　⑥F"
+   },
+   {
+    "title_zh": "2 生词",
+    "body_zh": "（1）生词快速认读及正音\n喂、也、学习（学）、上午、睡觉、电视、\n喜欢、给、打电话、吧、大卫\n• 教师使用生词卡片有拼音和汉字的一面，带领学生快速认读一遍本课生词；\n• 使用生词卡片只有汉字的一面，带领学生再次认读本课生词；\n• 请单个学生独自认读2–3个生词；\n• 最后全体学生再快速认读一遍本课所有生词。\n（2）重点生词扩展及常用搭配\n学习—学习什么\n　—学习汉语—学习汉字—学习做饭\n上午—今天上午—昨天上午—明天上午\n　↔下午↔中午\n睡觉—在家睡觉\n　—几点睡觉—十点睡觉\n电视—看电视—在家看电视\n　↔电影↔电话↔电脑\n喜欢—喜欢做什么？\n　—喜欢学习汉语—喜欢看电视—喜欢看电影—喜欢吃中国菜—喜欢喝茶\n　—不喜欢喝咖啡—不喜欢看电视\n打电话—给妈妈打电话—给朋友打电话—给老师打电话　［句型框］给＋某人＋打电话\n也—我学习汉语，他也学习汉语。\n　—妈妈喜欢看电视，爸爸也喜欢看电视。　［句型框］A……，B也……。\n　—大卫不是中国人，我也不是中国人。\n练习册相关练习：第90页／一／第一部分，第93页／二／第一部分"
+   },
+   {
+    "title_zh": "3 语言点（1）叹词“喂”",
+    "body_zh": "① 语言点解析\n给某人打电话或者接听别人电话开头时的常用语。\n② 语言点导入与操练\n教师可找几段影视作品中典型、简短的打电话、接电话片段，播放给学生。让学生体会“喂”的实际应用并跟读模仿。"
+   },
+   {
+    "title_zh": "3 语言点（2）“在……呢”表示动作正在进行",
+    "body_zh": "① 语言点解析\n动词前边加上副词“在”，或者句末用语气助词“呢”表示动作正在进行。其否定形式是“没在……。”句末不能用“呢”。\n［句型框］主语＋在＋……（＋呢）。\n［句型框］主语＋没在＋……。\n② 语言点导入\n教师可利用本课热身图片A进行导入。\n教师：她做什么？\n学生：睡觉。\n教师：现在，她在做什么呢？\n学生：她在睡觉呢。\n③ 语言点操练\n教师可利用本课热身部分其他图片进行操练。\n图片B：\n教师：他们在做什么呢？\n学生：他们在看电视呢。\n教师：他们在打电话吗？\n学生：他们没在打电话。\n目标句：他们没在打电话，他们在看电视呢。\n其他目标句：他在打电话呢。\n她在看书呢。\n他们在做中国菜呢。\n他们在学习呢。\n④ 语言点扩展练习\n教师可组织学生两人一组，根据实际情况进行问答练习。\nA：你昨天晚上8点在做什么呢？\nB：我在……呢。你呢？\nC：我没在……，我在……。"
+   },
+   {
+    "title_zh": "3 语言点（3）电话号码的表达",
+    "body_zh": "① 语言点解析\n电话号码的读法与一般数字的读法有所不同。电话号码要一位一位地读，号码中的数字“1”要读成“yāo”。\n② 语言点导入\n教师可用中国常用的紧急求助电话号码进行导入。\n110（报警）　119/999（火警）　120（急救）　122（交通事故）\n③ 语言点操练\n教师可组织学生制作全班同学通讯录，全班分为几个小组，先在组内互相询问并记录电话号码，之后全班汇总，最后由教师或指定一名同学制成班级通讯录，下节课发给每个人。"
+   },
+   {
+    "title_zh": "3 语言点（4）语气助词“吧”",
+    "body_zh": "① 语言点解析\n语气助词“吧”用在祈使句句尾，表示建议或者命令别人，使语气缓和。\n［句型框］……吧。\n② 语言点导入\n教师出示一张米饭的图片，通过提问进行导入。\n教师：今天中午你想吃米饭，你要对妈妈说什么？\n学生：今天中午我想吃米饭。\n教师：对，也可以说“……吧”。\n学生：今天中午我们吃米饭吧。\n③ 语言点操练\n教师出示看电影、咖啡、在商场购物的图片，请学生建议图片提示的内容。\n目标句：明天我们去看电影吧。\n今天下午我们去喝咖啡吧。\n星期六我们去商场买东西吧。\n④ 语言点扩展练习\n教师组织学生两人一组，根据提示进行对话练习。\nA：……（时间）我们去……（做什么）吧。\nB：我不想去，我们去……（做什么）吧。\nA：好吧。我们什么时候去？\nB：……。\n［提示框］看电影　喝咖啡　喝茶　买东西　去图书馆　吃中国菜　……"
+   },
+   {
+    "title_zh": "4 课文",
+    "body_zh": "课文1\n（1）让学生听两遍录音并回答下列问题：\n“我”在做什么呢？\n大卫也在看书吗？\n大卫在做什么呢？\n（2）根据学生的回答，教师领说变为叙述体的课文，并请学生单个复述：\n我在看书呢，大卫没看书，他在学做中国菜呢。\n（3）教师领读课文两遍，然后让学生分角色朗读课文。\n课文2\n（1）让学生听两遍录音并回答下列问题：\n昨天上午她们在做什么呢？\n（2）教师领读课文两遍，然后让学生分角色朗读课文。\n（3）教师根据学生实际情况进行问答练习，并组织学生互相提问。\n昨天上午你在看电视吗？\n昨天晚上你在学习汉语吗？\n昨天中午你在看书吗？\n……你在做什么呢？\n课文3\n（1）让学生听两遍录音并回答下列问题：\n李老师的电话号码是多少？\n李老师现在在做什么呢？\n什么时候可以给李老师打电话？\n（2）教师领读课文两遍，然后让学生分角色朗读课文。\n（3）模仿练习\n教师组织学生两人一组，根据提示进行对话练习。\nA：……是……的电话吗？\nB：不是，……的电话是……。\nA：好，我现在给他／她打电话。\nB：他／她在……呢，你……打吧。\n学生两人一组，将上述对话内容改为叙述体再复述一遍。\n……不是……的电话。他／她的电话是……。他／她现在在……呢，不能给他／她打电话。你……打吧。"
+   },
+   {
+    "title_zh": "5 语音",
+    "body_zh": "三音节词语的声调搭配（2）：二声音节开头\n教师引导学生将三音节词语的声调模式切分成2＋1或者1＋2的模式，注意第三声音节的变调。\n教师可利用课本第102页的三音节声调搭配词表进行语音练习。可先领读第一行三音节词语，使学生熟悉练习方法，然后变换齐读、单个学生读、按顺序读、跳读等方法组织学生进行练习。\n练习册相关练习：第96页／三"
+   },
+   {
+    "title_zh": "6 汉字",
+    "body_zh": "① 知识点解析\n独体字\n日：是太阳的形象，本义是太阳。\n目：是眼睛的形象，本义是眼睛。\n习：本义是“学”过后反复地温习，达到熟练的程度，现在“学”和“习”没什么差异。\n偏旁\n日：日字旁，一般和时间有关系。\n目：目字旁，一般和眼睛有关系。\n② 汉字练习\n• 教师板书或者用手指在空中书写本课独体字“日、目、习”，带领学生一起识记独体字的笔画笔顺。\n• 教师板书本课偏旁“日、目”，提示学生注意这两个偏旁笔画数目的不同，并书写各自的代表汉字，帮助学生识记该偏旁的意义。\n• 补充练习\n辨认下列汉字并组词\n日（　）／目（　）　习（　）／问（　）\n小（　）／少（　）　学（　）／字（　）\n练习册相关练习：第97–98页／四"
+   },
+   {
+    "title_zh": "7 补充课堂活动——我来做，你来猜",
+    "body_zh": "教师准备一些表示动作的词语卡片。A、B两个学生一组到教室前边完成，教师给A同学和其他同学出示卡片，B同学不能看。A同学要用动作表演出卡片上词语的内容，B同学根据A同学的表演猜测并说出这个词语是什么，之后再用“他／她在……呢”进行表达。\n词语卡片：打电话、睡觉、看书、吃饭、\n看电视、做饭、喝水、……"
+   },
+   {
+    "title_zh": "附注：建议教学用具",
+    "body_zh": "1. 生词卡片：第12、13课生词卡片\n2. 独体字卡片：第13课独体字卡片\n3. 视频：打电话、接电话\n4. 图片：米饭、看电影、咖啡、在商场购物\n5. 补充活动卡片：表示动作的词语"
+   }
+  ],
+  "notes_zh": [
+   "注意：“喂”在实际应用中常有两种声调“wèi”和“wéi”，用二声时含询问的意思多一些。（语言点1）",
+   "注意：教师应提示学生自觉将“喂”与打电话的场景联系起来，以便于应对HSK考试中可能会出现的判断场景类听力题。（语言点1）",
+   "注意：“在……呢”句型的否定形式为“没在……”，不能用“不”进行否定，句末不能加“呢”。（语言点2）",
+   "注意：“在……呢”可以表示现在正在进行的动作行为，也可以用于描述已经发生或者将要发生的进行中的动作行为。（语言点2）",
+   "注意：教师提示中国电话号码的位数及常用停顿模式，座机一般是8位，“4-4”停顿；手机11位，“3-4-4”停顿。（可参照第15课后的“文化”部分进行介绍）（语言点3）"
+  ],
+  "warmup_answers_zh": [
+   "答案：①B　②D　③A　④C　⑤E　⑥F"
+  ],
+  "text_questions": [
+   {
+    "text": 1,
+    "q_zh": "“我”在做什么呢？"
+   },
+   {
+    "text": 1,
+    "q_zh": "大卫也在看书吗？"
+   },
+   {
+    "text": 1,
+    "q_zh": "大卫在做什么呢？"
+   },
+   {
+    "text": 2,
+    "q_zh": "昨天上午她们在做什么呢？"
+   },
+   {
+    "text": 3,
+    "q_zh": "李老师的电话号码是多少？"
+   },
+   {
+    "text": 3,
+    "q_zh": "李老师现在在做什么呢？"
+   },
+   {
+    "text": 3,
+    "q_zh": "什么时候可以给李老师打电话？"
+   }
+  ],
+  "summary_zh": "• 语言点：叹词“喂”用于打电话\n　“在……呢”表示动作正在进行\n　电话号码的表达\n　“……吧。”表示委婉建议\n• 语音：三音节词语的声调搭配（2）：二声音节开头\n• 汉字：独体字“日、目、习”\n　偏旁“日、目”"
+ },
+ "workbook": {
+  "ref": {
+   "book": "workbook",
+   "pages": [
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106
+   ]
+  },
+  "sections": [
+   {
+    "n": "一、听力 第一部分",
+    "type_zh": "听力 第一部分",
+    "instruction_zh": "第1–5题：听词或短语，判断对错",
+    "instruction_en": "Questions 1-5: Listen to the words or phrases and decide whether the pictures are right or wrong based on what you hear.",
+    "items": [
+     {
+      "n": "例1",
+      "zh": "很高兴 hěn gāoxìng very happy",
+      "transcript_zh": "很高兴",
+      "picture_desc_en": "a smiling young woman with her hair tied back",
+      "answer": "√",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        98
+       ]
+      }
+     },
+     {
+      "n": "例2",
+      "zh": "看电影 kàn diànyǐng to see a movie",
+      "transcript_zh": "看电影",
+      "picture_desc_en": "an older man in a suit sitting on a sofa reading papers",
+      "answer": "×",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        98
+       ]
+      }
+     },
+     {
+      "n": 1,
+      "zh": "",
+      "transcript_zh": "睡觉",
+      "picture_desc_en": "a man lying in bed with his head on a pillow, eyes closed",
+      "answer": "√",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        73
+       ]
+      }
+     },
+     {
+      "n": 2,
+      "zh": "",
+      "transcript_zh": "吃饭",
+      "picture_desc_en": "a chef in a white jacket grinding pepper over a plate of food",
+      "answer": "×",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        73
+       ]
+      }
+     },
+     {
+      "n": 3,
+      "zh": "",
+      "transcript_zh": "看电视",
+      "picture_desc_en": "two hands holding a smartphone",
+      "answer": "×",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        73
+       ]
+      }
+     },
+     {
+      "n": 4,
+      "zh": "",
+      "transcript_zh": "工作",
+      "picture_desc_en": "a woman and two men in business suits looking at papers on a desk in an office",
+      "answer": "√",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        73
+       ]
+      }
+     },
+     {
+      "n": 5,
+      "zh": "",
+      "transcript_zh": "下雨",
+      "picture_desc_en": "traditional Chinese buildings with snow on their roofs",
+      "answer": "×",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        73
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "一、听力 第二部分",
+    "type_zh": "听力 第二部分",
+    "instruction_zh": "第6–10题：听对话，选择与对话内容一致的图片",
+    "instruction_en": "Questions 6-10: Listen to the dialogues and choose the right picture for each dialogue you hear.",
+    "items": [
+     {
+      "n": "例",
+      "zh": "女：你好！ Nǐ hǎo! (How do you do?) 男：你好！很高兴认识你。 Nǐ hǎo! Hěn gāoxìng rènshi nǐ. (How do you do? Nice to meet you.)",
+      "options": {
+       "A": "[picture] a kitten sitting on a tufted armchair",
+       "B": "[picture] a young woman sleeping with her head on a pillow",
+       "C": "[picture] a woman and a man in business clothes shaking hands in front of an elevator",
+       "D": "[picture] a plate of a stir-fried dish (diced meat with peanuts and peppers)",
+       "E": "[picture] a man with glasses in a suit talking on a mobile phone",
+       "F": "[picture] two people seen from behind on a sofa watching TV with their arms raised"
+      },
+      "transcript_zh": "女：你好！ 男：你好！很高兴认识你。",
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        99
+       ]
+      }
+     },
+     {
+      "n": 6,
+      "zh": "",
+      "options": {
+       "A": "[picture] a kitten sitting on a tufted armchair",
+       "B": "[picture] a young woman sleeping with her head on a pillow",
+       "C": "[picture] a woman and a man in business clothes shaking hands in front of an elevator",
+       "D": "[picture] a plate of a stir-fried dish (diced meat with peanuts and peppers)",
+       "E": "[picture] a man with glasses in a suit talking on a mobile phone",
+       "F": "[picture] two people seen from behind on a sofa watching TV with their arms raised"
+      },
+      "transcript_zh": "男：你昨天上午九点在做什么呢？ 女：我在睡觉呢。",
+      "answer": "B",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        74
+       ]
+      }
+     },
+     {
+      "n": 7,
+      "zh": "",
+      "options": {
+       "A": "[picture] a kitten sitting on a tufted armchair",
+       "B": "[picture] a young woman sleeping with her head on a pillow",
+       "C": "[picture] a woman and a man in business clothes shaking hands in front of an elevator",
+       "D": "[picture] a plate of a stir-fried dish (diced meat with peanuts and peppers)",
+       "E": "[picture] a man with glasses in a suit talking on a mobile phone",
+       "F": "[picture] two people seen from behind on a sofa watching TV with their arms raised"
+      },
+      "transcript_zh": "男：小猫在哪儿？ 女：小猫在椅子上面。",
+      "answer": "A",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        74
+       ]
+      }
+     },
+     {
+      "n": 8,
+      "zh": "",
+      "options": {
+       "A": "[picture] a kitten sitting on a tufted armchair",
+       "B": "[picture] a young woman sleeping with her head on a pillow",
+       "C": "[picture] a woman and a man in business clothes shaking hands in front of an elevator",
+       "D": "[picture] a plate of a stir-fried dish (diced meat with peanuts and peppers)",
+       "E": "[picture] a man with glasses in a suit talking on a mobile phone",
+       "F": "[picture] two people seen from behind on a sofa watching TV with their arms raised"
+      },
+      "transcript_zh": "男：你喜欢做饭吗？ 女：很喜欢。我在学习做中国菜。",
+      "answer": "D",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        74
+       ]
+      }
+     },
+     {
+      "n": 9,
+      "zh": "",
+      "options": {
+       "A": "[picture] a kitten sitting on a tufted armchair",
+       "B": "[picture] a young woman sleeping with her head on a pillow",
+       "C": "[picture] a woman and a man in business clothes shaking hands in front of an elevator",
+       "D": "[picture] a plate of a stir-fried dish (diced meat with peanuts and peppers)",
+       "E": "[picture] a man with glasses in a suit talking on a mobile phone",
+       "F": "[picture] two people seen from behind on a sofa watching TV with their arms raised"
+      },
+      "transcript_zh": "女：你在做什么呢？ 男：我和朋友在家看电视呢。",
+      "answer": "F",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        128,
+        129
+       ]
+      }
+     },
+     {
+      "n": 10,
+      "zh": "",
+      "options": {
+       "A": "[picture] a kitten sitting on a tufted armchair",
+       "B": "[picture] a young woman sleeping with her head on a pillow",
+       "C": "[picture] a woman and a man in business clothes shaking hands in front of an elevator",
+       "D": "[picture] a plate of a stir-fried dish (diced meat with peanuts and peppers)",
+       "E": "[picture] a man with glasses in a suit talking on a mobile phone",
+       "F": "[picture] two people seen from behind on a sofa watching TV with their arms raised"
+      },
+      "transcript_zh": "女：喂，小明在吗？ 男：他在打电话呢，你是谁？",
+      "answer": "E",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        128,
+        129
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "一、听力 第三部分",
+    "type_zh": "听力 第三部分",
+    "instruction_zh": "第11–15题：听句子，回答问题",
+    "instruction_en": "Questions 11-15: Listen to the sentences and answer the questions.",
+    "items": [
+     {
+      "n": "例",
+      "zh": "问：她下午去哪里？",
+      "pinyin": "Tā xiàwǔ qù nǎli?",
+      "transcript_zh": "下午我去商店，我想买一些水果。 问：她下午去哪里？",
+      "options": {
+       "A": "商店 shāngdiàn store",
+       "B": "医院 yīyuàn hospital",
+       "C": "学校 xuéxiào school"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        100
+       ]
+      }
+     },
+     {
+      "n": 11,
+      "zh": "",
+      "transcript_zh": "下午我和朋友在家里喝茶。 问：“我”和朋友在哪儿喝茶？",
+      "options": {
+       "A": "学校 xuéxiào",
+       "B": "家里 jiā li",
+       "C": "饭店 fàndiàn"
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        74
+       ]
+      }
+     },
+     {
+      "n": 12,
+      "zh": "",
+      "transcript_zh": "今天天气不好，我们在家吃饭吧。 问：今天天气怎么样？",
+      "options": {
+       "A": "很好 hěn hǎo",
+       "B": "很热 hěn rè",
+       "C": "不好 bù hǎo"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        74
+       ]
+      }
+     },
+     {
+      "n": 13,
+      "zh": "",
+      "transcript_zh": "88302755是张老师的电话。 问：张老师的电话是多少？",
+      "options": {
+       "A": "83302755",
+       "B": "88302775",
+       "C": "88302755"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        74
+       ]
+      }
+     },
+     {
+      "n": 14,
+      "zh": "",
+      "transcript_zh": "我没看电视，我在学习呢。 问：他／她在做什么呢？",
+      "options": {
+       "A": "看电视 kàn diànshì",
+       "B": "看电影 kàn diànyǐng",
+       "C": "学习 xuéxí"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        74
+       ]
+      }
+     },
+     {
+      "n": 15,
+      "zh": "",
+      "transcript_zh": "她没在打电话，她在睡觉呢。 问：她在做什么呢？",
+      "options": {
+       "A": "打电话 dǎ diànhuà",
+       "B": "睡觉 shuì jiào",
+       "C": "在家 zài jiā"
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        74
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第一部分",
+    "type_zh": "阅读 第一部分",
+    "instruction_zh": "第16–20题：看图片，判断图片内容是否与提示词一致",
+    "instruction_en": "Questions 16-20: Look at the pictures and decide whether the given words are right or wrong.",
+    "items": [
+     {
+      "n": "例1",
+      "zh": "电视 diànshì television",
+      "picture_desc_en": "an open laptop computer",
+      "answer": "×",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        101
+       ]
+      }
+     },
+     {
+      "n": "例2",
+      "zh": "飞机 fēijī airplane",
+      "picture_desc_en": "an airplane in flight",
+      "answer": "√",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        101
+       ]
+      }
+     },
+     {
+      "n": 16,
+      "zh": "水",
+      "pinyin": "shuǐ",
+      "picture_desc_en": "a glass filled with a white drink (milk-like)",
+      "answer": "×",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        75
+       ]
+      }
+     },
+     {
+      "n": 17,
+      "zh": "菜",
+      "pinyin": "cài",
+      "picture_desc_en": "a pile of vegetables (peppers, garlic, tomatoes, greens) on a wooden table",
+      "answer": "√",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        75
+       ]
+      }
+     },
+     {
+      "n": 18,
+      "zh": "学校",
+      "pinyin": "xuéxiào",
+      "picture_desc_en": "a multi-storey building beside a sports field",
+      "answer": "√",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        75
+       ]
+      }
+     },
+     {
+      "n": 19,
+      "zh": "家",
+      "pinyin": "jiā",
+      "picture_desc_en": "a hospital room with a hospital bed",
+      "answer": "×",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        75
+       ]
+      }
+     },
+     {
+      "n": 20,
+      "zh": "电脑",
+      "pinyin": "diànnǎo",
+      "picture_desc_en": "an open laptop computer",
+      "answer": "√",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        75
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第二部分",
+    "type_zh": "阅读 第二部分",
+    "instruction_zh": "第21–25题：看问题，选择正确的回答",
+    "instruction_en": "Questions 21-25: Read the questions and choose the right answer to each of them.",
+    "items": [
+     {
+      "n": "例",
+      "zh": "你喝水吗？ Nǐ hē shuǐ ma? (Would you like some water?)",
+      "options": {
+       "A": "在下雨呢。 Zài xià yǔ ne.",
+       "B": "我和朋友在看书呢。 Wǒ hé péngyou zài kàn shū ne.",
+       "C": "我没看电视，我在学习呢。 Wǒ méi kàn diànshì, wǒ zài xuéxí ne.",
+       "D": "在家吃吧。 Zài jiā chī ba.",
+       "E": "我喜欢喝水。 Wǒ xǐhuan hē shuǐ.",
+       "F": "好的，谢谢！ Hǎo de, xièxie!"
+      },
+      "answer": "F",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        102
+       ]
+      }
+     },
+     {
+      "n": 21,
+      "zh": "今天我们去哪儿吃饭？",
+      "pinyin": "Jīntiān wǒmen qù nǎr chī fàn?",
+      "options": {
+       "A": "在下雨呢。 Zài xià yǔ ne.",
+       "B": "我和朋友在看书呢。 Wǒ hé péngyou zài kàn shū ne.",
+       "C": "我没看电视，我在学习呢。 Wǒ méi kàn diànshì, wǒ zài xuéxí ne.",
+       "D": "在家吃吧。 Zài jiā chī ba.",
+       "E": "我喜欢喝水。 Wǒ xǐhuan hē shuǐ.",
+       "F": "好的，谢谢！ Hǎo de, xièxie!"
+      },
+      "answer": "D",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        76
+       ]
+      }
+     },
+     {
+      "n": 22,
+      "zh": "昨天下午你在家做什么呢？",
+      "pinyin": "Zuótiān xiàwǔ nǐ zài jiā zuò shénme ne?",
+      "options": {
+       "A": "在下雨呢。 Zài xià yǔ ne.",
+       "B": "我和朋友在看书呢。 Wǒ hé péngyou zài kàn shū ne.",
+       "C": "我没看电视，我在学习呢。 Wǒ méi kàn diànshì, wǒ zài xuéxí ne.",
+       "D": "在家吃吧。 Zài jiā chī ba.",
+       "E": "我喜欢喝水。 Wǒ xǐhuan hē shuǐ.",
+       "F": "好的，谢谢！ Hǎo de, xièxie!"
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        76
+       ]
+      }
+     },
+     {
+      "n": 23,
+      "zh": "你喜欢喝茶吗？",
+      "pinyin": "Nǐ xǐhuan hē chá ma?",
+      "options": {
+       "A": "在下雨呢。 Zài xià yǔ ne.",
+       "B": "我和朋友在看书呢。 Wǒ hé péngyou zài kàn shū ne.",
+       "C": "我没看电视，我在学习呢。 Wǒ méi kàn diànshì, wǒ zài xuéxí ne.",
+       "D": "在家吃吧。 Zài jiā chī ba.",
+       "E": "我喜欢喝水。 Wǒ xǐhuan hē shuǐ.",
+       "F": "好的，谢谢！ Hǎo de, xièxie!"
+      },
+      "answer": "E",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        76
+       ]
+      }
+     },
+     {
+      "n": 24,
+      "zh": "今天天气怎么样？",
+      "pinyin": "Jīntiān tiānqì zěnmeyàng?",
+      "options": {
+       "A": "在下雨呢。 Zài xià yǔ ne.",
+       "B": "我和朋友在看书呢。 Wǒ hé péngyou zài kàn shū ne.",
+       "C": "我没看电视，我在学习呢。 Wǒ méi kàn diànshì, wǒ zài xuéxí ne.",
+       "D": "在家吃吧。 Zài jiā chī ba.",
+       "E": "我喜欢喝水。 Wǒ xǐhuan hē shuǐ.",
+       "F": "好的，谢谢！ Hǎo de, xièxie!"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        76
+       ]
+      }
+     },
+     {
+      "n": 25,
+      "zh": "你在看电视吗？",
+      "pinyin": "Nǐ zài kàn diànshì ma?",
+      "options": {
+       "A": "在下雨呢。 Zài xià yǔ ne.",
+       "B": "我和朋友在看书呢。 Wǒ hé péngyou zài kàn shū ne.",
+       "C": "我没看电视，我在学习呢。 Wǒ méi kàn diànshì, wǒ zài xuéxí ne.",
+       "D": "在家吃吧。 Zài jiā chī ba.",
+       "E": "我喜欢喝水。 Wǒ xǐhuan hē shuǐ.",
+       "F": "好的，谢谢！ Hǎo de, xièxie!"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        76
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第三部分",
+    "type_zh": "阅读 第三部分",
+    "instruction_zh": "第26–35题：看句子，选择正确的词语填空",
+    "instruction_en": "Questions 26-35: Read the sentences and choose the right words to fill in the brackets.",
+    "word_bank": [
+     [
+      "A 在 zài",
+      "B 呢 ne",
+      "C 没 méi",
+      "D 名字 míngzi",
+      "E 也 yě",
+      "F 吧 ba"
+     ],
+     [
+      "G 喜欢 xǐhuan",
+      "H 看 kàn",
+      "I 做 zuò",
+      "J 电话 diànhuà",
+      "K 会 huì"
+     ]
+    ],
+    "items": [
+     {
+      "n": "例",
+      "zh": "你叫什么（________）？",
+      "pinyin": "Nǐ jiào shénme (Example: What is your name?)",
+      "answer": "D",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        103
+       ]
+      }
+     },
+     {
+      "n": 26,
+      "zh": "我（________）打电话呢。",
+      "pinyin": "Wǒ ______ dǎ diànhuà ne.",
+      "answer": "A",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        76
+       ]
+      }
+     },
+     {
+      "n": 27,
+      "zh": "爸爸（________）看电视，他在工作呢。",
+      "pinyin": "Bàba ______ kàn diànshì, tā zài gōngzuò ne.",
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        76
+       ]
+      }
+     },
+     {
+      "n": 28,
+      "zh": "我家的小狗在吃饭（________）。",
+      "pinyin": "Wǒ jiā de xiǎo gǒu zài chī fàn ______",
+      "answer": "B",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        76
+       ]
+      }
+     },
+     {
+      "n": 29,
+      "zh": "中国菜很好吃，我们做中国菜（________）。",
+      "pinyin": "Zhōngguó cài hěn hǎo chī, wǒmen zuò Zhōngguó cài ______",
+      "answer": "F",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        76
+       ]
+      }
+     },
+     {
+      "n": 30,
+      "zh": "我会写汉字，我妈妈（________）会写汉字。",
+      "pinyin": "Wǒ huì xiě Hànzì, wǒ māma ______ huì xiě Hànzì.",
+      "answer": "E",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        76
+       ]
+      }
+     },
+     {
+      "n": 31,
+      "zh": "我想学习（________）中国菜。",
+      "pinyin": "Wǒ xiǎng xuéxí ______ Zhōngguó cài.",
+      "answer": "I",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        77
+       ]
+      }
+     },
+     {
+      "n": 32,
+      "zh": "我没有你的（________）。",
+      "pinyin": "Wǒ méiyǒu nǐ de ______",
+      "answer": "J",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        77
+       ]
+      }
+     },
+     {
+      "n": 33,
+      "zh": "我不（________）看电影。",
+      "pinyin": "Wǒ bù ______ kàn diànyǐng.",
+      "answer": "G",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        77
+       ]
+      }
+     },
+     {
+      "n": 34,
+      "zh": "我昨天下午四点在家（________）电视呢。",
+      "pinyin": "Wǒ zuótiān xiàwǔ sì diǎn zài jiā ______ diànshì ne.",
+      "answer": "H",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        77
+       ]
+      }
+     },
+     {
+      "n": 35,
+      "zh": "我不（________）写汉字，我很想学。",
+      "pinyin": "Wǒ bù ______ xiě Hànzì, wǒ hěn xiǎng xué.",
+      "answer": "K",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        77
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "三、语音 第一部分",
+    "type_zh": "语音 第一部分 听力",
+    "instruction_zh": "第1–5题：听录音，从听到的三个词语中选出声调模式不同的一个",
+    "instruction_en": "Questions 1-5: Listen to the recording. Among the three words and phrases you hear, mark the one that has a different tone pattern.",
+    "items": [
+     {
+      "n": 1,
+      "zh": "A　B　C",
+      "options": {
+       "A": "mótuōchē（摩托车）",
+       "B": "yánjiūshēng（研究生）",
+       "C": "yánjiūsuǒ（研究所）"
+      },
+      "transcript_zh": "A mótuōchē（摩托车）　B yánjiūshēng（研究生）　C yánjiūsuǒ（研究所）",
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        78
+       ]
+      }
+     },
+     {
+      "n": 2,
+      "zh": "A　B　C",
+      "options": {
+       "A": "fúwùshēng（服务生）",
+       "B": "Guóqìng Jié（国庆节）",
+       "C": "fúwùyuán（服务员）"
+      },
+      "transcript_zh": "A fúwùshēng（服务生）　B Guóqìng Jié（国庆节）　C fúwùyuán（服务员）",
+      "answer": "A",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        78
+       ]
+      }
+     },
+     {
+      "n": 3,
+      "zh": "A　B　C",
+      "options": {
+       "A": "bújiàndé（不见得）",
+       "B": "bú nàifán（不耐烦）",
+       "C": "búyàojǐn（不要紧）"
+      },
+      "transcript_zh": "A bújiàndé（不见得）　B bú nàifán（不耐烦）　C búyàojǐn（不要紧）",
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        78
+       ]
+      }
+     },
+     {
+      "n": 4,
+      "zh": "A　B　C",
+      "options": {
+       "A": "liánxùjù（连续剧）",
+       "B": "Hánguó rén（韩国人）",
+       "C": "míngxìnpiàn（明信片）"
+      },
+      "transcript_zh": "A liánxùjù（连续剧）　B Hánguó rén（韩国人）　C míngxìnpiàn（明信片）",
+      "answer": "B",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        78
+       ]
+      }
+     },
+     {
+      "n": 5,
+      "zh": "A　B　C",
+      "options": {
+       "A": "lái xuéxiào（来学校）",
+       "B": "bái yánsè（白颜色）",
+       "C": "lánqiúchǎng（篮球场）"
+      },
+      "transcript_zh": "A lái xuéxiào（来学校）　B bái yánsè（白颜色）　C lánqiúchǎng（篮球场）",
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        78
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "三、语音 第二部分",
+    "type_zh": "语音 第二部分 听力",
+    "instruction_zh": "第6–10题：听录音，画出句中你听到的三音节词语",
+    "instruction_en": "Questions 6-10: Listen to the recording and underline the trisyllabic words and phrases in the sentences you hear.",
+    "items": [
+     {
+      "n": 6,
+      "zh": "Wǒ měi tiān xià wǔ zài tú shū guǎn xué xí.",
+      "transcript_zh": "我每天下午在图书馆学习。",
+      "answer": "tú shū guǎn（túshūguǎn）",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        78
+       ]
+      }
+     },
+     {
+      "n": 7,
+      "zh": "Mā ma zuó tiān mǎi le yì tiáo niú zǎi kù.",
+      "transcript_zh": "妈妈昨天买了一条牛仔裤。",
+      "answer": "niú zǎi kù（niúzǎikù）",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        78
+       ]
+      }
+     },
+     {
+      "n": 8,
+      "zh": "Nǐ hǎo, wǒ xiǎng huàn rén mín bì.",
+      "transcript_zh": "你好，我想换人民币。",
+      "answer": "rén mín bì（rénmínbì）",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        78
+       ]
+      }
+     },
+     {
+      "n": 9,
+      "zh": "Fú wù yuán, wǒ yào liǎng bēi kā fēi.",
+      "transcript_zh": "服务员，我要两杯咖啡。",
+      "answer": "Fú wù yuán（fúwùyuán）",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        78
+       ]
+      }
+     },
+     {
+      "n": 10,
+      "zh": "Tā hé gē ge dōu xǐ huan cān guān bó wù guǎn.",
+      "transcript_zh": "他和哥哥都喜欢参观博物馆。",
+      "answer": "bó wù guǎn（bówùguǎn）",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        78
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "四、汉字 第一部分",
+    "type_zh": "汉字 比较字形",
+    "instruction_zh": "第1题：看汉字，比较相近的汉字字形",
+    "instruction_en": "Question 1: Look at the similarly shaped characters and compare them.",
+    "items": [
+     {
+      "n": "1（1）",
+      "zh": "工　干"
+     },
+     {
+      "n": "1（2）",
+      "zh": "吗　妈"
+     }
+    ]
+   },
+   {
+    "n": "四、汉字 第二部分",
+    "type_zh": "汉字 偏旁归类",
+    "instruction_zh": "第2–3题：看汉字，找出含有下列偏旁的汉字",
+    "instruction_en": "Questions 2-3: Look at the characters and group the characters with the same radical.",
+    "word_bank": [
+     [
+      "A 着",
+      "B 明",
+      "C 睛",
+      "D 时"
+     ],
+     [
+      "E 昨",
+      "F 晚",
+      "G 睡",
+      "H 眼"
+     ]
+    ],
+    "items": [
+     {
+      "n": 2,
+      "zh": "日：________",
+      "answer": "B D E F",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        79
+       ]
+      }
+     },
+     {
+      "n": 3,
+      "zh": "目：________",
+      "answer": "A C G H",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        79
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "四、汉字 第三部分",
+    "type_zh": "汉字 写独体字",
+    "instruction_zh": "第4题：看笔顺，写独体字",
+    "instruction_en": "Question 4: Look at the stroke order and practice writing the single-component characters.",
+    "items": [
+     {
+      "n": "4-日",
+      "zh": "日 rì（笔顺：丨 → 冂 → 冃 → 日）"
+     },
+     {
+      "n": "4-目",
+      "zh": "目 mù（笔顺图5步：丨 → 冂 → 冃 → … → 目）"
+     },
+     {
+      "n": "4-习",
+      "zh": "习 xí（笔顺：𠃌 → 𠃌丶 → 习）"
+     }
+    ]
+   }
+  ],
+  "answers_ref": {
+   "book": "workbook_answers",
+   "pages": [
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79
+   ]
+  }
+ },
+ "unclear": [
+  "Сурах бичиг PDF х.118–119 生词: «也»(2), «给»(8), «吧»(10) урдаа «*» тэмдэгтэй хэвлэгдсэн — star:true гэж тэмдэглэсэн (тэмдгийн утгыг ном энд тайлбарлаагүй).",
+  "Сурах бичиг PDF х.119 生词 9 «打电话 dǎ diànhuà» — үгийн ай (pos) хэвлэгдээгүй; pos талбар орхисон.",
+  "Сурах бичиг PDF х.122 拼音 хүснэгт — зөвхөн пиньинь + англи, ханз хэвлэгдээгүй; «niúzǎikù jean» (ганц тоо) номд байгаагаар. Багшийн номын хавсралт PDF х.129-д 语音 дасгалын ханз бий (摩托车, 研究生 …).",
+  "Сурах бичиг PDF х.123 ба багшийн ном PDF х.85/90/91:偏旁 «日字旁», «目字旁» нарийн хажуугийн хэлбэрээр хэвлэгдсэн — Unicode-д тусдаа тэмдэгтгүй тул «日», «目» гэж бичсэн.",
+  "Сурах бичиг PDF х.122 独体字 日/目/习-ийн эртний хэлбэрийн хувьсал (字形演变图) болон 田字格 зурлагын дараалал зөвхөн зурагт; дунд алхмуудыг ойролцоо Unicode (冂, 冃, 𠃌) ба «…»-аар бичсэн. Дасгалын ном PDF х.105–106 мөн адил.",
+  "习-ийн тайлбар: сурах бичиг «“学”过后再反复地温习», багшийн ном PDF х.90 «“学”过后反复地温习» («再» байхгүй) — тус бүрийг номд байгаагаар.",
+  "Дасгалын номын 听力 第二部分 9–10: хариултын ном (workbook_answers PDF х.74) «9 E, 10 F», багшийн номын хавсралт 参考答案 (PDF х.129) «6–10: B A D F E». Бичвэрээр 9 «看电视» → F (ТВ үзэж буй зураг), 10 «他在打电话呢» → E (утсаар ярьж буй зураг) — багшийн номын хариулт бичвэртэй тохирно. answer-д багшийн номын F/E-г оруулж answer_ref = teacher PDF х.128–129. Бусад бүх хариулт хоёр эх сурвалжид тохирч байна (1–5 √××√×, 6–8 BAD, 11–15 BCCCB, 16–20 ×√√×√, 21–25 DBEAC, 26–30 ACBFE, 31–35 IJGHK, 语音 1–5 CACBC, 6–10, 汉字 BDEF／ACGH).",
+  "Багшийн номын хавсралт 汉字 хариултыг «1. B D E F　2. A C G H» гэж дугаарласан, харин дасгалын ном ба хариултын ном 2–3-р асуулт (1-р асуулт нь 字形 харьцуулалт) — дасгалын номын дугаараар бичсэн.",
+  "Дасгалын номын 听力 болон 语音 бичвэр (transcript_zh; 语音 1–5 сонголтуудын пиньинь/ханз; 6–10 өгүүлбэрийн ханз) — багшийн номын хавсралт PDF х.128–129-аас; дасгалын номд 语音 1–5-д зөвхөн A/B/C үсэг хэвлэгдсэн. 语音 6–10 хариулт хариултын номд доогуур зураасаар (tú shū guǎn …), багшийн номд нийлсэн хэлбэрээр (túshūguǎn …) — хоёуланг нь бичсэн.",
+  "Дасгалын номын 汉字 第一部分 (工/干, 吗/妈 字形 харьцуулалт) — хариулт хэвлэгдээгүй.",
+  "Дасгалын номын 三、语音 болон 四、汉字 хэсгийн дугаарлалт 1-ээс дахин эхэлдэг (номд байгаагаар).",
+  "Дасгалын ном PDF х.101 16-р асуулт: зурагт цагаан ундаа (сүү мэт) бүхий аяга, үг «水» — хариулт ×.",
+  "Дасгалын ном PDF х.103 阅读 第三部分: 28, 29, 32-р өгүүлбэрийн пиньинь цэггүй/хоосон зайгүй хэвлэгдсэн (жишээ нь «Wǒ jiā de xiǎo gǒu zài chī fàn») — pinyin-д хоосон зайг ______ гэж нэмсэн.",
+  "Сурах бичгийн 练习2 回答问题, 练习3 描述图片 — хариулт хэвлэгдээгүй. Багшийн номын 汉字 补充练习 «辨认下列汉字并组词» (日/目、习/问、小/少、学/字) — хариулт хэвлэгдээгүй.",
+  "Багшийн ном PDF х.89 课文2 асуулт «昨天上午她们在做什么呢？» — 课文2-т оролцогчдын хүйс тодорхойгүй; номд байгаагаар. 课文 асуултуудад тусдаа хариулт байхгүй (课文1-д зөвхөн 叙述体 бичвэр) — text_questions-д a_zh оруулаагүй.",
+  "Багшийн ном PDF х.86 «练习册相关练习：第90页…第93页…», х.90 «第96页／三», х.91 «第97–98页／四» — дасгалын номын хэвлэсэн хуудасны дугаар (PDF х.98, 101, 104, 105–106).",
+  "Энэ хичээлд 课堂用语 (classroom_expressions), 文化, 俗语 хэсэг сурах бичгийн PDF х.118–123-т байхгүй.",
+  "Аудио файлын нэр мэдэгдэхгүй тул audio талбар орхисон. Номын CD тэмдэг: сурах бичиг 课文1–3 = 13-1／13-2／13-3; 拼音 13-4; дасгалын ном 听力 13-1; 语音 13-2.",
+  "Сурах бичгийн 注释 2 хүснэгтийн мөрүүдийг examples-д мөн өгүүлбэрээр оруулсан (тусдаа жишээ өгүүлбэр хэвлэгдээгүй, зөвхөн хүснэгт).",
+  "Зургийн тайлбарууд (picture_desc_en, pictures_desc_en, options «[picture]») зургаас товч, объектив дүрсэлсэн."
+ ],
+ "verified_pages": [
+  73,
+  74,
+  75,
+  76,
+  77,
+  78,
+  79,
+  85,
+  86,
+  87,
+  88,
+  89,
+  90,
+  91,
+  98,
+  99,
+  100,
+  101,
+  102,
+  103,
+  104,
+  105,
+  106,
+  118,
+  119,
+  120,
+  121,
+  122,
+  123,
+  128,
+  129
+ ],
+ "schema_version": 1
+}

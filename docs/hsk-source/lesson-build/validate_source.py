@@ -1,7 +1,9 @@
-"""Эх сурвалжийн JSON-ийг шалгана: python3 validate_source.py N"""
+"""Эх сурвалжийн JSON-ийг шалгана: python3 validate_source.py N  |  python3 validate_source.py path/LNN/source.json"""
 import json, re, sys
-N = int(sys.argv[1]); NN = f"{N:02d}"
-p = f"/home/claude/hsk3build/L{NN}/source.json"
+if sys.argv[1].endswith(".json"):
+    p = sys.argv[1]; N = int(re.search(r"L(\d+)", p).group(1)); NN = f"{N:02d}"
+else:
+    N = int(sys.argv[1]); NN = f"{N:02d}"; p = f"/home/claude/hsk3build/L{NN}/source.json"
 d = json.load(open(p, encoding="utf-8"))
 errs, warns = [], []
 def req(obj, key, where):
@@ -51,7 +53,8 @@ if not wb: errs.append("workbook байхгүй")
 else:
     items = [it for s in wb.get("sections", []) for it in s.get("items", [])]
     nn = [it.get("n") for it in items if isinstance(it.get("n"), int)]
-    if len([x for x in nn if 1 <= x <= 54]) < 50: errs.append(f"дасгалын номын асуулт {len(nn)} < 50")
+    if len([x for x in nn if 1 <= x <= 60]) < 50:
+        (warns if d.get("level") in ("hsk1","hsk2") else errs).append(f"дасгалын номын асуулт {len(nn)} < 50")
     for it in items:
         if "answer" in it and "answer_ref" not in it and "answers_ref" not in wb: warns.append(f"wb item {it.get('n')}: answer байгаа ч answer_ref байхгүй")
     listening = [s for s in wb["sections"] if "听力" in s.get("type_zh","")+s.get("instruction_zh","")]

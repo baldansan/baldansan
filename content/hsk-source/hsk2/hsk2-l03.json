@@ -1,0 +1,1763 @@
+{
+ "level": "hsk2",
+ "lesson": 3,
+ "book": "HSK2",
+ "title_zh": "左边那个红色的是我的",
+ "title_pinyin": "Zuǒbian nàge hóngsè de shì wǒ de",
+ "title_en": "The red one on the left is mine",
+ "textbook": {
+  "ref": {
+   "book": "textbook",
+   "pages": [
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44
+   ]
+  },
+  "warmup": [
+   {
+    "instruction_zh": "给下面的词语选择对应的图片",
+    "instruction_en": "Match the pictures with the words.",
+    "items": [
+     "①手表 shǒubiǎo",
+     "②报纸 bàozhǐ",
+     "③牛奶 niúnǎi",
+     "④房间 fángjiān",
+     "⑤丈夫 zhàngfu",
+     "⑥红色 hóngsè"
+    ],
+    "pictures_desc_en": [
+     "A: a rack full of folded newspapers",
+     "B: a hand and wrist wearing a gold-and-silver wristwatch, dark suit sleeve",
+     "C: milk being poured into a glass",
+     "D: a plain red square",
+     "E: a bedroom with a large double bed, pillows and bedside lamps",
+     "F: a bride in a white veil and a groom in a black suit embracing"
+    ]
+   },
+   {
+    "instruction_zh": "看下面的图片，说说地图中这些地方的位置",
+    "instruction_en": "Look at the sketch map and describe the positions of the places in it.",
+    "items": [
+     "图书馆 | 体育馆 | 教学楼 | 食堂 | 医务室 | 操场 | 北（↑）",
+     "hòubian 后边 back",
+     "zuǒbian 左边 left side",
+     "yòubian 右边 right side",
+     "zhōngjiān 中间 middle",
+     "pángbiān 旁边 beside",
+     "qiánbian 前边 front"
+    ],
+    "pictures_desc_en": [
+     "Sketch map: 教学楼 in the center; 图书馆 behind it (arrow “后边 back”); 体育馆 on its left (arrow “左边 left side”); 食堂 on its right (arrow “右边 right side”) with another arrow continuing to “右边 right side”; 医务室 below 食堂 with an arrow “旁边 beside”; 操场 (running track) in front of 教学楼 with “中间 middle” between them and arrow “前边 front” below the track; north arrow “北” at top right."
+    ]
+   }
+  ],
+  "pronunciation": [
+   {
+    "title_zh": "四音节词语的重音（1）不含轻声音节的四音节词语",
+    "rows": [
+     "gōnggòng qìchē 公共汽车",
+     "gāosù gōnglù 高速公路",
+     "míngshèng gǔjì 名胜古迹",
+     "ài bú shì shǒu 爱不释手"
+    ],
+    "notes_zh": [
+     "四音节词语的重音一般在第四个音节。例如："
+    ],
+    "notes_en": [
+     "Stress in Quadrisyllabic Words — (1) Quadrisyllabic Words without a Neutral Tone",
+     "In a quadrisyllabic word, the stress generally falls on the fourth syllable. For example:",
+     "[图] a red dot is printed under the fourth character of each word (车、路、迹、手) marking the stress."
+    ]
+   },
+   {
+    "title_zh": "四音节词语的重音（2）含轻声音节的四音节词语",
+    "rows": [
+     "duōduosuōsuō 哆哆嗦嗦",
+     "huànghuangyōuyōu 晃晃悠悠",
+     "mòmojījī 磨磨唧唧",
+     "pīlipālā 噼里啪啦"
+    ],
+    "notes_zh": [
+     "含有轻声音节的四音节词语一般为形容词，第二个音节一般为轻声音节，第四个音节为重读音节。例如："
+    ],
+    "notes_en": [
+     "(2) Quadrisyllabic Words with a Neutral Tone",
+     "A quadrisyallbic word that has a neutral-tone syllable is usually an adjective, in which the second syllable is in the neutral tone and the fourth syllable is stressed. For example:",
+     "[图] a red dot is printed under the fourth character of each word (嗦、悠、唧、啦) marking the stress."
+    ]
+   }
+  ],
+  "texts": [
+   {
+    "n": 1,
+    "title_zh": "在房间",
+    "title_en": "In the room",
+    "kind": "dialogue",
+    "lines": [
+     {
+      "speaker": "A",
+      "zh": "这块手表是你的吗？",
+      "pinyin": "Zhè kuài shǒubiǎo shì nǐ de ma?"
+     },
+     {
+      "speaker": "B",
+      "zh": "不是我的。是我爸爸的。",
+      "pinyin": "Bú shì wǒ de. Shì wǒ bàba de."
+     },
+     {
+      "speaker": "A",
+      "zh": "多少钱买的？",
+      "pinyin": "Duōshao qián mǎi de?"
+     },
+     {
+      "speaker": "B",
+      "zh": "三千多块。",
+      "pinyin": "Sānqiān duō kuài."
+     }
+    ],
+    "english_version": "A: Is this watch yours?\nB: No, it isn’t. It’s my father’s.\nA: How much is it?\nB: More than 3,000 yuan.",
+    "new_words": [
+     {
+      "n": 1,
+      "zh": "手表",
+      "pinyin": "shǒubiǎo",
+      "pos": "n.",
+      "en": "watch",
+      "text": 1
+     },
+     {
+      "n": 2,
+      "zh": "千",
+      "pinyin": "qiān",
+      "pos": "num.",
+      "en": "thousand",
+      "text": 1
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "title_zh": "在家里",
+    "title_en": "At home",
+    "kind": "dialogue",
+    "lines": [
+     {
+      "speaker": "A",
+      "zh": "这是今天早上的报纸吗？",
+      "pinyin": "Zhè shì jīntiān zǎoshang de bàozhǐ ma?"
+     },
+     {
+      "speaker": "B",
+      "zh": "不是，是昨天的。",
+      "pinyin": "Bú shì, shì zuótiān de."
+     },
+     {
+      "speaker": "A",
+      "zh": "你听，是不是送报纸的来了？",
+      "pinyin": "Nǐ tīng, shì bu shì sòng bàozhǐ de lái le?"
+     },
+     {
+      "speaker": "B",
+      "zh": "我看一下。不是，是送牛奶的。",
+      "pinyin": "Wǒ kàn yíxià. Bú shì, shì sòng niúnǎi de."
+     }
+    ],
+    "english_version": "A: Is it this morning’s newspaper?\nB: No, it isn’t. It’s yesterday’s.\nA: Listen. Is that the man who delivers newspaper?\nB: Let me see. No, it’s the milkman.",
+    "new_words": [
+     {
+      "n": 3,
+      "zh": "报纸",
+      "pinyin": "bàozhǐ",
+      "pos": "n.",
+      "en": "newspaper",
+      "text": 2
+     },
+     {
+      "n": 4,
+      "zh": "送",
+      "pinyin": "sòng",
+      "pos": "v.",
+      "en": "to send, to deliver",
+      "text": 2
+     },
+     {
+      "n": 5,
+      "zh": "一下",
+      "pinyin": "yíxià",
+      "pos": "num.-m.",
+      "en": "used after a verb, indicating an act or an attempt",
+      "text": 2
+     },
+     {
+      "n": 6,
+      "zh": "牛奶",
+      "pinyin": "niúnǎi",
+      "pos": "n.",
+      "en": "milk",
+      "text": 2
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "title_zh": "在家里",
+    "title_en": "At home",
+    "kind": "dialogue",
+    "lines": [
+     {
+      "speaker": "A",
+      "zh": "这是谁的房间？",
+      "pinyin": "Zhè shì shéi de fángjiān?"
+     },
+     {
+      "speaker": "B",
+      "zh": "这是我和我丈夫的，旁边那个小的房间是我女儿的。",
+      "pinyin": "Zhè shì wǒ hé wǒ zhàngfu de, pángbiān nàge xiǎo de fángjiān shì wǒ nǚ’ér de."
+     },
+     {
+      "speaker": "A",
+      "zh": "你女儿的房间真漂亮！都是粉色的。",
+      "pinyin": "Nǐ nǚ’ér de fángjiān zhēn piàoliang! Dōu shì fěnsè de."
+     },
+     {
+      "speaker": "B",
+      "zh": "是啊，粉色是我女儿最喜欢的颜色。",
+      "pinyin": "Shì a, fěnsè shì wǒ nǚ’ér zuì xǐhuan de yánsè."
+     }
+    ],
+    "english_version": "A: Whose room is this?\nB: It’s my husband’s and mine. The small one beside it is my daughter’s.\nA: Your daughter’s room is so pretty! It’s all pink.\nB: Yes. Pink is her favorite color.",
+    "new_words": [
+     {
+      "n": 7,
+      "zh": "房间",
+      "pinyin": "fángjiān",
+      "pos": "n.",
+      "en": "room",
+      "text": 3
+     },
+     {
+      "n": 8,
+      "zh": "丈夫",
+      "pinyin": "zhàngfu",
+      "pos": "n.",
+      "en": "husband",
+      "text": 3
+     },
+     {
+      "n": 9,
+      "zh": "旁边",
+      "pinyin": "pángbiān",
+      "pos": "n.",
+      "en": "beside",
+      "text": 3
+     },
+     {
+      "n": 10,
+      "zh": "真",
+      "pinyin": "zhēn",
+      "pos": "adv.",
+      "en": "really, indeed",
+      "text": 3
+     },
+     {
+      "n": 11,
+      "zh": "粉色",
+      "pinyin": "fěnsè",
+      "pos": "n.",
+      "en": "pink (粉 fěn adj. pink)",
+      "text": 3,
+      "star": true
+     },
+     {
+      "n": 12,
+      "zh": "颜色",
+      "pinyin": "yánsè",
+      "pos": "n.",
+      "en": "color",
+      "text": 3
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "title_zh": "在办公室",
+    "title_en": "In the office",
+    "kind": "dialogue",
+    "lines": [
+     {
+      "speaker": "A",
+      "zh": "你看见我的杯子了吗？",
+      "pinyin": "Nǐ kànjiàn wǒ de bēizi le ma?"
+     },
+     {
+      "speaker": "B",
+      "zh": "这里有几个杯子，哪个是你的？",
+      "pinyin": "Zhèli yǒu jǐ ge bēizi, nǎge shì nǐ de?"
+     },
+     {
+      "speaker": "A",
+      "zh": "左边那个红色的是我的。",
+      "pinyin": "Zuǒbian nàge hóngsè de shì wǒ de."
+     },
+     {
+      "speaker": "B",
+      "zh": "给你。",
+      "pinyin": "Gěi nǐ."
+     }
+    ],
+    "english_version": "A: Have you seen my cup?\nB: Here are a few cups. Which one is yours?\nA: The red one on the left is mine.\nB: Here you are.",
+    "new_words": [
+     {
+      "n": 13,
+      "zh": "左边",
+      "pinyin": "zuǒbian",
+      "pos": "n.",
+      "en": "left side",
+      "text": 4
+     },
+     {
+      "n": 14,
+      "zh": "红色",
+      "pinyin": "hóngsè",
+      "pos": "n.",
+      "en": "red (红 hóng adj. red)",
+      "text": 4
+     }
+    ]
+   }
+  ],
+  "grammar": [
+   {
+    "n": 1,
+    "title_zh": "“的”字短语",
+    "title_en": "The “的” Phrase",
+    "explanation_zh": "代词、形容词、动词等跟“的”组成一个短语，相当于省略了中心语的名词短语。例如：",
+    "explanation_en": "“的” can be used after a pronoun, an adjective or a verb to form a phrase which is equivalent to a nominal phrase with its headword omitted. For example:",
+    "examples": [
+     {
+      "n": 1,
+      "zh": "这本书不是我的。",
+      "note_zh": "（＝我的书）"
+     },
+     {
+      "n": 2,
+      "zh": "这个杯子是昨天买的。",
+      "note_zh": "（＝昨天买的杯子）"
+     },
+     {
+      "n": 3,
+      "zh": "这块手表是你的吗？",
+      "note_zh": "（＝你的手表）"
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "title_zh": "一下",
+    "title_en": "The Numeral Classifier “一下”",
+    "explanation_zh": "“一下”用在动词后面，表示一次短暂的动作，相当于动词的重叠式AA（见第8课），宾语可以省略。例如：",
+    "explanation_en": "“一下” is used after a verb to indicate a short action, similar to the reduplicative form (AA) of a verb (see Lesson 8). The object of the verb can be omitted. For example:",
+    "structure_rows": [
+     "Subject | 动词（V） | 一下 | 宾语（O）",
+     "我 | 看 | 一下。 | ",
+     "你 | 休息 | 一下吧。 | ",
+     "我 | 问 | 一下 | 老师。"
+    ],
+    "examples": [
+     {
+      "n": 1,
+      "zh": "我看一下。"
+     },
+     {
+      "n": 2,
+      "zh": "你休息一下吧。"
+     },
+     {
+      "n": 3,
+      "zh": "我问一下老师。"
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "title_zh": "语气副词“真”",
+    "title_en": "The Modal Adverb “真”",
+    "explanation_zh": "“真＋形容词”表示感叹的语气，意思是的确、实在。例如：",
+    "explanation_en": "The structure “真＋adjective” expresses an exclamatory mood, meaning “really, indeed”. For example:",
+    "examples": [
+     {
+      "n": 1,
+      "zh": "你真好！"
+     },
+     {
+      "n": 2,
+      "zh": "今天天气真好！"
+     },
+     {
+      "n": 3,
+      "zh": "你女儿的房间真漂亮！"
+     }
+    ]
+   }
+  ],
+  "exercises": [
+   {
+    "n": 1,
+    "type_zh": "分角色朗读课文",
+    "instruction_zh": "分角色朗读课文",
+    "instruction_en": "Role-play the dialogs.",
+    "items": []
+   },
+   {
+    "n": 2,
+    "type_zh": "回答问题",
+    "instruction_zh": "根据课文内容回答问题",
+    "instruction_en": "Answer the questions based on the dialogs.",
+    "items": [
+     {
+      "n": 1,
+      "zh": "爸爸的手表多少钱？",
+      "pinyin": "Bàba de shǒubiǎo duōshao qián?"
+     },
+     {
+      "n": 2,
+      "zh": "送报纸的来了吗？",
+      "pinyin": "Sòng bàozhǐ de lái le ma?"
+     },
+     {
+      "n": 3,
+      "zh": "旁边那个小的房间是谁的？",
+      "pinyin": "Pángbiān nàge xiǎo de fángjiān shì shéi de?"
+     },
+     {
+      "n": 4,
+      "zh": "她女儿的房间怎么样？",
+      "pinyin": "Tā nǚ’ér de fángjiān zěnmeyàng?"
+     },
+     {
+      "n": 5,
+      "zh": "哪个杯子是她的？",
+      "pinyin": "Nǎge bēizi shì tā de?"
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "type_zh": "描述图片",
+    "instruction_zh": "用本课新学的语言点和词语描述图片",
+    "instruction_en": "Describe the pictures using the newly-learned language points and words.",
+    "items": [
+     {
+      "n": 1,
+      "zh": "外面下雨，他们都在________里呢。",
+      "pinyin": "Wàimian xià yǔ, tāmen dōu zài ______ li ne.",
+      "picture_desc_en": "four small children playing with colorful toy blocks on the floor of a room, a toy house and a ball behind them"
+     },
+     {
+      "n": 2,
+      "zh": "李先生的手表很好，三________多块钱。",
+      "pinyin": "Lǐ xiānsheng de shǒubiǎo hěn hǎo, sān ______ duō kuài qián.",
+      "picture_desc_en": "a man in a dark suit looking at / adjusting the wristwatch on his left wrist"
+     },
+     {
+      "n": 3,
+      "zh": "我觉得左边那个________的漂亮。",
+      "pinyin": "Wǒ juéde zuǒbian nàge ______ de piàoliang.",
+      "picture_desc_en": "a red dress hanging on a wall, with a white dress beside it on the right"
+     },
+     {
+      "n": 4,
+      "zh": "今天________牛奶的来了，________报纸的没来。",
+      "pinyin": "Jīntiān ______ niúnǎi de lái le, ______ bàozhǐ de méi lái.",
+      "picture_desc_en": "a man in a light-colored uniform bending over milk bottles set down in front of an open door, a small child standing in the doorway"
+     }
+    ]
+   }
+  ],
+  "characters": {
+   "knowledge_title_zh": "汉字的笔画（9）：⺄、㇁／认识独体字／汉字偏旁“木”和“刂”",
+   "knowledge_zh": "1 汉字的笔画（9）：⺄、㇁\n笔画名称 | 运笔方向 | 例字\n⺄ 横折斜钩 héngzhéxiégōu | [图] | 飞 fēi、风 fēng\n㇁ 弯钩 wāngōu | [图] | 狗 gǒu、猫 māo\n2 认识独体字\n（1）“手”，字形是一只手的形象，表示“手”的意思。\n（2）“丈”，本义是手持拐杖的老者，现在是长度单位。\n（3）“夫”，本义是成年男子，现在多指家庭中的男性、丈夫。\n3 汉字偏旁“木”和“刂”\n偏旁 | 解释 | 例字\n木 | 木字旁，一般和植物有关系。 | 杯 bēi、椅 yǐ\n刂 | 立刀旁，一般和刀有关系。 | 别 bié、到 dào",
+   "knowledge_en": "Strokes of Chinese Characters (9): ⺄, ㇁ — Horizontal-Turning-Slanting Hook (héngzhéxiégōu): 飞 fēi to fly, 风 fēng wind; Crooked Hook (wāngōu): 狗 gǒu dog, 猫 māo cat.\nSingle-Component Characters: (1) The original form of “手” is an image of a hand. It means “hand”. (2) “丈” originally referred to an old person holding a walking stick. Now it is a unit of length. (3) “夫” originally referred to an adult man. Now it usually means “a man or husband in a family”.\nChinese Radicals: “木” and “刂” — The radical “木” is usually related to plants: 杯 bēi cup, glass; 椅 yǐ chair. The radical “刂” is usually related to cutters or knives: 别 bié to leave, to part; 到 dào to arrive.",
+   "characters": [
+    {
+     "zh": "飞",
+     "pinyin": "fēi",
+     "note_zh": "笔画“⺄（横折斜钩）”例字（to fly）"
+    },
+    {
+     "zh": "风",
+     "pinyin": "fēng",
+     "note_zh": "笔画“⺄（横折斜钩）”例字（wind）"
+    },
+    {
+     "zh": "狗",
+     "pinyin": "gǒu",
+     "note_zh": "笔画“㇁（弯钩）”例字（dog）"
+    },
+    {
+     "zh": "猫",
+     "pinyin": "māo",
+     "note_zh": "笔画“㇁（弯钩）”例字（cat）"
+    },
+    {
+     "zh": "手",
+     "pinyin": "shǒu",
+     "note_zh": "独体字：字形是一只手的形象（字形演变图3步 + 田字格笔顺图4步：㇒ → … → 手）"
+    },
+    {
+     "zh": "丈",
+     "pinyin": "zhàng",
+     "note_zh": "独体字：本义是手持拐杖的老者，现在是长度单位（字形演变图4步 + 笔顺图3步：一 → 𠂇 → 丈）"
+    },
+    {
+     "zh": "夫",
+     "pinyin": "fū",
+     "note_zh": "独体字：本义是成年男子，现在多指家庭中的男性、丈夫（字形演变图4步 + 笔顺图4步：一 → 二 → … → 夫）"
+    },
+    {
+     "zh": "杯",
+     "pinyin": "bēi",
+     "note_zh": "偏旁“木”例字（cup, glass）"
+    },
+    {
+     "zh": "椅",
+     "pinyin": "yǐ",
+     "note_zh": "偏旁“木”例字（chair）"
+    },
+    {
+     "zh": "别",
+     "pinyin": "bié",
+     "note_zh": "偏旁“刂”例字（to leave, to part）"
+    },
+    {
+     "zh": "到",
+     "pinyin": "dào",
+     "note_zh": "偏旁“刂”例字（to arrive）"
+    }
+   ]
+  },
+  "application": [
+   {
+    "title_zh": "双人活动",
+    "instruction_zh": "两人一组，把几个同学的笔、书、杯子等物品放在一起，然后通过询问确定哪个物品是哪位同学的。",
+    "instruction_en": "Work in pairs. Put together several classmates’ items, such as pens, books and cups, etc. Identify the owner of each item by asking questions.",
+    "example_zh": [
+     "例如：",
+     "A：这个红色的杯子是你的吗？ Zhège hóngsè de bēizi shì nǐ de ma?",
+     "B：不是我的。 Bú shì wǒ de.",
+     "A：旁边粉色的杯子是你的吗？ Pángbiān fěnsè de bēizi shì nǐ de ma?",
+     "B：是我的。 Shì wǒ de.",
+     "表格：物品 Item | 杯子 bēizi | 笔 bǐ | 书 shū | 报纸 bàozhǐ | 钱 qián",
+     "表格：位置 Position | 左边 zuǒbian | 右边（yòubian，right） | 前边 qiánbian | 后边 hòubian | 旁边 pángbiān",
+     "表格：颜色 Color | 红色 hóngsè | 粉色 fěnsè | 白色（báisè，white） | 黑色（hēisè，black） | 蓝色（lánsè，blue）"
+    ]
+   },
+   {
+    "title_zh": "小组活动",
+    "instruction_zh": "3～4人一组，边画边介绍你家的房间。",
+    "instruction_en": "Work in groups of 3-4. Describe the rooms in your house or apartment while drawing the pictures of them.",
+    "example_zh": [
+     "例如：",
+     "左边的房间是我爸爸妈妈的，他们的房间很大。 Zuǒbian de fángjiān shì wǒ bàba māma de, tāmēn de fángjiān hěn dà.",
+     "旁边的是我的，我的房间是粉色的。 Pángbiān de shì wǒ de, wǒ de fángjiān shì fěnsè de.",
+     "电脑在桌子上，桌子在床（bed）旁边。 Diànnǎo zài zhuōzi shang, zhuōzi zài chuáng pángbiān.",
+     "（下有空白虚线框，供画图）"
+    ]
+   }
+  ]
+ },
+ "teacher": {
+  "ref": {
+   "book": "teacher",
+   "pages": [
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27
+   ]
+  },
+  "objectives_zh": [
+   "重点词语：学生能够熟练掌握“千、送、旁边、颜色、左边”的词义和用法",
+   "语言点：学生能够了解并掌握：（1）“的”字短语（2）一下（3）语气副词“真”",
+   "语音：学生能够掌握四音节词语的重音规律，并能正确朗读",
+   "汉字：学生能够：（1）熟练认读本课生词（2）掌握“⺄、㇁”两种笔画的正确写法（3）独立书写独体字“手、丈、夫”（4）了解“木（木字旁）、刂（立刀旁）”所表示的意思",
+   "功能：学生能够：（1）用“的”字短语表达限制、指别（2）表达短暂的行为、动作（动词＋一下）（3）表达感叹的语气（真……）"
+  ],
+  "steps": [
+   {
+    "title_zh": "一 复习旧课",
+    "body_zh": "1. 教师出示第5课生词卡片，要求学生快速认读下列生词：\n生病、跑步、起床、身体、出院、知道、休息、忙、时间\n2. 教师带领学生辨析下列字形相近的汉字：\n时＿＿　跑＿＿　休＿＿　间＿＿\n对＿＿　踢＿＿　体＿＿　问＿＿\n3. 教师根据第2课重点内容，要求学生快速回答下列问题：\n你今年多大？\n你多高？\n你每天几点起床？\n你是不是很喜欢运动？\n你什么时候上课？"
+   },
+   {
+    "title_zh": "二 学习新课 1 热身",
+    "body_zh": "热身1：教师先带领学生根据图片选出正确的词语，然后分组练习。一组学生看图片说出正确的词语；一组学生看词语，说出图片的编号。\n答案：①B　②A　③C　④E　⑤F　⑥D\n热身2：让学生根据地图提示，说说“图书馆、食堂、教学楼、体育馆……”分别在什么位置。例如：\n教学楼的后边是图书馆。\n图书馆在教学楼的后边。"
+   },
+   {
+    "title_zh": "2 生词",
+    "body_zh": "（1）生词快速认读及正音\n手表、千、报纸、送、一下、牛奶、房间、丈夫、旁边、真、粉色、颜色、左边、红色\n• 教师可以用PPT依次快速展示生词；\n• 教师领读，学生齐读；\n• 学生接龙式读一遍，每人读两个。\n（2）重点生词扩展及常用搭配\n千—两千—三千多—三千多块—几千\n　—这件衣服两千。\n　—这块手表几千块？\n　—我的手表三千多块呢。\n送—送牛奶—送报纸—送我新书\n　—这本书送我吧？\n　—你知道什么时候送报纸吗？\n　—是不是送报纸的来了？\n旁边—在旁边—商店旁边—旁边的那个人\n　—医院在那个小商店旁边。\n　—旁边的那个人是我大学时候的同学。\n　—旁边那个小的房间是我女儿的。\n颜色—粉（颜）色—红（颜）色—漂亮的颜色—什么颜色\n　—我的房间是粉（颜）色的。\n　—你喜欢什么颜色？\n　—粉色是我女儿最喜欢的颜色。\n左边—在左边—在我的左边—左边的房间—学校的左边\n　—女儿的房间在左边。\n　—左边的那本新书是谁的？\n　—左边那个红色的是我的。\n练习册相关练习：第21页／一／第一部分，第24-25页／二／第一、二部分"
+   },
+   {
+    "title_zh": "3 语言点（1）“的”字短语",
+    "body_zh": "① 语言点解析：\n名词、形容词、动词等后加“的”可以组成“的”字短语。“的”字短语的功能相当于一个名词，在句中可以做主语、宾语。\n② 语言点导入：\n教师可以借助实物，用提问的方式导入，比如用班上学生的书、手表、笔等做演示。\n教师：这本书是你的吗？\n学生：不是我的。是他的。\n教师：这块手表是新的吗？\n学生：不是新的。\n教师：你要红色的还是蓝色的？\n学生：我要红色的。\n（学生用肯定式和否定式回答。）\n③ 语言点操练：\n教师提出问题，学生根据实际情况回答问题。\n教师：这本书是老师的吗？\n学生：……\n教师：这个新手机是你的吗？\n学生：……\n教师：你喜欢什么颜色的（衣服）？\n学生：……\n④ 语言点扩展练习：\n教师带领学生做课本第23页的双人活动。"
+   },
+   {
+    "title_zh": "3 语言点（2）一下",
+    "body_zh": "① 语言点解析：\n“一下”用在动词后面，表示一次短暂的动作。\n［句型框］动词＋一下\n② 语言点导入：\n教师给出情境提示，学生根据教师的情境提示，用所学的语法回答问题。\n教师：下课了，我们可以……？\n学生：休息一下。\n教师：大卫买了一本新书，我们想……？\n学生：看一下。\n③ 语言点操练：\n教师带领学生大声朗读下列短语：\n看一下、说一下、读一下、写一下、来一下、问一下、\n学习一下、休息一下、运动一下\n④ 语言点扩展练习：\n把学生分成两组，一组学生说动词，另一组学生用“动词＋一下”的形式说出来，然后两组互换。在练习过程中，教师要注意纠正学生用的不恰当的动词。\n例如：A：看　B：看一下\n　　　A：学习　B：学习一下\n　　　……"
+   },
+   {
+    "title_zh": "3 语言点（3）语气副词“真”",
+    "body_zh": "① 语言点解析：\n“真”表示感叹和肯定的语气，意思是的确、实在。\n［句型框］真＋形容词\n② 语言点导入：\n教师可以根据真实情境提问，学生用“真＋形容词”来回答问题。\n教师：今天天气怎么样？\n学生：＿＿＿＿＿＿。（好）\n教师：安娜的衣服漂亮不漂亮？\n学生：＿＿＿＿＿＿。（漂亮）\n教师：房间里冷吗？\n学生：＿＿＿＿＿＿。（冷）\n③ 语言点操练：\n教师带领学生大声朗读下列短语：\n真好、真大、真小、真多、真少、真热、真冷、真忙、\n真高兴、真漂亮、真对不起\n④ 语言点扩展练习：\n请学生依次用“真＋形容词”造句子，后面的学生不能与前面的同学重复。"
+   },
+   {
+    "title_zh": "4 课文",
+    "body_zh": "课文1\n（1）让学生听两遍录音并回答下列问题：\n这块手表是男的的吗？\n手表是谁的？\n这块手表是多少钱买的？\n（2）教师领读课文两遍，然后让学生分角色朗读课文。\n（3）教师用PPT展示课文提示词，请学生再次通读一遍课文后，根据提示词复述课文。\nA：这块手表……吗？\nB：不是……。是……的。\nA：……？\nB：三千多块。\n课文2\n（1）让学生听两遍录音并回答下列问题：\n这是哪天的报纸？\n送报纸的来了吗？\n谁来了？\n（2）教师带领学生齐读课文两遍，然后请学生分角色朗读课文。\n（3）教师用PPT展示课文提示词，请学生再次通读一遍课文后，根据提示词复述课文。\nA：这是……吗？\nB：不是，是……的。\nA：你听，是不是……？\nB：我看一下。不是，是……的。\n课文3\n（1）让学生听两遍录音并回答下列问题：\n她们在哪儿说话呢？\n大的房间是谁的？\n小的房间是谁的？\n谁的房间是粉色的？\nB的女儿最喜欢的颜色是什么？\n（2）教师带领学生齐读课文两遍，然后请学生分角色朗读课文。\n（3）让学生以女儿的口气介绍一下她们的家。\n这是……的房间，旁边那个小的房间……，我的房间是……，它很……。……是我最喜欢的颜色。\n课文4\n（1）让学生听两遍录音并回答下列问题：\n男的知道哪个杯子是女的的吗？\n男的这里有几个杯子？\n哪个杯子是女的的？\n（2）教师带领学生齐读课文两遍，然后请学生分角色朗读课文。\n（3）教师用PPT展示课文提示词，请学生再次通读一遍课文后，根据提示词复述课文。\nA：你看见……了吗？\nB：这里……，哪个……的？\nA：……是我的。\nB：给你。\n（4）请学生分角色表演此段课文，可以选不同的实物进行练习。如：书、手机、笔、衣服等。"
+   },
+   {
+    "title_zh": "5 语音",
+    "body_zh": "四音节词语的重音：\n① 知识点解析\n不含轻声音节的四音节词语：重音一般在第四个音节。\n窗明几净　鸡毛蒜皮　朝三暮四\n含轻声音节的四音节词语：第二个音节为轻声音节，第四个音节为重音。\n黑不溜秋　稀里哗啦　慢慢腾腾　热热乎乎\n（以上各词第四个字下有重音点）\n② 语音练习\n教师可利用课本第21-22页的例词进行语音练习。教师可先领读词语，使学生掌握四音节词语的重音特点，然后让学生个别读，教师纠正错误。\n练习册相关练习：第28页／三"
+   },
+   {
+    "title_zh": "6 汉字",
+    "body_zh": "① 知识点解析：\n独体字\n手：字形像一只手，本义就是“手”。\n丈：字形像手持拐杖的老者，现在是长度单位。\n夫：本义是成年男子。\n偏旁\n木：木字旁，由它构成的汉字一般与植物有关系。\n刂：立刀旁，由它构成的汉字一般与刀有关系。\n② 汉字练习：\n• 教师板书或者用手指在空中书写本课独体字“手、丈、夫”，带领学生一起识记独体字的笔画、笔顺。\n• 教师板书本课偏旁“木、刂”，提示学生注意这两个偏旁的笔画和笔顺，并书写各自的代表汉字，帮助学生识记该偏旁的意义。\n• 教师板书本课笔画“⺄、㇁”，给学生展示这两个笔画的运笔方向，并书写各自的代表汉字，帮助学生识记笔画。\n• 补充练习\na. 找出下列含有木字旁和立刀旁的汉字\n刚　极　刘　杉\n林　到　树　别\nb. 拆分下列汉字\n纸：＿＿　＿＿　　边：＿＿　＿＿\n奶：＿＿　＿＿　　房：＿＿　＿＿\nc. 用下列偏旁和部件组合成新汉字\n女　纟　乃　方　关　辶　氏　户\n＿＿　＿＿　＿＿　＿＿\n练习册相关练习：第29页／四"
+   },
+   {
+    "title_zh": "7 补充课堂活动——哪个是你的？",
+    "body_zh": "请学生每人把自己的一支笔放在教室前边的桌子上。找一个学生到桌子前边，根据每个同学对自己物品的叙述，准确地找出来，并归还。\n参考信息：\n颜色\n新的还是旧的？\n大的还是小的？\n左边的还是右边的？"
+   },
+   {
+    "title_zh": "附注：建议教学用具",
+    "body_zh": "1. 生词卡片：第2、3课生词卡片\n2. 独体字卡片：第3课独体字卡片"
+   }
+  ],
+  "notes_zh": [],
+  "warmup_answers_zh": [
+   "答案：①B　②A　③C　④E　⑤F　⑥D"
+  ],
+  "text_questions": [
+   {
+    "text": 1,
+    "q_zh": "这块手表是男的的吗？"
+   },
+   {
+    "text": 1,
+    "q_zh": "手表是谁的？"
+   },
+   {
+    "text": 1,
+    "q_zh": "这块手表是多少钱买的？"
+   },
+   {
+    "text": 2,
+    "q_zh": "这是哪天的报纸？"
+   },
+   {
+    "text": 2,
+    "q_zh": "送报纸的来了吗？"
+   },
+   {
+    "text": 2,
+    "q_zh": "谁来了？"
+   },
+   {
+    "text": 3,
+    "q_zh": "她们在哪儿说话呢？"
+   },
+   {
+    "text": 3,
+    "q_zh": "大的房间是谁的？"
+   },
+   {
+    "text": 3,
+    "q_zh": "小的房间是谁的？"
+   },
+   {
+    "text": 3,
+    "q_zh": "谁的房间是粉色的？"
+   },
+   {
+    "text": 3,
+    "q_zh": "B的女儿最喜欢的颜色是什么？"
+   },
+   {
+    "text": 4,
+    "q_zh": "男的知道哪个杯子是女的的吗？"
+   },
+   {
+    "text": 4,
+    "q_zh": "男的这里有几个杯子？"
+   },
+   {
+    "text": 4,
+    "q_zh": "哪个杯子是女的的？"
+   }
+  ],
+  "summary_zh": "• 语言点：“的”字短语\n　一下\n　语气副词“真”\n• 语音：四音节词语的重音\n• 汉字：独体字“手、丈、夫”\n　偏旁“木、刂”"
+ },
+ "workbook": {
+  "ref": {
+   "book": "workbook",
+   "pages": [
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38
+   ]
+  },
+  "sections": [
+   {
+    "n": "一、听力 第一部分",
+    "type_zh": "听力 第一部分",
+    "instruction_zh": "第1–5题：听句子，判断对错",
+    "instruction_en": "Questions 1-5: Decide whether the pictures are right or wrong based on the sentences you hear.",
+    "items": [
+     {
+      "n": "例1",
+      "zh": "我们家有三个人。（There are three people in my family.）",
+      "pinyin": "Wǒmen jiā yǒu sān ge rén.",
+      "transcript_zh": "我们家有三个人。",
+      "picture_desc_en": "a smiling man carrying a little girl on his shoulders, a woman beside them, outdoors",
+      "answer": "√",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        29
+       ]
+      }
+     },
+     {
+      "n": "例2",
+      "zh": "我每天坐公共汽车去上班。（I go to work by bus every day.）",
+      "pinyin": "Wǒ měi tiān zuò gōnggòngqìchē qù shàng bān.",
+      "transcript_zh": "我每天坐公共汽车去上班。",
+      "picture_desc_en": "a mountain bicycle",
+      "answer": "×",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        29
+       ]
+      }
+     },
+     {
+      "n": 1,
+      "zh": "",
+      "transcript_zh": "这块手表不是她的，是她丈夫的。",
+      "picture_desc_en": "a metal wristwatch on a man’s wrist, white shirt cuff and dark suit sleeve",
+      "answer": "√",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 2,
+      "zh": "",
+      "transcript_zh": "他每天早上都要喝茶、看报纸。",
+      "picture_desc_en": "a young man in a suit and tie reading a newspaper",
+      "answer": "√",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 3,
+      "zh": "",
+      "transcript_zh": "你女儿的房间真漂亮，颜色也好看。",
+      "picture_desc_en": "a room with a bed on which folded white towels lie, wall lamps and curtains",
+      "answer": "√",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 4,
+      "zh": "",
+      "transcript_zh": "送牛奶的来了，你去开门吧。",
+      "picture_desc_en": "a man in a flat cap and suspenders calling out with a hand at his mouth, holding a bundle of newspapers",
+      "answer": "×",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 5,
+      "zh": "",
+      "transcript_zh": "旁边那个大点儿的杯子是我的。",
+      "picture_desc_en": "two paper coffee cups, a small light one and a larger dark one",
+      "answer": "√",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "一、听力 第二部分",
+    "type_zh": "听力 第二部分",
+    "instruction_zh": "第6–10题：听对话，选择与对话内容一致的图片",
+    "instruction_en": "Questions 6-10: Choose the right picture for each dialogue you hear.",
+    "items": [
+     {
+      "n": "例",
+      "zh": "男：你喜欢什么运动？（What sport do you like?） 女：我最喜欢踢足球。（My favorite sport is playing football.）",
+      "pinyin": "Nǐ xǐhuan shénme yùndòng? Wǒ zuì xǐhuan tī zúqiú.",
+      "transcript_zh": "男：你喜欢什么运动？ 女：我最喜欢踢足球。",
+      "options": {
+       "A": "[picture] a folded newspaper lying on a desk next to a dark computer case",
+       "B": "[picture] two hooded sweatshirts, one white and one dark",
+       "C": "[picture] an open book and a stack of books on a table, bookshelves behind",
+       "D": "[picture] a young woman juggling a football with her knee on a field",
+       "E": "[picture] a child’s bed with a spotted headboard, a small bedside cabinet and a flower-shaped rug",
+       "F": "[picture] two glass bottles of milk on wooden boards, outdoors"
+      },
+      "answer": "D",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        30
+       ]
+      }
+     },
+     {
+      "n": 6,
+      "zh": "",
+      "options": {
+       "A": "[picture] a folded newspaper lying on a desk next to a dark computer case",
+       "B": "[picture] two hooded sweatshirts, one white and one dark",
+       "C": "[picture] an open book and a stack of books on a table, bookshelves behind",
+       "D": "[picture] a young woman juggling a football with her knee on a field",
+       "E": "[picture] a child’s bed with a spotted headboard, a small bedside cabinet and a flower-shaped rug",
+       "F": "[picture] two glass bottles of milk on wooden boards, outdoors"
+      },
+      "transcript_zh": "男：今天早上送牛奶的来了吗？ 女：我不知道，你看看外边有没有牛奶。",
+      "answer": "F",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 7,
+      "zh": "",
+      "options": {
+       "A": "[picture] a folded newspaper lying on a desk next to a dark computer case",
+       "B": "[picture] two hooded sweatshirts, one white and one dark",
+       "C": "[picture] an open book and a stack of books on a table, bookshelves behind",
+       "D": "[picture] a young woman juggling a football with her knee on a field",
+       "E": "[picture] a child’s bed with a spotted headboard, a small bedside cabinet and a flower-shaped rug",
+       "F": "[picture] two glass bottles of milk on wooden boards, outdoors"
+      },
+      "transcript_zh": "女：今天的报纸在哪儿？ 男：在电脑旁边。",
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 8,
+      "zh": "",
+      "options": {
+       "A": "[picture] a folded newspaper lying on a desk next to a dark computer case",
+       "B": "[picture] two hooded sweatshirts, one white and one dark",
+       "C": "[picture] an open book and a stack of books on a table, bookshelves behind",
+       "D": "[picture] a young woman juggling a football with her knee on a field",
+       "E": "[picture] a child’s bed with a spotted headboard, a small bedside cabinet and a flower-shaped rug",
+       "F": "[picture] two glass bottles of milk on wooden boards, outdoors"
+      },
+      "transcript_zh": "女：这个房间真漂亮！ 男：这是我女儿的房间，旁边的是我儿子的。",
+      "answer": "E",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 9,
+      "zh": "",
+      "options": {
+       "A": "[picture] a folded newspaper lying on a desk next to a dark computer case",
+       "B": "[picture] two hooded sweatshirts, one white and one dark",
+       "C": "[picture] an open book and a stack of books on a table, bookshelves behind",
+       "D": "[picture] a young woman juggling a football with her knee on a field",
+       "E": "[picture] a child’s bed with a spotted headboard, a small bedside cabinet and a flower-shaped rug",
+       "F": "[picture] two glass bottles of milk on wooden boards, outdoors"
+      },
+      "transcript_zh": "女：你喜欢哪件衣服？ 男：我喜欢白色的。",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 10,
+      "zh": "",
+      "options": {
+       "A": "[picture] a folded newspaper lying on a desk next to a dark computer case",
+       "B": "[picture] two hooded sweatshirts, one white and one dark",
+       "C": "[picture] an open book and a stack of books on a table, bookshelves behind",
+       "D": "[picture] a young woman juggling a football with her knee on a field",
+       "E": "[picture] a child’s bed with a spotted headboard, a small bedside cabinet and a flower-shaped rug",
+       "F": "[picture] two glass bottles of milk on wooden boards, outdoors"
+      },
+      "transcript_zh": "女：哪本书是你的？ 男：这几本书都是我的。",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "一、听力 第三部分",
+    "type_zh": "听力 第三部分",
+    "instruction_zh": "第11–15题：听对话，选择正确答案",
+    "instruction_en": "Questions 11-15: Listen to the dialogues and answer the questions.",
+    "items": [
+     {
+      "n": "例",
+      "zh": "问：小王的杯子是什么颜色的？（Question: What color is Xiao Wang’s cup?）",
+      "pinyin": "Xiǎo Wáng de bēizi shì shénme yánsè de?",
+      "transcript_zh": "男：小王，这里有几个杯子，哪个是你的？ 女：左边那个红色的是我的。 问：小王的杯子是什么颜色的？",
+      "hint_zh": "男：小王，这里有几个杯子，哪个是你的？ Xiǎo Wáng, zhèli yǒu jǐ ge bēizi, nǎge shì nǐ de?（Xiao Wang, here are some cups, which of these cups is yours?） 女：左边那个红色的是我的。 Zuǒbian nàge hóngsè de shì wǒ de.（The red one on the left is mine.）",
+      "options": {
+       "A": "红色 hóngsè red",
+       "B": "黑色 hēisè black",
+       "C": "白色 báisè white"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        31
+       ]
+      }
+     },
+     {
+      "n": 11,
+      "zh": "",
+      "transcript_zh": "女：你最喜欢哪块手表？ 男：我最喜欢左边的。 问：男的最喜欢哪块手表？",
+      "options": {
+       "A": "左边的 zuǒbian de",
+       "B": "旁边的 pángbiān de",
+       "C": "右边的 yòubian de"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 12,
+      "zh": "",
+      "transcript_zh": "女：今天的报纸在桌子上，你看吧。 男：好，我知道了。 问：桌子上的报纸是哪天的？",
+      "options": {
+       "A": "昨天的 zuótiān de",
+       "B": "今天的 jīntiān de",
+       "C": "明天的 míngtiān de"
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 13,
+      "zh": "",
+      "transcript_zh": "女：你听，送牛奶的来了，你去看一下。 男：不是送牛奶的，是送报纸的。 问：谁来了？",
+      "options": {
+       "A": "送饭的 sòng fàn de",
+       "B": "送牛奶的 sòng niúnǎi de",
+       "C": "送报纸的 sòng bàozhǐ de"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 14,
+      "zh": "",
+      "transcript_zh": "男：丽丽，这个房间真大，这是谁的房间？ 女：这是我爸爸妈妈的房间。 问：这是谁的房间？",
+      "options": {
+       "A": "爸爸妈妈的 bàba māma de",
+       "B": "丽丽的 Lìli de",
+       "C": "哥哥的 gēge de"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 15,
+      "zh": "",
+      "transcript_zh": "女：哪个杯子是你的？ 男：都不是我的，给我一个新的吧。 问：哪个杯子是男的的？",
+      "options": {
+       "A": "新的 xīn de",
+       "B": "都不是 dōu bú shì",
+       "C": "都是 dōu shì"
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第一部分",
+    "type_zh": "阅读 第一部分",
+    "instruction_zh": "第16–20题：看图片，选择与句子内容一致的图片",
+    "instruction_en": "Questions 16-20: Choose the right picture for each sentence.",
+    "items": [
+     {
+      "n": "例",
+      "zh": "每个星期六，我都去打篮球。（Example: I go to play basketball every Saturday.）",
+      "pinyin": "Měi ge xīngqīliù, wǒ dōu qù dǎ lánqiú.",
+      "options": {
+       "A": "[picture] a woman holding a cup, tending to a man lying on a sofa with her hand on his forehead",
+       "B": "[picture] a row of vintage cars parked along a tree-lined street",
+       "C": "[picture] a child in a striped sweater and cap on a bicycle, stretching out an arm as if throwing something, on a road",
+       "D": "[picture] a smiling young man holding a basketball above his head",
+       "E": "[picture] three wristwatches side by side",
+       "F": "[picture] a small room with bunk beds and a curtained window"
+      },
+      "answer": "D",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        32
+       ]
+      }
+     },
+     {
+      "n": 16,
+      "zh": "这几块手表都不是我的。",
+      "pinyin": "Zhè jǐ kuài shǒubiǎo dōu bú shì wǒ de.",
+      "options": {
+       "A": "[picture] a woman holding a cup, tending to a man lying on a sofa with her hand on his forehead",
+       "B": "[picture] a row of vintage cars parked along a tree-lined street",
+       "C": "[picture] a child in a striped sweater and cap on a bicycle, stretching out an arm as if throwing something, on a road",
+       "D": "[picture] a smiling young man holding a basketball above his head",
+       "E": "[picture] three wristwatches side by side",
+       "F": "[picture] a small room with bunk beds and a curtained window"
+      },
+      "answer": "E",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 17,
+      "zh": "你身体不好，多喝水，休息一下吧。",
+      "pinyin": "Nǐ shēntǐ bù hǎo, duō hē shuǐ, xiūxi yíxià ba.",
+      "options": {
+       "A": "[picture] a woman holding a cup, tending to a man lying on a sofa with her hand on his forehead",
+       "B": "[picture] a row of vintage cars parked along a tree-lined street",
+       "C": "[picture] a child in a striped sweater and cap on a bicycle, stretching out an arm as if throwing something, on a road",
+       "D": "[picture] a smiling young man holding a basketball above his head",
+       "E": "[picture] three wristwatches side by side",
+       "F": "[picture] a small room with bunk beds and a curtained window"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 18,
+      "zh": "这个房间不是我的，是丽丽和文文的。",
+      "pinyin": "Zhège fángjiān bú shì wǒ de, shì Lìli hé Wénwen de.",
+      "options": {
+       "A": "[picture] a woman holding a cup, tending to a man lying on a sofa with her hand on his forehead",
+       "B": "[picture] a row of vintage cars parked along a tree-lined street",
+       "C": "[picture] a child in a striped sweater and cap on a bicycle, stretching out an arm as if throwing something, on a road",
+       "D": "[picture] a smiling young man holding a basketball above his head",
+       "E": "[picture] three wristwatches side by side",
+       "F": "[picture] a small room with bunk beds and a curtained window"
+      },
+      "answer": "F",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 19,
+      "zh": "他骑着车去送报纸。",
+      "pinyin": "Tā qí zhe chē qù sòng bàozhǐ.",
+      "options": {
+       "A": "[picture] a woman holding a cup, tending to a man lying on a sofa with her hand on his forehead",
+       "B": "[picture] a row of vintage cars parked along a tree-lined street",
+       "C": "[picture] a child in a striped sweater and cap on a bicycle, stretching out an arm as if throwing something, on a road",
+       "D": "[picture] a smiling young man holding a basketball above his head",
+       "E": "[picture] three wristwatches side by side",
+       "F": "[picture] a small room with bunk beds and a curtained window"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 20,
+      "zh": "前边的这个车是李老师的。",
+      "pinyin": "Qiánbian de zhège chē shì Lǐ lǎoshī de.",
+      "options": {
+       "A": "[picture] a woman holding a cup, tending to a man lying on a sofa with her hand on his forehead",
+       "B": "[picture] a row of vintage cars parked along a tree-lined street",
+       "C": "[picture] a child in a striped sweater and cap on a bicycle, stretching out an arm as if throwing something, on a road",
+       "D": "[picture] a smiling young man holding a basketball above his head",
+       "E": "[picture] three wristwatches side by side",
+       "F": "[picture] a small room with bunk beds and a curtained window"
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第二部分",
+    "type_zh": "阅读 第二部分 选词填空",
+    "instruction_zh": "第21–25题：选择合适的词语填空",
+    "instruction_en": "Questions 21-25: Choose the proper words to fill in the brackets.",
+    "word_bank": [
+     [
+      "A 送 sòng",
+      "B 真 zhēn",
+      "C 一下 yíxià",
+      "D 旁边 pángbiān",
+      "E 贵 guì",
+      "F 千 qiān"
+     ]
+    ],
+    "items": [
+     {
+      "n": "例",
+      "zh": "这儿的羊肉很好吃，但是也很（  ）。（Example: The mutton here is delicious, but it is also expensive.）",
+      "pinyin": "Zhèr de yángròu hěn hǎochī, dànshì yě hěn",
+      "answer": "E",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        33
+       ]
+      }
+     },
+     {
+      "n": 21,
+      "zh": "今天的天气（  ）好，我们出去玩儿玩儿吧。",
+      "pinyin": "Jīntiān de tiānqì ______ hǎo, wǒmen chūqu wánr wánr ba.",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 22,
+      "zh": "我也不知道吃什么，我想（  ）。",
+      "pinyin": "Wǒ yě bù zhīdào chī shénme, wǒ xiǎng",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 23,
+      "zh": "我丈夫在医院呢，我要去给他（  ）饭。",
+      "pinyin": "Wǒ zhàngfu zài yīyuàn ne, wǒ yào qù gěi tā ______ fàn.",
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 24,
+      "zh": "这块手表一（  ）多块钱，我有八百块，你有多少钱？",
+      "pinyin": "Zhè kuài shǒubiǎo yì ______ duō kuài qián, wǒ yǒu bā bǎi kuài, nǐ yǒu duōshao qián?",
+      "answer": "F",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 25,
+      "zh": "妈妈在做饭呢，爸爸在桌子（  ）看报纸呢。",
+      "pinyin": "Māma zài zuò fàn ne, bàba zài zhuōzi ______ kàn bàozhǐ ne.",
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第三部分",
+    "type_zh": "阅读 第三部分 判断对错",
+    "instruction_zh": "第26–30题：判断下列句子的意思是否正确",
+    "instruction_en": "Questions 26-30: Decide whether the inferences are true or false.",
+    "items": [
+     {
+      "n": "例1",
+      "zh": "现在是11点30分，他们已经游了20分钟了。（Example: It’s 11:30 now. They have been swimming for 20 minutes.） ★他们11点10分开始游泳。（They started swimming at 11:10.）",
+      "pinyin": "Xiànzài shì diǎn fēn, tāmen yǐjīng yóule fēnzhōng le. ★ Tāmen diǎn fēn kāishǐ yóuyǒng.",
+      "answer": "√",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        34
+       ]
+      }
+     },
+     {
+      "n": "例2",
+      "zh": "我会跳舞，但跳得不怎么样。（I can dance, but not well.） ★我跳得非常好。（I dance pretty well.）",
+      "pinyin": "Wǒ huì tiàowǔ, dàn tiào de bù zěnmeyàng. ★ Wǒ tiào de fēicháng hǎo.",
+      "answer": "×",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        34
+       ]
+      }
+     },
+     {
+      "n": 26,
+      "zh": "这个房间是丽丽的，她喜欢粉色的房间。 ★丽丽的房间是粉色的。",
+      "pinyin": "Zhège fángjiān shì Lìli de, tā xǐhuan fěnsè de fángjiān. ★ Lìli de fángjiān shì fěnsè de.",
+      "answer": "√",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 27,
+      "zh": "桌子上的报纸是昨天的，今天送报纸的没来。 ★桌子上的报纸不是今天的。",
+      "pinyin": "Zhuōzi shang de bàozhǐ shì zuótiān de, jīntiān sòng bàozhǐ de méi lái. ★ Zhuōzi shang de bàozhǐ bú shì jīntiān de.",
+      "answer": "√",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 28,
+      "zh": "你的药在房间里，这是爸爸的。 ★房间里的药是爸爸的。",
+      "pinyin": "Nǐ de yào zài fángjiān li, zhè shì bàba de. ★ Fángjiān li de yào shì bàba de.",
+      "answer": "×",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 29,
+      "zh": "这块手表是昨天买的，我很喜欢。 ★我昨天买了一块手表。",
+      "pinyin": "Zhè kuài shǒubiǎo shì zuótiān mǎi de, wǒ hěn xǐhuan. ★ Wǒ zuótiān mǎile yí kuài shǒubiǎo.",
+      "answer": "√",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 30,
+      "zh": "小王，你喜欢哪个颜色的杯子？给你一个。 ★他要给小王一个红色杯子。",
+      "pinyin": "Xiǎo Wáng, nǐ xǐhuan nǎge yánsè de bēizi? Gěi nǐ yí ge. ★ Tā yào gěi xiǎo Wáng yí ge hóngsè bēizi.",
+      "answer": "×",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第四部分",
+    "type_zh": "阅读 第四部分 选择合适的问答",
+    "instruction_zh": "第31–35题：选择合适的问答",
+    "instruction_en": "Questions 31-35: Match the sentences to make dialogues.",
+    "items": [
+     {
+      "n": "例",
+      "zh": "他还在教室里学习。（Example: He is still studying in the classroom.）",
+      "pinyin": "Tā hái zài jiàoshì li xuéxí.",
+      "options": {
+       "A": "我不认识前边的那两个人，他们是谁？ Wǒ bú rènshi qiánbian de nà liǎng ge rén, tāmen shì shéi?",
+       "B": "来了，你休息一下吧，看看报纸，喝喝茶。 Lái le, nǐ xiūxi yíxià ba, kànkan bàozhǐ, hēhe chá.",
+       "C": "我想给爸爸买一块手表，你觉得这块怎么样？ Wǒ xiǎng gěi bàba mǎi yí kuài shǒubiǎo, nǐ juéde zhè kuài zěnmeyàng?",
+       "D": "今天我要给儿子、女儿做早饭，要给丈夫做午饭，还要给朋友们做晚饭。 Jīntiān wǒ yào gěi érzi、nǚ’ér zuò zǎofàn, yào gěi zhàngfu zuò wǔfàn, hái yào gěi péngyoumen zuò wǎnfàn.",
+       "E": "他在哪儿呢？你看见他了吗？ Tā zài nǎr ne? Nǐ kànjiàn tā le ma?",
+       "F": "我的房间太小，住不下两个人。 Wǒ de fángjiān tài xiǎo, zhù bu xià liǎng ge rén."
+      },
+      "answer": "E",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        35
+       ]
+      }
+     },
+     {
+      "n": 31,
+      "zh": "做三次饭，真累啊！",
+      "pinyin": "Zuò sān cì fàn, zhēn lèi a!",
+      "options": {
+       "A": "我不认识前边的那两个人，他们是谁？ Wǒ bú rènshi qiánbian de nà liǎng ge rén, tāmen shì shéi?",
+       "B": "来了，你休息一下吧，看看报纸，喝喝茶。 Lái le, nǐ xiūxi yíxià ba, kànkan bàozhǐ, hēhe chá.",
+       "C": "我想给爸爸买一块手表，你觉得这块怎么样？ Wǒ xiǎng gěi bàba mǎi yí kuài shǒubiǎo, nǐ juéde zhè kuài zěnmeyàng?",
+       "D": "今天我要给儿子、女儿做早饭，要给丈夫做午饭，还要给朋友们做晚饭。 Jīntiān wǒ yào gěi érzi、nǚ’ér zuò zǎofàn, yào gěi zhàngfu zuò wǔfàn, hái yào gěi péngyoumen zuò wǎnfàn.",
+       "E": "他在哪儿呢？你看见他了吗？ Tā zài nǎr ne? Nǐ kànjiàn tā le ma?",
+       "F": "我的房间太小，住不下两个人。 Wǒ de fángjiān tài xiǎo, zhù bu xià liǎng ge rén."
+      },
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 32,
+      "zh": "左边的是王老师，旁边的是张老师。",
+      "pinyin": "Zuǒbian de shì Wáng lǎoshī, pángbiān de shì Zhāng lǎoshī.",
+      "options": {
+       "A": "我不认识前边的那两个人，他们是谁？ Wǒ bú rènshi qiánbian de nà liǎng ge rén, tāmen shì shéi?",
+       "B": "来了，你休息一下吧，看看报纸，喝喝茶。 Lái le, nǐ xiūxi yíxià ba, kànkan bàozhǐ, hēhe chá.",
+       "C": "我想给爸爸买一块手表，你觉得这块怎么样？ Wǒ xiǎng gěi bàba mǎi yí kuài shǒubiǎo, nǐ juéde zhè kuài zěnmeyàng?",
+       "D": "今天我要给儿子、女儿做早饭，要给丈夫做午饭，还要给朋友们做晚饭。 Jīntiān wǒ yào gěi érzi、nǚ’ér zuò zǎofàn, yào gěi zhàngfu zuò wǔfàn, hái yào gěi péngyoumen zuò wǎnfàn.",
+       "E": "他在哪儿呢？你看见他了吗？ Tā zài nǎr ne? Nǐ kànjiàn tā le ma?",
+       "F": "我的房间太小，住不下两个人。 Wǒ de fángjiān tài xiǎo, zhù bu xià liǎng ge rén."
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 33,
+      "zh": "没关系，我去大卫家，他家很大。",
+      "pinyin": "Méi guānxi, wǒ qù Dàwèi jiā, tā jiā hěn dà.",
+      "options": {
+       "A": "我不认识前边的那两个人，他们是谁？ Wǒ bú rènshi qiánbian de nà liǎng ge rén, tāmen shì shéi?",
+       "B": "来了，你休息一下吧，看看报纸，喝喝茶。 Lái le, nǐ xiūxi yíxià ba, kànkan bàozhǐ, hēhe chá.",
+       "C": "我想给爸爸买一块手表，你觉得这块怎么样？ Wǒ xiǎng gěi bàba mǎi yí kuài shǒubiǎo, nǐ juéde zhè kuài zěnmeyàng?",
+       "D": "今天我要给儿子、女儿做早饭，要给丈夫做午饭，还要给朋友们做晚饭。 Jīntiān wǒ yào gěi érzi、nǚ’ér zuò zǎofàn, yào gěi zhàngfu zuò wǔfàn, hái yào gěi péngyoumen zuò wǎnfàn.",
+       "E": "他在哪儿呢？你看见他了吗？ Tā zài nǎr ne? Nǐ kànjiàn tā le ma?",
+       "F": "我的房间太小，住不下两个人。 Wǒ de fángjiān tài xiǎo, zhù bu xià liǎng ge rén."
+      },
+      "answer": "F",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 34,
+      "zh": "今天的报纸来了吗？",
+      "pinyin": "Jīntiān de bàozhǐ lái le ma?",
+      "options": {
+       "A": "我不认识前边的那两个人，他们是谁？ Wǒ bú rènshi qiánbian de nà liǎng ge rén, tāmen shì shéi?",
+       "B": "来了，你休息一下吧，看看报纸，喝喝茶。 Lái le, nǐ xiūxi yíxià ba, kànkan bàozhǐ, hēhe chá.",
+       "C": "我想给爸爸买一块手表，你觉得这块怎么样？ Wǒ xiǎng gěi bàba mǎi yí kuài shǒubiǎo, nǐ juéde zhè kuài zěnmeyàng?",
+       "D": "今天我要给儿子、女儿做早饭，要给丈夫做午饭，还要给朋友们做晚饭。 Jīntiān wǒ yào gěi érzi、nǚ’ér zuò zǎofàn, yào gěi zhàngfu zuò wǔfàn, hái yào gěi péngyoumen zuò wǎnfàn.",
+       "E": "他在哪儿呢？你看见他了吗？ Tā zài nǎr ne? Nǐ kànjiàn tā le ma?",
+       "F": "我的房间太小，住不下两个人。 Wǒ de fángjiān tài xiǎo, zhù bu xià liǎng ge rén."
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 35,
+      "zh": "我觉得这块很漂亮。",
+      "pinyin": "Wǒ juéde zhè kuài hěn piàoliang.",
+      "options": {
+       "A": "我不认识前边的那两个人，他们是谁？ Wǒ bú rènshi qiánbian de nà liǎng ge rén, tāmen shì shéi?",
+       "B": "来了，你休息一下吧，看看报纸，喝喝茶。 Lái le, nǐ xiūxi yíxià ba, kànkan bàozhǐ, hēhe chá.",
+       "C": "我想给爸爸买一块手表，你觉得这块怎么样？ Wǒ xiǎng gěi bàba mǎi yí kuài shǒubiǎo, nǐ juéde zhè kuài zěnmeyàng?",
+       "D": "今天我要给儿子、女儿做早饭，要给丈夫做午饭，还要给朋友们做晚饭。 Jīntiān wǒ yào gěi érzi、nǚ’ér zuò zǎofàn, yào gěi zhàngfu zuò wǔfàn, hái yào gěi péngyoumen zuò wǎnfàn.",
+       "E": "他在哪儿呢？你看见他了吗？ Tā zài nǎr ne? Nǐ kànjiàn tā le ma?",
+       "F": "我的房间太小，住不下两个人。 Wǒ de fángjiān tài xiǎo, zhù bu xià liǎng ge rén."
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "三、语音 第一部分",
+    "type_zh": "语音 第一部分 听录音",
+    "instruction_zh": "第1题：听录音，注意每个词中重音的位置",
+    "instruction_en": "Question 1: Listen to the recording and pay attention to the stress in each word.",
+    "items": [
+     {
+      "n": "1-(1)",
+      "zh": "",
+      "pinyin": "diànzǐ yóujiàn",
+      "transcript_zh": "diànzǐ yóujiàn（电子邮件）"
+     },
+     {
+      "n": "1-(2)",
+      "zh": "",
+      "pinyin": "bàntú’érfèi",
+      "transcript_zh": "bàntú’érfèi（半途而废）"
+     },
+     {
+      "n": "1-(3)",
+      "zh": "",
+      "pinyin": "bódà jīngshēn",
+      "transcript_zh": "bódà jīngshēn（博大精深）"
+     },
+     {
+      "n": "1-(4)",
+      "zh": "",
+      "pinyin": "jiéjìn quánlì",
+      "transcript_zh": "jiéjìn quánlì（竭尽全力）"
+     },
+     {
+      "n": "1-(5)",
+      "zh": "",
+      "pinyin": "huàshé tiānzú",
+      "transcript_zh": "huàshé tiānzú（画蛇添足）"
+     },
+     {
+      "n": "1-(6)",
+      "zh": "",
+      "pinyin": "bǎojīng cāngsāng",
+      "transcript_zh": "bǎojīng cāngsāng（饱经沧桑）"
+     },
+     {
+      "n": "1-(7)",
+      "zh": "",
+      "pinyin": "bámiáo zhùzhǎng",
+      "transcript_zh": "bámiáo zhùzhǎng（拔苗助长）"
+     },
+     {
+      "n": "1-(8)",
+      "zh": "",
+      "pinyin": "kǎnkǎn ér tán",
+      "transcript_zh": "kǎnkǎn ér tán（侃侃而谈）"
+     }
+    ]
+   },
+   {
+    "n": "三、语音 第二部分",
+    "type_zh": "语音 第二部分 听录音跟读",
+    "instruction_zh": "第2题：听录音，注意每个词中重音的位置并跟读",
+    "instruction_en": "Question 2: Listen to the recording and pay attention to the stress in each word. Then read after the recording.",
+    "items": [
+     {
+      "n": "2-(1)",
+      "zh": "舒舒服服",
+      "pinyin": "shūshufūfū"
+     },
+     {
+      "n": "2-(2)",
+      "zh": "平平安安",
+      "pinyin": "píngping’ān’ān"
+     },
+     {
+      "n": "2-(3)",
+      "zh": "痛痛快快",
+      "pinyin": "tòngtongkuāikuāi"
+     },
+     {
+      "n": "2-(4)",
+      "zh": "亮亮堂堂",
+      "pinyin": "liàngliangtāngtāng"
+     },
+     {
+      "n": "2-(5)",
+      "zh": "糊里糊涂",
+      "pinyin": "húlihútū"
+     },
+     {
+      "n": "2-(6)",
+      "zh": "干干净净",
+      "pinyin": "gānganjìngjìng"
+     },
+     {
+      "n": "2-(7)",
+      "zh": "黑咕隆咚",
+      "pinyin": "hēigulōngdōng"
+     },
+     {
+      "n": "2-(8)",
+      "zh": "唧唧咕咕",
+      "pinyin": "jījigūgū"
+     }
+    ]
+   },
+   {
+    "n": "四、汉字 第一部分",
+    "type_zh": "汉字 按偏旁归类",
+    "instruction_zh": "第1–2题：看汉字，按偏旁归类",
+    "instruction_en": "Questions 1-2: Group the characters with the same radical.",
+    "word_bank": [
+     [
+      "A 到",
+      "B 树",
+      "C 杯",
+      "D 机"
+     ],
+     [
+      "E 别",
+      "F 刊",
+      "G 刑",
+      "H 林"
+     ]
+    ],
+    "items": [
+     {
+      "n": 1,
+      "zh": "木：________",
+      "answer": "B C D H",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 2,
+      "zh": "刂：________",
+      "answer": "A E F G",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "四、汉字 第二部分",
+    "type_zh": "汉字 看生词和图片猜词义",
+    "instruction_zh": "第3题：看生词和图片，猜出词义",
+    "instruction_en": "Question 3: Guess the meaning of each word based on the new words and picture.",
+    "items": [
+     {
+      "n": 3,
+      "zh": "粉色＿＿　红色＿＿　黑色＿＿　白色＿＿",
+      "options": {
+       "A": "white",
+       "B": "pink",
+       "C": "red",
+       "D": "black"
+      },
+      "picture_desc_en": "a fan-shaped arc of four color bands labelled from top to bottom “black” (D), “red” (C), “pink” (B), “white” (A)",
+      "answer": "B C D A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "四、汉字 第三部分",
+    "type_zh": "汉字 写独体字",
+    "instruction_zh": "第4题：看笔顺，写独体字",
+    "instruction_en": "Question 4: Look at the stroke order and practice writing the single-component characters.",
+    "items": [
+     {
+      "n": "4-手",
+      "zh": "手 shǒu（笔顺图4步：㇒ → … → 三 → 手）"
+     },
+     {
+      "n": "4-丈",
+      "zh": "丈 zhàng（笔顺图3步：一 → 𠂇 → 丈）"
+     },
+     {
+      "n": "4-夫",
+      "zh": "夫 fū（笔顺图4步：一 → 二 → … → 夫）"
+     }
+    ]
+   }
+  ],
+  "answers_ref": {
+   "book": "teacher",
+   "pages": [
+    119,
+    120
+   ]
+  }
+ },
+ "unclear": [
+  "Сурах бичиг PDF х.39 生词 11 «粉色 fěnsè n. pink»-ийн доор «粉 fěn adj. pink», 14 «红色 hóngsè n. red»-ийн доор «红 hóng adj. red» дэд мөр (дугааргүй) хэвлэгдсэн — тусдаа үг болгоогүй, en талбарт хаалтанд оруулсан. 11 нь * тэмдэгтэй (star).",
+  "Сурах бичиг PDF х.44 小组活动 жишээний пиньинь «tāmēn de fángjiān» — «们» 1-р хөгтэй (ēn) хэвлэгдсэн (ердийн «tāmen»-ээс зөрүүтэй); номд байгаагаар.",
+  "Сурах бичиг PDF х.42 «A quadrisyallbic word…» — англи бичвэрт үсгийн алдаа (quadrisyallbic) номд байгаагаар хадгалсан.",
+  "Сурах бичиг PDF х.40 注释2 «一下»: жишээ нь зөвхөн хүснэгтэд (Subject | 动词（V） | 一下 | 宾语（O））; examples-д хүснэгтийн 3 мөрийг өгүүлбэр болгон давтсан. 注释1-ийн жишээнд «我的／昨天买的／你的» доогуур зураастай хэвлэгдсэн (текстээр тэмдэглэгдээгүй).",
+  "Сурах бичиг PDF х.40 注释1 ба х.40–41 注释3 жишээ (3) улаанаар хэвлэгдсэн (课文-ээс авсан өгүүлбэр).",
+  "Сурах бичиг PDF х.42 笔画 «横折斜钩» тэмдгийг Unicode-оор «⺄» гэж ойролцоогоор бичсэн (тусгай CJK зурлага байхгүй); «弯钩» = «㇁». 运笔方向 багана зөвхөн зураг — «[图]».",
+  "Сурах бичиг PDF х.42–43 独体字 手/丈/夫-ийн эртний хэлбэрийн хувьсал (字形演变图) болон 田字格 зурлагын дараалал зөвхөн зурагт; завсрын алхмуудыг Unicode-оор бүрэн дүрслэх боломжгүй тул «…» гэж бичсэн. Дасгалын ном PDF х.38 мөн адил (手 4 алхам, 丈 3 алхам, 夫 4 алхам).",
+  "Сурах бичиг PDF х.43 偏旁 «木» (木字旁 — зүүн талын хэлбэр) — Unicode-т тусдаа хэлбэр байхгүй тул «木» гэж бичсэн.",
+  "Сурах бичиг PDF х.37 热身2 газрын зураг: байршлын нэрс (图书馆、体育馆、教学楼、食堂、医务室、操场) болон сумтай чиглэлийн үгс — зургийн бүтцийг pictures_desc_en-д товч дүрсэлсэн.",
+  "Сурах бичиг PDF х.41 语音 жишээнүүдэд 4-р ханзын доор улаан цэг (重音) — notes_en-д «[图]» тэмдэглэл. Багшийн ном PDF х.26-ийн нэмэлт жишээнүүдэд (窗明几净…热热乎乎) мөн 4-р ханзын доор цэг.",
+  "Энэ хичээлд 课堂用语／文化／俗语 хэсэг сурах бичгийн PDF х.37–44-д байхгүй.",
+  "Аудио файлын нэр мэдэгдэхгүй тул audio талбар орхисон. Номын CD тэмдэг: сурах бичиг 课文1–4 = 03-1／03-2／03-3／03-4; 语音 03-5; дасгалын ном 听力 03-1; 语音 03-2.",
+  "Багшийн ном PDF х.21 复习旧课 1: «教师出示第5课生词卡片» гэж хэвлэгдсэн боловч жагсаасан үгс (生病、跑步、起床、身体、出院、知道、休息、忙、时间) нь 第2课-ийн үгс; 3-р заалт «根据第2课重点内容» гэсэн — номын өөрийн зөрүү, номд байгаагаар.",
+  "Багшийн ном PDF х.21 复习旧课 2 «辨析下列字形相近的汉字» (时/对、跑/踢、休/体、间/问) — хоосон зайтай, хариулт хэвлэгдээгүй.",
+  "Багшийн ном PDF х.21 教学目标 汉字 (2) болон PDF х.27 汉字练习-ийн зурлагын тэмдэг «⺄、㇁» гэж ойролцоогоор бичсэн.",
+  "Багшийн ном PDF х.24–26 课文 асуултуудад хариулт хэвлэгдээгүй — text_questions-д a_zh оруулаагүй. 课文1/4-ийн асуултад «男的／女的» гэж хэрэглэсэн боловч сурах бичгийн 课文-д яригчид A/B (хүйс заагаагүй).",
+  "Багшийн ном PDF х.24 语言点(3) 导入-ийн хоосон зайтай хариултууд (（好）、（漂亮）、（冷）) — зөвхөн сануулга үг, бүтэн хариулт хэвлэгдээгүй.",
+  "Багшийн ном PDF х.27 汉字 补充练习 a/b/c — хариулт хэвлэгдээгүй; teacher.steps «6 汉字»-д.",
+  "Багшийн номын энэ хичээлд тусдаа «注意／辨析» хайрцаг байхгүй — notes_zh хоосон.",
+  "Дасгалын номын хариулт: багшийн номын хавсралт PDF х.120 «参考答案» (1–5 √√√×√, 6–10 FAEBC, 11–15 ABCAB, 16–20 EAFCB, 21–25 BCAFD, 26–30 √√×√×, 31–35 DAFBC, 汉字 1 BCDH／2 AEFG／3 BCDA). 例-ийн хариулт дасгалын номд өөрт нь хэвлэгдсэн (answer_ref = workbook). 语音 хэсэгт хариулт байхгүй.",
+  "Дасгалын номын 听力 бичвэр (transcript_zh) болон 语音 第一部分-ийн ханз — багшийн номын хавсралт PDF х.119–120-аас; дасгалын номд 听力 1–15-д зөвхөн зураг/сонголт, 语音 1-д зөвхөн пиньинь хэвлэгдсэн.",
+  "Дасгалын номын 例 (жишээ) асуултуудын англи орчуулгыг zh талбарын ард хаалтанд оруулсан (схемд item-ийн en талбар байхгүй). 听力 第三部分 例-ийн яриаг (пиньинь + англи) hint_zh-д оруулсан.",
+  "Дасгалын ном PDF х.34 阅读 第三部分 例1-ийн пиньинь цагийн тоонуудгүй хэвлэгдсэн («Xiànzài shì diǎn fēn…», «Tāmen diǎn fēn kāishǐ…») — номд байгаагаар. 30-р асуултын ★ өгүүлбэрийн пиньинь «xiǎo Wáng» (жижиг x) — номд байгаагаар.",
+  "Дасгалын ном PDF х.33 阅读 第二部分-ийн 例 ба 22-р асуултын пиньинь хоосон зайны өмнө төгсдөг («…yě hěn», «…wǒ xiǎng») — номд байгаагаар.",
+  "Дасгалын ном PDF х.35 阅读 «第四部分» (31–35) — 阅读 дотор 4 хэсэг; 三、语音 болон 四、汉字 хэсгийн дугаарлалт 1-ээс дахин эхэлдэг (номд байгаагаар). 语音 item дугаарыг «1-(1)…», «2-(1)…» гэж, 汉字 第三部分-ийг «4-手» гэх мэтээр тэмдэглэсэн.",
+  "Дасгалын ном PDF х.37 汉字 第二部分 3-р асуулт: зурагт өнгөт нуман туузууд дээрээс доош black(D)/red(C)/pink(B)/white(A) — хариулт «B C D A» нь 粉色、红色、黑色、白色 дарааллаар.",
+  "Дасгалын ном PDF х.36 语音 第一部分 пиньинь дээр болон 第二部分 ханзын доор цэг (重音) — 4-р үеийн доор; текстээр тэмдэглээгүй.",
+  "Зургийн тайлбарууд (picture_desc_en, pictures_desc_en, options «[picture]») зургаас товч, объектив дүрсэлсэн."
+ ],
+ "verified_pages": [
+  21,
+  22,
+  23,
+  24,
+  25,
+  26,
+  27,
+  29,
+  30,
+  31,
+  32,
+  33,
+  34,
+  35,
+  36,
+  37,
+  38,
+  39,
+  40,
+  41,
+  42,
+  43,
+  44,
+  119,
+  120
+ ],
+ "schema_version": 1
+}

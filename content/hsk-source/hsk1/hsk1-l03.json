@@ -1,0 +1,1603 @@
+{
+ "level": "hsk1",
+ "lesson": 3,
+ "book": "HSK1",
+ "title_zh": "你叫什么名字",
+ "title_pinyin": "Nǐ jiào shénme míngzi",
+ "title_en": "What’s your name",
+ "textbook": {
+  "ref": {
+   "book": "textbook",
+   "pages": [
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41
+   ]
+  },
+  "warmup": [
+   {
+    "instruction_zh": "给下面的词语选择对应的图片",
+    "instruction_en": "Match the pictures with the words/phrases.",
+    "items": [
+     "①中国 Zhōngguó",
+     "②美国 Měiguó",
+     "③中国人 Zhōngguó rén",
+     "④美国人 Měiguó rén",
+     "⑤老师 lǎoshī",
+     "⑥学生 xuésheng"
+    ],
+    "pictures_desc_en": [
+     "A: a smiling East Asian woman holding an open book in front of a chalkboard with English handwriting",
+     "B: a group of young students of various ethnicities standing and holding books and folders",
+     "C: the national flag of China",
+     "D: the national flag of the United States",
+     "E: a large group of Western people of various ages and ethnicities",
+     "F: an East Asian family of three generations sitting together outdoors"
+    ]
+   }
+  ],
+  "pronunciation": [
+   {
+    "title_zh": "发音辨析：声母j、q、x和z、c、s",
+    "rows": [
+     "j　q　x（发音部位图）",
+     "听录音并跟读，注意声母发音的区别（03-4）",
+     "xiūxi　jījí　jīqì　xiǎoqū",
+     "xīngqī　xiāngjiāo　xìngqù　jìxù",
+     "z　c　s（发音部位图）",
+     "听录音并跟读，注意声母发音的区别（03-5）",
+     "xǐ zǎo　dǎsǎo　sān cì　zìjǐ",
+     "zuótiān　zǎoshang　cāochǎng　Hànzì"
+    ],
+    "notes_zh": [
+     "j、q、x是舌面音，发j、q时舌面要与硬腭接触，j没有强烈的气流呼出，而q有强烈的气流呼出。发x时，舌面接近硬腭，但不要接触，始终保持一条缝隙。",
+     "z、c、s是舌尖前音。发z、c时，舌尖前部与上齿背接触，然后马上打开形成缝隙，z没有强烈的气流通过，而c有明显的气流通过。发s时，舌尖前与上齿背始终不接触，保留缝隙使气流流出。"
+    ],
+    "notes_en": [
+     "Differentiation: pronunciation of the initials j, q, x and z, c, s",
+     "j, q and x are known as coronals. The surface of the tongue touches the hard palate when pronouncing j and q. While q brings out a strong airflow, j doesn’t. When x is pronounced, the surface of the tongue approaches the hard palate without reaching it, leaving a gap in between.",
+     "Listen to the recording and read after it. Pay attention to the differences between the initials.",
+     "z, c and s are dentals. When pronouncing z and c, the front part of the tongue tip touches the inner surface of the upper teeth and then immediately parts with it, forming a gap in between. z is pronounced with no strong airflow, while c comes with an obvious airflow. When pronouncing s, the front part of the tongue tip stays away from the inner surface of the upper teeth all along, leaving a gap for the airflow to get through."
+    ]
+   },
+   {
+    "title_zh": "发音辨析：韵母i、u、ü",
+    "rows": [
+     "i　u　ü（发音部位图）"
+    ],
+    "notes_zh": [
+     "i和ü是发音位置相同、嘴唇形状不同的两个韵母，发i时嘴唇的形状是平的，而发ü时一定要圆唇。练习时可以先发好i，保持发音部位不动，然后把嘴唇圆起来就可以发出ü。",
+     "u和ü都是圆唇音，但是发音时ü的舌位在前，舌尖抵住下齿背，而u的舌位在后，舌尖不能和下齿背接触，舌头要尽力往后收才能发对。"
+    ],
+    "notes_en": [
+     "Differentiation: pronunciation of the finals i, u, ü",
+     "The finals i and ü share the same position of articulation, but are pronounced with the lips in different shapes. When pronouncing i, the lips are relaxed; when pronouncing ü, the lips must be rounded. To practice the two sounds, you can say i first, then keep your tongue where it is and round your lips to pronounce ü.",
+     "Both u and ü are pronounced with rounded lips. When saying ü, the tongue is in a front position, with the tip pressing the inner surface of the lower teeth; when saying u, the tongue is in a back position, with the tip staying away from the inner surface of the lower teeth, and the tongue should be held backwards to pronounce the sound right."
+    ]
+   },
+   {
+    "title_zh": "“不”的变调",
+    "rows": [
+     "（1）“不”在第一、二、三声音节前不变调",
+     "bù chī　bù xíng　bù hǎo　bù hē　bù néng　bù xiǎng",
+     "to not eat | not OK | not good | to not drink | can’t | don’t want",
+     "（2）“不”在第四声音节前变成第二声",
+     "bú huì　bú shì　bú kàn",
+     "to be unable to | to be not | to not look"
+    ],
+    "notes_en": [
+     "Tone Sandhi of “不 (bù)” (03-6)",
+     "When “不” is followed by a syllable in the first, second or third tone, its tone doesn’t change.",
+     "When “不” is followed by a syllable in the fourth tone, it changes into the second tone."
+    ]
+   },
+   {
+    "title_zh": "拼音规则（2）：单韵母ü和ü开头的韵母跟j、q、x相拼的规则",
+    "rows": [
+     "听录音并跟读，注意ü的拼写与实际发音（03-7）",
+     "ü　üe　üan　ün",
+     "ju　jue　juan　jun",
+     "qu　que　quan　qun",
+     "xu　xue　xuan　xun"
+    ],
+    "notes_zh": [
+     "ü和ü开头的韵母跟声母j、q、x相拼的时候，ü上两点要省略，如写成ju、qu、xu；但是跟声母l、n相拼的时候，仍然要写成lü、nü。"
+    ],
+    "notes_en": [
+     "Rules of Pinyin (2): ü or finals led by ü with j, q, x",
+     "When ü or a final beginning with ü follows j, q or x, the two dots on the top of ü should be removed, for example, ju, qu, xu. However, if the initial is l or n, the form is lü and nü respectively.",
+     "Listen to the recording and read after it. Pay attention to the form and pronunciation of ü."
+    ]
+   }
+  ],
+  "texts": [
+   {
+    "n": 1,
+    "title_zh": "在学校",
+    "title_en": "In the school",
+    "kind": "dialogue",
+    "lines": [
+     {
+      "speaker": "A",
+      "zh": "你叫什么名字？",
+      "pinyin": "Nǐ jiào shénme míngzi?"
+     },
+     {
+      "speaker": "B",
+      "zh": "我叫李月。",
+      "pinyin": "Wǒ jiào Lǐ Yuè."
+     }
+    ],
+    "new_words": [
+     {
+      "n": 1,
+      "zh": "叫",
+      "pinyin": "jiào",
+      "pos": "v.",
+      "en": "to call, to be called",
+      "text": 1
+     },
+     {
+      "n": 2,
+      "zh": "什么",
+      "pinyin": "shénme",
+      "pos": "pron.",
+      "en": "what",
+      "text": 1
+     },
+     {
+      "n": 3,
+      "zh": "名字",
+      "pinyin": "míngzi",
+      "pos": "n.",
+      "en": "name",
+      "text": 1
+     },
+     {
+      "n": 4,
+      "zh": "我",
+      "pinyin": "wǒ",
+      "pos": "pron.",
+      "en": "I, me",
+      "text": 1
+     }
+    ],
+    "proper_nouns": [
+     {
+      "zh": "李月",
+      "pinyin": "Lǐ Yuè",
+      "en": "Li Yue, name of a person"
+     }
+    ],
+    "english_version": "A: What's your name?\nB: My name is Li Yue."
+   },
+   {
+    "n": 2,
+    "title_zh": "在教室",
+    "title_en": "In the classroom",
+    "kind": "dialogue",
+    "lines": [
+     {
+      "speaker": "A",
+      "zh": "你是老师吗？",
+      "pinyin": "Nǐ shì lǎoshī ma?"
+     },
+     {
+      "speaker": "B",
+      "zh": "我不是老师，我是学生。",
+      "pinyin": "Wǒ bú shì lǎoshī, wǒ shì xuésheng."
+     }
+    ],
+    "new_words": [
+     {
+      "n": 5,
+      "zh": "是",
+      "pinyin": "shì",
+      "pos": "v.",
+      "en": "to be",
+      "text": 2
+     },
+     {
+      "n": 6,
+      "zh": "老师",
+      "pinyin": "lǎoshī",
+      "pos": "n.",
+      "en": "teacher",
+      "text": 2
+     },
+     {
+      "n": 7,
+      "zh": "吗",
+      "pinyin": "ma",
+      "pos": "part.",
+      "en": "used at the end of a question",
+      "text": 2
+     },
+     {
+      "n": 8,
+      "zh": "学生",
+      "pinyin": "xuésheng",
+      "pos": "n.",
+      "en": "student",
+      "text": 2
+     }
+    ],
+    "english_version": "A: Are you a teacher?\nB: No, I'm not. I'm a student."
+   },
+   {
+    "n": 3,
+    "title_zh": "在学校",
+    "title_en": "In the school",
+    "kind": "dialogue",
+    "lines": [
+     {
+      "speaker": "A",
+      "zh": "你是中国人吗？",
+      "pinyin": "Nǐ shì Zhōngguó rén ma?"
+     },
+     {
+      "speaker": "B",
+      "zh": "我不是中国人，我是美国人。",
+      "pinyin": "Wǒ bú shì Zhōngguó rén, Wǒ shì Měiguó rén."
+     }
+    ],
+    "new_words": [
+     {
+      "n": 9,
+      "zh": "人",
+      "pinyin": "rén",
+      "pos": "n.",
+      "en": "human, person",
+      "text": 3
+     }
+    ],
+    "proper_nouns": [
+     {
+      "zh": "中国",
+      "pinyin": "Zhōngguó",
+      "en": "China"
+     },
+     {
+      "zh": "美国",
+      "pinyin": "Měiguó",
+      "en": "the United States of America"
+     }
+    ],
+    "english_version": "A: Are you Chinese?\nB: No, I'm not. I'm American."
+   }
+  ],
+  "grammar": [
+   {
+    "n": 1,
+    "title_zh": "疑问代词“什么”",
+    "title_en": "The Interrogative Pronoun “什么”",
+    "explanation_zh": "疑问代词“什么”表示疑问，用在疑问句中可直接做宾语，或者与后接名词性成分一起做宾语。例如：",
+    "explanation_en": "The interrogative pronoun “什么” is used in interrogative sentences, serving as the object by itself or together with a nominal element following it. For example:",
+    "examples": [
+     {
+      "n": 1,
+      "zh": "你叫什么名字？"
+     },
+     {
+      "n": 2,
+      "zh": "这（zhè, this）是什么？"
+     },
+     {
+      "n": 3,
+      "zh": "这（zhè, this）是什么书（shū, book）？"
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "title_zh": "“是”字句",
+    "title_en": "The “是” Sentence",
+    "explanation_zh": "“是”字句是由“是”构成的判断句，用于表达人或事物等于什么或者属于什么。其否定形式是在“是”前加上否定副词“不”。例如：",
+    "explanation_en": "A “是” sentence is a determinative sentence with “是”, indicating what somebody or something equals or belongs to. The negative sentence is formed by adding the negative adverb “不” before “是”. For example:",
+    "structure_rows": [
+     "Subject | Predicate: （不）是 | Noun/Noun Phrase",
+     "李月 | 是 | 老师。",
+     "我 | 是 | 美国人。",
+     "我 | 不是 | 老师。"
+    ],
+    "examples": [
+     {
+      "n": 1,
+      "zh": "李月是老师。"
+     },
+     {
+      "n": 2,
+      "zh": "我是美国人。"
+     },
+     {
+      "n": 3,
+      "zh": "我不是老师。"
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "title_zh": "用“吗”的疑问句",
+    "title_en": "Interrogative Sentences with “吗”",
+    "explanation_zh": "疑问助词“吗”表示疑问语气，用在陈述句句尾构成疑问句。例如：",
+    "explanation_en": "The particle “吗” indicates an interrogative mood. When “吗” is added at the end of a declarative sentence, the declarative sentence turns into a question. For example:",
+    "structure_rows": [
+     "Subject | Predicate: Verb | Noun/Noun Phrase | 吗？",
+     "你 | 是 | 美国人 | 吗？",
+     "你 | 是 | 中国人 | 吗？",
+     "你 | 是 | 老师 | 吗？"
+    ],
+    "examples": [
+     {
+      "n": 1,
+      "zh": "你是美国人吗？"
+     },
+     {
+      "n": 2,
+      "zh": "你是中国人吗？"
+     },
+     {
+      "n": 3,
+      "zh": "你是老师吗？"
+     }
+    ]
+   }
+  ],
+  "exercises": [
+   {
+    "n": 1,
+    "type_zh": "朗读",
+    "instruction_zh": "分角色朗读课文",
+    "instruction_en": "Role-play the dialogues.",
+    "items": []
+   },
+   {
+    "n": 2,
+    "type_zh": "回答问题",
+    "instruction_zh": "根据实际情况回答问题",
+    "instruction_en": "Answer the questions according to the actual situations.",
+    "items": [
+     {
+      "n": 1,
+      "zh": "你叫什么名字？ | Nǐ jiào shénme míngzi?"
+     },
+     {
+      "n": 2,
+      "zh": "你是中国人吗？ | Nǐ shì Zhōngguó rén ma?"
+     },
+     {
+      "n": 3,
+      "zh": "你是美国人吗？ | Nǐ shì Měiguó rén ma?"
+     },
+     {
+      "n": 4,
+      "zh": "你是老师吗？ | Nǐ shì lǎoshī ma?"
+     },
+     {
+      "n": 5,
+      "zh": "你是学生吗？ | Nǐ shì xuésheng ma?"
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "type_zh": "描述图片",
+    "instruction_zh": "用本课新学的语言点和词语描述图片",
+    "instruction_en": "Describe the pictures using the newly-learned language points and words.",
+    "items": [
+     {
+      "n": 1,
+      "zh": "他叫乔丹（Michael Jordan），他是________人。 | Tā jiào Qiáodān, tā shì ________ rén.",
+      "picture_desc_en": "a basketball player in a white No. 23 jersey dribbling a ball"
+     },
+     {
+      "n": 2,
+      "zh": "他叫姚明（Yao Ming），他是________人。 | Tā jiào Yáo Míng, tā shì ________ rén.",
+      "picture_desc_en": "a basketball player in a red ROCKETS No. 11 jersey pointing upward"
+     },
+     {
+      "n": 3,
+      "zh": "我不是________，我是学生，我是________人。 | Wǒ bú shì ________, wǒ shì xuésheng, wǒ shì ________ rén.",
+      "picture_desc_en": "an East Asian boy sitting at a desk with a pencil, resting his chin on his hand"
+     },
+     {
+      "n": 4,
+      "zh": "我是________，我不是学生，我是________人。 | Wǒ shì ________, wǒ bú shì xuésheng, wǒ shì ________ rén.",
+      "picture_desc_en": "a man in a white shirt and tie standing and pointing at a green chalkboard"
+     }
+    ]
+   }
+  ],
+  "characters": {
+   "knowledge_title_zh": "汉字的笔画（3）：㇆、㇃",
+   "knowledge_zh": "1 汉字的笔画（3）：㇆、㇃\n笔画名称 | 运笔方向 | 例字\n㇆ 横折钩 héngzhégōu | （运笔方向图） | 门 mén、月 yuè\n㇃ 卧钩 wògōu | （运笔方向图） | 心 xīn、您 nín\n2 认识独体字\n（1）“月”，表示月亮。\n（2）“心”，表示心脏。\n（3）“中”，本义是飘扬的旗子，现在表示方位，意思是“中间”。\n（4）“人”，表示直立的人。\n3 汉字的笔顺（1）：先横后竖，先撇后捺\n笔顺 | 例字 | 书写顺序\n先横后竖 | 十 shí、工 gōng | 一 十；一 丅 工\n先撇后捺 | 八 bā、人 rén | 丿 八；丿 人",
+   "knowledge_en": "1 Strokes of Chinese Characters (3): ㇆, ㇃\nStroke | Direction | Example Characters\n㇆ héngzhégōu horizontal-turning-hook | (diagram) | 门 mén door / 月 yuè moon\n㇃ wògōu lying hook | (diagram) | 心 xīn heart / 您 nín (polite) you\n2 Single-Component Characters\n(1) “月” refers to the moon.\n(2) “心” refers to the heart.\n(3) The basic meaning of “中” is “flying flag”. It is now a word of locality, meaning “middle”.\n(4) “人” originally looked like a person standing straight.\n3 Stroke Order (1): horizontal preceding vertical and left-falling preceding right-falling\nRule | Example Characters | Stroke Order\nHorizontal preceding vertical | 十 shí ten / 工 gōng work, labor | 一 十 / 一 丅 工\nLeft-falling preceding right-falling | 八 bā eight / 人 rén human | 丿 八 / 丿 人",
+   "characters": [
+    {
+     "zh": "月",
+     "pinyin": "yuè",
+     "note_zh": "表示月亮。（古字演变图 → 月；田字格笔顺4步）"
+    },
+    {
+     "zh": "心",
+     "pinyin": "xīn",
+     "note_zh": "表示心脏。（古字演变图 → 心；田字格笔顺4步）"
+    },
+    {
+     "zh": "中",
+     "pinyin": "zhōng",
+     "note_zh": "本义是飘扬的旗子，现在表示方位，意思是“中间”。（古字演变图 → 中；田字格笔顺4步）"
+    },
+    {
+     "zh": "人",
+     "pinyin": "rén",
+     "note_zh": "表示直立的人。（古字演变图 → 人；田字格笔顺2步：丿 人）"
+    }
+   ]
+  },
+  "application": [
+   {
+    "title_zh": "双人活动",
+    "instruction_zh": "两人一组，进行自我介绍。",
+    "instruction_en": "Work in pairs and introduce yourselves.",
+    "example_zh": [
+     "例如：A：我叫李月，我是中国人，我是老师。 | Wǒ jiào Lǐ Yuè, wǒ shì Zhōngguó rén, wǒ shì lǎoshī.",
+     "B：我叫大卫（David），我是美国人，我是学生。 | Wǒ jiào Dàwèi, wǒ shì Měiguó rén, wǒ shì xuésheng."
+    ]
+   },
+   {
+    "title_zh": "小组活动",
+    "instruction_zh": "3～4人一组，用汉语互相询问名字和国籍，每组请一位同学报告情况。",
+    "instruction_en": "Work in groups of 3-4 and ask about each other’s names and nationalities. Each group chooses one member to make a report.",
+    "example_zh": [
+     "表格：| | 姓名 Name | 国籍 Nationality |",
+     "| 1 | 李月 Lǐ Yuè | 中国 Zhōngguó |",
+     "| 2 | | |",
+     "| 3 | | |",
+     "| 4 | | |",
+     "| 5 | | |"
+    ]
+   }
+  ]
+ },
+ "teacher": {
+  "ref": {
+   "book": "teacher",
+   "pages": [
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+   ]
+  },
+  "objectives_zh": [
+   "重点词语：学生能够熟练掌握“叫、名字、老师、学生、人”的词义和用法",
+   "语言点：学生能够了解并掌握：（1）疑问代词“什么”（2）“是”字句（3）用“吗”的疑问句",
+   "语音：学生能够：（1）熟悉声母j、q、x和z、c、s的发音区别并能正确发音（2）熟悉韵母i、u、ü的发音区别并能正确发音（3）熟悉并掌握“不”的变调（4）熟悉单韵母ü和ü开头的韵母跟j、q、x相拼的规则",
+   "汉字：学生能够：（1）熟练认读本课生词（2）掌握“㇆、㇃”两种笔画的正确写法（3）独立书写独体字“月、心、中、人”（4）了解“先横后竖、先撇后捺”的笔顺规则",
+   "功能：学生能够：（1）询问和回答姓名（2）询问和回答职业、国籍（3）介绍他人的姓名、职业、国籍"
+  ],
+  "steps": [
+   {
+    "title_zh": "一 复习旧课",
+    "body_zh": "1. 教师出示汉语拼音的全部声母和韵母，要求学生快速朗读。\n声母：\nb | p | m | f\nd | t | n | l\ng | k | h |\nj | q | x |\nzh | ch | sh | r\nz | c | s |\n韵母：\n| i | u | ü | er\na | ia | ua | |\no | | uo | |\ne | ie | | üe |\nai | | uai | |\nei | | uei (ui) | |\nao | iao | | |\nou | iou (iu) | | |\nan | ian | uan | üan |\nen | in | uen (un) | ün |\nang | iang | uang | |\neng | ing | ueng | |\nong | iong | | |\n2. 教师出示第2课独体字卡片，要求学生认读汉字。\n口、见、山、小、不"
+   },
+   {
+    "title_zh": "二 学习新课 1 热身",
+    "body_zh": "教师可依次指示热身部分的图片，要求学生集体或单个说出图片对应的词语，教师评判正误，并注意纠正学生的发音错误。最后全体学生再次齐读热身环节的所有词语，要求语音标准、声调准确。\n答案：①C　②D　③A/F　④B/E　⑤A　⑥B"
+   },
+   {
+    "title_zh": "2 生词",
+    "body_zh": "（1）生词快速认读及正音\n叫、什么、名字、我、是、老师、吗、学生、人、李月、中国、美国\n• 教师使用生词卡片有拼音和汉字的一面，带领学生快速认读一遍本课生词；\n• 使用生词卡片只有汉字的一面，带领学生再次认读本课生词；\n• 请单个学生独自认读2–3个生词；\n• 最后全体学生再快速认读一遍本课所有生词。\n（2）重点生词扩展及常用搭配\n叫—叫李月—我叫李月。\n名字—什么名字—叫什么名字—你叫什么名字？\n老师—中国老师—美国老师\n学生—中国学生—美国学生\n人—中国人—美国人\n练习册相关练习：第9页／一／第一部分，第12页／二／第一部分"
+   },
+   {
+    "title_zh": "3 语言点（1）疑问代词“什么”",
+    "body_zh": "① 语言点解析\n疑问代词“什么”表示疑问，用在疑问句中可直接做宾语，或者与后接名词性成分一起做宾语。\n［主语＋动词＋什么？］\n［主语＋动词＋什么＋名词？］\n② 语言点导入\n教师出示一本汉语书，引导学生进行问答。\n教师：这是什么？\n学生：这是书。\n教师：这是什么书？\n学生：这是汉语书。\n教师出示课本中李月的图片，引导学生进行问答。\n教师：她叫什么名字？\n学生：她叫李月。\n③ 语言点操练\n教师可出示几张名人照片，引导学生进行问答。\n教师：他／她叫什么名字？\n学生：他／她叫……。\n④ 语言点扩展练习\n教师可组织学生根据实际情况，两人一组进行问答练习。\nA：你叫什么名字？\nB：我叫……。"
+   },
+   {
+    "title_zh": "3 语言点（2）“是”字句",
+    "body_zh": "① 语言点解析\n“是”字句是由“是”构成的判断句，用于表达人或事物等于什么或者属于什么。其否定形式是在“是”前加上否定副词“不”。\n［……（不）是……。］\n② 语言点导入\n教师出示汉语书、老师、学生的图片，引导学生一起说句子。\n目标句：这是汉语书。\n她是老师。\n他不是老师，他是学生。\n③ 语言点操练\n教师可利用教室里的实际物品和本课相关图片引导学生进行操练。\n目标句：这是汉语书，这不是英语书。\n这是本子。\n这是词典。\n他们是中国人，不是美国人。\n④ 语言点扩展练习\n教师可组织学生根据实际情况进行自我介绍。\n我叫……，我是……人。我不是……，我是……。"
+   },
+   {
+    "title_zh": "3 语言点（3）用“吗”的疑问句",
+    "body_zh": "① 语言点解析\n疑问助词“吗”表示疑问语气，加在陈述句句尾构成疑问句。\n［……吗？］\n② 语言点导入\n教师出示一张学生的图片和一张李月的图片，引导学生进行问答。\n教师：他是老师吗？\n学生：不是，他是学生。\n教师：李月是学生吗？\n学生：不是，李月是老师。\n③ 语言点操练\n教师可利用教室里的实际物品和本课相关图片引导学生进行操练。\n目标句：这是汉语书吗？\n这是本子吗？\n这是词典吗？\n他们是中国人？\n她是李月吗？\n④ 语言点扩展练习\n教师可组织学生根据实际情况，两人一组进行问答练习。\nA：你好，你叫什么名字？\nB：我叫……。你叫什么名字？\nA：我叫……。你是……人吗？\nB：不是，我不是……人，我是……人。\nA：你是老师／学生吗？\nB：……"
+   },
+   {
+    "title_zh": "4 课文",
+    "body_zh": "课文1\n（1）教师领读课文两遍，并出示课文图片，请学生回答问题：\n她叫什么名字？\n（2）根据学生的回答，教师领说目标句，并请学生单个复述：\n她叫李月。\n（3）教师组织学生分角色朗读课文。\n课文2\n（1）教师领读课文两遍，并指示课文图片第一排左边的女生，请学生回答问题：\n她是老师吗？\n（2）根据学生的回答，教师领说目标句，并请学生单个复述：\n她不是老师，她是学生。\n（3）教师组织学生分角色朗读课文。\n课文3\n（1）教师领读课文两遍，并指示课文图片左边的女孩儿，请学生回答下列问题：\n她是中国人吗？\n她是老师吗？\n（2）根据学生的回答，教师领说目标句，并请学生单个复述：\n她不是中国人，她是美国人。\n她不是老师，她是学生。\n（3）教师组织学生分角色朗读课文。"
+   },
+   {
+    "title_zh": "5 语音",
+    "body_zh": "（1）发音辨析：声母j、q、x和z、c、s\nj、q、x是舌面音，发j、q时舌面要与硬腭接触，j没有强烈的气流呼出，而q有强烈的气流呼出。发x时，舌面接近硬腭，但不要接触，始终保持一条缝隙。\nz、c、s是舌尖前音。发z、c时，舌尖前部与上齿背接触，然后马上打开形成缝隙，z没有强烈的气流通过，而c则有明显的气流通过。发s时，舌尖前与上齿背始终不接触，保留缝隙使气流流出。\n教师可利用课本第17、18页的发音部位图，引导学生体会两组声母的发音区别。\n练习册相关练习：第15页／三／第一部分\n（2）发音辨析：韵母i、u、ü\ni和ü是发音位置相同、嘴唇形状不同的两个韵母，发i时嘴唇的形状是平的，而发ü时一定要圆唇。练习时可以先发好i，保持发音部位不动，然后把嘴唇圆起来就可以发出ü。\ni —— ü\nu和ü都是圆唇音，但是发音时ü的舌位在前，舌尖抵住下齿背，而u的舌位在后，发音时舌尖不能和下齿背接触，舌头要尽力往后收才能发对。\nu —— ü\n教师可利用课本第19页的发音部位图引导学生体会三个韵母的发音区别。\n（3）“不”的变调\n“不”在第一、二、三声音节前不变调；在第四声音节前变为第二声。\n练习册相关练习：第15页／三／第二部分\n（4）拼音规则（2）：单韵母ü和ü开头的韵母跟j、q、x相拼的规则\nü和ü开头的韵母跟声母j、q、x拼的时候，ü上两点要省略，写成ju、qu、xu。但是跟声母l、n拼的时候，仍然写成lü、nü。\n教师可利用课本第19页的练习，引导学生注意ü在j、q、x后的书写形式。"
+   },
+   {
+    "title_zh": "6 汉字",
+    "body_zh": "① 知识点解析\n笔画\n㇆（横折钩）、㇃（卧钩）\n独体字\n月：表示月亮。\n心：表示心脏。\n中：本义是飘扬的旗子，现在表示方位，意思是“中间”。\n人：表示直立的人。\n② 汉字练习\n• 教师板书本课笔画“㇆、㇃”，给学生展示这两个笔画的运笔方向，并书写各自的代表汉字，帮助学生识记笔画。\n• 教师板书或者用手指在空中书写本课独体字“月、心、中、人”，带领学生识记独体字的笔画笔顺。\n• 教师通过板书例字，给学生展示汉字的基本笔顺（1）：先横后竖、先撇后捺。\n• 补充练习\n给下列汉字注音\n你、我、人、中、国、叫、心、月、是\n练习册相关练习：第16页／四"
+   },
+   {
+    "title_zh": "7 补充课堂活动——他／她是哪国人",
+    "body_zh": "教师请学生每人准备一张自己喜欢的明星或者名人的照片，并请学生用本课所学的语言点给大家介绍这个人。最后，教师出示学生展示过的照片，大家集体复述所介绍的内容。\n他／她叫……，他／她是……人（国籍），他／她是……（职业）。"
+   },
+   {
+    "title_zh": "附注：建议教学用具",
+    "body_zh": "1. 拼音卡片：第2课拼音卡片（或挂图）\n2. 生词卡片：第3课生词卡片\n如：正面 jiào 叫 ／ 背面 叫\n3. 独体字卡片：第3课独体字卡片\n4. 图片：名人照片"
+   }
+  ],
+  "notes_zh": [
+   "注意：生词认读过程中教师始终要注意纠正学生的错误发音，学生齐读时要注意纠正学生共性的发音错误，个别认读时要注意纠正学生的个别发音错误。（后课同）",
+   "注意：教师要提示学生注意“什么、名字、学生”中轻声音节的发音，强调声调的准确性。"
+  ],
+  "warmup_answers_zh": [
+   "①C　②D　③A/F　④B/E　⑤A　⑥B"
+  ],
+  "text_questions": [
+   {
+    "text": 1,
+    "q_zh": "她叫什么名字？",
+    "a_zh": "她叫李月。"
+   },
+   {
+    "text": 2,
+    "q_zh": "她是老师吗？",
+    "a_zh": "她不是老师，她是学生。"
+   },
+   {
+    "text": 3,
+    "q_zh": "她是中国人吗？",
+    "a_zh": "她不是中国人，她是美国人。"
+   },
+   {
+    "text": 3,
+    "q_zh": "她是老师吗？",
+    "a_zh": "她不是老师，她是学生。"
+   }
+  ],
+  "summary_zh": "语言点：疑问代词“什么”；……（不）是……。；……吗？\n语音：声母j、q、x和z、c、s的发音辨析；韵母i、u、ü的发音辨析；“不”的变调；单韵母ü和ü开头的韵母跟j、q、x相拼的规则\n汉字：独体字“月、心、中、人”"
+ },
+ "workbook": {
+  "ref": {
+   "book": "workbook",
+   "pages": [
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24
+   ]
+  },
+  "sections": [
+   {
+    "n": "一、听力 第一部分",
+    "type_zh": "听力 第一部分",
+    "instruction_zh": "第1–4题：听词或短语，判断对错",
+    "instruction_en": "Questions 1-4: Listen to the words or phrases and decide whether the pictures are right or wrong based on what you hear.",
+    "items": [
+     {
+      "n": "例",
+      "zh": "很高兴 | hěn gāoxìng | very happy",
+      "transcript_zh": "很高兴",
+      "picture_desc_en": "a smiling young East Asian woman",
+      "answer": "√",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        17
+       ]
+      }
+     },
+     {
+      "n": "例",
+      "zh": "看电影 | kàn diànyǐng | to see a movie",
+      "transcript_zh": "看电影",
+      "picture_desc_en": "a man in a suit sitting in a vehicle seat reading papers",
+      "answer": "×",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        17
+       ]
+      }
+     },
+     {
+      "n": 1,
+      "zh": "",
+      "transcript_zh": "老师",
+      "picture_desc_en": "a smiling East Asian boy in a classroom resting his chin on his hand, other pupils behind him",
+      "answer": "×",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        12
+       ]
+      }
+     },
+     {
+      "n": 2,
+      "zh": "",
+      "transcript_zh": "学生",
+      "picture_desc_en": "a young woman holding books and pointing at a diagram on a blackboard",
+      "answer": "×",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        12
+       ]
+      }
+     },
+     {
+      "n": 3,
+      "zh": "",
+      "transcript_zh": "中国人",
+      "picture_desc_en": "three smiling East Asian adults in office clothes (two men in shirts and ties, one woman)",
+      "answer": "√",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        12
+       ]
+      }
+     },
+     {
+      "n": 4,
+      "zh": "",
+      "transcript_zh": "美国人",
+      "picture_desc_en": "a group of smiling young Western people standing together, a man with folded arms in front",
+      "answer": "√",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        12
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "一、听力 第二部分",
+    "type_zh": "听力 第二部分",
+    "instruction_zh": "第5–8题：听对话，选择与对话内容一致的图片",
+    "instruction_en": "Questions 5-8: Listen to the dialogues and choose the right picture for each dialogue you hear.",
+    "items": [
+     {
+      "n": "例",
+      "zh": "女：你好！ | Nǐ hǎo! | How do you do? 男：你好！很高兴认识你。 | Nǐ hǎo! Hěn gāoxìng rènshi nǐ. | How do you do? Nice to meet you.",
+      "transcript_zh": "女：你好！ 男：你好！很高兴认识你。",
+      "options": {
+       "A": "[picture] a smiling woman sitting at a desk in a classroom with other students behind her",
+       "B": "[picture] a man and several children in front of a blackboard, the children holding up cards reading 我 爱 中 文",
+       "C": "[picture] a man and a woman in office clothes shaking hands in front of an elevator",
+       "D": "[picture] a woman standing among young schoolgirls in uniforms",
+       "E": "[picture] business people shaking hands across a table with a laptop"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        18
+       ]
+      }
+     },
+     {
+      "n": 5,
+      "zh": "",
+      "transcript_zh": "女：你是学生吗？ 男：不是，我是老师。",
+      "options": {
+       "A": "[picture] a smiling woman sitting at a desk in a classroom with other students behind her",
+       "B": "[picture] a man and several children in front of a blackboard, the children holding up cards reading 我 爱 中 文",
+       "C": "[picture] a man and a woman in office clothes shaking hands in front of an elevator",
+       "D": "[picture] a woman standing among young schoolgirls in uniforms",
+       "E": "[picture] business people shaking hands across a table with a laptop"
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        13
+       ]
+      }
+     },
+     {
+      "n": 6,
+      "zh": "",
+      "transcript_zh": "男：你是中国学生吗？ 女：不是，我是美国学生。",
+      "options": {
+       "A": "[picture] a smiling woman sitting at a desk in a classroom with other students behind her",
+       "B": "[picture] a man and several children in front of a blackboard, the children holding up cards reading 我 爱 中 文",
+       "C": "[picture] a man and a woman in office clothes shaking hands in front of an elevator",
+       "D": "[picture] a woman standing among young schoolgirls in uniforms",
+       "E": "[picture] business people shaking hands across a table with a laptop"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        13
+       ]
+      }
+     },
+     {
+      "n": 7,
+      "zh": "",
+      "transcript_zh": "男：您好，您是美国人吗？ 女：是，我是美国人。",
+      "options": {
+       "A": "[picture] a smiling woman sitting at a desk in a classroom with other students behind her",
+       "B": "[picture] a man and several children in front of a blackboard, the children holding up cards reading 我 爱 中 文",
+       "C": "[picture] a man and a woman in office clothes shaking hands in front of an elevator",
+       "D": "[picture] a woman standing among young schoolgirls in uniforms",
+       "E": "[picture] business people shaking hands across a table with a laptop"
+      },
+      "answer": "E",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        13
+       ]
+      }
+     },
+     {
+      "n": 8,
+      "zh": "",
+      "transcript_zh": "男：老师，您叫什么名字？ 女：我叫李月。",
+      "options": {
+       "A": "[picture] a smiling woman sitting at a desk in a classroom with other students behind her",
+       "B": "[picture] a man and several children in front of a blackboard, the children holding up cards reading 我 爱 中 文",
+       "C": "[picture] a man and a woman in office clothes shaking hands in front of an elevator",
+       "D": "[picture] a woman standing among young schoolgirls in uniforms",
+       "E": "[picture] business people shaking hands across a table with a laptop"
+      },
+      "answer": "D",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        13
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "一、听力 第三部分",
+    "type_zh": "听力 第三部分",
+    "instruction_zh": "第9–12题：听句子，回答问题",
+    "instruction_en": "Questions 9-12: Listen to the sentences and answer the questions.",
+    "items": [
+     {
+      "n": "例",
+      "zh": "下午我去商店，我想买一些水果。 | Xiàwǔ wǒ qù shāngdiàn, wǒ xiǎng mǎi yìxiē shuǐguǒ. | I’m going to the store this afternoon. I want to buy some fruit. 问：她下午去哪里？ | Tā xiàwǔ qù nǎli? | Where is she going this afternoon?",
+      "transcript_zh": "下午我去商店，我想买一些水果。 问：她下午去哪里？",
+      "options": {
+       "A": "商店 shāngdiàn store",
+       "B": "医院 yīyuàn hospital",
+       "C": "学校 xuéxiào school"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        19
+       ]
+      }
+     },
+     {
+      "n": 9,
+      "zh": "问：她叫什么名字？",
+      "transcript_zh": "她叫李月，她是老师。 问：她叫什么名字？",
+      "options": {
+       "A": "李月 Lǐ Yuè",
+       "B": "刘月 Liú Yuè",
+       "C": "王月 Wáng Yuè"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        13
+       ]
+      }
+     },
+     {
+      "n": 10,
+      "zh": "问：大卫是中国人吗？",
+      "transcript_zh": "大卫是美国人，他是学生。 问：大卫是中国人吗？",
+      "options": {
+       "A": "是 shì",
+       "B": "不是 bú shì",
+       "C": "不知道 bù zhīdào (don’t know)"
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        13
+       ]
+      }
+     },
+     {
+      "n": 11,
+      "zh": "问：他是哪国人？",
+      "transcript_zh": "他叫王心，他是中国人。 问：他是哪国人？",
+      "options": {
+       "A": "美国人 Měiguó rén",
+       "B": "中国人 Zhōngguó rén",
+       "C": "日本人 Rìběn rén (Japanese)"
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        13
+       ]
+      }
+     },
+     {
+      "n": 12,
+      "zh": "问：马丁是哪国人？",
+      "transcript_zh": "我叫马丁，我是美国人，我是学生。 问：马丁是哪国人？",
+      "options": {
+       "A": "中国人 Zhōngguó rén",
+       "B": "日本人 Rìběn rén",
+       "C": "美国人 Měiguó rén"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        13
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第一部分",
+    "type_zh": "阅读 第一部分",
+    "instruction_zh": "第13–17题：看图片，判断图片内容是否与提示词一致",
+    "instruction_en": "Questions 13-17: Look at the pictures and decide whether the given words are right or wrong.",
+    "items": [
+     {
+      "n": "例",
+      "zh": "电视 | diànshì | television",
+      "picture_desc_en": "an open laptop computer",
+      "answer": "×",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        20
+       ]
+      }
+     },
+     {
+      "n": "例",
+      "zh": "飞机 | fēijī | airplane",
+      "picture_desc_en": "an airplane in flight",
+      "answer": "√",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        20
+       ]
+      }
+     },
+     {
+      "n": 13,
+      "zh": "中国人",
+      "pinyin": "Zhōngguó rén",
+      "picture_desc_en": "two Western women sitting on a sofa drinking from cups and chatting",
+      "answer": "×",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        14
+       ]
+      }
+     },
+     {
+      "n": 14,
+      "zh": "老师",
+      "pinyin": "lǎoshī",
+      "picture_desc_en": "smiling schoolchildren sitting at desks in a classroom",
+      "answer": "×",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        14
+       ]
+      }
+     },
+     {
+      "n": 15,
+      "zh": "你好",
+      "pinyin": "nǐ hǎo",
+      "picture_desc_en": "a man and a woman in business clothes shaking hands and smiling",
+      "answer": "√",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        14
+       ]
+      }
+     },
+     {
+      "n": 16,
+      "zh": "再见",
+      "pinyin": "zàijiàn",
+      "picture_desc_en": "a boy with a backpack turning around and waving",
+      "answer": "√",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        14
+       ]
+      }
+     },
+     {
+      "n": 17,
+      "zh": "学生",
+      "pinyin": "xuésheng",
+      "picture_desc_en": "a young woman holding a book and pointing at a blackboard with “This is Our Family” written on it",
+      "answer": "×",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        14
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第二部分",
+    "type_zh": "阅读 第二部分",
+    "instruction_zh": "第18–22题：看问题，选择正确的回答",
+    "instruction_en": "Questions 18-22: Read the questions and choose the right answer to each of them.",
+    "items": [
+     {
+      "n": "例",
+      "zh": "你喝水吗？ | Nǐ hē shuǐ ma? | Would you like some water?",
+      "options": {
+       "A": "不是，我是中国人。 | Bú shì, wǒ shì Zhōngguó rén.",
+       "B": "我不是学生，我是老师。 | Wǒ bú shì xuésheng, wǒ shì lǎoshī.",
+       "C": "你好，我叫大卫。 | Nǐ hǎo, wǒ jiào Dàwèi.",
+       "D": "是，我是老师。 | Shì, wǒ shì lǎoshī.",
+       "E": "我叫李心。 | Wǒ jiào Lǐ Xīn.",
+       "F": "好的，谢谢！ | Hǎo de, xièxie!"
+      },
+      "answer": "F",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        21
+       ]
+      }
+     },
+     {
+      "n": 18,
+      "zh": "你叫什么名字？",
+      "pinyin": "Nǐ jiào shénme míngzi?",
+      "options": {
+       "A": "不是，我是中国人。 | Bú shì, wǒ shì Zhōngguó rén.",
+       "B": "我不是学生，我是老师。 | Wǒ bú shì xuésheng, wǒ shì lǎoshī.",
+       "C": "你好，我叫大卫。 | Nǐ hǎo, wǒ jiào Dàwèi.",
+       "D": "是，我是老师。 | Shì, wǒ shì lǎoshī.",
+       "E": "我叫李心。 | Wǒ jiào Lǐ Xīn.",
+       "F": "好的，谢谢！ | Hǎo de, xièxie!"
+      },
+      "answer": "E",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        15
+       ]
+      }
+     },
+     {
+      "n": 19,
+      "zh": "您是老师吗？",
+      "pinyin": "Nín shì lǎoshī ma?",
+      "options": {
+       "A": "不是，我是中国人。 | Bú shì, wǒ shì Zhōngguó rén.",
+       "B": "我不是学生，我是老师。 | Wǒ bú shì xuésheng, wǒ shì lǎoshī.",
+       "C": "你好，我叫大卫。 | Nǐ hǎo, wǒ jiào Dàwèi.",
+       "D": "是，我是老师。 | Shì, wǒ shì lǎoshī.",
+       "E": "我叫李心。 | Wǒ jiào Lǐ Xīn.",
+       "F": "好的，谢谢！ | Hǎo de, xièxie!"
+      },
+      "answer": "D",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        15
+       ]
+      }
+     },
+     {
+      "n": 20,
+      "zh": "你好，我叫李月。",
+      "pinyin": "Nǐ hǎo, wǒ jiào Lǐ Yuè.",
+      "options": {
+       "A": "不是，我是中国人。 | Bú shì, wǒ shì Zhōngguó rén.",
+       "B": "我不是学生，我是老师。 | Wǒ bú shì xuésheng, wǒ shì lǎoshī.",
+       "C": "你好，我叫大卫。 | Nǐ hǎo, wǒ jiào Dàwèi.",
+       "D": "是，我是老师。 | Shì, wǒ shì lǎoshī.",
+       "E": "我叫李心。 | Wǒ jiào Lǐ Xīn.",
+       "F": "好的，谢谢！ | Hǎo de, xièxie!"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        15
+       ]
+      }
+     },
+     {
+      "n": 21,
+      "zh": "你是美国人吗？",
+      "pinyin": "Nǐ shì Měiguó rén ma?",
+      "options": {
+       "A": "不是，我是中国人。 | Bú shì, wǒ shì Zhōngguó rén.",
+       "B": "我不是学生，我是老师。 | Wǒ bú shì xuésheng, wǒ shì lǎoshī.",
+       "C": "你好，我叫大卫。 | Nǐ hǎo, wǒ jiào Dàwèi.",
+       "D": "是，我是老师。 | Shì, wǒ shì lǎoshī.",
+       "E": "我叫李心。 | Wǒ jiào Lǐ Xīn.",
+       "F": "好的，谢谢！ | Hǎo de, xièxie!"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        15
+       ]
+      }
+     },
+     {
+      "n": 22,
+      "zh": "你是学生吗？",
+      "pinyin": "Nǐ shì xuésheng ma?",
+      "options": {
+       "A": "不是，我是中国人。 | Bú shì, wǒ shì Zhōngguó rén.",
+       "B": "我不是学生，我是老师。 | Wǒ bú shì xuésheng, wǒ shì lǎoshī.",
+       "C": "你好，我叫大卫。 | Nǐ hǎo, wǒ jiào Dàwèi.",
+       "D": "是，我是老师。 | Shì, wǒ shì lǎoshī.",
+       "E": "我叫李心。 | Wǒ jiào Lǐ Xīn.",
+       "F": "好的，谢谢！ | Hǎo de, xièxie!"
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        15
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第三部分",
+    "type_zh": "阅读 第三部分",
+    "instruction_zh": "第23–30题：看句子，选择正确的词语填空",
+    "instruction_en": "Questions 23-30: Read the sentences and choose the right words to fill in the brackets.",
+    "word_bank": [
+     [
+      "A 什么 shénme",
+      "B 是 shì",
+      "C 不 bù",
+      "D 名字 míngzi",
+      "E 吗 ma"
+     ],
+     [
+      "F 老师 lǎoshī",
+      "G 学生 xuésheng",
+      "H 中国 Zhōngguó",
+      "I 美国 Měiguó"
+     ]
+    ],
+    "items": [
+     {
+      "n": "例",
+      "zh": "你叫什么（　　）？ | Nǐ jiào shénme ________? | What is your name?",
+      "options": {
+       "A": "什么 shénme",
+       "B": "是 shì",
+       "C": "不 bù",
+       "D": "名字 míngzi",
+       "E": "吗 ma"
+      },
+      "answer": "D",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        22
+       ]
+      }
+     },
+     {
+      "n": 23,
+      "zh": "我（　　）是中国人，我是美国人。",
+      "pinyin": "Wǒ ________ shì Zhōngguó rén, wǒ shì Měiguó rén.",
+      "options": {
+       "A": "什么 shénme",
+       "B": "是 shì",
+       "C": "不 bù",
+       "D": "名字 míngzi",
+       "E": "吗 ma"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        15
+       ]
+      }
+     },
+     {
+      "n": 24,
+      "zh": "您是老师（　　）？",
+      "pinyin": "Nín shì lāoshī ________?",
+      "options": {
+       "A": "什么 shénme",
+       "B": "是 shì",
+       "C": "不 bù",
+       "D": "名字 míngzi",
+       "E": "吗 ma"
+      },
+      "answer": "E",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        15
+       ]
+      }
+     },
+     {
+      "n": 25,
+      "zh": "他叫（　　）？",
+      "pinyin": "Tā jiào ________?",
+      "options": {
+       "A": "什么 shénme",
+       "B": "是 shì",
+       "C": "不 bù",
+       "D": "名字 míngzi",
+       "E": "吗 ma"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        15
+       ]
+      }
+     },
+     {
+      "n": 26,
+      "zh": "李月（　　）中国人，她是老师。",
+      "pinyin": "Lǐ Yuè ________ Zhōngguó rén, tā shì lǎoshī.",
+      "options": {
+       "A": "什么 shénme",
+       "B": "是 shì",
+       "C": "不 bù",
+       "D": "名字 míngzi",
+       "E": "吗 ma"
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        15
+       ]
+      }
+     },
+     {
+      "n": 27,
+      "zh": "大卫不是老师，他是（　　）。",
+      "pinyin": "Dàwèi bú shì lǎoshī, tā shì ________.",
+      "options": {
+       "F": "老师 lǎoshī",
+       "G": "学生 xuésheng",
+       "H": "中国 Zhōngguó",
+       "I": "美国 Měiguó"
+      },
+      "answer": "G",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        16
+       ]
+      }
+     },
+     {
+      "n": 28,
+      "zh": "（　　），谢谢您！",
+      "pinyin": "________, xièxie nín!",
+      "options": {
+       "F": "老师 lǎoshī",
+       "G": "学生 xuésheng",
+       "H": "中国 Zhōngguó",
+       "I": "美国 Měiguó"
+      },
+      "answer": "F",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        16
+       ]
+      }
+     },
+     {
+      "n": 29,
+      "zh": "我不是中国人，我是（　　）人。",
+      "pinyin": "Wǒ bú shì Zhōngguó rén, wǒ shì ________ rén.",
+      "options": {
+       "F": "老师 lǎoshī",
+       "G": "学生 xuésheng",
+       "H": "中国 Zhōngguó",
+       "I": "美国 Měiguó"
+      },
+      "answer": "I",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        16
+       ]
+      }
+     },
+     {
+      "n": 30,
+      "zh": "你们好，你们是（　　）学生吗？",
+      "pinyin": "Nǐmen hǎo, nǐmen shì ________ xuésheng ma?",
+      "options": {
+       "F": "老师 lǎoshī",
+       "G": "学生 xuésheng",
+       "H": "中国 Zhōngguó",
+       "I": "美国 Měiguó"
+      },
+      "answer": "H",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        16
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "三、语音 第一部分",
+    "type_zh": "语音 第一部分",
+    "instruction_zh": "第1–8题：听录音，选择听到的音节",
+    "instruction_en": "Questions 1-8: Listen to the recording and mark the syllables you hear.",
+    "items": [
+     {
+      "n": 1,
+      "zh": "sì　cì",
+      "options": {
+       "A": "sì",
+       "B": "cì"
+      },
+      "transcript_zh": "sì（四）",
+      "answer": "sì",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        16
+       ]
+      }
+     },
+     {
+      "n": 2,
+      "zh": "suān　cuān",
+      "options": {
+       "A": "suān",
+       "B": "cuān"
+      },
+      "transcript_zh": "suān（酸）",
+      "answer": "suān",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        16
+       ]
+      }
+     },
+     {
+      "n": 3,
+      "zh": "zǐ　cǐ",
+      "options": {
+       "A": "zǐ",
+       "B": "cǐ"
+      },
+      "transcript_zh": "cǐ（此）",
+      "answer": "cǐ",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        16
+       ]
+      }
+     },
+     {
+      "n": 4,
+      "zh": "zuàn　suàn",
+      "options": {
+       "A": "zuàn",
+       "B": "suàn"
+      },
+      "transcript_zh": "suàn（算）",
+      "answer": "suàn",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        16
+       ]
+      }
+     },
+     {
+      "n": 5,
+      "zh": "jiā　xiā",
+      "options": {
+       "A": "jiā",
+       "B": "xiā"
+      },
+      "transcript_zh": "xiā（虾）",
+      "answer": "xiā",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        16
+       ]
+      }
+     },
+     {
+      "n": 6,
+      "zh": "xīn　qīn",
+      "options": {
+       "A": "xīn",
+       "B": "qīn"
+      },
+      "transcript_zh": "xīn（新）",
+      "answer": "xīn",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        16
+       ]
+      }
+     },
+     {
+      "n": 7,
+      "zh": "jiāng　xiāng",
+      "options": {
+       "A": "jiāng",
+       "B": "xiāng"
+      },
+      "transcript_zh": "xiāng（香）",
+      "answer": "xiāng",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        16
+       ]
+      }
+     },
+     {
+      "n": 8,
+      "zh": "qiú　jiǔ",
+      "options": {
+       "A": "qiú",
+       "B": "jiǔ"
+      },
+      "transcript_zh": "jiǔ（酒）",
+      "answer": "jiǔ",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        16
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "三、语音 第二部分",
+    "type_zh": "语音 第二部分",
+    "instruction_zh": "第9–16题：听录音，给下列词语中的“不”标注声调",
+    "instruction_en": "Questions 9-16: Listen to the recording and add the tone marks to “不”.",
+    "items": [
+     {
+      "n": 9,
+      "zh": "bu shì",
+      "transcript_zh": "bú shì（不是）",
+      "answer": "bú shì",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        17
+       ]
+      }
+     },
+     {
+      "n": 10,
+      "zh": "bu xiǎng",
+      "transcript_zh": "bù xiǎng（不想）",
+      "answer": "bù xiǎng",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        17
+       ]
+      }
+     },
+     {
+      "n": 11,
+      "zh": "bu hǎo",
+      "transcript_zh": "bù hǎo（不好）",
+      "answer": "bù hǎo",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        17
+       ]
+      }
+     },
+     {
+      "n": 12,
+      "zh": "bu kàn",
+      "transcript_zh": "bú kàn（不看）",
+      "answer": "bú kàn",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        17
+       ]
+      }
+     },
+     {
+      "n": 13,
+      "zh": "bu néng",
+      "transcript_zh": "bù néng（不能）",
+      "answer": "bù néng",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        17
+       ]
+      }
+     },
+     {
+      "n": 14,
+      "zh": "bu shuō",
+      "transcript_zh": "bù shuō（不说）",
+      "answer": "bù shuō",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        17
+       ]
+      }
+     },
+     {
+      "n": 15,
+      "zh": "bu qù",
+      "transcript_zh": "bú qù（不去）",
+      "answer": "bú qù",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        17
+       ]
+      }
+     },
+     {
+      "n": 16,
+      "zh": "bu mǎi",
+      "transcript_zh": "bù mǎi（不买）",
+      "answer": "bù mǎi",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        17
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "四、汉字 第一部分",
+    "type_zh": "汉字 第一部分",
+    "instruction_zh": "第1–2题：描写每组汉字中相应的笔画",
+    "instruction_en": "Questions 1-2: Trace the corresponding stroke in each pair of characters.",
+    "items": [
+     {
+      "n": 1,
+      "zh": "héngzhégōu ㇆：门　月",
+      "picture_desc_en": "tracing grids: 门 ×4 and 月 ×4, the 横折钩 stroke printed in grey for tracing"
+     },
+     {
+      "n": 2,
+      "zh": "wògōu ㇃：心　您",
+      "picture_desc_en": "tracing grids: 心 ×4 and 您 ×4, the 卧钩 stroke printed in grey for tracing"
+     }
+    ]
+   },
+   {
+    "n": "四、汉字 第二部分",
+    "type_zh": "汉字 第二部分",
+    "instruction_zh": "第3题：看笔顺，写独体字",
+    "instruction_en": "Question 3: Look at the stroke order and practice writing the single-component characters.",
+    "items": [
+     {
+      "n": 3,
+      "zh": "月 yuè　心 xīn　人 rén　中 zhōng",
+      "picture_desc_en": "four rows of writing grids (1 model + 9 empty boxes each) with stroke-order sequences above: 月 yuè in 4 steps (丿 … 月) / 心 xīn in 4 steps (first dot … 心) / 人 rén in 2 steps (丿 then 人) / 中 zhōng in 4 steps (丨 then 口 built up, then 中)"
+     }
+    ]
+   }
+  ],
+  "answers_ref": {
+   "book": "workbook_answers",
+   "pages": [
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  }
+ },
+ "unclear": [
+  "verified_pages нь олон номын PDF хуудсыг нэгтгэсэн: сурах бичиг 34–41, багшийн ном 13–19 + хавсралт 108–109 (110 нь 4-р хичээл — шалгасан, ороогүй), дасгалын ном 17–24, хариултын ном (workbook_answers) 12–17. Бүгдийг зургаар (ихэнхийг 200–250 dpi-гаар томруулж) шалгасан.",
+  "Сурах бичиг PDF х.35 课文3 пиньинь: «Wǒ bú shì Zhōngguó rén, Wǒ shì Měiguó rén.» — таслалын ард том үсэг W; номд байгаагаар нь үлдээсэн.",
+  "Дасгалын ном PDF х.22 асуулт 24-ийн пиньинь «Nín shì lāoshī» (lǎoshī биш, 1-р хөг) — номын алдаа, номд байгаагаар. Хариултын номд (х.16) мөн адил.",
+  "Багшийн ном PDF х.16 语言点（3）③ 目标句 «他们是中国人？» — 吗 байхгүй (бусад бүгд …吗？); номд байгаагаар.",
+  "Багшийн номын 热身 хариулт «③A/F ④B/E ⑤A ⑥B» — A, B зураг хоёр удаа хэрэглэгдсэн (номд байгаагаар).",
+  "Сурах бичгийн пиньинь хэсгийн дугаар/гарчиг: 1 发音辨析：声母j、q、x和z、c、s; 2 发音辨析：韵母i、u、ü; 3 «不»的变调 (03-6); 4 拼音规则（2）… Англи гарчгийг pronunciation[].notes_en-ийн эхний мөрөнд оруулсан. j q x / z c s / i u ü-ийн дуудлагын эрхтний зураг текстээр дүрслэгдээгүй (rows-д «（发音部位图）» гэж тэмдэглэсэн).",
+  "Аудио файлын нэр мэдэгдэхгүй тул audio талбар орхисон. Номын CD дугаар: сурах бичиг 03-1 (课文1), 03-2 (课文2), 03-3 (课文3), 03-4, 03-5 (声母 дасгал), 03-6 («不»的变调), 03-7 (ü дасгал); дасгалын ном 03-1 (一、听力), 03-2 (三、语音). Дасгалын номын OCR-т «03-4» гэж алдаатай уншигдсан — зургаар 03-1.",
+  "HSK1 дасгалын номд бүх мөрөнд пиньинь (+ заримд англи) хэвлэгдсэн; SourceExerciseItem.zh-д байсан «хятад | pinyin | (англи)» нэгдлийг zh/pinyin/hint_zh талбарт салгасан (дугаартай асуулт бүрт). «例» (жишээ) мөрүүд, options ба сурах бичгийн 练习2/3 / 运用-ийн жишээнд тусдаа пиньинь талбар байхгүй тул хэвээр «хятад | pinyin» нэгдмэл хэлбэрээр үлдсэн.",
+  "Дасгалын ном 听力 第一/二部分-ийн асуулт 1–8 номд зөвхөн зураг/хоосон мөртэй тул item.zh хоосон, transcript_zh-д багшийн номын хавсралтын (PDF х.108) бичвэр. 第三部分 9–12-т item.zh-д хавсралтын «问：…» асуулт.",
+  "Дасгалын номын хариулт: хариултын ном (workbook_answers, www.baulchino.com тэмдэгтэй, дасгалын номын хуудсан дээр тэмдэглэсэн хувилбар) PDF х.12–17 ба багшийн номын хавсралтын 参考答案 (PDF х.109) бүх асуултад ТОХИРЧ байна. 例 (жишээ)-ний хариулт дасгалын номд өөрт нь хэвлэгдсэн. 四、汉字 (1–3)-т хариулт хэвлэгдээгүй.",
+  "三、语音 第一部分 options-ийн A/B түлхүүр номд байхгүй (хоёр үеийг зэрэгцүүлж хэвлэсэн) — зүүн талыг A, баруун талыг B гэж тэмдэглэсэн; answer-д сонгосон үеийг өөрийг нь бичсэн.",
+  "Грамматик 2, 3-ын examples нь номын бүтцийн хүснэгтийн мөрүүд (тусдаа жишээ өгүүлбэр хэвлэгдээгүй).",
+  "Сурах бичгийн 汉字 хэсгийн 古字演变 (月、心、中、人-ийн эртний хэлбэрүүд) ба 田字格 зурлагын дарааллын зураг текстээр бичих боломжгүй — characters[].note_zh-д «（古字演变图…）» гэж тэмдэглэв. Зурлагын тэмдэгт: 横折钩 = ㇆ (U+31C6), 卧钩 = ㇃ (U+31C3); 工-ийн дарааллын дунд алхмыг «丅» гэж бичсэн (номд 一、丅 хэлбэр, 工).",
+  "Багшийн ном PDF х.13 «汉字 (2) 掌握“㇆、㇃”两种笔画» — номд зурлагын дүрсээр хэвлэгдсэн, энд Unicode зурлагаар.",
+  "Багшийн номын 韵母 хүснэгтийг «|»-ээр мөр мөрөөр хуулсан (хоосон нүд = хоосон)."
+ ],
+ "verified_pages": [
+  12,
+  13,
+  14,
+  15,
+  16,
+  17,
+  18,
+  19,
+  20,
+  21,
+  22,
+  23,
+  24,
+  34,
+  35,
+  36,
+  37,
+  38,
+  39,
+  40,
+  41,
+  108,
+  109,
+  110
+ ],
+ "schema_version": 1
+}

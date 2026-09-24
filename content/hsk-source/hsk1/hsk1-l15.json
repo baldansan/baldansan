@@ -1,0 +1,1527 @@
+{
+ "level": "hsk1",
+ "lesson": 15,
+ "book": "HSK1",
+ "title_zh": "我是坐飞机来的",
+ "title_pinyin": "Wǒ shì zuò fēijī lái de",
+ "title_en": "I came here by air",
+ "textbook": {
+  "ref": {
+   "book": "textbook",
+   "pages": [
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139
+   ]
+  },
+  "warmup": [
+   {
+    "instruction_zh": "给下面的词语选择对应的图片",
+    "instruction_en": "Match the pictures with the words/phrases.",
+    "items": [
+     "①飞机 fēijī",
+     "②出租车 chūzūchē",
+     "③大学 dàxué",
+     "④饭店 fàndiàn",
+     "⑤听 tīng",
+     "⑥开车 kāi chē"
+    ],
+    "pictures_desc_en": [
+     "A: students sitting and reading on the steps of a red-brick building",
+     "B: a young woman with closed eyes wearing headphones, music notes drawn on a blackboard behind her",
+     "C: a man in a suit driving a car",
+     "D: a passenger airplane flying in the sky",
+     "E: an illuminated “HOTEL” sign on a building",
+     "F: a green-and-yellow taxi on a street"
+    ]
+   }
+  ],
+  "pronunciation": [
+   {
+    "title_zh": "三音节词语的声调搭配（4）：四声音节开头",
+    "rows": [
+     "4+1+1：diànbīngxiāng refrigerator　4+1+2：Màidāngláo McDonald’s　4+1+3：jiànshēnguǎn gym　4+1+4：bàngōngshì office",
+     "4+2+1：chàng guógē to sing the national anthem　4+2+2：kàn zúqiú to watch football　4+2+3：kuàngquánshuǐ mineral water　4+2+4：shuànyángròu instant-boiled mutton",
+     "4+3+1：mìmǎxiāng code box　4+3+2：qìguǎnyán tracheitis　4+3+3：dàshǐguǎn embassy　4+3+4：mièhuǒqì fire extinguisher",
+     "4+4+1：zhàoxiàngjī camera　4+4+2：zànzhùrén sponsor　4+4+3：diànhuàkǎ phone card　4+4+4：Àoyùnhuì Olympic Games"
+    ],
+    "notes_en": [
+     "Tone Collocation in Trisyllabic Words (4): words starting with a fourth-tone syllable"
+    ]
+   }
+  ],
+  "texts": [
+   {
+    "n": 1,
+    "title_zh": "在餐桌旁",
+    "title_en": "At the dining table",
+    "kind": "dialogue",
+    "lines": [
+     {
+      "speaker": "A",
+      "zh": "你和李小姐是什么时候认识的？",
+      "pinyin": "Nǐ hé Lǐ xiǎojiě shì shénme shíhou rènshi de?"
+     },
+     {
+      "speaker": "B",
+      "zh": "我们是2011年9月认识的。",
+      "pinyin": "Wǒmen shì èr líng yī yī nián jiǔ yuè rènshi de."
+     },
+     {
+      "speaker": "A",
+      "zh": "你们在哪儿认识的？",
+      "pinyin": "Nǐmen zài nǎr rènshi de?"
+     },
+     {
+      "speaker": "B",
+      "zh": "我们是在学校认识的，她是我大学同学。",
+      "pinyin": "Wǒmen shì zài xuéxiào rènshi de, tā shì wǒ dàxué tóngxué."
+     }
+    ],
+    "english_version": "A: When did you and Miss Li first meet?\nB: We met in September, 2011.\nA: Where did you meet each other?\nB: We met in our university. She was my classmate.",
+    "new_words": [
+     {
+      "n": 1,
+      "zh": "认识",
+      "pinyin": "rènshi",
+      "pos": "v.",
+      "en": "to meet, to know",
+      "text": 1
+     },
+     {
+      "n": 2,
+      "zh": "年",
+      "pinyin": "nián",
+      "pos": "n.",
+      "en": "year",
+      "text": 1
+     },
+     {
+      "n": 3,
+      "zh": "大学",
+      "pinyin": "dàxué",
+      "pos": "n.",
+      "en": "college, university",
+      "text": 1
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "title_zh": "在饭店门口",
+    "title_en": "Outside a hotel",
+    "kind": "dialogue",
+    "lines": [
+     {
+      "speaker": "A",
+      "zh": "你们是怎么来饭店的？",
+      "pinyin": "Nǐmen shì zěnme lái fàndiàn de?"
+     },
+     {
+      "speaker": "B",
+      "zh": "我们是坐出租车来的。",
+      "pinyin": "Wǒmen shì zuò chūzūchē lái de."
+     },
+     {
+      "speaker": "A",
+      "zh": "李先生呢？",
+      "pinyin": "Lǐ xiānsheng ne?"
+     },
+     {
+      "speaker": "B",
+      "zh": "他是和朋友一起开车来的。",
+      "pinyin": "Tā shì hé péngyou yìqǐ kāi chē lái de."
+     }
+    ],
+    "english_version": "A: How did you come here?\nB: We came by taxi.\nA: What about Mr. Li?\nB: He drove here with his friend.",
+    "new_words": [
+     {
+      "n": 4,
+      "zh": "饭店",
+      "pinyin": "fàndiàn",
+      "pos": "n.",
+      "en": "hotel, restaurant",
+      "text": 2
+     },
+     {
+      "n": 5,
+      "zh": "出租车",
+      "pinyin": "chūzūchē",
+      "pos": "n.",
+      "en": "taxi, cab",
+      "text": 2
+     },
+     {
+      "n": 6,
+      "zh": "一起",
+      "pinyin": "yìqǐ",
+      "pos": "adv.",
+      "en": "together",
+      "star": true,
+      "text": 2
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "title_zh": "在公司",
+    "title_en": "In the company",
+    "kind": "dialogue",
+    "lines": [
+     {
+      "speaker": "A",
+      "zh": "很高兴认识您！李小姐。",
+      "pinyin": "Hěn gāoxìng rènshi nín! Lǐ xiǎojiě."
+     },
+     {
+      "speaker": "B",
+      "zh": "认识你我也很高兴！",
+      "pinyin": "Rènshi nǐ wǒ yě hěn gāoxìng!"
+     },
+     {
+      "speaker": "A",
+      "zh": "听张先生说，您是坐飞机来北京的？",
+      "pinyin": "Tīng Zhāng xiānsheng shuō, nín shì zuò fēijī lái Běijīng de?"
+     },
+     {
+      "speaker": "B",
+      "zh": "是的。",
+      "pinyin": "Shì de."
+     }
+    ],
+    "english_version": "A: Nice to meet you, Miss Li.\nB: Nice to meet you too.\nA: Mr. Zhang said you came to Beijing by plane, didn’t you?\nB: Yes, I did.",
+    "new_words": [
+     {
+      "n": 7,
+      "zh": "高兴",
+      "pinyin": "gāoxìng",
+      "pos": "adj.",
+      "en": "glad, happy",
+      "text": 3
+     },
+     {
+      "n": 8,
+      "zh": "听",
+      "pinyin": "tīng",
+      "pos": "v.",
+      "en": "to listen",
+      "text": 3
+     },
+     {
+      "n": 9,
+      "zh": "飞机",
+      "pinyin": "fēijī",
+      "pos": "n.",
+      "en": "airplane",
+      "text": 3
+     }
+    ]
+   }
+  ],
+  "grammar": [
+   {
+    "n": 1,
+    "title_zh": "“是……的”句：强调时间、地点、方式",
+    "title_en": "The Structure “是……的”: used to emphasize time, place or manner",
+    "explanation_zh": "在已经知道事情发生的情况下，可以用“是……的”强调事情发生的时间、地点、方式等。肯定句和疑问句中的“是”字可以省略，否定句中不能省略。\n否定形式：",
+    "explanation_en": "When the occurrence of something is known, “是……的” can be used to emphasize when, where and in which manner it occurred. “是” can be omitted in positive and interrogative sentences, but not in negative sentences.\nThe negative form:",
+    "structure_rows": [
+     "Subject | 是 | Time/Place/Manner | Verb | 的",
+     "我 | 是 | 昨天 | 来 | 的。",
+     "这 | 是 | 在北京 | 买 | 的。",
+     "你们 | 是 | 怎么 | 来饭店 | 的？",
+     "否定形式 The negative form:",
+     "Subject | 不 | 是 | Time/Place/Manner | Verb | 的",
+     "我 | 不 | 是 | 昨天 | 来 | 的。",
+     "这 | 不 | 是 | 在北京 | 买 | 的。",
+     "我们 | 不 | 是 | 坐出租车 | 来 | 的。"
+    ],
+    "examples": [
+     {
+      "zh": "我是昨天来的。",
+      "note_zh": "（表格）"
+     },
+     {
+      "zh": "这是在北京买的。",
+      "note_zh": "（表格）"
+     },
+     {
+      "zh": "你们是怎么来饭店的？",
+      "note_zh": "（表格，课文句，红字）"
+     },
+     {
+      "zh": "我不是昨天来的。",
+      "note_zh": "（否定形式表格）"
+     },
+     {
+      "zh": "这不是在北京买的。",
+      "note_zh": "（否定形式表格）"
+     },
+     {
+      "zh": "我们不是坐出租车来的。",
+      "note_zh": "（否定形式表格）"
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "title_zh": "日期的表达（2）：年、月、日／号、星期",
+    "title_en": "Expression of a Date (2): year, month, date, day of the week",
+    "explanation_zh": "汉语中日期的写法和读法都是从大到小。年要分别读出每个数字，再加上“年”；月、日要读出整个数字，再加上“月”、“日／号”。星期的读法是“星期”加上数字。如“2008年8月8号，星期五”读法是“èr líng líng bā nián bā yuè bā hào，xīngqī wǔ”。",
+    "explanation_en": "Chinese dates are written and read from the bigger unit to the smaller. A year is read digit by digit, followed by the character “年”. A month or date is read the whole number followed by “月” and “日/号” respectively. A day of the week is expressed by the word “星期” plus a specific number. For example, “August 8th of 2008, Friday” is read as “èr líng líng bā nián bā yuè bā hào, xīngqī wǔ”.",
+    "examples": [
+     {
+      "n": 1,
+      "zh": "明天是2014年5月11号。"
+     },
+     {
+      "n": 2,
+      "zh": "A：今天几号？星期几？\nB：今天9月10号，星期三。"
+     },
+     {
+      "n": 3,
+      "zh": "我们是2011年9月认识的。",
+      "note_zh": "（课文句，红字）"
+     }
+    ]
+   }
+  ],
+  "exercises": [
+   {
+    "n": 1,
+    "type_zh": "分角色朗读课文",
+    "instruction_zh": "分角色朗读课文",
+    "instruction_en": "Role-play the dialogues.",
+    "items": []
+   },
+   {
+    "n": 2,
+    "type_zh": "回答问题",
+    "instruction_zh": "根据课文内容回答问题",
+    "instruction_en": "Answer the questions based on the dialogues.",
+    "items": [
+     {
+      "n": 1,
+      "zh": "她们是什么时候认识的？",
+      "pinyin": "Tāmen shì shénme shíhou rènshi de?"
+     },
+     {
+      "n": 2,
+      "zh": "她们是在哪儿认识的？",
+      "pinyin": "Tāmen shì zài nǎr rènshi de?"
+     },
+     {
+      "n": 3,
+      "zh": "他们是怎么去饭店的？",
+      "pinyin": "Tāmen shì zěnme qù fàndiàn de?"
+     },
+     {
+      "n": 4,
+      "zh": "李先生是坐出租车去饭店的吗？",
+      "pinyin": "Lǐ xiānsheng shì zuò chūzūchē qù fàndiàn de ma?"
+     },
+     {
+      "n": 5,
+      "zh": "李小姐是怎么来北京的？",
+      "pinyin": "Lǐ xiǎojiě shì zěnme lái Běijīng de?"
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "type_zh": "描述图片",
+    "instruction_zh": "用本课新学的语言点和词语描述图片",
+    "instruction_en": "Describe the pictures using the newly-learned language points and words.",
+    "items": [
+     {
+      "n": 1,
+      "zh": "我们是在巴黎（Paris）________的。",
+      "pinyin": "Wǒmen shì zài Bālí ______ de.",
+      "picture_desc_en": "a young woman with a bicycle helmet taking a photo of another young woman on a bicycle in front of the Eiffel Tower (speech bubble from a smiling long-haired young woman waving her hand)"
+     },
+     {
+      "n": 2,
+      "zh": "我没看见李老师，她是什么时候________？",
+      "pinyin": "Wǒ méi kànjiàn Lǐ lǎoshī, tā shì shénme shíhou ______?",
+      "picture_desc_en": "a smiling long-haired young woman in a white shirt waving her hand"
+     },
+     {
+      "n": 3,
+      "zh": "这些衣服不________今天________的，是昨天买的。",
+      "pinyin": "Zhèxiē yīfu bù ______ jīntiān ______ de, shì zuótiān mǎi de.",
+      "picture_desc_en": "a stack of folded polo shirts (blue, green, black)"
+     },
+     {
+      "n": 4,
+      "zh": "我们是一起________来的，我不喜欢坐出租车。",
+      "pinyin": "Wǒmen shì yìqǐ ______ lái de, wǒ bù xǐhuan zuò chūzūchē.",
+      "picture_desc_en": "a smiling young woman leaning out of a car window, a young man at the steering wheel beside her"
+     }
+    ]
+   }
+  ],
+  "characters": {
+   "knowledge_title_zh": "认识独体字／汉字偏旁“艹”和“宀”",
+   "knowledge_zh": "1 认识独体字\n（1）“年”，本义是将收成的谷物运回家。现在是时间单位。\n（2）“出”，字形像脚离开某地。现在是从里面到外面的意思。\n（3）“飞”，本义是鸟类或虫类等用翅膀在空中往来活动，现在泛指在天上飞、快等。\n2 汉字偏旁“艹”和“宀”\n偏旁 | 解释 | 例字\n艹 | 草字头，一般和草木或者植物有关系。 | 茶 chá、菜 cài\n宀 | 宝盖头，一般和房子有关系。 | 安 ān、家 jiā",
+   "knowledge_en": "Single-Component Characters: (1) “年” originally meant “to carry crops home”. Now it means “year”. (2) “出” originally referred to the germination and growth of a plant. Now it means “to come or go from inside to outside”. (3) Originally “飞” meant the activity of a bird or an insect flying in the sky with its wings, and now it generally means “to fly in the sky” or “being quick”.\nChinese Radicals: “艹” and “宀” — The radical “艹” is usually related to grass, trees or plants: 茶 chá tea; 菜 cài vegetable. The radical “宀” is usually related to houses: 安 ān to settle; 家 jiā home.",
+   "characters": [
+    {
+     "zh": "年",
+     "pinyin": "nián",
+     "note_zh": "独体字：本义是将收成的谷物运回家，现在是时间单位（字形演变图4步 + 笔顺图6步：丿 → 𠂉 → … → 年）"
+    },
+    {
+     "zh": "出",
+     "pinyin": "chū",
+     "note_zh": "独体字：字形像脚离开某地，现在是从里面到外面的意思（字形演变图4步 + 笔顺图5步：𠃊 → 凵 → 屮 → … → 出）"
+    },
+    {
+     "zh": "飞",
+     "pinyin": "fēi",
+     "note_zh": "独体字：本义是鸟类或虫类等用翅膀在空中往来活动（字形演变图4步 + 笔顺图3步：⺄ → … → 飞）"
+    },
+    {
+     "zh": "茶",
+     "pinyin": "chá",
+     "note_zh": "偏旁“艹”例字（tea）"
+    },
+    {
+     "zh": "菜",
+     "pinyin": "cài",
+     "note_zh": "偏旁“艹”例字（vegetable）"
+    },
+    {
+     "zh": "安",
+     "pinyin": "ān",
+     "note_zh": "偏旁“宀”例字（to settle）"
+    },
+    {
+     "zh": "家",
+     "pinyin": "jiā",
+     "note_zh": "偏旁“宀”例字（home）"
+    }
+   ]
+  },
+  "application": [
+   {
+    "title_zh": "双人活动",
+    "instruction_zh": "两人一组，选择对方的一样物品，询问具体购买情况。",
+    "instruction_en": "Work in pairs and ask each other about where and when something was bought.",
+    "example_zh": [
+     "例如：",
+     "A：这个是在哪儿买的？ Zhège shì zài nǎr mǎi de?",
+     "B：在商店买的。 Zài shāngdiàn mǎi de.",
+     "A：什么时候买的？ Shénme shíhou mǎi de?",
+     "B：昨天买的。 Zuótiān mǎi de.",
+     "（提示物品）汉语书 Hànyǔ shū　衣服 yīfu　杯子 bēizi　电脑 diànnǎo"
+    ]
+   },
+   {
+    "title_zh": "小组活动",
+    "instruction_zh": "3～4人一组，互相询问并记录小组各成员会做什么，每组请一位同学报告情况。",
+    "instruction_en": "Work in groups of 3-4. Ask about the ability of each of your group members and take notes. Each group chooses one member to make a report.",
+    "example_zh": [
+     "例如：",
+     "A：你会说汉语吗？ Nǐ huì shuō Hànyǔ ma?",
+     "B：会。 Huì.",
+     "A：你是什么时候开始（to start）学汉语的？ Nǐ shì shénme shíhou kāishǐ xué Hànyǔ de?",
+     "B：我是……的。 Wǒ shì …… de.",
+     "A：你是在哪儿学的？ Nǐ shì zài nǎr xué de?",
+     "B：我是……的。 Wǒ shì …… de.",
+     "表格：姓名 Name | 会做什么 Ability | 时间 Time | 地方 Place",
+     "1 | 小王 Xiǎo Wáng | 做中国菜 zuò Zhōngguó cài | 今年 jīnnián | 北京 Běijīng",
+     "（另有3行空白）"
+    ]
+   }
+  ],
+  "culture": {
+   "title_zh": "中国人经常使用的通信工具",
+   "body_zh": "在中国，常用的通信工具有电话机和手机两种。电话机号码一般为6–8位，比如2027816、82304156，不同地区的电话机号码位数不同。手机号码的位数没有地区的差别，都是11位，比如13576983311。由于手机号码位数较多，读时一般切分为“3–4–4”的停顿模式，比如139–0107–8866。其中号码中的“1”要读成“yāo”。",
+   "body_en": "Common Communication Tools of Chinese People\nIn China, there are two kinds of common communication tools—telephones and cell phones. A telephone number usually has 6-8 digits, for example, 2027816, 82304156. Telephone numbers in different regions have different numbers of digits. Cell phone numbers, however, always have 11 digits regardless of region, as in 13576983311. Since a cell phone number has many digits, it is read with pauses following the pattern “3-4-4”, such as 139-0107-8866. “1” is read as “yāo” in a phone number."
+  }
+ },
+ "teacher": {
+  "ref": {
+   "book": "teacher",
+   "pages": [
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105
+   ]
+  },
+  "objectives_zh": [
+   "重点词语：学生能够熟练掌握“认识、年、大学、一起、听”的词义和用法",
+   "语言点：学生能够了解并掌握：（1）“是……的”句：强调时间、地点、方式（2）日期的表达（2）：年、月、日／号、星期",
+   "语音：学生熟悉四声音节开头的三音节词语的声调模式，并能正确朗读",
+   "汉字：学生能够：（1）熟练认读本课生词（2）独立书写独体字“年、出、飞”（3）了解“艹（草字头）、宀（宝盖头）”所表示的意思",
+   "功能：学生能够熟练：（1）询问和描述已经完成动作行为的时间、地点、方式（2）按“年–月–日–星期”由大到小表达日期和星期"
+  ],
+  "steps": [
+   {
+    "title_zh": "一 复习旧课",
+    "body_zh": "1. 教师出示第14课生词卡片，要求学生快速认读下列生词。\n东西、一点儿、苹果、看见、先生、\n开、车、回来、分钟、后、衣服、\n漂亮、啊、少、这些、都、张\n2. 教师根据第13课重点内容简单提问，活跃课堂气氛。\n（1）昨天你去商店了吗？\n（2）昨天你买什么了？\n（3）今天早上你吃早饭了吗？你吃什么了？\n（4）昨天你看见……了吗？\n（5）昨天你给……打电话了吗？\n（6）今天你下课后做什么？"
+   },
+   {
+    "title_zh": "二 学习新课 1 热身",
+    "body_zh": "教师可随机出示热身图片所对应6个词语的卡片，要求学生集体或单个说出词语对应的图片编号，教师评判正误。最后全体学生再次齐读热身环节的所有词语，并注意纠正学生的发音错误，要求语音标准、声调准确。\n答案：①D　②F　③A　④E　⑤B　⑥C"
+   },
+   {
+    "title_zh": "2 生词",
+    "body_zh": "（1）生词快速认读及正音\n认识、年、大学、饭店、出租车、\n一起、高兴、听、飞机\n• 教师使用生词卡片有拼音和汉字的一面，带领学生快速认读一遍本课生词；\n• 使用生词卡片只有汉字的一面，带领学生再次认读本课生词；\n• 请单个学生独自认读2–3个生词；\n• 最后全体学生再快速认读一遍本课所有生词。\n注意：本课较难发音的词语是“出租车”，教师要提示学生注意这个三音节词的声母ch、z、ch以及韵母u、u、e的不同。\n（2）重点生词扩展及常用搭配\n认识—认识你很高兴\n　—认识大卫—不认识大卫—认识大卫吗？\n　—认识这个汉字—不认识这个汉字—认识这个汉字吗？\n　—在哪儿认识的？—什么时候认识的？\n年—一年—两年\n　—几年—哪年\n大学—上大学\n　—大学生—大学同学\n　↔中学↔小学\n一起—一起吃饭—一起学习—一起去商店\n　—跟朋友一起吃饭—跟同学一起学习—跟妈妈一起去商店\n［句型框］（跟＋谁＋）一起＋动词\n听—听音乐—听CD—听歌\n　—听老师说—听朋友说—听张先生说\n［句型框］听＋谁＋说\n练习册相关练习：第107页／一／第一部分，第110页／二／第一部分"
+   },
+   {
+    "title_zh": "3 语言点（1）“是……的”句",
+    "body_zh": "① 语言点解析\n在已经知道事情发生的情况下，可以用“是……的”句强调事情发生的时间、地点、方式等。肯定句和疑问句中的“是”字可以省略，否定句中不能省略。\n［句型框］主语（＋是）＋时间／地点／方式＋动词（宾语）＋的。\n［句型框］主语＋不是＋时间／地点／方式＋动词（宾语）＋的。\n［句型框］主语（＋是）＋｛什么时候／在哪儿／怎么｝＋动词（宾语）＋的？\n② 语言点导入\n教师可利用本课热身图片C、A进行导入。\n教师出示图片C：\n教师：张先生去商店了。他是怎么去的？\n学生：张先生是开车去商店的。\n教师：他是坐出租车去商店的吗？\n学生：他不是坐出租车去商店的。\n教师再出示图片A：\n教师：张先生和李小姐认识，他们是在哪儿认识的？\n学生：他们是在学校认识的。\n接着出示一张2008年的日历：\n教师：他们是什么时候认识的？\n学生：他们是2008年认识的。\n③ 语言点操练\n教师可利用本课热身图片D、F进一步操练。\n目标句：他是坐飞机去北京的。\n　　　　他们是坐出租车来饭店的。\n教师也可组织学生根据实际情况进行问答练习。\n教师：今天你是怎么来学校的？\n学生：我是坐出租车来学校的。\n教师：你是几点来学校的？\n学生：我是上午十点来学校的。\n教师：你的衣服是在哪儿买的？\n学生：我的衣服是在商店买的。\n④ 语言点扩展练习\n教师可组织学生两人一组，根据提示，就学生的某个所属物品完成对话练习。\nA：你的……是在哪儿买的？\nB：……。\nA：你的……是什么时候买的？\nB：……。"
+   },
+   {
+    "title_zh": "3 语言点（2）日期的表达（2）年、月、日／号、星期",
+    "body_zh": "① 语言点解析\n汉语中日期的写法和读法都是从大到小，即按照“年–月–日–星期”的顺序，星期放在最后。日期书写时一般写“日”，但口语表达中一般说“号”。年要分别读出每个数字，再加上“年”。月、日要读出整个数字，再加上“月”“日／号”。星期的读法是“星期”加上数字。年份中“1”的读法和电话号码、房间号码不同，读作“yī”，不读“yāo”。\n② 补充朗读练习\n2014年3月21日，星期五\n2008年9月20日，星期三\n2000年12月25日，星期六\n1998年7月14日，星期一"
+   },
+   {
+    "title_zh": "4 课文",
+    "body_zh": "课文1\n（1）让学生听两遍录音并回答下列问题：\n她和李小姐是什么时候认识的？\n她们是在哪儿认识的？\n她们是什么同学？\n（2）根据学生的回答，教师领说变为叙述体的课文，并请学生单个复述：\n她和李小姐是2011年9月在学校认识的，她们是大学同学。\n（3）教师领读课文两遍，然后让学生分角色朗读课文。\n课文2\n（1）教师朗读两遍变为叙述体的课文，请学生回答下列问题：\n他们在什么地方？\n他们是怎么来的？\n李先生也是坐出租车来的吗？\n李先生是怎么来的？\n（2）教师带领学生根据以上问题的答案叙述课文内容，并请学生单个复述：\n他们在饭店，他们是坐出租车来的。\n李先生不是坐出租车来的，他是和朋友一起开车来的。\n（3）教师领读课文两遍，然后让学生分角色朗读课文。\n课文3\n（1）让学生听两遍录音并回答下列问题：\n他们在哪儿？\n他是怎么来北京的？\n（2）教师领读课文两遍，然后让学生分角色朗读课文。\n（3）模仿练习\n教师组织学生两人一组，根据提示进行对话练习。\nA：很高兴认识您，……。\nB：认识你我也很高兴。\nA：听……说，你是……（时间／地点／方式）的？\nB：不是，我是……（时间／地点／方式）的。"
+   },
+   {
+    "title_zh": "5 语音",
+    "body_zh": "三音节词语的声调搭配（4）：四声音节开头\n教师引导学生将三音节词语的声调模式切分成2＋1或者1＋2的模式，注意第三声音节的变调。\n教师可利用课本第116页的三音节声调搭配词表进行语音练习。可先领读第一列三音节词语，使学生熟悉练习方法，然后变换齐读、单个学生读、按顺序读、跳读等方法组织学生进行练习。\n练习册相关练习：第113页／三"
+   },
+   {
+    "title_zh": "6 汉字",
+    "body_zh": "① 知识点解析\n独体字\n年：字形的本义是将收成的谷物运回家，现在是时间单位。\n出：字形像脚离开某地，现在是从里面到外面的意思。\n飞：本义是鸟类或虫类等用翅膀在空中往来活动，现在泛指在天上飞、速度快等。\n偏旁\n艹：草字头，一般和草木或者植物有关系。\n宀：宝盖头，一般和房子有关系。\n② 汉字练习\n• 教师板书或者用手指在空中书写本课独体字“年、出、飞”，带领学生一起识记独体字的笔画笔顺。\n• 教师板书本课偏旁“艹、宀”，提示学生注意这两个偏旁的笔画和笔顺，并书写各自的代表汉字，帮助学生识记偏旁的意义。\n• 补充练习\n辨认下列汉字并组词\n年（　）／生（　）　飞（　）／分（　）\n茶（　）／菜（　）　出（　）／去（　）\n练习册相关练习：第114页／四"
+   },
+   {
+    "title_zh": "7 补充课堂活动——……的朋友",
+    "body_zh": "学生3人一组，各自介绍自己跟一位同学或者朋友相识的经历，然后每组同学互换复述。\n例如：……（名字）认识……（名字）（多长时间）了。他们／她们是……（时间）认识的。他们／她们是在……（地方）认识的。他们／她们是……（怎么）认识的。"
+   },
+   {
+    "title_zh": "8 本课小结",
+    "body_zh": "• 语言点：“是……的。”\n　日期的表达：年–月–日–星期\n• 语音：三音节词语的声调搭配（4）：四声音节开头\n• 汉字：独体字“年、出、飞”\n　偏旁“艹、宀”"
+   },
+   {
+    "title_zh": "附注：建议教学用具",
+    "body_zh": "1. 生词卡片：第14、15课生词卡片\n2. 独体字卡片：第15课独体字卡片\n3. 日历"
+   },
+   {
+    "title_zh": "文化：中国人经常使用的通信工具",
+    "body_zh": "1 文化点解析\n① 目前中国人常用的通信工具有电话机（座机）和手机两种。\n② 座机号码因地区的不同位数也不同，一般为7-8位。北京、上海、广州等大城市的座机号码一般为8位，中小城市的座机号码多为7位。\n③ 手机号码的位数各地区一致，都是11位，朗读时一般切分为“3-4-4”的停顿模式。\n④ 电话号码中的“1”要读成“yāo”，这样可以和“7（qī）”区别开。\n2 文化点参考处理方式\n• 教师可出示几组不同的号码，请学生按照座机号码和手机号码分成两类。如：\n13901078327　62378866　13520198834\n18600145789　2036691　8495002\n座机号码：\n手机号码：\n• 请学生分别朗读上述电话号码。"
+   }
+  ],
+  "notes_zh": [
+   "注意：本课较难发音的词语是“出租车”，教师要提示学生注意这个三音节词的声母ch、z、ch以及韵母u、u、e的不同。（生词）",
+   "注意：教师要提示学生注意“是……的”句一定要用于已经发生的事情，不能出现“我是明天来北京的。”这样的句子。（语言点1）",
+   "注意：肯定和疑问形式的“是……的”句中，“是”常常省略，但否定句中的“是”不能省略。（语言点1）"
+  ],
+  "warmup_answers_zh": [
+   "答案：①D　②F　③A　④E　⑤B　⑥C"
+  ],
+  "text_questions": [
+   {
+    "text": 1,
+    "q_zh": "她和李小姐是什么时候认识的？"
+   },
+   {
+    "text": 1,
+    "q_zh": "她们是在哪儿认识的？"
+   },
+   {
+    "text": 1,
+    "q_zh": "她们是什么同学？"
+   },
+   {
+    "text": 2,
+    "q_zh": "他们在什么地方？"
+   },
+   {
+    "text": 2,
+    "q_zh": "他们是怎么来的？"
+   },
+   {
+    "text": 2,
+    "q_zh": "李先生也是坐出租车来的吗？"
+   },
+   {
+    "text": 2,
+    "q_zh": "李先生是怎么来的？"
+   },
+   {
+    "text": 3,
+    "q_zh": "他们在哪儿？"
+   },
+   {
+    "text": 3,
+    "q_zh": "他是怎么来北京的？"
+   }
+  ],
+  "summary_zh": "• 语言点：“是……的。”\n　日期的表达：年–月–日–星期\n• 语音：三音节词语的声调搭配（4）：四声音节开头\n• 汉字：独体字“年、出、飞”\n　偏旁“艹、宀”"
+ },
+ "workbook": {
+  "ref": {
+   "book": "workbook",
+   "pages": [
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122
+   ]
+  },
+  "sections": [
+   {
+    "n": "一、听力 第一部分",
+    "type_zh": "听力 第一部分",
+    "instruction_zh": "第1–5题：听词或短语，判断对错",
+    "instruction_en": "Questions 1-5: Listen to the words or phrases and decide whether the pictures are right or wrong based on what you hear.",
+    "items": [
+     {
+      "n": "例1",
+      "zh": "很高兴 hěn gāoxìng very happy",
+      "transcript_zh": "很高兴",
+      "picture_desc_en": "a smiling young woman",
+      "answer": "√",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        115
+       ]
+      }
+     },
+     {
+      "n": "例2",
+      "zh": "看电影 kàn diànyǐng to see a movie",
+      "transcript_zh": "看电影",
+      "picture_desc_en": "an older man in a suit sitting and reading papers",
+      "answer": "×",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        115
+       ]
+      }
+     },
+     {
+      "n": 1,
+      "zh": "",
+      "transcript_zh": "电话",
+      "picture_desc_en": "a black and a white smartphone",
+      "answer": "√",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        86
+       ]
+      }
+     },
+     {
+      "n": 2,
+      "zh": "",
+      "transcript_zh": "出租车",
+      "picture_desc_en": "a high-speed train at a station platform under an arched roof",
+      "answer": "×",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        86
+       ]
+      }
+     },
+     {
+      "n": 3,
+      "zh": "",
+      "transcript_zh": "听",
+      "picture_desc_en": "a hand cupped behind an ear",
+      "answer": "√",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        86
+       ]
+      }
+     },
+     {
+      "n": 4,
+      "zh": "",
+      "transcript_zh": "饭店",
+      "picture_desc_en": "long supermarket shelves stocked with goods",
+      "answer": "×",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        86
+       ]
+      }
+     },
+     {
+      "n": 5,
+      "zh": "",
+      "transcript_zh": "大学",
+      "picture_desc_en": "a woman with several young children drawing at a table in a classroom",
+      "answer": "×",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        86
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "一、听力 第二部分",
+    "type_zh": "听力 第二部分",
+    "instruction_zh": "第6–10题：听对话，选择与对话内容一致的图片",
+    "instruction_en": "Questions 6-10: Listen to the dialogues and choose the right picture for each dialogue you hear.",
+    "items": [
+     {
+      "n": "例",
+      "zh": "女：你好！ Nǐ hǎo! (How do you do?) 男：你好！很高兴认识你。 Nǐ hǎo! Hěn gāoxìng rènshi nǐ. (How do you do? Nice to meet you.)",
+      "transcript_zh": "女：你好！ 男：你好！很高兴认识你。",
+      "options": {
+       "A": "[picture] a market stall piled with apples, with price tags, bananas behind",
+       "B": "[picture] a young man and a young woman with shopping bags on a street, the woman raising her hand to hail a car",
+       "C": "[picture] a man and a woman in business suits shaking hands in front of an elevator",
+       "D": "[picture] a desk calendar showing “2011”",
+       "E": "[picture] an elderly man in a cap driving a convertible car",
+       "F": "[picture] a young man sleeping in bed, an alarm clock in the foreground"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        116
+       ]
+      }
+     },
+     {
+      "n": 6,
+      "zh": "",
+      "options": {
+       "A": "[picture] a market stall piled with apples, with price tags, bananas behind",
+       "B": "[picture] a young man and a young woman with shopping bags on a street, the woman raising her hand to hail a car",
+       "C": "[picture] a man and a woman in business suits shaking hands in front of an elevator",
+       "D": "[picture] a desk calendar showing “2011”",
+       "E": "[picture] an elderly man in a cap driving a convertible car",
+       "F": "[picture] a young man sleeping in bed, an alarm clock in the foreground"
+      },
+      "transcript_zh": "男：你是什么时候来中国的？ 女：我是2011年来的，已经两年了。",
+      "answer": "D",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        87
+       ]
+      }
+     },
+     {
+      "n": 7,
+      "zh": "",
+      "options": {
+       "A": "[picture] a market stall piled with apples, with price tags, bananas behind",
+       "B": "[picture] a young man and a young woman with shopping bags on a street, the woman raising her hand to hail a car",
+       "C": "[picture] a man and a woman in business suits shaking hands in front of an elevator",
+       "D": "[picture] a desk calendar showing “2011”",
+       "E": "[picture] an elderly man in a cap driving a convertible car",
+       "F": "[picture] a young man sleeping in bed, an alarm clock in the foreground"
+      },
+      "transcript_zh": "男：这些苹果是在哪儿买的？ 女：在前面的商店买的。",
+      "answer": "A",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        87
+       ]
+      }
+     },
+     {
+      "n": 8,
+      "zh": "",
+      "options": {
+       "A": "[picture] a market stall piled with apples, with price tags, bananas behind",
+       "B": "[picture] a young man and a young woman with shopping bags on a street, the woman raising her hand to hail a car",
+       "C": "[picture] a man and a woman in business suits shaking hands in front of an elevator",
+       "D": "[picture] a desk calendar showing “2011”",
+       "E": "[picture] an elderly man in a cap driving a convertible car",
+       "F": "[picture] a young man sleeping in bed, an alarm clock in the foreground"
+      },
+      "transcript_zh": "男：你爸爸是怎么去商店的？ 女：我们一起开车去的。",
+      "answer": "E",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        87
+       ]
+      }
+     },
+     {
+      "n": 9,
+      "zh": "",
+      "options": {
+       "A": "[picture] a market stall piled with apples, with price tags, bananas behind",
+       "B": "[picture] a young man and a young woman with shopping bags on a street, the woman raising her hand to hail a car",
+       "C": "[picture] a man and a woman in business suits shaking hands in front of an elevator",
+       "D": "[picture] a desk calendar showing “2011”",
+       "E": "[picture] an elderly man in a cap driving a convertible car",
+       "F": "[picture] a young man sleeping in bed, an alarm clock in the foreground"
+      },
+      "transcript_zh": "女：李老师睡觉了吗？ 男：睡了，他是五点睡的。",
+      "answer": "F",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        87
+       ]
+      }
+     },
+     {
+      "n": 10,
+      "zh": "",
+      "options": {
+       "A": "[picture] a market stall piled with apples, with price tags, bananas behind",
+       "B": "[picture] a young man and a young woman with shopping bags on a street, the woman raising her hand to hail a car",
+       "C": "[picture] a man and a woman in business suits shaking hands in front of an elevator",
+       "D": "[picture] a desk calendar showing “2011”",
+       "E": "[picture] an elderly man in a cap driving a convertible car",
+       "F": "[picture] a young man sleeping in bed, an alarm clock in the foreground"
+      },
+      "transcript_zh": "女：我们怎么去？ 男：小王是坐出租车去的，我们也坐出租车吧。",
+      "answer": "B",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        87
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "一、听力 第三部分",
+    "type_zh": "听力 第三部分",
+    "instruction_zh": "第11–15题：听句子，回答问题",
+    "instruction_en": "Questions 11-15: Listen to the sentences and answer the questions.",
+    "items": [
+     {
+      "n": "例",
+      "zh": "问：她下午去哪里？",
+      "pinyin": "Tā xiàwǔ qù nǎli?",
+      "transcript_zh": "下午我去商店，我想买一些水果。 问：她下午去哪里？",
+      "options": {
+       "A": "商店 shāngdiàn store",
+       "B": "医院 yīyuàn hospital",
+       "C": "学校 xuéxiào school"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        117
+       ]
+      }
+     },
+     {
+      "n": 11,
+      "zh": "",
+      "transcript_zh": "我们是2008年在北京认识的。 问：他们是什么时候认识的？",
+      "options": {
+       "A": "2007年 nián",
+       "B": "2008年 nián",
+       "C": "2009年 nián"
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        87
+       ]
+      }
+     },
+     {
+      "n": 12,
+      "zh": "",
+      "transcript_zh": "我的衣服都是在中国买的，我喜欢中国的衣服。 问：他／她喜欢哪儿的衣服？",
+      "options": {
+       "A": "美国 Měiguó",
+       "B": "中国 Zhōngguó",
+       "C": "日本 Rìběn"
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        87
+       ]
+      }
+     },
+     {
+      "n": 13,
+      "zh": "",
+      "transcript_zh": "王老师不是坐出租车去的。 问：王老师是怎么去的？",
+      "options": {
+       "A": "坐出租车 zuò chūzūchē",
+       "B": "开车 kāi chē",
+       "C": "不知道 bù zhīdào"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        87
+       ]
+      }
+     },
+     {
+      "n": 14,
+      "zh": "",
+      "transcript_zh": "李老师是八点去学校的，九点前会到。 问：李老师是什么时候去学校的？",
+      "options": {
+       "A": "八点 bā diǎn",
+       "B": "九点 jiǔ diǎn",
+       "C": "十点 shí diǎn"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        87
+       ]
+      }
+     },
+     {
+      "n": 15,
+      "zh": "",
+      "transcript_zh": "张先生是坐飞机来的。 问：张先生是怎么来的？",
+      "options": {
+       "A": "坐车 zuò chē",
+       "B": "坐出租车 zuò chūzūchē",
+       "C": "坐飞机 zuò fēijī"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        87
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第一部分",
+    "type_zh": "阅读 第一部分",
+    "instruction_zh": "第16–20题：看图片，判断图片内容是否与提示词一致",
+    "instruction_en": "Questions 16-20: Look at the pictures and decide whether the given words are right or wrong.",
+    "items": [
+     {
+      "n": "例1",
+      "zh": "电视 diànshì television",
+      "picture_desc_en": "an open laptop computer",
+      "answer": "×",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        118
+       ]
+      }
+     },
+     {
+      "n": "例2",
+      "zh": "飞机 fēijī airplane",
+      "picture_desc_en": "an airplane in flight",
+      "answer": "√",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        118
+       ]
+      }
+     },
+     {
+      "n": 16,
+      "zh": "开出租车",
+      "pinyin": "kāi chūzūchē",
+      "picture_desc_en": "a smiling pilot in sunglasses sitting in an airplane cockpit",
+      "answer": "×",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        88
+       ]
+      }
+     },
+     {
+      "n": 17,
+      "zh": "高兴",
+      "pinyin": "gāoxìng",
+      "picture_desc_en": "a crying baby",
+      "answer": "×",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        88
+       ]
+      }
+     },
+     {
+      "n": 18,
+      "zh": "一起学习",
+      "pinyin": "yìqǐ xuéxí",
+      "picture_desc_en": "a group of young people studying together around a table",
+      "answer": "√",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        88
+       ]
+      }
+     },
+     {
+      "n": 19,
+      "zh": "开飞机",
+      "pinyin": "kāi fēijī",
+      "picture_desc_en": "a young woman in an airplane cabin seat reaching up towards the overhead panel",
+      "answer": "×",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        88
+       ]
+      }
+     },
+     {
+      "n": 20,
+      "zh": "大学同学",
+      "pinyin": "dàxué tóngxué",
+      "picture_desc_en": "two smiling young women in graduation gowns and caps holding diplomas on either side of a tree trunk",
+      "answer": "√",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        88
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第二部分",
+    "type_zh": "阅读 第二部分",
+    "instruction_zh": "第21–25题：看问题，选择正确的回答",
+    "instruction_en": "Questions 21-25: Read the questions and choose the right answer to each of them.",
+    "items": [
+     {
+      "n": "例",
+      "zh": "你喝水吗？ Nǐ hē shuǐ ma? (Would you like some water?)",
+      "options": {
+       "A": "我们是大学同学。 Wǒmen shì dàxué tóngxué.",
+       "B": "我也很高兴。 Wǒ yě hěn gāoxìng.",
+       "C": "在一个小商店买的。 Zài yí ge xiǎo shāngdiàn mǎi de.",
+       "D": "明天吧，小王是今天去的。 Míngtiān ba, Xiǎo Wáng shì jīntiān qù de.",
+       "E": "我看见他开车回家了。 Wǒ kànjiàn tā kāi chē huí jiā le.",
+       "F": "好的，谢谢！ Hǎo de, xièxie!"
+      },
+      "answer": "F",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        119
+       ]
+      }
+     },
+     {
+      "n": 21,
+      "zh": "你们是怎么认识的？",
+      "pinyin": "Nǐmen shì zěnme rènshi de?",
+      "options": {
+       "A": "我们是大学同学。 Wǒmen shì dàxué tóngxué.",
+       "B": "我也很高兴。 Wǒ yě hěn gāoxìng.",
+       "C": "在一个小商店买的。 Zài yí ge xiǎo shāngdiàn mǎi de.",
+       "D": "明天吧，小王是今天去的。 Míngtiān ba, Xiǎo Wáng shì jīntiān qù de.",
+       "E": "我看见他开车回家了。 Wǒ kànjiàn tā kāi chē huí jiā le.",
+       "F": "好的，谢谢！ Hǎo de, xièxie!"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        89
+       ]
+      }
+     },
+     {
+      "n": 22,
+      "zh": "你的衣服是在哪儿买的？",
+      "pinyin": "Nǐ de yīfu shì zài nǎr mǎi de?",
+      "options": {
+       "A": "我们是大学同学。 Wǒmen shì dàxué tóngxué.",
+       "B": "我也很高兴。 Wǒ yě hěn gāoxìng.",
+       "C": "在一个小商店买的。 Zài yí ge xiǎo shāngdiàn mǎi de.",
+       "D": "明天吧，小王是今天去的。 Míngtiān ba, Xiǎo Wáng shì jīntiān qù de.",
+       "E": "我看见他开车回家了。 Wǒ kànjiàn tā kāi chē huí jiā le.",
+       "F": "好的，谢谢！ Hǎo de, xièxie!"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        89
+       ]
+      }
+     },
+     {
+      "n": 23,
+      "zh": "小王回家了吗？",
+      "pinyin": "Xiǎo Wáng huí jiā le ma?",
+      "options": {
+       "A": "我们是大学同学。 Wǒmen shì dàxué tóngxué.",
+       "B": "我也很高兴。 Wǒ yě hěn gāoxìng.",
+       "C": "在一个小商店买的。 Zài yí ge xiǎo shāngdiàn mǎi de.",
+       "D": "明天吧，小王是今天去的。 Míngtiān ba, Xiǎo Wáng shì jīntiān qù de.",
+       "E": "我看见他开车回家了。 Wǒ kànjiàn tā kāi chē huí jiā le.",
+       "F": "好的，谢谢！ Hǎo de, xièxie!"
+      },
+      "answer": "E",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        89
+       ]
+      }
+     },
+     {
+      "n": 24,
+      "zh": "我很高兴你来我们学校。",
+      "pinyin": "Wǒ hěn gāoxìng nǐ lái wǒmen xuéxiào.",
+      "options": {
+       "A": "我们是大学同学。 Wǒmen shì dàxué tóngxué.",
+       "B": "我也很高兴。 Wǒ yě hěn gāoxìng.",
+       "C": "在一个小商店买的。 Zài yí ge xiǎo shāngdiàn mǎi de.",
+       "D": "明天吧，小王是今天去的。 Míngtiān ba, Xiǎo Wáng shì jīntiān qù de.",
+       "E": "我看见他开车回家了。 Wǒ kànjiàn tā kāi chē huí jiā le.",
+       "F": "好的，谢谢！ Hǎo de, xièxie!"
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        89
+       ]
+      }
+     },
+     {
+      "n": 25,
+      "zh": "你想什么时候去？",
+      "pinyin": "Nǐ xiǎng shénme shíhou qù?",
+      "options": {
+       "A": "我们是大学同学。 Wǒmen shì dàxué tóngxué.",
+       "B": "我也很高兴。 Wǒ yě hěn gāoxìng.",
+       "C": "在一个小商店买的。 Zài yí ge xiǎo shāngdiàn mǎi de.",
+       "D": "明天吧，小王是今天去的。 Míngtiān ba, Xiǎo Wáng shì jīntiān qù de.",
+       "E": "我看见他开车回家了。 Wǒ kànjiàn tā kāi chē huí jiā le.",
+       "F": "好的，谢谢！ Hǎo de, xièxie!"
+      },
+      "answer": "D",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        89
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第三部分",
+    "type_zh": "阅读 第三部分",
+    "instruction_zh": "第26–30题：看句子，选择正确的词语填空",
+    "instruction_en": "Questions 26-30: Read the sentences and choose the right words to fill in the brackets.",
+    "word_bank": [
+     [
+      "A 认识 rènshi",
+      "B 坐 zuò",
+      "C 一起 yìqǐ",
+      "D 名字 míngzi",
+      "E 高兴 gāoxìng",
+      "F 听 tīng"
+     ]
+    ],
+    "items": [
+     {
+      "n": "例",
+      "zh": "你叫什么（________）？",
+      "pinyin": "Nǐ jiào shénme (What is your name?)",
+      "answer": "D",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 26,
+      "zh": "（________）老师说，明天我们去看电影。",
+      "pinyin": "______ lǎoshī shuō, míngtiān wǒmen qù kàn diànyǐng.",
+      "answer": "F",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        89
+       ]
+      }
+     },
+     {
+      "n": 27,
+      "zh": "我们是在飞机上（________）的。",
+      "pinyin": "Wǒmen shì zài fēijī shang ______ de.",
+      "answer": "A",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        89
+       ]
+      }
+     },
+     {
+      "n": 28,
+      "zh": "我不喜欢（________）出租车，我喜欢开车。",
+      "pinyin": "Wǒ bù xǐhuan ______ chūzūchē, wǒ xǐhuan kāi chē.",
+      "answer": "B",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        89
+       ]
+      }
+     },
+     {
+      "n": 29,
+      "zh": "你想不想和我们（________）去商店买衣服？",
+      "pinyin": "Nǐ xiǎng bu xiǎng hé wǒmen ______ qù shāngdiàn mǎi yīfu?",
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        89
+       ]
+      }
+     },
+     {
+      "n": 30,
+      "zh": "今天天气很好，我很（________）。",
+      "pinyin": "Jīntiān tiānqì hěn hǎo, wǒ hěn ______.",
+      "answer": "E",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        89
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "三、语音 第一部分",
+    "type_zh": "语音 第一部分 听力",
+    "instruction_zh": "第1–5题：听录音，从听到的三个词语中选出声调模式不同的一个",
+    "instruction_en": "Questions 1-5: Listen to the recording. Among the three words and phrases you hear, mark the one that has a different tone pattern.",
+    "items": [
+     {
+      "n": 1,
+      "zh": "A　B　C",
+      "options": {
+       "A": "tàiyángxì（太阳系）",
+       "B": "jìshíqì（计时器）",
+       "C": "bú kèqi（不客气）"
+      },
+      "transcript_zh": "A tàiyángxì（太阳系）　B jìshíqì（计时器）　C bú kèqi（不客气）",
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        90
+       ]
+      }
+     },
+     {
+      "n": 2,
+      "zh": "A　B　C",
+      "options": {
+       "A": "rèqìqiú（热气球）",
+       "B": "jiànshēnfáng（健身房）",
+       "C": "Màidāngláo（麦当劳）"
+      },
+      "transcript_zh": "A rèqìqiú（热气球）　B jiànshēnfáng（健身房）　C Màidāngláo（麦当劳）",
+      "answer": "A",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        90
+       ]
+      }
+     },
+     {
+      "n": 3,
+      "zh": "A　B　C",
+      "options": {
+       "A": "jìsuànjī（计算机）",
+       "B": "diànhuàkǎ（电话卡）",
+       "C": "diànhuàjī（电话机）"
+      },
+      "transcript_zh": "A jìsuànjī（计算机）　B diànhuàkǎ（电话卡）　C diànhuàjī（电话机）",
+      "answer": "B",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        90
+       ]
+      }
+     },
+     {
+      "n": 4,
+      "zh": "A　B　C",
+      "options": {
+       "A": "Tàiháng Shān（太行山）",
+       "B": "kàn zúqiú（看足球）",
+       "C": "chàng guógē（唱国歌）"
+      },
+      "transcript_zh": "A Tàiháng Shān（太行山）　B kàn zúqiú（看足球）　C chàng guógē（唱国歌）",
+      "answer": "B",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        90
+       ]
+      }
+     },
+     {
+      "n": 5,
+      "zh": "A　B　C",
+      "options": {
+       "A": "tàijíquán（太极拳）",
+       "B": "Shàolín Sì（少林寺）",
+       "C": "zuò yóuxì（做游戏）"
+      },
+      "transcript_zh": "A tàijíquán（太极拳）　B Shàolín Sì（少林寺）　C zuò yóuxì（做游戏）",
+      "answer": "A",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        90
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "三、语音 第二部分",
+    "type_zh": "语音 第二部分 听力",
+    "instruction_zh": "第6–10题：听录音，画出句中你听到的三音节词语",
+    "instruction_en": "Questions 6-10: Listen to the recording and underline the trisyllabic words and phrases in the sentences you hear.",
+    "items": [
+     {
+      "n": 6,
+      "zh": "Jiè wǒ nǐ de lù yīn bǐ yòng yong.",
+      "transcript_zh": "Jiè wǒ nǐ de lù yīn bǐ yòng yong.（借我你的录音笔用用。）",
+      "answer": "lùyīnbǐ",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        90
+       ]
+      }
+     },
+     {
+      "n": 7,
+      "zh": "Míng tiān xià wǔ wǒ men yì qǐ qù diàn yǐng yuàn ba.",
+      "transcript_zh": "Míng tiān xià wǔ wǒ men yì qǐ qù diàn yǐng yuàn ba.（明天下午我们一起去电影院吧。）",
+      "answer": "diànyǐngyuàn",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        90
+       ]
+      }
+     },
+     {
+      "n": 8,
+      "zh": "Nǐ shì shén me shí hou qù jiàn shēn fáng de?",
+      "transcript_zh": "Nǐ shì shén me shí hou qù jiàn shēn fáng de?（你是什么时候去健身房的？）",
+      "answer": "jiànshēnfáng",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        90
+       ]
+      }
+     },
+     {
+      "n": 9,
+      "zh": "Wǒ zài xué dǎ tài jí quán ne.",
+      "transcript_zh": "Wǒ zài xué dǎ tài jí quán ne.（我在学打太极拳呢。）",
+      "answer": "tàijíquán",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        90
+       ]
+      }
+     },
+     {
+      "n": 10,
+      "zh": "Wǒ yào mǎi yì zhāng diàn huà kǎ.",
+      "transcript_zh": "Wǒ yào mǎi yì zhāng diàn huà kǎ.（我要买一张电话卡。）",
+      "answer": "diànhuàkǎ",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        90
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "四、汉字 第一部分",
+    "type_zh": "汉字 偏旁归类",
+    "instruction_zh": "第1–2题：看汉字，找出含有下列偏旁的汉字",
+    "instruction_en": "Questions 1-2: Look at the characters and group the characters with the same radical.",
+    "word_bank": [
+     [
+      "A 家",
+      "B 菜",
+      "C 它",
+      "D 室"
+     ],
+     [
+      "E 草",
+      "F 安",
+      "G 节",
+      "H 苹"
+     ]
+    ],
+    "items": [
+     {
+      "n": 1,
+      "zh": "艹：________",
+      "answer": "B E G H",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        91
+       ]
+      }
+     },
+     {
+      "n": 2,
+      "zh": "宀：________",
+      "answer": "A C D F",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        91
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "四、汉字 第二部分",
+    "type_zh": "汉字 写独体字",
+    "instruction_zh": "第3题：看笔顺，写独体字",
+    "instruction_en": "Question 3: Look at the stroke order and practice writing the single-component characters.",
+    "items": [
+     {
+      "n": "3-年",
+      "zh": "年 nán（笔顺图6步：丿 → 𠂉 → … → 年）"
+     },
+     {
+      "n": "3-出",
+      "zh": "出 chū（笔顺图5步：𠃊 → 凵 → 屮 → … → 出）"
+     },
+     {
+      "n": "3-飞",
+      "zh": "飞 fēi（笔顺图3步：⺄ → … → 飞）"
+     }
+    ]
+   }
+  ],
+  "answers_ref": {
+   "book": "workbook_answers",
+   "pages": [
+    86,
+    87,
+    88,
+    89,
+    90,
+    91
+   ]
+  }
+ },
+ "unclear": [
+  "Сурах бичиг PDF х.132 课文1: B «我们是在学校认识的» — 课文 дахь асуулт «你们在哪儿认识的？» нь «是»-гүй (Nǐmen zài nǎr rènshi de?) — номд байгаагаар.",
+  "Сурах бичиг PDF х.133 课文3: A «很高兴认识您！李小姐。» — «李小姐» дараа цэг (。) хэвлэгдсэн; мөн «张先生»-ийн 专名 (proper noun) хүснэгт энэ хичээлд байхгүй.",
+  "Сурах бичиг PDF х.135 练习2: асуулт 1–2 «她们» (Tāmen), 3 «他们» (Tāmen) — 课文1-д «你和李小姐» (зурагт 2 эмэгтэй); номд байгаагаар.",
+  "Сурах бичиг PDF х.134 注释1 — дугаартай жишээ өгүүлбэр байхгүй, зөвхөн хоёр хүснэгт (肯定/否定). examples-д хүснэгтийн мөрүүдийг өгүүлбэр болгон «（表格）» тэмдэглэлтэй оруулсан; structure_rows-д хүснэгт бүтнээр.",
+  "Сурах бичиг PDF х.136 汉字 «出»: хятад тайлбар «字形像脚离开某地» ↔ англи «originally referred to the germination and growth of a plant» — хоёр хэл зөрж байна (номд байгаагаар). Багшийн ном PDF х.103 хятад тайлбартай ижил.",
+  "Сурах бичиг PDF х.136–137 独体字 年/出/飞-ийн эртний хэлбэрийн хувьсал (字形演变图) болон 田字格 зурлагын дараалал зөвхөн зурагт; дунд алхмуудыг Unicode-оор бүрэн дүрслэх боломжгүй тул «…» гэж бичсэн. Дасгалын ном PDF х.122 мөн адил.",
+  "Дасгалын ном PDF х.122 汉字 第二部分 — «年»-ийн пиньинь «nán» гэж хэвлэгдсэн (сурах бичиг PDF х.136 «nián») — номын алдаа, номд байгаагаар.",
+  "Сурах бичиг PDF х.136 拼音 хүснэгт: мөр бүр 4 нүд (4+X+1…4+X+4) — rows-д мөр мөрөөр, нүд бүрийг «　»-ээр тусгаарласан; зөвхөн англи гарчиг notes_en-д.",
+  "Сурах бичиг PDF х.137 运用 双人活动 — жишээний доор 4 объект (汉语书、衣服、杯子、电脑) хүрээнд; 小组活动 хүснэгт (PDF х.138) 1-р мөр жишээ, 3 хоосон мөр.",
+  "Энэ хичээлд 课堂用语 (classroom_expressions) хэсэг сурах бичгийн PDF х.132–139-д байхгүй.",
+  "Аудио файлын нэр мэдэгдэхгүй тул audio талбар орхисон. Номын CD тэмдэг: сурах бичиг 课文1–3 = 15-1／15-2／15-3; 拼音 15-4; дасгалын ном 听力 15-1; 语音 15-2.",
+  "Багшийн ном PDF х.99 复习旧课 — «教师出示第14课生词卡片…», дараа нь «教师根据第13课重点内容简单提问» — асуултууд «了»-тэй (14-р хичээлийн сэдэв) боловч «第13课» гэж хэвлэгдсэн; номд байгаагаар.",
+  "Багшийн ном PDF х.101 语言点(1) 导入 — «教师可利用本课热身图片C、A进行导入» — «张先生»/«李小姐» нэрс сурах бичгийн 热身 зурагт байхгүй (багшийн зохиосон нөхцөл); номд байгаагаар.",
+  "Багшийн ном PDF х.102 补充朗读练习-ийн огноо/гарагийн хослол (жишээ нь 2008年9月20日，星期三) — номд байгаагаар, шалгаагүй.",
+  "Багшийн ном PDF х.103 课文3 模仿练习 B: «不是，我是……（时间／地点／方式）的。» — 课文3-д B «是的。» гэж хариулдаг; номд байгаагаар.",
+  "Багшийн ном PDF х.105 文化 — «座机号码…一般为7-8位» ↔ сурах бичиг PDF х.139 «电话机号码一般为6–8位» — хоёр ном зөрж байна; номд байгаагаар (teacher.steps «文化»).",
+  "Багшийн ном PDF х.104 补充练习 «辨认下列汉字并组词» (年/生、飞/分、茶/菜、出/去) — хариулт хэвлэгдээгүй; teacher.steps «6 汉字»-д.",
+  "Дасгалын номын хариулт ХОЁР эх сурвалжид: тусдаа хариултын ном (workbook_answers PDF х.86–91) ба багшийн номын хавсралтын 参考答案 (teacher PDF х.133). Бүх хариулт хоёуланд тохирч байна: 1–5 √×√××, 6–10 DAEFB, 11–15 BBCAC, 16–20 ××√×√, 21–25 ACEBD, 26–30 FABCE, 语音 1–5 CABBA, 6–10 lùyīnbǐ/diànyǐngyuàn/jiànshēnfáng/tàijíquán/diànhuàkǎ, 汉字 BEGH／ACDF.",
+  "Дасгалын номын 听力 болон 语音 бичвэр (transcript_zh, 语音 1–5 сонголтуудын пиньинь/ханз) — багшийн номын хавсралт PDF х.132–133-аас; дасгалын номд 语音 1–5-д зөвхөн A/B/C үсэг хэвлэгдсэн. 语音 6–10-ийн answer = доогуур зурсан 三音节 үг (хариултын номд доогуур зураас, багшийн номын 参考答案-д пиньинь).",
+  "Дасгалын номын 三、语音 болон 四、汉字 хэсгийн дугаарлалт 1-ээс дахин эхэлдэг (номд байгаагаар).",
+  "Сурах бичгийн 练习2 回答问题 ба 练习3 描述图片 — хариулт хэвлэгдээгүй.",
+  "Зургийн тайлбарууд (picture_desc_en, pictures_desc_en, options «[picture]») зургаас товч, объектив дүрсэлсэн."
+ ],
+ "verified_pages": [
+  86,
+  87,
+  88,
+  89,
+  90,
+  91,
+  99,
+  100,
+  101,
+  102,
+  103,
+  104,
+  105,
+  115,
+  116,
+  117,
+  118,
+  119,
+  120,
+  121,
+  122,
+  132,
+  133,
+  134,
+  135,
+  136,
+  137,
+  138,
+  139
+ ],
+ "schema_version": 1
+}

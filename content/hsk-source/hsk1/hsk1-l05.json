@@ -1,0 +1,1710 @@
+{
+ "level": "hsk1",
+ "lesson": 5,
+ "book": "HSK1",
+ "title_zh": "她女儿今年二十岁",
+ "title_pinyin": "Tā nǚ’ér jīnnián èrshí suì",
+ "title_en": "Her daughter is 20 years old this year",
+ "textbook": {
+  "ref": {
+   "book": "textbook",
+   "pages": [
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59
+   ]
+  },
+  "warmup": [
+   {
+    "instruction_zh": "给下面的词语选择对应的图片",
+    "instruction_en": "Match the pictures with the words/phrases.",
+    "items": [
+     "①六口人 liù kǒu rén",
+     "②家 jiā",
+     "③女儿 nǚ’ér",
+     "④学生 xuésheng",
+     "⑤70岁 qīshí suì",
+     "⑥20岁 èrshí suì"
+    ],
+    "pictures_desc_en": [
+     "A: a little girl with pigtails, arms crossed, looking sideways",
+     "B: a large family of six people (grandparents, parents, children) sitting together, smiling",
+     "C: a man, a woman and a child holding hands on grass, inside a drawn outline of a house",
+     "D: a young woman in a denim jacket, smiling",
+     "E: a smiling boy sitting at a desk in a classroom, a teacher in the background",
+     "F: an elderly woman with glasses reading a book on a sofa"
+    ]
+   }
+  ],
+  "pronunciation": [
+   {
+    "title_zh": "儿化的发音",
+    "rows": [
+     "xiǎoháir 小孩儿",
+     "xiǎo niǎor 小鸟儿",
+     "fànguǎnr 饭馆儿",
+     "xiāngshuǐr 香水儿"
+    ],
+    "notes_zh": [
+     "汉语中的“儿”可以和前面的音节结合成为一个音节，变成“儿化音”。汉字书写时表示为“汉字＋儿”，拼音书写时在该汉字的拼音后加“r”。例如："
+    ],
+    "notes_en": [
+     "The Retroflex Final",
+     "“儿 (ér)” can be combined with a syllable before it, forming a retroflex syllable, which is written as “character + 儿” and spelt “syllable + r” in pinyin. For example:"
+    ]
+   },
+   {
+    "title_zh": "发音辨析：以i、u、ü开头的韵母——听录音并跟读，注意有i、无i时发音的区别",
+    "rows": [
+     "a — ia",
+     "e — ie",
+     "ao — iao",
+     "ou — iou（iu）",
+     "an — ian",
+     "ang — iang",
+     "ong — iong"
+    ],
+    "notes_zh": [
+     "听录音并跟读，注意有i、无i时发音的区别"
+    ],
+    "notes_en": [
+     "Differentiation: pronunciation of finals beginning with i, u, ü",
+     "Listen to the recording and read after it. Pay attention to the differences between the pronunciations of the finals with and without i."
+    ]
+   },
+   {
+    "title_zh": "发音辨析：以i、u、ü开头的韵母——听录音并跟读，注意有u、无u发音时的区别",
+    "rows": [
+     "a — ua",
+     "ai — uai",
+     "ei — uei（ui）",
+     "an — uan",
+     "en — uen（un）",
+     "ang — uang",
+     "eng — ueng"
+    ],
+    "notes_zh": [
+     "听录音并跟读，注意有u、无u发音时的区别"
+    ],
+    "notes_en": [
+     "Listen to the recording and read after it. Pay attention to the differences between the pronunciations of the finals with and without u."
+    ]
+   },
+   {
+    "title_zh": "发音辨析：以i、u、ü开头的韵母——听录音并跟读，注意有ü、无ü发音时的区别",
+    "rows": [
+     "e — üe",
+     "an — üan",
+     "en — ün"
+    ],
+    "notes_zh": [
+     "听录音并跟读，注意有ü、无ü发音时的区别"
+    ],
+    "notes_en": [
+     "Listen to the recording and read after it. Pay attention to the differences between the pronunciations of the finals with and without ü."
+    ]
+   },
+   {
+    "title_zh": "声母送气音和不送气音发音的区别——听录音并跟读，注意送气音和不送气音发音的区别",
+    "rows": [
+     "b — p　d — t　g — k　j — q　z — c　zh — ch"
+    ],
+    "notes_zh": [
+     "汉语声母的发音有送气和不送气的区别，b-p，d-t，g-k，j-q，z-c，zh-ch，以上各组声母中前一个是不送气音，后一个音是送气音。",
+     "听录音并跟读，注意送气音和不送气音发音的区别"
+    ],
+    "notes_en": [
+     "Difference between Aspirated and Unaspirated Initials",
+     "There are aspirated and unaspirated initials in Chinese, such as b-p, d-t, g-k, j-q, z-c and zh-ch, among which the first one in each pair is unaspirated and the second one is aspirated.",
+     "Listen to the recording and read after it. Pay attention to the differences between the aspirated and unaspirated initials."
+    ]
+   },
+   {
+    "title_zh": "声母送气音和不送气音发音的区别——听录音并跟读，注意声母发音的区别",
+    "rows": [
+     "bàng — pàng　dù — tù　gǒu — kǒu",
+     "jī — qī　zì — cì　zhuō — chē"
+    ],
+    "notes_zh": [
+     "听录音并跟读，注意声母发音的区别"
+    ],
+    "notes_en": [
+     "Listen to the recording and read after it. Pay attention to the differences between the initials."
+    ]
+   },
+   {
+    "title_zh": "拼音规则（4）：隔音符号",
+    "rows": [
+     "piāo — pí’ǎo (to float — fur-lined jacket)",
+     "xiān — Xī’ān (earlier, before — City of Xi’an)",
+     "jiē — jī’è (to receive — hungry)",
+     "jiāng — jī’áng (will, shall — excited and impassioned)",
+     "fānàn — fān’àn (to launch an attack — to reverse a verdict)",
+     "fǎngǎn — fāng’àn (to loathe — work plan)"
+    ],
+    "notes_zh": [
+     "a、o、e开头的音节连接在其他音节后面时，为了避免音节的界限发生混淆，用隔音符号（’）隔开，例如pí’ǎo（皮袄）。",
+     "听录音并跟读，注意有无隔音符号的不同"
+    ],
+    "notes_en": [
+     "Rules of Pinyin (4): syllable-dividing mark",
+     "When a syllable beginning with a, o or e follows another syllable, the syllable-dividing mark (’) is used to separate the two syllables, for example, pí’ǎo (皮袄, fur-lined jacket).",
+     "Listen to the recording and read after it. Pay attention to the differences between the words with and without the syllable-dividing mark."
+    ]
+   }
+  ],
+  "texts": [
+   {
+    "n": 1,
+    "title_zh": "在学校",
+    "title_en": "In the school",
+    "kind": "dialogue",
+    "lines": [
+     {
+      "speaker": "A",
+      "zh": "你家有几口人？",
+      "pinyin": "Nǐ jiā yǒu jǐ kǒu rén?"
+     },
+     {
+      "speaker": "B",
+      "zh": "我家有三口人。",
+      "pinyin": "Wǒ jiā yǒu sān kǒu rén."
+     }
+    ],
+    "new_words": [
+     {
+      "n": 1,
+      "zh": "家",
+      "pinyin": "jiā",
+      "pos": "n.",
+      "en": "family",
+      "text": 1
+     },
+     {
+      "n": 2,
+      "zh": "有",
+      "pinyin": "yǒu",
+      "pos": "v.",
+      "en": "to have, there be",
+      "text": 1
+     },
+     {
+      "n": 3,
+      "zh": "口",
+      "pinyin": "kǒu",
+      "pos": "m.",
+      "en": "a measure word for members of families, etc.",
+      "text": 1,
+      "star": true
+     }
+    ],
+    "english_version": "A: How many people are there in your family?\nB: There are three."
+   },
+   {
+    "n": 2,
+    "title_zh": "在办公室",
+    "title_en": "In the office",
+    "kind": "dialogue",
+    "lines": [
+     {
+      "speaker": "A",
+      "zh": "你女儿几岁了？",
+      "pinyin": "Nǐ nǚ’ér jǐ suì le?"
+     },
+     {
+      "speaker": "B",
+      "zh": "她今年四岁了。",
+      "pinyin": "Tā jīnnián sì suì le."
+     }
+    ],
+    "new_words": [
+     {
+      "n": 4,
+      "zh": "女儿",
+      "pinyin": "nǚ’ér",
+      "pos": "n.",
+      "en": "daughter",
+      "text": 2
+     },
+     {
+      "n": 5,
+      "zh": "几",
+      "pinyin": "jǐ",
+      "pos": "pron.",
+      "en": "how many",
+      "text": 2
+     },
+     {
+      "n": 6,
+      "zh": "岁",
+      "pinyin": "suì",
+      "pos": "m.",
+      "en": "year (of age)",
+      "text": 2
+     },
+     {
+      "n": 7,
+      "zh": "了",
+      "pinyin": "le",
+      "pos": "part.",
+      "en": "used at the end of or in the middle of a sentence to indicate a change or a new circumstance",
+      "text": 2
+     },
+     {
+      "n": 8,
+      "zh": "今年",
+      "pinyin": "jīnnián",
+      "pos": "n.",
+      "en": "this year",
+      "text": 2
+     }
+    ],
+    "english_version": "A: How old is your daughter?\nB: She is four years old."
+   },
+   {
+    "n": 3,
+    "title_zh": "在办公室",
+    "title_en": "In the office",
+    "kind": "dialogue",
+    "lines": [
+     {
+      "speaker": "A",
+      "zh": "李老师多大了？",
+      "pinyin": "Lǐ lǎoshī duō dà le?"
+     },
+     {
+      "speaker": "B",
+      "zh": "她今年50岁了。",
+      "pinyin": "Tā jīnnián wǔshí suì le."
+     },
+     {
+      "speaker": "A",
+      "zh": "她女儿呢？",
+      "pinyin": "Tā nǚ’ér ne?"
+     },
+     {
+      "speaker": "B",
+      "zh": "她女儿今年20岁。",
+      "pinyin": "Tā nǚ’ér jīnnián èrshí suì."
+     }
+    ],
+    "new_words": [
+     {
+      "n": 9,
+      "zh": "多",
+      "pinyin": "duō",
+      "pos": "adv.",
+      "en": "indicating degree or extent",
+      "text": 3
+     },
+     {
+      "n": 10,
+      "zh": "大",
+      "pinyin": "dà",
+      "pos": "adj.",
+      "en": "(of age) old",
+      "text": 3
+     }
+    ],
+    "english_version": "A: How old is Professor Li?\nB: She is 50 years old.\nA: What about her daughter?\nB: Her daughter is 20."
+   }
+  ],
+  "grammar": [
+   {
+    "n": 1,
+    "title_zh": "疑问代词“几”",
+    "title_en": "The Interrogative Pronoun “几”",
+    "explanation_zh": "疑问代词“几”用来询问数量的多少，一般用于询问10以下的数字。",
+    "explanation_en": "The interrogative pronoun “几” is used to ask about a number, usually less than 10.",
+    "examples": [
+     {
+      "n": 1,
+      "zh": "你有几个汉语老师？"
+     },
+     {
+      "n": 2,
+      "zh": "李老师家有几口人？"
+     },
+     {
+      "n": 3,
+      "zh": "你女儿几岁了？"
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "title_zh": "百以内的数字",
+    "title_en": "Numbers below 100",
+    "explanation_zh": "",
+    "structure_rows": [
+     " | 1 yī | 2 èr | 3 sān | 4 sì | 5 wǔ | 6 liù | 7 qī | 8 bā | 9 jiǔ",
+     "10 shí | | | | | | | | | 19 shíjiǔ",
+     "20 èrshí | | | 23 èrshísān | | | | | |",
+     "30 sānshí | | | | | | | | |",
+     "40 sìshí | | | | | | | | |",
+     "50 wǔshí | | | | | | 56 wǔshíliù | | |",
+     "60 liùshí | | | | | | | | |",
+     "70 qīshí | | | | | | | | |",
+     "80 bāshí | | | | | | | | 88 bāshíbā |",
+     "90 jiǔshí | | | | | | | | | 99 jiǔshíjiǔ"
+    ],
+    "examples": [
+     {
+      "zh": "19 shíjiǔ"
+     },
+     {
+      "zh": "23 èrshísān"
+     },
+     {
+      "zh": "56 wǔshíliù"
+     },
+     {
+      "zh": "88 bāshíbā"
+     },
+     {
+      "zh": "99 jiǔshíjiǔ"
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "title_zh": "“了”表变化",
+    "title_en": "“了” Indicating a Change",
+    "explanation_zh": "“了”用于句末，表示变化或新情况的出现。",
+    "explanation_en": "“了” is used at the end of a sentence to indicate a change or the occurrence of a new situation.",
+    "examples": [
+     {
+      "n": 1,
+      "zh": "李老师今年50岁了。"
+     },
+     {
+      "n": 2,
+      "zh": "我朋友的女儿今年四岁了。"
+     },
+     {
+      "n": 3,
+      "zh": "你女儿几岁了？"
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "title_zh": "“多＋大”表示疑问",
+    "title_en": "The Interrogative Phrase “多+大”",
+    "explanation_zh": "“多＋大”在句中表示疑问，用于询问年龄。",
+    "explanation_en": "“多+大” is used to ask about one’s age.",
+    "examples": [
+     {
+      "n": 1,
+      "zh": "你多大了？"
+     },
+     {
+      "n": 2,
+      "zh": "你女儿今年多大了？"
+     },
+     {
+      "n": 3,
+      "zh": "李老师多大了？"
+     }
+    ]
+   }
+  ],
+  "exercises": [
+   {
+    "n": 1,
+    "type_zh": "分角色朗读课文",
+    "instruction_zh": "分角色朗读课文",
+    "instruction_en": "Role-play the dialogues.",
+    "items": []
+   },
+   {
+    "n": 2,
+    "type_zh": "回答问题",
+    "instruction_zh": "根据实际情况回答问题",
+    "instruction_en": "Answer the questions according to the actual situations.",
+    "items": [
+     {
+      "n": 1,
+      "zh": "你家有几口人？ Nǐ jiā yǒu jǐ kǒu rén?"
+     },
+     {
+      "n": 2,
+      "zh": "你今年多大了？ Nǐ jīnnián duō dà le?"
+     },
+     {
+      "n": 3,
+      "zh": "你的汉语老师今年多大了？ Nǐ de Hànyǔ lǎoshī jīnnián duō dà le?"
+     },
+     {
+      "n": 4,
+      "zh": "你的中国朋友家有几口人？ Nǐ de Zhōngguó péngyou jiā yǒu jǐ kǒu rén?"
+     },
+     {
+      "n": 5,
+      "zh": "你的中国朋友今年多大？ Nǐ de Zhōngguó péngyou jīnnián duō dà le?"
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "type_zh": "描述图片",
+    "instruction_zh": "用本课新学的语言点和词语描述图片",
+    "instruction_en": "Describe the pictures using the newly-learned language points and words.",
+    "items": [
+     {
+      "n": 1,
+      "zh": "他是________，他今年________了。 Tā shì ______, tā jīnnián ______ le.",
+      "picture_desc_en": "a smiling schoolboy wearing a backpack, giving two thumbs up"
+     },
+     {
+      "n": 2,
+      "zh": "她家有________人。 Tā jiā yǒu ______ rén.",
+      "picture_desc_en": "a man, a woman and a small boy eating together at a table"
+     },
+     {
+      "n": 3,
+      "zh": "他是我们的汉语________，他今年________了。 Tā shì wǒmen de Hànyǔ ______, tā jīnnián ______ le.",
+      "picture_desc_en": "a young man leaning over a girl who sits at a computer in a computer room"
+     },
+     {
+      "n": 4,
+      "zh": "这是张老师的________，她今年________了。 Zhè shì Zhāng lǎoshī de ______, tā jīnnián ______ le.",
+      "picture_desc_en": "an older woman with a scarf and a younger woman standing close together, smiling"
+     }
+    ]
+   }
+  ],
+  "characters": {
+   "knowledge_title_zh": "汉字的笔画（5）：㇇、㇛／认识独体字／汉字的笔顺（3）：先外后内，先中间后两边",
+   "knowledge_zh": "1 汉字的笔画（5）：㇇、㇛\n笔画名称 | 运笔方向 | 例字\n㇇ 横撇 héngpiě | [图] | 水 shuǐ、又 yòu\n㇛ 撇点 piědiǎn | [图] | 女 nǚ、好 hǎo\n2 认识独体字\n（1）“水”，字形像山涧，表示水流的形状。\n（2）“女”，字形像一个跪在地上的女人，意思是“女人”。\n（3）“了”，字形像[古字形图]（头朝下、未出生的胎儿）的倒写，头朝上，表示已经出生的婴儿。现在成为虚词。\n（4）“大”，本义是张开双手双腿顶天立地的人，现在意思与“小”相对。\n3 汉字的笔顺（3）：先外后内，先中间后两边\n笔顺 | 例字 | 书写顺序\n先外后内 | 四 sì、国 guó | [图]\n先中间后两边 | 小 xiǎo、水 shuǐ | [图]",
+   "knowledge_en": "Strokes of Chinese Characters (5): ㇇, ㇛ — ㇇ horizontal to left-falling: 水 water, 又 again; ㇛ left-falling to dot: 女 female, woman, 好 good, fine.\nSingle-Component Characters: (1) “水” originally looked like a mountain stream, representing the shape of the flowing water. (2) “女” originally looked like a woman kneeling down on the ground, meaning “woman”. (3) “了” originally looked like a reversed [glyph] (an unborn foetus in a head-down position). With the head on top, it referred to a baby already born. Now it is a function word. (4) “大” originally referred to a person in a standing position, with his arms and legs stretching out. Now it means “big”, opposite to “小 (small)”.\nStroke Order (3): outside preceding inside and middle preceding sides — Outside preceding inside: 四 four, 国 country; Middle preceding sides: 小 small, 水 water.",
+   "characters": [
+    {
+     "zh": "水",
+     "pinyin": "shuǐ",
+     "note_zh": "笔画㇇横撇例字；独体字：字形像山涧，表示水流的形状（字形演变图 + 笔顺4步图）；笔顺例字：先中间后两边"
+    },
+    {
+     "zh": "又",
+     "pinyin": "yòu",
+     "note_zh": "笔画㇇横撇例字（again）"
+    },
+    {
+     "zh": "女",
+     "pinyin": "nǚ",
+     "note_zh": "笔画㇛撇点例字；独体字：字形像一个跪在地上的女人，意思是“女人”（字形演变图 + 笔顺3步图）"
+    },
+    {
+     "zh": "好",
+     "pinyin": "hǎo",
+     "note_zh": "笔画㇛撇点例字（good, fine）"
+    },
+    {
+     "zh": "了",
+     "pinyin": "le",
+     "note_zh": "独体字：头朝上，表示已经出生的婴儿，现在成为虚词（字形演变图 + 笔顺：㇇ 了）"
+    },
+    {
+     "zh": "大",
+     "pinyin": "dà",
+     "note_zh": "独体字：本义是张开双手双腿顶天立地的人，现在意思与“小”相对（字形演变图 + 笔顺3步图）"
+    },
+    {
+     "zh": "四",
+     "pinyin": "sì",
+     "note_zh": "笔顺：先外后内（书写顺序图5步）"
+    },
+    {
+     "zh": "国",
+     "pinyin": "guó",
+     "note_zh": "笔顺：先外后内（书写顺序图8步）"
+    },
+    {
+     "zh": "小",
+     "pinyin": "xiǎo",
+     "note_zh": "笔顺：先中间后两边（书写顺序图3步）"
+    }
+   ]
+  },
+  "application": [
+   {
+    "title_zh": "双人活动",
+    "instruction_zh": "两人一组，根据实际情况进行问答练习。",
+    "instruction_en": "Work in pairs and ask and answer questions according to the actual situations. Supplementary words: (paternal) grandpa, (paternal) grandma, father, mother, elder brother, elder sister, younger brother, younger sister",
+    "example_zh": [
+     "补充生词：爷爷、奶奶、爸爸、妈妈、哥哥、姐姐、弟弟、妹妹（yéye nǎinai bàba māma gēge jiějie dìdi mèimei）",
+     "例如：",
+     "A：你家有几口人？ Nǐ jiā yǒu jǐ kǒu rén?",
+     "B：我家有…… Wǒ jiā yǒu……",
+     "A：你／你爸爸／你妈妈……今年多大了？ Nǐ/Nǐ bàba/Nǐ māma……jīnnián duō dà le?",
+     "B：我／我爸爸／我妈妈……今年…… Wǒ/Wǒ bǎba/Wǒ māma……jīnnián……"
+    ]
+   },
+   {
+    "title_zh": "小组活动",
+    "instruction_zh": "3～4人一组，每人准备一张自己全家的合影，向同组成员介绍家庭成员的情况。",
+    "instruction_en": "Work in groups of 3-4. Prepare a photo with all your family members in it. Introduce them to your group members.",
+    "example_zh": [
+     "例如：",
+     "我家有……人。 Wǒ jiā yǒu……rén.",
+     "这是我……，这是我……，这是我…… Zhè shì wǒ……, zhè shì wǒ……, zhè shì wǒ……",
+     "……叫……，他／她是……，他／她今年……了。 ……jiào……, tā/tā shì……, tā/tā jīnnián……le."
+    ]
+   }
+  ],
+  "culture": {
+   "title_zh": "中国人对年龄的询问方法",
+   "body_zh": "在中国传统文化中，年龄并不被认为是一种个人隐私，在社交中是人们常常涉及的问题。但询问不同的人的年龄，表达方式也不尽相同。对于10岁以下的孩子，一般用“你今年几岁了？”来提问；对青年人或者和自己年纪相仿的人，一般可以问“你今年多大了？”；出于对长者的尊敬，询问年长的人的年龄则一定要用“您今年多大年纪了？”",
+   "body_en": "Ways of Asking a Chinese Person’s Age. In traditional Chinese culture, age isn’t considered privacy. It is a topic often brought up in social occasions. Nevertheless, different ways are employed to ask about the age of different people. For kids younger than 10, people ask “你今年几岁了？(How old are you?)”; for a young person or someone of one’s own age, one may ask “你今年多大了？(How old are you?)”; for an elder person, however, one should use “您今年多大年纪了？(What’s your age?)” to show respect."
+  }
+ },
+ "teacher": {
+  "ref": {
+   "book": "teacher",
+   "pages": [
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33
+   ]
+  },
+  "objectives_zh": [
+   "重点词语：学生能够熟练掌握“家、有、口、女儿、岁、今年”的词义和用法",
+   "语言点：学生能够了解并掌握：（1）疑问代词“几”（2）百以内的数字（3）“了”表示变化（4）“多＋大”表示疑问",
+   "语音：学生能够：（1）掌握儿化的发音（2）熟悉以i、u、ü开头的韵母的发音并能正确发音（3）熟悉声母送气音和不送气音的发音并能正确发音（4）熟悉隔音符号的用法",
+   "汉字：学生能够：（1）熟练认读本课生词（2）掌握“㇇、㇛”两种笔画的正确写法（3）独立书写独体字“水、女、了、大”（4）了解“先外后内、先中间后两边”的笔顺规则",
+   "功能：学生能够：（1）询问和回答关于年龄的问题（2）表达百以内的数字"
+  ],
+  "steps": [
+   {
+    "title_zh": "一 复习旧课",
+    "body_zh": "1. 教师出示第4课生词卡片，要求学生快速认读下列生词。\n她、谁、的、汉语、哪、国、呢、他、同学、朋友\n2. 教师根据第4课重点内容简单提问，活跃课堂气氛。\n（1）他／她是谁？他／她呢？\n（2）这是谁的书／本子／词典／……？\n（3）谁是你的汉语老师？\n（4）你的汉语老师是哪国人？\n（5）你的中国朋友叫什么名字？"
+   },
+   {
+    "title_zh": "二 学习新课 1 热身",
+    "body_zh": "教师可依次朗读热身部分的词语，要求学生集体或单个说出图片对应的编号，教师评判正误。最后全体学生再次齐读热身环节的所有词语，要求语音标准、声调准确。\n答案：①B　②B/C　③A/D　④E　⑤F　⑥D"
+   },
+   {
+    "title_zh": "2 生词",
+    "body_zh": "（1）生词快速认读及正音\n家、有、口、女儿、几、岁、了、今年、多、大\n• 教师使用生词卡片有拼音和汉字的一面，带领学生快速认读一遍本课生词；\n• 使用生词卡片只有汉字的一面，带领学生再次认读本课生词；\n• 请单个学生独自认读2–3个生词；\n• 最后全体学生再快速认读一遍本课所有生词。\n（2）重点生词扩展及常用搭配\n家—我家—你家—他家\n　—我们家—你们家—他们家\n　—老师家—朋友家—同学家\n　—谁的家—这是谁的家？\n有—有朋友—有中国朋友—我有中国朋友。\n　—有书—有汉语书—我有汉语书。\n　—你有中国朋友吗？\n　—你有汉语书吗？\n口—三口人—四口人—五口人\n　—我家有五口人。\n　—李月家有三口人。\n女儿—我女儿—你女儿—他女儿\n　—李老师的女儿—她是李老师的女儿。\n　—谁的女儿—她是谁的女儿？\n岁—三岁—十岁—二十岁—五十岁\n今年—今年三岁—他女儿今年三岁。\n　—今年四十岁—李老师今年四十岁。\n练习册相关练习：第25页／一／第一部分，第28页／二／第一部分"
+   },
+   {
+    "title_zh": "3 语言点（1）疑问代词“几”",
+    "body_zh": "① 语言点解析\n疑问代词“几”用来询问数量的多少，一般用于询问10以下的数字。“几”的后边一般要加上相应的量词和名词来提问。\n［句型框］……几＋量词＋名词？\n② 语言点导入\n教师可利用本课热身图片B、C、A进行导入。\n教师出示图片B：\n教师：他们家有几口人？\n学生：他们家有六口人。\n图片C：\n教师：他们家有几口人？\n学生：他们家有三口人。\n图片A：\n教师：她几岁？\n学生：她三岁。\n③ 语言点操练\n教师可组织学生根据实际情况进行问答练习。\n参考问题：你家有几口人？\n你们有几个汉语老师？\n你有几个中国朋友？"
+   },
+   {
+    "title_zh": "3 语言点（2）百以内的数字",
+    "body_zh": "① 语言点解析\n教师利用课本第32页的表格引导学生发现汉语百以内数字表达的规则。10以下的数字直接读出；10以上的数字先读出十位的数字，再加上个位的数字。如：93，读作“九十／三”。\n② 语言点导入\n教师先带领学生熟读数字1–10，然后利用课本第32页的表格，指示表格中的某一位置，请学生说出相应的数字。\n③ 语言点操练\n教师随机板书百以内的几个数字，请学生读出来。"
+   },
+   {
+    "title_zh": "3 语言点（3）“了”表变化",
+    "body_zh": "① 语言点解析\n“了”用于句末，表示变化或新情况的出现。\n［句型框］……了。\n② 语言点导入\n教师：李老师去年49岁，今年——\n学生：李老师今年50岁了。\n教师：李老师的女儿去年19岁，今年——\n学生：李老师的女儿今年20岁了。\n③ 语言点操练\n教师可出示一些课本出现过的人物图片，并标注人物的年龄，组织学生进行问答练习。\n目标句：他／她今年……岁了。"
+   },
+   {
+    "title_zh": "3 语言点（4）“多＋大”表示疑问",
+    "body_zh": "① 语言点解析\n“多＋大”在句中表示疑问，用于询问年龄。\n［句型框］……多＋大（了）？\n② 语言点导入\n教师可出示一些名人图片，并标注人物的年龄，组织学生进行问答练习。\n教师：……今年……岁。我们可以怎么问？\n学生：……今年多大了？\n③ 语言点操练\n教师可组织学生两人一组，根据提示词完成对话练习。\nA：你家有几口人？\nB：我家有……，……和我。\nA：你今年多大了？\nB：我今年……。\nA：……今年几岁／多大／多大年纪了？\nB：……今年……了。\n补充词语：爷爷 yéye、奶奶 nǎinai、爸爸 bàba、妈妈 māma、哥哥 gēge、姐姐 jiějie、弟弟 dìdi、妹妹 mèimei"
+   },
+   {
+    "title_zh": "4 课文",
+    "body_zh": "课文1\n（1）让学生听两遍录音并回答下列问题：\n他家有几口人？\n（2）根据学生的回答，教师领说目标句，并请学生单个复述：\n他家有三口人。\n（3）教师领读课文两遍，然后让学生分角色朗读课文。\n课文2\n（1）教师对本段课文图片中的人物进行提问，让学生听两遍录音并回答下列问题：\n她是谁？\n她今年几岁了？\n（2）教师指示图片中的人物，领说目标句，并请学生单个复述：\n她是“我”女儿，她今年四岁了。\n（3）教师领读课文两遍，然后让学生分角色朗读课文。\n课文3\n（1）教师对本段课文图片中的人物进行提问，让学生听两遍录音并回答下列问题：\n李老师今年多大了？\n李老师有女儿吗？\n李老师的女儿今年多大了？\n（2）教师指示图片中的人物，领说目标句，并请学生单个复述：\n这是李老师，这是李老师的女儿。\n李老师今年50岁了，李老师的女儿今年20岁。\n（3）教师领读课文两遍，然后让学生分角色朗读课文。\n（4）模仿练习\n老师组织学生两人一组，根据班里学生的实际情况进行对话练习。\nA：……今年多大了？\nB：他／她今年……。\nA：……呢？\nB：他／她今年……。"
+   },
+   {
+    "title_zh": "5 语音",
+    "body_zh": "（1）儿化的发音\n汉语中的“儿”可以和它前面的音节结合成为一个音节，变成“儿化音”。汉字书写时表示为“汉字＋儿”，拼写时在该汉字的拼音后加“r”。例如“花”，变成儿化音节时写成“花儿”，拼音写作“huār”。\n练习册相关练习：第31页／三／第二部分\n（2）发音辨析：以i、u、ü开头的韵母\n教师可利用课本第34–35页的练习让学生体会有无这三个介音发音时的区别。听完录音后，教师随机读一些韵母，要求学生判断是否有介音，有的话指出是哪一个介音。\n练习册相关练习：第31页／三／第一部分\n（3）声母送气音和不送气音发音的区别\n汉语声母的发音有送气和不送气的区别，b-p，d-t，g-k，j-q，z-c，zh-ch，以上各组声母中前一个是不送气音，后一个是送气音。送气音在发音时有较强的气流呼出，不送气音在发音时则没有强烈的气流呼出，这是送气音和不送气音的根本区别。\n教师可以在发送气音时在面前放一张薄纸，通过发音时气流吹动薄纸来使学生明白并掌握发音要领。\n（4）拼音规则（4）：隔音符号\na、o、e开头的音节连接在其他音节后面的时候，为了避免音节的界限发生混淆，用隔音符号（’）隔开，例如pí’ǎo（皮袄）。\n教师可让学生课下利用词典或上网搜索，每人再找1–2个汉语中使用隔音符号的情况。"
+   },
+   {
+    "title_zh": "6 汉字",
+    "body_zh": "① 知识点解析\n笔画\n㇇（横撇）、㇛（撇点）\n独体字\n水：字形像山涧，表示水流的形状。\n女：字形像一个跪在地上的女人，意思是“女人”。\n了：最初的字形表示已经出生的婴儿，现在成为虚词。\n大：本义是张开双手双腿顶天立地的人，现在意思与“小”相对。\n② 汉字练习\n• 教师板书本课笔画“㇇、㇛”，给学生展示这两个笔画的运笔方向，并书写各自的代表汉字，帮助学生识记笔画。\n• 教师板书或者用手指在空中书写本课独体字“水、女、了、大”，带领学生一起识记独体字的笔画笔顺。\n• 教师通过板书例字，给学生展示汉字的基本笔顺（3）：先外后内、先中间后两边。\n• 补充练习\na. 给下列汉字注音\n女、儿、几、了、多、大、今、年、水\nb. 辨认下列汉字\n多／名　他／你　同／国\n练习册相关练习：第32页／四"
+   },
+   {
+    "title_zh": "7 补充课堂活动——说说他们的家",
+    "body_zh": "教师组织学生3–4人一组，每人准备一张名人及其家人的合影，并分别介绍这位名人的家庭成员及年龄情况。\n这是……的家。他／她家有……口人。\n这是……，这是……，这是……。\n……今年……岁了。他／她……今年……。他／她……今年……。\n……"
+   },
+   {
+    "title_zh": "附注：建议教学用具",
+    "body_zh": "1. 生词卡片：第4、5课生词卡片\n2. 独体字卡片：第5课独体字卡片\n3. 图片：名人照片（标注年龄）"
+   }
+  ],
+  "notes_zh": [
+   "注意：教师要提醒学生注意用“几”提问询问数量的一般形式是“……几＋量词＋名词？”但询问年龄时量词后边不加名词，要问“他几岁？”（语言点1）",
+   "注意：教师应提示学生注意，中国人在询问年龄时要根据对方的年龄来选择提问的方式。对于10岁以下的孩子，一般用“……今年几岁了？”来提问；对于年轻人或者和自己年纪相仿的人，一般用“……今年多大了？”；而对于年纪较大的长辈，则应该用“……今年多大年纪了？”来提问，以示尊敬。（可参照本课后的“文化”部分进行介绍）（语言点4）",
+   "注意：教师要提示学生注意“儿”的实际发音会因它前一个音节发音的不同而不同。（语音1）"
+  ],
+  "warmup_answers_zh": [
+   "答案：①B　②B/C　③A/D　④E　⑤F　⑥D"
+  ],
+  "text_questions": [
+   {
+    "text": 1,
+    "q_zh": "他家有几口人？",
+    "a_zh": "他家有三口人。"
+   },
+   {
+    "text": 2,
+    "q_zh": "她是谁？"
+   },
+   {
+    "text": 2,
+    "q_zh": "她今年几岁了？"
+   },
+   {
+    "text": 3,
+    "q_zh": "李老师今年多大了？"
+   },
+   {
+    "text": 3,
+    "q_zh": "李老师有女儿吗？"
+   },
+   {
+    "text": 3,
+    "q_zh": "李老师的女儿今年多大了？"
+   }
+  ],
+  "summary_zh": "• 语言点：疑问代词“几”\n　数字1–99\n　“……了。”表变化\n　“多＋大”询问年龄\n• 语音：儿化音的发音\n　i、u、ü开头的韵母的发音辨析\n　声母送气音和不送气音发音的区别\n　隔音符号\n• 汉字：独体字“水、女、了、大”"
+ },
+ "workbook": {
+  "ref": {
+   "book": "workbook",
+   "pages": [
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40
+   ]
+  },
+  "sections": [
+   {
+    "n": "一、听力 第一部分",
+    "type_zh": "听力 第一部分",
+    "instruction_zh": "第1–4题：听词或短语，判断对错",
+    "instruction_en": "Questions 1-4: Listen to the words or phrases and decide whether the pictures are right or wrong based on what you hear.",
+    "items": [
+     {
+      "n": "例1",
+      "zh": "很高兴 hěn gāoxìng very happy",
+      "transcript_zh": "很高兴",
+      "picture_desc_en": "a smiling young woman with long hair",
+      "answer": "√",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        33
+       ]
+      }
+     },
+     {
+      "n": "例2",
+      "zh": "看电影 kàn diànyǐng to see a movie",
+      "transcript_zh": "看电影",
+      "picture_desc_en": "an older man in a suit sitting and reading papers",
+      "answer": "×",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        33
+       ]
+      }
+     },
+     {
+      "n": 1,
+      "zh": "",
+      "transcript_zh": "女儿",
+      "picture_desc_en": "a little boy in a striped shirt sitting at a small desk, writing",
+      "answer": "×",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        24
+       ]
+      }
+     },
+     {
+      "n": 2,
+      "zh": "",
+      "transcript_zh": "75岁",
+      "picture_desc_en": "an elderly man with white hair sitting on a sofa",
+      "answer": "√",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        24
+       ]
+      }
+     },
+     {
+      "n": 3,
+      "zh": "",
+      "transcript_zh": "五口人",
+      "picture_desc_en": "a family of five (young woman, elderly man, boy, elderly woman, young man) posing together",
+      "answer": "√",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        24
+       ]
+      }
+     },
+     {
+      "n": 4,
+      "zh": "",
+      "transcript_zh": "40岁",
+      "picture_desc_en": "a young man with a backpack holding books",
+      "answer": "×",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        24
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "一、听力 第二部分",
+    "type_zh": "听力 第二部分",
+    "instruction_zh": "第5–8题：听对话，选择与对话内容一致的图片",
+    "instruction_en": "Questions 5-8: Listen to the dialogues and choose the right picture for each dialogue you hear.",
+    "items": [
+     {
+      "n": "例",
+      "zh": "女：你好！ Nǐ hǎo! 男：你好！很高兴认识你。 Nǐ hǎo! Hěn gāoxìng rènshi nǐ.",
+      "transcript_zh": "女：你好！ 男：你好！很高兴认识你。",
+      "options": {
+       "A": "[picture] a family of six (grandparents, parents, two small children) posing together",
+       "B": "[picture] an elderly woman with white hair sitting on a sofa, smiling",
+       "C": "[picture] a man and a woman in business suits shaking hands in front of an elevator",
+       "D": "[picture] a young man and a smiling girl sitting at a desk in a classroom",
+       "E": "[picture] a little girl in a sun hat waving her hand"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        34
+       ]
+      }
+     },
+     {
+      "n": 5,
+      "zh": "",
+      "options": {
+       "A": "[picture] a family of six (grandparents, parents, two small children) posing together",
+       "B": "[picture] an elderly woman with white hair sitting on a sofa, smiling",
+       "C": "[picture] a man and a woman in business suits shaking hands in front of an elevator",
+       "D": "[picture] a young man and a smiling girl sitting at a desk in a classroom",
+       "E": "[picture] a little girl in a sun hat waving her hand"
+      },
+      "transcript_zh": "男：你女儿今年几岁了？ 女：她今年5岁了。",
+      "answer": "E",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        25
+       ]
+      }
+     },
+     {
+      "n": 6,
+      "zh": "",
+      "options": {
+       "A": "[picture] a family of six (grandparents, parents, two small children) posing together",
+       "B": "[picture] an elderly woman with white hair sitting on a sofa, smiling",
+       "C": "[picture] a man and a woman in business suits shaking hands in front of an elevator",
+       "D": "[picture] a young man and a smiling girl sitting at a desk in a classroom",
+       "E": "[picture] a little girl in a sun hat waving her hand"
+      },
+      "transcript_zh": "男：你们的汉语老师今年多大了？ 女：他今年33岁了。",
+      "answer": "D",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        25
+       ]
+      }
+     },
+     {
+      "n": 7,
+      "zh": "",
+      "options": {
+       "A": "[picture] a family of six (grandparents, parents, two small children) posing together",
+       "B": "[picture] an elderly woman with white hair sitting on a sofa, smiling",
+       "C": "[picture] a man and a woman in business suits shaking hands in front of an elevator",
+       "D": "[picture] a young man and a smiling girl sitting at a desk in a classroom",
+       "E": "[picture] a little girl in a sun hat waving her hand"
+      },
+      "transcript_zh": "男：你家有几口人？ 女：我家有6口人。",
+      "answer": "A",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        25
+       ]
+      }
+     },
+     {
+      "n": 8,
+      "zh": "",
+      "options": {
+       "A": "[picture] a family of six (grandparents, parents, two small children) posing together",
+       "B": "[picture] an elderly woman with white hair sitting on a sofa, smiling",
+       "C": "[picture] a man and a woman in business suits shaking hands in front of an elevator",
+       "D": "[picture] a young man and a smiling girl sitting at a desk in a classroom",
+       "E": "[picture] a little girl in a sun hat waving her hand"
+      },
+      "transcript_zh": "女：您今年多大了？ 男：我今年80岁了。",
+      "answer": "B",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        25
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "一、听力 第三部分",
+    "type_zh": "听力 第三部分",
+    "instruction_zh": "第9–12题：听句子，回答问题",
+    "instruction_en": "Questions 9-12: Listen to the sentences and answer the questions.",
+    "items": [
+     {
+      "n": "例",
+      "zh": "问：她下午去哪里？ Tā xiàwǔ qù nǎli?",
+      "transcript_zh": "下午我去商店，我想买一些水果。 问：她下午去哪里？",
+      "options": {
+       "A": "商店 shāngdiàn store",
+       "B": "医院 yīyuàn hospital",
+       "C": "学校 xuéxiào school"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        35
+       ]
+      }
+     },
+     {
+      "n": 9,
+      "zh": "问：谁今年4岁了？",
+      "transcript_zh": "李老师的女儿今年4岁了。 问：谁今年4岁了？",
+      "options": {
+       "A": "张老师 Zhāng lǎoshī",
+       "B": "李老师 Lǐ lǎoshī",
+       "C": "李老师的女儿 Lǐ lǎoshī de nǚ’ér"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        25
+       ]
+      }
+     },
+     {
+      "n": 10,
+      "zh": "问：“我”的汉语老师今年多大？",
+      "transcript_zh": "他是我的汉语老师，他今年45岁。 问：“我”的汉语老师今年多大？",
+      "options": {
+       "A": "40岁 sìshí suì",
+       "B": "45岁 sìshíwǔ suì",
+       "C": "50岁 wǔshí suì"
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        25
+       ]
+      }
+     },
+     {
+      "n": 11,
+      "zh": "问：谁家有3口人？",
+      "transcript_zh": "他是我的中国朋友，他家有3口人。 问：谁家有3口人？",
+      "options": {
+       "A": "我家 wǒ jiā",
+       "B": "我的中国朋友家 wǒ de Zhōngguó péngyou jiā",
+       "C": "我的美国朋友家 wǒ de Měiguó péngyou jiā"
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        25
+       ]
+      }
+     },
+     {
+      "n": 12,
+      "zh": "问：大卫今年多大？",
+      "transcript_zh": "他叫大卫，他是美国学生，他今年22岁。 问：大卫今年多大？",
+      "options": {
+       "A": "20岁 èrshí suì",
+       "B": "21岁 èrshíyī suì",
+       "C": "22岁 èrshí’èr suì"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        25
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第一部分",
+    "type_zh": "阅读 第一部分",
+    "instruction_zh": "第13–17题：看图片，判断图片内容是否与提示词一致",
+    "instruction_en": "Questions 13-17: Look at the pictures and decide whether the given words are right or wrong.",
+    "items": [
+     {
+      "n": "例1",
+      "zh": "电视 diànshì television",
+      "picture_desc_en": "an open laptop computer",
+      "answer": "×",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        36
+       ]
+      }
+     },
+     {
+      "n": "例2",
+      "zh": "飞机 fēijī airplane",
+      "picture_desc_en": "an airplane in flight",
+      "answer": "√",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        36
+       ]
+      }
+     },
+     {
+      "n": 13,
+      "zh": "七十岁",
+      "pinyin": "qīshí suì",
+      "picture_desc_en": "a young man in a suit talking on a mobile phone outdoors",
+      "answer": "×",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        26
+       ]
+      }
+     },
+     {
+      "n": 14,
+      "zh": "女儿",
+      "pinyin": "nǚ’ér",
+      "picture_desc_en": "a little girl writing with a pencil",
+      "answer": "√",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        26
+       ]
+      }
+     },
+     {
+      "n": 15,
+      "zh": "三口人",
+      "pinyin": "sān kǒu rén",
+      "picture_desc_en": "two women (one younger, one older) hugging outdoors under trees",
+      "answer": "×",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        26
+       ]
+      }
+     },
+     {
+      "n": 16,
+      "zh": "她们",
+      "pinyin": "tāmen",
+      "picture_desc_en": "three young women holding shopping bags",
+      "answer": "√",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        26
+       ]
+      }
+     },
+     {
+      "n": 17,
+      "zh": "五口人",
+      "pinyin": "wǔ kǒu rén",
+      "picture_desc_en": "a family of six people of three generations posing together",
+      "answer": "×",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        26
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第二部分",
+    "type_zh": "阅读 第二部分",
+    "instruction_zh": "第18–22题：看问题，选择正确的回答",
+    "instruction_en": "Questions 18-22: Read the questions and choose the right answer to each of them.",
+    "items": [
+     {
+      "n": "例",
+      "zh": "你喝水吗？ Nǐ hē shuǐ ma? (Would you like some water?)",
+      "options": {
+       "A": "她今年七岁了。 Tā jīnnián qī suì le.",
+       "B": "不是，他是学生，他今年21岁。 Bú shì, tā shì xuésheng, tā jīnnián èrshíyī suì.",
+       "C": "他是中国人。 Tā shì Zhōngguó rén.",
+       "D": "我今年38岁了。 Wǒ jīnnián sānshíbā suì le.",
+       "E": "我家有四口人。 Wǒ jiā yǒu sì kǒu rén.",
+       "F": "好的，谢谢！ Hǎo de, xièxie!"
+      },
+      "answer": "F",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        37
+       ]
+      }
+     },
+     {
+      "n": 18,
+      "zh": "你家有几口人？",
+      "pinyin": "Nǐ jiā yǒu jǐ kǒu rén?",
+      "options": {
+       "A": "她今年七岁了。 Tā jīnnián qī suì le.",
+       "B": "不是，他是学生，他今年21岁。 Bú shì, tā shì xuésheng, tā jīnnián èrshíyī suì.",
+       "C": "他是中国人。 Tā shì Zhōngguó rén.",
+       "D": "我今年38岁了。 Wǒ jīnnián sānshíbā suì le.",
+       "E": "我家有四口人。 Wǒ jiā yǒu sì kǒu rén.",
+       "F": "好的，谢谢！ Hǎo de, xièxie!"
+      },
+      "answer": "E",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        27
+       ]
+      }
+     },
+     {
+      "n": 19,
+      "zh": "李老师的女儿几岁了？",
+      "pinyin": "Lǐ lǎoshī de nǚ’ér jǐ suì le?",
+      "options": {
+       "A": "她今年七岁了。 Tā jīnnián qī suì le.",
+       "B": "不是，他是学生，他今年21岁。 Bú shì, tā shì xuésheng, tā jīnnián èrshíyī suì.",
+       "C": "他是中国人。 Tā shì Zhōngguó rén.",
+       "D": "我今年38岁了。 Wǒ jīnnián sānshíbā suì le.",
+       "E": "我家有四口人。 Wǒ jiā yǒu sì kǒu rén.",
+       "F": "好的，谢谢！ Hǎo de, xièxie!"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        27
+       ]
+      }
+     },
+     {
+      "n": 20,
+      "zh": "他是老师吗？",
+      "pinyin": "Tā shì lǎoshī ma?",
+      "options": {
+       "A": "她今年七岁了。 Tā jīnnián qī suì le.",
+       "B": "不是，他是学生，他今年21岁。 Bú shì, tā shì xuésheng, tā jīnnián èrshíyī suì.",
+       "C": "他是中国人。 Tā shì Zhōngguó rén.",
+       "D": "我今年38岁了。 Wǒ jīnnián sānshíbā suì le.",
+       "E": "我家有四口人。 Wǒ jiā yǒu sì kǒu rén.",
+       "F": "好的，谢谢！ Hǎo de, xièxie!"
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        27
+       ]
+      }
+     },
+     {
+      "n": 21,
+      "zh": "你今年多大了？",
+      "pinyin": "Nǐ jīnnián duō dà le?",
+      "options": {
+       "A": "她今年七岁了。 Tā jīnnián qī suì le.",
+       "B": "不是，他是学生，他今年21岁。 Bú shì, tā shì xuésheng, tā jīnnián èrshíyī suì.",
+       "C": "他是中国人。 Tā shì Zhōngguó rén.",
+       "D": "我今年38岁了。 Wǒ jīnnián sānshíbā suì le.",
+       "E": "我家有四口人。 Wǒ jiā yǒu sì kǒu rén.",
+       "F": "好的，谢谢！ Hǎo de, xièxie!"
+      },
+      "answer": "D",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        27
+       ]
+      }
+     },
+     {
+      "n": 22,
+      "zh": "你的汉语老师是哪国人？",
+      "pinyin": "Nǐ de Hànyǔ lǎoshī shì nǎ guó rén?",
+      "options": {
+       "A": "她今年七岁了。 Tā jīnnián qī suì le.",
+       "B": "不是，他是学生，他今年21岁。 Bú shì, tā shì xuésheng, tā jīnnián èrshíyī suì.",
+       "C": "他是中国人。 Tā shì Zhōngguó rén.",
+       "D": "我今年38岁了。 Wǒ jīnnián sānshíbā suì le.",
+       "E": "我家有四口人。 Wǒ jiā yǒu sì kǒu rén.",
+       "F": "好的，谢谢！ Hǎo de, xièxie!"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        27
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第三部分",
+    "type_zh": "阅读 第三部分",
+    "instruction_zh": "第23–30题：看句子，选择正确的词语填空",
+    "instruction_en": "Questions 23-30: Read the sentences and choose the right words to fill in the brackets.",
+    "word_bank": [
+     [
+      "A 大 dà",
+      "B 几 jǐ",
+      "C 岁 suì",
+      "D 名字 míngzi",
+      "E 口 kǒu"
+     ],
+     [
+      "F 呢 ne",
+      "G 了 le",
+      "H 吗 ma",
+      "I 哪 nǎ"
+     ]
+    ],
+    "items": [
+     {
+      "n": "例",
+      "zh": "你叫什么（________）？ Nǐ jiào shénme (What is your name?)",
+      "answer": "D",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        38
+       ]
+      }
+     },
+     {
+      "n": 23,
+      "zh": "我的中国朋友家有三（________）人。",
+      "pinyin": "Wǒ de Zhōngguó péngyou jiā yǒu sān ______ rén.",
+      "answer": "E",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        28
+       ]
+      }
+     },
+     {
+      "n": 24,
+      "zh": "你们老师今年多（________）？",
+      "pinyin": "Nǐmen lǎoshī jīnnián duō ______",
+      "answer": "A",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        28
+       ]
+      }
+     },
+     {
+      "n": 25,
+      "zh": "我是美国人，我是学生，我19（________）。",
+      "pinyin": "Wǒ shì Měiguó rén, wǒ shì xuésheng, wǒ shíjiǔ ______",
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        28
+       ]
+      }
+     },
+     {
+      "n": 26,
+      "zh": "你家有（________）口人？",
+      "pinyin": "Nǐ jiā yǒu ______ kǒu rén?",
+      "answer": "B",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        28
+       ]
+      }
+     },
+     {
+      "n": 27,
+      "zh": "他是（________）国人？",
+      "pinyin": "Tā shì ______ guó rén?",
+      "answer": "I",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        28
+       ]
+      }
+     },
+     {
+      "n": 28,
+      "zh": "我今年29岁。你（________）？",
+      "pinyin": "Wǒ jīnnián èrshíjiǔ suì. Nǐ ______",
+      "answer": "F",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        28
+       ]
+      }
+     },
+     {
+      "n": 29,
+      "zh": "这是你女儿（________）？",
+      "pinyin": "Zhè shì nǐ nǚ’ér ______",
+      "answer": "H",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        28
+       ]
+      }
+     },
+     {
+      "n": 30,
+      "zh": "他是我的好朋友，他今年30岁（________）。",
+      "pinyin": "Tā shì wǒ de hǎo péngyou, tā jīnnián sānshí suì ______",
+      "answer": "G",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        28
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "三、语音 第一部分",
+    "type_zh": "语音 第一部分 听力",
+    "instruction_zh": "第1–8题：听录音，选择听到的音节",
+    "instruction_en": "Questions 1-8: Listen to the recording and mark the syllables you hear.",
+    "items": [
+     {
+      "n": 1,
+      "zh": "láng　liáng",
+      "options": {
+       "1": "láng",
+       "2": "liáng"
+      },
+      "transcript_zh": "liáng（粮）",
+      "answer": "liáng",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        29
+       ]
+      }
+     },
+     {
+      "n": 2,
+      "zh": "hóng　xióng",
+      "options": {
+       "1": "hóng",
+       "2": "xióng"
+      },
+      "transcript_zh": "hóng（红）",
+      "answer": "hóng",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        29
+       ]
+      }
+     },
+     {
+      "n": 3,
+      "zh": "dǒng　tǒng",
+      "options": {
+       "1": "dǒng",
+       "2": "tǒng"
+      },
+      "transcript_zh": "dǒng（懂）",
+      "answer": "dǒng",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        29
+       ]
+      }
+     },
+     {
+      "n": 4,
+      "zh": "nán　nián",
+      "options": {
+       "1": "nán",
+       "2": "nián"
+      },
+      "transcript_zh": "nán（男）",
+      "answer": "nán",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        29
+       ]
+      }
+     },
+     {
+      "n": 5,
+      "zh": "sēn　sūn",
+      "options": {
+       "1": "sēn",
+       "2": "sūn"
+      },
+      "transcript_zh": "sūn（孙）",
+      "answer": "sūn",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        29
+       ]
+      }
+     },
+     {
+      "n": 6,
+      "zh": "háng　huáng",
+      "options": {
+       "1": "háng",
+       "2": "huáng"
+      },
+      "transcript_zh": "huáng（黄）",
+      "answer": "huáng",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        29
+       ]
+      }
+     },
+     {
+      "n": 7,
+      "zh": "shǎng　shuǎng",
+      "options": {
+       "1": "shǎng",
+       "2": "shuǎng"
+      },
+      "transcript_zh": "shǎng（赏）",
+      "answer": "shǎng",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        29
+       ]
+      }
+     },
+     {
+      "n": 8,
+      "zh": "cōng　zōng",
+      "options": {
+       "1": "cōng",
+       "2": "zōng"
+      },
+      "transcript_zh": "cōng（葱）",
+      "answer": "cōng",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        29
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "三、语音 第二部分",
+    "type_zh": "语音 第二部分 听力",
+    "instruction_zh": "第9–16题：听录音，选择每组中没有儿化韵的词语",
+    "instruction_en": "Questions 9-16: Listen to the recording and mark the word without a retroflex final in each group.",
+    "items": [
+     {
+      "n": 9,
+      "zh": "A　B　C",
+      "options": {
+       "A": "nánháir（男孩儿）",
+       "B": "dōngbian（东边）",
+       "C": "xiǎorénrshū（小人儿书）"
+      },
+      "transcript_zh": "A nánháir（男孩儿）　B dōngbian（东边）　C xiǎorénrshū（小人儿书）",
+      "answer": "B",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        29
+       ]
+      }
+     },
+     {
+      "n": 10,
+      "zh": "A　B　C",
+      "options": {
+       "A": "xiǎo wǎnr（小碗儿）",
+       "B": "pángbiānr（旁边儿）",
+       "C": "jiàn miàn（见面）"
+      },
+      "transcript_zh": "A xiǎo wǎnr（小碗儿）　B pángbiānr（旁边儿）　C jiàn miàn（见面）",
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        29
+       ]
+      }
+     },
+     {
+      "n": 11,
+      "zh": "A　B　C",
+      "options": {
+       "A": "zháojí（着急）",
+       "B": "xiǎo jīr（小鸡儿）",
+       "C": "xiǎo māor（小猫儿）"
+      },
+      "transcript_zh": "A zháojí（着急）　B xiǎo jīr（小鸡儿）　C xiǎo māor（小猫儿）",
+      "answer": "A",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        29
+       ]
+      }
+     },
+     {
+      "n": 12,
+      "zh": "A　B　C",
+      "options": {
+       "A": "wányìr（玩意儿）",
+       "B": "zhǎo chár（找茬儿）",
+       "C": "zhǎo qián（找钱）"
+      },
+      "transcript_zh": "A wányìr（玩意儿）　B zhǎo chár（找茬儿）　C zhǎo qián（找钱）",
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        29
+       ]
+      }
+     },
+     {
+      "n": 13,
+      "zh": "A　B　C",
+      "options": {
+       "A": "yì quānr（一圈儿）",
+       "B": "fàjì（发髻）",
+       "C": "shǒujuànr（手绢儿）"
+      },
+      "transcript_zh": "A yì quānr（一圈儿）　B fàjì（发髻）　C shǒujuànr（手绢儿）",
+      "answer": "B",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        29
+       ]
+      }
+     },
+     {
+      "n": 14,
+      "zh": "A　B　C",
+      "options": {
+       "A": "yìdiǎnr（一点儿）",
+       "B": "wǔ diǎn（五点）",
+       "C": "yíhuìr（一会儿）"
+      },
+      "transcript_zh": "A yìdiǎnr（一点儿）　B wǔ diǎn（五点）　C yíhuìr（一会儿）",
+      "answer": "B",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        29
+       ]
+      }
+     },
+     {
+      "n": 15,
+      "zh": "A　B　C",
+      "options": {
+       "A": "lìxià（立夏）",
+       "B": "yíxiàr（一下儿）",
+       "C": "dǎ dǔnr（打盹儿）"
+      },
+      "transcript_zh": "A lìxià（立夏）　B yíxiàr（一下儿）　C dǎ dǔnr（打盹儿）",
+      "answer": "A",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        29
+       ]
+      }
+     },
+     {
+      "n": 16,
+      "zh": "A　B　C",
+      "options": {
+       "A": "jiǎozi xiànr（饺子馅儿）",
+       "B": "jiǎozi pír（饺子皮儿）",
+       "C": "máopí（毛皮）"
+      },
+      "transcript_zh": "A jiǎozi xiànr（饺子馅儿）　B jiǎozi pír（饺子皮儿）　C máopí（毛皮）",
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        29
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "四、汉字 第一部分",
+    "type_zh": "汉字 描写笔画",
+    "instruction_zh": "第1–2题：描写每组汉字中相应的笔画",
+    "instruction_en": "Questions 1-2: Trace the corresponding stroke in each pair of characters.",
+    "items": [
+     {
+      "n": 1,
+      "zh": "㇇ héngpiě：水 水 水 水　又 又 又 又"
+     },
+     {
+      "n": 2,
+      "zh": "㇛ piědiǎn：女 女 女 女　好 好 好 好"
+     }
+    ]
+   },
+   {
+    "n": "四、汉字 第二部分",
+    "type_zh": "汉字 写独体字",
+    "instruction_zh": "第3题：看笔顺，写独体字",
+    "instruction_en": "Question 3: Look at the stroke order and practice writing the single-component characters.",
+    "items": [
+     {
+      "n": "3-水",
+      "zh": "水 shuǐ（笔顺图4步）"
+     },
+     {
+      "n": "3-女",
+      "zh": "女 nǚ（笔顺图3步：㇛ → … → 女）"
+     },
+     {
+      "n": "3-了",
+      "zh": "了 le（笔顺：㇇ → 了）"
+     },
+     {
+      "n": "3-大",
+      "zh": "大 dà（笔顺：一 → 𠂇 → 大）"
+     }
+    ]
+   }
+  ],
+  "answers_ref": {
+   "book": "workbook_answers",
+   "pages": [
+    24,
+    25,
+    26,
+    27,
+    28,
+    29
+   ]
+  }
+ },
+ "unclear": [
+  "Сурах бичиг PDF х.53 练习2 асуулт 5: ханз «你的中国朋友今年多大？» (了 байхгүй), пиньинь «Nǐ de Zhōngguó péngyou jīnnián duō dà le?» (le байгаа) — зөрүүтэй, номд байгаагаар хоёуланг нь үлдээсэн.",
+  "Сурах бичиг PDF х.58 运用1 жишээ: пиньинь «Wǒ/Wǒ bǎba/Wǒ māma» (bǎba — 3-р хөг; дээрх мөр болон 补充生词-д bàba) — номын алдаа байж магадгүй, номд байгаагаар.",
+  "Сурах бичиг PDF х.55 (05-9) «zhuō — chē» хосын эгшиг өөр (бусад хос нэг эгшигтэй) — номд байгаагаар.",
+  "注释2 百以内的数字 — сурах бичигт тайлбар бичвэр байхгүй, зөвхөн хүснэгт (explanation_zh хоосон, мөрүүд structure_rows-д, хүснэгтэд бөглөгдсөн 19/23/56/88/99 жишээ болгон). Тайлбар багшийн номын steps «语言点（2）»-д.",
+  "Аудио файлын нэр мэдэгдэхгүй тул audio талбар орхисон. Номын CD тэмдэг: сурах бичиг 课文1–3 = 05-1／05-2／05-3; 拼音 — 儿化 05-4; i/u/ü 05-5／05-6／05-7; 送气 05-8／05-9; 隔音符号 05-10; дасгалын ном 听力 05-1; 语音 05-2.",
+  "Ханзны зурлагын дараалал (сурах бичиг PDF х.56–57 水/女/了/大 + 四/国/小/水 ба дасгалын ном PDF х.40 水/女/了/大) болон ханзны эртний хэлбэрүүд зөвхөн зурагт — Unicode-оор бүрэн дүрслэх боломжгүй хэсэгт «[图]»/алхмын тоо бичсэн. 了: ㇇→了, 大: 一→𠂇→大 л текстээр.",
+  "Сурах бичиг PDF х.57 了-ийн тайлбарт эртний хэлбэрийн жижиг зураг (урвуу ураг) текстэн дотор — «[古字形图]» гэж тэмдэглэсэн.",
+  "Дасгалын номын хариулт ХОЁР эх сурвалжид: тусдаа хариултын ном (workbook_answers PDF х.24–29) ба багшийн номын хавсралтын 参考答案 (teacher PDF х.113) — бүгд тохирч байна (1–4: ×√√×, 5–8: EDAB, 9–12: CBBC, 13–17: ×√×√×, 18–22: EABDC, 23–26: EACB, 27–30: IFHG, 语音 1–8, 9–16: BCAC BBAC). answer_ref = workbook_answers.",
+  "Дасгалын номын 听力 болон 语音 бичвэр (transcript_zh, 语音 9–16 сонголтуудын пиньинь/ханз) — багшийн номын хавсралт PDF х.112–113-аас; дасгалын номд зөвхөн A/B/C үсэг хэвлэгдсэн.",
+  "Дасгалын ном 语音 第一部分 (1–8) сонголтод үсэг байхгүй — options-д «1»/«2» түлхүүрээр, answer-д сонгосон үеийг бичсэн.",
+  "Дасгалын номын 三、语音 болон 四、汉字 хэсгийн дугаарлалт 1-ээс дахин эхэлдэг (номд байгаагаар).",
+  "Багшийн ном PDF х.27 教学目标-д «熟练认读本课生词» нь 汉字 мөрөнд орсон — номд байгаагаар.",
+  "Багшийн ном 热身 хариулт «①B ②B/C ③A/D ④E ⑤F ⑥D» — ⑥20岁 болон ③女儿 хоёулаа D-г агуулна (номд байгаагаар).",
+  "Багшийн номын 课文2/3 асуултуудад тусдаа хариулт байхгүй, нэгдсэн 目标句 л бий (teacher.steps «4 课文») — text_questions-д a_zh зөвхөн 课文1-д.",
+  "Багшийн ном 汉字 补充练习 (a. 给下列汉字注音 ба b. 辨认 多/名、他/你、同/国) — хариулт хэвлэгдээгүй; teacher.steps «6 汉字»-д.",
+  "Сурах бичгийн 练习2 回答问题 ба 练习3 描述图片 — хариулт хэвлэгдээгүй.",
+  "Зургийн тайлбарууд (picture_desc_en, pictures_desc_en) зургаас товч, объектив дүрсэлсэн."
+ ],
+ "verified_pages": [
+  24,
+  25,
+  26,
+  27,
+  28,
+  29,
+  30,
+  31,
+  32,
+  33,
+  34,
+  35,
+  36,
+  37,
+  38,
+  39,
+  40,
+  50,
+  51,
+  52,
+  53,
+  54,
+  55,
+  56,
+  57,
+  58,
+  59,
+  112,
+  113
+ ],
+ "schema_version": 1
+}

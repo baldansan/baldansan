@@ -51,6 +51,8 @@ export type SourceText = {
   /** Яриа (dialogue) уу, өгүүлэмж (narrative) үү. */
   kind: "dialogue" | "narrative";
   lines: SourceLine[];
+  /** English Version — номын англи орчуулга (HSK1–2-т байдаг), бүтнээр. */
+  english_version?: string;
   /** Аудио файлын нэр (мэдэгдэж байвал) — hsk3-textbook-0201.mp3 */
   audio?: string;
   new_words: SourceWord[];
@@ -84,6 +86,8 @@ export type SourceExerciseItem = {
   n?: number | string;
   /** Асуулт/өгүүлбэр номд байгаагаар, хоосон зайг ________ гэж. */
   zh: string;
+  /** Пиньинь (HSK1–2 дасгалын номд ханзын дээр хэвлэгддэг). */
+  pinyin?: string;
   /** Сануулга үг: (回家) */
   hint_zh?: string;
   /** Сонголтууд (A–F гэх мэт түлхүүртэй) */
@@ -159,7 +163,18 @@ export type HskSourceLesson = {
   textbook: {
     ref: SourceRef;
     warmup?: { instruction_zh: string; instruction_en?: string; items?: string[]; pictures_desc_en?: string[] }[];
+    /** 语音 (HSK1–2): пиньинь, хөг, дуудлагын дасгал — номд байгаагаар. */
+    pronunciation?: {
+      title_zh: string;
+      /** Хүснэгт/мөрүүд номд байгаагаар: "b p m f", "bā bá bǎ bà" … */
+      rows: string[];
+      notes_zh?: string[];
+      notes_en?: string[];
+      audio?: string;
+    }[];
     texts: SourceText[];
+    /** 课堂用语 (HSK1): ангийн хэллэг. */
+    classroom_expressions?: { zh: string; pinyin: string; en: string }[];
     /** 拼音课文 — пиньинь бичвэр бүтнээр (мөр мөрөөр) — texts.lines.pinyin-д тараасан бол дахин хэрэггүй. */
     grammar: SourceGrammarPoint[];
     exercises: SourceExercise[];

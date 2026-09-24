@@ -1,0 +1,1714 @@
+{
+ "level": "hsk1",
+ "lesson": 8,
+ "book": "HSK1",
+ "title_zh": "我想喝茶",
+ "title_pinyin": "Wǒ xiǎng hē chá",
+ "title_en": "I’d like some tea",
+ "textbook": {
+  "ref": {
+   "book": "textbook",
+   "pages": [
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83
+   ]
+  },
+  "warmup": [
+   {
+    "instruction_zh": "给下面的词语选择对应的图片",
+    "instruction_en": "Match the pictures with the words/phrases.",
+    "items": [
+     "①钱 qián",
+     "②米饭 mǐfàn",
+     "③杯子 bēizi",
+     "④茶 chá",
+     "⑤中国菜 Zhōngguó cài",
+     "⑥汉字 Hànzì"
+    ],
+    "pictures_desc_en": [
+     "A: a blue mug",
+     "B: green tea in a glass cup and a glass teapot, with loose tea leaves",
+     "C: a bowl of cooked white rice",
+     "D: a plate of stir-fried diced chicken with vegetables",
+     "E: large brush-written Chinese characters on an open book",
+     "F: several Chinese banknotes (renminbi) fanned out"
+    ]
+   }
+  ],
+  "pronunciation": [
+   {
+    "title_zh": "双音节词语的声调搭配（3）：三声和各声调的搭配",
+    "rows": [
+     "shǒujī 手机",
+     "shǒuzhuó 手镯",
+     "shǒubiǎo 手表",
+     "shǒutào 手套"
+    ],
+    "notes_zh": [
+     "[声调模式图：3+1、3+2、3+3、3+4，各配一张图片：手机、手镯、手表、手套]"
+    ],
+    "notes_en": [
+     "Tone Collocation in Disyllabic Words (3): 3rd tone + 1st/2nd/3rd/4th tone"
+    ]
+   },
+   {
+    "title_zh": "双音节词语的声调搭配（3）——听录音并跟读，注意声调的搭配",
+    "rows": [
+     "lǎoshī　lǎorén　yǔsǎn　yǒu yòng",
+     "měi tiān　měi nián　měihǎo　měilì",
+     "hǎibiān　hǎimián　xǐ zǎo　gǎnxiè",
+     "yǐjīng　yǐqián　biǎoyǎn　biǎoxiàn"
+    ],
+    "notes_zh": [
+     "听录音并跟读，注意声调的搭配"
+    ],
+    "notes_en": [
+     "Listen to the recording and read after it. Pay attention to the collocation of tones."
+    ]
+   }
+  ],
+  "texts": [
+   {
+    "n": 1,
+    "title_zh": "在饭馆儿",
+    "title_en": "In a restaurant",
+    "kind": "dialogue",
+    "lines": [
+     {
+      "speaker": "A",
+      "zh": "你想喝什么？",
+      "pinyin": "Nǐ xiǎng hē shénme?"
+     },
+     {
+      "speaker": "B",
+      "zh": "我想喝茶。",
+      "pinyin": "Wǒ xiǎng hē chá."
+     },
+     {
+      "speaker": "A",
+      "zh": "你想吃什么？",
+      "pinyin": "Nǐ xiǎng chī shénme?"
+     },
+     {
+      "speaker": "B",
+      "zh": "我想吃米饭。",
+      "pinyin": "Wǒ xiǎng chī mǐfàn."
+     }
+    ],
+    "english_version": "A: What would you like to drink?\nB: I'd like some tea.\nA: What would you like to eat?\nB: I'd like rice.",
+    "new_words": [
+     {
+      "n": 1,
+      "zh": "想",
+      "pinyin": "xiǎng",
+      "pos": "mod.",
+      "en": "to want, would like",
+      "text": 1
+     },
+     {
+      "n": 2,
+      "zh": "喝",
+      "pinyin": "hē",
+      "pos": "v.",
+      "en": "to drink",
+      "text": 1
+     },
+     {
+      "n": 3,
+      "zh": "茶",
+      "pinyin": "chá",
+      "pos": "n.",
+      "en": "tea",
+      "text": 1
+     },
+     {
+      "n": 4,
+      "zh": "吃",
+      "pinyin": "chī",
+      "pos": "v.",
+      "en": "to eat",
+      "text": 1
+     },
+     {
+      "n": 5,
+      "zh": "米饭",
+      "pinyin": "mǐfàn",
+      "pos": "n.",
+      "en": "cooked rice",
+      "text": 1
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "title_zh": "在客厅",
+    "title_en": "In the living room",
+    "kind": "dialogue",
+    "lines": [
+     {
+      "speaker": "A",
+      "zh": "下午你想做什么？",
+      "pinyin": "Xiàwǔ nǐ xiǎng zuò shénme?"
+     },
+     {
+      "speaker": "B",
+      "zh": "下午我想去商店。",
+      "pinyin": "Xiàwǔ wǒ xiǎng qù shāngdiàn."
+     },
+     {
+      "speaker": "A",
+      "zh": "你想买什么？",
+      "pinyin": "Nǐ xiǎng mǎi shénme?"
+     },
+     {
+      "speaker": "B",
+      "zh": "我想买一个杯子。",
+      "pinyin": "Wǒ xiǎng mǎi yí ge bēizi."
+     }
+    ],
+    "english_version": "A: What would you like to do this afternoon?\nB: I'd like to go shopping.\nA: What do you want to buy?\nB: I want to buy a cup.",
+    "new_words": [
+     {
+      "n": 6,
+      "zh": "下午",
+      "pinyin": "xiàwǔ",
+      "pos": "n.",
+      "en": "afternoon",
+      "text": 2
+     },
+     {
+      "n": 7,
+      "zh": "商店",
+      "pinyin": "shāngdiàn",
+      "pos": "n.",
+      "en": "shop, store",
+      "text": 2
+     },
+     {
+      "n": 8,
+      "zh": "买",
+      "pinyin": "mǎi",
+      "pos": "v.",
+      "en": "to buy, to purchase",
+      "text": 2
+     },
+     {
+      "n": 9,
+      "zh": "个",
+      "pinyin": "gè",
+      "pos": "m.",
+      "en": "a general measure word",
+      "text": 2
+     },
+     {
+      "n": 10,
+      "zh": "杯子",
+      "pinyin": "bēizi",
+      "pos": "n.",
+      "en": "cup, glass",
+      "text": 2
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "title_zh": "在商店",
+    "title_en": "In a store",
+    "kind": "dialogue",
+    "lines": [
+     {
+      "speaker": "A",
+      "zh": "你好！这个杯子多少钱？",
+      "pinyin": "Nǐ hǎo! Zhège bēizi duōshao qián?"
+     },
+     {
+      "speaker": "B",
+      "zh": "28块。",
+      "pinyin": "Èrshíbā kuài."
+     },
+     {
+      "speaker": "A",
+      "zh": "那个杯子多少钱？",
+      "pinyin": "Nàge bēizi duōshao qián?"
+     },
+     {
+      "speaker": "B",
+      "zh": "那个杯子18块钱。",
+      "pinyin": "Nàge bēizi shíbā kuài qián."
+     }
+    ],
+    "english_version": "A: Hello! How much is this cup?\nB: 28 yuan.\nA: What about that one?\nB: That one is 18 yuan.",
+    "new_words": [
+     {
+      "n": 11,
+      "zh": "这",
+      "pinyin": "zhè",
+      "pos": "pron.",
+      "en": "this",
+      "text": 3
+     },
+     {
+      "n": 12,
+      "zh": "多少",
+      "pinyin": "duōshao",
+      "pos": "pron.",
+      "en": "how many, how much",
+      "text": 3
+     },
+     {
+      "n": 13,
+      "zh": "钱",
+      "pinyin": "qián",
+      "pos": "n.",
+      "en": "money",
+      "text": 3
+     },
+     {
+      "n": 14,
+      "zh": "块",
+      "pinyin": "kuài",
+      "pos": "m.",
+      "en": "a unit of money, same as “yuan”",
+      "text": 3
+     },
+     {
+      "n": 15,
+      "zh": "那",
+      "pinyin": "nà",
+      "pos": "pron.",
+      "en": "that",
+      "text": 3
+     }
+    ]
+   }
+  ],
+  "grammar": [
+   {
+    "n": 1,
+    "title_zh": "能愿动词“想”",
+    "title_en": "The Modal Verb “想”",
+    "explanation_zh": "能愿动词“想”一般用在动词前表示一种希望或者打算。例如：",
+    "explanation_en": "The modal verb “想” is usually used before a verb to express a hope or plan. For example:",
+    "examples": [
+     {
+      "n": 1,
+      "zh": "我想学汉语。"
+     },
+     {
+      "n": 2,
+      "zh": "明天我想去学校看书。"
+     },
+     {
+      "n": 3,
+      "zh": "我想买一个杯子。"
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "title_zh": "疑问代词“多少”",
+    "title_en": "The Interrogative Pronoun “多少”",
+    "explanation_zh": "疑问代词“多少”用于询问十以上的数量，“多少”后边的量词可以省略。“多少”还用于询问价格，常用表达方式是“……多少钱？”。例如：",
+    "explanation_en": "The interrogative pronoun “多少” is used to ask about numbers larger than 10. The measure word following it can be omitted. “多少” can also be used to inquire about prices, usually in the sentence pattern “……多少钱?”. For example:",
+    "examples": [
+     {
+      "n": 1,
+      "zh": "你们学校有多少（个）学生？"
+     },
+     {
+      "n": 2,
+      "zh": "你有多少（个）汉语老师？"
+     },
+     {
+      "n": 3,
+      "zh": "这个杯子多少钱？"
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "title_zh": "量词“个”、“口”",
+    "title_en": "The Measure Words “个” and “口”",
+    "explanation_zh": "“个”是汉语中最常见的一个量词，一般用于没有专用量词的名词前。例如：\n“口”也是一个量词，一般用于描述家庭成员的人数（见第5课）。例如：",
+    "explanation_en": "“个” is the most common measure word in Chinese, usually used before a noun without a specific measure word of its own. For example:\n“口” is a measure words, too, usually used for members of a family(see Lesson 5). For example:",
+    "examples": [
+     {
+      "n": 1,
+      "zh": "三个老师",
+      "note_zh": "个"
+     },
+     {
+      "n": 2,
+      "zh": "五个学生",
+      "note_zh": "个"
+     },
+     {
+      "n": 3,
+      "zh": "一个杯子",
+      "note_zh": "个"
+     },
+     {
+      "n": 1,
+      "zh": "李老师家有六口人。",
+      "note_zh": "口"
+     },
+     {
+      "n": 2,
+      "zh": "你家有几口人？",
+      "note_zh": "口"
+     },
+     {
+      "n": 3,
+      "zh": "我家有三口人。",
+      "note_zh": "口"
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "title_zh": "钱数的表达",
+    "title_en": "Expression of the Amount of Money",
+    "explanation_zh": "人民币的基本单位是“元”，口语中读作“块”。例如：",
+    "explanation_en": "The basic unit of Renminbi (Chinese currency) is “元”, usually replaced by “块” in spoken Chinese. For example:",
+    "structure_rows": [
+     "[1元纸币图] 一元（块） | one yuan/kuai",
+     "[5元纸币图] 五元（块） | five yuan/kuai",
+     "[10元纸币图] 十元（块） | ten yuan/kuai",
+     "[50元纸币图] 五十元（块） | fifty yuan/kuai",
+     "[100元纸币图] 一百元（块） | one hundred yuan/kuai"
+    ],
+    "examples": [
+     {
+      "zh": "一元（块）"
+     },
+     {
+      "zh": "五元（块）"
+     },
+     {
+      "zh": "十元（块）"
+     },
+     {
+      "zh": "五十元（块）"
+     },
+     {
+      "zh": "一百元（块）"
+     }
+    ]
+   }
+  ],
+  "exercises": [
+   {
+    "n": 1,
+    "type_zh": "分角色朗读课文",
+    "instruction_zh": "分角色朗读课文",
+    "instruction_en": "Role-play the dialogues.",
+    "items": []
+   },
+   {
+    "n": 2,
+    "type_zh": "回答问题",
+    "instruction_zh": "根据实际情况回答问题",
+    "instruction_en": "Answer the questions according to the actual situations.",
+    "items": [
+     {
+      "n": 1,
+      "zh": "你想吃什么？",
+      "pinyin": "Nǐ xiǎng chī shénme?"
+     },
+     {
+      "n": 2,
+      "zh": "你想喝什么？",
+      "pinyin": "Nǐ xiǎng hē shénme?"
+     },
+     {
+      "n": 3,
+      "zh": "明天下午你想做什么？",
+      "pinyin": "Míngtiān xiàwǔ nǐ xiǎng zuò shénme?"
+     },
+     {
+      "n": 4,
+      "zh": "你去哪个商店买杯子？",
+      "pinyin": "Nǐ qù nǎge shāngdiàn mǎi bēizi?"
+     },
+     {
+      "n": 5,
+      "zh": "一个杯子多少钱？",
+      "pinyin": "Yí ge bēizi duōshao qián?"
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "type_zh": "描述图片",
+    "instruction_zh": "用本课新学的语言点和词语描述图片",
+    "instruction_en": "Describe the pictures using the newly-learned language points and words.",
+    "items": [
+     {
+      "n": 1,
+      "zh": "明天________我想去________买________。",
+      "pinyin": "Míngtiān ______ wǒ xiǎng qù ______ mǎi ______.",
+      "picture_desc_en": "a stack of porcelain teacups with floral patterns on saucers"
+     },
+     {
+      "n": 2,
+      "zh": "今天我想吃________。",
+      "pinyin": "Jīntiān wǒ xiǎng chī ______.",
+      "picture_desc_en": "a plate of braised red meat pieces garnished with broccoli and carrot slices"
+     },
+     {
+      "n": 3,
+      "zh": "下午我想去________看________。",
+      "pinyin": "Xiàwǔ wǒ xiǎng qù ______ kàn ______.",
+      "picture_desc_en": "a young woman reading a book between bookshelves (library or bookstore)"
+     },
+     {
+      "n": 4,
+      "zh": "你好，请问这个杯子________？",
+      "pinyin": "Nǐ hǎo, qǐngwèn zhège bēizi ______?",
+      "picture_desc_en": "a red price tag with the word “Price” and a barcode, hanging on a bead chain"
+     }
+    ]
+   }
+  ],
+  "characters": {
+   "knowledge_title_zh": "认识独体字／汉字结构（3）：上下结构与上中下结构／汉字偏旁“钅”和“口”",
+   "knowledge_zh": "1 认识独体字\n（1）“少”，意思是规模小，数量不多，与“多”相对。[字形演变图：4步 → 少 shǎo；笔顺图4步]\n（2）“个”，本义是最小独立单位的人，指一个人。现在变为量词。[字形演变图：4步 → 个 gè；笔顺图3步]\n2 汉字结构（3）：上下结构与上中下结构\n合体结构还包括上下结构和上中下结构。上下结构的结构图形为[⊟ 图]，上中下结构的图形为[☰ 图]。\n结构 | 例字 | 图解\n上下结构 | 是 shì、爸 bà | [图：是 爸]\n上中下结构 | 茶 chá、高 gāo | [图：茶 高]\n3 汉字偏旁“钅”和“口”\n偏旁 | 解释 | 例字\n钅 | 金字旁，一般和金属有关系。 | 钟 zhōng、钱 qián\n口 | 口字旁，一般和嘴巴有关系。 | 吃 chī、喝 hē",
+   "knowledge_en": "Single-Component Characters: (1) In contrast to “多(many)”, “少” means “few/little”, indicating a small scale or quantity. (2) “个” originally meant “one individual person”. Now it has become a measure word.\nStructure of Chinese Characters (3): top-bottom and top-middle-bottom. Both the top-bottom structure and the top-middle-bottom structure are compound structures. The top-bottom structure is [⊟] and the top-middle-bottom structure is [☰]. top-bottom: 是 to be, 爸 father; top-middle-bottom: 茶 tea, 高 high, tall.\nChinese Radicals: “钅” and “口”. The radical “钅” is usually related to metal: 钟 clock, 钱 money. The radical “口” is usually related to the mouth: 吃 to eat, 喝 to drink.",
+   "characters": [
+    {
+     "zh": "少",
+     "pinyin": "shǎo",
+     "note_zh": "独体字：意思是规模小，数量不多，与“多”相对（字形演变图 + 笔顺4步图：丨 → 亅丨 → 小 → 少）"
+    },
+    {
+     "zh": "个",
+     "pinyin": "gè",
+     "note_zh": "独体字：本义是最小独立单位的人，指一个人，现在变为量词（字形演变图 + 笔顺3步图：丿 → 人 → 个）"
+    },
+    {
+     "zh": "是",
+     "pinyin": "shì",
+     "note_zh": "上下结构例字（to be）"
+    },
+    {
+     "zh": "爸",
+     "pinyin": "bà",
+     "note_zh": "上下结构例字（father）"
+    },
+    {
+     "zh": "茶",
+     "pinyin": "chá",
+     "note_zh": "上中下结构例字（tea）"
+    },
+    {
+     "zh": "高",
+     "pinyin": "gāo",
+     "note_zh": "上中下结构例字（high, tall）"
+    },
+    {
+     "zh": "钟",
+     "pinyin": "zhōng",
+     "note_zh": "偏旁“钅”例字（clock）"
+    },
+    {
+     "zh": "钱",
+     "pinyin": "qián",
+     "note_zh": "偏旁“钅”例字（money）"
+    },
+    {
+     "zh": "吃",
+     "pinyin": "chī",
+     "note_zh": "偏旁“口”例字（to eat）"
+    },
+    {
+     "zh": "喝",
+     "pinyin": "hē",
+     "note_zh": "偏旁“口”例字（to drink）"
+    }
+   ]
+  },
+  "application": [
+   {
+    "title_zh": "双人活动",
+    "instruction_zh": "两人一组，根据实际情况进行问答练习。",
+    "instruction_en": "Work in pairs and ask and answer questions according to the actual situations.",
+    "example_zh": [
+     "例如：",
+     "（1）A：今天下午你想做什么？ Jīntiān xiàwǔ nǐ xiǎng zuò shénme?",
+     "B：……",
+     "A：明天你想做什么？ Míngtiān nǐ xiǎng zuò shénme?",
+     "B：……",
+     "（2）A：你们班有多少个学生？ Nǐmen bān yǒu duōshao ge xuésheng?",
+     "B：……",
+     "A：你们学校有多少个老师？ Nǐmen xuéxiào yǒu duōshao ge lǎoshī?",
+     "B：……"
+    ]
+   },
+   {
+    "title_zh": "小组活动",
+    "instruction_zh": "3～4人一组，互相询问这个星期的计划并记录，每组请一位同学报告情况。",
+    "instruction_en": "Work in groups of 3-4. Ask about each other’s plan for the week and take notes. Each group chooses one member to make a report.",
+    "example_zh": [
+     "表格： | 姓名 Name | 星期一 Monday | 星期二 Tuesday | 星期三 Wednesday | 星期四 Thursday | 星期五 Friday | 星期六 Saturday | 星期日 Sunday",
+     "1 | 谢朋 Xiè Péng | 去学校 qù xuéxiào | | | | | 去商店 qù shāngdiàn |",
+     "（其余4行空白）"
+    ]
+   }
+  ]
+ },
+ "teacher": {
+  "ref": {
+   "book": "teacher",
+   "pages": [
+    49,
+    50,
+    51,
+    52,
+    53,
+    54
+   ]
+  },
+  "objectives_zh": [
+   "重点词语：学生能够熟练掌握“喝、吃、下午、商店、买、这、那”的词义和用法",
+   "语言点：学生能够了解并掌握：（1）能愿动词“想”（2）疑问代词“多少”（3）量词“个”“口”（4）钱数的表达：……元／块",
+   "语音：学生熟悉双音节词语的三声音节和各声调搭配的声调模式，并能正确朗读",
+   "汉字：学生能够：（1）熟练认读本课生词（2）独立书写独体字“少、个”（3）了解汉字的上下结构与上中下结构（4）了解“钅（金字旁）、口（口字旁）”所表示的意思",
+   "功能：学生能够：（1）表达意愿或者愿望（2）询问和回答钱数（3）正确使用量词“个”“口”"
+  ],
+  "steps": [
+   {
+    "title_zh": "一 复习旧课",
+    "body_zh": "1. 教师出示第7课生词卡片，要求学生快速认读下列生词。\n请、问、今天、号、月、星期、\n昨天、明天、去、学校、看、书\n2. 教师根据第7课重点内容简单提问，活跃课堂气氛。\n（1）今天几月几号？\n（2）今天星期几？\n（3）明天几月几号？星期几？昨天呢？\n（4）昨天你去哪儿了？你去做什么了？\n（5）星期六你去哪儿？你去做什么？"
+   },
+   {
+    "title_zh": "二 学习新课 1 热身",
+    "body_zh": "教师可依次朗读热身部分的词语，要求学生集体或单个说出图片对应的编号，教师评判正误。最后全体学生再次齐读热身环节的所有词语，要求语音标准、声调准确。\n答案：①F　②C　③A　④B　⑤D　⑥E"
+   },
+   {
+    "title_zh": "2 生词",
+    "body_zh": "（1）生词快速认读及正音\n想、喝、茶、吃、米饭、下午、商店、买、\n个、杯子、这、多少、钱、块、那\n• 教师使用生词卡片有拼音和汉字的一面，带领学生快速认读一遍本课生词；\n• 使用生词卡片只有汉字的一面，带领学生再次认读本课生词；\n• 请单个学生独自认读2–3个生词；\n• 最后全体学生再快速认读一遍本课所有生词。\n［注意：见 notes_zh］\n（2）重点生词扩展及常用搭配\n喝—喝茶\n　—你喝什么？—我喝茶。\n吃—吃饭—吃米饭—吃中国菜\n　—你吃什么？—我吃米饭。\n下午—今天下午—昨天下午—明天下午\n　↔上午↔中午↔早上↔晚上\n商店—去商店\n　—你去哪儿？我去商店。\n买—买杯子—买书\n　—你买什么？—我买杯子。\n这—这是什么？—这是杯子。\n　—这个杯子—这个人—这个学生—这个老师\n［句型框］这＋量词＋名词\n那—那是什么？—那是汉语书。\n　—那个杯子—那个人—那个学生—那个老师\n［句型框］那＋量词＋名词\n练习册相关练习：第49页／一／第一部分，第52页／二／第一部分"
+   },
+   {
+    "title_zh": "3 语言点（1）能愿动词“想”",
+    "body_zh": "① 语言点解析\n能愿动词“想”一般用在动词前表示一种希望或者打算。否定形式是“不想”。\n［句型框］主语＋（不）想＋动词。\n② 语言点导入\n教师可利用本课热身图片C、B、D进行导入。\n教师出示图片C：\n教师：老师想吃什么？\n学生：老师想吃米饭。\n教师：你想吃米饭吗？\n学生：我想／不想吃米饭。\n其他目标句：我想／不想喝茶。\n　　　　　　我想／不想吃中国菜。\n③ 语言点操练\n教师可组织学生根据实际情况进行问答练习。\n参考问题：今天中午你想吃什么？\n你想喝什么？\n今天下午你想去哪儿？\n今天晚上你想做什么？\n这个星期六你想做什么？\n……"
+   },
+   {
+    "title_zh": "3 语言点（2）疑问代词“多少”",
+    "body_zh": "① 语言点解析\n疑问代词“多少”用于询问10以上的数量，“多少”后边的量词可以省略。“多少”还用于询问价格，常用表达方式是“……多少钱？”\n② 语言点导入\n教师出示一个例句：他们学校有95个学生。\n教师：他们学校有多少个学生？\n学生：他们学校有95个学生。\n教师：我们学校有多少个学生？\n学生：我们学校有……个学生。\n教师：我们学校有多少个老师？\n学生：我们学校有……个老师。\n③ 语言点操练\n教师可组织学生根据实际情况进行问答练习。\n参考问题：你们班有多少个学生？\n你们学校有多少中国学生？\n你有多少本汉语书？\n你会写多少个汉字？\n……\n［注意：见 notes_zh］"
+   },
+   {
+    "title_zh": "3 语言点（3）量词“个”“口”",
+    "body_zh": "① 语言点解析\n“个”是汉语中最常见的一个量词，一般用于没有专用量词的名词前。\n“口”一般用于描述家庭成员的人数（见第5课）。\n② 补充语言点练习\n选词填空：个　口\n我会写30______汉字。\n我想买一______杯子。\n李月家有三______人。\n你们学校有多少______学生？\n你有几______中国朋友？"
+   },
+   {
+    "title_zh": "3 语言点（4）钱数的表达",
+    "body_zh": "① 语言点解析\n人民币的基本单位是“元”，口语中一般用“块”。询问价格常用的表达方式是“……多少钱？”\n② 语言点导入\n教师可根据课本第59页的人民币图片进行导入，带领学生看图并朗读相应的钱数。\n③ 语言点操练\n教师可组织学生两人一组，请学生根据各自物品的实际价格进行问答练习。\nA：这个……多少钱？\nB：这个……块。\nA：那个……多少钱？\nB：那个……块。"
+   },
+   {
+    "title_zh": "4 课文",
+    "body_zh": "课文1\n（1）让学生听两遍录音并回答下列问题：\n她想喝什么？\n她想吃什么？\n（2）根据学生的回答，教师领说目标句，并请学生单个复述：\n她想喝茶，她想吃米饭。\n（3）教师领读课文两遍，然后让学生分角色朗读课文。\n（4）模仿练习\n教师组织学生两人一组，根据提示进行对话练习。\nA：你想吃什么？\nB：我想吃……。\nA：你想喝什么？\nB：我想喝……。\n补充词语：包子 bāozi、饺子 jiǎozi、面条 miàntiáo、咖啡 kāfēi、可乐 kělè、啤酒 píjiǔ（可制成图卡）\n课文2\n（1）让学生听两遍录音并回答下列问题：\n下午她想去哪儿？\n她想买什么？\n（2）根据学生的回答，教师领说目标句，并请学生单个复述：\n下午她想去商店，她想买一个杯子。\n（3）教师领读课文两遍，然后让学生分角色朗读课文。\n课文3\n（1）让学生听两遍录音并回答下列问题：\n他想买什么？\n这个杯子多少钱？\n那个杯子多少钱？\n（2）根据学生的回答，教师领说目标句，并请学生单个复述：\n他想买一个杯子。这个杯子28块，那个杯子18块。\n（3）教师领读课文两遍，然后让学生分角色朗读课文。\n（4）模仿练习\n教师组织学生两人一组，根据提示进行对话练习。\nA：你好！这个……多少钱？\nB：……。\nA：那个……多少钱？\nB：……。\n补充词语：本子 běnzi、词典 cídiǎn、手机 shǒujī（可制成图卡）"
+   },
+   {
+    "title_zh": "5 语音",
+    "body_zh": "双音节词语的声调搭配（3）：三声和各声调的搭配\n教师可利用课本第60页的例词、声调模式和图片进行教学。教师分别朗读各声调组合的标准词，让学生一边看调型图一边跟读模仿，并根据图片理解词义。\n之后教师可利用课本第60页的练习部分，组织学生进行朗读正音练习。朗读时教师要提醒学生注意各声调搭配的标准词的示范作用。\n［注意：见 notes_zh］\n练习册相关练习：第55页／三"
+   },
+   {
+    "title_zh": "6 汉字",
+    "body_zh": "① 知识点解析\n独体字\n少：意思是规模小，数量不多，与“多”相对。\n个：本义是最小独立单位的人，指一个人。现在变为量词。\n偏旁\n钅：金字旁，一般和金属有关系。\n口：口字旁，一般和嘴巴有关系。\n② 汉字练习\n• 教师板书或者用手指在空中书写本课独体字“少、个”，带领学生一起识记独体字的笔画笔顺。\n• 教师板书本课偏旁“钅、口”，提示学生注意这两个偏旁的笔画和笔顺，并书写各自的代表汉字，帮助学生识记偏旁的意义。\n• 教师通过板书例字，给学生展示汉字的两种合体结构：上下结构与上中下结构。\n• 补充练习\na. 给下列汉字分类\n是、茶、爸、高、怎、多、意\n上下结构：________\n上中下结构：________\nb. 辨认下列汉字\n不／杯　吃／喝　想／怎\n练习册相关练习：第56页／四"
+   },
+   {
+    "title_zh": "7 补充课堂活动——排排队",
+    "body_zh": "教师准备一些词语卡片（只有汉字、没有拼音）分发给学生，并板书“吃、喝、买、去、说、写、看”等动词，要求学生把手中的词语卡片排列在可以搭配的动词后边，排列好后带领学生一起认读，判断正误。最后要求每个学生任选一个用“我想……”说句子。\n建议词语：米饭、中国菜、茶、商店、杯子、汉语书、学校、朋友家、中国朋友、同学、老师、汉语、汉字"
+   }
+  ],
+  "notes_zh": [
+   "注意：教师要引导学生注意双音节词语的声调模式，力求声调准确。要引导学生注意“杯子”、“多少”中轻声音节的发音。（生词）",
+   "注意：教师要提示学生注意“几”和“多少”的区别：“几”用于提问10以下的数量，“多少”用于提问10以上的数量；“几”后边的量词不能省略，而“多少”后边的量词可以省略。（语言点2）",
+   "注意：在两个三声音节的组合中，第一个三声要变调，读音近似第二声。在其余三个音节组合中，第三声的发音都是“半三声”，是一个近似于211的低降调，音节的后半部分不再升高。（语音）"
+  ],
+  "warmup_answers_zh": [
+   "答案：①F　②C　③A　④B　⑤D　⑥E"
+  ],
+  "text_questions": [
+   {
+    "text": 1,
+    "q_zh": "她想喝什么？",
+    "a_zh": "她想喝茶，她想吃米饭。"
+   },
+   {
+    "text": 1,
+    "q_zh": "她想吃什么？",
+    "a_zh": "她想喝茶，她想吃米饭。"
+   },
+   {
+    "text": 2,
+    "q_zh": "下午她想去哪儿？",
+    "a_zh": "下午她想去商店，她想买一个杯子。"
+   },
+   {
+    "text": 2,
+    "q_zh": "她想买什么？",
+    "a_zh": "下午她想去商店，她想买一个杯子。"
+   },
+   {
+    "text": 3,
+    "q_zh": "他想买什么？",
+    "a_zh": "他想买一个杯子。这个杯子28块，那个杯子18块。"
+   },
+   {
+    "text": 3,
+    "q_zh": "这个杯子多少钱？",
+    "a_zh": "他想买一个杯子。这个杯子28块，那个杯子18块。"
+   },
+   {
+    "text": 3,
+    "q_zh": "那个杯子多少钱？",
+    "a_zh": "他想买一个杯子。这个杯子28块，那个杯子18块。"
+   }
+  ],
+  "summary_zh": "• 语言点：能愿动词“想”\n　疑问代词“多少”\n　量词“个”“口”\n　……元／块\n• 语　音：双音节词语的声调搭配（3）：三声和各声调的搭配\n• 汉　字：独体字“少、个”\n　偏旁“钅、口”"
+ },
+ "workbook": {
+  "ref": {
+   "book": "workbook",
+   "pages": [
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64
+   ]
+  },
+  "sections": [
+   {
+    "n": "一、听力 第一部分",
+    "type_zh": "听力 第一部分",
+    "instruction_zh": "第1–4题：听词或短语，判断对错",
+    "instruction_en": "Questions 1-4: Listen to the words or phrases and decide whether the pictures are right or wrong based on what you hear.",
+    "items": [
+     {
+      "n": "例1",
+      "zh": "很高兴",
+      "pinyin": "hěn gāoxìng",
+      "transcript_zh": "很高兴",
+      "picture_desc_en": "a smiling young woman with a ponytail",
+      "answer": "√",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        57
+       ]
+      }
+     },
+     {
+      "n": "例2",
+      "zh": "看电影",
+      "pinyin": "kàn diànyǐng",
+      "transcript_zh": "看电影",
+      "picture_desc_en": "an older man in a suit sitting and reading papers",
+      "answer": "×",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        57
+       ]
+      }
+     },
+     {
+      "n": 1,
+      "zh": "",
+      "transcript_zh": "茶",
+      "picture_desc_en": "a bowl of brewed tea and a scoop of dry tea leaves on a tea tray",
+      "answer": "√",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        42
+       ]
+      }
+     },
+     {
+      "n": 2,
+      "zh": "",
+      "transcript_zh": "一个杯子",
+      "picture_desc_en": "two mugs side by side (one dark, one white)",
+      "answer": "×",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        42
+       ]
+      }
+     },
+     {
+      "n": 3,
+      "zh": "",
+      "transcript_zh": "吃米饭",
+      "picture_desc_en": "a smiling young woman eating a piece of bread/pastry",
+      "answer": "×",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        42
+       ]
+      }
+     },
+     {
+      "n": 4,
+      "zh": "",
+      "transcript_zh": "三个人",
+      "picture_desc_en": "three people in business suits walking together",
+      "answer": "√",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        42
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "一、听力 第二部分",
+    "type_zh": "听力 第二部分",
+    "instruction_zh": "第5–8题：听对话，选择与对话内容一致的图片",
+    "instruction_en": "Questions 5-8: Listen to the dialogues and choose the right picture for each dialogue you hear.",
+    "items": [
+     {
+      "n": "例",
+      "zh": "女：你好！ 男：你好！很高兴认识你。",
+      "pinyin": "Nǐ hǎo! / Nǐ hǎo! Hěn gāoxìng rènshi nǐ.",
+      "transcript_zh": "女：你好！ 男：你好！很高兴认识你。",
+      "options": {
+       "A": "[picture] a plate of stir-fried dish (shredded meat and vegetables)",
+       "B": "[picture] a plain mug",
+       "C": "[picture] a woman and a man in business clothes shaking hands in front of an elevator",
+       "D": "[picture] a bowl of cooked white rice",
+       "E": "[picture] a family of four (two children, mother, father) laughing together"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        58
+       ]
+      }
+     },
+     {
+      "n": 5,
+      "zh": "",
+      "options": {
+       "A": "[picture] a plate of stir-fried dish (shredded meat and vegetables)",
+       "B": "[picture] a plain mug",
+       "C": "[picture] a woman and a man in business clothes shaking hands in front of an elevator",
+       "D": "[picture] a bowl of cooked white rice",
+       "E": "[picture] a family of four (two children, mother, father) laughing together"
+      },
+      "transcript_zh": "男：你想吃米饭吗？ 女：我想吃。",
+      "answer": "D",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        43
+       ]
+      }
+     },
+     {
+      "n": 6,
+      "zh": "",
+      "options": {
+       "A": "[picture] a plate of stir-fried dish (shredded meat and vegetables)",
+       "B": "[picture] a plain mug",
+       "C": "[picture] a woman and a man in business clothes shaking hands in front of an elevator",
+       "D": "[picture] a bowl of cooked white rice",
+       "E": "[picture] a family of four (two children, mother, father) laughing together"
+      },
+      "transcript_zh": "男：明天你想吃什么？ 女：我想吃中国菜。",
+      "answer": "A",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        43
+       ]
+      }
+     },
+     {
+      "n": 7,
+      "zh": "",
+      "options": {
+       "A": "[picture] a plate of stir-fried dish (shredded meat and vegetables)",
+       "B": "[picture] a plain mug",
+       "C": "[picture] a woman and a man in business clothes shaking hands in front of an elevator",
+       "D": "[picture] a bowl of cooked white rice",
+       "E": "[picture] a family of four (two children, mother, father) laughing together"
+      },
+      "transcript_zh": "男：请问，这个杯子多少钱？ 女：38块。",
+      "answer": "B",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        43
+       ]
+      }
+     },
+     {
+      "n": 8,
+      "zh": "",
+      "options": {
+       "A": "[picture] a plate of stir-fried dish (shredded meat and vegetables)",
+       "B": "[picture] a plain mug",
+       "C": "[picture] a woman and a man in business clothes shaking hands in front of an elevator",
+       "D": "[picture] a bowl of cooked white rice",
+       "E": "[picture] a family of four (two children, mother, father) laughing together"
+      },
+      "transcript_zh": "女：你朋友家有几口人？ 男：他家有四口人。",
+      "answer": "E",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        43
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "一、听力 第三部分",
+    "type_zh": "听力 第三部分",
+    "instruction_zh": "第9–12题：听句子，回答问题",
+    "instruction_en": "Questions 9-12: Listen to the sentences and answer the questions.",
+    "items": [
+     {
+      "n": "例",
+      "zh": "问：她下午去哪里？",
+      "pinyin": "Tā xiàwǔ qù nǎli?",
+      "transcript_zh": "下午我去商店，我想买一些水果。 问：她下午去哪里？",
+      "options": {
+       "A": "商店 shāngdiàn store",
+       "B": "医院 yīyuàn hospital",
+       "C": "学校 xuéxiào school"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        59
+       ]
+      }
+     },
+     {
+      "n": 9,
+      "zh": "问：他想买什么？",
+      "transcript_zh": "明天他想去商店买一个杯子。 问：他想买什么？",
+      "options": {
+       "A": "桌子 zhuōzi",
+       "B": "椅子 yǐzi",
+       "C": "杯子 bēizi"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        43
+       ]
+      }
+     },
+     {
+      "n": 10,
+      "zh": "问：他想喝什么？",
+      "transcript_zh": "他想喝茶。你呢？ 问：他想喝什么？",
+      "options": {
+       "A": "茶 chá",
+       "B": "咖啡 kāfēi",
+       "C": "米饭 mǐfàn"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        43
+       ]
+      }
+     },
+     {
+      "n": 11,
+      "zh": "问：大卫今天下午去哪儿？",
+      "transcript_zh": "大卫今天下午去中国朋友家喝茶。 问：大卫今天下午去哪儿？",
+      "options": {
+       "A": "商店 shāngdiàn",
+       "B": "学校 xuéxiào",
+       "C": "朋友家 péngyou jiā"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        43
+       ]
+      }
+     },
+     {
+      "n": 12,
+      "zh": "问：那个菜多少钱？",
+      "transcript_zh": "这个菜38块，那个菜49块。 问：那个菜多少钱？",
+      "options": {
+       "A": "38块 sānshíbā kuài",
+       "B": "79块 qīshíjiǔ kuài",
+       "C": "49块 sìshíjiǔ kuài"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        43
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第一部分",
+    "type_zh": "阅读 第一部分",
+    "instruction_zh": "第13–17题：看图片，判断图片内容是否与提示词一致",
+    "instruction_en": "Questions 13-17: Look at the pictures and decide whether the given words are right or wrong.",
+    "items": [
+     {
+      "n": "例1",
+      "zh": "电视",
+      "pinyin": "diànshì",
+      "picture_desc_en": "an open laptop computer",
+      "answer": "×",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        60
+       ]
+      }
+     },
+     {
+      "n": "例2",
+      "zh": "飞机",
+      "pinyin": "fēijī",
+      "picture_desc_en": "an airplane in flight",
+      "answer": "√",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        60
+       ]
+      }
+     },
+     {
+      "n": 13,
+      "zh": "茶",
+      "pinyin": "chá",
+      "picture_desc_en": "a cup of latte with heart-shaped foam art on a saucer",
+      "answer": "×",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        44
+       ]
+      }
+     },
+     {
+      "n": 14,
+      "zh": "吃饭",
+      "pinyin": "chī fàn",
+      "picture_desc_en": "a group of young people eating from bowls with chopsticks",
+      "answer": "√",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        44
+       ]
+      }
+     },
+     {
+      "n": 15,
+      "zh": "米饭",
+      "pinyin": "mǐfàn",
+      "picture_desc_en": "a plate of stir-fried leafy vegetables",
+      "answer": "×",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        44
+       ]
+      }
+     },
+     {
+      "n": 16,
+      "zh": "四个学生",
+      "pinyin": "sì ge xuésheng",
+      "picture_desc_en": "four young people studying together at a desk",
+      "answer": "√",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        44
+       ]
+      }
+     },
+     {
+      "n": 17,
+      "zh": "喝茶",
+      "pinyin": "hē chá",
+      "picture_desc_en": "four smiling young people raising glasses of beer",
+      "answer": "×",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        44
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第二部分",
+    "type_zh": "阅读 第二部分",
+    "instruction_zh": "第18–22题：看问题，选择正确的回答",
+    "instruction_en": "Questions 18-22: Read the questions and choose the right answer to each of them.",
+    "items": [
+     {
+      "n": "例",
+      "zh": "你喝水吗？",
+      "pinyin": "Nǐ hē shuǐ ma? (Would you like some water?)",
+      "options": {
+       "A": "我喝茶，谢谢。 Wǒ hē chá, xièxie.",
+       "B": "这个菜18块。 Zhège cài shíbā kuài.",
+       "C": "25块。 Èrshíwǔ kuài.",
+       "D": "我想去商店买个杯子。 Wǒ xiǎng qù shāngdiàn mǎi ge bēizi.",
+       "E": "不去，明天我去朋友家。 Bú qù, míngtiān wǒ qù péngyou jiā.",
+       "F": "好的，谢谢！ Hǎo de, xièxie!"
+      },
+      "answer": "F",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        61
+       ]
+      }
+     },
+     {
+      "n": 18,
+      "zh": "请问，这个杯子多少钱？",
+      "pinyin": "Qǐngwèn, zhège bēizi duōshao qián?",
+      "options": {
+       "A": "我喝茶，谢谢。 Wǒ hē chá, xièxie.",
+       "B": "这个菜18块。 Zhège cài shíbā kuài.",
+       "C": "25块。 Èrshíwǔ kuài.",
+       "D": "我想去商店买个杯子。 Wǒ xiǎng qù shāngdiàn mǎi ge bēizi.",
+       "E": "不去，明天我去朋友家。 Bú qù, míngtiān wǒ qù péngyou jiā.",
+       "F": "好的，谢谢！ Hǎo de, xièxie!"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        45
+       ]
+      }
+     },
+     {
+      "n": 19,
+      "zh": "你想喝什么？",
+      "pinyin": "Nǐ xiǎng hē shénme?",
+      "options": {
+       "A": "我喝茶，谢谢。 Wǒ hē chá, xièxie.",
+       "B": "这个菜18块。 Zhège cài shíbā kuài.",
+       "C": "25块。 Èrshíwǔ kuài.",
+       "D": "我想去商店买个杯子。 Wǒ xiǎng qù shāngdiàn mǎi ge bēizi.",
+       "E": "不去，明天我去朋友家。 Bú qù, míngtiān wǒ qù péngyou jiā.",
+       "F": "好的，谢谢！ Hǎo de, xièxie!"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        45
+       ]
+      }
+     },
+     {
+      "n": 20,
+      "zh": "你好，这个菜多少钱？",
+      "pinyin": "Nǐ hǎo, zhège cài duōshao qián?",
+      "options": {
+       "A": "我喝茶，谢谢。 Wǒ hē chá, xièxie.",
+       "B": "这个菜18块。 Zhège cài shíbā kuài.",
+       "C": "25块。 Èrshíwǔ kuài.",
+       "D": "我想去商店买个杯子。 Wǒ xiǎng qù shāngdiàn mǎi ge bēizi.",
+       "E": "不去，明天我去朋友家。 Bú qù, míngtiān wǒ qù péngyou jiā.",
+       "F": "好的，谢谢！ Hǎo de, xièxie!"
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        45
+       ]
+      }
+     },
+     {
+      "n": 21,
+      "zh": "下午你想去哪儿？",
+      "pinyin": "Xiàwǔ nǐ xiǎng qù nǎr?",
+      "options": {
+       "A": "我喝茶，谢谢。 Wǒ hē chá, xièxie.",
+       "B": "这个菜18块。 Zhège cài shíbā kuài.",
+       "C": "25块。 Èrshíwǔ kuài.",
+       "D": "我想去商店买个杯子。 Wǒ xiǎng qù shāngdiàn mǎi ge bēizi.",
+       "E": "不去，明天我去朋友家。 Bú qù, míngtiān wǒ qù péngyou jiā.",
+       "F": "好的，谢谢！ Hǎo de, xièxie!"
+      },
+      "answer": "D",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        45
+       ]
+      }
+     },
+     {
+      "n": 22,
+      "zh": "明天你去学校吗？",
+      "pinyin": "Míngtiān nǐ qù xuéxiào ma?",
+      "options": {
+       "A": "我喝茶，谢谢。 Wǒ hē chá, xièxie.",
+       "B": "这个菜18块。 Zhège cài shíbā kuài.",
+       "C": "25块。 Èrshíwǔ kuài.",
+       "D": "我想去商店买个杯子。 Wǒ xiǎng qù shāngdiàn mǎi ge bēizi.",
+       "E": "不去，明天我去朋友家。 Bú qù, míngtiān wǒ qù péngyou jiā.",
+       "F": "好的，谢谢！ Hǎo de, xièxie!"
+      },
+      "answer": "E",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        45
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第三部分",
+    "type_zh": "阅读 第三部分",
+    "instruction_zh": "第23–30题：看句子，选择正确的词语填空",
+    "instruction_en": "Questions 23-30: Read the sentences and choose the right words to fill in the brackets.",
+    "word_bank": [
+     [
+      "A 吃 chī",
+      "B 喝 hē",
+      "C 买 mǎi",
+      "D 名字 míngzi",
+      "E 做 zuò"
+     ],
+     [
+      "F 几 jǐ",
+      "G 多少 duōshao"
+     ]
+    ],
+    "items": [
+     {
+      "n": "例",
+      "zh": "你叫什么（________）？",
+      "pinyin": "Nǐ jiào shénme (What is your name?)",
+      "answer": "D",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        62
+       ]
+      }
+     },
+     {
+      "n": 23,
+      "zh": "我想（________）米饭。",
+      "pinyin": "Wǒ xiǎng ______ mǐfàn.",
+      "answer": "A",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        46
+       ]
+      }
+     },
+     {
+      "n": 24,
+      "zh": "您好，您（________）茶吗？",
+      "pinyin": "Nín hǎo, nín ______ chá ma?",
+      "answer": "B",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        46
+       ]
+      }
+     },
+     {
+      "n": 25,
+      "zh": "我妈妈会（________）中国菜。",
+      "pinyin": "Wǒ māma huì ______ Zhōngguó cài.",
+      "answer": "E",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        46
+       ]
+      }
+     },
+     {
+      "n": 26,
+      "zh": "你想去商店（________）什么？",
+      "pinyin": "Nǐ xiǎng qù shāngdiàn ______ shénme?",
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        46
+       ]
+      }
+     },
+     {
+      "n": 27,
+      "zh": "你家有（________）口人？",
+      "pinyin": "Nǐ jiā yǒu ______ kǒu rén?",
+      "answer": "F",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        46
+       ]
+      }
+     },
+     {
+      "n": 28,
+      "zh": "你们学校有（________）学生？",
+      "pinyin": "Nǐmen xuéxiào yǒu ______ xuésheng?",
+      "answer": "G",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        46
+       ]
+      }
+     },
+     {
+      "n": 29,
+      "zh": "你好，这个杯子（________）钱？",
+      "pinyin": "Nǐ hǎo, zhège bēizi ______ qián?",
+      "answer": "G",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        46
+       ]
+      }
+     },
+     {
+      "n": 30,
+      "zh": "A：你有（________）个中国朋友？ B：两个。",
+      "pinyin": "Nǐ yǒu ______ ge Zhōngguó péngyou? / Liǎng ge.",
+      "answer": "F/G",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        46
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "三、语音 第一部分",
+    "type_zh": "语音 第一部分 听力",
+    "instruction_zh": "第1–8题：听录音，选择听到的双音节词语",
+    "instruction_en": "Questions 1-8: Listen to the recording and mark the disyllabic words you hear.",
+    "items": [
+     {
+      "n": 1,
+      "zh": "yǔyīn　yǔyán",
+      "options": {
+       "1": "yǔyīn",
+       "2": "yǔyán"
+      },
+      "transcript_zh": "yǔyán（语言）",
+      "answer": "yǔyán",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        47
+       ]
+      }
+     },
+     {
+      "n": 2,
+      "zh": "guǎngbō　guǎngbó",
+      "options": {
+       "1": "guǎngbō",
+       "2": "guǎngbó"
+      },
+      "transcript_zh": "guǎngbō（广播）",
+      "answer": "guǎngbō",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        47
+       ]
+      }
+     },
+     {
+      "n": 3,
+      "zh": "shuǐjīng　shuǐpíng",
+      "options": {
+       "1": "shuǐjīng",
+       "2": "shuǐpíng"
+      },
+      "transcript_zh": "shuǐpíng（水平）",
+      "answer": "shuǐpíng",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        47
+       ]
+      }
+     },
+     {
+      "n": 4,
+      "zh": "yǒumíng　yǒuqíng",
+      "options": {
+       "1": "yǒumíng",
+       "2": "yǒuqíng"
+      },
+      "transcript_zh": "yǒumíng（有名）",
+      "answer": "yǒumíng",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        47
+       ]
+      }
+     },
+     {
+      "n": 5,
+      "zh": "dǎsǎo　dǎsuàn",
+      "options": {
+       "1": "dǎsǎo",
+       "2": "dǎsuàn"
+      },
+      "transcript_zh": "dǎsǎo（打扫）",
+      "answer": "dǎsǎo",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        47
+       ]
+      }
+     },
+     {
+      "n": 6,
+      "zh": "hěn hǎo　xǐhào",
+      "options": {
+       "1": "hěn hǎo",
+       "2": "xǐhào"
+      },
+      "transcript_zh": "xǐhào（喜好）",
+      "answer": "xǐhào",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        47
+       ]
+      }
+     },
+     {
+      "n": 7,
+      "zh": "kǎoshì　kěshì",
+      "options": {
+       "1": "kǎoshì",
+       "2": "kěshì"
+      },
+      "transcript_zh": "kǎoshì（考试）",
+      "answer": "kǎoshì",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        47
+       ]
+      }
+     },
+     {
+      "n": 8,
+      "zh": "yǔnxǔ　yǒuqù",
+      "options": {
+       "1": "yǔnxǔ",
+       "2": "yǒuqù"
+      },
+      "transcript_zh": "yǔnxǔ（允许）",
+      "answer": "yǔnxǔ",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        47
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "三、语音 第二部分",
+    "type_zh": "语音 第二部分 听力",
+    "instruction_zh": "第9–16题：听录音，给下列词语标注声调",
+    "instruction_en": "Questions 9-16: Listen to the recording and add the tone marks to the following words.",
+    "items": [
+     {
+      "n": 9,
+      "zh": "xiaoxin　xiao ming",
+      "transcript_zh": "xiǎoxīn（小心）　xiǎomíng（小名）",
+      "answer": "xiǎoxīn　xiǎo míng",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        47
+       ]
+      }
+     },
+     {
+      "n": 10,
+      "zh": "zongzhi　zhunshi",
+      "transcript_zh": "zǒngzhī（总之）　zhǔnshí（准时）",
+      "answer": "zǒngzhī　zhǔnshí",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        47
+       ]
+      }
+     },
+     {
+      "n": 11,
+      "zh": "juxing　lüxing",
+      "transcript_zh": "jǔxíng（举行）　lǚxíng（旅行）",
+      "answer": "jǔxíng　lǚxíng",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        47
+       ]
+      }
+     },
+     {
+      "n": 12,
+      "zh": "xiaoshi　shouzhi",
+      "transcript_zh": "xiǎoshí（小时）　shǒuzhǐ（手指）",
+      "answer": "xiǎoshí　shǒuzhǐ",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        47
+       ]
+      }
+     },
+     {
+      "n": 13,
+      "zh": "xuanze　xi zao",
+      "transcript_zh": "xuǎnzé（选择）　xǐ zǎo（洗澡）",
+      "answer": "xuǎnzé　xǐ zǎo",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        47
+       ]
+      }
+     },
+     {
+      "n": 14,
+      "zh": "pao bu　zongshi",
+      "transcript_zh": "pǎo bù（跑步）　zǒngshì（总是）",
+      "answer": "pǎo bù　zǒngshì",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        47
+       ]
+      }
+     },
+     {
+      "n": 15,
+      "zh": "yexu　ganmao",
+      "transcript_zh": "yěxǔ（也许）　gǎnmào（感冒）",
+      "answer": "yěxǔ　gǎnmào",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        47
+       ]
+      }
+     },
+     {
+      "n": 16,
+      "zh": "bijiao　bisai",
+      "transcript_zh": "bǐjiào（比较）　bǐsài（比赛）",
+      "answer": "bǐjiào　bǐsài",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        47
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "四、汉字 第一部分",
+    "type_zh": "汉字 偏旁归类",
+    "instruction_zh": "第1–2题：看汉字，找出含有下列偏旁的汉字",
+    "instruction_en": "Questions 1-2: Look at the characters and group the characters with the same radical.",
+    "items": [
+     {
+      "n": 1,
+      "zh": "钅：________",
+      "options": {
+       "A": "吃",
+       "B": "唱",
+       "C": "钱",
+       "D": "针",
+       "E": "叫",
+       "F": "喝",
+       "G": "钉",
+       "H": "钓"
+      },
+      "answer": "C D G H",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        47
+       ]
+      }
+     },
+     {
+      "n": 2,
+      "zh": "口：________",
+      "options": {
+       "A": "吃",
+       "B": "唱",
+       "C": "钱",
+       "D": "针",
+       "E": "叫",
+       "F": "喝",
+       "G": "钉",
+       "H": "钓"
+      },
+      "answer": "A B E F",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        47
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "四、汉字 第二部分",
+    "type_zh": "汉字 写独体字",
+    "instruction_zh": "第3题：看笔顺，写独体字",
+    "instruction_en": "Question 3: Look at the stroke order and practice writing the single-component characters.",
+    "items": [
+     {
+      "n": "3-少",
+      "zh": "少（笔顺：丨 → 亅丨 → 小 → 少）",
+      "pinyin": "shǎo"
+     },
+     {
+      "n": "3-个",
+      "zh": "个（笔顺：丿 → 人 → 个）",
+      "pinyin": "gè"
+     }
+    ]
+   }
+  ],
+  "answers_ref": {
+   "book": "workbook_answers",
+   "pages": [
+    42,
+    43,
+    44,
+    45,
+    46,
+    47
+   ]
+  }
+ },
+ "unclear": [
+  "Сурах бичиг PDF х.77 课文3: ханз/пиньинь «那个杯子多少钱？ Nàge bēizi duōshao qián?» боловч English Version «A: What about that one?» — утгын хувьд ойролцоо, үгчлэн биш (номд байгаагаар).",
+  "Сурах бичиг: 生词 9 «个 gè» (4-р хөг), харин 课文2 «yí ge bēizi» болон бусад газарт хөнгөн «ge» — номд байгаагаар.",
+  "Сурах бичиг PDF х.78 注释3 англи: «“口” is a measure words, too» (номын дүрмийн алдаа, номд байгаагаар).",
+  "Сурах бичиг PDF х.79 注释4: сурах бичигт «口语中读作“块”», багшийн номд «口语中一般用“块”» — хэллэг зөрүүтэй.",
+  "Сурах бичиг PDF х.82 汉字 3 гарчиг ба англи мөрөнд 口字旁-ийн нарийн хэлбэр (жижиг дөрвөлжин тэмдэг) хэвлэгдсэн — Unicode-оор «口» гэж бичсэн. Мөн багшийн номд.",
+  "Сурах бичиг PDF х.81 汉字 2: 上下结构 болон 上中下结构-ийн бүтцийн дүрс (⊟ / ☰ хэлбэрийн жижиг зураг) зөвхөн зурагт — «[⊟ 图]» / «[☰ 图]» гэж тэмдэглэсэн. 少/个-ийн эртний хэлбэрийн хувьсал (4 алхам) зураг — текстээр дүрслэх боломжгүй.",
+  "Ханзны зурлагын дараалал: 少 = 丨 → (亅丨) → 小 → 少 (4 алхам), 个 = 丿 → 人 → 个 (3 алхам) — сурах бичиг PDF х.81 ба дасгалын ном PDF х.64-ийн зурагнаас ойролцоо текстээр; 少-ийн 2-р алхмын хэлбэрийг Unicode-оор яг дүрслэх боломжгүй.",
+  "Сурах бичиг PDF х.79 注释4 мөнгөн дэвсгэртийн зургууд — structure_rows-д «[..纸币图]» гэж, доорх ханз+англи тайлбарыг номд байгаагаар.",
+  "Сурах бичиг 练习3 描述图片 — пиньинь зөвхөн өгөгдсөн үгсийн дээр хэвлэгдсэн; хоосон зайг ______ гэж pinyin-д оруулсан. Хариулт хэвлэгдээгүй. 练习2 回答问题 хариултгүй.",
+  "Сурах бичгийн 运用2 小组活动 хүснэгт (姓名 + 星期一…星期日, жишээ мөр 1: 谢朋 Xiè Péng — 星期一 去学校 qù xuéxiào, 星期六 去商店 qù shāngdiàn) example_zh-д текстээр.",
+  "L08-д 课堂用语, 俗语, 文化 хэсэг байхгүй (сурах бичиг PDF х.76–83).",
+  "Аудио файлын нэр мэдэгдэхгүй тул audio талбар орхисон. CD тэмдэг: сурах бичиг 课文1–3 = 08-1／08-2／08-3, 拼音 跟读 08-4; дасгалын ном 听力 08-1, 语音 08-2.",
+  "Багшийн ном PDF х.52–53 课文 асуултууд: 课文1/2-т «她», 课文3-т «他» гэж; сурах бичгийн яриа хүйсийг заагаагүй. 课文3 асуулт «他想买什么？» — сурах бичгийн 课文3-т «想买» гэж шууд байхгүй (номд байгаагаар).",
+  "Багшийн номын 课文 асуултад тусдаа хариулт байхгүй, нэгдсэн 目标句 л бий — text_questions.a_zh-д тухайн 课文-ийн 目标句-ийг бүтнээр нь давтан тавьсан.",
+  "Багшийн ном 补充语言点练习 (个/口 选词填空) ба 汉字 补充练习 (a. 分类 是、茶、爸、高、怎、多、意; b. 辨认 不/杯、吃/喝、想/怎) — хариулт хэвлэгдээгүй.",
+  "Багшийн ном 语音 注意: «在其余三个音节组合中» — утгаараа «其余三个声调组合» байх ёстой мэт, номд байгаагаар.",
+  "Дасгалын номын хариулт хоёр эх сурвалжид: тусдаа хариултын ном (workbook_answers PDF х.42–47) ба багшийн номын хавсралтын 参考答案 (teacher PDF х.119) — бүгд тохирно (1–4 √××√, 5–8 DABE, 9–12 CACC, 13–17 ×√×√×, 18–22 CABDE, 23–26 ABEC, 27–30 F G G F/G, 汉字 CDGH / ABEF). answer_ref = workbook_answers.",
+  "Дасгалын ном 阅读 30: албан хариулт «F/G» (几 ч, 多少 ч болно) — хоёр эх сурвалжид адил.",
+  "Дасгалын ном 语音 第二部分 9: хариултын номд «xiǎoxīn xiǎo míng» (зайтай, дасгалын номын «xiao ming» шиг), багшийн номын хавсралтын сонсголын бичвэр ба 参考答案-д «xiǎomíng（小名）» (зайгүй) — answer-д хариултын номынхыг. Хариултын номын 16-д «bǐjiào bǐsài a» гэж илүү «a» үсэг хэвлэгдсэн (алдаа) — хассан.",
+  "Дасгалын номын 听力 ба 语音 бичвэр (transcript_zh) — багшийн номын хавсралт PDF х.118–119-аас; дасгалын номд зөвхөн зураг/сонголт хэвлэгдсэн.",
+  "Дасгалын ном 语音 第一部分 (1–8) сонголтод үсэг байхгүй — options-д «1»/«2» түлхүүрээр, answer-д сонгосон үеийг бичсэн.",
+  "Дасгалын номын 三、语音 болон 四、汉字 хэсгийн дугаарлалт 1-ээс дахин эхэлдэг (номд байгаагаар). 汉字 第二部分 3-р даалгавар — хариултгүй бичих дасгал.",
+  "Дасгалын ном 阅读 第二部分 жишээ «你喝水吗？ → F 好的，谢谢！» ба 30 B «两个。» — pinyin талбарт «/»-ээр салгаж хоёр мөрийг нэгтгэсэн.",
+  "Зургийн тайлбарууд (picture_desc_en, pictures_desc_en, options «[picture] …») зургаас товч, объектив дүрсэлсэн."
+ ],
+ "verified_pages": [
+  42,
+  43,
+  44,
+  45,
+  46,
+  47,
+  49,
+  50,
+  51,
+  52,
+  53,
+  54,
+  57,
+  58,
+  59,
+  60,
+  61,
+  62,
+  63,
+  64,
+  76,
+  77,
+  78,
+  79,
+  80,
+  81,
+  82,
+  83,
+  118,
+  119
+ ],
+ "schema_version": 1
+}

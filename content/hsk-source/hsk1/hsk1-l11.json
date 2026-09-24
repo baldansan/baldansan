@@ -1,0 +1,1520 @@
+{
+ "level": "hsk1",
+ "lesson": 11,
+ "book": "HSK1",
+ "title_zh": "现在几点",
+ "title_pinyin": "Xiànzài jǐ diǎn",
+ "title_en": "What’s the time now",
+ "textbook": {
+  "ref": {
+   "book": "textbook",
+   "pages": [
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109
+   ]
+  },
+  "warmup": [
+   {
+    "instruction_zh": "给下面的词语选择对应的时间",
+    "instruction_en": "Match the pictures with the times.",
+    "items": [
+     "①5:00",
+     "②2:00",
+     "③9:45",
+     "④12:00",
+     "⑤3:05",
+     "⑥6:30",
+     "⑦10:10"
+    ],
+    "pictures_desc_en": [
+     "A: a clock with both hands pointing at 12",
+     "B: a clock with the minute hand at 12 and the hour hand at 2",
+     "C: a clock with the minute hand at 1 and the hour hand at 3",
+     "D: a clock with the minute hand at 12 and the hour hand at 5",
+     "E: a clock with the minute hand at 6 and the hour hand between 6 and 7",
+     "F: a clock with the minute hand at 9 and the hour hand near 10",
+     "G: a clock with the minute hand at 2 and the hour hand at 10",
+     "(center) a young woman in a white shirt looking up thoughtfully, with an empty thought bubble above her; the seven clocks are arranged in a circle around her"
+    ]
+   }
+  ],
+  "pronunciation": [
+   {
+    "title_zh": "轻声的功能",
+    "rows": [
+     "老子 | lǎozi (slang) father (n.) | Lǎozǐ Lao-tzu, an ancient Chinese thinker (p.n.)",
+     "买卖 | mǎimai business (n.) | mǎimài to buy and sell (v.)",
+     "大意 | dàyi careless (adj.) | dàyì rough idea (n.)"
+    ],
+    "notes_zh": [
+     "汉语中轻声不仅是一种音变现象，而且还能区分词义。比如：东西，读作“dōngxī”指方向，读作“dōngxi”指物品。"
+    ],
+    "notes_en": [
+     "Function of Neutral-Tone Syllables",
+     "The neutral tone in Chinese is not only a phonological phenomenon, but also a way to distinguish meanings. For example, the word “东西” refers to the directions east and west when read as “dōngxī”, but when read as “dōngxi”, it means “thing/stuff”."
+    ]
+   }
+  ],
+  "texts": [
+   {
+    "n": 1,
+    "title_zh": "在图书馆",
+    "title_en": "In the library",
+    "kind": "dialogue",
+    "lines": [
+     {
+      "speaker": "A",
+      "zh": "现在几点？",
+      "pinyin": "Xiànzài jǐ diǎn?"
+     },
+     {
+      "speaker": "B",
+      "zh": "现在十点十分。",
+      "pinyin": "Xiànzài shí diǎn shí fēn."
+     },
+     {
+      "speaker": "A",
+      "zh": "中午几点吃饭？",
+      "pinyin": "Zhōngwǔ jǐ diǎn chī fàn?"
+     },
+     {
+      "speaker": "B",
+      "zh": "十二点吃饭。",
+      "pinyin": "Shí’èr diǎn chī fàn."
+     }
+    ],
+    "english_version": "A: What’s the time now?\nB: It’s ten past ten.\nA: When shall we have our lunch?\nB: At twelve o’clock.",
+    "new_words": [
+     {
+      "n": 1,
+      "zh": "现在",
+      "pinyin": "xiànzài",
+      "pos": "n.",
+      "en": "now",
+      "text": 1
+     },
+     {
+      "n": 2,
+      "zh": "点",
+      "pinyin": "diǎn",
+      "pos": "m.",
+      "en": "o’clock",
+      "text": 1
+     },
+     {
+      "n": 3,
+      "zh": "分",
+      "pinyin": "fēn",
+      "pos": "m.",
+      "en": "minute",
+      "text": 1
+     },
+     {
+      "n": 4,
+      "zh": "中午",
+      "pinyin": "zhōngwǔ",
+      "pos": "n.",
+      "en": "noon",
+      "text": 1
+     },
+     {
+      "n": 5,
+      "zh": "吃饭",
+      "pinyin": "chī fàn",
+      "pos": "v.",
+      "en": "to eat a meal",
+      "text": 1
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "title_zh": "在家",
+    "title_en": "At home",
+    "kind": "dialogue",
+    "lines": [
+     {
+      "speaker": "A",
+      "zh": "爸爸什么时候回家？",
+      "pinyin": "Bàba shénme shíhou huí jiā?"
+     },
+     {
+      "speaker": "B",
+      "zh": "下午五点。",
+      "pinyin": "Xiàwǔ wǔ diǎn."
+     },
+     {
+      "speaker": "A",
+      "zh": "我们什么时候去看电影？",
+      "pinyin": "Wǒmen shénme shíhou qù kàn diànyǐng?"
+     },
+     {
+      "speaker": "B",
+      "zh": "六点三十分。",
+      "pinyin": "Liù diǎn sānshí fēn."
+     }
+    ],
+    "english_version": "A: When is father coming home?\nB: At five o’clock in the afternoon.\nA: When are we going to see the movie?\nB: At half past six.",
+    "new_words": [
+     {
+      "n": 6,
+      "zh": "时候",
+      "pinyin": "shíhou",
+      "pos": "n.",
+      "en": "time, moment",
+      "text": 2
+     },
+     {
+      "n": 7,
+      "zh": "回",
+      "pinyin": "huí",
+      "pos": "v.",
+      "en": "to come/go back, to return",
+      "text": 2
+     },
+     {
+      "n": 8,
+      "zh": "我们",
+      "pinyin": "wǒmen",
+      "pos": "pron.",
+      "en": "we, us",
+      "text": 2
+     },
+     {
+      "n": 9,
+      "zh": "电影",
+      "pinyin": "diànyǐng",
+      "pos": "n.",
+      "en": "film, movie",
+      "text": 2
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "title_zh": "在家",
+    "title_en": "At home",
+    "kind": "dialogue",
+    "lines": [
+     {
+      "speaker": "A",
+      "zh": "我星期一去北京。",
+      "pinyin": "Wǒ xīngqī yī qù Běijīng."
+     },
+     {
+      "speaker": "B",
+      "zh": "你想在北京住几天？",
+      "pinyin": "Nǐ xiǎng zài Běijīng zhù jǐ tiān?"
+     },
+     {
+      "speaker": "A",
+      "zh": "住三天。",
+      "pinyin": "Zhù sān tiān."
+     },
+     {
+      "speaker": "B",
+      "zh": "星期五前能回家吗？",
+      "pinyin": "Xīngqī wǔ qián néng huí jiā ma?"
+     },
+     {
+      "speaker": "A",
+      "zh": "能。",
+      "pinyin": "Néng."
+     }
+    ],
+    "english_version": "A: I’ll go to Beijing next Monday.\nB: How long will you stay in Beijing?\nA: For three days.\nB: Can you come back before Friday?\nA: Yes, I can.",
+    "new_words": [
+     {
+      "n": 10,
+      "zh": "住",
+      "pinyin": "zhù",
+      "pos": "v.",
+      "en": "to live, to stay",
+      "text": 3
+     },
+     {
+      "n": 11,
+      "zh": "前",
+      "pinyin": "qián",
+      "pos": "n.",
+      "en": "before, earlier than",
+      "text": 3
+     }
+    ],
+    "proper_nouns": [
+     {
+      "zh": "北京",
+      "pinyin": "Běijīng",
+      "en": "Beijing, capital of China"
+     }
+    ]
+   }
+  ],
+  "grammar": [
+   {
+    "n": 1,
+    "title_zh": "时间的表达",
+    "title_en": "Expression of Time",
+    "explanation_zh": "（1）汉语表达时间的时候要用“点”、“分”，遵循由大到小的顺序。\n用“点”来表示整点。例如：\n*注意：在表达2 o’clock时，我们说两点（liǎng diǎn），不说二点（èr diǎn）。\n当不是整点的时候要用到“分”，格式是“……点……分”。例如：\n（2）如果区分上午或者下午，一般格式是“上午……点（……分），下午……点（……分）”。例如：",
+    "explanation_en": "(1) “点” and “分” are used to express time in Chinese, observing the principle of “the bigger unit preceding the smaller unit”.\n“点” means “o’clock”, indicating a whole hour. For example:\nNote: The counterpart of 2 o’clock in Chinese is “两点 (liǎng diǎn)” instead of “二点 (èr diǎn)”.\nIf it is not a “whole-hour” time, “分” is used. The pattern is “……点……分”. For example:\n(2) To distinguish a time before noon from one afternoon, the pattern “上午 (morning)……点（……分）” or “下午 (afternoon)……点（……分）” is used. For example:",
+    "structure_rows": [
+     "05:30 | 点 | 分（数字钟图：05 → 点，30 → 分）"
+    ],
+    "examples": [
+     {
+      "zh": "9:00 → 九点"
+     },
+     {
+      "zh": "11:00 → 十一点"
+     },
+     {
+      "zh": "2:00 → 两点（liǎng diǎn）"
+     },
+     {
+      "zh": "5:30 → 五点三十分"
+     },
+     {
+      "zh": "11:10 → 十一点十分"
+     },
+     {
+      "zh": "2:05 → 两点零（líng, zero）五分"
+     },
+     {
+      "zh": "8:00 am → 上午八点"
+     },
+     {
+      "zh": "3:10 pm → 下午三点十分"
+     },
+     {
+      "zh": "5:25 pm → 下午五点二十五分"
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "title_zh": "时间词做状语",
+    "title_en": "Time Word Used as an Adverbial",
+    "explanation_zh": "时间词在句子中做状语，经常出现在主语后边，也可以在主语前边。例如：",
+    "explanation_en": "When a time word serves as an adverbial modifier in a sentence, it often follows the subject. Sometimes it can be used before the subject. For example:",
+    "structure_rows": [
+     "Subject | Time (adverbial) | Predicate",
+     "妈妈 | 六点 | 做饭。",
+     "李老师 | 上午八点 | 去学校。",
+     "我 | 星期一 | 去北京。",
+     "Time (adverbial) | Subject | Predicate",
+     "七点 | 我 | 吃饭。",
+     "中午十二点 | 我们 | 回家。",
+     "下午五点 | 他们 | 去看电影。"
+    ],
+    "examples": [
+     {
+      "zh": "妈妈六点做饭。"
+     },
+     {
+      "zh": "李老师上午八点去学校。"
+     },
+     {
+      "zh": "我星期一去北京。"
+     },
+     {
+      "zh": "七点我吃饭。"
+     },
+     {
+      "zh": "中午十二点我们回家。"
+     },
+     {
+      "zh": "下午五点他们去看电影。"
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "title_zh": "名词“前”",
+    "title_en": "The Noun “前”",
+    "explanation_zh": "名词“前”可以表示现在或者所说的某个时间以前的时间。例如：",
+    "explanation_en": "The noun “前” can be used to refer to a period prior to the present time or the time being mentioned. For example:",
+    "examples": [
+     {
+      "n": 1,
+      "zh": "三天前　一个星期前　四点前　星期五前"
+     },
+     {
+      "n": 2,
+      "zh": "A：你什么时候去学校？ B：八点前。"
+     },
+     {
+      "n": 3,
+      "zh": "A：你什么时候回北京？ B：星期六前。"
+     },
+     {
+      "n": 4,
+      "zh": "A：（你）星期五前能回家吗？ B：能。"
+     }
+    ]
+   }
+  ],
+  "exercises": [
+   {
+    "n": 1,
+    "type_zh": "分角色朗读课文",
+    "instruction_zh": "分角色朗读课文",
+    "instruction_en": "Role-play the dialogues.",
+    "items": []
+   },
+   {
+    "n": 2,
+    "type_zh": "回答问题",
+    "instruction_zh": "根据课文内容回答问题",
+    "instruction_en": "Answer the questions based on the dialogues.",
+    "items": [
+     {
+      "n": 1,
+      "zh": "现在几点？",
+      "pinyin": "Xiànzài jǐ diǎn?"
+     },
+     {
+      "n": 2,
+      "zh": "他们几点吃饭？",
+      "pinyin": "Tāmen jǐ diǎn chī fàn?"
+     },
+     {
+      "n": 3,
+      "zh": "爸爸什么时候回家？",
+      "pinyin": "Bàba shénme shíhou huí jiā?"
+     },
+     {
+      "n": 4,
+      "zh": "他们什么时候去看电影？",
+      "pinyin": "Tāmen shénme shíhou qù kàn diànyǐng?"
+     },
+     {
+      "n": 5,
+      "zh": "他去哪儿？什么时候能回家？",
+      "pinyin": "Tā qù nǎr? Shénme shíhou néng huí jiā?"
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "type_zh": "描述图片",
+    "instruction_zh": "用本课新学的语言点和词语描述图片",
+    "instruction_en": "Describe the pictures using the newly-learned language points and words.",
+    "items": [
+     {
+      "n": 1,
+      "zh": "她________在学校________。",
+      "pinyin": "Tā zài xuéxiào",
+      "picture_desc_en": "a young woman with glasses holding an open book in a study room with desks; inset clock with hands at about 9:45"
+     },
+     {
+      "n": 2,
+      "zh": "王方中午________去商店________。",
+      "pinyin": "Wáng Fāng zhōngwǔ qù shāngdiàn",
+      "picture_desc_en": "a person in an orange top picking apples from a fruit stand; inset clock with both hands at 12"
+     },
+     {
+      "n": 3,
+      "zh": "他们很忙(busy)，星期六________也工作。",
+      "pinyin": "Tāmen hěn máng, xīngqī liù yě gōngzuò.",
+      "picture_desc_en": "two men at a desk in an office looking at a tablet and papers; inset clock with hands at about 6:30"
+     },
+     {
+      "n": 4,
+      "zh": "她上午不喝茶，下午________前喝茶。",
+      "pinyin": "Tā shàngwǔ bù hē chá, xiàwǔ qián hē chá.",
+      "picture_desc_en": "a smiling elderly woman holding a floral teacup and saucer; inset clock with hands at about 4:00"
+     }
+    ]
+   }
+  ],
+  "characters": {
+   "knowledge_title_zh": "认识独体字／汉字偏旁“阝”和“亻”",
+   "knowledge_zh": "1 认识独体字\n（1）“午”，表示一天中白天十一点到一点的一段时间。\n（2）“电”，本义是下雨时天上出现的锋利多齿的闪光，是一种物理现象，也是一种能源。\n2 汉字偏旁“阝”和“亻”\n偏旁 | 解释 | 例字\n阝 | 耳刀旁，一般跟地形、位置有关系。 | 院 yuàn、阳 yáng\n亻 | 单人旁，一般和人有关系。 | 你 nǐ、他 tā",
+   "knowledge_en": "Single-Component Characters: (1) “午” in Chinese refers to the period of time between 11 am and 1 pm. (2) “电” originally referred to a sharp and multi-edged flash in the sky during a rain. It is both a physical phenomenon and a type of energy.\nChinese Radicals: “阝” and “亻” — The radical “阝” is usually related to a landform or location: 院 yuàn courtyard; 阳 yáng sun. The radical “亻” is usually related to a person: 你 nǐ (singular) you; 他 tā he, him.",
+   "characters": [
+    {
+     "zh": "午",
+     "pinyin": "wǔ",
+     "note_zh": "独体字：表示一天中白天十一点到一点的一段时间（字形演变图4步 + 笔顺图4步：丿 → 𠂉 → … → 午）"
+    },
+    {
+     "zh": "电",
+     "pinyin": "diàn",
+     "note_zh": "独体字：本义下雨时天上出现的锋利多齿的闪光（字形演变图4步 + 笔顺图5步：丨 → 冂 → … → 日 → 电）"
+    },
+    {
+     "zh": "院",
+     "pinyin": "yuàn",
+     "note_zh": "偏旁“阝”例字（courtyard）"
+    },
+    {
+     "zh": "阳",
+     "pinyin": "yáng",
+     "note_zh": "偏旁“阝”例字（sun）"
+    },
+    {
+     "zh": "你",
+     "pinyin": "nǐ",
+     "note_zh": "偏旁“亻”例字（(singular) you）"
+    },
+    {
+     "zh": "他",
+     "pinyin": "tā",
+     "note_zh": "偏旁“亻”例字（he, him）"
+    }
+   ]
+  },
+  "application": [
+   {
+    "title_zh": "双人活动",
+    "instruction_zh": "两人一组，用“现在……点……分”说说下面的时间。",
+    "instruction_en": "Work in pairs and talk about the following times using the structure “现在……点……分”.",
+    "example_zh": [
+     "例如：",
+     "A：现在几点？ Xiànzài jǐ diǎn?",
+     "B：现在八点十八分。 Xiànzài bā diǎn shíbā fēn.",
+     "（电子钟图）①03:30　②11:23　③10:43　④04:15　⑤05:58　⑥01:27　⑦12:27　⑧02:34　⑨07:45　⑩10:05"
+    ]
+   },
+   {
+    "title_zh": "小组活动",
+    "instruction_zh": "3～4人一组，互相询问并记录一日作息习惯，每组请一位同学报告情况。",
+    "instruction_en": "Work in groups of 3-4. Ask about each other’s daily routines and take notes. Each group chooses one member to make a report.",
+    "example_zh": [
+     "例如：",
+     "A：你几点吃早饭？ Nǐ jǐ diǎn chī zǎofàn?",
+     "B：我七点吃早饭。 Wǒ qī diǎn chī zǎofàn.",
+     "表格： | 小王 Xiǎo Wáng | （另有3列空白）",
+     "吃早饭 chī zǎofàn | 7:00",
+     "来学校 lái xuéxiào | 8:20",
+     "看书 kàn shū | 15:00",
+     "回家 huí jiā | 18:00 前（qián）",
+     "看电视 kàn diànshì | 20:00 晚上（wǎnshang）"
+    ]
+   }
+  ]
+ },
+ "teacher": {
+  "ref": {
+   "book": "teacher",
+   "pages": [
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77
+   ]
+  },
+  "objectives_zh": [
+   "重点词语：学生能够熟练掌握“中午、吃饭、时候、回、我们、电影、住”的词义和用法",
+   "语言点：学生能够了解并掌握：（1）时间的表达：……点……分（2）时间词做状语（3）名词“前”：表示现在或者所说的某个时间以前的时间",
+   "语音：学生能够理解汉语轻声的功能，理解有无轻声音节时词义的区别，并能正确朗读",
+   "汉字：学生能够：（1）熟练认读本课生词（2）独立书写独体字“午、电”（3）了解“阝（耳刀旁）、亻（单人旁）”所表示的意思",
+   "功能：学生能够：（1）描述具体的时间点（2）询问和回答某个动作行为发生的时间（3）描述现在或者所说的某个时间以前的时间"
+  ],
+  "steps": [
+   {
+    "title_zh": "一 复习旧课",
+    "body_zh": "1. 教师出示第10课生词卡片，要求学生快速认读下列生词。\n桌子、上、电脑、和、本、里、前面、后面、这儿、没有（没）、能、坐、王方、谢朋\n2. 教师根据第10课重点内容简单提问，活跃课堂气氛。\n（1）老师的桌子上有什么？你的桌子上呢？\n（2）你有汉语书吗？你的书在哪儿？\n（3）你有电脑吗？你的电脑在哪儿？\n（4）你前面的人是谁？\n（5）你后面的人是谁？\n（6）谁在你的左边／右边？"
+   },
+   {
+    "title_zh": "二 学习新课 1 热身",
+    "body_zh": "教师板书热身部分给出的时间，请学生分别说出每个时间对应的图片，然后教师评判正误。\n答案：①D　②B　③F　④A　⑤C　⑥E　⑦G"
+   },
+   {
+    "title_zh": "2 生词",
+    "body_zh": "（1）生词快速认读及正音\n现在、点、分、中午、吃饭、时候、回、我们、电影、住、前、北京\n• 教师使用生词卡片有拼音和汉字的一面，带领学生快速认读一遍本课生词；\n• 使用生词卡片只有汉字的一面，带领学生再次认读本课生词；\n• 请单个学生独自认读2–3个生词；\n• 最后全体学生再快速认读一遍本课所有生词。\n注意：教师应提示学生注意“时候、我们”中轻声音节的声调，以及“我们”中的“我”应该读为半三声。\n（2）重点生词扩展及常用搭配\n中午—今天中午—明天中午—昨天中午\n　↔下午↔早上↔晚上\n吃饭—吃早饭—吃午饭—吃晚饭\n　—在家吃饭—在学校吃饭—在朋友家吃饭—在哪儿吃饭\n时候—什么时候—什么时候吃饭—什么时候学习—什么时候工作\n回—回家—回学校—回宿舍\n我们↔你们↔他们↔她们\n电影—看电影—看中国电影\n　↔电视↔电话↔电脑\n住—在哪儿住—在学校住—在北京住\n　—住几天—住三天—住一个星期\n练习册相关练习：第73页／一／第一部分，第76页／二／第一部分"
+   },
+   {
+    "title_zh": "3 语言点（1）时间的表达",
+    "body_zh": "① 语言点解析\n汉语表达时间点的时候遵循由大到小的顺序。“点”用来表示整点；不是整点时要用到“分”。\n［句型框］……点\n［句型框］……点……分\n如果需要区分上午和下午，一般格式为：\n［句型框］上午……点（……分）\n［句型框］下午……点（……分）\n② 语言点导入\n教师可利用本课热身部分的钟表图片进行导入。教师出示图片，带领学生一起说时间。\n5:00　五点\n2:00　两点\n9:45　九点四十五（分）\n12:00　十二点\n3:05　三点零五（分）\n6:30　六点三十（分）\n10:10　十点十分\n③ 语言点操练\n教师出示阿拉伯数字表示的时间，请学生说出相应的汉语表达。\n8:00　八点\n9:03　九点零三（分）\n11:00　十一点\n12:15　十二点十五（分）\n7:30　七点三十（分）\n4:56　四点五十六（分）\n10:20 am　上午十点二十（分）\n3:18 pm　下午三点十八（分）\n最后组织学生根据实际情况回答问题：现在几点？"
+   },
+   {
+    "title_zh": "3 语言点（2）时间词做状语",
+    "body_zh": "① 语言点解析\n时间词在句子中可以做状语，表示动作行为发生的时间。时间词经常出现在主语后边，有时候也可以放在主语前边。\n［句型框］主语＋时间词＋动词。\n［句型框］时间词＋主语＋动词。\n疑问形式是：\n［句型框］主语＋几点／什么时候＋动词？\n② 语言点导入\n教师板书一个时间“11:30”，然后出示一张一个人在睡觉的情景图片。\n教师：他做什么？\n学生：睡觉。\n教师：几点？\n学生：十一点半。\n教师：他几点睡觉？\n学生：他十一点半睡觉。\n③ 语言点操练\n教师给出做饭、吃饭、去学校、去商店的情景图片，并给出相应的用阿拉伯数字表示的时间，组织学生进行问答练习。例如：\n教师：他几点做饭？\n学生：他……点做饭。\n其他目标句：他……点吃饭。\n他……点去学校。\n他……点去商店。\n④ 语言点扩展练习\n教师可组织学生两人一组，根据提示进行对话练习。\nA：你几点／什么时候……？\nB：……\n［提示框］去学校　学习汉语　去超市　去买书　回家　去吃中国菜　去看朋友　去北京　……"
+   },
+   {
+    "title_zh": "3 语言点（3）名词“前”",
+    "body_zh": "① 语言点解析\n名词“前”可以表示现在或者所说的某个时间以前的时间。\n［句型框］什么时候／多长时间＋前\n② 语言点导入\n教师：你什么时候回家？\n学生：我……（几点）前回家。\n教师：你什么时候睡觉？\n学生：我……（几点）前睡觉。\n③ 语言点操练\n教师可组织学生根据实际情况进行问答练习。\n目标句：我早上七点前起床。\n李老师早上七点前去工作。\n老师今年8月前回中国。\n④ 语言点扩展练习\n教师可组织学生两人一组，根据实际情况进行对话练习。\nA：你什么时候……？\nB：……\n［提示框］吃早饭　吃午饭　吃晚饭　睡觉　去学校　回家　……"
+   },
+   {
+    "title_zh": "4 课文",
+    "body_zh": "课文1\n（1）让学生听两遍录音并回答下列问题：\n现在几点？\n他们中午几点吃饭？\n（2）根据学生的回答，教师领说变为叙述体的课文，并请学生单个复述：\n现在十点十分，他们中午十二点吃饭。\n（3）教师领读课文两遍，然后让学生分角色朗读课文。\n课文2\n（1）让学生听两遍录音并回答下列问题：\n爸爸在家吗？\n爸爸什么时候回家？\n他们什么时候去看电影？\n（2）根据学生的回答，教师领说变为叙述体的课文，并请学生单个复述：\n爸爸不在家，他下午五点回来。他们下午六点三十分去看电影。\n（3）教师领读课文两遍，然后让学生分角色朗读课文。\n（4）模仿练习\n教师组织学生两人一组，根据提示进行对话练习。\nA：……什么时候回来？\nB：……。\nA：我们什么时候去……？\nB：……。\n课文3\n（1）让学生听两遍录音并回答下列问题：\n他什么时候去北京？\n他想在北京住几天？\n他什么时候能回家？\n（2）根据学生的回答，教师领说变为叙述体的课文，并请学生单个复述：\n他星期一去北京，他想在北京住三天。他星期五前能回家。\n（3）教师领读课文两遍，然后让学生分角色朗读课文。"
+   },
+   {
+    "title_zh": "5 语音",
+    "body_zh": "轻声的功能\n汉语中轻声不仅是一种音变现象，而且还能区分词义。有的词语中的音节，是否读作轻声意义完全不同。例如“地道”一词，读作“dìdào”时意思是“地下通道”；而如果读作含有轻声音节的“dìdao”时，意思则是“真正的，纯粹的，有名的产地出产的”。\n教师可领读课本第86页的三个例词，并提示学生注意有无轻声音节时词义的区别。还可让学生课下利用词典或上网搜索，每人再找1–2个汉语中读轻声和不读轻声意思不同的例子。\n练习册相关练习：第79页／三"
+   },
+   {
+    "title_zh": "6 汉字",
+    "body_zh": "① 知识点解析\n独体字\n午：表示一天中白天大约十一点到十三点的一段时间。\n电：本义是下雨时天上出现的锋利多齿的闪光，是一种物理现象，也是一种能源。\n偏旁\n阝：耳刀旁，一般跟地形、位置有关系。\n亻：单人旁，一般和人有关系。\n② 汉字练习\n• 教师板书或者用手指在空中书写本课独体字“午、电”，带领学生一起识记独体字的笔画笔顺。\n• 教师板书本课偏旁“阝、亻”，提示学生注意这两个偏旁的笔画和笔顺，并书写各自的代表汉字，帮助学生识记该偏旁的意义。\n• 补充练习\n辨认下列汉字并组词\n他（　）／住（　）　回（　）／电（　）\n午（　）／天（　）　明（　）／时（　）\n练习册相关练习：第80页／四"
+   },
+   {
+    "title_zh": "7 补充课堂活动——听一听，排一排",
+    "body_zh": "教师编写一些时间词做状语的句子，并把这些句子拆分后写在卡片上（每个句子的主语部分、时间词做状语部分、谓语部分分别写在三张卡片上），然后打乱顺序。可把全班学生分为三组，分别持有主语部分、时间词做状语部分、谓语部分的卡片。教师朗读句子，让学生根据老师所读的句子把卡片排列在黑板上，最后老师带领学生一起判断正误并朗读句子。\n例如：教师朗读“1. 我和大卫明天早上八点去学校。”三组学生把卡片排列到黑板上。\n［卡片］我和大卫　［卡片］明天早上八点　［卡片］去学校"
+   },
+   {
+    "title_zh": "附注：建议教学用具",
+    "body_zh": "1. 生词卡片：第10、11课生词卡片\n2. 独体字卡片：第11课独体字卡片\n3. 图片：睡觉、做饭、吃饭、去学校、去商店\n4. 补充活动卡片：主语、时间词做状语、谓语\n如：［卡片图］我和大卫"
+   }
+  ],
+  "notes_zh": [
+   "注意：教师应提示学生注意“时候、我们”中轻声音节的声调，以及“我们”中的“我”应该读为半三声。（生词）",
+   "注意：在表示2:00时，我们要说“两点”，不能说“二点”。（语言点1）",
+   "注意：在表示“分”小于10的时间时，“点”和“分”之间一般要加上“零”，如“2:05”应读作“两点零五（分）”。如果不加“零”，最后的“分”不能省略，如“2:05”还可以说“两点五分”。如果刚好是“10分”，这时最后的“分”也不能省略，如“10:10”要说“十点十分”。（语言点1）",
+   "注意：教师要提示学生注意时间词在句子中的位置：时间词可以出现在主语的后边或者前边，但是一定要放在动词的前边。“我吃饭中午十二点”这样的句子是错误的。（语言点2）"
+  ],
+  "warmup_answers_zh": [
+   "答案：①D　②B　③F　④A　⑤C　⑥E　⑦G"
+  ],
+  "text_questions": [
+   {
+    "text": 1,
+    "q_zh": "现在几点？"
+   },
+   {
+    "text": 1,
+    "q_zh": "他们中午几点吃饭？"
+   },
+   {
+    "text": 2,
+    "q_zh": "爸爸在家吗？"
+   },
+   {
+    "text": 2,
+    "q_zh": "爸爸什么时候回家？"
+   },
+   {
+    "text": 2,
+    "q_zh": "他们什么时候去看电影？"
+   },
+   {
+    "text": 3,
+    "q_zh": "他什么时候去北京？"
+   },
+   {
+    "text": 3,
+    "q_zh": "他想在北京住几天？"
+   },
+   {
+    "text": 3,
+    "q_zh": "他什么时候能回家？"
+   }
+  ],
+  "summary_zh": "• 语言点：时间的表达：……点……分\n　时间词做状语\n　“……前”表示时间\n• 语音：轻声的功能\n• 汉字：独体字“午、电”\n　偏旁“阝、亻”"
+ },
+ "workbook": {
+  "ref": {
+   "book": "workbook",
+   "pages": [
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88
+   ]
+  },
+  "sections": [
+   {
+    "n": "一、听力 第一部分",
+    "type_zh": "听力 第一部分",
+    "instruction_zh": "第1–5题：听词或短语，判断对错",
+    "instruction_en": "Questions 1-5: Listen to the words or phrases and decide whether the pictures are right or wrong based on what you hear.",
+    "items": [
+     {
+      "n": "例1",
+      "zh": "很高兴 hěn gāoxìng very happy",
+      "transcript_zh": "很高兴",
+      "picture_desc_en": "a smiling young woman with her hair tied back",
+      "answer": "√",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        81
+       ]
+      }
+     },
+     {
+      "n": "例2",
+      "zh": "看电影 kàn diànyǐng to see a movie",
+      "transcript_zh": "看电影",
+      "picture_desc_en": "an older man in a suit sitting and reading papers",
+      "answer": "×",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        81
+       ]
+      }
+     },
+     {
+      "n": 1,
+      "zh": "",
+      "transcript_zh": "吃饭",
+      "picture_desc_en": "three young women sitting together on a sofa looking at a phone",
+      "answer": "×",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        61
+       ]
+      }
+     },
+     {
+      "n": 2,
+      "zh": "",
+      "transcript_zh": "看电影",
+      "picture_desc_en": "an audience in a cinema wearing 3D glasses, with popcorn",
+      "answer": "√",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        61
+       ]
+      }
+     },
+     {
+      "n": 3,
+      "zh": "",
+      "transcript_zh": "九点",
+      "picture_desc_en": "a wall clock with the minute hand at 12 and the hour hand at 5",
+      "answer": "×",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        61
+       ]
+      }
+     },
+     {
+      "n": 4,
+      "zh": "",
+      "transcript_zh": "看书",
+      "picture_desc_en": "a young woman holding a folder and looking at her wristwatch",
+      "answer": "×",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        61
+       ]
+      }
+     },
+     {
+      "n": 5,
+      "zh": "",
+      "transcript_zh": "北京",
+      "picture_desc_en": "the Eiffel Tower seen across a river",
+      "answer": "×",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        61
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "一、听力 第二部分",
+    "type_zh": "听力 第二部分",
+    "instruction_zh": "第6–10题：听对话，选择与对话内容一致的图片",
+    "instruction_en": "Questions 6-10: Listen to the dialogues and choose the right picture for each dialogue you hear.",
+    "items": [
+     {
+      "n": "例",
+      "zh": "女：你好！ Nǐ hǎo! (How do you do?) 男：你好！很高兴认识你。 Nǐ hǎo! Hěn gāoxìng rènshi nǐ. (How do you do? Nice to meet you.)",
+      "transcript_zh": "女：你好！ 男：你好！很高兴认识你。",
+      "options": {
+       "A": "[picture] a cinema hall with a large screen and rows of seats",
+       "B": "[picture] a desk calendar page showing “September” and “17”",
+       "C": "[picture] a woman and a man in business clothes shaking hands in front of an elevator",
+       "D": "[picture] a man with glasses peeking up below a wall clock showing 5:00",
+       "E": "[picture] a clock with Roman numerals, the hour hand near 1 and the minute hand at 2",
+       "F": "[picture] a tear-off calendar page with “SATURDAY” circled"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        82
+       ]
+      }
+     },
+     {
+      "n": 6,
+      "zh": "",
+      "options": {
+       "A": "[picture] a cinema hall with a large screen and rows of seats",
+       "B": "[picture] a desk calendar page showing “September” and “17”",
+       "C": "[picture] a woman and a man in business clothes shaking hands in front of an elevator",
+       "D": "[picture] a man with glasses peeking up below a wall clock showing 5:00",
+       "E": "[picture] a clock with Roman numerals, the hour hand near 1 and the minute hand at 2",
+       "F": "[picture] a tear-off calendar page with “SATURDAY” circled"
+      },
+      "transcript_zh": "男：现在几点？ 女：现在五点。",
+      "answer": "D",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        62
+       ]
+      }
+     },
+     {
+      "n": 7,
+      "zh": "",
+      "options": {
+       "A": "[picture] a cinema hall with a large screen and rows of seats",
+       "B": "[picture] a desk calendar page showing “September” and “17”",
+       "C": "[picture] a woman and a man in business clothes shaking hands in front of an elevator",
+       "D": "[picture] a man with glasses peeking up below a wall clock showing 5:00",
+       "E": "[picture] a clock with Roman numerals, the hour hand near 1 and the minute hand at 2",
+       "F": "[picture] a tear-off calendar page with “SATURDAY” circled"
+      },
+      "transcript_zh": "男：你什么时候见李老师？ 女：我下午一点十分去学校见李老师。",
+      "answer": "E",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        62
+       ]
+      }
+     },
+     {
+      "n": 8,
+      "zh": "",
+      "options": {
+       "A": "[picture] a cinema hall with a large screen and rows of seats",
+       "B": "[picture] a desk calendar page showing “September” and “17”",
+       "C": "[picture] a woman and a man in business clothes shaking hands in front of an elevator",
+       "D": "[picture] a man with glasses peeking up below a wall clock showing 5:00",
+       "E": "[picture] a clock with Roman numerals, the hour hand near 1 and the minute hand at 2",
+       "F": "[picture] a tear-off calendar page with “SATURDAY” circled"
+      },
+      "transcript_zh": "男：我想看电影。 女：好啊，下午我有时间，我们一起去。",
+      "answer": "A",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        62
+       ]
+      }
+     },
+     {
+      "n": 9,
+      "zh": "",
+      "options": {
+       "A": "[picture] a cinema hall with a large screen and rows of seats",
+       "B": "[picture] a desk calendar page showing “September” and “17”",
+       "C": "[picture] a woman and a man in business clothes shaking hands in front of an elevator",
+       "D": "[picture] a man with glasses peeking up below a wall clock showing 5:00",
+       "E": "[picture] a clock with Roman numerals, the hour hand near 1 and the minute hand at 2",
+       "F": "[picture] a tear-off calendar page with “SATURDAY” circled"
+      },
+      "transcript_zh": "女：你星期六工作吗？ 男：不工作。",
+      "answer": "F",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        62
+       ]
+      }
+     },
+     {
+      "n": 10,
+      "zh": "",
+      "options": {
+       "A": "[picture] a cinema hall with a large screen and rows of seats",
+       "B": "[picture] a desk calendar page showing “September” and “17”",
+       "C": "[picture] a woman and a man in business clothes shaking hands in front of an elevator",
+       "D": "[picture] a man with glasses peeking up below a wall clock showing 5:00",
+       "E": "[picture] a clock with Roman numerals, the hour hand near 1 and the minute hand at 2",
+       "F": "[picture] a tear-off calendar page with “SATURDAY” circled"
+      },
+      "transcript_zh": "女：你什么时候去北京？ 男：9月17号去，住三天。",
+      "answer": "B",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        62
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "一、听力 第三部分",
+    "type_zh": "听力 第三部分",
+    "instruction_zh": "第11–15题：听句子，回答问题",
+    "instruction_en": "Questions 11-15: Listen to the sentences and answer the questions.",
+    "items": [
+     {
+      "n": "例",
+      "zh": "问：她下午去哪里？",
+      "pinyin": "Tā xiàwǔ qù nǎli?",
+      "transcript_zh": "下午我去商店，我想买一些水果。 问：她下午去哪里？",
+      "options": {
+       "A": "商店 shāngdiàn store",
+       "B": "医院 yīyuàn hospital",
+       "C": "学校 xuéxiào school"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        83
+       ]
+      }
+     },
+     {
+      "n": 11,
+      "zh": "问：他／她几点工作？",
+      "transcript_zh": "我十点去工作，现在在家。 问：他／她几点工作？",
+      "options": {
+       "A": "九点 jiǔ diǎn",
+       "B": "十点 shí diǎn",
+       "C": "十一点 shíyī diǎn"
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        62
+       ]
+      }
+     },
+     {
+      "n": 12,
+      "zh": "问：他们几点去看电影？",
+      "transcript_zh": "现在八点，我们九点前去看电影。 问：他们几点去看电影？",
+      "options": {
+       "A": "八点五十分 bā diǎn wǔshí fēn",
+       "B": "九点十分 jiǔ diǎn shí fēn",
+       "C": "九点三十分 jiǔ diǎn sānshí fēn"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        62
+       ]
+      }
+     },
+     {
+      "n": 13,
+      "zh": "问：他／她十二点做什么？",
+      "transcript_zh": "我中午十二点看书。 问：他／她十二点做什么？",
+      "options": {
+       "A": "看电影 kàn diànyǐng",
+       "B": "看书 kàn shū",
+       "C": "吃饭 chī fàn"
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        62
+       ]
+      }
+     },
+     {
+      "n": 14,
+      "zh": "问：他／她什么时候喝茶？",
+      "transcript_zh": "我下午喝茶，中午十二点前不喝茶。 问：他／她什么时候喝茶？",
+      "options": {
+       "A": "十点 shí diǎn",
+       "B": "十二点 shí’èr diǎn",
+       "C": "两点 liǎng diǎn"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        62
+       ]
+      }
+     },
+     {
+      "n": 15,
+      "zh": "问：他什么时候回家？",
+      "transcript_zh": "他在北京住三天，星期五回家。 问：他什么时候回家？",
+      "options": {
+       "A": "星期三 xīngqī sān",
+       "B": "星期五 xīngqī wǔ",
+       "C": "不回家 bù huí jiā"
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        62
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第一部分",
+    "type_zh": "阅读 第一部分",
+    "instruction_zh": "第16–20题：看图片，判断图片内容是否与提示词一致",
+    "instruction_en": "Questions 16-20: Look at the pictures and decide whether the given words are right or wrong.",
+    "items": [
+     {
+      "n": "例1",
+      "zh": "电视 diànshì television",
+      "picture_desc_en": "an open laptop computer",
+      "answer": "×",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        84
+       ]
+      }
+     },
+     {
+      "n": "例2",
+      "zh": "飞机 fēijī airplane",
+      "picture_desc_en": "an airplane in flight",
+      "answer": "√",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        84
+       ]
+      }
+     },
+     {
+      "n": 16,
+      "zh": "我们",
+      "pinyin": "wǒmen",
+      "picture_desc_en": "a group of six smiling young people posing close together",
+      "answer": "√",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        63
+       ]
+      }
+     },
+     {
+      "n": 17,
+      "zh": "米饭",
+      "pinyin": "mǐfàn",
+      "picture_desc_en": "a plate of fried battered pieces of food",
+      "answer": "×",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        63
+       ]
+      }
+     },
+     {
+      "n": 18,
+      "zh": "中午",
+      "pinyin": "zhōngwǔ",
+      "picture_desc_en": "two drawn clocks both showing 12 o’clock, one with a star above it and one with rays above it",
+      "answer": "√",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        63
+       ]
+      }
+     },
+     {
+      "n": 19,
+      "zh": "工作",
+      "pinyin": "gōngzuò",
+      "picture_desc_en": "elderly men sitting outdoors at a table playing cards",
+      "answer": "×",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        63
+       ]
+      }
+     },
+     {
+      "n": 20,
+      "zh": "电影",
+      "pinyin": "diànyǐng",
+      "picture_desc_en": "an open laptop computer",
+      "answer": "×",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        63
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第二部分",
+    "type_zh": "阅读 第二部分",
+    "instruction_zh": "第21–25题：看问题，选择正确的回答",
+    "instruction_en": "Questions 21-25: Read the questions and choose the right answer to each of them.",
+    "items": [
+     {
+      "n": "例",
+      "zh": "你喝水吗？ Nǐ hē shuǐ ma? (Would you like some water?)",
+      "options": {
+       "A": "不去学校，我在家。 Bú qù xuéxiào, wǒ zài jiā.",
+       "B": "我不去，没有时间。 Wǒ bú qù, méiyǒu shíjiān.",
+       "C": "不工作，你12点来吧。 Bù gōngzuò, nǐ shí’èr diǎn lái ba.",
+       "D": "星期五前。 Xīngqī wǔ qián.",
+       "E": "他不想去。 Tā bù xiǎng qù.",
+       "F": "好的，谢谢！ Hǎo de, xièxie!"
+      },
+      "answer": "F",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        85
+       ]
+      }
+     },
+     {
+      "n": 21,
+      "zh": "下午三点你去学校吗？",
+      "pinyin": "Xiàwǔ sān diǎn nǐ qù xuéxiào ma?",
+      "options": {
+       "A": "不去学校，我在家。 Bú qù xuéxiào, wǒ zài jiā.",
+       "B": "我不去，没有时间。 Wǒ bú qù, méiyǒu shíjiān.",
+       "C": "不工作，你12点来吧。 Bù gōngzuò, nǐ shí’èr diǎn lái ba.",
+       "D": "星期五前。 Xīngqī wǔ qián.",
+       "E": "他不想去。 Tā bù xiǎng qù.",
+       "F": "好的，谢谢！ Hǎo de, xièxie!"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        64
+       ]
+      }
+     },
+     {
+      "n": 22,
+      "zh": "你什么时候回北京？",
+      "pinyin": "Nǐ shénme shíhou huí Běijīng?",
+      "options": {
+       "A": "不去学校，我在家。 Bú qù xuéxiào, wǒ zài jiā.",
+       "B": "我不去，没有时间。 Wǒ bú qù, méiyǒu shíjiān.",
+       "C": "不工作，你12点来吧。 Bù gōngzuò, nǐ shí’èr diǎn lái ba.",
+       "D": "星期五前。 Xīngqī wǔ qián.",
+       "E": "他不想去。 Tā bù xiǎng qù.",
+       "F": "好的，谢谢！ Hǎo de, xièxie!"
+      },
+      "answer": "D",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        64
+       ]
+      }
+     },
+     {
+      "n": 23,
+      "zh": "中午你工作吗？",
+      "pinyin": "Zhōngwǔ nǐ gōngzuò ma?",
+      "options": {
+       "A": "不去学校，我在家。 Bú qù xuéxiào, wǒ zài jiā.",
+       "B": "我不去，没有时间。 Wǒ bú qù, méiyǒu shíjiān.",
+       "C": "不工作，你12点来吧。 Bù gōngzuò, nǐ shí’èr diǎn lái ba.",
+       "D": "星期五前。 Xīngqī wǔ qián.",
+       "E": "他不想去。 Tā bù xiǎng qù.",
+       "F": "好的，谢谢！ Hǎo de, xièxie!"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        64
+       ]
+      }
+     },
+     {
+      "n": 24,
+      "zh": "你中午去吃饭吗？",
+      "pinyin": "Nǐ zhōngwǔ qù chī fàn ma?",
+      "options": {
+       "A": "不去学校，我在家。 Bú qù xuéxiào, wǒ zài jiā.",
+       "B": "我不去，没有时间。 Wǒ bú qù, méiyǒu shíjiān.",
+       "C": "不工作，你12点来吧。 Bù gōngzuò, nǐ shí’èr diǎn lái ba.",
+       "D": "星期五前。 Xīngqī wǔ qián.",
+       "E": "他不想去。 Tā bù xiǎng qù.",
+       "F": "好的，谢谢！ Hǎo de, xièxie!"
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        64
+       ]
+      }
+     },
+     {
+      "n": 25,
+      "zh": "大卫去看电影吗？",
+      "pinyin": "Dàwèi qù kàn diànyǐng ma?",
+      "options": {
+       "A": "不去学校，我在家。 Bú qù xuéxiào, wǒ zài jiā.",
+       "B": "我不去，没有时间。 Wǒ bú qù, méiyǒu shíjiān.",
+       "C": "不工作，你12点来吧。 Bù gōngzuò, nǐ shí’èr diǎn lái ba.",
+       "D": "星期五前。 Xīngqī wǔ qián.",
+       "E": "他不想去。 Tā bù xiǎng qù.",
+       "F": "好的，谢谢！ Hǎo de, xièxie!"
+      },
+      "answer": "E",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        64
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第三部分",
+    "type_zh": "阅读 第三部分",
+    "instruction_zh": "第26–30题：看句子，选择正确的词语填空",
+    "instruction_en": "Questions 26-30: Read the sentences and choose the right words to fill in the brackets.",
+    "word_bank": [
+     [
+      "A 点 diǎn",
+      "B 分 fēn",
+      "C 时候 shíhou",
+      "D 名字 míngzi",
+      "E 前 qián",
+      "F 住 zhù"
+     ]
+    ],
+    "items": [
+     {
+      "n": "例",
+      "zh": "你叫什么（________）？",
+      "pinyin": "Nǐ jiào shénme (What is your name?)",
+      "answer": "D",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        86
+       ]
+      }
+     },
+     {
+      "n": 26,
+      "zh": "我在王方家（________）一个星期，星期六回家。",
+      "pinyin": "Wǒ zài Wáng Fāng jiā ______ yí ge xīngqī, xīngqī liù huí jiā.",
+      "answer": "F",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        65
+       ]
+      }
+     },
+     {
+      "n": 27,
+      "zh": "你什么（________）有时间？我们去看电影。",
+      "pinyin": "Nǐ shénme ______ yǒu shjiān? Wǒmen qù kàn diànyǐng.",
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        65
+       ]
+      }
+     },
+     {
+      "n": 28,
+      "zh": "现在中午十二（________），你去吃饭吗？",
+      "pinyin": "Xiànzài zhōngwǔ shí’èr ______ nǐ qù chī fàn ma?",
+      "answer": "A",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        65
+       ]
+      }
+     },
+     {
+      "n": 29,
+      "zh": "我现在工作，十二点十（________）去吃饭。",
+      "pinyin": "Wǒ xiànzài gōngzuò, shí’èr diǎn shí ______ qù chī fàn.",
+      "answer": "B",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        65
+       ]
+      }
+     },
+     {
+      "n": 30,
+      "zh": "我八点（________）在家。",
+      "pinyin": "Wǒ bā diǎn ______ zài jiā.",
+      "answer": "E",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        65
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "三、语音 第一部分",
+    "type_zh": "语音 第一部分 听力",
+    "instruction_zh": "第1–5题：听录音，选择听到的音节",
+    "instruction_en": "Questions 1-5: Listen to the recording and mark the syllables you hear.",
+    "items": [
+     {
+      "n": 1,
+      "zh": "A　B　C",
+      "options": {
+       "A": "gǔgǔ",
+       "B": "gūgu",
+       "C": "fùgǔ"
+      },
+      "transcript_zh": "gūgu（姑姑）",
+      "answer": "B",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        65
+       ]
+      }
+     },
+     {
+      "n": 2,
+      "zh": "A　B　C",
+      "options": {
+       "A": "tiān shang",
+       "B": "Tiān Shān",
+       "C": "tiān shàng"
+      },
+      "transcript_zh": "Tiān Shān（天山）",
+      "answer": "B",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        65
+       ]
+      }
+     },
+     {
+      "n": 3,
+      "zh": "A　B　C",
+      "options": {
+       "A": "kànle",
+       "B": "kàn kè",
+       "C": "kànkan"
+      },
+      "transcript_zh": "kànkan（看看）",
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        65
+       ]
+      }
+     },
+     {
+      "n": 4,
+      "zh": "A　B　C",
+      "options": {
+       "A": "tā de",
+       "B": "tē de",
+       "C": "tā dé"
+      },
+      "transcript_zh": "tā de（他的）",
+      "answer": "A",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        65
+       ]
+      }
+     },
+     {
+      "n": 5,
+      "zh": "A　B　C",
+      "options": {
+       "A": "nǐmen",
+       "B": "nǐ mén",
+       "C": "nǐ mèn"
+      },
+      "transcript_zh": "nǐmen（你们）",
+      "answer": "A",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        65
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "三、语音 第二部分",
+    "type_zh": "语音 第二部分 跟读",
+    "instruction_zh": "第6题：听录音并跟读，注意轻声音节的读法",
+    "instruction_en": "Question 6: Listen to the recording and read after it. Pay attertion to the pronunciation of the neutral tones.",
+    "items": [
+     {
+      "n": 6,
+      "zh": "做早操\n同学们早上好，我们一起做早操。\n伸伸胳膊，踢踢腿，摇摇脑袋，扭扭腰。\n天天锻炼有精神，早睡早起身体好。",
+      "pinyin": "Zuò Zǎocāo\nTóngxuémen zǎoshang hǎo, wǒmen yìqǐ zuò zǎocāo.\nShēnshen gēbo, tīti tuǐ, yáoyao nǎodai, niǔniu yāo.\nTiāntiān duànliàn yǒu jīngshen, zǎo shuì zǎo qǐ shēntǐ hǎo."
+     }
+    ]
+   },
+   {
+    "n": "四、汉字 第一部分",
+    "type_zh": "汉字 偏旁归类",
+    "instruction_zh": "第1–2题：看汉字，找出含有下列偏旁的汉字",
+    "instruction_en": "Questions 1-2: Look at the characters and group the characters with the same radical.",
+    "word_bank": [
+     [
+      "A 院",
+      "B 你",
+      "C 他",
+      "D 们"
+     ],
+     [
+      "E 住",
+      "F 阵",
+      "G 阴",
+      "H 阳"
+     ]
+    ],
+    "items": [
+     {
+      "n": 1,
+      "zh": "阝：________",
+      "answer": "A F G H",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        66
+       ]
+      }
+     },
+     {
+      "n": 2,
+      "zh": "亻：________",
+      "answer": "B C D E",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        66
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "四、汉字 第二部分",
+    "type_zh": "汉字 写独体字",
+    "instruction_zh": "第3题：看笔顺，写独体字",
+    "instruction_en": "Question 3: Look at the stroke order and practice writing the single-component characters.",
+    "items": [
+     {
+      "n": "3-午",
+      "zh": "午 wǔ（笔顺图4步：丿 → 𠂉 → … → 午）"
+     },
+     {
+      "n": "3-电",
+      "zh": "电 diàn（笔顺图5步：丨 → 冂 → … → 日 → 电）"
+     }
+    ]
+   }
+  ],
+  "answers_ref": {
+   "book": "workbook_answers",
+   "pages": [
+    61,
+    62,
+    63,
+    64,
+    65,
+    66
+   ]
+  }
+ },
+ "unclear": [
+  "Сурах бичиг PDF х.103: 课文2 болон 课文3 хоёулаа «在家 At home» гарчигтай — номд байгаагаар.",
+  "Сурах бичиг PDF х.103 课文3 English Version «I’ll go to Beijing next Monday.» — хятад бичвэрт «next» гэсэн үг байхгүй («我星期一去北京。»); номд байгаагаар.",
+  "Сурах бичиг PDF х.102 热身 — 7 цагны зураг (A–G) зөвхөн зураг; pictures_desc_en-д зүүний байрлалаар дүрсэлсэн. Багшийн номын хариулт (PDF х.72): ①D ②B ③F ④A ⑤C ⑥E ⑦G — зурагтай тохирч байна.",
+  "Сурах бичиг PDF х.104 注释1 англи бичвэр «To distinguish a time before noon from one afternoon» — номд байгаагаар (explanation_en).",
+  "Сурах бичиг PDF х.104 注释1 — 05:30 дижитал цагны зураг (05 → 点；30 → 分 гэсэн тэмдэглэгээтэй) — structure_rows-д товч тэмдэглэсэн. Жишээнүүд номд дугааргүй (9:00 → 九点 …) тул examples-д n оруулаагүй.",
+  "Сурах бичиг PDF х.104–105 注释2: номд зөвхөн 2 хүснэгт (Subject | Time | Predicate ба Time | Subject | Predicate) — structure_rows-д мөр мөрөөр; examples-д хүснэгтийн мөр бүрийг өгүүлбэр болгон нийлүүлж бичсэн (validator жишээ шаарддаг), шинэ үг нэмээгүй.",
+  "Сурах бичиг PDF х.106 练习3 描述图片 — хоосон зайтай өгүүлбэрүүдийн пиньинь зөвхөн хэвлэгдсэн үгсэд; зураг бүрт цагны зураг (9:45, 12:00, 6:30, 4:00 орчим) байгаа, хариулт хэвлэгдээгүй. 3-р өгүүлбэрт «忙(busy)» — номд хаалтан дотор англиар.",
+  "Сурах бичиг PDF х.106 拼音 轻声的功能 хүснэгт: «大意» хөнгөн хэлбэр «dàyi» — номд байгаагаар.",
+  "Сурах бичиг PDF х.107 独体字 午／电-ийн эртний хэлбэрийн хувьсал (字形演变图 — 4 алхам) болон 田字格 зурлагын дараалал зөвхөн зурагт; дунд алхмууд Unicode-оор бүрэн дүрслэгдэхгүй тул «…» гэж бичсэн. Дасгалын ном PDF х.88 мөн адил.",
+  "Сурах бичиг «午»: «十一点到一点» (PDF х.107) ↔ багшийн ном «大约十一点到十三点» (PDF х.76) — хоёр ном өөр хэлбэрээр бичсэн; тус бүрийг номд байгаагаар.",
+  "Сурах бичиг PDF х.108 双人活动 — 10 дижитал цагны зураг (03:30 … 10:05) — example_zh-д цагийн тоогоор; PDF х.109 小组活动 хүснэгт: «小王» багана бөглөгдсөн, бусад 3 багана хоосон.",
+  "Энэ хичээлд 课堂用语 (classroom_expressions) ба 文化 хэсэг сурах бичгийн PDF х.102–109-д байхгүй.",
+  "Багшийн ном PDF х.70 (prep.json-ийн teacher мужид орсон) нь 10-р хичээлийн «文化：中国人姓名的特点» — 11-р хичээлд хамаарахгүй тул оруулаагүй; teacher.ref = PDF х.71–77.",
+  "Багшийн ном 课文 асуултуудад тусдаа хариулт байхгүй, «叙述体» бичвэр л бий (teacher.steps «4 课文») — text_questions-д a_zh оруулаагүй. Сурах бичгийн 练习2 回答问题 — хариулт хэвлэгдээгүй.",
+  "Багшийн ном 汉字 补充练习 «辨认下列汉字并组词» (他/住、回/电、午/天、明/时) — хариулт хэвлэгдээгүй.",
+  "Багшийн ном PDF х.72–74 句型框/提示框 — steps-д «［句型框］», «［提示框］» гэж тэмдэглэсэн. «练习册相关练习» хуудас нь дасгалын номын хэвлэсэн дугаар (73, 76, 79, 80).",
+  "Дасгалын ном PDF х.86 阅读 第三部分 27: пиньинь «yǒu shjiān» — «shíjiān»-ийн «í» хэвлэгдээгүй (номын алдаа); номд байгаагаар. Хариултын ном PDF х.65-д мөн адил.",
+  "Дасгалын ном PDF х.87 语音 第二部分 англи заавар «Pay attertion» — номын үсгийн алдаа; номд байгаагаар.",
+  "Дасгалын ном PDF х.85 阅读 第二部分 C «你12点来吧» — ханзын оронд араб тоо, пиньинь «shí’èr diǎn» — номд байгаагаар.",
+  "Дасгалын номын хариулт ХОЁР эх сурвалжид: тусдаа хариултын ном (workbook_answers PDF х.61–66) ба багшийн номын хавсралтын 参考答案 (teacher PDF х.125). Бүх хариулт тохирч байна: 1–5 ×√×××, 6–10 DEAFB, 11–15 BABCB, 16–20 √×√××, 21–25 ADCBE, 26–30 FCABE, 语音 1–5 BBCAA, 汉字 AFGH／BCDE.",
+  "Дасгалын номын 听力 болон 语音 1–5 бичвэр (transcript_zh) — багшийн номын хавсралт PDF х.124–125-аас; дасгалын номд 11–15-ын асуулт («问：…») хэвлэгдээгүй тул items.zh-д хавсралтын асуултыг оруулсан. 语音 第二部分 第6题 (做早操) — зөвхөн дагаж унших, хариултгүй.",
+  "Дасгалын номын 三、语音 болон 四、汉字 хэсгийн дугаарлалт 1-ээс дахин эхэлдэг (номд байгаагаар).",
+  "Аудио файлын нэр мэдэгдэхгүй тул audio талбар орхисон. Номын CD тэмдэг: сурах бичиг 课文1–3 = 11-1／11-2／11-3; 拼音 轻声的功能 11-4; дасгалын ном 听力 11-1; 语音 11-2.",
+  "Зургийн тайлбарууд (picture_desc_en, pictures_desc_en, options «[picture]») зургаас товч, объектив дүрсэлсэн."
+ ],
+ "verified_pages": [
+  61,
+  62,
+  63,
+  64,
+  65,
+  66,
+  71,
+  72,
+  73,
+  74,
+  75,
+  76,
+  77,
+  81,
+  82,
+  83,
+  84,
+  85,
+  86,
+  87,
+  88,
+  102,
+  103,
+  104,
+  105,
+  106,
+  107,
+  108,
+  109,
+  124,
+  125
+ ],
+ "schema_version": 1
+}

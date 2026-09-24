@@ -1,0 +1,1738 @@
+{
+ "level": "hsk1",
+ "lesson": 1,
+ "book": "HSK1",
+ "title_zh": "你好",
+ "title_pinyin": "Nǐ hǎo",
+ "title_en": "Hello",
+ "textbook": {
+  "ref": {
+   "book": "textbook",
+   "pages": [
+    22,
+    23,
+    24,
+    25,
+    26,
+    27
+   ]
+  },
+  "pronunciation": [
+   {
+    "title_zh": "汉语拼音的声母和韵母（1）",
+    "rows": [
+     "声母 Initials（1）",
+     "b p m f",
+     "d t n l",
+     "g k h",
+     "j q x",
+     "韵母 Finals（1）",
+     "i u ü er",
+     "a ia ua",
+     "o uo",
+     "e ie üe",
+     "ai uai",
+     "ei uei (ui)",
+     "ao iao"
+    ],
+    "notes_en": [
+     "Initials and Finals of Chinese Pinyin (1)"
+    ]
+   },
+   {
+    "title_zh": "汉语的声调（四声）",
+    "rows": [
+     "第一声（55） mā 妈 mother",
+     "第二声（35） má 麻 fibrous crops",
+     "第三声（214） mǎ 马 horse",
+     "第四声（51） mà 骂 to scold"
+    ],
+    "notes_zh": [
+     "汉语的基本声调有四个，分别是第一声（55）、第二声（35）、第三声（214）和第四声（51）。汉语的声调有区别意义的作用。"
+    ],
+    "notes_en": [
+     "Tones (Four Tones)",
+     "There are four basic tones in Chinese, respectively called the 1st tone (55), the 2nd tone (35), the 3rd tone (214) and the 4th tone (51). They make difference in meaning."
+    ]
+   },
+   {
+    "title_zh": "汉语的音节",
+    "rows": [
+     "汉语的音节 Syllable | 声母 Initial | 韵母 Final | 声调 Tone",
+     "māo（猫，cat） | m | ao | ˉ",
+     "yú（鱼，fish） |  | ü | ˊ",
+     "jiě（姐，elder sister） | j | ie | ˇ",
+     "èr（二，two） |  | er | ˋ"
+    ],
+    "notes_zh": [
+     "汉语的音节一般由声母、韵母、声调三部分组成。一般来说，一个汉字对应一个音节。汉语的一个音节可以没有声母，但是一定要有韵母和声调。",
+     "注意：i和ü自成音节时，韵母前增加y，ü上的两点去掉；u自成音节时，韵母前增加w。"
+    ],
+    "notes_en": [
+     "Chinese Syllables",
+     "A Chinese syllable is usually made up of an initial, a final and a tone. Generally speaking, one Chinese character corresponds to one syllable. A Chinese syllable can have no initial, but must have a final and a tone.",
+     "Note: When i or ü acts as a syllable by itself, y is added before it, with the two dots on the top of ü being removed; when u acts as a syllable by itself, w is added before it."
+    ]
+   },
+   {
+    "title_zh": "两个三声音节的连读变调",
+    "rows": [
+     "ˇ ＋ ˇ → ˊ ＋ ˇ",
+     "nǐ（你） | hǎo（好） | ní | hǎo",
+     "kě（可） | yǐ（以） | ké | yǐ",
+     "fǔ（辅） | dǎo（导） | fú | dǎo"
+    ],
+    "notes_zh": [
+     "当两个第三声音节连读时，第一个音节变为第二声，3＋3变为2＋3。比如“nǐ（你）”＋“hǎo（好）”变为“ní hǎo”。但是注音时，要标原调。"
+    ],
+    "notes_en": [
+     "Tone Sandhi: 3rd tone + 3rd tone",
+     "When two third-tone syllables are read in sequence, the first syllable turns into the second tone, i.e., the 3+3 sequence becomes a 2+3 one. For example, “nǐ (你)” + “hǎo (好)” is read “ní hǎo”. However, when put in the written form, the original tone is kept."
+    ]
+   }
+  ],
+  "texts": [
+   {
+    "n": 1,
+    "kind": "dialogue",
+    "lines": [
+     {
+      "speaker": "A",
+      "zh": "你好！",
+      "pinyin": "Nǐ hǎo!"
+     },
+     {
+      "speaker": "B",
+      "zh": "你好！",
+      "pinyin": "Nǐ hǎo!"
+     }
+    ],
+    "new_words": [
+     {
+      "n": 1,
+      "zh": "你",
+      "pinyin": "nǐ",
+      "pos": "pron.",
+      "en": "(singular) you",
+      "text": 1
+     },
+     {
+      "n": 2,
+      "zh": "好",
+      "pinyin": "hǎo",
+      "pos": "adj.",
+      "en": "good, fine",
+      "text": 1
+     }
+    ],
+    "english_version": "A: Hello!\nB: Hello!"
+   },
+   {
+    "n": 2,
+    "kind": "dialogue",
+    "lines": [
+     {
+      "speaker": "A",
+      "zh": "您好！",
+      "pinyin": "Nín hǎo!"
+     },
+     {
+      "speaker": "B",
+      "zh": "你们好！",
+      "pinyin": "Nǐmen hǎo!"
+     }
+    ],
+    "new_words": [
+     {
+      "n": 3,
+      "zh": "您",
+      "pinyin": "nín",
+      "pos": "pron.",
+      "en": "(polite) you",
+      "star": true,
+      "text": 2
+     },
+     {
+      "n": 4,
+      "zh": "你们",
+      "pinyin": "nǐmen",
+      "pos": "pron.",
+      "en": "(plural) you",
+      "text": 2
+     }
+    ],
+    "english_version": "A: Hello!\nB: Hello!"
+   },
+   {
+    "n": 3,
+    "kind": "dialogue",
+    "lines": [
+     {
+      "speaker": "A",
+      "zh": "对不起！",
+      "pinyin": "Duìbuqǐ!"
+     },
+     {
+      "speaker": "B",
+      "zh": "没关系！",
+      "pinyin": "Méi guānxi!"
+     }
+    ],
+    "new_words": [
+     {
+      "n": 5,
+      "zh": "对不起",
+      "pinyin": "duìbuqǐ",
+      "pos": "v.",
+      "en": "to be sorry",
+      "text": 3
+     },
+     {
+      "n": 6,
+      "zh": "没关系",
+      "pinyin": "méi guānxi",
+      "en": "that's OK, it doesn't matter",
+      "text": 3
+     }
+    ],
+    "english_version": "A: I'm sorry!\nB: That's OK!"
+   }
+  ],
+  "classroom_expressions": [
+   {
+    "zh": "上课！",
+    "pinyin": "Shàng kè!",
+    "en": "Class begins!"
+   },
+   {
+    "zh": "下课！",
+    "pinyin": "Xià kè!",
+    "en": "Class is over!"
+   },
+   {
+    "zh": "现在休息！",
+    "pinyin": "Xiànzài xiūxi!",
+    "en": "Take a break now!"
+   },
+   {
+    "zh": "看黑板！",
+    "pinyin": "Kàn hēibǎn!",
+    "en": "Look at the blackboard!"
+   },
+   {
+    "zh": "跟我读！",
+    "pinyin": "Gēn wǒ dú!",
+    "en": "Read after me!"
+   }
+  ],
+  "grammar": [
+   {
+    "n": 1,
+    "title_zh": "汉语的声调（四声）",
+    "title_en": "Tones (Four Tones)",
+    "explanation_zh": "汉语的基本声调有四个，分别是第一声（55）、第二声（35）、第三声（214）和第四声（51）。汉语的声调有区别意义的作用。",
+    "explanation_en": "There are four basic tones in Chinese, respectively called the 1st tone (55), the 2nd tone (35), the 3rd tone (214) and the 4th tone (51). They make difference in meaning.",
+    "structure_rows": [
+     "第一声 55 | 第二声 35 | 第三声 214 | 第四声 51"
+    ],
+    "examples": [
+     {
+      "n": 1,
+      "zh": "妈（mā）"
+     },
+     {
+      "n": 2,
+      "zh": "麻（má）"
+     },
+     {
+      "n": 3,
+      "zh": "马（mǎ）"
+     },
+     {
+      "n": 4,
+      "zh": "骂（mà）"
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "title_zh": "汉语的音节",
+    "title_en": "Chinese Syllables",
+    "explanation_zh": "汉语的音节一般由声母、韵母、声调三部分组成。一般来说，一个汉字对应一个音节。汉语的一个音节可以没有声母，但是一定要有韵母和声调。\n注意：i和ü自成音节时，韵母前增加y，ü上的两点去掉；u自成音节时，韵母前增加w。",
+    "explanation_en": "A Chinese syllable is usually made up of an initial, a final and a tone. Generally speaking, one Chinese character corresponds to one syllable. A Chinese syllable can have no initial, but must have a final and a tone.\nNote: When i or ü acts as a syllable by itself, y is added before it, with the two dots on the top of ü being removed; when u acts as a syllable by itself, w is added before it.",
+    "structure_rows": [
+     "汉语的音节 Syllable | 声母 Initial | 韵母 Final | 声调 Tone",
+     "māo（猫，cat） | m | ao | ˉ",
+     "yú（鱼，fish） |  | ü | ˊ",
+     "jiě（姐，elder sister） | j | ie | ˇ",
+     "èr（二，two） |  | er | ˋ"
+    ],
+    "examples": [
+     {
+      "n": 1,
+      "zh": "猫（māo）"
+     },
+     {
+      "n": 2,
+      "zh": "鱼（yú）"
+     },
+     {
+      "n": 3,
+      "zh": "姐（jiě）"
+     },
+     {
+      "n": 4,
+      "zh": "二（èr）"
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "title_zh": "两个三声音节的连读变调",
+    "title_en": "Tone Sandhi: 3rd tone + 3rd tone",
+    "explanation_zh": "当两个第三声音节连读时，第一个音节变为第二声，3＋3变为2＋3。比如“nǐ（你）”＋“hǎo（好）”变为“ní hǎo”。但是注音时，要标原调。",
+    "explanation_en": "When two third-tone syllables are read in sequence, the first syllable turns into the second tone, i.e., the 3+3 sequence becomes a 2+3 one. For example, “nǐ (你)” + “hǎo (好)” is read “ní hǎo”. However, when put in the written form, the original tone is kept.",
+    "structure_rows": [
+     "ˇ ＋ ˇ → ˊ ＋ ˇ",
+     "nǐ（你） | hǎo（好） | ní | hǎo",
+     "kě（可） | yǐ（以） | ké | yǐ",
+     "fǔ（辅） | dǎo（导） | fú | dǎo"
+    ],
+    "examples": [
+     {
+      "n": 1,
+      "zh": "你好（nǐ hǎo）",
+      "note_zh": "ní hǎo"
+     },
+     {
+      "n": 2,
+      "zh": "可以（kě yǐ）",
+      "note_zh": "ké yǐ"
+     },
+     {
+      "n": 3,
+      "zh": "辅导（fǔ dǎo）",
+      "note_zh": "fú dǎo"
+     }
+    ]
+   }
+  ],
+  "exercises": [
+   {
+    "n": "拼音2",
+    "type_zh": "朗读",
+    "instruction_zh": "朗读下列音节，注意声调的不同",
+    "instruction_en": "Read the syllables aloud and pay attention to the tones.",
+    "items": [
+     {
+      "zh": "ā á ǎ à"
+     },
+     {
+      "zh": "ō ó ǒ ò"
+     },
+     {
+      "zh": "ē é ě è"
+     },
+     {
+      "zh": "ī í ǐ ì"
+     },
+     {
+      "zh": "ū ú ǔ ù"
+     },
+     {
+      "zh": "ǖ ǘ ǚ ǜ"
+     }
+    ]
+   },
+   {
+    "n": "拼音3",
+    "type_zh": "朗读（看图片）",
+    "instruction_zh": "看图片，朗读下列单音节词语",
+    "instruction_en": "Look at the pictures and read the monosyllabic words aloud.",
+    "items": [
+     {
+      "zh": "yī",
+      "picture_desc_en": "a zip-up jacket"
+     },
+     {
+      "zh": "wǔ",
+      "picture_desc_en": "the number 5"
+     },
+     {
+      "zh": "yú",
+      "picture_desc_en": "a fish"
+     },
+     {
+      "zh": "ěr",
+      "picture_desc_en": "a human ear"
+     },
+     {
+      "zh": "bǐ",
+      "picture_desc_en": "a pen"
+     },
+     {
+      "zh": "māo",
+      "picture_desc_en": "a kitten"
+     },
+     {
+      "zh": "dǎo",
+      "picture_desc_en": "a tropical island in the sea"
+     },
+     {
+      "zh": "huā",
+      "picture_desc_en": "yellow flowers"
+     },
+     {
+      "zh": "jī",
+      "picture_desc_en": "a hen"
+     },
+     {
+      "zh": "qī",
+      "picture_desc_en": "the number 7"
+     },
+     {
+      "zh": "xié",
+      "picture_desc_en": "a pair of sneakers"
+     },
+     {
+      "zh": "xuě",
+      "picture_desc_en": "snow-covered trees"
+     }
+    ]
+   },
+   {
+    "n": "拼音3-2",
+    "type_zh": "朗读（看图片）",
+    "instruction_zh": "看图片，朗读下列双音节词语",
+    "instruction_en": "Look at the pictures and read the disyllabic words aloud.",
+    "items": [
+     {
+      "zh": "kāfēi",
+      "picture_desc_en": "a cup of coffee"
+     },
+     {
+      "zh": "kělè",
+      "picture_desc_en": "a glass of cola with ice"
+     },
+     {
+      "zh": "kǎoyā",
+      "picture_desc_en": "a roast duck"
+     },
+     {
+      "zh": "huǒguō",
+      "picture_desc_en": "a hot pot with sliced meat and vegetables"
+     },
+     {
+      "zh": "dìtú",
+      "picture_desc_en": "a map with pins"
+     },
+     {
+      "zh": "fēijī",
+      "picture_desc_en": "an airplane in the sky"
+     },
+     {
+      "zh": "máobǐ",
+      "picture_desc_en": "a Chinese writing brush"
+     },
+     {
+      "zh": "ěrjī",
+      "picture_desc_en": "headphones"
+     }
+    ]
+   },
+   {
+    "n": "拼音4",
+    "type_zh": "朗读",
+    "instruction_zh": "朗读下列词语，注意第三声音节的读音",
+    "instruction_en": "Read the following words aloud and pay attention to the change in the tone of the 3rd tone syllables.",
+    "items": [
+     {
+      "zh": "nǐ hǎo"
+     },
+     {
+      "zh": "kěyǐ"
+     },
+     {
+      "zh": "fǔdǎo"
+     },
+     {
+      "zh": "xiǎojiě"
+     },
+     {
+      "zh": "kǒuyǔ"
+     },
+     {
+      "zh": "yǔfǎ"
+     },
+     {
+      "zh": "Fǎyǔ"
+     },
+     {
+      "zh": "tǎo hǎo"
+     },
+     {
+      "zh": "liǎojiě"
+     },
+     {
+      "zh": "yǒuhǎo"
+     },
+     {
+      "zh": "yǔsǎn"
+     },
+     {
+      "zh": "shǒubiǎo"
+     }
+    ]
+   }
+  ],
+  "characters": {
+   "knowledge_title_zh": "汉字的笔画（1）：一、丨、丿、丶、㇏；认识独体字",
+   "knowledge_zh": "1 汉字的笔画（1）：一、丨、丿、丶、㇏\n笔画名称 | 运笔方向 | 例字\n一 横 héng | → | 一 yī，二 èr\n丨 竖 shù | ↓ | 十 shí，工 gōng\n丿 撇 piě | ↙ | 人 rén，八 bā\n丶 点 diǎn | ↘ | 不 bù，六 liù\n㇏ 捺 nà | ↘ | 大 dà，天 tiān\n2 认识独体字\n（1）“一”，是汉字的基本笔画，也可单独成为汉字表示数量“1”。\n（2）“二”，表示数量“2”。\n（3）“三”，表示数量“3”。\n（4）“十”，表示数量“10”。\n（5）“八”，表示数量“8”。\n（6）“六”，表示数量“6”。",
+   "knowledge_en": "Strokes of Chinese Characters (1): 一, 丨, 丿, 丶, ㇏\nStroke | Direction | Example Characters\nhéng horizontal | 一 one, 二 two\nshù vertical | 十 ten, 工 work, labor\npiě left-falling | 人 human, 八 eight\ndiǎn dot | 不 no, not, 六 six\nnà right-falling | 大 big, 天 sky\nSingle-Component Characters\n(1) “一” is one of the basic strokes of Chinese characters. The single-component character “一” means “one”.\n(2) “二” means “two”.\n(3) “三” means “three”.\n(4) “十” means “ten”.\n(5) “八” means “eight”.\n(6) “六” means “six”.",
+   "characters": [
+    {
+     "zh": "一",
+     "pinyin": "yī",
+     "note_zh": "是汉字的基本笔画，也可单独成为汉字表示数量“1”。笔顺：一"
+    },
+    {
+     "zh": "二",
+     "pinyin": "èr",
+     "note_zh": "表示数量“2”。笔顺：一、二"
+    },
+    {
+     "zh": "三",
+     "pinyin": "sān",
+     "note_zh": "表示数量“3”。笔顺：一、二、三"
+    },
+    {
+     "zh": "十",
+     "pinyin": "shí",
+     "note_zh": "表示数量“10”。笔顺：一、十"
+    },
+    {
+     "zh": "八",
+     "pinyin": "bā",
+     "note_zh": "表示数量“8”。笔顺：丿、八"
+    },
+    {
+     "zh": "六",
+     "pinyin": "liù",
+     "note_zh": "表示数量“6”。笔顺：丶、亠、（亠＋丿）、六"
+    }
+   ]
+  }
+ },
+ "teacher": {
+  "ref": {
+   "book": "teacher",
+   "pages": [
+    3,
+    4,
+    5,
+    6,
+    7
+   ]
+  },
+  "objectives_zh": [
+   "重点句型：学生能够了解并掌握：（1）你好！您好！你们好！（2）对不起！没关系！",
+   "语音：学生能够：（1）熟练朗读本课的14个声母、18个韵母（2）熟悉并正确朗读汉语的四个声调（3）了解汉语音节的声韵调拼合关系（4）熟悉并正确朗读两个三声音节的连续变调",
+   "汉字：学生能够：（1）熟练认读本课生词（2）掌握“一、丨、丿、丶、㇏”五种笔画的正确写法（3）独立书写独体字“一、二、三、十、八、六”",
+   "功能：学生能够：（1）打招呼、问候（2）致歉（3）表达原谅"
+  ],
+  "steps": [
+   {
+    "title_zh": "1 语音（1）声母",
+    "body_zh": "一个汉语音节通常由声母、韵母、声调三个部分组成。我们把一个音节开头的辅音叫作“声母”。例如：hàn这个音节，声母是音节开头部分的“h”。汉语中一共有21个声母。本课声母：\nb | p | m | f\nd | t | n | l\ng | k | h\nj | q | x\n练习册相关练习：第1页／四"
+   },
+   {
+    "title_zh": "1 语音（2）韵母",
+    "body_zh": "一个汉语音节声母后面的部分叫作“韵母”。例如：hàn这个音节，声母是音节开头部分的“h”，而韵母是后面的部分“an”。汉语中一共有36个韵母。本课韵母：\n | i | u | ü | er\na | ia | ua\no | | uo\ne | ie | | üe\nai | | uai\nei | | uei（ui）\nao | iao\n练习册相关练习：第2页／五"
+   },
+   {
+    "title_zh": "1 语音（3）汉语的声调",
+    "body_zh": "声调是汉语语音非常突出的特点，也是汉语音节必不可少的一个组成部分。汉语的基本声调有四个，分别是第一声（又叫阴平，用五度标音法表示，调值为55）、第二声（又叫阳平，调值为35）、第三声（又叫上声，调值为214）和第四声（又叫去声，调值为51）。汉语的声调有区别意义的作用。例如声母m和韵母a组成的音节ma，由于声调的不同，各个音节的意义也不同，如“mā妈，má麻、mǎ马、mà骂”。\n教师可利用课本第3页的声调练习，组织学生进行朗读。\n练习册相关练习：第2页／六"
+   },
+   {
+    "title_zh": "1 语音（4）汉语的音节",
+    "body_zh": "汉语的音节是汉语语音的基本单位，一个音节一般由声母、韵母、声调三部分组成。一般来说，一个汉字表示一个音节。例如：mā这个音节，声母是m，韵母是a，声调是第一声，对应的汉字可以是“妈”，它的意思是“妈妈、母亲”。汉语的一个音节可以没有声母，但是一定要有韵母和声调，例如：èr（二）。没有声母的音节叫作“零声母音节”。\n教师可利用课本第4、5页的单音节词语和双音节词语进行练习，引导学生注意音节个数的不同。\n练习册相关练习：第1页／一、二、三"
+   },
+   {
+    "title_zh": "1 语音（5）两个三声音节相连的连读变调",
+    "body_zh": "当两个第三声音节连读时，第一个音节近似读为第二声，即3＋3变为2＋3。比如，“你好！nǐ＋hǎo”读音变为“ní hǎo”。但是注音时，要标原调。\n教师可利用课本第5页三声音节的连读练习，引导学生注意每个词语中两个三声音节实际发音的不同。"
+   },
+   {
+    "title_zh": "2 课文",
+    "body_zh": "· 教师领读三段课文，要求学生跟读模仿。注意语音语调自然流畅。\n· 教师组织学生两人一组分角色读课文，然后请个别学生朗读，检查朗读情况。\n练习册相关练习：第2页／七"
+   },
+   {
+    "title_zh": "3 汉字 ① 知识点解析",
+    "body_zh": "笔画\n一（横）、丨（竖）、丿（撇）、丶（点）、㇏（捺）\n独体字\n一：是汉字的基本笔画之一，也可单独成为汉字，表示数量“1”。\n二：表示数量“2”。\n三：表示数量“3”。\n十：表示数量“10”。\n八：表示数量“8”。\n六：表示数量“6”。"
+   },
+   {
+    "title_zh": "3 汉字 ② 汉字练习",
+    "body_zh": "· 教师板书本课笔画“一、丨、丿、丶、㇏”，给学生展示各个笔画的运笔方向，并书写各自的代表汉字，帮助学生识记笔画。\n· 教师板书或者用手指在空中书写本课独体字“一、二、三、十、八、六”，带领学生识记独体字的笔画笔顺。\n· 补充练习\n给下列汉字注音并跟相应的阿拉伯数字连线\n（　）六　2\n（　）一　8\n（　）三　10\n（　）二　1\n（　）八　3\n（　）十　6\n练习册相关练习：第3页／八"
+   },
+   {
+    "title_zh": "4 课堂用语",
+    "body_zh": "教师带领学生朗读课堂用语，并使学生熟悉其含义，方便课堂教学。练习课堂用语时可以只标注拼音，不出现汉字。\n（1）上课！\n（2）下课！\n（3）现在休息！\n（4）看黑板！\n（5）跟我读！"
+   },
+   {
+    "title_zh": "5 补充课堂活动——读一读，猜一猜",
+    "body_zh": "教师可以准备一些常用的、流行的汉语外来词，用汉语拼音的形式出示给学生，要求学生能够正确朗读。然后请他们猜猜词的意思，最后教师给出正确答案。\n参考词语：\nBèikèhànmǔ　Hālì　Bōtè　hànbǎobāo　Màidāngláo　Ādídásī　Nàikè\n贝克汉姆、哈利·波特、汉堡包、麦当劳、阿迪达斯、耐克"
+   },
+   {
+    "title_zh": "附注：建议教学用具",
+    "body_zh": "1. 拼音卡片：第1课拼音卡片（或挂图）\n声母，如：b　韵母，如：a\n2. 独体字卡片：第1课独体字卡片\n如：正面 yī 一 one；背面 一"
+   }
+  ],
+  "notes_zh": [
+   "注意（声母）：教师要提醒学生注意b-p，d-t，g-k，j-q这几组声母送气、不送气的区别。关于送气音，在教学上可以采取吹纸条或吹蜡烛的方法。（送气音和不送气音的具体区别将在第5课出现，本课学生第一次接触，简单提示发音要点即可。）",
+   "注意（声母）：j、q、x是一组舌面音，舌面与硬腭配合而发音。j、q发音时舌面要与硬腭接触，j没有强烈的气流，而q有强烈的气流呼出。发x时，舌面接近硬腭，但不要接触，始终保持一条缝隙。（具体的发音辨析将在第3课出现，本课学生第一次接触，简单提示发音要点即可。）",
+   "注意（韵母）：教师要提醒学生注意，在汉语拼音中的a、i、e，虽然在不同韵母中都用这三个字母表示，但是实际的发音是有区别的。\n在汉语拼音中，a表现为四种不同的读音：\n[ᴀ]：a、ia、ua\n[a]：ai、uai、an、uan\n[ɛ]：ian、üan\n[ɑ]：iao、ang、iang、uang\ne表现为四种不同的读音：\n[ɤ]：e\n[ə]：en、uen、eng、ueng、er\n[e]：ei、uei\n[ɛ]：ie、üe\ni表现为四种不同的读音：\n[i]：i、ia、ie、iao、iou、in、ian、ing、iang、iong\n[ɪ]：ai、ei、uai、uei\n[ɿ]：zi、ci、si\n[ʅ]：zhi、chi、shi",
+   "注意（声调）：教师组织学生进行四声练习时，建议顺序为第一声、第四声、第二声、第三声。第一声的声调特征为高、平，第四声的声调特征为降，第二声的声调特征为升，第三声的声调特征为先降后升（但在实际语流中的第三声常常读作半三声，最突出的声调特征为低调。）",
+   "注意（课文）：教师可以根据图片提示，引导学生注意“你好”、“您好”使用时的不同情境。“你”是一个一般的第二人称代词，在交际中用于指称对方；当说话人要表达对对方（一般是长辈、老师、顾客、上司等）的敬意时则要使用“您”。"
+  ],
+  "summary_zh": "· 问候和致歉：你好！您好！你们好！对不起！没关系！\n· 语音：声母14个、韵母18个\n　汉语的四声\n　汉语的音节\n　两个三声的连读变调\n· 汉字：独体字“一、二、三、十、八、六”"
+ },
+ "workbook": {
+  "ref": {
+   "book": "workbook",
+   "pages": [
+    9,
+    10,
+    11,
+    12
+   ]
+  },
+  "sections": [
+   {
+    "n": "一",
+    "type_zh": "朗读 单音节词语",
+    "instruction_zh": "朗读下列单音节词语",
+    "instruction_en": "Read the monosyllabic words aloud.",
+    "items": [
+     {
+      "zh": "mā má mǎ mà"
+     },
+     {
+      "zh": "bā bá bǎ bà"
+     },
+     {
+      "zh": "fēi féi fěi fèi"
+     },
+     {
+      "zh": "qiē qié qiě qiè"
+     },
+     {
+      "zh": "xuē xué xuě xuè"
+     },
+     {
+      "zh": "tiāo tiáo tiǎo tiào"
+     },
+     {
+      "zh": "huō huó huǒ huò"
+     },
+     {
+      "zh": "māo máo mǎo mào"
+     }
+    ]
+   },
+   {
+    "n": "二",
+    "type_zh": "朗读 双音节词语",
+    "instruction_zh": "朗读下列双音节词语",
+    "instruction_en": "Read the disyllabic words aloud.",
+    "items": [
+     {
+      "zh": "xià yǔ"
+     },
+     {
+      "zh": "xiàwǔ"
+     },
+     {
+      "zh": "tèbié"
+     },
+     {
+      "zh": "dì yī"
+     },
+     {
+      "zh": "yěxǔ"
+     },
+     {
+      "zh": "pǎo bù"
+     },
+     {
+      "zh": "huídá"
+     },
+     {
+      "zh": "tiào wǔ"
+     },
+     {
+      "zh": "yìqǐ"
+     },
+     {
+      "zh": "kuàilè"
+     },
+     {
+      "zh": "qítā"
+     },
+     {
+      "zh": "biǎodá"
+     },
+     {
+      "zh": "lǐwù"
+     },
+     {
+      "zh": "jīhuì"
+     },
+     {
+      "zh": "líkāi"
+     },
+     {
+      "zh": "fùxí"
+     },
+     {
+      "zh": "dìtú"
+     },
+     {
+      "zh": "dìtiě"
+     },
+     {
+      "zh": "àihào"
+     },
+     {
+      "zh": "jiēdào"
+     }
+    ]
+   },
+   {
+    "n": "三",
+    "type_zh": "读一读，猜一猜",
+    "instruction_zh": "读一读，猜一猜：给下列图片选择相应的词语",
+    "instruction_en": "Read and Guess: Match the pictures with the words.",
+    "items": [
+     {
+      "n": 1,
+      "zh": "（　）",
+      "options": {
+       "A": "kāfēi",
+       "B": "kělè",
+       "C": "bālěi",
+       "D": "pài",
+       "E": "jítā"
+      },
+      "picture_desc_en": "a slice of pie on a plate",
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        106
+       ]
+      }
+     },
+     {
+      "n": 2,
+      "zh": "（　）",
+      "options": {
+       "A": "kāfēi",
+       "B": "kělè",
+       "C": "bālěi",
+       "D": "pài",
+       "E": "jítā"
+      },
+      "picture_desc_en": "a ballerina dancing on stage",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        106
+       ]
+      }
+     },
+     {
+      "n": 3,
+      "zh": "（　）",
+      "options": {
+       "A": "kāfēi",
+       "B": "kělè",
+       "C": "bālěi",
+       "D": "pài",
+       "E": "jítā"
+      },
+      "picture_desc_en": "a cup of coffee on coffee beans",
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        106
+       ]
+      }
+     },
+     {
+      "n": 4,
+      "zh": "（　）",
+      "options": {
+       "A": "kāfēi",
+       "B": "kělè",
+       "C": "bālěi",
+       "D": "pài",
+       "E": "jítā"
+      },
+      "picture_desc_en": "an acoustic guitar",
+      "answer": "E",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        106
+       ]
+      }
+     },
+     {
+      "n": 5,
+      "zh": "（　）",
+      "options": {
+       "A": "kāfēi",
+       "B": "kělè",
+       "C": "bālěi",
+       "D": "pài",
+       "E": "jítā"
+      },
+      "picture_desc_en": "a glass of cola with ice",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        106
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "四",
+    "type_zh": "听录音，写声母",
+    "instruction_zh": "听录音，写出听到的声母并朗读",
+    "instruction_en": "Listen to the recording, write down the initials you hear and read the syllables aloud.",
+    "items": [
+     {
+      "n": 1,
+      "zh": "____āi",
+      "answer": "b",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        106
+       ]
+      },
+      "transcript_zh": "bāi（掰）"
+     },
+     {
+      "n": 2,
+      "zh": "____uài",
+      "answer": "h",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        106
+       ]
+      },
+      "transcript_zh": "huài（坏）"
+     },
+     {
+      "n": 3,
+      "zh": "____iào",
+      "answer": "j",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        106
+       ]
+      },
+      "transcript_zh": "jiào（叫）"
+     },
+     {
+      "n": 4,
+      "zh": "____í",
+      "answer": "p",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        106
+       ]
+      },
+      "transcript_zh": "pí（皮）"
+     },
+     {
+      "n": 5,
+      "zh": "____ǎn",
+      "answer": "m",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        106
+       ]
+      },
+      "transcript_zh": "mǎn（满）"
+     },
+     {
+      "n": 6,
+      "zh": "____uǒ",
+      "answer": "h",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        106
+       ]
+      },
+      "transcript_zh": "huǒ（火）"
+     },
+     {
+      "n": 7,
+      "zh": "____ù",
+      "answer": "q",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        106
+       ]
+      },
+      "transcript_zh": "qù（去）"
+     },
+     {
+      "n": 8,
+      "zh": "____iǎo",
+      "answer": "x",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        106
+       ]
+      },
+      "transcript_zh": "xiǎo（小）"
+     },
+     {
+      "n": 9,
+      "zh": "____uè",
+      "answer": "q",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        106
+       ]
+      },
+      "transcript_zh": "què（却）"
+     },
+     {
+      "n": 10,
+      "zh": "____ià",
+      "answer": "x",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        106
+       ]
+      },
+      "transcript_zh": "xià（下）"
+     },
+     {
+      "n": 11,
+      "zh": "____ǎo",
+      "answer": "t",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        106
+       ]
+      },
+      "transcript_zh": "tǎo（讨）"
+     },
+     {
+      "n": 12,
+      "zh": "____āo",
+      "answer": "d",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        106
+       ]
+      },
+      "transcript_zh": "dāo（刀）"
+     },
+     {
+      "n": 13,
+      "zh": "____ǎi",
+      "answer": "n",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        106
+       ]
+      },
+      "transcript_zh": "nǎi（奶）"
+     },
+     {
+      "n": 14,
+      "zh": "____ǎi",
+      "answer": "m",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        106
+       ]
+      },
+      "transcript_zh": "mǎi（买）"
+     },
+     {
+      "n": 15,
+      "zh": "____è",
+      "answer": "g",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        106
+       ]
+      },
+      "transcript_zh": "gè（个）"
+     },
+     {
+      "n": 16,
+      "zh": "____ǎo",
+      "answer": "k",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        106
+       ]
+      },
+      "transcript_zh": "kǎo（考）"
+     },
+     {
+      "n": 17,
+      "zh": "____ái",
+      "answer": "l",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        106
+       ]
+      },
+      "transcript_zh": "lái（来）"
+     },
+     {
+      "n": 18,
+      "zh": "____ǎi",
+      "answer": "h",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        106
+       ]
+      },
+      "transcript_zh": "hǎi（海）"
+     },
+     {
+      "n": 19,
+      "zh": "____ào",
+      "answer": "p",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        106
+       ]
+      },
+      "transcript_zh": "pào（炮）"
+     },
+     {
+      "n": 20,
+      "zh": "____ēi",
+      "answer": "f",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        106
+       ]
+      },
+      "transcript_zh": "fēi（飞）"
+     }
+    ]
+   },
+   {
+    "n": "五",
+    "type_zh": "听录音，写韵母",
+    "instruction_zh": "听录音，写出听到的韵母并朗读",
+    "instruction_en": "Listen to the recording, write down the finals you hear and read the syllables aloud.",
+    "items": [
+     {
+      "n": 1,
+      "zh": "h____",
+      "answer": "uā",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        106
+       ]
+      },
+      "transcript_zh": "huā（花）"
+     },
+     {
+      "n": 2,
+      "zh": "h____",
+      "answer": "uǒ",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        106
+       ]
+      },
+      "transcript_zh": "huǒ（火）"
+     },
+     {
+      "n": 3,
+      "zh": "h____",
+      "answer": "uí",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        106
+       ]
+      },
+      "transcript_zh": "huí（回）"
+     },
+     {
+      "n": 4,
+      "zh": "m____",
+      "answer": "éi",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        106
+       ]
+      },
+      "transcript_zh": "méi（没）"
+     },
+     {
+      "n": 5,
+      "zh": "f____",
+      "answer": "ú",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        106
+       ]
+      },
+      "transcript_zh": "fú（服）"
+     },
+     {
+      "n": 6,
+      "zh": "h____",
+      "answer": "ǎo",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        106
+       ]
+      },
+      "transcript_zh": "hǎo（好）"
+     },
+     {
+      "n": 7,
+      "zh": "n____",
+      "answer": "ǐ",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        106
+       ]
+      },
+      "transcript_zh": "nǐ（你）"
+     },
+     {
+      "n": 8,
+      "zh": "w____",
+      "answer": "èi",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        106
+       ]
+      },
+      "transcript_zh": "wèi（喂）"
+     },
+     {
+      "n": 9,
+      "zh": "b____",
+      "answer": "āo",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        106
+       ]
+      },
+      "transcript_zh": "bāo（包）"
+     },
+     {
+      "n": 10,
+      "zh": "j____",
+      "answer": "iào",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        106
+       ]
+      },
+      "transcript_zh": "jiào（叫）"
+     },
+     {
+      "n": 11,
+      "zh": "j____",
+      "answer": "iě",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        106
+       ]
+      },
+      "transcript_zh": "jiě（姐）"
+     },
+     {
+      "n": 12,
+      "zh": "d____",
+      "answer": "ì",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        106
+       ]
+      },
+      "transcript_zh": "dì（第）"
+     },
+     {
+      "n": 13,
+      "zh": "g____",
+      "answer": "ē",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        106
+       ]
+      },
+      "transcript_zh": "gē（哥）"
+     },
+     {
+      "n": 14,
+      "zh": "g____",
+      "answer": "āi",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        106
+       ]
+      },
+      "transcript_zh": "gāi（该）"
+     },
+     {
+      "n": 15,
+      "zh": "p____",
+      "answer": "iě",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        106
+       ]
+      },
+      "transcript_zh": "piě（撇）"
+     },
+     {
+      "n": 16,
+      "zh": "h____",
+      "answer": "uài",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        106
+       ]
+      },
+      "transcript_zh": "huài（坏）"
+     },
+     {
+      "n": 17,
+      "zh": "y____",
+      "answer": "uè",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        106
+       ]
+      },
+      "transcript_zh": "yuè（月）"
+     },
+     {
+      "n": 18,
+      "zh": "h____",
+      "answer": "ēi",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        106
+       ]
+      },
+      "transcript_zh": "hēi（黑）"
+     },
+     {
+      "n": 19,
+      "zh": "g____",
+      "answer": "uó",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        106
+       ]
+      },
+      "transcript_zh": "guó（国）"
+     },
+     {
+      "n": 20,
+      "zh": "l____",
+      "answer": "ù",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        106
+       ]
+      },
+      "transcript_zh": "lù（绿）"
+     }
+    ]
+   },
+   {
+    "n": "六",
+    "type_zh": "听录音，写声调",
+    "instruction_zh": "听录音，写出听到的声调并朗读",
+    "instruction_en": "Listen to the recording, add the tone marks you hear and read the syllables aloud.",
+    "items": [
+     {
+      "n": 1,
+      "zh": "bu",
+      "answer": "bù",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        106
+       ]
+      },
+      "transcript_zh": "bù（不）"
+     },
+     {
+      "n": 2,
+      "zh": "hao",
+      "answer": "hǎo",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        106
+       ]
+      },
+      "transcript_zh": "hǎo（好）"
+     },
+     {
+      "n": 3,
+      "zh": "ke",
+      "answer": "kè",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        106
+       ]
+      },
+      "transcript_zh": "kè（课）"
+     },
+     {
+      "n": 4,
+      "zh": "qi",
+      "answer": "qī",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        106
+       ]
+      },
+      "transcript_zh": "qī（七）"
+     },
+     {
+      "n": 5,
+      "zh": "mei",
+      "answer": "méi",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        106
+       ]
+      },
+      "transcript_zh": "méi（没）"
+     },
+     {
+      "n": 6,
+      "zh": "you",
+      "answer": "yǒu",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        106
+       ]
+      },
+      "transcript_zh": "yǒu（有）"
+     },
+     {
+      "n": 7,
+      "zh": "ma",
+      "answer": "mā",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        106
+       ]
+      },
+      "transcript_zh": "mā（妈）"
+     },
+     {
+      "n": 8,
+      "zh": "jie",
+      "answer": "jiě",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        106
+       ]
+      },
+      "transcript_zh": "jiě（姐）"
+     },
+     {
+      "n": 9,
+      "zh": "ge",
+      "answer": "gè",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        106
+       ]
+      },
+      "transcript_zh": "gè（个）"
+     },
+     {
+      "n": 10,
+      "zh": "ge",
+      "answer": "gē",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        106
+       ]
+      },
+      "transcript_zh": "gē（哥）"
+     },
+     {
+      "n": 11,
+      "zh": "di",
+      "answer": "dì",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        106
+       ]
+      },
+      "transcript_zh": "dì（弟）"
+     },
+     {
+      "n": 12,
+      "zh": "nü",
+      "answer": "nǚ",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        106
+       ]
+      },
+      "transcript_zh": "nǚ（女）"
+     },
+     {
+      "n": 13,
+      "zh": "tiao",
+      "answer": "tiáo",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        106
+       ]
+      },
+      "transcript_zh": "tiáo（条）"
+     },
+     {
+      "n": 14,
+      "zh": "mai",
+      "answer": "mǎi",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        106
+       ]
+      },
+      "transcript_zh": "mǎi（买）"
+     },
+     {
+      "n": 15,
+      "zh": "hui",
+      "answer": "huī",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        106
+       ]
+      },
+      "transcript_zh": "huī（灰）"
+     },
+     {
+      "n": 16,
+      "zh": "hua",
+      "answer": "huà",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        106
+       ]
+      },
+      "transcript_zh": "huà（话）"
+     },
+     {
+      "n": 17,
+      "zh": "na",
+      "answer": "nǎ",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        106
+       ]
+      },
+      "transcript_zh": "nǎ（哪）"
+     },
+     {
+      "n": 18,
+      "zh": "guo",
+      "answer": "guó",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        106
+       ]
+      },
+      "transcript_zh": "guó（国）"
+     },
+     {
+      "n": 19,
+      "zh": "jiao",
+      "answer": "jiào",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        106
+       ]
+      },
+      "transcript_zh": "jiào（叫）"
+     },
+     {
+      "n": 20,
+      "zh": "er",
+      "answer": "ér",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        106
+       ]
+      },
+      "transcript_zh": "ér（儿）"
+     }
+    ]
+   },
+   {
+    "n": "七",
+    "type_zh": "看图片，选择对话",
+    "instruction_zh": "看图片，选择正确的对话",
+    "instruction_en": "Match the pictures with the dialogues.",
+    "items": [
+     {
+      "n": 1,
+      "zh": "（　）",
+      "options": {
+       "1": "A：你好！（Nǐ hǎo!）B：你好！（Nǐ hǎo!）",
+       "2": "A：您好！（Nín hǎo!）B：你好！（Nǐ hǎo!）",
+       "3": "A：您好！（Nín hǎo!）B：你们好！（Nǐmen hǎo!）",
+       "4": "A：对不起！（Duìbuqǐ!）B：没关系！（Méi guānxi!）"
+      },
+      "picture_desc_en": "a smiling girl sitting on a sofa, looking at an adult seen from behind",
+      "answer": "4",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        106
+       ]
+      }
+     },
+     {
+      "n": 2,
+      "zh": "（　）",
+      "options": {
+       "1": "A：你好！（Nǐ hǎo!）B：你好！（Nǐ hǎo!）",
+       "2": "A：您好！（Nín hǎo!）B：你好！（Nǐ hǎo!）",
+       "3": "A：您好！（Nín hǎo!）B：你们好！（Nǐmen hǎo!）",
+       "4": "A：对不起！（Duìbuqǐ!）B：没关系！（Méi guānxi!）"
+      },
+      "picture_desc_en": "a smiling elderly woman in a wheelchair holding hands with a younger woman",
+      "answer": "2",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        106
+       ]
+      }
+     },
+     {
+      "n": 3,
+      "zh": "（　）",
+      "options": {
+       "1": "A：你好！（Nǐ hǎo!）B：你好！（Nǐ hǎo!）",
+       "2": "A：您好！（Nín hǎo!）B：你好！（Nǐ hǎo!）",
+       "3": "A：您好！（Nín hǎo!）B：你们好！（Nǐmen hǎo!）",
+       "4": "A：对不起！（Duìbuqǐ!）B：没关系！（Méi guānxi!）"
+      },
+      "picture_desc_en": "two men in shirts and ties shaking hands",
+      "answer": "1",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        106
+       ]
+      }
+     },
+     {
+      "n": 4,
+      "zh": "（　）",
+      "options": {
+       "1": "A：你好！（Nǐ hǎo!）B：你好！（Nǐ hǎo!）",
+       "2": "A：您好！（Nín hǎo!）B：你好！（Nǐ hǎo!）",
+       "3": "A：您好！（Nín hǎo!）B：你们好！（Nǐmen hǎo!）",
+       "4": "A：对不起！（Duìbuqǐ!）B：没关系！（Méi guānxi!）"
+      },
+      "picture_desc_en": "a woman standing behind a table of young children who are writing",
+      "answer": "3",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        106
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "八-1",
+    "type_zh": "汉字 描写笔画",
+    "instruction_zh": "汉字：描写每组汉字中相应的笔画",
+    "instruction_en": "Chinese Characters: Trace the corresponding strokes in each pair of characters.",
+    "items": [
+     {
+      "n": 1,
+      "zh": "一 héng：一、二"
+     },
+     {
+      "n": 2,
+      "zh": "丨 shù：十、工"
+     },
+     {
+      "n": 3,
+      "zh": "丿 piě：人、八"
+     },
+     {
+      "n": 4,
+      "zh": "丶 diǎn：不、六"
+     },
+     {
+      "n": 5,
+      "zh": "㇏ nà：大、天"
+     }
+    ]
+   },
+   {
+    "n": "八-2",
+    "type_zh": "汉字 写独体字",
+    "instruction_zh": "看笔顺，写独体字",
+    "instruction_en": "Look at the stroke order and practice writing the single-component characters.",
+    "items": [
+     {
+      "zh": "一",
+      "hint_zh": "yī　笔顺：一"
+     },
+     {
+      "zh": "二",
+      "hint_zh": "èr　笔顺：一、二"
+     },
+     {
+      "zh": "三",
+      "hint_zh": "sān　笔顺：一、二、三"
+     },
+     {
+      "zh": "十",
+      "hint_zh": "shí　笔顺：一、十"
+     },
+     {
+      "zh": "八",
+      "hint_zh": "bā　笔顺：丿、八"
+     },
+     {
+      "zh": "六",
+      "hint_zh": "liù　笔顺：丶、亠、（亠＋丿）、六"
+     }
+    ]
+   }
+  ],
+  "answers_ref": {
+   "book": "teacher",
+   "pages": [
+    106
+   ]
+  }
+ },
+ "unclear": [
+  "HSK1 第1课 сурах бичигт 注释 (дүрмийн тайлбар) хэсэг БАЙХГҮЙ. validate шаардлагаар textbook.grammar[]-д 拼音 хэсгийн 2–4 (汉语的声调 / 汉语的音节 / 两个三声音节的连读变调) тайлбар+жишээг номд байгаагаар оруулсан — textbook.pronunciation[]-тай давхардана, шинэ агуулга биш.",
+  "Сурах бичигт 练习 хэсэг БАЙХГҮЙ; textbook.exercises[]-д 拼音 хэсгийн дуудлагын дасгалууд (01-5 朗读下列音节 · 01-6 单音节词语 · 01-7 双音节词语 · 01-8 三声连读词语) орсон.",
+  "Аудио файлын нэр мэдэгдэхгүй тул audio талбар орхисон. Номд хэвлэгдсэн дугаар: сурах бичиг 01-1…01-3 (课文1–3), 01-4 (声母韵母), 01-5 (声调 朗读), 01-6 (单音节), 01-7 (双音节), 01-8 (三声连读), 01-9 (课堂用语); дасгалын ном 01-1 (一), 01-2 (二), 01-3 (四), 01-4 (五), 01-5 (六).",
+  "Дасгалын номын хариулт хоёр эх сурвалжид: багшийн номын хавсралт (PDF х.106, «练习册听力文本及参考答案») ба тусдаа хариултын ном (workbook_answers PDF х.6–7, baulchino.com). answer-ийг багшийн номын 参考答案-аас (хоосон зайд орох хэсгээр) авсан; transcript_zh — багшийн номын 听力文本. Хариултын ном нь бүтэн үеээр (bāi, huā …) өгсөн, бусад нь таарна.",
+  "Дасгалын ном 五-8: багшийн ном «w èi（喂）», хариу «8. èi»; тусдаа хариултын ном «8. wéi» — зөрүүтэй. Номд байгаагаар answer=èi (багшийн ном).",
+  "Дасгалын ном 五-20: багшийн номын 听力文本 «l ù（绿）», 参考答案 «20. ù» — ü-ийн хоёр цэг хэвлэгдээгүй (зургаар шалгасан); тусдаа хариултын ном «lǜ». Номд байгаагаар answer=ù.",
+  "Дасгалын ном 七: тусдаа хариултын ном зөвхөн эхний 2 зургийн хариулт (1→(4) · 2→(2)) өгсөн; багшийн ном 4-үүлээ: 1.(4) 2.(2) 3.(1) 4.(3).",
+  "Сурах бичиг/дасгалын номын «六» зурлагын дараалал: 3-р алхам нь 亠 дээр 丿 нэмсэн хэсэг ханз биш тул «（亠＋丿）» гэж бичсэн. Сурах бичгийн PDF х.26–27 独体字 бүрийн эртний бичгийн хувьсал зураг (жишээ нь 十 — 丨→…→十) текстээр буулгах боломжгүй тул оруулаагүй.",
+  "Багшийн ном objectives «熟悉并正确朗读两个三声音节的连续变调» (连续变调), харин 小结 «两个三声的连读变调», сурах бичиг «连读变调» — номд байгаагаар.",
+  "Багшийн ном (5) «第一个音节近似读为第二声» ↔ сурах бичиг «第一个音节变为第二声» — найруулгын зөрүү, номд байгаагаар.",
+  "Багшийн номын 韵母 注意 — «a、i、e ... 这三个字母» гэж эхлээд a, e, i дарааллаар тайлбарласан; IPA тэмдэгт ([ᴀ] [a] [ɛ] [ɑ] / [ɤ] [ə] [e] [ɛ] / [i] [ɪ] [ɿ] [ʅ]) 300dpi зургаар шалгасан.",
+  "Багшийн номын 汉字 补充练习 (给下列汉字注音并跟相应的阿拉伯数字连线) — хариулт хэвлэгдээгүй, teacher.steps-д байгаа.",
+  "Багшийн номын PDF х.107 бол 第2课-ийн хавсралт (L01-д хамаарахгүй), зөвхөн х.106 ашигласан."
+ ],
+ "verified_pages": [
+  3,
+  4,
+  5,
+  6,
+  7,
+  9,
+  10,
+  11,
+  12,
+  22,
+  23,
+  24,
+  25,
+  26,
+  27,
+  106
+ ],
+ "schema_version": 1
+}

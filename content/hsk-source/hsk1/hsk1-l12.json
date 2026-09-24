@@ -1,0 +1,1610 @@
+{
+ "level": "hsk1",
+ "lesson": 12,
+ "book": "HSK1",
+ "title_zh": "明天天气怎么样",
+ "title_pinyin": "Míngtiān tiānqì zěnmeyàng",
+ "title_en": "What will the weather be like tomorrow",
+ "textbook": {
+  "ref": {
+   "book": "textbook",
+   "pages": [
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117
+   ]
+  },
+  "warmup": [
+   {
+    "instruction_zh": "给下面的词语选择对应的图片",
+    "instruction_en": "Match the pictures with the words/phrases.",
+    "items": [
+     "①冷 lěng",
+     "②热 rè",
+     "③下雨 xià yǔ",
+     "④水 shuǐ",
+     "⑤水果 shuǐguǒ",
+     "⑥医生 yīshēng"
+    ],
+    "pictures_desc_en": [
+     "A: three glasses of water with water splashing",
+     "B: a small child in a red polka-dot raincoat holding a green umbrella in the rain",
+     "C: a small dog wearing a pink knitted hat and scarf",
+     "D: a dog wearing sunglasses sitting in a deck chair under a red umbrella",
+     "E: a smiling man in a white coat with a stethoscope (doctor)",
+     "F: a pile of assorted fruits (oranges, apples, grapes, pears, lemons)"
+    ]
+   }
+  ],
+  "pronunciation": [
+   {
+    "title_zh": "三音节词语的声调搭配（1）：一声音节开头",
+    "rows": [
+     "1+1+1 xīngqī yī Monday",
+     "1+1+2 bīngjīlíng ice-cream",
+     "1+1+3 xīngqī wǔ Friday",
+     "1+1+4 xīngqī liù Saturday",
+     "1+2+1 qīngjiégōng cleaner",
+     "1+2+2 zhuōmícáng to hide and seek",
+     "1+2+3 chī píngguǒ to eat an apple",
+     "1+2+4 Jiānádà Canada",
+     "1+3+1 gāojiǎobēi goblet",
+     "1+3+2 duī xuěrén to make a snowman",
+     "1+3+3 huā yǔsǎn colorful umbrella",
+     "1+3+4 chī mǐfàn to eat rice",
+     "1+4+1 hāmìguā Hami melon",
+     "1+4+2 jīqìrén robot",
+     "1+4+3 bōlànggǔ rattle-drum",
+     "1+4+4 yīwùshì medical room"
+    ],
+    "notes_en": [
+     "Tone Collocation in Trisyllabic Words (1): words starting with a first-tone syllable"
+    ]
+   }
+  ],
+  "texts": [
+   {
+    "n": 1,
+    "title_zh": "在路上",
+    "title_en": "On the road",
+    "kind": "dialogue",
+    "lines": [
+     {
+      "speaker": "A",
+      "zh": "昨天北京的天气怎么样？",
+      "pinyin": "Zuótiān Běijīng de tiānqì zěnmeyàng?"
+     },
+     {
+      "speaker": "B",
+      "zh": "太热了。",
+      "pinyin": "Tài rè le."
+     },
+     {
+      "speaker": "A",
+      "zh": "明天呢？明天天气怎么样？",
+      "pinyin": "Míngtiān ne? Míngtiān tiānqì zěnmeyàng?"
+     },
+     {
+      "speaker": "B",
+      "zh": "明天天气很好，不冷不热。",
+      "pinyin": "Míngtiān tiānqì hěn hǎo, bù lěng bú rè."
+     }
+    ],
+    "english_version": "A: How was the weather in Beijing yesterday?\nB: It was too hot.\nA: What about tomorrow? What will the weather be like tomorrow?\nB: It will be fine, neither cold nor hot.",
+    "new_words": [
+     {
+      "n": 1,
+      "zh": "天气",
+      "pinyin": "tiānqì",
+      "pos": "n.",
+      "en": "weather",
+      "text": 1
+     },
+     {
+      "n": 2,
+      "zh": "怎么样",
+      "pinyin": "zěnmeyàng",
+      "pos": "pron.",
+      "en": "(indicating nature, condition or manner) how",
+      "text": 1
+     },
+     {
+      "n": 3,
+      "zh": "太",
+      "pinyin": "tài",
+      "pos": "adv.",
+      "en": "too, excessively ｜ 太……了 tài……le: too, extremely",
+      "text": 1
+     },
+     {
+      "n": 4,
+      "zh": "热",
+      "pinyin": "rè",
+      "pos": "adj.",
+      "en": "hot",
+      "text": 1
+     },
+     {
+      "n": 5,
+      "zh": "冷",
+      "pinyin": "lěng",
+      "pos": "adj.",
+      "en": "cold",
+      "text": 1
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "title_zh": "在健身房",
+    "title_en": "In the gym",
+    "kind": "dialogue",
+    "lines": [
+     {
+      "speaker": "A",
+      "zh": "今天会下雨吗？",
+      "pinyin": "Jīntiān huì xià yǔ ma?"
+     },
+     {
+      "speaker": "B",
+      "zh": "今天不会下雨。",
+      "pinyin": "Jīntiān bú huì xià yǔ."
+     },
+     {
+      "speaker": "A",
+      "zh": "王小姐今天会来吗？",
+      "pinyin": "Wáng xiǎojiě jīntiān huì lái ma?"
+     },
+     {
+      "speaker": "B",
+      "zh": "不会来，天气太冷了。",
+      "pinyin": "Bú huì lái, tiānqì tài lěng le."
+     }
+    ],
+    "english_version": "A: Will it rain today?\nB: No, it won’t rain.\nA: Will Miss Wang come today?\nB: No, she won’t. It’s too cold.",
+    "new_words": [
+     {
+      "n": 6,
+      "zh": "下雨",
+      "pinyin": "xià yǔ",
+      "en": "to rain ｜ 下 xià v. (of rain, snow, etc.) to fall ｜ 雨 yǔ n. rain",
+      "text": 2
+     },
+     {
+      "n": 7,
+      "zh": "小姐",
+      "pinyin": "xiǎojiě",
+      "pos": "n.",
+      "en": "miss, young lady",
+      "text": 2
+     },
+     {
+      "n": 8,
+      "zh": "来",
+      "pinyin": "lái",
+      "pos": "v.",
+      "en": "to come",
+      "text": 2
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "title_zh": "在病房",
+    "title_en": "In the sickroom",
+    "kind": "dialogue",
+    "lines": [
+     {
+      "speaker": "A",
+      "zh": "你身体怎么样？",
+      "pinyin": "Nǐ shēntǐ zěnmeyàng?"
+     },
+     {
+      "speaker": "B",
+      "zh": "我身体不太好。天气太热了，不爱吃饭。",
+      "pinyin": "Wǒ shēntǐ bú tài hǎo. Tiānqì tài rè le, bú ài chī fàn."
+     },
+     {
+      "speaker": "A",
+      "zh": "你多吃些水果，多喝水。",
+      "pinyin": "Nǐ duō chī xiē shuǐguǒ, duō hē shuǐ."
+     },
+     {
+      "speaker": "B",
+      "zh": "谢谢你，医生。",
+      "pinyin": "Xièxie nǐ, yīshēng."
+     }
+    ],
+    "english_version": "A: How are you?\nB: Not very well. It’s too hot. I have no appetite.\nA: Eat more fruit and drink more water.\nB: Thank you, doctor.",
+    "new_words": [
+     {
+      "n": 9,
+      "zh": "身体",
+      "pinyin": "shēntǐ",
+      "pos": "n.",
+      "en": "body",
+      "star": true,
+      "text": 3
+     },
+     {
+      "n": 10,
+      "zh": "爱",
+      "pinyin": "ài",
+      "pos": "v.",
+      "en": "to like, to love",
+      "text": 3
+     },
+     {
+      "n": 11,
+      "zh": "些",
+      "pinyin": "xiē",
+      "pos": "m.",
+      "en": "some, a few",
+      "text": 3
+     },
+     {
+      "n": 12,
+      "zh": "水果",
+      "pinyin": "shuǐguǒ",
+      "pos": "n.",
+      "en": "fruit",
+      "text": 3
+     },
+     {
+      "n": 13,
+      "zh": "水",
+      "pinyin": "shuǐ",
+      "pos": "n.",
+      "en": "water",
+      "text": 3
+     }
+    ]
+   }
+  ],
+  "grammar": [
+   {
+    "n": 1,
+    "title_zh": "疑问代词“怎么样”",
+    "title_en": "The Interrogative Pronoun “怎么样”",
+    "explanation_zh": "“怎么样”用来询问状况。例如：",
+    "explanation_en": "“怎么样” is used to ask about the condition of something or someone. For example:",
+    "examples": [
+     {
+      "n": 1,
+      "zh": "你的汉语怎么样？"
+     },
+     {
+      "n": 2,
+      "zh": "你妈妈身体怎么样？"
+     },
+     {
+      "n": 3,
+      "zh": "明天天气怎么样？"
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "title_zh": "主谓谓语句",
+    "title_en": "Sentences with a Subject-Predicate Phrase as the Predicate",
+    "explanation_zh": "主谓谓语句中的谓语是一个主谓结构的短语，它的格式是：\n全句主语＋全句谓语（主语＋谓语）\n注意：全句谓语中的主语常常是全句主语的一部分或者跟它相关。",
+    "explanation_en": "In Chinese, there is such a kind of sentence in which the predicate is a subject-predicate phrase. The structure is:\nSubject of the Sentence + Predicate of the Sentence (Subject + Predicate)\nNote: The subject in the subject-predicate phrase is usually part of the subject of the sentence or related to it.",
+    "structure_rows": [
+     "Subject | Predicate: Subject | Predicate: Predicate",
+     "我 | 身体 | 不太好。",
+     "明天 | 天气 | 很好。",
+     "你 | 身体 | 怎么样？"
+    ],
+    "examples": [
+     {
+      "zh": "我身体不太好。"
+     },
+     {
+      "zh": "明天天气很好。"
+     },
+     {
+      "zh": "你身体怎么样？"
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "title_zh": "程度副词“太”",
+    "title_en": "The Adverb “太”",
+    "explanation_zh": "副词“太”表示程度深的意义。用“太”的句尾常带“了”。否定句不用“了”。例如：",
+    "explanation_en": "The adverb “太” indicates a high degree. “了” is often used at the end of the sentences with “太”, but not in negative sentences. For example.",
+    "examples": [
+     {
+      "n": 1,
+      "zh": "太热了。"
+     },
+     {
+      "n": 2,
+      "zh": "天气太冷了。"
+     },
+     {
+      "n": 3,
+      "zh": "我身体不太好。"
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "title_zh": "能愿动词“会”（2）",
+    "title_en": "The Modal Verb “会” (2)",
+    "explanation_zh": "“会”在句中表示所说的情况有可能实现。例如：",
+    "explanation_en": "“会” indicates the possibility of the situation mentioned. For example:",
+    "examples": [
+     {
+      "n": 1,
+      "zh": "A：爸爸八点前会回家吗？\nB：会。"
+     },
+     {
+      "n": 2,
+      "zh": "A：明天她会来吗？\nB：她会来。"
+     },
+     {
+      "n": 3,
+      "zh": "A：今天会下雨吗？\nB：今天不会下雨。"
+     }
+    ]
+   }
+  ],
+  "exercises": [
+   {
+    "n": 1,
+    "type_zh": "分角色朗读课文",
+    "instruction_zh": "分角色朗读课文",
+    "instruction_en": "Role-play the dialogues.",
+    "items": []
+   },
+   {
+    "n": 2,
+    "type_zh": "回答问题",
+    "instruction_zh": "根据课文内容回答问题",
+    "instruction_en": "Answer the questions based on the dialogues.",
+    "items": [
+     {
+      "n": 1,
+      "zh": "昨天北京的天气怎么样？",
+      "pinyin": "Zuótiān Běijīng de tiānqì zěnmeyàng?"
+     },
+     {
+      "n": 2,
+      "zh": "明天天气怎么样？",
+      "pinyin": "Míngtiān tiānqì zěnmeyàng?"
+     },
+     {
+      "n": 3,
+      "zh": "今天会下雨吗？",
+      "pinyin": "Jīntiān huì xià yǔ ma?"
+     },
+     {
+      "n": 4,
+      "zh": "王小姐会来吗？",
+      "pinyin": "Wáng Xiǎojiě huì lái ma?"
+     },
+     {
+      "n": 5,
+      "zh": "他的身体怎么样？",
+      "pinyin": "Tā de shēntǐ zěnmeyàng?"
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "type_zh": "描述图片",
+    "instruction_zh": "用本课新学的语言点和词语描述图片",
+    "instruction_en": "Describe the pictures using the newly-learned language points and words.",
+    "items": [
+     {
+      "n": 1,
+      "zh": "妈妈________不太好。",
+      "pinyin": "Māma bú tài hǎo.",
+      "picture_desc_en": "a woman in a grey sweater and scarf sitting on a sofa with her hand on her forehead, looking unwell; a cup on the table beside her"
+     },
+     {
+      "n": 2,
+      "zh": "明天天气很好，不会________。",
+      "pinyin": "Míngtiān tiānqì hěn hǎo, bú huì",
+      "picture_desc_en": "a green tree under a blue sky with white clouds"
+     },
+     {
+      "n": 3,
+      "zh": "王小姐爱吃________，不爱吃饭。",
+      "pinyin": "Wáng Xiǎojiě ài chī bú ài chī fàn.",
+      "picture_desc_en": "a banana and a peach on a plate with a fork"
+     },
+     {
+      "n": 4,
+      "zh": "今天天气________，你多喝水。",
+      "pinyin": "Jīntiān tiānqì nǐ duō hē shuǐ.",
+      "picture_desc_en": "a boy in the sun pouring water from a bottle over his head, eyes closed"
+     }
+    ]
+   }
+  ],
+  "characters": {
+   "knowledge_title_zh": "认识独体字／汉字偏旁“女”和“饣”",
+   "knowledge_zh": "1 认识独体字\n（1）“天”，本义表示头顶，后借指“天空”，与“地”相对。\n（2）“气”，字形与“三”相似，意思是没有一定的形状、体积，能自由散布的气体。\n（3）“雨”，字形像从天上降落下来的水滴，表示一种自然现象。\n2 汉字偏旁“女”和“饣”\n偏旁 | 解释 | 例字\n女 | 女字旁，一般和女性有关系。 | 姐 jiě、妈 mā\n饣 | 食字旁，一般和食物有关。 | 饭 fàn、饮 yǐn",
+   "knowledge_en": "Single-Component Characters: (1) “天” originally meant “the top of the head”. It later means “sky”, opposite to “地 (earth)”. (2) Shaped like “三”, “气” refers to the air, which has no shape or size and can spread freely. (3) “雨” is shaped like raindrops falling from the sky, indicating the natural phenomenon–“rain”.\nChinese Radicals: “女” and “饣” — The radical “女” is usually related to women: 姐 jiě elder sister; 妈 mā mother. The radical “饣” is usually related to food: 饭 fàn meal; 饮 yǐn to drink.",
+   "characters": [
+    {
+     "zh": "天",
+     "pinyin": "tiān",
+     "note_zh": "独体字：本义表示头顶，后借指“天空”（字形演变图4步 + 笔顺图4步：一→二→…→天）"
+    },
+    {
+     "zh": "气",
+     "pinyin": "qì",
+     "note_zh": "独体字：字形与“三”相似，指气体（字形演变图4步 + 笔顺图4步：丿→𠂉→…→气）"
+    },
+    {
+     "zh": "雨",
+     "pinyin": "yǔ",
+     "note_zh": "独体字：字形像从天上降落下来的水滴（字形演变图4步 + 笔顺图8步：一→丆→…→雨）"
+    },
+    {
+     "zh": "姐",
+     "pinyin": "jiě",
+     "note_zh": "偏旁“女”例字（elder sister）"
+    },
+    {
+     "zh": "妈",
+     "pinyin": "mā",
+     "note_zh": "偏旁“女”例字（mother）"
+    },
+    {
+     "zh": "饭",
+     "pinyin": "fàn",
+     "note_zh": "偏旁“饣”例字（meal）"
+    },
+    {
+     "zh": "饮",
+     "pinyin": "yǐn",
+     "note_zh": "偏旁“饣”例字（to drink）"
+    }
+   ],
+   "confusable_pairs": [
+    [
+     "大",
+     "太"
+    ],
+    [
+     "小",
+     "少"
+    ]
+   ]
+  },
+  "application": [
+   {
+    "title_zh": "双人活动",
+    "instruction_zh": "两人一组，用“太……了”做出评价。",
+    "instruction_en": "Work in pairs and make comments using “太……了” or its negative form.",
+    "example_zh": [
+     "例如：",
+     "A：她的汉语怎么样？ Tā de Hànyǔ zěnmeyàng?",
+     "B：不太好／太好了。 Bú tài hǎo / Tài hǎo le.",
+     "北京的天气 Běijīng de tiānqì — 冷 lěng　热 rè",
+     "中国菜 Zhōngguó cài — 好吃 hǎochī",
+     "那个电影 nàge diànyǐng — 好看 hǎokàn",
+     "王老师写的汉字 Wáng lǎoshī xiě de Hànzì — 好 hǎo"
+    ]
+   },
+   {
+    "title_zh": "小组活动",
+    "instruction_zh": "3～4人一组，互相询问并记录不同城市最近几天的天气情况，每组请一位同学报告情况。",
+    "instruction_en": "Work in groups of 3-4. Ask each other about the recent weather conditions in different cities and take notes. Each group chooses one member to make a report.",
+    "example_zh": [
+     "例如：",
+     "A：昨天北京天气好吗？ Zuótiān Běijīng tiānqì hǎo ma?",
+     "B：昨天很好。不冷不热。 Zuótiān hěn hǎo. Bù lěng bú rè.",
+     "A：明天会下雨吗？ Míngtiān huì xià yǔ ma?",
+     "B：明天不会下雨。 Míngtiān bú huì xià yǔ.",
+     "表格：地名 Place | 昨天天气 Yesterday's Weather | 今天天气 Today’s Weather | 明天天气 Tomorrow’s Weather",
+     "1 | 北京 Běijīng | 很好 hěn hǎo | 不太好 bú tài hǎo | 不好，很冷 bù hǎo, hěn lěng",
+     "（另有3行空白）"
+    ]
+   }
+  ]
+ },
+ "teacher": {
+  "ref": {
+   "book": "teacher",
+   "pages": [
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84
+   ]
+  },
+  "objectives_zh": [
+   "重点词语：学生能够熟练掌握“天气、热、冷、下雨、来、身体、爱、些、水果、水”的词义和用法",
+   "语言点：学生能够了解并掌握：（1）疑问代词“怎么样”（2）主谓谓语句（3）程度副词“太”（4）能愿动词“会”（2）：表示所说的情况有可能实现",
+   "语音：学生熟悉一声音节开头的三音节词语的声调模式，并能正确朗读",
+   "汉字：学生能够：（1）熟练认读本课生词（2）独立书写独体字“天、气、雨”（3）了解“女（女字旁）、饣（食字旁）”所表示的意思",
+   "功能：学生能够：（1）询问和回答人或者事物的性质状态（2）询问和描述人或者事物某一方面的情况（3）表达程度较深的意义（4）表达所说的情况有可能实现"
+  ],
+  "steps": [
+   {
+    "title_zh": "一 复习旧课",
+    "body_zh": "1. 教师出示第11课生词卡片，要求学生快速认读下列生词。\n现在、点、分、中午、吃饭、时候、回、我们、电影、住、前、北京\n2. 教师根据第11课重点内容简单提问，活跃课堂气氛。\n（1）现在几点？\n（2）你早上几点吃早饭？\n（3）你中午几点吃午饭？\n（4）你妈妈什么时候去工作？\n（5）你什么时候去跟朋友喝咖啡？"
+   },
+   {
+    "title_zh": "二 学习新课 1 热身",
+    "body_zh": "教师可依次指示热身部分的图片，要求学生集体或单个说出图片对应的词语，教师评判正误，并注意纠正学生的发音错误。最后全体学生再次齐读热身环节的所有词语，要求语音标准、声调准确。\n答案：①C　②D　③B　④A　⑤F　⑥E"
+   },
+   {
+    "title_zh": "2 生词",
+    "body_zh": "（1）生词快速认读及正音\n天气、怎么样、太……了、热、冷、下雨、小姐、来、身体、爱、些、水果、水\n• 教师使用生词卡片有拼音和汉字的一面，带领学生快速认读一遍本课生词；\n• 使用生词卡片只有汉字的一面，带领学生再次认读本课生词；\n• 请单个学生独自认读2–3个生词；\n• 最后全体学生再快速认读一遍本课所有生词。\n注意：本课生词中应注意“热”，提示学生注意声母“r”的发音；注意“小姐、水果”的三声变调；“下雨”的“雨”注意“ü”的发音。\n（2）重点生词扩展及常用搭配\n天气—北京的天气—上海的天气—美国的天气\n　—今天的天气—明天的天气—昨天的天气\n　—天气很好—天气不好\n热—天气很热—天气不热\n　—热茶—热咖啡—热米饭—热菜\n冷—天气很冷—天气不冷\n　—不冷不热\n下雨—下雨了—外面下雨了。\n　—昨天下雨了—昨天北京下雨了。\n来—来我家—来我家喝茶\n　—来学校—来学校学习汉语—我们来学校学习汉语。\n　　—来学校工作—老师来学校工作。\n　—不来—不来学校—他今天不来学校。\n身体—身体好吗？—身体好不好？—身体怎么样？\n　—身体很好—身体不好\n爱—爱喝茶—爱喝咖啡—爱吃中国菜—爱学习\n　—不爱喝水—不爱吃饭—不爱学习\n［句型框］（不）爱＋动词\n些—一些—这些—那些—哪些\n　—一些水果—一些朋友—一些学校\n［句型框］一些／这些／那些／哪些＋名词\n水果—吃水果—爱吃水果\n　—什么水果—这是什么水果？—你爱吃什么水果？\n水—喝水—多喝水\n练习册相关练习：第81页／一／第一部分，第84页／二／第二部分"
+   },
+   {
+    "title_zh": "3 语言点（1）疑问代词“怎么样”",
+    "body_zh": "① 语言点解析\n疑问代词“怎么样”用来询问状况，用于疑问句句尾。\n［句型框］……怎么样？\n② 语言点导入\n教师：你想知道他的汉语好不好，你应该问……\n学生：他的汉语怎么样？\n教师：你想问北京的天气好不好，你应该问……\n学生：北京的天气怎么样？\n③ 语言点操练\n教师可组织学生两人一组，根据提示进行对话练习。\nA：……怎么样？\nB：……。\n［提示框］你的汉语　你的汉字　你们学校　这个菜　那个电影　这本书　……"
+   },
+   {
+    "title_zh": "3 语言点（2）主谓谓语句",
+    "body_zh": "① 语言点解析\n主谓谓语句是汉语中一种重要的句型结构。主谓谓语句中的谓语是一个主谓结构的短语，该主谓结构的主语一般是全句主语的某一部分、某一方面或者跟它相关。主谓谓语句一般用来描述人或者事物某一方面的性质或状态，一般可以用“……怎么样？”来提问。\n［句型框］全句主语＋全句谓语（主语＋谓语）\n② 语言点导入\n教师出示一张一个人身体不舒服的图片。\n教师：他怎么样？\n学生：他不太好。\n教师：他什么不太好？\n学生：身体。\n教师：对，他身体不太好。\n③ 语言点操练\n教师可组织学生根据实际情况进行问答练习。\n目标句：我身体很好。\n我爸爸妈妈身体也很好。\n今天天气不太好。\n昨天天气很热。\n他工作很忙。\n注意：教师提示学生注意“今天的天气很好。”和“今天天气很好。”这两个句子的异同。前者是主谓句，后者是主谓谓语句，二者的语法结构不同，但是句子的意义是一致的。"
+   },
+   {
+    "title_zh": "3 语言点（3）程度副词“太”",
+    "body_zh": "① 语言点解析\n副词“太”用在形容词前，表示程度深。用“太”的句尾常带“了”，否定句不用“了”，其否定形式为“不太”。\n［句型框］太＋形容词＋了\n［句型框］不太＋形容词\n② 语言点导入\n教师可利用本课热身图片C、D进行导入。\n教师：今天天气怎么样？\n学生：很冷。／很热。\n教师：对，也可以说“太冷了／太热了”。\n目标句：今天天气太冷了。／今天天气太热了。\n教师：昨天天气冷吗？\n学生：昨天天气不太冷。\n③ 语言点操练\n教师可组织学生根据实际情况进行问答练习。\n目标句：北京的冬天太冷了。\n中国菜太好吃了。\n这本书太好看了。\n大卫的汉字不太好。\n……"
+   },
+   {
+    "title_zh": "3 语言点（4）能愿动词“会”（2）",
+    "body_zh": "① 语言点解析\n“会”在句中和后边的动词一起构成句子的谓语部分，表示所说的情况有可能实现，其否定形式是“不会”。\n［句型框］主语＋（不）会＋动词。\n② 语言点导入\n教师可分别出示阴天和晴天的图片，引导学生用新的语言点进行描述。\n教师：你觉得今天下雨吗？\n学生：下雨。\n教师：对，今天会下雨。\n你觉得明天下雨吗？\n学生：明天不会下雨。\n③ 语言点操练\n教师提供情景，请学生把句子补充完整。\n今天天气很好，下午……。\n……，下午会下雨。\n爸爸这个星期去北京，……。\n他今天身体不好，……。\n……，他今天不会来学校。"
+   },
+   {
+    "title_zh": "4 课文",
+    "body_zh": "课文1\n（1）让学生听两遍录音并回答下列问题：\n昨天北京的天气怎么样？\n明天天气好不好？\n明天热吗？\n（2）根据学生的回答，教师领说变为叙述体的课文，并请学生单个复述：\n昨天北京的天气太热了。明天北京天气很好，不冷不热。\n（3）教师领读课文两遍，然后让学生分角色朗读课文。\n课文2\n（1）让学生听两遍录音并回答下列问题：\n今天有雨吗？\n王小姐今天会不会来？为什么？\n（2）根据学生的回答，教师领说变为叙述体的课文，并请学生单个复述：\n今天不会下雨。今天天气太冷了，王小姐不会来。\n（3）教师领读课文两遍，然后让学生分角色朗读课文。\n课文3\n（1）让学生听两遍录音并回答下列问题：\n他身体怎么样？\n他为什么不爱吃饭？\n医生让他多吃什么？多喝什么？\n（2）教师领读课文两遍，然后让学生分角色朗读课文。\n（3）模仿练习\n教师组织学生两人一组，根据提示进行对话练习。\nA：你身体……？\nB：我……。天气太……了，我不爱……。\nA：你多……，多……。\nB：谢谢你，……。"
+   },
+   {
+    "title_zh": "5 语音",
+    "body_zh": "三音节词语的声调搭配（1）：一声音节开头\n三个音节相连的读法，一般是第三个音节保持原调值，前两个音节的声调模式与双音节词语的声调模式相同。\n有些可分解的三音节词语可以切分成2＋1或者1＋2的模式，即一个双音节加一个单音节的组合。这时先按照双音节词语的声调组合模式确定双音节的声调模式，然后再加上保持原调的第三个音节，就可以确定该三音节词语的声调模式了。朗读时要注意第三声音节的变调。\n教师可利用课本第94页的三音节声调搭配词表进行语音练习。可先领读第一行三音节词语，使学生熟悉练习方法，然后变换齐读、单个学生读、按顺序读、跳读等方法组织学生进行练习。\n练习册相关练习：第87页／三"
+   },
+   {
+    "title_zh": "6 汉字",
+    "body_zh": "① 知识点解析\n独体字\n天：本义表示头顶，后来借指“天空”，与“地”相对。\n气：字形与“三”相似，意思是没有一定的形状、体积，能自由散布的气体。\n雨：字形像从天上降落下来的水滴，表示一种自然现象。\n偏旁\n女：女字旁，一般和女性有关系。\n饣：食字旁，一般和食物有关系。\n② 汉字练习\n• 教师板书或者用手指在空中书写本课独体字“天、气、雨”，带领学生一起识记独体字的笔画笔顺。\n• 教师板书本课偏旁“女、饣”，提示学生注意这两个偏旁的笔画和笔顺，并书写各自的代表汉字，帮助学生识记偏旁的意义。\n• 补充练习\n辨认下列汉字并组词\n大（　）／太（　）　气（　）／吃（　）\n姐（　）／妹（　）　雨（　）／水（　）\n练习册相关练习：第88–89页／四"
+   },
+   {
+    "title_zh": "7 补充课堂活动——找一找，说一说",
+    "body_zh": "教师准备分别写有汉字和词语的卡片。教师保留四张汉字卡片，其他词语卡片打乱顺序分发给学生。教师分别出示汉字卡片，让学生看自己手中的词语卡片是否包含这个汉字，如果包含，请学生出示并朗读这个词语，并且用这个词语说一个句子。\n汉字卡片：天、饭、女、姐\n词语卡片：今天、明天、昨天、天气、吃饭、早饭、午饭、晚饭、米饭、女儿、女生、女老师、小姐、姐姐"
+   },
+   {
+    "title_zh": "附注：建议教学用具",
+    "body_zh": "1. 生词卡片：第11、12课生词卡片\n2. 独体字卡片：第12课独体字卡片\n3. 图片：身体不舒服、阴天、晴天\n4. 补充活动卡片：汉字及包含这些汉字的词语"
+   }
+  ],
+  "notes_zh": [
+   "注意：本课生词中应注意“热”，提示学生注意声母“r”的发音；注意“小姐、水果”的三声变调；“下雨”的“雨”注意“ü”的发音。（生词）",
+   "注意：教师提示学生注意“今天的天气很好。”和“今天天气很好。”这两个句子的异同。前者是主谓句，后者是主谓谓语句，二者的语法结构不同，但是句子的意义是一致的。（语言点2）"
+  ],
+  "warmup_answers_zh": [
+   "答案：①C　②D　③B　④A　⑤F　⑥E"
+  ],
+  "text_questions": [
+   {
+    "text": 1,
+    "q_zh": "昨天北京的天气怎么样？"
+   },
+   {
+    "text": 1,
+    "q_zh": "明天天气好不好？"
+   },
+   {
+    "text": 1,
+    "q_zh": "明天热吗？"
+   },
+   {
+    "text": 2,
+    "q_zh": "今天有雨吗？"
+   },
+   {
+    "text": 2,
+    "q_zh": "王小姐今天会不会来？为什么？"
+   },
+   {
+    "text": 3,
+    "q_zh": "他身体怎么样？"
+   },
+   {
+    "text": 3,
+    "q_zh": "他为什么不爱吃饭？"
+   },
+   {
+    "text": 3,
+    "q_zh": "医生让他多吃什么？多喝什么？"
+   }
+  ],
+  "summary_zh": "• 语言点：……怎么样？\n　主谓谓语句\n　太……了\n　能愿动词“会”表示可能\n• 语音：三音节词语的声调搭配（1）：一声音节开头\n• 汉字：独体字“天、气、雨”\n　偏旁“女、饣”"
+ },
+ "workbook": {
+  "ref": {
+   "book": "workbook",
+   "pages": [
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97
+   ]
+  },
+  "sections": [
+   {
+    "n": "一、听力 第一部分",
+    "type_zh": "听力 第一部分",
+    "instruction_zh": "第1–5题：听词或短语，判断对错",
+    "instruction_en": "Questions 1-5: Listen to the words or phrases and decide whether the pictures are right or wrong based on what you hear.",
+    "items": [
+     {
+      "n": "例1",
+      "zh": "很高兴 hěn gāoxìng very happy",
+      "transcript_zh": "很高兴",
+      "picture_desc_en": "a smiling young woman with her hair tied back",
+      "answer": "√",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        89
+       ]
+      }
+     },
+     {
+      "n": "例2",
+      "zh": "看电影 kàn diànyǐng to see a movie",
+      "transcript_zh": "看电影",
+      "picture_desc_en": "an older man in a suit sitting and reading papers",
+      "answer": "×",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        89
+       ]
+      }
+     },
+     {
+      "n": 1,
+      "zh": "",
+      "transcript_zh": "水果",
+      "picture_desc_en": "a pile of assorted vegetables (eggplants, cabbage, peppers, etc.)",
+      "answer": "×",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        67
+       ]
+      }
+     },
+     {
+      "n": 2,
+      "zh": "",
+      "transcript_zh": "下雨",
+      "picture_desc_en": "the sun shining through a tree over the sea, with tall grass in the foreground",
+      "answer": "×",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        67
+       ]
+      }
+     },
+     {
+      "n": 3,
+      "zh": "",
+      "transcript_zh": "水",
+      "picture_desc_en": "a jug and a glass of milk",
+      "answer": "×",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        67
+       ]
+      }
+     },
+     {
+      "n": 4,
+      "zh": "",
+      "transcript_zh": "热",
+      "picture_desc_en": "people walking in falling snow among palm trees in front of a building",
+      "answer": "×",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        67
+       ]
+      }
+     },
+     {
+      "n": 5,
+      "zh": "",
+      "transcript_zh": "身体",
+      "picture_desc_en": "the torso of a woman in a sports top with her hand on her hip",
+      "answer": "√",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        67
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "一、听力 第二部分",
+    "type_zh": "听力 第二部分",
+    "instruction_zh": "第6–10题：听对话，选择与对话内容一致的图片",
+    "instruction_en": "Questions 6-10: Listen to the dialogues and choose the right picture for each dialogue you hear.",
+    "items": [
+     {
+      "n": "例",
+      "zh": "女：你好！ Nǐ hǎo! (How do you do?) 男：你好！很高兴认识你。 Nǐ hǎo! Hěn gāoxìng rènshi nǐ. (How do you do? Nice to meet you.)",
+      "transcript_zh": "女：你好！ 男：你好！很高兴认识你。",
+      "options": {
+       "A": "[picture] a sick man lying in bed holding his head, with medicine bottles and pills in front of him",
+       "B": "[picture] a man with a towel around his neck drinking from a water bottle",
+       "C": "[picture] a man and a woman in business suits shaking hands in front of an elevator",
+       "D": "[picture] a woman doctor with a stethoscope at a desk talking with a girl who leans on the desk",
+       "E": "[picture] a city skyline with a tall TV tower under a dark cloudy sky",
+       "F": "[picture] a hospital ward with beds separated by curtains"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        90
+       ]
+      }
+     },
+     {
+      "n": 6,
+      "zh": "",
+      "options": {
+       "A": "[picture] a sick man lying in bed holding his head, with medicine bottles and pills in front of him",
+       "B": "[picture] a man with a towel around his neck drinking from a water bottle",
+       "C": "[picture] a man and a woman in business suits shaking hands in front of an elevator",
+       "D": "[picture] a woman doctor with a stethoscope at a desk talking with a girl who leans on the desk",
+       "E": "[picture] a city skyline with a tall TV tower under a dark cloudy sky",
+       "F": "[picture] a hospital ward with beds separated by curtains"
+      },
+      "transcript_zh": "男：今天天气不好，会下雨吗？ 女：下午会下雨。",
+      "answer": "E",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        68
+       ]
+      }
+     },
+     {
+      "n": 7,
+      "zh": "",
+      "options": {
+       "A": "[picture] a sick man lying in bed holding his head, with medicine bottles and pills in front of him",
+       "B": "[picture] a man with a towel around his neck drinking from a water bottle",
+       "C": "[picture] a man and a woman in business suits shaking hands in front of an elevator",
+       "D": "[picture] a woman doctor with a stethoscope at a desk talking with a girl who leans on the desk",
+       "E": "[picture] a city skyline with a tall TV tower under a dark cloudy sky",
+       "F": "[picture] a hospital ward with beds separated by curtains"
+      },
+      "transcript_zh": "女：今天天气太热了。 女：是啊，你多喝水。",
+      "answer": "B",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        68
+       ]
+      }
+     },
+     {
+      "n": 8,
+      "zh": "",
+      "options": {
+       "A": "[picture] a sick man lying in bed holding his head, with medicine bottles and pills in front of him",
+       "B": "[picture] a man with a towel around his neck drinking from a water bottle",
+       "C": "[picture] a man and a woman in business suits shaking hands in front of an elevator",
+       "D": "[picture] a woman doctor with a stethoscope at a desk talking with a girl who leans on the desk",
+       "E": "[picture] a city skyline with a tall TV tower under a dark cloudy sky",
+       "F": "[picture] a hospital ward with beds separated by curtains"
+      },
+      "transcript_zh": "男：明天天气很好，你去学校吗？ 男：不去，明天我去医院。",
+      "answer": "F",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        68
+       ]
+      }
+     },
+     {
+      "n": 9,
+      "zh": "",
+      "options": {
+       "A": "[picture] a sick man lying in bed holding his head, with medicine bottles and pills in front of him",
+       "B": "[picture] a man with a towel around his neck drinking from a water bottle",
+       "C": "[picture] a man and a woman in business suits shaking hands in front of an elevator",
+       "D": "[picture] a woman doctor with a stethoscope at a desk talking with a girl who leans on the desk",
+       "E": "[picture] a city skyline with a tall TV tower under a dark cloudy sky",
+       "F": "[picture] a hospital ward with beds separated by curtains"
+      },
+      "transcript_zh": "女：你身体怎么样？ 女：不太好，不爱吃饭。",
+      "answer": "D",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        68
+       ]
+      }
+     },
+     {
+      "n": 10,
+      "zh": "",
+      "options": {
+       "A": "[picture] a sick man lying in bed holding his head, with medicine bottles and pills in front of him",
+       "B": "[picture] a man with a towel around his neck drinking from a water bottle",
+       "C": "[picture] a man and a woman in business suits shaking hands in front of an elevator",
+       "D": "[picture] a woman doctor with a stethoscope at a desk talking with a girl who leans on the desk",
+       "E": "[picture] a city skyline with a tall TV tower under a dark cloudy sky",
+       "F": "[picture] a hospital ward with beds separated by curtains"
+      },
+      "transcript_zh": "女：大卫今天会来吗？ 男：他身体不好，不会来。",
+      "answer": "A",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        68
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "一、听力 第三部分",
+    "type_zh": "听力 第三部分",
+    "instruction_zh": "第11–15题：听句子，回答问题",
+    "instruction_en": "Questions 11-15: Listen to the sentences and answer the questions.",
+    "items": [
+     {
+      "n": "例",
+      "zh": "问：她下午去哪里？",
+      "pinyin": "Tā xiàwǔ qù nǎli?",
+      "transcript_zh": "下午我去商店，我想买一些水果。 问：她下午去哪里？",
+      "options": {
+       "A": "商店 shāngdiàn store",
+       "B": "医院 yīyuàn hospital",
+       "C": "学校 xuéxiào school"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        91
+       ]
+      }
+     },
+     {
+      "n": 11,
+      "zh": "问：星期五天气怎么样？",
+      "transcript_zh": "星期五天气很好，星期六会下雨。 问：星期五天气怎么样？",
+      "options": {
+       "A": "很好 hěn hǎo",
+       "B": "不好 bù hǎo",
+       "C": "下雨 xià yǔ"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        68
+       ]
+      }
+     },
+     {
+      "n": 12,
+      "zh": "问：今天天气怎么样？",
+      "transcript_zh": "今天太冷了，我不想去了。 问：今天天气怎么样？",
+      "options": {
+       "A": "很好 hěn hǎo",
+       "B": "太冷了 tài lěng le",
+       "C": "太热了 tài rè le"
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        68
+       ]
+      }
+     },
+     {
+      "n": 13,
+      "zh": "问：明天什么时候会下雨？",
+      "transcript_zh": "明天上午不会下雨，下午会下雨。 问：明天什么时候会下雨？",
+      "options": {
+       "A": "上午 shàngwǔ",
+       "B": "中午 zhōngwǔ",
+       "C": "下午 xiàwǔ"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        68
+       ]
+      }
+     },
+     {
+      "n": 14,
+      "zh": "问：王小姐什么时候会来？",
+      "transcript_zh": "王小姐八点前会来。 问：王小姐什么时候会来？",
+      "options": {
+       "A": "八点 bā diǎn",
+       "B": "八点前 bā diǎn qián",
+       "C": "八点十分 bā diǎn shí fēn"
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        68
+       ]
+      }
+     },
+     {
+      "n": 15,
+      "zh": "问：他／她爸爸这个星期身体怎么样？",
+      "transcript_zh": "我爸爸这个星期身体不太好。 问：他／她爸爸这个星期身体怎么样？",
+      "options": {
+       "A": "很好 hěn hǎo",
+       "B": "不太好 bú tài hǎo",
+       "C": "太好了 tài hǎo le"
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        68
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第一部分",
+    "type_zh": "阅读 第一部分",
+    "instruction_zh": "第16–20题：看图片，判断图片内容是否与提示词一致",
+    "instruction_en": "Questions 16-20: Look at the pictures and decide whether the given words are right or wrong.",
+    "items": [
+     {
+      "n": "例1",
+      "zh": "电视 diànshì television",
+      "picture_desc_en": "an open laptop computer",
+      "answer": "×",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        92
+       ]
+      }
+     },
+     {
+      "n": "例2",
+      "zh": "飞机 fēijī airplane",
+      "picture_desc_en": "an airplane in flight",
+      "answer": "√",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        92
+       ]
+      }
+     },
+     {
+      "n": 16,
+      "zh": "水",
+      "pinyin": "shuǐ",
+      "picture_desc_en": "a glass of water with water splashing",
+      "answer": "√",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        69
+       ]
+      }
+     },
+     {
+      "n": 17,
+      "zh": "下雨",
+      "pinyin": "xià yǔ",
+      "picture_desc_en": "rain falling over a water surface",
+      "answer": "√",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        69
+       ]
+      }
+     },
+     {
+      "n": 18,
+      "zh": "水果",
+      "pinyin": "shuǐguǒ",
+      "picture_desc_en": "a basket of fruit with grapes, with cherries beside it",
+      "answer": "√",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        69
+       ]
+      }
+     },
+     {
+      "n": 19,
+      "zh": "小姐",
+      "pinyin": "xiǎojiě",
+      "picture_desc_en": "a smiling young man in a T-shirt and jeans",
+      "answer": "×",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        69
+       ]
+      }
+     },
+     {
+      "n": 20,
+      "zh": "医生",
+      "pinyin": "yīshēng",
+      "picture_desc_en": "a smiling man in a white coat with a stethoscope, arms crossed",
+      "answer": "√",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        69
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第二部分",
+    "type_zh": "阅读 第二部分",
+    "instruction_zh": "第21–25题：看问题，选择正确的回答",
+    "instruction_en": "Questions 21-25: Read the questions and choose the right answer to each of them.",
+    "items": [
+     {
+      "n": "例",
+      "zh": "你喝水吗？ Nǐ hē shuǐ ma? (Would you like some water?)",
+      "options": {
+       "A": "不会。 Bú huì.",
+       "B": "多喝水，多吃水果。 Duō hē shuǐ, duō chī shuǐguǒ.",
+       "C": "她很好，谢谢。 Tā hěn hǎo, xièxie.",
+       "D": "太热了，我一会儿去。 Tài rè le, wǒ yíhuìr qù.",
+       "E": "不冷不热。 Bù lěng bú rè.",
+       "F": "好的，谢谢！ Hǎo de, xièxie!"
+      },
+      "answer": "F",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        93
+       ]
+      }
+     },
+     {
+      "n": 21,
+      "zh": "下午会不会下雨？",
+      "pinyin": "Xiàwǔ huì bu huì xià yǔ?",
+      "options": {
+       "A": "不会。 Bú huì.",
+       "B": "多喝水，多吃水果。 Duō hē shuǐ, duō chī shuǐguǒ.",
+       "C": "她很好，谢谢。 Tā hěn hǎo, xièxie.",
+       "D": "太热了，我一会儿去。 Tài rè le, wǒ yíhuìr qù.",
+       "E": "不冷不热。 Bù lěng bú rè.",
+       "F": "好的，谢谢！ Hǎo de, xièxie!"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        70
+       ]
+      }
+     },
+     {
+      "n": 22,
+      "zh": "昨天天气怎么样？",
+      "pinyin": "Zuótiān tiānqì zěnmeyàng?",
+      "options": {
+       "A": "不会。 Bú huì.",
+       "B": "多喝水，多吃水果。 Duō hē shuǐ, duō chī shuǐguǒ.",
+       "C": "她很好，谢谢。 Tā hěn hǎo, xièxie.",
+       "D": "太热了，我一会儿去。 Tài rè le, wǒ yíhuìr qù.",
+       "E": "不冷不热。 Bù lěng bú rè.",
+       "F": "好的，谢谢！ Hǎo de, xièxie!"
+      },
+      "answer": "E",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        70
+       ]
+      }
+     },
+     {
+      "n": 23,
+      "zh": "王小姐身体怎么样？",
+      "pinyin": "Wáng xiǎojiě shēntǐ zěnmeyàng?",
+      "options": {
+       "A": "不会。 Bú huì.",
+       "B": "多喝水，多吃水果。 Duō hē shuǐ, duō chī shuǐguǒ.",
+       "C": "她很好，谢谢。 Tā hěn hǎo, xièxie.",
+       "D": "太热了，我一会儿去。 Tài rè le, wǒ yíhuìr qù.",
+       "E": "不冷不热。 Bù lěng bú rè.",
+       "F": "好的，谢谢！ Hǎo de, xièxie!"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        70
+       ]
+      }
+     },
+     {
+      "n": 24,
+      "zh": "你什么时候去学校？",
+      "pinyin": "Nǐ shénme shíhou qù xuéxiào?",
+      "options": {
+       "A": "不会。 Bú huì.",
+       "B": "多喝水，多吃水果。 Duō hē shuǐ, duō chī shuǐguǒ.",
+       "C": "她很好，谢谢。 Tā hěn hǎo, xièxie.",
+       "D": "太热了，我一会儿去。 Tài rè le, wǒ yíhuìr qù.",
+       "E": "不冷不热。 Bù lěng bú rè.",
+       "F": "好的，谢谢！ Hǎo de, xièxie!"
+      },
+      "answer": "D",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        70
+       ]
+      }
+     },
+     {
+      "n": 25,
+      "zh": "医生说什么？",
+      "pinyin": "Yīshēng shuō shénme?",
+      "options": {
+       "A": "不会。 Bú huì.",
+       "B": "多喝水，多吃水果。 Duō hē shuǐ, duō chī shuǐguǒ.",
+       "C": "她很好，谢谢。 Tā hěn hǎo, xièxie.",
+       "D": "太热了，我一会儿去。 Tài rè le, wǒ yíhuìr qù.",
+       "E": "不冷不热。 Bù lěng bú rè.",
+       "F": "好的，谢谢！ Hǎo de, xièxie!"
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        70
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第三部分",
+    "type_zh": "阅读 第三部分",
+    "instruction_zh": "第26–30题：看句子，选择正确的词语填空",
+    "instruction_en": "Questions 26-30: Read the sentences and choose the right words to fill in the brackets.",
+    "word_bank": [
+     [
+      "A 太……了 tài……le",
+      "B 多 duō",
+      "C 爱 ài",
+      "D 名字 míngzi",
+      "E 些 xiē",
+      "F 怎么样 zěnmeyàng"
+     ]
+    ],
+    "items": [
+     {
+      "n": "例",
+      "zh": "你叫什么（________）？",
+      "pinyin": "Nǐ jiào shénme (What is your name?)",
+      "answer": "D",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        94
+       ]
+      }
+     },
+     {
+      "n": 26,
+      "zh": "北京的天气（________）？",
+      "pinyin": "Běijīng de tiānqì ______?",
+      "answer": "F",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        70
+       ]
+      }
+     },
+     {
+      "n": 27,
+      "zh": "你（________）喝水，天气太热了。",
+      "pinyin": "Nǐ ______ hē shuǐ, tiānqì tài rè le.",
+      "answer": "B",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        70
+       ]
+      }
+     },
+     {
+      "n": 28,
+      "zh": "他们不想住这儿，这儿（________）冷（________）。",
+      "pinyin": "Tāmen bù xiǎng zhù zhèr, zhèr ______ lěng ______.",
+      "answer": "A",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        70
+       ]
+      }
+     },
+     {
+      "n": 29,
+      "zh": "这个星期我身体不太好，不（________）吃饭。",
+      "pinyin": "Zhège xīngqī wǒ shēntǐ bú tài hǎo, bù ______ chī fàn.",
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        70
+       ]
+      }
+     },
+     {
+      "n": 30,
+      "zh": "天气很热，你多吃（________）水果。",
+      "pinyin": "Tiānqì hěn rè, nǐ duō chī ______ shuǐguǒ.",
+      "answer": "E",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        70
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "三、语音 第一部分",
+    "type_zh": "语音 第一部分 听力",
+    "instruction_zh": "第1–5题：听录音，从听到的三个词语中选出声调模式不同的一个",
+    "instruction_en": "Questions 1-5: Listen to the recording. Among the three words and phrases you hear, mark the one that has a different tone pattern.",
+    "items": [
+     {
+      "n": 1,
+      "zh": "A　B　C",
+      "options": {
+       "A": "xīngqīwǔ（星期五）",
+       "B": "xīngqī jǐ（星期几）",
+       "C": "Xībānyá（西班牙）"
+      },
+      "transcript_zh": "A xīngqīwǔ（星期五）　B xīngqī jǐ（星期几）　C Xībānyá（西班牙）",
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        71
+       ]
+      }
+     },
+     {
+      "n": 2,
+      "zh": "A　B　C",
+      "options": {
+       "A": "yīxuéjiā（医学家）",
+       "B": "Bālí rén（巴黎人）",
+       "C": "zhuōmícáng（捉迷藏）"
+      },
+      "transcript_zh": "A yīxuéjiā（医学家）　B Bālí rén（巴黎人）　C zhuōmícáng（捉迷藏）",
+      "answer": "A",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        71
+       ]
+      }
+     },
+     {
+      "n": 3,
+      "zh": "A　B　C",
+      "options": {
+       "A": "bālěiwǔ（芭蕾舞）",
+       "B": "jiāoxiǎngyuè（交响乐）",
+       "C": "shūfǎ kè（书法课）"
+      },
+      "transcript_zh": "A bālěiwǔ（芭蕾舞）　B jiāoxiǎngyuè（交响乐）　C shūfǎ kè（书法课）",
+      "answer": "A",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        71
+       ]
+      }
+     },
+     {
+      "n": 4,
+      "zh": "A　B　C",
+      "options": {
+       "A": "yīnyuèjiā（音乐家）",
+       "B": "yīnyuè kè（音乐课）",
+       "C": "hāmìguā（哈密瓜）"
+      },
+      "transcript_zh": "A yīnyuèjiā（音乐家）　B yīnyuè kè（音乐课）　C hāmìguā（哈密瓜）",
+      "answer": "B",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        71
+       ]
+      }
+     },
+     {
+      "n": 5,
+      "zh": "A　B　C",
+      "options": {
+       "A": "chī xīguā（吃西瓜）",
+       "B": "hē píjiǔ（喝啤酒）",
+       "C": "hē niúnǎi（喝牛奶）"
+      },
+      "transcript_zh": "A chī xīguā（吃西瓜）　B hē píjiǔ（喝啤酒）　C hē niúnǎi（喝牛奶）",
+      "answer": "A",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        71
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "三、语音 第二部分",
+    "type_zh": "语音 第二部分 听力",
+    "instruction_zh": "第6–10题：听录音，画出句中你听到的三音节词语",
+    "instruction_en": "Questions 6-10: Listen to the recording and underline the trisyllabic words and phrases in the sentences you hear.",
+    "items": [
+     {
+      "n": 6,
+      "zh": "Wǒ měi tiān xià wǔ shàng shū fǎ kè.",
+      "transcript_zh": "Wǒ měi tiān xià wǔ shàng shū fǎ kè.（我每天下午上书法课。）",
+      "answer": "shū fǎ kè",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        71
+       ]
+      }
+     },
+     {
+      "n": 7,
+      "zh": "Mā ma xià ge yuè qù Jiā ná dà.",
+      "transcript_zh": "Mā ma xià ge yuè qù Jiā ná dà.（妈妈下个月去加拿大。）",
+      "answer": "Jiā ná dà",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        71
+       ]
+      }
+     },
+     {
+      "n": 8,
+      "zh": "Jīn tiān shì xīng qī wǔ, míng tiān shì zhōu mò.",
+      "transcript_zh": "Jīn tiān shì xīng qī wǔ, míng tiān shì zhōu mò.（今天是星期五，明天是周末。）",
+      "answer": "xīng qī wǔ",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        71
+       ]
+      }
+     },
+     {
+      "n": 9,
+      "zh": "Wǒ zuì xǐ huan tiào bā lěi wǔ.",
+      "transcript_zh": "Wǒ zuì xǐ huan tiào bā lěi wǔ.（我最喜欢跳芭蕾舞。）",
+      "answer": "bā lěi wǔ",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        71
+       ]
+      }
+     },
+     {
+      "n": 10,
+      "zh": "Tā méi qù guo Xī bān yá.",
+      "transcript_zh": "Tā méi qù guo Xī bān yá.（他没去过西班牙。）",
+      "answer": "Xī bān yá",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        71
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "四、汉字 第一部分",
+    "type_zh": "汉字 比较字形",
+    "instruction_zh": "第1题：看汉字，比较相近的汉字字形",
+    "instruction_en": "Question 1: Look at the similarly shaped characters and compare them.",
+    "items": [
+     {
+      "n": "1-(1)",
+      "zh": "大　太"
+     },
+     {
+      "n": "1-(2)",
+      "zh": "小　少"
+     }
+    ]
+   },
+   {
+    "n": "四、汉字 第二部分",
+    "type_zh": "汉字 偏旁归类",
+    "instruction_zh": "第2–3题：看汉字，找出含有下列偏旁的汉字",
+    "instruction_en": "Questions 2-3: Look at the characters and group the characters with the same radical.",
+    "word_bank": [
+     [
+      "A 妈",
+      "B 饮",
+      "C 饭",
+      "D 她"
+     ],
+     [
+      "E 好",
+      "F 姐",
+      "G 饿",
+      "H 饥"
+     ]
+    ],
+    "items": [
+     {
+      "n": 2,
+      "zh": "女：________",
+      "answer": "A D E F",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        72
+       ]
+      }
+     },
+     {
+      "n": 3,
+      "zh": "饣：________",
+      "answer": "B C G H",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        72
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "四、汉字 第三部分",
+    "type_zh": "汉字 写独体字",
+    "instruction_zh": "第4题：看笔顺，写独体字",
+    "instruction_en": "Question 4: Look at the stroke order and practice writing the single-component characters.",
+    "items": [
+     {
+      "n": "4-天",
+      "zh": "天 tiān（笔顺图4步：一 → 二 → … → 天）"
+     },
+     {
+      "n": "4-气",
+      "zh": "气 qì（笔顺图4步：丿 → 𠂉 → … → 气）"
+     },
+     {
+      "n": "4-雨",
+      "zh": "雨 yǔ（笔顺图8步：一 → 丆 → … → 雨）"
+     }
+    ]
+   }
+  ],
+  "answers_ref": {
+   "book": "workbook_answers",
+   "pages": [
+    67,
+    68,
+    69,
+    70,
+    71,
+    72
+   ]
+  }
+ },
+ "unclear": [
+  "Сурах бичиг PDF х.111 课文2: пиньинь «Wáng xiǎojiě» (x жижиг үсгээр); 练习2 (х.113) болон 描述图片 (х.114)-д «Wáng Xiǎojiě» (том X); дасгалын ном PDF х.93 №23 «Wáng xiǎojiě» — номд байгаагаар.",
+  "Сурах бичиг PDF х.110 生词 3 «太» дор дэд мөр «太……了 tài……le too, extremely»; х.111 生词 6 «下雨 xià yǔ to rain» дор «下 xià v. (of rain, snow, etc.) to fall», «雨 yǔ n. rain» дэд мөрүүд — дугааргүй тул тусдаа үг болгоогүй, en талбарт «｜»-ээр залгаж оруулсан. «下雨»-ийн үгийн айг номд хэвлээгүй.",
+  "Сурах бичиг PDF х.111 生词 9 «身体» урд «*» тэмдэгтэй → star: true.",
+  "Сурах бичиг PDF х.112 注释2 主谓谓语句 — дугаарласан жишээ байхгүй; examples-д хүснэгтийн 3 өгүүлбэрийг (我身体不太好。/明天天气很好。/你身体怎么样？) оруулсан, хүснэгт structure_rows-д.",
+  "Сурах бичиг PDF х.112 注释3 англи тайлбар «… For example.» (цэгтэй) — номд байгаагаар.",
+  "Сурах бичиг PDF х.113–114 练习3 描述图片 — пиньинь зөвхөн хэвлэгдсэн үгсэд; picture_desc_en зургаас товч дүрсэлсэн. 练习2, 练习3 хариулт хэвлэгдээгүй. Энэ хичээлд 选词填空 练习 байхгүй (练习 3 л).",
+  "Сурах бичиг PDF х.114 拼音 三音节 хүснэгтэд тайлбар бичвэр байхгүй (зөвхөн 16 үгийн хүснэгт); тайлбар багшийн номын «5 语音»-д (PDF х.83).",
+  "Сурах бичиг PDF х.114–115 独体字 天/气/雨-ийн эртний хэлбэрийн хувьсал (字形演变图) болон 田字格 зурлагын дараалал зөвхөн зурагт; дунд алхмууд Unicode-оор бүрэн дүрслэгдэхгүй тул «…» гэж бичсэн. Дасгалын ном PDF х.96–97 мөн адил.",
+  "Сурах бичиг PDF х.116–117 小组活动 хүснэгт: 1-р мөр жишээ (北京), доор 3 хоосон мөр — example_zh-д товч тэмдэглэсэн. 双人活动-ийн хүрээт жагсаалт (北京的天气 — 冷/热 г.м.) example_zh-д «—»-ээр.",
+  "Энэ хичээлд 课堂用语 (classroom_expressions) болон 文化 хэсэг сурах бичгийн PDF х.110–117-д байхгүй.",
+  "Аудио файлын нэр мэдэгдэхгүй тул audio талбар орхисон. Номын CD тэмдэг: сурах бичиг 课文1–3 = 12-1／12-2／12-3; 拼音 三音节 12-4; дасгалын ном 听力 12-1; 语音 12-2.",
+  "Дасгалын номын хариулт ХОЁР эх сурвалжид: хариултын ном (workbook_answers PDF х.67–72) ба багшийн номын хавсралтын 参考答案 (teacher PDF х.127). Бүх хариулт тохирч байна (1–5 ××××√, 6–10 EBFDA, 11–15 ABCBB, 16–20 √√√×√, 21–25 AECDB, 26–30 FBACE, 语音 1–5 CAABA, 6–10 доогуур зурсан үг, 汉字 ADEF／BCGH). answer_ref = workbook_answers.",
+  "Багшийн номын хавсралт (PDF х.127) 四、汉字 хариултыг «1. A D E F　2. B C G H» гэж дугаарласан — дасгалын номд эдгээр нь 第2题 (女)、第3题 (饣) (第1题 нь 大/太、小/少 харьцуулалт, хариултгүй).",
+  "Дасгалын номын 听力 бичвэр (transcript_zh) болон 语音 1–5 сонголтуудын пиньинь/ханз — багшийн номын хавсралт PDF х.126–127-аас; дасгалын номд 语音 1–5-д зөвхөн A/B/C үсэг хэвлэгдсэн. 语音 6–10 хариулт = доогуур зурсан үг (хариултын ном х.71; багшийн ном «6. shūfǎkè 7. Jiānádà 8. xīngqīwǔ 9. bālěiwǔ 10. Xībānyá»).",
+  "Багшийн номын хавсралт PDF х.126 听力 第二部分 — №7 «女：… 女：…», №8 «男：… 男：…», №9 «女：… 女：…» — хоёр ярилцагч ижил хүйсээр хэвлэгдсэн; номд байгаагаар.",
+  "Дасгалын номын 三、语音 болон 四、汉字 хэсгийн дугаарлалт 1-ээс дахин эхэлдэг (номд байгаагаар). 四、汉字 第一部分 (大/太、小/少) — харьцуулах даалгавар, хариултгүй; textbook.characters.confusable_pairs-д мөн оруулсан.",
+  "Багшийн ном PDF х.80 «练习册相关练习：第81页／一／第一部分，第84页／二／第二部分» — дасгалын номын хэвлэсэн х.84 нь 阅读 第一部分 (第二部分 х.85-д) — номд байгаагаар.",
+  "Багшийн ном PDF х.81 语言点(3) 导入 — баруун баганад «目标句：今天天气太冷了。／今天天气太热了。» ба «教师：昨天天气冷吗？ 学生：昨天天气不太冷。» — хоёр баганын дарааллыг дагаж steps-д нэгтгэсэн. «热身图片C、D» = нохой малгай/ороолттой (C), нохой шүхэр дор нарны шилтэй (D).",
+  "Багшийн ном PDF х.82–83 课文 асуултуудад тусдаа хариулт байхгүй (课文1–2-т нэгдсэн «叙述体» бичвэр л бий) — text_questions-д a_zh оруулаагүй.",
+  "Багшийн ном 汉字 补充练习 «辨认下列汉字并组词» (大/太、气/吃、姐/妹、雨/水) — хариулт хэвлэгдээгүй; teacher.steps «6 汉字»-д.",
+  "Сурах бичгийн 热身-ийн хариулт зөвхөн багшийн номд (PDF х.79): ①C ②D ③B ④A ⑤F ⑥E.",
+  "Зургийн тайлбарууд (picture_desc_en, pictures_desc_en, options «[picture]») зургаас товч, объектив дүрсэлсэн."
+ ],
+ "verified_pages": [
+  67,
+  68,
+  69,
+  70,
+  71,
+  72,
+  78,
+  79,
+  80,
+  81,
+  82,
+  83,
+  84,
+  89,
+  90,
+  91,
+  92,
+  93,
+  94,
+  95,
+  96,
+  97,
+  110,
+  111,
+  112,
+  113,
+  114,
+  115,
+  116,
+  117,
+  126,
+  127
+ ],
+ "schema_version": 1
+}

@@ -1,0 +1,1787 @@
+{
+ "level": "hsk1",
+ "lesson": 7,
+ "book": "HSK1",
+ "title_zh": "今天几号",
+ "title_pinyin": "Jīntiān jǐ hào",
+ "title_en": "What’s the date today",
+ "textbook": {
+  "ref": {
+   "book": "textbook",
+   "pages": [
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75
+   ]
+  },
+  "warmup": [
+   {
+    "instruction_zh": "给下面的词语选择对应的图片",
+    "instruction_en": "Match the pictures with the words/phrases.",
+    "items": [
+     "①书 shū",
+     "②中国菜 Zhōngguó cài",
+     "③学校 xuéxiào",
+     "④25号 èrshíwǔ hào",
+     "⑤月 yuè",
+     "⑥看书 kàn shū"
+    ],
+    "pictures_desc_en": [
+     "A: a multi-storey school building with a basketball court and hoop in front",
+     "B: a smiling young woman holding an open book",
+     "C: a calendar page reading \"DECEMBER 25\" with a small Christmas tree and a snowman in a Santa hat",
+     "D: a dish of tofu cubes in red chili sauce with a white spoon",
+     "E: a tall stack of books with an open book on top",
+     "F: a monthly calendar page (Sun–Sat, dates 1–31)"
+    ]
+   }
+  ],
+  "pronunciation": [
+   {
+    "title_zh": "双音节词语的声调搭配（2）：二声和各声调的搭配",
+    "rows": [
+     "shíjiān 时间　yínháng 银行　cídiǎn 词典　lánsè 蓝色"
+    ],
+    "notes_zh": [
+     "[调型图：二声＋一声／二声＋二声／二声＋三声／二声＋四声；各词配图：时间（看手表的男人和钟表）、银行（BANK大楼）、词典（一摞词典）、蓝色（蓝色色块）]"
+    ],
+    "notes_en": [
+     "Tone Collocation in Disyllabic Words (2): 2nd tone + 1st/2nd/3rd/4th tone"
+    ]
+   },
+   {
+    "title_zh": "双音节词语的声调搭配（2）——听录音并跟读，注意声调的搭配",
+    "rows": [
+     "guójiā　lóufáng　píngguǒ　huánjìng",
+     "zuótiān　lánqiú　píjiǔ　hánjià",
+     "míngtiān　míngnián　niúnǎi　niú ròu",
+     "niánqīng　Chángchéng　yóu yǒng　yóuxì"
+    ],
+    "notes_zh": [
+     "听录音并跟读，注意声调的搭配"
+    ],
+    "notes_en": [
+     "Listen to the recording and read after it. Pay attention to the collocation of tones."
+    ]
+   }
+  ],
+  "texts": [
+   {
+    "n": 1,
+    "title_zh": "在银行",
+    "title_en": "In a bank",
+    "kind": "dialogue",
+    "lines": [
+     {
+      "speaker": "A",
+      "zh": "请问，今天几号？",
+      "pinyin": "Qǐngwèn, jīntiān jǐ hào?"
+     },
+     {
+      "speaker": "B",
+      "zh": "今天9月1号。",
+      "pinyin": "Jīntiān jiǔ yuè yī hào."
+     },
+     {
+      "speaker": "A",
+      "zh": "今天星期几？",
+      "pinyin": "Jīntiān xīngqī jǐ?"
+     },
+     {
+      "speaker": "B",
+      "zh": "星期三。",
+      "pinyin": "Xīngqī sān."
+     }
+    ],
+    "english_version": "A: Excuse me, what’s the date today?\nB: It’s September 1st.\nA: What day is it today?\nB: It’s Wednesday.",
+    "new_words": [
+     {
+      "n": 1,
+      "zh": "请",
+      "pinyin": "qǐng",
+      "pos": "v.",
+      "en": "(polite) please",
+      "text": 1
+     },
+     {
+      "n": 2,
+      "zh": "问",
+      "pinyin": "wèn",
+      "pos": "v.",
+      "en": "to ask, to inquire",
+      "text": 1,
+      "star": true
+     },
+     {
+      "n": 3,
+      "zh": "今天",
+      "pinyin": "jīntiān",
+      "pos": "n.",
+      "en": "today",
+      "text": 1
+     },
+     {
+      "n": 4,
+      "zh": "号",
+      "pinyin": "hào",
+      "pos": "n.",
+      "en": "(for date of month) number",
+      "text": 1
+     },
+     {
+      "n": 5,
+      "zh": "月",
+      "pinyin": "yuè",
+      "pos": "n.",
+      "en": "month",
+      "text": 1
+     },
+     {
+      "n": 6,
+      "zh": "星期",
+      "pinyin": "xīngqī",
+      "pos": "n.",
+      "en": "week",
+      "text": 1
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "title_zh": "看日历",
+    "title_en": "Look at the calendar",
+    "kind": "dialogue",
+    "lines": [
+     {
+      "speaker": "A",
+      "zh": "昨天是几月几号？",
+      "pinyin": "Zuótiān shì jǐ yuè jǐ hào?"
+     },
+     {
+      "speaker": "B",
+      "zh": "昨天是8月31号，星期二。",
+      "pinyin": "Zuótiān shì bā yuè sānshíyī hào, xīngqī èr."
+     },
+     {
+      "speaker": "A",
+      "zh": "明天呢？",
+      "pinyin": "Míngtiān ne?"
+     },
+     {
+      "speaker": "B",
+      "zh": "明天是9月2号，星期四。",
+      "pinyin": "Míngtiān shì jiǔ yuè èr hào, xīngqī sì."
+     }
+    ],
+    "english_version": "A: What was the date yesterday?\nB: It was Tuesday, August 31st.\nA: What about tomorrow?\nB: It’s Thursday, September 2nd.",
+    "new_words": [
+     {
+      "n": 7,
+      "zh": "昨天",
+      "pinyin": "zuótiān",
+      "pos": "n.",
+      "en": "yesterday",
+      "text": 2
+     },
+     {
+      "n": 8,
+      "zh": "明天",
+      "pinyin": "míngtiān",
+      "pos": "n.",
+      "en": "tomorrow",
+      "text": 2
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "title_zh": "在咖啡馆儿",
+    "title_en": "In a coffee house",
+    "kind": "dialogue",
+    "lines": [
+     {
+      "speaker": "A",
+      "zh": "明天星期六，你去学校吗？",
+      "pinyin": "Míngtiān xīngqī liù, nǐ qù xuéxiào ma?"
+     },
+     {
+      "speaker": "B",
+      "zh": "我去学校。",
+      "pinyin": "Wǒ qù xuéxiào."
+     },
+     {
+      "speaker": "A",
+      "zh": "你去学校做什么？",
+      "pinyin": "Nǐ qù xuéxiào zuò shénme?"
+     },
+     {
+      "speaker": "B",
+      "zh": "我去学校看书。",
+      "pinyin": "Wǒ qù xuéxiào kàn shū."
+     }
+    ],
+    "english_version": "A: Tomorrow is Saturday. Will you go to school?\nB: Yes, I will.\nA: What are you going to do there?\nB: I’m going there to do some reading.",
+    "new_words": [
+     {
+      "n": 9,
+      "zh": "去",
+      "pinyin": "qù",
+      "pos": "v.",
+      "en": "to go",
+      "text": 3
+     },
+     {
+      "n": 10,
+      "zh": "学校",
+      "pinyin": "xuéxiào",
+      "pos": "n.",
+      "en": "school",
+      "text": 3
+     },
+     {
+      "n": 11,
+      "zh": "看",
+      "pinyin": "kàn",
+      "pos": "v.",
+      "en": "to look at, to watch, to read",
+      "text": 3
+     },
+     {
+      "n": 12,
+      "zh": "书",
+      "pinyin": "shū",
+      "pos": "n.",
+      "en": "book",
+      "text": 3
+     }
+    ]
+   }
+  ],
+  "grammar": [
+   {
+    "n": 1,
+    "title_zh": "日期的表达（1）：月、日（rì, date）/号、星期",
+    "title_en": "Expression of a Date (1): month, date, day of the week",
+    "explanation_zh": "汉语的日期表达方式遵循由大到小的原则，先说“月”，然后说“日/号”，最后说“星期”。口语一般常用“号”。例如：",
+    "explanation_en": "The way to say a date in Chinese observes the principle of “the bigger unit coming before the smaller one”. The month is said first, then the date and finally the day of the week. In spoken Chinese, “号” is often used instead of “日” to express the date. For example:",
+    "examples": [
+     {
+      "n": 1,
+      "zh": "9月1号，星期三。"
+     },
+     {
+      "n": 2,
+      "zh": "9月2号，星期四。"
+     },
+     {
+      "n": 3,
+      "zh": "8月31号，星期二。"
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "title_zh": "名词谓语句",
+    "title_en": "Sentences with a Nominal Predicate",
+    "explanation_zh": "名词谓语句是谓语部分由名词性成分充当的句子，一般用于表达年龄、时间、日期等。例如：",
+    "explanation_en": "A sentence with a nominal predicate is a sentence whose predicate is a nominal element. It is usually used to indicate age, time, date and so on. For example:",
+    "structure_rows": [
+     "Subject | Predicate",
+     "我的汉语老师 | 33岁。",
+     "明天 | 星期三。",
+     "今天 | 9月1号。"
+    ],
+    "examples": [
+     {
+      "zh": "我的汉语老师 | 33岁。"
+     },
+     {
+      "zh": "明天 | 星期三。"
+     },
+     {
+      "zh": "今天 | 9月1号。"
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "title_zh": "连动句（1）：去＋地方＋做什么",
+    "title_en": "Sentences with a Serial Verb Construction (1): 去 + place + to do sth.",
+    "explanation_zh": "连动句的谓语部分由两个或者两个以上动词构成，后一个动作可以表示前一个动作的目的。第一个动词后表示地点的宾语有时可以省略。例如：",
+    "explanation_en": "The predicate of a sentence with a serial verb construction consists of two or more verbs. The latter verb can be the purpose of the former. The object of the first verb, i.e. the place, can sometimes be omitted. For example:",
+    "structure_rows": [
+     "Subject | Verb1: 去 | (place) | Verb2: to do sth.",
+     "我 | 去 | （中国） | 学习汉语。",
+     "我们 | 去 | （中国饭馆儿） | 吃中国菜。",
+     "我 | 去 | （学校） | 看书。"
+    ],
+    "examples": [
+     {
+      "zh": "我 | 去 | （中国） | 学习汉语。"
+     },
+     {
+      "zh": "我们 | 去 | （中国饭馆儿） | 吃中国菜。"
+     },
+     {
+      "zh": "我 | 去 | （学校） | 看书。"
+     }
+    ]
+   }
+  ],
+  "exercises": [
+   {
+    "n": 1,
+    "type_zh": "分角色朗读课文",
+    "instruction_zh": "分角色朗读课文",
+    "instruction_en": "Role-play the dialogues.",
+    "items": []
+   },
+   {
+    "n": 2,
+    "type_zh": "朗读",
+    "instruction_zh": "朗读下列词语",
+    "instruction_en": "Read the following words aloud.",
+    "items": [
+     {
+      "n": "月-1",
+      "zh": "一月",
+      "pinyin": "yī yuè",
+      "hint_zh": "January"
+     },
+     {
+      "n": "月-2",
+      "zh": "二月",
+      "pinyin": "èr yuè",
+      "hint_zh": "February"
+     },
+     {
+      "n": "月-3",
+      "zh": "三月",
+      "pinyin": "sān yuè",
+      "hint_zh": "March"
+     },
+     {
+      "n": "月-4",
+      "zh": "四月",
+      "pinyin": "sì yuè",
+      "hint_zh": "April"
+     },
+     {
+      "n": "月-5",
+      "zh": "五月",
+      "pinyin": "wǔ yuè",
+      "hint_zh": "May"
+     },
+     {
+      "n": "月-6",
+      "zh": "六月",
+      "pinyin": "liù yuè",
+      "hint_zh": "June"
+     },
+     {
+      "n": "月-7",
+      "zh": "七月",
+      "pinyin": "qī yuè",
+      "hint_zh": "July"
+     },
+     {
+      "n": "月-8",
+      "zh": "八月",
+      "pinyin": "bā yuè",
+      "hint_zh": "August"
+     },
+     {
+      "n": "月-9",
+      "zh": "九月",
+      "pinyin": "jiǔ yuè",
+      "hint_zh": "September"
+     },
+     {
+      "n": "月-10",
+      "zh": "十月",
+      "pinyin": "shí yuè",
+      "hint_zh": "October"
+     },
+     {
+      "n": "月-11",
+      "zh": "十一月",
+      "pinyin": "shíyī yuè",
+      "hint_zh": "November"
+     },
+     {
+      "n": "月-12",
+      "zh": "十二月",
+      "pinyin": "shí’èr yuè",
+      "hint_zh": "December"
+     },
+     {
+      "n": "星期-1",
+      "zh": "星期一",
+      "pinyin": "xīngqī yī",
+      "hint_zh": "Monday"
+     },
+     {
+      "n": "星期-2",
+      "zh": "星期二",
+      "pinyin": "xīngqī èr",
+      "hint_zh": "Tuesday"
+     },
+     {
+      "n": "星期-3",
+      "zh": "星期三",
+      "pinyin": "xīngqī sān",
+      "hint_zh": "Wednesday"
+     },
+     {
+      "n": "星期-4",
+      "zh": "星期四",
+      "pinyin": "xīngqī sì",
+      "hint_zh": "Thursday"
+     },
+     {
+      "n": "星期-5",
+      "zh": "星期五",
+      "pinyin": "xīngqī wǔ",
+      "hint_zh": "Friday"
+     },
+     {
+      "n": "星期-6",
+      "zh": "星期六",
+      "pinyin": "xīngqī liù",
+      "hint_zh": "Saturday"
+     },
+     {
+      "n": "星期-7",
+      "zh": "星期日／星期天",
+      "pinyin": "xīngqīrì / xīngqītiān",
+      "hint_zh": "Sunday"
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "type_zh": "回答问题",
+    "instruction_zh": "根据实际情况回答问题",
+    "instruction_en": "Answer the questions according to the actual situations.",
+    "items": [
+     {
+      "n": 1,
+      "zh": "今天几月几号星期几？",
+      "pinyin": "Jīntiān jǐ yuè jǐ hào xīngqī jǐ?"
+     },
+     {
+      "n": 2,
+      "zh": "明天几月几号星期几？",
+      "pinyin": "Míngtiān jǐ yuè jǐ hào xīngqī jǐ?"
+     },
+     {
+      "n": 3,
+      "zh": "昨天几月几号星期几？",
+      "pinyin": "Zuótiān jǐ yuè jǐ hào xīngqī jǐ?"
+     },
+     {
+      "n": 4,
+      "zh": "明天你去哪儿做什么？",
+      "pinyin": "Míngtiān nǐ qù nǎr zuò shénme?"
+     },
+     {
+      "n": 5,
+      "zh": "星期日你去哪儿做什么？",
+      "pinyin": "Xīngqīrì nǐ qǔ nǎr zuò shénme?"
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "type_zh": "描述图片",
+    "instruction_zh": "用本课新学的语言点和词语描述图片",
+    "instruction_en": "Describe the pictures using the newly-learned language points and words.",
+    "items": [
+     {
+      "n": 1,
+      "zh": "今天是________月________号，星期________。",
+      "pinyin": "Jīntiān shì ______ yuè ______ hào, xīngqī ______.",
+      "picture_desc_en": "a red 2013 desk calendar showing \"1 January\", with one date in the small month grid circled"
+     },
+     {
+      "n": 2,
+      "zh": "今天________月________号。",
+      "pinyin": "Jīntiān ______ yuè ______ hào.",
+      "picture_desc_en": "a calendar page reading \"May 18\""
+     },
+     {
+      "n": 3,
+      "zh": "22号是________，23号是________。",
+      "pinyin": "Èrshíèr hào shì ______, èrshísān hào shì ______.",
+      "picture_desc_en": "a monthly calendar with columns Sun–Fri (a page partly turned over); 22 is under Wed and 23 under Thu"
+     },
+     {
+      "n": 4,
+      "zh": "明天我去________看________。",
+      "pinyin": "Míngtiān wǒ qù ______ kàn ______.",
+      "picture_desc_en": "students reading books in a brick arcade on a campus; one young man leaning against a pillar reading, two young women sitting on the ground reading"
+     }
+    ]
+   }
+  ],
+  "characters": {
+   "knowledge_title_zh": "认识独体字／汉字结构（2）：左右结构与左中右结构／汉字偏旁“氵”和“讠”",
+   "knowledge_zh": "1 认识独体字\n（1）“四”，表示数量“4”。[字形演变图：亖 → … → 四；笔顺图5步]\n（2）“五”，表示数量“5”。[字形演变图 → 五；笔顺：一 → 丆 → [图] → 五]\n（3）“书”，本义是将毛笔放在墨池中蘸墨以便涂写，现在是“书写、书籍”等意思。[字形演变图 → 书；笔顺图4步]\n2 汉字结构（2）：左右结构与左中右结构\n合体结构中包括左右结构和左中右结构。左右结构的结构图形为[⿰]，左中右结构的图形为[⿲]。\n结构 | 例字 | 图解\n左右结构 | 你 nǐ、好 hǎo | [图]\n左中右结构 | 谢 xiè、树 shù | [图]\n3 汉字偏旁“氵”和“讠”\n偏旁 | 解释 | 例字\n氵 | 三点水，一般和水有关系。 | 汉 hàn、没 méi\n讠 | 言字旁，一般和语言、说话有关系。 | 语 yǔ、谁 shéi",
+   "knowledge_en": "Single-Component Characters: (1) “四” means “four”. (2) “五” means “five”. (3) “书” originally meant “to dip the writing brush into the ink and write with it”, and now it means “writing” or “book”, etc.\nStructure of Chinese Characters (2): left-right and left-middle-right — Both the left-right structure and the left-middle-right structure are compound structures. The left-right structure is [⿰] and the left-middle-right structure is [⿲]. Left-right: 你 (singular) you, 好 good, fine; Left-middle-right: 谢 to thank, 树 tree.\nChinese Radicals “氵” and “讠”: 氵 — Shaped like three drops of water, the radical “氵” is usually related to water. 汉 Chinese, 没 to not have. 讠 — The radical “讠” is usually related to language and speech. 语 language, 谁 who, whom.",
+   "characters": [
+    {
+     "zh": "四",
+     "pinyin": "sì",
+     "note_zh": "独体字：表示数量“4”（字形演变图 + 笔顺5步图）"
+    },
+    {
+     "zh": "五",
+     "pinyin": "wǔ",
+     "note_zh": "独体字：表示数量“5”（字形演变图 + 笔顺4步图）"
+    },
+    {
+     "zh": "书",
+     "pinyin": "shū",
+     "note_zh": "独体字：本义是将毛笔放在墨池中蘸墨以便涂写，现在是“书写、书籍”等意思（字形演变图 + 笔顺4步图）"
+    },
+    {
+     "zh": "你",
+     "pinyin": "nǐ",
+     "note_zh": "左右结构例字（(singular) you）"
+    },
+    {
+     "zh": "好",
+     "pinyin": "hǎo",
+     "note_zh": "左右结构例字（good, fine）"
+    },
+    {
+     "zh": "谢",
+     "pinyin": "xiè",
+     "note_zh": "左中右结构例字（to thank）"
+    },
+    {
+     "zh": "树",
+     "pinyin": "shù",
+     "note_zh": "左中右结构例字（tree）"
+    },
+    {
+     "zh": "汉",
+     "pinyin": "hàn",
+     "note_zh": "偏旁“氵”例字（Chinese）"
+    },
+    {
+     "zh": "没",
+     "pinyin": "méi",
+     "note_zh": "偏旁“氵”例字（to not have）"
+    },
+    {
+     "zh": "语",
+     "pinyin": "yǔ",
+     "note_zh": "偏旁“讠”例字（language）"
+    },
+    {
+     "zh": "谁",
+     "pinyin": "shéi",
+     "note_zh": "偏旁“讠”例字（who, whom）"
+    }
+   ]
+  },
+  "application": [
+   {
+    "title_zh": "双人活动",
+    "instruction_zh": "两人一组，根据实际情况进行问答练习。",
+    "instruction_en": "Work in pairs and ask and answer questions according to the actual situatious.",
+    "example_zh": [
+     "例如：",
+     "A：今天是几月几号？ Jīntiān shì jǐ yuè jǐ hào?",
+     "B：……",
+     "A：今天星期几？ Jīntiān xīngqī jǐ?",
+     "B：……",
+     "A：明天是几月几号？ Míngtiān shì jǐ yuè jǐ hào?",
+     "B：……",
+     "A：明天星期几？ Míngtiān xīngqī jǐ?",
+     "B：……",
+     "A：明天你做什么？ Míngtiān nǐ zuò shénme?",
+     "B：明天我去…… Míngtiān wǒ qù……"
+    ]
+   },
+   {
+    "title_zh": "小组活动",
+    "instruction_zh": "3~4人一组，互相询问出生日期并记录，每组请一位同学报告情况。",
+    "instruction_en": "Work in groups of 3-4. Ask about each other’s birthdays and take notes. Each group chooses one member to make a report. Supplementary word: birthday",
+    "example_zh": [
+     "补充生词：生日 shēngrì",
+     " | 姓名 Name | 生日 Birthday",
+     "1 | 李月 Lǐ Yuè | 8月31号 bā yuè sānshíyī hào"
+    ]
+   }
+  ]
+ },
+ "teacher": {
+  "ref": {
+   "book": "teacher",
+   "pages": [
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48
+   ]
+  },
+  "objectives_zh": [
+   "重点词语：学生能够熟练掌握“今天、月、星期、去、看、书”的词义和用法",
+   "语言点：学生能够了解并掌握：（1）日期的表达（1）：月、日／号、星期（2）名词谓语句（3）连动句（1）：去＋地方＋做什么",
+   "语音：学生熟悉双音节词语的二声音节和各声调搭配的声调模式，并能正确朗读",
+   "汉字：学生能够：（1）熟练认读本课生词（2）独立书写独体字“四、五、书”（3）了解汉字的左右结构与左中右结构（4）了解“氵（三点水）、讠（言字旁）”所表示的意思",
+   "功能：学生能够：（1）表达时间：月、日／号、星期（2）表达动作行为的目的"
+  ],
+  "steps": [
+   {
+    "title_zh": "一 复习旧课",
+    "body_zh": "1. 教师出示第6课生词卡片，要求学生快速认读下列生词。\n会、说、妈妈、菜、很、好吃、\n做、写、汉字、字、怎么、读\n2. 教师根据第6课重点内容简单提问，活跃课堂气氛。\n（1）你会说汉语吗？\n（2）你会写汉字吗？\n（3）你的汉语名字怎么读？\n（4）你觉得中国菜好吃吗？\n（5）你会做中国菜吗？\n（6）你会做什么菜？"
+   },
+   {
+    "title_zh": "二 学习新课 1 热身",
+    "body_zh": "教师可依次朗读热身部分的词语，要求学生集体或单个说出图片对应的编号，教师评判正误。最后全体学生再次齐读热身环节的所有词语，要求语音标准、声调准确。\n答案：①E　②D　③A　④C　⑤F　⑥B"
+   },
+   {
+    "title_zh": "2 生词",
+    "body_zh": "（1）生词快速认读及正音\n请、问、今天、号、月、星期、\n昨天、明天、去、学校、看、书\n• 教师使用生词卡片有拼音和汉字的一面，带领学生快速认读一遍本课生词；\n• 使用生词卡片只有汉字的一面，带领学生再次认读本课生词；\n• 请单个学生独自认读2–3个生词；\n• 最后全体学生再快速认读一遍本课所有生词。\n［注意：教师要引导学生注意双音节词语的声调模式，力求声调准确。］\n（2）重点生词扩展及常用搭配\n今天—今天很好—我今天很好。—你今天好吗？\n月—一月、二月、三月、四月、五月、六月、\n　七月、八月、九月、十月、十一月、十二月\n星期—星期一、星期二、星期三、星期四、\n　星期五、星期六、星期日（星期天）\n去—去学校—去朋友家—去李老师家\n　—你去学校吗？\n　—我不去学校，我去朋友家。\n看—看书—看老师—看中国朋友\n书—一本书—一本汉语书—我有一本汉语书。\n练习册相关练习：第41页／一／第一部分，第44页／二／第一部分"
+   },
+   {
+    "title_zh": "3 语言点（1）日期的表达（1）：月、日／号、星期",
+    "body_zh": "① 语言点解析\n汉语的日期表达方式遵循由大到小的原则，先说“月”，然后说“日／号”，最后说“星期”。日期一般写作“日”，但在口语中常常用“号”。疑问形式为“几月几号？”“星期几？”\n［句型框］……月……日／号，星期……\n［句型框］几月几号？星期几？\n② 语言点导入\n教师出示一张日历，根据日历上的时间信息领说当天的日期，练习本课的日期表达法。\n例如：8月1号，星期五\n同时教师要给学生出示提问的形式“几月几号？星期几？”\n③ 语言点操练\n教师可组织学生两人一组，根据实际情况进行问答练习。\nA：今天几月几号？\nB：今天……。\nA：今天星期几？\nB：今天……。\nA：明天几月几号？\nB：明天……。\nA：明天星期几？\nB：明天……。\nA：昨天呢？\nB：昨天……月……号，星期……。\n……\n［注意：教师要提示学生注意周末的表达法，要说“星期六、星期日／星期天”，而不能说“星期七”。］"
+   },
+   {
+    "title_zh": "3 语言点（2）名词谓语句",
+    "body_zh": "① 语言点解析\n名词谓语句是谓语部分由名词性成分充当的句子，一般用于表达年龄、时间、日期等。\n② 语言点导入\n教师可利用第5课课文3的图片（第31页）和日历进行导入。\n教师：李老师多大？\n学生：李老师50岁。\n教师：李老师的女儿呢？\n学生：李老师的女儿20岁。\n教师：今天几月几号？\n学生：今天……月……号。\n教师：今天星期几？\n学生：今天星期……。\n③ 语言点操练\n教师可组织学生根据实际情况进行问答练习。\n参考问题：你多大？\n你爸爸／妈妈／哥哥／姐姐／弟弟／妹妹多大？\n今天几月几号？\n今天星期几？\n5月1号星期几？\n10月22号星期几？\n［注意：教师要提醒学生注意，在使用名词谓语句时，表达年龄、时间、日期的名词性成分可以直接做谓语，而不必再加上“是”。例如：“李老师50岁。”是正确的，而不能说：“李老师是50岁。”不过在表示日期时则比较灵活，可以说“今天星期六。”也可以说“今天是星期六。”］"
+   },
+   {
+    "title_zh": "3 语言点（3）连动句（1）：去＋地方＋做什么",
+    "body_zh": "① 语言点解析\n连动句的谓语部分由两个或两个以上动词构成，后一个动作可以表示前一个动作的目的。第一个动词后表示地点的宾语有时可以省略。\n［句型框］主语＋去（＋地方）＋做什么。\n② 语言点导入\n教师可利用本课热身图片A、B进行导入。\n教师先出示图片A：\n教师：她去哪儿？\n学生：她去学校。\n接着出示图片B：\n教师：她去学校做什么？\n学生：她去学校看书。\n③ 语言点操练\n教师可利用课本中的一些相关图片组织学生练习语言点句式。\n目标句：……去中国学习汉语。\n……去中国看朋友。\n……去朋友家看书。\n……去学校看李老师。\n……去中国朋友家吃中国菜。\n④ 语言点扩展练习\n教师可组织学生两人一组，根据提示词进行问答练习。\nA：……（时间）你去哪儿？\nB：我去……（地方）。\nA：你去……做什么？\nB：我去……（地方）……（做什么）。\n［注意：教师要提示学生注意，在表示动作行为目的的连动句中，第一个动词后的地点名词在不是重要信息的时候可以省略。例如，可以说“我去学校看书。”也可以说“我去看书”。］"
+   },
+   {
+    "title_zh": "4 课文",
+    "body_zh": "课文1\n（1）让学生听两遍录音并回答下列问题：\n今天几月几号？\n今天星期几？\n（2）根据学生的回答，教师领说目标句，并请学生单个复述：\n今天9月1号，星期三。\n（3）教师领读课文两遍，然后让学生分角色朗读课文。\n课文2\n（1）让学生听两遍录音并回答下列问题：\n昨天是8月31号吗？\n昨天是星期几？\n明天是几月几号？星期几？\n（2）根据学生的回答，教师领说目标句，并请学生单个复述：\n明天是9月2号，星期四。\n（3）教师领读课文两遍，然后让学生分角色朗读课文。\n课文3\n（1）让学生听两遍录音并回答下列问题：\n明天星期几？\n明天她去哪儿？\n她去学校做什么？\n（2）根据学生的回答，教师领说目标句，并请学生单个复述：\n明天星期六，她去学校看书。\n（3）教师领读课文两遍，然后让学生分角色朗读课文。\n（4）模仿练习\n教师组织学生两人一组，根据提示进行对话练习。\nA：明天几月几号？\nB：明天……。\nA：明天星期几？\nB：明天……。\nA：明天你去……吗？\nB：不去，明天我去……。\nA：你去……做什么？\nB：我去……。"
+   },
+   {
+    "title_zh": "5 语音",
+    "body_zh": "双音节词语的声调搭配（2）：二声和各声调的搭配\n教师可利用课本第52页的例词、声调模式和图片进行教学。教师分别朗读各声调组合的标准词，让学生一边看调型图一边跟读模仿，并根据图片理解词义。\n之后教师可利用课本第52页的练习部分，组织学生进行朗读正音练习。朗读时教师要提醒学生注意各声调搭配的标准词的示范作用。\n［注意：在这种音节组合中，第三声的发音和单音节第三声的发音不同，是一个近似于211的低降调，音节的后半部分不再升高。］\n练习册相关练习：第47页／三"
+   },
+   {
+    "title_zh": "6 汉字",
+    "body_zh": "① 知识点解析\n独体字\n四：表示数量“4”。\n五：表示数量“5”。\n书：繁体字形本义是将毛笔放在墨池中蘸墨以便涂写，现在是“书写、书籍”等意思。\n偏旁\n氵：三点水，一般和水有关系。\n讠：言字旁，一般和语言、说话有关系。\n② 汉字练习\n• 教师板书或者用手指在空中书写本课独体字“四、五、书”，带领学生一起识记独体字的笔画笔顺。\n• 教师板书本课偏旁“氵、讠”，提示学生注意这两个偏旁的笔画和笔顺，并书写各自的代表汉字，帮助学生识记该偏旁的意义。\n• 教师通过板书例字，给学生展示汉字的两种合体结构：左右结构与左中右结构。\n• 补充练习\na. 给下列汉字分类\n你、谢、好、明、昨、树、校\n左右结构：________\n左中右结构：________\nb. 辨认下列汉字\n么／去　明／期　学／字\n练习册相关练习：第48页／四"
+   },
+   {
+    "title_zh": "7 补充课堂活动——这个星期六／星期日你做什么",
+    "body_zh": "教师组织学生2–3人一组，就本周末的安排进行调查并填写表格，最后每组请一位同学根据本组情况进行口头报告。\n | 名字 | 星期六 | 星期日\n1 | 大卫 | 去学校看书 | 去朋友家吃饭\n口头报告：大卫星期六去学校看书，星期日去朋友家吃饭。"
+   },
+   {
+    "title_zh": "附注：建议教学用具",
+    "body_zh": "1. 生词卡片：第6、7课生词卡片\n2. 独体字卡片：第7课独体字卡片\n3. 日历"
+   }
+  ],
+  "notes_zh": [
+   "注意：教师要引导学生注意双音节词语的声调模式，力求声调准确。（生词）",
+   "注意：教师要提示学生注意周末的表达法，要说“星期六、星期日／星期天”，而不能说“星期七”。（语言点1）",
+   "注意：教师要提醒学生注意，在使用名词谓语句时，表达年龄、时间、日期的名词性成分可以直接做谓语，而不必再加上“是”。例如：“李老师50岁。”是正确的，而不能说：“李老师是50岁。”不过在表示日期时则比较灵活，可以说“今天星期六。”也可以说“今天是星期六。”（语言点2）",
+   "注意：教师要提示学生注意，在表示动作行为目的的连动句中，第一个动词后的地点名词在不是重要信息的时候可以省略。例如，可以说“我去学校看书。”也可以说“我去看书”。（语言点3）",
+   "注意：在这种音节组合中，第三声的发音和单音节第三声的发音不同，是一个近似于211的低降调，音节的后半部分不再升高。（语音）"
+  ],
+  "warmup_answers_zh": [
+   "答案：①E　②D　③A　④C　⑤F　⑥B"
+  ],
+  "text_questions": [
+   {
+    "text": 1,
+    "q_zh": "今天几月几号？"
+   },
+   {
+    "text": 1,
+    "q_zh": "今天星期几？"
+   },
+   {
+    "text": 2,
+    "q_zh": "昨天是8月31号吗？"
+   },
+   {
+    "text": 2,
+    "q_zh": "昨天是星期几？"
+   },
+   {
+    "text": 2,
+    "q_zh": "明天是几月几号？星期几？"
+   },
+   {
+    "text": 3,
+    "q_zh": "明天星期几？"
+   },
+   {
+    "text": 3,
+    "q_zh": "明天她去哪儿？"
+   },
+   {
+    "text": 3,
+    "q_zh": "她去学校做什么？"
+   }
+  ],
+  "summary_zh": "• 语言点：日期的表达：……月……日／号，星期……\n　名词谓语句\n　连动句：去（＋地方）＋做什么\n• 语　音：双音节词语的声调搭配（2）：二声和各声调的搭配\n• 汉　字：独体字“四、五、书”\n　偏旁“氵、讠”"
+ },
+ "workbook": {
+  "ref": {
+   "book": "workbook",
+   "pages": [
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56
+   ]
+  },
+  "sections": [
+   {
+    "n": "一、听力 第一部分",
+    "type_zh": "听力 第一部分",
+    "instruction_zh": "第1–4题：听词或短语，判断对错",
+    "instruction_en": "Questions 1-4: Listen to the words or phrases and decide whether the pictures are right or wrong based on what you hear. (Example glosses: 很高兴 very happy; 看电影 to see a movie)",
+    "items": [
+     {
+      "n": "例1",
+      "zh": "很高兴",
+      "pinyin": "hěn gāoxìng",
+      "hint_zh": "very happy",
+      "transcript_zh": "很高兴",
+      "picture_desc_en": "a smiling young woman with long dark hair",
+      "answer": "√",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        49
+       ]
+      }
+     },
+     {
+      "n": "例2",
+      "zh": "看电影",
+      "pinyin": "kàn diànyǐng",
+      "hint_zh": "to see a movie",
+      "transcript_zh": "看电影",
+      "picture_desc_en": "a grey-haired man in a suit sitting and reading papers",
+      "answer": "×",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        49
+       ]
+      }
+     },
+     {
+      "n": 1,
+      "zh": "",
+      "transcript_zh": "学校",
+      "picture_desc_en": "a hospital room with a bed, a chair and a large window",
+      "answer": "×",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        36
+       ]
+      }
+     },
+     {
+      "n": 2,
+      "zh": "",
+      "transcript_zh": "8月5号",
+      "picture_desc_en": "a desk calendar reading \"August 5\"",
+      "answer": "√",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        36
+       ]
+      }
+     },
+     {
+      "n": 3,
+      "zh": "",
+      "transcript_zh": "看书",
+      "picture_desc_en": "an audience in a cinema watching and eating popcorn",
+      "answer": "×",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        36
+       ]
+      }
+     },
+     {
+      "n": 4,
+      "zh": "",
+      "transcript_zh": "4月20号",
+      "picture_desc_en": "a calendar icon reading \"April 20\"",
+      "answer": "√",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        36
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "一、听力 第二部分",
+    "type_zh": "听力 第二部分",
+    "instruction_zh": "第5–8题：听对话，选择与对话内容一致的图片",
+    "instruction_en": "Questions 5-8: Listen to the dialogues and choose the right picture for each dialogue you hear. (Example: How do you do? / How do you do? Nice to meet you.)",
+    "items": [
+     {
+      "n": "例",
+      "zh": "女：你好！ 男：你好！很高兴认识你。",
+      "pinyin": "Nǐ hǎo! Nǐ hǎo! Hěn gāoxìng rènshi nǐ.",
+      "hint_zh": "How do you do? / How do you do? Nice to meet you.",
+      "transcript_zh": "女：你好！ 男：你好！很高兴认识你。",
+      "options": {
+       "A": "[picture] a monthly calendar page (Sun–Sat; the 1st on Saturday, the 31st on Monday)",
+       "B": "[picture] a young woman sitting cross-legged on the floor in front of bookshelves, reading a book",
+       "C": "[picture] a man and a woman in business suits shaking hands in front of an elevator",
+       "D": "[picture] a plate of stir-fried meat pieces with green onion, a spoon on the plate",
+       "E": "[picture] a calendar icon reading \"12 SEPTEMBER\""
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        50
+       ]
+      }
+     },
+     {
+      "n": 5,
+      "zh": "",
+      "options": {
+       "A": "[picture] a monthly calendar page (Sun–Sat; the 1st on Saturday, the 31st on Monday)",
+       "B": "[picture] a young woman sitting cross-legged on the floor in front of bookshelves, reading a book",
+       "C": "[picture] a man and a woman in business suits shaking hands in front of an elevator",
+       "D": "[picture] a plate of stir-fried meat pieces with green onion, a spoon on the plate",
+       "E": "[picture] a calendar icon reading \"12 SEPTEMBER\""
+      },
+      "transcript_zh": "男：今天是几月几号？ 女：今天是9月12号。",
+      "answer": "E",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        37
+       ]
+      }
+     },
+     {
+      "n": 6,
+      "zh": "",
+      "options": {
+       "A": "[picture] a monthly calendar page (Sun–Sat; the 1st on Saturday, the 31st on Monday)",
+       "B": "[picture] a young woman sitting cross-legged on the floor in front of bookshelves, reading a book",
+       "C": "[picture] a man and a woman in business suits shaking hands in front of an elevator",
+       "D": "[picture] a plate of stir-fried meat pieces with green onion, a spoon on the plate",
+       "E": "[picture] a calendar icon reading \"12 SEPTEMBER\""
+      },
+      "transcript_zh": "男：明天你做什么？ 女：明天我去学校看书。",
+      "answer": "B",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        37
+       ]
+      }
+     },
+     {
+      "n": 7,
+      "zh": "",
+      "options": {
+       "A": "[picture] a monthly calendar page (Sun–Sat; the 1st on Saturday, the 31st on Monday)",
+       "B": "[picture] a young woman sitting cross-legged on the floor in front of bookshelves, reading a book",
+       "C": "[picture] a man and a woman in business suits shaking hands in front of an elevator",
+       "D": "[picture] a plate of stir-fried meat pieces with green onion, a spoon on the plate",
+       "E": "[picture] a calendar icon reading \"12 SEPTEMBER\""
+      },
+      "transcript_zh": "男：31号是星期几？ 女：31号是星期一。",
+      "answer": "A",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        37
+       ]
+      }
+     },
+     {
+      "n": 8,
+      "zh": "",
+      "options": {
+       "A": "[picture] a monthly calendar page (Sun–Sat; the 1st on Saturday, the 31st on Monday)",
+       "B": "[picture] a young woman sitting cross-legged on the floor in front of bookshelves, reading a book",
+       "C": "[picture] a man and a woman in business suits shaking hands in front of an elevator",
+       "D": "[picture] a plate of stir-fried meat pieces with green onion, a spoon on the plate",
+       "E": "[picture] a calendar icon reading \"12 SEPTEMBER\""
+      },
+      "transcript_zh": "女：明天是星期六，你做什么？ 男：明天我去中国朋友家吃中国菜。",
+      "answer": "D",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        37
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "一、听力 第三部分",
+    "type_zh": "听力 第三部分",
+    "instruction_zh": "第9–12题：听句子，回答问题",
+    "instruction_en": "Questions 9-12: Listen to the sentences and answer the questions. (Example: I’m going to the store this afternoon. I want to buy some fruit. Question: Where is she going this afternoon?)",
+    "items": [
+     {
+      "n": "例",
+      "zh": "下午我去商店，我想买一些水果。 问：她下午去哪里？",
+      "pinyin": "Xiàwǔ wǒ qù shāngdiàn, wǒ xiǎng mǎi yìxiē shuǐguǒ. Tā xiàwǔ qù nǎli?",
+      "hint_zh": "I’m going to the store this afternoon. I want to buy some fruit. Question: Where is she going this afternoon?",
+      "transcript_zh": "下午我去商店，我想买一些水果。 问：她下午去哪里？",
+      "options": {
+       "A": "商店 shāngdiàn store",
+       "B": "医院 yīyuàn hospital",
+       "C": "学校 xuéxiào school"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        51
+       ]
+      }
+     },
+     {
+      "n": 9,
+      "zh": "",
+      "transcript_zh": "明天是3月19号，星期三。 问：明天星期几？",
+      "options": {
+       "A": "星期一 xīngqī yī",
+       "B": "星期二 xīngqī èr",
+       "C": "星期三 xīngqī sān"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        37
+       ]
+      }
+     },
+     {
+      "n": 10,
+      "zh": "",
+      "transcript_zh": "昨天是8月20号。 问：今天是几月几号？",
+      "options": {
+       "A": "8月19号 bā yuè shíjiǔ hào",
+       "B": "8月20号 bā yuè èrshí hào",
+       "C": "8月21号 bā yuè èrshíyī hào"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        37
+       ]
+      }
+     },
+     {
+      "n": 11,
+      "zh": "",
+      "transcript_zh": "妈妈的生日是1月22号。 问：妈妈的生日是几月几号？",
+      "options": {
+       "A": "1月22号 yī yuè èrshí’èr hào",
+       "B": "7月22号 qī yuè èrshí’èr hào",
+       "C": "3月22号 sān yuè èrshí’èr hào"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        37
+       ]
+      }
+     },
+     {
+      "n": 12,
+      "zh": "",
+      "transcript_zh": "我朋友会做中国菜，明天我去他家吃中国菜。 问：明天“我”做什么？",
+      "options": {
+       "A": "去学校 qù xuéxiào",
+       "B": "去医院 qù yīyuàn",
+       "C": "去朋友家 qù péngyou jiā"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        37
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第一部分",
+    "type_zh": "阅读 第一部分",
+    "instruction_zh": "第13–17题：看图片，判断图片内容是否与提示词一致",
+    "instruction_en": "Questions 13-17: Look at the pictures and decide whether the given words are right or wrong. (Example glosses: 电视 television; 飞机 airplane)",
+    "items": [
+     {
+      "n": "例1",
+      "zh": "电视",
+      "pinyin": "diànshì",
+      "hint_zh": "television",
+      "picture_desc_en": "an open laptop computer",
+      "answer": "×",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        52
+       ]
+      }
+     },
+     {
+      "n": "例2",
+      "zh": "飞机",
+      "pinyin": "fēijī",
+      "hint_zh": "airplane",
+      "picture_desc_en": "an airplane in flight",
+      "answer": "√",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        52
+       ]
+      }
+     },
+     {
+      "n": 13,
+      "zh": "看书",
+      "pinyin": "kàn shū",
+      "picture_desc_en": "a young man reading an open book in front of bookshelves",
+      "answer": "√",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        38
+       ]
+      }
+     },
+     {
+      "n": 14,
+      "zh": "学校",
+      "pinyin": "xuéxiào",
+      "picture_desc_en": "the street front of a Bank of China (中国银行) branch",
+      "answer": "×",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        38
+       ]
+      }
+     },
+     {
+      "n": 15,
+      "zh": "六月六号",
+      "pinyin": "liù yuè liù hào",
+      "picture_desc_en": "a calendar icon reading \"June 6\"",
+      "answer": "√",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        38
+       ]
+      }
+     },
+     {
+      "n": 16,
+      "zh": "吃中国菜",
+      "pinyin": "chī Zhōngguó cài",
+      "picture_desc_en": "a smiling woman sitting at a café table with a tablet and a cup",
+      "answer": "×",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        38
+       ]
+      }
+     },
+     {
+      "n": 17,
+      "zh": "去学校",
+      "pinyin": "qù xuéxiào",
+      "picture_desc_en": "three young women with shopping bags walking in a shopping mall",
+      "answer": "×",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        38
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第二部分",
+    "type_zh": "阅读 第二部分",
+    "instruction_zh": "第18–22题：看问题，选择正确的回答",
+    "instruction_en": "Questions 18-22: Read the questions and choose the right answer to each of them. (Example: Would you like some water?)",
+    "items": [
+     {
+      "n": "例",
+      "zh": "你喝水吗？",
+      "pinyin": "Nǐ hē shuǐ ma?",
+      "hint_zh": "Would you like some water?",
+      "options": {
+       "A": "她29岁。 Tā èrshíjiǔ suì.",
+       "B": "今天星期日。 Jīntiān xīngqīrì.",
+       "C": "我去同学家看书。 Wǒ qù tóngxué jiā kàn shū.",
+       "D": "我不会，我爸爸会。 Wǒ bú huì, wǒ bàba huì.",
+       "E": "今天是10月5号。 Jīntiān shì shí yuè wǔ hào.",
+       "F": "好的，谢谢！ Hǎo de, xièxie!"
+      },
+      "answer": "F",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        53
+       ]
+      }
+     },
+     {
+      "n": 18,
+      "zh": "今天星期几？",
+      "pinyin": "Jīntiān xīngqī jǐ?",
+      "options": {
+       "A": "她29岁。 Tā èrshíjiǔ suì.",
+       "B": "今天星期日。 Jīntiān xīngqīrì.",
+       "C": "我去同学家看书。 Wǒ qù tóngxué jiā kàn shū.",
+       "D": "我不会，我爸爸会。 Wǒ bú huì, wǒ bàba huì.",
+       "E": "今天是10月5号。 Jīntiān shì shí yuè wǔ hào.",
+       "F": "好的，谢谢！ Hǎo de, xièxie!"
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        39
+       ]
+      }
+     },
+     {
+      "n": 19,
+      "zh": "今天是几月几号？",
+      "pinyin": "Jīntiān shì jǐ yuè jǐ hào?",
+      "options": {
+       "A": "她29岁。 Tā èrshíjiǔ suì.",
+       "B": "今天星期日。 Jīntiān xīngqīrì.",
+       "C": "我去同学家看书。 Wǒ qù tóngxué jiā kàn shū.",
+       "D": "我不会，我爸爸会。 Wǒ bú huì, wǒ bàba huì.",
+       "E": "今天是10月5号。 Jīntiān shì shí yuè wǔ hào.",
+       "F": "好的，谢谢！ Hǎo de, xièxie!"
+      },
+      "answer": "E",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        39
+       ]
+      }
+     },
+     {
+      "n": 20,
+      "zh": "你的汉语老师多大了？",
+      "pinyin": "Nǐ de Hànyǔ lǎoshī duō dà le?",
+      "options": {
+       "A": "她29岁。 Tā èrshíjiǔ suì.",
+       "B": "今天星期日。 Jīntiān xīngqīrì.",
+       "C": "我去同学家看书。 Wǒ qù tóngxué jiā kàn shū.",
+       "D": "我不会，我爸爸会。 Wǒ bú huì, wǒ bàba huì.",
+       "E": "今天是10月5号。 Jīntiān shì shí yuè wǔ hào.",
+       "F": "好的，谢谢！ Hǎo de, xièxie!"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        39
+       ]
+      }
+     },
+     {
+      "n": 21,
+      "zh": "明天你做什么？",
+      "pinyin": "Míngtiān nǐ zuò shénme?",
+      "options": {
+       "A": "她29岁。 Tā èrshíjiǔ suì.",
+       "B": "今天星期日。 Jīntiān xīngqīrì.",
+       "C": "我去同学家看书。 Wǒ qù tóngxué jiā kàn shū.",
+       "D": "我不会，我爸爸会。 Wǒ bú huì, wǒ bàba huì.",
+       "E": "今天是10月5号。 Jīntiān shì shí yuè wǔ hào.",
+       "F": "好的，谢谢！ Hǎo de, xièxie!"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        39
+       ]
+      }
+     },
+     {
+      "n": 22,
+      "zh": "你会说汉语吗？",
+      "pinyin": "Nǐ huì shuō Hànyǔ ma?",
+      "options": {
+       "A": "她29岁。 Tā èrshíjiǔ suì.",
+       "B": "今天星期日。 Jīntiān xīngqīrì.",
+       "C": "我去同学家看书。 Wǒ qù tóngxué jiā kàn shū.",
+       "D": "我不会，我爸爸会。 Wǒ bú huì, wǒ bàba huì.",
+       "E": "今天是10月5号。 Jīntiān shì shí yuè wǔ hào.",
+       "F": "好的，谢谢！ Hǎo de, xièxie!"
+      },
+      "answer": "D",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        39
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第三部分",
+    "type_zh": "阅读 第三部分",
+    "instruction_zh": "第23–30题：看句子，选择正确的词语填空",
+    "instruction_en": "Questions 23-30: Read the sentences and choose the right words to fill in the brackets. (Example: What is your name?)",
+    "word_bank": [
+     [
+      "A 几 jǐ",
+      "B 月 yuè",
+      "C 号 hào",
+      "D 名字 míngzi",
+      "E 星期 xīngqī"
+     ],
+     [
+      "F 问 wèn",
+      "G 去 qù",
+      "H 做 zuò",
+      "I 会 huì"
+     ]
+    ],
+    "items": [
+     {
+      "n": "例",
+      "zh": "你叫什么（________）？",
+      "pinyin": "Nǐ jiào shénme",
+      "hint_zh": "What is your name?",
+      "answer": "D",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        54
+       ]
+      }
+     },
+     {
+      "n": 23,
+      "zh": "昨天是（________）三。",
+      "pinyin": "Zuótiān shì ______ sān.",
+      "answer": "E",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        40
+       ]
+      }
+     },
+     {
+      "n": 24,
+      "zh": "明天星期（________）？",
+      "pinyin": "Míngtiān xīngqī ______",
+      "answer": "A",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        40
+       ]
+      }
+     },
+     {
+      "n": 25,
+      "zh": "今天是9（________）31号，星期六。",
+      "pinyin": "Jīntiān shì jiǔ ______ sānshíyī hào, xīngqī liù.",
+      "answer": "B",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        40
+       ]
+      }
+     },
+     {
+      "n": 26,
+      "zh": "你10月几（________）去中国？",
+      "pinyin": "Nǐ shí yuè jǐ ______ qù Zhōngguó?",
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        40
+       ]
+      }
+     },
+     {
+      "n": 27,
+      "zh": "明天我（________）一个中国朋友家吃饭。",
+      "pinyin": "Míngtiān wǒ ______ yí ge Zhōngguó péngyou jiā chī fàn.",
+      "answer": "G",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        40
+       ]
+      }
+     },
+     {
+      "n": 28,
+      "zh": "明天星期六，你（________）什么？",
+      "pinyin": "Míngtiān xīngqī liù, nǐ ______ shénme?",
+      "answer": "H",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        40
+       ]
+      }
+     },
+     {
+      "n": 29,
+      "zh": "我（________）说汉语，不（________）写汉字。",
+      "pinyin": "Wǒ ______ shuō Hànyǔ, bù ______ xiě Hànzì.",
+      "answer": "I, I",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        40
+       ]
+      }
+     },
+     {
+      "n": 30,
+      "zh": "请（________），这个汉字怎么读？",
+      "pinyin": "Qǐng ______, zhège Hànzì zěnme dú?",
+      "answer": "F",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        40
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "三、语音 第一部分",
+    "type_zh": "语音 第一部分 听力",
+    "instruction_zh": "第1–8题：听录音，选择听到的双音节词语。",
+    "instruction_en": "Questions 1-8: Listen to the recording and mark the disyllabic words you hear.",
+    "items": [
+     {
+      "n": 1,
+      "zh": "shífēn　shítáng",
+      "options": {
+       "1": "shífēn",
+       "2": "shítáng"
+      },
+      "transcript_zh": "shítáng（食堂）",
+      "answer": "shítáng",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        41
+       ]
+      }
+     },
+     {
+      "n": 2,
+      "zh": "shíjiān　chángcháng",
+      "options": {
+       "1": "shíjiān",
+       "2": "chángcháng"
+      },
+      "transcript_zh": "chángcháng（常常）",
+      "answer": "chángcháng",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        41
+       ]
+      }
+     },
+     {
+      "n": 3,
+      "zh": "niánqīng　niánlíng",
+      "options": {
+       "1": "niánqīng",
+       "2": "niánlíng"
+      },
+      "transcript_zh": "niánqīng（年轻）",
+      "answer": "niánqīng",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        41
+       ]
+      }
+     },
+     {
+      "n": 4,
+      "zh": "míngtiān　míngnián",
+      "options": {
+       "1": "míngtiān",
+       "2": "míngnián"
+      },
+      "transcript_zh": "míngnián（明年）",
+      "answer": "míngnián",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        41
+       ]
+      }
+     },
+     {
+      "n": 5,
+      "zh": "héshì　hébìng",
+      "options": {
+       "1": "héshì",
+       "2": "hébìng"
+      },
+      "transcript_zh": "héshì（合适）",
+      "answer": "héshì",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        41
+       ]
+      }
+     },
+     {
+      "n": 6,
+      "zh": "ménkǒu　mén hòu",
+      "options": {
+       "1": "ménkǒu",
+       "2": "mén hòu"
+      },
+      "transcript_zh": "ménkǒu（门口）",
+      "answer": "ménkǒu",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        41
+       ]
+      }
+     },
+     {
+      "n": 7,
+      "zh": "érqiě　érhòu",
+      "options": {
+       "1": "érqiě",
+       "2": "érhòu"
+      },
+      "transcript_zh": "érqiě（而且）",
+      "answer": "érqiě",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        41
+       ]
+      }
+     },
+     {
+      "n": 8,
+      "zh": "quántǐ　quánmiàn",
+      "options": {
+       "1": "quántǐ",
+       "2": "quánmiàn"
+      },
+      "transcript_zh": "quánmiàn（全面）",
+      "answer": "quánmiàn",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        41
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "三、语音 第二部分",
+    "type_zh": "语音 第二部分 听力",
+    "instruction_zh": "第9–16题：听录音，给下列词语标注声调",
+    "instruction_en": "Questions 9-16: Listen to the recording and add the tone marks to the following words.",
+    "items": [
+     {
+      "n": 9,
+      "zh": "fang men　fangjian",
+      "transcript_zh": "fáng mén（房门）　fángjiān（房间）",
+      "answer": "fáng mén　fángjiān",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        41
+       ]
+      }
+     },
+     {
+      "n": 10,
+      "zh": "pixie　pijiu",
+      "transcript_zh": "píxié（皮鞋）　píjiǔ（啤酒）",
+      "answer": "píxié　píjiǔ",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        41
+       ]
+      }
+     },
+     {
+      "n": 11,
+      "zh": "shihou　shijian",
+      "transcript_zh": "shíhou（时候）　shíjiān（时间）",
+      "answer": "shíhou　shíjiān",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        41
+       ]
+      }
+     },
+     {
+      "n": 12,
+      "zh": "hui jia　hui guo",
+      "transcript_zh": "huí jiā（回家）　huí guó（回国）",
+      "answer": "huí jiā　huí guó",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        41
+       ]
+      }
+     },
+     {
+      "n": 13,
+      "zh": "jie hun　jieshu",
+      "transcript_zh": "jié hūn（结婚）　jiéshù（结束）",
+      "answer": "jié hūn　jiéshù",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        41
+       ]
+      }
+     },
+     {
+      "n": 14,
+      "zh": "likai　yi ci",
+      "transcript_zh": "líkāi（离开）　yí cì（一次）",
+      "answer": "líkāi　yí cì",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        41
+       ]
+      }
+     },
+     {
+      "n": 15,
+      "zh": "qingxu　chenggong",
+      "transcript_zh": "qíngxù（情绪）　chénggōng（成功）",
+      "answer": "qíngxù　chénggōng",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        41
+       ]
+      }
+     },
+     {
+      "n": 16,
+      "zh": "jueding　liulan",
+      "transcript_zh": "juédìng（决定）　liúlǎn（浏览）",
+      "answer": "juédìng　liúlǎn",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        41
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "四、汉字 第一部分",
+    "type_zh": "汉字 偏旁归类",
+    "instruction_zh": "第1–2题：看汉字，找出含有下列偏旁的汉字",
+    "instruction_en": "Questions 1-2: Look at the characters and group the characters with the same radical.",
+    "items": [
+     {
+      "n": 1,
+      "zh": "氵：________",
+      "options": {
+       "A": "酒",
+       "B": "说",
+       "C": "谁",
+       "D": "让",
+       "E": "海",
+       "F": "认",
+       "G": "没",
+       "H": "河"
+      },
+      "answer": "A E G H",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        117
+       ]
+      }
+     },
+     {
+      "n": 2,
+      "zh": "讠：________",
+      "options": {
+       "A": "酒",
+       "B": "说",
+       "C": "谁",
+       "D": "让",
+       "E": "海",
+       "F": "认",
+       "G": "没",
+       "H": "河"
+      },
+      "answer": "B C D F",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        117
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "四、汉字 第二部分",
+    "type_zh": "汉字 写独体字",
+    "instruction_zh": "第3题：看笔顺，写独体字",
+    "instruction_en": "Question 3: Look at the stroke order and practice writing the single-component characters.",
+    "items": [
+     {
+      "n": "3-四",
+      "zh": "四",
+      "pinyin": "sì",
+      "hint_zh": "笔顺图5步：丨 → 冂 → [图] → [图] → 四"
+     },
+     {
+      "n": "3-五",
+      "zh": "五",
+      "pinyin": "wǔ",
+      "hint_zh": "笔顺图4步：一 → 丆 → [图] → 五"
+     },
+     {
+      "n": "3-书",
+      "zh": "书",
+      "pinyin": "shū",
+      "hint_zh": "笔顺图4步：乛 → [图] → [图] → 书"
+     }
+    ]
+   }
+  ],
+  "answers_ref": {
+   "book": "workbook_answers",
+   "pages": [
+    36,
+    37,
+    38,
+    39,
+    40,
+    41
+   ]
+  }
+ },
+ "unclear": [
+  "Сурах бичиг PDF х.71 练习3 асуулт 5: ханз «星期日你去哪儿做什么？» (去), пиньинь «Xīngqīrì nǐ qǔ nǎr zuò shénme?» — «qǔ» (3-р хөг), асуулт 4-т «qù». Номын алдаа байж магадгүй, номд байгаагаар үлдээсэн.",
+  "Сурах бичиг PDF х.72 练习4 (描述图片) пиньинь «Èrshíèr hào shì» — хураангуй тэмдэг (’) байхгүй (дасгалын номд «èrshí’èr»). Номд байгаагаар.",
+  "Дасгалын ном PDF х.54 асуулт 25 «今天是9（ ）31号，星期六。» — 9-р сар 31 хоноггүй; номд байгаагаар. Хариултын ном PDF х.40-д энэ мөрийн төгсгөлд «）。» гэсэн илүү тэмдэг скан дээр харагдана — бичвэрт оруулаагүй.",
+  "Дасгалын ном асуулт 29 хоёр хоосон зайтай; хариулт «I, I» (хариултын ном PDF х.40: I … I; багшийн номын хавсралт PDF х.117: «I,I»).",
+  "Дасгалын номын хариулт ХОЁР эх сурвалжид: тусдаа хариултын ном (workbook_answers PDF х.36–41) ба багшийн номын хавсралтын 参考答案 (teacher PDF х.117) — бүгд тохирч байна (1–4: ×√×√, 5–8: EBAD, 9–12: CCAC, 13–17: √×√××, 18–22: BEACD, 23–26: EABC, 27–30: GH(I,I)F, 语音 1–16). answer_ref = workbook_answers. 四、汉字 第一部分-ын хариулт (1. A E G H; 2. B C D F) зөвхөн багшийн номын хавсралтад (PDF х.117) — answer_ref = teacher.",
+  "Дасгалын номын 听力 болон 语音 бичвэр (transcript_zh) — багшийн номын хавсралт PDF х.116–117-оос; дасгалын номд зөвхөн зураг/сонголт хэвлэгдсэн. 听力 第二、三部分-ын 5–12 асуултын асуулт текст дасгалын номд хэвлэгдээгүй тул item.zh хоосон, асуулт transcript_zh-д.",
+  "Дасгалын ном 语音 第一部分 (1–8) сонголтод үсэг байхгүй — options-д «1»/«2» түлхүүрээр, answer-д сонгосон үеийг бичсэн.",
+  "Схемд item-ийн англи талбар байхгүй тул: сурах бичгийн 练习2 朗读 үгсийн англи (January…Sunday) болон дасгалын номын 例 (жишээ) мөрүүдийн англи орчуулгыг hint_zh-д, мөн section instruction_en-ийн хаалтад оруулсан.",
+  "Сурах бичиг 注释2/3 — жишээнүүд зөвхөн хүснэгтээр (Subject | Predicate; Subject | Verb1 去 | (place) | Verb2) хэвлэгдсэн; examples-д хүснэгтийн мөрийг « | » тусгаарлагчтайгаар номд байгаагаар оруулсан.",
+  "Сурах бичиг PDF х.73 独体字 四/五/书-ийн эртний хэлбэрүүд ба зурлагын дараалал, 汉字结构 [⿰]/[⿲] дүрс, х.72 调型图 — зөвхөн зурагт; Unicode-оор бүрэн дүрслэх боломжгүй хэсэгт «[图]»/алхмын тоо бичсэн. Дасгалын ном PDF х.56 笔顺 мөн адил.",
+  "Сурах бичиг PDF х.74 运用1 англи «actual situatious» — номын үсгийн алдаа, номд байгаагаар.",
+  "Багшийн номын 课文 асуултуудад тусдаа хариулт байхгүй, зөвхөн 目标句 (课文1: 今天9月1号，星期三。 课文2: 明天是9月2号，星期四。 课文3: 明天星期六，她去学校看书。) — teacher.steps «4 课文»-д; text_questions-д a_zh оруулаагүй.",
+  "Багшийн номын 课文3 асуулт «明天她去哪儿？» — сурах бичгийн 课文3 яриа 你/我 хэлбэртэй (гуравдагч биеэр асуусан); номд байгаагаар.",
+  "Багшийн номын steps доторх хуудасны лавлагаа （课本第52页；第5课课文3的图片（第31页）；练习册第41/44/47/48页） — номын хэвлэсэн хуудас (PDF хуудас биш).",
+  "Багшийн ном 汉字 补充练习 （a. 给下列汉字分类 你、谢、好、明、昨、树、校；b. 辨认 么/去、明/期、学/字） — хариулт хэвлэгдээгүй; teacher.steps «6 汉字»-д.",
+  "Сурах бичгийн 练习3 回答问题 ба 练习4 描述图片 — хариулт хэвлэгдээгүй. Энэ хичээлд 文化、课堂用语 хэсэг байхгүй.",
+  "Аудио файлын нэр мэдэгдэхгүй тул audio талбар орхисон. Номын CD тэмдэг: сурах бичиг 课文1–3 = 07-1／07-2／07-3; 拼音 声调搭配 07-4; дасгалын ном 听力 07-1; 语音 07-2.",
+  "Зургийн тайлбарууд (picture_desc_en, pictures_desc_en, options «[picture]») зургаас товч, объектив дүрсэлсэн."
+ ],
+ "verified_pages": [
+  36,
+  37,
+  38,
+  39,
+  40,
+  41,
+  42,
+  43,
+  44,
+  45,
+  46,
+  47,
+  48,
+  49,
+  50,
+  51,
+  52,
+  53,
+  54,
+  55,
+  56,
+  68,
+  69,
+  70,
+  71,
+  72,
+  73,
+  74,
+  75,
+  116,
+  117
+ ],
+ "schema_version": 1
+}

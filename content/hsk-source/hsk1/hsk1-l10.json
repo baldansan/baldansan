@@ -1,0 +1,1749 @@
+{
+ "level": "hsk1",
+ "lesson": 10,
+ "book": "HSK1",
+ "title_zh": "我能坐这儿吗",
+ "title_pinyin": "Wǒ néng zuò zhèr ma",
+ "title_en": "Can I sit here",
+ "textbook": {
+  "ref": {
+   "book": "textbook",
+   "pages": [
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101
+   ]
+  },
+  "warmup": [
+   {
+    "instruction_zh": "给下面的词语选择对应的图片",
+    "instruction_en": "Match the pictures with the words/phrases.",
+    "items": [
+     "①工作 gōngzuò",
+     "②看书 kàn shū",
+     "③坐 zuò",
+     "④桌子 zhuōzi",
+     "⑤电脑 diànnǎo",
+     "⑥爸爸和妈妈 bàba hé māma"
+    ],
+    "pictures_desc_en": [
+     "A: a wooden desk with drawers",
+     "B: a smiling young man in a dark sweater sitting on a stool",
+     "C: a young woman with long hair reading a book",
+     "D: a desktop computer (monitor, tower, keyboard and mouse)",
+     "E: a laughing little child being kissed on both cheeks by a man and a woman",
+     "F: a group of people in business clothes gathered around a laptop in an office"
+    ]
+   }
+  ],
+  "pronunciation": [
+   {
+    "title_zh": "轻声音节的读法",
+    "rows": [
+     "第一声＋轻声 1st tone+neutral tone：zhuōzi 桌子",
+     "第二声＋轻声 2nd tone+neutral tone：pánzi 盘子",
+     "第三声＋轻声 3rd tone+neutral tone：yǐzi 椅子",
+     "第四声＋轻声 4th tone+neutral tone：kùzi 裤子"
+    ],
+    "notes_zh": [
+     "轻声音节的实际发音是由前一个音节的音高决定的。轻声的读法，一般来说是在第一声、第二声、第四声后面读的调子比前一个音节低一些，而第三声后面的轻声比前面的音节高一些。"
+    ],
+    "notes_en": [
+     "Pronunciation of Neutral-Tone Syllables",
+     "The actual pronunciation of a neutral-tone syllable depends upon the pitch of the syllable before it. Generally speaking, a neutral-tone syllable is read in a lower pitch than the syllable before it if it follows a first-tone, second-tone or fourth-tone syllable, but when it follows a third-tone syllable, it is read in a higher pitch than the syllable before it.",
+     "[图] Each column shows a pitch-contour diagram (tone of the first syllable in red, neutral tone in blue) and a picture: a table (桌子), a plate (盘子), a chair (椅子), a pair of trousers (裤子)."
+    ]
+   },
+   {
+    "title_zh": "叠音词的读法——听录音并跟读，注意轻声音节的读法",
+    "rows": [
+     "bàba　māma　yéye　nǎinai",
+     "gēge　jiějie　dìdi　mèimei",
+     "gūgu　shūshu　tàitai　xīngxing",
+     "xièxie　kànkan　shuōshuo　chángchang"
+    ],
+    "notes_zh": [
+     "在双音节的叠音词中，后一个音节大多读作轻声。",
+     "听录音并跟读，注意轻声音节的读法"
+    ],
+    "notes_en": [
+     "Pronunciation of Reduplicated Syllables",
+     "In a disyllabic word with reduplicated syllables, the second syllable is usually read in the neutral tone.",
+     "Listen to the recording and read after it. Pay attention to the neutral tone."
+    ]
+   },
+   {
+    "title_zh": "带后缀词的读法：“-们，-子，-头”——听录音并跟读，注意后缀的读法",
+    "rows": [
+     "nǐmen 你们　wǒmen 我们　tāmen 他们　rénmen 人们",
+     "zhuōzi 桌子　yǐzi 椅子　bēizi 杯子　bèizi 被子",
+     "shétou 舌头　zhěntou 枕头　shítou 石头　mùtou 木头",
+     "qiántou 前头　hòutou 后头　lǐtou 里头　wàitou 外头"
+    ],
+    "notes_zh": [
+     "在带后缀“-们、-子、-头”的词语中，“们、子、头”一般读作轻声。例如：",
+     "听录音并跟读，注意后缀的读法"
+    ],
+    "notes_en": [
+     "Pronunciation of Words with the Suffix “-们”, “-子” or “-头”",
+     "Being part of a word, the suffixes “们”, “子” and “头” are usually read in the neutral tone. For example:",
+     "Listen to the recording and read after it. Pay attention to the suffixes."
+    ]
+   }
+  ],
+  "texts": [
+   {
+    "n": 1,
+    "title_zh": "在办公室",
+    "title_en": "In the office",
+    "kind": "dialogue",
+    "lines": [
+     {
+      "speaker": "A",
+      "zh": "桌子上有什么？",
+      "pinyin": "Zhuōzi shang yǒu shénme?"
+     },
+     {
+      "speaker": "B",
+      "zh": "桌子上有一个电脑和一本书。",
+      "pinyin": "Zhuōzi shang yǒu yí ge diànnǎo hé yì běn shū."
+     },
+     {
+      "speaker": "A",
+      "zh": "杯子在哪儿？",
+      "pinyin": "Bēizi zài nǎr?"
+     },
+     {
+      "speaker": "B",
+      "zh": "杯子在桌子里。",
+      "pinyin": "Bēizi zài zhuōzi li."
+     }
+    ],
+    "english_version": "A: What are there on the desk?\nB: There is a computer and a book.\nA: Where is the cup?\nB: It’s in the desk.",
+    "new_words": [
+     {
+      "n": 1,
+      "zh": "桌子",
+      "pinyin": "zhuōzi",
+      "pos": "n.",
+      "en": "desk, table",
+      "text": 1
+     },
+     {
+      "n": 2,
+      "zh": "上",
+      "pinyin": "shang",
+      "pos": "n.",
+      "en": "up, above",
+      "text": 1
+     },
+     {
+      "n": 3,
+      "zh": "电脑",
+      "pinyin": "diànnǎo",
+      "pos": "n.",
+      "en": "computer",
+      "text": 1
+     },
+     {
+      "n": 4,
+      "zh": "和",
+      "pinyin": "hé",
+      "pos": "conj.",
+      "en": "and",
+      "text": 1
+     },
+     {
+      "n": 5,
+      "zh": "本",
+      "pinyin": "běn",
+      "pos": "m.",
+      "en": "a measure word for books",
+      "text": 1
+     },
+     {
+      "n": 6,
+      "zh": "里",
+      "pinyin": "li",
+      "pos": "n.",
+      "en": "inner, inside, interior",
+      "text": 1
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "title_zh": "在健身房",
+    "title_en": "In the gym",
+    "kind": "dialogue",
+    "lines": [
+     {
+      "speaker": "A",
+      "zh": "前面那个人叫什么名字？",
+      "pinyin": "Qiánmiàn nàge rén jiào shénme míngzi?"
+     },
+     {
+      "speaker": "B",
+      "zh": "她叫王方，在医院工作。",
+      "pinyin": "Tā jiào Wáng Fāng, zài yīyuàn gōngzuò."
+     },
+     {
+      "speaker": "A",
+      "zh": "后面那个人呢？他叫什么名字？",
+      "pinyin": "Hòumiàn nàge rén ne? Tā jiào shénme míngzi?"
+     },
+     {
+      "speaker": "B",
+      "zh": "他叫谢朋，在商店工作。",
+      "pinyin": "Tā jiào Xiè Péng, zài shāngdiàn gōngzuò."
+     }
+    ],
+    "english_version": "A: Who is the person in the front?\nB: She is Wang Fang. She works in a hospital.\nA: What about the person at the back? What’s his name?\nB: He is Xie Peng. He works in a store.",
+    "new_words": [
+     {
+      "n": 7,
+      "zh": "前面",
+      "pinyin": "qiánmiàn",
+      "pos": "n.",
+      "en": "front",
+      "text": 2
+     },
+     {
+      "n": 8,
+      "zh": "后面",
+      "pinyin": "hòumiàn",
+      "pos": "n.",
+      "en": "back",
+      "text": 2
+     }
+    ],
+    "proper_nouns": [
+     {
+      "zh": "王方",
+      "pinyin": "Wáng Fāng",
+      "en": "Wang Fang, name of a person"
+     },
+     {
+      "zh": "谢朋",
+      "pinyin": "Xiè Péng",
+      "en": "Xie Peng, name of a person"
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "title_zh": "在图书馆",
+    "title_en": "In the library",
+    "kind": "dialogue",
+    "lines": [
+     {
+      "speaker": "A",
+      "zh": "这儿有人吗？",
+      "pinyin": "Zhèr yǒu rén ma?"
+     },
+     {
+      "speaker": "B",
+      "zh": "没有。",
+      "pinyin": "Méi yǒu."
+     },
+     {
+      "speaker": "A",
+      "zh": "我能坐这儿吗？",
+      "pinyin": "Wǒ néng zuò zhèr ma?"
+     },
+     {
+      "speaker": "B",
+      "zh": "请坐。",
+      "pinyin": "Qǐng zuò."
+     }
+    ],
+    "english_version": "A: Is this seat taken?\nB: No, it isn’t.\nA: Can I sit here?\nB: Yes, please.",
+    "new_words": [
+     {
+      "n": 9,
+      "zh": "这儿",
+      "pinyin": "zhèr",
+      "pos": "pron.",
+      "en": "here",
+      "text": 3
+     },
+     {
+      "n": 10,
+      "zh": "没有（没）",
+      "pinyin": "méiyǒu (méi)",
+      "pos": "adv.",
+      "en": "there is not",
+      "text": 3
+     },
+     {
+      "n": 11,
+      "zh": "能",
+      "pinyin": "néng",
+      "pos": "mod.",
+      "en": "can, may",
+      "text": 3
+     },
+     {
+      "n": 12,
+      "zh": "坐",
+      "pinyin": "zuò",
+      "pos": "v.",
+      "en": "to sit, to be seated",
+      "text": 3
+     }
+    ]
+   }
+  ],
+  "grammar": [
+   {
+    "n": 1,
+    "title_zh": "“有”字句：表示存在",
+    "title_en": "The “有” Sentence: indicating existence",
+    "explanation_zh": "动词“有”可以用于表示存在的句子中，表示某个处所或者位置存在什么。例如：\n“有”字句的否定形式是“没有”，同时宾语前不能带数量定语。例如：",
+    "explanation_en": "The verb “有” can be used in an existential sentence to indicate a person or thing exists somewhere. For example:\nIn the negative form of a “有” sentence, “没有” is used without a numeral classifier before the object. For example:",
+    "structure_rows": [
+     "Word of Locality | 有 | Person/Thing Existing",
+     "椅子下面 | 有 | 一只小狗。",
+     "学校里 | 有 | 一个商店。",
+     "桌子上 | 有 | 一个电脑和一本书。"
+    ],
+    "examples": [
+     {
+      "n": 1,
+      "zh": "椅子下面没有小狗。"
+     },
+     {
+      "n": 2,
+      "zh": "学校里没有商店。"
+     },
+     {
+      "n": 3,
+      "zh": "桌子上没有电脑和书。"
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "title_zh": "连词“和”",
+    "title_en": "The Conjunction “和”",
+    "explanation_zh": "连词“和”用于连接两个或者两个以上并列的成分，表示一种并列关系。例如：",
+    "explanation_en": "The conjunction “和” is used to connect two or more elements, indicating a parallel relationship. For example:",
+    "examples": [
+     {
+      "n": 1,
+      "zh": "我有一个中国朋友和一个美国朋友。"
+     },
+     {
+      "n": 2,
+      "zh": "我家有三口人，爸爸、妈妈和我。"
+     },
+     {
+      "n": 3,
+      "zh": "桌子上有一个电脑和一本书。"
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "title_zh": "能愿动词“能”",
+    "title_en": "The Modal Verb “能”",
+    "explanation_zh": "能愿动词“能”一般用在动词前，与动词整体做谓语，表示一种能力或者可能。“能”还常用于疑问句式“能……吗？”中，表示请求、希望获得许可。例如：",
+    "explanation_en": "The modal verb “能” is usually used before a verb to form the predicate indicating an ability or a possibility. The interrogative sentence structure “能……吗?” is often used to indicate a request or hope for permission. For example:",
+    "examples": [
+     {
+      "n": 1,
+      "zh": "明天下午我能去商店。"
+     },
+     {
+      "n": 2,
+      "zh": "你能在这儿写你的名字吗？"
+     },
+     {
+      "n": 3,
+      "zh": "我能坐这儿吗？"
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "title_zh": "用“请”的祈使句",
+    "title_en": "Imperative Sentences with “请”",
+    "explanation_zh": "动词“请”后加其他动词可以构成一种祈使句，委婉地表示建议、希望对方做某事。例如：",
+    "explanation_en": "When the verb “请” is used before another verb, an imperative sentence is formed, indicating a polite suggestion or hope. For example:",
+    "examples": [
+     {
+      "n": 1,
+      "zh": "请写您的名字。"
+     },
+     {
+      "n": 2,
+      "zh": "请喝茶。"
+     },
+     {
+      "n": 3,
+      "zh": "请坐。"
+     }
+    ]
+   }
+  ],
+  "exercises": [
+   {
+    "n": 1,
+    "type_zh": "分角色朗读课文",
+    "instruction_zh": "分角色朗读课文",
+    "instruction_en": "Role-play the dialogues.",
+    "items": []
+   },
+   {
+    "n": 2,
+    "type_zh": "回答问题",
+    "instruction_zh": "根据课文内容回答问题",
+    "instruction_en": "Answer the questions based on the dialogues.",
+    "items": [
+     {
+      "n": 1,
+      "zh": "电脑在哪儿？",
+      "pinyin": "Diànnǎo zài nǎr?"
+     },
+     {
+      "n": 2,
+      "zh": "书在哪儿？",
+      "pinyin": "Shū zài nǎr?"
+     },
+     {
+      "n": 3,
+      "zh": "桌子里面有什么？",
+      "pinyin": "Zhuōzi lǐmiàn yǒu shénme?"
+     },
+     {
+      "n": 4,
+      "zh": "哪个人是王方？",
+      "pinyin": "Nǎge rén shì Wáng Fāng?"
+     },
+     {
+      "n": 5,
+      "zh": "哪个人是谢朋？",
+      "pinyin": "Nǎge rén shì Xiè Péng?"
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "type_zh": "描述图片",
+    "instruction_zh": "用本课新学的语言点和词语描述图片",
+    "instruction_en": "Describe the pictures using the newly-learned language points and words.",
+    "items": [
+     {
+      "n": 1,
+      "zh": "________有________。",
+      "pinyin": "yǒu",
+      "picture_desc_en": "a small table with a cup on it next to a black chair"
+     },
+     {
+      "n": 2,
+      "zh": "________有________和________。",
+      "pinyin": "yǒu hé",
+      "picture_desc_en": "a white desk with a stack of books and papers and an open laptop computer on it"
+     },
+     {
+      "n": 3,
+      "zh": "我能________吗？",
+      "pinyin": "Wǒ néng ma?",
+      "picture_desc_en": "men in shirts and ties at a bar counter; one man is seated and another man stands beside him, leaning towards him"
+     },
+     {
+      "n": 4,
+      "zh": "他在________工作。",
+      "pinyin": "Tā zài gōngzuò.",
+      "picture_desc_en": "a smiling man in a red apron standing at a counter in a store with shelves of goods behind him"
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "type_zh": "选择适当的量词填空",
+    "instruction_zh": "选择适当的量词填空",
+    "instruction_en": "Choose a suitable measure word to fill in each blank.",
+    "word_bank": [
+     [
+      "个 gè",
+      "口 kǒu",
+      "本 běn",
+      "块 kuài"
+     ]
+    ],
+    "items": [
+     {
+      "n": 1,
+      "zh": "我家有三________人。",
+      "pinyin": "Wǒ jiā yǒu sān ______ rén."
+     },
+     {
+      "n": 2,
+      "zh": "我买一________杯子。",
+      "pinyin": "Wǒ mǎi yī ______ bēizi."
+     },
+     {
+      "n": 3,
+      "zh": "我有五________汉语书。",
+      "pinyin": "Wǒ yǒu wǔ ______ Hànyǔ shū."
+     },
+     {
+      "n": 4,
+      "zh": "椅子八十________钱。",
+      "pinyin": "Yǐzi bāshí ______ qián."
+     }
+    ]
+   }
+  ],
+  "characters": {
+   "knowledge_title_zh": "认识独体字／汉字结构（5）：全包围结构／汉字偏旁“囗”和“礻”",
+   "knowledge_zh": "1 认识独体字\n（1）“上”，下边的横表示位置的界线，上边的短横表示在上面。意思是“高处、上面”。\n（2）“下”，与“上”的意思相对，指位置在低处、下面。\n（3）“本”，字形是在“木”的下端加圆点指事符号・，本义是指树的根部，后引申为事物的根本。\n（4）“末”，本义是树梢部位、尖端，现在也指非根本的、次要的。\n2 汉字结构（5）：全包围结构\n合体结构中的全包围结构是指四面包围结构，结构图形为□。\n结构 | 例字 | 图解\n全包围结构 | 四 sì、国 guó | [图]\n3 汉字偏旁“囗”和“礻”\n偏旁 | 解释 | 例字\n囗 | 国字框，一般表示被困住、包围住。 | 国 guó、困 kùn\n礻 | 示字旁，是“示”的变体，一般和神、祭祀、福祸有关。 | 视 shì、祝 zhù",
+   "knowledge_en": "Single-Component Characters: (1) The horizontal stroke at the bottom of “上” indicates the border line for reference, and the short horizontal stroke indicates a position above the border line, meaning “up/above”. (2) Opposite to “上”, “下” means “down/below”. (3) “本” originally looked like a tree with a dot sign at its bottom. The character originally referred to the root of a tree, and now it means “the root of everything”. (4) “末” originally referred to the tip or top of a tree. Now it also means “non-fundamental and secondary”.\nStructure of Chinese Characters (5): enclosure — As a compound structure, the enclosure structure is a structure enclosed on all the four sides. The diagram is □. complete enclosure: 四 sì four, 国 guó country, nation.\nChinese Radicals: “囗” and “礻” — The radical “囗” usually means being trapped or besieged: 国 guó country, nation; 困 kùn to be trapped. The radical “礻” is a variant of “示”, a character usually related to deity, sacrificial rites and one’s fortune: 视 shì to look, to view; 祝 zhù to wish.",
+   "characters": [
+    {
+     "zh": "上",
+     "pinyin": "shàng",
+     "note_zh": "独体字：下边的横表示位置的界线，上边的短横表示在上面（字形演变图4步 + 笔顺：丨→⺊→上）"
+    },
+    {
+     "zh": "下",
+     "pinyin": "xià",
+     "note_zh": "独体字：与“上”的意思相对（字形演变图4步 + 笔顺：一→丅→下）"
+    },
+    {
+     "zh": "本",
+     "pinyin": "běn",
+     "note_zh": "独体字：“木”的下端加圆点指事符号，本义树的根部（字形演变图3步 + 笔顺：一→十→才→木→本）"
+    },
+    {
+     "zh": "末",
+     "pinyin": "mò",
+     "note_zh": "独体字：本义树梢部位、尖端（字形演变图3步 + 笔顺图5步：一→二→…→末）"
+    },
+    {
+     "zh": "四",
+     "pinyin": "sì",
+     "note_zh": "全包围结构例字（four）"
+    },
+    {
+     "zh": "国",
+     "pinyin": "guó",
+     "note_zh": "全包围结构例字；偏旁“囗”例字（country, nation）"
+    },
+    {
+     "zh": "困",
+     "pinyin": "kùn",
+     "note_zh": "偏旁“囗”例字（to be trapped）"
+    },
+    {
+     "zh": "视",
+     "pinyin": "shì",
+     "note_zh": "偏旁“礻”例字（to look, to view）"
+    },
+    {
+     "zh": "祝",
+     "pinyin": "zhù",
+     "note_zh": "偏旁“礻”例字（to wish）"
+    }
+   ]
+  },
+  "application": [
+   {
+    "title_zh": "双人活动",
+    "instruction_zh": "两人一组，根据实际情况进行问答练习。",
+    "instruction_en": "Work in pairs and ask and answer questions according to the actual situations.",
+    "example_zh": [
+     "例如：",
+     "A：你的桌子上面有什么？ Nǐ de zhuōzi shàngmiàn yǒu shénme?",
+     "B：……",
+     "A：你的椅子下面有什么？ Nǐ de yǐzi xiàmiàn yǒu shénme?",
+     "B：……"
+    ]
+   },
+   {
+    "title_zh": "小组活动",
+    "instruction_zh": "3～4人一组，互相介绍小组各成员的座位位置并记录，每组请一位同学报告情况。",
+    "instruction_en": "Work in groups of 3-4. Describe the location of the seat of each of your group member and take notes. Each group chooses one member to make a report. Supplementary words: behind, left, right",
+    "example_zh": [
+     "补充生词：后面、左边、右边（hòumiàn zuǒbian yòubian）",
+     "表格：姓名 Name | 位置 Location",
+     "1 | 大卫 Dàwèi | 大卫在我左边。/我左边是大卫。 Dàwèi zài wǒ zuǒbian./ Wǒ zuǒbian shì Dàwèi.",
+     "（另有3行空白）"
+    ]
+   }
+  ],
+  "culture": {
+   "title_zh": "中国人姓名的特点",
+   "body_zh": "中国人的名字一般是姓氏在前、名字在后，比如“李月”、“谢朋”、“王方”，其中“李”、“谢”、“王”是姓，“月”、“朋”、“方”是名字。\n中国人的姓有5000多个，现在常见的大概有200多个，“张”、“王”、“李”、“赵”是中国人最常见的姓。这样一个字的姓叫作单姓，大多数中国人的姓是单姓。除此以外也有两个字或者两个字以上的姓，叫作复姓，比如“欧阳”、“上官”、“诸葛”等等。\n在称呼时，可以用一个人的姓加上这个人的工作或者职业。比如，李月姓李，是老师，我们可以称呼她“李老师”；王方姓王，是医生，我们可以称呼她“王医生”。",
+   "body_en": "Features of Chinese People’s Names\nA Chinese name starts with the family name and ends with the given name, for example, in the names “李月”, “谢朋” and “王方”, “李”, “谢” and “王” are family names and “月”, “朋” and “方” are given names.\nThere are over 5,000 Chinese family names, among which more than 200 are commonly seen. “张”, “王”, “李” and “赵” are the most common ones. Such family names as have only one character are known as single-character surnames. Most Chinese people have a single-character surname. There are surnames with two or more characters also, which are called compound-character surnames, such as “欧阳”, “上官” and “诸葛”.\nA person can be addressed with his/her family name followed by his/her job or profession. For instance, “李月” is a teacher, so we can call her “李老师” (literally Teacher Li), while “王方” is a doctor and we can call her “王医生” (literally Doctor Wang)."
+  }
+ },
+ "teacher": {
+  "ref": {
+   "book": "teacher",
+   "pages": [
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69
+   ]
+  },
+  "objectives_zh": [
+   "重点词语：学生能够熟练掌握“电脑、本、里、前面、后面、这儿、没有、坐”的词义和用法",
+   "语言点：学生能够了解并掌握：（1）“有”字句：表示存在（2）连词“和”（3）能愿动词“能”（4）用“请”的祈使句",
+   "语音：学生能够：（1）熟悉含有轻声音节的双音节词语的声调模式（2）正确朗读叠音词（3）正确朗读带后缀的词语",
+   "汉字：学生能够：（1）熟练认读本课生词（2）独立书写独体字“上、下、本、末”（3）了解汉字的全包围结构（4）了解“囗（国字框）、礻（示字旁）”所表示的意思",
+   "功能：学生能够：（1）询问和表达某个处所存在什么人或者事物（2）表达几个并列关系的人或者事物（3）委婉地表达请求或者询问许可"
+  ],
+  "steps": [
+   {
+    "title_zh": "一 复习旧课",
+    "body_zh": "1. 教师出示第9课生词卡片，要求学生快速认读下列生词。\n小、猫、在、那儿、狗、椅子、下面（下）、哪儿、工作、儿子、医院、医生、爸爸\n2. 教师根据第9课重点内容简单提问，活跃课堂气氛。\n（1）你有小猫／小狗吗？\n（2）你的小猫／小狗在哪儿？\n（3）你的汉语书在哪儿？\n（4）你的杯子在哪儿？\n（5）你爸爸在哪儿工作？\n（6）你妈妈在哪儿工作？"
+   },
+   {
+    "title_zh": "二 学习新课 1 热身",
+    "body_zh": "教师可依次出示热身部分的词语卡片，要求学生集体认读并请单个学生说出对应图片的编号，教师评判正误。最后全体学生再次齐读热身环节的所有词语，要求语音标准、声调准确。\n答案：①F　②C　③B　④A　⑤D　⑥E"
+   },
+   {
+    "title_zh": "2 生词",
+    "body_zh": "（1）生词快速认读及正音\n桌子、上、电脑、和、本、里、前面、后面、这儿、没有（没）、能、坐、王方、谢朋\n• 教师使用生词卡片有拼音和汉字的一面，带领学生快速认读一遍本课生词；\n• 使用生词卡片只有汉字的一面，带领学生再次认读本课生词；\n• 请单个学生独自认读2–3个生词；\n• 最后全体学生再快速认读一遍本课所有生词。\n（2）重点生词扩展及常用搭配\n电脑—一个电脑\n本—一本书—一本汉语书—两本汉语书\n　—你想买什么？—我想买一本汉语书。\n里—家里—学校里—医院里—桌子里—电脑里\n前面—在前面—我前面—他在我前面。\n　—前面的人—前面那个人—前面那个人是李老师。\n后面—在后面—我后面—他在我后面。\n　—后面的人—后面那个人—后面那个人是我朋友。\n这儿—我的书在哪儿？—你的书在这儿。\n　↔那儿↔哪儿\n没有—没有汉语书—我没有汉语书。\n　—没有中国朋友—他没有中国朋友。\n　—没有人—这儿没有人。\n坐—请坐—请坐这儿\n练习册相关练习：第65页／一／第一部分，第68页／二／第一部分"
+   },
+   {
+    "title_zh": "3 语言点（1）“有”字句：表示存在",
+    "body_zh": "① 语言点解析\n动词“有”可以用于表示存在的句子中，表示某个处所或者位置存在什么。其否定形式是“没有”。\n［句型框］地点／处所词语＋（没）有＋名词。\n② 语言点导入\n教师可利用教室里的实物或者图片进行导入，比如教师在桌子上放一个杯子，对这个情景提问。\n教师：这是什么？\n学生：这是桌子。\n教师：这是什么？\n学生：杯子。\n教师：桌子上有什么？\n学生：桌子上有一个杯子。\n教师：桌子上有电脑吗？\n学生：桌子上没有电脑。\n其他目标句：桌子上有一本汉语书。\n桌子上有一个手机。\n学校里有一个商店。\n椅子下面有一只小狗。\n③ 语言点操练\n教师可组织学生根据实际情况进行问答练习。\n参考问题：你的桌子上有什么？\n你的桌子上有电脑吗？\n你的椅子下面有什么？\n学校里有商店吗？\n商店里有什么？"
+   },
+   {
+    "title_zh": "3 语言点（2）连词“和”",
+    "body_zh": "① 语言点解析\n连词“和”用于连接两个或者两个以上并列的成分，表示一种并列关系。\n［句型框］A和B\n［句型框］A、B和C\n② 语言点导入\n教师可利用本课热身图片E进行导入。\n教师：他家有几口人？\n学生：他家有三口人。\n教师：他们是谁？\n学生：爸爸、妈妈和他。\n③ 语言点操练\n教师可组织学生根据实际情况进行问答练习。\n参考问题：你的桌子上有什么？\n你有几个中国朋友？你有几个美国朋友？\n你家有几口人？"
+   },
+   {
+    "title_zh": "3 语言点（3）能愿动词“能”",
+    "body_zh": "① 语言点解析\n能愿动词“能”一般用在动词前，与动词整体做谓语，表示一种能力或者可能。其否定形式是“不能”。“能”还常用于疑问句式“能……吗？”中，表示请求、希望获得许可。\n［句型框］主语＋（不）能＋动词。\n［句型框］主语＋能＋动词＋吗？\n② 语言点导入及操练\n教师可通过情景提示，引导学生使用目标句型。\n教师：你的朋友有一本汉语书，你想看，你应该说什么？\n学生：我能看你的汉语书吗？\n教师：这儿有一把椅子，你想坐，你应该说什么？\n学生：我能坐这儿吗？\n教师：今天大卫不工作，他能……\n学生：他能去商店／能去朋友家／……\n教师：今天大卫在医院，他病了，他不能……\n学生：他不能工作／不能学习／……\n③ 语言点扩展练习\n教师可组织学生两人一组，根据情景提示进行对话表演。（情景描述可翻译成学生母语）\n参考情景：\nA和B商量什么时候能一起去买东西\nA在食堂找座位\nA想借B的词典"
+   },
+   {
+    "title_zh": "3 语言点（4）用“请”的祈使句",
+    "body_zh": "① 语言点解析\n动词“请”后加其他动词可以构成一种祈使句，委婉地表示建议、希望对方做某事。\n［句型框］请＋动词。\n② 语言点导入及操练\n教师可通过出示一些图片，利用图片提示的情景引导学生说出用“请”的祈使句。\n教师：我能坐这儿吗？\n学生：请坐。\n教师：这是什么？\n学生：这是茶，请喝茶。\n教师：我在哪儿写名字？\n学生：请在这儿写您的名字。"
+   },
+   {
+    "title_zh": "4 课文",
+    "body_zh": "课文1\n（1）让学生听两遍录音并回答下列问题：\n桌子上有什么？\n桌子上有杯子吗？\n杯子在哪儿？\n（2）根据学生的回答，教师领说变为叙述体的课文，并请学生单个复述：\n桌子上有一个电脑和一本书。桌子上没有杯子。杯子在桌子里。\n（3）教师领读课文两遍，然后让学生分角色朗读课文。\n（4）模仿练习\n教师可组织学生两人一组，根据提示进行对话练习。\nA：你的桌子上有什么？\nB：我的桌子上有……。\nA：你的……在哪儿？\nB：我的……在……。\n课文2\n（1）让学生听两遍录音并回答下列问题：\n这儿有几个人？\n前面的人叫什么名字？在哪儿工作？\n后面的人叫什么名字？在哪儿工作？\n（2）根据学生的回答，教师领说变为叙述体的课文，并请学生单个复述：\n这儿有两个人。前面那个人叫王方，在医院工作。后面那个人叫谢朋，在商店工作。\n（3）教师领读课文两遍，然后让学生分角色朗读课文。\n课文3\n（1）教师出示课文图片，要求学生听两遍录音并回答下列问题：\n他们在哪儿？\n他想做什么？\n他能坐这儿吗？\n（2）教师领读课文两遍，然后让学生分角色朗读课文。\n（3）模仿练习\n教师组织学生两人一组，根据提示进行对话练习。\nA：你好，请问这儿有人吗？\nB：对不起，这儿……。\nA：那儿有人吗？\nB：……。\nA：我能……吗？\nB：好的，请……。"
+   },
+   {
+    "title_zh": "5 语音",
+    "body_zh": "（1）轻声音节的读法\n含有轻声音节的双音节词语是现代汉语双音节词语的重要组成部分，其声调模式是双音节词语语音教学的重点和难点。\n在双音节词语中，轻声音节的实际发音是由前一个音节的音高决定的。一般来说在第一声、第二声、第四声音节后面读的调子比前一个音节低一些，而第三声音节后面的轻声比前面的音节高一些。\n教师可利用课本第76页的例词、声调模式图引导学生体会轻声音节音高与前边音节的关系。同时引导学生识记各声调模式标准词的调型，把它作为以后发相同声调模式的其他词语时的发音范本。\n（2）叠音词和带后缀词的读法\n双音节的叠音词和带后缀词中的后一个字一般也读作轻声。教师可领读课本第77页两个练习的第一列词语，让学生自己找出发音规律。\n之后教师利用课本第77页叠音词、带后缀词练习的剩余部分，组织学生进行朗读正音练习。朗读时教师要提醒学生注意各声调搭配的标准词的示范作用。\n练习册相关练习：第71页／三"
+   },
+   {
+    "title_zh": "6 汉字",
+    "body_zh": "① 知识点解析\n独体字\n上：下边的横表示位置的界线，上边的短横表示在上面。意思是“高处、上面”。\n下：与“上”的意思相对，指位置在低处、下面。\n本：最初的字形是在“木”的下端加圆点指示符号，本义是指树的根部，后引申为事物的根本。\n末：最初的字形是在“木”的上端加圆点指示符号，本义是树梢部位、尖端，现在也指非根本的、次要的。\n偏旁\n囗：国字框，一般表示被困住、包围住。\n礻：示字旁，是“示”的变体，一般和神、祭祀、福祸有关。\n② 汉字练习\n• 教师板书或者用手指在空中书写本课独体字“上、下、本、末”，带领学生一起识记独体字的笔画笔顺。\n• 教师板书本课偏旁“囗、礻”，提示学生注意这两个偏旁的笔画和笔顺，并书写各自的代表汉字，帮助学生识记该偏旁的意义。\n• 教师通过板书例字，给学生展示汉字的另一种合体结构：全包围结构。\n• 补充练习\n辨认下列汉字并组词\n上（　）／下（　）　前（　）／后（　）\n桌（　）／电（　）　杯（　）／校（　）\n练习册相关练习：第72页／四"
+   },
+   {
+    "title_zh": "7 补充课堂活动——我的房间",
+    "body_zh": "教师可出示一张房间内部的图片，图片上标注桌子、椅子、电脑、床、柜子、书架等物品。教师先带领学生熟悉词语，然后请学生2–3人一组介绍自己的房间。\n例如：我的房间里有……。我的房间里没有……。\n补充词语：床 chuáng、柜子 guìzi、书架 shūjià、……"
+   },
+   {
+    "title_zh": "附注：建议教学用具",
+    "body_zh": "1. 生词卡片：第9、10课生词卡片\n2. 独体字卡片：第10课独体字卡片\n3. 情景图片：坐、喝茶、写名字\n4. 补充活动图片：房间"
+   }
+  ],
+  "notes_zh": [
+   "注意：“有”字句的肯定形式中，名词前常常有一个量词，比如“桌子上有一本书。”而在否定句和疑问句中则不能保留量词，要说“桌子上没有书。”“桌子上有书吗？”（语言点1）",
+   "注意：教师应提醒学生注意，汉语中的连词“和”跟英语的“and”不同，“和”一般只用于连接词和短语，不能用于连接分句，要避免学生说出“我爸爸是医生，和我妈妈是老师。”这样的句子。（语言点2）",
+   "注意：“和”连接两个以上并列成分时，位置应在最后两项并列成分之间，其他各项之间不用。（语言点2）"
+  ],
+  "warmup_answers_zh": [
+   "答案：①F　②C　③B　④A　⑤D　⑥E"
+  ],
+  "text_questions": [
+   {
+    "text": 1,
+    "q_zh": "桌子上有什么？"
+   },
+   {
+    "text": 1,
+    "q_zh": "桌子上有杯子吗？"
+   },
+   {
+    "text": 1,
+    "q_zh": "杯子在哪儿？"
+   },
+   {
+    "text": 2,
+    "q_zh": "这儿有几个人？"
+   },
+   {
+    "text": 2,
+    "q_zh": "前面的人叫什么名字？在哪儿工作？"
+   },
+   {
+    "text": 2,
+    "q_zh": "后面的人叫什么名字？在哪儿工作？"
+   },
+   {
+    "text": 3,
+    "q_zh": "他们在哪儿？"
+   },
+   {
+    "text": 3,
+    "q_zh": "他想做什么？"
+   },
+   {
+    "text": 3,
+    "q_zh": "他能坐这儿吗？"
+   }
+  ],
+  "summary_zh": "• 语言点：“有”字句表示存在\n　连词“和”\n　能愿动词“能”表示能力或可能\n　用“请”的祈使句\n• 语音：含有轻声音节的双音节词语的声调搭配\n　叠音词和带后缀词的读法\n• 汉字：独体字“上、下、本、末”\n　偏旁“囗、礻”"
+ },
+ "workbook": {
+  "ref": {
+   "book": "workbook",
+   "pages": [
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80
+   ]
+  },
+  "sections": [
+   {
+    "n": "一、听力 第一部分",
+    "type_zh": "听力 第一部分",
+    "instruction_zh": "第1–4题：听词或短语，判断对错",
+    "instruction_en": "Questions 1-4: Listen to the words or phrases and decide whether the pictures are right or wrong based on what you hear.",
+    "items": [
+     {
+      "n": "例1",
+      "zh": "很高兴 hěn gāoxìng very happy",
+      "transcript_zh": "很高兴",
+      "picture_desc_en": "a smiling young woman with her hair tied back",
+      "answer": "√",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        73
+       ]
+      }
+     },
+     {
+      "n": "例2",
+      "zh": "看电影 kàn diànyǐng to see a movie",
+      "transcript_zh": "看电影",
+      "picture_desc_en": "an older man in a suit sitting and reading papers",
+      "answer": "×",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        73
+       ]
+      }
+     },
+     {
+      "n": 1,
+      "zh": "",
+      "transcript_zh": "坐",
+      "picture_desc_en": "a row of young women in uniforms sitting on chairs",
+      "answer": "√",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        54
+       ]
+      }
+     },
+     {
+      "n": 2,
+      "zh": "",
+      "transcript_zh": "桌子",
+      "picture_desc_en": "a low wooden table",
+      "answer": "√",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        54
+       ]
+      }
+     },
+     {
+      "n": 3,
+      "zh": "",
+      "transcript_zh": "爸爸和女儿",
+      "picture_desc_en": "a smiling woman and a little girl with their heads close together",
+      "answer": "×",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        54
+       ]
+      }
+     },
+     {
+      "n": 4,
+      "zh": "",
+      "transcript_zh": "请喝茶",
+      "picture_desc_en": "a hand pouring from a small teapot on a tea tray with small tea cups, another hand held out",
+      "answer": "√",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        54
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "一、听力 第二部分",
+    "type_zh": "听力 第二部分",
+    "instruction_zh": "第5–8题：听对话，选择与对话内容一致的图片",
+    "instruction_en": "Questions 5-8: Listen to the dialogues and choose the right picture for each dialogue you hear.",
+    "items": [
+     {
+      "n": "例",
+      "zh": "女：你好！ Nǐ hǎo! (How do you do?) 男：你好！很高兴认识你。 Nǐ hǎo! Hěn gāoxìng rènshi nǐ. (How do you do? Nice to meet you.)",
+      "transcript_zh": "女：你好！ 男：你好！很高兴认识你。",
+      "options": {
+       "A": "[picture] a smiling little girl peeking out from under a blanket, other children beside her",
+       "B": "[picture] tall residential high-rise buildings",
+       "C": "[picture] a man and a woman in business suits shaking hands in front of an elevator",
+       "D": "[picture] a smiling girl raising both hands at a desk in a classroom, a boy sitting behind her",
+       "E": "[picture] an open laptop computer on a table"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        74
+       ]
+      }
+     },
+     {
+      "n": 5,
+      "zh": "",
+      "options": {
+       "A": "[picture] a smiling little girl peeking out from under a blanket, other children beside her",
+       "B": "[picture] tall residential high-rise buildings",
+       "C": "[picture] a man and a woman in business suits shaking hands in front of an elevator",
+       "D": "[picture] a smiling girl raising both hands at a desk in a classroom, a boy sitting behind her",
+       "E": "[picture] an open laptop computer on a table"
+      },
+      "transcript_zh": "男：你的桌子上有什么？ 女：我的桌子上有一个电脑。",
+      "answer": "E",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        55
+       ]
+      }
+     },
+     {
+      "n": 6,
+      "zh": "",
+      "options": {
+       "A": "[picture] a smiling little girl peeking out from under a blanket, other children beside her",
+       "B": "[picture] tall residential high-rise buildings",
+       "C": "[picture] a man and a woman in business suits shaking hands in front of an elevator",
+       "D": "[picture] a smiling girl raising both hands at a desk in a classroom, a boy sitting behind her",
+       "E": "[picture] an open laptop computer on a table"
+      },
+      "transcript_zh": "男：你女儿呢？ 女：在那儿，她在桌子下面。",
+      "answer": "A",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        55
+       ]
+      }
+     },
+     {
+      "n": 7,
+      "zh": "",
+      "options": {
+       "A": "[picture] a smiling little girl peeking out from under a blanket, other children beside her",
+       "B": "[picture] tall residential high-rise buildings",
+       "C": "[picture] a man and a woman in business suits shaking hands in front of an elevator",
+       "D": "[picture] a smiling girl raising both hands at a desk in a classroom, a boy sitting behind her",
+       "E": "[picture] an open laptop computer on a table"
+      },
+      "transcript_zh": "男：谁是大卫？ 女：我后面的那个人是大卫。",
+      "answer": "D",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        55
+       ]
+      }
+     },
+     {
+      "n": 8,
+      "zh": "",
+      "options": {
+       "A": "[picture] a smiling little girl peeking out from under a blanket, other children beside her",
+       "B": "[picture] tall residential high-rise buildings",
+       "C": "[picture] a man and a woman in business suits shaking hands in front of an elevator",
+       "D": "[picture] a smiling girl raising both hands at a desk in a classroom, a boy sitting behind her",
+       "E": "[picture] an open laptop computer on a table"
+      },
+      "transcript_zh": "女：李老师家在后面吗？ 男：不是，李老师家在前面。",
+      "answer": "B",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        55
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "一、听力 第三部分",
+    "type_zh": "听力 第三部分",
+    "instruction_zh": "第9–12题：听句子，回答问题",
+    "instruction_en": "Questions 9-12: Listen to the sentences and answer the questions.",
+    "items": [
+     {
+      "n": "例",
+      "zh": "问：她下午去哪里？",
+      "pinyin": "Tā xiàwǔ qù nǎli?",
+      "transcript_zh": "下午我去商店，我想买一些水果。 问：她下午去哪里？",
+      "options": {
+       "A": "商店 shāngdiàn store",
+       "B": "医院 yīyuàn hospital",
+       "C": "学校 xuéxiào school"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        75
+       ]
+      }
+     },
+     {
+      "n": 9,
+      "zh": "问：桌子上有什么？",
+      "transcript_zh": "桌子上有一个杯子和一本书。 问：桌子上有什么？",
+      "options": {
+       "A": "椅子 yǐzi",
+       "B": "电脑 diànnǎo",
+       "C": "杯子和书 bēizi hé shū"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        55
+       ]
+      }
+     },
+     {
+      "n": 10,
+      "zh": "问：他／她想做什么？",
+      "transcript_zh": "我能看看你的书吗？ 问：他／她想做什么？",
+      "options": {
+       "A": "看书 kàn shū",
+       "B": "喝茶 hē chá",
+       "C": "写汉字 xiě Hànzì"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        55
+       ]
+      }
+     },
+     {
+      "n": 11,
+      "zh": "问：前面的人是谁？",
+      "transcript_zh": "前面那个人是谢朋的同学，他在学校工作。 问：前面的人是谁？",
+      "options": {
+       "A": "医生 yīshēng",
+       "B": "谢朋 Xiè Péng",
+       "C": "谢朋的同学 Xiè Péng de tóngxué"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        55
+       ]
+      }
+     },
+     {
+      "n": 12,
+      "zh": "问：桌子下面有什么？",
+      "transcript_zh": "我的小狗在那儿，桌子下面。 问：桌子下面有什么？",
+      "options": {
+       "A": "小猫 xiǎo māo",
+       "B": "小狗 xiǎo gǒu",
+       "C": "椅子 yǐzi"
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        55
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第一部分",
+    "type_zh": "阅读 第一部分",
+    "instruction_zh": "第13–17题：看图片，判断图片内容是否与提示词一致",
+    "instruction_en": "Questions 13-17: Look at the pictures and decide whether the given words are right or wrong.",
+    "items": [
+     {
+      "n": "例1",
+      "zh": "电视 diànshì television",
+      "picture_desc_en": "an open laptop computer",
+      "answer": "×",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        76
+       ]
+      }
+     },
+     {
+      "n": "例2",
+      "zh": "飞机 fēijī airplane",
+      "picture_desc_en": "an airplane in flight",
+      "answer": "√",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        76
+       ]
+      }
+     },
+     {
+      "n": 13,
+      "zh": "工作",
+      "pinyin": "gōngzuò",
+      "picture_desc_en": "a smiling woman in an apron at a shop counter handing something to a customer, a man in an apron behind her",
+      "answer": "√",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        56
+       ]
+      }
+     },
+     {
+      "n": 14,
+      "zh": "电脑",
+      "pinyin": "diànnǎo",
+      "picture_desc_en": "a thick hardcover book lying on a table",
+      "answer": "×",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        56
+       ]
+      }
+     },
+     {
+      "n": 15,
+      "zh": "请喝茶",
+      "pinyin": "qǐng hē chá",
+      "picture_desc_en": "a pitcher and two small tea cups on a tea tray",
+      "answer": "√",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        56
+       ]
+      }
+     },
+     {
+      "n": 16,
+      "zh": "在学校",
+      "pinyin": "zài xuéxiào",
+      "picture_desc_en": "a young woman looking at something in her hands in a supermarket aisle with shelves of goods",
+      "answer": "×",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        56
+       ]
+      }
+     },
+     {
+      "n": 17,
+      "zh": "桌子上",
+      "pinyin": "zhuōzi shang",
+      "picture_desc_en": "a cup of coffee, a tablet computer, a sheet of paper and a pen on a table top",
+      "answer": "√",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        56
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第二部分",
+    "type_zh": "阅读 第二部分",
+    "instruction_zh": "第18–22题：看问题，选择正确的回答",
+    "instruction_en": "Questions 18-22: Read the questions and choose the right answer to each of them.",
+    "items": [
+     {
+      "n": "例",
+      "zh": "你喝水吗？ Nǐ hē shuǐ ma? (Would you like some water?)",
+      "options": {
+       "A": "在那儿，桌子里面。 Zài nàr, zhuōzi lǐmiàn.",
+       "B": "好，请坐。 Hǎo, qǐng zuò.",
+       "C": "一个电脑和一本书。 Yí ge diànnǎo hé yì běn shū.",
+       "D": "她叫李月，是我的汉语老师。 Tā jiào Lǐ Yuè, shì wǒ de Hànyǔ lǎoshī.",
+       "E": "不是，我后面那个人是李朋。 Bú shì, wǒ hòumiàn nàge rén shì Lǐ Péng.",
+       "F": "好的，谢谢！ Hǎo de, xièxie!"
+      },
+      "answer": "F",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        77
+       ]
+      }
+     },
+     {
+      "n": 18,
+      "zh": "你好，我能坐这儿吗？",
+      "pinyin": "Nǐ hǎo, wǒ néng zuò zhèr ma?",
+      "options": {
+       "A": "在那儿，桌子里面。 Zài nàr, zhuōzi lǐmiàn.",
+       "B": "好，请坐。 Hǎo, qǐng zuò.",
+       "C": "一个电脑和一本书。 Yí ge diànnǎo hé yì běn shū.",
+       "D": "她叫李月，是我的汉语老师。 Tā jiào Lǐ Yuè, shì wǒ de Hànyǔ lǎoshī.",
+       "E": "不是，我后面那个人是李朋。 Bú shì, wǒ hòumiàn nàge rén shì Lǐ Péng.",
+       "F": "好的，谢谢！ Hǎo de, xièxie!"
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        57
+       ]
+      }
+     },
+     {
+      "n": 19,
+      "zh": "你的杯子呢？",
+      "pinyin": "Nǐ de bēizi ne?",
+      "options": {
+       "A": "在那儿，桌子里面。 Zài nàr, zhuōzi lǐmiàn.",
+       "B": "好，请坐。 Hǎo, qǐng zuò.",
+       "C": "一个电脑和一本书。 Yí ge diànnǎo hé yì běn shū.",
+       "D": "她叫李月，是我的汉语老师。 Tā jiào Lǐ Yuè, shì wǒ de Hànyǔ lǎoshī.",
+       "E": "不是，我后面那个人是李朋。 Bú shì, wǒ hòumiàn nàge rén shì Lǐ Péng.",
+       "F": "好的，谢谢！ Hǎo de, xièxie!"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        57
+       ]
+      }
+     },
+     {
+      "n": 20,
+      "zh": "你的桌子上有什么？",
+      "pinyin": "Nǐ de zhuōzi shang yǒu shénme?",
+      "options": {
+       "A": "在那儿，桌子里面。 Zài nàr, zhuōzi lǐmiàn.",
+       "B": "好，请坐。 Hǎo, qǐng zuò.",
+       "C": "一个电脑和一本书。 Yí ge diànnǎo hé yì běn shū.",
+       "D": "她叫李月，是我的汉语老师。 Tā jiào Lǐ Yuè, shì wǒ de Hànyǔ lǎoshī.",
+       "E": "不是，我后面那个人是李朋。 Bú shì, wǒ hòumiàn nàge rén shì Lǐ Péng.",
+       "F": "好的，谢谢！ Hǎo de, xièxie!"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        57
+       ]
+      }
+     },
+     {
+      "n": 21,
+      "zh": "你后面那个人是谁？",
+      "pinyin": "Nǐ hòumiàn nàge rén shì shéi?",
+      "options": {
+       "A": "在那儿，桌子里面。 Zài nàr, zhuōzi lǐmiàn.",
+       "B": "好，请坐。 Hǎo, qǐng zuò.",
+       "C": "一个电脑和一本书。 Yí ge diànnǎo hé yì běn shū.",
+       "D": "她叫李月，是我的汉语老师。 Tā jiào Lǐ Yuè, shì wǒ de Hànyǔ lǎoshī.",
+       "E": "不是，我后面那个人是李朋。 Bú shì, wǒ hòumiàn nàge rén shì Lǐ Péng.",
+       "F": "好的，谢谢！ Hǎo de, xièxie!"
+      },
+      "answer": "D",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        57
+       ]
+      }
+     },
+     {
+      "n": 22,
+      "zh": "你前面那个人是李朋吗？",
+      "pinyin": "Nǐ qiánmiàn nàge rén shì Lǐ Péng ma?",
+      "options": {
+       "A": "在那儿，桌子里面。 Zài nàr, zhuōzi lǐmiàn.",
+       "B": "好，请坐。 Hǎo, qǐng zuò.",
+       "C": "一个电脑和一本书。 Yí ge diànnǎo hé yì běn shū.",
+       "D": "她叫李月，是我的汉语老师。 Tā jiào Lǐ Yuè, shì wǒ de Hànyǔ lǎoshī.",
+       "E": "不是，我后面那个人是李朋。 Bú shì, wǒ hòumiàn nàge rén shì Lǐ Péng.",
+       "F": "好的，谢谢！ Hǎo de, xièxie!"
+      },
+      "answer": "E",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        57
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第三部分",
+    "type_zh": "阅读 第三部分",
+    "instruction_zh": "第23–30题：看句子，选择正确的词语填空",
+    "instruction_en": "Questions 23-30: Read the sentences and choose the right words to fill in the brackets.",
+    "word_bank": [
+     [
+      "A 有 yǒu",
+      "B 在 zài",
+      "C 请 qǐng",
+      "D 名字 míngzi",
+      "E 能 néng"
+     ],
+     [
+      "F 不 bù",
+      "G 没 méi",
+      "H 很 hěn",
+      "I 多 duō"
+     ]
+    ],
+    "items": [
+     {
+      "n": "例",
+      "zh": "你叫什么（________）？",
+      "pinyin": "Nǐ jiào shénme (What is your name?)",
+      "answer": "D",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        78
+       ]
+      }
+     },
+     {
+      "n": 23,
+      "zh": "我（________）看看你的汉语书吗？",
+      "pinyin": "Wǒ ______ kànkan nǐ de Hànyǔ shū ma?",
+      "answer": "E",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        58
+       ]
+      }
+     },
+     {
+      "n": 24,
+      "zh": "我爸爸今天不（________）家。",
+      "pinyin": "Wǒ bàba jīntiān bù ______ jiā.",
+      "answer": "B",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        58
+       ]
+      }
+     },
+     {
+      "n": 25,
+      "zh": "您好，（________）喝茶。",
+      "pinyin": "Nín hǎo, ______ hē chá.",
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        58
+       ]
+      }
+     },
+     {
+      "n": 26,
+      "zh": "学校里（________）一个商店。",
+      "pinyin": "Xuéxiào li ______ yí ge shāngdiàn.",
+      "answer": "A",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        58
+       ]
+      }
+     },
+     {
+      "n": 27,
+      "zh": "你爸爸今年（________）大了？",
+      "pinyin": "Nǐ bàba jīnnián ______ dà le?",
+      "answer": "I",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        58
+       ]
+      }
+     },
+     {
+      "n": 28,
+      "zh": "请坐，这儿的中国菜（________）好吃。",
+      "pinyin": "Qǐng zuò, zhèr de Zhōngguó cài ______ hǎo chī.",
+      "answer": "H",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        58
+       ]
+      }
+     },
+     {
+      "n": 29,
+      "zh": "他（________）是学生，他是老师。",
+      "pinyin": "Tā ______ shì xuésheng, tā shì lǎoshī.",
+      "answer": "F",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        123
+       ]
+      }
+     },
+     {
+      "n": 30,
+      "zh": "我的桌子上（________）有电脑。",
+      "pinyin": "Wǒ de zhuōzi shang ______ yǒu diànnǎo.",
+      "answer": "G",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        58
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "三、语音 第一部分",
+    "type_zh": "语音 第一部分 听力",
+    "instruction_zh": "第1–8题：听录音，从听到的三个词语中选出不是双音节叠音词的一个",
+    "instruction_en": "Questions 1-8: Listen to the recording. Among the three words you hear, mark the one that is not a dissyllabic word with reduplicated syllables.",
+    "items": [
+     {
+      "n": 1,
+      "zh": "A　B　C",
+      "options": {
+       "A": "xīngxing（星星）",
+       "B": "háizi（孩子）",
+       "C": "nǎinai（奶奶）"
+      },
+      "transcript_zh": "A xīngxing（星星）　B háizi（孩子）　C nǎinai（奶奶）",
+      "answer": "B",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        59
+       ]
+      }
+     },
+     {
+      "n": 2,
+      "zh": "A　B　C",
+      "options": {
+       "A": "jiějie（姐姐）",
+       "B": "mèimei（妹妹）",
+       "C": "zǎoshang（早上）"
+      },
+      "transcript_zh": "A jiějie（姐姐）　B mèimei（妹妹）　C zǎoshang（早上）",
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        59
+       ]
+      }
+     },
+     {
+      "n": 3,
+      "zh": "A　B　C",
+      "options": {
+       "A": "péngyou（朋友）",
+       "B": "kànkan（看看）",
+       "C": "wènwen（问问）"
+      },
+      "transcript_zh": "A péngyou（朋友）　B kànkan（看看）　C wènwen（问问）",
+      "answer": "A",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        59
+       ]
+      }
+     },
+     {
+      "n": 4,
+      "zh": "A　B　C",
+      "options": {
+       "A": "lǎolao（姥姥）",
+       "B": "gēge（哥哥）",
+       "C": "késou（咳嗽）"
+      },
+      "transcript_zh": "A lǎolao（姥姥）　B gēge（哥哥）　C késou（咳嗽）",
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        59
+       ]
+      }
+     },
+     {
+      "n": 5,
+      "zh": "A　B　C",
+      "options": {
+       "A": "māma（妈妈）",
+       "B": "dìdi（弟弟）",
+       "C": "qīngchu（清楚）"
+      },
+      "transcript_zh": "A māma（妈妈）　B dìdi（弟弟）　C qīngchu（清楚）",
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        59
+       ]
+      }
+     },
+     {
+      "n": 6,
+      "zh": "A　B　C",
+      "options": {
+       "A": "bàba（爸爸）",
+       "B": "tóufa（头发）",
+       "C": "gūgu（姑姑）"
+      },
+      "transcript_zh": "A bàba（爸爸）　B tóufa（头发）　C gūgu（姑姑）",
+      "answer": "B",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        59
+       ]
+      }
+     },
+     {
+      "n": 7,
+      "zh": "A　B　C",
+      "options": {
+       "A": "xiǎngxiang（想想）",
+       "B": "xièxie（谢谢）",
+       "C": "kèqi（客气）"
+      },
+      "transcript_zh": "A xiǎngxiang（想想）　B xièxie（谢谢）　C kèqi（客气）",
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        59
+       ]
+      }
+     },
+     {
+      "n": 8,
+      "zh": "A　B　C",
+      "options": {
+       "A": "rènshi（认识）",
+       "B": "shūshu（叔叔）",
+       "C": "xiěxie（写写）"
+      },
+      "transcript_zh": "A rènshi（认识）　B shūshu（叔叔）　C xiěxie（写写）",
+      "answer": "A",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        59
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "三、语音 第二部分",
+    "type_zh": "语音 第二部分 听力",
+    "instruction_zh": "第9–16题：听录音，给下列词语标注声调",
+    "instruction_en": "Questions 9-16: Listen to the recording and add the tone marks to the following words.",
+    "items": [
+     {
+      "n": 9,
+      "zh": "zhuozi　yizi",
+      "transcript_zh": "zhuōzi（桌子）　yǐzi（椅子）",
+      "answer": "zhuōzi　yǐzi",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        59
+       ]
+      }
+     },
+     {
+      "n": 10,
+      "zh": "baozi　jiaozi",
+      "transcript_zh": "bāozi（包子）　jiǎozi（饺子）",
+      "answer": "bāozi　jiǎozi",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        59
+       ]
+      }
+     },
+     {
+      "n": 11,
+      "zh": "haizi　sangzi",
+      "transcript_zh": "háizi（孩子）　sǎngzi（嗓子）",
+      "answer": "háizi　sǎngzi",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        59
+       ]
+      }
+     },
+     {
+      "n": 12,
+      "zh": "shitou　shetou",
+      "transcript_zh": "shítou（石头）　shétou（舌头）",
+      "answer": "shítou　shétou",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        59
+       ]
+      }
+     },
+     {
+      "n": 13,
+      "zh": "litou　waitou",
+      "transcript_zh": "lǐtou（里头）　wàitou（外头）",
+      "answer": "lǐtou　wàitou",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        59
+       ]
+      }
+     },
+     {
+      "n": 14,
+      "zh": "zanmen　renmen",
+      "transcript_zh": "zánmen（咱们）　rénmen（人们）",
+      "answer": "zánmen　rénmen",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        59
+       ]
+      }
+     },
+     {
+      "n": 15,
+      "zh": "women　tamen",
+      "transcript_zh": "wǒmen（我们）　tāmen（他们）",
+      "answer": "wǒmen　tāmen",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        59
+       ]
+      }
+     },
+     {
+      "n": 16,
+      "zh": "beizi　yangzi",
+      "transcript_zh": "bēizi（杯子）　yàngzi（样子）",
+      "answer": "bēizi　yàngzi",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        59
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "四、汉字 第一部分",
+    "type_zh": "汉字 偏旁归类",
+    "instruction_zh": "第1–2题：看汉字，找出含有下列偏旁的汉字",
+    "instruction_en": "Questions 1-2: Look at the characters and group the characters with the same radical.",
+    "word_bank": [
+     [
+      "A 视",
+      "B 团",
+      "C 园",
+      "D 祝"
+     ],
+     [
+      "E 礼",
+      "F 祥",
+      "G 因",
+      "H 国"
+     ]
+    ],
+    "items": [
+     {
+      "n": 1,
+      "zh": "囗：________",
+      "answer": "B C G H",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        60
+       ]
+      }
+     },
+     {
+      "n": 2,
+      "zh": "礻：________",
+      "answer": "A D E F",
+      "answer_ref": {
+       "book": "workbook_answers",
+       "pages": [
+        60
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "四、汉字 第二部分",
+    "type_zh": "汉字 写独体字",
+    "instruction_zh": "第3题：看笔顺，写独体字",
+    "instruction_en": "Question 3: Look at the stroke order and practice writing the single-component characters.",
+    "items": [
+     {
+      "n": "3-上",
+      "zh": "上 shàng（笔顺：丨 → ⺊ → 上）"
+     },
+     {
+      "n": "3-下",
+      "zh": "下 xià（笔顺：一 → 丅 → 下）"
+     },
+     {
+      "n": "3-本",
+      "zh": "本 běn（笔顺：一 → 十 → 才 → 木 → 本）"
+     },
+     {
+      "n": "3-末",
+      "zh": "末 mò（笔顺图5步：一 → 二 → … → 末）"
+     }
+    ]
+   }
+  ],
+  "answers_ref": {
+   "book": "workbook_answers",
+   "pages": [
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60
+   ]
+  }
+ },
+ "unclear": [
+  "Сурах бичиг PDF х.92 课文1: «杯子在桌子里。» (пиньинь «Bēizi zài zhuōzi li.»), English Version «It’s in the desk.» — номд байгаагаар.",
+  "Сурах бичиг PDF х.95 练习2 асуулт 3 «桌子里面有什么？ Zhuōzi lǐmiàn yǒu shénme?» — 课文-д «里面» биш «里» хэрэглэгдсэн; номд байгаагаар.",
+  "Сурах бичиг PDF х.96 练习4 (2) пиньинь «Wǒ mǎi yī ______ bēizi.» — «一» 1-р хөгөөр (yī) хэвлэгдсэн, бусад газарт хөг өөрчлөгдсөн хэлбэр (yí/yì) — номд байгаагаар.",
+  "Сурах бичиг PDF х.95 练习3 描述图片 — зурган дээрх хоосон зайтай өгүүлбэрүүдийн пиньинь зөвхөн хэвлэгдсэн үгсэд (yǒu, hé, Wǒ néng … ma?, Tā zài … gōngzuò.) байгаа; зургийн тайлбар (picture_desc_en) зургаас товч дүрсэлсэн.",
+  "Сурах бичиг PDF х.96 轻声 хүснэгтийн хөгийн муруйн зураг (声调模式图) ба 桌子/盘子/椅子/裤子 зургууд — текстээр дүрслэх боломжгүй, rows-д хүснэгтийн бичвэр л, notes_en-д «[图]» тэмдэглэл.",
+  "Сурах бичиг PDF х.98 独体字 上/下/本/末-ийн эртний хэлбэрийн хувьсал (字形演变图) болон 田字格 зурлагын дараалал зөвхөн зурагт; 末-ийн дунд алхмууд Unicode-оор бүрэн дүрслэгдэхгүй тул «…» гэж бичсэн. Дасгалын ном PDF х.80 мөн адил.",
+  "Сурах бичиг PDF х.99 全包围结构 хүснэгтийн «图解» багана зөвхөн зураг (四, 国 хүрээтэй) — «[图]».",
+  "Сурах бичиг PDF х.100 小组活动 хүснэгт: 1-р мөр жишээ (大卫), доор 3 хоосон мөр — example_zh-д товч тэмдэглэсэн.",
+  "Сурах бичиг PDF х.100 补充生词 «后面» — 生词 7-8 (х.93)-д аль хэдийн байгаа; англи тайлбар «behind, left right» (таслалгүй) гэж хэвлэгдсэн — instruction_en-д «behind, left, right».",
+  "Энэ хичээлд 课堂用语 (classroom_expressions) хэсэг сурах бичгийн PDF х.92–101-д байхгүй.",
+  "Аудио файлын нэр мэдэгдэхгүй тул audio талбар орхисон. Номын CD тэмдэг: сурах бичиг 课文1–3 = 10-1／10-2／10-3; 拼音 轻声 10-4; 叠音词 10-5; 后缀 10-6; дасгалын ном 听力 10-1; 语音 10-2.",
+  "Дасгалын номын хариулт ХОЁР эх сурвалжид: тусдаа хариултын ном (workbook_answers PDF х.54–60) ба багшийн номын хавсралтын 参考答案 (teacher PDF х.123). Зөрүү ганц: 29-р асуулт — хариултын ном PDF х.58 «E» (能), багшийн ном «27–30: I H F G» → 29 = F (不). E аль хэдийн 23-т хэрэглэгдсэн. answer-д багшийн номын «F»-г оруулж answer_ref = teacher х.123; бусад бүх хариулт хоёр эх сурвалжид тохирч байна (1–4 √√×√, 5–8 EADB, 9–12 CACB, 13–17 √×√×√, 18–22 BACDE, 23–26 EBCA, 27–28 I H, 30 G, 语音 1–8 BCACCBCA, 汉字 BCGH／ADEF).",
+  "Дасгалын номын 听力 болон 语音 бичвэр (transcript_zh, 语音 1–8 сонголтуудын пиньинь/ханз, 9–16 ханз) — багшийн номын хавсралт PDF х.122–123-аас; дасгалын номд 语音 1–8-д зөвхөн A/B/C үсэг хэвлэгдсэн.",
+  "Дасгалын номын 三、语音 болон 四、汉字 хэсгийн дугаарлалт 1-ээс дахин эхэлдэг (номд байгаагаар).",
+  "Дасгалын ном PDF х.77 阅读 第二部分 сонголт A «在那儿，桌子里面。» — дасгалын номд «里面» хэрэглэгдсэн (сурах бичгийн 课文1-д «里»).",
+  "Багшийн ном PDF х.65 语言点(2)-ийн 导入: «教师可利用本课热身图片E进行导入» — 热身 E зурагт хүүхэд + эрэгтэй + эмэгтэй (3 хүн) — номд байгаагаар.",
+  "Багшийн ном PDF х.67–68 课文 асуултуудад тусдаа хариулт байхгүй, 课文1–2-т нэгдсэн «叙述体» бичвэр л бий (teacher.steps «4 课文») — text_questions-д a_zh оруулаагүй.",
+  "Багшийн ном 汉字 补充练习 «辨认下列汉字并组词» (上/下、前/后、桌/电、杯/校) — хариулт хэвлэгдээгүй; teacher.steps «6 汉字»-д.",
+  "Сурах бичгийн 练习2 回答问题, 练习3 描述图片, 练习4 量词填空 — хариулт хэвлэгдээгүй.",
+  "Зургийн тайлбарууд (picture_desc_en, pictures_desc_en, options «[picture]») зургаас товч, объектив дүрсэлсэн."
+ ],
+ "verified_pages": [
+  54,
+  55,
+  56,
+  57,
+  58,
+  59,
+  60,
+  63,
+  64,
+  65,
+  66,
+  67,
+  68,
+  69,
+  73,
+  74,
+  75,
+  76,
+  77,
+  78,
+  79,
+  80,
+  92,
+  93,
+  94,
+  95,
+  96,
+  97,
+  98,
+  99,
+  100,
+  101,
+  122,
+  123
+ ],
+ "schema_version": 1
+}
