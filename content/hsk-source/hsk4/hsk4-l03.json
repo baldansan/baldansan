@@ -1,0 +1,2341 @@
+{
+ "level": "hsk4",
+ "lesson": 3,
+ "book": "HSK4A",
+ "title_zh": "经理对我印象不错",
+ "title_pinyin": "Jīnglǐ duì wǒ yìnxiàng búcuò",
+ "title_en": "I’ve made a good impression on the manager",
+ "textbook": {
+  "ref": {
+   "book": "textbook",
+   "pages": [
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48
+   ]
+  },
+  "warmup": [
+   {
+    "instruction_zh": "给下面的词语选择对应的图片",
+    "instruction_en": "Match the pictures with the words.",
+    "items": [
+     "①紧张 jǐnzhāng",
+     "②面试 miànshì",
+     "③律师 lǜshī",
+     "④笔试 bǐshì",
+     "⑤应聘 yìngpìn",
+     "⑥通知 tōngzhī"
+    ],
+    "pictures_desc_en": [
+     "A: a woman with glasses in a black robe holding an open red book, standing in an office",
+     "B: two women pinning up large recruitment notices (招聘信息) on a board",
+     "C: a crowded hall of young people in front of long tables with papers",
+     "D: a middle-aged man in a suit reading a folder across a desk from a young woman seen from behind",
+     "E: students writing at desks in an exam room",
+     "F: a young man in a suit covering his mouth with his hand, looking anxious"
+    ]
+   },
+   {
+    "instruction_zh": "你理想中的工作是什么样的？为什么？",
+    "instruction_en": "What’s your ideal job like? Why?",
+    "items": [
+     "月收入 yuè shōurù | 同事 | 交通 jiāotōng | 上班时间 | 专业 zhuānyè",
+     "<5千 □ | 和朋友一样 □ | 地铁 □ | 8:00–16:00 □ | 一样 □",
+     "5千–1万 □ | 不常聊天儿 □ | 公共汽车 □ | 9:00–17:00 □ | 有一点儿关系 □",
+     "1万–2万 □ | 性格不一样 □ | 骑车 □ | 10:00–18:00 □ |（有一点儿关系）",
+     ">2万 □ | 爱好差不多 □ | 走路 □ | 不用坐班 □ | 一点儿不一样 □"
+    ]
+   }
+  ],
+  "texts": [
+   {
+    "n": 1,
+    "title_zh": "小夏和小雨聊小雨面试的情况",
+    "kind": "dialogue",
+    "lines": [
+     {
+      "speaker": "小夏",
+      "zh": "你上午的面试怎么样？",
+      "pinyin": "Nǐ shàngwǔ de miànshì zěnmeyàng?"
+     },
+     {
+      "speaker": "小雨",
+      "zh": "还可以，他们问的问题都挺容易的，就是我有点儿紧张。",
+      "pinyin": "Hái kěyǐ, tāmen wèn de wèntí dōu tǐng róngyì de, jiù shì wǒ yǒudiǎnr jǐnzhāng."
+     },
+     {
+      "speaker": "小夏",
+      "zh": "面试的时候，一定要对自己有信心，要相信自己的能力。",
+      "pinyin": "Miànshì de shíhou, yídìng yào duì zìjǐ yǒu xìnxīn, yào xiāngxìn zìjǐ de nénglì."
+     },
+     {
+      "speaker": "小雨",
+      "zh": "你说的对！3月15号上午8点在学校体育馆还有一个招聘会，你去吗？",
+      "pinyin": "Nǐ shuō de duì! Sānyuè shíwǔ hào shàngwǔ bā diǎn zài xuéxiào tǐyùguǎn hái yǒu yí ge zhāopìnhuì, nǐ qù ma?"
+     },
+     {
+      "speaker": "小夏",
+      "zh": "我还没决定呢。",
+      "pinyin": "Wǒ hái méi juédìng ne."
+     },
+     {
+      "speaker": "小雨",
+      "zh": "听说这次招聘会提供的工作机会很多，我们一起去看看吧。",
+      "pinyin": "Tīngshuō zhè cì zhāopìnhuì tígōng de gōngzuò jīhuì hěn duō, wǒmen yìqǐ qù kànkan ba."
+     }
+    ],
+    "new_words": [
+     {
+      "n": 1,
+      "zh": "挺",
+      "pinyin": "tǐng",
+      "pos": "adv.",
+      "en": "quite, rather",
+      "text": 1
+     },
+     {
+      "n": 2,
+      "zh": "紧张",
+      "pinyin": "jǐnzhāng",
+      "pos": "adj.",
+      "en": "nervous",
+      "text": 1
+     },
+     {
+      "n": 3,
+      "zh": "信心",
+      "pinyin": "xìnxīn",
+      "pos": "n.",
+      "en": "confidence",
+      "text": 1
+     },
+     {
+      "n": 4,
+      "zh": "能力",
+      "pinyin": "nénglì",
+      "pos": "n.",
+      "en": "ability, competence",
+      "text": 1
+     },
+     {
+      "n": 5,
+      "zh": "招聘",
+      "pinyin": "zhāopìn",
+      "pos": "v.",
+      "en": "to recruit",
+      "text": 1
+     },
+     {
+      "n": 6,
+      "zh": "提供",
+      "pinyin": "tígōng",
+      "pos": "v.",
+      "en": "to provide",
+      "text": 1
+     }
+    ],
+    "proper_nouns": [
+     {
+      "zh": "小雨",
+      "pinyin": "Xiǎoyǔ",
+      "en": "Xiaoyu, name of a person"
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "title_zh": "马经理和小林聊招聘的事情",
+    "kind": "dialogue",
+    "lines": [
+     {
+      "speaker": "马经理",
+      "zh": "小林，这次招聘不是小李负责吗？",
+      "pinyin": "Xiǎo Lín, zhè cì zhāopìn bú shì Xiǎo Lǐ fùzé ma?"
+     },
+     {
+      "speaker": "小林",
+      "zh": "本来是小李负责的，但是他突然生病住院了，所以就交给我来做了。",
+      "pinyin": "Běnlái shì Xiǎo Lǐ fùzé de, dànshì tā tūrán shēng bìng zhù yuàn le, suǒyǐ jiù jiāogěi wǒ lái zuò le."
+     },
+     {
+      "speaker": "马经理",
+      "zh": "哦，这次应聘的人多吗？",
+      "pinyin": "Ò, zhè cì yìngpìn de rén duō ma?"
+     },
+     {
+      "speaker": "小林",
+      "zh": "经理，这次来应聘的一共有15人。经过笔试和面试，有两个不错。这是他们的材料，您看看。",
+      "pinyin": "Jīnglǐ, zhè cì lái yìngpìn de yígòng yǒu shíwǔ rén. Jīngguò bǐshì hé miànshì, yǒu liǎng ge búcuò. Zhè shì tāmen de cáiliào, nín kànkan."
+     },
+     {
+      "speaker": "马经理",
+      "zh": "这两个人的能力都比较符合我们的要求。你通知他们下周一上午九点来我办公室吧。",
+      "pinyin": "Zhè liǎng ge rén de nénglì dōu bǐjiào fúhé wǒmen de yāoqiú. Nǐ tōngzhī tāmen xià zhōuyī shàngwǔ jiǔ diǎn lái wǒ bàngōngshì ba."
+     },
+     {
+      "speaker": "小林",
+      "zh": "好的，那我马上跟他们联系。",
+      "pinyin": "Hǎo de, nà wǒ mǎshàng gēn tāmen liánxì."
+     }
+    ],
+    "new_words": [
+     {
+      "n": 7,
+      "zh": "负责",
+      "pinyin": "fùzé",
+      "pos": "v.",
+      "en": "to be in charge of",
+      "text": 2
+     },
+     {
+      "n": 8,
+      "zh": "本来",
+      "pinyin": "běnlái",
+      "pos": "adv.",
+      "en": "originally, at first",
+      "text": 2
+     },
+     {
+      "n": 9,
+      "zh": "应聘",
+      "pinyin": "yìngpìn",
+      "pos": "v.",
+      "en": "to apply for a job",
+      "text": 2
+     },
+     {
+      "n": 10,
+      "zh": "材料",
+      "pinyin": "cáiliào",
+      "pos": "n.",
+      "en": "data, material",
+      "text": 2
+     },
+     {
+      "n": 11,
+      "zh": "符合",
+      "pinyin": "fúhé",
+      "pos": "v.",
+      "en": "to accord with",
+      "text": 2
+     },
+     {
+      "n": 12,
+      "zh": "通知",
+      "pinyin": "tōngzhī",
+      "pos": "v.",
+      "en": "to inform",
+      "text": 2
+     }
+    ],
+    "proper_nouns": [
+     {
+      "zh": "马",
+      "pinyin": "Mǎ",
+      "en": "Ma, a Chinese family name"
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "title_zh": "小林和王静聊王静的工作情况",
+    "kind": "dialogue",
+    "lines": [
+     {
+      "speaker": "小林",
+      "zh": "王静，好久不见了！大学毕业后就没联系了，你现在在哪儿工作呢？",
+      "pinyin": "Wáng Jìng, hǎojiǔ bú jiàn le! Dàxué bì yè hòu jiù méi liánxì le, nǐ xiànzài zài nǎr gōngzuò ne?"
+     },
+     {
+      "speaker": "王静",
+      "zh": "我一毕业就去上海当律师了。",
+      "pinyin": "Wǒ yí bì yè jiù qù Shànghǎi dāng lǜshī le."
+     },
+     {
+      "speaker": "小林",
+      "zh": "你对现在的工作一定非常满意吧？",
+      "pinyin": "Nǐ duì xiànzài de gōngzuò yídìng fēicháng mǎnyì ba?"
+     },
+     {
+      "speaker": "王静",
+      "zh": "我很喜欢现在的工作，因为我学的就是法律专业，而且同事们都很喜欢我。另外，收入也不错。",
+      "pinyin": "Wǒ hěn xǐhuan xiànzài de gōngzuò, yīnwèi wǒ xué de jiù shì fǎlǜ zhuānyè, érqiě tóngshìmen dōu hěn xǐhuan wǒ. Lìngwài, shōurù yě búcuò."
+     },
+     {
+      "speaker": "小林",
+      "zh": "星期天咱们同学聚会，你能来参加吗？",
+      "pinyin": "Xīngqītiān zánmen tóngxué jùhuì, nǐ néng lái cānjiā ma?"
+     },
+     {
+      "speaker": "王静",
+      "zh": "能来。虽然这次来北京，时间安排得很紧张，但我一定借这次机会去跟大家见见面。",
+      "pinyin": "Néng lái. Suīrán zhè cì lái Běijīng, shíjiān ānpái de hěn jǐnzhāng, dàn wǒ yídìng jiè zhè cì jīhuì qù gēn dàjiā jiànjian miàn."
+     }
+    ],
+    "new_words": [
+     {
+      "n": 13,
+      "zh": "律师",
+      "pinyin": "lǜshī",
+      "pos": "n.",
+      "en": "lawyer",
+      "text": 3
+     },
+     {
+      "n": 14,
+      "zh": "专业",
+      "pinyin": "zhuānyè",
+      "pos": "n.",
+      "en": "major, specialty",
+      "text": 3
+     },
+     {
+      "n": 15,
+      "zh": "另外",
+      "pinyin": "lìngwài",
+      "pos": "conj.",
+      "en": "besides, in addition",
+      "text": 3
+     },
+     {
+      "n": 16,
+      "zh": "收入",
+      "pinyin": "shōurù",
+      "pos": "n.",
+      "en": "income",
+      "text": 3
+     },
+     {
+      "n": 17,
+      "zh": "咱们",
+      "pinyin": "zánmen",
+      "pos": "pron.",
+      "en": "we, us",
+      "text": 3
+     },
+     {
+      "n": 18,
+      "zh": "安排",
+      "pinyin": "ānpái",
+      "pos": "v.",
+      "en": "to arrange",
+      "text": 3
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "kind": "narrative",
+    "lines": [
+     {
+      "zh": "面试的时候，经理对我印象不错，还通知我明天就可以上班了。",
+      "pinyin": "Miànshì de shíhou, jīnglǐ duì wǒ yìnxiàng búcuò, hái tōngzhī wǒ míngtiān jiù kěyǐ shàng bān le."
+     },
+     {
+      "zh": "真没想到，找工作这么顺利。",
+      "pinyin": "Zhēn méi xiǎngdào, zhǎo gōngzuò zhème shùnlì."
+     },
+     {
+      "zh": "你想知道面试需要注意什么吗？",
+      "pinyin": "Nǐ xiǎng zhīdào miànshì xūyào zhùyì shénme ma?"
+     },
+     {
+      "zh": "首先，要穿正式的衣服，这会给面试者留下一个好的印象，让他觉得你是一个认真的人。",
+      "pinyin": "Shǒuxiān, yào chuān zhèngshì de yīfu, zhè huì gěi miànshìzhě liúxià yí ge hǎo de yìnxiàng, ràng tā juéde nǐ shì yí ge rènzhēn de rén."
+     },
+     {
+      "zh": "其次，应聘时不要紧张。",
+      "pinyin": "Qícì, yìngpìn shí búyào jǐnzhāng."
+     },
+     {
+      "zh": "回答问题时，说得不要太快，声音也不要太小，要相信自己有能力做好。",
+      "pinyin": "Huídá wèntí shí, shuō de búyào tài kuài, shēngyīn yě búyào tài xiǎo, yào xiāngxìn zìjǐ yǒu nénglì zuòhǎo."
+     },
+     {
+      "zh": "当然，最重要的是回答问题要诚实。",
+      "pinyin": "Dāngrán, zuì zhòngyào de shì huídá wèntí yào chéngshí."
+     }
+    ],
+    "new_words": [
+     {
+      "n": 19,
+      "zh": "首先",
+      "pinyin": "shǒuxiān",
+      "pos": "pron.",
+      "en": "first",
+      "text": 4
+     },
+     {
+      "n": 20,
+      "zh": "正式",
+      "pinyin": "zhèngshì",
+      "pos": "adj.",
+      "en": "formal",
+      "text": 4
+     },
+     {
+      "n": 21,
+      "zh": "留",
+      "pinyin": "liú",
+      "pos": "v.",
+      "en": "to leave",
+      "text": 4
+     },
+     {
+      "n": 22,
+      "zh": "其次",
+      "pinyin": "qícì",
+      "pos": "pron.",
+      "en": "second, next",
+      "text": 4
+     },
+     {
+      "n": 23,
+      "zh": "诚实",
+      "pinyin": "chéngshí",
+      "pos": "adj.",
+      "en": "honest",
+      "text": 4
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "kind": "narrative",
+    "lines": [
+     {
+      "zh": "第一印象就是在第一次见面时给别人留下的印象。",
+      "pinyin": "Dì yī yìnxiàng jiù shì zài dì yī cì jiàn miàn shí gěi biérén liúxià de yìnxiàng."
+     },
+     {
+      "zh": "虽然第一印象不总是对的，但如果想改变却很困难。",
+      "pinyin": "Suīrán dì yī yìnxiàng bù zǒng shì duì de, dàn rúguǒ xiǎng gǎibiàn què hěn kùnnan."
+     },
+     {
+      "zh": "你给别人的第一印象会影响他们以后对你的感觉和判断。",
+      "pinyin": "Nǐ gěi biérén de dì yī yìnxiàng huì yǐngxiǎng tāmen yǐhòu duì nǐ de gǎnjué hé pànduàn."
+     },
+     {
+      "zh": "所以，给第一次见面的同事留下好的印象，以后的工作可能会更顺利；给第一次见面的顾客留下好的印象，你可能会卖出更多的东西。",
+      "pinyin": "Suǒyǐ, gěi dì yī cì jiàn miàn de tóngshì liúxià hǎo de yìnxiàng, yǐhòu de gōngzuò kěnéng huì gèng shùnlì; gěi dì yī cì jiàn miàn de gùkè liúxià hǎo de yìnxiàng, nǐ kěnéng huì màichū gèng duō de dōngxi."
+     },
+     {
+      "zh": "但是，如果第一次见面给别人留下像不准时这样的坏印象，那么以后就很难让别人相信你。",
+      "pinyin": "Dànshì, rúguǒ dì yī cì jiàn miàn gěi biérén liúxià xiàng bù zhǔnshí zhèyàng de huài yìnxiàng, nàme yǐhòu jiù hěn nán ràng biérén xiāngxìn nǐ."
+     },
+     {
+      "zh": "所以不管是上课、上班，还是与别人约会，准时都非常重要。",
+      "pinyin": "Suǒyǐ bùguǎn shì shàng kè、shàng bān, háishi yǔ biérén yuēhuì, zhǔnshí dōu fēicháng zhòngyào."
+     }
+    ],
+    "new_words": [
+     {
+      "n": 24,
+      "zh": "改变",
+      "pinyin": "gǎibiàn",
+      "pos": "v.",
+      "en": "to change",
+      "text": 5
+     },
+     {
+      "n": 25,
+      "zh": "感觉",
+      "pinyin": "gǎnjué",
+      "pos": "n.",
+      "en": "feeling",
+      "text": 5
+     },
+     {
+      "n": 26,
+      "zh": "判断",
+      "pinyin": "pànduàn",
+      "pos": "v.",
+      "en": "to judge, to decide",
+      "text": 5
+     },
+     {
+      "n": 27,
+      "zh": "顾客",
+      "pinyin": "gùkè",
+      "pos": "n.",
+      "en": "customer, client",
+      "text": 5
+     },
+     {
+      "n": 28,
+      "zh": "准时",
+      "pinyin": "zhǔnshí",
+      "pos": "adj.",
+      "en": "punctual, on time",
+      "text": 5
+     },
+     {
+      "n": 29,
+      "zh": "不管",
+      "pinyin": "bùguǎn",
+      "pos": "conj.",
+      "en": "no matter (what, how, etc.)",
+      "text": 5
+     },
+     {
+      "n": 30,
+      "zh": "与",
+      "pinyin": "yǔ",
+      "pos": "prep.",
+      "en": "with",
+      "text": 5
+     },
+     {
+      "n": 31,
+      "zh": "约会",
+      "pinyin": "yuēhuì",
+      "pos": "v.",
+      "en": "to date, to go to an appointment",
+      "text": 5
+     }
+    ]
+   }
+  ],
+  "grammar": [
+   {
+    "n": 1,
+    "title_zh": "挺",
+    "explanation_zh": "“挺”，副词，表示“很”的意思，常用结构“挺……的”。例如：",
+    "explanation_en": "The adverb “挺” means “quite, rather”, similar to “很”. It is often used in the structure “挺……的”. For example:",
+    "structure_rows": [
+     "挺……的"
+    ],
+    "examples": [
+     {
+      "n": 1,
+      "zh": "他们问的问题都挺容易的。"
+     },
+     {
+      "n": 2,
+      "zh": "这家店的东西挺好的，我经常来这儿买东西。"
+     },
+     {
+      "n": 3,
+      "zh": "我挺喜欢这个地方的，周围环境比以前住的地方安静很多。"
+     }
+    ],
+    "practice_instruction_zh": "练一练 完成句子 Complete the sentences.",
+    "practice": [
+     {
+      "n": 1,
+      "zh": "这几天________，你不用穿这么多衣服。",
+      "hint_zh": "（挺）"
+     },
+     {
+      "n": 2,
+      "zh": "那个房间又安静又干净，________。",
+      "hint_zh": "（挺）"
+     },
+     {
+      "n": 3,
+      "zh": "他们俩的性格差不多，________。",
+      "hint_zh": "（挺）"
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "title_zh": "本来",
+    "explanation_zh": "“本来”，副词，表示按道理应该这样；还可以表示“原先、原来”的意思。例如：",
+    "explanation_en": "The adverb “本来” indicates naturally, it goes without saying; it can also mean “originally, at first”. For example:",
+    "examples": [
+     {
+      "n": 1,
+      "zh": "这件事本来应该听他的。"
+     },
+     {
+      "n": 2,
+      "zh": "我本来不会开车，但现在开得特别好。"
+     },
+     {
+      "n": 3,
+      "zh": "（这次招聘）本来是小李负责的。"
+     }
+    ],
+    "practice_instruction_zh": "练一练 完成对话 Complete the dialogues.",
+    "practice": [
+     {
+      "n": 1,
+      "zh": "A：你怎么没去爬山呢？ B：________。",
+      "hint_zh": "（本来）"
+     },
+     {
+      "n": 2,
+      "zh": "A：附近那家银行5点就下班了！ B：那我不去了，________。",
+      "hint_zh": "（本来）"
+     },
+     {
+      "n": 3,
+      "zh": "A：________。 B：没关系，我从那儿打车回来很方便。",
+      "hint_zh": "（本来）"
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "title_zh": "另外",
+    "explanation_zh": "“另外”，代词，表示上文所说范围以外的人或事，常用“另外（+的）+数量（+名词）”或“另外+的（+名词）”两个结构。例如：（1）–（2）\n“另外”，副词，表示在上文所说范围以外，常跟“还”、“再”、“又”连用。例如：（3）–（4）\n“另外”，连词，表示“除此以外”的意思，可以连接分句、句子等。例如：（5）–（6）\n比一比 另外—另\n相同点：\n1. 两者都可做代词，表示上文所说范围以外的人或事。①\n他一边说谢谢，一边从手里拿出另外/另一本书。\n2. 两者都可做副词，表示在上文所说范围以外。②\n我今天晚上另外/另有安排，我们明天再一起吃饭吧。\n不同点：\n1. 表示第①个意思时，“另外”常用“另外（+的）+数量（+名词）”或“另外+的（+名词）”两个结构。“另外（+的）+数量（+名词）”里面“的”可加可不加；而“另”常用“另+数量（+名词）”结构，里面不加“的”。\n刚才马克把车借走了，你骑另外/另一辆吧。\n刚才马克把车借走了，你骑另外的一辆吧。\n刚才马克把车借走了，你骑另外的车吧。\n2. 表示第②个意思时，“另”常修饰单音节动词；“另外”没有这种限制。\n最近小雨太忙了，没时间帮你，你还是另外/另找别人吧。\n他这次来参加会议，不但帮我们解决了现在的问题，还另外提供了不少新的材料。\n3. “另外”可做连词；“另”没有这个用法。\n冬季应该注意多吃水果。另外，还要记得多喝水。",
+    "explanation_en": "The pronoun “另外” indicates the person(s) or thing(s) other than those that have been mentioned, often used in the structure “另外 (+ 的) + Num-M (+ N)” or “另外 + 的 (+ N)”. For example: (1)–(2)\nThe adverb “另外” means “beyond the scope mentioned previously”, often used together with “还/再/又”. For example: (3)–(4)\nThe conjunction “另外” means “besides”, used to connect clauses or sentences, etc. For example: (5)–(6)\nCompare 另外—另\nSimilarities:\n1. Both can be used as pronouns referring to the person(s) or thing(s) other than what has been mentioned.\n2. Both can be used as adverbs meaning “beyond the scope mentioned previously”.\nDifferences:\n1. In case ①, “另外” is often used in the structure “另外 (+ 的) + Num-M (+ N)” or “另外 + 的 (+ N)”. The first structure may or may not include “的”, but if “另外” is replaced by “另”, “的” won’t be used.\n2. In case ②, “另” usually modifies a monosyllabic verb, while “另外” has no such restriction.\n3. “另外” can be used as a conjunction, while “另” cannot.",
+    "structure_rows": [
+     "另外（+的）+数量（+名词）",
+     "另外+的（+名词）"
+    ],
+    "examples": [
+     {
+      "n": 1,
+      "zh": "前面车有点儿多，我们走另外一条路，不会迟到的。"
+     },
+     {
+      "n": 2,
+      "zh": "这件衣服有点儿大，你试试另外的那件吧。"
+     },
+     {
+      "n": 3,
+      "zh": "除了她说的，我另外又补充了几条意见。"
+     },
+     {
+      "n": 4,
+      "zh": "家里的空调坏了，咱们另外再买一个吧。"
+     },
+     {
+      "n": 5,
+      "zh": "我学的就是法律专业，而且同事们都很喜欢我。另外，收入也不错。"
+     },
+     {
+      "n": 6,
+      "zh": "现在上网买东西很方便，卖家可以把你买的东西送到你办公室或者家里。另外，还比较便宜。"
+     }
+    ],
+    "practice_instruction_zh": "练一练 完成对话 Complete the dialogues.／比一比 做一做 Drills 选词填空 Tick or cross（另外 | 另）——(1)(2) 为书中示例，已标出√/×。",
+    "practice": [
+     {
+      "n": 1,
+      "zh": "A：同学们在体育馆做什么？ B：________。",
+      "hint_zh": "（另外）"
+     },
+     {
+      "n": 2,
+      "zh": "A：你通知小王明天开会的时间了吗？ B：我让小夏告诉他了，________。",
+      "hint_zh": "（另外）"
+     },
+     {
+      "n": 3,
+      "zh": "A：你最近怎么总是生病呢？ B：________。",
+      "hint_zh": "（另外）"
+     },
+     {
+      "n": "做一做(1)",
+      "zh": "他叫马克，________一个同学叫安娜。",
+      "options": {
+       "A": "另外",
+       "B": "另"
+      },
+      "answer": "另外 √ | 另 √",
+      "answer_ref": {
+       "book": "textbook",
+       "pages": [
+        41
+       ]
+      }
+     },
+     {
+      "n": "做一做(2)",
+      "zh": "这次聚会需要买一些水果，________再准备一些啤酒。",
+      "options": {
+       "A": "另外",
+       "B": "另"
+      },
+      "answer": "另外 √ | 另 ×",
+      "answer_ref": {
+       "book": "textbook",
+       "pages": [
+        41
+       ]
+      }
+     },
+     {
+      "n": "做一做(3)",
+      "zh": "上个月经理去上海参加了________的一个重要会议。",
+      "options": {
+       "A": "另外",
+       "B": "另"
+      }
+     },
+     {
+      "n": "做一做(4)",
+      "zh": "等一会儿吧，我先看看菜单。________，给我来杯绿茶。",
+      "options": {
+       "A": "另外",
+       "B": "另"
+      }
+     },
+     {
+      "n": "做一做(5)",
+      "zh": "衬衫没问题，但是裤子颜色不太好，你________换一条吧。",
+      "options": {
+       "A": "另外",
+       "B": "另"
+      }
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "title_zh": "首先……其次……",
+    "explanation_zh": "“首先”和“其次”做代词，常用在书面语中搭配使用，表示按某个顺序列举事项。例如：（1）–（2）\n“首先”还可以做副词，表示“最先、最早”的意思。例如：（3）–（4）",
+    "explanation_en": "The pronouns “首先” and “其次” are often used in coordination with each other in written Chinese, indicating the sequence of the items enumerated. For example: (1)–(2)\n“首先” can also be used as an adverb, meaning “first of all, the earliest”. For example: (3)–(4)",
+    "examples": [
+     {
+      "n": 1,
+      "zh": "不管做什么事情，首先应该明白你为什么要做，其次要知道怎么做。"
+     },
+     {
+      "n": 2,
+      "zh": "首先，要穿正式的衣服，这会给面试者留下一个好的印象，让他觉得你是一个认真的人。其次，应聘时不要紧张。"
+     },
+     {
+      "n": 3,
+      "zh": "不管以后做什么工作，你首先应该有一个好身体。"
+     },
+     {
+      "n": 4,
+      "zh": "很多人遇到不明白的地方，首先想到的是上网查一查。"
+     }
+    ],
+    "practice_instruction_zh": "练一练 完成句子 Complete the sentences.",
+    "practice": [
+     {
+      "n": 1,
+      "zh": "要想学好汉语，________，其次，应该常常复习。",
+      "hint_zh": "（首先）"
+     },
+     {
+      "n": 2,
+      "zh": "我不同意你这么做，首先你不了解他，________。",
+      "hint_zh": "（其次）"
+     },
+     {
+      "n": 3,
+      "zh": "每次游泳前________。",
+      "hint_zh": "（首先）"
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "title_zh": "不管",
+    "explanation_zh": "“不管”，连词，表示在任何假设的情况下，结论或结果都不变。常跟“什么”、“怎么”、“谁”、“哪儿”、“多（么）”等疑问代词连用，还常跟“还是”或者正反句式搭配使用，后一个分句常有“都”等词语。例如：",
+    "explanation_en": "The conjunction “不管” indicates that the conclusion or result won’t change under any assumed circumstances, often used together with interrogative pronouns such as “什么”, “怎么”, “谁”, “哪儿” and “多(么)”. It is often collocated with “还是” or an affirmative-negative phrase, followed by a clause with “都” or other words. For example:",
+    "examples": [
+     {
+      "n": 1,
+      "zh": "山本不管做什么事都非常认真。"
+     },
+     {
+      "n": 2,
+      "zh": "不管是上课、上班，还是与别人约会，准时都非常重要。"
+     },
+     {
+      "n": 3,
+      "zh": "不管忙不忙，他每天都要锻炼一个小时身体。"
+     }
+    ],
+    "practice_instruction_zh": "练一练 完成句子或对话 Complete the sentences/dialogues.",
+    "practice": [
+     {
+      "n": 1,
+      "zh": "________，他每天都去打篮球。",
+      "hint_zh": "（不管、还是）"
+     },
+     {
+      "n": 2,
+      "zh": "A：这次你一定要帮我！ B：放心吧，________。",
+      "hint_zh": "（不管、多）"
+     },
+     {
+      "n": 3,
+      "zh": "A：小林这个人真好！每次他都热情地帮助我。 B：________。",
+      "hint_zh": "（不管、V+不+V）"
+     }
+    ]
+   }
+  ],
+  "exercises": [
+   {
+    "n": "课文1–3",
+    "type_zh": "根据课文内容回答问题",
+    "instruction_zh": "根据课文内容回答问题",
+    "instruction_en": "Answer the questions based on the texts.",
+    "items": [
+     {
+      "n": 1,
+      "zh": "课文1：小雨面试时紧张吗？面试时应该怎样？"
+     },
+     {
+      "n": 2,
+      "zh": "课文1：体育馆的招聘会是在什么时候？"
+     },
+     {
+      "n": 3,
+      "zh": "课文2：谁负责过这次招聘工作？"
+     },
+     {
+      "n": 4,
+      "zh": "课文2：参加应聘的两个人适合不适合这个工作？为什么？"
+     },
+     {
+      "n": 5,
+      "zh": "课文3：王静为什么很喜欢她现在的工作？"
+     },
+     {
+      "n": 6,
+      "zh": "课文3：王静这次来北京是为了参加同学聚会吗？为什么？"
+     }
+    ]
+   },
+   {
+    "n": "课文4–5",
+    "type_zh": "根据课文内容回答问题",
+    "instruction_zh": "根据课文内容回答问题",
+    "instruction_en": "Answer the questions based on the texts.",
+    "items": [
+     {
+      "n": 1,
+      "zh": "课文4：面试时如果穿正式的衣服，会给人带来什么好处？"
+     },
+     {
+      "n": 2,
+      "zh": "课文4：回答问题时应该注意哪些问题？"
+     },
+     {
+      "n": 3,
+      "zh": "课文5：第一印象是什么意思？"
+     },
+     {
+      "n": 4,
+      "zh": "课文5：你给别人的第一印象对你有哪些影响？"
+     }
+    ]
+   },
+   {
+    "n": 1,
+    "type_zh": "复述",
+    "instruction_zh": "复述",
+    "instruction_en": "Retell the dialogues.",
+    "items": [
+     {
+      "n": 1,
+      "zh": "课文1：小雨的语气：今天上午我参加了一个面试，……"
+     },
+     {
+      "n": 2,
+      "zh": "课文2：小林的语气：这次招聘本来是小李负责的，可是……"
+     },
+     {
+      "n": 3,
+      "zh": "课文3：王静的语气：我一毕业就去上海当律师了，……"
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "type_zh": "选词填空",
+    "instruction_zh": "选择合适的词语填空",
+    "instruction_en": "Choose the proper words to fill in the blanks.",
+    "word_bank": [
+     [
+      "紧张",
+      "提供",
+      "符合",
+      "安排",
+      "判断"
+     ],
+     [
+      "感觉",
+      "材料",
+      "咱们",
+      "准时",
+      "留"
+     ]
+    ],
+    "items": [
+     {
+      "n": 1,
+      "zh": "他们这次招聘的要求虽然高，但是那些要求你都________，你应该去试试。"
+     },
+     {
+      "n": 2,
+      "zh": "看一个人怎么说话，常可以比较容易地________出他是一个什么样的人。"
+     },
+     {
+      "n": 3,
+      "zh": "第一次跟女朋友见面的时候，他________得脸和耳朵都红了。"
+     },
+     {
+      "n": 4,
+      "zh": "她想借这次机会去长城（Chángchéng, the Great Wall）看看，可是公司的事情很多，时间________得很紧张。"
+     },
+     {
+      "n": 5,
+      "zh": "这里________的工作机会是最多的，每天都有很多公司在上面发招聘通知。"
+     },
+     {
+      "n": 6,
+      "zh": "A：走，________一起去跑步吧，锻炼锻炼身体。 B：好主意，我很久没去运动了。你等我几分钟，我去换双运动鞋。"
+     },
+     {
+      "n": 7,
+      "zh": "A：这次工作虽然时间非常紧张，但是________不是很难。 B：一开始还担心完不成呢，现在好了，可以休息一下了。"
+     },
+     {
+      "n": 8,
+      "zh": "A：校长，这份________我已经按照您的要求改好了。 B：好的，先放我办公桌上吧，你再帮我发一份电子邮件。"
+     },
+     {
+      "n": 9,
+      "zh": "A：你不是去打篮球了吗？怎么还在上网？ B：外面刮大风了，现在只好________在家里上网了。"
+     },
+     {
+      "n": 10,
+      "zh": "A：王老师真是一个特别________的人。 B：对，我还从来没见他迟到过呢。"
+     }
+    ]
+   },
+   {
+    "n": "扩展",
+    "type_zh": "扩展 同字词 做一做 选词填空",
+    "instruction_zh": "选词填空",
+    "instruction_en": "Fill in the blanks with the words given.",
+    "word_bank": [
+     [
+      "时候",
+      "时间",
+      "及时",
+      "平时",
+      "准时"
+     ]
+    ],
+    "items": [
+     {
+      "n": 1,
+      "zh": "午饭后不要马上睡午觉，另外，午睡的________太长也会影响健康。",
+      "answer": "时间",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        31
+       ]
+      }
+     },
+     {
+      "n": 2,
+      "zh": "________我骑自行车上下班，可是今天起晚了，所以就打车来公司了。",
+      "answer": "平时",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        31
+       ]
+      }
+     },
+     {
+      "n": 3,
+      "zh": "当你想发脾气的________，试试在心里数数。从1数到10，之后你会发现自己没有那么生气了。",
+      "answer": "时候",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        31
+       ]
+      }
+     },
+     {
+      "n": 4,
+      "zh": "每个人都有缺点，但我们应该努力发现自己的缺点，________去改。",
+      "answer": "及时",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        31
+       ]
+      }
+     },
+     {
+      "n": 5,
+      "zh": "上个星期去北京，飞机不仅________起飞，而且还早到了十分钟。",
+      "answer": "准时",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        31
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "characters": {
+   "knowledge_title_zh": "扩展 同字词 Words with the Same Character",
+   "knowledge_zh": "时：时候、时间、及时、平时、准时\n（1）他特别幽默，跟他在一起的时候，总是感觉时间过得很快。\n（2）真不好意思，我和同学约好了去看电影，咱们换个时间吧。\n（3）在你遇到困难的时候，真正的朋友会站出来，及时给你帮助。\n（4）平时安娜总是在学校上课，学习很紧张，很少有时间出去玩儿。\n（5）明天上午8点50我们在学校西门见，大家可以准备点儿吃的东西和饮料，9点咱们准时出发。",
+   "knowledge_en": "Words with the Same Character",
+   "characters": [
+    {
+     "zh": "时",
+     "note_zh": "时候、时间、及时、平时、准时（教师用书义项：①时间：时间、时候 ②比较长的一段时间：平时 ③规定的时候，某个时候：及时、准时）"
+    }
+   ],
+   "confusable_pairs": [
+    [
+     "挺",
+     "庭"
+    ],
+    [
+     "招",
+     "照"
+    ],
+    [
+     "供",
+     "共"
+    ],
+    [
+     "责",
+     "育"
+    ],
+    [
+     "聘",
+     "聪"
+    ],
+    [
+     "排",
+     "非"
+    ],
+    [
+     "首",
+     "自"
+    ],
+    [
+     "式",
+     "或"
+    ],
+    [
+     "诚",
+     "城"
+    ]
+   ]
+  },
+  "application": [
+   {
+    "title_zh": "双人活动",
+    "instruction_zh": "互相了解对方应聘工作的情况，完成调查表。",
+    "instruction_en": "Learn about each other’s job-hunting experiences and complete the questionnaire below.",
+    "example_zh": [
+     "表格：| | 问 | 答 |",
+     "| 1 | 你找过工作吗？（如果没有，请做第5、6题） | |",
+     "| 2 | 你应聘的是什么工作？ | |",
+     "| 3 | 那份工作有什么招聘要求？ | |",
+     "| 4 | 你在面试时紧张吗？为什么？ | |",
+     "| 5 | 你认为自己适合什么工作？ | |",
+     "| 6 | 你觉得面试时应该注意什么问题？ | |"
+    ]
+   },
+   {
+    "title_zh": "小组活动",
+    "instruction_zh": "向小组成员介绍一下谁给你的第一印象最深，说说为什么。（请最少用四个下面的结构）",
+    "instruction_en": "Tell your group members who has made the deepest first impression on you and explain why. (Use at least four of the following structures.)",
+    "example_zh": [
+     "a. 留下的印象",
+     "b. 对自己有信心",
+     "c. 挺容易的",
+     "d. 借这次机会",
+     "e. 安排得很紧张",
+     "f. 最重要的是",
+     "g. 穿正式的衣服",
+     "h. 感觉和判断"
+    ]
+   }
+  ],
+  "culture": {
+   "title_zh": "中山装和旗袍 Chinese Tunic Suit and Cheongsam",
+   "body_zh": "中山装和旗袍分别是中国男士和女士的传统正式服装。“中山装”是中国民主革命的开拓者孙中山先生综合了西式服装与中式服装的特点设计出来的。它的直翻领代表孙中山严谨的治国理念，四个口袋代表中国四种传统的道德思想，即礼、义、廉、耻。旗袍，被当代国际服装界誉为“东方女装”的代表，旗袍的造型与妇女的体态相适合，线条简单，优美大方。在电影、电视、时装展中经常会看到，现在女人穿旗袍已经成了一种时尚。",
+   "body_en": "The Chinese tunic suit and cheongsam are respectively the traditional formal attire of Chinese men and women. The former was designed by Mr. Sun Yat-sen, a leading Chinese democratic revolutionary, by combining the characteristics of both Western and Chinese clothing styles. Its Prussian collar stands for Mr. Sun’s rigorous theory of governing a country, and the four pockets represent four traditional Chinese moral virtues, namely propriety, justice, honesty, and a sense of shame. In modern international fashion circles, cheongsams are regarded as the representative of “Oriental women’s dresses”. The design of a cheongsam, with its simple and elegant curves, goes well with a woman’s figure. Cheongsams are frequently seen in movies, TV programmes and fashion shows. Today, wearing cheongsams has become a fashion."
+  }
+ },
+ "teacher": {
+  "ref": {
+   "book": "teacher",
+   "pages": [
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31
+   ]
+  },
+  "objectives_zh": [
+   "主题：求职（1）对话：参加招聘会、组织招聘、介绍工作情况（2）短文：面试注意的问题、第一印象的重要性",
+   "语言点：学生能够了解并掌握：（1）“挺”表示“很”的意思（2）“本来”表示原先、原来；按道理应该这样（3）“另外”表示上文所说范围以外的人或事；除此之外 *辨析“另外”和“另”的异同（4）“首先……其次……”表示按某个顺序列举事项（5）“不管”表示在任何假设的情况下，结论或结果都不变",
+   "词汇：学生能够：（1）掌握本课31个四级大纲词汇的意义和用法 重点词语：紧张、信心、提供、负责、材料、符合、通知、安排、留、诚实、改变、判断（2）理解“时”字的组词规律及在词汇中的意义"
+  ],
+  "steps": [
+   {
+    "title_zh": "一 复习旧课",
+    "body_zh": "1 使用生词卡片，快速认读下列词语：\n适应、逛、联系、专门、麻烦、重新、友谊、丰富、周围、理解、困难、及时\n2 快速回答问题（与第2课或学生实际生活有关的问题）：\n（1）你们有中国朋友吗？一般和中国朋友一起做什么？\n（2）朋友对一个人重要吗？人们为什么都需要朋友？\n（3）你认为真正的朋友应该是什么样的？\n3 检查作业：\n请2～3名学生给全班同学介绍一下自己的朋友。"
+   },
+   {
+    "title_zh": "二 学习新课 1 热身",
+    "body_zh": "热身1：学生两人一组，合作完成；教师指出图片，请学生根据图片说出对应的词语，教师核对答案；教师领读热身1的生词；最后全体学生齐读，教师正音。\n答案：①F　②D　③A　④E　⑤C　⑥B\n热身2：教师带领学生熟悉调查表格的内容；请学生两人一组，调查对方理想的工作是什么样的；请2～3名学生汇报调查结果。"
+   },
+   {
+    "title_zh": "2 生词",
+    "body_zh": "（1）生词快速认读及正音\n课文1（对话）：挺、紧张、信心、能力、招聘、提供\n课文2（对话）：负责、本来、应聘、材料、符合、通知\n课文3（对话）：律师、专业、另外、收入、咱们、安排\n课文4（短文）：首先、正式、留、其次、诚实\n课文5（短文）：改变、感觉、判断、顾客、准时、不管、与、约会\n• 教师用PPT或卡片展示并领读生词（带拼音）；\n• 取消拼音，带领学生再次认读；\n• 逐词（不带拼音）闪现，请学生快速认读生词；\n• 请3～5个学生快速随机认读3～5个生词；\n• 最后全体学生快速齐读所有生词。\n（2）生词讲解方式\n直观法（图片、符号等）| 图片类：紧张（热身图片F）、信心（篮球赛开赛前各队打气）、能力（外国人和中国人用中文聊天）、提供（宾馆提供矿泉水、茶）、材料（制作毽子的材料图）、通知（热身图片B）、律师（热身图片A）、收入（数工资）、正式（开会者穿着正装的场面）、顾客（售货员与顾客）、约会（男女烛光晚餐）；符号类：判断（展示√和×）\n情景法（肢体动作）| 留（出门把书留在桌子上）、改变（改变发型／方向等动作）\n对比法（反义词对比）| 招聘—应聘\n替换法（同／近义替换）| 挺（很）、咱们（我们）、感觉（觉得）、与（和）\n提问启发 | 负责、符合、专业、安排、诚实、准时 教师提问，引导学生说出句子：谁负责教你们汉语课？——……负责教我们汉语课。／学校要求8:30上课，你们9点到教室可以吗？——9点到教室不符合学校的要求。／你学习什么专业？——我学习经济专业。／每天怎么才能把很多事情做得又快又好呢？——应该安排好时间。／妈妈问孩子做了什么坏事，孩子都告诉了妈妈。这个孩子……——这个孩子很诚实。／我们班8:30上课，同学们8:30都来教室了。——同学们来得很准时。\n（3）字形辨认练习\n教师用卡片或PPT展示，请学生快速辨认并读出，最后给每个字组词。\n挺—庭　招—照　供—共\n责—育　聘—聪　排—非\n首—自　式—或　诚—城\n（4）重点生词扩展及常用搭配\n紧张—很／非常／比较／有点儿紧张—别紧张—我有点儿紧张—面试的时候我有点儿紧张。\n信心—（没）有信心—对自己有信心—面试的时候，一定要对自己有信心。\n提供—提供机会／咖啡／宿舍—提供工作机会—提供的工作机会很多—这次招聘会提供的工作机会很多。\n负责—负责这个工作—你负责这个工作—这次招聘不是小李负责吗？\n材料—一份材料—我的材料—这是他们的材料。\n符合—很／非常／比较符合—符合要求—比较符合我们的要求—这两个人的能力都比较符合我们的要求。\n通知—通知朋友／他们／同事—通知他们开会—你通知他们上午九点来我办公室吧。\n安排—安排工作／时间—安排得很紧张—时间安排得很紧张—这次来北京，时间安排得很紧张。\n留—留下—留下印象—留下一个好印象—给面试者留下一个好印象。\n诚实—很／非常／比较诚实—对人诚实—回答问题时要诚实。\n改变—改变印象／习惯／方法—改变很困难—印象改变起来很困难。\n判断—你的判断—判断对错—对你的判断—影响他们对你的判断。"
+   },
+   {
+    "title_zh": "3 语言点（1）挺",
+    "body_zh": "① 语言点解析\n“挺”，副词，表示“很”的意思，常用结构“挺……的”。\n② 语言点导入\n联系课堂实际，提问导入。\n• 教师：你们觉得汉语有意思吗？\n学生：汉语挺有意思的。\n• 教师：马克的中国朋友经常帮助他练习汉语，这个中国朋友怎么样？\n学生：马克的中国朋友挺不错的。\n③ 语言点操练\n利用热身图片C、F，提问操练。\n• 教师：招聘会上的人多吗？\n图片C目标句：招聘会上的人挺多的。\n• 教师：他现在紧张吗？\n图片F目标句：他现在挺紧张的。\n④ 语言点运用\n利用本课热身图片E，请学生两人一组，根据内容提示，说说这次考试怎么样。\n内容提示：I. 难不难？ II. 题多不多？ III. 紧张吗？ IV. 有信心吗？\n参考答案：I. 这次考试挺难的。 II. 考试的题挺多的。 III. 每个同学都挺紧张的。 IV. 对通过考试，我挺没有信心的。"
+   },
+   {
+    "title_zh": "3 语言点（2）本来",
+    "body_zh": "表示“原先、原来”\n① 语言点导入\n利用热身图片A，提问导入。\n教师：她原来想学新闻，但是现在学习什么？\n图片A目标句：她本来想学新闻，但是现在学习法律。\n教师：刚开始学习法律时，她觉得很难，现在呢？\n学生：她本来觉得学习法律挺难的，但现在越学越有意思。\n② 语言点操练\n联系学生实际，提问操练。\n• 教师：这件衣服本来是什么颜色吗？\n学生目标句：这件衣服本来是红色的。\n• 教师：你不是说寒假回国吗？怎么还在北京？\n学生目标句：我本来是想回国，但是后来有一个很好的工作机会，就留在北京了。\n表示“按道理应该这样”\n① 语言点导入\n利用情境，提问导入。\n教师：你们都知道大卫生病了，但他还是参加了运动会，现在他的病更重了。你认为大卫应该不应该这么做？\n学生：大卫的病没好，本来不应该参加运动会。\n② 语言点操练\n联系学生实际，进行操练。\n教师：你们是学生，按道理应该……／不应该……\n学生目标句：我们是学生，本来就应该好好学习。／我们是学生，本来就应该当天的作业当天做完。／我们是学生，本来就不应该上课迟到。\n③ 语言点运用（关于两种用法）\n请学生两人一组，根据提示用“本来”补全对话，并分角色表演。\nA：这次怎么下午两点才开会啊？\nB：________。（表示“原先、原来”）\nA：王力没参加今天的会吗？\nB：________。（表示“按道理应该这样”）\n参考答案：本来是上午九点开会，可是经理突然有别的重要的工作，后来改成下午两点了。\n他出差还没回来，本来也参加不了。"
+   },
+   {
+    "title_zh": "3 语言点（3）另外",
+    "body_zh": "① 语言点解析\n“另外”，代词，表示上文所说范围以外的人或事，常用格式：\n另外（的）＋数量（＋名词）\n另外＋的（＋名词）\n连词，表示“除此以外”的意思，可以连接小句、句子等。\n副词，表示在上文所说范围以外，常跟“还”、“再”、“又”连用。\n② 语言点导入\n利用买衣服的情景，提问导入。\n• 教师：你觉得这件衣服适合我还是另外一件适合我？\n学生目标句：我觉得另外一件更适合你。\n教师总结：这里“另外”是代词用法，可以说“另外一件衣服”“另外（的）一件”。\n• 教师：为什么另外一件更适合我呢？\n学生目标句：它的颜色更好看，另外，大小也正好。\n教师总结：这里“另外”是连词用法。\n• 教师：我觉得穿那件衣服的时候，还得再穿一条白色的裤子。\n学生目标句：那你还应该另外再买一条白色的裤子。\n教师总结：这里“另外”是副词用法。\n③ 语言点操练\n利用热身图片D，提问操练。\n教师：你觉得这个人符合我们公司的要求吗？\n学生：我觉得另外一个人更符合。\n教师：为什么？\n学生：那个人的性格很活泼，另外，她的专业也是我们需要的。\n教师：我要通知她明天来上班，另外还应该告诉她什么？\n学生：你通知她明天来上班，另外还应该告诉她一些公司的要求。\n④ 语言点运用（关于三种用法）\n利用热身图片E的场景，请学生根据提示用“另外”补全对话，并分角色表演。\nA：咱们班同学都通过考试了吗？\nB：________！（十个通过，五个没通过）\nA：这次考试怎么这么多同学没有通过啊？\nB：________！\nA：对了，你是怎么复习的？真羡慕你能通过考试！\nB：你要好好复习生词，________。\n参考答案：只有十个同学通过了，另外五个同学没通过。\n这次考试的题比较难，另外，时间也不够。\n另外再多练习一下听力。\n⑤ 比一比：另外—另\n按照教材中的辨析步骤进行。"
+   },
+   {
+    "title_zh": "3 语言点（4）首先……其次……",
+    "body_zh": "① 语言点解析\n“首先……其次……”，常用在书面语中搭配使用，表示按某个顺序列举事项。\n② 语言点导入\n联系学生实际，提问导入。\n• 教师：怎么才能学好汉语呢？你们有什么好办法？\n学生：首先应该好好复习，其次应该多听多说。\n• 教师：听力说得太快了，我总是听不明白。你是怎么做的？\n学生：首先，如果听不懂一个句子，你不要着急，可以先听后面。其次，要把听不懂的词记下来，然后查词典，方便以后慢慢复习。\n③ 语言点操练\n联系本课情景，提问操练。\n教师：去应聘时，你认为应该怎样？\n学生：首先要诚实，其次要相信自己的能力。\n……\n④ 语言点运用\n请学生用“首先……，其次……”说说在下面几种情况下应该怎么办。\nI. 父母不同意自己的看法，你怎么办？\nII. 怎么才能交到朋友？\nIII. 你负责找适合同学聚会的饭馆，你应该怎么选择？"
+   },
+   {
+    "title_zh": "3 语言点（5）不管",
+    "body_zh": "① 语言点解析\n“不管”，连词，表示在任何假设的情况下，结论或结果都不变。常跟“多（么）”“怎么”“谁”“哪儿”“什么”等疑问代词连用，也可以带含有“还是”的选择句式或含有“不／没”的正反句式，后一个分句常有“都”等词语。\n② 语言点导入\n联系生活实际，提问导入。\n• 教师：天气越来越冷，你还每天去公园跑步吗？\n学生：不管天气多（么）冷，我都每天去公园跑步。\n教师：如果下雨呢？\n学生：不管下不下雨，我都每天去公园跑步。\n不管什么天气，我都每天去公园跑步。\n不管天气好还是不好，我都每天去公园跑步。\n• 教师：他性格很活泼，人也很好，你们都喜欢跟他交朋友吗？\n学生：不管是谁，都喜欢跟他交朋友。\n• 教师：这些地方都特别漂亮，你想去哪儿旅游？\n学生：不管去哪儿，我都很高兴。\n不管去哪个地方，我都很高兴。\n• 教师：怎么去长城比较方便呢？\n学生：不管怎么去，都很方便。\n教师：长城什么时候去比较漂亮呢？\n学生：不管什么时候去，长城都很漂亮。\n• 教师：这件衣服你穿很漂亮，但是可能很贵。\n学生：不管多少钱，我都要买。\n教师总结：（图表）不管＋［多（么）／谁／什么／哪儿／哪／怎么／什么时候／多少／……还是……／……不／没……］，……都……\n③ 语言点操练\n联系学生实际，提问操练。\n• 教师：你喜欢看什么电影？\n学生：不管什么电影，我都喜欢看。\n• 教师：马克病了，我们一起去看看他吧，你什么时候方便？\n学生：不管什么时候，我都很方便。\n• 教师：我担心他不同意我的想法，所以我没告诉他。\n学生：不管他同意不同意，你都应该告诉他你的想法。\n④ 语言点运用\n请学生补全句子，并朗读。\nI. 不管新闻专业还是法律专业，________。\nII. ________，他都知道。\nIII. ________，互相帮助都非常重要。\n参考答案：I. 我都喜欢学\nII. 不管问他什么问题\nIII. 不管和谁／不管是朋友之间，还是同事之间"
+   },
+   {
+    "title_zh": "4 课文",
+    "body_zh": "（1）就课文内容，教师将下列问题写在黑板上或用PPT展示（或教师给学生发放问题单）：\n课文1：小雨觉得这次面试怎么样？／小夏认为面试时应该怎么做？／3月15号他们一起去哪儿？为什么？\n课文2：这次招聘为什么让小林负责？／有几个人通过了笔试和面试？／马经理让小林通知他们做什么？\n课文3：王静毕业后做什么工作了？／王静学的是什么专业？／王静喜欢现在的工作吗？为什么？\n课文4：面试的时候为什么要穿正式的衣服？／回答问题时应该注意什么问题？\n课文5：改变给别人的第一印象容易吗？／给别人的第一印象重要吗？为什么？／上课、上班或者约会，应该注意什么问题？\n（2）要求学生带着问题听两遍录音并回答问题，教师给出答案；\n（3）学生打开课本，教师逐句播放录音，学生看课本听第二次录音并跟读；\n（4）教师领读一遍课文；\n（5）全班一起大声齐读一遍课文；\n（6）请2～3组学生分角色朗读课文，教师正音；\n（7）做以下课文扩展练习：\n对话课文：教师带领学生根据问题单上问题的答案叙述课文内容，并请学生单个复述。\n课文1：小雨觉得面试的问题都挺容易的，就是他有点儿紧张。小夏认为面试时一定要对自己有信心，要相信自己的能力。3月15号在学校体育馆还有一个招聘会，他们想一起去看看。\n课文2：这次招聘本来是小李负责的，但是他突然生病住院了，就交给小林负责了。这次招聘会一共有15个人，经过笔试和面试，有两个人的能力比较符合要求，马经理让小林通知他们下周一去他的办公室。\n课文3：王静一毕业就去上海当律师了，她很喜欢现在的工作，因为她学的就是法律专业，而且同事们都很喜欢她。另外，收入也不错。\n短文课文：请学生根据课文内容，补全下面的语段，并请学生单个复述朗读。\n课文4：面试的时候，首先，要穿正式的衣服，这会给面试者……（留下一个好印象）。其次，应聘时……（不要紧张）。回答问题时，说得……（不要太快），声音……（也不要太小），最重要的是回答问题……（要诚实）。\n课文5：第一印象不总是对的，但……（改变起来）却很困难。你给别人的第一印象会影响他们对你的……（感觉和判断）。如果给别人留下像不准时这样的坏印象，以后就很难让别人相信你。不管是上课、上班，还是与别人约会……（准时都非常重要）。"
+   },
+   {
+    "title_zh": "5 扩展",
+    "body_zh": "（1）领读“时候、时间、及时、平时、准时”五个同字词，请学生说一说“时”字在词中的位置和意义。“时”的义项：\n①时间：时间、时候\n②比较长的一段时间：平时\n③规定的时候，某个时候：及时、准时\n（2）请学生说说还有哪些带“时”字的词，教师列在黑板上，如果没有，可补充下列真假同字词，最后请学生判断正误，教师给出正确答案。\n小时　不时　限时\n多时　年时（×）　久时（×）\n（3）请学生完成“选词填空”练习，教师给出答案。\n参考答案：①时间　②平时　③时候　④及时　⑤准时"
+   },
+   {
+    "title_zh": "6 补充课堂活动",
+    "body_zh": "假设你的朋友准备参加一个面试，但是他／她很紧张，不知道怎么准备，请学生4人一组讨论一下，最后给他／她提出你们的建议。"
+   },
+   {
+    "title_zh": "7 文化",
+    "body_zh": "教师引导学生了解中山装和旗袍，可根据需求和时间安排，进行以下参考活动：\n• 教师利用实物或图片，演示中山装和旗袍；\n• 请3个学生说说中山装和旗袍的特点；\n• 请3个同学简单介绍一下他们国家的传统正式服装。"
+   },
+   {
+    "title_zh": "8 布置作业",
+    "body_zh": "• 每个生词写3遍；\n• 用本课所学的5个语言点分别造一个句子。"
+   }
+  ],
+  "notes_zh": [
+   "比一比：另外—另 —— 按照教材中的辨析步骤进行。（语言点3 ⑤）",
+   "语言点1 教师用书把“挺”的运用参考答案写为：“对通过考试，我挺没有信心的。”（原文如此）",
+   "语言点3 教师总结：“另外一件衣服”“另外（的）一件”为代词用法；“它的颜色更好看，另外，大小也正好。”为连词用法；“那你还应该另外再买一条白色的裤子。”为副词用法。",
+   "语言点5 教师总结（图表）：不管＋多（么）／谁／什么／哪儿／哪／怎么／什么时候／多少／……还是……／……不／没……，……都……",
+   "扩展：真假同字词 小时、不时、限时、多时（真）；年时（×）、久时（×）。"
+  ],
+  "warmup_answers_zh": [
+   "热身1 答案：①F　②D　③A　④E　⑤C　⑥B",
+   "热身2：教师带领学生熟悉调查表格的内容；请学生两人一组，调查对方理想的工作是什么样的；请2～3名学生汇报调查结果。"
+  ],
+  "text_questions": [
+   {
+    "text": 1,
+    "q_zh": "小雨觉得这次面试怎么样？"
+   },
+   {
+    "text": 1,
+    "q_zh": "小夏认为面试时应该怎么做？"
+   },
+   {
+    "text": 1,
+    "q_zh": "3月15号他们一起去哪儿？为什么？"
+   },
+   {
+    "text": 2,
+    "q_zh": "这次招聘为什么让小林负责？"
+   },
+   {
+    "text": 2,
+    "q_zh": "有几个人通过了笔试和面试？"
+   },
+   {
+    "text": 2,
+    "q_zh": "马经理让小林通知他们做什么？"
+   },
+   {
+    "text": 3,
+    "q_zh": "王静毕业后做什么工作了？"
+   },
+   {
+    "text": 3,
+    "q_zh": "王静学的是什么专业？"
+   },
+   {
+    "text": 3,
+    "q_zh": "王静喜欢现在的工作吗？为什么？"
+   },
+   {
+    "text": 4,
+    "q_zh": "面试的时候为什么要穿正式的衣服？"
+   },
+   {
+    "text": 4,
+    "q_zh": "回答问题时应该注意什么问题？"
+   },
+   {
+    "text": 5,
+    "q_zh": "改变给别人的第一印象容易吗？"
+   },
+   {
+    "text": 5,
+    "q_zh": "给别人的第一印象重要吗？为什么？"
+   },
+   {
+    "text": 5,
+    "q_zh": "上课、上班或者约会，应该注意什么问题？"
+   }
+  ]
+ },
+ "workbook": {
+  "ref": {
+   "book": "workbook",
+   "pages": [
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37
+   ]
+  },
+  "sections": [
+   {
+    "n": "一、听力 第一部分",
+    "type_zh": "听力 第一部分",
+    "instruction_zh": "第1–5题：判断对错。",
+    "items": [
+     {
+      "n": "例",
+      "zh": "★他打算下午去银行。",
+      "transcript_zh": "我想去办个信用卡，今天下午你有时间吗？陪我去一趟银行？",
+      "answer": "√",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        28
+       ]
+      }
+     },
+     {
+      "n": "例",
+      "zh": "★他喜欢看电视广告。",
+      "transcript_zh": "现在我很少看电视，其中一个原因是，广告太多了，不管什么时间，也不管什么节目，只要你打开电视，总能看到那么多的广告，浪费我的时间。",
+      "answer": "×",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        28
+       ]
+      }
+     },
+     {
+      "n": 1,
+      "zh": "★他在等面试通知。",
+      "transcript_zh": "我通过那家公司的面试了。经理对我印象不错，他要我明天就正式去上班。真没想到，找工作这么容易。 ★他在等面试通知。",
+      "answer": "×",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     },
+     {
+      "n": 2,
+      "zh": "★小林正在找工作。",
+      "transcript_zh": "小林，这次招聘是你负责吧？李教授介绍了他的一个学生，还不错，这是他的材料，你看看。 ★小林正在找工作。",
+      "answer": "×",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     },
+     {
+      "n": 3,
+      "zh": "★面试时必须准时到。",
+      "transcript_zh": "去面试的时候衣服要穿得正式一些，不能太随便，这样能给面试者留下一个好的第一印象。 ★面试时必须准时到。",
+      "answer": "×",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     },
+     {
+      "n": 4,
+      "zh": "★他去过很多国家。",
+      "transcript_zh": "大学毕业以后，他去了一家公司。公司经常让他去国外，短短一年的时间，就去了十几个国家。同学们都很羡慕他。 ★他去过很多国家。",
+      "answer": "√",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     },
+     {
+      "n": 5,
+      "zh": "★马经理告诉大家他很满意。",
+      "transcript_zh": "大家现在工作都很努力，虽然马经理没有说，但是大家都明白，他对我们最近的工作还是很满意的。 ★马经理告诉大家他很满意。",
+      "answer": "×",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "一、听力 第二部分",
+    "type_zh": "听力 第二部分",
+    "instruction_zh": "第6–12题：请选出正确答案。",
+    "items": [
+     {
+      "n": "例",
+      "zh": "问：男的主要是什么意思？",
+      "transcript_zh": "女：该加油了，去机场的路上有加油站吗？ 男：有，你放心吧。 问：男的主要是什么意思？",
+      "options": {
+       "A": "去机场",
+       "B": "快到了",
+       "C": "油是满的",
+       "D": "有加油站"
+      },
+      "answer": "D",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        29
+       ]
+      }
+     },
+     {
+      "n": 6,
+      "zh": "问：会议原来准备什么时候开？",
+      "options": {
+       "A": "明天上午",
+       "B": "明天下午",
+       "C": "后天上午",
+       "D": "后天下午"
+      },
+      "transcript_zh": "男：小张，原定后天上午的会改在明天下午两点了，你通知一下其他人。 女：好的，经理，我现在就打电话。 问：会议原来准备什么时候开？",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     },
+     {
+      "n": 7,
+      "zh": "问：男的下午要做什么？",
+      "options": {
+       "A": "买衣服",
+       "B": "招聘人",
+       "C": "约会",
+       "D": "聚会"
+      },
+      "transcript_zh": "女：穿得这么正式，是不是又有约会？ 男：不是，下午公司要面试几个人，我去看一下。 问：男的下午要做什么？",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     },
+     {
+      "n": 8,
+      "zh": "问：女的觉得小王怎么样？",
+      "options": {
+       "A": "长得很帅",
+       "B": "不太认真",
+       "C": "专业不对",
+       "D": "符合要求"
+      },
+      "transcript_zh": "男：这件事让小王负责怎么样？ 女：我觉得他挺适合的，他就是学这个专业的，做事情也很认真。 问：女的觉得小王怎么样？",
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     },
+     {
+      "n": 9,
+      "zh": "问：女的觉得第一个小伙子怎么样？",
+      "options": {
+       "A": "有信心",
+       "B": "有能力",
+       "C": "很紧张",
+       "D": "不诚实"
+      },
+      "transcript_zh": "男：你感觉今天来应聘的两个人怎么样？ 女：我觉得第一个小伙子不错，不但有能力，而且很诚实。 问：女的觉得第一个小伙子怎么样？",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     },
+     {
+      "n": 10,
+      "zh": "问：关于这次会议，可以知道什么？",
+      "options": {
+       "A": "时间变了",
+       "B": "地方变了",
+       "C": "不举行了",
+       "D": "马经理不参加了"
+      },
+      "transcript_zh": "男：你联系马经理了吗？ 女：联系过了，我已经通知他会议改到办公楼了。 问：关于这次会议，可以知道什么？",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     },
+     {
+      "n": 11,
+      "zh": "问：男的在找谁？",
+      "options": {
+       "A": "王律师",
+       "B": "方律师",
+       "C": "王老师",
+       "D": "方老师"
+      },
+      "transcript_zh": "男：如果王律师回来，请你马上通知我。 女：好的，他一回来我就跟您联系。 问：男的在找谁？",
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     },
+     {
+      "n": 12,
+      "zh": "问：男的觉得小李怎么样？",
+      "options": {
+       "A": "能力差",
+       "B": "不认真",
+       "C": "不诚实",
+       "D": "没热情"
+      },
+      "transcript_zh": "女：你对小李的印象怎么样？ 男：虽然他能力比较强，工作有热情，但是太不认真了，不适合我们的工作。 问：男的觉得小李怎么样？",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "一、听力 第三部分",
+    "type_zh": "听力 第三部分",
+    "instruction_zh": "第13–22题：请选出正确答案。",
+    "items": [
+     {
+      "n": "例",
+      "zh": "问：会议几点开始？",
+      "transcript_zh": "男：把这个材料复印5份，一会儿拿到会议室发给大家。 女：好的。会议是下午三点吗？ 男：改了。三点半，推迟了半个小时。 女：好，602会议室没变吧？ 男：对，没变。 问：会议几点开始？",
+      "options": {
+       "A": "两点",
+       "B": "3点",
+       "C": "15:30",
+       "D": "18:00"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        30
+       ]
+      }
+     },
+     {
+      "n": 13,
+      "zh": "问：关于女的，可以知道什么？",
+      "options": {
+       "A": "还没毕业",
+       "B": "不想上班",
+       "C": "找到工作了",
+       "D": "九月七号上班"
+      },
+      "transcript_zh": "男：你工作找得怎么样了？ 女：挺好的，已经定下来了。 男：太好了！什么时候正式上班？ 女：七月九号。 问：关于女的，可以知道什么？",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     },
+     {
+      "n": 14,
+      "zh": "问：关于男的，下列哪个正确？",
+      "options": {
+       "A": "去约会了",
+       "B": "去面试了",
+       "C": "去吃饭了",
+       "D": "去看病了"
+      },
+      "transcript_zh": "女：哥，今天面试怎么样？ 男：还行，刚开始有点儿紧张，后来慢慢就好了。 女：我相信你一定没问题。 男：他们说下个星期会发邮件通知。 问：关于男的，下列哪个正确？",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     },
+     {
+      "n": 15,
+      "zh": "问：男的觉得小李的妹妹怎么样？",
+      "options": {
+       "A": "可爱",
+       "B": "漂亮",
+       "C": "客气",
+       "D": "认真"
+      },
+      "transcript_zh": "男：小李，我那儿还需要个服务员，你有没有好的人选？ 女：是吗？能让我妹妹来试试吗？ 男：当然可以。我见过她，很认真，明天让她来试一下吧。 女：太好了！谢谢您给她这个机会。 问：男的觉得小李的妹妹怎么样？",
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     },
+     {
+      "n": 16,
+      "zh": "问：关于这次招聘，可以知道什么？",
+      "options": {
+       "A": "还没准备",
+       "B": "准备好了",
+       "C": "小张负责",
+       "D": "经理负责"
+      },
+      "transcript_zh": "男：这次招聘谁负责？小张，是你吗？ 女：对，是我，经理。都准备得差不多了。 男：有什么问题，你可以来找我。 女：谢谢您的帮助。 问：关于这次招聘，可以知道什么？",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     },
+     {
+      "n": 17,
+      "zh": "问：女的为什么穿得很正式？",
+      "options": {
+       "A": "有约会",
+       "B": "要去面试",
+       "C": "要去招聘会",
+       "D": "要参加聚会"
+      },
+      "transcript_zh": "男：你今天怎么穿得这么正式？ 女：有家银行通知我去面试，所以就穿成这样了。 男：银行挺好的，面试时别紧张啊！ 女：放心吧。 问：女的为什么穿得很正式？",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     },
+     {
+      "n": 18,
+      "zh": "问：男的觉得北京怎么样？",
+      "options": {
+       "A": "人不多",
+       "B": "变化大",
+       "C": "工作机会多",
+       "D": "环境不错"
+      },
+      "transcript_zh": "女：毕业后你打算留在北京？ 男：是的，我在这儿上了四年学，对这儿比较熟悉。 女：可打算留在北京工作的人很多啊。 男：是这样，但机会也很多。 问：男的觉得北京怎么样？",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     },
+     {
+      "n": 19,
+      "zh": "19. 别人让你做的事情太难时，你该怎么办？",
+      "options": {
+       "A": "找人帮忙",
+       "B": "马上去做",
+       "C": "先想清楚",
+       "D": "必须办成"
+      },
+      "transcript_zh": "第19到20题是根据下面一段话：努力把事情做到最好，这当然是对的。不过，当别人请你帮忙时，对那些自己很难办成的事情，最好还是先想清楚。如果最后事情没办成，不仅自己会觉得不好意思，而且别人以后也有可能不再相信你了。 19. 别人让你做的事情太难时，你该怎么办？",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     },
+     {
+      "n": 20,
+      "zh": "20. 这段话主要想告诉我们什么？",
+      "options": {
+       "A": "要学会说“不”",
+       "B": "要努力工作",
+       "C": "要帮助朋友",
+       "D": "做事情要认真"
+      },
+      "transcript_zh": "第19到20题是根据下面一段话：努力把事情做到最好，这当然是对的。不过，当别人请你帮忙时，对那些自己很难办成的事情，最好还是先想清楚。如果最后事情没办成，不仅自己会觉得不好意思，而且别人以后也有可能不再相信你了。 20. 这段话主要想告诉我们什么？",
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     },
+     {
+      "n": 21,
+      "zh": "21. 关于第一印象，可以知道什么？",
+      "options": {
+       "A": "总是对的",
+       "B": "不容易改变",
+       "C": "不重要",
+       "D": "样子最重要"
+      },
+      "transcript_zh": "第21到22题是根据下面一段话：第一印象本来不一定是对的，但改变起来却很困难。第一印象会影响你以后对这个人的感觉和判断。所以，给第一次见面的同事留下好的印象，以后的工作可能会更好做；给第一次见面的顾客留下好的印象，你可能会卖出更多的东西。 21. 关于第一印象，可以知道什么？",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     },
+     {
+      "n": 22,
+      "zh": "22. 这段话主要在说什么？",
+      "options": {
+       "A": "爱情",
+       "B": "生活",
+       "C": "同事关系",
+       "D": "第一印象"
+      },
+      "transcript_zh": "第21到22题是根据下面一段话：第一印象本来不一定是对的，但改变起来却很困难。第一印象会影响你以后对这个人的感觉和判断。所以，给第一次见面的同事留下好的印象，以后的工作可能会更好做；给第一次见面的顾客留下好的印象，你可能会卖出更多的东西。 22. 这段话主要在说什么？",
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第一部分（23–26）",
+    "type_zh": "阅读 第一部分",
+    "instruction_zh": "第23–26题：选词填空。",
+    "word_bank": [
+     [
+      "A 能力",
+      "B 通知",
+      "C 留",
+      "D 坚持",
+      "E 首先"
+     ]
+    ],
+    "items": [
+     {
+      "n": "例",
+      "zh": "她每天都（ D ）走路上下班，所以身体一直很不错。",
+      "answer": "D",
+      "options": {
+       "A": "能力",
+       "B": "通知",
+       "C": "留",
+       "D": "坚持",
+       "E": "首先"
+      },
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        31
+       ]
+      }
+     },
+     {
+      "n": 23,
+      "zh": "那位女服务员给我们（  ）下了很深的印象。",
+      "options": {
+       "A": "能力",
+       "B": "通知",
+       "C": "留",
+       "D": "坚持",
+       "E": "首先"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     },
+     {
+      "n": 24,
+      "zh": "不管别人怎么说，（  ）你要对自己有信心。",
+      "options": {
+       "A": "能力",
+       "B": "通知",
+       "C": "留",
+       "D": "坚持",
+       "E": "首先"
+      },
+      "answer": "E",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     },
+     {
+      "n": 25,
+      "zh": "会议改到明天下午两点半开，你去（  ）一下班里的其他人。",
+      "options": {
+       "A": "能力",
+       "B": "通知",
+       "C": "留",
+       "D": "坚持",
+       "E": "首先"
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     },
+     {
+      "n": 26,
+      "zh": "一个人（  ）的提高，需要长时间的学习。",
+      "options": {
+       "A": "能力",
+       "B": "通知",
+       "C": "留",
+       "D": "坚持",
+       "E": "首先"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第一部分（27–30）",
+    "type_zh": "阅读 第一部分",
+    "instruction_zh": "第27–30题：选词填空。",
+    "word_bank": [
+     [
+      "A 安排",
+      "B 准时",
+      "C 温度",
+      "D 挺",
+      "E 正式"
+     ]
+    ],
+    "items": [
+     {
+      "n": "例",
+      "zh": "A：今天真冷啊，好像白天最高（ C ）才2℃。 B：刚才电视里说明天更冷。",
+      "answer": "C",
+      "options": {
+       "A": "安排",
+       "B": "准时",
+       "C": "温度",
+       "D": "挺",
+       "E": "正式"
+      },
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        32
+       ]
+      }
+     },
+     {
+      "n": 27,
+      "zh": "A：你来得真够（  ）的，正好8点。 B：这就好，我还以为迟到了。",
+      "options": {
+       "A": "安排",
+       "B": "准时",
+       "C": "温度",
+       "D": "挺",
+       "E": "正式"
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     },
+     {
+      "n": 28,
+      "zh": "A：最近怎么穿得这么（  ）？ B：我现在开始上班了，这是公司的要求。",
+      "options": {
+       "A": "安排",
+       "B": "准时",
+       "C": "温度",
+       "D": "挺",
+       "E": "正式"
+      },
+      "answer": "E",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     },
+     {
+      "n": 29,
+      "zh": "A：希望我们的工作能让您满意。 B：我非常满意，一切都（  ）得很好，谢谢你们。",
+      "options": {
+       "A": "安排",
+       "B": "准时",
+       "C": "温度",
+       "D": "挺",
+       "E": "正式"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     },
+     {
+      "n": 30,
+      "zh": "A：这个手机好用吗？ B：（  ）好的，就像电视上说的“用过的都说好，没用过的都在找”。",
+      "options": {
+       "A": "安排",
+       "B": "准时",
+       "C": "温度",
+       "D": "挺",
+       "E": "正式"
+      },
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第二部分",
+    "type_zh": "阅读 第二部分",
+    "instruction_zh": "第31–34题：排列顺序。",
+    "items": [
+     {
+      "n": "例",
+      "zh": "",
+      "options": {
+       "A": "可是今天起晚了",
+       "B": "平时我骑自行车上下班",
+       "C": "所以就打车来公司"
+      },
+      "answer": "BAC",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        33
+       ]
+      }
+     },
+     {
+      "n": 31,
+      "zh": "",
+      "options": {
+       "A": "时间太长也会影响健康",
+       "B": "医生说，午饭后不要马上睡午觉",
+       "C": "另外，午睡的时间不要过长"
+      },
+      "answer": "BCA",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     },
+     {
+      "n": 32,
+      "zh": "",
+      "options": {
+       "A": "不管在外面的世界遇到什么困难",
+       "B": "家都是我们心中最幸福的地方",
+       "C": "因为我们总是能够在家里找到爱"
+      },
+      "answer": "ABC",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     },
+     {
+      "n": 33,
+      "zh": "",
+      "options": {
+       "A": "我觉得他这个人挺不错的",
+       "B": "这一点是他受大家欢迎的主要原因",
+       "C": "首先是他非常愿意帮助人"
+      },
+      "answer": "ACB",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     },
+     {
+      "n": 34,
+      "zh": "",
+      "options": {
+       "A": "首先，你要学好你的法律专业",
+       "B": "你想以后当一名律师吗",
+       "C": "其次，你要有一个好的身体"
+      },
+      "answer": "BAC",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第三部分",
+    "type_zh": "阅读 第三部分",
+    "instruction_zh": "第35–43题：请选出正确答案。",
+    "items": [
+     {
+      "n": "例",
+      "zh": "她很活泼，说话很有趣，总能给我们带来快乐，我们都很喜欢和她在一起。 ★她是个什么样的人？",
+      "options": {
+       "A": "幽默",
+       "B": "马虎",
+       "C": "骄傲",
+       "D": "害羞"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        34
+       ]
+      }
+     },
+     {
+      "n": 35,
+      "zh": "上午来应聘的那个小伙子是学法律的，笔试成绩很好，经过面试，感觉他的性格也不错，我觉得他挺适合这份工作的。 ★他觉得那个小伙子怎么样？",
+      "options": {
+       "A": "很帅",
+       "B": "性格好",
+       "C": "不诚实",
+       "D": "能力一般"
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     },
+     {
+      "n": 36,
+      "zh": "应聘时，一定要试着让自己别紧张。回答问题时，不要太快，声音也不要太小，别让紧张的心情影响了自己。 ★面试时要注意什么？",
+      "options": {
+       "A": "别太紧张",
+       "B": "要有礼貌",
+       "C": "回答问题要快",
+       "D": "声音不能太大"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     },
+     {
+      "n": 37,
+      "zh": "听说这周六上午8点在学校体育馆有个招聘会，这次招聘会提供差不多1000个工作机会，咱们一起去看看吧。 ★关于这场招聘会，可以知道：",
+      "options": {
+       "A": "改时间了",
+       "B": "改地方了",
+       "C": "在体育馆",
+       "D": "还没安排好"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     },
+     {
+      "n": 38,
+      "zh": "小高，我仔细看了一下，他们这次招聘的要求虽然高，但是那些条件你都符合，你应该去试试。 ★说话人想让小高：",
+      "options": {
+       "A": "去约会",
+       "B": "认真考试",
+       "C": "去跟朋友见面",
+       "D": "去应聘"
+      },
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     },
+     {
+      "n": 39,
+      "zh": "院长，我昨天跟他电话里聊了聊，我感觉他很愿意来我们医院工作，但是他要下个月才能回国，所以我想等他回来再约他来见见您。 ★关于说话人，可以知道：",
+      "options": {
+       "A": "在参加面试",
+       "B": "在学校工作",
+       "C": "在医院工作",
+       "D": "在国外工作"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     },
+     {
+      "n": 40,
+      "zh": "有些人喜欢不停地换工作，他们总以为新工作一定比现在的好。实际上，一般情况下，适应一个新的工作需要一年时间，因此，经常换工作不一定好，认真把一份工作做到最好才是正确的选择。 ★有些人经常换工作是因为他们：",
+      "options": {
+       "A": "喜欢变化",
+       "B": "特别努力",
+       "C": "没有能力",
+       "D": "相信新工作更好"
+      },
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     },
+     {
+      "n": 41,
+      "zh": "有些人喜欢不停地换工作，他们总以为新工作一定比现在的好。实际上，一般情况下，适应一个新的工作需要一年时间，因此，经常换工作不一定好，认真把一份工作做到最好才是正确的选择。 ★这段话主要告诉我们什么？",
+      "options": {
+       "A": "要经常换工作",
+       "B": "适应新工作很快",
+       "C": "新工作更好",
+       "D": "不要着急换工作"
+      },
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     },
+     {
+      "n": 42,
+      "zh": "《富爸爸，穷爸爸》讲了这样一个故事，“我”的爸爸没有钱，是个穷爸爸；朋友的爸爸是个富爸爸，很有钱。两位爸爸对金钱的看法完全不同，这使“我”对金钱有了兴趣，最终，“我”接受了朋友爸爸的看法，也就是书中所说的“富爸爸”的看法：人们不应该为钱工作，而要让钱为我们工作。 ★这本书中的“穷爸爸”是指：",
+      "options": {
+       "A": "钱",
+       "B": "工作",
+       "C": "“我”的爸爸",
+       "D": "朋友的爸爸"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     },
+     {
+      "n": 43,
+      "zh": "《富爸爸，穷爸爸》讲了这样一个故事，“我”的爸爸没有钱，是个穷爸爸；朋友的爸爸是个富爸爸，很有钱。两位爸爸对金钱的看法完全不同，这使“我”对金钱有了兴趣，最终，“我”接受了朋友爸爸的看法，也就是书中所说的“富爸爸”的看法：人们不应该为钱工作，而要让钱为我们工作。 ★“富爸爸”对金钱的看法是：",
+      "options": {
+       "A": "为钱工作",
+       "B": "钱并不重要",
+       "C": "钱让人快乐",
+       "D": "让钱为我们服务"
+      },
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "三、书写 第一部分",
+    "type_zh": "书写 第一部分",
+    "instruction_zh": "第44–48题：完成句子。",
+    "items": [
+     {
+      "n": "例",
+      "zh": "那座桥　800年的　历史　有　了",
+      "answer": "那座桥有800年的历史了。",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        36
+       ]
+      }
+     },
+     {
+      "n": 44,
+      "zh": "通知　大家　高校长让我　下午两点开会",
+      "answer": "高校长让我通知大家下午两点开会。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     },
+     {
+      "n": 45,
+      "zh": "改变　第一印象　很　一般　难",
+      "answer": "第一印象一般很难改变。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     },
+     {
+      "n": 46,
+      "zh": "两名服务员　招聘　楼下的　要　超市",
+      "answer": "楼下的超市要招聘两名服务员。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     },
+     {
+      "n": 47,
+      "zh": "安排　时间　得　紧张　很",
+      "answer": "时间安排得很紧张。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     },
+     {
+      "n": 48,
+      "zh": "印象　那位司机　很深的　给我　留下了",
+      "answer": "那位司机给我留下了很深的印象。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "三、书写 第二部分",
+    "type_zh": "书写 第二部分",
+    "instruction_zh": "第49–50题：看图，用词造句。",
+    "items": [
+     {
+      "n": "例",
+      "zh": "乒乓球",
+      "picture_desc_en": "a young woman holding a table-tennis paddle and ball, about to serve",
+      "answer": "她很喜欢打乒乓球。",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        37
+       ]
+      }
+     },
+     {
+      "n": 49,
+      "zh": "安排",
+      "picture_desc_en": "a wall clock with a daily schedule chart attached to its face, hands at about 3:20",
+      "answer": "这次面试时间安排得很紧张。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     },
+     {
+      "n": 50,
+      "zh": "准时",
+      "picture_desc_en": "a man in a dark suit and tie looking at the watch on his wrist and smiling",
+      "answer": "他这个人一直很准时，开会从来不迟到。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "answers_ref": {
+   "book": "teacher",
+   "pages": [
+    106,
+    107,
+    108
+   ]
+  }
+ },
+ "unclear": [
+  "Аудио: сурах бичигт CD тэмдэг 03-1…03-5 (课文1–5), дасгалын номд 03-1…03-3 (听力 第一–三部分) — файлын нэр мэдэгдэхгүй тул audio талбар орхисон.",
+  "Сурах бичгийн 拼音课文-ын гарчгийн пиньинь (Xiǎo Xià hé Xiǎoyǔ liáo Xiǎoyǔ miànshì de qíngkuàng / Mǎ jīnglǐ hé Xiǎo Lín liáo zhāopìn de shìqing / Xiǎo Lín hé Wáng Jìng liáo Wáng Jìng de gōngzuò qíngkuàng) болон ярилцагчийн нэрийн пиньинь схемд талбаргүй тул lines.pinyin-д зөвхөн яриаг оруулсан.",
+  "课文4, 课文5 (短文) номд гарчиггүй — title_zh орхисон.",
+  "生词 15 另外-г сурах бичиг «conj. besides, in addition» гэж өгсөн; 注释3 нь 另外-г代词/副词/连词 гурван хэрэглээгээр тайлбарласан — номд байгаагаар.",
+  "注释3-ын «比一比 另外—另» (相同点/不同点) болон «做一做 Tick or cross» хүснэгтийг схемд тусдаа талбаргүй тул grammar[3].explanation_zh/en-д нэмж, 做一做 5 өгүүлбэрийг practice-д оруулсан; (1)(2)-ын √/× нь номд жишээ болж хэвлэгдсэн, (3)–(5) хариултгүй.",
+  "HSK4-т 汉字 хэсэг байхгүй, оронд нь 扩展 «同字词 时» — textbook.characters-т оруулсан; 做一做 选词填空-ыг exercises «扩展»-д, хариултыг багшийн ном PDF х.31-ээс. Багшийн номын 字形辨认 хосуудыг (挺—庭 …) characters.confusable_pairs-д.",
+  "Сурах бичгийн 根据课文内容回答问题 (课文1–3: 6 асуулт, 课文4–5: 4 асуулт), 练一练, 练习1 复述, 练习2 选词填空 — хариулт сурах бичиг, багшийн номд хэвлэгдээгүй тул answer талбаргүй. Багшийн номын 课文 асуулт (teacher.text_questions, 14) нь сурах бичгийн асуултаас өөр бөгөөд хариултгүй (оронд нь 课文扩展练习-ын өгүүлэмж teacher.steps «4 课文»-д).",
+  "Багшийн ном PDF х.25 语言点1 运用-ын 参考答案 IV: «对通过考试，我挺没有信心的。» — номд байгаагаар.",
+  "Багшийн ном PDF х.23 生词讲解: «材料（制作毽子的材料图）» — скан дээр 毽/键 ялгахад хэцүү; 毽子 гэж бичсэн.",
+  "Дасгалын номд энэ хичээлд 听力 3 хэсэг (第四部分 байхгүй), 复习 хэсэг байхгүй. 阅读 第一部分 хоёр дэд хэсэгтэй (23–26, 27–30) — хоёр section болгосон. Сонголтын түлхүүр үгийн санг (A 能力 …) item.options-д давтсан.",
+  "Дасгалын ном 听力 第三部分 19–22: номд зөвхөн сонголт хэвлэгдсэн; асуулт, бичвэрийг багшийн номын хавсралтаас (PDF х.108) item.zh / transcript_zh-д оруулсан. 第二/三部分 6–18: item.zh-д хавсралтын «问：» асуулт.",
+  "Дасгалын номын жишээ (例如) item-уудын хариулт дасгалын номд өөрт нь хэвлэгдсэн (answer_ref workbook); 1–50-ын хариулт багшийн номын хавсралт PDF х.108 «参考答案».",
+  "Дасгалын ном 49–50 (看图，用词造句) — зургийг picture_desc_en-д товч дүрсэлсэн; хариулт нь багшийн номын жишээ хариулт.",
+  "热身1-ийн зургийн дүрслэл (pictures_desc_en) зургаас; хариулт багшийн ном PDF х.23: ①F ②D ③A ④E ⑤C ⑥B.",
+  "Багшийн номд энэ түвшинд 本课小结 байхгүй — summary_zh орхисон. 教学目标-ын «31个四级大纲词汇» нь сурах бичгийн 31 үгтэй таарч байна.",
+  "verified_pages: сурах бичиг PDF х.35–48, багшийн ном х.22–31, 106–108, дасгалын ном х.28–37 (гурван номын дугаарыг нэгтгэсэн жагсаалт)."
+ ],
+ "verified_pages": [
+  22,
+  23,
+  24,
+  25,
+  26,
+  27,
+  28,
+  29,
+  30,
+  31,
+  32,
+  33,
+  34,
+  35,
+  36,
+  37,
+  38,
+  39,
+  40,
+  41,
+  42,
+  43,
+  44,
+  45,
+  46,
+  47,
+  48,
+  106,
+  107,
+  108
+ ],
+ "schema_version": 1
+}

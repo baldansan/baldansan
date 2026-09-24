@@ -1,0 +1,2296 @@
+{
+ "level": "hsk4",
+ "lesson": 16,
+ "book": "HSK4B",
+ "title_zh": "生活可以更美好",
+ "title_pinyin": "Shēnghuó kěyǐ gèng měihǎo",
+ "title_en": "Life can be better",
+ "textbook": {
+  "ref": {
+   "book": "textbook",
+   "pages": [
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98
+   ]
+  },
+  "warmup": [
+   {
+    "instruction_zh": "给下面的词语选择对应的图片，并用这个词语根据图片说一个句子。",
+    "instruction_en": "Match the pictures with the words and describe the pictures with sentences using the words.",
+    "items": [
+     "①激动 jīdòng",
+     "②参观 cānguān",
+     "③失望 shīwàng",
+     "④挂 guà",
+     "⑤推 tuī",
+     "⑥记者 jìzhě"
+    ],
+    "pictures_desc_en": [
+     "A: visitors looking at exhibits in glass display cases in a museum hall",
+     "B: several young people leaning together to push a large white board",
+     "C: two young women hugging and shouting with excitement",
+     "D: a man sitting on the floor in a corner of a bare room, head in his hand, looking dejected",
+     "E: a young man and a young woman holding up a picture frame against a wall, with cardboard boxes nearby",
+     "F: a crowd of people holding cameras and microphones, taking pictures"
+    ]
+   },
+   {
+    "instruction_zh": "遇到下面这些情况，你会拒绝吗？说说你的原因。",
+    "instruction_en": "Will you say no in the following situations? Give your reasons.",
+    "items": [
+     "①你准备结婚，想买房子，需要花很多钱，但这时你的好朋友突然生病了，向你借钱。",
+     "②你刚刚得到读博士（bóshì）的机会，同时也通过了工作面试，公司通知你去上班。",
+     "③放假了你本来打算去国外旅行，可是父母说准备来看你。",
+     "④一个同学没有好好儿复习，希望你能在考试的时候帮助他。"
+    ]
+   }
+  ],
+  "texts": [
+   {
+    "n": 1,
+    "title_zh": "小夏出国留学遇到了问题",
+    "kind": "dialogue",
+    "lines": [
+     {
+      "speaker": "小雨",
+      "zh": "你马上就要硕士毕业了吧？将来有什么打算？",
+      "pinyin": "Nǐ mǎshàng jiù yào shuòshì bì yè le ba? Jiānglái yǒu shénme dǎsuàn?"
+     },
+     {
+      "speaker": "小夏",
+      "zh": "我想出国读博士，一直在准备办签证需要的材料。",
+      "pinyin": "Wǒ xiǎng chū guó dú bóshì, yìzhí zài zhǔnbèi bàn qiānzhèng xūyào de cáiliào."
+     },
+     {
+      "speaker": "小雨",
+      "zh": "现在材料准备得怎么样了？",
+      "pinyin": "Xiànzài cáiliào zhǔnbèi de zěnmeyàng le?"
+     },
+     {
+      "speaker": "小夏",
+      "zh": "成绩证明和护照已经准备好了，另外，还跟国外的大学取得了联系，填写了报名表格。",
+      "pinyin": "Chéngjì zhèngmíng hé hùzhào yǐjīng zhǔnbèihǎo le, lìngwài, hái gēn guówài de dàxué qǔdéle liánxì, tiánxiěle bào míng biǎogé."
+     },
+     {
+      "speaker": "小雨",
+      "zh": "还应该有国外大学给你的邀请信吧？他们把邀请信传真给你了吗？",
+      "pinyin": "Hái yīnggāi yǒu guówài dàxué gěi nǐ de yāoqǐngxìn ba? Tāmen bǎ yāoqǐngxìn chuánzhēn gěi nǐ le ma?"
+     },
+     {
+      "speaker": "小夏",
+      "zh": "没有啊，下个星期我就要去使馆办签证了，这可怎么办？",
+      "pinyin": "Méiyǒu a, xià ge xīngqī wǒ jiù yào qù shǐguǎn bàn qiānzhèng le, zhè kě zěnme bàn?"
+     },
+     {
+      "speaker": "小雨",
+      "zh": "这可是个大问题，我也不太清楚。我帮你查一下学校的电话号码，你打电话问一下吧。",
+      "pinyin": "Zhè kě shì ge dà wèntí, wǒ yě bú tài qīngchu. Wǒ bāng nǐ chá yíxià xuéxiào de diànhuà hàomǎ, nǐ dǎ diànhuà wèn yíxià ba."
+     }
+    ],
+    "new_words": [
+     {
+      "n": 1,
+      "zh": "博士",
+      "pinyin": "bóshì",
+      "pos": "n.",
+      "en": "doctor (academic degree)",
+      "text": 1
+     },
+     {
+      "n": 2,
+      "zh": "签证",
+      "pinyin": "qiānzhèng",
+      "pos": "n.",
+      "en": "visa",
+      "text": 1
+     },
+     {
+      "n": 3,
+      "zh": "报名",
+      "pinyin": "bào míng",
+      "pos": "v.",
+      "en": "to apply, to sign up",
+      "text": 1
+     },
+     {
+      "n": 4,
+      "zh": "表格",
+      "pinyin": "biǎogé",
+      "pos": "n.",
+      "en": "form, table",
+      "text": 1
+     },
+     {
+      "n": 5,
+      "zh": "传真",
+      "pinyin": "chuánzhēn",
+      "pos": "v.",
+      "en": "to send by fax",
+      "text": 1
+     },
+     {
+      "n": 6,
+      "zh": "号码",
+      "pinyin": "hàomǎ",
+      "pos": "n.",
+      "en": "number",
+      "text": 1
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "title_zh": "王老板告诉李进自己成功的经验",
+    "kind": "dialogue",
+    "lines": [
+     {
+      "speaker": "李进",
+      "zh": "谢谢您带我参观您的公司。在参观过程中我很激动，有个问题一直想问您。",
+      "pinyin": "Xièxie nín dài wǒ cānguān nín de gōngsī. Zài cānguān guòchéng zhōng wǒ hěn jīdòng, yǒu ge wèntí yìzhí xiǎng wèn nín."
+     },
+     {
+      "speaker": "王老板",
+      "zh": "好啊！小伙子，咱们一边吃西瓜，一边聊。",
+      "pinyin": "Hǎo a! Xiǎohuǒzi, zánmen yìbiān chī xīguā, yìbiān liáo."
+     },
+     {
+      "speaker": "李进",
+      "zh": "您从大学毕业开始工作，到现在才十年时间，怎么给公司赚了这么多钱？这让我非常吃惊。我想向您学习一下成功的经验。",
+      "pinyin": "Nín cóng dàxué bì yè kāishǐ gōngzuò, dào xiànzài cái shí nián shíjiān, zěnme gěi gōngsī zhuànle zhème duō qián? Zhè ràng wǒ fēicháng chī jīng. Wǒ xiǎng xiàng nín xuéxí yíxià chénggōng de jīngyàn."
+     },
+     {
+      "speaker": "王老板",
+      "zh": "这个问题以前一个记者也问过我。做生意时虽然会遇到各种压力和困难，但是大家的机会都是相同的。你看，这里有三块大小不同的西瓜，我们用西瓜的大小代表钱的多少，要是我们一起开始吃，你会先选哪块？",
+      "pinyin": "Zhège wèntí yǐqián yí ge jìzhě yě wènguo wǒ. Zuò shēngyi shí suīrán huì yùdào gè zhǒng yālì hé kùnnan, dànshì dàjiā de jīhuì dōu shì xiāngtóng de. Nǐ kàn, zhèli yǒu sān kuài dà xiǎo bù tóng de xīguā, wǒmen yòng xīguā de dà xiǎo dàibiǎo qián de duō shǎo, yàoshi wǒmen yìqǐ kāishǐ chī, nǐ huì xiān xuǎn nǎ kuài?"
+     },
+     {
+      "speaker": "李进",
+      "zh": "我肯定先吃最大的一块了，难道您会先吃小的，放弃吃大块的机会吗？",
+      "pinyin": "Wǒ kěndìng xiān chī zuì dà de yí kuài le, nándào nín huì xiān chī xiǎo de, fàngqì chī dà kuài de jīhuì ma?"
+     },
+     {
+      "speaker": "王老板",
+      "zh": "我会先吃最小的一块，因为在你没吃完最大的那块时，我还有时间再多吃一块，最后一定比你吃的西瓜多。听完我的回答，恐怕你已经知道我的答案了吧。",
+      "pinyin": "Wǒ huì xiān chī zuì xiǎo de yí kuài, yīnwèi zài nǐ méi chīwán zuì dà de nà kuài shí, wǒ hái yǒu shíjiān zài duō chī yí kuài, zuìhòu yídìng bǐ nǐ chī de xīguā duō. Tīngwán wǒ de huídá, kǒngpà nǐ yǐjīng zhīdào wǒ de dá'àn le ba."
+     }
+    ],
+    "new_words": [
+     {
+      "n": 7,
+      "zh": "参观",
+      "pinyin": "cānguān",
+      "pos": "v.",
+      "en": "to visit, to look around",
+      "text": 2
+     },
+     {
+      "n": 8,
+      "zh": "激动",
+      "pinyin": "jīdòng",
+      "pos": "adj.",
+      "en": "excited, emotional",
+      "text": 2
+     },
+     {
+      "n": 9,
+      "zh": "小伙子",
+      "pinyin": "xiǎohuǒzi",
+      "pos": "n.",
+      "en": "young man",
+      "text": 2
+     },
+     {
+      "n": 10,
+      "zh": "记者",
+      "pinyin": "jìzhě",
+      "pos": "n.",
+      "en": "journalist, reporter",
+      "text": 2
+     },
+     {
+      "n": 11,
+      "zh": "代表",
+      "pinyin": "dàibiǎo",
+      "pos": "v.",
+      "en": "to represent, to stand for",
+      "star": true,
+      "text": 2
+     },
+     {
+      "n": 12,
+      "zh": "恐怕",
+      "pinyin": "kǒngpà",
+      "pos": "adv.",
+      "en": "(indicating an estimation) I guess...",
+      "text": 2
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "title_zh": "小林不好意思拒绝朋友",
+    "kind": "dialogue",
+    "lines": [
+     {
+      "speaker": "小林",
+      "zh": "今年放假我又回不了家了，这次我父母又要失望了。你有什么计划？",
+      "pinyin": "Jīnnián fàng jià wǒ yòu huí bu liǎo jiā le, zhè cì wǒ fùmǔ yòu yào shīwàng le. Nǐ yǒu shénme jìhuà?"
+     },
+     {
+      "speaker": "小李",
+      "zh": "我计划去郊区住一个月。你不是已经买好火车票了吗？你到底怎么打算的呀？",
+      "pinyin": "Wǒ jìhuà qù jiāoqū zhù yí ge yuè. Nǐ bú shì yǐjīng mǎihǎo huǒchēpiào le ma? Nǐ dàodǐ zěnme dǎsuàn de ya?"
+     },
+     {
+      "speaker": "小林",
+      "zh": "昨天一个外地的好朋友打电话说要来旅游，让我当导游，我实在不好意思拒绝。",
+      "pinyin": "Zuótiān yí ge wàidì de hǎo péngyou dǎ diànhuà shuō yào lái lǚyóu, ràng wǒ dāng dǎoyóu, wǒ shízài bù hǎo yìsi jùjué."
+     },
+     {
+      "speaker": "小李",
+      "zh": "其实拒绝并不表示不愿意帮忙。遇到解决不了的问题或者无法完成的任务时，拒绝正好说明你对朋友负责。这也是对你父母负责的态度。",
+      "pinyin": "Qíshí jùjué bìng bù biǎoshì bú yuànyì bāng máng. Yùdào jiějué bu liǎo de wèntí huòzhě wúfǎ wánchéng de rènwu shí, jùjué zhènghǎo shuōmíng nǐ duì péngyou fùzé. Zhè yě shì duì nǐ fùmǔ fùzé de tàidu."
+     },
+     {
+      "speaker": "小林",
+      "zh": "既然别人找我帮忙，说明他真的很需要我的帮助。我担心要是说“不”的话，会让他误会和伤心。",
+      "pinyin": "Jìrán biérén zhǎo wǒ bāng máng, shuōmíng tā zhēn de hěn xūyào wǒ de bāngzhù. Wǒ dānxīn yàoshi shuō “bù” dehuà, huì ràng tā wùhuì hé shāngxīn."
+     },
+     {
+      "speaker": "小李",
+      "zh": "别担心！如果你用一个既合适又礼貌的方法告诉朋友，他一定会原谅你的。",
+      "pinyin": "Bié dānxīn! Rúguǒ nǐ yòng yí ge jì héshì yòu lǐmào de fāngfǎ gàosu péngyou, tā yídìng huì yuánliàng nǐ de."
+     }
+    ],
+    "new_words": [
+     {
+      "n": 13,
+      "zh": "失望",
+      "pinyin": "shīwàng",
+      "pos": "v.",
+      "en": "disappointed",
+      "text": 3
+     },
+     {
+      "n": 14,
+      "zh": "郊区",
+      "pinyin": "jiāoqū",
+      "pos": "n.",
+      "en": "suburb, outskirts",
+      "text": 3
+     },
+     {
+      "n": 15,
+      "zh": "到底",
+      "pinyin": "dàodǐ",
+      "pos": "adv.",
+      "en": "(used in questions for emphasis) ... on earth",
+      "text": 3
+     },
+     {
+      "n": 16,
+      "zh": "呀",
+      "pinyin": "ya",
+      "pos": "part.",
+      "en": "a variant of the interjection “啊”, used at the end of a question to soften the tone",
+      "text": 3
+     },
+     {
+      "n": 17,
+      "zh": "导游",
+      "pinyin": "dǎoyóu",
+      "pos": "n.",
+      "en": "tour guide",
+      "text": 3
+     },
+     {
+      "n": 18,
+      "zh": "礼貌",
+      "pinyin": "lǐmào",
+      "pos": "n.",
+      "en": "polite",
+      "text": 3
+     },
+     {
+      "n": 19,
+      "zh": "原谅",
+      "pinyin": "yuánliàng",
+      "pos": "v.",
+      "en": "to forgive",
+      "text": 3
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "kind": "narrative",
+    "lines": [
+     {
+      "zh": "有些同学经常把“明天”和“将来”挂在嘴边，常说作业明天再完成，下次考试一定好好儿复习，等等。",
+      "pinyin": "Yǒuxiē tóngxué jīngcháng bǎ “míngtiān” hé “jiānglái” guà zài zuǐ biān, cháng shuō zuòyè míngtiān zài wánchéng, xià cì kǎoshì yídìng hǎohāor fùxí, děngděng."
+     },
+     {
+      "zh": "这种态度会浪费时间，不但会让你到最后什么事情都做不成，而且还得不到别人的同情。",
+      "pinyin": "Zhè zhǒng tàidu huì làngfèi shíjiān, búdàn huì ràng nǐ dào zuìhòu shénme shìqing dōu zuò bu chéng, érqiě hái dé bu dào biérén de tóngqíng."
+     },
+     {
+      "zh": "所以不要把什么事情都推到“明天”，一切从现在做起。",
+      "pinyin": "Suǒyǐ búyào bǎ shénme shìqing dōu tuīdào “míngtiān”, yíqiè cóng xiànzài zuòqǐ."
+     },
+     {
+      "zh": "就拿学汉语来说吧，首先要注意课前预习，找出第二天要学习的重点；其次，上课时要认真听，不能马虎；最后，课后要记得复习。",
+      "pinyin": "Jiù ná xué Hànyǔ lái shuō ba, shǒuxiān yào zhùyì kè qián yùxí, zhǎochū dì-èr tiān yào xuéxí de zhòngdiǎn; qícì, shàng kè shí yào rènzhēn tīng, bù néng mǎhu; zuìhòu, kè hòu yào jìde fùxí."
+     },
+     {
+      "zh": "只要这样，汉语就能越学越好，越说越自信。",
+      "pinyin": "Zhǐyào zhèyàng, Hànyǔ jiù néng yuè xué yuè hǎo, yuè shuō yuè zìxìn."
+     }
+    ],
+    "new_words": [
+     {
+      "n": 20,
+      "zh": "挂",
+      "pinyin": "guà",
+      "pos": "v.",
+      "en": "to hang, to put up",
+      "text": 4
+     },
+     {
+      "n": 21,
+      "zh": "同情",
+      "pinyin": "tóngqíng",
+      "pos": "v.",
+      "en": "to show sympathy for",
+      "text": 4
+     },
+     {
+      "n": 22,
+      "zh": "推",
+      "pinyin": "tuī",
+      "pos": "v.",
+      "en": "to put off, to postpone",
+      "text": 4
+     },
+     {
+      "n": 23,
+      "zh": "预习",
+      "pinyin": "yùxí",
+      "pos": "v.",
+      "en": "to prepare lessons before class",
+      "text": 4
+     },
+     {
+      "n": 24,
+      "zh": "重点",
+      "pinyin": "zhòngdiǎn",
+      "pos": "n.",
+      "en": "focal point, emphasis",
+      "text": 4
+     },
+     {
+      "n": 25,
+      "zh": "马虎",
+      "pinyin": "mǎhu",
+      "pos": "adj.",
+      "en": "careless, slipshod",
+      "text": 4
+     },
+     {
+      "n": 26,
+      "zh": "自信",
+      "pinyin": "zìxìn",
+      "pos": "adj.",
+      "en": "self-confident",
+      "text": 4
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "kind": "narrative",
+    "lines": [
+     {
+      "zh": "当你认为自己在哪方面很优秀时，千万要冷静，不要骄傲。",
+      "pinyin": "Dāng nǐ rènwéi zìjǐ zài nǎ fāngmiàn hěn yōuxiù shí, qiānwàn yào lěngjìng, búyào jiāo'ào."
+     },
+     {
+      "zh": "因为这个世界很大，“天外有天，人外有人”，很可能有人在这方面比你更厉害。",
+      "pinyin": "Yīnwèi zhège shìjiè hěn dà, “tiān wài yǒu tiān, rén wài yǒu rén”, hěn kěnéng yǒu rén zài zhè fāngmiàn bǐ nǐ gèng lìhai."
+     },
+     {
+      "zh": "你现在是第一，并不表示你永远都是第一。",
+      "pinyin": "Nǐ xiànzài shì dì-yī, bìng bù biǎoshì nǐ yǒngyuǎn dōu shì dì-yī."
+     },
+     {
+      "zh": "就像比赛一样，没有人会永远输，也没有人会一直赢。",
+      "pinyin": "Jiù xiàng bǐsài yíyàng, méiyǒu rén huì yǒngyuǎn shū, yě méiyǒu rén huì yìzhí yíng."
+     },
+     {
+      "zh": "我们知道的越多，就会发现自己不懂的也越多。",
+      "pinyin": "Wǒmen zhīdào de yuè duō, jiù huì fāxiàn zìjǐ bù dǒng de yě yuè duō."
+     },
+     {
+      "zh": "我们应该重视平时的积累，多向周围的人学习。",
+      "pinyin": "Wǒmen yīnggāi zhòngshì píngshí de jīlěi, duō xiàng zhōuwéi de rén xuéxí."
+     },
+     {
+      "zh": "如果你敢诚实地说出自己对哪方面不了解，并不说明自己比别人差，相反，这样做更能得到别人的尊重。",
+      "pinyin": "Rúguǒ nǐ gǎn chéngshí de shuōchū zìjǐ duì nǎ fāngmiàn bù liǎojiě, bìng bù shuōmíng zìjǐ bǐ biérén chà, xiāngfǎn, zhèyàng zuò gèng néng dédào biérén de zūnzhòng."
+     }
+    ],
+    "new_words": [
+     {
+      "n": 27,
+      "zh": "冷静",
+      "pinyin": "lěngjìng",
+      "pos": "adj.",
+      "en": "calm, composed",
+      "text": 5
+     },
+     {
+      "n": 28,
+      "zh": "输",
+      "pinyin": "shū",
+      "pos": "v.",
+      "en": "to lose, to suffer defeat",
+      "text": 5
+     },
+     {
+      "n": 29,
+      "zh": "重视",
+      "pinyin": "zhòngshì",
+      "pos": "v.",
+      "en": "to attach importance to",
+      "text": 5
+     },
+     {
+      "n": 30,
+      "zh": "敢",
+      "pinyin": "gǎn",
+      "pos": "v.",
+      "en": "to dare",
+      "text": 5
+     },
+     {
+      "n": 31,
+      "zh": "尊重",
+      "pinyin": "zūnzhòng",
+      "pos": "v.",
+      "en": "to respect",
+      "text": 5
+     }
+    ]
+   }
+  ],
+  "grammar": [
+   {
+    "n": 1,
+    "title_zh": "可",
+    "explanation_zh": "“可”，副词，表示强调，还可用在问句里加强语气。例如：",
+    "explanation_en": "The adverb “可” is used for emphasis. When used in a rhetorical question, it strengthens the tone. For example:",
+    "examples": [
+     {
+      "n": 1,
+      "zh": "这可是个大问题，我也不太清楚。"
+     },
+     {
+      "n": 2,
+      "zh": "下个星期就要去使馆办签证了，这可怎么办？"
+     },
+     {
+      "n": 3,
+      "zh": "我办了一张那个理发店的会员卡，理发可节约了不少钱。"
+     }
+    ],
+    "practice_instruction_zh": "完成句子 Complete the sentences.",
+    "practice": [
+     {
+      "n": 1,
+      "zh": "________，竟然连火车票都没拿。",
+      "hint_zh": "可"
+     },
+     {
+      "n": 2,
+      "zh": "________，把报名表格填好给我就可以了。",
+      "hint_zh": "可"
+     },
+     {
+      "n": 3,
+      "zh": "他房间这么乱，________。",
+      "hint_zh": "可"
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "title_zh": "恐怕",
+    "explanation_zh": "“恐怕”，动词，表示“担心”的意思。例如：\n“恐怕”，副词，表示“估计，而且有点儿担心”的意思。例如：\n“恐怕”，副词，表示估计、推测，有“大概、也许”的意思。例如：\n【比一比 恐怕—怕】\n相同点：\n1. 两者都是动词，表示“担心”的意思。①\n2. 两者也都是副词，表示估计，常有“担心”的意味。②\n不同点：\n1. 表示意思①时，“恐怕”只能用在动词前面，不能用在名词前面；而“怕”既可用在动词前面，也可用在名词前面。\n2. 表示意思②时，“恐怕”可用在主语前或后；“怕”只用在主语后面。\n3. “怕”是动词时可以带宾语，表示“害怕”的意思，指主语对某个人、某种东西、某种情况的畏惧；“恐怕”没有此用法。\n4. “恐怕”是副词时，还可以表示估计或推测，常可替换成“也许、大概”；“怕”没有此用法。",
+    "explanation_en": "The verb “恐怕” means “to be afraid”. For example:\nThe adverb “恐怕” means “according to estimation, and being a little worried”. For example:\nThe adverb “恐怕” indicates an estimation or guess, meaning “probably, perhaps”. For example:\n[Compare 恐怕—怕]\nSimilarity:\n1. Both can be used as verbs, meaning “to be afraid”.\n2. Both can be used as adverbs indicating estimation, often implying “being worried”.\nDifferences:\n1. In case ①, “恐怕” can only be used before a verb, but not before a noun, while “怕” can be used before either a verb or a noun.\n2. In case ②, “恐怕” can be used either before or after the subject, while “怕” is only used after the subject.\n3. When used as a verb, “怕” can take an object, meaning “to fear (somebody, something, or a certain situation)”, while “恐怕” has no such usage.\n4. When used as an adverb, “恐怕” can indicate an estimation or guess, and can usually be replaced by “也许/大概 (maybe/perhaps)”, while “怕” has no such usage.",
+    "examples": [
+     {
+      "n": 1,
+      "zh": "我的工作经验还比较少，那份工作我恐怕完成不了。",
+      "note_zh": "动词：担心"
+     },
+     {
+      "n": 2,
+      "zh": "这几个动作我恐怕做得不标准，所以比赛前要多多练习。",
+      "note_zh": "动词：担心"
+     },
+     {
+      "n": 3,
+      "zh": "这个会议室的座位恐怕不够，还是换到旁边那个大的吧。",
+      "note_zh": "副词：估计，而且有点儿担心"
+     },
+     {
+      "n": 4,
+      "zh": "有些事情如果你一定要找一个正确答案，恐怕会让简单的生活变得复杂。",
+      "note_zh": "副词：估计，而且有点儿担心"
+     },
+     {
+      "n": 5,
+      "zh": "听完我的回答，恐怕你已经知道我的答案了吧。",
+      "note_zh": "副词：估计、推测"
+     },
+     {
+      "n": 6,
+      "zh": "京剧演出7点就开始了，现在恐怕已经结束了。",
+      "note_zh": "副词：估计、推测"
+     },
+     {
+      "zh": "从这儿坐地铁到那儿至少得五十分钟，马克恐怕/怕来不及了。",
+      "note_zh": "比一比 相同点1"
+     },
+     {
+      "zh": "如果说一对夫妻缺少或者没有共同语言，那问题恐怕/怕就大了。",
+      "note_zh": "比一比 相同点2"
+     },
+     {
+      "zh": "我恐怕/怕忘了这件事，所以把这件事记在本子上。",
+      "note_zh": "比一比 不同点1"
+     },
+     {
+      "zh": "我怕你忘了这件事，所以打电话提醒你一下你。",
+      "note_zh": "比一比 不同点1"
+     },
+     {
+      "zh": "刚才听广播说明天可能会下大雨，恐怕足球比赛不能举行了。",
+      "note_zh": "比一比 不同点2"
+     },
+     {
+      "zh": "刚才听广播说明天可能会下大雨，足球比赛恐怕/怕不能举行了。",
+      "note_zh": "比一比 不同点2"
+     },
+     {
+      "zh": "找工作关键还是看能力，有能力的人不怕找不到好工作。",
+      "note_zh": "比一比 不同点3"
+     },
+     {
+      "zh": "好久没见过他了，他离开这里恐怕有二十天了。",
+      "note_zh": "比一比 不同点4"
+     }
+    ],
+    "practice_instruction_zh": "完成句子 Complete the sentences.",
+    "practice": [
+     {
+      "n": 1,
+      "zh": "________，你再去叫两个人过来一起抬。",
+      "hint_zh": "恐怕"
+     },
+     {
+      "n": 2,
+      "zh": "车撞得不严重，就是把车门擦坏了，________。",
+      "hint_zh": "恐怕"
+     },
+     {
+      "n": 3,
+      "zh": "这个行李箱有点儿小，________。",
+      "hint_zh": "恐怕"
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "title_zh": "到底",
+    "explanation_zh": "“到底”，动词，表示“一直到结束、到终点”的意思。例如：\n“到底”，副词，用在疑问句或者带疑问代词的非疑问句中，表示“进一步探究”的意思。不能用于带“吗”的是非疑问句中。例如：\n“到底”用在疑问句或者带疑问代词的非疑问句中时，主语如果是疑问代词，“到底”只能放在主语前。例如：",
+    "explanation_en": "The verb “到底” means “till the end”. For example:\nThe adverb “到底” is used in an interrogative sentence or a sentence with an interrogative pronoun, indicating to probe further. It cannot be used in a yes-no question with “吗”. For example:\nWhen used in an interrogative sentence or a sentence with an interrogative pronoun, “到底” should be put before the subject if the subject is the interrogative pronoun. For example:",
+    "examples": [
+     {
+      "n": 1,
+      "zh": "今天我一定陪你逛街逛到底，保证让你买到合适的衣服。",
+      "note_zh": "动词"
+     },
+     {
+      "n": 2,
+      "zh": "要是你觉得情人节只送巧克力还不够浪漫，那就再带她看《将爱情进行到底》这个爱情电影吧。",
+      "note_zh": "动词"
+     },
+     {
+      "n": 3,
+      "zh": "你不是已经买好火车票了吗？你到底怎么打算的呀？",
+      "note_zh": "副词"
+     },
+     {
+      "n": 4,
+      "zh": "我给他打了好几次电话了，可是一直没人接，也不知道他到底是怎么回事。",
+      "note_zh": "副词"
+     },
+     {
+      "n": 5,
+      "zh": "到底谁去参加比赛，大家还没决定。",
+      "note_zh": "主语是疑问代词"
+     },
+     {
+      "n": 6,
+      "zh": "每个人都希望自己健康，那么到底什么是健康呢？不同的人有不同的理解。",
+      "note_zh": "主语是疑问代词"
+     }
+    ],
+    "practice_instruction_zh": "完成句子 Complete the sentences.",
+    "practice": [
+     {
+      "n": 1,
+      "zh": "虽然这是两棵不同的植物，________。",
+      "hint_zh": "到底"
+     },
+     {
+      "n": 2,
+      "zh": "从这儿一直往前走，________。",
+      "hint_zh": "到底"
+     },
+     {
+      "n": 3,
+      "zh": "明天就是报名的最后一天了，________。",
+      "hint_zh": "到底"
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "title_zh": "拿……来说",
+    "explanation_zh": "“拿……来说”结构中“拿”做介词，用来引入要说明的事物或情况。例如：",
+    "explanation_en": "In the structure “拿……来说”, “拿” is a preposition used to introduce the matter or situation to be illustrated. For example:",
+    "structure_rows": [
+     "拿……来说"
+    ],
+    "examples": [
+     {
+      "n": 1,
+      "zh": "这次招聘很多人符合公司的要求，拿他来说，他不仅专业符合职业要求，而且还有工作经验。"
+     },
+     {
+      "n": 2,
+      "zh": "如果一个汉字中有“氵”这个部分，说明这个字的意思很可能和水有关系，拿“河、流、洗、汁”这几个字来说，它们都跟水有关。"
+     },
+     {
+      "n": 3,
+      "zh": "所以不要把什么事情都推到“明天”，一切从现在做起。就拿学汉语来说吧，首先要注意课前预习，找出第二天要学习的重点……"
+     }
+    ],
+    "practice_instruction_zh": "完成句子 Complete the sentences.",
+    "practice": [
+     {
+      "n": 1,
+      "zh": "有的人一遇到困难就想放弃，________。",
+      "hint_zh": "拿……来说"
+     },
+     {
+      "n": 2,
+      "zh": "保护环境应该从小事做起，________。",
+      "hint_zh": "拿……来说"
+     },
+     {
+      "n": 3,
+      "zh": "没有工作计划很容易让人手忙脚乱，________。",
+      "hint_zh": "拿……来说"
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "title_zh": "敢",
+    "explanation_zh": "“敢”，能愿动词，用在动词前面，表示有把握做某事。例如：",
+    "explanation_en": "The modal verb “敢” is used before a verb, indicating being confident about doing something. For example:",
+    "examples": [
+     {
+      "n": 1,
+      "zh": "我们应该把那些敢说真话的人当成“镜子”，这样才能及时发现自己的缺点。"
+     },
+     {
+      "n": 2,
+      "zh": "小时候我总喜欢躺在床上看书，结果眼睛越来越不好，所以从那儿以后我就不敢再躺着看书了。"
+     },
+     {
+      "n": 3,
+      "zh": "如果你敢诚实地说出自己对哪方面不了解，并不说明自己比别人差，相反，这样做更能得到别人的尊重。"
+     }
+    ],
+    "practice_instruction_zh": "完成句子 Complete the sentences.",
+    "practice": [
+     {
+      "n": 1,
+      "zh": "________？小心咳嗽得更厉害。",
+      "hint_zh": "敢"
+     },
+     {
+      "n": 2,
+      "zh": "她打网球打得特别棒，________。",
+      "hint_zh": "敢"
+     },
+     {
+      "n": 3,
+      "zh": "老师应该为学生提供一种愉快的学习环境，________。",
+      "hint_zh": "敢"
+     }
+    ]
+   }
+  ],
+  "exercises": [
+   {
+    "n": "注释2 比一比 做一做",
+    "type_zh": "选词填空（恐怕／怕）",
+    "instruction_zh": "选词填空",
+    "instruction_en": "Tick or cross",
+    "word_bank": [
+     [
+      "恐怕",
+      "怕"
+     ]
+    ],
+    "items": [
+     {
+      "n": 1,
+      "zh": "如果没有你们的帮助，这次找工作________不会这么顺利。",
+      "options": {
+       "恐怕": "✓",
+       "怕": "✓"
+      },
+      "answer": "恐怕 ✓　怕 ✓",
+      "answer_ref": {
+       "book": "textbook",
+       "pages": [
+        91
+       ]
+      }
+     },
+     {
+      "n": 2,
+      "zh": "这次聚会你们怎么准备了这多菜呢？我________他们吃不了。",
+      "options": {
+       "恐怕": "×",
+       "怕": "✓"
+      },
+      "answer": "恐怕 ×　怕 ✓",
+      "answer_ref": {
+       "book": "textbook",
+       "pages": [
+        91
+       ]
+      }
+     },
+     {
+      "n": 3,
+      "zh": "如果你们今晚还想看节目的话，最好现在就出发，再晚了________就没座位了。"
+     },
+     {
+      "n": 4,
+      "zh": "我本来想放假就走，但________现在走不了，老师让我翻译几篇文章。"
+     },
+     {
+      "n": 5,
+      "zh": "遇到任何困难都不要________，只要你努力，成功就离你越来越近。"
+     }
+    ]
+   },
+   {
+    "n": "课文1–3 回答问题",
+    "type_zh": "回答问题",
+    "instruction_zh": "根据课文内容回答问题",
+    "instruction_en": "Answer the questions based on the texts.",
+    "items": [
+     {
+      "n": 1,
+      "zh": "课文1：小夏毕业后计划做什么？顺利吗？为什么？"
+     },
+     {
+      "n": 2,
+      "zh": "课文1：根据课文，如果想出国留学可能需要准备哪些材料？"
+     },
+     {
+      "n": 3,
+      "zh": "课文2：王老板怎么介绍自己的成功经验的？"
+     },
+     {
+      "n": 4,
+      "zh": "课文2：根据王老板的回答，说说他赚这么多钱的原因是什么。"
+     },
+     {
+      "n": 5,
+      "zh": "课文3：小林放假后本来有什么打算？他可能因为什么事情改变计划？"
+     },
+     {
+      "n": 6,
+      "zh": "课文3：小李和小林两个人对“拒绝别人”有哪些不同的理解？"
+     }
+    ]
+   },
+   {
+    "n": "课文4–5 回答问题",
+    "type_zh": "回答问题",
+    "instruction_zh": "根据课文内容回答问题",
+    "instruction_en": "Answer the questions based on the texts.",
+    "items": [
+     {
+      "n": 1,
+      "zh": "课文4：对于“有什么事情明天再说”这句话，你认为正确吗？为什么？"
+     },
+     {
+      "n": 2,
+      "zh": "课文4：根据课文，学汉语应该注意哪些方面的问题？"
+     },
+     {
+      "n": 3,
+      "zh": "课文5：怎么理解“天外有天，人外有人”这句话？"
+     },
+     {
+      "n": 4,
+      "zh": "课文5：要是别人问你问题，可是你不会，你会觉得不好意思吗？为什么？"
+     }
+    ]
+   },
+   {
+    "n": 1,
+    "type_zh": "复述",
+    "instruction_zh": "复述",
+    "instruction_en": "Retell the dialogues.",
+    "items": [
+     {
+      "n": "课文1",
+      "zh": "小夏的语气：马上就要硕士毕业了，我打算出国读博士，……"
+     },
+     {
+      "n": "课文2",
+      "zh": "王老板的语气：以前有一个记者问过我为什么能成功，……"
+     },
+     {
+      "n": "课文3",
+      "zh": "小林的语气：放假我本来计划回家看父母，……"
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "type_zh": "选词填空",
+    "instruction_zh": "选择合适的词语填空",
+    "instruction_en": "Choose the proper words to fill in the blanks.",
+    "word_bank": [
+     [
+      "同情",
+      "参观",
+      "输",
+      "郊区",
+      "原谅"
+     ],
+     [
+      "报名",
+      "预习",
+      "尊重",
+      "推",
+      "号码"
+     ]
+    ],
+    "items": [
+     {
+      "n": 1,
+      "zh": "虽然得到别人的________很容易，但要重新让别人再相信你却很难。"
+     },
+     {
+      "n": 2,
+      "zh": "爱批评人或者没有________心的人是最不受欢迎的，这样的人即使很成功，朋友也很少。"
+     },
+     {
+      "n": 3,
+      "zh": "各位朋友大家好！欢迎来到美丽的海南，这几天就由我带着大家________。"
+     },
+     {
+      "n": 4,
+      "zh": "现在城市里越来越多的人喜欢到________过周末。他们想找一个空气新鲜、安静的地方好好放松一下。"
+     },
+     {
+      "n": 5,
+      "zh": "生活的关键就是：只要你努力做了，不管是________是赢，都一样精彩。"
+     },
+     {
+      "n": 6,
+      "zh": "A：你们这个月空调卖得怎么样？ B：不错，我们现在________出了“以旧换新”的活动，吸引了不少顾客。"
+     },
+     {
+      "n": 7,
+      "zh": "A：他什么时候能和我玩儿？ B：等他________完课文再跟你玩儿，奶奶先陪你做游戏吧。"
+     },
+     {
+      "n": 8,
+      "zh": "A：我考虑了很久，还是决定离开现在的公司。 B：既然这样，那我们________你的选择。"
+     },
+     {
+      "n": 9,
+      "zh": "A：我记得上次关教授把他的手机________给我了，可是不知道写哪儿了。 B：你当时好像写在本子上了，你看看上面有没有。"
+     },
+     {
+      "n": 10,
+      "zh": "A：我想________参加一万米长跑比赛，你参加不参加？ B：恐怕不行，我下星期要考试了。"
+     }
+    ]
+   },
+   {
+    "n": "扩展 做一做",
+    "type_zh": "选词填空（同字词）",
+    "instruction_zh": "选词填空",
+    "instruction_en": "Fill in the blanks with the words given.",
+    "word_bank": [
+     [
+      "严重",
+      "重点",
+      "重视",
+      "尊重"
+     ]
+    ],
+    "items": [
+     {
+      "n": 1,
+      "zh": "我们的车出了点儿问题，但并不是特别________，很快就能解决，所以请大家放心，我们还是按照原计划出发。",
+      "answer": "严重",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        65
+       ]
+      }
+     },
+     {
+      "n": 2,
+      "zh": "讲话应先讲________，这样才能使别人更快地了解你想说的意思。",
+      "answer": "重点",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        65
+       ]
+      }
+     },
+     {
+      "n": 3,
+      "zh": "有些问题虽然看起来很小，但是如果没有引起________，很可能会发展成大麻烦。",
+      "answer": "重视",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        65
+       ]
+      }
+     },
+     {
+      "n": 4,
+      "zh": "他这些年做生意赚了不少钱，还拿出很大一部分去帮助那些经济有困难的人，所以获得了大家的________。",
+      "answer": "尊重",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        65
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "characters": {
+   "knowledge_title_zh": "同字词",
+   "knowledge_en": "Words with the Same Character",
+   "knowledge_zh": "重：严重、重点、重视、尊重\n（1）塑料袋确实很方便，但是它的大量使用也带来了严重的环境污染问题。\n（2）解决这个任务没有那么困难，但关键是我们要弄清楚工作的主要目的，找到重点。\n（3）她一直都很重视这个机会，最后竟然放弃了，这让我们非常吃惊。\n（4）如果是十分重要的朋友，中国人往往会请他们去饭店或餐厅吃，以表示对客人的尊重和礼貌。",
+   "characters": [
+    {
+     "zh": "重",
+     "note_zh": "严重、重点、重视、尊重"
+    }
+   ]
+  },
+  "application": [
+   {
+    "title_zh": "双人活动",
+    "instruction_zh": "互相了解对方对预习的态度和方式，完成调查表。",
+    "instruction_en": "Learn about your partner's attitude towards previewing lessons and his/her methods of doing it, and complete the questionnaire below.",
+    "example_zh": [
+     "表格：| | 问 | 答 |",
+     "| 1 | 上课前，你有预习的习惯吗？（如果“没有”，直接到第4题） | |",
+     "| 2 | 预习的时候，一般会预习哪些内容？ | |",
+     "| 3 | 你认为预习对课上学习有哪些帮助？ | |",
+     "| 4 | 你经常因为什么原因不预习？ | |",
+     "| 5 | 除了预习以外，你认为有哪些更好的方法帮助你上课学汉语？ | |"
+    ]
+   },
+   {
+    "title_zh": "小组活动：机会和努力哪个对成功更重要？",
+    "instruction_zh": "有人说成功是因为1%的机会加99%的汗水，你同意这句话吗？向小组成员介绍一下你认为机会和努力对成功来说，哪个更重要呢？（最少用四个下面的结构）",
+    "instruction_en": "Group Work: Which is more important for success, opportunity or hard work? Some say success is 1% opportunity plus 99% perspiration. Do you agree with that? Which do you think is more important for success, opportunity or hard work? Tell your group members about your opinion. (Use at least four of the following structures.)",
+    "example_zh": [
+     "a. 负责的态度",
+     "b. 遇到各种压力",
+     "c. 机会都是相同的",
+     "d. 无法完成的任务",
+     "e. 什么事情都做不成",
+     "f. 一切从现在做起",
+     "g. 重视平时的积累",
+     "h. 得到别人的尊重"
+    ]
+   }
+  ],
+  "culture": {
+   "title_zh": "只要功夫深，铁杵（chǔ，木棒）磨成针",
+   "body_zh": "李白（701—762），是中国唐朝时期著名的诗人。他小时候对学习很不感兴趣，经常跑到外面玩儿。一天，李白在河边发现一位老婆婆竟然在磨一根铁棒子。李白觉得很好奇，就走过去问老婆婆在干什么。原来老婆婆的孙女要学绣花，她要给孙女做一根绣花针。他听完以后，像大部分孩子一样哈哈大笑，因为他认为把铁棒子磨成绣花针太浪费时间了，等老婆婆磨好了，她孙女可能也变成老婆婆了。可是，老婆婆自信地告诉他：“只要功夫深，铁杵磨成针。”听完老婆婆的回答，李白突然明白了一个道理：无论做什么事情，只要坚持就可能成功。从此，李白就开始努力学习、积累知识，最终成为一名伟大的诗人。看完这个故事，你知道努力和坚持对成功有多么重要了吧？",
+   "body_en": "As Long as You Work Hard Enough, an Iron Pestle Can Be Ground Down to a Needle\nLi Bai (701–762) was a famous poet in the Tang Dynasty of China. When he was young, Li Bai was not interested in learning at all, and he often went out playing. One day, Li Bai saw an old woman grinding an iron pestle by the river. He felt so curious that he went over and asked the old woman what she was doing. It turned out that she was making a needle for her granddaughter to learn embroidery. Having heard this, Li Bai laughed as most kids would do, because he thought it was a waste of time to grind an iron pestle into a needle and that by the day the needle was made, her granddaughter would have turned into an old woman herself. However, the old woman told him with confidence: “As long as you work hard enough, an iron pestle can be ground down to a needle.” Suddenly Li Bai realized that perseverance would help one succeed in everything. From then on, Li Bai began to study hard and accumulate knowledge. He finally became a great poet! After reading this story, you must have learned how important hard work and perseverance are to success."
+  }
+ },
+ "teacher": {
+  "ref": {
+   "book": "teacher",
+   "pages": [
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65
+   ]
+  },
+  "objectives_zh": [
+   "主题：人生哲理、经验（1）对话：申请留学、成功的经验、如何拒绝别人（2）短文：“一切从现在做起”“天外有天，人外有人”",
+   "语言点：学生能够了解并掌握：（1）“可”表示强调（2）“恐怕”表示“担心”“估计”“大概、也许”　*辨析“恐怕”和“怕”的异同（3）“到底”表示“一直到结束、到终点”“进一步探究”的意思（4）“拿……来说”引入要说明的事物或情况（5）“敢”表示有把握做某事",
+   "词汇：学生能够：（1）掌握本课30个四级大纲词汇的意义和用法　重点词语：报名、参观、激动、失望、礼貌、原谅、同情、马虎、自信、重视、尊重（2）了解1个非大纲词汇的意义：代表（3）理解“重”字的组词规律及在词汇中的意义"
+  ],
+  "steps": [
+   {
+    "title_zh": "一 复习旧课",
+    "body_zh": "1 使用生词卡片，快速认读下列词语：\n赶、批评、管理、表扬、怀疑、故意、整理、合适、骄傲、害羞\n2 快速回答问题（与第15课或学生实际生活有关的问题）：\n（1）如果小孩子害怕打针，父母应该怎么做？\n（2）有的孩子得不到自己想要的东西时会做什么？为什么？\n（3）要是父母骗了孩子，对孩子有什么影响？\n3 检查作业：\n请5名学生每人用上节课所学语言点说一个句子。"
+   },
+   {
+    "title_zh": "二 学习新课 1 热身",
+    "body_zh": "热身1：学生两人一组，合作完成；教师指出图片，请学生根据图片说出对应的词语，教师核对答案；教师领读热身1的生词；最后全体学生齐读，教师正音。\n答案：①C　②A　③D　④E　⑤B　⑥F\n热身2：请4个学生分别朗读热身2的4个句子，然后说说哪种情况自己会拒绝，并说明原因；请3～5个学生谈谈自己拒绝的方式。"
+   },
+   {
+    "title_zh": "2 生词",
+    "body_zh": "（1）生词快速认读及正音\n课文1（对话）：博士、签证、报名、表格、传真、号码\n课文2（对话）：参观、激动、小伙子、记者、*代表、恐怕\n课文3（对话）：失望、郊区、到底、呀、导游、礼貌、原谅\n课文4（短文）：挂、同情、推、预习、重点、马虎、自信\n课文5（短文）：冷静、输、重视、敢、尊重\n• 教师用PPT或卡片展示并领读生词（带拼音）；\n• 取消拼音，带领学生再次认读；\n• 逐词（不带拼音）闪现，请学生快速认读生词；\n• 请3～5个学生快速随机认读3～5个生词；\n• 最后全体学生快速齐读所有生词。\n（2）生词讲解方式\n直观法（图片、实物）：图片类：签证（护照签证页照片）、传真（一张名片，标出或指明传真）、号码（一张名片，标出或指明电话、传真等号码）、参观（热身图片A）、激动（热身图片C）、小伙子（男童、年轻男人、中年男人、老年男人的对比图片）、记者（热身图片F）、失望（热身图片D）、郊区（市内、郊区生活场景图片，可配合画图／地图说明）、导游（导游举旗领队照）、挂（热身图片E）、推（热身图片B）、尊重（小学生给老师／长辈鞠躬）；实物类：表格（课本第69页双人活动表格示例）\n列举法（同类词列举）：博士（硕士、博士）、预习（复习、预习）\n对比法（反义词对比）：马虎（仔细）、冷静（着急）、输（赢）\n替换法（同／近义替换）：呀（啊）\n分解法（分解词义）：自信（相信＋自己）\n提问启发：报名、代表、原谅、同情、重点、礼貌\n教师提问，引导学生说出句子：\n如果你想参加HSK考试，应该先做什么？——我们应该先在网上报名。\n我们常常几个人一起讨论，然后请一个人说。——他代表我们说。\n我说对不起，然后她接受了。——她原谅我了。\n看到她心情很不好，我心里也觉得难过。——我很同情她。\n老师说这个语法很重要。这个语法是……——这个语法是学习的重点。\n马克总是笑着向别人问好……——马克对人很有礼貌。\n（3）字形辨认练习\n教师用卡片或PPT展示，请学生快速辨认并读出，最后给每个字组词。\n士—土　签—检　传—位　观—欢　代—找　郊—校　底—低　呀—啊　推—谁\n（4）重点生词扩展及常用搭配\n报名—报名表格—填写报名表格—报名参加考试—他跟国外大学取得了联系，填写了报名表格。\n参观—参观公司／学校—带我参观公司—谢谢您带我参观您的公司。\n激动—很／比较／非常激动—我很激动—在参观过程中我很激动。\n代表—代表我们—你代表我们说—西瓜的大小代表钱的多少。\n失望—很／比较／非常失望—他要失望了—这次我父母又要失望了。\n礼貌—有礼貌—很／比较／非常有礼貌—礼貌的方法—用既合适又礼貌的方法告诉朋友这件事。\n原谅—原谅他—他一定会原谅你。\n同情—同情你—别人的同情—得到别人的同情—你这么做，不会得到别人的同情。\n马虎—很／比较／非常马虎—马马虎虎—上课时要认真听，不能马虎。\n自信—很／比较／非常自信—自信的人—越来越自信—他汉语越学越好，越说越自信。\n重视—很／比较／非常重视—重视这件事—重视平时的积累—我们应该重视平时的积累，多向周围的人学习。\n尊重—尊重父母—别人的尊重—得到别人的尊重—如果你诚实地说出自己不懂的地方，更能得到别人的尊重。"
+   },
+   {
+    "title_zh": "3 语言点（1）可",
+    "body_zh": "① 语言点解析\n“可”，副词，表示强调，还可用在问句里加强语气。\n② 语言点导入\n• 联系生活实际，提问导入。\n教师：今天天气好吗？\n学生：今天天气可（不）好了。\n注意：“可”的重音，结合手势，突出“可”表示强调的语气。\n• 利用图片，进行导入。\n教师展示热身图片D。\n教师：面试结果出来了，他知道结果以后……\n学生：他知道面试结果以后可失望了，但是一定不会放弃的。\n教师展示一道不常见的中国菜图片。\n教师：你们今天回去试着做做这个菜。\n学生：我都没吃过这个菜，这可怎么做呀？\n③ 语言点操练\n利用热身1图片B、C、D，提问操练。\n• 教师：这个箱子重不重？\n学生：那个东西可重了！需要他们3个人一起推。\n• 教师：她们去海边儿玩儿开心吗？\n学生：她们一看到大海可激动了！\n• 教师：今天的作业是写一篇介绍京剧的作文。\n学生：我都没看过京剧，这可怎么写呀？\n④ 语言点运用\n利用本课热身图片E，请学生根据提示内容，把自己当成那个记者，用“可”来介绍一下当时的情况。\n提示内容：I. 人多　II. 热闹　III. 距离远　IV. 时间早／晚\n参考答案：I. 那天去的人可多了！　II. 当时的情况可热闹了！　III. 举办活动的那个地方离我家可远了！　IV. 那天我回到公司时可晚了！"
+   },
+   {
+    "title_zh": "3 语言点（2）恐怕",
+    "body_zh": "【动词用法】\n① 语言点解析\n“恐怕”，动词，表示“担心”的意思。\n② 语言点导入\n联系生活实际，直接提问，并利用同义词表达替换导入。\n教师：8点上课，你7:40起床，时间够吗？\n学生：我担心会迟到。\n板书：我担心会迟到　［担心｜恐怕］\n教师板书句子，然后在“担心”下面标记出“恐怕”，帮助学生理解“恐怕”做动词时表示担心。\n教师：他原来不是计划7点去机场吗？怎么才5点就走了？\n学生：他恐怕会堵车，所以提前了两个小时。\n注意：表示“担心”时，主语用在“恐怕”前，是“担心”的施事。\n③ 语言点操练\n创设情境，提问操练。\n• 教师：你不是说要去公园吗？怎么还在宿舍啊？\n学生：天气不好，我恐怕会下雨。\n• 教师：别担心，考试时间有两个小时呢，肯定能做完。\n学生：我恐怕考试时间不够。\n【副词用法1】\n① 语言点解析\n“恐怕”，副词，表示“估计，而且有点儿担心”的意思。\n② 语言点导入\n联系生活实际，提问导入。\n教师：中午饭只吃一个小面包，你估计够不够？（展示小面包图片）\n学生：一个小面包估计不够。\n板书：一个小面包估计不够。／估计一个小面包不够。　［估计｜恐怕］\n教师板书后，在“估计”旁标记出“恐怕”，帮助学生理解“恐怕”做副词时表示估计，有“担心”的意思。\n结合上边例句，提问导入，并说明两者意义的区别。\n教师：你不是说要去公园吗？怎么还在宿舍啊？\n学生：你看现在的天气，今天恐怕会下雨，所以我没去。\n你看现在的天气，恐怕今天会下雨，所以我没去。\n注意：表示“估计”时，主语可在“恐怕”前或后，在语义上主语是估计内容的一部分。\n③ 语言点操练\n创设情境，提问操练。\n• 教师：咱们已经等了他1个小时了，他还来吗？\n学生：今天路上堵车，恐怕他来不了了，咱们还是别等他了。\n• 教师：考试时间有两个小时，你能做完吗？\n学生：考试时间恐怕不够。\n【副词用法2】\n① 语言点解析\n“恐怕”，副词，还可表示估计、推测，有“大概、也许”的意思。\n② 语言点导入\n利用课堂情境，提问导入。\n教师：……还没到教室，他怎么了？\n学生：他可能在路上。\n板书：他大概在路上。　［大概｜恐怕］\n教师板书后，在“可能”旁标记出“恐怕”，帮助学生理解“恐怕”做副词，表示估计，有“大概、也许”的意思。\n教师：他回国大概多长时间了？怎么现在才告诉我？\n学生：他回国恐怕已经一个多月了。\n注意：“恐怕”表示“大概、也许”时没有“担心”的意味。\n③ 语言点操练\n创设情境，提问操练。\n• 教师：我们还需要告诉大卫他又没通过考试的消息吗？\n学生：恐怕他已经知道这个结果了。\n• 教师：现在还来得及去看演出吗？\n学生：演出7:00就开始了，现在恐怕已经结束了。\n④ 语言点运用\n请学生用“恐怕”改写下面的句子，教师帮助学生判断正误。\nI. 我打算放寒假去海南旅游，但是我担心丈夫到时没时间。\nII. 网上买的东西估计两三天才能到，你要是着急，直接去商场买吧。\nIII. 他说想去旅游，前几天去办了签证，这次可能是要到国外旅游。\n参考答案：I. 我打算放寒假去海南旅游，但是我恐怕丈夫到时没时间。\nII. 网上买的东西恐怕两三天才能到，你要是着急，直接去商场买吧。\nIII. 他说想去旅游，前几天去办了签证，这次恐怕是要到国外旅游。\n⑤ 比一比：恐怕—怕\n按照教材中的辨析步骤进行。"
+   },
+   {
+    "title_zh": "3 语言点（3）到底",
+    "body_zh": "【动词用法】\n① 语言点解析\n“到底”，动词，表示“一直到结束、到终点”的意思。\n② 语言点导入\n创设情境，进行导入。\n• 教师：你陪我逛了两个小时了，如果你觉得累，就先回家吧。\n学生：没关系，我陪你逛到底。\n• 教师：我在你们商场买这个冰箱，如果出现质量问题了怎么办？\n学生：您放心，只要您在我们这里买，不管什么问题，我们一定负责到底。\n③ 语言点操练\n创设情境，进行操练。\n• 教师：别喝了，今天你喝得太多了！\n学生：不行，我要跟你喝到底。\n• 教师：如果任务太难，就别做了。\n学生：我一定会坚持到底，把它做完。\n【副词用法】\n① 语言点解析\n“到底”，副词，用在疑问句或者带疑问代词的非疑问句中，表示进一步探究的意思。如果主语是疑问代词，“到底”只能放在主语前。\n② 语言点导入\n创设情境或联系课堂实际，进行导入。\n• 教师：你说我是去呢？还是不去呢？我真的不知道。\n学生：你到底去不去？快点儿决定吧。\n• 教师：你猜咱们班谁考了第一名？\n学生：我可猜不到，你快说吧，到底谁考了第一名。\n③ 语言点操练\n创设情境或联系生活实际，进行操练。\n• 教师：小李很帅，我喜欢。小林很聪明，我也喜欢。\n学生：你到底喜欢谁啊？\n• 教师：我挺想考HSK考试的，可是又怕自己没准备好。\n学生：明天就是报名的最后一天了，你到底参不参加？\n④ 语言点运用\n请学生用“到底”改写下面的句子，教师帮助学生判断正误。\nI. 我既然帮助你做了这件事，就一定会帮你完成它。\nII. 他想不明白那块蛋糕是被谁吃了。\nIII. 我计划去郊区住一个月，明天就走，你快决定跟不跟我去。\n参考答案：I. 我既然帮你做了这件事，就一定帮到底。\nII. 他想不明白那块蛋糕到底是被谁吃了。\nIII. 我计划去郊区住一个月，明天就走，你到底跟不跟我去呢？"
+   },
+   {
+    "title_zh": "3 语言点（4）拿……来说",
+    "body_zh": "① 语言点解析\n“拿……来说”结构中“拿”做介词，用来引入要说明的事物或情况。\n② 语言点导入\n联系生活实际，提问导入。\n• 教师：你觉得汉语难吗？\n学生：有点儿难，拿发音来说吧，我总是发得不准确。\n• 教师：我想去北京语言大学学习汉语，那个学校怎么样？\n学生：那个学校不错，拿老师的讲课方法来说吧，他们能用最简单、最容易的语言来解释复杂的语法。\n③ 语言点操练\n联系生活实际和课文内容，提问操练。\n• 教师：老师说的学习方法有用吗？\n学生：有用啊，拿看中文报纸来说，可以学习到很多有用的词语。\n• 教师：申请到国外读博士难不难？\n学生：不太容易，拿办签证来说，就特别复杂，要准备很多材料。\n④ 语言点运用\n请学生参考图片，根据提示内容，谈谈对京剧的了解。\n提示内容：I. 动作　II. 唱法　III. 衣服\n参考答案：I. 京剧有着丰富的文化内容，拿动作来说，每个动作都表示了不同的意义。\nII. 京剧有着丰富的文化内容，拿唱法来说，听起来非常特别。\nIII. 京剧有着丰富的文化内容，拿衣服来说，每套衣服都很漂亮。"
+   },
+   {
+    "title_zh": "3 语言点（5）敢",
+    "body_zh": "① 语言点解析\n“敢”，能愿动词，用在动词前面，表示有把握做某事。\n② 语言点导入\n利用图片，提问导入。\n教师展示过山车的图片和恐怖电影海报。\n• 教师：这是过山车，你们敢玩儿吗？\n学生：我敢玩儿，觉得非常有意思。\n• 教师：你晚上敢一个人看这种电影吗？\n学生：我可不敢晚上一个人看这种电影。\n③ 语言点操练\n联系生活实际或创设情境，进行操练。\n• 教师：躺着看书对眼睛非常不好。\n学生：我不敢再躺着看书了。\n• 教师：小刚既然喜欢小丽，为什么不告诉她呢？\n学生：他不敢对小丽说“我爱你”。\n④ 语言点运用\n请学生说说自己敢不敢做以下几件事情。\nI. 蹦极（bèngjí，bungee jumping）\nII. 在全校学生面前跳舞\nIII. 拒绝父母的要求\n参考答案：我（不）敢……"
+   },
+   {
+    "title_zh": "4 课文",
+    "body_zh": "（1）就课文内容，教师将下列问题写在黑板上或用PPT展示（或教师给学生发放问题单）：\n课文1：小夏现在正在准备什么？为什么？\n课文1：小夏已经做了哪些事情？\n课文1：小夏下周打算做什么？遇到了什么问题？\n课文2：王老板带李进做什么了？\n课文2：李进心情怎么样？\n课文2：王老板大学毕业多长时间了？\n课文2：李进为什么想问王老板问题？\n课文3：放假后，小李有什么计划？\n课文3：小林的朋友让小林做什么？小林同意吗？\n课文3：小李认为怎么拒绝朋友，朋友会原谅小林？\n课文4：“把‘明天’和‘将来’挂在嘴边”这句话是什么意思？\n课文4：如果因为浪费时间没有成功，别人会同情你吗？\n课文4：应该怎么学习汉语？\n课文5：有了“我非常优秀”这种想法应该怎么办？\n课文5：平时我们应该重视什么？\n课文5：如果你诚实地说自己不懂，别人会讨厌你吗？\n（2）要求学生带着问题，听两遍录音并回答问题，教师给出答案；\n（3）学生打开课本，教师逐句播放录音，学生看课本听第二次录音并跟读；\n（4）教师领读一遍课文；\n（5）全班一起大声齐读一遍课文；\n（6）请2～3组学生分角色朗读课文，教师正音；\n（7）做以下课文扩展练习：\n对话课文：教师带领学生根据问题单上问题的答案叙述课文内容，并请学生单个复述。\n课文1：小夏想出国读博士，正在准备办签证需要的材料。他已经准备好了成绩证明和护照，跟国外大学取得了联系，填写了报名表格。他想下个星期去办签证，但是国外大学还没把邀请信传真给他。\n课文2：王老板带李进参观了他的公司，李进很激动。王老板用十年时间给公司赚了很多钱，李进非常吃惊。所以，李进问了王老板一个问题，想向他学习一下成功的经验。\n课文3：小李放假后计划去郊区住一个月。小林本来放假要回家，这次又回不了了，因为一个外地的好朋友要来旅游，想让他当导游，他不好意思拒绝。小李认为如果小林用一个既合适又礼貌的方法告诉朋友，朋友会原谅他的。\n短文课文：请学生根据课文内容，补全下面的语段，并请学生单个复述朗读。\n课文4：如果常把“明天”和“将来”……（挂在嘴边），会浪费时间，让你到最后什么事情都做不成，而且得不到……（别人的同情），所以不要把事情都推到“明天”。拿……（学汉语来说），首先要注意课前预习，找出第二天要学习的重点。其次，上课要认真听，……（不能马虎）。最后，课后要记得复习。\n课文5：当我们认为自己在哪方面很优秀时，要冷静，不要骄傲。没有人会……（永远输），也没有人会一直赢。我们应该重视……（平时的积累），多向周围的人学习。如果你……（敢诚实地）说出自己对哪方面不了解，更能得到……（别人的尊重）。"
+   },
+   {
+    "title_zh": "5 扩展",
+    "body_zh": "（1）领读“严重、重点、重视、尊重”四个同字词，请学生说一说“重”字在词中的位置和意义。“重”的义项：\n① 程度深：严重\n② 重要：重点\n③ 看重、觉得重要：重视、尊重\n（2）请学生说说还有哪些带“重”字的词，教师列在黑板上，如果没有，可补充下列真假同字词，最后请学生判断正误，教师给出正确答案。\n重要　重大　重务（×）　重地\n看重　自重　身重（×）　轻重\n（3）请学生完成“选词填空”练习，教师给出答案。\n参考答案：①严重　②重点　③重视　④尊重"
+   },
+   {
+    "title_zh": "6 补充课堂活动",
+    "body_zh": "学生4人一组，互相交流一下自己对未来的打算，讨论一下如何才能实现自己的理想，并说说自己对成功的理解，最后每组派代表向大家报告。"
+   },
+   {
+    "title_zh": "7 文化",
+    "body_zh": "教师引导学生了解“铁杵磨成针”的故事，可根据需求和时间安排，进行以下参考活动：\n• 展示图片，认识中国唐朝著名的诗人李白及其主要成就；\n• 利用多媒体，展示“铁杵磨成针”的动画内容；\n• 请学生谈谈这个故事说明了什么道理。"
+   },
+   {
+    "title_zh": "8 布置作业",
+    "body_zh": "• 每个生词写3遍；\n• 用本课所学的5个语言点分别造一个句子。"
+   }
+  ],
+  "notes_zh": [
+   "注意：“可”的重音，结合手势，突出“可”表示强调的语气。（语言点1）",
+   "注意：表示“担心”时，主语用在“恐怕”前，是“担心”的施事。（语言点2 动词用法）",
+   "注意：表示“估计”时，主语可在“恐怕”前或后，在语义上主语是估计内容的一部分。（语言点2 副词用法1）",
+   "注意：“恐怕”表示“大概、也许”时没有“担心”的意味。（语言点2 副词用法2）",
+   "比一比：恐怕—怕——按照教材中的辨析步骤进行。（语言点2）",
+   "“到底”，副词，用在疑问句或者带疑问代词的非疑问句中，表示进一步探究的意思。如果主语是疑问代词，“到底”只能放在主语前。（语言点3）",
+   "字形辨认：士—土　签—检　传—位　观—欢　代—找　郊—校　底—低　呀—啊　推—谁（生词）",
+   "“重”的义项：① 程度深：严重　② 重要：重点　③ 看重、觉得重要：重视、尊重；真假同字词：重要、重大、重务（×）、重地、看重、自重、身重（×）、轻重（扩展）"
+  ],
+  "warmup_answers_zh": [
+   "热身1 答案：①C　②A　③D　④E　⑤B　⑥F",
+   "热身2：请4个学生分别朗读热身2的4个句子，然后说说哪种情况自己会拒绝，并说明原因；请3～5个学生谈谈自己拒绝的方式。"
+  ],
+  "text_questions": [
+   {
+    "text": 1,
+    "q_zh": "小夏现在正在准备什么？为什么？"
+   },
+   {
+    "text": 1,
+    "q_zh": "小夏已经做了哪些事情？"
+   },
+   {
+    "text": 1,
+    "q_zh": "小夏下周打算做什么？遇到了什么问题？"
+   },
+   {
+    "text": 2,
+    "q_zh": "王老板带李进做什么了？"
+   },
+   {
+    "text": 2,
+    "q_zh": "李进心情怎么样？"
+   },
+   {
+    "text": 2,
+    "q_zh": "王老板大学毕业多长时间了？"
+   },
+   {
+    "text": 2,
+    "q_zh": "李进为什么想问王老板问题？"
+   },
+   {
+    "text": 3,
+    "q_zh": "放假后，小李有什么计划？"
+   },
+   {
+    "text": 3,
+    "q_zh": "小林的朋友让小林做什么？小林同意吗？"
+   },
+   {
+    "text": 3,
+    "q_zh": "小李认为怎么拒绝朋友，朋友会原谅小林？"
+   },
+   {
+    "text": 4,
+    "q_zh": "“把‘明天’和‘将来’挂在嘴边”这句话是什么意思？"
+   },
+   {
+    "text": 4,
+    "q_zh": "如果因为浪费时间没有成功，别人会同情你吗？"
+   },
+   {
+    "text": 4,
+    "q_zh": "应该怎么学习汉语？"
+   },
+   {
+    "text": 5,
+    "q_zh": "有了“我非常优秀”这种想法应该怎么办？"
+   },
+   {
+    "text": 5,
+    "q_zh": "平时我们应该重视什么？"
+   },
+   {
+    "text": 5,
+    "q_zh": "如果你诚实地说自己不懂，别人会讨厌你吗？"
+   }
+  ]
+ },
+ "workbook": {
+  "ref": {
+   "book": "workbook",
+   "pages": [
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63
+   ]
+  },
+  "sections": [
+   {
+    "n": "一、听力 第一部分",
+    "type_zh": "听力 第一部分",
+    "instruction_zh": "第1–5题：判断对错。",
+    "items": [
+     {
+      "n": "例1",
+      "zh": "★他打算下午去银行。",
+      "transcript_zh": "我想去办个信用卡，今天下午你有时间吗？陪我去一趟银行？",
+      "answer": "✓",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        54
+       ]
+      }
+     },
+     {
+      "n": "例2",
+      "zh": "★他喜欢看电视广告。",
+      "transcript_zh": "现在我很少看电视，其中一个原因是，广告太多了，不管什么时间，也不管什么节目，只要你打开电视，总能看到那么多的广告，浪费我的时间。",
+      "answer": "×",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        54
+       ]
+      }
+     },
+     {
+      "n": 1,
+      "zh": "★他知道怎么办签证。",
+      "transcript_zh": "办签证需要准备哪些材料，我也不太清楚，不过我有大使馆的电话号码，我可以帮你问一下。",
+      "answer": "×",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        121,
+        123
+       ]
+      }
+     },
+     {
+      "n": 2,
+      "zh": "★护士工作前要通过考试。",
+      "transcript_zh": "只有通过了考试，完全符合要求后，护士才能正式开始工作。医院对护士这一职业的要求是：专业、负责、尊重生命。",
+      "answer": "✓",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        121,
+        123
+       ]
+      }
+     },
+     {
+      "n": 3,
+      "zh": "★他第一次见女朋友时很放松。",
+      "transcript_zh": "第一次跟女朋友见面的时候，他紧张极了，脸和耳朵都红了，几乎不敢看女朋友的眼睛。",
+      "answer": "×",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        121,
+        123
+       ]
+      }
+     },
+     {
+      "n": 4,
+      "zh": "★那篇文章写得很精彩。",
+      "transcript_zh": "这篇文章你还得拿回去好好改改，主要是内容有点儿乱，重点不够清楚，另外，有几个句子还有语法问题。",
+      "answer": "×",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        121,
+        123
+       ]
+      }
+     },
+     {
+      "n": 5,
+      "zh": "★做得不好时别失望。",
+      "transcript_zh": "受到批评时，也别伤心失望，谁都有做错事或者做得不够好的时候。只要不放弃努力，你就仍然有希望。",
+      "answer": "✓",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        121,
+        123
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "一、听力 第二部分",
+    "type_zh": "听力 第二部分",
+    "instruction_zh": "第6–12题：请选出正确答案。",
+    "items": [
+     {
+      "n": "例",
+      "zh": "男的主要是什么意思？",
+      "transcript_zh": "女：该加油了，去机场的路上有加油站吗？ 男：有，你放心吧。 问：男的主要是什么意思？",
+      "options": {
+       "A": "去机场",
+       "B": "快到了",
+       "C": "油是满的",
+       "D": "有加油站"
+      },
+      "answer": "D",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        55
+       ]
+      }
+     },
+     {
+      "n": 6,
+      "zh": "男的找到什么了？",
+      "options": {
+       "A": "杂志",
+       "B": "成绩单",
+       "C": "报名表",
+       "D": "传真"
+      },
+      "transcript_zh": "男：喂，姐，我找到你的成绩单了，给你寄过去吗？ 女：你还是发传真吧，我现在就要。 问：男的找到什么了？",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        121,
+        123
+       ]
+      }
+     },
+     {
+      "n": 7,
+      "zh": "女的为什么没参加比赛？",
+      "options": {
+       "A": "害怕失败",
+       "B": "弹得不好",
+       "C": "没有报名",
+       "D": "没有时间"
+      },
+      "transcript_zh": "男：你钢琴弹得这么好，怎么没去参加比赛呢？ 女：我错过了报名时间，只能等下次了。 问：女的为什么没参加比赛？",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        121,
+        123
+       ]
+      }
+     },
+     {
+      "n": 8,
+      "zh": "女的为什么还不睡？",
+      "options": {
+       "A": "睡不着",
+       "B": "还有工作",
+       "C": "在等人",
+       "D": "在看小说"
+      },
+      "transcript_zh": "男：已经两点了，你怎么还不睡觉？ 女：这本小说还有几页，我想看看最后到底怎么样了。 问：女的为什么还不睡？",
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        121,
+        123
+       ]
+      }
+     },
+     {
+      "n": 9,
+      "zh": "女的请男的做什么？",
+      "options": {
+       "A": "来宾馆",
+       "B": "填表格",
+       "C": "说很满意",
+       "D": "写总结"
+      },
+      "transcript_zh": "女：我们想了解一下客人对我们宾馆的服务是不是满意，您只需要填个表格就行。 男：好的，没问题，希望表格不要太复杂。 问：女的请男的做什么？",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        121,
+        123
+       ]
+      }
+     },
+     {
+      "n": 10,
+      "zh": "对话最可能发生在哪儿？",
+      "options": {
+       "A": "商店",
+       "B": "学校",
+       "C": "公司",
+       "D": "饭馆"
+      },
+      "transcript_zh": "女：小刘，帮我把公司的这两页材料传真给李记者，他下周的一篇新闻里要用这些数字。 男：好，我马上去。他的传真号码是多少？ 问：对话最可能发生在哪儿？",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        122,
+        123
+       ]
+      }
+     },
+     {
+      "n": 11,
+      "zh": "十几岁就工作的人怎么样？",
+      "options": {
+       "A": "经历丰富",
+       "B": "非常可怜",
+       "C": "更会打扮",
+       "D": "都很聪明"
+      },
+      "transcript_zh": "男：现在有的人二十多岁了还没学会照顾自己，而有的人十几岁就开始工作，赚钱养家。 女：年龄大并不一定代表有能力，穷人的孩子早当家，他们也许没有很多钱，却可能比富人家的孩子经历得更多。 问：十几岁就工作的人怎么样？",
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        122,
+        123
+       ]
+      }
+     },
+     {
+      "n": 12,
+      "zh": "根据对话，可以知道女的的叔叔怎么样？",
+      "options": {
+       "A": "力气很大",
+       "B": "爱看小说",
+       "C": "现在是记者",
+       "D": "去过很多地方"
+      },
+      "transcript_zh": "男：你叔叔太厉害了，他的书里写了那么多地方的景色，这些地方他都去过吗？ 女：我叔叔以前是记者，因为职业的关系，他几乎走遍了中国所有的地方，看到了很多美丽的景色，也认识了许多朋友，后来他就把自己的经历写成了一本书。 问：根据对话，可以知道女的的叔叔怎么样？",
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        122,
+        123
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "一、听力 第三部分",
+    "type_zh": "听力 第三部分",
+    "instruction_zh": "第13–22题：请选出正确答案。",
+    "items": [
+     {
+      "n": "例",
+      "zh": "会议几点开始？",
+      "transcript_zh": "男：把这个材料复印5份，一会儿拿到会议室发给大家。 女：好的。会议是下午三点吗？ 男：改了。三点半，推迟了半个小时。 女：好，602会议室没变吧？ 男：对，没变。 问：会议几点开始？",
+      "options": {
+       "A": "两点",
+       "B": "3点",
+       "C": "15：30",
+       "D": "18：00"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        56
+       ]
+      }
+     },
+     {
+      "n": 13,
+      "zh": "关于男的，可以知道什么？",
+      "options": {
+       "A": "正在排队",
+       "B": "忘了号码",
+       "C": "没有带笔",
+       "D": "要填表格"
+      },
+      "transcript_zh": "男：您好，我想办一张信用卡。 女：办信用卡的话，您得先填一下这张表格。 男：好的，填完以后是交给您吗？ 女：不，填好后，请到三号窗口排队就可以了。 问：关于男的，可以知道什么？",
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        122,
+        123
+       ]
+      }
+     },
+     {
+      "n": 14,
+      "zh": "男的想把画儿挂在哪儿？",
+      "options": {
+       "A": "办公室",
+       "B": "书房",
+       "C": "厨房",
+       "D": "门上"
+      },
+      "transcript_zh": "女：这是女儿专门给我们画的。 男：这张画儿的景色实在太漂亮了！你看，花草画得像真的一样。 女：我想把它挂起来，天天看。 男：好主意，就挂在书房的墙上吧。 问：男的想把画儿挂在哪儿？",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        122,
+        123
+       ]
+      }
+     },
+     {
+      "n": 15,
+      "zh": "男的打算怎么去机场？",
+      "options": {
+       "A": "坐地铁",
+       "B": "坐出租车",
+       "C": "自己开车",
+       "D": "坐公共汽车"
+      },
+      "transcript_zh": "女：我们坐出租车去机场吧？ 男：现在正是上下班时间，路上可堵了，坐出租车去恐怕时间来不及。 女：那怎么办？坐地铁去？ 男：坐地铁应该来得及，飞机还有两个半小时才起飞。 问：男的打算怎么去机场？",
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        122,
+        123
+       ]
+      }
+     },
+     {
+      "n": 16,
+      "zh": "男的为什么不高兴？",
+      "options": {
+       "A": "裤子脏了",
+       "B": "手机坏了",
+       "C": "比赛输了",
+       "D": "足球丢了"
+      },
+      "transcript_zh": "女：你怎么了？什么事让你不高兴？ 男：下午的足球比赛我们班输了。 女：比赛总是有输有赢，下次再努力。 男：就差一个球，实在太可惜了。 问：男的为什么不高兴？",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        122,
+        123
+       ]
+      }
+     },
+     {
+      "n": 17,
+      "zh": "他们最可能在找什么？",
+      "options": {
+       "A": "包",
+       "B": "钥匙",
+       "C": "塑料袋",
+       "D": "书"
+      },
+      "transcript_zh": "男：你的包里没有？是不是忘办公室了？ 女：不会，刚才是我开的门。 男：那你到底放哪儿了？你再仔细找找。 女：我去门口看看，是不是掉那儿了。 问：他们最可能在找什么？",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        122,
+        123
+       ]
+      }
+     },
+     {
+      "n": 18,
+      "zh": "女的读哪个专业？",
+      "options": {
+       "A": "语言学",
+       "B": "经济学",
+       "C": "国际关系",
+       "D": "环境科学"
+      },
+      "transcript_zh": "男：见到你真高兴！你已经硕士毕业了吧？ 女：是的，我去年就毕业了，但还没参加工作呢，毕业后直接读博士了。 男：还是读经济学吗？ 女：对，研究方向是国际经济。 问：女的读哪个专业？",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        123
+       ]
+      }
+     },
+     {
+      "n": 19,
+      "zh": "她们在谈什么？",
+      "options": {
+       "A": "冰箱质量",
+       "B": "买洗衣机",
+       "C": "修理汽车",
+       "D": "选择丈夫"
+      },
+      "transcript_zh": "第19到20题是根据下面一段话：母亲对女儿说：“选丈夫不能马虎，一定要考虑清楚。你看你爸，什么都会修，冰箱、洗衣机，连汽车坏了他都能修……”没等母亲说完，女儿就说：“我明白了！”没想到母亲接着说“你明白什么啊！如果你也找个像你爸这样的丈夫，就别想用上新东西了。” 19. 她们在谈什么？",
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        123
+       ]
+      }
+     },
+     {
+      "n": 20,
+      "zh": "关于女孩儿的爸爸，可以知道什么？",
+      "options": {
+       "A": "非常担心",
+       "B": "爱修东西",
+       "C": "不爱逛街",
+       "D": "性格很好"
+      },
+      "transcript_zh": "第19到20题是根据下面一段话：母亲对女儿说：“选丈夫不能马虎，一定要考虑清楚。你看你爸，什么都会修，冰箱、洗衣机，连汽车坏了他都能修……”没等母亲说完，女儿就说：“我明白了！”没想到母亲接着说“你明白什么啊！如果你也找个像你爸这样的丈夫，就别想用上新东西了。” 20. 关于女孩儿的爸爸，可以知道什么？",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        123
+       ]
+      }
+     },
+     {
+      "n": 21,
+      "zh": "关于王小帅，可以知道什么？",
+      "options": {
+       "A": "上五年级",
+       "B": "不爱学习",
+       "C": "成绩很好",
+       "D": "在写作业"
+      },
+      "transcript_zh": "第21到22题是根据下面一段话：我弟弟叫王小帅，今年四年级。他最大的特点是不爱学习，课前不预习，考前不复习，几乎没按时完成过作业。一天，他骄傲地对我说：“哥，今天老师问了个问题，除了我，谁也答不出来！”我都不敢相信自己的耳朵，问他是什么问题，他说：“老师问：‘谁没交作业？’” 21. 关于王小帅，可以知道什么？",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        123
+       ]
+      }
+     },
+     {
+      "n": 22,
+      "zh": "说话人说“不敢相信自己的耳朵”是什么意思？",
+      "options": {
+       "A": "很怀疑",
+       "B": "太吵了",
+       "C": "被骗了",
+       "D": "明白了"
+      },
+      "transcript_zh": "第21到22题是根据下面一段话：我弟弟叫王小帅，今年四年级。他最大的特点是不爱学习，课前不预习，考前不复习，几乎没按时完成过作业。一天，他骄傲地对我说：“哥，今天老师问了个问题，除了我，谁也答不出来！”我都不敢相信自己的耳朵，问他是什么问题，他说：“老师问：‘谁没交作业？’” 22. 说话人说“不敢相信自己的耳朵”是什么意思？",
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        123
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第一部分（23–26）",
+    "type_zh": "阅读 第一部分",
+    "instruction_zh": "第23–26题：选词填空。",
+    "word_bank": [
+     [
+      "A 冷静",
+      "B 尊重",
+      "C 敢",
+      "D 坚持",
+      "E 呀"
+     ]
+    ],
+    "items": [
+     {
+      "n": "例",
+      "zh": "她每天都（　）走路上下班，所以身体一直很不错。",
+      "answer": "D",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        57
+       ]
+      }
+     },
+     {
+      "n": 23,
+      "zh": "哥，你快来看，这是什么植物（　）？叶子怎么这么宽？",
+      "answer": "E",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        123
+       ]
+      }
+     },
+     {
+      "n": 24,
+      "zh": "做事情不要一开始就考虑太多，害怕失败，什么都不（　）做怎么可能成功？",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        123
+       ]
+      }
+     },
+     {
+      "n": 25,
+      "zh": "邀请别人吃饭，至少要提前一天联系。首先，这是对被邀请人表示（　）；其次，也方便别人做好安排。",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        123
+       ]
+      }
+     },
+     {
+      "n": 26,
+      "zh": "当事情没有按照原来的计划进行时，不要太着急、太担心，而应该使自己（　）下来，态度积极地去想解决问题的办法。",
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        123
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第一部分（27–30）",
+    "type_zh": "阅读 第一部分",
+    "instruction_zh": "第27–30题：选词填空。",
+    "word_bank": [
+     [
+      "A 激动",
+      "B 挂",
+      "C 温度",
+      "D 报名",
+      "E 郊区"
+     ]
+    ],
+    "items": [
+     {
+      "n": "例",
+      "zh": "A：今天真冷啊，好像白天最高（　）才2℃。 B：刚才电视里说明天更冷。",
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        58
+       ]
+      }
+     },
+     {
+      "n": 27,
+      "zh": "A：我那件红衬衫呢？你放哪儿了？ B：洗了，在外面（　）着，还没干呢。你穿这件就很好，很精神。",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        123
+       ]
+      }
+     },
+     {
+      "n": 28,
+      "zh": "A：去植物园玩儿的同事一共是十二位，现在还有人要（　）吗？ B：我也想去。明天我们大概去多长时间？几点能回来呢？",
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        123
+       ]
+      }
+     },
+     {
+      "n": 29,
+      "zh": "A：外面雪下得这么大，那些小伙子们怎么都跑外边去了？ B：他们都是南方人，南方冬天很少下雪，更不用说这么大的雪，所以他们肯定特别（　）。",
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        123
+       ]
+      }
+     },
+     {
+      "n": 30,
+      "zh": "A：现在城市里越来越多的人喜欢到（　）过周末了。 B：是啊，那里空气新鲜、环境也安静，可以让人好好放松一下。",
+      "answer": "E",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        123
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第二部分",
+    "type_zh": "阅读 第二部分",
+    "instruction_zh": "第31–34题：排列顺序。",
+    "items": [
+     {
+      "n": "例",
+      "zh": "",
+      "options": {
+       "A": "可是今天起晚了",
+       "B": "平时我骑自行车上下班",
+       "C": "所以就打车来公司"
+      },
+      "answer": "BAC",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        59
+       ]
+      }
+     },
+     {
+      "n": 31,
+      "zh": "",
+      "options": {
+       "A": "因此，预习是学习的第一步",
+       "B": "上课的时候，学习效果才会更好",
+       "C": "提前对要学的内容有个大概的了解"
+      },
+      "answer": "CBA",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        123
+       ]
+      }
+     },
+     {
+      "n": 32,
+      "zh": "",
+      "options": {
+       "A": "结果眼睛越来越不好",
+       "B": "所以现在我不敢再躺着看书了",
+       "C": "拿我来说，小时候我总喜欢躺在床上看书"
+      },
+      "answer": "CAB",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        123
+       ]
+      }
+     },
+     {
+      "n": 33,
+      "zh": "",
+      "options": {
+       "A": "我们还是把它推到里面去吧",
+       "B": "沙发太大了，放这儿容易堵着门，进出不方便",
+       "C": "把这个地方空出来"
+      },
+      "answer": "BAC",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        123
+       ]
+      }
+     },
+     {
+      "n": 34,
+      "zh": "",
+      "options": {
+       "A": "也许你会发现，这些事情其实用不着烦恼",
+       "B": "每次发脾气前，请先给自己几分钟",
+       "C": "冷静地想一想，是不是值得为此生气"
+      },
+      "answer": "BCA",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        123
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第三部分",
+    "type_zh": "阅读 第三部分",
+    "instruction_zh": "第35–43题：请选出正确答案。",
+    "items": [
+     {
+      "n": "例",
+      "zh": "她很活泼，说话很有趣，总能给我们带来快乐，我们都很喜欢和她在一起。 ★她是个什么样的人？",
+      "options": {
+       "A": "幽默",
+       "B": "马虎",
+       "C": "骄傲",
+       "D": "害羞"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        60
+       ]
+      }
+     },
+     {
+      "n": 35,
+      "zh": "每年有成千上万的高中毕业生报名参加电影学院的艺术考试，他们中很多人都抱着成为著名演员的理想，但其实大部分考生并不清楚表演到底是什么。 ★根据这段话，很多考生：",
+      "options": {
+       "A": "年龄比较大",
+       "B": "成绩很优秀",
+       "C": "不理解表演",
+       "D": "已经是演员"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        123
+       ]
+      }
+     },
+     {
+      "n": 36,
+      "zh": "举办这次活动，主要是为了向大家介绍我们公司推出的新手机，希望通过这次活动引起大家的兴趣，让大家更了解我们。 ★举办这次活动是为了：",
+      "options": {
+       "A": "比赛",
+       "B": "打折",
+       "C": "积累经验",
+       "D": "介绍手机"
+      },
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        123
+       ]
+      }
+     },
+     {
+      "n": 37,
+      "zh": "在别人伤心难过的时候，我们总会对他／她表示同情。同情是最美好的情感之一，然而同情并不是高高在上的关心，它应该是对别人的理解、尊重和支持。 ★这段话认为，同情别人：",
+      "options": {
+       "A": "不值得做",
+       "B": "非常可惜",
+       "C": "会让人难过",
+       "D": "是表示支持"
+      },
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        123
+       ]
+      }
+     },
+     {
+      "n": 38,
+      "zh": "现在的输或者赢都只是暂时的，没有人会永远输，也没有人会一直赢。生活的关键就是：只要你敢想、敢做、积极努力了，那么无论是输还是赢，生活都一样精彩。 ★根据这段话，可以知道：",
+      "options": {
+       "A": "耐心非常重要",
+       "B": "生活会很精彩",
+       "C": "输和赢不重要",
+       "D": "要多参加活动"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        123
+       ]
+      }
+     },
+     {
+      "n": 39,
+      "zh": "耳朵每天都帮助我们听到各种各样的声音，但我们可不像重视眼睛、鼻子那样重视它。很多时候人们常常感觉不到它，甚至忘记了它。其实我们都错了，有研究发现，通过耳朵可以看出一个人是不是健康，甚至是什么样的性格。 ★这段话主要讲：",
+      "options": {
+       "A": "有趣的鼻子",
+       "B": "怎样保护眼睛",
+       "C": "重新认识耳朵",
+       "D": "怎样打扮自己"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        123
+       ]
+      }
+     },
+     {
+      "n": 40,
+      "zh": "“我找林医生，我有急事！”一位妈妈非常着急地给林医生打电话，林医生的妻子接的电话。“他刚出去了，您有什么事吗？”“天哪，我的小儿子刚才把我的手表吃到肚子里了，林医生什么时候能回来？”“两个小时左右。”医生的妻子回答。“两个小时！这段时间我该怎么办呀？”“我很抱歉，您恐怕只能先用另一块儿表了。” ★孩子怎么了？",
+      "options": {
+       "A": "很想买手表",
+       "B": "突然流血了",
+       "C": "把药吃错了",
+       "D": "把手表吃了"
+      },
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        123
+       ]
+      }
+     },
+     {
+      "n": 41,
+      "zh": "“我找林医生，我有急事！”一位妈妈非常着急地给林医生打电话，林医生的妻子接的电话。“他刚出去了，您有什么事吗？”“天哪，我的小儿子刚才把我的手表吃到肚子里了，林医生什么时候能回来？”“两个小时左右。”医生的妻子回答。“两个小时！这段时间我该怎么办呀？”“我很抱歉，您恐怕只能先用另一块儿表了。” ★关于林医生，可以知道什么？",
+      "options": {
+       "A": "不在家",
+       "B": "很伤心",
+       "C": "表丢了",
+       "D": "不负责"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        123
+       ]
+      }
+     },
+     {
+      "n": 42,
+      "zh": "父母是孩子第一位老师，也是最重要的老师。父母不仅要帮助孩子认识世界，教给他们知识，还应该帮助孩子养成好的生活习惯，比如睡前刷牙、节约用水。另外，还要教会他们懂礼貌、对人诚实。这些都需要父母耐心的教育。孩子习惯的养成会受到父母的影响，所以做父母的平时一定要注意自己的言行。 ★根据这段话，父母有什么责任？",
+      "options": {
+       "A": "保护孩子安全",
+       "B": "教育孩子",
+       "C": "回答问题",
+       "D": "替孩子做决定"
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        123
+       ]
+      }
+     },
+     {
+      "n": 43,
+      "zh": "父母是孩子第一位老师，也是最重要的老师。父母不仅要帮助孩子认识世界，教给他们知识，还应该帮助孩子养成好的生活习惯，比如睡前刷牙、节约用水。另外，还要教会他们懂礼貌、对人诚实。这些都需要父母耐心的教育。孩子习惯的养成会受到父母的影响，所以做父母的平时一定要注意自己的言行。 ★根据这段话，孩子习惯的养成：",
+      "options": {
+       "A": "过程会很慢",
+       "B": "会比较轻松",
+       "C": "与年龄有关",
+       "D": "受父母影响"
+      },
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        123
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "三、书写 第一部分",
+    "type_zh": "书写 第一部分",
+    "instruction_zh": "第44–48题：完成句子。",
+    "items": [
+     {
+      "n": "例",
+      "zh": "那座桥　800年的　历史　有　了",
+      "answer": "那座桥有800年的历史了。",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        62
+       ]
+      }
+     },
+     {
+      "n": 44,
+      "zh": "200　估计　王老师　报名人数　会　超过",
+      "answer": "王老师估计报名人数会超过200。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        123
+       ]
+      }
+     },
+     {
+      "n": 45,
+      "zh": "传真号码　是　你们　多少　公司　的",
+      "answer": "你们公司的传真号码是多少？",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        123
+       ]
+      }
+     },
+     {
+      "n": 46,
+      "zh": "请　帮我　一个　当地导游　你能　吗",
+      "answer": "你能帮我请一个当地导游吗？",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        123
+       ]
+      }
+     },
+     {
+      "n": 47,
+      "zh": "失望　让　那个　很　电影　观众",
+      "answer": "那个电影让观众很失望。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        123
+       ]
+      }
+     },
+     {
+      "n": 48,
+      "zh": "是　好消息　激动人心的　实在　一个　这",
+      "answer": "这实在是一个激动人心的好消息。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        123
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "三、书写 第二部分",
+    "type_zh": "书写 第二部分",
+    "instruction_zh": "第49–50题：看图，用词造句。",
+    "items": [
+     {
+      "n": "例",
+      "zh": "乒乓球",
+      "picture_desc_en": "a person holding a table-tennis bat, about to serve",
+      "answer": "她很喜欢打乒乓球。",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        63
+       ]
+      }
+     },
+     {
+      "n": 49,
+      "zh": "小伙子",
+      "picture_desc_en": "a young man in a sleeveless top dribbling a basketball on a court",
+      "answer": "我经常在体育馆遇见这个小伙子，他非常喜欢打篮球。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        123
+       ]
+      }
+     },
+     {
+      "n": 50,
+      "zh": "表格",
+      "picture_desc_en": "close-up of a hand with a pen filling in a printed form",
+      "answer": "办签证时大使馆会要求你仔细填一张表格。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        123
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "answers_ref": {
+   "book": "teacher",
+   "pages": [
+    121,
+    122,
+    123
+   ]
+  }
+ },
+ "unclear": [
+  "Аудио файлын нэр мэдэгдэхгүй тул audio талбар орхисон. Сурах бичгийн CD тэмдэг: 课文1–5 = 16-1…16-5; дасгалын номын 听力 第一/二/三部分 = 16-1, 16-2, 16-3.",
+  "生词 18 礼貌 — номд «lǐmào n. polite» гэж хэвлэгдсэн (үгийн ай n., англи тайлбар нь тэмдэг нэрийн утгатай) — номд байгаагаар.",
+  "生词 13 失望 — «v. disappointed» (үгийн ай v., англи тайлбар нь тэмдэг нэр) — номд байгаагаар.",
+  "生词 11 代表 — * тэмдэгтэй (4-р түвшний жагсаалтаас гадуурх); багшийн ном: «掌握本课30个四级大纲词汇… 了解1个非大纲词汇的意义：代表» — нийт 31 үг.",
+  "注释2 比一比 不同点1 жишээ: «我怕你忘了这件事，所以打电话提醒你一下你。» — «你» давхар хэвлэгдсэн; номд байгаагаар.",
+  "注释2 比一比 做一做 «选词填空 Tick or cross»: (1) 恐怕✓ 怕✓, (2) 恐怕× 怕✓ — сурах бичигт жишээ болгон хэвлэгдсэн; (3)–(5)-ын хариулт сурах бичиг, багшийн номд хэвлэгдээгүй (багшийн ном: «按照教材中的辨析步骤进行»). (2)-т «这多菜» гэж хэвлэгдсэн (这么多 биш) — номд байгаагаар.",
+  "注释2 恐怕-ийн англи тайлбар: эхний «The verb “恐怕” means “to be afraid”» — хятад тайлбар «表示“担心”的意思». Сурах бичиг 恐怕-г 生词-д зөвхөн «adv.» гэж өгсөн ч 注释-д «动词» хэрэглээг мөн тайлбарласан.",
+  "注释2 恐怕-ийн жишээ (1)(2) — «动词», (3)(4) — «副词 估计，而且有点儿担心», (5)(6) — «副词 估计、推测»: note_zh-д номын тайлбарын хэсгийг заасан (номд тусдаа шошго байхгүй, тайлбарын дараалалаар).",
+  "Сурах бичгийн 练一练 (5 дүрэм × 3), 回答问题 (课文1–3 — 6, 课文4–5 — 4), 练习1 复述 ба 练习2 选词填空 (10) — хариулт сурах бичиг, багшийн номд хэвлэгдээгүй тул answer талбаргүй. Зөвхөн 扩展 做一做-ийн хариулт багшийн номд (PDF х.65) бий.",
+  "练习2 ②: «爱批评人或者没有____心的人» — сонгох үг 同情/参观/输/郊区/原谅 (同情心) — номд байгаагаар.",
+  "Сурах бичгийн 根据课文内容回答问题 хоёр хэсэг дугааргүй (课文3-ын дараа, 课文5-ын дараа) — exercises-д «课文1–3 回答问题», «课文4–5 回答问题» гэж нэрлэсэн; 比一比-ийн 做一做 ба 扩展-ийн 做一做-г мөн exercises-д оруулсан. 扩展 同字词 (重：严重、重点、重视、尊重)-ийг textbook.characters-д оруулсан.",
+  "拼音课文-ын гарчгийн пиньинь (1. Xiǎo Xià chū guó liúxué yùdàole wèntí / 2. Wáng lǎobǎn gàosu Lǐ Jìn zìjǐ chénggōng de jīngyàn / 3. Xiǎo Lín bù hǎo yìsi jùjué péngyou) болон ярилцагчийн нэрийн пиньинь схемд талбаргүй тул lines.pinyin-д зөвхөн яриаг оруулсан.",
+  "课文4 ба 课文5 — гарчиггүй 短文 — мөр (lines)-ийг өгүүлбэрээр хуваасан (номд нэг догол мөр); пиньинь бичвэрийг мөн адил хуваасан.",
+  "Сурах бичигт 专有名词 хүснэгт энэ хичээлд байхгүй (小雨、小夏、李进、王老板、小林、小李 жагсаагдаагүй).",
+  "Багшийн номын 课文 асуултууд (text_questions)-ын хариулт тус бүрчлэн хэвлэгдээгүй («教师给出答案»); оронд нь 课文扩展练习-ын 复述 догол мөрүүд (teacher.steps «4 课文») хэвлэгдсэн.",
+  "Багшийн ном 生词讲解 «表格（课本第69页双人活动表格示例）» — энэ хичээлийн 双人活动 хүснэгт сурах бичгийн хэвлэсэн х.84 (PDF х.97)-д байна; «第69页» нь өөр хуудас заасан — номд байгаагаар.",
+  "Багшийн ном 语言点(1)可 ④ «利用本课热身图片E，请学生……把自己当成那个记者» — сурах бичгийн 热身-д 记者 нь зураг F (багшийн номын хариулт ⑥F), E нь 挂 (зураг өлгөж буй хүмүүс). Багшийн номд хавсаргасан зураг нь камертай сэтгүүлчид.",
+  "Багшийн ном 语言点(2)恐怕 副词用法2: самбарт «他大概在路上。» гэж бичээд тайлбарт «在“可能”旁标记出“恐怕”» гэсэн — номын дотоод зөрүү. Самбарын тэмдэглэгээг «［担心｜恐怕］» хэлбэрээр (дээд үг — самбарт тодруулсан, доод үг — доор нь бичсэн) буулгасан.",
+  "Багшийн ном 语言点(2) «我恐怕会下雨»,«我恐怕考试时间不够» (动词用法 操练) — номд байгаагаар.",
+  "Багшийн ном 课文 扩展练习 课文3: «小李放假后计划去郊区住一个月» — сурах бичигт 小李 «我计划去郊区住一个月» гэсэн (放假后 гэж шууд заагаагүй) — номд байгаагаар.",
+  "Дасгалын ном 听力 第二/三部分 — номд зөвхөн сонголтууд хэвлэгдсэн; item.zh-д багшийн номын хавсралтын «问：» асуултыг (19–22-т дугаартай асуултыг) оруулсан, transcript_zh-д бүтнээр. 听力 第一部分-д жишээ 2 (✓ ба ×) байгаа тул «例1», «例2».",
+  "Дасгалын ном 听力 18: бичвэрт «研究方向是国际经济», хариулт B «经济学» (C «国际关系» — зориудын буруу сонголт).",
+  "Дасгалын ном 阅读 38: албан ёсны хариулт C «输和赢不重要» (B «生活会很精彩» нь бичвэрт «无论是输还是赢，生活都一样精彩» гэсэнтэй ойр) — багшийн номд байгаагаар.",
+  "Дасгалын ном 阅读 第一部分 хоёр бүлэг (23–26, 27–30) тус тусын үгийн сантай тул хоёр хэсэг болгон оруулсан; 阅读 第二部分 (31–34 排列顺序)-ийн item.zh хоосон, хэсгүүд options (A/B/C)-д.",
+  "Дасгалын ном 书写 44–50-ын хариулт багшийн номын хавсралтад «参考答案» гэж хэвлэгдсэн (PDF х.123); 49–50 (看图，用词造句) нээлттэй даалгавар тул хариулт нь зөвхөн жишээ.",
+  "Дасгалын номд 复习 хэсэг байхгүй (HSK4-ийн дасгалын ном: 听力 3 хэсэг, 阅读 3 хэсэг, 书写 2 хэсэг, нийт 50 асуулт).",
+  "Сурах бичиг 热身2 ②-т 博士-ийн пиньинь «（bóshì）» хаалтанд хэвлэгдсэн — items-д номд байгаагаар үлдээсэн."
+ ],
+ "verified_pages": [
+  54,
+  55,
+  56,
+  57,
+  58,
+  59,
+  60,
+  61,
+  62,
+  63,
+  64,
+  65,
+  85,
+  86,
+  87,
+  88,
+  89,
+  90,
+  91,
+  92,
+  93,
+  94,
+  95,
+  96,
+  97,
+  98,
+  121,
+  122,
+  123
+ ],
+ "schema_version": 1
+}

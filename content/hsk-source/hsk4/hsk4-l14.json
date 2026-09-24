@@ -1,0 +1,2234 @@
+{
+ "level": "hsk4",
+ "lesson": 14,
+ "book": "HSK4B",
+ "title_zh": "保护地球母亲",
+ "title_pinyin": "Bǎohù dìqiú mǔqīn",
+ "title_en": "Protect our Mother Earth",
+ "textbook": {
+  "ref": {
+   "book": "textbook",
+   "pages": [
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68
+   ]
+  },
+  "warmup": [
+   {
+    "instruction_zh": "给下面的词语选择对应的图片，并用这个词语根据图片说一个句子。",
+    "instruction_en": "Match the pictures with the words and describe the pictures with sentences using the words.",
+    "items": [
+     "①温度 wēndù",
+     "②地球 dìqiú",
+     "③垃圾桶 lājītǒng",
+     "④速度 sùdù",
+     "⑤污染 wūrǎn",
+     "⑥塑料袋 sùliàodài"
+    ],
+    "pictures_desc_en": [
+     "A: two metal outdoor trash bins (one with a blue recycling sign, one with a red sign) on a pavement",
+     "B: factory chimneys emitting thick smoke into a dark sky",
+     "C: three plastic shopping bags (purple, green, red) hanging side by side",
+     "D: close-up of a car speedometer with the needle near 100",
+     "E: the planet Earth seen from space",
+     "F: a thermometer stuck in the sand on a beach by the sea"
+    ]
+   },
+   {
+    "instruction_zh": "请填写环境污染调查问卷。",
+    "instruction_en": "Fill out the questionnaire about environmental pollution.",
+    "items": [
+     "1. 你身边的环境污染情况怎么样？ A.非常严重　B.不太严重　C.没有问题　D.不知道",
+     "2. 你认为现在环境污染的主要问题有哪些？（可多选） A.水污染　B.垃圾污染　C.空气污染　D.其他：________",
+     "3. 你认为环境对你的生活的影响怎么样？ A.严重影响　B.有些影响　C.没有影响　D.没关系",
+     "4. 你经常使用一次性饭盒（hé）吗？ A.经常使用　B.偶尔使用　C.很少使用　D.从来不用",
+     "5. 如果在公共场所，你要把用过的饮料瓶、一次性饭盒等扔掉，但却找不到垃圾箱，你一般会怎么做？ A.马上扔掉　B.没人注意时扔掉　C.放在不容易看到的地方　D.找到垃圾箱再扔",
+     "6. 你认为环境污染是由哪些原因造成的？（可多选） A.大家不重视环保　B.国家不重视环境问题　C.乱扔垃圾　D.人太多　E.其他：________"
+    ]
+   }
+  ],
+  "texts": [
+   {
+    "n": 1,
+    "title_zh": "李进要出差，王静和李进在聊天儿",
+    "kind": "dialogue",
+    "lines": [
+     {
+      "speaker": "王静",
+      "zh": "这是明天你出差要带的毛巾、牙膏和牙刷，把它们放到箱子里吧。",
+      "pinyin": "Zhè shì míngtiān nǐ chū chāi yào dài de máojīn、yágāo hé yáshuā, bǎ tāmen fàngdào xiāngzi li ba."
+     },
+     {
+      "speaker": "李进",
+      "zh": "不用拿这些，宾馆都会免费提供的。再说，箱子已经够重的了！",
+      "pinyin": "Búyòng ná zhèxiē, bīnguǎn dōu huì miǎnfèi tígōng de. Zàishuō, xiāngzi yǐjīng gòu zhòng de le!"
+     },
+     {
+      "speaker": "王静",
+      "zh": "我当然知道宾馆里有。你不是一直说要保护环境吗？现在就从身边的小事做起吧。",
+      "pinyin": "Wǒ dāngrán zhīdào bīnguǎn li yǒu. nǐ bú shì yìzhí shuō yào bǎohù huánjìng ma? Xiànzài jiù cóng shēnbiān de xiǎo shì zuòqǐ ba."
+     },
+     {
+      "speaker": "李进",
+      "zh": "行，没问题。我明天上午10点的飞机，你能开车把我送到机场吗？",
+      "pinyin": "Xíng, méi wèntí. Wǒ míngtiān shàngwǔ shí diǎn de fēijī, nǐ néng kāi chē bǎ wǒ sòngdào jīchǎng ma?"
+     },
+     {
+      "speaker": "王静",
+      "zh": "那个时间路上堵车多严重啊！你还是坐地铁去机场吧。这样不仅省油钱，而且还不会污染空气。",
+      "pinyin": "Nàge shíjiān lù shang dǔ chē duō yánzhòng a! Nǐ háishi zuò dìtiě qù jīchǎng ba. Zhèyàng bùjǐn shěng yóu qián, érqiě hái bú huì wūrǎn kōngqì."
+     },
+     {
+      "speaker": "李进",
+      "zh": "好，那就听你的。",
+      "pinyin": "Hǎo, nà jiù tīng nǐ de."
+     }
+    ],
+    "new_words": [
+     {
+      "n": 1,
+      "zh": "出差",
+      "pinyin": "chū chāi",
+      "pos": "v.",
+      "en": "to go on a business trip",
+      "text": 1
+     },
+     {
+      "n": 2,
+      "zh": "毛巾",
+      "pinyin": "máojīn",
+      "pos": "n.",
+      "en": "towel",
+      "text": 1
+     },
+     {
+      "n": 3,
+      "zh": "牙膏",
+      "pinyin": "yágāo",
+      "pos": "n.",
+      "en": "toothpaste",
+      "text": 1
+     },
+     {
+      "n": 4,
+      "zh": "重",
+      "pinyin": "zhòng",
+      "pos": "adj.",
+      "en": "heavy, weighty",
+      "text": 1
+     },
+     {
+      "n": 5,
+      "zh": "行",
+      "pinyin": "xíng",
+      "pos": "v.",
+      "en": "to be OK, to be all right",
+      "text": 1
+     },
+     {
+      "n": 6,
+      "zh": "省",
+      "pinyin": "shěng",
+      "pos": "v.",
+      "en": "to save, to economize",
+      "text": 1
+     },
+     {
+      "n": 7,
+      "zh": "污染",
+      "pinyin": "wūrǎn",
+      "pos": "v.",
+      "en": "to pollute",
+      "text": 1
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "title_zh": "经理和服务员在谈工作",
+    "kind": "dialogue",
+    "lines": [
+     {
+      "speaker": "经理",
+      "zh": "小王，卫生间怎么那么脏啊？这会给客人留下不好的印象，快去打扫一下。",
+      "pinyin": "Xiǎo Wáng, wèishēngjiān zěnme nàme zāng a? Zhè huì gěi kèrén liúxià bù hǎo de yìnxiàng, kuài qù dǎsǎo yíxià."
+     },
+     {
+      "speaker": "服务员",
+      "zh": "经理，实在抱歉。今天店里太忙了，我还没来得及打扫。",
+      "pinyin": "Jīnglǐ, shízài bàoqiàn. Jīntiān diàn li tài máng le, wǒ hái méi láidejí dǎsǎo."
+     },
+     {
+      "speaker": "经理",
+      "zh": "那张桌子下面还有一些空饮料瓶子和纸盒子。",
+      "pinyin": "Nà zhāng zhuōzi xiàmiàn hái yǒu yìxiē kōng yǐnliào píngzi hé zhǐ hézi."
+     },
+     {
+      "speaker": "服务员",
+      "zh": "好的，我马上就去把它们扔掉。",
+      "pinyin": "Hǎo de, wǒ mǎshàng jiù qù bǎ tāmen rēngdiào."
+     },
+     {
+      "speaker": "经理",
+      "zh": "以后你一定得注意这个问题，不管客人多多，生意多忙，我们都要保证餐厅干净卫生。",
+      "pinyin": "Yǐhòu nǐ yídìng děi zhùyì zhège wèntí, bùguǎn kèrén duō duō, shēngyi duō máng, wǒmen dōu yào bǎozhèng cāntīng gànjìng wèishēng."
+     },
+     {
+      "speaker": "服务员",
+      "zh": "经理您放心，我一定以最快的速度完成。不过咱们真的应该再多招聘几个服务员了。",
+      "pinyin": "Jīnglǐ nín fàng xīn, wǒ yídìng yǐ zuì kuài de sùdù wánchéng. Búguò zánmen zhēn de yīnggāi zài duō zhāopìn jǐ ge fúwùyuán le."
+     }
+    ],
+    "new_words": [
+     {
+      "n": 8,
+      "zh": "卫生间",
+      "pinyin": "wèishēngjiān",
+      "pos": "n.",
+      "en": "restroom, bathroom",
+      "text": 2
+     },
+     {
+      "n": 9,
+      "zh": "脏",
+      "pinyin": "zāng",
+      "pos": "adj.",
+      "en": "dirty",
+      "text": 2
+     },
+     {
+      "n": 10,
+      "zh": "抱歉",
+      "pinyin": "bàoqiàn",
+      "pos": "v.",
+      "en": "to be sorry",
+      "text": 2
+     },
+     {
+      "n": 11,
+      "zh": "空",
+      "pinyin": "kōng",
+      "pos": "adj.",
+      "en": "empty",
+      "text": 2
+     },
+     {
+      "n": 12,
+      "zh": "盒子",
+      "pinyin": "hézi",
+      "pos": "n.",
+      "en": "box, case",
+      "text": 2
+     },
+     {
+      "n": 13,
+      "zh": "扔",
+      "pinyin": "rēng",
+      "pos": "v.",
+      "en": "to throw away",
+      "text": 2
+     },
+     {
+      "n": 14,
+      "zh": "以",
+      "pinyin": "yǐ",
+      "pos": "prep.",
+      "en": "via, by means of",
+      "text": 2
+     },
+     {
+      "n": 15,
+      "zh": "速度",
+      "pinyin": "sùdù",
+      "pos": "n.",
+      "en": "speed",
+      "text": 2
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "title_zh": "孙月和王静在聊关于环保的事情",
+    "kind": "dialogue",
+    "lines": [
+     {
+      "speaker": "孙月",
+      "zh": "早上听新闻说明天有一个叫“地球一小时”的活动，你对这个活动了解吗？",
+      "pinyin": "Zǎoshang tīng xīnwén shuō míngtiān yǒu yí ge jiào “Dìqiú Yì Xiǎoshí” de huódòng, nǐ duì zhège huódòng liǎojiě ma?"
+     },
+     {
+      "speaker": "王静",
+      "zh": "这个活动年年都有，最早是从2007年开始的。明天晚上很多人都会关灯一小时，支持这个活动。你没看到门口的通知吗？我们公司也参加。",
+      "pinyin": "Zhège huódòng niánnián dōu yǒu, zuì zǎo shì cóng èr líng líng qī nián kāishǐ de. Míngtiān wǎnshang hěn duō rén dōu huì guān dēng yì xiǎoshí, zhīchí zhège huódòng. Nǐ méi kàndào ménkǒu de tōngzhī ma? Wǒmen gōngsī yě cānjiā."
+     },
+     {
+      "speaker": "孙月",
+      "zh": "真的吗？太好了！既然明天晚上公司会关灯停电，那么我们肯定不用加班了。",
+      "pinyin": "Zhēn de ma? Tài hǎo le! Jìrán míngtiān wǎnshang gōngsī huì guān dēng tíng diàn, nàme wǒmen kěndìng búyòng jiā bān le."
+     },
+     {
+      "speaker": "王静",
+      "zh": "看你得意的样子！还以为你高兴是为了支持环保，原来是因为不用加班啊！",
+      "pinyin": "Kàn nǐ déyì de yàngzi! Hái yǐwéi nǐ gāoxìng shì wèile zhīchí huánbǎo, yuánlái shì yīnwèi búyòng jiā bān a!"
+     },
+     {
+      "speaker": "孙月",
+      "zh": "环境保护我当然也支持了！对了，为什么会有这么一个活动啊？",
+      "pinyin": "Huánjìng bǎohù wǒ dāngrán yě zhīchí le! Duì le, wèi shénme huì yǒu zhème yí ge huódòng a?"
+     },
+     {
+      "speaker": "王静",
+      "zh": "其实目的挺简单的，就是提醒人们节约用电，希望引起人们对气候变暖问题的关注。",
+      "pinyin": "Qíshí mùdì tǐng jiǎndān de, jiù shì tíxǐng rénmen jiéyuē yòng diàn, xīwàng yǐnqǐ rénmen duì qìhòu biàn nuǎn wèntí de guānzhù."
+     }
+    ],
+    "new_words": [
+     {
+      "n": 16,
+      "zh": "地球",
+      "pinyin": "dìqiú",
+      "pos": "n.",
+      "en": "earth, globe",
+      "text": 3
+     },
+     {
+      "n": 17,
+      "zh": "既然",
+      "pinyin": "jìrán",
+      "pos": "conj.",
+      "en": "since, as, now that",
+      "text": 3
+     },
+     {
+      "n": 18,
+      "zh": "停",
+      "pinyin": "tíng",
+      "pos": "v.",
+      "en": "to stop, to cease",
+      "text": 3
+     },
+     {
+      "n": 19,
+      "zh": "得意",
+      "pinyin": "déyì",
+      "pos": "adj.",
+      "en": "complacent, gloating",
+      "text": 3
+     },
+     {
+      "n": 20,
+      "zh": "目的",
+      "pinyin": "mùdì",
+      "pos": "n.",
+      "en": "aim, purpose",
+      "text": 3
+     },
+     {
+      "n": 21,
+      "zh": "暖",
+      "pinyin": "nuǎn",
+      "pos": "adj.",
+      "en": "warm",
+      "text": 3
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "kind": "narrative",
+    "lines": [
+     {
+      "zh": "塑料袋给人们的生活带来方便，受到人们的普遍欢迎，可是，它的大量使用也带来了严重的环境污染问题。",
+      "pinyin": "Sùliàodài gěi rénmen de shēnghuó dàilái fāngbiàn, shòudào rénmen de pǔbiàn huānyíng, kěshì, tā de dàliàng shǐyòng yě dàiláile yánzhòng de huánjìng wūrǎn wèntí."
+     },
+     {
+      "zh": "于是，一些国家规定，超市、商场不能为顾客提供免费塑料袋，并且鼓励大家购买可以多次使用的购物袋。",
+      "pinyin": "Yúshì, yìxiē guójiā guīdìng, chāoshì、shāngchǎng bù néng wèi gùkè tígōng miǎnfèi sùliào dài, bìngqiě gǔlì dàjiā gòumǎi kěyǐ duō cì shǐyòng de gòuwùdài."
+     },
+     {
+      "zh": "我们每个人都有责任保护环境，因此，请大家节约使用塑料袋，或者购物时自备购物袋，甚至拒绝使用塑料袋。",
+      "pinyin": "Wǒmen měi ge rén dōu yǒu zérèn bǎohù huánjìng, yīncǐ, qǐng dàjiā jiéyuē shǐyòng sùliàodài, huòzhě gòuwù shí zì bèi gòuwùdài, shènzhì jùjué shǐyòng sùliàodài."
+     },
+     {
+      "zh": "虽然这是一件很小的事，但这样做可以减少塑料袋的使用数量，对环境保护有很大的作用。",
+      "pinyin": "Suīrán zhè shì yí jiàn hěn xiǎo de shì, dàn zhèyàng zuò kěyǐ jiǎnshǎo sùliàodài de shǐyòng shùliàng, duì huánjìng bǎohù yǒu hěn dà de zuòyòng."
+     }
+    ],
+    "new_words": [
+     {
+      "n": 22,
+      "zh": "塑料袋",
+      "pinyin": "sùliàodài",
+      "pos": "n.",
+      "en": "plastic bag",
+      "text": 4
+     },
+     {
+      "n": 23,
+      "zh": "于是",
+      "pinyin": "yúshì",
+      "pos": "conj.",
+      "en": "hence, therefore",
+      "text": 4
+     },
+     {
+      "n": 24,
+      "zh": "鼓励",
+      "pinyin": "gǔlì",
+      "pos": "v.",
+      "en": "to encourage",
+      "text": 4
+     },
+     {
+      "n": 25,
+      "zh": "拒绝",
+      "pinyin": "jùjué",
+      "pos": "v.",
+      "en": "to refuse, to reject",
+      "text": 4
+     },
+     {
+      "n": 26,
+      "zh": "减少",
+      "pinyin": "jiǎnshǎo",
+      "pos": "v.",
+      "en": "to reduce, to decrease",
+      "text": 4
+     },
+     {
+      "n": 27,
+      "zh": "数量",
+      "pinyin": "shùliàng",
+      "pos": "n.",
+      "en": "quantity, amount",
+      "text": 4
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "kind": "narrative",
+    "lines": [
+     {
+      "zh": "保护地球环境，并不是一件离我们很远、很难做到的事情。",
+      "pinyin": "Bǎohù dìqiú huánjìng, bìng bú shì yí jiàn lí wǒmen hěn yuǎn、hěn nán zuòdào de shìqing."
+     },
+     {
+      "zh": "实际上，我们只需注意一下身边的小事就可以。",
+      "pinyin": "Shíjì shang, wǒmen zhǐ xū zhùyì yíxià shēnbiān de xiǎo shì jiù kěyǐ."
+     },
+     {
+      "zh": "例如，夏天把空调的温度开得高一些，出门时记得关空调和电脑，这样可以节约用电；少开车，多骑车或者乘坐地铁和公共汽车，这样能降低空气污染；还有养成把垃圾丢进垃圾桶的习惯什么的。",
+      "pinyin": "Lìrú, xiàtiān bǎ kōngtiáo de wēndù kāi de gāo yìxiē, chū mén shí jìde guān kōngtiáo hé diànnǎo, zhèyàng kěyǐ jiéyuē yòng diàn; shǎo kāi chē, duō qí chē huòzhě chéngzuò dìtiě hé gōnggòng qìchē, zhèyàng néng jiàngdī kōngqì wūrǎn; hái yǒu yǎngchéng bǎ lājī diūjìn lājītǒng de xíguàn shénme de."
+     },
+     {
+      "zh": "这些是我们每个人都能够做到的小事，但却有实实在在的效果。",
+      "pinyin": "Zhèxiē shì wǒmen měi ge rén dōu nénggòu zuòdào de xiǎo shì, dàn què yǒu shíshízàizài de xiàoguǒ."
+     },
+     {
+      "zh": "地球是我们共同的家，只有大家共同努力，减少污染、保护环境，才能使我们的家变得更美丽。",
+      "pinyin": "Dìqiú shì wǒmen gòngtóng de jiā, zhǐyǒu dàjiā gòngtóng nǔlì, jiǎnshǎo wūrǎn, bǎohù huánjìng, cái néng shǐ wǒmen de jiā biànde gèng měilì."
+     }
+    ],
+    "new_words": [
+     {
+      "n": 28,
+      "zh": "温度",
+      "pinyin": "wēndù",
+      "pos": "n.",
+      "en": "temperature",
+      "text": 5
+     },
+     {
+      "n": 29,
+      "zh": "乘坐",
+      "pinyin": "chéngzuò",
+      "pos": "v.",
+      "en": "to take (a vehicle), to ride (in a vehicle)",
+      "text": 5
+     },
+     {
+      "n": 30,
+      "zh": "丢",
+      "pinyin": "diū",
+      "pos": "v.",
+      "en": "to throw, to cast",
+      "text": 5
+     },
+     {
+      "n": 31,
+      "zh": "垃圾桶",
+      "pinyin": "lājītǒng",
+      "pos": "n.",
+      "en": "dustbin, trash can",
+      "text": 5
+     },
+     {
+      "n": 32,
+      "zh": "美丽",
+      "pinyin": "měilì",
+      "pos": "adj.",
+      "en": "beautiful",
+      "text": 5
+     }
+    ]
+   }
+  ],
+  "grammar": [
+   {
+    "n": 1,
+    "title_zh": "够",
+    "explanation_zh": "“够”，动词，表示数量上能满足。例如：（1）（2）\n“够”，副词，表示程度上达到了一定标准。“够＋形容词”用于肯定句时，形容词后常加“的”。例如：（3）（4）",
+    "explanation_en": "The verb “够” means being enough in quantity. For example: (1) (2)\nThe adverb “够” means the degree has reached a certain standard. When “够 + Adj” is used in an affirmative sentence, the adjective is usually followed by “的”. For example: (3) (4)",
+    "examples": [
+     {
+      "n": 1,
+      "zh": "客人来了，中国人一定要把家里最好吃的东西拿出来请客人吃，并且让客人吃够、吃饱。",
+      "note_zh": "动词"
+     },
+     {
+      "n": 2,
+      "zh": "医生提醒我们，睡觉时间太长并不好，有时甚至会引起头疼，一般睡够八小时就可以了。",
+      "note_zh": "动词"
+     },
+     {
+      "n": 3,
+      "zh": "不用拿这些，宾馆都会免费提供的。再说，箱子已经够重的了！",
+      "note_zh": "副词"
+     },
+     {
+      "n": 4,
+      "zh": "有的人害怕失败，无法接受失败。这不仅是因为他们不够勇敢，还因为他们对自己要求太高。",
+      "note_zh": "副词"
+     }
+    ],
+    "practice_instruction_zh": "完成对话或句子 Complete the dialogues or sentence.",
+    "practice": [
+     {
+      "n": 1,
+      "zh": "A：一共两百三十九块七。您付现金还是刷卡？ B：________，还是刷卡吧。",
+      "hint_zh": "够"
+     },
+     {
+      "n": 2,
+      "zh": "A：你来得________，正好8点。 B：那就好，我还以为迟到了。",
+      "hint_zh": "够……的"
+     },
+     {
+      "n": 3,
+      "zh": "这些菜________，咱们俩肯定吃不了。",
+      "hint_zh": "够"
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "title_zh": "以",
+    "explanation_zh": "“以”，介词，表示凭借，有“用、拿”的意思，常用结构是“以……V”。例如：（1）（2）\n“以……为……”结构的意思是“把……作为……”或者“认为……是……”。例如：（3）\n“以”，连词，表示目的。相当于“用来、为的是”。一般用在后一分句的句首，主语必须相同。例如：（4）",
+    "explanation_en": "The preposition “以” means “using, taking, by means of”, usually used in the structure “以…… + V”. For example: (1) (2)\n“以……为……” means “to take…as…” or “to regard…as…”. For example: (3)\nThe conjunction “以” indicates purpose, meaning “used for, in order to”. It is usually used at the beginning of the latter clause, and the two clauses should share the same subject. For example: (4)",
+    "structure_rows": [
+     "以……＋V",
+     "以……为……"
+    ],
+    "examples": [
+     {
+      "n": 1,
+      "zh": "经理您放心，我一定以最快的速度完成。",
+      "note_zh": "介词：以……V"
+     },
+     {
+      "n": 2,
+      "zh": "事情做到“差不多”就觉得满意的人往往不会成功，只有以严格的标准来要求自己才会让自己变得更优秀。",
+      "note_zh": "介词：以……V"
+     },
+     {
+      "n": 3,
+      "zh": "我们应该以那些敢说真话的人为镜子，这样才能及时发现自己的缺点。",
+      "note_zh": "以……为……"
+     },
+     {
+      "n": 4,
+      "zh": "如果是十分重要的朋友，中国人往往会请他们去饭店或餐厅吃饭，以表示对客人的尊重和礼貌。",
+      "note_zh": "连词：目的"
+     }
+    ],
+    "practice_instruction_zh": "完成句子 Complete the sentences.",
+    "practice": [
+     {
+      "n": 1,
+      "zh": "________，解决这个问题还有点儿困难。",
+      "hint_zh": "以"
+     },
+     {
+      "n": 2,
+      "zh": "汉语普通话________。",
+      "hint_zh": "以……为……"
+     },
+     {
+      "n": 3,
+      "zh": "我觉得应该降低公园门票价格，________。",
+      "hint_zh": "以"
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "title_zh": "既然",
+    "explanation_zh": "“既然”，连词，用在复句的前一分句，意思是“因为事实已经是这样了”。后一分句常有“就、也、还”之类的词跟它配合使用，表示根据前边的情况得出的结论。例如：",
+    "explanation_en": "The conjunction “既然” is used in the first clause of a complex sentence, meaning “since this is the fact now”. “就”, “也” or “还” etc. is often used in coordination with it in the second clause, indicating the conclusion drawn from the situation mentioned. For example:",
+    "examples": [
+     {
+      "n": 1,
+      "zh": "A：你既然不愿意打球，为什么还要打？ B：我是不得不打啊，因为这些天我又胖了好几斤。"
+     },
+     {
+      "n": 2,
+      "zh": "A：真抱歉，明天我得出差，不能参加明天的会议了。 B：既然这样，就只好安排在下周了。"
+     },
+     {
+      "n": 3,
+      "zh": "既然明天晚上公司会关灯停电，那么我们肯定不用加班了。"
+     }
+    ],
+    "practice_instruction_zh": "完成对话或句子 Complete the dialogue or sentences.",
+    "practice": [
+     {
+      "n": 1,
+      "zh": "A：这里的景色确实很不错。阳光好，空气新鲜，来这儿散步真舒服。 B：________，以后我们可以常来。",
+      "hint_zh": "既然"
+     },
+     {
+      "n": 2,
+      "zh": "我刚才看了一下，一共二十个人，有十五个人同意这个计划，________，那我们就通过这个计划了。",
+      "hint_zh": "既然"
+     },
+     {
+      "n": 3,
+      "zh": "有些事情过去了就是过去了，再也不能回头。________，那么就把那些过去的事情放在心里，当成一种回忆，然后勇敢地抬起头向前看，走好以后的路。",
+      "hint_zh": "既然"
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "title_zh": "于是",
+    "explanation_zh": "“于是”，连词，用在复句的后一分句中，表示后面的事情紧随着前面的事情发生，一般有承接关系。例如：\n【比一比 于是—因此】\n相同点：两者都是连词，都可用于“A，于是／因此B”结构，表示A引起B。★\n不同点：表示★这个意思时，“于是”强调A先发生，B后发生；而“因此”强调A是原因，B是结果。",
+    "explanation_en": "The conjunction “于是” is used in the second clause of a complex sentence, indicating an event happens immediately after the event mentioned previously, usually implying a successive relation. For example:\n[Compare 于是—因此]\nSimilarities: Both are conjunctions that can be used in the structure “A, 于是/因此 B”, meaning A causes B.\nDifferences: In case ★, “于是” emphasizes that A happens before B, while “因此” emphasizes that A is the reason and B the result.",
+    "structure_rows": [
+     "A，于是／因此B"
+    ],
+    "examples": [
+     {
+      "n": 1,
+      "zh": "听爷爷奶奶说，我妹妹出生那天，正好下了一场大雪，于是我爸妈就给她取名叫夏雪。"
+     },
+     {
+      "n": 2,
+      "zh": "他是一位著名的记者，五年里，他去了亚洲许多国家，尝遍了各地的美食。回国后，他用一年的时间整理材料，于是就有了这本关于亚洲美食的书。"
+     },
+     {
+      "n": 3,
+      "zh": "……可是，它的大量使用也带来了严重的环境污染问题。于是，一些国家规定，超市、商场不能为顾客提供免费塑料袋，并且鼓励大家购买可以多次使用的购物袋。"
+     },
+     {
+      "zh": "小时候，他经常生病，于是／因此每天都去跑步锻炼身体。",
+      "note_zh": "比一比 相同点"
+     },
+     {
+      "zh": "大家都同意寒假去旅行，于是，我们开始讨论去哪里旅行的问题。",
+      "note_zh": "比一比 不同点：于是"
+     },
+     {
+      "zh": "他三岁跟父亲母亲一起来到这儿，就再也没离开过这里。因此，他对这个地方感情很深。",
+      "note_zh": "比一比 不同点：因此"
+     }
+    ],
+    "practice_instruction_zh": "完成句子 Complete the sentences.",
+    "practice": [
+     {
+      "n": 1,
+      "zh": "我约了朋友在商场门口见面，我早到了一会儿，________。",
+      "hint_zh": "于是"
+     },
+     {
+      "n": 2,
+      "zh": "最近几年，笔记本电脑的价格大大降低，________。",
+      "hint_zh": "于是"
+     },
+     {
+      "n": 3,
+      "zh": "学习一种语言不是简单的事情，许多人在开始学的时候觉得很困难，________。",
+      "hint_zh": "于是"
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "title_zh": "什么的",
+    "explanation_zh": "“什么的”，助词，用在所举例子的后边，表示还有与所举例子类似的情况，常用于口语。例如：",
+    "explanation_en": "The particle “什么的” is used after the example(s) enumerated, meaning there are still other things that are similar to the example(s) listed. It is usually used in spoken Chinese. For example:",
+    "examples": [
+     {
+      "n": 1,
+      "zh": "既然你不喜欢新闻专业，那就考虑考虑其他专业吧，中文、国际关系什么的，我和你爸都不反对。"
+     },
+     {
+      "n": 2,
+      "zh": "A：我们去趟超市吧，明天出去玩儿得买点儿饼干和面包。 B：好，还有矿泉水、果汁什么的。"
+     },
+     {
+      "n": 3,
+      "zh": "实际上，我们只需注意一下身边的小事就可以。例如，夏天把空调的温度开得高一些，出门时记得关空调和电脑，这样可以节约用电；少开车，多骑车或者乘坐地铁和公共汽车，这样能降低空气污染；还有养成把垃圾丢进垃圾桶的习惯什么的。"
+     }
+    ],
+    "practice_instruction_zh": "完成句子 Complete the sentences.",
+    "practice": [
+     {
+      "n": 1,
+      "zh": "我们有很多共同的爱好，经常一起________。",
+      "hint_zh": "什么的"
+     },
+     {
+      "n": 2,
+      "zh": "很多东西是用钱买不到的，比如________。",
+      "hint_zh": "什么的"
+     },
+     {
+      "n": 3,
+      "zh": "现在手机的作用越来越大，人们可以用它来________。",
+      "hint_zh": "什么的"
+     }
+    ]
+   }
+  ],
+  "exercises": [
+   {
+    "n": "注释4 比一比 做一做",
+    "type_zh": "选词填空（于是／因此）",
+    "instruction_zh": "选词填空",
+    "instruction_en": "Tick or cross",
+    "word_bank": [
+     [
+      "于是",
+      "因此"
+     ]
+    ],
+    "items": [
+     {
+      "n": 1,
+      "zh": "有些年轻人申请了信用卡，但在购物时却没有考虑自己的经济能力，最后不能按时还银行的钱，________出现严重的信用问题。",
+      "options": {
+       "于是": "✓",
+       "因此": "✓"
+      },
+      "answer": "于是 ✓　因此 ✓",
+      "answer_ref": {
+       "book": "textbook",
+       "pages": [
+        63
+       ]
+      }
+     },
+     {
+      "n": 2,
+      "zh": "习惯是不容易改变的，________，在孩子小的时候，父母要帮他们养成好的生活、学习习惯。",
+      "options": {
+       "于是": "×",
+       "因此": "✓"
+      },
+      "answer": "于是 ×　因此 ✓",
+      "answer_ref": {
+       "book": "textbook",
+       "pages": [
+        63
+       ]
+      }
+     },
+     {
+      "n": 3,
+      "zh": "不少人刚开始运动时，会感觉十分无聊，________很快就放弃了。"
+     },
+     {
+      "n": 4,
+      "zh": "那是1994年的冬天，那场雪下得特别大。大家都很激动，________都跑到外面去玩儿雪。"
+     },
+     {
+      "n": 5,
+      "zh": "生活往往不会按照我们的计划来进行。________，光有计划还不行，还需要我们能及时地对原来的计划做出改变。"
+     }
+    ]
+   },
+   {
+    "n": "课文1–3 回答问题",
+    "type_zh": "回答问题",
+    "instruction_zh": "根据课文内容回答问题",
+    "instruction_en": "Answer the questions based on the texts.",
+    "items": [
+     {
+      "n": 1,
+      "zh": "课文1：李进开始为什么不想带毛巾、牙膏和牙刷？后来为什么又带了？"
+     },
+     {
+      "n": 2,
+      "zh": "课文1：王静为什么建议李进坐地铁去机场？"
+     },
+     {
+      "n": 3,
+      "zh": "课文2：经理希望小王做什么？店里哪些地方需要打扫？"
+     },
+     {
+      "n": 4,
+      "zh": "课文2：经理有什么要求？小王打算怎么做？"
+     },
+     {
+      "n": 5,
+      "zh": "课文3：明天晚上孙月的公司会做什么？孙月为什么很高兴？"
+     },
+     {
+      "n": 6,
+      "zh": "课文3：“地球一小时”是个什么活动？这个活动的目的是什么？"
+     }
+    ]
+   },
+   {
+    "n": "课文4–5 回答问题",
+    "type_zh": "回答问题",
+    "instruction_zh": "根据课文内容回答问题",
+    "instruction_en": "Answer the questions based on the text.",
+    "items": [
+     {
+      "n": 1,
+      "zh": "课文4：塑料袋有什么好处？有什么坏处？"
+     },
+     {
+      "n": 2,
+      "zh": "课文4：怎样解决使用塑料袋带来的污染问题？"
+     },
+     {
+      "n": 3,
+      "zh": "课文5：我们需要注意哪些事情来保护地球环境？"
+     },
+     {
+      "n": 4,
+      "zh": "课文5：怎样才能使地球变得更美丽？"
+     }
+    ]
+   },
+   {
+    "n": 1,
+    "type_zh": "复述",
+    "instruction_zh": "复述",
+    "instruction_en": "Retell the dialogues.",
+    "items": [
+     {
+      "n": "课文1",
+      "zh": "李进的语气：我明天要出差，妻子帮我把毛巾、牙膏和牙刷都放到了箱子里。……"
+     },
+     {
+      "n": "课文2",
+      "zh": "小王的语气：今天店里太忙了，卫生间很脏，我也没来得及打扫。……"
+     },
+     {
+      "n": "课文3",
+      "zh": "孙月的语气：早上听新闻说明天有一个叫“地球一小时”的活动，……"
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "type_zh": "选词填空",
+    "instruction_zh": "选择合适的词语填空",
+    "instruction_en": "Choose the proper words to fill in the blanks.",
+    "word_bank": [
+     [
+      "拒绝",
+      "鼓励",
+      "得意",
+      "省",
+      "重（zhòng）"
+     ],
+     [
+      "扔",
+      "丢",
+      "行",
+      "出差",
+      "抱歉"
+     ]
+    ],
+    "items": [
+     {
+      "n": 1,
+      "zh": "为了________大家少抽烟，人们将每年的4月7日定为“世界无烟日”。"
+     },
+     {
+      "n": 2,
+      "zh": "有的人总是不好意思________朋友的要求，害怕这样会影响两个人的感情。"
+     },
+     {
+      "n": 3,
+      "zh": "按照规定，您只能免费带20公斤的行李，超________的部分每公斤加收全部票价的1.5%。"
+     },
+     {
+      "n": 4,
+      "zh": "不要因一时的成功而________，也不要因一时的失败而伤心，因为那些都已经过去，重要的是怎样过好将来的生活。"
+     },
+     {
+      "n": 5,
+      "zh": "山东________烟台市是中国著名的“苹果之都”。由于气候等自然条件较好，那儿的苹果个儿大，味道香甜，颜色也漂亮。"
+     },
+     {
+      "n": 6,
+      "zh": "A：打扰一下，请问李老师在吗？ B：他________了。你找他有事吗？"
+     },
+     {
+      "n": 7,
+      "zh": "A：喂，你还在逛街吗？我的钥匙________了，进不了门，你快回来吧。 B：好，我马上就回去。"
+     },
+     {
+      "n": 8,
+      "zh": "A：实在________，我来晚了。今天路上有点儿堵。 B：没关系，请坐。你喝果汁还是咖啡？"
+     },
+     {
+      "n": 9,
+      "zh": "A：垃圾桶又满了，你去________一下垃圾吧。 B：好的，看完这个节目我就去。"
+     },
+     {
+      "n": 10,
+      "zh": "A：马上就要毕业了，你准备在学校附近租房子吗？ B：学校附近房子太贵。离学校远点儿没关系，只要离地铁或者公交车站近就________。"
+     }
+    ]
+   },
+   {
+    "n": "扩展 做一做",
+    "type_zh": "选词填空（同字词）",
+    "instruction_zh": "选词填空",
+    "instruction_en": "Fill in the blanks with the words given.",
+    "word_bank": [
+     [
+      "速度",
+      "温度",
+      "态度"
+     ]
+    ],
+    "items": [
+     {
+      "n": 1,
+      "zh": "这个月底，我和丈夫准备开车去长白山，那边________比较低，所以要提前准备几件厚一些的衣服。",
+      "answer": "温度",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        45
+       ]
+      }
+     },
+     {
+      "n": 2,
+      "zh": "A：小张，你有什么意见？ B：按照现在的________，想要在规定时间内完成计划，好像有点儿困难。",
+      "answer": "速度",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        45
+       ]
+      }
+     },
+     {
+      "n": 3,
+      "zh": "幽默是一种积极的生活________，不但可以减轻你工作上的压力，还可以拉近人与人之间的距离。",
+      "answer": "态度",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        45
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "characters": {
+   "knowledge_title_zh": "同字词",
+   "knowledge_en": "Words with the Same Character",
+   "knowledge_zh": "度：速度、温度、态度\n（1）现在火车的速度非常快，有时乘坐火车甚至比乘坐飞机更节约时间，因为一般来说，去火车站比去机场的距离要近得多。\n（2）很多人习惯在早上锻炼身体，但室外锻炼并不是越早越好，尤其是冬天，日出前温度较低，并不适合运动。\n（3）人们都希望生活会向着好的方向变化，当我们开始改变自己的态度时，这种变化就开始发生了。",
+   "characters": [
+    {
+     "zh": "度",
+     "note_zh": "速度、温度、态度"
+    }
+   ]
+  },
+  "application": [
+   {
+    "title_zh": "双人活动",
+    "instruction_zh": "互相了解对方关于保护环境的看法，完成调查表。",
+    "instruction_en": "Learn about each other’s opinions on environmental protection and complete the questionnaire below.",
+    "example_zh": [
+     "表格：| | 问 | 答 |",
+     "| 1 | 你认为在生活中哪些方面会产生污染？ | |",
+     "| 2 | 污染对你的生活有哪些影响？ | |",
+     "| 3 | 污染给我们的地球带来了哪些变化？ | |",
+     "| 4 | 你认为造成污染的原因是什么？ | |",
+     "| 5 | 你认为一个国家应该有哪些规定来保护环境？ | |",
+     "| 6 | 我们应该做些什么来保护环境？ | |"
+    ]
+   },
+   {
+    "title_zh": "小组活动",
+    "instruction_zh": "现在的环境问题对我们的生活有哪些影响？你认为怎样才能减少污染、保护环境？请向小组成员介绍一下你关于保护环境的看法。（最少用四个下面的结构）",
+    "instruction_en": "What are the influences that the current environmental problems have on our lives? What do you think we should do to reduce pollution and protect the environment? Tell your opinion to your group members. (Use at least four of the following structures.)",
+    "example_zh": [
+     "a. 免费提供",
+     "b. 从身边的小事做起",
+     "c. 污染空气",
+     "d. 一定得注意",
+     "e. 节约用电",
+     "f. 对气候变暖问题的关注",
+     "g. 有责任保护环境",
+     "h. 减少污染"
+    ]
+   }
+  ],
+  "culture": {
+   "title_zh": "天人合一——中国人的“人与自然观”",
+   "body_zh": "“天人合一”是中国哲学中关于人与自然关系的一种观点，意思是人与大自然要“合一”，要和平共处。它最早是由庄子（公元前369–公元前286）提出的。当代著名学者季羡林先生将其解释为：天，就是大自然；人，就是人类；合，就是互相理解，结成友谊。古人告诉我们，人类只是天地万物中的一个部分，人与自然是息息相通的一体。随着经济的发展，环境保护问题也越来越引起人们的重视。世界环境日为每年的6月5日，它的确立反映了世界各国人民对环境问题的认识和态度，表达了人类对美好环境的向往和追求。",
+   "body_en": "“The Unity of Heaven and Man” - Chinese Philosophy about the Relationship betwen Humans and Nature\n“天人合一 (the unity of heaven and man)” is a theory in Chinese philosophy about the relationship between humans and nature, meaning the humankind should unite with the nature and coexist with it in harmony. The idea was first put forward by Zhuangzi (369 B.C.-286 B.C.). According to the famous scholar Mr. Ji Xianlin, “天” refers to nature, “人” refers to the humankind, and “合” means to understand each other and make friends with each other. The ancients told us that we human beings are only part of the creatures in the universe, and that we are at one with nature. As the economy develops, environmental protection has begun to draw more and more attention. The annual World Environment Day falls on June 5th. Its establishment is a reflection of the understanding of and attitude towards environmental problems shared by people all over the world as well as an expression of the humankind’s dream and pursuit of a good environment."
+  }
+ },
+ "teacher": {
+  "ref": {
+   "book": "teacher",
+   "pages": [
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45
+   ]
+  },
+  "objectives_zh": [
+   "主题：环保（1）对话：绿色出行、打扫卫生、“地球一小时”（2）短文：减少使用塑料袋、环保从小事做起",
+   "语言点：学生能够了解并掌握：（1）“够”表示数量上满足；也表示程度上达到了一定标准（2）“以”表示凭借、目的（3）“既然”表示根据前边的情况得出结论（4）“于是”表示后面的事情紧随着前面的事情发生　*辨析“于是”和“因此”的异同（5）“什么的”表示还有与所举例子类似的情况",
+   "词汇：学生能够：（1）掌握本课32个四级大纲词汇的意义和用法　重点词语：出差、省、扔、得意、目的、鼓励、拒绝、减少、乘坐、美丽（2）理解“度”字的组词规律及在词汇中的意义"
+  ],
+  "steps": [
+   {
+    "title_zh": "一 复习旧课",
+    "body_zh": "1 使用生词卡片，快速认读下列词语：\n演出、来自、遍、基础、正常、继续、大约、错误、部分、稍微\n2 快速回答问题（与第13课或学生实际生活有关的问题）：\n（1）你身边的朋友喜欢听京剧吗？他们为什么喜欢或者不喜欢？\n（2）中国人都会正确使用筷子吗？有多少中国人不会用呢？\n（3）你喝过“凉茶”吗？“凉茶”是茶吗？为什么？\n3 检查作业：\n请5名学生每人用上节课所学语言点说一个句子。"
+   },
+   {
+    "title_zh": "二 学习新课 1 热身",
+    "body_zh": "热身1：学生两人一组，合作完成；教师指出图片，请学生根据图片说出对应的词语，教师核对答案；教师领读热身1的生词；最后全体学生齐读，教师正音。\n答案：①F　②E　③A　④D　⑤B　⑥C\n热身2：教师带领学生了解问卷的内容；请学生两人一组，互相提问调查，完成表格；请2～3名学生汇报调查结果。"
+   },
+   {
+    "title_zh": "2 生词",
+    "body_zh": "（1）生词快速认读及正音\n课文1（对话）：出差、毛巾、牙膏、重、行、省、污染\n课文2（对话）：卫生间、脏、抱歉、空、盒子、扔、以、速度\n课文3（对话）：地球、既然、停、得意、目的、暖\n课文4（短文）：塑料袋、于是、鼓励、拒绝、减少、数量\n课文5（短文）：温度、乘坐、丢、垃圾桶、美丽\n• 教师用PPT或卡片展示并领读生词（带拼音）；\n• 取消拼音，带领学生再次认读；\n• 逐词（不带拼音）闪现，请学生快速认读生词；\n• 请3～5个学生快速随机认读3～5个生词；\n• 最后全体学生快速齐读所有生词。\n（2）生词讲解方式\n直观法（图片、实物）：图片类：污染（热身图片B）、卫生间（卫生间）、脏（脏衣服）、速度（热身图片D）、地球（热身图片E）、塑料袋（热身图片C）、温度（热身图片F）、垃圾桶（热身图片A）、丢（车上乘客丢垃圾）；实物类：毛巾、牙膏、盒子、空（一瓶新饮料，一个空瓶子）\n情景法（肢体动作、语言等）：扔（扔粉笔）、停（走路，然后停在某学生身边）、数量、丢（丢空瓶子）\n对比法（反义词对比）：暖（冷）、重（轻）、减少（增加）\n替换法（同／近义替换）：行（好的）、省（节约）、抱歉（对不起）、美丽（美）\n分解法（分解词义）：得意（感觉＋很满意）\n提问启发：出差、拒绝、乘坐、目的、鼓励\n教师提问，引导学生说出句子：\n马克在北京工作，有时候他需要去外地完成工作，所以他……——马克有时候需要出差去外地工作。\n我想帮助他，但他不接受我的帮助，他……——他拒绝了我的帮助。\n为了保护环境，我们应该少开车多……——多骑车或乘坐地铁和公共汽车。\n你们为什么学习汉语？——我学习汉语的目的是为了了解中国文化／……\n在孩子遇到困难想放弃时，父母应该怎么办呢？——父母应该多鼓励孩子。\n（3）字形辨认练习\n教师用卡片或PPT展示，请学生快速辨认并读出，最后给每个字组词。\n巾—币　膏—亮　省—看\n脏—肥　扔—圾　既—即\n料—糖　丢—去　垃—拉\n（4）重点生词扩展及常用搭配\n出差—去出差—到外地出差—到上海出两天差—他下周准备到上海出两天差。\n省—省油／钱／时间—每天坐地铁省钱—坐地铁去机场非常省钱。\n扔—扔东西—扔掉—把垃圾扔掉。\n得意—很／非常得意—别得意了—得意的样子—看你得意的样子！\n目的—他的目的—简单的目的—其实他的目的挺简单的。\n鼓励—鼓励学生—鼓励大家好好学习—国家鼓励大家使用购物袋。\n拒绝—拒绝他—拒绝他的帮助—拒绝使用塑料袋。\n减少—减少污染—减少使用—减少使用塑料袋—减少使用塑料袋，可以保护环境。\n乘坐—乘坐飞机—乘坐地铁或公共汽车—多乘坐地铁或公共汽车，能降低空气污染。\n美丽—变得更美丽—保护环境，使我们的家变得更美丽。"
+   },
+   {
+    "title_zh": "3 语言点（1）够",
+    "body_zh": "【动词用法】\n① 语言点解析\n“够”，动词，表示数量上能满足。\n② 语言点导入\n联系生活实际，提问导入。\n• 教师：如果想保证身体健康，每天睡几个小时比较合适？\n学生：一般应该睡够八个小时。\n• 教师：这件衣服1000块，但是你只有800块，你能买这件衣服吗？\n学生：我的钱不太够，买不了这件衣服。\n③ 语言点操练\n创设情境，引导操练。\n• 教师：根据时间安排，你今天就应该把调查材料交给我。\n学生：真不好意思，本来应该今天给你的，后来发现时间不够，还没做完呢。\n• 教师：快别玩儿了！咱们得回家吃饭了。\n学生：别着急啊，我还没玩儿够呢。\n【副词用法】\n① 语言点解析\n“够”，副词，表示程度上达到了一定标准。“够＋形容词”用于肯定句时，形容词后常加“的”。\n② 语言点导入\n利用热身1图片F，提问导入。\n• 教师：海边的温度高吗？\n学生：够高的。\n• 教师：你觉得热不热？\n学生：真够热的。\n③ 语言点操练\n• 利用热身1图片B、D、E，请学生描述图片进行操练。\n图片B目标句：这里的污染够严重的！\n图片D目标句：他们开车的速度够快的！\n图片E目标句：地球真够漂亮的！\n④ 语言点运用\n请学生两人一组，根据提示用“够”补全对话，并分角色表演。\nA：________！\nB：我也没什么特别的学习方法，就是每天都复习一遍。\nA：可是我也复习啊，我每天睡觉前都复习5分钟。\nB：才5分钟啊，________。\n参考答案：这次考试你考得真够好的\n这么短的时间肯定不够"
+   },
+   {
+    "title_zh": "3 语言点（2）以",
+    "body_zh": "【动词用法】\n① 语言点解析\n“以”，介词，表示凭借，有“用、拿”的意思，常用结构是“以……V”。其中，“以……为……”的意思是“把……作为……”或者“认为……是……”。\n② 语言点导入\n利用热身图片D，提问导入。\n教师：要想在赛车比赛中拿第一，应该怎么做？\n学生：应该以最快的速度开车。\n③ 语言点操练\n创设情境或联系生活实际，提问操练。\n• 教师：这个工作你们多长时间能完成？\n学生：我们一定以最快的速度完成。\n• 教师：小孩子问父母问题，父母怎么回答才能让孩子容易明白呢？\n学生：父母应该以最简单的、最清楚的语言回答孩子的问题。\n④ 语言点运用\n请学生根据提示用“以”补全下面的句子，并朗读。\nI. 为了不引起他的误会，________。\nII. 虽然生活中可能会遇到各种困难，________。\nIII. ________，别人才能相信你的调查结果。\n参考答案：I. 你要以最直接的方法告诉他那件事\nII. 但是我们一定要以积极的态度面对那些困难\nIII. 只有以准确的数字说明问题\n【连词用法】\n① 语言点解析\n“以”还可做连词，表示目的，相当于“用来、为的是”。一般在后一分句的句首，主语必须相同。\n② 语言点导入\n联系生活实际，提问导入。\n• 教师：中国人常常会请帮助了自己的人吃饭，为什么呢？\n学生：他们请人吃饭以表示感谢。\n• 教师：新闻为什么经常使用数字？\n学生：新闻经常使用数字以说明复杂的问题。\n③ 语言点操练\n联系生活实际或创设情境，提问操练。\n• 教师：为什么说朋友间应该多交流呢？\n学生：朋友们应该常常聊天以增加了解和感情。\n• 教师：他为什么总喜欢跟中国人交流呢？\n学生：他经常找机会跟中国人交流，以提高口语水平。\n④ 语言点运用\n请学生用“以”说说下面几种情况的目的。\nI. 他们每天坚持练习踢足球，________。\nII. 每年都举行“地球一小时”活动，________。\nIII. 马克经常阅读中文杂志，________。\n参考答案：I. 以赢得比赛\nII. 以引起大家对环境问题的关注\nIII. 以增加对中国的了解"
+   },
+   {
+    "title_zh": "3 语言点（3）既然",
+    "body_zh": "① 语言点解析\n“既然”，连词，用在复句的前一分句，意思是“因为事实已经是这样了”。后一分句常有“就、也、还”之类的词跟它配合使用，表示根据前边的情况得出结论。\n② 语言点导入\n利用热身图片B，进行导入。\n• 教师：现在环境污染问题很严重，我们应该……\n学生：既然污染很严重，我们每个人就都应该努力保护环境。\n• 教师：既然大家都知道要努力保护环境，那我们应该怎么做呢？\n学生：既然要保护环境，那我们应该从身边的小事做起，不浪费水、电等。\n③ 语言点操练\n利用热身图片A、C，进行操练。\n• 图片A目标句：既然有垃圾桶，就应该把垃圾扔进垃圾桶里。\n• 图片C目标句：既然塑料袋会污染环境，就应该减少对塑料袋的使用。\n④ 语言点运用\n请学生两人一组，根据课文1的内容和提示词，改编课文，并分角色表演。\nA：虽然宾馆有毛巾、牙膏和牙刷，不过你还是带着吧。\nB：________。（既然，重）\nA：你不是说要保护环境吗？现在就从身边的小事做起吧。你明天几点的飞机？\nB：我明天上午10点的飞机，可能会堵车，你早点儿送我去机场吧。\nA：________。（既然，地铁）\n参考答案：既然宾馆都有，就别带了，箱子已经够重了\n既然会堵车，你就坐地铁去机场吧"
+   },
+   {
+    "title_zh": "3 语言点（4）于是",
+    "body_zh": "① 语言点解析\n“于是”，连词，用在复句的后一分句中，表示后面的事情紧随着前面的事情发生，一般有承接关系。\n② 语言点导入\n联系课文内容，提问导入。\n• 教师：塑料袋会污染环境，很多国家的超市用什么方法减少污染？\n学生：塑料袋会污染环境，于是，很多超市不为顾客提供免费塑料袋了。\n• 教师：由于天气原因，飞机无法按时起飞，马克只能怎么办呢？\n学生：由于天气原因，飞机无法按时起飞，于是，马克不得不改变计划，明天再走。\n③ 语言点操练\n联系课文1内容，提问操练。\n• 教师：李进一开始想用宾馆提供的毛巾、牙膏和牙刷，后来为了保护环境，李进是怎么做的？\n学生：李进一开始想用宾馆提供的毛巾、牙膏和牙刷，为了保护环境，于是带了自己的毛巾、牙膏和牙刷。\n• 教师：李进最后决定怎么去机场？\n学生：李进担心堵车，于是，他决定坐地铁去机场。\n④ 语言点运用\n请学生根据句子意思，连线组成5个完整的句子，并朗读。\nI. 本来今天约好去打球，后来下雨了　　A. 于是他准备得特别认真\nII. 这次面试对他很重要　　B. 于是向朋友借了200块\nIII. 经理看到卫生间很脏　　C. 于是只好明天再去\nIV. 公司参加“地球一小时”活动　　D. 于是今天早早就下班了\nV. 她带的现金不够了　　E. 于是让服务员快点儿去打扫\n参考答案：I. C　II. A　III. E　IV. D　V. B\n⑤ 比一比：于是—因此\n按照教材中的辨析步骤进行。"
+   },
+   {
+    "title_zh": "3 语言点（5）什么的",
+    "body_zh": "① 语言点解析\n“什么的”，助词，用在所举例子的后边，表示还有与所举例子类似的情况，常用于口语。“什么的”可以跟“比如、例如、像”一起搭配使用，常用格式为“比如／例如／像……什么的”。\n② 语言点导入\n联系生活实际，提问导入。\n• 教师：你有什么兴趣爱好？\n学生：我的爱好很多，比如游泳、跳舞、画画儿什么的。\n• 教师：为了保护环境，我们可以做哪些小事呢？\n学生：为了保护环境，我们可以不用塑料袋、不浪费水、少开车什么的。\n③ 语言点操练\n创设情境或联系学生实际，提问操练。\n• 教师：你去超市买什么了？\n学生：我去超市买了饼干、面包什么的。\n• 教师：怎么才能提高汉语听力、口语能力呢？\n学生：你可以试试多听汉语新闻、看汉语电影、交中国朋友什么的。\n④ 语言点运用\n请学生两人一组，根据提示用“什么的”补全对话，并分角色表演。\nI. A：我不太喜欢新闻专业，你给我点儿建议吧。\nB：________。\nII. A：你每个周末都做什么啊？\nB：________。\nIII. A：您好，我想买水果、毛巾、牙膏和牙刷。这些东西放在哪儿？\nB：________。\n参考答案：I. 你可以考虑一下中文、国际关系什么的\nII. 做饭、复习、逛公园什么的\nIII. 水果在左边，毛巾、牙膏和牙刷什么的都在右边"
+   },
+   {
+    "title_zh": "4 课文",
+    "body_zh": "（1）就课文内容，教师将下列问题写在黑板上或用PPT展示（或教师给学生发放问题单）：\n课文1：李进明天出差，王静给李进准备好了什么？／明天李进怎么去机场？为什么？／保护环境应该怎么做？\n课文2：卫生间干净吗？为什么？／经理让服务员扔掉什么？／服务员会怎么打扫餐厅？\n课文3：新闻说明天会有什么活动？／关于这个活动，她们的公司会做什么？／这个活动的目的是什么？\n课文4：使用塑料袋会带来什么结果？／一些国家鼓励大家做什么？／减少使用塑料袋能不能保护环境？\n课文5：保护地球环境离我们每个人远吗？／做哪些小事可以保护地球环境？／怎么才能使我们的家变得更美丽？\n（2）要求学生带着问题，听两遍录音并回答问题，教师给出答案；\n（3）学生打开课本，教师逐句播放录音，学生看课本听第二次录音并跟读；\n（4）教师领读一遍课文；\n（5）全班一起大声齐读一遍课文；\n（6）请2～3组学生分角色朗读课文，教师正音；\n（7）做以下课文扩展练习：\n对话课文：教师带领学生根据问题单上问题的答案叙述课文内容，并请学生单个复述。\n课文1：李进明天要出差，王静给他准备好了毛巾、牙膏和牙刷什么的。为了保护环境，明天李进坐地铁去机场，这样不仅省油省钱，还不会污染空气。\n课文2：卫生间很脏，服务员还没来得及打扫。经理让服务员扔掉空饮料瓶子和纸盒子。服务员让经理放心，她会以最快的速度完成。\n课文3：明天有一个叫“地球一小时”的活动，所以明天晚上公司会关灯停电，不用加班了。这个活动的目的很简单，就是提醒人们节约用电，引起人们对气候变暖问题的关注。\n短文课文：请学生根据课文内容，补全下面的语段，并请学生单个复述朗读。\n课文4：塑料袋给人们带来方便，也带来了严重的……（环境污染问题）。于是，一些国家鼓励大家购买能……（多次使用）的购物袋。为了保护环境，希望大家拒绝……（使用塑料袋）。减少塑料袋的……（使用数量），对环境保护有很大的作用。\n课文5：为了保护地球环境，我们应该注意……（身边的小事）。例如，夏天把……（空调温度）开得高一些，多乘坐地铁和公共汽车，养成把垃圾……（丢进垃圾桶）的习惯什么的。只有大家……（共同努力），减少污染、保护环境，才能使我们的家……（变得更美丽）。"
+   },
+   {
+    "title_zh": "5 扩展",
+    "body_zh": "（1）领读“速度、温度、态度”三个同字词，请学生说一说“度”字在词中的位置和意义。“度”的义项：\n① 物质的有关性质：速度、温度\n② 人的气质或姿态：态度\n（2）请学生完成“选词填空”练习，教师给出正确答案。\n参考答案：①温度　②速度　③态度\n（3）教师在黑板上列出以下词语，请学生猜词义，教师给出简单的例句进行解释。\n度假：春节我们全家去海边度假。（过，指时间）\n度数：因为我经常玩手机、玩电脑，今年眼镜的度数又高了不少。（计量单位）\n高度：这个楼的高度跟那个楼一样，有30米。\n过度：他最近常常加班，用脑过度，把自己累病了，这周不得不请假休息。（限度）"
+   },
+   {
+    "title_zh": "6 补充课堂活动",
+    "body_zh": "学生4人一组，交流自己国家或者身边的保护环境的规定、方法，然后把这些规定、方法总结一下，最后每组派一个代表向全班同学介绍。"
+   },
+   {
+    "title_zh": "7 文化",
+    "body_zh": "教师引导学生了解“天人合一”的思想，可根据需求和时间安排，进行以下参考活动：\n• 展示两组图片，一组3张人与自然和谐相处的图片，一组3张环境污染、资源过度开发的图片。教师引导学生理解“天人合一”的思想；\n• 请学生说说自己国家的语言怎么表达“天人合一”这种思想；\n• 请3～5个学生谈谈怎么才能做到“天人合一”。"
+   },
+   {
+    "title_zh": "8 布置作业",
+    "body_zh": "• 每个生词写3遍；\n• 简单介绍一下“地球一小时”活动，大约3分钟。"
+   }
+  ],
+  "notes_zh": [
+   "比一比：于是—因此——按照教材中的辨析步骤进行。（语言点4）",
+   "【动词用法】“以”，介词，表示凭借，有“用、拿”的意思，常用结构是“以……V”。其中，“以……为……”的意思是“把……作为……”或者“认为……是……”。【连词用法】“以”还可做连词，表示目的，相当于“用来、为的是”。一般在后一分句的句首，主语必须相同。（语言点2）",
+   "“什么的”可以跟“比如、例如、像”一起搭配使用，常用格式为“比如／例如／像……什么的”。（语言点5）",
+   "字形辨认：巾—币　膏—亮　省—看　脏—肥　扔—圾　既—即　料—糖　丢—去　垃—拉（生词）",
+   "“度”的义项：① 物质的有关性质：速度、温度　② 人的气质或姿态：态度；扩展词：度假（过，指时间）、度数（计量单位）、高度、过度（限度）（扩展）"
+  ],
+  "warmup_answers_zh": [
+   "热身1 答案：①F　②E　③A　④D　⑤B　⑥C",
+   "热身2：教师带领学生了解问卷的内容；请学生两人一组，互相提问调查，完成表格；请2～3名学生汇报调查结果。"
+  ],
+  "text_questions": [
+   {
+    "text": 1,
+    "q_zh": "李进明天出差，王静给李进准备好了什么？"
+   },
+   {
+    "text": 1,
+    "q_zh": "明天李进怎么去机场？为什么？"
+   },
+   {
+    "text": 1,
+    "q_zh": "保护环境应该怎么做？"
+   },
+   {
+    "text": 2,
+    "q_zh": "卫生间干净吗？为什么？"
+   },
+   {
+    "text": 2,
+    "q_zh": "经理让服务员扔掉什么？"
+   },
+   {
+    "text": 2,
+    "q_zh": "服务员会怎么打扫餐厅？"
+   },
+   {
+    "text": 3,
+    "q_zh": "新闻说明天会有什么活动？"
+   },
+   {
+    "text": 3,
+    "q_zh": "关于这个活动，她们的公司会做什么？"
+   },
+   {
+    "text": 3,
+    "q_zh": "这个活动的目的是什么？"
+   },
+   {
+    "text": 4,
+    "q_zh": "使用塑料袋会带来什么结果？"
+   },
+   {
+    "text": 4,
+    "q_zh": "一些国家鼓励大家做什么？"
+   },
+   {
+    "text": 4,
+    "q_zh": "减少使用塑料袋能不能保护环境？"
+   },
+   {
+    "text": 5,
+    "q_zh": "保护地球环境离我们每个人远吗？"
+   },
+   {
+    "text": 5,
+    "q_zh": "做哪些小事可以保护地球环境？"
+   },
+   {
+    "text": 5,
+    "q_zh": "怎么才能使我们的家变得更美丽？"
+   }
+  ]
+ },
+ "workbook": {
+  "ref": {
+   "book": "workbook",
+   "pages": [
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43
+   ]
+  },
+  "sections": [
+   {
+    "n": "一、听力 第一部分",
+    "type_zh": "听力 第一部分",
+    "instruction_zh": "第1–5题：判断对错。",
+    "items": [
+     {
+      "n": "例1",
+      "zh": "★他打算下午去银行。",
+      "transcript_zh": "我想去办个信用卡，今天下午你有时间吗？陪我去一趟银行？",
+      "answer": "✓",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        34
+       ]
+      }
+     },
+     {
+      "n": "例2",
+      "zh": "★他喜欢看电视广告。",
+      "transcript_zh": "现在我很少看电视，其中一个原因是，广告太多了，不管什么时间，也不管什么节目，只要你打开电视，总能看到那么多的广告，浪费我的时间。",
+      "answer": "×",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        34
+       ]
+      }
+     },
+     {
+      "n": 1,
+      "zh": "★大家同意我的看法。",
+      "transcript_zh": "虽然我建议这次演出的事情让小黄来负责，可是大家觉得他太年轻，担心他经验不够。",
+      "answer": "×",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        115,
+        117
+       ]
+      }
+     },
+     {
+      "n": 2,
+      "zh": "★超市提供免费塑料袋。",
+      "transcript_zh": "为了减少塑料袋给环境带来的污染，现在超市不再提供免费塑料袋，有需要的顾客，可以向超市购买。",
+      "answer": "×",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        115,
+        117
+       ]
+      }
+     },
+     {
+      "n": 3,
+      "zh": "★年轻人应该相信自己。",
+      "transcript_zh": "年轻就是健康，年轻就是美丽。不要太担心胖瘦，也不要太关心自己长得是不是漂亮、是不是帅，年轻人最重要的是要对自己有信心。",
+      "answer": "✓",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        115,
+        117
+       ]
+      }
+     },
+     {
+      "n": 4,
+      "zh": "★她不愿意用宾馆的毛巾。",
+      "transcript_zh": "虽然还有一部分宾馆会向客人提供免费的毛巾、牙膏和牙刷，但是每次出差，她都会自己带这些东西，很少用宾馆里的。",
+      "answer": "✓",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        115,
+        117
+       ]
+      }
+     },
+     {
+      "n": 5,
+      "zh": "★舞会上不要直接拒绝邀请。",
+      "transcript_zh": "舞会上最好不要直接拒绝别人的邀请，如果不得不拒绝，可以告诉他：“我有些累了，想休息一下。”之后也不要很快又接受其他人的邀请。",
+      "answer": "✓",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        115,
+        117
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "一、听力 第二部分",
+    "type_zh": "听力 第二部分",
+    "instruction_zh": "第6–12题：请选出正确答案。",
+    "items": [
+     {
+      "n": "例",
+      "zh": "男的主要是什么意思？",
+      "transcript_zh": "女：该加油了，去机场的路上有加油站吗？ 男：有，你放心吧。 问：男的主要是什么意思？",
+      "options": {
+       "A": "去机场",
+       "B": "快到了",
+       "C": "油是满的",
+       "D": "有加油站"
+      },
+      "answer": "D",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        35
+       ]
+      }
+     },
+     {
+      "n": 6,
+      "zh": "那个房间怎么样？",
+      "options": {
+       "A": "很干净",
+       "B": "很脏",
+       "C": "很大",
+       "D": "打扫完了"
+      },
+      "transcript_zh": "女：你的房间实在是太脏了，快找时间好好儿打扫一下吧。 男：行，我午饭前一定打扫干净。 问：那个房间怎么样？",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        115,
+        117
+       ]
+      }
+     },
+     {
+      "n": 7,
+      "zh": "女的为什么要拿塑料袋？",
+      "options": {
+       "A": "带吃的",
+       "B": "放衣服",
+       "C": "扔垃圾",
+       "D": "送到山上"
+      },
+      "transcript_zh": "男：我们是去爬山，你拿塑料袋干什么？ 女：我担心山上没有垃圾桶，总不能乱扔垃圾啊。 问：女的为什么要拿塑料袋？",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        115,
+        117
+       ]
+      }
+     },
+     {
+      "n": 8,
+      "zh": "关于这次调查，可以知道什么？",
+      "options": {
+       "A": "没调查完",
+       "B": "关于保护动物",
+       "C": "10%的人不感兴趣",
+       "D": "大部分人愿意参加"
+      },
+      "transcript_zh": "男：小夏，这次的调查结果出来了吗？ 女：出来了，表示愿意参加环保活动的人达到百分之九十，只有百分之四的人回答说不感兴趣。 问：关于这次调查，可以知道什么？",
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        115,
+        117
+       ]
+      }
+     },
+     {
+      "n": 9,
+      "zh": "女的对那个盒子是什么意见？",
+      "options": {
+       "A": "再使用",
+       "B": "扔垃圾桶",
+       "C": "打网球",
+       "D": "放垃圾"
+      },
+      "transcript_zh": "男：这个盒子还有用吗？没用我就扔垃圾桶里了。 女：别扔，正好可以用它来放网球。 问：女的对那个盒子是什么意见？",
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        115,
+        117
+       ]
+      }
+     },
+     {
+      "n": 10,
+      "zh": "关于王先生，可以知道什么？",
+      "options": {
+       "A": "正在出差",
+       "B": "忘了时间",
+       "C": "不想见面",
+       "D": "感到抱歉"
+      },
+      "transcript_zh": "女：王先生，上星期跟您约好明天见面，您还记得吧？ 男：张小姐，我刚刚接到通知，明天要出差，很抱歉，等我回来以后再跟您联系，我下周一回来。 问：关于王先生，可以知道什么？",
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        116,
+        117
+       ]
+      }
+     },
+     {
+      "n": 11,
+      "zh": "男的想要什么？",
+      "options": {
+       "A": "牙刷",
+       "B": "牙膏",
+       "C": "饮料",
+       "D": "塑料袋"
+      },
+      "transcript_zh": "男：牙膏用完了，家里还有新的吗？ 女：有，我上午刚买的，就在那个塑料袋里。 问：男的想要什么？",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        116,
+        117
+       ]
+      }
+     },
+     {
+      "n": 12,
+      "zh": "女的没提到什么？",
+      "options": {
+       "A": "目的",
+       "B": "方法",
+       "C": "过程",
+       "D": "结果"
+      },
+      "transcript_zh": "男：太失败了，我怎么觉得自己什么事儿都做不好呢？ 女：不管做什么事情，在做之前，至少要考虑三点：首先，你的目的是什么？其次，你的方法是什么？第三，你计划中的结果是什么样子？ 问：女的没提到什么？",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        116,
+        117
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "一、听力 第三部分",
+    "type_zh": "听力 第三部分",
+    "instruction_zh": "第13–22题：请选出正确答案。",
+    "items": [
+     {
+      "n": "例",
+      "zh": "会议几点开始？",
+      "transcript_zh": "男：把这个材料复印5份，一会儿拿到会议室发给大家。 女：好的。会议是下午三点吗？ 男：改了。三点半，推迟了半个小时。 女：好，602会议室没变吧？ 男：对，没变。 问：会议几点开始？",
+      "options": {
+       "A": "两点",
+       "B": "3点",
+       "C": "15：30",
+       "D": "18：00"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        36
+       ]
+      }
+     },
+     {
+      "n": 13,
+      "zh": "女的觉得白色的怎么样？",
+      "options": {
+       "A": "挺舒服",
+       "B": "正合适",
+       "C": "更漂亮",
+       "D": "容易脏"
+      },
+      "transcript_zh": "男：你再试试白色的。 女：我觉得这双就挺舒服的，大小也可以。 男：白色的更漂亮。 女：不试了，白色的容易脏，还是黑色的好。 问：女的觉得白色的怎么样？",
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        116,
+        117
+       ]
+      }
+     },
+     {
+      "n": 14,
+      "zh": "根据对话，可以知道什么？",
+      "options": {
+       "A": "有人接女的",
+       "B": "女的坐出租车回来的",
+       "C": "男的写完材料了",
+       "D": "女的帮男的检查"
+      },
+      "transcript_zh": "男：真抱歉，本来我该去火车站接你的。 女：没关系，我打个车就回来了，很方便。你那篇材料写完没有？ 男：差不多了，我再检查一遍，就可以交了。 女：那你快写吧。 问：根据对话，可以知道什么？",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        116,
+        117
+       ]
+      }
+     },
+     {
+      "n": 15,
+      "zh": "根据对话，下列哪个正确？",
+      "options": {
+       "A": "空调卖光了",
+       "B": "这个月没有上个月热",
+       "C": "商场的活动很吸引人",
+       "D": "空调卖得跟上个月一样多"
+      },
+      "transcript_zh": "男：你们这个月空调卖得怎么样？ 女：挺好的，一共卖了四百多台，几乎是上个月的两倍。 男：天气热了，自然就卖得好一些。 女：这是一方面，另外一个原因是商场现在有“以旧换新”的活动，吸引了不少顾客。 问：根据对话，下列哪个正确？",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        116,
+        117
+       ]
+      }
+     },
+     {
+      "n": 16,
+      "zh": "根据对话，下列哪个正确？",
+      "options": {
+       "A": "他们一起回来的",
+       "B": "家里停电了",
+       "C": "邻居来了",
+       "D": "灯有问题"
+      },
+      "transcript_zh": "女：怎么回事？你怎么不开灯？ 男：我也是刚进门，刚发现灯不亮，是不是停电了？ 女：应该不会，邻居家的灯都亮着呢。 男：那就是灯坏了。 问：根据对话，下列哪个正确？",
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        116,
+        117
+       ]
+      }
+     },
+     {
+      "n": 17,
+      "zh": "男的为什么让姐姐照顾他的狗？",
+      "options": {
+       "A": "他生病了",
+       "B": "姐姐喜欢狗",
+       "C": "他要出差",
+       "D": "他周六加班"
+      },
+      "transcript_zh": "男：姐，我要出几天差，你能帮我照顾一下我的狗吗？ 女：当然可以。你要去几天？ 男：来回一共四天，我星期六就回来。你记得每天要带它出去玩儿。 女：放心吧，我会照顾好它的。 问：男的为什么让姐姐照顾他的狗？",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        116,
+        117
+       ]
+      }
+     },
+     {
+      "n": 18,
+      "zh": "男的最可能去哪儿？",
+      "options": {
+       "A": "宾馆",
+       "B": "图书馆",
+       "C": "饭馆",
+       "D": "体育馆"
+      },
+      "transcript_zh": "男：妈，我去打篮球了。 女：等一下，你帮我把这袋垃圾扔到楼下。 男：好的。 女：带手机了吗？早点儿回来。 问：男的最可能去哪儿？",
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        117
+       ]
+      }
+     },
+     {
+      "n": 19,
+      "zh": "这段话主要介绍什么？",
+      "options": {
+       "A": "上班时间",
+       "B": "堵车情况",
+       "C": "城市区别",
+       "D": "地铁优点"
+      },
+      "transcript_zh": "第19到20题是根据下面一段话： 在北京，坐地铁很方便。很多人都选择坐地铁上下班，一方面是考虑到地铁速度快，并且不会堵车，不用担心上班会迟到；另一方面地铁也不算贵，跟别的城市差不多，距离不同、票价也不同，最低三块。如果使用“一卡通”，每个月超过100块，还会打八折，这样就更便宜了。 19. 这段话主要介绍什么？",
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        117
+       ]
+      }
+     },
+     {
+      "n": 20,
+      "zh": "北京地铁票最低多少钱？",
+      "options": {
+       "A": "3块",
+       "B": "8块",
+       "C": "1块",
+       "D": "2块"
+      },
+      "transcript_zh": "第19到20题是根据下面一段话： 在北京，坐地铁很方便。很多人都选择坐地铁上下班，一方面是考虑到地铁速度快，并且不会堵车，不用担心上班会迟到；另一方面地铁也不算贵，跟别的城市差不多，距离不同、票价也不同，最低三块。如果使用“一卡通”，每个月超过100块，还会打八折，这样就更便宜了。 20. 北京地铁票最低多少钱？",
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        117
+       ]
+      }
+     },
+     {
+      "n": 21,
+      "zh": "刚开始运动时，很多人会觉得怎么样？",
+      "options": {
+       "A": "很紧张",
+       "B": "没意思",
+       "C": "很熟悉",
+       "D": "很简单"
+      },
+      "transcript_zh": "第21到22题是根据下面一段话： “习惯成自然”这句话是说，一件事我们做的次数越多，就会越熟悉，习惯就会慢慢地养成。其实，养成一个好习惯并没有我们想得那么难。比如说运动，不少人刚开始运动时，会感觉十分无聊，于是很快就放弃了。但坚持下来的人会告诉你：“只要坚持一段时间，你会发现，运动已成为你生活中不可缺少的一部分。” 21. 刚开始运动时，很多人会觉得怎么样？",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        117
+       ]
+      }
+     },
+     {
+      "n": 22,
+      "zh": "对于养成好习惯，说话人觉得怎么样？",
+      "options": {
+       "A": "坚持很重要",
+       "B": "非常困难",
+       "C": "要多听意见",
+       "D": "需要别人帮忙"
+      },
+      "transcript_zh": "第21到22题是根据下面一段话： “习惯成自然”这句话是说，一件事我们做的次数越多，就会越熟悉，习惯就会慢慢地养成。其实，养成一个好习惯并没有我们想得那么难。比如说运动，不少人刚开始运动时，会感觉十分无聊，于是很快就放弃了。但坚持下来的人会告诉你：“只要坚持一段时间，你会发现，运动已成为你生活中不可缺少的一部分。” 22. 对于养成好习惯，说话人觉得怎么样？",
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        117
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第一部分（23–26）",
+    "type_zh": "阅读 第一部分",
+    "instruction_zh": "第23–26题：选词填空。",
+    "word_bank": [
+     [
+      "A 乘坐",
+      "B 既然",
+      "C 鼓励",
+      "D 坚持",
+      "E 地球"
+     ]
+    ],
+    "items": [
+     {
+      "n": "例",
+      "zh": "她每天都（　）走路上下班，所以身体一直很不错。",
+      "answer": "D",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        37
+       ]
+      }
+     },
+     {
+      "n": 23,
+      "zh": "事情（　）已经发生了，光着急也没有用，你现在要做的是静下来，想想办法，这才是解决问题的关键。",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        117
+       ]
+      }
+     },
+     {
+      "n": 24,
+      "zh": "我要特别感谢一直支持和帮助我的朋友们，没有他们的关心和（　），我是不可能取得今天这样的成绩的。",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        117
+       ]
+      }
+     },
+     {
+      "n": 25,
+      "zh": "现在有个通知，十一月七日上午八点有（　）环境研讨会，地点在图书馆三楼会议室，希望大家准时参加。",
+      "answer": "E",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        117
+       ]
+      }
+     },
+     {
+      "n": 26,
+      "zh": "我第一次（　）飞机的时候心里特别害怕，飞机起飞时，我一直抓（zhuā，to catch on）着前面的椅子不放。后来一提起这件事，朋友就开我的玩笑。",
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        117
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第一部分（27–30）",
+    "type_zh": "阅读 第一部分",
+    "instruction_zh": "第27–30题：选词填空。",
+    "word_bank": [
+     [
+      "A 扔",
+      "B 以",
+      "C 温度",
+      "D 重",
+      "E 行"
+     ]
+    ],
+    "items": [
+     {
+      "n": "例",
+      "zh": "A：今天真冷啊，好像白天最高（　）才2℃。 B：刚才电视里说明天更冷。",
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        38
+       ]
+      }
+     },
+     {
+      "n": 27,
+      "zh": "A：我的感冒更（　）了，我明天想请一天假。 B：没问题。你最好去医院看一下，吃点儿药也许就好了。",
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        117
+       ]
+      }
+     },
+     {
+      "n": 28,
+      "zh": "A：你要去买牙膏？那你顺便帮我买条毛巾好吗？ B：（　），我一会儿就回来。",
+      "answer": "E",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        117
+       ]
+      }
+     },
+     {
+      "n": 29,
+      "zh": "A：一会儿有客人要来，先别看电视了，去帮我把垃圾（　）了。 B：好的，妈妈。是张阿姨要来吗？",
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        117
+       ]
+      }
+     },
+     {
+      "n": 30,
+      "zh": "A：小马，上次的工作你做得很好，所以想再交给你一个任务，希望你能完成。 B：请您放心，我一定（　）最高的标准要求自己，把它做好。",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        117
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第二部分",
+    "type_zh": "阅读 第二部分",
+    "instruction_zh": "第31–34题：排列顺序。",
+    "items": [
+     {
+      "n": "例",
+      "zh": "",
+      "options": {
+       "A": "可是今天起晚了",
+       "B": "平时我骑自行车上下班",
+       "C": "所以就打车来公司"
+      },
+      "answer": "BAC",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        39
+       ]
+      }
+     },
+     {
+      "n": 31,
+      "zh": "",
+      "options": {
+       "A": "我本来不太愿意做这件事",
+       "B": "只能尽力去做了",
+       "C": "可既然已经答应别人了"
+      },
+      "answer": "ACB",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        117
+       ]
+      }
+     },
+     {
+      "n": 32,
+      "zh": "",
+      "options": {
+       "A": "一定不要到处乱扔",
+       "B": "小朋友，你们都吃完了吗",
+       "C": "吃完了就把盒子、瓶子、塑料袋都扔垃圾桶里"
+      },
+      "answer": "BCA",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        117
+       ]
+      }
+     },
+     {
+      "n": 33,
+      "zh": "",
+      "options": {
+       "A": "那儿的花儿都开了，非常漂亮",
+       "B": "这几天植物园特别热闹，随着天气变暖",
+       "C": "吸引了很多人"
+      },
+      "answer": "BAC",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        117
+       ]
+      }
+     },
+     {
+      "n": 34,
+      "zh": "",
+      "options": {
+       "A": "所以我们必须节约用水、保护环境",
+       "B": "地球提供给我们的水",
+       "C": "并不是永远用不完的"
+      },
+      "answer": "BCA",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        117
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第三部分",
+    "type_zh": "阅读 第三部分",
+    "instruction_zh": "第35–43题：请选出正确答案。",
+    "items": [
+     {
+      "n": "例",
+      "zh": "她很活泼，说话很有趣，总能给我们带来快乐，我们都很喜欢和她在一起。 ★她是个什么样的人？",
+      "options": {
+       "A": "幽默",
+       "B": "马虎",
+       "C": "骄傲",
+       "D": "害羞"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        40
+       ]
+      }
+     },
+     {
+      "n": 35,
+      "zh": "很多人都说，刷牙时在牙膏上加点儿盐，坚持一段时间，就能使牙变白。我打算试试，看看这个方法是不是真的有效。 ★“这个方法”指的是：",
+      "options": {
+       "A": "坚持刷牙",
+       "B": "自备塑料袋",
+       "C": "皮肤增白法",
+       "D": "牙膏上加盐"
+      },
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        117
+       ]
+      }
+     },
+     {
+      "n": 36,
+      "zh": "地球是我们共同的家，保护环境就是保护我们自己，为减少污染，我们应该养成节约的习惯，节约用水、节约用纸等等。 ★节约用纸主要是为了：",
+      "options": {
+       "A": "保护环境",
+       "B": "减少用水",
+       "C": "改变地球",
+       "D": "发展经济"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        117
+       ]
+      }
+     },
+     {
+      "n": 37,
+      "zh": "山上的温度会随着高度的增加而降低，山越高气温越低。那里的山最高的大约有两千多米，所以明天爬山大家一定要多穿点儿衣服。 ★他们明天最可能要去：",
+      "options": {
+       "A": "爬山",
+       "B": "游泳",
+       "C": "跑步",
+       "D": "上课"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        117
+       ]
+      }
+     },
+     {
+      "n": 38,
+      "zh": "无论成功还是失败，都只是暂时的。不要因一时的成功而得意，也不要因一时的失败而伤心，因为那些都已经过去，重要的是怎样过好将来的生活。 ★什么才是更重要的？",
+      "options": {
+       "A": "态度",
+       "B": "将来",
+       "C": "过程",
+       "D": "结果"
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        117
+       ]
+      }
+     },
+     {
+      "n": 39,
+      "zh": "新闻中使用数字的目的是通过它们来说明问题，所以这些数字必须是准确的。只有这样，才能证明内容的“真”，才是对读者负责。 ★新闻中的数字：",
+      "options": {
+       "A": "不易理解",
+       "B": "使用随便",
+       "C": "让人相信",
+       "D": "不能出错"
+      },
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        117
+       ]
+      }
+     },
+     {
+      "n": 40,
+      "zh": "开车必须要记住以下三点：首先是方向，知道往哪儿开，才不会走错路；其次是开车的方法，只有知道怎么开，才能顺利找到目的地；当然，最重要的一点是注意速度，太快了不安全（ānquán，safe），太慢了会影响后面的车。开车看上去很简单，但一定得小心。 ★根据这段话，开车最重要的是注意什么？",
+      "options": {
+       "A": "方向",
+       "B": "速度",
+       "C": "距离",
+       "D": "安全"
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        117
+       ]
+      }
+     },
+     {
+      "n": 41,
+      "zh": "开车必须要记住以下三点：首先是方向，知道往哪儿开，才不会走错路；其次是开车的方法，只有知道怎么开，才能顺利找到目的地；当然，最重要的一点是注意速度，太快了不安全（ānquán，safe），太慢了会影响后面的车。开车看上去很简单，但一定得小心。 ★根据这段话，可以知道什么？",
+      "options": {
+       "A": "开车越慢越好",
+       "B": "学开车很容易",
+       "C": "目的地别太远",
+       "D": "开车必须小心"
+      },
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        117
+       ]
+      }
+     },
+     {
+      "n": 42,
+      "zh": "现在，城市里越来越多的人开始放弃开车，走路上下班成为他们共同的生活习惯。人们放弃开车，各有各的原因。有的为了锻炼身体，有的为了节约钱，但不管是什么原因，这样都减少了道路堵车情况，而且连空气也变新鲜了。 ★人们可能因为什么原因放弃开车？",
+      "options": {
+       "A": "更安全",
+       "B": "更健康",
+       "C": "省时间",
+       "D": "压力大"
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        117
+       ]
+      }
+     },
+     {
+      "n": 43,
+      "zh": "现在，城市里越来越多的人开始放弃开车，走路上下班成为他们共同的生活习惯。人们放弃开车，各有各的原因。有的为了锻炼身体，有的为了节约钱，但不管是什么原因，这样都减少了道路堵车情况，而且连空气也变新鲜了。 ★放弃开车的人越来越多，现在：",
+      "options": {
+       "A": "开车难了",
+       "B": "空气好了",
+       "C": "更堵车了",
+       "D": "车便宜了"
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        117
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "三、书写 第一部分",
+    "type_zh": "书写 第一部分",
+    "instruction_zh": "第44–48题：完成句子。",
+    "items": [
+     {
+      "n": "例",
+      "zh": "那座桥　800年的　历史　有　了",
+      "answer": "那座桥有800年的历史了。",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        42
+       ]
+      }
+     },
+     {
+      "n": 44,
+      "zh": "养成　节约　要　用水　好习惯　的",
+      "answer": "要养成节约用水的好习惯。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        117
+       ]
+      }
+     },
+     {
+      "n": 45,
+      "zh": "一个　美丽的　生活　他　在　小城市",
+      "answer": "他生活在一个美丽的小城市。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        117
+       ]
+      }
+     },
+     {
+      "n": 46,
+      "zh": "这篇　新闻　关注　了　人们的　引起",
+      "answer": "这篇新闻引起了人们的关注。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        117
+       ]
+      }
+     },
+     {
+      "n": 47,
+      "zh": "里　香蕉皮　请　垃圾桶　扔进　把",
+      "answer": "请把香蕉皮扔进垃圾桶里。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        117
+       ]
+      }
+     },
+     {
+      "n": 48,
+      "zh": "不使用　减少　是　污染　为了　塑料袋",
+      "answer": "不使用塑料袋是为了减少污染。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        117
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "三、书写 第二部分",
+    "type_zh": "书写 第二部分",
+    "instruction_zh": "第49–50题：看图，用词造句。",
+    "items": [
+     {
+      "n": "例",
+      "zh": "乒乓球",
+      "picture_desc_en": "a young woman holding a table-tennis bat, about to serve",
+      "answer": "她很喜欢打乒乓球。",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        43
+       ]
+      }
+     },
+     {
+      "n": 49,
+      "zh": "扔",
+      "picture_desc_en": "a prohibition sign (red circle with slash) over a pictogram of a person dropping litter",
+      "answer": "请不要乱扔垃圾，这样会污染环境。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        117
+       ]
+      }
+     },
+     {
+      "n": 50,
+      "zh": "乘坐",
+      "picture_desc_en": "a crowded subway train at a platform, passengers inside and on the platform",
+      "answer": "上下班时间乘坐地铁的人非常多。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        117
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "answers_ref": {
+   "book": "teacher",
+   "pages": [
+    115,
+    116,
+    117
+   ]
+  }
+ },
+ "unclear": [
+  "Аудио файлын нэр мэдэгдэхгүй тул audio талбар орхисон. Сурах бичгийн CD тэмдэг: 课文1–5 = 14-1…14-5; дасгалын номын 听力 第一/二/三部分 = 14-1, 14-2, 14-3.",
+  "课文1-ийн 拼音课文 (PDF х.57, 300dpi-аар шалгасан): «…bīnguǎn li yǒu. nǐ bú shì…» — цэгийн дараа жижиг «nǐ» гэж хэвлэгдсэн; номд байгаагаар үлдээсэн.",
+  "课文2-ын пиньинь: 干净 → «gànjìng» гэж хэвлэгдсэн (стандарт gānjìng); PDF х.58 300/600dpi-аар шалгасан — номд байгаагаар «gànjìng» гэж орууллаа.",
+  "课文1 王静-ийн хэлсэн: «这样不仅省油钱，而且还不会污染空气» — багшийн номын 课文 扩展练习 (PDF х.44): «这样不仅省油省钱，还不会污染空气» — номын хооронд үгийн зөрүү.",
+  "课文1-д 王静 нь 李进-д毛巾、牙膏、牙刷 бэлдсэн; сурах бичгийн 练习1 复述 (李进的语气): «妻子帮我把毛巾、牙膏和牙刷都放到了箱子里» — 王静-ийг эхнэр гэж үзсэн; бичвэрт энэ нь шууд заагдаагүй.",
+  "Багшийн ном 语言点(2)以 (PDF х.39–40):介词 хэрэглээг «动词用法» гэсэн шошгон дор тайлбарласан (дотор нь «“以”，介词，表示凭借»), дараагийнх нь «连词用法» — номын шошгоны зөрүү. Сурах бичгийн 生词 14 以 — зөвхөн «prep. via, by means of».",
+  "Сурах бичгийн 注释2 以 — хятад тайлбарт «表示凭借»; англи тайлбарт «The preposition “以” means “using, taking, by means of”».",
+  "生词 23 于是 — 生词 хүснэгтэд «conj. hence, therefore»; 注释4 «表示后面的事情紧随着前面的事情发生» (successive relation) — англи орчуулга «therefore» нь 比一比-д «因此» (шалтгаан-үр дүн)-тэй ялгасантай зөрчилдөж болох — номд байгаагаар.",
+  "注释4 比一比 做一做 «选词填空 Tick or cross»: (1) 于是✓ 因此✓, (2) 于是× 因此✓ — номд жишээ болгон хэвлэгдсэн; (3)–(5)-ын хариулт сурах бичиг, багшийн номд хэвлэгдээгүй (багшийн ном: «按照教材中的辨析步骤进行»).",
+  "Сурах бичгийн 练一练 (5 дүрэм × 3), 回答问题 (课文1–3 — 6, 课文4–5 — 4), 练习1 复述 ба 练习2 选词填空 (10) — хариулт сурах бичиг, багшийн номд хэвлэгдээгүй тул answer талбаргүй. Зөвхөн 扩展 做一做-ийн хариулт багшийн номд (PDF х.45) бий.",
+  "Сурах бичгийн 回答问题 课文5 ④: «怎样才能使地球变得更美丽？» — бичвэрт «才能使我们的家变得更美丽»; багшийн номын асуулт: «怎么才能使我们的家变得更美丽？».",
+  "练习2 ① «人们将每年的4月7日定为“世界无烟日”» — номд байгаагаар (баримтын зөрүү эсэхийг шалгаагүй; засаагүй).",
+  "练习2 ⑤ «山东____烟台市» — сонгох үгс 拒绝/鼓励/得意/省/重 дотор «省» (муж) гэсэн утгаар; 生词 6 省 нь зөвхөн «v. to save, to economize» — номд 省-ийн нэр үгийн утга 生词-д байхгүй.",
+  "Сурах бичгийн 根据课文内容回答问题 хоёр хэсэг дугааргүй (课文3-ын дараа, 课文5-ын дараа) — exercises-д «课文1–3 回答问题», «课文4–5 回答问题» гэж нэрлэсэн; 比一比-ийн 做一做 ба 扩展-ийн 做一做-г мөн exercises-д оруулсан. 扩展 同字词 (度：速度、温度、态度)-ийг textbook.characters-д оруулсан.",
+  "注释2 以-ийн «以……为……» тайлбар номд (1)(2) жишээний дараа, (3)-ын өмнө байрласан; explanation_zh-д дарааллаар нь оруулсан.",
+  "注释4 比一比-д ★ тэмдэг номд (相同点-ийн төгсгөлд, 不同点-д «表示★这个意思时») — номд байгаагаар үлдээсэн.",
+  "文化-ын англи гарчигт «Relationship betwen» (between биш) гэж хэвлэгдсэн — номд байгаагаар; body_en-ийн эхэнд гарчгийг оруулсан.",
+  "Сурах бичигт 专有名词 хүснэгт энэ хичээлд байхгүй (李进、王静、孙月、小王 жагсаагдаагүй).",
+  "拼音课文-ын гарчгийн пиньинь (Lǐ Jìn yào chū chāi, Wáng Jìng hé Lǐ Jìn zài liáo tiānr / Jīnglǐ hé fúwùyuán zài tán gōngzuò / Sūn Yuè hé Wáng Jìng zài liáo guānyú huánbǎo de shìqing) болон ярилцагчийн нэрийн пиньинь схемд талбаргүй тул lines.pinyin-д зөвхөн яриаг оруулсан.",
+  "课文4 ба 课文5 — гарчиггүй 短文 — мөр (lines)-ийг өгүүлбэрээр хуваасан (номд нэг догол мөр); пиньинь бичвэрийг мөн адил хуваасан.",
+  "Багшийн номын 课文 асуултууд (text_questions)-ын хариулт тус бүрчлэн хэвлэгдээгүй («教师给出答案»); оронд нь 课文扩展练习-ын 复述 догол мөрүүд (teacher.steps «4 课文») хэвлэгдсэн.",
+  "Багшийн ном 语言点(4)于是 操练 (PDF х.42): «李进……为了保护环境，于是带了自己的毛巾、牙膏和牙刷» — сурах бичгийн 课文1-д эдгээрийг 王静 бэлдсэн, 李进 «行，没问题» гэж зөвшөөрсөн.",
+  "Дасгалын ном 听力 第二/三部分 — номд зөвхөн сонголтууд хэвлэгдсэн; item.zh-д багшийн номын хавсралтын «问：» асуултыг (19–22-т дугаартай асуултыг) оруулсан, transcript_zh-д бүтнээр. 听力 第一部分-д жишээ 2 (✓ ба ×) байгаа тул «例1», «例2».",
+  "Дасгалын ном 听力 8: бичвэрт «百分之四的人……不感兴趣», сонголт C «10%的人不感兴趣» — хариулт D (зөрүү нь зориудын буруу сонголт).",
+  "Дасгалын ном 阅读 第一部分 хоёр бүлэг (23–26, 27–30) тус тусын үгийн сантай тул хоёр хэсэг болгон оруулсан; 阅读 第二部分 (31–34 排列顺序)-ийн item.zh хоосон, хэсгүүд options (A/B/C)-д.",
+  "Дасгалын ном 书写 44–50-ын хариулт багшийн номын хавсралтад «参考答案» гэж хэвлэгдсэн (PDF х.117); 49–50 (看图，用词造句) нээлттэй даалгавар тул хариулт нь зөвхөн жишээ.",
+  "Дасгалын номд 复习 хэсэг байхгүй (HSK4-ийн дасгалын ном: 听力 3 хэсэг, 阅读 3 хэсэг, 书写 2 хэсэг, нийт 50 асуулт).",
+  "Багшийн ном 学生能够 «掌握本课32个四级大纲词汇» — 生词 32, * тэмдэгтэй үг байхгүй."
+ ],
+ "verified_pages": [
+  34,
+  35,
+  36,
+  37,
+  38,
+  39,
+  40,
+  41,
+  42,
+  43,
+  44,
+  45,
+  55,
+  56,
+  57,
+  58,
+  59,
+  60,
+  61,
+  62,
+  63,
+  64,
+  65,
+  66,
+  67,
+  68,
+  115,
+  116,
+  117
+ ],
+ "schema_version": 1
+}

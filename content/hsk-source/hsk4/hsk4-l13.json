@@ -1,0 +1,2290 @@
+{
+ "level": "hsk4",
+ "lesson": 13,
+ "book": "HSK4B",
+ "title_zh": "喝着茶看京剧",
+ "title_pinyin": "Hēzhe chá kàn jīngjù",
+ "title_en": "Drink tea while watching Beijing opera",
+ "textbook": {
+  "ref": {
+   "book": "textbook",
+   "pages": [
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54
+   ]
+  },
+  "warmup": [
+   {
+    "instruction_zh": "给下面的词语选择对应的图片，并用这个词语根据图片说一个句子。",
+    "instruction_en": "Match the pictures with the words and describe the pictures with sentences using the words.",
+    "items": [
+     "①吃惊 chī jīng",
+     "②开心 kāixīn",
+     "③观众 guānzhòng",
+     "④讨论 tǎolùn",
+     "⑤餐厅 cāntīng",
+     "⑥互联网 hùliánwǎng"
+    ],
+    "pictures_desc_en": [
+     "A: an empty restaurant dining room with tables, chairs and lamps",
+     "B: a man in a suit holding a glowing globe with laptop, tablet and phone floating above his hands",
+     "C: a smiling family of four (parents and two girls) photographed from below against a blue sky",
+     "D: office workers in suits talking around a meeting table",
+     "E: an audience wearing 3D glasses in a cinema, one man holding popcorn",
+     "F: a boy with glasses, mouth open in surprise"
+    ]
+   },
+   {
+    "instruction_zh": "你喜欢看京剧吗？你认为京剧怎么样？",
+    "instruction_en": "Do you like watching Beijing opera? What do you think of Beijing opera?",
+    "items": [
+     "表格：| 衣服 | 动作 | 音乐 | 故事 |",
+     "| 很漂亮 □ | 很精彩（jīngcǎi）□ | 很美 □ | 有趣（yǒuqù）□ |",
+     "| 很复杂 □ | 没意思 □ | 不好听 □ | 很难懂 □ |",
+     "| 样子很特别 □ | 很危险（wēixiǎn）□ | 很慢 □ | 离现代（xiàndài）生活很远 □ |"
+    ]
+   }
+  ],
+  "texts": [
+   {
+    "n": 1,
+    "title_zh": "小雨和小夏在聊小夏的爷爷表演京剧的情况",
+    "kind": "dialogue",
+    "lines": [
+     {
+      "speaker": "小雨",
+      "zh": "小夏，你爷爷京剧唱得真专业，我还以为他是京剧演员呢。",
+      "pinyin": "Xiǎo Xià, nǐ yéye jīngjù chàng de zhēn zhuānyè, hái yǐwéi tā shì jīngjù yǎnyuán ne."
+     },
+     {
+      "speaker": "小夏",
+      "zh": "对啊，他本来就是京剧演员，年轻时在我们那儿很有名，深受观众们的喜爱。",
+      "pinyin": "Duì a, tā běnlái jiù shì jīngjù yǎnyuán, niánqīng shí zài wǒmen nàr hěn yǒumíng, shēn shòu guānzhòngmen de xǐ'ài."
+     },
+     {
+      "speaker": "小雨",
+      "zh": "你爷爷一定对京剧有着很深厚的感情。",
+      "pinyin": "Nǐ yéye yídìng duì jīngjù yǒuzhe hěn shēnhòu de gǎnqíng."
+     },
+     {
+      "speaker": "小夏",
+      "zh": "是呀，他8岁就开始上台演出，到现在大概唱了60多年了，他对这门艺术的喜爱从来没有改变过。",
+      "pinyin": "Shì a, tā bā suì jiù kāishǐ shàng tái yǎnchū, dào xiànzài dàgài chàngle liùshí duō nián le, tā duì zhè mén yìshù de xǐ'ài cónglái méiyǒu gǎibiànguo."
+     },
+     {
+      "speaker": "小雨",
+      "zh": "这么说你喜欢听京剧也是受了你爷爷的影响？",
+      "pinyin": "Zhème shuō nǐ xǐhuan tīng jīngjù yě shì shòule nǐ yéye de yǐngxiǎng?"
+     },
+     {
+      "speaker": "小夏",
+      "zh": "我小时候经常去看他的演出。平时他还给我讲很多京剧里的历史故事，让我学到了很多知识。",
+      "pinyin": "Wǒ xiǎoshíhou jīngcháng qù kàn tā de yǎnchū. Píngshí tā hái gěi wǒ jiǎng hěn duō jīngjù li de lìshǐ gùshi, ràng wǒ xuédàole hěn duō zhīshi."
+     }
+    ],
+    "new_words": [
+     {
+      "n": 1,
+      "zh": "京剧",
+      "pinyin": "jīngjù",
+      "pos": "n.",
+      "en": "Beijing opera",
+      "text": 1
+     },
+     {
+      "n": 2,
+      "zh": "演员",
+      "pinyin": "yǎnyuán",
+      "pos": "n.",
+      "en": "actor/actress",
+      "text": 1
+     },
+     {
+      "n": 3,
+      "zh": "观众",
+      "pinyin": "guānzhòng",
+      "pos": "n.",
+      "en": "audience",
+      "text": 1
+     },
+     {
+      "n": 4,
+      "zh": "厚",
+      "pinyin": "hòu",
+      "pos": "adj.",
+      "en": "deep, profound",
+      "text": 1
+     },
+     {
+      "n": 5,
+      "zh": "演出",
+      "pinyin": "yǎnchū",
+      "pos": "v.",
+      "en": "to perform, to put on (a show)",
+      "text": 1
+     },
+     {
+      "n": 6,
+      "zh": "大概",
+      "pinyin": "dàgài",
+      "pos": "adv.",
+      "en": "roughly, approximately",
+      "text": 1
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "title_zh": "小雨和马克在聊京剧",
+    "kind": "dialogue",
+    "lines": [
+     {
+      "speaker": "小雨",
+      "zh": "真没想到你一个来自美国的外国留学生，能把京剧唱得这么好。",
+      "pinyin": "Zhēn méi xiǎngdào nǐ yí ge láizì Měiguó de wàiguó liúxuéshēng, néng bǎ jīngjù chàng de zhème hǎo."
+     },
+     {
+      "speaker": "马克",
+      "zh": "我常常跟着电视学唱京剧，然后一遍一遍地练习，偶尔跟中国人一起唱上几句。",
+      "pinyin": "Wǒ chángcháng gēnzhe diànshì xué chàng jīngjù, ránhòu yí biàn yí biàn de liànxí, ǒu'ěr gēn Zhōngguó rén yìqǐ chàngshang jǐ jù."
+     },
+     {
+      "speaker": "小雨",
+      "zh": "难道你从来没有接受过京剧方面的专门教育吗？",
+      "pinyin": "Nándào nǐ cónglái méiyǒu jiēshòuguo jīngjù fāngmiàn de zhuānmén jiàoyù ma?"
+     },
+     {
+      "speaker": "马克",
+      "zh": "别吃惊，因为我以前学习过音乐，有一些音乐基础，又对京剧这种表演艺术非常感兴趣，所以能比较容易地学会它的唱法。",
+      "pinyin": "Bié chī jīng, yīnwèi wǒ yǐqián xuéxíguo yīnyuè, yǒu yìxiē yīnyuè jīchǔ, yòu duì jīngjù zhè zhǒng biǎoyǎn yìshù fēicháng gǎn xìngqù, suǒyǐ néng bǐjiào róngyì de xuéhuì tā de chàngfǎ."
+     },
+     {
+      "speaker": "小雨",
+      "zh": "你真厉害！竟然连很多中国人都听不懂的京剧也能学会。我还是比较喜欢听流行音乐。",
+      "pinyin": "Nǐ zhēn lìhai! Jìngrán lián hěn duō Zhōngguó rén dōu tīngbudǒng de jīngjù yě néng xuéhuì. Wǒ háishi bǐjiào xǐhuan tīng liúxíng yīnyuè."
+     },
+     {
+      "speaker": "马克",
+      "zh": "那是你不了解京剧的唱法。在音乐方面，京剧给了我很多新的想法。我还把京剧的一些特点增加到了自己的音乐中，达到了很好的效果。",
+      "pinyin": "Nà shì nǐ bù liǎojiě jīngjù de chàngfǎ. Zài yīnyuè fāngmiàn, jīngjù gěile wǒ hěn duō xīn de xiǎngfǎ. Wǒ hái bǎ jīngjù de yìxiē tèdiǎn zēngjiādàole zìjǐ de yīnyuè zhōng, dádàole hěn hǎo de xiàoguǒ."
+     }
+    ],
+    "new_words": [
+     {
+      "n": 7,
+      "zh": "来自",
+      "pinyin": "láizì",
+      "pos": "v.",
+      "en": "to be from",
+      "text": 2
+     },
+     {
+      "n": 8,
+      "zh": "遍",
+      "pinyin": "biàn",
+      "pos": "m.",
+      "en": "(denoting an action from beginning to end) time",
+      "text": 2
+     },
+     {
+      "n": 9,
+      "zh": "偶尔",
+      "pinyin": "ǒu'ěr",
+      "pos": "adv.",
+      "en": "occasionally, once in a while",
+      "text": 2
+     },
+     {
+      "n": 10,
+      "zh": "吃惊",
+      "pinyin": "chī jīng",
+      "pos": "v.",
+      "en": "to be surprised, to be shocked",
+      "text": 2
+     },
+     {
+      "n": 11,
+      "zh": "基础",
+      "pinyin": "jīchǔ",
+      "pos": "n.",
+      "en": "basis, foundation",
+      "text": 2
+     },
+     {
+      "n": 12,
+      "zh": "表演",
+      "pinyin": "biǎoyǎn",
+      "pos": "v.",
+      "en": "to act, to perform",
+      "text": 2
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "title_zh": "李老师和校长在谈工作",
+    "kind": "dialogue",
+    "lines": [
+     {
+      "speaker": "李老师",
+      "zh": "校长，因为外国留学生不了解中国文化，有时候会影响他们和中国人之间的正常交流，甚至还可能引起误会，带来麻烦，所以我们想申请举办一次中国传统文化节活动。",
+      "pinyin": "Xiàozhǎng, yīnwèi wàiguó liúxuéshēng bù liǎojiě Zhōngguó wénhuà, yǒushíhou huì yǐngxiǎng tāmen hé Zhōngguó rén zhījiān de zhèngcháng jiāoliú, shènzhì hái kěnéng yǐnqǐ wùhui, dàilái máfan, suǒyǐ wǒmen xiǎng shēnqǐng jǔbàn yí cì Zhōngguó chuántǒng wénhuà jié huódòng."
+     },
+     {
+      "speaker": "校长",
+      "zh": "你们的想法很好，举办文化节活动，一方面能让各国学生更好地了解中国，另一方面也能为学生们提供互相交流和学习的机会。",
+      "pinyin": "Nǐmen de xiǎngfǎ hěn hǎo, jǔbàn wénhuà jié huódòng, yì fāngmiàn néng ràng gè guó xuésheng gèng hǎo de liǎojiě Zhōngguó, lìng yì fāngmiàn yě néng wèi xuéshengmen tígōng hùxiāng jiāoliú hé xuéxí de jīhuì."
+     },
+     {
+      "speaker": "李老师",
+      "zh": "谢谢您的支持！",
+      "pinyin": "Xièxie nín de zhīchí!"
+     },
+     {
+      "speaker": "校长",
+      "zh": "上次的春游活动你们办得非常有趣，大家都玩儿得很开心，这次活动继续由你负责，相信也一定会很成功。",
+      "pinyin": "Shàng cì de chūnyóu huódòng nǐmen bàn de fēicháng yǒuqù, dàjiā dōu wánr de hěn kāixīn, zhè cì huódòng jìxù yóu nǐ fùzé, xiāngxìn yě yídìng huì hěn chénggōng."
+     },
+     {
+      "speaker": "李老师",
+      "zh": "我们回去就开会讨论，星期五之前把详细的计划书发给您。",
+      "pinyin": "Wǒmen huíqu jiù kāi huì tǎolùn, xīngqīwǔ zhīqián bǎ xiángxì de jìhuàshū fāgěi nín."
+     },
+     {
+      "speaker": "校长",
+      "zh": "好的，准备过程中有什么问题，你们可以直接来找我。",
+      "pinyin": "Hǎo de, zhǔnbèi guòchéng zhōng yǒu shénme wèntí, nǐmen kěyǐ zhíjiē lái zhǎo wǒ."
+     }
+    ],
+    "new_words": [
+     {
+      "n": 13,
+      "zh": "正常",
+      "pinyin": "zhèngcháng",
+      "pos": "adj.",
+      "en": "normal, regular",
+      "text": 3
+     },
+     {
+      "n": 14,
+      "zh": "申请",
+      "pinyin": "shēnqǐng",
+      "pos": "v.",
+      "en": "to apply for",
+      "text": 3
+     },
+     {
+      "n": 15,
+      "zh": "有趣",
+      "pinyin": "yǒuqù",
+      "pos": "adj.",
+      "en": "interesting, fun",
+      "text": 3
+     },
+     {
+      "n": 16,
+      "zh": "开心",
+      "pinyin": "kāixīn",
+      "pos": "adj.",
+      "en": "happy, glad",
+      "text": 3
+     },
+     {
+      "n": 17,
+      "zh": "继续",
+      "pinyin": "jìxù",
+      "pos": "v.",
+      "en": "to go on, to continue",
+      "text": 3
+     },
+     {
+      "n": 18,
+      "zh": "由",
+      "pinyin": "yóu",
+      "pos": "prep.",
+      "en": "by (sb.)",
+      "text": 3
+     },
+     {
+      "n": 19,
+      "zh": "讨论",
+      "pinyin": "tǎolùn",
+      "pos": "v.",
+      "en": "to discuss, to talk over",
+      "text": 3
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "kind": "narrative",
+    "lines": [
+     {
+      "zh": "筷子在中国大约已经有3000多年的历史了。",
+      "pinyin": "Kuàizi zài Zhōngguó dàyuē yǐjīng yǒu sānqiān duō nián de lìshǐ le."
+     },
+     {
+      "zh": "对外国人来说，使用筷子吃饭并不容易，所以，国外的一些中国餐厅在放筷子的纸袋上会提供使用筷子的详细说明。",
+      "pinyin": "Duì wàiguó rén lái shuō, shǐyòng kuàizi chī fàn bìng bù róngyi, suǒyǐ, guówài de yìxiē Zhōngguó cāntīng zài fàng kuàizi de zhǐdài shang huì tígōng shǐyòng kuàizi de xiángxì shuōmíng."
+     },
+     {
+      "zh": "不过，如果你认为每个中国人都会正确使用筷子，那就错了。",
+      "pinyin": "Búguò, rúguǒ nǐ rènwéi měi ge Zhōngguó rén dōu huì zhèngquè shǐyòng kuàizi, nà jiù cuò le."
+     },
+     {
+      "zh": "有人在互联网上专门进行过调查，结果发现每六个中国人中就有一个使用筷子的方法是错误的。",
+      "pinyin": "Yǒu rén zài hùliánwǎng shang zhuānmén jìnxíngguo diàochá, jiéguǒ fāxiàn měi liù ge Zhōngguó rén zhōng jiù yǒu yí ge shǐyòng kuàizi de fāngfǎ shì cuòwù de."
+     },
+     {
+      "zh": "如果你想正确使用筷子，那就好好练习吧。",
+      "pinyin": "Rúguǒ nǐ xiǎng zhèngquè shǐyòng kuàizi, nà jiù hǎohāor liànxí ba."
+     }
+    ],
+    "new_words": [
+     {
+      "n": 20,
+      "zh": "大约",
+      "pinyin": "dàyuē",
+      "pos": "adv.",
+      "en": "approximately, about",
+      "text": 4
+     },
+     {
+      "n": 21,
+      "zh": "餐厅",
+      "pinyin": "cāntīng",
+      "pos": "n.",
+      "en": "restaurant",
+      "text": 4
+     },
+     {
+      "n": 22,
+      "zh": "纸袋",
+      "pinyin": "zhǐdài",
+      "pos": "n.",
+      "en": "paper bag",
+      "text": 4
+     },
+     {
+      "n": 22,
+      "zh": "袋(子)",
+      "pinyin": "dài(zi)",
+      "pos": "n.",
+      "en": "bag, sack",
+      "text": 4
+     },
+     {
+      "n": 23,
+      "zh": "互联网",
+      "pinyin": "hùliánwǎng",
+      "pos": "n.",
+      "en": "Internet",
+      "text": 4
+     },
+     {
+      "n": 24,
+      "zh": "进行",
+      "pinyin": "jìnxíng",
+      "pos": "v.",
+      "en": "to conduct, to carry out",
+      "text": 4
+     },
+     {
+      "n": 25,
+      "zh": "错误",
+      "pinyin": "cuòwù",
+      "pos": "adj.",
+      "en": "wrong",
+      "text": 4
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "kind": "narrative",
+    "lines": [
+     {
+      "zh": "茶在中国有几千年的历史，是中国最常见的饮料。",
+      "pinyin": "Chá zài Zhōngguó yǒu jǐqiān nián de lìshǐ, shì Zhōngguó zuì chángjiàn de yǐnliào."
+     },
+     {
+      "zh": "最早的时候，茶只是被当作一种药，而不是饮料。",
+      "pinyin": "Zuì zǎo de shíhou, chá zhǐshì bèi dàngzuò yì zhǒng yào, ér bú shì yǐnliào."
+     },
+     {
+      "zh": "后来，随着人们对茶的认识的加深，慢慢开始把它当作解渴的饮料，这才慢慢有了中国的茶文化。",
+      "pinyin": "Hòulái, suízhe rénmen duì chá de rènshí de jiāshēn, mànmàn kāishǐ bǎ tā dàngzuò jiě kě de yǐnliào, zhè cái mànmàn yǒule Zhōngguó de chá wénhuà."
+     },
+     {
+      "zh": "在中国，喝茶是一种十分普遍的生活习惯。",
+      "pinyin": "Zài Zhōngguó, hē chá shì yì zhǒng shífēn pǔbiàn de shēnghuó xíguàn."
+     },
+     {
+      "zh": "对很多中国人来说，喝茶已成为他们生活中不可缺少的一部分。",
+      "pinyin": "Duì hěn duō Zhōngguó rén lái shuō, hē chá yǐ chéngwéi tāmen shēnghuó zhōng bù kě quēshǎo de yí bùfen."
+     },
+     {
+      "zh": "但是有的饮料虽然名字叫“茶”，却并不是真正的茶。",
+      "pinyin": "Dànshì yǒude yǐnliào suīrán míngzi jiào “chá”, què bìng bú shì zhēnzhèng de chá."
+     },
+     {
+      "zh": "比如广东省的人爱喝的“凉茶”，它的味道稍微有点儿苦，其实是一种用中药做成的饮料。",
+      "pinyin": "Bǐrú Guǎngdōng Shěng de rén ài hē de “liángchá ”, tā de wèidào shāowēi yǒudiǎnr kǔ, qíshí shì yì zhǒng yòng zhōngyào zuòchéng de yǐnliào."
+     }
+    ],
+    "new_words": [
+     {
+      "n": 26,
+      "zh": "随着",
+      "pinyin": "suízhe",
+      "pos": "prep.",
+      "en": "along with, as",
+      "text": 5
+     },
+     {
+      "n": 27,
+      "zh": "十分",
+      "pinyin": "shífēn",
+      "pos": "adv.",
+      "en": "very, extremely",
+      "text": 5
+     },
+     {
+      "n": 28,
+      "zh": "普遍",
+      "pinyin": "pǔbiàn",
+      "pos": "adj.",
+      "en": "universal, common",
+      "text": 5
+     },
+     {
+      "n": 29,
+      "zh": "部分",
+      "pinyin": "bùfen",
+      "pos": "n.",
+      "en": "part",
+      "text": 5
+     },
+     {
+      "n": 30,
+      "zh": "稍微",
+      "pinyin": "shāowēi",
+      "pos": "adv.",
+      "en": "a little, slightly",
+      "text": 5
+     },
+     {
+      "n": 31,
+      "zh": "苦",
+      "pinyin": "kǔ",
+      "pos": "adj.",
+      "en": "bitter",
+      "text": 5
+     },
+     {
+      "n": 32,
+      "zh": "省",
+      "pinyin": "shěng",
+      "pos": "n.",
+      "en": "province",
+      "text": 5
+     }
+    ],
+    "proper_nouns": [
+     {
+      "zh": "广东省",
+      "pinyin": "Guǎngdōng Shěng",
+      "en": "Guangdong, a province of China"
+     }
+    ]
+   }
+  ],
+  "grammar": [
+   {
+    "n": 1,
+    "title_zh": "大概",
+    "explanation_zh": "“大概”，副词，表示对数量、时间不太精确的估计，也表示对情况的推测，有很大的可能性；也可以是形容词，表示不很准确或者不很详细。例如：\n【比一比 大概—也许】\n相同点：两者都是副词，表示对情况的推测、估计。★\n不同点：1. 表示★这个意思时，“大概”判断性比较强，肯定的意思较重；而“也许”表示猜测，把握性较小。\n2. 表示★这个意思时，“大概”可以表示对数量的估计；“也许”没有此用法。\n3. 表示★这个意思时，“也许”可以表示说话人对自己未来的打算不确定；“大概”没有此用法。\n4. “大概”还可以是形容词，属性词，表示不十分精确或不十分详尽；“也许”没有此用法。",
+    "explanation_en": "The adverb “大概” is used for approximate speculation about an amount, time or a situation, indicating a big possibility. The adjective “大概” means “not accurate or detailed”. For example:\n[Compare 大概—也许]\nSimilarities: Both are adverbs indicating a speculation or estimation about a certain situation.\nDifferences: 1. In case ★, “大概” expresses a stronger judgment and a more positive meaning, while “也许” indicates a guess and a smaller possibility.\n2. In case ★, “大概” can signify an estimation of quantity, while “也许” has no such usage.\n3. In case ★, “也许” can indicate that the speaker is not sure about his/her future plans, while “大概” has no such usage.\n4. “大概” can also be used as an adjective or attributive word meaning “not quite accurate or detailed”, while “也许” cannot be used this way.",
+    "examples": [
+     {
+      "n": 1,
+      "zh": "他8岁就开始上台演出，到现在大概唱了60多年了，他对这门艺术的喜爱从来没有改变过。"
+     },
+     {
+      "n": 2,
+      "zh": "你的这个关于举办传统文化节活动的计划，我想校长大概会同意。"
+     },
+     {
+      "n": 3,
+      "zh": "经过这段时间的学习，他的汉语水平提高了不少，不但可以听懂一些较短的句子，还可以进行简单的交流，现在即使不用翻译也能理解大概的意思了。"
+     },
+     {
+      "zh": "他总说自己特别喜欢看书，可是这本书他看了一个月才看到第5页，大概／也许是因为工作太忙吧。但我觉得一个真正爱看书的人总能找出时间来阅读。",
+      "note_zh": "比一比 相同点"
+     },
+     {
+      "zh": "老张这个人一直很准时，开会从来不迟到。今天到现在还没来，大概是有什么事情，你打个电话问问他吧。",
+      "note_zh": "比一比 不同点1：大概"
+     },
+     {
+      "zh": "这次电影艺术节也许会在北京举行。",
+      "note_zh": "比一比 不同点1：也许"
+     },
+     {
+      "zh": "大概有三分之二的人反对这样做。",
+      "note_zh": "比一比 不同点2"
+     },
+     {
+      "zh": "我原来想学习法律，不过后来我发现自己对新闻更感兴趣，也许以后我会成为一名记者。",
+      "note_zh": "比一比 不同点3"
+     },
+     {
+      "zh": "不管做什么事情，最好提前做计划，不用安排得特别详细，但必须有一个大概的想法。",
+      "note_zh": "比一比 不同点4"
+     }
+    ],
+    "practice_instruction_zh": "完成对话或句子",
+    "practice": [
+     {
+      "n": 1,
+      "zh": "A：师傅，我去火车站。________？ B：现在不堵车，估计二十分钟就能到。",
+      "hint_zh": "大概"
+     },
+     {
+      "n": 2,
+      "zh": "A：请问附近有银行吗？ B：有一个交通银行，________。",
+      "hint_zh": "大概"
+     },
+     {
+      "n": 3,
+      "zh": "读书应该有选择，有些书只要快速阅读________，有些书却需要多花些时间来仔细阅读。",
+      "hint_zh": "大概"
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "title_zh": "偶尔",
+    "explanation_zh": "“偶尔”，副词，表示情况发生的次数非常少。例如：",
+    "explanation_en": "The adverb “偶尔” means something seldom occurs. For example:",
+    "examples": [
+     {
+      "n": 1,
+      "zh": "我常常跟着电视学唱京剧，然后一遍一遍地练习，偶尔跟中国人一起唱上几句。"
+     },
+     {
+      "n": 2,
+      "zh": "我们调查的近7000名上班族中，有64%的人经常加班，28%偶尔加班，而每次加班时间超过两小时的竟然有59%。"
+     },
+     {
+      "n": 3,
+      "zh": "三叶草的叶子一般为三个，但偶尔也会出现四个叶子的，这种四个叶子的叫“四叶草”，因为很少见，所以有人说，找到这种“四叶草”的人会得到幸福。"
+     }
+    ],
+    "practice_instruction_zh": "完成句子",
+    "practice": [
+     {
+      "n": 1,
+      "zh": "为了减肥，我几乎每天晚上都坚持跑步，________。",
+      "hint_zh": "偶尔"
+     },
+     {
+      "n": 2,
+      "zh": "我平时上班忙，很少有时间运动。但是周末我会约朋友们见面，一块儿去打篮球或者踢足球，________。",
+      "hint_zh": "偶尔"
+     },
+     {
+      "n": 3,
+      "zh": "她和丈夫很少在家吃饭。平时上班的时候两个人都在公司吃，周末不上班的时候就一起去饭馆儿吃，________。",
+      "hint_zh": "偶尔"
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "title_zh": "由",
+    "explanation_zh": "“由”，介词，引出负责做某事的人。例如：",
+    "explanation_en": "The preposition “由” introduces the person in charge of something. For example:",
+    "examples": [
+     {
+      "n": 1,
+      "zh": "按照规定，这件事情应该由王大夫负责。"
+     },
+     {
+      "n": 2,
+      "zh": "“幽默”这个词最早是由林语堂先生翻译过来的。"
+     },
+     {
+      "n": 3,
+      "zh": "上次的春游活动你们办得非常有趣，大家都玩儿得很开心，这次活动继续由你们负责，相信也一定会很成功。"
+     }
+    ],
+    "practice_instruction_zh": "完成对话或句子",
+    "practice": [
+     {
+      "n": 1,
+      "zh": "A：这件事不是马经理专门负责吗？ B：他已经离开公司了，现在________。",
+      "hint_zh": "由"
+     },
+     {
+      "n": 2,
+      "zh": "这篇文章是介绍京剧的，________。前一部分介绍京剧的发展历史，第二部分主要谈京剧的发展方向。",
+      "hint_zh": "由"
+     },
+     {
+      "n": 3,
+      "zh": "上次的秋游活动小夏组织得不错，大家都玩儿得很高兴，这次________。",
+      "hint_zh": "由"
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "title_zh": "进行",
+    "explanation_zh": "“进行”，动词，表示从事某种活动、工作等。多用在双音节动词前边，后边的动词表示的一定是比较正式、严肃的行为，暂时性的和日常生活中的行为一般不用“进行”。例如：",
+    "explanation_en": "The verb “进行” means to engage in a certain activity or work, etc. It is usually used before a disyllabic verb denoting a formal, serious behavior. Temporary or everyday behaviors are usually not used with “进行”. For example:",
+    "examples": [
+     {
+      "n": 1,
+      "zh": "大家请注意，现在休息十五分钟，十点半会议继续进行。"
+     },
+     {
+      "n": 2,
+      "zh": "有人在互联网上专门进行过调查，结果发现每六个中国人中就有一个使用筷子的方法是错误的。"
+     },
+     {
+      "n": 3,
+      "zh": "成功的语言学习者，在学习方面往往都是积极主动的，他们会主动与他人进行交流，并且请别人帮助他们改错。"
+     }
+    ],
+    "practice_instruction_zh": "完成对话或句子",
+    "practice": [
+     {
+      "n": 1,
+      "zh": "A：都六点了，会议怎么还没结束？ B：________。",
+      "hint_zh": "进行"
+     },
+     {
+      "n": 2,
+      "zh": "A：听说你要申请去国外留学，准备得怎么样了？ B：________。",
+      "hint_zh": "进行"
+     },
+     {
+      "n": 3,
+      "zh": "________。结果发现，在接受调查的学生中，有超过80%的人希望自己能有机会出国留学，但这其中只有大约20%的人开始申请国外学校。",
+      "hint_zh": "进行"
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "title_zh": "随着",
+    "explanation_zh": "“随着”，介词，表示一件事情是另一件事情发生的条件，后面一般是带修饰语的双音节动词。例如：",
+    "explanation_en": "The preposition “随着” indicates something is the condition under which something else happens. It is usually followed by a disyllabic verb modified by an adjunct. For example:",
+    "examples": [
+     {
+      "n": 1,
+      "zh": "随着社会的发展，京剧也在改变，以适应不同年龄观众的需要。"
+     },
+     {
+      "n": 2,
+      "zh": "有些人喜欢为自己的生活做长远的计划。但是，随着年龄的增长，他们会发现生活总是在不停地变化，生活往往不会按照我们的计划来进行。"
+     },
+     {
+      "n": 3,
+      "zh": "最早的时候，茶只是被当作一种药，而不是饮料。后来，随着人们对茶的认识的加深，慢慢开始把它当作解渴的饮料，这才慢慢有了中国的茶文化。"
+     }
+    ],
+    "practice_instruction_zh": "完成句子",
+    "practice": [
+     {
+      "n": 1,
+      "zh": "________，越来越多的人喜欢在网上写日记。",
+      "hint_zh": "随着"
+     },
+     {
+      "n": 2,
+      "zh": "________，美的标准一直在变。过去有的时候人们以胖为美，现在的人以瘦为美。",
+      "hint_zh": "随着"
+     },
+     {
+      "n": 3,
+      "zh": "小时候，我们往往会有许多浪漫的理想。但是________，我们天天忙于工作和生活，那些梦慢慢地离我们远去了。",
+      "hint_zh": "随着"
+     }
+    ]
+   }
+  ],
+  "exercises": [
+   {
+    "n": "注释1 比一比 做一做",
+    "type_zh": "选词填空（大概／也许）",
+    "instruction_zh": "选词填空",
+    "instruction_en": "Tick or cross",
+    "word_bank": [
+     [
+      "大概",
+      "也许"
+     ]
+    ],
+    "items": [
+     {
+      "n": 1,
+      "zh": "这次调查发现，超过70%的儿童更愿意让爸爸给自己读书。为什么会出现这种情况？________是因为父亲平时陪孩子玩儿的时间太少。",
+      "options": {
+       "大概": "✓",
+       "也许": "✓"
+      },
+      "answer": "大概 ✓　也许 ✓",
+      "answer_ref": {
+       "book": "textbook",
+       "pages": [
+        46
+       ]
+      }
+     },
+     {
+      "n": 2,
+      "zh": "穷人的孩子早当家，他们________没有很多钱，却可能比富人家的孩子经历得更多。",
+      "options": {
+       "大概": "×",
+       "也许": "✓"
+      },
+      "answer": "大概 ×　也许 ✓",
+      "answer_ref": {
+       "book": "textbook",
+       "pages": [
+        46
+       ]
+      }
+     },
+     {
+      "n": 3,
+      "zh": "师傅，我去机场。________要多长时间？半小时能到吗？"
+     },
+     {
+      "n": 4,
+      "zh": "小孩儿的脾气变化很快。刚才还对你哭个不停，________一下子就没事了，好像什么都没发生过。"
+     },
+     {
+      "n": 5,
+      "zh": "您最近在拍哪部电影？能谈谈电影的________内容吗？"
+     }
+    ]
+   },
+   {
+    "n": "课文1–3 回答问题",
+    "type_zh": "回答问题",
+    "instruction_zh": "根据课文内容回答问题",
+    "instruction_en": "Answer the questions based on the texts.",
+    "items": [
+     {
+      "n": 1,
+      "zh": "课文1：小夏的爷爷多大年纪了？京剧唱得怎么样？唱了多长时间了？"
+     },
+     {
+      "n": 2,
+      "zh": "课文1：小夏受了爷爷哪些影响？"
+     },
+     {
+      "n": 3,
+      "zh": "课文2：马克学过京剧吗？他怎么学的？他为什么京剧唱得那么好？"
+     },
+     {
+      "n": 4,
+      "zh": "课文2：京剧给了马克哪些新的想法？"
+     },
+     {
+      "n": 5,
+      "zh": "课文3：为什么李老师想申请举办中国传统文化节活动？"
+     },
+     {
+      "n": 6,
+      "zh": "课文3：为什么校长决定这次活动继续由李老师负责？"
+     }
+    ]
+   },
+   {
+    "n": "课文4–5 回答问题",
+    "type_zh": "回答问题",
+    "instruction_zh": "根据课文内容回答问题",
+    "instruction_en": "Answer the questions based on the texts.",
+    "items": [
+     {
+      "n": 1,
+      "zh": "课文4：为什么国外的中国餐厅会提供使用筷子的详细说明？"
+     },
+     {
+      "n": 2,
+      "zh": "课文4：关于中国人使用筷子的调查结果是什么？"
+     },
+     {
+      "n": 3,
+      "zh": "课文5：茶开始时被用来做什么？后来呢？"
+     },
+     {
+      "n": 4,
+      "zh": "课文5：广东人爱喝的凉茶是一种什么样的饮料？"
+     }
+    ]
+   },
+   {
+    "n": 1,
+    "type_zh": "复述",
+    "instruction_zh": "复述",
+    "instruction_en": "Retell the dialogues.",
+    "items": [
+     {
+      "n": "课文1",
+      "zh": "小夏的语气：我爷爷对京剧有着很深厚的感情。……"
+     },
+     {
+      "n": "课文2",
+      "zh": "马克的语气：我从来没有接受过京剧方面的专门教育，……"
+     },
+     {
+      "n": "课文3",
+      "zh": "校长的语气：李老师想申请举办一次中国文化节活动。……"
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "type_zh": "选词填空",
+    "instruction_zh": "选择合适的词语填空",
+    "instruction_en": "Choose the proper words to fill in the blanks.",
+    "word_bank": [
+     [
+      "演出",
+      "演员",
+      "表演",
+      "普遍",
+      "苦"
+     ],
+     [
+      "稍微",
+      "基础",
+      "厚",
+      "遍",
+      "继续"
+     ]
+    ],
+    "items": [
+     {
+      "n": 1,
+      "zh": "今天的晚会太精彩了，特别是那些外国留学生________的中国功夫，动作既标准又好看，非常棒。"
+     },
+     {
+      "n": 2,
+      "zh": "这次________举办得非常成功，吸引了不少当地的观众。"
+     },
+     {
+      "n": 3,
+      "zh": "凉茶虽然味道________，但对身体很有好处。另外，凉茶热着喝效果也很不错。"
+     },
+     {
+      "n": 4,
+      "zh": "每天晚上，公园里都有一群老人在唱京剧。他们很喜欢唱京剧，虽然不是专业的________，不过，他们唱得不错，听起来很有味道。"
+     },
+     {
+      "n": 5,
+      "zh": "很多大学生毕业后，选择的第一个职业，往往和自己的专业没什么关系，这种情况现在越来越________。"
+     },
+     {
+      "n": 6,
+      "zh": "A：这本小说这么________，什么时候才能看完啊？ B：每天晚上看十几页，差不多一个月就可以看完。"
+     },
+     {
+      "n": 7,
+      "zh": "A：你学得可真快！ B：我小时候学过两年的舞，有点儿________。"
+     },
+     {
+      "n": 8,
+      "zh": "A：材料整理好了没？ B：差不多了，我再检查一________就给您送过去。"
+     },
+     {
+      "n": 9,
+      "zh": "A：你想好了没？是________读书还是参加工作？ B：我考虑过了，我想先工作两年，然后再考研究生。"
+     },
+     {
+      "n": 10,
+      "zh": "A：孙小姐，我们大概什么时候出发？ B：大家先回房间________休息一下，半个小时后我们楼下集合。"
+     }
+    ]
+   },
+   {
+    "n": "扩展 做一做",
+    "type_zh": "选词填空（同字词）",
+    "instruction_zh": "选词填空",
+    "instruction_en": "Fill in the blanks with the words given.",
+    "word_bank": [
+     [
+      "商量",
+      "数量",
+      "质量"
+     ]
+    ],
+    "items": [
+     {
+      "n": 1,
+      "zh": "大熊猫样子非常可爱，深受人们喜爱。但是________不多，全世界一共才有一千多只。",
+      "answer": "数量",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        35
+       ]
+      }
+     },
+     {
+      "n": 2,
+      "zh": "了解顾客的实际需要十分重要，一样东西，不管它________多好、多便宜，如果顾客完全不需要它，我们就很难把它卖出去。",
+      "answer": "质量",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        35
+       ]
+      }
+     },
+     {
+      "n": 3,
+      "zh": "A：你们两个怎么样了？打算什么时候结婚？ B：我们________过了，就明年十月一号。",
+      "answer": "商量",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        35
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "characters": {
+   "knowledge_title_zh": "同字词",
+   "knowledge_en": "Words with the Same Character",
+   "knowledge_zh": "量：商量、数量、质量\n（1）我认真考虑了一个晚上，也打电话和父母商量过了，最后还是决定不去那家公司了。我想继续留在北京，看看还有没有别的机会。\n（2）广告虽然给我们带来很多方便，但数量太多也会让人觉得讨厌。\n（3）如果一个星期内发现有任何质量问题，我们都可以免费为您换货，但是购物小票一定不能丢。",
+   "characters": [
+    {
+     "zh": "量",
+     "note_zh": "商量、数量、质量"
+    }
+   ]
+  },
+  "application": [
+   {
+    "title_zh": "双人活动",
+    "instruction_zh": "互相了解对方关于京剧的看法，完成调查表。",
+    "instruction_en": "Learn about each other’s opinions on Beijing opera and complete the questionnaire below.",
+    "example_zh": [
+     "表格：| | 问 | 答 |",
+     "| 1 | 你看过京剧吗？ | |",
+     "| 2 | 你认为京剧这种表演艺术怎么样？ | |",
+     "| 3 | 你认为京剧目前不太流行的原因是什么？ | |",
+     "| 4 | 你认为有必要让更多的人了解京剧吗？为什么？ | |",
+     "| 5 | 你们国家有没有比较有名的“剧”？有哪些跟京剧不一样的地方？ | |",
+     "| 6 | 猜猜“台上一分钟，台下十年功”这句话是什么意思？ | |"
+    ]
+   },
+   {
+    "title_zh": "小组活动",
+    "instruction_zh": "京剧、筷子和茶都是中国传统文化的重要组成部分，请向小组成员简单介绍一下其中的一种。（最少用四个下面的结构）",
+    "instruction_en": "Beijing opera, chopsticks and tea are all important parts of traditional Chinese culture. Briefly introduce one of them to your group members. (Use at least four of the following structures.)",
+    "example_zh": [
+     "a. 深受大家的喜爱",
+     "b. 有着很深厚的感情",
+     "c. 一遍一遍地练习",
+     "d. 了解中国文化",
+     "e. 提供互相交流和学习的机会",
+     "f. 看起来容易做起来难",
+     "g. 十分普遍的生活习惯",
+     "h. 生活中不可缺少的一部分"
+    ]
+   }
+  ],
+  "culture": {
+   "title_zh": "中国的筷子文化",
+   "body_zh": "筷子是由中国古代汉族人发明的一种非常具有民族特色的进食工具。中国人开始使用筷子，大约在三千多年以前。筷子看起来只是非常简单的两根小细棒，但它有挑、拨、夹、拌、扒等功能，而且使用方便，价廉物美。筷子是中餐中最主要的进餐用具。\n筷子要直、齐，而且一定要成双成对使用，体现了中国人的中正、和为贵、团结的文化观念。使用筷子需要注意礼节，比如吃饭时，应请长辈或客人先下筷子，不能把筷子含在嘴里、不能用筷子敲打碗盘、不能用筷子对着人或用餐时拿筷子指手画脚、不能将筷子插入碗里的米饭或面条中等。",
+   "body_en": "Chopsticks in Chinese Culture\nChopsticks are a kind of eating utensil with distinct ethnic characteristics created by the ancient Han Chinese. The history of chopsticks used by Chinese dates back to over 3,000 years ago. Two simple and thin sticks as they appear to be, a pair of chopsticks can fulfill plenty of tasks, such as picking, poking, carrying, mixing and digging. They are easy to use and not expensive at all. Chopsticks are the major utensils at a Chinese dinner table.\nUsed in pairs, chopsticks are straight and with the same length, reflecting the concepts of uprightness, harmony and solidarity in Chinese culture. Certain etiquette should be observed when using chopsticks, for instance, let the elderly or guests use their chopsticks to taste food first, do not hold chopsticks in the mouth, do not beat bowls or dishes with them, do not point them at other people or make gestures with them, do not stick them into a bowl of rice or noodles, etc."
+  }
+ },
+ "teacher": {
+  "ref": {
+   "book": "teacher",
+   "pages": [
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35
+   ]
+  },
+  "objectives_zh": [
+   "主题：中国传统文化（1）对话：爱好京剧、学唱京剧、举办文化活动（2）短文：筷子、茶",
+   "语言点：学生能够了解并掌握：（1）“大概”表示推测；也表示不太准确，不太详细　*辨析“大概”和“也许”的异同（2）“偶尔”表示情况发生的次数非常少（3）“由”引出负责做某事的人（4）“进行”表示从事某种活动、工作等（5）“随着”表示一件事情是另一件事情发生的条件",
+   "词汇：学生能够：（1）掌握本课32个四级大纲词汇的意义和用法　重点词语：演出、来自、遍、基础、正常、继续、大约、错误、部分、稍微（2）理解“量”字的组词规律及在词汇中的意义"
+  ],
+  "steps": [
+   {
+    "title_zh": "一 复习旧课",
+    "body_zh": "1 使用生词卡片，快速认读下列词语：\n全部、也许、保护、无法、节、解释、使用、引起、节约、仔细\n2 快速回答问题（与第12课或学生实际生活有关的问题）：\n（1）为了不让新衣服以后掉色，你们有什么好经验？\n（2）对于老师来说，应该怎么教育学生呢？\n（3）对于学生来说，学习方法重要不重要？为什么？\n3 检查作业：\n请3～5名学生给全班同学讲“因材施教”的小故事。"
+   },
+   {
+    "title_zh": "二 学习新课 1 热身",
+    "body_zh": "热身1：学生两人一组，合作完成；教师指出图片，请学生根据图片说出对应的词语，教师核对答案；教师领读热身1的生词；最后全体学生齐读，教师正音。\n答案：①F　②C　③E　④D　⑤A　⑥B\n热身2：教师带领学生了解表格的内容；请学生两人一组，互相提问调查，完成表格；请2～3名学生汇报调查结果。"
+   },
+   {
+    "title_zh": "2 生词",
+    "body_zh": "（1）生词快速认读及正音\n课文1（对话）：京剧、演员、观众、厚、演出、大概\n课文2（对话）：来自、遍、偶尔、吃惊、基础、表演\n课文3（对话）：正常、申请、有趣、开心、继续、由、讨论\n课文4（短文）：大约、餐厅、纸袋、袋（子）、互联网、进行、错误\n课文5（短文）：随着、十分、普遍、部分、稍微、苦、省\n• 教师用PPT或卡片展示并领读生词（带拼音）；\n• 取消拼音，带领学生再次认读；\n• 逐词（不带拼音）闪现，请学生快速认读生词；\n• 请3～5个学生快速随机认读3～5个生词；\n• 最后全体学生快速齐读所有生词。\n（2）生词讲解方式\n直观法（图片、实物、符号、视频）：图片类：观众（热身图片E）、吃惊（热身图片F）、开心（热身图片C）、讨论（热身图片D）、餐厅（热身图片A）、互联网（热身图片B）、厚（词典）；实物类：纸袋、袋（子）、省（中国地图）；符号类：错误（×）、部分（画一个圆，并在圆中划出一部分）；视频类：京剧、演员、演出、表演（4个词使用简短的京剧表演视频说明）\n对比法（反义词对比）：苦（甜）\n替换法（同／近义替换）：偶尔（有时候）、有趣（有意思）、大约（差不多）、十分（非常、特别）、稍微（一点儿）\n提问启发：来自、遍、基础、正常、申请、继续、普遍\n教师提问，引导学生说出句子：\n你是哪国人？——我来自……\n如果你没听清楚，你会让老师做什么？——请老师再说一遍。\n有的同学来中国学习以前，在他们国家学习过汉语，所以……——他们有汉语基础。\n没学汉语时和中国人没办法交流，现在可以吗？——现在可以正常交流。\n如果你想去别的大学学习，应该怎么做？——应该向那个大学申请。\n学习了1个小时很累，现在休息10分钟，然后再……——然后再继续学习。\n中国人都有喝茶的生活习惯吗？——在中国喝茶是非常普遍的生活习惯。\n（3）字形辨认练习\n教师用卡片或PPT展示，请学生快速辨认并读出，最后给每个字组词。\n剧—刷　观—戏—欢　遍—篇\n偶—遇　尔—你　申—中\n续—读　讨—对　联—聪\n（4）重点生词扩展及常用搭配\n演出—他的演出—上台演出—这次演出很精彩—他8岁就开始上台演出。\n来自—来自美国—来自法国的留学生—他是一个来自英国的留学生。\n遍—一／两／三遍—读／听／唱／写／想一遍—一遍一遍地—跟着电视，一遍一遍地练习。\n基础—基础很好—汉语基础—有一些音乐基础—我以前学过音乐，有一些音乐基础。\n正常—正常情况／交流—和中国人正常交流—汉语不好会影响和中国人的正常交流。\n继续—继续读／写—10分钟后继续学习—这次活动你们继续负责。\n大约—大约3000多年—大约有3000多年的历史—筷子在中国大约已经有3000多年的历史了。\n错误—错误的方法—这个方法是错误的—他使用筷子的方法是错误的。\n部分—一／大部分—生活中的一部分—生活中不可缺少的一部分—喝茶已成为他们生活中不可缺少的一部分。\n稍微—稍微想想—稍微慢一点儿—稍微有点儿苦—茶的味道稍微有点儿苦。"
+   },
+   {
+    "title_zh": "3 语言点（1）大概",
+    "body_zh": "【副词用法】\n① 语言点解析\n“大概”，副词，表示对数量、时间不太精确的估计，也表示对情况的推测，有很大的可能性。\n② 语言点导入\n利用图片，提问导入。\n教师向学生展示图片：一位老人在画京剧的脸谱。\n• 教师：你们猜这位老人是做什么工作的？\n学生：这位老人大概是一个京剧演员。\n• 教师：你们猜这位京剧演员多大年纪了？\n学生：这位演员大概70岁了。\n③ 语言点操练\n• 利用导入环节的图片，提问操练。\n教师：他大概唱了多少年京剧了？\n学生：他大概唱了50年京剧了。\n• 利用热身图片F，提问操练。\n教师：这个小男孩，为什么突然这么吃惊呢？\n学生：这个小男孩大概看到一只动物突然向他跑过来。\n【形容词用法】\n① 语言点解析\n“大概”，形容词，表示不很准确或者不详细。\n② 语言点导入\n联系学生实际，提问导入。\n• 教师：现在你们跟中国人聊天，他们说的话你们都能听懂吗？\n学生：现在我跟中国人聊天，已经能听懂大概的意思了。\n• 教师：你认为预习好不好？有什么效果？\n学生：学习新课以前预习能对要学的内容有大概的了解。\n③ 语言点操练\n联系生活实际，提问操练。\n• 教师：对于周末的活动，你们有什么好主意？\n学生：我们现在还没想好，只有一个大概的想法。\n• 教师：那个电影的结果和你猜的一样吗？\n学生：那个电影的大概内容跟我想的差不多。\n④ 语言点运用\n请学生选择“大概”在句子中恰当的位置。\nI. 这个任务A按原来的计划B需要两个星期，但是C我们可以提前D完成。\nII. 我们学校有多少A研究生我B不太清楚，C数字可能是D四五千吧。\nIII. A通过一个地方的收入B水平，就能判断当地C的经济水平D。\nIV. 关于下个月A的活动我们还没B商量好，C邀请30人D参加。\n参考答案：I. B　II. C　III. C　IV. C\n⑤ 比一比：大概—也许\n按照教材中的辨析步骤进行。"
+   },
+   {
+    "title_zh": "3 语言点（2）偶尔",
+    "body_zh": "① 语言点解析\n“偶尔”，副词，表示情况发生的次数非常少。\n② 语言点导入\n• 利用热身1图片E，提问导入。\n教师：他们正在看中文电影，你经常看中文电影吗？\n学生：我只是偶尔看中文电影。\n• 创设情境，进行导入。\n教师：妻子和丈夫平时上班都非常忙，他们没时间天天在家做饭，所以……\n学生：他们平时上班都非常忙，所以一般在饭馆儿吃，偶尔在家做做饭。\n③ 语言点操练\n联系生活实际，提问操练。\n• 教师：你们周末常常做什么？\n学生：我们周末一般在家复习，或者去体育馆运动，偶尔找朋友聊聊天儿。\n• 教师：你们国家的人，在公司工作经常加班吗？\n学生：他们工作不太辛苦，偶尔会加班。\n④ 语言点运用\n请学生根据提示用“经常、一般、从来、偶尔、很少”描述下面几种情况。\n提示内容：I. 10个周末中8个周末回家看爸妈。\nII. 3个月中有2天去爬山。\nIII. 每天都按时到教室。\nIV. 1个月中20天去食堂吃饭，5天去饭馆儿，5天自己做饭。\n参考答案：I. 我周末经常／一般回家看爸妈。\nII. 我偶尔／很少去爬山。\nIII. 我从来不迟到。\nIV. 我经常／一般去食堂吃饭，偶尔去饭馆儿，偶尔自己做饭。"
+   },
+   {
+    "title_zh": "3 语言点（3）由",
+    "body_zh": "① 语言点解析\n“由”，介词，引出负责做某事的人。\n② 语言点导入\n联系学生实际，提问导入。\n• 教师：如果我们班要举办一个文化活动，谁来负责比较合适？\n学生：如果我们班要举办活动，当然是由班长负责。\n• 教师：我们班有几门课，你们老师是谁啊？\n学生：我们班有……门课，其中，……课由……负责。\n③ 语言点操练\n联系实际，提问操练。\n• 教师：“幽默”来自英语的“humor”，这个词你知道是谁翻译的吗？林语堂。\n学生：“幽默”这个词是由林语堂翻译过来的。\n• 教师：你的父母会让你按照他们的想法选择大学和专业吗？\n学生：选什么样的大学和专业由我自己决定。\n④ 语言点运用\n请学生3～5人一组根据情境完成任务，并向同学汇报。\n“2000级汉语学习班”的同学已经毕业十几年了，今年大家计划安排一次毕业聚会。为了举行这次聚会，需要完成下面几个任务。说说自己可以负责什么任务，并说明原因。\n提示内容：I. 通知老师和同学聚会的时间和地点\nII. 预定（yùdìng，reserve）饭店\nIII. 购买啤酒、葡萄酒、饮料\nIV. 安排房间\nV. 去机场接人\n参考答案：安排聚会地点由……来负责，因为……"
+   },
+   {
+    "title_zh": "3 语言点（4）进行",
+    "body_zh": "① 语言点解析\n“进行”，动词，表示从事某种活动、工作等。多用在双音节动词前边，后边的动词表示的一定是比较正式、严肃的行为，暂时性的日常生活中的行为一般不用。\n② 语言点导入\n利用热身1图片D，联系对话3内容，提问导入。\n• 教师：他们正在做什么？\n学生：他们正在对怎么举办中国传统文化节活动进行讨论。\n• 教师：举办中国传统文化节活动，对留学生有什么好处？\n学生：在中国传统文化节上，留学生们能进行交流，了解各国的文化。\n③ 语言点操练\n联系生活实际，提问操练。\n• 教师：不是所有中国人都能正确使用筷子，大概有多少人不会呢？\n学生：对这个问题，我们需要进行调查。\n• 教师：刚才我们开了一个半小时的会，现在休息半个小时，……\n学生：大家10:00准时回来，会议继续进行。\n④ 语言点运用\n请学生根据提示补全下面的句子，然后朗读，并说明某个词不能用的原因。\n他们正在进行……　I. 吃　II. 讨论　III. 交流　IV. 散步　V. 跑　VI. 商量　VII. 研究\n参考答案：II、III、VII能搭配"
+   },
+   {
+    "title_zh": "3 语言点（5）随着",
+    "body_zh": "① 语言点解析\n“随着”，介词，表示一件事情是另一件事情发生的条件，后面一般是带修饰语的双音节动词。\n② 语言点导入\n联系生活实际，提问导入。\n教师：以前你跟中国人交流时有问题吗？\n学生：以前我跟中国人交流时经常有问题，很多话听不懂。\n教师：你的汉语水平慢慢提高了，现在问题还大吗？\n学生：随着我的汉语水平的提高，现在问题不大了。\n③ 语言点操练\n联系生活实际，引导操练。\n• 教师：中国的经济发展了，学习汉语的人越来越多了。\n学生：随着中国经济的发展，学习汉语的人也越来越多了。\n• 教师：最开始人们觉得茶是药，后来越来越了解茶，现在茶成了饮料。\n学生：随着人们对茶认识的加深，茶慢慢变成了一种饮料。\n④ 语言点运用\n请学生3人一组，根据热身1图片B谈谈互联网给我们生活带来的变化，并请每组派代表总结。"
+   },
+   {
+    "title_zh": "4 课文",
+    "body_zh": "（1）就课文内容，教师将下列问题写在黑板上或用PPT展示（或教师给学生发放问题单）：（见 text_questions）\n（2）要求学生带着问题听两遍录音并回答问题，教师给出答案；\n（3）学生打开课本，教师逐句播放录音，学生看课本听第二次录音并跟读；\n（4）教师领读一遍课文；\n（5）全班一起大声齐读一遍课文；\n（6）请2～3组学生分角色朗读课文，教师正音；\n（7）做以下课文扩展练习：\n对话课文：教师带领学生根据问题单上问题的答案叙述课文内容，并请学生单个复述。\n课文1：小夏的爷爷是京剧演员，年轻时深受观众们的喜爱。他爷爷8岁就开始上台演出，大概唱了60多年，对京剧有很深厚的感情。\n课文2：马克来自美国，他常跟着电视学唱京剧，然后一遍一遍地练习，偶尔跟中国人唱上几句。他有一些音乐基础，对京剧这种表演艺术非常感兴趣，所以学得很快。\n课文3：留学生不了解中国文化，会影响他们与中国人的正常交流，甚至还可能引起误会，带来麻烦，所以李老师想申请举办一次文化活动。李老师上次办的春游活动很有趣，这次文化活动继续由他负责。\n短文课文：请学生根据课文内容，补全下面的语段，并请学生单个复述朗读。\n课文4：国外的一些……（中国餐厅）在放筷子的……（纸袋上）提供筷子的详细说明。有人在互联网上……（进行过调查），结果发现每六个中国人中就有一个使用筷子的方法……（是错误的）。\n课文5：茶开始时被当作……（一种药），随着人们……（对茶的认识的加深），慢慢开始把它当作解渴的饮料。在中国，喝茶是一种……（十分普遍）的生活习惯，喝茶是很多中国人生活中……（不可缺少）的一部分。"
+   },
+   {
+    "title_zh": "5 扩展",
+    "body_zh": "（1）领读“商量、数量、质量”三个同字词，请学生说一说“量”字在词中的位置和意义。“量”的义项：\n① 估计：商量\n② 数量、数目：数量、质量\n（2）请学生说说还有哪些带“量”字的词，教师列在黑板上，如果没有，可补充下列真假同字词，最后请学生判断正误，教师给出正确答案。\n少量　大量　力量　饭量\n量词　酒量　量化　睡量（×）\n（3）请学生完成“选词填空”练习，教师给出答案。\n参考答案：①数量　②质量　③商量"
+   },
+   {
+    "title_zh": "6 补充课堂活动",
+    "body_zh": "请学生4人一组互相介绍自己国家的某个传统文化，并与相关的中国文化对比，比如饮料、戏剧、餐具等方面，最后请每组派一个代表向全班同学介绍本组几个同学国家的传统文化。"
+   },
+   {
+    "title_zh": "7 文化",
+    "body_zh": "教师引导学生了解筷子的功能和使用筷子的礼节，可根据需求和时间安排，进行以下参考活动：\n• 教师利用实物，演示筷子挑、拨、夹、拌、扒5种功能；\n• 请学生逐个随机演示某种功能，另一个学生快速说出，依次进行；\n• 教师演示或播放几种使用筷子的不礼貌行为，请学生说说这几种行为可不可以做，并说明原因。"
+   },
+   {
+    "title_zh": "8 布置作业",
+    "body_zh": "• 每个生词写3遍；\n• 用本课所学的5个语言点分别造一个句子。"
+   }
+  ],
+  "notes_zh": [
+   "比一比：大概—也许——按照教材中的辨析步骤进行。（语言点1）",
+   "“进行”（语言点4 运用）：他们正在进行……　I. 吃　II. 讨论　III. 交流　IV. 散步　V. 跑　VI. 商量　VII. 研究　参考答案：II、III、VII能搭配",
+   "字形辨认：剧—刷　观—戏—欢　遍—篇　偶—遇　尔—你　申—中　续—读　讨—对　联—聪（生词）",
+   "“量”的义项：① 估计：商量　② 数量、数目：数量、质量；真假同字词：少量　大量　力量　饭量　量词　酒量　量化　睡量（×）（扩展）"
+  ],
+  "warmup_answers_zh": [
+   "热身1 答案：①F　②C　③E　④D　⑤A　⑥B",
+   "热身2：教师带领学生了解表格的内容；请学生两人一组，互相提问调查，完成表格；请2～3名学生汇报调查结果。"
+  ],
+  "text_questions": [
+   {
+    "text": 1,
+    "q_zh": "小夏的爷爷京剧唱得怎么样？"
+   },
+   {
+    "text": 1,
+    "q_zh": "小夏的爷爷是什么时候开始唱京剧的？唱了多长时间？"
+   },
+   {
+    "text": 1,
+    "q_zh": "他爷爷喜欢京剧吗？"
+   },
+   {
+    "text": 2,
+    "q_zh": "马克是哪国人？"
+   },
+   {
+    "text": 2,
+    "q_zh": "马克是怎么学习京剧的？"
+   },
+   {
+    "text": 2,
+    "q_zh": "马克为什么能比较容易地学会京剧？"
+   },
+   {
+    "text": 3,
+    "q_zh": "如果留学生不了解中国文化，对他们有什么影响？"
+   },
+   {
+    "text": 3,
+    "q_zh": "为了让留学生了解中国文化，李老师想怎么办？"
+   },
+   {
+    "text": 3,
+    "q_zh": "为什么校长同意继续由李老师负责文化活动？"
+   },
+   {
+    "text": 4,
+    "q_zh": "国外的一些中国餐厅会怎么帮助人们使用筷子？"
+   },
+   {
+    "text": 4,
+    "q_zh": "关于使用筷子的方法，是怎么调查的？"
+   },
+   {
+    "text": 4,
+    "q_zh": "调查结果是什么？"
+   },
+   {
+    "text": 5,
+    "q_zh": "茶以前被当作什么？"
+   },
+   {
+    "text": 5,
+    "q_zh": "后来为什么把茶当作解渴的饮料？"
+   },
+   {
+    "text": 5,
+    "q_zh": "在中国，喝茶的人多吗？"
+   }
+  ]
+ },
+ "workbook": {
+  "ref": {
+   "book": "workbook",
+   "pages": [
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33
+   ]
+  },
+  "sections": [
+   {
+    "n": "一、听力 第一部分",
+    "type_zh": "听力 第一部分",
+    "instruction_zh": "第1–5题：判断对错。",
+    "items": [
+     {
+      "n": "例1",
+      "zh": "★他打算下午去银行。",
+      "transcript_zh": "我想去办个信用卡，今天下午你有时间吗？陪我去一趟银行？",
+      "answer": "✓",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        24
+       ]
+      }
+     },
+     {
+      "n": "例2",
+      "zh": "★他喜欢看电视广告。",
+      "transcript_zh": "现在我很少看电视，其中一个原因是，广告太多了，不管什么时间，也不管什么节目，只要你打开电视，总能看到那么多的广告，浪费我的时间。",
+      "answer": "×",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        24
+       ]
+      }
+     },
+     {
+      "n": 1,
+      "zh": "★演出已经结束了。",
+      "transcript_zh": "虽然演出八点才开始，但是差一刻八点观众就不能进场了，我们还是早点儿去吧。",
+      "answer": "×",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        114
+       ]
+      }
+     },
+     {
+      "n": 2,
+      "zh": "★他介绍得很详细。",
+      "transcript_zh": "由于时间关系，这份材料我就不向大家详细介绍了，我只对其中重要的部分简单说明一下。有什么问题，大家一会儿可以讨论。",
+      "answer": "×",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        114
+       ]
+      }
+     },
+     {
+      "n": 3,
+      "zh": "★他们决定不去植物园了。",
+      "transcript_zh": "我问过大家了，三分之二的同学都去过植物园，所以这次春游得换个地方了。咱们明天开个班会商量一下去哪儿玩儿吧。",
+      "answer": "✓",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        114
+       ]
+      }
+     },
+     {
+      "n": 4,
+      "zh": "★应该总结过去的经验。",
+      "transcript_zh": "回忆过去，有苦也有甜，有伤心、难过，也有幸福、愉快，有很多故事让人难以忘记，有很多经验值得我们总结。",
+      "answer": "✓",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        114
+       ]
+      }
+     },
+     {
+      "n": 5,
+      "zh": "★现在是十点一刻。",
+      "transcript_zh": "大家请注意，现在休息十五分钟，十点半会议继续进行。我们为大家准备了饮料和蛋糕，就在门口的桌子上。",
+      "answer": "✓",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        114
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "一、听力 第二部分",
+    "type_zh": "听力 第二部分",
+    "instruction_zh": "第6–12题：请选出正确答案。",
+    "items": [
+     {
+      "n": "例",
+      "zh": "男的主要是什么意思？",
+      "transcript_zh": "女：该加油了，去机场的路上有加油站吗？ 男：有，你放心吧。 问：男的主要是什么意思？",
+      "options": {
+       "A": "去机场",
+       "B": "快到了",
+       "C": "油是满的",
+       "D": "有加油站"
+      },
+      "answer": "D",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        25
+       ]
+      }
+     },
+     {
+      "n": 6,
+      "zh": "关于那个电视节目，可以知道什么？",
+      "options": {
+       "A": "值得去看",
+       "B": "没有观众",
+       "C": "没什么意思",
+       "D": "越来越有趣"
+      },
+      "transcript_zh": "男：我觉得这个节目越来越无聊了。 女：是啊，前几期还可以，现在看的人也越来越少了。 问：关于那个电视节目，可以知道什么？",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        114
+       ]
+      }
+     },
+     {
+      "n": 7,
+      "zh": "女的怎么了？",
+      "options": {
+       "A": "饿了",
+       "B": "感冒了",
+       "C": "害怕了",
+       "D": "去医院了"
+      },
+      "transcript_zh": "男：怎么了？身体不舒服吗？去医院看看吧。 女：我只是感冒，头稍微有点儿疼，不严重，休息休息就好了。 问：女的怎么了？",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        114
+       ]
+      }
+     },
+     {
+      "n": 8,
+      "zh": "女的觉得那本小说怎么样？",
+      "options": {
+       "A": "很无聊",
+       "B": "很有趣",
+       "C": "很有名",
+       "D": "很流行"
+      },
+      "transcript_zh": "男：这本小说有四百多页，你竟然一天就看完了？ 女：这书虽然厚，但写得很有趣，所以看起来很快。 问：女的觉得那本小说怎么样？",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        114
+       ]
+      }
+     },
+     {
+      "n": 9,
+      "zh": "他们准备什么时候告诉他好消息？",
+      "options": {
+       "A": "明天",
+       "B": "下周日",
+       "C": "过完生日",
+       "D": "现在"
+      },
+      "transcript_zh": "男：下个礼拜天是他的生日，那时候再把这个好消息告诉他不是更好？ 女：好主意，到时他知道了肯定特别开心。 问：他们准备什么时候告诉他好消息？",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        114
+       ]
+      }
+     },
+     {
+      "n": 10,
+      "zh": "关于这次活动，女的想知道什么？",
+      "options": {
+       "A": "时间",
+       "B": "地方",
+       "C": "演员",
+       "D": "节目"
+      },
+      "transcript_zh": "女：听说这次公司举办的活动会邀请许多著名的演员来表演，是真的吗？都有谁呢？ 男：我只知道下周还是在会议中心举行，这次活动是小张负责的，你可以去问问他。 问：关于这次活动，女的想知道什么？",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        114
+       ]
+      }
+     },
+     {
+      "n": 11,
+      "zh": "他们要去谁家做客？",
+      "options": {
+       "A": "孙叔叔",
+       "B": "邻居",
+       "C": "王阿姨",
+       "D": "李大夫"
+      },
+      "transcript_zh": "男：孙叔叔邀请我们去他家做客，我们带点儿什么礼物好呢？ 女：我记得他和邻居王阿姨、李大夫一样，最爱喝茶了，我们去买点儿绿茶吧。 问：他们要去谁家做客？",
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        114
+       ]
+      }
+     },
+     {
+      "n": 12,
+      "zh": "根据对话，男的：",
+      "options": {
+       "A": "正在开会",
+       "B": "来自上海",
+       "C": "比较满意",
+       "D": "还在旅游"
+      },
+      "transcript_zh": "女：王校长，这次去上海开会一切都顺利吧？ 男：会议进行得很顺利，来自全国各地的人特别多，但安排得很好，这次我还顺便在上海玩儿了两天。 问：根据对话，男的：",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        114
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "一、听力 第三部分",
+    "type_zh": "听力 第三部分",
+    "instruction_zh": "第13–22题：请选出正确答案。",
+    "items": [
+     {
+      "n": "例",
+      "zh": "会议几点开始？",
+      "transcript_zh": "男：把这个材料复印5份，一会儿拿到会议室发给大家。 女：好的。会议是下午三点吗？ 男：改了。三点半，推迟了半个小时。 女：好，602会议室没变吧？ 男：对，没变。 问：会议几点开始？",
+      "options": {
+       "A": "两点",
+       "B": "3点",
+       "C": "15：30",
+       "D": "18：00"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        26
+       ]
+      }
+     },
+     {
+      "n": 13,
+      "zh": "他们现在最可能在哪儿？",
+      "options": {
+       "A": "宾馆",
+       "B": "公司",
+       "C": "教室",
+       "D": "公园"
+      },
+      "transcript_zh": "女：先生，给您，您的房间在六零二。 男：谢谢。请问附近有银行吗？ 女：有一个银行，您出门向右走大约五百米就能看到，就在路北边。 男：好，谢谢你。 问：他们现在最可能在哪儿？",
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        114
+       ]
+      }
+     },
+     {
+      "n": 14,
+      "zh": "他们在谈什么？",
+      "options": {
+       "A": "心情",
+       "B": "计划",
+       "C": "演出",
+       "D": "演员"
+      },
+      "transcript_zh": "女：你们的表演精彩极了！ 男：真的吗？当时我们别提多紧张了。 女：你们表演完很多观众都高兴地站起来为你们叫好呢。 男：谢谢您的支持。 问：他们在谈什么？",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        114
+       ]
+      }
+     },
+     {
+      "n": 15,
+      "zh": "关于男的，下列哪个正确？",
+      "options": {
+       "A": "生病了",
+       "B": "不常运动",
+       "C": "想喝水",
+       "D": "力气不大"
+      },
+      "transcript_zh": "男：咱们在这儿稍微休息一下吧，我没力气爬了。 女：一看就知道你不经常锻炼。 男：是啊，我好久没运动了。 女：那你先坐会儿，我去那边买两瓶水。 问：关于男的，下列哪个正确？",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        114
+       ]
+      }
+     },
+     {
+      "n": 16,
+      "zh": "他们准备安排学生做什么？",
+      "options": {
+       "A": "听音乐会",
+       "B": "看京剧",
+       "C": "去交流处",
+       "D": "看王老师"
+      },
+      "transcript_zh": "男：这次一共有多少个学生去听音乐会？ 女：和上次看京剧的人差不多，大约二十个。 男：好的，这次谁跟着去？ 女：我和国际交流处的王老师一块儿去。 问：他们准备安排学生做什么？",
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        114
+       ]
+      }
+     },
+     {
+      "n": 17,
+      "zh": "他们在哪儿见面？",
+      "options": {
+       "A": "图书馆里",
+       "B": "地铁站口",
+       "C": "图书馆门口",
+       "D": "地铁上"
+      },
+      "transcript_zh": "女：喂，我到国家图书馆了，你在哪儿？ 男：我还在地铁里，大概十分钟就到了。 女：好，你到了就从西北口出来吧，我在那儿等你。 男：好的，一会儿见。 问：他们在哪儿见面？",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        114
+       ]
+      }
+     },
+     {
+      "n": 18,
+      "zh": "关于男的，下列哪个不正确？",
+      "options": {
+       "A": "爱喝茶",
+       "B": "喜欢京剧",
+       "C": "会唱京剧",
+       "D": "是中国人"
+      },
+      "transcript_zh": "女：你对我们国家的文化了解多少？ 男：我喜欢喝中国茶，还爱听京剧，我觉得京剧很有特点。 女：你还喜欢京剧啊？ 男：你不相信吗？我不仅喜欢，还能唱上几句呢。 问：关于男的，下列哪个不正确？",
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        114
+       ]
+      }
+     },
+     {
+      "n": 19,
+      "zh": "看到筷子的使用说明，说话人感觉怎么样？",
+      "options": {
+       "A": "高兴",
+       "B": "新鲜",
+       "C": "感动",
+       "D": "无聊"
+      },
+      "transcript_zh": "第19到20题是根据下面一段话： 我在国外留学时，有一次在一家中国饭馆儿吃饭，看到放筷子的纸袋上提供了使用筷子的详细说明。头一次看见关于筷子的使用说明，让我觉得非常新鲜。因为对中国人来说，使用筷子实在是再熟悉不过的事了。 19. 看到筷子的使用说明，说话人感觉怎么样？",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        114
+       ]
+      }
+     },
+     {
+      "n": 20,
+      "zh": "关于说话人，可以知道什么？",
+      "options": {
+       "A": "在饭馆儿工作",
+       "B": "是中国人",
+       "C": "不会用筷子",
+       "D": "看不懂说明"
+      },
+      "transcript_zh": "第19到20题是根据下面一段话： 我在国外留学时，有一次在一家中国饭馆儿吃饭，看到放筷子的纸袋上提供了使用筷子的详细说明。头一次看见关于筷子的使用说明，让我觉得非常新鲜。因为对中国人来说，使用筷子实在是再熟悉不过的事了。 20. 关于说话人，可以知道什么？",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        114
+       ]
+      }
+     },
+     {
+      "n": 21,
+      "zh": "长大以后，人们会发现生活怎么样？",
+      "options": {
+       "A": "应该长远考虑",
+       "B": "要做详细计划",
+       "C": "总在不停变化",
+       "D": "不会顺利进行"
+      },
+      "transcript_zh": "第21到22题是根据下面一段话： 有些人喜欢为自己的生活做长远的计划。但是，随着一天一天地长大，我们会发现生活总是在不停地变化，生活往往不会按照定好的计划来进行。因此，光有计划还不够，还需要我们能及时地做出改变。只有这样，才能更好地适应生活。 21. 长大以后，人们会发现生活怎么样？",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        114
+       ]
+      }
+     },
+     {
+      "n": 22,
+      "zh": "怎样才能更好地适应生活？",
+      "options": {
+       "A": "坚持以前的看法",
+       "B": "回忆原来的事情",
+       "C": "做出长远计划",
+       "D": "改变旧的计划"
+      },
+      "transcript_zh": "第21到22题是根据下面一段话： 有些人喜欢为自己的生活做长远的计划。但是，随着一天一天地长大，我们会发现生活总是在不停地变化，生活往往不会按照定好的计划来进行。因此，光有计划还不够，还需要我们能及时地做出改变。只有这样，才能更好地适应生活。 22. 怎样才能更好地适应生活？",
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        114
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第一部分（23–26）",
+    "type_zh": "阅读 第一部分",
+    "instruction_zh": "第23–26题：选词填空。",
+    "word_bank": [
+     [
+      "A 偶尔",
+      "B 进行",
+      "C 部分",
+      "D 坚持",
+      "E 吃惊"
+     ]
+    ],
+    "items": [
+     {
+      "n": "例",
+      "zh": "她每天都（　）走路上下班，所以身体一直很不错。",
+      "options": {
+       "A": "偶尔",
+       "B": "进行",
+       "C": "部分",
+       "D": "坚持",
+       "E": "吃惊"
+      },
+      "answer": "D",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        27
+       ]
+      }
+     },
+     {
+      "n": 23,
+      "zh": "那部小说中提到的故事，大（　）都是作者自己经历过的。",
+      "options": {
+       "A": "偶尔",
+       "B": "进行",
+       "C": "部分",
+       "D": "坚持",
+       "E": "吃惊"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        114
+       ]
+      }
+     },
+     {
+      "n": 24,
+      "zh": "除了星期天外，小李大部分时间都在教室学习，（　）也去图书馆看看书。",
+      "options": {
+       "A": "偶尔",
+       "B": "进行",
+       "C": "部分",
+       "D": "坚持",
+       "E": "吃惊"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        114
+       ]
+      }
+     },
+     {
+      "n": 25,
+      "zh": "她去参加比赛，本来只是想去试试，没想到竟然得了第一名，这让大家非常（　）。",
+      "options": {
+       "A": "偶尔",
+       "B": "进行",
+       "C": "部分",
+       "D": "坚持",
+       "E": "吃惊"
+      },
+      "answer": "E",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        114
+       ]
+      }
+     },
+     {
+      "n": 26,
+      "zh": "成功的语言学习者，在学习方面往往都比较积极，他们愿意与他人（　）交流，并且请别人帮助他们改错。",
+      "options": {
+       "A": "偶尔",
+       "B": "进行",
+       "C": "部分",
+       "D": "坚持",
+       "E": "吃惊"
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        114
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第一部分（27–30）",
+    "type_zh": "阅读 第一部分",
+    "instruction_zh": "第27–30题：选词填空。",
+    "word_bank": [
+     [
+      "A 餐厅",
+      "B 稍微",
+      "C 温度",
+      "D 申请",
+      "E 大概"
+     ]
+    ],
+    "items": [
+     {
+      "n": "例",
+      "zh": "A：今天真冷啊，好像白天最高（　）才2℃。 B：刚才电视里说明天更冷。",
+      "options": {
+       "A": "餐厅",
+       "B": "稍微",
+       "C": "温度",
+       "D": "申请",
+       "E": "大概"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        28
+       ]
+      }
+     },
+     {
+      "n": 27,
+      "zh": "A：小云，你今年夏天就要毕业了，找到工作了吗？ B：没有，我已经（　）了奖学金，打算出国读硕士。",
+      "options": {
+       "A": "餐厅",
+       "B": "稍微",
+       "C": "温度",
+       "D": "申请",
+       "E": "大概"
+      },
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        114
+       ]
+      }
+     },
+     {
+      "n": 28,
+      "zh": "A：这次放假，你打算去三亚多长时间？ B：（　）两个星期吧，估计月底就能回来。",
+      "options": {
+       "A": "餐厅",
+       "B": "稍微",
+       "C": "温度",
+       "D": "申请",
+       "E": "大概"
+      },
+      "answer": "E",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        114
+       ]
+      }
+     },
+     {
+      "n": 29,
+      "zh": "A：刚才在（　）和你说话的那个女孩儿是谁？ B：小李啊，新来的同事。新年晚会上我们俩一起表演的节目。",
+      "options": {
+       "A": "餐厅",
+       "B": "稍微",
+       "C": "温度",
+       "D": "申请",
+       "E": "大概"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        114
+       ]
+      }
+     },
+     {
+      "n": 30,
+      "zh": "A：下午交工作总结，你写好了没有？ B：差不多了，有几个地方我还要（　）改一下。",
+      "options": {
+       "A": "餐厅",
+       "B": "稍微",
+       "C": "温度",
+       "D": "申请",
+       "E": "大概"
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        114
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第二部分",
+    "type_zh": "阅读 第二部分",
+    "instruction_zh": "第31–34题：排列顺序。",
+    "items": [
+     {
+      "n": "例",
+      "zh": "",
+      "options": {
+       "A": "可是今天起晚了",
+       "B": "平时我骑自行车上下班",
+       "C": "所以就打车来公司"
+      },
+      "answer": "BAC",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        29
+       ]
+      }
+     },
+     {
+      "n": 31,
+      "zh": "",
+      "options": {
+       "A": "写得特别详细，而且十分有趣",
+       "B": "这本杂志介绍了中国很多著名的景点",
+       "C": "其中介绍黄河的那一篇"
+      },
+      "answer": "BCA",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        114
+       ]
+      }
+     },
+     {
+      "n": 32,
+      "zh": "",
+      "options": {
+       "A": "随着科技的发展，人与人的联系越来越方便",
+       "B": "上网发电子邮件越来越普遍",
+       "C": "相反，写信的人变得越来越少了"
+      },
+      "answer": "ABC",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        114
+       ]
+      }
+     },
+     {
+      "n": 33,
+      "zh": "",
+      "options": {
+       "A": "不仅内容十分丰富",
+       "B": "观众普遍认为这部电影不错",
+       "C": "演员们演得也非常好"
+      },
+      "answer": "BAC",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        114
+       ]
+      }
+     },
+     {
+      "n": 34,
+      "zh": "",
+      "options": {
+       "A": "上次的春游活动小夏组织得不错",
+       "B": "这次还是由她来负责安排吧",
+       "C": "大家都玩儿得很高兴"
+      },
+      "answer": "ACB",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        114
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第三部分",
+    "type_zh": "阅读 第三部分",
+    "instruction_zh": "第35–43题：请选出正确答案。",
+    "items": [
+     {
+      "n": "例",
+      "zh": "她很活泼，说话很有趣，总能给我们带来快乐，我们都很喜欢和她在一起。 ★她是个什么样的人？",
+      "options": {
+       "A": "幽默",
+       "B": "马虎",
+       "C": "骄傲",
+       "D": "害羞"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        30
+       ]
+      }
+     },
+     {
+      "n": 35,
+      "zh": "我们对失败应该有正确的认识。偶尔的失败其实可以让我们清楚自己还有什么地方需要提高，这可以帮助我们走向最后的成功。 ★“这”指的是：",
+      "options": {
+       "A": "仔细考虑",
+       "B": "积极参加",
+       "C": "失败结果",
+       "D": "正确认识"
+      },
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        114
+       ]
+      }
+     },
+     {
+      "n": 36,
+      "zh": "我来北京以前，已经学过一段时间汉语。所以，对我来说，一年级的汉语课，听和说很容易，只是写汉字有点儿难，需要多练习几遍。 ★关于他，可以知道什么？",
+      "options": {
+       "A": "是北京人",
+       "B": "学过汉语",
+       "C": "是汉语老师",
+       "D": "不会说中文"
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        114
+       ]
+      }
+     },
+     {
+      "n": 37,
+      "zh": "研究发现，有些吃的或喝的，如牛奶和香蕉，可以帮助入睡。而有些东西，如咖啡、茶，容易使人兴奋，影响正常的休息。 ★根据这段话，喝什么会让人兴奋？",
+      "options": {
+       "A": "咖啡",
+       "B": "牛奶",
+       "C": "果汁",
+       "D": "啤酒"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        114
+       ]
+      }
+     },
+     {
+      "n": 38,
+      "zh": "正式的邀请信当然要由举办者写，信中首先要说明活动的详细内容，然后要对被邀请的人的能力表示肯定，并说明他们被邀请参加活动的原因，最后希望他们能够参加。 ★关于邀请信，可以知道：",
+      "options": {
+       "A": "邀请效果很好",
+       "B": "不用写得太详细",
+       "C": "请专门的公司写",
+       "D": "要肯定被邀请人"
+      },
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        114
+       ]
+      }
+     },
+     {
+      "n": 39,
+      "zh": "一些电影院不让观众自己带吃的、饮料，人们不得不买电影院卖的东西。很多观众对这种做法很不满意，因为电影院的东西特别贵，大约比超市贵三倍。 ★观众对什么不满意？",
+      "options": {
+       "A": "票价高",
+       "B": "座位少",
+       "C": "东西太贵",
+       "D": "电影不精彩"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        114
+       ]
+      }
+     },
+     {
+      "n": 40,
+      "zh": "（40–41）在很多人看来，听流行音乐仅仅是年轻人的爱好，京剧、老歌才是老年人的最爱。其实，听听流行音乐对老年人也是很有好处的。流行音乐有很多种，老年人只要选择适合自己的，一样可以心情愉快，还能拉近和年轻人之间的距离。 ★根据这段话，人们一般认为老年人喜欢：",
+      "options": {
+       "A": "开玩笑",
+       "B": "流行音乐",
+       "C": "听过去的歌",
+       "D": "跟朋友见面"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        114
+       ]
+      }
+     },
+     {
+      "n": 41,
+      "zh": "（40–41）在很多人看来，听流行音乐仅仅是年轻人的爱好，京剧、老歌才是老年人的最爱。其实，听听流行音乐对老年人也是很有好处的。流行音乐有很多种，老年人只要选择适合自己的，一样可以心情愉快，还能拉近和年轻人之间的距离。 ★关于流行音乐，可以知道什么？",
+      "options": {
+       "A": "比京剧精彩",
+       "B": "让人变浪漫",
+       "C": "不适合老人",
+       "D": "有许多好处"
+      },
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        114
+       ]
+      }
+     },
+     {
+      "n": 42,
+      "zh": "（42–43）世界上第一部无声电影出现的时候，吸引了成千上万的观众。有个女观众看到电影中有一辆马车向自己跑过来，害怕得马上跑得远远的，直到那辆马车在画面中不见了，她才坐回来。有的观众看到电影里下雨的画面，把自己的雨伞也打了起来。现在我们都觉得挺好笑的，但是看电影在当时确实是个新鲜事儿。 ★世界上第一部无声电影：",
+      "options": {
+       "A": "很幽默",
+       "B": "不成功",
+       "C": "观众很多",
+       "D": "内容复杂"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        114
+       ]
+      }
+     },
+     {
+      "n": 43,
+      "zh": "（42–43）世界上第一部无声电影出现的时候，吸引了成千上万的观众。有个女观众看到电影中有一辆马车向自己跑过来，害怕得马上跑得远远的，直到那辆马车在画面中不见了，她才坐回来。有的观众看到电影里下雨的画面，把自己的雨伞也打了起来。现在我们都觉得挺好笑的，但是看电影在当时确实是个新鲜事儿。 ★那些观众看电影时为什么要打伞？",
+      "options": {
+       "A": "误会了",
+       "B": "下雨了",
+       "C": "风太大",
+       "D": "害怕马车"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        114
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "三、书写 第一部分",
+    "type_zh": "书写 第一部分",
+    "instruction_zh": "第44–48题：完成句子。",
+    "items": [
+     {
+      "n": "例",
+      "zh": "那座桥　800年的　历史　有　了",
+      "answer": "那座桥有800年的历史了。",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        32
+       ]
+      }
+     },
+     {
+      "n": 44,
+      "zh": "那本　内容　杂志　丰富　十分　的",
+      "answer": "那本杂志的内容十分丰富。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        114
+       ]
+      }
+     },
+     {
+      "n": 45,
+      "zh": "了　出去　申请材料　寄　吗　你的",
+      "answer": "你的申请材料寄出去了吗？",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        114
+       ]
+      }
+     },
+     {
+      "n": 46,
+      "zh": "演员　最　是　有名的　20世纪　他",
+      "answer": "他是20世纪最有名的演员。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        114
+       ]
+      }
+     },
+     {
+      "n": 47,
+      "zh": "的问题　超出　了　他说　讨论的　内容",
+      "answer": "他说的问题超出了讨论的内容。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        114
+       ]
+      }
+     },
+     {
+      "n": 48,
+      "zh": "又　正常工作　电脑　能　终于　了",
+      "answer": "电脑终于又能正常工作了。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        114
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "三、书写 第二部分",
+    "type_zh": "书写 第二部分",
+    "instruction_zh": "第49–50题：看图，用词造句。",
+    "items": [
+     {
+      "n": "例",
+      "zh": "乒乓球",
+      "picture_desc_en": "A young woman holding a table-tennis paddle, about to serve a ball.",
+      "answer": "她很喜欢打乒乓球。",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        33
+       ]
+      }
+     },
+     {
+      "n": 49,
+      "zh": "演员",
+      "picture_desc_en": "Two performers in Chinese opera costume and headdresses with stage makeup.",
+      "answer": "他们俩是中国著名的京剧演员，很多观众都非常喜欢他们。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        114
+       ]
+      }
+     },
+     {
+      "n": 50,
+      "zh": "错误",
+      "picture_desc_en": "A hand holding a pencil over four empty answer boxes, with a thought bubble containing a cross (×) and a tick (✓).",
+      "answer": "这个题要求我们判断是正确还是错误。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        114
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "answers_ref": {
+   "book": "teacher",
+   "pages": [
+    112,
+    113,
+    114
+   ]
+  }
+ },
+ "unclear": [
+  "Аудио файлын нэр мэдэгдэхгүй тул audio талбар орхисон. Сурах бичгийн CD тэмдэг: 课文1–5 = 13-1…13-5; дасгалын номын 听力 хэсгүүдэд мөн CD тэмдэг (13-x) хэвлэгдсэн.",
+  "课文1 эхний мөр: хятад бичвэрт «我还以为他是京剧演员呢», харин 拼音课文-д «hái yǐwéi tā shì…» (wǒ байхгүй) — номын зөрүү, номд байгаагаар хоёуланг нь үлдээсэн.",
+  "生词 22: «纸袋 zhǐdài n. paper bag» ба доор нь дугааргүй дэд мөр «袋(子) dài(zi) n. bag, sack» — схем n шаарддаг тул хоёуланд нь n=22 өгсөн (дугаар давхардсан нь номын бүтцээс).",
+  "Хичээлийн гарчгийн пиньинь номд «Hēzhe  chá kàn  jīngjù» гэж ханз бүрийн дээр тархсан; title_pinyin-д зайг нэгтгэн бичсэн.",
+  "注释1 比一比 大概—也许: номд утга заахдаа ★ тэмдэг ашигласан («表示★这个意思时»), ★-ын тайлбар өөрөө хэвлэгдээгүй — номд байгаагаар ★ хэвээр үлдээсэн. 比一比-ийн жишээ өгүүлбэрүүдийг examples-д note_zh-тэйгээр оруулсан.",
+  "注释1 比一比 做一做 «选词填空 Tick or cross»: (1) 大概✓ 也许✓, (2) 大概× 也许✓ — номд жишээ болгон хэвлэгдсэн; (3)–(5)-ын хариулт сурах бичиг, багшийн номд хэвлэгдээгүй (багшийн ном: «按照教材中的辨析步骤进行»).",
+  "Сурах бичгийн 练一练 (5 注释: 大概3, 偶尔3, 由3, 进行3, 随着3), 根据课文内容回答问题 (课文1–3 — 6, 课文4–5 — 4), 练习1 复述, 练习2 选词填空 (10) — хариулт хэвлэгдээгүй тул answer талбаргүй. Зөвхөн 扩展 做一做-ийн хариулт багшийн номд (PDF х.35) бий.",
+  "Сурах бичгийн 根据课文内容回答问题 хоёр хэсэг дугааргүй — exercises-д «课文1–3 回答问题», «课文4–5 回答问题» гэж нэрлэсэн; 比一比-ийн 做一做 ба 扩展-ийн 做一做-г мөн exercises-д оруулсан. 扩展 同字词 (量：商量、数量、质量)-ийг textbook.characters-д оруулсан.",
+  "热身2 — хүснэгт (衣服/动作/音乐/故事 × 3 мөр, сонгох нүдтэй) — warmup.items-д мөр мөрөөр, ханзын дээрх пиньинийг хаалтад оруулсан.",
+  "课文4 ба 课文5 — гарчиггүй 短文 — мөр (lines)-ийг өгүүлбэрээр хуваасан (номд нэг догол мөр).",
+  "拼音课文-ын гарчгийн пиньинь (Xiǎoyǔ hé Xiǎo Xià zài liáo Xiǎo Xià de yéye biǎoyǎn jīngjù de qíngkuàng / Xiǎoyǔ hé Mǎkè zài liáo jīngjù / Lǐ lǎoshī hé xiàozhǎng zài tán gōngzuò) ба ярилцагчийн нэрийн пиньинь (Xiǎoyǔ, Xiǎo Xià, Mǎkè, Lǐ lǎoshī, Xiàozhǎng) схемд талбаргүй тул lines.pinyin-д зөвхөн яриаг оруулсан.",
+  "课文5-ын 拼音课文: «“liángchá ”» (хаах хашилтын өмнө зай) — номд байгаагаар.",
+  "Багшийн ном 课文扩展练习 课文4: «提供筷子的详细说明» (сурах бичиг: «提供使用筷子的详细说明») — номд байгаагаар.",
+  "Багшийн номын 课文 асуултууд (text_questions)-ын хариулт тус бүрчлэн хэвлэгдээгүй («教师给出答案»); оронд нь 课文扩展练习-ын复述 догол мөрүүд (teacher.steps «4 课文») хэвлэгдсэн. 课文1-ийн багшийн асуултууд сурах бичгийнхээс ялгаатай.",
+  "Багшийн ном 教学目标: «掌握本课32个四级大纲词汇» — 生词 32 (дугаартай), * тэмдэгтэй үг байхгүй; 专有名词: 广东省.",
+  "Дасгалын ном 听力 第二/三部分 — номд зөвхөн сонголтууд хэвлэгдсэн; item.zh-д багшийн номын хавсралтын «问：» асуултыг (19–22-т дугаартай асуултыг) оруулсан, transcript_zh-д бүтнээр (PDF х.112–114). 听力 第一部分-д жишээ 2 (✓ ба ×) байгаа тул «例1», «例2».",
+  "Дасгалын ном 阅读 第二部分 (31–34 排列顺序)-ийн item.zh хоосон, хэсгүүд options (A/B/C)-д. 40–41, 42–43 нийтлэг бичвэрийг item бүрийн zh-д давтан оруулсан.",
+  "Дасгалын ном 书写 44–50-ын хариулт багшийн номын хавсралтад «参考答案» гэж хэвлэгдсэн; 49 (演员), 50 (错误) — 看图，用词造句 нээлттэй даалгавар тул хариулт нь зөвхөн жишээ; picture_desc_en нь зургаас.",
+  "Дасгалын номд 复习 хэсэг байхгүй (HSK4: 听力 3 хэсэг, 阅读 3 хэсэг, 书写 2 хэсэг, нийт 50 асуулт)."
+ ],
+ "verified_pages": [
+  24,
+  25,
+  26,
+  27,
+  28,
+  29,
+  30,
+  31,
+  32,
+  33,
+  34,
+  35,
+  41,
+  42,
+  43,
+  44,
+  45,
+  46,
+  47,
+  48,
+  49,
+  50,
+  51,
+  52,
+  53,
+  54,
+  112,
+  113,
+  114
+ ],
+ "schema_version": 1
+}

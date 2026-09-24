@@ -1,0 +1,2261 @@
+{
+ "level": "hsk4",
+ "lesson": 20,
+ "book": "HSK4B",
+ "title_zh": "路上的风景",
+ "title_pinyin": "Lù shang de fēngjǐng",
+ "title_en": "The view along the way",
+ "textbook": {
+  "ref": {
+   "book": "textbook",
+   "pages": [
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153
+   ]
+  },
+  "warmup": [
+   {
+    "instruction_zh": "给下面的词语选择对应的图片，并用这个词语根据图片说一个句子。",
+    "instruction_en": "Match the pictures with the words and describe the pictures with sentences using the words.",
+    "items": [
+     "①收拾 shōushi",
+     "②小吃 xiǎochī",
+     "③烤鸭 kǎoyā",
+     "④加油站 jiāyóuzhàn",
+     "⑤高速公路 gāosù gōnglù",
+     "⑥干杯 gān bēi"
+    ],
+    "pictures_desc_en": [
+     "A: a multi-lane expressway stretching into the distance between trees and hills",
+     "B: a Sinopec (中国石化) gas station with a red canopy",
+     "C: roast ducks hanging in a brick oven over a wood fire",
+     "D: several hands clinking glasses of beer over a table",
+     "E: a hotel attendant bending over to tidy a bed in a hotel room, a yellow caution sign on the floor",
+     "F: bamboo steamers filled with dumplings and buns"
+    ]
+   },
+   {
+    "instruction_zh": "你认为理想的旅行方式是什么样的？为什么？",
+    "instruction_en": "Which way(s) of travelling do you think is/are the idealest? Why?",
+    "items": [
+     "表格：| 跟谁一起 | 旅行方式 | 出发时间 | 旅行内容 | 多长时间 |",
+     "| 普通朋友□ | 开车□ | 一放假就出发□ | 自然风景□ | 三四天□ |",
+     "| 你爱的人□ | 坐飞机□ | 心情不好时□ | 历史文化□ | 一个星期左右□ |",
+     "| 家人□ | 坐火车□ | 有了足够的钱□ | 城市生活□ | 大概一个月□ |",
+     "| 自己□ | 走路□ | 父母同意时□ | 美食小吃□ | 想去多久就多久□ |"
+    ]
+   }
+  ],
+  "texts": [
+   {
+    "n": 1,
+    "title_zh": "小张去北京，朋友送小张去机场",
+    "kind": "dialogue",
+    "lines": [
+     {
+      "speaker": "朋友",
+      "zh": "该加油了，去机场的路上有加油站吗？",
+      "pinyin": "Gāi jiā yóu le, qù jīchǎng de lùshang yǒu jiāyóuzhàn ma?"
+     },
+     {
+      "speaker": "小张",
+      "zh": "我记得过了长江大桥往右一拐就有一个，大概有四五公里远。",
+      "pinyin": "Wǒ jìde guòle Chángjiāng Dàqiáo wǎng yòu yì guǎi jiù yǒu yí ge, dàgài yǒu sì-wǔ gōnglǐ yuǎn."
+     },
+     {
+      "speaker": "朋友",
+      "zh": "好，那我就放心了，别开着开着没油了。你去北京的航班是几点的？时间来得及吗？",
+      "pinyin": "Hǎo, nà wǒ jiù fàng xīn le, bié kāizhe kāizhe méi yóu le. Nǐ qù Běijīng de hángbān shì jǐ diǎn de? Shíjiān láidejí ma?"
+     },
+     {
+      "speaker": "小张",
+      "zh": "航班本来是十点的，后来机场网站上通知推迟了一个小时，所以九点半以前到就应该没问题。",
+      "pinyin": "Hángbān běnlái shì shí diǎn de, hòulái jīchǎng wǎngzhàn shang tōngzhī tuīchíle yí ge xiǎoshí, suǒyǐ jiǔ diǎn bàn dào jiù yīnggāi méi wèntí."
+     },
+     {
+      "speaker": "朋友",
+      "zh": "刚才我还有点儿担心来不及呢。一会儿加完油，往西走五百米就能上高速公路。走高速公路大约半个小时就到了。",
+      "pinyin": "Gāngcái wǒ hái yǒudiǎnr dānxīn láibují ne. Yíhuìr jiāwán yóu, wǎng xī zǒu wǔbǎi mǐ jiù néng shàng gāosù gōnglù. Zǒu gāosù gōnglù dàyuē bàn ge xiǎoshí jiù dào le."
+     },
+     {
+      "speaker": "小张",
+      "zh": "一会儿我自己进去换登机牌，你就不用送我了，等我到了首都机场再给你发短信。",
+      "pinyin": "Yíhuìr wǒ zìjǐ jìnqu huàn dēngjīpái, nǐ jiù búyòng sòng wǒ le, děng wǒ dàole Shǒudū Jīchǎng zài gěi nǐ fā duǎnxìn."
+     }
+    ],
+    "new_words": [
+     {
+      "n": 1,
+      "zh": "加油站",
+      "pinyin": "jiāyóuzhàn",
+      "pos": "n.",
+      "en": "gas station",
+      "text": 1
+     },
+     {
+      "n": 2,
+      "zh": "航班",
+      "pinyin": "hángbān",
+      "pos": "n.",
+      "en": "scheduled flight",
+      "text": 1
+     },
+     {
+      "n": 3,
+      "zh": "推迟",
+      "pinyin": "tuīchí",
+      "pos": "v.",
+      "en": "to postpone, to delay",
+      "text": 1
+     },
+     {
+      "n": 4,
+      "zh": "高速公路",
+      "pinyin": "gāosù gōnglù",
+      "en": "expressway",
+      "text": 1
+     },
+     {
+      "n": 5,
+      "zh": "登机牌",
+      "pinyin": "dēngjīpái",
+      "pos": "n.",
+      "en": "boarding pass",
+      "text": 1
+     },
+     {
+      "n": 6,
+      "zh": "首都",
+      "pinyin": "shǒudū",
+      "pos": "n.",
+      "en": "capital (of a country)",
+      "text": 1
+     }
+    ],
+    "proper_nouns": [
+     {
+      "zh": "长江",
+      "pinyin": "Chángjiāng",
+      "en": "Yangtze River, the longest river in China"
+     },
+     {
+      "zh": "长江大桥",
+      "pinyin": "Chángjiāng Dàqiáo",
+      "en": "Yangtze River Bridge (in Nanjing)"
+     },
+     {
+      "zh": "首都机场",
+      "pinyin": "Shǒudū Jīchǎng",
+      "en": "Beijing Capital International Airport"
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "title_zh": "孙月和丈夫计划放寒假带女儿去旅行",
+    "kind": "dialogue",
+    "lines": [
+     {
+      "speaker": "孙月",
+      "zh": "女儿下个星期就要放寒假了，到时候咱们带她去旅游，放松放松，怎么样？",
+      "pinyin": "Nǚ'ér xià ge xīngqī jiù yào fàng hánjià le, dào shíhòu zánmen dài tā qù lǚyóu, fàngsōng fàngsōng, zěnmeyàng?"
+     },
+     {
+      "speaker": "丈夫",
+      "zh": "平时女儿那么多课，总是说想去旅行，但是没时间，怪可怜的。这次放假咱们带她去哪儿玩儿比较好呢？",
+      "pinyin": "Píngshí nǚ'ér nàme duō kè, zǒngshì shuō xiǎng qù lǚxíng, dànshì méi shíjiān, guài kělián de. Zhè cì fàng jià zánmen dài tā qù nǎr wánr bǐjiào hǎo ne?"
+     },
+     {
+      "speaker": "孙月",
+      "zh": "去年我同事带她儿子去广西玩儿了一趟，听说很不错，我们就去广西吧。",
+      "pinyin": "Qùnián wǒ tóngshì dài tā érzi qù Guǎngxī wánrle yí tàng, tīngshuō hěn búcuò, wǒmen jiù qù Guǎngxī ba."
+     },
+     {
+      "speaker": "丈夫",
+      "zh": "好啊，那里的气候和北方很不同，即使是冬天，也非常暖和，还能吃到许多新鲜的水果。等女儿一回来我就告诉她这个好消息。",
+      "pinyin": "Hǎo a, nàli de qìhòu hé běifāng hěn bù tóng, jíshǐ shì dōngtiān, yě fēicháng nuǎnhuo, hái néng chīdào xǔduō xīnxiān de shuǐguǒ. Děng nǚ'ér yì huílai wǒ jiù gàosu tā zhège hǎo xiāoxi."
+     },
+     {
+      "speaker": "孙月",
+      "zh": "先别着急说。中午我们不是要去对面的饭店吃烤鸭，祝贺她考试成绩都合格吗？那时候再告诉她，不是更好？",
+      "pinyin": "Xiān bié zháojí shuō. Zhōngwǔ wǒmen bú shì yào qù duìmiàn de fàndiàn chī kǎoyā, zhùhè tā kǎoshì chéngjì dōu hégé ma? Nà shíhou zài gàosu tā, bú shì gèng hǎo?"
+     },
+     {
+      "speaker": "丈夫",
+      "zh": "好主意，到时她知道了肯定特别开心。",
+      "pinyin": "Hǎo zhǔyì, dào shí tā zhīdàole kěndìng tèbié kāixīn."
+     }
+    ],
+    "new_words": [
+     {
+      "n": 7,
+      "zh": "旅行",
+      "pinyin": "lǚxíng",
+      "pos": "v.",
+      "en": "to travel, to tour",
+      "text": 2
+     },
+     {
+      "n": 8,
+      "zh": "怪",
+      "pinyin": "guài",
+      "pos": "adv.",
+      "en": "rather, quite",
+      "star": true,
+      "text": 2
+     },
+     {
+      "n": 9,
+      "zh": "可怜",
+      "pinyin": "kělián",
+      "pos": "adj.",
+      "en": "pitiable, poor",
+      "text": 2
+     },
+     {
+      "n": 10,
+      "zh": "对面",
+      "pinyin": "duìmiàn",
+      "pos": "n.",
+      "en": "opposite, across",
+      "text": 2
+     },
+     {
+      "n": 11,
+      "zh": "烤鸭",
+      "pinyin": "kǎoyā",
+      "pos": "n.",
+      "en": "roast duck",
+      "text": 2
+     },
+     {
+      "n": 12,
+      "zh": "祝贺",
+      "pinyin": "zhùhè",
+      "pos": "v.",
+      "en": "to congratulate",
+      "text": 2
+     },
+     {
+      "n": 13,
+      "zh": "合格",
+      "pinyin": "hégé",
+      "pos": "adj.",
+      "en": "qualified, up to standard",
+      "text": 2
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "title_zh": "安娜向马克介绍去丽江旅行的经验",
+    "kind": "dialogue",
+    "lines": [
+     {
+      "speaker": "马克",
+      "zh": "这么多照片，都是你这次去丽江旅行时照的？那里的自然风景可真美！",
+      "pinyin": "Zhème duō zhàopiàn, dōu shì nǐ zhè cì qù Lìjiāng lǚxíng shí zhào de? Nàli de zìrán fēngjǐng kě zhēn měi!"
+     },
+     {
+      "speaker": "安娜",
+      "zh": "是啊，小城四季的风景都很美，而且环境保护得也很好，因此每年都吸引着成千上万的游客去那儿旅游。",
+      "pinyin": "Shì a, xiǎo chéng sìjì de fēngjǐng dōu hěn měi, érqiě huánjìng bǎohù de yě hěn hǎo, yīncǐ měi nián dōu xīyǐnzhe chéngqiān-shàngwàn de yóukè qù nàr lǚyóu."
+     },
+     {
+      "speaker": "马克",
+      "zh": "这张照片上和你干杯的那个人是少数民族吗？她打扮得真漂亮。",
+      "pinyin": "Zhè zhāng zhàopiàn shang hé nǐ gān bēi de nàge rén shì shǎoshù mínzú ma? Tā dǎban de zhēn piàoliang."
+     },
+     {
+      "speaker": "安娜",
+      "zh": "她是我们的导游，不是少数民族。一路上她给我们讲了很多有趣的笑话。有一次我把存包的钥匙丢了，最后还是她帮我找到的。这张照片就是找到钥匙后，我们一起照的。",
+      "pinyin": "Tā shì wǒmen de dǎoyóu, bú shì shǎoshù mínzú. Yí lù shang tā gěi wǒmen jiǎngle hěn duō yǒuqù de xiàohua. Yǒu yí cì wǒ bǎ cún bāo de yàoshi diū le, zuìhòu háishi tā bāng wǒ zhǎodào de. Zhè zhāng zhàopiàn jiù shì zhǎodào yàoshi hòu, wǒmen yìqǐ zhào de."
+     },
+     {
+      "speaker": "马克",
+      "zh": "明年我有机会也去那儿看看，到时把你的导游介绍给我吧。究竟哪个季节去丽江旅游比较好呢？",
+      "pinyin": "Míngnián wǒ yǒu jīhuì yě qù nàr kànkan, dào shí bǎ nǐ de dǎoyóu jièshào gěi wǒ ba. Jiūjìng nǎge jìjié qù Lìjiāng lǚyóu bǐjiào hǎo ne?"
+     },
+     {
+      "speaker": "安娜",
+      "zh": "那儿最美的季节是春天和秋天，不过那时候人比较多。稍微好一点儿的时间是每年12月到第二年3月。这段时间去丽江的话，无论交通还是吃、住都很便宜。",
+      "pinyin": "Nàr zuì měi de jìjié shì chūntiān hé qiūtiān, búguò nà shíhou rén bǐjiào duō. Shāowēi hǎo yì diǎnr de shíjiān shì měinián shí'èryuè dào dì-èr nián sānyuè. Zhè duàn shíjiān qù Lìjiāng de huà, wúlùn jiāotōng háishi chī、zhù dōu hěn piányi."
+     }
+    ],
+    "new_words": [
+     {
+      "n": 14,
+      "zh": "干杯",
+      "pinyin": "gān bēi",
+      "pos": "v.",
+      "en": "to drink a toast",
+      "text": 3
+     },
+     {
+      "n": 15,
+      "zh": "民族",
+      "pinyin": "mínzú",
+      "pos": "n.",
+      "en": "nationality, ethnic group",
+      "text": 3
+     },
+     {
+      "n": 16,
+      "zh": "打扮",
+      "pinyin": "dǎban",
+      "pos": "v.",
+      "en": "to dress up, to deck out",
+      "text": 3
+     },
+     {
+      "n": 17,
+      "zh": "笑话",
+      "pinyin": "xiàohua",
+      "pos": "n.",
+      "en": "joke",
+      "text": 3
+     },
+     {
+      "n": 18,
+      "zh": "存",
+      "pinyin": "cún",
+      "pos": "v.",
+      "en": "to store, to keep",
+      "text": 3
+     },
+     {
+      "n": 19,
+      "zh": "钥匙",
+      "pinyin": "yàoshi",
+      "pos": "n.",
+      "en": "key",
+      "text": 3
+     },
+     {
+      "n": 20,
+      "zh": "究竟",
+      "pinyin": "jiūjìng",
+      "pos": "adv.",
+      "en": "(used in questions for emphasis) exactly",
+      "text": 3
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "kind": "narrative",
+    "lines": [
+     {
+      "zh": "中国南北距离约5500公里，因此南北气候有很大区别。",
+      "pinyin": "Zhōngguó nán běi jùlí yuē wǔqiān wǔbǎi gōnglǐ, yīncǐ nán běi qìhòu yǒu hěn dà qūbié."
+     },
+     {
+      "zh": "每年三四月份的时候，如果从北方坐火车到南方去旅游，一路上你会发现，不同的地方有不同的风景：窗外的树一棵一棵地变绿，北方也许还下着雪，南方却已经到处都是绿色了。",
+      "pinyin": "Měi nián sān-sì yuèfèn de shíhou, rúguǒ cóng běifāng zuò huǒchē dào nánfāng qù lǚyóu, yí lù shang nǐ huì fāxiàn, bù tóng de dìfang yǒu bù tóng de fēngjǐng: chuāngwài de shù yì kē yì kē de biàn lǜ, běifāng yěxǔ hái xiàzhe xuě, nánfāng què yǐjīng dàochù dōu shì lǜsè le."
+     },
+     {
+      "zh": "南方菜很有特点，特别是汤，味道鲜美，很多北方人都喜欢喝。",
+      "pinyin": "Nánfāng cài hěn yǒu tèdiǎn, tèbié shì tāng, wèidào xiānměi, hěn duō běifāng rén dōu xǐhuan hē."
+     },
+     {
+      "zh": "另外，南方和北方的语言也有很大不同。",
+      "pinyin": "Lìngwài, nánfāng hé běifāng de yǔyán yě yǒu hěn dà bù tóng."
+     },
+     {
+      "zh": "比如你跟上海人对话时，会发现上海话听起来就像外语一样。",
+      "pinyin": "Bǐrú nǐ gēn Shànghǎi rén duì huà shí, huì fāxiàn Shànghǎi huà tīng qilai jiù xiàng wàiyǔ yíyàng."
+     },
+     {
+      "zh": "虽然上海人也会讲普通话，可是仔细听，还是有上海味儿。",
+      "pinyin": "Suīrán Shànghǎi rén yě huì jiǎng pǔtōnghuà, kěshi zǐxì tīng, háishi yǒu Shànghǎi wèir."
+     }
+    ],
+    "new_words": [
+     {
+      "n": 21,
+      "zh": "棵",
+      "pinyin": "kē",
+      "pos": "m.",
+      "en": "used for plants",
+      "text": 4
+     },
+     {
+      "n": 22,
+      "zh": "汤",
+      "pinyin": "tāng",
+      "pos": "n.",
+      "en": "soup",
+      "text": 4
+     },
+     {
+      "n": 23,
+      "zh": "对话",
+      "pinyin": "duìhuà",
+      "pos": "v.",
+      "en": "to have a dialogue",
+      "text": 4
+     },
+     {
+      "n": 24,
+      "zh": "普通话",
+      "pinyin": "pǔtōnghuà",
+      "pos": "n.",
+      "en": "Mandarin Chinese",
+      "text": 4
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "kind": "narrative",
+    "lines": [
+     {
+      "zh": "一个人有时间一定要去旅行，旅行不仅能丰富一个人的经历，而且是很好的减压方法。",
+      "pinyin": "Yí ge rén yǒu shíjiān yídìng yào qù lǚxíng, lǚxíng bùjǐn néng fēngfù yí ge rén de jīnglì, érqiě shì hěn hǎo de jiǎnyā fāngfǎ."
+     },
+     {
+      "zh": "但对我来说，最重要的是旅行能让我有机会尝到各地有名的小吃。",
+      "pinyin": "Dàn duì wǒ lái shuō, zuì zhòngyào de shì lǚxíng néng ràng wǒ yǒu jīhuì chángdào gè dì yǒumíng de xiǎochī."
+     },
+     {
+      "zh": "放假的时候，我会收拾好行李，带上地图，买张火车票，向目的地出发。",
+      "pinyin": "Fàng jià de shíhou, wǒ huì shōushi hǎo xíngli, dàishang dìtú, mǎi zhāng huǒchēpiào, xiàng mùdìdì chūfā."
+     },
+     {
+      "zh": "说起吃的东西，给我印象最深的是湖南菜。",
+      "pinyin": "Shuōqǐ chī de dōngxi, gěi wǒ yìnxiàng zuì shēn de shì Húnán cài."
+     },
+     {
+      "zh": "湖南菜的特点就是辣，与其他地方的辣不同，湖南菜的辣主要是咸辣、香辣和酸辣。",
+      "pinyin": "Húnán cài de tèdiǎn jiù shì là, yǔ qítā dìfang de là bù tóng, Húnán cài de là zhǔyào shì xián là、xiāng là hé suān là."
+     },
+     {
+      "zh": "虽然全国各地都有湖南饭馆儿，但最好还是直接去那里尝一尝。",
+      "pinyin": "Suīrán quánguó gè dì dōu yǒu Húnán fànguǎnr, dàn zuìhǎo háishi zhíjiē qù nàli cháng yi cháng."
+     },
+     {
+      "zh": "每次旅行结束后，我都会精神百倍地开始我的工作。",
+      "pinyin": "Měi cì lǚxíng jiéshù hòu, wǒ dōu huì jīngshén bǎibèi de kāishǐ wǒ de gōngzuò."
+     }
+    ],
+    "new_words": [
+     {
+      "n": 25,
+      "zh": "小吃",
+      "pinyin": "xiǎochī",
+      "pos": "n.",
+      "en": "small and cheap dishes",
+      "text": 5
+     },
+     {
+      "n": 26,
+      "zh": "收拾",
+      "pinyin": "shōushi",
+      "pos": "v.",
+      "en": "to put in order, to pack",
+      "text": 5
+     },
+     {
+      "n": 27,
+      "zh": "出发",
+      "pinyin": "chūfā",
+      "pos": "v.",
+      "en": "to depart, to set off",
+      "text": 5
+     },
+     {
+      "n": 28,
+      "zh": "辣",
+      "pinyin": "là",
+      "pos": "adj.",
+      "en": "hot, spicy",
+      "text": 5
+     },
+     {
+      "n": 29,
+      "zh": "香",
+      "pinyin": "xiāng",
+      "pos": "adj.",
+      "en": "fragrant, scented",
+      "text": 5
+     },
+     {
+      "n": 30,
+      "zh": "酸",
+      "pinyin": "suān",
+      "pos": "adj.",
+      "en": "sour, tart",
+      "text": 5
+     }
+    ]
+   }
+  ],
+  "grammar": [
+   {
+    "n": 1,
+    "title_zh": "V+着+V+着",
+    "explanation_zh": "“V+着+V+着”结构中使用同一个动词，这个动词常为单音节动词。这个结构后面常接另一个动词，表示一个动作正在进行时出现了另一个动作。例如：",
+    "explanation_en": "The two verbs in the structure “V+着+V+着” are the same, usually a monosyllabic one. The structure is often followed by another verb, indicating another action occurs when the one mentioned is going on. For example:",
+    "examples": [
+     {
+      "n": 1,
+      "zh": "好，那我就放心了，别开着开着没油了。"
+     },
+     {
+      "n": 2,
+      "zh": "她讲着讲着自己就先笑了，而大家却不明白她到底为什么笑。"
+     },
+     {
+      "n": 3,
+      "zh": "晚上躺在草地上看星星的感觉非常棒，有时候躺着躺着就安静地睡着了。"
+     }
+    ],
+    "practice_instruction_zh": "完成句子 Complete the sentences.",
+    "practice": [
+     {
+      "n": 1,
+      "zh": "小时候的记忆总是那么美好，________。",
+      "hint_zh": "V+着+V+着"
+     },
+     {
+      "n": 2,
+      "zh": "那天的羊肉饺子太好吃了，________。",
+      "hint_zh": "V+着+V+着"
+     },
+     {
+      "n": 3,
+      "zh": "这篇小说写得太无聊了，________。",
+      "hint_zh": "V+着+V+着"
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "title_zh": "一……就……",
+    "explanation_zh": "“一……就……”结构可表示两件事情紧接着发生。两件事情的主语可以相同，也可不同。例如：（1）（2）\n“一……就……”结构还可表示“要是……就……”的意思，“一”后面表示条件，“就”后面表示在前一个条件下产生的情况。两种成分的主语可以相同，也可不同。例如：（3）（4）（5）",
+    "explanation_en": "The structure “一……就……” (...as soon as...) can indicate two events happening one immediately after the other. The two events may or may not share the same subject. For example: (1) (2)\n“一……就……” can also mean “if..., then...”, in which “一” is followed by a situation that indicates a condition, and “就” is followed by a situation that would occur under the condition. The two situations may or may not share the same subject. For example: (3) (4) (5)",
+    "examples": [
+     {
+      "n": 1,
+      "zh": "100年前，塑料一出现就受到人们的普遍欢迎。",
+      "note_zh": "两件事情紧接着发生"
+     },
+     {
+      "n": 2,
+      "zh": "等女儿一回来我就告诉她这个好消息。",
+      "note_zh": "两件事情紧接着发生"
+     },
+     {
+      "n": 3,
+      "zh": "儿子小时候一说话就脸红，回答老师问题的时候声音也很小，我当时很为他担心。",
+      "note_zh": "要是……就……"
+     },
+     {
+      "n": 4,
+      "zh": "父母必须让孩子从小就知道，不是所有的东西一哭就能得到。",
+      "note_zh": "要是……就……"
+     },
+     {
+      "n": 5,
+      "zh": "妈妈一进房间，他就把手机装了起来。",
+      "note_zh": "要是……就……"
+     }
+    ],
+    "practice_instruction_zh": "完成句子 Complete the sentences.",
+    "practice": [
+     {
+      "n": 1,
+      "zh": "明天我要去上海出差，________。",
+      "hint_zh": "一……就……"
+     },
+     {
+      "n": 2,
+      "zh": "张阿姨还是不适应北方的气候，________。",
+      "hint_zh": "一……就……"
+     },
+     {
+      "n": 3,
+      "zh": "马经理上午去开会了，________。",
+      "hint_zh": "一……就……"
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "title_zh": "究竟",
+    "explanation_zh": "“究竟”，副词，用在疑问句或者带疑问词的非疑问句里，表示追究，加强疑问语气，多用于书面语。主语如果是疑问代词，“究竟”只能放在主语前。例如：\n比一比 究竟—到底\n相同点：两者都是副词，用在疑问句或者带疑问词的非疑问句里，表示追究，加强疑问语气。主语如果是疑问代词，“究竟、到底”只能放在主语前。\n无论做什么事情，只有试过才知道究竟/到底能不能成功。\n人的一生中，究竟什么是最重要的？\n不同点：“到底”可做动词，表示“一直到结束、到终点”的意思；“究竟”无此用法。\n你耐心点儿！这个电影得看到底，才能知道那件事情的原因。\n我们已经做了这么多努力了，一定要把这个计划坚持到底，现在放弃太可惜了。",
+    "explanation_en": "The adverb “究竟” is used in an interrogative sentence or a sentence with an interrogative word to indicate inquiry and strengthen the interrogative mood. It is often used in written Chinese. If the subject of the sentence is an interrogative pronoun, “究竟” can only be put before it. For example:\nCompare 究竟—到底\nSimilarity: Both can be used as adverbs in interrogative sentences or sentences with an interrogative word to indicate inquiry and strengthen the interrogative mood. Both can only be put before the subject if the subject is an interrogative pronoun.\nDifferences: “到底” can be used as a verb, meaning “till the end”, while “究竟” has no such usage.",
+    "examples": [
+     {
+      "n": 1,
+      "zh": "究竟哪个季节去丽江旅游比较好呢？"
+     },
+     {
+      "n": 2,
+      "zh": "随着科学技术的发展，很多问题已经得到解决。但有些问题我们仍然无法回答，例如，生命究竟从哪里来？"
+     },
+     {
+      "n": 3,
+      "zh": "学习时，不仅要知道答案是什么，还要弄清楚答案究竟是怎么得来的，只有这样，才能把问题真正弄懂。"
+     },
+     {
+      "zh": "无论做什么事情，只有试过才知道究竟/到底能不能成功。",
+      "note_zh": "比一比 相同点"
+     },
+     {
+      "zh": "人的一生中，究竟什么是最重要的？",
+      "note_zh": "比一比 相同点"
+     },
+     {
+      "zh": "你耐心点儿！这个电影得看到底，才能知道那件事情的原因。",
+      "note_zh": "比一比 不同点（到底 动词）"
+     },
+     {
+      "zh": "我们已经做了这么多努力了，一定要把这个计划坚持到底，现在放弃太可惜了。",
+      "note_zh": "比一比 不同点（到底 动词）"
+     }
+    ],
+    "practice_instruction_zh": "完成句子 Complete the sentences.",
+    "practice": [
+     {
+      "n": 1,
+      "zh": "________，不同的人可能有不同的理解。",
+      "hint_zh": "究竟"
+     },
+     {
+      "n": 2,
+      "zh": "我想试试网站上说的这个方法，________。",
+      "hint_zh": "究竟"
+     },
+     {
+      "n": 3,
+      "zh": "最近每天来店里的顾客不超过20个，________。",
+      "hint_zh": "究竟"
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "title_zh": "起来",
+    "explanation_zh": "“起来”，动词，可用在动词后面做趋向补语，可表示动作方向从下到上，也可引申表示动作开始并继续，还可引申表示说话人从某方面评价人或事物。例如：",
+    "explanation_en": "The verb “起来” can be used after another verb as a complement of direction, indicating an upward movement, or extendedly, indicating the beginning and continuation of an action or the speaker’s comment on a certain aspect of somebody or something. For example:",
+    "examples": [
+     {
+      "n": 1,
+      "zh": "你先把桌子上的东西拿起来，我擦完之后你再放下来。"
+     },
+     {
+      "n": 2,
+      "zh": "邻居小王最近一定遇到了很多开心的事，你听，他又唱起来了。"
+     },
+     {
+      "n": 3,
+      "zh": "比如你跟上海人对话时，会发现上海话听起来就像外语一样。"
+     }
+    ],
+    "practice_instruction_zh": "完成句子 Complete the sentences.",
+    "practice": [
+     {
+      "n": 1,
+      "zh": "我本来以为做生意很简单，________。",
+      "hint_zh": "起来"
+     },
+     {
+      "n": 2,
+      "zh": "公园里每天都有很多老人唱京剧，________。",
+      "hint_zh": "起来"
+     },
+     {
+      "n": 3,
+      "zh": "他的汉语语法虽然有点儿小错误，________。",
+      "hint_zh": "起来"
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "title_zh": "V+起",
+    "explanation_zh": "“V+起”结构表示动作关涉到某事物，动词一般是“说、谈、讲、问、提、聊、回忆”等少数及物动词。“V+起”后面一般都有名词。例如：",
+    "explanation_en": "The structure “V + 起” introduces the thing that an action involves. The verb is usually one of the few transitive verbs “说” (to speak), “谈” (to talk), “讲” (to speak), “问” (to ask), “提” (to mention), “聊” (to chat), and “回忆” (to recall), etc. The structure is usually followed by a noun. For example:",
+    "examples": [
+     {
+      "n": 1,
+      "zh": "说起吃的东西，给我印象最深的是湖南菜。"
+     },
+     {
+      "n": 2,
+      "zh": "聊起那场网球比赛，他们俩就兴奋得停不下来了。"
+     },
+     {
+      "n": 3,
+      "zh": "要是有人问起那件事，你就告诉他你还没接到通知，也不清楚怎么回事。"
+     }
+    ],
+    "practice_instruction_zh": "完成句子 Complete the sentences.",
+    "practice": [
+     {
+      "n": 1,
+      "zh": "________，大家总是有说不完的话。",
+      "hint_zh": "V+起"
+     },
+     {
+      "n": 2,
+      "zh": "看着这些可爱的孩子，________。",
+      "hint_zh": "V+起"
+     },
+     {
+      "n": 3,
+      "zh": "尽管已经过去十多年了，________。",
+      "hint_zh": "V+起"
+     }
+    ]
+   }
+  ],
+  "exercises": [
+   {
+    "n": "注释3 比一比 做一做",
+    "type_zh": "选词填空（究竟／到底）",
+    "instruction_zh": "选词填空",
+    "instruction_en": "Tick or cross",
+    "word_bank": [
+     [
+      "究竟",
+      "到底"
+     ]
+    ],
+    "items": [
+     {
+      "n": 1,
+      "zh": "这场比赛太精彩了，你猜________谁能先进球？",
+      "options": {
+       "究竟": "✓",
+       "到底": "✓"
+      },
+      "answer": "究竟 ✓　到底 ✓",
+      "answer_ref": {
+       "book": "textbook",
+       "pages": [
+        146
+       ]
+      }
+     },
+     {
+      "n": 2,
+      "zh": "她决心一定要将减肥进行________。",
+      "options": {
+       "究竟": "×",
+       "到底": "✓"
+      },
+      "answer": "究竟 ×　到底 ✓",
+      "answer_ref": {
+       "book": "textbook",
+       "pages": [
+        146
+       ]
+      }
+     },
+     {
+      "n": 3,
+      "zh": "这个题我做了三遍，可每次算出来的答案都不一样，真奇怪，________是哪儿出问题了？"
+     },
+     {
+      "n": 4,
+      "zh": "无论做什么事情都不会很容易就成功，只有坚持________，才有会有希望。"
+     },
+     {
+      "n": 5,
+      "zh": "生气多是由误会引起的，因此当你觉得自己要生气的时候，最好先弄清楚________是怎么回事。"
+     }
+    ]
+   },
+   {
+    "n": "课文1–3 回答问题",
+    "type_zh": "回答问题",
+    "instruction_zh": "根据课文内容回答问题",
+    "instruction_en": "Answer the questions based on the texts.",
+    "items": [
+     {
+      "n": 1,
+      "zh": "课文1：李进因为什么事情担心？他和王静是怎么解决的？"
+     },
+     {
+      "n": 2,
+      "zh": "课文1：王静坐的航班时间发生了什么变化？她和李进大约多长时间能到达机场？"
+     },
+     {
+      "n": 3,
+      "zh": "课文2：孙月和丈夫为什么想带女儿去旅行？他们准备去哪儿旅行？"
+     },
+     {
+      "n": 4,
+      "zh": "课文2：他们想在什么时候告诉女儿去旅行这个消息？为什么？"
+     },
+     {
+      "n": 5,
+      "zh": "课文3：安娜这次去丽江找的那个导游怎么样？"
+     },
+     {
+      "n": 6,
+      "zh": "课文3：为什么丽江值得去旅游？什么时候去那里旅游最好？"
+     }
+    ]
+   },
+   {
+    "n": "课文4–5 回答问题",
+    "type_zh": "回答问题",
+    "instruction_zh": "根据课文内容回答问题",
+    "instruction_en": "Answer the questions based on the texts.",
+    "items": [
+     {
+      "n": 1,
+      "zh": "课文4：要是你三四月份从北方坐火车到南方旅行，路上的风景会有哪些变化？为什么？"
+     },
+     {
+      "n": 2,
+      "zh": "课文4：一个北方人跟上海人对话时，可能会遇到什么问题？"
+     },
+     {
+      "n": 3,
+      "zh": "课文5：对“我”来说，旅行有哪些好处？"
+     },
+     {
+      "n": 4,
+      "zh": "课文5：旅行中什么东西给“我”的印象最深？它有哪些特点？"
+     }
+    ]
+   },
+   {
+    "n": 1,
+    "type_zh": "复述",
+    "instruction_zh": "复述",
+    "instruction_en": "Retell the dialogues.",
+    "items": [
+     {
+      "n": "课文1",
+      "zh": "王静的语气：你别担心，航班本来是十点，……"
+     },
+     {
+      "n": "课文2",
+      "zh": "丈夫的语气：你看咱们的女儿多辛苦啊，平时有那么多课，……"
+     },
+     {
+      "n": "课文3",
+      "zh": "安娜的语气：这是我这次去丽江旅行时的照片，……"
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "type_zh": "选词填空",
+    "instruction_zh": "选择合适的词语填空",
+    "instruction_en": "Choose the proper words to fill in the blanks.",
+    "word_bank": [
+     [
+      "合格",
+      "航班",
+      "对话",
+      "可怜",
+      "旅行"
+     ],
+     [
+      "祝贺",
+      "笑话",
+      "打扮",
+      "普通话",
+      "推迟"
+     ]
+    ],
+    "items": [
+     {
+      "n": 1,
+      "zh": "乘客，您好！我们很抱歉地通知您，由于天气原因，您乘坐的CA1864________推迟起飞。"
+     },
+     {
+      "n": 2,
+      "zh": "我走在回家的路上，突然发现商店门口有一只________的小狗，我心里一软，就把它抱回了家。"
+     },
+     {
+      "n": 3,
+      "zh": "欢迎大家来到美丽的海南，________中有任何事您都可以找我商量，希望我的服务能让您满意。"
+     },
+     {
+      "n": 4,
+      "zh": "“活到老，学到老”。在现代社会中，我们必须坚持学习。努力获得新的知识，才能适应社会的发展速度，做一个________的现代人。"
+     },
+     {
+      "n": 5,
+      "zh": "上午来应聘的那个小伙子是学电子技术的，成绩很优秀，通过面试时和他的________，感觉他的性格也不错，我觉得他挺适合这份工作的。"
+     },
+     {
+      "n": 6,
+      "zh": "A：你的________水平考试考得怎么样？ B：我这次没考，因为我错过了报名时间，只能等下次了。"
+     },
+     {
+      "n": 7,
+      "zh": "A：今晚我穿这条裙子怎么样？今年最流行的。 B：很漂亮，不过我觉得这种________参加正式的舞会可能还是不太合适。"
+     },
+     {
+      "n": 8,
+      "zh": "A：小高，听说你出国的时间________了？ B：是的，我的签证还没有办好，大概得10月底才能走。"
+     },
+     {
+      "n": 9,
+      "zh": "A：这次活动非常成功，我们顺利完成了公司交给的任务。 B：辛苦了，________你们！来，干一杯！"
+     },
+     {
+      "n": 10,
+      "zh": "A：你这一肚子的________，都是从哪儿听来的？ B：有个网站上有很多，看到有趣的我就记下来。我把网址发给你，你也去看看吧。"
+     }
+    ]
+   },
+   {
+    "n": "扩展 做一做",
+    "type_zh": "选词填空（同字词）",
+    "instruction_zh": "选词填空",
+    "instruction_en": "Fill in the blanks with the words given.",
+    "word_bank": [
+     [
+      "严格",
+      "表格",
+      "合格",
+      "性格",
+      "价格"
+     ]
+    ],
+    "items": [
+     {
+      "n": 1,
+      "zh": "抱歉，这张________您填得不对，请稍等一下，我再拿一张新的给您，请您重新填写一下。",
+      "answer": "表格",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        104
+       ]
+      }
+     },
+     {
+      "n": 2,
+      "zh": "只要他这次考试的成绩都________，就可以进入高级班学习。",
+      "answer": "合格",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        104
+       ]
+      }
+     },
+     {
+      "n": 3,
+      "zh": "这家酒店除了房间有点儿小以外，其他方面都还不错，房间里很干净，可以免费上网，________也比较低，对学生来说非常合适。",
+      "answer": "价格",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        104
+       ]
+      }
+     },
+     {
+      "n": 4,
+      "zh": "他平时就对自己要求很________，尤其是赛前那个星期，他每天都会把全部动作练习好几遍，希望在比赛中做到最好。",
+      "answer": "严格",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        104
+       ]
+      }
+     },
+     {
+      "n": 5,
+      "zh": "他们两个是在国外旅游的时候认识的，他们俩的________都差不多，聊天儿也挺聊得来，所以很快就成了好朋友。",
+      "answer": "性格",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        104
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "characters": {
+   "knowledge_title_zh": "同字词",
+   "knowledge_en": "Words with the Same Character",
+   "knowledge_zh": "格：性格、价格、表格、合格、严格\n（1）我的性格很像我父亲，我的理想就是做一个像父亲那样的医生。\n（2）我想租一个窗户向南、阳光好的房间，附近最好有超市和医院。当然，价格也要合适。\n（3）如果您想办信用卡的话，得先填一下这张表格。\n（4）一个合格的公司管理者，一定要允许其他人有反对意见。\n（5）严格地说，地球应该叫“水球”，这是因为从地图上看，大约71%的地方都是蓝色的海洋。",
+   "characters": [
+    {
+     "zh": "格",
+     "note_zh": "性格、价格、表格、合格、严格"
+    }
+   ]
+  },
+  "application": [
+   {
+    "title_zh": "双人活动",
+    "instruction_zh": "互相了解一下对方对中国南方和北方的认识，完成调查表。",
+    "instruction_en": "Learn about each other’s knowledge of the south and north of China respectively, and complete the questionnaire below.",
+    "example_zh": [
+     "表格：| | 问 | 答 |",
+     "| 1 | 你都去过中国南方和北方的哪些城市？（如果“没有”，直接到第4题） | |",
+     "| 2 | 在你的印象中，中国南方和北方的气候有什么不同？气候对人们的生活有哪些影响？ | |",
+     "| 3 | 南方人和北方人说的普通话一样吗？在你听不懂的时候，你们是怎么交流的？ | |",
+     "| 4 | 通过学习课文，我们已经了解了一些中国南方和北方在气候、生活、语言等方面的区别，你希望去哪里旅行或者生活？ | |",
+     "| 5 | 在你们国家有没有像中国南方、北方这样区别比较大的地方？有哪些不同？ | |"
+    ]
+   },
+   {
+    "title_zh": "小组活动",
+    "instruction_zh": "旅行不仅能增长知识、丰富经验，而且还是一种放松心情的好方式。有的旅行会给你留下美好的回忆，有的却让你后悔不应该去。向小组成员介绍一下哪次旅行是你最难忘的。（最少用四个下面的结构）",
+    "instruction_en": "Travelling not only enriches our knowledge and experience, but is also a good way to relax. Some trips may give you a good memory, and some others make you regret you’ve had them. Which is your most memorable trip? Tell your group members about it. (Use at least four of the following structures.)",
+    "example_zh": [
+     "a. 机场网站上通知",
+     "b. 四季的风景都很美",
+     "c. 成千上万的游客",
+     "d. 有很大区别",
+     "e. 各地有名的小吃",
+     "f. 向目的地出发",
+     "g. 给我印象最深的是",
+     "h. 精神百倍"
+    ]
+   }
+  ],
+  "culture": {
+   "title_zh": "中国的少数民族",
+   "body_zh": "中国是由56个民族共同组成的多民族国家，其中汉族人口占中国总人口的90%以上，是人数最多的民族。其他55个民族，比如蒙古族、藏族、回族等，人口都比较少，因此称为少数民族。每个民族都有自己独特的文化和历史，他们穿着自己独特的民族服装、戴着精美的民族饰品、跳着优美的民族舞蹈、吃着美味的民族食品、说着自己的民族语言、过着丰富多彩的民族节日。中国虽然有56个民族，但并不只是有56种语言。根据统计，目前使用的语言有80多种。其中使用最多的少数民族语言文字有4种：壮语、维吾尔语、蒙古语和藏语，这从人民币上就可以看出来。你可以猜一猜，在下面的人民币上，这四种文字分别是哪个少数民族使用的。",
+   "body_en": "Ethnic Minorities in China\nChina is a multi-ethnic country with 56 ethnic groups, among which the Han Chinese, as the biggest ethnic group, accounts for above 90% of the total population. The other 55 ethnic groups, including the Mongolians, the Tibetans and the Huis, are called ethnic minorities because of their relatively small populations. Each ethnic group has its own distinctive culture and history. They wear their unique ethnic costumes and exquisite ethnic adornments, perform beautiful ethnic dances, eat savory ethnic foods, speak their own languages and celebrate various ethnic festivals. China has 56 ethnic groups, but the languages spoken there are more than 56. Statistics show that there are over 80 languages currently used in China. Among them the top 4 most frequently used languages and characters of the ethnic minorities are respectively the Zhuang language, the Uygur language, the Mongolian and the Tibetan language, which can be seen on Renminbi banknotes. Can you guess which ethnic minorities are the four languages on the following banknote used by respectively? Identify them one by one.\n[Pictures: two women in colourful ethnic-minority costumes with silver headdresses; the back of a 1999 one-yuan Renminbi banknote showing a lake with stone pagodas and the line «ZHONGGUO RENMIN YINHANG» with minority scripts.]"
+  }
+ },
+ "teacher": {
+  "ref": {
+   "book": "teacher",
+   "pages": [
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104
+   ]
+  },
+  "objectives_zh": [
+   "主题：旅游出行（1）对话：送机、计划旅游、旅行的收获（2）短文：中国南北方的差异、旅行的好处",
+   "语言点：学生能够了解并掌握：（1）“V＋着＋V＋着”表示一个动作正在进行时出现了另一个动作（2）“一……就……”表示两件事情紧接着发生；也表示“要是……就……”（3）“究竟”表示追究　*辨析“究竟”和“到底”的异同（4）“起来”用在动词后做趋向补语，表示动作方向从下到上，动作开始并继续，还可表示说话人从某方面评价人或事物（5）“V＋起”表示动作关涉到某事物",
+   "词汇：学生能够：（1）掌握本课29个四级大纲词汇的意义和用法　重点词语：航班、推迟、旅行、对面、合格、打扮、存、对话、收拾、出发（2）了解1个非大纲词汇的意义：怪（3）理解“格”字的组词规律及在词汇中的意义"
+  ],
+  "steps": [
+   {
+    "title_zh": "一 复习旧课",
+    "body_zh": "1 使用生词卡片，快速认读下列词语：\n出生、道歉、打印、破、理发、打招呼、抬、转、占线、场、禁止\n2 快速回答问题（与第19课或学生实际生活有关的问题）：\n（1）在填大学的申请表格时，可能要填写哪些信息？\n（2）王静想给李进做饺子，最后他们吃上饺子了吗？为什么？\n（3）在观看乒乓球比赛时，观众应该注意哪些问题？\n3 检查作业：\n请5名学生介绍一下自己包饺子的情况。"
+   },
+   {
+    "title_zh": "二 学习新课 1 热身",
+    "body_zh": "热身1：学生两人一组，合作完成；教师指出图片，请学生根据图片说出对应的词语，教师核对答案；教师领读热身1的生词；最后全体学生齐读，教师正音。\n答案：①E　②F　③C　④B　⑤A　⑥D\n热身2：教师带领学生熟悉调查表格的内容；请学生两人一组，调查对方对旅行的态度；请3～5名学生报告调查结果。"
+   },
+   {
+    "title_zh": "2 生词",
+    "body_zh": "（1）生词快速认读及正音\n课文1（对话）：加油站、航班、推迟、高速公路、登机牌、首都\n课文2（对话）：旅行、*怪、可怜、对面、烤鸭、祝贺、合格\n课文3（对话）：干杯、民族、打扮、笑话、存、钥匙、究竟\n课文4（短文）：棵、汤、对话、普通话\n课文5（短文）：小吃、收拾、出发、辣、香、酸\n• 教师用PPT或卡片展示并领读生词（带拼音）；\n• 取消拼音，带领学生再次认读；\n• 逐词（不带拼音）闪现，请学生快速认读生词；\n• 请3～5个学生快速随机认读3～5个生词；\n• 最后全体学生快速齐读所有生词。\n（2）生词讲解方式\n直观法（图片、实物）：图片类：加油站（热身图片B）、航班（机场航班时刻表）、高速公路（热身图片A）、登机牌（旅客手拿着的登机牌）、烤鸭（热身图片C）、干杯（热身图片D）、民族（穿着少数民族服装的人）、打扮（女人化妆）、汤、小吃（热身图片F）、出发（拿着行李箱准备出门）、香（香水、热身图片C，教师做“闻”的动作）；实物类：钥匙、对话（利用课文1、2、3，数几个对话，并配合提问：这是谁跟谁的对话？）、辣（一个朝天椒，并配合提问：这是什么味道的？）、酸（一些醋，让学生闻闻，并配合提问：这是什么味道的？）\n情景法（肢体动作、语言等）：对面（手指自己，然后指一下对面的学生，并配合提问：老师对面的同学是谁？）\n对比法（反义词对比）：存（钱）——取（钱）\n替换法（同／近义替换）：旅行（旅游）、究竟（到底）\n搭配法：棵（一棵树）\n归纳法（归纳相关词语）：首都（北京、东京Tokyo、巴黎Paris、伦敦London……）\n提问启发：推迟、可怜、祝贺、合格、笑话、普通话\n教师提问，引导学生说出句子：\n虽然到了下课的时间，但我们得把课文学完，晚一会下课。——老师推迟几分钟下课。\n这个小孩从小没有了妈妈。——这个小孩很可怜。\n他通过了HSK考试，大家都……——大家都祝贺他通过了考试。\n这次的汉语考试成绩怎么样？——倒是合格了，就是分数不太高，不太理想。\n马克喜欢开玩笑，经常讲有意思的故事。——马克经常讲笑话。\n中国不同地方的人都有自己的方言，但当人们在一起时，用什么来互相交流呢？——在中国，不同地方的人用普通话来交流。\n（3）字形辨认练习\n教师用卡片或PPT展示，请学生快速辨认并读出，最后给每个字组词。\n油—邮　航—船　怪—怜\n鸭—鸡　贺—货　族—放\n扮—份　匙—趣　辣—速\n（4）重点生词扩展及常用搭配\n航班—8点的航班—航班很准时—你去北京的航班是几点的？\n推迟—推迟时间／航班—推迟一个小时—机场网站上通知航班推迟了一个小时。\n旅行—去上海旅行—旅行了一个星期—平时女儿那么多课，总是说想去旅行。\n对面—对面的饭店—学校的对面—学校的对面是饭馆儿—中午我们去对面的饭馆儿吃烤鸭吧。\n合格—很／非常合格—质量／成绩合格—祝贺她考试成绩合格。\n打扮—打扮打扮—打扮一下—打扮得很漂亮—照片上那个人打扮得真漂亮！\n存—存钱／包—去银行存钱—存包的地方—有一次我把存包的钥匙丢了。\n对话—跟他对话—我和他的对话—在跟上海人对话时，很多话听不懂。\n收拾—收拾房间／行李箱—收拾得很干净—我已经把行李收拾好了。\n出发—7点出发—出发得很晚—出发去北京—向目的地出发—收拾好行李，带上地图，买张火车票，就向目的地出发。"
+   },
+   {
+    "title_zh": "3 语言点（1）V＋着＋V＋着",
+    "body_zh": "① 语言点解析\n“V＋着＋V＋着”结构中使用同一个动词，这个动词常为单音节动词。这个结构后面常接另一个动词，表示一个动作正在进行时出现了另一个动作。\n② 语言点导入\n• 利用热身图片A，提问导入。\n教师：现在你正在开车去机场，这时你最不希望发生什么事情？\n学生：我最不希望开车时，开着开着没油了。\n• 利用图片，提问导入。\n教师展示一个人拿着书睡着了的图片。\n教师：大家看，这个人在看书吗？\n学生：这个人拿着书，看着看着睡着了。\n③ 语言点操练\n• 利用图片，提问操练。\n教师展示一个人在讲笑话，听的人在笑的图片。\n教师：这个人在讲笑话，他／她的笑话有趣吗？\n学生：他／她的笑话很有趣，大家听着听着就笑起来了。\n• 创设情境，进行操练。\n教师：去那里大概需要两个小时，时间这么长，真是太无聊了。\n学生：没关系，路上我们聊聊天儿，聊着聊着很快就到了。\n④ 语言点运用\n根据热身图片A、D的内容提示，请学生说说可能发生什么情况。\n图片A：很多人在高速公路上开车，经过休息区时会停下来休息。\n图片D：大家聚在一起很高兴，一边聊天儿一边喝酒。\n参考答案：因为在高速公路上长时间开车很累，很多人怕开着开着睡着了，所以要停下来休息一下。\n大家聚在一起很高兴，聊着聊着就喝多了。"
+   },
+   {
+    "title_zh": "3 语言点（2）一……就……",
+    "body_zh": "【表示两件事情紧接着发生】\n① 语言点解析\n“一……就……”结构可表示两件事情紧接着发生。两件事情的主语可以相同，也可不同。\n② 语言点导入\n• 联系生活实际，提问导入。\n教师：同学们下课后去干什么呢？\n学生：我们一下课就去食堂吃饭。\n• 联系对话1的内容，进行导入。\n教师：路上小心，到了北京给我打电话。\n学生：好的，你放心吧。我一到了首都机场就告诉你。\n③ 语言点操练\n联系生活实际，提问操练。\n• 教师：你们计划什么时候回国？\n学生：我已经买好了机票，打算一放假就回国。\n• 教师：你大学毕业后想直接工作，还是想继续读博士？\n学生：我一毕业就工作，不想继续读博士了。\n④ 语言点运用\n请学生根据提示用“一……就……”补全对话，并分角色表演。\nI. A：有一件事想麻烦你，请你帮我把这个礼物送给安娜。\nB：________。\nII. A：放了暑假你有什么打算？\nB：________。\nIII. A：李进，你大概什么时候能把申请表格传真过来？\nB：________。\n参考答案：I. 没问题，我一下班就给她送过去\nII. 我一放暑假就去旅行，票已经买好了\nIII. 您稍等，我一填好就马上给您传真过去\n【表示“要是……就……”】\n① 语言点解析\n“一……就……”，还可表示“要是……就……”的意思，“一”后面的内容表示条件，“就”后面接在前一个条件下产生的情况。两个情况的主语可以相同，也可不同。\n② 语言点导入\n• 利用热身图片D，提问、替换导入。\n教师：要是喝多了，你会怎么样？\n学生：我要是喝多了就会头疼。\n教师总结：我一喝多就会头疼。\n• 联系生活实际，提问导入。\n教师：怎么能买到质量又好、价格又便宜的衣服呢？\n学生：一到节假日，商场就会举办打折、降价活动，这时买的衣服又便宜又好。\n③ 语言点操练\n利用热身图片B、C，提问操练。\n• 教师：加油站为什么禁止抽烟？\n学生：因为一遇到火就很容易发生危险。\n• 教师：烤鸭非常好吃，要是请他们去吃，他们会同意吧？\n学生：他们一听说吃烤鸭就高兴，肯定会同意的。\n④ 语言点运用\n请学生根据提示用“一……就……”补全下面的句子，并朗读。\nI. 她特别害羞，________。\nII. 很多小孩害怕去医院，________。\nIII. 我特别想买那本小说，________。\n参考答案：I. 一说话就脸红\nII. 一打针就哭\nIII. 书一到就请您通知我"
+   },
+   {
+    "title_zh": "3 语言点（3）究竟",
+    "body_zh": "① 语言点解析\n“究竟”，副词，用在疑问句或者带疑问词的非疑问句里，表示追究，加强疑问语气，多用于书面语。主语如果是疑问代词，“究竟”只能放在主语前。\n② 语言点导入\n以旧导新，用“到底”替换导入“究竟”。\n• 教师：现在买机票很便宜，你做好决定了吗？放假后到底回不回国？\n教师替换：现在买机票很便宜，你做好决定了吗？放假后究竟回不回国呢？\n• 教师：前面站着这么多人，那儿到底发生了什么事情？\n学生替换：前面站着这么多人，那儿究竟发生了什么事情？\n③ 语言点操练\n联系生活实际，提问操练。\n• 教师：香山的红叶特别漂亮，我建议你去看看。\n学生：究竟什么时候去香山看红叶好呢？\n• 教师：回答问题时，只要知道答案是什么就可以了吗？\n学生：学习时不仅要知道答案是什么，还要弄清楚答案究竟是怎么来的。\n④ 语言点运用\n请学生选择“究竟”在句子中恰当的位置。\nI. 这次A参加面试的一共B有10个人，大家C商量一下D谁最适合这个工作。\nII. 过程和结果A哪个B更重要，其实C没有标准答案，不同的人D有不同的看法。\nIII. 请您再A稍微等一下，王医生B什么时候C回来我们也不是D特别清楚。\n参考答案：I. D　II. A　III. B\n⑤ 比一比：究竟—到底\n按照教材中的辨析步骤进行。"
+   },
+   {
+    "title_zh": "3 语言点（4）起来",
+    "body_zh": "① 语言点解析\n“起来”，动词，引申表示说话人从某方面评价人或事物。\n② 语言点导入\n利用视频或音频（一段上海话），提问导入。\n• 教师：这是个上海人，他／她说的上海话你能听懂吗？\n学生：听不懂。\n教师：像不像我们学习的汉语？\n学生：上海话听起来不像汉语。\n• 教师：这次唱歌比赛，我建议你唱这个歌，最近很多人喜欢听。\n学生：这个歌听起来很好听，但是唱起来比较难，还是算了吧。\n③ 语言点操练\n联系生活实际或创设情境，提问操练。\n• 教师：看中国人用筷子吃饭，你觉得用筷子容易吗？\n学生：看起来很容易，但是用起来挺难的。\n• 教师：快说说这个菜我做得怎么样？\n学生：这个菜吃起来有点儿咸，你是不是盐放多了。\n④ 语言点运用\n参考热身图片F，根据提示评价一下这些小吃。（图：蒸笼里的包子、点心）\n提示内容：I. 看，好吃　II. 尝，味道特别　III. 做，复杂　IV. 学，难\n参考答案：I. 这些小吃，看起来特别好吃。\nII. 尝起来，觉得味道很特别，好像是用……做的。\nIII. 我猜这些小吃做起来一定很复杂。\nIV. 对我来说，做这些小吃学起来有点儿难。"
+   },
+   {
+    "title_zh": "3 语言点（5）V＋起",
+    "body_zh": "① 语言点解析\n“V＋起”结构表示动作关涉到某事物。动词一般是“说、谈、讲、问、提、聊、回忆”等少数及物动词。“V＋起”后面一般都有名词。\n② 语言点导入\n• 利用图片，提问导入。\n教师展示臭豆腐以及其他中国小吃的图片。\n教师：大家都吃过中国小吃，说起小吃，我最爱吃臭豆腐，你呢？\n学生：说起小吃，我最爱吃……\n• 创设情境，提问导入。\n教师：这件事情我现在还不想让别人知道。\n学生：好的，要是别人问起，我就说不知道。\n教师总结一下能跟“起”搭配的常用动词，并用PPT列出或写在黑板上。\n［说／谈／讲／问／提／聊／回忆／介绍］＋起，……\n③ 语言点操练\n联系生活实际，提问操练。\n• 教师：就要考试了，你们准备得怎么样了？\n学生：提起考试，我就有点儿紧张，担心通过不了。\n• 教师：那些男同学怎么那么兴奋呢？\n学生：聊起足球，他们都兴奋得停不下来了。\n④ 语言点运用\n请学生选择恰当的动词。\nA. 介绍　B. 回忆　C. 问\nI. 一（　）起小时候的事情，他就会开心地笑起来。\nII. 要是有人（　）起开会的时间，你就告诉他。\nIII. 那个导游对这里非常了解，一（　）起景点的历史，就有说不完的话。\n参考答案：I. B　II. C　III. A"
+   },
+   {
+    "title_zh": "4 课文",
+    "body_zh": "（1）就课文内容，教师将下列问题写在黑板上或用PPT展示（或教师给学生发放问题单）：\n课文1：路上有加油站吗？在哪儿？／小张的航班是几点的？／加完油怎么上高速公路？\n课文2：女儿经常去旅行吗？／这次放假他们全家准备去哪儿旅行？／他们决定什么时候告诉女儿去旅行的消息？\n课文3：照片上那个人是谁？／那个人是一个有趣的人吗？为什么？／安娜把什么丢了？最后是怎么找到的？\n课文4：冬天坐火车从北方到南方，窗外的景色有什么变化？／南方的汤有哪些特点？／南方话跟北方话一样吗？容易听懂吗？\n课文5：放假的时候，她会去做什么？／什么小吃给她的印象最深？／湖南菜的辣与其他地方的辣有哪些不同？\n（2）要求学生带着问题听两遍录音并回答问题，教师给出答案；\n（3）学生打开课本，教师逐句播放录音，学生看课本听第二次录音并跟读；\n（4）教师领读一遍课文；\n（5）全班一起大声齐读一遍课文；\n（6）请2～3组学生分角色朗读课文，教师正音；\n（7）做以下课文扩展练习：\n对话课文：教师带领学生根据问题单上问题的答案叙述课文内容，并请学生单个复述。\n课文1：长江大桥附近有一个加油站，他们准备去加油。小张的航班本来是10点的，现在推迟了一个小时，所以8点到应该没问题。加完油，往西走五百米就能上高速公路，走高速公路大约半小时就能到了。\n课文2：平时女儿那么多课，总是说想去旅行，但是没时间，怪可怜的。这次放假他们要带女儿去广西玩儿一趟。中午他们要去对面的饭店吃烤鸭，祝贺女儿考试成绩都合格，那时候会告诉女儿去旅游的好消息。\n课文3：照片上和安娜干杯的那个人不是少数民族，是安娜的导游，她打扮得很漂亮。一路上她给安娜他们讲了很多笑话。有一次安娜把存包的钥匙丢了，最后她帮安娜找到了。\n短文课文：请学生根据课文内容，补全下面的语段，并请学生单个复述朗读。\n课文4：如果从北方坐火车到南方去旅游，你会看到窗外的树……（一棵一棵地变绿）。南方菜很有特点，特别是它的汤，……（味道鲜美）。南方和北方的语言也有很大不同，比如你跟……（上海人对话）时，会发现上海话听起来就……（像外语一样）。\n课文5：放假的时候，我会……（收拾好行李），带上地图，买张火车票，就……（向目的地出发）。……（说起小吃），给我印象最深的是湖南菜。湖南菜的特点就是辣，与其他地方的辣不同，湖南菜的辣主要是咸辣、……（香辣和酸辣）。"
+   },
+   {
+    "title_zh": "5 扩展",
+    "body_zh": "（1）领读“性格、价格、表格、合格、严格”五个同字词，请学生说一说“格”字在词中的位置和意义。“格”的义项：\n①品质、风度：性格\n②规格、格式：合格、严格、价格\n③格子：表格\n（2）请学生说说还有哪些带“格”字的词，教师列在黑板上，如果没有，可补充下列真假同字词，最后请学生判断正误，教师给出正确答案。\n格子　格屋（×）　格外　格式\n风格　资格　明格（×）　及格\n（3）请学生完成“选词填空”练习，教师给出答案。\n参考答案：①表格　②合格　③价格　④严格　⑤性格"
+   },
+   {
+    "title_zh": "6 补充课堂活动",
+    "body_zh": "请学生4人一组，参考课文3、课文4、课文5的内容，准备一段关于丽江的介绍，让更多的人来丽江旅游，最后请每组的代表给全班介绍一下。"
+   },
+   {
+    "title_zh": "7 文化",
+    "body_zh": "教师引导学生了解中国的少数民族，可根据需求和时间安排，进行以下参考活动：\n• 展示图片，认识中国主要的几个少数民族；\n• 认识少数民族的服装、艺术文化、食品、节日、语言文字；\n• 利用人民币实物，请学生猜一猜人民币上的文字属于哪个少数民族；\n• 请学生介绍一下自己国家的民族情况。"
+   },
+   {
+    "title_zh": "8 布置作业",
+    "body_zh": "• 每个生词写3遍；\n• 选择一个旅行人物的照片，介绍一下他／她，大约2分钟。"
+   }
+  ],
+  "notes_zh": [
+   "比一比：究竟—到底——按照教材中的辨析步骤进行。（语言点（3）⑤）",
+   "“格”的义项：①品质、风度：性格　②规格、格式：合格、严格、价格　③格子：表格",
+   "真假同字词：格子　格屋（×）　格外　格式　风格　资格　明格（×）　及格"
+  ],
+  "warmup_answers_zh": [
+   "热身1答案：①E　②F　③C　④B　⑤A　⑥D"
+  ],
+  "text_questions": [
+   {
+    "text": 1,
+    "q_zh": "路上有加油站吗？在哪儿？"
+   },
+   {
+    "text": 1,
+    "q_zh": "小张的航班是几点的？"
+   },
+   {
+    "text": 1,
+    "q_zh": "加完油怎么上高速公路？"
+   },
+   {
+    "text": 2,
+    "q_zh": "女儿经常去旅行吗？"
+   },
+   {
+    "text": 2,
+    "q_zh": "这次放假他们全家准备去哪儿旅行？"
+   },
+   {
+    "text": 2,
+    "q_zh": "他们决定什么时候告诉女儿去旅行的消息？"
+   },
+   {
+    "text": 3,
+    "q_zh": "照片上那个人是谁？"
+   },
+   {
+    "text": 3,
+    "q_zh": "那个人是一个有趣的人吗？为什么？"
+   },
+   {
+    "text": 3,
+    "q_zh": "安娜把什么丢了？最后是怎么找到的？"
+   },
+   {
+    "text": 4,
+    "q_zh": "冬天坐火车从北方到南方，窗外的景色有什么变化？"
+   },
+   {
+    "text": 4,
+    "q_zh": "南方的汤有哪些特点？"
+   },
+   {
+    "text": 4,
+    "q_zh": "南方话跟北方话一样吗？容易听懂吗？"
+   },
+   {
+    "text": 5,
+    "q_zh": "放假的时候，她会去做什么？"
+   },
+   {
+    "text": 5,
+    "q_zh": "什么小吃给她的印象最深？"
+   },
+   {
+    "text": 5,
+    "q_zh": "湖南菜的辣与其他地方的辣有哪些不同？"
+   }
+  ]
+ },
+ "workbook": {
+  "ref": {
+   "book": "workbook",
+   "pages": [
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103
+   ]
+  },
+  "sections": [
+   {
+    "n": "一、听力 第一部分",
+    "type_zh": "听力 第一部分",
+    "instruction_zh": "第1–5题：判断对错。",
+    "items": [
+     {
+      "n": "例1",
+      "zh": "★他打算下午去银行。",
+      "transcript_zh": "我想去办个信用卡，今天下午你有时间吗？陪我去一趟银行？",
+      "answer": "✓",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        94
+       ]
+      }
+     },
+     {
+      "n": "例2",
+      "zh": "★他喜欢看电视广告。",
+      "transcript_zh": "现在我很少看电视，其中一个原因是，广告太多了，不管什么时间，也不管什么节目，只要你打开电视，总能看到那么多的广告，浪费我的时间。",
+      "answer": "×",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        94
+       ]
+      }
+     },
+     {
+      "n": 1,
+      "zh": "★他们在火车上。",
+      "transcript_zh": "各位乘客，你们好，感谢大家乘坐本次航班。我们为您准备了饮料和小吃，请您在座位上等一下，工作人员会送到您身边。",
+      "answer": "×",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        133,
+        135
+       ]
+      }
+     },
+     {
+      "n": 2,
+      "zh": "★大家受到了表扬。",
+      "transcript_zh": "大家干得非常好，我们已经提前完成了全年任务，感谢大家这几个月来的努力工作！好，现在我代表公司祝贺大家顺利完成任务！",
+      "answer": "✓",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        133,
+        135
+       ]
+      }
+     },
+     {
+      "n": 3,
+      "zh": "★他暑假想去云南旅行。",
+      "transcript_zh": "我打算去云南玩儿，听说那边四季如春，不仅风景美，而且当地少数民族都非常热情，相信这个暑假会十分有趣。",
+      "answer": "✓",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        133,
+        135
+       ]
+      }
+     },
+     {
+      "n": 4,
+      "zh": "★大门钥匙只有一把。",
+      "transcript_zh": "给，这是家里大门的钥匙，你和你姐一人一把。这把小的是你房间的，拿好了，别弄丢了。",
+      "answer": "×",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        133,
+        135
+       ]
+      }
+     },
+     {
+      "n": 5,
+      "zh": "★加油站不允许打手机。",
+      "transcript_zh": "在加油站或者离加油站很近的地方抽烟、打手机，是很危险的。因此，法律规定加油站禁止抽烟和使用手机。",
+      "answer": "✓",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        133,
+        135
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "一、听力 第二部分",
+    "type_zh": "听力 第二部分",
+    "instruction_zh": "第6–12题：请选出正确答案。",
+    "items": [
+     {
+      "n": "例",
+      "zh": "男的主要是什么意思？",
+      "transcript_zh": "女：该加油了，去机场的路上有加油站吗？ 男：有，你放心吧。 问：男的主要是什么意思？",
+      "options": {
+       "A": "去机场",
+       "B": "快到了",
+       "C": "油是满的",
+       "D": "有加油站"
+      },
+      "answer": "D",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        95
+       ]
+      }
+     },
+     {
+      "n": 6,
+      "zh": "男的怎么了？",
+      "options": {
+       "A": "汽车坏了",
+       "B": "行李丢了",
+       "C": "航班错过了",
+       "D": "上班迟到了"
+      },
+      "transcript_zh": "女：你不是出差了吗？怎么还在这里？ 男：我是准时出发的，可是路上堵车。我到机场时，我要坐的飞机已经起飞了。 问：男的怎么了？",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        133,
+        135
+       ]
+      }
+     },
+     {
+      "n": 7,
+      "zh": "女的为什么觉得儿子可怜？",
+      "options": {
+       "A": "工资低",
+       "B": "没有孩子",
+       "C": "妻子爱买衣服",
+       "D": "妻子很懒"
+      },
+      "transcript_zh": "男：听说你儿子去年结婚了，现在他生活不错吧。 女：别提了，他怪可怜的。他妻子太懒，不做饭，不洗衣服，连孩子也不带。 问：女的为什么觉得儿子可怜？",
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        133,
+        135
+       ]
+      }
+     },
+     {
+      "n": 8,
+      "zh": "男的想要干什么？",
+      "options": {
+       "A": "报名旅行",
+       "B": "考普通话",
+       "C": "参加面试",
+       "D": "检查网站"
+      },
+      "transcript_zh": "男：你好，我想报名参加这个月的普通话水平考试。 女：对不起，报名工作今天上午刚结束。下次考试的报名时间您可以上我们的网站查一下。 问：男的想要干什么？",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        133,
+        135
+       ]
+      }
+     },
+     {
+      "n": 9,
+      "zh": "那个笑话是在哪儿看到的？",
+      "options": {
+       "A": "书里",
+       "B": "飞机上",
+       "C": "网上",
+       "D": "电梯里"
+      },
+      "transcript_zh": "男：这个笑话确实有意思，你在哪里看到的？ 女：有一个网站，里面有很多有趣的笑话，我现在就把网址发给你。 问：那个笑话是在哪儿看到的？",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        133,
+        135
+       ]
+      }
+     },
+     {
+      "n": 10,
+      "zh": "钥匙在哪儿？",
+      "options": {
+       "A": "桌子上",
+       "B": "包里",
+       "C": "银行里",
+       "D": "门上"
+      },
+      "transcript_zh": "女：你看见我的钥匙了吗？刚刚我去银行存钱时，记得放到包里了。这会儿就找不到了。 男：别找了，你看，在门上挂着呢。 问：钥匙在哪儿？",
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        134,
+        135
+       ]
+      }
+     },
+     {
+      "n": 11,
+      "zh": "根据对话，哪个对男的身体有好处？",
+      "options": {
+       "A": "抽烟",
+       "B": "吃咸的",
+       "C": "少吃辣",
+       "D": "打针"
+      },
+      "transcript_zh": "男：医生，我的病严重吗？是不是需要打针啊？ 女：不是很严重，我给你开点儿药，回去好好休息。另外，最近不要抽烟，少吃咸的和辣的。 问：根据对话，哪个对男的身体有好处？",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        134,
+        135
+       ]
+      }
+     },
+     {
+      "n": 12,
+      "zh": "男的是什么心情？",
+      "options": {
+       "A": "高兴",
+       "B": "抱歉",
+       "C": "难过",
+       "D": "失望"
+      },
+      "transcript_zh": "男：这次活动非常成功，大家顺利完成了公司交给的任务。辛苦了，祝贺你们！ 女：能有这么大的成绩，主要是每个人工作都非常努力。来，干一杯！ 问：男的是什么心情？",
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        134,
+        135
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "一、听力 第三部分",
+    "type_zh": "听力 第三部分",
+    "instruction_zh": "第13–22题：请选出正确答案。",
+    "items": [
+     {
+      "n": "例",
+      "zh": "会议几点开始？",
+      "transcript_zh": "男：把这个材料复印5份，一会儿拿到会议室发给大家。 女：好的。会议是下午三点吗？ 男：改了。三点半，推迟了半个小时。 女：好，602会议室没变吧？ 男：对，没变。 问：会议几点开始？",
+      "options": {
+       "A": "两点",
+       "B": "3点",
+       "C": "15：30",
+       "D": "18：00"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        96
+       ]
+      }
+     },
+     {
+      "n": 13,
+      "zh": "男的希望女的怎么样？",
+      "options": {
+       "A": "戴上帽子",
+       "B": "少带东西",
+       "C": "带些水果",
+       "D": "带行李箱"
+      },
+      "transcript_zh": "男：东西都收拾好了吗？可以出发了吧？ 女：马上，再拿些吃的就行了。 男：少拿点儿，别带太多。 女：我知道，就拿两瓶水，两包饼干。 问：男的希望女的怎么样？",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        134,
+        135
+       ]
+      }
+     },
+     {
+      "n": 14,
+      "zh": "男的刚才担心什么？",
+      "options": {
+       "A": "机场太远",
+       "B": "汽车没油",
+       "C": "航班推迟",
+       "D": "忘了时间"
+      },
+      "transcript_zh": "男：油箱里剩的油不多了，看看哪儿有加油站。 女：前面就有一个，大概有四五公里远。 男：好，那我就放心了，刚才我还有点儿担心，怕开着开着没油了。 女：我们先去加油，航班是十点的，来得及。 问：男的刚才担心什么？",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        134,
+        135
+       ]
+      }
+     },
+     {
+      "n": 15,
+      "zh": "女的认为什么很危险？",
+      "options": {
+       "A": "骑马",
+       "B": "超车",
+       "C": "河边打球",
+       "D": "江里游泳"
+      },
+      "transcript_zh": "女：你会游泳吗？ 男：当然会，我是在长江边上长大的，小时候常去江里游泳。 女：真的？那会不会很危险？ 男：江边长大的孩子从小就习惯了，没什么危险的。 问：女的认为什么很危险？",
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        134,
+        135
+       ]
+      }
+     },
+     {
+      "n": 16,
+      "zh": "女的觉得那家饭馆儿怎么样？",
+      "options": {
+       "A": "烤鸭贵",
+       "B": "服务好",
+       "C": "座位少",
+       "D": "关门早"
+      },
+      "transcript_zh": "男：对面新开了家饭馆儿，你去过吗？ 女：去过，那儿菜不错，特别是烤鸭，服务态度也挺好，就是去晚了要等座位。 男：那我这会儿去估计有很多人了。 女：是，你想去的话要早点儿出发。 问：女的觉得那家饭馆儿怎么样？",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        134,
+        135
+       ]
+      }
+     },
+     {
+      "n": 17,
+      "zh": "女的今天为什么要打扮？",
+      "options": {
+       "A": "有约会",
+       "B": "去面试",
+       "C": "去存钱",
+       "D": "参加舞会"
+      },
+      "transcript_zh": "男：你今天打扮得真漂亮，有约会啊？ 女：不是，下午有家银行通知我去面试，所以就打扮了一下。 男：银行挺好的，紧张不？ 女：不紧张，这是我这个星期的第四个面试了。 问：女的今天为什么要打扮？",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        134,
+        135
+       ]
+      }
+     },
+     {
+      "n": 18,
+      "zh": "女的怎么了？",
+      "options": {
+       "A": "很聪明",
+       "B": "很有趣",
+       "C": "很兴奋",
+       "D": "丢钱了"
+      },
+      "transcript_zh": "男：你怎么这么兴奋？不就是收拾完房间了吗？ 女：你猜我收拾房间时找到什么了？ 男：难道找到钱了？ 女：你真聪明，我在咱们床底下找到一百块钱。 男：一说起钱，我突然想起来我昨天衣服口袋里少了一百。那就是我的钱！ 问：女的怎么了？",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        135
+       ]
+      }
+     },
+     {
+      "n": 19,
+      "zh": "人们干杯时会怎样？",
+      "options": {
+       "A": "看到酒的颜色",
+       "B": "感觉到酒的香气",
+       "C": "尝到酒的味道",
+       "D": "听到好听的声音"
+      },
+      "transcript_zh": "人们在喝酒时，用眼睛能欣赏到酒的颜色，用鼻子可以感觉到酒的香气，用嘴能尝到酒的味道，只剩下耳朵没事做，所以它不太高兴。可当我们一干杯，杯子就会发出好听的声音，耳朵一听到，就高兴起来了。这也许就是中国人喝酒时总喜欢干杯的原因。 问：人们干杯时会怎样？",
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        135
+       ]
+      }
+     },
+     {
+      "n": 20,
+      "zh": "这段话主要讲中国人喝酒时：",
+      "options": {
+       "A": "别抽烟",
+       "B": "要小心",
+       "C": "要慢点儿喝",
+       "D": "为什么干杯"
+      },
+      "transcript_zh": "人们在喝酒时，用眼睛能欣赏到酒的颜色，用鼻子可以感觉到酒的香气，用嘴能尝到酒的味道，只剩下耳朵没事做，所以它不太高兴。可当我们一干杯，杯子就会发出好听的声音，耳朵一听到，就高兴起来了。这也许就是中国人喝酒时总喜欢干杯的原因。 问：这段话主要讲中国人喝酒时：",
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        135
+       ]
+      }
+     },
+     {
+      "n": 21,
+      "zh": "南方很多地方，2月会怎么样？",
+      "options": {
+       "A": "树变绿了",
+       "B": "都是晴天",
+       "C": "慢慢变冷",
+       "D": "突然下雪"
+      },
+      "transcript_zh": "从中国的最南边到最北边有五千多公里，因此南北方的气候有很大区别。南方很多地方的冬天一点儿也不冷，温度跟北方春天差不多，2月份的时候已经很暖和，可以只穿一件毛衣了，树开始长出新叶子，路边的花也开了，非常漂亮。所以很多北方人都喜欢这个时候去南方旅行，而南方人也喜欢这个时候去北方滑雪和看冰灯。 问：南方很多地方，2月会怎么样？",
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        135
+       ]
+      }
+     },
+     {
+      "n": 22,
+      "zh": "这段话主要介绍什么？",
+      "options": {
+       "A": "二月的天气",
+       "B": "南北的不同",
+       "C": "南方的冬天",
+       "D": "南方的风景"
+      },
+      "transcript_zh": "从中国的最南边到最北边有五千多公里，因此南北方的气候有很大区别。南方很多地方的冬天一点儿也不冷，温度跟北方春天差不多，2月份的时候已经很暖和，可以只穿一件毛衣了，树开始长出新叶子，路边的花也开了，非常漂亮。所以很多北方人都喜欢这个时候去南方旅行，而南方人也喜欢这个时候去北方滑雪和看冰灯。 问：这段话主要介绍什么？",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        135
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第一部分（23–26）",
+    "type_zh": "阅读 第一部分",
+    "instruction_zh": "第23–26题：选词填空。",
+    "word_bank": [
+     [
+      "A 究竟",
+      "B 可怜",
+      "C 小吃",
+      "D 坚持",
+      "E 酸"
+     ]
+    ],
+    "items": [
+     {
+      "n": "例",
+      "zh": "她每天都（　）走路上下班，所以身体一直很不错。",
+      "answer": "D",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        97
+       ]
+      }
+     },
+     {
+      "n": 23,
+      "zh": "超市外边那只小狗的样子看上去很（　），它是不是饿了？",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        135
+       ]
+      }
+     },
+     {
+      "n": 24,
+      "zh": "吃不到葡萄就说葡萄（　），这句话的意思是自己没有或者得不到的东西，就说它不好。",
+      "answer": "E",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        135
+       ]
+      }
+     },
+     {
+      "n": 25,
+      "zh": "我们学校对面有条（　）街，读研究生的时候，我常和同学一起去那儿吃东西。现在毕业都这么多年了，也不知道那里变成什么样子了。",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        135
+       ]
+      }
+     },
+     {
+      "n": 26,
+      "zh": "我们常用“一问三不知”来表示一个人什么都不知道。可是，这“三不知”（　）是指哪三个不知道呢？原来，这“三不知”是指不知道一件事情发生的原因、经过和结果。",
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        135
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第一部分（27–30）",
+    "type_zh": "阅读 第一部分",
+    "instruction_zh": "第27–30题：选词填空。",
+    "word_bank": [
+     [
+      "A 出发",
+      "B 汤",
+      "C 温度",
+      "D 登机牌",
+      "E 对面"
+     ]
+    ],
+    "items": [
+     {
+      "n": "例",
+      "zh": "A：今天真冷啊，好像白天最高（　）才2℃。 B：刚才电视里说明天更冷。",
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        98
+       ]
+      }
+     },
+     {
+      "n": 27,
+      "zh": "A：这张画儿挂这儿可以吗？ B：画儿有点儿大，而这个地方太小，还是挂（　）的墙上吧。",
+      "answer": "E",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        135
+       ]
+      }
+     },
+     {
+      "n": 28,
+      "zh": "A：10点的航班，8点（　）来得及吗？ B：放心吧，来得及，这儿离首都机场很近，半个小时就能到。",
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        135
+       ]
+      }
+     },
+     {
+      "n": 29,
+      "zh": "A：我今天做的酸菜鱼怎么样？你尝了吗？ B：还可以，鱼肉很鲜，如果（　）里再加一点儿盐就更好了。",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        135
+       ]
+      }
+     },
+     {
+      "n": 30,
+      "zh": "A：我要去安检了，你们快回去吧。 B：拿好护照和（　），下了飞机就给我和你妈发个短信。",
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        135
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第二部分",
+    "type_zh": "阅读 第二部分",
+    "instruction_zh": "第31–34题：排列顺序。",
+    "items": [
+     {
+      "n": "例",
+      "zh": "",
+      "options": {
+       "A": "可是今天起晚了",
+       "B": "平时我骑自行车上下班",
+       "C": "所以就打车来公司"
+      },
+      "answer": "BAC",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        99
+       ]
+      }
+     },
+     {
+      "n": 31,
+      "zh": "",
+      "options": {
+       "A": "老高最爱和儿子一起做游戏",
+       "B": "谈起他，大家都认为他是个合格的好父亲",
+       "C": "还能耐心回答儿子的所有问题"
+      },
+      "answer": "ACB",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        135
+       ]
+      }
+     },
+     {
+      "n": 32,
+      "zh": "",
+      "options": {
+       "A": "而各民族的共同语是汉语普通话",
+       "B": "中国是一个多民族的国家",
+       "C": "各民族大多有自己的语言"
+      },
+      "answer": "BCA",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        135
+       ]
+      }
+     },
+     {
+      "n": 33,
+      "zh": "",
+      "options": {
+       "A": "我代表学校向今年毕业的同学表示祝贺",
+       "B": "也希望你们以后有时间多回学校来看看",
+       "C": "祝你们在今后取得更大的成绩"
+      },
+      "answer": "ACB",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        135
+       ]
+      }
+     },
+     {
+      "n": 34,
+      "zh": "",
+      "options": {
+       "A": "人一定要旅行，旅行能丰富你的经历",
+       "B": "还能让你变得更自信",
+       "C": "不仅会让你对很多事情有新的认识和看法"
+      },
+      "answer": "ACB",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        135
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第三部分",
+    "type_zh": "阅读 第三部分",
+    "instruction_zh": "第35–43题：请选出正确答案。",
+    "items": [
+     {
+      "n": "例",
+      "zh": "她很活泼，说话很有趣，总能给我们带来快乐，我们都很喜欢和她在一起。 ★她是个什么样的人？",
+      "options": {
+       "A": "幽默",
+       "B": "马虎",
+       "C": "骄傲",
+       "D": "害羞"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        100
+       ]
+      }
+     },
+     {
+      "n": 35,
+      "zh": "长江是亚洲第一长河，全长6000多公里，由西而东，经过四川、云南、江西等11个省市，最后经过上海的入海口流入大海——东海。 ★根据这段话，长江：",
+      "options": {
+       "A": "世界最长",
+       "B": "从北往南流",
+       "C": "长6000多里",
+       "D": "经过上海市"
+      },
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        135
+       ]
+      }
+     },
+     {
+      "n": 36,
+      "zh": "山东烟台市是中国著名的“苹果之都”。由于气候等自然条件较好，那儿的苹果个儿大，味道香甜，颜色也漂亮，吸引了很多人前去购买。 ★烟台：",
+      "options": {
+       "A": "空气好",
+       "B": "城市大",
+       "C": "苹果有名",
+       "D": "风景漂亮"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        135
+       ]
+      }
+     },
+     {
+      "n": 37,
+      "zh": "只有动作没有感情的表演是没有生命力的，一个好的演员，想要拉近和观众的距离，就要学会用感情和观众进行对话与交流。 ★表演要具有生命力，应该重视什么？",
+      "options": {
+       "A": "语言",
+       "B": "感情",
+       "C": "动作",
+       "D": "感觉"
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        135
+       ]
+      }
+     },
+     {
+      "n": 38,
+      "zh": "我家后面院子里有一棵树，几乎有两层楼那么高，树叶又大又厚。夏天我们就把桌子、椅子搬到树下，一家人一起吃西瓜、聊天儿，困了就在树下睡一觉，非常凉快。 ★根据这段话，可以知道那棵树：",
+      "options": {
+       "A": "很矮",
+       "B": "在后院",
+       "C": "是苹果树",
+       "D": "叶子掉光了"
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        135
+       ]
+      }
+     },
+     {
+      "n": 39,
+      "zh": "听广播说今天晚上首都体育馆有表演，等活动结束的时候人肯定很多，你和女儿还是提前一点儿出发吧，否则路过那儿时会堵车。 ★提前出发是为了：",
+      "options": {
+       "A": "参加活动",
+       "B": "观看表演",
+       "C": "错开堵车",
+       "D": "去接女儿"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        135
+       ]
+      }
+     },
+     {
+      "n": 40,
+      "zh": "高速公路的发展情况往往代表着一个国家的交通及经济发展水平，2013年中国的高速公路已经达到十万多公里。高速公路一般车速都在每小时80公里以上，最高可以达到每小时120公里。高速公路既有优点也有缺点，在高速公路上不仅开车速度快，而且也安全方便，但是它对环境影响大、收费也比较高。 ★通过高速公路，可以判断一个国家的：",
+      "options": {
+       "A": "经济水平",
+       "B": "教育情况",
+       "C": "汽车数量",
+       "D": "环境质量"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        135
+       ]
+      }
+     },
+     {
+      "n": 41,
+      "zh": "高速公路的发展情况往往代表着一个国家的交通及经济发展水平，2013年中国的高速公路已经达到十万多公里。高速公路一般车速都在每小时80公里以上，最高可以达到每小时120公里。高速公路既有优点也有缺点，在高速公路上不仅开车速度快，而且也安全方便，但是它对环境影响大、收费也比较高。 ★高速公路有什么优点？",
+      "options": {
+       "A": "不堵车",
+       "B": "不太影响环境",
+       "C": "行车又快又方便",
+       "D": "收费少"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        135
+       ]
+      }
+     },
+     {
+      "n": 42,
+      "zh": "地球上所有的国家加起来只有200多个，而全世界已经知道的语言却超过了5000种。语言不仅可以用来交流，更是民族文化不可缺少的一部分。但可惜的是，由于不注意保护和使用人数的减少，许多民族的语言慢慢成为了历史。如果我们再不努力把那些语言保护起来，那么以后我们对它们的全部了解就会只剩下一个名字。 ★作者对什么觉得很可惜？",
+      "options": {
+       "A": "调查民族人数",
+       "B": "忘记民族文化",
+       "C": "语言数量减少",
+       "D": "缺少语言环境"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        135
+       ]
+      }
+     },
+     {
+      "n": 43,
+      "zh": "地球上所有的国家加起来只有200多个，而全世界已经知道的语言却超过了5000种。语言不仅可以用来交流，更是民族文化不可缺少的一部分。但可惜的是，由于不注意保护和使用人数的减少，许多民族的语言慢慢成为了历史。如果我们再不努力把那些语言保护起来，那么以后我们对它们的全部了解就会只剩下一个名字。 ★这段话主要介绍什么？",
+      "options": {
+       "A": "文化的交流",
+       "B": "国家的责任",
+       "C": "语言的作用",
+       "D": "语言的保护"
+      },
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        135
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "三、书写 第一部分",
+    "type_zh": "书写 第一部分",
+    "instruction_zh": "第44–48题：完成句子。",
+    "items": [
+     {
+      "n": "例",
+      "zh": "那座桥　800年的　历史　有　了",
+      "answer": "那座桥有800年的历史了。",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        102
+       ]
+      }
+     },
+     {
+      "n": 44,
+      "zh": "15分钟　降落　就在　首都机场　飞机　后",
+      "answer": "飞机15分钟后就在首都机场降落。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        135
+       ]
+      }
+     },
+     {
+      "n": 45,
+      "zh": "有趣　讲的　很　那名　笑话　导游",
+      "answer": "那名导游讲的笑话很有趣。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        135
+       ]
+      }
+     },
+     {
+      "n": 46,
+      "zh": "发生　这儿　了　事情　什么　究竟",
+      "answer": "这儿究竟发生了什么事情？",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        135
+       ]
+      }
+     },
+     {
+      "n": 47,
+      "zh": "他　客厅　干净的　收拾得　挺　把",
+      "answer": "他把客厅收拾得挺干净的。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        135
+       ]
+      }
+     },
+     {
+      "n": 48,
+      "zh": "一个　离　这儿　有　加油站　两公里",
+      "answer": "离这儿两公里有一个加油站。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        135
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "三、书写 第二部分",
+    "type_zh": "书写 第二部分",
+    "instruction_zh": "第49–50题：看图，用词造句。",
+    "items": [
+     {
+      "n": "例",
+      "zh": "乒乓球",
+      "picture_desc_en": "a young woman holding a table-tennis bat, about to serve",
+      "answer": "她很喜欢打乒乓球。",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        103
+       ]
+      }
+     },
+     {
+      "n": 49,
+      "zh": "存",
+      "picture_desc_en": "a smiling woman and a little girl at a table, the girl putting coins into a piggy bank the woman holds",
+      "answer": "女儿高兴地把零钱存了起来，等着以后买漂亮的衣服。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        135
+       ]
+      }
+     },
+     {
+      "n": 50,
+      "zh": "对话",
+      "picture_desc_en": "people talking in a dimly lit bar; a man and a woman in the foreground face each other while another woman stands in the background",
+      "answer": "那个女人因为离得太远，没听清楚他们的对话。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        135
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "answers_ref": {
+   "book": "teacher",
+   "pages": [
+    133,
+    134,
+    135
+   ]
+  }
+ },
+ "unclear": [
+  "Аудио файлын нэр мэдэгдэхгүй тул audio талбар орхисон. Сурах бичгийн CD тэмдэг: 课文1–5 = 20-1…20-5; дасгалын номын 听力 第一/二/三部分 = 20-1, 20-2, 20-3.",
+  "Сурах бичгийн 根据课文内容回答问题 课文1 ①② (PDF х.146): «李进因为什么事情担心？他和王静是怎么解决的？», «王静坐的航班时间发生了什么变化？她和李进大约多长时间能到达机场？» — харин 课文1-ийн дүрүүд нь 小张 ба 朋友 (李进/王静 биш), нислэг нь 小张-ийнх. Номд байгаагаар нь оруулсан.",
+  "Багшийн номын 课文扩展练习 课文1 (PDF х.103): «所以8点到应该没问题» — сурах бичгийн 课文1: «所以九点半以前到就应该没问题». Номын хооронд зөрүү.",
+  "Багшийн номын 课文 асуулт 课文4 (PDF х.103): «冬天坐火车从北方到南方，窗外的景色有什么变化？» — сурах бичгийн 课文4-д «每年三四月份的时候»; 课文5-ын асуултууд «她» гэсэн, бичвэрт «我» (хүйс заагаагүй).",
+  "Багшийн номын 课文 асуултуудын (text_questions) хариулт тус бүрчлэн хэвлэгдээгүй («教师给出答案»); оронд нь 课文扩展练习-ын 复述 догол мөрүүд teacher.steps «4 课文»-д.",
+  "课文2-ын пиньинь (PDF х.142, 400dpi): эхний мөрөнд «dào shíhòu» (hòu-д 4-р хөг) гэж хэвлэгдсэн, 5-р мөрөнд «Nà shíhou» — номд байгаагаар.",
+  "生词 4 高速公路 gāosù gōnglù — үгийн ай (pos) хэвлэгдээгүй (зөвхөн «expressway»), PDF х.141 400dpi-аар шалгасан; pos талбар орхисон.",
+  "生词 8 怪 — * тэмдэгтэй (star: true); багшийн ном: «了解1个非大纲词汇的意义：怪», «掌握本课29个四级大纲词汇» → 29+1 = 30 生词.",
+  "Сурах бичигт 专有名词 зөвхөн 课文1-д (长江、长江大桥、首都机场). 孙月、马克、安娜、丽江、广西、上海、湖南 жагсаагдаагүй.",
+  "练习2 ④ (PDF х.150, 400dpi): «我们必须坚持学习。努力获得新的知识，…» — өгүүлбэрийн дунд «。» хэвлэгдсэн; номд байгаагаар.",
+  "注释3 比一比 做一做 (4) (PDF х.146): «只有坚持____，才有会有希望。» — «才有会有» гэж хэвлэгдсэн (номын алдаа байж болох); номд байгаагаар.",
+  "注释3 比一比 做一做 «选词填空 Tick or cross»: (1) 究竟✓ 到底✓, (2) 究竟× 到底✓ — номд жишээ болгон хэвлэгдсэн; (3)–(5)-ын хариулт сурах бичиг, багшийн номд хэвлэгдээгүй (багшийн ном: «按照教材中的辨析步骤进行»).",
+  "Сурах бичгийн 练一练 (5 дүрэм × 3), 回答问题 (课文1–3 — 6, 课文4–5 — 4), 练习1 复述 ба 练习2 选词填空 (10) — хариулт сурах бичиг, багшийн номд хэвлэгдээгүй тул answer талбаргүй. 扩展 做一做-ийн хариулт багшийн номд (PDF х.104) бий.",
+  "注释2 一……就…… — номд (1)(2) «紧接着发生», (3)–(5) «要是……就……» хэсгийн дор; note_zh-д хэсгээр нь тэмдэглэсэн. (5) «妈妈一进房间，他就把手机装了起来» нь утгаараа «紧接着发生»-д ойр боловч номд 2-р хэсгийн дор байрласан.",
+  "注释3 究竟-ийн 比一比 (究竟—到底) хэсгийг explanation_zh/en болон examples (дугааргүй, note_zh «比一比…»)-д оруулсан; ★ тэмдэг байхгүй.",
+  "扩展 同字词 (格：性格、价格、表格、合格、严格)-ийг textbook.characters-д, 做一做-г exercises-д оруулсан.",
+  "Багшийн ном 生词讲解 (PDF х.96): «香（香水、热身图片C，教师做“闻”的动作）» — 热身 C нь шарсан нугас (烤鸭); номд байгаагаар.",
+  "Багшийн номын 热身1 хариулт: ①收拾E ②小吃F ③烤鸭C ④加油站B ⑤高速公路A ⑥干杯D — зургийн тайлбартай нийцэж байна (E: зочид буудлын өрөө цэвэрлэж буй хүн).",
+  "Сурах бичгийн 课文4 ба 课文5 — гарчиггүй 短文 — lines-ийг өгүүлбэрээр хуваасан (номд нэг догол мөр); пиньинь бичвэрийг мөн адил хуваасан. 拼音课文-ын гарчгийн пиньинь (Xiǎo Zhāng qù Běijīng, péngyou sòng Xiǎo Zhāng qù jīchǎng / Sūn Yuè hé zhàngfu jìhuà fàng hánjià dài nǚ'ér qù lǚxíng / Ānnà xiàng Mǎkè jièshào qù Lìjiāng lǚxíng de jīngyàn) ба ярилцагчийн нэрийн пиньинь (Péngyou, Xiǎo Zhāng, Sūn Yuè, Zhàngfu, Mǎkè, Ānnà) схемд талбаргүй.",
+  "Дасгалын ном 听力 第二/三部分 — номд зөвхөн сонголтууд хэвлэгдсэн; item.zh-д багшийн номын хавсралтын «问：» асуултыг (19–22-т дугаартай асуултыг) оруулсан, transcript_zh-д бүтнээр (19–20, 21–22-т нийтлэг бичвэрийг тус бүрт давтсан).",
+  "Дасгалын ном 听力 18: сонголт D «丢钱了», бичвэрт эр хүн мөнгөө алдсан; хариулт C «很兴奋» (эмэгтэй).",
+  "Дасгалын ном 阅读 35: сонголт C «长6000多里» (бичвэрт «6000多公里») — зориудын буруу сонголт; хариулт D.",
+  "Дасгалын ном 阅读 第一部分 хоёр бүлэг (23–26, 27–30) тус тусын үгийн сантай тул хоёр хэсэг болгон оруулсан; 阅读 第二部分 (31–34)-ийн item.zh хоосон, хэсгүүд options-д.",
+  "Дасгалын ном 书写 44–50-ын хариулт багшийн номын хавсралтад «参考答案» гэж хэвлэгдсэн (PDF х.135); 49–50 (看图，用词造句) нээлттэй даалгавар тул хариулт нь зөвхөн жишээ. 49, 50-ын picture_desc_en — зургаас (хар цагаан).",
+  "Дасгалын номд 复习 хэсэг байхгүй (听力 3 хэсэг, 阅读 3 хэсэг, 书写 2 хэсэг, нийт 50 асуулт).",
+  "Дасгалын номын 例-ийн хариулт (✓/×, D, C, BAC …) дасгалын номд өөрт нь хэвлэгдсэн (answer_ref: workbook)."
+ ],
+ "verified_pages": [
+  94,
+  95,
+  96,
+  97,
+  98,
+  99,
+  100,
+  101,
+  102,
+  103,
+  104,
+  133,
+  134,
+  135,
+  140,
+  141,
+  142,
+  143,
+  144,
+  145,
+  146,
+  147,
+  148,
+  149,
+  150,
+  151,
+  152,
+  153
+ ],
+ "schema_version": 1
+}

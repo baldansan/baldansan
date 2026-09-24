@@ -1,0 +1,2257 @@
+{
+ "level": "hsk4",
+ "lesson": 8,
+ "book": "HSK4A",
+ "title_zh": "生活中不缺少美",
+ "title_pinyin": "Shēnghuó zhōng bù quēshǎo měi",
+ "title_en": "Beauty is not rare in life",
+ "textbook": {
+  "ref": {
+   "book": "textbook",
+   "pages": [
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110
+   ]
+  },
+  "warmup": [
+   {
+    "instruction_zh": "给下边的词语选择对应的图片",
+    "instruction_en": "Match the pictures with the words.",
+    "items": [
+     "①大使馆 dàshǐguǎn",
+     "②师傅 shīfu",
+     "③景色 jǐngsè",
+     "④生命 shēngmìng",
+     "⑤巧克力 qiǎokèlì",
+     "⑥堵车 dǔ chē"
+    ],
+    "pictures_desc_en": [
+     "A: a shop display of trays with many assorted chocolates and truffles",
+     "B: a clear turquoise lake surrounded by trees in autumn colors",
+     "C: a road jammed with rows of cars and buses",
+     "D: two cupped hands holding soil with a small green seedling",
+     "E: a low building with a Chinese national flag on a flagpole in front of a larger building",
+     "F: a green taxi with the driver leaning out of the window"
+    ]
+   },
+   {
+    "instruction_zh": "生活中的礼物",
+    "instruction_en": "Presents in your life.",
+    "items": [
+     "表格：| 什么时候送礼物 | 价格 | 什么时候看礼物 | 怎么送礼物 |",
+     "| 生日 □ | 越贵越好 □ | 马上打开看 □ | 当面送 □ |",
+     "| 结婚 □ | 不能太贵 □ | 回家自己看 □ | 邮寄 □ |",
+     "| 回国 □ | | | |",
+     "| 朋友心情不好 □ | 价格没关系 □ | 先放一段时间 □ | 让朋友帮我送 □ |"
+    ]
+   }
+  ],
+  "texts": [
+   {
+    "n": 1,
+    "title_zh": "李老师和高老师聊关于巧克力的事情",
+    "kind": "dialogue",
+    "lines": [
+     {
+      "speaker": "李老师",
+      "zh": "这种巧克力味道不错，你在哪儿买的？",
+      "pinyin": "Zhè zhǒng qiǎokèlì wèidào búcuò, nǐ zài nǎr mǎi de?"
+     },
+     {
+      "speaker": "高老师",
+      "zh": "不是我买的，是我女儿给我从国外带回来的礼物。",
+      "pinyin": "Bú shì wǒ mǎi de, shì wǒ nǚ’ér gěi wǒ cóng guówài dài huilai de lǐwù."
+     },
+     {
+      "speaker": "李老师",
+      "zh": "很多人出国后常常会买外国的巧克力，回来送给亲戚朋友。",
+      "pinyin": "Hěn duō rén chū guó hòu chángcháng huì mǎi wàiguó de qiǎokèlì, huílai sònggěi qīnqi péngyou."
+     },
+     {
+      "speaker": "高老师",
+      "zh": "是啊，因为很多人都爱吃巧克力，尤其是女性。",
+      "pinyin": "Shì a, yīnwèi hěn duō rén dōu ài chī qiǎokèlì, yóuqí shì nǚxìng."
+     },
+     {
+      "speaker": "李老师",
+      "zh": "这是为什么呢？",
+      "pinyin": "Zhè shì wèi shénme ne?"
+     },
+     {
+      "speaker": "高老师",
+      "zh": "巧克力大多是甜的，而很多女性都喜欢吃甜的。而且，听说伤心难过的时候吃块儿巧克力，还能使人的心情变得愉快。",
+      "pinyin": "Qiǎokèlì dàduō shì tián de, ér hěn duō nǚxìng dōu xǐhuan chī tián de. Érqiě, tīngshuō shāng xīn nánguò de shíhou chī kuàir qiǎokèlì, hái néng shǐ rén de xīnqíng biàn de yúkuài."
+     }
+    ],
+    "new_words": [
+     {
+      "n": 1,
+      "zh": "巧克力",
+      "pinyin": "qiǎokèlì",
+      "pos": "n.",
+      "en": "chocolate",
+      "text": 1
+     },
+     {
+      "n": 2,
+      "zh": "亲戚",
+      "pinyin": "qīnqi",
+      "pos": "n.",
+      "en": "relative, kinsfolk",
+      "text": 1
+     },
+     {
+      "n": 3,
+      "zh": "伤心",
+      "pinyin": "shāng xīn",
+      "pos": "adj.",
+      "en": "sad, sorrowful",
+      "text": 1
+     },
+     {
+      "n": 4,
+      "zh": "使",
+      "pinyin": "shǐ",
+      "pos": "v.",
+      "en": "to make, to cause",
+      "text": 1
+     },
+     {
+      "n": 5,
+      "zh": "心情",
+      "pinyin": "xīnqíng",
+      "pos": "n.",
+      "en": "mood, state of mind",
+      "text": 1
+     },
+     {
+      "n": 6,
+      "zh": "愉快",
+      "pinyin": "yúkuài",
+      "pos": "adj.",
+      "en": "glad, cheerful",
+      "text": 1
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "title_zh": "小夏和马克聊关于上次足球比赛的事情",
+    "kind": "dialogue",
+    "lines": [
+     {
+      "speaker": "小夏",
+      "zh": "这里的景色真美，空气也好。",
+      "pinyin": "Zhèli de jǐngsè zhēn měi, kōngqì yě hǎo."
+     },
+     {
+      "speaker": "马克",
+      "zh": "怎么样，心情好些了吗？",
+      "pinyin": "Zěnmeyàng, xīnqíng hǎoxiē le ma?"
+     },
+     {
+      "speaker": "小夏",
+      "zh": "好多了，上次足球比赛后，好久都没这么放松了。",
+      "pinyin": "Hǎoduō le, shàng cì zúqiú bǐsài hòu, háojiǔ dōu méi zhème fàngsōng le."
+     },
+     {
+      "speaker": "马克",
+      "zh": "你不要有压力，好好儿准备下次比赛就好了。",
+      "pinyin": "Nǐ búyào yǒu yālì, hǎohāor zhǔnbèi xià cì bǐsài jiù hǎo le."
+     },
+     {
+      "speaker": "小夏",
+      "zh": "这段时间我总是一个人坐在房间里回忆那次比赛。如果我们能再努力一点儿，就一定会多进一个球。",
+      "pinyin": "Zhè duàn shíjiān wǒ zǒngshì yí ge rén zuò zài fángjiān li huíyì nà cì bǐsài. Rúguǒ wǒmen néng zài nǔlì yìdiǎnr, jiù yídìng huì duō jìn yí ge qiú."
+     },
+     {
+      "speaker": "马克",
+      "zh": "事情已经发生了，过去的就让它成为过去吧。只要这次你好好儿准备，一定能把比赛踢好。",
+      "pinyin": "Shìqing yǐjīng fāshēng le, guòqù de jiù ràng tā chéngwéi guòqù ba. Zhǐyào zhè cì nǐ hǎohāor zhǔnbèi, yídìng néng bǎ bǐsài tīhǎo."
+     }
+    ],
+    "new_words": [
+     {
+      "n": 7,
+      "zh": "景色",
+      "pinyin": "jǐngsè",
+      "pos": "n.",
+      "en": "scene, view",
+      "text": 2
+     },
+     {
+      "n": 8,
+      "zh": "放松",
+      "pinyin": "fàngsōng",
+      "pos": "v.",
+      "en": "to relax",
+      "text": 2
+     },
+     {
+      "n": 9,
+      "zh": "压力",
+      "pinyin": "yālì",
+      "pos": "n.",
+      "en": "pressure, stress",
+      "text": 2
+     },
+     {
+      "n": 10,
+      "zh": "回忆",
+      "pinyin": "huíyì",
+      "pos": "v.",
+      "en": "to call to mind, to recall",
+      "text": 2
+     },
+     {
+      "n": 11,
+      "zh": "发生",
+      "pinyin": "fāshēng",
+      "pos": "v.",
+      "en": "to happen, to take place",
+      "text": 2
+     },
+     {
+      "n": 12,
+      "zh": "成为",
+      "pinyin": "chéngwéi",
+      "pos": "v.",
+      "en": "to become",
+      "text": 2
+     },
+     {
+      "n": 13,
+      "zh": "只要",
+      "pinyin": "zhǐyào",
+      "pos": "conj.",
+      "en": "as long as, provided",
+      "text": 2
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "title_zh": "马克和司机聊关于堵车的事情",
+    "kind": "dialogue",
+    "lines": [
+     {
+      "speaker": "马克",
+      "zh": "师傅，我去大使馆，你是不是走错了？",
+      "pinyin": "Shīfu, wǒ qù dàshǐguǎn, nǐ shì bu shì zǒucuò le?"
+     },
+     {
+      "speaker": "师傅",
+      "zh": "现在是上班时间，前面有点儿堵车，我们走另外一条路，距离差不多。",
+      "pinyin": "Xiànzài shì shàng bān shíjiān, qiánmiàn yǒudiǎnr dǔ chē, wǒmen zǒu lìngwài yì tiáo lù, jùlí chàbuduō."
+     },
+     {
+      "speaker": "马克",
+      "zh": "那就好，堵车浪费时间，遇到堵车，心情也“堵”。",
+      "pinyin": "Nà jiù hǎo, dǔ chē làngfèi shíjiān, yùdào dǔ chē, xīnqíng yě “dǔ”."
+     },
+     {
+      "speaker": "师傅",
+      "zh": "可不是！上班堵车怕迟到，下班堵车怕回家晚。每天在马路上开车，要想不遇到堵车，还真难。",
+      "pinyin": "Kěbúshi! Shàng bān dǔ chē pà chídào, xià bān dǔ chē pà huí jiā wǎn. Měi tiān zài mǎlù shang kāi chē, yào xiǎng bú yùdào dǔ chē, hái zhēn nán."
+     },
+     {
+      "speaker": "马克",
+      "zh": "一遇到堵车，人们就容易变得没有耐心。长期这样，还会影响脾气甚至性格。但是您的心情为什么这么好呢？",
+      "pinyin": "Yí yùdào dǔ chē, rénmen jiù róngyì biànde méiyǒu nàixīn. Chángqī zhèyàng, hái huì yǐngxiǎng píqi shènzhì xìnggé. Dànshì nín de xīnqíng wèi shénme zhème hǎo ne?"
+     },
+     {
+      "speaker": "师傅",
+      "zh": "我们改变不了堵车，但是可以试着改变自己的心情。堵车时正好可以休息一下，还可以听听自己喜欢的音乐。",
+      "pinyin": "Wǒmen gǎibiàn bu liǎo dǔ chē, dànshì kěyǐ shìzhe gǎibiàn zìjǐ de xīnqíng. Dǔ chē shí zhènghǎo kěyǐ xiūxi yíxià, hái kěyǐ tīngting zìjǐ xǐhuan de yīnyuè."
+     }
+    ],
+    "new_words": [
+     {
+      "n": 14,
+      "zh": "师傅",
+      "pinyin": "shīfu",
+      "pos": "n.",
+      "en": "a polite title for one with accomplished skills in a trade or handicraft",
+      "text": 3
+     },
+     {
+      "n": 15,
+      "zh": "大使馆",
+      "pinyin": "dàshǐguǎn",
+      "pos": "n.",
+      "en": "embassy",
+      "text": 3
+     },
+     {
+      "n": 16,
+      "zh": "堵车",
+      "pinyin": "dǔ chē",
+      "pos": "v.",
+      "en": "traffic jam",
+      "text": 3
+     },
+     {
+      "n": 17,
+      "zh": "距离",
+      "pinyin": "jùlí",
+      "pos": "n.",
+      "en": "distance",
+      "text": 3
+     },
+     {
+      "n": 18,
+      "zh": "耐心",
+      "pinyin": "nàixīn",
+      "pos": "n.",
+      "en": "patience",
+      "text": 3
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "kind": "narrative",
+    "lines": [
+     {
+      "zh": "草绿了，那是生命的颜色；花开了，那是大自然的礼物。",
+      "pinyin": "Cǎo lǜ le, nà shì shēngmìng de yánsè; huā kāi le, nà shì dàzìrán de lǐwù."
+     },
+     {
+      "zh": "生活中不缺少美，缺少的是发现美的眼睛。",
+      "pinyin": "Shēnghuó zhōng bù quēshǎo měi, quēshǎo de shì fāxiàn měi de yǎnjing."
+     },
+     {
+      "zh": "只要有心，生活中的美到处都是。",
+      "pinyin": "Zhǐyào yǒuxīn, shēnghuó zhōng de měi dàochù dōu shì."
+     },
+     {
+      "zh": "生活的态度要自己选择，因此，遇到烦恼时，你应该想一些办法让自己从不高兴的心情中走出来。",
+      "pinyin": "Shēnghuó de tàidù yào zìjǐ xuǎnzé, yīncǐ, yùdào fánnǎo shí, nǐ yīnggāi xiǎng yìxiē bànfǎ ràng zìjǐ cóng bù gāoxìng de xīnqíng zhōng zǒu chulai."
+     },
+     {
+      "zh": "窗外是什么样子，我们无法改变，但我们可以选择站在哪个窗户前。",
+      "pinyin": "Chuāng wài shì shénme yàngzi, wǒmen wúfǎ gǎibiàn, dàn wǒmen kěyǐ xuǎnzé zhàn zài nǎ ge chuānghu qián."
+     },
+     {
+      "zh": "选择一个能够带给我们快乐的窗户，这样才能选对心情，选对生活的态度。",
+      "pinyin": "Xuǎnzé yí ge nénggòu dàigěi wǒmen kuàilè de chuānghu, zhèyàng cái néng xuǎnduì xīnqíng, xuǎnduì shēnghuó de tàidù."
+     }
+    ],
+    "new_words": [
+     {
+      "n": 19,
+      "zh": "生命",
+      "pinyin": "shēngmìng",
+      "pos": "n.",
+      "en": "life",
+      "text": 4
+     },
+     {
+      "n": 20,
+      "zh": "缺少",
+      "pinyin": "quēshǎo",
+      "pos": "v.",
+      "en": "to lack",
+      "text": 4
+     },
+     {
+      "n": 21,
+      "zh": "到处",
+      "pinyin": "dàochù",
+      "pos": "adv.",
+      "en": "everywhere",
+      "text": 4
+     },
+     {
+      "n": 22,
+      "zh": "态度",
+      "pinyin": "tàidù",
+      "pos": "n.",
+      "en": "attitude",
+      "text": 4
+     },
+     {
+      "n": 23,
+      "zh": "因此",
+      "pinyin": "yīncǐ",
+      "pos": "conj.",
+      "en": "therefore, so",
+      "text": 4
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "kind": "narrative",
+    "lines": [
+     {
+      "zh": "科学研究证明，女孩子对衣服颜色的选择往往与她们的性格有关。",
+      "pinyin": "Kēxué yánjiū zhèngmíng, nǚháizi duì yīfu yánsè de xuǎnzé wǎngwǎng yǔ tāmen de xìnggé yǒuguān."
+     },
+     {
+      "zh": "喜欢穿白色衣服的女孩子性格比较阳光，生活态度积极向上是她们的共同特点；而喜欢穿红色衣服的女孩子性格比较浪漫。",
+      "pinyin": "Xǐhuan chuān báisè yīfu de nǚháizi xìnggé bǐjiào yángguāng, shēnghuó tàidù jījí xiàngshàng shì tāmen de gòngtóng tèdiǎn; ér xǐhuan chuān hóngsè yīfu de nǚháizi xìnggé bǐjiào làngmàn."
+     },
+     {
+      "zh": "颜色也会影响人的心情，不同的颜色会给我们带来不同的感情变化。",
+      "pinyin": "Yánsè yě huì yǐngxiǎng rén de xīnqíng, bù tóng de yánsè huì gěi wǒmen dàilái bù tóng de gǎnqíng biànhuà."
+     },
+     {
+      "zh": "红色让人变得热情；黄色和白色让人心情愉快；黑色却容易让人感到伤心；人们在看到蓝色时会觉得很舒服，变得安静下来；绿色让我们的眼睛得到休息。",
+      "pinyin": "Hóngsè ràng rén biànde rèqíng; huángsè hé báisè ràng rén xīnqíng yúkuài; hēisè què róngyì ràng rén gǎndào shāng xīn; rénmen zài kàndào lánsè shí huì juéde hěn shūfu, biànde ānjìng xialai; lǜsè ràng wǒmen de yǎnjing dédào xiūxi."
+     }
+    ],
+    "new_words": [
+     {
+      "n": 24,
+      "zh": "科学",
+      "pinyin": "kēxué",
+      "pos": "n.",
+      "en": "science",
+      "text": 5
+     },
+     {
+      "n": 25,
+      "zh": "证明",
+      "pinyin": "zhèngmíng",
+      "pos": "v.",
+      "en": "to prove",
+      "text": 5
+     },
+     {
+      "n": 26,
+      "zh": "往往",
+      "pinyin": "wǎngwǎng",
+      "pos": "adv.",
+      "en": "often, usually",
+      "text": 5
+     },
+     {
+      "n": 27,
+      "zh": "阳光",
+      "pinyin": "yángguāng",
+      "pos": "adj.",
+      "en": "optimistic, cheerful",
+      "text": 5
+     },
+     {
+      "n": 28,
+      "zh": "积极",
+      "pinyin": "jījí",
+      "pos": "adj.",
+      "en": "positive",
+      "text": 5
+     },
+     {
+      "n": 29,
+      "zh": "特点",
+      "pinyin": "tèdiǎn",
+      "pos": "n.",
+      "en": "characteristic",
+      "text": 5
+     }
+    ]
+   }
+  ],
+  "grammar": [
+   {
+    "n": 1,
+    "title_zh": "使",
+    "explanation_zh": "“使”，动词，表示“让”的意思，常用在书面语中。例如：",
+    "explanation_en": "The verb “使” means “to make, to cause”, similar to “让”; it is usually used in written Chinese. For example:",
+    "examples": [
+     {
+      "n": 1,
+      "zh": "她看都没看过我一眼，怎么样才能使她喜欢我呢？"
+     },
+     {
+      "n": 2,
+      "zh": "在中国生活的三年使他在音乐方面有了很多新的想法。"
+     },
+     {
+      "n": 3,
+      "zh": "听说伤心难过的时候吃块儿巧克力，还能使人的心情变得愉快。"
+     }
+    ],
+    "practice_instruction_zh": "完成句子",
+    "practice": [
+     {
+      "n": 1,
+      "zh": "房间里应该多放一些绿色植物，________。",
+      "hint_zh": "使"
+     },
+     {
+      "n": 2,
+      "zh": "听完这件事，________。",
+      "hint_zh": "使"
+     },
+     {
+      "n": 3,
+      "zh": "在你烦恼的时候，________。",
+      "hint_zh": "使"
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "title_zh": "只要",
+    "explanation_zh": "“只要”，连词，常用“只要……就……”结构。“只要”后面的句子提出一个必要的条件，“就”后面的句子表示这个条件所产生的结果。例如：",
+    "explanation_en": "The conjunction “只要” is often used in the structure “只要……就……”, with the clause after “只要” stating an essential condition and that after “就” indicating the result of this condition. For example:",
+    "structure_rows": [
+     "只要……就……"
+    ],
+    "examples": [
+     {
+      "n": 1,
+      "zh": "只要这次你好好儿准备，一定能把比赛踢好。"
+     },
+     {
+      "n": 2,
+      "zh": "只要你用心就会发现，身边有那么多有意思的事情，有那么多不一样的生活。"
+     },
+     {
+      "n": 3,
+      "zh": "每个人对幸福有不同的理解，对我来说，只要能做自己喜欢的事，就是幸福。"
+     }
+    ],
+    "practice_instruction_zh": "完成句子",
+    "practice": [
+     {
+      "n": 1,
+      "zh": "________，爸妈一定会支持你。",
+      "hint_zh": "只要"
+     },
+     {
+      "n": 2,
+      "zh": "________，就一定会参加。",
+      "hint_zh": "只要"
+     },
+     {
+      "n": 3,
+      "zh": "只要能取得好的成绩，________。",
+      "hint_zh": "就"
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "title_zh": "可不是",
+    "explanation_zh": "“可不是”，副词，表示赞同、附和对方说的话，常常单独成句。也说“可不”。例如：",
+    "explanation_en": "The adverb “可不是” is used to agree with or echo what the other party has said. It is often used alone as a sentence. We can also use “可不” instead. For example:",
+    "examples": [
+     {
+      "n": 1,
+      "zh": "A：没想到咱们毕业都已经十年了。　B：可不是！时间过得太快了，真想大家。"
+     },
+     {
+      "n": 2,
+      "zh": "A：遇到堵车，心情也“堵”。　B：可不是！上班堵车怕迟到，下班堵车怕回家晚。"
+     },
+     {
+      "n": 3,
+      "zh": "A：这家网球馆的服务不错，给我的印象很好。　B：可不是！这儿不仅环境好，还免费提供吃的和水，打球打累的时候，可以吃点儿东西休息一下。"
+     }
+    ],
+    "practice_instruction_zh": "完成对话",
+    "practice": [
+     {
+      "n": 1,
+      "zh": "A：他每天穿这么少，能不感冒吗？　B：可不是，________。"
+     },
+     {
+      "n": 2,
+      "zh": "A：最近天气怎么这么干呢！　B：可不，________。"
+     },
+     {
+      "n": 3,
+      "zh": "A：马克的性格真好，大家遇到问题都愿意找他帮忙。　B：可不是，________。"
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "title_zh": "因此",
+    "explanation_zh": "“因此”，连词，表示“因为这个”的意思，和“所以”的意思差不多，但不能和“因为”搭配使用。例如：",
+    "explanation_en": "The conjunction “因此” means “because of this”, similar to “所以 (so, therefore)”, but it cannot be used together with “因为”. For example:",
+    "examples": [
+     {
+      "n": 1,
+      "zh": "我认识他很多年，因此，很了解他的性格。"
+     },
+     {
+      "n": 2,
+      "zh": "每个学生的性格、能力不同，因此，老师要根据学生的特点，用不同的方法。"
+     },
+     {
+      "n": 3,
+      "zh": "生活的态度要自己选择，因此，遇到烦恼时，你应该想一些办法让自己从不高兴的心情中走出来。"
+     }
+    ],
+    "practice_instruction_zh": "完成句子",
+    "practice": [
+     {
+      "n": 1,
+      "zh": "小雨最近心情不好，________。",
+      "hint_zh": "因此"
+     },
+     {
+      "n": 2,
+      "zh": "做好小事是完成大事的第一步，________。",
+      "hint_zh": "因此"
+     },
+     {
+      "n": 3,
+      "zh": "没人能知道以后会发生什么事，________。",
+      "hint_zh": "因此"
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "title_zh": "往往",
+    "explanation_zh": "“往往”，副词，表示根据过去的经验，某种情况在一定条件下经常发生，常用来说明有一定规律性的事情。例如：（1）–（3）\n【比一比 往往—经常】\n相同点：两者都可做副词，表示某种情况多次出现。★\n不同点：\n1. 表示★这个意思时，“往往”是对到目前为止出现的情况的总结，有一定的规律性，不用于主观意愿，所以只能用于已经发生的情况；“经常”只指动作多次出现，不一定有规律性，可以用于主观意愿，因此可表示还没发生过但可能多次出现的情况。\n2. 表示★这个意思时，用“往往”的句子常指明与动作有关的情况、条件或结果；用“经常”的句子没有这种限制。\n3. “经常”常相当于“常”；“往往”不能单用成“往”。",
+    "explanation_en": "The adverb “往往” indicates that a certain situation frequently happens under specific circumstances, which often occurred in the past, usually used to talk about things somewhat regular. For example: (1)–(3)\n[Compare 往往—经常]\nSimilarity: Both can be used as adverbs, indicating a situation occurring repeatedly.\nDifferences:\n1. In case ★, “往往” is a summary of the situation up to the present, demonstrating certain regularities without being subjective, so it can only be used to talk about things that have already happened. “经常”, however, only indicates that an action occurs many times, not necessarily showing any regularities; it can be used to express subjective wishes, and therefore can indicate things that have not yet happened but may occur repeatedly.\n2. In case ★, when a sentence uses “往往”, it usually specifies the situation, condition or result related to the action being talked about, while sentences with “经常” has no such restriction.\n3. “经常” is usually equivalent to “常”, while “往往” cannot be shortened to “往”.",
+    "examples": [
+     {
+      "n": 1,
+      "zh": "女孩子对衣服颜色的选择往往与她们的性格有关。"
+     },
+     {
+      "n": 2,
+      "zh": "有经验的出租车司机往往对道路情况都非常熟悉，他们知道一天的每个时段什么地方可能堵车。"
+     },
+     {
+      "n": 3,
+      "zh": "除了正式的名字，中国人一般都有个小名。在家里，父母往往只叫孩子的小名。"
+     },
+     {
+      "zh": "要是缺少调查、不听别人说明情况，不理解往往／经常就可能发生。",
+      "note_zh": "比一比 相同点"
+     },
+     {
+      "zh": "吃完晚饭，他们一家往往去附近的公园散散步。",
+      "note_zh": "比一比 不同点1：往往"
+     },
+     {
+      "zh": "长时间对着电脑工作对身体不好，我们以后也经常去公园散散步吧。",
+      "note_zh": "比一比 不同点1：经常"
+     },
+     {
+      "zh": "上大学时我很喜欢运动，往往／经常在周末打篮球、踢足球。",
+      "note_zh": "比一比 不同点2"
+     },
+     {
+      "zh": "上大学时我很喜欢运动，经常打篮球、踢足球。",
+      "note_zh": "比一比 不同点2"
+     },
+     {
+      "zh": "在商家打折的时候，有的人（经）常会买一些自己本来不需要，甚至很可能一直都用不到的东西。",
+      "note_zh": "比一比 不同点3"
+     }
+    ],
+    "practice_instruction_zh": "完成句子",
+    "practice": [
+     {
+      "n": 1,
+      "zh": "眼睛看到的不一定是真的，但是________。",
+      "hint_zh": "往往"
+     },
+     {
+      "n": 2,
+      "zh": "一到节日，________。",
+      "hint_zh": "往往"
+     },
+     {
+      "n": 3,
+      "zh": "你最好先听听别人的想法，________。",
+      "hint_zh": "往往"
+     }
+    ]
+   }
+  ],
+  "exercises": [
+   {
+    "n": "注释5 比一比 做一做",
+    "type_zh": "选词填空（往往／经常）",
+    "instruction_zh": "选词填空",
+    "instruction_en": "Tick or cross",
+    "word_bank": [
+     [
+      "往往",
+      "经常"
+     ]
+    ],
+    "items": [
+     {
+      "n": 1,
+      "zh": "中国人________会请重要的客人去饭店吃饭。",
+      "options": {
+       "往往": "✓",
+       "经常": "✓"
+      },
+      "answer": "往往 ✓　经常 ✓",
+      "answer_ref": {
+       "book": "textbook",
+       "pages": [
+        107
+       ]
+      }
+     },
+     {
+      "n": 2,
+      "zh": "爷爷________告诉我不管做什么事情都应该认真。",
+      "options": {
+       "往往": "×",
+       "经常": "✓"
+      },
+      "answer": "往往 ×　经常 ✓",
+      "answer_ref": {
+       "book": "textbook",
+       "pages": [
+        107
+       ]
+      }
+     },
+     {
+      "n": 3,
+      "zh": "那个饭馆的菜不仅好吃，而且价格不贵，以后咱们可以________去。"
+     },
+     {
+      "n": 4,
+      "zh": "这个工作________要加班，几乎没时间陪孩子，这个让我受不了。"
+     },
+     {
+      "n": 5,
+      "zh": "很多30岁左右的年轻人，平时工作紧张，他们________是饿了才吃饭，渴了才喝水。"
+     }
+    ]
+   },
+   {
+    "n": "课文1–3 回答问题",
+    "type_zh": "回答问题",
+    "instruction_zh": "根据课文内容回答问题",
+    "instruction_en": "Answer the questions based on the texts.",
+    "items": [
+     {
+      "n": 1,
+      "zh": "课文1：说一说为什么很多人在考试前喜欢吃巧克力。"
+     },
+     {
+      "n": 2,
+      "zh": "课文1：吃巧克力对人的心情有哪些影响？"
+     },
+     {
+      "n": 3,
+      "zh": "课文2：马克可能因为什么原因带小夏去看那里的景色？"
+     },
+     {
+      "n": 4,
+      "zh": "课文2：小夏认为上次足球比赛他们踢得怎么样？"
+     },
+     {
+      "n": 5,
+      "zh": "课文3：出租车司机走错路了吗？为什么？"
+     },
+     {
+      "n": 6,
+      "zh": "课文3：堵车是一件很麻烦的事情，遇到堵车，你会做什么让自己心情变好？"
+     }
+    ]
+   },
+   {
+    "n": "课文4–5 回答问题",
+    "type_zh": "回答问题",
+    "instruction_zh": "根据课文内容回答问题",
+    "instruction_en": "Answer the questions based on the texts.",
+    "items": [
+     {
+      "n": 1,
+      "zh": "课文4：怎么理解“生活中的美到处都是”这句话？"
+     },
+     {
+      "n": 2,
+      "zh": "课文4：说一说“选择站在哪个窗户前”里的“窗户”指的是什么。"
+     },
+     {
+      "n": 3,
+      "zh": "课文5：从课文可以知道，哪种方法可以让我们了解一个人的性格？"
+     },
+     {
+      "n": 4,
+      "zh": "课文5：如果你觉得紧张，眼睛一直跳，你可以做什么让自己放松一下？"
+     }
+    ]
+   },
+   {
+    "n": 1,
+    "type_zh": "复述",
+    "instruction_zh": "复述",
+    "instruction_en": "Retell the dialogues.",
+    "items": [
+     {
+      "n": "课文1",
+      "zh": "高老师的语气：这是我女儿从国外带回来的巧克力，……"
+     },
+     {
+      "n": "课文2",
+      "zh": "小夏的语气：这段时间我一直在回忆那次比赛，……"
+     },
+     {
+      "n": "课文3",
+      "zh": "出租车司机的语气：前面有点儿堵车，……"
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "type_zh": "选词填空",
+    "instruction_zh": "选择合适的词语填空",
+    "instruction_en": "Choose the proper words to fill in the blanks.",
+    "word_bank": [
+     [
+      "伤心",
+      "放松",
+      "只要",
+      "积极",
+      "证明"
+     ],
+     [
+      "耐心",
+      "愉快",
+      "到处",
+      "缺少",
+      "发生"
+     ]
+    ],
+    "items": [
+     {
+      "n": 1,
+      "zh": "有的人认为，心情________、身体健康才是真正的幸福。"
+     },
+     {
+      "n": 2,
+      "zh": "她听到这个消息后________地哭了。"
+     },
+     {
+      "n": 3,
+      "zh": "这次招聘会提供了差不多1000个工作机会，请同学们________参加。"
+     },
+     {
+      "n": 4,
+      "zh": "很多小孩子觉得所有东西________一哭就能得到。"
+     },
+     {
+      "n": 5,
+      "zh": "他现在已经成为一个有名的律师，终于向所有人________自己的选择是对的。"
+     },
+     {
+      "n": 6,
+      "zh": "A：终于爬上来了，累死我了，这山太高了！　B：看来你真的是________锻炼，以后每天跟我一块儿跑步吧。"
+     },
+     {
+      "n": 7,
+      "zh": "A：你今天的面试怎么样？　B：经理说会认真考虑一下，让我别着急，________等消息。"
+     },
+     {
+      "n": 8,
+      "zh": "A：不管遇到什么问题、________什么事情，都不要着急。　B：谢谢您的关心，我记住了。"
+     },
+     {
+      "n": 9,
+      "zh": "A：你喜欢听什么样的歌？　B：我喜欢那些比较慢，听着让人感觉很浪漫，心情________的歌。"
+     },
+     {
+      "n": 10,
+      "zh": "A：你的东西怎么________乱放呢？快去打扫一下！　B：知道了，我一会儿就去。"
+     }
+    ]
+   },
+   {
+    "n": "扩展 做一做",
+    "type_zh": "选词填空（同字词）",
+    "instruction_zh": "选词填空",
+    "instruction_en": "Fill in the blanks with the words given.",
+    "word_bank": [
+     [
+      "重要",
+      "主要",
+      "只要",
+      "要是"
+     ]
+    ],
+    "items": [
+     {
+      "n": 1,
+      "zh": "A：我正想找你呢，你说让他学什么专业好？　B：这________还得看孩子自己的想法。",
+      "answer": "主要",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        78
+       ]
+      }
+     },
+     {
+      "n": 2,
+      "zh": "A：上次的事太谢谢你了，________别人，估计就办不成了。　B：你太客气了，以后有什么需要帮忙的尽管告诉我。",
+      "answer": "要是",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        78
+       ]
+      }
+     },
+     {
+      "n": 3,
+      "zh": "A：明天的面试很________，你最好早点儿出门。　B：我知道，你别担心了，我一定会准时到的。",
+      "answer": "重要",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        78
+       ]
+      }
+     },
+     {
+      "n": 4,
+      "zh": "A：真让人羡慕！我本来也想学法律专业的，但是最后没考上。　B：其实做什么工作都一样，________用心，都能做好。",
+      "answer": "只要",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        78
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "characters": {
+   "knowledge_title_zh": "同字词",
+   "knowledge_en": "Words with the Same Character",
+   "knowledge_zh": "要：重要、主要、只要、要是\n（1）年轻人最重要的是要对自己有信心。\n（2）这本书主要介绍了中国的文化和历史。\n（3）只要你打开电视，总能看到那么多的广告，真是浪费时间。\n（4）那个电视节目特别有意思，你要是有时间也看看吧。",
+   "characters": [
+    {
+     "zh": "要",
+     "note_zh": "重要、主要、只要、要是"
+    }
+   ]
+  },
+  "application": [
+   {
+    "title_zh": "双人活动",
+    "instruction_zh": "互相了解对方关于颜色的想法，完成调查表。",
+    "instruction_en": "Learn about each other’s ideas of colors and complete the questionnaire below.",
+    "example_zh": [
+     "表格：| | 问 | 答 |",
+     "| 1 | 你什么颜色的衣服最多？ | |",
+     "| 2 | 你最喜欢什么颜色？为什么？ | |",
+     "| 3 | 你最不喜欢什么颜色？为什么？ | |",
+     "| 4 | 你觉得你的生活是什么“颜色”的？为什么？ | |",
+     "| 5 | 你认为一年四季是什么“颜色”的？为什么？ | |",
+     "| 6 | 如果世界上只能有一种颜色，你希望是哪种？ | |"
+    ]
+   },
+   {
+    "title_zh": "小组活动",
+    "instruction_zh": "每个人都有心情不好的时候。在你心情不好时，你有什么好方法让自己心情变好呢？向小组成员介绍一下。（请最少用四个下面的结构）",
+    "instruction_en": "Everybody may feel down now and then. When you are in a bad mood, how do you make yourself feel better? Tell your method to your group members. (Use at least four of the following structures.)",
+    "example_zh": [
+     "a. 试着改变自己",
+     "b. 遇到烦恼事",
+     "c. 影响人的心情",
+     "d. 不同的感情变化",
+     "e. 事情已经发生",
+     "f. 尤其是女性",
+     "g. 选对生活的态度",
+     "h. 生活中的美到处都是"
+    ]
+   }
+  ],
+  "culture": {
+   "title_zh": "中国人眼中的“红”与“白”",
+   "body_zh": "红色和白色在中西方文化中有不同的意义。中国人喜欢红色，因为它象征着吉祥、喜庆，代表生活红红火火，特别是人们结婚时，家里到处都是红色，所以结婚又称为“红事儿”；白色在中国除了表示干净、纯洁的意思以外，还象征着悲伤、死亡。要是你看到有人家里到处是白色的花和布时，这说明他们家有“白事儿”，家里一定是有人去世了。",
+   "body_en": "Red and White in Chinese People’s Eyes\nThe colors red and white have different connotations in Chinese and Western cultures. The Chinese love red because in their culture, it symbolizes good luck and festivity, meaning life is “(as good and prosperous) as the red fire”. When people get married, red is seen everywhere in their homes, which is why weddings are called the “red events”. White, on the other hand, symbolizes sorrow and death besides cleanness and purity. When white flowers and cloth are seen all over a house, it means the “white event (funeral)” is going on in the house, where someone must have died."
+  }
+ },
+ "teacher": {
+  "ref": {
+   "book": "teacher",
+   "pages": [
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78
+   ]
+  },
+  "objectives_zh": [
+   "主题：生活态度（1）对话：巧克力的作用、安慰朋友、堵车（2）短文：选对生活态度、颜色对人的影响",
+   "语言点：学生能够了解并掌握：（1）“使”表示“让”的意思（2）“只要”用于提出一个必要的条件（3）“可不是”表示赞同、附和对方说的话（4）“因此”表示“因为这个”的意思（5）“往往”表示根据过去的经验，某种规律性事情在一定条件下经常发生　*辨析“往往”和“经常”的异同",
+   "词汇：学生能够：（1）掌握本课29个四级大纲词汇的意义和用法　重点词语：伤心、愉快、放松、回忆、发生、堵车、耐心、缺少、到处、证明、积极（2）理解“要”字的组词规律及在词汇中的意义"
+  ],
+  "steps": [
+   {
+    "title_zh": "一 复习旧课",
+    "body_zh": "1 使用生词卡片，快速认读下列词语：\n严重、动作、出现、后悔、反对、超过、指、说明、辛苦、烦恼\n2 快速回答问题（与第7课或学生实际生活有关的问题）：\n（1）你觉得……（学生所在的地方）的气候怎么样？你习惯吗？\n（2）长时间看电脑对健康有什么坏处？应该怎么解决？\n（3）你喜欢散步吗？散步有什么好处？\n3 检查作业：\n请3名学生简单汇报一下他们对身边的人抽烟情况的调查结果。"
+   },
+   {
+    "title_zh": "二 学习新课 1 热身",
+    "body_zh": "热身1：学生两人一组，合作完成；教师指出图片，请学生根据图片说出对应的词语，教师核对答案；教师领读热身1的生词；最后全体学生齐读，教师正音。\n答案：①E　②F　③B　④D　⑤A　⑥C\n热身2：教师带领学生熟悉调查表格的内容；请学生两人一组，调查对方生活中送礼物的情况，请2～3名学生报告调查结果。"
+   },
+   {
+    "title_zh": "2 生词",
+    "body_zh": "（1）生词快速认读及正音\n课文1（对话）：巧克力、亲戚、伤心、使、心情、愉快\n课文2（对话）：景色、放松、压力、回忆、发生、成为、只要\n课文3（对话）：师傅、大使馆、堵车、距离、耐心\n课文4（短文）：生命、缺少、到处、态度、因此\n课文5（短文）：科学、证明、往往、阳光、积极、特点\n• 教师用PPT或卡片展示并领读生词（带拼音）；\n• 取消拼音，带领学生再次认读；\n• 逐词（不带拼音）闪现，请学生快速认读生词；\n• 请3～5个学生快速随机认读3～5个生词；\n• 最后全体学生快速齐读所有生词。\n（2）生词讲解方式\n直观法（图片、实物）：图片类：亲戚（过春节家里来亲戚）、伤心（哭泣的照片）、景色（热身图片B）、压力（第4课热身图片C）、师傅（热身图片F）、大使馆（热身图片E）、堵车（热身图片C）、距离（高速公路公里数标志）、生命（热身图片D）、到处（热身图片C）　实物类：巧克力、阳光\n归纳法（归纳相关词语）：心情（伤心、愉快、难过、高兴……）\n对比法（用反义词对比）：伤心—愉快（配合哭泣和欢笑两个图片）\n替换法（同／近义替换）：缺少（少）、因此（所以）、往往（常常）\n分解法（分解词义）：特点（特别的方面）\n提问启发：回忆、成为、耐心、态度、科学、证明、积极\n教师提问，引导学生说出句子：\n他常常想以前的事，他……——他常常回忆以前的事。\n我以前是学汉语的学生，现在呢？——现在成为汉语老师了。\n学生每天问老师很多问题，老师是怎么做的？——老师耐心地回答学生的问题。\n这家饭馆的服务非常好，比如，饭馆服务员的……——饭馆服务员的态度很好。\n我们现在可以坐飞机、开车出门，以前只能走路或者骑马；现在可以发电子邮件、打电话跟朋友联系，以前只能寄信……什么改变了我们的生活呢？——科学改变了我们的生活。\n马克觉得今天会下雨，玛丽觉得不会下雨，最后真的下雨了。马克和玛丽谁对？——最后证明马克对了。\n老师问学生问题，很多学生都想回答，学生们……——学生们积极回答老师的问题。\n（3）字形辨认练习\n教师用卡片或PPT展示，请学生快速辨认并读出，最后给每个字组词。\n克—况　戚—叔　快—块\n堵—都　距—跟　缺—决\n处—外　往—住　积—和\n（4）重点生词扩展及常用搭配\n伤心—很／比较／非常伤心—伤心的时候—她伤心的时候常想家。\n愉快—很／比较／非常愉快—愉快的心情—心情变得愉快—吃巧克力能让人的心情变得愉快。\n放松—很／比较／非常放松—放松放松—放松一下—好久都没这么放松了。\n回忆—回忆小时候的事／比赛—回忆那次比赛—这段时间我总是回忆那次比赛。\n发生—发生事情—事情发生了—事情已经发生了，就让它过去吧。\n堵车—很／非常／有点儿堵车—堵了一小时车—现在是上班时间，前面有点儿堵车。\n耐心—（没）有耐心—很／比较／非常有耐心—对学生很有耐心——遇到堵车，人们就容易变得没有耐心。\n缺少—缺少钱／时间／美—生活中不缺少美。\n到处—到处是人／自行车—到处去看看—生活中的美到处都是。\n证明—研究证明—证明对和错—科学研究证明，他是对的。\n积极—很／比较／非常积极—积极的态度—他的态度很积极—生活态度积极是她们的共同特点。"
+   },
+   {
+    "title_zh": "3 语言点（1）使",
+    "body_zh": "① 语言点解析\n“使”，动词，表示“让”的意思，常用在书面语中。\n② 语言点导入\n• 利用热身图片B，使用同义表达“让”，替换导入。\n教师：看到漂亮的景色，你心情会怎么样？\n学生：漂亮的景色会让我的心情变得愉快。\n教师总结：“漂亮的景色会使我的心情变得愉快。”\n• 联系生活实际，提问导入。\n教师：你喜欢在网上购物吗？\n学生：我经常在网上购物，任何时间我都能买东西，这使我的生活更方便了。\n③ 语言点操练\n利用热身图片A、C，提问操练。\n• 教师：谁喜欢吃巧克力？为什么喜欢？\n图片A目标句：吃巧克力能使我的心情变好。\n• 教师：上班时，要是遇到这种情况，你会怎么样？\n图片C目标句：这种情况会使我变得越来越着急。\n④ 语言点运用\n请学生根据提示词用“使”补全下面的句子，并朗读。\nI. 父母的话________。（明白）\nII. 面试时经理问了马克很多问题，________。（紧张）\nIII. 每天回家看到这两只可爱的小猫，可以________。（忘）\n参考答案：I. 使我明白他们为什么这么做了\nII. 使马克一直很紧张\nIII. 使我忘掉一天的烦恼"
+   },
+   {
+    "title_zh": "3 语言点（2）只要……就……",
+    "body_zh": "① 语言点解析\n“只要”，连词，常用“只要……就……”结构。“只要”后面的句子提出一个必要的条件，“就”后面的句子表示这个条件所产生的结果。\n② 语言点导入\n• 联系学生实际，提问导入。\n教师：我们怎么才能通过HSK考试呢？\n学生：只要努力复习和准备，我们就能通过。\n• 利用情境，提问导入。\n假设老师去商店买洗衣机，让学生当售货员。\n教师：我想买这台洗衣机，要是出现质量问题，怎么办呢？\n学生：只要是在我们店买的洗衣机，我们都会免费给您修理。\n③ 语言点操练\n• 利用热身图片C，提问操练。\n教师：这儿怎么又堵车了？\n学生：只要是上下班的时候，就会堵车，咱们还是坐地铁吧。／只要是走这条路，就会堵车，咱们还是走其他路吧。\n• 联系学生实际，提问操练。\n教师：我们都喜欢旅游，你们一般什么时候、去哪儿旅游？\n学生：只要放假有时间，我就到海边旅游。\n④ 语言点运用\n请学生根据句子意思，连线组成5个完整的句子，并朗读。\n只要：I. 明天不下雨　II. 我晚上喝咖啡　III. 你给他打个电话　IV. 散步时跟家人聊聊一天的工作　V. 商场有打折活动\n就：A. 一天的烦恼都跑掉了　B. 他一定会帮你想办法　C. 肯定睡不着觉　D. 玛丽会买很多又便宜又好看的衣服　E. 我们去爬长城\n参考答案：I. E　II. C　III. B　IV. A　V. D"
+   },
+   {
+    "title_zh": "3 语言点（3）可不是",
+    "body_zh": "① 语言点解析\n“可不是”，副词，表示赞同、附和对方说的话，常常单独成句，也可以简单地说成“可不”。\n② 语言点导入\n联系实际，在对话情景中导入。\n• 教师：今天太热了！\n学生：可不是！\n• 教师：“己”和“已”这两个字太像了。\n学生：可不是！\n③ 语言点操练\n利用热身图片A、B，提问操练。\n• 教师：这种巧克力一定很好吃。\n学生：可不是！我每次去超市都买一点儿。\n• 教师：这里的景色太美了！\n学生：可不是！我很早就想来这里旅游了。\n④ 语言点运用\n请学生两人一组，根据情景补全对话，并分角色朗读。\nI. A：今天堵车堵得怎么这么严重啊？　B：可不是！________。\nII. A：这个工作终于做完了，好久没这么放松了。　B：可不是！________。\nIII. A：哥哥家的狗真是太聪明了！　B：可不！________。\n参考答案：I. 好像前面发生了什么事情\nII. 每天看电脑，眼睛都累死了\nIII. 好多事情哥哥一教它就会"
+   },
+   {
+    "title_zh": "3 语言点（4）因此",
+    "body_zh": "① 语言点解析\n“因此”，连词，表示“因为这个”的意思，和“所以”的意思差不多，但一般不能和“因为”搭配使用。\n② 语言点导入\n• 利用热身图片C，利用同义表达“所以”，替换导入。\n教师：你怎么不开车呢？\n学生：因为堵车堵得很厉害，所以我更喜欢坐地铁。\n教师重复、板书或展示句子：“因为堵车堵得很厉害，因此我更喜欢坐地铁。”（书中“因为”二字划掉）\n教师用重音突出“因此”，并在板书或展示时，删掉“因为”。\n• 联系对话1内容，提问导入。\n教师：听说伤心难过的时候吃块巧克力，能使人的心情变得愉快。\n学生：你说得对，因此，很多人回国时常常买点儿国外的巧克力送给朋友。\n③ 语言点操练\n教师：为什么现在越来越多的人喜欢网上购物了呢？\n学生：在网上人们可以在任何时间买到自己喜欢的东西／在网上买东西又方便又便宜／……，因此越来越多的人喜欢网上购物了。\n④ 语言点运用\n请学生根据情景补全下面的句子，并朗读。\nI. 他生病了，因此，________。\nII. 年轻人刚开始工作时有很多东西要学，因此，________。\nIII. 我们有时候不得不去做不喜欢的工作，因此，________。\n参考答案：I. 不能来参加今天的比赛了\nII. 不要太着急赚钱\nIII. 对工作的责任心非常重要"
+   },
+   {
+    "title_zh": "3 语言点（5）往往",
+    "body_zh": "① 语言点解析\n“往往”，副词，表示根据过去的经验，某种情况在一定条件下经常发生，常用来说明有一定规律性的事情。\n② 语言点导入\n• 利用热身图片C，提问导入。\n教师：一般什么时候会堵车？\n学生：上下班的时候。\n教师总结：“上下班的时候往往会堵车。”\n• 利用第6课文化图片，提问导入。\n教师：这些食品我们为什么叫它们“绿色食品”，不叫它们“白色或者黄色食品”呢？\n学生：绿色往往有生命和自然的意思，所以我们叫它们“绿色食品”。\n③ 语言点操练\n• 联系学生实际，提问操练。\n教师：学到两个意思很近的词，要是不明白用法，你能用对吗？\n学生：要是不明白用法，我往往用错。\n• 利用图片（公园跑步），提问操练。\n教师：你以前也常在体育馆跑步吗？\n学生：我现在经常在体育馆跑步，但是以前往往在公园跑步。\n④ 语言点运用\n利用第2课热身图片F、第7课热身图片C、E，请学生使用“往往”进行描述。（图片I、II、III）\n参考答案：I. 每到周末，朋友们往往去她家举行聚会。\nII. 冬天天气很冷，往往会使很多人感冒、咳嗽。\nIII. 北京气候很干，不习惯的留学生往往会流鼻血。\n⑤ 比一比：往往—经常\n按照教材中的辨析步骤进行。"
+   },
+   {
+    "title_zh": "4 课文",
+    "body_zh": "（1）就课文内容，教师将下列问题写在黑板上或用PPT展示（或教师给学生发放问题单）：（见 text_questions）\n（2）要求学生带着问题听两遍录音并回答问题，教师给出答案；\n（3）学生打开课本，教师逐句播放录音，学生看课本听第二次录音并跟读；\n（4）教师领读一遍课文；\n（5）全班一起大声齐读一遍课文；\n（6）请2～3组学生分角色朗读课文，教师正音；\n（7）做以下课文扩展练习：\n对话课文：教师带领学生根据问题单上问题的答案叙述课文内容，并请学生单个复述。\n课文1：巧克力是高老师的女儿从国外给她带回来的，味道不错。很多人都爱吃巧克力，尤其是女性。伤心难过的时候吃巧克力能使人的心情变得愉快。\n课文2：上次足球比赛后，小夏好久没这么放松了。这段时间他总是一个人坐在房间里回忆那次比赛。但是，事情已经发生了，过去的就让它过去吧，马克相信只要小夏好好准备，这次一定能把比赛踢好。\n课文3：马克去大使馆的时候，正是上班时间，前面有点儿堵车，他们走了另外一条路，距离差不多。一遇到堵车，人们就很容易变得没有耐心，心情也“堵”。但是司机师傅觉得堵车时正好可以休息一下，还可以听听喜欢的音乐。\n短文课文：请学生根据课文内容，补全下面的语段，并请学生单个复述朗读。\n课文4：生活中不缺少美，缺少的是……（发现美的眼睛）。只要有心，生活中的美到处都是。生活的态度要……（自己选择），因此，遇到烦恼时，你应该想一些办法让自己……（从不高兴的心情中）走出来。\n课文5：……（科学研究）证明，女孩子对衣服颜色的选择往往与她们的性格有关。喜欢穿白色衣服的女孩子性格……（比较阳光），生活态度积极向上是……（她们的共同特点），而喜欢穿红色衣服的女孩子性格比较浪漫。而且，颜色也会……（影响人的心情）。"
+   },
+   {
+    "title_zh": "5 扩展",
+    "body_zh": "（1）领读“重要、主要、只要、要是”四个同字词，请学生说一说“要”字在词中的位置和意义。“要”的义项：\n①重要：重要、主要\n②如果：要是\n③需要：只要\n（2）请学生完成“选词填空”练习，教师给出答案。\n参考答案：①主要　②要是　③重要　④只要\n（3）请学生给这四个词选择恰当的位置，然后教师给出答案，并请学生朗读。\nA. 要是　B. 只要　C. 主要　D. 重要\n生活态度和人的心情有非常________的关系。有的人不管生活中遇到什么困难，心情总是很轻松，这________是因为他们有一个很好的生活态度。________遇到烦恼的事，你应该让自己从不高兴的心情中走出来。________你能做到这些，相信你的生活一定过得很愉快。\n参考答案：D　C　A　B"
+   },
+   {
+    "title_zh": "6 补充课堂活动",
+    "body_zh": "学生4人一组，分享经验，说说自己喜欢哪些颜色，不喜欢哪些颜色，并说说原因，最后请每组派代表总结汇报。"
+   },
+   {
+    "title_zh": "7 文化",
+    "body_zh": "教师引导学生了解颜色的文化意义，可根据需求和时间安排，进行以下参考活动：\n• 展示图片，请学生猜猜红色和白色用在了什么场合；\n• 请学生介绍一下这些场合中自己国家喜欢用什么颜色；\n• 请学生猜猜“黄色”在中国有什么文化意义。"
+   },
+   {
+    "title_zh": "8 布置作业",
+    "body_zh": "• 每个生词写3遍；\n• 请学生说说自己的心情在什么情况下会不好，并介绍一下改变心情的方法。"
+   }
+  ],
+  "notes_zh": [
+   "比一比：往往—经常——按照教材中的辨析步骤进行。（语言点5）",
+   "“因此”……和“所以”的意思差不多，但一般不能和“因为”搭配使用。（语言点4）",
+   "字形辨认：克—况　戚—叔　快—块　堵—都　距—跟　缺—决　处—外　往—住　积—和（生词）",
+   "“要”的义项：①重要：重要、主要　②如果：要是　③需要：只要（扩展）"
+  ],
+  "warmup_answers_zh": [
+   "热身1 答案：①E　②F　③B　④D　⑤A　⑥C",
+   "热身2：教师带领学生熟悉调查表格的内容；请学生两人一组，调查对方生活中送礼物的情况，请2～3名学生报告调查结果。"
+  ],
+  "text_questions": [
+   {
+    "text": 1,
+    "q_zh": "女儿给高老师带回来什么礼物？"
+   },
+   {
+    "text": 1,
+    "q_zh": "哪种人特别喜欢吃巧克力？"
+   },
+   {
+    "text": 1,
+    "q_zh": "吃巧克力能改变人的心情吗？"
+   },
+   {
+    "text": 2,
+    "q_zh": "上次足球比赛后，小夏的心情怎么样？"
+   },
+   {
+    "text": 2,
+    "q_zh": "这段时间小夏常常做什么？"
+   },
+   {
+    "text": 2,
+    "q_zh": "马克认为这次比赛小夏能踢好吗？"
+   },
+   {
+    "text": 3,
+    "q_zh": "马克要去哪儿？"
+   },
+   {
+    "text": 3,
+    "q_zh": "师傅为什么走的路和以前不一样？这条路更远吗？"
+   },
+   {
+    "text": 3,
+    "q_zh": "遇到堵车时，人们的心情会怎么样？师傅是怎么解决的？"
+   },
+   {
+    "text": 4,
+    "q_zh": "为什么有的人觉得生活中缺少美？"
+   },
+   {
+    "text": 4,
+    "q_zh": "遇到烦恼的事情，我们应该怎么办？"
+   },
+   {
+    "text": 5,
+    "q_zh": "女孩子对衣服颜色的选择跟什么有关？"
+   },
+   {
+    "text": 5,
+    "q_zh": "喜欢白色和红色的女孩子的性格有什么特点？"
+   },
+   {
+    "text": 5,
+    "q_zh": "颜色和人的心情有关系吗？"
+   }
+  ]
+ },
+ "workbook": {
+  "ref": {
+   "book": "workbook",
+   "pages": [
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87
+   ]
+  },
+  "sections": [
+   {
+    "n": "一、听力 第一部分",
+    "type_zh": "听力 第一部分",
+    "instruction_zh": "第1–5题：判断对错。",
+    "items": [
+     {
+      "n": "例1",
+      "zh": "★他打算下午去银行。",
+      "transcript_zh": "我想去办个信用卡，今天下午你有时间吗？陪我去一趟银行？",
+      "answer": "✓",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        78
+       ]
+      }
+     },
+     {
+      "n": "例2",
+      "zh": "★他喜欢看电视广告。",
+      "transcript_zh": "现在我很少看电视，其中一个原因是，广告太多了，不管什么时间，也不管什么节目，只要你打开电视，总能看到那么多的广告，浪费我的时间。",
+      "answer": "×",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        78
+       ]
+      }
+     },
+     {
+      "n": 1,
+      "zh": "★心情可以选择。",
+      "transcript_zh": "生活中遇到什么样的事情，我们无法选择，但我们可以选择态度。用一个能够带给我们快乐的方法，我们才能选对心情，选对生活态度。",
+      "answer": "✓",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        123
+       ]
+      }
+     },
+     {
+      "n": 2,
+      "zh": "★小李对上次比赛很满意。",
+      "transcript_zh": "小李最近心情不太好，可能是上次比赛没有打好，受了影响。你最好找个时间跟他谈一下，让他不要有压力，好好准备下次比赛。",
+      "answer": "×",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        123
+       ]
+      }
+     },
+     {
+      "n": 3,
+      "zh": "★生气时别急着做决定。",
+      "transcript_zh": "生气时不要急着下判断或做决定，因为此时做的决定很可能会让你以后后悔。",
+      "answer": "✓",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        123
+       ]
+      }
+     },
+     {
+      "n": 4,
+      "zh": "★办公环境对心情没有影响。",
+      "transcript_zh": "你的办公环境会影响你的心情。如果环境干净，你每天都会感到愉快。所以，如果你的办公桌很乱，是时候改变它了。",
+      "answer": "×",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        123
+       ]
+      }
+     },
+     {
+      "n": 5,
+      "zh": "★吃甜的东西能使人心情变好。",
+      "transcript_zh": "研究发现，吃甜的东西能使人心情愉快。所以，如果你觉得心烦，可以吃点儿蛋糕或者巧克力，这些甜的东西可能会给你带来好心情。",
+      "answer": "✓",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        123
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "一、听力 第二部分",
+    "type_zh": "听力 第二部分",
+    "instruction_zh": "第6–12题：请选出正确答案。",
+    "items": [
+     {
+      "n": "例",
+      "zh": "男的主要是什么意思？",
+      "transcript_zh": "女：该加油了，去机场的路上有加油站吗？ 男：有，你放心吧。 问：男的主要是什么意思？",
+      "options": {
+       "A": "去机场",
+       "B": "快到了",
+       "C": "油是满的",
+       "D": "有加油站"
+      },
+      "answer": "D",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        79
+       ]
+      }
+     },
+     {
+      "n": 6,
+      "zh": "男的现在心情怎么样？",
+      "options": {
+       "A": "伤心",
+       "B": "愉快",
+       "C": "紧张",
+       "D": "烦恼"
+      },
+      "transcript_zh": "女：马老师，大家都说您越来越年轻了。 男：谢谢，这话我爱听。 问：男的现在心情怎么样？",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        123
+       ]
+      }
+     },
+     {
+      "n": 7,
+      "zh": "他们在谈什么？",
+      "options": {
+       "A": "音乐",
+       "B": "电影",
+       "C": "性格",
+       "D": "感情"
+      },
+      "transcript_zh": "女：你喜欢听什么样的歌儿？ 男：我喜欢那些听起来浪漫的，让人感觉放松、心情愉快的。 问：他们在谈什么？",
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        123
+       ]
+      }
+     },
+     {
+      "n": 8,
+      "zh": "去火车站需要多长时间？",
+      "options": {
+       "A": "一刻钟",
+       "B": "5分钟",
+       "C": "25分钟",
+       "D": "半小时"
+      },
+      "transcript_zh": "女：师傅，我去火车站。要多长时间？半小时能到吗？ 男：现在不堵车，估计十五分钟就能到。 问：去火车站需要多长时间？",
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        123
+       ]
+      }
+     },
+     {
+      "n": 9,
+      "zh": "男的是什么态度？",
+      "options": {
+       "A": "感谢",
+       "B": "满意",
+       "C": "生气",
+       "D": "没关系"
+      },
+      "transcript_zh": "女：这件事是我不对，我真的觉得很对不起您。 男：没关系，过去的事情就让它过去吧，你也别太放在心上。 问：男的是什么态度？",
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        123
+       ]
+      }
+     },
+     {
+      "n": 10,
+      "zh": "女的现在心情怎么样？",
+      "options": {
+       "A": "很高兴",
+       "B": "有些紧张",
+       "C": "非常着急",
+       "D": "有点儿难过"
+      },
+      "transcript_zh": "女：下一个就是我了，我突然有点儿紧张。 男：没事，放松点儿，像平时练习时那样就可以。 问：女的现在心情怎么样？",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        123
+       ]
+      }
+     },
+     {
+      "n": 11,
+      "zh": "他们打算感谢谁？",
+      "options": {
+       "A": "大夫",
+       "B": "经理",
+       "C": "司机",
+       "D": "服务员"
+      },
+      "transcript_zh": "女：那位司机的服务态度很不错，我们玩儿得很愉快。 男：可不是，我们真应该好好谢谢他。 问：他们打算感谢谁？",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        123
+       ]
+      }
+     },
+     {
+      "n": 12,
+      "zh": "男的现在心情怎么样？",
+      "options": {
+       "A": "伤心",
+       "B": "紧张",
+       "C": "愉快",
+       "D": "后悔"
+      },
+      "transcript_zh": "女：看你这高兴的样子，问题解决了？ 男：是啊，白老师提醒我换一种方法试试，问题果然就解决了。 问：男的现在心情怎么样？",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        123
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "一、听力 第三部分",
+    "type_zh": "听力 第三部分",
+    "instruction_zh": "第13–22题：请选出正确答案。",
+    "items": [
+     {
+      "n": "例",
+      "zh": "会议几点开始？",
+      "transcript_zh": "男：把这个材料复印5份，一会儿拿到会议室发给大家。 女：好的。会议是下午三点吗？ 男：改了。三点半，推迟了半个小时。 女：好，602会议室没变吧？ 男：对，没变。 问：会议几点开始？",
+      "options": {
+       "A": "两点",
+       "B": "3点",
+       "C": "15：30",
+       "D": "18：00"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        80
+       ]
+      }
+     },
+     {
+      "n": 13,
+      "zh": "女的现在心情怎么样？",
+      "options": {
+       "A": "紧张",
+       "B": "着急",
+       "C": "放松",
+       "D": "难过"
+      },
+      "transcript_zh": "女：世界公园到底是不是在东边啊？怎么还没到？ 男：肯定没错，估计再有几分钟就到了吧。 女：再晚了我们就来不及看节目了。 男：别担心，下午还有呢。 问：女的现在心情怎么样？",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        123
+       ]
+      }
+     },
+     {
+      "n": 14,
+      "zh": "女的为什么高兴？",
+      "options": {
+       "A": "要去留学",
+       "B": "要结婚了",
+       "C": "通过考试了",
+       "D": "做成生意了"
+      },
+      "transcript_zh": "男：你今天心情不错，看样子有什么好事。 女：告诉你一个好消息，我通过法律考试了，可以当律师了。 男：太好了！老同学，这可真是个好消息。 女：谢谢！走，我们边走边谈。 问：女的为什么高兴？",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        123
+       ]
+      }
+     },
+     {
+      "n": 15,
+      "zh": "女的现在心情怎么样？",
+      "options": {
+       "A": "很担心",
+       "B": "很放松",
+       "C": "非常紧张",
+       "D": "特别难过"
+      },
+      "transcript_zh": "女：这里的景色真美，空气也好。 男：怎么样，心情好些了吗？ 女：好多了，最近压力大，好久都没这么放松了，真是谢谢你。 男：不客气。 问：女的现在心情怎么样？",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        123
+       ]
+      }
+     },
+     {
+      "n": 16,
+      "zh": "女的为什么很高兴？",
+      "options": {
+       "A": "收到短信了",
+       "B": "减肥成功了",
+       "C": "超市在打折",
+       "D": "得到礼物了"
+      },
+      "transcript_zh": "男：小姐，您是今天第一个来我们超市的客人，我们准备了一个小礼物送给您。 女：真的吗？谢谢你！太高兴了。 男：这是我们超市送您的巧克力，祝您购物愉快。 女：谢谢。 问：女的为什么很高兴？",
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        123
+       ]
+      }
+     },
+     {
+      "n": 17,
+      "zh": "男的是什么心情？",
+      "options": {
+       "A": "觉得不好意思",
+       "B": "非常高兴",
+       "C": "难过极了",
+       "D": "感到不满意"
+      },
+      "transcript_zh": "男：这次活动非常成功，我们顺利完成了公司交给的工作。 女：辛苦了！ 男：谢谢您对我们的支持。 女：能有这么大的成绩，主要是你们工作努力。 问：男的是什么心情？",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        123
+       ]
+      }
+     },
+     {
+      "n": 18,
+      "zh": "男的担心什么？",
+      "options": {
+       "A": "堵车",
+       "B": "票卖完了",
+       "C": "电影没意思",
+       "D": "可能要加班"
+      },
+      "transcript_zh": "男：电影七点开始，下了班去来不及了吧？ 女：应该来得及。 男：可是那个时候堵车很严重，出租车也不好打。 女：不用担心，我们坐地铁去，很快的。 问：男的担心什么？",
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        123
+       ]
+      }
+     },
+     {
+      "n": 19,
+      "zh": "吃香蕉能给我们带来什么？",
+      "options": {
+       "A": "爱情",
+       "B": "烦恼",
+       "C": "快乐",
+       "D": "压力"
+      },
+      "transcript_zh": "第19到20题是根据下面一段话： 香蕉是一种“快乐水果”，因为吃香蕉能帮助人减轻压力，让人高兴。另外香蕉还有很多好处，睡觉前吃香蕉能让你睡得更好，多吃香蕉对我们的皮肤很好，而且香蕉还有不错的减肥效果。 19. 吃香蕉能给我们带来什么？",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        123
+       ]
+      }
+     },
+     {
+      "n": 20,
+      "zh": "根据这段话，以下哪个不是香蕉的好处",
+      "options": {
+       "A": "让人高兴",
+       "B": "让人聪明",
+       "C": "让人睡得好",
+       "D": "让人皮肤好"
+      },
+      "transcript_zh": "第19到20题是根据下面一段话： 香蕉是一种“快乐水果”，因为吃香蕉能帮助人减轻压力，让人高兴。另外香蕉还有很多好处，睡觉前吃香蕉能让你睡得更好，多吃香蕉对我们的皮肤很好，而且香蕉还有不错的减肥效果。 20. 根据这段话，以下哪个不是香蕉的好处",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        123
+       ]
+      }
+     },
+     {
+      "n": 21,
+      "zh": "根据这段话，哪种天气会使人觉得不舒服？",
+      "options": {
+       "A": "晴天",
+       "B": "阴天",
+       "C": "下雨天",
+       "D": "下雪天"
+      },
+      "transcript_zh": "第21到22题是根据下面一段话： 科学研究证明，天气会影响人的心情，不同的天气会给人带来不同的感情变化。晴天会让人变得轻松，觉得心情愉快；阴天容易使人感到难过，干什么事情都没有精神；有些人在下雨天会觉得很舒服，变得安静下来；下雪天会让人兴奋，对我们的身体也有好处。 21. 根据这段话，哪种天气会使人觉得不舒服？",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        123
+       ]
+      }
+     },
+     {
+      "n": 22,
+      "zh": "根据这段话，晴天会让人的心情怎么样？",
+      "options": {
+       "A": "难过",
+       "B": "兴奋",
+       "C": "高兴",
+       "D": "紧张"
+      },
+      "transcript_zh": "第21到22题是根据下面一段话： 科学研究证明，天气会影响人的心情，不同的天气会给人带来不同的感情变化。晴天会让人变得轻松，觉得心情愉快；阴天容易使人感到难过，干什么事情都没有精神；有些人在下雨天会觉得很舒服，变得安静下来；下雪天会让人兴奋，对我们的身体也有好处。 22. 根据这段话，晴天会让人的心情怎么样？",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        123
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第一部分（23–26）",
+    "type_zh": "阅读 第一部分",
+    "instruction_zh": "第23–26题：选词填空。",
+    "word_bank": [
+     [
+      "A 回忆",
+      "B 距离",
+      "C 往往",
+      "D 坚持",
+      "E 态度"
+     ]
+    ],
+    "items": [
+     {
+      "n": "例",
+      "zh": "她每天都（　）走路上下班，所以身体一直很不错。",
+      "options": {
+       "A": "回忆",
+       "B": "距离",
+       "C": "往往",
+       "D": "坚持",
+       "E": "态度"
+      },
+      "answer": "D",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        81
+       ]
+      }
+     },
+     {
+      "n": 23,
+      "zh": "最困难的时候，（　）也是你离成功最近的时候。",
+      "options": {
+       "A": "回忆",
+       "B": "距离",
+       "C": "往往",
+       "D": "坚持",
+       "E": "态度"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        123
+       ]
+      }
+     },
+     {
+      "n": 24,
+      "zh": "一般来说，（　）积极的人更容易感觉到幸福。",
+      "options": {
+       "A": "回忆",
+       "B": "距离",
+       "C": "往往",
+       "D": "坚持",
+       "E": "态度"
+      },
+      "answer": "E",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        123
+       ]
+      }
+     },
+     {
+      "n": 25,
+      "zh": "这儿离大使馆还有一段（　），你还是坐出租车去吧。",
+      "options": {
+       "A": "回忆",
+       "B": "距离",
+       "C": "往往",
+       "D": "坚持",
+       "E": "态度"
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        123
+       ]
+      }
+     },
+     {
+      "n": 26,
+      "zh": "这些发黄的老照片让那位老奶奶（　）起很多年轻时候的事。",
+      "options": {
+       "A": "回忆",
+       "B": "距离",
+       "C": "往往",
+       "D": "坚持",
+       "E": "态度"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        123
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第一部分（27–30）",
+    "type_zh": "阅读 第一部分",
+    "instruction_zh": "第27–30题：选词填空。",
+    "word_bank": [
+     [
+      "A 亲戚",
+      "B 耐心",
+      "C 温度",
+      "D 堵车",
+      "E 只要"
+     ]
+    ],
+    "items": [
+     {
+      "n": "例",
+      "zh": "A：今天真冷啊，好像白天最高（　）才2℃。 B：刚才电视里说明天更冷。",
+      "options": {
+       "A": "亲戚",
+       "B": "耐心",
+       "C": "温度",
+       "D": "堵车",
+       "E": "只要"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        82
+       ]
+      }
+     },
+     {
+      "n": 27,
+      "zh": "A：路上（　），我要晚一点儿才能到。 B：没事，你不用着急，我也刚上地铁。",
+      "options": {
+       "A": "亲戚",
+       "B": "耐心",
+       "C": "温度",
+       "D": "堵车",
+       "E": "只要"
+      },
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        123
+       ]
+      }
+     },
+     {
+      "n": 28,
+      "zh": "A：一位好老师一定是一个有（　）的老师。 B：对，我们学校就有很多这样的老师。",
+      "options": {
+       "A": "亲戚",
+       "B": "耐心",
+       "C": "温度",
+       "D": "堵车",
+       "E": "只要"
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        123
+       ]
+      }
+     },
+     {
+      "n": 29,
+      "zh": "A：小马，你的房子卖出去了吗？我有个（　）想看看。 B：不好意思，昨天下午刚卖出去。",
+      "options": {
+       "A": "亲戚",
+       "B": "耐心",
+       "C": "温度",
+       "D": "堵车",
+       "E": "只要"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        123
+       ]
+      }
+     },
+     {
+      "n": 30,
+      "zh": "A：这里生活很方便，周围有超市、银行，离学校也不远。 B：（　）你觉得满意就好，你拿主意吧。",
+      "options": {
+       "A": "亲戚",
+       "B": "耐心",
+       "C": "温度",
+       "D": "堵车",
+       "E": "只要"
+      },
+      "answer": "E",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        123
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第二部分",
+    "type_zh": "阅读 第二部分",
+    "instruction_zh": "第31–34题：排列顺序。",
+    "items": [
+     {
+      "n": "例",
+      "zh": "",
+      "options": {
+       "A": "可是今天起晚了",
+       "B": "平时我骑自行车上下班",
+       "C": "所以就打车来公司"
+      },
+      "answer": "BAC",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        83
+       ]
+      }
+     },
+     {
+      "n": 31,
+      "zh": "",
+      "options": {
+       "A": "小说《红楼梦》在中国非常有名",
+       "B": "只要是中国人",
+       "C": "我相信没有不知道它的"
+      },
+      "answer": "ABC",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        123
+       ]
+      }
+     },
+     {
+      "n": 32,
+      "zh": "",
+      "options": {
+       "A": "让阳光和新鲜的空气进入室内",
+       "B": "可以使您的心情变得更好",
+       "C": "早上起床后，打开窗户"
+      },
+      "answer": "CAB",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        123
+       ]
+      }
+     },
+     {
+      "n": 33,
+      "zh": "",
+      "options": {
+       "A": "也感谢他们这么多年来给我的爱",
+       "B": "有了女儿以后，我才知道做妈妈有多么不容易",
+       "C": "因此，我更加理解我的爸爸妈妈了"
+      },
+      "answer": "BCA",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        123
+       ]
+      }
+     },
+     {
+      "n": 34,
+      "zh": "",
+      "options": {
+       "A": "还与人的生活环境、经历等有关",
+       "B": "有人认为，年龄越大，经验就越丰富",
+       "C": "其实，经验不但与年龄有关"
+      },
+      "answer": "BCA",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        123
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第三部分",
+    "type_zh": "阅读 第三部分",
+    "instruction_zh": "第35–43题：请选出正确答案。",
+    "items": [
+     {
+      "n": "例",
+      "zh": "她很活泼，说话很有趣，总能给我们带来快乐，我们都很喜欢和她在一起。 ★她是个什么样的人？",
+      "options": {
+       "A": "幽默",
+       "B": "马虎",
+       "C": "骄傲",
+       "D": "害羞"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        84
+       ]
+      }
+     },
+     {
+      "n": 35,
+      "zh": "很多时候，我们不得不去做一些自己不愿意做甚至很讨厌的工作。这时，我们最需要的就是耐心和责任心，还有一个愉快的心情。 ★做不喜欢做的工作时，应该：",
+      "options": {
+       "A": "有耐心",
+       "B": "提前完成",
+       "C": "让同事做",
+       "D": "每天加班"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        123
+       ]
+      }
+     },
+     {
+      "n": 36,
+      "zh": "有时候，哭并不一定是件坏事。哭可以使人从坏心情中走出来，是一种减轻压力的好办法。 ★有时候哭并不是坏事，是因为哭能：",
+      "options": {
+       "A": "感动别人",
+       "B": "减轻压力",
+       "C": "解决问题",
+       "D": "积累经验"
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        123
+       ]
+      }
+     },
+     {
+      "n": 37,
+      "zh": "经验证明，理解别人可以使自己的心情变得更好。如果看见的总是别人不好的地方，你和别人的关系就会越来越紧张，你也会因为一直担心别人对你有什么不好的看法而无法高兴起来。 ★总看别人的不好，会：",
+      "options": {
+       "A": "浪费时间",
+       "B": "影响心情",
+       "C": "缺少耐心",
+       "D": "改变印象"
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        123
+       ]
+      }
+     },
+     {
+      "n": 38,
+      "zh": "当你心情不好时，别一个人坐在房间里，也别躺在床上睡觉，更不要一个人去喝酒。你应该和朋友聊聊天儿、逛逛商场，这样你很快就会好起来的。 ★心情不好时，应该：",
+      "options": {
+       "A": "找人聊天儿",
+       "B": "少抽烟",
+       "C": "努力工作",
+       "D": "锻炼身体"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        123
+       ]
+      }
+     },
+     {
+      "n": 39,
+      "zh": "很多人爱吃巧克力，这是为什么呢？首先，巧克力大多是甜的，味道很好；其次，巧克力吃起来感觉很好，能使人的心情变得愉快；另外，巧克力还是节日人们非常喜爱的礼物，很浪漫。 ★根据这段话，以下哪个不是人们喜欢吃巧克力的原因：",
+      "options": {
+       "A": "样子好看",
+       "B": "味道好",
+       "C": "让心情变好",
+       "D": "很浪漫"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        123
+       ]
+      }
+     },
+     {
+      "n": 40,
+      "zh": "（40–41）生活中总会遇到一些让人感到紧张或不愉快的事情。有些事情虽然不大，却能影响你的心情，甚至会影响你的身体健康。这些问题人人都会遇到，但每个人都有不同的减压方法。当我感觉压力大时，我会去跑跑步或者打打篮球。我觉得这种方法比较健康，既能减轻压力，又能锻炼身体。 ★压力大时，他会：",
+      "options": {
+       "A": "唱歌",
+       "B": "运动",
+       "C": "买东西",
+       "D": "找朋友聊天儿"
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        123
+       ]
+      }
+     },
+     {
+      "n": 41,
+      "zh": "（40–41）生活中总会遇到一些让人感到紧张或不愉快的事情。有些事情虽然不大，却能影响你的心情，甚至会影响你的身体健康。这些问题人人都会遇到，但每个人都有不同的减压方法。当我感觉压力大时，我会去跑跑步或者打打篮球。我觉得这种方法比较健康，既能减轻压力，又能锻炼身体。 ★这段话主要想告诉我们：",
+      "options": {
+       "A": "工作的好处",
+       "B": "人的性格",
+       "C": "心情不好的原因",
+       "D": "有压力时该怎么办"
+      },
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        123
+       ]
+      }
+     },
+     {
+      "n": 42,
+      "zh": "（42–43）很多人已经适应了每天紧张的工作。他们认为聊天儿只会浪费时间，所以很少会坐下来和朋友或者家人聊天儿。其实，在紧张的工作后，聊天儿往往能使人感到放松。另外，人们还可以通过聊天儿获得友谊。调查发现，经常和朋友聊天儿的人更受周围人的欢迎。因此，只要选好时间和地点，聊天儿会有很多好处。 ★为什么有的人很少坐下来聊天儿？",
+      "options": {
+       "A": "没烦恼",
+       "B": "怕麻烦",
+       "C": "怕浪费时间",
+       "D": "不喜欢人多"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        123
+       ]
+      }
+     },
+     {
+      "n": 43,
+      "zh": "（42–43）很多人已经适应了每天紧张的工作。他们认为聊天儿只会浪费时间，所以很少会坐下来和朋友或者家人聊天儿。其实，在紧张的工作后，聊天儿往往能使人感到放松。另外，人们还可以通过聊天儿获得友谊。调查发现，经常和朋友聊天儿的人更受周围人的欢迎。因此，只要选好时间和地点，聊天儿会有很多好处。 ★这段话告诉我们要：",
+      "options": {
+       "A": "努力工作",
+       "B": "多听音乐",
+       "C": "早睡早起",
+       "D": "经常聊天儿"
+      },
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        123
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "三、书写 第一部分",
+    "type_zh": "书写 第一部分",
+    "instruction_zh": "第44–48题：完成句子。",
+    "items": [
+     {
+      "n": "例",
+      "zh": "那座桥　800年的　历史　有　了",
+      "answer": "那座桥有800年的历史了。",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        86
+       ]
+      }
+     },
+     {
+      "n": 44,
+      "zh": "离大使馆　友谊宾馆　远　吗",
+      "answer": "友谊宾馆离大使馆远吗？",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        123
+       ]
+      }
+     },
+     {
+      "n": 45,
+      "zh": "司机师傅　对　那位　非常熟悉　这儿",
+      "answer": "那位司机师傅对这儿非常熟悉。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        123
+       ]
+      }
+     },
+     {
+      "n": 46,
+      "zh": "任何事情的　是　发生　有原因的　都",
+      "answer": "任何事情的发生都是有原因的。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        123
+       ]
+      }
+     },
+     {
+      "n": 47,
+      "zh": "愉快　她们　聊得　非常　俩",
+      "answer": "她们俩聊得非常愉快。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        123
+       ]
+      }
+     },
+     {
+      "n": 48,
+      "zh": "消息后　这个　伤心地　她听到　哭了",
+      "answer": "她听到这个消息后伤心地哭了。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        123
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "三、书写 第二部分",
+    "type_zh": "书写 第二部分",
+    "instruction_zh": "第49–50题：看图，用词造句。",
+    "items": [
+     {
+      "n": "例",
+      "zh": "乒乓球",
+      "picture_desc_en": "A young woman holding a table-tennis paddle, about to serve a ball.",
+      "answer": "她很喜欢打乒乓球。",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        87
+       ]
+      }
+     },
+     {
+      "n": 49,
+      "zh": "心情",
+      "picture_desc_en": "A man in a shirt and tie standing with a neutral face, holding up two photos of himself: one laughing, one crying/upset.",
+      "answer": "不管你的心情是好是坏，生活总要过下去。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        123
+       ]
+      }
+     },
+     {
+      "n": 50,
+      "zh": "耐心",
+      "picture_desc_en": "A smiling doctor in a white coat with a stethoscope talking with an elderly male patient, holding his hand.",
+      "answer": "他是个好大夫，对病人总是非常耐心。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        123
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "answers_ref": {
+   "book": "teacher",
+   "pages": [
+    121,
+    122,
+    123
+   ]
+  }
+ },
+ "unclear": [
+  "Аудио файлын нэр мэдэгдэхгүй тул audio талбар орхисон. Сурах бичгийн CD тэмдэг: 课文1–5 = 08-1…08-5; дасгалын номын 听力 第一/二/三部分 = 08-1, 08-2, 08-3.",
+  "Хичээлийн гарчгийн пиньинь номд «Shēnghuó zhōng bù  quēshǎo  měi» (ханзын дээр тархсан, илүү зайтай) — title_pinyin-д энгийн зайтай бичсэн.",
+  "注释3 «可不是» — 生词 хүснэгтэд (1–29) ороогүй; мөн энэ хичээлд 专有名词 хэсэг байхгүй (李老师、高老师、小夏、马克 жагсаагдаагүй).",
+  "注释4 因此 — сурах бичиг: «但不能和“因为”搭配使用»; багшийн ном (PDF х.75): «但一般不能和“因为”搭配使用» — номын зөрүү.",
+  "注释2-ын гарчиг сурах бичигт «只要», багшийн номд (PDF х.73) «只要……就……».",
+  "Багшийн ном 语言点(4) 导入 (PDF х.75): «“因为堵车堵得很厉害，因此我更喜欢坐地铁。”» өгүүлбэрт «因为» хоёр үсгийг дарж зурсан (删掉) — teacher.steps-д «（书中“因为”二字划掉）» гэж тэмдэглэсэн.",
+  "拼音课文3-т ярилцагчийн нэр «shīfu» (жижиг үсгээр) хэвлэгдсэн; 拼音课文-ын гарчгийн пиньинь болон ярилцагчийн нэрийн пиньинь схемд талбаргүй тул lines.pinyin-д зөвхөн яриаг оруулсан.",
+  "拼音课文1: «使人的心情变得愉快» → «shǐ rén de xīnqíng biàn de yúkuài» (变得 = «biàn de», зайтай), харин 课文3, 5-д «biànde» — номд байгаагаар.",
+  "课文4, 课文5 — гарчиггүй 短文 — мөрүүдийг (lines) өгүүлбэрээр хуваасан (номд нэг догол мөр); пиньинийг харгалзуулан хуваасан.",
+  "热身2 «生活中的礼物» хүснэгтэд 不能太贵 / 回家自己看 / 邮寄 нүднүүд 结婚 ба 回国 хоёр мөрийг хамарсан (merged) — warmup.items-д 结婚-ийн мөрөнд бичиж, 回国-ийн мөрийн бусад нүдийг хоосон үлдээсэн.",
+  "热身1-ийн хариулт зөвхөн багшийн номд (PDF х.71): ①E ②F ③B ④D ⑤A ⑥C.",
+  "注释5 比一比 做一做 «选词填空 Tick or cross»: (1) 往往✓ 经常✓, (2) 往往× 经常✓ — номд жишээ болгон хэвлэгдсэн хариулт; (3)–(5)-ын хариулт сурах бичиг, багшийн номд хэвлэгдээгүй (багшийн ном: «按照教材中的辨析步骤进行»).",
+  "Сурах бичгийн 练一练 (5 дүрэм × 3), 回答问题 (课文1–3 — 6, 课文4–5 — 4), 练习1 复述 ба 练习2 选词填空 (10) — хариулт хэвлэгдээгүй тул answer талбаргүй. Зөвхөн 扩展 做一做-ийн хариулт багшийн номд (PDF х.78): ①主要 ②要是 ③重要 ④只要. Багшийн номын нэмэлт 扩展 (3) дасгал (A 要是 B 只要 C 主要 D 重要 ; хариулт D C A B) teacher.steps «5 扩展»-д.",
+  "Сурах бичгийн 根据课文内容回答问题 хоёр хэсэг дугааргүй (课文3-ын дараа, 课文5-ын дараа) — exercises-д «课文1–3 回答问题», «课文4–5 回答问题» гэж нэрлэсэн; 比一比 ба 扩展-ийн 做一做-г мөн exercises-д оруулсан. 扩展 同字词 (要：重要、主要、只要、要是)-ийг textbook.characters-д оруулсан.",
+  "Энэ хичээлд 俗语 байхгүй (文化 гарчиг «中国人眼中的“红”与“白”») тул saying талбар орхисон; culture.body_en-ийн эхний мөрөнд англи гарчиг «Red and White in Chinese People’s Eyes».",
+  "Багшийн ном 课文扩展练习 课文5 (PDF х.78): «……而且，颜色也会……（影响人的心情）» — сурах бичгийн 课文5-д «而且» байхгүй («颜色也会影响人的心情»). Багшийн номын 课文 асуултын хариулт тус бүрчлэн хэвлэгдээгүй («教师给出答案»).",
+  "Багшийн номын 语言点(5) 往往 运用 (PDF х.76) — 3 зураг (I: хүмүүс гадаа ширээний ард хооллож байгаа; II: ороолттой эр ханиалгаж байгаа; III: эмэгтэй хамраа салфеткаар дарж байгаа) — steps-д «（图片I、II、III）» гэж.",
+  "Дасгалын ном 听力 第二/三部分 — номд зөвхөн сонголтууд хэвлэгдсэн; item.zh-д багшийн номын хавсралтын «问：» асуултыг (19–22-т дугаартай асуултыг) оруулсан, transcript_zh-д бүтнээр. 听力 第一部分-д жишээ 2 (✓ ба ×) тул «例1», «例2».",
+  "Хавсралтын 20-р асуулт «根据这段话，以下哪个不是香蕉的好处» — төгсгөлд цэг таслалгүй хэвлэгдсэн — номд байгаагаар.",
+  "Дасгалын ном 阅读 第二部分 (31–34 排列顺序)-ийн item.zh хоосон, хэсгүүд options (A/B/C)-д.",
+  "Дасгалын ном 书写 44–50-ын хариулт багшийн номын хавсралтад «参考答案» гэж хэвлэгдсэн; 49–50 (看图，用词造句) нээлттэй даалгавар тул хариулт нь зөвхөн жишээ.",
+  "Дасгалын номд 复习 хэсэг байхгүй (听力 3 хэсэг, 阅读 3 хэсэг, 书写 2 хэсэг, нийт 50 асуулт)."
+ ],
+ "verified_pages": [
+  70,
+  71,
+  72,
+  73,
+  74,
+  75,
+  76,
+  77,
+  78,
+  79,
+  80,
+  81,
+  82,
+  83,
+  84,
+  85,
+  86,
+  87,
+  99,
+  100,
+  101,
+  102,
+  103,
+  104,
+  105,
+  106,
+  107,
+  108,
+  109,
+  110,
+  121,
+  122,
+  123
+ ],
+ "schema_version": 1
+}

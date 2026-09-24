@@ -1,0 +1,2317 @@
+{
+ "level": "hsk4",
+ "lesson": 7,
+ "book": "HSK4A",
+ "title_zh": "最好的医生是自己",
+ "title_pinyin": "Zuì hǎo de yīshēng shì zìjǐ",
+ "title_en": "The best doctor is yourself",
+ "textbook": {
+  "ref": {
+   "book": "textbook",
+   "pages": [
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98
+   ]
+  },
+  "warmup": [
+   {
+    "instruction_zh": "给下边的词语选择对应的图片",
+    "instruction_en": "Match the pictures with the words.",
+    "items": [
+     "①流血 liú xiě",
+     "②咳嗽 késou",
+     "③减肥 jiǎn féi",
+     "④抽烟 chōu yān",
+     "⑤植物 zhíwù",
+     "⑥烦恼 fánnǎo"
+    ],
+    "pictures_desc_en": [
+     "A: black-and-white photo of a middle-aged man smoking a cigarette",
+     "B: a group of assorted green potted plants",
+     "C: a young man in a knitted hat and scarf coughing into his fist",
+     "D: a woman covering her face with both hands while someone rests a hand on her shoulder",
+     "E: a young woman holding a tissue under her bleeding nose",
+     "F: a slim young woman shown twice — measuring her waist with a tape measure and pulling out the waistband of loose jeans"
+    ]
+   },
+   {
+    "instruction_zh": "说说你的运动情况",
+    "instruction_en": "Talk about the sports you do.",
+    "items": [
+     "爱好 | 次数 | 每次时间 | 目的 mùdì | 效果",
+     "跑步 □ | 每周3–4次 □ | 半个小时 □ | 锻炼身体 □ | 不容易生病了 □",
+     "游泳 □ | 每周1–2次 □ | 1个小时 □ | 减肥 □ | 变瘦了 □",
+     "打篮球 □ | 每月1–2次 □ |（1个小时）|（减肥）|（变瘦了）",
+     "踢足球 □ | 几乎不 □ | 1个小时以上 □ | 认识朋友 □ | 长高了 □"
+    ]
+   }
+  ],
+  "texts": [
+   {
+    "n": 1,
+    "title_zh": "小李和小林聊天气和身体情况",
+    "kind": "dialogue",
+    "lines": [
+     {
+      "speaker": "小李",
+      "zh": "你的鼻子怎么流血了？快用纸擦擦。",
+      "pinyin": "Nǐ de bízi zěnme liú xiě le? Kuài yòng zhǐ cāca."
+     },
+     {
+      "speaker": "小林",
+      "zh": "我还不习惯北方的气候，估计是天气太干。今天天气不是很冷，你怎么穿这么多？",
+      "pinyin": "Wǒ hái bù xíguàn běifāng de qìhòu, gūjì shì tiānqì tài gān. Jīntiān tiānqì bú shì hěn lěng, nǐ zěnme chuān zhème duō?"
+     },
+     {
+      "speaker": "小李",
+      "zh": "就是因为昨天穿得太少，我都感冒了。",
+      "pinyin": "Jiù shì yīnwèi zuótiān chuān de tài shǎo, wǒ dōu gǎnmào le."
+     },
+     {
+      "speaker": "小林",
+      "zh": "最近感冒的人特别多。你去看医生了吗？",
+      "pinyin": "Zuìjìn gǎnmào de rén tèbié duō. Nǐ qù kàn yīshēng le ma?"
+     },
+     {
+      "speaker": "小李",
+      "zh": "没有，我只是咳嗽，有点儿头疼，不严重，多喝点儿水就好了。",
+      "pinyin": "Méiyǒu, wǒ zhǐ shì késou, yǒudiǎnr tóu téng, bù yánzhòng, duō hē diǎnr shuǐ jiù hǎo le."
+     },
+     {
+      "speaker": "小林",
+      "zh": "春天天气时冷时热，特别容易感冒。这时候一定要多注意保暖，另外，最好经常打开窗户换换空气。",
+      "pinyin": "Chūntiān tiānqì shí lěng shí rè, tèbié róngyì gǎnmào. Zhè shíhou yídìng yào duō zhùyì bǎo nuǎn, lìngwài, zuìhǎo jīngcháng dǎkāi chuānghu huànhuan kōngqì."
+     }
+    ],
+    "new_words": [
+     {
+      "n": 1,
+      "zh": "流血",
+      "pinyin": "liú xiě",
+      "pos": "v.",
+      "en": "to bleed",
+      "star": true,
+      "text": 1
+     },
+     {
+      "n": 2,
+      "zh": "擦",
+      "pinyin": "cā",
+      "pos": "v.",
+      "en": "to wipe",
+      "text": 1
+     },
+     {
+      "n": 3,
+      "zh": "气候",
+      "pinyin": "qìhòu",
+      "pos": "n.",
+      "en": "climate",
+      "text": 1
+     },
+     {
+      "n": 4,
+      "zh": "估计",
+      "pinyin": "gūjì",
+      "pos": "v.",
+      "en": "to estimate, to reckon",
+      "text": 1
+     },
+     {
+      "n": 5,
+      "zh": "咳嗽",
+      "pinyin": "késou",
+      "pos": "v.",
+      "en": "to cough",
+      "text": 1
+     },
+     {
+      "n": 6,
+      "zh": "严重",
+      "pinyin": "yánzhòng",
+      "pos": "adj.",
+      "en": "serious, grave",
+      "text": 1
+     },
+     {
+      "n": 7,
+      "zh": "窗户",
+      "pinyin": "chuānghu",
+      "pos": "n.",
+      "en": "window",
+      "text": 1
+     },
+     {
+      "n": 8,
+      "zh": "空气",
+      "pinyin": "kōngqì",
+      "pos": "n.",
+      "en": "air",
+      "text": 1
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "title_zh": "小夏和小雨聊小雨抽烟的事情",
+    "kind": "dialogue",
+    "lines": [
+     {
+      "speaker": "小夏",
+      "zh": "你咳嗽好点儿了吗？医生怎么说的？",
+      "pinyin": "Nǐ késou hǎo diǎnr le ma? Yīshēng zěnme shuō de?"
+     },
+     {
+      "speaker": "小雨",
+      "zh": "还是老样子，他让我以后不要再抽烟了。",
+      "pinyin": "Hái shì lǎo yàngzi, tā ràng wǒ yǐhòu bú yào zài chōu yān le."
+     },
+     {
+      "speaker": "小夏",
+      "zh": "抽烟对身体一点儿好处也没有。",
+      "pinyin": "Chōu yān duì shēntǐ yìdiǎnr hǎochù yě méiyǒu."
+     },
+     {
+      "speaker": "小雨",
+      "zh": "我也知道，可是我觉得抽烟这个动作看上去很帅。",
+      "pinyin": "Wǒ yě zhīdào, kěshì wǒ juéde chōu yān zhège dòngzuò kàn shangqu hěn shuài."
+     },
+     {
+      "speaker": "小夏",
+      "zh": "等你身体出现问题了，后悔就来不及了。",
+      "pinyin": "Děng nǐ shēntǐ chūxiàn wèntí le, hòuhuǐ jiù láibují le."
+     },
+     {
+      "speaker": "小雨",
+      "zh": "其实家人也一直反对我抽烟，我自己却觉得没什么。但最近总是咳嗽，所以我有些担心了。",
+      "pinyin": "Qíshí jiārén yě yìzhí fǎnduì wǒ chōu yān, wǒ zìjǐ què juéde méi shénme. Dàn zuìjìn zǒngshì késou, suǒyǐ wǒ yǒuxiē dān xīn le."
+     },
+     {
+      "speaker": "小夏",
+      "zh": "抽烟不仅对自己没好处，还会影响周围人的身体健康。为了你和你的家人，别再抽了。",
+      "pinyin": "Chōu yān bùjǐn duì zìjǐ méi hǎochù, hái huì yǐngxiǎng zhōuwéi rén de shēntǐ jiànkāng. Wèile nǐ hé nǐ de jiārén, bié zài chōu le."
+     }
+    ],
+    "new_words": [
+     {
+      "n": 9,
+      "zh": "抽烟",
+      "pinyin": "chōu yān",
+      "en": "to smoke",
+      "text": 2
+     },
+     {
+      "n": 10,
+      "zh": "动作",
+      "pinyin": "dòngzuò",
+      "pos": "n.",
+      "en": "action, movement",
+      "text": 2
+     },
+     {
+      "n": 11,
+      "zh": "帅",
+      "pinyin": "shuài",
+      "pos": "adj.",
+      "en": "handsome",
+      "text": 2
+     },
+     {
+      "n": 12,
+      "zh": "出现",
+      "pinyin": "chūxiàn",
+      "pos": "v.",
+      "en": "to appear, to emerge",
+      "text": 2
+     },
+     {
+      "n": 13,
+      "zh": "后悔",
+      "pinyin": "hòuhuǐ",
+      "pos": "v.",
+      "en": "to regret",
+      "text": 2
+     },
+     {
+      "n": 14,
+      "zh": "来不及",
+      "pinyin": "láibují",
+      "pos": "v.",
+      "en": "to have not enough time to, to be too late to",
+      "text": 2
+     },
+     {
+      "n": 15,
+      "zh": "反对",
+      "pinyin": "fǎnduì",
+      "pos": "v.",
+      "en": "to oppose, to object to",
+      "text": 2
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "title_zh": "小李和小林聊电脑对身体的影响",
+    "kind": "dialogue",
+    "lines": [
+     {
+      "speaker": "小李",
+      "zh": "我最近眼睛总是跳，大夫说是因为我长时间看电脑，眼睛太累。",
+      "pinyin": "Wǒ zuìjìn yǎnjing zǒngshì tiào, dàifu shuō shì yīnwèi wǒ cháng shíjiān kàn diànnǎo, yǎnjing tài lèi."
+     },
+     {
+      "speaker": "小林",
+      "zh": "长时间坐在电脑前面工作，眼睛很容易累。最好是每过一小时就休息休息，然后再开始工作。",
+      "pinyin": "Cháng shíjiān zuò zài diànnǎo qiánmian gōngzuò, yǎnjing hěn róngyì lèi. Zuìhǎo shì měi guò yì xiǎoshí jiù xiūxi xiūxi, ránhòu zài kāishǐ gōngzuò."
+     },
+     {
+      "speaker": "小李",
+      "zh": "医生也这么说，他还告诉我要多向远处看看，尤其是多看看绿色的植物。",
+      "pinyin": "Yīshēng yě zhème shuō, tā hái gàosu wǒ yào duō xiàng yuǎn chù kànkan, yóuqí shì duō kànkan lǜsè de zhíwù."
+     },
+     {
+      "speaker": "小林",
+      "zh": "长时间对着电脑不仅对眼睛不好，身体也会不舒服。研究发现，如果人一天静坐超过6小时，就会影响身体健康。",
+      "pinyin": "Cháng shíjiān duìzhe diànnǎo bùjǐn duì yǎnjing bù hǎo, shēntǐ yě huì bù shūfu. Yánjiū fāxiàn, rúguǒ rén yì tiān jìng zuò chāoguò liù xiǎoshí, jiù huì yǐngxiǎng shēntǐ jiànkāng."
+     },
+     {
+      "speaker": "小李",
+      "zh": "是啊！像咱们这些久坐办公室的人要注意，有时间应该多站起来活动活动。",
+      "pinyin": "Shì a! Xiàng zánmen zhèxiē jiǔ zuò bàngōngshì de rén yào zhùyì, yǒu shíjiān yīnggāi duō zhàn qilai huódòng huódòng."
+     },
+     {
+      "speaker": "小林",
+      "zh": "好，咱们午饭后就去附近的公园散散步吧。",
+      "pinyin": "Hǎo, zánmen wǔfàn hòu jiù qù fùjìn de gōngyuán sànsan bù ba."
+     }
+    ],
+    "new_words": [
+     {
+      "n": 16,
+      "zh": "大夫",
+      "pinyin": "dàifu",
+      "pos": "n.",
+      "en": "doctor",
+      "text": 3
+     },
+     {
+      "n": 17,
+      "zh": "植物",
+      "pinyin": "zhíwù",
+      "pos": "n.",
+      "en": "plant",
+      "text": 3
+     },
+     {
+      "n": 18,
+      "zh": "研究",
+      "pinyin": "yánjiū",
+      "pos": "v.",
+      "en": "to study, to do research",
+      "text": 3
+     },
+     {
+      "n": 19,
+      "zh": "超过",
+      "pinyin": "chāoguò",
+      "pos": "v.",
+      "en": "to exceed, to surpass",
+      "text": 3
+     },
+     {
+      "n": 20,
+      "zh": "散步",
+      "pinyin": "sàn bù",
+      "pos": "v.",
+      "en": "to take a walk",
+      "text": 3
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "kind": "narrative",
+    "lines": [
+     {
+      "zh": "每个人都希望自己健康，那么什么才是健康呢？",
+      "pinyin": "Měi ge rén dōu xīwàng zìjǐ jiànkāng, nàme shénme cái shì jiànkāng ne?"
+     },
+     {
+      "zh": "过去，人们认为健康就是指身体不生病。",
+      "pinyin": "Guòqù, rénmen rènwéi jiànkāng jiù shì zhǐ shēntǐ bù shēng bìng."
+     },
+     {
+      "zh": "但是，现在人们认识到，健康还指精神上的健康。",
+      "pinyin": "Dànshì, xiànzài rénmen rènshi dào, jiànkāng hái zhǐ jīngshén shang de jiànkāng."
+     },
+     {
+      "zh": "只有身体和精神都健康，才算是真正的健康。",
+      "pinyin": "Zhǐyǒu shēntǐ hé jīngshén dōu jiànkāng, cái suàn shì zhēnzhèng de jiànkāng."
+     },
+     {
+      "zh": "有一位教授用数字来说明健康有多么重要：要是健康是1，其他都是1后面的0；如果没有1，不管有多少0也没用。",
+      "pinyin": "Yǒu yí wèi jiàoshòu yòng shùzì lái shuōmíng jiànkāng yǒu duōme zhòngyào: Yàoshi jiànkāng shì yī, qítā dōu shì yī hòumiàn de líng; rúguǒ méiyǒu yī, bùguǎn yǒu duōshao líng yě méi yòng."
+     },
+     {
+      "zh": "所以我们平时一定要注意锻炼，别等健康出问题了才后悔。",
+      "pinyin": "Suǒyǐ wǒmen píngshí yídìng yào zhùyì duànliàn, bié děng jiànkāng chū wèntí le cái hòuhuǐ."
+     }
+    ],
+    "new_words": [
+     {
+      "n": 21,
+      "zh": "指",
+      "pinyin": "zhǐ",
+      "pos": "v.",
+      "en": "to refer to",
+      "text": 4
+     },
+     {
+      "n": 22,
+      "zh": "精神",
+      "pinyin": "jīngshén",
+      "pos": "n.",
+      "en": "spirit, mind",
+      "star": true,
+      "text": 4
+     },
+     {
+      "n": 23,
+      "zh": "教授",
+      "pinyin": "jiàoshòu",
+      "pos": "n.",
+      "en": "professor",
+      "text": 4
+     },
+     {
+      "n": 24,
+      "zh": "数字",
+      "pinyin": "shùzì",
+      "pos": "n.",
+      "en": "number",
+      "text": 4
+     },
+     {
+      "n": 25,
+      "zh": "说明",
+      "pinyin": "shuōmíng",
+      "pos": "v.",
+      "en": "to explain, to show",
+      "text": 4
+     },
+     {
+      "n": 26,
+      "zh": "要是",
+      "pinyin": "yàoshi",
+      "pos": "conj.",
+      "en": "if, supposing",
+      "text": 4
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "kind": "narrative",
+    "lines": [
+     {
+      "zh": "我听一位医生说过一句话：“最好的医生是自己，最好的药是时间，最好的运动是散步。”",
+      "pinyin": "Wǒ tīng yí wèi yīshēng shuōguo yí jù huà: “Zuì hǎo de yīshēng shì zìjǐ, zuì hǎo de yào shì shíjiān, zuì hǎo de yùndòng shì sàn bù.”"
+     },
+     {
+      "zh": "前两条我理解得不深，最后一条我完全同意。",
+      "pinyin": "Qián liǎng tiáo wǒ lǐjiě de bù shēn, zuìhòu yì tiáo wǒ wánquán tóngyì."
+     },
+     {
+      "zh": "散步是生活中最简单的锻炼方法，既可以活动身体，又可以减肥，而且不会像跑步那样辛苦。",
+      "pinyin": "Sàn bù shì shēnghuó zhōng zuì jiǎndān de duànliàn fāngfǎ, jì kěyǐ huódòng shēntǐ, yòu kěyǐ jiǎn féi, érqiě bú huì xiàng pǎo bù nàyàng xīnkǔ."
+     },
+     {
+      "zh": "晚饭后，一家人一起出去散散步，是一件很幸福的事情。",
+      "pinyin": "Wǎnfàn hòu, yì jiā rén yìqǐ chūqu sànsan bù, shì yí jiàn hěn xìngfú de shìqing."
+     },
+     {
+      "zh": "肚子吃饱了需要活动，家人忙了一天需要交流，夫妻说说一天的工作能加深感情，听孩子谈谈学校里有意思的事，一天的烦恼就都跑掉了。",
+      "pinyin": "Dùzi chībǎo le xūyào huódòng, jiārén mángle yì tiān xūyào jiāoliú, fūqī shuōshuo yì tiān de gōngzuò néng jiāshēn gǎnqíng, tīng háizi tántan xuéxiào li yǒu yìsi de shì, yì tiān de fánnǎo jiù dōu pǎodiào le."
+     }
+    ],
+    "new_words": [
+     {
+      "n": 27,
+      "zh": "既",
+      "pinyin": "jì",
+      "pos": "adv.",
+      "en": "(used together with “又”) both...and...",
+      "star": true,
+      "text": 5
+     },
+     {
+      "n": 28,
+      "zh": "减肥",
+      "pinyin": "jiǎn féi",
+      "pos": "v.",
+      "en": "to lose weight",
+      "text": 5
+     },
+     {
+      "n": 29,
+      "zh": "辛苦",
+      "pinyin": "xīnkǔ",
+      "pos": "adj.",
+      "en": "hard, toilsome",
+      "text": 5
+     },
+     {
+      "n": 30,
+      "zh": "肚子",
+      "pinyin": "dùzi",
+      "pos": "n.",
+      "en": "belly, stomach",
+      "text": 5
+     },
+     {
+      "n": 31,
+      "zh": "感情",
+      "pinyin": "gǎnqíng",
+      "pos": "n.",
+      "en": "affection, love",
+      "text": 5
+     },
+     {
+      "n": 32,
+      "zh": "烦恼",
+      "pinyin": "fánnǎo",
+      "pos": "adj.",
+      "en": "worried, vexed",
+      "text": 5
+     },
+     {
+      "n": 33,
+      "zh": "掉",
+      "pinyin": "diào",
+      "pos": "v.",
+      "en": "used after certain verbs, indicating the result of an action",
+      "text": 5
+     }
+    ]
+   }
+  ],
+  "grammar": [
+   {
+    "n": 1,
+    "title_zh": "估计",
+    "explanation_zh": "“估计”，动词，表示根据某些情况，对事物做大概的推断。例如：\n【比一比 估计—可能】\n相同点：两者都可表示根据某些情况，对事物做大概的推断。★\n不同点：1. 表示★这个意思时，“估计”是动词，可以直接做谓语，后面可以是动词也可以是小句；而“可能”是能愿动词，只能放在动词前修饰动词，后面的动词才是谓语。\n2. “可能”可做形容词，表示可以实现的、能成为事实的；“估计”没有这个用法。\n3. “可能”前可以加“很”构成“很可能”，表示加强肯定估计，可以用于主语前或主语后；“估计”没有这个用法。",
+    "explanation_en": "The verb “估计” means to draw a rough inference from certain conditions. For example:\n[Compare 估计—可能]\nSimilarity: Both indicate rough inferences drawn from certain conditions.\nDifferences: 1. In case ★, “估计” is a verb which can be used directly as the predicate, followed by a verb or a clause, while “可能” is a modal verb used only as a modifier before the predicate verb.\n2. “可能” can be used as an adjective to indicate the possibility of something to be realized or to come true, while “估计” cannot be used this way.\n3. “可能” can be used after “很”, forming “很可能” (most likely), which can be used either before or after the subject to strengthen the affirmation of the estimation; “估计” cannot be used this way.",
+    "examples": [
+     {
+      "n": 1,
+      "zh": "我还不习惯北方的气候，估计是天气太干。"
+     },
+     {
+      "n": 2,
+      "zh": "你有没有去问问小王？估计他应该有办法。"
+     },
+     {
+      "n": 3,
+      "zh": "机场通知飞机晚点一个小时，估计他下午六点才能到上海。"
+     },
+     {
+      "zh": "今天的工作估计／可能完不成了，因为出了点儿问题。",
+      "note_zh": "比一比 相同点"
+     },
+     {
+      "zh": "明天就可以上网查成绩了，我估计这次考试考得不错。",
+      "note_zh": "比一比 不同点1：估计"
+     },
+     {
+      "zh": "明天就可以上网查成绩了，我这次考试估计／可能考得不错。",
+      "note_zh": "比一比 不同点1：估计／可能"
+     },
+     {
+      "zh": "他这么多天没来上课，最可能的原因就是他回国了。",
+      "note_zh": "比一比 不同点2：可能（形容词）"
+     },
+     {
+      "zh": "很可能他还不知道这件事。",
+      "note_zh": "比一比 不同点3：很可能（主语前）"
+     },
+     {
+      "zh": "他很可能还不知道这件事。",
+      "note_zh": "比一比 不同点3：很可能（主语后）"
+     }
+    ],
+    "practice_instruction_zh": "完成句子",
+    "practice": [
+     {
+      "n": 1,
+      "zh": "________，我们还是下次再去吧。",
+      "hint_zh": "估计"
+     },
+     {
+      "n": 2,
+      "zh": "我现在就过去，________。",
+      "hint_zh": "估计"
+     },
+     {
+      "n": 3,
+      "zh": "你可以上网买书，________。",
+      "hint_zh": "估计"
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "title_zh": "来不及",
+    "explanation_zh": "“来不及”，动词，表示因为时间短，无法赶上。可以单独使用，也可以后面带动词。例如：",
+    "explanation_en": "The verb “来不及” indicates something cannot be done because time is short. It can either be used independently or be followed by verbs. For example:",
+    "examples": [
+     {
+      "n": 1,
+      "zh": "等你身体出现问题了，后悔就来不及了。"
+     },
+     {
+      "n": 2,
+      "zh": "今天来不及开会了，明天我们再找时间说这个问题吧。"
+     },
+     {
+      "n": 3,
+      "zh": "你不是和同学约了下午两点见面吗？再不走就来不及了。"
+     }
+    ],
+    "practice_instruction_zh": "完成句子",
+    "practice": [
+     {
+      "n": 1,
+      "zh": "节目8点开始，________。",
+      "hint_zh": "来不及"
+     },
+     {
+      "n": 2,
+      "zh": "我本来打算去图书馆还书，________。",
+      "hint_zh": "来不及"
+     },
+     {
+      "n": 3,
+      "zh": "________，原来飞机10点才起飞。",
+      "hint_zh": "来不及"
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "title_zh": "离合词重叠",
+    "title_en": "Reduplication of Separable Words",
+    "explanation_zh": "离合词重叠，表示时间短、尝试、轻松随便等意义，重叠形式是“AAB”式。比如“散散步”、“帮帮忙”、“睡睡觉”、“游游泳”等。例如：",
+    "explanation_en": "The reduplication of a separable word may indicate a short time, an attempt or randomness among other things, the form being “AAB”, such as “散散步 (to go for a walk)”, “帮帮忙 (to do a favour)”, “睡睡觉 (to have some sleep)” and “游游泳 (to go swimming)”. For example:",
+    "structure_rows": [
+     "AB → AAB"
+    ],
+    "examples": [
+     {
+      "n": 1,
+      "zh": "咱们午饭后就去附近的公园散散步吧。"
+     },
+     {
+      "n": 2,
+      "zh": "行李箱怎么这么重啊！你快来帮帮我的忙。"
+     },
+     {
+      "n": 3,
+      "zh": "周末马克一般在宿舍看看书、听听音乐、睡睡觉。"
+     }
+    ],
+    "practice_instruction_zh": "完成句子",
+    "practice": [
+     {
+      "n": 1,
+      "zh": "你有时间应该多回家看看爸妈，________。",
+      "hint_zh": "聊天儿"
+     },
+     {
+      "n": 2,
+      "zh": "________，对身体特别好。",
+      "hint_zh": "游泳"
+     },
+     {
+      "n": 3,
+      "zh": "我帮你跟小李联系好了，________",
+      "hint_zh": "见面"
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "title_zh": "要是",
+    "explanation_zh": "“要是”，连词，表示“如果、如果是”的意思，常用“要是……（的话），就……”结构。“要是”后面的句子提出一种假设，“就”后面的句子表示在假设的情况下采取的行动或出现的结果。例如：",
+    "explanation_en": "The conjunction “要是” means “if, in case”, usually used in the structure “要是……(的话), 就……”, in which “要是” introduces a sentence indicating an assumption, and “就” introduces a sentence indicating the action or result consequent upon the assumed situation. For example:",
+    "structure_rows": [
+     "要是……（的话），就……"
+    ],
+    "examples": [
+     {
+      "n": 1,
+      "zh": "要是健康是1，其他都是1后面的0。"
+     },
+     {
+      "n": 2,
+      "zh": "要是你想来中国的大学留学，和中国学生一起学习专业课，那么就需要做好这些准备。"
+     },
+     {
+      "n": 3,
+      "zh": "要是质量比别人的好的话，那么价格贵一点儿也是可以接受的。"
+     }
+    ],
+    "practice_instruction_zh": "完成句子",
+    "practice": [
+     {
+      "n": 1,
+      "zh": "________，20分钟就能到。",
+      "hint_zh": "要是"
+     },
+     {
+      "n": 2,
+      "zh": "________，可能不够，再买两瓶吧。",
+      "hint_zh": "要是……的话"
+     },
+     {
+      "n": 3,
+      "zh": "你要是有时间，________。",
+      "hint_zh": "就"
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "title_zh": "既……又／也／还……",
+    "explanation_zh": "“既……又／也／还……”，连接动词性结构或形容词（前后两个结构通常相同），表示并列关系，同时具有两方面的情况，或者都表示积极意义，或者都表示消极意义。例如：",
+    "explanation_en": "The set of conjunctions “既……又/也/还……” is used to connect two verbal structures or adjectives (usually the same in structure), indicating two situations, both positive or both negative, existing at the same time. For example:",
+    "structure_rows": [
+     "既……又……",
+     "既……也……",
+     "既……还……"
+    ],
+    "examples": [
+     {
+      "n": 1,
+      "zh": "散步是生活中最简单的锻炼方法，既可以活动身体，又可以减肥。"
+     },
+     {
+      "n": 2,
+      "zh": "成功离不开交流，交流自然需要说话。会说话的人既容易交到朋友，也容易获得成功。"
+     },
+     {
+      "n": 3,
+      "zh": "他那个人做事既不认真，动作还慢，这个工作这么重要，还是让别人做吧。"
+     }
+    ],
+    "practice_instruction_zh": "完成对话或句子",
+    "practice": [
+     {
+      "n": 1,
+      "zh": "A：这两件衣服太漂亮了，你打算买哪件？ B：________。",
+      "hint_zh": "既……又……"
+     },
+     {
+      "n": 2,
+      "zh": "来中国学习汉语，________。",
+      "hint_zh": "既……也……"
+     },
+     {
+      "n": 3,
+      "zh": "我们都愿意跟他交朋友，________。",
+      "hint_zh": "既……还……"
+     }
+    ]
+   }
+  ],
+  "exercises": [
+   {
+    "n": "注释1 比一比 做一做",
+    "type_zh": "选词填空（估计／可能）",
+    "instruction_zh": "选词填空",
+    "instruction_en": "Tick or cross",
+    "word_bank": [
+     [
+      "估计",
+      "可能"
+     ]
+    ],
+    "items": [
+     {
+      "n": 1,
+      "zh": "那个饭馆儿去晚了人特别多，要等很长时间，这会儿去________来不及了。",
+      "options": {
+       "估计": "✓",
+       "可能": "✓"
+      },
+      "answer": "估计 ✓　可能 ✓",
+      "answer_ref": {
+       "book": "textbook",
+       "pages": [
+        91
+       ]
+      }
+     },
+     {
+      "n": 2,
+      "zh": "还有一分钟比赛就结束了，我________他们没机会再进球了。",
+      "options": {
+       "估计": "✓",
+       "可能": "×"
+      },
+      "answer": "估计 ✓　可能 ×",
+      "answer_ref": {
+       "book": "textbook",
+       "pages": [
+        91
+       ]
+      }
+     },
+     {
+      "n": 3,
+      "zh": "已经这么晚了，老师________休息了，你别打电话了。"
+     },
+     {
+      "n": 4,
+      "zh": "我看这是不________的事情，网上的消息可不能全信。"
+     },
+     {
+      "n": 5,
+      "zh": "你看，那个人最________想做什么？"
+     }
+    ]
+   },
+   {
+    "n": "课文1–3 回答问题",
+    "type_zh": "回答问题",
+    "instruction_zh": "根据课文内容回答问题",
+    "instruction_en": "Answer the questions based on the texts.",
+    "items": [
+     {
+      "n": 1,
+      "zh": "课文1：小林可能是中国哪里人？为什么？"
+     },
+     {
+      "n": 2,
+      "zh": "课文1：春天的时候怎么才能少感冒？"
+     },
+     {
+      "n": 3,
+      "zh": "课文2：小雨为什么喜欢抽烟？你同意小雨的想法吗？为什么？"
+     },
+     {
+      "n": 4,
+      "zh": "课文2：如果你有抽烟的朋友，你想对他／她说些什么？"
+     },
+     {
+      "n": 5,
+      "zh": "课文3：长时间坐在电脑前面工作好不好？为什么？"
+     },
+     {
+      "n": 6,
+      "zh": "课文3：要是你需要长时间用电脑工作，你会怎么保证自己的身体健康？"
+     }
+    ]
+   },
+   {
+    "n": "课文4–5 回答问题",
+    "type_zh": "回答问题",
+    "instruction_zh": "根据课文内容回答问题",
+    "instruction_en": "Answer the questions based on the texts.",
+    "items": [
+     {
+      "n": 1,
+      "zh": "课文4：过去和现在的人们对健康的认识有哪些不同？"
+     },
+     {
+      "n": 2,
+      "zh": "课文4：那位教授用什么方法说明健康是非常重要的？"
+     },
+     {
+      "n": 3,
+      "zh": "课文5：“我”是怎么理解“最好的运动是散步”这句话的？"
+     },
+     {
+      "n": 4,
+      "zh": "课文5：晚饭后和家人一起去散散步有哪几个方面的好处？"
+     }
+    ]
+   },
+   {
+    "n": 1,
+    "type_zh": "复述",
+    "instruction_zh": "复述",
+    "instruction_en": "Retell the dialogues.",
+    "items": [
+     {
+      "n": "课文1",
+      "zh": "小林的语气：昨天我的鼻子又流血了，……"
+     },
+     {
+      "n": "课文2",
+      "zh": "小雨的语气：医生让我以后别抽烟了，……"
+     },
+     {
+      "n": "课文3",
+      "zh": "小林的语气：长时间坐在电脑前面工作，……"
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "type_zh": "选词填空",
+    "instruction_zh": "选择合适的词语填空",
+    "instruction_en": "Choose the proper words to fill in the blanks.",
+    "word_bank": [
+     [
+      "后悔",
+      "擦",
+      "反对",
+      "动作",
+      "指"
+     ],
+     [
+      "严重",
+      "研究",
+      "辛苦",
+      "超过",
+      "出现"
+     ]
+    ],
+    "items": [
+     {
+      "n": 1,
+      "zh": "经理让服务员把所有桌子都________干净。"
+     },
+     {
+      "n": 2,
+      "zh": "第一印象是________在第一次见面时给别人留下的印象。"
+     },
+     {
+      "n": 3,
+      "zh": "生气时不要急着做决定，因为这个时候做的决定可能让你________。"
+     },
+     {
+      "n": 4,
+      "zh": "他对自己的要求很高，希望比赛的时候把每个________都做好。"
+     },
+     {
+      "n": 5,
+      "zh": "我本来以为她会________我这么做，没想到她竟然支持我。"
+     },
+     {
+      "n": 6,
+      "zh": "A：你的腿怎么了？快坐下休息一会儿吧。 B：没事儿，大夫说不________。"
+     },
+     {
+      "n": 7,
+      "zh": "A：你看一下，现在有多少人同意这个计划？ B：一共有十五个人，________了三分之二。"
+     },
+     {
+      "n": 8,
+      "zh": "A：今天的晚饭怎么样？ B：特别好吃，________你了，一会儿我来洗碗。"
+     },
+     {
+      "n": 9,
+      "zh": "A：你觉得老孙这个人怎么样？ B：老孙是个非常热情的人，他总是能在第一时间________，帮助大家解决问题。"
+     },
+     {
+      "n": 10,
+      "zh": "A：你毕业后有什么打算？留北京还是回江西（Jiāngxī, name of a Chinese province）？ B：还没决定，我在考虑要不要读________生。"
+     }
+    ]
+   },
+   {
+    "n": "扩展 做一做",
+    "type_zh": "选词填空（同字词）",
+    "instruction_zh": "选词填空",
+    "instruction_en": "Fill in the blanks with the words given.",
+    "word_bank": [
+     [
+      "生气",
+      "脾气",
+      "空气",
+      "气候"
+     ]
+    ],
+    "items": [
+     {
+      "n": 1,
+      "zh": "A：听说你去丽江（Lìjiāng, name of a place in China）玩儿了？那儿怎么样？ B：那里特别美，________也很新鲜。",
+      "answer": "空气",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        69
+       ]
+      }
+     },
+     {
+      "n": 2,
+      "zh": "A：为什么有的孩子喜欢发________呢？ B：他们主要是想从爸妈那里得到一些好处。",
+      "answer": "脾气",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        69
+       ]
+      }
+     },
+     {
+      "n": 3,
+      "zh": "A：来北方好几年了吧？你觉得北方和南方的________一样吗？ B：夏天差不多，但是冬天北方比较干。",
+      "answer": "气候",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        69
+       ]
+      }
+     },
+     {
+      "n": 4,
+      "zh": "A：你怎么还没到啊！我已经等了你一个小时了。 B：别________，我马上就到门口了。",
+      "answer": "生气",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        69
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "characters": {
+   "knowledge_title_zh": "同字词",
+   "knowledge_en": "Words with the Same Character",
+   "knowledge_zh": "气：生气、脾气、空气、气候\n（1）别生气了，我刚才真的是跟你开玩笑的。\n（2）他不但能力强，而且脾气好，毕业后一定能找到一份好工作。\n（3）因为太高，这里空气比别的地方少，刚到这里的人会感觉身体不舒服。\n（4）这次活动是从2007年开始的，它使人们更加关心世界气候变化的问题了。",
+   "characters": [
+    {
+     "zh": "气",
+     "note_zh": "生气、脾气、空气、气候"
+    }
+   ]
+  },
+  "application": [
+   {
+    "title_zh": "双人活动",
+    "instruction_zh": "互相了解对方对气候的适应情况，完成调查表。",
+    "instruction_en": "Learn about how well your partner has adapted to the climate and complete the questionnaire below.",
+    "example_zh": [
+     "表格：| | 问 | 答 |",
+     "| 1 | 你对现在生活的地方的气候习惯吗？（如果不习惯，请做第4、5题） | |",
+     "| 2 | 说说这里的气候有什么特点。 | |",
+     "| 3 | 要是有重新选择的机会，你会选择在什么样气候的地方生活？为什么？ | |",
+     "| 4 | 这个地方气候的哪些方面你还不适应？ | |",
+     "| 5 | 这里的气候对你的身体和生活有什么影响？你是怎么解决这些问题的？ | |"
+    ]
+   },
+   {
+    "title_zh": "小组活动",
+    "instruction_zh": "运动的方法有很多种，向小组成员介绍一下你最喜欢哪（几）种运动。（请最少用四个下面的结构）",
+    "instruction_en": "There are many ways to work out. Tell your group members about your favourite sport(s). (Please use at least four of the following structures.)",
+    "example_zh": [
+     "a. 天气时冷时热",
+     "b. 身体出现问题",
+     "c. 动作看上去很帅",
+     "d. 影响身体健康",
+     "e. 最简单的锻炼方法",
+     "f. 理解得不深",
+     "g. 等身体出问题了",
+     "h. 烦恼都跑掉了"
+    ]
+   }
+  ],
+  "culture": {
+   "title_zh": "太极和太极拳",
+   "body_zh": "太极是中国古代哲学思想中重要的基本概念，指宇宙的本原。太极拳是一种以太极阴阳为基本理念，结合艺术、中医等理论的一种武术拳法。太极拳动作柔和，速度比较慢，而且学起来也不难，尤其适合中老年人练习。每个人可以根据自己的身体情况，选择合适的运动量。经常练习太极拳，不仅可以保持身体健康，而且还能提高人的修养。",
+   "body_en": "Taiji and Taijiquan\nTaiji is a basic concept in ancient Chinese philosophy, referring to the origin of the universe. With taiji and yin-yang as its theoretical basis, taijiquan, or Chinese shadow boxing, is a martial art of boxing integrating theories of art and traditional Chinese medicine, etc. Its movements being gentle, slow and easy to learn, taijiquan is particularly suitable for middle-aged and senior citizens. Everybody can choose an appropriate workout to practise it according to their own physical conditions. To regularly practise taijiquan can help people improve themselves both physically and mentally."
+  }
+ },
+ "teacher": {
+  "ref": {
+   "book": "teacher",
+   "pages": [
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69
+   ]
+  },
+  "objectives_zh": [
+   "主题：健康（1）对话：谈身体情况、讨论抽烟、电脑对身体的影响（2）短文：健康的重要性、散步的好处",
+   "语言点：学生能够了解并掌握：（1）“估计”表示根据某些情况，对事物做大概的推断　*辨析“估计”和“可能”的异同（2）“来不及”表示因为时间短，无法赶上（3）离合词重叠，表示时间短、尝试、轻松、随便等意义（4）“要是”表示提出一种假设（5）“既……又／也／还……”表示同时具有两方面的情况",
+   "词汇：学生能够：（1）掌握本课30个四级大纲词汇的意义和用法　重点词语：严重、动作、出现、后悔、反对、超过、指、说明、辛苦、烦恼（2）了解3个非大纲词汇的意义：流血、精神、既（3）理解“气”字的组词规律及在词汇中的意义"
+  ],
+  "steps": [
+   {
+    "title_zh": "一 复习旧课",
+    "body_zh": "1 使用生词卡片，快速认读下列词语：\n打扰、百分之、好处、尝、方面、内、\n支持、举行、满、所有、获得、降低\n2 快速回答问题（与第6课或学生实际生活有关的问题）：\n（1）在买东西时，你喜欢售货员给你介绍吗？为什么？\n（2）你办过什么会员卡？你认为会员卡有什么用？\n（3）怎么才能买到质量又好，价格又便宜的东西？\n3 检查作业：\n请3名学生简单介绍一下自己有意思的购物经历。"
+   },
+   {
+    "title_zh": "二 学习新课 1 热身",
+    "body_zh": "热身1：学生两人一组，合作完成；教师指出图片，请学生根据图片说出对应的词语，教师核对答案；教师领读热身1的生词；最后全体学生齐读，教师正音。\n答案：①E　②C　③F　④A　⑤B　⑥D\n热身2：教师带领学生熟悉调查表格的内容；请学生两人一组，调查对方的运动情况；请2～3名学生汇报调查结果。"
+   },
+   {
+    "title_zh": "2 生词",
+    "body_zh": "（1）生词快速认读及正音\n课文1（对话）：*流血、擦、气候、估计、咳嗽、严重、窗户、空气\n课文2（对话）：抽烟、动作、帅、出现、后悔、来不及、反对\n课文3（对话）：大夫、植物、研究、超过、散步\n课文4（短文）：指、*精神、教授、数字、说明、要是\n课文5（短文）：*既、减肥、辛苦、肚子、感情、烦恼、掉\n• 教师用PPT或卡片展示并领读生词（带拼音）；\n• 取消拼音，带领学生再次认读；\n• 逐词（不带拼音）闪现，请学生快速认读生词；\n• 请3～5个学生快速随机认读3～5个生词；\n• 最后全体学生快速齐读所有生词。\n（2）生词讲解方式\n直观法（图片、实物）：图片类：流血（热身图片E）、咳嗽（热身图片C）、严重（住院病人大面积包扎）、抽烟（热身图片A）、动作（本课文化部分的图片，太极拳动作）、帅（一位男明星，如贝克汉姆等）、植物（热身图片B）、研究（实验室做实验）、散步（公园散步）、教授（大学学者）、减肥（热身图片F）、烦恼（热身图片D）；实物类：窗户\n情景法（肢体动作、语言等）：擦（擦黑板）、空气（呼气动作，指明吸入的东西）、精神（对比两个学生，一个上课积极，精神不错；一个比较疲累）、肚子（指着肚子拍一拍）\n符号法：超过（留学生＞1000人）、数字（1，2，3，4，5，……）\n对比法（反义词对比）：反对（同意）\n替换法（同／近义替换）：大夫（医生）、指（说的是／意思是）、要是（如果）\n搭配法：跑／忘／吃／喝＋掉\n提问启发：气候、出现、后悔、说明、辛苦\n教师提问，引导学生说出句子：\n北京夏天热不热？常下雨吗？天气干不干？——北京夏天气候还可以。\n我们在路边等朋友等了很长时间，现在终于看到他了。——他终于出现了。\n因为没有好好复习，所以没通过HSK四级考试，你……——我后悔没有好好复习。\n男的每天给女的送花，我们可以知道什么？——这说明男的喜欢女的。\n马克每天很早起床去上班，很晚才回家，经常加班。他……——他工作很辛苦。\n（3）字形辨认练习\n教师用卡片或PPT展示，请学生快速辨认并读出，最后给每个字组词。\n咳—孩　空—究　作—做\n及—反　散—错　授—受\n数—教　肥—胖　恼—脑\n（4）重点生词扩展及常用搭配\n严重—很／比较／非常严重—病得很严重—我有点儿头疼，不严重。\n动作—他／你的动作—做动作—一／这／那个动作—我觉得抽烟这个动作看起来很帅。\n出现—出现问题／困难—身体出现问题—你的身体出现问题了。\n后悔—很／非常后悔—后悔没好好复习—等你身体出现问题了，后悔就来不及了。\n反对—非常反对—反对你／他—反对他抽烟—家人一直反对我抽烟。\n超过—超过了—没超过—超过6小时—如果人一天静坐超过6小时，就会影响健康。\n指—指的是—就是指—健康就是指身体不生病。\n说明—做出说明—说明一下—说明问题—有一位教授用数字来说明身体健康很重要。\n辛苦—很／比较／非常辛苦—跑步／工作很辛苦—散步不像跑步那样辛苦。\n烦恼—我／他／一天／工作／学习的烦恼—散步让一天的烦恼都跑掉了。"
+   },
+   {
+    "title_zh": "3 语言点（1）估计",
+    "body_zh": "① 语言点解析\n“估计”，动词，表示根据某些情况，对事物做大概的推断。\n② 语言点导入\n• 联系课堂实际，用近义词“可能”，替换导入。\n教师：不要看表，你们说现在可能是几点？\n学生：可能是10点。\n教师总结：“现在估计是10点。”\n• 利用热身图片F，提问导入。\n教师：她减肥成功了，她减了多少斤？\n学生：看她以前和现在的样子，估计减了20斤。\n③ 语言点操练\n• 联系生活实际，提问操练。\n教师：中午去那个饭馆吃饭的人多吗？\n学生：中午去那个饭馆的人估计不少。\n• 利用热身图片D，提问操练。\n教师：她看上去有很多烦恼，你觉得她怎么了？\n学生：我估计她在工作上遇到什么困难了。\n④ 语言点运用\n请学生用“估计”补全下面的句子，并朗读。\nI. 玛丽的鼻子又流血了，________。\nII. 他怎么现在还没到呢？________。\nIII. 我还没决定好去哪儿旅游，________。\n参考答案：I. 估计她现在还不习惯北方的气候\nII. 估计他把时间记错了\nIII. 估计去上海吧\n⑤ 比一比：估计—可能\n按照教材中的辨析步骤进行。"
+   },
+   {
+    "title_zh": "3 语言点（2）来不及",
+    "body_zh": "① 语言点解析\n“来不及”，动词，表示因为时间短，无法赶上。\n② 语言点导入\n联系学生实际，提问导入。\n• 教师：8：30上课，你8：20起床，时间够吗？\n学生：8：30上课，8：20起床来不及。\n• 教师：电影7：30开始，现在已经6：50了，快走吧。\n学生：坐公共汽车时间估计来不及了，咱们打车去吧。\n③ 语言点操练\n联系学生实际，提问操练。\n• 教师：明天就要考HSK了，今天开始复习，时间够吗？\n学生：今天才开始复习来不及。\n• 教师：咱们下午五点出门去参加同学聚会吧。\n学生：今天正好是周末，路上车不少，五点估计来不及，还是早点儿走吧。\n④ 语言点运用\n请学生两人一组，根据情景用“来不及”补全对话，并分角色朗读。\nI. A：明天我是下午2点飞机，我1点走就行。\nB：________。\nII. A：真羡慕你！每天都有时间去体育馆锻炼身体。\nB：________。\nIII. A：________。\nB：现在可能会堵车，还是坐地铁吧。\n参考答案：I. 你还是中午12点走吧，1点走来不及。\nII. 你也应该常锻炼身体，等身体出了问题再锻炼，就来不及了。\nIII. 时间快来不及了，我打车过去吧。"
+   },
+   {
+    "title_zh": "3 语言点（3）离合词重叠",
+    "body_zh": "① 语言点解析\n离合词重叠，表示时间短、尝试、轻松、随便等意义，重叠形式是“AAB”式。比如“散散步”、“帮帮忙”、“睡睡觉”、“游游泳”等。\n② 语言点导入\n• 联系一般动词的重叠形式，做变换练习导入。教师带领学生做完变换练习后，引导学生发现离合词重叠的特点，并给出重叠形式的结构。\n【一般动词】A→AA：看→看看　听→听听　想→想想\nAB→ABAB：练习→练习练习　锻炼→锻炼锻炼　复习→复习复习\n【离合词】AB→AAB：睡觉→睡睡觉　游泳→游游泳　帮忙→帮帮忙\n• 教师带领学生做加“了”的变换练习，并标出结构。\n【一般动词】AB了→AB了AB：练习了→练习了练习　锻炼了→锻炼了锻炼　复习了→复习了复习\n【离合词】AB了→A了AB：睡觉了→睡了睡觉　游泳了→游了游泳　帮忙了→帮了帮忙\n• 教师请学生尝试找出学过的离合词，最后做一个总结。\n睡觉、游泳、帮忙、跑步、散步、跳舞……\n③ 语言点操练\n联系生活实际，提问操练。\n教师：你们周末一般做什么？\n学生：看看书、散散步、游游泳……\n教师：你昨天下午做什么了？\n学生：我去操场跑了跑步。\n④ 语言点运用\n请学生两人一组，用提示离合词的重叠形式补全对话，并分角色朗读。\nI. A：最近我眼睛总是很累。\nB：________。（散步）\nII. A：好久不见了！你现在怎么变得越来越年轻了！\nB：________。（跳舞）\nIII. A：________。（帮忙）\nB：好的，没问题，快说说想让我帮你什么。\n参考答案：I. 你不应该总坐在电脑前，现在跟我去公园散散步吧。\nII. 我每天下午都去跳跳舞，以后你也跟我一起去吧。\nIII. 你来得太及时了，我正好想请你帮帮忙呢。"
+   },
+   {
+    "title_zh": "3 语言点（4）要是",
+    "body_zh": "① 语言点解析\n“要是”，连词，表示“如果、如果是”的意思，常用“要是……（的话），就……”结构。“要是”后面的句子提出一种假设，“就”后面的句子表示在假设的情况下采取的行动或出现的结果。\n② 语言点导入\n利用同义表达“如果”，替换导入。\n• 教师：如果你工作上遇到问题，你会怎么办？\n教师重复：要是你工作上遇到问题，你会怎么办？（“要是”用重音突出）\n学生：要是我工作上遇到问题，我会请同事帮我。\n• 教师：要是你的自行车坏了，你会怎么办？\n学生：要是我的自行车坏了，我就请人帮我修理。\n③ 语言点操练\n联系生活实际，提问操练。\n• 教师：上课时你要是没听懂，你会怎么办？\n学生：要是没听懂，我会问我的同学。\n• 教师：父母要是经常对孩子发脾气，会给孩子带来什么影响？\n学生：父母要是经常对孩子发脾气，孩子长大后就可能变成一个爱发脾气的人。\n④ 语言点运用\n请学生为括号中的词语选择恰当的位置。\nI. 星期天A天气好，B我们C就去爬山D吧。（要是）\nII. A要是有机会，B我C在中国工作两年D再回去。（就）\nIII. A我丈夫B真是太无聊了，他C再幽默点儿D就好了。（要是）\n参考答案：I. A　II. C　III. C"
+   },
+   {
+    "title_zh": "3 语言点（5）既……又／也／还……",
+    "body_zh": "① 语言点解析\n“既……又／也／还……”，连接动词性结构或形容词（前后两个结构通常相同）表示并列关系，同时具有两方面的情况，或者都表示积极意义，或者都表示消极意义。\n② 语言点导入\n联系生活实际，提问导入。\n• 教师：玛丽漂亮吗？聪明吗？\n学生：玛丽很漂亮，也很聪明。\n教师总结：“玛丽既漂亮又聪明。”\n• 教师：上下班的时候，路上车很多，这个时候回家坐出租汽车好吗？\n学生：这时候坐出租汽车回家不好，既浪费钱也浪费时间。\n③ 语言点操练\n• 利用热身图片A，提问操练。\n教师：抽烟对自己好吗？对别人好吗？\n学生目标句：抽烟既对自己不好，也对别人不好。\n• 利用一张干净整洁的房间图片进行提问操练。\n教师：这个房间干净吗？漂亮吗？\n学生目标句：这个房间既干净又漂亮。\n④ 语言点运用\n请学生根据句子意思，连线组成5个完整的句子，并朗读。\nI. 面试回答问题时既不能说得太快　　A. 同事们也很喜欢我\nII. 我喜欢这个工作，我学的既是法律专业　　B. 还要积累专业知识\nIII. 两个人共同生活，既需要浪漫的爱情　　C. 也要接受对方的缺点\nIV. 年轻人刚开始工作时既要丰富工作经验　　D. 也需要性格上互相吸引\nV. 结婚后要是想幸福生活，既要了解对方的优点　　E. 也不能说得声音太小\n参考答案：I. E　II. A　III. D　IV. B　V. C"
+   },
+   {
+    "title_zh": "4 课文",
+    "body_zh": "（1）就课文内容，教师将下列问题写在黑板上或用PPT展示（或教师给学生发放问题单）：（见 text_questions）\n（2）要求学生带着问题听两遍录音并回答问题，教师给出答案；\n（3）学生打开课本，教师逐句播放录音，学生看课本听第二次录音并跟读；\n（4）教师领读一遍课文；\n（5）全班一起大声齐读一遍课文；\n（6）请2～3组学生分角色朗读课文，教师正音；\n（7）做以下课文扩展练习：\n对话课文：教师带领学生根据问题单上问题的答案叙述课文内容，并请学生单个复述。\n课文1：估计是天气太干，小林还不习惯北方的气候，所以鼻子流血了。小李穿得太少，感冒了，他咳嗽，有点儿头疼，但是不严重。小林让小李注意保暖，最好经常打开窗户换换空气。\n课文2：医生让小雨不要再抽烟了，但是小雨觉得抽烟这个动作看起来很帅。小夏说如果等身体出现问题了，后悔就来不及了。小雨的家人也一直反对他抽烟。\n课文3：小李最近眼睛总是跳，大夫说是因为他长时间看电脑，眼睛太累。医生让他多向远处看，尤其是多看绿色的植物。研究发现，如果人一天静坐超过6小时，就会影响身体健康。\n短文课文：请学生根据课文内容，补全下面的语段，并请学生单个复述朗读。\n课文4：过去人们认为健康……（就是指）身体不生病，现在人们认识到，健康还指……（精神上的健康）。一位教授……（用数字来说明）健康非常重要：要是健康是1，其他都是1后面的0；如果没有1，不管……（有多少0也没用）。\n课文5：散步是生活中……（最简单的锻炼方法），既可以活动身体，又……（可以减肥），而且不会像跑步那样辛苦。散步时，夫妻说说一天的工作能……（加深感情），听孩子谈谈学校里有意思的事儿，一天的烦恼……（就都跑掉了）。"
+   },
+   {
+    "title_zh": "5 扩展",
+    "body_zh": "（1）领读“生气、脾气、空气、气候”四个同字词，请学生说一说“气”字在词中的位置和意义。“气”的义项：\n①气体：空气\n②自然现象：气候\n③发怒：生气\n④人的性情：脾气\n（2）请学生说说还有哪些带“气”字的词，教师列在黑板上，如果没有，可补充下列真假同字词，最后请学生判断正误，教师给出正确答案。\n气流　动气　气来（×）　气话\n气球　水气（×）　气压\n（3）请学生完成“选词填空”练习，教师给出答案。\n参考答案：①空气　②脾气　③气候　④生气"
+   },
+   {
+    "title_zh": "6 补充课堂活动",
+    "body_zh": "学生4人一组，介绍一下自己最喜欢的运动，并说说喜欢这种运动的原因，最后请每组的代表给全班介绍一下。"
+   },
+   {
+    "title_zh": "7 文化",
+    "body_zh": "教师引导学生了解中国传统的“太极”思想，可根据需求和时间安排，进行以下参考活动：\n• 展示图片，太极拳和太极阴阳图；\n• 请学生试着说说太极拳与太极之间的关系和特点；\n• 观看一段太极拳视频，学生模仿打太极拳，并说说自己的感想。"
+   },
+   {
+    "title_zh": "8 布置作业",
+    "body_zh": "• 每个生词写3遍；\n• “你身边抽烟的人多吗？他们为什么抽烟？”请学生调查一下，下次课时汇报自己的调查结果，大约3分钟。"
+   }
+  ],
+  "notes_zh": [
+   "比一比：估计—可能——按照教材中的辨析步骤进行。（语言点1）",
+   "字形辨认：咳—孩　空—究　作—做　及—反　散—错　授—受　数—教　肥—胖　恼—脑（生词）",
+   "离合词重叠与一般动词重叠对比：一般动词 A→AA、AB→ABAB、AB了→AB了AB；离合词 AB→AAB、AB了→A了AB（语言点3）",
+   "“气”的义项：①气体：空气　②自然现象：气候　③发怒：生气　④人的性情：脾气；真假同字词：气流　动气　气来（×）　气话　气球　水气（×）　气压（扩展）"
+  ],
+  "warmup_answers_zh": [
+   "热身1 答案：①E　②C　③F　④A　⑤B　⑥D",
+   "热身2：教师带领学生熟悉调查表格的内容；请学生两人一组，调查对方的运动情况；请2～3名学生汇报调查结果。"
+  ],
+  "text_questions": [
+   {
+    "text": 1,
+    "q_zh": "小林鼻子怎么流血了？"
+   },
+   {
+    "text": 1,
+    "q_zh": "小李病了吗？严重吗？"
+   },
+   {
+    "text": 1,
+    "q_zh": "小林让小李注意什么？"
+   },
+   {
+    "text": 2,
+    "q_zh": "小雨为什么咳嗽？"
+   },
+   {
+    "text": 2,
+    "q_zh": "小雨为什么喜欢抽烟？"
+   },
+   {
+    "text": 2,
+    "q_zh": "小雨的家人对他抽烟有什么想法？"
+   },
+   {
+    "text": 3,
+    "q_zh": "为什么小李最近眼睛总是跳？"
+   },
+   {
+    "text": 3,
+    "q_zh": "医生让他多做什么事情？"
+   },
+   {
+    "text": 3,
+    "q_zh": "静坐多长时间就会影响身体健康？"
+   },
+   {
+    "text": 4,
+    "q_zh": "过去人们认为健康指的是什么意思？"
+   },
+   {
+    "text": 4,
+    "q_zh": "现在人们认为什么是健康？"
+   },
+   {
+    "text": 4,
+    "q_zh": "一位教授是怎么说明健康很重要的？"
+   },
+   {
+    "text": 5,
+    "q_zh": "哪种运动是生活中最简单的锻炼方法？"
+   },
+   {
+    "text": 5,
+    "q_zh": "散步跟跑步比起来有什么好处？"
+   },
+   {
+    "text": 5,
+    "q_zh": "和家人在一起散步有什么好处？"
+   }
+  ]
+ },
+ "workbook": {
+  "ref": {
+   "book": "workbook",
+   "pages": [
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77
+   ]
+  },
+  "sections": [
+   {
+    "n": "一、听力 第一部分",
+    "type_zh": "听力 第一部分",
+    "instruction_zh": "第1–5题：判断对错。",
+    "items": [
+     {
+      "n": "例1",
+      "zh": "★他打算下午去银行。",
+      "transcript_zh": "我想去办个信用卡，今天下午你有时间吗？陪我去一趟银行？",
+      "answer": "✓",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        68
+       ]
+      }
+     },
+     {
+      "n": "例2",
+      "zh": "★他喜欢看电视广告。",
+      "transcript_zh": "现在我很少看电视，其中一个原因是，广告太多了，不管什么时间，也不管什么节目，只要你打开电视，总能看到那么多的广告，浪费我的时间。",
+      "answer": "×",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        68
+       ]
+      }
+     },
+     {
+      "n": 1,
+      "zh": "★他最近又胖了。",
+      "transcript_zh": "尽管很辛苦，但他还是每天锻炼一个小时，几个月下来，减肥的效果很不错。",
+      "answer": "×",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 2,
+      "zh": "★春天容易感冒。",
+      "transcript_zh": "春天天气时冷时热，很多人感冒，医生提醒人们要注意室内空气质量，早上起床后应该打开窗户换换空气。如果感冒了，要及时去医院。",
+      "answer": "✓",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 3,
+      "zh": "★女人都想过减肥。",
+      "transcript_zh": "我们调查发现，差不多有五分之四的女人考虑过减肥，实际上，她们中的很多人并不胖。",
+      "answer": "×",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 4,
+      "zh": "★自己要对健康负责。",
+      "transcript_zh": "每一包香烟上都印有“吸烟有害健康”的句子，就是告诉人们抽烟对身体不好，提醒人们要对自己的健康负责。",
+      "answer": "✓",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 5,
+      "zh": "★睡太久对身体不好。",
+      "transcript_zh": "很多人一到周末就喜欢睡觉，而且一睡就是大半天。医生提醒我们，睡觉时间太长并不好，有时甚至会头疼，一般睡够八小时就可以了。",
+      "answer": "✓",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "一、听力 第二部分",
+    "type_zh": "听力 第二部分",
+    "instruction_zh": "第6–12题：请选出正确答案。",
+    "items": [
+     {
+      "n": "例",
+      "zh": "男的主要是什么意思？",
+      "transcript_zh": "女：该加油了，去机场的路上有加油站吗？ 男：有，你放心吧。 问：男的主要是什么意思？",
+      "options": {
+       "A": "去机场",
+       "B": "快到了",
+       "C": "油是满的",
+       "D": "有加油站"
+      },
+      "answer": "D",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        69
+       ]
+      }
+     },
+     {
+      "n": 6,
+      "zh": "男的怎么了？",
+      "options": {
+       "A": "发烧了",
+       "B": "感冒了",
+       "C": "流鼻血了",
+       "D": "肚子疼"
+      },
+      "transcript_zh": "女：你怎么这两天总是鼻子流血？快用纸擦擦。 男：我还不习惯北方的气候，估计是天气太干。 问：男的怎么了？",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 7,
+      "zh": "男的怎么了？",
+      "options": {
+       "A": "饿了",
+       "B": "胖了",
+       "C": "茶喝多了",
+       "D": "肚子不舒服"
+      },
+      "transcript_zh": "男：我今天吃得太多了，肚子有点儿不舒服。 女：喝点儿热茶可能会好一些。 问：男的怎么了？",
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 8,
+      "zh": "男的哪里不舒服？",
+      "options": {
+       "A": "嘴",
+       "B": "牙",
+       "C": "头",
+       "D": "肚子"
+      },
+      "transcript_zh": "男：大夫，我的牙最近特别疼，不知道是怎么回事。 女：你先躺这儿，好，张开嘴我看看。 问：男的哪里不舒服？",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 9,
+      "zh": "男的刚才怎么了？",
+      "options": {
+       "A": "腿流血了",
+       "B": "手流血了",
+       "C": "足球丢了",
+       "D": "去医院了"
+      },
+      "transcript_zh": "女：你的腿怎么流血了？快去医院吧。 男：没关系，刚才踢足球不小心擦掉了点儿皮，不用去医院。 问：男的刚才怎么了？",
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 10,
+      "zh": "男的最可能在哪儿？",
+      "options": {
+       "A": "图书馆",
+       "B": "体育馆",
+       "C": "医院",
+       "D": "电影院"
+      },
+      "transcript_zh": "女：每天要按时吃药，注意休息，下个星期再来检查一次。 男：明白了，谢谢大夫，再见。 问：男的最可能在哪儿？",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 11,
+      "zh": "男的主要是什么意思？",
+      "options": {
+       "A": "她不用减肥",
+       "B": "她太胖了",
+       "C": "她太瘦了",
+       "D": "她在开玩笑"
+      },
+      "transcript_zh": "女：我觉得我太胖了，所以我要减肥，以后不吃甜食了。 男：没那么严重吧。我觉得你胖一点儿更漂亮。 问：男的主要是什么意思？",
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 12,
+      "zh": "女的为什么来医院？",
+      "options": {
+       "A": "发烧了",
+       "B": "肚子疼",
+       "C": "一直咳嗽",
+       "D": "陪同事看病"
+      },
+      "transcript_zh": "男：你怎么也在医院？身体不舒服？ 女：不是，我同事突然肚子疼，我陪她来检查一下。 问：女的为什么来医院？",
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "一、听力 第三部分",
+    "type_zh": "听力 第三部分",
+    "instruction_zh": "第13–22题：请选出正确答案。",
+    "items": [
+     {
+      "n": "例",
+      "zh": "会议几点开始？",
+      "transcript_zh": "男：把这个材料复印5份，一会儿拿到会议室发给大家。 女：好的。会议是下午三点吗？ 男：改了。三点半，推迟了半个小时。 女：好，602会议室没变吧？ 男：对，没变。 问：会议几点开始？",
+      "options": {
+       "A": "两点",
+       "B": "3点",
+       "C": "15：30",
+       "D": "18：00"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        70
+       ]
+      }
+     },
+     {
+      "n": 13,
+      "zh": "男的为什么不去医院？",
+      "options": {
+       "A": "病好了",
+       "B": "太忙了",
+       "C": "请不了假",
+       "D": "不愿意吃药"
+      },
+      "transcript_zh": "女：你的咳嗽怎么一直没好？去医院看看吧。 男：不去，不是很严重，过两天就好了。 女：但是都一个星期了你也没好呀。 男：不去。我不想吃药。 问：男的为什么不去医院？",
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 14,
+      "zh": "女的打算怎样减肥？",
+      "options": {
+       "A": "少吃饭",
+       "B": "做运动",
+       "C": "多吃水果",
+       "D": "吃减肥药"
+      },
+      "transcript_zh": "女：我又胖了七八斤，必须减肥了。 男：你又要不吃饭？多影响健康啊！ 女：我这次打算运动减肥，跑跑步、游游泳。 男：那还行。 问：女的打算怎样减肥？",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 15,
+      "zh": "女的怎么了？",
+      "options": {
+       "A": "头疼",
+       "B": "腿疼",
+       "C": "肚子疼",
+       "D": "耳朵疼"
+      },
+      "transcript_zh": "男：你不是说下班要去逛街吗？怎么回来了？ 女：头有点儿疼，不想去了。 男：要不要去医院看看？ 女：用不着，休息一会儿就好了。 问：女的怎么了？",
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 16,
+      "zh": "医生让男的怎么做？",
+      "options": {
+       "A": "多喝水",
+       "B": "不用吃药",
+       "C": "少抽烟",
+       "D": "经常运动"
+      },
+      "transcript_zh": "女：你的咳嗽不是很严重，我给你开点儿药，回去好好休息。 男：好，还有其他要注意的吗？ 女：最近不要抽烟，多喝水。 男：好的，谢谢您，大夫。 问：医生让男的怎么做？",
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 17,
+      "zh": "女的怎么了？",
+      "options": {
+       "A": "哭了",
+       "B": "饿了",
+       "C": "生病了",
+       "D": "没吃药"
+      },
+      "transcript_zh": "男：怎么样？感觉好点儿了吗？ 女：这些天一直在吃您开的药，比上次好多了。 男：那就好，回家还要按时吃药，一个星期后再来检查一下。 女：好的，大夫，谢谢您。 问：女的怎么了？",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 18,
+      "zh": "男的怎么了？",
+      "options": {
+       "A": "饿了",
+       "B": "渴了",
+       "C": "感冒了",
+       "D": "肚子不舒服"
+      },
+      "transcript_zh": "女：你怎么了？脸色不太好。 男：我肚子有点儿不舒服。 女：要是严重的话，我陪你去医院吧。 男：不用了，谢谢。 问：男的怎么了？",
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 19,
+      "zh": "说话人的眼睛为什么不舒服？",
+      "options": {
+       "A": "刮风了",
+       "B": "天气太干",
+       "C": "看电视太久",
+       "D": "长时间用电脑"
+      },
+      "transcript_zh": "第19到20题是根据下面一段话： 我最近眼睛总觉得特别干，医生说是因为我长时间对着电脑，眼睛太累。他告诉我用电脑四五十分钟后，就应该休息一下，多向远处看看，最好是多看看绿色的植物。 19. 说话人的眼睛为什么不舒服？",
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 20,
+      "zh": "根据这段话，怎样能保证眼睛健康？",
+      "options": {
+       "A": "不用电脑",
+       "B": "注意休息",
+       "C": "少看电视",
+       "D": "多做运动"
+      },
+      "transcript_zh": "第19到20题是根据下面一段话： 我最近眼睛总觉得特别干，医生说是因为我长时间对着电脑，眼睛太累。他告诉我用电脑四五十分钟后，就应该休息一下，多向远处看看，最好是多看看绿色的植物。 20. 根据这段话，怎样能保证眼睛健康？",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 21,
+      "zh": "以前人们认为健康是什么？",
+      "options": {
+       "A": "休息好",
+       "B": "少抽烟",
+       "C": "幸福快乐",
+       "D": "身体不生病"
+      },
+      "transcript_zh": "第21到22题是根据下面一段话： 每个人都希望自己健康，那么到底什么才是健康呢？过去，人们认为健康就是指身体不生病。但是，现在人们认识到，健康既包括身体上的健康又包括精神上的健康。只有身体和精神都健康，才算是真正的健康。 21. 以前人们认为健康是什么？",
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 22,
+      "zh": "怎样才算是真正的健康？",
+      "options": {
+       "A": "身体好",
+       "B": "少生气",
+       "C": "身心健康",
+       "D": "精神健康"
+      },
+      "transcript_zh": "第21到22题是根据下面一段话： 每个人都希望自己健康，那么到底什么才是健康呢？过去，人们认为健康就是指身体不生病。但是，现在人们认识到，健康既包括身体上的健康又包括精神上的健康。只有身体和精神都健康，才算是真正的健康。 22. 怎样才算是真正的健康？",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第一部分（23–26）",
+    "type_zh": "阅读 第一部分",
+    "instruction_zh": "第23–26题：选词填空。",
+    "word_bank": [
+     [
+      "A 数字",
+      "B 植物",
+      "C 肚子",
+      "D 坚持",
+      "E 超过"
+     ]
+    ],
+    "items": [
+     {
+      "n": "例",
+      "zh": "她每天都（　）走路上下班，所以身体一直很不错。",
+      "options": {
+       "A": "数字",
+       "B": "植物",
+       "C": "肚子",
+       "D": "坚持",
+       "E": "超过"
+      },
+      "answer": "D",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        71
+       ]
+      }
+     },
+     {
+      "n": 23,
+      "zh": "我的（　）在叫了，早上只吃了一小块儿蛋糕。",
+      "options": {
+       "A": "数字",
+       "B": "植物",
+       "C": "肚子",
+       "D": "坚持",
+       "E": "超过"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 24,
+      "zh": "价格写99.9元，不写100，这其实是在玩儿（　）游戏。",
+      "options": {
+       "A": "数字",
+       "B": "植物",
+       "C": "肚子",
+       "D": "坚持",
+       "E": "超过"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 25,
+      "zh": "身高没（　）一米三免费，不用买票。",
+      "options": {
+       "A": "数字",
+       "B": "植物",
+       "C": "肚子",
+       "D": "坚持",
+       "E": "超过"
+      },
+      "answer": "E",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 26,
+      "zh": "他们说的其实是同一种（　），只是在南方和北方有两个不同的名字。",
+      "options": {
+       "A": "数字",
+       "B": "植物",
+       "C": "肚子",
+       "D": "坚持",
+       "E": "超过"
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第一部分（27–30）",
+    "type_zh": "阅读 第一部分",
+    "instruction_zh": "第27–30题：选词填空。",
+    "word_bank": [
+     [
+      "A 严重",
+      "B 后悔",
+      "C 温度",
+      "D 抽烟",
+      "E 来不及"
+     ]
+    ],
+    "items": [
+     {
+      "n": "例",
+      "zh": "A：今天真冷啊，好像白天最高（　）才2℃。 B：刚才电视里说明天更冷。",
+      "options": {
+       "A": "严重",
+       "B": "后悔",
+       "C": "温度",
+       "D": "抽烟",
+       "E": "来不及"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        72
+       ]
+      }
+     },
+     {
+      "n": 27,
+      "zh": "A：你咳嗽好点儿了吗？医生怎么说？ B：还是老样子，他让我以后不要再（　）了。",
+      "options": {
+       "A": "严重",
+       "B": "后悔",
+       "C": "温度",
+       "D": "抽烟",
+       "E": "来不及"
+      },
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 28,
+      "zh": "A：我的感冒更（　）了，我想明天请一天假。 B：没问题。你最好去医院看一下。",
+      "options": {
+       "A": "严重",
+       "B": "后悔",
+       "C": "温度",
+       "D": "抽烟",
+       "E": "来不及"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 29,
+      "zh": "A：最近我总是感冒，吃点儿什么药好？ B：冬天这么冷你还穿裙子，能不感冒吗？别光想着漂亮，等身体出现问题了，（　）就晚了。",
+      "options": {
+       "A": "严重",
+       "B": "后悔",
+       "C": "温度",
+       "D": "抽烟",
+       "E": "来不及"
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 30,
+      "zh": "A：这个地方真大啊！咱们再去那边逛逛吧。 B：估计（　）了，旅游车马上就要回去了。",
+      "options": {
+       "A": "严重",
+       "B": "后悔",
+       "C": "温度",
+       "D": "抽烟",
+       "E": "来不及"
+      },
+      "answer": "E",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第二部分",
+    "type_zh": "阅读 第二部分",
+    "instruction_zh": "第31–34题：排列顺序。",
+    "items": [
+     {
+      "n": "例",
+      "zh": "",
+      "options": {
+       "A": "可是今天起晚了",
+       "B": "平时我骑自行车上下班",
+       "C": "所以就打车来公司"
+      },
+      "answer": "BAC",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        73
+       ]
+      }
+     },
+     {
+      "n": 31,
+      "zh": "",
+      "options": {
+       "A": "我晚点儿才能回去，桌子上有早上没吃完的面包",
+       "B": "就先吃点儿",
+       "C": "冰箱里还有面条，你要是饿了"
+      },
+      "answer": "ACB",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 32,
+      "zh": "",
+      "options": {
+       "A": "如果你没有准备好",
+       "B": "它也会离开你去找别人",
+       "C": "那么就算机会走到了你面前"
+      },
+      "answer": "ACB",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 33,
+      "zh": "",
+      "options": {
+       "A": "嘴上就会马上说出来",
+       "B": "意思是说一个人心里有什么想法",
+       "C": "“心直口快”常用来说明人的性格"
+      },
+      "answer": "CBA",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 34,
+      "zh": "",
+      "options": {
+       "A": "秋冬季节，皮肤容易变得很干",
+       "B": "这是让很多人烦恼的事",
+       "C": "为了远离这个烦恼，我们要注意多喝水"
+      },
+      "answer": "ABC",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第三部分",
+    "type_zh": "阅读 第三部分",
+    "instruction_zh": "第35–43题：请选出正确答案。",
+    "items": [
+     {
+      "n": "例",
+      "zh": "她很活泼，说话很有趣，总能给我们带来快乐，我们都很喜欢和她在一起。 ★她是个什么样的人？",
+      "options": {
+       "A": "幽默",
+       "B": "马虎",
+       "C": "骄傲",
+       "D": "害羞"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        74
+       ]
+      }
+     },
+     {
+      "n": 35,
+      "zh": "医生提醒人们，在吃感冒药前，一定要认真看说明书。并且最好只选择一种感冒药，如果药物之间互相影响，可能会对健康不好。 ★医生一共有几个提醒？",
+      "options": {
+       "A": "一个",
+       "B": "两个",
+       "C": "三个",
+       "D": "四个"
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 36,
+      "zh": "没关系，不是很严重，不用住院，但是要注意多休息，不要太累。我再给你开点儿药，你要每天按时吃。 ★这段话最可能是谁说的？",
+      "options": {
+       "A": "售货员",
+       "B": "顾客",
+       "C": "大夫",
+       "D": "律师"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 37,
+      "zh": "夏天空调不能开得太低，室内比室外低不要超过7℃。不然，从室外进入室内，很容易感冒。 ★夏天空调开得太低，容易让人：",
+      "options": {
+       "A": "生气",
+       "B": "生病",
+       "C": "牙疼",
+       "D": "难过"
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 38,
+      "zh": "人们一般认为，一个人每天的睡觉时间应保证7到8个小时。但也有人认为，如果只睡5到6个小时，你感觉也很好，那就不需要睡更长时间。 ★根据这段话，睡觉时间：",
+      "options": {
+       "A": "越长越好",
+       "B": "越短越好",
+       "C": "应保证7到8个小时",
+       "D": "人们看法不同"
+      },
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 39,
+      "zh": "人们常说“生命在于运动”，运动对身体健康非常重要。所以我们应该有按时锻炼的好习惯，打篮球、踢足球、跑步等都是不错的选择。 ★这段话主要谈：",
+      "options": {
+       "A": "动作要标准",
+       "B": "应按时运动",
+       "C": "减肥的方法",
+       "D": "工作很重要"
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 40,
+      "zh": "（40–41）以前的人认为胖是美的，现在的人却认为瘦是美的，所以美女的标准一直在变，但是不管什么时候，想要变美必须要先健康。如果没有了健康，也就没有了真正的美。所以，女孩子们在减肥的时候要记得，健康才是第一位的。 ★以前人们觉得什么样的女孩子更美？",
+      "options": {
+       "A": "胖的",
+       "B": "瘦的",
+       "C": "爱笑的",
+       "D": "安静的"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 41,
+      "zh": "（40–41）以前的人认为胖是美的，现在的人却认为瘦是美的，所以美女的标准一直在变，但是不管什么时候，想要变美必须要先健康。如果没有了健康，也就没有了真正的美。所以，女孩子们在减肥的时候要记得，健康才是第一位的。 ★这段话主要想告诉我们：",
+      "options": {
+       "A": "要少吃饭",
+       "B": "要减肥",
+       "C": "健康最重要",
+       "D": "变美很难"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 42,
+      "zh": "（42–43）研究发现，久坐对人的身体健康有很大影响。医生提醒人们，每天静坐的时间最好不要超过4小时，如果超过6小时就会对身体非常不好。所以坐办公室的人和司机一定要注意，有时间就站起来活动活动，别等到身体出了问题再后悔。 ★静坐的时间最好：",
+      "options": {
+       "A": "不要超过6小时",
+       "B": "4到6个小时",
+       "C": "4小时以内",
+       "D": "超过睡觉时间"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 43,
+      "zh": "（42–43）研究发现，久坐对人的身体健康有很大影响。医生提醒人们，每天静坐的时间最好不要超过4小时，如果超过6小时就会对身体非常不好。所以坐办公室的人和司机一定要注意，有时间就站起来活动活动，别等到身体出了问题再后悔。 ★科学家提醒人们：",
+      "options": {
+       "A": "要多散步",
+       "B": "不要久坐",
+       "C": "不要抽烟",
+       "D": "要常检查身体"
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "三、书写 第一部分",
+    "type_zh": "书写 第一部分",
+    "instruction_zh": "第44–48题：完成句子。",
+    "items": [
+     {
+      "n": "例",
+      "zh": "那座桥　800年的　历史　有　了",
+      "answer": "那座桥有800年的历史了。",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        76
+       ]
+      }
+     },
+     {
+      "n": 44,
+      "zh": "我　适应这里的　还不太　气候",
+      "answer": "我还不太适应这里的气候。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 45,
+      "zh": "那位病人　严重　的　情况　吗",
+      "answer": "那位病人的情况严重吗？",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 46,
+      "zh": "你　关　把窗户　吗　了",
+      "answer": "你把窗户关了吗？",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 47,
+      "zh": "好处　抽烟　身体　没有　对",
+      "answer": "抽烟对身体没有好处。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 48,
+      "zh": "反对这样做　差不多　三分之二的人　有",
+      "answer": "差不多有三分之二的人反对这样做。／有差不多三分之二的人反对这样做。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "三、书写 第二部分",
+    "type_zh": "书写 第二部分",
+    "instruction_zh": "第49–50题：看图，用词造句。",
+    "items": [
+     {
+      "n": "例",
+      "zh": "乒乓球",
+      "picture_desc_en": "A young woman holding a table-tennis paddle, about to serve a ball.",
+      "answer": "她很喜欢打乒乓球。",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        77
+       ]
+      }
+     },
+     {
+      "n": 49,
+      "zh": "动作",
+      "picture_desc_en": "A ballerina in a white tutu balancing on the tip of one toe, one arm raised high and the other stretched out to the side.",
+      "answer": "她跳舞的动作看起来既标准又好看。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 50,
+      "zh": "烦恼",
+      "picture_desc_en": "A young woman at a table with a laptop, a calculator, a phone and papers, holding her head in her hand with a worried frown.",
+      "answer": "人的一生不可能一直很顺利，总会有这样或那样的烦恼。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "answers_ref": {
+   "book": "teacher",
+   "pages": [
+    118,
+    119,
+    120
+   ]
+  }
+ },
+ "unclear": [
+  "Аудио файлын нэр мэдэгдэхгүй тул audio талбар орхисон. Сурах бичгийн CD тэмдэг: 课文1–5 = 07-1…07-5; дасгалын номын 听力 第一/二/三部分 = 07-1, 07-2, 07-3.",
+  "生词 9 抽烟 — үгийн ай (pos) хэвлэгдээгүй (зөвхөн «chōu yān to smoke»).",
+  "生词 27 既 — 生词 хүснэгтэд «adv.», харин 注释5-ын англи тайлбар «The set of conjunctions “既……又/也/还……”» гэсэн — номын зөрүү.",
+  "注释1 比一比 做一做 «选词填空 Tick or cross»: (1) 估计✓ 可能✓, (2) 估计✓ 可能× — номд жишээ болгон хэвлэгдсэн хариулт; (3)–(5)-ын хариулт сурах бичиг, багшийн номд хэвлэгдээгүй (багшийн ном: «按照教材中的辨析步骤进行»).",
+  "Сурах бичгийн 练一练 (5 дүрэм × 3), 回答问题 (课文1–3 — 6, 课文4–5 — 4), 练习1 复述 ба 练习2 选词填空 (10) — хариулт сурах бичиг, багшийн номд хэвлэгдээгүй тул answer талбаргүй. Зөвхөн 扩展 做一做-ийн хариулт багшийн номд (PDF х.69) бий.",
+  "Сурах бичгийн 根据课文内容回答问题 хоёр хэсэг дугааргүй (课文3-ын дараа, 课文5-ын дараа) — exercises-д «课文1–3 回答问题», «课文4–5 回答问题» гэж нэрлэсэн; 比一比-ийн 做一做 ба 扩展-ийн 做一做-г мөн exercises-д оруулсан. 扩展 同字词 (气：生气、脾气、空气、气候)-ийг textbook.characters-д оруулсан.",
+  "注释3 练一练 (3) «我帮你跟小李联系好了，________（见面）» — номд өгүүлбэрийн төгсгөлд «。» хэвлэгдээгүй; номд байгаагаар.",
+  "注释3/4/5-ын structure_rows («AB → AAB», «要是……（的话），就……», «既……又……» г.м.) нь тайлбар бичвэрт байгаа бүтцийг л давтсан (тусдаа хүснэгт номд байхгүй).",
+  "热身2 хүснэгтэд «1个小时 □ / 减肥 □ / 变瘦了 □» нүднүүд 游泳 ба 打篮球 мөрт нийлсэн (merged) — 打篮球 мөрөнд «（1个小时）|（减肥）|（变瘦了）» гэж хаалтанд бичсэн.",
+  "Бичвэр 1–3-т 专有名词 хэсэг байхгүй (小李、小林、小夏、小雨 жагсаагдаагүй). 练习2 (10)-т «江西 (Jiāngxī, name of a Chinese province)», 扩展 做一做 (1)-т «丽江 (Lìjiāng, name of a place in China)» гэж хаалтанд тайлбарлагдсан — item.zh-д номд байгаагаар үлдээсэн.",
+  "拼音课文 3: «duō zhàn qilai huódòng huódòng» — 起来-г «qilai» (хөггүй) гэж хэвлэсэн; номд байгаагаар.",
+  "拼音课文-ын гарчгийн пиньинь (Xiǎo Lǐ hé Xiǎo Lín liáo tiānqì hé shēntǐ qíngkuàng / Xiǎo Xià hé Xiǎoyǔ liáo Xiǎoyǔ chōu yān de shìqing / Xiǎo Lǐ hé Xiǎo Lín liáo diànnǎo duì shēntǐ de yǐngxiǎng) болон ярилцагчийн нэрийн пиньинь (Xiǎo Lǐ, Xiǎo Lín, Xiǎo Xià, Xiǎoyǔ) схемд талбаргүй тул lines.pinyin-д зөвхөн яриаг оруулсан.",
+  "课文4 ба 课文5 — гарчиггүй 短文 — мөр (lines)-ийг өгүүлбэрээр хуваасан (номд нэг догол мөр).",
+  "文化-ын англи гарчиг «Taiji and Taijiquan» схемд талбаргүй тул culture.body_en-ийн эхний мөрөнд оруулсан. Энэ хичээлд тусдаа 俗语 байхгүй тул saying талбар орхисон.",
+  "Багшийн ном 生词扩展 (PDF х.63) ба 课文扩展 课文2 (PDF х.68): «抽烟这个动作看起来很帅» — сурах бичгийн 课文2: «看上去很帅». Багшийн ном «有一位教授用数字来说明身体健康很重要» — сурах бичиг: «用数字来说明健康有多么重要». Номд байгаагаар.",
+  "Багшийн номын 课文 асуултууд (text_questions)-ын хариулт тус бүрчлэн хэвлэгдээгүй («教师给出答案»); оронд нь 课文扩展练习-ын 复述 догол мөрүүд (teacher.steps «4 课文») хэвлэгдсэн.",
+  "Багшийн ном «掌握本课30个四级大纲词汇» + «3个非大纲词汇：流血、精神、既» = 33 — 生词 хүснэгттэй (33, * тэмдэгтэй 3) таарч байна.",
+  "Багшийн ном 语言点(3) 导入-ын «一般动词 / 离合词» хоёр баганат хүснэгтийг steps.body_zh-д «【一般动词】… 【离合词】…» мөрөөр хөрвүүлсэн.",
+  "Багшийн ном 扩展 (PDF х.69) «真假同字词» жагсаалтад «水气（×）» гэж хэвлэгдсэн — номд байгаагаар.",
+  "Дасгалын ном 43: бичвэрт «医生提醒人们…» гэсэн боловч асуулт «★科学家提醒人们：» гэж хэвлэгдсэн — номын зөрүү (хариулт B 不要久坐).",
+  "Дасгалын ном 听力 第二/三部分 — номд зөвхөн сонголтууд хэвлэгдсэн; item.zh-д багшийн номын хавсралтын «问：» асуултыг (19–22-т дугаартай асуултыг) оруулсан, transcript_zh-д бүтнээр. 听力 第一部分-д жишээ 2 (✓ ба ×) байгаа тул «例1», «例2».",
+  "Дасгалын ном 听力 21–22-ын сонсголын бичвэр 课文4-тэй төстэй боловч өөр («那么到底什么才是健康呢», «健康既包括身体上的健康又包括精神上的健康») — номд байгаагаар.",
+  "Дасгалын ном 阅读 第二部分 (31–34 排列顺序)-ийн item.zh хоосон, хэсгүүд options (A/B/C)-д. 阅读 第三部分 40–41, 42–43 хамтын бичвэрийг item бүрийн zh-д давтсан.",
+  "Дасгалын ном 书写 44–50-ын хариулт багшийн номын хавсралтад «参考答案» гэж хэвлэгдсэн; 48-д хоёр хувилбар; 49–50 (看图，用词造句) нээлттэй даалгавар тул хариулт нь зөвхөн жишээ.",
+  "Дасгалын номд 复习 хэсэг байхгүй (HSK4-ийн дасгалын ном: 听力 3 хэсэг, 阅读 3 хэсэг, 书写 2 хэсэг, нийт 50 асуулт)."
+ ],
+ "verified_pages": [
+  61,
+  62,
+  63,
+  64,
+  65,
+  66,
+  67,
+  68,
+  69,
+  70,
+  71,
+  72,
+  73,
+  74,
+  75,
+  76,
+  77,
+  87,
+  88,
+  89,
+  90,
+  91,
+  92,
+  93,
+  94,
+  95,
+  96,
+  97,
+  98,
+  118,
+  119,
+  120
+ ],
+ "schema_version": 1
+}

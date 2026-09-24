@@ -1,0 +1,2311 @@
+{
+ "level": "hsk4",
+ "lesson": 9,
+ "book": "HSK4A",
+ "title_zh": "阳光总在风雨后",
+ "title_pinyin": "Yángguāng zǒng zài fēngyǔ hòu",
+ "title_en": "The sun will shine again after the storm",
+ "textbook": {
+  "ref": {
+   "book": "textbook",
+   "pages": [
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124
+   ]
+  },
+  "warmup": [
+   {
+    "instruction_zh": "给下面的词语选择对应的图片",
+    "instruction_en": "Match the pictures with the words.",
+    "items": [
+     "①轻松 qīngsōng",
+     "②网球 wǎngqiú",
+     "③作家 zuòjiā",
+     "④勇敢 yǒnggǎn",
+     "⑤饼干 bǐnggān",
+     "⑥爱迪生 Àidíshēng"
+    ],
+    "pictures_desc_en": [
+     "A: a plate of assorted round butter cookies and chocolate biscuits",
+     "B: a person lying on his back on a colorful blanket on the grass, legs crossed, relaxing",
+     "C: a man walking on a tightrope stretched across a deep canyon",
+     "D: a yellow tennis ball on a green court next to the white line, net in the background",
+     "E: black-and-white photo of an elderly man in a suit and bow tie standing in a laboratory",
+     "F: a smiling man in a suit signing books at a table, surrounded by people holding books"
+    ]
+   },
+   {
+    "instruction_zh": "什么是成功？",
+    "instruction_en": "What is success?",
+    "items": [
+     "表格：| 你眼中成功的人 | 年龄 | 你认为他／她成功的原因 | 你认为成功是什么样的 |",
+     "| 商业名人 shāngyè míngrén □ | 20岁以下 □ | 做自己喜欢的事情 □ | 工作好 □ |",
+     "| 历史名人 □ | 21–30岁 □ | 特别努力 □ | 家庭幸福 jiātíng xìngfú □ |",
+     "| 明星 míngxīng □ | 31–40岁 □ | 运气好 yùnqi hǎo □ | 有进步 yǒu jìnbù □ |",
+     "| 身边的人： | 40岁以上 □ | 其他： | 其他： |"
+    ]
+   }
+  ],
+  "texts": [
+   {
+    "n": 1,
+    "title_zh": "王静和孙月聊孙月减肥的事情",
+    "kind": "dialogue",
+    "lines": [
+     {
+      "speaker": "王静",
+      "zh": "怎么又买了这么多饼干和巧克力？难道你不减肥了？",
+      "pinyin": "Zěnme yòu mǎile zhème duō bǐnggān hé qiǎokèlì? Nándào nǐ bù jiǎn féi le?"
+     },
+     {
+      "speaker": "孙月",
+      "zh": "减了一个月都没瘦下来，我实在没有信心了。",
+      "pinyin": "Jiǎnle yí ge yuè dōu méi shòu xialai, wǒ shízài méiyǒu xìnxīn le."
+     },
+     {
+      "speaker": "王静",
+      "zh": "如果你想减肥，就得少吃东西，而且要多运动。",
+      "pinyin": "Rúguǒ nǐ xiǎng jiǎn féi, jiù děi shǎo chī dōngxi, érqiě yào duō yùndòng."
+     },
+     {
+      "speaker": "孙月",
+      "zh": "我就是这么做的，但这一个月下来，我只轻了一公斤。",
+      "pinyin": "Wǒ jiù shì zhème zuò de, dàn zhè yí ge yuè xialai, wǒ zhǐ qīngle yì gōngjīn."
+     },
+     {
+      "speaker": "王静",
+      "zh": "一个月太短了。要想减肥成功，只能坚持，才会慢慢有效果。",
+      "pinyin": "Yí ge yuè tài duǎn le. Yào xiǎng jiǎn féi chénggōng, zhǐ néng jiānchí, cái huì mànmàn yǒu xiàoguǒ."
+     },
+     {
+      "speaker": "孙月",
+      "zh": "我本来已经打算放弃了，但是你刚才的话让我改变了主意。这些饼干和巧克力送给你了。",
+      "pinyin": "Wǒ běnlái yǐjīng dǎsuàn fàngqì le, dànshì nǐ gāngcái de huà ràng wǒ gǎibiànle zhǔyi. Zhèxiē bǐnggān hé qiǎokèlì sònggěi nǐ le."
+     }
+    ],
+    "new_words": [
+     {
+      "n": 1,
+      "zh": "饼干",
+      "pinyin": "bǐnggān",
+      "pos": "n.",
+      "en": "biscuit",
+      "text": 1
+     },
+     {
+      "n": 2,
+      "zh": "难道",
+      "pinyin": "nándào",
+      "pos": "adv.",
+      "en": "used in a rhetorical question for emphasis",
+      "text": 1
+     },
+     {
+      "n": 3,
+      "zh": "得",
+      "pinyin": "děi",
+      "pos": "mod.",
+      "en": "must, have to",
+      "text": 1
+     },
+     {
+      "n": 4,
+      "zh": "坚持",
+      "pinyin": "jiānchí",
+      "pos": "v.",
+      "en": "to insist, to persist",
+      "text": 1
+     },
+     {
+      "n": 5,
+      "zh": "放弃",
+      "pinyin": "fàngqì",
+      "pos": "v.",
+      "en": "to give up",
+      "text": 1
+     },
+     {
+      "n": 6,
+      "zh": "主意",
+      "pinyin": "zhǔyi",
+      "pos": "n.",
+      "en": "idea, plan",
+      "text": 1
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "title_zh": "李进和张远聊张远的成功经历",
+    "kind": "dialogue",
+    "lines": [
+     {
+      "speaker": "李进",
+      "zh": "你网球打得真好，还得过那么多国际大奖！每次看你比赛，感觉你轻轻松松就赢了。",
+      "pinyin": "Nǐ wǎngqiú dǎ de zhēn hǎo, hái déguo nàme duō guójì dà jiǎng! Měi cì kàn nǐ bǐsài, gǎnjué nǐ qīngqīngsōngsōng jiù yíng le."
+     },
+     {
+      "speaker": "张远",
+      "zh": "哪里啊！那是你没看到我辛苦练习的一面，没有人随随便便就能成功的。",
+      "pinyin": "Nǎli a! Nà shì nǐ méi kàndào wǒ xīnkǔ liànxí de yí miàn, méiyǒu rén suísuíbiànbiàn jiù néng chénggōng de."
+     },
+     {
+      "speaker": "李进",
+      "zh": "我从小也对网球感兴趣，但是到现在还是打得不怎么样。",
+      "pinyin": "Wǒ cóngxiǎo yě duì wǎngqiú gǎn xìngqù, dànshì dào xiànzài hái shì dǎ de bù zěnmeyàng."
+     },
+     {
+      "speaker": "张远",
+      "zh": "你知道吗？不管春夏秋冬，我练球从来没有休息过一天。",
+      "pinyin": "Nǐ zhīdào ma? Bùguǎn chūn xià qiū dōng, wǒ liàn qiú cónglái méiyǒu xiūxiguo yì tiān."
+     },
+     {
+      "speaker": "李进",
+      "zh": "真是不容易啊！看来我只看到了你成功时获得的鲜花，却没注意到你成功前流下的汗水。",
+      "pinyin": "Zhēn shì bù róngyì a! Kànlái wǒ zhǐ kàndàole nǐ chénggōng shí huòdé de xiānhuā, què méi zhùyì dào nǐ chénggōng qián liúxia de hànshuǐ."
+     },
+     {
+      "speaker": "张远",
+      "zh": "任何成功都要通过努力才能得到。只要你坚持练习，我相信你也会越打越好的。",
+      "pinyin": "Rènhé chénggōng dōu yào tōngguò nǔlì cái néng dédào. Zhǐyào nǐ jiānchí liànxí, wǒ xiāngxìn nǐ yě huì yuè dǎ yuè hǎo de."
+     }
+    ],
+    "new_words": [
+     {
+      "n": 7,
+      "zh": "网球",
+      "pinyin": "wǎngqiú",
+      "pos": "n.",
+      "en": "tennis",
+      "text": 2
+     },
+     {
+      "n": 8,
+      "zh": "国际",
+      "pinyin": "guójì",
+      "pos": "n.",
+      "en": "international",
+      "text": 2
+     },
+     {
+      "n": 9,
+      "zh": "轻松",
+      "pinyin": "qīngsōng",
+      "pos": "adj.",
+      "en": "relaxed, effortless",
+      "text": 2
+     },
+     {
+      "n": 10,
+      "zh": "赢",
+      "pinyin": "yíng",
+      "pos": "v.",
+      "en": "to win",
+      "text": 2
+     },
+     {
+      "n": 11,
+      "zh": "随便",
+      "pinyin": "suíbiàn",
+      "pos": "adj.",
+      "en": "casual, at random",
+      "text": 2
+     },
+     {
+      "n": 12,
+      "zh": "汗",
+      "pinyin": "hàn",
+      "pos": "n.",
+      "en": "sweat, perspiration",
+      "text": 2
+     },
+     {
+      "n": 13,
+      "zh": "通过",
+      "pinyin": "tōngguò",
+      "pos": "prep.",
+      "en": "through, by means of",
+      "text": 2
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "title_zh": "小林和小李谈王红的成功经历",
+    "kind": "dialogue",
+    "lines": [
+     {
+      "speaker": "小林",
+      "zh": "你还记得王红吗？我在报纸上看到一篇关于她的新闻，她现在已经是一个有名的作家了。",
+      "pinyin": "Nǐ hái jìde Wáng Hóng ma? Wǒ zài bàozhǐ shang kàndào yì piān guānyú tā de xīnwén, tā xiànzài yǐjīng shì yí ge yǒumíng de zuòjiā le."
+     },
+     {
+      "speaker": "小李",
+      "zh": "听说她毕业后放弃了律师的工作，开始专门写小说，没想到她竟然成功了。",
+      "pinyin": "Tīngshuō tā bì yè hòu fàngqìle lǜshī de gōngzuò, kāishǐ zhuānmén xiě xiǎoshuō, méi xiǎngdào tā jìngrán chénggōng le."
+     },
+     {
+      "speaker": "小林",
+      "zh": "当时她的父母和亲戚都不支持她，可是她坚持自己的选择，现在终于向所有人证明了她的选择是正确的。",
+      "pinyin": "Dāngshí tā de fùmǔ hé qīnqi dōu bù zhīchí tā, kěshì tā jiānchí zìjǐ de xuǎnzé, xiànzài zhōngyú xiàng suǒyǒu rén zhèngmíngle tā de xuǎnzé shì zhèngquè de."
+     },
+     {
+      "speaker": "小李",
+      "zh": "看来为了自己的理想，放弃一些东西也是值得的。",
+      "pinyin": "Kànlái wèile zìjǐ de lǐxiǎng, fàngqì yìxiē dōngxi yě shì zhídé de."
+     },
+     {
+      "speaker": "小林",
+      "zh": "一个人只有两只手，不可能得到所有想要的东西，所以有时候放弃是一种聪明的选择。",
+      "pinyin": "Yí ge rén zhǐyǒu liǎng zhī shǒu, bù kěnéng dédào suǒyǒu xiǎng yào de dōngxi, suǒyǐ yǒu shíhou fàngqì shì yì zhǒng cōngming de xuǎnzé."
+     },
+     {
+      "speaker": "小李",
+      "zh": "是啊，只有学会放弃，才能把自己的能力用到最该做的事情上，最后获得成功。",
+      "pinyin": "Shì a, zhǐyǒu xuéhuì fàngqì, cái néng bǎ zìjǐ de nénglì yòngdào zuì gāi zuò de shìqing shang, zuìhòu huòdé chénggōng."
+     }
+    ],
+    "new_words": [
+     {
+      "n": 14,
+      "zh": "篇",
+      "pinyin": "piān",
+      "pos": "m.",
+      "en": "used for writings, papers or articles",
+      "text": 3
+     },
+     {
+      "n": 15,
+      "zh": "作家",
+      "pinyin": "zuòjiā",
+      "pos": "n.",
+      "en": "writer",
+      "text": 3
+     },
+     {
+      "n": 16,
+      "zh": "当时",
+      "pinyin": "dāngshí",
+      "pos": "n.",
+      "en": "then, at that time",
+      "text": 3
+     },
+     {
+      "n": 17,
+      "zh": "可是",
+      "pinyin": "kěshì",
+      "pos": "conj.",
+      "en": "but, however",
+      "text": 3
+     },
+     {
+      "n": 18,
+      "zh": "正确",
+      "pinyin": "zhèngquè",
+      "pos": "adj.",
+      "en": "right, correct",
+      "text": 3
+     },
+     {
+      "n": 19,
+      "zh": "理想",
+      "pinyin": "lǐxiǎng",
+      "pos": "n.",
+      "en": "ideal",
+      "text": 3
+     }
+    ],
+    "proper_nouns": [
+     {
+      "zh": "王红",
+      "pinyin": "Wáng Hóng",
+      "en": "Wang Hong, name of a person"
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "kind": "narrative",
+    "lines": [
+     {
+      "zh": "如果你想做什么事情，那就勇敢地去做，不要担心结果，不要考虑会不会失败。",
+      "pinyin": "Rúguǒ nǐ xiǎng zuò shénme shìqing, nà jiù yǒnggǎn de qù zuò, búyào dān xīn jiéguǒ, búyào kǎolǜ huì bu huì shībài."
+     },
+     {
+      "zh": "要是太看重结果，失败就会给人们带来很多烦恼。",
+      "pinyin": "Yàoshi tài kànzhòng jiéguǒ, shībài jiù huì gěi rénmen dàilai hěn duō fánnǎo."
+     },
+     {
+      "zh": "我们应该把注意力放在做事情的过程上，这样你会在做的过程中发现解决问题的快乐，这是其他任何东西都给不了的。",
+      "pinyin": "Wǒmen yīnggāi bǎ zhùyìlì fàngzài zuò shìqing de guòchéng shang, zhèyàng nǐ huì zài zuò de guòchéng zhōng fāxiàn jiějué wèntí de kuàilè, zhè shì qítā rènhé dōngxi dōu gěi bu liǎo de."
+     },
+     {
+      "zh": "即使最后失败了也没有关系，因为至少你已经努力过，而且我们还可以从失败中总结出有用的经验，有了这些积累，成功自然离我们越来越近。",
+      "pinyin": "Jíshǐ zuìhòu shībàile yě méiyǒu guānxi, yīnwèi zhìshǎo nǐ yǐjīng nǔlìguo, érqiě wǒmen hái kěyǐ cóng shībài zhōng zǒngjié chū yǒuyòng de jīngyàn, yǒule zhèxiē jīlěi, chénggōng zìrán lí wǒmen yuè lái yuè jìn."
+     }
+    ],
+    "new_words": [
+     {
+      "n": 20,
+      "zh": "勇敢",
+      "pinyin": "yǒnggǎn",
+      "pos": "adj.",
+      "en": "brave, courageous",
+      "text": 4
+     },
+     {
+      "n": 21,
+      "zh": "结果",
+      "pinyin": "jiéguǒ",
+      "pos": "n.",
+      "en": "result",
+      "text": 4
+     },
+     {
+      "n": 22,
+      "zh": "失败",
+      "pinyin": "shībài",
+      "pos": "v.",
+      "en": "to fail",
+      "text": 4
+     },
+     {
+      "n": 23,
+      "zh": "过程",
+      "pinyin": "guòchéng",
+      "pos": "n.",
+      "en": "course, process",
+      "text": 4
+     },
+     {
+      "n": 24,
+      "zh": "至少",
+      "pinyin": "zhìshǎo",
+      "pos": "adv.",
+      "en": "at least",
+      "text": 4
+     },
+     {
+      "n": 25,
+      "zh": "总结",
+      "pinyin": "zǒngjié",
+      "pos": "v.",
+      "en": "to sum up",
+      "text": 4
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "kind": "narrative",
+    "lines": [
+     {
+      "zh": "每一个人都希望成功，可是很多时候，在成功之前会遇到很多困难。",
+      "pinyin": "Měi yí ge rén dōu xīwàng chénggōng, kěshì hěn duō shíhou, zài chénggōng zhīqián huì yùdào hěn duō kùnnan."
+     },
+     {
+      "zh": "有些人遇到困难就放弃，而有些人遇到困难却想办法解决它。",
+      "pinyin": "Yǒuxiē rén yùdào kùnnan jiù fàngqì, ér yǒuxiē rén yùdào kùnnan què xiǎng bànfǎ jiějué tā."
+     },
+     {
+      "zh": "对困难的态度不同，结果也是不一样的。",
+      "pinyin": "Duì kùnnan de tàidù bù tóng, jiéguǒ yě shì bù yíyàng de."
+     },
+     {
+      "zh": "爱迪生就是在找了上千种材料后才找到了能点亮电灯的材料。",
+      "pinyin": "Àidíshēng jiù shì zài zhǎole shàng qiān zhǒng cáiliào hòu cái zhǎodàole néng diǎnliàng diàndēng de cáiliào."
+     },
+     {
+      "zh": "取得成功的人往往都经历过许多失败，他们和普通人的区别就是他们都坚持了下来。",
+      "pinyin": "Qǔdé chénggōng de rén wǎngwǎng dōu jīnglìguo xǔduō shībài, tāmen hé pǔtōng rén de qūbié jiù shì tāmen dōu jiānchíle xialai."
+     },
+     {
+      "zh": "所以就算只有1%的希望，我们也要做出100%的努力。",
+      "pinyin": "Suǒyǐ jiù suàn zhǐyǒu bǎi fēn zhī yī de xīwàng, wǒmen yě yào zuòchū bǎi fēn zhī bǎi de nǔlì."
+     },
+     {
+      "zh": "困难只是暂时的，“阳光总在风雨后”，只有我们勇敢地面对困难，才能有希望取得成功。",
+      "pinyin": "Kùnnan zhǐ shì zànshí de, “Yángguāng zǒng zài fēngyǔ hòu”, zhǐyǒu wǒmen yǒnggǎn de miànduì kùnnan, cái néng yǒu xīwàng qǔdé chénggōng."
+     }
+    ],
+    "new_words": [
+     {
+      "n": 26,
+      "zh": "取",
+      "pinyin": "qǔ",
+      "pos": "v.",
+      "en": "to gain, to seek",
+      "text": 5
+     },
+     {
+      "n": 27,
+      "zh": "经历",
+      "pinyin": "jīnglì",
+      "pos": "v.",
+      "en": "to go through, to experience",
+      "text": 5
+     },
+     {
+      "n": 28,
+      "zh": "许多",
+      "pinyin": "xǔduō",
+      "pos": "num.",
+      "en": "many, plenty of",
+      "text": 5
+     },
+     {
+      "n": 29,
+      "zh": "区别",
+      "pinyin": "qūbié",
+      "pos": "n.",
+      "en": "difference, distinction",
+      "text": 5
+     },
+     {
+      "n": 30,
+      "zh": "暂时",
+      "pinyin": "zànshí",
+      "pos": "n.",
+      "en": "temporary, for the time being",
+      "text": 5
+     },
+     {
+      "n": 31,
+      "zh": "面对",
+      "pinyin": "miànduì",
+      "pos": "v.",
+      "en": "to face, to confront",
+      "star": true,
+      "text": 5
+     }
+    ],
+    "proper_nouns": [
+     {
+      "zh": "爱迪生",
+      "pinyin": "Àidíshēng",
+      "en": "Thomas Alva Edison (1847-1931), an American inventor"
+     }
+    ]
+   }
+  ],
+  "grammar": [
+   {
+    "n": 1,
+    "title_zh": "难道",
+    "explanation_zh": "“难道”，副词，加强反问语气。用于肯定反问句，表示否定的意思；用于否定反问句，表示肯定的意思。如“难道汉语真的这么难吗？”表示说话者强调汉语不难。例如：",
+    "explanation_en": "The adverb “难道” emphasizes the tone of a rhetorical question. Positive rhetorical questions indicate negative meanings, and negative rhetorical questions indicate positive meanings. For example, the sentence “难道汉语真的这么难吗？(Is Chinese really that difficult?)” emphasizes that Chinese is not difficult. For example:",
+    "examples": [
+     {
+      "n": 1,
+      "zh": "怎么又买了这么多饼干和巧克力？难道你不减肥了？"
+     },
+     {
+      "n": 2,
+      "zh": "A：喂，都十点了，你怎么还不来？ B：难道你没看短信？我今天有事去不了了。"
+     },
+     {
+      "n": 3,
+      "zh": "A：你不是两点就出发了吗？难道路上花了两个多小时？ B：我那辆车出了点儿问题，刚才把车送去修了。"
+     }
+    ],
+    "practice_instruction_zh": "完成句子或对话",
+    "practice": [
+     {
+      "n": 1,
+      "zh": "你别再喝这么多酒了！________？",
+      "hint_zh": "难道"
+     },
+     {
+      "n": 2,
+      "zh": "A：你又咳嗽了？________？ B：感冒早好了，我咳嗽是因为空气太干。",
+      "hint_zh": "难道"
+     },
+     {
+      "n": 3,
+      "zh": "A：喂，都十点了，你怎么还不来教室？ B：________？",
+      "hint_zh": "难道"
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "title_zh": "通过",
+    "explanation_zh": "“通过”，可以做介词，表示把人或事物作为某种手段而达到某种目的。例如：（1）（2）\n“通过”，也可以做动词，表示从某个地方穿过，从一端或一侧到另一端或一侧。例如：（3）\n动词“通过”还可以表示符合一定标准或达到了某种要求。例如：（4）\n【比一比 通过—经过】\n相同点：两者都可表示把人或事物作为某种手段而达到某种目的。★\n不同点：1. 表示★这个意思时，“通过”是介词，“经过”是动词。在意义上“通过”强调方法、手段；而“经过”强调事情的过程。 2. 两者做动词时，“通过”表示从某个地方穿过，从一端或一侧到另一端或另一侧；“经过”表示途经某地，没有穿过的意思。 3. “经过”还可以做名词，表示事情发展的过程；“通过”没有这个用法。",
+    "explanation_en": "The preposition “通过” means “the attainment of a certain result via somebody or by means of something”. For example: (1)(2)\n“通过” can also be used as a verb to indicate “to pass through some place from one end (side) to another end (side)”. For example: (3)\nThe verb “通过” can also mean “to have reached a certain standard or met a certain requirement”. For example: (4)\n[Compare 通过—经过]\nSimilarity: Both can indicate the attainment of a certain goal via somebody or by means of something.\nDifferences: 1. In case ★, “通过” is a preposition, and “经过” is a verb. Semantically speaking, “通过” emphasizes the method or means (of achieving something), while “经过” emphasizes the process. 2. When used as a verb, “通过” means “to pass through someplace from one end (side) to another end (side)”, while “经过” means “to go…by way of…” without the meaning of “passing through”. 3. “经过” can also be used as a noun to indicate the development process of something, while “通过” has no such usage.",
+    "examples": [
+     {
+      "n": 1,
+      "zh": "任何成功都要通过努力才能得到。",
+      "note_zh": "介词"
+     },
+     {
+      "n": 2,
+      "zh": "这个节目我一直在看，它介绍了很多生活中的小知识。很多以前我没有注意到的问题，现在通过它了解了不少。",
+      "note_zh": "介词"
+     },
+     {
+      "n": 3,
+      "zh": "这条街只能步行通过。",
+      "note_zh": "动词：从某个地方穿过"
+     },
+     {
+      "n": 4,
+      "zh": "我通过那家公司的面试了。经理对我印象不错，他要我明天就正式去上班。",
+      "note_zh": "动词：符合一定标准或达到了某种要求"
+     },
+     {
+      "zh": "通过／经过大家的努力，公司的生意越做越大。",
+      "note_zh": "比一比 相同点"
+     },
+     {
+      "zh": "希望通过这次活动引起大家的兴趣，让大家更了解我们公司。",
+      "note_zh": "比一比 不同点1：通过"
+     },
+     {
+      "zh": "经过一次次失败之后，他终于成功了。",
+      "note_zh": "比一比 不同点1：经过"
+     },
+     {
+      "zh": "这里正在修路，汽车无法通过。",
+      "note_zh": "比一比 不同点2：通过"
+     },
+     {
+      "zh": "我正好经过这儿，顺便过来看看你。",
+      "note_zh": "比一比 不同点2：经过"
+     },
+     {
+      "zh": "小王把事情的经过告诉我了，原来这件事真的跟你没关系。",
+      "note_zh": "比一比 不同点3：经过（名词）"
+     }
+    ],
+    "practice_instruction_zh": "完成句子或对话",
+    "practice": [
+     {
+      "n": 1,
+      "zh": "《人与自然》这个节目一直很受欢迎，________。",
+      "hint_zh": "通过"
+     },
+     {
+      "n": 2,
+      "zh": "A：这次HSK考试你考得怎么样？ B：________。",
+      "hint_zh": "通过"
+     },
+     {
+      "n": 3,
+      "zh": "A：您为什么会写这本书呢？ B：________。",
+      "hint_zh": "通过"
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "title_zh": "可是",
+    "explanation_zh": "“可是”，连词，用在复句的后一分句，表示转折。前一分句常有“虽然”跟它搭配使用。例如：",
+    "explanation_en": "The conjunction “可是” is used in the second clause of a complex sentence to indicate a transition in meaning, often coordinating with a clause introduced by “虽然” before it. For example:",
+    "examples": [
+     {
+      "n": 1,
+      "zh": "A：你怎么又想换工作了，这儿的收入不是挺高的吗？ B：虽然收入高，可是经常要加班，很少有时间和家人在一起。"
+     },
+     {
+      "n": 2,
+      "zh": "小时候，大家都说我像我妈，尤其是性格。可是长大后，他们说我更像爸爸。"
+     },
+     {
+      "n": 3,
+      "zh": "当时她的父母和亲戚都不支持她，可是她坚持自己的选择，现在终于向所有人证明了她的选择是正确的。"
+     }
+    ],
+    "practice_instruction_zh": "完成对话",
+    "practice": [
+     {
+      "n": 1,
+      "zh": "他虽然写得比较慢，________。",
+      "hint_zh": "可是"
+     },
+     {
+      "n": 2,
+      "zh": "A：你为什么不喜欢小王？他不是挺诚实的吗？ B：________。",
+      "hint_zh": "可是"
+     },
+     {
+      "n": 3,
+      "zh": "A：我约了几个同学星期六上午去打网球，你也去吧。 B：________。",
+      "hint_zh": "可是"
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "title_zh": "结果",
+    "explanation_zh": "“结果”，可以做名词，表示事情发展达到的最后状态。例如：（1）（2）\n“结果”，也可以做连词，表示因果关系。用在复句的后一个分句，表示前一个分句中所说的情况最后出现了什么结果。例如：（3）（4）",
+    "explanation_en": "“结果” can be used as a noun to indicate the final state that something has developed into. For example: (1)(2)\n“结果” can also be used as a conjunction to indicate a cause-effect relationship, usually used in the second clause of a complex sentence, introducing the result of the situation mentioned in the first clause. For example: (3)(4)",
+    "examples": [
+     {
+      "n": 1,
+      "zh": "小张，你这份计划书写得不错，就按照这个计划去做市场调查吧。下个月把调查结果交上来。",
+      "note_zh": "名词"
+     },
+     {
+      "n": 2,
+      "zh": "如果你想做什么事情，那就勇敢地去做，不要担心结果，不要考虑会不会失败。",
+      "note_zh": "名词"
+     },
+     {
+      "n": 3,
+      "zh": "我妻子想减肥，所以她每天早上都去骑马。结果马竟然在一个月之内瘦了二十斤。",
+      "note_zh": "连词"
+     },
+     {
+      "n": 4,
+      "zh": "有些人爱说“差不多”。例如，每天的工作都是完成得差不多，结果，积累下来，就变成差很多了。",
+      "note_zh": "连词"
+     }
+    ],
+    "practice_instruction_zh": "完成句子或对话",
+    "practice": [
+     {
+      "n": 1,
+      "zh": "没有人能随随便便成功，成功都是________。",
+      "hint_zh": "结果"
+     },
+     {
+      "n": 2,
+      "zh": "昨天晚上我一直工作到很晚才睡，________。",
+      "hint_zh": "结果"
+     },
+     {
+      "n": 3,
+      "zh": "A：昨天的面试________？ B：明天或者后天吧，他们会打电话通知。",
+      "hint_zh": "结果"
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "title_zh": "上",
+    "explanation_zh": "“上”，动词，表示“达到、够（一定数量或程度）”的意思，后面常跟表示数量的宾语。例如：",
+    "explanation_en": "The verb “上” means “to achieve or reach (a certain quantity or degree)”, often followed by an object indicating quantity. For example:",
+    "examples": [
+     {
+      "n": 1,
+      "zh": "这个城市的地铁已经有上百年的历史了。"
+     },
+     {
+      "n": 2,
+      "zh": "每年有成千上万的高中毕业生参加艺术考试。"
+     },
+     {
+      "n": 3,
+      "zh": "爱迪生就是在找了上千种材料后才找到了能点亮电灯的材料。"
+     }
+    ],
+    "practice_instruction_zh": "完成句子",
+    "practice": [
+     {
+      "n": 1,
+      "zh": "这件事发生在1914年，________。",
+      "hint_zh": "上"
+     },
+     {
+      "n": 2,
+      "zh": "这张本来值两三毛钱的旧报纸可以卖出两三百元的高价，________。",
+      "hint_zh": "上"
+     },
+     {
+      "n": 3,
+      "zh": "这个电影很有名，________。",
+      "hint_zh": "上"
+     }
+    ]
+   }
+  ],
+  "exercises": [
+   {
+    "n": "注释2 比一比 做一做",
+    "type_zh": "选词填空（通过／经过）",
+    "instruction_zh": "选词填空",
+    "instruction_en": "Tick or cross",
+    "word_bank": [
+     [
+      "通过",
+      "经过"
+     ]
+    ],
+    "items": [
+     {
+      "n": 1,
+      "zh": "________调查我们发现，客人住宾馆最关心的是干净不干净。",
+      "options": {
+       "通过": "✓",
+       "经过": "✓"
+      },
+      "answer": "通过 ✓　经过 ✓",
+      "answer_ref": {
+       "book": "textbook",
+       "pages": [
+        116
+       ]
+      }
+     },
+     {
+      "n": 2,
+      "zh": "这是保修卡，遇到什么问题，您可以________上面的电话联系我们。",
+      "options": {
+       "通过": "✓",
+       "经过": "×"
+      },
+      "answer": "通过 ✓　经过 ×",
+      "answer_ref": {
+       "book": "textbook",
+       "pages": [
+        116
+       ]
+      }
+     },
+     {
+      "n": 3,
+      "zh": "我不了解这件事情的________，你问问其他人吧。"
+     },
+     {
+      "n": 4,
+      "zh": "________这段时间的学习，他的汉语水平提高了不少。"
+     },
+     {
+      "n": 5,
+      "zh": "有些人________节食的方法来减肥，虽然有效，但是时间长了对身体没有好处。"
+     }
+    ]
+   },
+   {
+    "n": "课文1–3 回答问题",
+    "type_zh": "回答问题",
+    "instruction_zh": "根据课文内容回答问题",
+    "instruction_en": "Answer the questions based on the texts.",
+    "items": [
+     {
+      "n": 1,
+      "zh": "课文1：孙月买了些什么？她为什么不想减肥了？"
+     },
+     {
+      "n": 2,
+      "zh": "课文1：怎样减肥才能有效果？"
+     },
+     {
+      "n": 3,
+      "zh": "课文2：张远的网球为什么打得那么好？"
+     },
+     {
+      "n": 4,
+      "zh": "课文2：为什么说没有人能随随便便成功？"
+     },
+     {
+      "n": 5,
+      "zh": "课文3：王红是干什么的？她是怎样获得成功的？"
+     },
+     {
+      "n": 6,
+      "zh": "课文3：为什么说有时候放弃是一种聪明的选择？"
+     }
+    ]
+   },
+   {
+    "n": "课文4–5 回答问题",
+    "type_zh": "回答问题",
+    "instruction_zh": "根据课文内容回答问题",
+    "instruction_en": "Answer the questions based on the texts.",
+    "items": [
+     {
+      "n": 1,
+      "zh": "课文4：过程和结果，哪个更重要？要是太看重结果会怎么样？"
+     },
+     {
+      "n": 2,
+      "zh": "课文4：为什么说失败了也没关系？"
+     },
+     {
+      "n": 3,
+      "zh": "课文5：人们对困难的态度有什么不同？在这一点上，取得成功的人和普通人的区别是什么？"
+     },
+     {
+      "n": 4,
+      "zh": "课文5：爱迪生是怎样成功发明电灯的？“阳光总在风雨后”是什么意思？"
+     }
+    ]
+   },
+   {
+    "n": 1,
+    "type_zh": "复述",
+    "instruction_zh": "复述",
+    "instruction_en": "Retell the dialogues.",
+    "items": [
+     {
+      "n": "课文1",
+      "zh": "孙月的语气：我今天买了很多饼干和巧克力。……"
+     },
+     {
+      "n": "课文2",
+      "zh": "李进的语气：张远网球打得特别好，……"
+     },
+     {
+      "n": "课文3",
+      "zh": "王红的语气：我毕业后放弃了律师的工作，……"
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "type_zh": "选词填空",
+    "instruction_zh": "选择合适的词语填空",
+    "instruction_en": "Choose the proper words to fill in the blanks.",
+    "word_bank": [
+     [
+      "过程",
+      "至少",
+      "区别",
+      "正确",
+      "暂时"
+     ],
+     [
+      "汗",
+      "得（děi）",
+      "取",
+      "理想",
+      "放弃"
+     ]
+    ],
+    "items": [
+     {
+      "n": 1,
+      "zh": "我住的地方离地铁站有点儿远，走路________要三十分钟。"
+     },
+     {
+      "n": 2,
+      "zh": "所有的困难都是________的，要有信心，我相信你一定会成功。"
+     },
+     {
+      "n": 3,
+      "zh": "“爱”和“喜欢”有什么________？我认为“爱”比“喜欢”的感情更深。"
+     },
+     {
+      "n": 4,
+      "zh": "其实，只要我们真正努力过了，就不需要太关心结果。因为不管最后是成功还是失败，在努力的________中，我们已经学到了很多东西。"
+     },
+     {
+      "n": 5,
+      "zh": "减肥不只是为了瘦，更是为了健康。________的减肥方法是按时吃饭，多吃水果，多运动，而不是饿肚子。"
+     },
+     {
+      "n": 6,
+      "zh": "A：师傅，麻烦您快点儿行吗？我________在九点之前到大使馆。 B：不用担心，保证按时把您送到。"
+     },
+     {
+      "n": 7,
+      "zh": "A：你哥不是说三点到吗？都过去半个小时了，怎么还没出来？ B：他还得去________行李箱，您别担心，我打个电话问问。"
+     },
+     {
+      "n": 8,
+      "zh": "A：外面热吗？你怎么满头大________？ B：电梯坏了，我爬楼梯上来的。"
+     },
+     {
+      "n": 9,
+      "zh": "A：你考虑清楚了？真的要________这次机会？ B：是的，我妈妈身体不太好，我决定留下来照顾她。"
+     },
+     {
+      "n": 10,
+      "zh": "A：你研究生考试考得怎么样？ B：数学可能考得不太________。"
+     }
+    ]
+   },
+   {
+    "n": "扩展 做一做",
+    "type_zh": "选词填空（同字词）",
+    "instruction_zh": "选词填空",
+    "instruction_en": "Fill in the blanks with the words given.",
+    "word_bank": [
+     [
+      "如果",
+      "结果",
+      "效果"
+     ]
+    ],
+    "items": [
+     {
+      "n": 1,
+      "zh": "做事情，不要一开始就考虑过多：会不会很难，________会怎么样……这些其实都不重要，关键是要勇敢地去做，只有去做，一切才有可能。",
+      "answer": "结果",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        89
+       ]
+      }
+     },
+     {
+      "n": 2,
+      "zh": "春天天气时冷时热，容易感冒，医生提醒人们要注意室内空气质量，早上起床后应该打开窗户换换空气。________感冒了，要及时去医院。",
+      "answer": "如果",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        89
+       ]
+      }
+     },
+     {
+      "n": 3,
+      "zh": "水果减肥法是指通过每天只吃水果而不再吃别的东西来减肥的一种方法。这样减肥虽然有一定的________，却很不健康。",
+      "answer": "效果",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        89
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "characters": {
+   "knowledge_title_zh": "同字词",
+   "knowledge_en": "Words with the Same Character",
+   "knowledge_zh": "果：如果、结果、效果\n（1）现在朋友之间流行发各种幽默短信，这给我们的生活带来一些快乐。但是如果同样的短信你收到了三四遍，再幽默的短信你也笑不出来了。\n（2）A：没有你的帮助，我肯定不能按时完成任务，真是太谢谢你了！ B：你太客气了，我不过是说了一点儿想法，这一切都是你自己辛苦努力的结果。\n（3）尽管很辛苦，但他还是坚持每天做运动，几个月下来，减肥的效果很不错。",
+   "characters": [
+    {
+     "zh": "果",
+     "note_zh": "如果、结果、效果"
+    }
+   ]
+  },
+  "application": [
+   {
+    "title_zh": "双人活动",
+    "instruction_zh": "互相了解对方关于成功的看法，完成调查表。",
+    "instruction_en": "Learn about each other’s opinions about success and complete the questionnaire below.",
+    "example_zh": [
+     "表格：| | 问 | 答 |",
+     "| 1 | 对你来说，成功的标准是什么？ | |",
+     "| 2 | 你认为怎样才能取得成功？ | |",
+     "| 3 | 如果失败了，你打算怎么办？ | |",
+     "| 4 | 你做过的最成功的事情是什么？ | |",
+     "| 5 | 你眼中成功的人都有谁？ | |",
+     "| 6 | 你认为成功的人有哪些好的习惯？ | |"
+    ]
+   },
+   {
+    "title_zh": "小组活动",
+    "instruction_zh": "“没有人能随随便便成功”，这句话你同意吗？你认为谁是成功的？他是怎么取得成功的？请向小组成员介绍一下他的故事。（请最少用四个下面的结构）",
+    "instruction_en": "Do you agree with the saying “Nobody can succeed effortlessly”? Who do you think is successful? How has he/she achieved success? Tell your group members about his/her story. (Use at least four of the following structures.)",
+    "example_zh": [
+     "a. 从来没有休息过一天",
+     "b. 成功前留下的汗水",
+     "c. 通过努力",
+     "d. 向所有人证明",
+     "e. 为了自己的理想",
+     "f. 只有学会放弃",
+     "g. 不要担心结果",
+     "h. 阳光总在风雨后"
+    ]
+   }
+  ],
+  "culture": {
+   "title_zh": "成功的秘诀",
+   "body_zh": "中国有句俗话，叫作“千里之行，始于足下”。它告诉我们，要想成功必须从小事做起，并且懂得坚持。世间最容易的事是坚持，最难的事也是坚持。说它容易，是因为只要愿意做，人人能做到；说它难，是因为真正能做到的，终究只是少数人。成功在于坚持，这是一个并不神秘的秘诀。如果在努力的过程中遇到困难，也不要放弃。",
+   "body_en": "The Secret of Success. There is a Chinese saying that goes “A journey of a thousand miles begins with the first step”. It tells us that in order to become successful, we have to start with minor matters and learn to keep going on. Perseverance is the easiest as well as the hardest thing in the world. It’s easy because everybody can make it as long as they are willing to, and it’s difficult because only a small minority of us can actually do it. The secret of success lies in perseverance, which is not mysterious at all. Don’t give up even if difficulties come up in the process."
+  }
+ },
+ "teacher": {
+  "ref": {
+   "book": "teacher",
+   "pages": [
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89
+   ]
+  },
+  "objectives_zh": [
+   "主题：成功的经验（1）对话：减肥、成功经历1、成功经历2（2）短文：过程和结果、勇敢面对困难",
+   "语言点：学生能够了解并掌握：（1）“难道”用于加强反问语气（2）“通过”表示把人或事物作为某种手段达到某种目的；从某个地方穿过；符合一定的标准或达到了某种要求　*辨析“通过”和“经过”的异同（3）“可是”表示转折（4）“结果”表示事情发展达到的最后状态；因果关系（5）“上”表示达到、够（一定数量）",
+   "词汇：学生能够：（1）掌握本课30个四级大纲词汇的意义和用法　重点词语：坚持、放弃、轻松、随便、当时、正确、勇敢、过程、总结、取、暂时（2）了解1个非大纲词汇的意义：面对（3）理解“果”字的组词规律及在词汇中的意义"
+  ],
+  "steps": [
+   {
+    "title_zh": "一 复习旧课",
+    "body_zh": "1 使用生词卡片，快速认读下列词语：\n伤心、愉快、放松、回忆、发生、堵车、耐心、缺少、到处、证明、积极\n2 快速回答问题（与第8课或学生实际生活有关的问题）：\n（1）你喜欢吃巧克力吗？吃巧克力对人的心情有什么影响？\n（2）遇到堵车时，你会怎么办？\n（3）为什么人们会喜欢不同的颜色？\n3 检查作业：\n请3名学生简单介绍一下改变心情的方法。"
+   },
+   {
+    "title_zh": "二 学习新课 1 热身",
+    "body_zh": "热身1：学生两人一组，合作完成；教师指出图片，请学生根据图片说出对应的词语，教师核对答案；教师领读热身1的生词；最后全体学生齐读，教师正音。\n答案：①B　②D　③F　④C　⑤A　⑥E\n热身2：教师带领学生熟悉调查表格的内容；请学生两人一组，调查对方对成功的理解；请2～3名学生报告调查结果。"
+   },
+   {
+    "title_zh": "2 生词",
+    "body_zh": "（1）生词快速认读及正音\n课文1（对话）：饼干、难道、得、坚持、放弃、主意\n课文2（对话）：网球、国际、轻松、赢、随便、汗、通过\n课文3（对话）：篇、作家、当时、可是、正确、理想\n课文4（短文）：勇敢、结果、失败、过程、至少、总结\n课文5（短文）：取、经历、许多、区别、暂时、*面对\n• 教师用PPT或卡片展示并领读生词（带拼音）；\n• 取消拼音，带领学生再次认读；\n• 逐词（不带拼音）闪现，请学生快速认读生词；\n• 请3～5个学生快速随机认读3～5个生词；\n• 最后全体学生快速齐读所有生词。\n（2）生词讲解方式\n直观法（图片）：饼干（热身图片A）、网球（热身图片D）、轻松（热身图片B）、赢（世界杯冠军拿着奖杯）、汗（运动员汗流浃背）、作家（热身图片F）、勇敢（热身图片C）、失败（足球比赛，两队表情对比）\n替换法（同／近义替换）：得（应该）、可是（但是）、正确（对的）、至少（最少）、许多（很多）、区别（不同）\n对比法（反义词对比）：国际—国内\n情景法（肢体动作）：取（从学生桌子取书）、面对（指着自己的脸，再指向学生，用手势比划面对的字面义）\n搭配法（搭配的词组）：篇（一篇课文）\n提问启发：坚持、放弃、主意、随便、当时、理想、过程、总结、暂时\n教师提问，引导学生说出句子：\n学习时会遇到很多困难，但是……——但是我们要坚持学习。\n考试时有个题我不会，所以……——所以我放弃了那个题。\n我们周末去哪儿聚会呢？——我有个好主意，去马克家吧。\n欢迎你们来我家做客，请……——请随便坐、随便喝、随便玩儿。\n你第一次刚到中国的时候是什么心情？——当时很紧张／高兴。\n我小时候想当医生。——我小时候的理想是当医生。\n如果想赢足球比赛，需要努力练习，很辛苦。——练习的过程很辛苦。\n每次课最后，老师都会把学习的内容……——老师会把学习的内容总结一下。\n你们刚来中国时遇到了一些问题，现在还有问题吗？所以……——刚来中国时遇到的问题时暂时的。\n（3）字形辨认练习\n教师用卡片或PPT展示，请学生快速辨认并读出，最后给每个字组词。\n饼—饺　网—刚　篇—等\n时—对　确—解　勇—用\n败—放　取—最　区—医\n（4）重点生词扩展及常用搭配\n坚持—坚持坚持—坚持一下—坚持自己的理想—只能坚持—要想减肥成功，只能坚持。\n放弃—他／我／朋友放弃—放弃这个问题／工作—我已经打算放弃了。\n轻松—很／非常／特别轻松—轻轻松松—感觉很轻松—感觉你轻轻松松就赢了。\n随便—很／非常／特别随便—随随便便—随便吃／玩儿／看／坐—没有人随随便便就能成功。\n当时—当时的人／事／情况／问题—在当时—当时她的父母和亲戚都不支持她。\n正确—很／非常／特别正确—正确的选择／想法—选择是正确的—向所有人证明她的选择是正确的。\n勇敢—很／非常／特别勇敢—勇敢的人／孩子—勇敢地去做—如果你想做什么事情，那就勇敢地去做。\n过程—做事情／练习的过程—过程中／上—我们应该把注意力放在做事情的过程上。\n总结—总结经验／问题—总结出有用的经验—我们从失败中总结出有用的经验。\n取—取钱／书／东西—取得—取得成功—取得成功的人—取得成功的人往往都经历过许多失败。\n暂时—暂时的问题／情况—问题／困难是暂时的—困难只是暂时的。"
+   },
+   {
+    "title_zh": "3 语言点（1）难道",
+    "body_zh": "① 语言点解析\n“难道”，副词，加强反问语气。肯定反问句表示否定的意思，如“难道汉字真的这么难吗？”强调“汉字不难”；否定反问句表示肯定的意思，如“难道汉字不难吗？”强调“汉字很难”。\n② 语言点导入\n• 利用热身图片E，提问导入否定反问句。\n教师：这个科学家是谁？\n学生：……（有的人可能不知道）\n教师：他很有名，你们应该知道啊！（重音突出“应该”）\n教师重复：……你们难道不知道？（教师加强反问的语气，重音突出“难道不”）\n• 利用热身图片C，提问导入肯定反问句。\n教师：你觉得他能走过去吗？\n学生：不能。\n教师：我觉得他应该走不过去！（重音突出“应该”“不”）\n教师重复：他难道能走过去？（教师加强反问的语气，重音突出“难道”）\n③ 语言点操练\n• 联系学生实际，进行操练。\n根据经验，写一个学过但学生经常忘记的汉字。\n教师：这个汉字怎么读？\n学生：……\n教师：我们学习过，你们应该认识啊！\n请学生模仿教师重复：难道你们不认识？\n• 联系课堂实际，进行操练。\n教师：（天气下雨可能性很小）我觉得今天会下雨。\n学生：难道今天会下雨？\n④ 语言点运用\n请学生两人一组，根据情景用“难道”补全对话，并分角色朗读。\nI. A：我昨天给你打电话，怎么一直没人接啊？ B：我没接到你的电话，________？\nII. A：________？ B：是啊，马克已经告诉我开会的时间了。\nIII. A：________？ B：我感冒早就好了，我咳嗽是因为今天抽烟抽多了。\n参考答案：I. 难道你打错电话号码了？\nII. 难道你已经知道明天要开会了？\nIII. 你又咳嗽了，难道你的感冒还没好吗？"
+   },
+   {
+    "title_zh": "3 语言点（2）通过",
+    "body_zh": "【介词用法】\n① 语言点解析\n“通过”，介词，表示把人或事物作为某种手段而达到某种目的。\n② 语言点导入\n联系学生实际，提问导入。\n• 教师：我们可以怎么提高汉语听力水平呢？\n学生：跟中国人聊天儿。\n教师总结：“通过跟中国人聊天儿，可以提高我们的汉语听力水平。”\n• 教师：有什么好办法能让自己放松心情呢？\n学生：通过听音乐可以放松心情。\n③ 语言点操练\n• 利用热身图片F，提问操练。\n教师：你是怎么认识他的？\n学生：我是通过他的书认识他的。\n• 根据情境，提问操练。\n教师：这本词典我找了很多家书店都没找到，你是怎么买到的？（通过图片提示网店）\n学生：我是通过网上书店买到的。\n【动词用法】\n① 语言点解析\n“通过”，动词，表示从某个地方穿过，从一端或一侧到另一端或一侧；表示符合一定标准或达到了某种要求。\n② 语言点导入\n• 利用热身图片C，提问导入。\n教师：从这里，到那里，你觉得他能通过吗？\n学生：能通过／通不过。\n• 联系学生实际，提问操练。\n教师：考多少分，可以通过考试呢？\n学生：……\n③ 语言点操练\n利用图片，提问操练。\n• 图片：狭窄的胡同过道\n教师：走这条路，两个人能一起通过吗？\n学生：两个人肯定不能一起通过。\n• 图片：会议举手表决，3/4人同意\n教师：这个决定获得通过了吗？\n学生：这个决定有3/4的人同意，获得通过了。\n④ 语言点运用（关于两种用法）\n请学生两人一组，根据情景用“通过”补全对话，并分角色朗读。\nA：听说你昨天去一家公司面试了，怎么样？\nB：________。\nA：太好了！我一直相信你能成功。你是怎么知道那家公司需要人的？\nB：________。\n参考答案：我顺利通过面试了，他们通知我下周上班。\n通过上网／参加招聘会，我才知道的。\n⑤ 比一比：通过—经过\n• 按照教材中的辨析步骤进行。"
+   },
+   {
+    "title_zh": "3 语言点（3）可是",
+    "body_zh": "① 语言点解析\n“可是”，连词，用在复句的后一分句，表示转折。前一分句常有“虽然”跟它搭配使用。\n② 语言点导入\n• 利用同义表达“但是”，替换导入。\n教师：马克病了，但是他还坚持来上课。\n教师重复：马克病了，可是他还坚持来上课。\n教师朗读两个句子，“可是”语气轻些，用手势和重音来区分“但是”和“可是”。\n• 联系课文1的内容，提问导入。\n教师：你买这么多饼干，难道你不减肥了吗？\n学生：我已经减了一个月了，可是一点儿也没瘦，所以只好放弃了。\n③ 语言点操练\n• 利用热身图片C，提问操练。\n教师：你相信他能通过吗？\n学生A：相信。\n学生B：不相信。\n学生目标句：……相信，可是……不相信。\n• 联系实际生活，提问操练。\n教师：这个工作收入不是挺高的吗？你怎么又换工作了？\n学生：收入虽然挺高的，可是要经常加班，太辛苦了。\n④ 语言点运用\n请学生根据情景用“可是”补全句子，并朗读。\nI. 妻子想用现金买冰箱，________。\nII. 广告说这种葡萄酒味道不错，________。\nIII. 我觉得衣服流行不流行很重要，________。\n参考答案：I. 可是她带的钱不够\nII. 可是我不相信它像广告上说的那么好\nIII. 可是她觉得价格更重要"
+   },
+   {
+    "title_zh": "3 语言点（4）结果",
+    "body_zh": "【名词用法】\n① 语言点解析\n“结果”，名词，表示事情发展达到的最后状态。\n② 语言点导入\n联系生活实际，提问导入。\n• 教师：昨天巴西队和英国队的比赛谁赢了？（提问不太喜欢体育的学生）\n学生：我也不知道比赛的结果。\n• 教师：面试结果出来了吗？不知道我这次能不能通过？\n学生：面试结果还没出来，再等等吧。\n③ 语言点操练\n利用情境，进行操练。\n• 教师：马克上个星期考HSK四级了，他通过了吗？\n学生：我还不知道他的考试结果。\n• 教师：如果没有你的帮助，我肯定不能按时完成任务。\n学生：你太客气了，这都是你自己努力的结果。\n【连词用法】\n① 语言点解析\n“结果”，连词，表示因果关系。用在复句的后一个分句，表示前一个分句中所说的情况最后出现了什么结果。\n② 语言点导入\n联系生活实际，提问导入。\n• 教师：昨天我想去公园跑步，可是下雨了，结果……\n学生：昨天我想去公园跑步，可是下雨了，结果就没去。\n• 教师：她昨天还是好好儿的，怎么突然感冒了？\n学生：她从来没见过这么大的雪，所以在外边玩儿了很长时间，结果就感冒了。\n③ 语言点操练\n联系生活实际，提问操练。\n教师：你今天怎么迟到了呢？\n学生：昨天睡得太晚，起床起晚了，结果就迟到了。\n教师：难道你昨天看了一晚上电视？\n学生：没有，本来想上一会儿网就睡，结果联系上一个好久不见的老朋友，聊着聊着就晚了。\n④ 语言点运用（关于两种用法）\n利用第7课热身图片F，请学生用“结果”进行描述。\n（图片）\n参考答案：她的减肥结果非常好，已经瘦了20斤了。（名词）\n她每天都去跑步、游泳，结果很快就瘦了。（连词）"
+   },
+   {
+    "title_zh": "3 语言点（5）上",
+    "body_zh": "① 语言点解析\n“上”，动词，表示达到、够（一定数量），后面常跟表示数量的宾语。\n② 语言点导入\n联系学生实际，提问导入。\n教师：我们学校有多少外国留学生？\n学生：……\n教师：80？100？150？\n教师总结：“我们学校有上百个留学生。”（≥100）\n直接继续提问：\n教师：……（北京语言大学）呢？（≥1000）\n学生：上千个。\n教师：……（北京市）呢？（≥10000）\n学生：上万个。\n教师板书或PPT展示：上＋百／千／万\n③ 语言点操练\n联系生活实际，提问操练。\n• 教师：我们学校有多长时间历史了？\n学生：上百年历史了。\n• 教师：图书馆有多少种书？\n学生：上千／万种书。\n④ 语言点运用\n请学生根据情景用“上”补全句子，并朗读。\nI. 每年过春节的时候，________。\nII. 那个公司很大，________。\nIII. 这几天你去哪儿了？________。\n参考答案：I. 很多机票都是上千块钱\nII. 好像有上千人\nIII. 我找了你上百次"
+   },
+   {
+    "title_zh": "4 课文",
+    "body_zh": "（1）就课文内容，教师将下列问题写在黑板上或用PPT展示（或教师给学生发放问题单）：（见 text_questions）\n（2）要求学生带着问题听两遍录音并回答问题，教师给出答案；\n（3）学生打开课本，教师逐句播放录音，学生看课本听第二次录音并跟读；\n（4）教师领读一遍课文；\n（5）全班一起大声齐读一遍课文；\n（6）请2～3组学生分角色朗读课文，教师正音；\n（7）做以下课文扩展练习：\n对话课文：教师带领学生根据问题单上问题的答案叙述课文内容，并请学生单个复述。\n课文1：孙月减肥减了一个月都没有瘦下来，实在没有信心了。王静告诉她如果想减肥，就必须得少吃东西，而且要多运动。要想减肥成功，只有坚持，才会慢慢有效果。\n课文2：张远网球打得非常好，还得过很多国际大奖。每次看他比赛，感觉他轻轻松松就赢了。张远说没有人随随便便就能成功，不管春夏秋冬，他练球从来没有休息过一天。任何成功都要通过努力才能得到。\n课文3：王红放弃了律师的工作，专门写小说，现在已经是一个有名的作家了。当时她的父母和亲戚都不支持她，可是她坚持自己的选择，现在终于向所有人证明她的选择是正确的。\n短文课文：请学生根据课文内容，补全下面的语段，并请学生单个复述朗读。\n课文4：如果你想做什么事情，那就勇敢地去做，不要……（担心结果），不要考虑……（会不会失败）。我们应该……（把注意力放在）做事情的过程上，即使最后失败了也没关系，因为至少你已经努力过，而且还可以从失败中……（总结出有用的经验）。\n课文5：爱迪生找了……（上千种材料）后才找到了能点亮电灯的材料。取得成功的人往往都经历过……（许多失败）。他们和普通人的区别就是他们都……（坚持了下来）。困难只是暂时的，我们只有……（勇敢地面对困难），才能有希望取得成功。"
+   },
+   {
+    "title_zh": "5 扩展",
+    "body_zh": "（1）领读“如果、结果、效果”三个同字词，请学生说一说“果”字在词中的位置、读音和意义。“果”的义项：\n事情的结局：如果、结果、效果\n（2）请学生说说还有哪些带“果”字的词，教师列在黑板上，如果没有，可补充下列真假同字词，最后请学生判断正误，教师给出正确答案。\n果茶　果然　想果（×）　果盘\n要果（×）　果酒　后果\n（3）请学生完成“选词填空”练习，教师给出答案。\n参考答案：①结果　②如果　③效果"
+   },
+   {
+    "title_zh": "6 补充课堂活动",
+    "body_zh": "“如果你决定做一件事，但是你的父母、朋友都不支持你。你会怎么办？”学生4人一组，讨论一下，最后请每组派代表总结观点。"
+   },
+   {
+    "title_zh": "7 文化",
+    "body_zh": "教师引导学生了解“千里之行，始于足下”这句俗语的意思，可根据需求和时间安排，进行以下参考活动：\n• 展示爬山和登顶两张图片，引导学生了解这句俗语的意思与比喻意义；\n• 请学生说说自己国家的语言中，有哪些类似的表达；\n• 请学生试着用这句俗语劝朋友坚持做某事，比如学习一种技能、准备一项比赛等。"
+   },
+   {
+    "title_zh": "8 布置作业",
+    "body_zh": "• 每个生词写3遍；\n• 请学生讲有关某个成功的人的故事，说说他／她的成功经验，大约5分钟。"
+   }
+  ],
+  "notes_zh": [
+   "比一比：通过—经过——按照教材中的辨析步骤进行。（语言点2）",
+   "“难道”：肯定反问句表示否定的意思，如“难道汉字真的这么难吗？”强调“汉字不难”；否定反问句表示肯定的意思，如“难道汉字不难吗？”强调“汉字很难”。（语言点1）",
+   "“可是”与“但是”：教师朗读两个句子，“可是”语气轻些，用手势和重音来区分“但是”和“可是”。（语言点3）",
+   "字形辨认：饼—饺　网—刚　篇—等　时—对　确—解　勇—用　败—放　取—最　区—医（生词）",
+   "“果”的义项：事情的结局：如果、结果、效果；真假同字词：果茶　果然　想果（×）　果盘　要果（×）　果酒　后果（扩展）"
+  ],
+  "warmup_answers_zh": [
+   "热身1 答案：①B　②D　③F　④C　⑤A　⑥E",
+   "热身2：教师带领学生熟悉调查表格的内容；请学生两人一组，调查对方对成功的理解；请2～3名学生报告调查结果。"
+  ],
+  "text_questions": [
+   {
+    "text": 1,
+    "q_zh": "孙月减肥成功了吗？"
+   },
+   {
+    "text": 1,
+    "q_zh": "王静告诉孙月应该怎么做才能减肥？"
+   },
+   {
+    "text": 1,
+    "q_zh": "要想减肥成功，什么最重要？"
+   },
+   {
+    "text": 2,
+    "q_zh": "张远网球打得怎么样？"
+   },
+   {
+    "text": 2,
+    "q_zh": "看张远打网球给人什么感觉？"
+   },
+   {
+    "text": 2,
+    "q_zh": "张远认为怎么才能成功？"
+   },
+   {
+    "text": 3,
+    "q_zh": "王红现在做什么工作？"
+   },
+   {
+    "text": 3,
+    "q_zh": "王红以前做什么工作？"
+   },
+   {
+    "text": 3,
+    "q_zh": "王红的父母和亲戚支持她吗？她是怎么做的？"
+   },
+   {
+    "text": 4,
+    "q_zh": "如果你想做什么事情，你应该怎么做？"
+   },
+   {
+    "text": 4,
+    "q_zh": "你认为结果和过程哪个更重要？为什么？"
+   },
+   {
+    "text": 4,
+    "q_zh": "如果最后失败了，我们还可以做什么？"
+   },
+   {
+    "text": 5,
+    "q_zh": "爱迪生是怎么找到电灯的材料的？"
+   },
+   {
+    "text": 5,
+    "q_zh": "成功的人和普通人有什么不同？"
+   },
+   {
+    "text": 5,
+    "q_zh": "怎么才能取得成功？"
+   }
+  ]
+ },
+ "workbook": {
+  "ref": {
+   "book": "workbook",
+   "pages": [
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97
+   ]
+  },
+  "sections": [
+   {
+    "n": "一、听力 第一部分",
+    "type_zh": "听力 第一部分",
+    "instruction_zh": "第1–5题：判断对错。",
+    "items": [
+     {
+      "n": "例1",
+      "zh": "★他打算下午去银行。",
+      "transcript_zh": "我想去办个信用卡，今天下午你有时间吗？陪我去一趟银行？",
+      "answer": "✓",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        88
+       ]
+      }
+     },
+     {
+      "n": "例2",
+      "zh": "★他喜欢看电视广告。",
+      "transcript_zh": "现在我很少看电视，其中一个原因是，广告太多了，不管什么时间，也不管什么节目，只要你打开电视，总能看到那么多的广告，浪费我的时间。",
+      "answer": "×",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        88
+       ]
+      }
+     },
+     {
+      "n": 1,
+      "zh": "★好的开始很重要。",
+      "transcript_zh": "好的开始是成功的一半，很多事情开头做好了，以后就容易多了；开头没做好，后面会更困难。",
+      "answer": "✓",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        126
+       ]
+      }
+     },
+     {
+      "n": 2,
+      "zh": "★结果比过程更重要。",
+      "transcript_zh": "其实，只要我们真正努力过了，就不需要太关心结果。因为无论最后是成功还是失败，在努力的过程中，我们已经学到了很多东西。",
+      "answer": "×",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        126
+       ]
+      }
+     },
+     {
+      "n": 3,
+      "zh": "★没有失败就没有成功。",
+      "transcript_zh": "为什么说没有失败就没有成功？因为我们可以从失败中发现自己的缺点，总结出很多经验，有了这些经验的积累，才有可能获得成功。",
+      "answer": "✓",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        126
+       ]
+      }
+     },
+     {
+      "n": 4,
+      "zh": "★聪明最重要。",
+      "transcript_zh": "我认为态度决定一切。如果一个人做事情积极、努力，那么他就更容易成功。如果一个人不积极、不努力、不认真，他再聪明也很难成功。",
+      "answer": "×",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        126
+       ]
+      }
+     },
+     {
+      "n": 5,
+      "zh": "★不要担心失败。",
+      "transcript_zh": "如果你想做什么事情，那就勇敢地去做吧。只有试过才知道能不能成功。实际上，即使最后不成功也没有关系，因为至少你努力过。",
+      "answer": "✓",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        126
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "一、听力 第二部分",
+    "type_zh": "听力 第二部分",
+    "instruction_zh": "第6–12题：请选出正确答案。",
+    "items": [
+     {
+      "n": "例",
+      "zh": "男的主要是什么意思？",
+      "transcript_zh": "女：该加油了，去机场的路上有加油站吗？ 男：有，你放心吧。 问：男的主要是什么意思？",
+      "options": {
+       "A": "去机场",
+       "B": "快到了",
+       "C": "油是满的",
+       "D": "有加油站"
+      },
+      "answer": "D",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        89
+       ]
+      }
+     },
+     {
+      "n": 6,
+      "zh": "女的是什么意思？",
+      "options": {
+       "A": "不饿",
+       "B": "想吃巧克力",
+       "C": "不能吃东西",
+       "D": "正在减肥"
+      },
+      "transcript_zh": "男：饿了吧？来块儿巧克力怎么样？ 女：不，我最近在减肥，我吃个西红柿吧。 问：女的是什么意思？",
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        126
+       ]
+      }
+     },
+     {
+      "n": 7,
+      "zh": "女的是什么意思？",
+      "options": {
+       "A": "不想吃饭",
+       "B": "放弃减肥",
+       "C": "坚持运动",
+       "D": "瘦了很多"
+      },
+      "transcript_zh": "男：怎么又买这么多吃的，难道你不减肥了？ 女：我减了一个月，结果一点儿也没瘦，我实在没有信心了。 问：女的是什么意思？",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        126
+       ]
+      }
+     },
+     {
+      "n": 8,
+      "zh": "男的怎么了？",
+      "options": {
+       "A": "有些着急",
+       "B": "刚下火车",
+       "C": "行李箱丢了",
+       "D": "提前回来了"
+      },
+      "transcript_zh": "男：你哥不是说三点到吗？都过去半个小时了，怎么还没出来？ 女：他还得去取行李箱，您别担心，我打个电话问问。 问：男的怎么了？",
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        126
+       ]
+      }
+     },
+     {
+      "n": 9,
+      "zh": "男的是什么意思？",
+      "options": {
+       "A": "走一会儿",
+       "B": "别迟到",
+       "C": "休息一下",
+       "D": "再跑一会儿"
+      },
+      "transcript_zh": "女：我实在跑不动了，你让我休息一会儿吧。 男：你才跑了十分钟，要坚持，至少再跑十分钟。 问：男的是什么意思？",
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        126
+       ]
+      }
+     },
+     {
+      "n": 10,
+      "zh": "他们要去做什么？",
+      "options": {
+       "A": "加班",
+       "B": "爬山",
+       "C": "打网球",
+       "D": "打篮球"
+      },
+      "transcript_zh": "女：走，咱们一起去打网球吧，锻炼锻炼身体。 男：好主意，我很久没去运动了。你等我几分钟，我去换双运动鞋。 问：他们要去做什么？",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        126
+       ]
+      }
+     },
+     {
+      "n": 11,
+      "zh": "任务怎么样了？",
+      "options": {
+       "A": "提前完成了",
+       "B": "遇到困难了",
+       "C": "通过检查了",
+       "D": "交给别人了"
+      },
+      "transcript_zh": "女：我本来以为任务能顺利完成，没想到事情会变成这样。 男：别着急，会慢慢好起来的。 问：任务怎么样了？",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        126
+       ]
+      }
+     },
+     {
+      "n": 12,
+      "zh": "女的为什么没把这事告诉校长？",
+      "options": {
+       "A": "没找到他",
+       "B": "没调查清楚",
+       "C": "不敢告诉他",
+       "D": "不想告诉他"
+      },
+      "transcript_zh": "男：发生这么大的事，你怎么没告诉校长呢？ 女：当时他不在办公室，打他的电话又一直没人接。 问：女的为什么没把这事告诉校长？",
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        126
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "一、听力 第三部分",
+    "type_zh": "听力 第三部分",
+    "instruction_zh": "第13–22题：请选出正确答案。",
+    "items": [
+     {
+      "n": "例",
+      "zh": "会议几点开始？",
+      "transcript_zh": "男：把这个材料复印5份，一会儿拿到会议室发给大家。 女：好的。会议是下午三点吗？ 男：改了。三点半，推迟了半个小时。 女：好，602会议室没变吧？ 男：对，没变。 问：会议几点开始？",
+      "options": {
+       "A": "两点",
+       "B": "3点",
+       "C": "15：30",
+       "D": "18：00"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        90
+       ]
+      }
+     },
+     {
+      "n": 13,
+      "zh": "女的觉得自己怎么样？",
+      "options": {
+       "A": "很勇敢",
+       "B": "很可爱",
+       "C": "很诚实",
+       "D": "很有礼貌"
+      },
+      "transcript_zh": "男：您能给我们介绍一些您的成功经验吗？ 女：我觉得平时的积累是最重要的，要多向周围的人学习。 男：那您觉得您最大的优点是什么呢？ 女：是诚实。 问：女的觉得自己怎么样？",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        126
+       ]
+      }
+     },
+     {
+      "n": 14,
+      "zh": "经理让男的做什么？",
+      "options": {
+       "A": "翻译",
+       "B": "做调查",
+       "C": "招聘",
+       "D": "写总结"
+      },
+      "transcript_zh": "女：你今天怎么这么安静呀？ 男：刚刚经理让我写篇总结，我正考虑怎么写呢。 女：总结？哪方面的？ 男：招聘方面的。 问：经理让男的做什么？",
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        126
+       ]
+      }
+     },
+     {
+      "n": 15,
+      "zh": "关于男的，可以知道什么？",
+      "options": {
+       "A": "接受邀请了",
+       "B": "在讲课",
+       "C": "在邀请客人",
+       "D": "没时间"
+      },
+      "transcript_zh": "女：黄教授，我们想邀请您七月份也去我们那儿讲一次课，您看您有时间吗？ 男：七月十二号以后应该都可以。 女：那我们暂时定七月十五号可以吗？正好是星期五。 男：好的，如果有什么变化我会提前和你联系的。 问：关于男的，可以知道什么？",
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        126
+       ]
+      }
+     },
+     {
+      "n": 16,
+      "zh": "关于女的，可以知道什么？",
+      "options": {
+       "A": "要去约会",
+       "B": "正在减肥",
+       "C": "不打算买裙子",
+       "D": "想换小一号的"
+      },
+      "transcript_zh": "男：您穿这条裙子有点儿大。 女：那太好了，我就买这条。 男：还是给您换小一号的吧。 女：不用，我穿上它，朋友见了肯定会说我减肥成功了。 问：关于女的，可以知道什么？",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        126
+       ]
+      }
+     },
+     {
+      "n": 17,
+      "zh": "男的的同学说话有什么特点？",
+      "options": {
+       "A": "声音非常小",
+       "B": "有上海味儿",
+       "C": "别人听不懂",
+       "D": "声音很好听"
+      },
+      "transcript_zh": "女：上海话和普通话的区别很大，上次去上海，我竟然一句也听不懂。 男：别说你听不懂，就连很多中国人听起来也很困难。 女：你的这个同学是上海人吧？ 男：对，他虽然讲普通话，可是仔细听，还是有上海味儿。 问：男的的同学说话有什么特点？",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        126
+       ]
+      }
+     },
+     {
+      "n": 18,
+      "zh": "男的为什么要写这本书？",
+      "options": {
+       "A": "能够赚钱",
+       "B": "能够出名",
+       "C": "送给爱人",
+       "D": "记下经历"
+      },
+      "transcript_zh": "女：您为什么会写这本书呢？ 男：这些年我经历了许多难忘的事情，我想把它们都写下来。 女：您想通过这本书告诉读者什么呢？ 男：我主要想告诉大家，友谊是我们生命中不可缺少的。 问：男的为什么要写这本书？",
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        126
+       ]
+      }
+     },
+     {
+      "n": 19,
+      "zh": "许多人都有过怎样的经历？",
+      "options": {
+       "A": "后悔",
+       "B": "紧张",
+       "C": "高兴",
+       "D": "难过"
+      },
+      "transcript_zh": "第19到20题是根据下面一段话：许多人都有过后悔的经历，其实，只要我们按照自己的想法去做了，就没什么后悔的，因为我们不可能把所有的事情都做对。另外，让我们走向成功的，往往是我们从过去做错的事情中得到的经验。 19. 许多人都有过怎样的经历？",
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        126
+       ]
+      }
+     },
+     {
+      "n": 20,
+      "zh": "什么能帮助我们走向成功？",
+      "options": {
+       "A": "理想",
+       "B": "努力工作",
+       "C": "正确的方法",
+       "D": "失败的经验"
+      },
+      "transcript_zh": "第19到20题是根据下面一段话：许多人都有过后悔的经历，其实，只要我们按照自己的想法去做了，就没什么后悔的，因为我们不可能把所有的事情都做对。另外，让我们走向成功的，往往是我们从过去做错的事情中得到的经验。 20. 什么能帮助我们走向成功？",
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        126
+       ]
+      }
+     },
+     {
+      "n": 21,
+      "zh": "第一个人为什么参加比赛？",
+      "options": {
+       "A": "减肥",
+       "B": "支持朋友",
+       "C": "得奖金",
+       "D": "锻炼身体"
+      },
+      "transcript_zh": "第21到22题是根据下面一段话：有三个人参加长跑比赛，他们都很努力，却都没有得第一。这是不是说明三个都失败了？肯定不是，因为他们的目的不同。第一个人是想通过跑步锻炼身体；第二个人以前参加过长跑，这次是想得到一个更好的成绩；第三个人是第一次参加，只要能跑完，他就很高兴。这样看来，三个人都成功了。 21. 第一个人为什么参加比赛？",
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        126
+       ]
+      }
+     },
+     {
+      "n": 22,
+      "zh": "说话人认为这三个人怎么样？",
+      "options": {
+       "A": "都想得第一",
+       "B": "没有努力",
+       "C": "都成功了",
+       "D": "很有耐心"
+      },
+      "transcript_zh": "第21到22题是根据下面一段话：有三个人参加长跑比赛，他们都很努力，却都没有得第一。这是不是说明三个都失败了？肯定不是，因为他们的目的不同。第一个人是想通过跑步锻炼身体；第二个人以前参加过长跑，这次是想得到一个更好的成绩；第三个人是第一次参加，只要能跑完，他就很高兴。这样看来，三个人都成功了。 22. 说话人认为这三个人怎么样？",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        126
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第一部分（23–26）",
+    "type_zh": "阅读 第一部分",
+    "instruction_zh": "第23–26题：选词填空。",
+    "word_bank": [
+     [
+      "A 经历",
+      "B 篇",
+      "C 轻松",
+      "D 坚持",
+      "E 暂时"
+     ]
+    ],
+    "items": [
+     {
+      "n": "例",
+      "zh": "她每天都（　）走路上下班，所以身体一直很不错。",
+      "options": {
+       "A": "经历",
+       "B": "篇",
+       "C": "轻松",
+       "D": "坚持",
+       "E": "暂时"
+      },
+      "answer": "D",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        91
+       ]
+      }
+     },
+     {
+      "n": 23,
+      "zh": "昨天的网球比赛他赢得非常（　）。",
+      "options": {
+       "A": "经历",
+       "B": "篇",
+       "C": "轻松",
+       "D": "坚持",
+       "E": "暂时"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        126
+       ]
+      }
+     },
+     {
+      "n": 24,
+      "zh": "这（　）小说就是他写的，他现在已经写了上百万字了。",
+      "options": {
+       "A": "经历",
+       "B": "篇",
+       "C": "轻松",
+       "D": "坚持",
+       "E": "暂时"
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        126
+       ]
+      }
+     },
+     {
+      "n": 25,
+      "zh": "虽然（　）了很多困难，但这也让他积累了许多经验。",
+      "options": {
+       "A": "经历",
+       "B": "篇",
+       "C": "轻松",
+       "D": "坚持",
+       "E": "暂时"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        126
+       ]
+      }
+     },
+     {
+      "n": 26,
+      "zh": "相信我，困难只是（　）的，只要不放弃，就一定会成功。",
+      "options": {
+       "A": "经历",
+       "B": "篇",
+       "C": "轻松",
+       "D": "坚持",
+       "E": "暂时"
+      },
+      "answer": "E",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        126
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第一部分（27–30）",
+    "type_zh": "阅读 第一部分",
+    "instruction_zh": "第27–30题：选词填空。",
+    "word_bank": [
+     [
+      "A 正确",
+      "B 主意",
+      "C 温度",
+      "D 国际",
+      "E 随便"
+     ]
+    ],
+    "items": [
+     {
+      "n": "例",
+      "zh": "A：今天真冷啊，好像白天最高（　）才2℃。 B：刚才电视里说明天更冷。",
+      "options": {
+       "A": "正确",
+       "B": "主意",
+       "C": "温度",
+       "D": "国际",
+       "E": "随便"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        92
+       ]
+      }
+     },
+     {
+      "n": 27,
+      "zh": "A：这个（　）是谁想出来的呀？ B：好像是三班的一个学生。",
+      "options": {
+       "A": "正确",
+       "B": "主意",
+       "C": "温度",
+       "D": "国际",
+       "E": "随便"
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        126
+       ]
+      }
+     },
+     {
+      "n": 28,
+      "zh": "A：明天晚上的活动很正式，不要穿得太（　）。 B：好，我已经准备好西服了。",
+      "options": {
+       "A": "正确",
+       "B": "主意",
+       "C": "温度",
+       "D": "国际",
+       "E": "随便"
+      },
+      "answer": "E",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        126
+       ]
+      }
+     },
+     {
+      "n": 29,
+      "zh": "A：马经理，这次的（　）会议安排在下午两点，北京饭店7号会议室。 B：好，你准备一下材料，下午带上笔记本电脑和我一起去。",
+      "options": {
+       "A": "正确",
+       "B": "主意",
+       "C": "温度",
+       "D": "国际",
+       "E": "随便"
+      },
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        126
+       ]
+      }
+     },
+     {
+      "n": 30,
+      "zh": "A：这件事我应该先跟您谈一谈，听听您的看法再决定的。 B：没关系，你的决定是（　）的，我支持你。",
+      "options": {
+       "A": "正确",
+       "B": "主意",
+       "C": "温度",
+       "D": "国际",
+       "E": "随便"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        126
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第二部分",
+    "type_zh": "阅读 第二部分",
+    "instruction_zh": "第31–34题：排列顺序。",
+    "items": [
+     {
+      "n": "例",
+      "zh": "",
+      "options": {
+       "A": "可是今天起晚了",
+       "B": "平时我骑自行车上下班",
+       "C": "所以就打车来公司"
+      },
+      "answer": "BAC",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        93
+       ]
+      }
+     },
+     {
+      "n": 31,
+      "zh": "",
+      "options": {
+       "A": "所以今天早上才告诉你",
+       "B": "可是又怕打扰你休息",
+       "C": "我本来想昨天晚上就通知你的"
+      },
+      "answer": "CBA",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        126
+       ]
+      }
+     },
+     {
+      "n": 32,
+      "zh": "",
+      "options": {
+       "A": "但过程比结果更重要",
+       "B": "而且你还年轻，一切都可以重新开始",
+       "C": "尽管这个计划失败了"
+      },
+      "answer": "CAB",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        126
+       ]
+      }
+     },
+     {
+      "n": 33,
+      "zh": "",
+      "options": {
+       "A": "至少我们努力过",
+       "B": "即使失败了也没关系",
+       "C": "机会来了，就该试一试"
+      },
+      "answer": "CBA",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        126
+       ]
+      }
+     },
+     {
+      "n": 34,
+      "zh": "",
+      "options": {
+       "A": "后来他见我做得很好，才慢慢改变了自己的看法",
+       "B": "我爱人当时反对我选择这个工作",
+       "C": "他觉得这个工作太辛苦了"
+      },
+      "answer": "BCA",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        126
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第三部分",
+    "type_zh": "阅读 第三部分",
+    "instruction_zh": "第35–43题：请选出正确答案。",
+    "items": [
+     {
+      "n": "例",
+      "zh": "她很活泼，说话很有趣，总能给我们带来快乐，我们都很喜欢和她在一起。 ★她是个什么样的人？",
+      "options": {
+       "A": "幽默",
+       "B": "马虎",
+       "C": "骄傲",
+       "D": "害羞"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        94
+       ]
+      }
+     },
+     {
+      "n": 35,
+      "zh": "成功是跟年龄没有关系的。只要你不放弃希望，不怕辛苦，能够一直坚持努力学习，提高自己的水平和能力，就一定会成功。 ★什么样的人能获得成功？",
+      "options": {
+       "A": "聪明的",
+       "B": "一直努力的",
+       "C": "放弃希望的",
+       "D": "年龄大的"
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        126
+       ]
+      }
+     },
+     {
+      "n": 36,
+      "zh": "人们往往只羡慕别人成功时获得的鲜花和奖金，却很少去注意别人在取得成功之前流下的汗水。 ★人们很少注意到：",
+      "options": {
+       "A": "别人的努力",
+       "B": "别人的判断",
+       "C": "自己的优点",
+       "D": "自己的缺点"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        126
+       ]
+      }
+     },
+     {
+      "n": 37,
+      "zh": "我们对失败应该有正确的认识。失败其实可以让我们清楚自己还有什么地方需要提高，它可以帮助我们走向最后的成功。 ★这段话中的“它”指的是：",
+      "options": {
+       "A": "仔细",
+       "B": "认真",
+       "C": "失败",
+       "D": "努力"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        126
+       ]
+      }
+     },
+     {
+      "n": 38,
+      "zh": "人们最爱听的，是成功的故事；最爱说的，是成功的经历。对成功的人，很多人只知道羡慕，却不知道他们成功的原因是：别人休息的时候他们还在工作。 ★根据这段话，为什么有些人能成功？",
+      "options": {
+       "A": "经验丰富",
+       "B": "更有耐心",
+       "C": "工作更努力",
+       "D": "更注意休息"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        126
+       ]
+      }
+     },
+     {
+      "n": 39,
+      "zh": "每个人都想成功，但是成功并不是一件简单的事情。成功者在做事情以前会做好计划，遇到困难，他们从来不放弃，而是想办法去解决。即使遇到暂时的失败，他们也会勇敢地接受并总结经验。 ★成功的人：",
+      "options": {
+       "A": "想法简单",
+       "B": "害怕困难",
+       "C": "没有计划",
+       "D": "不怕失败"
+      },
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        126
+       ]
+      }
+     },
+     {
+      "n": 40,
+      "zh": "“冬天到了，春天还会远吗？”这句话很浪漫，也是一种积极、勇敢的精神。它告诉我们，任何失败都只是暂时的。只要我们不放弃希望，相信自己的能力，那么困难将被解决，烦恼将会离去，我们将迎来一个新的季节。 ★根据这段话可以知道，失败：",
+      "options": {
+       "A": "很浪漫",
+       "B": "很危险",
+       "C": "离我们很近",
+       "D": "只是暂时的"
+      },
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        126
+       ]
+      }
+     },
+     {
+      "n": 41,
+      "zh": "“冬天到了，春天还会远吗？”这句话很浪漫，也是一种积极、勇敢的精神。它告诉我们，任何失败都只是暂时的。只要我们不放弃希望，相信自己的能力，那么困难将被解决，烦恼将会离去，我们将迎来一个新的季节。 ★这段话告诉我们要：",
+      "options": {
+       "A": "相信自己",
+       "B": "相信别人",
+       "C": "适应环境变化",
+       "D": "学会安排时间"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        126
+       ]
+      }
+     },
+     {
+      "n": 42,
+      "zh": "有的人害怕失败，无法接受失败。他们认为，做每件事都必须成功，只有成功才是他们想要的结果。这不仅是因为他们不够勇敢，还因为他们对自己要求太高。不要因为失败而不再努力，通过失败你能获得别人没有的经验。 ★有的人害怕失败，是因为他们：",
+      "options": {
+       "A": "有责任",
+       "B": "没经验",
+       "C": "容易紧张",
+       "D": "不够勇敢"
+      },
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        126
+       ]
+      }
+     },
+     {
+      "n": 43,
+      "zh": "有的人害怕失败，无法接受失败。他们认为，做每件事都必须成功，只有成功才是他们想要的结果。这不仅是因为他们不够勇敢，还因为他们对自己要求太高。不要因为失败而不再努力，通过失败你能获得别人没有的经验。 ★这段话想告诉我们：",
+      "options": {
+       "A": "不能失败",
+       "B": "结果更重要",
+       "C": "不要害怕失败",
+       "D": "要对自己高要求"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        126
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "三、书写 第一部分",
+    "type_zh": "书写 第一部分",
+    "instruction_zh": "第44–48题：完成句子。",
+    "items": [
+     {
+      "n": "例",
+      "zh": "那座桥　800年的　历史　有　了",
+      "answer": "那座桥有800年的历史了。",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        96
+       ]
+      }
+     },
+     {
+      "n": 44,
+      "zh": "这场　赢　比赛　非常漂亮　得",
+      "answer": "这场比赛赢得非常漂亮。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        126
+       ]
+      }
+     },
+     {
+      "n": 45,
+      "zh": "弟弟紧张　一身汗　得　出了",
+      "answer": "弟弟紧张得出了一身汗。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        126
+       ]
+      }
+     },
+     {
+      "n": 46,
+      "zh": "先　调查　难道　一下　你没有",
+      "answer": "难道你没有先调查一下？／你难道没有先调查一下？",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        126
+       ]
+      }
+     },
+     {
+      "n": 47,
+      "zh": "效果　他的办法　很好　取得了　的",
+      "answer": "他的办法取得了很好的效果。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        126
+       ]
+      }
+     },
+     {
+      "n": 48,
+      "zh": "生活的压力　并没有　放弃　理想　使他",
+      "answer": "生活的压力并没有使他放弃理想。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        126
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "三、书写 第二部分",
+    "type_zh": "书写 第二部分",
+    "instruction_zh": "第49–50题：看图，用词造句。",
+    "items": [
+     {
+      "n": "例",
+      "zh": "乒乓球",
+      "picture_desc_en": "A young woman holding a table-tennis paddle, about to serve a ball.",
+      "answer": "她很喜欢打乒乓球。",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        97
+       ]
+      }
+     },
+     {
+      "n": 49,
+      "zh": "汗",
+      "picture_desc_en": "A man with a towel around his neck, eyes closed, wiping sweat from his face with a towel.",
+      "answer": "我每天都会跑步锻炼身体，虽然会出很多汗，但是觉得很舒服。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        126
+       ]
+      }
+     },
+     {
+      "n": 50,
+      "zh": "主意",
+      "picture_desc_en": "A smiling woman sitting at an office desk with a computer, raising her index finger as if she has an idea.",
+      "answer": "这真是个不错的主意，值得一试。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        126
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "answers_ref": {
+   "book": "teacher",
+   "pages": [
+    124,
+    125,
+    126
+   ]
+  }
+ },
+ "unclear": [
+  "Аудио файлын нэр мэдэгдэхгүй тул audio талбар орхисон. Сурах бичгийн CD тэмдэг: 课文1–5 = 09-1…09-5; дасгалын номын 听力 第一/二/三部分 = 09-1, 09-2, 09-3.",
+  "拼音课文-ын гарчгийн пиньинь (Wáng Jìng hé Sūn Yuè liáo Sūn Yuè jiǎn féi de shìqing / Lǐ Jìn hé Zhāng Yuǎn liáo Zhāng Yuǎn de chénggōng jīnglì / Xiǎo Lín hé Xiǎo Lǐ tán Wáng Hóng de chénggōng jīnglì) болон ярилцагчийн нэрийн пиньинь (Wáng Jìng, Sūn Yuè, Lǐ Jìn, Zhāng Yuǎn, Xiǎo Lín, Xiǎo Lǐ) схемд талбаргүй тул lines.pinyin-д зөвхөн яриаг оруулсан.",
+  "课文4 ба 课文5 — гарчиггүй 短文 — мөр (lines)-ийг өгүүлбэрээр хуваасан (номд нэг догол мөр).",
+  "课文5-ын «就算只有1%的希望…100%的努力» — 拼音课文-д «bǎi fēn zhī yī … bǎi fēn zhī bǎi» гэж үсгээр; номд байгаагаар.",
+  "课文2 «不管» пиньинь 拼音课文-д «Bùguǎn» гэж хэвлэгдсэн — номд байгаагаар.",
+  "生词 30 暂时 — үгийн ай «n.», англи «temporary, for the time being» гэж хэвлэгдсэн — номд байгаагаар.",
+  "生词 26 取 «qǔ v. to gain, to seek» — бичвэрт «取得 qǔdé» хэлбэрээр гарна; 取得 тусдаа 生词 биш.",
+  "课文3-ын «亲戚 qīnqi», 课文2-ын «鲜花», «汗水» зэрэг нь 生词-д жагсаагдаагүй.",
+  "运用 小组活动 b. «成功前留下的汗水» (留) — 课文2 «成功前流下的汗水» (流 — liúxia) — номын зөрүү, номд байгаагаар.",
+  "注释1 难道 — сурах бичиг «难道汉语真的这么难吗？» гэсэн жишээтэй; багшийн ном (PDF х.82) «难道汉字真的这么难吗？»/«难道汉字不难吗？» (汉字) гэж өөр жишээтэй.",
+  "注释4 结果 жишээ (3) «我妻子想减肥，所以她每天早上都去骑马。结果马竟然在一个月之内瘦了二十斤。» — номд ийм (морь турсан) гэж хэвлэгдсэн.",
+  "注释2 比一比 做一做 «选词填空 Tick or cross»: (1) 通过✓ 经过✓, (2) 通过✓ 经过× — номд жишээ болгон хэвлэгдсэн; (3)–(5)-ын хариулт сурах бичиг, багшийн номд хэвлэгдээгүй (багшийн ном: «按照教材中的辨析步骤进行»).",
+  "Сурах бичгийн 练一练 (5 дүрэм × 3), 回答问题 (课文1–3 — 6, 课文4–5 — 4), 练习1 复述 ба 练习2 选词填空 (10) — хариулт сурах бичиг, багшийн номд хэвлэгдээгүй тул answer талбаргүй. Зөвхөн 扩展 做一做-ийн хариулт багшийн номд (PDF х.89) бий.",
+  "练习2 (7) «他还得去________行李箱» өгүүлбэр дасгалын номын 听力 8-ын бичвэрт «他还得去取行李箱» гэж бүтнээр гардаг — гэхдээ энэ нь сурах бичгийн дасгалын албан хариулт биш тул answer оруулаагүй.",
+  "Сурах бичгийн 根据课文内容回答问题 хоёр хэсэг дугааргүй (注释3-ын дараа, 注释5-ын дараа) — exercises-д «课文1–3 回答问题», «课文4–5 回答问题» гэж нэрлэсэн; 比一比-ийн 做一做 ба 扩展-ийн 做一做-г мөн exercises-д оруулсан. 扩展 同字词 (果：如果、结果、效果)-ийг textbook.characters-д оруулсан.",
+  "热身2 «什么是成功？» — хүснэгт (□ сонгох нүдтэй), items-д мөр мөрөөр «|» тусгаарлагчтай оруулсан.",
+  "文化 «成功的秘诀»-д «千里之行，始于足下»俗语-ийн пиньинь хэвлэгдээгүй тул saying талбар орхисон; culture-д бүтнээр.",
+  "Багшийн ном 生词 提问启发 (PDF х.81): «刚来中国时遇到的问题时暂时的» (是 биш 时) — номд байгаагаар.",
+  "Багшийн ном 语言点(3) 可是 运用 III: даалгавар «我觉得衣服流行不流行很重要，________» — 参考答案 «可是她觉得价格更重要» (我 ↔ 她) — номд байгаагаар.",
+  "Багшийн ном 语言点(4) 结果 运用 — «利用第7课热身图片F» — зураг (турж буй эмэгтэйн өмнө/дараах хоёр зураг) хэвлэгдсэн; steps-д «（图片）» гэж тэмдэглэсэн.",
+  "Багшийн ном 学生能够 «掌握本课30个四级大纲词汇» — 生词 31 (31 面对 * тэмдэгтэй, 大纲-аас гадуур).",
+  "Багшийн номын 课文 асуултууд (text_questions)-ын хариулт тус бүрчлэн хэвлэгдээгүй («教师给出答案»); оронд нь 课文扩展练习-ын复述 догол мөрүүд (teacher.steps «4 课文») хэвлэгдсэн.",
+  "Дасгалын ном 听力 第二/三部分 — номд зөвхөн сонголтууд хэвлэгдсэн; item.zh-д багшийн номын хавсралтын «问：» асуултыг (19–22-т дугаартай асуултыг) оруулсан, transcript_zh-д бүтнээр. 听力 第一部分-д жишээ 2 (✓ ба ×) байгаа тул «例1», «例2».",
+  "Дасгалын ном 阅读 第二部分 (31–34 排列顺序)-ийн item.zh хоосон, хэсгүүд options (A/B/C)-д. 阅读 第三部分 40–41, 42–43 — нэг бичвэрт хоёр асуулт; бичвэрийг item бүрийн zh-д давтан оруулсан.",
+  "Дасгалын ном 书写 44–50-ын хариулт багшийн номын хавсралтад «参考答案» гэж хэвлэгдсэн; 49–50 (看图，用词造句) нээлттэй даалгавар тул хариулт нь зөвхөн жишээ; 46-д хоёр хувилбар.",
+  "Дасгалын номд 复习 хэсэг байхгүй (HSK4-ийн дасгалын ном: 听力 3 хэсэг, 阅读 3 хэсэг, 书写 2 хэсэг, нийт 50 асуулт)."
+ ],
+ "verified_pages": [
+  79,
+  80,
+  81,
+  82,
+  83,
+  84,
+  85,
+  86,
+  87,
+  88,
+  89,
+  90,
+  91,
+  92,
+  93,
+  94,
+  95,
+  96,
+  97,
+  111,
+  112,
+  113,
+  114,
+  115,
+  116,
+  117,
+  118,
+  119,
+  120,
+  121,
+  122,
+  123,
+  124,
+  125,
+  126
+ ],
+ "schema_version": 1
+}

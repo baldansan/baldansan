@@ -1,0 +1,2305 @@
+{
+ "level": "hsk4",
+ "lesson": 15,
+ "book": "HSK4B",
+ "title_zh": "教育孩子的艺术",
+ "title_pinyin": "Jiàoyù háizi de yìshù",
+ "title_en": "The art of educating children",
+ "textbook": {
+  "ref": {
+   "book": "textbook",
+   "pages": [
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84
+   ]
+  },
+  "warmup": [
+   {
+    "instruction_zh": "给下面的词语选择对应的图片，并用这个词语根据图片说一个句子。",
+    "instruction_en": "Match the pictures with the words and describe the pictures with sentences using the words.",
+    "items": [
+     "①赶时间 gǎn shíjiān",
+     "②害羞 hàixiū",
+     "③打针 dǎ zhēn",
+     "④闹钟 nàozhōng",
+     "⑤敲门 qiāo mén",
+     "⑥弹钢琴 tán gāngqín"
+    ],
+    "pictures_desc_en": [
+     "A: a hand reaching for a silver twin-bell alarm clock",
+     "B: a little girl in a striped sweater covering her face with both hands",
+     "C: a man in a suit walking quickly in an office corridor while looking at his wristwatch",
+     "D: a young woman in a white dress playing a black piano",
+     "E: a doctor in a white coat giving an injection in the arm of a young boy",
+     "F: a young man knocking on a red door"
+    ]
+   },
+   {
+    "instruction_zh": "说说教室里孩子们在做什么。如果你是他们的老师，你会怎么办？",
+    "instruction_en": "What are the children doing in the classroom? If you were their teacher, what would you do?",
+    "pictures_desc_en": [
+     "Cartoon classroom: children throwing paper airplanes, laughing and playing around the desks, while a female teacher stands at the side covering her face with a green book."
+    ]
+   }
+  ],
+  "texts": [
+   {
+    "n": 1,
+    "title_zh": "李老师建议王静让孩子养成好习惯",
+    "kind": "dialogue",
+    "lines": [
+     {
+      "speaker": "王静",
+      "zh": "那个一边弹钢琴一边唱歌的男孩子是谁？表演得真棒！",
+      "pinyin": "Nàge yìbiān tán gāngqín yìbiān chàng gē de nán háizi shì shéi? Biǎoyǎn de zhēn bàng!"
+     },
+     {
+      "speaker": "李老师",
+      "zh": "是我孙子。去年寒假前的新年晚会他也表演过一次。",
+      "pinyin": "Shì wǒ sūnzi. Qùnián hánjià qián de xīnnián wǎnhuì tā yě biǎoyǎnguo yí cì."
+     },
+     {
+      "speaker": "王静",
+      "zh": "我想起来了，这孩子又聪明又可爱，你们教育得真好！",
+      "pinyin": "Wǒ xiǎng qilai le, zhè háizi yòu cōngming yòu kě’ài, nǐmen jiàoyù de zhēn hǎo!"
+     },
+     {
+      "speaker": "李老师",
+      "zh": "是他父母教育得好。父母是孩子最重要的老师。他父母不仅教他知识，而且还花了很长时间帮助他养成了非常好的习惯，现在他每天都自己练习弹钢琴。",
+      "pinyin": "Shì tā fùmǔ jiàoyù de hǎo. Fùmǔ shì háizi zuì zhòngyào de lǎoshī, tā fùmǔ bùjǐn jiāo tā zhīshi, érqiě hái huāle hěn cháng shíjiān bāngzhù tā yǎngchéngle fēicháng hǎo de xíguàn, xiànzài tā měi tiān dōu zìjǐ liànxí tán gāngqín."
+     },
+     {
+      "speaker": "王静",
+      "zh": "让孩子养成一个好习惯实在太重要了，看来我得向他父母好好儿学习。",
+      "pinyin": "Ràng háizi yǎngchéng yí ge hǎo xíguàn shízài tài zhòngyào le, kànlái wǒ děi xiàng tā fùmǔ hǎohāor xuéxí."
+     },
+     {
+      "speaker": "李老师",
+      "zh": "对。如果希望有一个优秀的孩子，你就要先成为一位优秀的父亲或者母亲。",
+      "pinyin": "Duì. Rúguǒ xīwàng yǒu yí ge yōuxiù de háizi, nǐ jiù yào xiān chéngwéi yí wèi yōuxiù de fùqīn huòzhě mǔqīn."
+     }
+    ],
+    "new_words": [
+     {
+      "n": 1,
+      "zh": "弹钢琴",
+      "pinyin": "tán gāngqín",
+      "en": "to play the piano",
+      "text": 1
+     },
+     {
+      "n": 2,
+      "zh": "棒",
+      "pinyin": "bàng",
+      "pos": "adj.",
+      "en": "excellent, amazing",
+      "text": 1
+     },
+     {
+      "n": 3,
+      "zh": "孙子",
+      "pinyin": "sūnzi",
+      "pos": "n.",
+      "en": "grandson",
+      "text": 1
+     },
+     {
+      "n": 4,
+      "zh": "寒假",
+      "pinyin": "hánjià",
+      "pos": "n.",
+      "en": "winter vacation",
+      "text": 1
+     },
+     {
+      "n": 5,
+      "zh": "父亲",
+      "pinyin": "fùqīn",
+      "pos": "n.",
+      "en": "father",
+      "text": 1
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "title_zh": "王静建议孙月教育孩子学会安排时间",
+    "kind": "dialogue",
+    "lines": [
+     {
+      "speaker": "王静",
+      "zh": "看你脸色不太好，是不是昨晚没休息好？",
+      "pinyin": "Kàn nǐ liǎnsè bú tài hǎo, shì bú shì zuówǎn méi xiūxi hǎo?"
+     },
+     {
+      "speaker": "孙月",
+      "zh": "别提了。我女儿昨晚做作业又做到11点。",
+      "pinyin": "Biétí le. Wǒ nǚ’ér zuówǎn zuò zuòyè yòu zuòdào shíyī diǎn."
+     },
+     {
+      "speaker": "王静",
+      "zh": "睡觉太晚对孩子的身体没有好处。最近孩子作业是不是太多了？",
+      "pinyin": "Shuì jiào tài wǎn duì háizi de shēntǐ méiyǒu hǎochù. Zuìjìn háizi zuòyè shì bu shì tài duō le?"
+     },
+     {
+      "speaker": "孙月",
+      "zh": "主要是她做事情比较慢，比如早上闹钟响了她不醒，我赶时间送她上学，她又急着上厕所。每天因为这些小事批评她，弄得我俩心情都不好。",
+      "pinyin": "Zhǔyào shì tā zuò shìqing bǐjiào màn, bǐrú zǎoshang nàozhōng xiǎngle tā bù xǐng, wǒ gǎn shíjiān sòng tā shàng xué, tā yòu jízhe shàng cèsuǒ. Měi tiān yīnwèi zhèxiē xiǎo shì pīpíng tā, nòng de wǒ liǎ xīnqíng dōu bù hǎo."
+     },
+     {
+      "speaker": "王静",
+      "zh": "孩子做事慢，往往是因为他们不会安排自己的时间。你应该让孩子学会管理时间。",
+      "pinyin": "Háizi zuò shì màn, wǎngwǎng shì yīnwèi tāmen bú huì ānpái zìjǐ de shíjiān. Nǐ yīnggāi ràng háizi xuéhuì guǎnlǐ shíjiān."
+     },
+     {
+      "speaker": "孙月",
+      "zh": "看来还是我的教育方法有问题。平时看她做事情慢，总想替她做，以后得让她学会安排时间，自己的事情自己做。",
+      "pinyin": "Kànlái háishi wǒ de jiàoyù fāngfǎ yǒu wèntí. Píngshí kàn tā zuò shìqing màn, zǒng xiǎng tì tā zuò, yǐhòu děi ràng tā xuéhuì ānpái shíjiān, zìjǐ de shìqing zìjǐ zuò."
+     }
+    ],
+    "new_words": [
+     {
+      "n": 6,
+      "zh": "闹钟",
+      "pinyin": "nàozhōng",
+      "pos": "n.",
+      "en": "alarm clock",
+      "star": true,
+      "text": 2
+     },
+     {
+      "n": 7,
+      "zh": "响",
+      "pinyin": "xiǎng",
+      "pos": "v.",
+      "en": "to sound, to ring",
+      "text": 2
+     },
+     {
+      "n": 8,
+      "zh": "醒",
+      "pinyin": "xǐng",
+      "pos": "v.",
+      "en": "to wake up, to be awake",
+      "text": 2
+     },
+     {
+      "n": 9,
+      "zh": "赶",
+      "pinyin": "gǎn",
+      "pos": "v.",
+      "en": "to rush for, to hurry",
+      "text": 2
+     },
+     {
+      "n": 10,
+      "zh": "厕所",
+      "pinyin": "cèsuǒ",
+      "pos": "n.",
+      "en": "lavatory, toilet",
+      "text": 2
+     },
+     {
+      "n": 11,
+      "zh": "批评",
+      "pinyin": "pīpíng",
+      "pos": "v.",
+      "en": "to criticize",
+      "text": 2
+     },
+     {
+      "n": 12,
+      "zh": "弄",
+      "pinyin": "nòng",
+      "pos": "v.",
+      "en": "to do, to make",
+      "text": 2
+     },
+     {
+      "n": 13,
+      "zh": "管理",
+      "pinyin": "guǎnlǐ",
+      "pos": "v.",
+      "en": "to manage, to administer",
+      "text": 2
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "title_zh": "王静和孙月讨论表扬孩子的方法",
+    "kind": "dialogue",
+    "lines": [
+     {
+      "speaker": "王静",
+      "zh": "明天又要带我儿子去医院打针，想想我就头疼。他就怕打针，每次打针都哭得特别厉害。",
+      "pinyin": "Míngtiān yòu yào dài wǒ érzi qù yīyuàn dǎ zhēn, xiǎngxiang wǒ jiù tóu téng. Tā jiù pà dǎ zhēn, měi cì dǎ zhēn dōu kū de tèbié lìhai."
+     },
+     {
+      "speaker": "孙月",
+      "zh": "记得我女儿小时候，带她去医院打针，刚开始，她害怕得要哭。我就小声地和护士说我女儿很勇敢，一点儿也不怕打针，女儿听了以后马上就不哭了。",
+      "pinyin": "Jìde wǒ nǚ’ér xiǎoshíhou, dài tā qù yīyuàn dǎ zhēn, gāng kāishǐ, tā hàipà de yào kū. Wǒ jiù xiǎoshēng de hé hùshi shuō wǒ nǚ’ér hěn yǒnggǎn, yìdiǎnr yě bú pà dǎ zhēn, nǚ’ér tīngle yǐhòu mǎshàng jiù bù kū le."
+     },
+     {
+      "speaker": "王静",
+      "zh": "原来鼓励和表扬对小孩儿挺有用的，下次我也试试。",
+      "pinyin": "Yuánlái gǔlì hé biǎoyáng duì xiǎoháir tǐng yǒuyòng de, xià cì wǒ yě shìshi."
+     },
+     {
+      "speaker": "孙月",
+      "zh": "不过表扬也是一门艺术，表扬千万不要太多，过多的表扬可能会给孩子带来压力。不仅起不到鼓励的作用，还可能让孩子怀疑自己的能力，变得没有信心。",
+      "pinyin": "Búguò biǎoyáng yě shì yì mén yìshù, biǎoyáng qiānwàn búyào tài duō, guò duō de biǎoyáng kěnéng huì gěi háizi dàilái yālì. Bùjǐn qǐ bu dào gǔlì de zuòyòng, hái kěnéng ràng háizi huáiyí zìjǐ de nénglì, biànde méiyǒu xìnxīn."
+     },
+     {
+      "speaker": "王静",
+      "zh": "那怎么表扬孩子才会更有效果呢？",
+      "pinyin": "Nà zěnme biǎoyáng háizi cái huì gèng yǒu xiàoguǒ ne?"
+     },
+     {
+      "speaker": "孙月",
+      "zh": "我认为表扬要及时，而且表扬不仅仅要看结果，更要看过程，这样才能鼓励他的积极性，让他变得勇敢，不怕困难。",
+      "pinyin": "Wǒ rènwéi biǎoyáng yào jíshí, érqiě biǎoyáng bù jǐnjǐn yào kàn jiéguǒ, gèng yào kàn guòchéng, zhèyàng cái néng gǔlì tā de jījíxìng, ràng tā biànde yǒnggǎn,bú pà kùnnan."
+     }
+    ],
+    "new_words": [
+     {
+      "n": 14,
+      "zh": "打针",
+      "pinyin": "dǎ zhēn",
+      "pos": "v.",
+      "en": "to give or have an injection",
+      "text": 3
+     },
+     {
+      "n": 15,
+      "zh": "护士",
+      "pinyin": "hùshi",
+      "pos": "n.",
+      "en": "nurse",
+      "text": 3
+     },
+     {
+      "n": 16,
+      "zh": "表扬",
+      "pinyin": "biǎoyáng",
+      "pos": "v.",
+      "en": "to praise, to commend",
+      "text": 3
+     },
+     {
+      "n": 17,
+      "zh": "千万",
+      "pinyin": "qiānwàn",
+      "pos": "adv.",
+      "en": "must, to be sure to",
+      "text": 3
+     },
+     {
+      "n": 18,
+      "zh": "怀疑",
+      "pinyin": "huáiyí",
+      "pos": "v.",
+      "en": "to suspect, to doubt",
+      "text": 3
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "kind": "narrative",
+    "lines": [
+     {
+      "zh": "有的孩子在得不到自己想要的东西的时候，会通过哭、扔东西或者故意敲打来引起父母的注意。",
+      "pinyin": "Yǒude háizi zài dé bu dào zìjǐ xiǎng yào de dōngxi de shíhou, huì tōngguò kū、rēng dōngxi huòzhě gùyì qiāodǎ lái yǐnqǐ fùmǔ de zhùyì."
+     },
+     {
+      "zh": "在这种情况下，建议父母先不要生气，应该停下手中的事情，陪孩子整理整理东西，和他们聊聊天儿，弄清楚他们的问题。",
+      "pinyin": "Zài zhè zhǒng qíngkuàng xià, jiànyì fùmǔ xiān búyào shēng qì, yīnggāi tíngxià shǒu zhōng de shìqing, péi háizi zhěnglǐ zhěnglǐ dōngxi, hé tāmen liáoliáo tiānr, nòng qīngchu tāmen de wèntí."
+     },
+     {
+      "zh": "父母的关心，可以让孩子心情愉快起来。",
+      "pinyin": "Fùmǔ de guānxīn, kěyǐ ràng háizi xīnqíng yúkuài qilai."
+     },
+     {
+      "zh": "教育孩子应该选择合适的教育方法，最好不要为了解决问题而骗孩子，这是因为儿童缺少判断能力，看到父母骗人，他们也会学着说假话。",
+      "pinyin": "Jiàoyù háizi yīnggāi xuǎnzé héshì de jiàoyù fāngfǎ, zuì hǎo búyào wèile jiějué wèntí ér piàn háizi, zhè shì yīnwèi értóng quēshǎo pànduàn nénglì, kàndào fùmǔ piàn rén, tāmen yě huì xuézhe shuō jiǎhuà."
+     }
+    ],
+    "new_words": [
+     {
+      "n": 19,
+      "zh": "故意",
+      "pinyin": "gùyì",
+      "pos": "adv.",
+      "en": "intentionally, on purpose",
+      "text": 4
+     },
+     {
+      "n": 20,
+      "zh": "敲",
+      "pinyin": "qiāo",
+      "pos": "v.",
+      "en": "to knock, to beat, to strike",
+      "text": 4
+     },
+     {
+      "n": 21,
+      "zh": "整理",
+      "pinyin": "zhěnglǐ",
+      "pos": "v.",
+      "en": "to tidy up, to arrange",
+      "text": 4
+     },
+     {
+      "n": 22,
+      "zh": "合适",
+      "pinyin": "héshì",
+      "pos": "adj.",
+      "en": "fit, suitable",
+      "text": 4
+     },
+     {
+      "n": 23,
+      "zh": "骗",
+      "pinyin": "piàn",
+      "pos": "v.",
+      "en": "to cheat, to deceive",
+      "text": 4
+     },
+     {
+      "n": 24,
+      "zh": "儿童",
+      "pinyin": "értóng",
+      "pos": "n.",
+      "en": "children",
+      "text": 4
+     },
+     {
+      "n": 25,
+      "zh": "假",
+      "pinyin": "jiǎ",
+      "pos": "adj.",
+      "en": "false, fake",
+      "text": 4
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "kind": "narrative",
+    "lines": [
+     {
+      "zh": "七岁左右的儿童普遍好动，坐不住，所以老师在教这个年龄段的孩子时，一定要想办法引起他们的兴趣。",
+      "pinyin": "Qī suì zuǒyòu de értóng pǔbiàn hào dòng, zuò bu zhù, suǒyǐ lǎoshī zài jiāo zhège niánlíng duàn de háizi shí, yídìng yào xiǎng bànfǎ yǐnqǐ tāmen de xìngqù."
+     },
+     {
+      "zh": "只有让他们觉得你教的内容有趣，他们才会愿意努力学习。",
+      "pinyin": "Zhǐyǒu ràng tāmen juéde nǐ jiāo de nèiróng yǒuqù, tāmen cái huì yuànyì nǔlì xuéxí."
+     },
+     {
+      "zh": "当孩子不明白时，应该多鼓励他，不要用“懒”“笨”“粗心”这种词批评他，这样对他们的正常发展不好。",
+      "pinyin": "Dāng háizi bù míngbai shí, yīnggāi duō gǔlì tā, búyào yòng “lǎn” “bèn” “cūxīn” zhè zhǒng cí pīpíng tā, zhèyàng duì tāmen de zhèngcháng fāzhǎn bù hǎo."
+     },
+     {
+      "zh": "而且，对不同性格的孩子要使用不同的教育方法。",
+      "pinyin": "Érqiě, duì bù tóng xìnggé de háizi yào shǐyòng bù tóng de jiàoyù fāngfǎ."
+     },
+     {
+      "zh": "如果孩子比较骄傲，应该让他明白还有很多知识需要学习；要是孩子性格有些害羞，就要经常鼓励他说出自己的看法，这样才能让每一个孩子都健康地发展。",
+      "pinyin": "Rúguǒ háizi bǐjiào jiāo’ào, yīnggāi ràng tā míngbai hái yǒu hěn duō zhīshi xūyào xuéxí; yàoshi háizi xìnggé yǒuxiē hàixiū, jiù yào jīngcháng gǔlì tā shuōchū zìjǐ de kànfǎ, zhèyàng cái néng ràng měi yí ge háizi dōu jiànkāng de fāzhǎn."
+     }
+    ],
+    "new_words": [
+     {
+      "n": 26,
+      "zh": "左右",
+      "pinyin": "zuǒyòu",
+      "pos": "n.",
+      "en": "around, or so",
+      "text": 5
+     },
+     {
+      "n": 27,
+      "zh": "懒",
+      "pinyin": "lǎn",
+      "pos": "adj.",
+      "en": "lazy",
+      "text": 5
+     },
+     {
+      "n": 28,
+      "zh": "笨",
+      "pinyin": "bèn",
+      "pos": "adj.",
+      "en": "stupid, foolish",
+      "text": 5
+     },
+     {
+      "n": 29,
+      "zh": "粗心",
+      "pinyin": "cūxīn",
+      "pos": "adj.",
+      "en": "careless, thoughtless",
+      "text": 5
+     },
+     {
+      "n": 30,
+      "zh": "骄傲",
+      "pinyin": "jiāo’ào",
+      "pos": "adj.",
+      "en": "arrogant, conceited",
+      "text": 5
+     },
+     {
+      "n": 31,
+      "zh": "害羞",
+      "pinyin": "hàixiū",
+      "pos": "v.",
+      "en": "to be shy, to be timid",
+      "text": 5
+     }
+    ]
+   }
+  ],
+  "grammar": [
+   {
+    "n": 1,
+    "title_zh": "想起来",
+    "explanation_zh": "“起来”，动词，可用在动词后面做趋向补语或可能补语，表示动作的方向从下到上。例如：（1）（2）\n“起来”如果用在动词“想”后，引申表示从记忆中寻找出以前的人或事。例如：（3）（4）",
+    "explanation_en": "The verb “起来” can be used after another verb as a complement of direction or possibility, indicating an upward movement. For example: (1) (2)\nWhen “起来” is used after the verb “想”, it means to recall somebody or something in the past. For example: (3) (4)",
+    "examples": [
+     {
+      "n": 1,
+      "zh": "你这样躺着看书对眼睛不好，快坐起来！",
+      "note_zh": "趋向补语：从下到上"
+     },
+     {
+      "n": 2,
+      "zh": "需要长时间坐着工作的人，一小时左右一定要站起来活动活动。",
+      "note_zh": "趋向补语：从下到上"
+     },
+     {
+      "n": 3,
+      "zh": "我突然想起来得去银行，所以不能陪你去大使馆了。",
+      "note_zh": "想起来：从记忆中寻找出以前的人或事"
+     },
+     {
+      "n": 4,
+      "zh": "我想起来了，这孩子又聪明又可爱，你们教育得真好！",
+      "note_zh": "想起来：从记忆中寻找出以前的人或事"
+     }
+    ],
+    "practice_instruction_zh": "完成句子",
+    "practice": [
+     {
+      "n": 1,
+      "zh": "当那个男孩走过来邀请她跳舞时，________。",
+      "hint_zh": "起来"
+     },
+     {
+      "n": 2,
+      "zh": "你看见我钱包放哪儿了吗？________。",
+      "hint_zh": "想起来"
+     },
+     {
+      "n": 3,
+      "zh": "每个人都对小时候有美好的回忆，________。",
+      "hint_zh": "想起来"
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "title_zh": "弄",
+    "explanation_zh": "“弄”，动词，表示“做”的意思，可以代表其他一些动词的意义，常用在口语中。例如：",
+    "explanation_en": "The verb “弄” means “to do, to make”. It is often used in spoken Chinese instead of certain other verbs. For example:",
+    "examples": [
+     {
+      "n": 1,
+      "zh": "A：关于那个新闻的材料你准备好了吗？我们开会时要用。 B：都弄（准备）好了，马上给您送过去。"
+     },
+     {
+      "n": 2,
+      "zh": "A：一会儿搬沙发的时候要小心点儿，别弄（碰）坏了。 B：没问题，我会注意看着脚下的。"
+     },
+     {
+      "n": 3,
+      "zh": "每天因为这些小事批评她，弄（批评）得我俩心情都不好。"
+     }
+    ],
+    "practice_instruction_zh": "完成句子",
+    "practice": [
+     {
+      "n": 1,
+      "zh": "老师提醒我们考试时要仔细，________。",
+      "hint_zh": "弄"
+     },
+     {
+      "n": 2,
+      "zh": "住在这里，外面不管什么时候都很热闹，晚上即使关上了窗户声音也很大，________。",
+      "hint_zh": "弄"
+     },
+     {
+      "n": 3,
+      "zh": "________，去西边的公共汽车应该在对面坐。",
+      "hint_zh": "弄"
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "title_zh": "千万",
+    "explanation_zh": "“千万”，副词，表示“务必、一定”的意思，后面常接否定形式。例如：\n【比一比 千万—一定】\n相同点：两者都是副词，表示“提出要求，嘱咐”的意思。★\n不同点：\n1. 表示★这个意思时，虽然两者都既可用于肯定句，又可用于否定句，但是“千万”更多用于否定句，常跟“别、要/不要、不能”连用；“一定”更常用于肯定句，常跟“要/不要、能/不能”连用。\n2. 表示★这个意思时，“千万”的语气比较委婉、和缓，常有“希望别人怎么做”的意思；“一定”的语气更强，常有命令的意味，要求别人坚决做到。\n3. “一定”做副词时，用在第一人称的句子中，表示说话人做某事的决心，常跟“会/不会、能”；“千万”无此用法。\n4. “一定”做副词时，还可表示“必然、确实无疑”的意思。“一定”的否定形式“不一定”表示情况不能肯定，但偏向于否定，有“可以、不必”的意思；“千万”无此用法。\n5. “一定”还可做形容词时，表示“某种程度的、适当的”的意思；“千万”无此用法。\n6. 答复别人时，“一定”可以用在简短形式中，或者单独用；“千万”无此用法。",
+    "explanation_en": "The adverb “千万” means “must” or “to be sure to”, usually followed by a negative structure. For example:\n[Compare 千万—一定]\nSimilarity: Both are adverbs indicating giving a requirement or used in exhortation.\nDifferences:\n1. In case , though both can be used in an affirmative or a negative sentence, “千万” is usually used in a negative sentence together with “别”, “要/不要”, or “不能”, while “一定” is usually used in an affirmative sentence together with “要/不要” or “能/不能”.\n2. In case ★, “千万” conveys a more polite and mild tone, often meaning “hoping someone to do something”, while “一定” expresses a stronger, usually commanding tone, often meaning someone must do something.\n3. The adverb “一定” is usually used together with “会/不会” or “能” in a first-person sentence, meaning the speaker has made up his/her mind to do something, while “千万” cannot be used this way.\n4. The adverb “一定” can also be used to mean “surely, undoubtedly”. “不一定”, its negative structure, indicates the situation is unclear and conveys a negative implication, meaning “not necessarily”, while “千万” cannot be used this way.\n5. The adjective “一定” means “certain” or “proper”, while “千万” cannot be used this way.\n6. “一定” can be used in a shortened structure or by itself to give somebody a reply, while “千万” cannot be used this way.",
+    "examples": [
+     {
+      "n": 1,
+      "zh": "不过表扬也是一门艺术，表扬千万不要太多，过多的表扬可能会给孩子带来压力。"
+     },
+     {
+      "n": 2,
+      "zh": "我要等她生日那天再送给她这个礼物，你现在千万别告诉她。"
+     },
+     {
+      "n": 3,
+      "zh": "每个人都应该记住这句话：“开车千万别喝酒，喝酒千万别开车。”"
+     },
+     {
+      "zh": "通过失败你能获得别人没有的经验，千万/一定不要因为失败就不努力了。",
+      "note_zh": "比一比 相同点"
+     },
+     {
+      "zh": "工作只是生活的一部分，出去工作是为了让生活变得更好，因此，千万不要把工作中的不愉快带到生活中来。",
+      "note_zh": "比一比 不同点1：千万"
+     },
+     {
+      "zh": "找工作的人一定要到这里看一看，这里提供的工作机会是最多的。",
+      "note_zh": "比一比 不同点1：一定"
+     },
+     {
+      "zh": "当机会到来时，千万不要放手，有什么想做的事就马上去做吧。",
+      "note_zh": "比一比 不同点2：有希望、恳切叮咛的语气"
+     },
+     {
+      "zh": "这几个动作你做得还是不太标准，在正式比赛前一定要练好。",
+      "note_zh": "比一比 不同点2：表命令、坚决的语气"
+     },
+     {
+      "zh": "感谢您的支持和鼓励，我一定会继续努力。",
+      "note_zh": "比一比 不同点3"
+     },
+     {
+      "zh": "只要你不放弃希望，不怕辛苦，能够一直坚持努力学习，提高自己的水平和能力，就一定能成功。",
+      "note_zh": "比一比 不同点4：一定"
+     },
+     {
+      "zh": "人们常说：“便宜没好货，好货不便宜。”其实不一定都是这样，有时候质量很好的东西也会很便宜。",
+      "note_zh": "比一比 不同点4：不一定"
+     },
+     {
+      "zh": "如果你有一定的语言基础和经济条件，那么出国学习外语是最好的选择，因为语言环境对学习语言有重要的作用。",
+      "note_zh": "比一比 不同点5"
+     },
+     {
+      "zh": "A：王老师您刚来这儿工作三年就当了教授，这次你得请客啊。 B：一定（请客）。",
+      "note_zh": "比一比 不同点6"
+     }
+    ],
+    "practice_instruction_zh": "完成句子",
+    "practice": [
+     {
+      "n": 1,
+      "zh": "有些事情坚持了才会看到希望，________。",
+      "hint_zh": "千万"
+     },
+     {
+      "n": 2,
+      "zh": "要是事情没有发生过，________。",
+      "hint_zh": "千万"
+     },
+     {
+      "n": 3,
+      "zh": "这个箱子里都是杯子和盘子，________。",
+      "hint_zh": "千万"
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "title_zh": "来",
+    "explanation_zh": "“来”，动词，用在另一个动词前面，表示“要做某事”的意思，常用在口语中。如果不用“来”，句子的意思不变。例如：",
+    "explanation_en": "The verb “来” is used before another verb to mean “to be going to do something”, usually used in spoken Chinese. The meaning of the sentence won’t change if “来” is removed from it. For example:",
+    "examples": [
+     {
+      "n": 1,
+      "zh": "这个沙发这么大，你们两个肯定抬不动，我来帮你们一起抬。"
+     },
+     {
+      "n": 2,
+      "zh": "小王经验比较丰富，并且做事认真，这次就让他来负责吧。"
+     },
+     {
+      "n": 3,
+      "zh": "有的孩子在得不到自己想要的东西的时候，会通过哭、扔东西或者故意敲打来引起父母的注意。"
+     }
+    ],
+    "practice_instruction_zh": "完成句子",
+    "practice": [
+     {
+      "n": 1,
+      "zh": "这两件衣服我都喜欢，不知道买哪件好，________。",
+      "hint_zh": "来"
+     },
+     {
+      "n": 2,
+      "zh": "我们学校经常会举办一些活动，________。",
+      "hint_zh": "来"
+     },
+     {
+      "n": 3,
+      "zh": "记者总是需要到处调查，________。",
+      "hint_zh": "来"
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "title_zh": "左右",
+    "explanation_zh": "“左右”，名词，只用在数量词后面，表示比某一数量稍多或者稍少。例如：",
+    "explanation_en": "The noun “左右” can only be used after numerals, indicating being slightly more or less than a certain quantity. For example:",
+    "examples": [
+     {
+      "n": 1,
+      "zh": "网上买的那本书估计三天左右就能到，你收到了记得给我打个电话说一声。"
+     },
+     {
+      "n": 2,
+      "zh": "这儿不能停车，前方500米左右有个免费停车场，您可以把车停到那儿。"
+     },
+     {
+      "n": 3,
+      "zh": "七岁左右的儿童普遍好动，坐不住，所以老师在教这个年龄段的孩子时，一定要想办法引起他们的兴趣。"
+     }
+    ],
+    "practice_instruction_zh": "完成句子",
+    "practice": [
+     {
+      "n": 1,
+      "zh": "________，我们还是坐地铁吧。",
+      "hint_zh": "左右"
+     },
+     {
+      "n": 2,
+      "zh": "________，有消息我们会马上通知你。",
+      "hint_zh": "左右"
+     },
+     {
+      "n": 3,
+      "zh": "马经理7月底去北京出差，________。",
+      "hint_zh": "左右"
+     }
+    ]
+   }
+  ],
+  "exercises": [
+   {
+    "n": "注释3 比一比 做一做",
+    "type_zh": "选词填空（千万／一定）",
+    "instruction_zh": "选词填空",
+    "instruction_en": "Choose the words to fill in the blanks",
+    "word_bank": [
+     [
+      "千万",
+      "一定"
+     ]
+    ],
+    "items": [
+     {
+      "n": 1,
+      "zh": "不管压力有多么大，________不能放弃，而是要继续坚持下去。",
+      "options": {
+       "千万": "✓",
+       "一定": "✓"
+      },
+      "answer": "千万 ✓　一定 ✓",
+      "answer_ref": {
+       "book": "textbook",
+       "pages": [
+        76
+       ]
+      }
+     },
+     {
+      "n": 2,
+      "zh": "这次你一定要按照要求认真填写，小心一点儿，________别写错了。",
+      "options": {
+       "千万": "✓",
+       "一定": "×"
+      },
+      "answer": "千万 ✓　一定 ×",
+      "answer_ref": {
+       "book": "textbook",
+       "pages": [
+        76
+       ]
+      }
+     },
+     {
+      "n": 3,
+      "zh": "哭并不________是件坏事，哭可以让人从坏心情中走出来，是一种减轻压力的好办法。"
+     },
+     {
+      "n": 4,
+      "zh": "兴趣是最好的老师，如果孩子对一件事情感兴趣，那他________会努力地去学习，效果也会更好。"
+     },
+     {
+      "n": 5,
+      "zh": "事情的原因和结果往往是互相联系的。________的原因会引起一定的结果，有时候一件事情的结果可能又是另一件事情的原因。"
+     }
+    ]
+   },
+   {
+    "n": "课文1–3 回答问题",
+    "type_zh": "回答问题",
+    "instruction_zh": "根据课文内容回答问题",
+    "instruction_en": "Answer the questions based on the texts.",
+    "items": [
+     {
+      "n": 1,
+      "zh": "课文1：王静以前看过李老师孙子的表演吗？你是怎么知道的？"
+     },
+     {
+      "n": 2,
+      "zh": "课文1：怎么理解“父母是孩子最重要的老师”这句话？"
+     },
+     {
+      "n": 3,
+      "zh": "课文2：孙月常因为什么事情心情不好？你小时候父母会因为什么和你生气？"
+     },
+     {
+      "n": 4,
+      "zh": "课文2：怎么做可以帮助孩子学会安排自己的事情。"
+     },
+     {
+      "n": 5,
+      "zh": "课文3：哪种教育方式对孙月的女儿比较有效？"
+     },
+     {
+      "n": 6,
+      "zh": "课文3：用表扬这种方式教育孩子时，应该注意哪些问题？"
+     }
+    ]
+   },
+   {
+    "n": "课文4–5 回答问题",
+    "type_zh": "回答问题",
+    "instruction_zh": "根据课文内容回答问题",
+    "instruction_en": "Answer the questions based on the texts.",
+    "items": [
+     {
+      "n": 1,
+      "zh": "课文4：有的孩子为什么故意乱扔东西？遇到这种情况，父母应该怎么办？"
+     },
+     {
+      "n": 2,
+      "zh": "课文4：为什么有的孩子会说假话骗人？"
+     },
+     {
+      "n": 3,
+      "zh": "课文5：对教儿童的老师来说，怎么做才能让他们安静地学习？"
+     },
+     {
+      "n": 4,
+      "zh": "课文5：如果孩子学习不太好，父母最好用什么方式教育他们？"
+     }
+    ]
+   },
+   {
+    "n": 1,
+    "type_zh": "复述",
+    "instruction_zh": "复述",
+    "instruction_en": "Retell the dialogues.",
+    "items": [
+     {
+      "n": "课文1",
+      "zh": "李老师的语气：我孙子这么优秀都是因为他父母教育得好，……"
+     },
+     {
+      "n": "课文2",
+      "zh": "王静的语气：孙月经常因为一些小事跟女儿生气，比如……"
+     },
+     {
+      "n": "课文3",
+      "zh": "孙月的语气：在女儿小时候，我经常鼓励和表扬她。……"
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "type_zh": "选词填空",
+    "instruction_zh": "选择合适的词语填空",
+    "instruction_en": "Choose the proper words to fill in the blanks.",
+    "word_bank": [
+     [
+      "粗心",
+      "表扬",
+      "整理",
+      "寒假",
+      "批评"
+     ],
+     [
+      "响",
+      "管理",
+      "故意",
+      "赶",
+      "害羞"
+     ]
+    ],
+    "items": [
+     {
+      "n": 1,
+      "zh": "已经放________了，去打球的人肯定不多，星期天我们去学校的体育馆打网球吧。"
+     },
+     {
+      "n": 2,
+      "zh": "这些只有三分之一吧，还有很多东西没来得及________呢，下周再搬。"
+     },
+     {
+      "n": 3,
+      "zh": "如果遇到不得不________别人的时候，态度要友好一点儿，不要让别人听了心里不舒服。"
+     },
+     {
+      "n": 4,
+      "zh": "他的优点是有礼貌、诚实，能吃苦，就是太________了，不适合我们这儿的工作。"
+     },
+     {
+      "n": 5,
+      "zh": "孩子在受到________时，往往会对自己更有信心，对学习的兴趣也会更大，成绩当然会提高。"
+     },
+     {
+      "n": 6,
+      "zh": "A：因为那件事，她特别生我的气。 B：放心吧，你也不是________的，去跟她解释一下，她会理解的。"
+     },
+     {
+      "n": 7,
+      "zh": "A：你妹妹很可爱，但是好像不太爱说话。 B：她只是有点儿________，等跟大家熟悉了就好了。"
+     },
+     {
+      "n": 8,
+      "zh": "A：这次大学同学聚会你联系得怎么样了？能来多少人？ B：大约有一半吧，李进还专门从国外________回来呢。"
+     },
+     {
+      "n": 9,
+      "zh": "A：桌子上那个一直在________的手机是谁的？可能找他有什么急事。 B：那是张经理的，他在会议室开会呢，你快把手机给他拿过去吧。"
+     },
+     {
+      "n": 10,
+      "zh": "A：听说昨天那个招聘会提供了很多工作机会，你找到合适的公司了吗？ B：这个招聘会主要是为经济和________专业的学生举办的，所以没几个合适的。"
+     }
+    ]
+   },
+   {
+    "n": "扩展 做一做",
+    "type_zh": "选词填空（同字词）",
+    "instruction_zh": "选词填空",
+    "instruction_en": "Fill in the blanks with the words given.",
+    "word_bank": [
+     [
+      "护照",
+      "保护",
+      "护士"
+     ]
+    ],
+    "items": [
+     {
+      "n": 1,
+      "zh": "冬季皮肤往往容易变得干燥，女性朋友尤其应该注意________皮肤，要多吃水果，比如香蕉、苹果等等。",
+      "answer": "保护",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        54
+       ]
+      }
+     },
+     {
+      "n": 2,
+      "zh": "爸爸说我小时候特别害怕打针，一看见医生就哭，他怎么都没想到，我长大后竟然会成为一名________。",
+      "answer": "护士",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        54
+       ]
+      }
+     },
+     {
+      "n": 3,
+      "zh": "因为要申请去国外留学，她最近特别忙。一方面她要准备成绩证明、办________，一方面还要跟国外的大学联系。",
+      "answer": "护照",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        54
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "characters": {
+   "knowledge_title_zh": "同字词",
+   "knowledge_en": "Words with the Same Character",
+   "knowledge_zh": "护：护照、保护、护士\n（1）他是我大学时的同学，毕业后我们就再也没联系过，没想到中午我去取护照时竟然遇到他了。\n（2）保护地球环境，并不是离我们很远、很难做到的事情。实际上，我们只需注意一下身边的小事就可以。\n（3）这本小说的作者是医院的一位护士，她通过小说告诉我们发生在医院里的许多有趣的故事，让我们对护士、医生这些职业有了更多的了解。",
+   "characters": [
+    {
+     "zh": "护",
+     "note_zh": "护照、保护、护士"
+    }
+   ]
+  },
+  "application": [
+   {
+    "title_zh": "双人活动",
+    "instruction_zh": "互相了解对方父母对他/她的教育方式，完成调查表。",
+    "instruction_en": "Learn about the parenting methods of your partner’s parents and complete the questionnaire below.",
+    "example_zh": [
+     "表格：| | 问 | 答 |",
+     "| 1 | 你小时候做错了事，你的家人（父母）会批评你吗？为什么？ | |",
+     "| 2 | 你的家人（父母）会在什么情况下表扬你？他们会用哪种方式表扬你？ | |",
+     "| 3 | 如果遇到困难或者烦恼时，你愿意跟你的哪位家人（父母）交流？ | |",
+     "| 4 | 你认为你的家长（父母）教育你的方式都正确吗？为什么？ | |",
+     "| 5 | 如果对于一件事你和家长（父母）的意见不同，你们会怎么办？ | |"
+    ]
+   },
+   {
+    "title_zh": "小组活动",
+    "instruction_zh": "父母在我们从小到大生活的过程中，起了非常重要的作用。对他们的教育方法，有的我们可能同意，有的可能不并喜欢。那么，如果你有了孩子，会怎么做呢？向小组成员介绍一下怎么成为一个优秀的父亲或者母亲。（最少用四个下面的结构）",
+    "instruction_en": "Parents have been playing a vital role in our lives since childhood. We may agree with some of their parenting methods, but do not like the others. So, if you have a kid, what would you do to make yourself a good father or mother? Tell your group members about it. (Use at least four of the following structures.)",
+    "example_zh": [
+     "a. 养成一个好习惯",
+     "b. 学会管理时间",
+     "c. 怀疑自己的能力",
+     "d. 鼓励他们的积极性",
+     "e. 学着说假话",
+     "f. 为了解决问题",
+     "g. 引起他们的兴趣",
+     "h. 健康地发展"
+    ]
+   }
+  ],
+  "culture": {
+   "title_zh": "孟母三迁的故事",
+   "body_zh": "孟子（约公元前372—约公元前289），中国古代著名的思想家、教育家，他和孔子一样，是儒家学派的主要代表人物之一。孟子小时候，他的母亲为了让他有一个好的教育环境，曾经搬过三次家。刚开始，他们住在坟墓的附近，孟子经常喜欢模仿别人办丧事。孟母看到后认为那个地方不适合教育儿子，于是就带着孟子搬到市场附近。可是，孟子又模仿着做生意，孟母觉得那里也不适合教育儿子，于是又搬到一个学校旁边。从那以后，孟子就开始好好儿学习了，最后成为了有才德的圣人。如今的中国，很多父母也是这样，为了让孩子受到更好的教育，想了很多的办法，甚至从一个城市搬到另一个城市，有的还出国陪读。这个故事说明，环境能改变一个人的爱好和习惯，创造一个好的环境对一个人的成长非常重要。",
+   "body_en": "Mencius’ Mother Moved Thrice\nMencius (c.372 B.C.–289 B.C.) was a famous thinker and educator of ancient China. Like Confucius, Mencius is also a major representative of the Ruist (Confucian) School. When Mencius was young, his mother had moved homes three times to find a good educational environment for him. At first, they lived near a graveyard, where Mencius constantly imitated people who were holding funerals. Seeing this, his mother believed that the place wasn’t good for her son’s education, so she moved with Mencius to a place near the market. However, Mencius began to imitate doing business there, which made his mother think it wasn’t a good place for him either, so she moved again, this time near a school. Henceforth, Mencius studied hard and became a sage at last. In China today, many parents, also like Mencius’ mother, try every way to provide better education for their children, some have even moved to a different city, or taken their children overseas accompanying them while they are going to school there. The story of “Mencius’ Mother Moved Thrice” tells us that the environment can change one’s behaviors and habits and having a good environment is very important to one’s development."
+  }
+ },
+ "teacher": {
+  "ref": {
+   "book": "teacher",
+   "pages": [
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54
+   ]
+  },
+  "objectives_zh": [
+   "主题：教育孩子（1）对话：培养好习惯、学会安排时间、表扬的方法（2）短文：孩子的行为、孩子的性格",
+   "语言点：学生能够了解并掌握：（1）“想起来”表示从记忆中寻找出以前的人或事（2）“弄”表示“做”的意思，可以代表其他一些动词的意义（3）“千万”表示要求别人一定怎么做　*辨析“千万”和“一定”的异同（4）“来”表示要做某事（5）“左右”表示比某一数量稍多或者稍少",
+   "词汇：学生能够：（1）掌握本课30个四级大纲词汇的意义和用法　重点词语：赶、批评、管理、表扬、怀疑、故意、整理、合适、骄傲、害羞（2）了解1个非大纲词汇的意义：闹钟（3）理解“护”字的组词规律及在词汇中的意义"
+  ],
+  "steps": [
+   {
+    "title_zh": "一 复习旧课",
+    "body_zh": "1 使用生词卡片，快速认读下列词语：\n出差、省、扔、得意、目的、\n鼓励、拒绝、减少、乘坐、美丽\n2 快速回答问题（与第14课或学生实际生活有关的问题）：\n（1）使用塑料袋会带来什么结果？\n（2）做哪些小事可以保护地球环境？\n（3）怎么才能使我们的家变得更美丽？\n3 检查作业：\n请3个学生简单介绍一下“地球一小时”活动。"
+   },
+   {
+    "title_zh": "二 学习新课 1 热身",
+    "body_zh": "热身1：学生两人一组，合作完成；教师指出图片，请学生根据图片说出对应的词语，教师核对答案；教师领读热身1的生词；最后全体学生齐读，教师正音。\n答案：①C　②B　③E　④A　⑤F　⑥D\n热身2：请学生看1分钟图片，然后说说图片里孩子们在做什么；最后请学生谈谈如果他们是老师，会怎么解决这个问题，并说明原因。"
+   },
+   {
+    "title_zh": "2 生词",
+    "body_zh": "（1）生词快速认读及正音\n课文1（对话）：弹钢琴、棒、孙子、寒假、父亲\n课文2（对话）：*闹钟、响、醒、赶、厕所、批评、弄、管理\n课文3（对话）：打针、护士、表扬、千万、怀疑\n课文4（短文）：故意、敲、整理、合适、骗、儿童、假\n课文5（短文）：左右、懒、笨、粗心、骄傲、害羞\n• 教师用PPT或卡片展示并领读生词（带拼音）；\n• 取消拼音，带领学生再次认读；\n• 逐词（不带拼音）闪现，请学生快速认读生词；\n• 请3～5个学生快速随机认读3～5个生词；\n• 最后全体学生快速齐读所有生词。\n（2）生词讲解方式\n直观法（图片、音频）：图片类：弹钢琴（热身图片D）、闹钟（热身图片A）、赶（时间）（热身图片C）、打针（热身图片E）、护士（护士给病人输液）、敲（热身图片F）、儿童（热身图片B）、害羞（热身图片B）；音频类：响（手机响的声音）\n情景法（肢体动作、语言等）：棒（竖起大拇指）、醒（表演由睡转醒）、整理（整理桌子）、合适（指着自己的衣服，并配合问题：我的衣服大吗？）\n列举法（同类词列举）：孙子（爷爷、爸爸、儿子、孙子）\n替换法（同/近义替换）：父亲（爸爸）、左右（大概、差不多）、厕所（卫生间）\n对比法（反义词对比）：懒（努力）、笨（聪明）、假（真）、粗心（仔细）\n提问启发：寒假、批评、表扬、管理、怀疑、骗、骄傲、故意\n教师提问，引导学生说出句子：\n冬天我们考完试会放假，放什么假？——放寒假。\n如果你做了错事，老师会做什么？——老师会批评我。\n如果做了好事呢？——老师会表扬我。\n在公司经理负责做什么？——负责管理公司。\n他说的话，我猜可能不是真的。——我怀疑他说的话。\n他昨天没来上课，他说他病了，其实他去玩了。——他骗人。\n他觉得自己什么都比别人好。——他很骄傲。\n大家没注意到马克进教室，为了让大家知道自己来了，所以他……——他故意大声说话，引起大家的注意。\n（3）字形辨认练习\n教师用卡片或PPT展示，请学生快速辨认并读出，最后给每个字组词。\n钢—银—针　孙—孩　闹—问\n赶—起　扬—场　怀—坏\n骗—遍　童—章　羞—着\n（4）重点生词扩展及常用搭配\n赶—赶时间—很/比较/非常赶时间—我早上赶时间送孩子上学。\n批评—批评孩子—别批评他了—每天因为一些小事批评孩子。\n管理—管理公司—管理时间—学会管理时间—你应该让孩子学会管理时间。\n表扬—表扬学生—用表扬的方法—表扬这种方法对小孩儿挺有用。\n怀疑—怀疑他—怀疑他的话—怀疑自己的能力—别让孩子怀疑自己的能力。\n故意—故意迟到—他是故意的—他故意告诉我—有的孩子会通过故意敲打来引起父母的注意。\n整理—整理东西/衣服/房间—整理整理东西—父母应该陪孩子整理整理东西。\n合适—很/比较/非常合适—合适的衣服—用合适的方法—教育孩子应该选择合适的教育方法。\n骄傲—很/比较/非常骄傲—骄傲地说话—他总是非常骄傲。\n害羞—很/比较/非常害羞—害羞得脸都红了—要是孩子性格很害羞，就应该多鼓励他。"
+   },
+   {
+    "title_zh": "3 语言点（1）想起来",
+    "body_zh": "① 语言点解析\n“起来”，动词，如果用在动词“想”后，引申表示从记忆中寻找出以前的人或事。（“起来”可用在动词后面做趋向补语或可能补语，表示动作的方向从下到上。这个用法已经学过，本课只用作复习和“以旧导新”，导出新用法。）\n② 语言点导入\n联系课堂情境，进行导入。\n教师对一个学生说：“请你站起来。”然后问其他学生：\n• 教师：老师让他/她做什么？\n学生：老师让他/她站起来。\n• 教师：他/她叫什么名字？我突然忘了。\n学生：他/她的名字老师想不起来了。\n• 教师：让我想想……我想起来了，他/她叫……\n学生：他/她的名字老师想起来了。\n③ 语言点操练\n联系课堂和生活实际，提问操练。\n• 教师：第11课课文的名字是什么？谁能想起来？\n学生：我想起来了，第11课课文的名字叫“读书好，读好书，好读书”。\n• 教师：你们记得昨天谁没来上课吗？\n学生：我想起来了，……没来。\n• 教师：小时候你妈妈给你讲的第一个故事是什么？\n学生：我们想不起来小时候妈妈给我讲的第一个故事了。\n④ 语言点运用\n请学生两人一组，根据提示用“想（不）起来”补全对话，并分角色表演。\nI. A：谁记得我们上课的第一天是几月几号？\nB：________。\nII. A：“概”这个汉字怎么读？\nB：________。\nIII. A：________？\nB：刚才你去体育馆找我的时候，我记得你好像在那儿拿出过钥匙来。\n参考答案：I. 我们都想不起来上课的第一天是几月几号了\nII. 我想起来了，这个汉字读gài\nIII. 我想不起来钥匙放哪儿了，你看见了吗"
+   },
+   {
+    "title_zh": "3 语言点（2）弄",
+    "body_zh": "① 语言点解析\n“弄”，动词，表示“做”的意思，可以代表其他一些动词的意义，常用在口语中。\n② 语言点导入\n利用替换练习，进行导入。\n板书：马克已经把书（　）好了。\n〔请学生用合适的动词填空，学生可能填“买、写、借、放”等，教师把这些动词在黑板上列出，最后标出“弄”替换掉以上动词。〕\n板书：今天你是走路来学校的，你的自行车还没弄好吗？\n〔请学生猜一猜“弄”代表的动词，教师给出答案“修理”或“准备”。〕\n③ 语言点操练\n创设情境或联系生活实际，提问操练。\n• 教师：这个电脑怎么坏了？\n学生：马克刚用完电脑，应该是马克把电脑弄坏了。\n• 教师：这个窗户怎么打也打不开，谁来帮帮我的忙？\n学生：我帮老师把窗户弄开。\n④ 语言点运用\n请学生用合适的动词替换“弄”。\nI. 这支笔他弄坏了。\nII. 妈妈已经把饭弄好了。\nIII. 这个行李箱太大了，你帮我弄过去吧。\n参考答案：I. 用　II. 准备　III. 搬"
+   },
+   {
+    "title_zh": "3 语言点（3）千万",
+    "body_zh": "① 语言点解析\n“千万”，副词，表示“务必、一定”的意思，后面常接否定形式。\n② 语言点导入\n• 利用热身图片A，进行导入。\n教师：如果考试那天你迟到了，你就不能参加考试了，所以……\n学生：千万不能迟到，否则就不能参加考试了。\n• 创设情境，进行导入。\n教师：山太高了，我实在爬不动了。\n学生：你已经爬了一半儿了，很快就到了，千万别放弃。\n③ 语言点操练\n创设情境或联系生活实际，提问操练。\n• 教师：如果她知道你给她买了生日礼物，她肯定特别高兴。\n学生：我要等她生日那天再送给她这个礼物，你现在千万别告诉她。\n• 教师：喝完酒能开车吗？\n学生：开车千万别喝酒，喝酒千万别开车。\n④ 语言点运用\n请学生两人一组，根据图片和提示，说说面试时需要注意哪些问题。\n〔图片：面试场景〕\n提示内容：I. 衣服　II. 说话声音　III. 回答速度　IV. 时间\n参考答案：I. 衣服千万不要穿得太随便。\nII. 不要紧张，说话的声音千万别太小。\nIII. 回答问题的速度千万不要太快，也不要太慢。\nIV. 去面试千万别迟到。\n⑤ 比一比：千万—一定\n按照教材中的辨析步骤进行。"
+   },
+   {
+    "title_zh": "3 语言点（4）来",
+    "body_zh": "① 语言点解析\n“来”，动词，用在另一个动词前面，表示“要做某事”的意思，常用在口语中。如果不用“来”，句子的意思不变。\n② 语言点导入\n联系课堂实际，提问导入。\n• 教师：这个汉字（黑板上写一个汉字）怎么读，谁来回答？\n学生：老师，我来回答。\n板书：我来回答。\n〔教师板书“我来回答”，然后把“来”字擦掉，再问一遍刚才的问题，使学生理解不用“来”，句子意思不变。〕\n③ 语言点操练\n联系生活实际，提问操练。\n• 教师：你们家一般都是谁负责做饭？\n学生：我们家一般都是妈妈来负责做饭。\n• 教师：谁打扫房间？\n学生：……来打扫房间。\n④ 语言点运用\n请学生选择“来”在句子中恰当的位置。\nI. 经理您A放心，我一定B以最快的速度C把办公室D打扫干净。\nII. 孙月的女儿早上闹钟A响了也不B醒，每天都C得孙月D叫醒她。\nIII. 父母A应该让孩子学会自己B管理时间，这样他们C就不会D浪费时间。\n参考答案：I. C　II. D　III. B"
+   },
+   {
+    "title_zh": "3 语言点（5）左右",
+    "body_zh": "① 语言点解析\n“左右”，名词，只用在数量词后面，表示比某一数量稍多或者稍少。\n② 语言点导入\n• 利用热身图片D，提问导入。\n教师：你们猜这个儿童多大了？\n学生：我觉得她应该七岁左右。\n• 创设情境，提问导入。\n教师：马克，我们已经到电影院了，你什么时候能到啊？\n学生：马上就到，5分钟左右。\n③ 语言点操练\n联系生活实际，提问操练。\n• 教师：你每天几点起床？几点睡觉？\n学生：我每天7点左右起床，10点左右睡觉。\n• 教师：我刚搬到这儿，对这儿还不熟悉，听说前面有一个大超市，离这儿远吗？\n学生：不太远，离这儿500米左右，非常方便。\n④ 语言点运用\n请学生两人一组，根据提示用“左右”补全对话，并分角色表演。\nA：在网上买这本书多长时间能送到啊？\nB：________。\nA：这本书网上卖得比学校书店便宜多少？\nB：________。\n参考答案：网上买书两天左右就能到\n比学校书店便宜1/3左右"
+   },
+   {
+    "title_zh": "4 课文",
+    "body_zh": "（1）就课文内容，教师将下列问题写在黑板上或用PPT展示（或教师给学生发放问题单）：（见 text_questions）\n（2）要求学生带着问题，听两遍录音并回答问题，教师给出答案；\n（3）学生打开课本，教师逐句播放录音，学生看课本听第二次录音并跟读；\n（4）教师领读一遍课文；\n（5）全班一起大声齐读一遍课文；\n（6）请2～3组学生分角色朗读课文，教师正音；\n（7）做以下课文扩展练习：\n对话课文：教师带领学生根据问题单上问题的答案叙述课文内容，并请学生单个复述。\n课文1：李老师的孙子一边弹钢琴一边唱歌，表演得很棒。他在去年寒假前的新年晚会上也表演过一次。他父母不仅教他知识，还帮助他养成了好习惯。\n课文2：早上闹钟响了，孙月的女儿还不醒，因为昨天晚上她做作业做到11点。孙月赶时间送她上学，可她又急着上厕所。每天孙月因为这些小事批评女儿，弄得她们心情都不好。王静认为应该让孩子学会管理时间。\n课文3：王静明天带儿子去医院打针，但是儿子很怕打针。孙月建议王静鼓励和表扬孩子。表扬千万不要太多，过多的表扬会让孩子怀疑自己的能力。\n短文课文：请学生根据课文内容，补全下面的语段，并请学生单个复述朗读。\n课文4：有的孩子会通过故意敲打来……（引起父母的注意），在这种情况下，父母先不要生气，应该陪孩子……（整理东西），和他们聊天，弄清楚他们的问题。教育孩子应该选择……（合适的教育方法），不要骗孩子，这是因为儿童缺少判断能力，他们会学着……（说假话）。\n课文5：当孩子不明白时，不要用……（“懒”“笨”“粗心”）这种词批评他。对不同性格的孩子要使用不同的……（教育方法）。如果孩子……（比较骄傲），应该让他明白还有很多知识需要学习；要是孩子……（性格害羞），就应该鼓励他们说出自己的看法。"
+   },
+   {
+    "title_zh": "5 扩展",
+    "body_zh": "（1）领读“护照、保护、护士”三个同字词，请学生说一说“护”字在词中的位置和意义。“护”的义项：\n保护、保卫：护照、保护、护士\n（2）请学生完成“选词填空”练习，教师给出答案。\n答案：①保护　②护士　③护照\n（3）教师在黑板上列出以下词语，请学生猜词义，教师给出简单的例句进行解释。\n护工：她不是护士，是护工。\n护理：这个护士把病人护理得非常好。\n爱护：请大家爱护小区里的花草。\n救护车：他病得很严重，快叫救护车来。"
+   },
+   {
+    "title_zh": "6 补充课堂活动",
+    "body_zh": "请学生4人一组，谈谈自己父母的教育方法，比如是怎么教育自己管理时间和钱的，讨论一下哪些方法比较好，并说明原因。"
+   },
+   {
+    "title_zh": "7 文化",
+    "body_zh": "教师引导学生了解“孟母三迁”的故事，可根据需求和时间安排，进行以下参考活动：\n• 展示图片，介绍孟子；\n• 根据故事内容提问：\n孟子的妈妈为什么搬家？\n第二次搬家是因为什么？\n现在“孟母三迁”可以用来说哪种父母？\n• 请学生讨论“孟母”的方法好不好。"
+   },
+   {
+    "title_zh": "8 布置作业",
+    "body_zh": "• 每个生词写3遍；\n• 用本课所学的5个语言点分别造一个句子。"
+   }
+  ],
+  "notes_zh": [
+   "比一比：千万—一定——按照教材中的辨析步骤进行。（语言点3）",
+   "“起来”可用在动词后面做趋向补语或可能补语，表示动作的方向从下到上。这个用法已经学过，本课只用作复习和“以旧导新”，导出新用法。（语言点1）",
+   "字形辨认：钢—银—针　孙—孩　闹—问　赶—起　扬—场　怀—坏　骗—遍　童—章　羞—着（生词）",
+   "“护”的义项：保护、保卫：护照、保护、护士；扩展词：护工、护理、爱护、救护车（扩展）"
+  ],
+  "warmup_answers_zh": [
+   "热身1 答案：①C　②B　③E　④A　⑤F　⑥D",
+   "热身2：请学生看1分钟图片，然后说说图片里孩子们在做什么；最后请学生谈谈如果他们是老师，会怎么解决这个问题，并说明原因。"
+  ],
+  "text_questions": [
+   {
+    "text": 1,
+    "q_zh": "那个表演的男孩子是谁？"
+   },
+   {
+    "text": 1,
+    "q_zh": "那个男孩子表演的什么？表演得怎么样？"
+   },
+   {
+    "text": 1,
+    "q_zh": "他以前表演过吗？"
+   },
+   {
+    "text": 1,
+    "q_zh": "那个男孩子为什么这么优秀？"
+   },
+   {
+    "text": 2,
+    "q_zh": "每天孙月因为哪些小事批评女儿？"
+   },
+   {
+    "text": 2,
+    "q_zh": "这些小事对孙月和女儿有影响吗？"
+   },
+   {
+    "text": 2,
+    "q_zh": "王静建议孙月怎么做？"
+   },
+   {
+    "text": 3,
+    "q_zh": "王静明天带孩子做什么？"
+   },
+   {
+    "text": 3,
+    "q_zh": "孙月建议王静怎么解决问题？"
+   },
+   {
+    "text": 3,
+    "q_zh": "表扬越多越好吗？为什么？"
+   },
+   {
+    "text": 4,
+    "q_zh": "有的孩子为什么故意敲打？"
+   },
+   {
+    "text": 4,
+    "q_zh": "如果孩子故意敲打，父母应该怎么办？"
+   },
+   {
+    "text": 4,
+    "q_zh": "父母可以骗孩子吗？为什么？"
+   },
+   {
+    "text": 5,
+    "q_zh": "当孩子不明白时，怎样教育孩子比较好？不应该做什么？"
+   },
+   {
+    "text": 5,
+    "q_zh": "对于骄傲的孩子，应该怎么教育？"
+   },
+   {
+    "text": 5,
+    "q_zh": "如果孩子性格害羞，应该怎么办？"
+   }
+  ]
+ },
+ "workbook": {
+  "ref": {
+   "book": "workbook",
+   "pages": [
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53
+   ]
+  },
+  "sections": [
+   {
+    "n": "一、听力 第一部分",
+    "type_zh": "听力 第一部分",
+    "instruction_zh": "第1–5题：判断对错。",
+    "items": [
+     {
+      "n": "例1",
+      "zh": "★他打算下午去银行。",
+      "transcript_zh": "我想去办个信用卡，今天下午你有时间吗？陪我去一趟银行？",
+      "answer": "✓",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        44
+       ]
+      }
+     },
+     {
+      "n": "例2",
+      "zh": "★他喜欢看电视广告。",
+      "transcript_zh": "现在我很少看电视，其中一个原因是，广告太多了，不管什么时间，也不管什么节目，只要你打开电视，总能看到那么多的广告，浪费我的时间。",
+      "answer": "×",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        44
+       ]
+      }
+     },
+     {
+      "n": 1,
+      "zh": "★他做事比过去仔细了。",
+      "transcript_zh": "经历过那次失败后，他改变了许多，不再像以前那么粗心了，大家都说他现在做事仔细多了。",
+      "answer": "✓",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        118,
+        120
+       ]
+      }
+     },
+     {
+      "n": 2,
+      "zh": "★沙发上的袜子是旧的。",
+      "transcript_zh": "你的那双袜子破了，我把它扔掉了。我给你买了一双新的，放在沙发上了，你试一下，看看合适不合适。",
+      "answer": "×",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        118,
+        120
+       ]
+      }
+     },
+     {
+      "n": 3,
+      "zh": "★他今天六点就起床了。",
+      "transcript_zh": "昨天晚上我一直工作到很晚才睡，结果今天早上手机响我完全没听到，醒的时候已经九点了。",
+      "answer": "×",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        118,
+        120
+       ]
+      }
+     },
+     {
+      "n": 4,
+      "zh": "★孩子更容易获得快乐。",
+      "transcript_zh": "大人有时会羡慕孩子，因为孩子的世界没有那么复杂，所以他们总是很快乐。同时，孩子也是最诚实的，不会怀疑别人，更不会去骗人。",
+      "answer": "✓",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        118,
+        120
+       ]
+      }
+     },
+     {
+      "n": 5,
+      "zh": "★父母对孩子要讲信用。",
+      "transcript_zh": "父母对孩子必须做到言而有信，一定要说到做到。如果实在做不到，就应向孩子说对不起，并解释原因，否则孩子会认为你在骗他。",
+      "answer": "✓",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        118,
+        120
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "一、听力 第二部分",
+    "type_zh": "听力 第二部分",
+    "instruction_zh": "第6–12题：请选出正确答案。",
+    "items": [
+     {
+      "n": "例",
+      "zh": "男的主要是什么意思？",
+      "transcript_zh": "女：该加油了，去机场的路上有加油站吗？ 男：有，你放心吧。 问：男的主要是什么意思？",
+      "options": {
+       "A": "去机场",
+       "B": "快到了",
+       "C": "油是满的",
+       "D": "有加油站"
+      },
+      "answer": "D",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        45
+       ]
+      }
+     },
+     {
+      "n": 6,
+      "zh": "男的怎么了？",
+      "options": {
+       "A": "饿了",
+       "B": "困了",
+       "C": "累了",
+       "D": "病了"
+      },
+      "transcript_zh": "女：你怎么咳嗽得越来越厉害了？吃药了吗？ 男：吃了，好像不太管用，我明天还是去医院打针吧。 问：男的怎么了？",
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        118,
+        120
+       ]
+      }
+     },
+     {
+      "n": 7,
+      "zh": "关于女的，下列哪个正确？",
+      "options": {
+       "A": "力气很大",
+       "B": "调查完了",
+       "C": "拒绝帮助",
+       "D": "在搬东西"
+      },
+      "transcript_zh": "男：我发现你的东西没多少啊。 女：这些只是三分之一，还有很多还没来得及整理呢，下周再搬。 问：关于女的，下列哪个正确？",
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        118,
+        120
+       ]
+      }
+     },
+     {
+      "n": 8,
+      "zh": "男的最可能是做什么的？",
+      "options": {
+       "A": "护士",
+       "B": "教师",
+       "C": "经理",
+       "D": "服务员"
+      },
+      "transcript_zh": "女：如果再让我来选择一次，肯定不选现在的工作。真羡慕你每年都有一个寒假和一个暑假。 男：我当时选择这个职业时可没考虑这个，只是因为喜欢和孩子们在一起。 问：男的最可能是做什么的？",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        118,
+        120
+       ]
+      }
+     },
+     {
+      "n": 9,
+      "zh": "男的的票多少钱一张？",
+      "options": {
+       "A": "60元",
+       "B": "70元",
+       "C": "30元",
+       "D": "免费"
+      },
+      "transcript_zh": "男：小姐，请问多少钱一张票？ 女：您好，您的六十，70岁以上老人免费，您孩子买儿童票，半价。 问：男的的票多少钱一张？",
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        118,
+        120
+       ]
+      }
+     },
+     {
+      "n": 10,
+      "zh": "女的怎么了？",
+      "options": {
+       "A": "迟到了",
+       "B": "发烧了",
+       "C": "眼睛疼",
+       "D": "口渴了"
+      },
+      "transcript_zh": "男：你真是太懒了，再不起床就要迟到了。 女：我眼睛有点儿疼，让我再躺一会儿吧。 问：女的怎么了？",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        119,
+        120
+       ]
+      }
+     },
+     {
+      "n": 11,
+      "zh": "他们在谈论什么？",
+      "options": {
+       "A": "教育",
+       "B": "艺术",
+       "C": "科学",
+       "D": "自然"
+      },
+      "transcript_zh": "男：很多学者认为，父母应该经常表扬孩子，鼓励他们。 女：没错，批评对孩子的发展没什么好处。 问：他们在谈论什么？",
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        119,
+        120
+       ]
+      }
+     },
+     {
+      "n": 12,
+      "zh": "王教授的孙女今天怎么了？",
+      "options": {
+       "A": "伤心",
+       "B": "粗心",
+       "C": "害羞",
+       "D": "病了"
+      },
+      "transcript_zh": "男：王教授，您的小孙女真可爱，但是好像不太爱说话。 女：也许是因为第一次跟你见面，还不太熟，有些害羞。她平时不是这样的，话特别多。 问：王教授的孙女今天怎么了？",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        119,
+        120
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "一、听力 第三部分",
+    "type_zh": "听力 第三部分",
+    "instruction_zh": "第13–22题：请选出正确答案。",
+    "items": [
+     {
+      "n": "例",
+      "zh": "会议几点开始？",
+      "transcript_zh": "男：把这个材料复印5份，一会儿拿到会议室发给大家。 女：好的。会议是下午三点吗？ 男：改了。三点半，推迟了半个小时。 女：好，602会议室没变吧？ 男：对，没变。 问：会议几点开始？",
+      "options": {
+       "A": "两点",
+       "B": "3点",
+       "C": "15：30",
+       "D": "18：00"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        46
+       ]
+      }
+     },
+     {
+      "n": 13,
+      "zh": "关于男的，下列哪个正确？",
+      "options": {
+       "A": "会跳舞",
+       "B": "羡慕女的",
+       "C": "从小弹钢琴",
+       "D": "喜欢打篮球"
+      },
+      "transcript_zh": "女：没想到你钢琴弹得这么好，真让人羡慕。 男：我从六岁开始学，养成了每天练琴的习惯。 女：一开始学琴的时候很苦吧？ 男：是，万事开头难，后来慢慢就好了。 问：关于男的，下列哪个正确？",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        119,
+        120
+       ]
+      }
+     },
+     {
+      "n": 14,
+      "zh": "关于张阿姨的孙子，可以知道什么？",
+      "options": {
+       "A": "一个月了",
+       "B": "喜欢照相",
+       "C": "在叫爸妈",
+       "D": "刚会说话"
+      },
+      "transcript_zh": "男：张阿姨，这是您孙子的照片？ 女：对，这是他刚一个月时的照片，现在一岁零四个月了。 男：真可爱，会说话了吗？ 女：会叫爸爸妈妈了，也能说一些简单的词。 问：关于张阿姨的孙子，可以知道什么？",
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        119,
+        120
+       ]
+      }
+     },
+     {
+      "n": 15,
+      "zh": "关于女的，可以知道什么？",
+      "options": {
+       "A": "开车很快",
+       "B": "去机场接人",
+       "C": "担心时间不够",
+       "D": "已经迟到了"
+      },
+      "transcript_zh": "女：师傅，去机场。我赶飞机，麻烦您开快点儿。 男：好的，您几点的飞机？ 女：两点，来得及吗？ 男：没问题，保证一点之前就把您送到。 问：关于女的，可以知道什么？",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        119,
+        120
+       ]
+      }
+     },
+     {
+      "n": 16,
+      "zh": "关于男的，下列哪个正确？",
+      "options": {
+       "A": "很懒",
+       "B": "工作没做完",
+       "C": "提前回家了",
+       "D": "正在谈生意"
+      },
+      "transcript_zh": "男：喂，你在哪儿？我敲了半天门，怎么没人在家？ 女：我和孩子在花园里玩儿呢，你不是说要到九点才回来吗？ 男：工作提前做完了。你们什么时候回来？ 女：这就回去，你再等一会儿。 问：关于男的，下列哪个正确？",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        119,
+        120
+       ]
+      }
+     },
+     {
+      "n": 17,
+      "zh": "那件衬衫怎么了？",
+      "options": {
+       "A": "脏了",
+       "B": "丢了",
+       "C": "掉色了",
+       "D": "被女的扔了"
+      },
+      "transcript_zh": "女：你的衬衫怎么了？ 男：喝咖啡时不小心弄脏了。 女：我正好要洗衣服，你脱下来一起洗了吧。 男：好的。 问：那件衬衫怎么了？",
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        119,
+        120
+       ]
+      }
+     },
+     {
+      "n": 18,
+      "zh": "女的找李老师做什么？",
+      "options": {
+       "A": "取材料",
+       "B": "开证明",
+       "C": "还杂志",
+       "D": "整理房间"
+      },
+      "transcript_zh": "女：打扰一下，请问您是李老师吗？ 男：对，你是…… 女：您好，我是谢教授的学生，他让我过来取材料。 男：你先坐一下，等几分钟，我马上就整理完了。 女：好的。 问：女的找李老师做什么？",
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 19,
+      "zh": "关于女儿，下列哪个不正确？",
+      "options": {
+       "A": "一直很节约",
+       "B": "比以前懂事了",
+       "C": "参加工作了",
+       "D": "自己管理工资"
+      },
+      "transcript_zh": "第19到20题是根据下面一段话：女儿过去花钱很随便，但从她开始工作、知道赚钱的辛苦后，就变得懂事多了，她开始学着管理自己的工资，把每天花的钱都记下来，提醒自己要节约，还对我说以后再也不乱花钱了。 问：关于女儿，下列哪个不正确？",
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 20,
+      "zh": "女儿有什么变化？",
+      "options": {
+       "A": "更漂亮了",
+       "B": "更勇敢了",
+       "C": "不乱花钱了",
+       "D": "不怕打针了"
+      },
+      "transcript_zh": "第19到20题是根据下面一段话：女儿过去花钱很随便，但从她开始工作、知道赚钱的辛苦后，就变得懂事多了，她开始学着管理自己的工资，把每天花的钱都记下来，提醒自己要节约，还对我说以后再也不乱花钱了。 问：女儿有什么变化？",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 21,
+      "zh": "根据这段话，教育孩子要考虑哪方面的不同？",
+      "options": {
+       "A": "性格",
+       "B": "兴趣",
+       "C": "健康",
+       "D": "年龄"
+      },
+      "transcript_zh": "第21到22题是根据下面一段话：教育不同性格的孩子要使用不同的办法：对那些活泼的孩子要经常告诉他们哪些事情不能做；对那些害羞的孩子要经常鼓励他们说出自己的看法，当他们这样做了以后，要表扬他们，这样才能让每一个孩子都健康地发展。 问：根据这段话，教育孩子要考虑哪方面的不同？",
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 22,
+      "zh": "这段话主要谈什么？",
+      "options": {
+       "A": "孩子的性格",
+       "B": "教育的方法",
+       "C": "怎么鼓励孩子",
+       "D": "表扬很重要"
+      },
+      "transcript_zh": "第21到22题是根据下面一段话：教育不同性格的孩子要使用不同的办法：对那些活泼的孩子要经常告诉他们哪些事情不能做；对那些害羞的孩子要经常鼓励他们说出自己的看法，当他们这样做了以后，要表扬他们，这样才能让每一个孩子都健康地发展。 问：这段话主要谈什么？",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第一部分（23–26）",
+    "type_zh": "阅读 第一部分",
+    "instruction_zh": "第23–26题：选词填空。",
+    "word_bank": [
+     [
+      "A 打针",
+      "B 千万",
+      "C 骄傲",
+      "D 坚持",
+      "E 儿童"
+     ]
+    ],
+    "items": [
+     {
+      "n": "例",
+      "zh": "她每天都（　）走路上下班，所以身体一直很不错。",
+      "options": {
+       "A": "打针",
+       "B": "千万",
+       "C": "骄傲",
+       "D": "坚持",
+       "E": "儿童"
+      },
+      "answer": "D",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        47
+       ]
+      }
+     },
+     {
+      "n": 23,
+      "zh": "我上网查了一下，按照规定，5岁以下的（　）必须有大人陪同，否则不能乘坐飞机。",
+      "options": {
+       "A": "打针",
+       "B": "千万",
+       "C": "骄傲",
+       "D": "坚持",
+       "E": "儿童"
+      },
+      "answer": "E",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 24,
+      "zh": "我儿子发烧了，我得送他去医院（　），所以下午我不能去踢球了。",
+      "options": {
+       "A": "打针",
+       "B": "千万",
+       "C": "骄傲",
+       "D": "坚持",
+       "E": "儿童"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 25,
+      "zh": "明天早上9点在5层会议室准时开会，这次会议非常重要，大家（　）不能迟到。",
+      "options": {
+       "A": "打针",
+       "B": "千万",
+       "C": "骄傲",
+       "D": "坚持",
+       "E": "儿童"
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 26,
+      "zh": "他从9岁开始练习短跑，18岁就获得了全国运动会100米第一名，大家都为他感到（　）。",
+      "options": {
+       "A": "打针",
+       "B": "千万",
+       "C": "骄傲",
+       "D": "坚持",
+       "E": "儿童"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第一部分（27–30）",
+    "type_zh": "阅读 第一部分",
+    "instruction_zh": "第27–30题：选词填空。",
+    "word_bank": [
+     [
+      "A 弄",
+      "B 响",
+      "C 温度",
+      "D 合适",
+      "E 故意"
+     ]
+    ],
+    "items": [
+     {
+      "n": "例",
+      "zh": "A：今天真冷啊，好像白天最高（　）才2℃。 B：刚才电视里说明天更冷。",
+      "options": {
+       "A": "弄",
+       "B": "响",
+       "C": "温度",
+       "D": "合适",
+       "E": "故意"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        48
+       ]
+      }
+     },
+     {
+      "n": 27,
+      "zh": "A：妈，您手机都（　）了好几遍了，快接起来啊。 B：不用看也知道，肯定是你爸，你去接吧，就说我正在做午饭呢。",
+      "options": {
+       "A": "弄",
+       "B": "响",
+       "C": "温度",
+       "D": "合适",
+       "E": "故意"
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 28,
+      "zh": "A：她竟然连我姓什么都忘了。 B：真的假的？你不会是（　）错了吧？",
+      "options": {
+       "A": "弄",
+       "B": "响",
+       "C": "温度",
+       "D": "合适",
+       "E": "故意"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 29,
+      "zh": "A：你说她会原谅我吗？ B：放心吧，你也不是（　）的，去跟她解释一下，她会理解的。",
+      "options": {
+       "A": "弄",
+       "B": "响",
+       "C": "温度",
+       "D": "合适",
+       "E": "故意"
+      },
+      "answer": "E",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 30,
+      "zh": "A：今晚公司有活动，所有人都必须参加。帮我看看，我穿哪条裙子（　）？ B：两条都不错，不过黑色的正式一些。",
+      "options": {
+       "A": "弄",
+       "B": "响",
+       "C": "温度",
+       "D": "合适",
+       "E": "故意"
+      },
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第二部分",
+    "type_zh": "阅读 第二部分",
+    "instruction_zh": "第31–34题：排列顺序。",
+    "items": [
+     {
+      "n": "例",
+      "zh": "",
+      "options": {
+       "A": "可是今天起晚了",
+       "B": "平时我骑自行车上下班",
+       "C": "所以就打车来公司"
+      },
+      "answer": "BAC",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        49
+       ]
+      }
+     },
+     {
+      "n": 31,
+      "zh": "",
+      "options": {
+       "A": "有些人会因为听到了真话而感到高兴",
+       "B": "直接说出反对意见或者看法",
+       "C": "而另一些人却会认为是批评而十分难过"
+      },
+      "answer": "BAC",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 32,
+      "zh": "",
+      "options": {
+       "A": "妈妈说我小时候特别害怕去医院打针",
+       "B": "我长大后竟然会选择当一名护士",
+       "C": "一看见医生就哭，她怎么都没想到"
+      },
+      "answer": "ACB",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 33,
+      "zh": "",
+      "options": {
+       "A": "我们的眼睛也可能会骗人",
+       "B": "其实，有时候实际情况要复杂得多",
+       "C": "人们往往相信自己眼睛看到的"
+      },
+      "answer": "CBA",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 34,
+      "zh": "",
+      "options": {
+       "A": "许多父母会直接告诉他们解决办法或者正确答案",
+       "B": "孩子在学习、生活中遇到问题的时候",
+       "C": "实际上，留出时间让他们自己去发现会更好"
+      },
+      "answer": "BAC",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第三部分",
+    "type_zh": "阅读 第三部分",
+    "instruction_zh": "第35–43题：请选出正确答案。",
+    "items": [
+     {
+      "n": "例",
+      "zh": "她很活泼，说话很有趣，总能给我们带来快乐，我们都很喜欢和她在一起。 ★她是个什么样的人？",
+      "options": {
+       "A": "幽默",
+       "B": "马虎",
+       "C": "骄傲",
+       "D": "害羞"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        50
+       ]
+      }
+     },
+     {
+      "n": 35,
+      "zh": "管理是一门艺术，仅是批评不会有好的效果。平时注意多跟别人交流，更多地了解别人，比如他的性格、爱好、脾气、能力等，这样才能根据每个人的特点选择合适的方法帮助他们提高，把工作做好。 ★这段话想告诉我们，了解人们的脾气可以：",
+      "options": {
+       "A": "让人变得友好",
+       "B": "获得大家表扬",
+       "C": "增进同事友谊",
+       "D": "提高管理水平"
+      },
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 36,
+      "zh": "下班刚进家就看到桌子上满满的都是我爱吃的菜。儿子走过来对我说：“妈妈，祝您母亲节快乐！”我的心里特别感动，突然间觉得儿子长大了。 ★根据这段话，可以知道什么？",
+      "options": {
+       "A": "菜点得多了",
+       "B": "儿子很感动",
+       "C": "母亲很幽默",
+       "D": "今天是母亲节"
+      },
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 37,
+      "zh": "能力不高没关系，只要能比别人早点儿开始，比别人更努力一些，同样可以成功。所以，不要因为自己是一只“笨鸟”而放弃，只要不懒，你也可以“飞得很高很远”。 ★“笨鸟”指的是：",
+      "options": {
+       "A": "很成功的人",
+       "B": "站得高的人",
+       "C": "比较懒的人",
+       "D": "能力不高的人"
+      },
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 38,
+      "zh": "新来的那名服务员，刚来不到一个星期，就熟悉了菜单上所有菜的名字，而且知道每道菜的味道和特点。虽然每天店里很忙，有时候连上厕所的时间都没有，但是他非常努力，干得也不错，来饭馆儿吃饭的客人对他都十分满意。 ★新来的服务员：",
+      "options": {
+       "A": "刚来一星期",
+       "B": "工作很努力",
+       "C": "喜欢每道菜",
+       "D": "经常上厕所"
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 39,
+      "zh": "当你为自己取得的成绩而得意时，应该想到，有很多人比你更优秀，所以千万不要骄傲；同样，当你为自己的失败而伤心时，你也应该想到，别人也会失败，也会难过，所以千万不要难过，甚至怀疑自己。 ★根据这段话，失败时要：",
+      "options": {
+       "A": "先找原因",
+       "B": "懂得拒绝",
+       "C": "理解别人",
+       "D": "对自己有信心"
+      },
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 40,
+      "zh": "在教育孩子的过程中，父母的鼓励比批评更重要。如果总是说孩子的缺点，孩子更容易向坏的方向发展；相反，如果总能发现孩子的优点并且鼓励他，孩子的优点就会越来越多。当然，鼓励孩子的时候，也要注意方法。否则，不仅起不到鼓励的作用，还可能让孩子怀疑自己的能力，变得没有了信心。 ★经常说孩子的缺点，孩子会：",
+      "options": {
+       "A": "更得意",
+       "B": "更优秀",
+       "C": "变得更差",
+       "D": "容易骄傲"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 41,
+      "zh": "在教育孩子的过程中，父母的鼓励比批评更重要。如果总是说孩子的缺点，孩子更容易向坏的方向发展；相反，如果总能发现孩子的优点并且鼓励他，孩子的优点就会越来越多。当然，鼓励孩子的时候，也要注意方法。否则，不仅起不到鼓励的作用，还可能让孩子怀疑自己的能力，变得没有了信心。 ★这段话主要谈什么？",
+      "options": {
+       "A": "不要骗人",
+       "B": "要理解孩子",
+       "C": "真正的友谊",
+       "D": "怎样教育孩子"
+      },
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 42,
+      "zh": "一天，爷爷对小孙子说：“来，我出个问题考考你。”孙子说：“您问吧，我肯定能答上来。”爷爷问：“一张桌子有4个角，如果去掉一个角，桌子还剩几个角？”“3个。”孙子想都不想，马上回答。爷爷笑着说：“错了，应该是5个角。”有时候，遇到问题我们应该先静下来，仔细地想一想，不能只根据习惯就给出答案。 ★关于小孙子，可以知道什么？",
+      "options": {
+       "A": "答错了",
+       "B": "爱哭",
+       "C": "很诚实",
+       "D": "讨厌数学"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 43,
+      "zh": "一天，爷爷对小孙子说：“来，我出个问题考考你。”孙子说：“您问吧，我肯定能答上来。”爷爷问：“一张桌子有4个角，如果去掉一个角，桌子还剩几个角？”“3个。”孙子想都不想，马上回答。爷爷笑着说：“错了，应该是5个角。”有时候，遇到问题我们应该先静下来，仔细地想一想，不能只根据习惯就给出答案。 ★这个故事告诉我们，遇到问题时：",
+      "options": {
+       "A": "要先调查",
+       "B": "要相信自己",
+       "C": "要多问老人",
+       "D": "别受习惯影响"
+      },
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "三、书写 第一部分",
+    "type_zh": "书写 第一部分",
+    "instruction_zh": "第44–48题：完成句子。",
+    "items": [
+     {
+      "n": "例",
+      "zh": "那座桥　800年的　历史　有　了",
+      "answer": "那座桥有800年的历史了。",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        52
+       ]
+      }
+     },
+     {
+      "n": 44,
+      "zh": "被　外面的　吵醒　了　敲门声　他",
+      "answer": "他被外面的敲门声吵醒了。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 45,
+      "zh": "儿童　被　好玩儿的　更容易　游戏　接受",
+      "answer": "好玩儿的游戏更容易被儿童接受。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 46,
+      "zh": "行李箱　了　弄丢　把　儿子　的钥匙",
+      "answer": "儿子把行李箱的钥匙弄丢了。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 47,
+      "zh": "整理　复习笔记　很详细　的　孙子　得",
+      "answer": "孙子的复习笔记整理得很详细。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 48,
+      "zh": "王护士　儿童　打针的　经验　特别丰富　给",
+      "answer": "王护士给儿童打针的经验特别丰富。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "三、书写 第二部分",
+    "type_zh": "书写 第二部分",
+    "instruction_zh": "第49–50题：看图，用词造句。",
+    "items": [
+     {
+      "n": "例",
+      "zh": "乒乓球",
+      "picture_desc_en": "A young woman holding a table-tennis paddle, about to serve a ball.",
+      "answer": "她很喜欢打乒乓球。",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        53
+       ]
+      }
+     },
+     {
+      "n": 49,
+      "zh": "整理",
+      "picture_desc_en": "An open suitcase packed full of folded clothes, with a sun hat on top.",
+      "answer": "我们每次去外地旅游，都是妻子负责整理行李箱。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     },
+     {
+      "n": 50,
+      "zh": "左右",
+      "picture_desc_en": "A sign hanging from a ceiling with a left-pointing arrow and restroom (man/woman) icons.",
+      "answer": "一直往前走10米左右就是卫生间。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        120
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "answers_ref": {
+   "book": "teacher",
+   "pages": [
+    118,
+    119,
+    120
+   ]
+  }
+ },
+ "unclear": [
+  "Аудио файлын нэр мэдэгдэхгүй тул audio талбар орхисон. Сурах бичгийн CD тэмдэг: 课文1–5 = 15-1…15-5; дасгалын номын 听力 第一/二/三部分 = 15-1, 15-2, 15-3.",
+  "生词 1 弹钢琴 — үгийн ай (pos) хэвлэгдээгүй (зөвхөн «tán gāngqín / to play the piano»).",
+  "生词 6 闹钟 * тэмдэгтэй (大纲-аас гадуур); багшийн ном «了解1个非大纲词汇的意义：闹钟», «掌握本课30个四级大纲词汇» — 生词 нийт 31.",
+  "Сурах бичигт 专有名词 хүснэгт байхгүй — 王静 (Wáng Jìng), 孙月 (Sūn Yuè), 李老师 (Lǐ lǎoshī) нь зөвхөн 拼音课文-ын ярилцагчийн нэрээр пиньиньтэй гарна; proper_nouns орхисон.",
+  "拼音课文-ын гарчгийн пиньинь (1. Lǐ lǎoshī jiànyì Wáng Jìng ràng háizi yǎngchéng hǎo xíguàn / 2. Wáng Jìng jiànyì Sūn Yuè jiàoyù háizi xuéhuì ānpái shíjiān / 3. Wáng Jìng hé Sūn Yuè tǎolùn biǎoyáng háizi de fāngfǎ) схемд талбаргүй тул lines.pinyin-д зөвхөн яриаг оруулсан.",
+  "课文1 李老师-ийн 2-р мөр: ханз «父母是孩子最重要的老师。他父母…» (цэг), 拼音课文 «…zuì zhòngyào de lǎoshī, tā fùmǔ…» (таслал) — номд байгаагаар.",
+  "课文3 сүүлийн мөрийн пиньинь номд «yǒnggǎn,bú pà kùnnan» (таслалын дараа зайгүй) гэж хэвлэгдсэн — номд байгаагаар.",
+  "课文4 пиньинь «huì tōngguò kū、rēng dōngxi» — пиньинь бичвэрт хятад 、 тэмдэг хэвлэгдсэн.",
+  "课文4 ба 课文5 — гарчиггүй 短文 — мөр (lines)-ийг өгүүлбэрээр хуваасан (номд нэг догол мөр).",
+  "注释3 比一比 千万—一定 — хятад тайлбарт «★» тэмдэгээр утгыг заасан (相同点 … 的意思。★; 不同点1, 2 «表示★这个意思时»); англи тайлбарын 1-д «In case , though…» (★ тэмдэг хэвлэгдээгүй), 2-т «In case ★,» — номд байгаагаар.",
+  "注释3 比一比 不同点6-ын жишээ «王老师您刚来这儿工作三年就当了教授，这次你得请客啊» — 您/你 холилдсон, номд байгаагаар.",
+  "注释3 比一比 做一做 (千万/一定): (1) 千万✓ 一定✓, (2) 千万✓ 一定× — сурах бичигт жишээ болгон хэвлэгдсэн; (3)–(5)-ын хариулт сурах бичиг, багшийн номд хэвлэгдээгүй (багшийн ном: «按照教材中的辨析步骤进行»).",
+  "注释1 想起来-ийн жишээний note_zh (趋向补语 / 想起来) нь номын тайлбарын дараалалд тулгуурласан бүлэглэл (номд (1)(2) нь эхний тайлбарын, (3)(4) нь 2-р тайлбарын доор).",
+  "Сурах бичгийн 回答问题 课文2 ❹ «怎么做可以帮助孩子学会安排自己的事情。» — асуулт цэгээр (。) төгссөн, номд байгаагаар. 课文4 ❶ «故意乱扔东西» — 课文4-т «扔东西或者故意敲打» гэж бичигдсэн.",
+  "Сурах бичгийн 练一练 (5 дүрэм × 3), 回答问题 (课文1–3 — 6, 课文4–5 — 4), 练习1 复述 ба 练习2 选词填空 (10) — хариулт сурах бичиг, багшийн номд хэвлэгдээгүй тул answer талбаргүй. 扩展 做一做-ийн хариулт багшийн номд (PDF х.54) бий.",
+  "运用 小组活动-ын хятад заавар «有的可能不并喜欢» (并不 биш «不并») гэж хэвлэгдсэн — номд байгаагаар.",
+  "文化-ын англи гарчиг «Mencius’ Mother Moved Thrice» — схемд culture.title_en талбар байхгүй тул body_en-ийн эхний мөрөнд оруулсан. Энэ хичээлд 俗语 байхгүй тул saying орхисон.",
+  "Багшийн ном 生词讲解 — «儿童（热身图片B）», «害羞（热身图片B）» хоёулаа热身图片B; 语言点(5) «利用热身图片D…你们猜这个儿童多大了» (D = төгөлдөр хуур тоглож буй охин) — номд байгаагаар.",
+  "Багшийн номын 课文 асуултууд (text_questions)-ын хариулт тус бүрчлэн хэвлэгдээгүй («教师给出答案»); оронд нь 课文扩展练习-ын 复述 догол мөрүүд (teacher.steps «4 课文») хэвлэгдсэн.",
+  "Багшийн номын хавсралт 听力 9: «您好，您的六十，70岁以上老人免费» — номд байгаагаар (хариулт A 60元).",
+  "Дасгалын ном 阅读 33 (排列顺序) — хариулт хавсралтад «CBA» гэж хэвлэгдсэн.",
+  "Дасгалын ном 听力 第二/三部分 — номд зөвхөн сонголтууд хэвлэгдсэн; item.zh-д багшийн номын хавсралтын «问：» асуултыг (19–22-т дугаартай асуултыг) оруулсан, transcript_zh-д бүтнээр. 听力 第一部分-д жишээ 2 (✓ ба ×) байгаа тул «例1», «例2».",
+  "Дасгалын ном 阅读 第二部分 (31–34 排列顺序)-ийн item.zh хоосон, хэсгүүд options (A/B/C)-д.",
+  "Дасгалын ном 书写 44–50-ын хариулт багшийн номын хавсралтад «参考答案» гэж хэвлэгдсэн; 49–50 (看图，用词造句) нээлттэй даалгавар тул хариулт нь зөвхөн жишээ.",
+  "Дасгалын номд 复习 хэсэг байхгүй (HSK4-ийн дасгалын ном: 听力 3 хэсэг, 阅读 3 хэсэг, 书写 2 хэсэг, нийт 50 асуулт)."
+ ],
+ "verified_pages": [
+  44,
+  45,
+  46,
+  47,
+  48,
+  49,
+  50,
+  51,
+  52,
+  53,
+  54,
+  69,
+  70,
+  71,
+  72,
+  73,
+  74,
+  75,
+  76,
+  77,
+  78,
+  79,
+  80,
+  81,
+  82,
+  83,
+  84,
+  118,
+  119,
+  120
+ ],
+ "schema_version": 1
+}

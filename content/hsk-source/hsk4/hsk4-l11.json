@@ -1,0 +1,2273 @@
+{
+ "level": "hsk4",
+ "lesson": 11,
+ "book": "HSK4B",
+ "title_zh": "读书好，读好书，好读书",
+ "title_pinyin": "Dú shū hǎo, dú hǎo shū, hào dú shū",
+ "title_en": "It’s good to read; read good books and like reading",
+ "textbook": {
+  "ref": {
+   "book": "textbook",
+   "pages": [
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27
+   ]
+  },
+  "warmup": [
+   {
+    "instruction_zh": "给下面的词语选择对应的图片，并用这个词语根据图片说一个句子。",
+    "instruction_en": "Match the pictures with the words and describe the pictures with sentences using the words.",
+    "items": [
+     "①客厅 kètīng",
+     "②猜 cāi",
+     "③复杂 fùzá",
+     "④阅读 yuèdú",
+     "⑤杂志 zázhì",
+     "⑥笔记 bǐjì"
+    ],
+    "pictures_desc_en": [
+     "A: a fanned stack of colourful magazines (photography and travel titles)",
+     "B: a young man lying back on a white sofa reading a book",
+     "C: a smiling young woman covering a young man's eyes with her hands from behind",
+     "D: a spacious, luxuriously furnished living room with sofas and lamps",
+     "E: a blackboard densely covered with mathematical formulas and geometric figures",
+     "F: close-up of a hand writing with a pen in a notebook"
+    ]
+   },
+   {
+    "instruction_zh": "读一读下面的句子，说一说这些句子有哪些特点。",
+    "instruction_en": "Read the following sentences and talk about their characteristics.",
+    "items": [
+     "①别着急，马克正开着车，他马上就到。",
+     "②小朋友，我们一起数数字，学数数。",
+     "③他要求自己每次都得把汉字写得特别好看。",
+     "④等你长高了，这条牛仔裤穿起来就不长了。",
+     "⑤你帮我把那个没把儿的杯子拿过来。"
+    ]
+   }
+  ],
+  "texts": [
+   {
+    "n": 1,
+    "title_zh": "马克介绍自己学习汉语的方法",
+    "kind": "dialogue",
+    "lines": [
+     {
+      "speaker": "大卫",
+      "zh": "你来中国才一年，汉语就说得这么流利，真厉害！",
+      "pinyin": "Nǐ lái Zhōngguó cái yì nián, Hànyǔ jiù shuō de zhème liúlì, zhēn lìhai!"
+     },
+     {
+      "speaker": "马克",
+      "zh": "谢谢！其实我的语法不太好，很多句子说得都不太准确。",
+      "pinyin": "Xièxie! Qíshí wǒ de yǔfǎ bú tài hǎo, hěn duō jùzi shuō de dōu bú tài zhǔnquè."
+     },
+     {
+      "speaker": "大卫",
+      "zh": "但是我看你跟中国人交流没什么问题，你是怎么做到的？",
+      "pinyin": "Dànshì wǒ kàn nǐ gēn Zhōngguó rén jiāoliú méi shénme wèntí, nǐ shì zěnme zuò dào de?"
+     },
+     {
+      "speaker": "马克",
+      "zh": "平时多交一些中国朋友，经常和他们聊天儿，听说能力自然就能得到很大的提高。另外，我建议你坚持看中文报纸，这样能学到很多新词语。",
+      "pinyin": "Píngshí duō jiāo yìxiē Zhōngguó péngyou, jīngcháng hé tāmen liáo tiānr, tīng shuō nénglì zìrán jiù néng dédào hěn dà de tígāo. Lìngwài, wǒ jiànyì nǐ jiānchí kàn Zhōngwén bàozhǐ, zhèyàng néng xuédào hěn duō xīn cíyǔ."
+     },
+     {
+      "speaker": "大卫",
+      "zh": "你太厉害了！连中文报纸都看得懂。",
+      "pinyin": "Nǐ tài lìhai le! Lián Zhōngwén bàozhǐ dōu kàn de dǒng."
+     },
+     {
+      "speaker": "马克",
+      "zh": "刚开始肯定有困难，不过遇到不认识的词语，你可以查词典，然后写在本子上，有空儿就拿出来复习一下，慢慢地就会发现中文报纸也没那么难了。",
+      "pinyin": "Gāng kāishǐ kěndìng yǒu kùnnan, búguò yùdào bú rènshi de cíyǔ, nǐ kěyǐ chá cídiǎn, ránhòu xiě zài běnzi shang, yǒu kòngr jiù ná chulai fùxí yíxià, mànmàn de jiù huì fāxiàn Zhōngwén bàozhǐ yě méi nàme nán le."
+     }
+    ],
+    "new_words": [
+     {
+      "n": 1,
+      "zh": "流利",
+      "pinyin": "liúlì",
+      "pos": "adj.",
+      "en": "fluent",
+      "text": 1
+     },
+     {
+      "n": 2,
+      "zh": "厉害",
+      "pinyin": "lìhai",
+      "pos": "adj.",
+      "en": "awesome, serious",
+      "text": 1
+     },
+     {
+      "n": 3,
+      "zh": "语法",
+      "pinyin": "yǔfǎ",
+      "pos": "n.",
+      "en": "grammar",
+      "text": 1
+     },
+     {
+      "n": 4,
+      "zh": "准确",
+      "pinyin": "zhǔnquè",
+      "pos": "adj.",
+      "en": "accurate, precise",
+      "text": 1
+     },
+     {
+      "n": 5,
+      "zh": "词语",
+      "pinyin": "cíyǔ",
+      "pos": "n.",
+      "en": "word, expression",
+      "text": 1
+     },
+     {
+      "n": 6,
+      "zh": "连",
+      "pinyin": "lián",
+      "pos": "prep.",
+      "en": "even",
+      "text": 1
+     }
+    ],
+    "proper_nouns": [
+     {
+      "zh": "大卫",
+      "pinyin": "Dàwèi",
+      "en": "name of a person"
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "title_zh": "小夏和小雨聊考试的情况",
+    "kind": "dialogue",
+    "lines": [
+     {
+      "speaker": "小夏",
+      "zh": "考试结束了，你对自己的成绩满意吗？",
+      "pinyin": "Kǎoshì jiéshù le, nǐ duì zìjǐ de chéngjì mǎnyì ma?"
+     },
+     {
+      "speaker": "小雨",
+      "zh": "说真的，我不太满意。这次阅读考试的题太多了，我没做完。",
+      "pinyin": "Shuō zhēn de, wǒ bú tài mǎnyì. Zhè cì yuèdú kǎoshì de tí tài duō le, wǒ méi zuò wán."
+     },
+     {
+      "speaker": "小夏",
+      "zh": "两个小时的时间应该来得及吧？",
+      "pinyin": "Liǎng ge xiǎoshí de shíjiān yīnggāi láidejí ba?"
+     },
+     {
+      "speaker": "小雨",
+      "zh": "这次主要是因为我先做了比较难、比较复杂的题，结果花了太多时间，后面简单的题我虽然会，可是时间来不及，最后只好放弃了。",
+      "pinyin": "Zhè cì zhǔyào shì yīnwèi wǒ xiān zuòle bǐjiào nán, bǐjiào fùzá de tí, jiéguǒ huāle tài duō shíjiān, hòumiàn jiǎndān de tí wǒ suīrán huì, kěshì shíjiān láibují, zuìhòu zhǐhǎo fàngqì le."
+     },
+     {
+      "speaker": "小夏",
+      "zh": "其实我考得也不怎么样。有几个填空题不会做，有几个选择题，实在想不出来该选哪个，就随便猜了一个答案，结果一个都没猜对。",
+      "pinyin": "Qíshí wǒ kǎo de yě bù zěnmeyàng. Yǒu jǐ ge tiánkòng tí bú huì zuò, yǒu jǐ ge xuǎnzé tí, shízài xiǎng bu chūlái gāi xuǎn nǎ ge, jiù suíbiàn cāile yí ge dá'àn, jiéguǒ yí ge dōu méi cāiduì."
+     },
+     {
+      "speaker": "小雨",
+      "zh": "看来要想考好，不但要认真复习，还得注意考试的方法，否则，会做的题也没时间做了。",
+      "pinyin": "Kànlái yào xiǎng kǎohǎo, búdàn yào rènzhēn fùxí, hái děi zhùyì kǎoshì de fāngfǎ, fǒuzé, huì zuò de tí yě méi shíjiān zuò le."
+     }
+    ],
+    "new_words": [
+     {
+      "n": 7,
+      "zh": "阅读",
+      "pinyin": "yuèdú",
+      "pos": "v.",
+      "en": "to read",
+      "text": 2
+     },
+     {
+      "n": 8,
+      "zh": "来得及",
+      "pinyin": "láidejí",
+      "pos": "v.",
+      "en": "there’s still time (to do sth.)",
+      "text": 2
+     },
+     {
+      "n": 9,
+      "zh": "复杂",
+      "pinyin": "fùzá",
+      "pos": "adj.",
+      "en": "complicated",
+      "text": 2
+     },
+     {
+      "n": 10,
+      "zh": "只好",
+      "pinyin": "zhǐhǎo",
+      "pos": "adv.",
+      "en": "cannot but, to be forced to",
+      "text": 2
+     },
+     {
+      "n": 11,
+      "zh": "填空",
+      "pinyin": "tián kòng",
+      "pos": "v.",
+      "en": "to fill in a blank",
+      "text": 2
+     },
+     {
+      "n": 12,
+      "zh": "猜",
+      "pinyin": "cāi",
+      "pos": "v.",
+      "en": "to guess",
+      "text": 2
+     },
+     {
+      "n": 13,
+      "zh": "否则",
+      "pinyin": "fǒuzé",
+      "pos": "conj.",
+      "en": "or, otherwise",
+      "text": 2
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "title_zh": "小李告诉小林阅读的好处",
+    "kind": "dialogue",
+    "lines": [
+     {
+      "speaker": "小林",
+      "zh": "你的客厅里怎么到处是书啊？这些书你都喜欢看吗？",
+      "pinyin": "Nǐ de kètīng li zěnme dàochù shì shū a? Zhèxiē shū nǐ dōu xǐhuan kàn ma?"
+     },
+     {
+      "speaker": "小李",
+      "zh": "当然，我每天都要看书。无论是普通杂志，还是著名小说，只要打开它们，就会发现，世界上有那么多有意思的事情，有那么多不一样的生活。",
+      "pinyin": "Dāngrán, wǒ měi tiān dōu yào kàn shū. Wúlùn shì pǔtōng zázhì, háishi zhùmíng xiǎoshuō, zhǐyào dǎkāi tāmen, jiù huì fāxiàn, shìjiè shang yǒu nàme duō yǒu yìsi de shìqing, yǒu nàme duō bù yíyàng de shēnghuó."
+     },
+     {
+      "speaker": "小林",
+      "zh": "想不到你工作那么忙，还能每天坚持阅读。",
+      "pinyin": "Xiǎngbudào nǐ gōngzuò nàme máng, hái néng měi tiān jiānchí yuèdú."
+     },
+     {
+      "speaker": "小李",
+      "zh": "如果3分钟读一页书，半个小时就可以读10页。每天花半个小时来读书，一个月就可以读300页，差不多就是一本书了。",
+      "pinyin": "Rúguǒ sān fēnzhōng dú yí yè shū, bàn ge xiǎoshí jiù kěyǐ dú shí yè. Měi tiān huā bàn ge xiǎoshí lái dú shū, yí ge yuè jiù kěyǐ dú sānbǎi yè, chàbuduō jiù shì yì běn shū le."
+     },
+     {
+      "speaker": "小林",
+      "zh": "是啊，一个真正爱看书的人总能找出时间来阅读。",
+      "pinyin": "Shì a, yí ge zhēnzhèng ài kàn shū de rén zǒng néng zhǎo chū shíjiān lái yuèdú."
+     },
+     {
+      "speaker": "小李",
+      "zh": "坚持阅读，除了能增加知识外，还能帮助我减轻压力，人也会变得轻松起来。",
+      "pinyin": "Jiānchí yuèdú, chúle néng zēngjiā zhīshi wài, hái néng bāngzhù wǒ jiǎnqīng yālì, rén yě huì biànde qīngsōng qilai."
+     }
+    ],
+    "new_words": [
+     {
+      "n": 14,
+      "zh": "客厅",
+      "pinyin": "kètīng",
+      "pos": "n.",
+      "en": "living room",
+      "text": 3
+     },
+     {
+      "n": 15,
+      "zh": "无论",
+      "pinyin": "wúlùn",
+      "pos": "conj.",
+      "en": "regardless of, no matter (what, how, when, etc.)",
+      "text": 3
+     },
+     {
+      "n": 16,
+      "zh": "杂志",
+      "pinyin": "zázhì",
+      "pos": "n.",
+      "en": "magazine",
+      "text": 3
+     },
+     {
+      "n": 17,
+      "zh": "著名",
+      "pinyin": "zhùmíng",
+      "pos": "adj.",
+      "en": "famous, well-known",
+      "text": 3
+     },
+     {
+      "n": 18,
+      "zh": "页",
+      "pinyin": "yè",
+      "pos": "m.",
+      "en": "page",
+      "text": 3
+     },
+     {
+      "n": 19,
+      "zh": "增加",
+      "pinyin": "zēngjiā",
+      "pos": "v.",
+      "en": "to increase, to add",
+      "text": 3
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "kind": "narrative",
+    "lines": [
+     {
+      "zh": "根据调查，阅读能力好的人，不但容易找到工作，而且工资也比较高。",
+      "pinyin": "Gēnjù diàochá, yuèdú nénglì hǎo de rén, búdàn róngyì zhǎodào gōngzuò, érqiě gōngzī yě bǐjiào gāo."
+     },
+     {
+      "zh": "怎么才能有效提高自己的阅读能力呢？",
+      "pinyin": "Zěnme cái néng yǒuxiào tígāo zìjǐ de yuèdú nénglì ne?"
+     },
+     {
+      "zh": "做读书笔记就是其中一种好方法。",
+      "pinyin": "Zuò dúshū bǐjì jiù shì qízhōng yì zhǒng hǎo fāngfǎ."
+     },
+     {
+      "zh": "读书笔记有很多种，最简单的就是把自己喜欢或者觉得有用的词语和句子记下来。",
+      "pinyin": "Dúshū bǐjì yǒu hěn duō zhǒng, zuì jiǎndān de jiù shì bǎ zìjǐ xǐhuan huòzhě juéde yǒuyòng de cíyǔ hé jùzi jì xialai."
+     },
+     {
+      "zh": "另外，在看完一篇文章或一本书之后，还可以把它的主要内容和自己的想法写下来。",
+      "pinyin": "Lìngwài, zài kànwán yì piān wénzhāng huò yì běn shū zhīhòu, hái kěyǐ bǎ tā de zhǔyào nèiróng hé zìjǐ de xiǎngfǎ xiě xialai."
+     },
+     {
+      "zh": "然而，你不能完全相信书本上的内容，要有自己的看法和判断。",
+      "pinyin": "Rán'ér, nǐ bù néng wánquán xiāngxìn shūběn shang de nèiróng, yào yǒu zìjǐ de kànfǎ hé pànduàn."
+     },
+     {
+      "zh": "坚持做读书笔记，对提高阅读能力有很大帮助。",
+      "pinyin": "Jiānchí zuò dúshū bǐjì, duì tígāo yuèdú nénglì yǒu hěn dà bāngzhù."
+     }
+    ],
+    "new_words": [
+     {
+      "n": 20,
+      "zh": "文章",
+      "pinyin": "wénzhāng",
+      "pos": "n.",
+      "en": "essay, article",
+      "text": 4
+     },
+     {
+      "n": 21,
+      "zh": "之",
+      "pinyin": "zhī",
+      "pos": "part.",
+      "en": "connecting the modifier and the word modified",
+      "text": 4
+     },
+     {
+      "n": 22,
+      "zh": "内容",
+      "pinyin": "nèiróng",
+      "pos": "n.",
+      "en": "content",
+      "text": 4
+     },
+     {
+      "n": 23,
+      "zh": "然而",
+      "pinyin": "rán'ér",
+      "pos": "conj.",
+      "en": "but, however",
+      "text": 4
+     },
+     {
+      "n": 24,
+      "zh": "看法",
+      "pinyin": "kànfǎ",
+      "pos": "n.",
+      "en": "viewpoint, opinion",
+      "text": 4
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "kind": "narrative",
+    "lines": [
+     {
+      "zh": "“读书好（hǎo），读好（hǎo）书，好（hào）读书”。",
+      "pinyin": "“Dú shū hǎo, dú hǎo shū, hào dú shū”."
+     },
+     {
+      "zh": "虽然这句话只用了三个相同的汉字，但是不同的顺序却表示了不同的意思。",
+      "pinyin": "Suīrán zhè jù huà zhǐ yòngle sān ge xiāngtóng de Hànzì, dànshì bù tóng de shùnxù què biǎoshìle bù tóng de yìsi."
+     },
+     {
+      "zh": "首先，“读书好”说的是读书有很多好处；其次，每个人的时间都是有限的，不可能把世界上每一本书都读完，所以要读好的书；最后，“好读书”就是要养成阅读的习惯，使读书真正成为自己的兴趣爱好。",
+      "pinyin": "Shǒuxiān, “dú shū hǎo” shuō de shì dú shū yǒu hěn duō hǎochù; qícì, měi ge rén de shíjiān dōu shì yǒuxiàn de, bù kěnéng bǎ shìjiè shang měi yì běn shū dōu dúwán, suǒyǐ yào dú hǎo de shū; zuìhòu, “hào dú shū” jiù shì yào yǎngchéng yuèdú de xíguàn, shǐ dú shū zhēnzhèng chéngwéi zìjǐ de xìngqù àihào."
+     },
+     {
+      "zh": "阅读有许多好处，它能丰富你的知识，让你找到解决问题的办法；同时，它还会丰富你的情感，使你的生活更精彩。",
+      "pinyin": "Yuèdú yǒu xǔduō hǎochù, tā néng fēngfù nǐ de zhīshi, ràng nǐ zhǎodào jiějué wèntí de bànfǎ. Tóngshí, tā hái huì fēngfù nǐ de qínggǎn, shǐ nǐ de shēnghuó gèng jīngcǎi."
+     },
+     {
+      "zh": "所以，让阅读成为你的习惯吧！",
+      "pinyin": "Suǒyǐ, ràng yuèdú chéngwéi nǐ de xíguàn ba!"
+     }
+    ],
+    "new_words": [
+     {
+      "n": 25,
+      "zh": "相同",
+      "pinyin": "xiāngtóng",
+      "pos": "adj.",
+      "en": "same",
+      "text": 5
+     },
+     {
+      "n": 26,
+      "zh": "顺序",
+      "pinyin": "shùnxù",
+      "pos": "n.",
+      "en": "order, sequence",
+      "text": 5
+     },
+     {
+      "n": 27,
+      "zh": "表示",
+      "pinyin": "biǎoshì",
+      "pos": "v.",
+      "en": "to express, to indicate",
+      "text": 5
+     },
+     {
+      "n": 28,
+      "zh": "养成",
+      "pinyin": "yǎngchéng",
+      "pos": "v.",
+      "en": "to develop, to form",
+      "text": 5
+     },
+     {
+      "n": 29,
+      "zh": "同时",
+      "pinyin": "tóngshí",
+      "pos": "conj.",
+      "en": "at the same time, meanwhile",
+      "text": 5
+     },
+     {
+      "n": 30,
+      "zh": "精彩",
+      "pinyin": "jīngcǎi",
+      "pos": "adj.",
+      "en": "wonderful, splendid",
+      "text": 5
+     }
+    ]
+   }
+  ],
+  "grammar": [
+   {
+    "n": 1,
+    "title_zh": "连",
+    "explanation_zh": "“连”，介词，表示强调，常用“连……也/都……”结构。说话人通过强调一项极端的例子来说明另一种情况。“连”的后边，可以是主语。例如：（1）（2）\n“连”的后边，也可以是前置的宾语。例如：（3）",
+    "explanation_en": "The preposition “连” is often used in the structure “连……也/都……” for emphasis. The speaker explains another kind of situation by emphasizing an extreme case. The noun following “连” can be the subject. For example: (1) (2)\nThe noun following “连” can also be a prepositive object. For example: (3)",
+    "examples": [
+     {
+      "n": 1,
+      "zh": "如果连你自己都不喜欢自己，又怎么能让别人喜欢你呢？"
+     },
+     {
+      "n": 2,
+      "zh": "广告越来越多，几乎无处不在。不只是电视上有广告，公共汽车、地铁上也有很多广告，连我住的楼的电梯里都有三个广告。"
+     },
+     {
+      "n": 3,
+      "zh": "你太厉害了！连中文报纸都看得懂。"
+     }
+    ],
+    "practice_instruction_zh": "完成句子",
+    "practice": [
+     {
+      "n": 1,
+      "zh": "________，小孩子更拿不动了。",
+      "hint_zh": "连"
+     },
+     {
+      "n": 2,
+      "zh": "________，我们更解决不了了。",
+      "hint_zh": "连"
+     },
+     {
+      "n": 3,
+      "zh": "安娜因为这件事很生气，________。",
+      "hint_zh": "连"
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "title_zh": "否则",
+    "explanation_zh": "“否则”，连词，是“如果不是这样”的意思。“否则”后面的句子表示从前面句子推论出的结果，或者提供另一种选择。例如：",
+    "explanation_en": "The conjunction “否则” means “if not..., then...”. The sentence following it indicates the result inferred from the previous sentence or offers another choice. For example:",
+    "examples": [
+     {
+      "n": 1,
+      "zh": "他一定有重要的事找你，否则不会打这么多次电话来。"
+     },
+     {
+      "n": 2,
+      "zh": "你最好下午四点前去公司找她，否则就明天早上再去。"
+     },
+     {
+      "n": 3,
+      "zh": "看来要想考好，不但要认真复习，还得注意考试的方法，否则会做的题也没时间做了。"
+     }
+    ],
+    "practice_instruction_zh": "完成句子",
+    "practice": [
+     {
+      "n": 1,
+      "zh": "理想的广告不应该太长，________。",
+      "hint_zh": "否则"
+     },
+     {
+      "n": 2,
+      "zh": "要想减肥成功，一定要坚持，________。",
+      "hint_zh": "否则"
+     },
+     {
+      "n": 3,
+      "zh": "去美国留学前应该先学好英语，________。",
+      "hint_zh": "否则"
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "title_zh": "无论",
+    "explanation_zh": "“无论”，连词，表示在任何条件下结果或结论都不会改变，常用“无论……都/也……”结构。“无论”后面可以是表示选择关系的并列成分，也可以是表示任指的疑问代词。例如：\n【比一比 无论—不管】\n相同点：都可做连词，表示在任何条件下结果或结论都不会改变，常跟“都、也”一起用。两者后都可加表示任指的疑问代词，或者选择关系的并列成分。\n无论/不管干什么事情，最好都能提前做好计划。\n无论/不管是烦恼的事，还是愉快的事，我每天都会在日记里记下来。\n不同点：\n1.“不管”多用于口语，后面不能用“如何、是否”等文言色彩的词；“无论”多用于书面语，可接“如何、是否”。\n无论如何，我都不会离开你。\n2.“不管”后可用正反形式；“无论”后用正反形式时，一般在正反形式中间加“还是、跟、与”。\n不管热不热，他总是穿这么多。\n无论/不管热还是不热，他总是穿这么多。",
+    "explanation_en": "The conjunction “无论” means the result or conclusion won’t change under any circumstances, usually used in the structure “无论……都/也……”. It can be followed by coordinate alternatives, or an interrogative pronoun referring to anybody or anything. For example:\n[Compare 无论—不管]\nSimilarity: Both can be used as conjunctions, usually together with “都/也”, to indicate that the result or conclusion won’t change under any circumstances. Both can be followed by an interrogative pronoun referring to anybody or anything or by coordinate alternatives.\nDifferences:\n1. “不管” is often used in spoken Chinese and cannot take formal and classical words such as “如何” and “是否”, while “无论”, which is often used in written Chinese, has no such restriction.\n2. “不管” can be followed by an affirmative-negative form; when “无论” is followed by an affirmative-negative form, “还是/跟/与” is usually used between the affirmative and negative constituents.",
+    "examples": [
+     {
+      "n": 1,
+      "zh": "无论是普通杂志，还是著名小说，只要打开它们，就会发现，世界上有那么多有意思的事情，有那么多不一样的生活。"
+     },
+     {
+      "n": 2,
+      "zh": "无论做什么事都要注意方法，正确的方法可以让我们做得更好。"
+     },
+     {
+      "n": 3,
+      "zh": "这次比赛他已经打出了自己最好的水平，无论结果怎么样，我们都应该为他高兴。"
+     }
+    ],
+    "practice_instruction_zh": "完成句子",
+    "practice": [
+     {
+      "n": 1,
+      "zh": "________，她都非常认真。",
+      "hint_zh": "无论"
+     },
+     {
+      "n": 2,
+      "zh": "做事情如果不注意方法，________。",
+      "hint_zh": "无论"
+     },
+     {
+      "n": 3,
+      "zh": "________，我们都会为您免费送货。",
+      "hint_zh": "无论"
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "title_zh": "然而",
+    "explanation_zh": "“然而”，连词，用在后半句的开头，表示转折，多用于书面语。“然而”后可加逗号，表示停顿。例如：",
+    "explanation_en": "The conjunction “然而” is used at the beginning of the second half of a sentence to indicate a turn in meaning, usually used in written Chinese. It can be followed by a comma to indicate a pause. For example:",
+    "examples": [
+     {
+      "n": 1,
+      "zh": "他虽然失败了很多次，然而一直没有放弃。"
+     },
+     {
+      "n": 2,
+      "zh": "很多人觉得自己的生活是幸福的，然而每个人对幸福的看法却不完全相同。"
+     },
+     {
+      "n": 3,
+      "zh": "另外，在看完一篇文章或一本书之后，还可以把它的主要内容和自己的想法写下来。然而，你不能完全相信书本上的内容，要有自己的看法和判断。"
+     }
+    ],
+    "practice_instruction_zh": "完成句子",
+    "practice": [
+     {
+      "n": 1,
+      "zh": "他从小就想成为一名警察，________。",
+      "hint_zh": "然而"
+     },
+     {
+      "n": 2,
+      "zh": "把简单的问题说复杂并不难，________。",
+      "hint_zh": "然而"
+     },
+     {
+      "n": 3,
+      "zh": "有的人觉得只要有钱就会幸福，________。",
+      "hint_zh": "然而"
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "title_zh": "同时",
+    "explanation_zh": "“同时”，连词，有更进一步的意思，常和“又、也、还”连用。例如：（1）（2）\n“同时”，名词，表示动作行为在同一个时间发生，常用结构为“在……（的）同时”。例如：（3）（4）",
+    "explanation_en": "The conjunction “同时” introduces a further remark, often used together with “又/也/还”. For example: (1) (2)\nThe noun “同时” indicates that two actions take place at the same time, often used in the structure “在……（的）同时” (when/while...). For example: (3) (4)",
+    "examples": [
+     {
+      "n": 1,
+      "zh": "因为小孩子的想法没有那么复杂，所以他们总是很快乐。同时，小孩子也是最诚实的。"
+     },
+     {
+      "n": 2,
+      "zh": "阅读有许多好处，它能丰富你的知识，让你找到解决问题的办法；同时，它还会丰富你的情感，使你的生活更精彩。"
+     },
+     {
+      "n": 3,
+      "zh": "李教授讲的这个故事让人觉得好笑的同时，又让人觉得有些难过。"
+     },
+     {
+      "n": 4,
+      "zh": "在学习汉语的同时，我还了解了中国文化，认识了很多中国朋友。"
+     }
+    ],
+    "practice_instruction_zh": "完成句子",
+    "practice": [
+     {
+      "n": 1,
+      "zh": "他是我们的老师，________。",
+      "hint_zh": "同时"
+     },
+     {
+      "n": 2,
+      "zh": "她是著名的科学家，________。",
+      "hint_zh": "同时"
+     },
+     {
+      "n": 3,
+      "zh": "________，还在一个公司工作。",
+      "hint_zh": "在……同时"
+     }
+    ]
+   }
+  ],
+  "exercises": [
+   {
+    "n": "注释3 比一比 做一做",
+    "type_zh": "选词填空（无论／不管）",
+    "instruction_zh": "选词填空",
+    "instruction_en": "Tick or cross",
+    "word_bank": [
+     [
+      "无论",
+      "不管"
+     ]
+    ],
+    "items": [
+     {
+      "n": 1,
+      "zh": "________别人说什么，我只相信自己眼睛看见的东西。",
+      "options": {
+       "无论": "✓",
+       "不管": "✓"
+      },
+      "answer": "无论 ✓　不管 ✓",
+      "answer_ref": {
+       "book": "textbook",
+       "pages": [
+        20
+       ]
+      }
+     },
+     {
+      "n": 2,
+      "zh": "________去不去，最后都别忘了告诉我一声。",
+      "options": {
+       "无论": "×",
+       "不管": "✓"
+      },
+      "answer": "无论 ×　不管 ✓",
+      "answer_ref": {
+       "book": "textbook",
+       "pages": [
+        20
+       ]
+      }
+     },
+     {
+      "n": 3,
+      "zh": "________是工作还是学习，“光说不练”都是不行的。"
+     },
+     {
+      "n": 4,
+      "zh": "虽然压力很大，但是为了我们共同的理想，________如何一定不能放弃。"
+     },
+     {
+      "n": 5,
+      "zh": "阳光、空气和水，________是对动植物，还是对人来说，这三样东西都是不可缺少的。"
+     }
+    ]
+   },
+   {
+    "n": "课文1–3 回答问题",
+    "type_zh": "回答问题",
+    "instruction_zh": "根据课文内容回答问题",
+    "instruction_en": "Answer the questions based on the texts.",
+    "items": [
+     {
+      "n": 1,
+      "zh": "课文1：马克为什么能顺利地跟中国人交流？他有哪些建议？"
+     },
+     {
+      "n": 2,
+      "zh": "课文1：大卫认为对学习汉语的外国人来说，做什么特别难？"
+     },
+     {
+      "n": 3,
+      "zh": "课文2：你认为小雨下次考试可能会用什么答题方法？"
+     },
+     {
+      "n": 4,
+      "zh": "课文2：要想考好，应该注意哪些方面？为什么？"
+     },
+     {
+      "n": 5,
+      "zh": "课文3：小李家的客厅有什么特点？小李有什么好习惯？"
+     },
+     {
+      "n": 6,
+      "zh": "课文3：坚持阅读能给人带来哪些好处？"
+     }
+    ]
+   },
+   {
+    "n": "课文4–5 回答问题",
+    "type_zh": "回答问题",
+    "instruction_zh": "根据课文内容回答问题",
+    "instruction_en": "Answer the questions based on the texts.",
+    "items": [
+     {
+      "n": 1,
+      "zh": "课文4：哪种方法可以提高阅读能力？请你再说一种有效的方法。"
+     },
+     {
+      "n": 2,
+      "zh": "课文4：“书里的知识都是正确的”，这句话对吗？为什么？"
+     },
+     {
+      "n": 3,
+      "zh": "课文5：我们应该选择读什么样的书？为什么？"
+     },
+     {
+      "n": 4,
+      "zh": "课文5：通过学习“读书好，读好书，好读书”这句话，说说汉语有哪些特点。"
+     }
+    ]
+   },
+   {
+    "n": 1,
+    "type_zh": "复述",
+    "instruction_zh": "复述",
+    "instruction_en": "Retell the dialogues.",
+    "items": [
+     {
+      "n": "课文1",
+      "zh": "马克的语气：我学习汉语已经一年了，刚来中国时我的汉语不太好，……"
+     },
+     {
+      "n": "课文2",
+      "zh": "小夏的语气：虽然这次阅读考试我考了80分，但是我还是不太满意。……"
+     },
+     {
+      "n": "课文3",
+      "zh": "小李的语气：通过阅读，我发现世界上有那么多不一样的生活，……"
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "type_zh": "选词填空",
+    "instruction_zh": "选择合适的词语填空",
+    "instruction_en": "Choose the proper words to fill in the blanks.",
+    "word_bank": [
+     [
+      "著名",
+      "有限",
+      "复杂",
+      "顺序",
+      "增加"
+     ],
+     [
+      "准确",
+      "只好",
+      "厉害",
+      "词语",
+      "内容"
+     ]
+    ],
+    "items": [
+     {
+      "n": 1,
+      "zh": "为了保证您和他人的安全，请您按照“先下后上”的________上下车。"
+     },
+     {
+      "n": 2,
+      "zh": "科学的发展确实给生活带来了许多方便，但也给我们________了不少烦恼。"
+     },
+     {
+      "n": 3,
+      "zh": "虽然身高只有一米六零，但他却是世界上________的篮球运动员。"
+     },
+     {
+      "n": 4,
+      "zh": "这个问题有点儿________，你耐心听我给你解释一下，好吗？"
+     },
+     {
+      "n": 5,
+      "zh": "一个人的知识是________的，所以人与人之间需要交流，交流能使我们丰富知识、提高能力。"
+     },
+     {
+      "n": 6,
+      "zh": "A：大夫，我的牙最近疼得________，不知道是怎么回事。 B：你先躺这儿，张开嘴我看看。"
+     },
+     {
+      "n": 7,
+      "zh": "A：你家的孩子真可爱，会说话了吗？ B：会叫“爸爸”“妈妈”了，也能说一些简单的________。"
+     },
+     {
+      "n": 8,
+      "zh": "A：这是复习材料，复习要注意方法，要复习重要内容。 B：时间可能来不及，不过________这样了，这些语法知识太难了。"
+     },
+     {
+      "n": 9,
+      "zh": "A：听说公司明年要搬，到时候我又得重新找房子了。 B：这个消息________吗？我怎么不知道？"
+     },
+     {
+      "n": 10,
+      "zh": "A：你看过那位作家的小说吗？他的小说语言幽默，________丰富。 B：那当然了，他在国内很受欢迎，他的小说已经被翻译成了好几种语言。"
+     }
+    ]
+   },
+   {
+    "n": "扩展 做一做",
+    "type_zh": "选词填空（同字词）",
+    "instruction_zh": "选词填空",
+    "instruction_en": "Choose the proper words to fill in the blanks.",
+    "word_bank": [
+     [
+      "同意",
+      "共同",
+      "相同",
+      "同时"
+     ]
+    ],
+    "items": [
+     {
+      "n": 1,
+      "zh": "幽默是成功者的________特点之一，也是值得我们好好学习的一种生活态度。",
+      "answer": "共同",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        15
+       ]
+      }
+     },
+     {
+      "n": 2,
+      "zh": "A：网上买衣服没法试穿，大小不合适怎么办？ B：没关系，号码不合适的话，店家一般都会________换的。",
+      "answer": "同意",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        15
+       ]
+      }
+     },
+     {
+      "n": 3,
+      "zh": "医生建议大家冬季在选择合适的锻炼方法的________，应该注意运动量不要太大。",
+      "answer": "同时",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        15
+       ]
+      }
+     },
+     {
+      "n": 4,
+      "zh": "中国小孩子的小名一般都比较好听好记，而且很多都是两个________的字，比如“乐乐”“笑笑”“聪聪”等。",
+      "answer": "相同",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        15
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "characters": {
+   "knowledge_title_zh": "同字词",
+   "knowledge_en": "Words with the Same Character",
+   "knowledge_zh": "同：同意、共同、相同、同时\n（1）如果她再坚持一次请我帮忙，我就同意了，可是她没有。\n（2）夫妻之间只有浪漫的爱情是不够的，共同的理想和爱好也很重要。\n（3）他很年轻，可是遇到问题时，却比相同年龄的人更冷静。\n（4）我哥哥今年26岁，在读硕士研究生的同时，还在一家公司工作。",
+   "characters": [
+    {
+     "zh": "同",
+     "note_zh": "同意、共同、相同、同时"
+    }
+   ]
+  },
+  "application": [
+   {
+    "title_zh": "双人活动",
+    "instruction_zh": "互相了解对方阅读中文报纸的情况，完成调查表。",
+    "instruction_en": "Learn about each other’s situations regarding Chinese newspaper reading and complete the questionnaire below.",
+    "example_zh": [
+     "表格：| | 问 | 答 |",
+     "| 1 | 你看过中文报纸吗？（如果没看过，请做第5题） | |",
+     "| 2 | 你为什么选择看中文报纸？ | |",
+     "| 3 | 在阅读中文报纸时，你遇到过哪些困难和问题？ | |",
+     "| 4 | 坚持阅读中文报纸对提高你的中文阅读能力有什么作用？ | |",
+     "| 5 | 你通过什么方式提高你的中文阅读能力？ | |",
+     "| 6 | 你最喜欢看什么中文报纸？为什么？ | |"
+    ]
+   },
+   {
+    "title_zh": "小组活动",
+    "instruction_zh": "不同的作家有不同的性格，他们的书也各有各的特点。向小组成员介绍一下你最喜欢哪位作家，最喜欢看他/她的什么书。（最少用四个下面的结构）",
+    "instruction_en": "Different authors have different personalities, and their works vary in features. Who is your favourite author? Which book of his/hers do you like best? Introduce the author and the book to your group members. (Use at least four of the following structures.)",
+    "example_zh": [
+     "a. 得到很大的提高",
+     "b. 最后只好放弃",
+     "c. 只要打开就会发现",
+     "d. 能帮助我减轻压力",
+     "e. 有用的词语和句子",
+     "f. 自己的看法和判断",
+     "g. 时间都是有限的",
+     "h. 使生活更精彩"
+    ]
+   }
+  ],
+  "culture": {
+   "title_zh": "中国古典文学名著—《西游记》",
+   "body_zh": "《西游记》是中国古代最著名的小说之一，它成书于明朝（1368–1644）中期。这部小说在中国和世界各地广为流传，被翻译成多种文字。小说以民间传说为基础，通过神话的形式，讲述唐僧带领孙悟空、猪八戒和沙僧三个徒弟去西天取经的故事。在取经的路上，师徒四人遇到了很多困难，战胜了无数妖魔，最终取得真经。以《西游记》故事创作的经典动画片《大闹天宫》、电视连续剧及电影等为人们喜闻乐见。",
+   "body_en": "A Classic Work in Chinese Literature - Journey to the West\nJourney to the West, completed in the middle of the Ming Dynasty (1368-1644), is among the most famous novels of ancient China. It has been translated into different languages and is widely read in China as well as in other parts of the world. Based on a folk legend, the novel tells the myths of Monk Tang’s journey with his three disciples, Monkey King, Pigsy and Sandy, to fetch the Buddhist scriptures. On the way, the four of them come across a great many difficulties, defeat myriad demons, and finally achieve their goal. The classic cartoon Fighting against the Heavenly Palace, the TV series and the film based on the novel are still much loved by the people."
+  }
+ },
+ "teacher": {
+  "ref": {
+   "book": "teacher",
+   "pages": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ]
+  },
+  "objectives_zh": [
+   "主题：阅读（1）对话：语言学习、考试情况、阅读习惯（2）短文：阅读方法、阅读的好处",
+   "语言点：学生能够了解并掌握：（1）“连”表示强调（2）“否则”表示推论出的结果或提供另一种选择（3）“无论”表示在任何条件下结果都不会改变　*辨析“无论”和“不管”的异同（4）“然而”表示转折（5）“同时”表示更进一步",
+   "词汇：学生能够：（1）掌握本课30个四级大纲词汇的意义和用法　重点词语：流利、准确、来得及、只好、猜、页、增加、之、看法、相同、表示（2）理解“同”字的组词规律及在词汇中的意义"
+  ],
+  "steps": [
+   {
+    "title_zh": "一 复习旧课",
+    "body_zh": "1 使用生词卡片，快速认读下列词语：\n空儿、永远、方向、优秀、兴奋、建议、关键、发展、条件、低\n2 快速回答问题（与第10课或学生实际生活有关的问题）：\n（1）在选择职业时，收入和兴趣哪个更重要？为什么？\n（2）有人说有钱就会幸福，你同意吗？说说你的想法。\n（3）在你认识的人中，谁是知足常乐的人？\n（4）你认为什么是幸福？你现在幸福吗？\n3 检查作业：\n请3名学生每人介绍一个自己认为很幸福的人。"
+   },
+   {
+    "title_zh": "二 学习新课 1 热身",
+    "body_zh": "热身1：学生两人一组，合作完成；教师指出图片，请学生根据图片说出对应的词语，教师核对答案；教师领读热身1的生词；最后全体学生齐读，教师正音。\n答案：①D　②C　③E　④B　⑤A　⑥F\n热身2：请5个学生分别朗读5个句子；教师领读，在朗读多音字时使用重音；请学生说出“着、数、得、长、把”5个字分别有几个读音，教师归纳并写在黑板上；教师板书“读书好，读好书，好读书”，请学生试着读出这句话，最后标出3个“好”的正确读音；请学生齐读板书的句子，教师正音。\n答案：①别着(zháo)急，马克正开着(zhe)车，他马上就到。\n②小朋友，我们一起数数(shǔshù)字，学数数(shǔshù)。\n③他要求自己每次都得(děi)把汉字写得(de)特别好看。\n④等你长(zhǎng)高了，这条牛仔裤穿起来就不长(cháng)了。\n⑤你帮我把(bǎ)那个没把(bàr)儿的杯子拿过来。\n板书：读书好(hǎo)，读好(hǎo)书，好(hào)读书"
+   },
+   {
+    "title_zh": "2 生词",
+    "body_zh": "（1）生词快速认读及正音\n课文1（对话）：流利、厉害、语法、准确、词语、连\n课文2（对话）：阅读、来得及、复杂、只好、填空、猜、否则\n课文3（对话）：客厅、无论、杂志、著名、页、增加\n课文4（短文）：文章、之、内容、然而、看法\n课文5（短文）：相同、顺序、表示、养成、同时、精彩\n• 教师用PPT或卡片展示并领读生词（带拼音）；\n• 取消拼音，带领学生再次认读；\n• 逐词（不带拼音）闪现，请学生快速认读生词；\n• 请3～5个学生快速随机认读3～5个生词；\n• 最后全体学生快速齐读所有生词。\n注意：生词认读过程中教师始终要注意纠正学生的错误发音。（后课同）\n（2）生词讲解方式\n直观法（图片）：图片类：阅读（热身图片B）、复杂（热身图片E）、猜（热身图片C）、客厅（热身图片D）、杂志（热身图片A）、顺序（排队）\n直观法（实物、符号、视频）：实物类：语法（用教材的语言点，并数有几个语法）、词语（用本课生词表，并数有多少词语）、填空（用教材练习“选择合适的词语填空”的形式）、文章（用某杂志的一篇文章）、页（翻书，指着页面，并数1页、2页、3页……）；符号类：表示（写符号√、×，并配合提问）、相同（展示两个相同的汉字）；视频类：精彩（一个篮球灌篮短视频）、流利（相声“报菜名”的一小段视频）\n提问启发：准确、来得及、只好、增加、之、看法、养成、同时\n教师提问，引导学生说出句子：\n马克的汉语很好，他的发音怎么样？——马克的发音很准确。\n8点上课，7点起床，时间够吗？——7点起床来得及。\n你想去公园，但是突然下雨了，怎么办？——只好明天去。\n我们现在每天上4节课，压力大吗？如果每天上8节课呢？——压力增加了。\n我喜欢画画儿、唱歌、跳舞。——画画儿是我的兴趣之一。\n有的人觉得汉语很难，有的人觉得汉语不难。——人们的看法不一样。\n早睡早起这种生活习惯好吗？——应该养成早睡早起的好习惯。\n……8点到教室，……也是8点到教室。——他们同时到教室。\n（3）字形辨认练习\n教师用卡片或PPT展示，请学生快速辨认并读出，最后给每个字组词。\n厉—历—厅　准—谁　连—过\n阅—问　空—容—客　猜—请—精\n则—利　著—者\n（4）重点生词扩展及常用搭配\n流利—很/比较/非常流利—说得很流利—汉语说得比较流利—他说汉语说得非常流利。\n准确—非常准确—不太准确—说得不太准确—很多句子说得不太准确。\n来得及—7点走来得及—8点走来不及—7点走来得及来不及？—两个小时应该来得及。\n只好—只好放弃—最后只好放弃了—时间来不及，最后只好放弃了。\n猜—猜答案—猜一个答案—随便猜了一个答案，结果一个都没猜对。\n页—打开第一页—一页书—3分钟读一页书。\n增加—增加知识—坚持阅读能增加知识。\n之—之一/前/后—我的好朋友之一—看完一本书之后—看完书之后，把主要内容记下来。\n看法—我的看法—自己的看法和判断—我们看书要有自己的看法和判断。\n相同—相同的汉字—看法不相同—每个人的看法可能都是不相同的。\n表示—表示客气—表示感谢—表示不同的意思—这个句子的汉字相同，却表示了不同的意思。"
+   },
+   {
+    "title_zh": "3 语言点（1）连",
+    "body_zh": "① 语言点解析\n“连”，介词，表示强调，常用“连……也/都……”结构。说话人通过强调一项极端或突出的例子，来说出一般的情况或结论。\n【“连”强调宾语】\n② 语言点导入\n• 利用图片，提问导入。\n教师向学生展示自己满满的日程表。\n教师：你们觉得老师忙吗？有休息的时间吗？\n学生：老师太忙了，连休息的时间都没有。\n③ 语言点操练\n• 利用热身1图片A，提问操练。\n教师：马克的中文特别好，你们觉得他看得懂中文杂志吗？\n学生：马克的中文特别好，连中文杂志都看得懂。\n• 教师展示一些笔画比较复杂的汉字，引导操练。\n教师：马克每天练习写汉字，这是他写的汉字。\n学生：他太厉害了！连这么复杂的汉字都会写。\n④ 语言点运用\n请学生两人一组，根据提示补全对话，并分角色表演。\nA：朋友送给我两张音乐会的票，周末我们一起去听吧！听说这次的音乐会特别好，很多人想去听，可是________。（连、票）\nB：我也很想和你一起去，可是我最近太忙了，________。（连、休息的时间）\nA：工作再忙也要注意放松啊！就周六一个下午的时间，我们可以骑车去，正好你也可以锻炼一下身体。\nB：嗯，好，不过我想我们还是坐公共汽车去吧。\nA：公共汽车人太多了，还是骑车去比较方便。\nB：这个我也知道，可是________。（连、自行车）\n参考答案：连票都买不到\n连休息的时间都没有\n我连自行车都没有\n【“连”强调主语】\n① 语言点导入\n利用图片，提问导入。\n教师向学生展示一张很难的汉字的图片。\n教师：老师不认识这个汉字，你们知道这个汉字怎么读吗？\n学生：这个汉字连老师都不认识，我们就更不可能认识了。\n② 语言点操练\n• 利用图片，引导操练。\n教师展示两张图片：地铁上有很多广告，电梯里也有广告，请学生看图说句子。\n学生：不仅地铁里有广告，连这个楼的电梯里都挂着三个广告。\n• 联系生活实际，提问操练。\n教师：你能听懂上海话吗？\n学生：连很多中国人都听不懂上海话，我怎么能听懂呢？\n③ 语言点运用\n请学生根据句子意思，连线组成5个完整的句子，并朗读。\nI. 他说的话　II. 她做这件事　III. 马丁在准备下个月的考试　IV. 他们队踢得不怎么样　V. 那个电影特别无聊\nA. 连周末都在图书馆学习　B. 连二班都赢不了　C. 连小林都没能坚持看完　D. 连她爸妈都不知道　E. 连中国人都很难听懂\n参考答案：I. E　II. D　III. A　IV. B　V. C"
+   },
+   {
+    "title_zh": "3 语言点（2）否则",
+    "body_zh": "① 语言点解析\n“否则”，连词，表示“如果不是这样”的意思。“否则”后面的句子表示从前面句子推论出的结果，或者提供另一种选择。\n② 语言点导入\n• 利用热身1图片F，提问导入。\n教师：学习语法时应该做笔记吗？如果不做笔记会怎么样呢？\n学生：学习语法时应该做笔记，否则，回家很容易忘记。\n• 联系生活实际，提问导入。\n教师：经理给你安排了很多工作，为了顺利完成，你应该怎么做？如果不这样做呢？\n学生：我应该做好时间计划，否则，我一定会手忙脚乱/没法顺利完成。\n③ 语言点操练\n联系生活实际，提问操练。\n• 教师：如果你买的电脑有质量问题，想去换，你应该带着什么？\n学生：我应该带着购物小票，否则，商场没办法给我换。\n• 教师：我最近常常咳嗽，医生说是因为抽烟。\n学生：医生说得对，你以后别抽烟了，否则，你的咳嗽会更严重。\n④ 语言点运用\n请学生两人一组，根据提示用“否则”补全对话，并分角色朗读。\nI. A：今天的会议马经理怎么来晚了呢？\nB：________。\nII. A：小丽为什么每天都跟小刚一起吃午饭呢？\nB：________。\nIII. A：妈，我不想学打网球了，太累了，又很难学。\nB：________。\n参考答案：I. 他肯定有其他重要的事，否则，他不会迟到的\nII. 小丽一定也喜欢小刚，否则，她不会每天都跟小刚一起吃饭\nIII. 遇到困难别这么快放弃，否则，以后做什么事情都不会成功的"
+   },
+   {
+    "title_zh": "3 语言点（3）无论",
+    "body_zh": "① 语言点解析\n“无论”，连词，表示在任何条件下结果或结论都不会改变，常用“无论……都/也……”结构。“无论”后面可以是表示选择关系的并列成分，也可以是表示任指的疑问代词。常用格式：\n无论 + ……还是…… / 谁 / 什么 / 什么时候 / 哪儿/哪里/什么地方 / 哪 / 多少/几 / 怎么（样） / 多（么），都/也……\n② 语言点导入\n• 利用热身图片A进行导入。\n教师：你喜欢体育杂志，也喜欢中文杂志，还喜欢经济杂志……\n学生：无论什么杂志，我都喜欢。\n• 联系生活实际，提问导入。\n教师：你最好的朋友来看你，你会去机场接他/她吗？如果是晚上11点到呢？\n学生：无论他/她几点到，我都会去机场接他/她。\n③ 语言点操练\n创设情境，提问操练。\n• 教师：学习如果注意方法会提高得很快。工作也是一样。别的事情呢？\n学生：无论做什么事情，都要注意方法。\n• 教师：我想买沙发，请问这种沙发怎么样？\n学生：无论从价格方面看，还是从质量上看，这种沙发都值得购买。\n④ 语言点运用\n请学生三人一组，根据图片说出三个不同的句子。\n（图片：一位女士坐在电脑键盘前，双手抱头，面露苦恼。）\n参考答案：无论多晚，她都想把工作做完。\n她无论怎么想，都不知道应该怎么写。\n她觉得无论是成功还是失败，自己都努力了。\n⑤ 比一比：无论—不管\n按照教材中的辨析步骤进行。"
+   },
+   {
+    "title_zh": "3 语言点（4）然而",
+    "body_zh": "① 语言点解析\n“然而”，连词，用在后半句的开头，表示转折，多用于书面语。“然而”后可加逗号，表示停顿。\n② 语言点导入\n联系生活实际，提问导入。\n• 教师：我们觉得自己做的都是对的，你爸妈总能理解你吗？\n学生：我们觉得自己做的都是对的，然而我爸妈不是总能理解我。\n• 教师：人们常说“机会是留给有准备的人”，所以我们自己做好准备就可以了。\n学生：这句话说得对，然而，只做好准备是不够的，我们还要积极去找机会。\n③ 语言点操练\n创设情境，引导操练。\n• 教师：女人生完小孩一般会变胖，我姐姐……\n学生：女人生完小孩以后，一般都会变胖，然而我姐却没变。\n• 教师：开始我们都以为中国队会赢，……\n学生：开始我们都以为中国队会赢，然而最后却输了。\n④ 语言点运用\n请学生根据提示用“然而”补全下面的句子，并朗读。\nI. 我以为他脾气很好，________。\nII. 很多刚毕业的学生认为应该找工资高的工作，________。\nIII. 人们常说“便宜没好货，好货不便宜”，________。\n参考答案：I. 然而小林说他常常跟别人发脾气\nII. 然而我却不这么认为\nIII. 然而质量好的东西有时候也会很便宜"
+   },
+   {
+    "title_zh": "3 语言点（5）同时",
+    "body_zh": "① 语言点解析\n“同时”，连词，有更进一步的意思，常和“又、也、还”连用；“同时”还可做名词，表示动作行为在同一时间发生，常用结构为“在……（的）同时”。\n② 语言点导入\n联系学生实际，提问导入。\n• 教师：阅读能丰富你的知识吗？\n学生：能。\n教师：能使你的生活更精彩吗？\n学生：能。\n教师：阅读能丰富你的知识，同时，还能使你的生活更精彩。\n• 教师：很多人每天都长时间坐在电脑前工作，身体健康慢慢出现了问题。所以人们应该……\n学生：人们在努力工作的同时，也应该坚持运动。\n③ 语言点操练\n联系生活实际，提问操练。\n• 教师：这个工作非常重要，这个工作也非常复杂。\n学生：这个工作非常重要，同时，也非常复杂。\n• 教师：来中国上学对你有什么好处？\n学生：在学习汉语的同时，我还了解了中国文化。\n④ 语言点运用\n请学生选择“同时”在句子中恰当的位置。\nI. 我A在中国学习的B，还C顺便去了很多地方D。\nII. 每个人A都有自己不同的生活，B你会羡慕别人，C别人也会D羡慕你。\nIII. 夫妻应该A互相理解，在B接受他/她优点的C，也要D接受他/她的缺点。\n参考答案：I. B　II. C　III. C"
+   },
+   {
+    "title_zh": "4 课文",
+    "body_zh": "（1）就课文内容，教师将下列问题写在黑板上或用PPT展示（或教师给学生发放问题单）：（见 text_questions）\n（2）要求学生带着问题，听两遍录音并回答问题，教师给出答案；\n（3）学生打开课本，教师逐句播放录音，学生看课本听第二次录音并跟读；\n（4）教师领读一遍课文；\n（5）全班一起大声齐读一遍课文；\n（6）请2～3组学生分角色朗读课文，教师正音；\n（7）做以下课文扩展练习：\n对话课文：教师带领学生根据问题单上问题的答案叙述课文内容，并请学生单个复述。\n课文1：马克来中国才一年，汉语说得很流利。但是他觉得他的语法不太好，很多句子说得不太准确。他经常和中国人聊天，还坚持看中文报纸，学到了很多新词语。\n课文2：小雨对自己的成绩不太满意，因为阅读考试题太多，他没做完。他先做了比较难、比较复杂的题，花了很多时间，结果时间来不及了，只好放弃后面简单的题。小夏有几个选择题不会做，也没猜对。\n课文3：小李的客厅到处是书。无论是普通杂志，还是著名小说，他都喜欢。他认为坚持阅读能增加知识，还能减轻压力。\n短文课文：请学生根据课文内容，补全下面的语段，并请学生单个复述朗读。\n课文4：……（做读书笔记）能有效提高阅读能力。在看完一篇文章或一本书……（之后），把有用的……（词语和句子）记下来，或者记下来它的……（主要内容）。然而，你不能完全相信书上的内容，要有自己的……（看法和判断）。\n课文5：“读书好，读好书，好读书”这句话中三个汉字……（相同），但是……（顺序）不同，所以表示了……（不同的意思）。读书有很多好处，每个人都应该在……（有限的时间）内，读好的书，……（养成）爱阅读的兴趣爱好。"
+   },
+   {
+    "title_zh": "5 扩展",
+    "body_zh": "（1）领读“同意、共同、相同、同时”四个同字词，请学生说一说“同”字在词中的位置和意义。“同”的义项：\n① 一样，没有区别：相同、同意、同时\n② 共同，大家都有的：共同\n（2）请学生说说还有哪些带“同”字的词，教师列在黑板上，如果没有，可补充下列真假同字词，最后请学生判断正误，教师给出正确答案。\n同学　同事　同龄　同票（×）\n不同　很同（×）　一同　认同\n（3）请学生完成“选词填空”练习，教师给出答案。\n参考答案：①共同　②同意　③同时　④相同"
+   },
+   {
+    "title_zh": "6 补充课堂活动",
+    "body_zh": "学生5人一组，分别用本课所学的5个语言点说一个句子，并写在一张纸上。然后与其他组写的句子交换，每组按照交换后的5个句子一起编一个小故事，最后请每组的代表给全班讲故事。"
+   },
+   {
+    "title_zh": "7 文化",
+    "body_zh": "教师引导学生了解中国古典文学名著之一《西游记》，可根据需求和时间安排，进行以下参考活动：\n• 展示图片，认识《西游记》中的主要人物角色，说一说这些人物有哪些主要特点；\n• 利用多媒体，播放《西游记》部分电视或动画内容；\n• 选取一段故事情景，请学生4人一组模仿表演。"
+   },
+   {
+    "title_zh": "8 布置作业",
+    "body_zh": "• 每个生词写3遍；\n• 用本课所学的5个语言点分别造一个句子。"
+   }
+  ],
+  "notes_zh": [
+   "注意：生词认读过程中教师始终要注意纠正学生的错误发音。（后课同）（生词）",
+   "比一比：无论—不管——按照教材中的辨析步骤进行。（语言点3）",
+   "字形辨认：厉—历—厅　准—谁　连—过　阅—问　空—容—客　猜—请—精　则—利　著—者（生词）",
+   "“同”的义项：① 一样，没有区别：相同、同意、同时　② 共同，大家都有的：共同；真假同字词：同学　同事　同龄　同票（×）　不同　很同（×）　一同　认同（扩展）"
+  ],
+  "warmup_answers_zh": [
+   "热身1 答案：①D　②C　③E　④B　⑤A　⑥F",
+   "热身2 答案：①别着(zháo)急，马克正开着(zhe)车，他马上就到。②小朋友，我们一起数数(shǔshù)字，学数数(shǔshù)。③他要求自己每次都得(děi)把汉字写得(de)特别好看。④等你长(zhǎng)高了，这条牛仔裤穿起来就不长(cháng)了。⑤你帮我把(bǎ)那个没把(bàr)儿的杯子拿过来。板书：读书好(hǎo)，读好(hǎo)书，好(hào)读书"
+  ],
+  "text_questions": [
+   {
+    "text": 1,
+    "q_zh": "马克学了多长时间汉语了？"
+   },
+   {
+    "text": 1,
+    "q_zh": "大卫觉得马克的汉语怎么样？"
+   },
+   {
+    "text": 1,
+    "q_zh": "马克认为自己汉语有哪些问题？"
+   },
+   {
+    "text": 1,
+    "q_zh": "马克用哪些方法学习汉语？"
+   },
+   {
+    "text": 2,
+    "q_zh": "小雨对自己的成绩满意吗？为什么？"
+   },
+   {
+    "text": 2,
+    "q_zh": "小雨为什么认为考试时间来不及？"
+   },
+   {
+    "text": 2,
+    "q_zh": "小夏有几个选择题不会做，他猜对了吗？"
+   },
+   {
+    "text": 3,
+    "q_zh": "小李家的客厅有什么特点？"
+   },
+   {
+    "text": 3,
+    "q_zh": "小李喜欢看什么样的书？"
+   },
+   {
+    "text": 3,
+    "q_zh": "坚持阅读给小李带来哪些好处？"
+   },
+   {
+    "text": 4,
+    "q_zh": "根据调查，阅读能力好的人工作怎么样？"
+   },
+   {
+    "text": 4,
+    "q_zh": "最简单的做读书笔记的方法是什么？"
+   },
+   {
+    "text": 4,
+    "q_zh": "我们应该完全相信书上的内容吗？"
+   },
+   {
+    "text": 5,
+    "q_zh": "“读书好，读好书，好读书”这句话应该怎么读？"
+   },
+   {
+    "text": 5,
+    "q_zh": "这句话有什么特点？"
+   },
+   {
+    "text": 5,
+    "q_zh": "我们为什么要读好书？"
+   },
+   {
+    "text": 5,
+    "q_zh": "“好读书”的意思是什么？"
+   }
+  ]
+ },
+ "workbook": {
+  "ref": {
+   "book": "workbook",
+   "pages": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+   ]
+  },
+  "sections": [
+   {
+    "n": "一、听力 第一部分",
+    "type_zh": "听力 第一部分",
+    "instruction_zh": "第1–5题：判断对错。",
+    "items": [
+     {
+      "n": "例1",
+      "zh": "★他打算下午去银行。",
+      "transcript_zh": "我想去办个信用卡，今天下午你有时间吗？陪我去一趟银行？",
+      "answer": "✓",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        4
+       ]
+      }
+     },
+     {
+      "n": "例2",
+      "zh": "★他喜欢看电视广告。",
+      "transcript_zh": "现在我很少看电视，其中一个原因是，广告太多了，不管什么时间，也不管什么节目，只要你打开电视，总能看到那么多的广告，浪费我的时间。",
+      "answer": "×",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        4
+       ]
+      }
+     },
+     {
+      "n": 1,
+      "zh": "★大多数孩子喜欢爸爸给他读书。",
+      "transcript_zh": "这次调查发现，超过70%的儿童更愿意让爸爸给自己读书。为什么会出现这种情况？可能是因为父亲平时陪孩子玩儿的时间太少。",
+      "answer": "✓",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     },
+     {
+      "n": 2,
+      "zh": "★他被那个故事感动了。",
+      "transcript_zh": "等车的时候，我随便买了本杂志，看了没几页，就看到一个小故事，虽然这个故事不长，但是写得却很好，让我很感动。",
+      "answer": "✓",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     },
+     {
+      "n": 3,
+      "zh": "★要多跟人交流。",
+      "transcript_zh": "多与人交流当然有很多好处。通过交流，你不但可以增加对别人的了解，而且可以从不同的人那里得到不同的知识、经验、快乐等。",
+      "answer": "✓",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     },
+     {
+      "n": 4,
+      "zh": "★他现在是翻译。",
+      "transcript_zh": "经过这段时间的学习，他的汉语水平提高了不少，不但可以听懂一些较短的句子，还可以进行简单的交流，现在即使不用翻译也能理解是什么意思了。",
+      "answer": "×",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     },
+     {
+      "n": 5,
+      "zh": "★老师让大家留下美好的回忆。",
+      "transcript_zh": "老教授对新生说：“从今天起，如果你每天用100个字把自己的生活写下来，毕业时你将会得到一本10多万字的书，内容就是你4年大学生活的美好回忆。”",
+      "answer": "✓",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "一、听力 第二部分",
+    "type_zh": "听力 第二部分",
+    "instruction_zh": "第6–12题：请选出正确答案。",
+    "items": [
+     {
+      "n": "例",
+      "zh": "男的主要是什么意思？",
+      "options": {
+       "A": "去机场",
+       "B": "快到了",
+       "C": "油是满的",
+       "D": "有加油站"
+      },
+      "transcript_zh": "女：该加油了，去机场的路上有加油站吗？ 男：有，你放心吧。 问：男的主要是什么意思？",
+      "answer": "D",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        5
+       ]
+      }
+     },
+     {
+      "n": 6,
+      "zh": "男的认为考大学什么最重要？",
+      "options": {
+       "A": "专业",
+       "B": "学校",
+       "C": "兴趣",
+       "D": "老师"
+      },
+      "transcript_zh": "女：我女儿明年要考大学了，你觉得是学校重要还是专业重要？ 男：我觉得主要得考虑孩子喜欢学什么。 问：男的认为考大学什么最重要？",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     },
+     {
+      "n": 7,
+      "zh": "女的为什么不会做这个题？",
+      "options": {
+       "A": "很复杂",
+       "B": "不会猜",
+       "C": "没听懂",
+       "D": "没人教"
+      },
+      "transcript_zh": "男：这个填空题不是很复杂，你再好好想一下。 女：今天上课的时候我没听懂，而且填空题连猜都没办法猜，你教我怎么做吧。 问：女的为什么不会做这个题？",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     },
+     {
+      "n": 8,
+      "zh": "女的在找什么？",
+      "options": {
+       "A": "手机",
+       "B": "关教授",
+       "C": "笔记",
+       "D": "电话号码"
+      },
+      "transcript_zh": "女：我记得上次关教授把他的手机号码给我了，可是不知道写哪儿了。 男：你当时好像是在记笔记，你看看是不是写在那儿上面了。 问：女的在找什么？",
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     },
+     {
+      "n": 9,
+      "zh": "女的是什么意思？",
+      "options": {
+       "A": "面试很重要",
+       "B": "不用担心面试",
+       "C": "不能改变顺序",
+       "D": "下次早点儿来"
+      },
+      "transcript_zh": "男：您好，请问我能换一下面试的时间吗？我家里突然有点儿急事儿。 女：对不起，先生，面试都是按顺序安排好的。 问：女的是什么意思？",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     },
+     {
+      "n": 10,
+      "zh": "男的为什么向女的借笔记？",
+      "options": {
+       "A": "没去上课",
+       "B": "没记准新词",
+       "C": "没听懂语法",
+       "D": "没带笔记"
+      },
+      "transcript_zh": "男：英语课笔记能借我看一下吗？昨天课上增加了好多新词，我记得不太准确。 女：可以，最后几页都是昨天课上讲的主要的词语和语法内容。 问：男的为什么向女的借笔记？",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     },
+     {
+      "n": 11,
+      "zh": "女的什么意思？",
+      "options": {
+       "A": "小说很贵",
+       "B": "应该买报纸",
+       "C": "男的不爱看书",
+       "D": "书在桌子上"
+      },
+      "transcript_zh": "男：我昨天买的那本小说哪儿去了？我记得放在桌子上了。 女：奇怪，你一般连报纸都不买，什么时候开始有兴趣看书了啊？ 问：女的什么意思？",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     },
+     {
+      "n": 12,
+      "zh": "女的是什么意思？",
+      "options": {
+       "A": "结果不重要",
+       "B": "比赛有意思",
+       "C": "没赢很难过",
+       "D": "时间来得及"
+      },
+      "transcript_zh": "男：只差一点儿就赢了，他现在肯定很难过。 女：他已经打出了自己最好的水平，无论结果怎么样，我们都应该为他高兴。 问：女的是什么意思？",
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "一、听力 第三部分",
+    "type_zh": "听力 第三部分",
+    "instruction_zh": "第13–22题：请选出正确答案。",
+    "items": [
+     {
+      "n": "例",
+      "zh": "会议几点开始？",
+      "options": {
+       "A": "两点",
+       "B": "3点",
+       "C": "15：30",
+       "D": "18：00"
+      },
+      "transcript_zh": "男：把这个材料复印5份，一会儿拿到会议室发给大家。 女：好的。会议是下午三点吗？ 男：改了。三点半，推迟了半个小时。 女：好，602会议室没变吧？ 男：对，没变。 问：会议几点开始？",
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        6
+       ]
+      }
+     },
+     {
+      "n": 13,
+      "zh": "那个题怎么了？",
+      "options": {
+       "A": "比较难",
+       "B": "应该改",
+       "C": "可以猜",
+       "D": "没问题"
+      },
+      "transcript_zh": "女：那个题的答案有问题吧？ 男：你是说那个填空题吗？ 女：是啊，这里填“举办”“举行”都可以。 男：对，这个题有问题，得重新改改。 问：那个题怎么了？",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     },
+     {
+      "n": 14,
+      "zh": "关于男的，可以知道：",
+      "options": {
+       "A": "汉语说得不太好",
+       "B": "知道很多汉语词",
+       "C": "觉得女的很厉害",
+       "D": "刚刚开始学汉语"
+      },
+      "transcript_zh": "女：你的汉语说得很流利，词语用得很丰富。 男：真的吗？谢谢！其实没你说得那么厉害。 女：你学汉语多长时间了？ 男：差不多有三年了吧。 问：关于男的，可以知道：",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     },
+     {
+      "n": 15,
+      "zh": "男的认为应该怎么复习？",
+      "options": {
+       "A": "用很长时间",
+       "B": "多看材料",
+       "C": "复习主要的",
+       "D": "注意语法"
+      },
+      "transcript_zh": "男：复习得怎么样了？ 女：材料这么多，我估计看不完了。 男：来得及，复习要注意方法，看主要内容。 女：只能这样了，这些语法知识太难了。 问：男的认为应该怎么复习？",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     },
+     {
+      "n": 16,
+      "zh": "妈妈让孩子做什么？",
+      "options": {
+       "A": "讲故事",
+       "B": "做蛋糕",
+       "C": "看完书",
+       "D": "做计划"
+      },
+      "transcript_zh": "男：妈妈，后面这几页书我明天再看行吗？ 女：别养成坏习惯，记住，今天能完成的事情一定不要留到明天做。 男：那您快把刚才没吃完的蛋糕拿出来，我现在就把它吃光！ 女：你这孩子，就知道吃。 问：妈妈让孩子做什么？",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     },
+     {
+      "n": 17,
+      "zh": "女的找李校长做什么？",
+      "options": {
+       "A": "送材料",
+       "B": "取报纸",
+       "C": "还杂志",
+       "D": "送礼物"
+      },
+      "transcript_zh": "女：打扰一下，请问李校长在吗？ 男：他去吃午饭了，您有什么事情吗？ 女：我有些材料要交给他，你知道他什么时候回来吗？ 男：他应该很快就会回来了，您等等他吧。 问：女的找李校长做什么？",
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     },
+     {
+      "n": 18,
+      "zh": "这个杂志没有以下哪个特点？",
+      "options": {
+       "A": "内容精彩",
+       "B": "图片漂亮",
+       "C": "价格便宜",
+       "D": "很吸引人"
+      },
+      "transcript_zh": "女：现在哪种体育杂志比较好看呢？ 男：你知道《体育世界》吗？那个杂志的内容比较精彩，图片很漂亮，很吸引人。 女：我怎么听说买那本杂志的人很少呢？ 男：主要是它价格定得太高。不少人虽然喜欢，但因为觉得太贵只好放弃了。 问：这个杂志没有以下哪个特点？",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     },
+     {
+      "n": 19,
+      "zh": "根据这段话，新闻工作者要学会什么？",
+      "options": {
+       "A": "获得机会",
+       "B": "选择新闻",
+       "C": "关心大家",
+       "D": "及时看报"
+      },
+      "transcript_zh": "（第19到20题是根据下面一段话：）对新闻工作者来说，获得及时准确的消息特别重要。除此之外，还要学会选择，因为生活中每天都会发生各种各样的事情，但不是所有的都值得写在报纸上，只有那些热点问题才会得到大家的注意和关心。 19. 根据这段话，新闻工作者要学会什么？",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     },
+     {
+      "n": 20,
+      "zh": "根据这段话，哪些消息应该写在报纸上？",
+      "options": {
+       "A": "所有的消息",
+       "B": "刚获得的消息",
+       "C": "生活中的事",
+       "D": "大家关心的热点"
+      },
+      "transcript_zh": "（第19到20题是根据下面一段话：）对新闻工作者来说，获得及时准确的消息特别重要。除此之外，还要学会选择，因为生活中每天都会发生各种各样的事情，但不是所有的都值得写在报纸上，只有那些热点问题才会得到大家的注意和关心。 20. 根据这段话，哪些消息应该写在报纸上？",
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     },
+     {
+      "n": 21,
+      "zh": "关于说话人，下列哪个正确？",
+      "options": {
+       "A": "很诚实",
+       "B": "汉语很好",
+       "C": "想当翻译",
+       "D": "爱开玩笑"
+      },
+      "transcript_zh": "（第21到22题是根据下面一段话：）我来中国差不多一年了，大家都说我的中文很流利。有不少人问我是怎么做到的，其实我的方法很简单，就是多交一些中国朋友，经常和他们聊天儿。还有，遇到不认识的词语，我会马上查词典，然后写在笔记本上，有空儿就复习复习。这样慢慢积累，我的听说读写能力都得到了很大的提高。 21. 关于说话人，下列哪个正确？",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     },
+     {
+      "n": 22,
+      "zh": "遇到不认识的词，说话人会怎么办？",
+      "options": {
+       "A": "问同学",
+       "B": "问老师",
+       "C": "查词典",
+       "D": "放在一边"
+      },
+      "transcript_zh": "（第21到22题是根据下面一段话：）我来中国差不多一年了，大家都说我的中文很流利。有不少人问我是怎么做到的，其实我的方法很简单，就是多交一些中国朋友，经常和他们聊天儿。还有，遇到不认识的词语，我会马上查词典，然后写在笔记本上，有空儿就复习复习。这样慢慢积累，我的听说读写能力都得到了很大的提高。 22. 遇到不认识的词，说话人会怎么办？",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第一部分（23–26）",
+    "type_zh": "阅读 第一部分",
+    "instruction_zh": "第23–26题：选词填空。",
+    "word_bank": [
+     [
+      "否则",
+      "只好",
+      "看法",
+      "坚持",
+      "然而"
+     ]
+    ],
+    "items": [
+     {
+      "n": "例",
+      "zh": "她每天都（　）走路上下班，所以身体一直很不错。",
+      "options": {
+       "A": "否则",
+       "B": "只好",
+       "C": "看法",
+       "D": "坚持",
+       "E": "然而"
+      },
+      "answer": "D",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        7
+       ]
+      }
+     },
+     {
+      "n": 23,
+      "zh": "我们原计划去打篮球的，可是忽然刮起了大风，现在（　）留在家里上网了。",
+      "options": {
+       "A": "否则",
+       "B": "只好",
+       "C": "看法",
+       "D": "坚持",
+       "E": "然而"
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     },
+     {
+      "n": 24,
+      "zh": "我跟你的（　）正好相反，感觉什么都说了，却都只说了一点点。",
+      "options": {
+       "A": "否则",
+       "B": "只好",
+       "C": "看法",
+       "D": "坚持",
+       "E": "然而"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     },
+     {
+      "n": 25,
+      "zh": "笨人总是把简单的问题说复杂，（　），聪明人却能把复杂的问题解释得清楚而简单。",
+      "options": {
+       "A": "否则",
+       "B": "只好",
+       "C": "看法",
+       "D": "坚持",
+       "E": "然而"
+      },
+      "answer": "E",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     },
+     {
+      "n": 26,
+      "zh": "我建议你暂时先别考虑出国留学，至少你得先把外语学好，（　），在国外和人交流都会有困难。",
+      "options": {
+       "A": "否则",
+       "B": "只好",
+       "C": "看法",
+       "D": "坚持",
+       "E": "然而"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第一部分（27–30）",
+    "type_zh": "阅读 第一部分",
+    "instruction_zh": "第27–30题：选词填空。",
+    "word_bank": [
+     [
+      "猜",
+      "顺序",
+      "温度",
+      "厉害",
+      "著名"
+     ]
+    ],
+    "items": [
+     {
+      "n": "例",
+      "zh": "A：今天真冷啊，好像白天最高（　）才2℃。 B：刚才电视里说明天更冷。",
+      "options": {
+       "A": "猜",
+       "B": "顺序",
+       "C": "温度",
+       "D": "厉害",
+       "E": "著名"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        8
+       ]
+      }
+     },
+     {
+      "n": 27,
+      "zh": "A：小高，你把这些材料按照时间（　）放好，下班前交给我就行。 B：没问题，弄完后我就送到您办公室。",
+      "options": {
+       "A": "猜",
+       "B": "顺序",
+       "C": "温度",
+       "D": "厉害",
+       "E": "著名"
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     },
+     {
+      "n": 28,
+      "zh": "A：他的汉语说得很流利，真让人羡慕。 B：他是翻译，当然很（　）。",
+      "options": {
+       "A": "猜",
+       "B": "顺序",
+       "C": "温度",
+       "D": "厉害",
+       "E": "著名"
+      },
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     },
+     {
+      "n": 29,
+      "zh": "A：对不起，刚才我在会议室开会，没办法接电话。 B：没关系，我（　）你也在忙，没打扰你吧？",
+      "options": {
+       "A": "猜",
+       "B": "顺序",
+       "C": "温度",
+       "D": "厉害",
+       "E": "著名"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     },
+     {
+      "n": 30,
+      "zh": "A：老王，我今晚要加班，这张票浪费了就可惜了，要不你去看吧。 B：太谢谢你了！听说这次演出邀请了许多（　）的演员，很精彩的。",
+      "options": {
+       "A": "猜",
+       "B": "顺序",
+       "C": "温度",
+       "D": "厉害",
+       "E": "著名"
+      },
+      "answer": "E",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第二部分",
+    "type_zh": "阅读 第二部分",
+    "instruction_zh": "第31–34题：排列顺序。",
+    "items": [
+     {
+      "n": "例",
+      "zh": "",
+      "options": {
+       "A": "可是今天起晚了",
+       "B": "平时我骑自行车上下班",
+       "C": "所以就打车来公司"
+      },
+      "answer": "BAC",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        9
+       ]
+      }
+     },
+     {
+      "n": 31,
+      "zh": "",
+      "options": {
+       "A": "我们身边的图书越来越多",
+       "B": "只好选择其中特别感兴趣的来阅读",
+       "C": "而每个人时间是有限的"
+      },
+      "answer": "ACB",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     },
+     {
+      "n": 32,
+      "zh": "",
+      "options": {
+       "A": "否则读书对自己就没有什么帮助了",
+       "B": "不能完全相信书本",
+       "C": "看书时应该有自己的想法和判断"
+      },
+      "answer": "CBA",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     },
+     {
+      "n": 33,
+      "zh": "",
+      "options": {
+       "A": "有些书可以很快地读",
+       "B": "读书应该有选择",
+       "C": "然而，有些书却需要多花时间来认真读"
+      },
+      "answer": "BAC",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     },
+     {
+      "n": 34,
+      "zh": "",
+      "options": {
+       "A": "这样不但能使学生增长知识",
+       "B": "还能提高他们的理解能力和写作水平",
+       "C": "养成课外阅读的习惯很重要"
+      },
+      "answer": "CAB",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第三部分",
+    "type_zh": "阅读 第三部分",
+    "instruction_zh": "第35–43题：请选出正确答案。",
+    "items": [
+     {
+      "n": "例",
+      "zh": "她很活泼，说话很有趣，总能给我们带来快乐，我们都很喜欢和她在一起。 ★她是个什么样的人？",
+      "options": {
+       "A": "幽默",
+       "B": "马虎",
+       "C": "骄傲",
+       "D": "害羞"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        10
+       ]
+      }
+     },
+     {
+      "n": 35,
+      "zh": "他总说自己特别喜欢看书，可是这本书他看了一个月才看到第5页，也许是因为他工作太忙。但一个真正爱看书的人总能找出时间来阅读。 ★根据这段话，可以知道他：",
+      "options": {
+       "A": "看书很认真",
+       "B": "工作很忙",
+       "C": "不是真正爱看书",
+       "D": "没有时间看书"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     },
+     {
+      "n": 36,
+      "zh": "我刚刚收到王校长发给我的电子邮件，说他最近病了，咳嗽得很厉害，医生让他多休息，但他还是坚持工作，翻译了一本关于中国历史的书。 ★根据这段话，可以知道王校长：",
+      "options": {
+       "A": "身体一直很好",
+       "B": "工作很努力",
+       "C": "电子邮件很多",
+       "D": "爱读中国历史"
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     },
+     {
+      "n": 37,
+      "zh": "3月7日上午，我在体育馆打羽毛球时，丢了一个咖啡色书包，里面有笔记本电脑、钥匙和几本杂志，请拿到包的人与我联系。非常感谢！ ★这个人写这段话是为了：",
+      "options": {
+       "A": "表示感谢",
+       "B": "想打羽毛球",
+       "C": "找他的东西",
+       "D": "介绍他的书包"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     },
+     {
+      "n": 38,
+      "zh": "让人想不到的是，这本小说的作者竟然是位80后的年轻人，他写这本书时才上高中二年级。尽管年龄不大，但他对生活的认识却比这个年龄的人深得多。 ★这本小说的作者：",
+      "options": {
+       "A": "对生活认识很深",
+       "B": "喜爱高中的生活",
+       "C": "写书时高中毕业了",
+       "D": "已经80岁了"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     },
+     {
+      "n": 39,
+      "zh": "我最喜欢读的就是这份报纸，它的内容非常丰富，同时，广告也很少。最重要的是，上面的经济方面的新闻对我的工作很有帮助。 ★他喜欢这份报纸的原因之一是：",
+      "options": {
+       "A": "免费",
+       "B": "价格低",
+       "C": "广告少",
+       "D": "笑话多"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     },
+     {
+      "n": 40,
+      "zh": "（40–41）有位名人说：“要想知道自己长得什么样，衣服穿得合不合适，只要照照镜子就知道了；要想知道自己的缺点是什么，就需要了解别人对你有哪些不好的看法。”所以我们应该以那些说真话的人为“镜子”，这样才能及时发现自己的缺点，提高自己。 ★根据这段话，哪种人是我们的“镜子”？",
+      "options": {
+       "A": "爱买衣服的人",
+       "B": "爱照镜子的人",
+       "C": "爱聊天儿的人",
+       "D": "说真话的人"
+      },
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     },
+     {
+      "n": 41,
+      "zh": "（40–41）有位名人说：“要想知道自己长得什么样，衣服穿得合不合适，只要照照镜子就知道了；要想知道自己的缺点是什么，就需要了解别人对你有哪些不好的看法。”所以我们应该以那些说真话的人为“镜子”，这样才能及时发现自己的缺点，提高自己。 ★这段话主要说：",
+      "options": {
+       "A": "人和人的关系",
+       "B": "怎么发现缺点",
+       "C": "买衣服的条件",
+       "D": "照镜子的方法"
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     },
+     {
+      "n": 42,
+      "zh": "（42–43）关于读书，有两点必须要注意：第一，应该养成爱阅读的好习惯。读书会让你的知识更丰富，生活更精彩。第二，自己不花时间去想，完全相信并且接受书上写的，这是不对的，因为书上的知识和想法并不总是正确的。否则，读书对自己就没什么帮助。 ★阅读可以使人：",
+      "options": {
+       "A": "很快变富",
+       "B": "增加知识",
+       "C": "更有耐心",
+       "D": "变得有计划"
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     },
+     {
+      "n": 43,
+      "zh": "（42–43）关于读书，有两点必须要注意：第一，应该养成爱阅读的好习惯。读书会让你的知识更丰富，生活更精彩。第二，自己不花时间去想，完全相信并且接受书上写的，这是不对的，因为书上的知识和想法并不总是正确的。否则，读书对自己就没什么帮助。 ★根据这段话，读书要：",
+      "options": {
+       "A": "相信写书的人",
+       "B": "多做读书笔记",
+       "C": "有自己的看法",
+       "D": "经常帮助别人"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "三、书写 第一部分",
+    "type_zh": "书写 第一部分",
+    "instruction_zh": "第44–48题：完成句子。",
+    "items": [
+     {
+      "n": "例",
+      "zh": "那座桥　800年的　历史　有　了",
+      "answer": "那座桥有800年的历史了。",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        12
+       ]
+      }
+     },
+     {
+      "n": 44,
+      "zh": "你在　说明书　要　使用　之前　仔细阅读",
+      "answer": "你在使用之前要仔细阅读说明书。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     },
+     {
+      "n": 45,
+      "zh": "页　这本　一共　多　小说　二百",
+      "answer": "这本小说一共二百多页。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     },
+     {
+      "n": 46,
+      "zh": "我们　想复杂　了　把　简单的　事情",
+      "answer": "我们把简单的事情想复杂了。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     },
+     {
+      "n": 47,
+      "zh": "很多　开始　那篇　注意　文章　人",
+      "answer": "很多人开始注意那篇文章。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     },
+     {
+      "n": 48,
+      "zh": "这种　能　减轻　方法　有效地　压力",
+      "answer": "这种方法能有效地减轻压力。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "三、书写 第二部分",
+    "type_zh": "书写 第二部分",
+    "instruction_zh": "第49–50题：看图，用词造句。",
+    "items": [
+     {
+      "n": "例",
+      "zh": "乒乓球",
+      "picture_desc_en": "A young woman holding a table-tennis paddle, about to serve a ball.",
+      "answer": "她很喜欢打乒乓球。",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        13
+       ]
+      }
+     },
+     {
+      "n": 49,
+      "zh": "精彩",
+      "picture_desc_en": "A football match in a stadium: players in light and dark kits running with the ball, advertising boards and spectators behind.",
+      "answer": "昨天的足球比赛他们踢得真是太精彩了！",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     },
+     {
+      "n": 50,
+      "zh": "养成",
+      "picture_desc_en": "A family of four (father, mother, a boy and a girl) sitting close together on a sofa, reading a book together and smiling.",
+      "answer": "爸爸妈妈应该帮孩子养成爱阅读的好习惯。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        108
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "answers_ref": {
+   "book": "teacher",
+   "pages": [
+    105,
+    106,
+    107,
+    108
+   ]
+  }
+ },
+ "unclear": [
+  "Аудио файлын нэр мэдэгдэхгүй тул audio талбар орхисон. Сурах бичгийн CD тэмдэг: 课文1–5 = 11-1…11-5; дасгалын номын 听力 第一/二/三部分 = 11-1, 11-2, 11-3.",
+  "prep.json-д хавсралтын хуудас 106–108 гэж заасан боловч L11-ийн «练习册听力文本及参考答案» PDF х.105-аас эхэлдэг (听力 第一部分 1–5-ын бичвэр, 第二部分-ын жишээ) — зургаар шалгаж, answers_ref-д 105–108 гэж оруулсан. Хариултын хүснэгт PDF х.108 дээр (answer_ref = teacher 108); сонсголын бичвэр х.105–107.",
+  "Гарчгийн пиньинь номд «Dú shū hǎo, dú hǎo shū, hào dú shū» (ханз тус бүрийн дээр) хэвлэгдсэн; 课文5-ын хятад бичвэрт хаалтанд «读书好(hǎo)，读好(hǎo)书，好(hào)读书» гэж пиньинь оруулсан хэвээр нь үлдээсэн.",
+  "练习1 复述 课文2: «小夏的语气：虽然这次阅读考试我考了80分，但是我还是不太满意。» — харин 课文2-т «不太满意» гэж хариулсан нь 小雨 (小夏 бол «其实我考得也不怎么样»). Мөн «80分» гэдэг оноо 课文2-т байхгүй. Номын зөрүү — номд байгаагаар бичсэн.",
+  "课文1-ын 回答问题 (2) «大卫认为对学习汉语的外国人来说，做什么特别难？» — 课文1-т 大卫 ийм санаа хэлээгүй (хэцүү зүйлийг 马克 «刚开始肯定有困难» гэж хэлсэн). Номд байгаагаар.",
+  "生词 29 同时 — 生词 хүснэгтэд зөвхөн «conj.»; 注释5 нь 连词 болон 名词 («在……（的）同时») хоёр хэрэглээг тайлбарладаг.",
+  "生词 11 填空-ийн пиньинь 生词 хүснэгтэд «tián kòng» (зайтай), 拼音课文2-т «tiánkòng tí» гэж хэвлэгдсэн — номд байгаагаар.",
+  "拼音课文2 (小雨-ийн 2 дахь мөр): «bǐjiào nán、bǐjiào fùzá» хэсэгт цэг таслал бүдэг хэвлэгдсэн (、 эсвэл ,) — lines.pinyin-д «,» гэж бичсэн.",
+  "拼音课文5-д «…jiějué wèntí de bànfǎ. Tóngshí, …» (цэг), харин хятад бичвэрт «…解决问题的办法；同时，…» (цэг таслалтай) — номд байгаагаар хоёуланг нь үлдээсэн.",
+  "注释3 比一比 做一做 «选词填空 Tick or cross»: (1) 无论✓ 不管✓, (2) 无论× 不管✓ — номд жишээ болгон хэвлэгдсэн хариулт; (3)–(5)-ын хариулт сурах бичиг, багшийн номд хэвлэгдээгүй (багшийн ном: «按照教材中的辨析步骤进行»).",
+  "Сурах бичгийн 练一练 (5 дүрэм × 3), 回答问题 (课文1–3 — 6, 课文4–5 — 4), 练习1 复述 болон 练习2 选词填空 (10) — хариулт сурах бичиг, багшийн номд хэвлэгдээгүй тул answer талбаргүй. Зөвхөн 扩展 做一做-ийн хариулт багшийн номд (PDF х.15) бий.",
+  "Сурах бичгийн 根据课文内容回答问题 хоёр хэсэг дугааргүй (注释3-ын дараа, 注释5-ын дараа) — exercises-д «课文1–3 回答问题», «课文4–5 回答问题» гэж нэрлэсэн. 扩展 同字词 (同：同意、共同、相同、同时)-ийг textbook.characters-д оруулсан.",
+  "Энэ хичээлд 俗语 байхгүй (зөвхөн 文化 《西游记》) тул saying талбаргүй. 文化-ын англи гарчиг «A Classic Work in Chinese Literature - Journey to the West»-ийг culture.body_en-ийн эхний мөрөнд оруулсан.",
+  "课文1-ын 专有名词-д зөвхөн «大卫 Dàwèi»; 马克、小夏、小雨、小李、小林 нь 专有名词-д жагсаагдаагүй.",
+  "课文4 ба 课文5 — гарчиггүй 短文 — мөр (lines)-ийг өгүүлбэрээр хуваасан (номд нэг догол мөр).",
+  "拼音课文-ын гарчгийн пиньинь (Mǎkè jièshào zìjǐ xuéxí Hànyǔ de fāngfǎ / Xiǎo Xià hé Xiǎoyǔ liáo kǎoshì de qíngkuàng / Xiǎo Lǐ gàosu Xiǎo Lín yuèdú de hǎochù) болон ярилцагчийн нэрийн пиньинь (Dàwèi, Mǎkè, Xiǎo Xià, Xiǎoyǔ, Xiǎo Lín, Xiǎo Lǐ) схемд талбаргүй тул lines.pinyin-д зөвхөн яриаг оруулсан.",
+  "Багшийн ном 语言点(3) 无论-ын «常用格式» хүснэгтийг (无论 + [……还是…… / 谁 / 什么 / 什么时候 / 哪儿/哪里/什么地方 / 哪 / 多少/几 / 怎么（样） / 多（么）]，都/也……) нэг мөрөнд бичсэн; 语言点运用-ын зургийг (苦恼 эмэгтэй компьютерийн өмнө) товч тайлбараар оруулсан.",
+  "Багшийн номын 课文 асуултууд (text_questions)-ын хариулт тус бүрчлэн хэвлэгдээгүй («教师给出答案»); оронд нь 课文扩展练习-ын 复述 догол мөрүүд (teacher.steps «4 课文») хэвлэгдсэн. 本课小结 байхгүй.",
+  "Багшийн ном 课文扩展 课文2: «他没做完…» — 小雨-г «他» гэж бичсэн; мөн 课文1: «他经常和中国人聊天» (聊天儿 биш) — номд байгаагаар.",
+  "Багшийн ном «掌握本课30个四级大纲词汇» — 生词 30, * тэмдэгтэй үг байхгүй.",
+  "Дасгалын ном 听力 第二/三部分 — номд зөвхөн сонголтууд хэвлэгдсэн; item.zh-д багшийн номын хавсралтын «问：» асуултыг (19–22-т дугаартай асуултыг) оруулсан, transcript_zh-д бүтнээр. 听力 第一部分-д жишээ 2 (✓ ба ×) байгаа тул «例1», «例2».",
+  "Дасгалын ном 阅读 第二部分 (31–34 排列顺序)-ийн item.zh хоосон, хэсгүүд options (A/B/C)-д. 31 C «而每个人时间是有限的» (的 байхгүй) — номд байгаагаар.",
+  "Дасгалын ном 书写 44–50-ын хариулт багшийн номын хавсралтад «参考答案» гэж хэвлэгдсэн; 49–50 (看图，用词造句) нээлттэй даалгавар тул хариулт нь зөвхөн жишээ.",
+  "Дасгалын номд 复习 хэсэг байхгүй (HSK4-ийн дасгалын ном: 听力 3 хэсэг, 阅读 3 хэсэг, 书写 2 хэсэг, нийт 50 асуулт)."
+ ],
+ "verified_pages": [
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  11,
+  12,
+  13,
+  14,
+  15,
+  16,
+  17,
+  18,
+  19,
+  20,
+  21,
+  22,
+  23,
+  24,
+  25,
+  26,
+  27,
+  105,
+  106,
+  107,
+  108
+ ],
+ "schema_version": 1
+}

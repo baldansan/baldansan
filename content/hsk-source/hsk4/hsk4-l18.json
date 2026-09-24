@@ -1,0 +1,2232 @@
+{
+ "level": "hsk4",
+ "lesson": 18,
+ "book": "HSK4B",
+ "title_zh": "科技与世界",
+ "title_pinyin": "Kējì yǔ shìjiè",
+ "title_en": "Science, technology and the world",
+ "textbook": {
+  "ref": {
+   "book": "textbook",
+   "pages": [
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126
+   ]
+  },
+  "warmup": [
+   {
+    "instruction_zh": "给下边的词语选择对应的图片，并用这个词语根据图片说一个句子。",
+    "instruction_en": "Match the pictures with the words and describe the pictures with sentences using the words.",
+    "items": [
+     "①密码 mìmǎ",
+     "②信息 xìnxī",
+     "③举 jǔ",
+     "④危险 wēixiǎn",
+     "⑤交通 jiāotōng",
+     "⑥付款 fùkuǎn"
+    ],
+    "pictures_desc_en": [
+     "A: a customer handing a card to a smiling shop assistant across a counter in a clothing store",
+     "B: a man in a suit holding out his hands with a globe surrounded by floating devices (tablet, phone, laptop) and network icons",
+     "C: aerial view of a multi-level highway interchange with cars",
+     "D: a man in a suit leaping across a gap between high-rise buildings",
+     "E: a smiling man lifting two dumbbells above his shoulders outdoors",
+     "F: a hand shielding another hand typing on a keypad (entering a PIN)"
+    ]
+   },
+   {
+    "instruction_zh": "请填写关于手机使用情况的调查问卷。",
+    "instruction_en": "Fill in the questionnaire about the use of cell phones.",
+    "items": [
+     "一般用手机：打电话 □　发短信 □　听音乐 □　玩儿游戏 □　上网 □",
+     "每个月的手机话费：50元以下 □　50–100元 □　100–200元 □　200–300元 □　300元以上 □",
+     "选择手机最看重：样子漂亮 □　价格便宜 □　功能（gōngnéng）多 □　售后服务好 □　流行 □",
+     "最喜欢的其他功能：音乐 □　照相 □　上网 □　游戏 □　聊天儿 □"
+    ]
+   }
+  ],
+  "texts": [
+   {
+    "n": 1,
+    "title_zh": "王静给孙月推荐一本书",
+    "kind": "dialogue",
+    "lines": [
+     {
+      "speaker": "孙月",
+      "zh": "上次女儿问我飞机是怎么起飞和降落的，真不知道该怎么回答她，她现在总是有各种各样的“为什么”。",
+      "pinyin": "Shàng cì nǚ’ér wèn wǒ fēijī shì zěnme qǐfēi hé jiàngluò de, zhēn bù zhīdào gāi zěnme huídá tā, tā xiànzài zǒngshì yǒu gè zhǒng gè yàng de “wèi shénme”."
+     },
+     {
+      "speaker": "王静",
+      "zh": "孩子眼中的世界是美丽和奇特的。有一本书叫《新十万个为什么》，现在卖得非常火。书里的内容都是儿童想知道的科学知识，相信你女儿一定喜欢读。",
+      "pinyin": "Háizi yǎnzhōng de shìjiè shì měilì hé qítè de. Yǒu yì běn shū jiào《Xīn Shíwàn Ge Wèi Shénme》, xiànzài mài de fēicháng huǒ. Shū li de nèiróng dōu shì értóng xiǎng zhīdào de kēxué zhīshi, xiāngxìn nǐ nǚ’ér yídìng xǐhuan dú."
+     },
+     {
+      "speaker": "孙月",
+      "zh": "难道它和我们小时候看的《十万个为什么》不一样吗？作者是谁啊？",
+      "pinyin": "Nándào tā hé wǒmen xiǎoshíhou kàn de《Shíwàn Ge Wèi Shénme》bù yíyàng ma? Zuòzhě shì shéi a?"
+     },
+     {
+      "speaker": "王静",
+      "zh": "作者的名字我没记住。《新十万个为什么》的内容更新，介绍了各种科学知识，包括地球、动物、植物、交通、科学技术、社会和文化等很多方面。",
+      "pinyin": "Zuòzhě de míngzi wǒ méi jìzhù.《Xīn Shíwàn Ge Wèi Shénme》de nèiróng gèng xīn, jièshàole gè zhǒng kēxué zhīshi, bāokuò dìqiú、dòngwù、zhíwù、jiāotōng、kēxué jìshù、shèhuì hé wénhuà děng hěn duō fāngmiàn."
+     },
+     {
+      "speaker": "孙月",
+      "zh": "太好了！不过她这么小，我不知道她是否能读懂。",
+      "pinyin": "Tài hǎo le! Búguò tā zhème xiǎo, wǒ bù zhīdào tā shìfǒu néng dúdǒng."
+     },
+     {
+      "speaker": "王静",
+      "zh": "放心吧，这本书的语言简单易懂，一定能增长孩子的科学知识。",
+      "pinyin": "Fàngxīn ba, zhè běn shū de yǔyán jiǎndān yìdǒng, yídìng néng zēngzhǎng háizi de kēxué zhīshi."
+     }
+    ],
+    "new_words": [
+     {
+      "n": 1,
+      "zh": "降落",
+      "pinyin": "jiàngluò",
+      "pos": "v.",
+      "en": "to descend, to land",
+      "text": 1
+     },
+     {
+      "n": 2,
+      "zh": "火",
+      "pinyin": "huǒ",
+      "pos": "adj.",
+      "en": "hot, popular",
+      "text": 1
+     },
+     {
+      "n": 3,
+      "zh": "作者",
+      "pinyin": "zuòzhě",
+      "pos": "n.",
+      "en": "author",
+      "text": 1
+     },
+     {
+      "n": 4,
+      "zh": "交通",
+      "pinyin": "jiāotōng",
+      "pos": "n.",
+      "en": "traffic, communication",
+      "text": 1
+     },
+     {
+      "n": 5,
+      "zh": "技术",
+      "pinyin": "jìshù",
+      "pos": "n.",
+      "en": "technology",
+      "text": 1
+     },
+     {
+      "n": 6,
+      "zh": "是否",
+      "pinyin": "shìfǒu",
+      "pos": "adv.",
+      "en": "if, whether",
+      "text": 1
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "title_zh": "李老师和高老师在聊电脑和互联网技术的发展",
+    "kind": "dialogue",
+    "lines": [
+     {
+      "speaker": "李老师",
+      "zh": "现在的大学生一遇到不明白的问题，可以马上在网上查找答案，几秒钟就把问题解决了，这比我们上学的时候方便多了。",
+      "pinyin": "Xiànzài de dàxuéshēng yí yùdào bù míngbai de wèntí, kěyǐ mǎshàng zài wǎngshang cházhǎo dá’àn, jǐ miǎo zhōng jiù bǎ wèntí jiějué le, zhè bǐ wǒmen shàng xué de shíhou fāngbiàn duō le."
+     },
+     {
+      "speaker": "高老师",
+      "zh": "现在的人们，尤其是大学生开始普遍使用电脑，他们的生活已经离不开电脑。据调查，70%的人遇到问题时，首先想到的就是上网找答案。",
+      "pinyin": "Xiànzài de rénmen, yóuqí shì dàxuéshēng kāishǐ pǔbiàn shǐyòng diànnǎo, tāmen de shēnghuó yǐjīng lí bu kāi diànnǎo. Jù diàochá, bǎi fēnzhī qīshí de rén yùdào wèntí shí, shǒuxiān xiǎngdào de jiù shì shàng wǎng zhǎo dá’àn."
+     },
+     {
+      "speaker": "李老师",
+      "zh": "电脑和互联网技术的发展使学生们的学习方式发生了很多变化，不过天天对着电脑看，眼睛实在受不了。",
+      "pinyin": "Diànnǎo hé hùliánwǎng jìshù de fāzhǎn shǐ xuéshengmen de xuéxí fāngshì fāshēngle hěn duō biànhuà, búguò tiāntiān duìzhe diànnǎo kàn, yǎnjing shízài shòubuliǎo."
+     },
+     {
+      "speaker": "高老师",
+      "zh": "不仅是学习方式，而且连生活方式也发生了很大改变。现在越来越多的学生喜欢在网上写日记，他们说这样可以让朋友及时了解自己的生活。",
+      "pinyin": "Bùjǐn shì xuéxí fāngshì, érqiě lián shēnghuó fāngshì yě fāshēngle hěn dà gǎibiàn. Xiànzài yuè lái yuè duō de xuésheng xǐhuan zài wǎngshang xiě rìjì, tāmen shuō zhèyàng kěyǐ ràng péngyou jíshí liǎojiě zìjǐ de shēnghuó."
+     },
+     {
+      "speaker": "李老师",
+      "zh": "这个办法不错，既能方便大家的交流，还能节约用纸，保护环境。但是如果别人都能看到我的日记的话，多不安全啊！",
+      "pinyin": "Zhège bànfǎ búcuò, jì néng fāngbiàn dàjiā de jiāoliú, hái néng jiéyuē yòng zhǐ, bǎohù huánjìng. Dànshì rúguǒ biérén dōu néng kàndào wǒ de rìjì de huà, duō bù ānquán a!"
+     },
+     {
+      "speaker": "高老师",
+      "zh": "放心吧，可以给网上的日记加密码，那样只有得到了允许，别人才能看到。",
+      "pinyin": "Fàng xīn ba, kěyǐ gěi wǎngshang de rìjì jiā mìmǎ, nàyàng zhǐyǒu dédàole yǔnxǔ, biérén cái néng kàndào."
+     }
+    ],
+    "new_words": [
+     {
+      "n": 7,
+      "zh": "秒",
+      "pinyin": "miǎo",
+      "pos": "m.",
+      "en": "second, 1/60 minute",
+      "text": 2
+     },
+     {
+      "n": 8,
+      "zh": "方式",
+      "pinyin": "fāngshì",
+      "pos": "n.",
+      "en": "way, mode",
+      "star": true,
+      "text": 2
+     },
+     {
+      "n": 9,
+      "zh": "受不了",
+      "pinyin": "shòubuliǎo",
+      "en": "cannot stand, cannot bear",
+      "text": 2
+     },
+     {
+      "n": 10,
+      "zh": "日记",
+      "pinyin": "rìjì",
+      "pos": "n.",
+      "en": "diary, journal",
+      "text": 2
+     },
+     {
+      "n": 11,
+      "zh": "安全",
+      "pinyin": "ānquán",
+      "pos": "adj.",
+      "en": "safe, secure",
+      "text": 2
+     },
+     {
+      "n": 12,
+      "zh": "密码",
+      "pinyin": "mìmǎ",
+      "pos": "n.",
+      "en": "password",
+      "text": 2
+     },
+     {
+      "n": 13,
+      "zh": "允许",
+      "pinyin": "yǔnxǔ",
+      "pos": "v.",
+      "en": "to allow, to permit",
+      "text": 2
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "title_zh": "王静和孙月在聊关于梦的情况",
+    "kind": "dialogue",
+    "lines": [
+     {
+      "speaker": "王静",
+      "zh": "我昨天晚上做了一个特别奇怪的梦，梦到自己正在一座桥上走，走着走着，突然开过来一辆车，非常危险，接着又梦见我跳到车上，跟警察一起抓住了一个坏人。",
+      "pinyin": "Wǒ zuótiān wǎnshang zuòle yí ge tèbié qíguài de mèng, mèngdào zìjǐ zhèngzài yí zuò qiáo shang zǒu, zǒuzhe zǒuzhe, tūrán kāi guolai yí liàng chē, fēicháng wēixiǎn, jiēzhe yòu mèngjiàn wǒ tiàodào chē shang, gēn jǐngchá yìqǐ zhuāzhùle yí ge huàirén."
+     },
+     {
+      "speaker": "孙月",
+      "zh": "奇怪，你怎么总能记住自己做了什么梦？我好像从来没做过梦。",
+      "pinyin": "Qíguài, nǐ zěnme zǒng néng jìzhù zìjǐ zuòle shénme mèng? Wǒ hǎoxiàng cónglái méi zuòguo mèng."
+     },
+     {
+      "speaker": "王静",
+      "zh": "每个人都会做梦，区别只是有多有少。有的人睡醒之后还记得梦里的事情，有的人却记不清楚了。你之所以觉得从来没做过梦，只不过是忘记了。",
+      "pinyin": "Měi ge rén dōu huì zuò mèng, qūbié zhǐshì yǒu duō yǒu shǎo. Yǒude rén shuì xǐng zhīhòu hái jìde mèng li de shìqing, yǒude rén què jì bu qīngchu le. Nǐ zhī suǒyǐ juéde cónglái méi zuòguo mèng, zhǐ búguò shì wàngjì le."
+     },
+     {
+      "speaker": "孙月",
+      "zh": "你说的有道理，我一般都是一觉睡到天亮。很多人认为做梦是上天要告诉他们将来会发生的一些事情，可能上天不想让我知道吧。",
+      "pinyin": "Nǐ shuō de yǒu dàolǐ, wǒ yìbān dōu shì yí jiào shuìdào tiānliàng. Hěn duō rén rènwéi zuò mèng shì shàngtiān yào gàosu tāmen jiānglái huì fāshēng de yìxiē shìqing, kěnéng shàngtiān bù xiǎng ràng wǒ zhīdào ba."
+     },
+     {
+      "speaker": "王静",
+      "zh": "一般晚上睡觉时，身体感觉到什么，人就容易梦到什么内容。记得有一次，我晚饭吃得太咸，那天晚上就梦见自己到处找商店买矿泉水。",
+      "pinyin": "Yìbān wǎnshang shuì jiào shí, shēntǐ gǎnjuédào shénme, rén jiù róngyì mèngdao shénme nèiróng. Jìde yǒu yí cì, wǒ wǎnfàn chī de tài xián, nà tiān wǎnshang jiù mèngjiàn zìjǐ dàochù zhǎo shāngdiàn mǎi kuàngquánshuǐ."
+     },
+     {
+      "speaker": "孙月",
+      "zh": "很多人都试着对梦进行解释，有些人甚至专门写过这方面的书，可惜到现在仍然没有一个科学的说法。",
+      "pinyin": "Hěn duō rén dōu shìzhe duì mèng jìnxíng jiěshì, yǒuxiē rén shènzhì zhuānmén xiěguo zhè fāngmiàn de shū, kěxī dào xiànzài réngrán méiyǒu yí ge kēxué de shuōfǎ."
+     }
+    ],
+    "new_words": [
+     {
+      "n": 14,
+      "zh": "座",
+      "pinyin": "zuò",
+      "pos": "m.",
+      "en": "used for bridges, mountains, buildings, etc.",
+      "text": 3
+     },
+     {
+      "n": 15,
+      "zh": "桥",
+      "pinyin": "qiáo",
+      "pos": "n.",
+      "en": "bridge",
+      "text": 3
+     },
+     {
+      "n": 16,
+      "zh": "危险",
+      "pinyin": "wēixiǎn",
+      "pos": "adj.",
+      "en": "dangerous",
+      "text": 3
+     },
+     {
+      "n": 17,
+      "zh": "接着",
+      "pinyin": "jiēzhe",
+      "pos": "adv.",
+      "en": "then, immediately after that",
+      "text": 3
+     },
+     {
+      "n": 18,
+      "zh": "警察",
+      "pinyin": "jǐngchá",
+      "pos": "n.",
+      "en": "police",
+      "text": 3
+     },
+     {
+      "n": 19,
+      "zh": "抓",
+      "pinyin": "zhuā",
+      "pos": "v.",
+      "en": "to catch, to arrest",
+      "star": true,
+      "text": 3
+     },
+     {
+      "n": 20,
+      "zh": "咸",
+      "pinyin": "xián",
+      "pos": "adj.",
+      "en": "salty",
+      "text": 3
+     },
+     {
+      "n": 21,
+      "zh": "矿泉水",
+      "pinyin": "kuàngquánshuǐ",
+      "pos": "n.",
+      "en": "mineral water",
+      "text": 3
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "kind": "narrative",
+    "lines": [
+     {
+      "zh": "现在手机不但价格降低了，而且作用也越来越大，打电话、发短信已经成了人们普遍使用的联系方法。",
+      "pinyin": "Xiànzài shǒujī búdàn jiàgé jiàngdī le, érqiě zuòyòng yě yuè lái yuè dà, dǎ diànhuà、fā duǎnxìn yǐjīng chéngle rénmen pǔbiàn shǐyòng de liánxì fāngfǎ."
+     },
+     {
+      "zh": "除此以外，你还可以用它来听音乐、看电影、阅读、玩儿游戏、付款购物等，这大大方便了人们的生活。",
+      "pinyin": "Chú cǐ yǐwài, nǐ hái kěyǐ yòng tā lái tīng yīnyuè、kàn diànyǐng、yuèdú、wánr yóuxì、fù kuǎn gòuwù děng, zhè dàdà fāngbiànle rénmen de shēnghuó."
+     },
+     {
+      "zh": "举一个例子，迷路时，只要用手机地图查一下地址，马上就能知道怎么去那个地点。",
+      "pinyin": "Jǔ yí ge lìzi, mí lù shí, zhǐyào yòng shǒujī dìtú chá yíxià dìzhǐ, mǎshàng jiù néng zhīdào zěnme qù nàge dìdiǎn."
+     },
+     {
+      "zh": "现在的手机更像是一部可以拿在手中的电脑，现代人的生活已经越来越离不开手机了。",
+      "pinyin": "Xiànzài de shǒujī gèng xiàng shì yí bù kěyǐ ná zài shǒu zhōng de diànnǎo, xiàndài rén de shēnghuó yǐjīng yuè lái yuè lí bu kāi shǒujī le."
+     }
+    ],
+    "new_words": [
+     {
+      "n": 22,
+      "zh": "付款",
+      "pinyin": "fù kuǎn",
+      "en": "to pay a sum of money",
+      "text": 4
+     },
+     {
+      "n": 23,
+      "zh": "举",
+      "pinyin": "jǔ",
+      "pos": "v.",
+      "en": "to give, to enumerate",
+      "text": 4
+     },
+     {
+      "n": 24,
+      "zh": "迷路",
+      "pinyin": "mí lù",
+      "pos": "v.",
+      "en": "to lose one’s way",
+      "text": 4
+     },
+     {
+      "n": 25,
+      "zh": "地址",
+      "pinyin": "dìzhǐ",
+      "pos": "n.",
+      "en": "address",
+      "text": 4
+     },
+     {
+      "n": 26,
+      "zh": "地点",
+      "pinyin": "dìdiǎn",
+      "pos": "n.",
+      "en": "place, site",
+      "text": 4
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "kind": "narrative",
+    "lines": [
+     {
+      "zh": "21世纪，我们的生活发生了巨大变化。",
+      "pinyin": "Èrshíyī shìjì, wǒmen de shēnghuó fāshēngle jùdà biànhuà."
+     },
+     {
+      "zh": "几千公里以外的国家，以前坐船需要几个月，现在乘坐飞机不过十几个小时。",
+      "pinyin": "Jǐqiān gōnglǐ yǐwài de guójiā, yǐqián zuò chuán xūyào jǐ ge yuè, xiànzài chéngzuò fēijī bú guò shíjǐ ge xiǎoshí."
+     },
+     {
+      "zh": "原来寄信需要好几天，现在连邮局都不用去，只要在家里上网发个电子邮件，用不了一分钟，远处的朋友就能收到，比写信封用的时间都短。",
+      "pinyin": "Yuánlái jì xìn xūyào hǎojǐ tiān, xiànzài lián yóujú dōu búyòng qù, zhǐyào zài jiāli shàng wǎng fā ge diànzǐ yóujiàn, yòng bu liǎo yì fènzhōng, yuǎnchù de péngyǒu jiù néng shōudào, bǐ xiě xìnfēng yòng de shíjiān dōu duǎn."
+     },
+     {
+      "zh": "以前外地的新闻要几天后才能知道，现在只要打开网站，任何信息都可以在第一时间获得。",
+      "pinyin": "Yǐqián wàidì de xīnwén yào jǐ tiān hòu cái néng zhīdào, xiànzài zhǐyào dǎ kāi wǎngzhàn, rènhé xìnxī dōu kěyǐ zài dì-yī shíjiān huòdé."
+     },
+     {
+      "zh": "现代科学技术的发展让世界变得越来越小，所以现在人们都把地球叫作“地球村”。",
+      "pinyin": "Xiàndài kēxué jìshù de fāzhǎn ràng shìjiè biànde yuè lái yuè xiǎo, suǒyǐ xiànzài rénmen dōu bǎ dìqiú jiàozuò “Dìqiú cūn”."
+     }
+    ],
+    "new_words": [
+     {
+      "n": 27,
+      "zh": "世纪",
+      "pinyin": "shìjì",
+      "pos": "n.",
+      "en": "century",
+      "text": 5
+     },
+     {
+      "n": 28,
+      "zh": "邮局",
+      "pinyin": "yóujú",
+      "pos": "n.",
+      "en": "post office",
+      "text": 5
+     },
+     {
+      "n": 29,
+      "zh": "收",
+      "pinyin": "shōu",
+      "pos": "v.",
+      "en": "to receive",
+      "text": 5
+     },
+     {
+      "n": 30,
+      "zh": "信封",
+      "pinyin": "xìnfēng",
+      "pos": "n.",
+      "en": "envelope",
+      "text": 5
+     },
+     {
+      "n": 31,
+      "zh": "网站",
+      "pinyin": "wǎngzhàn",
+      "pos": "n.",
+      "en": "website",
+      "text": 5
+     },
+     {
+      "n": 32,
+      "zh": "信息",
+      "pinyin": "xìnxī",
+      "pos": "n.",
+      "en": "news, information",
+      "text": 5
+     }
+    ]
+   }
+  ],
+  "grammar": [
+   {
+    "n": 1,
+    "title_zh": "是否",
+    "explanation_zh": "“是否”，副词，是不是，一般用于书面语。例如：",
+    "explanation_en": "The adverb “是否” means “whether or not”, usually used in written Chinese. For example:",
+    "examples": [
+     {
+      "n": 1,
+      "zh": "不过她这么小，这本书我不知道她是否能读懂。"
+     },
+     {
+      "n": 2,
+      "zh": "有人认为有“夫妻相”的夫妻家庭生活幸福，实际上，婚姻是否幸福跟这个没有关系。"
+     },
+     {
+      "n": 3,
+      "zh": "现在，如果要问人们选择职业时主要考虑的是什么，不少人会以收入多少作为标准。当然，也有人主要看自己是否喜欢这份工作。"
+     }
+    ],
+    "practice_instruction_zh": "完成句子或对话 Complete the sentences or dialogue.",
+    "practice": [
+     {
+      "n": 1,
+      "zh": "A：麻烦你帮我改签到后天的同一航班。 B：您稍等，我查一下________。",
+      "hint_zh": "是否"
+     },
+     {
+      "n": 2,
+      "zh": "当我们听到批评时，应该冷静地想想他们提出的意见或者建议________。",
+      "hint_zh": "是否"
+     },
+     {
+      "n": 3,
+      "zh": "一个人________，对于他离成功的远近有着重要的影响。",
+      "hint_zh": "是否"
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "title_zh": "受不了",
+    "explanation_zh": "“受不了”，表示不能忍受（疼痛、痛苦、压力、不幸、态度、脾气等），一般用在名词或名词性短语前。例如：",
+    "explanation_en": "“受不了” means “cannot bear (the pain, suffering, stress, misfortune, attitude, temper, etc.)”, usually used before a noun or noun phrase. For example:",
+    "examples": [
+     {
+      "n": 1,
+      "zh": "A：我们再去对面的商店看看吧。 B：我真的受不了你了，你到底还要逛多久？"
+     },
+     {
+      "n": 2,
+      "zh": "不过天天对着电脑看，眼睛实在受不了。"
+     },
+     {
+      "n": 3,
+      "zh": "A：真受不了这样的老师！一个简单的动作让我们练二三十遍。 B：他对你们严格些好，这样可以让你们打好基础。"
+     }
+    ],
+    "practice_instruction_zh": "完成对话 Complete the dialogues.",
+    "practice": [
+     {
+      "n": 1,
+      "zh": "A：________，你桌子上太乱了，找时间好好儿整理一下。 B：好的，我现在就收拾，一定弄得整整齐齐。",
+      "hint_zh": "受不了"
+     },
+     {
+      "n": 2,
+      "zh": "A：开一下窗户吧，________。 B：是你穿得太多了，把外面那件衣服脱了吧。",
+      "hint_zh": "受不了"
+     },
+     {
+      "n": 3,
+      "zh": "A：你怎么又想换工作了？这儿的收入不是挺高的吗？ B：可是________。",
+      "hint_zh": "受不了"
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "title_zh": "接着",
+    "explanation_zh": "“接着”，副词，（时间上）紧跟着，表示在前面发生的情况以后马上发生了另外的情况。例如：\n【比一比 接着—然后】\n相同点：两者都表示在前面发生的情况以后发生了另外的情况。★\n不同点：\n1. 表示★这个意思时，“接着”是副词，强调在时间上紧跟着；而“然后”是连词，多用于“先……然后（再）……”的结构中。\n2. “接着”的主语可以相同，也可以不同；“然后”的主语一般相同。",
+    "explanation_en": "The adverb “接着” means “following immediately (in time)”, indicating (something else happens) right after the previous event. For example:\n[Compare 接着—然后]\nSimilarity: Both indicate (something else happens) after the previous event.\nDifferences:\n1. In case ★, “接着” is an adverb emphasizing an immediate succession in time, while “然后” is a conjunction often used in the structure “先……然后（再）……” (first..., then...).\n2. For “接着”, the two events may or may not have the same subject, but for “然后”, they usually share the same subject.",
+    "structure_rows": [
+     "先……然后（再）……"
+    ],
+    "examples": [
+     {
+      "n": 1,
+      "zh": "这本书的内容非常有趣，你看完以后先不要还，我接着看。"
+     },
+     {
+      "n": 2,
+      "zh": "我昨天晚上做了一个特别奇怪的梦，梦到自己正在一座桥上走，走着走着，突然开过来一辆车，非常危险，接着又梦见我跳到车上，跟警察一起抓住了一个坏人。"
+     },
+     {
+      "n": 3,
+      "zh": "妻子问：“老公，怎么不见你和老王打网球了呢？”丈夫说：“你愿意和一个赢了就得意，输了就不高兴的人打球吗？”“当然不愿意。我明白了，”妻子接着说，“老王也不愿意跟这样的人打。”"
+     },
+     {
+      "zh": "他毕业后在老家工作了一年，接着／然后又考上了北京大学，读研究生。",
+      "note_zh": "比一比 相同点"
+     },
+     {
+      "zh": "大学毕业后，他接着又考上了研究生。",
+      "note_zh": "比一比 不同点1：接着"
+     },
+     {
+      "zh": "咱们先去吃晚饭，然后看电影，好不好？",
+      "note_zh": "比一比 不同点1：然后"
+     },
+     {
+      "zh": "他已经学了一年汉语了，明年还要接着学。",
+      "note_zh": "比一比 不同点2：接着（主语相同）"
+     },
+     {
+      "zh": "这本书你看完了我接着看吧。",
+      "note_zh": "比一比 不同点2：接着（主语不同）"
+     },
+     {
+      "zh": "遇到不认识的词语，我会马上查词典，然后写在本子上。",
+      "note_zh": "比一比 不同点2：然后"
+     }
+    ],
+    "practice_instruction_zh": "完成对话或句子 Complete the dialogue or sentences.",
+    "practice": [
+     {
+      "n": 1,
+      "zh": "A：我刚才去打网球了，热死我了，快给我拿条毛巾吧。 B：________。",
+      "hint_zh": "接着"
+     },
+     {
+      "n": 2,
+      "zh": "他每天很早起床去锻炼，________。",
+      "hint_zh": "接着"
+     },
+     {
+      "n": 3,
+      "zh": "遇到不认识的词语，我会马上查词典，________。",
+      "hint_zh": "接着"
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "title_zh": "除此以外",
+    "explanation_zh": "“除此以外”，相当于“除了这个（指代前面所说的内容）以外”，一般用于书面语。例如：",
+    "explanation_en": "“除此之外” means “besides this (referring to what’s been mentioned previously)”, usually used in written Chinese. For example:",
+    "examples": [
+     {
+      "n": 1,
+      "zh": "他和弟弟同一天出生，兄弟俩长得很像，但除此以外几乎再找不到其他共同点。"
+     },
+     {
+      "n": 2,
+      "zh": "北方人过年时爱吃饺子，是因为饺子味道鲜美，除此以外，还因为人们忙了一年，过年时全家人坐在一起包饺子，是很好的交流机会。"
+     },
+     {
+      "n": 3,
+      "zh": "……打电话、发短信已经成了人们普遍使用的联系方法。除此以外，你还可以用它来听音乐、看电影、阅读、玩儿游戏、付款购物等，这大大方便了人们的生活。"
+     }
+    ],
+    "practice_instruction_zh": "完成句子 Complete the sentences.",
+    "practice": [
+     {
+      "n": 1,
+      "zh": "骑自行车是一种很好的、锻炼身体的方式。________。",
+      "hint_zh": "除此以外"
+     },
+     {
+      "n": 2,
+      "zh": "冬季皮肤往往容易变得干燥，女性朋友尤其要注意保护皮肤。应该选择保湿的护肤品，________。",
+      "hint_zh": "除此以外"
+     },
+     {
+      "n": 3,
+      "zh": "了解顾客的实际需要十分重要。买东西时，顾客当然会考虑它的质量和价格，________。",
+      "hint_zh": "除此以外"
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "title_zh": "把……叫作……",
+    "explanation_zh": "“把……叫作……”，后面是前面的名称。“把”后面一般跟名词、代词或名词短语。例如：",
+    "explanation_en": "In the structure “把……叫作……” (...is called...), the latter part is the name of the former part. “把” is usually followed by a noun, pronoun or noun phrase. For example:",
+    "structure_rows": [
+     "把……叫作……"
+    ],
+    "examples": [
+     {
+      "n": 1,
+      "zh": "现代科学技术的发展让世界变得越来越小，所以现在人们都把地球叫作“地球村”。"
+     },
+     {
+      "n": 2,
+      "zh": "黄河是中国第二大河，从中国西部流向东部，全长5464公里，人们把它叫作“母亲河”。"
+     },
+     {
+      "n": 3,
+      "zh": "中国人搬了新家后，一般都会邀请亲戚朋友到家里来吃顿饭，热闹一下。人们把这个习惯叫作“暖房”。"
+     }
+    ],
+    "practice_instruction_zh": "完成句子 Complete the sentences.",
+    "practice": [
+     {
+      "n": 1,
+      "zh": "在汉语里，像“海”“河”这些字左边的部分是一样的，________。",
+      "hint_zh": "把……叫作……"
+     },
+     {
+      "n": 2,
+      "zh": "中国有56个民族，其中汉族人的数量最多，汉族以外的55个民族由于人数较少，________。",
+      "hint_zh": "把……叫作……"
+     },
+     {
+      "n": 3,
+      "zh": "东西的质量和价格是有联系的，质量好的东西一般价格也会比较高。人们习惯上________。",
+      "hint_zh": "把……叫作……"
+     }
+    ]
+   }
+  ],
+  "exercises": [
+   {
+    "n": "注释3 比一比 做一做",
+    "type_zh": "选词填空（接着／然后）",
+    "instruction_zh": "选词填空",
+    "instruction_en": "Tick or cross",
+    "word_bank": [
+     [
+      "接着",
+      "然后"
+     ]
+    ],
+    "items": [
+     {
+      "n": 1,
+      "zh": "妹妹刚参加工作一年就买了房子，________就结了婚，今年又生了一个小男孩儿，生活得很幸福。",
+      "options": {
+       "接着": "✓",
+       "然后": "✓"
+      },
+      "answer": "接着 ✓　然后 ✓",
+      "answer_ref": {
+       "book": "textbook",
+       "pages": [
+        119
+       ]
+      }
+     },
+     {
+      "n": 2,
+      "zh": "我说完了，你________说吧。",
+      "options": {
+       "接着": "✓",
+       "然后": "×"
+      },
+      "answer": "接着 ✓　然后 ×",
+      "answer_ref": {
+       "book": "textbook",
+       "pages": [
+        119
+       ]
+      }
+     },
+     {
+      "n": 3,
+      "zh": "你先上网看看吧，多比较比较，________再做决定。"
+     },
+     {
+      "n": 4,
+      "zh": "进了商店，妻子先买了一件衬衫，________又买了一条裤子。"
+     },
+     {
+      "n": 5,
+      "zh": "今天的课就到这儿，下节课________讲这个问题。"
+     }
+    ]
+   },
+   {
+    "n": "课文1–3 回答问题",
+    "type_zh": "回答问题",
+    "instruction_zh": "根据课文内容回答问题",
+    "instruction_en": "Answer the questions based on the texts.",
+    "items": [
+     {
+      "n": 1,
+      "zh": "课文1：王静给孙月推荐了一本什么书？为什么给她推荐这本书？"
+     },
+     {
+      "n": 2,
+      "zh": "课文1：这本书都有哪些内容？孙月担心什么？王静觉得这本书怎么样？"
+     },
+     {
+      "n": 3,
+      "zh": "课文2：现在的大学生遇到不明白的问题怎么办？调查结果是什么？"
+     },
+     {
+      "n": 4,
+      "zh": "课文2：电脑和互联网技术的发展带来了哪些变化？网上写日记有哪些好处？"
+     },
+     {
+      "n": 5,
+      "zh": "课文3：王静昨天晚上做了个什么样的梦？会有人从来没做过梦吗？"
+     },
+     {
+      "n": 6,
+      "zh": "课文3：人们对梦进行过哪些解释？目前的研究结果是什么？"
+     }
+    ]
+   },
+   {
+    "n": "课文4–5 回答问题",
+    "type_zh": "回答问题",
+    "instruction_zh": "根据课文内容回答问题",
+    "instruction_en": "Answer the questions based on the texts.",
+    "items": [
+     {
+      "n": 1,
+      "zh": "课文4：手机都有哪些作用？迷路时怎么用手机帮忙？"
+     },
+     {
+      "n": 2,
+      "zh": "课文4：为什么说现代人的生活越来越离不开手机了？"
+     },
+     {
+      "n": 3,
+      "zh": "课文5：我们的生活发生了哪些变化？请举例说明。"
+     },
+     {
+      "n": 4,
+      "zh": "课文5：为什么人们把地球叫作“地球村”？"
+     }
+    ]
+   },
+   {
+    "n": 1,
+    "type_zh": "复述",
+    "instruction_zh": "复述",
+    "instruction_en": "Retell the dialogues.",
+    "items": [
+     {
+      "n": "课文1",
+      "zh": "孙月的语气：上次女儿问我飞机是怎么起飞和降落的，……"
+     },
+     {
+      "n": "课文2",
+      "zh": "高老师的语气：现在认为人们尤其是大学生开始普遍使用电脑，……"
+     },
+     {
+      "n": "课文3",
+      "zh": "王静的语气：我昨天晚上做了一个特别奇怪的梦，……"
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "type_zh": "选词填空",
+    "instruction_zh": "选择合适的词语填空",
+    "instruction_en": "Choose the proper words to fill in the blanks.",
+    "word_bank": [
+     [
+      "收",
+      "座",
+      "安全",
+      "危险",
+      "降落"
+     ],
+     [
+      "地点",
+      "地址",
+      "技术",
+      "迷路",
+      "咸"
+     ]
+    ],
+    "items": [
+     {
+      "n": 1,
+      "zh": "北京有一________山，叫香山，非常有名。每到秋天，满山都是红叶，风景特别漂亮。"
+     },
+     {
+      "n": 2,
+      "zh": "有些人直接拿自己的生日做银行卡或信用卡的密码。其实，这样做很不________。"
+     },
+     {
+      "n": 3,
+      "zh": "无论对自己还是对其他人来说，喝完酒开车都是极其________的。"
+     },
+     {
+      "n": 4,
+      "zh": "说出去的话很难________回。因此，生气时不要随便说话，这时候说的一般都是气话，会给别人留下不好的印象，甚至会伤害别人。"
+     },
+     {
+      "n": 5,
+      "zh": "各位乘客，大家好，感谢大家乘坐此次航班，我们的飞机将于20分钟后________在北京首都国际机场。"
+     },
+     {
+      "n": 6,
+      "zh": "A：饺子很香，不过鸡蛋汤稍微有点儿________。 B：那我下次少放点儿盐。"
+     },
+     {
+      "n": 7,
+      "zh": "A：对面那条街上新开了一家理发店，听说那儿的理发师________还不错。 B：是吗？正好我也该理发了，那明天下班后我去试试。"
+     },
+     {
+      "n": 8,
+      "zh": "A：我怎么觉得咱俩好像________了？ B：没有，我以前来过这儿，前面路口左转就到了。"
+     },
+     {
+      "n": 9,
+      "zh": "A：能把照片发到我邮箱里吗？ B：没问题，把你的邮箱________告诉我，我整理好了就发给你。"
+     },
+     {
+      "n": 10,
+      "zh": "A：今天下午我们还是两点在东门集合吗？ B：时间不变，________改在西门了。快去整理一下东西吧，我们马上出发。"
+     }
+    ]
+   },
+   {
+    "n": "扩展 做一做",
+    "type_zh": "选词填空（同字词）",
+    "instruction_zh": "选词填空",
+    "instruction_en": "Fill in the blanks with the words given.",
+    "word_bank": [
+     [
+      "地点",
+      "特点",
+      "优点",
+      "缺点",
+      "重点"
+     ]
+    ],
+    "items": [
+     {
+      "n": 1,
+      "zh": "教育学生时，要根据学生的________选择不同的方法。",
+      "answer": "特点",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        84
+       ]
+      }
+     },
+     {
+      "n": 2,
+      "zh": "现在有个通知，十一月七日上午八点有中国文化研讨会，________在图书馆三楼会议室，希望大家准时参加。",
+      "answer": "地点",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        84
+       ]
+      }
+     },
+     {
+      "n": 3,
+      "zh": "由于时间限制，这份材料我就不向大家详细介绍了，我只对其中的________简单说明一下。",
+      "answer": "重点",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        84
+       ]
+      }
+     },
+     {
+      "n": 4,
+      "zh": "A：你对小李的印象怎么样？ B：他的________是有礼貌，诚实，能吃苦，________是太马虎、太粗心了，不适合我们的工作。",
+      "answer": "优点、缺点",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        84
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "characters": {
+   "knowledge_title_zh": "同字词",
+   "knowledge_en": "Words with the Same Character",
+   "knowledge_zh": "点：地点、特点、优点、缺点、重点\n（1）A：你联系马记者了吗？ B：联系过了，我已经通知他会议地点改到首都饭店了。\n（2）A：你对我们国家的文化了解多少？ B：我知道中国功夫很厉害，京剧也很有特点。\n（3）人应该学会认识自己。不仅要看到自己的优点，也要了解自己的缺点，并且要努力改掉缺点。只有这样，才会逐渐变得成熟起来。\n（4）A：材料这么厚，我估计看不完了。 B：复习要注意方法，复习重点内容应该来得及。",
+   "characters": [
+    {
+     "zh": "点",
+     "note_zh": "地点、特点、优点、缺点、重点"
+    }
+   ]
+  },
+  "application": [
+   {
+    "title_zh": "双人活动",
+    "instruction_zh": "互相了解对方关于电脑和互联网的使用情况，完成调查表。",
+    "instruction_en": "Learn about your partner’s use of his/her computer and the Internet and complete the questionnaire below.",
+    "example_zh": [
+     "表格：| | 问 | 答 |",
+     "| 1 | 你常用电脑做什么？ | |",
+     "| 2 | 你平均每天上网的时间大概是多长？ | |",
+     "| 3 | 你上网的原因是什么？ | |",
+     "| 4 | 互联网对你的生活有哪些影响？ | |",
+     "| 5 | 你使用什么聊天工具？ | |",
+     "| 6 | 你会因为上网而减少和朋友正常交流的时间吗？ | |"
+    ]
+   },
+   {
+    "title_zh": "小组活动",
+    "instruction_zh": "请向小组成员介绍一下科技的发展对我们生活的影响。（最少用四个下面的结构）",
+    "instruction_en": "Tell your group members about the influence of the development of science and technology on our lives. (Use at least four of the following structures.)",
+    "example_zh": [
+     "a. 电脑和互联网技术的发展",
+     "b. 方便大家的交流",
+     "c. 节约用纸",
+     "d. 保护环境",
+     "e. 试着对梦进行解释",
+     "f. 仍然没有一个科学的说法",
+     "g. 越来越离不开",
+     "h. 发生了巨大变化"
+    ]
+   }
+  ],
+  "culture": {
+   "title_zh": "微博与微信",
+   "body_zh": "微博，是微博客（MicroBlog）的简称，是一个基于用户关系信息分享、传播以及获取的平台。用户可以通过电脑或手机访问，以140字左右的文字更新信息，并实现即时分享。最早也是最著名的微博是美国Twitter。2009年8月中国门户网站新浪成为门户网站中第一家提供微博服务的网站，微博正式进入中文上网主流人群视野。\n微信（WeChat）是腾讯公司2011年推出的一款即时语音通讯软件，用户可以通过手机快速发送语音、视频、图片和文字。微信提供公众平台、朋友圈和消息推送等功能，用户可以通过“摇一摇”“搜索号码”“附近的人”“扫二维码”方式添加好友和关注微信公众平台，同时微信可以把内容分享给好友，还可以把用户看到的精彩内容分享到微信朋友圈。",
+   "body_en": "Weibo and WeChat\nWeibo, or MicroBlog, is a platform to share, spread and obtain information based on user relationship. Users can visit the site via computers or cell phones and post a message of around 140 words/characters, which can be shared immediately. The earliest and most famous MicroBlog is Twitter of the US. In August 2009, Sina became the first web portal in China to provide Weibo service, which is when MicroBlog officially came into the sight of the majority of Chinese net surfers.\nWeChat is an instant voice messaging app released by Tencent in 2011, via which users can send voice messages, videos, images and texts on their cell phones at a real fast speed. WeChat provides services such as public accounts, circles of friends and message promotion. Users can add new friends and follow public accounts by selecting “Shake”, “Search by Number”, “People Nearby” or “Scan QR Code”. WeChat allows users to share moments with their friends and also share what they’ve read in their circles of friends."
+  }
+ },
+ "teacher": {
+  "ref": {
+   "book": "teacher",
+   "pages": [
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84
+   ]
+  },
+  "objectives_zh": [
+   "主题：科技生活（1）对话：科普知识、互联网对人们的影响、对梦的解释（2）短文：手机的作用、“地球村”",
+   "语言点：学生能够了解并掌握：（1）“是否”表示是不是（2）“受不了”表示不能忍受（3）“接着”表示（时间上）紧跟着　*辨析“接着”和“然后”的异同（4）“除此以外”表示“除了这个（指代前面所说的内容）以外”（5）“把……叫作……”表示后面是前面的名称",
+   "词汇：学生能够：（1）掌握本课30个四级大纲词汇的意义和用法　重点词语：降落、秒、受不了、允许、危险、咸、举、地址、地点、收、信息（2）了解2个非大纲词汇的意义：方式、抓（3）理解“点”字的组词规律及在词汇中的意义"
+  ],
+  "steps": [
+   {
+    "title_zh": "一 复习旧课",
+    "body_zh": "1 使用生词卡片，快速认读下列词语：\n凉快、照、严格、难受、放暑假、\n排队、社会、竞争、剩、底、排列\n2 快速回答问题（与第17课或学生实际生活有关的问题）：\n（1）到了秋天，为什么很多人去香山参观？\n（2）怎么能让狗按照我们的要求做一些事情？\n（3）森林里为什么有的植物长得高，有的长得矮？\n3 检查作业：\n请5名学生谈谈自己心中的海底世界是什么样子的。"
+   },
+   {
+    "title_zh": "二 学习新课 1 热身",
+    "body_zh": "热身1：学生两人一组，合作完成；教师指出图片，请学生根据图片说出对应的词语，教师核对答案；教师领读热身1的生词；最后全体学生齐读，教师正音。\n答案：①F　②B　③E　④D　⑤C　⑥A\n热身2：教师带领学生熟悉调查表格的内容；请学生两人一组，调查对方手机的使用情况；请3～5名学生报告调查结果。"
+   },
+   {
+    "title_zh": "2 生词",
+    "body_zh": "（1）生词快速认读及正音\n课文1（对话）：降落、火、作者、交通、技术、是否\n课文2（对话）：秒、*方式、受不了、日记、安全、密码、允许\n课文3（对话）：座、桥、危险、接着、警察、*抓、咸、矿泉水\n课文4（短文）：付款、举、迷路、地址、地点\n课文5（短文）：世纪、邮局、收、信封、网站、信息\n• 教师用PPT或卡片展示并领读生词（带拼音）；\n• 取消拼音，带领学生再次认读；\n• 逐词（不带拼音）闪现，请学生快速认读生词；\n• 请3～5个学生快速随机认读3～5个生词；\n• 最后全体学生快速齐读所有生词。\n（2）生词讲解方式\n直观法（图片、实物）：图片类：交通（热身图片C）、日记（某一篇日记）、安全（上车系安全带）、密码（热身图片F）、桥（一座桥）、危险（热身图片D）、警察、付款（热身图片A）、举（热身图片E）、迷路（一个人在迷宫里）、地址（一张名片，指明地址）、邮局（邮局门口）、信息（热身图片B）、咸（第12课热身图片A，并配合问题：放很多盐，味道怎么样？）；实物类：作者（利用本教材封面页，指明作者位置）、秒（用钟表说明秒针位置，并数几秒）、矿泉水、信封、网站（多媒体展示几个网站）\n情景法（肢体动作、语言等）：抓（抓东西的动作）\n替换法（同／近义替换）：火（流行）、方式（方法）、接着（然后）、地点（地方）\n搭配法：座（一座楼）\n对比法（反义词对比）：降落（起飞）、收（发）（email）\n分解法（分解词义）：受不了（接受不了，并配合归纳法：吃不了、喝不了……）\n提问启发：技术、允许、世纪\n教师提问，引导学生说出句子：\n这次咱们开车去旅游，谁来开车呢？为什么？——让马克开车，他开车技术最好。\n上课可以打电话吗？——上课不允许打电话。\n从1900年到1999年一共多少年？还可以怎么说？——一共一百年，也叫作一个世纪。\n（3）字形辨认练习\n教师用卡片或PPT展示，请学生快速辨认并读出，最后给每个字组词。\n交—友　秒—和　记—纪\n允—兄　桥—校　险—检\n付—对　举—春　局—房\n（4）重点生词扩展及常用搭配\n降落—飞机降落—顺利降落—飞机什么时候降落—女儿问我飞机是怎么起飞和降落的。\n秒—1秒—1秒钟—刚过了几秒钟—几秒钟就把问题解决了。\n受不了—受不了他—实在受不了—眼睛真的受不了—天天对着电脑看，眼睛实在受不了。\n允许—不允许—允许他—得到允许—只有得到了允许，别人才能看到。\n危险—很／比较／非常危险—这样做非常危险。\n咸—很／比较／非常咸—吃得太咸—我晚饭吃得太咸，总想喝水。\n举—举起来—举起手来—举例子—举一个例子—老师给学生举了好几个例子。\n地址—房子的地址—告诉你我的地址—用手机地图查一下地址。\n地点—开会地点—举办活动的地点—请通知大家下周开会的时间和地点。\n收—收礼物／信／电子邮件—收到一个生日礼物—用不了一分钟，远处的朋友就能收到电子邮件。\n信息—一条／个信息—重要信息—获得重要信息—任何信息都可以第一时间获得。"
+   },
+   {
+    "title_zh": "3 语言点（1）是否",
+    "body_zh": "① 语言点解析\n“是否”，副词，表示“是不是”的意思，一般用于书面语。\n② 语言点导入\n使用替换法，提问导入。\n教师：这本书你有没有看过？\n教师替换：这本书你是否看过？（“是否”用重音）\n教师：你准备好明天开会需要的材料了吗？\n学生替换：你是否准备好明天开会需要的材料了？\n③ 语言点操练\n• 利用图片，替换操练。\n教师展示运动员举重的图片。\n教师：看他现在的情况，你们觉得能举起来吗？\n学生：看他现在的情况，很多人怀疑他是否能举起来。\n• 联系生活实际，提问操练。\n教师：你还记得你第一次旅行去的城市吗？\n学生：当然记得，那里特别漂亮。过去这么多年，不知道那里是否发生了变化。\n④ 语言点运用\n请学生用“是否”改写下面的句子，教师帮助学生判断正误。\nI. 听到别人的意见或者建议时，你们应该冷静地想想正确不正确。\nII. 这次面试有两个人比较优秀，用不用通知他们下周来上班？\nIII. 我们总会遇到许多机会，但重要的是当它来到我们身边时我们是不是做好了准备。\n参考答案：I. 听到别人的意见或者建议时，你们应该冷静地想想是否正确。\nII. 这次面试有两个人比较优秀，是否通知他们下周来上班？\nIII. 我们总会遇到许多机会，但重要的是当它来到我们身边时我们是否做好了准备。"
+   },
+   {
+    "title_zh": "3 语言点（2）受不了",
+    "body_zh": "① 语言点解析\n“受不了”，表示不能忍受（疼痛、痛苦、压力、不幸、态度、脾气等），一般用在名词或名词性短语前。\n② 语言点导入\n联系生活实际或创设情境，提问导入。\n• 教师：我们以后每天学习3篇课文怎么样？\n学生：每天学习3篇课文我们真的受不了，太多了。\n• 教师：你怎么不接你男朋友电话呢？你生他气了？\n学生：不知道为什么，他最近总是对我发脾气，我实在受不了他了。\n③ 语言点操练\n联系生活实际，提问操练。\n• 教师：天天对着电脑工作，你们眼睛不难受吗？\n学生：天天对着电脑工作，眼睛当然受不了，可是我必须得用电脑工作啊。\n• 教师：你最受不了哪些事情？\n学生：我最受不了我的好朋友骗我。\n④ 语言点运用\n请学生根据提示说说自己最受不了同屋做以下哪件事情，并说明原因。\nI. 睡得太晚　II. 起得太早　III. 在宿舍做饭　IV. 常请朋友来"
+   },
+   {
+    "title_zh": "3 语言点（3）接着",
+    "body_zh": "① 语言点解析\n“接着”，副词，表示（时间上）紧跟着，表示在前面发生的情况以后马上发生了另外的情况。\n② 语言点导入\n创设情境，提问导入。\n教师把书给第一个学生，再请那个学生把书给第二个学生。\n• 教师：老师把书给了……（马克），……（马克）又做什么了？\n学生：老师把书给了马克，接着，马克又把书给了别的同学。\n• 教师：你现在有时间吗？这个调查我恐怕没时间再做了，你能不能帮我把它做完？\n学生：没问题，我帮你接着把调查做完。\n③ 语言点操练\n创设情境，提问操练。\n• 教师：你给我解释一下，今天这么重要的会议为什么迟到了？\n学生：经理，对不起，今天孩子突然病了，我先带孩子去医院，接着又把爱人送到公司，所以迟到了。\n• 教师：你不是说就去趟邮局吗，怎么现在才过来？\n学生：我从邮局出来以后，接着又去了趟银行，所以来晚了。\n④ 语言点运用\n请学生4人一组，根据图片提示说句子，并把这几个句子组成一个小故事。\n（图片：用吸尘器打扫地毯；一杯咖啡；两个女孩在服装店看衣服；一个人在看书）\n提示内容：I. 打扫房间　II. 喝咖啡　III. 逛街　IV. 看书\n⑤ 比一比：接着—然后\n按照教材中的辨析步骤进行。"
+   },
+   {
+    "title_zh": "3 语言点（4）除此以外",
+    "body_zh": "① 语言点解析\n“除此以外”，相当于“除了这个（指代前面所说的内容）以外”，一般用于书面语。\n② 语言点导入\n联系生活实际，提问导入。\n• 教师：手机除了能打电话，还能做什么？\n学生：手机能打电话，除此以外，还能听音乐、看电影、收发电子邮件。\n• 教师：在北京是不是只有在香山才能看到红叶？\n学生：香山红叶很有名，除此以外，还有很多地方可以看，比如长城什么的。\n③ 语言点操练\n联系生活实际，提问操练。\n• 教师：你喜欢做哪些运动？\n学生：我只喜欢游泳，除此以外都不太喜欢。\n• 教师：怎么提高汉语水平呢？\n学生：看中文电影能提高汉语水平，除此以外，你还可以试着看看中文报纸。\n④ 语言点运用\n请学生两人一组，根据提示用“除此以外”补全对话，并分角色表演。\nA：我们已经学习了好几个月汉语了，你觉得汉语难吗？\nB：________。\nA：你说得对，不过通过学习，我也获得了很多东西。你呢？\nB：________。\n参考答案：我觉得汉字比较难，除此以外，还有发音\n我了解了中国文化，除此以外，还认识了很多中国朋友"
+   },
+   {
+    "title_zh": "3 语言点（5）把……叫作……",
+    "body_zh": "① 语言点解析\n“把……叫作……”，后面是前面的名称，“把”后面一般跟名词、代词或名词短语。\n② 语言点导入\n联系课文内容，提问导入。\n• 教师：科学改变了我们的生活，让地球变小了，地球像一个村子……\n学生：我们把地球叫作“地球村”。\n• 教师：如果工作或者学习方法不对，你需要用更多的时间才能完成。我们把这种情况叫作什么？\n学生：我们把这种情况叫作“事倍功半”。\n③ 语言点操练\n联系生活实际，引导操练。\n• 教师：中国人觉得黄河像母亲一样，所以……\n学生：中国人把黄河叫作“母亲河”。\n• 教师：如果一个人买了新房子，他一般会请朋友到家里吃饭，这叫什么？\n学生：我们把这个习惯叫作“暖房”。\n④ 语言点运用\n请学生根据句子意思连线，并用“把……叫作……”组成3个完整的句子，最后朗读。\nI. 中国人　II. 母亲为了教育孩子而经常搬家　III. 熊猫\nA. 龙的传人　B. 孟母三迁　C. 活化石\n参考答案：I. 大家都把中国人叫作“龙的传人”。\nII. 人们常把母亲为了教育孩子而经常搬家叫作“孟母三迁”。\nIII. 人们把熊猫叫作“活化石”。"
+   },
+   {
+    "title_zh": "4 课文",
+    "body_zh": "（1）就课文内容，教师将下列问题写在黑板上或用PPT展示（或教师给学生发放问题单）：\n课文1：《新十万个为什么》这本书卖得怎么样？《新十万个为什么》这本书介绍了哪些内容？王静认为这本书适合孙月女儿吗？\n课文2：什么使学生的学习和生活发生了变化？天天对着电脑好不好？现在学生喜欢在网上做什么？网上的日记，所有人都可以看到吗？\n课文3：王静昨天晚上做了一个什么样的梦？孙月为什么觉得很奇怪？\n课文4：手机可以做什么？迷路时手机可以帮助我们做什么？\n课文5：21世纪我们的生活和以前一样吗？发电子邮件方便吗？为什么？怎么能以最快的速度知道最新的信息？\n（2）要求学生带着问题，听两遍录音并回答问题，教师给出答案；\n（3）学生打开课本，教师逐句播放录音，学生看课本听第二次录音并跟读；\n（4）教师领读一遍课文；\n（5）全班一起大声齐读一遍课文；\n（6）请2～3组学生分角色朗读课文，教师正音；\n（7）做以下课文扩展练习：\n对话课文：教师带领学生根据问题单上问题的答案叙述课文内容，并请学生单个复述。\n课文1：《新十万个为什么》这本书非常火，介绍了各种科学知识，包括地球、动物、植物、交通、科学技术等。孙月担心女儿是否能读懂，王静认为这本书语言简单易懂，能增长孩子的科学知识。\n课文2：电脑和互联网技术的发展使学生们的学习方式发生了很多变化，不过天天对着电脑看，眼睛实在受不了。现在越来越多的学生喜欢在网上写日记，他们给网上的日记加密码，只有得到了允许，别人才能看到。\n课文3：王静昨天晚上做了一个奇怪的梦，梦到自己正在一座桥上走着，突然开过来一辆车，非常危险，接着她又梦见自己跳到车上，跟警察一起抓住了一个坏人。王静每次都能记住自己做了什么梦，孙月觉得很奇怪。\n短文课文：请学生根据课文内容，补全下面的语段，并请学生单个复述朗读。\n课文4：手机可以打电话、发短信，……（除此以外），还可以听音乐、看电影、阅读、玩游戏、……（付款购物），这大大方便了人们的生活。……（举一个例子），迷路时，只要用手机地图……（查一下地址），马上就能知道怎么去那个地点。\n课文5：21世纪，我们的生活……（发生了很大变化）。现在不用……（去邮局），只要上网发个电子邮件，用不了一分钟，朋友……（就能收到），比写信封的时间都短。打开网站，……（任何信息）都可以在第一时间获得。"
+   },
+   {
+    "title_zh": "5 扩展",
+    "body_zh": "（1）领读“地点、特点、优点、缺点、重点”五个同字词，请学生说一说“点”字在词中的位置和意义。“点”的义项：\n① 一定的地点或程度的标志：地点\n② 事物的方面或部分：特点、优点、缺点、重点\n（2）请学生完成“选词填空”练习，教师给出答案。\n参考答案：①特点　②地点　③重点　④优点、缺点\n（3）教师在黑板上列出以下词语，请学生猜词义，教师给出简单的例句进行解释。\n要点：阅读一篇新闻，首先要明白它的要点。\n起点：这次马拉松（Marathon）比赛的起点在香山公园东门。\n终点：终点站到了，请大家准备下车。\n交点：两条线没有交点。（几何上的某位置）"
+   },
+   {
+    "title_zh": "6 补充课堂活动",
+    "body_zh": "学生4人一组，分别就下面几个问题进行讨论，最后请每组派代表汇报讨论的结果。\n• 人为什么会做梦？\n• 为什么有的人记得自己的梦，有的人不记得？\n• 有人认为做梦是上天要告诉我们一些事情，你同意吗？"
+   },
+   {
+    "title_zh": "7 文化",
+    "body_zh": "教师引导学生了解微博与微信，可根据需求和时间安排，进行以下参考活动：\n• 展示图片或有关网站，介绍什么是微博以及主流的微博网站；\n• 请学生谈谈使用微信的感受，有什么好处；\n• 请学生说说还有哪些新的交流方式。"
+   },
+   {
+    "title_zh": "8 布置作业",
+    "body_zh": "• 每个生词写3遍；\n• 用至少3个句子谈谈科技对你生活的改变。"
+   }
+  ],
+  "notes_zh": [
+   "比一比：接着—然后——按照教材中的辨析步骤进行。（语言点3）",
+   "字形辨认：交—友　秒—和　记—纪　允—兄　桥—校　险—检　付—对　举—春　局—房（生词）",
+   "“点”的义项：① 一定的地点或程度的标志：地点　② 事物的方面或部分：特点、优点、缺点、重点；扩展词：要点、起点、终点、交点（几何上的某位置）（扩展）",
+   "词汇：30个四级大纲词汇 + 2个非大纲词汇（方式、抓）——生词表中*标记。"
+  ],
+  "warmup_answers_zh": [
+   "热身1 答案：①F　②B　③E　④D　⑤C　⑥A",
+   "热身2：教师带领学生熟悉调查表格的内容；请学生两人一组，调查对方手机的使用情况；请3～5名学生报告调查结果。"
+  ],
+  "text_questions": [
+   {
+    "text": 1,
+    "q_zh": "《新十万个为什么》这本书卖得怎么样？"
+   },
+   {
+    "text": 1,
+    "q_zh": "《新十万个为什么》这本书介绍了哪些内容？"
+   },
+   {
+    "text": 1,
+    "q_zh": "王静认为这本书适合孙月女儿吗？"
+   },
+   {
+    "text": 2,
+    "q_zh": "什么使学生的学习和生活发生了变化？"
+   },
+   {
+    "text": 2,
+    "q_zh": "天天对着电脑好不好？"
+   },
+   {
+    "text": 2,
+    "q_zh": "现在学生喜欢在网上做什么？"
+   },
+   {
+    "text": 2,
+    "q_zh": "网上的日记，所有人都可以看到吗？"
+   },
+   {
+    "text": 3,
+    "q_zh": "王静昨天晚上做了一个什么样的梦？"
+   },
+   {
+    "text": 3,
+    "q_zh": "孙月为什么觉得很奇怪？"
+   },
+   {
+    "text": 4,
+    "q_zh": "手机可以做什么？"
+   },
+   {
+    "text": 4,
+    "q_zh": "迷路时手机可以帮助我们做什么？"
+   },
+   {
+    "text": 5,
+    "q_zh": "21世纪我们的生活和以前一样吗？"
+   },
+   {
+    "text": 5,
+    "q_zh": "发电子邮件方便吗？为什么？"
+   },
+   {
+    "text": 5,
+    "q_zh": "怎么能以最快的速度知道最新的信息？"
+   }
+  ]
+ },
+ "workbook": {
+  "ref": {
+   "book": "workbook",
+   "pages": [
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83
+   ]
+  },
+  "sections": [
+   {
+    "n": "一、听力 第一部分",
+    "type_zh": "听力 第一部分",
+    "instruction_zh": "第1–5题：判断对错。",
+    "items": [
+     {
+      "n": "例1",
+      "zh": "★他打算下午去银行。",
+      "transcript_zh": "我想去办个信用卡，今天下午你有时间吗？陪我去一趟银行？",
+      "answer": "✓",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        74
+       ]
+      }
+     },
+     {
+      "n": "例2",
+      "zh": "★他喜欢看电视广告。",
+      "transcript_zh": "现在我很少看电视，其中一个原因是，广告太多了，不管什么时间，也不管什么节目，只要你打开电视，总能看到那么多的广告，浪费我的时间。",
+      "answer": "×",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        74
+       ]
+      }
+     },
+     {
+      "n": 1,
+      "zh": "★地址填错地方了。",
+      "transcript_zh": "先生，您把收件人和寄件人的地址填反了，这儿应该填您自己的地址。我再给您一张单子，您重新填一下吧。",
+      "answer": "✓",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        127,
+        129
+       ]
+      }
+     },
+     {
+      "n": 2,
+      "zh": "★他们要坐地铁。",
+      "transcript_zh": "姐，咱们弄错方向了，去西边的公共汽车应该过马路去那边坐。正好前边有个天桥，我们从那儿过马路吧。",
+      "answer": "×",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        127,
+        129
+       ]
+      }
+     },
+     {
+      "n": 3,
+      "zh": "★明天中午有大雪。",
+      "transcript_zh": "由于冷空气南下，我省明天将迎来大风降温天气，有些地方还会有小到中雨，交通会受到一定影响，听众朋友们出行时一定要注意安全。",
+      "answer": "×",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        127,
+        129
+       ]
+      }
+     },
+     {
+      "n": 4,
+      "zh": "★遇到危险时要冷静。",
+      "transcript_zh": "遇到危险时，哭不能解决任何问题，你应该想办法向别人求助。但在这之前，你必须先让自己冷静下来。",
+      "answer": "✓",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        127,
+        129
+       ]
+      }
+     },
+     {
+      "n": 5,
+      "zh": "★黄河是中国的“母亲河”。",
+      "transcript_zh": "黄河是中国第二大河，它有5464公里长，人们把它叫作“母亲河”。从地图上看，它就像一个大大的“几”字。",
+      "answer": "✓",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        127,
+        129
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "一、听力 第二部分",
+    "type_zh": "听力 第二部分",
+    "instruction_zh": "第6–12题：请选出正确答案。",
+    "items": [
+     {
+      "n": "例",
+      "zh": "男的主要是什么意思？",
+      "transcript_zh": "女：该加油了，去机场的路上有加油站吗？ 男：有，你放心吧。 问：男的主要是什么意思？",
+      "options": {
+       "A": "去机场",
+       "B": "快到了",
+       "C": "油是满的",
+       "D": "有加油站"
+      },
+      "answer": "D",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        75
+       ]
+      }
+     },
+     {
+      "n": 6,
+      "zh": "男的为什么感到奇怪？",
+      "options": {
+       "A": "没有邮件",
+       "B": "电脑坏了",
+       "C": "电话有问题",
+       "D": "密码错了"
+      },
+      "transcript_zh": "女：你叔叔刚打电话来说给你发了个电子邮件，让你查收。 男：我正在上邮箱，可一直进不去，真奇怪，总说我的密码有错，没错啊。 问：男的为什么感到奇怪？",
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        127,
+        129
+       ]
+      }
+     },
+     {
+      "n": 7,
+      "zh": "关于男的，下列哪个正确？",
+      "options": {
+       "A": "在超市",
+       "B": "没带钱",
+       "C": "在找人",
+       "D": "迷路了"
+      },
+      "transcript_zh": "男：喂，你在哪儿呢？我已经到公园了，怎么看不到你啊？ 女：我在公园旁边的超市呢，正好我买了一箱矿泉水，你来接我一下吧。 问：关于男的，下列哪个正确？",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        127,
+        129
+       ]
+      }
+     },
+     {
+      "n": 8,
+      "zh": "男的让女的做什么？",
+      "options": {
+       "A": "寄信",
+       "B": "写地址",
+       "C": "找信封",
+       "D": "发邮件"
+      },
+      "transcript_zh": "男：你那儿有大一点儿的信封吗？这个太小了。 女：稍等一下，我发完这封电子邮件就给你找。 问：男的让女的做什么？",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        127,
+        129
+       ]
+      }
+     },
+     {
+      "n": 9,
+      "zh": "他们在谈什么？",
+      "options": {
+       "A": "做菜",
+       "B": "咖啡",
+       "C": "面条",
+       "D": "葡萄酒"
+      },
+      "transcript_zh": "男：你尝一下，这个菜味道怎么样？ 女：我尝了，稍微有点儿咸，是不是盐放多了？ 问：他们在谈什么？",
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        128,
+        129
+       ]
+      }
+     },
+     {
+      "n": 10,
+      "zh": "女的怎么了？",
+      "options": {
+       "A": "非常困",
+       "B": "发烧了",
+       "C": "没起床",
+       "D": "受欢迎"
+      },
+      "transcript_zh": "男：你困了就先去睡一会儿吧，等比赛开始了，我再叫你起来接着看。 女：好的，我实在受不了了，先去躺会儿。 问：女的怎么了？",
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        128,
+        129
+       ]
+      }
+     },
+     {
+      "n": 11,
+      "zh": "男的现在心情怎么样？",
+      "options": {
+       "A": "高兴",
+       "B": "无聊",
+       "C": "担心",
+       "D": "轻松"
+      },
+      "transcript_zh": "女：做得怎么样了？今天能解决这个问题吗？ 男：情况比我们想的复杂得多，还有一个技术问题不知道怎么办，今天恐怕完不了了。 问：男的现在心情怎么样？",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        128,
+        129
+       ]
+      }
+     },
+     {
+      "n": 12,
+      "zh": "男的在做什么？",
+      "options": {
+       "A": "借钱",
+       "B": "买饼干",
+       "C": "找钥匙",
+       "D": "问路"
+      },
+      "transcript_zh": "男：我想买这本词典，可出门忘带钱包了，你能不能先借我一点儿？一会儿回去还你。 女：没问题。高老师，您要多少？ 问：男的在做什么？",
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        128,
+        129
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "一、听力 第三部分",
+    "type_zh": "听力 第三部分",
+    "instruction_zh": "第13–22题：请选出正确答案。",
+    "items": [
+     {
+      "n": "例",
+      "zh": "会议几点开始？",
+      "transcript_zh": "男：把这个材料复印5份，一会儿拿到会议室发给大家。 女：好的。会议是下午三点吗？ 男：改了。三点半，推迟了半个小时。 女：好，602会议室没变吧？ 男：对，没变。 问：会议几点开始？",
+      "options": {
+       "A": "两点",
+       "B": "3点",
+       "C": "15：30",
+       "D": "18：00"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        76
+       ]
+      }
+     },
+     {
+      "n": 13,
+      "zh": "女的为什么说男的很厉害？",
+      "options": {
+       "A": "大学毕业了",
+       "B": "找到工作了",
+       "C": "考上硕士了",
+       "D": "做教育工作"
+      },
+      "transcript_zh": "女：大学毕业后就没联系了，你现在在哪儿工作呢？ 男：毕业后在老家工作了一年，接着又考上了北京大学，现在在读研究生。 女：真厉害！是硕士了。你读什么专业？几年？ 男：教育学，三年。 问：女的为什么说男的很厉害？",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        128,
+        129
+       ]
+      }
+     },
+     {
+      "n": 14,
+      "zh": "他们明天要去哪儿？",
+      "options": {
+       "A": "火车站",
+       "B": "机场",
+       "C": "公园",
+       "D": "图书馆"
+      },
+      "transcript_zh": "男：明天见面的地点改在东门了？ 女：是，从那边去国家图书馆方便一些。 男：那我通知班里的同学。时间变了吗？ 女：没变，还是上午八点。 问：他们明天要去哪儿？",
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        128,
+        129
+       ]
+      }
+     },
+     {
+      "n": 15,
+      "zh": "根据对话，可以知道：",
+      "options": {
+       "A": "网站有问题",
+       "B": "网址错了",
+       "C": "上网速度不快",
+       "D": "女的的电脑坏了"
+      },
+      "transcript_zh": "女：这个网站地址是不是错的？试了好几遍都打不开。 男：你把网址发过来，我试一下。 女：怎么样？你那儿能打开吗？ 男：可以，速度挺快的，是不是你电脑有问题？ 问：根据对话，可以知道：",
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        128,
+        129
+       ]
+      }
+     },
+     {
+      "n": 16,
+      "zh": "通过对话，可以知道男的：",
+      "options": {
+       "A": "是新手",
+       "B": "开车慢",
+       "C": "想停车",
+       "D": "技术好"
+      },
+      "transcript_zh": "女：危险！你开得太快了。 男：好吧，好吧，我开慢点儿。 女：你现在把车停下，我来开，我真受不了你了！ 男：让我再开会儿。你不是也刚学会几天吗？自己也是个新手。 女：至少比你开得慢，技术比你好。 问：通过对话，可以知道男的：",
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        128,
+        129
+       ]
+      }
+     },
+     {
+      "n": 17,
+      "zh": "通过对话，可以知道男的联系了：",
+      "options": {
+       "A": "学校",
+       "B": "作者",
+       "C": "办公室",
+       "D": "中学生"
+      },
+      "transcript_zh": "女：你联系那位作者了吗？ 男：联系了，她竟然是一位在校大学生，没想到她那么年轻。 女：她同意和我们聊一聊了？ 男：是的，暂定在下星期一，她上午九点来我们办公室谈。 问：通过对话，可以知道男的联系了：",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        129
+       ]
+      }
+     },
+     {
+      "n": 18,
+      "zh": "关于《周公解梦》，下列哪个最可能正确？",
+      "options": {
+       "A": "介绍科学知识",
+       "B": "特别有意思",
+       "C": "赚了很多钱",
+       "D": "解释了很多梦"
+      },
+      "transcript_zh": "男：我昨天晚上做了一个特别有意思的梦，梦到家里有好多好多水，高兴死我了。 女：这有什么可高兴的？晚上做梦时，身体感觉到什么，人就容易梦到什么内容。 男：早上一醒，我就去查了《周公解梦》，书上说梦到水，说明会有很大一笔收入呢！ 女：那你慢慢等着吧，那本书上的内容一点儿也不科学。 问：关于《周公解梦》，下列哪个最可能正确？",
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        129
+       ]
+      }
+     },
+     {
+      "n": 19,
+      "zh": "做计划表时，首先要注意什么？",
+      "options": {
+       "A": "开始时间",
+       "B": "完成的情况",
+       "C": "做事的顺序",
+       "D": "别浪费时间"
+      },
+      "transcript_zh": "第19到20题是根据下面一段话：每个人都应该学会管理时间，而做计划表、严格按照计划做事是有效管理时间的第一步。在做计划表时首先要注意把重要的事安排在前面，除此之外，还要写明完成时间，这样才能做到不浪费一分一秒。 问：做计划表时，首先要注意什么？",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        129
+       ]
+      }
+     },
+     {
+      "n": 20,
+      "zh": "这段话主要谈的是什么？",
+      "options": {
+       "A": "工作总结",
+       "B": "管理效果",
+       "C": "做计划的方法",
+       "D": "时间的重要性"
+      },
+      "transcript_zh": "第19到20题是根据下面一段话：每个人都应该学会管理时间，而做计划表、严格按照计划做事是有效管理时间的第一步。在做计划表时首先要注意把重要的事安排在前面，除此之外，还要写明完成时间，这样才能做到不浪费一分一秒。 问：这段话主要谈的是什么？",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        129
+       ]
+      }
+     },
+     {
+      "n": 21,
+      "zh": "根据这段话，为什么会出现洗衣机？",
+      "options": {
+       "A": "为了赚钱",
+       "B": "减少污染",
+       "C": "衣服太脏",
+       "D": "洗衣服太辛苦"
+      },
+      "transcript_zh": "第21到22题是根据下面一段话：因为有些人觉得用手写字麻烦，于是有了打字机；因为有些人觉得每天爬楼麻烦，于是有了电梯；因为有些人觉得洗衣服麻烦，于是有了洗衣机；同样因为有些人觉得走路又累又麻烦，才有了各种交通工具。所以，觉得麻烦不一定是件坏事。 问：根据这段话，为什么会出现洗衣机？",
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        129
+       ]
+      }
+     },
+     {
+      "n": 22,
+      "zh": "这段话主要想告诉我们什么？",
+      "options": {
+       "A": "麻烦的好处",
+       "B": "麻烦的原因",
+       "C": "爬楼的快乐",
+       "D": "交通工具的特点"
+      },
+      "transcript_zh": "第21到22题是根据下面一段话：因为有些人觉得用手写字麻烦，于是有了打字机；因为有些人觉得每天爬楼麻烦，于是有了电梯；因为有些人觉得洗衣服麻烦，于是有了洗衣机；同样因为有些人觉得走路又累又麻烦，才有了各种交通工具。所以，觉得麻烦不一定是件坏事。 问：这段话主要想告诉我们什么？",
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        129
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第一部分（23–26）",
+    "type_zh": "阅读 第一部分",
+    "instruction_zh": "第23–26题：选词填空。",
+    "word_bank": [
+     [
+      "A 举",
+      "B 是否",
+      "C 火",
+      "D 坚持",
+      "E 警察"
+     ]
+    ],
+    "items": [
+     {
+      "n": "例",
+      "zh": "她每天都（　）走路上下班，所以身体一直很不错。",
+      "answer": "D",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        77
+       ]
+      }
+     },
+     {
+      "n": 23,
+      "zh": "校门口右边那家饭馆的菜做得确实好吃，吃饭时间经常有人排队等座，生意越来越（　）了。",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        129
+       ]
+      }
+     },
+     {
+      "n": 24,
+      "zh": "小时候我的理想是当一名（　），但现在我却成了一个动物园管理员，跟熊猫和老虎成了好朋友。",
+      "answer": "E",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        129
+       ]
+      }
+     },
+     {
+      "n": 25,
+      "zh": "随着年龄的增长，我们会遇到许多机会，但问题是当它来到你身边时，你（　）已经做好了准备。",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        129
+       ]
+      }
+     },
+     {
+      "n": 26,
+      "zh": "每个人都有自己特别感兴趣的东西，（　）个例子，作家爱讲故事，演员爱表演。我们只有了解了自己的兴趣爱好后，才能更好地发展自己。",
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        129
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第一部分（27–30）",
+    "type_zh": "阅读 第一部分",
+    "instruction_zh": "第27–30题：选词填空。",
+    "word_bank": [
+     [
+      "A 咸",
+      "B 桥",
+      "C 温度",
+      "D 收",
+      "E 座"
+     ]
+    ],
+    "items": [
+     {
+      "n": "例",
+      "zh": "A：今天真冷啊，好像白天最高（　）才2℃。 B：刚才电视里说明天更冷。",
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        78
+       ]
+      }
+     },
+     {
+      "n": 27,
+      "zh": "A：我刚从会议室过来，怎么一个人也没有？ B：对不起，今天的会议改到明天上午了，您没（　）到通知吗？",
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        129
+       ]
+      }
+     },
+     {
+      "n": 28,
+      "zh": "A：中午去海边游泳了？感觉怎么样？ B：还行，就是海水太（　）了。",
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        129
+       ]
+      }
+     },
+     {
+      "n": 29,
+      "zh": "A：这儿的景色真美！帮我照张相吧。 B：好的，你稍微往左边站一点儿，我帮你把后面的大（　）也照上。",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        129
+       ]
+      }
+     },
+     {
+      "n": 30,
+      "zh": "A：北京有一（　）香山，非常有名。每到秋天，满山都是红叶，景色特别漂亮。 B：是吗？那我有机会一定要去看看。",
+      "answer": "E",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        129
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第二部分",
+    "type_zh": "阅读 第二部分",
+    "instruction_zh": "第31–34题：排列顺序。",
+    "items": [
+     {
+      "n": "例",
+      "zh": "",
+      "options": {
+       "A": "可是今天起晚了",
+       "B": "平时我骑自行车上下班",
+       "C": "所以就打车来公司"
+      },
+      "answer": "BAC",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        79
+       ]
+      }
+     },
+     {
+      "n": 31,
+      "zh": "",
+      "options": {
+       "A": "因为无论对自己还是对其他人",
+       "B": "司机喝酒后不允许开车",
+       "C": "酒后开车都是非常危险的"
+      },
+      "answer": "BAC",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        129
+       ]
+      }
+     },
+     {
+      "n": 32,
+      "zh": "",
+      "options": {
+       "A": "即使已经过去了几个世纪",
+       "B": "仍然受到读者们的喜爱",
+       "C": "这个美丽的爱情故事，感动过无数人"
+      },
+      "answer": "CAB",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        129
+       ]
+      }
+     },
+     {
+      "n": 33,
+      "zh": "",
+      "options": {
+       "A": "祝他们在今后的生活中",
+       "B": "让我们一起举杯",
+       "C": "一切顺利，永远幸福"
+      },
+      "answer": "BAC",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        129
+       ]
+      }
+     },
+     {
+      "n": 34,
+      "zh": "",
+      "options": {
+       "A": "只要找出文中的关键信息",
+       "B": "就可以在短时间内了解文章的大意",
+       "C": "做到快速阅读其实不难，简单来说"
+      },
+      "answer": "CAB",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        129
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第三部分",
+    "type_zh": "阅读 第三部分",
+    "instruction_zh": "第35–43题：请选出正确答案。",
+    "items": [
+     {
+      "n": "例",
+      "zh": "她很活泼，说话很有趣，总能给我们带来快乐，我们都很喜欢和她在一起。 ★她是个什么样的人？",
+      "options": {
+       "A": "幽默",
+       "B": "马虎",
+       "C": "骄傲",
+       "D": "害羞"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        80
+       ]
+      }
+     },
+     {
+      "n": 35,
+      "zh": "一般情况下，飞机起飞的方向是和风向相反的，这样飞机可以得到更多向上的助力；另外，相反方向的风能使飞机的离地速度减慢，这样更能够保证安全。 ★飞机起飞的方向应该：",
+      "options": {
+       "A": "向南",
+       "B": "向北",
+       "C": "与风向相反",
+       "D": "与风向相同"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        129
+       ]
+      }
+     },
+     {
+      "n": 36,
+      "zh": "森林里有一种奇特的植物，它开的花比普通的花大很多。这种植物会吸引来一些小动物，当小动物走近花时，植物就会把它们吃掉。 ★这种植物：",
+      "options": {
+       "A": "会吃小动物",
+       "B": "花很漂亮",
+       "C": "夏天才开花",
+       "D": "没有叶子"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        129
+       ]
+      }
+     },
+     {
+      "n": 37,
+      "zh": "二三十年前很多人还有通过写信交笔友的习惯，但是进入21世纪以后，随着科学技术的发展，现在几乎没有人会选择写信了，人们更愿意上网交流。 ★现在人们更愿意：",
+      "options": {
+       "A": "发短信",
+       "B": "写日记",
+       "C": "上网聊",
+       "D": "看杂志"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        129
+       ]
+      }
+     },
+     {
+      "n": 38,
+      "zh": "小姐，我们这种矿泉水取自雪山，不仅好喝，用它来洗脸对皮肤也很有好处，所以价格要比其他矿泉水贵一些。 ★这种矿泉水的特点是：",
+      "options": {
+       "A": "干净",
+       "B": "有点儿咸",
+       "C": "来自海洋",
+       "D": "洗脸对皮肤好"
+      },
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        129
+       ]
+      }
+     },
+     {
+      "n": 39,
+      "zh": "随着科学技术的发展，距离对人与人之间交流的影响越来越小了，只要打个电话或者发个电子邮件，就能联系到千里之外的人。 ★科技发展带来的好处是：",
+      "options": {
+       "A": "减少误会",
+       "B": "减少污染",
+       "C": "交流更方便",
+       "D": "增加安全感"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        129
+       ]
+      }
+     },
+     {
+      "n": 40,
+      "zh": "昨天下午女朋友突然想让我陪她去逛街买衣服，于是她就开始准备起来了。她先洗了个澡，接着又在脸上画了半天，过了一个小时了她还没弄好。我提醒她商场六点关门，她说马上就好，我只能继续接着等。结果，等我们到商场时，商场已经关门了。她很生气，说我没注意时间，真让我受不了。 ★出门前女朋友在做什么？",
+      "options": {
+       "A": "画画儿",
+       "B": "打扫房间",
+       "C": "打扮自己",
+       "D": "等朋友来"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        129
+       ]
+      }
+     },
+     {
+      "n": 41,
+      "zh": "（40–41同一段话） ★女朋友为什么生气？",
+      "options": {
+       "A": "朋友来晚了",
+       "B": "忘带钥匙了",
+       "C": "衣服不打折",
+       "D": "商场关门了"
+      },
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        129
+       ]
+      }
+     },
+     {
+      "n": 42,
+      "zh": "不知道从什么时候开始，我们的生活已经离不开密码：用银行卡取钱需要密码，打开手机需要密码，在互联网上收发邮件、聊天也需要密码，有时候甚至连开门都需要密码。密码让我们的生活变得更方便安全，可除此以外，它也给我们增加了不少烦恼。试着想一想，如果谁不小心忘记了那些密码，他的生活会变成什么样。 ★人们需要记住什么？",
+      "options": {
+       "A": "银行卡",
+       "B": "地址",
+       "C": "密码",
+       "D": "手机号码"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        129
+       ]
+      }
+     },
+     {
+      "n": 43,
+      "zh": "（42–43同一段话） ★这段话主要讲的是：",
+      "options": {
+       "A": "科学技术的发展",
+       "B": "互联网的优缺点",
+       "C": "密码对人的影响",
+       "D": "哪些地方用密码"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        129
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "三、书写 第一部分",
+    "type_zh": "书写 第一部分",
+    "instruction_zh": "第44–48题：完成句子。",
+    "items": [
+     {
+      "n": "例",
+      "zh": "那座桥　800年的　历史　有　了",
+      "answer": "那座桥有800年的历史了。",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        82
+       ]
+      }
+     },
+     {
+      "n": 44,
+      "zh": "飞机　最　被认为　是　安全的　交通方式",
+      "answer": "飞机被认为是最安全的交通方式。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        129
+       ]
+      }
+     },
+     {
+      "n": 45,
+      "zh": "一个　责任感　警察　有　优秀的　需要",
+      "answer": "一个优秀的警察需要有责任感。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        129
+       ]
+      }
+     },
+     {
+      "n": 46,
+      "zh": "我顺便　回来的路上　邮局　去　趟　了",
+      "answer": "回来的路上我顺便去了趟邮局。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        129
+       ]
+      }
+     },
+     {
+      "n": 47,
+      "zh": "历史教授　著名的　是位　作者　这本书　的",
+      "answer": "这本书的作者是位著名的历史教授。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        129
+       ]
+      }
+     },
+     {
+      "n": 48,
+      "zh": "密码　你爸　把　信用卡的　了　改",
+      "answer": "你爸把信用卡的密码改了。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        129
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "三、书写 第二部分",
+    "type_zh": "书写 第二部分",
+    "instruction_zh": "第49–50题：看图，用词造句。",
+    "items": [
+     {
+      "n": "例",
+      "zh": "乒乓球",
+      "picture_desc_en": "a young woman holding a table-tennis bat and ball, about to serve",
+      "answer": "她很喜欢打乒乓球。",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        83
+       ]
+      }
+     },
+     {
+      "n": 49,
+      "zh": "降落",
+      "picture_desc_en": "a passenger airplane descending low over an airport runway, with a runway light tower and checkered marker",
+      "answer": "飞机马上就要降落了，一会儿告诉他我们在机场门口等他。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        129
+       ]
+      }
+     },
+     {
+      "n": 50,
+      "zh": "迷路",
+      "picture_desc_en": "a hiker with a backpack standing on a forest trail looking at a map",
+      "answer": "那座山小路特别多，第一次来的人很容易迷路。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        129
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "answers_ref": {
+   "book": "teacher",
+   "pages": [
+    127,
+    128,
+    129
+   ]
+  }
+ },
+ "unclear": [
+  "Аудио файлын нэр мэдэгдэхгүй тул audio талбар орхисон. Сурах бичгийн CD тэмдэг: 课文1–5 = 18-1…18-5; дасгалын номын 听力 第一/二/三部分 = 18-1, 18-2, 18-3.",
+  "注释1 是否 жишээ (1) (PDF х.117): «不过她这么小，这本书我不知道她是否能读懂。» — 课文1-д «不过她这么小，我不知道她是否能读懂。» («这本书» байхгүй); номд байгаагаар хоёуланг нь үлдээсэн.",
+  "注释4-ийн англи тайлбар (PDF х.121): «“除此之外” means …» — хятад гарчиг/тайлбар «除此以外»; мөн дасгалын номын сонсгол 19–20-ын бичвэрт (багшийн ном PDF х.129) «除此之外» гэж хэвлэгдсэн. Номд байгаагаар.",
+  "课文5-ын 拼音课文 (PDF х.121, 600dpi-аар шалгасан): 一分钟 → «yì fènzhōng» гэж хэвлэгдсэн (стандарт fēnzhōng); номд байгаагаар оруулсан.",
+  "课文3-ын пиньинь: «róngyì mèngdao» (hөггүй dao), бусад газар «mèngdào»; 课文2-ын сүүлийн мөрөнд «Fàng xīn ba» (салангид), 课文1-д «Fàngxīn ba» — номд байгаагаар.",
+  "生词 9 受不了, 22 付款 — 生词 хүснэгтэд үгийн ай (pos) хэвлэгдээгүй тул pos талбаргүй. 付款-ийн пиньинь «fù kuǎn» (салангид), 热身1-д «fùkuǎn» (нийлмэл) — номд байгаагаар.",
+  "生词 8 方式, 19 抓 — * тэмдэгтэй (大纲-аас гадуурх); багшийн ном: «30个四级大纲词汇 … 2个非大纲词汇：方式、抓» — таарч байна.",
+  "练习1 复述 课文2 (高老师的语气, PDF х.123): «现在认为人们尤其是大学生开始普遍使用电脑，……» — 课文2-т «现在的人们，尤其是大学生开始普遍使用电脑»; номд байгаагаар («认为» нэмэгдсэн).",
+  "注释3 比一比 做一做 «选词填空 Tick or cross»: (1) 接着✓ 然后✓, (2) 接着✓ 然后× — номд жишээ болгон хэвлэгдсэн; (3)–(5)-ын хариулт сурах бичиг, багшийн номд хэвлэгдээгүй (багшийн ном: «按照教材中的辨析步骤进行»).",
+  "注释3 比一比-ийн ★ тэмдэг номд (相同点-ийн төгсгөлд, 不同点1-д «表示★这个意思时») — номд байгаагаар үлдээсэн. «先……然后（再）……» бүтцийг structure_rows-д оруулсан.",
+  "Сурах бичгийн 练一练 (5 дүрэм × 3), 回答问题 (课文1–3 — 6, 课文4–5 — 4), 练习1 复述 ба 练习2 选词填空 (10) — хариулт сурах бичиг, багшийн номд хэвлэгдээгүй тул answer талбаргүй. Зөвхөн 扩展 做一做-ийн хариулт багшийн номд (PDF х.84) бий.",
+  "Сурах бичгийн 根据课文内容回答问题 хоёр хэсэг дугааргүй (课文3-ын дараа PDF х.119, 课文5-ын дараа PDF х.123) — exercises-д «课文1–3 回答问题», «课文4–5 回答问题» гэж нэрлэсэн; 比一比-ийн 做一做 ба 扩展-ийн 做一做-г мөн exercises-д оруулсан. 扩展 同字词 (点：地点、特点、优点、缺点、重点)-ийг textbook.characters-д оруулсан.",
+  "练习2-ын үгийн сан 2 бүлэг (收／座／安全／危险／降落 — ①–⑤; 地点／地址／技术／迷路／咸 — ⑥–⑩) — word_bank-д хоёр мөр болгон оруулсан.",
+  "练习2 ① «北京有一____山，叫香山» ба дасгалын номын 阅读 30 «北京有一（　）香山» — ижил агуулга; 练习2 ⑥ «鸡蛋汤稍微有点儿____» ба 听力 9 «稍微有点儿咸» — номд байгаагаар.",
+  "注释5 жишээ (2) «全长5464公里» ба дасгалын номын 听力 5 «它有5464公里长» — таарч байна. 听力 5-ын бичвэрт «一个大大的“几”字» (几) гэж хэвлэгдсэн (500dpi-аар шалгасан).",
+  "Багшийн ном 生词 «提问启发»: «从1900年到1999年一共多少年？……——一共一百年，也叫作一个世纪。» — номд байгаагаар (тоо зөрүүтэй мэт боловч засаагүй).",
+  "Багшийн ном 生词讲解 图片类: «警察» — хаалтан тайлбаргүй хэвлэгдсэн; «咸（第12课热身图片A…）» — өөр хичээлийн зураг заасан. Номд байгаагаар.",
+  "Багшийн ном 课文 扩展练习 课文3 (PDF х.83): «王静每次都能记住自己做了什么梦» — 课文3-т 孙月: «你怎么总能记住自己做了什么梦？» — утга ойролцоо, номд байгаагаар.",
+  "Багшийн ном 课文 扩展练习 课文4–5 (PDF х.83) — нөхөх (……（除此以外）) хэлбэртэй догол мөр; «玩游戏» (课文4-т «玩儿游戏»), «比写信封的时间都短» (课文5-д «比写信封用的时间都短») — номын хооронд үгийн зөрүү.",
+  "Багшийн номын 课文 асуултууд (text_questions)-ын хариулт тус бүрчлэн хэвлэгдээгүй («教师给出答案»); оронд нь 课文扩展练习-ын 复述 догол мөрүүд (teacher.steps «4 课文») хэвлэгдсэн.",
+  "Багшийн ном 语言点(3)接着 ④ — 4 зурагтай (шороо сорогч, кофе, хувцасны дэлгүүрт хоёр охин, ном уншиж буй хүн); зургийн тайлбарыг body_zh-д хаалтанд товч оруулсан (номд текст байхгүй).",
+  "Сурах бичигт 专有名词 хүснэгт энэ хичээлд байхгүй (王静、孙月、李老师、高老师 жагсаагдаагүй). 课文1-д «《新十万个为什么》», «《十万个为什么》» номын нэр — 专有名词-д ороогүй.",
+  "拼音课文-ын гарчгийн пиньинь (Wáng Jìng gěi Sūn Yuè tuījiàn yì běn shū / Lǐ lǎoshī hé Gāo lǎoshī zài liáo diànnǎo hé hùliánwǎng jìshù de fāzhǎn / Wáng Jìng hé Sūn Yuè zài liáo guānyú mèng de qíngkuàng) болон ярилцагчийн нэрийн пиньинь схемд талбаргүй тул lines.pinyin-д зөвхөн яриаг оруулсан.",
+  "课文4 ба 课文5 — гарчиггүй 短文 — мөр (lines)-ийг өгүүлбэрээр хуваасан (номд нэг догол мөр); пиньинь бичвэрийг мөн адил хуваасан.",
+  "Дасгалын ном 听力 第二/三部分 — номд зөвхөн сонголтууд хэвлэгдсэн; item.zh-д багшийн номын хавсралтын «问：» асуултыг (19–22-т дугаартай асуултыг) оруулсан, transcript_zh-д бүтнээр. 听力 第一部分-д жишээ 2 (✓ ба ×) байгаа тул «例1», «例2».",
+  "Дасгалын ном 阅读 第一部分 хоёр бүлэг (23–26, 27–30) тус тусын үгийн сантай тул хоёр хэсэг болгон оруулсан; 阅读 第二部分 (31–34 排列顺序)-ийн item.zh хоосон, хэсгүүд options (A/B/C)-д. 40–41, 42–43 нэг бичвэртэй — бичвэрийг 40, 42-ын zh-д, 41, 43-т лавлагаа.",
+  "Дасгалын ном 书写 44–50-ын хариулт багшийн номын хавсралтад «参考答案» гэж хэвлэгдсэн (PDF х.129); 49–50 (看图，用词造句) нээлттэй даалгавар тул хариулт нь зөвхөн жишээ.",
+  "Дасгалын номд 复习 хэсэг байхгүй (HSK4-ийн дасгалын ном: 听力 3 хэсэг, 阅读 3 хэсэг, 书写 2 хэсэг, нийт 50 асуулт)."
+ ],
+ "verified_pages": [
+  74,
+  75,
+  76,
+  77,
+  78,
+  79,
+  80,
+  81,
+  82,
+  83,
+  84,
+  113,
+  114,
+  115,
+  116,
+  117,
+  118,
+  119,
+  120,
+  121,
+  122,
+  123,
+  124,
+  125,
+  126,
+  127,
+  128,
+  129
+ ],
+ "schema_version": 1
+}

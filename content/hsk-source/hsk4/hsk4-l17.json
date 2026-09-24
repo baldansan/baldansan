@@ -1,0 +1,2260 @@
+{
+ "level": "hsk4",
+ "lesson": 17,
+ "book": "HSK4B",
+ "title_zh": "人与自然",
+ "title_pinyin": "Rén yǔ zìrán",
+ "title_en": "Humans and nature",
+ "textbook": {
+  "ref": {
+   "book": "textbook",
+   "pages": [
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112
+   ]
+  },
+  "warmup": [
+   {
+    "instruction_zh": "给下边的词语选择对应的图片，并用这个词语根据图片说一个句子。",
+    "instruction_en": "Match the pictures with the words and describe the pictures with sentences using the words.",
+    "items": [
+     "①热闹 rènao",
+     "②森林 sēnlín",
+     "③云 yún",
+     "④活泼 huópō",
+     "⑤老虎 lǎohǔ",
+     "⑥海洋 hǎiyáng"
+    ],
+    "pictures_desc_en": [
+     "A: two small brown-and-white dogs running on a grassy field",
+     "B: a single white cloud in a deep blue sky",
+     "C: a dense green forest with tall mossy trees and ferns",
+     "D: a tiger walking on green grass",
+     "E: underwater view of the deep blue sea with light rays from the surface",
+     "F: a lion dance performance (red and yellow lion costumes) in front of a crowd on a street"
+    ]
+   },
+   {
+    "instruction_zh": "你最喜欢什么动物？为什么？",
+    "instruction_en": "What's your favorite animal? Why?",
+    "items": [
+     "表格：你喜欢的动物 | 样子 | 特点 | 喜欢的原因（每格后有□）",
+     "狗 □ | 小小的 □ | 活泼（huópō）□ | 好像朋友一样 □",
+     "猫 □ | 大大的 □ | 安静 □ | 好像家人一样 □",
+     "鸟 □ | 胖胖的 □ | 聪明 □ | 让我不感到寂寞（jìmò）□",
+     "熊猫 □ | 漂亮 □ | 可爱 □ | 喜欢照顾它的感觉 □"
+    ]
+   }
+  ],
+  "texts": [
+   {
+    "n": 1,
+    "title_zh": "小夏和安娜在聊天气",
+    "kind": "dialogue",
+    "lines": [
+     {
+      "speaker": "小夏",
+      "zh": "最近天气越来越凉快了，风一刮，草地上就会有一层厚厚的黄叶，看来秋天已经到了。",
+      "pinyin": "Zuìjìn tiānqì yuè lái yuè liángkuai le, fēng yì guā, cǎodì shang jiù huì yǒu yì céng hòuhòu de huángyè, kànlái qiūtiān yǐjīng dào le."
+     },
+     {
+      "speaker": "安娜",
+      "zh": "这几天香山特别热闹，随着气温的降低，那里许多植物的叶子都由绿变黄或者变红，吸引了很多游客参观，咱们今天也去看看吧。",
+      "pinyin": "Zhè jǐ tiān Xiāng Shān tèbié rènao, suízhe qìwēn de jiàngdī, nàli xǔduō zhíwù de yèzi dōu yóu lǜ biàn huáng huòzhě biàn hóng, xīyǐnle hěn duō yóukè cānguān, zánmen jīntiān yě qù kànkan ba."
+     },
+     {
+      "speaker": "小夏",
+      "zh": "你看天上的云，今天肯定有大雨。再说，香山上看红叶的人太多了。咱们改天去长城吧，广播里说那里也有不少专门看红叶的好地方。",
+      "pinyin": "Nǐ kàn tiānshang de yún, jīntiān kěndìng yǒu dà yǔ. Zàishuō, Xiāng Shān shang kàn hóngyè de rén tài duō le. Zánmen gǎitiān qù Chángchéng ba, guǎngbō li shuō nàli yě yǒu bù shǎo zhuānmén kàn hóngyè de hǎo dìfang."
+     },
+     {
+      "speaker": "安娜",
+      "zh": "真可惜，我还想多照点儿香山的照片呢。去长城倒是一个好主意，那我们明天去吧。",
+      "pinyin": "Zhēn kěxī, wǒ hái xiǎng duō zhào diǎnr Xiāng Shān de zhàopiàn ne. Qù Chángchéng dào shì yí ge hǎo zhǔyì, nà wǒmen míngtiān qù ba."
+     },
+     {
+      "speaker": "小夏",
+      "zh": "明天恐怕也不行，明天是我爸的生日。",
+      "pinyin": "Míngtiān kǒngpà yě bù xíng, míngtiān shì wǒ bà de shēngrì."
+     },
+     {
+      "speaker": "安娜",
+      "zh": "没关系，那我们再约时间。",
+      "pinyin": "Méi guānxi, nà wǒmen zài yuē shíjiān."
+     }
+    ],
+    "new_words": [
+     {
+      "n": 1,
+      "zh": "凉快",
+      "pinyin": "liángkuai",
+      "pos": "adj.",
+      "en": "pleasantly cool",
+      "text": 1
+     },
+     {
+      "n": 2,
+      "zh": "热闹",
+      "pinyin": "rènao",
+      "pos": "adj.",
+      "en": "busy, bustling",
+      "text": 1
+     },
+     {
+      "n": 3,
+      "zh": "云",
+      "pinyin": "yún",
+      "pos": "n.",
+      "en": "cloud",
+      "text": 1
+     },
+     {
+      "n": 4,
+      "zh": "广播",
+      "pinyin": "guǎngbō",
+      "pos": "n.",
+      "en": "broadcast, radio program",
+      "text": 1
+     },
+     {
+      "n": 5,
+      "zh": "照",
+      "pinyin": "zhào",
+      "pos": "v.",
+      "en": "to take a picture, to photograph",
+      "text": 1
+     },
+     {
+      "n": 6,
+      "zh": "倒",
+      "pinyin": "dào",
+      "pos": "adv.",
+      "en": "(used to indicate contrast) yet, actually",
+      "text": 1
+     }
+    ],
+    "proper_nouns": [
+     {
+      "zh": "安娜",
+      "pinyin": "Ānnà",
+      "en": "name of a person"
+     },
+     {
+      "zh": "香山",
+      "pinyin": "Xiāng Shān",
+      "en": "the Fragrant Hill (in Beijing)"
+     },
+     {
+      "zh": "长城",
+      "pinyin": "Chángchéng",
+      "en": "the Great Wall"
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "title_zh": "小林和小李在聊小李的狗",
+    "kind": "dialogue",
+    "lines": [
+     {
+      "speaker": "小林",
+      "zh": "你的这只大黑狗毛真漂亮，而且这么聪明，每次见了都想抱一抱它。",
+      "pinyin": "Nǐ de zhè zhī dà hēi gǒu máo zhēn piàoliang, érqiě zhème cōngming, měi cì jiànle dōu xiǎng bào yi bào tā."
+     },
+     {
+      "speaker": "小李",
+      "zh": "狗是很聪明的动物，只要稍微花点儿时间教教它，它就能学会很多东西。",
+      "pinyin": "Gǒu shì hěn cōngming de dòngwù, zhǐyào shāowēi huā diǎnr shíjiān jiāojiao tā, tā jiù néng xué huì hěn duō dōngxi."
+     },
+     {
+      "speaker": "小林",
+      "zh": "听你这么一说，我现在也想养一只狗了。每次你让它干什么，它就像能听懂你的话一样去做。你教它是不是用了什么特别的方法？",
+      "pinyin": "Tīng nǐ zhème yì shuō, wǒ xiànzài yě xiǎng yǎng yì zhī gǒu le. Měi cì nǐ ràng tā gàn shénme, tā jiù xiàng néng tīngdǒng nǐ de huà yíyàng qù zuò. Nǐ jiāo tā shì bu shì yòngle shénme tèbié de fāngfǎ?"
+     },
+     {
+      "speaker": "小李",
+      "zh": "要让它完成一些任务，只教一次是不够的，应该耐心地一遍一遍地教给它，使它熟悉，然后它就会严格按照你的要求做了。",
+      "pinyin": "Yào ràng tā wánchéng yìxiē rènwù, zhǐ jiāo yí cì shì bú gòu de, yīnggāi nàixīn de yí biàn yí biàn de jiāo gěi tā, shǐ tā shúxi, ránhòu tā jiù huì yángé ànzhào nǐ de yāoqiú zuò le."
+     },
+     {
+      "speaker": "小林",
+      "zh": "看来没有想的那么容易。",
+      "pinyin": "Kànlái méiyǒu xiǎng de nàme róngyì."
+     },
+     {
+      "speaker": "小李",
+      "zh": "狗是我们的好朋友，它能听懂人的话，明白人的心情。在你心里难受的时候，它会一直陪着你。",
+      "pinyin": "Gǒu shì wǒmen de hǎo péngyou, tā néng tīngdǒng rén de huà, míngbai rén de xīnqíng. Zài nǐ xīn li nánshòu de shíhou, tā huì yìzhí péizhe nǐ."
+     }
+    ],
+    "new_words": [
+     {
+      "n": 7,
+      "zh": "毛",
+      "pinyin": "máo",
+      "pos": "n.",
+      "en": "hair, fur",
+      "text": 2
+     },
+     {
+      "n": 8,
+      "zh": "抱",
+      "pinyin": "bào",
+      "pos": "v.",
+      "en": "to hold in the arms, to hug",
+      "text": 2
+     },
+     {
+      "n": 9,
+      "zh": "干",
+      "pinyin": "gàn",
+      "pos": "v.",
+      "en": "to do, to act",
+      "text": 2
+     },
+     {
+      "n": 10,
+      "zh": "严格",
+      "pinyin": "yángé",
+      "pos": "adj.",
+      "en": "strict, rigorous",
+      "text": 2
+     },
+     {
+      "n": 11,
+      "zh": "难受",
+      "pinyin": "nánshòu",
+      "pos": "adj.",
+      "en": "sad, unhappy",
+      "text": 2
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "title_zh": "马克和小夏在聊动物",
+    "kind": "dialogue",
+    "lines": [
+     {
+      "speaker": "马克",
+      "zh": "上个月我去了趟北京动物园，那里约有500种动物，听导游说北京动物园是亚洲最大的动物园之一。",
+      "pinyin": "Shàng ge yuè wǒ qùle tàng Běijīng Dòngwùyuán, nàli yuē yǒu wǔbǎi zhǒng dòngwù, tīng dǎoyóu shuō Běijīng Dòngwùyuán shì Yàzhōu zuì dà de dòngwùyuán zhī yī."
+     },
+     {
+      "speaker": "小夏",
+      "zh": "去年放暑假的时候，我也去过一次，我在那儿看了马、熊猫、老虎等动物。我特别喜欢熊猫，可惜它们当时大多在睡觉。",
+      "pinyin": "Qùnián fàng shǔjià de shíhou, wǒ yě qùguo yí cì, wǒ zài nàr kànle mǎ、xióngmāo、lǎohǔ děng dòngwù. Wǒ tèbié xǐhuan xióngmāo, kěxī tāmen dāngshí dàduō zài shuì jiào."
+     },
+     {
+      "speaker": "马克",
+      "zh": "我去的那天正赶上六一儿童节，许多父母带着孩子去动物园。入口处排队的人很多，动物园里热闹极了。熊猫们也变得特别活泼，我还给它们照了不少照片呢。",
+      "pinyin": "Wǒ qù de nà tiān zhèng gǎnshang Liùyī Értóngjié, xǔduō fùmǔ dàizhe háizi qù dòngwùyuán. Rùkǒu chù pái duì de rén hěn duō, dòngwùyuán li rènao jíle. Xióngmāomen yě biànde tèbié huópō, wǒ hái gěi tāmen zhàole bù shǎo zhàopiàn ne."
+     },
+     {
+      "speaker": "小夏",
+      "zh": "大熊猫身子胖胖的，样子可爱极了。",
+      "pinyin": "Dà xióngmāo shēnzi pàngpàng de, yàngzi kě’ài jíle."
+     },
+     {
+      "speaker": "马克",
+      "zh": "不过，它们数量不多，现在全世界一共才有一千多只吧。",
+      "pinyin": "Búguò, tāmen shùliàng bù duō, xiànzài quán shìjiè yígòng cái yǒu yìqiān duō zhī ba."
+     },
+     {
+      "speaker": "小夏",
+      "zh": "以前只有中国有大熊猫，为了表示友好，从1957年开始，中国把大熊猫作为礼物送给其他一些国家。现在，很多国家的人们在本国都能看到大熊猫了。",
+      "pinyin": "Yǐqián zhǐyǒu Zhōngguó yǒu dà xióngmāo, wèile biǎoshì yǒuhǎo, cóng yī jiǔ wǔ qī nián kāishǐ, Zhōngguó bǎ dà xióngmāo zuòwéi lǐwù sòng gěi qítā yìxiē guójiā. Xiànzài, hěn duō guójiā de rénmen zài běnguó dōu néng kàndào dà xióngmāo le."
+     }
+    ],
+    "new_words": [
+     {
+      "n": 12,
+      "zh": "趟",
+      "pinyin": "tàng",
+      "pos": "m.",
+      "en": "(used for a round trip) time",
+      "text": 3
+     },
+     {
+      "n": 13,
+      "zh": "放暑假",
+      "pinyin": "fàng shǔjià",
+      "en": "to be on summer vacation",
+      "text": 3
+     },
+     {
+      "n": 14,
+      "zh": "老虎",
+      "pinyin": "lǎohǔ",
+      "pos": "n.",
+      "en": "tiger",
+      "text": 3
+     },
+     {
+      "n": 15,
+      "zh": "入口",
+      "pinyin": "rùkǒu",
+      "pos": "n.",
+      "en": "entrance",
+      "text": 3
+     },
+     {
+      "n": 16,
+      "zh": "排队",
+      "pinyin": "pái duì",
+      "pos": "v.",
+      "en": "to form a line, to line up",
+      "text": 3
+     },
+     {
+      "n": 17,
+      "zh": "活泼",
+      "pinyin": "huópō",
+      "pos": "adj.",
+      "en": "lively, vivacious",
+      "text": 3
+     }
+    ],
+    "proper_nouns": [
+     {
+      "zh": "亚洲",
+      "pinyin": "Yàzhōu",
+      "en": "Asia"
+     },
+     {
+      "zh": "六一儿童节",
+      "pinyin": "Liùyī Értóngjié",
+      "en": "International Children's Day"
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "kind": "narrative",
+    "lines": [
+     {
+      "zh": "不仅社会上的人与人之间有竞争，森林里的各种植物之间也有竞争，这一点儿也不奇怪。",
+      "pinyin": "Bùjǐn shèhuì shang de rén yǔ rén zhījiān yǒu jìngzhēng, sēnlín li de gè zhǒng zhíwù zhījiān yě yǒu jìngzhēng, zhè yìdiǎnr yě bù qíguài."
+     },
+     {
+      "zh": "植物会为了阳光、空气和水而竞争。",
+      "pinyin": "Zhíwù huì wèile yángguāng、kōngqì hé shuǐ ér jìngzhēng."
+     },
+     {
+      "zh": "一些高大的植物往往能获得更多的阳光、空气和水，而剩下的一些比较低矮的植物就只能长在这些高大植物的下面。",
+      "pinyin": "Yìxiē gāodà de zhíwù wǎngwǎng néng huòdé gèng duō de yángguāng、kōngqì hé shuǐ, ér shèngxià de yìxiē bǐjiào dī’ǎi de zhíwù jiù zhǐ néng zhǎng zài zhèxiē gāodà zhíwù de xiàmiàn."
+     },
+     {
+      "zh": "由于气候条件不同，世界各地植物叶子的样子也很不相同。",
+      "pinyin": "Yóuyú qìhòu tiáojiàn bù tóng, shìjiè gè dì zhíwù yèzi de yàngzi yě hěn bù xiāngtóng."
+     },
+     {
+      "zh": "在暖和、水分比较多的地方，叶子往往长得又大又厚；在阳光特别厉害、水分少的地方，叶子就会长得又细又长。",
+      "pinyin": "Zài nuǎnhuo、shuǐfèn bǐjiào duō de dìfang, yèzi wǎngwǎng zhǎng de yòu dà yòu hòu; zài yángguāng tèbié lìhai、shuǐfèn shǎo de dìfang, yèzi jiù huì zhǎng de yòu xì yòu cháng."
+     }
+    ],
+    "new_words": [
+     {
+      "n": 18,
+      "zh": "社会",
+      "pinyin": "shèhuì",
+      "pos": "n.",
+      "en": "society",
+      "text": 4
+     },
+     {
+      "n": 19,
+      "zh": "竞争",
+      "pinyin": "jìngzhēng",
+      "pos": "v.",
+      "en": "to compete",
+      "text": 4
+     },
+     {
+      "n": 20,
+      "zh": "森林",
+      "pinyin": "sēnlín",
+      "pos": "n.",
+      "en": "forest",
+      "text": 4
+     },
+     {
+      "n": 21,
+      "zh": "剩",
+      "pinyin": "shèng",
+      "pos": "v.",
+      "en": "to be left over, to remain",
+      "text": 4
+     },
+     {
+      "n": 22,
+      "zh": "暖和",
+      "pinyin": "nuǎnhuo",
+      "pos": "adj.",
+      "en": "warm",
+      "text": 4
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "kind": "narrative",
+    "lines": [
+     {
+      "zh": "地球上大约71%的地方是蓝色的海洋，在美丽的海底世界里，生活着各种各样的植物和动物。",
+      "pinyin": "Dìqiú shang dàyuē bǎi fēnzhī qīshíyī de dìfang shì lánsè de hǎiyáng, zài měilì de hǎidǐ shìjiè li, shēnghuózhe gè zhǒng gè yàng de zhíwù hé dòngwù."
+     },
+     {
+      "zh": "我们小时候都听过美人鱼的故事，其实真正的海底世界比故事里写的更美。",
+      "pinyin": "Wǒmen xiǎoshíhou dōu tīngguo Měirényú de gùshi, qíshí zhēnzhèng de hǎidǐ shìjiè bǐ gùshi li xiě de gèng měi."
+     },
+     {
+      "zh": "科学研究发现，海洋底部看上去非常安静，然而却不是一点儿声音也没有，海底的动物们一直在“说话”，只不过人的耳朵是听不到的。",
+      "pinyin": "Kēxué yánjiū fāxiàn, hǎiyáng dǐbù kàn shangqu fēicháng ānjìng, rán’ér què bú shì yìdiǎnr shēngyīn yě méiyǒu, hǎidǐ de dòngwùmen yìzhí zài “shuō huà”, zhǐ bú guò rén de ěrduo shì tīng bú dào de."
+     },
+     {
+      "zh": "另外，就算在几公里深的海底也仍然能看到东西，许多鱼会发出各种颜色的亮光，像一个个排列起来的灯，美极了，就像在梦里一样。",
+      "pinyin": "Lìngwài, jiùsuàn zài jǐ gōnglǐ shēn de hǎidǐ yě réngrán néng kàndào dōngxi, xǔduō yú huì fāchū gè zhǒng yánsè de liàngguāng, xiàng yí gègè páiliè qilai de dēng, měi jíle, jiù xiàng zài mèngli yíyàng."
+     }
+    ],
+    "new_words": [
+     {
+      "n": 23,
+      "zh": "海洋",
+      "pinyin": "hǎiyáng",
+      "pos": "n.",
+      "en": "sea, ocean",
+      "text": 5
+     },
+     {
+      "n": 24,
+      "zh": "底",
+      "pinyin": "dǐ",
+      "pos": "n.",
+      "en": "bottom, base",
+      "text": 5
+     },
+     {
+      "n": 25,
+      "zh": "美人鱼",
+      "pinyin": "Měirényú",
+      "pos": "n.",
+      "en": "mermaid",
+      "star": true,
+      "text": 5
+     },
+     {
+      "n": 26,
+      "zh": "公里",
+      "pinyin": "gōnglǐ",
+      "pos": "m.",
+      "en": "kilometer",
+      "text": 5
+     },
+     {
+      "n": 27,
+      "zh": "仍然",
+      "pinyin": "réngrán",
+      "pos": "adv.",
+      "en": "still, yet",
+      "text": 5
+     },
+     {
+      "n": 28,
+      "zh": "排列",
+      "pinyin": "páiliè",
+      "pos": "v.",
+      "en": "to put in order, to arrange",
+      "text": 5
+     },
+     {
+      "n": 29,
+      "zh": "梦",
+      "pinyin": "mèng",
+      "pos": "n.",
+      "en": "dream",
+      "text": 5
+     }
+    ]
+   }
+  ],
+  "grammar": [
+   {
+    "n": 1,
+    "title_zh": "倒",
+    "explanation_zh": "“倒”，动词，把容器倾斜使里面的东西出来。例如：\n“倒”，副词，表示跟意料相反、含责怪语气或表示让步。有时说“倒是”。例如：",
+    "explanation_en": "The verb “倒” means “to pour something from a container”. For example:\nThe adverb “倒” (yet) meanss contrary to the fact, implies blame or indicates concession. Sometimes “倒是” is used instead. For example:",
+    "examples": [
+     {
+      "n": 1,
+      "zh": "麻烦你给我倒杯咖啡吧，困死我了。",
+      "note_zh": "动词"
+     },
+     {
+      "n": 2,
+      "zh": "你怎么咳嗽得这么厉害？我给你倒杯水吧。",
+      "note_zh": "动词"
+     },
+     {
+      "n": 3,
+      "zh": "我以为坐出租车会快些，没想到倒比骑车还慢。",
+      "note_zh": "跟意料相反"
+     },
+     {
+      "n": 4,
+      "zh": "你说得倒是容易，做起来可就难了！",
+      "note_zh": "责怪语气"
+     },
+     {
+      "n": 5,
+      "zh": "去长城倒是一个好主意，就是太远了。",
+      "note_zh": "让步"
+     }
+    ],
+    "practice_instruction_zh": "完成对话或句子 Complete the dialogues or sentence.",
+    "practice": [
+     {
+      "n": 1,
+      "zh": "A：________。 B：好的。你想喝红茶还是绿茶？",
+      "hint_zh": "倒"
+     },
+     {
+      "n": 2,
+      "zh": "我的房间不大，________。",
+      "hint_zh": "倒"
+     },
+     {
+      "n": 3,
+      "zh": "A：您儿子跟我聊天儿时告诉我，他想大学毕业后就去当演员。 B：他________。",
+      "hint_zh": "倒是"
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "title_zh": "干",
+    "explanation_zh": "“干（gàn）”，动词，做（事情），表示从事某种事业、工作、活动。例如：\n注意：“干”读gān时是形容词，表示没有水分或水分很少。“干（儿）（gānr）”是名词，意思是“经过加工去掉了水分的食品”。例如：",
+    "explanation_en": "The verb “干 (gàn)” (to do something) means “to engage in a certain cause, job or activity”. For example:\nNote: The adjective “干 (gān)” means “dry”. The noun “干(儿) (gānr)” means “dried food”. For example:",
+    "examples": [
+     {
+      "n": 1,
+      "zh": "每次你让它干什么，它就像能听懂你的话一样去做。",
+      "note_zh": "干（gàn），动词"
+     },
+     {
+      "n": 2,
+      "zh": "A：你这篇报道写得很好，以后要继续努力。 B：谢谢您，我一定会好好儿干的。",
+      "note_zh": "干（gàn），动词"
+     },
+     {
+      "n": 3,
+      "zh": "干工作的时候一定要认真、仔细，要注意到计划上的每一个地方，否则就很容易出问题。",
+      "note_zh": "干（gàn），动词"
+     },
+     {
+      "n": 4,
+      "zh": "A：妈，帮我拿条毛巾，外面雨真大啊！ B：又忘记带伞了吧？头发都湿了，先把头发擦干，别感冒了。",
+      "note_zh": "注意：干（gān），形容词"
+     },
+     {
+      "n": 5,
+      "zh": "A：这牛肉干味道真不错，在哪儿买的？ B：不是我买的，是我男朋友从老家寄过来的。",
+      "note_zh": "注意：干（儿）（gānr），名词"
+     }
+    ],
+    "practice_instruction_zh": "完成对话或句子 Complete the dialogue or sentences.",
+    "practice": [
+     {
+      "n": 1,
+      "zh": "A：________？要我帮忙吗？ B：我想在这面墙上挂一张中国地图，那面墙上挂一张世界地图。",
+      "hint_zh": "干"
+     },
+     {
+      "n": 2,
+      "zh": "新来的服务员________，来吃饭的客人都十分满意。",
+      "hint_zh": "干"
+     },
+     {
+      "n": 3,
+      "zh": "你们有时间的话多帮帮小王，他手里的工作又多又难，________。",
+      "hint_zh": "干"
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "title_zh": "趟",
+    "explanation_zh": "“趟”，量词，表示往返的次数。例如：\n【比一比 趟—次】\n相同点：两者都表示动作的量，用于来回走动的动作，如“来、去、走、跑、接、送”等，经常可以互换。★\n不同点：\n1. 表示★这个意思时，“趟”表示“一去一回”，只用于来回走动的动作行为；而“次”表示动作重复的数量，并不强调“一去一回”这样的过程。\n2.“次”还可以表示其他行为的数量，如“问、说、看、讨论”等；“趟”没有此用法。\n3.“趟”还可以用于按时间、路线行驶的公共汽车或火车，相当于“辆”“列”；“次”没有此用法。",
+    "explanation_en": "The measure word “趟” indicates the number of round trips. For example:\n[Compare 趟—次]\nSimilarity: Both indicate the number of times that an action takes place and are often interchangeable. They are used with actions involving coming and going, such as “来” (to come), “去” (to go), “走” (to walk), “跑” (to run), “接” (to pick up), and “送” (to see off), etc.\nDifferences:\n1. In case ★, “趟” indicates a trip back and forth, only used for actions or behaviors that involve coming and going, while “次” indicates the number of times that an action, not necessarily a back-and-forth one, repeats.\n2. “次” can be used for verbs indicating other behaviors, such as “问” (to ask), “说” (to say), “看” (to look) and “讨论” (to discuss), while “趟” has no such usage.\n3. “趟” can also be used for buses or trains that travel at a scheduled time on a fixed route, similar to “辆” (a measure word for vehicles) and “列” (a measure word for trains), while “次” cannot be used this way.",
+    "examples": [
+     {
+      "n": 1,
+      "zh": "上个月我去了趟北京动物园，那里约有500多种动物。"
+     },
+     {
+      "n": 2,
+      "zh": "我要出趟差，你能帮我照顾一下我的小狗吗？"
+     },
+     {
+      "n": 3,
+      "zh": "A：马上就要放暑假了，你有什么安排吗？ B：我打算先回一趟家，看看我奶奶，然后回学校准备研究生考试。"
+     },
+     {
+      "zh": "今年寒假我去广东玩儿了一趟／次。",
+      "note_zh": "比一比 相同点"
+     },
+     {
+      "zh": "回来的路上我顺便去了趟银行。",
+      "note_zh": "比一比 不同点1：趟"
+     },
+     {
+      "zh": "小时候，爷爷差不多每个月都带我去看一次京剧。",
+      "note_zh": "比一比 不同点1：次"
+     },
+     {
+      "zh": "你这么着急去哪儿啊？我刚才叫了你两次，你都没听到。",
+      "note_zh": "比一比 不同点2"
+     },
+     {
+      "zh": "附近有好几趟公共汽车都能到我工作的公司。",
+      "note_zh": "比一比 不同点3"
+     }
+    ],
+    "practice_instruction_zh": "完成对话或句子 Complete the dialogues or sentence.",
+    "practice": [
+     {
+      "n": 1,
+      "zh": "A：________，你有什么要买的吗？ B：买点儿饼干和巧克力回来吧。",
+      "hint_zh": "趟"
+     },
+     {
+      "n": 2,
+      "zh": "A：经理，________，我想请一天假可以吗？ B：当然可以。怎么了？身体不舒服？",
+      "hint_zh": "趟"
+     },
+     {
+      "n": 3,
+      "zh": "今年寒假________，那里的气候和北方不同，尽管现在是冬天，但那儿非常暖和，还能吃到许多新鲜的水果。",
+      "hint_zh": "趟"
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "title_zh": "为了……而……",
+    "explanation_zh": "“为了……而……”结构中，前一分句表示后一分句动作行为的目的。“为了”后面跟词或者词组。例如：",
+    "explanation_en": "In the structure “为了……而……”, the first clause indicates the purpose of the action or behavior in the second clause. “为了” is followed by a word or phrase. For example:",
+    "structure_rows": [
+     "为了……而……"
+    ],
+    "examples": [
+     {
+      "n": 1,
+      "zh": "植物会为了阳光、空气和水而竞争。"
+     },
+     {
+      "n": 2,
+      "zh": "北风与南风为了比谁更有能力而吵了起来。它们决定，谁能把人们身上的大衣脱掉，谁就赢了。"
+     },
+     {
+      "n": 3,
+      "zh": "自然界中，不少动物和植物为了保护自己而改变身体的颜色或样子，使自己成为周围环境的一部分。"
+     }
+    ],
+    "practice_instruction_zh": "完成句子 Complete the sentences.",
+    "practice": [
+     {
+      "n": 1,
+      "zh": "胖一点儿没关系，健康最重要。千万不要________。",
+      "hint_zh": "为了……而……"
+     },
+     {
+      "n": 2,
+      "zh": "我们不应该________，应该让钱为我们工作。",
+      "hint_zh": "为了……而……"
+     },
+     {
+      "n": 3,
+      "zh": "不要________，找时间陪陪父母吧，或者给他们打个电话，不要等到来不及的时候才感到后悔。",
+      "hint_zh": "为了……而……"
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "title_zh": "仍然",
+    "explanation_zh": "“仍然”，副词，表示跟原来情况一样，没有变化。例如：",
+    "explanation_en": "The adverb “仍然” means the situation is the same as before without any change. For example:",
+    "examples": [
+     {
+      "n": 1,
+      "zh": "就算在几公里深的海底也仍然能看到东西。"
+     },
+     {
+      "n": 2,
+      "zh": "人比动物聪明，但动物仍然有很多值得人学习的地方。"
+     },
+     {
+      "n": 3,
+      "zh": "足球决赛时，如果90分钟后仍然是0比0，按照规定，可以进行加时赛来决定输赢。"
+     }
+    ],
+    "practice_instruction_zh": "完成句子或对话 Complete the sentences or dialogue.",
+    "practice": [
+     {
+      "n": 1,
+      "zh": "A：我又跟我丈夫谈了这件事，________。 B：你再跟他好好儿商量一下。",
+      "hint_zh": "仍然"
+     },
+     {
+      "n": 2,
+      "zh": "尽管这只是一场误会，________。",
+      "hint_zh": "仍然"
+     },
+     {
+      "n": 3,
+      "zh": "一个70岁还有梦的老人，________；一个20岁就放弃了理想的人，心已经老了。",
+      "hint_zh": "仍然"
+     }
+    ]
+   }
+  ],
+  "exercises": [
+   {
+    "n": "注释3 比一比 做一做",
+    "type_zh": "选词填空（趟／次）",
+    "instruction_zh": "选词填空",
+    "instruction_en": "Tick or cross",
+    "word_bank": [
+     [
+      "趟",
+      "次"
+     ]
+    ],
+    "items": [
+     {
+      "n": 1,
+      "zh": "去年放暑假的时候，我去了一________北京动物园。",
+      "options": {
+       "趟": "✓",
+       "次": "✓"
+      },
+      "answer": "趟 ✓　次 ✓",
+      "answer_ref": {
+       "book": "textbook",
+       "pages": [
+        105
+       ]
+      }
+     },
+     {
+      "n": 2,
+      "zh": "我们去________超市吧，明天出去玩儿得买点儿饼干和面包。",
+      "options": {
+       "趟": "✓",
+       "次": "×"
+      },
+      "answer": "趟 ✓　次 ×",
+      "answer_ref": {
+       "book": "textbook",
+       "pages": [
+        105
+       ]
+      }
+     },
+     {
+      "n": 3,
+      "zh": "中午我给你打了好几________电话，你怎么都不接呢？"
+     },
+     {
+      "n": 4,
+      "zh": "他没赶上最后一________公共汽车，只好坐出租车回家了。"
+     },
+     {
+      "n": 5,
+      "zh": "西红柿鸡蛋汤的做法很简单，我保证你一________就能学会。"
+     }
+    ]
+   },
+   {
+    "n": "课文1–3 回答问题",
+    "type_zh": "回答问题",
+    "instruction_zh": "根据课文内容回答问题",
+    "instruction_en": "Answer the questions based on the texts.",
+    "items": [
+     {
+      "n": 1,
+      "zh": "课文1：现在是什么季节？天气怎么样？"
+     },
+     {
+      "n": 2,
+      "zh": "课文1：安娜打算做什么？小夏为什么不同意？小夏有什么建议？"
+     },
+     {
+      "n": 3,
+      "zh": "课文2：小林为什么喜欢小李的狗？他为什么也想养狗？"
+     },
+     {
+      "n": 4,
+      "zh": "课文2：教狗完成一些任务可以用什么方法？"
+     },
+     {
+      "n": 5,
+      "zh": "课文3：马克什么时候去的北京动物园？他去那儿做什么了？"
+     },
+     {
+      "n": 6,
+      "zh": "课文3：请介绍一下小夏最喜欢的动物。"
+     }
+    ]
+   },
+   {
+    "n": "课文4–5 回答问题",
+    "type_zh": "回答问题",
+    "instruction_zh": "根据课文内容回答问题",
+    "instruction_en": "Answer the questions based on the texts.",
+    "items": [
+     {
+      "n": 1,
+      "zh": "课文4：植物之间会竞争吗？它们会为了什么而竞争？"
+     },
+     {
+      "n": 2,
+      "zh": "课文4：为什么世界各地植物叶子的样子会不同？有什么不同？"
+     },
+     {
+      "n": 3,
+      "zh": "课文5：海洋在地球上占多大比例？海底世界里有什么？"
+     },
+     {
+      "n": 4,
+      "zh": "课文5：科学研究发现，在海洋底部能听到什么？能看到什么？"
+     }
+    ]
+   },
+   {
+    "n": 1,
+    "type_zh": "复述",
+    "instruction_zh": "复述",
+    "instruction_en": "Retell the dialogues.",
+    "items": [
+     {
+      "n": "课文1",
+      "zh": "安娜的语气：最近天气越来越凉快了，……"
+     },
+     {
+      "n": "课文2",
+      "zh": "小林的语气：小李家的大黑狗又聪明又漂亮，……"
+     },
+     {
+      "n": "课文3",
+      "zh": "马克的语气：上个月我去了趟北京动物园，……"
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "type_zh": "选词填空",
+    "instruction_zh": "选择合适的词语填空",
+    "instruction_en": "Choose the proper words to fill in the blanks.",
+    "word_bank": [
+     [
+      "广播",
+      "尊重",
+      "剩",
+      "照",
+      "底"
+     ],
+     [
+      "难受",
+      "暖和",
+      "活泼",
+      "凉快",
+      "热闹"
+     ]
+    ],
+    "items": [
+     {
+      "n": 1,
+      "zh": "这本小说就________十几页了，我想看看最后到底怎么样了。"
+     },
+     {
+      "n": 2,
+      "zh": "刚才听________说明天可能会下大雨，足球比赛恐怕要推迟了。"
+     },
+     {
+      "n": 3,
+      "zh": "您看这个沙发怎么样？我们年________有活动，正在打折，比平时便宜了一千块。"
+     },
+     {
+      "n": 4,
+      "zh": "不管男人还是女人，只要能在自己的工作中取得好的成绩，都应该赢得________。"
+     },
+     {
+      "n": 5,
+      "zh": "很多自行车后面都有一个灯，虽然小，但用处却很大。每当后面汽车的灯光________到它时，它就会反光，这样就能提醒司机前方有人。"
+     },
+     {
+      "n": 6,
+      "zh": "A：下了雨，________多了，前几天实在是太热了。 B：是啊，前两天晚上热得都睡不着，今天终于能睡个好觉了。"
+     },
+     {
+      "n": 7,
+      "zh": "A：你经常参加学校举办的舞会吗？ B：不，我从来没参加过，我不太喜欢________。"
+     },
+     {
+      "n": 8,
+      "zh": "A：工作半天了，起来活动活动。 B：好，坐久了确实有些________。"
+     },
+     {
+      "n": 9,
+      "zh": "A：小李，我给你介绍个女朋友吧，说说你有什么条件。 B：我，我喜欢________可爱的女孩子。"
+     },
+     {
+      "n": 10,
+      "zh": "A：今天很________，外面一点儿也不冷，你不用穿这么多衣服。 B：好的，那我脱掉一件。"
+     }
+    ]
+   },
+   {
+    "n": "扩展 做一做",
+    "type_zh": "选词填空（同字词）",
+    "instruction_zh": "选词填空",
+    "instruction_en": "Fill in the blanks with the words given.",
+    "word_bank": [
+     [
+      "既然",
+      "竟然",
+      "仍然",
+      "突然"
+     ]
+    ],
+    "items": [
+     {
+      "n": 1,
+      "zh": "真是没想到，四年的大学生活________这么快就结束了！",
+      "answer": "竟然",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        75
+       ]
+      }
+     },
+     {
+      "n": 2,
+      "zh": "A：刚才太危险了，那辆车怎么回事？ B：不知道，________加速，估计是新手，刚学会开车。",
+      "answer": "突然",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        75
+       ]
+      }
+     },
+     {
+      "n": 3,
+      "zh": "只要你不放弃努力，就________有希望。你总会找到一条合适的路，通往成功的目的地。",
+      "answer": "仍然",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        75
+       ]
+      }
+     },
+     {
+      "n": 4,
+      "zh": "世界上有一种药是肯定买不到的，那就是“后悔药”。有些事情过去了就是过去了，再也不能回头。________不能重新来过，那么就把那些过去的事情放在心里，当成一种回忆，然后勇敢地抬起头向前看，走好以后的路。",
+      "answer": "既然",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        75
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "characters": {
+   "knowledge_title_zh": "同字词",
+   "knowledge_en": "Words with the Same Character",
+   "knowledge_zh": "然：既然、竟然、仍然、突然\n（1）既然知道是你错了，那你就该主动向他道歉。\n（2）让人吃惊的是，这本小说的作者竟然是个十几岁的中学生，他写这本书时才上高中二年级。\n（3）去年放暑假的时候我去了一趟云南。现在回忆起来，我仍然觉得那是一次愉快的旅行，非常难忘。\n（4）那天的事情太突然了，李先生也没想到会弄成这个样子，他当时并不是故意的。",
+   "characters": [
+    {
+     "zh": "然",
+     "note_zh": "既然、竟然、仍然、突然"
+    }
+   ]
+  },
+  "application": [
+   {
+    "title_zh": "双人活动",
+    "instruction_zh": "互相了解对方关于保护自然的看法，完成调查表。",
+    "instruction_en": "Learn about each other’s opinions on the conservation of nature and complete the questionnaire below.",
+    "example_zh": [
+     "表格：| | 问 | 答 |",
+     "| 1 | 哪些动物应该得到保护？为什么？ | |",
+     "| 2 | 你同意用动物做实验吗？为什么？ | |",
+     "| 3 | 你会买用动物的皮毛做的衣服吗？为什么？ | |",
+     "| 4 | 植物对你的生活有哪些影响？ | |",
+     "| 5 | 如果没有森林，世界会变成什么样子？ | |",
+     "| 6 | 海洋跟我们的生活有什么关系？ | |"
+    ]
+   },
+   {
+    "title_zh": "小组活动",
+    "instruction_zh": "动物、植物和海洋都是大自然的一部分，它们有什么特点？随着社会的发展，它们发生了哪些变化？你认为怎样做才能更好地保护它们？请向小组成员介绍一下。（最少用四个下面的结构）",
+    "instruction_en": "Animals, plants and oceans, all of them are part of the nature. What characteristics do they have? With the development of the society, what changes have taken place to them? What do you think we should do to better protect them? Tell your group members about your opinion. (Use at least four of the following structures.)",
+    "example_zh": [
+     "a. 随着气温的降低",
+     "b. 只要稍微花点儿时间",
+     "c. 一直陪着你",
+     "d. 数量不多",
+     "e. 这一点儿也不奇怪",
+     "f. 科学研究发现",
+     "g. 看来没有想的那么容易",
+     "h. 为了表示友好"
+    ]
+   }
+  ],
+  "culture": {
+   "title_zh": "中国国宝大熊猫",
+   "body_zh": "大熊猫是中国国家一级保护动物。它的身体只有黑色和白色两种颜色，它有着圆圆的脸，大大的黑眼圈，胖胖的身体，非常可爱。大熊猫已经在地球上生活了至少800万年，人们叫它“活化石”和“中国国宝”。大熊猫最开始是吃肉的，经过进化，现在它们的食物99%是竹子了。野外大熊猫现在主要生活在中国四川、陕西和甘肃的山区，一般能活到18～20岁；圈养的大熊猫可以超过30岁。大熊猫每天有一半的时间用来吃东西，剩下的一半时间多数是在睡觉。在野外，大熊猫在每两次吃东西的中间睡2～4个小时，即使在睡觉的时候，大熊猫看起来也很可爱。",
+   "body_en": "The National Treasure of China-Giant Panda\nThe giant panda is a first-class national protected and endangered animal of China. It is black and white; it has a round face, big black eye patches and a chubby body. It is one of the most lovable animals in the world. Having existed on the earth for at least eight million years, giant pandas are known as “living fossils” and “the national treasure of China”. At first, giant pandas were carnivores, but then evolution happened, and now bamboos make up 99% of the food they eat. Today, wild pandas mainly live in the mountainous areas in Sichuan, Shaanxi and Gansu of China; they usually live to 18-20 years old, while captive pandas can live more than 30 years. Each day, giant pandas spend half the time eating and most of the other half sleeping. In the wild, giant pandas take a sleep of 2-4 hours between every two meals; they look lovable even when they are sleeping."
+  }
+ },
+ "teacher": {
+  "ref": {
+   "book": "teacher",
+   "pages": [
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75
+   ]
+  },
+  "objectives_zh": [
+   "主题：人与自然的关系（1）对话：自然景色变化、饲养动物、游览动物园（2）短文：森林、海洋",
+   "语言点：学生能够了解并掌握：（1）“倒”表示把容器倾斜使里面的东西出来；也表示转折或让步（2）“干”读gàn时表示从事某种事业、工作、活动；读gān时表示没有水分或水分很少，儿化后表示经过加工去掉了水分的食品（3）“趟”表示往返的次数　*辨析“趟”和“次”的异同（4）“为了……而……”，前一分句表示后一分句动作行为的目的（5）“仍然”表示跟原来情况一样",
+   "词汇：学生能够：（1）掌握本课28个四级大纲词汇的意义和用法　重点词语：凉快、照、严格、难受、放暑假、排队、社会、竞争、剩、底、排列（2）了解1个非大纲词汇的意义：美人鱼（3）理解“然”字的组词规律及在词汇中的意义"
+  ],
+  "steps": [
+   {
+    "title_zh": "一 复习旧课",
+    "body_zh": "1 使用生词卡片，快速认读下列词语：\n报名、参观、激动、代表、失望、礼貌、原谅、同情、马虎、自信、重视、尊重\n2 快速回答问题（与第16课或学生实际生活有关的问题）：\n（1）如果要拒绝朋友的要求，最好用哪种方法？\n（2）从课前、课后、上课时几个方面谈谈应该怎么学习汉语。\n（3）如果自己没听懂，但是却说自己懂了，这样好不好？为什么？\n3 检查作业：\n请5名学生每人用上节课所学语言点说一个句子。"
+   },
+   {
+    "title_zh": "二 学习新课 1 热身",
+    "body_zh": "热身1：学生两人一组，合作完成；教师指出图片，请学生根据图片说出对应的词语，教师核对答案；教师领读热身1的生词；最后全体学生齐读，教师正音。\n答案：①F　②C　③B　④A　⑤D　⑥E\n热身2：教师带领学生熟悉调查表格的内容；请学生两人一组，调查对方对动物的态度；请3～5名学生报告调查结果。"
+   },
+   {
+    "title_zh": "2 生词",
+    "body_zh": "（1）生词快速认读及正音\n课文1（对话）：凉快、热闹、云、广播、照、倒\n课文2（对话）：毛、抱、干、严格、难受\n课文3（对话）：趟、放暑假、老虎、入口、排队、活泼\n课文4（短文）：社会、竞争、森林、剩、暖和\n课文5（短文）：海洋、底、*美人鱼、公里、仍然、排列、梦\n• 教师用PPT或卡片展示并领读生词（带拼音）；\n• 取消拼音，带领学生再次认读；\n• 逐词（不带拼音）闪现，请学生快速认读生词；\n• 请3～5个学生快速随机认读3～5个生词；\n• 最后全体学生快速齐读所有生词。\n（2）生词讲解方式\n直观法（图片、实物、视频、符号）：图片类：热闹（热身图片F）、云（热身图片B）、老虎（热身图片D）、入口（景点入口）、排队（超市收银台排队结账）、活泼（热身图片A）、森林（热身图片C）、剩（剩菜）、海洋（热身图片E）、美人鱼、排列（数独游戏）、底（海面和海底图片对比）；实物类：毛（衣服的皮毛，配合动物的毛）；视频类：广播（公共汽车或地铁内的广播场景）；符号类：公里（KM）\n情景法（肢体动作、语言等）：照（拍照）、抱（伸手抱人）、难受（胃疼时难受的情景）、倒（拿杯子倒水）\n替换法（同／近义替换）：暖和（暖）、干（做）、趟（次）、仍然（还）\n对比法（反义词对比）：凉快（暖和）\n分解法（分解词义）：放暑假（放假、暑假）\n提问启发：严格、社会、竞争、梦\n教师提问，引导学生说出句子：\n小时候父母对你的要求怎么样？——父母对我要求很严格。\n环境污染严重吗？很多地方都有这个问题吗？——环境污染是一个社会问题。\n为什么现在找工作比较难？——因为很多人竞争。\n你睡觉的时候常常做梦吗？——我经常／不常做梦。\n（3）字形辨认练习\n教师用卡片或PPT展示，请学生快速辨认并读出，最后给每个字组词。\n快—块　闹—问　广—床\n倒—到　抱—报　严—亚\n趟—趣　入—人　仍—扔—极\n（4）重点生词扩展及常用搭配\n凉快—很／比较／非常凉快—天气凉快了—最近天气越来越凉快了。\n照—照照片—照了一张照片—我想多照点儿照片。\n严格—很／比较／非常严格—严格要求—要求很严格——它会严格按照要求去做。\n难受—很／比较／非常难受—心里很难受—在你心里难受的时候，它会一直陪着你。\n放暑假—放暑假了—放暑假的时候—马上就要放暑假了—还有一个月就要放暑假了。\n排队—请排队—排队的人—排了一个小时队—入口处排队的人很多。\n社会—我们的社会—社会问题—这是一个社会问题—社会上有很多这样的事。\n竞争—很多人竞争—竞争得很厉害—很多毕业生竞争这个工作。\n剩—剩下—剩下的植物—剩下的一些低矮的植物只能长在高大的植物下面。\n底—海／树／水底—海底世界—在美丽的海底世界里，生活着各种各样的动植物。\n排列—排列数字／顺序—按顺序排列数字—把数字按顺序排列起来。"
+   },
+   {
+    "title_zh": "3 语言点（1）倒",
+    "body_zh": "【动词用法】\n① 语言点解析\n“倒”，动词，把容器倾斜使里面的东西出来。\n② 语言点导入\n• 利用直观动作（倒水）演示，提问导入。\n教师：我在做什么？\n学生：老师在倒水。\n• 联系生活实际，提问导入。\n教师：客人到你们家做客，你会做什么向他表示欢迎？\n学生：我请他进门，请他坐下，给他倒茶或者咖啡。\n③ 语言点操练\n创设情境或联系生活实际，提问操练。\n• 教师：这些垃圾怎么办？\n学生：把垃圾倒到外边的垃圾桶里吧！\n• 教师：过年时全家人聚在一起吃饭，为了对老人表示尊重，年轻人一般会做什么？\n学生：为了对老人表示尊重，年轻人会给老人倒酒。\n【副词用法】\n① 语言点解析\n“倒”，副词，表示跟意料相反、含责怪语气，或者表示让步。有时说“倒是”。\n② 语言点导入\n创设情境，进行导入。\n• 教师：现在堵车很严重，我先把你送到地铁站，然后你坐地铁去机场吧。\n学生：这倒是一个好主意，这样就不怕迟到了。\n• 教师：昨天的比赛你们看了吗？最后竟然是西班牙队赢了。\n学生：看了，我们本来都以为巴西队能赢，可结果倒和我们想的正好相反。\n③ 语言点操练\n联系生活实际，提问操练。\n• 教师：咱们今天去香山走走吧。\n学生：今天天气倒是不错，我下午没事，咱们下午去吧。\n• 教师：放假了你怎么不去旅游呢？\n学生：我倒想去，可是我还得准备HSK考试呢。\n④ 语言点运用\n请学生两人一组，根据提示补全对话，并分角色表演。\nA：明天朋友聚会要喝酒，我不能喝酒，这可怎么办啊？\nB：________。（酒、倒、水）\nA：把酒换成水，这倒是一个好主意。\nB：________。（倒、朋友、不同意）\n参考答案：把酒倒掉，换成水\n说起来倒容易，恐怕朋友们不会同意"
+   },
+   {
+    "title_zh": "3 语言点（2）干",
+    "body_zh": "【动词用法】\n① 语言点解析\n干（gàn），动词，做（事情），表示从事某种事业、工作、活动。\n② 语言点导入\n采用同义词替换法，提问导入。\n• 教师：他／她在做什么？\n教师重复：他／她在干什么？\n注意：“干”用重音，突出“做”替换成“干”。\n• 教师：大学毕业后，你想干点儿什么？\n学生：我还是干点儿和专业有关系的工作吧。\n③ 语言点操练\n联系生活实际，提问操练。\n• 教师：你能猜到你妈妈现在在做什么吗？\n学生：我猜不到她在干什么。\n• 教师：周末太无聊了。\n学生：我们出去干点儿什么吧，别学习了。\n【形容词用法】\n① 语言点解析\n干（gān），形容词，表示没有水分或水分很少。\n② 语言点导入\n创设情境，提问导入。\n• 教师：你怎么突然流鼻血了？\n学生：我也不太清楚，可能是因为最近天气太干。\n• 教师：外面开始下雨了吗？\n学生：还没有呢，你看，路上还是干的呢！\n③ 语言点操练\n创设情境或联系生活实际，提问操练。\n• 教师：桌子上怎么都是水啊！一会儿客人就来了。\n学生：好的，我马上把它擦干。\n• 教师：洗完衣服后，衣服10分钟能干吗？\n学生：10分钟肯定干不了，至少得1个小时。\n【名词用法】\n① 语言点解析\n干儿（gānr），名词，表示经过加工去掉了水分的食品。\n② 语言点导入\n利用图片，提问导入。\n教师展示牛肉干儿、水果干儿等图片。\n教师：这些是什么东西？你们吃过吗？\n学生：这是牛肉干儿，那是水果干儿。我只吃过牛肉干儿。\n③ 语言点操练\n联系生活实际，提问操练。\n• 教师：明天咱们去爬山，你准备好吃的了吗？\n学生：你放心吧，都准备好了，我还买了你喜欢吃的牛肉干儿和鱼干儿呢。\n• 教师：哪些水果可以做成水果干儿？\n学生：苹果、香蕉、梨什么的都可以做成水果干儿。\n④ 语言点运用\n请学生两人一组，根据提示补全对话，并分角色朗读。\nA：________？怎么不接我电话呢？（干）\nB：我刚才在洗澡，没听见电话响。\nA：我们什么时候出门啊？晚了恐怕会堵车。\nB：________。（擦，干）\nA：好的，你想吃什么，我现在去超市买点儿路上吃的。\nB：________。（干儿）\n参考答案：你到底在干什么呢\n我把头发擦干就出门\n你帮我买点儿牛肉干儿吧"
+   },
+   {
+    "title_zh": "3 语言点（3）趟",
+    "body_zh": "① 语言点解析\n“趟”，量词，表示往返的次数。\n② 语言点导入\n联系生活实际，提问导入。\n• 教师：昨天下课后我去宿舍找你，你正好不在，你去哪儿了？\n学生：我下课后去了一趟超市，然后才回宿舍的。\n• 教师：你现在着急去哪儿呢？\n学生：我现在去趟办公室找一下王老师。\n③ 语言点操练\n联系课本内容和生活实际，提问操练。\n• 教师：李进去上海做什么了？\n学生：他去上海出了趟差。\n• 教师：周末我们一起去爬山吧？\n学生：周末不行，我要回一趟家。\n④ 语言点运用\n请学生两人一组，根据提示补全对话，并分角色朗读。\nI. A：你最近怎么总去大使馆啊？\nB：________。（签证，趟）\nII. A：这些照片是在哪儿照的啊？真漂亮！\nB：________。（趟，香山）\nIII. A：________？（趟，医院）\nB：当然可以，回家后要好好休息。\n参考答案：I. 为了办签证，我都去了好几趟了\nII. 上个月我去了趟香山，那里的红叶特别漂亮\nIII. 马经理，打扰您一下，我明天要去趟医院，想请一天假可以吗\n⑤ 比一比：趟—次\n按照教材中的辨析步骤进行。"
+   },
+   {
+    "title_zh": "3 语言点（4）为了……而……",
+    "body_zh": "① 语言点解析\n“为了……而……”，前一分句表示后一分句动作行为的目的。“为了”后面跟词或者词组。\n② 语言点导入\n联系生活实际，提问导入。\n教师：为什么很多女人结婚后就不工作了呢？\n学生：她们很多人都是为了照顾家庭而放弃工作的。\n③ 语言点操练\n• 联系课本内容，提问操练。\n教师：为什么有的孩子总是喜欢敲打东西呢？\n学生：他们常常是为了引起父母的注意而故意敲打的。\n• 利用图片（变色龙），提问操练。\n教师：森林里很多动物为什么会改变颜色呢？\n学生：它们一般为了保护自己而改变身体的颜色。\n④ 语言点运用\n请学生根据句子意思，连线组成5个完整的句子，并朗读。\nI. 老师为了让学生听懂　　A. 而严格要求他们\nII. 他为了通过HSK考试　　B. 而讲得很慢\nIII. 父母为了让孩子养成好习惯　　C. 而加班\nIV. 有的人为了快点儿把工作做完　　D. 而共同努力\nV. 让我们为了生活幸福　　E. 而努力复习\n参考答案：I. B　II. E　III. A　IV. C　V. D"
+   },
+   {
+    "title_zh": "3 语言点（5）仍然",
+    "body_zh": "① 语言点解析\n“仍然”，副词，表示跟原来情况一样，没有变化。\n② 语言点导入\n联系生活实际，提问导入。\n教师：对于出国留学这件事，你跟父母商量好了吗？他们同意吗？\n学生：昨天我又跟父母商量了一下，他们仍然不同意我出国留学。\n③ 语言点操练\n联系生活实际，提问操练。\n• 教师：他上学时就特别喜欢运动，现在他还坚持跑步吗？\n学生：他还和以前一样，仍然每天坚持跑步。\n• 教师：如果换了新手机，还能用原来的号码吗？\n学生：即使换了新手机，仍然可以用原来的号码。\n④ 语言点运用\n请学生选择“仍然”在句子中恰当的位置。\nI. 比赛A进行了四十分钟了，B到现在C两个队都没进球，比分D是0比0。\nII. 虽然人A比动物B聪明，但是动物C有很多值得人D学习的地方。\nIII. 他们A不能互相理解、B互相尊重，我C猜他们总有一天D会分开。\n参考答案：I. D　II. C　III. A"
+   },
+   {
+    "title_zh": "4 课文",
+    "body_zh": "（1）就课文内容，教师将下列问题写在黑板上或用PPT展示（或教师给学生发放问题单）：\n课文1：最近天气怎么样？／这几天香山热闹吗？为什么？／他们去香山看红叶吗？为什么？\n课文2：小李的大黑狗怎么样？／小林每次见了大黑狗，想做什么？／大黑狗听话吗？小李让它做什么，它会去做吗？\n课文3：马克上个月去哪儿了？／北京动物园怎么样？／马克去的那天人多吗？为什么？\n课文4：人与人之间有竞争吗？植物之间呢？／植物会为了什么而竞争？／比较低矮的植物一般长在哪里？\n课文5：地球上有多少地方是海洋？／海底生活着动植物吗？／在几公里深的海底还能看到东西吗？能看到什么？\n（2）要求学生带着问题听两遍录音并回答问题，教师给出答案；\n（3）学生打开课本，教师逐句播放录音，学生看课本听第二次录音并跟读；\n（4）教师领读一遍课文；\n（5）全班一起大声齐读一遍课文；\n（6）请2～3组学生分角色朗读课文，教师正音；\n（7）做以下课文扩展练习：\n对话课文：教师带领学生根据问题单上问题的答案叙述课文内容，并请学生单个复述。\n课文1：最近天气越来越凉快了，秋天已经到了。这几天香山特别热闹，很多游客去看红叶。但是香山上人太多了，他们改天去长城，广播里说那里有不少专门看红叶的好地方。\n课文2：小李的大黑狗毛很漂亮，而且很聪明，小林每次见了都想抱一抱。每次小李让它干什么，它就会严格按照小李的要求去做，就像能听懂小李的话一样。\n课文3：马克上个月去了趟北京动物园。北京动物园是亚洲最大的动物园之一。那天正赶上六一儿童节，入口处排队的人很多。动物园里热闹极了，大熊猫身子胖胖的，样子也很可爱。\n短文课文：请学生根据课文内容，补全下面的语段，并请学生单个复述朗读。\n课文4：不仅……（社会上）的人与人之间有竞争，森林里的……（各种植物之间）也有竞争。植物会为了……（阳光、空气和水）而竞争。一些高大的植物往往能获得更多的阳光、空气和水，而……（剩下的一些比较低矮）的植物就只能长在这些高大植物的下面。\n课文5：地球上大约71%的地方是……（蓝色的海洋），在美丽的……（海底世界），生活着各种各样的植物和动物。就算在……（几公里深的海底）也仍然能看到东西，许多鱼像一个个……（排列起来）的灯，就像在梦里一样。"
+   },
+   {
+    "title_zh": "5 扩展",
+    "body_zh": "（1）领读“既然、竟然、仍然、突然”四个同字词，请学生说一说“然”字在词中的位置和意义。“然”的义项：\n① 副词或形容词后缀：突然、仍然、竟然\n② 如此、这样、那样：既然\n（2）请学生说说还有哪些带“然”字的词，教师列在黑板上，如果没有，可补充下列真假同字词，最后请学生判断正误，教师给出正确答案。\n然后　然而　然为（×）　然则\n忽然　已然　严然（×）　自然\n（3）请学生完成“选词填空”练习，教师给出答案。\n参考答案：①竟然　②突然　③仍然　④既然"
+   },
+   {
+    "title_zh": "6 补充课堂活动",
+    "body_zh": "请学生4人一组，谈谈世界（社会、海洋、森林等）上存在哪些竞争，并说说竞争的原因和影响，最后请每组的代表给全班介绍一下。"
+   },
+   {
+    "title_zh": "7 文化",
+    "body_zh": "教师引导学生了解熊猫的习性和生活习惯，可根据需求和时间安排，进行以下参考活动：\n• 展示图片，认识熊猫的样子、分布的地域、食物；\n• 利用多媒体，展示熊猫的活动视频片段；\n• 请学生模仿熊猫表演，看谁模仿得最像。"
+   },
+   {
+    "title_zh": "8 布置作业",
+    "body_zh": "• 每个生词写3遍；\n• 谈谈你心中的海底世界是什么样的，大约3分钟。"
+   }
+  ],
+  "notes_zh": [
+   "注意：“干”用重音，突出“做”替换成“干”。（语言点2 动词用法）",
+   "比一比：趟—次——按照教材中的辨析步骤进行。（语言点3）",
+   "字形辨认：快—块　闹—问　广—床　倒—到　抱—报　严—亚　趟—趣　入—人　仍—扔—极（生词）",
+   "“然”的义项：① 副词或形容词后缀：突然、仍然、竟然　② 如此、这样、那样：既然；真假同字词：然后、然而、然为（×）、然则、忽然、已然、严然（×）、自然（扩展）"
+  ],
+  "warmup_answers_zh": [
+   "热身1 答案：①F　②C　③B　④A　⑤D　⑥E",
+   "热身2：教师带领学生熟悉调查表格的内容；请学生两人一组，调查对方对动物的态度；请3～5名学生报告调查结果。"
+  ],
+  "text_questions": [
+   {
+    "text": 1,
+    "q_zh": "最近天气怎么样？"
+   },
+   {
+    "text": 1,
+    "q_zh": "这几天香山热闹吗？为什么？"
+   },
+   {
+    "text": 1,
+    "q_zh": "他们去香山看红叶吗？为什么？"
+   },
+   {
+    "text": 2,
+    "q_zh": "小李的大黑狗怎么样？"
+   },
+   {
+    "text": 2,
+    "q_zh": "小林每次见了大黑狗，想做什么？"
+   },
+   {
+    "text": 2,
+    "q_zh": "大黑狗听话吗？小李让它做什么，它会去做吗？"
+   },
+   {
+    "text": 3,
+    "q_zh": "马克上个月去哪儿了？"
+   },
+   {
+    "text": 3,
+    "q_zh": "北京动物园怎么样？"
+   },
+   {
+    "text": 3,
+    "q_zh": "马克去的那天人多吗？为什么？"
+   },
+   {
+    "text": 4,
+    "q_zh": "人与人之间有竞争吗？植物之间呢？"
+   },
+   {
+    "text": 4,
+    "q_zh": "植物会为了什么而竞争？"
+   },
+   {
+    "text": 4,
+    "q_zh": "比较低矮的植物一般长在哪里？"
+   },
+   {
+    "text": 5,
+    "q_zh": "地球上有多少地方是海洋？"
+   },
+   {
+    "text": 5,
+    "q_zh": "海底生活着动植物吗？"
+   },
+   {
+    "text": 5,
+    "q_zh": "在几公里深的海底还能看到东西吗？能看到什么？"
+   }
+  ]
+ },
+ "workbook": {
+  "ref": {
+   "book": "workbook",
+   "pages": [
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73
+   ]
+  },
+  "sections": [
+   {
+    "n": "一、听力 第一部分",
+    "type_zh": "听力 第一部分",
+    "instruction_zh": "第1–5题：判断对错。",
+    "items": [
+     {
+      "n": "例1",
+      "zh": "★他打算下午去银行。",
+      "transcript_zh": "我想去办个信用卡，今天下午你有时间吗？陪我去一趟银行？",
+      "answer": "✓",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        64
+       ]
+      }
+     },
+     {
+      "n": "例2",
+      "zh": "★他喜欢看电视广告。",
+      "transcript_zh": "现在我很少看电视，其中一个原因是，广告太多了，不管什么时间，也不管什么节目，只要你打开电视，总能看到那么多的广告，浪费我的时间。",
+      "answer": "×",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        64
+       ]
+      }
+     },
+     {
+      "n": 1,
+      "zh": "★秋季不适合去黄山。",
+      "transcript_zh": "我觉得秋天是去黄山的最好季节，因为这时候天气不冷也不热，而且山上的树叶有很多种颜色，绿的、黄的、红的，漂亮极了。",
+      "answer": "×",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        124,
+        126
+       ]
+      }
+     },
+     {
+      "n": 2,
+      "zh": "★地图上蓝色表示海洋。",
+      "transcript_zh": "儿子，你看，地图上不同的颜色表示不同的地方，绿色的是森林，蓝色的是海洋。这里是北京，那里是上海，你来找找我们现在在哪儿。",
+      "answer": "✓",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        124,
+        126
+       ]
+      }
+     },
+     {
+      "n": 3,
+      "zh": "★开车时听广播很不安全。",
+      "transcript_zh": "很多司机都喜欢开车时听广播，因为通过听广播，他们不但可以了解路上的堵车情况，而且开车时也不会觉得太无聊。",
+      "answer": "×",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        124,
+        126
+       ]
+      }
+     },
+     {
+      "n": 4,
+      "zh": "★海洋里的植物很少。",
+      "transcript_zh": "和森林一样，在海洋里也有很多种植物，它们与海洋里的动物，共同组成了一个美丽的海底世界。",
+      "answer": "×",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        124,
+        126
+       ]
+      }
+     },
+     {
+      "n": 5,
+      "zh": "★明天是中秋节。",
+      "transcript_zh": "昨天是中秋节，这一天的月亮应该是一年中最大最亮的。但是让人失望的是，昨天的月亮一直在厚厚的云层后面睡觉，我们什么也看不见。",
+      "answer": "×",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        124,
+        126
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "一、听力 第二部分",
+    "type_zh": "听力 第二部分",
+    "instruction_zh": "第6–12题：请选出正确答案。",
+    "items": [
+     {
+      "n": "例",
+      "zh": "男的主要是什么意思？",
+      "transcript_zh": "女：该加油了，去机场的路上有加油站吗？ 男：有，你放心吧。 问：男的主要是什么意思？",
+      "options": {
+       "A": "去机场",
+       "B": "快到了",
+       "C": "油是满的",
+       "D": "有加油站"
+      },
+      "answer": "D",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        65
+       ]
+      }
+     },
+     {
+      "n": 6,
+      "zh": "根据对话，可以知道什么？",
+      "options": {
+       "A": "入口很远",
+       "B": "应该右拐",
+       "C": "女的在问路",
+       "D": "海洋馆很好"
+      },
+      "transcript_zh": "女：请问，您知道海洋馆的入口在哪儿吗？ 男：这条路直走，大约再有两百米，你就能看到了。 问：根据对话，可以知道什么？",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        124,
+        126
+       ]
+      }
+     },
+     {
+      "n": 7,
+      "zh": "关于男的，可以知道什么？",
+      "options": {
+       "A": "想请假",
+       "B": "被表扬了",
+       "C": "受到邀请了",
+       "D": "要写计划书"
+      },
+      "transcript_zh": "女：这次文化节活动由你来负责，一定要办得热闹点儿。 男：好，我们回去就开会讨论，星期五之前把详细的计划书发给您。 问：关于男的，可以知道什么？",
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        124,
+        126
+       ]
+      }
+     },
+     {
+      "n": 8,
+      "zh": "小狗怎么了？",
+      "options": {
+       "A": "没有精神",
+       "B": "发烧了",
+       "C": "适应环境",
+       "D": "肚子饿了"
+      },
+      "transcript_zh": "男：小狗是不是生病了？毛的颜色不亮，看上去精神也不太好。 女：我猜可能是它刚换了新环境，还没有适应，熟悉了就好了。 问：小狗怎么了？",
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        124,
+        126
+       ]
+      }
+     },
+     {
+      "n": 9,
+      "zh": "女的现在最可能在哪儿？",
+      "options": {
+       "A": "地铁站",
+       "B": "机场",
+       "C": "公交车站",
+       "D": "火车站"
+      },
+      "transcript_zh": "男：52路和407路都能到我这儿，你看看有没有这两趟车？ 女：52路来了，我先挂了啊，一会儿见。 问：女的现在最可能在哪儿？",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        125,
+        126
+       ]
+      }
+     },
+     {
+      "n": 10,
+      "zh": "关于对话，下列哪个正确？",
+      "options": {
+       "A": "做生意很容易",
+       "B": "比赛非常精彩",
+       "C": "价格已经最低",
+       "D": "竞争也有好处"
+      },
+      "transcript_zh": "男：现在生意越来越不好做了，咱们公司只能把价格再降低一些了。 女：是啊，竞争压力确实是越来越大。不过我觉得竞争对公司的发展有很大的好处，就好像一场体育比赛，有了竞争，比赛才会更精彩。 问：关于对话，下列哪个正确？",
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        125,
+        126
+       ]
+      }
+     },
+     {
+      "n": 11,
+      "zh": "女的暑假计划干什么？",
+      "options": {
+       "A": "回趟家",
+       "B": "去国外",
+       "C": "看奶奶",
+       "D": "准备考试"
+      },
+      "transcript_zh": "男：马上就要放暑假了，我打算先回一趟家，看看我奶奶，然后去国外逛逛。你有什么安排吗？ 女：这个暑假你倒轻松，真羡慕你啊！我计划在学校准备研究生考试。 问：女的暑假计划干什么？",
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        125,
+        126
+       ]
+      }
+     },
+     {
+      "n": 12,
+      "zh": "根据对话，下列哪个正确？",
+      "options": {
+       "A": "电影票免费",
+       "B": "票还没买",
+       "C": "女的下午有事",
+       "D": "电影很精彩"
+      },
+      "transcript_zh": "男：我明天下午要去大使馆取签证，电影票最好买五六点的。 女：我刚上网看了一下，五点的已经卖光了，只剩下六点半的了，我们看这个时间的怎么样？ 问：根据对话，下列哪个正确？",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        125,
+        126
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "一、听力 第三部分",
+    "type_zh": "听力 第三部分",
+    "instruction_zh": "第13–22题：请选出正确答案。",
+    "items": [
+     {
+      "n": "例",
+      "zh": "会议几点开始？",
+      "transcript_zh": "男：把这个材料复印5份，一会儿拿到会议室发给大家。 女：好的。会议是下午三点吗？ 男：改了。三点半，推迟了半个小时。 女：好，602会议室没变吧？ 男：对，没变。 问：会议几点开始？",
+      "options": {
+       "A": "两点",
+       "B": "3点",
+       "C": "15：30",
+       "D": "18：00"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        66
+       ]
+      }
+     },
+     {
+      "n": 13,
+      "zh": "关于男的，下列哪个正确？",
+      "options": {
+       "A": "喜欢照相",
+       "B": "五岁了",
+       "C": "有个哥哥",
+       "D": "个子不高"
+      },
+      "transcript_zh": "女：我猜照片中间这个男孩儿是你，对不对？ 男：对，这是我五岁时照的照片。左边这个是我哥哥。 女：你们俩长得真像，个子也差不多。 男：是，大家都这么说。 问：关于男的，下列哪个正确？",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        125,
+        126
+       ]
+      }
+     },
+     {
+      "n": 14,
+      "zh": "他们在哪儿？",
+      "options": {
+       "A": "公园",
+       "B": "餐厅",
+       "C": "超市",
+       "D": "宾馆"
+      },
+      "transcript_zh": "男：这里的景色确实很不错。 女：那当然，这是我最喜欢的一个森林公园。 男：阳光好，空气新鲜，来这儿散步真舒服。 女：既然你喜欢，以后我们可以常来。 问：他们在哪儿？",
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        125,
+        126
+       ]
+      }
+     },
+     {
+      "n": 15,
+      "zh": "外面天气怎么样？",
+      "options": {
+       "A": "下雨了",
+       "B": "在下雪",
+       "C": "很暖和",
+       "D": "刮风了"
+      },
+      "transcript_zh": "女：早，我看外面下雪了，很冷吧？ 男：还行，不是太冷。 女：我把空调打开了，一会儿就暖和了。 男：其实不用开空调，我是走路过来的，走得都有点儿热了。 问：外面天气怎么样？",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        125,
+        126
+       ]
+      }
+     },
+     {
+      "n": 16,
+      "zh": "女的对什么感到奇怪？",
+      "options": {
+       "A": "地球大小",
+       "B": "海水颜色",
+       "C": "节约用水",
+       "D": "空气污染"
+      },
+      "transcript_zh": "女：叔叔，为什么说地球是蓝色的？ 男：因为地球上百分之七十的地方都是海洋，而海水是蓝色的。 女：既然地球上有这么多的水，为什么老师还让我们节约用水？ 男：因为海水是不能直接喝的，人可以用的水实际上非常少。 问：女的对什么感到奇怪？",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        125,
+        126
+       ]
+      }
+     },
+     {
+      "n": 17,
+      "zh": "小王的网球打得怎么样？",
+      "options": {
+       "A": "害怕失败",
+       "B": "还没输过",
+       "C": "不太会打",
+       "D": "没有男的好"
+      },
+      "transcript_zh": "男：你换球鞋干什么啊？又要出去啊？ 女：去打网球。我约了小王，他打网球很厉害，你敢和他打吗？ 男：当然敢。虽然你们和他打，他从来没输过，可我倒不怕他。 女：那一起去吧！看看你到底能不能赢。 问：小王的网球打得怎么样？",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        126
+       ]
+      }
+     },
+     {
+      "n": 18,
+      "zh": "女的想把花儿放在哪儿？",
+      "options": {
+       "A": "植物园",
+       "B": "卧室",
+       "C": "院子里",
+       "D": "南方"
+      },
+      "transcript_zh": "男：奇怪，这花儿才买来几天，怎么叶子就掉了？ 女：这种花儿在南方很常见，需要阳光。你是不是一直把它放在阳光不好的地方了？ 男：是啊，就放在卧室里了。 女：这种植物喜欢阳光，光不好很容易掉叶子。咱们把它搬到院子里，可能会好些。 问：女的想把花儿放在哪儿？",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        126
+       ]
+      }
+     },
+     {
+      "n": 19,
+      "zh": "王教授研究的是什么专业？",
+      "options": {
+       "A": "植物学",
+       "B": "医学",
+       "C": "历史学",
+       "D": "动物学"
+      },
+      "transcript_zh": "第19到20题是根据下面一段话： 各位观众，大家晚上好。欢迎大家在星期六晚上，准时收看我们的《人与自然》节目。在今天的节目里，我们主要向大家介绍亚洲虎。今天我们还请来了国内著名的动物学家王教授来给我们介绍这方面的知识。 19. 王教授研究的是什么专业？",
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        126
+       ]
+      }
+     },
+     {
+      "n": 20,
+      "zh": "今天的节目主要介绍什么？",
+      "options": {
+       "A": "自然",
+       "B": "节目",
+       "C": "老虎",
+       "D": "亚洲"
+      },
+      "transcript_zh": "第19到20题是根据下面一段话： 各位观众，大家晚上好。欢迎大家在星期六晚上，准时收看我们的《人与自然》节目。在今天的节目里，我们主要向大家介绍亚洲虎。今天我们还请来了国内著名的动物学家王教授来给我们介绍这方面的知识。 20. 今天的节目主要介绍什么？",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        126
+       ]
+      }
+     },
+     {
+      "n": 21,
+      "zh": "什么时候参观人数较多？",
+      "options": {
+       "A": "寒假",
+       "B": "暑假",
+       "C": "每天中午",
+       "D": "每月15号"
+      },
+      "transcript_zh": "第21到22题是根据下面一段话： 每年七八月份，也就是放暑假的时候，会有大量的游客来这儿参观，最多的时候会比平时多出三四倍。为了使参观能顺利进行，保证游客的安全，参观的人数如果超过一定的数量，那我们会暂时关门，不让太多的游客进入。 21. 什么时候参观人数较多？",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        126
+       ]
+      }
+     },
+     {
+      "n": 22,
+      "zh": "为什么不让太多游客进入？",
+      "options": {
+       "A": "天气太热",
+       "B": "地方太小",
+       "C": "提前下班",
+       "D": "保证安全"
+      },
+      "transcript_zh": "第21到22题是根据下面一段话： 每年七八月份，也就是放暑假的时候，会有大量的游客来这儿参观，最多的时候会比平时多出三四倍。为了使参观能顺利进行，保证游客的安全，参观的人数如果超过一定的数量，那我们会暂时关门，不让太多的游客进入。 22. 为什么不让太多游客进入？",
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        126
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第一部分（23–26）",
+    "type_zh": "阅读 第一部分",
+    "instruction_zh": "第23–26题：选词填空。",
+    "word_bank": [
+     [
+      "A 严格",
+      "B 梦",
+      "C 抱",
+      "D 坚持",
+      "E 入口"
+     ]
+    ],
+    "items": [
+     {
+      "n": "例",
+      "zh": "她每天都（　）走路上下班，所以身体一直很不错。",
+      "answer": "D",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        67
+       ]
+      }
+     },
+     {
+      "n": 23,
+      "zh": "小姐，您的包不能带入馆内。（　）处有专门存包的地方，您可以把包存放在那儿。",
+      "answer": "E",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        126
+       ]
+      }
+     },
+     {
+      "n": 24,
+      "zh": "有的父母为了让孩子更好地发展而对孩子从小就（　）要求，却忘记了快乐地生活对孩子才是最重要的。",
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        126
+       ]
+      }
+     },
+     {
+      "n": 25,
+      "zh": "小时候，我们往往会有许多浪漫的理想。但是随着年龄的增长，我们天天忙工作、忙生活，那些（　）慢慢地离我们远去了。",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        126
+       ]
+      }
+     },
+     {
+      "n": 26,
+      "zh": "在昨天的羽毛球男子双打比赛中，小马和小张最后赢得了比赛。赛后他们激动地（　）在了一起。",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        126
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第一部分（27–30）",
+    "type_zh": "阅读 第一部分",
+    "instruction_zh": "第27–30题：选词填空。",
+    "word_bank": [
+     [
+      "A 剩",
+      "B 趟",
+      "C 干（gàn）",
+      "D 温度",
+      "E 照"
+     ]
+    ],
+    "items": [
+     {
+      "n": "例",
+      "zh": "A：今天真冷啊，好像白天最高（　）才2℃。 B：刚才电视里说明天更冷。",
+      "answer": "D",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        68
+       ]
+      }
+     },
+     {
+      "n": 27,
+      "zh": "A：站在这儿（　）什么？怎么不进去？忘拿东西了？ B：没有，我在等我儿子，我要带他去公园玩儿。",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        126
+       ]
+      }
+     },
+     {
+      "n": 28,
+      "zh": "A：（　）了这么多菜没吃完，太浪费了。 B：让服务员拿几个盒子来，我们都带回去吧。",
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        126
+       ]
+      }
+     },
+     {
+      "n": 29,
+      "zh": "A：这张照片在哪儿（　）的？真漂亮！ B：中山公园。最近天气暖和了，好多花儿都开了。",
+      "answer": "E",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        126
+       ]
+      }
+     },
+     {
+      "n": 30,
+      "zh": "A：王小姐，辛苦你了，让你周末还跑一（　）。 B：不用客气，我正好经过这儿，就顺便给您带来了。",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        126
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第二部分",
+    "type_zh": "阅读 第二部分",
+    "instruction_zh": "第31–34题：排列顺序。",
+    "items": [
+     {
+      "n": "例",
+      "zh": "",
+      "options": {
+       "A": "可是今天起晚了",
+       "B": "平时我骑自行车上下班",
+       "C": "所以就打车来公司"
+      },
+      "answer": "BAC",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        69
+       ]
+      }
+     },
+     {
+      "n": 31,
+      "zh": "",
+      "options": {
+       "A": "不但能看到小鱼在河里游来游去",
+       "B": "这儿的河水仍然非常干净，站在河边",
+       "C": "还能看到河底绿绿的水草"
+      },
+      "answer": "BAC",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        126
+       ]
+      }
+     },
+     {
+      "n": 32,
+      "zh": "",
+      "options": {
+       "A": "这次艺术节吸引了3000多人参加",
+       "B": "是参加人数最多的一次",
+       "C": "京剧艺术节于9月21日在北京举办"
+      },
+      "answer": "CAB",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        126
+       ]
+      }
+     },
+     {
+      "n": 33,
+      "zh": "",
+      "options": {
+       "A": "森林是大自然不可缺少的一部分",
+       "B": "我觉得这张画主要是想告诉人们",
+       "C": "保护森林就是在保护地球，保护我们共同的家"
+      },
+      "answer": "BAC",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        126
+       ]
+      }
+     },
+     {
+      "n": 34,
+      "zh": "",
+      "options": {
+       "A": "我来北京两年了，却还没去过长城",
+       "B": "所以我打算这个周末去一趟",
+       "C": "有人说没去过长城就不算来过北京"
+      },
+      "answer": "CAB",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        126
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第三部分",
+    "type_zh": "阅读 第三部分",
+    "instruction_zh": "第35–43题：请选出正确答案。",
+    "items": [
+     {
+      "n": "例",
+      "zh": "她很活泼，说话很有趣，总能给我们带来快乐，我们都很喜欢和她在一起。 ★她是个什么样的人？",
+      "options": {
+       "A": "幽默",
+       "B": "马虎",
+       "C": "骄傲",
+       "D": "害羞"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        70
+       ]
+      }
+     },
+     {
+      "n": 35,
+      "zh": "我向大家介绍一下，我们前面看到的就是“老虎山”。为什么叫这个名字呢？不是因为山里有老虎，而是因为从山脚下向上看，山很像一只老虎。 ★关于“老虎山”，可以知道：",
+      "options": {
+       "A": "看起来像老虎",
+       "B": "里面有动物园",
+       "C": "只有一个入口",
+       "D": "有很多种植物"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        126
+       ]
+      }
+     },
+     {
+      "n": 36,
+      "zh": "社会的发展不能光看经济的发展，还要重视环境的保护。环境如果被污染了，经济的发展也无法为我们带来美好的生活。 ★这段话主要谈经济发展和什么的关系？",
+      "options": {
+       "A": "历史文化",
+       "B": "科学发展",
+       "C": "环境保护",
+       "D": "城市管理"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        126
+       ]
+      }
+     },
+     {
+      "n": 37,
+      "zh": "当地球上的空气还不适合生命出现的时候，海洋中就已经出现了生命。海洋里的水对生命有保护作用，生命在海水中不容易受到坏的环境的影响。 ★生命先出现在海洋里的原因是海水：",
+      "options": {
+       "A": "很暖和",
+       "B": "有吃的",
+       "C": "能改变环境",
+       "D": "能保护它们"
+      },
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        126
+       ]
+      }
+     },
+     {
+      "n": 38,
+      "zh": "很多人常为了昨天的事而烦恼，也常为了明天的事而担心，生活得并不快乐。在这一点上，动物有很多值得人学习的地方。拿猫来说吧，它们该睡觉的时候睡觉，该吃饭的时候吃饭，好像一点儿烦恼都没有。如果人们能有它们那样的生活态度，一定会健康快乐很多。 ★根据这段话，人们应该怎么生活？",
+      "options": {
+       "A": "多考虑将来",
+       "B": "别忘记以前",
+       "C": "跟动物一样",
+       "D": "不要想太多"
+      },
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        126
+       ]
+      }
+     },
+     {
+      "n": 39,
+      "zh": "很多人害怕与周围的人比较，比较不但让失败的人更难受，而且让那些成功的人感到有压力，因为肯定还有比他们更成功的人。但是从另一方面来看，通过比较又可以发现自己的优点、缺点，使自己取得更大的成绩。 ★比较的好处是可以：",
+      "options": {
+       "A": "引起竞争",
+       "B": "赢得同情",
+       "C": "原谅别人",
+       "D": "了解自己"
+      },
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        126
+       ]
+      }
+     },
+     {
+      "n": 40,
+      "zh": "由于气候条件不同，世界各地植物叶子的样子也很不相同。在暖和而且空气水分很多的地方，叶子往往长得又宽又厚；在比较干、阳光特别厉害的地方，因为空气中水分少，当地植物的叶子就会长得又瘦又长，有的甚至像针一样。 ★世界各地植物叶子不同与什么有关？",
+      "options": {
+       "A": "长的速度",
+       "B": "气候条件",
+       "C": "经济发展",
+       "D": "植物间的距离"
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        126
+       ]
+      }
+     },
+     {
+      "n": 41,
+      "zh": "由于气候条件不同，世界各地植物叶子的样子也很不相同。在暖和而且空气水分很多的地方，叶子往往长得又宽又厚；在比较干、阳光特别厉害的地方，因为空气中水分少，当地植物的叶子就会长得又瘦又长，有的甚至像针一样。 ★暖和、水分多的地方，植物叶子：",
+      "options": {
+       "A": "很长",
+       "B": "很宽",
+       "C": "很亮",
+       "D": "很多"
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        126
+       ]
+      }
+     },
+     {
+      "n": 42,
+      "zh": "我们虽然完全不懂小鸟的叫声代表什么意思，但仍然可能觉得很好听。虽然有的画儿看来看去也看不懂，可是仍然可能觉得很美。其实美一直都在我们身边，在我们的眼睛里，尽管我们不清楚美到底是什么，但美从来不会因为人们不懂而改变。只要我们长着一双发现美的眼睛，美就无处不在。 ★美有什么特点？",
+      "options": {
+       "A": "有清楚的意思",
+       "B": "有相同的标准",
+       "C": "很容易被理解",
+       "D": "不因为人改变"
+      },
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        126
+       ]
+      }
+     },
+     {
+      "n": 43,
+      "zh": "我们虽然完全不懂小鸟的叫声代表什么意思，但仍然可能觉得很好听。虽然有的画儿看来看去也看不懂，可是仍然可能觉得很美。其实美一直都在我们身边，在我们的眼睛里，尽管我们不清楚美到底是什么，但美从来不会因为人们不懂而改变。只要我们长着一双发现美的眼睛，美就无处不在。 ★根据这段话，我们应该：",
+      "options": {
+       "A": "学习跟鸟交流",
+       "B": "从画中理解美",
+       "C": "欣赏身边的美",
+       "D": "好好保护眼睛"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        126
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "三、书写 第一部分",
+    "type_zh": "书写 第一部分",
+    "instruction_zh": "第44–48题：完成句子。",
+    "items": [
+     {
+      "n": "例",
+      "zh": "那座桥　800年的　历史　有　了",
+      "answer": "那座桥有800年的历史了。",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        72
+       ]
+      }
+     },
+     {
+      "n": 44,
+      "zh": "把　一下　的　数字　排列　剩下",
+      "answer": "把剩下的数字排列一下。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        126
+       ]
+      }
+     },
+     {
+      "n": 45,
+      "zh": "按照　同学们　顺序　排好　请　队",
+      "answer": "请同学们按照顺序排好队。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        126
+       ]
+      }
+     },
+     {
+      "n": 46,
+      "zh": "竞争　经济　推动　发展　鼓励　能",
+      "answer": "鼓励竞争能推动经济发展。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        126
+       ]
+      }
+     },
+     {
+      "n": 47,
+      "zh": "一万公里　这两个　距离　的　城市　是",
+      "answer": "这两个城市的距离是一万公里。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        126
+       ]
+      }
+     },
+     {
+      "n": 48,
+      "zh": "应该　老师们　自己的课　使　变得　活泼",
+      "answer": "老师们应该使自己的课变得活泼。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        126
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "三、书写 第二部分",
+    "type_zh": "书写 第二部分",
+    "instruction_zh": "第49–50题：看图，用词造句。",
+    "items": [
+     {
+      "n": "例",
+      "zh": "乒乓球",
+      "picture_desc_en": "a young woman holding a table-tennis bat, about to serve",
+      "answer": "她很喜欢打乒乓球。",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        73
+       ]
+      }
+     },
+     {
+      "n": 49,
+      "zh": "毛",
+      "picture_desc_en": "two small long-haired black-and-white dogs (papillon-like), close-up",
+      "answer": "这两只狗的毛真好看，抱起来一定特别舒服。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        126
+       ]
+      }
+     },
+     {
+      "n": 50,
+      "zh": "公里",
+      "picture_desc_en": "a city street with cars and tall buildings; an overhead road sign reads “天安门 2km” with an arrow pointing ahead",
+      "answer": "从这里到天安门还有两公里，我们时间来得及。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        126
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "answers_ref": {
+   "book": "teacher",
+   "pages": [
+    124,
+    125,
+    126
+   ]
+  }
+ },
+ "unclear": [
+  "Аудио файлын нэр мэдэгдэхгүй тул audio талбар орхисон. Сурах бичгийн CD тэмдэг: 课文1–5 = 17-1…17-5; дасгалын номын 听力 第一/二/三部分 = 17-1, 17-2, 17-3.",
+  "注释3 趟 жишээ (1) (PDF х.104): «上个月我去了趟北京动物园，那里约有500多种动物» — 课文3-т (PDF х.101) «那里约有500种动物» (пиньинь «yuē yǒu wǔbǎi zhǒng dòngwù»); номын хоорондын зөрүү, номд байгаагаар.",
+  "练习1 复述 课文1 «安娜的语气：最近天气越来越凉快了，……» — бичвэрт энэ өгүүлбэрийг 小夏 хэлсэн; номд байгаагаар.",
+  "生词 25 美人鱼 — * тэмдэгтэй (4-р түвшний жагсаалтаас гадуурх); пиньинь 生词 хүснэгт болон 拼音课文-д том үсгээр «Měirényú» гэж хэвлэгдсэн. Багшийн ном: «28个四级大纲词汇 + 1个非大纲词汇（美人鱼）» = 29 生词 — сурах бичигтэй таарч байна.",
+  "生词 13 放暑假 — үгийн ай (pos) номд хэвлэгдээгүй («to be on summer vacation» л бий).",
+  "生词 6 倒 — зөвхөн «adv. (used to indicate contrast) yet, actually»; 注释1 нь мөн 动词 (to pour) хэрэглээг заасан. 生词 9 干 — зөвхөн «gàn v. to do, to act»; 注释2 注意-д gān (adj.) ба gānr (n.) хэрэглээг нэмсэн.",
+  "注释1 倒-ийн англи тайлбарт «meanss» гэж хэвлэгдсэн (means биш) — номд байгаагаар.",
+  "练习2 үгийн сан «广播 尊重 剩 照 底» — 尊重 энэ хичээлийн 生词-д байхгүй (багшийн номын 复习旧课-ийн үгсийн жагсаалтад бий).",
+  "Сурах бичгийн 练一练 (5 дүрэм × 3), 回答问题 (课文1–3 — 6, 课文4–5 — 4), 练习1 复述 ба 练习2 选词填空 (10) — хариулт сурах бичиг, багшийн номд хэвлэгдээгүй тул answer талбаргүй. 扩展 做一做-ийн хариулт багшийн номд (PDF х.75) бий; 比一比 做一做 (1)(2) нь сурах бичигт жишээ болгон ✓/× тэмдэгтэй хэвлэгдсэн, (3)–(5) хариултгүй (багшийн ном: «按照教材中的辨析步骤进行»).",
+  "Сурах бичгийн 根据课文内容回答问题 хоёр хэсэг дугааргүй (注释3-ын дараа, 注释5-ын дараа) — exercises-д «课文1–3 回答问题», «课文4–5 回答问题» гэж нэрлэсэн; 比一比 ба 扩展-ийн 做一做-г мөн exercises-д оруулсан. 扩展 同字词 (然：既然、竟然、仍然、突然)-ийг textbook.characters-д оруулсан.",
+  "注释 1–3 (倒、干、趟) нь 课文1–3-ын дараа (PDF х.102–105), 注释 4–5 (为了……而……、仍然) нь 课文4–5-ын дараа (PDF х.107–108) байрласан.",
+  "注释3 比一比-д ★ тэмдэг номд (相同点-ийн төгсгөлд, 不同点1-д «表示★这个意思时») — номд байгаагаар үлдээсэн.",
+  "拼音课文-ын гарчгийн пиньинь (Xiǎo Xià hé Ānnà zài liáo tiānqì / Xiǎo Lín hé Xiǎo Lǐ zài liáo Xiǎo Lǐ de gǒu / Mǎkè hé Xiǎo Xià zài liáo dòngwù) болон ярилцагчийн нэрийн пиньинь (Xiǎo Xià, Ānnà, Xiǎo Lín, Xiǎo Lǐ, Mǎkè) схемд талбаргүй тул lines.pinyin-д зөвхөн яриаг оруулсан.",
+  "拼音课文-д пиньинь дотор «、» тэмдэг хэвлэгдсэн (kànle mǎ、xióngmāo、lǎohǔ; yángguāng、kōngqì; nuǎnhuo、shuǐfèn; lìhai、shuǐfèn) — номд байгаагаар; «kě’ài», «dī’ǎi», «rán’ér»-д ’ тэмдэг.",
+  "课文4 ба 课文5 — гарчиггүй 短文 — мөр (lines)-ийг өгүүлбэрээр хуваасан (номд нэг догол мөр); пиньинь бичвэрийг мөн адил хуваасан.",
+  "热身2 — хүснэгт (你喜欢的动物／样子／特点／喜欢的原因), нүд бүрийн хажууд сонгох □; items-д мөр мөрөөр оруулсан; 活泼 (huópō), 寂寞 (jìmò)-ийн дээр пиньинь хэвлэгдсэн.",
+  "Багшийн номын 课文 асуултууд (text_questions)-ын хариулт тус бүрчлэн хэвлэгдээгүй («教师给出答案»); оронд нь 课文扩展练习-ын 复述 догол мөрүүд (teacher.steps «4 课文») хэвлэгдсэн.",
+  "Багшийн номд 本课小结 хэсэг байхгүй — summary_zh орхисон.",
+  "Багшийн номын 扩展 хэсэгт «然为（×）», «严然（×）» — худал (зохиомол) үг гэдгийг номд ×-ээр тэмдэглэсэн.",
+  "Дасгалын ном 听力 16-ийн бичвэр: «地球上百分之七十的地方都是海洋» — сурах бичгийн 课文5: «地球上大约71%的地方是蓝色的海洋»; номын хооронд тоон зөрүү (өөр даалгавар).",
+  "Дасгалын ном 听力 17-ийн бичвэр (PDF х.126, 250dpi-аар шалгасан): «虽然你们和他打，他从来没输过，可我倒不怕他» — номд байгаагаар.",
+  "Дасгалын ном 听力 第二/三部分 — номд зөвхөн сонголтууд хэвлэгдсэн; item.zh-д багшийн номын хавсралтын «问：» асуултыг (19–22-т дугаартай асуултыг) оруулсан, transcript_zh-д бүтнээр. 听力 第一部分-д жишээ 2 (✓ ба ×) байгаа тул «例1», «例2».",
+  "Дасгалын ном 阅读 第一部分 хоёр бүлэг (23–26, 27–30) тус тусын үгийн сантай тул хоёр хэсэг болгон оруулсан; 阅读 第二部分 (31–34 排列顺序)-ийн item.zh хоосон, хэсгүүд options (A/B/C)-д. 阅读 第三部分 40–41, 42–43 нь нэг бичвэрт хоёр асуулт (номд асуулт тус бүр дугааргүй ★) — 40, 41, 42, 43 гэж дугаарласан.",
+  "Дасгалын ном 书写 44–50-ын хариулт багшийн номын хавсралтад «参考答案» гэж хэвлэгдсэн (PDF х.126); 49–50 (看图，用词造句) нээлттэй даалгавар тул хариулт нь зөвхөн жишээ.",
+  "Дасгалын номд 复习 хэсэг байхгүй (HSK4-ийн дасгалын ном: 听力 3 хэсэг, 阅读 3 хэсэг, 书写 2 хэсэг, нийт 50 асуулт).",
+  "文化-ын англи орчуулгад «It is one of the most lovable animals in the world» гэсэн өгүүлбэр бий — хятад эхэд «非常可爱» л байна; body_en-ийн эхэнд англи гарчгийг оруулсан."
+ ],
+ "verified_pages": [
+  64,
+  65,
+  66,
+  67,
+  68,
+  69,
+  70,
+  71,
+  72,
+  73,
+  74,
+  75,
+  99,
+  100,
+  101,
+  102,
+  103,
+  104,
+  105,
+  106,
+  107,
+  108,
+  109,
+  110,
+  111,
+  112,
+  124,
+  125,
+  126
+ ],
+ "schema_version": 1
+}
