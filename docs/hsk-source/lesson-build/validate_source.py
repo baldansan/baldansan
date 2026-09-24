@@ -53,8 +53,9 @@ if not wb: errs.append("workbook байхгүй")
 else:
     items = [it for s in wb.get("sections", []) for it in s.get("items", [])]
     nn = [it.get("n") for it in items if isinstance(it.get("n"), int)]
-    if len([x for x in nn if 1 <= x <= 60]) < 50:
-        (warns if d.get("level") in ("hsk1","hsk2") else errs).append(f"дасгалын номын асуулт {len(nn)} < 50")
+    wb_min = 30 if d.get("level") in ("hsk5","hsk6") else 50  # HSK5–6 дасгалын ном: хичээл бүрт 32 асуулт (听力14+阅读14+书写4)
+    if len([x for x in nn if 1 <= x <= 60]) < wb_min:
+        (warns if d.get("level") in ("hsk1","hsk2") else errs).append(f"дасгалын номын асуулт {len(nn)} < {wb_min}")
     for it in items:
         if "answer" in it and "answer_ref" not in it and "answers_ref" not in wb: warns.append(f"wb item {it.get('n')}: answer байгаа ч answer_ref байхгүй")
     listening = [s for s in wb["sections"] if "听力" in s.get("type_zh","")+s.get("instruction_zh","")]
