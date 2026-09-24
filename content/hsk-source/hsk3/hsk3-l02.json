@@ -1,0 +1,2084 @@
+{
+ "level": "hsk3",
+ "lesson": 2,
+ "book": "HSK3",
+ "title_zh": "他什么时候回来",
+ "title_pinyin": "Tā shénme shíhou huílai",
+ "title_en": "When will he come back",
+ "textbook": {
+  "ref": {
+   "book": "textbook",
+   "pages": [
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35
+   ]
+  },
+  "warmup": [
+   {
+    "instruction_zh": "给下面的词语选择对应的图片",
+    "instruction_en": "Match the pictures with the words.",
+    "items": [
+     "①伞 sǎn",
+     "②经理 jīnglǐ",
+     "③办公室 bàngōngshì",
+     "④脚 jiǎo",
+     "⑤楼 lóu",
+     "⑥树 shù"
+    ],
+    "pictures_desc_en": [
+     "A: bare feet of several people sticking out from under a white blanket",
+     "B: a single leafy green tree",
+     "C: a man in a suit and tie talking on a desk telephone in an office",
+     "D: an open-plan office with desks and computers",
+     "E: tall high-rise buildings",
+     "F: an open blue-and-white umbrella"
+    ]
+   },
+   {
+    "instruction_zh": "说说你做完这些事以后做什么",
+    "instruction_en": "Talk about what you are going to do after you finish doing each thing in Column V₁.",
+    "items": [
+     "V₁ | V₂",
+     "例：起床 qǐ chuáng | 吃早饭 chī zǎofàn",
+     "吃饭 chī fàn |",
+     "写作业 xiě zuòyè |",
+     "下课 xià kè |",
+     "运动 yùndòng |",
+     "回家 huí jiā |"
+    ]
+   }
+  ],
+  "texts": [
+   {
+    "n": 1,
+    "title_zh": "下山的路上",
+    "title_en": "On the way going down the mountain",
+    "kind": "dialogue",
+    "audio": "hsk3-textbook-0201.mp3",
+    "lines": [
+     {
+      "speaker": "小丽",
+      "zh": "休息一下吧。",
+      "pinyin": "Xiūxi yíxià ba."
+     },
+     {
+      "speaker": "小刚",
+      "zh": "怎么了？",
+      "pinyin": "Zěnme le?"
+     },
+     {
+      "speaker": "小丽",
+      "zh": "我现在腿也疼，脚也疼。",
+      "pinyin": "Wǒ xiànzài tuǐ yě téng, jiǎo yě téng."
+     },
+     {
+      "speaker": "小刚",
+      "zh": "好，那边树多，我们过去坐一下吧。",
+      "pinyin": "Hǎo, nàbian shù duō, wǒmen guòqu zuò yíxià ba."
+     },
+     {
+      "speaker": "小丽",
+      "zh": "上来的时候我怎么没觉得这么累？",
+      "pinyin": "Shànglai de shíhou wǒ zěnme méi juéde zhème lèi?"
+     },
+     {
+      "speaker": "小刚",
+      "zh": "上山容易下山难，你不知道？",
+      "pinyin": "Shàng shān róngyì xià shān nán, nǐ bù zhīdào?"
+     }
+    ],
+    "new_words": [
+     {
+      "n": 1,
+      "zh": "腿",
+      "pinyin": "tuǐ",
+      "pos": "n.",
+      "en": "leg",
+      "text": 1
+     },
+     {
+      "n": 2,
+      "zh": "疼",
+      "pinyin": "téng",
+      "pos": "adj.",
+      "en": "hurt, painful",
+      "text": 1
+     },
+     {
+      "n": 3,
+      "zh": "脚",
+      "pinyin": "jiǎo",
+      "pos": "n.",
+      "en": "foot",
+      "text": 1
+     },
+     {
+      "n": 4,
+      "zh": "树",
+      "pinyin": "shù",
+      "pos": "n.",
+      "en": "tree",
+      "text": 1
+     },
+     {
+      "n": 5,
+      "zh": "容易",
+      "pinyin": "róngyì",
+      "pos": "adj.",
+      "en": "easy",
+      "text": 1
+     },
+     {
+      "n": 6,
+      "zh": "难",
+      "pinyin": "nán",
+      "pos": "adj.",
+      "en": "difficult",
+      "text": 1
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "title_zh": "在打电话",
+    "title_en": "On the phone",
+    "kind": "dialogue",
+    "audio": "hsk3-textbook-0202.mp3",
+    "lines": [
+     {
+      "speaker": "周太太",
+      "zh": "喂，你好，请问周明在吗？",
+      "pinyin": "Wèi, nǐ hǎo, qǐngwèn Zhōu Míng zài ma?"
+     },
+     {
+      "speaker": "秘书",
+      "zh": "周经理出去了，不在办公室。",
+      "pinyin": "Zhōu jīnglǐ chūqu le, bú zài bàngōngshì."
+     },
+     {
+      "speaker": "周太太",
+      "zh": "他去哪儿了？什么时候回来？",
+      "pinyin": "Tā qù nǎr le? Shénme shíhou huílai?"
+     },
+     {
+      "speaker": "秘书",
+      "zh": "他出去办事了，下午回来。",
+      "pinyin": "Tā chūqu bàn shì le, xiàwǔ huílai."
+     },
+     {
+      "speaker": "周太太",
+      "zh": "回来了就让他给我打个电话。",
+      "pinyin": "Huílai le jiù ràng tā gěi wǒ dǎ ge diànhuà."
+     },
+     {
+      "speaker": "秘书",
+      "zh": "好的，他到了办公室我就告诉他。",
+      "pinyin": "Hǎo de, tā dàole bàngōngshì wǒ jiù gàosu tā."
+     }
+    ],
+    "new_words": [
+     {
+      "n": 7,
+      "zh": "太太",
+      "pinyin": "tàitai",
+      "pos": "n.",
+      "en": "Mrs., madam",
+      "text": 2,
+      "star": true
+     },
+     {
+      "n": 8,
+      "zh": "秘书",
+      "pinyin": "mìshū",
+      "pos": "n.",
+      "en": "secretary",
+      "text": 2,
+      "star": true
+     },
+     {
+      "n": 9,
+      "zh": "经理",
+      "pinyin": "jīnglǐ",
+      "pos": "n.",
+      "en": "manager",
+      "text": 2
+     },
+     {
+      "n": 10,
+      "zh": "办公室",
+      "pinyin": "bàngōngshì",
+      "pos": "n.",
+      "en": "office",
+      "text": 2
+     }
+    ],
+    "proper_nouns": [
+     {
+      "zh": "周",
+      "pinyin": "Zhōu",
+      "en": "Zhou, a surname"
+     },
+     {
+      "zh": "周明",
+      "pinyin": "Zhōu Míng",
+      "en": "Zhou Ming, name of a person"
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "title_zh": "在楼门口送朋友",
+    "title_en": "Parting at the exit of the building",
+    "kind": "dialogue",
+    "audio": "hsk3-textbook-0203.mp3",
+    "lines": [
+     {
+      "speaker": "小刚",
+      "zh": "雨下得真大。你怎么回去？我送你吧。",
+      "pinyin": "Yǔ xià de zhēn dà. Nǐ zěnme huíqu? Wǒ sòng nǐ ba."
+     },
+     {
+      "speaker": "小丽",
+      "zh": "没事，我出去叫辆出租车就行了。",
+      "pinyin": "Méi shì, wǒ chūqu jiào liàng chūzūchē jiù xíng le."
+     },
+     {
+      "speaker": "小刚",
+      "zh": "那你等等，我上楼去给你拿把伞。",
+      "pinyin": "Nà nǐ děngdeng, wǒ shàng lóu qù gěi nǐ ná bǎ sǎn."
+     },
+     {
+      "speaker": "小丽",
+      "zh": "好的。我跟你一起上去吧。",
+      "pinyin": "Hǎo de. Wǒ gēn nǐ yìqǐ shàngqu ba."
+     },
+     {
+      "speaker": "小刚",
+      "zh": "你在这儿等吧，我拿了伞就下来。",
+      "pinyin": "Nǐ zài zhèr děng ba, wǒ nále sǎn jiù xiàlai."
+     }
+    ],
+    "new_words": [
+     {
+      "n": 11,
+      "zh": "辆",
+      "pinyin": "liàng",
+      "pos": "m.",
+      "en": "used for vehicles",
+      "text": 3
+     },
+     {
+      "n": 12,
+      "zh": "楼",
+      "pinyin": "lóu",
+      "pos": "n.",
+      "en": "building",
+      "text": 3
+     },
+     {
+      "n": 13,
+      "zh": "拿",
+      "pinyin": "ná",
+      "pos": "v.",
+      "en": "to take, to fetch",
+      "text": 3
+     },
+     {
+      "n": 14,
+      "zh": "把",
+      "pinyin": "bǎ",
+      "pos": "m.",
+      "en": "used for things with a handle",
+      "text": 3
+     },
+     {
+      "n": 15,
+      "zh": "伞",
+      "pinyin": "sǎn",
+      "pos": "n.",
+      "en": "umbrella",
+      "text": 3
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "title_zh": "在家",
+    "title_en": "At home",
+    "kind": "dialogue",
+    "audio": "hsk3-textbook-0204.mp3",
+    "lines": [
+     {
+      "speaker": "周太太",
+      "zh": "你看，我这么胖，怎么办呢？",
+      "pinyin": "Nǐ kàn, wǒ zhème pàng, zěnme bàn ne?"
+     },
+     {
+      "speaker": "周明",
+      "zh": "你每天晚上吃了饭就睡觉，也不出去走走，能不胖吗？",
+      "pinyin": "Nǐ měi tiān wǎnshang chīle fàn jiù shuì jiào, yě bù chūqu zǒuzou, néng bú pàng ma?"
+     },
+     {
+      "speaker": "周太太",
+      "zh": "其实我每天都运动。",
+      "pinyin": "Qíshí wǒ měi tiān dōu yùndòng."
+     },
+     {
+      "speaker": "周明",
+      "zh": "但是你一点儿也没瘦！你做什么运动了？",
+      "pinyin": "Dànshì nǐ yìdiǎnr yě méi shòu! Nǐ zuò shénme yùndòng le?"
+     },
+     {
+      "speaker": "周太太",
+      "zh": "做饭啊。",
+      "pinyin": "Zuò fàn a."
+     }
+    ],
+    "new_words": [
+     {
+      "n": 16,
+      "zh": "胖",
+      "pinyin": "pàng",
+      "pos": "adj.",
+      "en": "fat",
+      "text": 4
+     },
+     {
+      "n": 17,
+      "zh": "其实",
+      "pinyin": "qíshí",
+      "pos": "adv.",
+      "en": "actually",
+      "text": 4
+     },
+     {
+      "n": 18,
+      "zh": "瘦",
+      "pinyin": "shòu",
+      "pos": "adj.",
+      "en": "thin",
+      "text": 4
+     }
+    ]
+   }
+  ],
+  "grammar": [
+   {
+    "n": 1,
+    "title_zh": "简单趋向补语",
+    "title_en": "Simple Complements of Direction",
+    "explanation_zh": "汉语中“V＋来／去”表示动作的方向，“来”表示朝着说话人的方向，“去”表示背离说话人的方向。最常用的动词有“上、下、进、出、回、过、起”，我们学过的动词还有“买、带、搬”。例如：（1）–（4）\n如果宾语是地点名词，要放在“来／去”的前边。例如：（5）–（8）\n如果宾语是事物名词，可以放在“来／去”的前边，也可以放在“来／去”的后边。例如：（9）–（12）",
+    "explanation_en": "In Chinese, “V + 来/去” indicates the direction of an action, with “来” indicating the direction towards the speaker and “去” the direction away from the speaker. The most frequently used verbs include “上”, “下”, “进”, “出”, “回”, “过” and “起” as well as some verbs we’ve learned, such as “买”, “带” and “搬”. For example: (1)–(4)\nIf the object is a place, it should precede “来/去”. For example: (5)–(8)\nIf the object is a thing, it can be put before or after “来/去”. For example: (9)–(12)",
+    "structure_rows": [
+     "V＋来／去"
+    ],
+    "examples": [
+     {
+      "n": 1,
+      "zh": "我们在楼上等你呢，你上来吧。",
+      "note_zh": "说话的人在楼上"
+     },
+     {
+      "n": 2,
+      "zh": "谁在外边？你出去看看吧。",
+      "note_zh": "“你”在屋里"
+     },
+     {
+      "n": 3,
+      "zh": "汉语书你带来了吗？"
+     },
+     {
+      "n": 4,
+      "zh": "那边树多，我们过去坐一下吧。"
+     },
+     {
+      "n": 5,
+      "zh": "小狗下楼来了。"
+     },
+     {
+      "n": 6,
+      "zh": "老师进教室来了。"
+     },
+     {
+      "n": 7,
+      "zh": "朋友回家去了。"
+     },
+     {
+      "n": 8,
+      "zh": "我上楼去。"
+     },
+     {
+      "n": 9,
+      "zh": "明天要带作业来。"
+     },
+     {
+      "n": 10,
+      "zh": "帮我买来点儿面包。"
+     },
+     {
+      "n": 11,
+      "zh": "你搬这把椅子去吧。"
+     },
+     {
+      "n": 12,
+      "zh": "这次旅游，我想带去这本书。"
+     }
+    ],
+    "practice_instruction_zh": "练一练　完成句子 Complete the sentences.",
+    "practice": [
+     {
+      "n": 1,
+      "zh": "你怎么还没________？我都在楼下等你半小时了。"
+     },
+     {
+      "n": 2,
+      "zh": "已经10点半了，快点儿________，别睡了。"
+     },
+     {
+      "n": 3,
+      "zh": "明天去朋友家，我想________一些水果。"
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "title_zh": "两个动作连续发生",
+    "title_en": "The Successive Occurrence of Two Actions",
+    "explanation_zh": "汉语中可以用“V₁了……就V₂……”表示两个动作连续发生，后边的动作紧接着前边的动作。例如：（1）–（4）\n如果句子中有两个主语，那么第二个主语要放在“就”前边。例如：（5）–（8）",
+    "explanation_en": "In Chinese, “V₁了……就V₂……” can be used to indicate two actions which occur successively, with the second immediately following the first. For example: (1)–(4)\nIn a sentence with two subjects, the second subject should be put right before “就”. For example: (5)–(8)",
+    "structure_rows": [
+     "V₁了……就V₂……"
+    ],
+    "examples": [
+     {
+      "n": 1,
+      "zh": "我下了课就吃饭。"
+     },
+     {
+      "n": 2,
+      "zh": "妈妈起了床就做早饭。"
+     },
+     {
+      "n": 3,
+      "zh": "小刚拿了伞就下来。"
+     },
+     {
+      "n": 4,
+      "zh": "你每天晚上吃了饭就睡觉。"
+     },
+     {
+      "n": 5,
+      "zh": "你下了课我们就去书店。"
+     },
+     {
+      "n": 6,
+      "zh": "老师进了教室我们就对她说“生日快乐”。"
+     },
+     {
+      "n": 7,
+      "zh": "爸爸回来了我们就吃饭。"
+     },
+     {
+      "n": 8,
+      "zh": "他到了办公室我就告诉他。"
+     }
+    ],
+    "practice_instruction_zh": "练一练　完成对话 Complete the dialogues.",
+    "practice": [
+     {
+      "n": 1,
+      "zh": "A：你什么时候给妈妈打电话？ B：我打算________。",
+      "hint_zh": "（吃晚饭）"
+     },
+     {
+      "n": 2,
+      "zh": "A：你怎么________？ B：我太累了。",
+      "hint_zh": "（到家、睡觉）"
+     },
+     {
+      "n": 3,
+      "zh": "A：你什么时候走？ B：他来了________。"
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "title_zh": "反问的表达：能……吗？",
+    "title_en": "The Rhetoric Question “能……吗？”",
+    "explanation_zh": "汉语中可以用“能……吗”表示反问，“能……吗”中间如果是肯定形式，表达的就是否定的意思，如果是否定的形式，表达的就是肯定的意思。例如：",
+    "explanation_en": "“能……吗” is used in a rhetorical question in Chinese, with its positive form meaning the negative and the negative form meaning the positive. For example:",
+    "structure_rows": [
+     "能……吗？"
+    ],
+    "examples": [
+     {
+      "n": 1,
+      "zh": "A：为什么我的汉语学得不好？ B：你不做作业，也不练习，能学好吗？",
+      "note_zh": "不能学好"
+     },
+     {
+      "n": 2,
+      "zh": "A：你看我这么胖，怎么办呢？ B：你每天晚上吃了饭就睡觉，也不出去走走，能不胖吗？",
+      "note_zh": "会胖"
+     }
+    ],
+    "practice_instruction_zh": "练一练　完成对话 Complete the dialogues.",
+    "practice": [
+     {
+      "n": 1,
+      "zh": "A：我怎么这么累啊？ B：你今天爬山爬得那么快，________？"
+     },
+     {
+      "n": 2,
+      "zh": "A：我病了，头疼。 B：天气这么冷，你穿得这么少，________？"
+     },
+     {
+      "n": 3,
+      "zh": "A：你怎么打篮球打得这么好？ B：我每天都练习，________？"
+     }
+    ]
+   }
+  ],
+  "exercises": [
+   {
+    "n": 1,
+    "type_zh": "朗读",
+    "instruction_zh": "朗读下列短语和句子",
+    "instruction_en": "Read the following phrases and sentences aloud.",
+    "audio": "hsk3-textbook-0205.mp3",
+    "items": [
+     {
+      "n": 1,
+      "zh": "容易：很容易／不容易／容易写／上山容易下山难。"
+     },
+     {
+      "n": 2,
+      "zh": "楼：楼上／下楼／上楼吃饭／我上楼去给你拿把伞。"
+     },
+     {
+      "n": 3,
+      "zh": "瘦：很瘦／不瘦／有点儿瘦／你一点儿也没瘦。"
+     },
+     {
+      "n": 4,
+      "zh": "疼：很疼／不疼／腿疼／我现在腿也疼，脚也疼。"
+     },
+     {
+      "n": 5,
+      "zh": "拿：拿钱／拿伞／拿书／我拿了伞就下来。"
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "type_zh": "选词填空",
+    "instruction_zh": "选择恰当的词语填空",
+    "instruction_en": "Choose the proper words to fill in the blanks.",
+    "word_bank": [
+     [
+      "楼",
+      "办公室",
+      "树",
+      "胖",
+      "难"
+     ],
+     [
+      "辆",
+      "腿",
+      "把",
+      "经理",
+      "其实"
+     ]
+    ],
+    "items": [
+     {
+      "n": 1,
+      "zh": "这是你的________吗？真大！"
+     },
+     {
+      "n": 2,
+      "zh": "今天的考试一点儿也不________。"
+     },
+     {
+      "n": 3,
+      "zh": "我在505教室上课，我现在要上________去。"
+     },
+     {
+      "n": 4,
+      "zh": "你看，小狗在________下做什么呢？"
+     },
+     {
+      "n": 5,
+      "zh": "我太________了，不能吃那么多饭。"
+     },
+     {
+      "n": 6,
+      "zh": "A：你真爱看书，买了这么多！ B：________我一点儿也不喜欢看书，这是给我弟弟买的。"
+     },
+     {
+      "n": 7,
+      "zh": "A：我想买这________车。 B：太贵了，你有那么多钱吗？"
+     },
+     {
+      "n": 8,
+      "zh": "A：下雨了！我没带伞，怎么办？ B：去商店买一________吧。"
+     },
+     {
+      "n": 9,
+      "zh": "A：昨天走路走得太多了，左边这条________有点儿疼。 B：那你今天别出去了。"
+     },
+     {
+      "n": 10,
+      "zh": "A：________，我今天想早一点儿回家，可以吗？ B：今天不行，今天有很多工作要做。"
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "type_zh": "描述图片",
+    "instruction_zh": "用本课新学的语言点和词语描述图片",
+    "instruction_en": "Complete the dialogues using the newly-learned language points and words.",
+    "items": [
+     {
+      "n": 1,
+      "zh": "A：周经理真忙！他到了办公室就________。 B：那么多工作，他能________吗？ A：他回家以后也工作吗？ B：不，他________就________。",
+      "picture_desc_en": "A young man in a shirt and tie working on a laptop at an office desk."
+     },
+     {
+      "n": 2,
+      "zh": "A：哥哥去哪儿了？ B：他________买水果了。 A：他什么时候回来？ B：他________就回来。",
+      "picture_desc_en": "A man seen from behind walking down a curved staircase."
+     },
+     {
+      "n": 3,
+      "zh": "A：电影就要开始了，你怎么还不________？ B：我在外边等朋友呢，他来了________。 A：那我进去等你们。 B：行。",
+      "picture_desc_en": "The outside of a cinema building on a street."
+     },
+     {
+      "n": 4,
+      "zh": "A：你________做什么？ B：我去运动。 A：你现在没以前那么胖了。 B：我现在每天都运动，能________？",
+      "picture_desc_en": "A young man and a young woman walking down a flight of stairs together."
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "type_zh": "回答问题",
+    "instruction_zh": "根据课文回答问题",
+    "instruction_en": "Answer the questions according to the texts.",
+    "items": [
+     {
+      "n": 1,
+      "zh": "小丽现在怎么了？"
+     },
+     {
+      "n": 2,
+      "zh": "周经理去哪儿了？什么时候回来？"
+     },
+     {
+      "n": 3,
+      "zh": "小丽怎么回去？"
+     },
+     {
+      "n": 4,
+      "zh": "小刚上楼去做什么？"
+     },
+     {
+      "n": 5,
+      "zh": "周太太为什么这么胖？"
+     },
+     {
+      "n": 6,
+      "zh": "周太太每天做运动吗？"
+     }
+    ]
+   }
+  ],
+  "characters": {
+   "knowledge_title_zh": "旧字新词",
+   "knowledge_zh": "读读下面的词语，想想组成的新词是什么意思。",
+   "knowledge_en": "Read the following words and guess the meanings of the newly-formed ones.",
+   "word_game": [
+    {
+     "parts": [
+      "办公室",
+      "大楼"
+     ],
+     "result": "办公楼"
+    },
+    {
+     "parts": [
+      "外边",
+      "出去"
+     ],
+     "result": "外出"
+    },
+    {
+     "parts": [
+      "中午",
+      "睡觉"
+     ],
+     "result": "午觉"
+    }
+   ],
+   "confusable_pairs": [
+    [
+     "准",
+     "难"
+    ],
+    [
+     "办",
+     "为"
+    ],
+    [
+     "实",
+     "买"
+    ],
+    [
+     "容",
+     "客"
+    ],
+    [
+     "么",
+     "公"
+    ]
+   ]
+  },
+  "application": [
+   {
+    "title_zh": "双人活动",
+    "instruction_zh": "两人一组，其中一个人用简单趋向补语说句子，另一个做出相应的动作，然后两个人交替进行。",
+    "instruction_en": "Work in pairs. One says a sentence using a simple complement of direction, and the other acts accordingly. Then switch the roles.",
+    "example_zh": [
+     "出去、进来",
+     "出门去、进教室来",
+     "下楼去、上楼来"
+    ]
+   },
+   {
+    "title_zh": "小组活动",
+    "instruction_zh": "3～4人一组，说说你家谁最忙。每组请一位同学报告情况。",
+    "instruction_en": "Work in groups of 3-4. Talk about who is the busiest in your family. Ask one member to report the results to the whole class.",
+    "example_zh": [
+     "A：你们家谁最忙？",
+     "B：我们家我最忙。",
+     "A：你每天做什么事？",
+     "B：我每天早上起了床就吃饭，吃了饭就去上课……",
+     "表格：| | 谁最忙 | 做什么 |",
+     "| 1 | 我 | 起床、吃早饭、去上课 |"
+    ]
+   }
+  ],
+  "saying": {
+   "zh": "饭后百步走，活到九十九",
+   "pinyin": "Fàn hòu bǎi bù zǒu, huódào jiǔshíjiǔ",
+   "en": "A walk after dinner makes one live to 99",
+   "explanation_zh": "“饭后百步走，活到九十九”，这句话字面的意思是吃完饭以后要走一百步，这样可以活到九十九岁。现在人们常用这句话说明，吃饭以后要运动运动，身体才能健康。",
+   "explanation_en": "The literal meaning of the saying “饭后百步走，活到九十九” is that a walk of 100 steps after each meal every day makes one live to 99 years old. Now it means it is good for health to do some exercise after a meal."
+  }
+ },
+ "teacher": {
+  "ref": {
+   "book": "teacher",
+   "pages": [
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22
+   ]
+  },
+  "objectives_zh": [
+   "重点词语：学生能够熟练掌握：“腿、疼、容易、辆、楼、拿、把、胖、其实、瘦”的词义和用法",
+   "语言点：学生能够了解并掌握：（1）简单趋向补语“动词＋来／去”（2）“动词₁＋了……就＋动词₂……”表示两个动作连续发生（3）反问句“能……吗”",
+   "汉字：学生能够：根据已学生词猜测出3个旧字新词“办公楼、外出、午觉”的意思",
+   "功能：学生能够：（1）听懂简单趋向补语的指令、做出正确的动作，并描述动作的趋向（2）表达连续发生的动作（3）听懂并能表达反问语气"
+  ],
+  "steps": [
+   {
+    "title_zh": "复习旧课",
+    "body_zh": "1 教师出示第1课的热身图片，请学生根据图片说出生词。\n2 教师根据第1课的内容进行提问。\n（1）昨天我们学什么了？难吗？\n（2）昨天的作业怎么样？你是几点写完的？\n（3）你写完作业累不累？现在呢？\n（4）周末你有什么打算？\n（5）你想好去哪儿旅游了吗？"
+   },
+   {
+    "title_zh": "学习新课 1 热身",
+    "body_zh": "热身1：学生两人一组，合作完成热身1；教师出示热身1的图片，分别请几个学生根据图片说出词语，核对答案；最后全体学生齐读热身环节所有词语，要求语音标准，声调准确。\n热身2：可留至语言点（2）“两个动作连续发生”导入时使用。\n答案：①F　②C　③D　④A　⑤E　⑥B"
+   },
+   {
+    "title_zh": "2 生词",
+    "body_zh": "（1）生词快速认读及正音\n腿、疼、脚、树、容易、难、太太、秘书、经理、办公室、辆、楼、拿、把、伞、胖、其实、瘦、周、周明\n· 教师先带领学生快速认读一遍生词；\n· 取消拼音，带领学生再次认读；\n· 请单个学生独自认读2-3个生词；\n· 最后全班一起快速认读所有的生词。\n（2）生词讲解方式\n· 直观法（如图片、照片、实物等）展示：树、经理、办公室、楼、伞\n· 利用肢体展示：腿、脚\n· 对比法展示：胖—瘦、容易—难\n· 启发式引导：其实\n· 教师给出句子部分内容，让学生进行补充，如：他说他一直在学习，其实他一直在玩儿电子游戏。\n（3）重点生词扩展及常用搭配\n腿—左腿—右腿\n疼—你哪儿疼？\n　—头疼—眼睛疼—我现在腿疼，脚也疼。\n容易—难\n　—做什么很容易？—学汉语很容易。—写汉字很难。—上山容易下山难。\n辆—一辆车—几辆公共汽车—叫辆出租车\n楼—大楼—1号楼\n　—楼上—楼下\n　—上楼—下楼\n拿—拿什么？\n　—拿书—拿钱—我去拿把伞。\n把—一把伞—一把椅子\n胖—瘦\n　—他很胖—我很瘦\n　—这件衣服有点儿瘦。\n其实—这家饭店中午和晚上经常有很多人，但我觉得其实菜一点儿也不好吃。\n　—他这么做你可能不高兴，但其实是为你好。\n练习册相关练习：第8页／一／第一部分，第11页／二／第二部分"
+   },
+   {
+    "title_zh": "3 语言点（1）简单趋向补语",
+    "body_zh": "① 语言点解析\n汉语中用“来／去”加在动词后表示动作的方向，“来”表示朝着说话人的方向，“去”表示背离说话人的方向。如果宾语是地点名词，要放在“来／去”的前边；如果宾语是事物名词，可以放在“来／去”的前边，也可以放在“来／去”的后边。\n［图示：（地点名词）↓ 动词＋来／去；（事物名词）↑↗ 箭头指向“来／去”的前边和后边］\n最常用的动词有“上、下、进、出、回、过、起”，我们学过的动词还有“买、带、搬”等。\n② 语言点导入\n教师可就地取材，根据教室内外场景，做动作导入语言点。\n教师往教室门外走\n教师：老师现在在做什么？\n学生：老师出去了。\n教师从教室门外进来\n教师：老师现在在做什么？\n学生：老师进来了。\n教师从教室门外进来\n教师：老师现在在做什么？\n学生：老师进来了。\n教师：老师现在在哪儿？\n学生：老师在教室里。\n教师：老师进教室来了。\n教师手里拿着汉语书\n教师：老师带汉语书了吗？\n学生：老师带书了。\n教师：带来还是带去？\n学生：老师带来汉语书了。／老师带汉语书来了。\n③ 语言点操练\n教师就地取材，如：\n利用门练习：进来、进去、出来、出去\n利用学生座位练习：过来、过去、回来、回去、起来\n利用楼梯或黑板作图练习：上来、上去、下来、下去\n利用书本、桌椅、作业本等练习：带来、带去、搬来、搬去\n④ 语言点扩展练习\n教师可根据学生实际情况进行问答练习。如：\n今天你带钱来了吗？\n去朋友家玩儿，你带什么去？\n你让妈妈今晚给你买什么来？\n注意：不能说“起去”。"
+   },
+   {
+    "title_zh": "3 语言点（2）两个动作连续发生",
+    "body_zh": "① 语言点解析\n汉语中可以用“动词₁＋了……就＋动词₂……”表示两个动作连续发生，后边的动作紧接着前边的动作。\n② 语言点导入\n教师可利用本课热身2的表格导入语言点。\n教师带领学生认读表格中的动词。\n教师示范：\n教师：吃完饭，你做什么？\n学生：吃完饭，我去上课。\n教师请学生与同桌合作，互相询问，共同完成表格。\n教师请学生回答自己（或同桌）的情况。\n教师利用学生的回答，导入本课句型：吃了饭，我就去上课。\n③ 语言点操练\n教师给出两个动词，请学生完成句子。\n例如：拿书、下楼——我拿了书就下楼。\n　　　吃晚饭、看电影\n　　　喝牛奶、睡觉\n　　　到办公室、开电脑\n注意：如果句子中有两个主语，那么第二个主语要放在“就”前边。例如：她吃完晚饭，我们就回家。"
+   },
+   {
+    "title_zh": "3 语言点（3）反问的表达：能……吗？",
+    "body_zh": "① 语言点解析\n“能……吗？”是一个反问句，不表示疑问，而是用疑问的形式表示相反的意思。“能……吗”中间如果是肯定形式表达的就是否定的意思，如果是否定形式表达的就是肯定的意思。\n② 语言点导入\n教师给出情景，引导学生说出反问句。\n教师给情景：你有很多作业，这时，朋友请你出去玩儿，你能去玩儿吗？\n学生回答：不能。\n教师示范答句：我有那么多作业，能出去玩儿吗？\n③ 语言点操练\n教师给出情景，引导学生用“能……吗”回答。\n你每天从早到晚工作，朋友问：“你怎么这么累？”——\n你考试考得不好，朋友问：“你为什么不高兴？”——\n你考试考得很好，朋友问：“你为什么这么高兴？”——\n冬天，小方只穿了一件衣服，你问他：“小方你不冷吗？”——\n④ 语言点扩展练习\n教师给出一个情景，请学生扮演老师，用“能……吗？”回答问题。\n情景：张明经常不来上课，上课睡觉，不写作业……\n张明：老师，我为什么考试考得不好？\n老师：你经常不来上课，……\n张明：老师，我汉字为什么写得不好？\n老师：……\n张明：老师，我汉语为什么说得不好？\n老师：……\n注意：“能……吗？”中“能”应该重读。"
+   },
+   {
+    "title_zh": "4 课文 课文1",
+    "body_zh": "（1）让学生听两遍录音并回答下列问题：\n他们在哪儿？上山还是下山？——他们在下山的路上。\n女的（小丽）怎么了？——她腿疼，脚也疼。\n他们要做什么？——他们要过去坐一下。\n（2）教师领读课文两遍，然后让学生分角色朗读课文，注意说话人的语气。\n（3）教师给出提示词，带领学生复述课文。\n提示词：休息、怎么、疼、过去、累、容易、难"
+   },
+   {
+    "title_zh": "4 课文 课文2",
+    "body_zh": "（1）让学生听两遍录音并回答下列问题：\n周明在办公室吗？——周明不在办公室。\n他去哪儿了？——他出去办事了。\n他什么时候回来？——他下午回来。\n（2）教师领读课文两遍，然后让学生分角色朗读课文。\n（3）模仿练习\n教师组织学生两人一组，根据提示模仿课文内容进行对话练习。\nA：喂，你好，请问……在吗？\nB：……，不在……。\nA：他去哪儿了？……回来？\nB：他……了，……回来。\nA：回来了就……。\nB：好的，他……了……我就……。"
+   },
+   {
+    "title_zh": "4 课文 课文3",
+    "body_zh": "（1）让学生听两遍录音并回答下列问题：\n现在天气怎么样？——现在雨下得很大。\n女的（小丽）打算怎么回去？——她打算坐出租车回去。\n小丽带伞了吗？——她没带伞。\n男的（小刚）要做什么？——他要上楼去给小丽拿把伞。\n（2）教师领读课文两遍，然后让学生分角色朗读课文。\n（3）模仿练习\n教师组织学生两人一组，根据提示模仿课文内容进行对话练习。\nA：……下得真大。你怎么……？我送你吧。\nB：没事，我……就行了。\nA：那你……，我……。\nB：好的。我……。\nA：你在这儿……，我……。"
+   },
+   {
+    "title_zh": "4 课文 课文4",
+    "body_zh": "（1）让学生听两遍录音并回答下列问题：\n女的（周太太）为什么这么胖？——她每天晚上吃了饭就睡觉，也不出去走走。\n周太太运动吗？——她说她运动，因为她觉得做饭就是运动。\n（2）教师领读课文两遍，然后让学生分角色朗读课文，注意说话人的语气。\n（3）教师给出提示词，带领学生复述课文。\n提示词：胖、吃饭、睡觉、出去、能……吗、其实、一点儿也没\n练习册相关练习：第14页／四"
+   },
+   {
+    "title_zh": "5 汉字",
+    "body_zh": "旧字新词：\n① 教师领读以前学过的词语和新词，让学生猜猜新词的意思。\n· 领读：办公室、大楼、办公楼\n问学生：“办公楼”是什么地方？——办公、工作的楼。\n讲解“室”和“楼”的区别：“室”是房间、屋子的意思，“楼”里有很多房间。\n扩展提问：还有什么“室”？——教室、休息室。\n　　　　　还有什么“楼”？——教学楼。（根据实际情况选用）\n· 领读：外边、出去、外出\n问学生：“外出”是什么意思？——出去到外边。\n讲解“出去”和“外出”的区别：“出去”一般指去近的地方，“外出”一般指去远的地方。\n· 领读：中午、睡觉、午觉\n问学生：“午觉”是什么意思？——中午时睡的觉。\n注意：“午觉”是一个名词。\n② 教师领读新词扩展，通过情景，理解新词的意思和用法：\n办公楼：去办公楼／在办公楼工作／请问，办公楼在哪儿？\n外出：外出旅游／带孩子外出／听说他外出了。\n午觉：睡午觉／在家睡午觉／你每天睡午觉吗？\n汉字辨认练习：\n辨认下列汉字并组词。\n准：________、________　难：________、________\n办：________、________　为：________、________\n实：________、________　买：________、________\n容：________、________　客：________、________\n么：________、________　公：________、________\n练习册相关练习：第14页／三／第三部分"
+   },
+   {
+    "title_zh": "6 补充课堂活动——根据词卡组句子",
+    "body_zh": "教师给每个人发一张词卡，将全班分成两组，每组根据词卡内容，按照逻辑顺序，用“动作₁＋了＋就＋动作₂”编写一段话，看哪组编得又快又好。\n参考词语：起床、做早饭、写作业、上课、下课、看电视、玩电脑游戏、游泳、踢足球、跳舞、休息、进教室……"
+   },
+   {
+    "title_zh": "7 俗语",
+    "body_zh": "教师引导学生理解俗语的含义，注意这里的数量词“百步”“九十九”都是虚指，并不特指“100步”“99岁”。"
+   },
+   {
+    "title_zh": "8 本课小结",
+    "body_zh": "· 语言点：简单趋向补语“V＋来／去”\n　　　　　“V₁了……就V₂”表示两个动作连续发生\n　　　　　反问句“能……吗？”\n· 汉　字：旧字新词：办公楼、外出、午觉"
+   }
+  ],
+  "notes_zh": [
+   "注意：不能说“起去”。（语言点1）",
+   "注意：如果句子中有两个主语，那么第二个主语要放在“就”前边。例如：她吃完晚饭，我们就回家。（语言点2）",
+   "注意：“能……吗？”中“能”应该重读。（语言点3）",
+   "注意：“午觉”是一个名词。（汉字）",
+   "讲解“室”和“楼”的区别：“室”是房间、屋子的意思，“楼”里有很多房间。（汉字）",
+   "讲解“出去”和“外出”的区别：“出去”一般指去近的地方，“外出”一般指去远的地方。（汉字）",
+   "注意这里的数量词“百步”“九十九”都是虚指，并不特指“100步”“99岁”。（俗语）"
+  ],
+  "warmup_answers_zh": [
+   "热身1 答案：①F　②C　③D　④A　⑤E　⑥B",
+   "热身2：可留至语言点（2）“两个动作连续发生”导入时使用。"
+  ],
+  "text_questions": [
+   {
+    "text": 1,
+    "q_zh": "他们在哪儿？上山还是下山？",
+    "a_zh": "他们在下山的路上。"
+   },
+   {
+    "text": 1,
+    "q_zh": "女的（小丽）怎么了？",
+    "a_zh": "她腿疼，脚也疼。"
+   },
+   {
+    "text": 1,
+    "q_zh": "他们要做什么？",
+    "a_zh": "他们要过去坐一下。"
+   },
+   {
+    "text": 2,
+    "q_zh": "周明在办公室吗？",
+    "a_zh": "周明不在办公室。"
+   },
+   {
+    "text": 2,
+    "q_zh": "他去哪儿了？",
+    "a_zh": "他出去办事了。"
+   },
+   {
+    "text": 2,
+    "q_zh": "他什么时候回来？",
+    "a_zh": "他下午回来。"
+   },
+   {
+    "text": 3,
+    "q_zh": "现在天气怎么样？",
+    "a_zh": "现在雨下得很大。"
+   },
+   {
+    "text": 3,
+    "q_zh": "女的（小丽）打算怎么回去？",
+    "a_zh": "她打算坐出租车回去。"
+   },
+   {
+    "text": 3,
+    "q_zh": "小丽带伞了吗？",
+    "a_zh": "她没带伞。"
+   },
+   {
+    "text": 3,
+    "q_zh": "男的（小刚）要做什么？",
+    "a_zh": "他要上楼去给小丽拿把伞。"
+   },
+   {
+    "text": 4,
+    "q_zh": "女的（周太太）为什么这么胖？",
+    "a_zh": "她每天晚上吃了饭就睡觉，也不出去走走。"
+   },
+   {
+    "text": 4,
+    "q_zh": "周太太运动吗？",
+    "a_zh": "她说她运动，因为她觉得做饭就是运动。"
+   }
+  ],
+  "summary_zh": "语言点：简单趋向补语“V＋来／去”；“V₁了……就V₂”表示两个动作连续发生；反问句“能……吗？”。汉字：旧字新词：办公楼、外出、午觉。"
+ },
+ "workbook": {
+  "ref": {
+   "book": "workbook",
+   "pages": [
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18
+   ]
+  },
+  "answers_ref": {
+   "book": "teacher",
+   "pages": [
+    146,
+    147,
+    148
+   ]
+  },
+  "sections": [
+   {
+    "n": "一、听力 第一部分",
+    "type_zh": "听力 第一部分",
+    "instruction_zh": "第1–5题：听对话，选择与对话内容一致的图片",
+    "instruction_en": "Questions 1-5: Choose the right picture for each dialogue you hear.",
+    "audio": "hsk3-workbook-02-part1.mp3",
+    "items": [
+     {
+      "n": "例",
+      "zh": "男：喂，请问张经理在吗？ 女：他正在开会，您半个小时以后再打，好吗？",
+      "transcript_zh": "男：喂，请问张经理在吗？ 女：他正在开会，您半个小时以后再打，好吗？",
+      "options": {
+       "A": "[picture] a man kneeling on grass beside a woman in sportswear who is sitting and holding her foot",
+       "B": "[picture] a young woman walking on a staircase",
+       "C": "[picture] a man standing in the rain, looking up with his hands raised to his head",
+       "D": "[picture] a smiling woman in a uniform talking on a telephone",
+       "E": "[picture] a woman talking on a mobile phone next to a taxi in the street",
+       "F": "[picture] a man running along a riverside with a bridge in the background"
+      },
+      "answer": "D",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        12
+       ]
+      }
+     },
+     {
+      "n": 1,
+      "zh": "",
+      "options": {
+       "A": "[picture] a man kneeling on grass beside a woman in sportswear who is sitting and holding her foot",
+       "B": "[picture] a young woman walking on a staircase",
+       "C": "[picture] a man standing in the rain, looking up with his hands raised to his head",
+       "D": "[picture] a smiling woman in a uniform talking on a telephone",
+       "E": "[picture] a woman talking on a mobile phone next to a taxi in the street",
+       "F": "[picture] a man running along a riverside with a bridge in the background"
+      },
+      "transcript_zh": "女：真没想到，你现在这么瘦！ 男：这几年我一直在运动，每天都跑步，能不瘦吗？",
+      "answer": "F",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        148
+       ]
+      }
+     },
+     {
+      "n": 2,
+      "zh": "",
+      "options": {
+       "A": "[picture] a man kneeling on grass beside a woman in sportswear who is sitting and holding her foot",
+       "B": "[picture] a young woman walking on a staircase",
+       "C": "[picture] a man standing in the rain, looking up with his hands raised to his head",
+       "D": "[picture] a smiling woman in a uniform talking on a telephone",
+       "E": "[picture] a woman talking on a mobile phone next to a taxi in the street",
+       "F": "[picture] a man running along a riverside with a bridge in the background"
+      },
+      "transcript_zh": "女：周经理，您找我？ 男：对，小方，你快上来，来我办公室。",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        148
+       ]
+      }
+     },
+     {
+      "n": 3,
+      "zh": "",
+      "options": {
+       "A": "[picture] a man kneeling on grass beside a woman in sportswear who is sitting and holding her foot",
+       "B": "[picture] a young woman walking on a staircase",
+       "C": "[picture] a man standing in the rain, looking up with his hands raised to his head",
+       "D": "[picture] a smiling woman in a uniform talking on a telephone",
+       "E": "[picture] a woman talking on a mobile phone next to a taxi in the street",
+       "F": "[picture] a man running along a riverside with a bridge in the background"
+      },
+      "transcript_zh": "男：天气太冷了，回来时别坐公共汽车了。 女：我叫到一辆出租车，正准备上车呢。",
+      "answer": "E",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        148
+       ]
+      }
+     },
+     {
+      "n": 4,
+      "zh": "",
+      "options": {
+       "A": "[picture] a man kneeling on grass beside a woman in sportswear who is sitting and holding her foot",
+       "B": "[picture] a young woman walking on a staircase",
+       "C": "[picture] a man standing in the rain, looking up with his hands raised to his head",
+       "D": "[picture] a smiling woman in a uniform talking on a telephone",
+       "E": "[picture] a woman talking on a mobile phone next to a taxi in the street",
+       "F": "[picture] a man running along a riverside with a bridge in the background"
+      },
+      "transcript_zh": "男：怎么下雨了？我没带伞。 女：我也没带。",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        148
+       ]
+      }
+     },
+     {
+      "n": 5,
+      "zh": "",
+      "options": {
+       "A": "[picture] a man kneeling on grass beside a woman in sportswear who is sitting and holding her foot",
+       "B": "[picture] a young woman walking on a staircase",
+       "C": "[picture] a man standing in the rain, looking up with his hands raised to his head",
+       "D": "[picture] a smiling woman in a uniform talking on a telephone",
+       "E": "[picture] a woman talking on a mobile phone next to a taxi in the street",
+       "F": "[picture] a man running along a riverside with a bridge in the background"
+      },
+      "transcript_zh": "男：你怎么了？怎么不跑了？ 女：今天不知道怎么了，脚一直疼。",
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        148
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "一、听力 第二部分",
+    "type_zh": "听力 第二部分",
+    "instruction_zh": "第6–10题：听句子，判断对错",
+    "instruction_en": "Questions 6-10: Decide whether the statements are true or false based on the sentences you hear.",
+    "audio": "hsk3-workbook-02-part2.mp3",
+    "items": [
+     {
+      "n": "例1",
+      "zh": "他希望自己很健康。",
+      "transcript_zh": "为了让自己更健康，他每天都花一个小时去锻炼身体。",
+      "answer": "√",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        13
+       ]
+      }
+     },
+     {
+      "n": "例2",
+      "zh": "那块儿手表不是他的。",
+      "transcript_zh": "今天我想早点儿回家。看了看手表，才5点。过了一会儿再看表，还是5点，我这才发现我的手表不走了。",
+      "answer": "×",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        13
+       ]
+      }
+     },
+     {
+      "n": 6,
+      "zh": "乐乐现在不在外边。",
+      "transcript_zh": "乐乐，你出来的时候带把伞，外边下雨呢。",
+      "answer": "√",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        148
+       ]
+      }
+     },
+     {
+      "n": 7,
+      "zh": "王经理在楼下。",
+      "transcript_zh": "王经理，您别着急，我现在就上楼去。",
+      "answer": "×",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        148
+       ]
+      }
+     },
+     {
+      "n": 8,
+      "zh": "他已经到楼上了。",
+      "transcript_zh": "你在这儿等我一下，我上去拿了钱就下来。",
+      "answer": "×",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        148
+       ]
+      }
+     },
+     {
+      "n": 9,
+      "zh": "他们现在在外边。",
+      "transcript_zh": "我们快点儿进去喝杯热咖啡吧，这儿太冷了。",
+      "answer": "√",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        148
+       ]
+      }
+     },
+     {
+      "n": 10,
+      "zh": "同学们现在在树下。",
+      "transcript_zh": "同学们，你们快过来，到树下坐坐。",
+      "answer": "×",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        148
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "一、听力 第三部分",
+    "type_zh": "听力 第三部分",
+    "instruction_zh": "第11–15题：听短对话，选择正确答案",
+    "instruction_en": "Questions 11-15: Listen to the short dialogues and choose the right answers.",
+    "audio": "hsk3-workbook-02-part3.mp3",
+    "items": [
+     {
+      "n": "例",
+      "zh": "男的想让小王做什么？",
+      "transcript_zh": "男：小王，帮我开一下门，好吗？谢谢！ 女：没问题。您去超市了？买了这么多东西。 问：男的想让小王做什么？",
+      "options": {
+       "A": "开门",
+       "B": "拿东西",
+       "C": "去超市买东西"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        13
+       ]
+      }
+     },
+     {
+      "n": 11,
+      "zh": "女的让男的做什么？",
+      "options": {
+       "A": "做饭",
+       "B": "吃饭",
+       "C": "打电话"
+      },
+      "transcript_zh": "女：饭做好了，快过来吃。 男：好，我打了电话就过去。 问：女的让男的做什么？",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        148
+       ]
+      }
+     },
+     {
+      "n": 12,
+      "zh": "他们可能在哪儿？",
+      "options": {
+       "A": "公司",
+       "B": "医院",
+       "C": "学校"
+      },
+      "transcript_zh": "男：请问，方经理的办公室怎么走？ 女：就在前边，右边第二个房间，1202。他外出办事了，现在不在。 问：他们可能在哪儿？",
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        148
+       ]
+      }
+     },
+     {
+      "n": 13,
+      "zh": "他们最可能是什么关系？",
+      "options": {
+       "A": "老师和学生",
+       "B": "丈夫和妻子",
+       "C": "经理和秘书"
+      },
+      "transcript_zh": "女：每天坐车上班时间太长了，我们也买辆车吧。 男：行啊，买了车我就每天送你上班。 问：他们最可能是什么关系？",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        148
+       ]
+      }
+     },
+     {
+      "n": 14,
+      "zh": "关于男的，可以知道什么？",
+      "options": {
+       "A": "喜欢看书",
+       "B": "考得很好",
+       "C": "喜欢玩儿电脑游戏"
+      },
+      "transcript_zh": "男：你考得真好，是怎么学的？ 女：我每天学习，你到了家就玩儿电脑游戏、睡觉，不看书，能学好吗？ 问：关于男的，可以知道什么？",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        148
+       ]
+      }
+     },
+     {
+      "n": 15,
+      "zh": "女的想让男的做什么？",
+      "options": {
+       "A": "运动一下",
+       "B": "去办事",
+       "C": "穿衣服"
+      },
+      "transcript_zh": "女：今晚你吃得太多了，出去走走吧。 男：行，我穿了衣服就去。 问：女的想让男的做什么？",
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        148
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "一、听力 第四部分",
+    "type_zh": "听力 第四部分",
+    "instruction_zh": "第16–20题：听长对话，选择正确答案",
+    "instruction_en": "Questions 16-20: Listen to the dialogues and choose the right answers.",
+    "audio": "hsk3-workbook-02-part4.mp3",
+    "items": [
+     {
+      "n": "例",
+      "zh": "男的在做什么？",
+      "transcript_zh": "女：晚饭做好了，准备吃饭了。 男：等一会儿，比赛还有三分钟就结束了。 女：快点儿吧，一起吃，菜冷了就不好吃了。 男：你先吃，我马上就看完了。 问：男的在做什么？",
+      "options": {
+       "A": "洗澡",
+       "B": "吃饭",
+       "C": "看电视"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        14
+       ]
+      }
+     },
+     {
+      "n": 16,
+      "zh": "王雨现在可能在哪儿？",
+      "options": {
+       "A": "楼下",
+       "B": "楼上",
+       "C": "办公室"
+      },
+      "transcript_zh": "男：请问王雨在吗？ 女：对不起，他不在，下楼去送人了。 男：他什么时候回来？ 女：几分钟就回来，他送了人就上来。 问：王雨现在可能在哪儿？",
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        148
+       ]
+      }
+     },
+     {
+      "n": 17,
+      "zh": "王东为什么还没来？",
+      "options": {
+       "A": "他去拿东西",
+       "B": "他没带手机",
+       "C": "他要去办公楼打电话"
+      },
+      "transcript_zh": "女：大家都到了吗？ 男：王东还没到。 女：谁有他的电话？ 男：我给他打电话了，他说去办公楼拿了东西就过来。 问：王东为什么还没来？",
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        148
+       ]
+      }
+     },
+     {
+      "n": 18,
+      "zh": "关于小方他们，可以知道什么？",
+      "options": {
+       "A": "已经到了",
+       "B": "走北边的路",
+       "C": "走得很快"
+      },
+      "transcript_zh": "女：我们真快，30分钟就到了。 男：是啊，小方他们到哪儿了？ 女：他们走北边那条路，可能也快到了。 男：那条路难走，可能要50分钟。 问：关于小方他们，可以知道什么？",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        148
+       ]
+      }
+     },
+     {
+      "n": 19,
+      "zh": "他们在哪儿？",
+      "options": {
+       "A": "在楼上",
+       "B": "在楼下",
+       "C": "不知道在哪儿"
+      },
+      "transcript_zh": "男：你进来的时候看见小白了吗？ 女：没看见。你找他有事？ 男：我让他下去买午饭，还没回来。 女：给他打个电话问问吧。 问：他们在哪儿？",
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        148
+       ]
+      }
+     },
+     {
+      "n": 20,
+      "zh": "关于女的，可以知道什么？",
+      "options": {
+       "A": "还没回家",
+       "B": "不着急",
+       "C": "很着急"
+      },
+      "transcript_zh": "男：你怎么还不吃饭？ 女：东东还没回来呢。 男：你别着急，吃饭吧。 女：都这么晚了，我能不着急吗？ 问：关于女的，可以知道什么？",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        148
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第一部分",
+    "type_zh": "阅读 第一部分",
+    "instruction_zh": "第21–25题：选择合适的问答",
+    "instruction_en": "Questions 21-25: Match the two parts of the same dialogue.",
+    "items": [
+     {
+      "n": "例",
+      "zh": "你知道怎么去那儿吗？",
+      "options": {
+       "A": "今天的题一点儿也不难。",
+       "B": "我的头怎么这么疼？",
+       "C": "喂，我到你家楼下了。",
+       "D": "那喝了这杯牛奶就睡觉吧。",
+       "E": "当然。我们先坐公共汽车，然后换地铁。",
+       "F": "请问，周明在吗？"
+      },
+      "answer": "E",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        15
+       ]
+      }
+     },
+     {
+      "n": 21,
+      "zh": "你每天进了办公室就坐在电脑前，身体能好吗？",
+      "options": {
+       "A": "今天的题一点儿也不难。",
+       "B": "我的头怎么这么疼？",
+       "C": "喂，我到你家楼下了。",
+       "D": "那喝了这杯牛奶就睡觉吧。",
+       "E": "当然。我们先坐公共汽车，然后换地铁。",
+       "F": "请问，周明在吗？"
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        148
+       ]
+      }
+     },
+     {
+      "n": 22,
+      "zh": "妈，我今天太累了，不想看书了。",
+      "options": {
+       "A": "今天的题一点儿也不难。",
+       "B": "我的头怎么这么疼？",
+       "C": "喂，我到你家楼下了。",
+       "D": "那喝了这杯牛奶就睡觉吧。",
+       "E": "当然。我们先坐公共汽车，然后换地铁。",
+       "F": "请问，周明在吗？"
+      },
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        148
+       ]
+      }
+     },
+     {
+      "n": 23,
+      "zh": "他现在出去了，十点回来。",
+      "options": {
+       "A": "今天的题一点儿也不难。",
+       "B": "我的头怎么这么疼？",
+       "C": "喂，我到你家楼下了。",
+       "D": "那喝了这杯牛奶就睡觉吧。",
+       "E": "当然。我们先坐公共汽车，然后换地铁。",
+       "F": "请问，周明在吗？"
+      },
+      "answer": "F",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        148
+       ]
+      }
+     },
+     {
+      "n": 24,
+      "zh": "好，你等我一下，我现在就下去。",
+      "options": {
+       "A": "今天的题一点儿也不难。",
+       "B": "我的头怎么这么疼？",
+       "C": "喂，我到你家楼下了。",
+       "D": "那喝了这杯牛奶就睡觉吧。",
+       "E": "当然。我们先坐公共汽车，然后换地铁。",
+       "F": "请问，周明在吗？"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        148
+       ]
+      }
+     },
+     {
+      "n": 25,
+      "zh": "因为你准备得好，所以觉得很容易。",
+      "options": {
+       "A": "今天的题一点儿也不难。",
+       "B": "我的头怎么这么疼？",
+       "C": "喂，我到你家楼下了。",
+       "D": "那喝了这杯牛奶就睡觉吧。",
+       "E": "当然。我们先坐公共汽车，然后换地铁。",
+       "F": "请问，周明在吗？"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        148
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第二部分",
+    "type_zh": "阅读 第二部分",
+    "instruction_zh": "第26–30题：选择合适的词语填空",
+    "instruction_en": "Questions 26-30: Choose the proper words to fill in the brackets.",
+    "word_bank": [
+     [
+      "A 难",
+      "B 办公室",
+      "C 楼",
+      "D 辆",
+      "E 声音",
+      "F 拿"
+     ]
+    ],
+    "items": [
+     {
+      "n": "例",
+      "zh": "她说话的（　）多好听啊！",
+      "options": {
+       "A": "难",
+       "B": "办公室",
+       "C": "楼",
+       "D": "辆",
+       "E": "声音",
+       "F": "拿"
+      },
+      "answer": "E",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        15
+       ]
+      }
+     },
+     {
+      "n": 26,
+      "zh": "小方，周经理请你去他（　）一下。",
+      "options": {
+       "A": "难",
+       "B": "办公室",
+       "C": "楼",
+       "D": "辆",
+       "E": "声音",
+       "F": "拿"
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        148
+       ]
+      }
+     },
+     {
+      "n": 27,
+      "zh": "（　）下那个穿着白衣服的男人是谁？",
+      "options": {
+       "A": "难",
+       "B": "办公室",
+       "C": "楼",
+       "D": "辆",
+       "E": "声音",
+       "F": "拿"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        148
+       ]
+      }
+     },
+     {
+      "n": 28,
+      "zh": "今天的考试一点儿也不（　）。",
+      "options": {
+       "A": "难",
+       "B": "办公室",
+       "C": "楼",
+       "D": "辆",
+       "E": "声音",
+       "F": "拿"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        148
+       ]
+      }
+     },
+     {
+      "n": 29,
+      "zh": "A：快上课了，你怎么往回走？ B：我没带书，回去（　）。",
+      "options": {
+       "A": "难",
+       "B": "办公室",
+       "C": "楼",
+       "D": "辆",
+       "E": "声音",
+       "F": "拿"
+      },
+      "answer": "F",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        148
+       ]
+      }
+     },
+     {
+      "n": 30,
+      "zh": "A：这么多好看的车，我们买哪（　）？ B：买红的吧，我最喜欢红色。",
+      "options": {
+       "A": "难",
+       "B": "办公室",
+       "C": "楼",
+       "D": "辆",
+       "E": "声音",
+       "F": "拿"
+      },
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        148
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第三部分",
+    "type_zh": "阅读 第三部分",
+    "instruction_zh": "第31–35题：选择正确答案",
+    "instruction_en": "Questions 31-35: Choose the right answers.",
+    "items": [
+     {
+      "n": "例",
+      "zh": "您是来参加今天会议的吗？您来早了一点儿，现在才八点半。您先进来坐吧。 ★会议最可能几点开始？",
+      "options": {
+       "A": "8点",
+       "B": "8点半",
+       "C": "9点"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        16
+       ]
+      }
+     },
+     {
+      "n": 31,
+      "zh": "现在的孩子真不容易。从周一到周五每天都要上课，下了课还要做作业。周末也不能休息，起了床就出去学这学那，能不累吗？ ★现在的孩子：",
+      "options": {
+       "A": "一点儿也不累",
+       "B": "每天都很忙",
+       "C": "周末起床很晚"
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        148
+       ]
+      }
+     },
+     {
+      "n": 32,
+      "zh": "很多人都喜欢睡午觉。但是有些人吃了午饭就睡，这样对身体好吗？医生告诉我们：吃了午饭要休息一下。睡午觉的时间也不能太长，一个小时最好。 ★睡午觉：",
+      "options": {
+       "A": "对身体不好",
+       "B": "不能吃饭",
+       "C": "时间不能很长"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        148
+       ]
+      }
+     },
+     {
+      "n": 33,
+      "zh": "我丈夫每天5点多起床，吃了早饭就去上班。我让他多休息、少工作，但是他说：“那么多病人都在等我，我能休息吗？”我真希望丈夫别那么累。 ★我丈夫是做什么工作的？",
+      "options": {
+       "A": "老师",
+       "B": "经理",
+       "C": "医生"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        148
+       ]
+      }
+     },
+     {
+      "n": 34,
+      "zh": "今天早上我起晚了，穿了衣服就出来了。钱、电脑、手机都没带，早饭也没吃。小丽告诉我，妻子打来电话，让我到了办公室就给她回电话。 ★妻子：",
+      "options": {
+       "A": "起晚了",
+       "B": "没带手机",
+       "C": "找我"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        148
+       ]
+      }
+     },
+     {
+      "n": 35,
+      "zh": "去年12月我带妻子去了一次北方。没想到到了那儿妻子就开始生病，没玩儿好也没吃好，一直病到回来。妻子说，下次不要在那么冷的时候旅游了。 ★我妻子：",
+      "options": {
+       "A": "还没去过北方",
+       "B": "玩儿得不好",
+       "C": "回来的时候生病了"
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        148
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "三、书写 第一部分",
+    "type_zh": "书写 第一部分",
+    "instruction_zh": "第36–40题：连词成句",
+    "instruction_en": "Questions 36-40: Rearrange the words/phrases to make sentences.",
+    "items": [
+     {
+      "n": "例",
+      "zh": "小船　上　一　河　条　有",
+      "answer": "河上有一条小船。",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        17
+       ]
+      }
+     },
+     {
+      "n": 36,
+      "zh": "下　课　了　买书　就　去",
+      "answer": "下了课就去买书。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        148
+       ]
+      }
+     },
+     {
+      "n": 37,
+      "zh": "快　去　看看　下楼　吧",
+      "answer": "快下楼去看看吧。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        148
+       ]
+      }
+     },
+     {
+      "n": 38,
+      "zh": "飞机　上　就　我弟弟　睡觉　了",
+      "answer": "我弟弟上了飞机就睡觉。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        148
+       ]
+      }
+     },
+     {
+      "n": 39,
+      "zh": "我　写完　了　出去玩儿　作业　就",
+      "answer": "我写完了作业就出去玩儿。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        148
+       ]
+      }
+     },
+     {
+      "n": 40,
+      "zh": "教室　请　进　来　快",
+      "answer": "请快进教室来。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        148
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "三、书写 第二部分",
+    "type_zh": "书写 第二部分",
+    "instruction_zh": "第41–45题：看拼音，写汉字",
+    "instruction_en": "Questions 41-45: Write the characters based on their pinyin.",
+    "items": [
+     {
+      "n": "例",
+      "zh": "没（　）系，别难过，高兴点儿。",
+      "hint_zh": "guān",
+      "answer": "关",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        17
+       ]
+      }
+     },
+     {
+      "n": 41,
+      "zh": "这是你的（　）公室吗？",
+      "hint_zh": "bàn",
+      "answer": "办",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        148
+       ]
+      }
+     },
+     {
+      "n": 42,
+      "zh": "这次考试题都很（　），我不会做。",
+      "hint_zh": "nán",
+      "answer": "难",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        148
+       ]
+      }
+     },
+     {
+      "n": 43,
+      "zh": "我的房间里有两（　）椅子。",
+      "hint_zh": "bǎ",
+      "answer": "把",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        148
+       ]
+      }
+     },
+     {
+      "n": 44,
+      "zh": "我觉得说汉语比写汉字（　）易。",
+      "hint_zh": "róng",
+      "answer": "容",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        148
+       ]
+      }
+     },
+     {
+      "n": 45,
+      "zh": "看，那儿不是有一（　）出租车吗？我们快过去。",
+      "hint_zh": "liàng",
+      "answer": "辆",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        148
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "三、书写 第三部分",
+    "type_zh": "书写 第三部分",
+    "instruction_zh": "第46–50题：辨认汉字，选择正确的汉字填空",
+    "instruction_en": "Questions 46-50: Distinguish the characters and fill in the blanks.",
+    "items": [
+     {
+      "n": "例",
+      "zh": "我不知道________个地方在________儿。",
+      "hint_zh": "（那、哪）",
+      "answer": "那、哪",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        18
+       ]
+      }
+     },
+     {
+      "n": 46,
+      "zh": "听说下个星期的考试很________，你________备好了吗？",
+      "hint_zh": "（准、难）",
+      "answer": "难、准",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        148
+       ]
+      }
+     },
+     {
+      "n": 47,
+      "zh": "你知道我今天________什么来你的________公室吗？",
+      "hint_zh": "（办、为）",
+      "answer": "为、办",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        148
+       ]
+      }
+     },
+     {
+      "n": 48,
+      "zh": "其________，我没去________东西，我去医院了。",
+      "hint_zh": "（实、买）",
+      "answer": "实、买",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        148
+       ]
+      }
+     },
+     {
+      "n": 49,
+      "zh": "帮你买票很________易，你别________气。",
+      "hint_zh": "（容、客）",
+      "answer": "容、客",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        148
+       ]
+      }
+     },
+     {
+      "n": 50,
+      "zh": "我们坐________共汽车去吧，怎________样？",
+      "hint_zh": "（么、公）",
+      "answer": "公、么",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        148
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "四、复习",
+    "type_zh": "复习",
+    "instruction_zh": "第1–2题：根据课文内容填空",
+    "instruction_en": "Questions 1-2: Fill in the blanks based on the texts in the textbook.",
+    "items": [
+     {
+      "n": 1,
+      "zh": "上山的时候，小丽没觉得很累，但是下山的时候，她________也疼，________也疼。小刚说，这叫“上山________下山________”。那边树多，小刚和小丽打算________休息一下。",
+      "answer": "腿、脚、容易、难、过去",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        148
+       ]
+      }
+     },
+     {
+      "n": 2,
+      "zh": "雨下得很大，小丽没带________，她打算出去叫________出租车。小刚让小丽等一下，他________去________了伞就________。",
+      "answer": "伞、辆、上楼、拿、下来",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        148
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ "audio": {
+  "textbook": [
+   "hsk3-textbook-0201.mp3",
+   "hsk3-textbook-0202.mp3",
+   "hsk3-textbook-0203.mp3",
+   "hsk3-textbook-0204.mp3",
+   "hsk3-textbook-0205.mp3"
+  ],
+  "workbook": [
+   "hsk3-workbook-02-part1.mp3",
+   "hsk3-workbook-02-part2.mp3",
+   "hsk3-workbook-02-part3.mp3",
+   "hsk3-workbook-02-part4.mp3"
+  ]
+ },
+ "unclear": [
+  "Багшийн ном PDF х.17 (语言点1 导入): «教师从教室门外进来／教师：老师现在在做什么？／学生：老师进来了。» блок дараалан ХОЁР удаа хэвлэгдсэн — номд байгаагаар хоёуланг нь teacher.steps-д оруулсан.",
+  "Сурах бичиг PDF х.31 注释3 жишээ (2): «A：你看我这么胖，怎么办呢？» — 课文4-т «你看，我这么胖，怎么办呢？» (看-ийн ард таслал) гэж байгаа; номд байгаагаар нь үлдээсэн.",
+  "Сурах бичиг PDF х.31 注释3-ын англи гарчиг «The Rhetoric Question “能……吗？”» (Rhetorical биш) — номд байгаагаар.",
+  "Сурах бичгийн 练一练 (3 дүрэм × 3), 练习2 选词填空 / 练习3 描述图片 / 练习4 回答问题 — хариулт сурах бичиг, багшийн номд хэвлэгдээгүй тул answer талбаргүй. Багшийн номын 课文 асуулт-хариулт (teacher.text_questions) нь 练习4-ийн асуултаас өөр асуултууд.",
+  "Багшийн номын 汉字辨认练习 (准/难 · 办/为 · 实/买 · 容/客 · 么/公 — 组词) хоосон зайтай, хариулт хэвлэгдээгүй.",
+  "Дасгалын номын сонсгол нэг CD тэмдэгтэй (02) — аудиог hsk3-workbook-02-part1…4.mp3 болгож хэсэг тус бүрт хуваасныг section.audio-д оноосон.",
+  "Дасгалын ном 听力 第三/四部分 — номд зөвхөн сонголтууд хэвлэгдсэн; item.zh-д багшийн номын хавсралтын «问：» асуултыг оруулсан (transcript_zh-д бүтнээр).",
+  "Сурах бичгийн 拼音课文-ын гарчгийн пиньинь (Xià shān de lùshang / Zài dǎ diànhuà / Zài lóu ménkǒu sòng péngyou / Zài jiā) болон ярилцагчийн нэрийн пиньинь (Xiǎolì, Xiǎogāng, Zhōu tàitai, mìshū, Zhōu Míng) схемд талбаргүй тул lines.pinyin-д зөвхөн яриаг оруулсан.",
+  "Багшийн ном 语言点1-ийн схем зураг (地点名词/事物名词 сум) — текстээр товч дүрсэлсэн (teacher.steps «3 语言点（1）»)."
+ ],
+ "verified_pages": [
+  12,
+  13,
+  14,
+  15,
+  16,
+  17,
+  18,
+  19,
+  20,
+  21,
+  22,
+  27,
+  28,
+  29,
+  30,
+  31,
+  32,
+  33,
+  34,
+  35,
+  146,
+  147,
+  148
+ ],
+ "schema_version": 1
+}

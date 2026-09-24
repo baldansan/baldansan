@@ -1,0 +1,2091 @@
+{
+ "level": "hsk3",
+ "lesson": 1,
+ "book": "HSK3",
+ "title_zh": "周末你有什么打算",
+ "title_pinyin": "Zhōumò nǐ yǒu shénme dǎsuàn",
+ "title_en": "What’s your plan for the weekend",
+ "textbook": {
+  "ref": {
+   "book": "textbook",
+   "pages": [
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26
+   ]
+  },
+  "warmup": [
+   {
+    "instruction_zh": "给下面的词语选择对应的图片",
+    "instruction_en": "Match the pictures with the words.",
+    "items": [
+     "①北方 běifāng",
+     "②作业 zuòyè",
+     "③电脑游戏 diànnǎo yóuxì",
+     "④面包 miànbāo",
+     "⑤地图 dìtú",
+     "⑥周末 zhōumò"
+    ],
+    "pictures_desc_en": [
+     "A: a colored world map",
+     "B: a basket and assorted loaves of bread",
+     "C: 'I ♡ WEEKEND' written in the sand on a beach",
+     "D: a video game controller on a keyboard",
+     "E: a schoolboy writing in a notebook",
+     "F: a compass needle pointing to 'North'"
+    ]
+   },
+   {
+    "instruction_zh": "用一个词说明下面的图片内容",
+    "instruction_en": "Match the pictures with the verbs.",
+    "items": [
+     "A. 复习 fùxí",
+     "B. 着急 zháojí",
+     "C. 搬 bān",
+     "D. 打算 dǎsuàn"
+    ],
+    "pictures_desc_en": [
+     "①: a man carrying/moving a sofa, cardboard boxes nearby",
+     "②: a young woman reading an open book",
+     "③: a hand writing a numbered list 1-5 under the heading 'Plan'",
+     "④: a man looking at his wristwatch with a worried expression"
+    ]
+   }
+  ],
+  "texts": [
+   {
+    "n": 1,
+    "title_zh": "谈周末的打算",
+    "title_en": "Talking about the plan for the weekend",
+    "kind": "dialogue",
+    "lines": [
+     {
+      "speaker": "小丽",
+      "zh": "周末你有什么打算？",
+      "pinyin": "Zhōumò nǐ yǒu shénme dǎsuàn?"
+     },
+     {
+      "speaker": "小刚",
+      "zh": "我早就想好了，请你吃饭、看电影、喝咖啡。",
+      "pinyin": "Wǒ zǎo jiù xiǎnghǎo le, qǐng nǐ chī fàn, kàn diànyǐng, hē kāfēi."
+     },
+     {
+      "speaker": "小丽",
+      "zh": "请我？",
+      "pinyin": "Qǐng wǒ?"
+     },
+     {
+      "speaker": "小刚",
+      "zh": "是啊，我已经找好饭馆了，电影票也买好了。",
+      "pinyin": "Shì a, wǒ yǐjīng zhǎohǎo fànguǎnr le, diànyǐngpiào yě mǎihǎo le."
+     },
+     {
+      "speaker": "小丽",
+      "zh": "我还没想好要不要跟你去呢。",
+      "pinyin": "Wǒ hái méi xiǎnghǎo yào bu yào gēn nǐ qù ne."
+     }
+    ],
+    "audio": "hsk3-textbook-0101.mp3",
+    "new_words": [
+     {
+      "n": 1,
+      "zh": "周末",
+      "pinyin": "zhōumò",
+      "pos": "n.",
+      "en": "weekend",
+      "text": 1
+     },
+     {
+      "n": 2,
+      "zh": "打算",
+      "pinyin": "dǎsuàn",
+      "pos": "n./v.",
+      "en": "plan; to intend",
+      "text": 1
+     },
+     {
+      "n": 3,
+      "zh": "啊",
+      "pinyin": "a",
+      "pos": "part.",
+      "en": "used at the end of a sentence to indicate confirmation or defense",
+      "text": 1
+     },
+     {
+      "n": 4,
+      "zh": "跟",
+      "pinyin": "gēn",
+      "pos": "prep.",
+      "en": "with",
+      "text": 1
+     }
+    ],
+    "proper_nouns": [
+     {
+      "zh": "小丽",
+      "pinyin": "Xiǎolì",
+      "en": "Xiaoli, name of a person"
+     },
+     {
+      "zh": "小刚",
+      "pinyin": "Xiǎogāng",
+      "en": "Xiaogang, name of a person"
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "title_zh": "在家",
+    "title_en": "At home",
+    "kind": "dialogue",
+    "lines": [
+     {
+      "speaker": "妈妈",
+      "zh": "你一直玩儿电脑游戏，作业写完了吗？",
+      "pinyin": "Nǐ yìzhí wánr diànnǎo yóuxì, zuòyè xiěwán le ma?"
+     },
+     {
+      "speaker": "儿子",
+      "zh": "都写完了。",
+      "pinyin": "Dōu xiěwán le."
+     },
+     {
+      "speaker": "妈妈",
+      "zh": "明天不是有考试吗？你怎么一点儿也不着急？",
+      "pinyin": "Míngtiān bú shì yǒu kǎoshì ma? Nǐ zěnme yìdiǎnr yě bù zháojí?"
+     },
+     {
+      "speaker": "儿子",
+      "zh": "我早就复习好了。",
+      "pinyin": "Wǒ zǎo jiù fùxí hǎo le."
+     },
+     {
+      "speaker": "妈妈",
+      "zh": "那也不能一直玩儿啊。",
+      "pinyin": "Nà yě bù néng yìzhí wánr a."
+     }
+    ],
+    "audio": "hsk3-textbook-0102.mp3",
+    "new_words": [
+     {
+      "n": 5,
+      "zh": "一直",
+      "pinyin": "yìzhí",
+      "pos": "adv.",
+      "en": "all the time",
+      "text": 2
+     },
+     {
+      "n": 6,
+      "zh": "游戏",
+      "pinyin": "yóuxì",
+      "pos": "n.",
+      "en": "game",
+      "text": 2
+     },
+     {
+      "n": 7,
+      "zh": "作业",
+      "pinyin": "zuòyè",
+      "pos": "n.",
+      "en": "homework",
+      "text": 2
+     },
+     {
+      "n": 8,
+      "zh": "着急",
+      "pinyin": "zháojí",
+      "pos": "adj.",
+      "en": "worried, anxious",
+      "text": 2
+     },
+     {
+      "n": 9,
+      "zh": "复习",
+      "pinyin": "fùxí",
+      "pos": "v.",
+      "en": "to review",
+      "text": 2
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "title_zh": "聊旅游计划",
+    "title_en": "Talking about the travel plan",
+    "kind": "dialogue",
+    "lines": [
+     {
+      "speaker": "小丽",
+      "zh": "下个月我去旅游，你能跟我一起去吗？",
+      "pinyin": "Xià ge yuè wǒ qù lǚyóu, nǐ néng gēn wǒ yìqǐ qù ma?"
+     },
+     {
+      "speaker": "小刚",
+      "zh": "我还没想好呢。你觉得哪儿最好玩儿？",
+      "pinyin": "Wǒ hái méi xiǎnghǎo ne. Nǐ juéde nǎr zuì hǎowánr?"
+     },
+     {
+      "speaker": "小丽",
+      "zh": "南方啊，我们去年就是这个时候去的。",
+      "pinyin": "Nánfāng a, wǒmen qùnián jiù shì zhège shíhou qù de."
+     },
+     {
+      "speaker": "小刚",
+      "zh": "南方太热了，北方好一些，不冷也不热。",
+      "pinyin": "Nánfāng tài rè le, běifāng hǎo yìxiē, bù lěng yě bú rè."
+     }
+    ],
+    "audio": "hsk3-textbook-0103.mp3",
+    "new_words": [
+     {
+      "n": 10,
+      "zh": "南（方）",
+      "pinyin": "nán (fāng)",
+      "pos": "n.",
+      "en": "south, southern part",
+      "text": 3
+     },
+     {
+      "n": 11,
+      "zh": "北方",
+      "pinyin": "běifāng",
+      "pos": "n.",
+      "en": "north, northern part",
+      "text": 3
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "title_zh": "准备去旅游",
+    "title_en": "Preparing for their trip",
+    "kind": "dialogue",
+    "lines": [
+     {
+      "speaker": "小刚",
+      "zh": "水果、面包、茶都准备好了，我们还带什么？",
+      "pinyin": "Shuǐguǒ, miànbāo, chá dōu zhǔnbèi hǎo le, wǒmen hái dài shénme?"
+     },
+     {
+      "speaker": "小丽",
+      "zh": "手机、电脑、地图，一个也不能少。",
+      "pinyin": "Shǒujī, diànnǎo, dìtú, yí ge yě bù néng shǎo."
+     },
+     {
+      "speaker": "小刚",
+      "zh": "这些我昨天下午就准备好了。",
+      "pinyin": "Zhèxiē wǒ zuótiān xiàwǔ jiù zhǔnbèi hǎo le."
+     },
+     {
+      "speaker": "小丽",
+      "zh": "再多带几件衣服吧。",
+      "pinyin": "Zài duō dài jǐ jiàn yīfu ba."
+     },
+     {
+      "speaker": "小刚",
+      "zh": "我们是去旅游，不是搬家，还是少带一些吧。",
+      "pinyin": "Wǒmen shì qù lǚyóu, bú shì bān jiā, háishi shǎo dài yìxiē ba."
+     }
+    ],
+    "audio": "hsk3-textbook-0104.mp3",
+    "new_words": [
+     {
+      "n": 12,
+      "zh": "面包",
+      "pinyin": "miànbāo",
+      "pos": "n.",
+      "en": "bread",
+      "text": 4
+     },
+     {
+      "n": 13,
+      "zh": "带",
+      "pinyin": "dài",
+      "pos": "v.",
+      "en": "to take along, to bring",
+      "text": 4
+     },
+     {
+      "n": 14,
+      "zh": "地图",
+      "pinyin": "dìtú",
+      "pos": "n.",
+      "en": "map",
+      "text": 4
+     },
+     {
+      "n": 15,
+      "zh": "搬",
+      "pinyin": "bān",
+      "pos": "v.",
+      "en": "to move, to carry",
+      "text": 4
+     }
+    ]
+   }
+  ],
+  "grammar": [
+   {
+    "n": 1,
+    "title_zh": "结果补语“好”",
+    "title_en": "The Complement of Result “好”",
+    "explanation_zh": "结果补语“好”用在动词的后边，如“吃好”“准备好”，表示动作完成，并让人满意。“我吃完了”只表示动作完成；“我吃好了”表示不但“吃完了”，而且“吃得很满意”。例如：",
+    "explanation_en": "The complement of result “好” follows a verb as in “吃好” and “准备好” to indicate that the action is satisfactorily completed. Compared with “我吃完了 (I’ve finished eating)”, which only indicates the completion of the action, “我吃好了” means both “I’ve finished eating” and “I’ve enjoyed the meal”. For example:",
+    "examples": [
+     {
+      "n": 1,
+      "zh": "今晚的电影小刚已经买好票了。"
+     },
+     {
+      "n": 2,
+      "zh": "饭还没做好，请你等一会儿。"
+     },
+     {
+      "n": 3,
+      "zh": "去旅游的东西准备好了吗？"
+     },
+     {
+      "n": 4,
+      "zh": "我还没想好要不要跟你去呢。"
+     }
+    ],
+    "practice_instruction_zh": "完成句子 Complete the sentences.",
+    "practice": [
+     {
+      "n": 1,
+      "zh": "我不能跟你出去玩儿，明天的汉语课我还没________。"
+     },
+     {
+      "n": 2,
+      "zh": "我们打算去旅行，我已经________火车票了。"
+     },
+     {
+      "n": 3,
+      "zh": "快________衣服，我们准备出门了。"
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "title_zh": "“一……也/都＋不/没……”表示否定",
+    "title_en": "The Negative Structure “一……也/都＋不/没……”",
+    "explanation_zh": "用“一＋Measure Word＋Noun＋也/都＋不/没＋V”表示完全否定。例如：\n有时候，上面的“一＋Measure Word”还可以用“一点儿”来表示。例如：\n当谓语是形容词时，通常用“一点儿也/都＋不＋Adj”表示完全否定。例如：",
+    "explanation_en": "“一 + Measure Word + Noun + 也/都 + 不/没 + V (not...at all)” indicates complete negation. For example:\nSometimes the “一 + Measure Word” used in the structure above is “一点儿”. For example:\nWhen the predicate is an adjective, the structure “一点儿也/都 + 不 + Adj” is used to indicate complete negation. For example:",
+    "structure_rows": [
+     "一 | Measure Word | Noun | 也/都 | 不/没 | V",
+     "一点儿 | 也/都 | 不 | Adj"
+    ],
+    "examples": [
+     {
+      "n": 1,
+      "zh": "我一个苹果也不想吃。"
+     },
+     {
+      "n": 2,
+      "zh": "昨天他一件衣服都没买。"
+     },
+     {
+      "n": 3,
+      "zh": "小丽一杯茶也没喝。"
+     },
+     {
+      "n": 4,
+      "zh": "手机、电脑、地图，一个也不能少（带）。",
+      "note_zh": "带"
+     },
+     {
+      "n": 1,
+      "zh": "我一点儿东西也不想吃。"
+     },
+     {
+      "n": 2,
+      "zh": "这个星期我很忙，一点儿时间也没有。"
+     },
+     {
+      "n": 3,
+      "zh": "今天早上我一点儿咖啡都没喝。"
+     },
+     {
+      "n": 4,
+      "zh": "我一点儿钱都没带，所以不能买衣服。"
+     },
+     {
+      "n": 1,
+      "zh": "他一点儿也不累。"
+     },
+     {
+      "n": 2,
+      "zh": "南方一点儿都不冷。"
+     },
+     {
+      "n": 3,
+      "zh": "那个地方一点儿也不远。"
+     },
+     {
+      "n": 4,
+      "zh": "你怎么一点儿也不着急？"
+     }
+    ],
+    "practice_instruction_zh": "用提示词完成句子 Complete the sentences with the words given.",
+    "practice": [
+     {
+      "n": 1,
+      "zh": "这些汉字太难了，我________。",
+      "hint_zh": "（不认识）"
+     },
+     {
+      "n": 2,
+      "zh": "这件衣服真便宜，________。",
+      "hint_zh": "（不贵）"
+     },
+     {
+      "n": 3,
+      "zh": "我没带钱，________。",
+      "hint_zh": "（没买）"
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "title_zh": "连词“那”",
+    "title_en": "The Conjunction “那”",
+    "explanation_zh": "“那”放在句首，表示依据上文的意思得出的结果或做出的判断。例如：",
+    "explanation_en": "Used at the beginning of a sentence, “那” indicates the result obtained or judgment made based on what has been said previously. For example:",
+    "examples": [
+     {
+      "n": 1,
+      "zh": "A：我不想去看电影。\nB：那我也不去了。"
+     },
+     {
+      "n": 2,
+      "zh": "A：（明天的考试）我早就复习好了。\nB：那也不能一直玩儿啊。",
+      "note_zh": "明天的考试"
+     }
+    ],
+    "practice_instruction_zh": "完成对话 Complete the dialogues.",
+    "practice": [
+     {
+      "n": 1,
+      "zh": "A：周末我不想去商店买东西。\nB：________。"
+     },
+     {
+      "n": 2,
+      "zh": "A：外边下大雨了，不能去踢球了。\nB：________。"
+     },
+     {
+      "n": 3,
+      "zh": "A：对不起，红色的手机已经卖完了。\nB：________。"
+     }
+    ]
+   }
+  ],
+  "exercises": [
+   {
+    "n": 1,
+    "type_zh": "朗读",
+    "instruction_zh": "朗读下列短语和句子",
+    "instruction_en": "Read the following phrases and sentences aloud.",
+    "audio": "hsk3-textbook-0105.mp3",
+    "items": [
+     {
+      "n": 1,
+      "zh": "打算：打算去唱歌/打算做什么/没有打算/周末你有什么打算？"
+     },
+     {
+      "n": 2,
+      "zh": "一直：一直写作业/一直生病/一直不高兴/你怎么一直玩儿？"
+     },
+     {
+      "n": 3,
+      "zh": "着急：很着急/不着急/别着急/你怎么一点儿也不着急啊？"
+     },
+     {
+      "n": 4,
+      "zh": "跟：跟小狗玩儿/跟朋友去买东西/别跟他旅行/你能跟我一起去吗？"
+     },
+     {
+      "n": 5,
+      "zh": "带：带地图/带饭/没带作业/还是少带一些吧。"
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "type_zh": "选词填空",
+    "instruction_zh": "选择恰当的词语填空",
+    "instruction_en": "Choose the proper words to fill in the blanks.",
+    "word_bank": [
+     [
+      "周末",
+      "带",
+      "游戏",
+      "跟",
+      "作业"
+     ],
+     [
+      "南方",
+      "搬",
+      "面包",
+      "地图",
+      "打算"
+     ]
+    ],
+    "items": [
+     {
+      "n": 1,
+      "zh": "你写完________了吗？"
+     },
+     {
+      "n": 2,
+      "zh": "上个________我们去朋友家玩儿了。"
+     },
+     {
+      "n": 3,
+      "zh": "别玩儿________了，快去睡觉。"
+     },
+     {
+      "n": 4,
+      "zh": "他说好请我吃饭，但是没________钱。"
+     },
+     {
+      "n": 5,
+      "zh": "明天我要上课，不能________你们一起去玩儿。"
+     },
+     {
+      "n": 6,
+      "zh": "A：你是什么时候________家的？我怎么不知道？\nB：上个月。"
+     },
+     {
+      "n": 7,
+      "zh": "A：你是北方人吗？\nB：不是，我是________人。"
+     },
+     {
+      "n": 8,
+      "zh": "A：考完试你有什么________？\nB：我还没想好。"
+     },
+     {
+      "n": 9,
+      "zh": "A：你好，我要买一张________。\nB：三块钱。"
+     },
+     {
+      "n": 10,
+      "zh": "A：累了吧？吃点儿________吧。\nB：好，你也吃点儿吧。"
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "type_zh": "描述图片",
+    "instruction_zh": "用本课新学的语言点和词语描述图片",
+    "instruction_en": "Describe the pictures using the newly-learned language points and words.",
+    "items": [
+     {
+      "n": 1,
+      "zh": "A：衣服都________了吗？\nB：我一________也________。\nA：你什么时候洗？\nB：我________今天下午洗。",
+      "picture_desc_en": "A laundry basket piled high with colorful clothes."
+     },
+     {
+      "n": 2,
+      "zh": "A：小狗怎么没吃饭？\nB：我的狗生病了，一________也________。\nA：那________你的狗去医院吧。\nB：好吧。",
+      "picture_desc_en": "A bulldog lying with its head down beside a full red bowl of dog food."
+     },
+     {
+      "n": 3,
+      "zh": "A：我们休息一下再________吧。\nB：没关系，我一________。\nA：那________。\nB：好。",
+      "picture_desc_en": "Two men lifting things out of / into the open trunk of a car."
+     },
+     {
+      "n": 4,
+      "zh": "A：你什么时候回家？\nB：我还没________飞机票呢，你知道在哪儿买票吗？\nA：知道，我________你一起去吧。\nB：太好了，谢谢。",
+      "picture_desc_en": "An air ticket / boarding pass with an airplane icon."
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "type_zh": "回答问题",
+    "instruction_zh": "根据课文回答问题",
+    "instruction_en": "Answer the questions according to the texts.",
+    "items": [
+     {
+      "n": 1,
+      "zh": "周末小刚打算做什么？"
+     },
+     {
+      "n": 2,
+      "zh": "小丽要不要跟小刚一起去？"
+     },
+     {
+      "n": 3,
+      "zh": "儿子在做什么？他准备好考试了吗？"
+     },
+     {
+      "n": 4,
+      "zh": "小丽什么时候去旅游？"
+     },
+     {
+      "n": 5,
+      "zh": "小刚觉得哪儿最好玩儿？为什么？"
+     },
+     {
+      "n": 6,
+      "zh": "小刚和小丽带了什么东西？"
+     }
+    ]
+   }
+  ],
+  "characters": {
+   "knowledge_title_zh": "指事字",
+   "knowledge_zh": "古代中国人创造汉字的时候，有一些抽象的事物不能用具体的形象画出来，所以就用抽象的符号表示。例如：\n\n旧字新词：读读下面的词语，想想组成的新词是什么意思。",
+   "knowledge_en": "Self-Explanatory Characters. When people in ancient times were creating Chinese characters, they used abstract signs to signify the abstract things which could not be expressed by specific images. For example:\n一 — The Numeral “one”.\n二 — The Numeral “two”.\n三 — The Numeral “three”.\n上 — Above the horizon.\n下 — Below the horizon.\n本 — A dot is added at the lower part of “木” to indicate the root of a tree.\n末 — A dot is added at the upper part of “木” to indicate the tip of a tree.\n\nWord Game: Read the following words and guess the meanings of the newly-formed ones.",
+   "characters": [
+    {
+     "zh": "一",
+     "note_zh": "数字“一”。"
+    },
+    {
+     "zh": "二",
+     "note_zh": "数字“二”。"
+    },
+    {
+     "zh": "三",
+     "note_zh": "数字“三”。"
+    },
+    {
+     "zh": "上",
+     "note_zh": "在地平线上边。"
+    },
+    {
+     "zh": "下",
+     "note_zh": "在地平线下边。"
+    },
+    {
+     "zh": "本",
+     "note_zh": "在“木”字下边加一点，意思是树根。"
+    },
+    {
+     "zh": "末",
+     "note_zh": "在“木”字上边加一点，意思是树梢。"
+    }
+   ],
+   "word_game": [
+    {
+     "parts": [
+      "旅游",
+      "客人"
+     ],
+     "result": "游客"
+    },
+    {
+     "parts": [
+      "外边",
+      "地方"
+     ],
+     "result": "外地"
+    },
+    {
+     "parts": [
+      "北方",
+      "门"
+     ],
+     "result": "北门"
+    }
+   ],
+   "confusable_pairs": [
+    [
+     "很",
+     "跟"
+    ],
+    [
+     "同",
+     "周"
+    ],
+    [
+     "常",
+     "带"
+    ],
+    [
+     "真",
+     "直"
+    ],
+    [
+     "作",
+     "昨"
+    ]
+   ]
+  },
+  "application": [
+   {
+    "title_zh": "双人活动",
+    "instruction_zh": "两人一组对话，用“一……也/都＋不/没……”互相反驳。例如：",
+    "instruction_en": "Pair Work. Work in pairs to make dialogues, contradicting each other using “一……也/都 + 不/没……”. For example:",
+    "example_zh": [
+     "A：我觉得今天很冷。",
+     "B：我觉得一点儿也不冷。我想吃一个苹果。",
+     "A：我一个苹果也不想吃。",
+     "提示词：买衣服　爬山　上网　着急　远　忙"
+    ]
+   },
+   {
+    "title_zh": "小组活动",
+    "instruction_zh": "3~4人一组，讨论打算去哪儿旅游，怎么去，旅游以前要准备什么。每组请一位同学记录，并向全班报告。",
+    "instruction_en": "Group Work. Work in groups of 3-4. Discuss where you are planning to go traveling, how you will go, and what should be prepared before the trip. Ask one member to take notes and report the results to the whole class.",
+    "example_zh": [
+     "表头：打算去哪儿旅游 | 怎么去 | 旅游以前要准备什么",
+     "1 | 打算去北京旅游 | 坐飞机 | 买好飞机票、找好宾馆"
+    ]
+   }
+  ],
+  "saying": {
+   "zh": "不到长城非好汉",
+   "pinyin": "Bú dào Chángchéng fēi hǎohàn",
+   "en": "He who has never been to the Great Wall is not a true man",
+   "explanation_zh": "“不到长城非好汉”，这句话里“非”的意思是“不是”，“好汉”的意思是“很厉害的人”“英雄”。这句话的意思是没有去过长城的人就不是英雄，常常用来比喻一种积极的精神，遇到困难，要努力想办法克服，解决了问题，那就是“好汉”。",
+   "explanation_en": "In the saying “不到长城非好汉”, “非” means “not”, and “好汉” means “awesome person” or “hero”. The saying means that a person who has never been to the Great Wall is not a hero. As a metaphor for positive spirit, it defines a hero as one who tries hard and works out the problems he faces."
+  }
+ },
+ "teacher": {
+  "ref": {
+   "book": "teacher",
+   "pages": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+   ]
+  },
+  "objectives_zh": [
+   "重点词语：学生能够熟练掌握：“打算、跟、一直、着急、带、搬”的词义和用法",
+   "语言点：学生能够了解并掌握：（1）结果补语“好”（2）“一……也/都＋不/没……”表示否定（3）连词“那”表示顺接",
+   "汉字：学生能够：（1）了解指事字的造字方法（2）根据已学生词猜测出3个旧字新词“游客、外地、北门”的意思",
+   "功能：学生能够：（1）用“好”表达令人满意的结果（2）强调否定的语气"
+  ],
+  "steps": [
+   {
+    "title_zh": "二、教学步骤 · 复习旧课",
+    "body_zh": "（本课无）"
+   },
+   {
+    "title_zh": "学习新课 · 1 热身",
+    "body_zh": "学生两人一组，合作完成热身1和2；教师出示热身的图片，让学生根据图片说出词语，核对答案；最后全体学生齐读热身环节所有词语，要求语音标准，声调准确。\n答案：1.①F　②E　③D　④B　⑤A　⑥C\n2.①C　②A　③D　④B"
+   },
+   {
+    "title_zh": "2 生词 · （1）生词快速认读及正音",
+    "body_zh": "周末、打算、啊、跟、一直、游戏、作业、着急、复习、南方、北方、面包、带、地图、搬、小丽、小刚\n• 教师先带领学生快速认读一遍生词；\n• 取消拼音，带领学生再次认读；\n• 请单个学生独自认读2-3个生词；\n• 最后全班一起快速认读所有的生词。"
+   },
+   {
+    "title_zh": "2 生词 · （2）生词讲解方式",
+    "body_zh": "• 直观法（如图片、照片、实物等）展示：游戏、作业、面包、地图\n• 利用已知信息带出新词：星期六、星期日—周末、回家再看看今天学习了什么—复习\n• 肢体动作展示：带、搬\n• 对比法展示：南方—北方"
+   },
+   {
+    "title_zh": "2 生词 · （3）重点生词扩展及常用搭配",
+    "body_zh": "打算—打算看电影—打算在家看书—不打算工作—不打算搬家—周末的打算—今晚你有什么打算？\n跟—跟朋友去吃饭—跟我去商店—中午你跟谁一起吃饭？—我不跟你去。\n一直—一直学习—一直玩儿游戏—昨天下午我一直在家看书。\n着急—很着急—不着急—别着急—着急回家—让家人着急\n带—带书—带钱—坐飞机不能带什么东西？—多带—少带—多带一点儿钱—少带一点儿东西—没带—我没带手机。\n搬—搬桌子—搬椅子—搬家—我下个星期搬家。\n练习册相关练习：第1页/一/第一部分，第4页/二/第二部分"
+   },
+   {
+    "title_zh": "3 语言点 · （1）结果补语“好”",
+    "body_zh": "① 语言点解析\n结果补语“好”用在动词的后边，表示动作完成，并让人满意。“我吃完了”只表示动作完成；“我吃好了”表示不但“吃完了”，而且“吃得很满意”。否定形式是在动词前加“没（有）”。\n［动词＋好］\n［没（有）＋动词＋好］\n② 语言点导入\n教师可利用本课热身2图②导入语言点。\n教师：她在做什么？\n学生：她在写作业。\n教师：她写好了吗？\n教师引导学生说出：她还没写好/她写好了。\n③ 语言点操练\n教师带领学生一起回忆学过的可以与“好”搭配的动词，并据此操练语言点。如：写好、吃好、做好、准备好、复习好、买好等。\n教师：昨天你到家的时候，妈妈做好饭了吗？\n学生：昨天我到家的时候，妈妈做好饭了。\n其他目标句：我准备好明天的考试了。\n昨天学的字我还没复习好。\n我已经买好早饭了。\n④ 语言点扩展练习\n教师根据实际情况提问，请学生回答。\n吃完饭，你会说什么？\n周末你要做什么？想好了吗？\n下个月，我想去北京，我要买什么？准备什么？"
+   },
+   {
+    "title_zh": "3 语言点 · （2）“一……也/都＋不/没……”表示否定",
+    "body_zh": "① 语言点解析\n［一＋量词＋名词＋也/都＋不/没＋动词］\n这个结构表示完全否定。有时候，“一＋量词”还可以用“一点儿”来表示。当谓语是形容词时，通常用“一点儿也/都＋不＋形容词”表示完全否定。\n② 语言点导入\n教师可就地取材，利用周围环境导入。\n教师请学生看门外：\n教师：外边有人吗？\n学生：外边没有人。\n教师引导学生说出：外边一个人也没有。\n教师让学生看装满水的水杯：\n教师：老师喝水了吗？\n学生：老师没喝水。\n教师引导学生说出：老师一点儿水都没喝。\n教师请学生看一级教材：\n教师：这本书难吗？\n学生：这本书一点儿也不难。\n③ 语言点操练\n教师可利用本课热身1的图片B、D，热身2的图片③进行操练。\n目标句：他一个面包也没吃。\n他一点儿作业也没写。/他一个字也没写。\n他很忙，一点儿时间也没有。\n④ 语言点扩展练习\n教师可根据实际情况提问，请学生回答。\n今天热不热？冷不冷？\n昨天的作业多吗？\n你去过中国吗？"
+   },
+   {
+    "title_zh": "3 语言点 · （3）连词“那”",
+    "body_zh": "① 语言点解析\n“那”放在句首，表示依据上文的意思得出的结果或做出的判断。\n② 语言点导入\n教师可给出情境，引导学生说出语言点。\n教师：周末老师不想看书，不想运动，还可以做什么？\n学生：还可以看电影。\n教师引导学生说出：那你看电影吧。\n教师：上课的时候，可以走吗？\n学生：不行。\n教师：今天的课我都会了，可以走吗？\n学生：那也不行。/那也不能走。\n③ 语言点操练\n教师给出前半句，学生完成后半句。\n我不想喝咖啡，________。\n我不喜欢在公司工作，________。\n④ 语言点扩展练习\n教师请学生扮演严厉的妈妈，教师提问，请学生回答。\n妈妈，今天的作业我都做完了，可以玩儿吗？\n我都复习好了，可以看电视吗？\n明天我不想去上课了，行吗？\n我头疼，不去学校了，行吗？"
+   },
+   {
+    "title_zh": "4 课文 · 课文1",
+    "body_zh": "（1）让学生听两遍录音并回答下列问题：\n周末男的（小刚）有什么打算？——他请小丽吃饭、看电影、喝咖啡。\n小刚准备好了吗？——准备好了。他找好饭馆了，也买好电影票了。\n女的（小丽）打算跟小刚一起去吗？——她还没想好要不要跟小刚一起去。\n（2）教师领读课文两遍，然后让学生分角色朗读课文。\n（3）模仿练习\n教师组织学生两人一组，根据提示模仿课文内容进行对话练习。\nA：……你有什么打算？\nB：我早就……了，请你……。\nA：请我？\nB：是啊，我已经……。\nA：我还没……。"
+   },
+   {
+    "title_zh": "4 课文 · 课文2",
+    "body_zh": "（1）让学生听两遍录音并回答下列问题：\n儿子在做什么？他写完作业了吗？——儿子一直在玩儿电脑游戏。他写完作业了。\n明天有什么事？儿子着急吗？——明天有考试，儿子一点儿也不着急。\n儿子为什么不着急？——因为他早就复习好了。\n妈妈让儿子玩儿电脑游戏吗？——妈妈不让他玩儿。\n（2）教师领读课文两遍，然后让学生分角色朗读课文，注意说话人的语气。\n（3）教师给出提示词，带领学生复述课文。\n提示词：一直、写完、考试、一点儿也不、好、那"
+   },
+   {
+    "title_zh": "4 课文 · 课文3",
+    "body_zh": "（1）让学生听两遍录音并回答下列问题：\n女的（小丽）下个月有什么打算？——下个月小丽要去旅游。\n男的（小刚）打算跟小丽一起去吗？——他还没想好呢。\n小丽觉得哪儿最好玩儿？她是什么时候去的？——她觉得南方最好玩儿。去年这个时候她去过。\n小刚觉得哪儿好玩儿？为什么？——他觉得北方好一些，不冷也不热，南方太热了。\n（2）教师领读课文两遍，然后让学生分角色朗读课文。\n（3）模仿练习\n教师组织学生两人一组，根据提示模仿课文内容进行对话练习。\nA：……我……，你……？\nB：我还没……呢。你觉得……？\nA：……。\nB：……太……了，……好一些，……。"
+   },
+   {
+    "title_zh": "4 课文 · 课文4",
+    "body_zh": "（1）让学生听两遍录音并回答下列问题：\n男的（小刚）准备了什么？——他准备好了水果、面包、茶。\n女的（小丽）还打算带什么？——她还要带手机、电脑、地图。\n这些东西小刚是什么时候准备的？——这些东西小刚昨天下午就准备好了。\n小刚为什么不让小丽再多带衣服？——因为他们是去旅游，不是搬家，要少带一些。\n（2）教师领读课文两遍，然后让学生分角色朗读课文，注意说话人的语气。\n（3）教师给出提示词，带领学生复述课文。\n提示词：准备好、带、一……也不……、多带、旅游、搬家、少带\n练习册相关练习：第7页/四"
+   },
+   {
+    "title_zh": "5 汉字 · 指事字",
+    "body_zh": "① 知识点解析：\n古代中国人创造汉字的时候，有一些抽象的事物不能用具体的形象画出来，所以就用抽象的符号表示。\n提示：教师可以逐一展示图片，请学生猜一猜图片的含义，表示什么。\n一、二、三：古代人计数的方法。\n上、下：横线代表地平线，上面一点表示上方，下面一点表示下方。\n本、末：“木”是树的意思，树下方有一横线，表示树根；树上方有一横线，表示树梢。\n② 汉字练习\n请学生用本课所学指事字组词。\n参考答案：\n一：一个、一年\n二：星期二、十二\n三：三本书、二十三\n上：上午、上课\n下：下边、下课\n本：一本书\n末：周末、月末"
+   },
+   {
+    "title_zh": "5 汉字 · 旧字新词",
+    "body_zh": "① 教师领读以前学过的词语和新词，让学生猜猜新词的意思。\n• 领读：旅游、客人、游客\n问学生：“游客”是什么意思？——旅游的人。\n• 领读：外边、地方、外地\n问学生：什么地方是“外地”？（请学生根据实际情况举例说明）\n• 领读：北方、门、北门\n问学生：“北门”是什么意思？——北边的门。\n扩展提问：还有什么门？——东门、西门、南门、北门。（根据实际情况选用）\n② 教师领读新词扩展，通过情景，理解新词的意思和用法：\n游客：游客很多/北京的游客/什么地方有很多游客？\n外地：去外地/在外地/你去过外地吗？\n北门：学校北门/书店北门/我们学校有北门吗？"
+   },
+   {
+    "title_zh": "5 汉字 · 汉字辨认练习",
+    "body_zh": "辨认下列汉字并组词。\n很：________、________　跟：________、________\n同：________、________　周：________、________\n常：________、________　带：________、________\n真：________、________　直：________、________\n作：________、________　昨：________、________\n练习册相关练习：第7页/三/第三部分"
+   },
+   {
+    "title_zh": "6 补充课堂活动——我来做，你来猜",
+    "body_zh": "A、B两个同学一组到教室前边完成，教师给A同学和其他同学出示词语卡片，B同学不能看。A同学要用动作表演出卡片上词语的内容，B同学根据A同学的表演猜出这个词语是什么，并用这个词语说一个句子。\n参考词语：搬、带、着急、玩儿游戏、写作业、吃面包"
+   },
+   {
+    "title_zh": "7 俗语",
+    "body_zh": "教师引导学生理解俗语的含义，注意这里的“长城”并不一定指长城，可以是一个地方，或者一个目标。\n扩展：请学生介绍他们国家类似的俗语（根据实际情况选用，后课同）。"
+   }
+  ],
+  "notes_zh": [
+   "注意：生词认读过程中，教师始终要注意纠正学生的错误发音，学生齐读时要注意纠正学生共性的发音错误，个别认读时要注意纠正学生的个别发音错误。（后课同）",
+   "注意：“那”一般用于口语。"
+  ],
+  "warmup_answers_zh": [
+   "1.①F　②E　③D　④B　⑤A　⑥C",
+   "2.①C　②A　③D　④B"
+  ],
+  "text_questions": [
+   {
+    "text": 1,
+    "q_zh": "周末男的（小刚）有什么打算？",
+    "a_zh": "他请小丽吃饭、看电影、喝咖啡。"
+   },
+   {
+    "text": 1,
+    "q_zh": "小刚准备好了吗？",
+    "a_zh": "准备好了。他找好饭馆了，也买好电影票了。"
+   },
+   {
+    "text": 1,
+    "q_zh": "女的（小丽）打算跟小刚一起去吗？",
+    "a_zh": "她还没想好要不要跟小刚一起去。"
+   },
+   {
+    "text": 2,
+    "q_zh": "儿子在做什么？他写完作业了吗？",
+    "a_zh": "儿子一直在玩儿电脑游戏。他写完作业了。"
+   },
+   {
+    "text": 2,
+    "q_zh": "明天有什么事？儿子着急吗？",
+    "a_zh": "明天有考试，儿子一点儿也不着急。"
+   },
+   {
+    "text": 2,
+    "q_zh": "儿子为什么不着急？",
+    "a_zh": "因为他早就复习好了。"
+   },
+   {
+    "text": 2,
+    "q_zh": "妈妈让儿子玩儿电脑游戏吗？",
+    "a_zh": "妈妈不让他玩儿。"
+   },
+   {
+    "text": 3,
+    "q_zh": "女的（小丽）下个月有什么打算？",
+    "a_zh": "下个月小丽要去旅游。"
+   },
+   {
+    "text": 3,
+    "q_zh": "男的（小刚）打算跟小丽一起去吗？",
+    "a_zh": "他还没想好呢。"
+   },
+   {
+    "text": 3,
+    "q_zh": "小丽觉得哪儿最好玩儿？她是什么时候去的？",
+    "a_zh": "她觉得南方最好玩儿。去年这个时候她去过。"
+   },
+   {
+    "text": 3,
+    "q_zh": "小刚觉得哪儿好玩儿？为什么？",
+    "a_zh": "他觉得北方好一些，不冷也不热，南方太热了。"
+   },
+   {
+    "text": 4,
+    "q_zh": "男的（小刚）准备了什么？",
+    "a_zh": "他准备好了水果、面包、茶。"
+   },
+   {
+    "text": 4,
+    "q_zh": "女的（小丽）还打算带什么？",
+    "a_zh": "她还要带手机、电脑、地图。"
+   },
+   {
+    "text": 4,
+    "q_zh": "这些东西小刚是什么时候准备的？",
+    "a_zh": "这些东西小刚昨天下午就准备好了。"
+   },
+   {
+    "text": 4,
+    "q_zh": "小刚为什么不让小丽再多带衣服？",
+    "a_zh": "因为他们是去旅游，不是搬家，要少带一些。"
+   }
+  ],
+  "summary_zh": "• 语言点：用“好”表示完成、满意的结果\n用“一……也/都＋不/没……”表示完全否定\n用“那”表示顺接\n• 汉　字：指事字\n旧字新词：游客、外地、北门"
+ },
+ "workbook": {
+  "ref": {
+   "book": "workbook",
+   "pages": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ]
+  },
+  "sections": [
+   {
+    "n": "一、听力 第一部分",
+    "type_zh": "听力 第一部分",
+    "instruction_zh": "第1-5题：听对话，选择与对话内容一致的图片",
+    "instruction_en": "Questions 1-5: Choose the right picture for each dialogue you hear.",
+    "audio": "hsk3-workbook-01-part1.mp3",
+    "items": [
+     {
+      "n": "例如",
+      "zh": "",
+      "options": {
+       "A": "[picture] a man and a woman packing cardboard boxes, moving house",
+       "B": "[picture] a man and a woman with a shopping cart choosing bread in a supermarket",
+       "C": "[picture] a hand on a car steering wheel; the dashboard screen shows a navigation map",
+       "D": "[picture] a woman in a suit talking on a telephone",
+       "E": "[picture] a smiling child in a chef's hat and apron holding a spoon",
+       "F": "[picture] an upset woman holding her head while a man talks to her on a sofa"
+      },
+      "transcript_zh": "男：喂，请问张经理在吗？\n女：他正在开会，您半个小时以后再打，好吗？",
+      "answer": "D",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        5
+       ]
+      }
+     },
+     {
+      "n": 1,
+      "zh": "",
+      "options": {
+       "A": "[picture] a man and a woman packing cardboard boxes, moving house",
+       "B": "[picture] a man and a woman with a shopping cart choosing bread in a supermarket",
+       "C": "[picture] a hand on a car steering wheel; the dashboard screen shows a navigation map",
+       "D": "[picture] a woman in a suit talking on a telephone",
+       "E": "[picture] a smiling child in a chef's hat and apron holding a spoon",
+       "F": "[picture] an upset woman holding her head while a man talks to her on a sofa"
+      },
+      "transcript_zh": "男：你怎么又不高兴了？\n女：你工作一直忙，一次电影都没跟我一起看过。",
+      "answer": "F",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        145
+       ]
+      }
+     },
+     {
+      "n": 2,
+      "zh": "",
+      "options": {
+       "A": "[picture] a man and a woman packing cardboard boxes, moving house",
+       "B": "[picture] a man and a woman with a shopping cart choosing bread in a supermarket",
+       "C": "[picture] a hand on a car steering wheel; the dashboard screen shows a navigation map",
+       "D": "[picture] a woman in a suit talking on a telephone",
+       "E": "[picture] a smiling child in a chef's hat and apron holding a spoon",
+       "F": "[picture] an upset woman holding her head while a man talks to her on a sofa"
+      },
+      "transcript_zh": "男：喂，您好，请问是搬家公司吗？我们要搬家。\n女：请问您打算什么时候搬？",
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        145
+       ]
+      }
+     },
+     {
+      "n": 3,
+      "zh": "",
+      "options": {
+       "A": "[picture] a man and a woman packing cardboard boxes, moving house",
+       "B": "[picture] a man and a woman with a shopping cart choosing bread in a supermarket",
+       "C": "[picture] a hand on a car steering wheel; the dashboard screen shows a navigation map",
+       "D": "[picture] a woman in a suit talking on a telephone",
+       "E": "[picture] a smiling child in a chef's hat and apron holding a spoon",
+       "F": "[picture] an upset woman holding her head while a man talks to her on a sofa"
+      },
+      "transcript_zh": "男：爸、妈，今天我给你们做晚饭，你们打算吃什么？\n女：真的啊？那我们吃点儿牛肉吧。",
+      "answer": "E",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        145
+       ]
+      }
+     },
+     {
+      "n": 4,
+      "zh": "",
+      "options": {
+       "A": "[picture] a man and a woman packing cardboard boxes, moving house",
+       "B": "[picture] a man and a woman with a shopping cart choosing bread in a supermarket",
+       "C": "[picture] a hand on a car steering wheel; the dashboard screen shows a navigation map",
+       "D": "[picture] a woman in a suit talking on a telephone",
+       "E": "[picture] a smiling child in a chef's hat and apron holding a spoon",
+       "F": "[picture] an upset woman holding her head while a man talks to her on a sofa"
+      },
+      "transcript_zh": "男：今天的面包真便宜。\n女：是啊，那我们多买几个吧！",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        145
+       ]
+      }
+     },
+     {
+      "n": 5,
+      "zh": "",
+      "options": {
+       "A": "[picture] a man and a woman packing cardboard boxes, moving house",
+       "B": "[picture] a man and a woman with a shopping cart choosing bread in a supermarket",
+       "C": "[picture] a hand on a car steering wheel; the dashboard screen shows a navigation map",
+       "D": "[picture] a woman in a suit talking on a telephone",
+       "E": "[picture] a smiling child in a chef's hat and apron holding a spoon",
+       "F": "[picture] an upset woman holding her head while a man talks to her on a sofa"
+      },
+      "transcript_zh": "女：这是哪儿啊？你开错了吧？我们怎么回家啊？\n男：别着急，车上有电子地图。",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        145
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "一、听力 第二部分",
+    "type_zh": "听力 第二部分",
+    "instruction_zh": "第6-10题：听句子，判断对错",
+    "instruction_en": "Questions 6-10: Decide whether the statements are true or false based on the sentences you hear.",
+    "audio": "hsk3-workbook-01-part2.mp3",
+    "items": [
+     {
+      "n": "例如",
+      "zh": "★他希望自己很健康。",
+      "transcript_zh": "为了让自己更健康，他每天都花一个小时去锻炼身体。",
+      "answer": "√",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        6
+       ]
+      }
+     },
+     {
+      "n": "例如",
+      "zh": "★那块儿手表不是他的。",
+      "transcript_zh": "今天我想早点儿回家。看了看手表，才5点。过了一会儿再看表，还是5点，我这才发现我的手表不走了。",
+      "answer": "×",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        6
+       ]
+      }
+     },
+     {
+      "n": 6,
+      "zh": "★他不喜欢这个电影。",
+      "transcript_zh": "这个电影一点儿意思也没有，我们看书吧。",
+      "answer": "√",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        145
+       ]
+      }
+     },
+     {
+      "n": 7,
+      "zh": "★他一点儿也不着急。",
+      "transcript_zh": "你怎么还没准备好？快点儿吧，没时间了。",
+      "answer": "×",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        145
+       ]
+      }
+     },
+     {
+      "n": 8,
+      "zh": "★他考试考得很好。",
+      "transcript_zh": "明天的考试我都复习好了，没问题。",
+      "answer": "×",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        145
+       ]
+      }
+     },
+     {
+      "n": 9,
+      "zh": "★他还没想好去哪儿旅游。",
+      "transcript_zh": "去南方旅游？去北方旅游？去哪儿旅游好呢？",
+      "answer": "√",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        145
+       ]
+      }
+     },
+     {
+      "n": 10,
+      "zh": "★家里还有很多鸡蛋。",
+      "transcript_zh": "家里一个鸡蛋也没有，明天早上吃什么啊？",
+      "answer": "×",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        145
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "一、听力 第三部分",
+    "type_zh": "听力 第三部分",
+    "instruction_zh": "第11-15题：听短对话，选择正确答案",
+    "instruction_en": "Questions 11-15: Listen to the short dialogues and choose the right answers.",
+    "audio": "hsk3-workbook-01-part3.mp3",
+    "items": [
+     {
+      "n": "例如",
+      "zh": "问：男的想让小王做什么？",
+      "options": {
+       "A": "开门",
+       "B": "拿东西",
+       "C": "去超市买东西"
+      },
+      "transcript_zh": "男：小王，帮我开一下门，好吗？谢谢！\n女：没问题。您去超市了？买了这么多东西。\n问：男的想让小王做什么？",
+      "answer": "A",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        6
+       ]
+      }
+     },
+     {
+      "n": 11,
+      "zh": "问：男的打算做什么？",
+      "options": {
+       "A": "送朋友",
+       "B": "送衣服",
+       "C": "去外边"
+      },
+      "transcript_zh": "男：你们等一下，我穿好衣服，送送你们。\n女：你太客气了，外边冷，别送了。\n问：男的打算做什么？",
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        145
+       ]
+      }
+     },
+     {
+      "n": 12,
+      "zh": "问：关于女的，可以知道什么？",
+      "options": {
+       "A": "去过一次南方",
+       "B": "上个月去了南方",
+       "C": "很想去南方"
+      },
+      "transcript_zh": "男：下个月我们去南方旅游，怎么样？\n女：南方我还一次都没去过呢，一直想去看看。\n问：关于女的，可以知道什么？",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        145
+       ]
+      }
+     },
+     {
+      "n": 13,
+      "zh": "问：女的请男的做什么？",
+      "options": {
+       "A": "买东西",
+       "B": "搬东西",
+       "C": "找儿子"
+      },
+      "transcript_zh": "女：大雨，你快来帮我一下。\n男：这么多东西，你怎么一个人搬？你儿子去哪儿了？\n问：女的请男的做什么？",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        145
+       ]
+      }
+     },
+     {
+      "n": 14,
+      "zh": "问：他们为什么没买票？",
+      "options": {
+       "A": "票卖完了",
+       "B": "没有好看的电影",
+       "C": "没带钱"
+      },
+      "transcript_zh": "男：别买票了，一个好看的电影都没有。\n女：那看看明天的吧。\n问：他们为什么没买票？",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        145
+       ]
+      }
+     },
+     {
+      "n": 15,
+      "zh": "问：男的是什么意思？",
+      "options": {
+       "A": "他带地图了",
+       "B": "他没带地图",
+       "C": "他知道这是哪儿"
+      },
+      "transcript_zh": "女：这是哪儿啊？我没带地图，我们问问那边的游客吧。\n男：不用，我就是地图，你问我吧。\n问：男的是什么意思？",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        145
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "一、听力 第四部分",
+    "type_zh": "听力 第四部分",
+    "instruction_zh": "第16-20题：听长对话，选择正确答案",
+    "instruction_en": "Questions 16-20: Listen to the dialogues and choose the right answers.",
+    "audio": "hsk3-workbook-01-part4.mp3",
+    "items": [
+     {
+      "n": "例如",
+      "zh": "问：男的在做什么？",
+      "options": {
+       "A": "洗澡",
+       "B": "吃饭",
+       "C": "看电视"
+      },
+      "transcript_zh": "女：晚饭做好了，准备吃饭了。\n男：等一会儿，比赛还有三分钟就结束了。\n女：快点儿吧，一起吃，菜冷了就不好吃了。\n男：你先吃，我马上就看完了。\n问：男的在做什么？",
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        7
+       ]
+      }
+     },
+     {
+      "n": 16,
+      "zh": "问：现在小周家在哪儿？",
+      "options": {
+       "A": "公司南边",
+       "B": "医院北边",
+       "C": "医院北门"
+      },
+      "transcript_zh": "女：小周，你们搬家了？\n男：是啊，从公司南边搬到了医院北边。\n女：是吗？那你们离白雪家很近吧。\n男：对，他们家搬到了医院南边。\n问：现在小周家在哪儿？",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        145
+       ]
+      }
+     },
+     {
+      "n": 17,
+      "zh": "问：女的的猫叫什么？",
+      "options": {
+       "A": "谢谢",
+       "B": "漂亮",
+       "C": "还没有名字"
+      },
+      "transcript_zh": "男：这是你的小猫吗？真漂亮！\n女：谢谢。\n男：它叫什么名字？\n女：我还没想好叫它什么呢。\n问：女的的猫叫什么？",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        145
+       ]
+      }
+     },
+     {
+      "n": 18,
+      "zh": "问：关于女的，可以知道什么？",
+      "options": {
+       "A": "没去过那个饭馆",
+       "B": "晚上没有时间",
+       "C": "要请男的吃饭"
+      },
+      "transcript_zh": "男：你帮了我这么多，谢谢你。\n女：不客气。\n男：晚上我请你吃饭，就去公司南边的那家饭馆。\n女：好啊，我还一次都没去过呢。\n问：关于女的，可以知道什么？",
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        145
+       ]
+      }
+     },
+     {
+      "n": 19,
+      "zh": "问：关于女的，可以知道什么？",
+      "options": {
+       "A": "考得不好",
+       "B": "没带手表",
+       "C": "还没复习"
+      },
+      "transcript_zh": "男：你怎么了？一天都不高兴。\n女：明天就要考试了，我一点儿都没复习呢。\n男：别着急，你学得好，考试没问题。\n女：希望这次能考好。\n问：关于女的，可以知道什么？",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        145
+       ]
+      }
+     },
+     {
+      "n": 20,
+      "zh": "问：关于男的，可以知道什么？",
+      "options": {
+       "A": "爱买书",
+       "B": "爱看书",
+       "C": "读了一本书"
+      },
+      "transcript_zh": "女：你桌子上有那么多书啊？\n男：对，都是我买的。\n女：你真爱读书。哪本最有意思？给我介绍一下吧。\n男：我爱买书，但是这些书我一本都没读过。\n问：关于男的，可以知道什么？",
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        145
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第一部分",
+    "type_zh": "阅读 第一部分",
+    "instruction_zh": "第21-25题：选择合适的问答",
+    "instruction_en": "Questions 21-25: Match the two parts of the same dialogue.",
+    "items": [
+     {
+      "n": "例如",
+      "zh": "你知道怎么去那儿吗？",
+      "answer": "E",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        8
+       ]
+      },
+      "options": {
+       "A": "不是，我一直在这家医院工作。",
+       "B": "对不起，周老师现在不在。",
+       "C": "今天学校里一个人都没有，大家都去哪儿了？",
+       "D": "周末有时间吗？我打算请你吃个饭。",
+       "E": "当然。我们先坐公共汽车，然后换地铁。",
+       "F": "可能是工作太累，生病了。"
+      }
+     },
+     {
+      "n": 21,
+      "zh": "你怎么了？今天一点儿东西都没吃。",
+      "answer": "F",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        145
+       ]
+      },
+      "options": {
+       "A": "不是，我一直在这家医院工作。",
+       "B": "对不起，周老师现在不在。",
+       "C": "今天学校里一个人都没有，大家都去哪儿了？",
+       "D": "周末有时间吗？我打算请你吃个饭。",
+       "E": "当然。我们先坐公共汽车，然后换地铁。",
+       "F": "可能是工作太累，生病了。"
+      }
+     },
+     {
+      "n": 22,
+      "zh": "今天是周末，你去学校做什么？",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        145
+       ]
+      },
+      "options": {
+       "A": "不是，我一直在这家医院工作。",
+       "B": "对不起，周老师现在不在。",
+       "C": "今天学校里一个人都没有，大家都去哪儿了？",
+       "D": "周末有时间吗？我打算请你吃个饭。",
+       "E": "当然。我们先坐公共汽车，然后换地铁。",
+       "F": "可能是工作太累，生病了。"
+      }
+     },
+     {
+      "n": 23,
+      "zh": "好啊，哪天？",
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        145
+       ]
+      },
+      "options": {
+       "A": "不是，我一直在这家医院工作。",
+       "B": "对不起，周老师现在不在。",
+       "C": "今天学校里一个人都没有，大家都去哪儿了？",
+       "D": "周末有时间吗？我打算请你吃个饭。",
+       "E": "当然。我们先坐公共汽车，然后换地铁。",
+       "F": "可能是工作太累，生病了。"
+      }
+     },
+     {
+      "n": 24,
+      "zh": "你是新来的医生吗？",
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        145
+       ]
+      },
+      "options": {
+       "A": "不是，我一直在这家医院工作。",
+       "B": "对不起，周老师现在不在。",
+       "C": "今天学校里一个人都没有，大家都去哪儿了？",
+       "D": "周末有时间吗？我打算请你吃个饭。",
+       "E": "当然。我们先坐公共汽车，然后换地铁。",
+       "F": "可能是工作太累，生病了。"
+      }
+     },
+     {
+      "n": 25,
+      "zh": "那我明天再来吧，谢谢。",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        145
+       ]
+      },
+      "options": {
+       "A": "不是，我一直在这家医院工作。",
+       "B": "对不起，周老师现在不在。",
+       "C": "今天学校里一个人都没有，大家都去哪儿了？",
+       "D": "周末有时间吗？我打算请你吃个饭。",
+       "E": "当然。我们先坐公共汽车，然后换地铁。",
+       "F": "可能是工作太累，生病了。"
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第二部分",
+    "type_zh": "阅读 第二部分",
+    "instruction_zh": "第26-30题：选择合适的词语填空",
+    "instruction_en": "Questions 26-30: Choose the proper words to fill in the brackets.",
+    "word_bank": [
+     [
+      "A 一直",
+      "B 周末",
+      "C 带",
+      "D 搬",
+      "E 声音",
+      "F 面包"
+     ]
+    ],
+    "items": [
+     {
+      "n": "例如",
+      "zh": "她说话的（　）多好听啊！",
+      "answer": "E",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        8
+       ]
+      }
+     },
+     {
+      "n": 26,
+      "zh": "这几年我（　）忙工作，没时间去旅游。",
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        145
+       ]
+      }
+     },
+     {
+      "n": 27,
+      "zh": "你（　）家的时候，我来帮你吧。",
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        145
+       ]
+      }
+     },
+     {
+      "n": 28,
+      "zh": "这个（　）很不错，是你买的吗？",
+      "answer": "F",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        145
+       ]
+      }
+     },
+     {
+      "n": 29,
+      "zh": "A：这件新衣服是什么时候买的？\nB：上（　），我妹妹跟我一起去买的。",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        145
+       ]
+      }
+     },
+     {
+      "n": 30,
+      "zh": "A：现在北方很冷，多（　）几件衣服吧。\nB：我已经准备好了。",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        145
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第三部分",
+    "type_zh": "阅读 第三部分",
+    "instruction_zh": "第31-35题：选择正确答案",
+    "instruction_en": "Questions 31-35: Choose the right answers.",
+    "items": [
+     {
+      "n": "例如",
+      "zh": "您是来参加今天会议的吗？您来早了一点儿，现在才八点半。您先进来坐吧。\n★会议最可能几点开始？",
+      "options": {
+       "A": "8点",
+       "B": "8点半",
+       "C": "9点"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        9
+       ]
+      }
+     },
+     {
+      "n": 31,
+      "zh": "妈妈是个北方人，20岁的时候跟爸爸一起搬到南方住，一直住到今天。南方话她现在能听懂一点儿，但是一点儿也不会说。\n★妈妈：",
+      "options": {
+       "A": "不是南方人",
+       "B": "会说南方话",
+       "C": "今天搬到南方"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        145
+       ]
+      }
+     },
+     {
+      "n": 32,
+      "zh": "我们小时候，下了课都在外边玩儿游戏，那时候的游戏是运动。现在的孩子也玩儿游戏，他们在家里，坐在电脑桌前，玩儿的是电脑游戏。\n★现在的孩子们喜欢：",
+      "options": {
+       "A": "运动",
+       "B": "玩儿电脑游戏",
+       "C": "在外边玩儿游戏"
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        145
+       ]
+      }
+     },
+     {
+      "n": 33,
+      "zh": "中国人说：做事的时候别着急，要多想想，想好了再做。\n★中国人觉得做事不能：",
+      "options": {
+       "A": "着急",
+       "B": "想好",
+       "C": "多想"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        145
+       ]
+      }
+     },
+     {
+      "n": 34,
+      "zh": "我爱旅游，喜欢走南走北。第一次去旅游，我买最便宜的火车票，因为那时候没有那么多钱。现在，我可以开车去想去的地方，车上有电子地图，能告诉我怎么走。\n★我现在：",
+      "options": {
+       "A": "没有那么多钱",
+       "B": "喜欢坐火车",
+       "C": "可以开车旅游"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        145
+       ]
+      }
+     },
+     {
+      "n": 35,
+      "zh": "南方我去过很多次，但是妻子一次也没去过。我说过很多次“明年带你去”，但是因为工作忙，一直到现在也没带她去，我觉得很对不起妻子。\n★妻子：",
+      "options": {
+       "A": "工作很忙",
+       "B": "没去过南方",
+       "C": "觉得很对不起"
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        145
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "三、书写 第一部分",
+    "type_zh": "书写 第一部分",
+    "instruction_zh": "第36-40题：连词成句",
+    "instruction_en": "Questions 36-40: Rearrange the words/phrases to make sentences.",
+    "items": [
+     {
+      "n": "例如",
+      "zh": "小船　上　一　河　条　有",
+      "answer": "河上有一条小船。",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        10
+       ]
+      }
+     },
+     {
+      "n": 36,
+      "zh": "面包　一个　商店里　没有　也",
+      "answer": "商店里一个面包也没有。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        145
+       ]
+      }
+     },
+     {
+      "n": 37,
+      "zh": "想　好　吃什么　还没　我",
+      "answer": "我还没想好吃什么。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        145
+       ]
+      }
+     },
+     {
+      "n": 38,
+      "zh": "没下　雪　一点儿　都　今年",
+      "answer": "今年一点儿雪都没下。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        145
+       ]
+      }
+     },
+     {
+      "n": 39,
+      "zh": "也　咖啡　一杯　没喝　今天下午　我",
+      "answer": "今天下午我一杯咖啡也没喝。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        145
+       ]
+      }
+     },
+     {
+      "n": 40,
+      "zh": "好　水果　吗　洗　你　了",
+      "answer": "你洗好水果了吗？",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        145
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "三、书写 第二部分",
+    "type_zh": "书写 第二部分",
+    "instruction_zh": "第41-45题：看拼音，写汉字",
+    "instruction_en": "Questions 41-45: Write the characters based on their pinyin.",
+    "items": [
+     {
+      "n": "例如",
+      "zh": "没（　）系，别难过，高兴点儿。",
+      "hint_zh": "guān",
+      "answer": "关",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        10
+       ]
+      }
+     },
+     {
+      "n": 41,
+      "zh": "下午我一（　）在房间里看书。",
+      "hint_zh": "zhí",
+      "answer": "直",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        145
+       ]
+      }
+     },
+     {
+      "n": 42,
+      "zh": "我家在学校的（　）边。",
+      "hint_zh": "běi",
+      "answer": "北",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        145
+       ]
+      }
+     },
+     {
+      "n": 43,
+      "zh": "周（　）我请你去跳舞，怎么样？",
+      "hint_zh": "mò",
+      "answer": "末",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        145
+       ]
+      }
+     },
+     {
+      "n": 44,
+      "zh": "我想（　）你们一起去打篮球，可以吗？",
+      "hint_zh": "gēn",
+      "answer": "跟",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        145
+       ]
+      }
+     },
+     {
+      "n": 45,
+      "zh": "我们明天就要（　）家了。",
+      "hint_zh": "bān",
+      "answer": "搬",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        145
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "三、书写 第三部分",
+    "type_zh": "书写 第三部分",
+    "instruction_zh": "第46-50题：辨认汉字，选择正确的汉字填空",
+    "instruction_en": "Questions 46-50: Distinguish the characters and fill in the blanks.",
+    "items": [
+     {
+      "n": "例如",
+      "zh": "我不知道________个地方在________儿。",
+      "hint_zh": "（那、哪）",
+      "answer": "那、哪",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        11
+       ]
+      }
+     },
+     {
+      "n": 46,
+      "zh": "小丽说她要________我一起去外地旅游，我________高兴。",
+      "hint_zh": "（很、跟）",
+      "answer": "跟、很",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        145
+       ]
+      }
+     },
+     {
+      "n": 47,
+      "zh": "这个________末，我们几个________学要去老师家。",
+      "hint_zh": "（同、周）",
+      "answer": "周、同",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        145
+       ]
+      }
+     },
+     {
+      "n": 48,
+      "zh": "那个商店的东西非________便宜，明天我________你去看看。",
+      "hint_zh": "（常、带）",
+      "answer": "常、带",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        145
+       ]
+      }
+     },
+     {
+      "n": 49,
+      "zh": "这个星期我一________忙，________累啊！",
+      "hint_zh": "（真、直）",
+      "answer": "直、真",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        145
+       ]
+      }
+     },
+     {
+      "n": 50,
+      "zh": "________天的________业一点儿也不多。",
+      "hint_zh": "（昨、作）",
+      "answer": "昨、作",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        145
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "三、书写 第四部分",
+    "type_zh": "书写 第四部分",
+    "instruction_zh": "第51-54题：用下边的汉字组词",
+    "instruction_en": "Questions 51-54: Make words using the following characters.",
+    "items": [
+     {
+      "n": "例如",
+      "zh": "找________、________",
+      "answer": "找人、找到",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        11
+       ]
+      }
+     },
+     {
+      "n": 51,
+      "zh": "上________、________",
+      "answer": "上午、上班",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        145
+       ]
+      }
+     },
+     {
+      "n": 52,
+      "zh": "下________、________",
+      "answer": "下班、下午",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        145
+       ]
+      }
+     },
+     {
+      "n": 53,
+      "zh": "本________、________",
+      "answer": "本子、书本",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        145
+       ]
+      }
+     },
+     {
+      "n": 54,
+      "zh": "末________、________",
+      "answer": "周末、月末",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        145
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "四、复习",
+    "type_zh": "复习",
+    "instruction_zh": "第1-2题：根据课文内容填空",
+    "instruction_en": "Questions 1-2: Fill in the blanks based on the texts in the textbook.",
+    "items": [
+     {
+      "n": "复习1",
+      "zh": "小刚周末________请小丽吃饭、看电影、喝咖啡。他已经________饭馆，________电影票了。但是小丽还没________要不要________他去。",
+      "answer": "打算、找好、买好、想好、跟",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        145
+       ]
+      }
+     },
+     {
+      "n": "复习2",
+      "zh": "明天有考试，但是儿子一直玩儿________，________也不________，因为他都________好了，________也都写完了。",
+      "answer": "电脑游戏、一点儿、着急、复习、作业",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        145
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "answers_ref": {
+   "book": "teacher",
+   "pages": [
+    143,
+    144,
+    145
+   ]
+  }
+ },
+ "audio": {
+  "textbook": [
+   "hsk3-textbook-0101.mp3",
+   "hsk3-textbook-0102.mp3",
+   "hsk3-textbook-0103.mp3",
+   "hsk3-textbook-0104.mp3",
+   "hsk3-textbook-0105.mp3"
+  ],
+  "workbook": [
+   "hsk3-workbook-01-part1.mp3",
+   "hsk3-workbook-01-part2.mp3",
+   "hsk3-workbook-01-part3.mp3",
+   "hsk3-workbook-01-part4.mp3"
+  ]
+ },
+ "unclear": [
+  "课文1: ханзаар “我已经找好饭馆了” (儿化-гүй), харин 拼音课文-д “zhǎohǎo fànguǎnr le” (儿化-тай) — номд байгаагаар нь үлдээв.",
+  "Багшийн ном 语言点(1) 导入 — “教师可利用本课热身2图②” гэж, асуулт-хариулт нь “她在写作业” — сурах бичгийн 热身2 зураг ② нь ном уншиж буй эмэгтэй (复习 = A). Номд байгаагаар нь.",
+  "汉字 指事字 — сурах бичиг 本/末-ийг “在“木”字下边/上边加一点” гэсэн бол багшийн ном “树下方/上方有一横线” гэж тайлбарласан — хоёулаа номд байгаагаар.",
+  "Дасгалын номын сонсголын аудио: prep.json-д файл 'missing' гэж тэмдэглэгдсэн; hsk3-workbook-01-part1…4.mp3 нэрийг даалгаврын дагуу оноосон, дискэн дээр шалгагдаагүй.",
+  "Сонсгол 第一部分-ийн сонголт A–F нь зураг (номд текстгүй) — options-д зургийн объектив англи тайлбар '[picture] …' гэж оруулав.",
+  "Сурах бичгийн 练习 1–4 болон 练一练-ийн албан ёсны хариулт багшийн номд хэвлэгдээгүй (зөвхөн 热身 1, 2-ын хариулт бий) — answer оруулаагүй.",
+  "Сурах бичгийн 课文 гарчгийн пиньинь (Tán zhōumò de dǎsuàn / Zài jiā / Liáo lǚyóu jìhuà / Zhǔnbèi qù lǚyóu) — SourceText-д талбар байхгүй тул энд тэмдэглэв.",
+  "Дасгалын номын 例如 зүйлсийн хариулт (D / √ / × / A / C / E / E / C / 河上有一条小船。 / 关 / 那、哪 / 找人、找到) дасгалын номд өөрт нь хэвлэгдсэн (answer_ref = workbook)."
+ ],
+ "verified_pages": [
+  17,
+  18,
+  19,
+  20,
+  21,
+  22,
+  23,
+  24,
+  25,
+  26,
+  8,
+  9,
+  10,
+  11,
+  12,
+  13,
+  14,
+  143,
+  144,
+  145,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  11
+ ],
+ "schema_version": 1
+}

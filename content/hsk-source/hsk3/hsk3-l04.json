@@ -1,0 +1,1996 @@
+{
+ "level": "hsk3",
+ "lesson": 4,
+ "book": "HSK3",
+ "title_zh": "她总是笑着跟客人说话",
+ "title_pinyin": "Tā zǒngshì xiàozhe gēn kèrén shuōhuà",
+ "title_en": "She always smiles when talking to customers",
+ "textbook": {
+  "ref": {
+   "book": "textbook",
+   "pages": [
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52
+   ]
+  },
+  "warmup": [
+   {
+    "instruction_zh": "给下面的词语选择对应的图片",
+    "instruction_en": "Match the pictures with the words.",
+    "items": [
+     "①服务员 fúwùyuán",
+     "②客人 kèrén",
+     "③超市 chāoshì",
+     "④比赛 bǐsài",
+     "⑤照片 zhàopiàn",
+     "⑥蛋糕 dàngāo"
+    ],
+    "pictures_desc_en": [
+     "A: runners racing along a road in a running competition",
+     "B: a shopping cart in a supermarket aisle between full shelves",
+     "C: two pieces of chocolate cake on a plate",
+     "D: a young waiter in a bow tie holding a red cloth in a restaurant",
+     "E: a woman opening a door to greet a female visitor",
+     "F: photos hanging on a string with clothes pegs"
+    ]
+   },
+   {
+    "instruction_zh": "看图片，写出他们在做什么",
+    "instruction_en": "Look at the pictures and write down what they are doing.",
+    "items": [
+     "①吃苹果 ＋ 看书",
+     "②笑 ＋ ________",
+     "③喝饮料 ＋ ________",
+     "④打电话 ＋ ________"
+    ],
+    "pictures_desc_en": [
+     "①: a girl holding an apple and reading",
+     "②: four young people holding cups and laughing together",
+     "③: a girl lying on cushions drinking through a straw, holding a remote control",
+     "④: a woman in a suit walking along a street while talking on a mobile phone"
+    ]
+   }
+  ],
+  "texts": [
+   {
+    "n": 1,
+    "title_zh": "在教室",
+    "title_en": "In the classroom",
+    "kind": "dialogue",
+    "audio": "hsk3-textbook-0401.mp3",
+    "lines": [
+     {
+      "speaker": "小明",
+      "zh": "这是你们比赛的照片吗？",
+      "pinyin": "Zhè shì nǐmen bǐsài de zhàopiàn ma?"
+     },
+     {
+      "speaker": "马可",
+      "zh": "是，这是我们比赛后照的。",
+      "pinyin": "Shì, zhè shì wǒmen bǐsài hòu zhào de."
+     },
+     {
+      "speaker": "小明",
+      "zh": "照得不错，你们都是一个年级的吗？",
+      "pinyin": "Zhào de búcuò, nǐmen dōu shì yí ge niánjí de ma?"
+     },
+     {
+      "speaker": "马可",
+      "zh": "不是。那个又高又漂亮的女孩儿是二年级的。",
+      "pinyin": "Bú shì. Nàge yòu gāo yòu piàoliang de nǚháir shì èr niánjí de."
+     },
+     {
+      "speaker": "小明",
+      "zh": "旁边那个拿着书笑的人是谁？",
+      "pinyin": "Pángbiān nàge názhe shū xiào de rén shì shéi?"
+     },
+     {
+      "speaker": "马可",
+      "zh": "那是我！",
+      "pinyin": "Nà shì wǒ!"
+     }
+    ],
+    "new_words": [
+     {
+      "n": 1,
+      "zh": "比赛",
+      "pinyin": "bǐsài",
+      "pos": "n.",
+      "en": "match, competition",
+      "text": 1
+     },
+     {
+      "n": 2,
+      "zh": "照片",
+      "pinyin": "zhàopiàn",
+      "pos": "n.",
+      "en": "photo",
+      "text": 1
+     },
+     {
+      "n": 3,
+      "zh": "年级",
+      "pinyin": "niánjí",
+      "pos": "n.",
+      "en": "grade",
+      "text": 1
+     },
+     {
+      "n": 4,
+      "zh": "又",
+      "pinyin": "yòu",
+      "pos": "adv.",
+      "en": "and",
+      "text": 1
+     }
+    ],
+    "proper_nouns": [
+     {
+      "zh": "小明",
+      "pinyin": "Xiǎomíng",
+      "en": "Xiaoming, name of a person"
+     },
+     {
+      "zh": "马可",
+      "pinyin": "Mǎkě",
+      "en": "Marco"
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "title_zh": "在教室",
+    "title_en": "In the classroom",
+    "kind": "dialogue",
+    "audio": "hsk3-textbook-0402.mp3",
+    "lines": [
+     {
+      "speaker": "小丽",
+      "zh": "你觉得小红怎么样？",
+      "pinyin": "Nǐ juéde Xiǎohóng zěnmeyàng?"
+     },
+     {
+      "speaker": "同学",
+      "zh": "她又聪明又热情，也很努力。",
+      "pinyin": "Tā yòu cōngming yòu rèqíng, yě hěn nǔlì."
+     },
+     {
+      "speaker": "小丽",
+      "zh": "我看她总是笑着回答老师的问题。",
+      "pinyin": "Wǒ kàn tā zǒngshì xiàozhe huídá lǎoshī de wèntí."
+     },
+     {
+      "speaker": "同学",
+      "zh": "她对每个人都笑，也常常对我笑。",
+      "pinyin": "Tā duì měi ge rén dōu xiào, yě chángcháng duì wǒ xiào."
+     },
+     {
+      "speaker": "小丽",
+      "zh": "你是不是喜欢她啊？",
+      "pinyin": "Nǐ shì bu shì xǐhuan tā a?"
+     },
+     {
+      "speaker": "同学",
+      "zh": "喜欢她的人太多了，你看那些拿着鲜花站在门口的，都是等她的。",
+      "pinyin": "Xǐhuan tā de rén tài duō le, nǐ kàn nàxiē názhe xiānhuā zhàn zài ménkǒu de, dōu shì děng tā de."
+     }
+    ],
+    "new_words": [
+     {
+      "n": 5,
+      "zh": "聪明",
+      "pinyin": "cōngming",
+      "pos": "adj.",
+      "en": "clever, smart",
+      "text": 2
+     },
+     {
+      "n": 6,
+      "zh": "热情",
+      "pinyin": "rèqíng",
+      "pos": "adj.",
+      "en": "warm, enthusiastic",
+      "text": 2
+     },
+     {
+      "n": 7,
+      "zh": "努力",
+      "pinyin": "nǔlì",
+      "pos": "adj.",
+      "en": "hard-working",
+      "text": 2
+     },
+     {
+      "n": 8,
+      "zh": "总是",
+      "pinyin": "zǒngshì",
+      "pos": "adv.",
+      "en": "always",
+      "text": 2
+     },
+     {
+      "n": 9,
+      "zh": "回答",
+      "pinyin": "huídá",
+      "pos": "v.",
+      "en": "to answer",
+      "text": 2
+     },
+     {
+      "n": 10,
+      "zh": "站",
+      "pinyin": "zhàn",
+      "pos": "v.",
+      "en": "to stand",
+      "text": 2
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "title_zh": "在超市门口",
+    "title_en": "At the entrance of a supermarket",
+    "kind": "dialogue",
+    "audio": "hsk3-textbook-0403.mp3",
+    "lines": [
+     {
+      "speaker": "小刚",
+      "zh": "我有点儿饿了，我们进超市买点儿东西吧。",
+      "pinyin": "Wǒ yǒudiǎnr è le, wǒmen jìn chāoshì mǎi diǎnr dōngxi ba."
+     },
+     {
+      "speaker": "小丽",
+      "zh": "好啊，这家超市的蛋糕又便宜又好吃，一块只要2.99元。",
+      "pinyin": "Hǎo a, zhè jiā chāoshì de dàngāo yòu piányi yòu hǎochī, yí kuàir zhǐ yào èr diǎn jiǔ jiǔ yuán."
+     },
+     {
+      "speaker": "小刚",
+      "zh": "我们买两块，回家吃着蛋糕看电视，怎么样？",
+      "pinyin": "Wǒmen mǎi liǎng kuàir, huí jiā chīzhe dàngāo kàn diànshì, zěnmeyàng?"
+     },
+     {
+      "speaker": "小丽",
+      "zh": "好啊，我再去买一些喝的。",
+      "pinyin": "Hǎo a, wǒ zài qù mǎi yìxiē hē de."
+     },
+     {
+      "speaker": "小刚",
+      "zh": "喝着咖啡吃蛋糕，太好了！",
+      "pinyin": "Hēzhe kāfēi chī dàngāo, tài hǎo le!"
+     }
+    ],
+    "new_words": [
+     {
+      "n": 11,
+      "zh": "饿",
+      "pinyin": "è",
+      "pos": "adj.",
+      "en": "hungry",
+      "text": 3
+     },
+     {
+      "n": 12,
+      "zh": "超市",
+      "pinyin": "chāoshì",
+      "pos": "n.",
+      "en": "supermarket",
+      "text": 3
+     },
+     {
+      "n": 13,
+      "zh": "蛋糕",
+      "pinyin": "dàngāo",
+      "pos": "n.",
+      "en": "cake",
+      "text": 3
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "title_zh": "在饭馆",
+    "title_en": "In a restaurant",
+    "kind": "dialogue",
+    "audio": "hsk3-textbook-0404.mp3",
+    "lines": [
+     {
+      "speaker": "经理",
+      "zh": "您好！您找谁？",
+      "pinyin": "Nín hǎo! Nín zhǎo shéi?"
+     },
+     {
+      "speaker": "客人",
+      "zh": "你们这儿是不是有一个又年轻又漂亮的服务员？",
+      "pinyin": "Nǐmen zhèr shì bu shì yǒu yí ge yòu niánqīng yòu piàoliang de fúwùyuán?"
+     },
+     {
+      "speaker": "经理",
+      "zh": "我们这儿年轻、漂亮的服务员有很多。",
+      "pinyin": "Wǒmen zhèr niánqīng, piàoliang de fúwùyuán yǒu hěn duō."
+     },
+     {
+      "speaker": "客人",
+      "zh": "她工作又认真又热情。",
+      "pinyin": "Tā gōngzuò yòu rènzhēn yòu rèqíng."
+     },
+     {
+      "speaker": "经理",
+      "zh": "您能再说说吗？",
+      "pinyin": "Nín néng zài shuōshuo ma?"
+     },
+     {
+      "speaker": "客人",
+      "zh": "她总是笑着跟客人说话。",
+      "pinyin": "Tā zǒngshì xiàozhe gēn kèrén shuō huà."
+     },
+     {
+      "speaker": "经理",
+      "zh": "啊，我知道了，你说的是李小美吧？",
+      "pinyin": "À, wǒ zhīdào le, nǐ shuō de shì Lǐ Xiǎoměi ba?"
+     }
+    ],
+    "new_words": [
+     {
+      "n": 14,
+      "zh": "年轻",
+      "pinyin": "niánqīng",
+      "pos": "adj.",
+      "en": "young",
+      "text": 4
+     },
+     {
+      "n": 15,
+      "zh": "认真",
+      "pinyin": "rènzhēn",
+      "pos": "adj.",
+      "en": "serious, earnest",
+      "text": 4
+     },
+     {
+      "n": 16,
+      "zh": "客人",
+      "pinyin": "kèrén",
+      "pos": "n.",
+      "en": "customer, guest",
+      "text": 4
+     }
+    ],
+    "proper_nouns": [
+     {
+      "zh": "李小美",
+      "pinyin": "Lǐ Xiǎoměi",
+      "en": "Li Xiaomei, name of a person"
+     }
+    ]
+   }
+  ],
+  "grammar": [
+   {
+    "n": 1,
+    "title_zh": "又……又……",
+    "title_en": "The Structure “又……又……”",
+    "explanation_zh": "汉语中用“又Adj₁＋又Adj₂”描述人或事物同时具有两个特点。比如“又高又漂亮”表示很高，也很漂亮。例如：",
+    "explanation_en": "In Chinese, “又Adj₁ + 又Adj₂” is used to describe two qualities existing in the same person or thing, such as “又高又漂亮” (both tall and pretty). For example:",
+    "structure_rows": [
+     "又Adj₁＋又Adj₂"
+    ],
+    "examples": [
+     {
+      "n": 1,
+      "zh": "这个西瓜又大又甜。"
+     },
+     {
+      "n": 2,
+      "zh": "外边又黑又冷。"
+     },
+     {
+      "n": 3,
+      "zh": "服务员又年轻又漂亮。"
+     },
+     {
+      "n": 4,
+      "zh": "她工作又认真又热情。"
+     }
+    ],
+    "practice_instruction_zh": "练一练　完成句子 Complete the sentences.",
+    "practice": [
+     {
+      "n": 1,
+      "zh": "这家超市的东西________。"
+     },
+     {
+      "n": 2,
+      "zh": "他做饭做得________。"
+     },
+     {
+      "n": 3,
+      "zh": "我喜欢________的衣服。"
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "title_zh": "动作的伴随：V₁着（O₁）＋V₂（O₂）",
+    "title_en": "The Accompanying Action: V₁着 (O₁) + V₂ (O₂)",
+    "explanation_zh": "汉语中用“V₁着（O₁）＋V₂（O₂）”表示两个动作同时进行，V₁表示伴随，是V₂的状态或者进行的方式。比如“他们站着聊天儿”表示“他们在聊天儿”，方式是“站着”，不是“坐着”。例如：",
+    "explanation_en": "In Chinese, “V₁着 (O₁) + V₂ (O₂)” indicates two actions taking place at the same time, V₁ being the accompanying state or manner of V₂. For example, “他们站着聊天儿” means “they are talking” while “standing” rather than “sitting”. For example:",
+    "structure_rows": [
+     "V₁着（O₁）＋V₂（O₂）"
+    ],
+    "examples": [
+     {
+      "n": 1,
+      "zh": "弟弟吃着苹果写作业。"
+     },
+     {
+      "n": 2,
+      "zh": "周先生和周太太坐着看电视。"
+     },
+     {
+      "n": 3,
+      "zh": "很多人拿着鲜花站在门口。"
+     },
+     {
+      "n": 4,
+      "zh": "她总是笑着跟客人说话。"
+     }
+    ],
+    "practice_instruction_zh": "练一练　完成句子 Complete the sentences.",
+    "practice": [
+     {
+      "n": 1,
+      "zh": "我喜欢听着歌________。"
+     },
+     {
+      "n": 2,
+      "zh": "我们不能________开车。"
+     },
+     {
+      "n": 3,
+      "zh": "我们的老师________上课。"
+     }
+    ]
+   }
+  ],
+  "exercises": [
+   {
+    "n": 1,
+    "type_zh": "朗读",
+    "instruction_zh": "朗读下列短语和句子",
+    "instruction_en": "Read the following phrases and sentences aloud.",
+    "audio": "hsk3-textbook-0405.mp3",
+    "items": [
+     {
+      "n": 1,
+      "zh": "总是：总是下雨／总是笑／总是不高兴／她总是笑着跟客人说话。"
+     },
+     {
+      "n": 2,
+      "zh": "回答：回答问题／笑着回答／没回答对／她总是笑着回答老师的问题。"
+     },
+     {
+      "n": 3,
+      "zh": "饿：很饿／饿了／不饿／我有点儿饿了。"
+     },
+     {
+      "n": 4,
+      "zh": "年轻：很年轻／不年轻／年轻人／我们这儿年轻、漂亮的服务员有很多。"
+     },
+     {
+      "n": 5,
+      "zh": "照片：一张照片／谁的照片／照片很漂亮／这是你们比赛的照片吗？"
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "type_zh": "选词填空",
+    "instruction_zh": "选择恰当的词语填空",
+    "instruction_en": "Choose the proper words to fill in the blanks.",
+    "word_bank": [
+     [
+      "比赛",
+      "超市",
+      "客人",
+      "饿",
+      "认真"
+     ],
+     [
+      "年级",
+      "照片",
+      "蛋糕",
+      "总是",
+      "努力"
+     ]
+    ],
+    "items": [
+     {
+      "n": 1,
+      "zh": "________快到了，快去洗水果。"
+     },
+     {
+      "n": 2,
+      "zh": "工作到下午三点的时候，我常常很________。"
+     },
+     {
+      "n": 3,
+      "zh": "这个孩子工作的时候很________，大家都喜欢他。"
+     },
+     {
+      "n": 4,
+      "zh": "这是什么________？你能给我介绍一下吗？"
+     },
+     {
+      "n": 5,
+      "zh": "我下楼去________买点儿东西。"
+     },
+     {
+      "n": 6,
+      "zh": "A：你怎么还看电视？不________学习，怎么能找到好工作呢？ B：我只看了半个小时。"
+     },
+     {
+      "n": 7,
+      "zh": "A：这张________是什么时候的？ B：是我妈妈小时候的。"
+     },
+     {
+      "n": 8,
+      "zh": "A：你怎么________想睡觉？ B：我工作太累了，起得早，睡得晚。"
+     },
+     {
+      "n": 9,
+      "zh": "A：这位老人是谁？ B：她是我一________时候的老师，现在已经70岁了。"
+     },
+     {
+      "n": 10,
+      "zh": "A：您来几块________？ B：两块。"
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "type_zh": "描述图片",
+    "instruction_zh": "用本课新学的语言点和词语描述图片",
+    "instruction_en": "Describe the pictures using the newly-learned language points and words.",
+    "items": [
+     {
+      "n": 1,
+      "zh": "A：哪个女孩儿是马丽？ B：你看，那个拿着________就是。 A：是不是那个又________的？ B：对，就是那个。",
+      "picture_desc_en": "Three young women on a street: one talking on a mobile phone, one wearing a knitted hat, one with long blond hair; all smiling."
+     },
+     {
+      "n": 2,
+      "zh": "A：我现在又________，不想爬了。 B：休息一下再爬吧。 A：山太高了，多累啊。 B：我们聊着________，一点儿也不会累。",
+      "picture_desc_en": "A young woman and a young man with backpacks climbing a green hillside, a river below."
+     },
+     {
+      "n": 3,
+      "zh": "A：今天天气真不好！ B：是啊，我现在________。 A：我们去旁边的咖啡店坐________再走吧。 B：好啊。",
+      "picture_desc_en": "Two people with backpacks walking in heavy snow, seen from behind."
+     },
+     {
+      "n": 4,
+      "zh": "A：为什么你的作业写得又快________？ B：因为我写作业的时候很认真。 A：我不认真吗？ B：你________，认真吗？",
+      "picture_desc_en": "Two schoolboys standing in front of orange lockers, reading open notebooks."
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "type_zh": "回答问题",
+    "instruction_zh": "根据课文回答问题",
+    "instruction_en": "Answer the questions according to the texts.",
+    "items": [
+     {
+      "n": 1,
+      "zh": "那张照片是什么时候照的？"
+     },
+     {
+      "n": 2,
+      "zh": "照片里马可在做什么？"
+     },
+     {
+      "n": 3,
+      "zh": "喜欢小红的人多不多？她怎么样？"
+     },
+     {
+      "n": 4,
+      "zh": "小刚和小丽打算买什么？"
+     },
+     {
+      "n": 5,
+      "zh": "小刚和小丽回家后打算做什么？"
+     },
+     {
+      "n": 6,
+      "zh": "客人要找谁？她怎么样？"
+     }
+    ]
+   }
+  ],
+  "characters": {
+   "knowledge_title_zh": "旧字新词",
+   "knowledge_zh": "读读下面的词语，想想组成的新词是什么意思。",
+   "knowledge_en": "Read the following words and guess the meanings of the newly-formed ones.",
+   "word_game": [
+    {
+     "parts": [
+      "女",
+      "孩子"
+     ],
+     "result": "女孩"
+    },
+    {
+     "parts": [
+      "做",
+      "客人"
+     ],
+     "result": "做客"
+    },
+    {
+     "parts": [
+      "新鲜",
+      "花"
+     ],
+     "result": "鲜花"
+    }
+   ],
+   "confusable_pairs": [
+    [
+     "北",
+     "比"
+    ],
+    [
+     "明",
+     "朋"
+    ],
+    [
+     "力",
+     "为"
+    ],
+    [
+     "饿",
+     "我"
+    ],
+    [
+     "回",
+     "四"
+    ]
+   ]
+  },
+  "application": [
+   {
+    "title_zh": "双人活动",
+    "instruction_zh": "互相调查对方的情况，完成调查表。使用“又……，又……”回答。",
+    "instruction_en": "Make a survey of your partner and fill in the questionnaire. Answer the questions using “又……又……”.",
+    "example_zh": [
+     "表格：| | 问 | 答 |",
+     "| 1 | 你喜欢你的老师吗？为什么？ | |",
+     "| 2 | 你喜欢你住的地方吗？为什么？ | |",
+     "| 3 | 休息的时候，你喜欢去哪儿？为什么？ | |",
+     "| 4 | 你常去哪个饭馆吃饭，为什么？ | |",
+     "| 5 | 你的好朋友是谁？他／她是什么样的人？ | |",
+     "| 6 | 你喜欢去商店买衣服还是喜欢上网买衣服？为什么？ | |"
+    ]
+   },
+   {
+    "title_zh": "小组活动",
+    "instruction_zh": "准备一张照片，用“V着……”介绍照片里的人。",
+    "instruction_en": "Bring a photo and describe each person in it using “V着”.",
+    "example_zh": [
+     "例如：那个笑着站在桌子旁边的人是小丽。"
+    ]
+   }
+  ],
+  "saying": {
+   "zh": "五十步笑百步",
+   "pinyin": "Wǔshí bù xiào bǎi bù",
+   "en": "The one who retreated 50 steps laughs at the one who retreated 100",
+   "explanation_zh": "“五十步笑百步”这句话来源于中国古代的一个故事。从前有两个士兵，打仗失败往回跑，一个人跑了五十步，另一个跑了一百步，跑了五十步的就笑话跑了一百步的，说他胆小。其实两人都是逃跑，只是跑得远近不同。这句话用来批评那些跟别人有一样的缺点，却因程度轻而笑话别人的人。",
+   "explanation_en": "“五十步笑百步” originates from a story of ancient China. There were two soldiers who fled from a lost battle. One had run 50 steps backward, and the other 100 steps. The one who had retreated 50 steps laughed at the one who had retreated 100 steps, saying he was a coward. The truth is both of them were running away, the only difference lying in how far they’d run. “五十步笑百步” is now used metaphorically to criticize people who have the same problems as those they laugh at, only to a lesser degree."
+  }
+ },
+ "teacher": {
+  "ref": {
+   "book": "teacher",
+   "pages": [
+    30,
+    31,
+    32,
+    33,
+    34,
+    35
+   ]
+  },
+  "objectives_zh": [
+   "重点词语：学生能够熟练掌握：“比赛、年级、聪明、热情、努力、总是、回答、年轻、认真”的词义和用法",
+   "语言点：学生能够了解并掌握：（1）“又……又……”描述人或事物同时具备的特点（2）“V₁着（O₁）+V₂（O₂）”表达两个动作同时进行",
+   "汉字：学生能够：根据已学生词猜测出3个旧字新词“女孩、做客、鲜花”的意思",
+   "功能：学生能够：（1）描述人和事物的性状（2）描述动作的伴随"
+  ],
+  "steps": [
+   {
+    "title_zh": "复习旧课",
+    "body_zh": "1 教师出示第3课的热身图片，请学生根据图片说出生词。\n2 教师根据第3课的内容进行提问。\n（1）今天天气怎么样？是晴天还是阴天？\n（2）我们的教室漂亮吗？教室里有什么？\n（3）我现在很累，不想工作，可以做些什么？\n（4）不工作／不上课的时候，你们喜欢做什么？\n（5）请说一说老师现在的样子。"
+   },
+   {
+    "title_zh": "学习新课 1 热身",
+    "body_zh": "热身1：教师可依次朗读热身部分的词语，要求学生集体或单个说出图片对应的编号，教师评判正误。最后全体学生再次齐读热身环节的所有词语，要求语音标准、声调准确。\n答案：①D　②E　③B　④A　⑤F　⑥C\n热身2：可留至语言点（2）“V₁着（O₁）+V₂O₂”导入时使用。"
+   },
+   {
+    "title_zh": "2 生词",
+    "body_zh": "（1）生词快速认读及正音\n比赛、照片、年级、又、聪明、热情、努力、总是、回答、站、饿、超市、蛋糕、年轻、认真、客人、小明、马可、李小美\n· 教师先带领学生快速认读一遍生词；\n· 取消拼音，带领学生再次认读；\n· 请单个学生独自认读2-3个生词；\n· 最后全班一起快速认读所有的生词。\n（2）生词讲解方式\n· 直观法（如图片、照片、实物等）展示：比赛、照片、花、超市、蛋糕、客人\n· 肢体动作展示：站、饿\n· 启发式引导：总是\n· 教师给出句子部分内容让学生进行补充，如：她来晚很多次，还可以说她总是来晚。\n（3）重点生词扩展及常用搭配\n比赛—游泳比赛—篮球比赛—比赛以后，我们一起去吃饭。\n年级—一年级—你是几年级的学生？\n　—一个年级—他和我不是一个年级的。\n聪明—很聪明—不聪明—我们班的同学都很聪明。\n热情—很热情—不热情—你们的老师热情吗？\n努力—很努力—不努力—你学习努力吗？\n总是—总是玩儿游戏—总是睡觉—这个字我总是写错。\n回答—回答问题—谁能回答这个问题？\n年轻—很年轻—不年轻—年轻人\n认真—很认真—不认真—她是一个做事认真的人。\n练习册相关练习：第22页／一／第一部分，第25页／二／第二部分"
+   },
+   {
+    "title_zh": "3 语言点（1）又……又……",
+    "body_zh": "① 语言点解析\n多用于口语，表示人或事物同时存在的两种性状或特征，例如“我又累又饿”表示我很累，也很饿。\n［又＋形容词₁＋又＋形容词₂］\n② 语言点导入\n教师可以利用身边的人或事物导入语言点。例如：\n教师：A同学很聪明，也很热情，他／她怎么样？\n学生：他／她又聪明，又热情。\n教师：这件衣服很好看，只要100块钱。这件衣服怎么样？\n学生：这件衣服又好看又便宜。\n③ 语言点操练\n教师可根据实际情况提问，请学生回答。\n你的房间怎么样？\n妈妈做的菜怎么样？\n超市的东西怎么样？\n注意：“又……又……”表示两种情况都有，所以不能说“今天又冷又暖和”。"
+   },
+   {
+    "title_zh": "3 语言点（2）动作的伴随",
+    "body_zh": "① 语言点解析\n汉语中“着”可以用在两个动词短语间表示两个动作同时进行，后面的动词是主要的动作，前面的动词是后面动作的状态或者进行的方式。\n［动词₁（宾语₁）＋着＋动词₂（宾语₂）］\n② 语言点导入\n教师可利用本课热身2的图片导入语言点。\n教师请学生观察热身中的图片，说说图片中的人在做什么。\n教师示范：\n教师：她在做什么？\n学生：她在吃苹果，她在看书。\n教师请学生与同桌合作，互相询问，共同完成填空。\n教师核对答案，请学生和同桌一问一答。\n教师利用学生的回答，导入本课句型：她吃着苹果看书。\n③ 语言点操练\n教师给出两个动词，请学生完成句子。\n例如：笑、打电话——她笑着打电话。\n　　　吃饭、看电视\n　　　坐、写作业\n④ 语言点扩展练习\n教师可根据实际情况提问，请学生回答。\n你喜欢听歌的时候做什么？\n你喝咖啡的时候还会做什么？\n注意：两个动词中，第二个是句子中的主要动词。"
+   },
+   {
+    "title_zh": "4 课文 课文1",
+    "body_zh": "（1）让学生听两遍录音并回答下列问题：\n这是什么时候照的照片？——比赛后照的。\n那个女孩儿是几年级的？——是二年级的。\n哪个人是“我”？——那个拿着书笑的人。\n（2）教师领读课文两遍，让学生分角色朗读课文，注意说话人的语气。\n（3）教师给提示词，带领学生复述课文。\n提示词：比赛、照片、年级、又、高、漂亮、拿着、笑"
+   },
+   {
+    "title_zh": "4 课文 课文2",
+    "body_zh": "（1）让学生听两遍录音并回答下列问题：\n男的觉得小红怎么样？——她又聪明又热情，也很努力。\n小红怎么回答老师的问题？——她总是笑着回答老师的问题。\n喜欢小红的人多吗？——喜欢她的人太多了。\n（2）教师领读课文两遍，让学生分角色朗读课文。\n（3）模仿练习\n学生两人一组，根据提示词模仿课文内容进行对话练习。\nA：你觉得……怎么样？\nB：她／他又……又……，也……。\nA：我看她／他……。\nB：她／他……，也……。\nA：你是不是……？\nB：……。"
+   },
+   {
+    "title_zh": "4 课文 课文3",
+    "body_zh": "（1）让学生听两遍录音并回答下列问题：\n他们为什么去超市？——男的有点儿饿了。\n这家超市的蛋糕怎么样？——又便宜又好吃，一块儿只要2.99元。\n他们回家后要做什么？——吃着蛋糕看电视。\n他们买了什么喝的？——他们买了咖啡。\n（2）教师领读课文两遍，然后让学生分角色朗读课文。\n（3）模仿练习\n学生两人一组，根据提示词模仿课文内容进行对话练习。\nA：我有点儿……，我们去……。\nB：好啊，这个……又……又……，……。\nA：我们……，怎么样？\nB：好啊，我……。\nA：……，太好了！"
+   },
+   {
+    "title_zh": "4 课文 课文4",
+    "body_zh": "（1）让学生听两遍录音并回答下列问题：\n男的找的服务员怎么样？——她又年轻又漂亮，工作又认真又热情，总是笑着跟客人说话。\n这个服务员叫什么？——她叫李小美。\n（2）教师领读课文两遍，让学生分角色朗读课文，注意说话人的语气。\n（3）教师给提示词，带领学生复述课文。\n提示词：又、年轻、漂亮、服务员、认真、热情、笑\n练习册相关练习：第28页／四"
+   },
+   {
+    "title_zh": "5 汉字 · 旧字新词",
+    "body_zh": "旧字新词：\n① 教师领读以前学过的词语和新词，并让学生猜猜新词的意思。\n· 领读：女、孩子、女孩\n问学生：“女孩”是什么样的人？——女的孩子。\n扩展提问：女孩子的弟弟呢？——男孩子。（根据实际情况选用）\n注意：“女孩子”不一定指很小的小孩儿，年轻的女孩儿都可以用。\n· 领读：做、客人、做客\n问学生：“做客”是什么意思？——去别人家做客人。\n注意：“做客”是一个动词。\n· 领读：新鲜、花、鲜花\n问学生：“鲜花”是什么意思？——新鲜的花。\n扩展提问：我们还学过“鲜”什么？鲜奶。（根据实际情况选用）\n② 教师领读新词扩展，通过情景，理解新词的意思和用法：\n女孩：一个女孩／好看的女孩／这是女孩的衣服。\n做客：来我家做客／去朋友家做客／欢迎你来做客。\n鲜花：买鲜花／鲜花很漂亮／这是我送你的鲜花。"
+   },
+   {
+    "title_zh": "5 汉字 · 汉字辨认练习",
+    "body_zh": "辨认下列汉字并组词。\n北：________、________　明：________、________\n比：________、________　朋：________、________\n力：________、________　饿：________、________\n为：________、________　我：________、________\n回：________、________\n四：________、________\n练习册相关练习：第28页／三／第三部分"
+   },
+   {
+    "title_zh": "6 补充课堂活动——我来做，你来猜",
+    "body_zh": "全班分成两组，每组交替派出一个学生到前边表演动作，如“听着音乐写作业”，两组学生抢答，看哪组说得又好又快。"
+   },
+   {
+    "title_zh": "7 俗语",
+    "body_zh": "教师引导学生理解俗语的含义，注意这里的“五十步”“一百步”指的都是程度，不是确定的数量。"
+   },
+   {
+    "title_zh": "8 本课小结",
+    "body_zh": "· 语言点：用“又……又……”表示性状的描述\n　　　　　用“动词₁着（宾语₁）+动词₂（宾语₂）”表示动作的伴随\n· 汉　字：旧字新词：女孩、做客、鲜花"
+   }
+  ],
+  "notes_zh": [
+   "注意：“又……又……”表示两种情况都有，所以不能说“今天又冷又暖和”。（语言点1）",
+   "注意：两个动词中，第二个是句子中的主要动词。（语言点2）",
+   "注意：“女孩子”不一定指很小的小孩儿，年轻的女孩儿都可以用。（汉字）",
+   "注意：“做客”是一个动词。（汉字）",
+   "注意这里的“五十步”“一百步”指的都是程度，不是确定的数量。（俗语）"
+  ],
+  "warmup_answers_zh": [
+   "热身1 答案：①D　②E　③B　④A　⑤F　⑥C",
+   "热身2：可留至语言点（2）“V₁着（O₁）+V₂O₂”导入时使用。"
+  ],
+  "text_questions": [
+   {
+    "text": 1,
+    "q_zh": "这是什么时候照的照片？",
+    "a_zh": "比赛后照的。"
+   },
+   {
+    "text": 1,
+    "q_zh": "那个女孩儿是几年级的？",
+    "a_zh": "是二年级的。"
+   },
+   {
+    "text": 1,
+    "q_zh": "哪个人是“我”？",
+    "a_zh": "那个拿着书笑的人。"
+   },
+   {
+    "text": 2,
+    "q_zh": "男的觉得小红怎么样？",
+    "a_zh": "她又聪明又热情，也很努力。"
+   },
+   {
+    "text": 2,
+    "q_zh": "小红怎么回答老师的问题？",
+    "a_zh": "她总是笑着回答老师的问题。"
+   },
+   {
+    "text": 2,
+    "q_zh": "喜欢小红的人多吗？",
+    "a_zh": "喜欢她的人太多了。"
+   },
+   {
+    "text": 3,
+    "q_zh": "他们为什么去超市？",
+    "a_zh": "男的有点儿饿了。"
+   },
+   {
+    "text": 3,
+    "q_zh": "这家超市的蛋糕怎么样？",
+    "a_zh": "又便宜又好吃，一块儿只要2.99元。"
+   },
+   {
+    "text": 3,
+    "q_zh": "他们回家后要做什么？",
+    "a_zh": "吃着蛋糕看电视。"
+   },
+   {
+    "text": 3,
+    "q_zh": "他们买了什么喝的？",
+    "a_zh": "他们买了咖啡。"
+   },
+   {
+    "text": 4,
+    "q_zh": "男的找的服务员怎么样？",
+    "a_zh": "她又年轻又漂亮，工作又认真又热情，总是笑着跟客人说话。"
+   },
+   {
+    "text": 4,
+    "q_zh": "这个服务员叫什么？",
+    "a_zh": "她叫李小美。"
+   }
+  ],
+  "summary_zh": "语言点：用“又……又……”表示性状的描述；用“动词₁着（宾语₁）+动词₂（宾语₂）”表示动作的伴随。汉字：旧字新词：女孩、做客、鲜花。"
+ },
+ "workbook": {
+  "ref": {
+   "book": "workbook",
+   "pages": [
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32
+   ]
+  },
+  "answers_ref": {
+   "book": "teacher",
+   "pages": [
+    152,
+    153,
+    154
+   ]
+  },
+  "sections": [
+   {
+    "n": "一、听力 第一部分",
+    "type_zh": "听力 第一部分",
+    "instruction_zh": "第1–5题：听对话，选择与对话内容一致的图片",
+    "instruction_en": "Questions 1-5: Choose the right picture for each dialogue you hear.",
+    "audio": "hsk3-workbook-04-part1.mp3",
+    "items": [
+     {
+      "n": "例",
+      "zh": "男：喂，请问张经理在吗？ 女：他正在开会，您半个小时以后再打，好吗？",
+      "transcript_zh": "男：喂，请问张经理在吗？ 女：他正在开会，您半个小时以后再打，好吗？",
+      "options": {
+       "A": "[picture] a smiling couple with a shopping cart among fruit and vegetables in a supermarket; the man holds a watermelon",
+       "B": "[picture] a laughing girl next to a cake on a cake stand",
+       "C": "[picture] football players running after a ball on a pitch",
+       "D": "[picture] a smiling woman in a uniform talking on a telephone",
+       "E": "[picture] a man sitting at a desk in an office, a woman standing beside him holding papers",
+       "F": "[picture] two smiling girls looking at the screen of a camera"
+      },
+      "answer": "D",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        26
+       ]
+      }
+     },
+     {
+      "n": 1,
+      "zh": "",
+      "options": {
+       "A": "[picture] a smiling couple with a shopping cart among fruit and vegetables in a supermarket; the man holds a watermelon",
+       "B": "[picture] a laughing girl next to a cake on a cake stand",
+       "C": "[picture] football players running after a ball on a pitch",
+       "D": "[picture] a smiling woman in a uniform talking on a telephone",
+       "E": "[picture] a man sitting at a desk in an office, a woman standing beside him holding papers",
+       "F": "[picture] two smiling girls looking at the screen of a camera"
+      },
+      "transcript_zh": "女：你去做什么？ 男：我去看足球比赛。",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        154
+       ]
+      }
+     },
+     {
+      "n": 2,
+      "zh": "",
+      "options": {
+       "A": "[picture] a smiling couple with a shopping cart among fruit and vegetables in a supermarket; the man holds a watermelon",
+       "B": "[picture] a laughing girl next to a cake on a cake stand",
+       "C": "[picture] football players running after a ball on a pitch",
+       "D": "[picture] a smiling woman in a uniform talking on a telephone",
+       "E": "[picture] a man sitting at a desk in an office, a woman standing beside him holding papers",
+       "F": "[picture] two smiling girls looking at the screen of a camera"
+      },
+      "transcript_zh": "男：那两个笑着看照片的女孩是谁？ 女：那是我妹妹和她的好朋友。",
+      "answer": "F",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        154
+       ]
+      }
+     },
+     {
+      "n": 3,
+      "zh": "",
+      "options": {
+       "A": "[picture] a smiling couple with a shopping cart among fruit and vegetables in a supermarket; the man holds a watermelon",
+       "B": "[picture] a laughing girl next to a cake on a cake stand",
+       "C": "[picture] football players running after a ball on a pitch",
+       "D": "[picture] a smiling woman in a uniform talking on a telephone",
+       "E": "[picture] a man sitting at a desk in an office, a woman standing beside him holding papers",
+       "F": "[picture] two smiling girls looking at the screen of a camera"
+      },
+      "transcript_zh": "女：我太饿了，我想吃块儿蛋糕。 男：别吃了，我们去吃饭吧。",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        154
+       ]
+      }
+     },
+     {
+      "n": 4,
+      "zh": "",
+      "options": {
+       "A": "[picture] a smiling couple with a shopping cart among fruit and vegetables in a supermarket; the man holds a watermelon",
+       "B": "[picture] a laughing girl next to a cake on a cake stand",
+       "C": "[picture] football players running after a ball on a pitch",
+       "D": "[picture] a smiling woman in a uniform talking on a telephone",
+       "E": "[picture] a man sitting at a desk in an office, a woman standing beside him holding papers",
+       "F": "[picture] two smiling girls looking at the screen of a camera"
+      },
+      "transcript_zh": "男：你怎么总是站着？快坐吧。 女：我吃了两块蛋糕，现在不想坐着。",
+      "answer": "E",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        154
+       ]
+      }
+     },
+     {
+      "n": 5,
+      "zh": "",
+      "options": {
+       "A": "[picture] a smiling couple with a shopping cart among fruit and vegetables in a supermarket; the man holds a watermelon",
+       "B": "[picture] a laughing girl next to a cake on a cake stand",
+       "C": "[picture] football players running after a ball on a pitch",
+       "D": "[picture] a smiling woman in a uniform talking on a telephone",
+       "E": "[picture] a man sitting at a desk in an office, a woman standing beside him holding papers",
+       "F": "[picture] two smiling girls looking at the screen of a camera"
+      },
+      "transcript_zh": "女：我记得那家超市的西瓜又甜又新鲜，我们去看看吧。 男：好，走吧。",
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        154
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "一、听力 第二部分",
+    "type_zh": "听力 第二部分",
+    "instruction_zh": "第6–10题：听句子，判断对错",
+    "instruction_en": "Questions 6-10: Decide whether the statements are true or false based on the sentences you hear.",
+    "audio": "hsk3-workbook-04-part2.mp3",
+    "items": [
+     {
+      "n": "例1",
+      "zh": "他希望自己很健康。",
+      "transcript_zh": "为了让自己更健康，他每天都花一个小时去锻炼身体。",
+      "answer": "√",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        27
+       ]
+      }
+     },
+     {
+      "n": "例2",
+      "zh": "那块儿手表不是他的。",
+      "transcript_zh": "今天我想早点儿回家。看了看手表，才5点。过了一会儿再看表，还是5点，我这才发现我的手表不走了。",
+      "answer": "×",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        27
+       ]
+      }
+     },
+     {
+      "n": 6,
+      "zh": "这几天他吃得很少。",
+      "transcript_zh": "这几天你总是不爱吃东西，是不是不舒服啊？",
+      "answer": "√",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        154
+       ]
+      }
+     },
+     {
+      "n": 7,
+      "zh": "他学习很好。",
+      "transcript_zh": "他又聪明又努力，老师的问题他都会回答。",
+      "answer": "√",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        154
+       ]
+      }
+     },
+     {
+      "n": 8,
+      "zh": "他手机里钱不多了。",
+      "transcript_zh": "你知道我手机里还有多少钱吗？还有一元一角一分，三个一。",
+      "answer": "√",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        154
+       ]
+      }
+     },
+     {
+      "n": 9,
+      "zh": "妈妈现在有问题。",
+      "transcript_zh": "妈妈很热情，总是帮助人，所以大家有问题，都会来找她。",
+      "answer": "×",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        154
+       ]
+      }
+     },
+     {
+      "n": 10,
+      "zh": "他在请人回答问题。",
+      "transcript_zh": "同学们，谁能告诉我这个句子是什么意思。",
+      "answer": "√",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        154
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "一、听力 第三部分",
+    "type_zh": "听力 第三部分",
+    "instruction_zh": "第11–15题：听短对话，选择正确答案",
+    "instruction_en": "Questions 11-15: Listen to the short dialogues and choose the right answers.",
+    "audio": "hsk3-workbook-04-part3.mp3",
+    "items": [
+     {
+      "n": "例",
+      "zh": "男的想让小王做什么？",
+      "transcript_zh": "男：小王，帮我开一下门，好吗？谢谢！ 女：没问题。您去超市了？买了这么多东西。 问：男的想让小王做什么？",
+      "options": {
+       "A": "开门",
+       "B": "拿东西",
+       "C": "去超市买东西"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        27
+       ]
+      }
+     },
+     {
+      "n": 11,
+      "zh": "女的让男的做什么？",
+      "options": {
+       "A": "认真写作业",
+       "B": "认真听音乐",
+       "C": "听着音乐写作业"
+      },
+      "transcript_zh": "女：你怎么总是听着音乐写作业？别听了，认真写吧。 男：没关系，你看我写得都对。 问：女的让男的做什么？",
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        154
+       ]
+      }
+     },
+     {
+      "n": 12,
+      "zh": "女的让男的做什么？",
+      "options": {
+       "A": "打电话",
+       "B": "去做客",
+       "C": "回家"
+      },
+      "transcript_zh": "男：你打电话有什么事吗？ 女：家里有人来做客，你下了班就回来吧。 问：女的让男的做什么？",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        154
+       ]
+      }
+     },
+     {
+      "n": 13,
+      "zh": "同学们要做什么？",
+      "options": {
+       "A": "去比赛",
+       "B": "看比赛",
+       "C": "去上课"
+      },
+      "transcript_zh": "女：下课了，同学们都去哪儿啊？ 男：今天下午有篮球比赛，我们要去看球赛。 问：同学们要做什么？",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        154
+       ]
+      }
+     },
+     {
+      "n": 14,
+      "zh": "关于女的，可以知道什么？",
+      "options": {
+       "A": "跟爸妈一起出国",
+       "B": "要去国外上学",
+       "C": "总是出去走"
+      },
+      "transcript_zh": "男：你真的要去国外上学？ 女：是，我爸妈也想让我去，说年轻的时候多出去走走很好。 问：关于女的，可以知道什么？",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        154
+       ]
+      }
+     },
+     {
+      "n": 15,
+      "zh": "关于女的，可以知道什么？",
+      "options": {
+       "A": "说话很快",
+       "B": "都听懂了",
+       "C": "不能回答"
+      },
+      "transcript_zh": "男：请你来回答这个问题，好吗？ 女：对不起，你说得太快了，我没听懂你的问题。 问：关于女的，可以知道什么？",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        154
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "一、听力 第四部分",
+    "type_zh": "听力 第四部分",
+    "instruction_zh": "第16–20题：听长对话，选择正确答案",
+    "instruction_en": "Questions 16-20: Listen to the dialogues and choose the right answers.",
+    "audio": "hsk3-workbook-04-part4.mp3",
+    "items": [
+     {
+      "n": "例",
+      "zh": "男的在做什么？",
+      "transcript_zh": "女：晚饭做好了，准备吃饭了。 男：等一会儿，比赛还有三分钟就结束了。 女：快点儿吧，一起吃，菜冷了就不好吃了。 男：你先吃，我马上就看完了。 问：男的在做什么？",
+      "options": {
+       "A": "洗澡",
+       "B": "吃饭",
+       "C": "看电视"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        28
+       ]
+      }
+     },
+     {
+      "n": 16,
+      "zh": "关于儿子，可以知道什么？",
+      "options": {
+       "A": "学习很认真",
+       "B": "现在三年级",
+       "C": "总是不写作业"
+      },
+      "transcript_zh": "男：你儿子上学了吗？现在几年级？ 女：他现在二年级。 男：学习怎么样？ 女：还可以，很努力，每天都复习、写作业。 问：关于儿子，可以知道什么？",
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        154
+       ]
+      }
+     },
+     {
+      "n": 17,
+      "zh": "关于女的，可以知道什么？",
+      "options": {
+       "A": "现在胖了",
+       "B": "正在照相",
+       "C": "现在上小学五年级"
+      },
+      "transcript_zh": "男：这是你小时候的照片吗？ 女：是啊，漂亮吧。 男：很漂亮，是什么时候照的？ 女：小学五年级，你看，我那时多瘦啊。 问：关于女的，可以知道什么？",
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        154
+       ]
+      }
+     },
+     {
+      "n": 18,
+      "zh": "关于小周，可以知道什么？",
+      "options": {
+       "A": "坐着吃蛋糕",
+       "B": "不年轻",
+       "C": "很漂亮，也很热情"
+      },
+      "transcript_zh": "男：站着吃蛋糕的那个人是谁？ 女：我们公司新来的年轻人，小周。 男：什么？她姓什么？ 女：姓周。小周又漂亮又热情，以后有时间我介绍你们认识一下。 问：关于小周，可以知道什么？",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        154
+       ]
+      }
+     },
+     {
+      "n": 19,
+      "zh": "他们在做什么？",
+      "options": {
+       "A": "爬山",
+       "B": "问路",
+       "C": "放照片"
+      },
+      "transcript_zh": "女：你站那么高，小心点儿。 男：好的，你看，照片放在这儿怎么样？ 女：往右边一点儿吧。 男：现在好了吧。 问：他们在做什么？",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        154
+       ]
+      }
+     },
+     {
+      "n": 20,
+      "zh": "他们打算做什么？",
+      "options": {
+       "A": "去买菜",
+       "B": "看电视",
+       "C": "去爬山"
+      },
+      "transcript_zh": "女：周末你别总是坐着看电视，出去运动一下吧。 男：好啊，我们去爬山怎么样？ 女：今天我腿疼，就去楼下走一走吧。 男：好吧，我们走着去超市买点儿菜。 问：他们打算做什么？",
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        154
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第一部分",
+    "type_zh": "阅读 第一部分",
+    "instruction_zh": "第21–25题：选择合适的问答",
+    "instruction_en": "Questions 21-25: Match the two parts of the same dialogue.",
+    "items": [
+     {
+      "n": "例",
+      "zh": "你知道怎么去那儿吗？",
+      "options": {
+       "A": "你怎么没吃我给你买的蛋糕呢？",
+       "B": "你怎么到家就坐着看电视，也不帮我做饭？",
+       "C": "你觉得小丽怎么样？",
+       "D": "这么晚了，你去哪儿？",
+       "E": "当然。我们先坐公共汽车，然后换地铁。",
+       "F": "我昨天没有认真复习。"
+      },
+      "answer": "E",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        29
+       ]
+      }
+     },
+     {
+      "n": 21,
+      "zh": "老师的问题你怎么都不回答？",
+      "options": {
+       "A": "你怎么没吃我给你买的蛋糕呢？",
+       "B": "你怎么到家就坐着看电视，也不帮我做饭？",
+       "C": "你觉得小丽怎么样？",
+       "D": "这么晚了，你去哪儿？",
+       "E": "当然。我们先坐公共汽车，然后换地铁。",
+       "F": "我昨天没有认真复习。"
+      },
+      "answer": "F",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        154
+       ]
+      }
+     },
+     {
+      "n": 22,
+      "zh": "她又聪明又热情，大家都喜欢她。",
+      "options": {
+       "A": "你怎么没吃我给你买的蛋糕呢？",
+       "B": "你怎么到家就坐着看电视，也不帮我做饭？",
+       "C": "你觉得小丽怎么样？",
+       "D": "这么晚了，你去哪儿？",
+       "E": "当然。我们先坐公共汽车，然后换地铁。",
+       "F": "我昨天没有认真复习。"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        154
+       ]
+      }
+     },
+     {
+      "n": 23,
+      "zh": "太甜了，你吃吧。",
+      "options": {
+       "A": "你怎么没吃我给你买的蛋糕呢？",
+       "B": "你怎么到家就坐着看电视，也不帮我做饭？",
+       "C": "你觉得小丽怎么样？",
+       "D": "这么晚了，你去哪儿？",
+       "E": "当然。我们先坐公共汽车，然后换地铁。",
+       "F": "我昨天没有认真复习。"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        154
+       ]
+      }
+     },
+     {
+      "n": 24,
+      "zh": "我又累又饿，你让我休息一下吧。",
+      "options": {
+       "A": "你怎么没吃我给你买的蛋糕呢？",
+       "B": "你怎么到家就坐着看电视，也不帮我做饭？",
+       "C": "你觉得小丽怎么样？",
+       "D": "这么晚了，你去哪儿？",
+       "E": "当然。我们先坐公共汽车，然后换地铁。",
+       "F": "我昨天没有认真复习。"
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        154
+       ]
+      }
+     },
+     {
+      "n": 25,
+      "zh": "有点儿饿，我去超市买点儿吃的。",
+      "options": {
+       "A": "你怎么没吃我给你买的蛋糕呢？",
+       "B": "你怎么到家就坐着看电视，也不帮我做饭？",
+       "C": "你觉得小丽怎么样？",
+       "D": "这么晚了，你去哪儿？",
+       "E": "当然。我们先坐公共汽车，然后换地铁。",
+       "F": "我昨天没有认真复习。"
+      },
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        154
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第二部分",
+    "type_zh": "阅读 第二部分",
+    "instruction_zh": "第26–30题：选择合适的词语填空",
+    "instruction_en": "Questions 26-30: Choose the proper words to fill in the brackets.",
+    "word_bank": [
+     [
+      "A 努力",
+      "B 回答",
+      "C 照片",
+      "D 比赛",
+      "E 声音",
+      "F 客人"
+     ]
+    ],
+    "items": [
+     {
+      "n": "例",
+      "zh": "她说话的（　）多好听啊！",
+      "options": {
+       "A": "努力",
+       "B": "回答",
+       "C": "照片",
+       "D": "比赛",
+       "E": "声音",
+       "F": "客人"
+      },
+      "answer": "E",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        29
+       ]
+      }
+     },
+     {
+      "n": 26,
+      "zh": "今天晚上我晚点儿回来，跟朋友去看足球（　）。",
+      "options": {
+       "A": "努力",
+       "B": "回答",
+       "C": "照片",
+       "D": "比赛",
+       "E": "声音",
+       "F": "客人"
+      },
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        154
+       ]
+      }
+     },
+     {
+      "n": 27,
+      "zh": "弟弟回了家就复习，学习非常（　）。",
+      "options": {
+       "A": "努力",
+       "B": "回答",
+       "C": "照片",
+       "D": "比赛",
+       "E": "声音",
+       "F": "客人"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        154
+       ]
+      }
+     },
+     {
+      "n": 28,
+      "zh": "家里来（　）了，你回来的时候去超市买点儿水果。",
+      "options": {
+       "A": "努力",
+       "B": "回答",
+       "C": "照片",
+       "D": "比赛",
+       "E": "声音",
+       "F": "客人"
+      },
+      "answer": "F",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        154
+       ]
+      }
+     },
+     {
+      "n": 29,
+      "zh": "A：这是我们爬山的（　），你看看。 B：这个站在你旁边的人是谁？",
+      "options": {
+       "A": "努力",
+       "B": "回答",
+       "C": "照片",
+       "D": "比赛",
+       "E": "声音",
+       "F": "客人"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        154
+       ]
+      }
+     },
+     {
+      "n": 30,
+      "zh": "A：你觉得今天的考试怎么样？ B：很多问题我都不会（　）。",
+      "options": {
+       "A": "努力",
+       "B": "回答",
+       "C": "照片",
+       "D": "比赛",
+       "E": "声音",
+       "F": "客人"
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        154
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第三部分",
+    "type_zh": "阅读 第三部分",
+    "instruction_zh": "第31–35题：选择正确答案",
+    "instruction_en": "Questions 31-35: Choose the right answers.",
+    "items": [
+     {
+      "n": "例",
+      "zh": "您是来参加今天会议的吗？您来早了一点儿，现在才八点半。您先进来坐吧。 ★会议最可能几点开始？",
+      "options": {
+       "A": "8点",
+       "B": "8点半",
+       "C": "9点"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        30
+       ]
+      }
+     },
+     {
+      "n": 31,
+      "zh": "这张照片是我姐姐11岁那年照的，那时她正在读五年级，照片上的姐姐又黑又瘦。看看现在的姐姐，又高又漂亮，大家都喜欢她。 ★姐姐：",
+      "options": {
+       "A": "现在又高又漂亮",
+       "B": "很喜欢大家",
+       "C": "现在读五年级"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        154
+       ]
+      }
+     },
+     {
+      "n": 32,
+      "zh": "3月15号早上，她正要去上班的时候，看见男朋友拿着鲜花站在门口，她一下想到了，今天是她的生日。 ★根据这段话，可以知道：",
+      "options": {
+       "A": "她那天不上班",
+       "B": "男朋友要送她花",
+       "C": "她记得男朋友的生日"
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        154
+       ]
+      }
+     },
+     {
+      "n": 33,
+      "zh": "客人有问题的时候，她总是热情回答。客人喜欢这样的服务员，经理也喜欢这样的服务员。 ★根据这段话，可以知道：",
+      "options": {
+       "A": "客人很热情",
+       "B": "大家都喜欢这个服务员",
+       "C": "经理喜欢回答问题"
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        154
+       ]
+      }
+     },
+     {
+      "n": 34,
+      "zh": "王老师有个20岁的女儿，现在读大学三年级，又聪明又漂亮，学习也很努力。 ★王老师的女儿：",
+      "options": {
+       "A": "很年轻",
+       "B": "是老师",
+       "C": "喜欢笑"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        154
+       ]
+      }
+     },
+     {
+      "n": 35,
+      "zh": "他姓高，但是长得不高，只有一米六。朋友们都说：“我们就叫你小高吧！”他笑着回答：“可以，大家都这么叫我。” ★他：",
+      "options": {
+       "A": "又高又胖",
+       "B": "姓高，也长得高",
+       "C": "喜欢小高这个名字"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        154
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "三、书写 第一部分",
+    "type_zh": "书写 第一部分",
+    "instruction_zh": "第36–40题：连词成句",
+    "instruction_en": "Questions 36-40: Rearrange the words/phrases to make sentences.",
+    "items": [
+     {
+      "n": "例",
+      "zh": "小船　上　一　河　条　有",
+      "answer": "河上有一条小船。",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        31
+       ]
+      }
+     },
+     {
+      "n": 36,
+      "zh": "女儿　聪明　他的　非常",
+      "answer": "他的女儿非常聪明。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        154
+       ]
+      }
+     },
+     {
+      "n": 37,
+      "zh": "服务员　热情　的　都很　这家饭馆",
+      "answer": "这家饭馆的服务员都很热情。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        154
+       ]
+      }
+     },
+     {
+      "n": 38,
+      "zh": "超市　哪家　买蛋糕　你去",
+      "answer": "你去哪家超市买蛋糕？",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        154
+       ]
+      }
+     },
+     {
+      "n": 39,
+      "zh": "站着　总是　吃饭　他",
+      "answer": "他总是站着吃饭。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        154
+       ]
+      }
+     },
+     {
+      "n": 40,
+      "zh": "回答　你去　一下　客人的问题",
+      "answer": "你去回答一下客人的问题。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        154
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "三、书写 第二部分",
+    "type_zh": "书写 第二部分",
+    "instruction_zh": "第41–45题：看拼音，写汉字",
+    "instruction_en": "Questions 41-45: Write the characters based on their pinyin.",
+    "items": [
+     {
+      "n": "例",
+      "zh": "没（　）系，别难过，高兴点儿。",
+      "hint_zh": "guān",
+      "answer": "关",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        31
+       ]
+      }
+     },
+     {
+      "n": 41,
+      "zh": "小明，快回家吧！你家来（　）人了。",
+      "hint_zh": "kè",
+      "answer": "客",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        154
+       ]
+      }
+     },
+     {
+      "n": 42,
+      "zh": "周老师的儿子今年上小学三年（　）。",
+      "hint_zh": "jí",
+      "answer": "级",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        154
+       ]
+      }
+     },
+     {
+      "n": 43,
+      "zh": "他工作很（　）真，经理很喜欢他。",
+      "hint_zh": "rèn",
+      "answer": "认",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        154
+       ]
+      }
+     },
+     {
+      "n": 44,
+      "zh": "你看，这是我年轻时的照（　），漂亮吗？",
+      "hint_zh": "piàn",
+      "answer": "片",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        154
+       ]
+      }
+     },
+     {
+      "n": 45,
+      "zh": "那个拿着书（　）在门口的就是我们的老师。",
+      "hint_zh": "zhàn",
+      "answer": "站",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        154
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "三、书写 第三部分",
+    "type_zh": "书写 第三部分",
+    "instruction_zh": "第46–50题：辨认汉字，选择正确的汉字填空",
+    "instruction_en": "Questions 46-50: Distinguish the characters and fill in the blanks.",
+    "items": [
+     {
+      "n": "例",
+      "zh": "我不知道________个地方在________儿。",
+      "hint_zh": "（那、哪）",
+      "answer": "那、哪",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        32
+       ]
+      }
+     },
+     {
+      "n": 46,
+      "zh": "今天晚上电视里有________京和上海的足球________赛。",
+      "hint_zh": "（北、比）",
+      "answer": "北、比",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        154
+       ]
+      }
+     },
+     {
+      "n": 47,
+      "zh": "我有一个中国女________友，她又聪________又漂亮。",
+      "hint_zh": "（明、朋）",
+      "answer": "朋、明",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        154
+       ]
+      }
+     },
+     {
+      "n": 48,
+      "zh": "他考试考得很好，因________他学习很努________。",
+      "hint_zh": "（力、为）",
+      "answer": "为、力",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        154
+       ]
+      }
+     },
+     {
+      "n": 49,
+      "zh": "你________了吗？________去超市给你买点儿蛋糕吧。",
+      "hint_zh": "（饿、我）",
+      "answer": "饿、我",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        154
+       ]
+      }
+     },
+     {
+      "n": 50,
+      "zh": "老师问了________个问题，他一个也不会________答。",
+      "hint_zh": "（回、四）",
+      "answer": "四、回",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        154
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "四、复习",
+    "type_zh": "复习",
+    "instruction_zh": "第1–2题：根据课文内容填空",
+    "instruction_en": "Questions 1-2: Fill in the blanks based on the texts in the textbook.",
+    "items": [
+     {
+      "n": 1,
+      "zh": "小红又聪明又________，也很________，总是笑着________老师的问题，大家都很喜欢她。你看，那些________在门口的都是来送她________的。",
+      "answer": "热情、努力、回答、站、鲜花",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        154
+       ]
+      }
+     },
+     {
+      "n": 2,
+      "zh": "李小美在饭馆里工作，她________漂亮又________，工作又________又热情，她________笑着跟________说话。",
+      "answer": "又、年轻、认真、总是、客人",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        154
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ "audio": {
+  "textbook": [
+   "hsk3-textbook-0401.mp3",
+   "hsk3-textbook-0402.mp3",
+   "hsk3-textbook-0403.mp3",
+   "hsk3-textbook-0404.mp3",
+   "hsk3-textbook-0405.mp3"
+  ],
+  "workbook": [
+   "hsk3-workbook-04-part1.mp3",
+   "hsk3-workbook-04-part2.mp3",
+   "hsk3-workbook-04-part3.mp3",
+   "hsk3-workbook-04-part4.mp3"
+  ]
+ },
+ "unclear": [
+  "Сурах бичиг PDF х.46 课文3: «一块只要2.99元①。» — ① зүүлт: «2.99元可以写成“2元9角（jiǎo）9分（fēn）”，1角＝0.1元，1分＝0.01元。» SourceText/SourceLine-д зүүлтийн талбар байхгүй тул энд бүтнээр нь бичээд, lines.zh-ээс ① тэмдгийг хассан. 角、分 нь дугаарласан 生词 биш.",
+  "课文3: ханзаар «一块只要2.99元／我们买两块» (儿-гүй), харин 拼音课文-д «yí kuàir／liǎng kuàir» (儿-тэй); багшийн номын асуулт-хариултад «一块儿只要2.99元» — тус бүрийг номд байгаагаар нь үлдээв.",
+  "Гарчгийн пиньинь: сурах бичгийн нүүрэнд «shuōhuà» (нийлсэн), дасгалын номын нүүр болон 拼音课文 4-т «shuō huà» (тусдаа). title_pinyin-д сурах бичгийн хэлбэрийг авсан.",
+  "Сурах бичгийн 拼音课文-ын гарчгийн пиньинь (1. Zài jiàoshì / 2. Zài jiàoshì / 3. Zài chāoshì ménkǒu / 4. Zài fànguǎnr) SourceText-д талбаргүй тул энд тэмдэглэв. 课文4-ийн ханз «在饭馆» (儿-гүй) ↔ пиньинь «fànguǎnr» (儿-тэй). Ярилцагчийн нэрийн пиньинь (Xiǎomíng, Mǎkě, Xiǎolì, tóngxué, Xiǎogāng, jīnglǐ, kèrén) lines.pinyin-д ороогүй.",
+  "课文2-ын ярилцагч «同学» (拼音课文-д жижиг үсгээр «tóngxué») — багшийн ном «男的觉得小红怎么样？» гэж эрэгтэй гэж үзсэн. 课文2-т гардаг 小红 (Xiǎohóng) 专有名词 жагсаалтад байхгүй.",
+  "Багшийн ном PDF х.32 语言点(2)-ын томьёоны хүрээ «动词₁（宾语₁）＋着＋动词₂（宾语₂）» — 着 нь 宾语₁-ийн АРД; харин сурах бичиг «V₁着（O₁）＋V₂（O₂）», багшийн ном 教学目标 болон 本课小结 «动词₁着（宾语₁）+动词₂（宾语₂）» — номын өөрийн зөрүү, тус бүрийг номд байгаагаар нь.",
+  "Багшийн ном PDF х.30 热身2: «可留至语言点（2）“V₁着（O₁）+V₂O₂”导入时使用» — O₂-ийн хаалт байхгүй; номд байгаагаар.",
+  "Сурах бичгийн 运用1 (双人活动) хятад заавар «使用“又……，又……”回答» (таслалтай), англи нь «“又……又……”» (таслалгүй); багшийн ном 语言点1 导入-д «他／她又聪明，又热情。» (таслалтай) — номд байгаагаар.",
+  "Дасгалын номын 复习1 «那些＿在门口的都是来送她＿的» (хариулт 站、鲜花) — 课文2-т «那些拿着鲜花站在门口的，都是等她的»; 复习2-ын хариулт (又、年轻) нь «她又漂亮又年轻» болж, 课文4-ийн «又年轻又漂亮»-гаас дараалал өөр. Дасгалын номын бичвэрийг өөрчлөөгүй.",
+  "Сурах бичгийн 热身2, 练一练 (2 дүрэм × 3), 练习2 选词填空 / 练习3 描述图片 / 练习4 回答问题 — албан ёсны хариулт сурах бичиг, багшийн номд хэвлэгдээгүй тул answer талбаргүй. Багшийн номд 热身2-т зөвхөн «她吃着苹果看书。» гэсэн нэвтрүүлэх өгүүлбэр бий (teacher.steps). teacher.text_questions нь 练习4-ийн асуултаас өөр асуултууд.",
+  "Багшийн номын 汉字辨认练习 (北/比 · 明/朋 · 力/为 · 饿/我 · 回/四 — 组词) хоосон зайтай, хариулт хэвлэгдээгүй. confusable_pairs-ийн дараалал багшийн номын мөрөөр (зүүн багана → баруун багана) — дасгалын номын 46–50-ийн дараалалтай таарна.",
+  "Дасгалын номын сонсгол нэг CD тэмдэгтэй (04) — аудиог prep.json-ийн хуваалтаар hsk3-workbook-04-part1…4.mp3 болгож section.audio-д оноосон (第二部分-д жишээ 2 тул 7 хэсэг).",
+  "Сонсгол 第一部分-ийн A–F сонголт нь зураг (номд текстгүй) — options-д объектив англи тайлбар «[picture] …»; сурах бичгийн 热身 болон 练习3-ын зураг ч мөн адил pictures_desc_en / picture_desc_en-д.",
+  "Дасгалын ном 听力 第三/四部分 — номд зөвхөн сонголтууд хэвлэгдсэн; item.zh-д багшийн номын хавсралтын «问：» асуултыг оруулсан (transcript_zh-д бүтнээр).",
+  "Дасгалын номын 例如 зүйлсийн хариулт (D / √ / × / A / C / E / E / C / 河上有一条小船。 / 关 / 那、哪) дасгалын номд өөрт нь хэвлэгдсэн (answer_ref = workbook).",
+  "Сурах бичгийн 运用2 (小组活动)-ын зураг (ширээ тойрон хоол идэж буй гэр бүл) application-д зургийн талбар байхгүй тул оруулаагүй."
+ ],
+ "verified_pages": [
+  26,
+  27,
+  28,
+  29,
+  30,
+  31,
+  32,
+  33,
+  34,
+  35,
+  45,
+  46,
+  47,
+  48,
+  49,
+  50,
+  51,
+  52,
+  152,
+  153,
+  154
+ ],
+ "schema_version": 1
+}

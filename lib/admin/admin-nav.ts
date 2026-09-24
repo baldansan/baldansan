@@ -48,6 +48,13 @@ export const ADMIN_NAV_PRIMARY: AdminNavItem[] = [
     match: (p) => p.startsWith("/admin/import"),
   },
   {
+    href: "/admin/source",
+    label: "Эх сурвалж",
+    icon: "📖",
+    hint: "HSK номын хичээл бүрийн бүх агуулга — номд байгаагаар.",
+    match: (p) => p.startsWith("/admin/source"),
+  },
+  {
     href: "/admin/bichleg",
     label: "Бичлэг",
     icon: "▶",

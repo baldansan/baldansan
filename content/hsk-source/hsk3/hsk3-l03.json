@@ -1,0 +1,2068 @@
+{
+ "level": "hsk3",
+ "lesson": 3,
+ "book": "HSK3",
+ "title_zh": "桌子上放着很多饮料",
+ "title_pinyin": "Zhuōzi shang fàngzhe hěn duō yǐnliào",
+ "title_en": "There are plenty of drinks on the table",
+ "textbook": {
+  "ref": {
+   "book": "textbook",
+   "pages": [
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44
+   ]
+  },
+  "warmup": [
+   {
+    "instruction_zh": "给下面的词语选择对应的图片",
+    "instruction_en": "Match the pictures with the words.",
+    "items": [
+     "①饮料 yǐnliào",
+     "②花茶 huāchá",
+     "③绿茶 lǜchá",
+     "④水果 shuǐguǒ",
+     "⑤衬衫 chènshān",
+     "⑥裤子 kùzi"
+    ],
+    "pictures_desc_en": [
+     "A: fruit — a watermelon, bananas and red apples",
+     "B: a white shirt with a dark striped tie on a hanger",
+     "C: flower tea in a glass bowl on a plate, with two small glass cups",
+     "D: four glasses of colourful juice with straws",
+     "E: a pair of black trousers",
+     "F: green tea in a clear glass"
+    ]
+   },
+   {
+    "instruction_zh": "看图片，说说这些地方有什么",
+    "instruction_en": "Look at the pictures and talk about what there are in the places given.",
+    "items": [
+     "①桌子上：________",
+     "②车里：________",
+     "③椅子下：________",
+     "④椅子上：________"
+    ],
+    "pictures_desc_en": [
+     "1: a long conference table with bottles of water, paper, pens and a pen holder, black leather chairs along it",
+     "2: a smiling man and two girls looking out of the windows of a red car",
+     "3: a small child in a yellow top crouching under a tall metal bar stool",
+     "4: several small dogs sitting on an orange armchair"
+    ]
+   }
+  ],
+  "texts": [
+   {
+    "n": 1,
+    "title_zh": "在小丽家",
+    "title_en": "At Xiaoli’s home",
+    "kind": "dialogue",
+    "audio": "hsk3-textbook-0301.mp3",
+    "lines": [
+     {
+      "speaker": "小刚",
+      "zh": "明天是晴天还是阴天？",
+      "pinyin": "Míngtiān shì qíngtiān háishi yīntiān?"
+     },
+     {
+      "speaker": "小丽",
+      "zh": "阴天，电视上说多云。怎么了？有事？",
+      "pinyin": "Yīntiān, diànshì shang shuō duōyún. Zěnme le? Yǒu shì?"
+     },
+     {
+      "speaker": "小刚",
+      "zh": "没事，我们明天要去爬山。",
+      "pinyin": "Méi shì, wǒmen míngtiān yào qù pá shān."
+     },
+     {
+      "speaker": "小丽",
+      "zh": "爬山的时候要小心点儿。",
+      "pinyin": "Pá shān de shíhou yào xiǎoxīn diǎnr."
+     },
+     {
+      "speaker": "小刚",
+      "zh": "好，你也去吗？",
+      "pinyin": "Hǎo, nǐ yě qù ma?"
+     },
+     {
+      "speaker": "小丽",
+      "zh": "我不去，我有事。",
+      "pinyin": "Wǒ bú qù, wǒ yǒu shì."
+     }
+    ],
+    "new_words": [
+     {
+      "n": 1,
+      "zh": "还是",
+      "pinyin": "háishi",
+      "pos": "conj.",
+      "en": "or",
+      "text": 1
+     },
+     {
+      "n": 2,
+      "zh": "爬山",
+      "pinyin": "pá shān",
+      "pos": "v.",
+      "en": "to climb a mountain",
+      "text": 1
+     },
+     {
+      "n": 3,
+      "zh": "小心",
+      "pinyin": "xiǎoxīn",
+      "pos": "adj.",
+      "en": "careful",
+      "text": 1
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "title_zh": "在商场",
+    "title_en": "In a mall",
+    "kind": "dialogue",
+    "audio": "hsk3-textbook-0302.mp3",
+    "lines": [
+     {
+      "speaker": "周太太",
+      "zh": "你觉得这条裤子怎么样？",
+      "pinyin": "Nǐ juéde zhè tiáo kùzi zěnmeyàng?"
+     },
+     {
+      "speaker": "周明",
+      "zh": "我记得你已经有两条这样的裤子了。",
+      "pinyin": "Wǒ jìde nǐ yǐjīng yǒu liǎng tiáo zhèyàng de kùzi le."
+     },
+     {
+      "speaker": "周太太",
+      "zh": "那我们再看看别的。",
+      "pinyin": "Nà wǒmen zài kànkan biéde."
+     },
+     {
+      "speaker": "周明",
+      "zh": "这件衬衫怎么样？",
+      "pinyin": "Zhè jiàn chènshān zěnmeyàng?"
+     },
+     {
+      "speaker": "周太太",
+      "zh": "还不错，多少钱？",
+      "pinyin": "Hái búcuò, duōshao qián?"
+     },
+     {
+      "speaker": "周明",
+      "zh": "这上面写着320元。",
+      "pinyin": "Zhè shàngmian xiězhe sān bǎi èrshí yuán."
+     },
+     {
+      "speaker": "周太太",
+      "zh": "买一件。",
+      "pinyin": "Mǎi yí jiàn."
+     }
+    ],
+    "new_words": [
+     {
+      "n": 4,
+      "zh": "条",
+      "pinyin": "tiáo",
+      "pos": "m.",
+      "en": "used for pants, dresses, etc.",
+      "text": 2
+     },
+     {
+      "n": 5,
+      "zh": "裤子",
+      "pinyin": "kùzi",
+      "pos": "n.",
+      "en": "pants",
+      "text": 2
+     },
+     {
+      "n": 6,
+      "zh": "记得",
+      "pinyin": "jìde",
+      "pos": "v.",
+      "en": "to remember",
+      "text": 2
+     },
+     {
+      "n": 7,
+      "zh": "衬衫",
+      "pinyin": "chènshān",
+      "pos": "n.",
+      "en": "shirt",
+      "text": 2
+     },
+     {
+      "n": 8,
+      "zh": "元",
+      "pinyin": "yuán",
+      "pos": "m.",
+      "en": "unit of money",
+      "text": 2
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "title_zh": "在水果店",
+    "title_en": "In a fruit store",
+    "kind": "dialogue",
+    "audio": "hsk3-textbook-0303.mp3",
+    "lines": [
+     {
+      "speaker": "周太太",
+      "zh": "这些水果真新鲜，我们买西瓜还是苹果？",
+      "pinyin": "Zhèxiē shuǐguǒ zhēn xīnxiān, wǒmen mǎi xīguā háishi píngguǒ?"
+     },
+     {
+      "speaker": "周明",
+      "zh": "西瓜吧。你看，这上面写着“西瓜不甜不要钱”。",
+      "pinyin": "Xīguā ba. Nǐ kàn, zhè shàngmian xiězhe “xīguā bù tián bú yào qián”."
+     },
+     {
+      "speaker": "周太太",
+      "zh": "那我们买一个大点儿的吧。",
+      "pinyin": "Nà wǒmen mǎi yí ge dà diǎnr de ba."
+     },
+     {
+      "speaker": "周明",
+      "zh": "再买几个苹果。",
+      "pinyin": "Zài mǎi jǐ ge píngguǒ."
+     },
+     {
+      "speaker": "周太太",
+      "zh": "好啊，今天晚上只吃水果不吃饭！",
+      "pinyin": "Hǎo a, jīntiān wǎnshang zhǐ chī shuǐguǒ bù chī fàn!"
+     }
+    ],
+    "new_words": [
+     {
+      "n": 9,
+      "zh": "新鲜",
+      "pinyin": "xīnxiān",
+      "pos": "adj.",
+      "en": "fresh",
+      "text": 3
+     },
+     {
+      "n": 10,
+      "zh": "甜",
+      "pinyin": "tián",
+      "pos": "adj.",
+      "en": "sweet",
+      "text": 3
+     },
+     {
+      "n": 11,
+      "zh": "只",
+      "pinyin": "zhǐ",
+      "pos": "adv.",
+      "en": "only, solely",
+      "text": 3
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "title_zh": "在休息室",
+    "title_en": "In the lounge",
+    "kind": "dialogue",
+    "audio": "hsk3-textbook-0304.mp3",
+    "lines": [
+     {
+      "speaker": "小丽",
+      "zh": "桌子上放着很多饮料，你喝什么？",
+      "pinyin": "Zhuōzi shang fàngzhe hěn duō yǐnliào, nǐ hē shénme?"
+     },
+     {
+      "speaker": "小刚",
+      "zh": "茶或者咖啡都可以。你呢？你喝什么？",
+      "pinyin": "Chá huòzhě kāfēi dōu kěyǐ. Nǐ ne? Nǐ hē shénme?"
+     },
+     {
+      "speaker": "小丽",
+      "zh": "我喝茶，茶是我的最爱。天冷了或者工作累了的时候，喝杯热茶会很舒服。",
+      "pinyin": "Wǒ hē chá, chá shì wǒ de zuì ài. Tiān lěngle huòzhě gōngzuò lèile de shíhou, hē bēi rè chá huì hěn shūfu."
+     },
+     {
+      "speaker": "小刚",
+      "zh": "你喜欢喝什么茶？",
+      "pinyin": "Nǐ xǐhuan hē shénme chá?"
+     },
+     {
+      "speaker": "小丽",
+      "zh": "花茶、绿茶、红茶，我都喜欢。",
+      "pinyin": "Huāchá, lǜchá, hóngchá, wǒ dōu xǐhuan."
+     }
+    ],
+    "new_words": [
+     {
+      "n": 12,
+      "zh": "放",
+      "pinyin": "fàng",
+      "pos": "v.",
+      "en": "to put, to place",
+      "text": 4
+     },
+     {
+      "n": 13,
+      "zh": "饮料",
+      "pinyin": "yǐnliào",
+      "pos": "n.",
+      "en": "drink, beverage",
+      "text": 4
+     },
+     {
+      "n": 14,
+      "zh": "或者",
+      "pinyin": "huòzhě",
+      "pos": "conj.",
+      "en": "or",
+      "text": 4
+     },
+     {
+      "n": 15,
+      "zh": "舒服",
+      "pinyin": "shūfu",
+      "pos": "adj.",
+      "en": "comfortable",
+      "text": 4
+     },
+     {
+      "n": 16,
+      "zh": "花",
+      "pinyin": "huā",
+      "pos": "n.",
+      "en": "flower",
+      "text": 4
+     },
+     {
+      "n": 17,
+      "zh": "绿",
+      "pinyin": "lǜ",
+      "pos": "adj.",
+      "en": "green",
+      "text": 4
+     }
+    ]
+   }
+  ],
+  "grammar": [
+   {
+    "n": 1,
+    "title_zh": "“还是”和“或者”",
+    "title_en": "Comparison of “还是” and “或者”",
+    "explanation_zh": "汉语中可以用“还是”和“或者”表示选择。一般来说，“还是”用在疑问句中，“或者”用在陈述句中。例如：（1）–（4）\n有的句子包含疑问形式的小句，小句中只能用“还是”。例如：（5）–（8）",
+    "explanation_en": "Both “还是” and “或者” are used to connect choices. “还是” is used in interrogative sentences, and “或者” in declarative sentences. For example: (1)–(4)\nFor sentences with an interrogative clause, only “还是” can be used in the clause. For example: (5)–(8)",
+    "examples": [
+     {
+      "n": 1,
+      "zh": "你要喝咖啡还是喝茶？"
+     },
+     {
+      "n": 2,
+      "zh": "明天是晴天还是阴天？"
+     },
+     {
+      "n": 3,
+      "zh": "今天晚上吃米饭或者面条都可以。"
+     },
+     {
+      "n": 4,
+      "zh": "天冷了或者工作累了的时候，喝杯热茶很舒服。"
+     },
+     {
+      "n": 5,
+      "zh": "周太太40岁还是50岁，我们不知道。"
+     },
+     {
+      "n": 6,
+      "zh": "小丽还没想好周末去爬山还是去看电影。"
+     },
+     {
+      "n": 7,
+      "zh": "他的生日是10月还是11月，我不记得了。"
+     },
+     {
+      "n": 8,
+      "zh": "我不知道这个人是男的还是女的。"
+     }
+    ],
+    "practice_instruction_zh": "练一练　完成句子 Complete the sentences.",
+    "practice": [
+     {
+      "n": 1,
+      "zh": "你喜欢看书________玩儿电子游戏？"
+     },
+     {
+      "n": 2,
+      "zh": "我们出去吧，买东西________看电影。"
+     },
+     {
+      "n": 3,
+      "zh": "我还没想好穿红色的裤子________咖啡色的裤子。"
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "title_zh": "存在的表达：Location Word＋V着＋Numeral＋Measure Word＋N",
+    "title_en": "The Expression of Existence: Location Word + V着 + Numeral + Measure Word + N",
+    "explanation_zh": "汉语中用“Location Word＋V着＋NP”表示什么地方有什么东西，其中V常常是“放”“写”“坐”“住”等。NP一般是不确定的事物，如“一本书”“几个人”，不能是“这本书”“周经理”等定指的名词或名词短语。例如：（表1）\n这种句子的否定形式是：“Location Word＋没V（着）＋NP”，NP前不再有量词。例如：（表2）",
+    "explanation_en": "In Chinese, the structure “Location Word + V着 + NP” means there is something somewhere. In this structure, the verb “放”, “写”, “坐”, or “住” etc. is often used, and the noun phrase is usually an indefinite object, for example “一本书” (a book) and “几个人 (several people)” rather than “这本书 (this book)” and “周经理 (Manager Zhou).” For example: (Table 1)\nThe negative form of the structure is “Location Word + 没V(着) + NP”, without a measure word before the noun phrase. For example: (Table 2)",
+    "structure_rows": [
+     "表1：Location Word | V着 | NP",
+     "桌子上 | 放着 | 一杯咖啡。",
+     "我家楼上 | 住着 | 一个老师。",
+     "上面 | 写着 | 320元。",
+     "桌子上 | 放着 | 很多饮料。",
+     "表2：Location Word | 没V着 | NP",
+     "桌子上 | 没放着 | 咖啡。",
+     "我家楼上 | 没住着 | 老师。",
+     "上面 | 没写着 | 多少钱。",
+     "桌子上 | 没放着 | 饮料。"
+    ],
+    "examples": [
+     {
+      "zh": "桌子上放着一杯咖啡。"
+     },
+     {
+      "zh": "我家楼上住着一个老师。"
+     },
+     {
+      "zh": "上面写着320元。"
+     },
+     {
+      "zh": "桌子上放着很多饮料。"
+     },
+     {
+      "zh": "桌子上没放着咖啡。",
+      "note_zh": "否定形式"
+     },
+     {
+      "zh": "我家楼上没住着老师。",
+      "note_zh": "否定形式"
+     },
+     {
+      "zh": "上面没写着多少钱。",
+      "note_zh": "否定形式"
+     },
+     {
+      "zh": "桌子上没放着饮料。",
+      "note_zh": "否定形式"
+     }
+    ],
+    "practice_instruction_zh": "练一练　完成句子 Complete the sentences.",
+    "practice": [
+     {
+      "n": 1,
+      "zh": "我家的桌子上放着________。"
+     },
+     {
+      "n": 2,
+      "zh": "我的电脑旁边没放着________。"
+     },
+     {
+      "n": 3,
+      "zh": "公共汽车上坐着________。"
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "title_zh": "“会”表示可能",
+    "title_en": "“会” Indicating the Possibility",
+    "explanation_zh": "助动词“会”用在句中，表示可能，通常用于未发生的事件。例如：",
+    "explanation_en": "The auxiliary verb “会” is used in a sentence to indicate the possibility, usually referring to something that hasn’t happened. For example:",
+    "examples": [
+     {
+      "n": 1,
+      "zh": "你穿得那么少，会感冒的。"
+     },
+     {
+      "n": 2,
+      "zh": "别担心，我会照顾好自己。"
+     },
+     {
+      "n": 3,
+      "zh": "你不给他打电话吗？他会不高兴的。"
+     },
+     {
+      "n": 4,
+      "zh": "喝杯热茶会很舒服。"
+     }
+    ],
+    "practice_instruction_zh": "练一练　完成句子 Complete the sentences.",
+    "practice": [
+     {
+      "n": 1,
+      "zh": "快起床吧，你________。"
+     },
+     {
+      "n": 2,
+      "zh": "你怎么又没吃早饭，________。"
+     },
+     {
+      "n": 3,
+      "zh": "医生告诉我，不运动，________。"
+     }
+    ]
+   }
+  ],
+  "exercises": [
+   {
+    "n": 1,
+    "type_zh": "朗读",
+    "instruction_zh": "朗读下列短语和句子",
+    "instruction_en": "Read the following phrases and sentences aloud.",
+    "audio": "hsk3-textbook-0305.mp3",
+    "items": [
+     {
+      "n": 1,
+      "zh": "记得：不记得／记得带钱／你还记得我吗／我记得你已经有两条这样的裤子了。"
+     },
+     {
+      "n": 2,
+      "zh": "新鲜：很新鲜／不新鲜／新鲜的鱼／这些水果真新鲜。"
+     },
+     {
+      "n": 3,
+      "zh": "放：放在桌子上／放在外边／放在哪儿／桌子上放着很多饮料。"
+     },
+     {
+      "n": 4,
+      "zh": "只：只学汉语／只会说，不会写／这儿只卖书，不卖水／今天晚上只吃水果不吃饭。"
+     },
+     {
+      "n": 5,
+      "zh": "条：一条鱼／一条裤子／一条路／你觉得这条裤子怎么样？"
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "type_zh": "选词填空",
+    "instruction_zh": "选择恰当的词语填空",
+    "instruction_en": "Choose the proper words to fill in the blanks.",
+    "word_bank": [
+     [
+      "舒服",
+      "裤子",
+      "衬衫",
+      "或者",
+      "还是"
+     ],
+     [
+      "小心",
+      "爬山",
+      "只",
+      "放",
+      "记得"
+     ]
+    ],
+    "items": [
+     {
+      "n": 1,
+      "zh": "你想喝点儿什么？茶________咖啡？"
+     },
+     {
+      "n": 2,
+      "zh": "这条________一点儿也不贵，买吧。"
+     },
+     {
+      "n": 3,
+      "zh": "我每个周末都在家看电视________听音乐，不工作。"
+     },
+     {
+      "n": 4,
+      "zh": "你穿昨天新买的那件________吧。"
+     },
+     {
+      "n": 5,
+      "zh": "我不喜欢南方，太热了，不________。"
+     },
+     {
+      "n": 6,
+      "zh": "A：我们看过这个电影，你________是什么时候吗？ B：去年8月。"
+     },
+     {
+      "n": 7,
+      "zh": "A：你跟我一起出去走走吧。 B：我现在________想睡觉。"
+     },
+     {
+      "n": 8,
+      "zh": "A：饭菜做好了吗？ B：做好了，已经________饭桌上了。"
+     },
+     {
+      "n": 9,
+      "zh": "A：您慢走，路上________点儿。 B：谢谢你，再见。"
+     },
+     {
+      "n": 10,
+      "zh": "A：上个周末你去哪儿了？ B：我跟朋友去________了。"
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "type_zh": "描述图片",
+    "instruction_zh": "用本课新学的语言点和词语描述图片",
+    "instruction_en": "Describe the picture using the newly-learned language points and words.",
+    "items": [
+     {
+      "n": 1,
+      "zh": "A：你想什么呢？ B：桌子上________这么多好吃的，你说我吃什么好？ A：水果________面包都会对你的身体好。 B：那我吃水果吧。",
+      "picture_desc_en": "A young woman resting her face in her hands, thinking, at a table with a plate of fruit (bananas, apples, oranges) and a plate of doughnuts/pastries."
+     },
+     {
+      "n": 2,
+      "zh": "A：我们什么时候去上海？ B：我不________了。你看看机票。 A：机票上________12月4号。 B：那就是后天。",
+      "picture_desc_en": "Two red economy-class boarding passes."
+     },
+     {
+      "n": 3,
+      "zh": "A：我的笔呢？你看见了吗？ B：红的________黑的？ A：红的那个。 B：电脑旁边________，是你的吗？",
+      "picture_desc_en": "A laptop, a cup of black coffee and a notebook with a red pen on a wooden table."
+     },
+     {
+      "n": 4,
+      "zh": "A：你家楼上________很多人吗？ B：不，只有两个学生。 A：他们是大学生________中学生？ B：大学生。",
+      "picture_desc_en": "A multi-storey residential apartment building seen from below."
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "type_zh": "回答问题",
+    "instruction_zh": "根据课文回答问题",
+    "instruction_en": "Answer the questions according to the texts.",
+    "items": [
+     {
+      "n": 1,
+      "zh": "明天小刚去做什么？小丽也去吗？"
+     },
+     {
+      "n": 2,
+      "zh": "周太太买裤子了吗？为什么？"
+     },
+     {
+      "n": 3,
+      "zh": "周太太买什么了？多少钱？"
+     },
+     {
+      "n": 4,
+      "zh": "周明和太太买了什么水果？"
+     },
+     {
+      "n": 5,
+      "zh": "小刚喜欢喝什么？"
+     },
+     {
+      "n": 6,
+      "zh": "小丽喜欢喝什么？为什么？"
+     }
+    ]
+   }
+  ],
+  "characters": {
+   "knowledge_title_zh": "旧字新词",
+   "knowledge_zh": "读读下面的词语，想想组成的新词是什么意思。",
+   "knowledge_en": "Read the following words and guess the meanings of the newly-formed ones.",
+   "word_game": [
+    {
+     "parts": [
+      "新鲜",
+      "牛奶"
+     ],
+     "result": "鲜奶"
+    },
+    {
+     "parts": [
+      "冷",
+      "饮料"
+     ],
+     "result": "冷饮"
+    },
+    {
+     "parts": [
+      "上边",
+      "前面"
+     ],
+     "result": "上面"
+    }
+   ],
+   "confusable_pairs": [
+    [
+     "山",
+     "出"
+    ],
+    [
+     "得",
+     "很"
+    ],
+    [
+     "者",
+     "都"
+    ],
+    [
+     "服",
+     "朋"
+    ],
+    [
+     "饮",
+     "次"
+    ]
+   ]
+  },
+  "application": [
+   {
+    "title_zh": "双人活动",
+    "instruction_zh": "互相调查对方的情况，完成调查表。",
+    "instruction_en": "Make a survey of your partner and fill in the questionnaire.",
+    "example_zh": [
+     "表格：| | 问 | 答 |",
+     "| 1 | 你喜欢早睡早起还是晚睡晚起？ | |",
+     "| 2 | 早饭你常喝咖啡还是牛奶？ | |",
+     "| 3 | 你喜欢走路还是坐车？ | |",
+     "| 4 | 你喜欢晴天还是雨天？ | |",
+     "| 5 | 你喜欢看电视还是看电影？ | |",
+     "| 6 | 你喜欢饭前吃水果还是饭后吃水果？ | |"
+    ]
+   },
+   {
+    "title_zh": "小组活动",
+    "instruction_zh": "3~4人一组，仿照例子，一个人介绍自己的家，其他人根据介绍画图，然后选出画得最准确的人。",
+    "instruction_en": "Work in groups of 3-4. Follow the example. One describes his/her home, and the others draw pictures based on the description. Then choose the one whose drawing is the most accurate.",
+    "example_zh": [
+     "例如：我的房间里放着一张桌子。"
+    ]
+   }
+  ],
+  "saying": {
+   "zh": "茶好客常来",
+   "pinyin": "Chá hǎo kè cháng lái",
+   "en": "Good tea attracts frequenters",
+   "explanation_zh": "“茶好客常来”的意思是，如果茶很好喝，客人就会经常来。这句话常用来比喻只要东西好，顾客就会喜欢。",
+   "explanation_en": "“茶好客常来” means “if the tea is good, guests will often come”, used metaphorically to indicate that good stuff will surely be liked by customers."
+  }
+ },
+ "teacher": {
+  "ref": {
+   "book": "teacher",
+   "pages": [
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29
+   ]
+  },
+  "objectives_zh": [
+   "重点词语：学生能够熟练掌握：“小心、条、记得、衬衫、新鲜、甜、只、放、饮料、舒服”的词义和用法。",
+   "语言点：学生能够了解并掌握：（1）“还是”和“或者”表示选择（2）“方位词＋动词＋着＋名词（短语）”表示存在（3）助动词“会”表示可能",
+   "汉字：学生能够：根据已学生词猜测出3个旧字新词“鲜奶、冷饮、上面”的意思",
+   "功能：学生能够：（1）分别用提问、陈述的方式表示选择（2）描述某处存在某物或某人（3）表达可能发生的情况"
+  ],
+  "steps": [
+   {
+    "title_zh": "复习旧课",
+    "body_zh": "1 教师出示第2课的热身图片，请学生根据图片说出生词。\n2 教师根据第2课的内容进行提问。\n（1）你爬过什么山？上去和下来的时候，你觉得一样吗？\n（2）今天早上你是几点出来的？打算什么时候回去？\n（3）下课后你去哪儿了？\n（4）你昨天忙不忙？做了什么？\n（5）汉语课的同学谁最忙？他／她每天做什么？"
+   },
+   {
+    "title_zh": "学习新课 1 热身",
+    "body_zh": "热身1：学生两人一组，合作完成热身1；教师出示热身1的图片，让学生根据图片说出词语，核对答案；最后全体学生齐读热身环节所有词语，要求语音标准，声调准确。\n答案：①D　②C　③F　④A　⑤B　⑥E\n热身2：可留至语言点（2）“存在的表达”导入时使用。"
+   },
+   {
+    "title_zh": "2 生词",
+    "body_zh": "（1）生词快速认读及正音\n还是、爬山、小心、条、裤子、记得、衬衫、元、新鲜、甜、只、放、饮料、或者、舒服、花、绿\n· 教师先带领学生快速认读一遍生词；\n· 取消拼音，带领学生再次认读；\n· 请单个学生独自认读2-3个生词；\n· 最后全班一起快速认读所有的生词。\n（2）生词讲解方式\n· 直观法（如图片、照片、实物等）展示：爬山、裤子、衬衫、饮料、元（角、分）、甜\n· 肢体动作展示：放、舒服\n· 对比法展示：花（茶）、绿（茶）\n· 启发式引导：只\n教师给出句子部分内容让学生进行补充，如：老师不喜欢喝咖啡，不喜欢喝牛奶，只喜欢喝水。\n（3）重点生词扩展及常用搭配\n小心—小心点儿—小心车\n条—一条腿—一条裤子—你已经有两条这样的裤子了。\n记得—记得妈妈的生日—记得他的名字—你记得我们学过什么吗？\n　—不记得—我们是什么时候去南方的？我不记得了。\n衬衫—一件衬衫—穿衬衫—白衬衫\n　—蓝衬衫—你喜欢什么颜色的衬衫？\n新鲜—牛奶很新鲜—新鲜的水果\n　—不新鲜\n甜—很甜—甜牛奶—太甜了—什么东西很甜？\n放—放在桌子上—放书\n只—我只会说一点儿汉语—今天早上他只喝了一杯牛奶。\n　—办公室只有小王一个人。\n饮料—买饮料—喝饮料—你喜欢喝什么饮料？\n舒服—很舒服—这件衬衫很舒服。—这把椅子很舒服。\n　—你哪儿不舒服？—不舒服的时候你做什么？\n练习册相关练习：第15页／一／第一部分，第18页／二／第二部分"
+   },
+   {
+    "title_zh": "3 语言点（1）“还是”和“或者”",
+    "body_zh": "① 语言点解析\n汉语中可以用“还是”和“或者”表示选择。一般来说，“还是”用在疑问句中，“或者”用在陈述句中。有的陈述句包含疑问形式的小句，这时小句中只能用“还是”。\n［A还是B？］\n［A或者B。］\n② 语言点导入\n教师可就地取材，利用本班学生及实际物品导入语言点。\n教师请一位男生起立，并面向全班提问。\n教师：他是老师还是学生？\n学生：他是学生。\n教师：他是男孩子还是女孩子？\n学生：他是男孩子。\n教师手里拿着咖啡，摇头；拿着绿茶，点头。\n教师：老师喜欢喝咖啡还是绿茶？\n学生：老师喜欢喝绿茶。\n教师拿着咖啡和绿茶，示意全班向某一位学生提问。\n全班：你喜欢喝咖啡还是绿茶？\n学生：我喜欢……。\n教师拿着绿茶和水，示意学生提问。\n学生：老师，您喜欢喝绿茶还是水？\n教师：我喜欢喝绿茶，也喜欢喝水。——绿茶或者水我都喜欢喝。\n③ 语言点操练\n教师可利用本课热身1的图片操练本语言点。\n教师展示图片，示意学生提问、回答：\n目标句：你喜欢吃苹果还是香蕉？\n　　　　你喜欢穿白衬衫还是红衬衫？\n　　　　你想喝花茶还是绿茶？\n④ 语言点扩展练习\n教师让学生两两一组，互相询问：\n爱好\n周末的打算\n明天的天气"
+   },
+   {
+    "title_zh": "3 语言点（2）存在的表达",
+    "body_zh": "① 语言点解析\n汉语中可以在方位词后用“动词＋着＋名词（短语）”表示什么地方有什么东西，其中动词常常是“放”“写”“坐”“住”等。名词短语一般是不确定的事物，如“一本书”“几个人”，不能是“这本书”“周经理”等定指的名词或名词短语。\n［地方＋动词＋着＋名词（短语）］\n② 语言点导入\n教师可利用本课热身2的图片导入语言点。\n教师带领学生认读图片下的方位词。\n教师示范：\n教师：桌子上有什么？\n学生：桌子上有一些纸、笔和几瓶（píng）水。\n教师请学生与同桌合作，互相询问，共同完成热身2。\n教师请学生回答图片中这些地方有什么。\n教师利用学生的回答，导入本课句型：桌子上放着一些纸、笔和几瓶水。\n③ 语言点操练\n教师可就地取材，利用教室、课桌、书本等进行操练。\n目标句：他的桌子上放着一本词典。\n　　　　教室里坐着15个学生。\n　　　　老师的书上写着“XXX”。\n注意：这种句子的否定形式是在动词前加“没”，同时名词前不再有量词，如：桌子上没放着电脑。"
+   },
+   {
+    "title_zh": "3 语言点（3）“会”表示可能",
+    "body_zh": "① 语言点解析\n助动词“会”用在句中，表示可能，通常用于未发生的事件中。\n② 语言点导入\n教师可给出情境，引入语言点。\n教师：外面正在下大雨呢，我没有伞，可以出去玩儿吗？\n学生：你不能出去玩儿。\n教师：为什么？\n学生：外面下大雨呢，你会生病。\n③ 语言点操练\n请学生根据提示用新学的语言点完成句子。\n很晚回家，妈妈不高兴\n晚上不睡觉，第二天头疼\n天气不冷，不生病\n④ 语言点扩展练习\n教师给出情境，请学生回答。\n我喜欢吃甜东西，一直吃，可以吗？——一直吃甜东西会胖。\n朋友的生日，你打算送什么？——（他很喜欢看书，）我会送给他一本书。\n做什么对身体好？——多喝水会对身体好。"
+   },
+   {
+    "title_zh": "4 课文 课文1",
+    "body_zh": "（1）让学生听两遍录音并回答下列问题：\n明天是晴天还是阴天？——明天阴天，多云。\n男的（小刚）明天有什么事情？——他要去爬山。\n女的（小丽）对小刚说什么？——爬山的时候要小心点儿。\n小丽也去爬山吗？为什么？——她不去，她有事。\n（2）教师领读课文两遍，让学生分角色朗读课文，注意说话人的语气。\n（3）教师给提示词，带领学生复述课文。\n提示词：电视上说、爬山、小心点儿、有事"
+   },
+   {
+    "title_zh": "4 课文 课文2",
+    "body_zh": "（1）让学生听两遍录音并回答下列问题：\n男的（周明）让女的（周太太）买这条裤子吗？为什么？——周明不让太太买，因为他记得太太已经有两条这样的裤子了。\n周太太还要买什么？——周太太还想买一件衬衫。\n衬衫多少钱？——320元。\n（2）教师领读课文两遍，让学生分角色朗读课文。\n（3）模仿练习\n学生两人一组，根据提示词模仿课文内容进行对话练习。\nA：你觉得……怎么样？\nB：我记得……。\nA：那我们……。\nB：……怎么样？\nA：……，多少钱？\nB：这上面写着……。\nA：买一……。"
+   },
+   {
+    "title_zh": "4 课文 课文3",
+    "body_zh": "（1）让学生听两遍录音并回答下列问题：\n女的（周太太）问男的（周明）什么？——“我们”买西瓜还是苹果？\n他们要买什么水果？为什么？——他们要买西瓜，因为上面写着“西瓜不甜不要钱”。\n他们买了什么水果？——他们买了一个大西瓜和几个苹果。\n今天晚上他们吃什么？——今天晚上他们只吃水果不吃饭。\n（2）教师领读课文两遍，让学生分角色朗读课文，注意说话人的语气。\n（3）教师给提示词，带领学生复述课文。\n提示词：还是、写着、甜、大西瓜、苹果、只"
+   },
+   {
+    "title_zh": "4 课文 课文4",
+    "body_zh": "（1）让学生听两遍录音并回答下列问题：\n桌子上有什么？——桌子上放着很多饮料。\n他们要喝什么？——男的喝茶或者咖啡都可以，女的喝茶。\n女的（小丽）为什么喜欢喝热茶？——天冷了或者工作累了的时候，喝杯热茶会很舒服。\n小丽喜欢喝什么茶？——花茶、绿茶、红茶，她都喜欢。\n（2）教师领读课文两遍，让学生分角色朗读课文。\n（3）模仿练习\n学生两人一组，根据提示词模仿课文内容进行对话练习。\nA：……放着……，你想……？\nB：……或者……都可以。你呢？（你喝什么？）\nA：我……，……是我的最爱。……或者……的时候……，……很……。\nB：你喜欢……？\nA：……，我都喜欢。\n练习册相关练习：第21页／四"
+   },
+   {
+    "title_zh": "5 汉字",
+    "body_zh": "旧字新词：\n① 教师领读以前学过的词语和新词，并让学生猜猜新词的意思。\n· 领读：新鲜、牛奶、鲜奶\n问学生：“鲜奶”是什么？——新鲜的牛奶。\n扩展提问：新鲜的鱼、肉怎么说？——鲜鱼、鲜肉。（根据实际情况选用）\n· 领读：冷、饮料、冷饮\n问学生：“冷饮”是什么意思？——凉的饮料。\n扩展提问：热的饮料怎么说？——热饮。（根据实际情况选用）\n· 领读：上边、前面、上面\n问学生：“上面”是什么意思？——上边。\n扩展提问：还有什么“面”？——下面、前面、后面、里面、外面。（根据实际情况选用）\n② 教师领读新词扩展，通过情景，理解新词的意思和用法：\n鲜奶：买鲜奶／卖鲜奶／请问，鲜奶在哪儿买？\n冷饮：喝冷饮／冷饮店／今天真热，我请你喝冷饮吧。\n上面：在上面／上面的字／你家上面住着什么人？\n汉字辨认练习：\n辨认下列汉字并组词。\n山：________、________　出：________、________\n得：________、________　很：________、________\n者：________、________　都：________、________\n服：________、________　朋：________、________\n饮：________、________　次：________、________\n练习册相关练习：第21页／三／第三部分"
+   },
+   {
+    "title_zh": "6 补充课堂活动——我说原因，你说结果",
+    "body_zh": "两个学生一组，教师发给每组几张词卡，一个学生根据词卡上的生词，说出一个原因，例如“下雨没带伞，在外边走路”；另一个学生根据该原因，说出相应的结果“你会感冒的”。\n参考词语：下雨、吃饭、睡觉、喝饮料、玩儿电脑游戏……"
+   },
+   {
+    "title_zh": "7 俗语",
+    "body_zh": "教师引导学生理解俗语的含义，注意这里的“茶”并不一定只是“茶”，而是某个能吸引人的东西，比如一个学校的课程很有意思，吸引很多学生来学习，一个饭馆儿的菜做得很好，很多客人去吃，等等，都可以用“茶好客常来”来比喻。"
+   },
+   {
+    "title_zh": "8 本课小结",
+    "body_zh": "· 语言点：“还是”和“或者”表示选择\n　　　　　“动词＋着”表示存在\n　　　　　“会”表示可能\n· 汉　字：旧字新词：鲜奶、冷饮、外面"
+   }
+  ],
+  "notes_zh": [
+   "注意：这种句子的否定形式是在动词前加“没”，同时名词前不再有量词，如：桌子上没放着电脑。（语言点2）",
+   "“还是”用在疑问句中，“或者”用在陈述句中。有的陈述句包含疑问形式的小句，这时小句中只能用“还是”。（语言点1）",
+   "“会”表示可能，通常用于未发生的事件中。（语言点3）",
+   "注意这里的“茶”并不一定只是“茶”，而是某个能吸引人的东西。（俗语）"
+  ],
+  "warmup_answers_zh": [
+   "热身1 答案：①D　②C　③F　④A　⑤B　⑥E",
+   "热身2：可留至语言点（2）“存在的表达”导入时使用。（语言点2导入：教师：桌子上有什么？学生：桌子上有一些纸、笔和几瓶（píng）水。→ 桌子上放着一些纸、笔和几瓶水。）"
+  ],
+  "text_questions": [
+   {
+    "text": 1,
+    "q_zh": "明天是晴天还是阴天？",
+    "a_zh": "明天阴天，多云。"
+   },
+   {
+    "text": 1,
+    "q_zh": "男的（小刚）明天有什么事情？",
+    "a_zh": "他要去爬山。"
+   },
+   {
+    "text": 1,
+    "q_zh": "女的（小丽）对小刚说什么？",
+    "a_zh": "爬山的时候要小心点儿。"
+   },
+   {
+    "text": 1,
+    "q_zh": "小丽也去爬山吗？为什么？",
+    "a_zh": "她不去，她有事。"
+   },
+   {
+    "text": 2,
+    "q_zh": "男的（周明）让女的（周太太）买这条裤子吗？为什么？",
+    "a_zh": "周明不让太太买，因为他记得太太已经有两条这样的裤子了。"
+   },
+   {
+    "text": 2,
+    "q_zh": "周太太还要买什么？",
+    "a_zh": "周太太还想买一件衬衫。"
+   },
+   {
+    "text": 2,
+    "q_zh": "衬衫多少钱？",
+    "a_zh": "320元。"
+   },
+   {
+    "text": 3,
+    "q_zh": "女的（周太太）问男的（周明）什么？",
+    "a_zh": "“我们”买西瓜还是苹果？"
+   },
+   {
+    "text": 3,
+    "q_zh": "他们要买什么水果？为什么？",
+    "a_zh": "他们要买西瓜，因为上面写着“西瓜不甜不要钱”。"
+   },
+   {
+    "text": 3,
+    "q_zh": "他们买了什么水果？",
+    "a_zh": "他们买了一个大西瓜和几个苹果。"
+   },
+   {
+    "text": 3,
+    "q_zh": "今天晚上他们吃什么？",
+    "a_zh": "今天晚上他们只吃水果不吃饭。"
+   },
+   {
+    "text": 4,
+    "q_zh": "桌子上有什么？",
+    "a_zh": "桌子上放着很多饮料。"
+   },
+   {
+    "text": 4,
+    "q_zh": "他们要喝什么？",
+    "a_zh": "男的喝茶或者咖啡都可以，女的喝茶。"
+   },
+   {
+    "text": 4,
+    "q_zh": "女的（小丽）为什么喜欢喝热茶？",
+    "a_zh": "天冷了或者工作累了的时候，喝杯热茶会很舒服。"
+   },
+   {
+    "text": 4,
+    "q_zh": "小丽喜欢喝什么茶？",
+    "a_zh": "花茶、绿茶、红茶，她都喜欢。"
+   }
+  ],
+  "summary_zh": "语言点：“还是”和“或者”表示选择；“动词＋着”表示存在；“会”表示可能。汉字：旧字新词：鲜奶、冷饮、外面。"
+ },
+ "workbook": {
+  "ref": {
+   "book": "workbook",
+   "pages": [
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25
+   ]
+  },
+  "sections": [
+   {
+    "n": "一、听力 第一部分",
+    "type_zh": "听力 第一部分",
+    "instruction_zh": "第1–5题：听对话，选择与对话内容一致的图片",
+    "instruction_en": "Questions 1-5: Choose the right picture for each dialogue you hear.",
+    "audio": "hsk3-workbook-03-part1.mp3",
+    "items": [
+     {
+      "n": "例",
+      "zh": "男：喂，请问张经理在吗？ 女：他正在开会，您半个小时以后再打，好吗？",
+      "transcript_zh": "男：喂，请问张经理在吗？ 女：他正在开会，您半个小时以后再打，好吗？",
+      "options": {
+       "A": "[picture] several shirts hanging on hangers on a rail",
+       "B": "[picture] flower tea in a glass bowl on a plate, with two small glass cups",
+       "C": "[picture] a pile of fruit — pineapple, grapes, apples, strawberries, bananas",
+       "D": "[picture] a smiling woman in a uniform talking on a telephone",
+       "E": "[picture] a man in a suit pulling a suitcase towards a small jet plane",
+       "F": "[picture] a pair of folded plaid (checked) trousers"
+      },
+      "answer": "D",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        19
+       ]
+      }
+     },
+     {
+      "n": 1,
+      "zh": "",
+      "options": {
+       "A": "[picture] several shirts hanging on hangers on a rail",
+       "B": "[picture] flower tea in a glass bowl on a plate, with two small glass cups",
+       "C": "[picture] a pile of fruit — pineapple, grapes, apples, strawberries, bananas",
+       "D": "[picture] a smiling woman in a uniform talking on a telephone",
+       "E": "[picture] a man in a suit pulling a suitcase towards a small jet plane",
+       "F": "[picture] a pair of folded plaid (checked) trousers"
+      },
+      "transcript_zh": "男：这花茶在哪儿买的？真好喝！ 女：我也不知道，一个朋友送的。",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        151
+       ]
+      }
+     },
+     {
+      "n": 2,
+      "zh": "",
+      "options": {
+       "A": "[picture] several shirts hanging on hangers on a rail",
+       "B": "[picture] flower tea in a glass bowl on a plate, with two small glass cups",
+       "C": "[picture] a pile of fruit — pineapple, grapes, apples, strawberries, bananas",
+       "D": "[picture] a smiling woman in a uniform talking on a telephone",
+       "E": "[picture] a man in a suit pulling a suitcase towards a small jet plane",
+       "F": "[picture] a pair of folded plaid (checked) trousers"
+      },
+      "transcript_zh": "女：小心点儿，到了北京就给我打电话。 男：好的，我下了飞机就给你打电话。",
+      "answer": "E",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        151
+       ]
+      }
+     },
+     {
+      "n": 3,
+      "zh": "",
+      "options": {
+       "A": "[picture] several shirts hanging on hangers on a rail",
+       "B": "[picture] flower tea in a glass bowl on a plate, with two small glass cups",
+       "C": "[picture] a pile of fruit — pineapple, grapes, apples, strawberries, bananas",
+       "D": "[picture] a smiling woman in a uniform talking on a telephone",
+       "E": "[picture] a man in a suit pulling a suitcase towards a small jet plane",
+       "F": "[picture] a pair of folded plaid (checked) trousers"
+      },
+      "transcript_zh": "女：这些水果都很新鲜，你想吃什么？ 男：给我一个苹果吧。",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        151
+       ]
+      }
+     },
+     {
+      "n": 4,
+      "zh": "",
+      "options": {
+       "A": "[picture] several shirts hanging on hangers on a rail",
+       "B": "[picture] flower tea in a glass bowl on a plate, with two small glass cups",
+       "C": "[picture] a pile of fruit — pineapple, grapes, apples, strawberries, bananas",
+       "D": "[picture] a smiling woman in a uniform talking on a telephone",
+       "E": "[picture] a man in a suit pulling a suitcase towards a small jet plane",
+       "F": "[picture] a pair of folded plaid (checked) trousers"
+      },
+      "transcript_zh": "女：爸爸的生日快到了，我想送他一条裤子，你看这条怎么样？ 男：颜色不错，但是我觉得大了一点儿。",
+      "answer": "F",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        151
+       ]
+      }
+     },
+     {
+      "n": 5,
+      "zh": "",
+      "options": {
+       "A": "[picture] several shirts hanging on hangers on a rail",
+       "B": "[picture] flower tea in a glass bowl on a plate, with two small glass cups",
+       "C": "[picture] a pile of fruit — pineapple, grapes, apples, strawberries, bananas",
+       "D": "[picture] a smiling woman in a uniform talking on a telephone",
+       "E": "[picture] a man in a suit pulling a suitcase towards a small jet plane",
+       "F": "[picture] a pair of folded plaid (checked) trousers"
+      },
+      "transcript_zh": "男：我想买件衬衫。 女：颜色很多啊，你喜欢红的还是绿的？",
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        151
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "一、听力 第二部分",
+    "type_zh": "听力 第二部分",
+    "instruction_zh": "第6–10题：听句子，判断对错",
+    "instruction_en": "Questions 6-10: Decide whether the statements are true or false based on the sentences you hear.",
+    "audio": "hsk3-workbook-03-part2.mp3",
+    "items": [
+     {
+      "n": "例1",
+      "zh": "他希望自己很健康。",
+      "transcript_zh": "为了让自己更健康，他每天都花一个小时去锻炼身体。",
+      "answer": "√",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        20
+       ]
+      }
+     },
+     {
+      "n": "例2",
+      "zh": "那块儿手表不是他的。",
+      "transcript_zh": "今天我想早点儿回家。看了看手表，才5点。过了一会儿再看表，还是5点，我这才发现我的手表不走了。",
+      "answer": "×",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        20
+       ]
+      }
+     },
+     {
+      "n": 6,
+      "zh": "他不认识那个女孩儿。",
+      "transcript_zh": "你还记得前边的那个女孩儿吗？去年我们去上海玩儿的时候认识的。",
+      "answer": "×",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        151
+       ]
+      }
+     },
+     {
+      "n": 7,
+      "zh": "这条裤子现在便宜得多。",
+      "transcript_zh": "我记得这条裤子上个月是八百元，现在只要四百元，我一次买了两条。",
+      "answer": "√",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        151
+       ]
+      }
+     },
+     {
+      "n": 8,
+      "zh": "运动时可以听歌。",
+      "transcript_zh": "工作很累的时候可以听歌、玩儿游戏或者去运动，这样，你会觉得舒服点儿。",
+      "answer": "×",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        151
+       ]
+      }
+     },
+     {
+      "n": 9,
+      "zh": "他不知道鲜奶在哪儿。",
+      "transcript_zh": "我刚买的鲜奶你放到哪儿了？我现在想喝。",
+      "answer": "√",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        151
+       ]
+      }
+     },
+     {
+      "n": 10,
+      "zh": "她菜吃得很少。",
+      "transcript_zh": "你怎么只吃饭不吃菜啊，来，多吃点儿。",
+      "answer": "√",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        151
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "一、听力 第三部分",
+    "type_zh": "听力 第三部分",
+    "instruction_zh": "第11–15题：听短对话，选择正确答案",
+    "instruction_en": "Questions 11-15: Listen to the short dialogues and choose the right answers.",
+    "audio": "hsk3-workbook-03-part3.mp3",
+    "items": [
+     {
+      "n": "例",
+      "zh": "男的想让小王做什么？",
+      "transcript_zh": "男：小王，帮我开一下门，好吗？谢谢！ 女：没问题。您去超市了？买了这么多东西。 问：男的想让小王做什么？",
+      "options": {
+       "A": "开门",
+       "B": "拿东西",
+       "C": "去超市买东西"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        20
+       ]
+      }
+     },
+     {
+      "n": 11,
+      "zh": "女的为什么不去爬山？",
+      "options": {
+       "A": "脚不舒服",
+       "B": "想看电视",
+       "C": "想玩儿游戏"
+      },
+      "transcript_zh": "女：我的脚还没好，我们周末别去爬山了。 男：好，那我们就在家看看电视，玩儿玩儿游戏。 问：女的为什么不去爬山？",
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        151
+       ]
+      }
+     },
+     {
+      "n": 12,
+      "zh": "男的为什么不喝冷饮？",
+      "options": {
+       "A": "不太甜",
+       "B": "要睡觉",
+       "C": "太冷了"
+      },
+      "transcript_zh": "女：今天买的冷饮很甜，你要不要喝点儿？ 男：不喝了，我打算睡觉了。 问：男的为什么不喝冷饮？",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        151
+       ]
+      }
+     },
+     {
+      "n": 13,
+      "zh": "女的在做什么？",
+      "options": {
+       "A": "买裤子",
+       "B": "洗衬衫",
+       "C": "拿裤子"
+      },
+      "transcript_zh": "男：你新给我买的那条裤子放哪儿了？ 女：我洗完衬衫就给你拿。 问：女的在做什么？",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        151
+       ]
+      }
+     },
+     {
+      "n": 14,
+      "zh": "女的为什么给男的打电话？",
+      "options": {
+       "A": "找他去上课",
+       "B": "不小心打错了",
+       "C": "上午有事"
+      },
+      "transcript_zh": "男：你上午给我打电话的时候，我正在上课。有什么事吗？ 女：对不起，是我不小心打错了。 问：女的为什么给男的打电话？",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        151
+       ]
+      }
+     },
+     {
+      "n": 15,
+      "zh": "咖啡是谁的？",
+      "options": {
+       "A": "男的的",
+       "B": "女的的",
+       "C": "小丽的"
+      },
+      "transcript_zh": "女：桌子上面放着一杯咖啡，是你的吗？ 男：小丽放在那儿的。 问：咖啡是谁的？",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        151
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "一、听力 第四部分",
+    "type_zh": "听力 第四部分",
+    "instruction_zh": "第16–20题：听长对话，选择正确答案",
+    "instruction_en": "Questions 16-20: Listen to the dialogues and choose the right answers.",
+    "audio": "hsk3-workbook-03-part4.mp3",
+    "items": [
+     {
+      "n": "例",
+      "zh": "男的在做什么？",
+      "transcript_zh": "女：晚饭做好了，准备吃饭了。 男：等一会儿，比赛还有三分钟就结束了。 女：快点儿吧，一起吃，菜冷了就不好吃了。 男：你先吃，我马上就看完了。 问：男的在做什么？",
+      "options": {
+       "A": "洗澡",
+       "B": "吃饭",
+       "C": "看电视"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        21
+       ]
+      }
+     },
+     {
+      "n": 16,
+      "zh": "女的给自己买什么了？",
+      "options": {
+       "A": "衬衫",
+       "B": "裤子",
+       "C": "饮料"
+      },
+      "transcript_zh": "男：今天买什么了？ 女：我买了衬衫，还给妈妈买了一条裤子。 男：那你给我买什么了？ 女：桌子上的饮料给你吧。 问：女的给自己买什么了？",
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        151
+       ]
+      }
+     },
+     {
+      "n": 17,
+      "zh": "女的为什么让男的给她打个电话？",
+      "options": {
+       "A": "有问题问他",
+       "B": "找手机",
+       "C": "她很着急"
+      },
+      "transcript_zh": "女：我的手机放哪儿了？我怎么不记得了？ 男：别着急，慢慢想。 女：你给我打个电话吧。 男：好，没问题。 问：女的为什么让男的给她打个电话？",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        151
+       ]
+      }
+     },
+     {
+      "n": 18,
+      "zh": "桌子上放着什么？",
+      "options": {
+       "A": "绿茶",
+       "B": "水果",
+       "C": "饮料"
+      },
+      "transcript_zh": "男：给我来杯绿茶吧。 女：这儿没有绿茶。 男：桌子上不是放着绿茶吗？ 女：那不是绿茶，是水果饮料。 问：桌子上放着什么？",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        151
+       ]
+      }
+     },
+     {
+      "n": 19,
+      "zh": "女的怎么了？",
+      "options": {
+       "A": "不想去上学",
+       "B": "觉得累",
+       "C": "不舒服"
+      },
+      "transcript_zh": "女：你送儿子上学吧。 男：好，你怎么了？不舒服吗？ 女：没有，我觉得有点儿累。 男：那你在家休息吧。 问：女的怎么了？",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        151
+       ]
+      }
+     },
+     {
+      "n": 20,
+      "zh": "女的为什么没买牛肉？",
+      "options": {
+       "A": "牛肉不新鲜",
+       "B": "没有牛肉了",
+       "C": "要吃米饭"
+      },
+      "transcript_zh": "男：你不是要买牛肉吗？怎么买鱼了？ 女：去晚了，牛肉都卖完了。我看这条鱼很新鲜就买了。 男：是很好。对了，我们吃米饭还是面条？ 女：今天有鱼，我们吃米饭吧。 问：女的为什么没买牛肉？",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        151
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第一部分",
+    "type_zh": "阅读 第一部分",
+    "instruction_zh": "第21–25题：选择合适的问答",
+    "instruction_en": "Questions 21-25: Match the two parts of the same dialogue.",
+    "items": [
+     {
+      "n": "例",
+      "zh": "你知道怎么去那儿吗？",
+      "options": {
+       "A": "我今天不舒服，觉得很累。",
+       "B": "你还认识我吗？我们在中国见过。",
+       "C": "你喜欢吃红苹果还是绿苹果？",
+       "D": "妈妈，我下课回来了。",
+       "E": "当然。我们先坐公共汽车，然后换地铁。",
+       "F": "上面写着二十元一把。"
+      },
+      "answer": "E",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        22
+       ]
+      }
+     },
+     {
+      "n": 21,
+      "zh": "今天你怎么了？一直在睡觉。",
+      "options": {
+       "A": "我今天不舒服，觉得很累。",
+       "B": "你还认识我吗？我们在中国见过。",
+       "C": "你喜欢吃红苹果还是绿苹果？",
+       "D": "妈妈，我下课回来了。",
+       "E": "当然。我们先坐公共汽车，然后换地铁。",
+       "F": "上面写着二十元一把。"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        151
+       ]
+      }
+     },
+     {
+      "n": 22,
+      "zh": "啊，对，我记得你，你瘦了。",
+      "options": {
+       "A": "我今天不舒服，觉得很累。",
+       "B": "你还认识我吗？我们在中国见过。",
+       "C": "你喜欢吃红苹果还是绿苹果？",
+       "D": "妈妈，我下课回来了。",
+       "E": "当然。我们先坐公共汽车，然后换地铁。",
+       "F": "上面写着二十元一把。"
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        151
+       ]
+      }
+     },
+     {
+      "n": 23,
+      "zh": "桌子上放着饮料，你先喝点儿吧。",
+      "options": {
+       "A": "我今天不舒服，觉得很累。",
+       "B": "你还认识我吗？我们在中国见过。",
+       "C": "你喜欢吃红苹果还是绿苹果？",
+       "D": "妈妈，我下课回来了。",
+       "E": "当然。我们先坐公共汽车，然后换地铁。",
+       "F": "上面写着二十元一把。"
+      },
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        151
+       ]
+      }
+     },
+     {
+      "n": 24,
+      "zh": "我喜欢吃红苹果，我觉得红苹果甜。",
+      "options": {
+       "A": "我今天不舒服，觉得很累。",
+       "B": "你还认识我吗？我们在中国见过。",
+       "C": "你喜欢吃红苹果还是绿苹果？",
+       "D": "妈妈，我下课回来了。",
+       "E": "当然。我们先坐公共汽车，然后换地铁。",
+       "F": "上面写着二十元一把。"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        151
+       ]
+      }
+     },
+     {
+      "n": 25,
+      "zh": "这种雨伞多少钱一把？",
+      "options": {
+       "A": "我今天不舒服，觉得很累。",
+       "B": "你还认识我吗？我们在中国见过。",
+       "C": "你喜欢吃红苹果还是绿苹果？",
+       "D": "妈妈，我下课回来了。",
+       "E": "当然。我们先坐公共汽车，然后换地铁。",
+       "F": "上面写着二十元一把。"
+      },
+      "answer": "F",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        151
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第二部分",
+    "type_zh": "阅读 第二部分",
+    "instruction_zh": "第26–30题：选择合适的词语填空",
+    "instruction_en": "Questions 26-30: Choose the proper words to fill in the brackets.",
+    "word_bank": [
+     [
+      "A 裤子",
+      "B 或者",
+      "C 还是",
+      "D 记得",
+      "E 声音",
+      "F 小心"
+     ]
+    ],
+    "items": [
+     {
+      "n": "例",
+      "zh": "她说话的（　）多好听啊！",
+      "options": {
+       "A": "裤子",
+       "B": "或者",
+       "C": "还是",
+       "D": "记得",
+       "E": "声音",
+       "F": "小心"
+      },
+      "answer": "E",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        22
+       ]
+      }
+     },
+     {
+      "n": 26,
+      "zh": "老师，我们今天复习第三课（　）学习第四课？",
+      "options": {
+       "A": "裤子",
+       "B": "或者",
+       "C": "还是",
+       "D": "记得",
+       "E": "声音",
+       "F": "小心"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        151
+       ]
+      }
+     },
+     {
+      "n": 27,
+      "zh": "周末你是不是要带学生去爬山？穿这条（　）吧。",
+      "options": {
+       "A": "裤子",
+       "B": "或者",
+       "C": "还是",
+       "D": "记得",
+       "E": "声音",
+       "F": "小心"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        151
+       ]
+      }
+     },
+     {
+      "n": 28,
+      "zh": "这杯饮料很热，喝的时候（　）点儿。",
+      "options": {
+       "A": "裤子",
+       "B": "或者",
+       "C": "还是",
+       "D": "记得",
+       "E": "声音",
+       "F": "小心"
+      },
+      "answer": "F",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        151
+       ]
+      }
+     },
+     {
+      "n": 29,
+      "zh": "A：你想喝点儿什么茶？ B：花茶（　）绿茶都行。",
+      "options": {
+       "A": "裤子",
+       "B": "或者",
+       "C": "还是",
+       "D": "记得",
+       "E": "声音",
+       "F": "小心"
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        151
+       ]
+      }
+     },
+     {
+      "n": 30,
+      "zh": "A：经理旁边坐着一个人，你知道是谁吗？ B：你不（　）了？那是小周啊，去年来过。",
+      "options": {
+       "A": "裤子",
+       "B": "或者",
+       "C": "还是",
+       "D": "记得",
+       "E": "声音",
+       "F": "小心"
+      },
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        151
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第三部分",
+    "type_zh": "阅读 第三部分",
+    "instruction_zh": "第31–35题：选择正确答案",
+    "instruction_en": "Questions 31-35: Choose the right answers.",
+    "items": [
+     {
+      "n": "例",
+      "zh": "您是来参加今天会议的吗？您来早了一点儿，现在才八点半。您先进来坐吧。 ★会议最可能几点开始？",
+      "options": {
+       "A": "8点",
+       "B": "8点半",
+       "C": "9点"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        23
+       ]
+      }
+     },
+     {
+      "n": 31,
+      "zh": "这条裤子是去年过生日时我哥送我的，只穿了一次，就没再穿，一直放在这里。 ★这条裤子：",
+      "options": {
+       "A": "是绿色的",
+       "B": "没穿过几次",
+       "C": "是我买的"
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        151
+       ]
+      }
+     },
+     {
+      "n": 32,
+      "zh": "多吃新鲜的苹果对身体好，早上和上午是吃苹果最好的时间。 ★我们应该：",
+      "options": {
+       "A": "晚上吃苹果",
+       "B": "上午吃苹果",
+       "C": "身体好的时候吃苹果"
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        151
+       ]
+      }
+     },
+     {
+      "n": 33,
+      "zh": "我先生不爱吃西瓜，你也不爱吃，西瓜那么好吃，又那么甜，为什么你们会不喜欢呢？ ★她：",
+      "options": {
+       "A": "爱吃西瓜",
+       "B": "不喜欢吃甜的",
+       "C": "没买西瓜"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        151
+       ]
+      }
+     },
+     {
+      "n": 34,
+      "zh": "我们的办公室里放着很多吃的东西，下午工作累了的时候，大家都会吃点儿。 ★我们下午：",
+      "options": {
+       "A": "去买吃的东西",
+       "B": "只吃东西不工作",
+       "C": "累了就吃点儿东西"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        151
+       ]
+      }
+     },
+     {
+      "n": 35,
+      "zh": "周六周日我们事情不多，喜欢和学生们去爬爬山，或者打打篮球，有时候也会在家里看书。 ★我们：",
+      "options": {
+       "A": "周末工作很忙",
+       "B": "周末喜欢去爬山",
+       "C": "每天在家看书"
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        151
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "三、书写 第一部分",
+    "type_zh": "书写 第一部分",
+    "instruction_zh": "第36–40题：连词成句",
+    "instruction_en": "Questions 36-40: Rearrange the words/phrases to make sentences.",
+    "items": [
+     {
+      "n": "例",
+      "zh": "小船　上　一　河　条　有",
+      "answer": "河上有一条小船。",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        24
+       ]
+      }
+     },
+     {
+      "n": 36,
+      "zh": "放着　裤子　床上　一条",
+      "answer": "床上放着一条裤子。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        151
+       ]
+      }
+     },
+     {
+      "n": 37,
+      "zh": "的时候　要　小心点儿　爬山",
+      "answer": "爬山的时候要小心点儿。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        151
+       ]
+      }
+     },
+     {
+      "n": 38,
+      "zh": "穿了　一件　我记得　白衬衫　他",
+      "answer": "我记得他穿了一件白衬衫。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        151
+       ]
+      }
+     },
+     {
+      "n": 39,
+      "zh": "红茶　想喝　绿茶　还是　你",
+      "answer": "你想喝红茶还是绿茶？",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        151
+       ]
+      }
+     },
+     {
+      "n": 40,
+      "zh": "还是　他想买　裤子　衬衫　我不知道",
+      "answer": "我不知道他想买裤子还是衬衫。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        151
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "三、书写 第二部分",
+    "type_zh": "书写 第二部分",
+    "instruction_zh": "第41–45题：看拼音，写汉字",
+    "instruction_en": "Questions 41-45: Write the characters based on their pinyin.",
+    "items": [
+     {
+      "n": "例",
+      "zh": "没（　）系，别难过，高兴点儿。",
+      "hint_zh": "guān",
+      "answer": "关",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        24
+       ]
+      }
+     },
+     {
+      "n": 41,
+      "zh": "我想喝点儿（　）料。",
+      "hint_zh": "yǐn",
+      "answer": "饮",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        151
+       ]
+      }
+     },
+     {
+      "n": 42,
+      "zh": "水很热，喝的时候小（　）点儿。",
+      "hint_zh": "xīn",
+      "answer": "心",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        151
+       ]
+      }
+     },
+     {
+      "n": 43,
+      "zh": "一（　）裤子三百元。",
+      "hint_zh": "tiáo",
+      "answer": "条",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        151
+       ]
+      }
+     },
+     {
+      "n": 44,
+      "zh": "我觉得胖或（　）瘦没关系。",
+      "hint_zh": "zhě",
+      "answer": "者",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        151
+       ]
+      }
+     },
+     {
+      "n": 45,
+      "zh": "我不喜欢这个（　）面包。",
+      "hint_zh": "tián",
+      "answer": "甜",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        151
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "三、书写 第三部分",
+    "type_zh": "书写 第三部分",
+    "instruction_zh": "第46–50题：辨认汉字，选择正确的汉字填空",
+    "instruction_en": "Questions 46-50: Distinguish the characters and fill in the blanks.",
+    "items": [
+     {
+      "n": "例",
+      "zh": "我不知道________个地方在________儿。",
+      "hint_zh": "（那、哪）",
+      "answer": "那、哪",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        25
+       ]
+      }
+     },
+     {
+      "n": 46,
+      "zh": "我打算周末跟学生________去，一起爬________。",
+      "hint_zh": "（山、出）",
+      "answer": "出、山",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        151
+       ]
+      }
+     },
+     {
+      "n": 47,
+      "zh": "你现在真瘦！我记________你上学的时候不是________瘦啊。",
+      "hint_zh": "（得、很）",
+      "answer": "得、很",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        151
+       ]
+      }
+     },
+     {
+      "n": 48,
+      "zh": "你送爸爸衬衫或________裤子，他________会很喜欢。",
+      "hint_zh": "（者、都）",
+      "answer": "者、都",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        151
+       ]
+      }
+     },
+     {
+      "n": 49,
+      "zh": "我今天下午去________友家，他身体不舒________。",
+      "hint_zh": "（服、朋）",
+      "answer": "朋、服",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        151
+       ]
+      }
+     },
+     {
+      "n": 50,
+      "zh": "这是什么________料，我一________也没喝过。",
+      "hint_zh": "（饮、次）",
+      "answer": "饮、次",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        151
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "四、复习",
+    "type_zh": "复习",
+    "instruction_zh": "第1–2题：根据课文内容填空",
+    "instruction_en": "Questions 1-2: Fill in the blanks based on the texts in the textbook.",
+    "items": [
+     {
+      "n": 1,
+      "zh": "周明不让太太买________，因为他________太太已经有两________这样的裤子了。周明想买一件________，这件衬衫三百二十________。",
+      "answer": "裤子、记得、条、衬衫、元",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        151
+       ]
+      }
+     },
+     {
+      "n": 2,
+      "zh": "桌子上________着很多________，小刚想喝茶________咖啡，小丽最喜欢喝茶，花茶、________茶、红茶，她都喜欢，因为工作累了的时候，喝杯茶，她会觉得很________。",
+      "answer": "放、饮料、或者、绿、舒服",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        151
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "answers_ref": {
+   "book": "teacher",
+   "pages": [
+    149,
+    150,
+    151
+   ]
+  }
+ },
+ "audio": {
+  "textbook": [
+   "hsk3-textbook-0301.mp3",
+   "hsk3-textbook-0302.mp3",
+   "hsk3-textbook-0303.mp3",
+   "hsk3-textbook-0304.mp3",
+   "hsk3-textbook-0305.mp3"
+  ],
+  "workbook": [
+   "hsk3-workbook-03-part1.mp3",
+   "hsk3-workbook-03-part2.mp3",
+   "hsk3-workbook-03-part3.mp3",
+   "hsk3-workbook-03-part4.mp3"
+  ]
+ },
+ "unclear": [
+  "Сурах бичиг PDF х.39 注释1 жишээ (4): «天冷了或者工作累了的时候，喝杯热茶很舒服。» (会 байхгүй) — 课文4-т «……喝杯热茶会很舒服。» (会-тэй); хоёуланг нь номд байгаагаар нь үлдээсэн.",
+  "Багшийн ном PDF х.29 本课小结 — «旧字新词：鲜奶、冷饮、外面» — сурах бичиг (PDF х.43 旧字新词) болон багшийн номын 教学目标 (PDF х.23) хоёулаа «上面»; номд байгаагаар нь (外面) teacher.steps/summary_zh-д үлдээсэн.",
+  "Дасгалын ном PDF х.25 复习1: «周明想买一件衬衫» — 课文2-т цамцыг 周明 санал болгож, 周太太 «买一件» гэж шийддэг; багшийн номын 课文2 асуулт-хариулт (PDF х.27) «周太太还想买一件衬衫». Номд байгаагаар нь хуулсан, хариулт (裤子、记得、条、衬衫、元) хавсралтаас.",
+  "Сурах бичгийн 练一练 (3 дүрэм × 3), 练习2 选词填空 / 练习3 描述图片 / 练习4 回答问题 болон 热身2 — хариулт сурах бичиг, багшийн номд хэвлэгдээгүй тул answer талбаргүй. Багшийн номын 课文 асуулт-хариулт (teacher.text_questions) нь 练习4-ийн асуултаас өөр асуултууд.",
+  "Багшийн номын 汉字辨认练习 (山/出 · 得/很 · 者/都 · 服/朋 · 饮/次 — 组词) хоосон зайтай, хариулт хэвлэгдээгүй.",
+  "Дасгалын номын сонсгол нэг CD тэмдэгтэй (03) — аудиог hsk3-workbook-03-part1…4.mp3 болгож хэсэг тус бүрт хуваасныг section.audio-д оноосон.",
+  "Дасгалын ном 听力 第三/四部分 — номд зөвхөн сонголтууд хэвлэгдсэн; item.zh-д багшийн номын хавсралтын «问：» асуултыг оруулсан (transcript_zh-д бүтнээр).",
+  "Сурах бичгийн 拼音课文-ын гарчгийн пиньинь (Zài Xiǎolì jiā / Zài shāngchǎng / Zài shuǐguǒdiàn / Zài xiūxishì) болон ярилцагчийн нэрийн пиньинь (Xiǎogāng, Xiǎolì, Zhōu tàitai, Zhōu Míng) схемд талбаргүй тул lines.pinyin-д зөвхөн яриаг оруулсан.",
+  "Сурах бичиг PDF х.39–40 注释2: гарчиг номд «存在的表达：Location Word+V着+Numeral+Measure Word+ N» (англи нэр томьёотой хятад гарчиг) — «＋»-ээр нэгтгэж бичсэн; хоёр хүснэгт (эерэг/үгүйсгэл) structure_rows-д, хүснэгтийн өгүүлбэрүүдийг examples-д (дугааргүй) оруулсан.",
+  "Сурах бичиг 注释1, 注释3-т бүтцийн хүснэгт байхгүй; багшийн номын ［A还是B？］［A或者B。］ болон ［地方＋动词＋着＋名词（短语）］ хайрцгийг teacher.steps-д оруулсан.",
+  "Сурах бичиг 课文2/3 «这上面写着» — пиньинь «zhè shàngmian» (mian саармаг) номд байгаагаар. Багшийн номын 课文3 хариулт «因为上面写着……» (这 байхгүй) — номд байгаагаар.",
+  "Сурах бичиг PDF х.44 小组活动 — «3~4人一组» — номд хагас өргөнтэй «~» хэвлэгдсэн, хэвээр нь үлдээсэн."
+ ],
+ "verified_pages": [
+  19,
+  20,
+  21,
+  22,
+  23,
+  24,
+  25,
+  26,
+  27,
+  28,
+  29,
+  36,
+  37,
+  38,
+  39,
+  40,
+  41,
+  42,
+  43,
+  44,
+  149,
+  150,
+  151
+ ],
+ "schema_version": 1
+}

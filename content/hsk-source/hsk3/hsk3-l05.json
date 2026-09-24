@@ -1,0 +1,2053 @@
+{
+ "level": "hsk3",
+ "lesson": 5,
+ "book": "HSK3",
+ "title_zh": "我最近越来越胖了",
+ "title_pinyin": "Wǒ zuìjìn yuè lái yuè pàng le",
+ "title_en": "I am getting fatter and fatter lately",
+ "textbook": {
+  "ref": {
+   "book": "textbook",
+   "pages": [
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61
+   ]
+  },
+  "warmup": [
+   {
+    "instruction_zh": "给下面的词语选择对应的图片",
+    "instruction_en": "Match the pictures with the words.",
+    "items": [
+     "①感冒 gǎnmào",
+     "②发烧 fā shāo",
+     "③裙子 qúnzi",
+     "④草 cǎo",
+     "⑤开花 kāi huā",
+     "⑥夏天 xiàtiān"
+    ],
+    "pictures_desc_en": [
+     "A: a pink blossom on a tree branch",
+     "B: a woman wearing a face mask and holding a thermometer",
+     "C: beach umbrellas and deck chairs on a sandy beach by the sea",
+     "D: a red skirt",
+     "E: green grass",
+     "F: a woman sneezing into a tissue"
+    ]
+   },
+   {
+    "instruction_zh": "看图片，用一个合适的形容词描述图片的内容",
+    "instruction_en": "Look at each picture and describe it using an appropriate adjective.",
+    "items": [
+     "A. 很漂亮 hěn piàoliang",
+     "B. 很好吃 hěn hǎochī",
+     "C. 很冷 hěn lěng",
+     "D. 很绿 hěn lǜ"
+    ],
+    "pictures_desc_en": [
+     "①: a person in a red knitted hat and red mittens in the snow, looking cold",
+     "②: sunlight shining through the green leaves of tall trees",
+     "③: a boy eating a plate of spaghetti",
+     "④: a woman in a floral dress with a flower in her hair, standing by a tree"
+    ]
+   }
+  ],
+  "texts": [
+   {
+    "n": 1,
+    "title_zh": "在小丽家",
+    "title_en": "At Xiaoli's home",
+    "kind": "dialogue",
+    "audio": "hsk3-textbook-0501.mp3",
+    "lines": [
+     {
+      "speaker": "朋友",
+      "zh": "我听说你身体不舒服，怎么了？",
+      "pinyin": "Wǒ tīngshuō nǐ shēntǐ bù shūfu, zěnme le?"
+     },
+     {
+      "speaker": "小丽",
+      "zh": "前几天有点儿发烧，现在好多了。",
+      "pinyin": "Qián jǐ tiān yǒudiǎnr fā shāo, xiànzài hǎoduō le."
+     },
+     {
+      "speaker": "朋友",
+      "zh": "喝杯茶吧，这是我为你买的绿茶，很不错。",
+      "pinyin": "Hē bēi chá ba, zhè shì wǒ wèi nǐ mǎi de lǜchá, hěn búcuò."
+     },
+     {
+      "speaker": "小丽",
+      "zh": "谢谢，我要吃药，不喝茶了。",
+      "pinyin": "Xièxie, wǒ yào chī yào, bù hē chá le."
+     },
+     {
+      "speaker": "朋友",
+      "zh": "那喝杯水吧。",
+      "pinyin": "Nà hē bēi shuǐ ba."
+     },
+     {
+      "speaker": "小丽",
+      "zh": "好的。",
+      "pinyin": "Hǎo de."
+     }
+    ],
+    "new_words": [
+     {
+      "n": 1,
+      "zh": "发烧",
+      "pinyin": "fā shāo",
+      "pos": "v.",
+      "en": "to have a fever",
+      "text": 1
+     },
+     {
+      "n": 2,
+      "zh": "为",
+      "pinyin": "wèi",
+      "pos": "prep.",
+      "en": "for",
+      "text": 1
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "title_zh": "在打电话",
+    "title_en": "On the phone",
+    "kind": "dialogue",
+    "audio": "hsk3-textbook-0502.mp3",
+    "lines": [
+     {
+      "speaker": "周太太",
+      "zh": "对不起，我明天不能和你们出去玩儿了。",
+      "pinyin": "Duìbuqǐ, wǒ míngtiān bù néng hé nǐmen chūqu wánr le."
+     },
+     {
+      "speaker": "张太太",
+      "zh": "为什么？怎么了？",
+      "pinyin": "Wèi shénme? Zěnme le?"
+     },
+     {
+      "speaker": "周太太",
+      "zh": "我儿子生病了，我要在家照顾他。",
+      "pinyin": "Wǒ érzi shēng bìng le, wǒ yào zài jiā zhàogù tā."
+     },
+     {
+      "speaker": "张太太",
+      "zh": "他吃药了吗？要不要去医院？",
+      "pinyin": "Tā chī yào le ma? Yào bu yào qù yīyuàn?"
+     },
+     {
+      "speaker": "周太太",
+      "zh": "不用去医院，昨天吃了感冒药，现在好一些了。",
+      "pinyin": "Búyòng qù yīyuàn, zuótiān chīle gǎnmào yào, xiànzài hǎo yìxiē le."
+     },
+     {
+      "speaker": "张太太",
+      "zh": "那我们下次再一起出去玩儿吧。",
+      "pinyin": "Nà wǒmen xià cì zài yìqǐ chūqu wánr ba."
+     }
+    ],
+    "new_words": [
+     {
+      "n": 3,
+      "zh": "照顾",
+      "pinyin": "zhàogù",
+      "pos": "v.",
+      "en": "to take care of",
+      "text": 2
+     },
+     {
+      "n": 4,
+      "zh": "用",
+      "pinyin": "yòng",
+      "pos": "v.",
+      "en": "to need",
+      "text": 2
+     },
+     {
+      "n": 5,
+      "zh": "感冒",
+      "pinyin": "gǎnmào",
+      "pos": "v.",
+      "en": "to catch a cold",
+      "text": 2
+     }
+    ],
+    "proper_nouns": [
+     {
+      "zh": "张",
+      "pinyin": "Zhāng",
+      "en": "Zhang, a surname"
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "title_zh": "在小刚家",
+    "title_en": "At Xiaogang's home",
+    "kind": "dialogue",
+    "audio": "hsk3-textbook-0503.mp3",
+    "lines": [
+     {
+      "speaker": "小丽",
+      "zh": "你最喜欢哪个季节？",
+      "pinyin": "Nǐ zuì xǐhuan nǎge jìjié?"
+     },
+     {
+      "speaker": "小刚",
+      "zh": "当然是春天，天气不那么冷了，草和树都绿了，花也开了。",
+      "pinyin": "Dāngrán shì chūntiān, tiānqì bú nàme lěng le, cǎo hé shù dōu lǜ le, huā yě kāi le."
+     },
+     {
+      "speaker": "小丽",
+      "zh": "我最喜欢夏天，因为我可以穿漂亮的裙子了。",
+      "pinyin": "Wǒ zuì xǐhuan xiàtiān, yīnwèi wǒ kěyǐ chuān piàoliang de qúnzi le."
+     },
+     {
+      "speaker": "小刚",
+      "zh": "那我也喜欢夏天了。",
+      "pinyin": "Nà wǒ yě xǐhuan xiàtiān le."
+     },
+     {
+      "speaker": "小丽",
+      "zh": "怎么？你也有漂亮的裙子？",
+      "pinyin": "Zěnme? Nǐ yě yǒu piàoliang de qúnzi?"
+     },
+     {
+      "speaker": "小刚",
+      "zh": "不，我喜欢看你穿漂亮的裙子。",
+      "pinyin": "Bù，wǒ xǐhuan kàn nǐ chuān piàoliang de qúnzi."
+     }
+    ],
+    "new_words": [
+     {
+      "n": 6,
+      "zh": "季节",
+      "pinyin": "jìjié",
+      "pos": "n.",
+      "en": "season",
+      "text": 3
+     },
+     {
+      "n": 7,
+      "zh": "当然",
+      "pinyin": "dāngrán",
+      "pos": "adv.",
+      "en": "of course",
+      "text": 3
+     },
+     {
+      "n": 8,
+      "zh": "春（天）",
+      "pinyin": "chūn (tiān)",
+      "pos": "n.",
+      "en": "spring",
+      "text": 3
+     },
+     {
+      "n": 9,
+      "zh": "草",
+      "pinyin": "cǎo",
+      "pos": "n.",
+      "en": "grass",
+      "text": 3
+     },
+     {
+      "n": 10,
+      "zh": "夏（天）",
+      "pinyin": "xià (tiān)",
+      "pos": "n.",
+      "en": "summer",
+      "text": 3
+     },
+     {
+      "n": 11,
+      "zh": "裙子",
+      "pinyin": "qúnzi",
+      "pos": "n.",
+      "en": "dress, skirt",
+      "text": 3
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "title_zh": "在小刚家",
+    "title_en": "At Xiaogang's home",
+    "kind": "dialogue",
+    "audio": "hsk3-textbook-0504.mp3",
+    "lines": [
+     {
+      "speaker": "小丽",
+      "zh": "我最近越来越胖了。",
+      "pinyin": "Wǒ zuìjìn yuè lái yuè pàng le."
+     },
+     {
+      "speaker": "小刚",
+      "zh": "谁说的？我觉得你越来越漂亮了。",
+      "pinyin": "Shéi shuō de? Wǒ juéde nǐ yuè lái yuè piàoliang le."
+     },
+     {
+      "speaker": "小丽",
+      "zh": "你看，这条裙子是去年买的，今年就不能穿了。",
+      "pinyin": "Nǐ kàn, zhè tiáo qúnzi shì qùnián mǎi de, jīnnián jiù bù néng chuān le."
+     },
+     {
+      "speaker": "小刚",
+      "zh": "那是因为你吃得太多了，少吃点儿吧。",
+      "pinyin": "Nà shì yīnwèi nǐ chī de tài duō le, shǎo chī diǎnr ba."
+     },
+     {
+      "speaker": "小丽",
+      "zh": "我做的饭越来越好吃，我能少吃吗？",
+      "pinyin": "Wǒ zuò de fàn yuè lái yuè hǎochī, wǒ néng shǎo chī ma?"
+     }
+    ],
+    "new_words": [
+     {
+      "n": 12,
+      "zh": "最近",
+      "pinyin": "zuìjìn",
+      "pos": "adv.",
+      "en": "lately, recently",
+      "text": 4
+     },
+     {
+      "n": 13,
+      "zh": "越",
+      "pinyin": "yuè",
+      "pos": "adv.",
+      "en": "more, to a greater degree",
+      "text": 4
+     }
+    ]
+   }
+  ],
+  "grammar": [
+   {
+    "n": 1,
+    "title_zh": "“了”表示变化",
+    "title_en": "“了” Indicating a Change",
+    "explanation_zh": "语气助词“了”用在陈述句句尾，表示情况有了变化，或出现了新的情况，如“我现在没钱了”表示“我”以前有钱，现在没有钱的变化。例如：",
+    "explanation_en": "Used at the end of a declarative sentence, the modal particle “了” indicates a change in the situation or the occurrence of a new situation. For example, “我现在没钱了” means “I used to have money, but now I don’t”, implying a change. For example:",
+    "examples": [
+     {
+      "n": 1,
+      "zh": "上个月很冷，现在天气不那么冷了。"
+     },
+     {
+      "n": 2,
+      "zh": "我前几天有点儿发烧，现在好多了。"
+     },
+     {
+      "n": 3,
+      "zh": "我现在喜欢夏天了。"
+     },
+     {
+      "n": 4,
+      "zh": "这条裙子是去年买的，今年就不能穿了。"
+     }
+    ],
+    "practice_instruction_zh": "练一练　完成句子 Complete the sentences.",
+    "practice": [
+     {
+      "n": 1,
+      "zh": "上个月草和树还没绿，花还没开，________。"
+     },
+     {
+      "n": 2,
+      "zh": "昨天腿有点儿疼，今天早上________。"
+     },
+     {
+      "n": 3,
+      "zh": "这些水果是我上个星期买的，现在都________。"
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "title_zh": "越来越+Adj/Mental V",
+    "title_en": "The Structure “越来越+Adj/Mental V”",
+    "explanation_zh": "“越来越”的后边加上形容词或心理动词，如“越来越冷”“越来越喜欢”表示随着时间的推移程度上发生的变化。注意，形容词或心理动词的前边都不能再加程度副词，不能说“越来越很热”“越来越非常想”。例如：",
+    "explanation_en": "Followed by an adjective or a mental verb as in “越来越冷” (colder and colder) and “越来越喜欢” (like...more and more), “越来越” indicates the change in degree occurs as time passes by. Note that no adverb of degree is used before the adjective or mental verb, so phrases like “越来越很热” and “越来越非常想” are unacceptable. For example:",
+    "structure_rows": [
+     "越来越+Adj/Mental V"
+    ],
+    "examples": [
+     {
+      "n": 1,
+      "zh": "我认识的汉字越来越多。"
+     },
+     {
+      "n": 2,
+      "zh": "你越来越漂亮。"
+     },
+     {
+      "n": 3,
+      "zh": "我越来越喜欢运动。"
+     },
+     {
+      "n": 4,
+      "zh": "我做的饭越来越好吃。"
+     }
+    ],
+    "practice_instruction_zh": "练一练　完成句子 Complete the sentences.",
+    "practice": [
+     {
+      "n": 1,
+      "zh": "最近天气________。"
+     },
+     {
+      "n": 2,
+      "zh": "她每天都运动，现在________。"
+     },
+     {
+      "n": 3,
+      "zh": "快要考试了，我________。"
+     },
+     {
+      "n": 4,
+      "zh": "孩子还没有回来，妈妈________。"
+     }
+    ]
+   }
+  ],
+  "exercises": [
+   {
+    "n": 1,
+    "type_zh": "朗读",
+    "instruction_zh": "朗读下列短语和句子",
+    "instruction_en": "Read the following phrases and sentences aloud.",
+    "audio": "hsk3-textbook-0505.mp3",
+    "items": [
+     {
+      "n": 1,
+      "zh": "照顾：照顾孩子／照顾小狗／照顾得很好／我要在家照顾他。"
+     },
+     {
+      "n": 2,
+      "zh": "裙子：一条裙子／漂亮的裙子／穿裙子／我喜欢看你穿漂亮的裙子。"
+     },
+     {
+      "n": 3,
+      "zh": "用：不用／不用上课／不用吃药／不用去医院。"
+     },
+     {
+      "n": 4,
+      "zh": "最近：最近几天／最近几个月／我最近有点儿累／我最近越来越胖了。"
+     },
+     {
+      "n": 5,
+      "zh": "为：为孩子做饭／为妈妈买衣服／为朋友准备礼物／这是我为你买的绿茶。"
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "type_zh": "选词填空",
+    "instruction_zh": "选择恰当的词语填空",
+    "instruction_en": "Choose the proper words to fill in the blanks.",
+    "word_bank": [
+     [
+      "草",
+      "最近",
+      "为",
+      "发烧",
+      "裙子"
+     ],
+     [
+      "当然",
+      "照顾",
+      "用",
+      "季节",
+      "夏天"
+     ]
+    ],
+    "items": [
+     {
+      "n": 1,
+      "zh": "我是不是________了？怎么总是觉得冷？"
+     },
+     {
+      "n": 2,
+      "zh": "春天不冷不热，________都是绿的。"
+     },
+     {
+      "n": 3,
+      "zh": "快来看一下，这是我________你买的衣服。"
+     },
+     {
+      "n": 4,
+      "zh": "这条________真好看，是新买的吗？"
+     },
+     {
+      "n": 5,
+      "zh": "小王在忙什么呢？你________见过他吗？"
+     },
+     {
+      "n": 6,
+      "zh": "A：来一个西瓜。 B：这个________的西瓜又大又甜，多来几个吧。"
+     },
+     {
+      "n": 7,
+      "zh": "A：今年________一点儿也不热。 B：是吗？我怎么觉得快热死了！"
+     },
+     {
+      "n": 8,
+      "zh": "A：明天考试，你现在就睡觉了？不再看看书了？ B：不________看了，我已经复习好了。"
+     },
+     {
+      "n": 9,
+      "zh": "A：明天阴天，你还去看比赛吗？ B：我________要去，这是我最喜欢的比赛！"
+     },
+     {
+      "n": 10,
+      "zh": "A：这是你家的小狗吗？真漂亮！谁________它？ B：我妈妈。"
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "type_zh": "描述图片",
+    "instruction_zh": "用本课新学的语言点和词语描述图片",
+    "instruction_en": "Describe the pictures using the newly-learned language points and words.",
+    "items": [
+     {
+      "n": 1,
+      "zh": "A：儿子怎么没去上学？ B：他________。 A：最近天气不太好。 B：对，天气________，他穿得太少了。",
+      "picture_desc_en": "A boy with his hand on his forehead; an adult sits beside him."
+     },
+     {
+      "n": 2,
+      "zh": "A：天________。你带伞了吗？ B：没有。 A：那我们快点儿走吧，就要________。 B：好的。",
+      "picture_desc_en": "A sky full of dark, heavy clouds."
+     },
+     {
+      "n": 3,
+      "zh": "A：你昨天晚上没出去玩儿？ B：没有，一直在宿舍写作业呢。 A：你最近真是________努力了。 B：你看，我的汉语是不是________？",
+      "picture_desc_en": "A boy sitting at a table writing in a notebook with a pencil."
+     },
+     {
+      "n": 4,
+      "zh": "A：你现在回来得________。 B：最近________忙。 A：办公室有那么多事吗？ B：经理去美国了，我要________。",
+      "picture_desc_en": "A smiling man in a suit and tie holding a bag; a woman is partly visible beside him."
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "type_zh": "回答问题",
+    "instruction_zh": "根据课文回答问题",
+    "instruction_en": "Answer the questions according to the texts.",
+    "items": [
+     {
+      "n": 1,
+      "zh": "小丽怎么不舒服了？"
+     },
+     {
+      "n": 2,
+      "zh": "现在小丽要做什么？"
+     },
+     {
+      "n": 3,
+      "zh": "周太太能出去玩儿吗？为什么？"
+     },
+     {
+      "n": 4,
+      "zh": "小丽喜欢哪个季节？为什么？"
+     },
+     {
+      "n": 5,
+      "zh": "小刚喜欢哪个季节？为什么？"
+     },
+     {
+      "n": 6,
+      "zh": "小丽最近怎么了？为什么？"
+     }
+    ]
+   }
+  ],
+  "characters": {
+   "knowledge_title_zh": "会意字",
+   "knowledge_zh": "古代中国人有时用两个或两个以上的独体字组成一个汉字，这几个独体字的意思加起来就是整个汉字的意思。例如：\n\n旧字新词：读读下面的词语，想想组成的新词是什么意思。",
+   "knowledge_en": "Associative Compounds. When creating Chinese characters, people in ancient times sometimes combined two or more single-component characters into one character. The meaning of the compound one was the meanings of the single-component characters added together. For example:\n明 — The sun and the moon are combined togeter to mean “bright.”\n休 — A person is leaning against a tree.\n从 — A person is walking behind another.\n看 — Hold one’s hand over one’s eye to look into the distance.\n\nWord Game: Read the following words and guess the meanings of the newly-formed ones.",
+   "characters": [
+    {
+     "zh": "明",
+     "note_zh": "太阳和月亮在一起，光明。"
+    },
+    {
+     "zh": "休",
+     "note_zh": "人靠在树上休息。"
+    },
+    {
+     "zh": "从",
+     "note_zh": "一个人跟着另一个人。"
+    },
+    {
+     "zh": "看",
+     "note_zh": "手放在眼睛上，看远方。"
+    }
+   ],
+   "word_game": [
+    {
+     "parts": [
+      "听",
+      "说"
+     ],
+     "result": "听说"
+    },
+    {
+     "parts": [
+      "有",
+      "一点儿"
+     ],
+     "result": "有点儿"
+    },
+    {
+     "parts": [
+      "草",
+      "地方"
+     ],
+     "result": "草地"
+    }
+   ],
+   "confusable_pairs": [
+    [
+     "看",
+     "春"
+    ],
+    [
+     "复",
+     "夏"
+    ],
+    [
+     "发",
+     "友"
+    ],
+    [
+     "热",
+     "然"
+    ],
+    [
+     "草",
+     "早"
+    ]
+   ]
+  },
+  "application": [
+   {
+    "title_zh": "双人活动",
+    "instruction_zh": "两个人一组，根据给出的线索，一起完成下边的故事，并补充结局。注意用上“越来越”和“了”。",
+    "instruction_en": "Work in pairs. Complete the following story based on the hints given and add an ending. Make good use of “越来越” and “了”.",
+    "example_zh": [
+     "冬天快到了，天气________，小红起床起得________。以前她六点起床，现在________。以前她常常运动，现在________。",
+     "因为天气冷，所以小红吃得也________。以前她晚上只吃一点儿米饭，现在________。",
+     "一个月以后，________。"
+    ]
+   },
+   {
+    "title_zh": "小组活动",
+    "instruction_zh": "3~4人一组，一个人介绍自己最近改变了哪些习惯，其他人记录。",
+    "instruction_en": "Work in groups of 3-4. One talks about the changes in his/her habits, and the others take notes.",
+    "example_zh": [
+     "表格：| 以前 | 现在 |",
+     "| 不喜欢喝咖啡 | 喜欢喝咖啡了 |"
+    ]
+   }
+  ],
+  "saying": {
+   "zh": "药到病除",
+   "pinyin": "Yàodào bìngchú",
+   "en": "The minute the medicine is used, the disease is cured",
+   "explanation_zh": "“药到病除”的意思是吃了药，病马上就好了，形容医生的医术很好，用药恰到好处。现在也比喻人能够找到问题的关键，马上解决问题。",
+   "explanation_en": "“药到病除” means a disease is cured as soon as some medicine is used. It is used to describe a skilful doctor who can prescribe just the right medicine. Now it is also a metaphor of one’s ability to find the crux of a problem and thus solve it immediately."
+  },
+  "culture": {
+   "title_zh": "中国有什么传统运动",
+   "body_zh": "在中国，除了跑步、去健身房、打球等现代运动外，一些传统运动也被保留下来，成为人们日常锻炼中的一部分，比如：放风筝、踢毽子、抖空竹、打太极拳等。这些运动你会吗？在你们国家，有什么传统运动？",
+   "body_en": "Traditional Sports in China. In China, apart from modern sports like jogging, working out in gyms, and playing balls, some traditional sports handed down from old times are also practiced as part of people’s daily exercise, such as flying kites, kicking shuttlecocks, playing diabolos, and practising taijiquan. Can you do these sports? What traditional sports do you have in your country?"
+  }
+ },
+ "teacher": {
+  "ref": {
+   "book": "teacher",
+   "pages": [
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42
+   ]
+  },
+  "objectives_zh": [
+   "重点词语：学生能够熟练掌握：“发烧、为、照顾、裙子、最近”的语义和用法",
+   "语言点：学生能够了解并掌握：（1）“了”表示变化（2）“越来越……”表示变化",
+   "汉字：学生能够：（1）了解会意字的造字方法（2）根据已学生词猜测出3个旧字新词“听说、有点儿、草地”的意思",
+   "功能：学生能够：用“了”和“越来越”描述事物的变化"
+  ],
+  "steps": [
+   {
+    "title_zh": "复习旧课",
+    "body_zh": "1 教师出示第4课的热身图片，请学生根据图片说出生词。\n2 教师根据第4课的内容进行提问。\n（1）又累又饿的时候你会做什么？\n（2）请你给我介绍一个饭馆，说说为什么。\n（3）看电影的时候你喜欢做什么？你的朋友呢？\n（4）我喜欢喝着饮料看电影，你呢？\n（5）说说你最喜欢的一个人。你为什么喜欢他／她？"
+   },
+   {
+    "title_zh": "学习新课 1 热身",
+    "body_zh": "学生两人一组，合作完成热身1和2；教师出示热身的图片，让学生根据图片说出词语，核对答案；最后全体学生齐读热身环节所有词语，要求语音标准，声调准确。\n答案：1.①B/F　②B　③D　④E　⑤A　⑥C\n　　　2.①C　②D　③B　④A"
+   },
+   {
+    "title_zh": "2 生词",
+    "body_zh": "（1）生词快速认读及正音\n发烧、为、照顾、用、感冒、季节、当然、春（天）、草、夏（天）、裙子、最近、越、张\n· 教师先带领学生快速认读一遍生词；\n· 取消拼音，带领学生再次认读；\n· 请单个学生独自认读2-3个生词；\n· 最后全班一起快速认读所有的生词。\n（2）生词讲解方式\n· 直观法（如图片、照片、实物等）展示：发烧、感冒、草、裙子\n· 对比法展示：春（天）—夏（天）\n· 启发式引导：为、用\n教师给出提示，引导学生说句子：\n我做饭，给他——我为他做饭。\n明天是星期六，我们上课吗？——星期六不用上课。\n（3）重点生词扩展及常用搭配\n发烧—发烧了—发了三天烧—发烧的时候要做什么？\n为—为妹妹做生日蛋糕—为朋友买咖啡\n照顾—照顾孩子—照顾小猫—照顾得很好—你们家谁照顾你？\n裙子—穿裙子—买裙子—一条裙子—这条裙子有点儿瘦。\n最近—最近几天—最近我很忙—最近你怎么样？\n练习册相关练习：第29页／一／第一部分，第32页／二／第二部分"
+   },
+   {
+    "title_zh": "3 语言点（1）“了”表示变化",
+    "body_zh": "① 语言点解析\n语气助词“了”用在陈述句句尾，表示情况有了变化，或出现了新的情况，如“我现在没钱了”表示“我”以前有钱，现在没有钱的变化。\n② 语言点导入\n教师可就地取材，利用周围物品，如水杯等，导入语言点。\n教师展示一杯水。\n教师：杯子里有水吗？\n学生：杯子里有水。\n教师把水喝完。\n教师：现在呢？\n学生：现在杯子里没有水了。\n③ 语言点操练\n教师可利用本课热身1的图片A、B、E操练本课语言点。\n教师展示图片A。\n教师：现在是什么季节？\n学生：现在是春天。\n教师：为什么？\n学生：因为花开了。\n教师：天气很冷吗？\n学生：现在天气不冷了。\n教师可利用图片B、D、F进一步操练。\n目标句：她发烧了。\n　　　　草绿了。\n④ 语言点扩展练习\n教师让学生两两一组，互相询问：\n小时候我不喜欢喝牛奶，现在喜欢了。\n去年我不会说汉语，现在会了。\n上个星期天气很热，这个星期冷了。"
+   },
+   {
+    "title_zh": "3 语言点（2）越来越＋Adj／Mental V",
+    "body_zh": "① 语言点解析\n“越来越”的后边加上形容词或心理动词，如“越来越冷”“越来越喜欢”表示随着时间的推移程度上发生的变化。\n［框］越来越＋形容词\n［框］越来越＋心理动词\n② 语言点导入\n教师可利用HSK1~3级要求学习的生词数导入语言点。\n教师分别展示HSK1~3级要求学习的生词数量（1级150个、2级300个、3级600个）。\n教师：生词多吗？\n学生：1级不多，2级还可以，3级多。\n教师引导学生说出句子：生词越来越多。\n③ 语言点操练\n教师可就地取材，利用课本、学生作业等进行操练。\n目标句：同学们汉语说得越来越好。\n　　　　他的字写得越来越漂亮／快。\n　　　　我们越来越喜欢学习汉语。\n④ 语言点扩展练习\n教师让学生互相询问，用学过的形容词说说自己的希望。\n学生A：你有什么希望？\n学生B：我希望我的钱越来越多。\n注意：形容词或心理动词的前边都不能再加程度副词，不能说“越来越很热”“越来越非常想”。"
+   },
+   {
+    "title_zh": "4 课文 课文1",
+    "body_zh": "（1）让学生听两遍录音并回答下列问题：\n女的（小丽）怎么了？——小丽身体不舒服。\n小丽的身体怎么样？——前几天她有点儿发烧，现在好多了。\n男的为小丽买了什么？——他为小丽买了绿茶。\n小丽为什么不喝？——因为她要吃药，所以不喝绿茶。\n（2）教师领读课文两遍，让学生分角色朗读课文，注意说话人的语气。\n（3）教师给提示词，带领学生复述课文。\n提示词：听说、不舒服、发烧、好多了、为、吃药"
+   },
+   {
+    "title_zh": "4 课文 课文2",
+    "body_zh": "（1）让学生听两遍录音并回答下列问题：\n第一个人（周太太）为什么说“对不起”？——因为她明天不能跟大家一起出去玩儿了。\n周太太为什么不能出去玩儿？——她儿子病了，她要在家照顾儿子。\n周太太的儿子身体怎么样了？——昨天吃了感冒药，现在好一些了。\n（2）教师领读课文两遍，让学生分角色朗读课文。\n（3）模仿练习\n学生两人一组，根据提示词模仿课文内容进行对话练习。\nA：对不起，我明天不能……\nB：为什么？怎么了？\nA：我……，我要……。\nB：……？要不要……？\nA：不用……，……，现在……了。\nB：那我们下次……。"
+   },
+   {
+    "title_zh": "4 课文 课文3",
+    "body_zh": "（1）让学生听两遍录音并回答下列问题：\n男的（小刚）最喜欢哪个季节？为什么？——他最喜欢春天。因为天气不那么冷了，草和树都绿了，花也开了。\n女的（小丽）最喜欢哪个季节？为什么？——她最喜欢夏天，因为可以穿漂亮的裙子了。\n小刚现在喜欢什么季节？为什么？——他现在也喜欢夏天了。因为他喜欢看小丽穿漂亮的裙子。\n（2）教师领读课文两遍，让学生分角色朗读课文。\n（3）模仿练习\n学生两人一组，根据提示词模仿课文内容进行对话练习。\nA：你最喜欢……？\nB：当然是……，……。\nA：我……，因为……。\nB：那我也……了。\nA：怎么？你也……？\nB：不，我……。"
+   },
+   {
+    "title_zh": "4 课文 课文4",
+    "body_zh": "（1）让学生听两遍录音并回答下列问题：\n女的（小丽）有什么问题？——她越来越胖了。\n小丽是怎么知道她越来越胖的？——因为去年买的裙子，今年不能穿了。\n男的（小刚）觉得小丽为什么胖了？——因为她吃得太多了。\n小丽能不能少吃？为什么？——小丽不能少吃，因为她做的饭越来越好吃。\n（2）教师领读课文两遍，让学生分角色朗读课文，注意说话人的语气。\n（3）教师给提示词，带领学生复述课文。\n提示词：越来越、不能穿、吃得多、做的饭\n练习册相关练习：第35页／四"
+   },
+   {
+    "title_zh": "5 汉字",
+    "body_zh": "会意字：\n① 知识点解析：\n古代中国人有时用两个或两个以上的独体字组成一个汉字，这几个独体字的意思加起来就是整个汉字的意思。\n提示：教师可以逐一展示独体字图片，请学生说出每个图片的含义，然后把两部分拼在一起，让学生猜测整字的含义。\n明：日＋月——太阳和月亮，光明。\n休：人＋树——人靠在树边休息。\n从：人＋人——一个人跟着另一个人走。\n看：手＋目——手放在眼睛上，看。\n② 汉字练习\n教师板书或者用手指在空中书写本课会意字“明、休、从、看”，带领学生一起识记会意字的笔画笔顺。\n请学生用本课所学会意字组词：\n参考答案：\n明：明天、聪明\n休：休息\n从：从八点到十点、从中国到日本\n看：看见、看电视\n旧字新词：\n① 教师领读以前学过的词语和新词，并让学生猜猜新词的意思。\n· 领读：听、说、听说\n问学生：“听说”是什么意思？——听别人说。\n· 领读：有、一点儿、有点儿\n提示学生：“有点儿”和“有一点儿”意思是一样的。\n· 领读：草、地方、草地\n问学生：“草地”是什么意思？——比较大的有草的地方。\n扩展提问：还有什么“地”？——雪地、菜地、林地……（根据实际情况选用）\n② 教师领读新词扩展，通过情景，理解新词的意思和用法：\n听说：听说过／没听说过／你听说过什么有意思的事吗？\n有点儿：有点儿冷／有点儿难／这件衣服有点儿贵。\n草地：草地上／在草地上玩儿／现在这个季节草地绿了吗？\n汉字辨认练习：\n辨认下列汉字并组词。\n看：________、________　春：________、________\n复：________、________　夏：________、________\n发：________、________　友：________、________\n热：________、________　然：________、________\n草：________、________　早：________、________\n练习册相关练习：第35页／三／第三部分"
+   },
+   {
+    "title_zh": "6 补充课堂活动——根据词卡写句子",
+    "body_zh": "由教师开头，要求学生每人至少选用一个本课所学生词或语言点说一句话。后边的人要接上前边人的情节，最后全班连成一个完整的故事。\n例如：夏天了，天气越来越热。……\n参考词语：发烧、为、照顾、用、感冒、季节、当然、春（天）、草、夏（天）、裙子、最近、越来越、了"
+   },
+   {
+    "title_zh": "7 俗语",
+    "body_zh": "教师引导学生理解俗语的含义，注意这里的“药”并不一定真的指药品，可以是某中能解决问题的办法；“病”也不一定指疾病，可以是遇到的问题。"
+   },
+   {
+    "title_zh": "6 本课小结",
+    "body_zh": "· 语言点：“了”放在句末表示变化\n　　　　　“越来越……”表示随时间推移产生程度上的变化\n· 汉　字：会意字\n　　　　　旧字新词：听说、有点儿、草地"
+   },
+   {
+    "title_zh": "文化：中国有什么传统运动",
+    "body_zh": "1 文化点解析\n① 中国的传统运动包括放风筝、踢毽子、抖空竹、打太极拳等。\n② 老年人习惯早上或傍晚去公园做这些传统运动，而现代年轻人工作较忙，习惯下班后去健身房锻炼，不过他们周末也会跟家人一起去公园游玩和做运动。\n2 文化点参考处理方式\n· 教师可以给出一些运动的图片，请学生挑选出其中的中国传统运动。教师也可以询问学生是否会做这些运动，有条件的，可以进行展示。\n· 请学生说说自己国家的传统运动，有条件的，可以请学生进行展示。"
+   }
+  ],
+  "notes_zh": [
+   "注意：形容词或心理动词的前边都不能再加程度副词，不能说“越来越很热”“越来越非常想”。（语言点2）",
+   "提示：教师可以逐一展示独体字图片，请学生说出每个图片的含义，然后把两部分拼在一起，让学生猜测整字的含义。（汉字·会意字）",
+   "提示学生：“有点儿”和“有一点儿”意思是一样的。（汉字·旧字新词）",
+   "注意这里的“药”并不一定真的指药品，可以是某中能解决问题的办法；“病”也不一定指疾病，可以是遇到的问题。（俗语）"
+  ],
+  "warmup_answers_zh": [
+   "热身1 答案：①B/F　②B　③D　④E　⑤A　⑥C",
+   "热身2 答案：①C　②D　③B　④A"
+  ],
+  "text_questions": [
+   {
+    "text": 1,
+    "q_zh": "女的（小丽）怎么了？",
+    "a_zh": "小丽身体不舒服。"
+   },
+   {
+    "text": 1,
+    "q_zh": "小丽的身体怎么样？",
+    "a_zh": "前几天她有点儿发烧，现在好多了。"
+   },
+   {
+    "text": 1,
+    "q_zh": "男的为小丽买了什么？",
+    "a_zh": "他为小丽买了绿茶。"
+   },
+   {
+    "text": 1,
+    "q_zh": "小丽为什么不喝？",
+    "a_zh": "因为她要吃药，所以不喝绿茶。"
+   },
+   {
+    "text": 2,
+    "q_zh": "第一个人（周太太）为什么说“对不起”？",
+    "a_zh": "因为她明天不能跟大家一起出去玩儿了。"
+   },
+   {
+    "text": 2,
+    "q_zh": "周太太为什么不能出去玩儿？",
+    "a_zh": "她儿子病了，她要在家照顾儿子。"
+   },
+   {
+    "text": 2,
+    "q_zh": "周太太的儿子身体怎么样了？",
+    "a_zh": "昨天吃了感冒药，现在好一些了。"
+   },
+   {
+    "text": 3,
+    "q_zh": "男的（小刚）最喜欢哪个季节？为什么？",
+    "a_zh": "他最喜欢春天。因为天气不那么冷了，草和树都绿了，花也开了。"
+   },
+   {
+    "text": 3,
+    "q_zh": "女的（小丽）最喜欢哪个季节？为什么？",
+    "a_zh": "她最喜欢夏天，因为可以穿漂亮的裙子了。"
+   },
+   {
+    "text": 3,
+    "q_zh": "小刚现在喜欢什么季节？为什么？",
+    "a_zh": "他现在也喜欢夏天了。因为他喜欢看小丽穿漂亮的裙子。"
+   },
+   {
+    "text": 4,
+    "q_zh": "女的（小丽）有什么问题？",
+    "a_zh": "她越来越胖了。"
+   },
+   {
+    "text": 4,
+    "q_zh": "小丽是怎么知道她越来越胖的？",
+    "a_zh": "因为去年买的裙子，今年不能穿了。"
+   },
+   {
+    "text": 4,
+    "q_zh": "男的（小刚）觉得小丽为什么胖了？",
+    "a_zh": "因为她吃得太多了。"
+   },
+   {
+    "text": 4,
+    "q_zh": "小丽能不能少吃？为什么？",
+    "a_zh": "小丽不能少吃，因为她做的饭越来越好吃。"
+   }
+  ],
+  "summary_zh": "语言点：“了”放在句末表示变化；“越来越……”表示随时间推移产生程度上的变化。汉字：会意字；旧字新词：听说、有点儿、草地。"
+ },
+ "workbook": {
+  "ref": {
+   "book": "workbook",
+   "pages": [
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39
+   ]
+  },
+  "answers_ref": {
+   "book": "teacher",
+   "pages": [
+    155,
+    156,
+    157
+   ]
+  },
+  "sections": [
+   {
+    "n": "一、听力 第一部分",
+    "type_zh": "听力 第一部分",
+    "instruction_zh": "第1-5题：听对话，选择与对话内容一致的图片",
+    "instruction_en": "Questions 1-5: Choose the right picture for each dialogue you hear.",
+    "audio": "hsk3-workbook-05-part1.mp3",
+    "items": [
+     {
+      "n": "例如",
+      "zh": "男：喂，请问张经理在吗？ 女：他正在开会，您半个小时以后再打，好吗？",
+      "transcript_zh": "男：喂，请问张经理在吗？ 女：他正在开会，您半个小时以后再打，好吗？",
+      "options": {
+       "A": "[picture] an older woman with glasses sitting at a table, talking with a doctor in a white coat with a stethoscope",
+       "B": "[picture] a smiling elderly woman in a wheelchair in a park, a young woman holding her hands",
+       "C": "[picture] close-up of blooming flowers",
+       "D": "[picture] a smiling woman in a uniform talking on a telephone",
+       "E": "[picture] a man and a smiling woman choosing clothes in a clothing shop",
+       "F": "[picture] a family (a boy, a woman and a man) walking on a lawn"
+      },
+      "answer": "D",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        33
+       ]
+      }
+     },
+     {
+      "n": 1,
+      "zh": "",
+      "options": {
+       "A": "[picture] an older woman with glasses sitting at a table, talking with a doctor in a white coat with a stethoscope",
+       "B": "[picture] a smiling elderly woman in a wheelchair in a park, a young woman holding her hands",
+       "C": "[picture] close-up of blooming flowers",
+       "D": "[picture] a smiling woman in a uniform talking on a telephone",
+       "E": "[picture] a man and a smiling woman choosing clothes in a clothing shop",
+       "F": "[picture] a family (a boy, a woman and a man) walking on a lawn"
+      },
+      "transcript_zh": "女：树和草都绿了，天气真好！ 男：是啊，我们要多出来走走，在草地上坐坐。",
+      "answer": "F",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        157
+       ]
+      }
+     },
+     {
+      "n": 2,
+      "zh": "",
+      "options": {
+       "A": "[picture] an older woman with glasses sitting at a table, talking with a doctor in a white coat with a stethoscope",
+       "B": "[picture] a smiling elderly woman in a wheelchair in a park, a young woman holding her hands",
+       "C": "[picture] close-up of blooming flowers",
+       "D": "[picture] a smiling woman in a uniform talking on a telephone",
+       "E": "[picture] a man and a smiling woman choosing clothes in a clothing shop",
+       "F": "[picture] a family (a boy, a woman and a man) walking on a lawn"
+      },
+      "transcript_zh": "女：这条裤子怎么样？ 男：你已经有那么多裤子了，买条裙子吧。",
+      "answer": "E",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        157
+       ]
+      }
+     },
+     {
+      "n": 3,
+      "zh": "",
+      "options": {
+       "A": "[picture] an older woman with glasses sitting at a table, talking with a doctor in a white coat with a stethoscope",
+       "B": "[picture] a smiling elderly woman in a wheelchair in a park, a young woman holding her hands",
+       "C": "[picture] close-up of blooming flowers",
+       "D": "[picture] a smiling woman in a uniform talking on a telephone",
+       "E": "[picture] a man and a smiling woman choosing clothes in a clothing shop",
+       "F": "[picture] a family (a boy, a woman and a man) walking on a lawn"
+      },
+      "transcript_zh": "女1：您要做什么，我来帮您吧。 女2：不用帮，我一个人可以，谢谢你。",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        157
+       ]
+      }
+     },
+     {
+      "n": 4,
+      "zh": "",
+      "options": {
+       "A": "[picture] an older woman with glasses sitting at a table, talking with a doctor in a white coat with a stethoscope",
+       "B": "[picture] a smiling elderly woman in a wheelchair in a park, a young woman holding her hands",
+       "C": "[picture] close-up of blooming flowers",
+       "D": "[picture] a smiling woman in a uniform talking on a telephone",
+       "E": "[picture] a man and a smiling woman choosing clothes in a clothing shop",
+       "F": "[picture] a family (a boy, a woman and a man) walking on a lawn"
+      },
+      "transcript_zh": "男：春天到了，花都开了。 女：是啊，你看它们开得多好！",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        157
+       ]
+      }
+     },
+     {
+      "n": 5,
+      "zh": "",
+      "options": {
+       "A": "[picture] an older woman with glasses sitting at a table, talking with a doctor in a white coat with a stethoscope",
+       "B": "[picture] a smiling elderly woman in a wheelchair in a park, a young woman holding her hands",
+       "C": "[picture] close-up of blooming flowers",
+       "D": "[picture] a smiling woman in a uniform talking on a telephone",
+       "E": "[picture] a man and a smiling woman choosing clothes in a clothing shop",
+       "F": "[picture] a family (a boy, a woman and a man) walking on a lawn"
+      },
+      "transcript_zh": "女：医生，我怎么了？ 男：你有点儿感冒，我给你开点儿药。",
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        157
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "一、听力 第二部分",
+    "type_zh": "听力 第二部分",
+    "instruction_zh": "第6-10题：听句子，判断对错",
+    "instruction_en": "Questions 6-10: Decide whether the statements are true or false based on the sentences you hear.",
+    "audio": "hsk3-workbook-05-part2.mp3",
+    "items": [
+     {
+      "n": "例如1",
+      "zh": "他希望自己很健康。",
+      "transcript_zh": "为了让自己更健康，他每天都花一个小时去锻炼身体。",
+      "answer": "√",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        34
+       ]
+      }
+     },
+     {
+      "n": "例如2",
+      "zh": "那块儿手表不是他的。",
+      "transcript_zh": "今天我想早点儿回家。看了看手表，才5点。过了一会儿再看表，还是5点，我这才发现我的手表不走了。",
+      "answer": "×",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        34
+       ]
+      }
+     },
+     {
+      "n": 6,
+      "zh": "这几天的天气不太好。",
+      "transcript_zh": "最近天气越来越冷，还总是下雨。",
+      "answer": "√",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        157
+       ]
+      }
+     },
+     {
+      "n": 7,
+      "zh": "现在他的病好了。",
+      "transcript_zh": "我感冒好了，明天你不用来照顾我了。",
+      "answer": "√",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        157
+       ]
+      }
+     },
+     {
+      "n": 8,
+      "zh": "小方现在比去年瘦。",
+      "transcript_zh": "小方最近越来越胖，去年买的裙子都不能穿了。",
+      "answer": "×",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        157
+       ]
+      }
+     },
+     {
+      "n": 9,
+      "zh": "儿子不想吃饭，所以瘦了。",
+      "transcript_zh": "我儿子最近瘦了，工作太忙，没时间吃饭。",
+      "answer": "×",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        157
+       ]
+      }
+     },
+     {
+      "n": 10,
+      "zh": "冬天快到了。",
+      "transcript_zh": "天气越来越热，大家穿得越来越少。",
+      "answer": "×",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        157
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "一、听力 第三部分",
+    "type_zh": "听力 第三部分",
+    "instruction_zh": "第11-15题：听短对话，选择正确答案",
+    "instruction_en": "Questions 11-15: Listen to the short dialogues and choose the right answers.",
+    "audio": "hsk3-workbook-05-part3.mp3",
+    "items": [
+     {
+      "n": "例如",
+      "zh": "男的想让小王做什么？",
+      "transcript_zh": "男：小王，帮我开一下门，好吗？谢谢！ 女：没问题。您去超市了？买了这么多东西。 问：男的想让小王做什么？",
+      "options": {
+       "A": "开门",
+       "B": "拿东西",
+       "C": "去超市买东西"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        34
+       ]
+      }
+     },
+     {
+      "n": 11,
+      "zh": "男的让女的做什么？",
+      "options": {
+       "A": "吃药",
+       "B": "多喝水",
+       "C": "少吃水果"
+      },
+      "transcript_zh": "女：医生，我的病用吃药吗？ 男：不用吃药，回家多喝些水，多吃些水果。 问：男的让女的做什么？",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        157
+       ]
+      }
+     },
+     {
+      "n": 12,
+      "zh": "女的现在怎么样了？",
+      "options": {
+       "A": "越来越好",
+       "B": "不发烧了",
+       "C": "还在生病"
+      },
+      "transcript_zh": "男：听说你最近不舒服，好些了吗？ 女：前天感冒，昨天发烧，头也越来越疼。 问：女的现在怎么样了？",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        157
+       ]
+      }
+     },
+     {
+      "n": 13,
+      "zh": "男的为什么说“谢谢”？",
+      "options": {
+       "A": "女的很聪明",
+       "B": "女的很不错",
+       "C": "女的给他介绍的女朋友很好"
+      },
+      "transcript_zh": "女：上次我为你介绍的那个女朋友怎么样？ 男：人很不错，又聪明又漂亮。谢谢你！ 问：男的为什么说“谢谢”？",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        157
+       ]
+      }
+     },
+     {
+      "n": 14,
+      "zh": "女的觉得汉语怎么样？",
+      "options": {
+       "A": "越来越不容易",
+       "B": "越来越容易",
+       "C": "越来越没意思"
+      },
+      "transcript_zh": "男：我觉得汉语越来越难了。 女：是吗？我怎么觉得越来越容易，也越来越有意思啊！ 问：女的觉得汉语怎么样？",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        157
+       ]
+      }
+     },
+     {
+      "n": 15,
+      "zh": "男的现在怎么样了？",
+      "options": {
+       "A": "越来越好",
+       "B": "没来上班",
+       "C": "不用吃药了"
+      },
+      "transcript_zh": "女：你不是发烧了吗？怎么还来上班？ 男：我吃了药，好些了。 问：男的现在怎么样了？",
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        157
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "一、听力 第四部分",
+    "type_zh": "听力 第四部分",
+    "instruction_zh": "第16-20题：听长对话，选择正确答案",
+    "instruction_en": "Questions 16-20: Listen to the dialogues and choose the right answers.",
+    "audio": "hsk3-workbook-05-part4.mp3",
+    "items": [
+     {
+      "n": "例如",
+      "zh": "男的在做什么？",
+      "transcript_zh": "女：晚饭做好了，准备吃饭了。 男：等一会儿，比赛还有三分钟就结束了。 女：快点儿吧，一起吃，菜冷了就不好吃了。 男：你先吃，我马上就看完了。 问：男的在做什么？",
+      "options": {
+       "A": "洗澡",
+       "B": "吃饭",
+       "C": "看电视"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        35
+       ]
+      }
+     },
+     {
+      "n": 16,
+      "zh": "男的为什么喜欢7月和8月？",
+      "options": {
+       "A": "天气不那么冷了",
+       "B": "草和树都绿了",
+       "C": "没有课了"
+      },
+      "transcript_zh": "女1：我喜欢3月，因为天气不那么冷了。 女2：我喜欢5月，草和树都绿了，花也开了。 女1：我也喜欢6月，大家不用穿冬天的衣服了。 男：我喜欢1月、2月、7月和8月，因为不用去上课了。 问：男的为什么喜欢7月和8月？",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        157
+       ]
+      }
+     },
+     {
+      "n": 17,
+      "zh": "“天长了”是什么意思？",
+      "options": {
+       "A": "天黑了",
+       "B": "白天没有时间",
+       "C": "天黑得晚了"
+      },
+      "transcript_zh": "女：现在天长了。 男：这是什么意思？ 女：“天长了”就是天黑得越来越晚。 男：我懂了，就是白天的时间越来越长了。 问：“天长了”是什么意思？",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        157
+       ]
+      }
+     },
+     {
+      "n": 18,
+      "zh": "这两个人可能是什么关系？",
+      "options": {
+       "A": "男女朋友",
+       "B": "医生和病人",
+       "C": "丈夫和妻子"
+      },
+      "transcript_zh": "女：今天好些了吗？ 男：这几天一直吃药，现在好些了，腿也不疼了。 女：那不用再吃药了。 男：太好了，谢谢您！ 问：这两个人可能是什么关系？",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        157
+       ]
+      }
+     },
+     {
+      "n": 19,
+      "zh": "他们要做什么？",
+      "options": {
+       "A": "买花",
+       "B": "看花",
+       "C": "看雨"
+      },
+      "transcript_zh": "男：你看，天晴了。 女：这么快就不下雨了？我们出去吧。 男：好啊，带孩子们去外边买些花回来。 女：好，我去叫他们。 问：他们要做什么？",
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        157
+       ]
+      }
+     },
+     {
+      "n": 20,
+      "zh": "男的有什么问题？",
+      "options": {
+       "A": "瘦了",
+       "B": "胖了",
+       "C": "吃得少了"
+      },
+      "transcript_zh": "男：我要买裤子了，这条裤子现在已经不能穿了。 女：你瘦了吗？ 男：什么啊，我要买条大一号的。 女：你现在吃得越来越多，也不运动，能不胖吗？ 问：男的有什么问题？",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        157
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第一部分",
+    "type_zh": "阅读 第一部分",
+    "instruction_zh": "第21-25题：选择合适的问答",
+    "instruction_en": "Questions 21-25: Match the two parts of the same dialogue.",
+    "items": [
+     {
+      "n": "例如",
+      "zh": "你知道怎么去那儿吗？",
+      "options": {
+       "A": "要来客人了，我出去买点儿水果吧。",
+       "B": "当然是春天。",
+       "C": "你今天觉得怎么样？还发烧吗？",
+       "D": "我们快回家去吧。",
+       "E": "当然。我们先坐公共汽车，然后换地铁。",
+       "F": "谢谢你照顾我，我的腿越来越好了。"
+      },
+      "answer": "E",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        36
+       ]
+      }
+     },
+     {
+      "n": 21,
+      "zh": "天越来越黑，快要下雨了。",
+      "options": {
+       "A": "要来客人了，我出去买点儿水果吧。",
+       "B": "当然是春天。",
+       "C": "你今天觉得怎么样？还发烧吗？",
+       "D": "我们快回家去吧。",
+       "E": "当然。我们先坐公共汽车，然后换地铁。",
+       "F": "谢谢你照顾我，我的腿越来越好了。"
+      },
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        157
+       ]
+      }
+     },
+     {
+      "n": 22,
+      "zh": "你最喜欢什么季节？",
+      "options": {
+       "A": "要来客人了，我出去买点儿水果吧。",
+       "B": "当然是春天。",
+       "C": "你今天觉得怎么样？还发烧吗？",
+       "D": "我们快回家去吧。",
+       "E": "当然。我们先坐公共汽车，然后换地铁。",
+       "F": "谢谢你照顾我，我的腿越来越好了。"
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        157
+       ]
+      }
+     },
+     {
+      "n": 23,
+      "zh": "我吃了药，也喝了很多水，现在不发烧了。",
+      "options": {
+       "A": "要来客人了，我出去买点儿水果吧。",
+       "B": "当然是春天。",
+       "C": "你今天觉得怎么样？还发烧吗？",
+       "D": "我们快回家去吧。",
+       "E": "当然。我们先坐公共汽车，然后换地铁。",
+       "F": "谢谢你照顾我，我的腿越来越好了。"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        157
+       ]
+      }
+     },
+     {
+      "n": 24,
+      "zh": "不用去，家里还有一些苹果和西瓜。",
+      "options": {
+       "A": "要来客人了，我出去买点儿水果吧。",
+       "B": "当然是春天。",
+       "C": "你今天觉得怎么样？还发烧吗？",
+       "D": "我们快回家去吧。",
+       "E": "当然。我们先坐公共汽车，然后换地铁。",
+       "F": "谢谢你照顾我，我的腿越来越好了。"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        157
+       ]
+      }
+     },
+     {
+      "n": 25,
+      "zh": "别这么客气。",
+      "options": {
+       "A": "要来客人了，我出去买点儿水果吧。",
+       "B": "当然是春天。",
+       "C": "你今天觉得怎么样？还发烧吗？",
+       "D": "我们快回家去吧。",
+       "E": "当然。我们先坐公共汽车，然后换地铁。",
+       "F": "谢谢你照顾我，我的腿越来越好了。"
+      },
+      "answer": "F",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        157
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第二部分",
+    "type_zh": "阅读 第二部分",
+    "instruction_zh": "第26-30题：选择合适的词语填空",
+    "instruction_en": "Questions 26-30: Choose the proper words to fill in the brackets.",
+    "word_bank": [
+     [
+      "A 照顾",
+      "B 当然",
+      "C 最近",
+      "D 裙子",
+      "E 声音",
+      "F 为"
+     ]
+    ],
+    "items": [
+     {
+      "n": "例如",
+      "zh": "她说话的（　）多好听啊！",
+      "options": {
+       "A": "照顾",
+       "B": "当然",
+       "C": "最近",
+       "D": "裙子",
+       "E": "声音",
+       "F": "为"
+      },
+      "answer": "E",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        36
+       ]
+      }
+     },
+     {
+      "n": 26,
+      "zh": "这是我（　）你买的蛋糕，你看看，喜欢吗？",
+      "options": {
+       "A": "照顾",
+       "B": "当然",
+       "C": "最近",
+       "D": "裙子",
+       "E": "声音",
+       "F": "为"
+      },
+      "answer": "F",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        157
+       ]
+      }
+     },
+     {
+      "n": 27,
+      "zh": "下个星期我不在家，你能帮我（　）一下我的小狗吗？",
+      "options": {
+       "A": "照顾",
+       "B": "当然",
+       "C": "最近",
+       "D": "裙子",
+       "E": "声音",
+       "F": "为"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        157
+       ]
+      }
+     },
+     {
+      "n": 28,
+      "zh": "这条（　）是去年我生日的时候妈妈给我买的。",
+      "options": {
+       "A": "照顾",
+       "B": "当然",
+       "C": "最近",
+       "D": "裙子",
+       "E": "声音",
+       "F": "为"
+      },
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        157
+       ]
+      }
+     },
+     {
+      "n": 29,
+      "zh": "A：你怎么瘦了？是不是（　）工作太忙了？ B：我一点儿也没瘦，很多人都说我胖了。",
+      "options": {
+       "A": "照顾",
+       "B": "当然",
+       "C": "最近",
+       "D": "裙子",
+       "E": "声音",
+       "F": "为"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        157
+       ]
+      }
+     },
+     {
+      "n": 30,
+      "zh": "A：今天晚上你想不想跟我一起去看电影？ B：（　）想去，我们什么时候走？",
+      "options": {
+       "A": "照顾",
+       "B": "当然",
+       "C": "最近",
+       "D": "裙子",
+       "E": "声音",
+       "F": "为"
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        157
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第三部分",
+    "type_zh": "阅读 第三部分",
+    "instruction_zh": "第31-35题：选择正确答案",
+    "instruction_en": "Questions 31-35: Choose the right answers.",
+    "items": [
+     {
+      "n": "例如",
+      "zh": "您是来参加今天会议的吗？您来早了一点儿，现在才八点半。您先进来坐吧。 ★会议最可能几点开始？",
+      "options": {
+       "A": "8点",
+       "B": "8点半",
+       "C": "9点"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        37
+       ]
+      }
+     },
+     {
+      "n": 31,
+      "zh": "北京一年有四个季节，我最喜欢春天。北京的春天是绿色的，因为树绿了，草地也都绿了，天气不那么冷了，花也开了。这么漂亮的季节，你不喜欢吗？ ★北京的春天：",
+      "options": {
+       "A": "天气非常冷",
+       "B": "花还没开",
+       "C": "树和草都绿了"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        157
+       ]
+      }
+     },
+     {
+      "n": 32,
+      "zh": "现在的“小胖子”越来越多了，因为现在的孩子吃得越来越多，越来越不爱运动。吃饭的时候不爱吃菜，只爱吃肉，还喜欢吃甜的，这样当然会越来越胖了。 ★“小胖子”们：",
+      "options": {
+       "A": "爱吃菜",
+       "B": "爱吃肉",
+       "C": "爱运动"
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        157
+       ]
+      }
+     },
+     {
+      "n": 33,
+      "zh": "中国人一年四季都喜欢喝茶。中国有很多种茶，有红茶，也有绿茶，还有花茶。茶是中国人非常爱喝的饮料。 ★中国人觉得茶：",
+      "options": {
+       "A": "是红色的",
+       "B": "很好喝",
+       "C": "很贵"
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        157
+       ]
+      }
+     },
+     {
+      "n": 34,
+      "zh": "很多女孩儿晚上不吃饭，只吃水果，白天吃得也很少。她们说这样可以瘦一点儿，可以穿漂亮的裙子。其实，不吃饭对身体不好。晚上可以少吃一点儿，但不能不吃，也不能吃得太晚。 ★根据这段话，可以知道：",
+      "options": {
+       "A": "不吃饭对身体不好",
+       "B": "晚上可以不吃饭",
+       "C": "白天可以不吃饭"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        157
+       ]
+      }
+     },
+     {
+      "n": 35,
+      "zh": "你知道生病的时候怎么吃药吗？有人用茶水吃药，有人用热牛奶吃药。其实，吃药的时候用热水是最好的。药，你吃对了吗？ ★吃药的时候要用：",
+      "options": {
+       "A": "热茶水",
+       "B": "热牛奶",
+       "C": "热水"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        157
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "三、书写 第一部分",
+    "type_zh": "书写 第一部分",
+    "instruction_zh": "第36-40题：连词成句",
+    "instruction_en": "Questions 36-40: Rearrange the words/phrases to make sentences.",
+    "items": [
+     {
+      "n": "例如",
+      "zh": "小船　上　一　河　条　有",
+      "answer": "河上有一条小船。",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        38
+       ]
+      }
+     },
+     {
+      "n": 36,
+      "zh": "外边的　绿　草　都　了",
+      "answer": "外边的草都绿了。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        157
+       ]
+      }
+     },
+     {
+      "n": 37,
+      "zh": "好　现在　我的病　了",
+      "answer": "现在我的病好了。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        157
+       ]
+      }
+     },
+     {
+      "n": 38,
+      "zh": "热　越来越　天气　最近",
+      "answer": "最近天气越来越热。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        157
+       ]
+      }
+     },
+     {
+      "n": 39,
+      "zh": "越来越　雨　大　下得",
+      "answer": "雨下得越来越大。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        157
+       ]
+      }
+     },
+     {
+      "n": 40,
+      "zh": "漂亮　越来越　现在　我妹妹",
+      "answer": "我妹妹现在越来越漂亮。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        157
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "三、书写 第二部分",
+    "type_zh": "书写 第二部分",
+    "instruction_zh": "第41-45题：看拼音，写汉字",
+    "instruction_en": "Questions 41-45: Write the characters based on their pinyin.",
+    "items": [
+     {
+      "n": "例如",
+      "zh": "没（　）系，别难过，高兴点儿。",
+      "hint_zh": "guān",
+      "answer": "关",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        38
+       ]
+      }
+     },
+     {
+      "n": 41,
+      "zh": "听说你（　）烧了，我来看看你。",
+      "hint_zh": "fā",
+      "answer": "发",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        157
+       ]
+      }
+     },
+     {
+      "n": 42,
+      "zh": "今天是周末，不（　）去公司上班。",
+      "hint_zh": "yòng",
+      "answer": "用",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        157
+       ]
+      }
+     },
+     {
+      "n": 43,
+      "zh": "你觉得哪个（　）节去南方最好？",
+      "hint_zh": "jì",
+      "answer": "季",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        157
+       ]
+      }
+     },
+     {
+      "n": 44,
+      "zh": "大家都说北京的（　）天是最漂亮的。",
+      "hint_zh": "chūn",
+      "answer": "春",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        157
+       ]
+      }
+     },
+     {
+      "n": 45,
+      "zh": "你说我今天穿裤子还是穿（　）子？",
+      "hint_zh": "qún",
+      "answer": "裙",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        157
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "三、书写 第三部分",
+    "type_zh": "书写 第三部分",
+    "instruction_zh": "第46-50题：辨认汉字，选择正确的汉字填空",
+    "instruction_en": "Questions 46-50: Distinguish the characters and fill in the blanks.",
+    "items": [
+     {
+      "n": "例如",
+      "zh": "我不知道________个地方在________儿。",
+      "hint_zh": "（那、哪）",
+      "answer": "那、哪",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        39
+       ]
+      }
+     },
+     {
+      "n": 46,
+      "zh": "你________，________天到了，花都开了。",
+      "hint_zh": "（看、春）",
+      "answer": "看、春",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        157
+       ]
+      }
+     },
+     {
+      "n": 47,
+      "zh": "今年________天，我没去旅游，一直在家里________习，准备HSK考试。",
+      "hint_zh": "（复、夏）",
+      "answer": "夏、复",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        157
+       ]
+      }
+     },
+     {
+      "n": 48,
+      "zh": "我的朋________有点儿________烧，我要去他家照顾他。",
+      "hint_zh": "（发、友）",
+      "answer": "友、发",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        157
+       ]
+      }
+     },
+     {
+      "n": 49,
+      "zh": "你穿了那么多衣服，当________觉得很________。",
+      "hint_zh": "（热、然）",
+      "answer": "然、热",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        157
+       ]
+      }
+     },
+     {
+      "n": 50,
+      "zh": "今天________上，我看到树下的小________都绿了。",
+      "hint_zh": "（草、早）",
+      "answer": "早、草",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        157
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "三、书写 第四部分",
+    "type_zh": "书写 第四部分",
+    "instruction_zh": "第51-54题：用下边的汉字组词",
+    "instruction_en": "Questions 51-54: Make words using the following characters.",
+    "items": [
+     {
+      "n": "例如",
+      "zh": "找________、________",
+      "answer": "找人、找到",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        39
+       ]
+      }
+     },
+     {
+      "n": 51,
+      "zh": "明________、________",
+      "answer": "明天、聪明",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        157
+       ]
+      }
+     },
+     {
+      "n": 52,
+      "zh": "休________、________",
+      "answer": "休息、休学",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        157
+       ]
+      }
+     },
+     {
+      "n": 53,
+      "zh": "从________、________",
+      "answer": "从来、从小",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        157
+       ]
+      }
+     },
+     {
+      "n": 54,
+      "zh": "看________、________",
+      "answer": "看书、看见",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        157
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "四、复习",
+    "type_zh": "复习",
+    "instruction_zh": "第1-2题：根据课文内容填空",
+    "instruction_en": "Questions 1-2: Fill in the blanks based on the texts in the textbook.",
+    "items": [
+     {
+      "n": 1,
+      "zh": "小刚最喜欢的________是________，因为天气不那么冷了，________和树都绿了，花也开了。小丽最喜欢________，因为可以穿漂亮的________。现在小刚也喜欢夏天了。",
+      "answer": "季节、春天、草、夏天、裙子",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        157
+       ]
+      }
+     },
+     {
+      "n": 2,
+      "zh": "小丽去年买的裙子，今年________了。因为小丽吃得太多，小刚让她________。________小丽________胖，是因为她________太好吃了。",
+      "answer": "就不能穿、少吃点儿、最近、越来越、做的饭",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        157
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ "audio": {
+  "textbook": [
+   "hsk3-textbook-0501.mp3",
+   "hsk3-textbook-0502.mp3",
+   "hsk3-textbook-0503.mp3",
+   "hsk3-textbook-0504.mp3",
+   "hsk3-textbook-0505.mp3"
+  ],
+  "workbook": [
+   "hsk3-workbook-05-part1.mp3",
+   "hsk3-workbook-05-part2.mp3",
+   "hsk3-workbook-05-part3.mp3",
+   "hsk3-workbook-05-part4.mp3"
+  ]
+ },
+ "unclear": [
+  "Сурах бичиг PDF х.59 汉字知识-ийн хүснэгтэд англи тайлбар «combined togeter to mean “bright.”» (together биш) — номд байгаагаар knowledge_en-д.",
+  "Сурах бичиг PDF х.59 会意字 хүснэгтийн «图片 Picture» багана (эртний дүрс/зураг) текст биш тул оруулаагүй; англи тайлбарыг knowledge_en-д мөр болгон, хятадыг characters[].note_zh-д.",
+  "会意字 тайлбарын зөрүү: сурах бичиг (PDF х.59) «明 — 太阳和月亮在一起，光明。» «休 — 人靠在树上休息。» «从 — 一个人跟着另一个人。» ↔ багшийн ном (PDF х.41) «太阳和月亮，光明。» «人靠在树边休息。» «一个人跟着另一个人走。» «看：手＋目——手放在眼睛上，看。» — тус тусад нь номд байгаагаар (characters — сурах бичгээс, teacher.steps — багшийн номоос).",
+  "Сурах бичиг PDF х.55 拼音课文 яриа 3-ын сүүлчийн мөр «Bù，wǒ xǐhuan…» — пиньиньд бүтэн өргөнтэй таслал (，) хэвлэгдсэн; номд байгаагаар үлдээсэн.",
+  "Сурах бичгийн 拼音课文-ын гарчгийн пиньинь (Zài Xiǎolì jiā / Zài dǎ diànhuà / Zài Xiǎogāng jiā ×2) болон ярилцагчийн нэрийн пиньинь (péngyou, Xiǎolì, Zhōu tàitai, Zhāng tàitai, Xiǎogāng) схемд талбаргүй тул lines.pinyin-д зөвхөн яриаг оруулсан.",
+  "课文3 ба 课文4 хоёулаа «在小刚家 At Xiaogang’s home» гарчигтай — номд байгаагаар.",
+  "热身1-ийн хариулт багшийн номд (PDF х.36) «①B/F» — ① 感冒-д хоёр зураг (B, F) зөв гэж өгсөн; номд байгаагаар.",
+  "Багшийн ном PDF х.38 语言点1 操练 — «利用本课热身1的图片A、B、E操练», дараа нь «可利用图片B、D、F进一步操练» — B хоёр удаа; номд байгаагаар.",
+  "Багшийн ном PDF х.42 алхмын дугаарлалт: «6 补充课堂活动», «7 俗语», дараа нь дахин «6 本课小结» — номын дугаарлалтаар teacher.steps-д.",
+  "Багшийн ном PDF х.42 俗语 — «可以是某中能解决问题的办法» (某种 гэж байх ёстой бололтой) — номд байгаагаар.",
+  "Сурах бичгийн 练一练 (2 дүрэм: 3 + 4), 练习2 选词填空 / 练习3 描述图片 / 练习4 回答问题 болон 运用 — хариулт сурах бичиг, багшийн номд хэвлэгдээгүй тул answer талбаргүй. Багшийн номын 课文 асуулт-хариулт (teacher.text_questions) нь 练习4-ийн асуултаас өөр асуултууд.",
+  "Багшийн номын 汉字辨认练习 (看/春 · 复/夏 · 发/友 · 热/然 · 草/早 — 组词) хоосон зайтай, хариулт хэвлэгдээгүй.",
+  "Дасгалын ном 51–54 (用下边的汉字组词)-ийн хариулт багшийн номын хавсралтын «参考答案» (PDF х.157) — жишиг хариулт; өөр зөв үг байж болно.",
+  "Дасгалын номын сонсгол нэг CD тэмдэгтэй (05) — аудиог hsk3-workbook-05-part1…4.mp3 болгож хэсэг тус бүрт хуваасныг section.audio-д оноосон.",
+  "Дасгалын ном 听力 第三/四部分 — номд зөвхөн сонголтууд хэвлэгдсэн; item.zh-д багшийн номын хавсралтын «问：» асуултыг оруулсан (transcript_zh-д бүтнээр). Сонсголын бичвэр PDF х.155–157, хариулт PDF х.157.",
+  "Сурах бичиг 练习3 болон 热身 ба дасгалын номын 听力 第一部分-ийн зургийн тайлбар (picture_desc_en / pictures_desc_en / [picture]) — номд текст байхгүй тул зургаас товч, объектив дүрсэлсэн.",
+  "Багшийн ном PDF х.38 语言点2-ын «越来越＋形容词», «越来越＋心理动词» хоёр хүрээтэй бүтцийг teacher.steps-д «［框］» гэж тэмдэглэсэн.",
+  "Сурах бичгийн 注释2-ын гарчиг номд «越来越+Adj/Mental V» (хагас өргөнтэй +, /) — номд байгаагаар."
+ ],
+ "verified_pages": [
+  33,
+  34,
+  35,
+  36,
+  37,
+  38,
+  39,
+  40,
+  41,
+  42,
+  53,
+  54,
+  55,
+  56,
+  57,
+  58,
+  59,
+  60,
+  61,
+  155,
+  156,
+  157
+ ],
+ "schema_version": 1
+}

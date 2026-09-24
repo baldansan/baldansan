@@ -1,0 +1,1968 @@
+{
+ "level": "hsk3",
+ "lesson": 14,
+ "book": "HSK3",
+ "title_zh": "你把水果拿过来",
+ "title_pinyin": "Nǐ bǎ shuǐguǒ ná guolai",
+ "title_en": "Please bring the fruit here",
+ "textbook": {
+  "ref": {
+   "book": "textbook",
+   "pages": [
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140
+   ]
+  },
+  "warmup": [
+   {
+    "instruction_zh": "给下面的词语选择对应的图片",
+    "instruction_en": "Match the pictures with the words.",
+    "items": [
+     "①菜单 càidān",
+     "②盘子 pánzi",
+     "③电视节目 diànshì jiémù",
+     "④月亮 yuèliang",
+     "⑤冰箱 bīngxiāng",
+     "⑥香蕉 xiāngjiāo"
+    ],
+    "pictures_desc_en": [
+     "A: a full moon in a dark blue night sky above bare trees",
+     "B: a tall silver refrigerator with its doors open, food inside",
+     "C: a bunch of yellow bananas",
+     "D: a flat-screen TV showing a green grassland landscape",
+     "E: a brown-and-gold menu cover with the word “MENU”",
+     "F: a porcelain plate decorated with a flowering branch and a bird"
+    ]
+   },
+   {
+    "instruction_zh": "说一说在下面的时间中，你会做的三件事",
+    "instruction_en": "Talk about the three things you would do during the following periods of time.",
+    "items": [
+     "时间 | 事情1 | 事情2 | 事情3",
+     "起床以后 qǐ chuáng yǐhòu | 刷牙 shuā yá | 洗脸 xǐ liǎn | 吃早饭 chī zǎofàn",
+     "睡觉以前 shuì jiào yǐqián | | |",
+     "下课以后 xià kè yǐhòu | | |",
+     "考试以后 kǎo shì yǐhòu | | |",
+     "到家以后 dào jiā yǐhòu | | |",
+     "吃饭以后 chī fàn yǐhòu | | |"
+    ]
+   }
+  ],
+  "texts": [
+   {
+    "n": 1,
+    "title_zh": "在家",
+    "title_en": "At home",
+    "kind": "dialogue",
+    "audio": "hsk3-textbook-1401.mp3",
+    "lines": [
+     {
+      "speaker": "周太太",
+      "zh": "客人就要来了，你怎么还不打扫房间啊？",
+      "pinyin": "Kèrén jiù yào lái le, nǐ zěnme hái bù dǎsǎo fángjiān a?"
+     },
+     {
+      "speaker": "周明",
+      "zh": "别着急，我让孩子们打扫呢，客人来的时候，他们会把房间打扫干净。",
+      "pinyin": "Bié zháo jí, wǒ ràng háizimen dǎsǎo ne, kèrén lái de shíhou, tāmen huì bǎ fángjiān dǎsǎo gānjìng."
+     },
+     {
+      "speaker": "周太太",
+      "zh": "那你也不能看电视啊。",
+      "pinyin": "Nà nǐ yě bù néng kàn diànshì a."
+     },
+     {
+      "speaker": "周明",
+      "zh": "你让我做什么？",
+      "pinyin": "Nǐ ràng wǒ zuò shénme?"
+     },
+     {
+      "speaker": "周太太",
+      "zh": "先把茶和杯子放好，然后把冰箱里的西瓜拿出来。",
+      "pinyin": "Xiān bǎ chá hé bēizi fànghǎo, ránhòu bǎ bīngxiāng li de xīguā ná chulai."
+     },
+     {
+      "speaker": "周明",
+      "zh": "太热了，我还是先把空调打开吧。",
+      "pinyin": "Tài rè le, wǒ háishi xiān bǎ kōngtiáo dǎ kāi ba."
+     }
+    ],
+    "new_words": [
+     {
+      "n": 1,
+      "zh": "打扫",
+      "pinyin": "dǎsǎo",
+      "pos": "v.",
+      "en": "to clean, to sweep",
+      "text": 1
+     },
+     {
+      "n": 2,
+      "zh": "干净",
+      "pinyin": "gānjìng",
+      "pos": "adj.",
+      "en": "clean",
+      "text": 1
+     },
+     {
+      "n": 3,
+      "zh": "然后",
+      "pinyin": "ránhòu",
+      "pos": "conj.",
+      "en": "then, after that",
+      "text": 1
+     },
+     {
+      "n": 4,
+      "zh": "冰箱",
+      "pinyin": "bīngxiāng",
+      "pos": "n.",
+      "en": "refrigerator",
+      "text": 1
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "title_zh": "在打电话",
+    "title_en": "On the phone",
+    "kind": "dialogue",
+    "audio": "hsk3-textbook-1402.mp3",
+    "lines": [
+     {
+      "speaker": "同事",
+      "zh": "你在忙什么呢？刚才打你的手机你也不接。",
+      "pinyin": "Nǐ zài máng shénme ne? Gāngcái dǎ nǐ de shǒujī nǐ yě bù jiē."
+     },
+     {
+      "speaker": "小刚",
+      "zh": "对不起，我刚洗了个澡，没听见。有什么事吗？",
+      "pinyin": "Duìbuqǐ, wǒ gāng xǐle ge zǎo, méi tīngjiàn. Yǒu shénme shì ma?"
+     },
+     {
+      "speaker": "同事",
+      "zh": "我想问问你公司里的一些事情。",
+      "pinyin": "Wǒ xiǎng wènwen nǐ gōngsī li de yìxiē shìqing."
+     },
+     {
+      "speaker": "小刚",
+      "zh": "你先等一下，我去把电视关了。",
+      "pinyin": "Nǐ xiān děng yíxià, wǒ qù bǎ diànshì guān le."
+     },
+     {
+      "speaker": "同事",
+      "zh": "没关系，你先把电视节目看完吧，然后再给我回电话。",
+      "pinyin": "Méi guānxi, nǐ xiān bǎ diànshì jiémù kànwán ba, ránhòu zài gěi wǒ huí diànhuà."
+     }
+    ],
+    "new_words": [
+     {
+      "n": 5,
+      "zh": "洗澡",
+      "pinyin": "xǐ zǎo",
+      "pos": "v.",
+      "en": "to take a bath/shower",
+      "text": 2
+     },
+     {
+      "n": 6,
+      "zh": "节目",
+      "pinyin": "jiémù",
+      "pos": "n.",
+      "en": "programme",
+      "text": 2
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "title_zh": "在小明家",
+    "title_en": "At Xiaoming’s home",
+    "kind": "dialogue",
+    "audio": "hsk3-textbook-1403.mp3",
+    "lines": [
+     {
+      "speaker": "同学",
+      "zh": "今晚的月亮真漂亮，像白色的盘子一样。",
+      "pinyin": "Jīn wǎn de yuèliang zhēn piàoliang, xiàng báisè de pánzi yíyàng."
+     },
+     {
+      "speaker": "小明",
+      "zh": "是啊，外边也不刮风，我们坐在外边一边看月亮一边吃东西，怎么样？",
+      "pinyin": "Shì a, wàibian yě bù guā fēng, wǒmen zuò zài wàibian yìbiān kàn yuèliang yìbiān chī dōngxi, zěnme yàng?"
+     },
+     {
+      "speaker": "同学",
+      "zh": "好啊，我先把桌椅搬出去，然后你把水果拿过来，我们听叔叔阿姨讲讲他们年轻时候的故事。",
+      "pinyin": "Hǎo a, wǒ xiān bǎ zhuōyǐ bān chuqu, ránhòu nǐ bǎ shuǐguǒ ná guolai, wǒmen tīng shūshu āyí jiǎngjiang tāmen niánqīng shíhou de gùshì."
+     },
+     {
+      "speaker": "小明",
+      "zh": "太好了！记得给大山打个电话，让他马上过来。",
+      "pinyin": "Tài hǎo le! Jìde gěi Dàshān dǎ ge diànhuà, ràng tā mǎshàng guòlai."
+     },
+     {
+      "speaker": "同学",
+      "zh": "不用打了，你听外边的声音，一定是大山。",
+      "pinyin": "Búyòng dǎ le, nǐ tīng wàibian de shēngyīn, yídìng shì Dàshān."
+     }
+    ],
+    "new_words": [
+     {
+      "n": 7,
+      "zh": "月亮",
+      "pinyin": "yuèliang",
+      "pos": "n.",
+      "en": "moon",
+      "text": 3
+     },
+     {
+      "n": 8,
+      "zh": "像",
+      "pinyin": "xiàng",
+      "pos": "v.",
+      "en": "to be like",
+      "text": 3
+     },
+     {
+      "n": 9,
+      "zh": "盘子",
+      "pinyin": "pánzi",
+      "pos": "n.",
+      "en": "plate",
+      "text": 3
+     },
+     {
+      "n": 10,
+      "zh": "刮风",
+      "pinyin": "guā fēng",
+      "pos": "v.",
+      "en": "to be windy",
+      "text": 3
+     },
+     {
+      "n": 11,
+      "zh": "叔叔",
+      "pinyin": "shūshu",
+      "pos": "n.",
+      "en": "uncle",
+      "text": 3
+     },
+     {
+      "n": 12,
+      "zh": "阿姨",
+      "pinyin": "āyí",
+      "pos": "n.",
+      "en": "aunt",
+      "text": 3
+     },
+     {
+      "n": 13,
+      "zh": "故事",
+      "pinyin": "gùshi",
+      "pos": "n.",
+      "en": "story",
+      "text": 3
+     },
+     {
+      "n": 14,
+      "zh": "声音",
+      "pinyin": "shēngyīn",
+      "pos": "n.",
+      "en": "sound, voice",
+      "text": 3
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "title_zh": "",
+    "kind": "narrative",
+    "audio": "hsk3-textbook-1404.mp3",
+    "lines": [
+     {
+      "zh": "你吃过水果饭吗？",
+      "pinyin": "Nǐ chī guo shuǐguǒ fàn ma?"
+     },
+     {
+      "zh": "你在饭馆的菜单上见过水果饭吗？",
+      "pinyin": "Nǐ zài fànguǎnr de càidān shang jiàn guo shuǐguǒ fàn ma?"
+     },
+     {
+      "zh": "你想学着做水果饭吗？",
+      "pinyin": "Nǐ xiǎng xuézhe zuò shuǐguǒ fàn ma?"
+     },
+     {
+      "zh": "其实做水果饭很简单，先把米饭做好，然后再把一块块新鲜的水果放进去，水果饭就做好了。",
+      "pinyin": "Qíshí zuò shuǐguǒ fàn hěn jiǎndān, xiān bǎ mǐfàn zuòhǎo, ránhòu zài bǎ yí kuàikuài xīnxiān de shuǐguǒ fàng jinqu, shuǐguǒ fàn jiù zuòhǎo le."
+     },
+     {
+      "zh": "你可以做苹果饭、香蕉饭，要是你愿意，还可以做西瓜饭。",
+      "pinyin": "Nǐ kěyǐ zuò píngguǒ fàn, xiāngjiāo fàn, yàoshi nǐ yuànyì, hái kěyǐ zuò xīguā fàn."
+     },
+     {
+      "zh": "多吃新鲜水果对身体好。",
+      "pinyin": "Duō chī xīnxiān shuǐguǒ duì shēntǐ hǎo."
+     }
+    ],
+    "new_words": [
+     {
+      "n": 15,
+      "zh": "菜单",
+      "pinyin": "càidān",
+      "pos": "n.",
+      "en": "menu",
+      "text": 4
+     },
+     {
+      "n": 16,
+      "zh": "简单",
+      "pinyin": "jiǎndān",
+      "pos": "adj.",
+      "en": "simple",
+      "text": 4
+     },
+     {
+      "n": 17,
+      "zh": "香蕉",
+      "pinyin": "xiāngjiāo",
+      "pos": "n.",
+      "en": "banana",
+      "text": 4
+     }
+    ]
+   }
+  ],
+  "grammar": [
+   {
+    "n": 1,
+    "title_zh": "“把”字句3：A把B＋V＋结果补语／趋向补语",
+    "title_en": "The Ba-Sentence 3: A把B + V + Complement of Result/Direction",
+    "explanation_zh": "汉语中，表达对确定的人或事物产生某种结果或发生位置上的改变，可用“A把B＋V＋结果补语／趋向补语”。例如：",
+    "explanation_en": "In Chinese, the structure “A把B + V + Complement of Result/Direction” can be used to indicate an action which is done on a definite person or thing and has brought a result to or has changed the position of the person or thing. For example:",
+    "structure_rows": [
+     "A把B | V | 结果补语／趋向补语",
+     "我把衣服 | 洗 | 干净了。",
+     "妈妈还没把饭 | 做 | 好呢。",
+     "请同学们把铅笔 | 拿 | 出来。",
+     "你把水果 | 拿 | 过来。"
+    ],
+    "examples": [
+     {
+      "zh": "我把衣服洗干净了。"
+     },
+     {
+      "zh": "妈妈还没把饭做好呢。"
+     },
+     {
+      "zh": "请同学们把铅笔拿出来。"
+     },
+     {
+      "zh": "你把水果拿过来。"
+     }
+    ],
+    "practice_instruction_zh": "练一练　完成对话 Complete the dialogues.",
+    "practice": [
+     {
+      "n": 1,
+      "zh": "A：妈妈，让我再看一会儿这个节目吧。 B：好吧。你把这个节目________就去写作业。"
+     },
+     {
+      "n": 2,
+      "zh": "A：房间里太热了。 B：________。"
+     },
+     {
+      "n": 3,
+      "zh": "A：我的行李呢？ B：别着急，________房间里去了。"
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "title_zh": "先……，再／又……，然后……",
+    "title_en": "The Structure “先……，再/又……，然后……”",
+    "explanation_zh": "“先……，再／又……，然后……”表示动作的先后顺序。“再”表示动作还没有发生，“又”表示动作已经发生了。例如：",
+    "explanation_en": "The structure “先……，再/又……，然后…… (first…, then…, and then…)” indicates the sequence of a series of actions. “再” indicates the action has not happened yet, while “又” indicates the action has already happened. For example:",
+    "structure_rows": [
+     "先……，再／又……，然后……"
+    ],
+    "examples": [
+     {
+      "n": 1,
+      "zh": "回家以后，我先做作业，然后吃饭。"
+     },
+     {
+      "n": 2,
+      "zh": "我先坐了一个小时公共汽车，又坐了一会儿地铁才到小刚家。"
+     },
+     {
+      "n": 3,
+      "zh": "你先把电视节目看完吧，然后再给我回电话。"
+     },
+     {
+      "n": 4,
+      "zh": "先把米饭做好，然后再把一块块新鲜的水果放进去。"
+     }
+    ],
+    "practice_instruction_zh": "练一练　完成对话 Complete the dialogues.",
+    "practice": [
+     {
+      "n": 1,
+      "zh": "A：下课以后，你做什么？ B：________。"
+     },
+     {
+      "n": 2,
+      "zh": "A：你妈妈来了，你打算带她去哪儿玩儿？ B：________。"
+     },
+     {
+      "n": 3,
+      "zh": "A：考完试了，你有什么打算？ B：________。"
+     }
+    ]
+   }
+  ],
+  "exercises": [
+   {
+    "n": 1,
+    "type_zh": "朗读",
+    "instruction_zh": "朗读下列短语和句子",
+    "instruction_en": "Read the following phrases and sentences aloud.",
+    "audio": "hsk3-textbook-1405.mp3",
+    "items": [
+     {
+      "n": 1,
+      "zh": "打扫：打扫一下／打扫教室／打扫干净／你怎么还不打扫房间啊？"
+     },
+     {
+      "n": 2,
+      "zh": "干净：不干净／干净的房间／把手洗干净／他们会把房间打扫干净。"
+     },
+     {
+      "n": 3,
+      "zh": "洗澡：洗完澡／洗一个小时澡／一边洗澡一边唱歌／我刚洗了个澡。"
+     },
+     {
+      "n": 4,
+      "zh": "节目：一个节目／看节目／请看下一个节目／你先把电视节目看完吧。"
+     },
+     {
+      "n": 5,
+      "zh": "刮风：常常刮风／刮大风／刮了三天风／外面没刮风。"
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "type_zh": "选词填空",
+    "instruction_zh": "选择恰当的词语填空",
+    "instruction_en": "Choose the proper words to fill in the blanks.",
+    "word_bank": [
+     [
+      "节目",
+      "故事",
+      "菜单",
+      "香蕉",
+      "盘子"
+     ],
+     [
+      "打扫",
+      "干净",
+      "简单",
+      "声音",
+      "像"
+     ]
+    ],
+    "items": [
+     {
+      "n": 1,
+      "zh": "每天晚上，爸爸都要给女儿讲一个________。"
+     },
+     {
+      "n": 2,
+      "zh": "我来做饭，你来洗________，怎么样？"
+     },
+     {
+      "n": 3,
+      "zh": "我们买几斤________吧，家里没有水果了。"
+     },
+     {
+      "n": 4,
+      "zh": "跟朋友一起喝着饮料看电视________，是最快乐的事。"
+     },
+     {
+      "n": 5,
+      "zh": "服务员，请拿________过来，我们点菜。"
+     },
+     {
+      "n": 6,
+      "zh": "A：我们什么时候吃晚饭？ B：先________完房间再吃。"
+     },
+     {
+      "n": 7,
+      "zh": "A：听！是谁在外边说话？ B：没有________啊。"
+     },
+     {
+      "n": 8,
+      "zh": "A：你觉得洗衣服很________，可我觉得很难。 B：那你觉得做什么不难呢？"
+     },
+     {
+      "n": 9,
+      "zh": "A：那么多衣服，终于洗完了！ B：都洗________了吗？"
+     },
+     {
+      "n": 10,
+      "zh": "A：这个地方真美！ B：是啊，________画儿一样。"
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "type_zh": "描述图片",
+    "instruction_zh": "用本课新学的语言点和词语描述图片",
+    "instruction_en": "Describe the pictures using the newly-learned language points and words.",
+    "items": [
+     {
+      "n": 1,
+      "zh": "A：今天下午你做什么？ B：我先打扫房间，然后________。 A：你帮我把这本书________。 B：好的。",
+      "picture_desc_en": "A young woman taking a book from (or putting one on) a library bookshelf."
+     },
+     {
+      "n": 2,
+      "zh": "A：你要走了？你还没有把饭________。 B：不吃了，我要迟到了。 A：今天你下了课就回家吧。 B：我先去________，然后回家。",
+      "picture_desc_en": "A young man doing push-ups on the floor of a gym."
+     },
+     {
+      "n": 3,
+      "zh": "A：今天是周末，你可以休息了吧？ B：没有时间休息，我要把这些衣服________。 A：别着急，我________，然后回来帮你。 B：好的。",
+      "picture_desc_en": "People in business suits sitting around a long meeting table."
+     },
+     {
+      "n": 4,
+      "zh": "A：小刚，你现在去哪儿？ B：我把公司的客人________。 A：我明天要去上海，你帮我准备一下。 B：好的。回来以后，我先帮你找宾馆，________。",
+      "picture_desc_en": "Two air tickets and an airplane icon on a yellow background."
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "type_zh": "回答问题",
+    "instruction_zh": "根据课文回答问题",
+    "instruction_en": "Answer the questions according to the texts.",
+    "items": [
+     {
+      "n": 1,
+      "zh": "周明在做什么？他太太想让他做什么？"
+     },
+     {
+      "n": 2,
+      "zh": "小刚为什么没接电话？"
+     },
+     {
+      "n": 3,
+      "zh": "同事为什么给小刚打电话？"
+     },
+     {
+      "n": 4,
+      "zh": "小明和同学打算做什么？"
+     },
+     {
+      "n": 5,
+      "zh": "怎么做水果饭？"
+     },
+     {
+      "n": 6,
+      "zh": "为什么要多吃水果？"
+     }
+    ]
+   }
+  ],
+  "characters": {
+   "knowledge_title_zh": "旧字新词",
+   "knowledge_zh": "读读下面的词语，想想组成的新词是什么意思。",
+   "knowledge_en": "Read the following words and guess the meanings of the newly-formed ones.",
+   "word_game": [
+    {
+     "parts": [
+      "名字",
+      "菜单"
+     ],
+     "result": "名单"
+    },
+    {
+     "parts": [
+      "读",
+      "声音"
+     ],
+     "result": "读音"
+    },
+    {
+     "parts": [
+      "买",
+      "菜单"
+     ],
+     "result": "买单"
+    }
+   ],
+   "confusable_pairs": [
+    [
+     "干",
+     "于"
+    ],
+    [
+     "啊",
+     "阿"
+    ],
+    [
+     "做",
+     "故"
+    ],
+    [
+     "泳",
+     "冰"
+    ],
+    [
+     "亮",
+     "高"
+    ]
+   ]
+  },
+  "application": [
+   {
+    "title_zh": "双人活动",
+    "instruction_zh": "两人一组，看北京地铁图，说说怎么去下面这些地方。",
+    "instruction_en": "Work in pairs. Look at the Beijing subway map and talk about how to get to the following places.",
+    "example_zh": [
+     "例如：从雍和宫到王府井，先坐5号线到东单，然后换1号线到王府井。",
+     "（1）从雍和宫到王府井",
+     "（2）从东四十条到天安门西",
+     "（3）从西直门到天安门东",
+     "（4）从前门到北海北",
+     "（5）从北京站到西四",
+     "（6）从和平门到北海北",
+     "［地图：北京地铁线路图 Beijing Subway Map（教材第123页）］"
+    ]
+   },
+   {
+    "title_zh": "小组活动",
+    "instruction_zh": "3～4人一组，讨论如何解决下边这个问题：怎么把羊、花儿、老虎送到河对面。（注意：一次只能送一个，而且老虎吃羊，羊吃花儿）。比一比，哪组最快、步骤最少地解决了这个问题。请用“把”字句和“先……再……然后……”句式。",
+    "instruction_en": "Work in groups of 3-4. Discuss how to solve the problem of sending the sheep, the flowers and the tiger to the other side of the river. (Note that you can only send one of them each time, and that the tiger eats sheep and the sheep eats flowers). Compete with other groups, and see which group has solved the problem the fastest with the fewest steps. Please use ba-sentences and the sentence structure “先……再……然后……”.",
+    "example_zh": [
+     "表格：| 步骤 | 怎么办 |",
+     "| 1 | 我先把……送过去 |",
+     "| 2 | 再…… |",
+     "| 3 | 然后…… |",
+     "| 4 | |",
+     "| 5 | |"
+    ]
+   }
+  ],
+  "saying": {
+   "zh": "先到先得",
+   "pinyin": "Xiān dào xiān dé",
+   "en": "First come, first served",
+   "explanation_zh": "“先到先得”，这里“先”是早的意思。这句话的意思是东西有限，到得早的人就能得到，到晚了就没有了。现在一般用来比喻做事要积极主动，及早准备，及早动手。",
+   "explanation_en": "In the saying “先到先得” (first come, first served), “先” means “early”. The saying means that due to the limited amount of something, the ones who come early will get it, while those who come late won’t. Now it is usually used to encourage people to take the initiative in doing something and to be ready and get started as soon as possible."
+  }
+ },
+ "teacher": {
+  "ref": {
+   "book": "teacher",
+   "pages": [
+    97,
+    98,
+    99,
+    100,
+    101,
+    102
+   ]
+  },
+  "objectives_zh": [
+   "重点词语：学生能够熟练掌握：“干净、像、刮风、故事、声音、简单”的词义和用法",
+   "语言点：学生能够了解并掌握：（1）“把”字句表示产生某种结果或发生位移（2）“先……，再／又……，然后……”表示动作的先后顺序",
+   "汉字：学生能够：根据已学生词猜测出3个旧字新词“名单、读音、买单”的意思",
+   "功能：学生能够：（1）用“把”字句描述结果或位置的改变（2）用“先……，再／又……，然后……”描述一系列的动作"
+  ],
+  "steps": [
+   {
+    "title_zh": "复习旧课",
+    "body_zh": "1 教师展示第13课的热身图片，请学生根据图片做出动作。\n2 教师根据第13课的内容进行提问。\n（1）朋友去旅行，给你买回来过什么东西？\n（2）你喜欢一边喝咖啡，一边做什么？\n（3）你喜欢去电影院看电影还是在家看电视？\n（4）你听音乐的时候，还喜欢做什么？\n（5）你觉得你的生活有意思吗？为什么？"
+   },
+   {
+    "title_zh": "学习新课 1 热身",
+    "body_zh": "热身1：学生两人一组，合作完成热身1；教师出示热身1的图片，学生根据图片说出词语，核对答案；最后全体学生齐读热身环节所有词语，要求语音标准，声调准确。\n答案：①E　②F　③D　④A　⑤B　⑥C\n热身2：可留至语言点（2）“先……，再／又……，然后……”导入时使用。"
+   },
+   {
+    "title_zh": "2 生词",
+    "body_zh": "（1）生词快速认读及正音\n打扫、干净、然后、冰箱、洗澡、节目、月亮、像、盘子、刮风、叔叔、阿姨、故事、声音、菜单、简单、香蕉\n· 教师先带领学生快速认读一遍生词；\n· 取消拼音，带领学生再次认读；\n· 请单个学生独自认读2-3个生词；\n· 最后全班一起快速认读所有的生词。\n（2）生词讲解方式\n· 直观法（如图片、照片、实物等）展示：冰箱、洗澡、节目、月亮、盘子、刮风、叔叔、阿姨、菜单、香蕉\n· 肢体展示：打扫\n· 启发式引导：然后\n教师给出句子部分内容让学生进行补充，如：下课以后，他先去吃饭，然后回家。\n（3）重点生词扩展及常用搭配\n干净—很干净—打扫干净—不干净—你的房间干净不干净？\n像—像月亮—他很像他的爸爸。—我和哥哥都不像爸爸，我们像妈妈。\n刮风—刮大风—刮了三天风—外边刮大风了，别出去。\n故事—一个故事—结婚的故事\n　—讲故事—你给大家讲一个故事吧。\n声音—声音很大—你的声音太小了。\n　—很小的声音—外边的声音—你听，这是谁的声音？\n简单—很简单—不简单—简单的生活—做中国菜很简单。\n练习册相关练习：第92页／一／第一部分，第95页／二／第二部分"
+   },
+   {
+    "title_zh": "3 语言点（1）“把”字句3：A把B＋动词＋结果补语／趋向补语",
+    "body_zh": "① 语言点解析\n“把”字句中在动词后加上结果补语或趋向补语，表达对确定的人或事物产生某种结果或发生位置上的改变。\n［A把B＋动词＋结果补语／趋向补语］\n② 语言点导入\n教师可就地取材，利用教室中的情景，引导学生说出目标句。\n教师：同学们，你们看，教室里干净吗？\n学生：教室里很干净。\n教师：教室打扫干净了吗？\n学生：教室打扫干净了。\n教师：谁把教室打扫干净了？\n学生：服务员把教室打扫干净了。\n③ 语言点操练\n教师给出词组，请学生说句子：\n衣服、洗干净—妈妈把衣服洗干净了。\n作业、做完—我把作业做完了。\n早饭、准备好—爸爸把早饭准备好了。\n汉语书、拿出来—我把汉语书拿出来了。\n桌子、搬进去—大山把桌子搬进去了。\n女朋友、带过来—他把女朋友带过来了。\n④ 语言点扩展练习\n教师提问，请学生根据实际情况回答。（要求：使用“把”字句）\n你的作业本呢？\n上课以前，你要做哪些准备？\n旅行以前，你要做什么？\n注意：“把”字句的否定形式是在“把”的前边加否定副词，例如“他没把作业写完”。"
+   },
+   {
+    "title_zh": "3 语言点（2）先……，再／又……，然后……",
+    "body_zh": "① 语言点解析\n“先……，再／又……，然后……”表示动作的先后顺序。\n② 语言点导入\n教师可利用本课热身2的表格导入语言点。\n教师带领学生认读表格中的时间。\n教师示范：\n教师：起床以后，你先做什么？\n学生：起床以后，我先刷牙。\n教师：再做什么？\n学生：再洗脸。\n教师：然后做什么？\n学生：然后吃早饭。\n教师引导学生说出目标句：起床以后，我先刷牙，再洗脸，然后吃早饭。\n③ 语言点操练\n教师可根据热身2的表格操练语言点。\n学生向教师提问，教师回答后，请学生说出目标句。\n目标句：睡觉以前，我先洗脸，再刷牙，然后看一会儿书。\n　　　　下课以后，我先去吃饭，再去超市买东西，然后回家。\n　　　　考试以后，我先去跟朋友聊天儿，再休息一个星期，然后去旅游。\n　　　　到家以后，我先休息一下，再看看电视，然后看书。\n　　　　吃饭以后，我先洗碗，再跟妈妈聊天儿，然后出去运动。\n④ 语言点扩展练习\n教师利用热身2，让学生两人一组互相询问并回答。\n注意：“又”表示动作已经发生了，“再”表示动作还没有发生。例如，昨天我先去了银行，又去了超市。今天我要先去超市，再去银行。"
+   },
+   {
+    "title_zh": "4 课文 课文1",
+    "body_zh": "（1）让学生听两遍录音并回答下列问题：\n男的让孩子们做什么呢？——他让孩子们打扫房间呢。\n男的在做什么？——他在看电视。\n女的让男的做什么？——女的让男的先把茶和杯子放好，然后把冰箱里的西瓜拿出来。\n（2）教师领读课文两遍，让学生分角色朗读课文，注意说话人的语气。\n（3）模仿练习\n学生两人一组，根据提示词模仿课文内容进行对话练习。\nA：……，你怎么还不……？\nB：别着急，我让……，……的时候，他们会……。\nA：那你……啊。\nB：你让我……？\nA：先……，然后……。\nB：……，我还是……。"
+   },
+   {
+    "title_zh": "4 课文 课文2",
+    "body_zh": "（1）让学生听两遍录音并回答下列问题：\n男的刚才在做什么？——他刚才在洗澡。\n女的为什么给男的打电话？——女的想问问男的公司里的一些事情。\n女的让男的做什么？——女的让男的先把电视节目看完，然后再给她回电话。\n（2）教师领读课文两遍，让学生分角色朗读课文。\n（3）模仿练习\n学生两人一组，根据提示词模仿课文内容进行对话练习。\nA：你在……？刚才……。\nB：对不起，我刚……，没……。有什么……？\nA：我想……。\nB：你先……，我去……。\nA：没关系，你先……，然后……。"
+   },
+   {
+    "title_zh": "4 课文 课文3",
+    "body_zh": "（1）让学生听两遍录音并回答下列问题：\n男的打算在外边做什么？——他打算坐在外边一边看月亮一边吃东西。\n女的要做什么？——她要把桌椅搬出去。\n外边是谁的声音？——外边是大山的声音。\n（2）教师领读课文两遍，让学生分角色朗读课文，注意说话人的语气。\n（3）教师给提示词，带领学生复述课文。\n提示词：月亮、像、盘子、刮风、一边……一边……、桌椅、水果、讲、声音"
+   },
+   {
+    "title_zh": "4 课文 课文4",
+    "body_zh": "（1）快速阅读，并回答：做水果饭简单吗？\n（2）教师领读课文两遍，并回答下列问题：\n做水果饭时，先要做什么？——先要把米饭做好。\n然后做什么？——然后再把一块块新鲜的水果放进去。\n可以做哪些水果饭？——可以做苹果饭、香蕉饭、西瓜饭等。\n（3）教师给提示词，带领学生复述课文。\n提示词：水果饭、简单、做好、放进去、愿意、新鲜、身体\n（4）教师请学生仿照课文，介绍一个菜的做法。\n练习册相关练习：第98页／四"
+   },
+   {
+    "title_zh": "5 汉字",
+    "body_zh": "旧字新词：\n① 教师领读以前学过的词语和新词，并让学生猜猜新词的意思。\n· 领读：名字、菜单、名单\n问学生：“名单”是什么意思？——很多名字的单子。\n· 领读：读、声音、读音\n问学生：“读音”是什么意思？——文字该怎么读。\n注意“读音”是一个名词。\n· 领读：买、菜单、买单\n问学生：“买单”是什么意思？——在饭馆里，吃饭以后，付“点的菜”的钱。\n② 教师领读新词扩展，通过情景，理解新词的意思和用法：\n名单：学生名单／我们班的名单／请你把名单给老师。\n读音：汉字的读音／两种读音／我不知道这个汉字的读音。\n买单：我要买单／吃饭以后再买单／服务员，买单。\n汉字辨认练习：\n辨认下列汉字并组词。\n干：________、________　啊：________、________\n于：________、________　阿：________、________\n做：________、________　泳：________、________\n故：________、________　冰：________、________\n亮：________、________\n高：________、________\n练习册相关练习：第98页／三／第三部分"
+   },
+   {
+    "title_zh": "6 补充课堂活动——介绍一个简单易学的菜",
+    "body_zh": "4-5个学生一组，每组为一个刚到本国的外国人介绍如何做一个当地菜。要求：材料容易买到，做法简单易学。"
+   },
+   {
+    "title_zh": "7 俗语",
+    "body_zh": "教师引导学生理解俗语的含义，注意这里的“先”是“早”的意思，这句话常常有“数量有限”的意思，后到的可能就没有机会得到了。"
+   },
+   {
+    "title_zh": "8 本课小结",
+    "body_zh": "· 语言点：用“把”字句描述结果和位置的改变\n　　　　　用“先……，再／又……，然后……”描述动作的先后顺序\n· 汉　字：旧字新词：名单、读音、买单"
+   }
+  ],
+  "notes_zh": [
+   "注意：“把”字句的否定形式是在“把”的前边加否定副词，例如“他没把作业写完”。（语言点1）",
+   "注意：“又”表示动作已经发生了，“再”表示动作还没有发生。例如，昨天我先去了银行，又去了超市。今天我要先去超市，再去银行。（语言点2）",
+   "注意“读音”是一个名词。（汉字）",
+   "注意这里的“先”是“早”的意思，这句话常常有“数量有限”的意思，后到的可能就没有机会得到了。（俗语）"
+  ],
+  "warmup_answers_zh": [
+   "热身1 答案：①E　②F　③D　④A　⑤B　⑥C",
+   "热身2：可留至语言点（2）“先……，再／又……，然后……”导入时使用。"
+  ],
+  "text_questions": [
+   {
+    "text": 1,
+    "q_zh": "男的让孩子们做什么呢？",
+    "a_zh": "他让孩子们打扫房间呢。"
+   },
+   {
+    "text": 1,
+    "q_zh": "男的在做什么？",
+    "a_zh": "他在看电视。"
+   },
+   {
+    "text": 1,
+    "q_zh": "女的让男的做什么？",
+    "a_zh": "女的让男的先把茶和杯子放好，然后把冰箱里的西瓜拿出来。"
+   },
+   {
+    "text": 2,
+    "q_zh": "男的刚才在做什么？",
+    "a_zh": "他刚才在洗澡。"
+   },
+   {
+    "text": 2,
+    "q_zh": "女的为什么给男的打电话？",
+    "a_zh": "女的想问问男的公司里的一些事情。"
+   },
+   {
+    "text": 2,
+    "q_zh": "女的让男的做什么？",
+    "a_zh": "女的让男的先把电视节目看完，然后再给她回电话。"
+   },
+   {
+    "text": 3,
+    "q_zh": "男的打算在外边做什么？",
+    "a_zh": "他打算坐在外边一边看月亮一边吃东西。"
+   },
+   {
+    "text": 3,
+    "q_zh": "女的要做什么？",
+    "a_zh": "她要把桌椅搬出去。"
+   },
+   {
+    "text": 3,
+    "q_zh": "外边是谁的声音？",
+    "a_zh": "外边是大山的声音。"
+   },
+   {
+    "text": 4,
+    "q_zh": "做水果饭简单吗？"
+   },
+   {
+    "text": 4,
+    "q_zh": "做水果饭时，先要做什么？",
+    "a_zh": "先要把米饭做好。"
+   },
+   {
+    "text": 4,
+    "q_zh": "然后做什么？",
+    "a_zh": "然后再把一块块新鲜的水果放进去。"
+   },
+   {
+    "text": 4,
+    "q_zh": "可以做哪些水果饭？",
+    "a_zh": "可以做苹果饭、香蕉饭、西瓜饭等。"
+   }
+  ],
+  "summary_zh": "语言点：用“把”字句描述结果和位置的改变；用“先……，再／又……，然后……”描述动作的先后顺序。汉字：旧字新词：名单、读音、买单。"
+ },
+ "workbook": {
+  "ref": {
+   "book": "workbook",
+   "pages": [
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102
+   ]
+  },
+  "answers_ref": {
+   "book": "teacher",
+   "pages": [
+    182,
+    183,
+    184
+   ]
+  },
+  "sections": [
+   {
+    "n": "一、听力 第一部分",
+    "type_zh": "听力 第一部分",
+    "instruction_zh": "第1–5题：听对话，选择与对话内容一致的图片",
+    "instruction_en": "Questions 1-5: Choose the right picture for each dialogue you hear.",
+    "audio": "hsk3-workbook-14-part1.mp3",
+    "items": [
+     {
+      "n": "例",
+      "zh": "男：喂，请问张经理在吗？ 女：他正在开会，您半个小时以后再打，好吗？",
+      "transcript_zh": "男：喂，请问张经理在吗？ 女：他正在开会，您半个小时以后再打，好吗？",
+      "options": {
+       "A": "[picture] a man in a suit leaning over a smiling woman who holds an open folder, a smiling young man opposite them",
+       "B": "[picture] a boy reading a book on a sofa between an elderly woman and an elderly man",
+       "C": "[picture] a woman in strong wind holding an umbrella blown inside out",
+       "D": "[picture] a smiling woman in a uniform talking on a telephone",
+       "E": "[picture] a woman looking sadly into an empty refrigerator, seen from inside the fridge",
+       "F": "[picture] gloved hands washing a polka-dot cup under a running tap"
+      },
+      "answer": "D",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        96
+       ]
+      }
+     },
+     {
+      "n": 1,
+      "zh": "",
+      "options": {
+       "A": "[picture] a man in a suit leaning over a smiling woman who holds an open folder, a smiling young man opposite them",
+       "B": "[picture] a boy reading a book on a sofa between an elderly woman and an elderly man",
+       "C": "[picture] a woman in strong wind holding an umbrella blown inside out",
+       "D": "[picture] a smiling woman in a uniform talking on a telephone",
+       "E": "[picture] a woman looking sadly into an empty refrigerator, seen from inside the fridge",
+       "F": "[picture] gloved hands washing a polka-dot cup under a running tap"
+      },
+      "transcript_zh": "女：我的伞，我的伞！ 男：怎么突然刮大风了，把伞都刮跑了！",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        184
+       ]
+      }
+     },
+     {
+      "n": 2,
+      "zh": "",
+      "options": {
+       "A": "[picture] a man in a suit leaning over a smiling woman who holds an open folder, a smiling young man opposite them",
+       "B": "[picture] a boy reading a book on a sofa between an elderly woman and an elderly man",
+       "C": "[picture] a woman in strong wind holding an umbrella blown inside out",
+       "D": "[picture] a smiling woman in a uniform talking on a telephone",
+       "E": "[picture] a woman looking sadly into an empty refrigerator, seen from inside the fridge",
+       "F": "[picture] gloved hands washing a polka-dot cup under a running tap"
+      },
+      "transcript_zh": "女：你怎么把冰箱里的东西都吃完了？我们今晚吃什么啊？ 男：你不在家这几天，我一直没出去。",
+      "answer": "E",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        184
+       ]
+      }
+     },
+     {
+      "n": 3,
+      "zh": "",
+      "options": {
+       "A": "[picture] a man in a suit leaning over a smiling woman who holds an open folder, a smiling young man opposite them",
+       "B": "[picture] a boy reading a book on a sofa between an elderly woman and an elderly man",
+       "C": "[picture] a woman in strong wind holding an umbrella blown inside out",
+       "D": "[picture] a smiling woman in a uniform talking on a telephone",
+       "E": "[picture] a woman looking sadly into an empty refrigerator, seen from inside the fridge",
+       "F": "[picture] gloved hands washing a polka-dot cup under a running tap"
+      },
+      "transcript_zh": "男：小常，这些盘子都要洗干净。 女：好，我先把杯子洗完，然后再洗盘子。",
+      "answer": "F",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        184
+       ]
+      }
+     },
+     {
+      "n": 4,
+      "zh": "",
+      "options": {
+       "A": "[picture] a man in a suit leaning over a smiling woman who holds an open folder, a smiling young man opposite them",
+       "B": "[picture] a boy reading a book on a sofa between an elderly woman and an elderly man",
+       "C": "[picture] a woman in strong wind holding an umbrella blown inside out",
+       "D": "[picture] a smiling woman in a uniform talking on a telephone",
+       "E": "[picture] a woman looking sadly into an empty refrigerator, seen from inside the fridge",
+       "F": "[picture] gloved hands washing a polka-dot cup under a running tap"
+      },
+      "transcript_zh": "男：先生，今天的鱼很新鲜，您要不要来一条？ 女：我们先看看菜单，然后再点菜，好吗？",
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        184
+       ]
+      }
+     },
+     {
+      "n": 5,
+      "zh": "",
+      "options": {
+       "A": "[picture] a man in a suit leaning over a smiling woman who holds an open folder, a smiling young man opposite them",
+       "B": "[picture] a boy reading a book on a sofa between an elderly woman and an elderly man",
+       "C": "[picture] a woman in strong wind holding an umbrella blown inside out",
+       "D": "[picture] a smiling woman in a uniform talking on a telephone",
+       "E": "[picture] a woman looking sadly into an empty refrigerator, seen from inside the fridge",
+       "F": "[picture] gloved hands washing a polka-dot cup under a running tap"
+      },
+      "transcript_zh": "男：爷爷奶奶，你们别说话，今天我来给你们讲故事。 女：好啊，爷爷奶奶最喜欢听你讲故事了。",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        184
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "一、听力 第二部分",
+    "type_zh": "听力 第二部分",
+    "instruction_zh": "第6–10题：听句子，判断对错",
+    "instruction_en": "Questions 6-10: Decide whether the statements are true or false based on the sentences you hear.",
+    "audio": "hsk3-workbook-14-part2.mp3",
+    "items": [
+     {
+      "n": "例1",
+      "zh": "他希望自己很健康。",
+      "transcript_zh": "为了让自己更健康，他每天都花一个小时去锻炼身体。",
+      "answer": "√",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        97
+       ]
+      }
+     },
+     {
+      "n": "例2",
+      "zh": "那块儿手表不是他的。",
+      "transcript_zh": "今天我想早点儿回家。看了看手表，才5点。过了一会儿再看表，还是5点，我这才发现我的手表不走了。",
+      "answer": "×",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        97
+       ]
+      }
+     },
+     {
+      "n": 6,
+      "zh": "他今天坐地铁去上课。",
+      "transcript_zh": "今天早上我妻子把车开出去了，要很晚才回来。儿子9点要去学校上课，我只好带他坐地铁。",
+      "answer": "×",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        184
+       ]
+      }
+     },
+     {
+      "n": 7,
+      "zh": "常阿姨的声音很大。",
+      "transcript_zh": "常阿姨住在我家楼下，她经常把我叫下去听她唱歌。我很喜欢她的声音。有时候我还和她一起唱呢。",
+      "answer": "×",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        184
+       ]
+      }
+     },
+     {
+      "n": 8,
+      "zh": "方叔叔喜欢做饭。",
+      "transcript_zh": "方叔叔爱看教做饭的节目。每天晚上不到七点半，都坐在电视前等着节目开始。看完了他马上就开始做，做好了饭就请大家来吃。",
+      "answer": "√",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        184
+       ]
+      }
+     },
+     {
+      "n": 9,
+      "zh": "小周回家以前要打扫办公室。",
+      "transcript_zh": "一天的工作结束后，小周总是最后一个离开公司的。她每天都要先把办公室打扫干净，然后才回家。",
+      "answer": "√",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        184
+       ]
+      }
+     },
+     {
+      "n": 10,
+      "zh": "去方叔叔家时，我要带很多东西去。",
+      "transcript_zh": "方叔叔和白阿姨特别热情，每次我去他们家做客，都要从冰箱里拿出很多吃的、喝的来。吃完饭还让我把饮料、水果带回家。",
+      "answer": "×",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        184
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "一、听力 第三部分",
+    "type_zh": "听力 第三部分",
+    "instruction_zh": "第11–15题：听短对话，选择正确答案",
+    "instruction_en": "Questions 11-15: Listen to the short dialogues and choose the right answers.",
+    "audio": "hsk3-workbook-14-part3.mp3",
+    "items": [
+     {
+      "n": "例",
+      "zh": "男的想让小王做什么？",
+      "transcript_zh": "男：小王，帮我开一下门，好吗？谢谢！ 女：没问题。您去超市了？买了这么多东西。 问：男的想让小王做什么？",
+      "options": {
+       "A": "开门",
+       "B": "拿东西",
+       "C": "去超市买东西"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        97
+       ]
+      }
+     },
+     {
+      "n": 11,
+      "zh": "女的觉得香蕉怎么样？",
+      "options": {
+       "A": "不新鲜",
+       "B": "太贵了",
+       "C": "很新鲜"
+      },
+      "transcript_zh": "男：我们买点儿香蕉吧，家里没有水果了。 女：买西瓜吧，这些香蕉像是放了很久了。 问：女的觉得香蕉怎么样？",
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        184
+       ]
+      }
+     },
+     {
+      "n": 12,
+      "zh": "女的画熊猫画得怎么样？",
+      "options": {
+       "A": "画了很长时间",
+       "B": "画得很像",
+       "C": "画得不好看"
+      },
+      "transcript_zh": "男：你的熊猫画得真好，像真的一样。我要多久才可以像你一样？ 女：这不是时间的问题，主要是要有兴趣。 问：女的画熊猫画得怎么样？",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        184
+       ]
+      }
+     },
+     {
+      "n": 13,
+      "zh": "关于女儿，可以知道什么？",
+      "options": {
+       "A": "以前像妈妈",
+       "B": "以前像爸爸",
+       "C": "现在像妈妈"
+      },
+      "transcript_zh": "男：你女儿像谁？你还是她爸爸？ 女：小时候像我，现在越来越像她爸爸了。 问：关于女儿，可以知道什么？",
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        184
+       ]
+      }
+     },
+     {
+      "n": 14,
+      "zh": "他们想知道什么？",
+      "options": {
+       "A": "词典在哪儿",
+       "B": "这个字怎么写",
+       "C": "这个字怎么读"
+      },
+      "transcript_zh": "男：这个字有几个读音？我记得只有一个。 女：我记得有两个。你帮我把词典拿过来，我们一起看看。 问：他们想知道什么？",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        184
+       ]
+      }
+     },
+     {
+      "n": 15,
+      "zh": "女的想让男的做什么？",
+      "options": {
+       "A": "洗盘子",
+       "B": "看节目",
+       "C": "把声音开大"
+      },
+      "transcript_zh": "男：快来看啊，这个节目太有意思了。 女：我在洗盘子呢，你把电视声音开大一点儿。 问：女的想让男的做什么？",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        184
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "一、听力 第四部分",
+    "type_zh": "听力 第四部分",
+    "instruction_zh": "第16–20题：听长对话，选择正确答案",
+    "instruction_en": "Questions 16-20: Listen to the dialogues and choose the right answers.",
+    "audio": "hsk3-workbook-14-part4.mp3",
+    "items": [
+     {
+      "n": "例",
+      "zh": "男的在做什么？",
+      "transcript_zh": "女：晚饭做好了，准备吃饭了。 男：等一会儿，比赛还有三分钟就结束了。 女：快点儿吧，一起吃，菜冷了就不好吃了。 男：你先吃，我马上就看完了。 问：男的在做什么？",
+      "options": {
+       "A": "洗澡",
+       "B": "吃饭",
+       "C": "看电视"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        98
+       ]
+      }
+     },
+     {
+      "n": 16,
+      "zh": "他们现在要做什么？",
+      "options": {
+       "A": "洗盘子",
+       "B": "买水果",
+       "C": "下楼"
+      },
+      "transcript_zh": "男：叔叔和阿姨第一次来我们家，是不是走错路了？已经三点零五了。 女：你先把盘子洗一下，再从冰箱里把香蕉、苹果、饮料拿出来放好，然后我们下楼去等他们。 男：这些我早就准备好了。这些水果少不少？要不要再买点儿？ 女：不少。快把衣服穿好，我们下去吧。 问：他们现在要做什么？",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        184
+       ]
+      }
+     },
+     {
+      "n": 17,
+      "zh": "男的现在要做什么？",
+      "options": {
+       "A": "开车",
+       "B": "买伞",
+       "C": "跑步"
+      },
+      "transcript_zh": "女：雨下得真大。你的车放哪儿了？我们快点儿跑过去。 男：你就在这儿等，我先过去把车开过来，然后你再上车。 女：那我把伞给你，你拿着伞走过去。 男：刮这么大的风，伞没有用。 问：男的现在要做什么？",
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        184
+       ]
+      }
+     },
+     {
+      "n": 18,
+      "zh": "男的现在要让女的做什么？",
+      "options": {
+       "A": "把电视声音关小",
+       "B": "把房间打扫干净",
+       "C": "过来看电视节目"
+      },
+      "transcript_zh": "女：你在看什么呢？一直笑。 男：这个节目里的小猫小狗特别有意思，你先过来看，一会儿再打扫房间。 女：把电视声音关小点儿，儿子明天考试，正复习呢，别影响他。 男：好，你快过来吧。 问：男的现在要让女的做什么？",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        184
+       ]
+      }
+     },
+     {
+      "n": 19,
+      "zh": "他们在做什么？",
+      "options": {
+       "A": "看房子",
+       "B": "买桌椅",
+       "C": "找饭馆"
+      },
+      "transcript_zh": "女：这椅子有点儿矮，坐着不舒服。 男：没关系，我们去那边看看，那儿也有。 女：这层有桌子吗？今天把桌子、椅子都一起换了吧。 男：好，我们先看椅子，再看桌子，然后去吃饭。 问：他们在做什么？",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        184
+       ]
+      }
+     },
+     {
+      "n": 20,
+      "zh": "女的为什么让男的把声音关小？",
+      "options": {
+       "A": "爸爸回来了",
+       "B": "她要唱歌",
+       "C": "她想安静一会儿"
+      },
+      "transcript_zh": "男：姐，你听，外边是谁的声音？是不是爸爸回来了？ 女：我听不见啊，你把音乐声音关小些。 男：不是爸爸，是楼上的周叔叔在说话。那我听歌了啊。 女：你别把声音开那么大，我想安静一会儿。 问：女的为什么让男的把声音关小？",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        184
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第一部分",
+    "type_zh": "阅读 第一部分",
+    "instruction_zh": "第21–25题：选择合适的问答",
+    "instruction_en": "Questions 21-25: Match the two parts of the same dialogue.",
+    "items": [
+     {
+      "n": "例",
+      "zh": "你知道怎么去那儿吗？",
+      "options": {
+       "A": "好的，周经理，我已经把名单准备好了。",
+       "B": "老师，这个故事要写多少个字？",
+       "C": "你送完孩子就来办公室吗？",
+       "D": "先放牛奶，1分钟以后再放鸡蛋。",
+       "E": "当然。我们先坐公共汽车，然后换地铁。",
+       "F": "爸爸，下午你来接我吧。"
+      },
+      "answer": "E",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        99
+       ]
+      }
+     },
+     {
+      "n": 21,
+      "zh": "我先送孩子，再把衣服送到洗衣店，然后去上班。",
+      "options": {
+       "A": "好的，周经理，我已经把名单准备好了。",
+       "B": "老师，这个故事要写多少个字？",
+       "C": "你送完孩子就来办公室吗？",
+       "D": "先放牛奶，1分钟以后再放鸡蛋。",
+       "E": "当然。我们先坐公共汽车，然后换地铁。",
+       "F": "爸爸，下午你来接我吧。"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        184
+       ]
+      }
+     },
+     {
+      "n": 22,
+      "zh": "这个菜怎么做？先放鸡蛋再放牛奶吗？",
+      "options": {
+       "A": "好的，周经理，我已经把名单准备好了。",
+       "B": "老师，这个故事要写多少个字？",
+       "C": "你送完孩子就来办公室吗？",
+       "D": "先放牛奶，1分钟以后再放鸡蛋。",
+       "E": "当然。我们先坐公共汽车，然后换地铁。",
+       "F": "爸爸，下午你来接我吧。"
+      },
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        184
+       ]
+      }
+     },
+     {
+      "n": 23,
+      "zh": "好，我先去公司接你妈妈，然后到学校接你。",
+      "options": {
+       "A": "好的，周经理，我已经把名单准备好了。",
+       "B": "老师，这个故事要写多少个字？",
+       "C": "你送完孩子就来办公室吗？",
+       "D": "先放牛奶，1分钟以后再放鸡蛋。",
+       "E": "当然。我们先坐公共汽车，然后换地铁。",
+       "F": "爸爸，下午你来接我吧。"
+      },
+      "answer": "F",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        184
+       ]
+      }
+     },
+     {
+      "n": 24,
+      "zh": "请同学们用黑板上的这10个词写一个小故事。",
+      "options": {
+       "A": "好的，周经理，我已经把名单准备好了。",
+       "B": "老师，这个故事要写多少个字？",
+       "C": "你送完孩子就来办公室吗？",
+       "D": "先放牛奶，1分钟以后再放鸡蛋。",
+       "E": "当然。我们先坐公共汽车，然后换地铁。",
+       "F": "爸爸，下午你来接我吧。"
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        184
+       ]
+      }
+     },
+     {
+      "n": 25,
+      "zh": "小刚，明天都有谁参加会议？你把名单拿过来。",
+      "options": {
+       "A": "好的，周经理，我已经把名单准备好了。",
+       "B": "老师，这个故事要写多少个字？",
+       "C": "你送完孩子就来办公室吗？",
+       "D": "先放牛奶，1分钟以后再放鸡蛋。",
+       "E": "当然。我们先坐公共汽车，然后换地铁。",
+       "F": "爸爸，下午你来接我吧。"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        184
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第二部分",
+    "type_zh": "阅读 第二部分",
+    "instruction_zh": "第26–30题：选择合适的词语填空",
+    "instruction_en": "Questions 26-30: Choose the proper words to fill in the brackets.",
+    "word_bank": [
+     [
+      "A 打扫",
+      "B 然后",
+      "C 节目",
+      "D 简单",
+      "E 声音",
+      "F 洗澡"
+     ]
+    ],
+    "items": [
+     {
+      "n": "例",
+      "zh": "她说话的（　）多好听啊！",
+      "options": {
+       "A": "打扫",
+       "B": "然后",
+       "C": "节目",
+       "D": "简单",
+       "E": "声音",
+       "F": "洗澡"
+      },
+      "answer": "E",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        99
+       ]
+      }
+     },
+     {
+      "n": 26,
+      "zh": "游泳以前应该先吃点儿饭，（　）休息半个小时。",
+      "options": {
+       "A": "打扫",
+       "B": "然后",
+       "C": "节目",
+       "D": "简单",
+       "E": "声音",
+       "F": "洗澡"
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        184
+       ]
+      }
+     },
+     {
+      "n": 27,
+      "zh": "小丽，会议室（　）干净了吗？别忘了把椅子放回去。",
+      "options": {
+       "A": "打扫",
+       "B": "然后",
+       "C": "节目",
+       "D": "简单",
+       "E": "声音",
+       "F": "洗澡"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        184
+       ]
+      }
+     },
+     {
+      "n": 28,
+      "zh": "天气这么热，回家以后你先（　）吧。",
+      "options": {
+       "A": "打扫",
+       "B": "然后",
+       "C": "节目",
+       "D": "简单",
+       "E": "声音",
+       "F": "洗澡"
+      },
+      "answer": "F",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        184
+       ]
+      }
+     },
+     {
+      "n": 29,
+      "zh": "A：小丽，我的包找不到了，你过来帮我找找。 B：我看完了这个（　）就过去帮你。",
+      "options": {
+       "A": "打扫",
+       "B": "然后",
+       "C": "节目",
+       "D": "简单",
+       "E": "声音",
+       "F": "洗澡"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        184
+       ]
+      }
+     },
+     {
+      "n": 30,
+      "zh": "A：你做的这个菜真好吃，你是怎么做的？ B：很（　），先把羊肉放进去，再放些牛奶和菜，等半个小时就做好了。",
+      "options": {
+       "A": "打扫",
+       "B": "然后",
+       "C": "节目",
+       "D": "简单",
+       "E": "声音",
+       "F": "洗澡"
+      },
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        184
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第三部分",
+    "type_zh": "阅读 第三部分",
+    "instruction_zh": "第31–35题：选择正确答案",
+    "instruction_en": "Questions 31-35: Choose the right answers.",
+    "items": [
+     {
+      "n": "例",
+      "zh": "您是来参加今天会议的吗？您来早了一点儿，现在才八点半。您先进来坐吧。 ★会议最可能几点开始？",
+      "options": {
+       "A": "8点",
+       "B": "8点半",
+       "C": "9点"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        100
+       ]
+      }
+     },
+     {
+      "n": 31,
+      "zh": "小时候，每年12月25号那天早上，我都能看到床上放着一件礼物。妈妈告诉我，那是前一天晚上一个穿红衣服的老爷爷把礼物送来的。现在我懂了：其实妈妈就是那个老人，是她在我睡着的时候把礼物放在我床上的。 ★我现在明白，礼物：",
+      "options": {
+       "A": "是妈妈送来的",
+       "B": "是老爷爷送来的",
+       "C": "是我爷爷送来的"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        184
+       ]
+      }
+     },
+     {
+      "n": 32,
+      "zh": "有很多人问什么时候吃水果比较健康，在今天的《健康123》节目里，我来告诉大家怎么吃水果对身体最好。其实，上午吃水果最健康，晚饭后和睡觉前最好不要吃。吃水果的时间应该在饭前1到2小时。当然，一定要把水果洗干净再吃。 ★什么时候吃水果最好？",
+      "options": {
+       "A": "午饭前1-2小时",
+       "B": "晚饭后1-2小时",
+       "C": "睡觉前1-2小时"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        184
+       ]
+      }
+     },
+     {
+      "n": 33,
+      "zh": "你一定喝过茶，也吃过水果。但你喝过水果茶吗？自己做过水果茶吗？自己做的比外边买的健康得多。其实做水果茶很简单，先把茶放进杯子，再放一些热水，然后把小块儿水果放进去，等一会儿就能喝了。 ★做水果茶：",
+      "options": {
+       "A": "不容易",
+       "B": "比外边买的健康",
+       "C": "要用大块水果"
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        184
+       ]
+      }
+     },
+     {
+      "n": 34,
+      "zh": "今天真把我累坏了。我们说好了今天搬家，没想到丈夫突然有事出国。新家在四楼，我只好打电话给搬家公司，请他们把桌椅、电视、电脑都搬上去。等他们走了，我又一个人把每个房间都打扫干净。看了看表，已经晚上9点了。 ★今天搬家，我：",
+      "options": {
+       "A": "请搬家公司帮忙",
+       "B": "没打扫房间",
+       "C": "给丈夫打电话帮忙"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        184
+       ]
+      }
+     },
+     {
+      "n": 35,
+      "zh": "方阿姨的丈夫每天回家都做一样的事：先吃饭，再洗澡，然后从冰箱里拿出一瓶酒，坐在电视前，边看节目边喝。他说，这样的生活是最舒服的。但是方阿姨说，这样的生活是最累的，因为她要把饭做好，还要把杯子、盘子和衣服都洗干净。 ★方阿姨每天：",
+      "options": {
+       "A": "都要喝点儿酒",
+       "B": "到了家就吃饭",
+       "C": "做饭、洗盘子和杯子"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        184
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "三、书写 第一部分",
+    "type_zh": "书写 第一部分",
+    "instruction_zh": "第36–40题：连词成句",
+    "instruction_en": "Questions 36-40: Rearrange the words/phrases to make sentences.",
+    "items": [
+     {
+      "n": "例",
+      "zh": "小船　上　一　河　条　有",
+      "answer": "河上有一条小船。",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        101
+       ]
+      }
+     },
+     {
+      "n": 36,
+      "zh": "把　大家　请　书　出来　拿",
+      "answer": "请大家把书拿出来。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        184
+       ]
+      }
+     },
+     {
+      "n": 37,
+      "zh": "写　名字　然后　应该　先　做题",
+      "answer": "应该先写名字然后做题。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        184
+       ]
+      }
+     },
+     {
+      "n": 38,
+      "zh": "干净　把　房间　快　打扫",
+      "answer": "快把房间打扫干净。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        184
+       ]
+      }
+     },
+     {
+      "n": 39,
+      "zh": "再　教　读音　先　汉字　教　老师",
+      "answer": "老师先教读音再教汉字。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        184
+       ]
+      }
+     },
+     {
+      "n": 40,
+      "zh": "可以　你　小　关　一点儿　电视声音　把　吗",
+      "answer": "你可以把电视声音关小一点儿吗？",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        184
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "三、书写 第二部分",
+    "type_zh": "书写 第二部分",
+    "instruction_zh": "第41–45题：看拼音，写汉字",
+    "instruction_en": "Questions 41-45: Write the characters based on their pinyin.",
+    "items": [
+     {
+      "n": "例",
+      "zh": "没（　）系，别难过，高兴点儿。",
+      "hint_zh": "guān",
+      "answer": "关",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        101
+       ]
+      }
+     },
+     {
+      "n": 41,
+      "zh": "你把房间打扫得真干（　）！",
+      "hint_zh": "jìng",
+      "answer": "净",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        184
+       ]
+      }
+     },
+     {
+      "n": 42,
+      "zh": "水果就在（　）箱里，你把它们都拿出来吧。",
+      "hint_zh": "bīng",
+      "answer": "冰",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        184
+       ]
+      }
+     },
+     {
+      "n": 43,
+      "zh": "你先去洗个（　），然后出来吃饭。",
+      "hint_zh": "zǎo",
+      "answer": "澡",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        184
+       ]
+      }
+     },
+     {
+      "n": 44,
+      "zh": "外边在刮大（　），我们别出去了，在家看电视吧。",
+      "hint_zh": "fēng",
+      "answer": "风",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        184
+       ]
+      }
+     },
+     {
+      "n": 45,
+      "zh": "其实，做饭很（　）单，主要是要有兴趣。",
+      "hint_zh": "jiǎn",
+      "answer": "简",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        184
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "三、书写 第三部分",
+    "type_zh": "书写 第三部分",
+    "instruction_zh": "第46–50题：辨认汉字，选择正确的汉字填空",
+    "instruction_en": "Questions 46-50: Distinguish the characters and fill in the blanks.",
+    "items": [
+     {
+      "n": "例",
+      "zh": "我不知道________个地方在________儿。",
+      "hint_zh": "（那、哪）",
+      "answer": "那、哪",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        102
+       ]
+      }
+     },
+     {
+      "n": 46,
+      "zh": "忙了一天，终________把房间都打扫________净了！",
+      "hint_zh": "（干、于）",
+      "answer": "于、干",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        184
+       ]
+      }
+     },
+     {
+      "n": 47,
+      "zh": "你们听，白________姨唱歌的声音多好听________！",
+      "hint_zh": "（啊、阿）",
+      "answer": "阿、啊",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        184
+       ]
+      }
+     },
+     {
+      "n": 48,
+      "zh": "姐姐，你________完作业以后给我讲一个________事吧。",
+      "hint_zh": "（做、故）",
+      "answer": "做、故",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        184
+       ]
+      }
+     },
+     {
+      "n": 49,
+      "zh": "夏天游完________以后，再喝一杯________水，特别舒服。",
+      "hint_zh": "（冰、泳）",
+      "answer": "泳、冰",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        184
+       ]
+      }
+     },
+     {
+      "n": 50,
+      "zh": "妈妈你看，月________在那么________的地方，我们能上去看看吗？",
+      "hint_zh": "（亮、高）",
+      "answer": "亮、高",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        184
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "四、复习",
+    "type_zh": "复习",
+    "instruction_zh": "第1–2题：根据课文内容填空",
+    "instruction_en": "Questions 1-2: Fill in the blanks based on the texts in the textbook.",
+    "items": [
+     {
+      "n": 1,
+      "zh": "客人就要来了，周明让孩子们把房间________。周太太让他把茶和杯子________，然后把________里的西瓜________。周明觉得太热了，他要先把空调________。",
+      "answer": "打扫干净、放好、冰箱、拿出来、打开",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        184
+       ]
+      }
+     },
+     {
+      "n": 2,
+      "zh": "今晚的月亮很漂亮，外边也不________，小明和同学打算一边吃东西一边听叔叔阿姨讲________。他们________把桌椅搬出去，________把水果拿过来。小明的同学听见外边有________，一定是大山来了。",
+      "answer": "刮风、故事、先、然后、声音",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        184
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ "audio": {
+  "textbook": [
+   "hsk3-textbook-1401.mp3",
+   "hsk3-textbook-1402.mp3",
+   "hsk3-textbook-1403.mp3",
+   "hsk3-textbook-1404.mp3",
+   "hsk3-textbook-1405.mp3"
+  ],
+  "workbook": [
+   "hsk3-workbook-14-part1.mp3",
+   "hsk3-workbook-14-part2.mp3",
+   "hsk3-workbook-14-part3.mp3",
+   "hsk3-workbook-14-part4.mp3"
+  ]
+ },
+ "unclear": [
+  "故事-ийн пиньинь: сурах бичгийн 生词 хүснэгт (PDF х.133) «gùshi» (хөнгөн өргөлт), 拼音课文 (PDF х.134, 课文3) «gùshì» (4-р өргөлт) — номд байгаагаар тус бүрт нь (new_words — gùshi, lines.pinyin — gùshì).",
+  "Сурах бичиг PDF х.134 课文4: ханзаар «饭馆» (儿-гүй), 拼音课文-д «fànguǎnr» (儿化-тай) — номд байгаагаар хоёуланг нь үлдээсэн.",
+  "课文4 номд гарчиггүй (зөвхөн «4» ба аудио 14-4) — title_zh хоосон, title_en байхгүй. Өгүүлэмжийг өгүүлбэр тус бүрээр lines-д хувааж, 拼音课文-ын харгалзах хэсгийг оноосон.",
+  "Сурах бичгийн 拼音课文-ын гарчгийн пиньинь (Zài jiā / Zài dǎ diànhuà / Zài Xiǎomíng jiā) болон ярилцагчийн нэрийн пиньинь (Zhōu tàitai, Zhōu Míng, tóngshì, Xiǎogāng, tóngxué, Xiǎomíng) схемд талбаргүй тул lines.pinyin-д зөвхөн яриаг оруулсан. Ханзан бичвэрт ярилцагч «周　明» (зайтай) гэж хэвлэгдсэнийг «周明» гэж бичсэн.",
+  "Сурах бичиг PDF х.137 练习3 (描述图片): зураг ба ярианы агуулга шууд таарахгүй хэсэг бий — 2-р зураг (биеийн тамирын заалны шалан дээр push-up хийж буй эрэгтэй) нь «你还没有把饭……／我先去……，然后回家» яриатай, 3-р зураг (хурлын ширээ тойрсон костюмтэй хүмүүс) нь «我要把这些衣服……» яриатай хэвлэгдсэн. Номд байгаагаар нь; хариулт хэвлэгдээгүй.",
+  "Сурах бичгийн 练一练 (2 дүрэм × 3), 练习2 选词填空， 练习3 描述图片， 练习4 回答问题， 热身2, 运用1–2 — хариулт сурах бичиг, багшийн номд хэвлэгдээгүй тул answer талбаргүй. Багшийн номын 课文 асуулт-хариулт (teacher.text_questions) нь 练习4-ийн асуултаас өөр.",
+  "运用1-ийн Бээжингийн метроны зураг (PDF х.139, «北京地铁线路图 Beijing Subway Map») — буудлын нэрс маш жижиг тул текстээр хуулаагүй; маршрутын хариулт номд байхгүй.",
+  "运用2-ын заавар «请用“把”字句和“先……再……然后……”句式» — 注释2-ын гарчиг «先……，再／又……，然后……»-аас ялгаатай (таслалгүй, 又-гүй) — номд байгаагаар.",
+  "注释1-ийн жишээ нь хүснэгт хэлбэртэй (дугааргүй) — structure_rows-д хүснэгтийг мөр мөрөөр, examples-д бүтэн өгүүлбэрээр (дугааргүй) оруулсан.",
+  "Дасгалын номын сонсгол 第二部分 6: 参考答案 (PDF х.184) «×». Бичвэр «……儿子9点要去学校上课，我只好带他坐地铁。» — ★«他今天坐地铁去上课。»-ийн «他»-г хүү гэж ойлговол √ мэт, ярьж буй хүн (аав) гэж ойлговол × — номын хариулт ×-ийг хэвээр нь бичсэн.",
+  "Дасгалын номын сонсгол нэг CD тэмдэгтэй (14) — аудиог hsk3-workbook-14-part1…4.mp3 болгож хэсэг тус бүрт хуваасныг section.audio-д оноосон.",
+  "Дасгалын ном 听力 第三/四部分 — номд зөвхөн сонголтууд хэвлэгдсэн; item.zh-д багшийн номын хавсралтын «问：» асуултыг оруулсан (transcript_zh-д бүтнээр).",
+  "Дасгалын номд энэ хичээлд 51–54 (组词) хэсэг байхгүй — нийт 50 асуулт + 复习 2.",
+  "Багшийн номын 汉字辨认练习 (干/于 · 啊/阿 · 做/故 · 泳/冰 · 亮/高 — 组词) хоосон зайтай, хариулт хэвлэгдээгүй.",
+  "Энэ хичээлд 专有名词 хүснэгт, 汉字知识， 文化 хэсэг байхгүй; * тэмдэгтэй үг байхгүй."
+ ],
+ "verified_pages": [
+  96,
+  97,
+  98,
+  99,
+  100,
+  101,
+  102,
+  132,
+  133,
+  134,
+  135,
+  136,
+  137,
+  138,
+  139,
+  140,
+  182,
+  183,
+  184
+ ],
+ "schema_version": 1
+}

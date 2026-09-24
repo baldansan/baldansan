@@ -1,0 +1,1974 @@
+{
+ "level": "hsk3",
+ "lesson": 16,
+ "book": "HSK3",
+ "title_zh": "我现在累得下了班就想睡觉",
+ "title_pinyin": "Wǒ xiànzài lèi de xiàle bān jiù xiǎng shuì jiào",
+ "title_en": "I am so tired that I want to do nothing but sleep after work",
+ "textbook": {
+  "ref": {
+   "book": "textbook",
+   "pages": [
+    151,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    158
+   ]
+  },
+  "warmup": [
+   {
+    "instruction_zh": "给下面的词语选择对应的图片",
+    "instruction_en": "Match the pictures with the words.",
+    "items": [
+     "①皮鞋 píxié",
+     "②城市 chéngshì",
+     "③帽子 màozi",
+     "④鼻子 bízi",
+     "⑤刷牙 shuā yá",
+     "⑥头发 tóufa"
+    ],
+    "pictures_desc_en": [
+     "A: a city skyline lit up at night with a road leading towards it",
+     "B: a smiling woman touching her nose with one finger",
+     "C: a pair of black leather shoes",
+     "D: a woman with very long straight blond hair seen from the side",
+     "E: a woman and a little girl brushing their teeth in front of a bathroom mirror",
+     "F: a straw hat with a black band"
+    ]
+   },
+   {
+    "instruction_zh": "说说下列情况下，你想做什么或不想做什么",
+    "instruction_en": "Talk about what you would or would not like to do under the following circumstances.",
+    "items": [
+     "累的时候 lèi de shíhou | 不想说话 bù xiǎng shuō huà",
+     "高兴的时候 gāoxìng de shíhou |",
+     "忙的时候 máng de shíhou |",
+     "冷的时候 lěng de shíhou |",
+     "牙疼的时候 yá téng de shíhou |",
+     "热的时候 rè de shíhou |"
+    ]
+   }
+  ],
+  "texts": [
+   {
+    "n": 1,
+    "title_zh": "在公司",
+    "title_en": "In the company",
+    "kind": "dialogue",
+    "audio": "hsk3-textbook-1601.mp3",
+    "lines": [
+     {
+      "speaker": "小丽",
+      "zh": "我不喜欢一直住在同一个城市，想去其他城市看一看。",
+      "pinyin": "Wǒ bù xǐhuan yìzhí zhù zài tóng yí ge chéngshì, xiǎng qù qítā chéngshì kàn yi kàn."
+     },
+     {
+      "speaker": "周明",
+      "zh": "我年轻的时候也这么想，但是那时候没有钱，如果有钱，就去了。",
+      "pinyin": "Wǒ niánqīng de shíhou yě zhème xiǎng, dànshì nà shíhou méiyǒu qián, rúguǒ yǒu qián, jiù qù le."
+     },
+     {
+      "speaker": "小丽",
+      "zh": "那您现在为什么不去？",
+      "pinyin": "Nà nín xiànzài wèi shénme bú qù?"
+     },
+     {
+      "speaker": "周明",
+      "zh": "现在钱不是问题了，主要是没有时间。",
+      "pinyin": "Xiànzài qián bú shì wèntí le, zhǔyào shì méiyǒu shíjiān."
+     },
+     {
+      "speaker": "小丽",
+      "zh": "我认为现在您有时间也不会出去玩儿。",
+      "pinyin": "Wǒ rènwéi xiànzài nín yǒu shíjiān yě bú huì chūqu wánr."
+     },
+     {
+      "speaker": "周明",
+      "zh": "你说得对，我现在累得下了班就想睡觉。",
+      "pinyin": "Nǐ shuō de duì, wǒ xiànzài lèi de xiàle bān jiù xiǎng shuì jiào."
+     }
+    ],
+    "new_words": [
+     {
+      "n": 1,
+      "zh": "城市",
+      "pinyin": "chéngshì",
+      "pos": "n.",
+      "en": "city",
+      "text": 1
+     },
+     {
+      "n": 2,
+      "zh": "如果",
+      "pinyin": "rúguǒ",
+      "pos": "conj.",
+      "en": "if, in case",
+      "text": 1
+     },
+     {
+      "n": 3,
+      "zh": "认为",
+      "pinyin": "rènwéi",
+      "pos": "v.",
+      "en": "to think, to believe",
+      "text": 1
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "title_zh": "在同事家",
+    "title_en": "At a colleague’s home",
+    "kind": "dialogue",
+    "audio": "hsk3-textbook-1602.mp3",
+    "lines": [
+     {
+      "speaker": "同事",
+      "zh": "谢谢你们来看我女儿。你送的小皮鞋和小帽子真漂亮！",
+      "pinyin": "Xièxiè nǐmen lái kàn wǒ nǚ’ér. Nǐ sòng de xiǎo píxié hé xiǎo màozi zhēn piàoliang!"
+     },
+     {
+      "speaker": "小丽",
+      "zh": "别客气，你女儿长得白白的、胖胖的，真可爱！现在多高了？",
+      "pinyin": "Bié kèqi, nǐ nǚ’ér zhǎng de báibái de, pàngpàng de, zhēn kě’ài! Xiànzài duō gāo le?"
+     },
+     {
+      "speaker": "同事",
+      "zh": "快1米了，25公斤。",
+      "pinyin": "Kuài yì mǐ le, èrshíwǔ gōngjīn."
+     },
+     {
+      "speaker": "小丽",
+      "zh": "你看她鼻子小小的，头发黑黑的，长得像谁？",
+      "pinyin": "Nǐ kàn tā bízi xiǎoxiǎo de, tóufa hēihēi de, zhǎng de xiàng shéi?"
+     },
+     {
+      "speaker": "同事",
+      "zh": "像她爸爸，刚出生时她爸爸高兴得一个晚上都没睡着。",
+      "pinyin": "Xiàng tā bàba, gāng chūshēng shí tā bàba gāoxìng de yí ge wǎnshang dōu méi shuì zháo."
+     }
+    ],
+    "new_words": [
+     {
+      "n": 4,
+      "zh": "皮鞋",
+      "pinyin": "píxié",
+      "pos": "n.",
+      "en": "leather shoes",
+      "text": 2
+     },
+     {
+      "n": 5,
+      "zh": "帽子",
+      "pinyin": "màozi",
+      "pos": "n.",
+      "en": "hat, cap",
+      "text": 2
+     },
+     {
+      "n": 6,
+      "zh": "长",
+      "pinyin": "zhǎng",
+      "pos": "v.",
+      "en": "to grow, to develop",
+      "text": 2
+     },
+     {
+      "n": 7,
+      "zh": "可爱",
+      "pinyin": "kě’ài",
+      "pos": "adj.",
+      "en": "lovely, adorable",
+      "text": 2
+     },
+     {
+      "n": 8,
+      "zh": "米",
+      "pinyin": "mǐ",
+      "pos": "n.",
+      "en": "metre",
+      "text": 2
+     },
+     {
+      "n": 9,
+      "zh": "公斤",
+      "pinyin": "gōngjīn",
+      "pos": "n.",
+      "en": "kilogramme",
+      "text": 2
+     },
+     {
+      "n": 10,
+      "zh": "鼻子",
+      "pinyin": "bízi",
+      "pos": "n.",
+      "en": "nose",
+      "text": 2
+     },
+     {
+      "n": 11,
+      "zh": "头发",
+      "pinyin": "tóufa",
+      "pos": "n.",
+      "en": "hair",
+      "text": 2
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "title_zh": "在公司",
+    "title_en": "In the company",
+    "kind": "dialogue",
+    "audio": "hsk3-textbook-1603.mp3",
+    "lines": [
+     {
+      "speaker": "小刚",
+      "zh": "我的牙还是很疼。",
+      "pinyin": "Wǒ de yá háishi hěn téng."
+     },
+     {
+      "speaker": "同事",
+      "zh": "如果不舒服，就去医院检查一下吧。",
+      "pinyin": "Rúguǒ bù shūfu, jiù qù yīyuàn jiǎnchá yíxià ba."
+     },
+     {
+      "speaker": "小刚",
+      "zh": "检查好几次了，但是没什么用。",
+      "pinyin": "Jiǎnchá hǎo jǐ cì le, dànshì méi shénme yòng."
+     },
+     {
+      "speaker": "同事",
+      "zh": "大夫怎么说的？",
+      "pinyin": "Dàifu zěnme shuō de?"
+     },
+     {
+      "speaker": "小刚",
+      "zh": "每次医生都告诉我，回家好好儿刷牙。",
+      "pinyin": "Měi cì yīshēng dōu gàosu wǒ, huí jiā hǎohāor shuā yá."
+     }
+    ],
+    "new_words": [
+     {
+      "n": 12,
+      "zh": "检查",
+      "pinyin": "jiǎnchá",
+      "pos": "v.",
+      "en": "to check, to examine",
+      "text": 3
+     },
+     {
+      "n": 13,
+      "zh": "刷牙",
+      "pinyin": "shuā yá",
+      "pos": "v.",
+      "en": "to brush the teeth",
+      "text": 3
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "kind": "narrative",
+    "audio": "hsk3-textbook-1604.mp3",
+    "lines": [
+     {
+      "zh": "很多人都觉得现在人和人的关系冷冷的，这可能是因为工作太忙，忙得没时间跟别人见面，累得不愿意和别人多说话。",
+      "pinyin": "Hěn duō rén dōu juéde xiànzài rén hé rén de guānxì lěnglěng de, zhè kěnéng shì yīnwèi gōngzuò tài máng, máng de méi shíjiān gēn biérén jiàn miàn, lèi de bú yuànyì hé biérén duō shuō huà."
+     },
+     {
+      "zh": "其实，我们应该多对别人笑笑，说话时如果能多用一些“您好”“谢谢”这样的词语，和别人的关系就会变得更好。",
+      "pinyin": "Qíshí, wǒmen yīnggāi duō duì biérén xiàoxiao, shuō huà shí rúguǒ néng duō yòng yìxiē “nín hǎo” “xièxie” zhèyàng de cíyǔ, hé biérén de guānxì jiù huì biàn de gèng hǎo."
+     }
+    ],
+    "new_words": [
+     {
+      "n": 14,
+      "zh": "关系",
+      "pinyin": "guānxì",
+      "pos": "n.",
+      "en": "relationship",
+      "text": 4
+     },
+     {
+      "n": 15,
+      "zh": "别人",
+      "pinyin": "biérén",
+      "pos": "n.",
+      "en": "other people",
+      "text": 4
+     },
+     {
+      "n": 16,
+      "zh": "词语",
+      "pinyin": "cíyǔ",
+      "pos": "n.",
+      "en": "word, expression",
+      "text": 4,
+      "star": true
+     }
+    ]
+   }
+  ],
+  "grammar": [
+   {
+    "n": 1,
+    "title_zh": "如果……（的话），（S）就……",
+    "title_en": "The Structure “如果……（的话），（S）就……”",
+    "explanation_zh": "“如果”后边的分句是一个假设，“就”后边的分句是在这种假设情况下产生的结果。注意，第二个分句的主语要放在“就”的前边。例如：",
+    "explanation_en": "The clause following “如果” is a hypothesis, and the clause after “就” is the result based on the hypothesis. Note that the subject of the second clause should be put right before “就”. For example:",
+    "structure_rows": [
+     "如果……（的话），（S）就……"
+    ],
+    "examples": [
+     {
+      "n": 1,
+      "zh": "如果你太累了，就休息一会儿。"
+     },
+     {
+      "n": 2,
+      "zh": "如果你喜欢，我就给你买。"
+     },
+     {
+      "n": 3,
+      "zh": "如果有钱的话，我就去旅游。"
+     },
+     {
+      "n": 4,
+      "zh": "如果不舒服，就去医院检查一下吧。"
+     }
+    ],
+    "practice_instruction_zh": "练一练　完成句子 Complete the sentences.",
+    "practice": [
+     {
+      "n": 1,
+      "zh": "如果明天下雨的话，________。"
+     },
+     {
+      "n": 2,
+      "zh": "如果考试考得很好的话，________。"
+     },
+     {
+      "n": 3,
+      "zh": "________，我就跟朋友去踢足球。"
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "title_zh": "复杂的状态补语",
+    "title_en": "Complex Complements of State",
+    "explanation_zh": "汉语中，可以用“得”构成状态补语，描写某种状态。“得”前一般是形容词或动词，“得”后一般是动词词组。例如：",
+    "explanation_en": "In Chinese, “得” can be used to form a complement to describe a certain state. Usually “得” is preceded by an adjective or a verb and followed by a verb phrase. For example:",
+    "examples": [
+     {
+      "n": 1,
+      "zh": "孩子们玩儿得不想回家。"
+     },
+     {
+      "n": 2,
+      "zh": "弟弟高兴得跳了起来。"
+     },
+     {
+      "n": 3,
+      "zh": "儿子累得下了班就睡觉了。"
+     },
+     {
+      "n": 4,
+      "zh": "人们忙得没时间跟别人见面。"
+     }
+    ],
+    "practice_instruction_zh": "练一练　完成句子 Complete the sentences.",
+    "practice": [
+     {
+      "n": 1,
+      "zh": "我牙疼得________。"
+     },
+     {
+      "n": 2,
+      "zh": "今天天气热得________。"
+     },
+     {
+      "n": 3,
+      "zh": "看了这个电影，她笑得________。"
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "title_zh": "单音节形容词重叠",
+    "title_en": "Reduplication of Monosyllabic Adjectives",
+    "explanation_zh": "汉语中，单音节形容词重叠表示程度深，形式为“AA的”，常用来描述人或事物的特征。例如：",
+    "explanation_en": "In Chinese, a monosyllabic adjective is often reduplicated in the form of “AA的” to describe the characteristics of a person or thing, indicating a deep degree. For example:",
+    "structure_rows": [
+     "AA的"
+    ],
+    "examples": [
+     {
+      "n": 1,
+      "zh": "你送的花红红的，我很喜欢。"
+     },
+     {
+      "n": 2,
+      "zh": "这些草绿绿的，真漂亮。"
+     },
+     {
+      "n": 3,
+      "zh": "他鼻子小小的，长得像谁？"
+     },
+     {
+      "n": 4,
+      "zh": "你女儿长得白白的、胖胖的，真可爱！"
+     }
+    ],
+    "practice_instruction_zh": "练一练　完成句子 Complete the sentences.",
+    "practice": [
+     {
+      "n": 1,
+      "zh": "她的男朋友个子________。"
+     },
+     {
+      "n": 2,
+      "zh": "他的女朋友头发________。"
+     },
+     {
+      "n": 3,
+      "zh": "这个蛋糕________，真好吃。"
+     }
+    ]
+   }
+  ],
+  "exercises": [
+   {
+    "n": 1,
+    "type_zh": "朗读",
+    "instruction_zh": "朗读下列短语和句子",
+    "instruction_en": "Read the following phrases and sentences aloud.",
+    "audio": "hsk3-textbook-1605.mp3",
+    "items": [
+     {
+      "n": 1,
+      "zh": "城市：一个城市／大城市／旅游城市／我想去其他城市看一看。"
+     },
+     {
+      "n": 2,
+      "zh": "皮鞋：一双皮鞋／新皮鞋／买皮鞋／你送的小皮鞋和小帽子真漂亮！"
+     },
+     {
+      "n": 3,
+      "zh": "长：长大了／长得胖胖的／长得很可爱／她长得像谁？"
+     },
+     {
+      "n": 4,
+      "zh": "检查：检查作业／检查一下／好好儿检查／你去医院检查一下吧。"
+     },
+     {
+      "n": 5,
+      "zh": "关系：师生关系／朋友关系／他和学生的关系很好／人和人的关系冷冷的。"
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "type_zh": "选词填空",
+    "instruction_zh": "选择恰当的词语填空",
+    "instruction_en": "Choose the proper words to fill in the blanks.",
+    "word_bank": [
+     [
+      "关系",
+      "可爱",
+      "鼻子",
+      "城市",
+      "如果"
+     ],
+     [
+      "米",
+      "检查",
+      "公斤",
+      "认为",
+      "刷牙"
+     ]
+    ],
+    "items": [
+     {
+      "n": 1,
+      "zh": "________我的丈夫能少一些会议，他就会多跟我和孩子在一起了。"
+     },
+     {
+      "n": 2,
+      "zh": "你觉得哪个________最好玩儿？"
+     },
+     {
+      "n": 3,
+      "zh": "我和同屋的________不太好，怎么办？"
+     },
+     {
+      "n": 4,
+      "zh": "我女朋友________高高的、头发长长的，非常好看。"
+     },
+     {
+      "n": 5,
+      "zh": "那个小狗真________，我们把它带回家吧。"
+     },
+     {
+      "n": 6,
+      "zh": "A：今天下午你去哪儿了？ B：我的车总是有问题，我去________了一下。"
+     },
+     {
+      "n": 7,
+      "zh": "A：你想买点儿什么？ B：给我来一________苹果。"
+     },
+     {
+      "n": 8,
+      "zh": "A：你有多高？ B：1________75。"
+     },
+     {
+      "n": 9,
+      "zh": "A：你怎么刚吃饭？ B：今天起晚了，________以后就来上课了。"
+     },
+     {
+      "n": 10,
+      "zh": "A：咱们去南方玩儿玩儿吧。 B：我________，还是北方更好玩儿一些。"
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "type_zh": "描述图片",
+    "instruction_zh": "用本课新学的语言点和词语描述图片",
+    "instruction_en": "Describe the pictures using the newly-learned language points and words.",
+    "items": [
+     {
+      "n": 1,
+      "zh": "A：这条裙子________，真好看。 B：是啊。但是太贵了，________，我就买。 A：生日的时候，我送给你吧。 B：真的吗？太好了。",
+      "picture_desc_en": "A red sleeveless dress displayed on a mannequin."
+     },
+     {
+      "n": 2,
+      "zh": "A：你怎么还不学习？ B：我现在累得________。 A：如果你考试考得好，我就________。 B：太好了，我现在就学习。",
+      "picture_desc_en": "A boy asleep with his head on a desk, holding a red pen over an open notebook."
+     },
+     {
+      "n": 3,
+      "zh": "A：________，就帮我做饭吧。 B：今天我忙得________，让我休息一下吧。 A：行，我自己去做饭。 B：好。",
+      "picture_desc_en": "A man in a suit and glasses making a “time-out” T sign with his hands."
+     },
+     {
+      "n": 4,
+      "zh": "A：你看，那个女孩个子________，头发________，眼睛________，真漂亮。 B：你如果喜欢她的话，________。 A：我现在已经有女朋友了。 B：我还没有女朋友呢，那我去吧。",
+      "picture_desc_en": "A smiling young woman with long hair holding a pink folder, standing in a green park."
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "type_zh": "回答问题",
+    "instruction_zh": "根据课文回答问题",
+    "instruction_en": "Answer the questions according to the texts.",
+    "items": [
+     {
+      "n": 1,
+      "zh": "周明年轻的时候为什么没去旅行？"
+     },
+     {
+      "n": 2,
+      "zh": "现在周明为什么不能去旅行？"
+     },
+     {
+      "n": 3,
+      "zh": "同事的女儿长得怎么样？"
+     },
+     {
+      "n": 4,
+      "zh": "小刚为什么牙疼？"
+     },
+     {
+      "n": 5,
+      "zh": "为什么现在人和人之间的关系冷冷的？"
+     },
+     {
+      "n": 6,
+      "zh": "我们怎么做才能让关系变得更好？"
+     }
+    ]
+   }
+  ],
+  "characters": {
+   "knowledge_title_zh": "旧字新词",
+   "knowledge_zh": "读读下面的词语，想想组成的新词是什么意思。",
+   "knowledge_en": "Read the following words and guess the meanings of the newly-formed ones.",
+   "word_game": [
+    {
+     "parts": [
+      "词典",
+      "汉语"
+     ],
+     "result": "词语"
+    },
+    {
+     "parts": [
+      "运动",
+      "皮鞋"
+     ],
+     "result": "运动鞋"
+    },
+    {
+     "parts": [
+      "身体",
+      "检查"
+     ],
+     "result": "体检"
+    }
+   ],
+   "confusable_pairs": [
+    [
+     "米",
+     "来"
+    ],
+    [
+     "姐",
+     "如"
+    ],
+    [
+     "斤",
+     "近"
+    ],
+    [
+     "查",
+     "香"
+    ],
+    [
+     "帽",
+     "冒"
+    ]
+   ]
+  },
+  "application": [
+   {
+    "title_zh": "双人活动",
+    "instruction_zh": "两人一组，互相调查对方的情况，完成调查表。",
+    "instruction_en": "Work in pairs. Make a survey of your partner and fill in the questionnaire.",
+    "example_zh": [
+     "表格：| | 问 | 答 |",
+     "| 1 | 如果有很多钱，你会做什么？ | 如果有钱，我就买一辆车。 |",
+     "| 2 | 如果有时间，你做什么？ | |",
+     "| 3 | 如果能去一个地方旅行，你去哪儿？ | |",
+     "| 4 | 如果你是超人，你会做什么？ | |",
+     "| 5 | 如果你是爸爸／妈妈，你不让孩子做什么？ | |",
+     "| 6 | 如果你没钱了，你怎么办？ | |"
+    ]
+   },
+   {
+    "title_zh": "小组活动",
+    "instruction_zh": "3～4人一组，一个人用“AA的”描述班里的一个人，其他人猜这个人是谁，猜对了的人接着描述。",
+    "instruction_en": "Work in groups of 3-4. One describes a person in your class using “AA的”, and the other two or three guess who the person is. The one who has guessed right describes another person.",
+    "example_zh": [
+     "例如：他个子高高的，眼睛大大的……"
+    ]
+   }
+  ],
+  "saying": {
+   "zh": "钱不是万能的",
+   "pinyin": "Qián bú shì wànnéng de",
+   "en": "Money is not omnipotent",
+   "explanation_zh": "“钱不是万能的”，这句话的意思是钱虽然很重要，但是钱不能解决所有的问题。这句话告诉我们对待金钱要有正确的认识，虽然生活中处处需要钱，但是有钱也不一定能办成所有的事情。",
+   "explanation_en": "“钱不是万能的” means though money is important, it is not the answer to all problems. It tells us to have a correct attitude towards money. We may need money everywhere in life, but being wealthy doesn’t mean everything is possible."
+  }
+ },
+ "teacher": {
+  "ref": {
+   "book": "teacher",
+   "pages": [
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116
+   ]
+  },
+  "objectives_zh": [
+   "重点词语：学生能够熟练掌握：“长、检查、关系、别人”的词义和用法",
+   "语言点：学生能够了解并掌握：（1）“如果……（的话），（主语）就……”表示假设和假设的结果（2）“得”构成的复杂状态补语（3）单音节形容词重叠表示人或事物的特征",
+   "汉字：学生能够：根据已学生词猜测出3个旧字新词“词语、运动鞋、体检”的意思",
+   "功能：学生能够：（1）用“如果……（的话），（主语）就……”表示假设的情况和结果（2）用“得”构成的状态补语描写某种状态（3）用单音节形容词的重叠式描述人或事物"
+  ],
+  "steps": [
+   {
+    "title_zh": "复习旧课",
+    "body_zh": "1 教师展示第15课的热身图片，请学生根据图片说出生词。\n2 教师根据第15课的内容进行提问。\n（1）昨天的课怎么样？你有问题吗？\n（2）说说你最想去的一个地方，为什么你最想去那儿？\n（3）为什么有些人非常喜欢小狗、小猫？你喜欢它们吗？\n（4）现在的年轻人用手机做什么事？你呢？\n（5）在你们国家，有哪些重要的节日？你最喜欢哪个节日？"
+   },
+   {
+    "title_zh": "学习新课 1 热身",
+    "body_zh": "热身1：学生两人一组，合作完成热身1；教师出示热身1的图片，让学生根据图片说出词语，核对答案；最后全体学生齐读热身环节所有词语，要求语音标准，声调准确。\n答案：①C　②A　③F　④B　⑤E　⑥D\n热身2：可留至语言点（2）“复杂的状态补语”导入时使用。"
+   },
+   {
+    "title_zh": "2 生词",
+    "body_zh": "（1）生词快速认读及正音\n城市、如果、认为、皮鞋、帽子、长、可爱、米、公斤、鼻子、头发、检查、刷牙、关系、别人、词语\n· 教师先带领学生快速认读一遍生词；\n· 取消拼音，带领学生再次认读；\n· 请单个学生独自认读2-3个生词；\n· 最后全班一起快速认读所有的生词。\n（2）生词讲解方式\n· 直观法（如图片、照片、实物等）展示：城市、皮鞋、帽子、可爱、米、公斤、鼻子、头发\n· 肢体展示：刷牙\n· 启发式引导：认为\n教师给出句子部分内容让学生进行补充，如：他每天下课以后都去运动，因为他认为运动对他的身体很好。\n（3）重点生词扩展及常用搭配\n长—长得很白—长得很高—她长得很像她妈妈。\n检查—检查作业—检查身体—我让医生给我检查一下牙齿。\n关系—有关系—没有关系—老师和学生的关系—他和每个人的关系都很好。\n别人—别人的事—请别人帮忙—这里没有别人。\n练习册相关练习：第106页／一／第一部分，第109页／二／第二部分"
+   },
+   {
+    "title_zh": "3 语言点（1）如果……（的话），（主语）就……",
+    "body_zh": "① 语言点解析\n“如果”后边的分句是一个假设，“就”后边的分句是在这种假设情况下产生的结果。\n② 语言点导入\n教师给出情景，引导学生说出目标句。\n教师：星期天你们打算做什么？\n学生：我打算出去买衣服。\n教师：下雨你也去吗？\n学生：下雨我在家看电视。\n教师：星期天如果不下雨，她去买衣服，如果下雨，她在家看电视。\n③ 语言点操练\n教师给出词组，请学生说句子：\n很饿、吃一块蛋糕—如果你很饿，就吃一块蛋糕。\n写完作业、看会儿电视—如果你写完作业了，就看会儿电视。\n头疼、去医院—如果你头疼，就去医院看看。\n没听懂、再讲一遍—如果你没听懂，就让老师再讲一遍。\n你不去，我就不去—如果你不去，我就不去。\n④ 语言点扩展练习\n教师提问，请学生根据实际情况回答。\n如果你有很多钱，你做什么？\n如果给你一年的时间，你打算做什么？\n如果你现在能去旅游，你去哪儿？\n注意：第二个分句如果有主语，主语要放在“就”的前边。"
+   },
+   {
+    "title_zh": "3 语言点（2）复杂的状态补语",
+    "body_zh": "① 语言点解析\n用“得”构成的状态补语，描写某种状态。“得”前一般是形容词或动词，“得”后一般是动词词组。\n［框］形容词＋得＋动词词组\n② 语言点导入\n教师可利用本课热身2的表格导入语言点。\n教师带领学生认读表格中的词语。\n教师示范：\n教师：累的时候，你会怎么样？\n学生：不想说话。\n教师：他累得不想说话。\n③ 语言点操练\n教师可根据热身2的表格操练语言点。\n学生向教师提问，教师回答后，请学生说出目标句。\n目标句：我高兴得给太太做了一桌子的菜。\n　　　　我忙得没有时间吃饭。\n　　　　我冷得穿上了妈妈的衣服。\n　　　　我牙疼得一直哭。\n　　　　我热得喝了三瓶冰箱里刚拿出来的水。\n④ 语言点扩展练习\n教师利用热身2，让学生互相询问并回答。\n注意：复杂状态补语中，“得”后边的成分是复杂的形式，而不是简单形式。“笑得很开心”是一个简单状态补语。"
+   },
+   {
+    "title_zh": "3 语言点（3）单音节形容词重叠",
+    "body_zh": "① 语言点解析\n单音节形容词重叠，变为“AA的”形式，表示程度深，常用来描述人或事物的特征。\n［框］AA的\n② 语言点导入\n就地取材，教师利用教室中的情景，引导学生说出目标句：\n教师：你们觉得他高不高？\n学生：他很高。\n教师：他长得高高的。\n③ 语言点操练\n教师给出词组，请学生说句子：\n裙子、长—这条裙子长长的。\n鼻子、高—她的鼻子高高的。\n这个小孩子、胖—这个小孩子长得胖胖的。\n她的牙、白—她的牙白白的。\n头发、长—她的头发长长的。\n④ 语言点扩展练习\n教师让学生用单音节形容词重叠形式来描述一个人。\n注意：单音节形容词重叠后，要加上一个“的”字，才能进入句子。"
+   },
+   {
+    "title_zh": "4 课文 课文1",
+    "body_zh": "（1）让学生听两遍录音并回答下列问题：\n女的（小丽）喜欢做什么？——她喜欢去其他城市看一看。\n男的（周明）年轻的时候为什么没去其他城市？——他那时候没有钱。\n周明觉得他现在为什么不能去？——他没有时间。\n（2）教师领读课文两遍，让学生分角色朗读课文，注意说话人的语气。\n（3）模仿练习\n学生两人一组，根据提示词模仿课文内容进行对话练习。\nA：我不喜欢……，想去……。\nB：我年轻的时候……，但是……，如果……，就……。\nA：那你……？\nB：现在……，主要是……。\nA：我认为……。\nB：你说得对，……。"
+   },
+   {
+    "title_zh": "4 课文 课文2",
+    "body_zh": "（1）让学生听两遍录音并回答下列问题：\n同事的女儿长得怎么样？——她长得白白的、胖胖的，很可爱。\n她现在多高了？——快一米了。\n她长得像谁？——她长得像她爸爸。\n（2）教师领读课文两遍，让学生分角色朗读课文。\n（3）模仿练习\n学生两人一组，根据提示词模仿课文内容进行对话练习。\nA：谢谢你们来……，你送的……！\nB：别客气，……长得……，真……！现在……？\nA：……。\nB：你看她／他……，……，长得像谁？\nA：像……，刚出生时……。"
+   },
+   {
+    "title_zh": "4 课文 课文3",
+    "body_zh": "（1）让学生听两遍录音并回答下列问题：\n男的的牙怎么了？——他的牙很疼。\n女的建议他做什么？——去医院检查一下。\n大夫觉得是什么问题？——他不好好刷牙。\n（2）教师领读课文两遍，让学生分角色朗读课文，注意说话人的语气。\n（3）教师给提示词，带领学生复述课文。\n提示词：牙、疼、检查、没什么用、大夫、刷牙"
+   },
+   {
+    "title_zh": "4 课文 课文4",
+    "body_zh": "（1）快速阅读，并回答：怎么才能和别人的关系变得更好？\n（2）教师领读课文两遍，并回答下列问题：\n很多人觉得现在人和人的关系怎么样？——关系冷冷的。\n为什么会这样？——因为工作太忙，忙得没时间跟别人见面，累得不愿意和别人多说话。\n（3）教师给提示词，带领学生复述课文。\n提示词：关系、冷、工作、见面、说话、笑、词语、更好\n（4）教师请学生仿照课文，介绍一个让自己和别人的关系变得更好的方法。\n练习册相关练习：第112页／四"
+   },
+   {
+    "title_zh": "5 汉字",
+    "body_zh": "旧字新词：\n① 教师领读以前学过的词语和新词，并让学生猜猜新词的意思。\n· 领读：词典、汉语、词语\n问学生：“词语”是什么意思？——词典中的词。\n· 领读：运动、皮鞋、运动鞋\n问学生：“运动鞋”是什么意思？——运动的时候穿的鞋。\n· 领读：身体、检查、体检\n问学生：“体检”是什么意思？——给身体做一个检查。\n注意“体检”是一个名词。\n② 教师领读新词扩展，通过情景，理解新词的意思和用法：\n词语：学习词语／汉语词语／这些词语都很有用。\n运动鞋：一双运动鞋／穿运动鞋／今天下午我要去买一双运动鞋。\n体检：做体检／一次体检／我要去医院做一次体检。\n汉字辨认练习：\n辨认下列汉字并组词。\n米：________、________　来：________、________\n姐：________、________　如：________、________\n斤：________、________　近：________、________\n查：________、________　香：________、________\n帽：________、________　冒：________、________\n练习册相关练习：第112页／三／第三部分"
+   },
+   {
+    "title_zh": "6 补充课堂活动——吹牛游戏",
+    "body_zh": "教师出示词语卡片，学生依次说出包含复杂程度补语的句子，比比谁是最……的人。例如：教师提问“谁是最忙的人”，学生可以说“我是最忙的人，因为我忙得没有时间吃饭”等句子。\n参考词语：累、忙、饿、高兴……"
+   },
+   {
+    "title_zh": "7 俗语",
+    "body_zh": "教师引导学生理解俗语的含义，注意本课的“万能”是“能做所有的事”的意思，这句话是说钱不能做所有的事。例如，要想有一个好身体，一定要注意锻炼，当你的健康真的出现问题，有再多钱也换不回来，因为钱不是万能的。"
+   },
+   {
+    "title_zh": "8 本课小结",
+    "body_zh": "· 语言点：“如果……（的话），（主语）就……”描述假设的情况及结果\n　　　　　用复杂状态补语描述某种状态\n　　　　　用单音节形容词重叠式描述某种状态\n· 汉　字：旧字新词：词语、运动鞋、体检"
+   }
+  ],
+  "notes_zh": [
+   "注意：第二个分句如果有主语，主语要放在“就”的前边。（语言点1）",
+   "注意：复杂状态补语中，“得”后边的成分是复杂的形式，而不是简单形式。“笑得很开心”是一个简单状态补语。（语言点2）",
+   "注意：单音节形容词重叠后，要加上一个“的”字，才能进入句子。（语言点3）",
+   "注意“体检”是一个名词。（汉字）",
+   "注意本课的“万能”是“能做所有的事”的意思，这句话是说钱不能做所有的事。（俗语）"
+  ],
+  "warmup_answers_zh": [
+   "热身1 答案：①C　②A　③F　④B　⑤E　⑥D",
+   "热身2：可留至语言点（2）“复杂的状态补语”导入时使用。"
+  ],
+  "text_questions": [
+   {
+    "text": 1,
+    "q_zh": "女的（小丽）喜欢做什么？",
+    "a_zh": "她喜欢去其他城市看一看。"
+   },
+   {
+    "text": 1,
+    "q_zh": "男的（周明）年轻的时候为什么没去其他城市？",
+    "a_zh": "他那时候没有钱。"
+   },
+   {
+    "text": 1,
+    "q_zh": "周明觉得他现在为什么不能去？",
+    "a_zh": "他没有时间。"
+   },
+   {
+    "text": 2,
+    "q_zh": "同事的女儿长得怎么样？",
+    "a_zh": "她长得白白的、胖胖的，很可爱。"
+   },
+   {
+    "text": 2,
+    "q_zh": "她现在多高了？",
+    "a_zh": "快一米了。"
+   },
+   {
+    "text": 2,
+    "q_zh": "她长得像谁？",
+    "a_zh": "她长得像她爸爸。"
+   },
+   {
+    "text": 3,
+    "q_zh": "男的的牙怎么了？",
+    "a_zh": "他的牙很疼。"
+   },
+   {
+    "text": 3,
+    "q_zh": "女的建议他做什么？",
+    "a_zh": "去医院检查一下。"
+   },
+   {
+    "text": 3,
+    "q_zh": "大夫觉得是什么问题？",
+    "a_zh": "他不好好刷牙。"
+   },
+   {
+    "text": 4,
+    "q_zh": "（快速阅读，并回答：）怎么才能和别人的关系变得更好？"
+   },
+   {
+    "text": 4,
+    "q_zh": "很多人觉得现在人和人的关系怎么样？",
+    "a_zh": "关系冷冷的。"
+   },
+   {
+    "text": 4,
+    "q_zh": "为什么会这样？",
+    "a_zh": "因为工作太忙，忙得没时间跟别人见面，累得不愿意和别人多说话。"
+   }
+  ],
+  "summary_zh": "语言点：“如果……（的话），（主语）就……”描述假设的情况及结果；用复杂状态补语描述某种状态；用单音节形容词重叠式描述某种状态。汉字：旧字新词：词语、运动鞋、体检。"
+ },
+ "workbook": {
+  "ref": {
+   "book": "workbook",
+   "pages": [
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116
+   ]
+  },
+  "answers_ref": {
+   "book": "teacher",
+   "pages": [
+    188,
+    189,
+    190
+   ]
+  },
+  "sections": [
+   {
+    "n": "一、听力 第一部分",
+    "type_zh": "听力 第一部分",
+    "instruction_zh": "第1–5题：听对话，选择与对话内容一致的图片",
+    "instruction_en": "Questions 1-5: Choose the right picture for each dialogue you hear.",
+    "audio": "hsk3-workbook-16-part1.mp3",
+    "items": [
+     {
+      "n": "例",
+      "zh": "男：喂，请问张经理在吗？ 女：他正在开会，您半个小时以后再打，好吗？",
+      "transcript_zh": "男：喂，请问张经理在吗？ 女：他正在开会，您半个小时以后再打，好吗？",
+      "options": {
+       "A": "[picture] a small puppy standing next to a pair of small shoes",
+       "B": "[picture] a woman at the dentist with her mouth open while a dentist examines her teeth with instruments",
+       "C": "[picture] two smiling girls with long hair, heads close together",
+       "D": "[picture] a smiling woman in a uniform talking on a telephone",
+       "E": "[picture] a young man holding his head in his hand, sitting at a desk across from a female doctor with a stethoscope",
+       "F": "[picture] a man and a woman sitting beside a tent outdoors, the woman pointing into the distance"
+      },
+      "answer": "D",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        110
+       ]
+      }
+     },
+     {
+      "n": 1,
+      "zh": "",
+      "options": {
+       "A": "[picture] a small puppy standing next to a pair of small shoes",
+       "B": "[picture] a woman at the dentist with her mouth open while a dentist examines her teeth with instruments",
+       "C": "[picture] two smiling girls with long hair, heads close together",
+       "D": "[picture] a smiling woman in a uniform talking on a telephone",
+       "E": "[picture] a young man holding his head in his hand, sitting at a desk across from a female doctor with a stethoscope",
+       "F": "[picture] a man and a woman sitting beside a tent outdoors, the woman pointing into the distance"
+      },
+      "transcript_zh": "女：你好，你有什么问题？哪儿不舒服？ 男：医生，我最近一直头疼，疼得晚上睡不着觉。有什么药吗？",
+      "answer": "E",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        190
+       ]
+      }
+     },
+     {
+      "n": 2,
+      "zh": "",
+      "options": {
+       "A": "[picture] a small puppy standing next to a pair of small shoes",
+       "B": "[picture] a woman at the dentist with her mouth open while a dentist examines her teeth with instruments",
+       "C": "[picture] two smiling girls with long hair, heads close together",
+       "D": "[picture] a smiling woman in a uniform talking on a telephone",
+       "E": "[picture] a young man holding his head in his hand, sitting at a desk across from a female doctor with a stethoscope",
+       "F": "[picture] a man and a woman sitting beside a tent outdoors, the woman pointing into the distance"
+      },
+      "transcript_zh": "女：常医生，我的牙不疼了，应该没什么问题了吧？ 男：只听你说不行，我需要检查一下才清楚。",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        190
+       ]
+      }
+     },
+     {
+      "n": 3,
+      "zh": "",
+      "options": {
+       "A": "[picture] a small puppy standing next to a pair of small shoes",
+       "B": "[picture] a woman at the dentist with her mouth open while a dentist examines her teeth with instruments",
+       "C": "[picture] two smiling girls with long hair, heads close together",
+       "D": "[picture] a smiling woman in a uniform talking on a telephone",
+       "E": "[picture] a young man holding his head in his hand, sitting at a desk across from a female doctor with a stethoscope",
+       "F": "[picture] a man and a woman sitting beside a tent outdoors, the woman pointing into the distance"
+      },
+      "transcript_zh": "女：你看！那边真漂亮！有山有水，有树有花，还有几个小房子，美得像画一样。 男：那还等什么？快过去看看吧。",
+      "answer": "F",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        190
+       ]
+      }
+     },
+     {
+      "n": 4,
+      "zh": "",
+      "options": {
+       "A": "[picture] a small puppy standing next to a pair of small shoes",
+       "B": "[picture] a woman at the dentist with her mouth open while a dentist examines her teeth with instruments",
+       "C": "[picture] two smiling girls with long hair, heads close together",
+       "D": "[picture] a smiling woman in a uniform talking on a telephone",
+       "E": "[picture] a young man holding his head in his hand, sitting at a desk across from a female doctor with a stethoscope",
+       "F": "[picture] a man and a woman sitting beside a tent outdoors, the woman pointing into the distance"
+      },
+      "transcript_zh": "男：你的两个女儿长得真像！这个头发长长的是姐姐吧？ 女：这是我二女儿，她喜欢长头发。大女儿不喜欢。",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        190
+       ]
+      }
+     },
+     {
+      "n": 5,
+      "zh": "",
+      "options": {
+       "A": "[picture] a small puppy standing next to a pair of small shoes",
+       "B": "[picture] a woman at the dentist with her mouth open while a dentist examines her teeth with instruments",
+       "C": "[picture] two smiling girls with long hair, heads close together",
+       "D": "[picture] a smiling woman in a uniform talking on a telephone",
+       "E": "[picture] a young man holding his head in his hand, sitting at a desk across from a female doctor with a stethoscope",
+       "F": "[picture] a man and a woman sitting beside a tent outdoors, the woman pointing into the distance"
+      },
+      "transcript_zh": "男：你家小狗小小的，长得真可爱！ 女：还很聪明呢。它跟我女儿的关系特别好，每天都帮她把小皮鞋放好。",
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        190
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "一、听力 第二部分",
+    "type_zh": "听力 第二部分",
+    "instruction_zh": "第6–10题：听句子，判断对错",
+    "instruction_en": "Questions 6-10: Decide whether the statements are true or false based on the sentences you hear.",
+    "audio": "hsk3-workbook-16-part2.mp3",
+    "items": [
+     {
+      "n": "例1",
+      "zh": "他希望自己很健康。",
+      "transcript_zh": "为了让自己更健康，他每天都花一个小时去锻炼身体。",
+      "answer": "√",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        111
+       ]
+      }
+     },
+     {
+      "n": "例2",
+      "zh": "那块儿手表不是他的。",
+      "transcript_zh": "今天我想早点儿回家。看了看手表，才5点。过了一会儿再看表，还是5点，我这才发现我的手表不走了。",
+      "answer": "×",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        111
+       ]
+      }
+     },
+     {
+      "n": 6,
+      "zh": "他不知道常月现在变胖了还是变瘦了。",
+      "transcript_zh": "常月是我上大学时的好朋友。那时候她很瘦，瘦得只有40公斤。听说她现在已经是三个孩子的妈妈了，不知道长胖一点儿没有。",
+      "answer": "√",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        190
+       ]
+      }
+     },
+     {
+      "n": 7,
+      "zh": "小丽没听明白自己的工作是什么。",
+      "transcript_zh": "今天的会议就到这儿吧，大家对自己的工作都清楚了吗？如果有什么不明白的地方，就去秘书办公室问小丽。",
+      "answer": "×",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        190
+       ]
+      }
+     },
+     {
+      "n": 8,
+      "zh": "女儿喜欢新衣服和新鞋。",
+      "transcript_zh": "我女儿每天都说“从明天开始我每天跑五千米”，我和妻子很早就给她买好了运动服、运动鞋。直到今天，鞋和衣服还都是新的。",
+      "answer": "×",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        190
+       ]
+      }
+     },
+     {
+      "n": 9,
+      "zh": "儿子没让我买东西给他。",
+      "transcript_zh": "赛前，我跟儿子说：“如果你拿了第一，你要什么我就给你买什么。”没想到儿子真的拿了第一，更没想到他的要求是让我在家休息一天。",
+      "answer": "√",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        190
+       ]
+      }
+     },
+     {
+      "n": 10,
+      "zh": "每个星期五老师都送给每个学生一件礼物。",
+      "transcript_zh": "每个星期五，我们班中文老师都带着同学们复习。如果有人能把这个星期学的词语都写对，老师就送给他一件礼物。",
+      "answer": "×",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        190
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "一、听力 第三部分",
+    "type_zh": "听力 第三部分",
+    "instruction_zh": "第11–15题：听短对话，选择正确答案",
+    "instruction_en": "Questions 11-15: Listen to the short dialogues and choose the right answers.",
+    "audio": "hsk3-workbook-16-part3.mp3",
+    "items": [
+     {
+      "n": "例",
+      "zh": "男的想让小王做什么？",
+      "transcript_zh": "男：小王，帮我开一下门，好吗？谢谢！ 女：没问题。您去超市了？买了这么多东西。 问：男的想让小王做什么？",
+      "options": {
+       "A": "开门",
+       "B": "拿东西",
+       "C": "去超市买东西"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        111
+       ]
+      }
+     },
+     {
+      "n": 11,
+      "zh": "关于女的，可以知道什么？",
+      "options": {
+       "A": "眼睛红",
+       "B": "打算去医院",
+       "C": "买了一个红眼镜"
+      },
+      "transcript_zh": "男：最近你的眼睛一直红红的，我带你去医院检查一下吧。 女：我去过了，医生说没什么事，不用吃药，让我多休息。 问：关于女的，可以知道什么？",
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        190
+       ]
+      }
+     },
+     {
+      "n": 12,
+      "zh": "女的是什么意思？",
+      "options": {
+       "A": "明天天气好",
+       "B": "太阳能从西边出来",
+       "C": "认为男的不可能去跑步"
+      },
+      "transcript_zh": "男：我打算从明天开始，每天去运动场跑两千米。 女：真的吗？如果你能这么做，太阳就能从西边出来。 问：女的是什么意思？",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        190
+       ]
+      }
+     },
+     {
+      "n": 13,
+      "zh": "女的是男的的什么人？",
+      "options": {
+       "A": "女儿",
+       "B": "妈妈",
+       "C": "奶奶"
+      },
+      "transcript_zh": "女：乐乐，快让奶奶看看，你长高了，也长胖了。这双小皮鞋真好看，谁给你买的？ 男：是妈妈，她说如果我这次考试还拿第一，就再给我买一双。 问：女的是男的的什么人？",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        190
+       ]
+      }
+     },
+     {
+      "n": 14,
+      "zh": "关于男的，可以知道什么？",
+      "options": {
+       "A": "中午吃过药了",
+       "B": "现在要去医院",
+       "C": "现在能吃甜的"
+      },
+      "transcript_zh": "男：我觉得中午吃的药没什么用，牙还是很疼，不能吃甜的。 女：等一晚上，如果明天还不好，就带你去医院检查一下，看看医生怎么说。 问：关于男的，可以知道什么？",
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        190
+       ]
+      }
+     },
+     {
+      "n": 15,
+      "zh": "男的打算给女儿起什么名字？",
+      "options": {
+       "A": "老高",
+       "B": "高山",
+       "C": "高静"
+      },
+      "transcript_zh": "女：老高，你说我们给孩子起什么名字好？ 男：如果是男孩儿，就叫高山，如果是女孩儿，就叫高静，怎么样？ 问：男的打算给女儿起什么名字？",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        190
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "一、听力 第四部分",
+    "type_zh": "听力 第四部分",
+    "instruction_zh": "第16–20题：听长对话，选择正确答案",
+    "instruction_en": "Questions 16-20: Listen to the dialogues and choose the right answers.",
+    "audio": "hsk3-workbook-16-part4.mp3",
+    "items": [
+     {
+      "n": "例",
+      "zh": "男的在做什么？",
+      "transcript_zh": "女：晚饭做好了，准备吃饭了。 男：等一会儿，比赛还有三分钟就结束了。 女：快点儿吧，一起吃，菜冷了就不好吃了。 男：你先吃，我马上就看完了。 问：男的在做什么？",
+      "options": {
+       "A": "洗澡",
+       "B": "吃饭",
+       "C": "看电视"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        112
+       ]
+      }
+     },
+     {
+      "n": 16,
+      "zh": "男的为什么回来晚了？",
+      "options": {
+       "A": "一直工作",
+       "B": "坐错车了",
+       "C": "坐过站了"
+      },
+      "transcript_zh": "女：你今天回来得有点儿晚啊。 男：今天不知道怎么了，特别累，回家的时候累得我在公共汽车上就睡着了。 女：我有时候也在车上睡一会儿。 男：但是我坐过站了，只好下了车再往回坐。 问：男的为什么回来晚了？",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        190
+       ]
+      }
+     },
+     {
+      "n": 17,
+      "zh": "关于女的，可以知道什么？",
+      "options": {
+       "A": "不认识男的",
+       "B": "变瘦了",
+       "C": "没想到男的这么瘦"
+      },
+      "transcript_zh": "男：周新，好久不见！你还是那么年轻、漂亮。 女：对不起，请问您是？ 男：我是常亮啊，你不认识我了？ 女：常亮？你现在怎么变得这么瘦？瘦得我都不认识你了。 问：关于女的，可以知道什么？",
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        190
+       ]
+      }
+     },
+     {
+      "n": 18,
+      "zh": "关于小白的孩子，可以知道什么？",
+      "options": {
+       "A": "不太胖",
+       "B": "大眼睛",
+       "C": "小鼻子"
+      },
+      "transcript_zh": "男：听说上个月小白生了个儿子？ 女：是啊，那孩子特别可爱，出生时特别胖，四公斤呢，他们高兴得一晚上没睡。 男：孩子长得像谁？像小白还是像她丈夫？ 女：鼻子像爸爸，高高的，眼睛像妈妈，大大的，头发也像妈妈，黑黑的。 问：关于小白的孩子，可以知道什么？",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        190
+       ]
+      }
+     },
+     {
+      "n": 19,
+      "zh": "女的喝什么比较好？",
+      "options": {
+       "A": "热牛奶",
+       "B": "冰可乐",
+       "C": "热水"
+      },
+      "transcript_zh": "女：我睡不着，怎么办啊？ 男：喝杯热牛奶，能帮助你快点儿睡，也能睡得好。 女：热牛奶？我是热得睡不着，喝热的更睡不着了。 男：如果觉得太热，就喝杯冰可乐吧，甜甜的，很舒服。 问：女的喝什么比较好？",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        190
+       ]
+      }
+     },
+     {
+      "n": 20,
+      "zh": "关于这个城市，可以知道什么？",
+      "options": {
+       "A": "有地铁",
+       "B": "人很好",
+       "C": "不太安静"
+      },
+      "transcript_zh": "男：这个城市真不错，干净、安静、漂亮。 女：超市、洗衣店、饭馆、咖啡店，都有，很方便。 男：人和人的关系也不错，遇到问题时，别人都愿意帮助你。 女：如果这个地方有地铁，那就更好了。 问：关于这个城市，可以知道什么？",
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        190
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第一部分",
+    "type_zh": "阅读 第一部分",
+    "instruction_zh": "第21–25题：选择合适的问答",
+    "instruction_en": "Questions 21-25: Match the two parts of the same dialogue.",
+    "items": [
+     {
+      "n": "例",
+      "zh": "你知道怎么去那儿吗？",
+      "options": {
+       "A": "你的鼻子红红的？怎么了？",
+       "B": "我的牙有点儿疼，您帮我看看吧。",
+       "C": "不到200米了，我们要不要先休息一下？",
+       "D": "我们给小方的孩子买皮鞋还是买帽子？",
+       "E": "当然。我们先坐公共汽车，然后换地铁。",
+       "F": "他是我们学校的校长，姓周。"
+      },
+      "answer": "E",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        113
+       ]
+      }
+     },
+     {
+      "n": 21,
+      "zh": "还有多远？我累得一步也不想走了。",
+      "options": {
+       "A": "你的鼻子红红的？怎么了？",
+       "B": "我的牙有点儿疼，您帮我看看吧。",
+       "C": "不到200米了，我们要不要先休息一下？",
+       "D": "我们给小方的孩子买皮鞋还是买帽子？",
+       "E": "当然。我们先坐公共汽车，然后换地铁。",
+       "F": "他是我们学校的校长，姓周。"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        190
+       ]
+      }
+     },
+     {
+      "n": 22,
+      "zh": "她儿子只有两个月大，不用穿皮鞋，买个小帽子吧。",
+      "options": {
+       "A": "你的鼻子红红的？怎么了？",
+       "B": "我的牙有点儿疼，您帮我看看吧。",
+       "C": "不到200米了，我们要不要先休息一下？",
+       "D": "我们给小方的孩子买皮鞋还是买帽子？",
+       "E": "当然。我们先坐公共汽车，然后换地铁。",
+       "F": "他是我们学校的校长，姓周。"
+      },
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        190
+       ]
+      }
+     },
+     {
+      "n": 23,
+      "zh": "好，你坐这边吧，我给你检查一下。",
+      "options": {
+       "A": "你的鼻子红红的？怎么了？",
+       "B": "我的牙有点儿疼，您帮我看看吧。",
+       "C": "不到200米了，我们要不要先休息一下？",
+       "D": "我们给小方的孩子买皮鞋还是买帽子？",
+       "E": "当然。我们先坐公共汽车，然后换地铁。",
+       "F": "他是我们学校的校长，姓周。"
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        190
+       ]
+      }
+     },
+     {
+      "n": 24,
+      "zh": "前边那个高高的、瘦瘦的老人是谁？",
+      "options": {
+       "A": "你的鼻子红红的？怎么了？",
+       "B": "我的牙有点儿疼，您帮我看看吧。",
+       "C": "不到200米了，我们要不要先休息一下？",
+       "D": "我们给小方的孩子买皮鞋还是买帽子？",
+       "E": "当然。我们先坐公共汽车，然后换地铁。",
+       "F": "他是我们学校的校长，姓周。"
+      },
+      "answer": "F",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        190
+       ]
+      }
+     },
+     {
+      "n": 25,
+      "zh": "没事，可能是外边太冷了，还刮大风。",
+      "options": {
+       "A": "你的鼻子红红的？怎么了？",
+       "B": "我的牙有点儿疼，您帮我看看吧。",
+       "C": "不到200米了，我们要不要先休息一下？",
+       "D": "我们给小方的孩子买皮鞋还是买帽子？",
+       "E": "当然。我们先坐公共汽车，然后换地铁。",
+       "F": "他是我们学校的校长，姓周。"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        190
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第二部分",
+    "type_zh": "阅读 第二部分",
+    "instruction_zh": "第26–30题：选择合适的词语填空",
+    "instruction_en": "Questions 26-30: Choose the proper words to fill in the brackets.",
+    "word_bank": [
+     [
+      "A 城市",
+      "B 头发",
+      "C 鼻子",
+      "D 认为",
+      "E 声音",
+      "F 关系"
+     ]
+    ],
+    "items": [
+     {
+      "n": "例",
+      "zh": "她说话的（　）多好听啊！",
+      "options": {
+       "A": "城市",
+       "B": "头发",
+       "C": "鼻子",
+       "D": "认为",
+       "E": "声音",
+       "F": "关系"
+      },
+      "answer": "E",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        113
+       ]
+      }
+     },
+     {
+      "n": 26,
+      "zh": "我感冒了，（　）不舒服。",
+      "options": {
+       "A": "城市",
+       "B": "头发",
+       "C": "鼻子",
+       "D": "认为",
+       "E": "声音",
+       "F": "关系"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        190
+       ]
+      }
+     },
+     {
+      "n": 27,
+      "zh": "我（　）现在上网看新闻比以前方便多了。",
+      "options": {
+       "A": "城市",
+       "B": "头发",
+       "C": "鼻子",
+       "D": "认为",
+       "E": "声音",
+       "F": "关系"
+      },
+      "answer": "D",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        190
+       ]
+      }
+     },
+     {
+      "n": 28,
+      "zh": "今天洗澡的时候我发现我的（　）长了不少。",
+      "options": {
+       "A": "城市",
+       "B": "头发",
+       "C": "鼻子",
+       "D": "认为",
+       "E": "声音",
+       "F": "关系"
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        190
+       ]
+      }
+     },
+     {
+      "n": 29,
+      "zh": "A：我看你和新来的小丽每天下班都一起走。 B：是，我们以前就是同学，（　）一直很好。",
+      "options": {
+       "A": "城市",
+       "B": "头发",
+       "C": "鼻子",
+       "D": "认为",
+       "E": "声音",
+       "F": "关系"
+      },
+      "answer": "F",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        190
+       ]
+      }
+     },
+     {
+      "n": 30,
+      "zh": "A：最近工作太累了，我真想好好儿休息一下。 B：那你去别的（　）玩儿玩儿吧。",
+      "options": {
+       "A": "城市",
+       "B": "头发",
+       "C": "鼻子",
+       "D": "认为",
+       "E": "声音",
+       "F": "关系"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        190
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "二、阅读 第三部分",
+    "type_zh": "阅读 第三部分",
+    "instruction_zh": "第31–35题：选择正确答案",
+    "instruction_en": "Questions 31-35: Choose the right answers.",
+    "items": [
+     {
+      "n": "例",
+      "zh": "您是来参加今天会议的吗？您来早了一点儿，现在才八点半。您先进来坐吧。 ★会议最可能几点开始？",
+      "options": {
+       "A": "8点",
+       "B": "8点半",
+       "C": "9点"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        114
+       ]
+      }
+     },
+     {
+      "n": 31,
+      "zh": "您有体检的习惯吗？很多人都认为体检没那么重要，觉得自己身体很健康。其实，我们应该每年做一次体检，这样可以让自己放心，也让家人放心。如果有什么病，也可以早点儿知道早点儿看。 ★关于体检，可以知道什么？",
+      "options": {
+       "A": "不太重要",
+       "B": "应该每年一次",
+       "C": "没病的人不用体检"
+      },
+      "answer": "B",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        190
+       ]
+      }
+     },
+     {
+      "n": 32,
+      "zh": "我是新兴饭店的经理，我和我的服务员很高兴为您服务。如果您对我们的服务很满意，就请您告诉您的朋友；如果您对我们的服务不满意，就请您告诉我们。新兴饭店祝您生活、工作事事开心。 ★如果认为这家饭店的饭菜不错，我们可以：",
+      "options": {
+       "A": "告诉大家",
+       "B": "告诉饭店",
+       "C": "来这儿工作"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        190
+       ]
+      }
+     },
+     {
+      "n": 33,
+      "zh": "我爸妈都是北方人，但是我从小跟爷爷奶奶在南方长大，一直没见过雪。去年搬回北京后，虽然这儿的冬天很冷，我还不太习惯，但是我终于第一次见到了雪，雪花白白的，特别漂亮，我高兴得在雪地里玩儿了一天，如果每天都能看到雪，那就太好了。 ★我：",
+      "options": {
+       "A": "没见过雪",
+       "B": "每天都能看到雪",
+       "C": "喜欢雪"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        190
+       ]
+      }
+     },
+     {
+      "n": 34,
+      "zh": "我们每天都刷牙，但你知道怎么刷牙吗？你的牙健康吗？牙医告诉我们，刷牙应该每天刷三次，每次最少要刷三分钟，这样才能把牙刷干净。还有，每年应该最少检查一次牙，如果牙不舒服，就要马上去医院。 ★根据这段话，可以知道什么？",
+      "options": {
+       "A": "刷牙的时间越长越好",
+       "B": "每天刷两次牙就可以",
+       "C": "每年都要去医院检查牙"
+      },
+      "answer": "C",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        190
+       ]
+      }
+     },
+     {
+      "n": 35,
+      "zh": "去年，我丈夫自己开了个公司，每天忙得都没有时间吃饭，好几次都累得一句话也不想说，到了家就睡觉，我真担心他累坏了。今天晚上丈夫回来后，我打算告诉他：下个月不工作，一起出去旅游，到一个安静的城市去好好儿休息一下。 ★我丈夫：",
+      "options": {
+       "A": "工作特别忙",
+       "B": "不喜欢说话",
+       "C": "下个月搬家"
+      },
+      "answer": "A",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        190
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "三、书写 第一部分",
+    "type_zh": "书写 第一部分",
+    "instruction_zh": "第36–40题：连词成句",
+    "instruction_en": "Questions 36-40: Rearrange the words/phrases to make sentences.",
+    "items": [
+     {
+      "n": "例",
+      "zh": "小船　上　一　河　条　有",
+      "answer": "河上有一条小船。",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        115
+       ]
+      }
+     },
+     {
+      "n": 36,
+      "zh": "跳　起来　高兴　弟弟　得　了",
+      "answer": "弟弟高兴得跳起来了。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        190
+       ]
+      }
+     },
+     {
+      "n": 37,
+      "zh": "大　大　小狗　的　的　眼睛",
+      "answer": "小狗的眼睛大大的。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        190
+       ]
+      }
+     },
+     {
+      "n": 38,
+      "zh": "玩儿　天气　就　我们　明天　公园　去　好",
+      "answer": "明天天气好我们就去公园玩儿。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        190
+       ]
+      }
+     },
+     {
+      "n": 39,
+      "zh": "走路　不能　疼　腿　得　我的",
+      "answer": "我的腿疼得不能走路。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        190
+       ]
+      }
+     },
+     {
+      "n": 40,
+      "zh": "甜　的　甜　水果店　的　西瓜",
+      "answer": "水果店的西瓜甜甜的。",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        190
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "三、书写 第二部分",
+    "type_zh": "书写 第二部分",
+    "instruction_zh": "第41–45题：看拼音，写汉字",
+    "instruction_en": "Questions 41-45: Write the characters based on their pinyin.",
+    "items": [
+     {
+      "n": "例",
+      "zh": "没（　）系，别难过，高兴点儿。",
+      "hint_zh": "guān",
+      "answer": "关",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        115
+       ]
+      }
+     },
+     {
+      "n": 41,
+      "zh": "这个（　）市的街道非常干净，路边有很多树。",
+      "hint_zh": "chéng",
+      "answer": "城",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        190
+       ]
+      }
+     },
+     {
+      "n": 42,
+      "zh": "妻子知道我明天参加面试，为我买了一双新（　）鞋。",
+      "hint_zh": "pí",
+      "answer": "皮",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        190
+       ]
+      }
+     },
+     {
+      "n": 43,
+      "zh": "弟弟的眼睛大大的，（　）子高高的，可爱极了。",
+      "hint_zh": "bí",
+      "answer": "鼻",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        190
+       ]
+      }
+     },
+     {
+      "n": 44,
+      "zh": "爷爷已经80岁了，每年都要去做一次健康（　）查。",
+      "hint_zh": "jiǎn",
+      "answer": "检",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        190
+       ]
+      }
+     },
+     {
+      "n": 45,
+      "zh": "你吃了那么多甜东西，快去把（　）刷干净。",
+      "hint_zh": "yá",
+      "answer": "牙",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        190
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "三、书写 第三部分",
+    "type_zh": "书写 第三部分",
+    "instruction_zh": "第46–50题：辨认汉字，选择正确的汉字填空",
+    "instruction_en": "Questions 46-50: Distinguish the characters and fill in the blanks.",
+    "items": [
+     {
+      "n": "例",
+      "zh": "我不知道________个地方在________儿。",
+      "hint_zh": "（那、哪）",
+      "answer": "那、哪",
+      "answer_ref": {
+       "book": "workbook",
+       "pages": [
+        116
+       ]
+      }
+     },
+     {
+      "n": 46,
+      "zh": "小丽每天早上都要先去公园跑两千________，再________公司上班。",
+      "hint_zh": "（米、来）",
+      "answer": "米、来",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        190
+       ]
+      }
+     },
+     {
+      "n": 47,
+      "zh": "周秘书，________果白小________回来了，请你让她给我打个电话。",
+      "hint_zh": "（姐、如）",
+      "answer": "如、姐",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        190
+       ]
+      }
+     },
+     {
+      "n": 48,
+      "zh": "这儿附________有个超市，我们进去买几________水果吧。",
+      "hint_zh": "（斤、近）",
+      "answer": "近、斤",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        190
+       ]
+      }
+     },
+     {
+      "n": 49,
+      "zh": "医生检________完我的牙后，让我少吃些________蕉、蛋糕这样甜的东西。",
+      "hint_zh": "（查、香）",
+      "answer": "查、香",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        190
+       ]
+      }
+     },
+     {
+      "n": 50,
+      "zh": "天气越来越冷，我怕你感________，所以给你买了个________子。",
+      "hint_zh": "（帽、冒）",
+      "answer": "冒、帽",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        190
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "n": "四、复习",
+    "type_zh": "复习",
+    "instruction_zh": "第1–2题：根据课文内容填空",
+    "instruction_en": "Questions 1-2: Fill in the blanks based on the texts in the textbook.",
+    "items": [
+     {
+      "n": 1,
+      "zh": "小丽认为一个人不能总住在同一个________，应该去其他地方看看。周经理年轻时也这么想，________那时候没有钱，他________去旅游了。现在钱不是问题了，但是他忙得________，________下了班就想睡觉。",
+      "answer": "城市、如果、就、没时间、累得",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        190
+       ]
+      }
+     },
+     {
+      "n": 2,
+      "zh": "小丽同事的女儿胖胖的，________，很可爱，现在已经25________，快1米了。她鼻子小小的，________黑黑的，长得像爸爸。刚出生时同事的丈夫________一个晚上都没睡着。小丽给她的女儿买了两件礼物：小________和小帽子，都很漂亮。",
+      "answer": "白白的、公斤、头发、高兴得、皮鞋",
+      "answer_ref": {
+       "book": "teacher",
+       "pages": [
+        190
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ "audio": {
+  "textbook": [
+   "hsk3-textbook-1601.mp3",
+   "hsk3-textbook-1602.mp3",
+   "hsk3-textbook-1603.mp3",
+   "hsk3-textbook-1604.mp3",
+   "hsk3-textbook-1605.mp3"
+  ],
+  "workbook": [
+   "hsk3-workbook-16-part1.mp3",
+   "hsk3-workbook-16-part2.mp3",
+   "hsk3-workbook-16-part3.mp3",
+   "hsk3-workbook-16-part4.mp3"
+  ]
+ },
+ "unclear": [
+  "Дасгалын ном PDF х.116 四、复习 1: «周经理年轻时也这么想，________那时候没有钱，他________去旅游了» гэж «没有钱» хэвлэгдсэн; багшийн номын хариулт (PDF х.190) «城市、如果、就、没时间、累得» — «如果那时候没有钱，他就去旅游了» болж утга зөрнө (课文1: «但是那时候没有钱，如果有钱，就去了»). Номд байгаагаар нь үлдээсэн.",
+  "Дасгалын ном 四、复习 1 «周经理» гэж нэрлэсэн — сурах бичгийн 课文1-д ярилцагч «周明» (албан тушаал дурдаагүй); номд байгаагаар.",
+  "Сурах бичиг PDF х.153 拼音课文2: «Xièxiè nǐmen…» (хоёр үе хоёулаа 4-р хөг) — 课文4-т «xièxie» (хоёр дахь үе саармаг); номд байгаагаар.",
+  "Сурах бичиг PDF х.155 注释3 жишээ (3) «他鼻子小小的，长得像谁？» — 课文2-т «你看她鼻子小小的…» (她); жишээ (3) улаанаар тэмдэглэгдээгүй (课文-аас авсан биш) тул номд байгаагаар үлдээсэн.",
+  "Багшийн ном PDF х.116 补充课堂活动 «包含复杂程度补语的句子» гэж бичсэн — 语言点 гарчиг «复杂的状态补语»; номд байгаагаар.",
+  "Багшийн ном 本课小结 «用单音节形容词重叠式描述某种状态» — 教学目标-д «表示人或事物的特征／描述人或事物»; номд байгаагаар.",
+  "Багшийн ном PDF х.111 语言点（1）导入 — багш «你们» гэж асуусан ч дүгнэлтийн өгүүлбэр «她去买衣服…她在家看电视» — номд байгаагаар.",
+  "Сурах бичгийн 练一练 (3 дүрэм × 3), 练习2 选词填空 / 练习3 描述图片 / 练习4 回答问题 — хариулт сурах бичиг, багшийн номд хэвлэгдээгүй тул answer талбаргүй. Багшийн номын 课文 асуулт-хариулт (teacher.text_questions) нь 练习4-ийн асуултаас өөр.",
+  "Багшийн номын 汉字辨认练习 (米/来 · 姐/如 · 斤/近 · 查/香 · 帽/冒 — 组词) хоосон зайтай, хариулт хэвлэгдээгүй. 课文4-ийн «快速阅读，并回答：怎么才能和别人的关系变得更好？» асуултын хариулт хэвлэгдээгүй (a_zh байхгүй).",
+  "Дасгалын номын сонсгол нэг CD тэмдэгтэй (16) — аудиог hsk3-workbook-16-part1…4.mp3 болгож хэсэг тус бүрт хуваасныг section.audio-д оноосон.",
+  "Дасгалын ном 听力 第三/四部分 — номд зөвхөн сонголтууд хэвлэгдсэн; item.zh-д багшийн номын хавсралтын «问：» асуултыг оруулсан (transcript_zh-д бүтнээр).",
+  "Сурах бичгийн 拼音课文-ын гарчгийн пиньинь (Zài gōngsī / Zài tóngshì jiā / Zài gōngsī) болон ярилцагчийн нэрийн пиньинь (Xiǎolì, Zhōu Míng, tóngshì, Xiǎogāng) схемд талбаргүй тул lines.pinyin-д зөвхөн яриаг оруулсан. 课文4 гарчиггүй.",
+  "Багшийн номын 语言点(2)/(3)-ын хүрээтэй бүтэц («形容词＋得＋动词词组», «AA的») — teacher.steps-д «［框］» гэж тэмдэглэж оруулсан. Сурах бичгийн 注释2-т бүтцийн хүрээ байхгүй тул structure_rows-гүй."
+ ],
+ "verified_pages": [
+  110,
+  111,
+  112,
+  113,
+  114,
+  115,
+  116,
+  151,
+  152,
+  153,
+  154,
+  155,
+  156,
+  157,
+  158,
+  188,
+  189,
+  190
+ ],
+ "schema_version": 1
+}
