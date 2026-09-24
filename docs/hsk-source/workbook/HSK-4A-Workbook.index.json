@@ -1,0 +1,70 @@
+{
+ "book": "HSK-4A-Workbook",
+ "pages": 111,
+ "printed_offset": 7,
+ "expected_lessons": 10,
+ "appendix_start": 108,
+ "scripts": null,
+ "lessons": [
+  {
+   "lesson": 1,
+   "start_page": 8,
+   "end_page": 17,
+   "printed_page": 1
+  },
+  {
+   "lesson": 2,
+   "start_page": 18,
+   "end_page": 27,
+   "printed_page": 11
+  },
+  {
+   "lesson": 3,
+   "start_page": 28,
+   "end_page": 37,
+   "printed_page": 21
+  },
+  {
+   "lesson": 4,
+   "start_page": 38,
+   "end_page": 47,
+   "printed_page": 31
+  },
+  {
+   "lesson": 5,
+   "start_page": 48,
+   "end_page": 57,
+   "printed_page": 41
+  },
+  {
+   "lesson": 6,
+   "start_page": 58,
+   "end_page": 67,
+   "printed_page": 51
+  },
+  {
+   "lesson": 7,
+   "start_page": 68,
+   "end_page": 77,
+   "printed_page": 61
+  },
+  {
+   "lesson": 8,
+   "start_page": 78,
+   "end_page": 87,
+   "printed_page": 71
+  },
+  {
+   "lesson": 9,
+   "start_page": 88,
+   "end_page": 97,
+   "printed_page": 81
+  },
+  {
+   "lesson": 10,
+   "start_page": 98,
+   "end_page": 107,
+   "printed_page": 91
+  }
+ ]
+}

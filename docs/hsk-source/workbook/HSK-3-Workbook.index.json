@@ -1,0 +1,130 @@
+{
+ "book": "HSK-3-Workbook",
+ "pages": 167,
+ "printed_offset": 4,
+ "expected_lessons": 20,
+ "appendix_start": 146,
+ "scripts": null,
+ "lessons": [
+  {
+   "lesson": 1,
+   "start_page": 5,
+   "end_page": 11,
+   "printed_page": 1
+  },
+  {
+   "lesson": 2,
+   "start_page": 12,
+   "end_page": 18,
+   "printed_page": 8
+  },
+  {
+   "lesson": 3,
+   "start_page": 19,
+   "end_page": 25,
+   "printed_page": 15
+  },
+  {
+   "lesson": 4,
+   "start_page": 26,
+   "end_page": 32,
+   "printed_page": 22
+  },
+  {
+   "lesson": 5,
+   "start_page": 33,
+   "end_page": 39,
+   "printed_page": 29
+  },
+  {
+   "lesson": 6,
+   "start_page": 40,
+   "end_page": 46,
+   "printed_page": 36
+  },
+  {
+   "lesson": 7,
+   "start_page": 47,
+   "end_page": 53,
+   "printed_page": 43
+  },
+  {
+   "lesson": 8,
+   "start_page": 54,
+   "end_page": 60,
+   "printed_page": 50
+  },
+  {
+   "lesson": 9,
+   "start_page": 61,
+   "end_page": 67,
+   "printed_page": 57
+  },
+  {
+   "lesson": 10,
+   "start_page": 68,
+   "end_page": 74,
+   "printed_page": 64
+  },
+  {
+   "lesson": 11,
+   "start_page": 75,
+   "end_page": 81,
+   "printed_page": 71
+  },
+  {
+   "lesson": 12,
+   "start_page": 82,
+   "end_page": 88,
+   "printed_page": 78
+  },
+  {
+   "lesson": 13,
+   "start_page": 89,
+   "end_page": 95,
+   "printed_page": 85
+  },
+  {
+   "lesson": 14,
+   "start_page": 96,
+   "end_page": 102,
+   "printed_page": 92
+  },
+  {
+   "lesson": 15,
+   "start_page": 103,
+   "end_page": 109,
+   "printed_page": 99
+  },
+  {
+   "lesson": 16,
+   "start_page": 110,
+   "end_page": 116,
+   "printed_page": 106
+  },
+  {
+   "lesson": 17,
+   "start_page": 117,
+   "end_page": 124,
+   "printed_page": 113
+  },
+  {
+   "lesson": 18,
+   "start_page": 125,
+   "end_page": 131,
+   "printed_page": 121
+  },
+  {
+   "lesson": 19,
+   "start_page": 132,
+   "end_page": 138,
+   "printed_page": 128
+  },
+  {
+   "lesson": 20,
+   "start_page": 139,
+   "end_page": 145,
+   "printed_page": 135
+  }
+ ]
+}

@@ -1,0 +1,100 @@
+{
+ "book": "hsk1-workbook-answers",
+ "pages": 98,
+ "printed_offset": null,
+ "expected_lessons": null,
+ "appendix_start": 92,
+ "scripts": null,
+ "lessons": [
+  {
+   "lesson": 1,
+   "start_page": 6,
+   "end_page": 7,
+   "printed_page": null
+  },
+  {
+   "lesson": 2,
+   "start_page": 8,
+   "end_page": 11,
+   "printed_page": null
+  },
+  {
+   "lesson": 3,
+   "start_page": 12,
+   "end_page": 17,
+   "printed_page": null
+  },
+  {
+   "lesson": 4,
+   "start_page": 18,
+   "end_page": 23,
+   "printed_page": null
+  },
+  {
+   "lesson": 5,
+   "start_page": 24,
+   "end_page": 29,
+   "printed_page": null
+  },
+  {
+   "lesson": 6,
+   "start_page": 30,
+   "end_page": 35,
+   "printed_page": null
+  },
+  {
+   "lesson": 7,
+   "start_page": 36,
+   "end_page": 41,
+   "printed_page": null
+  },
+  {
+   "lesson": 8,
+   "start_page": 42,
+   "end_page": 47,
+   "printed_page": null
+  },
+  {
+   "lesson": 9,
+   "start_page": 48,
+   "end_page": 53,
+   "printed_page": null
+  },
+  {
+   "lesson": 10,
+   "start_page": 54,
+   "end_page": 60,
+   "printed_page": null
+  },
+  {
+   "lesson": 11,
+   "start_page": 61,
+   "end_page": 66,
+   "printed_page": null
+  },
+  {
+   "lesson": 12,
+   "start_page": 67,
+   "end_page": 72,
+   "printed_page": null
+  },
+  {
+   "lesson": 13,
+   "start_page": 73,
+   "end_page": 79,
+   "printed_page": null
+  },
+  {
+   "lesson": 14,
+   "start_page": 80,
+   "end_page": 85,
+   "printed_page": null
+  },
+  {
+   "lesson": 15,
+   "start_page": 86,
+   "end_page": 91,
+   "printed_page": null
+  }
+ ]
+}

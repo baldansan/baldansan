@@ -1,0 +1,130 @@
+{
+ "book": "HSK-6B-Workbook",
+ "pages": 198,
+ "printed_offset": 9,
+ "expected_lessons": 20,
+ "appendix_start": 180,
+ "scripts": null,
+ "lessons": [
+  {
+   "lesson": 21,
+   "start_page": 11,
+   "end_page": 18,
+   "printed_page": 2
+  },
+  {
+   "lesson": 22,
+   "start_page": 19,
+   "end_page": 26,
+   "printed_page": 10
+  },
+  {
+   "lesson": 23,
+   "start_page": 27,
+   "end_page": 34,
+   "printed_page": 18
+  },
+  {
+   "lesson": 24,
+   "start_page": 35,
+   "end_page": 44,
+   "printed_page": 26
+  },
+  {
+   "lesson": 25,
+   "start_page": 45,
+   "end_page": 52,
+   "printed_page": 36
+  },
+  {
+   "lesson": 26,
+   "start_page": 53,
+   "end_page": 60,
+   "printed_page": 44
+  },
+  {
+   "lesson": 27,
+   "start_page": 61,
+   "end_page": 68,
+   "printed_page": 52
+  },
+  {
+   "lesson": 28,
+   "start_page": 69,
+   "end_page": 78,
+   "printed_page": 60
+  },
+  {
+   "lesson": 29,
+   "start_page": 79,
+   "end_page": 86,
+   "printed_page": 70
+  },
+  {
+   "lesson": 30,
+   "start_page": 87,
+   "end_page": 94,
+   "printed_page": 78
+  },
+  {
+   "lesson": 31,
+   "start_page": 95,
+   "end_page": 102,
+   "printed_page": 86
+  },
+  {
+   "lesson": 32,
+   "start_page": 103,
+   "end_page": 112,
+   "printed_page": 94
+  },
+  {
+   "lesson": 33,
+   "start_page": 113,
+   "end_page": 120,
+   "printed_page": 104
+  },
+  {
+   "lesson": 34,
+   "start_page": 121,
+   "end_page": 128,
+   "printed_page": 112
+  },
+  {
+   "lesson": 35,
+   "start_page": 129,
+   "end_page": 136,
+   "printed_page": 120
+  },
+  {
+   "lesson": 36,
+   "start_page": 137,
+   "end_page": 146,
+   "printed_page": 128
+  },
+  {
+   "lesson": 37,
+   "start_page": 147,
+   "end_page": 154,
+   "printed_page": 138
+  },
+  {
+   "lesson": 38,
+   "start_page": 155,
+   "end_page": 162,
+   "printed_page": 146
+  },
+  {
+   "lesson": 39,
+   "start_page": 163,
+   "end_page": 170,
+   "printed_page": 154
+  },
+  {
+   "lesson": 40,
+   "start_page": 171,
+   "end_page": 179,
+   "printed_page": 162
+  }
+ ]
+}

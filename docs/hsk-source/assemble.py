@@ -7,6 +7,17 @@ OCR хийсэн хуудсуудыг ном тус бүрээр нэг Markdown
 хуудас гэж үзнэ (нэг хичээл нэг л удаа эхэлнэ — хамгийн эхний тохиолдол).
 
 Мөн books/<book>.index.json — хичээл → хуудсын муж.
+
+Горимууд:
+  * Сурах бичиг — «Warm-up/热身» хуудас = хичээлийн эхлэл.
+  * Багшийн ном («Teacher») — 教学目标 / 本课小结 (teacher_lesson_starts).
+  * Дасгалын ном («Workbook») — хичээл бүр гарчгийн хуудсаар (пиньинь + ханз +
+    англи гарчиг) эхэлж, шууд «一、听力 Listening» / «一、朗读…» (HSK1-ийн 1–2-р
+    хичээл) хэсэг, «第1-5题» гэх мэт 1-ээс эхэлсэн асуултын дугаартай байдаг
+    (workbook_lesson_starts). Номын төгсгөлийн «附录 / 模拟试卷 / HSK介绍»
+    хавсралт хичээлд орохгүй.
+  * Хариултын ном («answers») — «Lesson N — …» мөрөөр (answers_lessons),
+    EXPECTED-д байхгүй тул тоо шалгахгүй.
 """
 import os, re, json, glob, sys
 
@@ -133,10 +144,79 @@ def teacher_appendix(files):
                 out[n] = k; break
     return out
 
+# Дасгалын ном: хичээлийн эхний хуудасны толгой (эхний 10 мөр)-д
+#   (а) «听力 / Listening / 朗读» (HSK1–2: «一、Wr Listening», HSK4–6: «一、听 力»), эсвэл
+#   (б) 1-ээс эхэлсэн асуултын муж: «第 1-5题», «Questions 1-4», OCR-д «1-5 el:», «第 1-$题».
+# Хасах: дэд хэсгүүд (三、语音 Pronunciation / 四、汉字 Characters / 五、复习 Review — эдгээр
+# дотор асуулт мөн 1-ээс эхэлдэг), гарчиг/өмнөх үг, «标准教程…练习册» гүйдэг толгойтой
+# (хичээлийн дунд) хуудас. Бүгд англиар шалгана — «语音», «汉字» нь хичээлийн гарчиг,
+# сонголтын текстэд ч гардаг (5A: «1. A 语音», 5B L21 «汉字叔叔»).
+WB_RESTART = re.compile(r"(^|第|Questions?)\s*1\s*[-—–~一－]\s*[\d$S]", re.M)
+WB_LISTEN = re.compile(r"听\s*力|Listening|朗\s*读")
+WB_NEG = re.compile(r"Pronunciation|Characters|Review|复习|目录|Contents|使用说明|本册说明|Guide to the Use")
+WB_APPENDIX = re.compile(r"附\s*录|模拟试|Model Test|听力文本|参考答案|HSK.{0,8}介绍")
+
+def page_no(f):
+    return int(re.search(r"p(\d+)\.txt$", f).group(1))
+
+def workbook_lesson_starts(files):
+    """Дасгалын ном → (эхлэлүүд, хавсралтын эхний хуудас эсвэл None)."""
+    starts, appendix = [], None
+    for f in files:
+        n = page_no(f)
+        lines = [l for l in open(f, encoding="utf-8", errors="replace").read().splitlines() if l.strip()][:10]
+        head = "\n".join(lines)
+        if starts and WB_APPENDIX.search(head):
+            appendix = n; break
+        if WB_NEG.search(head) or "标准教程" in "".join(lines[:3]):
+            continue
+        if WB_RESTART.search(head) or WB_LISTEN.search(head):
+            if starts and n - starts[-1] <= 2: continue
+            starts.append(n)
+    return starts, appendix
+
+def workbook_scripts(files, appendix, first_lesson, nlessons):
+    """Зарим дасгалын номын PDF-ийн төгсгөлд «听力文本与参考答案» товхимол наалттай
+    (HSK5B: PDF х.161–220). Хичээл бүрийн хэсэг «听力文本» гэсэн дан мөрөөр эхэлдэг
+    (гарчиг OCR-д заримдаа алга) → дарааллаар нь хичээлд ононо. Тоо таарахгүй бол
+    хоосон буцаана (буруу дугаар тавихаас зайлсхийнэ). → {pdf_page: гарчиг}."""
+    if not appendix: return {}
+    lessons, model = [], []
+    for f in files:
+        n = page_no(f)
+        if n <= appendix: continue
+        lines = [l.strip() for l in open(f, encoding="utf-8", errors="replace").read().splitlines() if l.strip()][:4]
+        if "听力文本" not in lines: continue
+        (model if any("模拟试" in l for l in lines) else lessons).append(n)
+    if len(lessons) != nlessons: return {}
+    out = {n: f"Хавсралт · 第{first_lesson + i}课 — дасгалын номын сонсголын бичвэр, хариулт (PDF х. {n})"
+           for i, n in enumerate(lessons)}
+    for n in model:
+        out[n] = f"Хавсралт · HSK загвар тестийн сонсголын бичвэр, хариулт (PDF х. {n})"
+    return out
+
+def answers_lessons(files):
+    """Хариултын ном: «Lesson N — гарчиг» мөр → {pdf_page: N}. Нэг хуудсанд 2+ өөр
+    Lesson байвал гарчгийн (Contents) хуудас гэж алгасна. Хичээл хуудасны дундаас
+    эхэлж болно (HSK1 L2 = p.8 доод хэсэг) — гарчгийг тухайн хуудасны өмнө тавина."""
+    out = {}
+    for f in files:
+        n = page_no(f)
+        ks = {int(m.group(1)) for m in re.finditer(r"^\s*Lesson\s*(\d{1,2})\b", open(f, encoding="utf-8", errors="replace").read(), re.M)}
+        if len(ks) != 1: continue
+        k = ks.pop()
+        if k not in out.values(): out[n] = k
+    return out
+
 def lesson_starts(book, files):
     """Хичээлийн эхлэх PDF хуудсуудыг олно (дараалсан жагсаалт)."""
     if book in OVERRIDES and OVERRIDES[book].get("starts"):
         return [int(x) for x in OVERRIDES[book]["starts"]]
+    if "Workbook" in book:
+        st, _ = workbook_lesson_starts(files)
+        extra = OVERRIDES.get(book, {}).get("extra_starts", [])
+        excl = set(int(x) for x in OVERRIDES.get(book, {}).get("exclude_starts", []))
+        return sorted((set(st) | set(int(x) for x in extra)) - excl)
     if "Teacher" in book:
         st = teacher_lesson_starts(files, book)
         extra = OVERRIDES.get(book, {}).get("extra_starts", [])
@@ -168,10 +248,20 @@ def assemble(book):
     files = sorted(glob.glob(os.path.join(PAGES, book, "p*.txt")))
     if not files: return None
     offset = printed_offset(files)
-    starts = lesson_starts(book, files)
     first_lesson = int(OVERRIDES.get(book, {}).get("first_lesson", 1))
-    start_to_lesson = {n: first_lesson + i for i, n in enumerate(starts)}
+    if "answers" in book.lower():
+        # Хариултын ном — хичээлийн дугаарыг «Lesson N»-ээс шууд авна
+        start_to_lesson = answers_lessons(files)
+    else:
+        starts = lesson_starts(book, files)
+        start_to_lesson = {n: first_lesson + i for i, n in enumerate(starts)}
     appendix = teacher_appendix(files) if "Teacher" in book else {}
+    wb_appendix, scripts = None, {}
+    if "Workbook" in book:
+        wb_appendix = OVERRIDES.get(book, {}).get("appendix_start") or workbook_lesson_starts(files)[1]
+        scripts = workbook_scripts(files, wb_appendix, first_lesson, len(start_to_lesson))
+    elif "answers" in book.lower():
+        wb_appendix = next((page_no(f) for f in files if re.search(r"MODEL TEST", open(f, encoding="utf-8", errors="replace").read()[:200])), None)
     md = [f"# {book.replace('_',' ')}", "",
           f"_OCR (tesseract chi_sim+eng), {len(files)} PDF хуудас. Хэвлэсэн хуудас = PDF хуудас − {offset if offset is not None else '?'}. "
           f"Пиньиний хөгийн тэмдэг OCR-д алдаатай — ханзаас дахин гарга. Хичээлийн эхлэлийг автоматаар таньсан._", ""]
@@ -185,17 +275,26 @@ def assemble(book):
             index.append({"lesson": lesson, "start_page": n, "end_page": None,
                           "printed_page": (n - offset) if offset is not None else None})
             md.append(f"\n## 第{lesson}课  (PDF х. {n}{f', хэвлэсэн х. {n-offset}' if offset is not None else ''})\n")
+        if wb_appendix and n == wb_appendix:
+            if index: index[-1]["end_page"] = n - 1
+            md.append(f"\n## Хавсралт — HSK загвар тест, шалгалтын танилцуулга (PDF х. {n})\n")
+        if n in scripts:
+            md.append(f"\n## {scripts[n]}\n")
         if n in appendix:
             md.append(f"\n## Хавсралт · 第{appendix[n]}课 — дасгалын номын сонсголын бичвэр, хариулт (PDF х. {n})\n")
-        printed = f" · хэвлэсэн х. {n-offset}" if offset is not None else ""
+        # наалттай товхимол (scripts) өөрийн хуудасны дугаартай — номын offset хамаарахгүй
+        in_booklet = bool(scripts) and n >= min(scripts)
+        printed = f" · хэвлэсэн х. {n-offset}" if offset is not None and not in_booklet else ""
         md.append(f"<!-- p.{n:03d}{printed} -->")
         md.append(text)
         md.append("")
-    if index: index[-1]["end_page"] = int(re.search(r"p(\d+)\.txt$", files[-1]).group(1))
+    if index and index[-1]["end_page"] is None:
+        index[-1]["end_page"] = int(re.search(r"p(\d+)\.txt$", files[-1]).group(1))
     open(os.path.join(OUT, book + ".md"), "w", encoding="utf-8").write("\n".join(md))
     exp = EXPECTED.get(book)
     json.dump({"book": book, "pages": len(files), "printed_offset": offset,
-               "expected_lessons": exp, "lessons": index},
+               "expected_lessons": exp, "appendix_start": wb_appendix,
+               "scripts": {str(k): v for k, v in scripts.items()} or None, "lessons": index},
               open(os.path.join(OUT, book + ".index.json"), "w"), ensure_ascii=False, indent=1)
     return len(files), index, exp, offset
 

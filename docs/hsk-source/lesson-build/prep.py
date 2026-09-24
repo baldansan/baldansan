@@ -41,7 +41,7 @@ m = re.search(rf"## Хавсралт · 第{N}课.*?(?=## Хавсралт · �
 app_pages = []
 if m:
     open(f"{OUT}/src/teacher_appendix_L{NN}.txt", "w").write(m.group(0))
-    app_pages = sorted(set(int(x) for x in re.findall(r"<!-- p\.(\d{3})", m.group(0))))
+    app_pages = sorted(set(int(x) for x in re.findall(r"<!-- p\.(\d{3})", m.group(0))))[:4]
     # хариултын хуудас дараагийн хичээлийн гарчигт орсон байж болно — +1 хуудас нэм
     app_pages.append(app_pages[-1] + 1)
     render(TE, app_pages, "teacher")

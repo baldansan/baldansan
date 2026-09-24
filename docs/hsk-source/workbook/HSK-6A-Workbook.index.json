@@ -1,0 +1,130 @@
+{
+ "book": "HSK-6A-Workbook",
+ "pages": 181,
+ "printed_offset": 8,
+ "expected_lessons": 20,
+ "appendix_start": 179,
+ "scripts": null,
+ "lessons": [
+  {
+   "lesson": 1,
+   "start_page": 10,
+   "end_page": 17,
+   "printed_page": 2
+  },
+  {
+   "lesson": 2,
+   "start_page": 18,
+   "end_page": 25,
+   "printed_page": 10
+  },
+  {
+   "lesson": 3,
+   "start_page": 26,
+   "end_page": 33,
+   "printed_page": 18
+  },
+  {
+   "lesson": 4,
+   "start_page": 34,
+   "end_page": 43,
+   "printed_page": 26
+  },
+  {
+   "lesson": 5,
+   "start_page": 44,
+   "end_page": 51,
+   "printed_page": 36
+  },
+  {
+   "lesson": 6,
+   "start_page": 52,
+   "end_page": 59,
+   "printed_page": 44
+  },
+  {
+   "lesson": 7,
+   "start_page": 60,
+   "end_page": 67,
+   "printed_page": 52
+  },
+  {
+   "lesson": 8,
+   "start_page": 68,
+   "end_page": 77,
+   "printed_page": 60
+  },
+  {
+   "lesson": 9,
+   "start_page": 78,
+   "end_page": 85,
+   "printed_page": 70
+  },
+  {
+   "lesson": 10,
+   "start_page": 86,
+   "end_page": 93,
+   "printed_page": 78
+  },
+  {
+   "lesson": 11,
+   "start_page": 94,
+   "end_page": 101,
+   "printed_page": 86
+  },
+  {
+   "lesson": 12,
+   "start_page": 102,
+   "end_page": 111,
+   "printed_page": 94
+  },
+  {
+   "lesson": 13,
+   "start_page": 112,
+   "end_page": 119,
+   "printed_page": 104
+  },
+  {
+   "lesson": 14,
+   "start_page": 120,
+   "end_page": 127,
+   "printed_page": 112
+  },
+  {
+   "lesson": 15,
+   "start_page": 128,
+   "end_page": 135,
+   "printed_page": 120
+  },
+  {
+   "lesson": 16,
+   "start_page": 136,
+   "end_page": 145,
+   "printed_page": 128
+  },
+  {
+   "lesson": 17,
+   "start_page": 146,
+   "end_page": 153,
+   "printed_page": 138
+  },
+  {
+   "lesson": 18,
+   "start_page": 154,
+   "end_page": 161,
+   "printed_page": 146
+  },
+  {
+   "lesson": 19,
+   "start_page": 162,
+   "end_page": 169,
+   "printed_page": 154
+  },
+  {
+   "lesson": 20,
+   "start_page": 170,
+   "end_page": 178,
+   "printed_page": 162
+  }
+ ]
+}
