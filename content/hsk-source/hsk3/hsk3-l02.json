@@ -2029,6 +2029,103 @@
    }
   ]
  },
+ "hsk30": {
+  "source": "courseware",
+  "ref": {
+   "book": "hsk30_courseware",
+   "pages": [
+    5,
+    18,
+    29,
+    40
+   ]
+  },
+  "new_words": [
+   {
+    "n": 1,
+    "zh": "不行",
+    "pinyin": "bùxíng",
+    "pos": "v./adj.",
+    "en": "be not allowed/not good",
+    "text": 1
+   },
+   {
+    "n": 2,
+    "zh": "刚刚",
+    "pinyin": "gānggāng",
+    "pos": "adv.",
+    "en": "just",
+    "text": 1
+   },
+   {
+    "n": 3,
+    "zh": "难题",
+    "pinyin": "nántí",
+    "pos": "n.",
+    "en": "difficult problem",
+    "text": 1
+   },
+   {
+    "n": 4,
+    "zh": "办",
+    "pinyin": "bàn",
+    "pos": "v.",
+    "en": "handle",
+    "text": 2
+   },
+   {
+    "n": 5,
+    "zh": "急",
+    "pinyin": "jí",
+    "pos": "adj./v.",
+    "en": "anxious/worry",
+    "text": 2
+   },
+   {
+    "n": 6,
+    "zh": "员",
+    "pinyin": "yuán",
+    "pos": "suf.",
+    "en": "a person engaged in a certain field of activity",
+    "text": 3
+   },
+   {
+    "n": 7,
+    "zh": "得到",
+    "pinyin": "dédào",
+    "pos": "v.",
+    "en": "get",
+    "text": 3
+   },
+   {
+    "n": 8,
+    "zh": "楼梯",
+    "pinyin": "lóutī",
+    "pos": "n.",
+    "en": "stairs",
+    "text": 3
+   },
+   {
+    "n": 9,
+    "zh": "难看",
+    "pinyin": "nánkàn",
+    "pos": "adj.",
+    "en": "ugly",
+    "text": 4
+   },
+   {
+    "n": 10,
+    "zh": "难听",
+    "pinyin": "nántīng",
+    "pos": "adj.",
+    "en": "unpleasant to hear",
+    "text": 4
+   }
+  ],
+  "grammar": [],
+  "exercises": [],
+  "unclear": []
+ },
  "audio": {
   "textbook": [
    "hsk3-textbook-0201.mp3",
@@ -2053,7 +2150,8 @@
   "Дасгалын номын сонсгол нэг CD тэмдэгтэй (02) — аудиог hsk3-workbook-02-part1…4.mp3 болгож хэсэг тус бүрт хуваасныг section.audio-д оноосон.",
   "Дасгалын ном 听力 第三/四部分 — номд зөвхөн сонголтууд хэвлэгдсэн; item.zh-д багшийн номын хавсралтын «问：» асуултыг оруулсан (transcript_zh-д бүтнээр).",
   "Сурах бичгийн 拼音课文-ын гарчгийн пиньинь (Xià shān de lùshang / Zài dǎ diànhuà / Zài lóu ménkǒu sòng péngyou / Zài jiā) болон ярилцагчийн нэрийн пиньинь (Xiǎolì, Xiǎogāng, Zhōu tàitai, mìshū, Zhōu Míng) схемд талбаргүй тул lines.pinyin-д зөвхөн яриаг оруулсан.",
-  "Багшийн ном 语言点1-ийн схем зураг (地点名词/事物名词 сум) — текстээр товч дүрсэлсэн (teacher.steps «3 语言点（1）»)."
+  "Багшийн ном 语言点1-ийн схем зураг (地点名词/事物名词 сум) — текстээр товч дүрсэлсэн (teacher.steps «3 语言点（1）»).",
+  "HSK 3.0 нэмэлт үгс (BLCUP 课件 补充HSK3.0, слайд 5、18、29、40) hsk30-д"
  ],
  "verified_pages": [
   12,

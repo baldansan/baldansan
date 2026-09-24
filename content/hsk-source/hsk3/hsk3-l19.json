@@ -1,14 +1,1981 @@
 {
- "level": "hsk3",
- "lesson": 19,
- "book": "HSK3",
- "title_zh": "你没看出来吗",
- "title_pinyin": "Nǐ méi kàn chulai ma",
- "title_en": "Didn’t you recognise him",
- "textbook": {
-  "ref": {
-   "book": "textbook",
-   "pages": [
+  "level": "hsk3",
+  "lesson": 19,
+  "book": "HSK3",
+  "title_zh": "你没看出来吗",
+  "title_pinyin": "Nǐ méi kàn chulai ma",
+  "title_en": "Didn’t you recognise him",
+  "textbook": {
+    "ref": {
+      "book": "textbook",
+      "pages": [
+        175,
+        176,
+        177,
+        178,
+        179,
+        180,
+        181,
+        182,
+        183
+      ]
+    },
+    "warmup": [
+      {
+        "instruction_zh": "给下面的词语选择对应的位置",
+        "instruction_en": "Match the words with the positions.",
+        "items": [
+          "①眼睛 yǎnjing",
+          "②头发 tóufa",
+          "③鼻子 bízi",
+          "④耳朵 ěrduo",
+          "⑤嘴 zuǐ",
+          "⑥脸 liǎn"
+        ],
+        "pictures_desc_en": [
+          "A: at her ear (right side of the picture) — one photo of a young woman's face, eyes closed, hair pulled back, with letters A–F marking positions",
+          "B: on her lips",
+          "C: on her cheek",
+          "D: at the top of her head (hair)",
+          "E: at her eye (left side of the picture)",
+          "F: on her nose"
+        ]
+      },
+      {
+        "instruction_zh": "说说什么时候你会有下面的这些感觉",
+        "instruction_en": "Talk about under what circumstances you would have the following feelings.",
+        "items": [
+          "高兴 gāoxìng | 去公园 qù gōngyuán",
+          "生气 shēng qì |",
+          "难忘 nánwàng |",
+          "害怕 hàipà |",
+          "担心 dān xīn |",
+          "着急 zháo jí |"
+        ]
+      }
+    ],
+    "texts": [
+      {
+        "n": 1,
+        "title_zh": "在家",
+        "title_en": "At home",
+        "kind": "dialogue",
+        "audio": "hsk3-textbook-1901.mp3",
+        "lines": [
+          {
+            "speaker": "爸爸",
+            "zh": "女儿最近喜欢把头发放在耳朵后面，你知道为什么吗？",
+            "pinyin": "Nǚ’ér zuìjìn xǐhuan bǎ tóufa fàng zài ěrduo hòumiàn, nǐ zhīdào wèi shénme ma?"
+          },
+          {
+            "speaker": "妈妈",
+            "zh": "这样可以使她的脸看上去漂亮一些。",
+            "pinyin": "Zhèyàng kěyǐ shǐ tā de liǎn kàn shangqu piàoliang yìxiē."
+          },
+          {
+            "speaker": "爸爸",
+            "zh": "我最近觉得她和以前不太一样了。",
+            "pinyin": "Wǒ zuìjìn juéde tā hé yǐqián bú tài yíyàng le."
+          },
+          {
+            "speaker": "妈妈",
+            "zh": "女儿变化不小，她小时候喜欢短头发，像男孩子一样。",
+            "pinyin": "Nǚ’ér biànhuà bù xiǎo, tā xiǎo shíhou xǐhuan duǎn tóufa, xiàng nán háizi yíyàng."
+          },
+          {
+            "speaker": "爸爸",
+            "zh": "我也想起来了。她现在慢慢地开始像个女孩子了。",
+            "pinyin": "Wǒ yě xiǎng qilai le. Tā xiànzài mànmàn de kāishǐ xiàng ge nǚ háizi le."
+          }
+        ],
+        "new_words": [
+          {
+            "n": 1,
+            "zh": "耳朵",
+            "pinyin": "ěrduo",
+            "pos": "n.",
+            "en": "ear",
+            "text": 1
+          },
+          {
+            "n": 2,
+            "zh": "脸",
+            "pinyin": "liǎn",
+            "pos": "n.",
+            "en": "face",
+            "text": 1
+          },
+          {
+            "n": 3,
+            "zh": "短",
+            "pinyin": "duǎn",
+            "pos": "adj.",
+            "en": "short",
+            "text": 1
+          }
+        ]
+      },
+      {
+        "n": 2,
+        "title_zh": "在看照片",
+        "title_en": "Looking at a photo",
+        "kind": "dialogue",
+        "audio": "hsk3-textbook-1902.mp3",
+        "lines": [
+          {
+            "speaker": "小丽",
+            "zh": "上次我们参加骑马比赛的照片，我选了几张洗出来了。",
+            "pinyin": "Shàng cì wǒmen cānjiā qí mǎ bǐsài de zhàopiàn, wǒ xuǎnle jǐ zhāng xǐ chulai le."
+          },
+          {
+            "speaker": "同事",
+            "zh": "快给我看看。骑得最快的这位是谁？",
+            "pinyin": "Kuài gěi wǒ kànkan. Qí de zuì kuài de zhè wèi shì shéi?"
+          },
+          {
+            "speaker": "小丽",
+            "zh": "你没看出来吗？他是小刚啊。",
+            "pinyin": "Nǐ méi kàn chulai ma? Tā shì Xiǎogāng a."
+          },
+          {
+            "speaker": "同事",
+            "zh": "怎么看上去跟现在不太一样？",
+            "pinyin": "Zěnme kàn shangqu gēn xiànzài bú tài yíyàng?"
+          },
+          {
+            "speaker": "小丽",
+            "zh": "他上班穿西服、衬衫，比赛的时候穿的是运动服。",
+            "pinyin": "Tā shàng bān chuān xīfú, chènshān, bǐsài de shíhou chuān de shì yùndòngfú."
+          },
+          {
+            "speaker": "同事",
+            "zh": "他今天穿蓝西服，看上去像40多岁，还是穿运动服让他更年轻。",
+            "pinyin": "Tā jīntiān chuān lán xīfú, kàn shangqu xiàng sìshí duō suì, háishi chuān yùndòngfú ràng tā gèng niánqīng."
+          }
+        ],
+        "new_words": [
+          {
+            "n": 4,
+            "zh": "马",
+            "pinyin": "mǎ",
+            "pos": "n.",
+            "en": "horse",
+            "text": 2
+          },
+          {
+            "n": 5,
+            "zh": "张",
+            "pinyin": "zhāng",
+            "pos": "m.",
+            "en": "used for flat objects such as paper, photos, etc.",
+            "text": 2
+          },
+          {
+            "n": 6,
+            "zh": "位",
+            "pinyin": "wèi",
+            "pos": "m.",
+            "en": "a respectful measure word for people",
+            "text": 2
+          },
+          {
+            "n": 7,
+            "zh": "蓝",
+            "pinyin": "lán",
+            "pos": "adj.",
+            "en": "blue",
+            "text": 2
+          }
+        ]
+      },
+      {
+        "n": 3,
+        "title_zh": "在小丽家",
+        "title_en": "At Xiaoli’s home",
+        "kind": "dialogue",
+        "audio": "hsk3-textbook-1903.mp3",
+        "lines": [
+          {
+            "speaker": "朋友",
+            "zh": "我们一年没见面了吧？",
+            "pinyin": "Wǒmen yì nián méi jiàn miàn le ba?"
+          },
+          {
+            "speaker": "小丽",
+            "zh": "听说你都有女儿了？她多大了？",
+            "pinyin": "Tīngshuō nǐ dōu yǒu nǚ’ér le? Tā duō dà le?"
+          },
+          {
+            "speaker": "朋友",
+            "zh": "她去年秋天出生的，刚过完一岁生日。",
+            "pinyin": "Tā qùnián qiūtiān chūshēng de, gāng guòwán yí suì shēngrì."
+          },
+          {
+            "speaker": "小丽",
+            "zh": "她喜欢什么？我送给她。",
+            "pinyin": "Tā xǐhuan shénme? Wǒ sònggěi tā."
+          },
+          {
+            "speaker": "朋友",
+            "zh": "她就喜欢听她爸爸学鸟叫。哭的时候，只要他爸爸学小鸟叫，她马上就安静下来了。",
+            "pinyin": "Tā jiù xǐhuan tīng tā bàba xué niǎo jiào. Kū de shíhou, zhǐyào tā bàba xué xiǎo niǎo jiào, tā mǎshàng jiù ānjìng xialai le."
+          },
+          {
+            "speaker": "小丽",
+            "zh": "啊？这个礼物我没办法送。",
+            "pinyin": "Á? Zhège lǐwù wǒ méi bànfǎ sòng."
+          }
+        ],
+        "new_words": [
+          {
+            "n": 8,
+            "zh": "秋(天)",
+            "pinyin": "qiū (tiān)",
+            "pos": "n.",
+            "en": "autumn, fall",
+            "text": 3
+          },
+          {
+            "n": 9,
+            "zh": "过",
+            "pinyin": "guò",
+            "pos": "v.",
+            "en": "to spend, to pass",
+            "text": 3
+          },
+          {
+            "n": 10,
+            "zh": "鸟",
+            "pinyin": "niǎo",
+            "pos": "n.",
+            "en": "bird",
+            "text": 3
+          },
+          {
+            "n": 11,
+            "zh": "哭",
+            "pinyin": "kū",
+            "pos": "v.",
+            "en": "to cry",
+            "text": 3
+          }
+        ]
+      },
+      {
+        "n": 4,
+        "title_zh": "",
+        "kind": "narrative",
+        "audio": "hsk3-textbook-1904.mp3",
+        "lines": [
+          {
+            "zh": "这次旅游，我去了不少地方，每个地方都让我非常难忘。",
+            "pinyin": "Zhè cì lǚyóu, wǒ qùle bù shǎo dìfang, měi ge dìfang dōu ràng wǒ fēicháng nánwàng."
+          },
+          {
+            "zh": "我先去看了黄河，黄河是中国有名的大河，我坐在船上，一边看一边照相。",
+            "pinyin": "Wǒ xiān qù kànle Huáng Hé, Huáng Hé shì Zhōngguó yǒumíng de dà hé, wǒ zuò zài chuán shang, yìbiān kàn yìbiān zhào xiàng."
+          },
+          {
+            "zh": "一路上经过了很多地方，每个地方都不一样。",
+            "pinyin": "Yí lù shang jīngguòle hěn duō dìfang, měi ge dìfang dōu bù yíyàng."
+          },
+          {
+            "zh": "我想快点儿把照片发给大家，叫朋友们也高兴高兴。",
+            "pinyin": "Wǒ xiǎng kuài diǎnr bǎ zhàopiàn fāgěi dàjiā, jiào péngyoumen yě gāoxìng gāoxìng."
+          }
+        ],
+        "new_words": [
+          {
+            "n": 12,
+            "zh": "黄河",
+            "pinyin": "Huáng Hé",
+            "pos": "n.",
+            "en": "Yellow River, the second longest river in China",
+            "text": 4
+          },
+          {
+            "n": 13,
+            "zh": "船",
+            "pinyin": "chuán",
+            "pos": "n.",
+            "en": "boat, ship",
+            "text": 4
+          },
+          {
+            "n": 14,
+            "zh": "经过",
+            "pinyin": "jīngguò",
+            "pos": "v.",
+            "en": "to pass by",
+            "text": 4
+          }
+        ]
+      }
+    ],
+    "grammar": [
+      {
+        "n": 1,
+        "title_zh": "趋向补语的引申义",
+        "title_en": "Extension of the Complements of Direction",
+        "explanation_zh": "汉语中，趋向补语用在动词和形容词后，还可以表示其他的意义。\n动词加“出来”，表示从无到有，产生新事物。例如：（1）–（4）\n动词加“出来”也表示分辨识别，从隐到显的意思，例如：（5）–（8）\n一些形容词或动词加“下来”表示由动到静、由强到弱、由快到慢等变化。例如：（9）–（12）\n动词加“起来”，表示回忆有了结果。例如：（13）–（16）\n注意：“看起来”不表示“回忆有了结果”这一意义，意思是通过“看”，对某一方面进行估计、评价。同样的情况还有“看上去”，它与“看起来”意思一样。例如：（17）–（20）",
+        "explanation_en": "In Chinese, a complement of direction can be used after a verb or an adjective to mean different things.\n“出来” can be used after a verb to indicate the emergence of something new. For example: (1)–(4)\nWhen used after a verb, “出来” can also indicate the recognition of something implicit. For example: (5)–(8)\nWhen used after certain adjectives or verbs, “下来” indicates a change from movement to stillness, from being strong to being weak, or from being fast to being slow. For example: (9)–(12)\nWhen used after a verb, “起来” indicates the act of recalling has reached a result. For example: (13)–(16)\nNote: Instead of indicating recalling something, “看起来” (to seem) introduces an estimation or evaluation of a certain aspect made by looking. So is “看上去”, which means the same as “看起来”. For example: (17)–(20)",
+        "examples": [
+          {
+            "n": 1,
+            "zh": "这个字你能写出来吗？"
+          },
+          {
+            "n": 2,
+            "zh": "朋友想出来一个学汉语的好办法。"
+          },
+          {
+            "n": 3,
+            "zh": "你画得真快，一会儿就画出来了。"
+          },
+          {
+            "n": 4,
+            "zh": "照片我选了几张洗出来了。"
+          },
+          {
+            "n": 5,
+            "zh": "你听出来了吗？这是谁的声音？"
+          },
+          {
+            "n": 6,
+            "zh": "我看出来了，这是二年级的那个女孩子。"
+          },
+          {
+            "n": 7,
+            "zh": "我喝不出来这两杯咖啡有什么不一样。"
+          },
+          {
+            "n": 8,
+            "zh": "你没看出来吗？他是小刚啊。"
+          },
+          {
+            "n": 9,
+            "zh": "前边的车越开越慢，停下来了。"
+          },
+          {
+            "n": 10,
+            "zh": "天黑下来了，孩子们要回家了。"
+          },
+          {
+            "n": 11,
+            "zh": "我真希望时间能慢下来，不要过得那么快。"
+          },
+          {
+            "n": 12,
+            "zh": "只要他爸爸学小鸟叫，她马上就安静下来了。"
+          },
+          {
+            "n": 13,
+            "zh": "你记起来我是谁了吗？"
+          },
+          {
+            "n": 14,
+            "zh": "你能想起来那是什么时候的事吗？"
+          },
+          {
+            "n": 15,
+            "zh": "对不起，我想不起来你的名字了。"
+          },
+          {
+            "n": 16,
+            "zh": "我想起来了，她小时候像个男孩子。"
+          },
+          {
+            "n": 17,
+            "zh": "把头发放在耳朵后边，可以使脸看上去漂亮一些。"
+          },
+          {
+            "n": 18,
+            "zh": "他今天穿蓝西服，看上去像40多岁。"
+          },
+          {
+            "n": 19,
+            "zh": "这是你做的饭吗？看起来很好吃。"
+          },
+          {
+            "n": 20,
+            "zh": "他今天一句话也没说，看起来有点儿不高兴。"
+          }
+        ],
+        "practice_instruction_zh": "练一练　完成句子 Complete the sentences.",
+        "practice": [
+          {
+            "n": 1,
+            "zh": "雨下了三个小时，现在终于小了________。"
+          },
+          {
+            "n": 2,
+            "zh": "你能看________谁是哥哥，谁是弟弟吗？"
+          },
+          {
+            "n": 3,
+            "zh": "穿了这条裙子，你看________只有18岁。"
+          }
+        ]
+      },
+      {
+        "n": 2,
+        "title_zh": "“使”“叫”“让”",
+        "title_en": "Comparison of “使”, “叫” and “让”",
+        "explanation_zh": "汉语中用“使”“叫”“让”后搭配兼语表示致使的意思。三个词基本意思相同，“使”常用于书面语，“叫”常用于口语。例如：",
+        "explanation_en": "The Chinese words “使”, “叫” and “让” can all be followed by a pivotal element to mean “to cause”. The three of them basically mean the same thing, with “使” usually used in written Chinese, while “叫” usually used in spoken Chinese. For example:",
+        "examples": [
+          {
+            "n": 1,
+            "zh": "读书使我快乐。"
+          },
+          {
+            "n": 2,
+            "zh": "考试让我很紧张。"
+          },
+          {
+            "n": 3,
+            "zh": "穿运动服让他更年轻。"
+          },
+          {
+            "n": 4,
+            "zh": "我想快点儿把照片发给大家，叫朋友们也高兴高兴。"
+          }
+        ],
+        "practice_instruction_zh": "练一练　完成句子 Complete the sentences.",
+        "practice": [
+          {
+            "n": 1,
+            "zh": "他学习不努力，这让妈妈________。"
+          },
+          {
+            "n": 2,
+            "zh": "这双皮鞋有点儿小，让他________。"
+          },
+          {
+            "n": 3,
+            "zh": "她又聪明又热情，叫人________。"
+          }
+        ]
+      }
+    ],
+    "exercises": [
+      {
+        "n": 1,
+        "type_zh": "朗读",
+        "instruction_zh": "朗读下列短语和句子",
+        "instruction_en": "Read the following phrases and sentences aloud.",
+        "audio": "hsk3-textbook-1905.mp3",
+        "items": [
+          {
+            "n": 1,
+            "zh": "短：很短／短头发／短一点儿／她小时候喜欢短头发。"
+          },
+          {
+            "n": 2,
+            "zh": "蓝：蓝色／蓝衬衫／天很蓝／他今天穿蓝西服，看上去像40多岁。"
+          },
+          {
+            "n": 3,
+            "zh": "过：过生日／过节／过周末／她刚过完一岁生日。"
+          },
+          {
+            "n": 4,
+            "zh": "船：一条船／坐船／船上／我坐在船上一边看（黄河），一边照相。"
+          },
+          {
+            "n": 5,
+            "zh": "经过：经过超市／经过图书馆／经过一条河／一路上经过了很多地方。"
+          }
+        ]
+      },
+      {
+        "n": 2,
+        "type_zh": "选词填空",
+        "instruction_zh": "选择恰当的词语填空",
+        "instruction_en": "Choose the proper words to fill in the blanks.",
+        "word_bank": [
+          [
+            "秋天",
+            "过",
+            "鸟",
+            "船",
+            "张"
+          ],
+          [
+            "位",
+            "经过",
+            "马",
+            "哭",
+            "耳朵"
+          ]
+        ],
+        "items": [
+          {
+            "n": 1,
+            "zh": "帮我把这几________照片洗出来吧。"
+          },
+          {
+            "n": 2,
+            "zh": "你还记得18岁生日是在哪儿________的吗？"
+          },
+          {
+            "n": 3,
+            "zh": "________是北京最好的季节。"
+          },
+          {
+            "n": 4,
+            "zh": "她真爱说话，像只小________一样。"
+          },
+          {
+            "n": 5,
+            "zh": "我希望能坐________去旅行一次。"
+          },
+          {
+            "n": 6,
+            "zh": "A：你怎么又________了？ B：我想家了。"
+          },
+          {
+            "n": 7,
+            "zh": "A：你一会儿________超市吗？帮我买瓶水吧。 B：行，没问题。"
+          },
+          {
+            "n": 8,
+            "zh": "A：你怎么了？ B：我________里边有点儿疼。"
+          },
+          {
+            "n": 9,
+            "zh": "A：您好，欢迎，请问您几________？ B：您好，我们一共是五个人。"
+          },
+          {
+            "n": 10,
+            "zh": "A：你会骑________吗？ B：不会，我从来没骑过。"
+          }
+        ]
+      },
+      {
+        "n": 3,
+        "type_zh": "描述图片",
+        "instruction_zh": "用本课新学的语言点和词语描述图片",
+        "instruction_en": "Describe the pictures using the newly-learned language points and words.",
+        "items": [
+          {
+            "n": 1,
+            "zh": "A：你________不太舒服。 B：昨天晚上没休息好。 A：怎么了？ A：复习考试真让我________！",
+            "picture_desc_en": "A boy in a light-blue sweater holding his head in both hands and frowning over an open book."
+          },
+          {
+            "n": 2,
+            "zh": "A：天黑________了。 B：你快点儿回家吧。 A：你能送我回去吗？ A：没问题。是不是黑天让你________？",
+            "picture_desc_en": "A house with lit windows in the evening, with a lit path leading up to it."
+          },
+          {
+            "n": 3,
+            "zh": "A：阿姨，我是大卫啊！您________了吗？ B：几年没见了，我真看不出来了。 A：您跟以前一样年轻！ A：是吗？这话真让我________。",
+            "picture_desc_en": "A smiling young man in a pink shirt with his hand on the shoulder of a smiling middle-aged woman in a dark top, who holds a red gift box."
+          },
+          {
+            "n": 4,
+            "zh": "A：外边雨那么大，你怎么才回来？真让我________。 B：别担心，雨已经小________了。 A：忙了一天了，想吃点儿什么？ A：今天下雨，有点儿冷，吃碗热面条吧。",
+            "picture_desc_en": "A wet black umbrella leaning against a wooden door."
+          }
+        ]
+      },
+      {
+        "n": 4,
+        "type_zh": "回答问题",
+        "instruction_zh": "根据课文回答问题",
+        "instruction_en": "Answer the questions according to the texts.",
+        "items": [
+          {
+            "n": 1,
+            "zh": "女儿最近有什么变化？"
+          },
+          {
+            "n": 2,
+            "zh": "同事为什么没看出来照片里的小刚？"
+          },
+          {
+            "n": 3,
+            "zh": "小刚上班穿什么？看上去怎么样？"
+          },
+          {
+            "n": 4,
+            "zh": "小丽为什么说她不能送朋友女儿喜欢的礼物？"
+          },
+          {
+            "n": 5,
+            "zh": "“我”觉得这次旅行怎么样？"
+          },
+          {
+            "n": 6,
+            "zh": "“我”想给大家看什么？为什么？"
+          }
+        ]
+      }
+    ],
+    "characters": {
+      "knowledge_title_zh": "旧字新词",
+      "knowledge_zh": "读读下面的词语，想想组成的新词是什么意思。",
+      "knowledge_en": "Read the following words and guess the meanings of the newly-formed ones.",
+      "word_game": [
+        {
+          "parts": [
+            "以前",
+            "年"
+          ],
+          "result": "前年"
+        },
+        {
+          "parts": [
+            "走路",
+            "经过"
+          ],
+          "result": "路过"
+        },
+        {
+          "parts": [
+            "运动",
+            "衣服"
+          ],
+          "result": "运动服"
+        }
+      ],
+      "confusable_pairs": [
+        [
+          "蓝",
+          "篮"
+        ],
+        [
+          "鸟",
+          "鸡"
+        ],
+        [
+          "哭",
+          "笑"
+        ],
+        [
+          "自",
+          "耳"
+        ],
+        [
+          "短",
+          "知"
+        ]
+      ]
+    },
+    "application": [
+      {
+        "title_zh": "双人活动",
+        "instruction_zh": "两个人一组，把动词与趋向补语连起来，然后用“动词＋趋向补语”的结构说句子。",
+        "instruction_en": "Work in pairs. Match the verbs with the complements of direction, and practise saying sentences using them.",
+        "example_zh": [
+          "左列：看、听、想、黑、吃、瘦",
+          "右列：起来、出来、下来、上去"
+        ]
+      },
+      {
+        "title_zh": "小组活动",
+        "instruction_zh": "3～4人一组，一个人跟大家说说最近自己经历过的一件事，这件事对自己有什么影响，其他人记录。请用“使、叫、让”。",
+        "instruction_en": "Work in groups of 3-4. One tells a recent experience and its influence on himself/herself, and the others take notes. Please use “使”, “叫” and “让”.",
+        "example_zh": [
+          "例如：最近我一直努力学习，考试考得很好，妈妈送给我一个照相机，让我很高兴，我以后会更努力的。",
+          "表格：| | 谁 | 事情 | 影响 |",
+          "| 1 | 小红 | 考得好，妈妈送了礼物 | 让她很高兴，她会更努力的。 |",
+          "| 2 | | | |",
+          "| 3 | | | |",
+          "| 4 | | | |"
+        ]
+      }
+    ],
+    "saying": {
+      "zh": "百闻不如一见",
+      "pinyin": "Bǎi wén bù rú yí jiàn",
+      "en": "To see something once is better than to hear about it a hundred times",
+      "explanation_zh": "“百闻不如一见”，这里“闻”是“听说、听见”的意思。这句话的意思是听见一百次不如亲眼看到一次。这句话告诉我们亲眼看到的总是比听别人说的更可靠。",
+      "explanation_en": "In the saying “百闻不如一见”, “闻” means to “to hear (about)”. The saying means it’s better to see something once than to hear about it a hundred times. It tells us that what we see with our own eyes is more reliable than what we hear other people say."
+    }
+  },
+  "teacher": {
+    "ref": {
+      "book": "teacher",
+      "pages": [
+        130,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136
+      ]
+    },
+    "objectives_zh": [
+      "重点词语：学生能够熟练掌握：“张、位、过、哭、经过”的词义和用法",
+      "语言点：学生能够了解并掌握：（1）趋向补语表示引申意义（2）“使”“叫”“让”表示致使的意思",
+      "汉字：学生能够：根据已学生词猜测出3个旧字新词“前年、路过、运动服”的意思",
+      "功能：学生能够：（1）用趋向补语的引申义描述出现、辨别、状态变化等内容（2）用“使”“叫”“让”表示致使"
+    ],
+    "steps": [
+      {
+        "title_zh": "复习旧课",
+        "body_zh": "1 教师展示第18课的热身图片，请学生根据图片说出生词。\n2 教师根据第18课的内容进行提问。\n（1）你有买房的打算吗？打算在哪儿买房？说说为什么。\n（2）有时间的时候，你特别想做什么？\n（3）只要你有钱，你就做什么？\n（4）中国文化跟你们国家的文化有哪些不一样的地方？\n（5）你喜欢看什么电影？你的朋友呢？"
+      },
+      {
+        "title_zh": "学习新课 1 热身",
+        "body_zh": "热身1：教师可依次朗读热身部分的词语，要求学生集体或单个说出图片对应的编号，教师评判正误；最后全体学生齐读热身环节所有词语，要求语音标准，声调准确。\n答案：①E　②D　③F　④A　⑤B　⑥C\n热身2：可留至语言点（2）“使”“叫”“让”导入时使用。"
+      },
+      {
+        "title_zh": "2 生词",
+        "body_zh": "（1）生词快速认读及正音\n耳朵、脸、短、马、张、位、蓝、秋（天）、过、鸟、哭、黄河、船、经过\n· 教师先带领学生快速认读一遍生词；\n· 取消拼音，带领学生再次认读；\n· 请单个学生独自认读2-3个生词；\n· 最后全班一起快速认读所有的生词。\n（2）生词讲解方式\n· 直观法（如图片、照片、实物等）展示：耳朵、脸、马、鸟、黄河、船\n· 对比法展示：长—短、春天—夏天—秋天—冬天、红—白—黄—绿—黑—蓝\n（3）重点生词扩展及常用搭配\n张—一张纸—两张电影票—我要买三张20号去北京的机票。\n位—一位老师—两位客人—您好，您几位？—这位是我先生。\n过—过生日—过春节—你想和谁一起过生日？\n　—过得很高兴—今年的生日，我过得很高兴。\n哭—哭了—别哭—哭了很长时间—什么时候你很想哭？\n经过—经过门口—从这儿经过—从北京到上海一路上会经过什么地方？\n练习册相关练习：第128页／一／第一部分；第131页／二／第二部分"
+      },
+      {
+        "title_zh": "3 语言点（1）趋向补语的引申义",
+        "body_zh": "① 语言点解析\n汉语中，趋向补语除了表示动作的方向以外，还可以表示引申义。本课涉及到的有：“出来”表示从无到有、产生新事物，或表示分辨识别、从隐到显的意思；“下来”表示由动到静、由强到弱、由快到慢等变化；“起来”表示回忆有了结果。\n［表：动词＋出来／动词／形容词＋下来／动词＋起来］\n② 语言点导入\n教师就地取材，在黑板上画图，一边画一边引导学生说出目标句。\n教师：我想画一个苹果，你们看，现在我画出来了吗？\n学生：老师画出来了。\n教师利用情景，请一名学生到教室前边，背对着大家，然后让另一名学生说一句话，教师问前边的学生。\n教师：你知道是谁的声音吗？\n学生：知道，是XX的声音。／不知道。\n教师：好，他听出来了，是XX的声音。／他没听出来。\n教师动作演示，在教室中快走。\n教师：老师在做什么？\n学生：老师在走路，走得很快。\n教师走路速度渐慢。\n教师：老师还在快走吗？\n学生：不，老师慢下来了。\n教师假装想不起来一位学生的名字。\n教师：你叫什么名字，我忘了。\n学生：我叫XX。\n教师：老师刚才怎么了？\n学生：老师刚才没想起来他的名字。\n③ 语言点操练\n教师给出词组，请学生设计情景说句子：写出来、想出来、做出来、洗出来。\n教师围绕感官，给出学生词组，请学生说出自己的辨别能力：听出来、看出来、吃出来、喝出来。\n例如：我能喝出来美国咖啡和中国咖啡。\n教师给出形容词，请学生用“形容词＋下来”说句子：安静、黑、慢。\n教师：你能想起来昨天的课文吗？你能记起来第一个汉语老师的名字吗？\n教师就地取材，利用学生的情况，请学生说句子，例如：\n他今天看起来很累。\n这杯咖啡看起来很好喝。\n这本书看起来很贵。\n④ 语言点扩展练习\n教师请学生选词填空。\n看出来、看起来、安静下来、想起来、想出来\n（1）她一天没说话，她________不太高兴。\n（2）过了一个小时，我还是没________这个汉字怎么写。\n（3）电影开始了，大家都________了。\n（4）这是谁写的字，你能________吗？\n（5）你去问小刚吧，他一定能________一个好办法。\n注意：“看起来”不表示回忆有了结果这一意思，意思是通过“看”，对某一方面进行估计、评价。同样的情况还有“看上去”，它与“看起来”意思一样。"
+      },
+      {
+        "title_zh": "3 语言点（2）“使”“叫”“让”",
+        "body_zh": "① 语言点解析\n汉语中用“使”“叫”“让”后搭配兼语表示致使的意思。\n② 语言点导入\n教师可利用本课热身2的表格导入语言点。\n教师带领学生认读表格中的形容词。\n教师示范：\n教师：什么时候你会很高兴？\n学生：去公园的时候我会很高兴。\n教师引导学生说出目标句：去公园让我很高兴。\n③ 语言点操练\n教师请学生与同桌合作，共同完成表格。\n教师请学生用“使”“叫”“让”互相询问。\n目标句：什么会让你很生气？\n朋友借钱不还让我很生气。\n在国外生活让我很难忘。\n晚上一个人走路让我很害怕。\n同屋很晚还没回来让我很担心。\n明天要考试了，我还没复习，让我很着急。\n④ 语言点扩展练习\n教师提问，让学生根据实际情况回答：\n你做什么会让妈妈很生气？\n夏天吃什么、喝什么会让你很舒服？\n什么时候你会很头疼？\n注意：“使”常用于书面语，“叫”常用于口语。"
+      },
+      {
+        "title_zh": "4 课文 课文1",
+        "body_zh": "（1）让学生听两遍录音并回答下列问题：\n女儿最近有什么变化？——她最近喜欢把头发放在耳朵后面。\n女儿为什么要这样做？——因为这样可以使她的脸看上去漂亮一些。\n女儿小时候是什么样的？——她小时候喜欢短头发，像男孩子一样。\n（2）教师领读课文两遍，让学生分角色朗读课文，注意说话人的语气。\n（3）模仿练习\n学生两人一组，根据提示词模仿课文内容进行对话练习。\nA：女儿最近喜欢……，你知道……？\nB：这样可以……。\nA：我最近觉得……。\nB：女儿变化……，她小时候……，像……。\nA：我也想起来。她……。"
+      },
+      {
+        "title_zh": "4 课文 课文2",
+        "body_zh": "（1）让学生听两遍录音并回答下列问题：\n这是什么时候的照片？——这是他们参加骑马比赛的照片。\n小刚比赛的时候穿的是什么？——他穿的是运动服。\n小刚上班的时候穿什么？——他穿西服、衬衫。\n（2）教师领读课文两遍，让学生分角色朗读课文。\n（3）模仿练习\n学生两人一组，根据提示词模仿课文内容进行对话练习。\nA：上次……的照片，我……了。\nB：快……，……的这位是谁？\nA：你没……吗？他／她是……啊。\nB：怎么……不太一样？\nA：他／她……，……的时候……。\nB：他／她……，看上去……，还是……。"
+      },
+      {
+        "title_zh": "4 课文 课文3",
+        "body_zh": "（1）让学生听两遍录音并回答下列问题：\n她们（小丽和朋友）多长时间没见面了？——她们一年没见面了。\n朋友的女儿什么时候出生的，现在多大了？——她的女儿去年秋天出生的，刚过完一岁生日。\n哭的时候，怎么能让她女儿安静下来？——只要她爸爸学小鸟叫，她马上就安静下来了。\n（2）教师领读课文两遍，让学生分角色朗读课文，注意说话人的语气。\n（3）教师给提示词，带领学生复述课文。\n提示词：见面、女儿、出生、刚、送、学、小鸟、安静、没办法"
+      },
+      {
+        "title_zh": "4 课文 课文4",
+        "body_zh": "（1）快速阅读，并回答：“我”为什么想把照片发给大家？\n（2）教师领读课文两遍，并回答下列问题：\n“我”觉得这次旅行怎么样？——这次旅行，“我”去了很多地方，让“我”很难忘。\n“我”去黄河旅行的时候做什么了？——“我”坐在船上，一边看一边照相。\n（3）教师给提示词，带领学生复述课文。\n提示词：旅游、难忘、一边……一边……、经过、照片、让\n（4）教师请学生根据课文，说说自己的旅行经历。\n练习册相关练习：第134页／四"
+      },
+      {
+        "title_zh": "5 汉字",
+        "body_zh": "旧字新词：\n① 教师领读以前学过的词语和新词，并让学生猜猜新词的意思。\n· 领读：以前、年、前年\n问学生：“前年”是什么意思？——去年的前一年，两年以前。\n扩展提问：我们学习过哪些“年”？——前年、去年、今年、明年、后年（根据实际情况选用）\n· 领读：走路、经过、路过\n问学生：“路过”是什么意思？——走路的时候经过。\n注意“路过”是一个动词。\n· 领读：运动、衣服、运动服\n问学生：“运动服”是什么意思？——运动的时候穿的衣服。\n② 教师领读新词扩展，通过情景，理解新词的意思和用法：\n前年：前年的时候／我前年去过上海／你前年暑假去哪儿旅行了？\n路过：路过朋友家／路过的地方／路过超市的时候，你帮我买一瓶水。\n运动服：买运动服／穿运动服／你有运动服吗？\n汉字辨认练习：\n辨认下列汉字并组词。\n蓝：________、________　篮：________、________\n鸟：________、________　鸡：________、________\n哭：________、________　笑：________、________\n自：________、________　耳：________、________\n短：________、________　知：________、________\n练习册相关练习：第134页／三／第三部分"
+      },
+      {
+        "title_zh": "6 补充课堂活动——谁是最能分辨的人",
+        "body_zh": "教师将全班分成两组，每组根据词卡内容，讨论本组成员具有的辨别能力，例如“我能听出来南方人和北方人说话有什么不一样”。两组轮流说句子，看看哪组说的句子更多更好。\n参考词语：听出来、吃出来、喝出来、看出来、分出来……"
+      },
+      {
+        "title_zh": "7 俗语",
+        "body_zh": "教师引导学生理解俗语的含义，注意这里的“闻”是听到的意思，而不是用鼻子闻，这句俗语鼓励我们多去实践。"
+      },
+      {
+        "title_zh": "8 本课小结",
+        "body_zh": "· 语法点：用趋向补语表示引申义\n　　　　　用“使”“叫”“让”表示致使\n· 词　汇：旧字新词：前年、路过、运动服"
+      }
+    ],
+    "notes_zh": [
+      "注意：“看起来”不表示回忆有了结果这一意思，意思是通过“看”，对某一方面进行估计、评价。同样的情况还有“看上去”，它与“看起来”意思一样。（语言点1）",
+      "注意：“使”常用于书面语，“叫”常用于口语。（语言点2）",
+      "注意“路过”是一个动词。（汉字）",
+      "注意这里的“闻”是听到的意思，而不是用鼻子闻，这句俗语鼓励我们多去实践。（俗语）"
+    ],
+    "warmup_answers_zh": [
+      "热身1 答案：①E　②D　③F　④A　⑤B　⑥C",
+      "热身2：可留至语言点（2）“使”“叫”“让”导入时使用。"
+    ],
+    "text_questions": [
+      {
+        "text": 1,
+        "q_zh": "女儿最近有什么变化？",
+        "a_zh": "她最近喜欢把头发放在耳朵后面。"
+      },
+      {
+        "text": 1,
+        "q_zh": "女儿为什么要这样做？",
+        "a_zh": "因为这样可以使她的脸看上去漂亮一些。"
+      },
+      {
+        "text": 1,
+        "q_zh": "女儿小时候是什么样的？",
+        "a_zh": "她小时候喜欢短头发，像男孩子一样。"
+      },
+      {
+        "text": 2,
+        "q_zh": "这是什么时候的照片？",
+        "a_zh": "这是他们参加骑马比赛的照片。"
+      },
+      {
+        "text": 2,
+        "q_zh": "小刚比赛的时候穿的是什么？",
+        "a_zh": "他穿的是运动服。"
+      },
+      {
+        "text": 2,
+        "q_zh": "小刚上班的时候穿什么？",
+        "a_zh": "他穿西服、衬衫。"
+      },
+      {
+        "text": 3,
+        "q_zh": "她们（小丽和朋友）多长时间没见面了？",
+        "a_zh": "她们一年没见面了。"
+      },
+      {
+        "text": 3,
+        "q_zh": "朋友的女儿什么时候出生的，现在多大了？",
+        "a_zh": "她的女儿去年秋天出生的，刚过完一岁生日。"
+      },
+      {
+        "text": 3,
+        "q_zh": "哭的时候，怎么能让她女儿安静下来？",
+        "a_zh": "只要她爸爸学小鸟叫，她马上就安静下来了。"
+      },
+      {
+        "text": 4,
+        "q_zh": "“我”为什么想把照片发给大家？"
+      },
+      {
+        "text": 4,
+        "q_zh": "“我”觉得这次旅行怎么样？",
+        "a_zh": "这次旅行，“我”去了很多地方，让“我”很难忘。"
+      },
+      {
+        "text": 4,
+        "q_zh": "“我”去黄河旅行的时候做什么了？",
+        "a_zh": "“我”坐在船上，一边看一边照相。"
+      }
+    ],
+    "summary_zh": "语法点：用趋向补语表示引申义；用“使”“叫”“让”表示致使。词汇：旧字新词：前年、路过、运动服。"
+  },
+  "workbook": {
+    "ref": {
+      "book": "workbook",
+      "pages": [
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138
+      ]
+    },
+    "answers_ref": {
+      "book": "teacher",
+      "pages": [
+        197,
+        198,
+        199
+      ]
+    },
+    "sections": [
+      {
+        "n": "一、听力 第一部分",
+        "type_zh": "听力 第一部分",
+        "instruction_zh": "第1–5题：听对话，选择与对话内容一致的图片",
+        "instruction_en": "Questions 1-5: Choose the right picture for each dialogue you hear.",
+        "audio": "hsk3-workbook-19-part1.mp3",
+        "items": [
+          {
+            "n": "例",
+            "zh": "男：喂，请问张经理在吗？ 女：他正在开会，您半个小时以后再打，好吗？",
+            "transcript_zh": "男：喂，请问张经理在吗？ 女：他正在开会，您半个小时以后再打，好吗？",
+            "options": {
+              "A": "[picture] a doctor in a white coat examining a young woman's ear with an instrument",
+              "B": "[picture] a bird perched on a snowy fir branch",
+              "C": "[picture] a boy in a striped shirt washing his face at an outdoor washstand",
+              "D": "[picture] a smiling woman in a uniform talking on a telephone",
+              "E": "[picture] a rider in a helmet on a horse in a riding arena",
+              "F": "[picture] a woman in a sports jacket jogging outdoors"
+            },
+            "answer": "D",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                132
+              ]
+            }
+          },
+          {
+            "n": 1,
+            "zh": "",
+            "options": {
+              "A": "[picture] a doctor in a white coat examining a young woman's ear with an instrument",
+              "B": "[picture] a bird perched on a snowy fir branch",
+              "C": "[picture] a boy in a striped shirt washing his face at an outdoor washstand",
+              "D": "[picture] a smiling woman in a uniform talking on a telephone",
+              "E": "[picture] a rider in a helmet on a horse in a riding arena",
+              "F": "[picture] a woman in a sports jacket jogging outdoors"
+            },
+            "transcript_zh": "女：你看，树上那只鸟，红红的，嘴小小的，是什么鸟？ 男：不知道，我也是第一次见。",
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                199
+              ]
+            }
+          },
+          {
+            "n": 2,
+            "zh": "",
+            "options": {
+              "A": "[picture] a doctor in a white coat examining a young woman's ear with an instrument",
+              "B": "[picture] a bird perched on a snowy fir branch",
+              "C": "[picture] a boy in a striped shirt washing his face at an outdoor washstand",
+              "D": "[picture] a smiling woman in a uniform talking on a telephone",
+              "E": "[picture] a rider in a helmet on a horse in a riding arena",
+              "F": "[picture] a woman in a sports jacket jogging outdoors"
+            },
+            "transcript_zh": "男：别害怕，不要动，让我看一下你的耳朵。 女：医生，怎么样？没事吧？我最近总是听不清别人说话。",
+            "answer": "A",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                199
+              ]
+            }
+          },
+          {
+            "n": 3,
+            "zh": "",
+            "options": {
+              "A": "[picture] a doctor in a white coat examining a young woman's ear with an instrument",
+              "B": "[picture] a bird perched on a snowy fir branch",
+              "C": "[picture] a boy in a striped shirt washing his face at an outdoor washstand",
+              "D": "[picture] a smiling woman in a uniform talking on a telephone",
+              "E": "[picture] a rider in a helmet on a horse in a riding arena",
+              "F": "[picture] a woman in a sports jacket jogging outdoors"
+            },
+            "transcript_zh": "女：都几点了，儿子的房间里一点儿声音都没有，他还在睡觉吗？ 男：没有，他已经起床了，现在在洗脸呢。",
+            "answer": "C",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                199
+              ]
+            }
+          },
+          {
+            "n": 4,
+            "zh": "",
+            "options": {
+              "A": "[picture] a doctor in a white coat examining a young woman's ear with an instrument",
+              "B": "[picture] a bird perched on a snowy fir branch",
+              "C": "[picture] a boy in a striped shirt washing his face at an outdoor washstand",
+              "D": "[picture] a smiling woman in a uniform talking on a telephone",
+              "E": "[picture] a rider in a helmet on a horse in a riding arena",
+              "F": "[picture] a woman in a sports jacket jogging outdoors"
+            },
+            "transcript_zh": "男：你会骑马？跟谁学的？ 女：我爷爷，他很喜欢骑马，而且骑得很好。",
+            "answer": "E",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                199
+              ]
+            }
+          },
+          {
+            "n": 5,
+            "zh": "",
+            "options": {
+              "A": "[picture] a doctor in a white coat examining a young woman's ear with an instrument",
+              "B": "[picture] a bird perched on a snowy fir branch",
+              "C": "[picture] a boy in a striped shirt washing his face at an outdoor washstand",
+              "D": "[picture] a smiling woman in a uniform talking on a telephone",
+              "E": "[picture] a rider in a helmet on a horse in a riding arena",
+              "F": "[picture] a woman in a sports jacket jogging outdoors"
+            },
+            "transcript_zh": "男：你穿的这件红色运动服真好看。 女：谢谢，我觉得穿上它，让我年轻了不少。",
+            "answer": "F",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                199
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "一、听力 第二部分",
+        "type_zh": "听力 第二部分",
+        "instruction_zh": "第6–10题：听句子，判断对错",
+        "instruction_en": "Questions 6-10: Decide whether the statements are true or false based on the sentences you hear.",
+        "audio": "hsk3-workbook-19-part2.mp3",
+        "items": [
+          {
+            "n": "例1",
+            "zh": "他希望自己很健康。",
+            "transcript_zh": "为了让自己更健康，他每天都花一个小时去锻炼身体。",
+            "answer": "√",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                133
+              ]
+            }
+          },
+          {
+            "n": "例2",
+            "zh": "那块儿手表不是他的。",
+            "transcript_zh": "今天我想早点儿回家。看了看手表，才5点。过了一会儿再看表，还是5点，我这才发现我的手表不走了。",
+            "answer": "×",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                133
+              ]
+            }
+          },
+          {
+            "n": 6,
+            "zh": "他每天上下班都很快乐。",
+            "transcript_zh": "上下班的时候，我都会经过这条街。街道两边的树，还有树上的小鸟，会使我觉得很快乐。",
+            "answer": "√",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                199
+              ]
+            }
+          },
+          {
+            "n": 7,
+            "zh": "小雨哭是因为耳朵有问题了。",
+            "transcript_zh": "最近，我家小雨一直哭，说耳朵疼。我带他去医院，但是医生说他的耳朵没问题，不用吃药，多喝些水就可以了。",
+            "answer": "×",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                199
+              ]
+            }
+          },
+          {
+            "n": 8,
+            "zh": "他以前住在黄河附近。",
+            "transcript_zh": "这张照片让我想起了我的家，以前我家住在黄河边上，后来因为爸爸工作的关系搬到了这里。",
+            "answer": "√",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                199
+              ]
+            }
+          },
+          {
+            "n": 9,
+            "zh": "他终于找到那本书了。",
+            "transcript_zh": "我一直在找这本书，没想到今天下班路过一家书店时看见了它，我太高兴了。",
+            "answer": "√",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                199
+              ]
+            }
+          },
+          {
+            "n": 10,
+            "zh": "现在她是长头发。",
+            "transcript_zh": "你看，这张照片是前年夏天照的，那时她比较瘦，还是短头发。",
+            "answer": "√",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                199
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "一、听力 第三部分",
+        "type_zh": "听力 第三部分",
+        "instruction_zh": "第11–15题：听短对话，选择正确答案",
+        "instruction_en": "Questions 11-15: Listen to the short dialogues and choose the right answers.",
+        "audio": "hsk3-workbook-19-part3.mp3",
+        "items": [
+          {
+            "n": "例",
+            "zh": "男的想让小王做什么？",
+            "transcript_zh": "男：小王，帮我开一下门，好吗？谢谢！ 女：没问题。您去超市了？买了这么多东西。 问：男的想让小王做什么？",
+            "options": {
+              "A": "开门",
+              "B": "拿东西",
+              "C": "去超市买东西"
+            },
+            "answer": "A",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                133
+              ]
+            }
+          },
+          {
+            "n": 11,
+            "zh": "男的怎么了？",
+            "options": {
+              "A": "他不高兴了",
+              "B": "眼睛里有东西",
+              "C": "不喜欢刮风"
+            },
+            "transcript_zh": "女：你哭了？ 男：没有啊，刚才风刮得太大，眼睛里进东西了。 问：男的怎么了？",
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                199
+              ]
+            }
+          },
+          {
+            "n": 12,
+            "zh": "女的是什么意思？",
+            "options": {
+              "A": "她骑得不快",
+              "B": "她不太小心",
+              "C": "她会骑马"
+            },
+            "transcript_zh": "男：小心点儿，别骑太快了。 女：放心，我又不是第一次骑马。 问：女的是什么意思？",
+            "answer": "C",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                199
+              ]
+            }
+          },
+          {
+            "n": 13,
+            "zh": "女的打算做什么？",
+            "options": {
+              "A": "睡觉",
+              "B": "吃糖",
+              "C": "起床"
+            },
+            "transcript_zh": "男：都这么晚了，你怎么还吃糖？ 女：不吃了，我现在就去刷牙洗脸。 问：女的打算做什么？",
+            "answer": "A",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                199
+              ]
+            }
+          },
+          {
+            "n": 14,
+            "zh": "女的是怎么来这儿的？",
+            "options": {
+              "A": "坐船",
+              "B": "坐公共汽车",
+              "C": "打车"
+            },
+            "transcript_zh": "男：你终于来了，船马上就开了。 女：我没想到坐公共汽车要花这么长时间，早知道就打车来了。 问：女的是怎么来这儿的？",
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                199
+              ]
+            }
+          },
+          {
+            "n": 15,
+            "zh": "男的为什么要做面条？",
+            "options": {
+              "A": "他喜欢做面条",
+              "B": "女的过生日",
+              "C": "面条很好吃"
+            },
+            "transcript_zh": "男：过生日要吃面条，这是我第一次做面条，看看好吃不好吃。 女：一定很好吃，谢谢你！ 问：男的为什么要做面条？",
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                199
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "一、听力 第四部分",
+        "type_zh": "听力 第四部分",
+        "instruction_zh": "第16–20题：听长对话，选择正确答案",
+        "instruction_en": "Questions 16-20: Listen to the dialogues and choose the right answers.",
+        "audio": "hsk3-workbook-19-part4.mp3",
+        "items": [
+          {
+            "n": "例",
+            "zh": "男的在做什么？",
+            "transcript_zh": "女：晚饭做好了，准备吃饭了。 男：等一会儿，比赛还有三分钟就结束了。 女：快点儿吧，一起吃，菜冷了就不好吃了。 男：你先吃，我马上就看完了。 问：男的在做什么？",
+            "options": {
+              "A": "洗澡",
+              "B": "吃饭",
+              "C": "看电视"
+            },
+            "answer": "C",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                134
+              ]
+            }
+          },
+          {
+            "n": 16,
+            "zh": "关于女的，可以知道什么？",
+            "options": {
+              "A": "喜欢玩儿游戏",
+              "B": "看错了一个人",
+              "C": "去开花园的灯"
+            },
+            "transcript_zh": "女：刚才你去后面的花园了？ 男：没有，我一直在家里玩儿电脑游戏。 女：那是我看错了，那个人看上去真像你。 男：花园里没有灯，看错了也不奇怪。 问：关于女的，可以知道什么？",
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                199
+              ]
+            }
+          },
+          {
+            "n": 17,
+            "zh": "女的怎么了？",
+            "options": {
+              "A": "担心男的的身体",
+              "B": "耳朵进水了",
+              "C": "游泳很小心"
+            },
+            "transcript_zh": "男：小丽，你怎么了？ 女：刚才游泳时耳朵进水了，现在耳朵里一直不舒服。 男：过来，我帮你看一下。现在好些了吗？下次小心点儿。 女：好多了，让你担心了。 问：女的怎么了？",
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                199
+              ]
+            }
+          },
+          {
+            "n": 18,
+            "zh": "男的想试哪种颜色的衬衫？",
+            "options": {
+              "A": "白色",
+              "B": "蓝色",
+              "C": "黑色"
+            },
+            "transcript_zh": "女：先生，您看这件衬衫怎么样？ 男：还不错，除了白色，还有其他颜色的吗？ 女：还有蓝色和黑色的，拿一件您试试？ 男：好，蓝色会让我的脸看上去更年轻些。 问：男的想试哪种颜色的衬衫？",
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                199
+              ]
+            }
+          },
+          {
+            "n": 19,
+            "zh": "关于女的，可以知道什么？",
+            "options": {
+              "A": "感冒了",
+              "B": "没洗脸",
+              "C": "要买西药"
+            },
+            "transcript_zh": "男：你的脸色看上去不太好，哪儿不舒服啊？ 女：我感冒了，都快一个星期了。 男：我去药店给你买点儿药吧，买西药还是中药？ 女：好，买点儿中药吧。 问：关于女的，可以知道什么？",
+            "answer": "A",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                199
+              ]
+            }
+          },
+          {
+            "n": 20,
+            "zh": "女的要去做什么？",
+            "options": {
+              "A": "买船票",
+              "B": "买机票",
+              "C": "回国"
+            },
+            "transcript_zh": "男：回国的船票买好了吗？ 女：坐船虽然便宜，但是太慢了，要十四个小时。 男：那我们还是坐飞机吧，你去买两张机票，下周末的。 女：好的，我现在就去。 问：女的要去做什么？",
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                199
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "二、阅读 第一部分",
+        "type_zh": "阅读 第一部分",
+        "instruction_zh": "第21–25题：选择合适的问答",
+        "instruction_en": "Questions 21-25: Match the two parts of the same dialogue.",
+        "items": [
+          {
+            "n": "例",
+            "zh": "你知道怎么去那儿吗？",
+            "options": {
+              "A": "什么事让我们的女儿这么高兴？",
+              "B": "慢点儿，我这是第一次骑马。",
+              "C": "坐船或者坐火车都可以，你想怎么去？",
+              "D": "经过高中三年的认真学习，弟弟终于考上了大学。",
+              "E": "当然。我们先坐公共汽车，然后换地铁。",
+              "F": "这是你做的饭吗？看起来真好吃。"
+            },
+            "answer": "E",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                135
+              ]
+            }
+          },
+          {
+            "n": 21,
+            "zh": "坐船去吧，我还没坐过呢。",
+            "options": {
+              "A": "什么事让我们的女儿这么高兴？",
+              "B": "慢点儿，我这是第一次骑马。",
+              "C": "坐船或者坐火车都可以，你想怎么去？",
+              "D": "经过高中三年的认真学习，弟弟终于考上了大学。",
+              "E": "当然。我们先坐公共汽车，然后换地铁。",
+              "F": "这是你做的饭吗？看起来真好吃。"
+            },
+            "answer": "C",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                199
+              ]
+            }
+          },
+          {
+            "n": 22,
+            "zh": "别害怕，它很听话，你把脚放好，眼睛看着前面。",
+            "options": {
+              "A": "什么事让我们的女儿这么高兴？",
+              "B": "慢点儿，我这是第一次骑马。",
+              "C": "坐船或者坐火车都可以，你想怎么去？",
+              "D": "经过高中三年的认真学习，弟弟终于考上了大学。",
+              "E": "当然。我们先坐公共汽车，然后换地铁。",
+              "F": "这是你做的饭吗？看起来真好吃。"
+            },
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                199
+              ]
+            }
+          },
+          {
+            "n": 23,
+            "zh": "来，我们一起吃吧。",
+            "options": {
+              "A": "什么事让我们的女儿这么高兴？",
+              "B": "慢点儿，我这是第一次骑马。",
+              "C": "坐船或者坐火车都可以，你想怎么去？",
+              "D": "经过高中三年的认真学习，弟弟终于考上了大学。",
+              "E": "当然。我们先坐公共汽车，然后换地铁。",
+              "F": "这是你做的饭吗？看起来真好吃。"
+            },
+            "answer": "F",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                199
+              ]
+            }
+          },
+          {
+            "n": 24,
+            "zh": "太好了，我真为他高兴。",
+            "options": {
+              "A": "什么事让我们的女儿这么高兴？",
+              "B": "慢点儿，我这是第一次骑马。",
+              "C": "坐船或者坐火车都可以，你想怎么去？",
+              "D": "经过高中三年的认真学习，弟弟终于考上了大学。",
+              "E": "当然。我们先坐公共汽车，然后换地铁。",
+              "F": "这是你做的饭吗？看起来真好吃。"
+            },
+            "answer": "D",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                199
+              ]
+            }
+          },
+          {
+            "n": 25,
+            "zh": "她穿了条蓝色的裙子跟同学跳舞，同学说她漂亮极了。",
+            "options": {
+              "A": "什么事让我们的女儿这么高兴？",
+              "B": "慢点儿，我这是第一次骑马。",
+              "C": "坐船或者坐火车都可以，你想怎么去？",
+              "D": "经过高中三年的认真学习，弟弟终于考上了大学。",
+              "E": "当然。我们先坐公共汽车，然后换地铁。",
+              "F": "这是你做的饭吗？看起来真好吃。"
+            },
+            "answer": "A",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                199
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "二、阅读 第二部分",
+        "type_zh": "阅读 第二部分",
+        "instruction_zh": "第26–30题：选择合适的词语填空",
+        "instruction_en": "Questions 26-30: Choose the proper words to fill in the brackets.",
+        "word_bank": [
+          [
+            "A 耳朵",
+            "B 经过",
+            "C 短",
+            "D 过",
+            "E 声音",
+            "F 哭"
+          ]
+        ],
+        "items": [
+          {
+            "n": "例",
+            "zh": "她说话的（　）多好听啊！",
+            "options": {
+              "A": "耳朵",
+              "B": "经过",
+              "C": "短",
+              "D": "过",
+              "E": "声音",
+              "F": "哭"
+            },
+            "answer": "E",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                135
+              ]
+            }
+          },
+          {
+            "n": 26,
+            "zh": "你看，这是我上次坐火车（　）黄河时的照片。",
+            "options": {
+              "A": "耳朵",
+              "B": "经过",
+              "C": "短",
+              "D": "过",
+              "E": "声音",
+              "F": "哭"
+            },
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                199
+              ]
+            }
+          },
+          {
+            "n": 27,
+            "zh": "小冬又（　）了，你有什么办法吗？",
+            "options": {
+              "A": "耳朵",
+              "B": "经过",
+              "C": "短",
+              "D": "过",
+              "E": "声音",
+              "F": "哭"
+            },
+            "answer": "F",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                199
+              ]
+            }
+          },
+          {
+            "n": 28,
+            "zh": "一会你去洗脸的时候，别忘了也把（　）洗一下。",
+            "options": {
+              "A": "耳朵",
+              "B": "经过",
+              "C": "短",
+              "D": "过",
+              "E": "声音",
+              "F": "哭"
+            },
+            "answer": "A",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                199
+              ]
+            }
+          },
+          {
+            "n": 29,
+            "zh": "A：这件运动服有点儿（　），你给我拿一件长的吧。 B：行，我现在去给你拿。",
+            "options": {
+              "A": "耳朵",
+              "B": "经过",
+              "C": "短",
+              "D": "过",
+              "E": "声音",
+              "F": "哭"
+            },
+            "answer": "C",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                199
+              ]
+            }
+          },
+          {
+            "n": 30,
+            "zh": "A：这个周末你打算怎么（　）？ B：邻居请我们去他家玩儿游戏。",
+            "options": {
+              "A": "耳朵",
+              "B": "经过",
+              "C": "短",
+              "D": "过",
+              "E": "声音",
+              "F": "哭"
+            },
+            "answer": "D",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                199
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "二、阅读 第三部分",
+        "type_zh": "阅读 第三部分",
+        "instruction_zh": "第31–35题：选择正确答案",
+        "instruction_en": "Questions 31-35: Choose the right answers.",
+        "items": [
+          {
+            "n": "例",
+            "zh": "您是来参加今天会议的吗？您来早了一点儿，现在才八点半。您先进来坐吧。 ★会议最可能几点开始？",
+            "options": {
+              "A": "8点",
+              "B": "8点半",
+              "C": "9点"
+            },
+            "answer": "C",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                136
+              ]
+            }
+          },
+          {
+            "n": 31,
+            "zh": "我小时候住在中国最南边，一直没见过雪。前年我搬到北京了。虽然这儿的冬天很冷，我还不太习惯，但是我终于见到雪了，雪花儿白白的，特别漂亮。我高兴得站在雪地里照了很多照片，我想洗出来几张照片，发给我南方的朋友们看，让他们也高兴高兴。 ★我：",
+            "options": {
+              "A": "以前没见过雪",
+              "B": "喜欢很冷的天气",
+              "C": "洗了下雪的照片"
+            },
+            "answer": "A",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                199
+              ]
+            }
+          },
+          {
+            "n": 32,
+            "zh": "年轻人刚开始工作的时候，没有车也没有房，但是不用着急，虽然现在有的东西不多，但只要努力工作，这些东西早晚都会有的，人们常说的“面包会有的，牛奶也会有的”就是这个意思。 ★这段话告诉我们：",
+            "options": {
+              "A": "要努力工作",
+              "B": "不用着急买车",
+              "C": "不能有很多东西"
+            },
+            "answer": "A",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                199
+              ]
+            }
+          },
+          {
+            "n": 33,
+            "zh": "这次旅游，我们去了不少地方，每个地方都让我非常难忘。有的城市有地铁，有的城市有火车，有的城市可以骑自行车，有的城市还可以骑马。有的城市更有意思，河就是“街道”，船就是“公共汽车”，你能说出来这个城市在哪儿吗？ ★根据这段话，可以知道：",
+            "options": {
+              "A": "我想不起来城市的名字",
+              "B": "我常常坐地铁去旅行",
+              "C": "有的城市出门要坐船"
+            },
+            "answer": "C",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                199
+              ]
+            }
+          },
+          {
+            "n": 34,
+            "zh": "我想买辆十万左右的车，有了车以后，会更方便的。开车上下班，路上经过孩子的学校，可以接送他上下学。一个星期的工作学习以后，我们都很累，到了周末，可以开车出去玩儿玩儿，蓝蓝的天，白白的云，绿绿的草地，会让我们觉得舒服多了。 ★他为什么要买车？",
+            "options": {
+              "A": "车很便宜",
+              "B": "会很方便",
+              "C": "坐着舒服"
+            },
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                199
+              ]
+            }
+          },
+          {
+            "n": 35,
+            "zh": "去年秋天我回南方老家了，那里有高大的树，还有很多我叫不出来名字的花花草草，漂亮极了。每年快到冬天的时候，北方很多鸟都会飞到这儿来，在这儿过冬，等到第二年春天再飞回去。孩子们都很喜欢这些可爱的鸟，不愿意让它们离开。 ★根据这段话，可以知道：",
+            "options": {
+              "A": "我的老家在中国北方",
+              "B": "老家冬天有很多鸟",
+              "C": "孩子不想离开老家"
+            },
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                199
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "三、书写 第一部分",
+        "type_zh": "书写 第一部分",
+        "instruction_zh": "第36–40题：连词成句",
+        "instruction_en": "Questions 36-40: Rearrange the words/phrases to make sentences.",
+        "items": [
+          {
+            "n": "例",
+            "zh": "小船　上　一　河　条　有",
+            "answer": "河上有一条小船。",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                137
+              ]
+            }
+          },
+          {
+            "n": 36,
+            "zh": "停　慢慢　下来了　地　船",
+            "answer": "船慢慢地停下来了。",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                199
+              ]
+            }
+          },
+          {
+            "n": 37,
+            "zh": "是在哪儿　我想不起来　这张照片　照的　了",
+            "answer": "我想不起来这张照片是在哪儿照的了。",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                199
+              ]
+            }
+          },
+          {
+            "n": 38,
+            "zh": "看出来　你能　他们的脸　不一样　吗　有什么",
+            "answer": "你能看出来他们的脸有什么不一样吗？",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                199
+              ]
+            }
+          },
+          {
+            "n": 39,
+            "zh": "安静下来　鸟的叫声　能让　她",
+            "answer": "鸟的叫声能让她安静下来。",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                199
+              ]
+            }
+          },
+          {
+            "n": 40,
+            "zh": "让你的脸　很白　看上去　这件衣服",
+            "answer": "这件衣服让你的脸看上去很白。",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                199
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "三、书写 第二部分",
+        "type_zh": "书写 第二部分",
+        "instruction_zh": "第41–45题：看拼音，写汉字",
+        "instruction_en": "Questions 41-45: Write the characters based on their pinyin.",
+        "items": [
+          {
+            "n": "例",
+            "zh": "没（　）系，别难过，高兴点儿。",
+            "hint_zh": "guān",
+            "answer": "关",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                137
+              ]
+            }
+          },
+          {
+            "n": 41,
+            "zh": "骑（　）让我觉得很快乐。",
+            "hint_zh": "mǎ",
+            "answer": "马",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                199
+              ]
+            }
+          },
+          {
+            "n": 42,
+            "zh": "看上去这（　）先生很喜欢小孩子。",
+            "hint_zh": "wèi",
+            "answer": "位",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                199
+              ]
+            }
+          },
+          {
+            "n": 43,
+            "zh": "你想起来了吗？前年你是在哪儿（　）的春节？",
+            "hint_zh": "guò",
+            "answer": "过",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                199
+              ]
+            }
+          },
+          {
+            "n": 44,
+            "zh": "秋天以后，天会变得越来越（　），很早就会黑下来。",
+            "hint_zh": "duǎn",
+            "answer": "短",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                199
+              ]
+            }
+          },
+          {
+            "n": 45,
+            "zh": "（　）过超市的时候，你帮我买一瓶可乐。",
+            "hint_zh": "jīng",
+            "answer": "经",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                199
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "三、书写 第三部分",
+        "type_zh": "书写 第三部分",
+        "instruction_zh": "第46–50题：辨认汉字，选择正确的汉字填空",
+        "instruction_en": "Questions 46-50: Distinguish the characters and fill in the blanks.",
+        "items": [
+          {
+            "n": "例",
+            "zh": "我不知道________个地方在________儿。",
+            "hint_zh": "（那、哪）",
+            "answer": "那、哪",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                138
+              ]
+            }
+          },
+          {
+            "n": 46,
+            "zh": "天气真好，天是________色的，我们出去打________球吧。",
+            "hint_zh": "（蓝、篮）",
+            "answer": "蓝、篮",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                199
+              ]
+            }
+          },
+          {
+            "n": 47,
+            "zh": "刚才我去超市买________蛋了，回来的路上看见了一只很奇怪的________。",
+            "hint_zh": "（鸟、鸡）",
+            "answer": "鸡、鸟",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                199
+              ]
+            }
+          },
+          {
+            "n": 48,
+            "zh": "姐，你怎么又________了，我看你刚才还________得很高兴啊。",
+            "hint_zh": "（哭、笑）",
+            "answer": "哭、笑",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                199
+              ]
+            }
+          },
+          {
+            "n": 49,
+            "zh": "我________己去医院就行，没什么大的问题，就是________朵有点儿不舒服。",
+            "hint_zh": "（自、耳）",
+            "answer": "自、耳",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                199
+              ]
+            }
+          },
+          {
+            "n": 50,
+            "zh": "我又长高了，你看我的衣服就________道了，都________了。",
+            "hint_zh": "（短、知）",
+            "answer": "知、短",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                199
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "四、复习",
+        "type_zh": "复习",
+        "instruction_zh": "第1–2题：根据课文内容填空",
+        "instruction_en": "Questions 1-2: Fill in the blanks based on the texts in the textbook.",
+        "items": [
+          {
+            "n": 1,
+            "zh": "最近女儿跟以前不一样了，她喜欢把头发放在________后面，使她的________看________漂亮一些。爸爸想________她小时候喜欢________头发，像男孩子一样。",
+            "answer": "耳朵、脸、上去、起来、短",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                199
+              ]
+            }
+          },
+          {
+            "n": 2,
+            "zh": "小丽洗________几________骑马比赛的照片，但同事没看________那________骑得最快的是小刚。因为运动服让小刚看上去很年轻，小刚今天穿的________西服让他看上去像40岁。",
+            "answer": "出来、张、出来、位、蓝",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                199
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "audio": {
+    "textbook": [
+      "hsk3-textbook-1901.mp3",
+      "hsk3-textbook-1902.mp3",
+      "hsk3-textbook-1903.mp3",
+      "hsk3-textbook-1904.mp3",
+      "hsk3-textbook-1905.mp3"
+    ],
+    "workbook": [
+      "hsk3-workbook-19-part1.mp3",
+      "hsk3-workbook-19-part2.mp3",
+      "hsk3-workbook-19-part3.mp3",
+      "hsk3-workbook-19-part4.mp3"
+    ]
+  },
+  "unclear": [
+    "课文3 (сурах бичиг PDF х.176) ба 注释1-ийн жишээ (12) (PDF х.178) хоёуланд «只要他爸爸学小鸟叫» гэж «他»-ээр хэвлэгдсэн; өмнөх өгүүлбэр «她就喜欢听她爸爸学鸟叫», багшийн ном (PDF х.134, 课文3 асуулт-хариулт) «只要她爸爸学小鸟叫» — «她». Пиньинь «tā» ижил. Номд байгаагаар нь (сурах бичигт «他», багшийн номд «她») бичсэн.",
+    "练习3 (描述图片 — PDF х.181): 4 харилцан яриа бүрийн 4 дэх мөр «A:» гэж хэвлэгдсэн (A/B/A/A) — утгаараа B-ийн хариу мэт. Номд байгаагаар нь үлдээсэн. (2)-ын «黑天» номд байгаагаар.",
+    "Дасгалын номын 复习 2 (PDF х.138) «让他看上去像40岁», сурах бичгийн 课文2 «看上去像40多岁» — номд байгаагаар тус бүрт нь.",
+    "课文1-ийн «耳朵后面» ба 注释1-ийн жишээ (17) «耳朵后边» — номд өөр өөрөөр хэвлэгдсэн, тус бүрийг хэвээр нь.",
+    "Багшийн номын 课文1 模仿练习 (PDF х.134): «A：我也想起来。她……。» — «了»-гүй (сурах бичигт «我也想起来了。»). Номд байгаагаар.",
+    "课文4 номд гарчиггүй (зөвхөн «4» ба аудио 19-4) — title_zh хоосон, title_en байхгүй. Өгүүлэмжийг өгүүлбэр тус бүрээр lines-д хувааж, 拼音课文-ын харгалзах хэсгийг оноосон.",
+    "拼音课文-ын гарчгийн пиньинь (Zài jiā / Zài kàn zhàopiàn / Zài Xiǎolì jiā) болон ярилцагчийн нэрийн пиньинь (bàba, māma, Xiǎolì, tóngshì, péngyou) схемд талбаргүй тул lines.pinyin-д зөвхөн яриаг оруулсан. 拼音课文-д «Á?», «gāoxìng gāoxìng», «Nǚ’ér/nǚ’ér» гэж хэвлэгдсэнээр.",
+    "Энэ хичээлд 专有名词 хүснэгт байхгүй; 黄河 нь 生词 хүснэгтэд 12-р үг, «n.» гэж орсон. * тэмдэгтэй үг байхгүй. 汉字知识， 文化 хэсэг байхгүй (汉字 = зөвхөн 旧字新词).",
+    "注释1-д бүтцийн хүснэгт сурах бичигт байхгүй (багшийн номд «动词＋出来／动词／形容词＋下来／动词＋起来» хүснэгт — teacher.steps-д). Сурах бичигт улаанаар (бичвэрээс авсан) тэмдэглэгдсэн жишээ: 注释1 (4)(8)(12)(18), 注释2 (3)(4).",
+    "热身1-ийн зураг (PDF х.175) — нэг нүүрний зураг дээр A–F үсгээр байрлал тэмдэглэсэн; pictures_desc_en-д байрлал бүрийг бичсэн. Хариулт багшийн номд (PDF х.130): ①E ②D ③F ④A ⑤B ⑥C.",
+    "Сурах бичгийн 练一练 (2 дүрэм × 3), 练习2 选词填空， 练习3 描述图片， 练习4 回答问题， 热身2, 运用1–2, багшийн номын 语言点扩展练习 (дүрэм 1-ийн 选词填空 5 асуулт, дүрэм 2-ын асуултууд), 汉字辨认练习 — хариулт хэвлэгдээгүй тул answer талбаргүй. Багшийн номын 课文4 «“我”为什么想把照片发给大家？» асуултад хариулт хэвлэгдээгүй.",
+    "Багшийн номын 汉字辨认练习 (PDF х.135) 2 баганаар хэвлэгдсэн (зүүн: 蓝/篮 · 哭/笑 · 短/知 | баруун: 鸟/鸡 · 自/耳) — confusable_pairs-д мөрөөр уншсан дарааллаар. Дасгалын номын 46–50-ийн хаалтанд (鸟、鸡), (短、知) гэж хэвлэгдсэн, хариулт «鸡、鸟», «知、短» (хоосон зайн дарааллаар).",
+    "Дасгалын номын сонсгол нэг CD тэмдэгтэй (19) — аудиог hsk3-workbook-19-part1…4.mp3 болгож хэсэг тус бүрт хуваасныг section.audio-д оноосон.",
+    "Дасгалын ном 听力 第三/四部分 — номд зөвхөн сонголтууд хэвлэгдсэн; item.zh-д багшийн номын хавсралтын «问：» асуултыг оруулсан (transcript_zh-д бүтнээр).",
+    "Сонсгол 第二部分 10: ★«现在她是长头发。» — бичвэрт «那时她比较瘦，还是短头发» гэж л байгаа, «одоо урт үстэй» гэж шууд хэлээгүй; 参考答案 (PDF х.199) √ — номд байгаагаар.",
+    "Дасгалын номд энэ хичээлд 51–54 (组词) хэсэг байхгүй — нийт 50 асуулт + 复习 2.",
+    "运用1 (PDF х.182) — үйл үг/тэмдэг нэр (看、听、想、黑、吃、瘦) ба нөхбөр (起来、出来、下来、上去)-ийг хоёр баганаар холбох дасгал; example_zh-д «左列／右列» гэж хоёр мөрөөр бичсэн (номд баганын гарчиг байхгүй).",
+    "HSK 3.0 нэмэлт үгс (BLCUP 课件 补充HSK3.0, слайд 5, 37 — үг; слайд 29 — 语言点) hsk30-д."
+  ],
+  "verified_pages": [
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
     175,
     176,
     177,
@@ -17,1976 +1984,80 @@
     180,
     181,
     182,
-    183
-   ]
-  },
-  "warmup": [
-   {
-    "instruction_zh": "给下面的词语选择对应的位置",
-    "instruction_en": "Match the words with the positions.",
-    "items": [
-     "①眼睛 yǎnjing",
-     "②头发 tóufa",
-     "③鼻子 bízi",
-     "④耳朵 ěrduo",
-     "⑤嘴 zuǐ",
-     "⑥脸 liǎn"
-    ],
-    "pictures_desc_en": [
-     "A: at her ear (right side of the picture) — one photo of a young woman's face, eyes closed, hair pulled back, with letters A–F marking positions",
-     "B: on her lips",
-     "C: on her cheek",
-     "D: at the top of her head (hair)",
-     "E: at her eye (left side of the picture)",
-     "F: on her nose"
-    ]
-   },
-   {
-    "instruction_zh": "说说什么时候你会有下面的这些感觉",
-    "instruction_en": "Talk about under what circumstances you would have the following feelings.",
-    "items": [
-     "高兴 gāoxìng | 去公园 qù gōngyuán",
-     "生气 shēng qì |",
-     "难忘 nánwàng |",
-     "害怕 hàipà |",
-     "担心 dān xīn |",
-     "着急 zháo jí |"
-    ]
-   }
-  ],
-  "texts": [
-   {
-    "n": 1,
-    "title_zh": "在家",
-    "title_en": "At home",
-    "kind": "dialogue",
-    "audio": "hsk3-textbook-1901.mp3",
-    "lines": [
-     {
-      "speaker": "爸爸",
-      "zh": "女儿最近喜欢把头发放在耳朵后面，你知道为什么吗？",
-      "pinyin": "Nǚ’ér zuìjìn xǐhuan bǎ tóufa fàng zài ěrduo hòumiàn, nǐ zhīdào wèi shénme ma?"
-     },
-     {
-      "speaker": "妈妈",
-      "zh": "这样可以使她的脸看上去漂亮一些。",
-      "pinyin": "Zhèyàng kěyǐ shǐ tā de liǎn kàn shangqu piàoliang yìxiē."
-     },
-     {
-      "speaker": "爸爸",
-      "zh": "我最近觉得她和以前不太一样了。",
-      "pinyin": "Wǒ zuìjìn juéde tā hé yǐqián bú tài yíyàng le."
-     },
-     {
-      "speaker": "妈妈",
-      "zh": "女儿变化不小，她小时候喜欢短头发，像男孩子一样。",
-      "pinyin": "Nǚ’ér biànhuà bù xiǎo, tā xiǎo shíhou xǐhuan duǎn tóufa, xiàng nán háizi yíyàng."
-     },
-     {
-      "speaker": "爸爸",
-      "zh": "我也想起来了。她现在慢慢地开始像个女孩子了。",
-      "pinyin": "Wǒ yě xiǎng qilai le. Tā xiànzài mànmàn de kāishǐ xiàng ge nǚ háizi le."
-     }
-    ],
-    "new_words": [
-     {
-      "n": 1,
-      "zh": "耳朵",
-      "pinyin": "ěrduo",
-      "pos": "n.",
-      "en": "ear",
-      "text": 1
-     },
-     {
-      "n": 2,
-      "zh": "脸",
-      "pinyin": "liǎn",
-      "pos": "n.",
-      "en": "face",
-      "text": 1
-     },
-     {
-      "n": 3,
-      "zh": "短",
-      "pinyin": "duǎn",
-      "pos": "adj.",
-      "en": "short",
-      "text": 1
-     }
-    ]
-   },
-   {
-    "n": 2,
-    "title_zh": "在看照片",
-    "title_en": "Looking at a photo",
-    "kind": "dialogue",
-    "audio": "hsk3-textbook-1902.mp3",
-    "lines": [
-     {
-      "speaker": "小丽",
-      "zh": "上次我们参加骑马比赛的照片，我选了几张洗出来了。",
-      "pinyin": "Shàng cì wǒmen cānjiā qí mǎ bǐsài de zhàopiàn, wǒ xuǎnle jǐ zhāng xǐ chulai le."
-     },
-     {
-      "speaker": "同事",
-      "zh": "快给我看看。骑得最快的这位是谁？",
-      "pinyin": "Kuài gěi wǒ kànkan. Qí de zuì kuài de zhè wèi shì shéi?"
-     },
-     {
-      "speaker": "小丽",
-      "zh": "你没看出来吗？他是小刚啊。",
-      "pinyin": "Nǐ méi kàn chulai ma? Tā shì Xiǎogāng a."
-     },
-     {
-      "speaker": "同事",
-      "zh": "怎么看上去跟现在不太一样？",
-      "pinyin": "Zěnme kàn shangqu gēn xiànzài bú tài yíyàng?"
-     },
-     {
-      "speaker": "小丽",
-      "zh": "他上班穿西服、衬衫，比赛的时候穿的是运动服。",
-      "pinyin": "Tā shàng bān chuān xīfú, chènshān, bǐsài de shíhou chuān de shì yùndòngfú."
-     },
-     {
-      "speaker": "同事",
-      "zh": "他今天穿蓝西服，看上去像40多岁，还是穿运动服让他更年轻。",
-      "pinyin": "Tā jīntiān chuān lán xīfú, kàn shangqu xiàng sìshí duō suì, háishi chuān yùndòngfú ràng tā gèng niánqīng."
-     }
-    ],
-    "new_words": [
-     {
-      "n": 4,
-      "zh": "马",
-      "pinyin": "mǎ",
-      "pos": "n.",
-      "en": "horse",
-      "text": 2
-     },
-     {
-      "n": 5,
-      "zh": "张",
-      "pinyin": "zhāng",
-      "pos": "m.",
-      "en": "used for flat objects such as paper, photos, etc.",
-      "text": 2
-     },
-     {
-      "n": 6,
-      "zh": "位",
-      "pinyin": "wèi",
-      "pos": "m.",
-      "en": "a respectful measure word for people",
-      "text": 2
-     },
-     {
-      "n": 7,
-      "zh": "蓝",
-      "pinyin": "lán",
-      "pos": "adj.",
-      "en": "blue",
-      "text": 2
-     }
-    ]
-   },
-   {
-    "n": 3,
-    "title_zh": "在小丽家",
-    "title_en": "At Xiaoli’s home",
-    "kind": "dialogue",
-    "audio": "hsk3-textbook-1903.mp3",
-    "lines": [
-     {
-      "speaker": "朋友",
-      "zh": "我们一年没见面了吧？",
-      "pinyin": "Wǒmen yì nián méi jiàn miàn le ba?"
-     },
-     {
-      "speaker": "小丽",
-      "zh": "听说你都有女儿了？她多大了？",
-      "pinyin": "Tīngshuō nǐ dōu yǒu nǚ’ér le? Tā duō dà le?"
-     },
-     {
-      "speaker": "朋友",
-      "zh": "她去年秋天出生的，刚过完一岁生日。",
-      "pinyin": "Tā qùnián qiūtiān chūshēng de, gāng guòwán yí suì shēngrì."
-     },
-     {
-      "speaker": "小丽",
-      "zh": "她喜欢什么？我送给她。",
-      "pinyin": "Tā xǐhuan shénme? Wǒ sònggěi tā."
-     },
-     {
-      "speaker": "朋友",
-      "zh": "她就喜欢听她爸爸学鸟叫。哭的时候，只要他爸爸学小鸟叫，她马上就安静下来了。",
-      "pinyin": "Tā jiù xǐhuan tīng tā bàba xué niǎo jiào. Kū de shíhou, zhǐyào tā bàba xué xiǎo niǎo jiào, tā mǎshàng jiù ānjìng xialai le."
-     },
-     {
-      "speaker": "小丽",
-      "zh": "啊？这个礼物我没办法送。",
-      "pinyin": "Á? Zhège lǐwù wǒ méi bànfǎ sòng."
-     }
-    ],
-    "new_words": [
-     {
-      "n": 8,
-      "zh": "秋(天)",
-      "pinyin": "qiū (tiān)",
-      "pos": "n.",
-      "en": "autumn, fall",
-      "text": 3
-     },
-     {
-      "n": 9,
-      "zh": "过",
-      "pinyin": "guò",
-      "pos": "v.",
-      "en": "to spend, to pass",
-      "text": 3
-     },
-     {
-      "n": 10,
-      "zh": "鸟",
-      "pinyin": "niǎo",
-      "pos": "n.",
-      "en": "bird",
-      "text": 3
-     },
-     {
-      "n": 11,
-      "zh": "哭",
-      "pinyin": "kū",
-      "pos": "v.",
-      "en": "to cry",
-      "text": 3
-     }
-    ]
-   },
-   {
-    "n": 4,
-    "title_zh": "",
-    "kind": "narrative",
-    "audio": "hsk3-textbook-1904.mp3",
-    "lines": [
-     {
-      "zh": "这次旅游，我去了不少地方，每个地方都让我非常难忘。",
-      "pinyin": "Zhè cì lǚyóu, wǒ qùle bù shǎo dìfang, měi ge dìfang dōu ràng wǒ fēicháng nánwàng."
-     },
-     {
-      "zh": "我先去看了黄河，黄河是中国有名的大河，我坐在船上，一边看一边照相。",
-      "pinyin": "Wǒ xiān qù kànle Huáng Hé, Huáng Hé shì Zhōngguó yǒumíng de dà hé, wǒ zuò zài chuán shang, yìbiān kàn yìbiān zhào xiàng."
-     },
-     {
-      "zh": "一路上经过了很多地方，每个地方都不一样。",
-      "pinyin": "Yí lù shang jīngguòle hěn duō dìfang, měi ge dìfang dōu bù yíyàng."
-     },
-     {
-      "zh": "我想快点儿把照片发给大家，叫朋友们也高兴高兴。",
-      "pinyin": "Wǒ xiǎng kuài diǎnr bǎ zhàopiàn fāgěi dàjiā, jiào péngyoumen yě gāoxìng gāoxìng."
-     }
-    ],
-    "new_words": [
-     {
-      "n": 12,
-      "zh": "黄河",
-      "pinyin": "Huáng Hé",
-      "pos": "n.",
-      "en": "Yellow River, the second longest river in China",
-      "text": 4
-     },
-     {
-      "n": 13,
-      "zh": "船",
-      "pinyin": "chuán",
-      "pos": "n.",
-      "en": "boat, ship",
-      "text": 4
-     },
-     {
-      "n": 14,
-      "zh": "经过",
-      "pinyin": "jīngguò",
-      "pos": "v.",
-      "en": "to pass by",
-      "text": 4
-     }
-    ]
-   }
-  ],
-  "grammar": [
-   {
-    "n": 1,
-    "title_zh": "趋向补语的引申义",
-    "title_en": "Extension of the Complements of Direction",
-    "explanation_zh": "汉语中，趋向补语用在动词和形容词后，还可以表示其他的意义。\n动词加“出来”，表示从无到有，产生新事物。例如：（1）–（4）\n动词加“出来”也表示分辨识别，从隐到显的意思，例如：（5）–（8）\n一些形容词或动词加“下来”表示由动到静、由强到弱、由快到慢等变化。例如：（9）–（12）\n动词加“起来”，表示回忆有了结果。例如：（13）–（16）\n注意：“看起来”不表示“回忆有了结果”这一意义，意思是通过“看”，对某一方面进行估计、评价。同样的情况还有“看上去”，它与“看起来”意思一样。例如：（17）–（20）",
-    "explanation_en": "In Chinese, a complement of direction can be used after a verb or an adjective to mean different things.\n“出来” can be used after a verb to indicate the emergence of something new. For example: (1)–(4)\nWhen used after a verb, “出来” can also indicate the recognition of something implicit. For example: (5)–(8)\nWhen used after certain adjectives or verbs, “下来” indicates a change from movement to stillness, from being strong to being weak, or from being fast to being slow. For example: (9)–(12)\nWhen used after a verb, “起来” indicates the act of recalling has reached a result. For example: (13)–(16)\nNote: Instead of indicating recalling something, “看起来” (to seem) introduces an estimation or evaluation of a certain aspect made by looking. So is “看上去”, which means the same as “看起来”. For example: (17)–(20)",
-    "examples": [
-     {
-      "n": 1,
-      "zh": "这个字你能写出来吗？"
-     },
-     {
-      "n": 2,
-      "zh": "朋友想出来一个学汉语的好办法。"
-     },
-     {
-      "n": 3,
-      "zh": "你画得真快，一会儿就画出来了。"
-     },
-     {
-      "n": 4,
-      "zh": "照片我选了几张洗出来了。"
-     },
-     {
-      "n": 5,
-      "zh": "你听出来了吗？这是谁的声音？"
-     },
-     {
-      "n": 6,
-      "zh": "我看出来了，这是二年级的那个女孩子。"
-     },
-     {
-      "n": 7,
-      "zh": "我喝不出来这两杯咖啡有什么不一样。"
-     },
-     {
-      "n": 8,
-      "zh": "你没看出来吗？他是小刚啊。"
-     },
-     {
-      "n": 9,
-      "zh": "前边的车越开越慢，停下来了。"
-     },
-     {
-      "n": 10,
-      "zh": "天黑下来了，孩子们要回家了。"
-     },
-     {
-      "n": 11,
-      "zh": "我真希望时间能慢下来，不要过得那么快。"
-     },
-     {
-      "n": 12,
-      "zh": "只要他爸爸学小鸟叫，她马上就安静下来了。"
-     },
-     {
-      "n": 13,
-      "zh": "你记起来我是谁了吗？"
-     },
-     {
-      "n": 14,
-      "zh": "你能想起来那是什么时候的事吗？"
-     },
-     {
-      "n": 15,
-      "zh": "对不起，我想不起来你的名字了。"
-     },
-     {
-      "n": 16,
-      "zh": "我想起来了，她小时候像个男孩子。"
-     },
-     {
-      "n": 17,
-      "zh": "把头发放在耳朵后边，可以使脸看上去漂亮一些。"
-     },
-     {
-      "n": 18,
-      "zh": "他今天穿蓝西服，看上去像40多岁。"
-     },
-     {
-      "n": 19,
-      "zh": "这是你做的饭吗？看起来很好吃。"
-     },
-     {
-      "n": 20,
-      "zh": "他今天一句话也没说，看起来有点儿不高兴。"
-     }
-    ],
-    "practice_instruction_zh": "练一练　完成句子 Complete the sentences.",
-    "practice": [
-     {
-      "n": 1,
-      "zh": "雨下了三个小时，现在终于小了________。"
-     },
-     {
-      "n": 2,
-      "zh": "你能看________谁是哥哥，谁是弟弟吗？"
-     },
-     {
-      "n": 3,
-      "zh": "穿了这条裙子，你看________只有18岁。"
-     }
-    ]
-   },
-   {
-    "n": 2,
-    "title_zh": "“使”“叫”“让”",
-    "title_en": "Comparison of “使”, “叫” and “让”",
-    "explanation_zh": "汉语中用“使”“叫”“让”后搭配兼语表示致使的意思。三个词基本意思相同，“使”常用于书面语，“叫”常用于口语。例如：",
-    "explanation_en": "The Chinese words “使”, “叫” and “让” can all be followed by a pivotal element to mean “to cause”. The three of them basically mean the same thing, with “使” usually used in written Chinese, while “叫” usually used in spoken Chinese. For example:",
-    "examples": [
-     {
-      "n": 1,
-      "zh": "读书使我快乐。"
-     },
-     {
-      "n": 2,
-      "zh": "考试让我很紧张。"
-     },
-     {
-      "n": 3,
-      "zh": "穿运动服让他更年轻。"
-     },
-     {
-      "n": 4,
-      "zh": "我想快点儿把照片发给大家，叫朋友们也高兴高兴。"
-     }
-    ],
-    "practice_instruction_zh": "练一练　完成句子 Complete the sentences.",
-    "practice": [
-     {
-      "n": 1,
-      "zh": "他学习不努力，这让妈妈________。"
-     },
-     {
-      "n": 2,
-      "zh": "这双皮鞋有点儿小，让他________。"
-     },
-     {
-      "n": 3,
-      "zh": "她又聪明又热情，叫人________。"
-     }
-    ]
-   }
-  ],
-  "exercises": [
-   {
-    "n": 1,
-    "type_zh": "朗读",
-    "instruction_zh": "朗读下列短语和句子",
-    "instruction_en": "Read the following phrases and sentences aloud.",
-    "audio": "hsk3-textbook-1905.mp3",
-    "items": [
-     {
-      "n": 1,
-      "zh": "短：很短／短头发／短一点儿／她小时候喜欢短头发。"
-     },
-     {
-      "n": 2,
-      "zh": "蓝：蓝色／蓝衬衫／天很蓝／他今天穿蓝西服，看上去像40多岁。"
-     },
-     {
-      "n": 3,
-      "zh": "过：过生日／过节／过周末／她刚过完一岁生日。"
-     },
-     {
-      "n": 4,
-      "zh": "船：一条船／坐船／船上／我坐在船上一边看（黄河），一边照相。"
-     },
-     {
-      "n": 5,
-      "zh": "经过：经过超市／经过图书馆／经过一条河／一路上经过了很多地方。"
-     }
-    ]
-   },
-   {
-    "n": 2,
-    "type_zh": "选词填空",
-    "instruction_zh": "选择恰当的词语填空",
-    "instruction_en": "Choose the proper words to fill in the blanks.",
-    "word_bank": [
-     [
-      "秋天",
-      "过",
-      "鸟",
-      "船",
-      "张"
-     ],
-     [
-      "位",
-      "经过",
-      "马",
-      "哭",
-      "耳朵"
-     ]
-    ],
-    "items": [
-     {
-      "n": 1,
-      "zh": "帮我把这几________照片洗出来吧。"
-     },
-     {
-      "n": 2,
-      "zh": "你还记得18岁生日是在哪儿________的吗？"
-     },
-     {
-      "n": 3,
-      "zh": "________是北京最好的季节。"
-     },
-     {
-      "n": 4,
-      "zh": "她真爱说话，像只小________一样。"
-     },
-     {
-      "n": 5,
-      "zh": "我希望能坐________去旅行一次。"
-     },
-     {
-      "n": 6,
-      "zh": "A：你怎么又________了？ B：我想家了。"
-     },
-     {
-      "n": 7,
-      "zh": "A：你一会儿________超市吗？帮我买瓶水吧。 B：行，没问题。"
-     },
-     {
-      "n": 8,
-      "zh": "A：你怎么了？ B：我________里边有点儿疼。"
-     },
-     {
-      "n": 9,
-      "zh": "A：您好，欢迎，请问您几________？ B：您好，我们一共是五个人。"
-     },
-     {
-      "n": 10,
-      "zh": "A：你会骑________吗？ B：不会，我从来没骑过。"
-     }
-    ]
-   },
-   {
-    "n": 3,
-    "type_zh": "描述图片",
-    "instruction_zh": "用本课新学的语言点和词语描述图片",
-    "instruction_en": "Describe the pictures using the newly-learned language points and words.",
-    "items": [
-     {
-      "n": 1,
-      "zh": "A：你________不太舒服。 B：昨天晚上没休息好。 A：怎么了？ A：复习考试真让我________！",
-      "picture_desc_en": "A boy in a light-blue sweater holding his head in both hands and frowning over an open book."
-     },
-     {
-      "n": 2,
-      "zh": "A：天黑________了。 B：你快点儿回家吧。 A：你能送我回去吗？ A：没问题。是不是黑天让你________？",
-      "picture_desc_en": "A house with lit windows in the evening, with a lit path leading up to it."
-     },
-     {
-      "n": 3,
-      "zh": "A：阿姨，我是大卫啊！您________了吗？ B：几年没见了，我真看不出来了。 A：您跟以前一样年轻！ A：是吗？这话真让我________。",
-      "picture_desc_en": "A smiling young man in a pink shirt with his hand on the shoulder of a smiling middle-aged woman in a dark top, who holds a red gift box."
-     },
-     {
-      "n": 4,
-      "zh": "A：外边雨那么大，你怎么才回来？真让我________。 B：别担心，雨已经小________了。 A：忙了一天了，想吃点儿什么？ A：今天下雨，有点儿冷，吃碗热面条吧。",
-      "picture_desc_en": "A wet black umbrella leaning against a wooden door."
-     }
-    ]
-   },
-   {
-    "n": 4,
-    "type_zh": "回答问题",
-    "instruction_zh": "根据课文回答问题",
-    "instruction_en": "Answer the questions according to the texts.",
-    "items": [
-     {
-      "n": 1,
-      "zh": "女儿最近有什么变化？"
-     },
-     {
-      "n": 2,
-      "zh": "同事为什么没看出来照片里的小刚？"
-     },
-     {
-      "n": 3,
-      "zh": "小刚上班穿什么？看上去怎么样？"
-     },
-     {
-      "n": 4,
-      "zh": "小丽为什么说她不能送朋友女儿喜欢的礼物？"
-     },
-     {
-      "n": 5,
-      "zh": "“我”觉得这次旅行怎么样？"
-     },
-     {
-      "n": 6,
-      "zh": "“我”想给大家看什么？为什么？"
-     }
-    ]
-   }
-  ],
-  "characters": {
-   "knowledge_title_zh": "旧字新词",
-   "knowledge_zh": "读读下面的词语，想想组成的新词是什么意思。",
-   "knowledge_en": "Read the following words and guess the meanings of the newly-formed ones.",
-   "word_game": [
-    {
-     "parts": [
-      "以前",
-      "年"
-     ],
-     "result": "前年"
-    },
-    {
-     "parts": [
-      "走路",
-      "经过"
-     ],
-     "result": "路过"
-    },
-    {
-     "parts": [
-      "运动",
-      "衣服"
-     ],
-     "result": "运动服"
-    }
-   ],
-   "confusable_pairs": [
-    [
-     "蓝",
-     "篮"
-    ],
-    [
-     "鸟",
-     "鸡"
-    ],
-    [
-     "哭",
-     "笑"
-    ],
-    [
-     "自",
-     "耳"
-    ],
-    [
-     "短",
-     "知"
-    ]
-   ]
-  },
-  "application": [
-   {
-    "title_zh": "双人活动",
-    "instruction_zh": "两个人一组，把动词与趋向补语连起来，然后用“动词＋趋向补语”的结构说句子。",
-    "instruction_en": "Work in pairs. Match the verbs with the complements of direction, and practise saying sentences using them.",
-    "example_zh": [
-     "左列：看、听、想、黑、吃、瘦",
-     "右列：起来、出来、下来、上去"
-    ]
-   },
-   {
-    "title_zh": "小组活动",
-    "instruction_zh": "3～4人一组，一个人跟大家说说最近自己经历过的一件事，这件事对自己有什么影响，其他人记录。请用“使、叫、让”。",
-    "instruction_en": "Work in groups of 3-4. One tells a recent experience and its influence on himself/herself, and the others take notes. Please use “使”, “叫” and “让”.",
-    "example_zh": [
-     "例如：最近我一直努力学习，考试考得很好，妈妈送给我一个照相机，让我很高兴，我以后会更努力的。",
-     "表格：| | 谁 | 事情 | 影响 |",
-     "| 1 | 小红 | 考得好，妈妈送了礼物 | 让她很高兴，她会更努力的。 |",
-     "| 2 | | | |",
-     "| 3 | | | |",
-     "| 4 | | | |"
-    ]
-   }
-  ],
-  "saying": {
-   "zh": "百闻不如一见",
-   "pinyin": "Bǎi wén bù rú yí jiàn",
-   "en": "To see something once is better than to hear about it a hundred times",
-   "explanation_zh": "“百闻不如一见”，这里“闻”是“听说、听见”的意思。这句话的意思是听见一百次不如亲眼看到一次。这句话告诉我们亲眼看到的总是比听别人说的更可靠。",
-   "explanation_en": "In the saying “百闻不如一见”, “闻” means to “to hear (about)”. The saying means it’s better to see something once than to hear about it a hundred times. It tells us that what we see with our own eyes is more reliable than what we hear other people say."
-  }
- },
- "teacher": {
-  "ref": {
-   "book": "teacher",
-   "pages": [
-    130,
-    131,
-    132,
-    133,
-    134,
-    135,
-    136
-   ]
-  },
-  "objectives_zh": [
-   "重点词语：学生能够熟练掌握：“张、位、过、哭、经过”的词义和用法",
-   "语言点：学生能够了解并掌握：（1）趋向补语表示引申意义（2）“使”“叫”“让”表示致使的意思",
-   "汉字：学生能够：根据已学生词猜测出3个旧字新词“前年、路过、运动服”的意思",
-   "功能：学生能够：（1）用趋向补语的引申义描述出现、辨别、状态变化等内容（2）用“使”“叫”“让”表示致使"
-  ],
-  "steps": [
-   {
-    "title_zh": "复习旧课",
-    "body_zh": "1 教师展示第18课的热身图片，请学生根据图片说出生词。\n2 教师根据第18课的内容进行提问。\n（1）你有买房的打算吗？打算在哪儿买房？说说为什么。\n（2）有时间的时候，你特别想做什么？\n（3）只要你有钱，你就做什么？\n（4）中国文化跟你们国家的文化有哪些不一样的地方？\n（5）你喜欢看什么电影？你的朋友呢？"
-   },
-   {
-    "title_zh": "学习新课 1 热身",
-    "body_zh": "热身1：教师可依次朗读热身部分的词语，要求学生集体或单个说出图片对应的编号，教师评判正误；最后全体学生齐读热身环节所有词语，要求语音标准，声调准确。\n答案：①E　②D　③F　④A　⑤B　⑥C\n热身2：可留至语言点（2）“使”“叫”“让”导入时使用。"
-   },
-   {
-    "title_zh": "2 生词",
-    "body_zh": "（1）生词快速认读及正音\n耳朵、脸、短、马、张、位、蓝、秋（天）、过、鸟、哭、黄河、船、经过\n· 教师先带领学生快速认读一遍生词；\n· 取消拼音，带领学生再次认读；\n· 请单个学生独自认读2-3个生词；\n· 最后全班一起快速认读所有的生词。\n（2）生词讲解方式\n· 直观法（如图片、照片、实物等）展示：耳朵、脸、马、鸟、黄河、船\n· 对比法展示：长—短、春天—夏天—秋天—冬天、红—白—黄—绿—黑—蓝\n（3）重点生词扩展及常用搭配\n张—一张纸—两张电影票—我要买三张20号去北京的机票。\n位—一位老师—两位客人—您好，您几位？—这位是我先生。\n过—过生日—过春节—你想和谁一起过生日？\n　—过得很高兴—今年的生日，我过得很高兴。\n哭—哭了—别哭—哭了很长时间—什么时候你很想哭？\n经过—经过门口—从这儿经过—从北京到上海一路上会经过什么地方？\n练习册相关练习：第128页／一／第一部分；第131页／二／第二部分"
-   },
-   {
-    "title_zh": "3 语言点（1）趋向补语的引申义",
-    "body_zh": "① 语言点解析\n汉语中，趋向补语除了表示动作的方向以外，还可以表示引申义。本课涉及到的有：“出来”表示从无到有、产生新事物，或表示分辨识别、从隐到显的意思；“下来”表示由动到静、由强到弱、由快到慢等变化；“起来”表示回忆有了结果。\n［表：动词＋出来／动词／形容词＋下来／动词＋起来］\n② 语言点导入\n教师就地取材，在黑板上画图，一边画一边引导学生说出目标句。\n教师：我想画一个苹果，你们看，现在我画出来了吗？\n学生：老师画出来了。\n教师利用情景，请一名学生到教室前边，背对着大家，然后让另一名学生说一句话，教师问前边的学生。\n教师：你知道是谁的声音吗？\n学生：知道，是XX的声音。／不知道。\n教师：好，他听出来了，是XX的声音。／他没听出来。\n教师动作演示，在教室中快走。\n教师：老师在做什么？\n学生：老师在走路，走得很快。\n教师走路速度渐慢。\n教师：老师还在快走吗？\n学生：不，老师慢下来了。\n教师假装想不起来一位学生的名字。\n教师：你叫什么名字，我忘了。\n学生：我叫XX。\n教师：老师刚才怎么了？\n学生：老师刚才没想起来他的名字。\n③ 语言点操练\n教师给出词组，请学生设计情景说句子：写出来、想出来、做出来、洗出来。\n教师围绕感官，给出学生词组，请学生说出自己的辨别能力：听出来、看出来、吃出来、喝出来。\n例如：我能喝出来美国咖啡和中国咖啡。\n教师给出形容词，请学生用“形容词＋下来”说句子：安静、黑、慢。\n教师：你能想起来昨天的课文吗？你能记起来第一个汉语老师的名字吗？\n教师就地取材，利用学生的情况，请学生说句子，例如：\n他今天看起来很累。\n这杯咖啡看起来很好喝。\n这本书看起来很贵。\n④ 语言点扩展练习\n教师请学生选词填空。\n看出来、看起来、安静下来、想起来、想出来\n（1）她一天没说话，她________不太高兴。\n（2）过了一个小时，我还是没________这个汉字怎么写。\n（3）电影开始了，大家都________了。\n（4）这是谁写的字，你能________吗？\n（5）你去问小刚吧，他一定能________一个好办法。\n注意：“看起来”不表示回忆有了结果这一意思，意思是通过“看”，对某一方面进行估计、评价。同样的情况还有“看上去”，它与“看起来”意思一样。"
-   },
-   {
-    "title_zh": "3 语言点（2）“使”“叫”“让”",
-    "body_zh": "① 语言点解析\n汉语中用“使”“叫”“让”后搭配兼语表示致使的意思。\n② 语言点导入\n教师可利用本课热身2的表格导入语言点。\n教师带领学生认读表格中的形容词。\n教师示范：\n教师：什么时候你会很高兴？\n学生：去公园的时候我会很高兴。\n教师引导学生说出目标句：去公园让我很高兴。\n③ 语言点操练\n教师请学生与同桌合作，共同完成表格。\n教师请学生用“使”“叫”“让”互相询问。\n目标句：什么会让你很生气？\n朋友借钱不还让我很生气。\n在国外生活让我很难忘。\n晚上一个人走路让我很害怕。\n同屋很晚还没回来让我很担心。\n明天要考试了，我还没复习，让我很着急。\n④ 语言点扩展练习\n教师提问，让学生根据实际情况回答：\n你做什么会让妈妈很生气？\n夏天吃什么、喝什么会让你很舒服？\n什么时候你会很头疼？\n注意：“使”常用于书面语，“叫”常用于口语。"
-   },
-   {
-    "title_zh": "4 课文 课文1",
-    "body_zh": "（1）让学生听两遍录音并回答下列问题：\n女儿最近有什么变化？——她最近喜欢把头发放在耳朵后面。\n女儿为什么要这样做？——因为这样可以使她的脸看上去漂亮一些。\n女儿小时候是什么样的？——她小时候喜欢短头发，像男孩子一样。\n（2）教师领读课文两遍，让学生分角色朗读课文，注意说话人的语气。\n（3）模仿练习\n学生两人一组，根据提示词模仿课文内容进行对话练习。\nA：女儿最近喜欢……，你知道……？\nB：这样可以……。\nA：我最近觉得……。\nB：女儿变化……，她小时候……，像……。\nA：我也想起来。她……。"
-   },
-   {
-    "title_zh": "4 课文 课文2",
-    "body_zh": "（1）让学生听两遍录音并回答下列问题：\n这是什么时候的照片？——这是他们参加骑马比赛的照片。\n小刚比赛的时候穿的是什么？——他穿的是运动服。\n小刚上班的时候穿什么？——他穿西服、衬衫。\n（2）教师领读课文两遍，让学生分角色朗读课文。\n（3）模仿练习\n学生两人一组，根据提示词模仿课文内容进行对话练习。\nA：上次……的照片，我……了。\nB：快……，……的这位是谁？\nA：你没……吗？他／她是……啊。\nB：怎么……不太一样？\nA：他／她……，……的时候……。\nB：他／她……，看上去……，还是……。"
-   },
-   {
-    "title_zh": "4 课文 课文3",
-    "body_zh": "（1）让学生听两遍录音并回答下列问题：\n她们（小丽和朋友）多长时间没见面了？——她们一年没见面了。\n朋友的女儿什么时候出生的，现在多大了？——她的女儿去年秋天出生的，刚过完一岁生日。\n哭的时候，怎么能让她女儿安静下来？——只要她爸爸学小鸟叫，她马上就安静下来了。\n（2）教师领读课文两遍，让学生分角色朗读课文，注意说话人的语气。\n（3）教师给提示词，带领学生复述课文。\n提示词：见面、女儿、出生、刚、送、学、小鸟、安静、没办法"
-   },
-   {
-    "title_zh": "4 课文 课文4",
-    "body_zh": "（1）快速阅读，并回答：“我”为什么想把照片发给大家？\n（2）教师领读课文两遍，并回答下列问题：\n“我”觉得这次旅行怎么样？——这次旅行，“我”去了很多地方，让“我”很难忘。\n“我”去黄河旅行的时候做什么了？——“我”坐在船上，一边看一边照相。\n（3）教师给提示词，带领学生复述课文。\n提示词：旅游、难忘、一边……一边……、经过、照片、让\n（4）教师请学生根据课文，说说自己的旅行经历。\n练习册相关练习：第134页／四"
-   },
-   {
-    "title_zh": "5 汉字",
-    "body_zh": "旧字新词：\n① 教师领读以前学过的词语和新词，并让学生猜猜新词的意思。\n· 领读：以前、年、前年\n问学生：“前年”是什么意思？——去年的前一年，两年以前。\n扩展提问：我们学习过哪些“年”？——前年、去年、今年、明年、后年（根据实际情况选用）\n· 领读：走路、经过、路过\n问学生：“路过”是什么意思？——走路的时候经过。\n注意“路过”是一个动词。\n· 领读：运动、衣服、运动服\n问学生：“运动服”是什么意思？——运动的时候穿的衣服。\n② 教师领读新词扩展，通过情景，理解新词的意思和用法：\n前年：前年的时候／我前年去过上海／你前年暑假去哪儿旅行了？\n路过：路过朋友家／路过的地方／路过超市的时候，你帮我买一瓶水。\n运动服：买运动服／穿运动服／你有运动服吗？\n汉字辨认练习：\n辨认下列汉字并组词。\n蓝：________、________　篮：________、________\n鸟：________、________　鸡：________、________\n哭：________、________　笑：________、________\n自：________、________　耳：________、________\n短：________、________　知：________、________\n练习册相关练习：第134页／三／第三部分"
-   },
-   {
-    "title_zh": "6 补充课堂活动——谁是最能分辨的人",
-    "body_zh": "教师将全班分成两组，每组根据词卡内容，讨论本组成员具有的辨别能力，例如“我能听出来南方人和北方人说话有什么不一样”。两组轮流说句子，看看哪组说的句子更多更好。\n参考词语：听出来、吃出来、喝出来、看出来、分出来……"
-   },
-   {
-    "title_zh": "7 俗语",
-    "body_zh": "教师引导学生理解俗语的含义，注意这里的“闻”是听到的意思，而不是用鼻子闻，这句俗语鼓励我们多去实践。"
-   },
-   {
-    "title_zh": "8 本课小结",
-    "body_zh": "· 语法点：用趋向补语表示引申义\n　　　　　用“使”“叫”“让”表示致使\n· 词　汇：旧字新词：前年、路过、运动服"
-   }
-  ],
-  "notes_zh": [
-   "注意：“看起来”不表示回忆有了结果这一意思，意思是通过“看”，对某一方面进行估计、评价。同样的情况还有“看上去”，它与“看起来”意思一样。（语言点1）",
-   "注意：“使”常用于书面语，“叫”常用于口语。（语言点2）",
-   "注意“路过”是一个动词。（汉字）",
-   "注意这里的“闻”是听到的意思，而不是用鼻子闻，这句俗语鼓励我们多去实践。（俗语）"
-  ],
-  "warmup_answers_zh": [
-   "热身1 答案：①E　②D　③F　④A　⑤B　⑥C",
-   "热身2：可留至语言点（2）“使”“叫”“让”导入时使用。"
-  ],
-  "text_questions": [
-   {
-    "text": 1,
-    "q_zh": "女儿最近有什么变化？",
-    "a_zh": "她最近喜欢把头发放在耳朵后面。"
-   },
-   {
-    "text": 1,
-    "q_zh": "女儿为什么要这样做？",
-    "a_zh": "因为这样可以使她的脸看上去漂亮一些。"
-   },
-   {
-    "text": 1,
-    "q_zh": "女儿小时候是什么样的？",
-    "a_zh": "她小时候喜欢短头发，像男孩子一样。"
-   },
-   {
-    "text": 2,
-    "q_zh": "这是什么时候的照片？",
-    "a_zh": "这是他们参加骑马比赛的照片。"
-   },
-   {
-    "text": 2,
-    "q_zh": "小刚比赛的时候穿的是什么？",
-    "a_zh": "他穿的是运动服。"
-   },
-   {
-    "text": 2,
-    "q_zh": "小刚上班的时候穿什么？",
-    "a_zh": "他穿西服、衬衫。"
-   },
-   {
-    "text": 3,
-    "q_zh": "她们（小丽和朋友）多长时间没见面了？",
-    "a_zh": "她们一年没见面了。"
-   },
-   {
-    "text": 3,
-    "q_zh": "朋友的女儿什么时候出生的，现在多大了？",
-    "a_zh": "她的女儿去年秋天出生的，刚过完一岁生日。"
-   },
-   {
-    "text": 3,
-    "q_zh": "哭的时候，怎么能让她女儿安静下来？",
-    "a_zh": "只要她爸爸学小鸟叫，她马上就安静下来了。"
-   },
-   {
-    "text": 4,
-    "q_zh": "“我”为什么想把照片发给大家？"
-   },
-   {
-    "text": 4,
-    "q_zh": "“我”觉得这次旅行怎么样？",
-    "a_zh": "这次旅行，“我”去了很多地方，让“我”很难忘。"
-   },
-   {
-    "text": 4,
-    "q_zh": "“我”去黄河旅行的时候做什么了？",
-    "a_zh": "“我”坐在船上，一边看一边照相。"
-   }
-  ],
-  "summary_zh": "语法点：用趋向补语表示引申义；用“使”“叫”“让”表示致使。词汇：旧字新词：前年、路过、运动服。"
- },
- "workbook": {
-  "ref": {
-   "book": "workbook",
-   "pages": [
-    132,
-    133,
-    134,
-    135,
-    136,
-    137,
-    138
-   ]
-  },
-  "answers_ref": {
-   "book": "teacher",
-   "pages": [
+    183,
     197,
     198,
     199
-   ]
-  },
-  "sections": [
-   {
-    "n": "一、听力 第一部分",
-    "type_zh": "听力 第一部分",
-    "instruction_zh": "第1–5题：听对话，选择与对话内容一致的图片",
-    "instruction_en": "Questions 1-5: Choose the right picture for each dialogue you hear.",
-    "audio": "hsk3-workbook-19-part1.mp3",
-    "items": [
-     {
-      "n": "例",
-      "zh": "男：喂，请问张经理在吗？ 女：他正在开会，您半个小时以后再打，好吗？",
-      "transcript_zh": "男：喂，请问张经理在吗？ 女：他正在开会，您半个小时以后再打，好吗？",
-      "options": {
-       "A": "[picture] a doctor in a white coat examining a young woman's ear with an instrument",
-       "B": "[picture] a bird perched on a snowy fir branch",
-       "C": "[picture] a boy in a striped shirt washing his face at an outdoor washstand",
-       "D": "[picture] a smiling woman in a uniform talking on a telephone",
-       "E": "[picture] a rider in a helmet on a horse in a riding arena",
-       "F": "[picture] a woman in a sports jacket jogging outdoors"
-      },
-      "answer": "D",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        132
-       ]
-      }
-     },
-     {
-      "n": 1,
-      "zh": "",
-      "options": {
-       "A": "[picture] a doctor in a white coat examining a young woman's ear with an instrument",
-       "B": "[picture] a bird perched on a snowy fir branch",
-       "C": "[picture] a boy in a striped shirt washing his face at an outdoor washstand",
-       "D": "[picture] a smiling woman in a uniform talking on a telephone",
-       "E": "[picture] a rider in a helmet on a horse in a riding arena",
-       "F": "[picture] a woman in a sports jacket jogging outdoors"
-      },
-      "transcript_zh": "女：你看，树上那只鸟，红红的，嘴小小的，是什么鸟？ 男：不知道，我也是第一次见。",
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        199
-       ]
-      }
-     },
-     {
-      "n": 2,
-      "zh": "",
-      "options": {
-       "A": "[picture] a doctor in a white coat examining a young woman's ear with an instrument",
-       "B": "[picture] a bird perched on a snowy fir branch",
-       "C": "[picture] a boy in a striped shirt washing his face at an outdoor washstand",
-       "D": "[picture] a smiling woman in a uniform talking on a telephone",
-       "E": "[picture] a rider in a helmet on a horse in a riding arena",
-       "F": "[picture] a woman in a sports jacket jogging outdoors"
-      },
-      "transcript_zh": "男：别害怕，不要动，让我看一下你的耳朵。 女：医生，怎么样？没事吧？我最近总是听不清别人说话。",
-      "answer": "A",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        199
-       ]
-      }
-     },
-     {
-      "n": 3,
-      "zh": "",
-      "options": {
-       "A": "[picture] a doctor in a white coat examining a young woman's ear with an instrument",
-       "B": "[picture] a bird perched on a snowy fir branch",
-       "C": "[picture] a boy in a striped shirt washing his face at an outdoor washstand",
-       "D": "[picture] a smiling woman in a uniform talking on a telephone",
-       "E": "[picture] a rider in a helmet on a horse in a riding arena",
-       "F": "[picture] a woman in a sports jacket jogging outdoors"
-      },
-      "transcript_zh": "女：都几点了，儿子的房间里一点儿声音都没有，他还在睡觉吗？ 男：没有，他已经起床了，现在在洗脸呢。",
-      "answer": "C",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        199
-       ]
-      }
-     },
-     {
-      "n": 4,
-      "zh": "",
-      "options": {
-       "A": "[picture] a doctor in a white coat examining a young woman's ear with an instrument",
-       "B": "[picture] a bird perched on a snowy fir branch",
-       "C": "[picture] a boy in a striped shirt washing his face at an outdoor washstand",
-       "D": "[picture] a smiling woman in a uniform talking on a telephone",
-       "E": "[picture] a rider in a helmet on a horse in a riding arena",
-       "F": "[picture] a woman in a sports jacket jogging outdoors"
-      },
-      "transcript_zh": "男：你会骑马？跟谁学的？ 女：我爷爷，他很喜欢骑马，而且骑得很好。",
-      "answer": "E",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        199
-       ]
-      }
-     },
-     {
-      "n": 5,
-      "zh": "",
-      "options": {
-       "A": "[picture] a doctor in a white coat examining a young woman's ear with an instrument",
-       "B": "[picture] a bird perched on a snowy fir branch",
-       "C": "[picture] a boy in a striped shirt washing his face at an outdoor washstand",
-       "D": "[picture] a smiling woman in a uniform talking on a telephone",
-       "E": "[picture] a rider in a helmet on a horse in a riding arena",
-       "F": "[picture] a woman in a sports jacket jogging outdoors"
-      },
-      "transcript_zh": "男：你穿的这件红色运动服真好看。 女：谢谢，我觉得穿上它，让我年轻了不少。",
-      "answer": "F",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        199
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "一、听力 第二部分",
-    "type_zh": "听力 第二部分",
-    "instruction_zh": "第6–10题：听句子，判断对错",
-    "instruction_en": "Questions 6-10: Decide whether the statements are true or false based on the sentences you hear.",
-    "audio": "hsk3-workbook-19-part2.mp3",
-    "items": [
-     {
-      "n": "例1",
-      "zh": "他希望自己很健康。",
-      "transcript_zh": "为了让自己更健康，他每天都花一个小时去锻炼身体。",
-      "answer": "√",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        133
-       ]
-      }
-     },
-     {
-      "n": "例2",
-      "zh": "那块儿手表不是他的。",
-      "transcript_zh": "今天我想早点儿回家。看了看手表，才5点。过了一会儿再看表，还是5点，我这才发现我的手表不走了。",
-      "answer": "×",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        133
-       ]
-      }
-     },
-     {
-      "n": 6,
-      "zh": "他每天上下班都很快乐。",
-      "transcript_zh": "上下班的时候，我都会经过这条街。街道两边的树，还有树上的小鸟，会使我觉得很快乐。",
-      "answer": "√",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        199
-       ]
-      }
-     },
-     {
-      "n": 7,
-      "zh": "小雨哭是因为耳朵有问题了。",
-      "transcript_zh": "最近，我家小雨一直哭，说耳朵疼。我带他去医院，但是医生说他的耳朵没问题，不用吃药，多喝些水就可以了。",
-      "answer": "×",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        199
-       ]
-      }
-     },
-     {
-      "n": 8,
-      "zh": "他以前住在黄河附近。",
-      "transcript_zh": "这张照片让我想起了我的家，以前我家住在黄河边上，后来因为爸爸工作的关系搬到了这里。",
-      "answer": "√",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        199
-       ]
-      }
-     },
-     {
-      "n": 9,
-      "zh": "他终于找到那本书了。",
-      "transcript_zh": "我一直在找这本书，没想到今天下班路过一家书店时看见了它，我太高兴了。",
-      "answer": "√",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        199
-       ]
-      }
-     },
-     {
-      "n": 10,
-      "zh": "现在她是长头发。",
-      "transcript_zh": "你看，这张照片是前年夏天照的，那时她比较瘦，还是短头发。",
-      "answer": "√",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        199
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "一、听力 第三部分",
-    "type_zh": "听力 第三部分",
-    "instruction_zh": "第11–15题：听短对话，选择正确答案",
-    "instruction_en": "Questions 11-15: Listen to the short dialogues and choose the right answers.",
-    "audio": "hsk3-workbook-19-part3.mp3",
-    "items": [
-     {
-      "n": "例",
-      "zh": "男的想让小王做什么？",
-      "transcript_zh": "男：小王，帮我开一下门，好吗？谢谢！ 女：没问题。您去超市了？买了这么多东西。 问：男的想让小王做什么？",
-      "options": {
-       "A": "开门",
-       "B": "拿东西",
-       "C": "去超市买东西"
-      },
-      "answer": "A",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        133
-       ]
-      }
-     },
-     {
-      "n": 11,
-      "zh": "男的怎么了？",
-      "options": {
-       "A": "他不高兴了",
-       "B": "眼睛里有东西",
-       "C": "不喜欢刮风"
-      },
-      "transcript_zh": "女：你哭了？ 男：没有啊，刚才风刮得太大，眼睛里进东西了。 问：男的怎么了？",
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        199
-       ]
-      }
-     },
-     {
-      "n": 12,
-      "zh": "女的是什么意思？",
-      "options": {
-       "A": "她骑得不快",
-       "B": "她不太小心",
-       "C": "她会骑马"
-      },
-      "transcript_zh": "男：小心点儿，别骑太快了。 女：放心，我又不是第一次骑马。 问：女的是什么意思？",
-      "answer": "C",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        199
-       ]
-      }
-     },
-     {
-      "n": 13,
-      "zh": "女的打算做什么？",
-      "options": {
-       "A": "睡觉",
-       "B": "吃糖",
-       "C": "起床"
-      },
-      "transcript_zh": "男：都这么晚了，你怎么还吃糖？ 女：不吃了，我现在就去刷牙洗脸。 问：女的打算做什么？",
-      "answer": "A",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        199
-       ]
-      }
-     },
-     {
-      "n": 14,
-      "zh": "女的是怎么来这儿的？",
-      "options": {
-       "A": "坐船",
-       "B": "坐公共汽车",
-       "C": "打车"
-      },
-      "transcript_zh": "男：你终于来了，船马上就开了。 女：我没想到坐公共汽车要花这么长时间，早知道就打车来了。 问：女的是怎么来这儿的？",
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        199
-       ]
-      }
-     },
-     {
-      "n": 15,
-      "zh": "男的为什么要做面条？",
-      "options": {
-       "A": "他喜欢做面条",
-       "B": "女的过生日",
-       "C": "面条很好吃"
-      },
-      "transcript_zh": "男：过生日要吃面条，这是我第一次做面条，看看好吃不好吃。 女：一定很好吃，谢谢你！ 问：男的为什么要做面条？",
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        199
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "一、听力 第四部分",
-    "type_zh": "听力 第四部分",
-    "instruction_zh": "第16–20题：听长对话，选择正确答案",
-    "instruction_en": "Questions 16-20: Listen to the dialogues and choose the right answers.",
-    "audio": "hsk3-workbook-19-part4.mp3",
-    "items": [
-     {
-      "n": "例",
-      "zh": "男的在做什么？",
-      "transcript_zh": "女：晚饭做好了，准备吃饭了。 男：等一会儿，比赛还有三分钟就结束了。 女：快点儿吧，一起吃，菜冷了就不好吃了。 男：你先吃，我马上就看完了。 问：男的在做什么？",
-      "options": {
-       "A": "洗澡",
-       "B": "吃饭",
-       "C": "看电视"
-      },
-      "answer": "C",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        134
-       ]
-      }
-     },
-     {
-      "n": 16,
-      "zh": "关于女的，可以知道什么？",
-      "options": {
-       "A": "喜欢玩儿游戏",
-       "B": "看错了一个人",
-       "C": "去开花园的灯"
-      },
-      "transcript_zh": "女：刚才你去后面的花园了？ 男：没有，我一直在家里玩儿电脑游戏。 女：那是我看错了，那个人看上去真像你。 男：花园里没有灯，看错了也不奇怪。 问：关于女的，可以知道什么？",
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        199
-       ]
-      }
-     },
-     {
-      "n": 17,
-      "zh": "女的怎么了？",
-      "options": {
-       "A": "担心男的的身体",
-       "B": "耳朵进水了",
-       "C": "游泳很小心"
-      },
-      "transcript_zh": "男：小丽，你怎么了？ 女：刚才游泳时耳朵进水了，现在耳朵里一直不舒服。 男：过来，我帮你看一下。现在好些了吗？下次小心点儿。 女：好多了，让你担心了。 问：女的怎么了？",
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        199
-       ]
-      }
-     },
-     {
-      "n": 18,
-      "zh": "男的想试哪种颜色的衬衫？",
-      "options": {
-       "A": "白色",
-       "B": "蓝色",
-       "C": "黑色"
-      },
-      "transcript_zh": "女：先生，您看这件衬衫怎么样？ 男：还不错，除了白色，还有其他颜色的吗？ 女：还有蓝色和黑色的，拿一件您试试？ 男：好，蓝色会让我的脸看上去更年轻些。 问：男的想试哪种颜色的衬衫？",
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        199
-       ]
-      }
-     },
-     {
-      "n": 19,
-      "zh": "关于女的，可以知道什么？",
-      "options": {
-       "A": "感冒了",
-       "B": "没洗脸",
-       "C": "要买西药"
-      },
-      "transcript_zh": "男：你的脸色看上去不太好，哪儿不舒服啊？ 女：我感冒了，都快一个星期了。 男：我去药店给你买点儿药吧，买西药还是中药？ 女：好，买点儿中药吧。 问：关于女的，可以知道什么？",
-      "answer": "A",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        199
-       ]
-      }
-     },
-     {
-      "n": 20,
-      "zh": "女的要去做什么？",
-      "options": {
-       "A": "买船票",
-       "B": "买机票",
-       "C": "回国"
-      },
-      "transcript_zh": "男：回国的船票买好了吗？ 女：坐船虽然便宜，但是太慢了，要十四个小时。 男：那我们还是坐飞机吧，你去买两张机票，下周末的。 女：好的，我现在就去。 问：女的要去做什么？",
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        199
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "二、阅读 第一部分",
-    "type_zh": "阅读 第一部分",
-    "instruction_zh": "第21–25题：选择合适的问答",
-    "instruction_en": "Questions 21-25: Match the two parts of the same dialogue.",
-    "items": [
-     {
-      "n": "例",
-      "zh": "你知道怎么去那儿吗？",
-      "options": {
-       "A": "什么事让我们的女儿这么高兴？",
-       "B": "慢点儿，我这是第一次骑马。",
-       "C": "坐船或者坐火车都可以，你想怎么去？",
-       "D": "经过高中三年的认真学习，弟弟终于考上了大学。",
-       "E": "当然。我们先坐公共汽车，然后换地铁。",
-       "F": "这是你做的饭吗？看起来真好吃。"
-      },
-      "answer": "E",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        135
-       ]
-      }
-     },
-     {
-      "n": 21,
-      "zh": "坐船去吧，我还没坐过呢。",
-      "options": {
-       "A": "什么事让我们的女儿这么高兴？",
-       "B": "慢点儿，我这是第一次骑马。",
-       "C": "坐船或者坐火车都可以，你想怎么去？",
-       "D": "经过高中三年的认真学习，弟弟终于考上了大学。",
-       "E": "当然。我们先坐公共汽车，然后换地铁。",
-       "F": "这是你做的饭吗？看起来真好吃。"
-      },
-      "answer": "C",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        199
-       ]
-      }
-     },
-     {
-      "n": 22,
-      "zh": "别害怕，它很听话，你把脚放好，眼睛看着前面。",
-      "options": {
-       "A": "什么事让我们的女儿这么高兴？",
-       "B": "慢点儿，我这是第一次骑马。",
-       "C": "坐船或者坐火车都可以，你想怎么去？",
-       "D": "经过高中三年的认真学习，弟弟终于考上了大学。",
-       "E": "当然。我们先坐公共汽车，然后换地铁。",
-       "F": "这是你做的饭吗？看起来真好吃。"
-      },
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        199
-       ]
-      }
-     },
-     {
-      "n": 23,
-      "zh": "来，我们一起吃吧。",
-      "options": {
-       "A": "什么事让我们的女儿这么高兴？",
-       "B": "慢点儿，我这是第一次骑马。",
-       "C": "坐船或者坐火车都可以，你想怎么去？",
-       "D": "经过高中三年的认真学习，弟弟终于考上了大学。",
-       "E": "当然。我们先坐公共汽车，然后换地铁。",
-       "F": "这是你做的饭吗？看起来真好吃。"
-      },
-      "answer": "F",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        199
-       ]
-      }
-     },
-     {
-      "n": 24,
-      "zh": "太好了，我真为他高兴。",
-      "options": {
-       "A": "什么事让我们的女儿这么高兴？",
-       "B": "慢点儿，我这是第一次骑马。",
-       "C": "坐船或者坐火车都可以，你想怎么去？",
-       "D": "经过高中三年的认真学习，弟弟终于考上了大学。",
-       "E": "当然。我们先坐公共汽车，然后换地铁。",
-       "F": "这是你做的饭吗？看起来真好吃。"
-      },
-      "answer": "D",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        199
-       ]
-      }
-     },
-     {
-      "n": 25,
-      "zh": "她穿了条蓝色的裙子跟同学跳舞，同学说她漂亮极了。",
-      "options": {
-       "A": "什么事让我们的女儿这么高兴？",
-       "B": "慢点儿，我这是第一次骑马。",
-       "C": "坐船或者坐火车都可以，你想怎么去？",
-       "D": "经过高中三年的认真学习，弟弟终于考上了大学。",
-       "E": "当然。我们先坐公共汽车，然后换地铁。",
-       "F": "这是你做的饭吗？看起来真好吃。"
-      },
-      "answer": "A",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        199
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "二、阅读 第二部分",
-    "type_zh": "阅读 第二部分",
-    "instruction_zh": "第26–30题：选择合适的词语填空",
-    "instruction_en": "Questions 26-30: Choose the proper words to fill in the brackets.",
-    "word_bank": [
-     [
-      "A 耳朵",
-      "B 经过",
-      "C 短",
-      "D 过",
-      "E 声音",
-      "F 哭"
-     ]
-    ],
-    "items": [
-     {
-      "n": "例",
-      "zh": "她说话的（　）多好听啊！",
-      "options": {
-       "A": "耳朵",
-       "B": "经过",
-       "C": "短",
-       "D": "过",
-       "E": "声音",
-       "F": "哭"
-      },
-      "answer": "E",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        135
-       ]
-      }
-     },
-     {
-      "n": 26,
-      "zh": "你看，这是我上次坐火车（　）黄河时的照片。",
-      "options": {
-       "A": "耳朵",
-       "B": "经过",
-       "C": "短",
-       "D": "过",
-       "E": "声音",
-       "F": "哭"
-      },
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        199
-       ]
-      }
-     },
-     {
-      "n": 27,
-      "zh": "小冬又（　）了，你有什么办法吗？",
-      "options": {
-       "A": "耳朵",
-       "B": "经过",
-       "C": "短",
-       "D": "过",
-       "E": "声音",
-       "F": "哭"
-      },
-      "answer": "F",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        199
-       ]
-      }
-     },
-     {
-      "n": 28,
-      "zh": "一会你去洗脸的时候，别忘了也把（　）洗一下。",
-      "options": {
-       "A": "耳朵",
-       "B": "经过",
-       "C": "短",
-       "D": "过",
-       "E": "声音",
-       "F": "哭"
-      },
-      "answer": "A",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        199
-       ]
-      }
-     },
-     {
-      "n": 29,
-      "zh": "A：这件运动服有点儿（　），你给我拿一件长的吧。 B：行，我现在去给你拿。",
-      "options": {
-       "A": "耳朵",
-       "B": "经过",
-       "C": "短",
-       "D": "过",
-       "E": "声音",
-       "F": "哭"
-      },
-      "answer": "C",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        199
-       ]
-      }
-     },
-     {
-      "n": 30,
-      "zh": "A：这个周末你打算怎么（　）？ B：邻居请我们去他家玩儿游戏。",
-      "options": {
-       "A": "耳朵",
-       "B": "经过",
-       "C": "短",
-       "D": "过",
-       "E": "声音",
-       "F": "哭"
-      },
-      "answer": "D",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        199
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "二、阅读 第三部分",
-    "type_zh": "阅读 第三部分",
-    "instruction_zh": "第31–35题：选择正确答案",
-    "instruction_en": "Questions 31-35: Choose the right answers.",
-    "items": [
-     {
-      "n": "例",
-      "zh": "您是来参加今天会议的吗？您来早了一点儿，现在才八点半。您先进来坐吧。 ★会议最可能几点开始？",
-      "options": {
-       "A": "8点",
-       "B": "8点半",
-       "C": "9点"
-      },
-      "answer": "C",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        136
-       ]
-      }
-     },
-     {
-      "n": 31,
-      "zh": "我小时候住在中国最南边，一直没见过雪。前年我搬到北京了。虽然这儿的冬天很冷，我还不太习惯，但是我终于见到雪了，雪花儿白白的，特别漂亮。我高兴得站在雪地里照了很多照片，我想洗出来几张照片，发给我南方的朋友们看，让他们也高兴高兴。 ★我：",
-      "options": {
-       "A": "以前没见过雪",
-       "B": "喜欢很冷的天气",
-       "C": "洗了下雪的照片"
-      },
-      "answer": "A",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        199
-       ]
-      }
-     },
-     {
-      "n": 32,
-      "zh": "年轻人刚开始工作的时候，没有车也没有房，但是不用着急，虽然现在有的东西不多，但只要努力工作，这些东西早晚都会有的，人们常说的“面包会有的，牛奶也会有的”就是这个意思。 ★这段话告诉我们：",
-      "options": {
-       "A": "要努力工作",
-       "B": "不用着急买车",
-       "C": "不能有很多东西"
-      },
-      "answer": "A",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        199
-       ]
-      }
-     },
-     {
-      "n": 33,
-      "zh": "这次旅游，我们去了不少地方，每个地方都让我非常难忘。有的城市有地铁，有的城市有火车，有的城市可以骑自行车，有的城市还可以骑马。有的城市更有意思，河就是“街道”，船就是“公共汽车”，你能说出来这个城市在哪儿吗？ ★根据这段话，可以知道：",
-      "options": {
-       "A": "我想不起来城市的名字",
-       "B": "我常常坐地铁去旅行",
-       "C": "有的城市出门要坐船"
-      },
-      "answer": "C",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        199
-       ]
-      }
-     },
-     {
-      "n": 34,
-      "zh": "我想买辆十万左右的车，有了车以后，会更方便的。开车上下班，路上经过孩子的学校，可以接送他上下学。一个星期的工作学习以后，我们都很累，到了周末，可以开车出去玩儿玩儿，蓝蓝的天，白白的云，绿绿的草地，会让我们觉得舒服多了。 ★他为什么要买车？",
-      "options": {
-       "A": "车很便宜",
-       "B": "会很方便",
-       "C": "坐着舒服"
-      },
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        199
-       ]
-      }
-     },
-     {
-      "n": 35,
-      "zh": "去年秋天我回南方老家了，那里有高大的树，还有很多我叫不出来名字的花花草草，漂亮极了。每年快到冬天的时候，北方很多鸟都会飞到这儿来，在这儿过冬，等到第二年春天再飞回去。孩子们都很喜欢这些可爱的鸟，不愿意让它们离开。 ★根据这段话，可以知道：",
-      "options": {
-       "A": "我的老家在中国北方",
-       "B": "老家冬天有很多鸟",
-       "C": "孩子不想离开老家"
-      },
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        199
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "三、书写 第一部分",
-    "type_zh": "书写 第一部分",
-    "instruction_zh": "第36–40题：连词成句",
-    "instruction_en": "Questions 36-40: Rearrange the words/phrases to make sentences.",
-    "items": [
-     {
-      "n": "例",
-      "zh": "小船　上　一　河　条　有",
-      "answer": "河上有一条小船。",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        137
-       ]
-      }
-     },
-     {
-      "n": 36,
-      "zh": "停　慢慢　下来了　地　船",
-      "answer": "船慢慢地停下来了。",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        199
-       ]
-      }
-     },
-     {
-      "n": 37,
-      "zh": "是在哪儿　我想不起来　这张照片　照的　了",
-      "answer": "我想不起来这张照片是在哪儿照的了。",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        199
-       ]
-      }
-     },
-     {
-      "n": 38,
-      "zh": "看出来　你能　他们的脸　不一样　吗　有什么",
-      "answer": "你能看出来他们的脸有什么不一样吗？",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        199
-       ]
-      }
-     },
-     {
-      "n": 39,
-      "zh": "安静下来　鸟的叫声　能让　她",
-      "answer": "鸟的叫声能让她安静下来。",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        199
-       ]
-      }
-     },
-     {
-      "n": 40,
-      "zh": "让你的脸　很白　看上去　这件衣服",
-      "answer": "这件衣服让你的脸看上去很白。",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        199
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "三、书写 第二部分",
-    "type_zh": "书写 第二部分",
-    "instruction_zh": "第41–45题：看拼音，写汉字",
-    "instruction_en": "Questions 41-45: Write the characters based on their pinyin.",
-    "items": [
-     {
-      "n": "例",
-      "zh": "没（　）系，别难过，高兴点儿。",
-      "hint_zh": "guān",
-      "answer": "关",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        137
-       ]
-      }
-     },
-     {
-      "n": 41,
-      "zh": "骑（　）让我觉得很快乐。",
-      "hint_zh": "mǎ",
-      "answer": "马",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        199
-       ]
-      }
-     },
-     {
-      "n": 42,
-      "zh": "看上去这（　）先生很喜欢小孩子。",
-      "hint_zh": "wèi",
-      "answer": "位",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        199
-       ]
-      }
-     },
-     {
-      "n": 43,
-      "zh": "你想起来了吗？前年你是在哪儿（　）的春节？",
-      "hint_zh": "guò",
-      "answer": "过",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        199
-       ]
-      }
-     },
-     {
-      "n": 44,
-      "zh": "秋天以后，天会变得越来越（　），很早就会黑下来。",
-      "hint_zh": "duǎn",
-      "answer": "短",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        199
-       ]
-      }
-     },
-     {
-      "n": 45,
-      "zh": "（　）过超市的时候，你帮我买一瓶可乐。",
-      "hint_zh": "jīng",
-      "answer": "经",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        199
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "三、书写 第三部分",
-    "type_zh": "书写 第三部分",
-    "instruction_zh": "第46–50题：辨认汉字，选择正确的汉字填空",
-    "instruction_en": "Questions 46-50: Distinguish the characters and fill in the blanks.",
-    "items": [
-     {
-      "n": "例",
-      "zh": "我不知道________个地方在________儿。",
-      "hint_zh": "（那、哪）",
-      "answer": "那、哪",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        138
-       ]
-      }
-     },
-     {
-      "n": 46,
-      "zh": "天气真好，天是________色的，我们出去打________球吧。",
-      "hint_zh": "（蓝、篮）",
-      "answer": "蓝、篮",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        199
-       ]
-      }
-     },
-     {
-      "n": 47,
-      "zh": "刚才我去超市买________蛋了，回来的路上看见了一只很奇怪的________。",
-      "hint_zh": "（鸟、鸡）",
-      "answer": "鸡、鸟",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        199
-       ]
-      }
-     },
-     {
-      "n": 48,
-      "zh": "姐，你怎么又________了，我看你刚才还________得很高兴啊。",
-      "hint_zh": "（哭、笑）",
-      "answer": "哭、笑",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        199
-       ]
-      }
-     },
-     {
-      "n": 49,
-      "zh": "我________己去医院就行，没什么大的问题，就是________朵有点儿不舒服。",
-      "hint_zh": "（自、耳）",
-      "answer": "自、耳",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        199
-       ]
-      }
-     },
-     {
-      "n": 50,
-      "zh": "我又长高了，你看我的衣服就________道了，都________了。",
-      "hint_zh": "（短、知）",
-      "answer": "知、短",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        199
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "四、复习",
-    "type_zh": "复习",
-    "instruction_zh": "第1–2题：根据课文内容填空",
-    "instruction_en": "Questions 1-2: Fill in the blanks based on the texts in the textbook.",
-    "items": [
-     {
-      "n": 1,
-      "zh": "最近女儿跟以前不一样了，她喜欢把头发放在________后面，使她的________看________漂亮一些。爸爸想________她小时候喜欢________头发，像男孩子一样。",
-      "answer": "耳朵、脸、上去、起来、短",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        199
-       ]
-      }
-     },
-     {
-      "n": 2,
-      "zh": "小丽洗________几________骑马比赛的照片，但同事没看________那________骑得最快的是小刚。因为运动服让小刚看上去很年轻，小刚今天穿的________西服让他看上去像40岁。",
-      "answer": "出来、张、出来、位、蓝",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        199
-       ]
-      }
-     }
-    ]
-   }
-  ]
- },
- "audio": {
-  "textbook": [
-   "hsk3-textbook-1901.mp3",
-   "hsk3-textbook-1902.mp3",
-   "hsk3-textbook-1903.mp3",
-   "hsk3-textbook-1904.mp3",
-   "hsk3-textbook-1905.mp3"
   ],
-  "workbook": [
-   "hsk3-workbook-19-part1.mp3",
-   "hsk3-workbook-19-part2.mp3",
-   "hsk3-workbook-19-part3.mp3",
-   "hsk3-workbook-19-part4.mp3"
-  ]
- },
- "unclear": [
-  "课文3 (сурах бичиг PDF х.176) ба 注释1-ийн жишээ (12) (PDF х.178) хоёуланд «只要他爸爸学小鸟叫» гэж «他»-ээр хэвлэгдсэн; өмнөх өгүүлбэр «她就喜欢听她爸爸学鸟叫», багшийн ном (PDF х.134, 课文3 асуулт-хариулт) «只要她爸爸学小鸟叫» — «她». Пиньинь «tā» ижил. Номд байгаагаар нь (сурах бичигт «他», багшийн номд «她») бичсэн.",
-  "练习3 (描述图片 — PDF х.181): 4 харилцан яриа бүрийн 4 дэх мөр «A:» гэж хэвлэгдсэн (A/B/A/A) — утгаараа B-ийн хариу мэт. Номд байгаагаар нь үлдээсэн. (2)-ын «黑天» номд байгаагаар.",
-  "Дасгалын номын 复习 2 (PDF х.138) «让他看上去像40岁», сурах бичгийн 课文2 «看上去像40多岁» — номд байгаагаар тус бүрт нь.",
-  "课文1-ийн «耳朵后面» ба 注释1-ийн жишээ (17) «耳朵后边» — номд өөр өөрөөр хэвлэгдсэн, тус бүрийг хэвээр нь.",
-  "Багшийн номын 课文1 模仿练习 (PDF х.134): «A：我也想起来。她……。» — «了»-гүй (сурах бичигт «我也想起来了。»). Номд байгаагаар.",
-  "课文4 номд гарчиггүй (зөвхөн «4» ба аудио 19-4) — title_zh хоосон, title_en байхгүй. Өгүүлэмжийг өгүүлбэр тус бүрээр lines-д хувааж, 拼音课文-ын харгалзах хэсгийг оноосон.",
-  "拼音课文-ын гарчгийн пиньинь (Zài jiā / Zài kàn zhàopiàn / Zài Xiǎolì jiā) болон ярилцагчийн нэрийн пиньинь (bàba, māma, Xiǎolì, tóngshì, péngyou) схемд талбаргүй тул lines.pinyin-д зөвхөн яриаг оруулсан. 拼音课文-д «Á?», «gāoxìng gāoxìng», «Nǚ’ér/nǚ’ér» гэж хэвлэгдсэнээр.",
-  "Энэ хичээлд 专有名词 хүснэгт байхгүй; 黄河 нь 生词 хүснэгтэд 12-р үг, «n.» гэж орсон. * тэмдэгтэй үг байхгүй. 汉字知识， 文化 хэсэг байхгүй (汉字 = зөвхөн 旧字新词).",
-  "注释1-д бүтцийн хүснэгт сурах бичигт байхгүй (багшийн номд «动词＋出来／动词／形容词＋下来／动词＋起来» хүснэгт — teacher.steps-д). Сурах бичигт улаанаар (бичвэрээс авсан) тэмдэглэгдсэн жишээ: 注释1 (4)(8)(12)(18), 注释2 (3)(4).",
-  "热身1-ийн зураг (PDF х.175) — нэг нүүрний зураг дээр A–F үсгээр байрлал тэмдэглэсэн; pictures_desc_en-д байрлал бүрийг бичсэн. Хариулт багшийн номд (PDF х.130): ①E ②D ③F ④A ⑤B ⑥C.",
-  "Сурах бичгийн 练一练 (2 дүрэм × 3), 练习2 选词填空， 练习3 描述图片， 练习4 回答问题， 热身2, 运用1–2, багшийн номын 语言点扩展练习 (дүрэм 1-ийн 选词填空 5 асуулт, дүрэм 2-ын асуултууд), 汉字辨认练习 — хариулт хэвлэгдээгүй тул answer талбаргүй. Багшийн номын 课文4 «“我”为什么想把照片发给大家？» асуултад хариулт хэвлэгдээгүй.",
-  "Багшийн номын 汉字辨认练习 (PDF х.135) 2 баганаар хэвлэгдсэн (зүүн: 蓝/篮 · 哭/笑 · 短/知 | баруун: 鸟/鸡 · 自/耳) — confusable_pairs-д мөрөөр уншсан дарааллаар. Дасгалын номын 46–50-ийн хаалтанд (鸟、鸡), (短、知) гэж хэвлэгдсэн, хариулт «鸡、鸟», «知、短» (хоосон зайн дарааллаар).",
-  "Дасгалын номын сонсгол нэг CD тэмдэгтэй (19) — аудиог hsk3-workbook-19-part1…4.mp3 болгож хэсэг тус бүрт хуваасныг section.audio-д оноосон.",
-  "Дасгалын ном 听力 第三/四部分 — номд зөвхөн сонголтууд хэвлэгдсэн; item.zh-д багшийн номын хавсралтын «问：» асуултыг оруулсан (transcript_zh-д бүтнээр).",
-  "Сонсгол 第二部分 10: ★«现在她是长头发。» — бичвэрт «那时她比较瘦，还是短头发» гэж л байгаа, «одоо урт үстэй» гэж шууд хэлээгүй; 参考答案 (PDF х.199) √ — номд байгаагаар.",
-  "Дасгалын номд энэ хичээлд 51–54 (组词) хэсэг байхгүй — нийт 50 асуулт + 复习 2.",
-  "运用1 (PDF х.182) — үйл үг/тэмдэг нэр (看、听、想、黑、吃、瘦) ба нөхбөр (起来、出来、下来、上去)-ийг хоёр баганаар холбох дасгал; example_zh-д «左列／右列» гэж хоёр мөрөөр бичсэн (номд баганын гарчиг байхгүй)."
- ],
- "verified_pages": [
-  130,
-  131,
-  132,
-  133,
-  134,
-  135,
-  136,
-  137,
-  138,
-  175,
-  176,
-  177,
-  178,
-  179,
-  180,
-  181,
-  182,
-  183,
-  197,
-  198,
-  199
- ],
- "schema_version": 1
+  "schema_version": 1,
+  "hsk30": {
+    "source": "courseware",
+    "ref": {
+      "book": "hsk30_courseware",
+      "pages": [
+        5,
+        29,
+        37
+      ]
+    },
+    "new_words": [
+      {
+        "n": 1,
+        "zh": "变",
+        "pinyin": "biàn",
+        "pos": "v.",
+        "en": "change",
+        "text": 1
+      },
+      {
+        "n": 2,
+        "zh": "变成",
+        "pinyin": "biànchéng",
+        "pos": "v.",
+        "en": "become",
+        "text": 1
+      },
+      {
+        "n": 3,
+        "zh": "海",
+        "pinyin": "hǎi",
+        "pos": "n.",
+        "en": "sea",
+        "text": 4
+      },
+      {
+        "n": 4,
+        "zh": "河",
+        "pinyin": "hé",
+        "pos": "n.",
+        "en": "river",
+        "text": 4
+      }
+    ],
+    "grammar": [
+      {
+        "n": 1,
+        "title_zh": "过 + 名词",
+        "explanation_zh": "",
+        "examples": [
+          {
+            "zh": "过生日"
+          },
+          {
+            "zh": "过周末"
+          },
+          {
+            "zh": "过年"
+          },
+          {
+            "zh": "过节"
+          }
+        ]
+      }
+    ],
+    "exercises": [],
+    "unclear": [
+      "语言点 «洗照片» (17-р слайд) ба «照片／照相» (39-р слайд) слайд зөвхөн үг агуулж, жишээ өгүүлбэргүй тул hsk30.grammar-т ороогүй."
+    ]
+  }
 }

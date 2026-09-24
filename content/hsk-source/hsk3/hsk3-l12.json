@@ -1,14 +1,2020 @@
 {
- "level": "hsk3",
- "lesson": 12,
- "book": "HSK3",
- "title_zh": "把重要的东西放在我这儿吧",
- "title_pinyin": "Bǎ zhòngyào de dōngxi fàng zài wǒ zhèr ba",
- "title_en": "Leave the important items with me",
- "textbook": {
-  "ref": {
-   "book": "textbook",
-   "pages": [
+  "level": "hsk3",
+  "lesson": 12,
+  "book": "HSK3",
+  "title_zh": "把重要的东西放在我这儿吧",
+  "title_pinyin": "Bǎ zhòngyào de dōngxi fàng zài wǒ zhèr ba",
+  "title_en": "Leave the important items with me",
+  "textbook": {
+    "ref": {
+      "book": "textbook",
+      "pages": [
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122
+      ]
+    },
+    "warmup": [
+      {
+        "instruction_zh": "给下面的词语选择对应的图片",
+        "instruction_en": "Match the pictures with the words.",
+        "items": [
+          "①护照 hùzhào",
+          "②黑板 hēibǎn",
+          "③行李箱 xínglixiāng",
+          "④太阳 tàiyáng",
+          "⑤画儿 huàr",
+          "⑥包 bāo"
+        ],
+        "pictures_desc_en": [
+          "A: a bright sun shining in a blue sky",
+          "B: a red suitcase on wheels with a pull-up handle",
+          "C: a dark blue passport with “PASSPORT” printed on the cover",
+          "D: a person painting a picture of an arched gateway on an easel outdoors",
+          "E: a brown leather handbag",
+          "F: a green blackboard in a wooden frame decorated with flowers and pinned pictures"
+        ]
+      },
+      {
+        "instruction_zh": "下边这些东西，你会放在什么地方？",
+        "instruction_en": "Where would you put the following things?",
+        "items": [
+          "东西 | 放在哪儿",
+          "铅笔 qiānbǐ | 桌子上 zhuōzi shang",
+          "衣服 yīfu |",
+          "照片 zhàopiàn |",
+          "钱包 qiánbāo |",
+          "护照 hùzhào |",
+          "笔记本电脑 bǐjìběn diànnǎo |"
+        ]
+      }
+    ],
+    "texts": [
+      {
+        "n": 1,
+        "title_zh": "在家",
+        "title_en": "At home",
+        "kind": "dialogue",
+        "audio": "hsk3-textbook-1201.mp3",
+        "lines": [
+          {
+            "speaker": "小丽",
+            "zh": "今天太阳从西边出来了吗？",
+            "pinyin": "Jīntiān tàiyáng cóng xībian chūlai le ma?"
+          },
+          {
+            "speaker": "小刚",
+            "zh": "怎么了？",
+            "pinyin": "Zěnme le?"
+          },
+          {
+            "speaker": "小丽",
+            "zh": "你怎么这么早就要睡觉了？以前都要12点以后才睡觉。",
+            "pinyin": "Nǐ zěnme zhème zǎo jiù yào shuì jiào le? Yǐqián dōu yào shí'èr diǎn yǐhòu cái shuì jiào."
+          },
+          {
+            "speaker": "小刚",
+            "zh": "我明天8点就要到公司。",
+            "pinyin": "Wǒ míngtiān bā diǎn jiù yào dào gōngsī."
+          },
+          {
+            "speaker": "小丽",
+            "zh": "有事吗？",
+            "pinyin": "Yǒu shì ma?"
+          },
+          {
+            "speaker": "小刚",
+            "zh": "经理生气了，他告诉我，明天8点不到，以后就别来了。",
+            "pinyin": "Jīnglǐ shēng qì le, tā gàosu wǒ, míngtiān bā diǎn bú dào, yǐhòu jiù bié lái le."
+          }
+        ],
+        "new_words": [
+          {
+            "n": 1,
+            "zh": "太阳",
+            "pinyin": "tàiyáng",
+            "pos": "n.",
+            "en": "sun",
+            "text": 1
+          },
+          {
+            "n": 2,
+            "zh": "西",
+            "pinyin": "xī",
+            "pos": "n.",
+            "en": "west",
+            "text": 1
+          },
+          {
+            "n": 3,
+            "zh": "生气",
+            "pinyin": "shēng qì",
+            "pos": "v.",
+            "en": "angry",
+            "text": 1
+          }
+        ]
+      },
+      {
+        "n": 2,
+        "title_zh": "在家",
+        "title_en": "At home",
+        "kind": "dialogue",
+        "audio": "hsk3-textbook-1202.mp3",
+        "lines": [
+          {
+            "speaker": "小刚",
+            "zh": "我要跟周经理去外地办事，明天的飞机。",
+            "pinyin": "Wǒ yào gēn Zhōu jīnglǐ qù wàidì bàn shì, míngtiān de fēijī."
+          },
+          {
+            "speaker": "小丽",
+            "zh": "那我帮你把衣服放到行李箱里吧。什么时候回来？",
+            "pinyin": "Nà wǒ bāng nǐ bǎ yīfu fàngdào xínglixiāng li ba. Shénme shíhou huílai?"
+          },
+          {
+            "speaker": "小刚",
+            "zh": "一个星期就回来。",
+            "pinyin": "Yí ge xīngqī jiù huílai."
+          },
+          {
+            "speaker": "小丽",
+            "zh": "啊？一个星期以后才回来？",
+            "pinyin": "Á? Yí ge xīngqī yǐhòu cái huílai?"
+          },
+          {
+            "speaker": "小刚",
+            "zh": "你要自己照顾好自己，我已经给你准备好吃的和喝的了。",
+            "pinyin": "Nǐ yào zìjǐ zhàogù hǎo zìjǐ, wǒ yǐjīng gěi nǐ zhǔnbèi hǎo chī de hé hē de le."
+          },
+          {
+            "speaker": "小丽",
+            "zh": "好吧。我已经把我的照片放在你的包里了。",
+            "pinyin": "Hǎo ba. Wǒ yǐjīng bǎ wǒ de zhàopiàn fàng zài nǐ de bāo li le."
+          }
+        ],
+        "new_words": [
+          {
+            "n": 4,
+            "zh": "行李箱",
+            "pinyin": "xínglixiāng",
+            "pos": "n.",
+            "en": "luggage, suitcase",
+            "text": 2
+          },
+          {
+            "n": 5,
+            "zh": "自己",
+            "pinyin": "zìjǐ",
+            "pos": "pron.",
+            "en": "self",
+            "text": 2
+          },
+          {
+            "n": 6,
+            "zh": "包",
+            "pinyin": "bāo",
+            "pos": "n.",
+            "en": "bag, sack",
+            "text": 2
+          }
+        ]
+      },
+      {
+        "n": 3,
+        "title_zh": "在机场",
+        "title_en": "At the airport",
+        "kind": "dialogue",
+        "audio": "hsk3-textbook-1203.mp3",
+        "lines": [
+          {
+            "speaker": "周明",
+            "zh": "你怎么才来？",
+            "pinyin": "Nǐ zěnme cái lái?"
+          },
+          {
+            "speaker": "小刚",
+            "zh": "对不起，周经理，来机场的路上我才发现忘带护照了。",
+            "pinyin": "Duìbuqǐ, Zhōu jīnglǐ, lái jīchǎng de lùshang wǒ cái fāxiàn wàng dài hùzhào le."
+          },
+          {
+            "speaker": "周明",
+            "zh": "快点吧，飞机就要起飞了。",
+            "pinyin": "Kuài diǎnr ba, fēijī jiù yào qǐfēi le."
+          },
+          {
+            "speaker": "小刚",
+            "zh": "您有钱吗？司机把我送到机场的时候，我才发现忘记带钱包了。",
+            "pinyin": "Nín yǒu qián ma? Sījī bǎ wǒ sòng dào jīchǎng de shíhou, wǒ cái fāxiàn wàngjì dài qiánbāo le."
+          },
+          {
+            "speaker": "周明",
+            "zh": "我看你还是把重要的东西放在我这儿吧。",
+            "pinyin": "Wǒ kàn nǐ háishi bǎ zhòngyào de dōngxi fàng zài wǒ zhèr ba."
+          }
+        ],
+        "new_words": [
+          {
+            "n": 7,
+            "zh": "发现",
+            "pinyin": "fāxiàn",
+            "pos": "v.",
+            "en": "to discover",
+            "text": 3
+          },
+          {
+            "n": 8,
+            "zh": "护照",
+            "pinyin": "hùzhào",
+            "pos": "n.",
+            "en": "passport",
+            "text": 3
+          },
+          {
+            "n": 9,
+            "zh": "起飞",
+            "pinyin": "qǐfēi",
+            "pos": "v.",
+            "en": "(of an aircraft) to take off",
+            "text": 3
+          },
+          {
+            "n": 10,
+            "zh": "司机",
+            "pinyin": "sījī",
+            "pos": "n.",
+            "en": "driver",
+            "text": 3
+          }
+        ]
+      },
+      {
+        "n": 4,
+        "title_zh": "",
+        "kind": "narrative",
+        "audio": "hsk3-textbook-1204.mp3",
+        "lines": [
+          {
+            "zh": "我是一个中学老师，教学生画画儿。",
+            "pinyin": "Wǒ shì yí ge zhōngxué lǎoshī, jiāo xuésheng huà huàr."
+          },
+          {
+            "zh": "每次下课前，我都会把下次学生需要带的东西写在黑板上，但是每次上课时，总会有学生忘了拿铅笔，所以我有点儿生气，不是因为他们没带铅笔，是因为他们没有好的学习习惯。",
+            "pinyin": "Měi cì xià kè qián, wǒ dōu huì bǎ xià cì xuésheng xūyào dài de dōngxi xiě zài hēibǎn shang, dànshì měi cì shàng kè shí, zǒng huì yǒu xuésheng wàngle ná qiānbǐ, suǒyǐ wǒ yǒudiǎnr shēng qì, bú shì yīnwèi tāmen méi dài qiānbǐ, shì yīnwèi tāmen méiyǒu hǎo de xuéxí xíguàn."
+          }
+        ],
+        "new_words": [
+          {
+            "n": 11,
+            "zh": "教",
+            "pinyin": "jiāo",
+            "pos": "v.",
+            "en": "to teach",
+            "text": 4
+          },
+          {
+            "n": 12,
+            "zh": "画",
+            "pinyin": "huà",
+            "pos": "v./n.",
+            "en": "to draw, to paint; drawing, painting",
+            "text": 4
+          },
+          {
+            "n": 13,
+            "zh": "需要",
+            "pinyin": "xūyào",
+            "pos": "v.",
+            "en": "to need",
+            "text": 4
+          },
+          {
+            "n": 14,
+            "zh": "黑板",
+            "pinyin": "hēibǎn",
+            "pos": "n.",
+            "en": "blackboard",
+            "text": 4
+          }
+        ]
+      }
+    ],
+    "grammar": [
+      {
+        "n": 1,
+        "title_zh": "“才”和“就”",
+        "title_en": "Comparison of “才” and “就”",
+        "explanation_zh": "“才”和“就”都可以放在动词前做状语。\n“就”表示说话人认为动作发生得早，进行得快、顺利。例如：（1）–（4）\n“才”表示说话人认为动作发生得晚，进行得慢、不顺利。例如：（5）–（8）",
+        "explanation_en": "Both “才” and “就” can be used as an adverbial modifier before a verb.\n“就” indicates that in the speaker’s opinion, the action happened early, or went on fast or smoothly. For example: (1)–(4)\n“才” indicates that in the speaker’s opinion, the action happened late, or went on slowly or unsatisfactorily. For example: (5)–(8)",
+        "examples": [
+          {
+            "n": 1,
+            "zh": "我早上五点就起床了。"
+          },
+          {
+            "n": 2,
+            "zh": "坐飞机一个小时就到了。"
+          },
+          {
+            "n": 3,
+            "zh": "我很容易就找到了他的家。"
+          },
+          {
+            "n": 4,
+            "zh": "你怎么这么早就要睡觉了？"
+          },
+          {
+            "n": 5,
+            "zh": "八点上课，他九点才起床。"
+          },
+          {
+            "n": 6,
+            "zh": "坐火车八个小时才能到。"
+          },
+          {
+            "n": 7,
+            "zh": "弟弟三个小时才做完作业。"
+          },
+          {
+            "n": 8,
+            "zh": "来机场的路上我才发现忘带护照了。"
+          }
+        ],
+        "practice_instruction_zh": "练一练　完成对话 Complete the dialogues.",
+        "practice": [
+          {
+            "n": 1,
+            "zh": "A：你昨天几点回的家？ B：________。"
+          },
+          {
+            "n": 2,
+            "zh": "A：昨天的作业你多长时间写完的？ B：________。"
+          },
+          {
+            "n": 3,
+            "zh": "A：你昨天睡了几个小时？ B：________。"
+          }
+        ]
+      },
+      {
+        "n": 2,
+        "title_zh": "“把”字句2：A把B+V+在/到/给……",
+        "title_en": "The Ba-Sentence 2: A把B + V + 在/到/给……",
+        "explanation_zh": "汉语中，表示对确定的人或事物做出相应动作，使其发生位置上的改变，多用“把”字句表达，其结构为“A把B+V+在/到+location”。例如：（1）–（4）\n表示通过动作使某确定事物发生关系上的转移，可以用“A把B+V+给+sb.”例如：（5）–（8）",
+        "explanation_en": "In Chinese, a ba-sentence is often used to indicate a certain action is done on a definite person or thing and has changed the location of the person or thing, the structure being “A把B + V + 在/到 + location”. For example: (1)–(4)\nIf an action has changed the owner or user of a definite object, the structure “A把B + V + 给 + sb.” is used. For example: (5)–(8)",
+        "structure_rows": [
+          "A把B+V+在/到+location",
+          "A把B+V+给+sb."
+        ],
+        "examples": [
+          {
+            "n": 1,
+            "zh": "我把照片放在你包里了。"
+          },
+          {
+            "n": 2,
+            "zh": "老师把作业放在桌子上了。"
+          },
+          {
+            "n": 3,
+            "zh": "我没把裤子放到椅子上。"
+          },
+          {
+            "n": 4,
+            "zh": "我帮你把衣服放到行李箱里吧。"
+          },
+          {
+            "n": 5,
+            "zh": "我把鲜花送给老师了。"
+          },
+          {
+            "n": 6,
+            "zh": "我朋友把书借给我了。"
+          },
+          {
+            "n": 7,
+            "zh": "弟弟没把钱还给哥哥。"
+          },
+          {
+            "n": 8,
+            "zh": "你帮我把这本书带给小刚。"
+          }
+        ],
+        "practice_instruction_zh": "练一练　用提示词完成句子 Complete the sentences with the words given.",
+        "practice": [
+          {
+            "n": 1,
+            "zh": "我把书________。",
+            "hint_zh": "（V在）"
+          },
+          {
+            "n": 2,
+            "zh": "司机把我________。",
+            "hint_zh": "（V到）"
+          },
+          {
+            "n": 3,
+            "zh": "我想把这些吃的________。",
+            "hint_zh": "（V给）"
+          }
+        ]
+      }
+    ],
+    "exercises": [
+      {
+        "n": 1,
+        "type_zh": "朗读",
+        "instruction_zh": "朗读下列短语和句子",
+        "instruction_en": "Read the following phrases and sentences aloud.",
+        "audio": "hsk3-textbook-1205.mp3",
+        "items": [
+          {
+            "n": 1,
+            "zh": "生气：很生气／不生气／别生气／经理生气了。"
+          },
+          {
+            "n": 2,
+            "zh": "自己：我自己／他们自己／你自己去吧／你要自己照顾好自己。"
+          },
+          {
+            "n": 3,
+            "zh": "护照：一本护照／办护照／护照照片／来机场的路上我才发现忘带护照了。"
+          },
+          {
+            "n": 4,
+            "zh": "教：教课／教汉语／教了十年／我教学生画画儿。"
+          },
+          {
+            "n": 5,
+            "zh": "需要：不需要／需要休息／需要学习／我把需要带的东西写在黑板上。"
+          }
+        ]
+      },
+      {
+        "n": 2,
+        "type_zh": "选词填空",
+        "instruction_zh": "选择恰当的词语填空",
+        "instruction_en": "Choose the proper words to fill in the blanks.",
+        "word_bank": [
+          [
+            "黑板",
+            "司机",
+            "画",
+            "包",
+            "护照"
+          ],
+          [
+            "发现",
+            "生气",
+            "自己",
+            "行李箱",
+            "起飞"
+          ]
+        ],
+        "items": [
+          {
+            "n": 1,
+            "zh": "这张________真漂亮！是你的吗？"
+          },
+          {
+            "n": 2,
+            "zh": "教室后边的那块________上写着几个字，你看得见吗？"
+          },
+          {
+            "n": 3,
+            "zh": "你看，就是那位________找到了我的手机。"
+          },
+          {
+            "n": 4,
+            "zh": "桌子上有一本________，是谁的？"
+          },
+          {
+            "n": 5,
+            "zh": "请问，这个小________能带上飞机吗？"
+          },
+          {
+            "n": 6,
+            "zh": "A：我现在能去一下洗手间吗？ B：对不起，飞机就要________了，请您坐好。"
+          },
+          {
+            "n": 7,
+            "zh": "A：你怎么了？ B：今天我又迟到了，老师都________了。"
+          },
+          {
+            "n": 8,
+            "zh": "A：我________公司楼下那家店的蛋糕特别好吃。 B：是吗？今天我也去买一块。"
+          },
+          {
+            "n": 9,
+            "zh": "A：我的衣服太多了！ B：你把衣服放在我的________里吧，我的箱子大。"
+          },
+          {
+            "n": 10,
+            "zh": "A：我出国一个星期，你怎么办？ B：不用担心，我可以照顾好________。"
+          }
+        ]
+      },
+      {
+        "n": 3,
+        "type_zh": "描述图片",
+        "instruction_zh": "用本课新学的语言点和词语描述图片",
+        "instruction_en": "Describe the pictures using the newly-learned language points and words.",
+        "items": [
+          {
+            "n": 1,
+            "zh": "A：你怎么不上飞机？ B：我________发现忘了带护照了。 A：那怎么办？ B：我让妈妈把________。",
+            "picture_desc_en": "A woman in sunglasses and a purple top sitting on a black suitcase next to a red suitcase, resting her chin on her hand."
+          },
+          {
+            "n": 2,
+            "zh": "A：9点半了，你怎么________来？ B：起晚了，还等了半天公共汽车。 A：你的车呢？ B：我把________。",
+            "picture_desc_en": "A young man in a dark suit and pink tie looking at his wristwatch in an office."
+          },
+          {
+            "n": 3,
+            "zh": "A：你带我们去游泳吧。 B：行，你是刚学会游泳吗？ A：不是，我两年前________。 B：好，我一会儿就把________游泳馆。",
+            "picture_desc_en": "A woman and two children sitting in the open back of a car."
+          },
+          {
+            "n": 4,
+            "zh": "A：起床吧，已经8点了。 B：再让我睡会儿吧，昨晚________。 A：那我先起来了。我的眼镜呢？ B：昨天晚上我把________。",
+            "picture_desc_en": "A pair of black-framed glasses lying on a white computer keyboard."
+          }
+        ]
+      },
+      {
+        "n": 4,
+        "type_zh": "回答问题",
+        "instruction_zh": "根据课文回答问题",
+        "instruction_en": "Answer the questions according to the texts.",
+        "items": [
+          {
+            "n": 1,
+            "zh": "小刚平时几点睡觉？今天呢？"
+          },
+          {
+            "n": 2,
+            "zh": "小刚什么时候出差回来？"
+          },
+          {
+            "n": 3,
+            "zh": "小刚给小丽准备了什么？小丽呢？"
+          },
+          {
+            "n": 4,
+            "zh": "小刚今天忘带什么了？"
+          },
+          {
+            "n": 5,
+            "zh": "每次下课以前，老师会做什么？"
+          },
+          {
+            "n": 6,
+            "zh": "老师为什么有点儿生气？"
+          }
+        ]
+      }
+    ],
+    "characters": {
+      "knowledge_title_zh": "旧字新词",
+      "knowledge_zh": "读读下面的词语，想想组成的新词是什么意思。",
+      "knowledge_en": "Read the following words and guess the meanings of the newly-formed ones.",
+      "word_game": [
+        {
+          "parts": [
+            "钱",
+            "包"
+          ],
+          "result": "钱包"
+        },
+        {
+          "parts": [
+            "电子邮件",
+            "行李箱"
+          ],
+          "result": "电子邮箱"
+        },
+        {
+          "parts": [
+            "行李箱",
+            "杯子"
+          ],
+          "result": "箱子"
+        }
+      ],
+      "confusable_pairs": [
+        [
+          "已",
+          "己"
+        ],
+        [
+          "起",
+          "超"
+        ],
+        [
+          "司",
+          "同"
+        ],
+        [
+          "气",
+          "汽"
+        ],
+        [
+          "现",
+          "视"
+        ]
+      ]
+    },
+    "application": [
+      {
+        "title_zh": "双人活动",
+        "instruction_zh": "两个人一组，互相询问并比较两个人的生活习惯。",
+        "instruction_en": "Work in pairs. Ask about and compare each other’s living habits.",
+        "example_zh": [
+          "表格：| | | 我 | 朋友 |",
+          "| 1 | 起床 | 我每天早上6点就起床。 | 我每天早上8点才起床。 |",
+          "| 2 | 到教室 | | |",
+          "| 3 | 学汉语 | | |",
+          "| 4 | 睡觉 | | |",
+          "| 5 | 做完作业 | | |",
+          "| 6 | 吃晚饭 | | |"
+        ]
+      },
+      {
+        "title_zh": "小组活动",
+        "instruction_zh": "3～4人一组，用“把”字句说说每个人平时都把日常用品放在哪儿，找找谁和自己的习惯一样。",
+        "instruction_en": "Work in groups of 3-4. Talk about where you usually put certain articles for daily use using ba-sentences, and find out who have the same habits as yours.",
+        "example_zh": [
+          "例如：我把电脑放在桌子上。",
+          "提示词：钱包　护照　汉语书　衣服　裤子　衬衫　照片　足球　书包",
+          "表格：| 东西 | 谁跟我一样 | 放在哪儿 |",
+          "| 电脑 | 小刚 | 我们都把电脑放在桌子上。 |"
+        ]
+      }
+    ],
+    "saying": {
+      "zh": "习惯成自然",
+      "pinyin": "Xíguàn chéng zìrán",
+      "en": "Habit is a second nature",
+      "explanation_zh": "“习惯成自然”，这里“成”是变成的意思。这句话的意思是，平时做事的方法习惯了，慢慢就变成自然的事了，很难再改变了。这句话告诉我们要养成好的习惯，不要觉得不好的事情只做一次没关系，如果不注意，慢慢就会变成很自然的事，到时候就不容易发现错误，也不容易改变了。",
+      "explanation_en": "In the saying “习惯成自然”, “成” means “to become”. The sentence means that when the way of doing something turns into a habit, it becomes natural and hard to change. It tells us to form good habits and not to think it’s OK to do something bad just once, because the bad deed may gradually become a natural habit without you knowing it and by then, it would be hard to discover or change it."
+    }
+  },
+  "teacher": {
+    "ref": {
+      "book": "teacher",
+      "pages": [
+        84,
+        85,
+        86,
+        87,
+        88,
+        89
+      ]
+    },
+    "objectives_zh": [
+      "重点词语：学生能够熟练掌握：“生气、发现、起飞、教、画、需要”的词义和用法",
+      "语言点：学生能够了解并掌握：（1）副词“才”和“就”的区别（2）“把”字句表示物体位置上的变化或关系上的转移",
+      "汉字：学生能够：根据已学生词猜测出3个旧字新词“钱包、电子邮箱、箱子”的意思",
+      "功能：学生能够：（1）用“才”和“就”描述主观认为动作的早晚快慢（2）用“把”字句描述位置上的改变和关系上的转移"
+    ],
+    "steps": [
+      {
+        "title_zh": "复习旧课",
+        "body_zh": "1 教师展示第11课的热身图片，请学生根据图片说出生词。\n2 教师根据第11课的内容进行提问。\n（1）你有事不能去图书馆，请朋友帮你还书，该怎么说？\n（2）夏天的晚上，出门的时候你要做什么？\n（3）你习惯用电脑做什么？\n（4）昨天你学了多长时间的汉语？\n（5）比较贵的手机多少钱一个？比较便宜的呢？你觉得我买哪个比较好？"
+      },
+      {
+        "title_zh": "学习新课 1 热身",
+        "body_zh": "热身1：教师可依次出示热身部分的词语卡片，要求学生集体认读并请单个学生说出对应图片的编号，教师评判正误；最后全体学生齐读热身环节所有词语，要求语音标准，声调准确。\n答案：①C　②F　③B　④A　⑤D　⑥E\n热身2：可留至语言点（2）“‘把’字句2：A把B+动词+在/到/给……”导入时使用。"
+      },
+      {
+        "title_zh": "2 生词",
+        "body_zh": "（1）生词快速认读及正音\n太阳、西、生气、行李箱、自己、包、发现、护照、起飞、司机、教、画、需要、黑板\n· 教师先带领学生快速认读一遍生词；\n· 取消拼音，带领学生再次认读；\n· 请单个学生独自认读2-3个生词；\n· 最后全班一起快速认读所有的生词。\n（2）生词讲解方式\n· 直观法（如图片、照片、实物等）展示：太阳、西、行李箱、包、护照、司机、画（n.）、黑板\n· 肢体展示：自己、画（v.）\n（3）重点生词扩展及常用搭配\n生气—很生气—我忘了爸爸的生日，他很生气。\n　—不生气—这件事是我错了，你别生气。\n发现—发现了—没发现—我昨天发现了一个很好吃的饭馆。\n起飞—飞机起飞—八点起飞—飞机就要起飞了，请您坐好。\n教—教我—教汉语—谁教你们画画儿？\n画—画画儿—画一张画儿—他会画中国画儿。\n　—画得好—你画画儿画得怎么样？\n需要—需要铅笔—需要照顾—去旅游，需要带什么东西？\n练习册相关练习：第78页／一／第一部分，第81页／二／第二部分"
+      },
+      {
+        "title_zh": "3 语言点（1）“才”和“就”",
+        "body_zh": "① 语言点解析\n“才”放在动词前做状语，表示说话人认为动作发生得晚，进行得慢、不顺利。“就”放在动词前做状语，表示说话人认为动作发生得早，进行得快、顺利。\n［才＋动词］\n［就＋动词］\n② 语言点导入\n教师在黑板上写出三个句子，引发学生比较并思考，引导学生理解目标句。\n8：30上课。\n大山7：00来了。\n马可9：30来了。\n教师：他们谁来得早？谁来得晚？\n学生：大山来得早，马可来得晚。\n教师：你们觉得大山来得早，可以说“大山七点就来了”，你们觉得马可来得晚，可以说“马可九点半才来”。\n③ 语言点操练\n教师利用对比法，给出短语，请学生说句子：\n我早上五点起床，他早上九点起床——我早上五点就起床了，他九点才起床。\n坐飞机一个小时到，坐火车八个小时到\n我作业写了二十分钟，他写了两个小时\n我感冒三天好了，他一个星期好了\n昨天我5点回家，妈妈8点回家\n④ 语言点扩展练习\n教师提问，请学生根据实际情况回答。\n昨天你学了几个小时汉语？\n上周六你几点睡觉？\n你打算什么时候结婚？\n注意：“才”和“就”表示的早晚是主观的感觉，例如，我平时早上十点起床，今天九点半起的，就可以说“今天我九点半就起床了”，表达“九点半起床很早”的意思。“才V”后可不加“了”。"
+      },
+      {
+        "title_zh": "3 语言点（2）“把”字句2：A把B+动词+在/到/给……",
+        "body_zh": "① 语言点解析\n“把”字句在动词后加上“在/到+地点”表示对确定的人或事物做出相应动作，使其发生位置上的改变；动词后加上“给+对象”表示通过动作使某确定事物发生关系上的转移。\n［A把B+动词+在/到+地点名词］\n［A把B+动词+给+对象］\n② 语言点导入\n教师可利用本课热身2的表格导入语言点。\n教师带领学生认读表格中的名词。\n教师示范：\n教师：铅笔，你会放在哪儿？\n学生：我会放在桌子上。\n教师引导学生说出目标句：我把铅笔放在桌子上。\n③ 语言点操练\n教师可利用热身2的表格操练语言点。\n学生向教师提问，教师作答后，请学生说出目标句。\n目标句：我把衣服放在床上了。\n　　　　我把照片放到钱包里了。\n　　　　我把钱包给太太了。\n　　　　我把护照放在家里了。\n　　　　我把笔记本电脑放在桌子上了。\n④ 语言点扩展练习\n教师利用热身2，让学生两人一组互相询问并回答。\n注意：“把”字句的宾语是定指的，例如不能说“我把一本书放在桌子上了”。"
+      },
+      {
+        "title_zh": "4 课文 课文1",
+        "body_zh": "（1）让学生听两遍录音并回答下列问题：\n男的（小刚）以前几点睡觉？——他以前都要12点以后才睡觉。\n小刚明天几点要到公司？——他明天8点就要到公司。\n小刚明天为什么要这样做？——他的经理生气了，经理告诉他，明天8点不到，以后就不用去了。\n（2）教师领读课文两遍，让学生分角色朗读课文，注意说话人的语气。\n（3）模仿练习\n学生两人一组，根据提示词模仿课文内容进行对话练习。\nA：今天太阳……？\nB：怎么了？\nA：你怎么……了？以前都要……。\nB：我明天……\nA：有事吗？\nB：……。"
+      },
+      {
+        "title_zh": "4 课文 课文2",
+        "body_zh": "（1）让学生听两遍录音并回答下列问题：\n男的（小刚）明天要做什么？——他要跟周经理去外地办事。\n小刚什么时候回来？——他一个星期以后回来。\n女的（小丽）帮他做什么了？——她帮小刚把衣服放到行李箱里，把她的照片放在小刚的包里了。\n（2）教师领读课文两遍，让学生分角色朗读课文。\n（3）模仿练习\n学生两人一组，根据提示词模仿课文内容进行对话练习。\nA：我要……，明天的……。\nB：那我帮你……。什么……回来？\nA：……回来。\nB：啊？……才回来？\nA：你要……，我已经……。\nB：好吧。我已经……。"
+      },
+      {
+        "title_zh": "4 课文 课文3",
+        "body_zh": "（1）让学生听两遍录音并回答下列问题：\n第二个人（小刚）什么时候发现忘带护照的？——他来机场的路上才发现忘带护照的。\n小刚还忘记带什么了？——他忘记带钱包了。\n周经理建议他怎么做？——建议他把重要的东西放在自己这儿。\n（2）教师领读课文两遍，让学生分角色朗读课文，注意说话人的语气。\n（3）教师给提示词，带领学生复述课文。\n提示词：机场、发现、护照、起飞、司机、钱包、重要"
+      },
+      {
+        "title_zh": "4 课文 课文4",
+        "body_zh": "（1）快速阅读，并回答：“我”为什么生气？\n（2）教师领读课文两遍，并回答下列问题：\n“我”教学生什么？——“我”教学生画画儿。\n每次下课前，“我”会做什么？——“我”会把下次学生需要带的东西写在黑板上。\n（3）教师给提示词，带领学生复述课文。\n提示词：中学、教、画、下课前、需要、黑板、忘了、生气、不是……而是……\n（4）教师请学生根据课文，说一个自己老师生气的故事。\n练习册相关练习：第84页／四"
+      },
+      {
+        "title_zh": "5 汉字",
+        "body_zh": "旧字新词：\n① 教师领读以前学过的词语和新词，并让学生猜猜新词的意思。\n· 领读：钱、包、钱包\n问学生：“钱包”是什么意思？——放钱的包。\n扩展提问：我们学习过哪些“包”？——书包、钥匙包、卡包、公文包。（根据实际情况选用）\n· 领读：电子邮件、行李箱、电子邮箱\n问学生：“电子邮箱”是什么意思？——放电子邮件的地方。\n· 领读：行李箱、杯子、箱子\n问学生：“箱子”是什么意思？——放东西的东西。\n② 教师领读新词扩展，通过情景，理解新词的意思和用法：\n钱包：我的钱包／钱包里／我的钱包里有女朋友的照片。\n电子邮箱：电子邮箱里／发到电子邮箱／我的电子邮箱里没有你的邮件。\n箱子：一个箱子／箱子里／我把夏天的衣服放到箱子里了。\n汉字辨认练习：\n辨认下列汉字并组词。\n已：________、________　起：________、________\n己：________、________　超：________、________\n司：________、________　气：________、________\n同：________、________　汽：________、________\n现：________、________\n视：________、________\n练习册相关练习：第84页／三／第三部分"
+      },
+      {
+        "title_zh": "6 补充课堂活动——布置会议场所",
+        "body_zh": "教师将全班分成两组，每组根据板书提示，写下来怎么布置会场，看看哪组布置得又好又快。\n板书提示：把、咖啡、茶、水、杯子、笔记本、笔、椅子、桌子、空调、灯、电脑……"
+      },
+      {
+        "title_zh": "7 俗语",
+        "body_zh": "教师引导学生理解俗语的含义，注意这里的“自然”表示的是自然的事，一件事情做多了，就变成了自然的事。例如，我现在吃完晚饭都会去外边走走，习惯成自然了。"
+      },
+      {
+        "title_zh": "8 本课小结",
+        "body_zh": "· 语言点：用“才”和“就”表示人的主观感受\n　　　　　用“把”字句表示事物位置或关系的转移\n· 汉　字：旧字新词：钱包、电子邮箱、箱子"
+      }
+    ],
+    "notes_zh": [
+      "注意：“才”和“就”表示的早晚是主观的感觉，例如，我平时早上十点起床，今天九点半起的，就可以说“今天我九点半就起床了”，表达“九点半起床很早”的意思。“才V”后可不加“了”。（语言点1）",
+      "注意：“把”字句的宾语是定指的，例如不能说“我把一本书放在桌子上了”。（语言点2）",
+      "注意这里的“自然”表示的是自然的事，一件事情做多了，就变成了自然的事。例如，我现在吃完晚饭都会去外边走走，习惯成自然了。（俗语）"
+    ],
+    "warmup_answers_zh": [
+      "热身1 答案：①C　②F　③B　④A　⑤D　⑥E",
+      "热身2：可留至语言点（2）“‘把’字句2：A把B+动词+在/到/给……”导入时使用。"
+    ],
+    "text_questions": [
+      {
+        "text": 1,
+        "q_zh": "男的（小刚）以前几点睡觉？",
+        "a_zh": "他以前都要12点以后才睡觉。"
+      },
+      {
+        "text": 1,
+        "q_zh": "小刚明天几点要到公司？",
+        "a_zh": "他明天8点就要到公司。"
+      },
+      {
+        "text": 1,
+        "q_zh": "小刚明天为什么要这样做？",
+        "a_zh": "他的经理生气了，经理告诉他，明天8点不到，以后就不用去了。"
+      },
+      {
+        "text": 2,
+        "q_zh": "男的（小刚）明天要做什么？",
+        "a_zh": "他要跟周经理去外地办事。"
+      },
+      {
+        "text": 2,
+        "q_zh": "小刚什么时候回来？",
+        "a_zh": "他一个星期以后回来。"
+      },
+      {
+        "text": 2,
+        "q_zh": "女的（小丽）帮他做什么了？",
+        "a_zh": "她帮小刚把衣服放到行李箱里，把她的照片放在小刚的包里了。"
+      },
+      {
+        "text": 3,
+        "q_zh": "第二个人（小刚）什么时候发现忘带护照的？",
+        "a_zh": "他来机场的路上才发现忘带护照的。"
+      },
+      {
+        "text": 3,
+        "q_zh": "小刚还忘记带什么了？",
+        "a_zh": "他忘记带钱包了。"
+      },
+      {
+        "text": 3,
+        "q_zh": "周经理建议他怎么做？",
+        "a_zh": "建议他把重要的东西放在自己这儿。"
+      },
+      {
+        "text": 4,
+        "q_zh": "“我”为什么生气？"
+      },
+      {
+        "text": 4,
+        "q_zh": "“我”教学生什么？",
+        "a_zh": "“我”教学生画画儿。"
+      },
+      {
+        "text": 4,
+        "q_zh": "每次下课前，“我”会做什么？",
+        "a_zh": "“我”会把下次学生需要带的东西写在黑板上。"
+      }
+    ],
+    "summary_zh": "语言点：用“才”和“就”表示人的主观感受；用“把”字句表示事物位置或关系的转移。汉字：旧字新词：钱包、电子邮箱、箱子。"
+  },
+  "workbook": {
+    "ref": {
+      "book": "workbook",
+      "pages": [
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88
+      ]
+    },
+    "answers_ref": {
+      "book": "teacher",
+      "pages": [
+        176,
+        177,
+        178
+      ]
+    },
+    "sections": [
+      {
+        "n": "一、听力 第一部分",
+        "type_zh": "听力 第一部分",
+        "instruction_zh": "第1–5题：听对话，选择与对话内容一致的图片",
+        "instruction_en": "Questions 1-5: Choose the right picture for each dialogue you hear.",
+        "audio": "hsk3-workbook-12-part1.mp3",
+        "items": [
+          {
+            "n": "例",
+            "zh": "男：喂，请问张经理在吗？ 女：他正在开会，您半个小时以后再打，好吗？",
+            "transcript_zh": "男：喂，请问张经理在吗？ 女：他正在开会，您半个小时以后再打，好吗？",
+            "options": {
+              "A": "[picture] the cabin of a passenger plane with rows of seats and a flight attendant in the aisle",
+              "B": "[picture] a row of hard-shell suitcases of different sizes",
+              "C": "[picture] a board with the words “说普通话 写规范字” and vertical inscriptions on both sides",
+              "D": "[picture] a smiling woman in a uniform talking on a telephone",
+              "E": "[picture] a young woman sitting beside a smiling elderly woman in a wheelchair in a park",
+              "F": "[picture] a man in a suit talking on a mobile phone and looking at his wristwatch"
+            },
+            "answer": "D",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                82
+              ]
+            }
+          },
+          {
+            "n": 1,
+            "zh": "",
+            "options": {
+              "A": "[picture] the cabin of a passenger plane with rows of seats and a flight attendant in the aisle",
+              "B": "[picture] a row of hard-shell suitcases of different sizes",
+              "C": "[picture] a board with the words “说普通话 写规范字” and vertical inscriptions on both sides",
+              "D": "[picture] a smiling woman in a uniform talking on a telephone",
+              "E": "[picture] a young woman sitting beside a smiling elderly woman in a wheelchair in a park",
+              "F": "[picture] a man in a suit talking on a mobile phone and looking at his wristwatch"
+            },
+            "transcript_zh": "女1：你的腿好点了吗？ 女2：还有点儿疼。今天太阳不错，你带我出去吧。",
+            "answer": "E",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                178
+              ]
+            }
+          },
+          {
+            "n": 2,
+            "zh": "",
+            "options": {
+              "A": "[picture] the cabin of a passenger plane with rows of seats and a flight attendant in the aisle",
+              "B": "[picture] a row of hard-shell suitcases of different sizes",
+              "C": "[picture] a board with the words “说普通话 写规范字” and vertical inscriptions on both sides",
+              "D": "[picture] a smiling woman in a uniform talking on a telephone",
+              "E": "[picture] a young woman sitting beside a smiling elderly woman in a wheelchair in a park",
+              "F": "[picture] a man in a suit talking on a mobile phone and looking at his wristwatch"
+            },
+            "transcript_zh": "女：能帮我把这些行李箱放到上面吗？我搬不动。 男：可以，我来搬吧。",
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                178
+              ]
+            }
+          },
+          {
+            "n": 3,
+            "zh": "",
+            "options": {
+              "A": "[picture] the cabin of a passenger plane with rows of seats and a flight attendant in the aisle",
+              "B": "[picture] a row of hard-shell suitcases of different sizes",
+              "C": "[picture] a board with the words “说普通话 写规范字” and vertical inscriptions on both sides",
+              "D": "[picture] a smiling woman in a uniform talking on a telephone",
+              "E": "[picture] a young woman sitting beside a smiling elderly woman in a wheelchair in a park",
+              "F": "[picture] a man in a suit talking on a mobile phone and looking at his wristwatch"
+            },
+            "transcript_zh": "女：对不起，先生，飞机马上就要起飞了，请您关上手机。 男：好的，我知道了。",
+            "answer": "A",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                178
+              ]
+            }
+          },
+          {
+            "n": 4,
+            "zh": "",
+            "options": {
+              "A": "[picture] the cabin of a passenger plane with rows of seats and a flight attendant in the aisle",
+              "B": "[picture] a row of hard-shell suitcases of different sizes",
+              "C": "[picture] a board with the words “说普通话 写规范字” and vertical inscriptions on both sides",
+              "D": "[picture] a smiling woman in a uniform talking on a telephone",
+              "E": "[picture] a young woman sitting beside a smiling elderly woman in a wheelchair in a park",
+              "F": "[picture] a man in a suit talking on a mobile phone and looking at his wristwatch"
+            },
+            "transcript_zh": "女：黑板上的那个字怎么读？ 男：我也不认识，我查一下字典，找到了告诉你。",
+            "answer": "C",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                178
+              ]
+            }
+          },
+          {
+            "n": 5,
+            "zh": "",
+            "options": {
+              "A": "[picture] the cabin of a passenger plane with rows of seats and a flight attendant in the aisle",
+              "B": "[picture] a row of hard-shell suitcases of different sizes",
+              "C": "[picture] a board with the words “说普通话 写规范字” and vertical inscriptions on both sides",
+              "D": "[picture] a smiling woman in a uniform talking on a telephone",
+              "E": "[picture] a young woman sitting beside a smiling elderly woman in a wheelchair in a park",
+              "F": "[picture] a man in a suit talking on a mobile phone and looking at his wristwatch"
+            },
+            "transcript_zh": "女：会议早就开始了，你怎么现在还没来？ 男：别生气，我十分钟就到。",
+            "answer": "F",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                178
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "一、听力 第二部分",
+        "type_zh": "听力 第二部分",
+        "instruction_zh": "第6–10题：听句子，判断对错",
+        "instruction_en": "Questions 6-10: Decide whether the statements are true or false based on the sentences you hear.",
+        "audio": "hsk3-workbook-12-part2.mp3",
+        "items": [
+          {
+            "n": "例1",
+            "zh": "他希望自己很健康。",
+            "transcript_zh": "为了让自己更健康，他每天都花一个小时去锻炼身体。",
+            "answer": "√",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                83
+              ]
+            }
+          },
+          {
+            "n": "例2",
+            "zh": "那块儿手表不是他的。",
+            "transcript_zh": "今天我想早点儿回家。看了看手表，才5点。过了一会儿再看表，还是5点，我这才发现我的手表不走了。",
+            "answer": "×",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                83
+              ]
+            }
+          },
+          {
+            "n": 6,
+            "zh": "他是出租车司机。",
+            "transcript_zh": "我的包忘在出租车上了，钱包、手机和护照都在里面。",
+            "answer": "×",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                178
+              ]
+            }
+          },
+          {
+            "n": 7,
+            "zh": "他不喜欢跟老师学画画儿。",
+            "transcript_zh": "我很喜欢画画儿，但是没有人教过我，我都是自己学的，你看这个小狗就是我画的，可爱吗？",
+            "answer": "×",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                178
+              ]
+            }
+          },
+          {
+            "n": 8,
+            "zh": "老师昨天没讲明白。",
+            "transcript_zh": "老师，您昨天讲的那几个题，我今天就忘了，您能再教我一次吗？",
+            "answer": "×",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                178
+              ]
+            }
+          },
+          {
+            "n": 9,
+            "zh": "爸爸洗衣服的时候发现了护照。",
+            "transcript_zh": "爸爸找了很长时间都没找到他的护照，我今天上午帮他洗衣服的时候，在他那条蓝色的裤子里找到了。",
+            "answer": "×",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                178
+              ]
+            }
+          },
+          {
+            "n": 10,
+            "zh": "桌子和椅子都旧了。",
+            "transcript_zh": "我们需要换新的桌子和椅子，你什么时候有时间，跟我一起去看看？",
+            "answer": "√",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                178
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "一、听力 第三部分",
+        "type_zh": "听力 第三部分",
+        "instruction_zh": "第11–15题：听短对话，选择正确答案",
+        "instruction_en": "Questions 11-15: Listen to the short dialogues and choose the right answers.",
+        "audio": "hsk3-workbook-12-part3.mp3",
+        "items": [
+          {
+            "n": "例",
+            "zh": "男的想让小王做什么？",
+            "transcript_zh": "男：小王，帮我开一下门，好吗？谢谢！ 女：没问题。您去超市了？买了这么多东西。 问：男的想让小王做什么？",
+            "options": {
+              "A": "开门",
+              "B": "拿东西",
+              "C": "去超市买东西"
+            },
+            "answer": "A",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                83
+              ]
+            }
+          },
+          {
+            "n": 11,
+            "zh": "女的现在在哪儿？",
+            "options": {
+              "A": "公园里边",
+              "B": "公园西门",
+              "C": "公园北门"
+            },
+            "transcript_zh": "女：喂，我已经到公园西门了，你是在北门吗，我过去找你吧？ 男：你别过来了，我快到西门了。 问：女的现在在哪儿？",
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                178
+              ]
+            }
+          },
+          {
+            "n": 12,
+            "zh": "男的是什么意思？",
+            "options": {
+              "A": "太阳从西边出来",
+              "B": "女的不可能每天跑步",
+              "C": "明天要跑一千米"
+            },
+            "transcript_zh": "女：我决定从明天开始每天跑一千米。 男：真的吗？太阳从西边出来了？ 问：男的是什么意思？",
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                178
+              ]
+            }
+          },
+          {
+            "n": 13,
+            "zh": "护照在哪儿？",
+            "options": {
+              "A": "行李箱里",
+              "B": "包里",
+              "C": "手里"
+            },
+            "transcript_zh": "男：你把护照放在行李箱里了吗？ 女：没有，在我包里呢，这样拿着比较方便。 问：护照在哪儿？",
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                178
+              ]
+            }
+          },
+          {
+            "n": 14,
+            "zh": "女的要去哪儿？",
+            "options": {
+              "A": "学校",
+              "B": "银行",
+              "C": "西门"
+            },
+            "transcript_zh": "女：请问，学校附近有中国银行吗？ 男：有，出了西门，向左走两百米就能看见。 问：女的要去哪儿？",
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                178
+              ]
+            }
+          },
+          {
+            "n": 15,
+            "zh": "男的打算怎么去火车站？",
+            "options": {
+              "A": "开车",
+              "B": "打车",
+              "C": "坐公共汽车"
+            },
+            "transcript_zh": "女：火车站离这儿很远，坐车不太方便，我开车送你去。 男：不用了，谢谢您，我还是自己打出租车去吧。 问：男的打算怎么去火车站？",
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                178
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "一、听力 第四部分",
+        "type_zh": "听力 第四部分",
+        "instruction_zh": "第16–20题：听长对话，选择正确答案",
+        "instruction_en": "Questions 16-20: Listen to the dialogues and choose the right answers.",
+        "audio": "hsk3-workbook-12-part4.mp3",
+        "items": [
+          {
+            "n": "例",
+            "zh": "男的在做什么？",
+            "transcript_zh": "女：晚饭做好了，准备吃饭了。 男：等一会儿，比赛还有三分钟就结束了。 女：快点儿吧，一起吃，菜冷了就不好吃了。 男：你先吃，我马上就看完了。 问：男的在做什么？",
+            "options": {
+              "A": "洗澡",
+              "B": "吃饭",
+              "C": "看电视"
+            },
+            "answer": "C",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                84
+              ]
+            }
+          },
+          {
+            "n": 16,
+            "zh": "女的还准备画什么？",
+            "options": {
+              "A": "太阳",
+              "B": "小猫",
+              "C": "花儿"
+            },
+            "transcript_zh": "男：这是你画的吗？ 女：太阳是我画的，小猫是妹妹画的。 男：真好看，画好了吗？ 女：还没有，我想在这儿再画点儿花儿。 问：女的还准备画什么？",
+            "answer": "C",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                178
+              ]
+            }
+          },
+          {
+            "n": 17,
+            "zh": "关于男的，可以知道什么？",
+            "options": {
+              "A": "帮女的拿西瓜",
+              "B": "想再吃点儿米饭",
+              "C": "想吃点儿西瓜"
+            },
+            "transcript_zh": "女：吃好了吗？要不要再来点儿米饭？ 男：不吃了。家里还有西瓜吗？ 女：还有半个，你自己拿吧。 男：好的。 问：关于男的，可以知道什么？",
+            "answer": "C",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                178
+              ]
+            }
+          },
+          {
+            "n": 18,
+            "zh": "男的明天要做什么？",
+            "options": {
+              "A": "去接人",
+              "B": "坐火车",
+              "C": "找司机"
+            },
+            "transcript_zh": "男：喂，是小马吗？ 女：是我，周经理，您有什么事？ 男：我明天十点要去火车站接个人。 女：好的，我知道了，我让司机明天九点前到楼下等您。 问：男的明天要做什么？",
+            "answer": "A",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                178
+              ]
+            }
+          },
+          {
+            "n": 19,
+            "zh": "男的要做什么？",
+            "options": {
+              "A": "骑车去上课",
+              "B": "教女的骑车",
+              "C": "学骑自行车"
+            },
+            "transcript_zh": "女：你会骑自行车吗？ 男：当然，我以前经常骑车去上课。 女：那你教教我吧，我一直想学。 男：可以啊，你什么时候有时间？ 问：男的要做什么？",
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                178
+              ]
+            }
+          },
+          {
+            "n": 20,
+            "zh": "男的怎么了？",
+            "options": {
+              "A": "来机场晚了",
+              "B": "找不到护照了",
+              "C": "忘了给女的打电话"
+            },
+            "transcript_zh": "女：你怎么才来，都八点一刻了。 男：对不起，来机场的路上才发现没带护照。 女：出门的时候你怎么不好好看看呢？ 男：你一直给我打电话，我很着急，就出了问题。 问：男的怎么了？",
+            "answer": "A",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                178
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "二、阅读 第一部分",
+        "type_zh": "阅读 第一部分",
+        "instruction_zh": "第21–25题：选择合适的问答",
+        "instruction_en": "Questions 21-25: Match the two parts of the same dialogue.",
+        "items": [
+          {
+            "n": "例",
+            "zh": "你知道怎么去那儿吗？",
+            "options": {
+              "A": "你怎么现在才给周经理写信？",
+              "B": "我想学画画儿，你帮我找一个老师教我吧。",
+              "C": "请问您需要什么帮助吗？",
+              "D": "你看桌子下边的那个箱子里有没有？",
+              "E": "当然。我们先坐公共汽车，然后换地铁。",
+              "F": "我担心路上车太多，不好走。"
+            },
+            "answer": "E",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                85
+              ]
+            }
+          },
+          {
+            "n": 21,
+            "zh": "我找不到行李箱了，您帮我找找吧。",
+            "options": {
+              "A": "你怎么现在才给周经理写信？",
+              "B": "我想学画画儿，你帮我找一个老师教我吧。",
+              "C": "请问您需要什么帮助吗？",
+              "D": "你看桌子下边的那个箱子里有没有？",
+              "E": "当然。我们先坐公共汽车，然后换地铁。",
+              "F": "我担心路上车太多，不好走。"
+            },
+            "answer": "C",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                178
+              ]
+            }
+          },
+          {
+            "n": 22,
+            "zh": "飞机十点才起飞，你怎么现在就要走？",
+            "options": {
+              "A": "你怎么现在才给周经理写信？",
+              "B": "我想学画画儿，你帮我找一个老师教我吧。",
+              "C": "请问您需要什么帮助吗？",
+              "D": "你看桌子下边的那个箱子里有没有？",
+              "E": "当然。我们先坐公共汽车，然后换地铁。",
+              "F": "我担心路上车太多，不好走。"
+            },
+            "answer": "F",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                178
+              ]
+            }
+          },
+          {
+            "n": 23,
+            "zh": "你想学画画儿，真是太阳从西边出来了。",
+            "options": {
+              "A": "你怎么现在才给周经理写信？",
+              "B": "我想学画画儿，你帮我找一个老师教我吧。",
+              "C": "请问您需要什么帮助吗？",
+              "D": "你看桌子下边的那个箱子里有没有？",
+              "E": "当然。我们先坐公共汽车，然后换地铁。",
+              "F": "我担心路上车太多，不好走。"
+            },
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                178
+              ]
+            }
+          },
+          {
+            "n": 24,
+            "zh": "你把我的护照放在哪儿了？",
+            "options": {
+              "A": "你怎么现在才给周经理写信？",
+              "B": "我想学画画儿，你帮我找一个老师教我吧。",
+              "C": "请问您需要什么帮助吗？",
+              "D": "你看桌子下边的那个箱子里有没有？",
+              "E": "当然。我们先坐公共汽车，然后换地铁。",
+              "F": "我担心路上车太多，不好走。"
+            },
+            "answer": "D",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                178
+              ]
+            }
+          },
+          {
+            "n": 25,
+            "zh": "对不起，小丽才把他的电子邮箱告诉我。",
+            "options": {
+              "A": "你怎么现在才给周经理写信？",
+              "B": "我想学画画儿，你帮我找一个老师教我吧。",
+              "C": "请问您需要什么帮助吗？",
+              "D": "你看桌子下边的那个箱子里有没有？",
+              "E": "当然。我们先坐公共汽车，然后换地铁。",
+              "F": "我担心路上车太多，不好走。"
+            },
+            "answer": "A",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                178
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "二、阅读 第二部分",
+        "type_zh": "阅读 第二部分",
+        "instruction_zh": "第26–30题：选择合适的词语填空",
+        "instruction_en": "Questions 26-30: Choose the proper words to fill in the brackets.",
+        "word_bank": [
+          [
+            "A 司机",
+            "B 起飞",
+            "C 发现",
+            "D 自己",
+            "E 声音",
+            "F 包"
+          ]
+        ],
+        "items": [
+          {
+            "n": "例",
+            "zh": "她说话的（　）多好听啊！",
+            "options": {
+              "A": "司机",
+              "B": "起飞",
+              "C": "发现",
+              "D": "自己",
+              "E": "声音",
+              "F": "包"
+            },
+            "answer": "E",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                85
+              ]
+            }
+          },
+          {
+            "n": 26,
+            "zh": "我回来了，真累啊，帮我把（　）放在桌子上吧。",
+            "options": {
+              "A": "司机",
+              "B": "起飞",
+              "C": "发现",
+              "D": "自己",
+              "E": "声音",
+              "F": "包"
+            },
+            "answer": "F",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                178
+              ]
+            }
+          },
+          {
+            "n": 27,
+            "zh": "你给（　）打个电话，让他下午三点来接我。",
+            "options": {
+              "A": "司机",
+              "B": "起飞",
+              "C": "发现",
+              "D": "自己",
+              "E": "声音",
+              "F": "包"
+            },
+            "answer": "A",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                178
+              ]
+            }
+          },
+          {
+            "n": 28,
+            "zh": "我（　）你最近总是上课睡觉，你晚上几点睡啊？",
+            "options": {
+              "A": "司机",
+              "B": "起飞",
+              "C": "发现",
+              "D": "自己",
+              "E": "声音",
+              "F": "包"
+            },
+            "answer": "C",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                178
+              ]
+            }
+          },
+          {
+            "n": 29,
+            "zh": "A：我们的飞机几点（　）？ B：下午三点四十分，还有一个小时。",
+            "options": {
+              "A": "司机",
+              "B": "起飞",
+              "C": "发现",
+              "D": "自己",
+              "E": "声音",
+              "F": "包"
+            },
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                178
+              ]
+            }
+          },
+          {
+            "n": 30,
+            "zh": "A：你帮我把衣服洗了吧。 B：这些都是你的衣服，你（　）洗吧。",
+            "options": {
+              "A": "司机",
+              "B": "起飞",
+              "C": "发现",
+              "D": "自己",
+              "E": "声音",
+              "F": "包"
+            },
+            "answer": "D",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                178
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "二、阅读 第三部分",
+        "type_zh": "阅读 第三部分",
+        "instruction_zh": "第31–35题：选择正确答案",
+        "instruction_en": "Questions 31-35: Choose the right answers.",
+        "items": [
+          {
+            "n": "例",
+            "zh": "您是来参加今天会议的吗？您来早了一点儿，现在才八点半。您先进来坐吧。 ★会议最可能几点开始？",
+            "options": {
+              "A": "8点",
+              "B": "8点半",
+              "C": "9点"
+            },
+            "answer": "C",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                86
+              ]
+            }
+          },
+          {
+            "n": 31,
+            "zh": "有个词语叫“老小孩儿”，意思是人老了有时候跟小孩儿一样，容易高兴，也容易生气。 ★根据这段话，可以知道老人：",
+            "options": {
+              "A": "总是生气",
+              "B": "很喜欢小孩儿",
+              "C": "有些地方跟小孩儿一样"
+            },
+            "answer": "C",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                178
+              ]
+            }
+          },
+          {
+            "n": 32,
+            "zh": "妻子今天不舒服，我把她送到了医院，医生看了以后说没有大的问题，可能是最近工作太忙、太累了，让她在家里休息几天。 ★妻子：",
+            "options": {
+              "A": "需要休息",
+              "B": "自己去医院了",
+              "C": "已经休息几天了"
+            },
+            "answer": "A",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                178
+              ]
+            }
+          },
+          {
+            "n": 33,
+            "zh": "我是新来的司机，姓高，您叫我小高就可以了。来，把您的行李箱给我，我放在车的后边。您带好护照和机票了吗？我们现在就去机场。 ★小高：",
+            "options": {
+              "A": "要去坐飞机",
+              "B": "在机场工作",
+              "C": "是一个司机"
+            },
+            "answer": "C",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                178
+              ]
+            }
+          },
+          {
+            "n": 34,
+            "zh": "周明是我爸爸的同学，也是他现在的同事。我小的时候，他有时候带我出去玩儿，还教会了我游泳。明天是他的生日，我要去给他买一个大的蛋糕。 ★周明：",
+            "options": {
+              "A": "是我的同学",
+              "B": "喜欢游泳",
+              "C": "明天过生日"
+            },
+            "answer": "C",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                178
+              ]
+            }
+          },
+          {
+            "n": 35,
+            "zh": "有的事儿就是很有意思，我昨天才发现，你给小张介绍的男朋友是我妻子以前的同事。我们以前见过面，还一起吃过饭，那个时候我就想把他介绍给小张。 ★小张的男朋友是我妻子：",
+            "options": {
+              "A": "以前的同事",
+              "B": "以前的丈夫",
+              "C": "以前的男朋友"
+            },
+            "answer": "A",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                178
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "三、书写 第一部分",
+        "type_zh": "书写 第一部分",
+        "instruction_zh": "第36–40题：连词成句",
+        "instruction_en": "Questions 36-40: Rearrange the words/phrases to make sentences.",
+        "items": [
+          {
+            "n": "例",
+            "zh": "小船　上　一　河　条　有",
+            "answer": "河上有一条小船。",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                87
+              ]
+            }
+          },
+          {
+            "n": 36,
+            "zh": "护照　桌子上　放到　请把",
+            "answer": "请把护照放到桌子上。",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                178
+              ]
+            }
+          },
+          {
+            "n": 37,
+            "zh": "需要　笔记本　买个　电脑　我",
+            "answer": "我需要买个笔记本电脑。",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                178
+              ]
+            }
+          },
+          {
+            "n": 38,
+            "zh": "写字　黑板上　在　你习惯　吗",
+            "answer": "你习惯在黑板上写字吗？",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                178
+              ]
+            }
+          },
+          {
+            "n": 39,
+            "zh": "超市　自己　吧　你　去",
+            "answer": "你自己去超市吧。",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                178
+              ]
+            }
+          },
+          {
+            "n": 40,
+            "zh": "起飞　半个小时　还有　就　了　飞机",
+            "answer": "飞机还有半个小时就起飞了。",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                178
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "三、书写 第二部分",
+        "type_zh": "书写 第二部分",
+        "instruction_zh": "第41–45题：看拼音，写汉字",
+        "instruction_en": "Questions 41-45: Write the characters based on their pinyin.",
+        "items": [
+          {
+            "n": "例",
+            "zh": "没（　）系，别难过，高兴点儿。",
+            "hint_zh": "guān",
+            "answer": "关",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                87
+              ]
+            }
+          },
+          {
+            "n": 41,
+            "zh": "今天没有（　）阳，天气很冷。",
+            "hint_zh": "tài",
+            "answer": "太",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                178
+              ]
+            }
+          },
+          {
+            "n": 42,
+            "zh": "地铁站（　）边有一个咖啡店。",
+            "hint_zh": "xī",
+            "answer": "西",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                178
+              ]
+            }
+          },
+          {
+            "n": 43,
+            "zh": "请你把（　）给我。",
+            "hint_zh": "bāo",
+            "answer": "包",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                178
+              ]
+            }
+          },
+          {
+            "n": 44,
+            "zh": "老师今天教我们（　）小猫。",
+            "hint_zh": "huà",
+            "answer": "画",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                178
+              ]
+            }
+          },
+          {
+            "n": 45,
+            "zh": "这个（　）李箱是谁的？",
+            "hint_zh": "xíng",
+            "answer": "行",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                178
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "三、书写 第三部分",
+        "type_zh": "书写 第三部分",
+        "instruction_zh": "第46–50题：辨认汉字，选择正确的汉字填空",
+        "instruction_en": "Questions 46-50: Distinguish the characters and fill in the blanks.",
+        "items": [
+          {
+            "n": "例",
+            "zh": "我不知道________个地方在________儿。",
+            "hint_zh": "（那、哪）",
+            "answer": "那、哪",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                88
+              ]
+            }
+          },
+          {
+            "n": 46,
+            "zh": "你________经不是小孩子了，要照顾好自________。",
+            "hint_zh": "（已、己）",
+            "answer": "已、己",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                178
+              ]
+            }
+          },
+          {
+            "n": 47,
+            "zh": "飞机就要________飞了，我们没有时间去________市了。",
+            "hint_zh": "（起、超）",
+            "answer": "起、超",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                178
+              ]
+            }
+          },
+          {
+            "n": 48,
+            "zh": "以前我们是________学，现在他是我的________机。",
+            "hint_zh": "（司、同）",
+            "answer": "同、司",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                178
+              ]
+            }
+          },
+          {
+            "n": 49,
+            "zh": "真生________，我刚到车站，公共________车就离开了。",
+            "hint_zh": "（气、汽）",
+            "answer": "气、汽",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                178
+              ]
+            }
+          },
+          {
+            "n": 50,
+            "zh": "我发________你最近越来越爱看电________了。",
+            "hint_zh": "（现、视）",
+            "answer": "现、视",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                178
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "四、复习",
+        "type_zh": "复习",
+        "instruction_zh": "第1–2题：根据课文内容填空",
+        "instruction_en": "Questions 1-2: Fill in the blanks based on the texts in the textbook.",
+        "items": [
+          {
+            "n": 1,
+            "zh": "小丽觉得今天________从________边出来了，因为小刚12点以前________要睡觉了。小刚说，他的经理________了，明天小刚8点不到，以后就别去上班了。",
+            "answer": "太阳、西、就、生气",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                178
+              ]
+            }
+          },
+          {
+            "n": 2,
+            "zh": "小刚去机场迟到了，因为他去机场的路上才发现忘带________了。到了机场，他跟周经理借钱，因为________把他送到机场的时候，他又________自己忘记带________了。飞机就要________了，周经理让小刚把重要的东西放在他那儿。",
+            "answer": "护照、司机、发现、钱包、起飞",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                178
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "hsk30": {
+    "source": "courseware",
+    "ref": {
+      "book": "hsk30_courseware",
+      "pages": [
+        14,
+        27,
+        37
+      ]
+    },
+    "new_words": [
+      {
+        "n": 1,
+        "zh": "外地",
+        "pinyin": "wàidì",
+        "pos": "n.",
+        "en": "other places",
+        "text": 2
+      },
+      {
+        "n": 2,
+        "zh": "行李",
+        "pinyin": "xíngli",
+        "pos": "n.",
+        "en": "luggage",
+        "text": 2
+      },
+      {
+        "n": 3,
+        "zh": "箱子",
+        "pinyin": "xiāngzi",
+        "pos": "n.",
+        "en": "box",
+        "text": 2
+      },
+      {
+        "n": 4,
+        "zh": "游客",
+        "pinyin": "yóukè",
+        "pos": "n.",
+        "en": "tourist",
+        "text": 2
+      },
+      {
+        "n": 5,
+        "zh": "检票",
+        "pinyin": "jiǎnpiào",
+        "pos": "v.",
+        "en": "ticket check",
+        "text": 3
+      },
+      {
+        "n": 6,
+        "zh": "晚点",
+        "pinyin": "wǎndiǎn",
+        "pos": "v.",
+        "en": "delayed",
+        "text": 3
+      },
+      {
+        "n": 7,
+        "zh": "画家",
+        "pinyin": "huàjiā",
+        "pos": "n.",
+        "en": "painter",
+        "text": 4
+      }
+    ],
+    "grammar": [],
+    "exercises": [],
+    "unclear": []
+  },
+  "audio": {
+    "textbook": [
+      "hsk3-textbook-1201.mp3",
+      "hsk3-textbook-1202.mp3",
+      "hsk3-textbook-1203.mp3",
+      "hsk3-textbook-1204.mp3",
+      "hsk3-textbook-1205.mp3"
+    ],
+    "workbook": [
+      "hsk3-workbook-12-part1.mp3",
+      "hsk3-workbook-12-part2.mp3",
+      "hsk3-workbook-12-part3.mp3",
+      "hsk3-workbook-12-part4.mp3"
+    ]
+  },
+  "unclear": [
+    "Сурах бичиг PDF х.115 课文3: ханзаар «快点吧» (儿-гүй), PDF х.116 拼音课文-д «Kuài diǎnr ba» — номд байгаагаар хоёуланг нь үлдээсэн (засаагүй).",
+    "课文1-ийн «明天8点不到，以后就别来了» — багшийн номын 课文1 асуулт-хариулт (PDF х.87) «以后就不用去了», дасгалын номын 复习1 (PDF х.88) «以后就别去上班了» гэж өөр хэлбэрээр дамжуулсан. Тус бүрийг номд байгаагаар нь оруулсан.",
+    "Багшийн номын 课文4 复述 提示词 (PDF х.88) «不是……而是……» — сурах бичгийн 课文4-т «不是因为……，是因为……» (而-гүй). Номд байгаагаар нь.",
+    "Сурах бичгийн 练习4 ② «小刚什么时候出差回来？» — 课文2-т «去外地办事» гэж байгаа (出差 энэ хичээлийн 生词 биш); ① «今天呢？» — бичвэрт өнөөдрийн цагийг заагаагүй («这么早就要睡觉了»). Асуултуудыг номд байгаагаар нь.",
+    "Гарчгийн пиньинь: сурах бичиг (PDF х.114) «fàng zài» (зайтай), дасгалын ном (PDF х.82) «fàngzài» (залгаа) — title_pinyin-д сурах бичгийнхийг авсан.",
+    "Сурах бичгийн 注释1 жишээ (4), (8) ба 注释2 жишээ (4) улаанаар хэвлэгдсэн (课文1, 课文3, 课文2-ын өгүүлбэр) — схемд өнгөний талбар байхгүй. 注释2 жишээ (1) «我把照片放在你包里了» нь 课文2-ын «我已经把我的照片放在你的包里了»-ээс ялгаатай (улаанаар биш) — тус бүрийг номд байгаагаар.",
+    "Сурах бичгийн 注释1-д бүтцийн хүснэгт байхгүй; багшийн номд «才＋动词»/«就＋动词» хайрцаг байгаа — teacher.steps-д оруулсан. 注释2-ын structure_rows нь сурах бичгийн тайлбар доторх «A把B+V+在/到+location», «A把B+V+给+sb.» томьёо.",
+    "Сурах бичгийн 练一练 (2 дүрэм × 3), 练习2 选词填空 / 练习3 描述图片 / 练习4 回答问题 ба 热身2 · 运用 болон багшийн номын 语言点操练 (才/就 — зөвхөн эхний хос хариутай; 把 — 目标句) — хариулт сурах бичиг, багшийн номд хэвлэгдээгүй тул answer талбаргүй. Багшийн номын 课文 асуулт-хариулт (teacher.text_questions) нь 练习4-ийн асуултаас өөр; 课文4 «“我”为什么生气？» асуултад багшийн ном хариулт өгөөгүй.",
+    "Багшийн номын 汉字辨认练习 (已/己 · 起/超 · 司/同 · 气/汽 · 现/视 — 组词) хоосон зайтай, хариулт хэвлэгдээгүй; хосуудыг textbook.characters.confusable_pairs-д оруулсан (дасгалын номын 46–50-тай ижил).",
+    "Багшийн номын «练习册相关练习：第78页／一／第一部分，第81页／二／第二部分», «第84页／四», «第84页／三／第三部分» — дасгалын номын хэвлэсэн хуудас (PDF х.82, 85, 88).",
+    "Энэ хичээлд сурах бичгийн 专有名词 хүснэгт, * тэмдэгтэй үг, 汉字知识 болон 文化 хэсэг байхгүй (proper_nouns, culture оруулаагүй). 课文4 гарчиггүй (номд зөвхөн «4»), өгүүлэмжийг 2 өгүүлбэрээр lines-д хуваасан.",
+    "热身1 ⑤ «画儿 huàr», 生词12 «画 huà» — тус бүрийг номд байгаагаар.",
+    "Дасгалын номын сонсгол нэг CD тэмдэгтэй (12) — аудиог hsk3-workbook-12-part1…4.mp3 болгож хэсэг тус бүрт хуваасныг section.audio-д оноосон.",
+    "Дасгалын ном 听力 第三/四部分 — номд зөвхөн сонголтууд хэвлэгдсэн; item.zh-д багшийн номын хавсралтын «问：» асуултыг оруулсан (transcript_zh-д бүтнээр).",
+    "Сурах бичгийн 拼音课文-ын гарчгийн пиньинь (Zài jiā / Zài jiā / Zài jīchǎng / 4.) болон ярилцагчийн нэрийн пиньинь (Xiǎolì, Xiǎogāng, Zhōu Míng) схемд талбаргүй тул lines.pinyin-д зөвхөн яриаг оруулсан.",
+    "Зурагтай даалгаврын (热身1, 练习3, дасгалын номын 听力 第一部分) picture_desc_en / pictures_desc_en нь номд текстгүй тул зургаас товч дүрсэлсэн. Дасгалын ном PDF х.82 зураг C-ийн хоёр талын босоо бичээс бүрэн уншигдахгүй — тайлбарт оруулаагүй.",
+    "HSK 3.0 нэмэлт үгс (BLCUP 课件 补充HSK3.0, слайд 14, 27, 37) `hsk30`-д."
+  ],
+  "verified_pages": [
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
     114,
     115,
     116,
@@ -17,1943 +2023,10 @@
     119,
     120,
     121,
-    122
-   ]
-  },
-  "warmup": [
-   {
-    "instruction_zh": "给下面的词语选择对应的图片",
-    "instruction_en": "Match the pictures with the words.",
-    "items": [
-     "①护照 hùzhào",
-     "②黑板 hēibǎn",
-     "③行李箱 xínglixiāng",
-     "④太阳 tàiyáng",
-     "⑤画儿 huàr",
-     "⑥包 bāo"
-    ],
-    "pictures_desc_en": [
-     "A: a bright sun shining in a blue sky",
-     "B: a red suitcase on wheels with a pull-up handle",
-     "C: a dark blue passport with “PASSPORT” printed on the cover",
-     "D: a person painting a picture of an arched gateway on an easel outdoors",
-     "E: a brown leather handbag",
-     "F: a green blackboard in a wooden frame decorated with flowers and pinned pictures"
-    ]
-   },
-   {
-    "instruction_zh": "下边这些东西，你会放在什么地方？",
-    "instruction_en": "Where would you put the following things?",
-    "items": [
-     "东西 | 放在哪儿",
-     "铅笔 qiānbǐ | 桌子上 zhuōzi shang",
-     "衣服 yīfu |",
-     "照片 zhàopiàn |",
-     "钱包 qiánbāo |",
-     "护照 hùzhào |",
-     "笔记本电脑 bǐjìběn diànnǎo |"
-    ]
-   }
-  ],
-  "texts": [
-   {
-    "n": 1,
-    "title_zh": "在家",
-    "title_en": "At home",
-    "kind": "dialogue",
-    "audio": "hsk3-textbook-1201.mp3",
-    "lines": [
-     {
-      "speaker": "小丽",
-      "zh": "今天太阳从西边出来了吗？",
-      "pinyin": "Jīntiān tàiyáng cóng xībian chūlai le ma?"
-     },
-     {
-      "speaker": "小刚",
-      "zh": "怎么了？",
-      "pinyin": "Zěnme le?"
-     },
-     {
-      "speaker": "小丽",
-      "zh": "你怎么这么早就要睡觉了？以前都要12点以后才睡觉。",
-      "pinyin": "Nǐ zěnme zhème zǎo jiù yào shuì jiào le? Yǐqián dōu yào shí'èr diǎn yǐhòu cái shuì jiào."
-     },
-     {
-      "speaker": "小刚",
-      "zh": "我明天8点就要到公司。",
-      "pinyin": "Wǒ míngtiān bā diǎn jiù yào dào gōngsī."
-     },
-     {
-      "speaker": "小丽",
-      "zh": "有事吗？",
-      "pinyin": "Yǒu shì ma?"
-     },
-     {
-      "speaker": "小刚",
-      "zh": "经理生气了，他告诉我，明天8点不到，以后就别来了。",
-      "pinyin": "Jīnglǐ shēng qì le, tā gàosu wǒ, míngtiān bā diǎn bú dào, yǐhòu jiù bié lái le."
-     }
-    ],
-    "new_words": [
-     {
-      "n": 1,
-      "zh": "太阳",
-      "pinyin": "tàiyáng",
-      "pos": "n.",
-      "en": "sun",
-      "text": 1
-     },
-     {
-      "n": 2,
-      "zh": "西",
-      "pinyin": "xī",
-      "pos": "n.",
-      "en": "west",
-      "text": 1
-     },
-     {
-      "n": 3,
-      "zh": "生气",
-      "pinyin": "shēng qì",
-      "pos": "v.",
-      "en": "angry",
-      "text": 1
-     }
-    ]
-   },
-   {
-    "n": 2,
-    "title_zh": "在家",
-    "title_en": "At home",
-    "kind": "dialogue",
-    "audio": "hsk3-textbook-1202.mp3",
-    "lines": [
-     {
-      "speaker": "小刚",
-      "zh": "我要跟周经理去外地办事，明天的飞机。",
-      "pinyin": "Wǒ yào gēn Zhōu jīnglǐ qù wàidì bàn shì, míngtiān de fēijī."
-     },
-     {
-      "speaker": "小丽",
-      "zh": "那我帮你把衣服放到行李箱里吧。什么时候回来？",
-      "pinyin": "Nà wǒ bāng nǐ bǎ yīfu fàngdào xínglixiāng li ba. Shénme shíhou huílai?"
-     },
-     {
-      "speaker": "小刚",
-      "zh": "一个星期就回来。",
-      "pinyin": "Yí ge xīngqī jiù huílai."
-     },
-     {
-      "speaker": "小丽",
-      "zh": "啊？一个星期以后才回来？",
-      "pinyin": "Á? Yí ge xīngqī yǐhòu cái huílai?"
-     },
-     {
-      "speaker": "小刚",
-      "zh": "你要自己照顾好自己，我已经给你准备好吃的和喝的了。",
-      "pinyin": "Nǐ yào zìjǐ zhàogù hǎo zìjǐ, wǒ yǐjīng gěi nǐ zhǔnbèi hǎo chī de hé hē de le."
-     },
-     {
-      "speaker": "小丽",
-      "zh": "好吧。我已经把我的照片放在你的包里了。",
-      "pinyin": "Hǎo ba. Wǒ yǐjīng bǎ wǒ de zhàopiàn fàng zài nǐ de bāo li le."
-     }
-    ],
-    "new_words": [
-     {
-      "n": 4,
-      "zh": "行李箱",
-      "pinyin": "xínglixiāng",
-      "pos": "n.",
-      "en": "luggage, suitcase",
-      "text": 2
-     },
-     {
-      "n": 5,
-      "zh": "自己",
-      "pinyin": "zìjǐ",
-      "pos": "pron.",
-      "en": "self",
-      "text": 2
-     },
-     {
-      "n": 6,
-      "zh": "包",
-      "pinyin": "bāo",
-      "pos": "n.",
-      "en": "bag, sack",
-      "text": 2
-     }
-    ]
-   },
-   {
-    "n": 3,
-    "title_zh": "在机场",
-    "title_en": "At the airport",
-    "kind": "dialogue",
-    "audio": "hsk3-textbook-1203.mp3",
-    "lines": [
-     {
-      "speaker": "周明",
-      "zh": "你怎么才来？",
-      "pinyin": "Nǐ zěnme cái lái?"
-     },
-     {
-      "speaker": "小刚",
-      "zh": "对不起，周经理，来机场的路上我才发现忘带护照了。",
-      "pinyin": "Duìbuqǐ, Zhōu jīnglǐ, lái jīchǎng de lùshang wǒ cái fāxiàn wàng dài hùzhào le."
-     },
-     {
-      "speaker": "周明",
-      "zh": "快点吧，飞机就要起飞了。",
-      "pinyin": "Kuài diǎnr ba, fēijī jiù yào qǐfēi le."
-     },
-     {
-      "speaker": "小刚",
-      "zh": "您有钱吗？司机把我送到机场的时候，我才发现忘记带钱包了。",
-      "pinyin": "Nín yǒu qián ma? Sījī bǎ wǒ sòng dào jīchǎng de shíhou, wǒ cái fāxiàn wàngjì dài qiánbāo le."
-     },
-     {
-      "speaker": "周明",
-      "zh": "我看你还是把重要的东西放在我这儿吧。",
-      "pinyin": "Wǒ kàn nǐ háishi bǎ zhòngyào de dōngxi fàng zài wǒ zhèr ba."
-     }
-    ],
-    "new_words": [
-     {
-      "n": 7,
-      "zh": "发现",
-      "pinyin": "fāxiàn",
-      "pos": "v.",
-      "en": "to discover",
-      "text": 3
-     },
-     {
-      "n": 8,
-      "zh": "护照",
-      "pinyin": "hùzhào",
-      "pos": "n.",
-      "en": "passport",
-      "text": 3
-     },
-     {
-      "n": 9,
-      "zh": "起飞",
-      "pinyin": "qǐfēi",
-      "pos": "v.",
-      "en": "(of an aircraft) to take off",
-      "text": 3
-     },
-     {
-      "n": 10,
-      "zh": "司机",
-      "pinyin": "sījī",
-      "pos": "n.",
-      "en": "driver",
-      "text": 3
-     }
-    ]
-   },
-   {
-    "n": 4,
-    "title_zh": "",
-    "kind": "narrative",
-    "audio": "hsk3-textbook-1204.mp3",
-    "lines": [
-     {
-      "zh": "我是一个中学老师，教学生画画儿。",
-      "pinyin": "Wǒ shì yí ge zhōngxué lǎoshī, jiāo xuésheng huà huàr."
-     },
-     {
-      "zh": "每次下课前，我都会把下次学生需要带的东西写在黑板上，但是每次上课时，总会有学生忘了拿铅笔，所以我有点儿生气，不是因为他们没带铅笔，是因为他们没有好的学习习惯。",
-      "pinyin": "Měi cì xià kè qián, wǒ dōu huì bǎ xià cì xuésheng xūyào dài de dōngxi xiě zài hēibǎn shang, dànshì měi cì shàng kè shí, zǒng huì yǒu xuésheng wàngle ná qiānbǐ, suǒyǐ wǒ yǒudiǎnr shēng qì, bú shì yīnwèi tāmen méi dài qiānbǐ, shì yīnwèi tāmen méiyǒu hǎo de xuéxí xíguàn."
-     }
-    ],
-    "new_words": [
-     {
-      "n": 11,
-      "zh": "教",
-      "pinyin": "jiāo",
-      "pos": "v.",
-      "en": "to teach",
-      "text": 4
-     },
-     {
-      "n": 12,
-      "zh": "画",
-      "pinyin": "huà",
-      "pos": "v./n.",
-      "en": "to draw, to paint; drawing, painting",
-      "text": 4
-     },
-     {
-      "n": 13,
-      "zh": "需要",
-      "pinyin": "xūyào",
-      "pos": "v.",
-      "en": "to need",
-      "text": 4
-     },
-     {
-      "n": 14,
-      "zh": "黑板",
-      "pinyin": "hēibǎn",
-      "pos": "n.",
-      "en": "blackboard",
-      "text": 4
-     }
-    ]
-   }
-  ],
-  "grammar": [
-   {
-    "n": 1,
-    "title_zh": "“才”和“就”",
-    "title_en": "Comparison of “才” and “就”",
-    "explanation_zh": "“才”和“就”都可以放在动词前做状语。\n“就”表示说话人认为动作发生得早，进行得快、顺利。例如：（1）–（4）\n“才”表示说话人认为动作发生得晚，进行得慢、不顺利。例如：（5）–（8）",
-    "explanation_en": "Both “才” and “就” can be used as an adverbial modifier before a verb.\n“就” indicates that in the speaker’s opinion, the action happened early, or went on fast or smoothly. For example: (1)–(4)\n“才” indicates that in the speaker’s opinion, the action happened late, or went on slowly or unsatisfactorily. For example: (5)–(8)",
-    "examples": [
-     {
-      "n": 1,
-      "zh": "我早上五点就起床了。"
-     },
-     {
-      "n": 2,
-      "zh": "坐飞机一个小时就到了。"
-     },
-     {
-      "n": 3,
-      "zh": "我很容易就找到了他的家。"
-     },
-     {
-      "n": 4,
-      "zh": "你怎么这么早就要睡觉了？"
-     },
-     {
-      "n": 5,
-      "zh": "八点上课，他九点才起床。"
-     },
-     {
-      "n": 6,
-      "zh": "坐火车八个小时才能到。"
-     },
-     {
-      "n": 7,
-      "zh": "弟弟三个小时才做完作业。"
-     },
-     {
-      "n": 8,
-      "zh": "来机场的路上我才发现忘带护照了。"
-     }
-    ],
-    "practice_instruction_zh": "练一练　完成对话 Complete the dialogues.",
-    "practice": [
-     {
-      "n": 1,
-      "zh": "A：你昨天几点回的家？ B：________。"
-     },
-     {
-      "n": 2,
-      "zh": "A：昨天的作业你多长时间写完的？ B：________。"
-     },
-     {
-      "n": 3,
-      "zh": "A：你昨天睡了几个小时？ B：________。"
-     }
-    ]
-   },
-   {
-    "n": 2,
-    "title_zh": "“把”字句2：A把B+V+在/到/给……",
-    "title_en": "The Ba-Sentence 2: A把B + V + 在/到/给……",
-    "explanation_zh": "汉语中，表示对确定的人或事物做出相应动作，使其发生位置上的改变，多用“把”字句表达，其结构为“A把B+V+在/到+location”。例如：（1）–（4）\n表示通过动作使某确定事物发生关系上的转移，可以用“A把B+V+给+sb.”例如：（5）–（8）",
-    "explanation_en": "In Chinese, a ba-sentence is often used to indicate a certain action is done on a definite person or thing and has changed the location of the person or thing, the structure being “A把B + V + 在/到 + location”. For example: (1)–(4)\nIf an action has changed the owner or user of a definite object, the structure “A把B + V + 给 + sb.” is used. For example: (5)–(8)",
-    "structure_rows": [
-     "A把B+V+在/到+location",
-     "A把B+V+给+sb."
-    ],
-    "examples": [
-     {
-      "n": 1,
-      "zh": "我把照片放在你包里了。"
-     },
-     {
-      "n": 2,
-      "zh": "老师把作业放在桌子上了。"
-     },
-     {
-      "n": 3,
-      "zh": "我没把裤子放到椅子上。"
-     },
-     {
-      "n": 4,
-      "zh": "我帮你把衣服放到行李箱里吧。"
-     },
-     {
-      "n": 5,
-      "zh": "我把鲜花送给老师了。"
-     },
-     {
-      "n": 6,
-      "zh": "我朋友把书借给我了。"
-     },
-     {
-      "n": 7,
-      "zh": "弟弟没把钱还给哥哥。"
-     },
-     {
-      "n": 8,
-      "zh": "你帮我把这本书带给小刚。"
-     }
-    ],
-    "practice_instruction_zh": "练一练　用提示词完成句子 Complete the sentences with the words given.",
-    "practice": [
-     {
-      "n": 1,
-      "zh": "我把书________。",
-      "hint_zh": "（V在）"
-     },
-     {
-      "n": 2,
-      "zh": "司机把我________。",
-      "hint_zh": "（V到）"
-     },
-     {
-      "n": 3,
-      "zh": "我想把这些吃的________。",
-      "hint_zh": "（V给）"
-     }
-    ]
-   }
-  ],
-  "exercises": [
-   {
-    "n": 1,
-    "type_zh": "朗读",
-    "instruction_zh": "朗读下列短语和句子",
-    "instruction_en": "Read the following phrases and sentences aloud.",
-    "audio": "hsk3-textbook-1205.mp3",
-    "items": [
-     {
-      "n": 1,
-      "zh": "生气：很生气／不生气／别生气／经理生气了。"
-     },
-     {
-      "n": 2,
-      "zh": "自己：我自己／他们自己／你自己去吧／你要自己照顾好自己。"
-     },
-     {
-      "n": 3,
-      "zh": "护照：一本护照／办护照／护照照片／来机场的路上我才发现忘带护照了。"
-     },
-     {
-      "n": 4,
-      "zh": "教：教课／教汉语／教了十年／我教学生画画儿。"
-     },
-     {
-      "n": 5,
-      "zh": "需要：不需要／需要休息／需要学习／我把需要带的东西写在黑板上。"
-     }
-    ]
-   },
-   {
-    "n": 2,
-    "type_zh": "选词填空",
-    "instruction_zh": "选择恰当的词语填空",
-    "instruction_en": "Choose the proper words to fill in the blanks.",
-    "word_bank": [
-     [
-      "黑板",
-      "司机",
-      "画",
-      "包",
-      "护照"
-     ],
-     [
-      "发现",
-      "生气",
-      "自己",
-      "行李箱",
-      "起飞"
-     ]
-    ],
-    "items": [
-     {
-      "n": 1,
-      "zh": "这张________真漂亮！是你的吗？"
-     },
-     {
-      "n": 2,
-      "zh": "教室后边的那块________上写着几个字，你看得见吗？"
-     },
-     {
-      "n": 3,
-      "zh": "你看，就是那位________找到了我的手机。"
-     },
-     {
-      "n": 4,
-      "zh": "桌子上有一本________，是谁的？"
-     },
-     {
-      "n": 5,
-      "zh": "请问，这个小________能带上飞机吗？"
-     },
-     {
-      "n": 6,
-      "zh": "A：我现在能去一下洗手间吗？ B：对不起，飞机就要________了，请您坐好。"
-     },
-     {
-      "n": 7,
-      "zh": "A：你怎么了？ B：今天我又迟到了，老师都________了。"
-     },
-     {
-      "n": 8,
-      "zh": "A：我________公司楼下那家店的蛋糕特别好吃。 B：是吗？今天我也去买一块。"
-     },
-     {
-      "n": 9,
-      "zh": "A：我的衣服太多了！ B：你把衣服放在我的________里吧，我的箱子大。"
-     },
-     {
-      "n": 10,
-      "zh": "A：我出国一个星期，你怎么办？ B：不用担心，我可以照顾好________。"
-     }
-    ]
-   },
-   {
-    "n": 3,
-    "type_zh": "描述图片",
-    "instruction_zh": "用本课新学的语言点和词语描述图片",
-    "instruction_en": "Describe the pictures using the newly-learned language points and words.",
-    "items": [
-     {
-      "n": 1,
-      "zh": "A：你怎么不上飞机？ B：我________发现忘了带护照了。 A：那怎么办？ B：我让妈妈把________。",
-      "picture_desc_en": "A woman in sunglasses and a purple top sitting on a black suitcase next to a red suitcase, resting her chin on her hand."
-     },
-     {
-      "n": 2,
-      "zh": "A：9点半了，你怎么________来？ B：起晚了，还等了半天公共汽车。 A：你的车呢？ B：我把________。",
-      "picture_desc_en": "A young man in a dark suit and pink tie looking at his wristwatch in an office."
-     },
-     {
-      "n": 3,
-      "zh": "A：你带我们去游泳吧。 B：行，你是刚学会游泳吗？ A：不是，我两年前________。 B：好，我一会儿就把________游泳馆。",
-      "picture_desc_en": "A woman and two children sitting in the open back of a car."
-     },
-     {
-      "n": 4,
-      "zh": "A：起床吧，已经8点了。 B：再让我睡会儿吧，昨晚________。 A：那我先起来了。我的眼镜呢？ B：昨天晚上我把________。",
-      "picture_desc_en": "A pair of black-framed glasses lying on a white computer keyboard."
-     }
-    ]
-   },
-   {
-    "n": 4,
-    "type_zh": "回答问题",
-    "instruction_zh": "根据课文回答问题",
-    "instruction_en": "Answer the questions according to the texts.",
-    "items": [
-     {
-      "n": 1,
-      "zh": "小刚平时几点睡觉？今天呢？"
-     },
-     {
-      "n": 2,
-      "zh": "小刚什么时候出差回来？"
-     },
-     {
-      "n": 3,
-      "zh": "小刚给小丽准备了什么？小丽呢？"
-     },
-     {
-      "n": 4,
-      "zh": "小刚今天忘带什么了？"
-     },
-     {
-      "n": 5,
-      "zh": "每次下课以前，老师会做什么？"
-     },
-     {
-      "n": 6,
-      "zh": "老师为什么有点儿生气？"
-     }
-    ]
-   }
-  ],
-  "characters": {
-   "knowledge_title_zh": "旧字新词",
-   "knowledge_zh": "读读下面的词语，想想组成的新词是什么意思。",
-   "knowledge_en": "Read the following words and guess the meanings of the newly-formed ones.",
-   "word_game": [
-    {
-     "parts": [
-      "钱",
-      "包"
-     ],
-     "result": "钱包"
-    },
-    {
-     "parts": [
-      "电子邮件",
-      "行李箱"
-     ],
-     "result": "电子邮箱"
-    },
-    {
-     "parts": [
-      "行李箱",
-      "杯子"
-     ],
-     "result": "箱子"
-    }
-   ],
-   "confusable_pairs": [
-    [
-     "已",
-     "己"
-    ],
-    [
-     "起",
-     "超"
-    ],
-    [
-     "司",
-     "同"
-    ],
-    [
-     "气",
-     "汽"
-    ],
-    [
-     "现",
-     "视"
-    ]
-   ]
-  },
-  "application": [
-   {
-    "title_zh": "双人活动",
-    "instruction_zh": "两个人一组，互相询问并比较两个人的生活习惯。",
-    "instruction_en": "Work in pairs. Ask about and compare each other’s living habits.",
-    "example_zh": [
-     "表格：| | | 我 | 朋友 |",
-     "| 1 | 起床 | 我每天早上6点就起床。 | 我每天早上8点才起床。 |",
-     "| 2 | 到教室 | | |",
-     "| 3 | 学汉语 | | |",
-     "| 4 | 睡觉 | | |",
-     "| 5 | 做完作业 | | |",
-     "| 6 | 吃晚饭 | | |"
-    ]
-   },
-   {
-    "title_zh": "小组活动",
-    "instruction_zh": "3～4人一组，用“把”字句说说每个人平时都把日常用品放在哪儿，找找谁和自己的习惯一样。",
-    "instruction_en": "Work in groups of 3-4. Talk about where you usually put certain articles for daily use using ba-sentences, and find out who have the same habits as yours.",
-    "example_zh": [
-     "例如：我把电脑放在桌子上。",
-     "提示词：钱包　护照　汉语书　衣服　裤子　衬衫　照片　足球　书包",
-     "表格：| 东西 | 谁跟我一样 | 放在哪儿 |",
-     "| 电脑 | 小刚 | 我们都把电脑放在桌子上。 |"
-    ]
-   }
-  ],
-  "saying": {
-   "zh": "习惯成自然",
-   "pinyin": "Xíguàn chéng zìrán",
-   "en": "Habit is a second nature",
-   "explanation_zh": "“习惯成自然”，这里“成”是变成的意思。这句话的意思是，平时做事的方法习惯了，慢慢就变成自然的事了，很难再改变了。这句话告诉我们要养成好的习惯，不要觉得不好的事情只做一次没关系，如果不注意，慢慢就会变成很自然的事，到时候就不容易发现错误，也不容易改变了。",
-   "explanation_en": "In the saying “习惯成自然”, “成” means “to become”. The sentence means that when the way of doing something turns into a habit, it becomes natural and hard to change. It tells us to form good habits and not to think it’s OK to do something bad just once, because the bad deed may gradually become a natural habit without you knowing it and by then, it would be hard to discover or change it."
-  }
- },
- "teacher": {
-  "ref": {
-   "book": "teacher",
-   "pages": [
-    84,
-    85,
-    86,
-    87,
-    88,
-    89
-   ]
-  },
-  "objectives_zh": [
-   "重点词语：学生能够熟练掌握：“生气、发现、起飞、教、画、需要”的词义和用法",
-   "语言点：学生能够了解并掌握：（1）副词“才”和“就”的区别（2）“把”字句表示物体位置上的变化或关系上的转移",
-   "汉字：学生能够：根据已学生词猜测出3个旧字新词“钱包、电子邮箱、箱子”的意思",
-   "功能：学生能够：（1）用“才”和“就”描述主观认为动作的早晚快慢（2）用“把”字句描述位置上的改变和关系上的转移"
-  ],
-  "steps": [
-   {
-    "title_zh": "复习旧课",
-    "body_zh": "1 教师展示第11课的热身图片，请学生根据图片说出生词。\n2 教师根据第11课的内容进行提问。\n（1）你有事不能去图书馆，请朋友帮你还书，该怎么说？\n（2）夏天的晚上，出门的时候你要做什么？\n（3）你习惯用电脑做什么？\n（4）昨天你学了多长时间的汉语？\n（5）比较贵的手机多少钱一个？比较便宜的呢？你觉得我买哪个比较好？"
-   },
-   {
-    "title_zh": "学习新课 1 热身",
-    "body_zh": "热身1：教师可依次出示热身部分的词语卡片，要求学生集体认读并请单个学生说出对应图片的编号，教师评判正误；最后全体学生齐读热身环节所有词语，要求语音标准，声调准确。\n答案：①C　②F　③B　④A　⑤D　⑥E\n热身2：可留至语言点（2）“‘把’字句2：A把B+动词+在/到/给……”导入时使用。"
-   },
-   {
-    "title_zh": "2 生词",
-    "body_zh": "（1）生词快速认读及正音\n太阳、西、生气、行李箱、自己、包、发现、护照、起飞、司机、教、画、需要、黑板\n· 教师先带领学生快速认读一遍生词；\n· 取消拼音，带领学生再次认读；\n· 请单个学生独自认读2-3个生词；\n· 最后全班一起快速认读所有的生词。\n（2）生词讲解方式\n· 直观法（如图片、照片、实物等）展示：太阳、西、行李箱、包、护照、司机、画（n.）、黑板\n· 肢体展示：自己、画（v.）\n（3）重点生词扩展及常用搭配\n生气—很生气—我忘了爸爸的生日，他很生气。\n　—不生气—这件事是我错了，你别生气。\n发现—发现了—没发现—我昨天发现了一个很好吃的饭馆。\n起飞—飞机起飞—八点起飞—飞机就要起飞了，请您坐好。\n教—教我—教汉语—谁教你们画画儿？\n画—画画儿—画一张画儿—他会画中国画儿。\n　—画得好—你画画儿画得怎么样？\n需要—需要铅笔—需要照顾—去旅游，需要带什么东西？\n练习册相关练习：第78页／一／第一部分，第81页／二／第二部分"
-   },
-   {
-    "title_zh": "3 语言点（1）“才”和“就”",
-    "body_zh": "① 语言点解析\n“才”放在动词前做状语，表示说话人认为动作发生得晚，进行得慢、不顺利。“就”放在动词前做状语，表示说话人认为动作发生得早，进行得快、顺利。\n［才＋动词］\n［就＋动词］\n② 语言点导入\n教师在黑板上写出三个句子，引发学生比较并思考，引导学生理解目标句。\n8：30上课。\n大山7：00来了。\n马可9：30来了。\n教师：他们谁来得早？谁来得晚？\n学生：大山来得早，马可来得晚。\n教师：你们觉得大山来得早，可以说“大山七点就来了”，你们觉得马可来得晚，可以说“马可九点半才来”。\n③ 语言点操练\n教师利用对比法，给出短语，请学生说句子：\n我早上五点起床，他早上九点起床——我早上五点就起床了，他九点才起床。\n坐飞机一个小时到，坐火车八个小时到\n我作业写了二十分钟，他写了两个小时\n我感冒三天好了，他一个星期好了\n昨天我5点回家，妈妈8点回家\n④ 语言点扩展练习\n教师提问，请学生根据实际情况回答。\n昨天你学了几个小时汉语？\n上周六你几点睡觉？\n你打算什么时候结婚？\n注意：“才”和“就”表示的早晚是主观的感觉，例如，我平时早上十点起床，今天九点半起的，就可以说“今天我九点半就起床了”，表达“九点半起床很早”的意思。“才V”后可不加“了”。"
-   },
-   {
-    "title_zh": "3 语言点（2）“把”字句2：A把B+动词+在/到/给……",
-    "body_zh": "① 语言点解析\n“把”字句在动词后加上“在/到+地点”表示对确定的人或事物做出相应动作，使其发生位置上的改变；动词后加上“给+对象”表示通过动作使某确定事物发生关系上的转移。\n［A把B+动词+在/到+地点名词］\n［A把B+动词+给+对象］\n② 语言点导入\n教师可利用本课热身2的表格导入语言点。\n教师带领学生认读表格中的名词。\n教师示范：\n教师：铅笔，你会放在哪儿？\n学生：我会放在桌子上。\n教师引导学生说出目标句：我把铅笔放在桌子上。\n③ 语言点操练\n教师可利用热身2的表格操练语言点。\n学生向教师提问，教师作答后，请学生说出目标句。\n目标句：我把衣服放在床上了。\n　　　　我把照片放到钱包里了。\n　　　　我把钱包给太太了。\n　　　　我把护照放在家里了。\n　　　　我把笔记本电脑放在桌子上了。\n④ 语言点扩展练习\n教师利用热身2，让学生两人一组互相询问并回答。\n注意：“把”字句的宾语是定指的，例如不能说“我把一本书放在桌子上了”。"
-   },
-   {
-    "title_zh": "4 课文 课文1",
-    "body_zh": "（1）让学生听两遍录音并回答下列问题：\n男的（小刚）以前几点睡觉？——他以前都要12点以后才睡觉。\n小刚明天几点要到公司？——他明天8点就要到公司。\n小刚明天为什么要这样做？——他的经理生气了，经理告诉他，明天8点不到，以后就不用去了。\n（2）教师领读课文两遍，让学生分角色朗读课文，注意说话人的语气。\n（3）模仿练习\n学生两人一组，根据提示词模仿课文内容进行对话练习。\nA：今天太阳……？\nB：怎么了？\nA：你怎么……了？以前都要……。\nB：我明天……\nA：有事吗？\nB：……。"
-   },
-   {
-    "title_zh": "4 课文 课文2",
-    "body_zh": "（1）让学生听两遍录音并回答下列问题：\n男的（小刚）明天要做什么？——他要跟周经理去外地办事。\n小刚什么时候回来？——他一个星期以后回来。\n女的（小丽）帮他做什么了？——她帮小刚把衣服放到行李箱里，把她的照片放在小刚的包里了。\n（2）教师领读课文两遍，让学生分角色朗读课文。\n（3）模仿练习\n学生两人一组，根据提示词模仿课文内容进行对话练习。\nA：我要……，明天的……。\nB：那我帮你……。什么……回来？\nA：……回来。\nB：啊？……才回来？\nA：你要……，我已经……。\nB：好吧。我已经……。"
-   },
-   {
-    "title_zh": "4 课文 课文3",
-    "body_zh": "（1）让学生听两遍录音并回答下列问题：\n第二个人（小刚）什么时候发现忘带护照的？——他来机场的路上才发现忘带护照的。\n小刚还忘记带什么了？——他忘记带钱包了。\n周经理建议他怎么做？——建议他把重要的东西放在自己这儿。\n（2）教师领读课文两遍，让学生分角色朗读课文，注意说话人的语气。\n（3）教师给提示词，带领学生复述课文。\n提示词：机场、发现、护照、起飞、司机、钱包、重要"
-   },
-   {
-    "title_zh": "4 课文 课文4",
-    "body_zh": "（1）快速阅读，并回答：“我”为什么生气？\n（2）教师领读课文两遍，并回答下列问题：\n“我”教学生什么？——“我”教学生画画儿。\n每次下课前，“我”会做什么？——“我”会把下次学生需要带的东西写在黑板上。\n（3）教师给提示词，带领学生复述课文。\n提示词：中学、教、画、下课前、需要、黑板、忘了、生气、不是……而是……\n（4）教师请学生根据课文，说一个自己老师生气的故事。\n练习册相关练习：第84页／四"
-   },
-   {
-    "title_zh": "5 汉字",
-    "body_zh": "旧字新词：\n① 教师领读以前学过的词语和新词，并让学生猜猜新词的意思。\n· 领读：钱、包、钱包\n问学生：“钱包”是什么意思？——放钱的包。\n扩展提问：我们学习过哪些“包”？——书包、钥匙包、卡包、公文包。（根据实际情况选用）\n· 领读：电子邮件、行李箱、电子邮箱\n问学生：“电子邮箱”是什么意思？——放电子邮件的地方。\n· 领读：行李箱、杯子、箱子\n问学生：“箱子”是什么意思？——放东西的东西。\n② 教师领读新词扩展，通过情景，理解新词的意思和用法：\n钱包：我的钱包／钱包里／我的钱包里有女朋友的照片。\n电子邮箱：电子邮箱里／发到电子邮箱／我的电子邮箱里没有你的邮件。\n箱子：一个箱子／箱子里／我把夏天的衣服放到箱子里了。\n汉字辨认练习：\n辨认下列汉字并组词。\n已：________、________　起：________、________\n己：________、________　超：________、________\n司：________、________　气：________、________\n同：________、________　汽：________、________\n现：________、________\n视：________、________\n练习册相关练习：第84页／三／第三部分"
-   },
-   {
-    "title_zh": "6 补充课堂活动——布置会议场所",
-    "body_zh": "教师将全班分成两组，每组根据板书提示，写下来怎么布置会场，看看哪组布置得又好又快。\n板书提示：把、咖啡、茶、水、杯子、笔记本、笔、椅子、桌子、空调、灯、电脑……"
-   },
-   {
-    "title_zh": "7 俗语",
-    "body_zh": "教师引导学生理解俗语的含义，注意这里的“自然”表示的是自然的事，一件事情做多了，就变成了自然的事。例如，我现在吃完晚饭都会去外边走走，习惯成自然了。"
-   },
-   {
-    "title_zh": "8 本课小结",
-    "body_zh": "· 语言点：用“才”和“就”表示人的主观感受\n　　　　　用“把”字句表示事物位置或关系的转移\n· 汉　字：旧字新词：钱包、电子邮箱、箱子"
-   }
-  ],
-  "notes_zh": [
-   "注意：“才”和“就”表示的早晚是主观的感觉，例如，我平时早上十点起床，今天九点半起的，就可以说“今天我九点半就起床了”，表达“九点半起床很早”的意思。“才V”后可不加“了”。（语言点1）",
-   "注意：“把”字句的宾语是定指的，例如不能说“我把一本书放在桌子上了”。（语言点2）",
-   "注意这里的“自然”表示的是自然的事，一件事情做多了，就变成了自然的事。例如，我现在吃完晚饭都会去外边走走，习惯成自然了。（俗语）"
-  ],
-  "warmup_answers_zh": [
-   "热身1 答案：①C　②F　③B　④A　⑤D　⑥E",
-   "热身2：可留至语言点（2）“‘把’字句2：A把B+动词+在/到/给……”导入时使用。"
-  ],
-  "text_questions": [
-   {
-    "text": 1,
-    "q_zh": "男的（小刚）以前几点睡觉？",
-    "a_zh": "他以前都要12点以后才睡觉。"
-   },
-   {
-    "text": 1,
-    "q_zh": "小刚明天几点要到公司？",
-    "a_zh": "他明天8点就要到公司。"
-   },
-   {
-    "text": 1,
-    "q_zh": "小刚明天为什么要这样做？",
-    "a_zh": "他的经理生气了，经理告诉他，明天8点不到，以后就不用去了。"
-   },
-   {
-    "text": 2,
-    "q_zh": "男的（小刚）明天要做什么？",
-    "a_zh": "他要跟周经理去外地办事。"
-   },
-   {
-    "text": 2,
-    "q_zh": "小刚什么时候回来？",
-    "a_zh": "他一个星期以后回来。"
-   },
-   {
-    "text": 2,
-    "q_zh": "女的（小丽）帮他做什么了？",
-    "a_zh": "她帮小刚把衣服放到行李箱里，把她的照片放在小刚的包里了。"
-   },
-   {
-    "text": 3,
-    "q_zh": "第二个人（小刚）什么时候发现忘带护照的？",
-    "a_zh": "他来机场的路上才发现忘带护照的。"
-   },
-   {
-    "text": 3,
-    "q_zh": "小刚还忘记带什么了？",
-    "a_zh": "他忘记带钱包了。"
-   },
-   {
-    "text": 3,
-    "q_zh": "周经理建议他怎么做？",
-    "a_zh": "建议他把重要的东西放在自己这儿。"
-   },
-   {
-    "text": 4,
-    "q_zh": "“我”为什么生气？"
-   },
-   {
-    "text": 4,
-    "q_zh": "“我”教学生什么？",
-    "a_zh": "“我”教学生画画儿。"
-   },
-   {
-    "text": 4,
-    "q_zh": "每次下课前，“我”会做什么？",
-    "a_zh": "“我”会把下次学生需要带的东西写在黑板上。"
-   }
-  ],
-  "summary_zh": "语言点：用“才”和“就”表示人的主观感受；用“把”字句表示事物位置或关系的转移。汉字：旧字新词：钱包、电子邮箱、箱子。"
- },
- "workbook": {
-  "ref": {
-   "book": "workbook",
-   "pages": [
-    82,
-    83,
-    84,
-    85,
-    86,
-    87,
-    88
-   ]
-  },
-  "answers_ref": {
-   "book": "teacher",
-   "pages": [
+    122,
     176,
     177,
     178
-   ]
-  },
-  "sections": [
-   {
-    "n": "一、听力 第一部分",
-    "type_zh": "听力 第一部分",
-    "instruction_zh": "第1–5题：听对话，选择与对话内容一致的图片",
-    "instruction_en": "Questions 1-5: Choose the right picture for each dialogue you hear.",
-    "audio": "hsk3-workbook-12-part1.mp3",
-    "items": [
-     {
-      "n": "例",
-      "zh": "男：喂，请问张经理在吗？ 女：他正在开会，您半个小时以后再打，好吗？",
-      "transcript_zh": "男：喂，请问张经理在吗？ 女：他正在开会，您半个小时以后再打，好吗？",
-      "options": {
-       "A": "[picture] the cabin of a passenger plane with rows of seats and a flight attendant in the aisle",
-       "B": "[picture] a row of hard-shell suitcases of different sizes",
-       "C": "[picture] a board with the words “说普通话 写规范字” and vertical inscriptions on both sides",
-       "D": "[picture] a smiling woman in a uniform talking on a telephone",
-       "E": "[picture] a young woman sitting beside a smiling elderly woman in a wheelchair in a park",
-       "F": "[picture] a man in a suit talking on a mobile phone and looking at his wristwatch"
-      },
-      "answer": "D",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        82
-       ]
-      }
-     },
-     {
-      "n": 1,
-      "zh": "",
-      "options": {
-       "A": "[picture] the cabin of a passenger plane with rows of seats and a flight attendant in the aisle",
-       "B": "[picture] a row of hard-shell suitcases of different sizes",
-       "C": "[picture] a board with the words “说普通话 写规范字” and vertical inscriptions on both sides",
-       "D": "[picture] a smiling woman in a uniform talking on a telephone",
-       "E": "[picture] a young woman sitting beside a smiling elderly woman in a wheelchair in a park",
-       "F": "[picture] a man in a suit talking on a mobile phone and looking at his wristwatch"
-      },
-      "transcript_zh": "女1：你的腿好点了吗？ 女2：还有点儿疼。今天太阳不错，你带我出去吧。",
-      "answer": "E",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        178
-       ]
-      }
-     },
-     {
-      "n": 2,
-      "zh": "",
-      "options": {
-       "A": "[picture] the cabin of a passenger plane with rows of seats and a flight attendant in the aisle",
-       "B": "[picture] a row of hard-shell suitcases of different sizes",
-       "C": "[picture] a board with the words “说普通话 写规范字” and vertical inscriptions on both sides",
-       "D": "[picture] a smiling woman in a uniform talking on a telephone",
-       "E": "[picture] a young woman sitting beside a smiling elderly woman in a wheelchair in a park",
-       "F": "[picture] a man in a suit talking on a mobile phone and looking at his wristwatch"
-      },
-      "transcript_zh": "女：能帮我把这些行李箱放到上面吗？我搬不动。 男：可以，我来搬吧。",
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        178
-       ]
-      }
-     },
-     {
-      "n": 3,
-      "zh": "",
-      "options": {
-       "A": "[picture] the cabin of a passenger plane with rows of seats and a flight attendant in the aisle",
-       "B": "[picture] a row of hard-shell suitcases of different sizes",
-       "C": "[picture] a board with the words “说普通话 写规范字” and vertical inscriptions on both sides",
-       "D": "[picture] a smiling woman in a uniform talking on a telephone",
-       "E": "[picture] a young woman sitting beside a smiling elderly woman in a wheelchair in a park",
-       "F": "[picture] a man in a suit talking on a mobile phone and looking at his wristwatch"
-      },
-      "transcript_zh": "女：对不起，先生，飞机马上就要起飞了，请您关上手机。 男：好的，我知道了。",
-      "answer": "A",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        178
-       ]
-      }
-     },
-     {
-      "n": 4,
-      "zh": "",
-      "options": {
-       "A": "[picture] the cabin of a passenger plane with rows of seats and a flight attendant in the aisle",
-       "B": "[picture] a row of hard-shell suitcases of different sizes",
-       "C": "[picture] a board with the words “说普通话 写规范字” and vertical inscriptions on both sides",
-       "D": "[picture] a smiling woman in a uniform talking on a telephone",
-       "E": "[picture] a young woman sitting beside a smiling elderly woman in a wheelchair in a park",
-       "F": "[picture] a man in a suit talking on a mobile phone and looking at his wristwatch"
-      },
-      "transcript_zh": "女：黑板上的那个字怎么读？ 男：我也不认识，我查一下字典，找到了告诉你。",
-      "answer": "C",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        178
-       ]
-      }
-     },
-     {
-      "n": 5,
-      "zh": "",
-      "options": {
-       "A": "[picture] the cabin of a passenger plane with rows of seats and a flight attendant in the aisle",
-       "B": "[picture] a row of hard-shell suitcases of different sizes",
-       "C": "[picture] a board with the words “说普通话 写规范字” and vertical inscriptions on both sides",
-       "D": "[picture] a smiling woman in a uniform talking on a telephone",
-       "E": "[picture] a young woman sitting beside a smiling elderly woman in a wheelchair in a park",
-       "F": "[picture] a man in a suit talking on a mobile phone and looking at his wristwatch"
-      },
-      "transcript_zh": "女：会议早就开始了，你怎么现在还没来？ 男：别生气，我十分钟就到。",
-      "answer": "F",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        178
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "一、听力 第二部分",
-    "type_zh": "听力 第二部分",
-    "instruction_zh": "第6–10题：听句子，判断对错",
-    "instruction_en": "Questions 6-10: Decide whether the statements are true or false based on the sentences you hear.",
-    "audio": "hsk3-workbook-12-part2.mp3",
-    "items": [
-     {
-      "n": "例1",
-      "zh": "他希望自己很健康。",
-      "transcript_zh": "为了让自己更健康，他每天都花一个小时去锻炼身体。",
-      "answer": "√",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        83
-       ]
-      }
-     },
-     {
-      "n": "例2",
-      "zh": "那块儿手表不是他的。",
-      "transcript_zh": "今天我想早点儿回家。看了看手表，才5点。过了一会儿再看表，还是5点，我这才发现我的手表不走了。",
-      "answer": "×",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        83
-       ]
-      }
-     },
-     {
-      "n": 6,
-      "zh": "他是出租车司机。",
-      "transcript_zh": "我的包忘在出租车上了，钱包、手机和护照都在里面。",
-      "answer": "×",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        178
-       ]
-      }
-     },
-     {
-      "n": 7,
-      "zh": "他不喜欢跟老师学画画儿。",
-      "transcript_zh": "我很喜欢画画儿，但是没有人教过我，我都是自己学的，你看这个小狗就是我画的，可爱吗？",
-      "answer": "×",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        178
-       ]
-      }
-     },
-     {
-      "n": 8,
-      "zh": "老师昨天没讲明白。",
-      "transcript_zh": "老师，您昨天讲的那几个题，我今天就忘了，您能再教我一次吗？",
-      "answer": "×",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        178
-       ]
-      }
-     },
-     {
-      "n": 9,
-      "zh": "爸爸洗衣服的时候发现了护照。",
-      "transcript_zh": "爸爸找了很长时间都没找到他的护照，我今天上午帮他洗衣服的时候，在他那条蓝色的裤子里找到了。",
-      "answer": "×",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        178
-       ]
-      }
-     },
-     {
-      "n": 10,
-      "zh": "桌子和椅子都旧了。",
-      "transcript_zh": "我们需要换新的桌子和椅子，你什么时候有时间，跟我一起去看看？",
-      "answer": "√",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        178
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "一、听力 第三部分",
-    "type_zh": "听力 第三部分",
-    "instruction_zh": "第11–15题：听短对话，选择正确答案",
-    "instruction_en": "Questions 11-15: Listen to the short dialogues and choose the right answers.",
-    "audio": "hsk3-workbook-12-part3.mp3",
-    "items": [
-     {
-      "n": "例",
-      "zh": "男的想让小王做什么？",
-      "transcript_zh": "男：小王，帮我开一下门，好吗？谢谢！ 女：没问题。您去超市了？买了这么多东西。 问：男的想让小王做什么？",
-      "options": {
-       "A": "开门",
-       "B": "拿东西",
-       "C": "去超市买东西"
-      },
-      "answer": "A",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        83
-       ]
-      }
-     },
-     {
-      "n": 11,
-      "zh": "女的现在在哪儿？",
-      "options": {
-       "A": "公园里边",
-       "B": "公园西门",
-       "C": "公园北门"
-      },
-      "transcript_zh": "女：喂，我已经到公园西门了，你是在北门吗，我过去找你吧？ 男：你别过来了，我快到西门了。 问：女的现在在哪儿？",
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        178
-       ]
-      }
-     },
-     {
-      "n": 12,
-      "zh": "男的是什么意思？",
-      "options": {
-       "A": "太阳从西边出来",
-       "B": "女的不可能每天跑步",
-       "C": "明天要跑一千米"
-      },
-      "transcript_zh": "女：我决定从明天开始每天跑一千米。 男：真的吗？太阳从西边出来了？ 问：男的是什么意思？",
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        178
-       ]
-      }
-     },
-     {
-      "n": 13,
-      "zh": "护照在哪儿？",
-      "options": {
-       "A": "行李箱里",
-       "B": "包里",
-       "C": "手里"
-      },
-      "transcript_zh": "男：你把护照放在行李箱里了吗？ 女：没有，在我包里呢，这样拿着比较方便。 问：护照在哪儿？",
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        178
-       ]
-      }
-     },
-     {
-      "n": 14,
-      "zh": "女的要去哪儿？",
-      "options": {
-       "A": "学校",
-       "B": "银行",
-       "C": "西门"
-      },
-      "transcript_zh": "女：请问，学校附近有中国银行吗？ 男：有，出了西门，向左走两百米就能看见。 问：女的要去哪儿？",
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        178
-       ]
-      }
-     },
-     {
-      "n": 15,
-      "zh": "男的打算怎么去火车站？",
-      "options": {
-       "A": "开车",
-       "B": "打车",
-       "C": "坐公共汽车"
-      },
-      "transcript_zh": "女：火车站离这儿很远，坐车不太方便，我开车送你去。 男：不用了，谢谢您，我还是自己打出租车去吧。 问：男的打算怎么去火车站？",
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        178
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "一、听力 第四部分",
-    "type_zh": "听力 第四部分",
-    "instruction_zh": "第16–20题：听长对话，选择正确答案",
-    "instruction_en": "Questions 16-20: Listen to the dialogues and choose the right answers.",
-    "audio": "hsk3-workbook-12-part4.mp3",
-    "items": [
-     {
-      "n": "例",
-      "zh": "男的在做什么？",
-      "transcript_zh": "女：晚饭做好了，准备吃饭了。 男：等一会儿，比赛还有三分钟就结束了。 女：快点儿吧，一起吃，菜冷了就不好吃了。 男：你先吃，我马上就看完了。 问：男的在做什么？",
-      "options": {
-       "A": "洗澡",
-       "B": "吃饭",
-       "C": "看电视"
-      },
-      "answer": "C",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        84
-       ]
-      }
-     },
-     {
-      "n": 16,
-      "zh": "女的还准备画什么？",
-      "options": {
-       "A": "太阳",
-       "B": "小猫",
-       "C": "花儿"
-      },
-      "transcript_zh": "男：这是你画的吗？ 女：太阳是我画的，小猫是妹妹画的。 男：真好看，画好了吗？ 女：还没有，我想在这儿再画点儿花儿。 问：女的还准备画什么？",
-      "answer": "C",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        178
-       ]
-      }
-     },
-     {
-      "n": 17,
-      "zh": "关于男的，可以知道什么？",
-      "options": {
-       "A": "帮女的拿西瓜",
-       "B": "想再吃点儿米饭",
-       "C": "想吃点儿西瓜"
-      },
-      "transcript_zh": "女：吃好了吗？要不要再来点儿米饭？ 男：不吃了。家里还有西瓜吗？ 女：还有半个，你自己拿吧。 男：好的。 问：关于男的，可以知道什么？",
-      "answer": "C",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        178
-       ]
-      }
-     },
-     {
-      "n": 18,
-      "zh": "男的明天要做什么？",
-      "options": {
-       "A": "去接人",
-       "B": "坐火车",
-       "C": "找司机"
-      },
-      "transcript_zh": "男：喂，是小马吗？ 女：是我，周经理，您有什么事？ 男：我明天十点要去火车站接个人。 女：好的，我知道了，我让司机明天九点前到楼下等您。 问：男的明天要做什么？",
-      "answer": "A",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        178
-       ]
-      }
-     },
-     {
-      "n": 19,
-      "zh": "男的要做什么？",
-      "options": {
-       "A": "骑车去上课",
-       "B": "教女的骑车",
-       "C": "学骑自行车"
-      },
-      "transcript_zh": "女：你会骑自行车吗？ 男：当然，我以前经常骑车去上课。 女：那你教教我吧，我一直想学。 男：可以啊，你什么时候有时间？ 问：男的要做什么？",
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        178
-       ]
-      }
-     },
-     {
-      "n": 20,
-      "zh": "男的怎么了？",
-      "options": {
-       "A": "来机场晚了",
-       "B": "找不到护照了",
-       "C": "忘了给女的打电话"
-      },
-      "transcript_zh": "女：你怎么才来，都八点一刻了。 男：对不起，来机场的路上才发现没带护照。 女：出门的时候你怎么不好好看看呢？ 男：你一直给我打电话，我很着急，就出了问题。 问：男的怎么了？",
-      "answer": "A",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        178
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "二、阅读 第一部分",
-    "type_zh": "阅读 第一部分",
-    "instruction_zh": "第21–25题：选择合适的问答",
-    "instruction_en": "Questions 21-25: Match the two parts of the same dialogue.",
-    "items": [
-     {
-      "n": "例",
-      "zh": "你知道怎么去那儿吗？",
-      "options": {
-       "A": "你怎么现在才给周经理写信？",
-       "B": "我想学画画儿，你帮我找一个老师教我吧。",
-       "C": "请问您需要什么帮助吗？",
-       "D": "你看桌子下边的那个箱子里有没有？",
-       "E": "当然。我们先坐公共汽车，然后换地铁。",
-       "F": "我担心路上车太多，不好走。"
-      },
-      "answer": "E",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        85
-       ]
-      }
-     },
-     {
-      "n": 21,
-      "zh": "我找不到行李箱了，您帮我找找吧。",
-      "options": {
-       "A": "你怎么现在才给周经理写信？",
-       "B": "我想学画画儿，你帮我找一个老师教我吧。",
-       "C": "请问您需要什么帮助吗？",
-       "D": "你看桌子下边的那个箱子里有没有？",
-       "E": "当然。我们先坐公共汽车，然后换地铁。",
-       "F": "我担心路上车太多，不好走。"
-      },
-      "answer": "C",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        178
-       ]
-      }
-     },
-     {
-      "n": 22,
-      "zh": "飞机十点才起飞，你怎么现在就要走？",
-      "options": {
-       "A": "你怎么现在才给周经理写信？",
-       "B": "我想学画画儿，你帮我找一个老师教我吧。",
-       "C": "请问您需要什么帮助吗？",
-       "D": "你看桌子下边的那个箱子里有没有？",
-       "E": "当然。我们先坐公共汽车，然后换地铁。",
-       "F": "我担心路上车太多，不好走。"
-      },
-      "answer": "F",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        178
-       ]
-      }
-     },
-     {
-      "n": 23,
-      "zh": "你想学画画儿，真是太阳从西边出来了。",
-      "options": {
-       "A": "你怎么现在才给周经理写信？",
-       "B": "我想学画画儿，你帮我找一个老师教我吧。",
-       "C": "请问您需要什么帮助吗？",
-       "D": "你看桌子下边的那个箱子里有没有？",
-       "E": "当然。我们先坐公共汽车，然后换地铁。",
-       "F": "我担心路上车太多，不好走。"
-      },
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        178
-       ]
-      }
-     },
-     {
-      "n": 24,
-      "zh": "你把我的护照放在哪儿了？",
-      "options": {
-       "A": "你怎么现在才给周经理写信？",
-       "B": "我想学画画儿，你帮我找一个老师教我吧。",
-       "C": "请问您需要什么帮助吗？",
-       "D": "你看桌子下边的那个箱子里有没有？",
-       "E": "当然。我们先坐公共汽车，然后换地铁。",
-       "F": "我担心路上车太多，不好走。"
-      },
-      "answer": "D",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        178
-       ]
-      }
-     },
-     {
-      "n": 25,
-      "zh": "对不起，小丽才把他的电子邮箱告诉我。",
-      "options": {
-       "A": "你怎么现在才给周经理写信？",
-       "B": "我想学画画儿，你帮我找一个老师教我吧。",
-       "C": "请问您需要什么帮助吗？",
-       "D": "你看桌子下边的那个箱子里有没有？",
-       "E": "当然。我们先坐公共汽车，然后换地铁。",
-       "F": "我担心路上车太多，不好走。"
-      },
-      "answer": "A",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        178
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "二、阅读 第二部分",
-    "type_zh": "阅读 第二部分",
-    "instruction_zh": "第26–30题：选择合适的词语填空",
-    "instruction_en": "Questions 26-30: Choose the proper words to fill in the brackets.",
-    "word_bank": [
-     [
-      "A 司机",
-      "B 起飞",
-      "C 发现",
-      "D 自己",
-      "E 声音",
-      "F 包"
-     ]
-    ],
-    "items": [
-     {
-      "n": "例",
-      "zh": "她说话的（　）多好听啊！",
-      "options": {
-       "A": "司机",
-       "B": "起飞",
-       "C": "发现",
-       "D": "自己",
-       "E": "声音",
-       "F": "包"
-      },
-      "answer": "E",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        85
-       ]
-      }
-     },
-     {
-      "n": 26,
-      "zh": "我回来了，真累啊，帮我把（　）放在桌子上吧。",
-      "options": {
-       "A": "司机",
-       "B": "起飞",
-       "C": "发现",
-       "D": "自己",
-       "E": "声音",
-       "F": "包"
-      },
-      "answer": "F",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        178
-       ]
-      }
-     },
-     {
-      "n": 27,
-      "zh": "你给（　）打个电话，让他下午三点来接我。",
-      "options": {
-       "A": "司机",
-       "B": "起飞",
-       "C": "发现",
-       "D": "自己",
-       "E": "声音",
-       "F": "包"
-      },
-      "answer": "A",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        178
-       ]
-      }
-     },
-     {
-      "n": 28,
-      "zh": "我（　）你最近总是上课睡觉，你晚上几点睡啊？",
-      "options": {
-       "A": "司机",
-       "B": "起飞",
-       "C": "发现",
-       "D": "自己",
-       "E": "声音",
-       "F": "包"
-      },
-      "answer": "C",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        178
-       ]
-      }
-     },
-     {
-      "n": 29,
-      "zh": "A：我们的飞机几点（　）？ B：下午三点四十分，还有一个小时。",
-      "options": {
-       "A": "司机",
-       "B": "起飞",
-       "C": "发现",
-       "D": "自己",
-       "E": "声音",
-       "F": "包"
-      },
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        178
-       ]
-      }
-     },
-     {
-      "n": 30,
-      "zh": "A：你帮我把衣服洗了吧。 B：这些都是你的衣服，你（　）洗吧。",
-      "options": {
-       "A": "司机",
-       "B": "起飞",
-       "C": "发现",
-       "D": "自己",
-       "E": "声音",
-       "F": "包"
-      },
-      "answer": "D",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        178
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "二、阅读 第三部分",
-    "type_zh": "阅读 第三部分",
-    "instruction_zh": "第31–35题：选择正确答案",
-    "instruction_en": "Questions 31-35: Choose the right answers.",
-    "items": [
-     {
-      "n": "例",
-      "zh": "您是来参加今天会议的吗？您来早了一点儿，现在才八点半。您先进来坐吧。 ★会议最可能几点开始？",
-      "options": {
-       "A": "8点",
-       "B": "8点半",
-       "C": "9点"
-      },
-      "answer": "C",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        86
-       ]
-      }
-     },
-     {
-      "n": 31,
-      "zh": "有个词语叫“老小孩儿”，意思是人老了有时候跟小孩儿一样，容易高兴，也容易生气。 ★根据这段话，可以知道老人：",
-      "options": {
-       "A": "总是生气",
-       "B": "很喜欢小孩儿",
-       "C": "有些地方跟小孩儿一样"
-      },
-      "answer": "C",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        178
-       ]
-      }
-     },
-     {
-      "n": 32,
-      "zh": "妻子今天不舒服，我把她送到了医院，医生看了以后说没有大的问题，可能是最近工作太忙、太累了，让她在家里休息几天。 ★妻子：",
-      "options": {
-       "A": "需要休息",
-       "B": "自己去医院了",
-       "C": "已经休息几天了"
-      },
-      "answer": "A",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        178
-       ]
-      }
-     },
-     {
-      "n": 33,
-      "zh": "我是新来的司机，姓高，您叫我小高就可以了。来，把您的行李箱给我，我放在车的后边。您带好护照和机票了吗？我们现在就去机场。 ★小高：",
-      "options": {
-       "A": "要去坐飞机",
-       "B": "在机场工作",
-       "C": "是一个司机"
-      },
-      "answer": "C",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        178
-       ]
-      }
-     },
-     {
-      "n": 34,
-      "zh": "周明是我爸爸的同学，也是他现在的同事。我小的时候，他有时候带我出去玩儿，还教会了我游泳。明天是他的生日，我要去给他买一个大的蛋糕。 ★周明：",
-      "options": {
-       "A": "是我的同学",
-       "B": "喜欢游泳",
-       "C": "明天过生日"
-      },
-      "answer": "C",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        178
-       ]
-      }
-     },
-     {
-      "n": 35,
-      "zh": "有的事儿就是很有意思，我昨天才发现，你给小张介绍的男朋友是我妻子以前的同事。我们以前见过面，还一起吃过饭，那个时候我就想把他介绍给小张。 ★小张的男朋友是我妻子：",
-      "options": {
-       "A": "以前的同事",
-       "B": "以前的丈夫",
-       "C": "以前的男朋友"
-      },
-      "answer": "A",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        178
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "三、书写 第一部分",
-    "type_zh": "书写 第一部分",
-    "instruction_zh": "第36–40题：连词成句",
-    "instruction_en": "Questions 36-40: Rearrange the words/phrases to make sentences.",
-    "items": [
-     {
-      "n": "例",
-      "zh": "小船　上　一　河　条　有",
-      "answer": "河上有一条小船。",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        87
-       ]
-      }
-     },
-     {
-      "n": 36,
-      "zh": "护照　桌子上　放到　请把",
-      "answer": "请把护照放到桌子上。",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        178
-       ]
-      }
-     },
-     {
-      "n": 37,
-      "zh": "需要　笔记本　买个　电脑　我",
-      "answer": "我需要买个笔记本电脑。",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        178
-       ]
-      }
-     },
-     {
-      "n": 38,
-      "zh": "写字　黑板上　在　你习惯　吗",
-      "answer": "你习惯在黑板上写字吗？",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        178
-       ]
-      }
-     },
-     {
-      "n": 39,
-      "zh": "超市　自己　吧　你　去",
-      "answer": "你自己去超市吧。",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        178
-       ]
-      }
-     },
-     {
-      "n": 40,
-      "zh": "起飞　半个小时　还有　就　了　飞机",
-      "answer": "飞机还有半个小时就起飞了。",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        178
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "三、书写 第二部分",
-    "type_zh": "书写 第二部分",
-    "instruction_zh": "第41–45题：看拼音，写汉字",
-    "instruction_en": "Questions 41-45: Write the characters based on their pinyin.",
-    "items": [
-     {
-      "n": "例",
-      "zh": "没（　）系，别难过，高兴点儿。",
-      "hint_zh": "guān",
-      "answer": "关",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        87
-       ]
-      }
-     },
-     {
-      "n": 41,
-      "zh": "今天没有（　）阳，天气很冷。",
-      "hint_zh": "tài",
-      "answer": "太",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        178
-       ]
-      }
-     },
-     {
-      "n": 42,
-      "zh": "地铁站（　）边有一个咖啡店。",
-      "hint_zh": "xī",
-      "answer": "西",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        178
-       ]
-      }
-     },
-     {
-      "n": 43,
-      "zh": "请你把（　）给我。",
-      "hint_zh": "bāo",
-      "answer": "包",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        178
-       ]
-      }
-     },
-     {
-      "n": 44,
-      "zh": "老师今天教我们（　）小猫。",
-      "hint_zh": "huà",
-      "answer": "画",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        178
-       ]
-      }
-     },
-     {
-      "n": 45,
-      "zh": "这个（　）李箱是谁的？",
-      "hint_zh": "xíng",
-      "answer": "行",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        178
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "三、书写 第三部分",
-    "type_zh": "书写 第三部分",
-    "instruction_zh": "第46–50题：辨认汉字，选择正确的汉字填空",
-    "instruction_en": "Questions 46-50: Distinguish the characters and fill in the blanks.",
-    "items": [
-     {
-      "n": "例",
-      "zh": "我不知道________个地方在________儿。",
-      "hint_zh": "（那、哪）",
-      "answer": "那、哪",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        88
-       ]
-      }
-     },
-     {
-      "n": 46,
-      "zh": "你________经不是小孩子了，要照顾好自________。",
-      "hint_zh": "（已、己）",
-      "answer": "已、己",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        178
-       ]
-      }
-     },
-     {
-      "n": 47,
-      "zh": "飞机就要________飞了，我们没有时间去________市了。",
-      "hint_zh": "（起、超）",
-      "answer": "起、超",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        178
-       ]
-      }
-     },
-     {
-      "n": 48,
-      "zh": "以前我们是________学，现在他是我的________机。",
-      "hint_zh": "（司、同）",
-      "answer": "同、司",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        178
-       ]
-      }
-     },
-     {
-      "n": 49,
-      "zh": "真生________，我刚到车站，公共________车就离开了。",
-      "hint_zh": "（气、汽）",
-      "answer": "气、汽",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        178
-       ]
-      }
-     },
-     {
-      "n": 50,
-      "zh": "我发________你最近越来越爱看电________了。",
-      "hint_zh": "（现、视）",
-      "answer": "现、视",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        178
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "四、复习",
-    "type_zh": "复习",
-    "instruction_zh": "第1–2题：根据课文内容填空",
-    "instruction_en": "Questions 1-2: Fill in the blanks based on the texts in the textbook.",
-    "items": [
-     {
-      "n": 1,
-      "zh": "小丽觉得今天________从________边出来了，因为小刚12点以前________要睡觉了。小刚说，他的经理________了，明天小刚8点不到，以后就别去上班了。",
-      "answer": "太阳、西、就、生气",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        178
-       ]
-      }
-     },
-     {
-      "n": 2,
-      "zh": "小刚去机场迟到了，因为他去机场的路上才发现忘带________了。到了机场，他跟周经理借钱，因为________把他送到机场的时候，他又________自己忘记带________了。飞机就要________了，周经理让小刚把重要的东西放在他那儿。",
-      "answer": "护照、司机、发现、钱包、起飞",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        178
-       ]
-      }
-     }
-    ]
-   }
-  ]
- },
- "audio": {
-  "textbook": [
-   "hsk3-textbook-1201.mp3",
-   "hsk3-textbook-1202.mp3",
-   "hsk3-textbook-1203.mp3",
-   "hsk3-textbook-1204.mp3",
-   "hsk3-textbook-1205.mp3"
   ],
-  "workbook": [
-   "hsk3-workbook-12-part1.mp3",
-   "hsk3-workbook-12-part2.mp3",
-   "hsk3-workbook-12-part3.mp3",
-   "hsk3-workbook-12-part4.mp3"
-  ]
- },
- "unclear": [
-  "Сурах бичиг PDF х.115 课文3: ханзаар «快点吧» (儿-гүй), PDF х.116 拼音课文-д «Kuài diǎnr ba» — номд байгаагаар хоёуланг нь үлдээсэн (засаагүй).",
-  "课文1-ийн «明天8点不到，以后就别来了» — багшийн номын 课文1 асуулт-хариулт (PDF х.87) «以后就不用去了», дасгалын номын 复习1 (PDF х.88) «以后就别去上班了» гэж өөр хэлбэрээр дамжуулсан. Тус бүрийг номд байгаагаар нь оруулсан.",
-  "Багшийн номын 课文4 复述 提示词 (PDF х.88) «不是……而是……» — сурах бичгийн 课文4-т «不是因为……，是因为……» (而-гүй). Номд байгаагаар нь.",
-  "Сурах бичгийн 练习4 ② «小刚什么时候出差回来？» — 课文2-т «去外地办事» гэж байгаа (出差 энэ хичээлийн 生词 биш); ① «今天呢？» — бичвэрт өнөөдрийн цагийг заагаагүй («这么早就要睡觉了»). Асуултуудыг номд байгаагаар нь.",
-  "Гарчгийн пиньинь: сурах бичиг (PDF х.114) «fàng zài» (зайтай), дасгалын ном (PDF х.82) «fàngzài» (залгаа) — title_pinyin-д сурах бичгийнхийг авсан.",
-  "Сурах бичгийн 注释1 жишээ (4), (8) ба 注释2 жишээ (4) улаанаар хэвлэгдсэн (课文1, 课文3, 课文2-ын өгүүлбэр) — схемд өнгөний талбар байхгүй. 注释2 жишээ (1) «我把照片放在你包里了» нь 课文2-ын «我已经把我的照片放在你的包里了»-ээс ялгаатай (улаанаар биш) — тус бүрийг номд байгаагаар.",
-  "Сурах бичгийн 注释1-д бүтцийн хүснэгт байхгүй; багшийн номд «才＋动词»/«就＋动词» хайрцаг байгаа — teacher.steps-д оруулсан. 注释2-ын structure_rows нь сурах бичгийн тайлбар доторх «A把B+V+在/到+location», «A把B+V+给+sb.» томьёо.",
-  "Сурах бичгийн 练一练 (2 дүрэм × 3), 练习2 选词填空 / 练习3 描述图片 / 练习4 回答问题 ба 热身2 · 运用 болон багшийн номын 语言点操练 (才/就 — зөвхөн эхний хос хариутай; 把 — 目标句) — хариулт сурах бичиг, багшийн номд хэвлэгдээгүй тул answer талбаргүй. Багшийн номын 课文 асуулт-хариулт (teacher.text_questions) нь 练习4-ийн асуултаас өөр; 课文4 «“我”为什么生气？» асуултад багшийн ном хариулт өгөөгүй.",
-  "Багшийн номын 汉字辨认练习 (已/己 · 起/超 · 司/同 · 气/汽 · 现/视 — 组词) хоосон зайтай, хариулт хэвлэгдээгүй; хосуудыг textbook.characters.confusable_pairs-д оруулсан (дасгалын номын 46–50-тай ижил).",
-  "Багшийн номын «练习册相关练习：第78页／一／第一部分，第81页／二／第二部分», «第84页／四», «第84页／三／第三部分» — дасгалын номын хэвлэсэн хуудас (PDF х.82, 85, 88).",
-  "Энэ хичээлд сурах бичгийн 专有名词 хүснэгт, * тэмдэгтэй үг, 汉字知识 болон 文化 хэсэг байхгүй (proper_nouns, culture оруулаагүй). 课文4 гарчиггүй (номд зөвхөн «4»), өгүүлэмжийг 2 өгүүлбэрээр lines-д хуваасан.",
-  "热身1 ⑤ «画儿 huàr», 生词12 «画 huà» — тус бүрийг номд байгаагаар.",
-  "Дасгалын номын сонсгол нэг CD тэмдэгтэй (12) — аудиог hsk3-workbook-12-part1…4.mp3 болгож хэсэг тус бүрт хуваасныг section.audio-д оноосон.",
-  "Дасгалын ном 听力 第三/四部分 — номд зөвхөн сонголтууд хэвлэгдсэн; item.zh-д багшийн номын хавсралтын «问：» асуултыг оруулсан (transcript_zh-д бүтнээр).",
-  "Сурах бичгийн 拼音课文-ын гарчгийн пиньинь (Zài jiā / Zài jiā / Zài jīchǎng / 4.) болон ярилцагчийн нэрийн пиньинь (Xiǎolì, Xiǎogāng, Zhōu Míng) схемд талбаргүй тул lines.pinyin-д зөвхөн яриаг оруулсан.",
-  "Зурагтай даалгаврын (热身1, 练习3, дасгалын номын 听力 第一部分) picture_desc_en / pictures_desc_en нь номд текстгүй тул зургаас товч дүрсэлсэн. Дасгалын ном PDF х.82 зураг C-ийн хоёр талын босоо бичээс бүрэн уншигдахгүй — тайлбарт оруулаагүй."
- ],
- "verified_pages": [
-  82,
-  83,
-  84,
-  85,
-  86,
-  87,
-  88,
-  89,
-  114,
-  115,
-  116,
-  117,
-  118,
-  119,
-  120,
-  121,
-  122,
-  176,
-  177,
-  178
- ],
- "schema_version": 1
+  "schema_version": 1
 }

@@ -1,14 +1,2114 @@
 {
- "level": "hsk3",
- "lesson": 11,
- "book": "HSK3",
- "title_zh": "别忘了把空调关了",
- "title_pinyin": "Bié wàngle bǎ kōngtiáo guān le",
- "title_en": "Don’t forget to turn off the air conditioner",
- "textbook": {
-  "ref": {
-   "book": "textbook",
-   "pages": [
+  "level": "hsk3",
+  "lesson": 11,
+  "book": "HSK3",
+  "title_zh": "别忘了把空调关了",
+  "title_pinyin": "Bié wàngle bǎ kōngtiáo guān le",
+  "title_en": "Don’t forget to turn off the air conditioner",
+  "textbook": {
+    "ref": {
+      "book": "textbook",
+      "pages": [
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113
+      ]
+    },
+    "warmup": [
+      {
+        "instruction_zh": "给下面的词语选择对应的图片",
+        "instruction_en": "Match the pictures with the words.",
+        "items": [
+          "①词典 cídiǎn",
+          "②筷子 kuàizi",
+          "③空调 kōngtiáo",
+          "④地铁 dìtiě",
+          "⑤灯 dēng",
+          "⑥瓶子 píngzi"
+        ],
+        "pictures_desc_en": [
+          "A: a white wall-mounted air conditioner unit",
+          "B: a thick book with a dark blue cover, the word DICTIONARY on its spine",
+          "C: a lit crystal chandelier hanging from a ceiling",
+          "D: red chopsticks lying side by side",
+          "E: a brown glass bottle lying on its side",
+          "F: a subway train standing at a station platform"
+        ]
+      },
+      {
+        "instruction_zh": "看图，说说他们在做什么",
+        "instruction_en": "Look at the pictures and talk about what they are doing.",
+        "items": [
+          "A. 关空调 guān kōngtiáo",
+          "B. 洗衣服 xǐ yīfu",
+          "C. 还书 huán shū",
+          "D. 关灯 guān dēng"
+        ],
+        "pictures_desc_en": [
+          "①: a finger pressing a light switch on a white wall",
+          "②: a smiling young woman standing below a wall-mounted air conditioner, reaching up towards it",
+          "③: a woman putting pink clothes into a washing machine",
+          "④: several people holding books at a library counter"
+        ]
+      }
+    ],
+    "texts": [
+      {
+        "n": 1,
+        "title_zh": "在教室",
+        "title_en": "In the classroom",
+        "kind": "dialogue",
+        "audio": "hsk3-textbook-1101.mp3",
+        "lines": [
+          {
+            "speaker": "小明",
+            "zh": "我先走了。",
+            "pinyin": "Wǒ xiān zǒu le."
+          },
+          {
+            "speaker": "同学",
+            "zh": "你去哪儿？",
+            "pinyin": "Nǐ qù nǎr?"
+          },
+          {
+            "speaker": "小明",
+            "zh": "我去图书馆借本书。",
+            "pinyin": "Wǒ qù túshūguǎn jiè běn shū."
+          },
+          {
+            "speaker": "同学",
+            "zh": "帮我把这本词典还了吧。",
+            "pinyin": "Bāng wǒ bǎ zhè běn cídiǎn huánle ba."
+          },
+          {
+            "speaker": "小明",
+            "zh": "好，等一会儿你离开教室的时候，记得把灯关了。",
+            "pinyin": "Hǎo, děng yíhuìr nǐ lí kāi jiàoshì de shíhou, jìde bǎ dēng guān le."
+          },
+          {
+            "speaker": "同学",
+            "zh": "好的，放心吧。",
+            "pinyin": "Hǎo de, fàng xīn ba."
+          }
+        ],
+        "new_words": [
+          {
+            "n": 1,
+            "zh": "图书馆",
+            "pinyin": "túshūguǎn",
+            "pos": "n.",
+            "en": "library",
+            "text": 1
+          },
+          {
+            "n": 2,
+            "zh": "借",
+            "pinyin": "jiè",
+            "pos": "v.",
+            "en": "to borrow, to lend",
+            "text": 1
+          },
+          {
+            "n": 3,
+            "zh": "词典",
+            "pinyin": "cídiǎn",
+            "pos": "n.",
+            "en": "dictionary",
+            "text": 1
+          },
+          {
+            "n": 4,
+            "zh": "还",
+            "pinyin": "huán",
+            "pos": "v.",
+            "en": "to return",
+            "text": 1
+          },
+          {
+            "n": 5,
+            "zh": "灯",
+            "pinyin": "dēng",
+            "pos": "n.",
+            "en": "light, lamp",
+            "text": 1
+          }
+        ]
+      },
+      {
+        "n": 2,
+        "title_zh": "在会议室",
+        "title_en": "In the conference room",
+        "kind": "dialogue",
+        "audio": "hsk3-textbook-1102.mp3",
+        "lines": [
+          {
+            "speaker": "周明",
+            "zh": "会议结束后，别忘记把空调关了。",
+            "pinyin": "Huìyì jiéshù hòu, bié wàngjì bǎ kōngtiáo guān le."
+          },
+          {
+            "speaker": "小丽",
+            "zh": "好的。王经理两点左右来了个电话。",
+            "pinyin": "Hǎo de. Wáng jīnglǐ liǎng diǎn zuǒyòu láile ge diànhuà."
+          },
+          {
+            "speaker": "周明",
+            "zh": "他已经到北京了？",
+            "pinyin": "Tā yǐjīng dào Běijīng le?"
+          },
+          {
+            "speaker": "小丽",
+            "zh": "是的，他正坐地铁来我们公司呢。",
+            "pinyin": "Shì de, tā zhèng zuò dìtiě lái wǒmen gōngsī ne."
+          },
+          {
+            "speaker": "周明",
+            "zh": "等他到了就告诉我。",
+            "pinyin": "Děng tā dàole jiù gàosu wǒ."
+          }
+        ],
+        "new_words": [
+          {
+            "n": 6,
+            "zh": "会议",
+            "pinyin": "huìyì",
+            "pos": "n.",
+            "en": "meeting, conference",
+            "text": 2
+          },
+          {
+            "n": 7,
+            "zh": "结束",
+            "pinyin": "jiéshù",
+            "pos": "v.",
+            "en": "to end, to finish",
+            "text": 2
+          },
+          {
+            "n": 8,
+            "zh": "忘记",
+            "pinyin": "wàngjì",
+            "pos": "v.",
+            "en": "to forget",
+            "text": 2
+          },
+          {
+            "n": 9,
+            "zh": "空调",
+            "pinyin": "kōngtiáo",
+            "pos": "n.",
+            "en": "air conditioner",
+            "text": 2
+          },
+          {
+            "n": 10,
+            "zh": "关",
+            "pinyin": "guān",
+            "pos": "v.",
+            "en": "to turn off, to close",
+            "text": 2
+          },
+          {
+            "n": 11,
+            "zh": "地铁",
+            "pinyin": "dìtiě",
+            "pos": "n.",
+            "en": "subway",
+            "text": 2
+          }
+        ]
+      },
+      {
+        "n": 3,
+        "title_zh": "在客厅",
+        "title_en": "In the living room",
+        "kind": "dialogue",
+        "audio": "hsk3-textbook-1103.mp3",
+        "lines": [
+          {
+            "speaker": "妈妈",
+            "zh": "还差一双筷子，你去拿一下。",
+            "pinyin": "Hái chà yì shuāng kuàizi, nǐ qù ná yíxià."
+          },
+          {
+            "speaker": "儿子",
+            "zh": "今天怎么做了这么多菜？",
+            "pinyin": "Jīntiān zěnme zuòle zhème duō cài?"
+          },
+          {
+            "speaker": "妈妈",
+            "zh": "今天是你爸爸的生日。",
+            "pinyin": "Jīntiān shì nǐ bàba de shēngrì."
+          },
+          {
+            "speaker": "儿子",
+            "zh": "真的啊？我把爸爸的生日忘了。那我们今天喝点儿啤酒吧。",
+            "pinyin": "Zhēn de a? Wǒ bǎ bàba de shēngrì wàng le. Nà wǒmen jīntiān hē diǎnr píjiǔ ba."
+          },
+          {
+            "speaker": "妈妈",
+            "zh": "医生说你爸爸一口酒都不能喝，别让他看见酒瓶子。",
+            "pinyin": "Yīshēng shuō nǐ bàba yì kǒu jiǔ dōu bù néng hē, bié ràng tā kànjiàn jiǔ píngzi."
+          }
+        ],
+        "new_words": [
+          {
+            "n": 12,
+            "zh": "双",
+            "pinyin": "shuāng",
+            "pos": "m.",
+            "en": "pair",
+            "text": 3
+          },
+          {
+            "n": 13,
+            "zh": "筷子",
+            "pinyin": "kuàizi",
+            "pos": "n.",
+            "en": "chopsticks",
+            "text": 3
+          },
+          {
+            "n": 14,
+            "zh": "啤酒",
+            "pinyin": "píjiǔ",
+            "pos": "n.",
+            "en": "beer",
+            "text": 3
+          },
+          {
+            "n": 15,
+            "zh": "口",
+            "pinyin": "kǒu",
+            "pos": "m.",
+            "en": "mouthful",
+            "text": 3
+          },
+          {
+            "n": 16,
+            "zh": "瓶子",
+            "pinyin": "píngzi",
+            "pos": "n.",
+            "en": "bottle",
+            "text": 3
+          }
+        ]
+      },
+      {
+        "n": 4,
+        "kind": "narrative",
+        "audio": "hsk3-textbook-1104.mp3",
+        "lines": [
+          {
+            "zh": "这个笔记本电脑我去年买的时候要五千块左右，现在便宜多了。",
+            "pinyin": "Zhège bǐjìběn diànnǎo wǒ qùnián mǎi de shíhou yào wǔ qiān kuài zuǒyòu, xiànzài piányi duō le."
+          },
+          {
+            "zh": "我想把这个电脑卖了，再买一个更好的。",
+            "pinyin": "Wǒ xiǎng bǎ zhège diànnǎo mài le, zài mǎi yí ge gèng hǎo de."
+          },
+          {
+            "zh": "现在我每天起床后的第一件事就是打开电脑，看电子邮件。",
+            "pinyin": "Xiànzài wǒ měi tiān qǐ chuáng hòu de dì yī jiàn shì jiù shì dǎ kāi diànnǎo, kàn diànzǐ yóujiàn."
+          },
+          {
+            "zh": "我已经很少写信，也很少用笔写字，已经习惯用电脑来学习和工作了。",
+            "pinyin": "Wǒ yǐjīng hěn shǎo xiě xìn, yě hěn shǎo yòng bǐ xiě zì, yǐjīng xíguàn yòng diànnǎo lái xuéxí hé gōngzuò le."
+          },
+          {
+            "zh": "哪一天突然没有了电脑，我们怎么办呢？",
+            "pinyin": "Nǎ yì tiān tūrán méiyǒule diànnǎo, wǒmen zěnme bàn ne?"
+          }
+        ],
+        "new_words": [
+          {
+            "n": 17,
+            "zh": "笔记本（电脑）",
+            "pinyin": "bǐjìběn (diànnǎo)",
+            "pos": "n.",
+            "en": "notebook, laptop",
+            "text": 4
+          },
+          {
+            "n": 18,
+            "zh": "电子邮件",
+            "pinyin": "diànzǐ yóujiàn",
+            "en": "e-mail",
+            "text": 4
+          },
+          {
+            "n": 19,
+            "zh": "习惯",
+            "pinyin": "xíguàn",
+            "pos": "v./n.",
+            "en": "to be used to; habit",
+            "text": 4
+          }
+        ]
+      }
+    ],
+    "grammar": [
+      {
+        "n": 1,
+        "title_zh": "“把”字句1：A把B＋V＋……",
+        "title_en": "The Ba-Sentence 1: A把B + V + ……",
+        "explanation_zh": "汉语中，表示对确定的人或确定的事物做出相应处置，可以用“把”字句，其结构为“A把B＋V＋……”。这种“把”字句多用于对别人的请求、命令的情境中。注意：A为动作的发出者；B为动词涉及的对象，必须是特指或已知的。例如：（1）–（4）\n否定副词和能愿动词等应该放在“把”字的前边，例如：（5）–（8）",
+        "explanation_en": "In Chinese, a ba-sentence can be used to indicate a certain action done on a definite person or thing, the structure being “A把B + V + ……”. This type of ba-sentence is often used to request or order other people to do something. It is noteworthy that A is the agent of the action, and B is the patient. Both A and B should be specific or known to the speaker and the listener. For example: (1)–(4)\nIf there is a negative adverb or a modal verb etc., it should precede “把”. For example: (5)–(8)",
+        "structure_rows": [
+          "A把B＋V＋……"
+        ],
+        "examples": [
+          {
+            "n": 1,
+            "zh": "请你把衣服洗了。"
+          },
+          {
+            "n": 2,
+            "zh": "帮我把这本词典还了。"
+          },
+          {
+            "n": 3,
+            "zh": "你把灯关了吧。"
+          },
+          {
+            "n": 4,
+            "zh": "我把爸爸的生日忘了。"
+          },
+          {
+            "n": 5,
+            "zh": "你没把书给我。"
+          },
+          {
+            "n": 6,
+            "zh": "你别把手机忘了。"
+          },
+          {
+            "n": 7,
+            "zh": "我不能把电脑给你。"
+          },
+          {
+            "n": 8,
+            "zh": "你可以把空调关了吗？"
+          }
+        ],
+        "practice_instruction_zh": "练一练　用提示词完成句子 Complete the sentences with the words given.",
+        "practice": [
+          {
+            "n": 1,
+            "zh": "房间里有点儿冷，你可以________？",
+            "hint_zh": "（关门）"
+          },
+          {
+            "n": 2,
+            "zh": "你发烧还没好，快________。",
+            "hint_zh": "（吃药）"
+          },
+          {
+            "n": 3,
+            "zh": "吃饭以前别忘了________。",
+            "hint_zh": "（洗手）"
+          }
+        ]
+      },
+      {
+        "n": 2,
+        "title_zh": "概数的表达2：左右",
+        "title_en": "Expression of Approximate Numbers 2: 左右",
+        "explanation_zh": "汉语中，“左右”用在数字后面表示概数，如：三点左右，五个左右，十年左右。例如：",
+        "explanation_en": "In Chinese, “左右” can be used after a numeral to indicate an approximate number, such as “三点左右” (around three o’clock), “五个左右” (about five), and “十年左右” (ten years or so). For example:",
+        "structure_rows": [
+          "三点左右",
+          "五个左右",
+          "十年左右"
+        ],
+        "examples": [
+          {
+            "n": 1,
+            "zh": "周末我一般十点左右起床。"
+          },
+          {
+            "n": 2,
+            "zh": "我们公司有五百人左右。"
+          },
+          {
+            "n": 3,
+            "zh": "王经理两点左右来了个电话。"
+          },
+          {
+            "n": 4,
+            "zh": "这个笔记本电脑我去年买的时候要五千块左右。"
+          }
+        ],
+        "practice_instruction_zh": "练一练　完成对话 Complete the dialogues.",
+        "practice": [
+          {
+            "n": 1,
+            "zh": "A：你每天几点睡觉？ B：________。"
+          },
+          {
+            "n": 2,
+            "zh": "A：你学了多长时间的汉语了？ B：________。"
+          },
+          {
+            "n": 3,
+            "zh": "A：从你家到学校坐多长时间车？ B：________。"
+          }
+        ]
+      }
+    ],
+    "exercises": [
+      {
+        "n": 1,
+        "type_zh": "朗读",
+        "instruction_zh": "朗读下列短语和句子",
+        "instruction_en": "Read the following phrases and sentences aloud.",
+        "audio": "hsk3-textbook-1105.mp3",
+        "items": [
+          {
+            "n": 1,
+            "zh": "关：关灯／关门／关电视／离开教室的时候，记得把灯关了。"
+          },
+          {
+            "n": 2,
+            "zh": "借：借书／借钱／借我用用／我去图书馆借本书。"
+          },
+          {
+            "n": 3,
+            "zh": "结束：学期结束／还没结束／结束了／会议结束后，别忘了把空调关了。"
+          },
+          {
+            "n": 4,
+            "zh": "口：一口水／喝一口／吃几口饭／你爸爸一口酒都不能喝。"
+          },
+          {
+            "n": 5,
+            "zh": "习惯：好习惯／学习习惯／还没习惯／我已经习惯用电脑来学习和工作了。"
+          }
+        ]
+      },
+      {
+        "n": 2,
+        "type_zh": "选词填空",
+        "instruction_zh": "选择恰当的词语填空",
+        "instruction_en": "Choose the proper words to fill in the blanks.",
+        "word_bank": [
+          [
+            "瓶子",
+            "空调",
+            "词典",
+            "双",
+            "口"
+          ],
+          [
+            "习惯",
+            "结束",
+            "关",
+            "还（huán）",
+            "会议"
+          ]
+        ],
+        "items": [
+          {
+            "n": 1,
+            "zh": "拿两________筷子就可以了，今天爸爸不回来吃晚饭。"
+          },
+          {
+            "n": 2,
+            "zh": "这本________是我朋友的，不是我的。"
+          },
+          {
+            "n": 3,
+            "zh": "这种咖啡特别好喝，你快来喝一________吧。"
+          },
+          {
+            "n": 4,
+            "zh": "桌子上有一个________，是谁的？"
+          },
+          {
+            "n": 5,
+            "zh": "你怎么没开________？太热了！"
+          },
+          {
+            "n": 6,
+            "zh": "A：你把灯________了吧，我要睡觉了。 B：好，我马上就去。"
+          },
+          {
+            "n": 7,
+            "zh": "A：你可以帮我把书________了吗？ B：明天下午可以吗？"
+          },
+          {
+            "n": 8,
+            "zh": "A：音乐会________以后，我们一起去饭馆吃饭吧。 B：还是回家吃吧。"
+          },
+          {
+            "n": 9,
+            "zh": "A：你下课以后常常做什么？ B：我下了汉语课________去图书馆。"
+          },
+          {
+            "n": 10,
+            "zh": "A：今天的________是几点的？ B：下午两点半。"
+          }
+        ]
+      },
+      {
+        "n": 3,
+        "type_zh": "描述图片",
+        "instruction_zh": "用本课新学的语言点和词语描述图片",
+        "instruction_en": "Describe the pictures using the newly-learned language points and words.",
+        "items": [
+          {
+            "n": 1,
+            "zh": "A：音乐会就要开始了，先生，请您________。 B：好的，我马上关。请问还有多长时间开始？ A：还有五分钟________。 B：谢谢。",
+            "picture_desc_en": "A person holding up a mobile phone, its screen showing a stage."
+          },
+          {
+            "n": 2,
+            "zh": "A：你今天打算几点睡觉？ B：十点半________。 A：睡觉以前别忘了________。 B：没问题。",
+            "picture_desc_en": "A smiling man standing beside a boy who is drinking from a white cup."
+          },
+          {
+            "n": 3,
+            "zh": "A：昨天谁是最后一个离开办公室的？ B：是我，我昨天是________离开的。 A：你是不是忘了________？ B：对不起，我以后一定不会忘。",
+            "picture_desc_en": "A finger pressing a round power button with a small green light on a grey-and-black office machine."
+          },
+          {
+            "n": 4,
+            "zh": "A：今天下午你要去见小刚吗？ B：对，我________去找他。 A：你可以帮我________？ B：没问题，我帮你还他。",
+            "picture_desc_en": "One hand passing Chinese yuan banknotes into another open hand."
+          }
+        ]
+      },
+      {
+        "n": 4,
+        "type_zh": "回答问题",
+        "instruction_zh": "根据课文回答问题",
+        "instruction_en": "Answer the questions according to the texts.",
+        "items": [
+          {
+            "n": 1,
+            "zh": "小明要帮同学做什么？"
+          },
+          {
+            "n": 2,
+            "zh": "小明告诉同学做什么？"
+          },
+          {
+            "n": 3,
+            "zh": "王经理现在在哪儿？"
+          },
+          {
+            "n": 4,
+            "zh": "周太太今天为什么做了那么多的菜？"
+          },
+          {
+            "n": 5,
+            "zh": "爸爸能喝酒吗？为什么？"
+          },
+          {
+            "n": 6,
+            "zh": "“我”现在每天用电脑做什么？"
+          }
+        ]
+      }
+    ],
+    "characters": {
+      "knowledge_title_zh": "旧字新词",
+      "knowledge_zh": "读读下面的词语，想想组成的新词是什么意思。",
+      "knowledge_en": "Read the following words and guess the meanings of the newly-formed ones.",
+      "word_game": [
+        {
+          "parts": [
+            "字",
+            "词典"
+          ],
+          "result": "字典"
+        },
+        {
+          "parts": [
+            "运动",
+            "会议"
+          ],
+          "result": "运动会"
+        },
+        {
+          "parts": [
+            "开",
+            "会议"
+          ],
+          "result": "开会"
+        }
+      ],
+      "confusable_pairs": [
+        [
+          "周",
+          "调"
+        ],
+        [
+          "关",
+          "天"
+        ],
+        [
+          "还",
+          "这"
+        ],
+        [
+          "快",
+          "筷"
+        ],
+        [
+          "借",
+          "错"
+        ]
+      ]
+    },
+    "application": [
+      {
+        "title_zh": "双人活动",
+        "instruction_zh": "两个人一组，互相询问对方感兴趣的东西多少钱。",
+        "instruction_en": "Work in pairs and ask each other the price of something you are interested in.",
+        "example_zh": [
+          "A：在你们国家，一个手机多少钱？",
+          "B：在我们国家，一个手机2000块左右。",
+          "表格：| | 问 | 答 |",
+          "| 1 | 手机 | 2000块左右 |"
+        ]
+      },
+      {
+        "title_zh": "小组活动",
+        "instruction_zh": "3～4人一组，用“把”字句说说今天的计划：什么时候，在什么地方，要做什么。",
+        "instruction_en": "Work in groups of 3-4. Talk about today’s plan (including when, where, and what to do) using ba-sentences.",
+        "example_zh": [
+          "今天下了课我要去图书馆把书还了。",
+          "提示词：洗衣服　买牛奶　写作业　做饭　借书　复习课文",
+          "表格：| | 什么时候 | 什么地方 | 做什么 |",
+          "| 1 | 下了课 | 去图书馆 | 把书还了 |"
+        ]
+      }
+    ],
+    "saying": {
+      "zh": "贵人多忘事",
+      "pinyin": "Guìrén duō wàng shì",
+      "en": "Great wits have short memories",
+      "explanation_zh": "“贵人多忘事”，这里的“贵人”是做大官的人或者做大生意的人。这句话的意思是做大官或者做大生意的人因为事情太多，所以常常会忘记做一些小事。现在一般用在对话中表示客气，说明一个人工作太忙，事情太多，忘记一些小事是可以理解的，有时候也有一种讽刺的意味。",
+      "explanation_en": "In the saying “贵人多忘事”, “贵人” refers to “a high-ranking official” or “a successful businessman”. The saying means that one who holds a high government position or does big business often forgets certain trivialities due to the enormous amount of work. Now it is a polite way to say that it is understandable that one who is fully occupied with work or business affairs should forget some trivial matters, sometimes also conveying an ironic tone."
+    }
+  },
+  "teacher": {
+    "ref": {
+      "book": "teacher",
+      "pages": [
+        78,
+        79,
+        80,
+        81,
+        82,
+        83
+      ]
+    },
+    "objectives_zh": [
+      "重点词语：学生能够掌握：“借、还、双、口、电子邮件”的词义和用法",
+      "语言点：学生能够了解并掌握：（1）“把”字句表示命令与请求（2）名词“左右”表示概数",
+      "汉字：学生能够：根据已学生词猜测出3个旧字新词“字典、运动会、开会”的意思",
+      "功能：学生能够：（1）用“把”字句表示命令与请求（2）用“左右”表示概数"
+    ],
+    "steps": [
+      {
+        "title_zh": "复习旧课",
+        "body_zh": "1 教师展示第10课的热身图片，请学生根据图片说出生词。\n2 教师根据第10课的内容进行提问。\n（1）你在这个地方住了多久了？你喜欢这儿吗？\n（2）我们每课的新词多不多？有几个？\n（3）你做的饭好吃还是妈妈做的饭好吃？\n（4）旅游的时候，坐飞机好还是坐火车好？为什么？\n（5）你觉得在大公司工作好还是在小公司工作好？为什么？"
+      },
+      {
+        "title_zh": "学习新课 1 热身",
+        "body_zh": "热身1：学生两人一组，合作完成热身1；教师出示热身1的图片，让学生根据图片说出词语，核对答案；最后全体学生齐读热身环节所有词语，要求语音标准，声调准确。\n答案：①B　②D　③A　④F　⑤C　⑥E\n热身2：可留至语言点（1）“‘把’字句1：A把B＋动词＋……”导入时使用。"
+      },
+      {
+        "title_zh": "2 生词",
+        "body_zh": "（1）生词快速认读及正音\n图书馆、借、词典、还、灯、会议、结束、忘记、空调、关、地铁、双、筷子、啤酒、口、瓶子、笔记本（电脑）、电子邮件、习惯\n· 教师先带领学生快速认读一遍生词；\n· 取消拼音，带领学生再次认读；\n· 请单个学生独自认读2-3个生词；\n· 最后全班一起快速认读所有的生词。\n（2）生词讲解方式\n· 直观法（如图片、照片、实物等）展示：图书馆、词典、灯、空调、地铁、筷子、啤酒、瓶子、笔记本（电脑）、电子邮件\n· 对比法展示：借—还、开始—结束、记得—忘记、开—关\n（3）重点生词扩展及常用搭配\n借—借书—借了五十块钱—我能借你的手机用一下吗？\n还—还书—还钱—你上次借的钱还没还呢。\n双—一双筷子—再拿两双筷子来，一会儿来两个朋友吃饭。\n口—一口—喝一口—一口酒—你只喝了一小口咖啡，是不是不好喝？\n电子邮件—写电子邮件—发电子邮件—你能用汉语给老师发一个电子邮件吗？\n练习册相关练习：第71页／一／第一部分，第74页／二／第二部分"
+      },
+      {
+        "title_zh": "3 语言点（1）“把”字句1：A把B＋动词＋……",
+        "body_zh": "① 语言点解析\n汉语中，表示对确定的人或确定的事物做出相应处置，可以用“把”字句，其结构为“A把B＋动词＋……”。动词后最简单的其他成分就是“了”，这种“把”字句多用于对别人的请求、命令的情境中。\n［A把B＋动词＋其他成分（如“了”）］\n② 语言点导入\n教师可利用本课热身2导入语言点。\n答案：①D　②A　③B　④C\n教师：你想请朋友关灯，怎么说？\n学生：请关灯。\n教师引导学生说出：请把灯关了。\n③ 语言点操练\n教师可利用本课热身2操练语言点。\n教师展示图片并提问。\n教师：我们要出去，空调还开着，你应该说什么？\n学生：请把空调关了。\n目标句：请把空调关了。\n　　　　请把衣服洗了。\n　　　　请把书还了。\n④ 语言点扩展练习\n教师给出情境，请学生两人一组，一人说，一人做。\n在医院，医生请病人吃药、喝水。\n在家，妻子请丈夫做饭、洗衣服。\n在教室，老师请学生关手机、写作业。\n在办公室，经理请秘书关门、关电脑。\n注意：“A把B＋动词＋……”格式中，A为动作的发出者，B为动词涉及的对象，必须是特指或已知的。"
+      },
+      {
+        "title_zh": "3 语言点（2）概数的表达2：左右",
+        "body_zh": "① 语言点解析\n汉语中，“左右”用在数字后面表示概数。如：三点左右，五个左右，十年左右。\n② 语言点导入\n教师根据实际情况，提问并引入语言点。\n教师：你今天是什么时候到教室的？\n学生：早上八点左右。\n③ 语言点操练\n教师可利用热身1的图片A、B、F，热身2的图片（3）（4）进行操练。\n目标句：一个空调两千块左右。\n　　　　一本词典五十块左右。\n　　　　地铁三分钟左右就来一次。\n　　　　明天我打算上午十点左右洗衣服。\n　　　　我昨天是下午两点左右去图书馆的。\n④ 语言点扩展练习\n教师可根据实际情况提问，请学生回答。\n你每天几点睡觉？周末呢？\n你觉得老师今年多大？"
+      },
+      {
+        "title_zh": "4 课文 课文1",
+        "body_zh": "（1）让学生听两遍录音并回答下列问题：\n男的为什么要先走？——他要去图书馆借本书。\n女的请男的做什么？——请男的帮她把词典还了。\n男的让女的做什么？——离开教室的时候把灯关了。\n（2）教师领读课文两遍，让学生分角色朗读课文。\n（3）模仿练习\n学生两人一组，根据提示词模仿课文内容进行对话练习。\nA：我先……。\nB：你去哪儿？\nA：我……。\nB：帮我把……。\nA：好，……的时候，记得把……。\nB：好的，放心吧。"
+      },
+      {
+        "title_zh": "4 课文 课文2",
+        "body_zh": "（1）让学生听两遍录音并回答下列问题：\n男的对女的说什么？——会议结束后，别忘记把空调关了。\n女的告诉男的什么事儿？——王经理两点左右来了个电话。\n王经理现在在哪儿？——王经理正坐地铁来他们公司。\n（2）教师领读课文两遍，让学生分角色朗读课文。\n（3）教师给提示词，带领学生复述课文。\n提示词：结束、把……V了、左右、来电话、地铁"
+      },
+      {
+        "title_zh": "4 课文 课文3",
+        "body_zh": "（1）让学生听两遍录音并回答下列问题：\n女的（妈妈）让男的（儿子）做什么？——妈妈让儿子再拿一双筷子。\n妈妈今天为什么做了那么多菜？——因为今天是爸爸的生日。\n儿子做错了什么？——他把爸爸的生日忘了。\n他们今天能喝啤酒吗？为什么？——他们不能喝。因为医生一口酒都不让爸爸喝。\n（2）教师领读课文两遍，让学生分角色朗读课文，注意说话人的语气。\n（3）模仿练习\n学生两人一组，根据提示词模仿课文内容进行对话练习。\nA：还差……，你去……。\nB：今天怎么……？\nA：今天是……。\nB：真的啊？我把……。那……吧。\nA：医生说……，别……。"
+      },
+      {
+        "title_zh": "4 课文 课文4",
+        "body_zh": "① 快速阅读，并回答：我现在有什么习惯？\n② 教师领读课文两遍，并回答下列问题：\n这个电脑是什么时候买的？多少钱？——这个电脑是去年买的，五千块左右。\n“我”现在有什么打算？——“我”想把这个电脑卖了，再买一个更好的。\n“我”每天起床后第一件事是什么？——第一件事是打开电脑，看电子邮件。\n③ 教师给提示词，带领学生复述课文。\n提示词：去年、左右、更好的、打开、电子邮件、习惯\n④ 教师请学生根据课文，说说自己用什么学习、工作，有什么习惯。\n练习册相关练习：第77页／四"
+      },
+      {
+        "title_zh": "5 汉字",
+        "body_zh": "旧字新词：\n① 教师领读以前学过的词语和新词，并让学生猜猜新词的意思。\n· 领读：字、词典、字典\n问学生：什么时候用“字典”？——不会写字、不知道字怎么读的时候。\n· 领读：运动、会议、运动会\n问学生：“运动会”的时候做什么？——比赛。\n扩展提问：还有什么“会”？——音乐会、晚会、舞会、年会、迎新会。（根据实际情况选用）\n· 领读：开、会议、开会\n问学生：谁经常“开会”？——经理、秘书、老师。\n② 教师领读新词扩展，通过情景，理解新词的意思和用法：\n字典：一本字典／买字典／电子字典／你有汉语字典吗？\n运动会：开运动会／运动会要开始了／你们学校什么时候开运动会？\n开会：开一个会／开半个小时会／开会的时候请把手机关了。\n汉字辨认练习：\n辨认下列汉字并组词。\n周：________、________　调：________、________\n关：________、________　天：________、________\n还：________、________　这：________、________\n快：________、________　筷：________、________\n借：________、________　错：________、________\n练习册相关练习：第77页／三／第三部分"
+      },
+      {
+        "title_zh": "6 补充课堂活动——根据词卡写句子",
+        "body_zh": "4-5个学生一组，小组内A→B、B→C、……、E→A，每人请同伴帮自己做一件事，要求用上“把”字句。"
+      },
+      {
+        "title_zh": "7 俗语",
+        "body_zh": "教师引导学生理解俗语的含义，注意这里的“贵”的意思不是价格很贵，“贵人”是一种尊敬的用法。这句话是对别人说的，一般不对自己说。如：您真是贵人多忘事，这么快就把我的名字忘了。"
+      },
+      {
+        "title_zh": "8 本课小结",
+        "body_zh": "· 语言点：用“把”字句表示命令与请求\n　　　　　用“左右”表示概数\n· 汉　字：旧字新词：字典、运动会、开会"
+      }
+    ],
+    "notes_zh": [
+      "注意：“A把B＋动词＋……”格式中，A为动作的发出者，B为动词涉及的对象，必须是特指或已知的。（语言点1）",
+      "动词后最简单的其他成分就是“了”。［A把B＋动词＋其他成分（如“了”）］（语言点1 解析）",
+      "对比法展示：借—还、开始—结束、记得—忘记、开—关（生词）",
+      "注意这里的“贵”的意思不是价格很贵，“贵人”是一种尊敬的用法。这句话是对别人说的，一般不对自己说。（俗语）"
+    ],
+    "warmup_answers_zh": [
+      "热身1 答案：①B　②D　③A　④F　⑤C　⑥E",
+      "热身2 答案：①D　②A　③B　④C（语言点（1）导入）",
+      "热身2：可留至语言点（1）“‘把’字句1：A把B＋动词＋……”导入时使用。"
+    ],
+    "text_questions": [
+      {
+        "text": 1,
+        "q_zh": "男的为什么要先走？",
+        "a_zh": "他要去图书馆借本书。"
+      },
+      {
+        "text": 1,
+        "q_zh": "女的请男的做什么？",
+        "a_zh": "请男的帮她把词典还了。"
+      },
+      {
+        "text": 1,
+        "q_zh": "男的让女的做什么？",
+        "a_zh": "离开教室的时候把灯关了。"
+      },
+      {
+        "text": 2,
+        "q_zh": "男的对女的说什么？",
+        "a_zh": "会议结束后，别忘记把空调关了。"
+      },
+      {
+        "text": 2,
+        "q_zh": "女的告诉男的什么事儿？",
+        "a_zh": "王经理两点左右来了个电话。"
+      },
+      {
+        "text": 2,
+        "q_zh": "王经理现在在哪儿？",
+        "a_zh": "王经理正坐地铁来他们公司。"
+      },
+      {
+        "text": 3,
+        "q_zh": "女的（妈妈）让男的（儿子）做什么？",
+        "a_zh": "妈妈让儿子再拿一双筷子。"
+      },
+      {
+        "text": 3,
+        "q_zh": "妈妈今天为什么做了那么多菜？",
+        "a_zh": "因为今天是爸爸的生日。"
+      },
+      {
+        "text": 3,
+        "q_zh": "儿子做错了什么？",
+        "a_zh": "他把爸爸的生日忘了。"
+      },
+      {
+        "text": 3,
+        "q_zh": "他们今天能喝啤酒吗？为什么？",
+        "a_zh": "他们不能喝。因为医生一口酒都不让爸爸喝。"
+      },
+      {
+        "text": 4,
+        "q_zh": "快速阅读，并回答：我现在有什么习惯？"
+      },
+      {
+        "text": 4,
+        "q_zh": "这个电脑是什么时候买的？多少钱？",
+        "a_zh": "这个电脑是去年买的，五千块左右。"
+      },
+      {
+        "text": 4,
+        "q_zh": "“我”现在有什么打算？",
+        "a_zh": "“我”想把这个电脑卖了，再买一个更好的。"
+      },
+      {
+        "text": 4,
+        "q_zh": "“我”每天起床后第一件事是什么？",
+        "a_zh": "第一件事是打开电脑，看电子邮件。"
+      }
+    ],
+    "summary_zh": "语言点：用“把”字句表示命令与请求；用“左右”表示概数。汉字：旧字新词：字典、运动会、开会。"
+  },
+  "workbook": {
+    "ref": {
+      "book": "workbook",
+      "pages": [
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81
+      ]
+    },
+    "sections": [
+      {
+        "n": "一、听力 第一部分",
+        "type_zh": "听力 第一部分",
+        "instruction_zh": "第1–5题：听对话，选择与对话内容一致的图片",
+        "instruction_en": "Questions 1-5: Choose the right picture for each dialogue you hear.",
+        "audio": "hsk3-workbook-11-part1.mp3",
+        "items": [
+          {
+            "n": "例",
+            "zh": "男：喂，请问张经理在吗？ 女：他正在开会，您半个小时以后再打，好吗？",
+            "transcript_zh": "男：喂，请问张经理在吗？ 女：他正在开会，您半个小时以后再打，好吗？",
+            "options": {
+              "A": "[picture] a man working on a laptop at a desk, with a lamp and a potted plant beside him",
+              "B": "[picture] a bowl and a pair of chopsticks on a chopstick rest, on a bamboo mat",
+              "C": "[picture] a stadium full of spectators",
+              "D": "[picture] a smiling woman in a uniform talking on a telephone",
+              "E": "[picture] a patterned porcelain vase on a stand",
+              "F": "[picture] an open thick dictionary with a pen lying on it"
+            },
+            "answer": "D",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                75
+              ]
+            }
+          },
+          {
+            "n": 1,
+            "zh": "",
+            "options": {
+              "A": "[picture] a man working on a laptop at a desk, with a lamp and a potted plant beside him",
+              "B": "[picture] a bowl and a pair of chopsticks on a chopstick rest, on a bamboo mat",
+              "C": "[picture] a stadium full of spectators",
+              "D": "[picture] a smiling woman in a uniform talking on a telephone",
+              "E": "[picture] a patterned porcelain vase on a stand",
+              "F": "[picture] an open thick dictionary with a pen lying on it"
+            },
+            "transcript_zh": "男：这个花瓶真漂亮，在哪儿买的？ 女：我家楼下的商店，我带你去看看。",
+            "answer": "E",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                175
+              ]
+            }
+          },
+          {
+            "n": 2,
+            "zh": "",
+            "options": {
+              "A": "[picture] a man working on a laptop at a desk, with a lamp and a potted plant beside him",
+              "B": "[picture] a bowl and a pair of chopsticks on a chopstick rest, on a bamboo mat",
+              "C": "[picture] a stadium full of spectators",
+              "D": "[picture] a smiling woman in a uniform talking on a telephone",
+              "E": "[picture] a patterned porcelain vase on a stand",
+              "F": "[picture] an open thick dictionary with a pen lying on it"
+            },
+            "transcript_zh": "男：把词典还我吧，我要用一下。 女：好，方便的时候再借我用用。",
+            "answer": "F",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                175
+              ]
+            }
+          },
+          {
+            "n": 3,
+            "zh": "",
+            "options": {
+              "A": "[picture] a man working on a laptop at a desk, with a lamp and a potted plant beside him",
+              "B": "[picture] a bowl and a pair of chopsticks on a chopstick rest, on a bamboo mat",
+              "C": "[picture] a stadium full of spectators",
+              "D": "[picture] a smiling woman in a uniform talking on a telephone",
+              "E": "[picture] a patterned porcelain vase on a stand",
+              "F": "[picture] an open thick dictionary with a pen lying on it"
+            },
+            "transcript_zh": "女：饭菜都做好了，把电脑关了吧？先吃饭。 男：好的，我马上就来。",
+            "answer": "A",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                175
+              ]
+            }
+          },
+          {
+            "n": 4,
+            "zh": "",
+            "options": {
+              "A": "[picture] a man working on a laptop at a desk, with a lamp and a potted plant beside him",
+              "B": "[picture] a bowl and a pair of chopsticks on a chopstick rest, on a bamboo mat",
+              "C": "[picture] a stadium full of spectators",
+              "D": "[picture] a smiling woman in a uniform talking on a telephone",
+              "E": "[picture] a patterned porcelain vase on a stand",
+              "F": "[picture] an open thick dictionary with a pen lying on it"
+            },
+            "transcript_zh": "女：运动会什么时候结束？ 男：五点左右吧。",
+            "answer": "C",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                175
+              ]
+            }
+          },
+          {
+            "n": 5,
+            "zh": "",
+            "options": {
+              "A": "[picture] a man working on a laptop at a desk, with a lamp and a potted plant beside him",
+              "B": "[picture] a bowl and a pair of chopsticks on a chopstick rest, on a bamboo mat",
+              "C": "[picture] a stadium full of spectators",
+              "D": "[picture] a smiling woman in a uniform talking on a telephone",
+              "E": "[picture] a patterned porcelain vase on a stand",
+              "F": "[picture] an open thick dictionary with a pen lying on it"
+            },
+            "transcript_zh": "男：服务员，这儿只有一双筷子，请再给我们拿一双。 女：好的，请您等一下，马上来。",
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                175
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "一、听力 第二部分",
+        "type_zh": "听力 第二部分",
+        "instruction_zh": "第6–10题：听句子，判断对错",
+        "instruction_en": "Questions 6-10: Decide whether the statements are true or false based on the sentences you hear.",
+        "audio": "hsk3-workbook-11-part2.mp3",
+        "items": [
+          {
+            "n": "例1",
+            "zh": "他希望自己很健康。",
+            "transcript_zh": "为了让自己更健康，他每天都花一个小时去锻炼身体。",
+            "answer": "√",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                76
+              ]
+            }
+          },
+          {
+            "n": "例2",
+            "zh": "那块儿手表不是他的。",
+            "transcript_zh": "今天我想早点儿回家。看了看手表，才5点。过了一会儿再看表，还是5点，我这才发现我的手表不走了。",
+            "answer": "×",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                76
+              ]
+            }
+          },
+          {
+            "n": 6,
+            "zh": "他的电脑出了点儿问题。",
+            "transcript_zh": "小周，你帮我看一下笔记本电脑吧。昨天我还能看电子邮件，今天突然就打不开了，不知道是怎么回事。",
+            "answer": "√",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                175
+              ]
+            }
+          },
+          {
+            "n": 7,
+            "zh": "他打算去图书馆学习。",
+            "transcript_zh": "教室里人太多了，我们去图书馆学习吧，那儿比较安静。",
+            "answer": "√",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                175
+              ]
+            }
+          },
+          {
+            "n": 8,
+            "zh": "他以前骑自行车上班。",
+            "transcript_zh": "住在这儿真不错，附近环境很好，离我上班的医院也不远，上下班都不用坐地铁了，骑自行车就可以。",
+            "answer": "×",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                175
+              ]
+            }
+          },
+          {
+            "n": 9,
+            "zh": "跟家人一起吃晚饭很快乐。",
+            "transcript_zh": "什么是快乐？结束一天的工作以后，你和家人一起吃晚饭，说说白天的事情，这不就是快乐吗？",
+            "answer": "√",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                175
+              ]
+            }
+          },
+          {
+            "n": 10,
+            "zh": "啤酒在桌子上。",
+            "transcript_zh": "你把桌子上的杯子给我，我去洗一下。你去楼下买几瓶啤酒吧。",
+            "answer": "×",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                175
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "一、听力 第三部分",
+        "type_zh": "听力 第三部分",
+        "instruction_zh": "第11–15题：听短对话，选择正确答案",
+        "instruction_en": "Questions 11-15: Listen to the short dialogues and choose the right answers.",
+        "audio": "hsk3-workbook-11-part3.mp3",
+        "items": [
+          {
+            "n": "例",
+            "zh": "男的想让小王做什么？",
+            "transcript_zh": "男：小王，帮我开一下门，好吗？谢谢！ 女：没问题。您去超市了？买了这么多东西。 问：男的想让小王做什么？",
+            "options": {
+              "A": "开门",
+              "B": "拿东西",
+              "C": "去超市买东西"
+            },
+            "answer": "A",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                76
+              ]
+            }
+          },
+          {
+            "n": 11,
+            "zh": "男的在找什么？",
+            "options": {
+              "A": "地铁站",
+              "B": "眼镜店",
+              "C": "地图"
+            },
+            "transcript_zh": "男：你看一下地图，这儿附近有眼镜店吗？ 女：地铁站旁边有一个，在地铁站的北边。 问：男的在找什么？",
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                175
+              ]
+            }
+          },
+          {
+            "n": 12,
+            "zh": "女的要做什么？",
+            "options": {
+              "A": "给妹妹喝牛奶",
+              "B": "去超市买牛奶",
+              "C": "带妹妹去医院"
+            },
+            "transcript_zh": "男：妹妹怎么了？病了吗？ 女：可能饿了，你把奶瓶给我吧。 问：女的要做什么？",
+            "answer": "A",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                175
+              ]
+            }
+          },
+          {
+            "n": 13,
+            "zh": "他们最可能是什么关系？",
+            "options": {
+              "A": "同事",
+              "B": "经理和客人",
+              "C": "医生和病人"
+            },
+            "transcript_zh": "男：会议结束后，你记得把空调和灯都关了。 女：好的，我知道了，明天见。 问：他们最可能是什么关系？",
+            "answer": "A",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                175
+              ]
+            }
+          },
+          {
+            "n": 14,
+            "zh": "男的要做什么？",
+            "options": {
+              "A": "出去开会",
+              "B": "照顾小雨",
+              "C": "和女的去公园"
+            },
+            "transcript_zh": "女：我明天出去开会，你能帮我照顾一下小雨吗？ 男：行，没问题，我每天都带她去公园玩儿。 问：男的要做什么？",
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                175
+              ]
+            }
+          },
+          {
+            "n": 15,
+            "zh": "男的是什么意思？",
+            "options": {
+              "A": "让女的去还书",
+              "B": "书已经还了",
+              "C": "女的忘了还书"
+            },
+            "transcript_zh": "女：我的那本历史书呢，你看见了吗？ 男：你昨天让我去图书馆把书还了，你忘了？ 问：男的是什么意思？",
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                175
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "一、听力 第四部分",
+        "type_zh": "听力 第四部分",
+        "instruction_zh": "第16–20题：听长对话，选择正确答案",
+        "instruction_en": "Questions 16-20: Listen to the dialogues and choose the right answers.",
+        "audio": "hsk3-workbook-11-part4.mp3",
+        "items": [
+          {
+            "n": "例",
+            "zh": "男的在做什么？",
+            "transcript_zh": "女：晚饭做好了，准备吃饭了。 男：等一会儿，比赛还有三分钟就结束了。 女：快点儿吧，一起吃，菜冷了就不好吃了。 男：你先吃，我马上就看完了。 问：男的在做什么？",
+            "options": {
+              "A": "洗澡",
+              "B": "吃饭",
+              "C": "看电视"
+            },
+            "answer": "C",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                77
+              ]
+            }
+          },
+          {
+            "n": 16,
+            "zh": "男的为什么要打电话？",
+            "options": {
+              "A": "今天比较忙",
+              "B": "空调有问题",
+              "C": "叫人来换水"
+            },
+            "transcript_zh": "女：空调下面怎么这么多水？ 男：我也是刚看见，我已经打电话叫人来看了。 女：问他们什么时候到了吗？ 男：他们说今天周日，比较忙，下午才能来。 问：男的为什么要打电话？",
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                175
+              ]
+            }
+          },
+          {
+            "n": 17,
+            "zh": "女的为什么不去跑步？",
+            "options": {
+              "A": "已经洗澡了",
+              "B": "不喜欢出去跑步",
+              "C": "想去超市买东西"
+            },
+            "transcript_zh": "男：我要去跑步，你去不去？ 女：我已经洗完澡了，不想出去了。 男：要带点儿什么东西吗？ 女：你回来时，在楼下超市买斤香蕉和两瓶牛奶吧。 问：女的为什么不去跑步？",
+            "answer": "A",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                175
+              ]
+            }
+          },
+          {
+            "n": 18,
+            "zh": "关于男的的电脑，可以知道什么？",
+            "options": {
+              "A": "比以前便宜了",
+              "B": "太旧了",
+              "C": "又大又方便"
+            },
+            "transcript_zh": "女：我的笔记本电脑太旧了，我想换一个，你说买个什么样的好？ 男：我用的这个就不错，也不大，带着很方便。 女：贵不贵？ 男：有点儿贵，我去年买的时候九千，听说现在卖八千左右。 问：关于男的的电脑，可以知道什么？",
+            "answer": "A",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                175
+              ]
+            }
+          },
+          {
+            "n": 19,
+            "zh": "关于女的，可以知道什么？",
+            "options": {
+              "A": "来周先生家吃晚饭",
+              "B": "每天八点左右下班",
+              "C": "总是照顾周先生的小狗"
+            },
+            "transcript_zh": "女：周先生，我公司突然有事，您能帮我去接一下孩子吗？ 男：没问题，我带她来我家吃晚饭。 女：好的，太谢谢你了，我八点左右去接她回来。 男：别客气，你不也总是帮我照顾小狗吗？ 问：关于女的，可以知道什么？",
+            "answer": "C",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                175
+              ]
+            }
+          },
+          {
+            "n": 20,
+            "zh": "男的要做什么？",
+            "options": {
+              "A": "玩儿电脑",
+              "B": "打篮球",
+              "C": "复习考试"
+            },
+            "transcript_zh": "男：妈，我跟同学去打篮球。 女：你明天不是还要考试吗？ 男：没关系，我已经复习好了，玩儿一会儿就回来。 女：好吧，你的电脑关了没有？ 问：男的要做什么？",
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                175
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "二、阅读 第一部分",
+        "type_zh": "阅读 第一部分",
+        "instruction_zh": "第21–25题：选择合适的问答",
+        "instruction_en": "Questions 21-25: Match the two parts of the same dialogue.",
+        "items": [
+          {
+            "n": "例",
+            "zh": "你知道怎么去那儿吗？",
+            "options": {
+              "A": "都这么晚了，今天别看书了，快睡觉吧。",
+              "B": "你什么时候来找我，我们一起去图书馆吧。",
+              "C": "我昨天没来，把你的笔记本借我看看吧。",
+              "D": "我今天是开车来的，你们喝吧。",
+              "E": "当然。我们先坐公共汽车，然后换地铁。",
+              "F": "不是，我去参加一个会议，下星期三回来。"
+            },
+            "answer": "E",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                78
+              ]
+            }
+          },
+          {
+            "n": 21,
+            "zh": "中午吃完饭，一点左右，怎么样？",
+            "options": {
+              "A": "都这么晚了，今天别看书了，快睡觉吧。",
+              "B": "你什么时候来找我，我们一起去图书馆吧。",
+              "C": "我昨天没来，把你的笔记本借我看看吧。",
+              "D": "我今天是开车来的，你们喝吧。",
+              "E": "当然。我们先坐公共汽车，然后换地铁。",
+              "F": "不是，我去参加一个会议，下星期三回来。"
+            },
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                175
+              ]
+            }
+          },
+          {
+            "n": 22,
+            "zh": "你带这么多东西，又要出去旅游吗？",
+            "options": {
+              "A": "都这么晚了，今天别看书了，快睡觉吧。",
+              "B": "你什么时候来找我，我们一起去图书馆吧。",
+              "C": "我昨天没来，把你的笔记本借我看看吧。",
+              "D": "我今天是开车来的，你们喝吧。",
+              "E": "当然。我们先坐公共汽车，然后换地铁。",
+              "F": "不是，我去参加一个会议，下星期三回来。"
+            },
+            "answer": "F",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                175
+              ]
+            }
+          },
+          {
+            "n": 23,
+            "zh": "我习惯睡觉以前看会儿书了，不看书我睡不着。",
+            "options": {
+              "A": "都这么晚了，今天别看书了，快睡觉吧。",
+              "B": "你什么时候来找我，我们一起去图书馆吧。",
+              "C": "我昨天没来，把你的笔记本借我看看吧。",
+              "D": "我今天是开车来的，你们喝吧。",
+              "E": "当然。我们先坐公共汽车，然后换地铁。",
+              "F": "不是，我去参加一个会议，下星期三回来。"
+            },
+            "answer": "A",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                175
+              ]
+            }
+          },
+          {
+            "n": 24,
+            "zh": "周经理，您怎么一口酒都不喝？",
+            "options": {
+              "A": "都这么晚了，今天别看书了，快睡觉吧。",
+              "B": "你什么时候来找我，我们一起去图书馆吧。",
+              "C": "我昨天没来，把你的笔记本借我看看吧。",
+              "D": "我今天是开车来的，你们喝吧。",
+              "E": "当然。我们先坐公共汽车，然后换地铁。",
+              "F": "不是，我去参加一个会议，下星期三回来。"
+            },
+            "answer": "D",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                175
+              ]
+            }
+          },
+          {
+            "n": 25,
+            "zh": "对不起，我忘带了，明天给你吧。",
+            "options": {
+              "A": "都这么晚了，今天别看书了，快睡觉吧。",
+              "B": "你什么时候来找我，我们一起去图书馆吧。",
+              "C": "我昨天没来，把你的笔记本借我看看吧。",
+              "D": "我今天是开车来的，你们喝吧。",
+              "E": "当然。我们先坐公共汽车，然后换地铁。",
+              "F": "不是，我去参加一个会议，下星期三回来。"
+            },
+            "answer": "C",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                175
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "二、阅读 第二部分",
+        "type_zh": "阅读 第二部分",
+        "instruction_zh": "第26–30题：选择合适的词语填空",
+        "instruction_en": "Questions 26-30: Choose the proper words to fill in the brackets.",
+        "word_bank": [
+          [
+            "A 结束",
+            "B 图书馆",
+            "C 地铁",
+            "D 习惯",
+            "E 声音",
+            "F 关"
+          ]
+        ],
+        "items": [
+          {
+            "n": "例",
+            "zh": "她说话的（　）多好听啊！",
+            "options": {
+              "A": "结束",
+              "B": "图书馆",
+              "C": "地铁",
+              "D": "习惯",
+              "E": "声音",
+              "F": "关"
+            },
+            "answer": "E",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                78
+              ]
+            }
+          },
+          {
+            "n": 26,
+            "zh": "我们一会儿在（　）门口见面吧。",
+            "options": {
+              "A": "结束",
+              "B": "图书馆",
+              "C": "地铁",
+              "D": "习惯",
+              "E": "声音",
+              "F": "关"
+            },
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                175
+              ]
+            }
+          },
+          {
+            "n": 27,
+            "zh": "你去经理的办公室把灯（　）了。",
+            "options": {
+              "A": "结束",
+              "B": "图书馆",
+              "C": "地铁",
+              "D": "习惯",
+              "E": "声音",
+              "F": "关"
+            },
+            "answer": "F",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                175
+              ]
+            }
+          },
+          {
+            "n": 28,
+            "zh": "我想住在（　）站附近，这样去别的地方很方便。",
+            "options": {
+              "A": "结束",
+              "B": "图书馆",
+              "C": "地铁",
+              "D": "习惯",
+              "E": "声音",
+              "F": "关"
+            },
+            "answer": "C",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                175
+              ]
+            }
+          },
+          {
+            "n": 29,
+            "zh": "A：今天晚上的音乐会几点（　）？ B：十点左右，你还有事情吗？",
+            "options": {
+              "A": "结束",
+              "B": "图书馆",
+              "C": "地铁",
+              "D": "习惯",
+              "E": "声音",
+              "F": "关"
+            },
+            "answer": "A",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                175
+              ]
+            }
+          },
+          {
+            "n": 30,
+            "zh": "A：给你买件衬衫吧，在银行上班穿衬衫好一些。 B：我还不太（　）穿衬衫。",
+            "options": {
+              "A": "结束",
+              "B": "图书馆",
+              "C": "地铁",
+              "D": "习惯",
+              "E": "声音",
+              "F": "关"
+            },
+            "answer": "D",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                175
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "二、阅读 第三部分",
+        "type_zh": "阅读 第三部分",
+        "instruction_zh": "第31–35题：选择正确答案",
+        "instruction_en": "Questions 31-35: Choose the right answers.",
+        "items": [
+          {
+            "n": "例",
+            "zh": "您是来参加今天会议的吗？您来早了一点儿，现在才八点半。您先进来坐吧。 ★会议最可能几点开始？",
+            "options": {
+              "A": "8点",
+              "B": "8点半",
+              "C": "9点"
+            },
+            "answer": "C",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                79
+              ]
+            }
+          },
+          {
+            "n": 31,
+            "zh": "我每天下班都坐地铁回家，在地铁上，我更喜欢站着，因为我已经在办公室里坐了一天了。 ★我为什么在地铁上站着？",
+            "options": {
+              "A": "地铁上人很多",
+              "B": "我不累",
+              "C": "我坐了一天了"
+            },
+            "answer": "C",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                175
+              ]
+            }
+          },
+          {
+            "n": 32,
+            "zh": "看书时会看到一些历史上的人或者国家的名字，这些字现在很多都不用了，想要知道这些字的读音和意思就要字典的帮助，所以有本字典很方便。 ★看书时会看到：",
+            "options": {
+              "A": "不认识的字",
+              "B": "现在的名人",
+              "C": "汉字的读音"
+            },
+            "answer": "A",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                175
+              ]
+            }
+          },
+          {
+            "n": 33,
+            "zh": "中国有一句话叫“有借有还，再借不难”，是说向别人借的东西，用完就要还，这样下次你再借东西的时候，他们还会借给你。 ★借了别人的东西：",
+            "options": {
+              "A": "别用太长时间",
+              "B": "要记得还",
+              "C": "不能再借"
+            },
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                175
+              ]
+            }
+          },
+          {
+            "n": 34,
+            "zh": "我爸爸妈妈都是北方人，但是我一直住在南方，所以没见过雪。搬到北京以后，虽然这儿的天气很冷，我还不太习惯，但是我见到雪了，我很高兴。 ★她：",
+            "options": {
+              "A": "不想搬家",
+              "B": "见到雪了",
+              "C": "习惯北京的天气"
+            },
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                175
+              ]
+            }
+          },
+          {
+            "n": 35,
+            "zh": "下班后，我们一起去喝啤酒吧，就在公司旁边，以前是六十元一个人，现在是三十元一个人，想喝几瓶就可以喝几瓶，还送一些吃的。你那个朋友姓什么，我忘记了，叫他也来吧。 ★根据这段话，可以知道：",
+            "options": {
+              "A": "我忘记我朋友的名字了",
+              "B": "三十元可以喝一瓶啤酒",
+              "C": "喝啤酒比以前便宜了"
+            },
+            "answer": "C",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                175
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "三、书写 第一部分",
+        "type_zh": "书写 第一部分",
+        "instruction_zh": "第36–40题：连词成句",
+        "instruction_en": "Questions 36-40: Rearrange the words/phrases to make sentences.",
+        "items": [
+          {
+            "n": "例",
+            "zh": "小船　上　一　河　条　有",
+            "answer": "河上有一条小船。",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                80
+              ]
+            }
+          },
+          {
+            "n": 36,
+            "zh": "左右　上地铁　我每天　七点",
+            "answer": "我每天七点左右上地铁。",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                175
+              ]
+            }
+          },
+          {
+            "n": 37,
+            "zh": "几点　图书馆　关门",
+            "answer": "图书馆几点关门？",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                175
+              ]
+            }
+          },
+          {
+            "n": 38,
+            "zh": "喝了　我昨天　啤酒　两瓶",
+            "answer": "我昨天喝了两瓶啤酒。",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                175
+              ]
+            }
+          },
+          {
+            "n": 39,
+            "zh": "参加　运动会　今年的　你　吗",
+            "answer": "你参加今年的运动会吗？",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                175
+              ]
+            }
+          },
+          {
+            "n": 40,
+            "zh": "别　忘了　手机　你　把",
+            "answer": "你别把手机忘了。",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                175
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "三、书写 第二部分",
+        "type_zh": "书写 第二部分",
+        "instruction_zh": "第41–45题：看拼音，写汉字",
+        "instruction_en": "Questions 41-45: Write the characters based on their pinyin.",
+        "items": [
+          {
+            "n": "例",
+            "zh": "没（　）系，别难过，高兴点儿。",
+            "hint_zh": "guān",
+            "answer": "关",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                80
+              ]
+            }
+          },
+          {
+            "n": 41,
+            "zh": "这个笔记（　）电脑太贵了。",
+            "hint_zh": "běn",
+            "answer": "本",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                175
+              ]
+            }
+          },
+          {
+            "n": 42,
+            "zh": "早睡早起是一个好（　）惯。",
+            "hint_zh": "xí",
+            "answer": "习",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                175
+              ]
+            }
+          },
+          {
+            "n": 43,
+            "zh": "今天的（　）议几点结束？",
+            "hint_zh": "huì",
+            "answer": "会",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                175
+              ]
+            }
+          },
+          {
+            "n": 44,
+            "zh": "我从图书馆借了一本英汉（　）典。",
+            "hint_zh": "cí",
+            "answer": "词",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                175
+              ]
+            }
+          },
+          {
+            "n": 45,
+            "zh": "房间里的（　）怎么还开着呢？",
+            "hint_zh": "dēng",
+            "answer": "灯",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                175
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "三、书写 第三部分",
+        "type_zh": "书写 第三部分",
+        "instruction_zh": "第46–50题：辨认汉字，选择正确的汉字填空",
+        "instruction_en": "Questions 46-50: Distinguish the characters and fill in the blanks.",
+        "items": [
+          {
+            "n": "例",
+            "zh": "我不知道________个地方在________儿。",
+            "hint_zh": "（那、哪）",
+            "answer": "那、哪",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                81
+              ]
+            }
+          },
+          {
+            "n": 46,
+            "zh": "家里的空________坏了，________末我要叫人来看看。",
+            "hint_zh": "（周、调）",
+            "answer": "调、周",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                175
+              ]
+            }
+          },
+          {
+            "n": 47,
+            "zh": "昨________你离开的时候忘记________灯了。",
+            "hint_zh": "（关、天）",
+            "answer": "天、关",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                175
+              ]
+            }
+          },
+          {
+            "n": 48,
+            "zh": "你帮我把________本数学书________了吧。",
+            "hint_zh": "（还、这）",
+            "answer": "这、还",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                175
+              ]
+            }
+          },
+          {
+            "n": 49,
+            "zh": "________点儿，2号桌还少一双________子。",
+            "hint_zh": "（快、筷）",
+            "answer": "快、筷",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                175
+              ]
+            }
+          },
+          {
+            "n": 50,
+            "zh": "你看________了，我________的不是这本书。",
+            "hint_zh": "（借、错）",
+            "answer": "错、借",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                175
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "四、复习",
+        "type_zh": "复习",
+        "instruction_zh": "第1–2题：根据课文内容填空",
+        "instruction_en": "Questions 1-2: Fill in the blanks based on the texts in the textbook.",
+        "items": [
+          {
+            "n": 1,
+            "zh": "开会的时候，小丽告诉周明，王经理两点________来了个电话，说他已经坐________来公司了。周明告诉小丽会议________后，别________把________关了。",
+            "answer": "左右、地铁、结束、忘记、空调",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                175
+              ]
+            }
+          },
+          {
+            "n": 2,
+            "zh": "今天是爸爸的生日，所以妈妈做了很多菜。妈妈让儿子去拿________，还差一________。儿子想让爸爸喝点儿________，但是医生说爸爸一________酒都不能喝，所以不能让他看见酒________。",
+            "answer": "筷子、双、啤酒、口、瓶子",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                175
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "answers_ref": {
+      "book": "teacher",
+      "pages": [
+        173,
+        174,
+        175
+      ]
+    }
+  },
+  "hsk30": {
+    "source": "courseware",
+    "ref": {
+      "book": "hsk30_courseware",
+      "pages": [
+        5,
+        16,
+        26,
+        36,
+        37
+      ]
+    },
+    "new_words": [
+      {
+        "n": 1,
+        "zh": "电子书",
+        "pinyin": "diànzǐshū",
+        "pos": "n.",
+        "en": "e-book",
+        "text": 1
+      },
+      {
+        "n": 2,
+        "zh": "字典",
+        "pinyin": "zìdiǎn",
+        "pos": "n.",
+        "en": "dictionary",
+        "text": 1
+      },
+      {
+        "n": 3,
+        "zh": "会",
+        "pinyin": "huì",
+        "pos": "n.",
+        "en": "meeting",
+        "text": 2
+      },
+      {
+        "n": 4,
+        "zh": "洗衣机",
+        "pinyin": "xǐyījī",
+        "pos": "n.",
+        "en": "washing machine",
+        "text": 2
+      },
+      {
+        "n": 5,
+        "zh": "酒",
+        "pinyin": "jiǔ",
+        "pos": "n.",
+        "en": "alcohol",
+        "text": 3
+      },
+      {
+        "n": 6,
+        "zh": "收到",
+        "pinyin": "shōudào",
+        "pos": "v.",
+        "en": "receive",
+        "text": 4
+      },
+      {
+        "n": 7,
+        "zh": "电",
+        "pinyin": "diàn",
+        "pos": "n.",
+        "en": "electricity",
+        "text": 4
+      },
+      {
+        "n": 8,
+        "zh": "封",
+        "pinyin": "fēng",
+        "pos": "m.",
+        "en": "used of sth. sealed or wrapped up",
+        "text": 4
+      },
+      {
+        "n": 9,
+        "zh": "信",
+        "pinyin": "xìn",
+        "pos": "v./n.",
+        "en": "believe/letter",
+        "text": 4
+      },
+      {
+        "n": 10,
+        "zh": "邮件",
+        "pinyin": "yóujiàn",
+        "pos": "n.",
+        "en": "e-mail",
+        "text": 4
+      },
+      {
+        "n": 11,
+        "zh": "邮箱",
+        "pinyin": "yóuxiāng",
+        "pos": "n.",
+        "en": "mailbox",
+        "text": 4
+      },
+      {
+        "n": 12,
+        "zh": "开机",
+        "pinyin": "kāijī",
+        "pos": "v.",
+        "en": "power on",
+        "text": 4
+      },
+      {
+        "n": 13,
+        "zh": "关机",
+        "pinyin": "guānjī",
+        "pos": "v.",
+        "en": "power off",
+        "text": 4
+      }
+    ],
+    "grammar": [],
+    "exercises": [],
+    "unclear": []
+  },
+  "audio": {
+    "textbook": [
+      "hsk3-textbook-1101.mp3",
+      "hsk3-textbook-1102.mp3",
+      "hsk3-textbook-1103.mp3",
+      "hsk3-textbook-1104.mp3",
+      "hsk3-textbook-1105.mp3"
+    ],
+    "workbook": [
+      "hsk3-workbook-11-part1.mp3",
+      "hsk3-workbook-11-part2.mp3",
+      "hsk3-workbook-11-part3.mp3",
+      "hsk3-workbook-11-part4.mp3"
+    ]
+  },
+  "unclear": [
+    "课文2 (сурах бичиг PDF х.107) «会议结束后，别忘记把空调关了。» (忘记), харин 练习1 朗读 ③ (PDF х.110) «会议结束后，别忘了把空调关了。» (忘了) — номд хоёр өөр; тус бүрийг номд байгаагаар нь үлдээсэн.",
+    "练习4 ④ (сурах бичиг PDF х.112) «周太太今天为什么做了那么多的菜？» — 课文3-т ээжийг зөвхөн «妈妈» гэж нэрлэсэн (周太太 гэсэн нэр бичвэрт байхгүй); багшийн ном (PDF х.81) «妈妈今天为什么做了那么多菜？» гэж асуудаг. Номд байгаагаар нь үлдээсэн.",
+    "注释1 (сурах бичиг PDF х.109): хятад тайлбар «B为动词涉及的对象，必须是特指或已知的» (зөвхөн B), англи тайлбар «Both A and B should be specific or known to the speaker and the listener» (A ба B хоёулаа) — хоёр хэлний хооронд зөрүүтэй; номд байгаагаар нь.",
+    "生词18 电子邮件 (сурах бичиг PDF х.108) — үгийн ай (pos) номд заагаагүй, зөвхөн «e-mail»; pos талбаргүй үлдээсэн.",
+    "课文4 — гарчиггүй (номд зөвхөн «4», аудио 11-4) өгүүлэмж; lines-ийг өгүүлбэр (。／？) бүрээр хувааж, 拼音课文-ын харгалзах хэсгийг тус бүрт оноосон (номд нэг догол мөр).",
+    "拼音课文-ын гарчгийн пиньинь (Zài jiàoshì / Zài huìyìshì / Zài kètīng) болон ярилцагчийн нэрийн пиньинь (Xiǎomíng, tóngxué, Zhōu Míng, Xiǎolì, māma, érzi) схемд талбаргүй тул lines.pinyin-д зөвхөн яриаг оруулсан.",
+    "Энэ хичээлд 专有名词 хүснэгт、汉字知识、文化 хэсэг, * тэмдэгтэй үг байхгүй (сурах бичиг PDF х.106–113).",
+    "Сурах бичгийн 练一练 (2 дүрэм × 3)、练习2 选词填空、练习3 描述图片、练习4 回答问题、运用 — хариулт сурах бичиг, багшийн номд хэвлэгдээгүй тул answer талбаргүй. Багшийн номын 课文 асуулт-хариулт (teacher.text_questions) нь 练习4-ийн асуултаас өөр.",
+    "Багшийн номын 汉字辨认练习 (周/调 · 关/天 · 还/这 · 快/筷 · 借/错 — 组词 — PDF х.83) хоосон зайтай, хариулт хэвлэгдээгүй.",
+    "Багшийн ном 课文1 асуулт (PDF х.81) ярилцагчдыг «男的／女的» гэж нэрлэсэн (сурах бичигт 小明／同学).",
+    "练习3 (PDF х.111) зургууд: (3) товч дарж буй төхөөрөмж ямар машин (компьютер/принтер г.м.) болох нь тодорхойгүй; (2) хүүгийн ууж буй зүйл тодорхойгүй — picture_desc_en-д тодорхой бус хэлбэрээр.",
+    "Дасгалын номын сонсгол нэг CD тэмдэгтэй (11, PDF х.75) — аудиог hsk3-workbook-11-part1…4.mp3 болгож хэсэг тус бүрт хуваасныг section.audio-д оноосон.",
+    "Дасгалын ном 听力 第三/四部分 — номд зөвхөн сонголтууд хэвлэгдсэн; item.zh-д багшийн номын хавсралтын «问：» асуултыг оруулсан (transcript_zh-д бүтнээр).",
+    "Дасгалын номд 51–54 (组词) хэсэг энэ хичээлд байхгүй — 1–50 + 复习 1–2.",
+    "Багшийн ном 教学目标 (PDF х.78) «左右»-г «名词» гэж нэрлэсэн — номд байгаагаар.",
+    "HSK 3.0 нэмэлт үгс (BLCUP 课件 补充HSK3.0, слайд 5, 16, 26, 36, 37) `hsk30`-д."
+  ],
+  "verified_pages": [
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
     106,
     107,
     108,
@@ -16,1987 +2116,10 @@
     110,
     111,
     112,
-    113
-   ]
-  },
-  "warmup": [
-   {
-    "instruction_zh": "给下面的词语选择对应的图片",
-    "instruction_en": "Match the pictures with the words.",
-    "items": [
-     "①词典 cídiǎn",
-     "②筷子 kuàizi",
-     "③空调 kōngtiáo",
-     "④地铁 dìtiě",
-     "⑤灯 dēng",
-     "⑥瓶子 píngzi"
-    ],
-    "pictures_desc_en": [
-     "A: a white wall-mounted air conditioner unit",
-     "B: a thick book with a dark blue cover, the word DICTIONARY on its spine",
-     "C: a lit crystal chandelier hanging from a ceiling",
-     "D: red chopsticks lying side by side",
-     "E: a brown glass bottle lying on its side",
-     "F: a subway train standing at a station platform"
-    ]
-   },
-   {
-    "instruction_zh": "看图，说说他们在做什么",
-    "instruction_en": "Look at the pictures and talk about what they are doing.",
-    "items": [
-     "A. 关空调 guān kōngtiáo",
-     "B. 洗衣服 xǐ yīfu",
-     "C. 还书 huán shū",
-     "D. 关灯 guān dēng"
-    ],
-    "pictures_desc_en": [
-     "①: a finger pressing a light switch on a white wall",
-     "②: a smiling young woman standing below a wall-mounted air conditioner, reaching up towards it",
-     "③: a woman putting pink clothes into a washing machine",
-     "④: several people holding books at a library counter"
-    ]
-   }
-  ],
-  "texts": [
-   {
-    "n": 1,
-    "title_zh": "在教室",
-    "title_en": "In the classroom",
-    "kind": "dialogue",
-    "audio": "hsk3-textbook-1101.mp3",
-    "lines": [
-     {
-      "speaker": "小明",
-      "zh": "我先走了。",
-      "pinyin": "Wǒ xiān zǒu le."
-     },
-     {
-      "speaker": "同学",
-      "zh": "你去哪儿？",
-      "pinyin": "Nǐ qù nǎr?"
-     },
-     {
-      "speaker": "小明",
-      "zh": "我去图书馆借本书。",
-      "pinyin": "Wǒ qù túshūguǎn jiè běn shū."
-     },
-     {
-      "speaker": "同学",
-      "zh": "帮我把这本词典还了吧。",
-      "pinyin": "Bāng wǒ bǎ zhè běn cídiǎn huánle ba."
-     },
-     {
-      "speaker": "小明",
-      "zh": "好，等一会儿你离开教室的时候，记得把灯关了。",
-      "pinyin": "Hǎo, děng yíhuìr nǐ lí kāi jiàoshì de shíhou, jìde bǎ dēng guān le."
-     },
-     {
-      "speaker": "同学",
-      "zh": "好的，放心吧。",
-      "pinyin": "Hǎo de, fàng xīn ba."
-     }
-    ],
-    "new_words": [
-     {
-      "n": 1,
-      "zh": "图书馆",
-      "pinyin": "túshūguǎn",
-      "pos": "n.",
-      "en": "library",
-      "text": 1
-     },
-     {
-      "n": 2,
-      "zh": "借",
-      "pinyin": "jiè",
-      "pos": "v.",
-      "en": "to borrow, to lend",
-      "text": 1
-     },
-     {
-      "n": 3,
-      "zh": "词典",
-      "pinyin": "cídiǎn",
-      "pos": "n.",
-      "en": "dictionary",
-      "text": 1
-     },
-     {
-      "n": 4,
-      "zh": "还",
-      "pinyin": "huán",
-      "pos": "v.",
-      "en": "to return",
-      "text": 1
-     },
-     {
-      "n": 5,
-      "zh": "灯",
-      "pinyin": "dēng",
-      "pos": "n.",
-      "en": "light, lamp",
-      "text": 1
-     }
-    ]
-   },
-   {
-    "n": 2,
-    "title_zh": "在会议室",
-    "title_en": "In the conference room",
-    "kind": "dialogue",
-    "audio": "hsk3-textbook-1102.mp3",
-    "lines": [
-     {
-      "speaker": "周明",
-      "zh": "会议结束后，别忘记把空调关了。",
-      "pinyin": "Huìyì jiéshù hòu, bié wàngjì bǎ kōngtiáo guān le."
-     },
-     {
-      "speaker": "小丽",
-      "zh": "好的。王经理两点左右来了个电话。",
-      "pinyin": "Hǎo de. Wáng jīnglǐ liǎng diǎn zuǒyòu láile ge diànhuà."
-     },
-     {
-      "speaker": "周明",
-      "zh": "他已经到北京了？",
-      "pinyin": "Tā yǐjīng dào Běijīng le?"
-     },
-     {
-      "speaker": "小丽",
-      "zh": "是的，他正坐地铁来我们公司呢。",
-      "pinyin": "Shì de, tā zhèng zuò dìtiě lái wǒmen gōngsī ne."
-     },
-     {
-      "speaker": "周明",
-      "zh": "等他到了就告诉我。",
-      "pinyin": "Děng tā dàole jiù gàosu wǒ."
-     }
-    ],
-    "new_words": [
-     {
-      "n": 6,
-      "zh": "会议",
-      "pinyin": "huìyì",
-      "pos": "n.",
-      "en": "meeting, conference",
-      "text": 2
-     },
-     {
-      "n": 7,
-      "zh": "结束",
-      "pinyin": "jiéshù",
-      "pos": "v.",
-      "en": "to end, to finish",
-      "text": 2
-     },
-     {
-      "n": 8,
-      "zh": "忘记",
-      "pinyin": "wàngjì",
-      "pos": "v.",
-      "en": "to forget",
-      "text": 2
-     },
-     {
-      "n": 9,
-      "zh": "空调",
-      "pinyin": "kōngtiáo",
-      "pos": "n.",
-      "en": "air conditioner",
-      "text": 2
-     },
-     {
-      "n": 10,
-      "zh": "关",
-      "pinyin": "guān",
-      "pos": "v.",
-      "en": "to turn off, to close",
-      "text": 2
-     },
-     {
-      "n": 11,
-      "zh": "地铁",
-      "pinyin": "dìtiě",
-      "pos": "n.",
-      "en": "subway",
-      "text": 2
-     }
-    ]
-   },
-   {
-    "n": 3,
-    "title_zh": "在客厅",
-    "title_en": "In the living room",
-    "kind": "dialogue",
-    "audio": "hsk3-textbook-1103.mp3",
-    "lines": [
-     {
-      "speaker": "妈妈",
-      "zh": "还差一双筷子，你去拿一下。",
-      "pinyin": "Hái chà yì shuāng kuàizi, nǐ qù ná yíxià."
-     },
-     {
-      "speaker": "儿子",
-      "zh": "今天怎么做了这么多菜？",
-      "pinyin": "Jīntiān zěnme zuòle zhème duō cài?"
-     },
-     {
-      "speaker": "妈妈",
-      "zh": "今天是你爸爸的生日。",
-      "pinyin": "Jīntiān shì nǐ bàba de shēngrì."
-     },
-     {
-      "speaker": "儿子",
-      "zh": "真的啊？我把爸爸的生日忘了。那我们今天喝点儿啤酒吧。",
-      "pinyin": "Zhēn de a? Wǒ bǎ bàba de shēngrì wàng le. Nà wǒmen jīntiān hē diǎnr píjiǔ ba."
-     },
-     {
-      "speaker": "妈妈",
-      "zh": "医生说你爸爸一口酒都不能喝，别让他看见酒瓶子。",
-      "pinyin": "Yīshēng shuō nǐ bàba yì kǒu jiǔ dōu bù néng hē, bié ràng tā kànjiàn jiǔ píngzi."
-     }
-    ],
-    "new_words": [
-     {
-      "n": 12,
-      "zh": "双",
-      "pinyin": "shuāng",
-      "pos": "m.",
-      "en": "pair",
-      "text": 3
-     },
-     {
-      "n": 13,
-      "zh": "筷子",
-      "pinyin": "kuàizi",
-      "pos": "n.",
-      "en": "chopsticks",
-      "text": 3
-     },
-     {
-      "n": 14,
-      "zh": "啤酒",
-      "pinyin": "píjiǔ",
-      "pos": "n.",
-      "en": "beer",
-      "text": 3
-     },
-     {
-      "n": 15,
-      "zh": "口",
-      "pinyin": "kǒu",
-      "pos": "m.",
-      "en": "mouthful",
-      "text": 3
-     },
-     {
-      "n": 16,
-      "zh": "瓶子",
-      "pinyin": "píngzi",
-      "pos": "n.",
-      "en": "bottle",
-      "text": 3
-     }
-    ]
-   },
-   {
-    "n": 4,
-    "kind": "narrative",
-    "audio": "hsk3-textbook-1104.mp3",
-    "lines": [
-     {
-      "zh": "这个笔记本电脑我去年买的时候要五千块左右，现在便宜多了。",
-      "pinyin": "Zhège bǐjìběn diànnǎo wǒ qùnián mǎi de shíhou yào wǔ qiān kuài zuǒyòu, xiànzài piányi duō le."
-     },
-     {
-      "zh": "我想把这个电脑卖了，再买一个更好的。",
-      "pinyin": "Wǒ xiǎng bǎ zhège diànnǎo mài le, zài mǎi yí ge gèng hǎo de."
-     },
-     {
-      "zh": "现在我每天起床后的第一件事就是打开电脑，看电子邮件。",
-      "pinyin": "Xiànzài wǒ měi tiān qǐ chuáng hòu de dì yī jiàn shì jiù shì dǎ kāi diànnǎo, kàn diànzǐ yóujiàn."
-     },
-     {
-      "zh": "我已经很少写信，也很少用笔写字，已经习惯用电脑来学习和工作了。",
-      "pinyin": "Wǒ yǐjīng hěn shǎo xiě xìn, yě hěn shǎo yòng bǐ xiě zì, yǐjīng xíguàn yòng diànnǎo lái xuéxí hé gōngzuò le."
-     },
-     {
-      "zh": "哪一天突然没有了电脑，我们怎么办呢？",
-      "pinyin": "Nǎ yì tiān tūrán méiyǒule diànnǎo, wǒmen zěnme bàn ne?"
-     }
-    ],
-    "new_words": [
-     {
-      "n": 17,
-      "zh": "笔记本（电脑）",
-      "pinyin": "bǐjìběn (diànnǎo)",
-      "pos": "n.",
-      "en": "notebook, laptop",
-      "text": 4
-     },
-     {
-      "n": 18,
-      "zh": "电子邮件",
-      "pinyin": "diànzǐ yóujiàn",
-      "en": "e-mail",
-      "text": 4
-     },
-     {
-      "n": 19,
-      "zh": "习惯",
-      "pinyin": "xíguàn",
-      "pos": "v./n.",
-      "en": "to be used to; habit",
-      "text": 4
-     }
-    ]
-   }
-  ],
-  "grammar": [
-   {
-    "n": 1,
-    "title_zh": "“把”字句1：A把B＋V＋……",
-    "title_en": "The Ba-Sentence 1: A把B + V + ……",
-    "explanation_zh": "汉语中，表示对确定的人或确定的事物做出相应处置，可以用“把”字句，其结构为“A把B＋V＋……”。这种“把”字句多用于对别人的请求、命令的情境中。注意：A为动作的发出者；B为动词涉及的对象，必须是特指或已知的。例如：（1）–（4）\n否定副词和能愿动词等应该放在“把”字的前边，例如：（5）–（8）",
-    "explanation_en": "In Chinese, a ba-sentence can be used to indicate a certain action done on a definite person or thing, the structure being “A把B + V + ……”. This type of ba-sentence is often used to request or order other people to do something. It is noteworthy that A is the agent of the action, and B is the patient. Both A and B should be specific or known to the speaker and the listener. For example: (1)–(4)\nIf there is a negative adverb or a modal verb etc., it should precede “把”. For example: (5)–(8)",
-    "structure_rows": [
-     "A把B＋V＋……"
-    ],
-    "examples": [
-     {
-      "n": 1,
-      "zh": "请你把衣服洗了。"
-     },
-     {
-      "n": 2,
-      "zh": "帮我把这本词典还了。"
-     },
-     {
-      "n": 3,
-      "zh": "你把灯关了吧。"
-     },
-     {
-      "n": 4,
-      "zh": "我把爸爸的生日忘了。"
-     },
-     {
-      "n": 5,
-      "zh": "你没把书给我。"
-     },
-     {
-      "n": 6,
-      "zh": "你别把手机忘了。"
-     },
-     {
-      "n": 7,
-      "zh": "我不能把电脑给你。"
-     },
-     {
-      "n": 8,
-      "zh": "你可以把空调关了吗？"
-     }
-    ],
-    "practice_instruction_zh": "练一练　用提示词完成句子 Complete the sentences with the words given.",
-    "practice": [
-     {
-      "n": 1,
-      "zh": "房间里有点儿冷，你可以________？",
-      "hint_zh": "（关门）"
-     },
-     {
-      "n": 2,
-      "zh": "你发烧还没好，快________。",
-      "hint_zh": "（吃药）"
-     },
-     {
-      "n": 3,
-      "zh": "吃饭以前别忘了________。",
-      "hint_zh": "（洗手）"
-     }
-    ]
-   },
-   {
-    "n": 2,
-    "title_zh": "概数的表达2：左右",
-    "title_en": "Expression of Approximate Numbers 2: 左右",
-    "explanation_zh": "汉语中，“左右”用在数字后面表示概数，如：三点左右，五个左右，十年左右。例如：",
-    "explanation_en": "In Chinese, “左右” can be used after a numeral to indicate an approximate number, such as “三点左右” (around three o’clock), “五个左右” (about five), and “十年左右” (ten years or so). For example:",
-    "structure_rows": [
-     "三点左右",
-     "五个左右",
-     "十年左右"
-    ],
-    "examples": [
-     {
-      "n": 1,
-      "zh": "周末我一般十点左右起床。"
-     },
-     {
-      "n": 2,
-      "zh": "我们公司有五百人左右。"
-     },
-     {
-      "n": 3,
-      "zh": "王经理两点左右来了个电话。"
-     },
-     {
-      "n": 4,
-      "zh": "这个笔记本电脑我去年买的时候要五千块左右。"
-     }
-    ],
-    "practice_instruction_zh": "练一练　完成对话 Complete the dialogues.",
-    "practice": [
-     {
-      "n": 1,
-      "zh": "A：你每天几点睡觉？ B：________。"
-     },
-     {
-      "n": 2,
-      "zh": "A：你学了多长时间的汉语了？ B：________。"
-     },
-     {
-      "n": 3,
-      "zh": "A：从你家到学校坐多长时间车？ B：________。"
-     }
-    ]
-   }
-  ],
-  "exercises": [
-   {
-    "n": 1,
-    "type_zh": "朗读",
-    "instruction_zh": "朗读下列短语和句子",
-    "instruction_en": "Read the following phrases and sentences aloud.",
-    "audio": "hsk3-textbook-1105.mp3",
-    "items": [
-     {
-      "n": 1,
-      "zh": "关：关灯／关门／关电视／离开教室的时候，记得把灯关了。"
-     },
-     {
-      "n": 2,
-      "zh": "借：借书／借钱／借我用用／我去图书馆借本书。"
-     },
-     {
-      "n": 3,
-      "zh": "结束：学期结束／还没结束／结束了／会议结束后，别忘了把空调关了。"
-     },
-     {
-      "n": 4,
-      "zh": "口：一口水／喝一口／吃几口饭／你爸爸一口酒都不能喝。"
-     },
-     {
-      "n": 5,
-      "zh": "习惯：好习惯／学习习惯／还没习惯／我已经习惯用电脑来学习和工作了。"
-     }
-    ]
-   },
-   {
-    "n": 2,
-    "type_zh": "选词填空",
-    "instruction_zh": "选择恰当的词语填空",
-    "instruction_en": "Choose the proper words to fill in the blanks.",
-    "word_bank": [
-     [
-      "瓶子",
-      "空调",
-      "词典",
-      "双",
-      "口"
-     ],
-     [
-      "习惯",
-      "结束",
-      "关",
-      "还（huán）",
-      "会议"
-     ]
-    ],
-    "items": [
-     {
-      "n": 1,
-      "zh": "拿两________筷子就可以了，今天爸爸不回来吃晚饭。"
-     },
-     {
-      "n": 2,
-      "zh": "这本________是我朋友的，不是我的。"
-     },
-     {
-      "n": 3,
-      "zh": "这种咖啡特别好喝，你快来喝一________吧。"
-     },
-     {
-      "n": 4,
-      "zh": "桌子上有一个________，是谁的？"
-     },
-     {
-      "n": 5,
-      "zh": "你怎么没开________？太热了！"
-     },
-     {
-      "n": 6,
-      "zh": "A：你把灯________了吧，我要睡觉了。 B：好，我马上就去。"
-     },
-     {
-      "n": 7,
-      "zh": "A：你可以帮我把书________了吗？ B：明天下午可以吗？"
-     },
-     {
-      "n": 8,
-      "zh": "A：音乐会________以后，我们一起去饭馆吃饭吧。 B：还是回家吃吧。"
-     },
-     {
-      "n": 9,
-      "zh": "A：你下课以后常常做什么？ B：我下了汉语课________去图书馆。"
-     },
-     {
-      "n": 10,
-      "zh": "A：今天的________是几点的？ B：下午两点半。"
-     }
-    ]
-   },
-   {
-    "n": 3,
-    "type_zh": "描述图片",
-    "instruction_zh": "用本课新学的语言点和词语描述图片",
-    "instruction_en": "Describe the pictures using the newly-learned language points and words.",
-    "items": [
-     {
-      "n": 1,
-      "zh": "A：音乐会就要开始了，先生，请您________。 B：好的，我马上关。请问还有多长时间开始？ A：还有五分钟________。 B：谢谢。",
-      "picture_desc_en": "A person holding up a mobile phone, its screen showing a stage."
-     },
-     {
-      "n": 2,
-      "zh": "A：你今天打算几点睡觉？ B：十点半________。 A：睡觉以前别忘了________。 B：没问题。",
-      "picture_desc_en": "A smiling man standing beside a boy who is drinking from a white cup."
-     },
-     {
-      "n": 3,
-      "zh": "A：昨天谁是最后一个离开办公室的？ B：是我，我昨天是________离开的。 A：你是不是忘了________？ B：对不起，我以后一定不会忘。",
-      "picture_desc_en": "A finger pressing a round power button with a small green light on a grey-and-black office machine."
-     },
-     {
-      "n": 4,
-      "zh": "A：今天下午你要去见小刚吗？ B：对，我________去找他。 A：你可以帮我________？ B：没问题，我帮你还他。",
-      "picture_desc_en": "One hand passing Chinese yuan banknotes into another open hand."
-     }
-    ]
-   },
-   {
-    "n": 4,
-    "type_zh": "回答问题",
-    "instruction_zh": "根据课文回答问题",
-    "instruction_en": "Answer the questions according to the texts.",
-    "items": [
-     {
-      "n": 1,
-      "zh": "小明要帮同学做什么？"
-     },
-     {
-      "n": 2,
-      "zh": "小明告诉同学做什么？"
-     },
-     {
-      "n": 3,
-      "zh": "王经理现在在哪儿？"
-     },
-     {
-      "n": 4,
-      "zh": "周太太今天为什么做了那么多的菜？"
-     },
-     {
-      "n": 5,
-      "zh": "爸爸能喝酒吗？为什么？"
-     },
-     {
-      "n": 6,
-      "zh": "“我”现在每天用电脑做什么？"
-     }
-    ]
-   }
-  ],
-  "characters": {
-   "knowledge_title_zh": "旧字新词",
-   "knowledge_zh": "读读下面的词语，想想组成的新词是什么意思。",
-   "knowledge_en": "Read the following words and guess the meanings of the newly-formed ones.",
-   "word_game": [
-    {
-     "parts": [
-      "字",
-      "词典"
-     ],
-     "result": "字典"
-    },
-    {
-     "parts": [
-      "运动",
-      "会议"
-     ],
-     "result": "运动会"
-    },
-    {
-     "parts": [
-      "开",
-      "会议"
-     ],
-     "result": "开会"
-    }
-   ],
-   "confusable_pairs": [
-    [
-     "周",
-     "调"
-    ],
-    [
-     "关",
-     "天"
-    ],
-    [
-     "还",
-     "这"
-    ],
-    [
-     "快",
-     "筷"
-    ],
-    [
-     "借",
-     "错"
-    ]
-   ]
-  },
-  "application": [
-   {
-    "title_zh": "双人活动",
-    "instruction_zh": "两个人一组，互相询问对方感兴趣的东西多少钱。",
-    "instruction_en": "Work in pairs and ask each other the price of something you are interested in.",
-    "example_zh": [
-     "A：在你们国家，一个手机多少钱？",
-     "B：在我们国家，一个手机2000块左右。",
-     "表格：| | 问 | 答 |",
-     "| 1 | 手机 | 2000块左右 |"
-    ]
-   },
-   {
-    "title_zh": "小组活动",
-    "instruction_zh": "3～4人一组，用“把”字句说说今天的计划：什么时候，在什么地方，要做什么。",
-    "instruction_en": "Work in groups of 3-4. Talk about today’s plan (including when, where, and what to do) using ba-sentences.",
-    "example_zh": [
-     "今天下了课我要去图书馆把书还了。",
-     "提示词：洗衣服　买牛奶　写作业　做饭　借书　复习课文",
-     "表格：| | 什么时候 | 什么地方 | 做什么 |",
-     "| 1 | 下了课 | 去图书馆 | 把书还了 |"
-    ]
-   }
-  ],
-  "saying": {
-   "zh": "贵人多忘事",
-   "pinyin": "Guìrén duō wàng shì",
-   "en": "Great wits have short memories",
-   "explanation_zh": "“贵人多忘事”，这里的“贵人”是做大官的人或者做大生意的人。这句话的意思是做大官或者做大生意的人因为事情太多，所以常常会忘记做一些小事。现在一般用在对话中表示客气，说明一个人工作太忙，事情太多，忘记一些小事是可以理解的，有时候也有一种讽刺的意味。",
-   "explanation_en": "In the saying “贵人多忘事”, “贵人” refers to “a high-ranking official” or “a successful businessman”. The saying means that one who holds a high government position or does big business often forgets certain trivialities due to the enormous amount of work. Now it is a polite way to say that it is understandable that one who is fully occupied with work or business affairs should forget some trivial matters, sometimes also conveying an ironic tone."
-  }
- },
- "teacher": {
-  "ref": {
-   "book": "teacher",
-   "pages": [
-    78,
-    79,
-    80,
-    81,
-    82,
-    83
-   ]
-  },
-  "objectives_zh": [
-   "重点词语：学生能够掌握：“借、还、双、口、电子邮件”的词义和用法",
-   "语言点：学生能够了解并掌握：（1）“把”字句表示命令与请求（2）名词“左右”表示概数",
-   "汉字：学生能够：根据已学生词猜测出3个旧字新词“字典、运动会、开会”的意思",
-   "功能：学生能够：（1）用“把”字句表示命令与请求（2）用“左右”表示概数"
-  ],
-  "steps": [
-   {
-    "title_zh": "复习旧课",
-    "body_zh": "1 教师展示第10课的热身图片，请学生根据图片说出生词。\n2 教师根据第10课的内容进行提问。\n（1）你在这个地方住了多久了？你喜欢这儿吗？\n（2）我们每课的新词多不多？有几个？\n（3）你做的饭好吃还是妈妈做的饭好吃？\n（4）旅游的时候，坐飞机好还是坐火车好？为什么？\n（5）你觉得在大公司工作好还是在小公司工作好？为什么？"
-   },
-   {
-    "title_zh": "学习新课 1 热身",
-    "body_zh": "热身1：学生两人一组，合作完成热身1；教师出示热身1的图片，让学生根据图片说出词语，核对答案；最后全体学生齐读热身环节所有词语，要求语音标准，声调准确。\n答案：①B　②D　③A　④F　⑤C　⑥E\n热身2：可留至语言点（1）“‘把’字句1：A把B＋动词＋……”导入时使用。"
-   },
-   {
-    "title_zh": "2 生词",
-    "body_zh": "（1）生词快速认读及正音\n图书馆、借、词典、还、灯、会议、结束、忘记、空调、关、地铁、双、筷子、啤酒、口、瓶子、笔记本（电脑）、电子邮件、习惯\n· 教师先带领学生快速认读一遍生词；\n· 取消拼音，带领学生再次认读；\n· 请单个学生独自认读2-3个生词；\n· 最后全班一起快速认读所有的生词。\n（2）生词讲解方式\n· 直观法（如图片、照片、实物等）展示：图书馆、词典、灯、空调、地铁、筷子、啤酒、瓶子、笔记本（电脑）、电子邮件\n· 对比法展示：借—还、开始—结束、记得—忘记、开—关\n（3）重点生词扩展及常用搭配\n借—借书—借了五十块钱—我能借你的手机用一下吗？\n还—还书—还钱—你上次借的钱还没还呢。\n双—一双筷子—再拿两双筷子来，一会儿来两个朋友吃饭。\n口—一口—喝一口—一口酒—你只喝了一小口咖啡，是不是不好喝？\n电子邮件—写电子邮件—发电子邮件—你能用汉语给老师发一个电子邮件吗？\n练习册相关练习：第71页／一／第一部分，第74页／二／第二部分"
-   },
-   {
-    "title_zh": "3 语言点（1）“把”字句1：A把B＋动词＋……",
-    "body_zh": "① 语言点解析\n汉语中，表示对确定的人或确定的事物做出相应处置，可以用“把”字句，其结构为“A把B＋动词＋……”。动词后最简单的其他成分就是“了”，这种“把”字句多用于对别人的请求、命令的情境中。\n［A把B＋动词＋其他成分（如“了”）］\n② 语言点导入\n教师可利用本课热身2导入语言点。\n答案：①D　②A　③B　④C\n教师：你想请朋友关灯，怎么说？\n学生：请关灯。\n教师引导学生说出：请把灯关了。\n③ 语言点操练\n教师可利用本课热身2操练语言点。\n教师展示图片并提问。\n教师：我们要出去，空调还开着，你应该说什么？\n学生：请把空调关了。\n目标句：请把空调关了。\n　　　　请把衣服洗了。\n　　　　请把书还了。\n④ 语言点扩展练习\n教师给出情境，请学生两人一组，一人说，一人做。\n在医院，医生请病人吃药、喝水。\n在家，妻子请丈夫做饭、洗衣服。\n在教室，老师请学生关手机、写作业。\n在办公室，经理请秘书关门、关电脑。\n注意：“A把B＋动词＋……”格式中，A为动作的发出者，B为动词涉及的对象，必须是特指或已知的。"
-   },
-   {
-    "title_zh": "3 语言点（2）概数的表达2：左右",
-    "body_zh": "① 语言点解析\n汉语中，“左右”用在数字后面表示概数。如：三点左右，五个左右，十年左右。\n② 语言点导入\n教师根据实际情况，提问并引入语言点。\n教师：你今天是什么时候到教室的？\n学生：早上八点左右。\n③ 语言点操练\n教师可利用热身1的图片A、B、F，热身2的图片（3）（4）进行操练。\n目标句：一个空调两千块左右。\n　　　　一本词典五十块左右。\n　　　　地铁三分钟左右就来一次。\n　　　　明天我打算上午十点左右洗衣服。\n　　　　我昨天是下午两点左右去图书馆的。\n④ 语言点扩展练习\n教师可根据实际情况提问，请学生回答。\n你每天几点睡觉？周末呢？\n你觉得老师今年多大？"
-   },
-   {
-    "title_zh": "4 课文 课文1",
-    "body_zh": "（1）让学生听两遍录音并回答下列问题：\n男的为什么要先走？——他要去图书馆借本书。\n女的请男的做什么？——请男的帮她把词典还了。\n男的让女的做什么？——离开教室的时候把灯关了。\n（2）教师领读课文两遍，让学生分角色朗读课文。\n（3）模仿练习\n学生两人一组，根据提示词模仿课文内容进行对话练习。\nA：我先……。\nB：你去哪儿？\nA：我……。\nB：帮我把……。\nA：好，……的时候，记得把……。\nB：好的，放心吧。"
-   },
-   {
-    "title_zh": "4 课文 课文2",
-    "body_zh": "（1）让学生听两遍录音并回答下列问题：\n男的对女的说什么？——会议结束后，别忘记把空调关了。\n女的告诉男的什么事儿？——王经理两点左右来了个电话。\n王经理现在在哪儿？——王经理正坐地铁来他们公司。\n（2）教师领读课文两遍，让学生分角色朗读课文。\n（3）教师给提示词，带领学生复述课文。\n提示词：结束、把……V了、左右、来电话、地铁"
-   },
-   {
-    "title_zh": "4 课文 课文3",
-    "body_zh": "（1）让学生听两遍录音并回答下列问题：\n女的（妈妈）让男的（儿子）做什么？——妈妈让儿子再拿一双筷子。\n妈妈今天为什么做了那么多菜？——因为今天是爸爸的生日。\n儿子做错了什么？——他把爸爸的生日忘了。\n他们今天能喝啤酒吗？为什么？——他们不能喝。因为医生一口酒都不让爸爸喝。\n（2）教师领读课文两遍，让学生分角色朗读课文，注意说话人的语气。\n（3）模仿练习\n学生两人一组，根据提示词模仿课文内容进行对话练习。\nA：还差……，你去……。\nB：今天怎么……？\nA：今天是……。\nB：真的啊？我把……。那……吧。\nA：医生说……，别……。"
-   },
-   {
-    "title_zh": "4 课文 课文4",
-    "body_zh": "① 快速阅读，并回答：我现在有什么习惯？\n② 教师领读课文两遍，并回答下列问题：\n这个电脑是什么时候买的？多少钱？——这个电脑是去年买的，五千块左右。\n“我”现在有什么打算？——“我”想把这个电脑卖了，再买一个更好的。\n“我”每天起床后第一件事是什么？——第一件事是打开电脑，看电子邮件。\n③ 教师给提示词，带领学生复述课文。\n提示词：去年、左右、更好的、打开、电子邮件、习惯\n④ 教师请学生根据课文，说说自己用什么学习、工作，有什么习惯。\n练习册相关练习：第77页／四"
-   },
-   {
-    "title_zh": "5 汉字",
-    "body_zh": "旧字新词：\n① 教师领读以前学过的词语和新词，并让学生猜猜新词的意思。\n· 领读：字、词典、字典\n问学生：什么时候用“字典”？——不会写字、不知道字怎么读的时候。\n· 领读：运动、会议、运动会\n问学生：“运动会”的时候做什么？——比赛。\n扩展提问：还有什么“会”？——音乐会、晚会、舞会、年会、迎新会。（根据实际情况选用）\n· 领读：开、会议、开会\n问学生：谁经常“开会”？——经理、秘书、老师。\n② 教师领读新词扩展，通过情景，理解新词的意思和用法：\n字典：一本字典／买字典／电子字典／你有汉语字典吗？\n运动会：开运动会／运动会要开始了／你们学校什么时候开运动会？\n开会：开一个会／开半个小时会／开会的时候请把手机关了。\n汉字辨认练习：\n辨认下列汉字并组词。\n周：________、________　调：________、________\n关：________、________　天：________、________\n还：________、________　这：________、________\n快：________、________　筷：________、________\n借：________、________　错：________、________\n练习册相关练习：第77页／三／第三部分"
-   },
-   {
-    "title_zh": "6 补充课堂活动——根据词卡写句子",
-    "body_zh": "4-5个学生一组，小组内A→B、B→C、……、E→A，每人请同伴帮自己做一件事，要求用上“把”字句。"
-   },
-   {
-    "title_zh": "7 俗语",
-    "body_zh": "教师引导学生理解俗语的含义，注意这里的“贵”的意思不是价格很贵，“贵人”是一种尊敬的用法。这句话是对别人说的，一般不对自己说。如：您真是贵人多忘事，这么快就把我的名字忘了。"
-   },
-   {
-    "title_zh": "8 本课小结",
-    "body_zh": "· 语言点：用“把”字句表示命令与请求\n　　　　　用“左右”表示概数\n· 汉　字：旧字新词：字典、运动会、开会"
-   }
-  ],
-  "notes_zh": [
-   "注意：“A把B＋动词＋……”格式中，A为动作的发出者，B为动词涉及的对象，必须是特指或已知的。（语言点1）",
-   "动词后最简单的其他成分就是“了”。［A把B＋动词＋其他成分（如“了”）］（语言点1 解析）",
-   "对比法展示：借—还、开始—结束、记得—忘记、开—关（生词）",
-   "注意这里的“贵”的意思不是价格很贵，“贵人”是一种尊敬的用法。这句话是对别人说的，一般不对自己说。（俗语）"
-  ],
-  "warmup_answers_zh": [
-   "热身1 答案：①B　②D　③A　④F　⑤C　⑥E",
-   "热身2 答案：①D　②A　③B　④C（语言点（1）导入）",
-   "热身2：可留至语言点（1）“‘把’字句1：A把B＋动词＋……”导入时使用。"
-  ],
-  "text_questions": [
-   {
-    "text": 1,
-    "q_zh": "男的为什么要先走？",
-    "a_zh": "他要去图书馆借本书。"
-   },
-   {
-    "text": 1,
-    "q_zh": "女的请男的做什么？",
-    "a_zh": "请男的帮她把词典还了。"
-   },
-   {
-    "text": 1,
-    "q_zh": "男的让女的做什么？",
-    "a_zh": "离开教室的时候把灯关了。"
-   },
-   {
-    "text": 2,
-    "q_zh": "男的对女的说什么？",
-    "a_zh": "会议结束后，别忘记把空调关了。"
-   },
-   {
-    "text": 2,
-    "q_zh": "女的告诉男的什么事儿？",
-    "a_zh": "王经理两点左右来了个电话。"
-   },
-   {
-    "text": 2,
-    "q_zh": "王经理现在在哪儿？",
-    "a_zh": "王经理正坐地铁来他们公司。"
-   },
-   {
-    "text": 3,
-    "q_zh": "女的（妈妈）让男的（儿子）做什么？",
-    "a_zh": "妈妈让儿子再拿一双筷子。"
-   },
-   {
-    "text": 3,
-    "q_zh": "妈妈今天为什么做了那么多菜？",
-    "a_zh": "因为今天是爸爸的生日。"
-   },
-   {
-    "text": 3,
-    "q_zh": "儿子做错了什么？",
-    "a_zh": "他把爸爸的生日忘了。"
-   },
-   {
-    "text": 3,
-    "q_zh": "他们今天能喝啤酒吗？为什么？",
-    "a_zh": "他们不能喝。因为医生一口酒都不让爸爸喝。"
-   },
-   {
-    "text": 4,
-    "q_zh": "快速阅读，并回答：我现在有什么习惯？"
-   },
-   {
-    "text": 4,
-    "q_zh": "这个电脑是什么时候买的？多少钱？",
-    "a_zh": "这个电脑是去年买的，五千块左右。"
-   },
-   {
-    "text": 4,
-    "q_zh": "“我”现在有什么打算？",
-    "a_zh": "“我”想把这个电脑卖了，再买一个更好的。"
-   },
-   {
-    "text": 4,
-    "q_zh": "“我”每天起床后第一件事是什么？",
-    "a_zh": "第一件事是打开电脑，看电子邮件。"
-   }
-  ],
-  "summary_zh": "语言点：用“把”字句表示命令与请求；用“左右”表示概数。汉字：旧字新词：字典、运动会、开会。"
- },
- "workbook": {
-  "ref": {
-   "book": "workbook",
-   "pages": [
-    75,
-    76,
-    77,
-    78,
-    79,
-    80,
-    81
-   ]
-  },
-  "sections": [
-   {
-    "n": "一、听力 第一部分",
-    "type_zh": "听力 第一部分",
-    "instruction_zh": "第1–5题：听对话，选择与对话内容一致的图片",
-    "instruction_en": "Questions 1-5: Choose the right picture for each dialogue you hear.",
-    "audio": "hsk3-workbook-11-part1.mp3",
-    "items": [
-     {
-      "n": "例",
-      "zh": "男：喂，请问张经理在吗？ 女：他正在开会，您半个小时以后再打，好吗？",
-      "transcript_zh": "男：喂，请问张经理在吗？ 女：他正在开会，您半个小时以后再打，好吗？",
-      "options": {
-       "A": "[picture] a man working on a laptop at a desk, with a lamp and a potted plant beside him",
-       "B": "[picture] a bowl and a pair of chopsticks on a chopstick rest, on a bamboo mat",
-       "C": "[picture] a stadium full of spectators",
-       "D": "[picture] a smiling woman in a uniform talking on a telephone",
-       "E": "[picture] a patterned porcelain vase on a stand",
-       "F": "[picture] an open thick dictionary with a pen lying on it"
-      },
-      "answer": "D",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        75
-       ]
-      }
-     },
-     {
-      "n": 1,
-      "zh": "",
-      "options": {
-       "A": "[picture] a man working on a laptop at a desk, with a lamp and a potted plant beside him",
-       "B": "[picture] a bowl and a pair of chopsticks on a chopstick rest, on a bamboo mat",
-       "C": "[picture] a stadium full of spectators",
-       "D": "[picture] a smiling woman in a uniform talking on a telephone",
-       "E": "[picture] a patterned porcelain vase on a stand",
-       "F": "[picture] an open thick dictionary with a pen lying on it"
-      },
-      "transcript_zh": "男：这个花瓶真漂亮，在哪儿买的？ 女：我家楼下的商店，我带你去看看。",
-      "answer": "E",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        175
-       ]
-      }
-     },
-     {
-      "n": 2,
-      "zh": "",
-      "options": {
-       "A": "[picture] a man working on a laptop at a desk, with a lamp and a potted plant beside him",
-       "B": "[picture] a bowl and a pair of chopsticks on a chopstick rest, on a bamboo mat",
-       "C": "[picture] a stadium full of spectators",
-       "D": "[picture] a smiling woman in a uniform talking on a telephone",
-       "E": "[picture] a patterned porcelain vase on a stand",
-       "F": "[picture] an open thick dictionary with a pen lying on it"
-      },
-      "transcript_zh": "男：把词典还我吧，我要用一下。 女：好，方便的时候再借我用用。",
-      "answer": "F",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        175
-       ]
-      }
-     },
-     {
-      "n": 3,
-      "zh": "",
-      "options": {
-       "A": "[picture] a man working on a laptop at a desk, with a lamp and a potted plant beside him",
-       "B": "[picture] a bowl and a pair of chopsticks on a chopstick rest, on a bamboo mat",
-       "C": "[picture] a stadium full of spectators",
-       "D": "[picture] a smiling woman in a uniform talking on a telephone",
-       "E": "[picture] a patterned porcelain vase on a stand",
-       "F": "[picture] an open thick dictionary with a pen lying on it"
-      },
-      "transcript_zh": "女：饭菜都做好了，把电脑关了吧？先吃饭。 男：好的，我马上就来。",
-      "answer": "A",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        175
-       ]
-      }
-     },
-     {
-      "n": 4,
-      "zh": "",
-      "options": {
-       "A": "[picture] a man working on a laptop at a desk, with a lamp and a potted plant beside him",
-       "B": "[picture] a bowl and a pair of chopsticks on a chopstick rest, on a bamboo mat",
-       "C": "[picture] a stadium full of spectators",
-       "D": "[picture] a smiling woman in a uniform talking on a telephone",
-       "E": "[picture] a patterned porcelain vase on a stand",
-       "F": "[picture] an open thick dictionary with a pen lying on it"
-      },
-      "transcript_zh": "女：运动会什么时候结束？ 男：五点左右吧。",
-      "answer": "C",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        175
-       ]
-      }
-     },
-     {
-      "n": 5,
-      "zh": "",
-      "options": {
-       "A": "[picture] a man working on a laptop at a desk, with a lamp and a potted plant beside him",
-       "B": "[picture] a bowl and a pair of chopsticks on a chopstick rest, on a bamboo mat",
-       "C": "[picture] a stadium full of spectators",
-       "D": "[picture] a smiling woman in a uniform talking on a telephone",
-       "E": "[picture] a patterned porcelain vase on a stand",
-       "F": "[picture] an open thick dictionary with a pen lying on it"
-      },
-      "transcript_zh": "男：服务员，这儿只有一双筷子，请再给我们拿一双。 女：好的，请您等一下，马上来。",
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        175
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "一、听力 第二部分",
-    "type_zh": "听力 第二部分",
-    "instruction_zh": "第6–10题：听句子，判断对错",
-    "instruction_en": "Questions 6-10: Decide whether the statements are true or false based on the sentences you hear.",
-    "audio": "hsk3-workbook-11-part2.mp3",
-    "items": [
-     {
-      "n": "例1",
-      "zh": "他希望自己很健康。",
-      "transcript_zh": "为了让自己更健康，他每天都花一个小时去锻炼身体。",
-      "answer": "√",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        76
-       ]
-      }
-     },
-     {
-      "n": "例2",
-      "zh": "那块儿手表不是他的。",
-      "transcript_zh": "今天我想早点儿回家。看了看手表，才5点。过了一会儿再看表，还是5点，我这才发现我的手表不走了。",
-      "answer": "×",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        76
-       ]
-      }
-     },
-     {
-      "n": 6,
-      "zh": "他的电脑出了点儿问题。",
-      "transcript_zh": "小周，你帮我看一下笔记本电脑吧。昨天我还能看电子邮件，今天突然就打不开了，不知道是怎么回事。",
-      "answer": "√",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        175
-       ]
-      }
-     },
-     {
-      "n": 7,
-      "zh": "他打算去图书馆学习。",
-      "transcript_zh": "教室里人太多了，我们去图书馆学习吧，那儿比较安静。",
-      "answer": "√",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        175
-       ]
-      }
-     },
-     {
-      "n": 8,
-      "zh": "他以前骑自行车上班。",
-      "transcript_zh": "住在这儿真不错，附近环境很好，离我上班的医院也不远，上下班都不用坐地铁了，骑自行车就可以。",
-      "answer": "×",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        175
-       ]
-      }
-     },
-     {
-      "n": 9,
-      "zh": "跟家人一起吃晚饭很快乐。",
-      "transcript_zh": "什么是快乐？结束一天的工作以后，你和家人一起吃晚饭，说说白天的事情，这不就是快乐吗？",
-      "answer": "√",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        175
-       ]
-      }
-     },
-     {
-      "n": 10,
-      "zh": "啤酒在桌子上。",
-      "transcript_zh": "你把桌子上的杯子给我，我去洗一下。你去楼下买几瓶啤酒吧。",
-      "answer": "×",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        175
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "一、听力 第三部分",
-    "type_zh": "听力 第三部分",
-    "instruction_zh": "第11–15题：听短对话，选择正确答案",
-    "instruction_en": "Questions 11-15: Listen to the short dialogues and choose the right answers.",
-    "audio": "hsk3-workbook-11-part3.mp3",
-    "items": [
-     {
-      "n": "例",
-      "zh": "男的想让小王做什么？",
-      "transcript_zh": "男：小王，帮我开一下门，好吗？谢谢！ 女：没问题。您去超市了？买了这么多东西。 问：男的想让小王做什么？",
-      "options": {
-       "A": "开门",
-       "B": "拿东西",
-       "C": "去超市买东西"
-      },
-      "answer": "A",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        76
-       ]
-      }
-     },
-     {
-      "n": 11,
-      "zh": "男的在找什么？",
-      "options": {
-       "A": "地铁站",
-       "B": "眼镜店",
-       "C": "地图"
-      },
-      "transcript_zh": "男：你看一下地图，这儿附近有眼镜店吗？ 女：地铁站旁边有一个，在地铁站的北边。 问：男的在找什么？",
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        175
-       ]
-      }
-     },
-     {
-      "n": 12,
-      "zh": "女的要做什么？",
-      "options": {
-       "A": "给妹妹喝牛奶",
-       "B": "去超市买牛奶",
-       "C": "带妹妹去医院"
-      },
-      "transcript_zh": "男：妹妹怎么了？病了吗？ 女：可能饿了，你把奶瓶给我吧。 问：女的要做什么？",
-      "answer": "A",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        175
-       ]
-      }
-     },
-     {
-      "n": 13,
-      "zh": "他们最可能是什么关系？",
-      "options": {
-       "A": "同事",
-       "B": "经理和客人",
-       "C": "医生和病人"
-      },
-      "transcript_zh": "男：会议结束后，你记得把空调和灯都关了。 女：好的，我知道了，明天见。 问：他们最可能是什么关系？",
-      "answer": "A",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        175
-       ]
-      }
-     },
-     {
-      "n": 14,
-      "zh": "男的要做什么？",
-      "options": {
-       "A": "出去开会",
-       "B": "照顾小雨",
-       "C": "和女的去公园"
-      },
-      "transcript_zh": "女：我明天出去开会，你能帮我照顾一下小雨吗？ 男：行，没问题，我每天都带她去公园玩儿。 问：男的要做什么？",
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        175
-       ]
-      }
-     },
-     {
-      "n": 15,
-      "zh": "男的是什么意思？",
-      "options": {
-       "A": "让女的去还书",
-       "B": "书已经还了",
-       "C": "女的忘了还书"
-      },
-      "transcript_zh": "女：我的那本历史书呢，你看见了吗？ 男：你昨天让我去图书馆把书还了，你忘了？ 问：男的是什么意思？",
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        175
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "一、听力 第四部分",
-    "type_zh": "听力 第四部分",
-    "instruction_zh": "第16–20题：听长对话，选择正确答案",
-    "instruction_en": "Questions 16-20: Listen to the dialogues and choose the right answers.",
-    "audio": "hsk3-workbook-11-part4.mp3",
-    "items": [
-     {
-      "n": "例",
-      "zh": "男的在做什么？",
-      "transcript_zh": "女：晚饭做好了，准备吃饭了。 男：等一会儿，比赛还有三分钟就结束了。 女：快点儿吧，一起吃，菜冷了就不好吃了。 男：你先吃，我马上就看完了。 问：男的在做什么？",
-      "options": {
-       "A": "洗澡",
-       "B": "吃饭",
-       "C": "看电视"
-      },
-      "answer": "C",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        77
-       ]
-      }
-     },
-     {
-      "n": 16,
-      "zh": "男的为什么要打电话？",
-      "options": {
-       "A": "今天比较忙",
-       "B": "空调有问题",
-       "C": "叫人来换水"
-      },
-      "transcript_zh": "女：空调下面怎么这么多水？ 男：我也是刚看见，我已经打电话叫人来看了。 女：问他们什么时候到了吗？ 男：他们说今天周日，比较忙，下午才能来。 问：男的为什么要打电话？",
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        175
-       ]
-      }
-     },
-     {
-      "n": 17,
-      "zh": "女的为什么不去跑步？",
-      "options": {
-       "A": "已经洗澡了",
-       "B": "不喜欢出去跑步",
-       "C": "想去超市买东西"
-      },
-      "transcript_zh": "男：我要去跑步，你去不去？ 女：我已经洗完澡了，不想出去了。 男：要带点儿什么东西吗？ 女：你回来时，在楼下超市买斤香蕉和两瓶牛奶吧。 问：女的为什么不去跑步？",
-      "answer": "A",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        175
-       ]
-      }
-     },
-     {
-      "n": 18,
-      "zh": "关于男的的电脑，可以知道什么？",
-      "options": {
-       "A": "比以前便宜了",
-       "B": "太旧了",
-       "C": "又大又方便"
-      },
-      "transcript_zh": "女：我的笔记本电脑太旧了，我想换一个，你说买个什么样的好？ 男：我用的这个就不错，也不大，带着很方便。 女：贵不贵？ 男：有点儿贵，我去年买的时候九千，听说现在卖八千左右。 问：关于男的的电脑，可以知道什么？",
-      "answer": "A",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        175
-       ]
-      }
-     },
-     {
-      "n": 19,
-      "zh": "关于女的，可以知道什么？",
-      "options": {
-       "A": "来周先生家吃晚饭",
-       "B": "每天八点左右下班",
-       "C": "总是照顾周先生的小狗"
-      },
-      "transcript_zh": "女：周先生，我公司突然有事，您能帮我去接一下孩子吗？ 男：没问题，我带她来我家吃晚饭。 女：好的，太谢谢你了，我八点左右去接她回来。 男：别客气，你不也总是帮我照顾小狗吗？ 问：关于女的，可以知道什么？",
-      "answer": "C",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        175
-       ]
-      }
-     },
-     {
-      "n": 20,
-      "zh": "男的要做什么？",
-      "options": {
-       "A": "玩儿电脑",
-       "B": "打篮球",
-       "C": "复习考试"
-      },
-      "transcript_zh": "男：妈，我跟同学去打篮球。 女：你明天不是还要考试吗？ 男：没关系，我已经复习好了，玩儿一会儿就回来。 女：好吧，你的电脑关了没有？ 问：男的要做什么？",
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        175
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "二、阅读 第一部分",
-    "type_zh": "阅读 第一部分",
-    "instruction_zh": "第21–25题：选择合适的问答",
-    "instruction_en": "Questions 21-25: Match the two parts of the same dialogue.",
-    "items": [
-     {
-      "n": "例",
-      "zh": "你知道怎么去那儿吗？",
-      "options": {
-       "A": "都这么晚了，今天别看书了，快睡觉吧。",
-       "B": "你什么时候来找我，我们一起去图书馆吧。",
-       "C": "我昨天没来，把你的笔记本借我看看吧。",
-       "D": "我今天是开车来的，你们喝吧。",
-       "E": "当然。我们先坐公共汽车，然后换地铁。",
-       "F": "不是，我去参加一个会议，下星期三回来。"
-      },
-      "answer": "E",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        78
-       ]
-      }
-     },
-     {
-      "n": 21,
-      "zh": "中午吃完饭，一点左右，怎么样？",
-      "options": {
-       "A": "都这么晚了，今天别看书了，快睡觉吧。",
-       "B": "你什么时候来找我，我们一起去图书馆吧。",
-       "C": "我昨天没来，把你的笔记本借我看看吧。",
-       "D": "我今天是开车来的，你们喝吧。",
-       "E": "当然。我们先坐公共汽车，然后换地铁。",
-       "F": "不是，我去参加一个会议，下星期三回来。"
-      },
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        175
-       ]
-      }
-     },
-     {
-      "n": 22,
-      "zh": "你带这么多东西，又要出去旅游吗？",
-      "options": {
-       "A": "都这么晚了，今天别看书了，快睡觉吧。",
-       "B": "你什么时候来找我，我们一起去图书馆吧。",
-       "C": "我昨天没来，把你的笔记本借我看看吧。",
-       "D": "我今天是开车来的，你们喝吧。",
-       "E": "当然。我们先坐公共汽车，然后换地铁。",
-       "F": "不是，我去参加一个会议，下星期三回来。"
-      },
-      "answer": "F",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        175
-       ]
-      }
-     },
-     {
-      "n": 23,
-      "zh": "我习惯睡觉以前看会儿书了，不看书我睡不着。",
-      "options": {
-       "A": "都这么晚了，今天别看书了，快睡觉吧。",
-       "B": "你什么时候来找我，我们一起去图书馆吧。",
-       "C": "我昨天没来，把你的笔记本借我看看吧。",
-       "D": "我今天是开车来的，你们喝吧。",
-       "E": "当然。我们先坐公共汽车，然后换地铁。",
-       "F": "不是，我去参加一个会议，下星期三回来。"
-      },
-      "answer": "A",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        175
-       ]
-      }
-     },
-     {
-      "n": 24,
-      "zh": "周经理，您怎么一口酒都不喝？",
-      "options": {
-       "A": "都这么晚了，今天别看书了，快睡觉吧。",
-       "B": "你什么时候来找我，我们一起去图书馆吧。",
-       "C": "我昨天没来，把你的笔记本借我看看吧。",
-       "D": "我今天是开车来的，你们喝吧。",
-       "E": "当然。我们先坐公共汽车，然后换地铁。",
-       "F": "不是，我去参加一个会议，下星期三回来。"
-      },
-      "answer": "D",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        175
-       ]
-      }
-     },
-     {
-      "n": 25,
-      "zh": "对不起，我忘带了，明天给你吧。",
-      "options": {
-       "A": "都这么晚了，今天别看书了，快睡觉吧。",
-       "B": "你什么时候来找我，我们一起去图书馆吧。",
-       "C": "我昨天没来，把你的笔记本借我看看吧。",
-       "D": "我今天是开车来的，你们喝吧。",
-       "E": "当然。我们先坐公共汽车，然后换地铁。",
-       "F": "不是，我去参加一个会议，下星期三回来。"
-      },
-      "answer": "C",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        175
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "二、阅读 第二部分",
-    "type_zh": "阅读 第二部分",
-    "instruction_zh": "第26–30题：选择合适的词语填空",
-    "instruction_en": "Questions 26-30: Choose the proper words to fill in the brackets.",
-    "word_bank": [
-     [
-      "A 结束",
-      "B 图书馆",
-      "C 地铁",
-      "D 习惯",
-      "E 声音",
-      "F 关"
-     ]
-    ],
-    "items": [
-     {
-      "n": "例",
-      "zh": "她说话的（　）多好听啊！",
-      "options": {
-       "A": "结束",
-       "B": "图书馆",
-       "C": "地铁",
-       "D": "习惯",
-       "E": "声音",
-       "F": "关"
-      },
-      "answer": "E",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        78
-       ]
-      }
-     },
-     {
-      "n": 26,
-      "zh": "我们一会儿在（　）门口见面吧。",
-      "options": {
-       "A": "结束",
-       "B": "图书馆",
-       "C": "地铁",
-       "D": "习惯",
-       "E": "声音",
-       "F": "关"
-      },
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        175
-       ]
-      }
-     },
-     {
-      "n": 27,
-      "zh": "你去经理的办公室把灯（　）了。",
-      "options": {
-       "A": "结束",
-       "B": "图书馆",
-       "C": "地铁",
-       "D": "习惯",
-       "E": "声音",
-       "F": "关"
-      },
-      "answer": "F",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        175
-       ]
-      }
-     },
-     {
-      "n": 28,
-      "zh": "我想住在（　）站附近，这样去别的地方很方便。",
-      "options": {
-       "A": "结束",
-       "B": "图书馆",
-       "C": "地铁",
-       "D": "习惯",
-       "E": "声音",
-       "F": "关"
-      },
-      "answer": "C",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        175
-       ]
-      }
-     },
-     {
-      "n": 29,
-      "zh": "A：今天晚上的音乐会几点（　）？ B：十点左右，你还有事情吗？",
-      "options": {
-       "A": "结束",
-       "B": "图书馆",
-       "C": "地铁",
-       "D": "习惯",
-       "E": "声音",
-       "F": "关"
-      },
-      "answer": "A",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        175
-       ]
-      }
-     },
-     {
-      "n": 30,
-      "zh": "A：给你买件衬衫吧，在银行上班穿衬衫好一些。 B：我还不太（　）穿衬衫。",
-      "options": {
-       "A": "结束",
-       "B": "图书馆",
-       "C": "地铁",
-       "D": "习惯",
-       "E": "声音",
-       "F": "关"
-      },
-      "answer": "D",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        175
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "二、阅读 第三部分",
-    "type_zh": "阅读 第三部分",
-    "instruction_zh": "第31–35题：选择正确答案",
-    "instruction_en": "Questions 31-35: Choose the right answers.",
-    "items": [
-     {
-      "n": "例",
-      "zh": "您是来参加今天会议的吗？您来早了一点儿，现在才八点半。您先进来坐吧。 ★会议最可能几点开始？",
-      "options": {
-       "A": "8点",
-       "B": "8点半",
-       "C": "9点"
-      },
-      "answer": "C",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        79
-       ]
-      }
-     },
-     {
-      "n": 31,
-      "zh": "我每天下班都坐地铁回家，在地铁上，我更喜欢站着，因为我已经在办公室里坐了一天了。 ★我为什么在地铁上站着？",
-      "options": {
-       "A": "地铁上人很多",
-       "B": "我不累",
-       "C": "我坐了一天了"
-      },
-      "answer": "C",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        175
-       ]
-      }
-     },
-     {
-      "n": 32,
-      "zh": "看书时会看到一些历史上的人或者国家的名字，这些字现在很多都不用了，想要知道这些字的读音和意思就要字典的帮助，所以有本字典很方便。 ★看书时会看到：",
-      "options": {
-       "A": "不认识的字",
-       "B": "现在的名人",
-       "C": "汉字的读音"
-      },
-      "answer": "A",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        175
-       ]
-      }
-     },
-     {
-      "n": 33,
-      "zh": "中国有一句话叫“有借有还，再借不难”，是说向别人借的东西，用完就要还，这样下次你再借东西的时候，他们还会借给你。 ★借了别人的东西：",
-      "options": {
-       "A": "别用太长时间",
-       "B": "要记得还",
-       "C": "不能再借"
-      },
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        175
-       ]
-      }
-     },
-     {
-      "n": 34,
-      "zh": "我爸爸妈妈都是北方人，但是我一直住在南方，所以没见过雪。搬到北京以后，虽然这儿的天气很冷，我还不太习惯，但是我见到雪了，我很高兴。 ★她：",
-      "options": {
-       "A": "不想搬家",
-       "B": "见到雪了",
-       "C": "习惯北京的天气"
-      },
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        175
-       ]
-      }
-     },
-     {
-      "n": 35,
-      "zh": "下班后，我们一起去喝啤酒吧，就在公司旁边，以前是六十元一个人，现在是三十元一个人，想喝几瓶就可以喝几瓶，还送一些吃的。你那个朋友姓什么，我忘记了，叫他也来吧。 ★根据这段话，可以知道：",
-      "options": {
-       "A": "我忘记我朋友的名字了",
-       "B": "三十元可以喝一瓶啤酒",
-       "C": "喝啤酒比以前便宜了"
-      },
-      "answer": "C",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        175
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "三、书写 第一部分",
-    "type_zh": "书写 第一部分",
-    "instruction_zh": "第36–40题：连词成句",
-    "instruction_en": "Questions 36-40: Rearrange the words/phrases to make sentences.",
-    "items": [
-     {
-      "n": "例",
-      "zh": "小船　上　一　河　条　有",
-      "answer": "河上有一条小船。",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        80
-       ]
-      }
-     },
-     {
-      "n": 36,
-      "zh": "左右　上地铁　我每天　七点",
-      "answer": "我每天七点左右上地铁。",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        175
-       ]
-      }
-     },
-     {
-      "n": 37,
-      "zh": "几点　图书馆　关门",
-      "answer": "图书馆几点关门？",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        175
-       ]
-      }
-     },
-     {
-      "n": 38,
-      "zh": "喝了　我昨天　啤酒　两瓶",
-      "answer": "我昨天喝了两瓶啤酒。",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        175
-       ]
-      }
-     },
-     {
-      "n": 39,
-      "zh": "参加　运动会　今年的　你　吗",
-      "answer": "你参加今年的运动会吗？",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        175
-       ]
-      }
-     },
-     {
-      "n": 40,
-      "zh": "别　忘了　手机　你　把",
-      "answer": "你别把手机忘了。",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        175
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "三、书写 第二部分",
-    "type_zh": "书写 第二部分",
-    "instruction_zh": "第41–45题：看拼音，写汉字",
-    "instruction_en": "Questions 41-45: Write the characters based on their pinyin.",
-    "items": [
-     {
-      "n": "例",
-      "zh": "没（　）系，别难过，高兴点儿。",
-      "hint_zh": "guān",
-      "answer": "关",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        80
-       ]
-      }
-     },
-     {
-      "n": 41,
-      "zh": "这个笔记（　）电脑太贵了。",
-      "hint_zh": "běn",
-      "answer": "本",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        175
-       ]
-      }
-     },
-     {
-      "n": 42,
-      "zh": "早睡早起是一个好（　）惯。",
-      "hint_zh": "xí",
-      "answer": "习",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        175
-       ]
-      }
-     },
-     {
-      "n": 43,
-      "zh": "今天的（　）议几点结束？",
-      "hint_zh": "huì",
-      "answer": "会",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        175
-       ]
-      }
-     },
-     {
-      "n": 44,
-      "zh": "我从图书馆借了一本英汉（　）典。",
-      "hint_zh": "cí",
-      "answer": "词",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        175
-       ]
-      }
-     },
-     {
-      "n": 45,
-      "zh": "房间里的（　）怎么还开着呢？",
-      "hint_zh": "dēng",
-      "answer": "灯",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        175
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "三、书写 第三部分",
-    "type_zh": "书写 第三部分",
-    "instruction_zh": "第46–50题：辨认汉字，选择正确的汉字填空",
-    "instruction_en": "Questions 46-50: Distinguish the characters and fill in the blanks.",
-    "items": [
-     {
-      "n": "例",
-      "zh": "我不知道________个地方在________儿。",
-      "hint_zh": "（那、哪）",
-      "answer": "那、哪",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        81
-       ]
-      }
-     },
-     {
-      "n": 46,
-      "zh": "家里的空________坏了，________末我要叫人来看看。",
-      "hint_zh": "（周、调）",
-      "answer": "调、周",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        175
-       ]
-      }
-     },
-     {
-      "n": 47,
-      "zh": "昨________你离开的时候忘记________灯了。",
-      "hint_zh": "（关、天）",
-      "answer": "天、关",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        175
-       ]
-      }
-     },
-     {
-      "n": 48,
-      "zh": "你帮我把________本数学书________了吧。",
-      "hint_zh": "（还、这）",
-      "answer": "这、还",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        175
-       ]
-      }
-     },
-     {
-      "n": 49,
-      "zh": "________点儿，2号桌还少一双________子。",
-      "hint_zh": "（快、筷）",
-      "answer": "快、筷",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        175
-       ]
-      }
-     },
-     {
-      "n": 50,
-      "zh": "你看________了，我________的不是这本书。",
-      "hint_zh": "（借、错）",
-      "answer": "错、借",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        175
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "四、复习",
-    "type_zh": "复习",
-    "instruction_zh": "第1–2题：根据课文内容填空",
-    "instruction_en": "Questions 1-2: Fill in the blanks based on the texts in the textbook.",
-    "items": [
-     {
-      "n": 1,
-      "zh": "开会的时候，小丽告诉周明，王经理两点________来了个电话，说他已经坐________来公司了。周明告诉小丽会议________后，别________把________关了。",
-      "answer": "左右、地铁、结束、忘记、空调",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        175
-       ]
-      }
-     },
-     {
-      "n": 2,
-      "zh": "今天是爸爸的生日，所以妈妈做了很多菜。妈妈让儿子去拿________，还差一________。儿子想让爸爸喝点儿________，但是医生说爸爸一________酒都不能喝，所以不能让他看见酒________。",
-      "answer": "筷子、双、啤酒、口、瓶子",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        175
-       ]
-      }
-     }
-    ]
-   }
-  ],
-  "answers_ref": {
-   "book": "teacher",
-   "pages": [
+    113,
     173,
     174,
     175
-   ]
-  }
- },
- "audio": {
-  "textbook": [
-   "hsk3-textbook-1101.mp3",
-   "hsk3-textbook-1102.mp3",
-   "hsk3-textbook-1103.mp3",
-   "hsk3-textbook-1104.mp3",
-   "hsk3-textbook-1105.mp3"
   ],
-  "workbook": [
-   "hsk3-workbook-11-part1.mp3",
-   "hsk3-workbook-11-part2.mp3",
-   "hsk3-workbook-11-part3.mp3",
-   "hsk3-workbook-11-part4.mp3"
-  ]
- },
- "unclear": [
-  "课文2 (сурах бичиг PDF х.107) «会议结束后，别忘记把空调关了。» (忘记), харин 练习1 朗读 ③ (PDF х.110) «会议结束后，别忘了把空调关了。» (忘了) — номд хоёр өөр; тус бүрийг номд байгаагаар нь үлдээсэн.",
-  "练习4 ④ (сурах бичиг PDF х.112) «周太太今天为什么做了那么多的菜？» — 课文3-т ээжийг зөвхөн «妈妈» гэж нэрлэсэн (周太太 гэсэн нэр бичвэрт байхгүй); багшийн ном (PDF х.81) «妈妈今天为什么做了那么多菜？» гэж асуудаг. Номд байгаагаар нь үлдээсэн.",
-  "注释1 (сурах бичиг PDF х.109): хятад тайлбар «B为动词涉及的对象，必须是特指或已知的» (зөвхөн B), англи тайлбар «Both A and B should be specific or known to the speaker and the listener» (A ба B хоёулаа) — хоёр хэлний хооронд зөрүүтэй; номд байгаагаар нь.",
-  "生词18 电子邮件 (сурах бичиг PDF х.108) — үгийн ай (pos) номд заагаагүй, зөвхөн «e-mail»; pos талбаргүй үлдээсэн.",
-  "课文4 — гарчиггүй (номд зөвхөн «4», аудио 11-4) өгүүлэмж; lines-ийг өгүүлбэр (。／？) бүрээр хувааж, 拼音课文-ын харгалзах хэсгийг тус бүрт оноосон (номд нэг догол мөр).",
-  "拼音课文-ын гарчгийн пиньинь (Zài jiàoshì / Zài huìyìshì / Zài kètīng) болон ярилцагчийн нэрийн пиньинь (Xiǎomíng, tóngxué, Zhōu Míng, Xiǎolì, māma, érzi) схемд талбаргүй тул lines.pinyin-д зөвхөн яриаг оруулсан.",
-  "Энэ хичээлд 专有名词 хүснэгт、汉字知识、文化 хэсэг, * тэмдэгтэй үг байхгүй (сурах бичиг PDF х.106–113).",
-  "Сурах бичгийн 练一练 (2 дүрэм × 3)、练习2 选词填空、练习3 描述图片、练习4 回答问题、运用 — хариулт сурах бичиг, багшийн номд хэвлэгдээгүй тул answer талбаргүй. Багшийн номын 课文 асуулт-хариулт (teacher.text_questions) нь 练习4-ийн асуултаас өөр.",
-  "Багшийн номын 汉字辨认练习 (周/调 · 关/天 · 还/这 · 快/筷 · 借/错 — 组词 — PDF х.83) хоосон зайтай, хариулт хэвлэгдээгүй.",
-  "Багшийн ном 课文1 асуулт (PDF х.81) ярилцагчдыг «男的／女的» гэж нэрлэсэн (сурах бичигт 小明／同学).",
-  "练习3 (PDF х.111) зургууд: (3) товч дарж буй төхөөрөмж ямар машин (компьютер/принтер г.м.) болох нь тодорхойгүй; (2) хүүгийн ууж буй зүйл тодорхойгүй — picture_desc_en-д тодорхой бус хэлбэрээр.",
-  "Дасгалын номын сонсгол нэг CD тэмдэгтэй (11, PDF х.75) — аудиог hsk3-workbook-11-part1…4.mp3 болгож хэсэг тус бүрт хуваасныг section.audio-д оноосон.",
-  "Дасгалын ном 听力 第三/四部分 — номд зөвхөн сонголтууд хэвлэгдсэн; item.zh-д багшийн номын хавсралтын «问：» асуултыг оруулсан (transcript_zh-д бүтнээр).",
-  "Дасгалын номд 51–54 (组词) хэсэг энэ хичээлд байхгүй — 1–50 + 复习 1–2.",
-  "Багшийн ном 教学目标 (PDF х.78) «左右»-г «名词» гэж нэрлэсэн — номд байгаагаар."
- ],
- "verified_pages": [
-  75,
-  76,
-  77,
-  78,
-  79,
-  80,
-  81,
-  82,
-  83,
-  106,
-  107,
-  108,
-  109,
-  110,
-  111,
-  112,
-  113,
-  173,
-  174,
-  175
- ],
- "schema_version": 1
+  "schema_version": 1
 }

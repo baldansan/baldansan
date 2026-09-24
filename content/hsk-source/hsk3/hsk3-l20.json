@@ -1,14 +1,1950 @@
 {
- "level": "hsk3",
- "lesson": 20,
- "book": "HSK3",
- "title_zh": "我被他影响了",
- "title_pinyin": "Wǒ bèi tā yǐngxiǎng le",
- "title_en": "I’ve been influenced by him",
- "textbook": {
-  "ref": {
-   "book": "textbook",
-   "pages": [
+  "level": "hsk3",
+  "lesson": 20,
+  "book": "HSK3",
+  "title_zh": "我被他影响了",
+  "title_pinyin": "Wǒ bèi tā yǐngxiǎng le",
+  "title_en": "I’ve been influenced by him",
+  "textbook": {
+    "ref": {
+      "book": "textbook",
+      "pages": [
+        184,
+        185,
+        186,
+        187,
+        188,
+        189,
+        190,
+        191,
+        192,
+        193
+      ]
+    },
+    "warmup": [
+      {
+        "instruction_zh": "给下面的词语选择对应的图片",
+        "instruction_en": "Match the pictures with the words.",
+        "items": [
+          "①难过 nánguò",
+          "②成绩 chéngjì",
+          "③照相机 zhàoxiàngjī",
+          "④信用卡 xìnyòngkǎ",
+          "⑤碗 wǎn",
+          "⑥东 dōng"
+        ],
+        "pictures_desc_en": [
+          "A: a blue bank card (“PLASTIBANK”) with a chip",
+          "B: an arrow-shaped road sign reading “East” against a cloudy sky",
+          "C: a smiling girl holding up a paper with a mark written on it",
+          "D: a black camera with a large lens",
+          "E: a man in a white coat and tie holding his head with both hands",
+          "F: a stack of colourful bowls (red, green, blue)"
+        ]
+      },
+      {
+        "instruction_zh": "连线：把动词和宾语连起来",
+        "instruction_en": "Draw lines to match the verbs with the objects.",
+        "items": [
+          "解决 jiějué | 朋友 péngyou",
+          "影响 yǐngxiǎng | 钱 qián",
+          "开走 kāi zǒu | 问题 wèntí",
+          "花完 huā wán | 自行车 zìxíngchē",
+          "骑走 qí zǒu | 照相机 zhàoxiàngjī",
+          "用坏 yòng huài | 汽车 qìchē"
+        ]
+      }
+    ],
+    "texts": [
+      {
+        "n": 1,
+        "title_zh": "在休息室",
+        "title_en": "In the lounge",
+        "kind": "dialogue",
+        "audio": "hsk3-textbook-2001.mp3",
+        "lines": [
+          {
+            "speaker": "小丽",
+            "zh": "我的照相机被谁拿走了？怎么找不到了？",
+            "pinyin": "Wǒ de zhàoxiàngjī bèi shéi názǒu le? Zěnme zhǎo bu dào le?"
+          },
+          {
+            "speaker": "同事",
+            "zh": "你再找找。是不是没带来？",
+            "pinyin": "Nǐ zài zhǎozhao. Shì bu shì méi dàilai?"
+          },
+          {
+            "speaker": "小丽",
+            "zh": "我找了，没找到啊。",
+            "pinyin": "Wǒ zhǎo le, méi zhǎodào a."
+          },
+          {
+            "speaker": "同事",
+            "zh": "别难过，再买一个吧，公司东门外不就有一个大商场吗？",
+            "pinyin": "Bié nánguò, zài mǎi yí ge ba, gōngsī dōngmén wài bú jiù yǒu yí ge dà shāngchǎng ma?"
+          },
+          {
+            "speaker": "小丽",
+            "zh": "但是我这个月信用卡里的钱已经花得差不多了。",
+            "pinyin": "Dànshì wǒ zhège yuè xìnyòngkǎ li de qián yǐjīng huā de chà bu duō le."
+          }
+        ],
+        "new_words": [
+          {
+            "n": 1,
+            "zh": "照相机",
+            "pinyin": "zhàoxiàngjī",
+            "pos": "n.",
+            "en": "camera",
+            "text": 1
+          },
+          {
+            "n": 2,
+            "zh": "被",
+            "pinyin": "bèi",
+            "pos": "prep.",
+            "en": "used to indicate the passive voice",
+            "text": 1
+          },
+          {
+            "n": 3,
+            "zh": "难过",
+            "pinyin": "nánguò",
+            "pos": "adj.",
+            "en": "sad",
+            "text": 1
+          },
+          {
+            "n": 4,
+            "zh": "东",
+            "pinyin": "dōng",
+            "pos": "n.",
+            "en": "east",
+            "text": 1
+          },
+          {
+            "n": 5,
+            "zh": "信用卡",
+            "pinyin": "xìnyòngkǎ",
+            "pos": "n.",
+            "en": "credit card",
+            "text": 1
+          }
+        ]
+      },
+      {
+        "n": 2,
+        "title_zh": "在教室",
+        "title_en": "In the classroom",
+        "kind": "dialogue",
+        "audio": "hsk3-textbook-2002.mp3",
+        "lines": [
+          {
+            "speaker": "小明",
+            "zh": "你怎么突然关心起体育来了？",
+            "pinyin": "Nǐ zěnme tūrán guānxīn qi tǐyù lai le?"
+          },
+          {
+            "speaker": "朋友",
+            "zh": "我的男朋友喜欢看足球比赛，我被他影响的。",
+            "pinyin": "Wǒ de nánpéngyou xǐhuan kàn zúqiú bǐsài, wǒ bèi tā yǐngxiǎng de."
+          },
+          {
+            "speaker": "小明",
+            "zh": "看来只有爱，才能让人有变化。",
+            "pinyin": "Kànlái zhíyǒu ài, cái néng ràng rén yǒu biànhuà."
+          },
+          {
+            "speaker": "朋友",
+            "zh": "是啊，为了和他的爱好一样，我天天看球赛。",
+            "pinyin": "Shì a, wèile hé tā de àihào yíyàng, wǒ tiāntiān kàn qiúsài."
+          },
+          {
+            "speaker": "小明",
+            "zh": "除了足球，他还影响你什么了？",
+            "pinyin": "Chúle zúqiú, tā hái yǐngxiǎng nǐ shénme le?"
+          },
+          {
+            "speaker": "朋友",
+            "zh": "我最近天天上网玩儿游戏，我的成绩差极了。",
+            "pinyin": "Wǒ zuìjìn tiāntiān shàng wǎng wánr yóuxì, wǒ de chéngjì chà jí le."
+          }
+        ],
+        "new_words": [
+          {
+            "n": 6,
+            "zh": "关心",
+            "pinyin": "guānxīn",
+            "pos": "v.",
+            "en": "to care for, to be interested in",
+            "text": 2
+          },
+          {
+            "n": 7,
+            "zh": "只有……才……",
+            "pinyin": "zhǐyǒu……cái……",
+            "pos": "conj.",
+            "en": "only… (that/can…)",
+            "text": 2
+          },
+          {
+            "n": 8,
+            "zh": "成绩",
+            "pinyin": "chéngjì",
+            "pos": "n.",
+            "en": "grade, performance, achievement",
+            "text": 2
+          }
+        ]
+      },
+      {
+        "n": 3,
+        "title_zh": "在饭馆",
+        "title_en": "In the restaurant",
+        "kind": "dialogue",
+        "audio": "hsk3-textbook-2003.mp3",
+        "lines": [
+          {
+            "speaker": "朋友",
+            "zh": "那个拿着碗吃饭的人是你哥哥吗？他和你长得真像。",
+            "pinyin": "Nàge názhe wǎn chī fàn de rén shì nǐ gēge ma? Tā hé nǐ zhǎng de zhēn xiàng."
+          },
+          {
+            "speaker": "大卫",
+            "zh": "我们经常被别人认错。",
+            "pinyin": "Wǒmen jīngcháng bèi biérén rèncuò."
+          },
+          {
+            "speaker": "朋友",
+            "zh": "只有你们的爸爸妈妈才能分出来哪个是哥哥，哪个是弟弟吧。",
+            "pinyin": "Zhǐyǒu nǐmen de bàba māma cái néng fēn chulai nǎge shì gēge, nǎge shì dìdi ba."
+          },
+          {
+            "speaker": "大卫",
+            "zh": "除了父母以外，还有我们自己也能啊。",
+            "pinyin": "Chúle fùmǔ yǐwài, hái yǒu wǒmen zìjǐ yě néng a."
+          },
+          {
+            "speaker": "朋友",
+            "zh": "你们两个除了长得像，还有什么相同的地方？",
+            "pinyin": "Nǐmen liǎng ge chúle zhǎng de xiàng, hái yǒu shénme xiāngtóng de dìfang?"
+          },
+          {
+            "speaker": "大卫",
+            "zh": "我们住在同一个楼、同一个房间……",
+            "pinyin": "Wǒmen zhù zài tóng yí ge lóu, tóng yí ge fángjiān……"
+          }
+        ],
+        "new_words": [
+          {
+            "n": 9,
+            "zh": "碗",
+            "pinyin": "wǎn",
+            "pos": "n.",
+            "en": "bowl",
+            "text": 3
+          },
+          {
+            "n": 10,
+            "zh": "分",
+            "pinyin": "fēn",
+            "pos": "v.",
+            "en": "to distinguish",
+            "text": 3
+          }
+        ]
+      },
+      {
+        "n": 4,
+        "kind": "narrative",
+        "audio": "hsk3-textbook-2004.mp3",
+        "lines": [
+          {
+            "zh": "年轻人遇到难题，常常很着急，不知道怎么办。",
+            "pinyin": "Niánqīng rén yùdào nántí, chángcháng hěn zháo jí, bù zhīdào zěnme bàn."
+          },
+          {
+            "zh": "其实，不同的问题有不同的解决办法。",
+            "pinyin": "Qíshí, bù tóng de wèntí yǒu bù tóng de jiějué bànfǎ."
+          },
+          {
+            "zh": "有些问题看上去很难，但是做起来非常简单，所以得试着做做。",
+            "pinyin": "Yǒuxiē wèntí kàn shangqu hěn nán, dànshì zuò qilai fēicháng jiǎndān, suǒyǐ děi shìzhe zuòzuo."
+          },
+          {
+            "zh": "有些问题看上去虽然简单，但是解决起来难极了。",
+            "pinyin": "Yǒuxiē wèntí kàn shangqu suīrán jiǎndān, dànshì jiějué qilai nán jí le."
+          },
+          {
+            "zh": "所以只有真正做事情的时候，才能了解有多难。",
+            "pinyin": "Suǒyǐ zhǐyǒu zhēnzhèng zuò shìqing de shíhou, cái néng liǎojiě yǒu duō nán."
+          },
+          {
+            "zh": "不过，我们一定要相信：多么难的问题，都会被解决的。",
+            "pinyin": "Búguò, wǒmen yídìng yào xiāngxìn: dōume nán de wèntí, dōu huì bèi jiějué de."
+          }
+        ],
+        "new_words": [
+          {
+            "n": 11,
+            "zh": "解决",
+            "pinyin": "jiějué",
+            "pos": "v.",
+            "en": "to solve",
+            "text": 4
+          },
+          {
+            "n": 12,
+            "zh": "试",
+            "pinyin": "shì",
+            "pos": "v.",
+            "en": "to try",
+            "text": 4
+          },
+          {
+            "n": 13,
+            "zh": "真正",
+            "pinyin": "zhēnzhèng",
+            "pos": "adv.",
+            "en": "really, truly",
+            "text": 4,
+            "star": true
+          },
+          {
+            "n": 14,
+            "zh": "多么",
+            "pinyin": "duōme",
+            "pos": "adv.",
+            "en": "very, to a great extent",
+            "text": 4
+          }
+        ]
+      }
+    ],
+    "grammar": [
+      {
+        "n": 1,
+        "title_zh": "“被”字句",
+        "title_en": "The Bei-Sentence",
+        "explanation_zh": "汉语中，可以用带“被”的句子表达被动意义，其结构形式为“主语+被/叫/让+宾语+动词+其他成分”。其中主语一般是动作的接受者，宾语一般是动作的发出者。“被”字后边的宾语可以省略，“叫”“让”后边必须有宾语。例如：［表格］\n注意，否定副词和能愿动词等应该放在“被”的前边，例如：（1）–（4）",
+        "explanation_en": "In Chinese, a sentence with “被” can express the passive voice, its structure being “S + 被/叫/让 + O + V + Other Elements”, in which the subject is the patient of the action and the object the agent. The object following “被” can be left out, while the object after “叫” or “让” cannot. For example: [table]\nNote that negative adverbs and modal verbs should precede “被” if there are any. For example: (1)–(4)",
+        "structure_rows": [
+          "主语 | 被/叫/让 | 宾语 | 动词 | 其他",
+          "我 | 被 | 男朋友 | 影响 | 了。",
+          "帽子 | 被 | 刮 | 跑 | 了。",
+          "蛋糕 | 让 | 弟弟 | 吃完 | 了。",
+          "我的照相机 | 被 | 谁 | 拿走 | 了？"
+        ],
+        "examples": [
+          {
+            "n": 1,
+            "zh": "问题还没有被解决呢。"
+          },
+          {
+            "n": 2,
+            "zh": "病人还没被送到医院呢。"
+          },
+          {
+            "n": 3,
+            "zh": "下个月她会被妈妈送到美国。"
+          },
+          {
+            "n": 4,
+            "zh": "我们经常被别人认错。"
+          }
+        ],
+        "practice_instruction_zh": "练一练　用提示词完成对话 Complete the dialogues with the words given.",
+        "practice": [
+          {
+            "n": 1,
+            "zh": "A：你的自行车呢？ B：________。",
+            "hint_zh": "（借走）"
+          },
+          {
+            "n": 2,
+            "zh": "A：你怎么没带照相机？ B：________。",
+            "hint_zh": "（用坏）"
+          },
+          {
+            "n": 3,
+            "zh": "A：我刚买的咖啡呢？ B：________。",
+            "hint_zh": "（喝完）"
+          }
+        ]
+      },
+      {
+        "n": 2,
+        "title_zh": "只有……才……",
+        "title_en": "The Structure “只有……才……”",
+        "explanation_zh": "“只有……才……”连接的是一个条件复句，“只有”后边是唯一的条件，“才”后边是在这个条件下才会出现的结果。例如：",
+        "explanation_en": "“只有……才……” is used to connect the two clauses of a conditional complex sentence, with “只有” introducing the one and only condition and “才” followed by the result which will be reached only if the said condition is met. For example:",
+        "structure_rows": [
+          "只有……，才……"
+        ],
+        "examples": [
+          {
+            "n": 1,
+            "zh": "只有写完作业，才能看电视。"
+          },
+          {
+            "n": 2,
+            "zh": "只有妈妈做的饭，她才爱吃。"
+          },
+          {
+            "n": 3,
+            "zh": "只有爸爸、妈妈才能分出来。"
+          },
+          {
+            "n": 4,
+            "zh": "看来只有爱，才能让人有变化。"
+          }
+        ],
+        "practice_instruction_zh": "练一练　完成对话 Complete the dialogues.",
+        "practice": [
+          {
+            "n": 1,
+            "zh": "A：你怎么学得这么认真？ B：妈妈说，只有学得好，才________。"
+          },
+          {
+            "n": 2,
+            "zh": "A：最近你怎么吃得越来越少？ B：男朋友说，只有________，穿衣服才漂亮。"
+          },
+          {
+            "n": 3,
+            "zh": "A：你怎么又出去锻炼啊？ B：爸爸说，只有常常锻炼，身体________。"
+          }
+        ]
+      }
+    ],
+    "exercises": [
+      {
+        "n": 1,
+        "type_zh": "朗读",
+        "instruction_zh": "朗读下列短语和句子",
+        "instruction_en": "Read the following phrases and sentences aloud.",
+        "audio": "hsk3-textbook-2005.mp3",
+        "items": [
+          {
+            "n": 1,
+            "zh": "东：东边／东门／中国在东边／公司东门外不就有一个大商场吗？"
+          },
+          {
+            "n": 2,
+            "zh": "关心：不关心／关心学生／他一直都很关心我／你怎么突然关心起体育来了？"
+          },
+          {
+            "n": 3,
+            "zh": "成绩：数学成绩／考试成绩／你是怎么提高历史成绩的／我的成绩差极了。"
+          },
+          {
+            "n": 4,
+            "zh": "解决：容易解决／解决问题／解决的办法／多么难的问题，都会被解决的。"
+          },
+          {
+            "n": 5,
+            "zh": "试：试一试／试着说一说／试试看／有些问题得试着做做。"
+          }
+        ]
+      },
+      {
+        "n": 2,
+        "type_zh": "选词填空",
+        "instruction_zh": "选择恰当的词语填空",
+        "instruction_en": "Choose the proper words to fill in the blanks.",
+        "word_bank": [
+          [
+            "成绩",
+            "多么",
+            "照相机",
+            "信用卡",
+            "难过"
+          ],
+          [
+            "试",
+            "只有",
+            "碗",
+            "东",
+            "关心"
+          ]
+        ],
+        "items": [
+          {
+            "n": 1,
+            "zh": "你每个月花多少钱？你有几张________？"
+          },
+          {
+            "n": 2,
+            "zh": "这个地方真漂亮，你带________了吗？"
+          },
+          {
+            "n": 3,
+            "zh": "别________了，手机坏了就再买一个吧。"
+          },
+          {
+            "n": 4,
+            "zh": "我什么时候能知道这次考试的________？"
+          },
+          {
+            "n": 5,
+            "zh": "今天的天气________好啊！"
+          },
+          {
+            "n": 6,
+            "zh": "A：你想要什么结婚礼物？ B：你送给我几个漂亮的________吧。"
+          },
+          {
+            "n": 7,
+            "zh": "A：他怎么又看篮球比赛了？ B：________看球赛，才能让他变得高兴。"
+          },
+          {
+            "n": 8,
+            "zh": "A：我的电脑又坏了。 B：我________一下，看看有什么问题。"
+          },
+          {
+            "n": 9,
+            "zh": "A：你觉得周经理怎么样？ B：非常好，很________我们。"
+          },
+          {
+            "n": 10,
+            "zh": "A：请问，去中国银行怎么走？ B：一直往________走。"
+          }
+        ]
+      },
+      {
+        "n": 3,
+        "type_zh": "描述图片",
+        "instruction_zh": "用本课新学的语言点和词语描述图片",
+        "instruction_en": "Describe the pictures using the newly-learned language points and words.",
+        "items": [
+          {
+            "n": 1,
+            "zh": "A：把你的手机借给我，我玩儿会儿游戏。 B：我的手机________。 A：考试以前不能玩儿了吧？ B：是啊。她说只有考得好，________。",
+            "picture_desc_en": "A woman in a green checked top taking a mobile phone from a young girl sitting at a school desk in a classroom."
+          },
+          {
+            "n": 2,
+            "zh": "A：妈妈，我那件白色的衣服呢？ B：刚被我________。你今天要穿吗？ A：是啊，我要去参加晚会，只有那件衣服才让我________。 B：你穿那件红色的也很好看。",
+            "picture_desc_en": "A woman in an apron hanging laundry on a clothesline outdoors on a lawn, with a laundry basket beside her."
+          },
+          {
+            "n": 3,
+            "zh": "A：你的信用卡呢？ B：________拿走了。 A：孩子拿走你的信用卡，你不担心啊？ B：信用卡只有大卫拿着，我才________。",
+            "picture_desc_en": "A smiling young man in a black sweater and tie holding up a bank card."
+          },
+          {
+            "n": 4,
+            "zh": "A：快到春节了，你不想出去旅游吗？ B：想啊，但是只有买到飞机票，________。 A：现在飞机票很贵吧？ B：对。便宜的飞机票都被大家________。",
+            "picture_desc_en": "The words “BOOK ONLINE” with a computer mouse connected by its cable."
+          }
+        ]
+      },
+      {
+        "n": 4,
+        "type_zh": "回答问题",
+        "instruction_zh": "根据课文回答问题",
+        "instruction_en": "Answer the questions according to the texts.",
+        "items": [
+          {
+            "n": 1,
+            "zh": "小丽找不到什么了？"
+          },
+          {
+            "n": 2,
+            "zh": "小丽现在能买一个新的吗？为什么？"
+          },
+          {
+            "n": 3,
+            "zh": "小明朋友的成绩为什么很差？"
+          },
+          {
+            "n": 4,
+            "zh": "大卫和他哥哥有什么相同的地方？"
+          },
+          {
+            "n": 5,
+            "zh": "年轻人遇到难题时应该怎么办？"
+          },
+          {
+            "n": 6,
+            "zh": "我们在解决问题时要相信什么？"
+          }
+        ]
+      }
+    ],
+    "characters": {
+      "knowledge_title_zh": "旧字新词",
+      "knowledge_zh": "读读下面的词语，想想组成的新词是什么意思。",
+      "knowledge_en": "Read the following words and guess the meanings of the newly-formed ones.",
+      "word_game": [
+        {
+          "parts": [
+            "碗",
+            "筷子"
+          ],
+          "result": "碗筷"
+        },
+        {
+          "parts": [
+            "房间",
+            "信用卡"
+          ],
+          "result": "房卡"
+        },
+        {
+          "parts": [
+            "东",
+            "北方"
+          ],
+          "result": "东北"
+        }
+      ],
+      "confusable_pairs": [
+        [
+          "东",
+          "车"
+        ],
+        [
+          "决",
+          "快"
+        ],
+        [
+          "么",
+          "公"
+        ],
+        [
+          "难",
+          "准"
+        ],
+        [
+          "被",
+          "视"
+        ]
+      ]
+    },
+    "application": [
+      {
+        "title_zh": "双人活动",
+        "instruction_zh": "两人一组，讨论下面的比赛，看看班里应该让谁参加。",
+        "instruction_en": "Work in pairs. Talk about the following competitions and discuss who in your class should take part in each of them.",
+        "example_zh": [
+          "表格：| 比赛 | 人 |",
+          "| 1. 跑步比赛 | 只有马可参加，红队才能拿第一名。 |",
+          "| 2. 游泳比赛 | |",
+          "| 3. 汉字比赛 | |",
+          "| 4. 唱歌比赛 | |",
+          "| 5. 跳舞比赛 | |",
+          "| 6. 爬山比赛 | |"
+        ]
+      },
+      {
+        "title_zh": "小组活动",
+        "instruction_zh": "3~4人一组，各自回忆自己最倒霉的一天，一个人说时其他人记录，最后选出每组最“倒霉”的人。注意用上“被”字句。",
+        "instruction_en": "Work in groups of 3-4. Take turns to describe the unluckiest day in your life. When one talks, the others take notes. Find the unluckiest person in your group. Please use bei-sentences.",
+        "example_zh": [
+          "例如：有一天，我去超市买了很多东西，到了家门口，才发现东西被我忘在超市了。",
+          "表格：| | 谁 | 倒霉 (dǎoméi, unlucky) 的事 |",
+          "| 1 | 小明 | 东西被他忘在超市了。 |",
+          "| 2 | | |",
+          "| 3 | | |",
+          "| 4 | | |"
+        ]
+      }
+    ],
+    "saying": {
+      "zh": "车到山前必有路",
+      "pinyin": "Chē dào shān qián bì yǒu lù",
+      "en": "The cart will find its way round the hill when it gets there",
+      "explanation_zh": "“车到山前必有路”，这里“必”是“一定”的意思。这句话的意思是，车开到了山下，虽然山拦住了车的去路，但是一定会有办法找到出路的。这句话常用来比喻虽然遇到了问题和困难，但是总会有解决困难的办法。",
+      "explanation_en": "In the saying “车到山前必有路”, “必” means “surely”. The saying means that when a vehicle arrives at the foot of a mountain, it doesn’t matter if its way is blocked by the mountain because there is always a way out. It is often used metaphorically to tell us not to fear the trouble or difficulty we face as there is always a solution to it."
+    },
+    "culture": {
+      "title_zh": "中国人什么礼物不能送",
+      "body_zh": "去别人家做客，要带点儿礼物，但不是什么礼物都能送。在中国，有一些东西不能当作礼物送给别人，比如：伞、鞋、钟表等等。伞的发音跟“散”差不多，送伞就表示分离的意思。“鞋”与“邪”的发音相同，有倒霉的意思。“送钟”与“送终”发音相同，有将去世之人送走的意思。在你们国家，送礼物有什么禁忌吗？",
+      "body_en": "[Taboo Gifts in China] When visiting someone’s home, we usually bring a gift. Remember not all gifts are appropriate. In China, some articles cannot be given as gifts, such as umbrellas, shoes, and clocks. The pronunciation of the Chinese character for “umbrella” is similar to that of the character for “separation”, so giving someone an umbrella means to separate from the person. The character for “shoe” sounds the same as that for “evil”, which bodes ill. The Chinese word for “giving a clock” sounds exactly the same as that for “attending upon a dying person”. What taboos do you have in your country regarding giving gifts?"
+    }
+  },
+  "teacher": {
+    "ref": {
+      "book": "teacher",
+      "pages": [
+        137,
+        138,
+        139,
+        140,
+        141,
+        142
+      ]
+    },
+    "objectives_zh": [
+      "重点词语：学生能够熟练掌握：“难过、关心、成绩、解决、试、多么”的词义和用法",
+      "语言点：学生能够了解并掌握：（1）“被”字句表示被动意义（2）“只有……才……”表示条件和结果",
+      "汉字：学生能够：根据已学生词猜测出3个旧字新词“碗筷、房卡、东北”的意思",
+      "功能：学生能够：（1）用“被”字句表示被动（2）用“只有……才……”表示条件和结果"
+    ],
+    "steps": [
+      {
+        "title_zh": "复习旧课",
+        "body_zh": "1 教师展示第19课的热身图片，请学生根据图片说出脸上器官的名字。\n2 教师根据第19课的内容进行提问。\n（1）你喜欢长头发还是短头发？\n（2）昨天的汉字，你都能写出来吗？你能写出多少个来？\n（3）别人不高兴的时候，你能看出来吗？你是怎么看出来的？\n（4）做什么会让身体很健康？你经常这么做吗？\n（5）你做什么会让妈妈不高兴？如果妈妈不高兴了，你会做什么？"
+      },
+      {
+        "title_zh": "学习新课 1 热身",
+        "body_zh": "热身1：学生两人一组，合作完成热身1；教师出示热身1的图片，学生根据图片说出词语，核对答案；最后全体学生齐读热身环节所有词语，要求语音标准，声调准确。\n答案：①E　②C　③D　④A　⑤F　⑥B\n热身2：可留至语言点（1）“被”字句导入时使用。"
+      },
+      {
+        "title_zh": "2 生词",
+        "body_zh": "（1）生词快速认读及正音\n照相机、被、难过、东、信用卡、关心、只有……才……、成绩、碗、分、解决、试、真正、多么\n· 教师先带领学生快速认读一遍生词；\n· 取消拼音，带领学生再次认读；\n· 请单个学生独自认读2-3个生词；\n· 最后全班一起快速认读所有的生词。\n（2）生词讲解方式\n· 直观法（如图片、照片、实物等）展示：照相机、信用卡、碗\n· 对比法展示：东—南—西—北\n（3）重点生词扩展及常用搭配\n难过—很难过—不难过—你别难过，我们还有机会。\n关心—很关心—不关心—关心体育—我的老师很关心我。\n成绩—成绩很好—数学成绩—这次考试，你的成绩怎么样？\n解决—解决了—没解决—解决问题—解决的办法\n　—请你帮我解决一下这个问题。\n试—试一试—试一下—试着说—你试着做一下。\n多么—多么美—多么难—你看她工作得多么认真啊！\n练习册相关练习：第135页／一／第一部分；第138页／二／第二部分"
+      },
+      {
+        "title_zh": "3 语言点（1）“被”字句",
+        "body_zh": "① 语言点解析\n“被”字句表达被动意义，其结构形式为“主语+被/叫/让+宾语+动词+其他成分”。其中主语一般是动作的接受者，宾语一般是动作的发出者。\n［框］主语＋被／叫／让＋宾语＋动词＋其他成分\n② 语言点导入\n教师可利用本课热身2的连线导入语言点。\n教师带领学生认读动词和宾语，并请学生做连线练习。\n教师核对答案，并用动宾短语造句子，请学生回答。\n教师示范：\n教师：你的问题解决了吗？\n学生：我的问题解决了。\n教师引出目标句，并请学生重复。例如：问题被你解决了吗？\n③ 语言点操练\n教师可根据热身2操练语言点。\n学生向教师提问，教师回答后，请学生说出目标句。\n目标句：朋友被老师影响了。\n　　　　汽车被妈妈开走了。\n　　　　钱被弟弟花完了。\n　　　　自行车被同屋骑走了。\n　　　　照相机被爸爸用坏了。\n④ 语言点扩展练习\n教师利用热身2让学生互相询问并回答。\n注意：“被”字后边的宾语可以省略，“叫”“让”后边必须有宾语。"
+      },
+      {
+        "title_zh": "3 语言点（2）只有……才……",
+        "body_zh": "① 语言点解析\n“只有……才……”连接的是一个条件复句，“只有”后边是唯一的条件，“才”后边是在这个条件下才会出现的结果。\n② 语言点导入\n教师给出情景，引导学生理解该语法点。\n教师：在美国，可以去长城玩儿吗？\n学生：美国没有长城，只有在中国，才能去长城玩儿。\n③ 语言点操练\n教师给出情景，请学生说句子。\n例如：写完作业，看电影（只有写完作业，才能看电影。）\n情景：爸爸同意，去中国学习——只有爸爸同意，才能去中国学习。\n　　　送她礼物，她很高兴——只有送她礼物，她才会很高兴。\n　　　吃药，发烧能好——只有吃药，发烧才能好。\n　　　复习得好，考试成绩很好——只有复习得好，考试才能考得好。\n④ 语言点扩展练习\n教师给出练习，请学生用“只要……就……”或“只有……才……”填空。\n________妈妈的话，他________听。\n________有时间，我________帮妈妈做饭。\n别人去都不行，________大山去比赛，他们班________能拿第一名。\n________你喜欢这本书，________可以拿回家看看。\n注意：“只要……就……”中出现的条件是使结果出现的必要条件，“只有……才……”中出现的条件是使结果出现的唯一条件。"
+      },
+      {
+        "title_zh": "4 课文 课文1",
+        "body_zh": "（1）让学生听两遍录音并回答下列问题：\n女的的照相机呢？——她不知道被谁拿走了，找不到了。\n男的建议女的怎么办？——男的建议女的再找找，找不到就再买一个。\n女的这个月能买照相机吗？——不能，这个月信用卡里的钱已经被她花得差不多了。\n（2）教师领读课文两遍，让学生分角色朗读课文，注意说话人的语气。\n（3）模仿练习\n学生两人一组，根据提示词模仿课文内容进行对话练习。\nA：我的……？怎么……？\nB：你再……。是不是……？\nA：我找了，……。\nB：别……，再……，……吗？\nA：但是……。"
+      },
+      {
+        "title_zh": "4 课文 课文2",
+        "body_zh": "（1）让学生听两遍录音并回答下列问题：\n女的为什么突然关心起体育来了？——因为她的男朋友喜欢看足球比赛。\n男的觉得怎么才能让人有变化？——只有爱，才能让人有变化。\n女的还有什么变化？——她最近天天上网玩游戏，成绩差极了。\n（2）教师领读课文两遍，让学生分角色朗读课文。\n（3）模仿练习\n学生两人一组，根据提示词模仿课文内容进行对话练习。\nA：你怎么突然……了？\nB：我……，我被……。\nA：看来……，……。\nB：是啊，为了……，我……。\nA：除了……，……影响……？\nB：我最近……，……。"
+      },
+      {
+        "title_zh": "4 课文 课文3",
+        "body_zh": "（1）让学生听两遍录音并回答下列问题：\n那个拿着碗吃饭的人是谁？——他是男的的哥哥。\n谁能把他们分出来？——他们的爸爸妈妈和他们自己。\n他们两个还有什么相同的地方？——他们住在同一个楼、同一个房间……\n（2）教师领读课文两遍，让学生分角色朗读课文，注意说话人的语气。\n（3）教师给提示词，带领学生复述课文。\n提示词：碗、长、像、认错、分出来、除了、相同、楼、房间"
+      },
+      {
+        "title_zh": "4 课文 课文4",
+        "body_zh": "（1）快速阅读，并回答：怎么才能了解问题有多难？\n（2）教师领读课文两遍，并回答下列问题：\n年轻人遇到难题，常常会怎么样？——常常很着急，不知道怎么办。\n我们一定要相信什么？——多么难的问题，都会被解决的。\n（3）教师给提示词，带领学生复述课文。\n提示词：遇到、解决、办法、看上去、做起来、试着、真正、了解、相信\n（4）教师请学生根据课文，说说自己解决难题的经历。\n练习册相关练习：第141页／四"
+      },
+      {
+        "title_zh": "5 汉字",
+        "body_zh": "旧字新词：\n① 教师领读以前学过的词语和新词，并让学生猜猜新词的意思。\n· 领读：碗、筷子、碗筷\n问学生：“碗筷”是什么意思？——碗和筷子。\n· 领读：房间、信用卡、房卡\n问学生：“房卡”是什么意思？——给房间开门的卡。\n扩展提问：还有什么“卡”？——银行卡、学生卡、饭卡。（根据实际情况选用）\n· 领读：东、北方、东北\n问学生：“东北”是什么意思？——东北方向的意思。\n扩展提问：还有哪些方向？——西北、东南、西南。（根据实际情况选用）\n② 教师领读新词扩展，通过情景，理解新词的意思和用法：\n碗筷：拿碗筷／放好碗筷／吃饭以后，我去洗碗筷。\n房卡：我的房卡／宾馆的房卡／你看见我的房卡了吗？\n东北：中国的东北／东北菜／我想去东北旅游。\n汉字辨认练习：\n辨认下列汉字并组词。\n东：________、________　车：________、________\n么：________、________　公：________、________\n被：________、________　视：________、________\n决：________、________　快：________、________\n难：________、________　准：________、________\n练习册相关练习：第141页／三／第三部分"
+      },
+      {
+        "title_zh": "6 补充课堂活动——我什么都没有",
+        "body_zh": "4-5个学生一组，向其中一个学生借东西，该学生用“被”字句回应，表明自己没有这个东西，例如“我的自行车被弟弟骑走了”。"
+      },
+      {
+        "title_zh": "7 俗语",
+        "body_zh": "教师引导学生理解俗语的含义，注意这里的“路”是办法的意思，这句俗语鼓励我们多去想办法，就一定能解决问题。"
+      },
+      {
+        "title_zh": "8 本课小结",
+        "body_zh": "· 语言点：用“被”字句表达被动\n　　　　　用“只有……才……”表达唯一条件和结果\n· 汉　字：旧字新词：碗筷、房卡、东北"
+      },
+      {
+        "title_zh": "文化：中国人什么礼物不能送",
+        "body_zh": "1 文化点解析\n① 在中国，送礼物的禁忌一般都跟谐音有关系，“伞”跟分离的“散”谐音，“鞋”跟坏运气的“邪”谐音，“送钟”跟送去世之人的“送终”谐音，这些都是人们避讳的。\n② 谐音词中也有中国人喜欢的，例如中国人过年的时候要吃鸡和鱼，这是因为“鸡”跟表示吉祥的“吉”谐音，“鱼”跟表示年年有余的“余”谐音。\n2 文化点参考处理方式\n· 教师介绍送礼物的禁忌及原因。\n· 教师解释谐音现象，并举例说明中国人喜欢的谐音词。\n· 教师请学生说说自己国家送礼物有什么禁忌。"
+      }
+    ],
+    "notes_zh": [
+      "注意：“被”字后边的宾语可以省略，“叫”“让”后边必须有宾语。（语言点1）",
+      "注意：“只要……就……”中出现的条件是使结果出现的必要条件，“只有……才……”中出现的条件是使结果出现的唯一条件。（语言点2）",
+      "对比法展示：东—南—西—北（生词）",
+      "注意这里的“路”是办法的意思，这句俗语鼓励我们多去想办法，就一定能解决问题。（俗语）"
+    ],
+    "warmup_answers_zh": [
+      "热身1 答案：①E　②C　③D　④A　⑤F　⑥B",
+      "热身2：可留至语言点（1）“被”字句导入时使用。"
+    ],
+    "text_questions": [
+      {
+        "text": 1,
+        "q_zh": "女的的照相机呢？",
+        "a_zh": "她不知道被谁拿走了，找不到了。"
+      },
+      {
+        "text": 1,
+        "q_zh": "男的建议女的怎么办？",
+        "a_zh": "男的建议女的再找找，找不到就再买一个。"
+      },
+      {
+        "text": 1,
+        "q_zh": "女的这个月能买照相机吗？",
+        "a_zh": "不能，这个月信用卡里的钱已经被她花得差不多了。"
+      },
+      {
+        "text": 2,
+        "q_zh": "女的为什么突然关心起体育来了？",
+        "a_zh": "因为她的男朋友喜欢看足球比赛。"
+      },
+      {
+        "text": 2,
+        "q_zh": "男的觉得怎么才能让人有变化？",
+        "a_zh": "只有爱，才能让人有变化。"
+      },
+      {
+        "text": 2,
+        "q_zh": "女的还有什么变化？",
+        "a_zh": "她最近天天上网玩游戏，成绩差极了。"
+      },
+      {
+        "text": 3,
+        "q_zh": "那个拿着碗吃饭的人是谁？",
+        "a_zh": "他是男的的哥哥。"
+      },
+      {
+        "text": 3,
+        "q_zh": "谁能把他们分出来？",
+        "a_zh": "他们的爸爸妈妈和他们自己。"
+      },
+      {
+        "text": 3,
+        "q_zh": "他们两个还有什么相同的地方？",
+        "a_zh": "他们住在同一个楼、同一个房间……"
+      },
+      {
+        "text": 4,
+        "q_zh": "（快速阅读）怎么才能了解问题有多难？"
+      },
+      {
+        "text": 4,
+        "q_zh": "年轻人遇到难题，常常会怎么样？",
+        "a_zh": "常常很着急，不知道怎么办。"
+      },
+      {
+        "text": 4,
+        "q_zh": "我们一定要相信什么？",
+        "a_zh": "多么难的问题，都会被解决的。"
+      }
+    ],
+    "summary_zh": "语言点：用“被”字句表达被动；用“只有……才……”表达唯一条件和结果。汉字：旧字新词：碗筷、房卡、东北。"
+  },
+  "workbook": {
+    "ref": {
+      "book": "workbook",
+      "pages": [
+        139,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145
+      ]
+    },
+    "answers_ref": {
+      "book": "teacher",
+      "pages": [
+        200,
+        201,
+        202
+      ]
+    },
+    "sections": [
+      {
+        "n": "一、听力 第一部分",
+        "type_zh": "听力 第一部分",
+        "instruction_zh": "第1–5题：听对话，选择与对话内容一致的图片",
+        "instruction_en": "Questions 1-5: Choose the right picture for each dialogue you hear.",
+        "audio": "hsk3-workbook-20-part1.mp3",
+        "items": [
+          {
+            "n": "例",
+            "zh": "男：喂，请问张经理在吗？ 女：他正在开会，您半个小时以后再打，好吗？",
+            "transcript_zh": "男：喂，请问张经理在吗？ 女：他正在开会，您半个小时以后再打，好吗？",
+            "options": {
+              "A": "[picture] a boy and a girl each biting into a piece of food held in their hands",
+              "B": "[picture] a bowl full of cooked white rice",
+              "C": "[picture] gloved hands holding a plate over a kitchen sink, with a dish rack behind",
+              "D": "[picture] a smiling woman in a uniform talking on a telephone",
+              "E": "[picture] two people on a grassy hill holding an umbrella blown inside out by the wind",
+              "F": "[picture] an elderly woman with glasses taking a photo with a small camera"
+            },
+            "answer": "D",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                139
+              ]
+            }
+          },
+          {
+            "n": 1,
+            "zh": "",
+            "options": {
+              "A": "[picture] a boy and a girl each biting into a piece of food held in their hands",
+              "B": "[picture] a bowl full of cooked white rice",
+              "C": "[picture] gloved hands holding a plate over a kitchen sink, with a dish rack behind",
+              "D": "[picture] a smiling woman in a uniform talking on a telephone",
+              "E": "[picture] two people on a grassy hill holding an umbrella blown inside out by the wind",
+              "F": "[picture] an elderly woman with glasses taking a photo with a small camera"
+            },
+            "transcript_zh": "女：奶奶喜欢那个新买的照相机吗？ 男：喜欢，她说很好用，她很满意。",
+            "answer": "F",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                202
+              ]
+            }
+          },
+          {
+            "n": 2,
+            "zh": "",
+            "options": {
+              "A": "[picture] a boy and a girl each biting into a piece of food held in their hands",
+              "B": "[picture] a bowl full of cooked white rice",
+              "C": "[picture] gloved hands holding a plate over a kitchen sink, with a dish rack behind",
+              "D": "[picture] a smiling woman in a uniform talking on a telephone",
+              "E": "[picture] two people on a grassy hill holding an umbrella blown inside out by the wind",
+              "F": "[picture] an elderly woman with glasses taking a photo with a small camera"
+            },
+            "transcript_zh": "男：我来洗碗筷，你去看电视吧。 女：不用，你把桌子上的鱼放冰箱里就可以了。",
+            "answer": "C",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                202
+              ]
+            }
+          },
+          {
+            "n": 3,
+            "zh": "",
+            "options": {
+              "A": "[picture] a boy and a girl each biting into a piece of food held in their hands",
+              "B": "[picture] a bowl full of cooked white rice",
+              "C": "[picture] gloved hands holding a plate over a kitchen sink, with a dish rack behind",
+              "D": "[picture] a smiling woman in a uniform talking on a telephone",
+              "E": "[picture] two people on a grassy hill holding an umbrella blown inside out by the wind",
+              "F": "[picture] an elderly woman with glasses taking a photo with a small camera"
+            },
+            "transcript_zh": "女：北方人是不是都像你一样这么喜欢吃面？ 男：不一定，东北人就更爱吃米饭。",
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                202
+              ]
+            }
+          },
+          {
+            "n": 4,
+            "zh": "",
+            "options": {
+              "A": "[picture] a boy and a girl each biting into a piece of food held in their hands",
+              "B": "[picture] a bowl full of cooked white rice",
+              "C": "[picture] gloved hands holding a plate over a kitchen sink, with a dish rack behind",
+              "D": "[picture] a smiling woman in a uniform talking on a telephone",
+              "E": "[picture] two people on a grassy hill holding an umbrella blown inside out by the wind",
+              "F": "[picture] an elderly woman with glasses taking a photo with a small camera"
+            },
+            "transcript_zh": "女：今天风太大了，伞都要被刮走了。 男：真希望明天天气能好点儿。",
+            "answer": "E",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                202
+              ]
+            }
+          },
+          {
+            "n": 5,
+            "zh": "",
+            "options": {
+              "A": "[picture] a boy and a girl each biting into a piece of food held in their hands",
+              "B": "[picture] a bowl full of cooked white rice",
+              "C": "[picture] gloved hands holding a plate over a kitchen sink, with a dish rack behind",
+              "D": "[picture] a smiling woman in a uniform talking on a telephone",
+              "E": "[picture] two people on a grassy hill holding an umbrella blown inside out by the wind",
+              "F": "[picture] an elderly woman with glasses taking a photo with a small camera"
+            },
+            "transcript_zh": "女：你怎么这么难过啊？怎么了？ 男：你昨天给我买的蛋糕被弟弟和妹妹吃了。",
+            "answer": "A",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                202
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "一、听力 第二部分",
+        "type_zh": "听力 第二部分",
+        "instruction_zh": "第6–10题：听句子，判断对错",
+        "instruction_en": "Questions 6-10: Decide whether the statements are true or false based on the sentences you hear.",
+        "audio": "hsk3-workbook-20-part2.mp3",
+        "items": [
+          {
+            "n": "例1",
+            "zh": "他希望自己很健康。",
+            "transcript_zh": "为了让自己更健康，他每天都花一个小时去锻炼身体。",
+            "answer": "√",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                140
+              ]
+            }
+          },
+          {
+            "n": "例2",
+            "zh": "那块儿手表不是他的。",
+            "transcript_zh": "今天我想早点儿回家。看了看手表，才5点。过了一会儿再看表，还是5点，我这才发现我的手表不走了。",
+            "answer": "×",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                140
+              ]
+            }
+          },
+          {
+            "n": 6,
+            "zh": "他没带照相机。",
+            "transcript_zh": "春天来了，公园里的花儿都开了，多么漂亮啊，如果带上照相机就好了。",
+            "answer": "√",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                202
+              ]
+            }
+          },
+          {
+            "n": 7,
+            "zh": "那家店不能用信用卡。",
+            "transcript_zh": "今天中午在商店买东西时，服务员说我这张信用卡不能用了。我打算下午去银行问问是怎么回事。",
+            "answer": "×",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                202
+              ]
+            }
+          },
+          {
+            "n": 8,
+            "zh": "不高兴时做什么都不好。",
+            "transcript_zh": "难过的时候我们应该做一些真正能使自己快乐的事，像听音乐、玩儿游戏或者去运动，这些都是不错的选择。",
+            "answer": "×",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                202
+              ]
+            }
+          },
+          {
+            "n": 9,
+            "zh": "爱有很多种。",
+            "transcript_zh": "爱可以是爸爸妈妈对孩子的照顾，可以是丈夫对妻子的关心，也可以是你对朋友的帮助。",
+            "answer": "√",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                202
+              ]
+            }
+          },
+          {
+            "n": 10,
+            "zh": "问题已经被他们解决了。",
+            "transcript_zh": "你别难过了，我们一起帮你想办法。先把这个最难的问题解决了，其他问题就容易多了。",
+            "answer": "×",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                202
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "一、听力 第三部分",
+        "type_zh": "听力 第三部分",
+        "instruction_zh": "第11–15题：听短对话，选择正确答案",
+        "instruction_en": "Questions 11-15: Listen to the short dialogues and choose the right answers.",
+        "audio": "hsk3-workbook-20-part3.mp3",
+        "items": [
+          {
+            "n": "例",
+            "zh": "男的想让小王做什么？",
+            "transcript_zh": "男：小王，帮我开一下门，好吗？谢谢！ 女：没问题。您去超市了？买了这么多东西。 问：男的想让小王做什么？",
+            "options": {
+              "A": "开门",
+              "B": "拿东西",
+              "C": "去超市买东西"
+            },
+            "answer": "A",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                140
+              ]
+            }
+          },
+          {
+            "n": 11,
+            "zh": "关于女的，可以知道什么？",
+            "options": {
+              "A": "今天过生日",
+              "B": "买了本字典",
+              "C": "正在学汉语"
+            },
+            "transcript_zh": "男：妹妹，明天是你的生日，我给你买了本汉语字典。 女：你怎么知道我在学汉语？我还一直觉得你不关心我的学习呢。 问：关于女的，可以知道什么？",
+            "answer": "C",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                202
+              ]
+            }
+          },
+          {
+            "n": 12,
+            "zh": "男的觉得到国家公园怎么走？",
+            "options": {
+              "A": "往东走",
+              "B": "往南走",
+              "C": "往车站那边走"
+            },
+            "transcript_zh": "男：放心，你就听我的吧，只有往东走才能到国家公园。 女：但是从地图上看，走南边那条路才对。我们还是去车站问问那些等车的人吧。 问：男的觉得到国家公园怎么走？",
+            "answer": "A",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                202
+              ]
+            }
+          },
+          {
+            "n": 13,
+            "zh": "女的在找什么？",
+            "options": {
+              "A": "帽子",
+              "B": "书",
+              "C": "地图"
+            },
+            "transcript_zh": "男：快点儿，拿上帽子走吧，明天你再找书。 女：我没找书，出去玩儿还是得带上地图啊，被你放哪儿了？ 问：女的在找什么？",
+            "answer": "C",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                202
+              ]
+            }
+          },
+          {
+            "n": 14,
+            "zh": "关于女的，可以知道什么？",
+            "options": {
+              "A": "在找运动服",
+              "B": "准备去跑步",
+              "C": "穿好了运动服"
+            },
+            "transcript_zh": "女：看见我的运动服了吗？怎么找不到了？ 男：是不是被笑笑穿走了？她刚才说要出去跑步。 问：关于女的，可以知道什么？",
+            "answer": "A",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                202
+              ]
+            }
+          },
+          {
+            "n": 15,
+            "zh": "男的要做什么？",
+            "options": {
+              "A": "去找服务员",
+              "B": "去拿房卡",
+              "C": "回房间去"
+            },
+            "transcript_zh": "男：我的房卡找不到了，我怎么进去啊？ 女：你给服务员打个电话，他们会帮你想办法解决的。 问：男的要做什么？",
+            "answer": "C",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                202
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "一、听力 第四部分",
+        "type_zh": "听力 第四部分",
+        "instruction_zh": "第16–20题：听长对话，选择正确答案",
+        "instruction_en": "Questions 16-20: Listen to the dialogues and choose the right answers.",
+        "audio": "hsk3-workbook-20-part4.mp3",
+        "items": [
+          {
+            "n": "例",
+            "zh": "男的在做什么？",
+            "transcript_zh": "女：晚饭做好了，准备吃饭了。 男：等一会儿，比赛还有三分钟就结束了。 女：快点儿吧，一起吃，菜冷了就不好吃了。 男：你先吃，我马上就看完了。 问：男的在做什么？",
+            "options": {
+              "A": "洗澡",
+              "B": "吃饭",
+              "C": "看电视"
+            },
+            "answer": "C",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                141
+              ]
+            }
+          },
+          {
+            "n": 16,
+            "zh": "男的要去做什么？",
+            "options": {
+              "A": "去银行还钱",
+              "B": "去教室上课",
+              "C": "去借照相机"
+            },
+            "transcript_zh": "男：你这么着急，是要去哪儿啊？ 女：我去银行，我的信用卡该还钱了。你去哪儿？ 男：我去教室上课。 女：这个照相机是小晴的，请你帮我还给她吧。 问：男的要去做什么？",
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                202
+              ]
+            }
+          },
+          {
+            "n": 17,
+            "zh": "女的为什么难过？",
+            "options": {
+              "A": "找不到照相机",
+              "B": "忘了去教室",
+              "C": "男的不帮她找"
+            },
+            "transcript_zh": "男：小云，这个照相机是你要找的吗？ 女：是啊，太谢谢你了。刚才我觉得找不到了，还很难过。你在哪儿找到的？ 男：我是在教室找到的，一定是被你忘在教室里了。 女：真奇怪，教室我也找过了，怎么没发现呢？ 问：女的为什么难过？",
+            "answer": "A",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                202
+              ]
+            }
+          },
+          {
+            "n": 18,
+            "zh": "根据这段话，可以知道什么？",
+            "options": {
+              "A": "客人已经离开了",
+              "B": "客人对房间很满意",
+              "C": "客人可以换个房间"
+            },
+            "transcript_zh": "女：我觉得这样做，客人是不会满意的。 男：那你有更好的办法来解决这个问题吗？ 女：我觉得可以给客人换一个房间，他离开时，我们还可以找车送他去机场。 男：行，那你去帮他换张房卡吧。 问：根据这段话，可以知道什么？",
+            "answer": "C",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                202
+              ]
+            }
+          },
+          {
+            "n": 19,
+            "zh": "关于女的，可以知道什么？",
+            "options": {
+              "A": "不能再跳舞了",
+              "B": "脚就快好了",
+              "C": "坐电梯不小心"
+            },
+            "transcript_zh": "男：电梯来了，您小心点儿。您的脚怎么样了？ 女：谢谢你送我回来。脚好一些了，只要再休息几天，就能跟你们出去跳舞了。 男：那太好了，只有您来了，我们才能跳得更快乐。 女：跟你们一起玩儿我也更快乐，我多么希望早点儿好啊。 问：关于女的，可以知道什么？",
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                202
+              ]
+            }
+          },
+          {
+            "n": 20,
+            "zh": "他们最可能在哪儿？",
+            "options": {
+              "A": "饭馆",
+              "B": "商店",
+              "C": "动物园"
+            },
+            "transcript_zh": "男：小姐，这双黑色的皮鞋多少钱？有43号的吗？ 女：六百八，帮您找双43号的试试？ 男：这么贵，是真牛皮的吗？ 女：当然了，只有真的好牛皮做出来的鞋，穿着才舒服。 问：他们最可能在哪儿？",
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                202
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "二、阅读 第一部分",
+        "type_zh": "阅读 第一部分",
+        "instruction_zh": "第21–25题：选择合适的问答",
+        "instruction_en": "Questions 21-25: Match the two parts of the same dialogue.",
+        "items": [
+          {
+            "n": "例",
+            "zh": "你知道怎么去那儿吗？",
+            "options": {
+              "A": "真为你高兴！希望你以后能有更好的成绩。",
+              "B": "在中国，北方的冬天非常冷，特别是东北。",
+              "C": "只有想办法让客人满意，才能解决这个问题。",
+              "D": "先生，等等，您把照相机忘在车上了。",
+              "E": "当然。我们先坐公共汽车，然后换地铁。",
+              "F": "我的照相机被弟弟借走了。"
+            },
+            "answer": "E",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                142
+              ]
+            }
+          },
+          {
+            "n": 21,
+            "zh": "谢谢老师！我一定会努力的。",
+            "options": {
+              "A": "真为你高兴！希望你以后能有更好的成绩。",
+              "B": "在中国，北方的冬天非常冷，特别是东北。",
+              "C": "只有想办法让客人满意，才能解决这个问题。",
+              "D": "先生，等等，您把照相机忘在车上了。",
+              "E": "当然。我们先坐公共汽车，然后换地铁。",
+              "F": "我的照相机被弟弟借走了。"
+            },
+            "answer": "A",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                202
+              ]
+            }
+          },
+          {
+            "n": 22,
+            "zh": "你的照相机借给我用几天吧？",
+            "options": {
+              "A": "真为你高兴！希望你以后能有更好的成绩。",
+              "B": "在中国，北方的冬天非常冷，特别是东北。",
+              "C": "只有想办法让客人满意，才能解决这个问题。",
+              "D": "先生，等等，您把照相机忘在车上了。",
+              "E": "当然。我们先坐公共汽车，然后换地铁。",
+              "F": "我的照相机被弟弟借走了。"
+            },
+            "answer": "F",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                202
+              ]
+            }
+          },
+          {
+            "n": 23,
+            "zh": "刚才太着急了，真是谢谢你。",
+            "options": {
+              "A": "真为你高兴！希望你以后能有更好的成绩。",
+              "B": "在中国，北方的冬天非常冷，特别是东北。",
+              "C": "只有想办法让客人满意，才能解决这个问题。",
+              "D": "先生，等等，您把照相机忘在车上了。",
+              "E": "当然。我们先坐公共汽车，然后换地铁。",
+              "F": "我的照相机被弟弟借走了。"
+            },
+            "answer": "D",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                202
+              ]
+            }
+          },
+          {
+            "n": 24,
+            "zh": "我们的客人越来越少，这真是一个问题啊。",
+            "options": {
+              "A": "真为你高兴！希望你以后能有更好的成绩。",
+              "B": "在中国，北方的冬天非常冷，特别是东北。",
+              "C": "只有想办法让客人满意，才能解决这个问题。",
+              "D": "先生，等等，您把照相机忘在车上了。",
+              "E": "当然。我们先坐公共汽车，然后换地铁。",
+              "F": "我的照相机被弟弟借走了。"
+            },
+            "answer": "C",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                202
+              ]
+            }
+          },
+          {
+            "n": 25,
+            "zh": "去年冬天我刚到那儿就感冒了。",
+            "options": {
+              "A": "真为你高兴！希望你以后能有更好的成绩。",
+              "B": "在中国，北方的冬天非常冷，特别是东北。",
+              "C": "只有想办法让客人满意，才能解决这个问题。",
+              "D": "先生，等等，您把照相机忘在车上了。",
+              "E": "当然。我们先坐公共汽车，然后换地铁。",
+              "F": "我的照相机被弟弟借走了。"
+            },
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                202
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "二、阅读 第二部分",
+        "type_zh": "阅读 第二部分",
+        "instruction_zh": "第26–30题：选择合适的词语填空",
+        "instruction_en": "Questions 26-30: Choose the proper words to fill in the brackets.",
+        "word_bank": [
+          [
+            "A 试",
+            "B 碗",
+            "C 只有",
+            "D 信用卡",
+            "E 声音",
+            "F 房卡"
+          ]
+        ],
+        "items": [
+          {
+            "n": "例",
+            "zh": "她说话的（　）多好听啊！",
+            "options": {
+              "A": "试",
+              "B": "碗",
+              "C": "只有",
+              "D": "信用卡",
+              "E": "声音",
+              "F": "房卡"
+            },
+            "answer": "E",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                142
+              ]
+            }
+          },
+          {
+            "n": 26,
+            "zh": "我不知道把（　）忘在哪儿了，现在只能叫服务员帮我开门了。",
+            "options": {
+              "A": "试",
+              "B": "碗",
+              "C": "只有",
+              "D": "信用卡",
+              "E": "声音",
+              "F": "房卡"
+            },
+            "answer": "F",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                202
+              ]
+            }
+          },
+          {
+            "n": 27,
+            "zh": "（　）被我妹妹拿走了。",
+            "options": {
+              "A": "试",
+              "B": "碗",
+              "C": "只有",
+              "D": "信用卡",
+              "E": "声音",
+              "F": "房卡"
+            },
+            "answer": "D",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                202
+              ]
+            }
+          },
+          {
+            "n": 28,
+            "zh": "请一个同学来听写生词，谁来（　）一下？",
+            "options": {
+              "A": "试",
+              "B": "碗",
+              "C": "只有",
+              "D": "信用卡",
+              "E": "声音",
+              "F": "房卡"
+            },
+            "answer": "A",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                202
+              ]
+            }
+          },
+          {
+            "n": 29,
+            "zh": "A：今天晚上谁洗（　）？ B：昨天是我，今天应该是你了。",
+            "options": {
+              "A": "试",
+              "B": "碗",
+              "C": "只有",
+              "D": "信用卡",
+              "E": "声音",
+              "F": "房卡"
+            },
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                202
+              ]
+            }
+          },
+          {
+            "n": 30,
+            "zh": "A：我的历史老师让我回家多复习。 B：对啊，（　）多复习才能提高成绩。",
+            "options": {
+              "A": "试",
+              "B": "碗",
+              "C": "只有",
+              "D": "信用卡",
+              "E": "声音",
+              "F": "房卡"
+            },
+            "answer": "C",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                202
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "二、阅读 第三部分",
+        "type_zh": "阅读 第三部分",
+        "instruction_zh": "第31–35题：选择正确答案",
+        "instruction_en": "Questions 31-35: Choose the right answers.",
+        "items": [
+          {
+            "n": "例",
+            "zh": "您是来参加今天会议的吗？您来早了一点儿，现在才八点半。您先进来坐吧。 ★会议最可能几点开始？",
+            "options": {
+              "A": "8点",
+              "B": "8点半",
+              "C": "9点"
+            },
+            "answer": "C",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                143
+              ]
+            }
+          },
+          {
+            "n": 31,
+            "zh": "去年我跟同事一起去南方的一个城市旅行，有一次我和同事找人问路，他们总是回答“向左走”或者“向右走”。我们才发现那里的人不习惯说“东南西北”，只说“左”或者“右”，只有在看地图的时候，才会说“东南西北”。 ★那个城市的人，什么时候说“东南西北”？",
+            "options": {
+              "A": "问路的时候",
+              "B": "看地图的时候",
+              "C": "去旅行的时候"
+            },
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                202
+              ]
+            }
+          },
+          {
+            "n": 32,
+            "zh": "“笑一笑，十年少”，这是中国人常说的一句话，意思是笑的作用很大，笑一笑会让人年轻很多。只有常常笑，才能使自己年轻，不容易变老。所以我们每天都应该在工作和学习中，多想想高兴的事，试着让自己更快乐。 ★根据这段话，可以知道：",
+            "options": {
+              "A": "现在的人不快乐",
+              "B": "笑能使人变年轻",
+              "C": "工作中没有高兴事"
+            },
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                202
+              ]
+            }
+          },
+          {
+            "n": 33,
+            "zh": "不要总觉得别人的事情跟自己没有关系，认真地做好自己的事情就可以了。关心别人，自己也会觉得很快乐。所以要多跟朋友在一起，帮助朋友就是帮助自己，只有经常帮助别人，当你需要帮助的时候，别人才会愿意帮助你。 ★根据这段话，可以知道：",
+            "options": {
+              "A": "自己的事最重要",
+              "B": "要学会帮助别人",
+              "C": "多让朋友帮自己"
+            },
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                202
+              ]
+            }
+          },
+          {
+            "n": 34,
+            "zh": "小米给我们写信了，她在信里说了很多谢谢我们的话，说我们不但很关心她，而且还帮她女儿解决了工作的问题。在信里，她还说跟我们在一起的那段时间是多么让人难忘啊。她说如果明年有机会，她还会回来看我们的。 ★根据这段话，可以知道：",
+            "options": {
+              "A": "小米的工作问题被解决了",
+              "B": "小米明年一定回来看我们",
+              "C": "小米写信谢谢我们"
+            },
+            "answer": "C",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                202
+              ]
+            }
+          },
+          {
+            "n": 35,
+            "zh": "你知道吗，动物虽然不会说话，但是其实很聪明。你看我家的小猫，总是能看出来我是高兴还是难过。我高兴的时候，它会在我身边跟我玩儿，高兴地叫着。要是它觉得我难过，它就会很安静地看着我。最让我觉得奇怪的是，它一般不会生气，但是只要我去动物园玩儿，它就会变得非常不高兴。 ★我家的小猫：",
+            "options": {
+              "A": "非常聪明",
+              "B": "经常不高兴",
+              "C": "喜欢去动物园"
+            },
+            "answer": "A",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                202
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "三、书写 第一部分",
+        "type_zh": "书写 第一部分",
+        "instruction_zh": "第36–40题：连词成句",
+        "instruction_en": "Questions 36-40: Rearrange the words/phrases to make sentences.",
+        "items": [
+          {
+            "n": "例",
+            "zh": "小船　上　一　河　条　有",
+            "answer": "河上有一条小船。",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                144
+              ]
+            }
+          },
+          {
+            "n": 36,
+            "zh": "冬天的时候　看看　我决定　去东北",
+            "answer": "我决定冬天的时候去东北看看。",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                202
+              ]
+            }
+          },
+          {
+            "n": 37,
+            "zh": "洗干净了　被　都　妈妈　碗筷",
+            "answer": "碗筷都被妈妈洗干净了。",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                202
+              ]
+            }
+          },
+          {
+            "n": 38,
+            "zh": "对中文　只有　你才能　感兴趣　学好",
+            "answer": "只有对中文感兴趣你才能学好。",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                202
+              ]
+            }
+          },
+          {
+            "n": 39,
+            "zh": "帮你解决　试着　我　电脑的问题",
+            "answer": "我试着帮你解决电脑的问题。",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                202
+              ]
+            }
+          },
+          {
+            "n": 40,
+            "zh": "小皮鞋　多么可爱啊　你看　这双",
+            "answer": "你看这双小皮鞋多么可爱啊。",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                202
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "三、书写 第二部分",
+        "type_zh": "书写 第二部分",
+        "instruction_zh": "第41–45题：看拼音，写汉字",
+        "instruction_en": "Questions 41-45: Write the characters based on their pinyin.",
+        "items": [
+          {
+            "n": "例",
+            "zh": "没（　）系，别难过，高兴点儿。",
+            "hint_zh": "guān",
+            "answer": "关",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                144
+              ]
+            }
+          },
+          {
+            "n": 41,
+            "zh": "别难（　）了，下次你一定能考好的。",
+            "hint_zh": "guò",
+            "answer": "过",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                202
+              ]
+            }
+          },
+          {
+            "n": 42,
+            "zh": "谢谢你的（　）心，我现在很好。",
+            "hint_zh": "guān",
+            "answer": "关",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                202
+              ]
+            }
+          },
+          {
+            "n": 43,
+            "zh": "这次考试，我的数学（　）绩最好。",
+            "hint_zh": "chéng",
+            "answer": "成",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                202
+              ]
+            }
+          },
+          {
+            "n": 44,
+            "zh": "妈妈说只有写完作业，（　）能玩儿游戏。",
+            "hint_zh": "cái",
+            "answer": "才",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                202
+              ]
+            }
+          },
+          {
+            "n": 45,
+            "zh": "你是什么时候有信用（　）的？",
+            "hint_zh": "kǎ",
+            "answer": "卡",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                202
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "三、书写 第三部分",
+        "type_zh": "书写 第三部分",
+        "instruction_zh": "第46–50题：辨认汉字，选择正确的汉字填空",
+        "instruction_en": "Questions 46-50: Distinguish the characters and fill in the blanks.",
+        "items": [
+          {
+            "n": "例",
+            "zh": "我不知道________个地方在________儿。",
+            "hint_zh": "（那、哪）",
+            "answer": "那、哪",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                145
+              ]
+            }
+          },
+          {
+            "n": 46,
+            "zh": "你可以去________门坐公共汽________。",
+            "hint_zh": "（东、车）",
+            "answer": "东、车",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                202
+              ]
+            }
+          },
+          {
+            "n": 47,
+            "zh": "这件事怎么解________，你________帮我想想办法吧。",
+            "hint_zh": "（决、快）",
+            "answer": "决、快",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                202
+              ]
+            }
+          },
+          {
+            "n": 48,
+            "zh": "________园里的花多________漂亮啊！",
+            "hint_zh": "（么、公）",
+            "answer": "公、么",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                202
+              ]
+            }
+          },
+          {
+            "n": 49,
+            "zh": "你别________过了，下次我帮你________备，一定会没问题的。",
+            "hint_zh": "（难、准）",
+            "answer": "难、准",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                202
+              ]
+            }
+          },
+          {
+            "n": 50,
+            "zh": "这个电________节目很有意思，我很想看，但是电视怎么________爸爸关上了？",
+            "hint_zh": "（被、视）",
+            "answer": "视、被",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                202
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "四、复习",
+        "type_zh": "复习",
+        "instruction_zh": "第1–2题：根据课文内容填空",
+        "instruction_en": "Questions 1-2: Fill in the blanks based on the texts in the textbook.",
+        "items": [
+          {
+            "n": 1,
+            "zh": "小丽找不到她的________了，可能________别人拿走了。她有点儿________。同事让她去公司________门外的大商场再买一个，但是这个月她的________里的钱已经花得差不多了。",
+            "answer": "照相机、被、难过、东、信用卡",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                202
+              ]
+            }
+          },
+          {
+            "n": 2,
+            "zh": "小明的朋友最近突然________起体育来了，因为她的男朋友很喜欢看足球________，她是________男朋友影响的。________足球，她还天天上网玩儿游戏，________差极了。",
+            "answer": "关心、比赛、被、除了、成绩",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                202
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "audio": {
+    "textbook": [
+      "hsk3-textbook-2001.mp3",
+      "hsk3-textbook-2002.mp3",
+      "hsk3-textbook-2003.mp3",
+      "hsk3-textbook-2004.mp3",
+      "hsk3-textbook-2005.mp3"
+    ],
+    "workbook": [
+      "hsk3-workbook-20-part1.mp3",
+      "hsk3-workbook-20-part2.mp3",
+      "hsk3-workbook-20-part3.mp3",
+      "hsk3-workbook-20-part4.mp3"
+    ]
+  },
+  "unclear": [
+    "Сурах бичиг PDF х.186 拼音课文 (课文2): «Kànlái zhíyǒu ài, cái néng…» — 只有-ийг «zhíyǒu» (аялгын өөрчлөлттэй) гэж хэвлэсэн; 生词 7 болон 课文3/4-т «zhǐyǒu». Номд байгаагаар нь lines.pinyin-д «zhíyǒu» үлдээсэн.",
+    "Сурах бичиг PDF х.186 拼音课文 (课文4): «dōume nán de wèntí» — 生词 14 多么 «duōme»-той зөрж байна (хэвлэлийн алдаа бололтой). Номд байгаагаар нь lines.pinyin-д «dōume» үлдээсэн.",
+    "Сурах бичиг PDF х.185/186: 课文3-ын ханз гарчиг «在饭馆», харин 拼音课文-д «Zài fànguǎnr» (-r-тэй) — зөрүү; номд байгаагаар.",
+    "Сурах бичиг PDF х.187 注释1 хүснэгт: «帽子 | 被 | 刮 | 跑 | 了。» — 宾语 баганад «刮», 动词 баганад «跑» гэж хэвлэсэн (үйлдэгч байхгүй, 刮跑 хуваагдсан — байршлын алдаа бололтой). Номд байгаагаар structure_rows-д үлдээсэн, «风» нэмээгүй.",
+    "Сурах бичиг PDF х.187 注释1: тайлбар ба хүснэгтийн «主语+被/叫/让+宾语+动词+其他成分» номд хагас өргөнтэй «+» «/»-тэй — хэвээр. Тайлбар доторх хүснэгтийн байрлалыг «［表格］/[table]» гэж тэмдэглэсэн.",
+    "Сурах бичгийн 练一练 (2 дүрэм × 3) · 练习2 选词填空 · 练习3 描述图片 · 练习4 回答问题 · 运用 — хариулт сурах бичиг, багшийн номд хэвлэгдээгүй тул answer талбаргүй. Багшийн номын 课文 асуулт-хариулт (teacher.text_questions) нь 练习4-ийн асуултаас өөр.",
+    "Багшийн ном PDF х.138–139: 热身2 (连线)-ын хариулт тусад нь хэвлэгдээгүй; 语言点(1) 导入/操练-ын 目标句 (问题被你解决了吗？/朋友被老师影响了。/汽车被妈妈开走了。/钱被弟弟花完了。/自行车被同屋骑走了。/照相机被爸爸用坏了。) нь хосыг илэрхийлнэ — teacher.steps-д номд байгаагаар.",
+    "Багшийн ном PDF х.139 语言点(2) 扩展练习 — «只要……就……»/«只有……才……» нөхөх 4 өгүүлбэр хоосон зайтай, хариулт хэвлэгдээгүй.",
+    "Багшийн ном PDF х.142 汉字辨认练习 (东/车 · 决/快 · 么/公 · 难/准 · 被/视 — 组词) хоосон зайтай, хариулт хэвлэгдээгүй. Номд хоёр баганаар (зүүн: 东车／么公／被视 · баруун: 决快／难准) байрласан.",
+    "Багшийн номын «练习册相关练习：第135页…第138页…第141页» — дасгалын номын ХЭВЛЭСЭН хуудас (PDF 139, 142, 145).",
+    "Дасгалын номын сонсгол нэг CD тэмдэгтэй (20) — аудиог hsk3-workbook-20-part1…4.mp3 болгож хэсэг тус бүрт хуваасныг section.audio-д оноосон.",
+    "Дасгалын ном 听力 第三/四部分 — номд зөвхөн сонголтууд хэвлэгдсэн; item.zh-д багшийн номын хавсралтын «问：» асуултыг оруулсан (transcript_zh-д бүтнээр).",
+    "Сурах бичгийн 拼音课文-ын гарчгийн пиньинь (Zài xiūxishì / Zài jiàoshì / Zài fànguǎnr; 课文4 гарчиггүй) болон ярилцагчийн нэрийн пиньинь (Xiǎolì, tóngshì, Xiǎomíng, péngyou, Dàwèi) схемд талбаргүй тул lines.pinyin-д зөвхөн яриаг оруулсан. 课文4-ийн пиньинь нэг догол мөр — өгүүлбэр бүрээр хуваасан.",
+    "Сурах бичиг PDF х.193 文化-ын англи гарчиг «Taboo Gifts in China» — схемд title_en байхгүй тул culture.body_en-ий эхэнд «[Taboo Gifts in China]» гэж оруулсан.",
+    "Сурах бичгийн 生词-д 专名 (proper nouns) хэвлэгдээгүй (小丽、小明、大卫 гэх мэт нэр жагсаалтад ороогүй).",
+    "HSK 3.0 нэмэлт үгс (BLCUP 课件 补充HSK3.0, слайд 5, 17, 39 — үг; слайд 21, 22, 23, 31, 41 — 语言点) hsk30-д."
+  ],
+  "verified_pages": [
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
     184,
     185,
     186,
@@ -18,1945 +1954,193 @@
     190,
     191,
     192,
-    193
-   ]
-  },
-  "warmup": [
-   {
-    "instruction_zh": "给下面的词语选择对应的图片",
-    "instruction_en": "Match the pictures with the words.",
-    "items": [
-     "①难过 nánguò",
-     "②成绩 chéngjì",
-     "③照相机 zhàoxiàngjī",
-     "④信用卡 xìnyòngkǎ",
-     "⑤碗 wǎn",
-     "⑥东 dōng"
-    ],
-    "pictures_desc_en": [
-     "A: a blue bank card (“PLASTIBANK”) with a chip",
-     "B: an arrow-shaped road sign reading “East” against a cloudy sky",
-     "C: a smiling girl holding up a paper with a mark written on it",
-     "D: a black camera with a large lens",
-     "E: a man in a white coat and tie holding his head with both hands",
-     "F: a stack of colourful bowls (red, green, blue)"
-    ]
-   },
-   {
-    "instruction_zh": "连线：把动词和宾语连起来",
-    "instruction_en": "Draw lines to match the verbs with the objects.",
-    "items": [
-     "解决 jiějué | 朋友 péngyou",
-     "影响 yǐngxiǎng | 钱 qián",
-     "开走 kāi zǒu | 问题 wèntí",
-     "花完 huā wán | 自行车 zìxíngchē",
-     "骑走 qí zǒu | 照相机 zhàoxiàngjī",
-     "用坏 yòng huài | 汽车 qìchē"
-    ]
-   }
-  ],
-  "texts": [
-   {
-    "n": 1,
-    "title_zh": "在休息室",
-    "title_en": "In the lounge",
-    "kind": "dialogue",
-    "audio": "hsk3-textbook-2001.mp3",
-    "lines": [
-     {
-      "speaker": "小丽",
-      "zh": "我的照相机被谁拿走了？怎么找不到了？",
-      "pinyin": "Wǒ de zhàoxiàngjī bèi shéi názǒu le? Zěnme zhǎo bu dào le?"
-     },
-     {
-      "speaker": "同事",
-      "zh": "你再找找。是不是没带来？",
-      "pinyin": "Nǐ zài zhǎozhao. Shì bu shì méi dàilai?"
-     },
-     {
-      "speaker": "小丽",
-      "zh": "我找了，没找到啊。",
-      "pinyin": "Wǒ zhǎo le, méi zhǎodào a."
-     },
-     {
-      "speaker": "同事",
-      "zh": "别难过，再买一个吧，公司东门外不就有一个大商场吗？",
-      "pinyin": "Bié nánguò, zài mǎi yí ge ba, gōngsī dōngmén wài bú jiù yǒu yí ge dà shāngchǎng ma?"
-     },
-     {
-      "speaker": "小丽",
-      "zh": "但是我这个月信用卡里的钱已经花得差不多了。",
-      "pinyin": "Dànshì wǒ zhège yuè xìnyòngkǎ li de qián yǐjīng huā de chà bu duō le."
-     }
-    ],
-    "new_words": [
-     {
-      "n": 1,
-      "zh": "照相机",
-      "pinyin": "zhàoxiàngjī",
-      "pos": "n.",
-      "en": "camera",
-      "text": 1
-     },
-     {
-      "n": 2,
-      "zh": "被",
-      "pinyin": "bèi",
-      "pos": "prep.",
-      "en": "used to indicate the passive voice",
-      "text": 1
-     },
-     {
-      "n": 3,
-      "zh": "难过",
-      "pinyin": "nánguò",
-      "pos": "adj.",
-      "en": "sad",
-      "text": 1
-     },
-     {
-      "n": 4,
-      "zh": "东",
-      "pinyin": "dōng",
-      "pos": "n.",
-      "en": "east",
-      "text": 1
-     },
-     {
-      "n": 5,
-      "zh": "信用卡",
-      "pinyin": "xìnyòngkǎ",
-      "pos": "n.",
-      "en": "credit card",
-      "text": 1
-     }
-    ]
-   },
-   {
-    "n": 2,
-    "title_zh": "在教室",
-    "title_en": "In the classroom",
-    "kind": "dialogue",
-    "audio": "hsk3-textbook-2002.mp3",
-    "lines": [
-     {
-      "speaker": "小明",
-      "zh": "你怎么突然关心起体育来了？",
-      "pinyin": "Nǐ zěnme tūrán guānxīn qi tǐyù lai le?"
-     },
-     {
-      "speaker": "朋友",
-      "zh": "我的男朋友喜欢看足球比赛，我被他影响的。",
-      "pinyin": "Wǒ de nánpéngyou xǐhuan kàn zúqiú bǐsài, wǒ bèi tā yǐngxiǎng de."
-     },
-     {
-      "speaker": "小明",
-      "zh": "看来只有爱，才能让人有变化。",
-      "pinyin": "Kànlái zhíyǒu ài, cái néng ràng rén yǒu biànhuà."
-     },
-     {
-      "speaker": "朋友",
-      "zh": "是啊，为了和他的爱好一样，我天天看球赛。",
-      "pinyin": "Shì a, wèile hé tā de àihào yíyàng, wǒ tiāntiān kàn qiúsài."
-     },
-     {
-      "speaker": "小明",
-      "zh": "除了足球，他还影响你什么了？",
-      "pinyin": "Chúle zúqiú, tā hái yǐngxiǎng nǐ shénme le?"
-     },
-     {
-      "speaker": "朋友",
-      "zh": "我最近天天上网玩儿游戏，我的成绩差极了。",
-      "pinyin": "Wǒ zuìjìn tiāntiān shàng wǎng wánr yóuxì, wǒ de chéngjì chà jí le."
-     }
-    ],
-    "new_words": [
-     {
-      "n": 6,
-      "zh": "关心",
-      "pinyin": "guānxīn",
-      "pos": "v.",
-      "en": "to care for, to be interested in",
-      "text": 2
-     },
-     {
-      "n": 7,
-      "zh": "只有……才……",
-      "pinyin": "zhǐyǒu……cái……",
-      "pos": "conj.",
-      "en": "only… (that/can…)",
-      "text": 2
-     },
-     {
-      "n": 8,
-      "zh": "成绩",
-      "pinyin": "chéngjì",
-      "pos": "n.",
-      "en": "grade, performance, achievement",
-      "text": 2
-     }
-    ]
-   },
-   {
-    "n": 3,
-    "title_zh": "在饭馆",
-    "title_en": "In the restaurant",
-    "kind": "dialogue",
-    "audio": "hsk3-textbook-2003.mp3",
-    "lines": [
-     {
-      "speaker": "朋友",
-      "zh": "那个拿着碗吃饭的人是你哥哥吗？他和你长得真像。",
-      "pinyin": "Nàge názhe wǎn chī fàn de rén shì nǐ gēge ma? Tā hé nǐ zhǎng de zhēn xiàng."
-     },
-     {
-      "speaker": "大卫",
-      "zh": "我们经常被别人认错。",
-      "pinyin": "Wǒmen jīngcháng bèi biérén rèncuò."
-     },
-     {
-      "speaker": "朋友",
-      "zh": "只有你们的爸爸妈妈才能分出来哪个是哥哥，哪个是弟弟吧。",
-      "pinyin": "Zhǐyǒu nǐmen de bàba māma cái néng fēn chulai nǎge shì gēge, nǎge shì dìdi ba."
-     },
-     {
-      "speaker": "大卫",
-      "zh": "除了父母以外，还有我们自己也能啊。",
-      "pinyin": "Chúle fùmǔ yǐwài, hái yǒu wǒmen zìjǐ yě néng a."
-     },
-     {
-      "speaker": "朋友",
-      "zh": "你们两个除了长得像，还有什么相同的地方？",
-      "pinyin": "Nǐmen liǎng ge chúle zhǎng de xiàng, hái yǒu shénme xiāngtóng de dìfang?"
-     },
-     {
-      "speaker": "大卫",
-      "zh": "我们住在同一个楼、同一个房间……",
-      "pinyin": "Wǒmen zhù zài tóng yí ge lóu, tóng yí ge fángjiān……"
-     }
-    ],
-    "new_words": [
-     {
-      "n": 9,
-      "zh": "碗",
-      "pinyin": "wǎn",
-      "pos": "n.",
-      "en": "bowl",
-      "text": 3
-     },
-     {
-      "n": 10,
-      "zh": "分",
-      "pinyin": "fēn",
-      "pos": "v.",
-      "en": "to distinguish",
-      "text": 3
-     }
-    ]
-   },
-   {
-    "n": 4,
-    "kind": "narrative",
-    "audio": "hsk3-textbook-2004.mp3",
-    "lines": [
-     {
-      "zh": "年轻人遇到难题，常常很着急，不知道怎么办。",
-      "pinyin": "Niánqīng rén yùdào nántí, chángcháng hěn zháo jí, bù zhīdào zěnme bàn."
-     },
-     {
-      "zh": "其实，不同的问题有不同的解决办法。",
-      "pinyin": "Qíshí, bù tóng de wèntí yǒu bù tóng de jiějué bànfǎ."
-     },
-     {
-      "zh": "有些问题看上去很难，但是做起来非常简单，所以得试着做做。",
-      "pinyin": "Yǒuxiē wèntí kàn shangqu hěn nán, dànshì zuò qilai fēicháng jiǎndān, suǒyǐ děi shìzhe zuòzuo."
-     },
-     {
-      "zh": "有些问题看上去虽然简单，但是解决起来难极了。",
-      "pinyin": "Yǒuxiē wèntí kàn shangqu suīrán jiǎndān, dànshì jiějué qilai nán jí le."
-     },
-     {
-      "zh": "所以只有真正做事情的时候，才能了解有多难。",
-      "pinyin": "Suǒyǐ zhǐyǒu zhēnzhèng zuò shìqing de shíhou, cái néng liǎojiě yǒu duō nán."
-     },
-     {
-      "zh": "不过，我们一定要相信：多么难的问题，都会被解决的。",
-      "pinyin": "Búguò, wǒmen yídìng yào xiāngxìn: dōume nán de wèntí, dōu huì bèi jiějué de."
-     }
-    ],
-    "new_words": [
-     {
-      "n": 11,
-      "zh": "解决",
-      "pinyin": "jiějué",
-      "pos": "v.",
-      "en": "to solve",
-      "text": 4
-     },
-     {
-      "n": 12,
-      "zh": "试",
-      "pinyin": "shì",
-      "pos": "v.",
-      "en": "to try",
-      "text": 4
-     },
-     {
-      "n": 13,
-      "zh": "真正",
-      "pinyin": "zhēnzhèng",
-      "pos": "adv.",
-      "en": "really, truly",
-      "text": 4,
-      "star": true
-     },
-     {
-      "n": 14,
-      "zh": "多么",
-      "pinyin": "duōme",
-      "pos": "adv.",
-      "en": "very, to a great extent",
-      "text": 4
-     }
-    ]
-   }
-  ],
-  "grammar": [
-   {
-    "n": 1,
-    "title_zh": "“被”字句",
-    "title_en": "The Bei-Sentence",
-    "explanation_zh": "汉语中，可以用带“被”的句子表达被动意义，其结构形式为“主语+被/叫/让+宾语+动词+其他成分”。其中主语一般是动作的接受者，宾语一般是动作的发出者。“被”字后边的宾语可以省略，“叫”“让”后边必须有宾语。例如：［表格］\n注意，否定副词和能愿动词等应该放在“被”的前边，例如：（1）–（4）",
-    "explanation_en": "In Chinese, a sentence with “被” can express the passive voice, its structure being “S + 被/叫/让 + O + V + Other Elements”, in which the subject is the patient of the action and the object the agent. The object following “被” can be left out, while the object after “叫” or “让” cannot. For example: [table]\nNote that negative adverbs and modal verbs should precede “被” if there are any. For example: (1)–(4)",
-    "structure_rows": [
-     "主语 | 被/叫/让 | 宾语 | 动词 | 其他",
-     "我 | 被 | 男朋友 | 影响 | 了。",
-     "帽子 | 被 | 刮 | 跑 | 了。",
-     "蛋糕 | 让 | 弟弟 | 吃完 | 了。",
-     "我的照相机 | 被 | 谁 | 拿走 | 了？"
-    ],
-    "examples": [
-     {
-      "n": 1,
-      "zh": "问题还没有被解决呢。"
-     },
-     {
-      "n": 2,
-      "zh": "病人还没被送到医院呢。"
-     },
-     {
-      "n": 3,
-      "zh": "下个月她会被妈妈送到美国。"
-     },
-     {
-      "n": 4,
-      "zh": "我们经常被别人认错。"
-     }
-    ],
-    "practice_instruction_zh": "练一练　用提示词完成对话 Complete the dialogues with the words given.",
-    "practice": [
-     {
-      "n": 1,
-      "zh": "A：你的自行车呢？ B：________。",
-      "hint_zh": "（借走）"
-     },
-     {
-      "n": 2,
-      "zh": "A：你怎么没带照相机？ B：________。",
-      "hint_zh": "（用坏）"
-     },
-     {
-      "n": 3,
-      "zh": "A：我刚买的咖啡呢？ B：________。",
-      "hint_zh": "（喝完）"
-     }
-    ]
-   },
-   {
-    "n": 2,
-    "title_zh": "只有……才……",
-    "title_en": "The Structure “只有……才……”",
-    "explanation_zh": "“只有……才……”连接的是一个条件复句，“只有”后边是唯一的条件，“才”后边是在这个条件下才会出现的结果。例如：",
-    "explanation_en": "“只有……才……” is used to connect the two clauses of a conditional complex sentence, with “只有” introducing the one and only condition and “才” followed by the result which will be reached only if the said condition is met. For example:",
-    "structure_rows": [
-     "只有……，才……"
-    ],
-    "examples": [
-     {
-      "n": 1,
-      "zh": "只有写完作业，才能看电视。"
-     },
-     {
-      "n": 2,
-      "zh": "只有妈妈做的饭，她才爱吃。"
-     },
-     {
-      "n": 3,
-      "zh": "只有爸爸、妈妈才能分出来。"
-     },
-     {
-      "n": 4,
-      "zh": "看来只有爱，才能让人有变化。"
-     }
-    ],
-    "practice_instruction_zh": "练一练　完成对话 Complete the dialogues.",
-    "practice": [
-     {
-      "n": 1,
-      "zh": "A：你怎么学得这么认真？ B：妈妈说，只有学得好，才________。"
-     },
-     {
-      "n": 2,
-      "zh": "A：最近你怎么吃得越来越少？ B：男朋友说，只有________，穿衣服才漂亮。"
-     },
-     {
-      "n": 3,
-      "zh": "A：你怎么又出去锻炼啊？ B：爸爸说，只有常常锻炼，身体________。"
-     }
-    ]
-   }
-  ],
-  "exercises": [
-   {
-    "n": 1,
-    "type_zh": "朗读",
-    "instruction_zh": "朗读下列短语和句子",
-    "instruction_en": "Read the following phrases and sentences aloud.",
-    "audio": "hsk3-textbook-2005.mp3",
-    "items": [
-     {
-      "n": 1,
-      "zh": "东：东边／东门／中国在东边／公司东门外不就有一个大商场吗？"
-     },
-     {
-      "n": 2,
-      "zh": "关心：不关心／关心学生／他一直都很关心我／你怎么突然关心起体育来了？"
-     },
-     {
-      "n": 3,
-      "zh": "成绩：数学成绩／考试成绩／你是怎么提高历史成绩的／我的成绩差极了。"
-     },
-     {
-      "n": 4,
-      "zh": "解决：容易解决／解决问题／解决的办法／多么难的问题，都会被解决的。"
-     },
-     {
-      "n": 5,
-      "zh": "试：试一试／试着说一说／试试看／有些问题得试着做做。"
-     }
-    ]
-   },
-   {
-    "n": 2,
-    "type_zh": "选词填空",
-    "instruction_zh": "选择恰当的词语填空",
-    "instruction_en": "Choose the proper words to fill in the blanks.",
-    "word_bank": [
-     [
-      "成绩",
-      "多么",
-      "照相机",
-      "信用卡",
-      "难过"
-     ],
-     [
-      "试",
-      "只有",
-      "碗",
-      "东",
-      "关心"
-     ]
-    ],
-    "items": [
-     {
-      "n": 1,
-      "zh": "你每个月花多少钱？你有几张________？"
-     },
-     {
-      "n": 2,
-      "zh": "这个地方真漂亮，你带________了吗？"
-     },
-     {
-      "n": 3,
-      "zh": "别________了，手机坏了就再买一个吧。"
-     },
-     {
-      "n": 4,
-      "zh": "我什么时候能知道这次考试的________？"
-     },
-     {
-      "n": 5,
-      "zh": "今天的天气________好啊！"
-     },
-     {
-      "n": 6,
-      "zh": "A：你想要什么结婚礼物？ B：你送给我几个漂亮的________吧。"
-     },
-     {
-      "n": 7,
-      "zh": "A：他怎么又看篮球比赛了？ B：________看球赛，才能让他变得高兴。"
-     },
-     {
-      "n": 8,
-      "zh": "A：我的电脑又坏了。 B：我________一下，看看有什么问题。"
-     },
-     {
-      "n": 9,
-      "zh": "A：你觉得周经理怎么样？ B：非常好，很________我们。"
-     },
-     {
-      "n": 10,
-      "zh": "A：请问，去中国银行怎么走？ B：一直往________走。"
-     }
-    ]
-   },
-   {
-    "n": 3,
-    "type_zh": "描述图片",
-    "instruction_zh": "用本课新学的语言点和词语描述图片",
-    "instruction_en": "Describe the pictures using the newly-learned language points and words.",
-    "items": [
-     {
-      "n": 1,
-      "zh": "A：把你的手机借给我，我玩儿会儿游戏。 B：我的手机________。 A：考试以前不能玩儿了吧？ B：是啊。她说只有考得好，________。",
-      "picture_desc_en": "A woman in a green checked top taking a mobile phone from a young girl sitting at a school desk in a classroom."
-     },
-     {
-      "n": 2,
-      "zh": "A：妈妈，我那件白色的衣服呢？ B：刚被我________。你今天要穿吗？ A：是啊，我要去参加晚会，只有那件衣服才让我________。 B：你穿那件红色的也很好看。",
-      "picture_desc_en": "A woman in an apron hanging laundry on a clothesline outdoors on a lawn, with a laundry basket beside her."
-     },
-     {
-      "n": 3,
-      "zh": "A：你的信用卡呢？ B：________拿走了。 A：孩子拿走你的信用卡，你不担心啊？ B：信用卡只有大卫拿着，我才________。",
-      "picture_desc_en": "A smiling young man in a black sweater and tie holding up a bank card."
-     },
-     {
-      "n": 4,
-      "zh": "A：快到春节了，你不想出去旅游吗？ B：想啊，但是只有买到飞机票，________。 A：现在飞机票很贵吧？ B：对。便宜的飞机票都被大家________。",
-      "picture_desc_en": "The words “BOOK ONLINE” with a computer mouse connected by its cable."
-     }
-    ]
-   },
-   {
-    "n": 4,
-    "type_zh": "回答问题",
-    "instruction_zh": "根据课文回答问题",
-    "instruction_en": "Answer the questions according to the texts.",
-    "items": [
-     {
-      "n": 1,
-      "zh": "小丽找不到什么了？"
-     },
-     {
-      "n": 2,
-      "zh": "小丽现在能买一个新的吗？为什么？"
-     },
-     {
-      "n": 3,
-      "zh": "小明朋友的成绩为什么很差？"
-     },
-     {
-      "n": 4,
-      "zh": "大卫和他哥哥有什么相同的地方？"
-     },
-     {
-      "n": 5,
-      "zh": "年轻人遇到难题时应该怎么办？"
-     },
-     {
-      "n": 6,
-      "zh": "我们在解决问题时要相信什么？"
-     }
-    ]
-   }
-  ],
-  "characters": {
-   "knowledge_title_zh": "旧字新词",
-   "knowledge_zh": "读读下面的词语，想想组成的新词是什么意思。",
-   "knowledge_en": "Read the following words and guess the meanings of the newly-formed ones.",
-   "word_game": [
-    {
-     "parts": [
-      "碗",
-      "筷子"
-     ],
-     "result": "碗筷"
-    },
-    {
-     "parts": [
-      "房间",
-      "信用卡"
-     ],
-     "result": "房卡"
-    },
-    {
-     "parts": [
-      "东",
-      "北方"
-     ],
-     "result": "东北"
-    }
-   ],
-   "confusable_pairs": [
-    [
-     "东",
-     "车"
-    ],
-    [
-     "决",
-     "快"
-    ],
-    [
-     "么",
-     "公"
-    ],
-    [
-     "难",
-     "准"
-    ],
-    [
-     "被",
-     "视"
-    ]
-   ]
-  },
-  "application": [
-   {
-    "title_zh": "双人活动",
-    "instruction_zh": "两人一组，讨论下面的比赛，看看班里应该让谁参加。",
-    "instruction_en": "Work in pairs. Talk about the following competitions and discuss who in your class should take part in each of them.",
-    "example_zh": [
-     "表格：| 比赛 | 人 |",
-     "| 1. 跑步比赛 | 只有马可参加，红队才能拿第一名。 |",
-     "| 2. 游泳比赛 | |",
-     "| 3. 汉字比赛 | |",
-     "| 4. 唱歌比赛 | |",
-     "| 5. 跳舞比赛 | |",
-     "| 6. 爬山比赛 | |"
-    ]
-   },
-   {
-    "title_zh": "小组活动",
-    "instruction_zh": "3~4人一组，各自回忆自己最倒霉的一天，一个人说时其他人记录，最后选出每组最“倒霉”的人。注意用上“被”字句。",
-    "instruction_en": "Work in groups of 3-4. Take turns to describe the unluckiest day in your life. When one talks, the others take notes. Find the unluckiest person in your group. Please use bei-sentences.",
-    "example_zh": [
-     "例如：有一天，我去超市买了很多东西，到了家门口，才发现东西被我忘在超市了。",
-     "表格：| | 谁 | 倒霉 (dǎoméi, unlucky) 的事 |",
-     "| 1 | 小明 | 东西被他忘在超市了。 |",
-     "| 2 | | |",
-     "| 3 | | |",
-     "| 4 | | |"
-    ]
-   }
-  ],
-  "saying": {
-   "zh": "车到山前必有路",
-   "pinyin": "Chē dào shān qián bì yǒu lù",
-   "en": "The cart will find its way round the hill when it gets there",
-   "explanation_zh": "“车到山前必有路”，这里“必”是“一定”的意思。这句话的意思是，车开到了山下，虽然山拦住了车的去路，但是一定会有办法找到出路的。这句话常用来比喻虽然遇到了问题和困难，但是总会有解决困难的办法。",
-   "explanation_en": "In the saying “车到山前必有路”, “必” means “surely”. The saying means that when a vehicle arrives at the foot of a mountain, it doesn’t matter if its way is blocked by the mountain because there is always a way out. It is often used metaphorically to tell us not to fear the trouble or difficulty we face as there is always a solution to it."
-  },
-  "culture": {
-   "title_zh": "中国人什么礼物不能送",
-   "body_zh": "去别人家做客，要带点儿礼物，但不是什么礼物都能送。在中国，有一些东西不能当作礼物送给别人，比如：伞、鞋、钟表等等。伞的发音跟“散”差不多，送伞就表示分离的意思。“鞋”与“邪”的发音相同，有倒霉的意思。“送钟”与“送终”发音相同，有将去世之人送走的意思。在你们国家，送礼物有什么禁忌吗？",
-   "body_en": "[Taboo Gifts in China] When visiting someone’s home, we usually bring a gift. Remember not all gifts are appropriate. In China, some articles cannot be given as gifts, such as umbrellas, shoes, and clocks. The pronunciation of the Chinese character for “umbrella” is similar to that of the character for “separation”, so giving someone an umbrella means to separate from the person. The character for “shoe” sounds the same as that for “evil”, which bodes ill. The Chinese word for “giving a clock” sounds exactly the same as that for “attending upon a dying person”. What taboos do you have in your country regarding giving gifts?"
-  }
- },
- "teacher": {
-  "ref": {
-   "book": "teacher",
-   "pages": [
-    137,
-    138,
-    139,
-    140,
-    141,
-    142
-   ]
-  },
-  "objectives_zh": [
-   "重点词语：学生能够熟练掌握：“难过、关心、成绩、解决、试、多么”的词义和用法",
-   "语言点：学生能够了解并掌握：（1）“被”字句表示被动意义（2）“只有……才……”表示条件和结果",
-   "汉字：学生能够：根据已学生词猜测出3个旧字新词“碗筷、房卡、东北”的意思",
-   "功能：学生能够：（1）用“被”字句表示被动（2）用“只有……才……”表示条件和结果"
-  ],
-  "steps": [
-   {
-    "title_zh": "复习旧课",
-    "body_zh": "1 教师展示第19课的热身图片，请学生根据图片说出脸上器官的名字。\n2 教师根据第19课的内容进行提问。\n（1）你喜欢长头发还是短头发？\n（2）昨天的汉字，你都能写出来吗？你能写出多少个来？\n（3）别人不高兴的时候，你能看出来吗？你是怎么看出来的？\n（4）做什么会让身体很健康？你经常这么做吗？\n（5）你做什么会让妈妈不高兴？如果妈妈不高兴了，你会做什么？"
-   },
-   {
-    "title_zh": "学习新课 1 热身",
-    "body_zh": "热身1：学生两人一组，合作完成热身1；教师出示热身1的图片，学生根据图片说出词语，核对答案；最后全体学生齐读热身环节所有词语，要求语音标准，声调准确。\n答案：①E　②C　③D　④A　⑤F　⑥B\n热身2：可留至语言点（1）“被”字句导入时使用。"
-   },
-   {
-    "title_zh": "2 生词",
-    "body_zh": "（1）生词快速认读及正音\n照相机、被、难过、东、信用卡、关心、只有……才……、成绩、碗、分、解决、试、真正、多么\n· 教师先带领学生快速认读一遍生词；\n· 取消拼音，带领学生再次认读；\n· 请单个学生独自认读2-3个生词；\n· 最后全班一起快速认读所有的生词。\n（2）生词讲解方式\n· 直观法（如图片、照片、实物等）展示：照相机、信用卡、碗\n· 对比法展示：东—南—西—北\n（3）重点生词扩展及常用搭配\n难过—很难过—不难过—你别难过，我们还有机会。\n关心—很关心—不关心—关心体育—我的老师很关心我。\n成绩—成绩很好—数学成绩—这次考试，你的成绩怎么样？\n解决—解决了—没解决—解决问题—解决的办法\n　—请你帮我解决一下这个问题。\n试—试一试—试一下—试着说—你试着做一下。\n多么—多么美—多么难—你看她工作得多么认真啊！\n练习册相关练习：第135页／一／第一部分；第138页／二／第二部分"
-   },
-   {
-    "title_zh": "3 语言点（1）“被”字句",
-    "body_zh": "① 语言点解析\n“被”字句表达被动意义，其结构形式为“主语+被/叫/让+宾语+动词+其他成分”。其中主语一般是动作的接受者，宾语一般是动作的发出者。\n［框］主语＋被／叫／让＋宾语＋动词＋其他成分\n② 语言点导入\n教师可利用本课热身2的连线导入语言点。\n教师带领学生认读动词和宾语，并请学生做连线练习。\n教师核对答案，并用动宾短语造句子，请学生回答。\n教师示范：\n教师：你的问题解决了吗？\n学生：我的问题解决了。\n教师引出目标句，并请学生重复。例如：问题被你解决了吗？\n③ 语言点操练\n教师可根据热身2操练语言点。\n学生向教师提问，教师回答后，请学生说出目标句。\n目标句：朋友被老师影响了。\n　　　　汽车被妈妈开走了。\n　　　　钱被弟弟花完了。\n　　　　自行车被同屋骑走了。\n　　　　照相机被爸爸用坏了。\n④ 语言点扩展练习\n教师利用热身2让学生互相询问并回答。\n注意：“被”字后边的宾语可以省略，“叫”“让”后边必须有宾语。"
-   },
-   {
-    "title_zh": "3 语言点（2）只有……才……",
-    "body_zh": "① 语言点解析\n“只有……才……”连接的是一个条件复句，“只有”后边是唯一的条件，“才”后边是在这个条件下才会出现的结果。\n② 语言点导入\n教师给出情景，引导学生理解该语法点。\n教师：在美国，可以去长城玩儿吗？\n学生：美国没有长城，只有在中国，才能去长城玩儿。\n③ 语言点操练\n教师给出情景，请学生说句子。\n例如：写完作业，看电影（只有写完作业，才能看电影。）\n情景：爸爸同意，去中国学习——只有爸爸同意，才能去中国学习。\n　　　送她礼物，她很高兴——只有送她礼物，她才会很高兴。\n　　　吃药，发烧能好——只有吃药，发烧才能好。\n　　　复习得好，考试成绩很好——只有复习得好，考试才能考得好。\n④ 语言点扩展练习\n教师给出练习，请学生用“只要……就……”或“只有……才……”填空。\n________妈妈的话，他________听。\n________有时间，我________帮妈妈做饭。\n别人去都不行，________大山去比赛，他们班________能拿第一名。\n________你喜欢这本书，________可以拿回家看看。\n注意：“只要……就……”中出现的条件是使结果出现的必要条件，“只有……才……”中出现的条件是使结果出现的唯一条件。"
-   },
-   {
-    "title_zh": "4 课文 课文1",
-    "body_zh": "（1）让学生听两遍录音并回答下列问题：\n女的的照相机呢？——她不知道被谁拿走了，找不到了。\n男的建议女的怎么办？——男的建议女的再找找，找不到就再买一个。\n女的这个月能买照相机吗？——不能，这个月信用卡里的钱已经被她花得差不多了。\n（2）教师领读课文两遍，让学生分角色朗读课文，注意说话人的语气。\n（3）模仿练习\n学生两人一组，根据提示词模仿课文内容进行对话练习。\nA：我的……？怎么……？\nB：你再……。是不是……？\nA：我找了，……。\nB：别……，再……，……吗？\nA：但是……。"
-   },
-   {
-    "title_zh": "4 课文 课文2",
-    "body_zh": "（1）让学生听两遍录音并回答下列问题：\n女的为什么突然关心起体育来了？——因为她的男朋友喜欢看足球比赛。\n男的觉得怎么才能让人有变化？——只有爱，才能让人有变化。\n女的还有什么变化？——她最近天天上网玩游戏，成绩差极了。\n（2）教师领读课文两遍，让学生分角色朗读课文。\n（3）模仿练习\n学生两人一组，根据提示词模仿课文内容进行对话练习。\nA：你怎么突然……了？\nB：我……，我被……。\nA：看来……，……。\nB：是啊，为了……，我……。\nA：除了……，……影响……？\nB：我最近……，……。"
-   },
-   {
-    "title_zh": "4 课文 课文3",
-    "body_zh": "（1）让学生听两遍录音并回答下列问题：\n那个拿着碗吃饭的人是谁？——他是男的的哥哥。\n谁能把他们分出来？——他们的爸爸妈妈和他们自己。\n他们两个还有什么相同的地方？——他们住在同一个楼、同一个房间……\n（2）教师领读课文两遍，让学生分角色朗读课文，注意说话人的语气。\n（3）教师给提示词，带领学生复述课文。\n提示词：碗、长、像、认错、分出来、除了、相同、楼、房间"
-   },
-   {
-    "title_zh": "4 课文 课文4",
-    "body_zh": "（1）快速阅读，并回答：怎么才能了解问题有多难？\n（2）教师领读课文两遍，并回答下列问题：\n年轻人遇到难题，常常会怎么样？——常常很着急，不知道怎么办。\n我们一定要相信什么？——多么难的问题，都会被解决的。\n（3）教师给提示词，带领学生复述课文。\n提示词：遇到、解决、办法、看上去、做起来、试着、真正、了解、相信\n（4）教师请学生根据课文，说说自己解决难题的经历。\n练习册相关练习：第141页／四"
-   },
-   {
-    "title_zh": "5 汉字",
-    "body_zh": "旧字新词：\n① 教师领读以前学过的词语和新词，并让学生猜猜新词的意思。\n· 领读：碗、筷子、碗筷\n问学生：“碗筷”是什么意思？——碗和筷子。\n· 领读：房间、信用卡、房卡\n问学生：“房卡”是什么意思？——给房间开门的卡。\n扩展提问：还有什么“卡”？——银行卡、学生卡、饭卡。（根据实际情况选用）\n· 领读：东、北方、东北\n问学生：“东北”是什么意思？——东北方向的意思。\n扩展提问：还有哪些方向？——西北、东南、西南。（根据实际情况选用）\n② 教师领读新词扩展，通过情景，理解新词的意思和用法：\n碗筷：拿碗筷／放好碗筷／吃饭以后，我去洗碗筷。\n房卡：我的房卡／宾馆的房卡／你看见我的房卡了吗？\n东北：中国的东北／东北菜／我想去东北旅游。\n汉字辨认练习：\n辨认下列汉字并组词。\n东：________、________　车：________、________\n么：________、________　公：________、________\n被：________、________　视：________、________\n决：________、________　快：________、________\n难：________、________　准：________、________\n练习册相关练习：第141页／三／第三部分"
-   },
-   {
-    "title_zh": "6 补充课堂活动——我什么都没有",
-    "body_zh": "4-5个学生一组，向其中一个学生借东西，该学生用“被”字句回应，表明自己没有这个东西，例如“我的自行车被弟弟骑走了”。"
-   },
-   {
-    "title_zh": "7 俗语",
-    "body_zh": "教师引导学生理解俗语的含义，注意这里的“路”是办法的意思，这句俗语鼓励我们多去想办法，就一定能解决问题。"
-   },
-   {
-    "title_zh": "8 本课小结",
-    "body_zh": "· 语言点：用“被”字句表达被动\n　　　　　用“只有……才……”表达唯一条件和结果\n· 汉　字：旧字新词：碗筷、房卡、东北"
-   },
-   {
-    "title_zh": "文化：中国人什么礼物不能送",
-    "body_zh": "1 文化点解析\n① 在中国，送礼物的禁忌一般都跟谐音有关系，“伞”跟分离的“散”谐音，“鞋”跟坏运气的“邪”谐音，“送钟”跟送去世之人的“送终”谐音，这些都是人们避讳的。\n② 谐音词中也有中国人喜欢的，例如中国人过年的时候要吃鸡和鱼，这是因为“鸡”跟表示吉祥的“吉”谐音，“鱼”跟表示年年有余的“余”谐音。\n2 文化点参考处理方式\n· 教师介绍送礼物的禁忌及原因。\n· 教师解释谐音现象，并举例说明中国人喜欢的谐音词。\n· 教师请学生说说自己国家送礼物有什么禁忌。"
-   }
-  ],
-  "notes_zh": [
-   "注意：“被”字后边的宾语可以省略，“叫”“让”后边必须有宾语。（语言点1）",
-   "注意：“只要……就……”中出现的条件是使结果出现的必要条件，“只有……才……”中出现的条件是使结果出现的唯一条件。（语言点2）",
-   "对比法展示：东—南—西—北（生词）",
-   "注意这里的“路”是办法的意思，这句俗语鼓励我们多去想办法，就一定能解决问题。（俗语）"
-  ],
-  "warmup_answers_zh": [
-   "热身1 答案：①E　②C　③D　④A　⑤F　⑥B",
-   "热身2：可留至语言点（1）“被”字句导入时使用。"
-  ],
-  "text_questions": [
-   {
-    "text": 1,
-    "q_zh": "女的的照相机呢？",
-    "a_zh": "她不知道被谁拿走了，找不到了。"
-   },
-   {
-    "text": 1,
-    "q_zh": "男的建议女的怎么办？",
-    "a_zh": "男的建议女的再找找，找不到就再买一个。"
-   },
-   {
-    "text": 1,
-    "q_zh": "女的这个月能买照相机吗？",
-    "a_zh": "不能，这个月信用卡里的钱已经被她花得差不多了。"
-   },
-   {
-    "text": 2,
-    "q_zh": "女的为什么突然关心起体育来了？",
-    "a_zh": "因为她的男朋友喜欢看足球比赛。"
-   },
-   {
-    "text": 2,
-    "q_zh": "男的觉得怎么才能让人有变化？",
-    "a_zh": "只有爱，才能让人有变化。"
-   },
-   {
-    "text": 2,
-    "q_zh": "女的还有什么变化？",
-    "a_zh": "她最近天天上网玩游戏，成绩差极了。"
-   },
-   {
-    "text": 3,
-    "q_zh": "那个拿着碗吃饭的人是谁？",
-    "a_zh": "他是男的的哥哥。"
-   },
-   {
-    "text": 3,
-    "q_zh": "谁能把他们分出来？",
-    "a_zh": "他们的爸爸妈妈和他们自己。"
-   },
-   {
-    "text": 3,
-    "q_zh": "他们两个还有什么相同的地方？",
-    "a_zh": "他们住在同一个楼、同一个房间……"
-   },
-   {
-    "text": 4,
-    "q_zh": "（快速阅读）怎么才能了解问题有多难？"
-   },
-   {
-    "text": 4,
-    "q_zh": "年轻人遇到难题，常常会怎么样？",
-    "a_zh": "常常很着急，不知道怎么办。"
-   },
-   {
-    "text": 4,
-    "q_zh": "我们一定要相信什么？",
-    "a_zh": "多么难的问题，都会被解决的。"
-   }
-  ],
-  "summary_zh": "语言点：用“被”字句表达被动；用“只有……才……”表达唯一条件和结果。汉字：旧字新词：碗筷、房卡、东北。"
- },
- "workbook": {
-  "ref": {
-   "book": "workbook",
-   "pages": [
-    139,
-    140,
-    141,
-    142,
-    143,
-    144,
-    145
-   ]
-  },
-  "answers_ref": {
-   "book": "teacher",
-   "pages": [
+    193,
     200,
     201,
     202
-   ]
-  },
-  "sections": [
-   {
-    "n": "一、听力 第一部分",
-    "type_zh": "听力 第一部分",
-    "instruction_zh": "第1–5题：听对话，选择与对话内容一致的图片",
-    "instruction_en": "Questions 1-5: Choose the right picture for each dialogue you hear.",
-    "audio": "hsk3-workbook-20-part1.mp3",
-    "items": [
-     {
-      "n": "例",
-      "zh": "男：喂，请问张经理在吗？ 女：他正在开会，您半个小时以后再打，好吗？",
-      "transcript_zh": "男：喂，请问张经理在吗？ 女：他正在开会，您半个小时以后再打，好吗？",
-      "options": {
-       "A": "[picture] a boy and a girl each biting into a piece of food held in their hands",
-       "B": "[picture] a bowl full of cooked white rice",
-       "C": "[picture] gloved hands holding a plate over a kitchen sink, with a dish rack behind",
-       "D": "[picture] a smiling woman in a uniform talking on a telephone",
-       "E": "[picture] two people on a grassy hill holding an umbrella blown inside out by the wind",
-       "F": "[picture] an elderly woman with glasses taking a photo with a small camera"
-      },
-      "answer": "D",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        139
-       ]
-      }
-     },
-     {
-      "n": 1,
-      "zh": "",
-      "options": {
-       "A": "[picture] a boy and a girl each biting into a piece of food held in their hands",
-       "B": "[picture] a bowl full of cooked white rice",
-       "C": "[picture] gloved hands holding a plate over a kitchen sink, with a dish rack behind",
-       "D": "[picture] a smiling woman in a uniform talking on a telephone",
-       "E": "[picture] two people on a grassy hill holding an umbrella blown inside out by the wind",
-       "F": "[picture] an elderly woman with glasses taking a photo with a small camera"
-      },
-      "transcript_zh": "女：奶奶喜欢那个新买的照相机吗？ 男：喜欢，她说很好用，她很满意。",
-      "answer": "F",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        202
-       ]
-      }
-     },
-     {
-      "n": 2,
-      "zh": "",
-      "options": {
-       "A": "[picture] a boy and a girl each biting into a piece of food held in their hands",
-       "B": "[picture] a bowl full of cooked white rice",
-       "C": "[picture] gloved hands holding a plate over a kitchen sink, with a dish rack behind",
-       "D": "[picture] a smiling woman in a uniform talking on a telephone",
-       "E": "[picture] two people on a grassy hill holding an umbrella blown inside out by the wind",
-       "F": "[picture] an elderly woman with glasses taking a photo with a small camera"
-      },
-      "transcript_zh": "男：我来洗碗筷，你去看电视吧。 女：不用，你把桌子上的鱼放冰箱里就可以了。",
-      "answer": "C",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        202
-       ]
-      }
-     },
-     {
-      "n": 3,
-      "zh": "",
-      "options": {
-       "A": "[picture] a boy and a girl each biting into a piece of food held in their hands",
-       "B": "[picture] a bowl full of cooked white rice",
-       "C": "[picture] gloved hands holding a plate over a kitchen sink, with a dish rack behind",
-       "D": "[picture] a smiling woman in a uniform talking on a telephone",
-       "E": "[picture] two people on a grassy hill holding an umbrella blown inside out by the wind",
-       "F": "[picture] an elderly woman with glasses taking a photo with a small camera"
-      },
-      "transcript_zh": "女：北方人是不是都像你一样这么喜欢吃面？ 男：不一定，东北人就更爱吃米饭。",
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        202
-       ]
-      }
-     },
-     {
-      "n": 4,
-      "zh": "",
-      "options": {
-       "A": "[picture] a boy and a girl each biting into a piece of food held in their hands",
-       "B": "[picture] a bowl full of cooked white rice",
-       "C": "[picture] gloved hands holding a plate over a kitchen sink, with a dish rack behind",
-       "D": "[picture] a smiling woman in a uniform talking on a telephone",
-       "E": "[picture] two people on a grassy hill holding an umbrella blown inside out by the wind",
-       "F": "[picture] an elderly woman with glasses taking a photo with a small camera"
-      },
-      "transcript_zh": "女：今天风太大了，伞都要被刮走了。 男：真希望明天天气能好点儿。",
-      "answer": "E",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        202
-       ]
-      }
-     },
-     {
-      "n": 5,
-      "zh": "",
-      "options": {
-       "A": "[picture] a boy and a girl each biting into a piece of food held in their hands",
-       "B": "[picture] a bowl full of cooked white rice",
-       "C": "[picture] gloved hands holding a plate over a kitchen sink, with a dish rack behind",
-       "D": "[picture] a smiling woman in a uniform talking on a telephone",
-       "E": "[picture] two people on a grassy hill holding an umbrella blown inside out by the wind",
-       "F": "[picture] an elderly woman with glasses taking a photo with a small camera"
-      },
-      "transcript_zh": "女：你怎么这么难过啊？怎么了？ 男：你昨天给我买的蛋糕被弟弟和妹妹吃了。",
-      "answer": "A",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        202
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "一、听力 第二部分",
-    "type_zh": "听力 第二部分",
-    "instruction_zh": "第6–10题：听句子，判断对错",
-    "instruction_en": "Questions 6-10: Decide whether the statements are true or false based on the sentences you hear.",
-    "audio": "hsk3-workbook-20-part2.mp3",
-    "items": [
-     {
-      "n": "例1",
-      "zh": "他希望自己很健康。",
-      "transcript_zh": "为了让自己更健康，他每天都花一个小时去锻炼身体。",
-      "answer": "√",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        140
-       ]
-      }
-     },
-     {
-      "n": "例2",
-      "zh": "那块儿手表不是他的。",
-      "transcript_zh": "今天我想早点儿回家。看了看手表，才5点。过了一会儿再看表，还是5点，我这才发现我的手表不走了。",
-      "answer": "×",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        140
-       ]
-      }
-     },
-     {
-      "n": 6,
-      "zh": "他没带照相机。",
-      "transcript_zh": "春天来了，公园里的花儿都开了，多么漂亮啊，如果带上照相机就好了。",
-      "answer": "√",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        202
-       ]
-      }
-     },
-     {
-      "n": 7,
-      "zh": "那家店不能用信用卡。",
-      "transcript_zh": "今天中午在商店买东西时，服务员说我这张信用卡不能用了。我打算下午去银行问问是怎么回事。",
-      "answer": "×",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        202
-       ]
-      }
-     },
-     {
-      "n": 8,
-      "zh": "不高兴时做什么都不好。",
-      "transcript_zh": "难过的时候我们应该做一些真正能使自己快乐的事，像听音乐、玩儿游戏或者去运动，这些都是不错的选择。",
-      "answer": "×",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        202
-       ]
-      }
-     },
-     {
-      "n": 9,
-      "zh": "爱有很多种。",
-      "transcript_zh": "爱可以是爸爸妈妈对孩子的照顾，可以是丈夫对妻子的关心，也可以是你对朋友的帮助。",
-      "answer": "√",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        202
-       ]
-      }
-     },
-     {
-      "n": 10,
-      "zh": "问题已经被他们解决了。",
-      "transcript_zh": "你别难过了，我们一起帮你想办法。先把这个最难的问题解决了，其他问题就容易多了。",
-      "answer": "×",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        202
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "一、听力 第三部分",
-    "type_zh": "听力 第三部分",
-    "instruction_zh": "第11–15题：听短对话，选择正确答案",
-    "instruction_en": "Questions 11-15: Listen to the short dialogues and choose the right answers.",
-    "audio": "hsk3-workbook-20-part3.mp3",
-    "items": [
-     {
-      "n": "例",
-      "zh": "男的想让小王做什么？",
-      "transcript_zh": "男：小王，帮我开一下门，好吗？谢谢！ 女：没问题。您去超市了？买了这么多东西。 问：男的想让小王做什么？",
-      "options": {
-       "A": "开门",
-       "B": "拿东西",
-       "C": "去超市买东西"
-      },
-      "answer": "A",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        140
-       ]
-      }
-     },
-     {
-      "n": 11,
-      "zh": "关于女的，可以知道什么？",
-      "options": {
-       "A": "今天过生日",
-       "B": "买了本字典",
-       "C": "正在学汉语"
-      },
-      "transcript_zh": "男：妹妹，明天是你的生日，我给你买了本汉语字典。 女：你怎么知道我在学汉语？我还一直觉得你不关心我的学习呢。 问：关于女的，可以知道什么？",
-      "answer": "C",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        202
-       ]
-      }
-     },
-     {
-      "n": 12,
-      "zh": "男的觉得到国家公园怎么走？",
-      "options": {
-       "A": "往东走",
-       "B": "往南走",
-       "C": "往车站那边走"
-      },
-      "transcript_zh": "男：放心，你就听我的吧，只有往东走才能到国家公园。 女：但是从地图上看，走南边那条路才对。我们还是去车站问问那些等车的人吧。 问：男的觉得到国家公园怎么走？",
-      "answer": "A",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        202
-       ]
-      }
-     },
-     {
-      "n": 13,
-      "zh": "女的在找什么？",
-      "options": {
-       "A": "帽子",
-       "B": "书",
-       "C": "地图"
-      },
-      "transcript_zh": "男：快点儿，拿上帽子走吧，明天你再找书。 女：我没找书，出去玩儿还是得带上地图啊，被你放哪儿了？ 问：女的在找什么？",
-      "answer": "C",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        202
-       ]
-      }
-     },
-     {
-      "n": 14,
-      "zh": "关于女的，可以知道什么？",
-      "options": {
-       "A": "在找运动服",
-       "B": "准备去跑步",
-       "C": "穿好了运动服"
-      },
-      "transcript_zh": "女：看见我的运动服了吗？怎么找不到了？ 男：是不是被笑笑穿走了？她刚才说要出去跑步。 问：关于女的，可以知道什么？",
-      "answer": "A",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        202
-       ]
-      }
-     },
-     {
-      "n": 15,
-      "zh": "男的要做什么？",
-      "options": {
-       "A": "去找服务员",
-       "B": "去拿房卡",
-       "C": "回房间去"
-      },
-      "transcript_zh": "男：我的房卡找不到了，我怎么进去啊？ 女：你给服务员打个电话，他们会帮你想办法解决的。 问：男的要做什么？",
-      "answer": "C",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        202
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "一、听力 第四部分",
-    "type_zh": "听力 第四部分",
-    "instruction_zh": "第16–20题：听长对话，选择正确答案",
-    "instruction_en": "Questions 16-20: Listen to the dialogues and choose the right answers.",
-    "audio": "hsk3-workbook-20-part4.mp3",
-    "items": [
-     {
-      "n": "例",
-      "zh": "男的在做什么？",
-      "transcript_zh": "女：晚饭做好了，准备吃饭了。 男：等一会儿，比赛还有三分钟就结束了。 女：快点儿吧，一起吃，菜冷了就不好吃了。 男：你先吃，我马上就看完了。 问：男的在做什么？",
-      "options": {
-       "A": "洗澡",
-       "B": "吃饭",
-       "C": "看电视"
-      },
-      "answer": "C",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        141
-       ]
-      }
-     },
-     {
-      "n": 16,
-      "zh": "男的要去做什么？",
-      "options": {
-       "A": "去银行还钱",
-       "B": "去教室上课",
-       "C": "去借照相机"
-      },
-      "transcript_zh": "男：你这么着急，是要去哪儿啊？ 女：我去银行，我的信用卡该还钱了。你去哪儿？ 男：我去教室上课。 女：这个照相机是小晴的，请你帮我还给她吧。 问：男的要去做什么？",
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        202
-       ]
-      }
-     },
-     {
-      "n": 17,
-      "zh": "女的为什么难过？",
-      "options": {
-       "A": "找不到照相机",
-       "B": "忘了去教室",
-       "C": "男的不帮她找"
-      },
-      "transcript_zh": "男：小云，这个照相机是你要找的吗？ 女：是啊，太谢谢你了。刚才我觉得找不到了，还很难过。你在哪儿找到的？ 男：我是在教室找到的，一定是被你忘在教室里了。 女：真奇怪，教室我也找过了，怎么没发现呢？ 问：女的为什么难过？",
-      "answer": "A",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        202
-       ]
-      }
-     },
-     {
-      "n": 18,
-      "zh": "根据这段话，可以知道什么？",
-      "options": {
-       "A": "客人已经离开了",
-       "B": "客人对房间很满意",
-       "C": "客人可以换个房间"
-      },
-      "transcript_zh": "女：我觉得这样做，客人是不会满意的。 男：那你有更好的办法来解决这个问题吗？ 女：我觉得可以给客人换一个房间，他离开时，我们还可以找车送他去机场。 男：行，那你去帮他换张房卡吧。 问：根据这段话，可以知道什么？",
-      "answer": "C",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        202
-       ]
-      }
-     },
-     {
-      "n": 19,
-      "zh": "关于女的，可以知道什么？",
-      "options": {
-       "A": "不能再跳舞了",
-       "B": "脚就快好了",
-       "C": "坐电梯不小心"
-      },
-      "transcript_zh": "男：电梯来了，您小心点儿。您的脚怎么样了？ 女：谢谢你送我回来。脚好一些了，只要再休息几天，就能跟你们出去跳舞了。 男：那太好了，只有您来了，我们才能跳得更快乐。 女：跟你们一起玩儿我也更快乐，我多么希望早点儿好啊。 问：关于女的，可以知道什么？",
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        202
-       ]
-      }
-     },
-     {
-      "n": 20,
-      "zh": "他们最可能在哪儿？",
-      "options": {
-       "A": "饭馆",
-       "B": "商店",
-       "C": "动物园"
-      },
-      "transcript_zh": "男：小姐，这双黑色的皮鞋多少钱？有43号的吗？ 女：六百八，帮您找双43号的试试？ 男：这么贵，是真牛皮的吗？ 女：当然了，只有真的好牛皮做出来的鞋，穿着才舒服。 问：他们最可能在哪儿？",
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        202
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "二、阅读 第一部分",
-    "type_zh": "阅读 第一部分",
-    "instruction_zh": "第21–25题：选择合适的问答",
-    "instruction_en": "Questions 21-25: Match the two parts of the same dialogue.",
-    "items": [
-     {
-      "n": "例",
-      "zh": "你知道怎么去那儿吗？",
-      "options": {
-       "A": "真为你高兴！希望你以后能有更好的成绩。",
-       "B": "在中国，北方的冬天非常冷，特别是东北。",
-       "C": "只有想办法让客人满意，才能解决这个问题。",
-       "D": "先生，等等，您把照相机忘在车上了。",
-       "E": "当然。我们先坐公共汽车，然后换地铁。",
-       "F": "我的照相机被弟弟借走了。"
-      },
-      "answer": "E",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        142
-       ]
-      }
-     },
-     {
-      "n": 21,
-      "zh": "谢谢老师！我一定会努力的。",
-      "options": {
-       "A": "真为你高兴！希望你以后能有更好的成绩。",
-       "B": "在中国，北方的冬天非常冷，特别是东北。",
-       "C": "只有想办法让客人满意，才能解决这个问题。",
-       "D": "先生，等等，您把照相机忘在车上了。",
-       "E": "当然。我们先坐公共汽车，然后换地铁。",
-       "F": "我的照相机被弟弟借走了。"
-      },
-      "answer": "A",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        202
-       ]
-      }
-     },
-     {
-      "n": 22,
-      "zh": "你的照相机借给我用几天吧？",
-      "options": {
-       "A": "真为你高兴！希望你以后能有更好的成绩。",
-       "B": "在中国，北方的冬天非常冷，特别是东北。",
-       "C": "只有想办法让客人满意，才能解决这个问题。",
-       "D": "先生，等等，您把照相机忘在车上了。",
-       "E": "当然。我们先坐公共汽车，然后换地铁。",
-       "F": "我的照相机被弟弟借走了。"
-      },
-      "answer": "F",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        202
-       ]
-      }
-     },
-     {
-      "n": 23,
-      "zh": "刚才太着急了，真是谢谢你。",
-      "options": {
-       "A": "真为你高兴！希望你以后能有更好的成绩。",
-       "B": "在中国，北方的冬天非常冷，特别是东北。",
-       "C": "只有想办法让客人满意，才能解决这个问题。",
-       "D": "先生，等等，您把照相机忘在车上了。",
-       "E": "当然。我们先坐公共汽车，然后换地铁。",
-       "F": "我的照相机被弟弟借走了。"
-      },
-      "answer": "D",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        202
-       ]
-      }
-     },
-     {
-      "n": 24,
-      "zh": "我们的客人越来越少，这真是一个问题啊。",
-      "options": {
-       "A": "真为你高兴！希望你以后能有更好的成绩。",
-       "B": "在中国，北方的冬天非常冷，特别是东北。",
-       "C": "只有想办法让客人满意，才能解决这个问题。",
-       "D": "先生，等等，您把照相机忘在车上了。",
-       "E": "当然。我们先坐公共汽车，然后换地铁。",
-       "F": "我的照相机被弟弟借走了。"
-      },
-      "answer": "C",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        202
-       ]
-      }
-     },
-     {
-      "n": 25,
-      "zh": "去年冬天我刚到那儿就感冒了。",
-      "options": {
-       "A": "真为你高兴！希望你以后能有更好的成绩。",
-       "B": "在中国，北方的冬天非常冷，特别是东北。",
-       "C": "只有想办法让客人满意，才能解决这个问题。",
-       "D": "先生，等等，您把照相机忘在车上了。",
-       "E": "当然。我们先坐公共汽车，然后换地铁。",
-       "F": "我的照相机被弟弟借走了。"
-      },
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        202
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "二、阅读 第二部分",
-    "type_zh": "阅读 第二部分",
-    "instruction_zh": "第26–30题：选择合适的词语填空",
-    "instruction_en": "Questions 26-30: Choose the proper words to fill in the brackets.",
-    "word_bank": [
-     [
-      "A 试",
-      "B 碗",
-      "C 只有",
-      "D 信用卡",
-      "E 声音",
-      "F 房卡"
-     ]
-    ],
-    "items": [
-     {
-      "n": "例",
-      "zh": "她说话的（　）多好听啊！",
-      "options": {
-       "A": "试",
-       "B": "碗",
-       "C": "只有",
-       "D": "信用卡",
-       "E": "声音",
-       "F": "房卡"
-      },
-      "answer": "E",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        142
-       ]
-      }
-     },
-     {
-      "n": 26,
-      "zh": "我不知道把（　）忘在哪儿了，现在只能叫服务员帮我开门了。",
-      "options": {
-       "A": "试",
-       "B": "碗",
-       "C": "只有",
-       "D": "信用卡",
-       "E": "声音",
-       "F": "房卡"
-      },
-      "answer": "F",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        202
-       ]
-      }
-     },
-     {
-      "n": 27,
-      "zh": "（　）被我妹妹拿走了。",
-      "options": {
-       "A": "试",
-       "B": "碗",
-       "C": "只有",
-       "D": "信用卡",
-       "E": "声音",
-       "F": "房卡"
-      },
-      "answer": "D",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        202
-       ]
-      }
-     },
-     {
-      "n": 28,
-      "zh": "请一个同学来听写生词，谁来（　）一下？",
-      "options": {
-       "A": "试",
-       "B": "碗",
-       "C": "只有",
-       "D": "信用卡",
-       "E": "声音",
-       "F": "房卡"
-      },
-      "answer": "A",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        202
-       ]
-      }
-     },
-     {
-      "n": 29,
-      "zh": "A：今天晚上谁洗（　）？ B：昨天是我，今天应该是你了。",
-      "options": {
-       "A": "试",
-       "B": "碗",
-       "C": "只有",
-       "D": "信用卡",
-       "E": "声音",
-       "F": "房卡"
-      },
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        202
-       ]
-      }
-     },
-     {
-      "n": 30,
-      "zh": "A：我的历史老师让我回家多复习。 B：对啊，（　）多复习才能提高成绩。",
-      "options": {
-       "A": "试",
-       "B": "碗",
-       "C": "只有",
-       "D": "信用卡",
-       "E": "声音",
-       "F": "房卡"
-      },
-      "answer": "C",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        202
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "二、阅读 第三部分",
-    "type_zh": "阅读 第三部分",
-    "instruction_zh": "第31–35题：选择正确答案",
-    "instruction_en": "Questions 31-35: Choose the right answers.",
-    "items": [
-     {
-      "n": "例",
-      "zh": "您是来参加今天会议的吗？您来早了一点儿，现在才八点半。您先进来坐吧。 ★会议最可能几点开始？",
-      "options": {
-       "A": "8点",
-       "B": "8点半",
-       "C": "9点"
-      },
-      "answer": "C",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        143
-       ]
-      }
-     },
-     {
-      "n": 31,
-      "zh": "去年我跟同事一起去南方的一个城市旅行，有一次我和同事找人问路，他们总是回答“向左走”或者“向右走”。我们才发现那里的人不习惯说“东南西北”，只说“左”或者“右”，只有在看地图的时候，才会说“东南西北”。 ★那个城市的人，什么时候说“东南西北”？",
-      "options": {
-       "A": "问路的时候",
-       "B": "看地图的时候",
-       "C": "去旅行的时候"
-      },
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        202
-       ]
-      }
-     },
-     {
-      "n": 32,
-      "zh": "“笑一笑，十年少”，这是中国人常说的一句话，意思是笑的作用很大，笑一笑会让人年轻很多。只有常常笑，才能使自己年轻，不容易变老。所以我们每天都应该在工作和学习中，多想想高兴的事，试着让自己更快乐。 ★根据这段话，可以知道：",
-      "options": {
-       "A": "现在的人不快乐",
-       "B": "笑能使人变年轻",
-       "C": "工作中没有高兴事"
-      },
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        202
-       ]
-      }
-     },
-     {
-      "n": 33,
-      "zh": "不要总觉得别人的事情跟自己没有关系，认真地做好自己的事情就可以了。关心别人，自己也会觉得很快乐。所以要多跟朋友在一起，帮助朋友就是帮助自己，只有经常帮助别人，当你需要帮助的时候，别人才会愿意帮助你。 ★根据这段话，可以知道：",
-      "options": {
-       "A": "自己的事最重要",
-       "B": "要学会帮助别人",
-       "C": "多让朋友帮自己"
-      },
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        202
-       ]
-      }
-     },
-     {
-      "n": 34,
-      "zh": "小米给我们写信了，她在信里说了很多谢谢我们的话，说我们不但很关心她，而且还帮她女儿解决了工作的问题。在信里，她还说跟我们在一起的那段时间是多么让人难忘啊。她说如果明年有机会，她还会回来看我们的。 ★根据这段话，可以知道：",
-      "options": {
-       "A": "小米的工作问题被解决了",
-       "B": "小米明年一定回来看我们",
-       "C": "小米写信谢谢我们"
-      },
-      "answer": "C",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        202
-       ]
-      }
-     },
-     {
-      "n": 35,
-      "zh": "你知道吗，动物虽然不会说话，但是其实很聪明。你看我家的小猫，总是能看出来我是高兴还是难过。我高兴的时候，它会在我身边跟我玩儿，高兴地叫着。要是它觉得我难过，它就会很安静地看着我。最让我觉得奇怪的是，它一般不会生气，但是只要我去动物园玩儿，它就会变得非常不高兴。 ★我家的小猫：",
-      "options": {
-       "A": "非常聪明",
-       "B": "经常不高兴",
-       "C": "喜欢去动物园"
-      },
-      "answer": "A",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        202
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "三、书写 第一部分",
-    "type_zh": "书写 第一部分",
-    "instruction_zh": "第36–40题：连词成句",
-    "instruction_en": "Questions 36-40: Rearrange the words/phrases to make sentences.",
-    "items": [
-     {
-      "n": "例",
-      "zh": "小船　上　一　河　条　有",
-      "answer": "河上有一条小船。",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        144
-       ]
-      }
-     },
-     {
-      "n": 36,
-      "zh": "冬天的时候　看看　我决定　去东北",
-      "answer": "我决定冬天的时候去东北看看。",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        202
-       ]
-      }
-     },
-     {
-      "n": 37,
-      "zh": "洗干净了　被　都　妈妈　碗筷",
-      "answer": "碗筷都被妈妈洗干净了。",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        202
-       ]
-      }
-     },
-     {
-      "n": 38,
-      "zh": "对中文　只有　你才能　感兴趣　学好",
-      "answer": "只有对中文感兴趣你才能学好。",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        202
-       ]
-      }
-     },
-     {
-      "n": 39,
-      "zh": "帮你解决　试着　我　电脑的问题",
-      "answer": "我试着帮你解决电脑的问题。",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        202
-       ]
-      }
-     },
-     {
-      "n": 40,
-      "zh": "小皮鞋　多么可爱啊　你看　这双",
-      "answer": "你看这双小皮鞋多么可爱啊。",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        202
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "三、书写 第二部分",
-    "type_zh": "书写 第二部分",
-    "instruction_zh": "第41–45题：看拼音，写汉字",
-    "instruction_en": "Questions 41-45: Write the characters based on their pinyin.",
-    "items": [
-     {
-      "n": "例",
-      "zh": "没（　）系，别难过，高兴点儿。",
-      "hint_zh": "guān",
-      "answer": "关",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        144
-       ]
-      }
-     },
-     {
-      "n": 41,
-      "zh": "别难（　）了，下次你一定能考好的。",
-      "hint_zh": "guò",
-      "answer": "过",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        202
-       ]
-      }
-     },
-     {
-      "n": 42,
-      "zh": "谢谢你的（　）心，我现在很好。",
-      "hint_zh": "guān",
-      "answer": "关",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        202
-       ]
-      }
-     },
-     {
-      "n": 43,
-      "zh": "这次考试，我的数学（　）绩最好。",
-      "hint_zh": "chéng",
-      "answer": "成",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        202
-       ]
-      }
-     },
-     {
-      "n": 44,
-      "zh": "妈妈说只有写完作业，（　）能玩儿游戏。",
-      "hint_zh": "cái",
-      "answer": "才",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        202
-       ]
-      }
-     },
-     {
-      "n": 45,
-      "zh": "你是什么时候有信用（　）的？",
-      "hint_zh": "kǎ",
-      "answer": "卡",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        202
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "三、书写 第三部分",
-    "type_zh": "书写 第三部分",
-    "instruction_zh": "第46–50题：辨认汉字，选择正确的汉字填空",
-    "instruction_en": "Questions 46-50: Distinguish the characters and fill in the blanks.",
-    "items": [
-     {
-      "n": "例",
-      "zh": "我不知道________个地方在________儿。",
-      "hint_zh": "（那、哪）",
-      "answer": "那、哪",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        145
-       ]
-      }
-     },
-     {
-      "n": 46,
-      "zh": "你可以去________门坐公共汽________。",
-      "hint_zh": "（东、车）",
-      "answer": "东、车",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        202
-       ]
-      }
-     },
-     {
-      "n": 47,
-      "zh": "这件事怎么解________，你________帮我想想办法吧。",
-      "hint_zh": "（决、快）",
-      "answer": "决、快",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        202
-       ]
-      }
-     },
-     {
-      "n": 48,
-      "zh": "________园里的花多________漂亮啊！",
-      "hint_zh": "（么、公）",
-      "answer": "公、么",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        202
-       ]
-      }
-     },
-     {
-      "n": 49,
-      "zh": "你别________过了，下次我帮你________备，一定会没问题的。",
-      "hint_zh": "（难、准）",
-      "answer": "难、准",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        202
-       ]
-      }
-     },
-     {
-      "n": 50,
-      "zh": "这个电________节目很有意思，我很想看，但是电视怎么________爸爸关上了？",
-      "hint_zh": "（被、视）",
-      "answer": "视、被",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        202
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "四、复习",
-    "type_zh": "复习",
-    "instruction_zh": "第1–2题：根据课文内容填空",
-    "instruction_en": "Questions 1-2: Fill in the blanks based on the texts in the textbook.",
-    "items": [
-     {
-      "n": 1,
-      "zh": "小丽找不到她的________了，可能________别人拿走了。她有点儿________。同事让她去公司________门外的大商场再买一个，但是这个月她的________里的钱已经花得差不多了。",
-      "answer": "照相机、被、难过、东、信用卡",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        202
-       ]
-      }
-     },
-     {
-      "n": 2,
-      "zh": "小明的朋友最近突然________起体育来了，因为她的男朋友很喜欢看足球________，她是________男朋友影响的。________足球，她还天天上网玩儿游戏，________差极了。",
-      "answer": "关心、比赛、被、除了、成绩",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        202
-       ]
-      }
-     }
-    ]
-   }
-  ]
- },
- "audio": {
-  "textbook": [
-   "hsk3-textbook-2001.mp3",
-   "hsk3-textbook-2002.mp3",
-   "hsk3-textbook-2003.mp3",
-   "hsk3-textbook-2004.mp3",
-   "hsk3-textbook-2005.mp3"
   ],
-  "workbook": [
-   "hsk3-workbook-20-part1.mp3",
-   "hsk3-workbook-20-part2.mp3",
-   "hsk3-workbook-20-part3.mp3",
-   "hsk3-workbook-20-part4.mp3"
-  ]
- },
- "unclear": [
-  "Сурах бичиг PDF х.186 拼音课文 (课文2): «Kànlái zhíyǒu ài, cái néng…» — 只有-ийг «zhíyǒu» (аялгын өөрчлөлттэй) гэж хэвлэсэн; 生词 7 болон 课文3/4-т «zhǐyǒu». Номд байгаагаар нь lines.pinyin-д «zhíyǒu» үлдээсэн.",
-  "Сурах бичиг PDF х.186 拼音课文 (课文4): «dōume nán de wèntí» — 生词 14 多么 «duōme»-той зөрж байна (хэвлэлийн алдаа бололтой). Номд байгаагаар нь lines.pinyin-д «dōume» үлдээсэн.",
-  "Сурах бичиг PDF х.185/186: 课文3-ын ханз гарчиг «在饭馆», харин 拼音课文-д «Zài fànguǎnr» (-r-тэй) — зөрүү; номд байгаагаар.",
-  "Сурах бичиг PDF х.187 注释1 хүснэгт: «帽子 | 被 | 刮 | 跑 | 了。» — 宾语 баганад «刮», 动词 баганад «跑» гэж хэвлэсэн (үйлдэгч байхгүй, 刮跑 хуваагдсан — байршлын алдаа бололтой). Номд байгаагаар structure_rows-д үлдээсэн, «风» нэмээгүй.",
-  "Сурах бичиг PDF х.187 注释1: тайлбар ба хүснэгтийн «主语+被/叫/让+宾语+动词+其他成分» номд хагас өргөнтэй «+» «/»-тэй — хэвээр. Тайлбар доторх хүснэгтийн байрлалыг «［表格］/[table]» гэж тэмдэглэсэн.",
-  "Сурах бичгийн 练一练 (2 дүрэм × 3) · 练习2 选词填空 · 练习3 描述图片 · 练习4 回答问题 · 运用 — хариулт сурах бичиг, багшийн номд хэвлэгдээгүй тул answer талбаргүй. Багшийн номын 课文 асуулт-хариулт (teacher.text_questions) нь 练习4-ийн асуултаас өөр.",
-  "Багшийн ном PDF х.138–139: 热身2 (连线)-ын хариулт тусад нь хэвлэгдээгүй; 语言点(1) 导入/操练-ын 目标句 (问题被你解决了吗？/朋友被老师影响了。/汽车被妈妈开走了。/钱被弟弟花完了。/自行车被同屋骑走了。/照相机被爸爸用坏了。) нь хосыг илэрхийлнэ — teacher.steps-д номд байгаагаар.",
-  "Багшийн ном PDF х.139 语言点(2) 扩展练习 — «只要……就……»/«只有……才……» нөхөх 4 өгүүлбэр хоосон зайтай, хариулт хэвлэгдээгүй.",
-  "Багшийн ном PDF х.142 汉字辨认练习 (东/车 · 决/快 · 么/公 · 难/准 · 被/视 — 组词) хоосон зайтай, хариулт хэвлэгдээгүй. Номд хоёр баганаар (зүүн: 东车／么公／被视 · баруун: 决快／难准) байрласан.",
-  "Багшийн номын «练习册相关练习：第135页…第138页…第141页» — дасгалын номын ХЭВЛЭСЭН хуудас (PDF 139, 142, 145).",
-  "Дасгалын номын сонсгол нэг CD тэмдэгтэй (20) — аудиог hsk3-workbook-20-part1…4.mp3 болгож хэсэг тус бүрт хуваасныг section.audio-д оноосон.",
-  "Дасгалын ном 听力 第三/四部分 — номд зөвхөн сонголтууд хэвлэгдсэн; item.zh-д багшийн номын хавсралтын «问：» асуултыг оруулсан (transcript_zh-д бүтнээр).",
-  "Сурах бичгийн 拼音课文-ын гарчгийн пиньинь (Zài xiūxishì / Zài jiàoshì / Zài fànguǎnr; 课文4 гарчиггүй) болон ярилцагчийн нэрийн пиньинь (Xiǎolì, tóngshì, Xiǎomíng, péngyou, Dàwèi) схемд талбаргүй тул lines.pinyin-д зөвхөн яриаг оруулсан. 课文4-ийн пиньинь нэг догол мөр — өгүүлбэр бүрээр хуваасан.",
-  "Сурах бичиг PDF х.193 文化-ын англи гарчиг «Taboo Gifts in China» — схемд title_en байхгүй тул culture.body_en-ий эхэнд «[Taboo Gifts in China]» гэж оруулсан.",
-  "Сурах бичгийн 生词-д 专名 (proper nouns) хэвлэгдээгүй (小丽、小明、大卫 гэх мэт нэр жагсаалтад ороогүй)."
- ],
- "verified_pages": [
-  137,
-  138,
-  139,
-  140,
-  141,
-  142,
-  143,
-  144,
-  145,
-  184,
-  185,
-  186,
-  187,
-  188,
-  189,
-  190,
-  191,
-  192,
-  193,
-  200,
-  201,
-  202
- ],
- "schema_version": 1
+  "schema_version": 1,
+  "hsk30": {
+    "source": "courseware",
+    "ref": {
+      "book": "hsk30_courseware",
+      "pages": [
+        5,
+        17,
+        21,
+        22,
+        23,
+        31,
+        39,
+        41
+      ]
+    },
+    "new_words": [
+      {
+        "n": 1,
+        "zh": "相机",
+        "pinyin": "xiàngjī",
+        "pos": "n.",
+        "en": "camera",
+        "text": 1
+      },
+      {
+        "n": 2,
+        "zh": "拍照",
+        "pinyin": "pāizhào",
+        "pos": "v.",
+        "en": "take photos",
+        "text": 1
+      },
+      {
+        "n": 3,
+        "zh": "照相",
+        "pinyin": "zhàoxiàng",
+        "pos": "v.",
+        "en": "take pictures",
+        "text": 1
+      },
+      {
+        "n": 4,
+        "zh": "银行卡",
+        "pinyin": "yínhángkǎ",
+        "pos": "n.",
+        "en": "bank card",
+        "text": 1
+      },
+      {
+        "n": 5,
+        "zh": "卡",
+        "pinyin": "kǎ",
+        "pos": "n.",
+        "en": "card",
+        "text": 1
+      },
+      {
+        "n": 6,
+        "zh": "感到",
+        "pinyin": "gǎndào",
+        "pos": "n.",
+        "en": "feel",
+        "text": 2
+      },
+      {
+        "n": 7,
+        "zh": "只能",
+        "pinyin": "zhǐ néng",
+        "en": "can only",
+        "text": 2
+      },
+      {
+        "n": 8,
+        "zh": "只是",
+        "pinyin": "zhǐshì",
+        "pos": "adv./conj.",
+        "en": "just/but",
+        "text": 2
+      },
+      {
+        "n": 9,
+        "zh": "怎么办",
+        "pinyin": "zěnme bàn",
+        "en": "what to do",
+        "text": 4
+      },
+      {
+        "n": 10,
+        "zh": "怎样",
+        "pinyin": "zěnyàng",
+        "pos": "pron.",
+        "en": "how",
+        "text": 4
+      }
+    ],
+    "grammar": [
+      {
+        "n": 1,
+        "title_zh": "看来",
+        "explanation_zh": "",
+        "examples": [
+          {
+            "zh": "看来只有爱，才能让人有变化。"
+          },
+          {
+            "zh": "看来今天的雨是不会停了。"
+          },
+          {
+            "zh": "现在看来，他说的都不是真的。"
+          }
+        ]
+      },
+      {
+        "n": 2,
+        "title_zh": "影响(n/v)",
+        "explanation_zh": "",
+        "examples": [
+          {
+            "zh": "看来这次的事情对他一点儿影响也没有。"
+          },
+          {
+            "zh": "老师经常告诉我们，玩可以，但是不能影响学习。"
+          },
+          {
+            "zh": "我被男朋友影响了。"
+          }
+        ]
+      },
+      {
+        "n": 3,
+        "title_zh": "差(adj/v)",
+        "explanation_zh": "",
+        "examples": [
+          {
+            "zh": "我最近天天上网玩儿游戏，我的成绩差极了。"
+          },
+          {
+            "zh": "他们两个个子差很多。"
+          },
+          {
+            "zh": "已经差一刻八点了！我都在这儿等半个小时了！"
+          }
+        ]
+      },
+      {
+        "n": 4,
+        "title_zh": "认错",
+        "explanation_zh": "",
+        "examples": [
+          {
+            "zh": "我们经常被别人认错。"
+          },
+          {
+            "zh": "刚才那个小女孩认错人了，以为我是她阿姨呢。"
+          },
+          {
+            "zh": "打人的孩子向我们认错了。"
+          }
+        ]
+      },
+      {
+        "n": 5,
+        "title_zh": "得(v děi)",
+        "explanation_zh": "",
+        "examples": [
+          {
+            "zh": "下雨天开车得小心。"
+          },
+          {
+            "zh": "你得努力了，一直玩儿电脑游戏是不行的。"
+          },
+          {
+            "zh": "有些问题看上去很难，但是做起来非常简单，所以得试着做做。"
+          }
+        ]
+      }
+    ],
+    "exercises": [],
+    "unclear": [
+      "补充词汇 «感到» (17-р слайд) pos нь «n. feel» гэж хэвлэгдсэн ч 感到 нь үйл үг (v. feel) байх ёстой — номд (слайдад) байгаагаар үлдээсэн, засаагүй.",
+      "语言点 «照相／照相机» (9-р слайд) зөвхөн хоёр үг агуулж, жишээ өгүүлбэргүй тул hsk30.grammar-т ороогүй."
+    ]
+  }
 }

@@ -1,678 +1,1700 @@
 {
- "level": "hsk2",
- "lesson": 11,
- "book": "HSK2",
- "title_zh": "他比我大三岁",
- "title_pinyin": "Tā bǐ wǒ dà sān suì",
- "title_en": "He is three years older than me",
- "textbook": {
-  "ref": {
-   "book": "textbook",
-   "pages": [
-    101,
-    102,
-    103,
-    104,
-    105,
-    106,
-    107,
-    108
-   ]
-  },
-  "warmup": [
-   {
-    "instruction_zh": "给下面的词语选择对应的图片",
-    "instruction_en": "Match the pictures with the words/phrases.",
-    "items": [
-     "①跳舞 tiào wǔ",
-     "②说话 shuō huà",
-     "③女 nǚ",
-     "④孩子 háizi",
-     "⑤唱歌 chàng gē",
-     "⑥男 nán"
+  "level": "hsk2",
+  "lesson": 11,
+  "book": "HSK2",
+  "title_zh": "他比我大三岁",
+  "title_pinyin": "Tā bǐ wǒ dà sān suì",
+  "title_en": "He is three years older than me",
+  "textbook": {
+    "ref": {
+      "book": "textbook",
+      "pages": [
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108
+      ]
+    },
+    "warmup": [
+      {
+        "instruction_zh": "给下面的词语选择对应的图片",
+        "instruction_en": "Match the pictures with the words/phrases.",
+        "items": [
+          "①跳舞 tiào wǔ",
+          "②说话 shuō huà",
+          "③女 nǚ",
+          "④孩子 háizi",
+          "⑤唱歌 chàng gē",
+          "⑥男 nán"
+        ],
+        "pictures_desc_en": [
+          "A: four young people singing into microphones, smiling",
+          "B: a smiling young woman in a dark jacket holding a pink folder",
+          "C: a young woman whispering into the ear of a white-haired elderly woman",
+          "D: two little girls lying on autumn leaves, smiling",
+          "E: a young man in a dark suit and tie standing in front of tall buildings",
+          "F: a group of young people dancing with their arms raised"
+        ]
+      },
+      {
+        "instruction_zh": "试着说说下面这些词语的反义词",
+        "instruction_en": "Try to say the antonyms of the following words.",
+        "items": [
+          "贵——（　　） guì",
+          "对——（　　） duì",
+          "左——（　　） zuǒ",
+          "来——（　　） lái",
+          "前——（　　） qián",
+          "里——（　　） lǐ"
+        ]
+      }
     ],
-    "pictures_desc_en": [
-     "A: four young people singing into microphones, smiling",
-     "B: a smiling young woman in a dark jacket holding a pink folder",
-     "C: a young woman whispering into the ear of a white-haired elderly woman",
-     "D: two little girls lying on autumn leaves, smiling",
-     "E: a young man in a dark suit and tie standing in front of tall buildings",
-     "F: a group of young people dancing with their arms raised"
+    "pronunciation": [
+      {
+        "title_zh": "正反问句的句调",
+        "rows": [
+          "Míngtiān nǐ qù bu qù yínháng? （1）明天你去不去银行？↘［重读点：去］",
+          "Zhè jiàn yīfu nǐ xǐhuan bu xǐhuan? （2）这件衣服你喜欢不喜欢？↘［重读点：喜欢］",
+          "Shíyī diǎn duō le, nǐ shuì bu shuì jiào? （3）十一点多了，你睡不睡觉？↘［重读点：睡］"
+        ],
+        "notes_zh": [
+          "句中肯定部分重读，否定部分轻读，肯定否定重叠部分语速较快，重音后语调逐渐下降。",
+          "［重读点］为书中汉字下的红点所标示的字；“↘”为书中句末的下降箭头（书中无文字说明）。"
+        ],
+        "notes_en": [
+          "Intonation of an Affirmative-Negative Question",
+          "The affirmative part is stressed and the negative part is unstressed. The affirmative-negative phrase is read fast, and the intonation falls gradually after the stress."
+        ]
+      }
+    ],
+    "texts": [
+      {
+        "n": 1,
+        "title_zh": "在歌厅",
+        "title_en": "In a karaoke bar",
+        "kind": "dialogue",
+        "lines": [
+          {
+            "speaker": "A",
+            "zh": "王方，昨天和你一起唱歌的人是谁？",
+            "pinyin": "Wáng Fāng, zuótiān hé nǐ yìqǐ chàng gē de rén shì shéi?"
+          },
+          {
+            "speaker": "B",
+            "zh": "一个朋友。",
+            "pinyin": "Yí ge péngyou."
+          },
+          {
+            "speaker": "A",
+            "zh": "什么朋友？是不是男朋友？",
+            "pinyin": "Shénme péngyou? Shì bu shì nánpéngyou?"
+          },
+          {
+            "speaker": "B",
+            "zh": "不是不是，我同学介绍的，昨天第一次见。",
+            "pinyin": "Bú shì bú shì, wǒ tóngxué jièshào de, zuótiān dì yī cì jiàn."
+          }
+        ],
+        "english_version": "A: Wang Fang, who was the guy with you in the karaoke yesterday?\nB: A friend.\nA: What friend? Boyfriend?\nB: No. My classmate set me up with him. We met only yesterday.",
+        "new_words": [
+          {
+            "n": 1,
+            "zh": "唱歌",
+            "pinyin": "chàng gē",
+            "pos": "v.",
+            "en": "to sing",
+            "text": 1
+          },
+          {
+            "n": 2,
+            "zh": "男",
+            "pinyin": "nán",
+            "pos": "adj.",
+            "en": "man, male",
+            "text": 1
+          }
+        ]
+      },
+      {
+        "n": 2,
+        "title_zh": "在宿舍",
+        "title_en": "In the dorm",
+        "kind": "dialogue",
+        "lines": [
+          {
+            "speaker": "A",
+            "zh": "左边这个看报纸的女孩子是你姐姐吗？",
+            "pinyin": "Zuǒbian zhège kàn bàozhǐ de nǚ háizi shì nǐ jiějie ma?"
+          },
+          {
+            "speaker": "B",
+            "zh": "是，右边写字的那个人是我哥哥。",
+            "pinyin": "Shì, yòubian xiě zì de nàge rén shì wǒ gēge."
+          },
+          {
+            "speaker": "A",
+            "zh": "你哥哥多大？",
+            "pinyin": "Nǐ gēge duō dà?"
+          },
+          {
+            "speaker": "B",
+            "zh": "25岁，他比我大三岁。",
+            "pinyin": "Èrshíwǔ suì, tā bǐ wǒ dà sān suì."
+          }
+        ],
+        "english_version": "A: Is the girl on the left reading a newspaper your elder sister?\nB: Yes. And the guy on the right writing is my elder brother.\nA: How old is he?\nB: 25. He is three years older than me.",
+        "new_words": [
+          {
+            "n": 3,
+            "zh": "女",
+            "pinyin": "nǚ",
+            "pos": "adj.",
+            "en": "woman, female",
+            "text": 2
+          },
+          {
+            "n": 4,
+            "zh": "孩子",
+            "pinyin": "háizi",
+            "pos": "n.",
+            "en": "child, kid",
+            "text": 2
+          },
+          {
+            "n": 5,
+            "zh": "右边",
+            "pinyin": "yòubian",
+            "pos": "n.",
+            "en": "right, right side",
+            "text": 2
+          },
+          {
+            "n": 6,
+            "zh": "比",
+            "pinyin": "bǐ",
+            "pos": "prep.",
+            "en": "than, (superior or inferior) to",
+            "text": 2
+          }
+        ]
+      },
+      {
+        "n": 3,
+        "title_zh": "在商店",
+        "title_en": "At a store",
+        "kind": "dialogue",
+        "lines": [
+          {
+            "speaker": "A",
+            "zh": "今天的西瓜怎么卖？",
+            "pinyin": "Jīntiān de xīguā zěnme mài?"
+          },
+          {
+            "speaker": "B",
+            "zh": "三块五一斤。",
+            "pinyin": "Sān kuài wǔ yì jīn."
+          },
+          {
+            "speaker": "A",
+            "zh": "比昨天便宜。",
+            "pinyin": "Bǐ zuótiān piányi."
+          },
+          {
+            "speaker": "B",
+            "zh": "是，苹果也比昨天便宜一些。您来点儿吧。",
+            "pinyin": "Shì, píngguǒ yě bǐ zuótiān piányi yìxiē. Nín lái diǎnr ba."
+          }
+        ],
+        "english_version": "A: What’s the price of watermelons today?\nB: Three yuan and a half per 500 grams.\nA: It’s cheaper than the price yesterday.\nB: Yes. The apples are also cheaper. Why not take some?",
+        "new_words": [
+          {
+            "n": 7,
+            "zh": "便宜",
+            "pinyin": "piányi",
+            "pos": "adj.",
+            "en": "cheap, inexpensive",
+            "text": 3
+          }
+        ]
+      },
+      {
+        "n": 4,
+        "title_zh": "在学校",
+        "title_en": "In the school",
+        "kind": "dialogue",
+        "lines": [
+          {
+            "speaker": "A",
+            "zh": "前边说话的那个人就是我的汉语老师。你可能不认识她。",
+            "pinyin": "Qiánbian shuō huà de nàge rén jiù shì wǒ de Hànyǔ lǎoshī. Nǐ kěnéng bú rènshi tā."
+          },
+          {
+            "speaker": "B",
+            "zh": "是新来的汉语老师吗？",
+            "pinyin": "Shì xīn lái de Hànyǔ lǎoshī ma?"
+          },
+          {
+            "speaker": "A",
+            "zh": "是去年来的，她姓王，28岁。",
+            "pinyin": "Shì qùnián lái de, tā xìng Wáng, èrshíbā suì."
+          },
+          {
+            "speaker": "B",
+            "zh": "她比我们老师小两岁。",
+            "pinyin": "Tā bǐ wǒmen lǎoshī xiǎo liǎng suì."
+          }
+        ],
+        "english_version": "A: The woman speaking in front of us is my Chinese teacher. You may not know her.\nB: Is she a new-comer?\nA: She came here last year. Her family name is Wang, 28 years old.\nB: She is two years younger than my teacher.",
+        "new_words": [
+          {
+            "n": 8,
+            "zh": "说话",
+            "pinyin": "shuō huà",
+            "pos": "v.",
+            "en": "to speak, to say, to talk",
+            "text": 4
+          },
+          {
+            "n": 9,
+            "zh": "可能",
+            "pinyin": "kěnéng",
+            "pos": "aux.",
+            "en": "maybe, perhaps, probably",
+            "text": 4
+          },
+          {
+            "n": 10,
+            "zh": "去年",
+            "pinyin": "qùnián",
+            "pos": "n.",
+            "en": "last year",
+            "text": 4
+          },
+          {
+            "n": 11,
+            "zh": "姓",
+            "pinyin": "xìng",
+            "pos": "v.",
+            "en": "family name, surname",
+            "text": 4
+          }
+        ]
+      }
+    ],
+    "grammar": [
+      {
+        "n": 1,
+        "title_zh": "动词结构做定语",
+        "title_en": "A Verb (Phrase) Used as an Attributive Modifier",
+        "explanation_zh": "动词或动词短语做定语时，定语和中心语之间要加“的”。例如：",
+        "explanation_en": "When a verb or verb phrase is used as an attributive modifier, “的” should be put between the modifier and the word modified. For example:",
+        "structure_rows": [
+          "定语（Attributive Modifier） | 的 | 中心语（Word Modified）",
+          "新买 | 的 | 自行车",
+          "我妈妈做 | 的 | 饭",
+          "和你一起唱歌 | 的 | 人"
+        ],
+        "examples": [
+          {
+            "n": 1,
+            "zh": "新买的自行车"
+          },
+          {
+            "n": 2,
+            "zh": "我妈妈做的饭"
+          },
+          {
+            "n": 3,
+            "zh": "和你一起唱歌的人"
+          }
+        ]
+      },
+      {
+        "n": 2,
+        "title_zh": "“比”字句（1）",
+        "title_en": "The “比” Sentence (1)",
+        "explanation_zh": "用“比”表示比较的句子叫“比”字句。“比”字句的谓语可以是形容词。例如：\n“比”字句的否定形式可以用“A没有B……”表示。例如：\n要表达事物之间的差别时，用具体数量表示具体差别，用“一点儿”“一些”表示差别不大，用“多”“得多”表示差别大。例如：",
+        "explanation_en": "A “比” sentence is a sentence using “比” to make a comparison. The predicate of the sentence can be an adjective. For example:\n“A没有B……” is the negative form of a “比” sentence. For example:\nWhen describing the difference between things, a specific number is used to specify the difference, “一点儿” or “一些” indicates the difference is slight, and “多” or “得多” indicates the difference is significant. For example:",
+        "structure_rows": [
+          "A | 比 | B | Adj",
+          "哥哥 | 比 | 姐姐 | 高。",
+          "今天 | 比 | 昨天 | 热。",
+          "（今天的西瓜） | 比 | 昨天 | 便宜。",
+          "A | 没有 | B | Adj",
+          "哥哥 | 没有 | 姐姐 | 高。",
+          "今天 | 没有 | 昨天 | 热。",
+          "西瓜 | 没有 | 苹果 | 便宜。",
+          "A | 比 | B | Adj | 数量短语（Num-M）",
+          "西瓜 | 比 | 苹果 | 贵 | 两块钱。",
+          "我的学习 | 比 | 他 | 好 | 一点儿。",
+          "今天 | 比 | 昨天 | 热 | 得多。",
+          "她 | 比 | 我们老师 | 小 | 两岁。"
+        ],
+        "examples": [
+          {
+            "n": 1,
+            "zh": "哥哥比姐姐高。"
+          },
+          {
+            "n": 2,
+            "zh": "今天比昨天热。"
+          },
+          {
+            "n": 3,
+            "zh": "（今天的西瓜）比昨天便宜。"
+          },
+          {
+            "n": 4,
+            "zh": "哥哥没有姐姐高。"
+          },
+          {
+            "n": 5,
+            "zh": "今天没有昨天热。"
+          },
+          {
+            "n": 6,
+            "zh": "西瓜没有苹果便宜。"
+          },
+          {
+            "n": 7,
+            "zh": "西瓜比苹果贵两块钱。"
+          },
+          {
+            "n": 8,
+            "zh": "我的学习比他好一点儿。"
+          },
+          {
+            "n": 9,
+            "zh": "今天比昨天热得多。"
+          },
+          {
+            "n": 10,
+            "zh": "她比我们老师小两岁。"
+          }
+        ]
+      },
+      {
+        "n": 3,
+        "title_zh": "助动词“可能”",
+        "title_en": "The Auxiliary Verb “可能”",
+        "explanation_zh": "“可能”表示估计、也许、或许。常用在动词前，也可用在主语前。例如：",
+        "explanation_en": "It means “maybe” indicating an estimation. It can be used before the verb or subject of a sentence. For example:",
+        "examples": [
+          {
+            "n": 1,
+            "zh": "他可能早就知道这件事情了。"
+          },
+          {
+            "n": 2,
+            "zh": "可能我明天不来上课了。"
+          },
+          {
+            "n": 3,
+            "zh": "你可能不认识她。"
+          }
+        ]
+      }
+    ],
+    "exercises": [
+      {
+        "n": 1,
+        "type_zh": "分角色朗读课文",
+        "instruction_zh": "分角色朗读课文",
+        "instruction_en": "Role-play the dialogs.",
+        "items": []
+      },
+      {
+        "n": 2,
+        "type_zh": "回答问题",
+        "instruction_zh": "根据课文内容回答问题",
+        "instruction_en": "Answer the questions based on the dialogs.",
+        "items": [
+          {
+            "n": 1,
+            "zh": "昨天和王方一起唱歌的人是谁？",
+            "pinyin": "Zuótiān hé Wáng Fāng yìqǐ chàng gē de rén shì shéi?"
+          },
+          {
+            "n": 2,
+            "zh": "左边看报纸的女孩子是谁？",
+            "pinyin": "Zuǒbian kàn bàozhǐ de nǚ háizi shì shéi?"
+          },
+          {
+            "n": 3,
+            "zh": "她的哥哥25岁了，她多大了？",
+            "pinyin": "Tā de gēge èrshíwǔ suì le, tā duō dà le?"
+          },
+          {
+            "n": 4,
+            "zh": "昨天的西瓜可能卖多少钱？",
+            "pinyin": "Zuótiān de xīguā kěnéng mài duōshao qián?"
+          },
+          {
+            "n": 5,
+            "zh": "王老师是新老师吗？",
+            "pinyin": "Wáng lǎoshī shì xīn lǎoshī ma?"
+          }
+        ]
+      },
+      {
+        "n": 3,
+        "type_zh": "描述图片",
+        "instruction_zh": "用本课新学的语言点和词语描述图片",
+        "instruction_en": "Describe the pictures using the newly-learned language points and words.",
+        "items": [
+          {
+            "n": 1,
+            "zh": "绿苹果比红苹果________。",
+            "pinyin": "Lǜ píngguǒ bǐ hóng píngguǒ ______.",
+            "picture_desc_en": "many green apples with one red apple in the middle"
+          },
+          {
+            "n": 2,
+            "zh": "姐姐比我________。",
+            "pinyin": "Jiějie bǐ wǒ ______.",
+            "picture_desc_en": "a young girl and an older young woman resting their chins on their hands, looking at each other and smiling"
+          },
+          {
+            "n": 3,
+            "zh": "昨天35°，今天没有________。",
+            "pinyin": "Zuótiān sānshíwǔ dù, jīntiān méiyǒu ______.",
+            "picture_desc_en": "a weather app on tablet screens showing a sun and “32°”"
+          },
+          {
+            "n": 4,
+            "zh": "哥哥学习很好，我没有________。",
+            "pinyin": "Gēge xuéxí hěn hǎo, wǒ méiyǒu ______.",
+            "picture_desc_en": "a boy at a table holding his head with one hand, looking unhappy, a man beside him with his arm around the boy"
+          }
+        ]
+      }
+    ],
+    "characters": {
+      "knowledge_title_zh": "汉字偏旁“疒”和“冫”",
+      "knowledge_zh": "偏旁 | 解释 | 例字\n疒 | 病字头，一般与疾病有关。 | 病 bìng、疯 fēng\n冫 | 两点水，一般与冰、寒冷有关。 | 冷 lěng、冰 bīng",
+      "knowledge_en": "Chinese Radicals: “疒” and “冫” — The radical “疒” is usually related to diseases: 病 bìng disease; to be ill; 疯 fēng mad, crazy. The two-drop radical “冫” is usually related to ice or coldness: 冷 lěng cold; 冰 bīng ice.",
+      "characters": [
+        {
+          "zh": "病",
+          "pinyin": "bìng",
+          "note_zh": "偏旁“疒（病字头）”例字（disease; to be ill）"
+        },
+        {
+          "zh": "疯",
+          "pinyin": "fēng",
+          "note_zh": "偏旁“疒（病字头）”例字（mad, crazy）"
+        },
+        {
+          "zh": "冷",
+          "pinyin": "lěng",
+          "note_zh": "偏旁“冫（两点水）”例字（cold）"
+        },
+        {
+          "zh": "冰",
+          "pinyin": "bīng",
+          "note_zh": "偏旁“冫（两点水）”例字（ice）"
+        }
+      ]
+    },
+    "application": [
+      {
+        "title_zh": "双人活动",
+        "instruction_zh": "两人一组，用“比”字句练习说句子。一个同学说肯定句，另一个同学把肯定句变成否定句。例如：",
+        "instruction_en": "Work in pairs and make sentences with “比”. One says an affirmative sentence and the other turns it into a negative one. For example:",
+        "example_zh": [
+          "表格：肯定句 Affirmative | 否定句 Negative",
+          "西瓜比苹果大。 Xīguā bǐ píngguǒ dà. | 苹果没有西瓜大。 Píngguǒ méiyǒu xīguā dà.",
+          "（另有3行空白）"
+        ]
+      },
+      {
+        "title_zh": "小组活动",
+        "instruction_zh": "把全班学生分成两个大组，每组学生轮流用“比”字句说句子。句子的内容要和班里的实际情况相符合。例如：",
+        "instruction_en": "Divide the whole class into two big groups. Students in each group take turns to say a “比” sentence about an actual situation of the class. For example:",
+        "example_zh": [
+          "表格：（序号） | A组 Group A | B组 Group B",
+          "1 | 我的眼睛比安妮（B组学生）大。 Wǒ de yǎnjing bǐ Ānni dà. | 我的手机比大卫（A组学生）的贵三百块钱。 Wǒ de shǒujī bǐ Dàwèi de guì sānbǎi kuài qián.",
+          "（另有3行空白）"
+        ]
+      }
     ]
-   },
-   {
-    "instruction_zh": "试着说说下面这些词语的反义词",
-    "instruction_en": "Try to say the antonyms of the following words.",
-    "items": [
-     "贵——（　　） guì",
-     "对——（　　） duì",
-     "左——（　　） zuǒ",
-     "来——（　　） lái",
-     "前——（　　） qián",
-     "里——（　　） lǐ"
-    ]
-   }
-  ],
-  "pronunciation": [
-   {
-    "title_zh": "正反问句的句调",
-    "rows": [
-     "Míngtiān nǐ qù bu qù yínháng? （1）明天你去不去银行？↘［重读点：去］",
-     "Zhè jiàn yīfu nǐ xǐhuan bu xǐhuan? （2）这件衣服你喜欢不喜欢？↘［重读点：喜欢］",
-     "Shíyī diǎn duō le, nǐ shuì bu shuì jiào? （3）十一点多了，你睡不睡觉？↘［重读点：睡］"
+  },
+  "teacher": {
+    "ref": {
+      "book": "teacher",
+      "pages": [
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86
+      ]
+    },
+    "objectives_zh": [
+      "重点词语：学生能够熟练掌握“唱歌、女、右边、便宜、说话”的词义和用法",
+      "语言点：学生能够了解并掌握：（1）动词结构做定语（2）“比”字句（1）（3）助动词“可能”",
+      "语音：学生能够掌握正反问句的句调，并能正确朗读",
+      "汉字：学生能够：（1）熟练认读本课生词（2）了解“疒（病字头）、冫（两点水）”所表示的意思",
+      "功能：学生能够：（1）比较事物的性质、程度的差别和高低（“比”字句）（2）表达估计或猜测（可能）"
+    ],
+    "steps": [
+      {
+        "title_zh": "一 复习旧课",
+        "body_zh": "1. 教师出示第10课生词卡片，要求学生快速认读下列生词：\n上课、帮助、哥哥、鸡蛋、西瓜、正在、手机、洗衣服\n2. 教师带领学生辨析下列字形相近的汉字：\n课____　机____　洗____　面____\n果____　几____　先____　而____\n3. 教师根据第10课重点内容，要求学生快速回答问题：\n上课的时候，学生不能做什么？\n晚上十一点多了，弟弟还在看电视，妈妈会说什么？\n大卫病了，医生告诉他什么？\n天气太热了，我们不要做什么？\n长时间看电视对什么不好？\n每天跑步来学校上课好吗？"
+      },
+      {
+        "title_zh": "二 学习新课 1 热身",
+        "body_zh": "热身1：教师先带领学生根据图片选出正确的词语，然后分组练习。一组学生看图片说出正确的词语；另一组学生看词语，说出图片的编号。\n答案：①F　②C　③B　④D　⑤A　⑥E\n热身2：教师可以先让学生自己完成，然后请学生说出自己的答案，熟练后请学生不看课本，互相提问反义词。\n例如：一个学生说“左”，另一个学生快速说出“右”。"
+      },
+      {
+        "title_zh": "2 生词",
+        "body_zh": "（1）生词快速认读及正音\n唱歌、男、女、孩子、右边、比、便宜、说话、可能、去年、姓\n• 教师可以用PPT依次快速展示生词；\n• 教师领读，学生齐读；\n• 学生接龙式读一遍，每人读两个。\n（2）重点生词扩展及常用搭配\n唱歌—唱一首歌—会唱歌—一起唱歌\n　—你会唱歌吗？\n　—我想给大家唱一首歌。\n　—昨天和你一起唱歌的人是谁？\n女—女孩子—女同学—那个女老师—看报纸的女孩子\n　—你认识那个女老师吗？\n　—我不知道这个女同学是哪个班的。\n　—这个看报纸的女孩子是你姐姐吗？\n右边←→左边\n　—在右边—我的右边—右边的那个学生\n　—商店在我们学校的右边。\n　—我右边是个漂亮的女孩子。\n　—右边写字的那个人是我哥哥。\n便宜—很便宜—不便宜—便宜一些—便宜一点儿\n　—这个商店的东西很便宜。\n　—今天的水果比昨天便宜一点儿。\n　—苹果也比昨天便宜一些。\n说话—不说话—说很多话—说一会儿话—说话的那个人\n　—上课的时候，你为什么不说话？\n　—我想和朋友说一会儿话，你先走吧。\n　—说话的那个人就是我的汉语老师。\n练习册相关练习：第97页／一／第一部分，第100-101页／二／第一、二部分"
+      },
+      {
+        "title_zh": "3 语言点（1）动词结构做定语",
+        "body_zh": "① 语言点解析：\n动词或动词短语做定语时，定语和后边的中心语之间一般要用“的”。如果不用“的”，有时前边的动词或动词短语会和后面的名词中心语发生动宾关系，结构和意义就不同了。\n［句型框］动词／动词短语＋的＋中心语\n② 语言点导入：\n教师可以用提问的方式导入语言点。\n教师：这是谁买的书？\n学生：这是我买的书。\n教师：这是在哪儿买的书？\n学生：这是在书店买的书。\n教师：和你一起照相的人是谁？\n学生：和我一起照相的人是我朋友。\n③ 语言点操练：\n教师让学生大声朗读下列句子。\n昨天买的苹果很便宜。\n和你说话的那个人是谁？\n你写的汉字真漂亮！\n你找的那件衣服在外边呢。\n④ 语言点扩展练习：\n连线组成句子。\n妈妈做的菜　　　　　　是我爸爸。\n我昨天买的自行车　　　是我大学同学。\n左边看报纸的那个人　　真好吃。\n和你一起唱歌的女孩　　是白色的。"
+      },
+      {
+        "title_zh": "3 语言点（2）“比”字句（1）",
+        "body_zh": "① 语言点解析：\n“比”字句表示比较关系，“比”字句的谓语可以是形容词，有时在形容词之后，还可以加上具体的数量表示差别。\n［句型框］A＋比＋B＋形容词\n［句型框］A＋比＋B＋形容词＋数量短语\n［句型框］A＋没有＋B＋形容词\n② 语言点导入：\n教师可利用图片或者实物导入语言点，比如人物、水果、衣服等图片，也可以是苹果、书等实物。\n教师：红苹果三块五，黄苹果三块，用“比”字句怎么说？\n学生：红苹果比黄苹果贵。\n教师：大卫25岁，王方27岁，用“比”字句怎么说？\n学生：大卫比王方小两岁。\n③ 语言点操练：\n教师先让学生完成句子，然后请学生大声朗读。\n难　好吃　贵五十块钱　热得多\n上个星期比这个星期________。\n我觉得汉语比英语________。\n这件白衣服比那件红的________。\n妈妈做的饭比爸爸做的________。\n④ 语言点扩展练习：\n教师带领学生做课本第87页的双人活动。"
+      },
+      {
+        "title_zh": "3 语言点（3）助动词“可能”",
+        "body_zh": "① 语言点解析：\n助动词“可能”表示估计、也许，用来描述客观的可能性，一般只用于未发生的动作或虚拟的情况，可用在主语前或主语后。\n② 语言点导入：\n教师可采用提问的方式导入语言点。\n教师：八点了，大卫怎么还没来上课？\n学生：他今天可能不来上课了。／他可能一会儿就来。\n教师：今天天气不太好，会不会下雨？\n学生：可能下午有雨。\n③ 语言点操练：\n请学生大声朗读下面的句子。\n老师今天没来上课，可能生病了。\n妈妈下个星期可能来北京。\n这件白衣服可能比那件红的贵一点儿。\n可能他学习汉语的时间比我长。\n④ 语言点扩展练习：\n请每个学生用“可能”说一个句子，说出来的句子不能重复。"
+      },
+      {
+        "title_zh": "4 课文",
+        "body_zh": "课文1\n（1）让学生听两遍录音并回答下列问题：\n王方昨天做什么了？\n谁和王方一起去唱歌？\n和王方一起唱歌的人是她的男朋友吗？\n王方是怎么认识这个朋友的？\n（2）教师领读课文两遍，然后让学生分角色朗读课文。\n（3）教师用PPT展示课文提示词，请学生再次通读一遍课文后，根据提示词复述课文。\nA：王方，昨天……是谁？\nB：一个朋友。\nA：……？是不是……？\nB：不是不是，我同学……，昨天……。\n（4）让学生用王方的口气把本段对话改为叙述体。\n昨天我……，这个朋友……，昨天……。\n课文2\n（1）让学生听两遍录音并回答下列问题：\n看报纸的女孩子是谁？\n哥哥正在做什么呢？\n哥哥多大了？\nB多大了？\n（2）教师带领学生齐读课文两遍，然后请学生分角色朗读课文。\n（3）教师用PPT展示课文提示词，请学生再次通读一遍课文后，根据提示词复述课文。\nA：左边……的女孩子是……吗？\nB：是，右边……是我哥哥。\nA：你哥哥……？\nB：25岁，他比我……。\n课文3\n（1）让学生听两遍录音，并回答下列问题：\n男的想买什么？\n今天的西瓜多少钱？\n昨天的西瓜可能多少钱？\n还有什么水果比昨天便宜？\n（2）教师带领学生齐读课文两遍，然后请学生分角色朗读课文。\n（3）教师给出提示表格，请学生根据课文内容，自己设计情景，进行角色扮演。\n水果 | 昨天 | 今天\n西瓜 | 四块 | 三块五\n苹果 | 三块 | 两块五\n课文4\n（1）让学生听两遍录音并回答下列问题：\n那个汉语老师正在做什么呢？\n汉语老师是新来的吗？\n汉语老师是什么时候来的？\n汉语老师姓什么？多大了？\n（2）教师带领学生齐读课文两遍，然后请学生分角色朗读课文。\n（3）教师用PPT展示课文提示词，请学生再次通读一遍课文后，根据提示词复述课文。\nA：前边……就是我的汉语老师。你……她。\nB：是……吗？\nA：是……的，她姓……，28岁。\nB：她比我们老师……。"
+      },
+      {
+        "title_zh": "5 语音",
+        "body_zh": "正反问句的句调：\n① 知识点解析\n正反问句中的肯定部分重读，否定部分轻读，肯定和否定重叠的部分语速较快，重音后的部分，语调逐渐下降。例如：\n下个星期我们还考不考汉字了？↘［重读点：考］\n你有没有时间和我们一起去看这个新电影？↘［重读点：有］\n你想不想吃我做的鱼？↘［重读点：想］\n② 语音练习\n教师可利用课本第86页的例句进行练习。可先领读句子，使学生掌握正反问句的句调特点，然后让学生个别读，教师纠正错误。\n练习册相关练习：第104页／三"
+      },
+      {
+        "title_zh": "6 汉字",
+        "body_zh": "① 知识点解析：\n偏旁\n疒：病字头，由它构成的汉字一般与疾病有关系。\n冫：两点水，由它构成的汉字一般与冰、寒冷有关系。\n② 汉字练习：\n• 教师板书本课偏旁“疒、冫”，提示学生注意这两个偏旁的笔画和笔顺，并书写各自的代表汉字，帮助学生识记该偏旁的意义。\n• 补充练习\na. 找出下列含有病字头和两点水的汉字\n病　冷　治　冯\n准　历　症　疯\nb. 拆分下列汉字\n歌：____　____　便：____　____\n宜：____　____　能：____　____\nc. 用下列偏旁和部件组合成新汉字\n更　哥　田　亻　力　舌　讠　欠\n____　____　____　____\n练习册相关练习：第105页／四"
+      },
+      {
+        "title_zh": "7 补充课堂活动——你做我说",
+        "body_zh": "把学生分为四人一组，其中两人摆造型，另外两人用语言描述出来。\n例如：\n左边的人在看书，右边的人在玩儿手机。\n男的坐在前边，女的坐在后边。\n左边的人给右边的人打电话呢。"
+      },
+      {
+        "title_zh": "8 本课小结",
+        "body_zh": "• 语言点：动词结构做定语\n　“比”字句（1）\n　助动词“可能”\n• 语音：正反问句的句调\n• 汉字：偏旁“疒、冫”"
+      },
+      {
+        "title_zh": "附注：建议教学用具",
+        "body_zh": "1. 生词卡片：第10、11课生词卡片\n2. 图片：人物、水果、衣服等"
+      }
     ],
     "notes_zh": [
-     "句中肯定部分重读，否定部分轻读，肯定否定重叠部分语速较快，重音后语调逐渐下降。",
-     "［重读点］为书中汉字下的红点所标示的字；“↘”为书中句末的下降箭头（书中无文字说明）。"
+      "动词或动词短语做定语时，定语和后边的中心语之间一般要用“的”。如果不用“的”，有时前边的动词或动词短语会和后面的名词中心语发生动宾关系，结构和意义就不同了。",
+      "助动词“可能”表示估计、也许，用来描述客观的可能性，一般只用于未发生的动作或虚拟的情况，可用在主语前或主语后。"
     ],
-    "notes_en": [
-     "Intonation of an Affirmative-Negative Question",
-     "The affirmative part is stressed and the negative part is unstressed. The affirmative-negative phrase is read fast, and the intonation falls gradually after the stress."
-    ]
-   }
-  ],
-  "texts": [
-   {
-    "n": 1,
-    "title_zh": "在歌厅",
-    "title_en": "In a karaoke bar",
-    "kind": "dialogue",
-    "lines": [
-     {
-      "speaker": "A",
-      "zh": "王方，昨天和你一起唱歌的人是谁？",
-      "pinyin": "Wáng Fāng, zuótiān hé nǐ yìqǐ chàng gē de rén shì shéi?"
-     },
-     {
-      "speaker": "B",
-      "zh": "一个朋友。",
-      "pinyin": "Yí ge péngyou."
-     },
-     {
-      "speaker": "A",
-      "zh": "什么朋友？是不是男朋友？",
-      "pinyin": "Shénme péngyou? Shì bu shì nánpéngyou?"
-     },
-     {
-      "speaker": "B",
-      "zh": "不是不是，我同学介绍的，昨天第一次见。",
-      "pinyin": "Bú shì bú shì, wǒ tóngxué jièshào de, zuótiān dì yī cì jiàn."
-     }
+    "warmup_answers_zh": [
+      "热身1 答案：①F　②C　③B　④D　⑤A　⑥E",
+      "热身2 例如：一个学生说“左”，另一个学生快速说出“右”。"
     ],
-    "english_version": "A: Wang Fang, who was the guy with you in the karaoke yesterday?\nB: A friend.\nA: What friend? Boyfriend?\nB: No. My classmate set me up with him. We met only yesterday.",
-    "new_words": [
-     {
-      "n": 1,
-      "zh": "唱歌",
-      "pinyin": "chàng gē",
-      "pos": "v.",
-      "en": "to sing",
-      "text": 1
-     },
-     {
-      "n": 2,
-      "zh": "男",
-      "pinyin": "nán",
-      "pos": "adj.",
-      "en": "man, male",
-      "text": 1
-     }
-    ]
-   },
-   {
-    "n": 2,
-    "title_zh": "在宿舍",
-    "title_en": "In the dorm",
-    "kind": "dialogue",
-    "lines": [
-     {
-      "speaker": "A",
-      "zh": "左边这个看报纸的女孩子是你姐姐吗？",
-      "pinyin": "Zuǒbian zhège kàn bàozhǐ de nǚ háizi shì nǐ jiějie ma?"
-     },
-     {
-      "speaker": "B",
-      "zh": "是，右边写字的那个人是我哥哥。",
-      "pinyin": "Shì, yòubian xiě zì de nàge rén shì wǒ gēge."
-     },
-     {
-      "speaker": "A",
-      "zh": "你哥哥多大？",
-      "pinyin": "Nǐ gēge duō dà?"
-     },
-     {
-      "speaker": "B",
-      "zh": "25岁，他比我大三岁。",
-      "pinyin": "Èrshíwǔ suì, tā bǐ wǒ dà sān suì."
-     }
+    "text_questions": [
+      {
+        "text": 1,
+        "q_zh": "王方昨天做什么了？"
+      },
+      {
+        "text": 1,
+        "q_zh": "谁和王方一起去唱歌？"
+      },
+      {
+        "text": 1,
+        "q_zh": "和王方一起唱歌的人是她的男朋友吗？"
+      },
+      {
+        "text": 1,
+        "q_zh": "王方是怎么认识这个朋友的？"
+      },
+      {
+        "text": 2,
+        "q_zh": "看报纸的女孩子是谁？"
+      },
+      {
+        "text": 2,
+        "q_zh": "哥哥正在做什么呢？"
+      },
+      {
+        "text": 2,
+        "q_zh": "哥哥多大了？"
+      },
+      {
+        "text": 2,
+        "q_zh": "B多大了？"
+      },
+      {
+        "text": 3,
+        "q_zh": "男的想买什么？"
+      },
+      {
+        "text": 3,
+        "q_zh": "今天的西瓜多少钱？"
+      },
+      {
+        "text": 3,
+        "q_zh": "昨天的西瓜可能多少钱？"
+      },
+      {
+        "text": 3,
+        "q_zh": "还有什么水果比昨天便宜？"
+      },
+      {
+        "text": 4,
+        "q_zh": "那个汉语老师正在做什么呢？"
+      },
+      {
+        "text": 4,
+        "q_zh": "汉语老师是新来的吗？"
+      },
+      {
+        "text": 4,
+        "q_zh": "汉语老师是什么时候来的？"
+      },
+      {
+        "text": 4,
+        "q_zh": "汉语老师姓什么？多大了？"
+      }
     ],
-    "english_version": "A: Is the girl on the left reading a newspaper your elder sister?\nB: Yes. And the guy on the right writing is my elder brother.\nA: How old is he?\nB: 25. He is three years older than me.",
-    "new_words": [
-     {
-      "n": 3,
-      "zh": "女",
-      "pinyin": "nǚ",
-      "pos": "adj.",
-      "en": "woman, female",
-      "text": 2
-     },
-     {
-      "n": 4,
-      "zh": "孩子",
-      "pinyin": "háizi",
-      "pos": "n.",
-      "en": "child, kid",
-      "text": 2
-     },
-     {
-      "n": 5,
-      "zh": "右边",
-      "pinyin": "yòubian",
-      "pos": "n.",
-      "en": "right, right side",
-      "text": 2
-     },
-     {
-      "n": 6,
-      "zh": "比",
-      "pinyin": "bǐ",
-      "pos": "prep.",
-      "en": "than, (superior or inferior) to",
-      "text": 2
-     }
-    ]
-   },
-   {
-    "n": 3,
-    "title_zh": "在商店",
-    "title_en": "At a store",
-    "kind": "dialogue",
-    "lines": [
-     {
-      "speaker": "A",
-      "zh": "今天的西瓜怎么卖？",
-      "pinyin": "Jīntiān de xīguā zěnme mài?"
-     },
-     {
-      "speaker": "B",
-      "zh": "三块五一斤。",
-      "pinyin": "Sān kuài wǔ yì jīn."
-     },
-     {
-      "speaker": "A",
-      "zh": "比昨天便宜。",
-      "pinyin": "Bǐ zuótiān piányi."
-     },
-     {
-      "speaker": "B",
-      "zh": "是，苹果也比昨天便宜一些。您来点儿吧。",
-      "pinyin": "Shì, píngguǒ yě bǐ zuótiān piányi yìxiē. Nín lái diǎnr ba."
-     }
-    ],
-    "english_version": "A: What’s the price of watermelons today?\nB: Three yuan and a half per 500 grams.\nA: It’s cheaper than the price yesterday.\nB: Yes. The apples are also cheaper. Why not take some?",
-    "new_words": [
-     {
-      "n": 7,
-      "zh": "便宜",
-      "pinyin": "piányi",
-      "pos": "adj.",
-      "en": "cheap, inexpensive",
-      "text": 3
-     }
-    ]
-   },
-   {
-    "n": 4,
-    "title_zh": "在学校",
-    "title_en": "In the school",
-    "kind": "dialogue",
-    "lines": [
-     {
-      "speaker": "A",
-      "zh": "前边说话的那个人就是我的汉语老师。你可能不认识她。",
-      "pinyin": "Qiánbian shuō huà de nàge rén jiù shì wǒ de Hànyǔ lǎoshī. Nǐ kěnéng bú rènshi tā."
-     },
-     {
-      "speaker": "B",
-      "zh": "是新来的汉语老师吗？",
-      "pinyin": "Shì xīn lái de Hànyǔ lǎoshī ma?"
-     },
-     {
-      "speaker": "A",
-      "zh": "是去年来的，她姓王，28岁。",
-      "pinyin": "Shì qùnián lái de, tā xìng Wáng, èrshíbā suì."
-     },
-     {
-      "speaker": "B",
-      "zh": "她比我们老师小两岁。",
-      "pinyin": "Tā bǐ wǒmen lǎoshī xiǎo liǎng suì."
-     }
-    ],
-    "english_version": "A: The woman speaking in front of us is my Chinese teacher. You may not know her.\nB: Is she a new-comer?\nA: She came here last year. Her family name is Wang, 28 years old.\nB: She is two years younger than my teacher.",
-    "new_words": [
-     {
-      "n": 8,
-      "zh": "说话",
-      "pinyin": "shuō huà",
-      "pos": "v.",
-      "en": "to speak, to say, to talk",
-      "text": 4
-     },
-     {
-      "n": 9,
-      "zh": "可能",
-      "pinyin": "kěnéng",
-      "pos": "aux.",
-      "en": "maybe, perhaps, probably",
-      "text": 4
-     },
-     {
-      "n": 10,
-      "zh": "去年",
-      "pinyin": "qùnián",
-      "pos": "n.",
-      "en": "last year",
-      "text": 4
-     },
-     {
-      "n": 11,
-      "zh": "姓",
-      "pinyin": "xìng",
-      "pos": "v.",
-      "en": "family name, surname",
-      "text": 4
-     }
-    ]
-   }
-  ],
-  "grammar": [
-   {
-    "n": 1,
-    "title_zh": "动词结构做定语",
-    "title_en": "A Verb (Phrase) Used as an Attributive Modifier",
-    "explanation_zh": "动词或动词短语做定语时，定语和中心语之间要加“的”。例如：",
-    "explanation_en": "When a verb or verb phrase is used as an attributive modifier, “的” should be put between the modifier and the word modified. For example:",
-    "structure_rows": [
-     "定语（Attributive Modifier） | 的 | 中心语（Word Modified）",
-     "新买 | 的 | 自行车",
-     "我妈妈做 | 的 | 饭",
-     "和你一起唱歌 | 的 | 人"
-    ],
-    "examples": [
-     {
-      "n": 1,
-      "zh": "新买的自行车"
-     },
-     {
-      "n": 2,
-      "zh": "我妈妈做的饭"
-     },
-     {
-      "n": 3,
-      "zh": "和你一起唱歌的人"
-     }
-    ]
-   },
-   {
-    "n": 2,
-    "title_zh": "“比”字句（1）",
-    "title_en": "The “比” Sentence (1)",
-    "explanation_zh": "用“比”表示比较的句子叫“比”字句。“比”字句的谓语可以是形容词。例如：\n“比”字句的否定形式可以用“A没有B……”表示。例如：\n要表达事物之间的差别时，用具体数量表示具体差别，用“一点儿”“一些”表示差别不大，用“多”“得多”表示差别大。例如：",
-    "explanation_en": "A “比” sentence is a sentence using “比” to make a comparison. The predicate of the sentence can be an adjective. For example:\n“A没有B……” is the negative form of a “比” sentence. For example:\nWhen describing the difference between things, a specific number is used to specify the difference, “一点儿” or “一些” indicates the difference is slight, and “多” or “得多” indicates the difference is significant. For example:",
-    "structure_rows": [
-     "A | 比 | B | Adj",
-     "哥哥 | 比 | 姐姐 | 高。",
-     "今天 | 比 | 昨天 | 热。",
-     "（今天的西瓜） | 比 | 昨天 | 便宜。",
-     "A | 没有 | B | Adj",
-     "哥哥 | 没有 | 姐姐 | 高。",
-     "今天 | 没有 | 昨天 | 热。",
-     "西瓜 | 没有 | 苹果 | 便宜。",
-     "A | 比 | B | Adj | 数量短语（Num-M）",
-     "西瓜 | 比 | 苹果 | 贵 | 两块钱。",
-     "我的学习 | 比 | 他 | 好 | 一点儿。",
-     "今天 | 比 | 昨天 | 热 | 得多。",
-     "她 | 比 | 我们老师 | 小 | 两岁。"
-    ],
-    "examples": [
-     {
-      "n": 1,
-      "zh": "哥哥比姐姐高。"
-     },
-     {
-      "n": 2,
-      "zh": "今天比昨天热。"
-     },
-     {
-      "n": 3,
-      "zh": "（今天的西瓜）比昨天便宜。"
-     },
-     {
-      "n": 4,
-      "zh": "哥哥没有姐姐高。"
-     },
-     {
-      "n": 5,
-      "zh": "今天没有昨天热。"
-     },
-     {
-      "n": 6,
-      "zh": "西瓜没有苹果便宜。"
-     },
-     {
-      "n": 7,
-      "zh": "西瓜比苹果贵两块钱。"
-     },
-     {
-      "n": 8,
-      "zh": "我的学习比他好一点儿。"
-     },
-     {
-      "n": 9,
-      "zh": "今天比昨天热得多。"
-     },
-     {
-      "n": 10,
-      "zh": "她比我们老师小两岁。"
-     }
-    ]
-   },
-   {
-    "n": 3,
-    "title_zh": "助动词“可能”",
-    "title_en": "The Auxiliary Verb “可能”",
-    "explanation_zh": "“可能”表示估计、也许、或许。常用在动词前，也可用在主语前。例如：",
-    "explanation_en": "It means “maybe” indicating an estimation. It can be used before the verb or subject of a sentence. For example:",
-    "examples": [
-     {
-      "n": 1,
-      "zh": "他可能早就知道这件事情了。"
-     },
-     {
-      "n": 2,
-      "zh": "可能我明天不来上课了。"
-     },
-     {
-      "n": 3,
-      "zh": "你可能不认识她。"
-     }
-    ]
-   }
-  ],
-  "exercises": [
-   {
-    "n": 1,
-    "type_zh": "分角色朗读课文",
-    "instruction_zh": "分角色朗读课文",
-    "instruction_en": "Role-play the dialogs.",
-    "items": []
-   },
-   {
-    "n": 2,
-    "type_zh": "回答问题",
-    "instruction_zh": "根据课文内容回答问题",
-    "instruction_en": "Answer the questions based on the dialogs.",
-    "items": [
-     {
-      "n": 1,
-      "zh": "昨天和王方一起唱歌的人是谁？",
-      "pinyin": "Zuótiān hé Wáng Fāng yìqǐ chàng gē de rén shì shéi?"
-     },
-     {
-      "n": 2,
-      "zh": "左边看报纸的女孩子是谁？",
-      "pinyin": "Zuǒbian kàn bàozhǐ de nǚ háizi shì shéi?"
-     },
-     {
-      "n": 3,
-      "zh": "她的哥哥25岁了，她多大了？",
-      "pinyin": "Tā de gēge èrshíwǔ suì le, tā duō dà le?"
-     },
-     {
-      "n": 4,
-      "zh": "昨天的西瓜可能卖多少钱？",
-      "pinyin": "Zuótiān de xīguā kěnéng mài duōshao qián?"
-     },
-     {
-      "n": 5,
-      "zh": "王老师是新老师吗？",
-      "pinyin": "Wáng lǎoshī shì xīn lǎoshī ma?"
-     }
-    ]
-   },
-   {
-    "n": 3,
-    "type_zh": "描述图片",
-    "instruction_zh": "用本课新学的语言点和词语描述图片",
-    "instruction_en": "Describe the pictures using the newly-learned language points and words.",
-    "items": [
-     {
-      "n": 1,
-      "zh": "绿苹果比红苹果________。",
-      "pinyin": "Lǜ píngguǒ bǐ hóng píngguǒ ______.",
-      "picture_desc_en": "many green apples with one red apple in the middle"
-     },
-     {
-      "n": 2,
-      "zh": "姐姐比我________。",
-      "pinyin": "Jiějie bǐ wǒ ______.",
-      "picture_desc_en": "a young girl and an older young woman resting their chins on their hands, looking at each other and smiling"
-     },
-     {
-      "n": 3,
-      "zh": "昨天35°，今天没有________。",
-      "pinyin": "Zuótiān sānshíwǔ dù, jīntiān méiyǒu ______.",
-      "picture_desc_en": "a weather app on tablet screens showing a sun and “32°”"
-     },
-     {
-      "n": 4,
-      "zh": "哥哥学习很好，我没有________。",
-      "pinyin": "Gēge xuéxí hěn hǎo, wǒ méiyǒu ______.",
-      "picture_desc_en": "a boy at a table holding his head with one hand, looking unhappy, a man beside him with his arm around the boy"
-     }
-    ]
-   }
-  ],
-  "characters": {
-   "knowledge_title_zh": "汉字偏旁“疒”和“冫”",
-   "knowledge_zh": "偏旁 | 解释 | 例字\n疒 | 病字头，一般与疾病有关。 | 病 bìng、疯 fēng\n冫 | 两点水，一般与冰、寒冷有关。 | 冷 lěng、冰 bīng",
-   "knowledge_en": "Chinese Radicals: “疒” and “冫” — The radical “疒” is usually related to diseases: 病 bìng disease; to be ill; 疯 fēng mad, crazy. The two-drop radical “冫” is usually related to ice or coldness: 冷 lěng cold; 冰 bīng ice.",
-   "characters": [
-    {
-     "zh": "病",
-     "pinyin": "bìng",
-     "note_zh": "偏旁“疒（病字头）”例字（disease; to be ill）"
-    },
-    {
-     "zh": "疯",
-     "pinyin": "fēng",
-     "note_zh": "偏旁“疒（病字头）”例字（mad, crazy）"
-    },
-    {
-     "zh": "冷",
-     "pinyin": "lěng",
-     "note_zh": "偏旁“冫（两点水）”例字（cold）"
-    },
-    {
-     "zh": "冰",
-     "pinyin": "bīng",
-     "note_zh": "偏旁“冫（两点水）”例字（ice）"
-    }
-   ]
+    "summary_zh": "• 语言点：动词结构做定语\n　“比”字句（1）\n　助动词“可能”\n• 语音：正反问句的句调\n• 汉字：偏旁“疒、冫”"
   },
-  "application": [
-   {
-    "title_zh": "双人活动",
-    "instruction_zh": "两人一组，用“比”字句练习说句子。一个同学说肯定句，另一个同学把肯定句变成否定句。例如：",
-    "instruction_en": "Work in pairs and make sentences with “比”. One says an affirmative sentence and the other turns it into a negative one. For example:",
-    "example_zh": [
-     "表格：肯定句 Affirmative | 否定句 Negative",
-     "西瓜比苹果大。 Xīguā bǐ píngguǒ dà. | 苹果没有西瓜大。 Píngguǒ méiyǒu xīguā dà.",
-     "（另有3行空白）"
-    ]
-   },
-   {
-    "title_zh": "小组活动",
-    "instruction_zh": "把全班学生分成两个大组，每组学生轮流用“比”字句说句子。句子的内容要和班里的实际情况相符合。例如：",
-    "instruction_en": "Divide the whole class into two big groups. Students in each group take turns to say a “比” sentence about an actual situation of the class. For example:",
-    "example_zh": [
-     "表格：（序号） | A组 Group A | B组 Group B",
-     "1 | 我的眼睛比安妮（B组学生）大。 Wǒ de yǎnjing bǐ Ānni dà. | 我的手机比大卫（A组学生）的贵三百块钱。 Wǒ de shǒujī bǐ Dàwèi de guì sānbǎi kuài qián.",
-     "（另有3行空白）"
-    ]
-   }
-  ]
- },
- "teacher": {
-  "ref": {
-   "book": "teacher",
-   "pages": [
+  "workbook": {
+    "ref": {
+      "book": "workbook",
+      "pages": [
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113
+      ]
+    },
+    "sections": [
+      {
+        "n": "一、听力 第一部分",
+        "type_zh": "听力 第一部分",
+        "instruction_zh": "第1–5题：听句子，判断对错",
+        "instruction_en": "Questions 1-5: Decide whether the pictures are right or wrong based on the sentences you hear.",
+        "items": [
+          {
+            "n": "例1",
+            "zh": "我们家有三个人。",
+            "pinyin": "Wǒmen jiā yǒu sān ge rén.",
+            "transcript_zh": "我们家有三个人。",
+            "picture_desc_en": "a smiling family outdoors: a man carrying a child on his shoulders and a woman",
+            "answer": "√",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                105
+              ]
+            }
+          },
+          {
+            "n": "例2",
+            "zh": "我每天坐公共汽车去上班。",
+            "pinyin": "Wǒ měi tiān zuò gōnggòngqìchē qù shàng bān.",
+            "transcript_zh": "我每天坐公共汽车去上班。",
+            "picture_desc_en": "a mountain bicycle",
+            "answer": "×",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                105
+              ]
+            }
+          },
+          {
+            "n": 1,
+            "zh": "",
+            "transcript_zh": "昨天我和朋友们一起去唱歌了。",
+            "picture_desc_en": "a group of young people sitting close together on the floor, smiling at the camera",
+            "answer": "×",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                136
+              ]
+            }
+          },
+          {
+            "n": 2,
+            "zh": "",
+            "transcript_zh": "右边看报纸的那个女孩子是我姐姐。",
+            "picture_desc_en": "three young women reading a newspaper together",
+            "answer": "√",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                136
+              ]
+            }
+          },
+          {
+            "n": 3,
+            "zh": "",
+            "transcript_zh": "他是新来的汉语老师。",
+            "picture_desc_en": "a smiling man and a girl sitting at a table with an open book",
+            "answer": "√",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                136
+              ]
+            }
+          },
+          {
+            "n": 4,
+            "zh": "",
+            "transcript_zh": "北京10℃，我们那儿的天气比北京的冷。",
+            "picture_desc_en": "a sandy beach with a sun lounger under a straw umbrella",
+            "answer": "×",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                136
+              ]
+            }
+          },
+          {
+            "n": 5,
+            "zh": "",
+            "transcript_zh": "她生病了，明天可能不去上课了。",
+            "picture_desc_en": "a little girl holding a tissue to her nose",
+            "answer": "√",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                136
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "一、听力 第二部分",
+        "type_zh": "听力 第二部分",
+        "instruction_zh": "第6–10题：听对话，选择与对话内容一致的图片",
+        "instruction_en": "Questions 6-10: Choose the right picture for each dialogue you hear.",
+        "items": [
+          {
+            "n": "例",
+            "zh": "男：你喜欢什么运动？ Nǐ xǐhuan shénme yùndòng? (What sport do you like?) 女：我最喜欢踢足球。 Wǒ zuì xǐhuan tī zúqiú. (My favorite sport is playing football.)",
+            "transcript_zh": "男：你喜欢什么运动？ 女：我最喜欢踢足球。",
+            "options": {
+              "A": "[picture] a man and a woman sitting together looking at a newspaper, smiling",
+              "B": "[picture] a pile of apples",
+              "C": "[picture] four young people singing into microphones, laughing",
+              "D": "[picture] a young woman juggling a football on her knee on a field",
+              "E": "[picture] a group of young women sitting and chatting around a café table",
+              "F": "[picture] a smiling woman with a girl and a boy at desks in a classroom"
+            },
+            "answer": "D",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                106
+              ]
+            }
+          },
+          {
+            "n": 6,
+            "zh": "",
+            "options": {
+              "A": "[picture] a man and a woman sitting together looking at a newspaper, smiling",
+              "B": "[picture] a pile of apples",
+              "C": "[picture] four young people singing into microphones, laughing",
+              "D": "[picture] a young woman juggling a football on her knee on a field",
+              "E": "[picture] a group of young women sitting and chatting around a café table",
+              "F": "[picture] a smiling woman with a girl and a boy at desks in a classroom"
+            },
+            "transcript_zh": "女：昨天和你一起唱歌的人是谁？ 男：是我女朋友。",
+            "answer": "C",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                136
+              ]
+            }
+          },
+          {
+            "n": 7,
+            "zh": "",
+            "options": {
+              "A": "[picture] a man and a woman sitting together looking at a newspaper, smiling",
+              "B": "[picture] a pile of apples",
+              "C": "[picture] four young people singing into microphones, laughing",
+              "D": "[picture] a young woman juggling a football on her knee on a field",
+              "E": "[picture] a group of young women sitting and chatting around a café table",
+              "F": "[picture] a smiling woman with a girl and a boy at desks in a classroom"
+            },
+            "transcript_zh": "女：右边看报纸的那个是你哥哥吗？ 男：对，他是我哥哥。",
+            "answer": "A",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                136
+              ]
+            }
+          },
+          {
+            "n": 8,
+            "zh": "",
+            "options": {
+              "A": "[picture] a man and a woman sitting together looking at a newspaper, smiling",
+              "B": "[picture] a pile of apples",
+              "C": "[picture] four young people singing into microphones, laughing",
+              "D": "[picture] a young woman juggling a football on her knee on a field",
+              "E": "[picture] a group of young women sitting and chatting around a café table",
+              "F": "[picture] a smiling woman with a girl and a boy at desks in a classroom"
+            },
+            "transcript_zh": "男：她是你们新来的老师吗？ 女：她不是新来的老师，她去年就来了。",
+            "answer": "F",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                136
+              ]
+            }
+          },
+          {
+            "n": 9,
+            "zh": "",
+            "options": {
+              "A": "[picture] a man and a woman sitting together looking at a newspaper, smiling",
+              "B": "[picture] a pile of apples",
+              "C": "[picture] four young people singing into microphones, laughing",
+              "D": "[picture] a young woman juggling a football on her knee on a field",
+              "E": "[picture] a group of young women sitting and chatting around a café table",
+              "F": "[picture] a smiling woman with a girl and a boy at desks in a classroom"
+            },
+            "transcript_zh": "女：今天的苹果比昨天的便宜一些，你来点儿吗？ 男：我再看看吧。",
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                136
+              ]
+            }
+          },
+          {
+            "n": 10,
+            "zh": "",
+            "options": {
+              "A": "[picture] a man and a woman sitting together looking at a newspaper, smiling",
+              "B": "[picture] a pile of apples",
+              "C": "[picture] four young people singing into microphones, laughing",
+              "D": "[picture] a young woman juggling a football on her knee on a field",
+              "E": "[picture] a group of young women sitting and chatting around a café table",
+              "F": "[picture] a smiling woman with a girl and a boy at desks in a classroom"
+            },
+            "transcript_zh": "女：前边说话的那几个人是谁？ 男：不认识，可能是新来的学生吧。",
+            "answer": "E",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                136
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "一、听力 第三部分",
+        "type_zh": "听力 第三部分",
+        "instruction_zh": "第11–15题：听对话，选择正确答案",
+        "instruction_en": "Questions 11-15: Listen to the dialogues and answer the questions.",
+        "items": [
+          {
+            "n": "例",
+            "zh": "问：小王的杯子是什么颜色的？",
+            "pinyin": "Xiǎo Wáng de bēizi shì shénme yánsè de?",
+            "transcript_zh": "男：小王，这里有几个杯子，哪个是你的？ 女：左边那个红色的是我的。 问：小王的杯子是什么颜色的？",
+            "options": {
+              "A": "红色 hóngsè red",
+              "B": "黑色 hēisè black",
+              "C": "白色 báisè white"
+            },
+            "answer": "A",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                107
+              ]
+            }
+          },
+          {
+            "n": 11,
+            "zh": "",
+            "transcript_zh": "男：昨天和你一起唱歌的人是谁？ 女：是一个朋友，我同学介绍的，昨天第一次见。 问：昨天和女的一起唱歌的人是谁？",
+            "options": {
+              "A": "她的同学 tā de tóngxué",
+              "B": "她的男朋友 tā de nánpéngyou",
+              "C": "她的一个朋友 tā de yí ge péngyou"
+            },
+            "answer": "C",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                136
+              ]
+            }
+          },
+          {
+            "n": 12,
+            "zh": "",
+            "transcript_zh": "男：你哥哥多大？ 女：他25岁，比我大三岁。 问：女的多大了？",
+            "options": {
+              "A": "25岁 èrshíwǔ suì",
+              "B": "22岁 èrshí'èr suì",
+              "C": "28岁 èrshíbā suì"
+            },
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                136
+              ]
+            }
+          },
+          {
+            "n": 13,
+            "zh": "",
+            "transcript_zh": "女：西瓜三块钱一斤，苹果一块五一斤。 男：苹果比西瓜便宜多了，我还是买苹果吧。 问：男的为什么买苹果？",
+            "options": {
+              "A": "西瓜太贵 xīguā tài guì",
+              "B": "苹果很多 píngguǒ hěn duō",
+              "C": "苹果好吃 píngguǒ hǎochī"
+            },
+            "answer": "A",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                136
+              ]
+            }
+          },
+          {
+            "n": 14,
+            "zh": "",
+            "transcript_zh": "男：你的生日是四月二十八号？ 女：是。你的生日是哪天？ 男：我也是那天的生日。我是八七年的，你呢？ 女：那我比你大一岁。 问：他们两个人谁大？",
+            "options": {
+              "A": "女的和男的一样大 nǚ de hé nán de yíyàng dà",
+              "B": "女的比男的大 nǚ de bǐ nán de dà",
+              "C": "男的比女的大 nán de bǐ nǚ de dà"
+            },
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                136
+              ]
+            }
+          },
+          {
+            "n": 15,
+            "zh": "",
+            "transcript_zh": "男：你的眼睛怎么红了？ 女：是吗？可能是没休息好。 男：那今天晚上早点儿睡觉吧。 女：好的，谢谢。 问：女的怎么了？",
+            "options": {
+              "A": "病了 bìng le",
+              "B": "没睡觉 méi shuì jiào",
+              "C": "没休息好 méi xiūxi hǎo"
+            },
+            "answer": "C",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                136
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "二、阅读 第一部分",
+        "type_zh": "阅读 第一部分",
+        "instruction_zh": "第16–20题：看图片，选择与句子内容一致的图片",
+        "instruction_en": "Questions 16-20: Choose the right picture for each sentence.",
+        "items": [
+          {
+            "n": "例",
+            "zh": "每个星期六，我都去打篮球。",
+            "pinyin": "Měi ge xīngqīliù, wǒ dōu qù dǎ lánqiú.",
+            "options": {
+              "A": "[picture] a smiling woman with glasses talking on a mobile phone, holding a folder",
+              "B": "[picture] close-up of two smiling young women, one behind the other",
+              "C": "[picture] a woman holding up a dress on a hanger in a clothes shop",
+              "D": "[picture] a smiling young man holding a basketball above his head",
+              "E": "[picture] two young men and two young women sitting at an outdoor table with drinks, smiling",
+              "F": "[picture] a smiling girl eating an apple, with fruit in front of her"
+            },
+            "answer": "D",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                108
+              ]
+            }
+          },
+          {
+            "n": 16,
+            "zh": "昨天我和朋友们一起去喝咖啡了。",
+            "pinyin": "Zuótiān wǒ hé péngyoumen yìqǐ qù hē kāfēi le.",
+            "options": {
+              "A": "[picture] a smiling woman with glasses talking on a mobile phone, holding a folder",
+              "B": "[picture] close-up of two smiling young women, one behind the other",
+              "C": "[picture] a woman holding up a dress on a hanger in a clothes shop",
+              "D": "[picture] a smiling young man holding a basketball above his head",
+              "E": "[picture] two young men and two young women sitting at an outdoor table with drinks, smiling",
+              "F": "[picture] a smiling girl eating an apple, with fruit in front of her"
+            },
+            "answer": "E",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                136
+              ]
+            }
+          },
+          {
+            "n": 17,
+            "zh": "左边那个女孩子比右边的那个大两岁。",
+            "pinyin": "Zuǒbian nàge nǚháizi bǐ yòubian de nàge dà liǎng suì.",
+            "options": {
+              "A": "[picture] a smiling woman with glasses talking on a mobile phone, holding a folder",
+              "B": "[picture] close-up of two smiling young women, one behind the other",
+              "C": "[picture] a woman holding up a dress on a hanger in a clothes shop",
+              "D": "[picture] a smiling young man holding a basketball above his head",
+              "E": "[picture] two young men and two young women sitting at an outdoor table with drinks, smiling",
+              "F": "[picture] a smiling girl eating an apple, with fruit in front of her"
+            },
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                136
+              ]
+            }
+          },
+          {
+            "n": 18,
+            "zh": "正在打电话的那个人可能是新来的王老师。",
+            "pinyin": "Zhèngzài dǎ diànhuà de nàge rén kěnéng shì xīn lái de Wáng lǎoshī.",
+            "options": {
+              "A": "[picture] a smiling woman with glasses talking on a mobile phone, holding a folder",
+              "B": "[picture] close-up of two smiling young women, one behind the other",
+              "C": "[picture] a woman holding up a dress on a hanger in a clothes shop",
+              "D": "[picture] a smiling young man holding a basketball above his head",
+              "E": "[picture] two young men and two young women sitting at an outdoor table with drinks, smiling",
+              "F": "[picture] a smiling girl eating an apple, with fruit in front of her"
+            },
+            "answer": "A",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                136
+              ]
+            }
+          },
+          {
+            "n": 19,
+            "zh": "多吃水果对身体好，你也来一个吧。",
+            "pinyin": "Duō chī shuǐguǒ duì shēntǐ hǎo, nǐ yě lái yí ge ba.",
+            "options": {
+              "A": "[picture] a smiling woman with glasses talking on a mobile phone, holding a folder",
+              "B": "[picture] close-up of two smiling young women, one behind the other",
+              "C": "[picture] a woman holding up a dress on a hanger in a clothes shop",
+              "D": "[picture] a smiling young man holding a basketball above his head",
+              "E": "[picture] two young men and two young women sitting at an outdoor table with drinks, smiling",
+              "F": "[picture] a smiling girl eating an apple, with fruit in front of her"
+            },
+            "answer": "F",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                136
+              ]
+            }
+          },
+          {
+            "n": 20,
+            "zh": "这件衣服300块，比那件便宜50块。",
+            "pinyin": "Zhè jiàn yīfu kuài, bǐ nà jiàn piányi kuài.",
+            "options": {
+              "A": "[picture] a smiling woman with glasses talking on a mobile phone, holding a folder",
+              "B": "[picture] close-up of two smiling young women, one behind the other",
+              "C": "[picture] a woman holding up a dress on a hanger in a clothes shop",
+              "D": "[picture] a smiling young man holding a basketball above his head",
+              "E": "[picture] two young men and two young women sitting at an outdoor table with drinks, smiling",
+              "F": "[picture] a smiling girl eating an apple, with fruit in front of her"
+            },
+            "answer": "C",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                136
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "二、阅读 第二部分",
+        "type_zh": "阅读 第二部分",
+        "instruction_zh": "第21–25题：选择合适的词语填空",
+        "instruction_en": "Questions 21-25: Choose the proper words to fill in the brackets.",
+        "word_bank": [
+          [
+            "A 唱歌 chànggē",
+            "B 便宜 piányi",
+            "C 说话 shuōhuà",
+            "D 可能 kěnéng",
+            "E 贵 guì",
+            "F 比 bǐ"
+          ]
+        ],
+        "items": [
+          {
+            "n": "例",
+            "zh": "这儿的羊肉很好吃，但是也很（________）。",
+            "pinyin": "Zhèr de yángròu hěn hǎochī, dànshì yě hěn ______.",
+            "answer": "E",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                109
+              ]
+            }
+          },
+          {
+            "n": 21,
+            "zh": "昨天25度，今天（________）昨天热一点儿。",
+            "pinyin": "Zuótiān dù, jīntiān ______ zuótiān rè yìdiǎnr.",
+            "answer": "F",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                136
+              ]
+            }
+          },
+          {
+            "n": 22,
+            "zh": "每个周末，我都喜欢和朋友们一起去（________）。",
+            "pinyin": "Měi ge zhōumò, wǒ dōu xǐhuan hé péngyoumen yìqǐ qù ______.",
+            "answer": "A",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                136
+              ]
+            }
+          },
+          {
+            "n": 23,
+            "zh": "你认识前边（________）的那两个人吗？",
+            "pinyin": "Nǐ rènshi qiánbian ______ de nà liǎng ge rén ma?",
+            "answer": "C",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                136
+              ]
+            }
+          },
+          {
+            "n": 24,
+            "zh": "天气不太好，我觉得（________）要下雨了。",
+            "pinyin": "Tiānqì bú tài hǎo, wǒ juéde ______ yào xià yǔ le.",
+            "answer": "D",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                136
+              ]
+            }
+          },
+          {
+            "n": 25,
+            "zh": "苹果比西瓜（________），我想多买点儿苹果。",
+            "pinyin": "Píngguǒ bǐ xīguā ______, wǒ xiǎng duō mǎi diǎnr píngguǒ.",
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                136
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "二、阅读 第三部分",
+        "type_zh": "阅读 第三部分",
+        "instruction_zh": "第26–30题：判断下列句子的意思是否正确",
+        "instruction_en": "Questions 26-30: Decide whether the inferences are true or false.",
+        "items": [
+          {
+            "n": "例1",
+            "zh": "现在是11点30分，他们已经游了20分钟了。 ★他们11点10分开始游泳。",
+            "pinyin": "Xiànzài shì diǎn fēn, tāmen yǐjīng yóule fēnzhōng le. ★Tāmen diǎn fēn kāishǐ yóuyǒng.",
+            "answer": "√",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                109
+              ]
+            }
+          },
+          {
+            "n": "例2",
+            "zh": "我会跳舞，但跳得不怎么样。 ★我跳得非常好。",
+            "pinyin": "Wǒ huì tiàowǔ, dàn tiào de bù zěnmeyàng. ★Wǒ tiào de fēicháng hǎo.",
+            "answer": "×",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                110
+              ]
+            }
+          },
+          {
+            "n": 26,
+            "zh": "左边看报纸的这个人是我姐姐，右边写字的那个人是我哥哥。 ★他们家可能有三个孩子。",
+            "pinyin": "Zuǒbian kàn bàozhǐ de zhège rén shì wǒ jiějie, yòubian xiězì de nàge rén shì wǒ gēge. ★Tāmen jiā kěnéng yǒu sān ge háizi.",
+            "answer": "√",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                136
+              ]
+            }
+          },
+          {
+            "n": 27,
+            "zh": "女儿让我告诉你，她今天晚上和朋友们一起去唱歌，不回来吃晚饭了。 ★女儿今天在家吃晚饭。",
+            "pinyin": "Nǚ'ér ràng wǒ gàosu nǐ, tā jīntiān wǎnshang hé péngyoumen yìqǐ qù chànggē, bù huílai chī wǎnfàn le. ★Nǚ'ér jīntiān zài jiā chī wǎnfàn.",
+            "answer": "×",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                136
+              ]
+            }
+          },
+          {
+            "n": 28,
+            "zh": "这是儿子送给我的手表，因为明天是我的生日。 ★她送给儿子一块手表。",
+            "pinyin": "Zhè shì érzi sòng gěi wǒ de shǒubiǎo, yīnwèi míngtiān shì wǒ de shēngrì. ★Tā sòng gěi érzi yí kuài shǒubiǎo.",
+            "answer": "×",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                136
+              ]
+            }
+          },
+          {
+            "n": 29,
+            "zh": "你问的这个问题很好，我要想一想，明天再告诉你，可以吗？ ★他现在没有回答这个问题。",
+            "pinyin": "Nǐ wèn de zhège wèntí hěn hǎo, wǒ yào xiǎng yi xiǎng, míngtiān zài gàosu nǐ, kěyǐ ma? ★Tā xiànzài méiyǒu huídá zhège wèntí.",
+            "answer": "√",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                136
+              ]
+            }
+          },
+          {
+            "n": 30,
+            "zh": "哥哥的汉语比我好，姐姐的汉语也比我好。 ★我的汉语没有哥哥和姐姐那么好。",
+            "pinyin": "Gēge de Hànyǔ bǐ wǒ hǎo, jiějie de Hànyǔ yě bǐ wǒ hǎo. ★Wǒ de Hànyǔ méiyǒu gēge hé jiějie nàme hǎo.",
+            "answer": "√",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                136
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "二、阅读 第四部分",
+        "type_zh": "阅读 第四部分",
+        "instruction_zh": "第31–35题：选择合适的问答",
+        "instruction_en": "Questions 31-35: Match the sentences to make dialogues.",
+        "items": [
+          {
+            "n": "例",
+            "zh": "他还在教室里学习。 (He is still studying in the classroom.)",
+            "pinyin": "Tā hái zài jiàoshì li xuéxí.",
+            "options": {
+              "A": "这两天怎么没看见王老师？ Zhè liǎng tiān zěnme méi kànjiàn Wáng lǎoshī?",
+              "B": "我哥哥比我姐姐大三岁。 Wǒ gēge bǐ wǒ jiějie dà sān suì.",
+              "C": "家里还有呢，来点儿水果吧。 Jiāli hái yǒu ne, lái diǎnr shuǐguǒ ba.",
+              "D": "这是我爸爸送给我的，昨天是我的生日。 Zhè shì wǒ bàba sòng gěi wǒ de, zuótiān shì wǒ de shēngrì.",
+              "E": "他在哪儿呢？你看见他了吗？ Tā zài nǎr ne? Nǐ kànjiàn tā le ma?",
+              "F": "我觉得公共汽车没有自行车快。因为路上车太多了。 Wǒ juéde gōnggòngqìchē méiyǒu zìxíngchē kuài. Yīnwèi lùshang chē tài duō le."
+            },
+            "answer": "E",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                111
+              ]
+            }
+          },
+          {
+            "n": 31,
+            "zh": "今天的鸡蛋比昨天的便宜一些，您来点儿吧。",
+            "pinyin": "Jīntiān de jīdàn bǐ zuótiān de piányi yìxiē, nín lái diǎnr ba.",
+            "options": {
+              "A": "这两天怎么没看见王老师？ Zhè liǎng tiān zěnme méi kànjiàn Wáng lǎoshī?",
+              "B": "我哥哥比我姐姐大三岁。 Wǒ gēge bǐ wǒ jiějie dà sān suì.",
+              "C": "家里还有呢，来点儿水果吧。 Jiāli hái yǒu ne, lái diǎnr shuǐguǒ ba.",
+              "D": "这是我爸爸送给我的，昨天是我的生日。 Zhè shì wǒ bàba sòng gěi wǒ de, zuótiān shì wǒ de shēngrì.",
+              "E": "他在哪儿呢？你看见他了吗？ Tā zài nǎr ne? Nǐ kànjiàn tā le ma?",
+              "F": "我觉得公共汽车没有自行车快。因为路上车太多了。 Wǒ juéde gōnggòngqìchē méiyǒu zìxíngchē kuài. Yīnwèi lùshang chē tài duō le."
+            },
+            "answer": "C",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                136
+              ]
+            }
+          },
+          {
+            "n": 32,
+            "zh": "你哥哥大还是你姐姐大？",
+            "pinyin": "Nǐ gēgē dà háishi nǐ jiějie dà?",
+            "options": {
+              "A": "这两天怎么没看见王老师？ Zhè liǎng tiān zěnme méi kànjiàn Wáng lǎoshī?",
+              "B": "我哥哥比我姐姐大三岁。 Wǒ gēge bǐ wǒ jiějie dà sān suì.",
+              "C": "家里还有呢，来点儿水果吧。 Jiāli hái yǒu ne, lái diǎnr shuǐguǒ ba.",
+              "D": "这是我爸爸送给我的，昨天是我的生日。 Zhè shì wǒ bàba sòng gěi wǒ de, zuótiān shì wǒ de shēngrì.",
+              "E": "他在哪儿呢？你看见他了吗？ Tā zài nǎr ne? Nǐ kànjiàn tā le ma?",
+              "F": "我觉得公共汽车没有自行车快。因为路上车太多了。 Wǒ juéde gōnggòngqìchē méiyǒu zìxíngchē kuài. Yīnwèi lùshang chē tài duō le."
+            },
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                136
+              ]
+            }
+          },
+          {
+            "n": 33,
+            "zh": "这是你的自行车吗？真漂亮。",
+            "pinyin": "Zhè shì nǐ de zìxíngchē ma? Zhēn piàoliang.",
+            "options": {
+              "A": "这两天怎么没看见王老师？ Zhè liǎng tiān zěnme méi kànjiàn Wáng lǎoshī?",
+              "B": "我哥哥比我姐姐大三岁。 Wǒ gēge bǐ wǒ jiějie dà sān suì.",
+              "C": "家里还有呢，来点儿水果吧。 Jiāli hái yǒu ne, lái diǎnr shuǐguǒ ba.",
+              "D": "这是我爸爸送给我的，昨天是我的生日。 Zhè shì wǒ bàba sòng gěi wǒ de, zuótiān shì wǒ de shēngrì.",
+              "E": "他在哪儿呢？你看见他了吗？ Tā zài nǎr ne? Nǐ kànjiàn tā le ma?",
+              "F": "我觉得公共汽车没有自行车快。因为路上车太多了。 Wǒ juéde gōnggòngqìchē méiyǒu zìxíngchē kuài. Yīnwèi lùshang chē tài duō le."
+            },
+            "answer": "D",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                136
+              ]
+            }
+          },
+          {
+            "n": 34,
+            "zh": "你每天坐公共汽车去学校吗？",
+            "pinyin": "Nǐ měi tiān zuò gōnggòngqìchē qù xuéxiào ma?",
+            "options": {
+              "A": "这两天怎么没看见王老师？ Zhè liǎng tiān zěnme méi kànjiàn Wáng lǎoshī?",
+              "B": "我哥哥比我姐姐大三岁。 Wǒ gēge bǐ wǒ jiějie dà sān suì.",
+              "C": "家里还有呢，来点儿水果吧。 Jiāli hái yǒu ne, lái diǎnr shuǐguǒ ba.",
+              "D": "这是我爸爸送给我的，昨天是我的生日。 Zhè shì wǒ bàba sòng gěi wǒ de, zuótiān shì wǒ de shēngrì.",
+              "E": "他在哪儿呢？你看见他了吗？ Tā zài nǎr ne? Nǐ kànjiàn tā le ma?",
+              "F": "我觉得公共汽车没有自行车快。因为路上车太多了。 Wǒ juéde gōnggòngqìchē méiyǒu zìxíngchē kuài. Yīnwèi lùshang chē tài duō le."
+            },
+            "answer": "F",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                136
+              ]
+            }
+          },
+          {
+            "n": 35,
+            "zh": "她可能去旅游了。",
+            "pinyin": "Tā kěnéng qù lǚyóu le.",
+            "options": {
+              "A": "这两天怎么没看见王老师？ Zhè liǎng tiān zěnme méi kànjiàn Wáng lǎoshī?",
+              "B": "我哥哥比我姐姐大三岁。 Wǒ gēge bǐ wǒ jiějie dà sān suì.",
+              "C": "家里还有呢，来点儿水果吧。 Jiāli hái yǒu ne, lái diǎnr shuǐguǒ ba.",
+              "D": "这是我爸爸送给我的，昨天是我的生日。 Zhè shì wǒ bàba sòng gěi wǒ de, zuótiān shì wǒ de shēngrì.",
+              "E": "他在哪儿呢？你看见他了吗？ Tā zài nǎr ne? Nǐ kànjiàn tā le ma?",
+              "F": "我觉得公共汽车没有自行车快。因为路上车太多了。 Wǒ juéde gōnggòngqìchē méiyǒu zìxíngchē kuài. Yīnwèi lùshang chē tài duō le."
+            },
+            "answer": "A",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                136
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "三、语音 第一部分",
+        "type_zh": "语音 第一部分 听录音",
+        "instruction_zh": "第1题：听录音，注意句重音和句末的升降调",
+        "instruction_en": "Question 1: Listen to the recording and pay attention to the stress in each sentence and the intonation at the end of each sentence.",
+        "items": [
+          {
+            "n": "1-(1)",
+            "zh": "明天你去不去游泳？↘［重读点：去］",
+            "pinyin": "Míngtiān nǐ qù bu qù yóuyǒng?",
+            "transcript_zh": "明天你去不去游泳？"
+          },
+          {
+            "n": "1-(2)",
+            "zh": "你想不想和朋友们一起去喝茶？↘［重读点：想］",
+            "pinyin": "Nǐ xiǎng bu xiǎng hé péngyoumen yìqǐ qù hē chá?",
+            "transcript_zh": "你想不想和朋友们一起去喝茶？"
+          },
+          {
+            "n": "1-(3)",
+            "zh": "你知道不知道这个汉字怎么写？↘［重读点：知道］",
+            "pinyin": "Nǐ zhīdào bu zhīdào zhège Hànzì zěnme xiě?",
+            "transcript_zh": "你知道不知道这个汉字怎么写？"
+          },
+          {
+            "n": "1-(4)",
+            "zh": "你有没有一百块钱？↘［重读点：有］",
+            "pinyin": "Nǐ yǒu méiyou yìbǎi kuài qián?",
+            "transcript_zh": "你有没有一百块钱？"
+          }
+        ]
+      },
+      {
+        "n": "三、语音 第二部分",
+        "type_zh": "语音 第二部分 跟读",
+        "instruction_zh": "第2题：听录音并跟读下列句子，注意句重音和句末的升降调",
+        "instruction_en": "Question 2: Listen to the recording and repeat the following sentences, paying attention to the stress in each sentence and the intonation at the end of each sentence.",
+        "items": [
+          {
+            "n": "2-(1)",
+            "zh": "你认识不认识那个穿红衣服的人？↘［重读点：认识］",
+            "pinyin": "Nǐ rènshi bu rènshi nàge chuān hóng yīfu de rén?",
+            "transcript_zh": "你认识不认识那个穿红衣服的人？"
+          },
+          {
+            "n": "2-(2)",
+            "zh": "你每天早上喝不喝牛奶？↘［重读点：喝］",
+            "pinyin": "Nǐ měi tiān zǎoshang hē bu hē niúnǎi?",
+            "transcript_zh": "你每天早上喝不喝牛奶？"
+          },
+          {
+            "n": "2-(3)",
+            "zh": "前边说话的那个人是不是你的汉语老师？↘［重读点：是］",
+            "pinyin": "Qiánbian shuōhuà de nàge rén shì bu shì nǐ de Hànyǔ lǎoshī?",
+            "transcript_zh": "前边说话的那个人是不是你的汉语老师？"
+          },
+          {
+            "n": "2-(4)",
+            "zh": "你看不看这本新买来的书？↘［重读点：看］",
+            "pinyin": "Nǐ kàn bu kàn zhè běn xīn mǎi lái de shū?",
+            "transcript_zh": "你看不看这本新买来的书？"
+          }
+        ]
+      },
+      {
+        "n": "四、汉字 第一部分",
+        "type_zh": "汉字 偏旁归类",
+        "instruction_zh": "第1–2题：看汉字，按偏旁归类",
+        "instruction_en": "Questions 1-2: Group the characters with the same radical.",
+        "word_bank": [
+          [
+            "A 冷",
+            "B 病",
+            "C 凉",
+            "D 决"
+          ],
+          [
+            "E 瘦",
+            "F 冰",
+            "G 疯",
+            "H 疼"
+          ]
+        ],
+        "items": [
+          {
+            "n": 1,
+            "zh": "疒：________",
+            "answer": "B E G H",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                136
+              ]
+            }
+          },
+          {
+            "n": 2,
+            "zh": "冫：________",
+            "answer": "A C D F",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                136
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "四、汉字 第二部分",
+        "type_zh": "汉字 猜词义",
+        "instruction_zh": "第3题：看生词和图片，猜出词义",
+        "instruction_en": "Question 3: Guess the meaning of each word based on the new words and pictures.",
+        "word_bank": [
+          [
+            "水果店",
+            "酒店",
+            "商店",
+            "书店"
+          ]
+        ],
+        "items": [
+          {
+            "n": "3-水果店",
+            "zh": "水果店 ________",
+            "options": {
+              "A": "[picture] a woman with a shopping cart reaching for goods on supermarket shelves",
+              "B": "[picture] fruit piled up on stands in a market",
+              "C": "[picture] tall shelves full of books, with books laid out on tables",
+              "D": "[picture] a hotel lobby with a reception counter and ceiling lights"
+            },
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                136
+              ]
+            }
+          },
+          {
+            "n": "3-酒店",
+            "zh": "酒店 ________",
+            "options": {
+              "A": "[picture] a woman with a shopping cart reaching for goods on supermarket shelves",
+              "B": "[picture] fruit piled up on stands in a market",
+              "C": "[picture] tall shelves full of books, with books laid out on tables",
+              "D": "[picture] a hotel lobby with a reception counter and ceiling lights"
+            },
+            "answer": "D",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                136
+              ]
+            }
+          },
+          {
+            "n": "3-商店",
+            "zh": "商店 ________",
+            "options": {
+              "A": "[picture] a woman with a shopping cart reaching for goods on supermarket shelves",
+              "B": "[picture] fruit piled up on stands in a market",
+              "C": "[picture] tall shelves full of books, with books laid out on tables",
+              "D": "[picture] a hotel lobby with a reception counter and ceiling lights"
+            },
+            "answer": "A",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                136
+              ]
+            }
+          },
+          {
+            "n": "3-书店",
+            "zh": "书店 ________",
+            "options": {
+              "A": "[picture] a woman with a shopping cart reaching for goods on supermarket shelves",
+              "B": "[picture] fruit piled up on stands in a market",
+              "C": "[picture] tall shelves full of books, with books laid out on tables",
+              "D": "[picture] a hotel lobby with a reception counter and ceiling lights"
+            },
+            "answer": "C",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                136
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "answers_ref": {
+      "book": "teacher",
+      "pages": [
+        135,
+        136
+      ]
+    }
+  },
+  "unclear": [
+    "Дасгалын номын 听力 бичвэр (transcript_zh) — багшийн номын хавсралт PDF х.135–136, бүх хариулт (参考答案) — PDF х.136; 例-ийн хариулт дасгалын номд өөрт нь хэвлэгдсэн. prep.json-ийн appendix мужид орсон PDF х.137 нь 第12课-ийн сонсголын бичвэр тул ашиглаагүй. 三、语音 хэсэгт хариулт шаардлагагүй (сонсох/давтах).",
+    "Пиньинь зөрүү: 哥哥 — сурах бичиг (课文2, PDF х.102) болон дасгалын ном бусад газар «gēge», харин дасгалын ном PDF х.111 (32) «gēgē» — номд байгаагаар.",
+    "Пиньиний бичлэг зөрүү: 生词 хүснэгт (сурах бичиг PDF х.102/103) «chàng gē», «shuō huà» (зайтай), дасгалын номын 阅读 第二部分 үгийн сан (PDF х.109) болон 26/27-д «chànggē», «shuōhuà», «xiězì» (нийлсэн); сурах бичгийн 课文2 «xiě zì» — номд байгаагаар.",
+    "Багшийн ном PDF х.85 课文3 提示表格 : «西瓜 昨天四块 / 今天三块五；苹果 昨天三块 / 今天两块五» — сурах бичгийн 课文3-т зөвхөн өнөөдрийн тарвасны үнэ (三块五一斤) байгаа, өчигдрийн үнэ ба алимны үнэ байхгүй; багшийн номын зохиосон хүснэгтийг номд байгаагаар оруулсан.",
+    "Багшийн ном PDF х.80 复习旧课 1: «上课、帮助、哥哥、鸡蛋、西瓜、正在、手机、洗衣服» — 第10课-ийн 生词 нь «课», «洗» (上课 , 洗衣服 бол хэллэг) — номд байгаагаар.",
+    "Багшийн ном PDF х.84 课文2 асуулт «哥哥正在做什么呢？» — сурах бичгийн 课文2-т «右边写字的那个人是我哥哥»; 课文4 асуулт «那个汉语老师正在做什么呢？» — 课文4-т «前边说话的那个人». Номд байгаагаар.",
+    "语音 (сурах бичиг PDF х.106, дасгалын ном PDF х.112, багшийн ном PDF х.85): онцлох (重读) хэсгийг ханзын доорх цэгээр, өгүүлбэрийн төгсгөлийн уналтыг сумаар тэмдэглэсэн; JSON-д «［重读点：…］» ба «↘» гэж бичсэн (энэ тэмдэглэгээ номд текстээр байхгүй). Хоёр ханзтай үгэнд (喜欢 , 知道 , 认识) хоёр ханзын доор цэг байгаа тул үгээр бичсэн.",
+    "Дасгалын номын пиньинь мөрөнд тоонууд орхигдсон: 阅读 第一部分 20 («Zhè jiàn yīfu kuài, bǐ nà jiàn piányi kuài.»), 第二部分 21 («Zuótiān dù…»), 第三部分 例1 — номд байгаагаар.",
+    "Сурах бичиг PDF х.106 练习3 (3): «昨天35°，今天没有____» (пиньинь «sānshíwǔ dù»), зураг дээрх цаг агаарын апп «32°» харуулж байна — номд байгаагаар.",
+    "Сурах бичиг PDF х.102 课文2-ын English Version «the guy on the right writing», зураг дээр хоёр залуу эмэгтэй компьютерийн өмнө — номд байгаагаар.",
+    "Хариулт хэвлэгдээгүй: сурах бичгийн 热身2 (反义词 — багшийн ном зөвхөн «左→右» жишээ), 练习2 回答问题 , 练习3 描述图片 , 运用 双人/小组活动 ; багшийн номын 复习 2 (辨析), 语言点(1)④ 连线 , 语言点(2)③ 完成句子 , 汉字 补充练习 a/b/c. 热身1-ийн хариулт зөвхөн багшийн номд (PDF х.81).",
+    "Дасгалын номын 四、汉字 第二部分 хариулт «3. B D A C» — үгийн дарааллаар (水果店 , 酒店 , 商店 , 书店) оноосон: 水果店=B, 酒店=D, 商店=A, 书店=C.",
+    "Энэ хичээлийн 生词 хүснэгтэд 专有名词 байхгүй (王方 бичвэрт гарсан ч жагсаалтад ороогүй); 课堂用语 , 文化 , 俗语 хэсэг байхгүй.",
+    "Багшийн номын хуудасны лавлагаа (课本第86/87页 , 练习册第97/100-101/104/105页) нь номын хэвлэсэн дугаар (PDF биш) — номд байгаагаар.",
+    "Аудио файлын нэр мэдэгдэхгүй тул audio талбар орхисон. Номын CD тэмдэг: сурах бичиг 课文1–4 = 11-1…11-4, 语音 11-5; дасгалын ном 听力 11-1, 语音 11-2.",
+    "Зургийн тайлбарууд (picture_desc_en, pictures_desc_en, options «[picture]») зургаас товч, объектив дүрсэлсэн.",
+    "HSK 3.0 нэмэлт үгс (BLCUP 课件 补充HSK3.0, слайд 10, 11, 12, 13, 14, 15, 16, 17) hsk30-д — зөвхөн ханз+пиньинь (слайдад pos/en байхгүй)."
+  ],
+  "verified_pages": [
     80,
     81,
     82,
     83,
     84,
     85,
-    86
-   ]
-  },
-  "objectives_zh": [
-   "重点词语：学生能够熟练掌握“唱歌、女、右边、便宜、说话”的词义和用法",
-   "语言点：学生能够了解并掌握：（1）动词结构做定语（2）“比”字句（1）（3）助动词“可能”",
-   "语音：学生能够掌握正反问句的句调，并能正确朗读",
-   "汉字：学生能够：（1）熟练认读本课生词（2）了解“疒（病字头）、冫（两点水）”所表示的意思",
-   "功能：学生能够：（1）比较事物的性质、程度的差别和高低（“比”字句）（2）表达估计或猜测（可能）"
-  ],
-  "steps": [
-   {
-    "title_zh": "一 复习旧课",
-    "body_zh": "1. 教师出示第10课生词卡片，要求学生快速认读下列生词：\n上课、帮助、哥哥、鸡蛋、西瓜、正在、手机、洗衣服\n2. 教师带领学生辨析下列字形相近的汉字：\n课____　机____　洗____　面____\n果____　几____　先____　而____\n3. 教师根据第10课重点内容，要求学生快速回答问题：\n上课的时候，学生不能做什么？\n晚上十一点多了，弟弟还在看电视，妈妈会说什么？\n大卫病了，医生告诉他什么？\n天气太热了，我们不要做什么？\n长时间看电视对什么不好？\n每天跑步来学校上课好吗？"
-   },
-   {
-    "title_zh": "二 学习新课 1 热身",
-    "body_zh": "热身1：教师先带领学生根据图片选出正确的词语，然后分组练习。一组学生看图片说出正确的词语；另一组学生看词语，说出图片的编号。\n答案：①F　②C　③B　④D　⑤A　⑥E\n热身2：教师可以先让学生自己完成，然后请学生说出自己的答案，熟练后请学生不看课本，互相提问反义词。\n例如：一个学生说“左”，另一个学生快速说出“右”。"
-   },
-   {
-    "title_zh": "2 生词",
-    "body_zh": "（1）生词快速认读及正音\n唱歌、男、女、孩子、右边、比、便宜、说话、可能、去年、姓\n• 教师可以用PPT依次快速展示生词；\n• 教师领读，学生齐读；\n• 学生接龙式读一遍，每人读两个。\n（2）重点生词扩展及常用搭配\n唱歌—唱一首歌—会唱歌—一起唱歌\n　—你会唱歌吗？\n　—我想给大家唱一首歌。\n　—昨天和你一起唱歌的人是谁？\n女—女孩子—女同学—那个女老师—看报纸的女孩子\n　—你认识那个女老师吗？\n　—我不知道这个女同学是哪个班的。\n　—这个看报纸的女孩子是你姐姐吗？\n右边←→左边\n　—在右边—我的右边—右边的那个学生\n　—商店在我们学校的右边。\n　—我右边是个漂亮的女孩子。\n　—右边写字的那个人是我哥哥。\n便宜—很便宜—不便宜—便宜一些—便宜一点儿\n　—这个商店的东西很便宜。\n　—今天的水果比昨天便宜一点儿。\n　—苹果也比昨天便宜一些。\n说话—不说话—说很多话—说一会儿话—说话的那个人\n　—上课的时候，你为什么不说话？\n　—我想和朋友说一会儿话，你先走吧。\n　—说话的那个人就是我的汉语老师。\n练习册相关练习：第97页／一／第一部分，第100-101页／二／第一、二部分"
-   },
-   {
-    "title_zh": "3 语言点（1）动词结构做定语",
-    "body_zh": "① 语言点解析：\n动词或动词短语做定语时，定语和后边的中心语之间一般要用“的”。如果不用“的”，有时前边的动词或动词短语会和后面的名词中心语发生动宾关系，结构和意义就不同了。\n［句型框］动词／动词短语＋的＋中心语\n② 语言点导入：\n教师可以用提问的方式导入语言点。\n教师：这是谁买的书？\n学生：这是我买的书。\n教师：这是在哪儿买的书？\n学生：这是在书店买的书。\n教师：和你一起照相的人是谁？\n学生：和我一起照相的人是我朋友。\n③ 语言点操练：\n教师让学生大声朗读下列句子。\n昨天买的苹果很便宜。\n和你说话的那个人是谁？\n你写的汉字真漂亮！\n你找的那件衣服在外边呢。\n④ 语言点扩展练习：\n连线组成句子。\n妈妈做的菜　　　　　　是我爸爸。\n我昨天买的自行车　　　是我大学同学。\n左边看报纸的那个人　　真好吃。\n和你一起唱歌的女孩　　是白色的。"
-   },
-   {
-    "title_zh": "3 语言点（2）“比”字句（1）",
-    "body_zh": "① 语言点解析：\n“比”字句表示比较关系，“比”字句的谓语可以是形容词，有时在形容词之后，还可以加上具体的数量表示差别。\n［句型框］A＋比＋B＋形容词\n［句型框］A＋比＋B＋形容词＋数量短语\n［句型框］A＋没有＋B＋形容词\n② 语言点导入：\n教师可利用图片或者实物导入语言点，比如人物、水果、衣服等图片，也可以是苹果、书等实物。\n教师：红苹果三块五，黄苹果三块，用“比”字句怎么说？\n学生：红苹果比黄苹果贵。\n教师：大卫25岁，王方27岁，用“比”字句怎么说？\n学生：大卫比王方小两岁。\n③ 语言点操练：\n教师先让学生完成句子，然后请学生大声朗读。\n难　好吃　贵五十块钱　热得多\n上个星期比这个星期________。\n我觉得汉语比英语________。\n这件白衣服比那件红的________。\n妈妈做的饭比爸爸做的________。\n④ 语言点扩展练习：\n教师带领学生做课本第87页的双人活动。"
-   },
-   {
-    "title_zh": "3 语言点（3）助动词“可能”",
-    "body_zh": "① 语言点解析：\n助动词“可能”表示估计、也许，用来描述客观的可能性，一般只用于未发生的动作或虚拟的情况，可用在主语前或主语后。\n② 语言点导入：\n教师可采用提问的方式导入语言点。\n教师：八点了，大卫怎么还没来上课？\n学生：他今天可能不来上课了。／他可能一会儿就来。\n教师：今天天气不太好，会不会下雨？\n学生：可能下午有雨。\n③ 语言点操练：\n请学生大声朗读下面的句子。\n老师今天没来上课，可能生病了。\n妈妈下个星期可能来北京。\n这件白衣服可能比那件红的贵一点儿。\n可能他学习汉语的时间比我长。\n④ 语言点扩展练习：\n请每个学生用“可能”说一个句子，说出来的句子不能重复。"
-   },
-   {
-    "title_zh": "4 课文",
-    "body_zh": "课文1\n（1）让学生听两遍录音并回答下列问题：\n王方昨天做什么了？\n谁和王方一起去唱歌？\n和王方一起唱歌的人是她的男朋友吗？\n王方是怎么认识这个朋友的？\n（2）教师领读课文两遍，然后让学生分角色朗读课文。\n（3）教师用PPT展示课文提示词，请学生再次通读一遍课文后，根据提示词复述课文。\nA：王方，昨天……是谁？\nB：一个朋友。\nA：……？是不是……？\nB：不是不是，我同学……，昨天……。\n（4）让学生用王方的口气把本段对话改为叙述体。\n昨天我……，这个朋友……，昨天……。\n课文2\n（1）让学生听两遍录音并回答下列问题：\n看报纸的女孩子是谁？\n哥哥正在做什么呢？\n哥哥多大了？\nB多大了？\n（2）教师带领学生齐读课文两遍，然后请学生分角色朗读课文。\n（3）教师用PPT展示课文提示词，请学生再次通读一遍课文后，根据提示词复述课文。\nA：左边……的女孩子是……吗？\nB：是，右边……是我哥哥。\nA：你哥哥……？\nB：25岁，他比我……。\n课文3\n（1）让学生听两遍录音，并回答下列问题：\n男的想买什么？\n今天的西瓜多少钱？\n昨天的西瓜可能多少钱？\n还有什么水果比昨天便宜？\n（2）教师带领学生齐读课文两遍，然后请学生分角色朗读课文。\n（3）教师给出提示表格，请学生根据课文内容，自己设计情景，进行角色扮演。\n水果 | 昨天 | 今天\n西瓜 | 四块 | 三块五\n苹果 | 三块 | 两块五\n课文4\n（1）让学生听两遍录音并回答下列问题：\n那个汉语老师正在做什么呢？\n汉语老师是新来的吗？\n汉语老师是什么时候来的？\n汉语老师姓什么？多大了？\n（2）教师带领学生齐读课文两遍，然后请学生分角色朗读课文。\n（3）教师用PPT展示课文提示词，请学生再次通读一遍课文后，根据提示词复述课文。\nA：前边……就是我的汉语老师。你……她。\nB：是……吗？\nA：是……的，她姓……，28岁。\nB：她比我们老师……。"
-   },
-   {
-    "title_zh": "5 语音",
-    "body_zh": "正反问句的句调：\n① 知识点解析\n正反问句中的肯定部分重读，否定部分轻读，肯定和否定重叠的部分语速较快，重音后的部分，语调逐渐下降。例如：\n下个星期我们还考不考汉字了？↘［重读点：考］\n你有没有时间和我们一起去看这个新电影？↘［重读点：有］\n你想不想吃我做的鱼？↘［重读点：想］\n② 语音练习\n教师可利用课本第86页的例句进行练习。可先领读句子，使学生掌握正反问句的句调特点，然后让学生个别读，教师纠正错误。\n练习册相关练习：第104页／三"
-   },
-   {
-    "title_zh": "6 汉字",
-    "body_zh": "① 知识点解析：\n偏旁\n疒：病字头，由它构成的汉字一般与疾病有关系。\n冫：两点水，由它构成的汉字一般与冰、寒冷有关系。\n② 汉字练习：\n• 教师板书本课偏旁“疒、冫”，提示学生注意这两个偏旁的笔画和笔顺，并书写各自的代表汉字，帮助学生识记该偏旁的意义。\n• 补充练习\na. 找出下列含有病字头和两点水的汉字\n病　冷　治　冯\n准　历　症　疯\nb. 拆分下列汉字\n歌：____　____　便：____　____\n宜：____　____　能：____　____\nc. 用下列偏旁和部件组合成新汉字\n更　哥　田　亻　力　舌　讠　欠\n____　____　____　____\n练习册相关练习：第105页／四"
-   },
-   {
-    "title_zh": "7 补充课堂活动——你做我说",
-    "body_zh": "把学生分为四人一组，其中两人摆造型，另外两人用语言描述出来。\n例如：\n左边的人在看书，右边的人在玩儿手机。\n男的坐在前边，女的坐在后边。\n左边的人给右边的人打电话呢。"
-   },
-   {
-    "title_zh": "8 本课小结",
-    "body_zh": "• 语言点：动词结构做定语\n　“比”字句（1）\n　助动词“可能”\n• 语音：正反问句的句调\n• 汉字：偏旁“疒、冫”"
-   },
-   {
-    "title_zh": "附注：建议教学用具",
-    "body_zh": "1. 生词卡片：第10、11课生词卡片\n2. 图片：人物、水果、衣服等"
-   }
-  ],
-  "notes_zh": [
-   "动词或动词短语做定语时，定语和后边的中心语之间一般要用“的”。如果不用“的”，有时前边的动词或动词短语会和后面的名词中心语发生动宾关系，结构和意义就不同了。",
-   "助动词“可能”表示估计、也许，用来描述客观的可能性，一般只用于未发生的动作或虚拟的情况，可用在主语前或主语后。"
-  ],
-  "warmup_answers_zh": [
-   "热身1 答案：①F　②C　③B　④D　⑤A　⑥E",
-   "热身2 例如：一个学生说“左”，另一个学生快速说出“右”。"
-  ],
-  "text_questions": [
-   {
-    "text": 1,
-    "q_zh": "王方昨天做什么了？"
-   },
-   {
-    "text": 1,
-    "q_zh": "谁和王方一起去唱歌？"
-   },
-   {
-    "text": 1,
-    "q_zh": "和王方一起唱歌的人是她的男朋友吗？"
-   },
-   {
-    "text": 1,
-    "q_zh": "王方是怎么认识这个朋友的？"
-   },
-   {
-    "text": 2,
-    "q_zh": "看报纸的女孩子是谁？"
-   },
-   {
-    "text": 2,
-    "q_zh": "哥哥正在做什么呢？"
-   },
-   {
-    "text": 2,
-    "q_zh": "哥哥多大了？"
-   },
-   {
-    "text": 2,
-    "q_zh": "B多大了？"
-   },
-   {
-    "text": 3,
-    "q_zh": "男的想买什么？"
-   },
-   {
-    "text": 3,
-    "q_zh": "今天的西瓜多少钱？"
-   },
-   {
-    "text": 3,
-    "q_zh": "昨天的西瓜可能多少钱？"
-   },
-   {
-    "text": 3,
-    "q_zh": "还有什么水果比昨天便宜？"
-   },
-   {
-    "text": 4,
-    "q_zh": "那个汉语老师正在做什么呢？"
-   },
-   {
-    "text": 4,
-    "q_zh": "汉语老师是新来的吗？"
-   },
-   {
-    "text": 4,
-    "q_zh": "汉语老师是什么时候来的？"
-   },
-   {
-    "text": 4,
-    "q_zh": "汉语老师姓什么？多大了？"
-   }
-  ],
-  "summary_zh": "• 语言点：动词结构做定语\n　“比”字句（1）\n　助动词“可能”\n• 语音：正反问句的句调\n• 汉字：偏旁“疒、冫”"
- },
- "workbook": {
-  "ref": {
-   "book": "workbook",
-   "pages": [
+    86,
+    101,
+    102,
+    103,
+    104,
     105,
     106,
     107,
@@ -681,1031 +1703,63 @@
     110,
     111,
     112,
-    113
-   ]
-  },
-  "sections": [
-   {
-    "n": "一、听力 第一部分",
-    "type_zh": "听力 第一部分",
-    "instruction_zh": "第1–5题：听句子，判断对错",
-    "instruction_en": "Questions 1-5: Decide whether the pictures are right or wrong based on the sentences you hear.",
-    "items": [
-     {
-      "n": "例1",
-      "zh": "我们家有三个人。",
-      "pinyin": "Wǒmen jiā yǒu sān ge rén.",
-      "transcript_zh": "我们家有三个人。",
-      "picture_desc_en": "a smiling family outdoors: a man carrying a child on his shoulders and a woman",
-      "answer": "√",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        105
-       ]
-      }
-     },
-     {
-      "n": "例2",
-      "zh": "我每天坐公共汽车去上班。",
-      "pinyin": "Wǒ měi tiān zuò gōnggòngqìchē qù shàng bān.",
-      "transcript_zh": "我每天坐公共汽车去上班。",
-      "picture_desc_en": "a mountain bicycle",
-      "answer": "×",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        105
-       ]
-      }
-     },
-     {
-      "n": 1,
-      "zh": "",
-      "transcript_zh": "昨天我和朋友们一起去唱歌了。",
-      "picture_desc_en": "a group of young people sitting close together on the floor, smiling at the camera",
-      "answer": "×",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        136
-       ]
-      }
-     },
-     {
-      "n": 2,
-      "zh": "",
-      "transcript_zh": "右边看报纸的那个女孩子是我姐姐。",
-      "picture_desc_en": "three young women reading a newspaper together",
-      "answer": "√",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        136
-       ]
-      }
-     },
-     {
-      "n": 3,
-      "zh": "",
-      "transcript_zh": "他是新来的汉语老师。",
-      "picture_desc_en": "a smiling man and a girl sitting at a table with an open book",
-      "answer": "√",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        136
-       ]
-      }
-     },
-     {
-      "n": 4,
-      "zh": "",
-      "transcript_zh": "北京10℃，我们那儿的天气比北京的冷。",
-      "picture_desc_en": "a sandy beach with a sun lounger under a straw umbrella",
-      "answer": "×",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        136
-       ]
-      }
-     },
-     {
-      "n": 5,
-      "zh": "",
-      "transcript_zh": "她生病了，明天可能不去上课了。",
-      "picture_desc_en": "a little girl holding a tissue to her nose",
-      "answer": "√",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        136
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "一、听力 第二部分",
-    "type_zh": "听力 第二部分",
-    "instruction_zh": "第6–10题：听对话，选择与对话内容一致的图片",
-    "instruction_en": "Questions 6-10: Choose the right picture for each dialogue you hear.",
-    "items": [
-     {
-      "n": "例",
-      "zh": "男：你喜欢什么运动？ Nǐ xǐhuan shénme yùndòng? (What sport do you like?) 女：我最喜欢踢足球。 Wǒ zuì xǐhuan tī zúqiú. (My favorite sport is playing football.)",
-      "transcript_zh": "男：你喜欢什么运动？ 女：我最喜欢踢足球。",
-      "options": {
-       "A": "[picture] a man and a woman sitting together looking at a newspaper, smiling",
-       "B": "[picture] a pile of apples",
-       "C": "[picture] four young people singing into microphones, laughing",
-       "D": "[picture] a young woman juggling a football on her knee on a field",
-       "E": "[picture] a group of young women sitting and chatting around a café table",
-       "F": "[picture] a smiling woman with a girl and a boy at desks in a classroom"
-      },
-      "answer": "D",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        106
-       ]
-      }
-     },
-     {
-      "n": 6,
-      "zh": "",
-      "options": {
-       "A": "[picture] a man and a woman sitting together looking at a newspaper, smiling",
-       "B": "[picture] a pile of apples",
-       "C": "[picture] four young people singing into microphones, laughing",
-       "D": "[picture] a young woman juggling a football on her knee on a field",
-       "E": "[picture] a group of young women sitting and chatting around a café table",
-       "F": "[picture] a smiling woman with a girl and a boy at desks in a classroom"
-      },
-      "transcript_zh": "女：昨天和你一起唱歌的人是谁？ 男：是我女朋友。",
-      "answer": "C",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        136
-       ]
-      }
-     },
-     {
-      "n": 7,
-      "zh": "",
-      "options": {
-       "A": "[picture] a man and a woman sitting together looking at a newspaper, smiling",
-       "B": "[picture] a pile of apples",
-       "C": "[picture] four young people singing into microphones, laughing",
-       "D": "[picture] a young woman juggling a football on her knee on a field",
-       "E": "[picture] a group of young women sitting and chatting around a café table",
-       "F": "[picture] a smiling woman with a girl and a boy at desks in a classroom"
-      },
-      "transcript_zh": "女：右边看报纸的那个是你哥哥吗？ 男：对，他是我哥哥。",
-      "answer": "A",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        136
-       ]
-      }
-     },
-     {
-      "n": 8,
-      "zh": "",
-      "options": {
-       "A": "[picture] a man and a woman sitting together looking at a newspaper, smiling",
-       "B": "[picture] a pile of apples",
-       "C": "[picture] four young people singing into microphones, laughing",
-       "D": "[picture] a young woman juggling a football on her knee on a field",
-       "E": "[picture] a group of young women sitting and chatting around a café table",
-       "F": "[picture] a smiling woman with a girl and a boy at desks in a classroom"
-      },
-      "transcript_zh": "男：她是你们新来的老师吗？ 女：她不是新来的老师，她去年就来了。",
-      "answer": "F",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        136
-       ]
-      }
-     },
-     {
-      "n": 9,
-      "zh": "",
-      "options": {
-       "A": "[picture] a man and a woman sitting together looking at a newspaper, smiling",
-       "B": "[picture] a pile of apples",
-       "C": "[picture] four young people singing into microphones, laughing",
-       "D": "[picture] a young woman juggling a football on her knee on a field",
-       "E": "[picture] a group of young women sitting and chatting around a café table",
-       "F": "[picture] a smiling woman with a girl and a boy at desks in a classroom"
-      },
-      "transcript_zh": "女：今天的苹果比昨天的便宜一些，你来点儿吗？ 男：我再看看吧。",
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        136
-       ]
-      }
-     },
-     {
-      "n": 10,
-      "zh": "",
-      "options": {
-       "A": "[picture] a man and a woman sitting together looking at a newspaper, smiling",
-       "B": "[picture] a pile of apples",
-       "C": "[picture] four young people singing into microphones, laughing",
-       "D": "[picture] a young woman juggling a football on her knee on a field",
-       "E": "[picture] a group of young women sitting and chatting around a café table",
-       "F": "[picture] a smiling woman with a girl and a boy at desks in a classroom"
-      },
-      "transcript_zh": "女：前边说话的那几个人是谁？ 男：不认识，可能是新来的学生吧。",
-      "answer": "E",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        136
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "一、听力 第三部分",
-    "type_zh": "听力 第三部分",
-    "instruction_zh": "第11–15题：听对话，选择正确答案",
-    "instruction_en": "Questions 11-15: Listen to the dialogues and answer the questions.",
-    "items": [
-     {
-      "n": "例",
-      "zh": "问：小王的杯子是什么颜色的？",
-      "pinyin": "Xiǎo Wáng de bēizi shì shénme yánsè de?",
-      "transcript_zh": "男：小王，这里有几个杯子，哪个是你的？ 女：左边那个红色的是我的。 问：小王的杯子是什么颜色的？",
-      "options": {
-       "A": "红色 hóngsè red",
-       "B": "黑色 hēisè black",
-       "C": "白色 báisè white"
-      },
-      "answer": "A",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        107
-       ]
-      }
-     },
-     {
-      "n": 11,
-      "zh": "",
-      "transcript_zh": "男：昨天和你一起唱歌的人是谁？ 女：是一个朋友，我同学介绍的，昨天第一次见。 问：昨天和女的一起唱歌的人是谁？",
-      "options": {
-       "A": "她的同学 tā de tóngxué",
-       "B": "她的男朋友 tā de nánpéngyou",
-       "C": "她的一个朋友 tā de yí ge péngyou"
-      },
-      "answer": "C",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        136
-       ]
-      }
-     },
-     {
-      "n": 12,
-      "zh": "",
-      "transcript_zh": "男：你哥哥多大？ 女：他25岁，比我大三岁。 问：女的多大了？",
-      "options": {
-       "A": "25岁 èrshíwǔ suì",
-       "B": "22岁 èrshí'èr suì",
-       "C": "28岁 èrshíbā suì"
-      },
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        136
-       ]
-      }
-     },
-     {
-      "n": 13,
-      "zh": "",
-      "transcript_zh": "女：西瓜三块钱一斤，苹果一块五一斤。 男：苹果比西瓜便宜多了，我还是买苹果吧。 问：男的为什么买苹果？",
-      "options": {
-       "A": "西瓜太贵 xīguā tài guì",
-       "B": "苹果很多 píngguǒ hěn duō",
-       "C": "苹果好吃 píngguǒ hǎochī"
-      },
-      "answer": "A",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        136
-       ]
-      }
-     },
-     {
-      "n": 14,
-      "zh": "",
-      "transcript_zh": "男：你的生日是四月二十八号？ 女：是。你的生日是哪天？ 男：我也是那天的生日。我是八七年的，你呢？ 女：那我比你大一岁。 问：他们两个人谁大？",
-      "options": {
-       "A": "女的和男的一样大 nǚ de hé nán de yíyàng dà",
-       "B": "女的比男的大 nǚ de bǐ nán de dà",
-       "C": "男的比女的大 nán de bǐ nǚ de dà"
-      },
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        136
-       ]
-      }
-     },
-     {
-      "n": 15,
-      "zh": "",
-      "transcript_zh": "男：你的眼睛怎么红了？ 女：是吗？可能是没休息好。 男：那今天晚上早点儿睡觉吧。 女：好的，谢谢。 问：女的怎么了？",
-      "options": {
-       "A": "病了 bìng le",
-       "B": "没睡觉 méi shuì jiào",
-       "C": "没休息好 méi xiūxi hǎo"
-      },
-      "answer": "C",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        136
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "二、阅读 第一部分",
-    "type_zh": "阅读 第一部分",
-    "instruction_zh": "第16–20题：看图片，选择与句子内容一致的图片",
-    "instruction_en": "Questions 16-20: Choose the right picture for each sentence.",
-    "items": [
-     {
-      "n": "例",
-      "zh": "每个星期六，我都去打篮球。",
-      "pinyin": "Měi ge xīngqīliù, wǒ dōu qù dǎ lánqiú.",
-      "options": {
-       "A": "[picture] a smiling woman with glasses talking on a mobile phone, holding a folder",
-       "B": "[picture] close-up of two smiling young women, one behind the other",
-       "C": "[picture] a woman holding up a dress on a hanger in a clothes shop",
-       "D": "[picture] a smiling young man holding a basketball above his head",
-       "E": "[picture] two young men and two young women sitting at an outdoor table with drinks, smiling",
-       "F": "[picture] a smiling girl eating an apple, with fruit in front of her"
-      },
-      "answer": "D",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        108
-       ]
-      }
-     },
-     {
-      "n": 16,
-      "zh": "昨天我和朋友们一起去喝咖啡了。",
-      "pinyin": "Zuótiān wǒ hé péngyoumen yìqǐ qù hē kāfēi le.",
-      "options": {
-       "A": "[picture] a smiling woman with glasses talking on a mobile phone, holding a folder",
-       "B": "[picture] close-up of two smiling young women, one behind the other",
-       "C": "[picture] a woman holding up a dress on a hanger in a clothes shop",
-       "D": "[picture] a smiling young man holding a basketball above his head",
-       "E": "[picture] two young men and two young women sitting at an outdoor table with drinks, smiling",
-       "F": "[picture] a smiling girl eating an apple, with fruit in front of her"
-      },
-      "answer": "E",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        136
-       ]
-      }
-     },
-     {
-      "n": 17,
-      "zh": "左边那个女孩子比右边的那个大两岁。",
-      "pinyin": "Zuǒbian nàge nǚháizi bǐ yòubian de nàge dà liǎng suì.",
-      "options": {
-       "A": "[picture] a smiling woman with glasses talking on a mobile phone, holding a folder",
-       "B": "[picture] close-up of two smiling young women, one behind the other",
-       "C": "[picture] a woman holding up a dress on a hanger in a clothes shop",
-       "D": "[picture] a smiling young man holding a basketball above his head",
-       "E": "[picture] two young men and two young women sitting at an outdoor table with drinks, smiling",
-       "F": "[picture] a smiling girl eating an apple, with fruit in front of her"
-      },
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        136
-       ]
-      }
-     },
-     {
-      "n": 18,
-      "zh": "正在打电话的那个人可能是新来的王老师。",
-      "pinyin": "Zhèngzài dǎ diànhuà de nàge rén kěnéng shì xīn lái de Wáng lǎoshī.",
-      "options": {
-       "A": "[picture] a smiling woman with glasses talking on a mobile phone, holding a folder",
-       "B": "[picture] close-up of two smiling young women, one behind the other",
-       "C": "[picture] a woman holding up a dress on a hanger in a clothes shop",
-       "D": "[picture] a smiling young man holding a basketball above his head",
-       "E": "[picture] two young men and two young women sitting at an outdoor table with drinks, smiling",
-       "F": "[picture] a smiling girl eating an apple, with fruit in front of her"
-      },
-      "answer": "A",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        136
-       ]
-      }
-     },
-     {
-      "n": 19,
-      "zh": "多吃水果对身体好，你也来一个吧。",
-      "pinyin": "Duō chī shuǐguǒ duì shēntǐ hǎo, nǐ yě lái yí ge ba.",
-      "options": {
-       "A": "[picture] a smiling woman with glasses talking on a mobile phone, holding a folder",
-       "B": "[picture] close-up of two smiling young women, one behind the other",
-       "C": "[picture] a woman holding up a dress on a hanger in a clothes shop",
-       "D": "[picture] a smiling young man holding a basketball above his head",
-       "E": "[picture] two young men and two young women sitting at an outdoor table with drinks, smiling",
-       "F": "[picture] a smiling girl eating an apple, with fruit in front of her"
-      },
-      "answer": "F",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        136
-       ]
-      }
-     },
-     {
-      "n": 20,
-      "zh": "这件衣服300块，比那件便宜50块。",
-      "pinyin": "Zhè jiàn yīfu kuài, bǐ nà jiàn piányi kuài.",
-      "options": {
-       "A": "[picture] a smiling woman with glasses talking on a mobile phone, holding a folder",
-       "B": "[picture] close-up of two smiling young women, one behind the other",
-       "C": "[picture] a woman holding up a dress on a hanger in a clothes shop",
-       "D": "[picture] a smiling young man holding a basketball above his head",
-       "E": "[picture] two young men and two young women sitting at an outdoor table with drinks, smiling",
-       "F": "[picture] a smiling girl eating an apple, with fruit in front of her"
-      },
-      "answer": "C",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        136
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "二、阅读 第二部分",
-    "type_zh": "阅读 第二部分",
-    "instruction_zh": "第21–25题：选择合适的词语填空",
-    "instruction_en": "Questions 21-25: Choose the proper words to fill in the brackets.",
-    "word_bank": [
-     [
-      "A 唱歌 chànggē",
-      "B 便宜 piányi",
-      "C 说话 shuōhuà",
-      "D 可能 kěnéng",
-      "E 贵 guì",
-      "F 比 bǐ"
-     ]
-    ],
-    "items": [
-     {
-      "n": "例",
-      "zh": "这儿的羊肉很好吃，但是也很（________）。",
-      "pinyin": "Zhèr de yángròu hěn hǎochī, dànshì yě hěn ______.",
-      "answer": "E",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        109
-       ]
-      }
-     },
-     {
-      "n": 21,
-      "zh": "昨天25度，今天（________）昨天热一点儿。",
-      "pinyin": "Zuótiān dù, jīntiān ______ zuótiān rè yìdiǎnr.",
-      "answer": "F",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        136
-       ]
-      }
-     },
-     {
-      "n": 22,
-      "zh": "每个周末，我都喜欢和朋友们一起去（________）。",
-      "pinyin": "Měi ge zhōumò, wǒ dōu xǐhuan hé péngyoumen yìqǐ qù ______.",
-      "answer": "A",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        136
-       ]
-      }
-     },
-     {
-      "n": 23,
-      "zh": "你认识前边（________）的那两个人吗？",
-      "pinyin": "Nǐ rènshi qiánbian ______ de nà liǎng ge rén ma?",
-      "answer": "C",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        136
-       ]
-      }
-     },
-     {
-      "n": 24,
-      "zh": "天气不太好，我觉得（________）要下雨了。",
-      "pinyin": "Tiānqì bú tài hǎo, wǒ juéde ______ yào xià yǔ le.",
-      "answer": "D",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        136
-       ]
-      }
-     },
-     {
-      "n": 25,
-      "zh": "苹果比西瓜（________），我想多买点儿苹果。",
-      "pinyin": "Píngguǒ bǐ xīguā ______, wǒ xiǎng duō mǎi diǎnr píngguǒ.",
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        136
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "二、阅读 第三部分",
-    "type_zh": "阅读 第三部分",
-    "instruction_zh": "第26–30题：判断下列句子的意思是否正确",
-    "instruction_en": "Questions 26-30: Decide whether the inferences are true or false.",
-    "items": [
-     {
-      "n": "例1",
-      "zh": "现在是11点30分，他们已经游了20分钟了。 ★他们11点10分开始游泳。",
-      "pinyin": "Xiànzài shì diǎn fēn, tāmen yǐjīng yóule fēnzhōng le. ★Tāmen diǎn fēn kāishǐ yóuyǒng.",
-      "answer": "√",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        109
-       ]
-      }
-     },
-     {
-      "n": "例2",
-      "zh": "我会跳舞，但跳得不怎么样。 ★我跳得非常好。",
-      "pinyin": "Wǒ huì tiàowǔ, dàn tiào de bù zěnmeyàng. ★Wǒ tiào de fēicháng hǎo.",
-      "answer": "×",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        110
-       ]
-      }
-     },
-     {
-      "n": 26,
-      "zh": "左边看报纸的这个人是我姐姐，右边写字的那个人是我哥哥。 ★他们家可能有三个孩子。",
-      "pinyin": "Zuǒbian kàn bàozhǐ de zhège rén shì wǒ jiějie, yòubian xiězì de nàge rén shì wǒ gēge. ★Tāmen jiā kěnéng yǒu sān ge háizi.",
-      "answer": "√",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        136
-       ]
-      }
-     },
-     {
-      "n": 27,
-      "zh": "女儿让我告诉你，她今天晚上和朋友们一起去唱歌，不回来吃晚饭了。 ★女儿今天在家吃晚饭。",
-      "pinyin": "Nǚ'ér ràng wǒ gàosu nǐ, tā jīntiān wǎnshang hé péngyoumen yìqǐ qù chànggē, bù huílai chī wǎnfàn le. ★Nǚ'ér jīntiān zài jiā chī wǎnfàn.",
-      "answer": "×",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        136
-       ]
-      }
-     },
-     {
-      "n": 28,
-      "zh": "这是儿子送给我的手表，因为明天是我的生日。 ★她送给儿子一块手表。",
-      "pinyin": "Zhè shì érzi sòng gěi wǒ de shǒubiǎo, yīnwèi míngtiān shì wǒ de shēngrì. ★Tā sòng gěi érzi yí kuài shǒubiǎo.",
-      "answer": "×",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        136
-       ]
-      }
-     },
-     {
-      "n": 29,
-      "zh": "你问的这个问题很好，我要想一想，明天再告诉你，可以吗？ ★他现在没有回答这个问题。",
-      "pinyin": "Nǐ wèn de zhège wèntí hěn hǎo, wǒ yào xiǎng yi xiǎng, míngtiān zài gàosu nǐ, kěyǐ ma? ★Tā xiànzài méiyǒu huídá zhège wèntí.",
-      "answer": "√",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        136
-       ]
-      }
-     },
-     {
-      "n": 30,
-      "zh": "哥哥的汉语比我好，姐姐的汉语也比我好。 ★我的汉语没有哥哥和姐姐那么好。",
-      "pinyin": "Gēge de Hànyǔ bǐ wǒ hǎo, jiějie de Hànyǔ yě bǐ wǒ hǎo. ★Wǒ de Hànyǔ méiyǒu gēge hé jiějie nàme hǎo.",
-      "answer": "√",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        136
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "二、阅读 第四部分",
-    "type_zh": "阅读 第四部分",
-    "instruction_zh": "第31–35题：选择合适的问答",
-    "instruction_en": "Questions 31-35: Match the sentences to make dialogues.",
-    "items": [
-     {
-      "n": "例",
-      "zh": "他还在教室里学习。 (He is still studying in the classroom.)",
-      "pinyin": "Tā hái zài jiàoshì li xuéxí.",
-      "options": {
-       "A": "这两天怎么没看见王老师？ Zhè liǎng tiān zěnme méi kànjiàn Wáng lǎoshī?",
-       "B": "我哥哥比我姐姐大三岁。 Wǒ gēge bǐ wǒ jiějie dà sān suì.",
-       "C": "家里还有呢，来点儿水果吧。 Jiāli hái yǒu ne, lái diǎnr shuǐguǒ ba.",
-       "D": "这是我爸爸送给我的，昨天是我的生日。 Zhè shì wǒ bàba sòng gěi wǒ de, zuótiān shì wǒ de shēngrì.",
-       "E": "他在哪儿呢？你看见他了吗？ Tā zài nǎr ne? Nǐ kànjiàn tā le ma?",
-       "F": "我觉得公共汽车没有自行车快。因为路上车太多了。 Wǒ juéde gōnggòngqìchē méiyǒu zìxíngchē kuài. Yīnwèi lùshang chē tài duō le."
-      },
-      "answer": "E",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        111
-       ]
-      }
-     },
-     {
-      "n": 31,
-      "zh": "今天的鸡蛋比昨天的便宜一些，您来点儿吧。",
-      "pinyin": "Jīntiān de jīdàn bǐ zuótiān de piányi yìxiē, nín lái diǎnr ba.",
-      "options": {
-       "A": "这两天怎么没看见王老师？ Zhè liǎng tiān zěnme méi kànjiàn Wáng lǎoshī?",
-       "B": "我哥哥比我姐姐大三岁。 Wǒ gēge bǐ wǒ jiějie dà sān suì.",
-       "C": "家里还有呢，来点儿水果吧。 Jiāli hái yǒu ne, lái diǎnr shuǐguǒ ba.",
-       "D": "这是我爸爸送给我的，昨天是我的生日。 Zhè shì wǒ bàba sòng gěi wǒ de, zuótiān shì wǒ de shēngrì.",
-       "E": "他在哪儿呢？你看见他了吗？ Tā zài nǎr ne? Nǐ kànjiàn tā le ma?",
-       "F": "我觉得公共汽车没有自行车快。因为路上车太多了。 Wǒ juéde gōnggòngqìchē méiyǒu zìxíngchē kuài. Yīnwèi lùshang chē tài duō le."
-      },
-      "answer": "C",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        136
-       ]
-      }
-     },
-     {
-      "n": 32,
-      "zh": "你哥哥大还是你姐姐大？",
-      "pinyin": "Nǐ gēgē dà háishi nǐ jiějie dà?",
-      "options": {
-       "A": "这两天怎么没看见王老师？ Zhè liǎng tiān zěnme méi kànjiàn Wáng lǎoshī?",
-       "B": "我哥哥比我姐姐大三岁。 Wǒ gēge bǐ wǒ jiějie dà sān suì.",
-       "C": "家里还有呢，来点儿水果吧。 Jiāli hái yǒu ne, lái diǎnr shuǐguǒ ba.",
-       "D": "这是我爸爸送给我的，昨天是我的生日。 Zhè shì wǒ bàba sòng gěi wǒ de, zuótiān shì wǒ de shēngrì.",
-       "E": "他在哪儿呢？你看见他了吗？ Tā zài nǎr ne? Nǐ kànjiàn tā le ma?",
-       "F": "我觉得公共汽车没有自行车快。因为路上车太多了。 Wǒ juéde gōnggòngqìchē méiyǒu zìxíngchē kuài. Yīnwèi lùshang chē tài duō le."
-      },
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        136
-       ]
-      }
-     },
-     {
-      "n": 33,
-      "zh": "这是你的自行车吗？真漂亮。",
-      "pinyin": "Zhè shì nǐ de zìxíngchē ma? Zhēn piàoliang.",
-      "options": {
-       "A": "这两天怎么没看见王老师？ Zhè liǎng tiān zěnme méi kànjiàn Wáng lǎoshī?",
-       "B": "我哥哥比我姐姐大三岁。 Wǒ gēge bǐ wǒ jiějie dà sān suì.",
-       "C": "家里还有呢，来点儿水果吧。 Jiāli hái yǒu ne, lái diǎnr shuǐguǒ ba.",
-       "D": "这是我爸爸送给我的，昨天是我的生日。 Zhè shì wǒ bàba sòng gěi wǒ de, zuótiān shì wǒ de shēngrì.",
-       "E": "他在哪儿呢？你看见他了吗？ Tā zài nǎr ne? Nǐ kànjiàn tā le ma?",
-       "F": "我觉得公共汽车没有自行车快。因为路上车太多了。 Wǒ juéde gōnggòngqìchē méiyǒu zìxíngchē kuài. Yīnwèi lùshang chē tài duō le."
-      },
-      "answer": "D",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        136
-       ]
-      }
-     },
-     {
-      "n": 34,
-      "zh": "你每天坐公共汽车去学校吗？",
-      "pinyin": "Nǐ měi tiān zuò gōnggòngqìchē qù xuéxiào ma?",
-      "options": {
-       "A": "这两天怎么没看见王老师？ Zhè liǎng tiān zěnme méi kànjiàn Wáng lǎoshī?",
-       "B": "我哥哥比我姐姐大三岁。 Wǒ gēge bǐ wǒ jiějie dà sān suì.",
-       "C": "家里还有呢，来点儿水果吧。 Jiāli hái yǒu ne, lái diǎnr shuǐguǒ ba.",
-       "D": "这是我爸爸送给我的，昨天是我的生日。 Zhè shì wǒ bàba sòng gěi wǒ de, zuótiān shì wǒ de shēngrì.",
-       "E": "他在哪儿呢？你看见他了吗？ Tā zài nǎr ne? Nǐ kànjiàn tā le ma?",
-       "F": "我觉得公共汽车没有自行车快。因为路上车太多了。 Wǒ juéde gōnggòngqìchē méiyǒu zìxíngchē kuài. Yīnwèi lùshang chē tài duō le."
-      },
-      "answer": "F",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        136
-       ]
-      }
-     },
-     {
-      "n": 35,
-      "zh": "她可能去旅游了。",
-      "pinyin": "Tā kěnéng qù lǚyóu le.",
-      "options": {
-       "A": "这两天怎么没看见王老师？ Zhè liǎng tiān zěnme méi kànjiàn Wáng lǎoshī?",
-       "B": "我哥哥比我姐姐大三岁。 Wǒ gēge bǐ wǒ jiějie dà sān suì.",
-       "C": "家里还有呢，来点儿水果吧。 Jiāli hái yǒu ne, lái diǎnr shuǐguǒ ba.",
-       "D": "这是我爸爸送给我的，昨天是我的生日。 Zhè shì wǒ bàba sòng gěi wǒ de, zuótiān shì wǒ de shēngrì.",
-       "E": "他在哪儿呢？你看见他了吗？ Tā zài nǎr ne? Nǐ kànjiàn tā le ma?",
-       "F": "我觉得公共汽车没有自行车快。因为路上车太多了。 Wǒ juéde gōnggòngqìchē méiyǒu zìxíngchē kuài. Yīnwèi lùshang chē tài duō le."
-      },
-      "answer": "A",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        136
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "三、语音 第一部分",
-    "type_zh": "语音 第一部分 听录音",
-    "instruction_zh": "第1题：听录音，注意句重音和句末的升降调",
-    "instruction_en": "Question 1: Listen to the recording and pay attention to the stress in each sentence and the intonation at the end of each sentence.",
-    "items": [
-     {
-      "n": "1-(1)",
-      "zh": "明天你去不去游泳？↘［重读点：去］",
-      "pinyin": "Míngtiān nǐ qù bu qù yóuyǒng?",
-      "transcript_zh": "明天你去不去游泳？"
-     },
-     {
-      "n": "1-(2)",
-      "zh": "你想不想和朋友们一起去喝茶？↘［重读点：想］",
-      "pinyin": "Nǐ xiǎng bu xiǎng hé péngyoumen yìqǐ qù hē chá?",
-      "transcript_zh": "你想不想和朋友们一起去喝茶？"
-     },
-     {
-      "n": "1-(3)",
-      "zh": "你知道不知道这个汉字怎么写？↘［重读点：知道］",
-      "pinyin": "Nǐ zhīdào bu zhīdào zhège Hànzì zěnme xiě?",
-      "transcript_zh": "你知道不知道这个汉字怎么写？"
-     },
-     {
-      "n": "1-(4)",
-      "zh": "你有没有一百块钱？↘［重读点：有］",
-      "pinyin": "Nǐ yǒu méiyou yìbǎi kuài qián?",
-      "transcript_zh": "你有没有一百块钱？"
-     }
-    ]
-   },
-   {
-    "n": "三、语音 第二部分",
-    "type_zh": "语音 第二部分 跟读",
-    "instruction_zh": "第2题：听录音并跟读下列句子，注意句重音和句末的升降调",
-    "instruction_en": "Question 2: Listen to the recording and repeat the following sentences, paying attention to the stress in each sentence and the intonation at the end of each sentence.",
-    "items": [
-     {
-      "n": "2-(1)",
-      "zh": "你认识不认识那个穿红衣服的人？↘［重读点：认识］",
-      "pinyin": "Nǐ rènshi bu rènshi nàge chuān hóng yīfu de rén?",
-      "transcript_zh": "你认识不认识那个穿红衣服的人？"
-     },
-     {
-      "n": "2-(2)",
-      "zh": "你每天早上喝不喝牛奶？↘［重读点：喝］",
-      "pinyin": "Nǐ měi tiān zǎoshang hē bu hē niúnǎi?",
-      "transcript_zh": "你每天早上喝不喝牛奶？"
-     },
-     {
-      "n": "2-(3)",
-      "zh": "前边说话的那个人是不是你的汉语老师？↘［重读点：是］",
-      "pinyin": "Qiánbian shuōhuà de nàge rén shì bu shì nǐ de Hànyǔ lǎoshī?",
-      "transcript_zh": "前边说话的那个人是不是你的汉语老师？"
-     },
-     {
-      "n": "2-(4)",
-      "zh": "你看不看这本新买来的书？↘［重读点：看］",
-      "pinyin": "Nǐ kàn bu kàn zhè běn xīn mǎi lái de shū?",
-      "transcript_zh": "你看不看这本新买来的书？"
-     }
-    ]
-   },
-   {
-    "n": "四、汉字 第一部分",
-    "type_zh": "汉字 偏旁归类",
-    "instruction_zh": "第1–2题：看汉字，按偏旁归类",
-    "instruction_en": "Questions 1-2: Group the characters with the same radical.",
-    "word_bank": [
-     [
-      "A 冷",
-      "B 病",
-      "C 凉",
-      "D 决"
-     ],
-     [
-      "E 瘦",
-      "F 冰",
-      "G 疯",
-      "H 疼"
-     ]
-    ],
-    "items": [
-     {
-      "n": 1,
-      "zh": "疒：________",
-      "answer": "B E G H",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        136
-       ]
-      }
-     },
-     {
-      "n": 2,
-      "zh": "冫：________",
-      "answer": "A C D F",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        136
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "四、汉字 第二部分",
-    "type_zh": "汉字 猜词义",
-    "instruction_zh": "第3题：看生词和图片，猜出词义",
-    "instruction_en": "Question 3: Guess the meaning of each word based on the new words and pictures.",
-    "word_bank": [
-     [
-      "水果店",
-      "酒店",
-      "商店",
-      "书店"
-     ]
-    ],
-    "items": [
-     {
-      "n": "3-水果店",
-      "zh": "水果店 ________",
-      "options": {
-       "A": "[picture] a woman with a shopping cart reaching for goods on supermarket shelves",
-       "B": "[picture] fruit piled up on stands in a market",
-       "C": "[picture] tall shelves full of books, with books laid out on tables",
-       "D": "[picture] a hotel lobby with a reception counter and ceiling lights"
-      },
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        136
-       ]
-      }
-     },
-     {
-      "n": "3-酒店",
-      "zh": "酒店 ________",
-      "options": {
-       "A": "[picture] a woman with a shopping cart reaching for goods on supermarket shelves",
-       "B": "[picture] fruit piled up on stands in a market",
-       "C": "[picture] tall shelves full of books, with books laid out on tables",
-       "D": "[picture] a hotel lobby with a reception counter and ceiling lights"
-      },
-      "answer": "D",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        136
-       ]
-      }
-     },
-     {
-      "n": "3-商店",
-      "zh": "商店 ________",
-      "options": {
-       "A": "[picture] a woman with a shopping cart reaching for goods on supermarket shelves",
-       "B": "[picture] fruit piled up on stands in a market",
-       "C": "[picture] tall shelves full of books, with books laid out on tables",
-       "D": "[picture] a hotel lobby with a reception counter and ceiling lights"
-      },
-      "answer": "A",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        136
-       ]
-      }
-     },
-     {
-      "n": "3-书店",
-      "zh": "书店 ________",
-      "options": {
-       "A": "[picture] a woman with a shopping cart reaching for goods on supermarket shelves",
-       "B": "[picture] fruit piled up on stands in a market",
-       "C": "[picture] tall shelves full of books, with books laid out on tables",
-       "D": "[picture] a hotel lobby with a reception counter and ceiling lights"
-      },
-      "answer": "C",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        136
-       ]
-      }
-     }
-    ]
-   }
-  ],
-  "answers_ref": {
-   "book": "teacher",
-   "pages": [
+    113,
     135,
-    136
-   ]
+    136,
+    137
+  ],
+  "schema_version": 1,
+  "hsk30": {
+    "source": "courseware",
+    "ref": {
+      "book": "hsk30_courseware",
+      "pages": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ]
+    },
+    "new_words": [
+      {
+        "n": 1,
+        "zh": "男孩儿",
+        "pinyin": "nánháir"
+      },
+      {
+        "n": 2,
+        "zh": "女孩儿",
+        "pinyin": "nǚháir"
+      },
+      {
+        "n": 3,
+        "zh": "小孩儿",
+        "pinyin": "xiǎoháir"
+      },
+      {
+        "n": 4,
+        "zh": "小时候",
+        "pinyin": "xiǎoshíhou"
+      },
+      {
+        "n": 5,
+        "zh": "右",
+        "pinyin": "yòu"
+      },
+      {
+        "n": 6,
+        "zh": "姓名",
+        "pinyin": "xìngmíng"
+      }
+    ],
+    "grammar": [],
+    "exercises": [],
+    "unclear": [
+      "Курсын слайд (补充生词Supplement New Words) зөвхөн ханз + пиньинь хэвлэдэг — pos/en номд байхгүй тул оруулаагүй (таамаглаагүй, толь бичгээс нэмээгүй)."
+    ]
   }
- },
- "unclear": [
-  "Дасгалын номын 听力 бичвэр (transcript_zh) — багшийн номын хавсралт PDF х.135–136, бүх хариулт (参考答案) — PDF х.136; 例-ийн хариулт дасгалын номд өөрт нь хэвлэгдсэн. prep.json-ийн appendix мужид орсон PDF х.137 нь 第12课-ийн сонсголын бичвэр тул ашиглаагүй. 三、语音 хэсэгт хариулт шаардлагагүй (сонсох/давтах).",
-  "Пиньинь зөрүү: 哥哥 — сурах бичиг (课文2, PDF х.102) болон дасгалын ном бусад газар «gēge», харин дасгалын ном PDF х.111 (32) «gēgē» — номд байгаагаар.",
-  "Пиньиний бичлэг зөрүү: 生词 хүснэгт (сурах бичиг PDF х.102/103) «chàng gē», «shuō huà» (зайтай), дасгалын номын 阅读 第二部分 үгийн сан (PDF х.109) болон 26/27-д «chànggē», «shuōhuà», «xiězì» (нийлсэн); сурах бичгийн 课文2 «xiě zì» — номд байгаагаар.",
-  "Багшийн ном PDF х.85 课文3 提示表格 : «西瓜 昨天四块 / 今天三块五；苹果 昨天三块 / 今天两块五» — сурах бичгийн 课文3-т зөвхөн өнөөдрийн тарвасны үнэ (三块五一斤) байгаа, өчигдрийн үнэ ба алимны үнэ байхгүй; багшийн номын зохиосон хүснэгтийг номд байгаагаар оруулсан.",
-  "Багшийн ном PDF х.80 复习旧课 1: «上课、帮助、哥哥、鸡蛋、西瓜、正在、手机、洗衣服» — 第10课-ийн 生词 нь «课», «洗» (上课 , 洗衣服 бол хэллэг) — номд байгаагаар.",
-  "Багшийн ном PDF х.84 课文2 асуулт «哥哥正在做什么呢？» — сурах бичгийн 课文2-т «右边写字的那个人是我哥哥»; 课文4 асуулт «那个汉语老师正在做什么呢？» — 课文4-т «前边说话的那个人». Номд байгаагаар.",
-  "语音 (сурах бичиг PDF х.106, дасгалын ном PDF х.112, багшийн ном PDF х.85): онцлох (重读) хэсгийг ханзын доорх цэгээр, өгүүлбэрийн төгсгөлийн уналтыг сумаар тэмдэглэсэн; JSON-д «［重读点：…］» ба «↘» гэж бичсэн (энэ тэмдэглэгээ номд текстээр байхгүй). Хоёр ханзтай үгэнд (喜欢 , 知道 , 认识) хоёр ханзын доор цэг байгаа тул үгээр бичсэн.",
-  "Дасгалын номын пиньинь мөрөнд тоонууд орхигдсон: 阅读 第一部分 20 («Zhè jiàn yīfu kuài, bǐ nà jiàn piányi kuài.»), 第二部分 21 («Zuótiān dù…»), 第三部分 例1 — номд байгаагаар.",
-  "Сурах бичиг PDF х.106 练习3 (3): «昨天35°，今天没有____» (пиньинь «sānshíwǔ dù»), зураг дээрх цаг агаарын апп «32°» харуулж байна — номд байгаагаар.",
-  "Сурах бичиг PDF х.102 课文2-ын English Version «the guy on the right writing», зураг дээр хоёр залуу эмэгтэй компьютерийн өмнө — номд байгаагаар.",
-  "Хариулт хэвлэгдээгүй: сурах бичгийн 热身2 (反义词 — багшийн ном зөвхөн «左→右» жишээ), 练习2 回答问题 , 练习3 描述图片 , 运用 双人/小组活动 ; багшийн номын 复习 2 (辨析), 语言点(1)④ 连线 , 语言点(2)③ 完成句子 , 汉字 补充练习 a/b/c. 热身1-ийн хариулт зөвхөн багшийн номд (PDF х.81).",
-  "Дасгалын номын 四、汉字 第二部分 хариулт «3. B D A C» — үгийн дарааллаар (水果店 , 酒店 , 商店 , 书店) оноосон: 水果店=B, 酒店=D, 商店=A, 书店=C.",
-  "Энэ хичээлийн 生词 хүснэгтэд 专有名词 байхгүй (王方 бичвэрт гарсан ч жагсаалтад ороогүй); 课堂用语 , 文化 , 俗语 хэсэг байхгүй.",
-  "Багшийн номын хуудасны лавлагаа (课本第86/87页 , 练习册第97/100-101/104/105页) нь номын хэвлэсэн дугаар (PDF биш) — номд байгаагаар.",
-  "Аудио файлын нэр мэдэгдэхгүй тул audio талбар орхисон. Номын CD тэмдэг: сурах бичиг 课文1–4 = 11-1…11-4, 语音 11-5; дасгалын ном 听力 11-1, 语音 11-2.",
-  "Зургийн тайлбарууд (picture_desc_en, pictures_desc_en, options «[picture]») зургаас товч, объектив дүрсэлсэн."
- ],
- "verified_pages": [
-  80,
-  81,
-  82,
-  83,
-  84,
-  85,
-  86,
-  101,
-  102,
-  103,
-  104,
-  105,
-  106,
-  107,
-  108,
-  109,
-  110,
-  111,
-  112,
-  113,
-  135,
-  136,
-  137
- ],
- "schema_version": 1
 }

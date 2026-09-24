@@ -1,14 +1,2173 @@
 {
- "level": "hsk3",
- "lesson": 15,
- "book": "HSK3",
- "title_zh": "其他都没什么问题",
- "title_pinyin": "Qítā dōu méi shénme wèntí",
- "title_en": "The rest of them are all OK",
- "textbook": {
-  "ref": {
-   "book": "textbook",
-   "pages": [
+  "level": "hsk3",
+  "lesson": 15,
+  "book": "HSK3",
+  "title_zh": "其他都没什么问题",
+  "title_pinyin": "Qítā dōu méi shénme wèntí",
+  "title_en": "The rest of them are all OK",
+  "textbook": {
+    "ref": {
+      "book": "textbook",
+      "pages": [
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150
+      ]
+    },
+    "warmup": [
+      {
+        "instruction_zh": "给下面的词语选择对应的图片",
+        "instruction_en": "Match the pictures with the words.",
+        "items": [
+          "①节日 jiérì",
+          "②留学生 liúxuéshēng",
+          "③街道 jiēdào",
+          "④世界 shìjiè",
+          "⑤上网 shàng wǎng",
+          "⑥新闻 xīnwén"
+        ],
+        "pictures_desc_en": [
+          "A: three young people seen from behind, sitting at computers in a computer room",
+          "B: a folded newspaper with the word “NEWS”",
+          "C: a wide city street lined with high-rise buildings",
+          "D: four smiling young students of different ethnicities holding bags and books",
+          "E: a globe of the Earth",
+          "F: dancers in red costumes holding red lanterns with the character 福"
+        ]
+      },
+      {
+        "instruction_zh": "说说你喜欢什么，不喜欢什么。喜欢的画√，不喜欢的画×。",
+        "instruction_en": "Talk about what you like and what you don’t like. Tick (√) the things you like and cross (×) those you don’t.",
+        "items": [
+          "饮料 yǐnliào | □咖啡 kāfēi | □牛奶 niúnǎi | □茶 chá | □水 shuǐ",
+          "水果 shuǐguǒ | □苹果 píngguǒ | □香蕉 xiāngjiāo | □西瓜 xīguā | □香瓜 xiāngguā",
+          "肉类 ròulèi | □牛肉 niúròu | □羊肉 yángròu | □鸡肉 jīròu | □鱼肉 yúròu",
+          "颜色 yánsè | □红色 hóngsè | □白色 báisè | □绿色 lǜsè | □黑色 hēisè",
+          "运动 yùndòng | □跑步 pǎo bù | □爬山 pá shān | □游泳 yóu yǒng | □打篮球 dǎ lánqiú",
+          "学习 xuéxí | □数学 shùxué | □英语 yīngyǔ | □历史 lìshǐ | □汉语 Hànyǔ"
+        ]
+      }
+    ],
+    "texts": [
+      {
+        "n": 1,
+        "title_zh": "在办公室",
+        "title_en": "In the office",
+        "kind": "dialogue",
+        "audio": "hsk3-textbook-1501.mp3",
+        "lines": [
+          {
+            "speaker": "大山",
+            "zh": "老师，我来中国留学两年了，但是我的汉语水平提高得一点儿也不快啊。",
+            "pinyin": "Lǎoshī, wǒ lái Zhōngguó liú xué liǎng nián le, dànshì wǒ de Hànyǔ shuǐpíng tí gāo de yìdiǎnr yě bú kuài a."
+          },
+          {
+            "speaker": "老师",
+            "zh": "你每天认真学习，做练习、完成作业，一直不错啊。",
+            "pinyin": "Nǐ měi tiān rènzhēn xuéxí, zuò liànxí, wán chéng zuòyè, yìzhí búcuò a."
+          },
+          {
+            "speaker": "大山",
+            "zh": "这是我昨天的作业，您帮我看看对不对。",
+            "pinyin": "Zhè shì wǒ zuótiān de zuòyè, nín bāng wǒ kànkan duì bu duì."
+          },
+          {
+            "speaker": "老师",
+            "zh": "写得不错，除了这个句子意思有些不清楚外，其他都没什么问题。",
+            "pinyin": "Xiě de búcuò, chúle zhège jùzi yìsi yǒuxiē bù qīngchu wài, qítā dōu méi shénme wèntí."
+          },
+          {
+            "speaker": "大山",
+            "zh": "谢谢老师！",
+            "pinyin": "Xièxie lǎoshī!"
+          },
+          {
+            "speaker": "老师",
+            "zh": "以后有什么不明白的地方，可以给我打电话或者发电子邮件。",
+            "pinyin": "Yǐhòu yǒu shénme bù míngbai de dìfang, kěyǐ gěi wǒ dǎ diànhuà huòzhě fā diànzǐ yóujiàn."
+          }
+        ],
+        "new_words": [
+          {
+            "n": 1,
+            "zh": "留学",
+            "pinyin": "liú xué",
+            "pos": "v.",
+            "en": "to study abroad",
+            "text": 1
+          },
+          {
+            "n": 2,
+            "zh": "水平",
+            "pinyin": "shuǐpíng",
+            "pos": "n.",
+            "en": "level, standard",
+            "text": 1
+          },
+          {
+            "n": 3,
+            "zh": "提高",
+            "pinyin": "tí gāo",
+            "pos": "v.",
+            "en": "to improve",
+            "text": 1
+          },
+          {
+            "n": 4,
+            "zh": "练习",
+            "pinyin": "liànxí",
+            "pos": "n.",
+            "en": "exercise",
+            "text": 1
+          },
+          {
+            "n": 5,
+            "zh": "完成",
+            "pinyin": "wán chéng",
+            "pos": "v.",
+            "en": "to complete",
+            "text": 1
+          },
+          {
+            "n": 6,
+            "zh": "句子",
+            "pinyin": "jùzi",
+            "pos": "n.",
+            "en": "sentence",
+            "text": 1
+          },
+          {
+            "n": 7,
+            "zh": "其他",
+            "pinyin": "qítā",
+            "pos": "pron.",
+            "en": "the rest",
+            "text": 1
+          },
+          {
+            "n": 8,
+            "zh": "发",
+            "pinyin": "fā",
+            "pos": "v.",
+            "en": "to send",
+            "text": 1
+          }
+        ]
+      },
+      {
+        "n": 2,
+        "title_zh": "在教室",
+        "title_en": "In the classroom",
+        "kind": "dialogue",
+        "audio": "hsk3-textbook-1502.mp3",
+        "lines": [
+          {
+            "speaker": "学生",
+            "zh": "老师，除了小云，其他人都来了。",
+            "pinyin": "Lǎoshī, chúle Xiǎoyún, qítā rén dōu lái le."
+          },
+          {
+            "speaker": "老师",
+            "zh": "比赛马上就要开始了，小云怎么还没来？",
+            "pinyin": "Bǐsài mǎshàng jiù yào kāishǐ le, Xiǎoyún zěnme hái méi lái?"
+          },
+          {
+            "speaker": "学生",
+            "zh": "刚才给她打电话了，她在路上呢。",
+            "pinyin": "Gāngcái gěi tā dǎ diànhuà le, tā zài lùshang ne."
+          },
+          {
+            "speaker": "老师",
+            "zh": "不等她了，我先给大家讲讲这次比赛的要求和一些需要注意的地方。",
+            "pinyin": "Bù děng tā le, wǒ xiān gěi dàjiā jiǎngjiang zhè cì bǐsài de yāoqiú hé yìxiē xūyào zhù yì de dìfang."
+          },
+          {
+            "speaker": "学生",
+            "zh": "老师，您放心，今天的比赛我们一定能拿第一。",
+            "pinyin": "Lǎoshī, nín fàngxīn, jīntiān de bǐsài wǒmen yídìng néng ná dì yī."
+          }
+        ],
+        "new_words": [
+          {
+            "n": 9,
+            "zh": "要求",
+            "pinyin": "yāoqiú",
+            "pos": "n.",
+            "en": "requirement",
+            "text": 2
+          },
+          {
+            "n": 10,
+            "zh": "注意",
+            "pinyin": "zhù yì",
+            "pos": "v.",
+            "en": "to pay attention to",
+            "text": 2
+          }
+        ],
+        "proper_nouns": [
+          {
+            "zh": "小云",
+            "pinyin": "Xiǎoyún",
+            "en": "Xiaoyun, name of a person"
+          }
+        ]
+      },
+      {
+        "n": 3,
+        "title_zh": "在休息室",
+        "title_en": "In the lounge",
+        "kind": "dialogue",
+        "audio": "hsk3-textbook-1503.mp3",
+        "lines": [
+          {
+            "speaker": "同事",
+            "zh": "现在用电脑上网真方便啊！",
+            "pinyin": "Xiànzài yòng diànnǎo shàng wǎng zhēn fāngbiàn a!"
+          },
+          {
+            "speaker": "小刚",
+            "zh": "是啊，除了看新闻，人们还可以在网上听歌、看电影、买东西。",
+            "pinyin": "Shì a, chúle kàn xīnwén, rénmen hái kěyǐ zài wǎngshang tīng gē, kàn diànyǐng, mǎi dōngxi."
+          },
+          {
+            "speaker": "同事",
+            "zh": "对了，你从网上买的那件衣服呢？怎么没见你穿？",
+            "pinyin": "Duìle, nǐ cóng wǎngshang mǎi de nà jiàn yīfu ne? Zěnme méi jiàn nǐ chuān?"
+          },
+          {
+            "speaker": "小刚",
+            "zh": "那件衣服我穿着有点儿小，给我弟弟了。",
+            "pinyin": "Nà jiàn yīfu wǒ chuānzhe yǒudiǎnr xiǎo, gěi wǒ dìdi le."
+          },
+          {
+            "speaker": "同事",
+            "zh": "他满意吗？",
+            "pinyin": "Tā mǎnyì ma?"
+          },
+          {
+            "speaker": "小刚",
+            "zh": "不用花钱，还有新衣服穿，他满意极了。",
+            "pinyin": "Búyòng huā qián, hái yǒu xīn yīfu chuān, tā mǎnyì jí le."
+          }
+        ],
+        "new_words": [
+          {
+            "n": 11,
+            "zh": "上网",
+            "pinyin": "shàng wǎng",
+            "pos": "v.",
+            "en": "to surf the Internet",
+            "text": 3
+          },
+          {
+            "n": 12,
+            "zh": "除了",
+            "pinyin": "chúle",
+            "pos": "prep.",
+            "en": "other than",
+            "text": 3
+          },
+          {
+            "n": 13,
+            "zh": "新闻",
+            "pinyin": "xīnwén",
+            "pos": "n.",
+            "en": "news",
+            "text": 3
+          },
+          {
+            "n": 14,
+            "zh": "花",
+            "pinyin": "huā",
+            "pos": "v.",
+            "en": "to spend",
+            "text": 3
+          },
+          {
+            "n": 15,
+            "zh": "极(了)",
+            "pinyin": "jí (le)",
+            "pos": "adv.",
+            "en": "extremely",
+            "text": 3
+          }
+        ]
+      },
+      {
+        "n": 4,
+        "title_zh": "",
+        "kind": "narrative",
+        "audio": "hsk3-textbook-1504.mp3",
+        "lines": [
+          {
+            "zh": "除了春节、中秋节以外，啤酒节也是这里很重要的一个节日。",
+            "pinyin": "Chúle Chūnjié, Zhōngqiū Jié yǐwài, píjiǔ jié yě shì zhèli hěn zhòngyào de yí ge jiérì."
+          },
+          {
+            "zh": "这个地方每年夏天都要举行一次啤酒节。",
+            "pinyin": "Zhège dìfang měi nián xiàtiān dōu yào jǔxíng yí cì píjiǔ jié."
+          },
+          {
+            "zh": "在啤酒节上，你可以喝到世界上不同地方的啤酒。",
+            "pinyin": "Zài píjiǔ jié shang, nǐ kěyǐ hēdào shìjiè shang bùtóng dìfang de píjiǔ."
+          },
+          {
+            "zh": "除了喝啤酒，你还可以在街道两边看到世界上不同地方的歌舞。",
+            "pinyin": "Chúle hē píjiǔ, nǐ hái kěyǐ zài jiēdào liǎng biān kàndào shìjiè shang bùtóng dìfang de gēwǔ,"
+          },
+          {
+            "zh": "你想不想了解世界各个地方的啤酒文化？",
+            "pinyin": "nǐ xiǎng bu xiǎng liǎojiě shìjiè gègè dìfang de píjiǔ wénhuà?"
+          },
+          {
+            "zh": "来这里的啤酒节看看吧。",
+            "pinyin": "Lǎi zhèli de píjiǔ jié kànkan ba."
+          }
+        ],
+        "new_words": [
+          {
+            "n": 16,
+            "zh": "节日",
+            "pinyin": "jiérì",
+            "pos": "n.",
+            "en": "festival",
+            "text": 4
+          },
+          {
+            "n": 17,
+            "zh": "举行",
+            "pinyin": "jǔxíng",
+            "pos": "v.",
+            "en": "to hold (a meeting, an event, etc.)",
+            "text": 4,
+            "star": true
+          },
+          {
+            "n": 18,
+            "zh": "世界",
+            "pinyin": "shìjiè",
+            "pos": "n.",
+            "en": "world",
+            "text": 4
+          },
+          {
+            "n": 19,
+            "zh": "街道",
+            "pinyin": "jiēdào",
+            "pos": "n.",
+            "en": "street",
+            "text": 4
+          },
+          {
+            "n": 20,
+            "zh": "各",
+            "pinyin": "gè",
+            "pos": "pron.",
+            "en": "each",
+            "text": 4,
+            "star": true
+          },
+          {
+            "n": 21,
+            "zh": "文化",
+            "pinyin": "wénhuà",
+            "pos": "n.",
+            "en": "culture",
+            "text": 4
+          }
+        ]
+      }
+    ],
+    "grammar": [
+      {
+        "n": 1,
+        "title_zh": "除了……以外，都／还／也……",
+        "title_en": "The Structure “除了……以外，都/还/也……”",
+        "explanation_zh": "“除了……以外，都……”表示在一个范围内，排除一部分，其他的都有相同的情况。其中“以外”可以省略。例如：（1）–（4）\n“除了……以外，还／也……”表示排除一部分，补充其他的。句子的主语放在句首，或者放在“还／也”的前边。例如：（5）–（8）",
+        "explanation_en": "“除了……以外，都…… (all…except…)” indicates that except the part being mentioned, all the others in a specific scope are the same in a certain way. “以外” can be left out. For example: (1)–(4)\n“除了……以外，还/也…… (besides…)” indicates that there are still others besides the part being mentioned. The subject is put at the beginning of the sentence or right before “还/也”. For example: (5)–(8)",
+        "structure_rows": [
+          "除了……以外，都……",
+          "除了……以外，还／也……"
+        ],
+        "examples": [
+          {
+            "n": 1,
+            "zh": "除了这个汉字以外，别的汉字我都认识。"
+          },
+          {
+            "n": 2,
+            "zh": "除了我以外，大家都听懂了。"
+          },
+          {
+            "n": 3,
+            "zh": "除了这个句子意思有些不清楚外，其他都没什么问题。"
+          },
+          {
+            "n": 4,
+            "zh": "除了小云，其他人都来了。"
+          },
+          {
+            "n": 5,
+            "zh": "除了唱歌以外，他还喜欢跳舞。"
+          },
+          {
+            "n": 6,
+            "zh": "除了汉语以外，我还会说英语。"
+          },
+          {
+            "n": 7,
+            "zh": "上网除了看新闻，还可以听音乐。"
+          },
+          {
+            "n": 8,
+            "zh": "除了春节、中秋节以外，啤酒节也是这里很重要的一个节日。"
+          }
+        ],
+        "practice_instruction_zh": "练一练　改写句子 Rewrite the sentences.",
+        "practice": [
+          {
+            "n": "例",
+            "zh": "春节很重要，中秋节也是很重要的节日。",
+            "answer": "除了春节以外，中秋节也是很重要的节日。",
+            "answer_ref": {
+              "book": "textbook",
+              "pages": [
+                144
+              ]
+            }
+          },
+          {
+            "n": 1,
+            "zh": "我喜欢春天，也喜欢夏天。"
+          },
+          {
+            "n": 2,
+            "zh": "我们班只有王老师是中国人，其他人都是外国人。"
+          },
+          {
+            "n": 3,
+            "zh": "我只想吃西瓜，其他水果都不想吃。"
+          }
+        ]
+      },
+      {
+        "n": 2,
+        "title_zh": "疑问代词活用2",
+        "title_en": "Flexible Use of Interrogative Pronouns 2",
+        "explanation_zh": "汉语中，“什么”可以做指示代词，用来代替不确定的人或事物，表达的语气更客气。去掉“什么”以后，句子的意思不变。例如：（1）–（4）",
+        "explanation_en": "In Chinese, “什么” can be used as a demonstrative pronoun instead of an indefinite person or thing, making the tone politer. The meaning of the sentence won’t change if “什么” is left out. For example: (1)–(4)",
+        "examples": [
+          {
+            "n": 1,
+            "zh": "这个饭馆有没有什么特别好吃的菜？"
+          },
+          {
+            "n": 2,
+            "zh": "周末你有没有什么打算？"
+          },
+          {
+            "n": 3,
+            "zh": "你写得很好，没什么问题。"
+          },
+          {
+            "n": 4,
+            "zh": "以后有什么不明白的地方，可以给我打电话或者发电子邮件。"
+          }
+        ],
+        "practice_instruction_zh": "练一练　完成对话 Complete the dialogues.",
+        "practice": [
+          {
+            "n": 1,
+            "zh": "A：________。 B：周末我跟朋友打算去爬山。"
+          },
+          {
+            "n": 2,
+            "zh": "A：________ B：对不起，我很少看电影，不知道哪个好看。"
+          },
+          {
+            "n": 3,
+            "zh": "A：________ B：没有了，老师，我都懂了。"
+          }
+        ]
+      },
+      {
+        "n": 3,
+        "title_zh": "程度的表达：极了",
+        "title_en": "“极了” Used to Indicate Degree",
+        "explanation_zh": "汉语中，表达最高程度可以用“形容词／心理动词＋极了”。例如：（1）–（4）",
+        "explanation_en": "In Chinese, the superlative degree can be expressed using “Adj/Mental V + 极了”. For example: (1)–(4)",
+        "structure_rows": [
+          "形容词／心理动词＋极了"
+        ],
+        "examples": [
+          {
+            "n": 1,
+            "zh": "我的小狗可爱极了。"
+          },
+          {
+            "n": 2,
+            "zh": "今天天气冷极了。"
+          },
+          {
+            "n": 3,
+            "zh": "那件衣服我喜欢极了。"
+          },
+          {
+            "n": 4,
+            "zh": "他满意极了。"
+          }
+        ],
+        "practice_instruction_zh": "练一练　完成句子 Complete the sentences.",
+        "practice": [
+          {
+            "n": 1,
+            "zh": "外边________，我们别出去了，在家里休息吧。"
+          },
+          {
+            "n": 2,
+            "zh": "我工作了一天，________。"
+          },
+          {
+            "n": 3,
+            "zh": "她唱歌________，大家都爱听。"
+          }
+        ]
+      }
+    ],
+    "exercises": [
+      {
+        "n": 1,
+        "type_zh": "朗读",
+        "instruction_zh": "朗读下列短语和句子",
+        "instruction_en": "Read the following phrases and sentences aloud.",
+        "audio": "hsk3-textbook-1505.mp3",
+        "items": [
+          {
+            "n": 1,
+            "zh": "其他：其他人／其他问题／其他时间／除了小云，其他人都来了。"
+          },
+          {
+            "n": 2,
+            "zh": "水平：汉语水平／电脑水平／水平高／我的汉语水平提高得一点儿也不快。"
+          },
+          {
+            "n": 3,
+            "zh": "完成：完成作业／完成工作／没完成／你每天认真学习，做练习、完成作业。"
+          },
+          {
+            "n": 4,
+            "zh": "上网：上网看电影／上网聊天儿／上一会儿网／现在用电脑上网真方便啊！"
+          },
+          {
+            "n": 5,
+            "zh": "注意：很注意／没注意／注意身体／我给大家讲讲需要注意的地方。"
+          }
+        ]
+      },
+      {
+        "n": 2,
+        "type_zh": "选词填空",
+        "instruction_zh": "选择恰当的词语填空",
+        "instruction_en": "Choose the proper words to fill in the blanks.",
+        "word_bank": [
+          [
+            "花",
+            "发",
+            "练习",
+            "提高",
+            "完成"
+          ],
+          [
+            "文化",
+            "句子",
+            "新闻",
+            "节日",
+            "世界"
+          ]
+        ],
+        "items": [
+          {
+            "n": 1,
+            "zh": "王经理，电子邮件我已经给您________过去了。"
+          },
+          {
+            "n": 2,
+            "zh": "你每天跟谁________口语？"
+          },
+          {
+            "n": 3,
+            "zh": "已经夜里12点多了，但是今天的作业我还没________。"
+          },
+          {
+            "n": 4,
+            "zh": "这个月我的钱都________完了，不能再买新衣服了。"
+          },
+          {
+            "n": 5,
+            "zh": "我在这里只学了三个月汉语，但是水平________了不少。"
+          },
+          {
+            "n": 6,
+            "zh": "A：今天听写五个________，请大家准备好笔和纸。 B：五个？老师，太多了！"
+          },
+          {
+            "n": 7,
+            "zh": "A：________上有多少个国家？你知道吗？ B：这个……，我真不知道。"
+          },
+          {
+            "n": 8,
+            "zh": "A：你为什么想去那个地方旅游？ B：我对那儿的________很感兴趣。"
+          },
+          {
+            "n": 9,
+            "zh": "A：你们国家最重要的________是什么？ B：当然是春节！"
+          },
+          {
+            "n": 10,
+            "zh": "A：刚才电视上的那条________真有意思！ B：你快说说。"
+          }
+        ]
+      },
+      {
+        "n": 3,
+        "type_zh": "描述图片",
+        "instruction_zh": "用本课新学的语言点和词语描述图片",
+        "instruction_en": "Describe the pictures using the newly-learned language points and words.",
+        "items": [
+          {
+            "n": 1,
+            "zh": "A：我们去这家饭馆吧，这儿的服务好________。 B：我也听说过，________服务好________，菜________。 A：这儿________好吃的菜？ B：这儿的鱼做得最好。",
+            "picture_desc_en": "The interior of an elegant restaurant with tables and chairs and round lights on the ceiling."
+          },
+          {
+            "n": 2,
+            "zh": "A：我想快点儿________汉语________，应该怎么做呢？ B：你要多听、多说、多做________。 A：________更容易的吗？ B：没有了。",
+            "picture_desc_en": "Two young women talking at a desk in a lecture hall, with other students sitting behind them."
+          },
+          {
+            "n": 3,
+            "zh": "A：有________喝的吗？ B：这儿有一些咖啡。 A：________，还有其他的吗？ B：那边还有牛奶和茶。",
+            "picture_desc_en": "Two glass coffee pots on a warming plate, with a small silver jug beside them."
+          },
+          {
+            "n": 4,
+            "zh": "A：经理，今天的工作我们已经________了。 B：好________！明天的工作大家有问题吗？ A：没________问题。 B：好的，大家一起努力。",
+            "picture_desc_en": "People in business suits sitting around a white table in a meeting."
+          }
+        ]
+      },
+      {
+        "n": 4,
+        "type_zh": "回答问题",
+        "instruction_zh": "根据课文回答问题",
+        "instruction_en": "Answer the questions according to the texts.",
+        "items": [
+          {
+            "n": 1,
+            "zh": "老师觉得大山的汉语怎么样？"
+          },
+          {
+            "n": 2,
+            "zh": "大家都来参加比赛了吗？谁没来？"
+          },
+          {
+            "n": 3,
+            "zh": "老师现在在做什么？"
+          },
+          {
+            "n": 4,
+            "zh": "大家可以上网做什么？"
+          },
+          {
+            "n": 5,
+            "zh": "小刚从网上买的那件衣服怎么了？"
+          },
+          {
+            "n": 6,
+            "zh": "啤酒节上可以做什么？"
+          }
+        ]
+      }
+    ],
+    "characters": {
+      "knowledge_title_zh": "旧字新词",
+      "knowledge_zh": "读读下面的词语，想想组成的新词是什么意思。",
+      "knowledge_en": "Read the following words and guess the meanings of the newly-formed ones.",
+      "word_game": [
+        {
+          "parts": [
+            "电影",
+            "节日"
+          ],
+          "result": "电影节"
+        },
+        {
+          "parts": [
+            "春天",
+            "节日"
+          ],
+          "result": "春节"
+        },
+        {
+          "parts": [
+            "文化",
+            "节日"
+          ],
+          "result": "文化节"
+        }
+      ],
+      "confusable_pairs": [
+        [
+          "炼",
+          "练"
+        ],
+        [
+          "求",
+          "球"
+        ],
+        [
+          "网",
+          "风"
+        ],
+        [
+          "目",
+          "日"
+        ],
+        [
+          "世",
+          "也"
+        ]
+      ]
+    },
+    "application": [
+      {
+        "title_zh": "双人活动",
+        "instruction_zh": "两人一组，互相询问对方对本班学生的态度。一人问，一人回答，并记录。",
+        "instruction_en": "Work in pairs. Ask about each other’s opinions on your classmates, and take notes.",
+        "example_zh": [
+          "例如：A：我们班谁最努力？",
+          "B：我们班王美努力极了。",
+          "A：为什么？",
+          "B：她每天下了课就去图书馆学习。",
+          "提示词：忙　可爱　认真　热情　聪明　客气"
+        ]
+      },
+      {
+        "title_zh": "小组活动",
+        "instruction_zh": "3~4人一组，介绍你们国家的一个节日。说说是什么时候，大家怎么过节、吃什么、喝什么、做什么。一人做记录，并向全班汇报。",
+        "instruction_en": "Work in groups of 3-4. Introduce one of the festivals in your country, including when it is, how people celebrate it, what to eat and drink, and what to do. Ask one member to take notes and report to the whole class.",
+        "example_zh": [
+          "例如：春节是我们国家的重要节日。春节一般在每年的1月或2月。过春节的时候，人们都要回家，除了一起吃饭以外，一家人还一起看电视台的春节晚会。",
+          "表格：| | 什么节日 | 什么时候 | 怎么过节 |",
+          "| 1 | 春节 | 1月或2月 | 一家人一起吃饭、看春节晚会 |",
+          "| | | | |",
+          "| | | | |",
+          "| | | | |",
+          "| | | | |"
+        ]
+      }
+    ],
+    "saying": {
+      "zh": "一是一，二是二",
+      "pinyin": "Yī shì yī, èr shì èr",
+      "en": "Call a spade a spade",
+      "explanation_zh": "“一是一，二是二”，这句话的意思是保留事物的真实面貌，不做任何改变，常常用来比喻一个人说话做事很诚实，不骗别人。",
+      "explanation_en": "The saying “一是一，二是二” means to keep the true look of something without making any alteration. It is often used metaphorically to describe someone who is honest in word and deed and doesn’t lie."
+    },
+    "culture": {
+      "title_zh": "中国人过生日吃什么",
+      "body_zh": "西方人过生日都要吃生日蛋糕，中国人的习俗是吃面条。面条长长的，表示“长寿”的意思。因此，生日面也叫长寿面。在你们国家，人们过生日时吃什么呢？",
+      "body_en": "What Food Chinese People Eat on Their Birthdays. Westerners eat cakes on their birthdays, while by tradition, Chinese people eat noodles. The noodles, being long, stand for “longevity”, which is why birthday noodles are also called longevity noodles. What do people eat on their birthdays in your country?"
+    }
+  },
+  "teacher": {
+    "ref": {
+      "book": "teacher",
+      "pages": [
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109
+      ]
+    },
+    "objectives_zh": [
+      "重点词语：学生能够熟练掌握：“提高、完成、其他、发、花”的词义和用法",
+      "语言点：学生能够了解并掌握：（1）“除了……以外，都／还／也……”表示范围（2）疑问代词活用2：什么（3）“极了”表示程度很高",
+      "汉字：学生能够：根据已学生词猜测出3个旧字新词“电影节、春节、文化节”的意思",
+      "功能：学生能够：（1）用“除了……以外，都／还／也……”表示包括、排除等内容（2）用“什么”表示不确定的人或事物（3）用“极了”表示最高程度"
+    ],
+    "steps": [
+      {
+        "title_zh": "复习旧课",
+        "body_zh": "1 教师展示第14课的热身图片，请学生根据图片说出生词。\n2 教师根据第14课的内容进行提问。\n（1）你做好了一个菜，请朋友帮你拿进房间去，要怎么说？\n（2）老师要去你家玩儿，你怎么准备？\n（3）你的拿手菜是什么？怎么做？请你教教我。\n（4）我想去几个地方旅行，应该怎么去？\n（5）在我们的学校，可以学到什么？你最喜欢学什么？"
+      },
+      {
+        "title_zh": "学习新课 1 热身",
+        "body_zh": "热身1：教师可依次朗读热身部分的词语，要求学生集体或单个说出图片对应的编号，教师评判正误；最后全体学生齐读热身环节所有词语，要求语音标准，声调准确。\n答案：①F　②D　③C　④E　⑤A　⑥B\n热身2：可留至语言点（1）“除了……以外，都／还／也……”导入时使用。"
+      },
+      {
+        "title_zh": "2 生词",
+        "body_zh": "（1）生词快速认读及正音\n留学、水平、提高、练习、完成、句子、其他、发、要求、注意、上网、除了、新闻、花、极（了）、节日、举行、世界、街道、各、文化、小云\n· 教师先带领学生快速认读一遍生词；\n· 取消拼音，带领学生再次认读；\n· 请单个学生独自认读2-3个生词；\n· 最后全班一起快速认读所有的生词。\n（2）生词讲解方式\n· 直观法（如图片、照片、实物等）展示：留学、上网、新闻、节日、世界、街道\n· 对比法展示：其他—别的\n· 启发式引导：要求、注意\n上课的时候，老师有什么要求？——老师要求大家安静，要求大家认真听课。\n考试的时候应该注意什么？——注意别写错字。\n（3）重点生词扩展及常用搭配\n提高—提高水平—水平提高了—没提高\n　—提高得很快—大家的汉语水平提高得很快。\n完成—完成作业—完成练习—完成句子—今天的工作你完成了吗？\n其他—其他人—其他事—我只去过北京，其他地方都没去过。\n发—发短信—发电子邮件—今天的作业是给老师发一个中文电子邮件。\n　—发出去—发过来—电子邮件没发出去。\n花—花钱—花时间—我花了三个小时才写完作业。\n练习册相关练习：第99页／一／第一部分，第102页／二／第二部分"
+      },
+      {
+        "title_zh": "3 语言点（1）除了……以外，都／还／也……",
+        "body_zh": "① 语言点解析\n“除了……以外，都……”表示在一个范围内，排除一部分，其他的都有相同的情况。“除了……以外，还／也……”表示排除一部分，补充其他的。\n② 语言点导入\n教师可利用本课热身2导入语言点。\n教师带领学生熟悉表格中所有词语，学生两人一组，合作完成热身2。\n教师请学生向自己提问。\n学生：老师，您喜欢喝什么饮料？\n教师：我只喜欢喝水，茶、咖啡、牛奶我都不喜欢喝。\n教师引导学生说出：除了水以外，老师都不喜欢喝。\n教师在黑板上画出教师喜欢喝的饮料“水”，帮助学生理解语言点。\n教师请学生再次向自己提问。\n学生：老师，您喜欢喝什么饮料？\n教师：我喜欢喝水，也喜欢喝茶、咖啡和牛奶。\n教师引导学生说出：除了水以外，老师还／也喜欢喝茶、咖啡和牛奶。\n教师在黑板上画出教师喜欢喝的饮料“水”“咖啡”“牛奶”“茶”，帮助学生理解语言点。\n③ 语言点操练\n教师可根据热身2的表格操练语言点。\n学生向教师提问，教师回答后，请学生说出目标句。\n目标句：除了西瓜以外，老师还喜欢吃苹果。\n　　　　除了鱼肉以外，其他肉老师都不喜欢吃。\n　　　　除了红色以外，老师还喜欢绿色和白色。\n　　　　除了爬山以外，其他运动老师都不喜欢。\n　　　　除了数学以外，其他课老师都喜欢。\n④ 语言点扩展练习\n教师利用热身2，让学生两人一组互相询问并回答。\n注意：其中“以外”可以完全省略或省略成“外”。"
+      },
+      {
+        "title_zh": "3 语言点（2）疑问代词活用2",
+        "body_zh": "① 语言点解析\n汉语中，“什么”可以做指示代词，用来代替不确定的人或事物，表达的语气更客气。去掉“什么”以后，句子的意思不变。\n② 语言点导入\n教师根据实际情况，提问并引入语言点。\n教师：我想知道这个饭馆儿好吃的菜。怎么问？\n学生：这个饭馆儿有什么好吃的菜？\n教师引导学生说出：这个饭馆儿有什么好吃的菜吗？\n　　　　　　　　　这个饭馆儿有没有什么好吃的菜？\n教师：这个饭馆儿没有好吃的菜。怎么说？\n教师引导学生说出：这个饭馆儿没什么好吃的菜。\n③ 语言点操练\n教师给出情境，让学生说出句子。\n情境及目标句：\n我想知道这个月有哪些有意思的电影。——这个月有什么有意思的电影吗？\n我饿了，想吃东西。——有什么吃的吗？我饿了。\n这个商店没有好看的衣服。——这个商店没什么好看的衣服。\n我很忙，没有时间休息。——我很忙，没什么时间休息。\n④ 语言点扩展练习\n教师可根据实际情况提问，请学生回答。\n每天下课以前，老师会说什么？\n你去商店买东西的时候，服务员会说什么？"
+      },
+      {
+        "title_zh": "3 语言点（3）程度的表达：极了",
+        "body_zh": "① 语言点解析\n汉语中，表达最高程度可以用“形容词／心理动词＋极了”。\n② 语言点导入\n教师就地取材，利用学生作业，提问并引入语言点。\n教师：他的字漂亮不漂亮？\n学生：非常漂亮。\n教师引导学生说出：他的字漂亮极了。\n③ 语言点操练\n教师给出一些学过的形容词，请学生互相询问并回答。\n可爱、舒服、容易、重要\n例：可爱：A：你觉得什么最可爱？\n　　　　　B：我觉得小狗可爱极了。\n④ 语言点扩展练习\n教师让本班学生夸夸自己的班级。\n我们班学生________。"
+      },
+      {
+        "title_zh": "4 课文 课文1",
+        "body_zh": "（1）让学生听两遍录音并回答下列问题：\n男的（大山）有什么问题吗？——他觉得他的汉语水平提高得一点儿也不快。\n女的（老师）觉得大山学得怎么样？——老师觉得他学得一直不错，每天认真学习，做练习，完成作业。\n大山昨天的作业做得怎么样？——做得不错，除了有一个句子意思有些不清楚外，其他都没什么问题。\n以后有不明白的地方，大山可以怎么办？——可以给老师打电话或者发电子邮件。\n（2）教师领读课文两遍，让学生分角色朗读课文。\n（3）模仿练习\n学生两人一组，根据提示词模仿课文内容进行对话练习。\nA：我……了，但是……。\nB：你……，一直不错啊。\nA：这是……，你／您帮我……。\nB：……，除了……外，其他……。\nA：谢谢……！\nB：以后有什么……，可以……。"
+      },
+      {
+        "title_zh": "4 课文 课文2",
+        "body_zh": "（1）让学生听两遍录音并回答下列问题：\n大家都来了吗？——除了小云，其他人都来了。\n小云现在在哪儿？——小云在路上。\n老师要做什么？——老师要给大家讲讲这次比赛的要求和一些需要注意的地方。\n（2）教师领读课文两遍，让学生分角色朗读课文，注意说话人的语气。\n（3）模仿练习\n学生两人一组，根据提示词模仿课文内容进行对话练习。\nA：……，除了……，……。\nB：……，开始了，……还没来？\nA：刚才……，她／他……。\nB：不等她／他了，我先……。\nA：……，您放心，……。"
+      },
+      {
+        "title_zh": "4 课文 课文3",
+        "body_zh": "（1）让学生听两遍录音并回答下列问题：\n为什么现在的生活很方便？——因为除了看新闻，还可以在网上听歌、看电影、买东西。\n男的为什么没穿在网上买的那件新衣服？——因为有点儿小，他给他弟弟了。\n男的的弟弟为什么很满意？——因为不用花钱，还有新衣服穿，所以他满意极了。\n（2）教师领读课文两遍，让学生分角色朗读课文，注意说话人的语气。\n（3）教师给提示词，带领学生复述课文。\n提示词：上网、除了……，还……、网上、满意、花钱、极了"
+      },
+      {
+        "title_zh": "4 课文 课文4",
+        "body_zh": "（1）快速阅读，并回答：在啤酒节上可以做什么？\n（2）教师领读课文两遍，并回答下列问题：\n这个地方有什么重要的节日吗？——这个地方除了春节、中秋节以外，还有啤酒节。\n啤酒节什么时候举行？——啤酒节每年夏天举行。\n在啤酒节上可以做什么？——在啤酒节上，除了可以喝到世界上不同地方的啤酒以外，还可以看到世界上不同地方的歌舞。\n你想了解世界各个地方的啤酒文化，应该怎么办？——去啤酒节看看。\n（3）教师给提示词，带领学生复述课文。\n提示词：除了……以外、也、节日、喝啤酒、街道、歌舞、了解、啤酒文化\n（4）教师请学生仿照课文，说说自己住的地方有什么重要的节日，在这个节日里，人们都做什么。\n练习册相关练习：第105页／四"
+      },
+      {
+        "title_zh": "5 汉字",
+        "body_zh": "旧字新词：\n① 教师领读以前学过的词语和新词，并让学生猜猜新词的意思。\n· 领读：电影、节日、电影节\n问学生：在“电影节”上可以做什么？——看各国的电影。\n· 领读：春天、节日、春节\n问学生：你们国家过“春节”吗？中国人过“春节”的时候做什么？——包饺子、团聚、一起吃饭等。\n· 领读：文化、节日、文化节\n问学生：在“文化节”上可以做什么？——了解世界各个地方的文化。\n扩展提问：还有什么“节”？——音乐节、旅游节、中秋节。（根据实际情况选用）\n② 教师领读新词扩展，通过情景，理解新词的意思和用法：\n电影节：中国电影节／大学生电影节／今年的电影节什么时候开始？\n春节：过春节／春节前的准备／过春节的时候，谁最高兴？\n文化节：世界文化节／文化节每两年举行一次／今年的文化节在我们学校举行。\n汉字辨认练习：\n辨认下列汉字并组词。\n炼：________、________　求：________、________\n练：________、________　球：________、________\n网：________、________　目：________、________\n风：________、________　日：________、________\n世：________、________\n也：________、________\n练习册相关练习：第105页／三／第三部分"
+      },
+      {
+        "title_zh": "6 补充课堂活动——根据词卡写句子",
+        "body_zh": "4-5个学生一组，每组随机抽取3-4个词卡，用这些词完成一个句子，比比哪组能用最短的时间写出正确的句子。\n参考词语：留学、水平、提高、练习、完成、句子、其他、发、要求、注意、上网、除了、新闻、花、极（了）、节日、世界、街道、文化……"
+      },
+      {
+        "title_zh": "7 俗语",
+        "body_zh": "教师引导学生理解俗语的含义。注意这里的“一”“二”指的是事情的本来面貌，比如：请你一是一、二是二地把这件事情告诉经理，不要说假话。"
+      },
+      {
+        "title_zh": "8 本课小结",
+        "body_zh": "· 语言点：用“除了……以外，都／还／也……”表示范围\n　　　　　用“什么”代替不确定的人或物\n　　　　　用“极了”表示程度很高\n· 汉　字：旧字新词：电影节、春节、文化节"
+      },
+      {
+        "title_zh": "文化：中国人过生日吃什么",
+        "body_zh": "1 文化点解析\n① 古代中国人认为脸长寿命就长，“脸”就是“面”，因此长长的面条就表示长长的脸，寓意长寿。除了长寿面，还有寿桃等，也寓意长寿。\n② 中国人过生日的时候还有吃鸡蛋的习俗，寓意平安和健康。\n2 文化点参考处理方式\n· 教师介绍中国人过生日吃长寿面、寿桃和鸡蛋的习俗。\n· 请学生说说在自己国家，过生日的时候吃什么，为什么有这样的习俗。"
+      }
+    ],
+    "notes_zh": [
+      "注意：其中“以外”可以完全省略或省略成“外”。（语言点1）",
+      "扩展提问：还有什么“节”？——音乐节、旅游节、中秋节。（根据实际情况选用）（汉字·旧字新词）",
+      "注意这里的“一”“二”指的是事情的本来面貌，比如：请你一是一、二是二地把这件事情告诉经理，不要说假话。（俗语）"
+    ],
+    "warmup_answers_zh": [
+      "热身1 答案：①F　②D　③C　④E　⑤A　⑥B",
+      "热身2：可留至语言点（1）“除了……以外，都／还／也……”导入时使用。"
+    ],
+    "text_questions": [
+      {
+        "text": 1,
+        "q_zh": "男的（大山）有什么问题吗？",
+        "a_zh": "他觉得他的汉语水平提高得一点儿也不快。"
+      },
+      {
+        "text": 1,
+        "q_zh": "女的（老师）觉得大山学得怎么样？",
+        "a_zh": "老师觉得他学得一直不错，每天认真学习，做练习，完成作业。"
+      },
+      {
+        "text": 1,
+        "q_zh": "大山昨天的作业做得怎么样？",
+        "a_zh": "做得不错，除了有一个句子意思有些不清楚外，其他都没什么问题。"
+      },
+      {
+        "text": 1,
+        "q_zh": "以后有不明白的地方，大山可以怎么办？",
+        "a_zh": "可以给老师打电话或者发电子邮件。"
+      },
+      {
+        "text": 2,
+        "q_zh": "大家都来了吗？",
+        "a_zh": "除了小云，其他人都来了。"
+      },
+      {
+        "text": 2,
+        "q_zh": "小云现在在哪儿？",
+        "a_zh": "小云在路上。"
+      },
+      {
+        "text": 2,
+        "q_zh": "老师要做什么？",
+        "a_zh": "老师要给大家讲讲这次比赛的要求和一些需要注意的地方。"
+      },
+      {
+        "text": 3,
+        "q_zh": "为什么现在的生活很方便？",
+        "a_zh": "因为除了看新闻，还可以在网上听歌、看电影、买东西。"
+      },
+      {
+        "text": 3,
+        "q_zh": "男的为什么没穿在网上买的那件新衣服？",
+        "a_zh": "因为有点儿小，他给他弟弟了。"
+      },
+      {
+        "text": 3,
+        "q_zh": "男的的弟弟为什么很满意？",
+        "a_zh": "因为不用花钱，还有新衣服穿，所以他满意极了。"
+      },
+      {
+        "text": 4,
+        "q_zh": "（快速阅读）在啤酒节上可以做什么？"
+      },
+      {
+        "text": 4,
+        "q_zh": "这个地方有什么重要的节日吗？",
+        "a_zh": "这个地方除了春节、中秋节以外，还有啤酒节。"
+      },
+      {
+        "text": 4,
+        "q_zh": "啤酒节什么时候举行？",
+        "a_zh": "啤酒节每年夏天举行。"
+      },
+      {
+        "text": 4,
+        "q_zh": "在啤酒节上可以做什么？",
+        "a_zh": "在啤酒节上，除了可以喝到世界上不同地方的啤酒以外，还可以看到世界上不同地方的歌舞。"
+      },
+      {
+        "text": 4,
+        "q_zh": "你想了解世界各个地方的啤酒文化，应该怎么办？",
+        "a_zh": "去啤酒节看看。"
+      }
+    ],
+    "summary_zh": "语言点：用“除了……以外，都／还／也……”表示范围；用“什么”代替不确定的人或物；用“极了”表示程度很高。汉字：旧字新词：电影节、春节、文化节。"
+  },
+  "workbook": {
+    "ref": {
+      "book": "workbook",
+      "pages": [
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109
+      ]
+    },
+    "sections": [
+      {
+        "n": "一、听力 第一部分",
+        "type_zh": "听力 第一部分",
+        "instruction_zh": "第1–5题：听对话，选择与对话内容一致的图片",
+        "instruction_en": "Questions 1-5: Choose the right picture for each dialogue you hear.",
+        "audio": "hsk3-workbook-15-part1.mp3",
+        "items": [
+          {
+            "n": "例",
+            "zh": "男：喂，请问张经理在吗？ 女：他正在开会，您半个小时以后再打，好吗？",
+            "transcript_zh": "男：喂，请问张经理在吗？ 女：他正在开会，您半个小时以后再打，好吗？",
+            "options": {
+              "A": "[picture] a hand touching the screen of a mobile phone",
+              "B": "[picture] a woman at a table looking at papers, and a man beside her holding a card and gesturing",
+              "C": "[picture] two young men playing basketball outdoors",
+              "D": "[picture] a smiling woman in a uniform talking on a telephone",
+              "E": "[picture] a man and a woman sitting at a restaurant table, with a waiter standing beside them",
+              "F": "[picture] a woman in glasses holding a cup and reading a newspaper"
+            },
+            "answer": "D",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                103
+              ]
+            }
+          },
+          {
+            "n": 1,
+            "zh": "",
+            "options": {
+              "A": "[picture] a hand touching the screen of a mobile phone",
+              "B": "[picture] a woman at a table looking at papers, and a man beside her holding a card and gesturing",
+              "C": "[picture] two young men playing basketball outdoors",
+              "D": "[picture] a smiling woman in a uniform talking on a telephone",
+              "E": "[picture] a man and a woman sitting at a restaurant table, with a waiter standing beside them",
+              "F": "[picture] a woman in glasses holding a cup and reading a newspaper"
+            },
+            "transcript_zh": "男1：你现在打篮球的水平越来越高了。 男2：我觉得没什么提高，还跟以前一样。",
+            "answer": "C",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                187
+              ]
+            }
+          },
+          {
+            "n": 2,
+            "zh": "",
+            "options": {
+              "A": "[picture] a hand touching the screen of a mobile phone",
+              "B": "[picture] a woman at a table looking at papers, and a man beside her holding a card and gesturing",
+              "C": "[picture] two young men playing basketball outdoors",
+              "D": "[picture] a smiling woman in a uniform talking on a telephone",
+              "E": "[picture] a man and a woman sitting at a restaurant table, with a waiter standing beside them",
+              "F": "[picture] a woman in glasses holding a cup and reading a newspaper"
+            },
+            "transcript_zh": "男：你要发电子邮件吗？我去把电脑打开。 女：不用，我的手机能上网，用手机也能发。",
+            "answer": "A",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                187
+              ]
+            }
+          },
+          {
+            "n": 3,
+            "zh": "",
+            "options": {
+              "A": "[picture] a hand touching the screen of a mobile phone",
+              "B": "[picture] a woman at a table looking at papers, and a man beside her holding a card and gesturing",
+              "C": "[picture] two young men playing basketball outdoors",
+              "D": "[picture] a smiling woman in a uniform talking on a telephone",
+              "E": "[picture] a man and a woman sitting at a restaurant table, with a waiter standing beside them",
+              "F": "[picture] a woman in glasses holding a cup and reading a newspaper"
+            },
+            "transcript_zh": "男1：你们这儿除了鱼以外，还有什么好吃的吗？ 男2：今天的羊肉也很新鲜，您要不要来一个？",
+            "answer": "E",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                187
+              ]
+            }
+          },
+          {
+            "n": 4,
+            "zh": "",
+            "options": {
+              "A": "[picture] a hand touching the screen of a mobile phone",
+              "B": "[picture] a woman at a table looking at papers, and a man beside her holding a card and gesturing",
+              "C": "[picture] two young men playing basketball outdoors",
+              "D": "[picture] a smiling woman in a uniform talking on a telephone",
+              "E": "[picture] a man and a woman sitting at a restaurant table, with a waiter standing beside them",
+              "F": "[picture] a woman in glasses holding a cup and reading a newspaper"
+            },
+            "transcript_zh": "男：这个月你怎么花了这么多钱？ 女：我记得我只买了几件衣服，其他也没买什么啊。",
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                187
+              ]
+            }
+          },
+          {
+            "n": 5,
+            "zh": "",
+            "options": {
+              "A": "[picture] a hand touching the screen of a mobile phone",
+              "B": "[picture] a woman at a table looking at papers, and a man beside her holding a card and gesturing",
+              "C": "[picture] two young men playing basketball outdoors",
+              "D": "[picture] a smiling woman in a uniform talking on a telephone",
+              "E": "[picture] a man and a woman sitting at a restaurant table, with a waiter standing beside them",
+              "F": "[picture] a woman in glasses holding a cup and reading a newspaper"
+            },
+            "transcript_zh": "男：看什么呢？今天报纸上有什么新闻吗？ 女：我没看新闻，我看看今天天气怎么样。",
+            "answer": "F",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                187
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "一、听力 第二部分",
+        "type_zh": "听力 第二部分",
+        "instruction_zh": "第6–10题：听句子，判断对错",
+        "instruction_en": "Questions 6-10: Decide whether the statements are true or false based on the sentences you hear.",
+        "audio": "hsk3-workbook-15-part2.mp3",
+        "items": [
+          {
+            "n": "例1",
+            "zh": "他希望自己很健康。",
+            "transcript_zh": "为了让自己更健康，他每天都花一个小时去锻炼身体。",
+            "answer": "√",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                104
+              ]
+            }
+          },
+          {
+            "n": "例2",
+            "zh": "那块儿手表不是他的。",
+            "transcript_zh": "今天我想早点儿回家。看了看手表，才5点。过了一会儿再看表，还是5点，我这才发现我的手表不走了。",
+            "answer": "×",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                104
+              ]
+            }
+          },
+          {
+            "n": 6,
+            "zh": "叔叔希望我花钱买本书。",
+            "transcript_zh": "叔叔让我花时间认真地读一读这本书，他说书里的故事对他的影响很大。他希望我也能从书中学到一些东西。",
+            "answer": "×",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                187
+              ]
+            }
+          },
+          {
+            "n": 7,
+            "zh": "弟弟每天晚上都上网看新闻。",
+            "transcript_zh": "每天晚上的这个时间，电视上除了新闻以外，没什么其他节目，所以弟弟只好上网看自己喜欢的电视节目。",
+            "answer": "×",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                187
+              ]
+            }
+          },
+          {
+            "n": 8,
+            "zh": "女儿边留学边在饭馆工作。",
+            "transcript_zh": "女儿在国外留学三年了，除了每天上课学习以外，课后还要去饭馆帮忙洗盘子。虽然每个月我们都给她不少钱，但是她说花自己的钱更舒服。",
+            "answer": "√",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                187
+              ]
+            }
+          },
+          {
+            "n": 9,
+            "zh": "老方每天都看报纸。",
+            "transcript_zh": "老方每天都坐在办公室中间的那把椅子上，边看报纸边喝茶，报纸上有什么有意思的新闻，他都读给我们听。",
+            "answer": "√",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                187
+              ]
+            }
+          },
+          {
+            "n": 10,
+            "zh": "他们以后能经常见面。",
+            "transcript_zh": "这个短期班下周日就要结束了，以后我们不能像现在这样经常见面了，有什么事情可以给我打电话或者发电子邮件。",
+            "answer": "×",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                187
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "一、听力 第三部分",
+        "type_zh": "听力 第三部分",
+        "instruction_zh": "第11–15题：听短对话，选择正确答案",
+        "instruction_en": "Questions 11-15: Listen to the short dialogues and choose the right answers.",
+        "audio": "hsk3-workbook-15-part3.mp3",
+        "items": [
+          {
+            "n": "例",
+            "zh": "男的想让小王做什么？",
+            "transcript_zh": "男：小王，帮我开一下门，好吗？谢谢！ 女：没问题。您去超市了？买了这么多东西。 问：男的想让小王做什么？",
+            "options": {
+              "A": "开门",
+              "B": "拿东西",
+              "C": "去超市买东西"
+            },
+            "answer": "A",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                104
+              ]
+            }
+          },
+          {
+            "n": 11,
+            "zh": "女的觉得这个地方怎么样？",
+            "options": {
+              "A": "环境不好",
+              "B": "商店很远",
+              "C": "夏天很热"
+            },
+            "transcript_zh": "男：你在这个地方生活了二十年，对这儿很了解了吧？ 女：对，这个地方除了夏天太热以外，其他都很好。环境不错，买东西也方便。 问：女的觉得这个地方怎么样？",
+            "answer": "C",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                187
+              ]
+            }
+          },
+          {
+            "n": 12,
+            "zh": "男的不让洗什么？",
+            "options": {
+              "A": "裤子",
+              "B": "裙子",
+              "C": "衬衫"
+            },
+            "transcript_zh": "女：除了这条裤子以外，还有什么要洗的吗？ 男：那条裤子是干净的，不用洗，你把那两件衬衫洗了吧。 问：男的不让洗什么？",
+            "answer": "A",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                187
+              ]
+            }
+          },
+          {
+            "n": 13,
+            "zh": "女的想要什么样的房子？",
+            "options": {
+              "A": "有电梯的",
+              "B": "没电梯的",
+              "C": "安静的"
+            },
+            "transcript_zh": "男：除了安静以外，您对房子还有什么要求吗？有电梯的还是没电梯的？ 女：我只有这一个要求，你们有这样的房子吗？ 问：女的想要什么样的房子？",
+            "answer": "C",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                187
+              ]
+            }
+          },
+          {
+            "n": 14,
+            "zh": "女的写字写得怎么样？",
+            "options": {
+              "A": "不认真",
+              "B": "特别漂亮",
+              "C": "特别慢"
+            },
+            "transcript_zh": "男：你的字写得漂亮极了，你是怎么写的？能教教我吗？ 女：开始的时候除了认真学、慢慢写以外，还要努力练习，这样才能越写越快，越写越漂亮。 问：女的写字写得怎么样？",
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                187
+              ]
+            }
+          },
+          {
+            "n": 15,
+            "zh": "女的觉得谁是最重要的人？",
+            "options": {
+              "A": "男的",
+              "B": "自己",
+              "C": "穿得漂亮的人"
+            },
+            "transcript_zh": "男：你今天穿得这么漂亮，要见什么重要的人吗？ 女：除了你以外，还有更重要的人吗？今天是中秋节，我们一起去看个电影吧。 问：女的觉得谁是最重要的人？",
+            "answer": "A",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                187
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "一、听力 第四部分",
+        "type_zh": "听力 第四部分",
+        "instruction_zh": "第16–20题：听长对话，选择正确答案",
+        "instruction_en": "Questions 16-20: Listen to the dialogues and choose the right answers.",
+        "audio": "hsk3-workbook-15-part4.mp3",
+        "items": [
+          {
+            "n": "例",
+            "zh": "男的在做什么？",
+            "transcript_zh": "女：晚饭做好了，准备吃饭了。 男：等一会儿，比赛还有三分钟就结束了。 女：快点儿吧，一起吃，菜冷了就不好吃了。 男：你先吃，我马上就看完了。 问：男的在做什么？",
+            "options": {
+              "A": "洗澡",
+              "B": "吃饭",
+              "C": "看电视"
+            },
+            "answer": "C",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                105
+              ]
+            }
+          },
+          {
+            "n": 16,
+            "zh": "关于男的，可以知道什么？",
+            "options": {
+              "A": "喜欢夏天",
+              "B": "不喜欢热",
+              "C": "四个季节都喜欢"
+            },
+            "transcript_zh": "女：大明，一年四季，你最喜欢哪个季节？ 男：我啊，除了夏天以外，我都喜欢。 女：能告诉我为什么吗？ 男：我怕热啊，这儿的夏天热极了，你不觉得吗？ 问：关于男的，可以知道什么？",
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                187
+              ]
+            }
+          },
+          {
+            "n": 17,
+            "zh": "关于那个房子，可以知道什么？",
+            "options": {
+              "A": "环境不错",
+              "B": "不太安静",
+              "C": "不太干净"
+            },
+            "transcript_zh": "女：我们新买的房子就在刚才过去的那条街上。 男：是吗？我看环境很好。 女：没错，那儿的街道除了很干净以外，也很安静，附近还有个花园。 男：有树有草，好极了！真想快点儿搬过去。 问：关于那个房子，可以知道什么？",
+            "answer": "A",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                187
+              ]
+            }
+          },
+          {
+            "n": 18,
+            "zh": "女的觉得这件衣服怎么样？",
+            "options": {
+              "A": "颜色不好",
+              "B": "不便宜",
+              "C": "太大了"
+            },
+            "transcript_zh": "男：这条裙子不大不小，真不错。 女：颜色也好看，我穿着它去参加朋友的生日晚会，一定漂亮极了。 男：那你为什么不买？有什么不满意吗？ 女：除了太贵以外，没什么不满意的。 问：女的觉得这件衣服怎么样？",
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                187
+              ]
+            }
+          },
+          {
+            "n": 19,
+            "zh": "女的的手机有什么问题？",
+            "options": {
+              "A": "不能打电话",
+              "B": "没有声音",
+              "C": "不能上网"
+            },
+            "transcript_zh": "女：您好，我的手机从前天开始就不能上网了，您帮我看看吧。 男：除了上不去网以外，还有什么其他问题吗？ 女：打电话的时候声音特别小，经常听不清楚。 男：您别着急，我马上帮您看看。 问：女的的手机有什么问题？",
+            "answer": "C",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                187
+              ]
+            }
+          },
+          {
+            "n": 20,
+            "zh": "在这个宾馆里做什么不用花钱？",
+            "options": {
+              "A": "喝水",
+              "B": "上网",
+              "C": "打电话"
+            },
+            "transcript_zh": "男：您好，我在这儿只住了一个星期，怎么这么贵？ 女：对不起，我们宾馆除了水以外，房间里其他吃的、喝的都是要花钱的。 男：上网和打电话也要自己花钱吗？ 女：对，上网每个小时5块，打电话一分钟也是5块。 问：在这个宾馆里做什么不用花钱？",
+            "answer": "A",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                187
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "二、阅读 第一部分",
+        "type_zh": "阅读 第一部分",
+        "instruction_zh": "第21–25题：选择合适的问答",
+        "instruction_en": "Questions 21-25: Match the two parts of the same dialogue.",
+        "items": [
+          {
+            "n": "例",
+            "zh": "你知道怎么去那儿吗？",
+            "options": {
+              "A": "参加会议的人都到了吗？",
+              "B": "没什么有意思的，我们上网看个电影吧。",
+              "C": "请问，这两个手机有什么不一样吗？",
+              "D": "除了半个西瓜以外，没有其他水果了。",
+              "E": "当然。我们先坐公共汽车，然后换地铁。",
+              "F": "我想提高汉语水平，应该做些什么呢？"
+            },
+            "answer": "E",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                106
+              ]
+            }
+          },
+          {
+            "n": 21,
+            "zh": "你要多听、多说，还要多跟中国朋友练习。",
+            "options": {
+              "A": "参加会议的人都到了吗？",
+              "B": "没什么有意思的，我们上网看个电影吧。",
+              "C": "请问，这两个手机有什么不一样吗？",
+              "D": "除了半个西瓜以外，没有其他水果了。",
+              "E": "当然。我们先坐公共汽车，然后换地铁。",
+              "F": "我想提高汉语水平，应该做些什么呢？"
+            },
+            "answer": "F",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                187
+              ]
+            }
+          },
+          {
+            "n": 22,
+            "zh": "冰箱里还有什么水果吗？",
+            "options": {
+              "A": "参加会议的人都到了吗？",
+              "B": "没什么有意思的，我们上网看个电影吧。",
+              "C": "请问，这两个手机有什么不一样吗？",
+              "D": "除了半个西瓜以外，没有其他水果了。",
+              "E": "当然。我们先坐公共汽车，然后换地铁。",
+              "F": "我想提高汉语水平，应该做些什么呢？"
+            },
+            "answer": "D",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                187
+              ]
+            }
+          },
+          {
+            "n": 23,
+            "zh": "这个黑色的手机字比较大，红色的小一些。",
+            "options": {
+              "A": "参加会议的人都到了吗？",
+              "B": "没什么有意思的，我们上网看个电影吧。",
+              "C": "请问，这两个手机有什么不一样吗？",
+              "D": "除了半个西瓜以外，没有其他水果了。",
+              "E": "当然。我们先坐公共汽车，然后换地铁。",
+              "F": "我想提高汉语水平，应该做些什么呢？"
+            },
+            "answer": "C",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                187
+              ]
+            }
+          },
+          {
+            "n": 24,
+            "zh": "除了常笑以外，大家都到了。",
+            "options": {
+              "A": "参加会议的人都到了吗？",
+              "B": "没什么有意思的，我们上网看个电影吧。",
+              "C": "请问，这两个手机有什么不一样吗？",
+              "D": "除了半个西瓜以外，没有其他水果了。",
+              "E": "当然。我们先坐公共汽车，然后换地铁。",
+              "F": "我想提高汉语水平，应该做些什么呢？"
+            },
+            "answer": "A",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                187
+              ]
+            }
+          },
+          {
+            "n": 25,
+            "zh": "电视上有什么好看的节目吗？",
+            "options": {
+              "A": "参加会议的人都到了吗？",
+              "B": "没什么有意思的，我们上网看个电影吧。",
+              "C": "请问，这两个手机有什么不一样吗？",
+              "D": "除了半个西瓜以外，没有其他水果了。",
+              "E": "当然。我们先坐公共汽车，然后换地铁。",
+              "F": "我想提高汉语水平，应该做些什么呢？"
+            },
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                187
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "二、阅读 第二部分",
+        "type_zh": "阅读 第二部分",
+        "instruction_zh": "第26–30题：选择合适的词语填空",
+        "instruction_en": "Questions 26-30: Choose the proper words to fill in the brackets.",
+        "word_bank": [
+          [
+            "A 上网",
+            "B 练习",
+            "C 完成",
+            "D 节日",
+            "E 声音",
+            "F 世界"
+          ]
+        ],
+        "items": [
+          {
+            "n": "例",
+            "zh": "她说话的（　）多好听啊！",
+            "options": {
+              "A": "上网",
+              "B": "练习",
+              "C": "完成",
+              "D": "节日",
+              "E": "声音",
+              "F": "世界"
+            },
+            "answer": "E",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                106
+              ]
+            }
+          },
+          {
+            "n": 26,
+            "zh": "这个（　）上课的时候我们已经做过了，不用再做了。",
+            "options": {
+              "A": "上网",
+              "B": "练习",
+              "C": "完成",
+              "D": "节日",
+              "E": "声音",
+              "F": "世界"
+            },
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                187
+              ]
+            }
+          },
+          {
+            "n": 27,
+            "zh": "孩子们最喜欢这个（　），因为不用去上课，还能吃到好吃的。",
+            "options": {
+              "A": "上网",
+              "B": "练习",
+              "C": "完成",
+              "D": "节日",
+              "E": "声音",
+              "F": "世界"
+            },
+            "answer": "D",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                187
+              ]
+            }
+          },
+          {
+            "n": 28,
+            "zh": "（　）可以发电子邮件，可以看节目，还可以买东西，真方便。",
+            "options": {
+              "A": "上网",
+              "B": "练习",
+              "C": "完成",
+              "D": "节日",
+              "E": "声音",
+              "F": "世界"
+            },
+            "answer": "A",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                187
+              ]
+            }
+          },
+          {
+            "n": 29,
+            "zh": "A：六点半了，你还不回家？ B：今天的工作还没（　），我晚一点儿再回去。",
+            "options": {
+              "A": "上网",
+              "B": "练习",
+              "C": "完成",
+              "D": "节日",
+              "E": "声音",
+              "F": "世界"
+            },
+            "answer": "C",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                187
+              ]
+            }
+          },
+          {
+            "n": 30,
+            "zh": "A：这是一张（　）地图，请大家找找中国在哪儿。 B：老师，我找到了。",
+            "options": {
+              "A": "上网",
+              "B": "练习",
+              "C": "完成",
+              "D": "节日",
+              "E": "声音",
+              "F": "世界"
+            },
+            "answer": "F",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                187
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "二、阅读 第三部分",
+        "type_zh": "阅读 第三部分",
+        "instruction_zh": "第31–35题：选择正确答案",
+        "instruction_en": "Questions 31-35: Choose the right answers.",
+        "items": [
+          {
+            "n": "例",
+            "zh": "您是来参加今天会议的吗？您来早了一点儿，现在才八点半。您先进来坐吧。 ★会议最可能几点开始？",
+            "options": {
+              "A": "8点",
+              "B": "8点半",
+              "C": "9点"
+            },
+            "answer": "C",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                107
+              ]
+            }
+          },
+          {
+            "n": 31,
+            "zh": "以前的手机只能打电话，现在除了打电话以外，还能上网。世界上有什么新闻，马上就能知道。在没有电脑的地方，想给朋友发电子邮件，也能用手机，方便极了！ ★以前的手机可以做什么？",
+            "options": {
+              "A": "发电子邮件",
+              "B": "上网",
+              "C": "打电话"
+            },
+            "answer": "C",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                187
+              ]
+            }
+          },
+          {
+            "n": 32,
+            "zh": "我在中国留学了三年，除了提高了汉语水平以外，还了解了中国和世界文化。我们班除了老师，其他人都不是中国人，大家来自世界各地。上课和课间休息的时候，大家都用汉语聊天儿，介绍自己的文化，有意思极了。 ★在中国留学：",
+            "options": {
+              "A": "老师不是中国人",
+              "B": "可以了解各地文化",
+              "C": "不能提高汉语水平"
+            },
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                187
+              ]
+            }
+          },
+          {
+            "n": 33,
+            "zh": "从下个月1号开始，这个地方要举行世界电影文化周，在文化周上，除了可以看到世界各地最新的电影，还有人为大家介绍各地的电影文化。一周七天，天天不同。对电影和电影文化感兴趣的朋友们，一定要去看看。 ★关于世界电影文化周，可以知道什么？",
+            "options": {
+              "A": "从1号到10号",
+              "B": "有最新的电影",
+              "C": "没有电影介绍"
+            },
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                187
+              ]
+            }
+          },
+          {
+            "n": 34,
+            "zh": "春节是中国最重要的节日，这一节日在中国有很长的历史了。春节那天，大家都要在家里和家人一起做饭吃。近年来，除了在家吃饭以外，有些人也去饭馆吃饭，他们说这样更方便，还可以吃到在家不容易做的菜。 ★关于春节，可以知道什么？",
+            "options": {
+              "A": "一定要在家吃饭",
+              "B": "是世界上最重要的节日",
+              "C": "历史很长"
+            },
+            "answer": "C",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                187
+              ]
+            }
+          },
+          {
+            "n": 35,
+            "zh": "过去这儿有很多矮小的旧房子，但是这几年都不见了。现在，我们眼前除了高楼以外，还有干净的街道和漂亮的花园，这个地方的变化真是大极了。 ★这个地方现在：",
+            "options": {
+              "A": "有不少老房子",
+              "B": "街道很干净",
+              "C": "没有什么变化"
+            },
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                187
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "三、书写 第一部分",
+        "type_zh": "书写 第一部分",
+        "instruction_zh": "第36–40题：连词成句",
+        "instruction_en": "Questions 36-40: Rearrange the words/phrases to make sentences.",
+        "items": [
+          {
+            "n": "例",
+            "zh": "小船　上　一　河　条　有",
+            "answer": "河上有一条小船。",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                108
+              ]
+            }
+          },
+          {
+            "n": 36,
+            "zh": "笑笑　以外　除了　别人　都　来了",
+            "answer": "除了笑笑以外，别人都来了。",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                187
+              ]
+            }
+          },
+          {
+            "n": 37,
+            "zh": "这个地方　极了　街道　干净　的",
+            "answer": "这个地方的街道干净极了。",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                187
+              ]
+            }
+          },
+          {
+            "n": 38,
+            "zh": "历史　文化　除了　还　我　以外　喜欢",
+            "answer": "除了历史以外，我还喜欢文化。",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                187
+              ]
+            }
+          },
+          {
+            "n": 39,
+            "zh": "什么　有　好看　电影院　电影　吗　的",
+            "answer": "电影院有什么好看的电影吗？",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                187
+              ]
+            }
+          },
+          {
+            "n": 40,
+            "zh": "游泳　除了　我　爬山　愿意　也",
+            "answer": "除了游泳我也愿意爬山。",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                187
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "三、书写 第二部分",
+        "type_zh": "书写 第二部分",
+        "instruction_zh": "第41–45题：看拼音，写汉字",
+        "instruction_en": "Questions 41-45: Write the characters based on their pinyin.",
+        "items": [
+          {
+            "n": "例",
+            "zh": "没（　）系，别难过，高兴点儿。",
+            "hint_zh": "guān",
+            "answer": "关",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                108
+              ]
+            }
+          },
+          {
+            "n": 41,
+            "zh": "马可，你的汉语水平（　）高了不少，老师真为你高兴！",
+            "hint_zh": "tí",
+            "answer": "提",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                187
+              ]
+            }
+          },
+          {
+            "n": 42,
+            "zh": "方朋，这个（　）子是什么意思？我没看明白。",
+            "hint_zh": "jù",
+            "answer": "句",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                187
+              ]
+            }
+          },
+          {
+            "n": 43,
+            "zh": "周经理，以后有什么问题，我可以给您（　）邮件吗？",
+            "hint_zh": "fā",
+            "answer": "发",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                187
+              ]
+            }
+          },
+          {
+            "n": 44,
+            "zh": "快把电视打开，新（　）开始了。",
+            "hint_zh": "wén",
+            "answer": "闻",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                187
+              ]
+            }
+          },
+          {
+            "n": 45,
+            "zh": "你看，（　）道两边都是树，一点儿也不觉得热。",
+            "hint_zh": "jiē",
+            "answer": "街",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                187
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "三、书写 第三部分",
+        "type_zh": "书写 第三部分",
+        "instruction_zh": "第46–50题：辨认汉字，选择正确的汉字填空",
+        "instruction_en": "Questions 46-50: Distinguish the characters and fill in the blanks.",
+        "items": [
+          {
+            "n": "例",
+            "zh": "我不知道________个地方在________儿。",
+            "hint_zh": "（那、哪）",
+            "answer": "那、哪",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                109
+              ]
+            }
+          },
+          {
+            "n": 46,
+            "zh": "你每天除了________习汉语以外，也要锻________身体。",
+            "hint_zh": "（炼、练）",
+            "answer": "练、炼",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                187
+              ]
+            }
+          },
+          {
+            "n": 47,
+            "zh": "大家都过来，我说一下这次篮________比赛的要________！",
+            "hint_zh": "（求、球）",
+            "answer": "球、求",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                187
+              ]
+            }
+          },
+          {
+            "n": 48,
+            "zh": "外边开始刮________了，别出去踢球了，在家上会儿________吧。",
+            "hint_zh": "（网、风）",
+            "answer": "风、网",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                187
+              ]
+            }
+          },
+          {
+            "n": 49,
+            "zh": "在这个重要的节________里，有很多歌舞节________。",
+            "hint_zh": "（目、日）",
+            "answer": "日、目",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                187
+              ]
+            }
+          },
+          {
+            "n": 50,
+            "zh": "弟弟除了喜欢中国文化以外，________对________界文化很感兴趣。",
+            "hint_zh": "（也、世）",
+            "answer": "也、世",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                187
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "四、复习",
+        "type_zh": "复习",
+        "instruction_zh": "第1–2题：根据课文内容填空",
+        "instruction_en": "Questions 1-2: Fill in the blanks based on the texts in the textbook.",
+        "items": [
+          {
+            "n": 1,
+            "zh": "大山来中国________两年了，他觉得自己的汉语________提高得一点儿也不快。昨天的作业，老师觉得他写得不错，________一个句子意思有些不清楚________，________都没什么问题。",
+            "answer": "留学、水平、除了、外、其他",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                187
+              ]
+            }
+          },
+          {
+            "n": 2,
+            "zh": "现在用电脑________真方便。除了看________，人们________可以听歌、看电影、买东西。小刚在网上买了一件衣服，有点儿小，给他弟弟了。不用________，还有新衣服穿，弟弟满意________。",
+            "answer": "上网、新闻、还、花钱、极了",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                187
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "answers_ref": {
+      "book": "teacher",
+      "pages": [
+        185,
+        186,
+        187
+      ]
+    }
+  },
+  "hsk30": {
+    "source": "courseware",
+    "ref": {
+      "book": "hsk30_courseware",
+      "pages": [
+        5,
+        18,
+        38
+      ]
+    },
+    "new_words": [
+      {
+        "n": 1,
+        "zh": "留学生",
+        "pinyin": "liúxuéshēng",
+        "pos": "n.",
+        "en": "international student",
+        "text": 1
+      },
+      {
+        "n": 2,
+        "zh": "校园",
+        "pinyin": "xiàoyuán",
+        "pos": "n.",
+        "en": "campus",
+        "text": 1
+      },
+      {
+        "n": 3,
+        "zh": "句",
+        "pinyin": "jù",
+        "pos": "m.",
+        "en": "sentence",
+        "text": 1
+      },
+      {
+        "n": 4,
+        "zh": "选",
+        "pinyin": "xuǎn",
+        "pos": "v.",
+        "en": "choose",
+        "text": 1
+      },
+      {
+        "n": 5,
+        "zh": "关注",
+        "pinyin": "guānzhù",
+        "pos": "v.",
+        "en": "pay attention to",
+        "text": 2
+      },
+      {
+        "n": 6,
+        "zh": "过节",
+        "pinyin": "guòjié",
+        "pos": "v.",
+        "en": "celebrate a festival",
+        "text": 4
+      },
+      {
+        "n": 7,
+        "zh": "新年",
+        "pinyin": "xīnnián",
+        "pos": "n.",
+        "en": "New Year",
+        "text": 4
+      },
+      {
+        "n": 8,
+        "zh": "晚会",
+        "pinyin": "wǎnhuì",
+        "pos": "n.",
+        "en": "evening party",
+        "text": 4
+      }
+    ],
+    "grammar": [],
+    "exercises": [],
+    "unclear": []
+  },
+  "audio": {
+    "textbook": [
+      "hsk3-textbook-1501.mp3",
+      "hsk3-textbook-1502.mp3",
+      "hsk3-textbook-1503.mp3",
+      "hsk3-textbook-1504.mp3",
+      "hsk3-textbook-1505.mp3"
+    ],
+    "workbook": [
+      "hsk3-workbook-15-part1.mp3",
+      "hsk3-workbook-15-part2.mp3",
+      "hsk3-workbook-15-part3.mp3",
+      "hsk3-workbook-15-part4.mp3"
+    ]
+  },
+  "unclear": [
+    "Сурах бичиг PDF х.143 拼音课文 课文4-ийн сүүлийн өгүүлбэр «Lǎi zhèli de píjiǔ jié kànkan ba.» — ханз 来 (lái) байхад пиньиньд «Lǎi» (3-р өргөлт) хэвлэгдсэн; номд байгаагаар нь lines.pinyin-д «Lǎi» гэж үлдээсэн.",
+    "Сурах бичиг PDF х.143 课文4: ханзан бичвэрт «……不同地方的歌舞。你想不想……» (цэг), 拼音课文-д «……de gēwǔ, nǐ xiǎng bu xiǎng……» (таслал) — lines-ийг ханзан бичвэрийн өгүүлбэрээр хувааж, пиньиньийг номд байгаагаар (4-р мөр таслалаар төгссөн, 5-р мөр жижиг үсгээр эхэлсэн) оноосон. Мөн 拼音课文-д «Chúle hē píjiǔ，» бүтэн өргөнтэй таслалтай хэвлэгдсэнийг хагас өргөнтэй «,» болгосон.",
+    "课文4 номд гарчиггүй (зөвхөн «4» ба аудио 15-4) — title_zh хоосон, title_en байхгүй. Өгүүлэмжийг өгүүлбэр тус бүрээр lines-д хувааж, 拼音课文-ын харгалзах хэсгийг оноосон.",
+    "Сурах бичгийн 拼音课文-ын гарчгийн пиньинь (Zài bàngōngshì / Zài jiàoshì / Zài Xiūxishì — 3-р гарчигт X том үсгээр хэвлэгдсэн) болон ярилцагчийн нэрийн пиньинь (Dàshān, lǎoshī, xuésheng, tóngshì, Xiǎogāng) схемд талбаргүй тул lines.pinyin-д зөвхөн яриаг оруулсан.",
+    "Сурах бичиг PDF х.141 热身2: «英语» пиньинь «yīngyǔ» гэж жижиг үсгээр хэвлэгдсэн (汉语 нь «Hànyǔ») — номд байгаагаар. Хүснэгтийн □ нүдийг «□» тэмдгээр, мөрийг «ангилал | сонголт …» хэлбэрээр оруулсан.",
+    "Сурах бичиг PDF х.145 注释2 练一练：(1) «A: ______。» цэгтэй, (2)(3) «A: ______» цэг таслалгүй хэвлэгдсэн — номд байгаагаар.",
+    "Сурах бичгийн 练一练 (3 дүрэм × 3; 注释1-ийн 例如 хариулт хэвлэгдсэн тул зөвхөн түүнд answer бий), 练习2 选词填空， 练习3 描述图片， 练习4 回答问题， 热身2, 运用1–2 — хариулт сурах бичиг, багшийн номд хэвлэгдээгүй тул answer талбаргүй. Багшийн номын 课文 асуулт-хариулт (teacher.text_questions) нь 练习4-ийн асуултаас өөр.",
+    "Багшийн ном PDF х.108 课文4 (1) «快速阅读，并回答：在啤酒节上可以做什么？» — тусдаа хариултгүй; (2)-ын 3-р асуулт («在啤酒节上可以做什么？») хариулттай давхцана. text_questions-д (1)-ийг a_zh-гүй оруулсан.",
+    "Багшийн ном PDF х.105 语言点1 导入：«教师在黑板上画出……»-ийг зөвхөн текстээр (зураггүй) оруулсан.",
+    "Багшийн номын 汉字辨认练习 (炼/练 · 求/球 · 网/风 · 目/日 · 世/也 — 组词；PDF х.108–109) хоосон зайтай, хариулт хэвлэгдээгүй. Дасгалын номын 46–50 ижил хосуудыг ашигладаг.",
+    "Дасгалын ном PDF х.108 书写 40: хариулт (багшийн ном PDF х.187) «除了游泳我也愿意爬山。» — таслалгүй, «以外»-гүй (үгийн жагсаалтад 以外 байхгүй) — номд байгаагаар.",
+    "Дасгалын номын сонсгол нэг CD тэмдэгтэй (15) — аудиог hsk3-workbook-15-part1…4.mp3 болгож хэсэг тус бүрт хуваасныг section.audio-д оноосон.",
+    "Дасгалын ном 听力 第三/四部分 — номд зөвхөн сонголтууд хэвлэгдсэн; item.zh-д багшийн номын хавсралтын «问：» асуултыг оруулсан (transcript_zh-д бүтнээр). 第一部分 1–5-ын zh хоосон (номд зөвхөн дугаар), бичвэр transcript_zh-д.",
+    "Дасгалын ном 听力 18: сонсголын бичвэрт «这条裙子», асуултад «这件衣服» гэж хэвлэгдсэн — номд байгаагаар.",
+    "Дасгалын номд энэ хичээлд 51–54 (组词) хэсэг байхгүй — нийт 50 асуулт + 复习 2.",
+    "Энэ хичээлд 汉字知识 хэсэг байхгүй (зөвхөн 旧字新词). * тэмдэгтэй үг: 举行 (17), 各 (20). 俗语 болон 文化-ын зургууд (同仁堂 самбартай хаалга; улаан хувцастай хүү гоймон идэж байна) схемд талбаргүй.",
+    "HSK 3.0 нэмэлт үгс (BLCUP 课件 补充HSK3.0, слайд 5, 18, 38) `hsk30`-д."
+  ],
+  "verified_pages": [
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
     141,
     142,
     143,
@@ -18,2088 +2177,10 @@
     147,
     148,
     149,
-    150
-   ]
-  },
-  "warmup": [
-   {
-    "instruction_zh": "给下面的词语选择对应的图片",
-    "instruction_en": "Match the pictures with the words.",
-    "items": [
-     "①节日 jiérì",
-     "②留学生 liúxuéshēng",
-     "③街道 jiēdào",
-     "④世界 shìjiè",
-     "⑤上网 shàng wǎng",
-     "⑥新闻 xīnwén"
-    ],
-    "pictures_desc_en": [
-     "A: three young people seen from behind, sitting at computers in a computer room",
-     "B: a folded newspaper with the word “NEWS”",
-     "C: a wide city street lined with high-rise buildings",
-     "D: four smiling young students of different ethnicities holding bags and books",
-     "E: a globe of the Earth",
-     "F: dancers in red costumes holding red lanterns with the character 福"
-    ]
-   },
-   {
-    "instruction_zh": "说说你喜欢什么，不喜欢什么。喜欢的画√，不喜欢的画×。",
-    "instruction_en": "Talk about what you like and what you don’t like. Tick (√) the things you like and cross (×) those you don’t.",
-    "items": [
-     "饮料 yǐnliào | □咖啡 kāfēi | □牛奶 niúnǎi | □茶 chá | □水 shuǐ",
-     "水果 shuǐguǒ | □苹果 píngguǒ | □香蕉 xiāngjiāo | □西瓜 xīguā | □香瓜 xiāngguā",
-     "肉类 ròulèi | □牛肉 niúròu | □羊肉 yángròu | □鸡肉 jīròu | □鱼肉 yúròu",
-     "颜色 yánsè | □红色 hóngsè | □白色 báisè | □绿色 lǜsè | □黑色 hēisè",
-     "运动 yùndòng | □跑步 pǎo bù | □爬山 pá shān | □游泳 yóu yǒng | □打篮球 dǎ lánqiú",
-     "学习 xuéxí | □数学 shùxué | □英语 yīngyǔ | □历史 lìshǐ | □汉语 Hànyǔ"
-    ]
-   }
-  ],
-  "texts": [
-   {
-    "n": 1,
-    "title_zh": "在办公室",
-    "title_en": "In the office",
-    "kind": "dialogue",
-    "audio": "hsk3-textbook-1501.mp3",
-    "lines": [
-     {
-      "speaker": "大山",
-      "zh": "老师，我来中国留学两年了，但是我的汉语水平提高得一点儿也不快啊。",
-      "pinyin": "Lǎoshī, wǒ lái Zhōngguó liú xué liǎng nián le, dànshì wǒ de Hànyǔ shuǐpíng tí gāo de yìdiǎnr yě bú kuài a."
-     },
-     {
-      "speaker": "老师",
-      "zh": "你每天认真学习，做练习、完成作业，一直不错啊。",
-      "pinyin": "Nǐ měi tiān rènzhēn xuéxí, zuò liànxí, wán chéng zuòyè, yìzhí búcuò a."
-     },
-     {
-      "speaker": "大山",
-      "zh": "这是我昨天的作业，您帮我看看对不对。",
-      "pinyin": "Zhè shì wǒ zuótiān de zuòyè, nín bāng wǒ kànkan duì bu duì."
-     },
-     {
-      "speaker": "老师",
-      "zh": "写得不错，除了这个句子意思有些不清楚外，其他都没什么问题。",
-      "pinyin": "Xiě de búcuò, chúle zhège jùzi yìsi yǒuxiē bù qīngchu wài, qítā dōu méi shénme wèntí."
-     },
-     {
-      "speaker": "大山",
-      "zh": "谢谢老师！",
-      "pinyin": "Xièxie lǎoshī!"
-     },
-     {
-      "speaker": "老师",
-      "zh": "以后有什么不明白的地方，可以给我打电话或者发电子邮件。",
-      "pinyin": "Yǐhòu yǒu shénme bù míngbai de dìfang, kěyǐ gěi wǒ dǎ diànhuà huòzhě fā diànzǐ yóujiàn."
-     }
-    ],
-    "new_words": [
-     {
-      "n": 1,
-      "zh": "留学",
-      "pinyin": "liú xué",
-      "pos": "v.",
-      "en": "to study abroad",
-      "text": 1
-     },
-     {
-      "n": 2,
-      "zh": "水平",
-      "pinyin": "shuǐpíng",
-      "pos": "n.",
-      "en": "level, standard",
-      "text": 1
-     },
-     {
-      "n": 3,
-      "zh": "提高",
-      "pinyin": "tí gāo",
-      "pos": "v.",
-      "en": "to improve",
-      "text": 1
-     },
-     {
-      "n": 4,
-      "zh": "练习",
-      "pinyin": "liànxí",
-      "pos": "n.",
-      "en": "exercise",
-      "text": 1
-     },
-     {
-      "n": 5,
-      "zh": "完成",
-      "pinyin": "wán chéng",
-      "pos": "v.",
-      "en": "to complete",
-      "text": 1
-     },
-     {
-      "n": 6,
-      "zh": "句子",
-      "pinyin": "jùzi",
-      "pos": "n.",
-      "en": "sentence",
-      "text": 1
-     },
-     {
-      "n": 7,
-      "zh": "其他",
-      "pinyin": "qítā",
-      "pos": "pron.",
-      "en": "the rest",
-      "text": 1
-     },
-     {
-      "n": 8,
-      "zh": "发",
-      "pinyin": "fā",
-      "pos": "v.",
-      "en": "to send",
-      "text": 1
-     }
-    ]
-   },
-   {
-    "n": 2,
-    "title_zh": "在教室",
-    "title_en": "In the classroom",
-    "kind": "dialogue",
-    "audio": "hsk3-textbook-1502.mp3",
-    "lines": [
-     {
-      "speaker": "学生",
-      "zh": "老师，除了小云，其他人都来了。",
-      "pinyin": "Lǎoshī, chúle Xiǎoyún, qítā rén dōu lái le."
-     },
-     {
-      "speaker": "老师",
-      "zh": "比赛马上就要开始了，小云怎么还没来？",
-      "pinyin": "Bǐsài mǎshàng jiù yào kāishǐ le, Xiǎoyún zěnme hái méi lái?"
-     },
-     {
-      "speaker": "学生",
-      "zh": "刚才给她打电话了，她在路上呢。",
-      "pinyin": "Gāngcái gěi tā dǎ diànhuà le, tā zài lùshang ne."
-     },
-     {
-      "speaker": "老师",
-      "zh": "不等她了，我先给大家讲讲这次比赛的要求和一些需要注意的地方。",
-      "pinyin": "Bù děng tā le, wǒ xiān gěi dàjiā jiǎngjiang zhè cì bǐsài de yāoqiú hé yìxiē xūyào zhù yì de dìfang."
-     },
-     {
-      "speaker": "学生",
-      "zh": "老师，您放心，今天的比赛我们一定能拿第一。",
-      "pinyin": "Lǎoshī, nín fàngxīn, jīntiān de bǐsài wǒmen yídìng néng ná dì yī."
-     }
-    ],
-    "new_words": [
-     {
-      "n": 9,
-      "zh": "要求",
-      "pinyin": "yāoqiú",
-      "pos": "n.",
-      "en": "requirement",
-      "text": 2
-     },
-     {
-      "n": 10,
-      "zh": "注意",
-      "pinyin": "zhù yì",
-      "pos": "v.",
-      "en": "to pay attention to",
-      "text": 2
-     }
-    ],
-    "proper_nouns": [
-     {
-      "zh": "小云",
-      "pinyin": "Xiǎoyún",
-      "en": "Xiaoyun, name of a person"
-     }
-    ]
-   },
-   {
-    "n": 3,
-    "title_zh": "在休息室",
-    "title_en": "In the lounge",
-    "kind": "dialogue",
-    "audio": "hsk3-textbook-1503.mp3",
-    "lines": [
-     {
-      "speaker": "同事",
-      "zh": "现在用电脑上网真方便啊！",
-      "pinyin": "Xiànzài yòng diànnǎo shàng wǎng zhēn fāngbiàn a!"
-     },
-     {
-      "speaker": "小刚",
-      "zh": "是啊，除了看新闻，人们还可以在网上听歌、看电影、买东西。",
-      "pinyin": "Shì a, chúle kàn xīnwén, rénmen hái kěyǐ zài wǎngshang tīng gē, kàn diànyǐng, mǎi dōngxi."
-     },
-     {
-      "speaker": "同事",
-      "zh": "对了，你从网上买的那件衣服呢？怎么没见你穿？",
-      "pinyin": "Duìle, nǐ cóng wǎngshang mǎi de nà jiàn yīfu ne? Zěnme méi jiàn nǐ chuān?"
-     },
-     {
-      "speaker": "小刚",
-      "zh": "那件衣服我穿着有点儿小，给我弟弟了。",
-      "pinyin": "Nà jiàn yīfu wǒ chuānzhe yǒudiǎnr xiǎo, gěi wǒ dìdi le."
-     },
-     {
-      "speaker": "同事",
-      "zh": "他满意吗？",
-      "pinyin": "Tā mǎnyì ma?"
-     },
-     {
-      "speaker": "小刚",
-      "zh": "不用花钱，还有新衣服穿，他满意极了。",
-      "pinyin": "Búyòng huā qián, hái yǒu xīn yīfu chuān, tā mǎnyì jí le."
-     }
-    ],
-    "new_words": [
-     {
-      "n": 11,
-      "zh": "上网",
-      "pinyin": "shàng wǎng",
-      "pos": "v.",
-      "en": "to surf the Internet",
-      "text": 3
-     },
-     {
-      "n": 12,
-      "zh": "除了",
-      "pinyin": "chúle",
-      "pos": "prep.",
-      "en": "other than",
-      "text": 3
-     },
-     {
-      "n": 13,
-      "zh": "新闻",
-      "pinyin": "xīnwén",
-      "pos": "n.",
-      "en": "news",
-      "text": 3
-     },
-     {
-      "n": 14,
-      "zh": "花",
-      "pinyin": "huā",
-      "pos": "v.",
-      "en": "to spend",
-      "text": 3
-     },
-     {
-      "n": 15,
-      "zh": "极(了)",
-      "pinyin": "jí (le)",
-      "pos": "adv.",
-      "en": "extremely",
-      "text": 3
-     }
-    ]
-   },
-   {
-    "n": 4,
-    "title_zh": "",
-    "kind": "narrative",
-    "audio": "hsk3-textbook-1504.mp3",
-    "lines": [
-     {
-      "zh": "除了春节、中秋节以外，啤酒节也是这里很重要的一个节日。",
-      "pinyin": "Chúle Chūnjié, Zhōngqiū Jié yǐwài, píjiǔ jié yě shì zhèli hěn zhòngyào de yí ge jiérì."
-     },
-     {
-      "zh": "这个地方每年夏天都要举行一次啤酒节。",
-      "pinyin": "Zhège dìfang měi nián xiàtiān dōu yào jǔxíng yí cì píjiǔ jié."
-     },
-     {
-      "zh": "在啤酒节上，你可以喝到世界上不同地方的啤酒。",
-      "pinyin": "Zài píjiǔ jié shang, nǐ kěyǐ hēdào shìjiè shang bùtóng dìfang de píjiǔ."
-     },
-     {
-      "zh": "除了喝啤酒，你还可以在街道两边看到世界上不同地方的歌舞。",
-      "pinyin": "Chúle hē píjiǔ, nǐ hái kěyǐ zài jiēdào liǎng biān kàndào shìjiè shang bùtóng dìfang de gēwǔ,"
-     },
-     {
-      "zh": "你想不想了解世界各个地方的啤酒文化？",
-      "pinyin": "nǐ xiǎng bu xiǎng liǎojiě shìjiè gègè dìfang de píjiǔ wénhuà?"
-     },
-     {
-      "zh": "来这里的啤酒节看看吧。",
-      "pinyin": "Lǎi zhèli de píjiǔ jié kànkan ba."
-     }
-    ],
-    "new_words": [
-     {
-      "n": 16,
-      "zh": "节日",
-      "pinyin": "jiérì",
-      "pos": "n.",
-      "en": "festival",
-      "text": 4
-     },
-     {
-      "n": 17,
-      "zh": "举行",
-      "pinyin": "jǔxíng",
-      "pos": "v.",
-      "en": "to hold (a meeting, an event, etc.)",
-      "text": 4,
-      "star": true
-     },
-     {
-      "n": 18,
-      "zh": "世界",
-      "pinyin": "shìjiè",
-      "pos": "n.",
-      "en": "world",
-      "text": 4
-     },
-     {
-      "n": 19,
-      "zh": "街道",
-      "pinyin": "jiēdào",
-      "pos": "n.",
-      "en": "street",
-      "text": 4
-     },
-     {
-      "n": 20,
-      "zh": "各",
-      "pinyin": "gè",
-      "pos": "pron.",
-      "en": "each",
-      "text": 4,
-      "star": true
-     },
-     {
-      "n": 21,
-      "zh": "文化",
-      "pinyin": "wénhuà",
-      "pos": "n.",
-      "en": "culture",
-      "text": 4
-     }
-    ]
-   }
-  ],
-  "grammar": [
-   {
-    "n": 1,
-    "title_zh": "除了……以外，都／还／也……",
-    "title_en": "The Structure “除了……以外，都/还/也……”",
-    "explanation_zh": "“除了……以外，都……”表示在一个范围内，排除一部分，其他的都有相同的情况。其中“以外”可以省略。例如：（1）–（4）\n“除了……以外，还／也……”表示排除一部分，补充其他的。句子的主语放在句首，或者放在“还／也”的前边。例如：（5）–（8）",
-    "explanation_en": "“除了……以外，都…… (all…except…)” indicates that except the part being mentioned, all the others in a specific scope are the same in a certain way. “以外” can be left out. For example: (1)–(4)\n“除了……以外，还/也…… (besides…)” indicates that there are still others besides the part being mentioned. The subject is put at the beginning of the sentence or right before “还/也”. For example: (5)–(8)",
-    "structure_rows": [
-     "除了……以外，都……",
-     "除了……以外，还／也……"
-    ],
-    "examples": [
-     {
-      "n": 1,
-      "zh": "除了这个汉字以外，别的汉字我都认识。"
-     },
-     {
-      "n": 2,
-      "zh": "除了我以外，大家都听懂了。"
-     },
-     {
-      "n": 3,
-      "zh": "除了这个句子意思有些不清楚外，其他都没什么问题。"
-     },
-     {
-      "n": 4,
-      "zh": "除了小云，其他人都来了。"
-     },
-     {
-      "n": 5,
-      "zh": "除了唱歌以外，他还喜欢跳舞。"
-     },
-     {
-      "n": 6,
-      "zh": "除了汉语以外，我还会说英语。"
-     },
-     {
-      "n": 7,
-      "zh": "上网除了看新闻，还可以听音乐。"
-     },
-     {
-      "n": 8,
-      "zh": "除了春节、中秋节以外，啤酒节也是这里很重要的一个节日。"
-     }
-    ],
-    "practice_instruction_zh": "练一练　改写句子 Rewrite the sentences.",
-    "practice": [
-     {
-      "n": "例",
-      "zh": "春节很重要，中秋节也是很重要的节日。",
-      "answer": "除了春节以外，中秋节也是很重要的节日。",
-      "answer_ref": {
-       "book": "textbook",
-       "pages": [
-        144
-       ]
-      }
-     },
-     {
-      "n": 1,
-      "zh": "我喜欢春天，也喜欢夏天。"
-     },
-     {
-      "n": 2,
-      "zh": "我们班只有王老师是中国人，其他人都是外国人。"
-     },
-     {
-      "n": 3,
-      "zh": "我只想吃西瓜，其他水果都不想吃。"
-     }
-    ]
-   },
-   {
-    "n": 2,
-    "title_zh": "疑问代词活用2",
-    "title_en": "Flexible Use of Interrogative Pronouns 2",
-    "explanation_zh": "汉语中，“什么”可以做指示代词，用来代替不确定的人或事物，表达的语气更客气。去掉“什么”以后，句子的意思不变。例如：（1）–（4）",
-    "explanation_en": "In Chinese, “什么” can be used as a demonstrative pronoun instead of an indefinite person or thing, making the tone politer. The meaning of the sentence won’t change if “什么” is left out. For example: (1)–(4)",
-    "examples": [
-     {
-      "n": 1,
-      "zh": "这个饭馆有没有什么特别好吃的菜？"
-     },
-     {
-      "n": 2,
-      "zh": "周末你有没有什么打算？"
-     },
-     {
-      "n": 3,
-      "zh": "你写得很好，没什么问题。"
-     },
-     {
-      "n": 4,
-      "zh": "以后有什么不明白的地方，可以给我打电话或者发电子邮件。"
-     }
-    ],
-    "practice_instruction_zh": "练一练　完成对话 Complete the dialogues.",
-    "practice": [
-     {
-      "n": 1,
-      "zh": "A：________。 B：周末我跟朋友打算去爬山。"
-     },
-     {
-      "n": 2,
-      "zh": "A：________ B：对不起，我很少看电影，不知道哪个好看。"
-     },
-     {
-      "n": 3,
-      "zh": "A：________ B：没有了，老师，我都懂了。"
-     }
-    ]
-   },
-   {
-    "n": 3,
-    "title_zh": "程度的表达：极了",
-    "title_en": "“极了” Used to Indicate Degree",
-    "explanation_zh": "汉语中，表达最高程度可以用“形容词／心理动词＋极了”。例如：（1）–（4）",
-    "explanation_en": "In Chinese, the superlative degree can be expressed using “Adj/Mental V + 极了”. For example: (1)–(4)",
-    "structure_rows": [
-     "形容词／心理动词＋极了"
-    ],
-    "examples": [
-     {
-      "n": 1,
-      "zh": "我的小狗可爱极了。"
-     },
-     {
-      "n": 2,
-      "zh": "今天天气冷极了。"
-     },
-     {
-      "n": 3,
-      "zh": "那件衣服我喜欢极了。"
-     },
-     {
-      "n": 4,
-      "zh": "他满意极了。"
-     }
-    ],
-    "practice_instruction_zh": "练一练　完成句子 Complete the sentences.",
-    "practice": [
-     {
-      "n": 1,
-      "zh": "外边________，我们别出去了，在家里休息吧。"
-     },
-     {
-      "n": 2,
-      "zh": "我工作了一天，________。"
-     },
-     {
-      "n": 3,
-      "zh": "她唱歌________，大家都爱听。"
-     }
-    ]
-   }
-  ],
-  "exercises": [
-   {
-    "n": 1,
-    "type_zh": "朗读",
-    "instruction_zh": "朗读下列短语和句子",
-    "instruction_en": "Read the following phrases and sentences aloud.",
-    "audio": "hsk3-textbook-1505.mp3",
-    "items": [
-     {
-      "n": 1,
-      "zh": "其他：其他人／其他问题／其他时间／除了小云，其他人都来了。"
-     },
-     {
-      "n": 2,
-      "zh": "水平：汉语水平／电脑水平／水平高／我的汉语水平提高得一点儿也不快。"
-     },
-     {
-      "n": 3,
-      "zh": "完成：完成作业／完成工作／没完成／你每天认真学习，做练习、完成作业。"
-     },
-     {
-      "n": 4,
-      "zh": "上网：上网看电影／上网聊天儿／上一会儿网／现在用电脑上网真方便啊！"
-     },
-     {
-      "n": 5,
-      "zh": "注意：很注意／没注意／注意身体／我给大家讲讲需要注意的地方。"
-     }
-    ]
-   },
-   {
-    "n": 2,
-    "type_zh": "选词填空",
-    "instruction_zh": "选择恰当的词语填空",
-    "instruction_en": "Choose the proper words to fill in the blanks.",
-    "word_bank": [
-     [
-      "花",
-      "发",
-      "练习",
-      "提高",
-      "完成"
-     ],
-     [
-      "文化",
-      "句子",
-      "新闻",
-      "节日",
-      "世界"
-     ]
-    ],
-    "items": [
-     {
-      "n": 1,
-      "zh": "王经理，电子邮件我已经给您________过去了。"
-     },
-     {
-      "n": 2,
-      "zh": "你每天跟谁________口语？"
-     },
-     {
-      "n": 3,
-      "zh": "已经夜里12点多了，但是今天的作业我还没________。"
-     },
-     {
-      "n": 4,
-      "zh": "这个月我的钱都________完了，不能再买新衣服了。"
-     },
-     {
-      "n": 5,
-      "zh": "我在这里只学了三个月汉语，但是水平________了不少。"
-     },
-     {
-      "n": 6,
-      "zh": "A：今天听写五个________，请大家准备好笔和纸。 B：五个？老师，太多了！"
-     },
-     {
-      "n": 7,
-      "zh": "A：________上有多少个国家？你知道吗？ B：这个……，我真不知道。"
-     },
-     {
-      "n": 8,
-      "zh": "A：你为什么想去那个地方旅游？ B：我对那儿的________很感兴趣。"
-     },
-     {
-      "n": 9,
-      "zh": "A：你们国家最重要的________是什么？ B：当然是春节！"
-     },
-     {
-      "n": 10,
-      "zh": "A：刚才电视上的那条________真有意思！ B：你快说说。"
-     }
-    ]
-   },
-   {
-    "n": 3,
-    "type_zh": "描述图片",
-    "instruction_zh": "用本课新学的语言点和词语描述图片",
-    "instruction_en": "Describe the pictures using the newly-learned language points and words.",
-    "items": [
-     {
-      "n": 1,
-      "zh": "A：我们去这家饭馆吧，这儿的服务好________。 B：我也听说过，________服务好________，菜________。 A：这儿________好吃的菜？ B：这儿的鱼做得最好。",
-      "picture_desc_en": "The interior of an elegant restaurant with tables and chairs and round lights on the ceiling."
-     },
-     {
-      "n": 2,
-      "zh": "A：我想快点儿________汉语________，应该怎么做呢？ B：你要多听、多说、多做________。 A：________更容易的吗？ B：没有了。",
-      "picture_desc_en": "Two young women talking at a desk in a lecture hall, with other students sitting behind them."
-     },
-     {
-      "n": 3,
-      "zh": "A：有________喝的吗？ B：这儿有一些咖啡。 A：________，还有其他的吗？ B：那边还有牛奶和茶。",
-      "picture_desc_en": "Two glass coffee pots on a warming plate, with a small silver jug beside them."
-     },
-     {
-      "n": 4,
-      "zh": "A：经理，今天的工作我们已经________了。 B：好________！明天的工作大家有问题吗？ A：没________问题。 B：好的，大家一起努力。",
-      "picture_desc_en": "People in business suits sitting around a white table in a meeting."
-     }
-    ]
-   },
-   {
-    "n": 4,
-    "type_zh": "回答问题",
-    "instruction_zh": "根据课文回答问题",
-    "instruction_en": "Answer the questions according to the texts.",
-    "items": [
-     {
-      "n": 1,
-      "zh": "老师觉得大山的汉语怎么样？"
-     },
-     {
-      "n": 2,
-      "zh": "大家都来参加比赛了吗？谁没来？"
-     },
-     {
-      "n": 3,
-      "zh": "老师现在在做什么？"
-     },
-     {
-      "n": 4,
-      "zh": "大家可以上网做什么？"
-     },
-     {
-      "n": 5,
-      "zh": "小刚从网上买的那件衣服怎么了？"
-     },
-     {
-      "n": 6,
-      "zh": "啤酒节上可以做什么？"
-     }
-    ]
-   }
-  ],
-  "characters": {
-   "knowledge_title_zh": "旧字新词",
-   "knowledge_zh": "读读下面的词语，想想组成的新词是什么意思。",
-   "knowledge_en": "Read the following words and guess the meanings of the newly-formed ones.",
-   "word_game": [
-    {
-     "parts": [
-      "电影",
-      "节日"
-     ],
-     "result": "电影节"
-    },
-    {
-     "parts": [
-      "春天",
-      "节日"
-     ],
-     "result": "春节"
-    },
-    {
-     "parts": [
-      "文化",
-      "节日"
-     ],
-     "result": "文化节"
-    }
-   ],
-   "confusable_pairs": [
-    [
-     "炼",
-     "练"
-    ],
-    [
-     "求",
-     "球"
-    ],
-    [
-     "网",
-     "风"
-    ],
-    [
-     "目",
-     "日"
-    ],
-    [
-     "世",
-     "也"
-    ]
-   ]
-  },
-  "application": [
-   {
-    "title_zh": "双人活动",
-    "instruction_zh": "两人一组，互相询问对方对本班学生的态度。一人问，一人回答，并记录。",
-    "instruction_en": "Work in pairs. Ask about each other’s opinions on your classmates, and take notes.",
-    "example_zh": [
-     "例如：A：我们班谁最努力？",
-     "B：我们班王美努力极了。",
-     "A：为什么？",
-     "B：她每天下了课就去图书馆学习。",
-     "提示词：忙　可爱　认真　热情　聪明　客气"
-    ]
-   },
-   {
-    "title_zh": "小组活动",
-    "instruction_zh": "3~4人一组，介绍你们国家的一个节日。说说是什么时候，大家怎么过节、吃什么、喝什么、做什么。一人做记录，并向全班汇报。",
-    "instruction_en": "Work in groups of 3-4. Introduce one of the festivals in your country, including when it is, how people celebrate it, what to eat and drink, and what to do. Ask one member to take notes and report to the whole class.",
-    "example_zh": [
-     "例如：春节是我们国家的重要节日。春节一般在每年的1月或2月。过春节的时候，人们都要回家，除了一起吃饭以外，一家人还一起看电视台的春节晚会。",
-     "表格：| | 什么节日 | 什么时候 | 怎么过节 |",
-     "| 1 | 春节 | 1月或2月 | 一家人一起吃饭、看春节晚会 |",
-     "| | | | |",
-     "| | | | |",
-     "| | | | |",
-     "| | | | |"
-    ]
-   }
-  ],
-  "saying": {
-   "zh": "一是一，二是二",
-   "pinyin": "Yī shì yī, èr shì èr",
-   "en": "Call a spade a spade",
-   "explanation_zh": "“一是一，二是二”，这句话的意思是保留事物的真实面貌，不做任何改变，常常用来比喻一个人说话做事很诚实，不骗别人。",
-   "explanation_en": "The saying “一是一，二是二” means to keep the true look of something without making any alteration. It is often used metaphorically to describe someone who is honest in word and deed and doesn’t lie."
-  },
-  "culture": {
-   "title_zh": "中国人过生日吃什么",
-   "body_zh": "西方人过生日都要吃生日蛋糕，中国人的习俗是吃面条。面条长长的，表示“长寿”的意思。因此，生日面也叫长寿面。在你们国家，人们过生日时吃什么呢？",
-   "body_en": "What Food Chinese People Eat on Their Birthdays. Westerners eat cakes on their birthdays, while by tradition, Chinese people eat noodles. The noodles, being long, stand for “longevity”, which is why birthday noodles are also called longevity noodles. What do people eat on their birthdays in your country?"
-  }
- },
- "teacher": {
-  "ref": {
-   "book": "teacher",
-   "pages": [
-    103,
-    104,
-    105,
-    106,
-    107,
-    108,
-    109
-   ]
-  },
-  "objectives_zh": [
-   "重点词语：学生能够熟练掌握：“提高、完成、其他、发、花”的词义和用法",
-   "语言点：学生能够了解并掌握：（1）“除了……以外，都／还／也……”表示范围（2）疑问代词活用2：什么（3）“极了”表示程度很高",
-   "汉字：学生能够：根据已学生词猜测出3个旧字新词“电影节、春节、文化节”的意思",
-   "功能：学生能够：（1）用“除了……以外，都／还／也……”表示包括、排除等内容（2）用“什么”表示不确定的人或事物（3）用“极了”表示最高程度"
-  ],
-  "steps": [
-   {
-    "title_zh": "复习旧课",
-    "body_zh": "1 教师展示第14课的热身图片，请学生根据图片说出生词。\n2 教师根据第14课的内容进行提问。\n（1）你做好了一个菜，请朋友帮你拿进房间去，要怎么说？\n（2）老师要去你家玩儿，你怎么准备？\n（3）你的拿手菜是什么？怎么做？请你教教我。\n（4）我想去几个地方旅行，应该怎么去？\n（5）在我们的学校，可以学到什么？你最喜欢学什么？"
-   },
-   {
-    "title_zh": "学习新课 1 热身",
-    "body_zh": "热身1：教师可依次朗读热身部分的词语，要求学生集体或单个说出图片对应的编号，教师评判正误；最后全体学生齐读热身环节所有词语，要求语音标准，声调准确。\n答案：①F　②D　③C　④E　⑤A　⑥B\n热身2：可留至语言点（1）“除了……以外，都／还／也……”导入时使用。"
-   },
-   {
-    "title_zh": "2 生词",
-    "body_zh": "（1）生词快速认读及正音\n留学、水平、提高、练习、完成、句子、其他、发、要求、注意、上网、除了、新闻、花、极（了）、节日、举行、世界、街道、各、文化、小云\n· 教师先带领学生快速认读一遍生词；\n· 取消拼音，带领学生再次认读；\n· 请单个学生独自认读2-3个生词；\n· 最后全班一起快速认读所有的生词。\n（2）生词讲解方式\n· 直观法（如图片、照片、实物等）展示：留学、上网、新闻、节日、世界、街道\n· 对比法展示：其他—别的\n· 启发式引导：要求、注意\n上课的时候，老师有什么要求？——老师要求大家安静，要求大家认真听课。\n考试的时候应该注意什么？——注意别写错字。\n（3）重点生词扩展及常用搭配\n提高—提高水平—水平提高了—没提高\n　—提高得很快—大家的汉语水平提高得很快。\n完成—完成作业—完成练习—完成句子—今天的工作你完成了吗？\n其他—其他人—其他事—我只去过北京，其他地方都没去过。\n发—发短信—发电子邮件—今天的作业是给老师发一个中文电子邮件。\n　—发出去—发过来—电子邮件没发出去。\n花—花钱—花时间—我花了三个小时才写完作业。\n练习册相关练习：第99页／一／第一部分，第102页／二／第二部分"
-   },
-   {
-    "title_zh": "3 语言点（1）除了……以外，都／还／也……",
-    "body_zh": "① 语言点解析\n“除了……以外，都……”表示在一个范围内，排除一部分，其他的都有相同的情况。“除了……以外，还／也……”表示排除一部分，补充其他的。\n② 语言点导入\n教师可利用本课热身2导入语言点。\n教师带领学生熟悉表格中所有词语，学生两人一组，合作完成热身2。\n教师请学生向自己提问。\n学生：老师，您喜欢喝什么饮料？\n教师：我只喜欢喝水，茶、咖啡、牛奶我都不喜欢喝。\n教师引导学生说出：除了水以外，老师都不喜欢喝。\n教师在黑板上画出教师喜欢喝的饮料“水”，帮助学生理解语言点。\n教师请学生再次向自己提问。\n学生：老师，您喜欢喝什么饮料？\n教师：我喜欢喝水，也喜欢喝茶、咖啡和牛奶。\n教师引导学生说出：除了水以外，老师还／也喜欢喝茶、咖啡和牛奶。\n教师在黑板上画出教师喜欢喝的饮料“水”“咖啡”“牛奶”“茶”，帮助学生理解语言点。\n③ 语言点操练\n教师可根据热身2的表格操练语言点。\n学生向教师提问，教师回答后，请学生说出目标句。\n目标句：除了西瓜以外，老师还喜欢吃苹果。\n　　　　除了鱼肉以外，其他肉老师都不喜欢吃。\n　　　　除了红色以外，老师还喜欢绿色和白色。\n　　　　除了爬山以外，其他运动老师都不喜欢。\n　　　　除了数学以外，其他课老师都喜欢。\n④ 语言点扩展练习\n教师利用热身2，让学生两人一组互相询问并回答。\n注意：其中“以外”可以完全省略或省略成“外”。"
-   },
-   {
-    "title_zh": "3 语言点（2）疑问代词活用2",
-    "body_zh": "① 语言点解析\n汉语中，“什么”可以做指示代词，用来代替不确定的人或事物，表达的语气更客气。去掉“什么”以后，句子的意思不变。\n② 语言点导入\n教师根据实际情况，提问并引入语言点。\n教师：我想知道这个饭馆儿好吃的菜。怎么问？\n学生：这个饭馆儿有什么好吃的菜？\n教师引导学生说出：这个饭馆儿有什么好吃的菜吗？\n　　　　　　　　　这个饭馆儿有没有什么好吃的菜？\n教师：这个饭馆儿没有好吃的菜。怎么说？\n教师引导学生说出：这个饭馆儿没什么好吃的菜。\n③ 语言点操练\n教师给出情境，让学生说出句子。\n情境及目标句：\n我想知道这个月有哪些有意思的电影。——这个月有什么有意思的电影吗？\n我饿了，想吃东西。——有什么吃的吗？我饿了。\n这个商店没有好看的衣服。——这个商店没什么好看的衣服。\n我很忙，没有时间休息。——我很忙，没什么时间休息。\n④ 语言点扩展练习\n教师可根据实际情况提问，请学生回答。\n每天下课以前，老师会说什么？\n你去商店买东西的时候，服务员会说什么？"
-   },
-   {
-    "title_zh": "3 语言点（3）程度的表达：极了",
-    "body_zh": "① 语言点解析\n汉语中，表达最高程度可以用“形容词／心理动词＋极了”。\n② 语言点导入\n教师就地取材，利用学生作业，提问并引入语言点。\n教师：他的字漂亮不漂亮？\n学生：非常漂亮。\n教师引导学生说出：他的字漂亮极了。\n③ 语言点操练\n教师给出一些学过的形容词，请学生互相询问并回答。\n可爱、舒服、容易、重要\n例：可爱：A：你觉得什么最可爱？\n　　　　　B：我觉得小狗可爱极了。\n④ 语言点扩展练习\n教师让本班学生夸夸自己的班级。\n我们班学生________。"
-   },
-   {
-    "title_zh": "4 课文 课文1",
-    "body_zh": "（1）让学生听两遍录音并回答下列问题：\n男的（大山）有什么问题吗？——他觉得他的汉语水平提高得一点儿也不快。\n女的（老师）觉得大山学得怎么样？——老师觉得他学得一直不错，每天认真学习，做练习，完成作业。\n大山昨天的作业做得怎么样？——做得不错，除了有一个句子意思有些不清楚外，其他都没什么问题。\n以后有不明白的地方，大山可以怎么办？——可以给老师打电话或者发电子邮件。\n（2）教师领读课文两遍，让学生分角色朗读课文。\n（3）模仿练习\n学生两人一组，根据提示词模仿课文内容进行对话练习。\nA：我……了，但是……。\nB：你……，一直不错啊。\nA：这是……，你／您帮我……。\nB：……，除了……外，其他……。\nA：谢谢……！\nB：以后有什么……，可以……。"
-   },
-   {
-    "title_zh": "4 课文 课文2",
-    "body_zh": "（1）让学生听两遍录音并回答下列问题：\n大家都来了吗？——除了小云，其他人都来了。\n小云现在在哪儿？——小云在路上。\n老师要做什么？——老师要给大家讲讲这次比赛的要求和一些需要注意的地方。\n（2）教师领读课文两遍，让学生分角色朗读课文，注意说话人的语气。\n（3）模仿练习\n学生两人一组，根据提示词模仿课文内容进行对话练习。\nA：……，除了……，……。\nB：……，开始了，……还没来？\nA：刚才……，她／他……。\nB：不等她／他了，我先……。\nA：……，您放心，……。"
-   },
-   {
-    "title_zh": "4 课文 课文3",
-    "body_zh": "（1）让学生听两遍录音并回答下列问题：\n为什么现在的生活很方便？——因为除了看新闻，还可以在网上听歌、看电影、买东西。\n男的为什么没穿在网上买的那件新衣服？——因为有点儿小，他给他弟弟了。\n男的的弟弟为什么很满意？——因为不用花钱，还有新衣服穿，所以他满意极了。\n（2）教师领读课文两遍，让学生分角色朗读课文，注意说话人的语气。\n（3）教师给提示词，带领学生复述课文。\n提示词：上网、除了……，还……、网上、满意、花钱、极了"
-   },
-   {
-    "title_zh": "4 课文 课文4",
-    "body_zh": "（1）快速阅读，并回答：在啤酒节上可以做什么？\n（2）教师领读课文两遍，并回答下列问题：\n这个地方有什么重要的节日吗？——这个地方除了春节、中秋节以外，还有啤酒节。\n啤酒节什么时候举行？——啤酒节每年夏天举行。\n在啤酒节上可以做什么？——在啤酒节上，除了可以喝到世界上不同地方的啤酒以外，还可以看到世界上不同地方的歌舞。\n你想了解世界各个地方的啤酒文化，应该怎么办？——去啤酒节看看。\n（3）教师给提示词，带领学生复述课文。\n提示词：除了……以外、也、节日、喝啤酒、街道、歌舞、了解、啤酒文化\n（4）教师请学生仿照课文，说说自己住的地方有什么重要的节日，在这个节日里，人们都做什么。\n练习册相关练习：第105页／四"
-   },
-   {
-    "title_zh": "5 汉字",
-    "body_zh": "旧字新词：\n① 教师领读以前学过的词语和新词，并让学生猜猜新词的意思。\n· 领读：电影、节日、电影节\n问学生：在“电影节”上可以做什么？——看各国的电影。\n· 领读：春天、节日、春节\n问学生：你们国家过“春节”吗？中国人过“春节”的时候做什么？——包饺子、团聚、一起吃饭等。\n· 领读：文化、节日、文化节\n问学生：在“文化节”上可以做什么？——了解世界各个地方的文化。\n扩展提问：还有什么“节”？——音乐节、旅游节、中秋节。（根据实际情况选用）\n② 教师领读新词扩展，通过情景，理解新词的意思和用法：\n电影节：中国电影节／大学生电影节／今年的电影节什么时候开始？\n春节：过春节／春节前的准备／过春节的时候，谁最高兴？\n文化节：世界文化节／文化节每两年举行一次／今年的文化节在我们学校举行。\n汉字辨认练习：\n辨认下列汉字并组词。\n炼：________、________　求：________、________\n练：________、________　球：________、________\n网：________、________　目：________、________\n风：________、________　日：________、________\n世：________、________\n也：________、________\n练习册相关练习：第105页／三／第三部分"
-   },
-   {
-    "title_zh": "6 补充课堂活动——根据词卡写句子",
-    "body_zh": "4-5个学生一组，每组随机抽取3-4个词卡，用这些词完成一个句子，比比哪组能用最短的时间写出正确的句子。\n参考词语：留学、水平、提高、练习、完成、句子、其他、发、要求、注意、上网、除了、新闻、花、极（了）、节日、世界、街道、文化……"
-   },
-   {
-    "title_zh": "7 俗语",
-    "body_zh": "教师引导学生理解俗语的含义。注意这里的“一”“二”指的是事情的本来面貌，比如：请你一是一、二是二地把这件事情告诉经理，不要说假话。"
-   },
-   {
-    "title_zh": "8 本课小结",
-    "body_zh": "· 语言点：用“除了……以外，都／还／也……”表示范围\n　　　　　用“什么”代替不确定的人或物\n　　　　　用“极了”表示程度很高\n· 汉　字：旧字新词：电影节、春节、文化节"
-   },
-   {
-    "title_zh": "文化：中国人过生日吃什么",
-    "body_zh": "1 文化点解析\n① 古代中国人认为脸长寿命就长，“脸”就是“面”，因此长长的面条就表示长长的脸，寓意长寿。除了长寿面，还有寿桃等，也寓意长寿。\n② 中国人过生日的时候还有吃鸡蛋的习俗，寓意平安和健康。\n2 文化点参考处理方式\n· 教师介绍中国人过生日吃长寿面、寿桃和鸡蛋的习俗。\n· 请学生说说在自己国家，过生日的时候吃什么，为什么有这样的习俗。"
-   }
-  ],
-  "notes_zh": [
-   "注意：其中“以外”可以完全省略或省略成“外”。（语言点1）",
-   "扩展提问：还有什么“节”？——音乐节、旅游节、中秋节。（根据实际情况选用）（汉字·旧字新词）",
-   "注意这里的“一”“二”指的是事情的本来面貌，比如：请你一是一、二是二地把这件事情告诉经理，不要说假话。（俗语）"
-  ],
-  "warmup_answers_zh": [
-   "热身1 答案：①F　②D　③C　④E　⑤A　⑥B",
-   "热身2：可留至语言点（1）“除了……以外，都／还／也……”导入时使用。"
-  ],
-  "text_questions": [
-   {
-    "text": 1,
-    "q_zh": "男的（大山）有什么问题吗？",
-    "a_zh": "他觉得他的汉语水平提高得一点儿也不快。"
-   },
-   {
-    "text": 1,
-    "q_zh": "女的（老师）觉得大山学得怎么样？",
-    "a_zh": "老师觉得他学得一直不错，每天认真学习，做练习，完成作业。"
-   },
-   {
-    "text": 1,
-    "q_zh": "大山昨天的作业做得怎么样？",
-    "a_zh": "做得不错，除了有一个句子意思有些不清楚外，其他都没什么问题。"
-   },
-   {
-    "text": 1,
-    "q_zh": "以后有不明白的地方，大山可以怎么办？",
-    "a_zh": "可以给老师打电话或者发电子邮件。"
-   },
-   {
-    "text": 2,
-    "q_zh": "大家都来了吗？",
-    "a_zh": "除了小云，其他人都来了。"
-   },
-   {
-    "text": 2,
-    "q_zh": "小云现在在哪儿？",
-    "a_zh": "小云在路上。"
-   },
-   {
-    "text": 2,
-    "q_zh": "老师要做什么？",
-    "a_zh": "老师要给大家讲讲这次比赛的要求和一些需要注意的地方。"
-   },
-   {
-    "text": 3,
-    "q_zh": "为什么现在的生活很方便？",
-    "a_zh": "因为除了看新闻，还可以在网上听歌、看电影、买东西。"
-   },
-   {
-    "text": 3,
-    "q_zh": "男的为什么没穿在网上买的那件新衣服？",
-    "a_zh": "因为有点儿小，他给他弟弟了。"
-   },
-   {
-    "text": 3,
-    "q_zh": "男的的弟弟为什么很满意？",
-    "a_zh": "因为不用花钱，还有新衣服穿，所以他满意极了。"
-   },
-   {
-    "text": 4,
-    "q_zh": "（快速阅读）在啤酒节上可以做什么？"
-   },
-   {
-    "text": 4,
-    "q_zh": "这个地方有什么重要的节日吗？",
-    "a_zh": "这个地方除了春节、中秋节以外，还有啤酒节。"
-   },
-   {
-    "text": 4,
-    "q_zh": "啤酒节什么时候举行？",
-    "a_zh": "啤酒节每年夏天举行。"
-   },
-   {
-    "text": 4,
-    "q_zh": "在啤酒节上可以做什么？",
-    "a_zh": "在啤酒节上，除了可以喝到世界上不同地方的啤酒以外，还可以看到世界上不同地方的歌舞。"
-   },
-   {
-    "text": 4,
-    "q_zh": "你想了解世界各个地方的啤酒文化，应该怎么办？",
-    "a_zh": "去啤酒节看看。"
-   }
-  ],
-  "summary_zh": "语言点：用“除了……以外，都／还／也……”表示范围；用“什么”代替不确定的人或物；用“极了”表示程度很高。汉字：旧字新词：电影节、春节、文化节。"
- },
- "workbook": {
-  "ref": {
-   "book": "workbook",
-   "pages": [
-    103,
-    104,
-    105,
-    106,
-    107,
-    108,
-    109
-   ]
-  },
-  "sections": [
-   {
-    "n": "一、听力 第一部分",
-    "type_zh": "听力 第一部分",
-    "instruction_zh": "第1–5题：听对话，选择与对话内容一致的图片",
-    "instruction_en": "Questions 1-5: Choose the right picture for each dialogue you hear.",
-    "audio": "hsk3-workbook-15-part1.mp3",
-    "items": [
-     {
-      "n": "例",
-      "zh": "男：喂，请问张经理在吗？ 女：他正在开会，您半个小时以后再打，好吗？",
-      "transcript_zh": "男：喂，请问张经理在吗？ 女：他正在开会，您半个小时以后再打，好吗？",
-      "options": {
-       "A": "[picture] a hand touching the screen of a mobile phone",
-       "B": "[picture] a woman at a table looking at papers, and a man beside her holding a card and gesturing",
-       "C": "[picture] two young men playing basketball outdoors",
-       "D": "[picture] a smiling woman in a uniform talking on a telephone",
-       "E": "[picture] a man and a woman sitting at a restaurant table, with a waiter standing beside them",
-       "F": "[picture] a woman in glasses holding a cup and reading a newspaper"
-      },
-      "answer": "D",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        103
-       ]
-      }
-     },
-     {
-      "n": 1,
-      "zh": "",
-      "options": {
-       "A": "[picture] a hand touching the screen of a mobile phone",
-       "B": "[picture] a woman at a table looking at papers, and a man beside her holding a card and gesturing",
-       "C": "[picture] two young men playing basketball outdoors",
-       "D": "[picture] a smiling woman in a uniform talking on a telephone",
-       "E": "[picture] a man and a woman sitting at a restaurant table, with a waiter standing beside them",
-       "F": "[picture] a woman in glasses holding a cup and reading a newspaper"
-      },
-      "transcript_zh": "男1：你现在打篮球的水平越来越高了。 男2：我觉得没什么提高，还跟以前一样。",
-      "answer": "C",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        187
-       ]
-      }
-     },
-     {
-      "n": 2,
-      "zh": "",
-      "options": {
-       "A": "[picture] a hand touching the screen of a mobile phone",
-       "B": "[picture] a woman at a table looking at papers, and a man beside her holding a card and gesturing",
-       "C": "[picture] two young men playing basketball outdoors",
-       "D": "[picture] a smiling woman in a uniform talking on a telephone",
-       "E": "[picture] a man and a woman sitting at a restaurant table, with a waiter standing beside them",
-       "F": "[picture] a woman in glasses holding a cup and reading a newspaper"
-      },
-      "transcript_zh": "男：你要发电子邮件吗？我去把电脑打开。 女：不用，我的手机能上网，用手机也能发。",
-      "answer": "A",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        187
-       ]
-      }
-     },
-     {
-      "n": 3,
-      "zh": "",
-      "options": {
-       "A": "[picture] a hand touching the screen of a mobile phone",
-       "B": "[picture] a woman at a table looking at papers, and a man beside her holding a card and gesturing",
-       "C": "[picture] two young men playing basketball outdoors",
-       "D": "[picture] a smiling woman in a uniform talking on a telephone",
-       "E": "[picture] a man and a woman sitting at a restaurant table, with a waiter standing beside them",
-       "F": "[picture] a woman in glasses holding a cup and reading a newspaper"
-      },
-      "transcript_zh": "男1：你们这儿除了鱼以外，还有什么好吃的吗？ 男2：今天的羊肉也很新鲜，您要不要来一个？",
-      "answer": "E",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        187
-       ]
-      }
-     },
-     {
-      "n": 4,
-      "zh": "",
-      "options": {
-       "A": "[picture] a hand touching the screen of a mobile phone",
-       "B": "[picture] a woman at a table looking at papers, and a man beside her holding a card and gesturing",
-       "C": "[picture] two young men playing basketball outdoors",
-       "D": "[picture] a smiling woman in a uniform talking on a telephone",
-       "E": "[picture] a man and a woman sitting at a restaurant table, with a waiter standing beside them",
-       "F": "[picture] a woman in glasses holding a cup and reading a newspaper"
-      },
-      "transcript_zh": "男：这个月你怎么花了这么多钱？ 女：我记得我只买了几件衣服，其他也没买什么啊。",
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        187
-       ]
-      }
-     },
-     {
-      "n": 5,
-      "zh": "",
-      "options": {
-       "A": "[picture] a hand touching the screen of a mobile phone",
-       "B": "[picture] a woman at a table looking at papers, and a man beside her holding a card and gesturing",
-       "C": "[picture] two young men playing basketball outdoors",
-       "D": "[picture] a smiling woman in a uniform talking on a telephone",
-       "E": "[picture] a man and a woman sitting at a restaurant table, with a waiter standing beside them",
-       "F": "[picture] a woman in glasses holding a cup and reading a newspaper"
-      },
-      "transcript_zh": "男：看什么呢？今天报纸上有什么新闻吗？ 女：我没看新闻，我看看今天天气怎么样。",
-      "answer": "F",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        187
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "一、听力 第二部分",
-    "type_zh": "听力 第二部分",
-    "instruction_zh": "第6–10题：听句子，判断对错",
-    "instruction_en": "Questions 6-10: Decide whether the statements are true or false based on the sentences you hear.",
-    "audio": "hsk3-workbook-15-part2.mp3",
-    "items": [
-     {
-      "n": "例1",
-      "zh": "他希望自己很健康。",
-      "transcript_zh": "为了让自己更健康，他每天都花一个小时去锻炼身体。",
-      "answer": "√",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        104
-       ]
-      }
-     },
-     {
-      "n": "例2",
-      "zh": "那块儿手表不是他的。",
-      "transcript_zh": "今天我想早点儿回家。看了看手表，才5点。过了一会儿再看表，还是5点，我这才发现我的手表不走了。",
-      "answer": "×",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        104
-       ]
-      }
-     },
-     {
-      "n": 6,
-      "zh": "叔叔希望我花钱买本书。",
-      "transcript_zh": "叔叔让我花时间认真地读一读这本书，他说书里的故事对他的影响很大。他希望我也能从书中学到一些东西。",
-      "answer": "×",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        187
-       ]
-      }
-     },
-     {
-      "n": 7,
-      "zh": "弟弟每天晚上都上网看新闻。",
-      "transcript_zh": "每天晚上的这个时间，电视上除了新闻以外，没什么其他节目，所以弟弟只好上网看自己喜欢的电视节目。",
-      "answer": "×",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        187
-       ]
-      }
-     },
-     {
-      "n": 8,
-      "zh": "女儿边留学边在饭馆工作。",
-      "transcript_zh": "女儿在国外留学三年了，除了每天上课学习以外，课后还要去饭馆帮忙洗盘子。虽然每个月我们都给她不少钱，但是她说花自己的钱更舒服。",
-      "answer": "√",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        187
-       ]
-      }
-     },
-     {
-      "n": 9,
-      "zh": "老方每天都看报纸。",
-      "transcript_zh": "老方每天都坐在办公室中间的那把椅子上，边看报纸边喝茶，报纸上有什么有意思的新闻，他都读给我们听。",
-      "answer": "√",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        187
-       ]
-      }
-     },
-     {
-      "n": 10,
-      "zh": "他们以后能经常见面。",
-      "transcript_zh": "这个短期班下周日就要结束了，以后我们不能像现在这样经常见面了，有什么事情可以给我打电话或者发电子邮件。",
-      "answer": "×",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        187
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "一、听力 第三部分",
-    "type_zh": "听力 第三部分",
-    "instruction_zh": "第11–15题：听短对话，选择正确答案",
-    "instruction_en": "Questions 11-15: Listen to the short dialogues and choose the right answers.",
-    "audio": "hsk3-workbook-15-part3.mp3",
-    "items": [
-     {
-      "n": "例",
-      "zh": "男的想让小王做什么？",
-      "transcript_zh": "男：小王，帮我开一下门，好吗？谢谢！ 女：没问题。您去超市了？买了这么多东西。 问：男的想让小王做什么？",
-      "options": {
-       "A": "开门",
-       "B": "拿东西",
-       "C": "去超市买东西"
-      },
-      "answer": "A",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        104
-       ]
-      }
-     },
-     {
-      "n": 11,
-      "zh": "女的觉得这个地方怎么样？",
-      "options": {
-       "A": "环境不好",
-       "B": "商店很远",
-       "C": "夏天很热"
-      },
-      "transcript_zh": "男：你在这个地方生活了二十年，对这儿很了解了吧？ 女：对，这个地方除了夏天太热以外，其他都很好。环境不错，买东西也方便。 问：女的觉得这个地方怎么样？",
-      "answer": "C",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        187
-       ]
-      }
-     },
-     {
-      "n": 12,
-      "zh": "男的不让洗什么？",
-      "options": {
-       "A": "裤子",
-       "B": "裙子",
-       "C": "衬衫"
-      },
-      "transcript_zh": "女：除了这条裤子以外，还有什么要洗的吗？ 男：那条裤子是干净的，不用洗，你把那两件衬衫洗了吧。 问：男的不让洗什么？",
-      "answer": "A",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        187
-       ]
-      }
-     },
-     {
-      "n": 13,
-      "zh": "女的想要什么样的房子？",
-      "options": {
-       "A": "有电梯的",
-       "B": "没电梯的",
-       "C": "安静的"
-      },
-      "transcript_zh": "男：除了安静以外，您对房子还有什么要求吗？有电梯的还是没电梯的？ 女：我只有这一个要求，你们有这样的房子吗？ 问：女的想要什么样的房子？",
-      "answer": "C",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        187
-       ]
-      }
-     },
-     {
-      "n": 14,
-      "zh": "女的写字写得怎么样？",
-      "options": {
-       "A": "不认真",
-       "B": "特别漂亮",
-       "C": "特别慢"
-      },
-      "transcript_zh": "男：你的字写得漂亮极了，你是怎么写的？能教教我吗？ 女：开始的时候除了认真学、慢慢写以外，还要努力练习，这样才能越写越快，越写越漂亮。 问：女的写字写得怎么样？",
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        187
-       ]
-      }
-     },
-     {
-      "n": 15,
-      "zh": "女的觉得谁是最重要的人？",
-      "options": {
-       "A": "男的",
-       "B": "自己",
-       "C": "穿得漂亮的人"
-      },
-      "transcript_zh": "男：你今天穿得这么漂亮，要见什么重要的人吗？ 女：除了你以外，还有更重要的人吗？今天是中秋节，我们一起去看个电影吧。 问：女的觉得谁是最重要的人？",
-      "answer": "A",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        187
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "一、听力 第四部分",
-    "type_zh": "听力 第四部分",
-    "instruction_zh": "第16–20题：听长对话，选择正确答案",
-    "instruction_en": "Questions 16-20: Listen to the dialogues and choose the right answers.",
-    "audio": "hsk3-workbook-15-part4.mp3",
-    "items": [
-     {
-      "n": "例",
-      "zh": "男的在做什么？",
-      "transcript_zh": "女：晚饭做好了，准备吃饭了。 男：等一会儿，比赛还有三分钟就结束了。 女：快点儿吧，一起吃，菜冷了就不好吃了。 男：你先吃，我马上就看完了。 问：男的在做什么？",
-      "options": {
-       "A": "洗澡",
-       "B": "吃饭",
-       "C": "看电视"
-      },
-      "answer": "C",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        105
-       ]
-      }
-     },
-     {
-      "n": 16,
-      "zh": "关于男的，可以知道什么？",
-      "options": {
-       "A": "喜欢夏天",
-       "B": "不喜欢热",
-       "C": "四个季节都喜欢"
-      },
-      "transcript_zh": "女：大明，一年四季，你最喜欢哪个季节？ 男：我啊，除了夏天以外，我都喜欢。 女：能告诉我为什么吗？ 男：我怕热啊，这儿的夏天热极了，你不觉得吗？ 问：关于男的，可以知道什么？",
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        187
-       ]
-      }
-     },
-     {
-      "n": 17,
-      "zh": "关于那个房子，可以知道什么？",
-      "options": {
-       "A": "环境不错",
-       "B": "不太安静",
-       "C": "不太干净"
-      },
-      "transcript_zh": "女：我们新买的房子就在刚才过去的那条街上。 男：是吗？我看环境很好。 女：没错，那儿的街道除了很干净以外，也很安静，附近还有个花园。 男：有树有草，好极了！真想快点儿搬过去。 问：关于那个房子，可以知道什么？",
-      "answer": "A",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        187
-       ]
-      }
-     },
-     {
-      "n": 18,
-      "zh": "女的觉得这件衣服怎么样？",
-      "options": {
-       "A": "颜色不好",
-       "B": "不便宜",
-       "C": "太大了"
-      },
-      "transcript_zh": "男：这条裙子不大不小，真不错。 女：颜色也好看，我穿着它去参加朋友的生日晚会，一定漂亮极了。 男：那你为什么不买？有什么不满意吗？ 女：除了太贵以外，没什么不满意的。 问：女的觉得这件衣服怎么样？",
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        187
-       ]
-      }
-     },
-     {
-      "n": 19,
-      "zh": "女的的手机有什么问题？",
-      "options": {
-       "A": "不能打电话",
-       "B": "没有声音",
-       "C": "不能上网"
-      },
-      "transcript_zh": "女：您好，我的手机从前天开始就不能上网了，您帮我看看吧。 男：除了上不去网以外，还有什么其他问题吗？ 女：打电话的时候声音特别小，经常听不清楚。 男：您别着急，我马上帮您看看。 问：女的的手机有什么问题？",
-      "answer": "C",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        187
-       ]
-      }
-     },
-     {
-      "n": 20,
-      "zh": "在这个宾馆里做什么不用花钱？",
-      "options": {
-       "A": "喝水",
-       "B": "上网",
-       "C": "打电话"
-      },
-      "transcript_zh": "男：您好，我在这儿只住了一个星期，怎么这么贵？ 女：对不起，我们宾馆除了水以外，房间里其他吃的、喝的都是要花钱的。 男：上网和打电话也要自己花钱吗？ 女：对，上网每个小时5块，打电话一分钟也是5块。 问：在这个宾馆里做什么不用花钱？",
-      "answer": "A",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        187
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "二、阅读 第一部分",
-    "type_zh": "阅读 第一部分",
-    "instruction_zh": "第21–25题：选择合适的问答",
-    "instruction_en": "Questions 21-25: Match the two parts of the same dialogue.",
-    "items": [
-     {
-      "n": "例",
-      "zh": "你知道怎么去那儿吗？",
-      "options": {
-       "A": "参加会议的人都到了吗？",
-       "B": "没什么有意思的，我们上网看个电影吧。",
-       "C": "请问，这两个手机有什么不一样吗？",
-       "D": "除了半个西瓜以外，没有其他水果了。",
-       "E": "当然。我们先坐公共汽车，然后换地铁。",
-       "F": "我想提高汉语水平，应该做些什么呢？"
-      },
-      "answer": "E",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        106
-       ]
-      }
-     },
-     {
-      "n": 21,
-      "zh": "你要多听、多说，还要多跟中国朋友练习。",
-      "options": {
-       "A": "参加会议的人都到了吗？",
-       "B": "没什么有意思的，我们上网看个电影吧。",
-       "C": "请问，这两个手机有什么不一样吗？",
-       "D": "除了半个西瓜以外，没有其他水果了。",
-       "E": "当然。我们先坐公共汽车，然后换地铁。",
-       "F": "我想提高汉语水平，应该做些什么呢？"
-      },
-      "answer": "F",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        187
-       ]
-      }
-     },
-     {
-      "n": 22,
-      "zh": "冰箱里还有什么水果吗？",
-      "options": {
-       "A": "参加会议的人都到了吗？",
-       "B": "没什么有意思的，我们上网看个电影吧。",
-       "C": "请问，这两个手机有什么不一样吗？",
-       "D": "除了半个西瓜以外，没有其他水果了。",
-       "E": "当然。我们先坐公共汽车，然后换地铁。",
-       "F": "我想提高汉语水平，应该做些什么呢？"
-      },
-      "answer": "D",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        187
-       ]
-      }
-     },
-     {
-      "n": 23,
-      "zh": "这个黑色的手机字比较大，红色的小一些。",
-      "options": {
-       "A": "参加会议的人都到了吗？",
-       "B": "没什么有意思的，我们上网看个电影吧。",
-       "C": "请问，这两个手机有什么不一样吗？",
-       "D": "除了半个西瓜以外，没有其他水果了。",
-       "E": "当然。我们先坐公共汽车，然后换地铁。",
-       "F": "我想提高汉语水平，应该做些什么呢？"
-      },
-      "answer": "C",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        187
-       ]
-      }
-     },
-     {
-      "n": 24,
-      "zh": "除了常笑以外，大家都到了。",
-      "options": {
-       "A": "参加会议的人都到了吗？",
-       "B": "没什么有意思的，我们上网看个电影吧。",
-       "C": "请问，这两个手机有什么不一样吗？",
-       "D": "除了半个西瓜以外，没有其他水果了。",
-       "E": "当然。我们先坐公共汽车，然后换地铁。",
-       "F": "我想提高汉语水平，应该做些什么呢？"
-      },
-      "answer": "A",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        187
-       ]
-      }
-     },
-     {
-      "n": 25,
-      "zh": "电视上有什么好看的节目吗？",
-      "options": {
-       "A": "参加会议的人都到了吗？",
-       "B": "没什么有意思的，我们上网看个电影吧。",
-       "C": "请问，这两个手机有什么不一样吗？",
-       "D": "除了半个西瓜以外，没有其他水果了。",
-       "E": "当然。我们先坐公共汽车，然后换地铁。",
-       "F": "我想提高汉语水平，应该做些什么呢？"
-      },
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        187
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "二、阅读 第二部分",
-    "type_zh": "阅读 第二部分",
-    "instruction_zh": "第26–30题：选择合适的词语填空",
-    "instruction_en": "Questions 26-30: Choose the proper words to fill in the brackets.",
-    "word_bank": [
-     [
-      "A 上网",
-      "B 练习",
-      "C 完成",
-      "D 节日",
-      "E 声音",
-      "F 世界"
-     ]
-    ],
-    "items": [
-     {
-      "n": "例",
-      "zh": "她说话的（　）多好听啊！",
-      "options": {
-       "A": "上网",
-       "B": "练习",
-       "C": "完成",
-       "D": "节日",
-       "E": "声音",
-       "F": "世界"
-      },
-      "answer": "E",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        106
-       ]
-      }
-     },
-     {
-      "n": 26,
-      "zh": "这个（　）上课的时候我们已经做过了，不用再做了。",
-      "options": {
-       "A": "上网",
-       "B": "练习",
-       "C": "完成",
-       "D": "节日",
-       "E": "声音",
-       "F": "世界"
-      },
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        187
-       ]
-      }
-     },
-     {
-      "n": 27,
-      "zh": "孩子们最喜欢这个（　），因为不用去上课，还能吃到好吃的。",
-      "options": {
-       "A": "上网",
-       "B": "练习",
-       "C": "完成",
-       "D": "节日",
-       "E": "声音",
-       "F": "世界"
-      },
-      "answer": "D",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        187
-       ]
-      }
-     },
-     {
-      "n": 28,
-      "zh": "（　）可以发电子邮件，可以看节目，还可以买东西，真方便。",
-      "options": {
-       "A": "上网",
-       "B": "练习",
-       "C": "完成",
-       "D": "节日",
-       "E": "声音",
-       "F": "世界"
-      },
-      "answer": "A",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        187
-       ]
-      }
-     },
-     {
-      "n": 29,
-      "zh": "A：六点半了，你还不回家？ B：今天的工作还没（　），我晚一点儿再回去。",
-      "options": {
-       "A": "上网",
-       "B": "练习",
-       "C": "完成",
-       "D": "节日",
-       "E": "声音",
-       "F": "世界"
-      },
-      "answer": "C",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        187
-       ]
-      }
-     },
-     {
-      "n": 30,
-      "zh": "A：这是一张（　）地图，请大家找找中国在哪儿。 B：老师，我找到了。",
-      "options": {
-       "A": "上网",
-       "B": "练习",
-       "C": "完成",
-       "D": "节日",
-       "E": "声音",
-       "F": "世界"
-      },
-      "answer": "F",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        187
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "二、阅读 第三部分",
-    "type_zh": "阅读 第三部分",
-    "instruction_zh": "第31–35题：选择正确答案",
-    "instruction_en": "Questions 31-35: Choose the right answers.",
-    "items": [
-     {
-      "n": "例",
-      "zh": "您是来参加今天会议的吗？您来早了一点儿，现在才八点半。您先进来坐吧。 ★会议最可能几点开始？",
-      "options": {
-       "A": "8点",
-       "B": "8点半",
-       "C": "9点"
-      },
-      "answer": "C",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        107
-       ]
-      }
-     },
-     {
-      "n": 31,
-      "zh": "以前的手机只能打电话，现在除了打电话以外，还能上网。世界上有什么新闻，马上就能知道。在没有电脑的地方，想给朋友发电子邮件，也能用手机，方便极了！ ★以前的手机可以做什么？",
-      "options": {
-       "A": "发电子邮件",
-       "B": "上网",
-       "C": "打电话"
-      },
-      "answer": "C",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        187
-       ]
-      }
-     },
-     {
-      "n": 32,
-      "zh": "我在中国留学了三年，除了提高了汉语水平以外，还了解了中国和世界文化。我们班除了老师，其他人都不是中国人，大家来自世界各地。上课和课间休息的时候，大家都用汉语聊天儿，介绍自己的文化，有意思极了。 ★在中国留学：",
-      "options": {
-       "A": "老师不是中国人",
-       "B": "可以了解各地文化",
-       "C": "不能提高汉语水平"
-      },
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        187
-       ]
-      }
-     },
-     {
-      "n": 33,
-      "zh": "从下个月1号开始，这个地方要举行世界电影文化周，在文化周上，除了可以看到世界各地最新的电影，还有人为大家介绍各地的电影文化。一周七天，天天不同。对电影和电影文化感兴趣的朋友们，一定要去看看。 ★关于世界电影文化周，可以知道什么？",
-      "options": {
-       "A": "从1号到10号",
-       "B": "有最新的电影",
-       "C": "没有电影介绍"
-      },
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        187
-       ]
-      }
-     },
-     {
-      "n": 34,
-      "zh": "春节是中国最重要的节日，这一节日在中国有很长的历史了。春节那天，大家都要在家里和家人一起做饭吃。近年来，除了在家吃饭以外，有些人也去饭馆吃饭，他们说这样更方便，还可以吃到在家不容易做的菜。 ★关于春节，可以知道什么？",
-      "options": {
-       "A": "一定要在家吃饭",
-       "B": "是世界上最重要的节日",
-       "C": "历史很长"
-      },
-      "answer": "C",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        187
-       ]
-      }
-     },
-     {
-      "n": 35,
-      "zh": "过去这儿有很多矮小的旧房子，但是这几年都不见了。现在，我们眼前除了高楼以外，还有干净的街道和漂亮的花园，这个地方的变化真是大极了。 ★这个地方现在：",
-      "options": {
-       "A": "有不少老房子",
-       "B": "街道很干净",
-       "C": "没有什么变化"
-      },
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        187
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "三、书写 第一部分",
-    "type_zh": "书写 第一部分",
-    "instruction_zh": "第36–40题：连词成句",
-    "instruction_en": "Questions 36-40: Rearrange the words/phrases to make sentences.",
-    "items": [
-     {
-      "n": "例",
-      "zh": "小船　上　一　河　条　有",
-      "answer": "河上有一条小船。",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        108
-       ]
-      }
-     },
-     {
-      "n": 36,
-      "zh": "笑笑　以外　除了　别人　都　来了",
-      "answer": "除了笑笑以外，别人都来了。",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        187
-       ]
-      }
-     },
-     {
-      "n": 37,
-      "zh": "这个地方　极了　街道　干净　的",
-      "answer": "这个地方的街道干净极了。",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        187
-       ]
-      }
-     },
-     {
-      "n": 38,
-      "zh": "历史　文化　除了　还　我　以外　喜欢",
-      "answer": "除了历史以外，我还喜欢文化。",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        187
-       ]
-      }
-     },
-     {
-      "n": 39,
-      "zh": "什么　有　好看　电影院　电影　吗　的",
-      "answer": "电影院有什么好看的电影吗？",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        187
-       ]
-      }
-     },
-     {
-      "n": 40,
-      "zh": "游泳　除了　我　爬山　愿意　也",
-      "answer": "除了游泳我也愿意爬山。",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        187
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "三、书写 第二部分",
-    "type_zh": "书写 第二部分",
-    "instruction_zh": "第41–45题：看拼音，写汉字",
-    "instruction_en": "Questions 41-45: Write the characters based on their pinyin.",
-    "items": [
-     {
-      "n": "例",
-      "zh": "没（　）系，别难过，高兴点儿。",
-      "hint_zh": "guān",
-      "answer": "关",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        108
-       ]
-      }
-     },
-     {
-      "n": 41,
-      "zh": "马可，你的汉语水平（　）高了不少，老师真为你高兴！",
-      "hint_zh": "tí",
-      "answer": "提",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        187
-       ]
-      }
-     },
-     {
-      "n": 42,
-      "zh": "方朋，这个（　）子是什么意思？我没看明白。",
-      "hint_zh": "jù",
-      "answer": "句",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        187
-       ]
-      }
-     },
-     {
-      "n": 43,
-      "zh": "周经理，以后有什么问题，我可以给您（　）邮件吗？",
-      "hint_zh": "fā",
-      "answer": "发",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        187
-       ]
-      }
-     },
-     {
-      "n": 44,
-      "zh": "快把电视打开，新（　）开始了。",
-      "hint_zh": "wén",
-      "answer": "闻",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        187
-       ]
-      }
-     },
-     {
-      "n": 45,
-      "zh": "你看，（　）道两边都是树，一点儿也不觉得热。",
-      "hint_zh": "jiē",
-      "answer": "街",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        187
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "三、书写 第三部分",
-    "type_zh": "书写 第三部分",
-    "instruction_zh": "第46–50题：辨认汉字，选择正确的汉字填空",
-    "instruction_en": "Questions 46-50: Distinguish the characters and fill in the blanks.",
-    "items": [
-     {
-      "n": "例",
-      "zh": "我不知道________个地方在________儿。",
-      "hint_zh": "（那、哪）",
-      "answer": "那、哪",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        109
-       ]
-      }
-     },
-     {
-      "n": 46,
-      "zh": "你每天除了________习汉语以外，也要锻________身体。",
-      "hint_zh": "（炼、练）",
-      "answer": "练、炼",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        187
-       ]
-      }
-     },
-     {
-      "n": 47,
-      "zh": "大家都过来，我说一下这次篮________比赛的要________！",
-      "hint_zh": "（求、球）",
-      "answer": "球、求",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        187
-       ]
-      }
-     },
-     {
-      "n": 48,
-      "zh": "外边开始刮________了，别出去踢球了，在家上会儿________吧。",
-      "hint_zh": "（网、风）",
-      "answer": "风、网",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        187
-       ]
-      }
-     },
-     {
-      "n": 49,
-      "zh": "在这个重要的节________里，有很多歌舞节________。",
-      "hint_zh": "（目、日）",
-      "answer": "日、目",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        187
-       ]
-      }
-     },
-     {
-      "n": 50,
-      "zh": "弟弟除了喜欢中国文化以外，________对________界文化很感兴趣。",
-      "hint_zh": "（也、世）",
-      "answer": "也、世",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        187
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "四、复习",
-    "type_zh": "复习",
-    "instruction_zh": "第1–2题：根据课文内容填空",
-    "instruction_en": "Questions 1-2: Fill in the blanks based on the texts in the textbook.",
-    "items": [
-     {
-      "n": 1,
-      "zh": "大山来中国________两年了，他觉得自己的汉语________提高得一点儿也不快。昨天的作业，老师觉得他写得不错，________一个句子意思有些不清楚________，________都没什么问题。",
-      "answer": "留学、水平、除了、外、其他",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        187
-       ]
-      }
-     },
-     {
-      "n": 2,
-      "zh": "现在用电脑________真方便。除了看________，人们________可以听歌、看电影、买东西。小刚在网上买了一件衣服，有点儿小，给他弟弟了。不用________，还有新衣服穿，弟弟满意________。",
-      "answer": "上网、新闻、还、花钱、极了",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        187
-       ]
-      }
-     }
-    ]
-   }
-  ],
-  "answers_ref": {
-   "book": "teacher",
-   "pages": [
+    150,
     185,
     186,
     187
-   ]
-  }
- },
- "audio": {
-  "textbook": [
-   "hsk3-textbook-1501.mp3",
-   "hsk3-textbook-1502.mp3",
-   "hsk3-textbook-1503.mp3",
-   "hsk3-textbook-1504.mp3",
-   "hsk3-textbook-1505.mp3"
   ],
-  "workbook": [
-   "hsk3-workbook-15-part1.mp3",
-   "hsk3-workbook-15-part2.mp3",
-   "hsk3-workbook-15-part3.mp3",
-   "hsk3-workbook-15-part4.mp3"
-  ]
- },
- "unclear": [
-  "Сурах бичиг PDF х.143 拼音课文 课文4-ийн сүүлийн өгүүлбэр «Lǎi zhèli de píjiǔ jié kànkan ba.» — ханз 来 (lái) байхад пиньиньд «Lǎi» (3-р өргөлт) хэвлэгдсэн; номд байгаагаар нь lines.pinyin-д «Lǎi» гэж үлдээсэн.",
-  "Сурах бичиг PDF х.143 课文4: ханзан бичвэрт «……不同地方的歌舞。你想不想……» (цэг), 拼音课文-д «……de gēwǔ, nǐ xiǎng bu xiǎng……» (таслал) — lines-ийг ханзан бичвэрийн өгүүлбэрээр хувааж, пиньиньийг номд байгаагаар (4-р мөр таслалаар төгссөн, 5-р мөр жижиг үсгээр эхэлсэн) оноосон. Мөн 拼音课文-д «Chúle hē píjiǔ，» бүтэн өргөнтэй таслалтай хэвлэгдсэнийг хагас өргөнтэй «,» болгосон.",
-  "课文4 номд гарчиггүй (зөвхөн «4» ба аудио 15-4) — title_zh хоосон, title_en байхгүй. Өгүүлэмжийг өгүүлбэр тус бүрээр lines-д хувааж, 拼音课文-ын харгалзах хэсгийг оноосон.",
-  "Сурах бичгийн 拼音课文-ын гарчгийн пиньинь (Zài bàngōngshì / Zài jiàoshì / Zài Xiūxishì — 3-р гарчигт X том үсгээр хэвлэгдсэн) болон ярилцагчийн нэрийн пиньинь (Dàshān, lǎoshī, xuésheng, tóngshì, Xiǎogāng) схемд талбаргүй тул lines.pinyin-д зөвхөн яриаг оруулсан.",
-  "Сурах бичиг PDF х.141 热身2: «英语» пиньинь «yīngyǔ» гэж жижиг үсгээр хэвлэгдсэн (汉语 нь «Hànyǔ») — номд байгаагаар. Хүснэгтийн □ нүдийг «□» тэмдгээр, мөрийг «ангилал | сонголт …» хэлбэрээр оруулсан.",
-  "Сурах бичиг PDF х.145 注释2 练一练：(1) «A: ______。» цэгтэй, (2)(3) «A: ______» цэг таслалгүй хэвлэгдсэн — номд байгаагаар.",
-  "Сурах бичгийн 练一练 (3 дүрэм × 3; 注释1-ийн 例如 хариулт хэвлэгдсэн тул зөвхөн түүнд answer бий), 练习2 选词填空， 练习3 描述图片， 练习4 回答问题， 热身2, 运用1–2 — хариулт сурах бичиг, багшийн номд хэвлэгдээгүй тул answer талбаргүй. Багшийн номын 课文 асуулт-хариулт (teacher.text_questions) нь 练习4-ийн асуултаас өөр.",
-  "Багшийн ном PDF х.108 课文4 (1) «快速阅读，并回答：在啤酒节上可以做什么？» — тусдаа хариултгүй; (2)-ын 3-р асуулт («在啤酒节上可以做什么？») хариулттай давхцана. text_questions-д (1)-ийг a_zh-гүй оруулсан.",
-  "Багшийн ном PDF х.105 语言点1 导入：«教师在黑板上画出……»-ийг зөвхөн текстээр (зураггүй) оруулсан.",
-  "Багшийн номын 汉字辨认练习 (炼/练 · 求/球 · 网/风 · 目/日 · 世/也 — 组词；PDF х.108–109) хоосон зайтай, хариулт хэвлэгдээгүй. Дасгалын номын 46–50 ижил хосуудыг ашигладаг.",
-  "Дасгалын ном PDF х.108 书写 40: хариулт (багшийн ном PDF х.187) «除了游泳我也愿意爬山。» — таслалгүй, «以外»-гүй (үгийн жагсаалтад 以外 байхгүй) — номд байгаагаар.",
-  "Дасгалын номын сонсгол нэг CD тэмдэгтэй (15) — аудиог hsk3-workbook-15-part1…4.mp3 болгож хэсэг тус бүрт хуваасныг section.audio-д оноосон.",
-  "Дасгалын ном 听力 第三/四部分 — номд зөвхөн сонголтууд хэвлэгдсэн; item.zh-д багшийн номын хавсралтын «问：» асуултыг оруулсан (transcript_zh-д бүтнээр). 第一部分 1–5-ын zh хоосон (номд зөвхөн дугаар), бичвэр transcript_zh-д.",
-  "Дасгалын ном 听力 18: сонсголын бичвэрт «这条裙子», асуултад «这件衣服» гэж хэвлэгдсэн — номд байгаагаар.",
-  "Дасгалын номд энэ хичээлд 51–54 (组词) хэсэг байхгүй — нийт 50 асуулт + 复习 2.",
-  "Энэ хичээлд 汉字知识 хэсэг байхгүй (зөвхөн 旧字新词). * тэмдэгтэй үг: 举行 (17), 各 (20). 俗语 болон 文化-ын зургууд (同仁堂 самбартай хаалга; улаан хувцастай хүү гоймон идэж байна) схемд талбаргүй."
- ],
- "verified_pages": [
-  103,
-  104,
-  105,
-  106,
-  107,
-  108,
-  109,
-  141,
-  142,
-  143,
-  144,
-  145,
-  146,
-  147,
-  148,
-  149,
-  150,
-  185,
-  186,
-  187
- ],
- "schema_version": 1
+  "schema_version": 1
 }

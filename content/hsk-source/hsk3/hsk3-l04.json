@@ -1936,6 +1936,110 @@
    }
   ]
  },
+ "hsk30": {
+  "source": "courseware",
+  "ref": {
+   "book": "hsk30_courseware",
+   "pages": [
+    5,
+    6,
+    37
+   ]
+  },
+  "new_words": [
+   {
+    "n": 1,
+    "zh": "得分",
+    "pinyin": "défēng",
+    "pos": "v./n.",
+    "en": "to score/point",
+    "text": 1
+   },
+   {
+    "n": 2,
+    "zh": "男生",
+    "pinyin": "nánshēng",
+    "pos": "n.",
+    "en": "boy",
+    "text": 1
+   },
+   {
+    "n": 3,
+    "zh": "女生",
+    "pinyin": "nǚshēng",
+    "pos": "n.",
+    "en": "girl",
+    "text": 1
+   },
+   {
+    "n": 4,
+    "zh": "男人",
+    "pinyin": "nánrén",
+    "pos": "n.",
+    "en": "man",
+    "text": 1
+   },
+   {
+    "n": 5,
+    "zh": "女人",
+    "pinyin": "nǚrén",
+    "pos": "n.",
+    "en": "woman",
+    "text": 1
+   },
+   {
+    "n": 6,
+    "zh": "运动员",
+    "pinyin": "yùndòngyuán",
+    "pos": "n.",
+    "en": "athlete",
+    "text": 1
+   },
+   {
+    "n": 7,
+    "zh": "球场",
+    "pinyin": "qiúchǎng",
+    "pos": "n.",
+    "en": "court",
+    "text": 1
+   },
+   {
+    "n": 8,
+    "zh": "体育馆",
+    "pinyin": "tǐyùguǎn",
+    "pos": "n.",
+    "en": "gymnasium",
+    "text": 1
+   },
+   {
+    "n": 9,
+    "zh": "运动会",
+    "pinyin": "yùndònghuì",
+    "pos": "n.",
+    "en": "sports meeting",
+    "text": 1
+   },
+   {
+    "n": 10,
+    "zh": "听说",
+    "pinyin": "tīngshuō",
+    "pos": "v.",
+    "en": "hear about",
+    "text": 4
+   },
+   {
+    "n": 11,
+    "zh": "名人",
+    "pinyin": "míngrén",
+    "pos": "n.",
+    "en": "celebrity",
+    "text": 4
+   }
+  ],
+  "grammar": [],
+  "exercises": [],
+  "unclear": []
+ },
  "audio": {
   "textbook": [
    "hsk3-textbook-0401.mp3",
@@ -1967,7 +2071,8 @@
   "Сонсгол 第一部分-ийн A–F сонголт нь зураг (номд текстгүй) — options-д объектив англи тайлбар «[picture] …»; сурах бичгийн 热身 болон 练习3-ын зураг ч мөн адил pictures_desc_en / picture_desc_en-д.",
   "Дасгалын ном 听力 第三/四部分 — номд зөвхөн сонголтууд хэвлэгдсэн; item.zh-д багшийн номын хавсралтын «问：» асуултыг оруулсан (transcript_zh-д бүтнээр).",
   "Дасгалын номын 例如 зүйлсийн хариулт (D / √ / × / A / C / E / E / C / 河上有一条小船。 / 关 / 那、哪) дасгалын номд өөрт нь хэвлэгдсэн (answer_ref = workbook).",
-  "Сурах бичгийн 运用2 (小组活动)-ын зураг (ширээ тойрон хоол идэж буй гэр бүл) application-д зургийн талбар байхгүй тул оруулаагүй."
+  "Сурах бичгийн 运用2 (小组活动)-ын зураг (ширээ тойрон хоол идэж буй гэр бүл) application-д зургийн талбар байхгүй тул оруулаагүй.",
+  "HSK 3.0 нэмэлт үгс (BLCUP 课件 补充HSK3.0, слайд 5、6、37) hsk30-д"
  ],
  "verified_pages": [
   26,

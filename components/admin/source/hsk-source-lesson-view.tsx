@@ -2,6 +2,7 @@ import type {
   HskSourceLesson,
   SourceExercise,
   SourceExerciseItem,
+  SourceGrammarPoint,
 } from "@/types/hsk-source-lesson";
 
 /** Эх сурвалжийг номд байгаагаар нь харуулна — засварлахгүй, орчуулахгүй. */
@@ -58,6 +59,37 @@ function ExerciseItem({ it }: { it: SourceExerciseItem }) {
         </div>
       </div>
     </li>
+  );
+}
+
+
+function GrammarPoint({ g }: { g: SourceGrammarPoint }) {
+  return (
+    <Details title={`${g.n}. ${g.title_zh} ${g.title_en ? `· ${g.title_en}` : ""}`} open>
+      <p className="whitespace-pre-line text-slate-800">{g.explanation_zh}</p>
+      {g.structure_rows?.length ? (
+        <pre className="hanzi overflow-x-auto rounded bg-slate-100 p-2 text-sm">{g.structure_rows.join("\n")}</pre>
+      ) : null}
+      <ol className="space-y-0.5">
+        {g.examples.map((e, i) => (
+          <li key={i} className="hanzi text-base">
+            {e.n != null ? `(${e.n}) ` : ""}
+            {e.zh}
+            {e.note_zh ? <span className="text-xs text-slate-500">　（{e.note_zh}）</span> : null}
+          </li>
+        ))}
+      </ol>
+      {g.practice?.length ? (
+        <div>
+          <p className="text-xs font-semibold text-slate-600">{g.practice_instruction_zh ?? "练一练"}</p>
+          <ul className="space-y-1">
+            {g.practice.map((it, i) => (
+              <ExerciseItem key={i} it={it} />
+            ))}
+          </ul>
+        </div>
+      ) : null}
+    </Details>
   );
 }
 
@@ -305,6 +337,76 @@ export function HskSourceLessonView({ data }: { data: HskSourceLesson }) {
             {data.workbook.sections.map((ex, i) => (
               <Exercise key={i} ex={ex} />
             ))}
+          </div>
+        </Section>
+      ) : null}
+
+
+      {data.hsk30 ? (
+        <Section
+          title={`HSK 3.0 нэмэлт · ${data.hsk30.source === "upgrade_handbook" ? "升级学练手册" : "课件（补充HSK3.0内容）"} ${data.hsk30.ref.book} ${data.hsk30.source === "upgrade_handbook" ? "х." : "слайд"} ${data.hsk30.ref.pages.join(", ")}`}
+        >
+          <div className="space-y-3">
+            {data.hsk30.new_words.length ? (
+              <table className="w-full text-sm">
+                <tbody>
+                  {data.hsk30.new_words.map((w) => (
+                    <tr key={w.n} className="border-b border-slate-100 align-top">
+                      <td className="w-8 py-1 text-slate-400">{w.n}</td>
+                      <td className="hanzi py-1 text-lg">{w.zh}</td>
+                      <td className="py-1 text-slate-600">{w.pinyin}</td>
+                      <td className="py-1 text-xs text-slate-500">{w.pos ?? ""}</td>
+                      <td className="py-1">
+                        {w.en}
+                        {w.explanation_zh ? <div className="hanzi text-xs text-slate-500">{w.explanation_zh}</div> : null}
+                        {w.examples?.length ? (
+                          <ul className="hanzi text-xs text-slate-600">
+                            {w.examples.map((e, i) => (
+                              <li key={i}>{e.zh}</li>
+                            ))}
+                          </ul>
+                        ) : null}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            ) : null}
+            {data.hsk30.grammar.map((g) => (
+              <GrammarPoint key={g.n} g={g} />
+            ))}
+            {data.hsk30.exercises.map((ex, i) => (
+              <Exercise key={i} ex={ex} />
+            ))}
+            {data.hsk30.speaking ? (
+              <Details title="说一说" open>
+                <p className="text-sm text-slate-700">{data.hsk30.speaking.instruction_zh}</p>
+                <ol className="hanzi list-decimal pl-5">
+                  {data.hsk30.speaking.questions.map((q, i) => (
+                    <li key={i}>{q}</li>
+                  ))}
+                </ol>
+                {data.hsk30.speaking.model_answer_zh ? (
+                  <p className="hanzi whitespace-pre-line rounded bg-emerald-50 p-2 text-sm">{data.hsk30.speaking.model_answer_zh}</p>
+                ) : null}
+              </Details>
+            ) : null}
+            {data.hsk30.writing ? (
+              <Details title="写一写" open>
+                <p className="text-sm text-slate-700">{data.hsk30.writing.instruction_zh}</p>
+                <p className="hanzi">{data.hsk30.writing.prompt_zh}</p>
+                {data.hsk30.writing.model_essay_zh ? (
+                  <p className="hanzi whitespace-pre-line rounded bg-emerald-50 p-2 text-sm">{data.hsk30.writing.model_essay_zh}</p>
+                ) : null}
+              </Details>
+            ) : null}
+            {data.hsk30.unclear?.length ? (
+              <ul className="list-disc pl-5 text-xs text-slate-500">
+                {data.hsk30.unclear.map((u, i) => (
+                  <li key={i}>{u}</li>
+                ))}
+              </ul>
+            ) : null}
           </div>
         </Section>
       ) : null}

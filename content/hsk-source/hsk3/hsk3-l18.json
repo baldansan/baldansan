@@ -1,14 +1,1935 @@
 {
- "level": "hsk3",
- "lesson": 18,
- "book": "HSK3",
- "title_zh": "我相信他们会同意的",
- "title_pinyin": "Wǒ xiāngxìn tāmen huì tóngyì de",
- "title_en": "I believe they’ll agree",
- "textbook": {
-  "ref": {
-   "book": "textbook",
-   "pages": [
+  "level": "hsk3",
+  "lesson": 18,
+  "book": "HSK3",
+  "title_zh": "我相信他们会同意的",
+  "title_pinyin": "Wǒ xiāngxìn tāmen huì tóngyì de",
+  "title_en": "I believe they’ll agree",
+  "textbook": {
+    "ref": {
+      "book": "textbook",
+      "pages": [
+        167,
+        168,
+        169,
+        170,
+        171,
+        172,
+        173,
+        174
+      ]
+    },
+    "warmup": [
+      {
+        "instruction_zh": "给下面的词语选择对应的图片",
+        "instruction_en": "Match the pictures with the words.",
+        "items": [
+          "①动物 dòngwù",
+          "②国家 guójiā",
+          "③同意 tóngyì",
+          "④相信 xiāngxìn",
+          "⑤奇怪 qíguài",
+          "⑥万 wàn"
+        ],
+        "pictures_desc_en": [
+          "A: rows of many national flags arranged in a grid",
+          "B: a hand making the “OK” sign with thumb and index finger",
+          "C: a crowd of animals (elephant, bears, polar bear, zebra, giraffe, etc.) standing together on grass",
+          "D: a hand holding the yellow number “10000” (the first “1”, partly covered by the hand, looks like a “7”)",
+          "E: a tall, oddly shaped stone pillar among rock formations",
+          "F: many raised hands holding up red letters spelling “BELIEVE” against the sky"
+        ]
+      },
+      {
+        "instruction_zh": "连线：把原因和结果连起来",
+        "instruction_en": "Draw lines to match the reasons with the results.",
+        "items": [
+          "原因 yuányīn | 结果 jiéguǒ",
+          "穿得很少 chuān de hěn shǎo | 迟到 chídào",
+          "起床太晚 qǐ chuáng tài wǎn | 老师生气 lǎoshī shēng qì",
+          "不吃早饭 bù chī zǎofàn | 感冒 gǎnmào",
+          "不复习 bú fùxí | 牙疼 yá téng",
+          "不来上课 bù lái shàng kè | 饿 è",
+          "不刷牙 bù shuā yá | 考得不好 kǎo de bù hǎo"
+        ]
+      }
+    ],
+    "texts": [
+      {
+        "n": 1,
+        "title_zh": "在打电话",
+        "title_en": "On the phone",
+        "kind": "dialogue",
+        "audio": "hsk3-textbook-1801.mp3",
+        "lines": [
+          {
+            "speaker": "朋友",
+            "zh": "老周，我打算买房子了，想向你借点儿钱。",
+            "pinyin": "Lǎo Zhōu, wǒ dǎsuàn mǎi fángzi le, xiǎng xiàng nǐ jiè diǎnr qián."
+          },
+          {
+            "speaker": "周明",
+            "zh": "没问题，只要我有，就一定会借给你的。还差多少？",
+            "pinyin": "Méi wèntí, zhǐyào wǒ yǒu, jiù yídìng huì jiè gěi nǐ de. Hái chà duōshao?"
+          },
+          {
+            "speaker": "朋友",
+            "zh": "还差5万块钱。",
+            "pinyin": "Hái chà wǔ wàn kuài qián."
+          },
+          {
+            "speaker": "周明",
+            "zh": "好，钱下午打给你。你打算在哪儿买房？",
+            "pinyin": "Hǎo, qián xiàwǔ dǎ gěi nǐ. Nǐ dǎsuàn zài nǎr mǎi fáng?"
+          },
+          {
+            "speaker": "朋友",
+            "zh": "就在我们医院前面。",
+            "pinyin": "Jiù zài wǒmen yīyuàn qiánmian."
+          },
+          {
+            "speaker": "周明",
+            "zh": "那你以后去医院就方便了。",
+            "pinyin": "Nà nǐ yǐhòu qù yīyuàn jiù fāngbiàn le."
+          }
+        ],
+        "new_words": [
+          {
+            "n": 1,
+            "zh": "向",
+            "pinyin": "xiàng",
+            "pos": "prep.",
+            "en": "towards",
+            "text": 1
+          },
+          {
+            "n": 2,
+            "zh": "万",
+            "pinyin": "wàn",
+            "pos": "num.",
+            "en": "ten thousand",
+            "text": 1
+          }
+        ]
+      },
+      {
+        "n": 2,
+        "title_zh": "在商店",
+        "title_en": "In a store",
+        "kind": "dialogue",
+        "audio": "hsk3-textbook-1802.mp3",
+        "lines": [
+          {
+            "speaker": "小明",
+            "zh": "妈妈，你看那只狗多可爱，眼睛大大的，嘴小小的，我们买回去吧。",
+            "pinyin": "Māma, nǐ kàn nà zhī gǒu duō kě’ài, yǎnjing dàdà de, zuǐ xiǎoxiǎo de, wǒmen mǎi huiqu ba."
+          },
+          {
+            "speaker": "妈妈",
+            "zh": "动物和小孩儿一样，都需要人照顾。买回家去，谁照顾它啊？",
+            "pinyin": "Dòngwù hé xiǎoháir yíyàng, dōu xūyào rén zhàogù. Mǎi hui jiā qu, shéi zhàogù tā a?"
+          },
+          {
+            "speaker": "小明",
+            "zh": "我照顾啊。",
+            "pinyin": "Wǒ zhàogù a."
+          },
+          {
+            "speaker": "妈妈",
+            "zh": "这段时间你自己的衣服都没洗，你能照顾好它吗？",
+            "pinyin": "Zhè duàn shíjiān nǐ zìjǐ de yīfu dōu méi xǐ, nǐ néng zhàogù hǎo tā ma?"
+          },
+          {
+            "speaker": "小明",
+            "zh": "只要你给我买，我就能照顾好它。",
+            "pinyin": "Zhǐyào nǐ gěi wǒ mǎi, wǒ jiù néng zhàogù hǎo tā."
+          }
+        ],
+        "new_words": [
+          {
+            "n": 3,
+            "zh": "只",
+            "pinyin": "zhī",
+            "pos": "m.",
+            "en": "used for certain animals",
+            "text": 2
+          },
+          {
+            "n": 4,
+            "zh": "嘴",
+            "pinyin": "zuǐ",
+            "pos": "n.",
+            "en": "mouth",
+            "text": 2
+          },
+          {
+            "n": 5,
+            "zh": "动物",
+            "pinyin": "dòngwù",
+            "pos": "n.",
+            "en": "animal",
+            "text": 2
+          },
+          {
+            "n": 6,
+            "zh": "段",
+            "pinyin": "duàn",
+            "pos": "m.",
+            "en": "used for sections or periods",
+            "text": 2
+          }
+        ]
+      },
+      {
+        "n": 3,
+        "title_zh": "在公司",
+        "title_en": "In the company",
+        "kind": "dialogue",
+        "audio": "hsk3-textbook-1803.mp3",
+        "lines": [
+          {
+            "speaker": "经理",
+            "zh": "说说你为什么选择来我们公司工作。",
+            "pinyin": "Shuōshuo nǐ wèi shénme xuǎnzé lái wǒmen gōngsī gōngzuò."
+          },
+          {
+            "speaker": "学生",
+            "zh": "贵公司不但很有名，而且工作环境好。",
+            "pinyin": "Guì gōngsī búdàn hěn yǒumíng, ěrqiě gōngzuò huánjìng hǎo."
+          },
+          {
+            "speaker": "经理",
+            "zh": "做这个工作有点儿累，需要经常去外地。你家人同意吗？",
+            "pinyin": "Zuò zhège gōngzuò yǒudiǎnr lèi, xūyào jīngcháng qù wàidì. Nǐ jiārén tóngyì ma?"
+          },
+          {
+            "speaker": "学生",
+            "zh": "只要我愿意，我相信他们就会同意的。",
+            "pinyin": "Zhǐyào wǒ yuànyì, wǒ xiāngxìn tāmen jiù huì tóngyì de."
+          },
+          {
+            "speaker": "经理",
+            "zh": "好，那你明天来上班吧。关于这个工作，还有什么问题吗？",
+            "pinyin": "Hǎo, nà nǐ míngtiān lái shàng bān ba. Guānyú zhège gōngzuò, hái yǒu shénme wèntí ma?"
+          },
+          {
+            "speaker": "学生",
+            "zh": "没有了，谢谢您给我这个机会，我会努力的。",
+            "pinyin": "Méiyǒu le, xièxie nín gěi wǒ zhège jīhuì, wǒ huì nǔlì de."
+          }
+        ],
+        "new_words": [
+          {
+            "n": 7,
+            "zh": "不但……而且……",
+            "pinyin": "búdàn……ěrqiě……",
+            "pos": "conj.",
+            "en": "not only… but also…",
+            "text": 3
+          },
+          {
+            "n": 8,
+            "zh": "有名",
+            "pinyin": "yǒumíng",
+            "pos": "adj.",
+            "en": "famous",
+            "text": 3
+          },
+          {
+            "n": 9,
+            "zh": "同意",
+            "pinyin": "tóngyì",
+            "pos": "v.",
+            "en": "to agree",
+            "text": 3
+          },
+          {
+            "n": 10,
+            "zh": "相信",
+            "pinyin": "xiāngxìn",
+            "pos": "v.",
+            "en": "to believe",
+            "text": 3
+          },
+          {
+            "n": 11,
+            "zh": "关于",
+            "pinyin": "guānyú",
+            "pos": "prep.",
+            "en": "about, regarding",
+            "text": 3
+          },
+          {
+            "n": 12,
+            "zh": "机会",
+            "pinyin": "jīhuì",
+            "pos": "n.",
+            "en": "opportunity",
+            "text": 3
+          }
+        ]
+      },
+      {
+        "n": 4,
+        "title_zh": "",
+        "kind": "narrative",
+        "audio": "hsk3-textbook-1804.mp3",
+        "lines": [
+          {
+            "zh": "不同的国家有不同的文化，每种文化都有自己的特点。",
+            "pinyin": "Bùtóng de guójiā yǒu bùtóng de wénhuà, měi zhǒng wénhuà dōu yǒu zìjǐ de tèdiǎn."
+          },
+          {
+            "zh": "到了一个新环境，你会觉得什么都很新鲜，而且还会觉得有点奇怪：有些国家的人名写在姓前面，有些国家的人名写在姓后面，但是只要经过一段时间，就会慢慢地习惯。",
+            "pinyin": "Dàole yí ge xīn huánjìng, nǐ huì juéde shénme dōu hěn xīnxiān, érqiě hái huì juéde yǒudiǎnr qíguài: yǒuxiē guójiā de rénmíng xiě zài xìng qiánmiàn, yǒuxiē guójiā de rénmíng xiě zài xìng hòumiàn, dànshì zhǐyào jīngguò yí duàn shíjiān, jiù huì mànman de xíguàn."
+          }
+        ],
+        "new_words": [
+          {
+            "n": 13,
+            "zh": "国家",
+            "pinyin": "guójiā",
+            "pos": "n.",
+            "en": "country, nation",
+            "text": 4
+          },
+          {
+            "n": 14,
+            "zh": "种",
+            "pinyin": "zhǒng",
+            "pos": "m.",
+            "en": "kind, type",
+            "text": 4
+          },
+          {
+            "n": 15,
+            "zh": "特点",
+            "pinyin": "tèdiǎn",
+            "pos": "n.",
+            "en": "feature",
+            "star": true,
+            "text": 4
+          },
+          {
+            "n": 16,
+            "zh": "奇怪",
+            "pinyin": "qíguài",
+            "pos": "adj.",
+            "en": "strange, odd",
+            "text": 4
+          },
+          {
+            "n": 17,
+            "zh": "地",
+            "pinyin": "de",
+            "pos": "part.",
+            "en": "used to connect an adverbial modifier and the verb it modifies",
+            "text": 4
+          }
+        ]
+      }
+    ],
+    "grammar": [
+      {
+        "n": 1,
+        "title_zh": "只要……就……",
+        "title_en": "The Structure “只要……，就……”",
+        "explanation_zh": "“只要……就……”连接的是一个条件复句，“只要”后边是必要条件，“就”后边是其结果。主语可以放在“只要”前，也可以放在“只要”后。如果有第二个主语，要放在“就”的前边。例如：",
+        "explanation_en": "“只要……，就……” is used to connect the two clauses of a conditional complex sentence, with “只要” introducing a necessary condition and “就” followed by the consequent result. The subject can be put before or after “只要”. If there is a second subject in the sentence, it is put right before “就”. For example:",
+        "examples": [
+          {
+            "n": 1,
+            "zh": "只要我有时间，就一定跟你去旅游。"
+          },
+          {
+            "n": 2,
+            "zh": "我只要喜欢，就一定会买。"
+          },
+          {
+            "n": 3,
+            "zh": "只要你想去，我就跟你去。"
+          },
+          {
+            "n": 4,
+            "zh": "只要你给我买，我就能照顾好它。"
+          }
+        ],
+        "practice_instruction_zh": "练一练　完成对话 Complete the dialogues.",
+        "practice": [
+          {
+            "n": 1,
+            "zh": "A：你对大家都这么好啊？ B：是啊！我觉得只要我对别人好，________。"
+          },
+          {
+            "n": 2,
+            "zh": "A：妈妈，你来跟我们一起玩儿吧。 B：你们玩儿吧，只要你们玩儿得高兴，________。"
+          },
+          {
+            "n": 3,
+            "zh": "A：只要你努力学习，________。 B：老师，我一定会努力的。"
+          }
+        ]
+      },
+      {
+        "n": 2,
+        "title_zh": "介语“关于”",
+        "title_en": "The Preposition “关于”",
+        "explanation_zh": "“关于”后边接名词，引出涉及的对象。例如：",
+        "explanation_en": "“关于” is used before a noun, introducing the object to be talked about. For example:",
+        "examples": [
+          {
+            "n": 1,
+            "zh": "我最近看了一些关于中国文化的电影。"
+          },
+          {
+            "n": 2,
+            "zh": "关于这件事，我们还没有决定呢。"
+          },
+          {
+            "n": 3,
+            "zh": "关于出国学习的事，妈妈已经同意了。"
+          },
+          {
+            "n": 4,
+            "zh": "关于这个工作，还有什么问题吗？"
+          }
+        ],
+        "practice_instruction_zh": "练一练　完成句子 Complete the sentences.",
+        "practice": [
+          {
+            "n": 1,
+            "zh": "我想去图书馆借一些________的书。"
+          },
+          {
+            "n": 2,
+            "zh": "今天没有时间回答了，________，我下次告诉你吧。"
+          },
+          {
+            "n": 3,
+            "zh": "你去问问体育老师吧，他能告诉你一些________的方法。"
+          }
+        ]
+      }
+    ],
+    "exercises": [
+      {
+        "n": 1,
+        "type_zh": "朗读",
+        "instruction_zh": "朗读下列短语和句子",
+        "instruction_en": "Read the following phrases and sentences aloud.",
+        "audio": "hsk3-textbook-1805.mp3",
+        "items": [
+          {
+            "n": 1,
+            "zh": "动物：一只动物／小动物／喜欢动物／动物和小孩儿一样，都需要人照顾。"
+          },
+          {
+            "n": 2,
+            "zh": "同意：不同意／他同意了／他不同意这件事／你家人同意吗？"
+          },
+          {
+            "n": 3,
+            "zh": "机会：有机会／工作机会／学习机会／谢谢您给我这个机会。"
+          },
+          {
+            "n": 4,
+            "zh": "种：一种文化／这种药／你喜欢喝哪种茶／每种文化都有自己的特点。"
+          },
+          {
+            "n": 5,
+            "zh": "地：认真地学习／着急地说／热情地回答／只要经过一段时间，就会慢慢地习惯的。"
+          }
+        ]
+      },
+      {
+        "n": 2,
+        "type_zh": "选词填空",
+        "instruction_zh": "选择恰当的词语填空",
+        "instruction_en": "Choose the proper words to fill in the blanks.",
+        "word_bank": [
+          [
+            "动物",
+            "国家",
+            "地",
+            "向",
+            "而且"
+          ],
+          [
+            "机会",
+            "同意",
+            "段",
+            "关于",
+            "奇怪"
+          ]
+        ],
+        "items": [
+          {
+            "n": 1,
+            "zh": "你是从哪个________来的？"
+          },
+          {
+            "n": 2,
+            "zh": "坐火车的时候，我喜欢________外看。"
+          },
+          {
+            "n": 3,
+            "zh": "你最喜欢什么________？"
+          },
+          {
+            "n": 4,
+            "zh": "这家饭馆不但菜很好吃，________环境很好。"
+          },
+          {
+            "n": 5,
+            "zh": "小孩子喜欢快乐________学习。"
+          },
+          {
+            "n": 6,
+            "zh": "A：你打算现在买房子吗？ B：过一________时间以后再说吧。"
+          },
+          {
+            "n": 7,
+            "zh": "A：你怎么要去北京了？ B：那儿的工作________比较多。"
+          },
+          {
+            "n": 8,
+            "zh": "A：真________，桌子上的词典怎么不见了？ B：刚才马可拿走了。"
+          },
+          {
+            "n": 9,
+            "zh": "A：你给我介绍几个________中国文化的电影吧。 B：好，没问题。"
+          },
+          {
+            "n": 10,
+            "zh": "A：我觉得这儿的房子挺便宜的，我们在这儿买吧。 B：我不________，虽然很便宜，但是离公司太远了。"
+          }
+        ]
+      },
+      {
+        "n": 3,
+        "type_zh": "描述图片",
+        "instruction_zh": "用本课新学的语言点和词语描述图片",
+        "instruction_en": "Describe the pictures using the newly-learned language points and words.",
+        "items": [
+          {
+            "n": 1,
+            "zh": "A：最近这________时间，你总是迟到。 B：我也不想迟到，但是家太远了。 A：你只要早起一点儿，________。 B：好，我________我会________习惯的。",
+            "picture_desc_en": "A woman in glasses and a dark suit standing in front of a blackboard, pointing angrily with her arm stretched out."
+          },
+          {
+            "n": 2,
+            "zh": "A：你喜欢看哪种电影？ B：只要是________，我就喜欢。 A：我家有很多关于________的电影光盘。 B：太好了，那你借给我一些吧。",
+            "picture_desc_en": "Two smiling young women sitting on a red sofa, one holding a laptop."
+          },
+          {
+            "n": 3,
+            "zh": "A：周末我们去哪儿玩儿？ B：________，我们就去爬山。 A：好啊，这________时间太忙了，忙得没有________锻炼。 B：经常爬山对身体好。",
+            "picture_desc_en": "Several people with backpacks climbing up a rocky mountain top."
+          },
+          {
+            "n": 4,
+            "zh": "A：你还没有吃饱啊？ B：只要东西好吃，________。 A：你吃得这么多，小心会________的。 B：________这个问题，我不担心，因为我已经有男朋友了。",
+            "picture_desc_en": "A laughing woman with her mouth open holding up a piece of sushi with chopsticks, a plate of sushi in her other hand."
+          }
+        ]
+      },
+      {
+        "n": 4,
+        "type_zh": "回答问题",
+        "instruction_zh": "根据课文回答问题",
+        "instruction_en": "Answer the questions according to the texts.",
+        "items": [
+          {
+            "n": 1,
+            "zh": "朋友为什么要跟周明借钱？"
+          },
+          {
+            "n": 2,
+            "zh": "小明想买什么？为什么？"
+          },
+          {
+            "n": 3,
+            "zh": "小明的妈妈同意小明的要求了吗？"
+          },
+          {
+            "n": 4,
+            "zh": "学生愿意来这个公司工作吗？为什么？"
+          },
+          {
+            "n": 5,
+            "zh": "经理觉得这个工作怎么样？"
+          },
+          {
+            "n": 6,
+            "zh": "为什么有的人到了一个新环境会觉得有些奇怪？"
+          }
+        ]
+      }
+    ],
+    "characters": {
+      "knowledge_title_zh": "旧字新词",
+      "knowledge_zh": "读读下面的词语，想想组成的新词是什么意思。",
+      "knowledge_en": "Read the following words and guess the meanings of the newly-formed ones.",
+      "word_game": [
+        {
+          "parts": [
+            "动物",
+            "公园"
+          ],
+          "result": "动物园"
+        },
+        {
+          "parts": [
+            "人",
+            "名字"
+          ],
+          "result": "人名"
+        },
+        {
+          "parts": [
+            "自己",
+            "相信"
+          ],
+          "result": "自信"
+        }
+      ],
+      "confusable_pairs": [
+        [
+          "于",
+          "干"
+        ],
+        [
+          "种",
+          "和"
+        ],
+        [
+          "万",
+          "方"
+        ],
+        [
+          "机",
+          "几"
+        ],
+        [
+          "且",
+          "自"
+        ]
+      ]
+    },
+    "application": [
+      {
+        "title_zh": "双人活动",
+        "instruction_zh": "两人一组，互相调查对方的情况，完成调查表。",
+        "instruction_en": "Work in pairs. Make a survey of your partner and fill in the questionnaire.",
+        "example_zh": [
+          "表格：| | 问 | 答 |",
+          "| 1 | 你了解中国历史吗？ | 关于中国历史，我了解得不多。 |",
+          "| 2 | 你了解中国电影吗？ | |",
+          "| 3 | 你了解中国音乐吗？ | |",
+          "| 4 | 你了解中国人的生活习惯吗？ | |",
+          "| 5 | 你了解中国的节日吗？ | |",
+          "| 6 | 你了解中国汉字文化吗？ | |"
+        ]
+      },
+      {
+        "title_zh": "小组活动",
+        "instruction_zh": "3～4人一组，一个人说说自己现在的烦恼，另外几个人帮他出出主意。用“只要……，就……”结构。",
+        "instruction_en": "Work in groups of 3-4. One talks about one of his/her current worries, and the others give some advice using “只要……，就……”.",
+        "example_zh": [
+          "例如：A：我现在身体不太好，常常感冒。",
+          "B：只要你常去锻炼，身体就会慢慢好的。",
+          "C：只要你注意休息，身体就会很好。",
+          "D：只要你早睡早起，身体就会好的。"
+        ]
+      }
+    ],
+    "saying": {
+      "zh": "见怪不怪",
+      "pinyin": "Jiàn guài bú guài",
+      "en": "One has become inured to the unusual",
+      "explanation_zh": "“见怪不怪”，这里第一个“怪”是名词，意思是奇怪的事物，第二个“怪”是动词，意思是感到奇怪。这句话的意思是奇怪的事物看得多了，习惯了，也就不觉得奇怪了。",
+      "explanation_en": "The first “怪” in the saying “见怪不怪” is a noun meaning something strange, and the second “怪” is a verb meaning feeling strange. The saying means that one has seen too many unusual things to be surprised by any."
+    }
+  },
+  "teacher": {
+    "ref": {
+      "book": "teacher",
+      "pages": [
+        124,
+        125,
+        126,
+        127,
+        128,
+        129
+      ]
+    },
+    "objectives_zh": [
+      "重点词语：学生能够熟练掌握：“向、只、段、同意、相信、关于、机会、种、奇怪、地”的词义和用法",
+      "语言点：学生能够了解并掌握：（1）“只要……就……”表示条件和结果（2）“关于”引出涉及的对象",
+      "汉字：学生能够：根据已学生词猜测出3个旧字新词“动物园、人名、自信”的意思",
+      "功能：学生能够：（1）用“只要……就……”表示必要条件和结果（2）用“关于”引出涉及的对象"
+    ],
+    "steps": [
+      {
+        "title_zh": "复习旧课",
+        "body_zh": "1 教师展示第17课的热身图片，请学生根据图片说出生词。\n2 教师根据第17课的内容进行提问。\n（1）你请过假吗？因为什么请假？请了几天假？\n（2）有什么事儿你没做过，但是想做？\n（3）你喜欢运动吗？你每天怎么锻炼？\n（4）你喜欢吃什么菜？说说你为什么喜欢吃。\n（5）你们国家有什么有名的地方吗？大家都知道这些地方吗？"
+      },
+      {
+        "title_zh": "学习新课 1 热身",
+        "body_zh": "热身1：学生两人一组，合作完成热身1；教师出示热身1的图片，学生根据图片说出词语，核对答案；最后全体学生齐读热身环节所有词语，要求语音标准，声调准确。\n答案：①C　②A　③B　④F　⑤E　⑥D\n热身2：可留至语言点（1）“只要……就……”导入时使用。"
+      },
+      {
+        "title_zh": "2 生词",
+        "body_zh": "（1）生词快速认读及正音\n向、万、只、嘴、动物、段、不但……而且……、有名、同意、相信、关于、机会、国家、种、特点、奇怪、地\n· 教师先带领学生快速认读一遍生词；\n· 取消拼音，带领学生再次认读；\n· 请单个学生独自认读2-3个生词；\n· 最后全班一起快速认读所有的生词。\n（2）生词讲解方式\n· 直观法（如图片、照片、实物等）展示：万、嘴、动物、国家\n· 启发式引导：不但……而且……、有名\n教师给出句子部分内容让学生进行补充，如：\n我常常吃中国菜，因为中国菜不但很好吃，而且很便宜。\n（3）重点生词扩展及常用搭配\n向—向朋友问好—向你借钱—你会向别人借钱吗？\n只—一只狗—一只小猫—树上站着两只小鸟。\n段—一段时间—这段时间—前一段时间，我病了。\n同意—同意了—不同意—爸爸同意我去中国学习汉语。\n相信—相信朋友—不相信—我相信他们会同意的。\n　—你要相信自己，一定能完成这个工作。\n关于—关于中国—关于朋友—关于你的工作，我们会帮你的。\n机会—有机会—没有机会—工作机会—北京有很多工作机会。\n种—一种花—这种苹果—每种文化都有自己的特点。\n奇怪—很奇怪—我很奇怪，他为什么不生气。\n　—不奇怪—在我们这儿，每个人都会骑马，一点儿也不奇怪。\n地—高兴地说—很快地吃完了—我慢慢地习惯了北京的生活。\n练习册相关练习：第121页／一／第一部分，第124页／二／第二部分"
+      },
+      {
+        "title_zh": "3 语言点（1）只要……就……",
+        "body_zh": "① 语言点解析\n“只要……就……”连接的是一个条件复句，“只要”后边是必要条件，“就”后边是其结果。\n② 语言点导入\n教师可利用本课热身2的表格导入语言点。\n教师带领学生认读表格中的词语。\n教师示范：\n教师：什么时候你会出去玩儿？\n学生：天气好的时候，我会出去玩儿。\n教师引导学生说出目标句：只要天气好，我就出去玩儿。\n③ 语言点操练\n教师利用热身2，让学生互相询问并回答。\n注意：主语可以放在“只要”前，也可以放在“只要”后，如果后边的分句有第二个主语，要放在“就”的前边。"
+      },
+      {
+        "title_zh": "3 语言点（2）“关于”",
+        "body_zh": "① 语言点解析\n“关于”后边接名词，引出涉及的对象。\n［关于＋对象］\n② 语言点导入\n教师给出情景，引发学生思考，引导学生理解并说出目标句。\n情景：我看了一个中国电影，这个电影是讲中国历史的。\n目标句：我看了一个关于中国历史的电影。\n③ 语言点操练\n教师给出词组，请学生说句子：\n这件事，我不知道—关于这件事，我不知道。\n看了一本书，中国文化—我看了一本关于中国文化的书。\n学习汉语，介绍方法—老师给我们介绍了一些关于学习汉语的方法。\n出国的事，爸爸同意了—关于出国的事，爸爸已经同意了。\n④ 语言点扩展练习\n教师提问，让学生根据实际情况回答。\n你喜欢看什么书？\n你常常看什么电影？\n你以后想做什么样的工作？"
+      },
+      {
+        "title_zh": "4 课文 课文1",
+        "body_zh": "（1）让学生听两遍录音并回答下列问题：\n朋友为什么向老周借钱？——他打算买房子。\n朋友要借多少钱？——他要借5万块钱。\n朋友打算在哪儿买房？——他打算在医院前面买房。\n（2）教师领读课文两遍，让学生分角色朗读课文，注意说话人的语气。\n（3）模仿练习\n学生两人一组，根据提示词模仿课文内容进行对话练习。\nA：……，我打算……，想……。\nB：没问题，只要……，就……。还……？\nA：还……。\nB：好，我下午……。你打算……？\nA：就……。\nB：那……。"
+      },
+      {
+        "title_zh": "4 课文 课文2",
+        "body_zh": "（1）让学生听两遍录音并回答下列问题：\n男的（小明）要买什么回去？——他想买回去一只狗。\n妈妈同意吗？为什么？——不同意，她觉得小明不会照顾它。\n妈妈为什么这样觉得？——这段时间小明自己的衣服都没洗，所以不能照顾好小狗。\n（2）教师领读课文两遍，让学生分角色朗读课文。\n（3）模仿练习\n学生两人一组，根据提示词模仿课文内容进行对话练习。\nA：……，你看那只……多……，……，我们……？\nB：动物和……，都……。……，谁……？\nA：我……。\nB：这段时间……，你能……？\nA：只要……，我就……。"
+      },
+      {
+        "title_zh": "4 课文 课文3",
+        "body_zh": "（1）让学生听两遍录音并回答下列问题：\n男的为什么选择这个公司？——这个公司不但很有名，而且工作环境好。\n女的说这个工作怎么样？——做这个工作有点儿累，需要经常去外地。\n男的什么时候去上班？——他明天去上班。\n（2）教师领读课文两遍，让学生分角色朗读课文，注意说话人的语气。\n（3）教师给提示词，带领学生复述课文。\n提示词：选择、不但……而且……、有名、环境、累、外地、同意、愿意"
+      },
+      {
+        "title_zh": "4 课文 课文4",
+        "body_zh": "（1）快速阅读，并回答：不同国家的文化有什么特点？\n（2）教师领读课文两遍，并回答下列问题：\n到了一个新环境，你会觉得怎么样？——会觉得什么都很新鲜，而且还会有点儿奇怪。\n到了一个新环境，人们会习惯吗？——到了一个新环境，经过一段时间就会慢慢习惯的。\n（3）教师给提示词，带领学生复述课文。\n提示词：国家、文化、特点、新鲜、奇怪、人名、姓、经过\n（4）教师请学生根据课文，说说自己国家的一个文化特点。\n练习册相关练习：第127页／四"
+      },
+      {
+        "title_zh": "5 汉字",
+        "body_zh": "旧字新词：\n① 教师领读以前学过的词语和新词，并让学生猜猜新词的意思。\n· 领读：动物、公园、动物园\n问学生：“动物园”是什么意思？——一个像公园的地方，里边有很多动物。\n· 领读：人、名字、人名\n问学生：“人名”是什么意思？——人的名字。\n· 领读：自己、相信、自信\n问学生：“自信”是什么意思？——自己相信自己。\n注意“自信”是一个形容词。\n② 教师领读新词扩展，通过情景，理解新词的意思和用法：\n动物园：去动物园／动物园里／我想去动物园看大熊猫。\n人名：一个人名／记人名／中国的人名和美国的不一样。\n自信：很自信／不自信／这个人不太自信。\n汉字辨认练习：\n辨认下列汉字并组词。\n于：________、________　机：________、________\n干：________、________　几：________、________\n种：________、________　且：________、________\n和：________、________　自：________、________\n万：________、________\n方：________、________\n练习册相关练习：第127页／三／第三部分"
+      },
+      {
+        "title_zh": "6 补充课堂活动——根据词卡写句子",
+        "body_zh": "4-5个学生一组，每组随机抽取3-4个词卡，用这些词完成一个句子，比比哪组用最短的时间写出正确的句子。\n参考词语：只要……就、像、万、只、嘴、动物、段、不但……而且、有名、同意、相信、关于、机会、国家、种、奇怪……"
+      },
+      {
+        "title_zh": "7 俗语",
+        "body_zh": "教师引导学生理解俗语的含义，注意这里的“怪”指奇怪的事物，例如，这种事我见得多了，早就见怪不怪了。"
+      },
+      {
+        "title_zh": "8 本课小结",
+        "body_zh": "· 语言点：用“只要……就……”表示必要条件和结果\n　　　　　用“关于”引出关涉的对象\n· 汉　字：旧字新词：动物园、人名、自信"
+      }
+    ],
+    "notes_zh": [
+      "注意：主语可以放在“只要”前，也可以放在“只要”后，如果后边的分句有第二个主语，要放在“就”的前边。（语言点1）",
+      "注意“自信”是一个形容词。（汉字）",
+      "注意这里的“怪”指奇怪的事物，例如，这种事我见得多了，早就见怪不怪了。（俗语）"
+    ],
+    "warmup_answers_zh": [
+      "热身1 答案：①C　②A　③B　④F　⑤E　⑥D",
+      "热身2：可留至语言点（1）“只要……就……”导入时使用。"
+    ],
+    "text_questions": [
+      {
+        "text": 1,
+        "q_zh": "朋友为什么向老周借钱？",
+        "a_zh": "他打算买房子。"
+      },
+      {
+        "text": 1,
+        "q_zh": "朋友要借多少钱？",
+        "a_zh": "他要借5万块钱。"
+      },
+      {
+        "text": 1,
+        "q_zh": "朋友打算在哪儿买房？",
+        "a_zh": "他打算在医院前面买房。"
+      },
+      {
+        "text": 2,
+        "q_zh": "男的（小明）要买什么回去？",
+        "a_zh": "他想买回去一只狗。"
+      },
+      {
+        "text": 2,
+        "q_zh": "妈妈同意吗？为什么？",
+        "a_zh": "不同意，她觉得小明不会照顾它。"
+      },
+      {
+        "text": 2,
+        "q_zh": "妈妈为什么这样觉得？",
+        "a_zh": "这段时间小明自己的衣服都没洗，所以不能照顾好小狗。"
+      },
+      {
+        "text": 3,
+        "q_zh": "男的为什么选择这个公司？",
+        "a_zh": "这个公司不但很有名，而且工作环境好。"
+      },
+      {
+        "text": 3,
+        "q_zh": "女的说这个工作怎么样？",
+        "a_zh": "做这个工作有点儿累，需要经常去外地。"
+      },
+      {
+        "text": 3,
+        "q_zh": "男的什么时候去上班？",
+        "a_zh": "他明天去上班。"
+      },
+      {
+        "text": 4,
+        "q_zh": "不同国家的文化有什么特点？"
+      },
+      {
+        "text": 4,
+        "q_zh": "到了一个新环境，你会觉得怎么样？",
+        "a_zh": "会觉得什么都很新鲜，而且还会有点儿奇怪。"
+      },
+      {
+        "text": 4,
+        "q_zh": "到了一个新环境，人们会习惯吗？",
+        "a_zh": "到了一个新环境，经过一段时间就会慢慢习惯的。"
+      }
+    ],
+    "summary_zh": "语言点：用“只要……就……”表示必要条件和结果；用“关于”引出关涉的对象。汉字：旧字新词：动物园、人名、自信。"
+  },
+  "workbook": {
+    "ref": {
+      "book": "workbook",
+      "pages": [
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131
+      ]
+    },
+    "sections": [
+      {
+        "n": "一、听力 第一部分",
+        "type_zh": "听力 第一部分",
+        "instruction_zh": "第1–5题：听对话，选择与对话内容一致的图片",
+        "instruction_en": "Questions 1-5: Choose the right picture for each dialogue you hear.",
+        "audio": "hsk3-workbook-18-part1.mp3",
+        "items": [
+          {
+            "n": "例",
+            "zh": "男：喂，请问张经理在吗？ 女：他正在开会，您半个小时以后再打，好吗？",
+            "transcript_zh": "男：喂，请问张经理在吗？ 女：他正在开会，您半个小时以后再打，好吗？",
+            "options": {
+              "A": "[picture] a boy by a wooden fence stroking a giraffe",
+              "B": "[picture] an ink painting of several galloping horses",
+              "C": "[picture] a woman walking with a golden retriever dog in a park with trees",
+              "D": "[picture] a smiling woman in a uniform talking on a telephone",
+              "E": "[picture] a laughing young woman with a laughing baby",
+              "F": "[picture] a thin boy standing on a bathroom scale"
+            },
+            "answer": "D",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                125
+              ]
+            }
+          },
+          {
+            "n": 1,
+            "zh": "",
+            "options": {
+              "A": "[picture] a boy by a wooden fence stroking a giraffe",
+              "B": "[picture] an ink painting of several galloping horses",
+              "C": "[picture] a woman walking with a golden retriever dog in a park with trees",
+              "D": "[picture] a smiling woman in a uniform talking on a telephone",
+              "E": "[picture] a laughing young woman with a laughing baby",
+              "F": "[picture] a thin boy standing on a bathroom scale"
+            },
+            "transcript_zh": "男：孩子怎么了，变化这么大，我真没办法相信。 女：我自己也没想到，他一个星期就瘦了五斤。",
+            "answer": "F",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                196
+              ]
+            }
+          },
+          {
+            "n": 2,
+            "zh": "",
+            "options": {
+              "A": "[picture] a boy by a wooden fence stroking a giraffe",
+              "B": "[picture] an ink painting of several galloping horses",
+              "C": "[picture] a woman walking with a golden retriever dog in a park with trees",
+              "D": "[picture] a smiling woman in a uniform talking on a telephone",
+              "E": "[picture] a laughing young woman with a laughing baby",
+              "F": "[picture] a thin boy standing on a bathroom scale"
+            },
+            "transcript_zh": "女：你下星期去北京？你的那只狗怎么办？ 男：我有个同学很喜欢小动物，她同意帮我照顾几天。",
+            "answer": "C",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                196
+              ]
+            }
+          },
+          {
+            "n": 3,
+            "zh": "",
+            "options": {
+              "A": "[picture] a boy by a wooden fence stroking a giraffe",
+              "B": "[picture] an ink painting of several galloping horses",
+              "C": "[picture] a woman walking with a golden retriever dog in a park with trees",
+              "D": "[picture] a smiling woman in a uniform talking on a telephone",
+              "E": "[picture] a laughing young woman with a laughing baby",
+              "F": "[picture] a thin boy standing on a bathroom scale"
+            },
+            "transcript_zh": "男：这是你儿子？他跟你长得真像啊。 女：是，但是他的嘴更像他爸爸。",
+            "answer": "E",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                196
+              ]
+            }
+          },
+          {
+            "n": 4,
+            "zh": "",
+            "options": {
+              "A": "[picture] a boy by a wooden fence stroking a giraffe",
+              "B": "[picture] an ink painting of several galloping horses",
+              "C": "[picture] a woman walking with a golden retriever dog in a park with trees",
+              "D": "[picture] a smiling woman in a uniform talking on a telephone",
+              "E": "[picture] a laughing young woman with a laughing baby",
+              "F": "[picture] a thin boy standing on a bathroom scale"
+            },
+            "transcript_zh": "男：这是黄老师的画儿吧，他的画都非常有名。 女：对，我买这画儿花了三万块呢。",
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                196
+              ]
+            }
+          },
+          {
+            "n": 5,
+            "zh": "",
+            "options": {
+              "A": "[picture] a boy by a wooden fence stroking a giraffe",
+              "B": "[picture] an ink painting of several galloping horses",
+              "C": "[picture] a woman walking with a golden retriever dog in a park with trees",
+              "D": "[picture] a smiling woman in a uniform talking on a telephone",
+              "E": "[picture] a laughing young woman with a laughing baby",
+              "F": "[picture] a thin boy standing on a bathroom scale"
+            },
+            "transcript_zh": "女：你怎么总是带孩子到动物园看动物，能不能换个地方？ 男：这你就不知道了吧，动物园不但环境好，而且孩子对动物很感兴趣。",
+            "answer": "A",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                196
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "一、听力 第二部分",
+        "type_zh": "听力 第二部分",
+        "instruction_zh": "第6–10题：听句子，判断对错",
+        "instruction_en": "Questions 6-10: Decide whether the statements are true or false based on the sentences you hear.",
+        "audio": "hsk3-workbook-18-part2.mp3",
+        "items": [
+          {
+            "n": "例1",
+            "zh": "他希望自己很健康。",
+            "transcript_zh": "为了让自己更健康，他每天都花一个小时去锻炼身体。",
+            "answer": "√",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                126
+              ]
+            }
+          },
+          {
+            "n": "例2",
+            "zh": "那块儿手表不是他的。",
+            "transcript_zh": "今天我想早点儿回家。看了看手表，才5点。过了一会儿再看表，还是5点，我这才发现我的手表不走了。",
+            "answer": "×",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                126
+              ]
+            }
+          },
+          {
+            "n": 6,
+            "zh": "聪明人知道机会不常有。",
+            "transcript_zh": "聪明的人只要看到机会，就会想办法拿到，因为他们知道，很多时候机会只有一次。",
+            "answer": "√",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                196
+              ]
+            }
+          },
+          {
+            "n": 7,
+            "zh": "小云要去体育馆。",
+            "transcript_zh": "小云，你从动物园出来后，向左走，到了地铁站以后再向右走，然后就能看到体育馆了。",
+            "answer": "√",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                196
+              ]
+            }
+          },
+          {
+            "n": 8,
+            "zh": "关于中国的春节，他比较了解。",
+            "transcript_zh": "关于中国的节日，除了春节以外，别的我都不了解，但是我打算找一个中国老师教教我。",
+            "answer": "√",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                196
+              ]
+            }
+          },
+          {
+            "n": 9,
+            "zh": "他认为那个宾馆不错。",
+            "transcript_zh": "那个宾馆离我们学校很近，不但环境很好，而且不太贵，每次有同学或者朋友来，我都会带他们去那儿住。",
+            "answer": "√",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                196
+              ]
+            }
+          },
+          {
+            "n": 10,
+            "zh": "他的汉语水平很高。",
+            "transcript_zh": "我学习汉语一年多了，水平一般。我能听懂中国人说的一些简单的句子，也可以说一点儿。我相信明年我一定会说得更好的。",
+            "answer": "×",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                196
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "一、听力 第三部分",
+        "type_zh": "听力 第三部分",
+        "instruction_zh": "第11–15题：听短对话，选择正确答案",
+        "instruction_en": "Questions 11-15: Listen to the short dialogues and choose the right answers.",
+        "audio": "hsk3-workbook-18-part3.mp3",
+        "items": [
+          {
+            "n": "例",
+            "zh": "男的想让小王做什么？",
+            "transcript_zh": "男：小王，帮我开一下门，好吗？谢谢！ 女：没问题。您去超市了？买了这么多东西。 问：男的想让小王做什么？",
+            "options": {
+              "A": "开门",
+              "B": "拿东西",
+              "C": "去超市买东西"
+            },
+            "answer": "A",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                126
+              ]
+            }
+          },
+          {
+            "n": 11,
+            "zh": "女的最可能是做什么的？",
+            "options": {
+              "A": "司机",
+              "B": "老师",
+              "C": "医生"
+            },
+            "transcript_zh": "男：你明天上午要去哪儿，陪我去医院吧？ 女：我要带学生去动物园看大熊猫，后天行吗？ 问：女的最可能是做什么的？",
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                196
+              ]
+            }
+          },
+          {
+            "n": 12,
+            "zh": "男的最近为什么很少看电视？",
+            "options": {
+              "A": "不爱看电视",
+              "B": "常去动物园",
+              "C": "在准备比赛"
+            },
+            "transcript_zh": "女：昨晚的《动物世界》你看了吗？ 男：没有，我最近忙着准备下周的比赛，很少看电视。 问：男的最近为什么很少看电视？",
+            "answer": "C",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                196
+              ]
+            }
+          },
+          {
+            "n": 13,
+            "zh": "男的为什么要给女的打电话？",
+            "options": {
+              "A": "帮她找手机",
+              "B": "找她有事情",
+              "C": "跟女的见面"
+            },
+            "transcript_zh": "女：奇怪，我记得把手机放进包里了，怎么找不到了？ 男：别着急，我给你打个电话，就知道在哪儿了。 问：男的为什么要给女的打电话？",
+            "answer": "A",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                196
+              ]
+            }
+          },
+          {
+            "n": 14,
+            "zh": "关于男的，可以知道什么？",
+            "options": {
+              "A": "经常骑自行车",
+              "B": "上班不能骑车",
+              "C": "不会骑自行车"
+            },
+            "transcript_zh": "女：你不会骑自行车？ 男：是的，在我们那儿很少有机会骑。 问：关于男的，可以知道什么？",
+            "answer": "C",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                196
+              ]
+            }
+          },
+          {
+            "n": 15,
+            "zh": "关于男的，可以知道什么？",
+            "options": {
+              "A": "身体不好",
+              "B": "吃得很饱",
+              "C": "吃得很少"
+            },
+            "transcript_zh": "女：吃饭不能吃太饱，那对你的身体不好。 男：关于这一点，我同意，可是吃太少，我晚上睡不着觉。 问：关于男的，可以知道什么？",
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                196
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "一、听力 第四部分",
+        "type_zh": "听力 第四部分",
+        "instruction_zh": "第16–20题：听长对话，选择正确答案",
+        "instruction_en": "Questions 16-20: Listen to the dialogues and choose the right answers.",
+        "audio": "hsk3-workbook-18-part4.mp3",
+        "items": [
+          {
+            "n": "例",
+            "zh": "男的在做什么？",
+            "transcript_zh": "女：晚饭做好了，准备吃饭了。 男：等一会儿，比赛还有三分钟就结束了。 女：快点儿吧，一起吃，菜冷了就不好吃了。 男：你先吃，我马上就看完了。 问：男的在做什么？",
+            "options": {
+              "A": "洗澡",
+              "B": "吃饭",
+              "C": "看电视"
+            },
+            "answer": "C",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                127
+              ]
+            }
+          },
+          {
+            "n": 16,
+            "zh": "男的小时候怎么样？",
+            "options": {
+              "A": "喜欢照相",
+              "B": "长得很矮",
+              "C": "长得很高"
+            },
+            "transcript_zh": "女：这是你小时候的照片？ 男：是，我小时候比较矮。 女：你现在有一米九吗？ 男：一米九一，我都不相信自己能长这么高。 问：男的小时候怎么样？",
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                196
+              ]
+            }
+          },
+          {
+            "n": 17,
+            "zh": "女的为什么买票花了很长时间？",
+            "options": {
+              "A": "她是外地人",
+              "B": "买票的人多",
+              "C": "开门比较晚"
+            },
+            "transcript_zh": "男：你怎么买票买了这么久？ 女：节日里来动物园的人特别多。 男：怎么那么多人啊？我们的票买到了吗？ 女：买到了，今天不但来了很多北京人，而且还有很多外地人。 问：女的为什么买票花了很长时间？",
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                196
+              ]
+            }
+          },
+          {
+            "n": 18,
+            "zh": "女的现在要做什么？",
+            "options": {
+              "A": "去体育馆",
+              "B": "洗澡",
+              "C": "洗车"
+            },
+            "transcript_zh": "女：今天我们还去国家体育馆吗？ 男：只要你不累，我们就去。 女：那你等我一会儿，我先洗个澡。 男：行，我去洗车。 问：女的现在要做什么？",
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                196
+              ]
+            }
+          },
+          {
+            "n": 19,
+            "zh": "那家饭馆的什么很有名？",
+            "options": {
+              "A": "羊肉",
+              "B": "牛肉",
+              "C": "鱼"
+            },
+            "transcript_zh": "男：听说这家饭馆的羊肉非常有名，要不要来一盘？ 女：我不吃牛羊肉，有没有别的菜？ 男：我看看菜单，你看这个鱼怎么样？ 女：行，只要你喜欢，我们就点。 问：那家饭馆的什么很有名？",
+            "answer": "A",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                196
+              ]
+            }
+          },
+          {
+            "n": 20,
+            "zh": "小周为什么没来上班？",
+            "options": {
+              "A": "去学习了",
+              "B": "生病了",
+              "C": "工作不认真"
+            },
+            "transcript_zh": "男：奇怪，这段时间怎么没看见小周来上班？她病了吗？ 女：你不知道吗？公司已经送她去外地学习了。 男：是吗？她有这么好的机会啊。 女：小周工作认真，经理当然让她去。 问：小周为什么没来上班？",
+            "answer": "A",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                196
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "二、阅读 第一部分",
+        "type_zh": "阅读 第一部分",
+        "instruction_zh": "第21–25题：选择合适的问答",
+        "instruction_en": "Questions 21-25: Match the two parts of the same dialogue.",
+        "items": [
+          {
+            "n": "例",
+            "zh": "你知道怎么去那儿吗？",
+            "options": {
+              "A": "你怎么一直看着我，怎么了？",
+              "B": "请慢走，欢迎您下次再来我们这儿玩儿。",
+              "C": "我也觉得很奇怪，她过去不是这样的。",
+              "D": "楼下这只小狗是谁家的？",
+              "E": "当然。我们先坐公共汽车，然后换地铁。",
+              "F": "中国人的人名一般都没那么简单。"
+            },
+            "answer": "E",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                128
+              ]
+            }
+          },
+          {
+            "n": 21,
+            "zh": "我同意，根据我的了解，这是一种文化。",
+            "options": {
+              "A": "你怎么一直看着我，怎么了？",
+              "B": "请慢走，欢迎您下次再来我们这儿玩儿。",
+              "C": "我也觉得很奇怪，她过去不是这样的。",
+              "D": "楼下这只小狗是谁家的？",
+              "E": "当然。我们先坐公共汽车，然后换地铁。",
+              "F": "中国人的人名一般都没那么简单。"
+            },
+            "answer": "F",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                196
+              ]
+            }
+          },
+          {
+            "n": 22,
+            "zh": "你刚才吃什么了，嘴上有一个东西。",
+            "options": {
+              "A": "你怎么一直看着我，怎么了？",
+              "B": "请慢走，欢迎您下次再来我们这儿玩儿。",
+              "C": "我也觉得很奇怪，她过去不是这样的。",
+              "D": "楼下这只小狗是谁家的？",
+              "E": "当然。我们先坐公共汽车，然后换地铁。",
+              "F": "中国人的人名一般都没那么简单。"
+            },
+            "answer": "A",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                196
+              ]
+            }
+          },
+          {
+            "n": 23,
+            "zh": "真奇怪，附近人家里没有这种狗。",
+            "options": {
+              "A": "你怎么一直看着我，怎么了？",
+              "B": "请慢走，欢迎您下次再来我们这儿玩儿。",
+              "C": "我也觉得很奇怪，她过去不是这样的。",
+              "D": "楼下这只小狗是谁家的？",
+              "E": "当然。我们先坐公共汽车，然后换地铁。",
+              "F": "中国人的人名一般都没那么简单。"
+            },
+            "answer": "D",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                196
+              ]
+            }
+          },
+          {
+            "n": 24,
+            "zh": "好的，有机会我一定会再来的，再见。",
+            "options": {
+              "A": "你怎么一直看着我，怎么了？",
+              "B": "请慢走，欢迎您下次再来我们这儿玩儿。",
+              "C": "我也觉得很奇怪，她过去不是这样的。",
+              "D": "楼下这只小狗是谁家的？",
+              "E": "当然。我们先坐公共汽车，然后换地铁。",
+              "F": "中国人的人名一般都没那么简单。"
+            },
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                196
+              ]
+            }
+          },
+          {
+            "n": 25,
+            "zh": "小丽最近经常迟到，你是她的好朋友，你知道怎么了吗？",
+            "options": {
+              "A": "你怎么一直看着我，怎么了？",
+              "B": "请慢走，欢迎您下次再来我们这儿玩儿。",
+              "C": "我也觉得很奇怪，她过去不是这样的。",
+              "D": "楼下这只小狗是谁家的？",
+              "E": "当然。我们先坐公共汽车，然后换地铁。",
+              "F": "中国人的人名一般都没那么简单。"
+            },
+            "answer": "C",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                196
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "二、阅读 第二部分",
+        "type_zh": "阅读 第二部分",
+        "instruction_zh": "第26–30题：选择合适的词语填空",
+        "instruction_en": "Questions 26-30: Choose the proper words to fill in the brackets.",
+        "word_bank": [
+          [
+            "A 相信",
+            "B 地",
+            "C 只要",
+            "D 机会",
+            "E 声音",
+            "F 关于"
+          ]
+        ],
+        "items": [
+          {
+            "n": "例",
+            "zh": "她说话的（　）多好听啊！",
+            "options": {
+              "A": "相信",
+              "B": "地",
+              "C": "只要",
+              "D": "机会",
+              "E": "声音",
+              "F": "关于"
+            },
+            "answer": "E",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                128
+              ]
+            }
+          },
+          {
+            "n": 26,
+            "zh": "（　）出国学习的事，我还有几个问题。",
+            "options": {
+              "A": "相信",
+              "B": "地",
+              "C": "只要",
+              "D": "机会",
+              "E": "声音",
+              "F": "关于"
+            },
+            "answer": "F",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                196
+              ]
+            }
+          },
+          {
+            "n": 27,
+            "zh": "很多人都想去大城市工作，因为（　）多一些。",
+            "options": {
+              "A": "相信",
+              "B": "地",
+              "C": "只要",
+              "D": "机会",
+              "E": "声音",
+              "F": "关于"
+            },
+            "answer": "D",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                196
+              ]
+            }
+          },
+          {
+            "n": 28,
+            "zh": "你别着急，慢慢（　）说。",
+            "options": {
+              "A": "相信",
+              "B": "地",
+              "C": "只要",
+              "D": "机会",
+              "E": "声音",
+              "F": "关于"
+            },
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                196
+              ]
+            }
+          },
+          {
+            "n": 29,
+            "zh": "A：明天我一定不会迟到了。 B：你说什么我都不会（　）的。",
+            "options": {
+              "A": "相信",
+              "B": "地",
+              "C": "只要",
+              "D": "机会",
+              "E": "声音",
+              "F": "关于"
+            },
+            "answer": "A",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                196
+              ]
+            }
+          },
+          {
+            "n": 30,
+            "zh": "A：爸爸，周末我想去公园玩儿。 B：好啊，（　）不下雨，我就带你去。",
+            "options": {
+              "A": "相信",
+              "B": "地",
+              "C": "只要",
+              "D": "机会",
+              "E": "声音",
+              "F": "关于"
+            },
+            "answer": "C",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                196
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "二、阅读 第三部分",
+        "type_zh": "阅读 第三部分",
+        "instruction_zh": "第31–35题：选择正确答案",
+        "instruction_en": "Questions 31-35: Choose the right answers.",
+        "items": [
+          {
+            "n": "例",
+            "zh": "您是来参加今天会议的吗？您来早了一点儿，现在才八点半。您先进来坐吧。 ★会议最可能几点开始？",
+            "options": {
+              "A": "8点",
+              "B": "8点半",
+              "C": "9点"
+            },
+            "answer": "C",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                129
+              ]
+            }
+          },
+          {
+            "n": 31,
+            "zh": "有人问我长得像谁，关于这个问题，我觉得很难回答。家里人一般觉得，我的鼻子和嘴像我爸爸，我的眼睛像我妈妈，所以我有机会就会跟他们比一比。我发现，我的鼻子、嘴和眼睛不但像我爸爸，而且也像我妈妈，但是比他们的都好看。你看，我是不是很自信？ ★我觉得谁好看？",
+            "options": {
+              "A": "爸爸",
+              "B": "妈妈",
+              "C": "自己"
+            },
+            "answer": "C",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                196
+              ]
+            }
+          },
+          {
+            "n": 32,
+            "zh": "以前我是一家旅游公司的经理，有机会去很多国家。我去很多城市旅游过，吃过很多有名的菜，但是如果你问我“世界上最好的地方是哪儿？最好吃的是哪种菜？”，我相信我一定会回答：“最好的地方是我的家，最好吃的是妈妈为我做的菜。” ★我：",
+            "options": {
+              "A": "是旅游公司的经理",
+              "B": "很喜欢做菜",
+              "C": "去过很多城市"
+            },
+            "answer": "C",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                196
+              ]
+            }
+          },
+          {
+            "n": 33,
+            "zh": "你刚到我们这儿可能会觉得很奇怪，我们这儿的冬天很冷，夏天很热，春天的天气很好，不冷不热，但是这段时间不长，冬天过完很快就到夏天了。所以你不用买那么多春天穿的衣服，相信你住的时间长了，就会慢慢地习惯的。 ★我们这里：",
+            "options": {
+              "A": "天气很奇怪",
+              "B": "春天不长",
+              "C": "四季都不冷"
+            },
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                196
+              ]
+            }
+          },
+          {
+            "n": 34,
+            "zh": "今天我买了很多铅笔，这些铅笔都是为我儿子买的，这段时间他在学画画儿，他最爱画小动物，小狗、小猫、小鱼什么的，然后给这些小动物画上不一样的颜色。我相信，只要他认真学习画画儿，以后一定会是一个有名的画家的。 ★我儿子：",
+            "options": {
+              "A": "是一个画家",
+              "B": "喜欢画小动物",
+              "C": "买了很多铅笔"
+            },
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                196
+              ]
+            }
+          },
+          {
+            "n": 35,
+            "zh": "奶奶以前是他们学校里有名的音乐老师，她不但歌唱得特别好听，而且对人也非常热情，大家都很喜欢她。最近这段时间，奶奶身体不太舒服，很多人都来家里看她，有的人还是从外地来的，没来的人也都打电话向她问好。他们说，只要奶奶心里高兴，病很快就会好的。 ★关于奶奶，可以知道：",
+            "options": {
+              "A": "学生们都很喜欢她",
+              "B": "她的学生都在外地",
+              "C": "常给学生打电话"
+            },
+            "answer": "A",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                196
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "三、书写 第一部分",
+        "type_zh": "书写 第一部分",
+        "instruction_zh": "第36–40题：连词成句",
+        "instruction_en": "Questions 36-40: Rearrange the words/phrases to make sentences.",
+        "items": [
+          {
+            "n": "例",
+            "zh": "小船　上　一　河　条　有",
+            "answer": "河上有一条小船。",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                130
+              ]
+            }
+          },
+          {
+            "n": 36,
+            "zh": "关于　我想买　一本　动物　的　书",
+            "answer": "我想买一本关于动物的书。",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                196
+              ]
+            }
+          },
+          {
+            "n": 37,
+            "zh": "我相信　同意　妈妈　的　会",
+            "answer": "我相信妈妈会同意的。",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                196
+              ]
+            }
+          },
+          {
+            "n": 38,
+            "zh": "旅游　有机会　我就去　只要　别的国家",
+            "answer": "只要有机会我就去别的国家旅游。",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                196
+              ]
+            }
+          },
+          {
+            "n": 39,
+            "zh": "大家　看着我　地　奇怪　都",
+            "answer": "大家都奇怪地看着我。",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                196
+              ]
+            }
+          },
+          {
+            "n": 40,
+            "zh": "问路　向我　外地人　一个",
+            "answer": "一个外地人向我问路。",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                196
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "三、书写 第二部分",
+        "type_zh": "书写 第二部分",
+        "instruction_zh": "第41–45题：看拼音，写汉字",
+        "instruction_en": "Questions 41-45: Write the characters based on their pinyin.",
+        "items": [
+          {
+            "n": "例",
+            "zh": "没（　）系，别难过，高兴点儿。",
+            "hint_zh": "guān",
+            "answer": "关",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                130
+              ]
+            }
+          },
+          {
+            "n": 41,
+            "zh": "你要多（　）小丽学习，你看她，做事总是很认真。",
+            "hint_zh": "xiàng",
+            "answer": "向",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                196
+              ]
+            }
+          },
+          {
+            "n": 42,
+            "zh": "这（　）小猫很可爱，它叫什么名字？",
+            "hint_zh": "zhī",
+            "answer": "只",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                196
+              ]
+            }
+          },
+          {
+            "n": 43,
+            "zh": "关于你们（　）家，你能简单介绍一下吗？",
+            "hint_zh": "guó",
+            "answer": "国",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                196
+              ]
+            }
+          },
+          {
+            "n": 44,
+            "zh": "妈妈不同意他出去玩儿，他生气（　）回房间了。",
+            "hint_zh": "de",
+            "answer": "地",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                196
+              ]
+            }
+          },
+          {
+            "n": 45,
+            "zh": "我最喜欢小狗，你最喜欢哪种（　）物？",
+            "hint_zh": "dòng",
+            "answer": "动",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                196
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "三、书写 第三部分",
+        "type_zh": "书写 第三部分",
+        "instruction_zh": "第46–50题：辨认汉字，选择正确的汉字填空",
+        "instruction_en": "Questions 46-50: Distinguish the characters and fill in the blanks.",
+        "items": [
+          {
+            "n": "例",
+            "zh": "我不知道________个地方在________儿。",
+            "hint_zh": "（那、哪）",
+            "answer": "那、哪",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                131
+              ]
+            }
+          },
+          {
+            "n": 46,
+            "zh": "关________城市环境的问题，我们认为最重要的是把街道打扫________净。",
+            "hint_zh": "（于、干）",
+            "answer": "于、干",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                196
+              ]
+            }
+          },
+          {
+            "n": 47,
+            "zh": "这________个人中，你是最聪明的，所以你有________会来我们公司工作。",
+            "hint_zh": "（机、几）",
+            "answer": "几、机",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                196
+              ]
+            }
+          },
+          {
+            "n": 48,
+            "zh": "小丽________小刚要去看朋友，但是他们不知道买哪________水果好。",
+            "hint_zh": "（种、和）",
+            "answer": "和、种",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                196
+              ]
+            }
+          },
+          {
+            "n": 49,
+            "zh": "请你相信，这件事我不但________己就能做，而________能做得很好。",
+            "hint_zh": "（且、自）",
+            "answer": "自、且",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                196
+              ]
+            }
+          },
+          {
+            "n": 50,
+            "zh": "这个地________的房子太贵了，那么小就需要三百多________。",
+            "hint_zh": "（万、方）",
+            "answer": "方、万",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                196
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "四、复习",
+        "type_zh": "复习",
+        "instruction_zh": "第1–2题：根据课文内容填空",
+        "instruction_en": "Questions 1-2: Fill in the blanks based on the texts in the textbook.",
+        "items": [
+          {
+            "n": 1,
+            "zh": "小明看见一________可爱的小狗，眼睛大大的，________小小的，想买回去。妈妈不同意，因为她觉得________需要人照顾，但是这________时间小明自己的衣服都不洗，是不会照顾小狗的。小明说，________妈妈给他买，他就能照顾好小狗。",
+            "answer": "只、嘴、动物、段、只要",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                196
+              ]
+            }
+          },
+          {
+            "n": 2,
+            "zh": "一个学生去公司找工作，他认为这家公司不但很________，________工作环境好。但是经理告诉他，这个工作有点儿累，需要经常去外地，不知道他的家人能不能________。他觉得没问题，只要他愿意，他________家人会同意的。经理告诉他明天来上班，他很高兴有这个工作________，他说他会努力的。",
+            "answer": "有名、而且、同意、相信、机会",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                196
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "answers_ref": {
+      "book": "teacher",
+      "pages": [
+        194,
+        195,
+        196
+      ]
+    }
+  },
+  "audio": {
+    "textbook": [
+      "hsk3-textbook-1801.mp3",
+      "hsk3-textbook-1802.mp3",
+      "hsk3-textbook-1803.mp3",
+      "hsk3-textbook-1804.mp3",
+      "hsk3-textbook-1805.mp3"
+    ],
+    "workbook": [
+      "hsk3-workbook-18-part1.mp3",
+      "hsk3-workbook-18-part2.mp3",
+      "hsk3-workbook-18-part3.mp3",
+      "hsk3-workbook-18-part4.mp3"
+    ]
+  },
+  "unclear": [
+    "生词7 ба 课文3-ын пиньинь: сурах бичгийн 生词 хүснэгт (PDF х.168) «búdàn……ěrqiě……», 拼音课文 (PDF х.169, 课文3 学生-ийн мөр) «ěrqiě» гэж хэвлэгдсэн (250 dpi-аар шалгасан); 课文4-ийн 拼音课文-д «érqiě». Хэвлэлийн алдаа бололтой — номд байгаагаар нь (ěrqiě) үлдээсэн, засаагүй.",
+    "课文4: ханзаар «还会觉得有点奇怪» (儿-гүй), 拼音课文 (PDF х.169) «yǒudiǎnr qíguài» (儿化-тай); багшийн номын хариулт (PDF х.128) «还会有点儿奇怪». Номд байгаагаар хоёуланг нь (zh — «有点»; pinyin — «yǒudiǎnr») үлдээсэн.",
+    "注释2-ын гарчиг сурах бичигт (PDF х.170) «介语“关于”» гэж хэвлэгдсэн (стандарт нэр томьёо «介词»), англи нь «The Preposition “关于”» — номд байгаагаар.",
+    "练习1 朗读 ⑤ «……只要经过一段时间，就会慢慢地习惯的。» (的-тэй) — 课文4-т «……就会慢慢地习惯。» (的-гүй). Тус бүрийг номд байгаагаар.",
+    "练习4 ① «朋友为什么要跟周明借钱？» — 课文1-д «想向你借点儿钱», багшийн номд «朋友为什么向老周借钱？» гэж өөр хэлбэрээр; номд байгаагаар.",
+    "热身1 D зураг: гараар барьсан «10000» тооны эхний «1» хэсэгчлэн далдлагдаж «7» шиг харагдана (PDF х.167). Багшийн номын хариулт ⑥D (万).",
+    "课文4 номд гарчиггүй (зөвхөн «4» ба аудио 18-4) — title_zh хоосон, title_en байхгүй. Өгүүлэмжийг өгүүлбэр (。) тус бүрээр lines-д хувааж, 拼音课文-ын харгалзах хэсгийг оноосон.",
+    "Сурах бичгийн 拼音课文-ын гарчгийн пиньинь (Zài dǎ diànhuà / Zài shāngdiàn / Zài gōngsī) болон ярилцагчийн нэрийн пиньинь (péngyou, Zhōu Míng, Xiǎomíng, māma, jīnglǐ, xuésheng) схемд талбаргүй тул lines.pinyin-д зөвхөн яриаг оруулсан.",
+    "生词7 «不但……而且……» нь хоёр хэсэгтэй холбоос үг — номын 生词 хүснэгтэд нэг дугаартай тул нэг үг болгож оруулсан.",
+    "Сурах бичгийн 练一练 (2 дүрэм × 3), 练习2 选词填空， 练习3 描述图片， 练习4 回答问题， 热身2 (连线), 运用1–2 — хариулт сурах бичиг, багшийн номд хэвлэгдээгүй тул answer талбаргүй. Багшийн номын 课文 асуулт-хариулт (teacher.text_questions) нь 练习4-ийн асуултаас өөр; 课文4-ийн «不同国家的文化有什么特点？» асуултад багшийн номд хариулт хэвлэгдээгүй.",
+    "Багшийн номын 课文 асуултад 课文2-ын 小明-ийг «男的», 课文3-ын 经理-г «女的», 学生-ийг «男的» гэж нэрлэсэн — сурах бичигт хүйс заагаагүй.",
+    "Багшийн номын 汉字辨认练习 (于/干 · 种/和 · 万/方 · 机/几 · 且/自 — 组词) хоосон зайтай, хариулт хэвлэгдээгүй; textbook.characters.confusable_pairs-д багшийн номоос оруулсан.",
+    "Багшийн номын 补充课堂活动-ийн 参考词语-д «像» орсон — энэ хичээлийн 生词 биш; номд байгаагаар.",
+    "Дасгалын ном 复习1 «这段时间小明自己的衣服都不洗» — 课文2-т «……都没洗»; номд байгаагаар.",
+    "Дасгалын номын сонсгол нэг CD тэмдэгтэй (18) — аудиог hsk3-workbook-18-part1…4.mp3 болгож хэсэг тус бүрт хуваасныг section.audio-д оноосон.",
+    "Дасгалын ном 听力 第三/四部分 — номд зөвхөн сонголтууд хэвлэгдсэн; item.zh-д багшийн номын хавсралтын «问：» асуултыг оруулсан (transcript_zh-д бүтнээр).",
+    "Дасгалын номд энэ хичээлд 51–54 (组词) хэсэг байхгүй — нийт 50 асуулт + 复习 2.",
+    "Энэ хичээлд 专有名词 хүснэгт, 汉字知识 ба 文化 хэсэг байхгүй; * тэмдэгтэй үг 1 (15 特点).",
+    "HSK 3.0 нэмэлт үгс (BLCUP 课件 补充HSK3.0, слайд 13, 22, 33 — үг; слайд 15, 25, 34 — 语言点) hsk30-д."
+  ],
+  "verified_pages": [
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
     167,
     168,
     169,
@@ -16,1930 +1937,127 @@
     171,
     172,
     173,
-    174
-   ]
-  },
-  "warmup": [
-   {
-    "instruction_zh": "给下面的词语选择对应的图片",
-    "instruction_en": "Match the pictures with the words.",
-    "items": [
-     "①动物 dòngwù",
-     "②国家 guójiā",
-     "③同意 tóngyì",
-     "④相信 xiāngxìn",
-     "⑤奇怪 qíguài",
-     "⑥万 wàn"
-    ],
-    "pictures_desc_en": [
-     "A: rows of many national flags arranged in a grid",
-     "B: a hand making the “OK” sign with thumb and index finger",
-     "C: a crowd of animals (elephant, bears, polar bear, zebra, giraffe, etc.) standing together on grass",
-     "D: a hand holding the yellow number “10000” (the first “1”, partly covered by the hand, looks like a “7”)",
-     "E: a tall, oddly shaped stone pillar among rock formations",
-     "F: many raised hands holding up red letters spelling “BELIEVE” against the sky"
-    ]
-   },
-   {
-    "instruction_zh": "连线：把原因和结果连起来",
-    "instruction_en": "Draw lines to match the reasons with the results.",
-    "items": [
-     "原因 yuányīn | 结果 jiéguǒ",
-     "穿得很少 chuān de hěn shǎo | 迟到 chídào",
-     "起床太晚 qǐ chuáng tài wǎn | 老师生气 lǎoshī shēng qì",
-     "不吃早饭 bù chī zǎofàn | 感冒 gǎnmào",
-     "不复习 bú fùxí | 牙疼 yá téng",
-     "不来上课 bù lái shàng kè | 饿 è",
-     "不刷牙 bù shuā yá | 考得不好 kǎo de bù hǎo"
-    ]
-   }
-  ],
-  "texts": [
-   {
-    "n": 1,
-    "title_zh": "在打电话",
-    "title_en": "On the phone",
-    "kind": "dialogue",
-    "audio": "hsk3-textbook-1801.mp3",
-    "lines": [
-     {
-      "speaker": "朋友",
-      "zh": "老周，我打算买房子了，想向你借点儿钱。",
-      "pinyin": "Lǎo Zhōu, wǒ dǎsuàn mǎi fángzi le, xiǎng xiàng nǐ jiè diǎnr qián."
-     },
-     {
-      "speaker": "周明",
-      "zh": "没问题，只要我有，就一定会借给你的。还差多少？",
-      "pinyin": "Méi wèntí, zhǐyào wǒ yǒu, jiù yídìng huì jiè gěi nǐ de. Hái chà duōshao?"
-     },
-     {
-      "speaker": "朋友",
-      "zh": "还差5万块钱。",
-      "pinyin": "Hái chà wǔ wàn kuài qián."
-     },
-     {
-      "speaker": "周明",
-      "zh": "好，钱下午打给你。你打算在哪儿买房？",
-      "pinyin": "Hǎo, qián xiàwǔ dǎ gěi nǐ. Nǐ dǎsuàn zài nǎr mǎi fáng?"
-     },
-     {
-      "speaker": "朋友",
-      "zh": "就在我们医院前面。",
-      "pinyin": "Jiù zài wǒmen yīyuàn qiánmian."
-     },
-     {
-      "speaker": "周明",
-      "zh": "那你以后去医院就方便了。",
-      "pinyin": "Nà nǐ yǐhòu qù yīyuàn jiù fāngbiàn le."
-     }
-    ],
-    "new_words": [
-     {
-      "n": 1,
-      "zh": "向",
-      "pinyin": "xiàng",
-      "pos": "prep.",
-      "en": "towards",
-      "text": 1
-     },
-     {
-      "n": 2,
-      "zh": "万",
-      "pinyin": "wàn",
-      "pos": "num.",
-      "en": "ten thousand",
-      "text": 1
-     }
-    ]
-   },
-   {
-    "n": 2,
-    "title_zh": "在商店",
-    "title_en": "In a store",
-    "kind": "dialogue",
-    "audio": "hsk3-textbook-1802.mp3",
-    "lines": [
-     {
-      "speaker": "小明",
-      "zh": "妈妈，你看那只狗多可爱，眼睛大大的，嘴小小的，我们买回去吧。",
-      "pinyin": "Māma, nǐ kàn nà zhī gǒu duō kě’ài, yǎnjing dàdà de, zuǐ xiǎoxiǎo de, wǒmen mǎi huiqu ba."
-     },
-     {
-      "speaker": "妈妈",
-      "zh": "动物和小孩儿一样，都需要人照顾。买回家去，谁照顾它啊？",
-      "pinyin": "Dòngwù hé xiǎoháir yíyàng, dōu xūyào rén zhàogù. Mǎi hui jiā qu, shéi zhàogù tā a?"
-     },
-     {
-      "speaker": "小明",
-      "zh": "我照顾啊。",
-      "pinyin": "Wǒ zhàogù a."
-     },
-     {
-      "speaker": "妈妈",
-      "zh": "这段时间你自己的衣服都没洗，你能照顾好它吗？",
-      "pinyin": "Zhè duàn shíjiān nǐ zìjǐ de yīfu dōu méi xǐ, nǐ néng zhàogù hǎo tā ma?"
-     },
-     {
-      "speaker": "小明",
-      "zh": "只要你给我买，我就能照顾好它。",
-      "pinyin": "Zhǐyào nǐ gěi wǒ mǎi, wǒ jiù néng zhàogù hǎo tā."
-     }
-    ],
-    "new_words": [
-     {
-      "n": 3,
-      "zh": "只",
-      "pinyin": "zhī",
-      "pos": "m.",
-      "en": "used for certain animals",
-      "text": 2
-     },
-     {
-      "n": 4,
-      "zh": "嘴",
-      "pinyin": "zuǐ",
-      "pos": "n.",
-      "en": "mouth",
-      "text": 2
-     },
-     {
-      "n": 5,
-      "zh": "动物",
-      "pinyin": "dòngwù",
-      "pos": "n.",
-      "en": "animal",
-      "text": 2
-     },
-     {
-      "n": 6,
-      "zh": "段",
-      "pinyin": "duàn",
-      "pos": "m.",
-      "en": "used for sections or periods",
-      "text": 2
-     }
-    ]
-   },
-   {
-    "n": 3,
-    "title_zh": "在公司",
-    "title_en": "In the company",
-    "kind": "dialogue",
-    "audio": "hsk3-textbook-1803.mp3",
-    "lines": [
-     {
-      "speaker": "经理",
-      "zh": "说说你为什么选择来我们公司工作。",
-      "pinyin": "Shuōshuo nǐ wèi shénme xuǎnzé lái wǒmen gōngsī gōngzuò."
-     },
-     {
-      "speaker": "学生",
-      "zh": "贵公司不但很有名，而且工作环境好。",
-      "pinyin": "Guì gōngsī búdàn hěn yǒumíng, ěrqiě gōngzuò huánjìng hǎo."
-     },
-     {
-      "speaker": "经理",
-      "zh": "做这个工作有点儿累，需要经常去外地。你家人同意吗？",
-      "pinyin": "Zuò zhège gōngzuò yǒudiǎnr lèi, xūyào jīngcháng qù wàidì. Nǐ jiārén tóngyì ma?"
-     },
-     {
-      "speaker": "学生",
-      "zh": "只要我愿意，我相信他们就会同意的。",
-      "pinyin": "Zhǐyào wǒ yuànyì, wǒ xiāngxìn tāmen jiù huì tóngyì de."
-     },
-     {
-      "speaker": "经理",
-      "zh": "好，那你明天来上班吧。关于这个工作，还有什么问题吗？",
-      "pinyin": "Hǎo, nà nǐ míngtiān lái shàng bān ba. Guānyú zhège gōngzuò, hái yǒu shénme wèntí ma?"
-     },
-     {
-      "speaker": "学生",
-      "zh": "没有了，谢谢您给我这个机会，我会努力的。",
-      "pinyin": "Méiyǒu le, xièxie nín gěi wǒ zhège jīhuì, wǒ huì nǔlì de."
-     }
-    ],
-    "new_words": [
-     {
-      "n": 7,
-      "zh": "不但……而且……",
-      "pinyin": "búdàn……ěrqiě……",
-      "pos": "conj.",
-      "en": "not only… but also…",
-      "text": 3
-     },
-     {
-      "n": 8,
-      "zh": "有名",
-      "pinyin": "yǒumíng",
-      "pos": "adj.",
-      "en": "famous",
-      "text": 3
-     },
-     {
-      "n": 9,
-      "zh": "同意",
-      "pinyin": "tóngyì",
-      "pos": "v.",
-      "en": "to agree",
-      "text": 3
-     },
-     {
-      "n": 10,
-      "zh": "相信",
-      "pinyin": "xiāngxìn",
-      "pos": "v.",
-      "en": "to believe",
-      "text": 3
-     },
-     {
-      "n": 11,
-      "zh": "关于",
-      "pinyin": "guānyú",
-      "pos": "prep.",
-      "en": "about, regarding",
-      "text": 3
-     },
-     {
-      "n": 12,
-      "zh": "机会",
-      "pinyin": "jīhuì",
-      "pos": "n.",
-      "en": "opportunity",
-      "text": 3
-     }
-    ]
-   },
-   {
-    "n": 4,
-    "title_zh": "",
-    "kind": "narrative",
-    "audio": "hsk3-textbook-1804.mp3",
-    "lines": [
-     {
-      "zh": "不同的国家有不同的文化，每种文化都有自己的特点。",
-      "pinyin": "Bùtóng de guójiā yǒu bùtóng de wénhuà, měi zhǒng wénhuà dōu yǒu zìjǐ de tèdiǎn."
-     },
-     {
-      "zh": "到了一个新环境，你会觉得什么都很新鲜，而且还会觉得有点奇怪：有些国家的人名写在姓前面，有些国家的人名写在姓后面，但是只要经过一段时间，就会慢慢地习惯。",
-      "pinyin": "Dàole yí ge xīn huánjìng, nǐ huì juéde shénme dōu hěn xīnxiān, érqiě hái huì juéde yǒudiǎnr qíguài: yǒuxiē guójiā de rénmíng xiě zài xìng qiánmiàn, yǒuxiē guójiā de rénmíng xiě zài xìng hòumiàn, dànshì zhǐyào jīngguò yí duàn shíjiān, jiù huì mànman de xíguàn."
-     }
-    ],
-    "new_words": [
-     {
-      "n": 13,
-      "zh": "国家",
-      "pinyin": "guójiā",
-      "pos": "n.",
-      "en": "country, nation",
-      "text": 4
-     },
-     {
-      "n": 14,
-      "zh": "种",
-      "pinyin": "zhǒng",
-      "pos": "m.",
-      "en": "kind, type",
-      "text": 4
-     },
-     {
-      "n": 15,
-      "zh": "特点",
-      "pinyin": "tèdiǎn",
-      "pos": "n.",
-      "en": "feature",
-      "star": true,
-      "text": 4
-     },
-     {
-      "n": 16,
-      "zh": "奇怪",
-      "pinyin": "qíguài",
-      "pos": "adj.",
-      "en": "strange, odd",
-      "text": 4
-     },
-     {
-      "n": 17,
-      "zh": "地",
-      "pinyin": "de",
-      "pos": "part.",
-      "en": "used to connect an adverbial modifier and the verb it modifies",
-      "text": 4
-     }
-    ]
-   }
-  ],
-  "grammar": [
-   {
-    "n": 1,
-    "title_zh": "只要……就……",
-    "title_en": "The Structure “只要……，就……”",
-    "explanation_zh": "“只要……就……”连接的是一个条件复句，“只要”后边是必要条件，“就”后边是其结果。主语可以放在“只要”前，也可以放在“只要”后。如果有第二个主语，要放在“就”的前边。例如：",
-    "explanation_en": "“只要……，就……” is used to connect the two clauses of a conditional complex sentence, with “只要” introducing a necessary condition and “就” followed by the consequent result. The subject can be put before or after “只要”. If there is a second subject in the sentence, it is put right before “就”. For example:",
-    "examples": [
-     {
-      "n": 1,
-      "zh": "只要我有时间，就一定跟你去旅游。"
-     },
-     {
-      "n": 2,
-      "zh": "我只要喜欢，就一定会买。"
-     },
-     {
-      "n": 3,
-      "zh": "只要你想去，我就跟你去。"
-     },
-     {
-      "n": 4,
-      "zh": "只要你给我买，我就能照顾好它。"
-     }
-    ],
-    "practice_instruction_zh": "练一练　完成对话 Complete the dialogues.",
-    "practice": [
-     {
-      "n": 1,
-      "zh": "A：你对大家都这么好啊？ B：是啊！我觉得只要我对别人好，________。"
-     },
-     {
-      "n": 2,
-      "zh": "A：妈妈，你来跟我们一起玩儿吧。 B：你们玩儿吧，只要你们玩儿得高兴，________。"
-     },
-     {
-      "n": 3,
-      "zh": "A：只要你努力学习，________。 B：老师，我一定会努力的。"
-     }
-    ]
-   },
-   {
-    "n": 2,
-    "title_zh": "介语“关于”",
-    "title_en": "The Preposition “关于”",
-    "explanation_zh": "“关于”后边接名词，引出涉及的对象。例如：",
-    "explanation_en": "“关于” is used before a noun, introducing the object to be talked about. For example:",
-    "examples": [
-     {
-      "n": 1,
-      "zh": "我最近看了一些关于中国文化的电影。"
-     },
-     {
-      "n": 2,
-      "zh": "关于这件事，我们还没有决定呢。"
-     },
-     {
-      "n": 3,
-      "zh": "关于出国学习的事，妈妈已经同意了。"
-     },
-     {
-      "n": 4,
-      "zh": "关于这个工作，还有什么问题吗？"
-     }
-    ],
-    "practice_instruction_zh": "练一练　完成句子 Complete the sentences.",
-    "practice": [
-     {
-      "n": 1,
-      "zh": "我想去图书馆借一些________的书。"
-     },
-     {
-      "n": 2,
-      "zh": "今天没有时间回答了，________，我下次告诉你吧。"
-     },
-     {
-      "n": 3,
-      "zh": "你去问问体育老师吧，他能告诉你一些________的方法。"
-     }
-    ]
-   }
-  ],
-  "exercises": [
-   {
-    "n": 1,
-    "type_zh": "朗读",
-    "instruction_zh": "朗读下列短语和句子",
-    "instruction_en": "Read the following phrases and sentences aloud.",
-    "audio": "hsk3-textbook-1805.mp3",
-    "items": [
-     {
-      "n": 1,
-      "zh": "动物：一只动物／小动物／喜欢动物／动物和小孩儿一样，都需要人照顾。"
-     },
-     {
-      "n": 2,
-      "zh": "同意：不同意／他同意了／他不同意这件事／你家人同意吗？"
-     },
-     {
-      "n": 3,
-      "zh": "机会：有机会／工作机会／学习机会／谢谢您给我这个机会。"
-     },
-     {
-      "n": 4,
-      "zh": "种：一种文化／这种药／你喜欢喝哪种茶／每种文化都有自己的特点。"
-     },
-     {
-      "n": 5,
-      "zh": "地：认真地学习／着急地说／热情地回答／只要经过一段时间，就会慢慢地习惯的。"
-     }
-    ]
-   },
-   {
-    "n": 2,
-    "type_zh": "选词填空",
-    "instruction_zh": "选择恰当的词语填空",
-    "instruction_en": "Choose the proper words to fill in the blanks.",
-    "word_bank": [
-     [
-      "动物",
-      "国家",
-      "地",
-      "向",
-      "而且"
-     ],
-     [
-      "机会",
-      "同意",
-      "段",
-      "关于",
-      "奇怪"
-     ]
-    ],
-    "items": [
-     {
-      "n": 1,
-      "zh": "你是从哪个________来的？"
-     },
-     {
-      "n": 2,
-      "zh": "坐火车的时候，我喜欢________外看。"
-     },
-     {
-      "n": 3,
-      "zh": "你最喜欢什么________？"
-     },
-     {
-      "n": 4,
-      "zh": "这家饭馆不但菜很好吃，________环境很好。"
-     },
-     {
-      "n": 5,
-      "zh": "小孩子喜欢快乐________学习。"
-     },
-     {
-      "n": 6,
-      "zh": "A：你打算现在买房子吗？ B：过一________时间以后再说吧。"
-     },
-     {
-      "n": 7,
-      "zh": "A：你怎么要去北京了？ B：那儿的工作________比较多。"
-     },
-     {
-      "n": 8,
-      "zh": "A：真________，桌子上的词典怎么不见了？ B：刚才马可拿走了。"
-     },
-     {
-      "n": 9,
-      "zh": "A：你给我介绍几个________中国文化的电影吧。 B：好，没问题。"
-     },
-     {
-      "n": 10,
-      "zh": "A：我觉得这儿的房子挺便宜的，我们在这儿买吧。 B：我不________，虽然很便宜，但是离公司太远了。"
-     }
-    ]
-   },
-   {
-    "n": 3,
-    "type_zh": "描述图片",
-    "instruction_zh": "用本课新学的语言点和词语描述图片",
-    "instruction_en": "Describe the pictures using the newly-learned language points and words.",
-    "items": [
-     {
-      "n": 1,
-      "zh": "A：最近这________时间，你总是迟到。 B：我也不想迟到，但是家太远了。 A：你只要早起一点儿，________。 B：好，我________我会________习惯的。",
-      "picture_desc_en": "A woman in glasses and a dark suit standing in front of a blackboard, pointing angrily with her arm stretched out."
-     },
-     {
-      "n": 2,
-      "zh": "A：你喜欢看哪种电影？ B：只要是________，我就喜欢。 A：我家有很多关于________的电影光盘。 B：太好了，那你借给我一些吧。",
-      "picture_desc_en": "Two smiling young women sitting on a red sofa, one holding a laptop."
-     },
-     {
-      "n": 3,
-      "zh": "A：周末我们去哪儿玩儿？ B：________，我们就去爬山。 A：好啊，这________时间太忙了，忙得没有________锻炼。 B：经常爬山对身体好。",
-      "picture_desc_en": "Several people with backpacks climbing up a rocky mountain top."
-     },
-     {
-      "n": 4,
-      "zh": "A：你还没有吃饱啊？ B：只要东西好吃，________。 A：你吃得这么多，小心会________的。 B：________这个问题，我不担心，因为我已经有男朋友了。",
-      "picture_desc_en": "A laughing woman with her mouth open holding up a piece of sushi with chopsticks, a plate of sushi in her other hand."
-     }
-    ]
-   },
-   {
-    "n": 4,
-    "type_zh": "回答问题",
-    "instruction_zh": "根据课文回答问题",
-    "instruction_en": "Answer the questions according to the texts.",
-    "items": [
-     {
-      "n": 1,
-      "zh": "朋友为什么要跟周明借钱？"
-     },
-     {
-      "n": 2,
-      "zh": "小明想买什么？为什么？"
-     },
-     {
-      "n": 3,
-      "zh": "小明的妈妈同意小明的要求了吗？"
-     },
-     {
-      "n": 4,
-      "zh": "学生愿意来这个公司工作吗？为什么？"
-     },
-     {
-      "n": 5,
-      "zh": "经理觉得这个工作怎么样？"
-     },
-     {
-      "n": 6,
-      "zh": "为什么有的人到了一个新环境会觉得有些奇怪？"
-     }
-    ]
-   }
-  ],
-  "characters": {
-   "knowledge_title_zh": "旧字新词",
-   "knowledge_zh": "读读下面的词语，想想组成的新词是什么意思。",
-   "knowledge_en": "Read the following words and guess the meanings of the newly-formed ones.",
-   "word_game": [
-    {
-     "parts": [
-      "动物",
-      "公园"
-     ],
-     "result": "动物园"
-    },
-    {
-     "parts": [
-      "人",
-      "名字"
-     ],
-     "result": "人名"
-    },
-    {
-     "parts": [
-      "自己",
-      "相信"
-     ],
-     "result": "自信"
-    }
-   ],
-   "confusable_pairs": [
-    [
-     "于",
-     "干"
-    ],
-    [
-     "种",
-     "和"
-    ],
-    [
-     "万",
-     "方"
-    ],
-    [
-     "机",
-     "几"
-    ],
-    [
-     "且",
-     "自"
-    ]
-   ]
-  },
-  "application": [
-   {
-    "title_zh": "双人活动",
-    "instruction_zh": "两人一组，互相调查对方的情况，完成调查表。",
-    "instruction_en": "Work in pairs. Make a survey of your partner and fill in the questionnaire.",
-    "example_zh": [
-     "表格：| | 问 | 答 |",
-     "| 1 | 你了解中国历史吗？ | 关于中国历史，我了解得不多。 |",
-     "| 2 | 你了解中国电影吗？ | |",
-     "| 3 | 你了解中国音乐吗？ | |",
-     "| 4 | 你了解中国人的生活习惯吗？ | |",
-     "| 5 | 你了解中国的节日吗？ | |",
-     "| 6 | 你了解中国汉字文化吗？ | |"
-    ]
-   },
-   {
-    "title_zh": "小组活动",
-    "instruction_zh": "3～4人一组，一个人说说自己现在的烦恼，另外几个人帮他出出主意。用“只要……，就……”结构。",
-    "instruction_en": "Work in groups of 3-4. One talks about one of his/her current worries, and the others give some advice using “只要……，就……”.",
-    "example_zh": [
-     "例如：A：我现在身体不太好，常常感冒。",
-     "B：只要你常去锻炼，身体就会慢慢好的。",
-     "C：只要你注意休息，身体就会很好。",
-     "D：只要你早睡早起，身体就会好的。"
-    ]
-   }
-  ],
-  "saying": {
-   "zh": "见怪不怪",
-   "pinyin": "Jiàn guài bú guài",
-   "en": "One has become inured to the unusual",
-   "explanation_zh": "“见怪不怪”，这里第一个“怪”是名词，意思是奇怪的事物，第二个“怪”是动词，意思是感到奇怪。这句话的意思是奇怪的事物看得多了，习惯了，也就不觉得奇怪了。",
-   "explanation_en": "The first “怪” in the saying “见怪不怪” is a noun meaning something strange, and the second “怪” is a verb meaning feeling strange. The saying means that one has seen too many unusual things to be surprised by any."
-  }
- },
- "teacher": {
-  "ref": {
-   "book": "teacher",
-   "pages": [
-    124,
-    125,
-    126,
-    127,
-    128,
-    129
-   ]
-  },
-  "objectives_zh": [
-   "重点词语：学生能够熟练掌握：“向、只、段、同意、相信、关于、机会、种、奇怪、地”的词义和用法",
-   "语言点：学生能够了解并掌握：（1）“只要……就……”表示条件和结果（2）“关于”引出涉及的对象",
-   "汉字：学生能够：根据已学生词猜测出3个旧字新词“动物园、人名、自信”的意思",
-   "功能：学生能够：（1）用“只要……就……”表示必要条件和结果（2）用“关于”引出涉及的对象"
-  ],
-  "steps": [
-   {
-    "title_zh": "复习旧课",
-    "body_zh": "1 教师展示第17课的热身图片，请学生根据图片说出生词。\n2 教师根据第17课的内容进行提问。\n（1）你请过假吗？因为什么请假？请了几天假？\n（2）有什么事儿你没做过，但是想做？\n（3）你喜欢运动吗？你每天怎么锻炼？\n（4）你喜欢吃什么菜？说说你为什么喜欢吃。\n（5）你们国家有什么有名的地方吗？大家都知道这些地方吗？"
-   },
-   {
-    "title_zh": "学习新课 1 热身",
-    "body_zh": "热身1：学生两人一组，合作完成热身1；教师出示热身1的图片，学生根据图片说出词语，核对答案；最后全体学生齐读热身环节所有词语，要求语音标准，声调准确。\n答案：①C　②A　③B　④F　⑤E　⑥D\n热身2：可留至语言点（1）“只要……就……”导入时使用。"
-   },
-   {
-    "title_zh": "2 生词",
-    "body_zh": "（1）生词快速认读及正音\n向、万、只、嘴、动物、段、不但……而且……、有名、同意、相信、关于、机会、国家、种、特点、奇怪、地\n· 教师先带领学生快速认读一遍生词；\n· 取消拼音，带领学生再次认读；\n· 请单个学生独自认读2-3个生词；\n· 最后全班一起快速认读所有的生词。\n（2）生词讲解方式\n· 直观法（如图片、照片、实物等）展示：万、嘴、动物、国家\n· 启发式引导：不但……而且……、有名\n教师给出句子部分内容让学生进行补充，如：\n我常常吃中国菜，因为中国菜不但很好吃，而且很便宜。\n（3）重点生词扩展及常用搭配\n向—向朋友问好—向你借钱—你会向别人借钱吗？\n只—一只狗—一只小猫—树上站着两只小鸟。\n段—一段时间—这段时间—前一段时间，我病了。\n同意—同意了—不同意—爸爸同意我去中国学习汉语。\n相信—相信朋友—不相信—我相信他们会同意的。\n　—你要相信自己，一定能完成这个工作。\n关于—关于中国—关于朋友—关于你的工作，我们会帮你的。\n机会—有机会—没有机会—工作机会—北京有很多工作机会。\n种—一种花—这种苹果—每种文化都有自己的特点。\n奇怪—很奇怪—我很奇怪，他为什么不生气。\n　—不奇怪—在我们这儿，每个人都会骑马，一点儿也不奇怪。\n地—高兴地说—很快地吃完了—我慢慢地习惯了北京的生活。\n练习册相关练习：第121页／一／第一部分，第124页／二／第二部分"
-   },
-   {
-    "title_zh": "3 语言点（1）只要……就……",
-    "body_zh": "① 语言点解析\n“只要……就……”连接的是一个条件复句，“只要”后边是必要条件，“就”后边是其结果。\n② 语言点导入\n教师可利用本课热身2的表格导入语言点。\n教师带领学生认读表格中的词语。\n教师示范：\n教师：什么时候你会出去玩儿？\n学生：天气好的时候，我会出去玩儿。\n教师引导学生说出目标句：只要天气好，我就出去玩儿。\n③ 语言点操练\n教师利用热身2，让学生互相询问并回答。\n注意：主语可以放在“只要”前，也可以放在“只要”后，如果后边的分句有第二个主语，要放在“就”的前边。"
-   },
-   {
-    "title_zh": "3 语言点（2）“关于”",
-    "body_zh": "① 语言点解析\n“关于”后边接名词，引出涉及的对象。\n［关于＋对象］\n② 语言点导入\n教师给出情景，引发学生思考，引导学生理解并说出目标句。\n情景：我看了一个中国电影，这个电影是讲中国历史的。\n目标句：我看了一个关于中国历史的电影。\n③ 语言点操练\n教师给出词组，请学生说句子：\n这件事，我不知道—关于这件事，我不知道。\n看了一本书，中国文化—我看了一本关于中国文化的书。\n学习汉语，介绍方法—老师给我们介绍了一些关于学习汉语的方法。\n出国的事，爸爸同意了—关于出国的事，爸爸已经同意了。\n④ 语言点扩展练习\n教师提问，让学生根据实际情况回答。\n你喜欢看什么书？\n你常常看什么电影？\n你以后想做什么样的工作？"
-   },
-   {
-    "title_zh": "4 课文 课文1",
-    "body_zh": "（1）让学生听两遍录音并回答下列问题：\n朋友为什么向老周借钱？——他打算买房子。\n朋友要借多少钱？——他要借5万块钱。\n朋友打算在哪儿买房？——他打算在医院前面买房。\n（2）教师领读课文两遍，让学生分角色朗读课文，注意说话人的语气。\n（3）模仿练习\n学生两人一组，根据提示词模仿课文内容进行对话练习。\nA：……，我打算……，想……。\nB：没问题，只要……，就……。还……？\nA：还……。\nB：好，我下午……。你打算……？\nA：就……。\nB：那……。"
-   },
-   {
-    "title_zh": "4 课文 课文2",
-    "body_zh": "（1）让学生听两遍录音并回答下列问题：\n男的（小明）要买什么回去？——他想买回去一只狗。\n妈妈同意吗？为什么？——不同意，她觉得小明不会照顾它。\n妈妈为什么这样觉得？——这段时间小明自己的衣服都没洗，所以不能照顾好小狗。\n（2）教师领读课文两遍，让学生分角色朗读课文。\n（3）模仿练习\n学生两人一组，根据提示词模仿课文内容进行对话练习。\nA：……，你看那只……多……，……，我们……？\nB：动物和……，都……。……，谁……？\nA：我……。\nB：这段时间……，你能……？\nA：只要……，我就……。"
-   },
-   {
-    "title_zh": "4 课文 课文3",
-    "body_zh": "（1）让学生听两遍录音并回答下列问题：\n男的为什么选择这个公司？——这个公司不但很有名，而且工作环境好。\n女的说这个工作怎么样？——做这个工作有点儿累，需要经常去外地。\n男的什么时候去上班？——他明天去上班。\n（2）教师领读课文两遍，让学生分角色朗读课文，注意说话人的语气。\n（3）教师给提示词，带领学生复述课文。\n提示词：选择、不但……而且……、有名、环境、累、外地、同意、愿意"
-   },
-   {
-    "title_zh": "4 课文 课文4",
-    "body_zh": "（1）快速阅读，并回答：不同国家的文化有什么特点？\n（2）教师领读课文两遍，并回答下列问题：\n到了一个新环境，你会觉得怎么样？——会觉得什么都很新鲜，而且还会有点儿奇怪。\n到了一个新环境，人们会习惯吗？——到了一个新环境，经过一段时间就会慢慢习惯的。\n（3）教师给提示词，带领学生复述课文。\n提示词：国家、文化、特点、新鲜、奇怪、人名、姓、经过\n（4）教师请学生根据课文，说说自己国家的一个文化特点。\n练习册相关练习：第127页／四"
-   },
-   {
-    "title_zh": "5 汉字",
-    "body_zh": "旧字新词：\n① 教师领读以前学过的词语和新词，并让学生猜猜新词的意思。\n· 领读：动物、公园、动物园\n问学生：“动物园”是什么意思？——一个像公园的地方，里边有很多动物。\n· 领读：人、名字、人名\n问学生：“人名”是什么意思？——人的名字。\n· 领读：自己、相信、自信\n问学生：“自信”是什么意思？——自己相信自己。\n注意“自信”是一个形容词。\n② 教师领读新词扩展，通过情景，理解新词的意思和用法：\n动物园：去动物园／动物园里／我想去动物园看大熊猫。\n人名：一个人名／记人名／中国的人名和美国的不一样。\n自信：很自信／不自信／这个人不太自信。\n汉字辨认练习：\n辨认下列汉字并组词。\n于：________、________　机：________、________\n干：________、________　几：________、________\n种：________、________　且：________、________\n和：________、________　自：________、________\n万：________、________\n方：________、________\n练习册相关练习：第127页／三／第三部分"
-   },
-   {
-    "title_zh": "6 补充课堂活动——根据词卡写句子",
-    "body_zh": "4-5个学生一组，每组随机抽取3-4个词卡，用这些词完成一个句子，比比哪组用最短的时间写出正确的句子。\n参考词语：只要……就、像、万、只、嘴、动物、段、不但……而且、有名、同意、相信、关于、机会、国家、种、奇怪……"
-   },
-   {
-    "title_zh": "7 俗语",
-    "body_zh": "教师引导学生理解俗语的含义，注意这里的“怪”指奇怪的事物，例如，这种事我见得多了，早就见怪不怪了。"
-   },
-   {
-    "title_zh": "8 本课小结",
-    "body_zh": "· 语言点：用“只要……就……”表示必要条件和结果\n　　　　　用“关于”引出关涉的对象\n· 汉　字：旧字新词：动物园、人名、自信"
-   }
-  ],
-  "notes_zh": [
-   "注意：主语可以放在“只要”前，也可以放在“只要”后，如果后边的分句有第二个主语，要放在“就”的前边。（语言点1）",
-   "注意“自信”是一个形容词。（汉字）",
-   "注意这里的“怪”指奇怪的事物，例如，这种事我见得多了，早就见怪不怪了。（俗语）"
-  ],
-  "warmup_answers_zh": [
-   "热身1 答案：①C　②A　③B　④F　⑤E　⑥D",
-   "热身2：可留至语言点（1）“只要……就……”导入时使用。"
-  ],
-  "text_questions": [
-   {
-    "text": 1,
-    "q_zh": "朋友为什么向老周借钱？",
-    "a_zh": "他打算买房子。"
-   },
-   {
-    "text": 1,
-    "q_zh": "朋友要借多少钱？",
-    "a_zh": "他要借5万块钱。"
-   },
-   {
-    "text": 1,
-    "q_zh": "朋友打算在哪儿买房？",
-    "a_zh": "他打算在医院前面买房。"
-   },
-   {
-    "text": 2,
-    "q_zh": "男的（小明）要买什么回去？",
-    "a_zh": "他想买回去一只狗。"
-   },
-   {
-    "text": 2,
-    "q_zh": "妈妈同意吗？为什么？",
-    "a_zh": "不同意，她觉得小明不会照顾它。"
-   },
-   {
-    "text": 2,
-    "q_zh": "妈妈为什么这样觉得？",
-    "a_zh": "这段时间小明自己的衣服都没洗，所以不能照顾好小狗。"
-   },
-   {
-    "text": 3,
-    "q_zh": "男的为什么选择这个公司？",
-    "a_zh": "这个公司不但很有名，而且工作环境好。"
-   },
-   {
-    "text": 3,
-    "q_zh": "女的说这个工作怎么样？",
-    "a_zh": "做这个工作有点儿累，需要经常去外地。"
-   },
-   {
-    "text": 3,
-    "q_zh": "男的什么时候去上班？",
-    "a_zh": "他明天去上班。"
-   },
-   {
-    "text": 4,
-    "q_zh": "不同国家的文化有什么特点？"
-   },
-   {
-    "text": 4,
-    "q_zh": "到了一个新环境，你会觉得怎么样？",
-    "a_zh": "会觉得什么都很新鲜，而且还会有点儿奇怪。"
-   },
-   {
-    "text": 4,
-    "q_zh": "到了一个新环境，人们会习惯吗？",
-    "a_zh": "到了一个新环境，经过一段时间就会慢慢习惯的。"
-   }
-  ],
-  "summary_zh": "语言点：用“只要……就……”表示必要条件和结果；用“关于”引出关涉的对象。汉字：旧字新词：动物园、人名、自信。"
- },
- "workbook": {
-  "ref": {
-   "book": "workbook",
-   "pages": [
-    125,
-    126,
-    127,
-    128,
-    129,
-    130,
-    131
-   ]
-  },
-  "sections": [
-   {
-    "n": "一、听力 第一部分",
-    "type_zh": "听力 第一部分",
-    "instruction_zh": "第1–5题：听对话，选择与对话内容一致的图片",
-    "instruction_en": "Questions 1-5: Choose the right picture for each dialogue you hear.",
-    "audio": "hsk3-workbook-18-part1.mp3",
-    "items": [
-     {
-      "n": "例",
-      "zh": "男：喂，请问张经理在吗？ 女：他正在开会，您半个小时以后再打，好吗？",
-      "transcript_zh": "男：喂，请问张经理在吗？ 女：他正在开会，您半个小时以后再打，好吗？",
-      "options": {
-       "A": "[picture] a boy by a wooden fence stroking a giraffe",
-       "B": "[picture] an ink painting of several galloping horses",
-       "C": "[picture] a woman walking with a golden retriever dog in a park with trees",
-       "D": "[picture] a smiling woman in a uniform talking on a telephone",
-       "E": "[picture] a laughing young woman with a laughing baby",
-       "F": "[picture] a thin boy standing on a bathroom scale"
-      },
-      "answer": "D",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        125
-       ]
-      }
-     },
-     {
-      "n": 1,
-      "zh": "",
-      "options": {
-       "A": "[picture] a boy by a wooden fence stroking a giraffe",
-       "B": "[picture] an ink painting of several galloping horses",
-       "C": "[picture] a woman walking with a golden retriever dog in a park with trees",
-       "D": "[picture] a smiling woman in a uniform talking on a telephone",
-       "E": "[picture] a laughing young woman with a laughing baby",
-       "F": "[picture] a thin boy standing on a bathroom scale"
-      },
-      "transcript_zh": "男：孩子怎么了，变化这么大，我真没办法相信。 女：我自己也没想到，他一个星期就瘦了五斤。",
-      "answer": "F",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        196
-       ]
-      }
-     },
-     {
-      "n": 2,
-      "zh": "",
-      "options": {
-       "A": "[picture] a boy by a wooden fence stroking a giraffe",
-       "B": "[picture] an ink painting of several galloping horses",
-       "C": "[picture] a woman walking with a golden retriever dog in a park with trees",
-       "D": "[picture] a smiling woman in a uniform talking on a telephone",
-       "E": "[picture] a laughing young woman with a laughing baby",
-       "F": "[picture] a thin boy standing on a bathroom scale"
-      },
-      "transcript_zh": "女：你下星期去北京？你的那只狗怎么办？ 男：我有个同学很喜欢小动物，她同意帮我照顾几天。",
-      "answer": "C",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        196
-       ]
-      }
-     },
-     {
-      "n": 3,
-      "zh": "",
-      "options": {
-       "A": "[picture] a boy by a wooden fence stroking a giraffe",
-       "B": "[picture] an ink painting of several galloping horses",
-       "C": "[picture] a woman walking with a golden retriever dog in a park with trees",
-       "D": "[picture] a smiling woman in a uniform talking on a telephone",
-       "E": "[picture] a laughing young woman with a laughing baby",
-       "F": "[picture] a thin boy standing on a bathroom scale"
-      },
-      "transcript_zh": "男：这是你儿子？他跟你长得真像啊。 女：是，但是他的嘴更像他爸爸。",
-      "answer": "E",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        196
-       ]
-      }
-     },
-     {
-      "n": 4,
-      "zh": "",
-      "options": {
-       "A": "[picture] a boy by a wooden fence stroking a giraffe",
-       "B": "[picture] an ink painting of several galloping horses",
-       "C": "[picture] a woman walking with a golden retriever dog in a park with trees",
-       "D": "[picture] a smiling woman in a uniform talking on a telephone",
-       "E": "[picture] a laughing young woman with a laughing baby",
-       "F": "[picture] a thin boy standing on a bathroom scale"
-      },
-      "transcript_zh": "男：这是黄老师的画儿吧，他的画都非常有名。 女：对，我买这画儿花了三万块呢。",
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        196
-       ]
-      }
-     },
-     {
-      "n": 5,
-      "zh": "",
-      "options": {
-       "A": "[picture] a boy by a wooden fence stroking a giraffe",
-       "B": "[picture] an ink painting of several galloping horses",
-       "C": "[picture] a woman walking with a golden retriever dog in a park with trees",
-       "D": "[picture] a smiling woman in a uniform talking on a telephone",
-       "E": "[picture] a laughing young woman with a laughing baby",
-       "F": "[picture] a thin boy standing on a bathroom scale"
-      },
-      "transcript_zh": "女：你怎么总是带孩子到动物园看动物，能不能换个地方？ 男：这你就不知道了吧，动物园不但环境好，而且孩子对动物很感兴趣。",
-      "answer": "A",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        196
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "一、听力 第二部分",
-    "type_zh": "听力 第二部分",
-    "instruction_zh": "第6–10题：听句子，判断对错",
-    "instruction_en": "Questions 6-10: Decide whether the statements are true or false based on the sentences you hear.",
-    "audio": "hsk3-workbook-18-part2.mp3",
-    "items": [
-     {
-      "n": "例1",
-      "zh": "他希望自己很健康。",
-      "transcript_zh": "为了让自己更健康，他每天都花一个小时去锻炼身体。",
-      "answer": "√",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        126
-       ]
-      }
-     },
-     {
-      "n": "例2",
-      "zh": "那块儿手表不是他的。",
-      "transcript_zh": "今天我想早点儿回家。看了看手表，才5点。过了一会儿再看表，还是5点，我这才发现我的手表不走了。",
-      "answer": "×",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        126
-       ]
-      }
-     },
-     {
-      "n": 6,
-      "zh": "聪明人知道机会不常有。",
-      "transcript_zh": "聪明的人只要看到机会，就会想办法拿到，因为他们知道，很多时候机会只有一次。",
-      "answer": "√",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        196
-       ]
-      }
-     },
-     {
-      "n": 7,
-      "zh": "小云要去体育馆。",
-      "transcript_zh": "小云，你从动物园出来后，向左走，到了地铁站以后再向右走，然后就能看到体育馆了。",
-      "answer": "√",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        196
-       ]
-      }
-     },
-     {
-      "n": 8,
-      "zh": "关于中国的春节，他比较了解。",
-      "transcript_zh": "关于中国的节日，除了春节以外，别的我都不了解，但是我打算找一个中国老师教教我。",
-      "answer": "√",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        196
-       ]
-      }
-     },
-     {
-      "n": 9,
-      "zh": "他认为那个宾馆不错。",
-      "transcript_zh": "那个宾馆离我们学校很近，不但环境很好，而且不太贵，每次有同学或者朋友来，我都会带他们去那儿住。",
-      "answer": "√",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        196
-       ]
-      }
-     },
-     {
-      "n": 10,
-      "zh": "他的汉语水平很高。",
-      "transcript_zh": "我学习汉语一年多了，水平一般。我能听懂中国人说的一些简单的句子，也可以说一点儿。我相信明年我一定会说得更好的。",
-      "answer": "×",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        196
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "一、听力 第三部分",
-    "type_zh": "听力 第三部分",
-    "instruction_zh": "第11–15题：听短对话，选择正确答案",
-    "instruction_en": "Questions 11-15: Listen to the short dialogues and choose the right answers.",
-    "audio": "hsk3-workbook-18-part3.mp3",
-    "items": [
-     {
-      "n": "例",
-      "zh": "男的想让小王做什么？",
-      "transcript_zh": "男：小王，帮我开一下门，好吗？谢谢！ 女：没问题。您去超市了？买了这么多东西。 问：男的想让小王做什么？",
-      "options": {
-       "A": "开门",
-       "B": "拿东西",
-       "C": "去超市买东西"
-      },
-      "answer": "A",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        126
-       ]
-      }
-     },
-     {
-      "n": 11,
-      "zh": "女的最可能是做什么的？",
-      "options": {
-       "A": "司机",
-       "B": "老师",
-       "C": "医生"
-      },
-      "transcript_zh": "男：你明天上午要去哪儿，陪我去医院吧？ 女：我要带学生去动物园看大熊猫，后天行吗？ 问：女的最可能是做什么的？",
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        196
-       ]
-      }
-     },
-     {
-      "n": 12,
-      "zh": "男的最近为什么很少看电视？",
-      "options": {
-       "A": "不爱看电视",
-       "B": "常去动物园",
-       "C": "在准备比赛"
-      },
-      "transcript_zh": "女：昨晚的《动物世界》你看了吗？ 男：没有，我最近忙着准备下周的比赛，很少看电视。 问：男的最近为什么很少看电视？",
-      "answer": "C",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        196
-       ]
-      }
-     },
-     {
-      "n": 13,
-      "zh": "男的为什么要给女的打电话？",
-      "options": {
-       "A": "帮她找手机",
-       "B": "找她有事情",
-       "C": "跟女的见面"
-      },
-      "transcript_zh": "女：奇怪，我记得把手机放进包里了，怎么找不到了？ 男：别着急，我给你打个电话，就知道在哪儿了。 问：男的为什么要给女的打电话？",
-      "answer": "A",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        196
-       ]
-      }
-     },
-     {
-      "n": 14,
-      "zh": "关于男的，可以知道什么？",
-      "options": {
-       "A": "经常骑自行车",
-       "B": "上班不能骑车",
-       "C": "不会骑自行车"
-      },
-      "transcript_zh": "女：你不会骑自行车？ 男：是的，在我们那儿很少有机会骑。 问：关于男的，可以知道什么？",
-      "answer": "C",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        196
-       ]
-      }
-     },
-     {
-      "n": 15,
-      "zh": "关于男的，可以知道什么？",
-      "options": {
-       "A": "身体不好",
-       "B": "吃得很饱",
-       "C": "吃得很少"
-      },
-      "transcript_zh": "女：吃饭不能吃太饱，那对你的身体不好。 男：关于这一点，我同意，可是吃太少，我晚上睡不着觉。 问：关于男的，可以知道什么？",
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        196
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "一、听力 第四部分",
-    "type_zh": "听力 第四部分",
-    "instruction_zh": "第16–20题：听长对话，选择正确答案",
-    "instruction_en": "Questions 16-20: Listen to the dialogues and choose the right answers.",
-    "audio": "hsk3-workbook-18-part4.mp3",
-    "items": [
-     {
-      "n": "例",
-      "zh": "男的在做什么？",
-      "transcript_zh": "女：晚饭做好了，准备吃饭了。 男：等一会儿，比赛还有三分钟就结束了。 女：快点儿吧，一起吃，菜冷了就不好吃了。 男：你先吃，我马上就看完了。 问：男的在做什么？",
-      "options": {
-       "A": "洗澡",
-       "B": "吃饭",
-       "C": "看电视"
-      },
-      "answer": "C",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        127
-       ]
-      }
-     },
-     {
-      "n": 16,
-      "zh": "男的小时候怎么样？",
-      "options": {
-       "A": "喜欢照相",
-       "B": "长得很矮",
-       "C": "长得很高"
-      },
-      "transcript_zh": "女：这是你小时候的照片？ 男：是，我小时候比较矮。 女：你现在有一米九吗？ 男：一米九一，我都不相信自己能长这么高。 问：男的小时候怎么样？",
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        196
-       ]
-      }
-     },
-     {
-      "n": 17,
-      "zh": "女的为什么买票花了很长时间？",
-      "options": {
-       "A": "她是外地人",
-       "B": "买票的人多",
-       "C": "开门比较晚"
-      },
-      "transcript_zh": "男：你怎么买票买了这么久？ 女：节日里来动物园的人特别多。 男：怎么那么多人啊？我们的票买到了吗？ 女：买到了，今天不但来了很多北京人，而且还有很多外地人。 问：女的为什么买票花了很长时间？",
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        196
-       ]
-      }
-     },
-     {
-      "n": 18,
-      "zh": "女的现在要做什么？",
-      "options": {
-       "A": "去体育馆",
-       "B": "洗澡",
-       "C": "洗车"
-      },
-      "transcript_zh": "女：今天我们还去国家体育馆吗？ 男：只要你不累，我们就去。 女：那你等我一会儿，我先洗个澡。 男：行，我去洗车。 问：女的现在要做什么？",
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        196
-       ]
-      }
-     },
-     {
-      "n": 19,
-      "zh": "那家饭馆的什么很有名？",
-      "options": {
-       "A": "羊肉",
-       "B": "牛肉",
-       "C": "鱼"
-      },
-      "transcript_zh": "男：听说这家饭馆的羊肉非常有名，要不要来一盘？ 女：我不吃牛羊肉，有没有别的菜？ 男：我看看菜单，你看这个鱼怎么样？ 女：行，只要你喜欢，我们就点。 问：那家饭馆的什么很有名？",
-      "answer": "A",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        196
-       ]
-      }
-     },
-     {
-      "n": 20,
-      "zh": "小周为什么没来上班？",
-      "options": {
-       "A": "去学习了",
-       "B": "生病了",
-       "C": "工作不认真"
-      },
-      "transcript_zh": "男：奇怪，这段时间怎么没看见小周来上班？她病了吗？ 女：你不知道吗？公司已经送她去外地学习了。 男：是吗？她有这么好的机会啊。 女：小周工作认真，经理当然让她去。 问：小周为什么没来上班？",
-      "answer": "A",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        196
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "二、阅读 第一部分",
-    "type_zh": "阅读 第一部分",
-    "instruction_zh": "第21–25题：选择合适的问答",
-    "instruction_en": "Questions 21-25: Match the two parts of the same dialogue.",
-    "items": [
-     {
-      "n": "例",
-      "zh": "你知道怎么去那儿吗？",
-      "options": {
-       "A": "你怎么一直看着我，怎么了？",
-       "B": "请慢走，欢迎您下次再来我们这儿玩儿。",
-       "C": "我也觉得很奇怪，她过去不是这样的。",
-       "D": "楼下这只小狗是谁家的？",
-       "E": "当然。我们先坐公共汽车，然后换地铁。",
-       "F": "中国人的人名一般都没那么简单。"
-      },
-      "answer": "E",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        128
-       ]
-      }
-     },
-     {
-      "n": 21,
-      "zh": "我同意，根据我的了解，这是一种文化。",
-      "options": {
-       "A": "你怎么一直看着我，怎么了？",
-       "B": "请慢走，欢迎您下次再来我们这儿玩儿。",
-       "C": "我也觉得很奇怪，她过去不是这样的。",
-       "D": "楼下这只小狗是谁家的？",
-       "E": "当然。我们先坐公共汽车，然后换地铁。",
-       "F": "中国人的人名一般都没那么简单。"
-      },
-      "answer": "F",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        196
-       ]
-      }
-     },
-     {
-      "n": 22,
-      "zh": "你刚才吃什么了，嘴上有一个东西。",
-      "options": {
-       "A": "你怎么一直看着我，怎么了？",
-       "B": "请慢走，欢迎您下次再来我们这儿玩儿。",
-       "C": "我也觉得很奇怪，她过去不是这样的。",
-       "D": "楼下这只小狗是谁家的？",
-       "E": "当然。我们先坐公共汽车，然后换地铁。",
-       "F": "中国人的人名一般都没那么简单。"
-      },
-      "answer": "A",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        196
-       ]
-      }
-     },
-     {
-      "n": 23,
-      "zh": "真奇怪，附近人家里没有这种狗。",
-      "options": {
-       "A": "你怎么一直看着我，怎么了？",
-       "B": "请慢走，欢迎您下次再来我们这儿玩儿。",
-       "C": "我也觉得很奇怪，她过去不是这样的。",
-       "D": "楼下这只小狗是谁家的？",
-       "E": "当然。我们先坐公共汽车，然后换地铁。",
-       "F": "中国人的人名一般都没那么简单。"
-      },
-      "answer": "D",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        196
-       ]
-      }
-     },
-     {
-      "n": 24,
-      "zh": "好的，有机会我一定会再来的，再见。",
-      "options": {
-       "A": "你怎么一直看着我，怎么了？",
-       "B": "请慢走，欢迎您下次再来我们这儿玩儿。",
-       "C": "我也觉得很奇怪，她过去不是这样的。",
-       "D": "楼下这只小狗是谁家的？",
-       "E": "当然。我们先坐公共汽车，然后换地铁。",
-       "F": "中国人的人名一般都没那么简单。"
-      },
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        196
-       ]
-      }
-     },
-     {
-      "n": 25,
-      "zh": "小丽最近经常迟到，你是她的好朋友，你知道怎么了吗？",
-      "options": {
-       "A": "你怎么一直看着我，怎么了？",
-       "B": "请慢走，欢迎您下次再来我们这儿玩儿。",
-       "C": "我也觉得很奇怪，她过去不是这样的。",
-       "D": "楼下这只小狗是谁家的？",
-       "E": "当然。我们先坐公共汽车，然后换地铁。",
-       "F": "中国人的人名一般都没那么简单。"
-      },
-      "answer": "C",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        196
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "二、阅读 第二部分",
-    "type_zh": "阅读 第二部分",
-    "instruction_zh": "第26–30题：选择合适的词语填空",
-    "instruction_en": "Questions 26-30: Choose the proper words to fill in the brackets.",
-    "word_bank": [
-     [
-      "A 相信",
-      "B 地",
-      "C 只要",
-      "D 机会",
-      "E 声音",
-      "F 关于"
-     ]
-    ],
-    "items": [
-     {
-      "n": "例",
-      "zh": "她说话的（　）多好听啊！",
-      "options": {
-       "A": "相信",
-       "B": "地",
-       "C": "只要",
-       "D": "机会",
-       "E": "声音",
-       "F": "关于"
-      },
-      "answer": "E",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        128
-       ]
-      }
-     },
-     {
-      "n": 26,
-      "zh": "（　）出国学习的事，我还有几个问题。",
-      "options": {
-       "A": "相信",
-       "B": "地",
-       "C": "只要",
-       "D": "机会",
-       "E": "声音",
-       "F": "关于"
-      },
-      "answer": "F",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        196
-       ]
-      }
-     },
-     {
-      "n": 27,
-      "zh": "很多人都想去大城市工作，因为（　）多一些。",
-      "options": {
-       "A": "相信",
-       "B": "地",
-       "C": "只要",
-       "D": "机会",
-       "E": "声音",
-       "F": "关于"
-      },
-      "answer": "D",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        196
-       ]
-      }
-     },
-     {
-      "n": 28,
-      "zh": "你别着急，慢慢（　）说。",
-      "options": {
-       "A": "相信",
-       "B": "地",
-       "C": "只要",
-       "D": "机会",
-       "E": "声音",
-       "F": "关于"
-      },
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        196
-       ]
-      }
-     },
-     {
-      "n": 29,
-      "zh": "A：明天我一定不会迟到了。 B：你说什么我都不会（　）的。",
-      "options": {
-       "A": "相信",
-       "B": "地",
-       "C": "只要",
-       "D": "机会",
-       "E": "声音",
-       "F": "关于"
-      },
-      "answer": "A",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        196
-       ]
-      }
-     },
-     {
-      "n": 30,
-      "zh": "A：爸爸，周末我想去公园玩儿。 B：好啊，（　）不下雨，我就带你去。",
-      "options": {
-       "A": "相信",
-       "B": "地",
-       "C": "只要",
-       "D": "机会",
-       "E": "声音",
-       "F": "关于"
-      },
-      "answer": "C",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        196
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "二、阅读 第三部分",
-    "type_zh": "阅读 第三部分",
-    "instruction_zh": "第31–35题：选择正确答案",
-    "instruction_en": "Questions 31-35: Choose the right answers.",
-    "items": [
-     {
-      "n": "例",
-      "zh": "您是来参加今天会议的吗？您来早了一点儿，现在才八点半。您先进来坐吧。 ★会议最可能几点开始？",
-      "options": {
-       "A": "8点",
-       "B": "8点半",
-       "C": "9点"
-      },
-      "answer": "C",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        129
-       ]
-      }
-     },
-     {
-      "n": 31,
-      "zh": "有人问我长得像谁，关于这个问题，我觉得很难回答。家里人一般觉得，我的鼻子和嘴像我爸爸，我的眼睛像我妈妈，所以我有机会就会跟他们比一比。我发现，我的鼻子、嘴和眼睛不但像我爸爸，而且也像我妈妈，但是比他们的都好看。你看，我是不是很自信？ ★我觉得谁好看？",
-      "options": {
-       "A": "爸爸",
-       "B": "妈妈",
-       "C": "自己"
-      },
-      "answer": "C",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        196
-       ]
-      }
-     },
-     {
-      "n": 32,
-      "zh": "以前我是一家旅游公司的经理，有机会去很多国家。我去很多城市旅游过，吃过很多有名的菜，但是如果你问我“世界上最好的地方是哪儿？最好吃的是哪种菜？”，我相信我一定会回答：“最好的地方是我的家，最好吃的是妈妈为我做的菜。” ★我：",
-      "options": {
-       "A": "是旅游公司的经理",
-       "B": "很喜欢做菜",
-       "C": "去过很多城市"
-      },
-      "answer": "C",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        196
-       ]
-      }
-     },
-     {
-      "n": 33,
-      "zh": "你刚到我们这儿可能会觉得很奇怪，我们这儿的冬天很冷，夏天很热，春天的天气很好，不冷不热，但是这段时间不长，冬天过完很快就到夏天了。所以你不用买那么多春天穿的衣服，相信你住的时间长了，就会慢慢地习惯的。 ★我们这里：",
-      "options": {
-       "A": "天气很奇怪",
-       "B": "春天不长",
-       "C": "四季都不冷"
-      },
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        196
-       ]
-      }
-     },
-     {
-      "n": 34,
-      "zh": "今天我买了很多铅笔，这些铅笔都是为我儿子买的，这段时间他在学画画儿，他最爱画小动物，小狗、小猫、小鱼什么的，然后给这些小动物画上不一样的颜色。我相信，只要他认真学习画画儿，以后一定会是一个有名的画家的。 ★我儿子：",
-      "options": {
-       "A": "是一个画家",
-       "B": "喜欢画小动物",
-       "C": "买了很多铅笔"
-      },
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        196
-       ]
-      }
-     },
-     {
-      "n": 35,
-      "zh": "奶奶以前是他们学校里有名的音乐老师，她不但歌唱得特别好听，而且对人也非常热情，大家都很喜欢她。最近这段时间，奶奶身体不太舒服，很多人都来家里看她，有的人还是从外地来的，没来的人也都打电话向她问好。他们说，只要奶奶心里高兴，病很快就会好的。 ★关于奶奶，可以知道：",
-      "options": {
-       "A": "学生们都很喜欢她",
-       "B": "她的学生都在外地",
-       "C": "常给学生打电话"
-      },
-      "answer": "A",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        196
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "三、书写 第一部分",
-    "type_zh": "书写 第一部分",
-    "instruction_zh": "第36–40题：连词成句",
-    "instruction_en": "Questions 36-40: Rearrange the words/phrases to make sentences.",
-    "items": [
-     {
-      "n": "例",
-      "zh": "小船　上　一　河　条　有",
-      "answer": "河上有一条小船。",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        130
-       ]
-      }
-     },
-     {
-      "n": 36,
-      "zh": "关于　我想买　一本　动物　的　书",
-      "answer": "我想买一本关于动物的书。",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        196
-       ]
-      }
-     },
-     {
-      "n": 37,
-      "zh": "我相信　同意　妈妈　的　会",
-      "answer": "我相信妈妈会同意的。",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        196
-       ]
-      }
-     },
-     {
-      "n": 38,
-      "zh": "旅游　有机会　我就去　只要　别的国家",
-      "answer": "只要有机会我就去别的国家旅游。",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        196
-       ]
-      }
-     },
-     {
-      "n": 39,
-      "zh": "大家　看着我　地　奇怪　都",
-      "answer": "大家都奇怪地看着我。",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        196
-       ]
-      }
-     },
-     {
-      "n": 40,
-      "zh": "问路　向我　外地人　一个",
-      "answer": "一个外地人向我问路。",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        196
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "三、书写 第二部分",
-    "type_zh": "书写 第二部分",
-    "instruction_zh": "第41–45题：看拼音，写汉字",
-    "instruction_en": "Questions 41-45: Write the characters based on their pinyin.",
-    "items": [
-     {
-      "n": "例",
-      "zh": "没（　）系，别难过，高兴点儿。",
-      "hint_zh": "guān",
-      "answer": "关",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        130
-       ]
-      }
-     },
-     {
-      "n": 41,
-      "zh": "你要多（　）小丽学习，你看她，做事总是很认真。",
-      "hint_zh": "xiàng",
-      "answer": "向",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        196
-       ]
-      }
-     },
-     {
-      "n": 42,
-      "zh": "这（　）小猫很可爱，它叫什么名字？",
-      "hint_zh": "zhī",
-      "answer": "只",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        196
-       ]
-      }
-     },
-     {
-      "n": 43,
-      "zh": "关于你们（　）家，你能简单介绍一下吗？",
-      "hint_zh": "guó",
-      "answer": "国",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        196
-       ]
-      }
-     },
-     {
-      "n": 44,
-      "zh": "妈妈不同意他出去玩儿，他生气（　）回房间了。",
-      "hint_zh": "de",
-      "answer": "地",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        196
-       ]
-      }
-     },
-     {
-      "n": 45,
-      "zh": "我最喜欢小狗，你最喜欢哪种（　）物？",
-      "hint_zh": "dòng",
-      "answer": "动",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        196
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "三、书写 第三部分",
-    "type_zh": "书写 第三部分",
-    "instruction_zh": "第46–50题：辨认汉字，选择正确的汉字填空",
-    "instruction_en": "Questions 46-50: Distinguish the characters and fill in the blanks.",
-    "items": [
-     {
-      "n": "例",
-      "zh": "我不知道________个地方在________儿。",
-      "hint_zh": "（那、哪）",
-      "answer": "那、哪",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        131
-       ]
-      }
-     },
-     {
-      "n": 46,
-      "zh": "关________城市环境的问题，我们认为最重要的是把街道打扫________净。",
-      "hint_zh": "（于、干）",
-      "answer": "于、干",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        196
-       ]
-      }
-     },
-     {
-      "n": 47,
-      "zh": "这________个人中，你是最聪明的，所以你有________会来我们公司工作。",
-      "hint_zh": "（机、几）",
-      "answer": "几、机",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        196
-       ]
-      }
-     },
-     {
-      "n": 48,
-      "zh": "小丽________小刚要去看朋友，但是他们不知道买哪________水果好。",
-      "hint_zh": "（种、和）",
-      "answer": "和、种",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        196
-       ]
-      }
-     },
-     {
-      "n": 49,
-      "zh": "请你相信，这件事我不但________己就能做，而________能做得很好。",
-      "hint_zh": "（且、自）",
-      "answer": "自、且",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        196
-       ]
-      }
-     },
-     {
-      "n": 50,
-      "zh": "这个地________的房子太贵了，那么小就需要三百多________。",
-      "hint_zh": "（万、方）",
-      "answer": "方、万",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        196
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "四、复习",
-    "type_zh": "复习",
-    "instruction_zh": "第1–2题：根据课文内容填空",
-    "instruction_en": "Questions 1-2: Fill in the blanks based on the texts in the textbook.",
-    "items": [
-     {
-      "n": 1,
-      "zh": "小明看见一________可爱的小狗，眼睛大大的，________小小的，想买回去。妈妈不同意，因为她觉得________需要人照顾，但是这________时间小明自己的衣服都不洗，是不会照顾小狗的。小明说，________妈妈给他买，他就能照顾好小狗。",
-      "answer": "只、嘴、动物、段、只要",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        196
-       ]
-      }
-     },
-     {
-      "n": 2,
-      "zh": "一个学生去公司找工作，他认为这家公司不但很________，________工作环境好。但是经理告诉他，这个工作有点儿累，需要经常去外地，不知道他的家人能不能________。他觉得没问题，只要他愿意，他________家人会同意的。经理告诉他明天来上班，他很高兴有这个工作________，他说他会努力的。",
-      "answer": "有名、而且、同意、相信、机会",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        196
-       ]
-      }
-     }
-    ]
-   }
-  ],
-  "answers_ref": {
-   "book": "teacher",
-   "pages": [
+    174,
     194,
     195,
     196
-   ]
-  }
- },
- "audio": {
-  "textbook": [
-   "hsk3-textbook-1801.mp3",
-   "hsk3-textbook-1802.mp3",
-   "hsk3-textbook-1803.mp3",
-   "hsk3-textbook-1804.mp3",
-   "hsk3-textbook-1805.mp3"
   ],
-  "workbook": [
-   "hsk3-workbook-18-part1.mp3",
-   "hsk3-workbook-18-part2.mp3",
-   "hsk3-workbook-18-part3.mp3",
-   "hsk3-workbook-18-part4.mp3"
-  ]
- },
- "unclear": [
-  "生词7 ба 课文3-ын пиньинь: сурах бичгийн 生词 хүснэгт (PDF х.168) «búdàn……ěrqiě……», 拼音课文 (PDF х.169, 课文3 学生-ийн мөр) «ěrqiě» гэж хэвлэгдсэн (250 dpi-аар шалгасан); 课文4-ийн 拼音课文-д «érqiě». Хэвлэлийн алдаа бололтой — номд байгаагаар нь (ěrqiě) үлдээсэн, засаагүй.",
-  "课文4: ханзаар «还会觉得有点奇怪» (儿-гүй), 拼音课文 (PDF х.169) «yǒudiǎnr qíguài» (儿化-тай); багшийн номын хариулт (PDF х.128) «还会有点儿奇怪». Номд байгаагаар хоёуланг нь (zh — «有点»; pinyin — «yǒudiǎnr») үлдээсэн.",
-  "注释2-ын гарчиг сурах бичигт (PDF х.170) «介语“关于”» гэж хэвлэгдсэн (стандарт нэр томьёо «介词»), англи нь «The Preposition “关于”» — номд байгаагаар.",
-  "练习1 朗读 ⑤ «……只要经过一段时间，就会慢慢地习惯的。» (的-тэй) — 课文4-т «……就会慢慢地习惯。» (的-гүй). Тус бүрийг номд байгаагаар.",
-  "练习4 ① «朋友为什么要跟周明借钱？» — 课文1-д «想向你借点儿钱», багшийн номд «朋友为什么向老周借钱？» гэж өөр хэлбэрээр; номд байгаагаар.",
-  "热身1 D зураг: гараар барьсан «10000» тооны эхний «1» хэсэгчлэн далдлагдаж «7» шиг харагдана (PDF х.167). Багшийн номын хариулт ⑥D (万).",
-  "课文4 номд гарчиггүй (зөвхөн «4» ба аудио 18-4) — title_zh хоосон, title_en байхгүй. Өгүүлэмжийг өгүүлбэр (。) тус бүрээр lines-д хувааж, 拼音课文-ын харгалзах хэсгийг оноосон.",
-  "Сурах бичгийн 拼音课文-ын гарчгийн пиньинь (Zài dǎ diànhuà / Zài shāngdiàn / Zài gōngsī) болон ярилцагчийн нэрийн пиньинь (péngyou, Zhōu Míng, Xiǎomíng, māma, jīnglǐ, xuésheng) схемд талбаргүй тул lines.pinyin-д зөвхөн яриаг оруулсан.",
-  "生词7 «不但……而且……» нь хоёр хэсэгтэй холбоос үг — номын 生词 хүснэгтэд нэг дугаартай тул нэг үг болгож оруулсан.",
-  "Сурах бичгийн 练一练 (2 дүрэм × 3), 练习2 选词填空， 练习3 描述图片， 练习4 回答问题， 热身2 (连线), 运用1–2 — хариулт сурах бичиг, багшийн номд хэвлэгдээгүй тул answer талбаргүй. Багшийн номын 课文 асуулт-хариулт (teacher.text_questions) нь 练习4-ийн асуултаас өөр; 课文4-ийн «不同国家的文化有什么特点？» асуултад багшийн номд хариулт хэвлэгдээгүй.",
-  "Багшийн номын 课文 асуултад 课文2-ын 小明-ийг «男的», 课文3-ын 经理-г «女的», 学生-ийг «男的» гэж нэрлэсэн — сурах бичигт хүйс заагаагүй.",
-  "Багшийн номын 汉字辨认练习 (于/干 · 种/和 · 万/方 · 机/几 · 且/自 — 组词) хоосон зайтай, хариулт хэвлэгдээгүй; textbook.characters.confusable_pairs-д багшийн номоос оруулсан.",
-  "Багшийн номын 补充课堂活动-ийн 参考词语-д «像» орсон — энэ хичээлийн 生词 биш; номд байгаагаар.",
-  "Дасгалын ном 复习1 «这段时间小明自己的衣服都不洗» — 课文2-т «……都没洗»; номд байгаагаар.",
-  "Дасгалын номын сонсгол нэг CD тэмдэгтэй (18) — аудиог hsk3-workbook-18-part1…4.mp3 болгож хэсэг тус бүрт хуваасныг section.audio-д оноосон.",
-  "Дасгалын ном 听力 第三/四部分 — номд зөвхөн сонголтууд хэвлэгдсэн; item.zh-д багшийн номын хавсралтын «问：» асуултыг оруулсан (transcript_zh-д бүтнээр).",
-  "Дасгалын номд энэ хичээлд 51–54 (组词) хэсэг байхгүй — нийт 50 асуулт + 复习 2.",
-  "Энэ хичээлд 专有名词 хүснэгт, 汉字知识 ба 文化 хэсэг байхгүй; * тэмдэгтэй үг 1 (15 特点)."
- ],
- "verified_pages": [
-  124,
-  125,
-  126,
-  127,
-  128,
-  129,
-  130,
-  131,
-  167,
-  168,
-  169,
-  170,
-  171,
-  172,
-  173,
-  174,
-  194,
-  195,
-  196
- ],
- "schema_version": 1
+  "schema_version": 1,
+  "hsk30": {
+    "source": "courseware",
+    "ref": {
+      "book": "hsk30_courseware",
+      "pages": [
+        13,
+        15,
+        22,
+        25,
+        33,
+        34
+      ]
+    },
+    "new_words": [
+      {
+        "n": 1,
+        "zh": "养",
+        "pinyin": "yǎng",
+        "pos": "v.",
+        "en": "raise",
+        "text": 2
+      },
+      {
+        "n": 2,
+        "zh": "鸡",
+        "pinyin": "jī",
+        "pos": "n.",
+        "en": "chicken",
+        "text": 2
+      },
+      {
+        "n": 3,
+        "zh": "牛",
+        "pinyin": "niú",
+        "pos": "n.",
+        "en": "cow",
+        "text": 2
+      },
+      {
+        "n": 4,
+        "zh": "羊",
+        "pinyin": "yáng",
+        "pos": "n.",
+        "en": "sheep",
+        "text": 2
+      },
+      {
+        "n": 5,
+        "zh": "可",
+        "pinyin": "kě",
+        "pos": "conj.",
+        "en": "but",
+        "text": 3
+      },
+      {
+        "n": 6,
+        "zh": "不同",
+        "pinyin": "bù tóng",
+        "en": "different",
+        "text": 4
+      }
+    ],
+    "grammar": [
+      {
+        "n": 1,
+        "title_zh": "嘴 VS 口",
+        "explanation_zh": "",
+        "structure_rows": [
+          "口渴、人口、口语"
+        ],
+        "examples": [
+          {
+            "zh": "那只狗的嘴小小的。"
+          },
+          {
+            "zh": "＊你家有几口人？"
+          }
+        ]
+      },
+      {
+        "n": 2,
+        "title_zh": "不但......而且......",
+        "explanation_zh": "",
+        "examples": [
+          {
+            "zh": "贵公司不但很有名，而且工作环境好。"
+          },
+          {
+            "zh": "听说明天不但会下雨，而且会刮风。"
+          },
+          {
+            "zh": "她不但学习好，而且爱帮助别人。"
+          }
+        ]
+      },
+      {
+        "n": 3,
+        "title_zh": "地",
+        "explanation_zh": "",
+        "examples": [
+          {
+            "zh": "她热情地回答了我的问题。"
+          },
+          {
+            "zh": "只要经过一段时间，就会慢慢地习惯的。"
+          },
+          {
+            "zh": "你应该向他学习，认真地做好每一件事。"
+          }
+        ]
+      }
+    ],
+    "exercises": [],
+    "unclear": [
+      "语言点 «嘴 VS 口» слайд (15-р слайд) дээрх «口 1. 吃 喝 吗 2. 口渴 人口 口语» хэсгийн эхний мөр («吃 喝 吗») уншигдахгүй/тодорхойгүй тул оруулаагүй; зөвхөн «口渴、人口、口语» ба бүтэн өгүүлбэрүүдийг авсан."
+    ]
+  }
 }

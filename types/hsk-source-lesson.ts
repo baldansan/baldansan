@@ -150,6 +150,23 @@ export type SourceWorkbook = {
   answers_ref?: SourceRef;
 };
 
+
+/** HSK 3.0 нэмэлт — BLCUP «HSK标准教程 3.0升级学练手册» (HSK4) / 课件（补充HSK3.0内容）(HSK1–3): тухайн хичээлд нэмэгдэх 3.0 үг, дүрэм, дасгал. */
+export type SourceHsk30Supplement = {
+  /** "upgrade_handbook" (HSK4 升级学练手册 PDF) | "courseware" (HSK1–3 课件 pptx) */
+  source: "upgrade_handbook" | "courseware";
+  ref: { book: "hsk30_handbook" | "hsk30_courseware"; pages: number[] };
+  /** 补充生词 — номд байгаагаар (пиньинь, үгийн ай, тайлбар хятад/англи). */
+  new_words: (SourceWord & { explanation_zh?: string; examples?: SourceExample[]; text?: number })[];
+  /** 补充语法点 (HSK4 手册: хичээл бүрт 3, 3 дахь нь 固定格式). */
+  grammar: SourceGrammarPoint[];
+  /** 生词练习 / 综合表达 (说一说, 写一写) — асуулт, хариулт номд байгаагаар. */
+  exercises: SourceExercise[];
+  speaking?: { instruction_zh: string; questions: string[]; model_answer_zh?: string };
+  writing?: { instruction_zh: string; prompt_zh: string; model_essay_zh?: string };
+  unclear?: string[];
+};
+
 export type HskSourceLesson = {
   /** "hsk1" … "hsk6" */
   level: string;
@@ -186,6 +203,8 @@ export type HskSourceLesson = {
   };
   teacher?: SourceTeacher;
   workbook?: SourceWorkbook;
+  /** HSK 3.0 нэмэлт материал (байвал). */
+  hsk30?: SourceHsk30Supplement;
   /** Аудио файлууд (мэдэгдэж байвал): textbook clips, workbook parts. */
   audio?: { textbook: string[]; workbook: string[] };
   /** Уншигдахгүй, эргэлзээтэй, номын өөрийн зөрүү — таахын оронд энд. */

@@ -1,14 +1,1988 @@
 {
- "level": "hsk3",
- "lesson": 8,
- "book": "HSK3",
- "title_zh": "你去哪儿我就去哪儿",
- "title_pinyin": "Nǐ qù nǎr wǒ jiù qù nǎr",
- "title_en": "I’ll go wherever you go",
- "textbook": {
-  "ref": {
-   "book": "textbook",
-   "pages": [
+  "level": "hsk3",
+  "lesson": 8,
+  "book": "HSK3",
+  "title_zh": "你去哪儿我就去哪儿",
+  "title_pinyin": "Nǐ qù nǎr wǒ jiù qù nǎr",
+  "title_en": "I’ll go wherever you go",
+  "textbook": {
+    "ref": {
+      "book": "textbook",
+      "pages": [
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87
+      ]
+    },
+    "warmup": [
+      {
+        "instruction_zh": "给下面的词语选择对应的图片",
+        "instruction_en": "Match the pictures with the words.",
+        "items": [
+          "①熊猫 xióngmāo",
+          "②安静 ānjìng",
+          "③见面 jiàn miàn",
+          "④电梯 diàntī",
+          "⑤害怕 hàipà",
+          "⑥洗手间 xǐshǒujiān"
+        ],
+        "pictures_desc_en": [
+          "A: a man, a woman and a child sitting close together on a sofa with frightened faces",
+          "B: two elevator doors side by side, the left one open, the right one closed",
+          "C: a bathroom with a washbasin, a toilet and a towel rail",
+          "D: two men in suits shaking hands in front of skyscrapers",
+          "E: a young woman holding her index finger to her lips (\"shh\")",
+          "F: two giant pandas, one eating bamboo"
+        ]
+      },
+      {
+        "instruction_zh": "写出你学过的疑问代词",
+        "instruction_en": "Write down the interrogative pronouns you’ve learned.",
+        "items": [
+          "①谁",
+          "②________",
+          "③________",
+          "④________",
+          "⑤________",
+          "⑥________"
+        ]
+      }
+    ],
+    "texts": [
+      {
+        "n": 1,
+        "title_zh": "在休息室",
+        "title_en": "In the lounge",
+        "kind": "dialogue",
+        "audio": "hsk3-textbook-0801.mp3",
+        "lines": [
+          {
+            "speaker": "同事",
+            "zh": "听说你最近打算买房子？",
+            "pinyin": "Tīngshuō nǐ zuìjìn dǎsuàn mǎi fángzi?"
+          },
+          {
+            "speaker": "小丽",
+            "zh": "是，昨天去看了看，今天又去看了看，明天还要再去看看。",
+            "pinyin": "Shì, zuótiān qù kànle kàn, jīntiān yòu qù kànle kàn, míngtiān hái yào zài qù kànkan."
+          },
+          {
+            "speaker": "同事",
+            "zh": "都不满意吗？",
+            "pinyin": "Dōu bù mǎnyì ma?"
+          },
+          {
+            "speaker": "小丽",
+            "zh": "一个没有电梯，不方便。一个有电梯，但是在二十层。",
+            "pinyin": "Yí ge méiyǒu diàntī, bù fāngbiàn. Yí ge yǒu diàntī, dànshì zài èrshí céng."
+          },
+          {
+            "speaker": "同事",
+            "zh": "二十层怎么了？",
+            "pinyin": "Èrshí céng zěnme le?"
+          },
+          {
+            "speaker": "小丽",
+            "zh": "太高了，往下看多害怕啊！",
+            "pinyin": "Tài gāo le, wǎng xià kàn duō hài pà a!"
+          }
+        ],
+        "new_words": [
+          {
+            "n": 1,
+            "zh": "又",
+            "pinyin": "yòu",
+            "pos": "adv.",
+            "en": "again",
+            "text": 1
+          },
+          {
+            "n": 2,
+            "zh": "满意",
+            "pinyin": "mǎnyì",
+            "pos": "v.",
+            "en": "to be satisfied",
+            "text": 1
+          },
+          {
+            "n": 3,
+            "zh": "电梯",
+            "pinyin": "diàntī",
+            "pos": "n.",
+            "en": "elevator",
+            "text": 1
+          },
+          {
+            "n": 4,
+            "zh": "层",
+            "pinyin": "céng",
+            "pos": "m.",
+            "en": "used for floors",
+            "text": 1
+          },
+          {
+            "n": 5,
+            "zh": "害怕",
+            "pinyin": "hài pà",
+            "pos": "v.",
+            "en": "to be afraid, to be scared",
+            "text": 1
+          }
+        ]
+      },
+      {
+        "n": 2,
+        "title_zh": "在学校",
+        "title_en": "At school",
+        "kind": "dialogue",
+        "audio": "hsk3-textbook-0802.mp3",
+        "lines": [
+          {
+            "speaker": "小明",
+            "zh": "听说你下个星期就要回国了？",
+            "pinyin": "Tīngshuō nǐ xià ge xīngqī jiù yào huí guó le?"
+          },
+          {
+            "speaker": "马可",
+            "zh": "是啊，真不想离开北京。",
+            "pinyin": "Shì a, zhēn bù xiǎng líkāi Běijīng."
+          },
+          {
+            "speaker": "小明",
+            "zh": "我下星期不在北京，不能去机场送你了。",
+            "pinyin": "Wǒ xià xīngqī bú zài Běijīng, bù néng qù jīchǎng sòng nǐ le."
+          },
+          {
+            "speaker": "马可",
+            "zh": "没关系，你忙吧。",
+            "pinyin": "Méi guānxi, nǐ máng ba."
+          },
+          {
+            "speaker": "小明",
+            "zh": "这个小熊猫送给你，欢迎你以后再到中国来。",
+            "pinyin": "Zhège xiǎo xióngmāo sòng gěi nǐ, huānyíng nǐ yǐhòu zài dào Zhōngguó lái."
+          },
+          {
+            "speaker": "马可",
+            "zh": "谢谢。希望以后能再见面。",
+            "pinyin": "Xièxie. Xīwàng yǐhòu néng zài jiàn miàn."
+          }
+        ],
+        "new_words": [
+          {
+            "n": 6,
+            "zh": "熊猫",
+            "pinyin": "xióngmāo",
+            "pos": "n.",
+            "en": "panda",
+            "text": 2
+          },
+          {
+            "n": 7,
+            "zh": "见面",
+            "pinyin": "jiàn miàn",
+            "pos": "v.",
+            "en": "to meet",
+            "text": 2
+          }
+        ]
+      },
+      {
+        "n": 3,
+        "title_zh": "在咖啡厅",
+        "title_en": "In a coffee house",
+        "kind": "dialogue",
+        "audio": "hsk3-textbook-0803.mp3",
+        "lines": [
+          {
+            "speaker": "小丽",
+            "zh": "小刚，我们坐哪儿？",
+            "pinyin": "Xiǎogāng, wǒmen zuò nǎr?"
+          },
+          {
+            "speaker": "小刚",
+            "zh": "你坐哪儿我就坐哪儿。",
+            "pinyin": "Nǐ zuò nǎr wǒ jiù zuò nǎr."
+          },
+          {
+            "speaker": "小丽",
+            "zh": "坐这儿吧，这儿安静。你想喝什么饮料？",
+            "pinyin": "Zuò zhèr ba, zhèr ānjìng. Nǐ xiǎng hē shénme yǐnliào?"
+          },
+          {
+            "speaker": "小刚",
+            "zh": "你喝什么我就喝什么。",
+            "pinyin": "Nǐ hē shénme wǒ jiù hē shénme."
+          },
+          {
+            "speaker": "小丽",
+            "zh": "喝可乐吧。你等我一会儿，我马上回来。",
+            "pinyin": "Hē kělè ba. Nǐ děng wǒ yíhuìr, wǒ mǎshàng huílai."
+          },
+          {
+            "speaker": "小刚",
+            "zh": "小丽，你去哪儿？你去哪儿我就去哪儿。",
+            "pinyin": "Xiǎolì, nǐ qù nǎr? Nǐ qù nǎr wǒ jiù qù nǎr."
+          },
+          {
+            "speaker": "小丽",
+            "zh": "我去洗手间。",
+            "pinyin": "Wǒ qù xǐshǒujiān."
+          }
+        ],
+        "new_words": [
+          {
+            "n": 8,
+            "zh": "安静",
+            "pinyin": "ānjìng",
+            "pos": "adj.",
+            "en": "quiet",
+            "text": 3
+          },
+          {
+            "n": 9,
+            "zh": "可乐",
+            "pinyin": "kělè",
+            "pos": "n.",
+            "en": "cola, Coke",
+            "text": 3,
+            "star": true
+          },
+          {
+            "n": 10,
+            "zh": "一会儿",
+            "pinyin": "yíhuìr",
+            "pos": "n.",
+            "en": "a moment",
+            "text": 3
+          },
+          {
+            "n": 11,
+            "zh": "马上",
+            "pinyin": "mǎshàng",
+            "pos": "adv.",
+            "en": "immediately, at once",
+            "text": 3
+          },
+          {
+            "n": 12,
+            "zh": "洗手间",
+            "pinyin": "xǐshǒujiān",
+            "pos": "n.",
+            "en": "bathroom, restroom",
+            "text": 3
+          }
+        ]
+      },
+      {
+        "n": 4,
+        "title_zh": "在周明家",
+        "title_en": "At Zhou Ming’s home",
+        "kind": "dialogue",
+        "audio": "hsk3-textbook-0804.mp3",
+        "lines": [
+          {
+            "speaker": "老同学",
+            "zh": "快五年了，你几乎没变化。",
+            "pinyin": "Kuài wǔ nián le, nǐ jīhū méi biànhuà."
+          },
+          {
+            "speaker": "周太太",
+            "zh": "谁说的？我胖了，以前的衣服都不能穿了。",
+            "pinyin": "Shéi shuō de? Wǒ pàng le, yǐqián de yīfu dōu bù néng chuān le."
+          },
+          {
+            "speaker": "老同学",
+            "zh": "健康最重要，胖瘦没关系。",
+            "pinyin": "Jiànkāng zuì zhòngyào, pàng shòu méi guānxi."
+          },
+          {
+            "speaker": "周太太",
+            "zh": "是呀，想吃什么就吃什么。",
+            "pinyin": "Shì a, xiǎng chī shénme jiù chī shénme."
+          },
+          {
+            "speaker": "老同学",
+            "zh": "你做饭还是周明做饭？",
+            "pinyin": "Nǐ zuò fàn háishi Zhōu Míng zuò fàn?"
+          },
+          {
+            "speaker": "周太太",
+            "zh": "我做，我想吃什么就做什么，想吃多少就做多少。",
+            "pinyin": "Wǒ zuò, wǒ xiǎng chī shénme jiù zuò shénme, xiǎng chī duōshao jiù zuò duōshao."
+          }
+        ],
+        "new_words": [
+          {
+            "n": 13,
+            "zh": "老",
+            "pinyin": "lǎo",
+            "pos": "adj.",
+            "en": "old",
+            "text": 4
+          },
+          {
+            "n": 14,
+            "zh": "几乎",
+            "pinyin": "jīhū",
+            "pos": "adv.",
+            "en": "almost",
+            "text": 4
+          },
+          {
+            "n": 15,
+            "zh": "变化",
+            "pinyin": "biànhuà",
+            "pos": "v.",
+            "en": "to change",
+            "text": 4
+          },
+          {
+            "n": 16,
+            "zh": "健康",
+            "pinyin": "jiànkāng",
+            "pos": "adj.",
+            "en": "healthy",
+            "text": 4
+          },
+          {
+            "n": 17,
+            "zh": "重要",
+            "pinyin": "zhòngyào",
+            "pos": "adj.",
+            "en": "important",
+            "text": 4
+          }
+        ]
+      }
+    ],
+    "grammar": [
+      {
+        "n": 1,
+        "title_zh": "“又”和“再”",
+        "title_en": "Comparison of “又” and “再”",
+        "explanation_zh": "副词“又”和“再”都可以放在动词前边，表示动作或情况的重复出现。“又＋V”通常表示已发生了的重复动作或情况，“再＋V”表示还没发生的重复动作或情况。\n“又”的例句如下：（1）–（4）\n“再”的例句如下：（5）–（8）",
+        "explanation_en": "The adverbs “又” and “再” can both be put before a verb to indicate the recurrence of an action or a situation. “又 + V” usually means the recurrence has already happened, while “再 + V” means the recurrence has not happened yet.\nExamples of “又”: (1)–(4)\nExamples of “再”: (5)–(8)",
+        "examples": [
+          {
+            "n": 1,
+            "zh": "上个星期我买了一条裤子，昨天又买了一条。"
+          },
+          {
+            "n": 2,
+            "zh": "你上午已经喝了一杯咖啡，下午怎么又喝了一杯？"
+          },
+          {
+            "n": 3,
+            "zh": "小刚，你前天迟到，昨天迟到，今天怎么又迟到了？"
+          },
+          {
+            "n": 4,
+            "zh": "我昨天看了一个电影，今天又看了一个。"
+          },
+          {
+            "n": 5,
+            "zh": "你只吃了一点儿饭，再吃一点儿吧。"
+          },
+          {
+            "n": 6,
+            "zh": "家里只有一个面包了，我们再买一些吧。"
+          },
+          {
+            "n": 7,
+            "zh": "那个饭馆我昨天去了一次，明天还想再去一次。"
+          },
+          {
+            "n": 8,
+            "zh": "昨天去看了看，今天又去看了看，明天还要再去看看。"
+          }
+        ],
+        "practice_instruction_zh": "练一练　完成句子 Complete the sentences.",
+        "practice": [
+          {
+            "n": 1,
+            "zh": "我上个星期去了那个中国饭馆，明天想________去一次。"
+          },
+          {
+            "n": 2,
+            "zh": "你怎么________买了一条裤子？不是已经有一条了吗？"
+          },
+          {
+            "n": 3,
+            "zh": "刚才我去找他，他没在办公室，我一会儿________去。"
+          }
+        ]
+      },
+      {
+        "n": 2,
+        "title_zh": "疑问代词活用1",
+        "title_en": "Flexible Use of Interrogative Pronouns 1",
+        "explanation_zh": "汉语中，“就”可以用在两个相同的疑问代词之间，这时两个疑问代词不表示疑问，其所指的对象相同，指代不确定的人、事物或方式。当前后两个分句的主语相同时，后一个分句中的主语可以省略，如果两个分句的主语不同，第二个主语要放在“就”的前边。例如：",
+        "explanation_en": "In Chinese, “就” can be used between two of the same interrogative pronouns, in which case the interrogative pronouns, rather than being interrogative, refer to the same indefinite person, object or manner. When the two clauses of a sentence share one subject, the subject of the second clause can be left out; when the two clauses have different subjects, the second subject is put right before “就”. For example:",
+        "examples": [
+          {
+            "n": 1,
+            "zh": "什么东西便宜我就买什么。"
+          },
+          {
+            "n": 2,
+            "zh": "你哪天有时间就哪天来我家吧。"
+          },
+          {
+            "n": 3,
+            "zh": "谁喜欢他他就喜欢谁。"
+          },
+          {
+            "n": 4,
+            "zh": "你坐哪儿我就坐哪儿。"
+          }
+        ],
+        "practice_instruction_zh": "练一练　完成对话 Complete the dialogues.",
+        "practice": [
+          {
+            "n": 1,
+            "zh": "A：你想喝点儿什么？ B：________。"
+          },
+          {
+            "n": 2,
+            "zh": "A：我们什么时候去爬山？ B：________。"
+          },
+          {
+            "n": 3,
+            "zh": "A：你想跟谁一起去旅游？ B：________。"
+          }
+        ]
+      }
+    ],
+    "exercises": [
+      {
+        "n": 1,
+        "type_zh": "朗读",
+        "instruction_zh": "朗读下列短语和句子",
+        "instruction_en": "Read the following phrases and sentences aloud.",
+        "audio": "hsk3-textbook-0805.mp3",
+        "items": [
+          {
+            "n": 1,
+            "zh": "满意：很满意／不满意／对服务员很满意／（那些房子）你都不满意吗？"
+          },
+          {
+            "n": 2,
+            "zh": "害怕：不害怕／别害怕／我害怕他／往下看多害怕啊。"
+          },
+          {
+            "n": 3,
+            "zh": "见面：见个面／跟朋友见面／见见面／希望以后能再见面。"
+          },
+          {
+            "n": 4,
+            "zh": "一会儿：玩儿一会儿／看一会儿电视／我一会儿再去／你等我一会儿。"
+          },
+          {
+            "n": 5,
+            "zh": "变化：没变化／变化很大／变化太快／你几乎没变化。"
+          }
+        ]
+      },
+      {
+        "n": 2,
+        "type_zh": "选词填空",
+        "instruction_zh": "选择恰当的词语填空",
+        "instruction_en": "Choose the proper words to fill in the blanks.",
+        "word_bank": [
+          [
+            "层",
+            "几乎",
+            "洗手间",
+            "电梯",
+            "害怕"
+          ],
+          [
+            "见面",
+            "变化",
+            "重要",
+            "熊猫",
+            "满意"
+          ]
+        ],
+        "items": [
+          {
+            "n": 1,
+            "zh": "________里人太多了，我们走上去吧。"
+          },
+          {
+            "n": 2,
+            "zh": "你家住几________？"
+          },
+          {
+            "n": 3,
+            "zh": "没事儿，我一点儿也不________。"
+          },
+          {
+            "n": 4,
+            "zh": "我去一下________，马上回来。"
+          },
+          {
+            "n": 5,
+            "zh": "我现在________每天都要用电脑。"
+          },
+          {
+            "n": 6,
+            "zh": "A：您对我们的服务________吗？ B：不错，我玩儿得很高兴。"
+          },
+          {
+            "n": 7,
+            "zh": "A：周末你做什么了？ B：我去看________了。"
+          },
+          {
+            "n": 8,
+            "zh": "A：我们几点________？ B：三点半吧。"
+          },
+          {
+            "n": 9,
+            "zh": "A：你看你，这几年一点儿________都没有。 B：是啊，我每天都运动。"
+          },
+          {
+            "n": 10,
+            "zh": "A：这件衣服太贵了，别买了。 B：贵不贵不________，你喜欢就行。"
+          }
+        ]
+      },
+      {
+        "n": 3,
+        "type_zh": "描述图片",
+        "instruction_zh": "用本课新学的语言点和词语描述图片",
+        "instruction_en": "Describe the pictures using the newly-learned language points and words.",
+        "items": [
+          {
+            "n": 1,
+            "zh": "A：您对这个房子________吗？ B：有点儿贵，我想________看看别的房子。 A：您打算买什么样的？ B：________就________。",
+            "picture_desc_en": "An architectural floor plan (rooms labelled BEDROOM, DINING ROOM, KITCHEN) with a bunch of keys on a blue key tag lying on it."
+          },
+          {
+            "n": 2,
+            "zh": "A：你怎么________生病了？你的感冒不是刚好吗？ B：昨天下大雨，我没带伞。 A：________去医院看病吧？ B：不去了，我想睡________。",
+            "picture_desc_en": "A young woman lying in bed under a white duvet with her hand on her forehead, looking unwell."
+          },
+          {
+            "n": 3,
+            "zh": "A：妈妈，吃苹果对________好，我们买一些吧。 B：好，你想吃几个就________。 A：那我们________买五个吧。 B：可以。",
+            "picture_desc_en": "A woman with a small child in a shopping cart at a market stall full of fruit."
+          },
+          {
+            "n": 4,
+            "zh": "A：这两件衣服都很好看，你说我买哪件？ B：________就买哪件。 A：这件蓝色的怎么样？ B：怎么________买蓝色的？你已经有两件了。",
+            "picture_desc_en": "A young woman in a clothes shop holding up a light-blue garment in front of a rack of clothes."
+          }
+        ]
+      },
+      {
+        "n": 4,
+        "type_zh": "回答问题",
+        "instruction_zh": "根据课文回答问题",
+        "instruction_en": "Answer the questions according to the texts.",
+        "items": [
+          {
+            "n": 1,
+            "zh": "小丽最近在做什么？"
+          },
+          {
+            "n": 2,
+            "zh": "小丽为什么不满意？"
+          },
+          {
+            "n": 3,
+            "zh": "小明送给了马可什么东西？他为什么送马可东西？"
+          },
+          {
+            "n": 4,
+            "zh": "小丽和小刚在哪儿？做什么？"
+          },
+          {
+            "n": 5,
+            "zh": "小丽要去哪儿？小刚也去吗？"
+          },
+          {
+            "n": 6,
+            "zh": "周太太为什么说自己胖了？"
+          }
+        ]
+      }
+    ],
+    "characters": {
+      "knowledge_title_zh": "旧字新词",
+      "knowledge_zh": "读读下面的词语，想想组成的新词是什么意思。",
+      "knowledge_en": "Read the following words and guess the meanings of the newly-formed ones.",
+      "word_game": [
+        {
+          "parts": [
+            "见面",
+            "考试"
+          ],
+          "result": "面试"
+        },
+        {
+          "parts": [
+            "自己",
+            "学习"
+          ],
+          "result": "自学"
+        },
+        {
+          "parts": [
+            "离开",
+            "结婚"
+          ],
+          "result": "离婚"
+        }
+      ],
+      "confusable_pairs": [
+        [
+          "熊",
+          "能"
+        ],
+        [
+          "老",
+          "考"
+        ],
+        [
+          "几",
+          "九"
+        ],
+        [
+          "间",
+          "问"
+        ],
+        [
+          "会",
+          "层"
+        ]
+      ]
+    },
+    "application": [
+      {
+        "title_zh": "双人活动",
+        "instruction_zh": "两人一组，互相调查对方的情况，完成调查表，用“疑问代词＋就＋疑问代词”回答。",
+        "instruction_en": "Work in pairs. Make a survey of each other and fill in the questionnaire. Answer the questions using the structure “Interrogative Pronoun + 就 + Interrogative Pronoun”.",
+        "example_zh": [
+          "表格：| | 问 | 答 |",
+          "| 1 | 你打算去哪儿旅游？ | 哪儿好玩儿我就去哪儿。 |",
+          "| 2 | 什么时候去？ | |",
+          "| 3 | 怎么去？ | |",
+          "| 4 | 跟谁一起去？ | |",
+          "| 5 | 住在哪儿？ | |",
+          "| 6 | 到了旅游的地方吃什么？ | |"
+        ]
+      },
+      {
+        "title_zh": "小组活动",
+        "instruction_zh": "3～4人一组，互相介绍自己的一次旅行经历，说说去过几次，是什么时候去的，做了什么，如果有机会再去一次，会做什么？",
+        "instruction_en": "Work in groups of 3-4. Describe one of your travel experiences to your group members, including how many times you’ve been to that place, when you went there, what you did, and what you’d like to do if you have a chance to be there once again.",
+        "example_zh": [
+          "例如：我去过两次北京，2000年去了一次，前年又去了一次。我去了长城。我打算再去一次北京，再去一次长城。",
+          "表格：| | 什么地方 | 去过几次 | 是什么时候去的 | 做了什么 | 再去一次做什么 |",
+          "| 1 | 北京 | 两次 | 2000年；前年 | 去长城 | 再去一次长城 |"
+        ]
+      }
+    ],
+    "saying": {
+      "zh": "站得高，看得远",
+      "pinyin": "Zhàn de gāo, kàn de yuǎn",
+      "en": "The higher you stand, the farther you’ll see",
+      "explanation_zh": "“站得高，看得远”的意思是，站在高的地方，就能看到更远的地方。这句话也用来比喻要站在高层次上看问题，才能看得更全面、更长远。",
+      "explanation_en": "“站得高，看得远” means the one who stands higher takes a broader view. It is also used metaphorically to indicate that we should view a problem at a high level to obtain a more comprehensive understanding of it in the long run."
+    }
+  },
+  "teacher": {
+    "ref": {
+      "book": "teacher",
+      "pages": [
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63
+      ]
+    },
+    "objectives_zh": [
+      "重点词语：学生能够熟练掌握：“见面、一会儿、马上、老、几乎、重要”的词义和用法",
+      "语言点：学生能够了解并掌握：（1）副词“又”和“再”表示动作或情况的重复出现（2）疑问代词活用1：疑问代词＋就＋疑问代词",
+      "汉字：学生能够：根据已学生词猜测出3个旧字新词“面试、自学、离婚”的意思",
+      "功能：学生能够：（1）用“又”和“再”表达重复的动作或情况（2）用疑问代词表达不确指的人、事物或方式"
+    ],
+    "steps": [
+      {
+        "title_zh": "复习旧课",
+        "body_zh": "1 教师展示第7课的热身图片，请学生根据图片说出生词。\n2 教师根据第7课的内容进行提问。\n（1）你今天早上是几点起床、几点出门、几点到教室的？\n（2）你对音乐感兴趣吗？你对什么感兴趣？\n（3）你觉得每天运动多长时间对身体最好？\n（4）你觉得学多长时间汉语以后，可以看懂中国电影？\n（5）给大家介绍一下你喜欢做什么，不喜欢做什么，说说为什么。"
+      },
+      {
+        "title_zh": "学习新课 1 热身",
+        "body_zh": "热身1：学生两人一组，合作完成热身1；教师出示热身1的图片，分别请几个学生根据图片说出词语，核对答案；最后全体学生齐读热身环节所有词语，要求语音标准，声调准确。\n答案：①F　②E　③D　④B　⑤A　⑥C\n热身2：可留至语言点（2）“疑问代词活用1”导入时使用。"
+      },
+      {
+        "title_zh": "2 生词",
+        "body_zh": "（1）生词快速认读及正音\n又、满意、电梯、层、害怕、熊猫、见面、安静、可乐、一会儿、马上、洗手间、老、几乎、变化、健康、重要\n· 教师先带领学生快速认读一遍生词；\n· 取消拼音，带领学生再次认读；\n· 请单个学生独自认读2-3个生词；\n· 最后全班一起快速认读所有的生词。\n（2）生词讲解方式\n· 直观法（如图片、照片、实物等）展示：电梯、层、害怕、熊猫、见面、安静、洗手间\n· 对比法展示：胖—瘦、容易—难\n· 启发式引导：满意、变化、健康\n教师给出句子部分内容让学生进行补充，如：\n他觉得很好，也可以说他觉得很满意。\n这几年他总是这样，他没有变化。\n他的身体很好，他很健康。\n（3）重点生词扩展及常用搭配\n见面—跟朋友见面—两点见面—明天我们在哪儿见面？\n一会儿—等一会儿—看一会儿—我太累了，要睡一会儿。\n马上—马上来—马上到—妈妈让你马上回家。\n老—老同学—老房子—我跟我的老朋友认识已经10年了。\n几乎—几乎没有人去—他现在和以前几乎没变化。\n重要—很重要—不重要—我有一件重要的事要告诉你。\n练习册相关练习：第50页／一／第一部分，第53页／二／第二部分"
+      },
+      {
+        "title_zh": "3 语言点（1）“又”和“再”",
+        "body_zh": "① 语言点解析\n副词“又”和“再”都可以放在动词前边，表示动作或情况的重复出现。“又V”通常用于已发生了的重复动作或情况，“再V”用于还没发生的重复动作或情况。\n［又＋动词］\n［再＋动词］\n② 语言点导入\n教师创设情境，引导学生说出目标句。\n教师：我昨天买了一本书，今天呢？\n学生：今天又买了一本书。\n教师：我今天买了一本书，明天呢？\n学生：明天再买一本书。\n③ 语言点操练\n教师板书句子，请学生用“又”或“再”填空。\n我想明天________买一个本子。\n你怎么________迟到了？\n请等一下，我________去一下卫生间。\n我在中国见过熊猫，昨天________去公园看熊猫了。\n④ 语言点扩展练习\n教师让学生回忆做过哪些重复的事，以后还想不想再做。\n教师举例：我去饺子馆吃了两次饺子，上个星期去了一次，昨天又去了一次，我想明天再去一次。\n教师请学生仿照例子，说出自己的情况。\n注意：一般情况下“又”后边有“了”与之搭配，“再”后边没有“了”，如果有“了”，表示情况的变化，例如“我不想再吃饺子了”。"
+      },
+      {
+        "title_zh": "3 语言点（2）疑问代词活用1",
+        "body_zh": "① 语言点解析\n汉语中，“就”可以用在两个相同的疑问代词之间，这时两个疑问代词不表示疑问，其所指的对象相同，指代不确定的人、事物或方式。\n［动词＋疑问代词＋就＋动词＋疑问代词］\n② 语言点导入\n教师可利用本课热身2导入语言点。\n教师请学生回忆学过的疑问代词，并请学生用疑问代词造句。\n教师引导学生说出目标句：\n教师：今天晚上老师请大家吃饭，你们想吃什么？\n学生说出各自想吃的菜。\n教师对大家说：这些菜都可以吃，大家想吃什么就吃什么。\n教师请学生重复目标句，导入本课句型。\n③ 语言点操练\n教师给出两个词组，请学生完成句子。\n例如：买东西、好吃的东西——什么东西好吃，我就买什么。\n　　　去旅游、好玩儿的地方\n　　　跟朋友见面、有时间的时候\n　　　喝茶、你喝的茶\n④ 语言点扩展练习\n教师提问，学生回答：\n你什么时候去旅游？\n你想去哪儿旅游？\n你想跟谁去旅游？\n你想怎么去旅游？\n注意：当前后两个分句的主语相同时，后一个分句中的主语可以省略，如果两个分句的主语不同，第二个主语要放在“就”的前边。"
+      },
+      {
+        "title_zh": "4 课文 课文1",
+        "body_zh": "（1）让学生听两遍录音并回答下列问题：\n女的最近打算做什么？——她打算买房子。\n女的看过的房子她觉得满意吗？——不满意。\n为什么？——一个没有电梯不方便，一个太高了，往下看很害怕。\n（2）教师领读课文两遍，让学生分角色朗读课文，注意说话人的语气。\n（3）模仿练习\n学生两人一组，根据提示词模仿课文内容进行对话练习。\nA：听说……？\nB：是，昨天……，今天又……，明天还要再……。\nA：都不……？\nB：一个……，……。一个……，……。\nA：……？\nB：……，多……啊！"
+      },
+      {
+        "title_zh": "4 课文 课文2",
+        "body_zh": "（1）让学生听两遍录音并回答下列问题：\n第二个人（马可）什么时候回国？——他下个星期回国。\n第一个人（小明）能去机场送他吗？为什么？——不能，因为他下星期不在北京。\n小明送给马可什么东西？——一个小熊猫。\n（2）教师领读课文两遍，让学生分角色朗读课文。\n（3）模仿练习\n学生两人一组，根据提示词模仿课文内容进行对话练习。\nA：听说你……？\nB：是啊，……。\nA：我……，不能……。\nB：没关系，你……。\nA：这个……送给你，……。\nB：谢谢。希望……。"
+      },
+      {
+        "title_zh": "4 课文 课文3",
+        "body_zh": "（1）让学生听两遍录音并回答下列问题：\n男的（小刚）想坐哪儿？——女的（小丽）坐哪儿，小刚就坐哪儿。\n小刚想喝什么？——小丽喝什么，他就喝什么。\n现在小丽要去哪儿？——她要去洗手间。\n小刚能去吗？——他不能去。\n（2）教师领读课文两遍，让学生分角色朗读课文。\n（3）教师给提示词，带领学生复述课文。\n提示词：坐、哪儿、安静、喝、饮料、等、马上、去、洗手间"
+      },
+      {
+        "title_zh": "4 课文 课文4",
+        "body_zh": "（1）让学生听两遍录音并回答下列问题：\n他们几年没见面了？——他们快五年没见面了。\n女的（周太太）有什么变化？——她胖了，以前的衣服都不能穿了。\n周太太和周明谁做饭？——周太太做饭。\n（2）教师领读课文两遍，让学生分角色朗读课文，注意说话人的语气。\n（3）教师给提示词，带领学生复述课文。\n提示词：变化、胖、健康、做饭、吃什么、吃多少\n练习册相关练习：第56页／四"
+      },
+      {
+        "title_zh": "5 汉字",
+        "body_zh": "旧字新词：\n① 教师领读以前学过的词语和新词，并让学生猜猜新词的意思。\n· 领读：见面、考试、面试\n问学生：“面试”是什么意思？——当面考查测试。\n扩展提问：还有什么试？——笔试。（根据实际情况选用）\n· 领读：自己、学习、自学\n问学生：“自学”是什么意思？——自己学习。\n· 领读：离开、结婚、离婚\n问学生：“离婚”是什么意思？——结婚以后，两个人又分开，不在一起了。\n注意“离婚”是一个动词。\n② 教师领读新词扩展，通过情景，理解新词的意思和用法：\n面试：公司面试／去上海面试／你面试得怎么样？\n自学：自学汉语／不会自学／听说你是自学的日语？\n离婚：离婚了／没离婚／他跟太太离婚了。\n汉字辨认练习：\n辨认下列汉字并组词。\n熊：________、________　间：________、________\n能：________、________　问：________、________\n老：________、________　会：________、________\n考：________、________　层：________、________\n几：________、________\n九：________、________\n练习册相关练习：第56页／三／第三部分"
+      },
+      {
+        "title_zh": "6 补充课堂活动——根据词卡写句子",
+        "body_zh": "4-5个学生一组，每组随机抽取3-4个词卡，用这些词完成一个句子，比比哪组写得最好最快。\n参考词语：又、再、满意、电梯、层、害怕、熊猫、见面、安静、一会儿、马上、洗手间、老、几乎、变化、健康、重要……"
+      },
+      {
+        "title_zh": "7 俗语",
+        "body_zh": "教师引导学生理解俗语的含义，注意这里的“站”不是指具体站立的位置，而是指看问题的高度。"
+      },
+      {
+        "title_zh": "8 本课小结",
+        "body_zh": "· 语言点：“又”和“再”表示重复\n　　　　　疑问代词＋就＋疑问代词\n· 汉　字：旧字新词：面试、自学、离婚"
+      }
+    ],
+    "notes_zh": [
+      "注意：一般情况下“又”后边有“了”与之搭配，“再”后边没有“了”，如果有“了”，表示情况的变化，例如“我不想再吃饺子了”。（语言点1）",
+      "注意：当前后两个分句的主语相同时，后一个分句中的主语可以省略，如果两个分句的主语不同，第二个主语要放在“就”的前边。（语言点2）",
+      "注意“离婚”是一个动词。（汉字）",
+      "注意这里的“站”不是指具体站立的位置，而是指看问题的高度。（俗语）"
+    ],
+    "warmup_answers_zh": [
+      "热身1 答案：①F　②E　③D　④B　⑤A　⑥C",
+      "热身2：可留至语言点（2）“疑问代词活用1”导入时使用。"
+    ],
+    "text_questions": [
+      {
+        "text": 1,
+        "q_zh": "女的最近打算做什么？",
+        "a_zh": "她打算买房子。"
+      },
+      {
+        "text": 1,
+        "q_zh": "女的看过的房子她觉得满意吗？",
+        "a_zh": "不满意。"
+      },
+      {
+        "text": 1,
+        "q_zh": "为什么？",
+        "a_zh": "一个没有电梯不方便，一个太高了，往下看很害怕。"
+      },
+      {
+        "text": 2,
+        "q_zh": "第二个人（马可）什么时候回国？",
+        "a_zh": "他下个星期回国。"
+      },
+      {
+        "text": 2,
+        "q_zh": "第一个人（小明）能去机场送他吗？为什么？",
+        "a_zh": "不能，因为他下星期不在北京。"
+      },
+      {
+        "text": 2,
+        "q_zh": "小明送给马可什么东西？",
+        "a_zh": "一个小熊猫。"
+      },
+      {
+        "text": 3,
+        "q_zh": "男的（小刚）想坐哪儿？",
+        "a_zh": "女的（小丽）坐哪儿，小刚就坐哪儿。"
+      },
+      {
+        "text": 3,
+        "q_zh": "小刚想喝什么？",
+        "a_zh": "小丽喝什么，他就喝什么。"
+      },
+      {
+        "text": 3,
+        "q_zh": "现在小丽要去哪儿？",
+        "a_zh": "她要去洗手间。"
+      },
+      {
+        "text": 3,
+        "q_zh": "小刚能去吗？",
+        "a_zh": "他不能去。"
+      },
+      {
+        "text": 4,
+        "q_zh": "他们几年没见面了？",
+        "a_zh": "他们快五年没见面了。"
+      },
+      {
+        "text": 4,
+        "q_zh": "女的（周太太）有什么变化？",
+        "a_zh": "她胖了，以前的衣服都不能穿了。"
+      },
+      {
+        "text": 4,
+        "q_zh": "周太太和周明谁做饭？",
+        "a_zh": "周太太做饭。"
+      }
+    ],
+    "summary_zh": "语言点：“又”和“再”表示重复；疑问代词＋就＋疑问代词。汉字：旧字新词：面试、自学、离婚。"
+  },
+  "workbook": {
+    "ref": {
+      "book": "workbook",
+      "pages": [
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60
+      ]
+    },
+    "answers_ref": {
+      "book": "teacher",
+      "pages": [
+        164,
+        165,
+        166
+      ]
+    },
+    "sections": [
+      {
+        "n": "一、听力 第一部分",
+        "type_zh": "听力 第一部分",
+        "instruction_zh": "第1–5题：听对话，选择与对话内容一致的图片",
+        "instruction_en": "Questions 1-5: Choose the right picture for each dialogue you hear.",
+        "audio": "hsk3-workbook-08-part1.mp3",
+        "items": [
+          {
+            "n": "例",
+            "zh": "男：喂，请问张经理在吗？ 女：他正在开会，您半个小时以后再打，好吗？",
+            "transcript_zh": "男：喂，请问张经理在吗？ 女：他正在开会，您半个小时以后再打，好吗？",
+            "options": {
+              "A": "[picture] a young woman sleeping peacefully in bed with her head on a pillow",
+              "B": "[picture] two giant pandas, one chewing bamboo",
+              "C": "[picture] a young couple looking at a map in the street, the woman wearing a hat",
+              "D": "[picture] a smiling woman in a uniform talking on a telephone",
+              "E": "[picture] a tall apartment building",
+              "F": "[picture] a young man wearing glasses in front of a display of eyeglasses"
+            },
+            "answer": "D",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                54
+              ]
+            }
+          },
+          {
+            "n": 1,
+            "zh": "",
+            "options": {
+              "A": "[picture] a young woman sleeping peacefully in bed with her head on a pillow",
+              "B": "[picture] two giant pandas, one chewing bamboo",
+              "C": "[picture] a young couple looking at a map in the street, the woman wearing a hat",
+              "D": "[picture] a smiling woman in a uniform talking on a telephone",
+              "E": "[picture] a tall apartment building",
+              "F": "[picture] a young man wearing glasses in front of a display of eyeglasses"
+            },
+            "transcript_zh": "女：十五层太高了，我都害怕向下看了。 男：我明白了。那我们看看别的房子。",
+            "answer": "E",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                166
+              ]
+            }
+          },
+          {
+            "n": 2,
+            "zh": "",
+            "options": {
+              "A": "[picture] a young woman sleeping peacefully in bed with her head on a pillow",
+              "B": "[picture] two giant pandas, one chewing bamboo",
+              "C": "[picture] a young couple looking at a map in the street, the woman wearing a hat",
+              "D": "[picture] a smiling woman in a uniform talking on a telephone",
+              "E": "[picture] a tall apartment building",
+              "F": "[picture] a young man wearing glasses in front of a display of eyeglasses"
+            },
+            "transcript_zh": "女：我是第一次来看大熊猫。 男：我也是，你看这些大熊猫多可爱啊！",
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                166
+              ]
+            }
+          },
+          {
+            "n": 3,
+            "zh": "",
+            "options": {
+              "A": "[picture] a young woman sleeping peacefully in bed with her head on a pillow",
+              "B": "[picture] two giant pandas, one chewing bamboo",
+              "C": "[picture] a young couple looking at a map in the street, the woman wearing a hat",
+              "D": "[picture] a smiling woman in a uniform talking on a telephone",
+              "E": "[picture] a tall apartment building",
+              "F": "[picture] a young man wearing glasses in front of a display of eyeglasses"
+            },
+            "transcript_zh": "男：都九点一刻了，你怎么还不起床？ 女：星期天又不上班，你也不让我多睡一会儿。",
+            "answer": "A",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                166
+              ]
+            }
+          },
+          {
+            "n": 4,
+            "zh": "",
+            "options": {
+              "A": "[picture] a young woman sleeping peacefully in bed with her head on a pillow",
+              "B": "[picture] two giant pandas, one chewing bamboo",
+              "C": "[picture] a young couple looking at a map in the street, the woman wearing a hat",
+              "D": "[picture] a smiling woman in a uniform talking on a telephone",
+              "E": "[picture] a tall apartment building",
+              "F": "[picture] a young man wearing glasses in front of a display of eyeglasses"
+            },
+            "transcript_zh": "女：我们是不是走错了，怎么还没到？ 男：别着急，就在前面，马上就到了。",
+            "answer": "C",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                166
+              ]
+            }
+          },
+          {
+            "n": 5,
+            "zh": "",
+            "options": {
+              "A": "[picture] a young woman sleeping peacefully in bed with her head on a pillow",
+              "B": "[picture] two giant pandas, one chewing bamboo",
+              "C": "[picture] a young couple looking at a map in the street, the woman wearing a hat",
+              "D": "[picture] a smiling woman in a uniform talking on a telephone",
+              "E": "[picture] a tall apartment building",
+              "F": "[picture] a young man wearing glasses in front of a display of eyeglasses"
+            },
+            "transcript_zh": "女：眼镜怎么样？你觉得满意吗？ 男：还不错，你看我的变化很大。",
+            "answer": "F",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                166
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "一、听力 第二部分",
+        "type_zh": "听力 第二部分",
+        "instruction_zh": "第6–10题：听句子，判断对错",
+        "instruction_en": "Questions 6-10: Decide whether the statements are true or false based on the sentences you hear.",
+        "audio": "hsk3-workbook-08-part2.mp3",
+        "items": [
+          {
+            "n": "例1",
+            "zh": "他希望自己很健康。",
+            "transcript_zh": "为了让自己更健康，他每天都花一个小时去锻炼身体。",
+            "answer": "√",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                55
+              ]
+            }
+          },
+          {
+            "n": "例2",
+            "zh": "那块儿手表不是他的。",
+            "transcript_zh": "今天我想早点儿回家。看了看手表，才5点。过了一会儿再看表，还是5点，我这才发现我的手表不走了。",
+            "answer": "×",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                55
+              ]
+            }
+          },
+          {
+            "n": 6,
+            "zh": "周经理换办公室了。",
+            "transcript_zh": "以前，周经理的办公室在一层，最近他搬到了六层，开始坐电梯了。",
+            "answer": "√",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                166
+              ]
+            }
+          },
+          {
+            "n": 7,
+            "zh": "他们以前总是见面。",
+            "transcript_zh": "我明天就回国了，以后不能总跟你见面了，有事请给我电话吧。",
+            "answer": "√",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                166
+              ]
+            }
+          },
+          {
+            "n": 8,
+            "zh": "他喜欢安静的地方。",
+            "transcript_zh": "我喜欢自学。没事的时候，找一个安静的地方，读一本好书，是我最大的快乐。",
+            "answer": "×",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                166
+              ]
+            }
+          },
+          {
+            "n": 9,
+            "zh": "那位小姐要去十层。",
+            "transcript_zh": "不好意思，小姐，这个电梯只到十层，您去十二层要坐右边那个电梯。",
+            "answer": "×",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                166
+              ]
+            }
+          },
+          {
+            "n": 10,
+            "zh": "他现在在洗手间。",
+            "transcript_zh": "六零三房间的客人刚才打电话来说洗手间有问题，你去看一下吧。",
+            "answer": "×",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                166
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "一、听力 第三部分",
+        "type_zh": "听力 第三部分",
+        "instruction_zh": "第11–15题：听短对话，选择正确答案",
+        "instruction_en": "Questions 11-15: Listen to the short dialogues and choose the right answers.",
+        "audio": "hsk3-workbook-08-part3.mp3",
+        "items": [
+          {
+            "n": "例",
+            "zh": "男的想让小王做什么？",
+            "options": {
+              "A": "开门",
+              "B": "拿东西",
+              "C": "去超市买东西"
+            },
+            "transcript_zh": "男：小王，帮我开一下门，好吗？谢谢！ 女：没问题。您去超市了？买了这么多东西。 问：男的想让小王做什么？",
+            "answer": "A",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                55
+              ]
+            }
+          },
+          {
+            "n": 11,
+            "zh": "男的是什么意思？",
+            "options": {
+              "A": "不让女的喝可乐",
+              "B": "不让女的睡觉",
+              "C": "不想喝可乐"
+            },
+            "transcript_zh": "女：我想再喝一杯可乐。 男：再喝一杯，你晚上就别想睡觉了。 问：男的是什么意思？",
+            "answer": "A",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                166
+              ]
+            }
+          },
+          {
+            "n": 12,
+            "zh": "关于女的，可以知道什么？",
+            "options": {
+              "A": "想休息",
+              "B": "感冒了",
+              "C": "要照顾妈妈"
+            },
+            "transcript_zh": "男：别害怕，只是感冒，休息两天就好了。 女：那我让妈妈来照顾我几天。 问：关于女的，可以知道什么？",
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                166
+              ]
+            }
+          },
+          {
+            "n": 13,
+            "zh": "女的是什么意思？",
+            "options": {
+              "A": "她要去洗手间",
+              "B": "这儿有人",
+              "C": "男的可以坐这儿"
+            },
+            "transcript_zh": "男：小姐，请问这儿有人吗？我可以坐这儿吗？ 女：不好意思，我朋友去洗手间了，一会儿就回来。 问：女的是什么意思？",
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                166
+              ]
+            }
+          },
+          {
+            "n": 14,
+            "zh": "女的为什么着急？",
+            "options": {
+              "A": "儿子身体不健康",
+              "B": "儿子学习不好",
+              "C": "儿子没去考试"
+            },
+            "transcript_zh": "女：我儿子又没考好，真着急！ 男：别着急，孩子身体健康是最重要的。 问：女的为什么着急？",
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                166
+              ]
+            }
+          },
+          {
+            "n": 15,
+            "zh": "女的明天做什么？",
+            "options": {
+              "A": "买裙子",
+              "B": "面试",
+              "C": "买衬衫"
+            },
+            "transcript_zh": "男：明天要去面试，这两条裙子你穿哪条？ 女：哪条好看我就穿哪条，你再帮我拿一下那件白衬衫。 问：女的明天做什么？",
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                166
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "一、听力 第四部分",
+        "type_zh": "听力 第四部分",
+        "instruction_zh": "第16–20题：听长对话，选择正确答案",
+        "instruction_en": "Questions 16-20: Listen to the dialogues and choose the right answers.",
+        "audio": "hsk3-workbook-08-part4.mp3",
+        "items": [
+          {
+            "n": "例",
+            "zh": "男的在做什么？",
+            "options": {
+              "A": "洗澡",
+              "B": "吃饭",
+              "C": "看电视"
+            },
+            "transcript_zh": "女：晚饭做好了，准备吃饭了。 男：等一会儿，比赛还有三分钟就结束了。 女：快点儿吧，一起吃，菜冷了就不好吃了。 男：你先吃，我马上就看完了。 问：男的在做什么？",
+            "answer": "C",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                56
+              ]
+            }
+          },
+          {
+            "n": 16,
+            "zh": "他们要去哪儿？",
+            "options": {
+              "A": "咖啡馆",
+              "B": "电梯那儿",
+              "C": "超市"
+            },
+            "transcript_zh": "男：小丽，是你啊，你也来这儿买东西啊？ 女：是啊，这家超市的东西很便宜。 男：好久不见，我们找个地方坐坐？ 女：好啊，下了电梯有一个咖啡馆，我们去那儿吧。 问：他们要去哪儿？",
+            "answer": "A",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                166
+              ]
+            }
+          },
+          {
+            "n": 17,
+            "zh": "他们今天吃什么？",
+            "options": {
+              "A": "药",
+              "B": "面条",
+              "C": "鸡蛋"
+            },
+            "transcript_zh": "男：你吃药了吗？ 女：还没有，我吃完饭再吃。 男：今天我们吃面条儿？ 女：是，吃鸡蛋面，马上就好。 问：他们今天吃什么？",
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                166
+              ]
+            }
+          },
+          {
+            "n": 18,
+            "zh": "男的为什么去饭店？",
+            "options": {
+              "A": "去洗手间",
+              "B": "找雨伞",
+              "C": "去吃饭"
+            },
+            "transcript_zh": "男：您好，我的雨伞可能忘在你们饭店了。 女：您的雨伞是什么颜色的？ 男：黑色的。 女：是这个吗？我们在洗手间里看到的。 问：男的为什么去饭店？",
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                166
+              ]
+            }
+          },
+          {
+            "n": 19,
+            "zh": "关于女的，可以知道什么？",
+            "options": {
+              "A": "明天中午不忙",
+              "B": "不想跟男的吃饭",
+              "C": "不知道哪天吃饭"
+            },
+            "transcript_zh": "男：我们一起吃个饭吧？ 女：好啊，哪天？ 男：你哪天不忙我们就哪天吃。 女：那明天中午，老地方见吧。 问：关于女的，可以知道什么？",
+            "answer": "A",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                166
+              ]
+            }
+          },
+          {
+            "n": 20,
+            "zh": "关于女的，可以知道什么？",
+            "options": {
+              "A": "考得很好",
+              "B": "不会写汉字",
+              "C": "一个题都不会"
+            },
+            "transcript_zh": "女：你这次汉语考得怎么样？ 男：九十分，你呢？ 女：我考得不太好，我只会做第一题，汉字几乎一个都不会写。 男：别着急，慢慢来。 问：关于女的，可以知道什么？",
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                166
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "二、阅读 第一部分",
+        "type_zh": "阅读 第一部分",
+        "instruction_zh": "第21–25题：选择合适的问答",
+        "instruction_en": "Questions 21-25: Match the two parts of the same dialogue.",
+        "items": [
+          {
+            "n": "例",
+            "zh": "你知道怎么去那儿吗？",
+            "options": {
+              "A": "你下课以后去哪儿学习？",
+              "B": "周末你有什么打算？",
+              "C": "听说你最近打算买房子了？",
+              "D": "可能吃的东西有问题，不太舒服。",
+              "E": "当然。我们先坐公共汽车，然后换地铁。",
+              "F": "那我们再买几块吧。"
+            },
+            "answer": "E",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                57
+              ]
+            }
+          },
+          {
+            "n": 21,
+            "zh": "你怎么又去洗手间啊？",
+            "options": {
+              "A": "你下课以后去哪儿学习？",
+              "B": "周末你有什么打算？",
+              "C": "听说你最近打算买房子了？",
+              "D": "可能吃的东西有问题，不太舒服。",
+              "E": "当然。我们先坐公共汽车，然后换地铁。",
+              "F": "那我们再买几块吧。"
+            },
+            "answer": "D",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                166
+              ]
+            }
+          },
+          {
+            "n": 22,
+            "zh": "这种蛋糕很甜，孩子们很喜欢。",
+            "options": {
+              "A": "你下课以后去哪儿学习？",
+              "B": "周末你有什么打算？",
+              "C": "听说你最近打算买房子了？",
+              "D": "可能吃的东西有问题，不太舒服。",
+              "E": "当然。我们先坐公共汽车，然后换地铁。",
+              "F": "那我们再买几块吧。"
+            },
+            "answer": "F",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                166
+              ]
+            }
+          },
+          {
+            "n": 23,
+            "zh": "是啊，看了很多，但是都不太满意。",
+            "options": {
+              "A": "你下课以后去哪儿学习？",
+              "B": "周末你有什么打算？",
+              "C": "听说你最近打算买房子了？",
+              "D": "可能吃的东西有问题，不太舒服。",
+              "E": "当然。我们先坐公共汽车，然后换地铁。",
+              "F": "那我们再买几块吧。"
+            },
+            "answer": "C",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                166
+              ]
+            }
+          },
+          {
+            "n": 24,
+            "zh": "我要去跟几个老朋友见面。",
+            "options": {
+              "A": "你下课以后去哪儿学习？",
+              "B": "周末你有什么打算？",
+              "C": "听说你最近打算买房子了？",
+              "D": "可能吃的东西有问题，不太舒服。",
+              "E": "当然。我们先坐公共汽车，然后换地铁。",
+              "F": "那我们再买几块吧。"
+            },
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                166
+              ]
+            }
+          },
+          {
+            "n": 25,
+            "zh": "哪儿安静我就去哪儿。",
+            "options": {
+              "A": "你下课以后去哪儿学习？",
+              "B": "周末你有什么打算？",
+              "C": "听说你最近打算买房子了？",
+              "D": "可能吃的东西有问题，不太舒服。",
+              "E": "当然。我们先坐公共汽车，然后换地铁。",
+              "F": "那我们再买几块吧。"
+            },
+            "answer": "A",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                166
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "二、阅读 第二部分",
+        "type_zh": "阅读 第二部分",
+        "instruction_zh": "第26–30题：选择合适的词语填空",
+        "instruction_en": "Questions 26-30: Choose the proper words to fill in the brackets.",
+        "word_bank": [
+          [
+            "A 电梯",
+            "B 洗手间",
+            "C 几乎",
+            "D 重要",
+            "E 声音",
+            "F 又"
+          ]
+        ],
+        "items": [
+          {
+            "n": "例",
+            "zh": "她说话的（　）多好听啊！",
+            "options": {
+              "A": "电梯",
+              "B": "洗手间",
+              "C": "几乎",
+              "D": "重要",
+              "E": "声音",
+              "F": "又"
+            },
+            "answer": "E",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                57
+              ]
+            }
+          },
+          {
+            "n": 26,
+            "zh": "你等我一会儿，我去一下（　），马上回来。",
+            "options": {
+              "A": "电梯",
+              "B": "洗手间",
+              "C": "几乎",
+              "D": "重要",
+              "E": "声音",
+              "F": "又"
+            },
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                166
+              ]
+            }
+          },
+          {
+            "n": 27,
+            "zh": "他（　）每天都要去公园锻炼一个小时。",
+            "options": {
+              "A": "电梯",
+              "B": "洗手间",
+              "C": "几乎",
+              "D": "重要",
+              "E": "声音",
+              "F": "又"
+            },
+            "answer": "C",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                166
+              ]
+            }
+          },
+          {
+            "n": 28,
+            "zh": "（　）里人太多了，我们别坐了。",
+            "options": {
+              "A": "电梯",
+              "B": "洗手间",
+              "C": "几乎",
+              "D": "重要",
+              "E": "声音",
+              "F": "又"
+            },
+            "answer": "A",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                166
+              ]
+            }
+          },
+          {
+            "n": 29,
+            "zh": "A：今天晚上你（　）要去听音乐会？ B：是啊，我现在对音乐非常感兴趣。",
+            "options": {
+              "A": "电梯",
+              "B": "洗手间",
+              "C": "几乎",
+              "D": "重要",
+              "E": "声音",
+              "F": "又"
+            },
+            "answer": "F",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                166
+              ]
+            }
+          },
+          {
+            "n": 30,
+            "zh": "A：我觉得我越来越胖了，以后我不吃晚饭了。 B：其实胖点儿或者瘦点儿都没关系，健康最（　）。",
+            "options": {
+              "A": "电梯",
+              "B": "洗手间",
+              "C": "几乎",
+              "D": "重要",
+              "E": "声音",
+              "F": "又"
+            },
+            "answer": "D",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                166
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "二、阅读 第三部分",
+        "type_zh": "阅读 第三部分",
+        "instruction_zh": "第31–35题：选择正确答案",
+        "instruction_en": "Questions 31-35: Choose the right answers.",
+        "items": [
+          {
+            "n": "例",
+            "zh": "您是来参加今天会议的吗？您来早了一点儿，现在才八点半。您先进来坐吧。 ★会议最可能几点开始？",
+            "options": {
+              "A": "8点",
+              "B": "8点半",
+              "C": "9点"
+            },
+            "answer": "C",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                58
+              ]
+            }
+          },
+          {
+            "n": 31,
+            "zh": "“再见”是一个很有意思的词，“再见”的意思是“再一次见面”，所以人们离开时说“再见”，是希望以后再见面。 ★什么时候说“再见”？",
+            "options": {
+              "A": "离开",
+              "B": "见面",
+              "C": "上课"
+            },
+            "answer": "A",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                166
+              ]
+            }
+          },
+          {
+            "n": 32,
+            "zh": "我男朋友的家虽然不大，但是住着很舒服，楼里很安静，还有电梯，他很喜欢他现在的家。 ★男朋友觉得他的家怎么样？",
+            "options": {
+              "A": "不舒服",
+              "B": "太小了",
+              "C": "很满意"
+            },
+            "answer": "C",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                166
+              ]
+            }
+          },
+          {
+            "n": 33,
+            "zh": "女孩子都喜欢穿裙子，爱唱歌、跳舞，但是我哥的女儿不是这样，她对运动很感兴趣，还喜欢玩儿电脑游戏，我几乎没见她穿过裙子。 ★哥哥的女儿：",
+            "options": {
+              "A": "喜欢唱歌",
+              "B": "很少穿裙子",
+              "C": "不爱运动"
+            },
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                166
+              ]
+            }
+          },
+          {
+            "n": 34,
+            "zh": "丈夫最近很忙，没有时间去运动，又胖了几斤。他打算忙完这几天，就去跑步和游泳。 ★丈夫最近：",
+            "options": {
+              "A": "变化不大",
+              "B": "身体不健康",
+              "C": "很少锻炼"
+            },
+            "answer": "C",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                166
+              ]
+            }
+          },
+          {
+            "n": 35,
+            "zh": "你要明白，想让每个人都喜欢你是几乎不可能的，所以做事情不要害怕别人不满意，最重要的就是你很满意。 ★做事情，最重要的是：",
+            "options": {
+              "A": "让每个人都喜欢你",
+              "B": "不害怕别人",
+              "C": "你觉得做得很好"
+            },
+            "answer": "C",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                166
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "三、书写 第一部分",
+        "type_zh": "书写 第一部分",
+        "instruction_zh": "第36–40题：连词成句",
+        "instruction_en": "Questions 36-40: Rearrange the words/phrases to make sentences.",
+        "items": [
+          {
+            "n": "例",
+            "zh": "小船　上　一　河　条　有",
+            "answer": "河上有一条小船。",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                59
+              ]
+            }
+          },
+          {
+            "n": 36,
+            "zh": "健康　就　吃什么　我　什么东西",
+            "answer": "什么东西健康我就吃什么。",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                166
+              ]
+            }
+          },
+          {
+            "n": 37,
+            "zh": "又　你　不满意了　怎么",
+            "answer": "你怎么又不满意了？",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                166
+              ]
+            }
+          },
+          {
+            "n": 38,
+            "zh": "熊猫　再　看一次　我想　去",
+            "answer": "我想再去看一次熊猫。",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                166
+              ]
+            }
+          },
+          {
+            "n": 39,
+            "zh": "离婚　很多　瘦了　以后　她",
+            "answer": "她离婚以后瘦了很多。",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                166
+              ]
+            }
+          },
+          {
+            "n": 40,
+            "zh": "坐电梯　上去　我们　吧",
+            "answer": "我们坐电梯上去吧。",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                166
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "三、书写 第二部分",
+        "type_zh": "书写 第二部分",
+        "instruction_zh": "第41–45题：看拼音，写汉字",
+        "instruction_en": "Questions 41-45: Write the characters based on their pinyin.",
+        "items": [
+          {
+            "n": "例",
+            "zh": "没（　）系，别难过，高兴点儿。",
+            "hint_zh": "guān",
+            "answer": "关",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                59
+              ]
+            }
+          },
+          {
+            "n": 41,
+            "zh": "房间里很（　）静，我很满意。",
+            "hint_zh": "ān",
+            "answer": "安",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                166
+              ]
+            }
+          },
+          {
+            "n": 42,
+            "zh": "太晚了，我有点儿害（　），你送我回家吧。",
+            "hint_zh": "pà",
+            "answer": "怕",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                166
+              ]
+            }
+          },
+          {
+            "n": 43,
+            "zh": "你住的楼里有（　）梯吗？",
+            "hint_zh": "diàn",
+            "answer": "电",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                166
+              ]
+            }
+          },
+          {
+            "n": 44,
+            "zh": "下课以后我（　）上回家吃饭。",
+            "hint_zh": "mǎ",
+            "answer": "马",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                166
+              ]
+            }
+          },
+          {
+            "n": 45,
+            "zh": "你觉得工作和健康，哪个更（　）要？",
+            "hint_zh": "zhòng",
+            "answer": "重",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                166
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "三、书写 第三部分",
+        "type_zh": "书写 第三部分",
+        "instruction_zh": "第46–50题：辨认汉字，选择正确的汉字填空",
+        "instruction_en": "Questions 46-50: Distinguish the characters and fill in the blanks.",
+        "items": [
+          {
+            "n": "例",
+            "zh": "我不知道________个地方在________儿。",
+            "hint_zh": "（那、哪）",
+            "answer": "那、哪",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                60
+              ]
+            }
+          },
+          {
+            "n": 46,
+            "zh": "今天下午你________跟我一起去看________猫吗？",
+            "hint_zh": "（熊、能）",
+            "answer": "能、熊",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                166
+              ]
+            }
+          },
+          {
+            "n": 47,
+            "zh": "请________，洗手________在哪儿？",
+            "hint_zh": "（间、问）",
+            "answer": "问、间",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                166
+              ]
+            }
+          },
+          {
+            "n": 48,
+            "zh": "________试的时候不认真，这是你的________问题了。",
+            "hint_zh": "（老、考）",
+            "answer": "考、老",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                166
+              ]
+            }
+          },
+          {
+            "n": 49,
+            "zh": "你先上去，一________儿我去十________找你。",
+            "hint_zh": "（会、层）",
+            "answer": "会、层",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                166
+              ]
+            }
+          },
+          {
+            "n": 50,
+            "zh": "你离开的这________年变化真大，我________乎不认识你了。",
+            "hint_zh": "（几、九）",
+            "answer": "九、几",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                166
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "四、复习",
+        "type_zh": "复习",
+        "instruction_zh": "第1–2题：根据课文内容填空",
+        "instruction_en": "Questions 1-2: Fill in the blanks based on the texts in the textbook.",
+        "items": [
+          {
+            "n": 1,
+            "zh": "小丽最近打算买房子，今天________去看了看，但是都不________，一个没有________，不方便，一个在二十________，太高了，她觉得往下看太________了。",
+            "answer": "又、满意、电梯、层、害怕",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                166
+              ]
+            }
+          },
+          {
+            "n": 2,
+            "zh": "周太太和________同学五年没________了，同学觉得周太太几乎没________，但是周太太说她胖了，现在想吃什么就吃什么，想吃多少就吃多少，因为________最________，胖瘦没关系。",
+            "answer": "老、见面、变化、健康、重要",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                166
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "audio": {
+    "textbook": [
+      "hsk3-textbook-0801.mp3",
+      "hsk3-textbook-0802.mp3",
+      "hsk3-textbook-0803.mp3",
+      "hsk3-textbook-0804.mp3",
+      "hsk3-textbook-0805.mp3"
+    ],
+    "workbook": [
+      "hsk3-workbook-08-part1.mp3",
+      "hsk3-workbook-08-part2.mp3",
+      "hsk3-workbook-08-part3.mp3",
+      "hsk3-workbook-08-part4.mp3"
+    ]
+  },
+  "unclear": [
+    "Дасгалын номын сонсгол 第二部分 8: багшийн номын хавсралтын 参考答案 (PDF х.166, «6–10：√ √ × × ×») 8 = × гэж хэвлэгдсэн — номд байгаагаар answer «×» гэж бичсэн. Гэвч бичвэр «我喜欢自学。没事的时候，找一个安静的地方，读一本好书，是我最大的快乐。» нь ★«他喜欢安静的地方。» мэдэгдэлтэй утгаараа тохирч (√) байгаа тул хариулт ↔ бичвэр зөрж байна. Засаагүй.",
+    "Сурах бичиг PDF х.82 课文4: ханзаар «是呀，想吃什么就吃什么。», 拼音课文-д «Shì a, …» (呀 → a) — номд байгаагаар хоёуланг нь үлдээсэн.",
+    "害怕-ийн пиньинь: 生词 (PDF х.81) ба 拼音课文 (х.82) «hài pà» (зайтай), 热身1 (х.80) «hàipà» (залгаа) — тус бүрийг номд байгаагаар нь оруулсан.",
+    "Энэ хичээлд сурах бичгийн 专有名词 хүснэгт, 汉字知识 болон 文化 хэсэг байхгүй (proper_nouns, culture оруулаагүй). Сурах бичгийн 注释1-д бүтцийн хүснэгт байхгүй (зөвхөн текст дотор «又+V»/«再+V»), багшийн номд «又＋动词／再＋动词» хайрцаг байгаа — teacher.steps-д оруулсан.",
+    "Сурах бичгийн 注释1 жишээ (8) ба 注释2 жишээ (4) улаанаар хэвлэгдсэн (课文1, 课文3-ын өгүүлбэр) — схемд өнгөний талбар байхгүй.",
+    "Сурах бичгийн 练一练 (2 дүрэм × 3), 练习2 选词填空 / 练习3 描述图片 / 练习4 回答问题 ба 热身2 (疑问代词 бичих, зөвхөн ①谁 жишээ), 运用 болон багшийн номын 语言点操练 (又/再 нөхөх, 疑问代词 өгүүлбэр) — хариулт сурах бичиг, багшийн номд хэвлэгдээгүй тул answer талбаргүй. Багшийн номын 课文 асуулт-хариулт (teacher.text_questions) нь 练习4-ийн асуултаас өөр.",
+    "Багшийн номын 汉字辨认练习 (熊/能 · 老/考 · 几/九 · 间/问 · 会/层 — 组词) хоосон зайтай, хариулт хэвлэгдээгүй; хосуудыг textbook.characters.confusable_pairs-д оруулсан (дасгалын номын 46–50-тай ижил).",
+    "Багшийн ном PDF х.58 生词 «对比法展示：胖—瘦、容易—难» — эдгээр нь энэ хичээлийн үг биш (2-р хичээлийнх); номд байгаагаар нь teacher.steps-д үлдээсэн.",
+    "Багшийн номын «练习册相关练习：第50页／一／第一部分，第53页／二／第二部分», «第56页／四», «第56页／三／第三部分» — дасгалын номын хэвлэсэн хуудас (PDF х.54, 57, 60).",
+    "Багшийн ном PDF х.58 启发式引导-ийн жишээнд «很满意», «没有变化», «很健康» доогуур зурсан — схемд тэмдэглэх талбаргүй тул энгийн текстээр оруулсан.",
+    "Дасгалын номын сонсгол нэг CD тэмдэгтэй (08) — аудиог hsk3-workbook-08-part1…4.mp3 болгож хэсэг тус бүрт хуваасныг section.audio-д оноосон.",
+    "Дасгалын ном 听力 第三/四部分 — номд зөвхөн сонголтууд хэвлэгдсэн; item.zh-д багшийн номын хавсралтын «问：» асуултыг оруулсан (transcript_zh-д бүтнээр).",
+    "Сурах бичгийн 拼音课文-ын гарчгийн пиньинь (Zài xiūxishì / Zài xuéxiào / Zài kāfēitīng / Zài Zhōu Míng jiā) болон ярилцагчийн нэрийн пиньинь (tóngshì, Xiǎolì, Xiǎomíng, Mǎkě, Xiǎogāng, lǎo tóngxué, Zhōu tàitai) схемд талбаргүй тул lines.pinyin-д зөвхөн яриаг оруулсан.",
+    "Зурагтай даалгаврын (热身1, 练习3, дасгалын номын 听力 第一部分) picture_desc_en / pictures_desc_en нь номд текстгүй тул зургаас товч дүрсэлсэн.",
+    "HSK 3.0 нэмэлт үгс, дүрэм (BLCUP 课件 补充HSK3.0, слайд 5, 17, 28, 30) hsk30-д."
+  ],
+  "verified_pages": [
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
     80,
     81,
     82,
@@ -16,1983 +1990,123 @@
     84,
     85,
     86,
-    87
-   ]
-  },
-  "warmup": [
-   {
-    "instruction_zh": "给下面的词语选择对应的图片",
-    "instruction_en": "Match the pictures with the words.",
-    "items": [
-     "①熊猫 xióngmāo",
-     "②安静 ānjìng",
-     "③见面 jiàn miàn",
-     "④电梯 diàntī",
-     "⑤害怕 hàipà",
-     "⑥洗手间 xǐshǒujiān"
-    ],
-    "pictures_desc_en": [
-     "A: a man, a woman and a child sitting close together on a sofa with frightened faces",
-     "B: two elevator doors side by side, the left one open, the right one closed",
-     "C: a bathroom with a washbasin, a toilet and a towel rail",
-     "D: two men in suits shaking hands in front of skyscrapers",
-     "E: a young woman holding her index finger to her lips (\"shh\")",
-     "F: two giant pandas, one eating bamboo"
-    ]
-   },
-   {
-    "instruction_zh": "写出你学过的疑问代词",
-    "instruction_en": "Write down the interrogative pronouns you’ve learned.",
-    "items": [
-     "①谁",
-     "②________",
-     "③________",
-     "④________",
-     "⑤________",
-     "⑥________"
-    ]
-   }
-  ],
-  "texts": [
-   {
-    "n": 1,
-    "title_zh": "在休息室",
-    "title_en": "In the lounge",
-    "kind": "dialogue",
-    "audio": "hsk3-textbook-0801.mp3",
-    "lines": [
-     {
-      "speaker": "同事",
-      "zh": "听说你最近打算买房子？",
-      "pinyin": "Tīngshuō nǐ zuìjìn dǎsuàn mǎi fángzi?"
-     },
-     {
-      "speaker": "小丽",
-      "zh": "是，昨天去看了看，今天又去看了看，明天还要再去看看。",
-      "pinyin": "Shì, zuótiān qù kànle kàn, jīntiān yòu qù kànle kàn, míngtiān hái yào zài qù kànkan."
-     },
-     {
-      "speaker": "同事",
-      "zh": "都不满意吗？",
-      "pinyin": "Dōu bù mǎnyì ma?"
-     },
-     {
-      "speaker": "小丽",
-      "zh": "一个没有电梯，不方便。一个有电梯，但是在二十层。",
-      "pinyin": "Yí ge méiyǒu diàntī, bù fāngbiàn. Yí ge yǒu diàntī, dànshì zài èrshí céng."
-     },
-     {
-      "speaker": "同事",
-      "zh": "二十层怎么了？",
-      "pinyin": "Èrshí céng zěnme le?"
-     },
-     {
-      "speaker": "小丽",
-      "zh": "太高了，往下看多害怕啊！",
-      "pinyin": "Tài gāo le, wǎng xià kàn duō hài pà a!"
-     }
-    ],
-    "new_words": [
-     {
-      "n": 1,
-      "zh": "又",
-      "pinyin": "yòu",
-      "pos": "adv.",
-      "en": "again",
-      "text": 1
-     },
-     {
-      "n": 2,
-      "zh": "满意",
-      "pinyin": "mǎnyì",
-      "pos": "v.",
-      "en": "to be satisfied",
-      "text": 1
-     },
-     {
-      "n": 3,
-      "zh": "电梯",
-      "pinyin": "diàntī",
-      "pos": "n.",
-      "en": "elevator",
-      "text": 1
-     },
-     {
-      "n": 4,
-      "zh": "层",
-      "pinyin": "céng",
-      "pos": "m.",
-      "en": "used for floors",
-      "text": 1
-     },
-     {
-      "n": 5,
-      "zh": "害怕",
-      "pinyin": "hài pà",
-      "pos": "v.",
-      "en": "to be afraid, to be scared",
-      "text": 1
-     }
-    ]
-   },
-   {
-    "n": 2,
-    "title_zh": "在学校",
-    "title_en": "At school",
-    "kind": "dialogue",
-    "audio": "hsk3-textbook-0802.mp3",
-    "lines": [
-     {
-      "speaker": "小明",
-      "zh": "听说你下个星期就要回国了？",
-      "pinyin": "Tīngshuō nǐ xià ge xīngqī jiù yào huí guó le?"
-     },
-     {
-      "speaker": "马可",
-      "zh": "是啊，真不想离开北京。",
-      "pinyin": "Shì a, zhēn bù xiǎng líkāi Běijīng."
-     },
-     {
-      "speaker": "小明",
-      "zh": "我下星期不在北京，不能去机场送你了。",
-      "pinyin": "Wǒ xià xīngqī bú zài Běijīng, bù néng qù jīchǎng sòng nǐ le."
-     },
-     {
-      "speaker": "马可",
-      "zh": "没关系，你忙吧。",
-      "pinyin": "Méi guānxi, nǐ máng ba."
-     },
-     {
-      "speaker": "小明",
-      "zh": "这个小熊猫送给你，欢迎你以后再到中国来。",
-      "pinyin": "Zhège xiǎo xióngmāo sòng gěi nǐ, huānyíng nǐ yǐhòu zài dào Zhōngguó lái."
-     },
-     {
-      "speaker": "马可",
-      "zh": "谢谢。希望以后能再见面。",
-      "pinyin": "Xièxie. Xīwàng yǐhòu néng zài jiàn miàn."
-     }
-    ],
-    "new_words": [
-     {
-      "n": 6,
-      "zh": "熊猫",
-      "pinyin": "xióngmāo",
-      "pos": "n.",
-      "en": "panda",
-      "text": 2
-     },
-     {
-      "n": 7,
-      "zh": "见面",
-      "pinyin": "jiàn miàn",
-      "pos": "v.",
-      "en": "to meet",
-      "text": 2
-     }
-    ]
-   },
-   {
-    "n": 3,
-    "title_zh": "在咖啡厅",
-    "title_en": "In a coffee house",
-    "kind": "dialogue",
-    "audio": "hsk3-textbook-0803.mp3",
-    "lines": [
-     {
-      "speaker": "小丽",
-      "zh": "小刚，我们坐哪儿？",
-      "pinyin": "Xiǎogāng, wǒmen zuò nǎr?"
-     },
-     {
-      "speaker": "小刚",
-      "zh": "你坐哪儿我就坐哪儿。",
-      "pinyin": "Nǐ zuò nǎr wǒ jiù zuò nǎr."
-     },
-     {
-      "speaker": "小丽",
-      "zh": "坐这儿吧，这儿安静。你想喝什么饮料？",
-      "pinyin": "Zuò zhèr ba, zhèr ānjìng. Nǐ xiǎng hē shénme yǐnliào?"
-     },
-     {
-      "speaker": "小刚",
-      "zh": "你喝什么我就喝什么。",
-      "pinyin": "Nǐ hē shénme wǒ jiù hē shénme."
-     },
-     {
-      "speaker": "小丽",
-      "zh": "喝可乐吧。你等我一会儿，我马上回来。",
-      "pinyin": "Hē kělè ba. Nǐ děng wǒ yíhuìr, wǒ mǎshàng huílai."
-     },
-     {
-      "speaker": "小刚",
-      "zh": "小丽，你去哪儿？你去哪儿我就去哪儿。",
-      "pinyin": "Xiǎolì, nǐ qù nǎr? Nǐ qù nǎr wǒ jiù qù nǎr."
-     },
-     {
-      "speaker": "小丽",
-      "zh": "我去洗手间。",
-      "pinyin": "Wǒ qù xǐshǒujiān."
-     }
-    ],
-    "new_words": [
-     {
-      "n": 8,
-      "zh": "安静",
-      "pinyin": "ānjìng",
-      "pos": "adj.",
-      "en": "quiet",
-      "text": 3
-     },
-     {
-      "n": 9,
-      "zh": "可乐",
-      "pinyin": "kělè",
-      "pos": "n.",
-      "en": "cola, Coke",
-      "text": 3,
-      "star": true
-     },
-     {
-      "n": 10,
-      "zh": "一会儿",
-      "pinyin": "yíhuìr",
-      "pos": "n.",
-      "en": "a moment",
-      "text": 3
-     },
-     {
-      "n": 11,
-      "zh": "马上",
-      "pinyin": "mǎshàng",
-      "pos": "adv.",
-      "en": "immediately, at once",
-      "text": 3
-     },
-     {
-      "n": 12,
-      "zh": "洗手间",
-      "pinyin": "xǐshǒujiān",
-      "pos": "n.",
-      "en": "bathroom, restroom",
-      "text": 3
-     }
-    ]
-   },
-   {
-    "n": 4,
-    "title_zh": "在周明家",
-    "title_en": "At Zhou Ming’s home",
-    "kind": "dialogue",
-    "audio": "hsk3-textbook-0804.mp3",
-    "lines": [
-     {
-      "speaker": "老同学",
-      "zh": "快五年了，你几乎没变化。",
-      "pinyin": "Kuài wǔ nián le, nǐ jīhū méi biànhuà."
-     },
-     {
-      "speaker": "周太太",
-      "zh": "谁说的？我胖了，以前的衣服都不能穿了。",
-      "pinyin": "Shéi shuō de? Wǒ pàng le, yǐqián de yīfu dōu bù néng chuān le."
-     },
-     {
-      "speaker": "老同学",
-      "zh": "健康最重要，胖瘦没关系。",
-      "pinyin": "Jiànkāng zuì zhòngyào, pàng shòu méi guānxi."
-     },
-     {
-      "speaker": "周太太",
-      "zh": "是呀，想吃什么就吃什么。",
-      "pinyin": "Shì a, xiǎng chī shénme jiù chī shénme."
-     },
-     {
-      "speaker": "老同学",
-      "zh": "你做饭还是周明做饭？",
-      "pinyin": "Nǐ zuò fàn háishi Zhōu Míng zuò fàn?"
-     },
-     {
-      "speaker": "周太太",
-      "zh": "我做，我想吃什么就做什么，想吃多少就做多少。",
-      "pinyin": "Wǒ zuò, wǒ xiǎng chī shénme jiù zuò shénme, xiǎng chī duōshao jiù zuò duōshao."
-     }
-    ],
-    "new_words": [
-     {
-      "n": 13,
-      "zh": "老",
-      "pinyin": "lǎo",
-      "pos": "adj.",
-      "en": "old",
-      "text": 4
-     },
-     {
-      "n": 14,
-      "zh": "几乎",
-      "pinyin": "jīhū",
-      "pos": "adv.",
-      "en": "almost",
-      "text": 4
-     },
-     {
-      "n": 15,
-      "zh": "变化",
-      "pinyin": "biànhuà",
-      "pos": "v.",
-      "en": "to change",
-      "text": 4
-     },
-     {
-      "n": 16,
-      "zh": "健康",
-      "pinyin": "jiànkāng",
-      "pos": "adj.",
-      "en": "healthy",
-      "text": 4
-     },
-     {
-      "n": 17,
-      "zh": "重要",
-      "pinyin": "zhòngyào",
-      "pos": "adj.",
-      "en": "important",
-      "text": 4
-     }
-    ]
-   }
-  ],
-  "grammar": [
-   {
-    "n": 1,
-    "title_zh": "“又”和“再”",
-    "title_en": "Comparison of “又” and “再”",
-    "explanation_zh": "副词“又”和“再”都可以放在动词前边，表示动作或情况的重复出现。“又＋V”通常表示已发生了的重复动作或情况，“再＋V”表示还没发生的重复动作或情况。\n“又”的例句如下：（1）–（4）\n“再”的例句如下：（5）–（8）",
-    "explanation_en": "The adverbs “又” and “再” can both be put before a verb to indicate the recurrence of an action or a situation. “又 + V” usually means the recurrence has already happened, while “再 + V” means the recurrence has not happened yet.\nExamples of “又”: (1)–(4)\nExamples of “再”: (5)–(8)",
-    "examples": [
-     {
-      "n": 1,
-      "zh": "上个星期我买了一条裤子，昨天又买了一条。"
-     },
-     {
-      "n": 2,
-      "zh": "你上午已经喝了一杯咖啡，下午怎么又喝了一杯？"
-     },
-     {
-      "n": 3,
-      "zh": "小刚，你前天迟到，昨天迟到，今天怎么又迟到了？"
-     },
-     {
-      "n": 4,
-      "zh": "我昨天看了一个电影，今天又看了一个。"
-     },
-     {
-      "n": 5,
-      "zh": "你只吃了一点儿饭，再吃一点儿吧。"
-     },
-     {
-      "n": 6,
-      "zh": "家里只有一个面包了，我们再买一些吧。"
-     },
-     {
-      "n": 7,
-      "zh": "那个饭馆我昨天去了一次，明天还想再去一次。"
-     },
-     {
-      "n": 8,
-      "zh": "昨天去看了看，今天又去看了看，明天还要再去看看。"
-     }
-    ],
-    "practice_instruction_zh": "练一练　完成句子 Complete the sentences.",
-    "practice": [
-     {
-      "n": 1,
-      "zh": "我上个星期去了那个中国饭馆，明天想________去一次。"
-     },
-     {
-      "n": 2,
-      "zh": "你怎么________买了一条裤子？不是已经有一条了吗？"
-     },
-     {
-      "n": 3,
-      "zh": "刚才我去找他，他没在办公室，我一会儿________去。"
-     }
-    ]
-   },
-   {
-    "n": 2,
-    "title_zh": "疑问代词活用1",
-    "title_en": "Flexible Use of Interrogative Pronouns 1",
-    "explanation_zh": "汉语中，“就”可以用在两个相同的疑问代词之间，这时两个疑问代词不表示疑问，其所指的对象相同，指代不确定的人、事物或方式。当前后两个分句的主语相同时，后一个分句中的主语可以省略，如果两个分句的主语不同，第二个主语要放在“就”的前边。例如：",
-    "explanation_en": "In Chinese, “就” can be used between two of the same interrogative pronouns, in which case the interrogative pronouns, rather than being interrogative, refer to the same indefinite person, object or manner. When the two clauses of a sentence share one subject, the subject of the second clause can be left out; when the two clauses have different subjects, the second subject is put right before “就”. For example:",
-    "examples": [
-     {
-      "n": 1,
-      "zh": "什么东西便宜我就买什么。"
-     },
-     {
-      "n": 2,
-      "zh": "你哪天有时间就哪天来我家吧。"
-     },
-     {
-      "n": 3,
-      "zh": "谁喜欢他他就喜欢谁。"
-     },
-     {
-      "n": 4,
-      "zh": "你坐哪儿我就坐哪儿。"
-     }
-    ],
-    "practice_instruction_zh": "练一练　完成对话 Complete the dialogues.",
-    "practice": [
-     {
-      "n": 1,
-      "zh": "A：你想喝点儿什么？ B：________。"
-     },
-     {
-      "n": 2,
-      "zh": "A：我们什么时候去爬山？ B：________。"
-     },
-     {
-      "n": 3,
-      "zh": "A：你想跟谁一起去旅游？ B：________。"
-     }
-    ]
-   }
-  ],
-  "exercises": [
-   {
-    "n": 1,
-    "type_zh": "朗读",
-    "instruction_zh": "朗读下列短语和句子",
-    "instruction_en": "Read the following phrases and sentences aloud.",
-    "audio": "hsk3-textbook-0805.mp3",
-    "items": [
-     {
-      "n": 1,
-      "zh": "满意：很满意／不满意／对服务员很满意／（那些房子）你都不满意吗？"
-     },
-     {
-      "n": 2,
-      "zh": "害怕：不害怕／别害怕／我害怕他／往下看多害怕啊。"
-     },
-     {
-      "n": 3,
-      "zh": "见面：见个面／跟朋友见面／见见面／希望以后能再见面。"
-     },
-     {
-      "n": 4,
-      "zh": "一会儿：玩儿一会儿／看一会儿电视／我一会儿再去／你等我一会儿。"
-     },
-     {
-      "n": 5,
-      "zh": "变化：没变化／变化很大／变化太快／你几乎没变化。"
-     }
-    ]
-   },
-   {
-    "n": 2,
-    "type_zh": "选词填空",
-    "instruction_zh": "选择恰当的词语填空",
-    "instruction_en": "Choose the proper words to fill in the blanks.",
-    "word_bank": [
-     [
-      "层",
-      "几乎",
-      "洗手间",
-      "电梯",
-      "害怕"
-     ],
-     [
-      "见面",
-      "变化",
-      "重要",
-      "熊猫",
-      "满意"
-     ]
-    ],
-    "items": [
-     {
-      "n": 1,
-      "zh": "________里人太多了，我们走上去吧。"
-     },
-     {
-      "n": 2,
-      "zh": "你家住几________？"
-     },
-     {
-      "n": 3,
-      "zh": "没事儿，我一点儿也不________。"
-     },
-     {
-      "n": 4,
-      "zh": "我去一下________，马上回来。"
-     },
-     {
-      "n": 5,
-      "zh": "我现在________每天都要用电脑。"
-     },
-     {
-      "n": 6,
-      "zh": "A：您对我们的服务________吗？ B：不错，我玩儿得很高兴。"
-     },
-     {
-      "n": 7,
-      "zh": "A：周末你做什么了？ B：我去看________了。"
-     },
-     {
-      "n": 8,
-      "zh": "A：我们几点________？ B：三点半吧。"
-     },
-     {
-      "n": 9,
-      "zh": "A：你看你，这几年一点儿________都没有。 B：是啊，我每天都运动。"
-     },
-     {
-      "n": 10,
-      "zh": "A：这件衣服太贵了，别买了。 B：贵不贵不________，你喜欢就行。"
-     }
-    ]
-   },
-   {
-    "n": 3,
-    "type_zh": "描述图片",
-    "instruction_zh": "用本课新学的语言点和词语描述图片",
-    "instruction_en": "Describe the pictures using the newly-learned language points and words.",
-    "items": [
-     {
-      "n": 1,
-      "zh": "A：您对这个房子________吗？ B：有点儿贵，我想________看看别的房子。 A：您打算买什么样的？ B：________就________。",
-      "picture_desc_en": "An architectural floor plan (rooms labelled BEDROOM, DINING ROOM, KITCHEN) with a bunch of keys on a blue key tag lying on it."
-     },
-     {
-      "n": 2,
-      "zh": "A：你怎么________生病了？你的感冒不是刚好吗？ B：昨天下大雨，我没带伞。 A：________去医院看病吧？ B：不去了，我想睡________。",
-      "picture_desc_en": "A young woman lying in bed under a white duvet with her hand on her forehead, looking unwell."
-     },
-     {
-      "n": 3,
-      "zh": "A：妈妈，吃苹果对________好，我们买一些吧。 B：好，你想吃几个就________。 A：那我们________买五个吧。 B：可以。",
-      "picture_desc_en": "A woman with a small child in a shopping cart at a market stall full of fruit."
-     },
-     {
-      "n": 4,
-      "zh": "A：这两件衣服都很好看，你说我买哪件？ B：________就买哪件。 A：这件蓝色的怎么样？ B：怎么________买蓝色的？你已经有两件了。",
-      "picture_desc_en": "A young woman in a clothes shop holding up a light-blue garment in front of a rack of clothes."
-     }
-    ]
-   },
-   {
-    "n": 4,
-    "type_zh": "回答问题",
-    "instruction_zh": "根据课文回答问题",
-    "instruction_en": "Answer the questions according to the texts.",
-    "items": [
-     {
-      "n": 1,
-      "zh": "小丽最近在做什么？"
-     },
-     {
-      "n": 2,
-      "zh": "小丽为什么不满意？"
-     },
-     {
-      "n": 3,
-      "zh": "小明送给了马可什么东西？他为什么送马可东西？"
-     },
-     {
-      "n": 4,
-      "zh": "小丽和小刚在哪儿？做什么？"
-     },
-     {
-      "n": 5,
-      "zh": "小丽要去哪儿？小刚也去吗？"
-     },
-     {
-      "n": 6,
-      "zh": "周太太为什么说自己胖了？"
-     }
-    ]
-   }
-  ],
-  "characters": {
-   "knowledge_title_zh": "旧字新词",
-   "knowledge_zh": "读读下面的词语，想想组成的新词是什么意思。",
-   "knowledge_en": "Read the following words and guess the meanings of the newly-formed ones.",
-   "word_game": [
-    {
-     "parts": [
-      "见面",
-      "考试"
-     ],
-     "result": "面试"
-    },
-    {
-     "parts": [
-      "自己",
-      "学习"
-     ],
-     "result": "自学"
-    },
-    {
-     "parts": [
-      "离开",
-      "结婚"
-     ],
-     "result": "离婚"
-    }
-   ],
-   "confusable_pairs": [
-    [
-     "熊",
-     "能"
-    ],
-    [
-     "老",
-     "考"
-    ],
-    [
-     "几",
-     "九"
-    ],
-    [
-     "间",
-     "问"
-    ],
-    [
-     "会",
-     "层"
-    ]
-   ]
-  },
-  "application": [
-   {
-    "title_zh": "双人活动",
-    "instruction_zh": "两人一组，互相调查对方的情况，完成调查表，用“疑问代词＋就＋疑问代词”回答。",
-    "instruction_en": "Work in pairs. Make a survey of each other and fill in the questionnaire. Answer the questions using the structure “Interrogative Pronoun + 就 + Interrogative Pronoun”.",
-    "example_zh": [
-     "表格：| | 问 | 答 |",
-     "| 1 | 你打算去哪儿旅游？ | 哪儿好玩儿我就去哪儿。 |",
-     "| 2 | 什么时候去？ | |",
-     "| 3 | 怎么去？ | |",
-     "| 4 | 跟谁一起去？ | |",
-     "| 5 | 住在哪儿？ | |",
-     "| 6 | 到了旅游的地方吃什么？ | |"
-    ]
-   },
-   {
-    "title_zh": "小组活动",
-    "instruction_zh": "3～4人一组，互相介绍自己的一次旅行经历，说说去过几次，是什么时候去的，做了什么，如果有机会再去一次，会做什么？",
-    "instruction_en": "Work in groups of 3-4. Describe one of your travel experiences to your group members, including how many times you’ve been to that place, when you went there, what you did, and what you’d like to do if you have a chance to be there once again.",
-    "example_zh": [
-     "例如：我去过两次北京，2000年去了一次，前年又去了一次。我去了长城。我打算再去一次北京，再去一次长城。",
-     "表格：| | 什么地方 | 去过几次 | 是什么时候去的 | 做了什么 | 再去一次做什么 |",
-     "| 1 | 北京 | 两次 | 2000年；前年 | 去长城 | 再去一次长城 |"
-    ]
-   }
-  ],
-  "saying": {
-   "zh": "站得高，看得远",
-   "pinyin": "Zhàn de gāo, kàn de yuǎn",
-   "en": "The higher you stand, the farther you’ll see",
-   "explanation_zh": "“站得高，看得远”的意思是，站在高的地方，就能看到更远的地方。这句话也用来比喻要站在高层次上看问题，才能看得更全面、更长远。",
-   "explanation_en": "“站得高，看得远” means the one who stands higher takes a broader view. It is also used metaphorically to indicate that we should view a problem at a high level to obtain a more comprehensive understanding of it in the long run."
-  }
- },
- "teacher": {
-  "ref": {
-   "book": "teacher",
-   "pages": [
-    57,
-    58,
-    59,
-    60,
-    61,
-    62,
-    63
-   ]
-  },
-  "objectives_zh": [
-   "重点词语：学生能够熟练掌握：“见面、一会儿、马上、老、几乎、重要”的词义和用法",
-   "语言点：学生能够了解并掌握：（1）副词“又”和“再”表示动作或情况的重复出现（2）疑问代词活用1：疑问代词＋就＋疑问代词",
-   "汉字：学生能够：根据已学生词猜测出3个旧字新词“面试、自学、离婚”的意思",
-   "功能：学生能够：（1）用“又”和“再”表达重复的动作或情况（2）用疑问代词表达不确指的人、事物或方式"
-  ],
-  "steps": [
-   {
-    "title_zh": "复习旧课",
-    "body_zh": "1 教师展示第7课的热身图片，请学生根据图片说出生词。\n2 教师根据第7课的内容进行提问。\n（1）你今天早上是几点起床、几点出门、几点到教室的？\n（2）你对音乐感兴趣吗？你对什么感兴趣？\n（3）你觉得每天运动多长时间对身体最好？\n（4）你觉得学多长时间汉语以后，可以看懂中国电影？\n（5）给大家介绍一下你喜欢做什么，不喜欢做什么，说说为什么。"
-   },
-   {
-    "title_zh": "学习新课 1 热身",
-    "body_zh": "热身1：学生两人一组，合作完成热身1；教师出示热身1的图片，分别请几个学生根据图片说出词语，核对答案；最后全体学生齐读热身环节所有词语，要求语音标准，声调准确。\n答案：①F　②E　③D　④B　⑤A　⑥C\n热身2：可留至语言点（2）“疑问代词活用1”导入时使用。"
-   },
-   {
-    "title_zh": "2 生词",
-    "body_zh": "（1）生词快速认读及正音\n又、满意、电梯、层、害怕、熊猫、见面、安静、可乐、一会儿、马上、洗手间、老、几乎、变化、健康、重要\n· 教师先带领学生快速认读一遍生词；\n· 取消拼音，带领学生再次认读；\n· 请单个学生独自认读2-3个生词；\n· 最后全班一起快速认读所有的生词。\n（2）生词讲解方式\n· 直观法（如图片、照片、实物等）展示：电梯、层、害怕、熊猫、见面、安静、洗手间\n· 对比法展示：胖—瘦、容易—难\n· 启发式引导：满意、变化、健康\n教师给出句子部分内容让学生进行补充，如：\n他觉得很好，也可以说他觉得很满意。\n这几年他总是这样，他没有变化。\n他的身体很好，他很健康。\n（3）重点生词扩展及常用搭配\n见面—跟朋友见面—两点见面—明天我们在哪儿见面？\n一会儿—等一会儿—看一会儿—我太累了，要睡一会儿。\n马上—马上来—马上到—妈妈让你马上回家。\n老—老同学—老房子—我跟我的老朋友认识已经10年了。\n几乎—几乎没有人去—他现在和以前几乎没变化。\n重要—很重要—不重要—我有一件重要的事要告诉你。\n练习册相关练习：第50页／一／第一部分，第53页／二／第二部分"
-   },
-   {
-    "title_zh": "3 语言点（1）“又”和“再”",
-    "body_zh": "① 语言点解析\n副词“又”和“再”都可以放在动词前边，表示动作或情况的重复出现。“又V”通常用于已发生了的重复动作或情况，“再V”用于还没发生的重复动作或情况。\n［又＋动词］\n［再＋动词］\n② 语言点导入\n教师创设情境，引导学生说出目标句。\n教师：我昨天买了一本书，今天呢？\n学生：今天又买了一本书。\n教师：我今天买了一本书，明天呢？\n学生：明天再买一本书。\n③ 语言点操练\n教师板书句子，请学生用“又”或“再”填空。\n我想明天________买一个本子。\n你怎么________迟到了？\n请等一下，我________去一下卫生间。\n我在中国见过熊猫，昨天________去公园看熊猫了。\n④ 语言点扩展练习\n教师让学生回忆做过哪些重复的事，以后还想不想再做。\n教师举例：我去饺子馆吃了两次饺子，上个星期去了一次，昨天又去了一次，我想明天再去一次。\n教师请学生仿照例子，说出自己的情况。\n注意：一般情况下“又”后边有“了”与之搭配，“再”后边没有“了”，如果有“了”，表示情况的变化，例如“我不想再吃饺子了”。"
-   },
-   {
-    "title_zh": "3 语言点（2）疑问代词活用1",
-    "body_zh": "① 语言点解析\n汉语中，“就”可以用在两个相同的疑问代词之间，这时两个疑问代词不表示疑问，其所指的对象相同，指代不确定的人、事物或方式。\n［动词＋疑问代词＋就＋动词＋疑问代词］\n② 语言点导入\n教师可利用本课热身2导入语言点。\n教师请学生回忆学过的疑问代词，并请学生用疑问代词造句。\n教师引导学生说出目标句：\n教师：今天晚上老师请大家吃饭，你们想吃什么？\n学生说出各自想吃的菜。\n教师对大家说：这些菜都可以吃，大家想吃什么就吃什么。\n教师请学生重复目标句，导入本课句型。\n③ 语言点操练\n教师给出两个词组，请学生完成句子。\n例如：买东西、好吃的东西——什么东西好吃，我就买什么。\n　　　去旅游、好玩儿的地方\n　　　跟朋友见面、有时间的时候\n　　　喝茶、你喝的茶\n④ 语言点扩展练习\n教师提问，学生回答：\n你什么时候去旅游？\n你想去哪儿旅游？\n你想跟谁去旅游？\n你想怎么去旅游？\n注意：当前后两个分句的主语相同时，后一个分句中的主语可以省略，如果两个分句的主语不同，第二个主语要放在“就”的前边。"
-   },
-   {
-    "title_zh": "4 课文 课文1",
-    "body_zh": "（1）让学生听两遍录音并回答下列问题：\n女的最近打算做什么？——她打算买房子。\n女的看过的房子她觉得满意吗？——不满意。\n为什么？——一个没有电梯不方便，一个太高了，往下看很害怕。\n（2）教师领读课文两遍，让学生分角色朗读课文，注意说话人的语气。\n（3）模仿练习\n学生两人一组，根据提示词模仿课文内容进行对话练习。\nA：听说……？\nB：是，昨天……，今天又……，明天还要再……。\nA：都不……？\nB：一个……，……。一个……，……。\nA：……？\nB：……，多……啊！"
-   },
-   {
-    "title_zh": "4 课文 课文2",
-    "body_zh": "（1）让学生听两遍录音并回答下列问题：\n第二个人（马可）什么时候回国？——他下个星期回国。\n第一个人（小明）能去机场送他吗？为什么？——不能，因为他下星期不在北京。\n小明送给马可什么东西？——一个小熊猫。\n（2）教师领读课文两遍，让学生分角色朗读课文。\n（3）模仿练习\n学生两人一组，根据提示词模仿课文内容进行对话练习。\nA：听说你……？\nB：是啊，……。\nA：我……，不能……。\nB：没关系，你……。\nA：这个……送给你，……。\nB：谢谢。希望……。"
-   },
-   {
-    "title_zh": "4 课文 课文3",
-    "body_zh": "（1）让学生听两遍录音并回答下列问题：\n男的（小刚）想坐哪儿？——女的（小丽）坐哪儿，小刚就坐哪儿。\n小刚想喝什么？——小丽喝什么，他就喝什么。\n现在小丽要去哪儿？——她要去洗手间。\n小刚能去吗？——他不能去。\n（2）教师领读课文两遍，让学生分角色朗读课文。\n（3）教师给提示词，带领学生复述课文。\n提示词：坐、哪儿、安静、喝、饮料、等、马上、去、洗手间"
-   },
-   {
-    "title_zh": "4 课文 课文4",
-    "body_zh": "（1）让学生听两遍录音并回答下列问题：\n他们几年没见面了？——他们快五年没见面了。\n女的（周太太）有什么变化？——她胖了，以前的衣服都不能穿了。\n周太太和周明谁做饭？——周太太做饭。\n（2）教师领读课文两遍，让学生分角色朗读课文，注意说话人的语气。\n（3）教师给提示词，带领学生复述课文。\n提示词：变化、胖、健康、做饭、吃什么、吃多少\n练习册相关练习：第56页／四"
-   },
-   {
-    "title_zh": "5 汉字",
-    "body_zh": "旧字新词：\n① 教师领读以前学过的词语和新词，并让学生猜猜新词的意思。\n· 领读：见面、考试、面试\n问学生：“面试”是什么意思？——当面考查测试。\n扩展提问：还有什么试？——笔试。（根据实际情况选用）\n· 领读：自己、学习、自学\n问学生：“自学”是什么意思？——自己学习。\n· 领读：离开、结婚、离婚\n问学生：“离婚”是什么意思？——结婚以后，两个人又分开，不在一起了。\n注意“离婚”是一个动词。\n② 教师领读新词扩展，通过情景，理解新词的意思和用法：\n面试：公司面试／去上海面试／你面试得怎么样？\n自学：自学汉语／不会自学／听说你是自学的日语？\n离婚：离婚了／没离婚／他跟太太离婚了。\n汉字辨认练习：\n辨认下列汉字并组词。\n熊：________、________　间：________、________\n能：________、________　问：________、________\n老：________、________　会：________、________\n考：________、________　层：________、________\n几：________、________\n九：________、________\n练习册相关练习：第56页／三／第三部分"
-   },
-   {
-    "title_zh": "6 补充课堂活动——根据词卡写句子",
-    "body_zh": "4-5个学生一组，每组随机抽取3-4个词卡，用这些词完成一个句子，比比哪组写得最好最快。\n参考词语：又、再、满意、电梯、层、害怕、熊猫、见面、安静、一会儿、马上、洗手间、老、几乎、变化、健康、重要……"
-   },
-   {
-    "title_zh": "7 俗语",
-    "body_zh": "教师引导学生理解俗语的含义，注意这里的“站”不是指具体站立的位置，而是指看问题的高度。"
-   },
-   {
-    "title_zh": "8 本课小结",
-    "body_zh": "· 语言点：“又”和“再”表示重复\n　　　　　疑问代词＋就＋疑问代词\n· 汉　字：旧字新词：面试、自学、离婚"
-   }
-  ],
-  "notes_zh": [
-   "注意：一般情况下“又”后边有“了”与之搭配，“再”后边没有“了”，如果有“了”，表示情况的变化，例如“我不想再吃饺子了”。（语言点1）",
-   "注意：当前后两个分句的主语相同时，后一个分句中的主语可以省略，如果两个分句的主语不同，第二个主语要放在“就”的前边。（语言点2）",
-   "注意“离婚”是一个动词。（汉字）",
-   "注意这里的“站”不是指具体站立的位置，而是指看问题的高度。（俗语）"
-  ],
-  "warmup_answers_zh": [
-   "热身1 答案：①F　②E　③D　④B　⑤A　⑥C",
-   "热身2：可留至语言点（2）“疑问代词活用1”导入时使用。"
-  ],
-  "text_questions": [
-   {
-    "text": 1,
-    "q_zh": "女的最近打算做什么？",
-    "a_zh": "她打算买房子。"
-   },
-   {
-    "text": 1,
-    "q_zh": "女的看过的房子她觉得满意吗？",
-    "a_zh": "不满意。"
-   },
-   {
-    "text": 1,
-    "q_zh": "为什么？",
-    "a_zh": "一个没有电梯不方便，一个太高了，往下看很害怕。"
-   },
-   {
-    "text": 2,
-    "q_zh": "第二个人（马可）什么时候回国？",
-    "a_zh": "他下个星期回国。"
-   },
-   {
-    "text": 2,
-    "q_zh": "第一个人（小明）能去机场送他吗？为什么？",
-    "a_zh": "不能，因为他下星期不在北京。"
-   },
-   {
-    "text": 2,
-    "q_zh": "小明送给马可什么东西？",
-    "a_zh": "一个小熊猫。"
-   },
-   {
-    "text": 3,
-    "q_zh": "男的（小刚）想坐哪儿？",
-    "a_zh": "女的（小丽）坐哪儿，小刚就坐哪儿。"
-   },
-   {
-    "text": 3,
-    "q_zh": "小刚想喝什么？",
-    "a_zh": "小丽喝什么，他就喝什么。"
-   },
-   {
-    "text": 3,
-    "q_zh": "现在小丽要去哪儿？",
-    "a_zh": "她要去洗手间。"
-   },
-   {
-    "text": 3,
-    "q_zh": "小刚能去吗？",
-    "a_zh": "他不能去。"
-   },
-   {
-    "text": 4,
-    "q_zh": "他们几年没见面了？",
-    "a_zh": "他们快五年没见面了。"
-   },
-   {
-    "text": 4,
-    "q_zh": "女的（周太太）有什么变化？",
-    "a_zh": "她胖了，以前的衣服都不能穿了。"
-   },
-   {
-    "text": 4,
-    "q_zh": "周太太和周明谁做饭？",
-    "a_zh": "周太太做饭。"
-   }
-  ],
-  "summary_zh": "语言点：“又”和“再”表示重复；疑问代词＋就＋疑问代词。汉字：旧字新词：面试、自学、离婚。"
- },
- "workbook": {
-  "ref": {
-   "book": "workbook",
-   "pages": [
-    54,
-    55,
-    56,
-    57,
-    58,
-    59,
-    60
-   ]
-  },
-  "answers_ref": {
-   "book": "teacher",
-   "pages": [
+    87,
     164,
     165,
     166
-   ]
-  },
-  "sections": [
-   {
-    "n": "一、听力 第一部分",
-    "type_zh": "听力 第一部分",
-    "instruction_zh": "第1–5题：听对话，选择与对话内容一致的图片",
-    "instruction_en": "Questions 1-5: Choose the right picture for each dialogue you hear.",
-    "audio": "hsk3-workbook-08-part1.mp3",
-    "items": [
-     {
-      "n": "例",
-      "zh": "男：喂，请问张经理在吗？ 女：他正在开会，您半个小时以后再打，好吗？",
-      "transcript_zh": "男：喂，请问张经理在吗？ 女：他正在开会，您半个小时以后再打，好吗？",
-      "options": {
-       "A": "[picture] a young woman sleeping peacefully in bed with her head on a pillow",
-       "B": "[picture] two giant pandas, one chewing bamboo",
-       "C": "[picture] a young couple looking at a map in the street, the woman wearing a hat",
-       "D": "[picture] a smiling woman in a uniform talking on a telephone",
-       "E": "[picture] a tall apartment building",
-       "F": "[picture] a young man wearing glasses in front of a display of eyeglasses"
-      },
-      "answer": "D",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        54
-       ]
-      }
-     },
-     {
-      "n": 1,
-      "zh": "",
-      "options": {
-       "A": "[picture] a young woman sleeping peacefully in bed with her head on a pillow",
-       "B": "[picture] two giant pandas, one chewing bamboo",
-       "C": "[picture] a young couple looking at a map in the street, the woman wearing a hat",
-       "D": "[picture] a smiling woman in a uniform talking on a telephone",
-       "E": "[picture] a tall apartment building",
-       "F": "[picture] a young man wearing glasses in front of a display of eyeglasses"
-      },
-      "transcript_zh": "女：十五层太高了，我都害怕向下看了。 男：我明白了。那我们看看别的房子。",
-      "answer": "E",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        166
-       ]
-      }
-     },
-     {
-      "n": 2,
-      "zh": "",
-      "options": {
-       "A": "[picture] a young woman sleeping peacefully in bed with her head on a pillow",
-       "B": "[picture] two giant pandas, one chewing bamboo",
-       "C": "[picture] a young couple looking at a map in the street, the woman wearing a hat",
-       "D": "[picture] a smiling woman in a uniform talking on a telephone",
-       "E": "[picture] a tall apartment building",
-       "F": "[picture] a young man wearing glasses in front of a display of eyeglasses"
-      },
-      "transcript_zh": "女：我是第一次来看大熊猫。 男：我也是，你看这些大熊猫多可爱啊！",
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        166
-       ]
-      }
-     },
-     {
-      "n": 3,
-      "zh": "",
-      "options": {
-       "A": "[picture] a young woman sleeping peacefully in bed with her head on a pillow",
-       "B": "[picture] two giant pandas, one chewing bamboo",
-       "C": "[picture] a young couple looking at a map in the street, the woman wearing a hat",
-       "D": "[picture] a smiling woman in a uniform talking on a telephone",
-       "E": "[picture] a tall apartment building",
-       "F": "[picture] a young man wearing glasses in front of a display of eyeglasses"
-      },
-      "transcript_zh": "男：都九点一刻了，你怎么还不起床？ 女：星期天又不上班，你也不让我多睡一会儿。",
-      "answer": "A",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        166
-       ]
-      }
-     },
-     {
-      "n": 4,
-      "zh": "",
-      "options": {
-       "A": "[picture] a young woman sleeping peacefully in bed with her head on a pillow",
-       "B": "[picture] two giant pandas, one chewing bamboo",
-       "C": "[picture] a young couple looking at a map in the street, the woman wearing a hat",
-       "D": "[picture] a smiling woman in a uniform talking on a telephone",
-       "E": "[picture] a tall apartment building",
-       "F": "[picture] a young man wearing glasses in front of a display of eyeglasses"
-      },
-      "transcript_zh": "女：我们是不是走错了，怎么还没到？ 男：别着急，就在前面，马上就到了。",
-      "answer": "C",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        166
-       ]
-      }
-     },
-     {
-      "n": 5,
-      "zh": "",
-      "options": {
-       "A": "[picture] a young woman sleeping peacefully in bed with her head on a pillow",
-       "B": "[picture] two giant pandas, one chewing bamboo",
-       "C": "[picture] a young couple looking at a map in the street, the woman wearing a hat",
-       "D": "[picture] a smiling woman in a uniform talking on a telephone",
-       "E": "[picture] a tall apartment building",
-       "F": "[picture] a young man wearing glasses in front of a display of eyeglasses"
-      },
-      "transcript_zh": "女：眼镜怎么样？你觉得满意吗？ 男：还不错，你看我的变化很大。",
-      "answer": "F",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        166
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "一、听力 第二部分",
-    "type_zh": "听力 第二部分",
-    "instruction_zh": "第6–10题：听句子，判断对错",
-    "instruction_en": "Questions 6-10: Decide whether the statements are true or false based on the sentences you hear.",
-    "audio": "hsk3-workbook-08-part2.mp3",
-    "items": [
-     {
-      "n": "例1",
-      "zh": "他希望自己很健康。",
-      "transcript_zh": "为了让自己更健康，他每天都花一个小时去锻炼身体。",
-      "answer": "√",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        55
-       ]
-      }
-     },
-     {
-      "n": "例2",
-      "zh": "那块儿手表不是他的。",
-      "transcript_zh": "今天我想早点儿回家。看了看手表，才5点。过了一会儿再看表，还是5点，我这才发现我的手表不走了。",
-      "answer": "×",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        55
-       ]
-      }
-     },
-     {
-      "n": 6,
-      "zh": "周经理换办公室了。",
-      "transcript_zh": "以前，周经理的办公室在一层，最近他搬到了六层，开始坐电梯了。",
-      "answer": "√",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        166
-       ]
-      }
-     },
-     {
-      "n": 7,
-      "zh": "他们以前总是见面。",
-      "transcript_zh": "我明天就回国了，以后不能总跟你见面了，有事请给我电话吧。",
-      "answer": "√",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        166
-       ]
-      }
-     },
-     {
-      "n": 8,
-      "zh": "他喜欢安静的地方。",
-      "transcript_zh": "我喜欢自学。没事的时候，找一个安静的地方，读一本好书，是我最大的快乐。",
-      "answer": "×",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        166
-       ]
-      }
-     },
-     {
-      "n": 9,
-      "zh": "那位小姐要去十层。",
-      "transcript_zh": "不好意思，小姐，这个电梯只到十层，您去十二层要坐右边那个电梯。",
-      "answer": "×",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        166
-       ]
-      }
-     },
-     {
-      "n": 10,
-      "zh": "他现在在洗手间。",
-      "transcript_zh": "六零三房间的客人刚才打电话来说洗手间有问题，你去看一下吧。",
-      "answer": "×",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        166
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "一、听力 第三部分",
-    "type_zh": "听力 第三部分",
-    "instruction_zh": "第11–15题：听短对话，选择正确答案",
-    "instruction_en": "Questions 11-15: Listen to the short dialogues and choose the right answers.",
-    "audio": "hsk3-workbook-08-part3.mp3",
-    "items": [
-     {
-      "n": "例",
-      "zh": "男的想让小王做什么？",
-      "options": {
-       "A": "开门",
-       "B": "拿东西",
-       "C": "去超市买东西"
-      },
-      "transcript_zh": "男：小王，帮我开一下门，好吗？谢谢！ 女：没问题。您去超市了？买了这么多东西。 问：男的想让小王做什么？",
-      "answer": "A",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        55
-       ]
-      }
-     },
-     {
-      "n": 11,
-      "zh": "男的是什么意思？",
-      "options": {
-       "A": "不让女的喝可乐",
-       "B": "不让女的睡觉",
-       "C": "不想喝可乐"
-      },
-      "transcript_zh": "女：我想再喝一杯可乐。 男：再喝一杯，你晚上就别想睡觉了。 问：男的是什么意思？",
-      "answer": "A",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        166
-       ]
-      }
-     },
-     {
-      "n": 12,
-      "zh": "关于女的，可以知道什么？",
-      "options": {
-       "A": "想休息",
-       "B": "感冒了",
-       "C": "要照顾妈妈"
-      },
-      "transcript_zh": "男：别害怕，只是感冒，休息两天就好了。 女：那我让妈妈来照顾我几天。 问：关于女的，可以知道什么？",
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        166
-       ]
-      }
-     },
-     {
-      "n": 13,
-      "zh": "女的是什么意思？",
-      "options": {
-       "A": "她要去洗手间",
-       "B": "这儿有人",
-       "C": "男的可以坐这儿"
-      },
-      "transcript_zh": "男：小姐，请问这儿有人吗？我可以坐这儿吗？ 女：不好意思，我朋友去洗手间了，一会儿就回来。 问：女的是什么意思？",
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        166
-       ]
-      }
-     },
-     {
-      "n": 14,
-      "zh": "女的为什么着急？",
-      "options": {
-       "A": "儿子身体不健康",
-       "B": "儿子学习不好",
-       "C": "儿子没去考试"
-      },
-      "transcript_zh": "女：我儿子又没考好，真着急！ 男：别着急，孩子身体健康是最重要的。 问：女的为什么着急？",
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        166
-       ]
-      }
-     },
-     {
-      "n": 15,
-      "zh": "女的明天做什么？",
-      "options": {
-       "A": "买裙子",
-       "B": "面试",
-       "C": "买衬衫"
-      },
-      "transcript_zh": "男：明天要去面试，这两条裙子你穿哪条？ 女：哪条好看我就穿哪条，你再帮我拿一下那件白衬衫。 问：女的明天做什么？",
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        166
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "一、听力 第四部分",
-    "type_zh": "听力 第四部分",
-    "instruction_zh": "第16–20题：听长对话，选择正确答案",
-    "instruction_en": "Questions 16-20: Listen to the dialogues and choose the right answers.",
-    "audio": "hsk3-workbook-08-part4.mp3",
-    "items": [
-     {
-      "n": "例",
-      "zh": "男的在做什么？",
-      "options": {
-       "A": "洗澡",
-       "B": "吃饭",
-       "C": "看电视"
-      },
-      "transcript_zh": "女：晚饭做好了，准备吃饭了。 男：等一会儿，比赛还有三分钟就结束了。 女：快点儿吧，一起吃，菜冷了就不好吃了。 男：你先吃，我马上就看完了。 问：男的在做什么？",
-      "answer": "C",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        56
-       ]
-      }
-     },
-     {
-      "n": 16,
-      "zh": "他们要去哪儿？",
-      "options": {
-       "A": "咖啡馆",
-       "B": "电梯那儿",
-       "C": "超市"
-      },
-      "transcript_zh": "男：小丽，是你啊，你也来这儿买东西啊？ 女：是啊，这家超市的东西很便宜。 男：好久不见，我们找个地方坐坐？ 女：好啊，下了电梯有一个咖啡馆，我们去那儿吧。 问：他们要去哪儿？",
-      "answer": "A",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        166
-       ]
-      }
-     },
-     {
-      "n": 17,
-      "zh": "他们今天吃什么？",
-      "options": {
-       "A": "药",
-       "B": "面条",
-       "C": "鸡蛋"
-      },
-      "transcript_zh": "男：你吃药了吗？ 女：还没有，我吃完饭再吃。 男：今天我们吃面条儿？ 女：是，吃鸡蛋面，马上就好。 问：他们今天吃什么？",
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        166
-       ]
-      }
-     },
-     {
-      "n": 18,
-      "zh": "男的为什么去饭店？",
-      "options": {
-       "A": "去洗手间",
-       "B": "找雨伞",
-       "C": "去吃饭"
-      },
-      "transcript_zh": "男：您好，我的雨伞可能忘在你们饭店了。 女：您的雨伞是什么颜色的？ 男：黑色的。 女：是这个吗？我们在洗手间里看到的。 问：男的为什么去饭店？",
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        166
-       ]
-      }
-     },
-     {
-      "n": 19,
-      "zh": "关于女的，可以知道什么？",
-      "options": {
-       "A": "明天中午不忙",
-       "B": "不想跟男的吃饭",
-       "C": "不知道哪天吃饭"
-      },
-      "transcript_zh": "男：我们一起吃个饭吧？ 女：好啊，哪天？ 男：你哪天不忙我们就哪天吃。 女：那明天中午，老地方见吧。 问：关于女的，可以知道什么？",
-      "answer": "A",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        166
-       ]
-      }
-     },
-     {
-      "n": 20,
-      "zh": "关于女的，可以知道什么？",
-      "options": {
-       "A": "考得很好",
-       "B": "不会写汉字",
-       "C": "一个题都不会"
-      },
-      "transcript_zh": "女：你这次汉语考得怎么样？ 男：九十分，你呢？ 女：我考得不太好，我只会做第一题，汉字几乎一个都不会写。 男：别着急，慢慢来。 问：关于女的，可以知道什么？",
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        166
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "二、阅读 第一部分",
-    "type_zh": "阅读 第一部分",
-    "instruction_zh": "第21–25题：选择合适的问答",
-    "instruction_en": "Questions 21-25: Match the two parts of the same dialogue.",
-    "items": [
-     {
-      "n": "例",
-      "zh": "你知道怎么去那儿吗？",
-      "options": {
-       "A": "你下课以后去哪儿学习？",
-       "B": "周末你有什么打算？",
-       "C": "听说你最近打算买房子了？",
-       "D": "可能吃的东西有问题，不太舒服。",
-       "E": "当然。我们先坐公共汽车，然后换地铁。",
-       "F": "那我们再买几块吧。"
-      },
-      "answer": "E",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        57
-       ]
-      }
-     },
-     {
-      "n": 21,
-      "zh": "你怎么又去洗手间啊？",
-      "options": {
-       "A": "你下课以后去哪儿学习？",
-       "B": "周末你有什么打算？",
-       "C": "听说你最近打算买房子了？",
-       "D": "可能吃的东西有问题，不太舒服。",
-       "E": "当然。我们先坐公共汽车，然后换地铁。",
-       "F": "那我们再买几块吧。"
-      },
-      "answer": "D",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        166
-       ]
-      }
-     },
-     {
-      "n": 22,
-      "zh": "这种蛋糕很甜，孩子们很喜欢。",
-      "options": {
-       "A": "你下课以后去哪儿学习？",
-       "B": "周末你有什么打算？",
-       "C": "听说你最近打算买房子了？",
-       "D": "可能吃的东西有问题，不太舒服。",
-       "E": "当然。我们先坐公共汽车，然后换地铁。",
-       "F": "那我们再买几块吧。"
-      },
-      "answer": "F",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        166
-       ]
-      }
-     },
-     {
-      "n": 23,
-      "zh": "是啊，看了很多，但是都不太满意。",
-      "options": {
-       "A": "你下课以后去哪儿学习？",
-       "B": "周末你有什么打算？",
-       "C": "听说你最近打算买房子了？",
-       "D": "可能吃的东西有问题，不太舒服。",
-       "E": "当然。我们先坐公共汽车，然后换地铁。",
-       "F": "那我们再买几块吧。"
-      },
-      "answer": "C",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        166
-       ]
-      }
-     },
-     {
-      "n": 24,
-      "zh": "我要去跟几个老朋友见面。",
-      "options": {
-       "A": "你下课以后去哪儿学习？",
-       "B": "周末你有什么打算？",
-       "C": "听说你最近打算买房子了？",
-       "D": "可能吃的东西有问题，不太舒服。",
-       "E": "当然。我们先坐公共汽车，然后换地铁。",
-       "F": "那我们再买几块吧。"
-      },
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        166
-       ]
-      }
-     },
-     {
-      "n": 25,
-      "zh": "哪儿安静我就去哪儿。",
-      "options": {
-       "A": "你下课以后去哪儿学习？",
-       "B": "周末你有什么打算？",
-       "C": "听说你最近打算买房子了？",
-       "D": "可能吃的东西有问题，不太舒服。",
-       "E": "当然。我们先坐公共汽车，然后换地铁。",
-       "F": "那我们再买几块吧。"
-      },
-      "answer": "A",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        166
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "二、阅读 第二部分",
-    "type_zh": "阅读 第二部分",
-    "instruction_zh": "第26–30题：选择合适的词语填空",
-    "instruction_en": "Questions 26-30: Choose the proper words to fill in the brackets.",
-    "word_bank": [
-     [
-      "A 电梯",
-      "B 洗手间",
-      "C 几乎",
-      "D 重要",
-      "E 声音",
-      "F 又"
-     ]
-    ],
-    "items": [
-     {
-      "n": "例",
-      "zh": "她说话的（　）多好听啊！",
-      "options": {
-       "A": "电梯",
-       "B": "洗手间",
-       "C": "几乎",
-       "D": "重要",
-       "E": "声音",
-       "F": "又"
-      },
-      "answer": "E",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        57
-       ]
-      }
-     },
-     {
-      "n": 26,
-      "zh": "你等我一会儿，我去一下（　），马上回来。",
-      "options": {
-       "A": "电梯",
-       "B": "洗手间",
-       "C": "几乎",
-       "D": "重要",
-       "E": "声音",
-       "F": "又"
-      },
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        166
-       ]
-      }
-     },
-     {
-      "n": 27,
-      "zh": "他（　）每天都要去公园锻炼一个小时。",
-      "options": {
-       "A": "电梯",
-       "B": "洗手间",
-       "C": "几乎",
-       "D": "重要",
-       "E": "声音",
-       "F": "又"
-      },
-      "answer": "C",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        166
-       ]
-      }
-     },
-     {
-      "n": 28,
-      "zh": "（　）里人太多了，我们别坐了。",
-      "options": {
-       "A": "电梯",
-       "B": "洗手间",
-       "C": "几乎",
-       "D": "重要",
-       "E": "声音",
-       "F": "又"
-      },
-      "answer": "A",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        166
-       ]
-      }
-     },
-     {
-      "n": 29,
-      "zh": "A：今天晚上你（　）要去听音乐会？ B：是啊，我现在对音乐非常感兴趣。",
-      "options": {
-       "A": "电梯",
-       "B": "洗手间",
-       "C": "几乎",
-       "D": "重要",
-       "E": "声音",
-       "F": "又"
-      },
-      "answer": "F",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        166
-       ]
-      }
-     },
-     {
-      "n": 30,
-      "zh": "A：我觉得我越来越胖了，以后我不吃晚饭了。 B：其实胖点儿或者瘦点儿都没关系，健康最（　）。",
-      "options": {
-       "A": "电梯",
-       "B": "洗手间",
-       "C": "几乎",
-       "D": "重要",
-       "E": "声音",
-       "F": "又"
-      },
-      "answer": "D",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        166
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "二、阅读 第三部分",
-    "type_zh": "阅读 第三部分",
-    "instruction_zh": "第31–35题：选择正确答案",
-    "instruction_en": "Questions 31-35: Choose the right answers.",
-    "items": [
-     {
-      "n": "例",
-      "zh": "您是来参加今天会议的吗？您来早了一点儿，现在才八点半。您先进来坐吧。 ★会议最可能几点开始？",
-      "options": {
-       "A": "8点",
-       "B": "8点半",
-       "C": "9点"
-      },
-      "answer": "C",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        58
-       ]
-      }
-     },
-     {
-      "n": 31,
-      "zh": "“再见”是一个很有意思的词，“再见”的意思是“再一次见面”，所以人们离开时说“再见”，是希望以后再见面。 ★什么时候说“再见”？",
-      "options": {
-       "A": "离开",
-       "B": "见面",
-       "C": "上课"
-      },
-      "answer": "A",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        166
-       ]
-      }
-     },
-     {
-      "n": 32,
-      "zh": "我男朋友的家虽然不大，但是住着很舒服，楼里很安静，还有电梯，他很喜欢他现在的家。 ★男朋友觉得他的家怎么样？",
-      "options": {
-       "A": "不舒服",
-       "B": "太小了",
-       "C": "很满意"
-      },
-      "answer": "C",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        166
-       ]
-      }
-     },
-     {
-      "n": 33,
-      "zh": "女孩子都喜欢穿裙子，爱唱歌、跳舞，但是我哥的女儿不是这样，她对运动很感兴趣，还喜欢玩儿电脑游戏，我几乎没见她穿过裙子。 ★哥哥的女儿：",
-      "options": {
-       "A": "喜欢唱歌",
-       "B": "很少穿裙子",
-       "C": "不爱运动"
-      },
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        166
-       ]
-      }
-     },
-     {
-      "n": 34,
-      "zh": "丈夫最近很忙，没有时间去运动，又胖了几斤。他打算忙完这几天，就去跑步和游泳。 ★丈夫最近：",
-      "options": {
-       "A": "变化不大",
-       "B": "身体不健康",
-       "C": "很少锻炼"
-      },
-      "answer": "C",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        166
-       ]
-      }
-     },
-     {
-      "n": 35,
-      "zh": "你要明白，想让每个人都喜欢你是几乎不可能的，所以做事情不要害怕别人不满意，最重要的就是你很满意。 ★做事情，最重要的是：",
-      "options": {
-       "A": "让每个人都喜欢你",
-       "B": "不害怕别人",
-       "C": "你觉得做得很好"
-      },
-      "answer": "C",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        166
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "三、书写 第一部分",
-    "type_zh": "书写 第一部分",
-    "instruction_zh": "第36–40题：连词成句",
-    "instruction_en": "Questions 36-40: Rearrange the words/phrases to make sentences.",
-    "items": [
-     {
-      "n": "例",
-      "zh": "小船　上　一　河　条　有",
-      "answer": "河上有一条小船。",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        59
-       ]
-      }
-     },
-     {
-      "n": 36,
-      "zh": "健康　就　吃什么　我　什么东西",
-      "answer": "什么东西健康我就吃什么。",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        166
-       ]
-      }
-     },
-     {
-      "n": 37,
-      "zh": "又　你　不满意了　怎么",
-      "answer": "你怎么又不满意了？",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        166
-       ]
-      }
-     },
-     {
-      "n": 38,
-      "zh": "熊猫　再　看一次　我想　去",
-      "answer": "我想再去看一次熊猫。",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        166
-       ]
-      }
-     },
-     {
-      "n": 39,
-      "zh": "离婚　很多　瘦了　以后　她",
-      "answer": "她离婚以后瘦了很多。",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        166
-       ]
-      }
-     },
-     {
-      "n": 40,
-      "zh": "坐电梯　上去　我们　吧",
-      "answer": "我们坐电梯上去吧。",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        166
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "三、书写 第二部分",
-    "type_zh": "书写 第二部分",
-    "instruction_zh": "第41–45题：看拼音，写汉字",
-    "instruction_en": "Questions 41-45: Write the characters based on their pinyin.",
-    "items": [
-     {
-      "n": "例",
-      "zh": "没（　）系，别难过，高兴点儿。",
-      "hint_zh": "guān",
-      "answer": "关",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        59
-       ]
-      }
-     },
-     {
-      "n": 41,
-      "zh": "房间里很（　）静，我很满意。",
-      "hint_zh": "ān",
-      "answer": "安",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        166
-       ]
-      }
-     },
-     {
-      "n": 42,
-      "zh": "太晚了，我有点儿害（　），你送我回家吧。",
-      "hint_zh": "pà",
-      "answer": "怕",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        166
-       ]
-      }
-     },
-     {
-      "n": 43,
-      "zh": "你住的楼里有（　）梯吗？",
-      "hint_zh": "diàn",
-      "answer": "电",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        166
-       ]
-      }
-     },
-     {
-      "n": 44,
-      "zh": "下课以后我（　）上回家吃饭。",
-      "hint_zh": "mǎ",
-      "answer": "马",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        166
-       ]
-      }
-     },
-     {
-      "n": 45,
-      "zh": "你觉得工作和健康，哪个更（　）要？",
-      "hint_zh": "zhòng",
-      "answer": "重",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        166
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "三、书写 第三部分",
-    "type_zh": "书写 第三部分",
-    "instruction_zh": "第46–50题：辨认汉字，选择正确的汉字填空",
-    "instruction_en": "Questions 46-50: Distinguish the characters and fill in the blanks.",
-    "items": [
-     {
-      "n": "例",
-      "zh": "我不知道________个地方在________儿。",
-      "hint_zh": "（那、哪）",
-      "answer": "那、哪",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        60
-       ]
-      }
-     },
-     {
-      "n": 46,
-      "zh": "今天下午你________跟我一起去看________猫吗？",
-      "hint_zh": "（熊、能）",
-      "answer": "能、熊",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        166
-       ]
-      }
-     },
-     {
-      "n": 47,
-      "zh": "请________，洗手________在哪儿？",
-      "hint_zh": "（间、问）",
-      "answer": "问、间",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        166
-       ]
-      }
-     },
-     {
-      "n": 48,
-      "zh": "________试的时候不认真，这是你的________问题了。",
-      "hint_zh": "（老、考）",
-      "answer": "考、老",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        166
-       ]
-      }
-     },
-     {
-      "n": 49,
-      "zh": "你先上去，一________儿我去十________找你。",
-      "hint_zh": "（会、层）",
-      "answer": "会、层",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        166
-       ]
-      }
-     },
-     {
-      "n": 50,
-      "zh": "你离开的这________年变化真大，我________乎不认识你了。",
-      "hint_zh": "（几、九）",
-      "answer": "九、几",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        166
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "四、复习",
-    "type_zh": "复习",
-    "instruction_zh": "第1–2题：根据课文内容填空",
-    "instruction_en": "Questions 1-2: Fill in the blanks based on the texts in the textbook.",
-    "items": [
-     {
-      "n": 1,
-      "zh": "小丽最近打算买房子，今天________去看了看，但是都不________，一个没有________，不方便，一个在二十________，太高了，她觉得往下看太________了。",
-      "answer": "又、满意、电梯、层、害怕",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        166
-       ]
-      }
-     },
-     {
-      "n": 2,
-      "zh": "周太太和________同学五年没________了，同学觉得周太太几乎没________，但是周太太说她胖了，现在想吃什么就吃什么，想吃多少就吃多少，因为________最________，胖瘦没关系。",
-      "answer": "老、见面、变化、健康、重要",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        166
-       ]
-      }
-     }
-    ]
-   }
-  ]
- },
- "audio": {
-  "textbook": [
-   "hsk3-textbook-0801.mp3",
-   "hsk3-textbook-0802.mp3",
-   "hsk3-textbook-0803.mp3",
-   "hsk3-textbook-0804.mp3",
-   "hsk3-textbook-0805.mp3"
   ],
-  "workbook": [
-   "hsk3-workbook-08-part1.mp3",
-   "hsk3-workbook-08-part2.mp3",
-   "hsk3-workbook-08-part3.mp3",
-   "hsk3-workbook-08-part4.mp3"
-  ]
- },
- "unclear": [
-  "Дасгалын номын сонсгол 第二部分 8: багшийн номын хавсралтын 参考答案 (PDF х.166, «6–10：√ √ × × ×») 8 = × гэж хэвлэгдсэн — номд байгаагаар answer «×» гэж бичсэн. Гэвч бичвэр «我喜欢自学。没事的时候，找一个安静的地方，读一本好书，是我最大的快乐。» нь ★«他喜欢安静的地方。» мэдэгдэлтэй утгаараа тохирч (√) байгаа тул хариулт ↔ бичвэр зөрж байна. Засаагүй.",
-  "Сурах бичиг PDF х.82 课文4: ханзаар «是呀，想吃什么就吃什么。», 拼音课文-д «Shì a, …» (呀 → a) — номд байгаагаар хоёуланг нь үлдээсэн.",
-  "害怕-ийн пиньинь: 生词 (PDF х.81) ба 拼音课文 (х.82) «hài pà» (зайтай), 热身1 (х.80) «hàipà» (залгаа) — тус бүрийг номд байгаагаар нь оруулсан.",
-  "Энэ хичээлд сурах бичгийн 专有名词 хүснэгт, 汉字知识 болон 文化 хэсэг байхгүй (proper_nouns, culture оруулаагүй). Сурах бичгийн 注释1-д бүтцийн хүснэгт байхгүй (зөвхөн текст дотор «又+V»/«再+V»), багшийн номд «又＋动词／再＋动词» хайрцаг байгаа — teacher.steps-д оруулсан.",
-  "Сурах бичгийн 注释1 жишээ (8) ба 注释2 жишээ (4) улаанаар хэвлэгдсэн (课文1, 课文3-ын өгүүлбэр) — схемд өнгөний талбар байхгүй.",
-  "Сурах бичгийн 练一练 (2 дүрэм × 3), 练习2 选词填空 / 练习3 描述图片 / 练习4 回答问题 ба 热身2 (疑问代词 бичих, зөвхөн ①谁 жишээ), 运用 болон багшийн номын 语言点操练 (又/再 нөхөх, 疑问代词 өгүүлбэр) — хариулт сурах бичиг, багшийн номд хэвлэгдээгүй тул answer талбаргүй. Багшийн номын 课文 асуулт-хариулт (teacher.text_questions) нь 练习4-ийн асуултаас өөр.",
-  "Багшийн номын 汉字辨认练习 (熊/能 · 老/考 · 几/九 · 间/问 · 会/层 — 组词) хоосон зайтай, хариулт хэвлэгдээгүй; хосуудыг textbook.characters.confusable_pairs-д оруулсан (дасгалын номын 46–50-тай ижил).",
-  "Багшийн ном PDF х.58 生词 «对比法展示：胖—瘦、容易—难» — эдгээр нь энэ хичээлийн үг биш (2-р хичээлийнх); номд байгаагаар нь teacher.steps-д үлдээсэн.",
-  "Багшийн номын «练习册相关练习：第50页／一／第一部分，第53页／二／第二部分», «第56页／四», «第56页／三／第三部分» — дасгалын номын хэвлэсэн хуудас (PDF х.54, 57, 60).",
-  "Багшийн ном PDF х.58 启发式引导-ийн жишээнд «很满意», «没有变化», «很健康» доогуур зурсан — схемд тэмдэглэх талбаргүй тул энгийн текстээр оруулсан.",
-  "Дасгалын номын сонсгол нэг CD тэмдэгтэй (08) — аудиог hsk3-workbook-08-part1…4.mp3 болгож хэсэг тус бүрт хуваасныг section.audio-д оноосон.",
-  "Дасгалын ном 听力 第三/四部分 — номд зөвхөн сонголтууд хэвлэгдсэн; item.zh-д багшийн номын хавсралтын «问：» асуултыг оруулсан (transcript_zh-д бүтнээр).",
-  "Сурах бичгийн 拼音课文-ын гарчгийн пиньинь (Zài xiūxishì / Zài xuéxiào / Zài kāfēitīng / Zài Zhōu Míng jiā) болон ярилцагчийн нэрийн пиньинь (tóngshì, Xiǎolì, Xiǎomíng, Mǎkě, Xiǎogāng, lǎo tóngxué, Zhōu tàitai) схемд талбаргүй тул lines.pinyin-д зөвхөн яриаг оруулсан.",
-  "Зурагтай даалгаврын (热身1, 练习3, дасгалын номын 听力 第一部分) picture_desc_en / pictures_desc_en нь номд текстгүй тул зургаас товч дүрсэлсэн."
- ],
- "verified_pages": [
-  54,
-  55,
-  56,
-  57,
-  58,
-  59,
-  60,
-  61,
-  62,
-  63,
-  80,
-  81,
-  82,
-  83,
-  84,
-  85,
-  86,
-  87,
-  164,
-  165,
-  166
- ],
- "schema_version": 1
+  "schema_version": 1,
+  "hsk30": {
+    "source": "courseware",
+    "ref": {
+      "book": "hsk30_courseware",
+      "pages": [
+        5,
+        17,
+        28,
+        30
+      ]
+    },
+    "new_words": [
+      {
+        "n": 1,
+        "zh": "小区",
+        "pinyin": "xiǎoqū",
+        "pos": "n.",
+        "en": "residential community",
+        "text": 1
+      },
+      {
+        "n": 2,
+        "zh": "房子",
+        "pinyin": "fángzi",
+        "pos": "n.",
+        "en": "house",
+        "text": 1
+      },
+      {
+        "n": 3,
+        "zh": "屋子",
+        "pinyin": "wūzi",
+        "pos": "n.",
+        "en": "room",
+        "text": 1
+      },
+      {
+        "n": 4,
+        "zh": "室",
+        "pinyin": "shì",
+        "pos": "n.",
+        "en": "room",
+        "text": 1
+      },
+      {
+        "n": 5,
+        "zh": "怕",
+        "pinyin": "pà",
+        "pos": "v.",
+        "en": "afraid",
+        "text": 1
+      },
+      {
+        "n": 6,
+        "zh": "大熊猫",
+        "pinyin": "dàxióngmāo",
+        "pos": "n.",
+        "en": "(giant) panda",
+        "text": 2
+      },
+      {
+        "n": 7,
+        "zh": "动物园",
+        "pinyin": "dòngwùyuán",
+        "pos": "n.",
+        "en": "zoo",
+        "text": 2
+      },
+      {
+        "n": 8,
+        "zh": "面前",
+        "pinyin": "miànqián",
+        "pos": "n.",
+        "en": "the space ahead",
+        "text": 3
+      },
+      {
+        "n": 9,
+        "zh": "身边",
+        "pinyin": "shēnbiān",
+        "pos": "n.",
+        "en": "beside",
+        "text": 4
+      },
+      {
+        "n": 10,
+        "zh": "老人",
+        "pinyin": "lǎorén",
+        "pos": "n.",
+        "en": "elderly person",
+        "text": 4
+      }
+    ],
+    "grammar": [
+      {
+        "n": 1,
+        "title_zh": "谁说的？",
+        "explanation_zh": "谁说的？",
+        "examples": [
+          {
+            "zh": "A：今天外面是不是很热？ B：谁说的？我都快冻死了！"
+          },
+          {
+            "zh": "A：这么多年，你一点变化都没有。 B：谁说的？我胖了！"
+          }
+        ]
+      }
+    ],
+    "exercises": [],
+    "unclear": [
+      "补充语言点 «谁说的？»: слайдад зөвхөн жишээ хэллэг байгаа, тайлбар текст алга тул title-ээ давхардуулав. Хоёр дахь жишээний «牛一点变化都没有» — «你一点变化都没有» гэсэн үгийн алдаа (OCR/бичвэрийн алдаа) гэж үзэж «你»-гээр засав."
+    ]
+  }
 }

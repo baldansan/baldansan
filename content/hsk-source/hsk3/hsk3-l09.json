@@ -1,14 +1,2058 @@
 {
- "level": "hsk3",
- "lesson": 9,
- "book": "HSK3",
- "title_zh": "她的汉语说得跟中国人一样好",
- "title_pinyin": "Tā de Hànyǔ shuō de gēn Zhōngguórén yíyàng hǎo",
- "title_en": "She speaks Chinese like a native",
- "textbook": {
-  "ref": {
-   "book": "textbook",
-   "pages": [
+  "level": "hsk3",
+  "lesson": 9,
+  "book": "HSK3",
+  "title_zh": "她的汉语说得跟中国人一样好",
+  "title_pinyin": "Tā de Hànyǔ shuō de gēn Zhōngguórén yíyàng hǎo",
+  "title_en": "She speaks Chinese like a native",
+  "textbook": {
+    "ref": {
+      "book": "textbook",
+      "pages": [
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96
+      ]
+    },
+    "warmup": [
+      {
+        "instruction_zh": "看图片，根据提示词说说图片中的情况是不是一样",
+        "instruction_en": "Look at the pictures and talk about if the things given are the same in each picture.",
+        "items": [
+          "①衣服 yīfu",
+          "②颜色 yánsè",
+          "③房子 fángzi",
+          "④天气 tiānqì",
+          "⑤杯子 bēizi",
+          "⑥胖瘦 pàngshòu"
+        ],
+        "pictures_desc_en": [
+          "①: two young girls (twins) in matching white floral jackets standing side by side",
+          "②: two black cars of the same model, one above the other (the lower one with a faint reddish tint)",
+          "③: a row of similar red-brick houses along a street",
+          "④: a man in a red shirt standing at a fork in the road under a signpost reading “Right Decision / Wrong Decision”; stormy sky with lightning on the left, sunshine on the right",
+          "⑤: two identical champagne glasses, each wearing a bow tie",
+          "⑥: two men in yellow shirts and caps on a golf course, one thin and one fat"
+        ]
+      },
+      {
+        "instruction_zh": "根据实际情况回答问题",
+        "instruction_en": "Answer the questions according to the actual situations.",
+        "items": [
+          "情况 | 怎么样",
+          "我现在吃得 Wǒ xiànzài chī de | 越来越多 yuè lái yuè duō",
+          "我汉语说得 Wǒ Hànyǔ shuō de |",
+          "我觉得语法 Wǒ juéde yǔfǎ |",
+          "我做的饭 Wǒ zuò de fàn |",
+          "我跑步跑得 Wǒ pǎo bù pǎo de |",
+          "我打篮球打得 Wǒ dǎ lánqiú dǎ de |"
+        ]
+      }
+    ],
+    "texts": [
+      {
+        "n": 1,
+        "title_zh": "在教室",
+        "title_en": "In the classroom",
+        "kind": "dialogue",
+        "audio": "hsk3-textbook-0901.mp3",
+        "lines": [
+          {
+            "speaker": "大山",
+            "zh": "马可，你的中文越说越好了！",
+            "pinyin": "Mǎkě, nǐ de Zhōngwén yuè shuō yuè hǎo le!"
+          },
+          {
+            "speaker": "马可",
+            "zh": "哪里哪里，我们班李静说得更好。",
+            "pinyin": "Nǎli nǎli, wǒmen bān Lǐ Jìng shuō de gèng hǎo."
+          },
+          {
+            "speaker": "大山",
+            "zh": "怎么好？",
+            "pinyin": "Zěnme hǎo?"
+          },
+          {
+            "speaker": "马可",
+            "zh": "她的汉语说得跟中国人一样好。",
+            "pinyin": "Tā de Hànyǔ shuō de gēn Zhōngguórén yíyàng hǎo."
+          },
+          {
+            "speaker": "大山",
+            "zh": "李静？我怎么没听说过这个名字？",
+            "pinyin": "Lǐ Jìng? Wǒ zěnme méi tīngshuōguo zhège míngzi?"
+          },
+          {
+            "speaker": "马可",
+            "zh": "她是我们的汉语老师。",
+            "pinyin": "Tā shì wǒmen de Hànyǔ lǎoshī."
+          }
+        ],
+        "new_words": [
+          {
+            "n": 1,
+            "zh": "中文",
+            "pinyin": "Zhōngwén",
+            "pos": "n.",
+            "en": "Chinese language",
+            "text": 1
+          },
+          {
+            "n": 2,
+            "zh": "班",
+            "pinyin": "bān",
+            "pos": "n.",
+            "en": "class",
+            "text": 1
+          },
+          {
+            "n": 3,
+            "zh": "一样",
+            "pinyin": "yíyàng",
+            "pos": "adj.",
+            "en": "same, as…as…",
+            "text": 1
+          }
+        ],
+        "proper_nouns": [
+          {
+            "zh": "大山",
+            "pinyin": "Dàshān",
+            "en": "Dashan, name of a person"
+          },
+          {
+            "zh": "李静",
+            "pinyin": "Lǐ Jìng",
+            "en": "Li Jing, name of a person"
+          }
+        ]
+      },
+      {
+        "n": 2,
+        "title_zh": "在蛋糕店",
+        "title_en": "In a bakery",
+        "kind": "dialogue",
+        "audio": "hsk3-textbook-0902.mp3",
+        "lines": [
+          {
+            "speaker": "小丽",
+            "zh": "别吃了，你已经吃了三块蛋糕了。",
+            "pinyin": "Bié chī le, nǐ yǐjīng chīle sān kuài dàngāo le."
+          },
+          {
+            "speaker": "小刚",
+            "zh": "这是最后一块。",
+            "pinyin": "Zhè shì zuìhòu yíkuàir."
+          },
+          {
+            "speaker": "小丽",
+            "zh": "你总是吃甜的东西，会越吃越胖。",
+            "pinyin": "Nǐ zǒngshì chī tián de dōngxi, huì yuè chī yuè pàng."
+          },
+          {
+            "speaker": "小刚",
+            "zh": "你放心，我一定不会变胖。",
+            "pinyin": "Nǐ fàng xīn, wǒ yídìng bú huì biàn pàng."
+          },
+          {
+            "speaker": "小丽",
+            "zh": "为什么？",
+            "pinyin": "Wèi shénme?"
+          },
+          {
+            "speaker": "小刚",
+            "zh": "我们家的人都很瘦，吃不胖。",
+            "pinyin": "Wǒmen jiā de rén dōu hěn shòu, chī bú pàng."
+          }
+        ],
+        "new_words": [
+          {
+            "n": 4,
+            "zh": "最后",
+            "pinyin": "zuìhòu",
+            "pos": "n.",
+            "en": "the last one",
+            "text": 2
+          },
+          {
+            "n": 5,
+            "zh": "放心",
+            "pinyin": "fàng xīn",
+            "pos": "v.",
+            "en": "to ease one’s mind, to rest assured",
+            "text": 2
+          },
+          {
+            "n": 6,
+            "zh": "一定",
+            "pinyin": "yídìng",
+            "pos": "adv.",
+            "en": "definitely, certainly",
+            "text": 2
+          }
+        ]
+      },
+      {
+        "n": 3,
+        "title_zh": "在山上",
+        "title_en": "On the mountain",
+        "kind": "dialogue",
+        "audio": "hsk3-textbook-0903.mp3",
+        "lines": [
+          {
+            "speaker": "小丽",
+            "zh": "我有点儿害怕。",
+            "pinyin": "Wǒ yǒudiǎnr hàipà."
+          },
+          {
+            "speaker": "小刚",
+            "zh": "怎么了？",
+            "pinyin": "Zěnme le?"
+          },
+          {
+            "speaker": "小丽",
+            "zh": "山越高，路越难走。我也越爬越冷。",
+            "pinyin": "Shān yuè gāo, lù yuè nán zǒu. Wǒ yě yuè pá yuè lěng."
+          },
+          {
+            "speaker": "小刚",
+            "zh": "不用担心，有我呢，我对这儿比较了解。",
+            "pinyin": "Bú yòng dān xīn, yǒu wǒ ne, wǒ duì zhèr bǐjiào liǎojiě."
+          },
+          {
+            "speaker": "小丽",
+            "zh": "那我们先休息一下，一会儿再爬。",
+            "pinyin": "Nà wǒmen xiān xiūxi yíxià, yíhuìr zài pá."
+          },
+          {
+            "speaker": "小刚",
+            "zh": "好，一会儿我们可以从中间这条路上去。",
+            "pinyin": "Hǎo, yíhuìr wǒmen kěyǐ cóng zhōngjiān zhè tiáo lù shàngqu."
+          }
+        ],
+        "new_words": [
+          {
+            "n": 7,
+            "zh": "担心",
+            "pinyin": "dān xīn",
+            "pos": "v.",
+            "en": "to worry",
+            "text": 3
+          },
+          {
+            "n": 8,
+            "zh": "比较",
+            "pinyin": "bǐjiào",
+            "pos": "adv.",
+            "en": "fairly, rather",
+            "text": 3
+          },
+          {
+            "n": 9,
+            "zh": "了解",
+            "pinyin": "liǎojiě",
+            "pos": "v.",
+            "en": "to know",
+            "text": 3
+          },
+          {
+            "n": 10,
+            "zh": "先",
+            "pinyin": "xiān",
+            "pos": "adv.",
+            "en": "first, in advance",
+            "text": 3
+          },
+          {
+            "n": 11,
+            "zh": "中间",
+            "pinyin": "zhōngjiān",
+            "pos": "n.",
+            "en": "middle",
+            "text": 3
+          }
+        ]
+      },
+      {
+        "n": 4,
+        "title_zh": "在小明家",
+        "title_en": "At Xiaoming’s home",
+        "kind": "dialogue",
+        "audio": "hsk3-textbook-0904.mp3",
+        "lines": [
+          {
+            "speaker": "同学",
+            "zh": "小明，你的眼睛怎么跟大熊猫一样了？",
+            "pinyin": "Xiǎomíng, nǐ de yǎnjing zěnme gēn dà xióngmāo yíyàng le?"
+          },
+          {
+            "speaker": "小明",
+            "zh": "我这几天脚疼，没休息好。",
+            "pinyin": "Wǒ zhè jǐ tiān jiǎo téng, méi xiūxi hǎo."
+          },
+          {
+            "speaker": "同学",
+            "zh": "去医院了吗？医生说什么？",
+            "pinyin": "Qù yīyuàn le ma? Yīshēng shuō shénme?"
+          },
+          {
+            "speaker": "小明",
+            "zh": "他让我多休息。休息得越多，好得越快。",
+            "pinyin": "Tā ràng wǒ duō xiūxi. Xiūxi de yuè duō, hǎo de yuè kuài."
+          },
+          {
+            "speaker": "同学",
+            "zh": "下个月的篮球比赛，你能参加吗？",
+            "pinyin": "Xià ge yuè de lánqiú bǐsài, nǐ néng cānjiā ma?"
+          },
+          {
+            "speaker": "小明",
+            "zh": "一定能参加，一点儿影响也没有。",
+            "pinyin": "Yídìng néng cānjiā, yìdiǎnr yǐngxiǎng yě méiyǒu."
+          }
+        ],
+        "new_words": [
+          {
+            "n": 12,
+            "zh": "参加",
+            "pinyin": "cānjiā",
+            "pos": "v.",
+            "en": "to participate",
+            "text": 4
+          },
+          {
+            "n": 13,
+            "zh": "影响",
+            "pinyin": "yǐngxiǎng",
+            "pos": "n.",
+            "en": "influence",
+            "text": 4
+          }
+        ]
+      }
+    ],
+    "grammar": [
+      {
+        "n": 1,
+        "title_zh": "越A越B",
+        "title_en": "The Structure “越A越B”",
+        "explanation_zh": "“越A越B”表示B随着A的变化而变化，例如：",
+        "explanation_en": "“越A越B” (the more A, the more B) means B changes with A. For example:",
+        "examples": [
+          {
+            "n": 1,
+            "zh": "雨越下越大。"
+          },
+          {
+            "n": 2,
+            "zh": "你的中文越说越好。"
+          },
+          {
+            "n": 3,
+            "zh": "越往南，天气越热。"
+          },
+          {
+            "n": 4,
+            "zh": "山越高，路越难走。"
+          }
+        ],
+        "practice_instruction_zh": "练一练　完成句子 Complete the sentences.",
+        "practice": [
+          {
+            "n": 1,
+            "zh": "这个电影越看________。"
+          },
+          {
+            "n": 2,
+            "zh": "我们越聊________。"
+          },
+          {
+            "n": 3,
+            "zh": "她________，我越担心。"
+          }
+        ]
+      },
+      {
+        "n": 2,
+        "title_zh": "比较句1：A跟B一样（+Adj）",
+        "title_en": "Comparative Sentences 1: A跟B一样 (+ Adj)",
+        "explanation_zh": "“A跟B一样”表示A和B两者相比较，结果相同。后边可以用形容词表示比较的某一方面，如“一样大”表示大小相同。否定式是在“一样”的前边加“不”。例如：",
+        "explanation_en": "“A跟B一样” means A and B are the same after comparison. The structure can take an adjective to indicate the aspect being compared, for example, “一样大” means “the same in size”. In the negative form, “不” is added before “一样”. For example:",
+        "examples": [
+          {
+            "n": 1,
+            "zh": "这本书跟那本书一样。"
+          },
+          {
+            "n": 2,
+            "zh": "儿子跟爸爸一样高。"
+          },
+          {
+            "n": 3,
+            "zh": "这辆车的颜色跟那辆车不一样。"
+          },
+          {
+            "n": 4,
+            "zh": "她的汉语说得跟中国人一样好。"
+          }
+        ],
+        "practice_instruction_zh": "练一练　完成句子 Complete the sentences.",
+        "practice": [
+          {
+            "n": 1,
+            "zh": "我的杯子________。"
+          },
+          {
+            "n": 2,
+            "zh": "今天的生词________。"
+          },
+          {
+            "n": 3,
+            "zh": "________一样聪明。"
+          }
+        ]
+      }
+    ],
+    "exercises": [
+      {
+        "n": 1,
+        "type_zh": "朗读",
+        "instruction_zh": "朗读下列短语和句子",
+        "instruction_en": "Read the following phrases and sentences aloud.",
+        "audio": "hsk3-textbook-0905.mp3",
+        "items": [
+          {
+            "n": 1,
+            "zh": "一样：不一样／一样好／这两件衣服一样／她的汉语说得跟中国人一样好。"
+          },
+          {
+            "n": 2,
+            "zh": "一定：一定来／不一定／这次我不一定能考好／我一定不会变胖。"
+          },
+          {
+            "n": 3,
+            "zh": "了解：比较了解／不了解／我很了解他／我对这儿比较了解。"
+          },
+          {
+            "n": 4,
+            "zh": "参加：参加比赛／参加考试／不想参加／你能参加吗？"
+          },
+          {
+            "n": 5,
+            "zh": "影响：没有影响／影响很大／他影响了我／一点儿影响也没有。"
+          }
+        ]
+      },
+      {
+        "n": 2,
+        "type_zh": "选词填空",
+        "instruction_zh": "选择恰当的词语填空",
+        "instruction_en": "Choose the proper words to fill in the blanks.",
+        "word_bank": [
+          [
+            "参加",
+            "班",
+            "担心",
+            "影响",
+            "比较"
+          ],
+          [
+            "放心",
+            "最后",
+            "先",
+            "中间",
+            "了解"
+          ]
+        ],
+        "items": [
+          {
+            "n": 1,
+            "zh": "你在哪个________学习汉语？"
+          },
+          {
+            "n": 2,
+            "zh": "别________，他马上就到家了。"
+          },
+          {
+            "n": 3,
+            "zh": "这件事________难，你再给我几天时间。"
+          },
+          {
+            "n": 4,
+            "zh": "你想不想去________爬山比赛？"
+          },
+          {
+            "n": 5,
+            "zh": "少玩儿一会儿电子游戏吧，别________了学习。"
+          },
+          {
+            "n": 6,
+            "zh": "A：你怎么又迟到了？ B：对不起，这是________一次，以后一定不迟到了。"
+          },
+          {
+            "n": 7,
+            "zh": "A：你吃这么多，会越来越胖。 B：________，我每天都运动。"
+          },
+          {
+            "n": 8,
+            "zh": "A：你怎么知道她会来？ B：我很________她，她每天都在这儿吃饭。"
+          },
+          {
+            "n": 9,
+            "zh": "A：你想要哪本书？ B：________的那本。"
+          },
+          {
+            "n": 10,
+            "zh": "A：下午你打算做什么？ B：我想________去超市买点儿东西。"
+          }
+        ]
+      },
+      {
+        "n": 3,
+        "type_zh": "描述图片",
+        "instruction_zh": "用本课新学的语言点和词语描述图片",
+        "instruction_en": "Describe the pictures using the newly-learned language points and words.",
+        "items": [
+          {
+            "n": 1,
+            "zh": "A：你给我的那本书我看完了。 B：你觉得怎么样？ A：很有意思，我越________。 B：我跟你________，也非常喜欢。",
+            "picture_desc_en": "A young man with a backpack and a young woman holding a blue folder, looking at a book together."
+          },
+          {
+            "n": 2,
+            "zh": "A：你________什么比赛？ B：篮球比赛。你呢？ A：我跟________，也对打篮球感兴趣。 B：对，我觉得打篮球越打越________。",
+            "picture_desc_en": "Two young men playing basketball on an outdoor court."
+          },
+          {
+            "n": 3,
+            "zh": "A：我很________这次的汉字考试。 B：你多练习写，越________。 A：你的汉字一直很好，这次考试一定没问题。 B：我跟________，我更担心语法。",
+            "picture_desc_en": "Students sitting in rows of desks, writing an exam in a classroom."
+          },
+          {
+            "n": 4,
+            "zh": "A：我最近变胖了，你几乎没变化，跟以前________。 B：是哥哥影响了我，每天跟他一起跑步，越跑________。 A：那我也开始跑步吧。 B：好，一定能变瘦。",
+            "picture_desc_en": "A man and a woman in sportswear jogging together along a riverside promenade, with city buildings behind."
+          }
+        ]
+      },
+      {
+        "n": 4,
+        "type_zh": "回答问题",
+        "instruction_zh": "根据课文回答问题",
+        "instruction_en": "Answer the questions according to the texts.",
+        "items": [
+          {
+            "n": 1,
+            "zh": "李静的汉语说得怎么样？为什么？"
+          },
+          {
+            "n": 2,
+            "zh": "小刚一共吃了几块蛋糕？"
+          },
+          {
+            "n": 3,
+            "zh": "小丽觉得小刚会越来越胖吗？为什么？"
+          },
+          {
+            "n": 4,
+            "zh": "小丽为什么害怕了？小刚害怕吗？"
+          },
+          {
+            "n": 5,
+            "zh": "小明怎么了？"
+          },
+          {
+            "n": 6,
+            "zh": "小明能参加篮球比赛吗？为什么？"
+          }
+        ]
+      }
+    ],
+    "characters": {
+      "knowledge_title_zh": "形声字1",
+      "knowledge_zh": "现代汉语中，70%左右的汉字都是形声字。形声字由形旁和声旁两部分组成。形旁提示汉字的意思，声旁提示汉字的发音。\n左右结构的形声字包括两种，一种是“左形右声”，即形旁在左边，声旁在右边，例如：\n汉字 | 发音 | 声旁 | 形旁\n妈 | mā | 马（mǎ） | 女\n住 | zhù | 主（zhǔ） | 亻\n另一种是“右形左声”，即形旁在右边，声旁在左边，例如：\n汉字 | 发音 | 声旁 | 形旁\n放 | fàng | 方（fāng） | 攵\n邻 | lín | 令（lìng） | 阝\n\n旧字新词：读读下面的词语，想想组成的新词是什么意思。",
+      "knowledge_en": "Pictophonetic Characters 1. Around 70% of Chinese characters are pictophonetic ones, which are composed of two components, one indicating meaning and the other sound.\nThe pictophonetic characters of a left-right structure fall into two types. One has the semantic component on the left and the phonetic component on the right. For example:\nCharacter | Pronounciation | Phonetic Component | Semantic Component\nThe other has the semantic component on the right and the phonetic component on the left. For example:\n\nWord Game: Read the following words and guess the meanings of the newly-formed ones.",
+      "characters": [
+        {
+          "zh": "妈",
+          "pinyin": "mā",
+          "note_zh": "左形右声：声旁 马（mǎ），形旁 女"
+        },
+        {
+          "zh": "住",
+          "pinyin": "zhù",
+          "note_zh": "左形右声：声旁 主（zhǔ），形旁 亻"
+        },
+        {
+          "zh": "放",
+          "pinyin": "fàng",
+          "note_zh": "右形左声：声旁 方（fāng），形旁 攵"
+        },
+        {
+          "zh": "邻",
+          "pinyin": "lín",
+          "note_zh": "右形左声：声旁 令（lìng），形旁 阝"
+        }
+      ],
+      "word_game": [
+        {
+          "parts": [
+            "上课",
+            "中间"
+          ],
+          "result": "课间"
+        },
+        {
+          "parts": [
+            "爬山",
+            "路上"
+          ],
+          "result": "山路"
+        },
+        {
+          "parts": [
+            "参加",
+            "比赛"
+          ],
+          "result": "参赛"
+        }
+      ],
+      "confusable_pairs": [
+        [
+          "担",
+          "但"
+        ],
+        [
+          "间",
+          "问"
+        ],
+        [
+          "加",
+          "咖"
+        ],
+        [
+          "较",
+          "校"
+        ],
+        [
+          "文",
+          "丈"
+        ]
+      ]
+    },
+    "application": [
+      {
+        "title_zh": "双人活动",
+        "instruction_zh": "两人一组，说说下边的做法好不好，并说明理由。请使用“越A越B”。",
+        "instruction_en": "Work in pairs. Discuss whether the following behaviours are good or not, and explain the reasons using “越A越B”.",
+        "example_zh": [
+          "表格：做法 | 好不好 | 为什么",
+          "很晚睡觉。 | 不好。 | 越晚睡觉，身体越不好。",
+          "很晚回家。 | |",
+          "每天锻炼身体。 | |",
+          "总是帮助同学。 | |",
+          "吃很多水果。 | |",
+          "用中文跟朋友聊天儿。 | |"
+        ]
+      },
+      {
+        "title_zh": "小组活动",
+        "instruction_zh": "3～4人一组，问问别人的实际情况，然后说说自己跟他们一样不一样。",
+        "instruction_en": "Work in groups of 3-4. Ask about others’ situations and talk about whether you are the same as them or not.",
+        "example_zh": [
+          "表格：问题 | 他的情况 | 我跟他（不）一样 | 我的情况",
+          "几点起床？ | 他7:00起床 | 我跟他不一样 | 我8:00起床",
+          "早上吃什么？ | | |",
+          "中午去哪儿吃饭？ | | |",
+          "怎么锻炼身体？ | | |",
+          "对什么感兴趣？ | | |",
+          "每天复习多长时间？ | | |"
+        ]
+      }
+    ],
+    "saying": {
+      "zh": "三人行，必有我师",
+      "pinyin": "Sān rén xíng, bì yǒu wǒ shī",
+      "en": "When I walk with two others, there must be one whom I can learn from",
+      "explanation_zh": "“三人行，必有我师”的意思是三个人一起走路，里边一定有一个人可以做我的老师。这句话用来比喻别人身上可能有我们没有的优点，我们要学习别人身上的优点。",
+      "explanation_en": "“三人行必有我师” means “When I walk with two others, there must be one whom I can learn from”. In the metaphorical sense, it means everybody may have some merits that we lack, so we should learn from others."
+    }
+  },
+  "teacher": {
+    "ref": {
+      "book": "teacher",
+      "pages": [
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70
+      ]
+    },
+    "objectives_zh": [
+      "重点词语：学生能够熟练掌握：“担心、比较、了解、参加、影响”的词义和用法",
+      "语言点：学生能够了解并掌握：（1）“越A越B”表示B随着A的变化而变化（2）比较句1：A跟B一样（＋形容词）表示A和B相比结果一样",
+      "汉字：学生能够：（1）了解形声字的造字方法以及左右结构形声字（2）根据已学生词猜测出3个旧字新词“课间、山路、参赛”的意思",
+      "功能：学生能够：（1）用“越A越B”表达伴随的变化（2）用“A和B一样（＋形容词）”表达比较"
+    ],
+    "steps": [
+      {
+        "title_zh": "复习旧课",
+        "body_zh": "1 教师展示第8课的热身图片，请学生根据图片说出生词。\n2 教师根据第8课的内容进行提问。\n（1）以后你打算在什么地方工作？\n（2）旅游的时候你买哪家公司的飞机票？\n（3）今天我请你吃晚饭，你想去哪儿吃？\n（4）你打算送给朋友什么样的生日礼物？\n（5）什么地方你非常喜欢？你去过几次？是什么时候去的？"
+      },
+      {
+        "title_zh": "学习新课 1 热身",
+        "body_zh": "热身1：可留至语言点（2）“比较句1：A跟B一样（＋形容词）”导入时使用。\n热身2：可留至语言点（1）“越A越B”导入时使用。"
+      },
+      {
+        "title_zh": "2 生词",
+        "body_zh": "（1）生词快速认读及正音\n中文、班、一样、最后、放心、一定、担心、比较、了解、先、中间、参加、影响\n· 教师先带领学生快速认读一遍生词；\n· 取消拼音，带领学生再次认读；\n· 请单个学生独自认读2-3个生词；\n· 最后全班一起快速认读所有的生词。\n（2）生词讲解方式\n· 利用周围环境展示：班、最后、中间\n· 利用生活场景展示：老师有一本英文书，一本汉语书，先看哪本？——先看……\n· 对比法展示：知道—认识—了解、可能—一定、担心—放心\n· 联系旧课展示：汉语—中文\n（3）重点生词扩展及常用搭配\n· 担心—很担心—担心孩子的身体—妈妈很担心儿子的学习。\n　—不担心—明天的考试，我一点儿也不担心。\n· 比较—比较好—比较贵—你对什么比较有兴趣？\n· 了解—很了解—了解这个地方—不了解—我对他一点儿也不了解。\n· 参加—参加比赛—参加考试—你参加过面试吗？\n· 影响—影响学习—影响很大—不影响—我只是小感冒，不影响工作。\n练习册相关练习：第57页／一／第一部分，第60页／二／第二部分"
+      },
+      {
+        "title_zh": "3 语言点（1）越A越B",
+        "body_zh": "① 语言点解析\n“越A越B”表示B随着A的变化而变化。其中A一般是动词，B一般是形容词。\n［框］越＋动词＋越＋形容词\n② 语言点导入\n教师可利用本课热身2导入语言点。\n教师：他吃得越来越多还是越来越少？\n学生：他吃得越来越多。\n教师引导学生说出：他越吃越多。\n教师带领学生熟悉表格左栏内容，学生两人一组，合作完成热身2。\n③ 语言点操练\n教师可根据本课热身2表格操练语言点。\n目标句：语法越学越难／容易／多／有意思。\n　　　　我做饭越做越好／好吃／不好吃／快。\n　　　　越跑越累／快／慢。\n　　　　篮球越打越好。\n④ 语言点扩展练习\n教师根据实际情况提问，请学生回答。\n教师：请你给我介绍一本书，说说为什么？\n学生：我介绍你看……，因为越看越好看／喜欢／有意思。\n教师：明年你还学汉语吗？为什么？\n学生：我……，因为越学越……。\n注意：当有两个主语时，两个主语分别放在“越”的前边。如“汉语越难，我越觉得有意思”“天气越热，我越不想出去”。"
+      },
+      {
+        "title_zh": "3 语言点（2）比较句1：A跟B一样（＋形容词）",
+        "body_zh": "① 语言点解析\n“A跟B一样”表示A和B两者相比较，结果相同。后边可以用形容词表示比较的某一方面，如“一样大”表示大小相同。否定式是在“一样”的前边加“不”。\n［框］A＋跟＋B＋一样／不一样\n［框］A＋跟＋B＋一样／不一样＋形容词\n② 语言点导入\n教师可利用本课热身1导入语言点。\n教师展示图片（1）：姐姐和妹妹衣服一样吗？\n学生：她们的衣服一样。\n教师引导学生说出：姐姐的衣服跟妹妹的一样。\n教师展示图片（6）：哥哥和弟弟一样胖吗？\n学生：他们不一样胖。\n教师引导学生说出：哥哥跟弟弟不一样胖。\n③ 语言点操练\n教师可利用热身1的图片（2）（3）（4）（5）进行操练。\n目标句：第一辆汽车的颜色跟第二辆不一样。\n　　　　前边的房子和后边的房子一样。\n　　　　左边的天气和右边的天气不一样。\n　　　　左边的杯子跟右边的杯子一样大。\n④ 语言点扩展练习\n教师可就地取材，让全班同学比较两位学生的身高、年龄、爱好等。\n学生A跟学生B一样高／不一样高。\n学生A跟学生B一样大／不一样大。\n学生A的爱好跟学生B一样／不一样。\n学生A的字写得跟学生B一样漂亮。\n注意：“A跟B一样／不一样＋形容词”中，B中的中心语可以省略。如“这件衣服跟那件衣服一样好看”可以说成“这件衣服跟那件一样好看”。"
+      },
+      {
+        "title_zh": "4 课文 课文1",
+        "body_zh": "（1）让学生听两遍录音并回答下列问题：\n大山觉得马可的中文怎么样？——他觉得马可的中文越说越好。\n马可觉得谁的汉语好？——他觉得王静说得更好。\n王静的中文怎么好？——她说得跟中国人一样好。\n王静是谁？——是马可的中文老师。\n（2）教师领读课文两遍，让学生分角色朗读课文。\n（3）模仿练习\n学生两人一组，根据提示词模仿课文内容进行对话练习。\nA：……，你……越……越……了。\nB：哪里哪里，……更好。\nA：怎么好？\nB：他／她……跟……一样……。\nA：……？我怎么没……？\nB：他／她是……。"
+      },
+      {
+        "title_zh": "4 课文 课文2",
+        "body_zh": "（1）让学生听两遍录音并回答下列问题：\n女的（小丽）为什么不让男的（小刚）吃蛋糕了？——因为他已经吃三块了。\n小丽担心什么？——她担心小刚越吃越胖。\n小刚为什么一定不会变胖？——因为他们家的人都很瘦，吃不胖。\n（2）教师领读课文两遍，让学生分角色朗读课文，注意说话人的语气。\n（3）教师给提示词，带领学生复述课文。\n提示词：别……了、最后、总是、越……越……、放心、一定、吃不胖"
+      },
+      {
+        "title_zh": "4 课文 课文3",
+        "body_zh": "（1）让学生听两遍录音并回答下列问题：\n女的（小丽）为什么害怕？——因为山越高，路越难走，她也越爬越冷。\n男的（小刚）为什么让小丽别担心？——因为他对这个地方比较了解。\n小刚和小丽现在要做什么？——他们打算先休息一下，一会儿再爬。\n他们一会儿怎么上去？——他们一会儿从中间那条路上去。\n（2）教师领读课文两遍，让学生分角色朗读课文，注意说话人的语气。\n（3）教师给提示词，带领学生复述课文。\n提示词：有点儿、越……越……、别担心、比较、了解、先、中间"
+      },
+      {
+        "title_zh": "4 课文 课文4",
+        "body_zh": "（1）让学生听两遍录音并回答下列问题：\n小明的眼睛怎么了？——他的眼睛跟大熊猫一样。\n为什么——因为他这几天脚疼，没休息好。\n医生让小明做什么？——医生让小明多休息。休息得越多，好得越快。\n小明能参加下个月的篮球比赛吗？——他一定能参加，一点儿影响也没有。\n（2）教师领读课文两遍，让学生分角色朗读课文。\n（3）模仿练习\n学生两人一组，根据提示词模仿课文内容进行对话练习。\nA：……，你的……怎么跟……一样了？\nB：我……，没……。\nA：……了吗？……？\nB：……让我……。……得越……，……得越……。\nA：……，你能……吗？\nB：一定……，一点儿……也没有。\n练习册相关练习：第63页／四"
+      },
+      {
+        "title_zh": "5 汉字",
+        "body_zh": "形声字1：\n① 知识点解析：\n现代汉语中，70%左右的汉字都是形声字，形声字由形旁和声旁两部分组成。形旁提示汉字的意思，声旁提示汉字的发音。本课介绍左右结构的形声字，包括左形右声和右形左声。\n提示：\n教师逐一展示课本第78页左形右声表格中的字，请学生分别读出形旁和声旁，说说形旁的意思。\n妈：形旁是“女”，意思是女人；声旁是“马”（ma）。\n住：形旁是“亻”，意思是跟人有关系；声旁是“主”（zhu）。\n请学生归纳这些汉字的结构——声旁与形旁的位置：\n“妈”“住”的右边是声旁（发音），左边是形旁（意思）。\n教师展示更多左形右声的汉字，请学生说出形旁与声旁，如：吗、骑、请。\n教师逐一展示课本第78页右形左声表格中的字，请学生分别读出形旁和声旁，说说形旁的意思。\n放：形旁是“攵”，意思是手；声旁是“方”（fang）。\n邻：形旁是“阝”，意思是国家、地方；声旁是“令”（ling）。\n请学生归纳这些汉字的结构——声旁与形旁的位置：\n“放”“邻”的左边是声旁（发音），右边是形旁（意思）。\n教师展示更多右形左声的汉字，请学生说出形旁与声旁，如：静、瓶。\n② 汉字练习\n· 教师板书或者用手指在空中书写本课形声字“妈、住、放、邻”，带领学生一起识记形声字的笔画笔顺。\n· 请学生用本课所学形声字组词或扩展成短语：\n参考答案：\n妈：妈妈\n住：住在北京、住了三年\n放：放在桌子上、放好\n邻：邻居\n旧字新词：\n① 教师领读以前学过的词语和新词，并让学生猜猜新词的意思。\n· 领读：上课、中间、课间\n问学生：“课间”是什么意思？——两节课中间休息的时间。\n· 领读：爬山、路上、山路\n问学生：“山路”是什么意思？——爬山的时候走的路。\n· 领读：参加、比赛、参赛\n问学生：“参赛”是什么意思？——参加比赛\n扩展提问：还有什么“赛”？——大赛、球赛、赛前、赛后、赛跑、赛车。（根据实际情况选用）\n② 教师领读新词扩展，通过情景，理解新词的意思和用法：\n课间：课间休息／课间十分钟／课间你会做什么？\n山路：走山路／山路难走／你走过山路吗？\n参赛：参赛时间／打算参赛／参赛的学生我一个也不认识。\n汉字辨认练习：\n辨认下列汉字并组词。\n担：________、________　较：________、________\n但：________、________　校：________、________\n间：________、________　文：________、________\n问：________、________　丈：________、________\n加：________、________\n咖：________、________\n练习册相关练习：第63页／三／第三部分"
+      },
+      {
+        "title_zh": "6 补充课堂活动——找不同",
+        "body_zh": "教师准备两张相似的图片，将学生分成两组看图片，依次说出两张图片中相同与不同的地方，比比哪组说得又对又多。"
+      },
+      {
+        "title_zh": "7 俗语",
+        "body_zh": "教师引导学生理解俗语的含义，注意这里的“三人”并不一定指三个人，而是指多个人。“师”也不一定指老师，而是有的地方比自己好的人。比如：三人行，必有我师。我从同学们身上学到了很多东西。"
+      },
+      {
+        "title_zh": "8 本课小结",
+        "body_zh": "· 语言点：用“A跟B一样（＋形容词）”表示比较\n　　　　　用“越A越B”表示B随着A的变化而变化\n· 汉　字：形声词（左右结构）\n　　　　　旧字新词：课间、山路、参赛"
+      }
+    ],
+    "notes_zh": [
+      "注意：当有两个主语时，两个主语分别放在“越”的前边。如“汉语越难，我越觉得有意思”“天气越热，我越不想出去”。（语言点1）",
+      "注意：“A跟B一样／不一样＋形容词”中，B中的中心语可以省略。如“这件衣服跟那件衣服一样好看”可以说成“这件衣服跟那件一样好看”。（语言点2）",
+      "“越A越B”中A一般是动词，B一般是形容词。（语言点1 解析）",
+      "对比法展示：知道—认识—了解、可能—一定、担心—放心；联系旧课展示：汉语—中文。（生词）",
+      "注意这里的“三人”并不一定指三个人，而是指多个人。“师”也不一定指老师，而是有的地方比自己好的人。（俗语）"
+    ],
+    "warmup_answers_zh": [
+      "热身1：可留至语言点（2）“比较句1：A跟B一样（＋形容词）”导入时使用。",
+      "热身2：可留至语言点（1）“越A越B”导入时使用。",
+      "热身1 图片（1）：姐姐的衣服跟妹妹的一样。 图片（6）：哥哥跟弟弟不一样胖。（语言点2 导入）",
+      "热身1 图片（2）（3）（4）（5）目标句：第一辆汽车的颜色跟第二辆不一样。／前边的房子和后边的房子一样。／左边的天气和右边的天气不一样。／左边的杯子跟右边的杯子一样大。（语言点2 操练）",
+      "热身2：他吃得越来越多。→ 他越吃越多。（语言点1 导入）"
+    ],
+    "text_questions": [
+      {
+        "text": 1,
+        "q_zh": "大山觉得马可的中文怎么样？",
+        "a_zh": "他觉得马可的中文越说越好。"
+      },
+      {
+        "text": 1,
+        "q_zh": "马可觉得谁的汉语好？",
+        "a_zh": "他觉得王静说得更好。"
+      },
+      {
+        "text": 1,
+        "q_zh": "王静的中文怎么好？",
+        "a_zh": "她说得跟中国人一样好。"
+      },
+      {
+        "text": 1,
+        "q_zh": "王静是谁？",
+        "a_zh": "是马可的中文老师。"
+      },
+      {
+        "text": 2,
+        "q_zh": "女的（小丽）为什么不让男的（小刚）吃蛋糕了？",
+        "a_zh": "因为他已经吃三块了。"
+      },
+      {
+        "text": 2,
+        "q_zh": "小丽担心什么？",
+        "a_zh": "她担心小刚越吃越胖。"
+      },
+      {
+        "text": 2,
+        "q_zh": "小刚为什么一定不会变胖？",
+        "a_zh": "因为他们家的人都很瘦，吃不胖。"
+      },
+      {
+        "text": 3,
+        "q_zh": "女的（小丽）为什么害怕？",
+        "a_zh": "因为山越高，路越难走，她也越爬越冷。"
+      },
+      {
+        "text": 3,
+        "q_zh": "男的（小刚）为什么让小丽别担心？",
+        "a_zh": "因为他对这个地方比较了解。"
+      },
+      {
+        "text": 3,
+        "q_zh": "小刚和小丽现在要做什么？",
+        "a_zh": "他们打算先休息一下，一会儿再爬。"
+      },
+      {
+        "text": 3,
+        "q_zh": "他们一会儿怎么上去？",
+        "a_zh": "他们一会儿从中间那条路上去。"
+      },
+      {
+        "text": 4,
+        "q_zh": "小明的眼睛怎么了？",
+        "a_zh": "他的眼睛跟大熊猫一样。"
+      },
+      {
+        "text": 4,
+        "q_zh": "为什么",
+        "a_zh": "因为他这几天脚疼，没休息好。"
+      },
+      {
+        "text": 4,
+        "q_zh": "医生让小明做什么？",
+        "a_zh": "医生让小明多休息。休息得越多，好得越快。"
+      },
+      {
+        "text": 4,
+        "q_zh": "小明能参加下个月的篮球比赛吗？",
+        "a_zh": "他一定能参加，一点儿影响也没有。"
+      }
+    ],
+    "summary_zh": "语言点：用“A跟B一样（＋形容词）”表示比较；用“越A越B”表示B随着A的变化而变化。汉字：形声词（左右结构）；旧字新词：课间、山路、参赛。"
+  },
+  "workbook": {
+    "ref": {
+      "book": "workbook",
+      "pages": [
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67
+      ]
+    },
+    "answers_ref": {
+      "book": "teacher",
+      "pages": [
+        167,
+        168,
+        169
+      ]
+    },
+    "sections": [
+      {
+        "n": "一、听力 第一部分",
+        "type_zh": "听力 第一部分",
+        "instruction_zh": "第1–5题：听对话，选择与对话内容一致的图片",
+        "instruction_en": "Questions 1-5: Choose the right picture for each dialogue you hear.",
+        "audio": "hsk3-workbook-09-part1.mp3",
+        "items": [
+          {
+            "n": "例如",
+            "zh": "男：喂，请问张经理在吗？ 女：他正在开会，您半个小时以后再打，好吗？",
+            "transcript_zh": "男：喂，请问张经理在吗？ 女：他正在开会，您半个小时以后再打，好吗？",
+            "options": {
+              "A": "[picture] a smiling schoolboy in a shirt and tie receiving a trophy, with adults and another boy standing behind",
+              "B": "[picture] two hikers with large backpacks standing on rocky mountain ground",
+              "C": "[picture] a group of smiling children and a young man gathered around a globe",
+              "D": "[picture] a smiling woman in a uniform talking on a telephone",
+              "E": "[picture] a tired-looking woman with long blonde hair holding a mug",
+              "F": "[picture] a woman standing among seated people who are smiling and clapping"
+            },
+            "answer": "D",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                61
+              ]
+            }
+          },
+          {
+            "n": 1,
+            "zh": "",
+            "options": {
+              "A": "[picture] a smiling schoolboy in a shirt and tie receiving a trophy, with adults and another boy standing behind",
+              "B": "[picture] two hikers with large backpacks standing on rocky mountain ground",
+              "C": "[picture] a group of smiling children and a young man gathered around a globe",
+              "D": "[picture] a smiling woman in a uniform talking on a telephone",
+              "E": "[picture] a tired-looking woman with long blonde hair holding a mug",
+              "F": "[picture] a woman standing among seated people who are smiling and clapping"
+            },
+            "transcript_zh": "女：大明，你看我的眼睛是不是跟熊猫一样了？ 男：怎么，昨天又没睡好？别总想工作的事，好好休息。",
+            "answer": "E",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                169
+              ]
+            }
+          },
+          {
+            "n": 2,
+            "zh": "",
+            "options": {
+              "A": "[picture] a smiling schoolboy in a shirt and tie receiving a trophy, with adults and another boy standing behind",
+              "B": "[picture] two hikers with large backpacks standing on rocky mountain ground",
+              "C": "[picture] a group of smiling children and a young man gathered around a globe",
+              "D": "[picture] a smiling woman in a uniform talking on a telephone",
+              "E": "[picture] a tired-looking woman with long blonde hair holding a mug",
+              "F": "[picture] a woman standing among seated people who are smiling and clapping"
+            },
+            "transcript_zh": "男：方老师，这次中文比赛的第一是您班的学生吗？ 女：是，这个小男孩叫天天，他第一次参赛就拿了第一。",
+            "answer": "A",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                169
+              ]
+            }
+          },
+          {
+            "n": 3,
+            "zh": "",
+            "options": {
+              "A": "[picture] a smiling schoolboy in a shirt and tie receiving a trophy, with adults and another boy standing behind",
+              "B": "[picture] two hikers with large backpacks standing on rocky mountain ground",
+              "C": "[picture] a group of smiling children and a young man gathered around a globe",
+              "D": "[picture] a smiling woman in a uniform talking on a telephone",
+              "E": "[picture] a tired-looking woman with long blonde hair holding a mug",
+              "F": "[picture] a woman standing among seated people who are smiling and clapping"
+            },
+            "transcript_zh": "女1：这山怎么越爬越高啊？还有多远？ 女2：我对这儿比较了解，再爬一个小时就到了。先休息会儿吧。",
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                169
+              ]
+            }
+          },
+          {
+            "n": 4,
+            "zh": "",
+            "options": {
+              "A": "[picture] a smiling schoolboy in a shirt and tie receiving a trophy, with adults and another boy standing behind",
+              "B": "[picture] two hikers with large backpacks standing on rocky mountain ground",
+              "C": "[picture] a group of smiling children and a young man gathered around a globe",
+              "D": "[picture] a smiling woman in a uniform talking on a telephone",
+              "E": "[picture] a tired-looking woman with long blonde hair holding a mug",
+              "F": "[picture] a woman standing among seated people who are smiling and clapping"
+            },
+            "transcript_zh": "男：你说得真好，几乎跟中国人一样！ 女：哪里哪里，大家说得都很好。",
+            "answer": "F",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                169
+              ]
+            }
+          },
+          {
+            "n": 5,
+            "zh": "",
+            "options": {
+              "A": "[picture] a smiling schoolboy in a shirt and tie receiving a trophy, with adults and another boy standing behind",
+              "B": "[picture] two hikers with large backpacks standing on rocky mountain ground",
+              "C": "[picture] a group of smiling children and a young man gathered around a globe",
+              "D": "[picture] a smiling woman in a uniform talking on a telephone",
+              "E": "[picture] a tired-looking woman with long blonde hair holding a mug",
+              "F": "[picture] a woman standing among seated people who are smiling and clapping"
+            },
+            "transcript_zh": "男：方方，这是你们班的照片吗？ 女：对，爸，我来给你介绍一下，中间这个是我们班周老师，周老师旁边这个男孩儿叫山山，他上课总是迟到。",
+            "answer": "C",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                169
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "一、听力 第二部分",
+        "type_zh": "听力 第二部分",
+        "instruction_zh": "第6–10题：听句子，判断对错",
+        "instruction_en": "Questions 6-10: Decide whether the statements are true or false based on the sentences you hear.",
+        "audio": "hsk3-workbook-09-part2.mp3",
+        "items": [
+          {
+            "n": "例如1",
+            "zh": "他希望自己很健康。",
+            "transcript_zh": "为了让自己更健康，他每天都花一个小时去锻炼身体。",
+            "answer": "√",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                62
+              ]
+            }
+          },
+          {
+            "n": "例如2",
+            "zh": "那块儿手表不是他的。",
+            "transcript_zh": "今天我想早点儿回家。看了看手表，才5点。过了一会儿再看表，还是5点，我这才发现我的手表不走了。",
+            "answer": "×",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                62
+              ]
+            }
+          },
+          {
+            "n": 6,
+            "zh": "南方十二月的时候房间里不太冷。",
+            "transcript_zh": "十二月的南方，房间里跟房间外一样冷，所以回家了大家也要穿很多衣服。",
+            "answer": "×",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                169
+              ]
+            }
+          },
+          {
+            "n": 7,
+            "zh": "他觉得这本书很有意思。",
+            "transcript_zh": "这本书写得真不错，越看越有意思，你也看看吧。",
+            "answer": "√",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                169
+              ]
+            }
+          },
+          {
+            "n": 8,
+            "zh": "现在不下雪了。",
+            "transcript_zh": "雪越下越大，外边的房子、树和路都变白了。",
+            "answer": "×",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                169
+              ]
+            }
+          },
+          {
+            "n": 9,
+            "zh": "他以前的手机和现在的是一样的。",
+            "transcript_zh": "我昨天新买的手机跟以前的不太一样，你来帮我看看怎么用，可以吗？",
+            "answer": "×",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                169
+              ]
+            }
+          },
+          {
+            "n": 10,
+            "zh": "周月喜欢手表。",
+            "transcript_zh": "我喜欢手表，周月也跟我一样，但是她更喜欢大一点儿的。",
+            "answer": "√",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                169
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "一、听力 第三部分",
+        "type_zh": "听力 第三部分",
+        "instruction_zh": "第11–15题：听短对话，选择正确答案",
+        "instruction_en": "Questions 11-15: Listen to the short dialogues and choose the right answers.",
+        "audio": "hsk3-workbook-09-part3.mp3",
+        "items": [
+          {
+            "n": "例如",
+            "zh": "男的想让小王做什么？",
+            "transcript_zh": "男：小王，帮我开一下门，好吗？谢谢！ 女：没问题。您去超市了？买了这么多东西。 问：男的想让小王做什么？",
+            "options": {
+              "A": "开门",
+              "B": "拿东西",
+              "C": "去超市买东西"
+            },
+            "answer": "A",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                62
+              ]
+            }
+          },
+          {
+            "n": 11,
+            "zh": "女的现在怎么样？",
+            "options": {
+              "A": "变胖了",
+              "B": "变瘦了",
+              "C": "头发变长了"
+            },
+            "transcript_zh": "男：这是什么时候的照片？照片上的你跟现在不太一样。 女：是去年夏天的，那时候我是长头发，也比较瘦。 问：女的现在怎么样？",
+            "answer": "A",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                169
+              ]
+            }
+          },
+          {
+            "n": 12,
+            "zh": "关于女的，可以知道什么？",
+            "options": {
+              "A": "学得不太好",
+              "B": "不用努力了",
+              "C": "考了第一"
+            },
+            "transcript_zh": "男：小方，我真为你高兴，希望你越学越好。 女：谢谢老师，我一定努力，下次考试还拿第一。 问：关于女的，可以知道什么？",
+            "answer": "C",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                169
+              ]
+            }
+          },
+          {
+            "n": 13,
+            "zh": "女的做鱼做得怎么样？",
+            "options": {
+              "A": "比饭馆的好吃",
+              "B": "特别好吃",
+              "C": "没有饭馆的好吃"
+            },
+            "transcript_zh": "男：妈，你的鱼越做越好，跟饭馆的一样好吃。 女：那你多吃点儿，以后我每个星期都给你做一次，怎么样？ 问：女的做鱼做得怎么样？",
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                169
+              ]
+            }
+          },
+          {
+            "n": 14,
+            "zh": "什么样的西瓜比较甜？",
+            "options": {
+              "A": "便宜的",
+              "B": "大的",
+              "C": "小的"
+            },
+            "transcript_zh": "女：您好，来一个西瓜，要甜点儿的，不要太大的。 男：现在西瓜便宜，给您来个大的吧，西瓜越大越甜。 问：什么样的西瓜比较甜？",
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                169
+              ]
+            }
+          },
+          {
+            "n": 15,
+            "zh": "女的以前觉得汉语怎么样？",
+            "options": {
+              "A": "特别有意思",
+              "B": "很容易",
+              "C": "很难"
+            },
+            "transcript_zh": "男：你汉语只学了不到半年，说得这么好。以前你不是不想学吗？ 女：其实汉语跟我以前想的一点儿也不一样，越学越有意思，也不觉得难了。 问：女的以前觉得汉语怎么样？",
+            "answer": "C",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                169
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "一、听力 第四部分",
+        "type_zh": "听力 第四部分",
+        "instruction_zh": "第16–20题：听长对话，选择正确答案",
+        "instruction_en": "Questions 16-20: Listen to the dialogues and choose the right answers.",
+        "audio": "hsk3-workbook-09-part4.mp3",
+        "items": [
+          {
+            "n": "例如",
+            "zh": "男的在做什么？",
+            "transcript_zh": "女：晚饭做好了，准备吃饭了。 男：等一会儿，比赛还有三分钟就结束了。 女：快点儿吧，一起吃，菜冷了就不好吃了。 男：你先吃，我马上就看完了。 问：男的在做什么？",
+            "options": {
+              "A": "洗澡",
+              "B": "吃饭",
+              "C": "看电视"
+            },
+            "answer": "C",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                63
+              ]
+            }
+          },
+          {
+            "n": 16,
+            "zh": "关于这次比赛，可以知道什么？",
+            "options": {
+              "A": "每人最少讲3分钟",
+              "B": "只要回答一个问题",
+              "C": "没有问题"
+            },
+            "transcript_zh": "女：老师，上次比赛每个人要讲3分钟，这次呢？ 男：跟上次一样，参赛的同学每人最少讲3分钟。 女：还要回答老师的问题吗？ 男：对，三个老师每人问一个问题。你一定没问题，不用担心。 问：关于这次比赛，可以知道什么？",
+            "answer": "A",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                169
+              ]
+            }
+          },
+          {
+            "n": 17,
+            "zh": "男的姓什么？",
+            "options": {
+              "A": "周",
+              "B": "谢",
+              "C": "解"
+            },
+            "transcript_zh": "女：你好，我叫周月。你叫什么名字？ 男：我叫解东。 女：你姓什么？是“谢谢”的“谢”吗？ 男：不是，跟“了解”的“解”一样，但是做姓的时候读“解”。 问：男的姓什么？",
+            "answer": "C",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                169
+              ]
+            }
+          },
+          {
+            "n": 18,
+            "zh": "他们现在要去做什么？",
+            "options": {
+              "A": "买伞",
+              "B": "叫出租车",
+              "C": "找朋友"
+            },
+            "transcript_zh": "男：刚才是大晴天，现在怎么下雨了，还越下越大。 女：夏天天气变得快，我们坐出租车回家吧。 男：大家想得都跟你一样，你看，你叫得到车吗？ 女：那先去路边小商店买把伞吧。 问：他们现在要去做什么？",
+            "answer": "A",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                169
+              ]
+            }
+          },
+          {
+            "n": 19,
+            "zh": "关于这次爬山，可以知道什么？",
+            "options": {
+              "A": "山下下雪了",
+              "B": "山上有雪",
+              "C": "山路好走"
+            },
+            "transcript_zh": "男：你们去爬山了？怎么样？一定很累吧？ 女：越高的地方越冷，山路也越难走，但是特别漂亮。虽然已经是春天了，可是山上跟山下一点儿也不一样，还都是白的。 男：我越听越想去看看，下次你们也带我一起去吧。 女：好，下次去一定告诉你。 问：关于这次爬山，可以知道什么？",
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                169
+              ]
+            }
+          },
+          {
+            "n": 20,
+            "zh": "天气热的时候，女的喝什么？",
+            "options": {
+              "A": "喝热的",
+              "B": "不喝热的",
+              "C": "喝饮料"
+            },
+            "transcript_zh": "男：天气真热，我们喝点儿东西吧，给你饮料。 女：谢谢，我带了热茶。 男：夏天喝热茶，那不是越喝越热吗？ 女：中国人跟你们不太一样，天气越热，我们越想喝点儿热的，比较舒服。 问：天气热的时候，女的喝什么？",
+            "answer": "A",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                169
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "二、阅读 第一部分",
+        "type_zh": "阅读 第一部分",
+        "instruction_zh": "第21–25题：选择合适的问答",
+        "instruction_en": "Questions 21-25: Match the two parts of the same dialogue.",
+        "items": [
+          {
+            "n": "例如",
+            "zh": "你知道怎么去那儿吗？",
+            "options": {
+              "A": "快睡吧，明天还要上班呢。",
+              "B": "请给我一杯热咖啡，不要牛奶。你要喝什么？",
+              "C": "我太冷了，想快点儿回家。",
+              "D": "小方，你是南方人还是北方人？",
+              "E": "当然。我们先坐公共汽车，然后换地铁。",
+              "F": "我看你们家孩子很爱唱歌啊。"
+            },
+            "answer": "E",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                64
+              ]
+            }
+          },
+          {
+            "n": 21,
+            "zh": "跟你一样，也要咖啡，但是我要放一些牛奶。",
+            "options": {
+              "A": "快睡吧，明天还要上班呢。",
+              "B": "请给我一杯热咖啡，不要牛奶。你要喝什么？",
+              "C": "我太冷了，想快点儿回家。",
+              "D": "小方，你是南方人还是北方人？",
+              "E": "当然。我们先坐公共汽车，然后换地铁。",
+              "F": "我看你们家孩子很爱唱歌啊。"
+            },
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                169
+              ]
+            }
+          },
+          {
+            "n": 22,
+            "zh": "我跟您一样，都是从南方来的。",
+            "options": {
+              "A": "快睡吧，明天还要上班呢。",
+              "B": "请给我一杯热咖啡，不要牛奶。你要喝什么？",
+              "C": "我太冷了，想快点儿回家。",
+              "D": "小方，你是南方人还是北方人？",
+              "E": "当然。我们先坐公共汽车，然后换地铁。",
+              "F": "我看你们家孩子很爱唱歌啊。"
+            },
+            "answer": "D",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                169
+              ]
+            }
+          },
+          {
+            "n": 23,
+            "zh": "你怎么越走越快？等等我。",
+            "options": {
+              "A": "快睡吧，明天还要上班呢。",
+              "B": "请给我一杯热咖啡，不要牛奶。你要喝什么？",
+              "C": "我太冷了，想快点儿回家。",
+              "D": "小方，你是南方人还是北方人？",
+              "E": "当然。我们先坐公共汽车，然后换地铁。",
+              "F": "我看你们家孩子很爱唱歌啊。"
+            },
+            "answer": "C",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                169
+              ]
+            }
+          },
+          {
+            "n": 24,
+            "zh": "对，跟他爸爸一样，都对音乐感兴趣。",
+            "options": {
+              "A": "快睡吧，明天还要上班呢。",
+              "B": "请给我一杯热咖啡，不要牛奶。你要喝什么？",
+              "C": "我太冷了，想快点儿回家。",
+              "D": "小方，你是南方人还是北方人？",
+              "E": "当然。我们先坐公共汽车，然后换地铁。",
+              "F": "我看你们家孩子很爱唱歌啊。"
+            },
+            "answer": "F",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                169
+              ]
+            }
+          },
+          {
+            "n": 25,
+            "zh": "小月还没回来，我有点儿不放心，再等等，你先睡。",
+            "options": {
+              "A": "快睡吧，明天还要上班呢。",
+              "B": "请给我一杯热咖啡，不要牛奶。你要喝什么？",
+              "C": "我太冷了，想快点儿回家。",
+              "D": "小方，你是南方人还是北方人？",
+              "E": "当然。我们先坐公共汽车，然后换地铁。",
+              "F": "我看你们家孩子很爱唱歌啊。"
+            },
+            "answer": "A",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                169
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "二、阅读 第二部分",
+        "type_zh": "阅读 第二部分",
+        "instruction_zh": "第26–30题：选择合适的词语填空",
+        "instruction_en": "Questions 26-30: Choose the proper words to fill in the brackets.",
+        "word_bank": [
+          [
+            "A 班",
+            "B 中间",
+            "C 了解",
+            "D 一样",
+            "E 声音",
+            "F 比较"
+          ]
+        ],
+        "items": [
+          {
+            "n": "例如",
+            "zh": "她说话的（　）多好听啊！",
+            "options": {
+              "A": "班",
+              "B": "中间",
+              "C": "了解",
+              "D": "一样",
+              "E": "声音",
+              "F": "比较"
+            },
+            "answer": "E",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                64
+              ]
+            }
+          },
+          {
+            "n": 26,
+            "zh": "你看，这两个汉字是不是（　）的？",
+            "options": {
+              "A": "班",
+              "B": "中间",
+              "C": "了解",
+              "D": "一样",
+              "E": "声音",
+              "F": "比较"
+            },
+            "answer": "D",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                169
+              ]
+            }
+          },
+          {
+            "n": 27,
+            "zh": "站在（　）的人叫周明，他是我们公司的经理。",
+            "options": {
+              "A": "班",
+              "B": "中间",
+              "C": "了解",
+              "D": "一样",
+              "E": "声音",
+              "F": "比较"
+            },
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                169
+              ]
+            }
+          },
+          {
+            "n": 28,
+            "zh": "外边（　）冷，你多穿一件衣服吧。",
+            "options": {
+              "A": "班",
+              "B": "中间",
+              "C": "了解",
+              "D": "一样",
+              "E": "声音",
+              "F": "比较"
+            },
+            "answer": "F",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                169
+              ]
+            }
+          },
+          {
+            "n": 29,
+            "zh": "A：刚才那个人，你认识吗？ B：我知道他的名字，但是不（　）他。",
+            "options": {
+              "A": "班",
+              "B": "中间",
+              "C": "了解",
+              "D": "一样",
+              "E": "声音",
+              "F": "比较"
+            },
+            "answer": "C",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                169
+              ]
+            }
+          },
+          {
+            "n": 30,
+            "zh": "A：你们（　）有多少个学生？ B：以前是16个，昨天来了个新同学，现在是17个。",
+            "options": {
+              "A": "班",
+              "B": "中间",
+              "C": "了解",
+              "D": "一样",
+              "E": "声音",
+              "F": "比较"
+            },
+            "answer": "A",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                169
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "二、阅读 第三部分",
+        "type_zh": "阅读 第三部分",
+        "instruction_zh": "第31–35题：选择正确答案",
+        "instruction_en": "Questions 31-35: Choose the right answers.",
+        "items": [
+          {
+            "n": "例如",
+            "zh": "您是来参加今天会议的吗？您来早了一点儿，现在才八点半。您先进来坐吧。 ★会议最可能几点开始？",
+            "options": {
+              "A": "8点",
+              "B": "8点半",
+              "C": "9点"
+            },
+            "answer": "C",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                65
+              ]
+            }
+          },
+          {
+            "n": 31,
+            "zh": "跟哥哥一样，我也觉得对我影响最大的人是妈妈。从我们学说话、学走路时开始，妈妈每天跟我们在一起，最重要的是她告诉我们怎样做人——做一个好人。 ★妈妈：",
+            "options": {
+              "A": "是老师",
+              "B": "对我很重要",
+              "C": "跟哥哥一样"
+            },
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                169
+              ]
+            }
+          },
+          {
+            "n": 32,
+            "zh": "听到“你中文说得真好”“你真漂亮”时，外国人总是说“谢谢”。中国人跟外国人不一样，我们说“哪里哪里”，这不是在问“在哪儿”，是客气。 ★听到“你做的饭几乎跟饭馆一样”时，中国人可能做什么？",
+            "options": {
+              "A": "说“谢谢”",
+              "B": "不说话",
+              "C": "说“哪里哪里”"
+            },
+            "answer": "C",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                169
+              ]
+            }
+          },
+          {
+            "n": 33,
+            "zh": "我女儿和白先生的儿子在一个学校上学。他儿子跟我女儿一样，都上三年级，但是不同班。他家孩子在一班，我女儿在四班。课间十分钟，他们总是一起玩儿，跟同班同学一样。 ★白先生的儿子：",
+            "options": {
+              "A": "和我是同学",
+              "B": "和我女儿同班",
+              "C": "课间总和我女儿见面"
+            },
+            "answer": "C",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                169
+              ]
+            }
+          },
+          {
+            "n": 34,
+            "zh": "学汉语时要多听、多说。有人害怕说错，所以不爱说。其实越害怕越不想说，越不想说越说不好。说错了没关系，这次错了，下次一定不会再错。 ★学汉语时不能：",
+            "options": {
+              "A": "说错",
+              "B": "说不好",
+              "C": "怕说错"
+            },
+            "answer": "C",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                169
+              ]
+            }
+          },
+          {
+            "n": 35,
+            "zh": "小时候，我女儿说她爸爸不喜欢她，因为爸爸没说过“女儿，我爱你”，也不说她漂亮。现在，女儿跟以前不一样了，因为她了解：其实爸爸跟妈妈一样爱她，只是爸爸不说，都在心里。 ★现在，女儿：",
+            "options": {
+              "A": "不爱爸爸",
+              "B": "不了解爸爸",
+              "C": "知道爸爸很爱她"
+            },
+            "answer": "C",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                169
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "三、书写 第一部分",
+        "type_zh": "书写 第一部分",
+        "instruction_zh": "第36–40题：连词成句",
+        "instruction_en": "Questions 36-40: Rearrange the words/phrases to make sentences.",
+        "items": [
+          {
+            "n": "例如",
+            "zh": "小船　上　一　河　条　有",
+            "answer": "河上有一条小船。",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                66
+              ]
+            }
+          },
+          {
+            "n": 36,
+            "zh": "快　越　那辆车　开　越",
+            "answer": "那辆车越开越快。",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                169
+              ]
+            }
+          },
+          {
+            "n": 37,
+            "zh": "跟　我弟弟　妈妈　高　一样",
+            "answer": "我弟弟跟妈妈一样高。",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                169
+              ]
+            }
+          },
+          {
+            "n": 38,
+            "zh": "越　我和老同学　高兴　聊　越",
+            "answer": "我和老同学越聊越高兴。",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                169
+              ]
+            }
+          },
+          {
+            "n": 39,
+            "zh": "新鲜　苹果　西瓜　跟　一样",
+            "answer": "苹果跟西瓜一样新鲜。",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                169
+              ]
+            }
+          },
+          {
+            "n": 40,
+            "zh": "吃甜的　越　越　你　身体　胖",
+            "answer": "你越吃甜的身体越胖。",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                169
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "三、书写 第二部分",
+        "type_zh": "书写 第二部分",
+        "instruction_zh": "第41–45题：看拼音，写汉字",
+        "instruction_en": "Questions 41-45: Write the characters based on their pinyin.",
+        "items": [
+          {
+            "n": "例如",
+            "zh": "没（　）系，别难过，高兴点儿。",
+            "hint_zh": "guān",
+            "answer": "关",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                66
+              ]
+            }
+          },
+          {
+            "n": 41,
+            "zh": "妈，给你介绍一下，这是我们（　）同学白乐。",
+            "hint_zh": "bān",
+            "answer": "班",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                169
+              ]
+            }
+          },
+          {
+            "n": 42,
+            "zh": "这么小的孩子一个人在家，我能不（　）心吗？",
+            "hint_zh": "dān",
+            "answer": "担",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                169
+              ]
+            }
+          },
+          {
+            "n": 43,
+            "zh": "这个地方环境比（　）安静，没有那么多车。",
+            "hint_zh": "jiào",
+            "answer": "较",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                169
+              ]
+            }
+          },
+          {
+            "n": 44,
+            "zh": "其实，我只跟这个人见过一两次面，一点儿也不了（　）她。",
+            "hint_zh": "jiě",
+            "answer": "解",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                169
+              ]
+            }
+          },
+          {
+            "n": 45,
+            "zh": "我（　）加过三次比赛，拿了两次第一，一次第二。",
+            "hint_zh": "cān",
+            "answer": "参",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                169
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "三、书写 第三部分",
+        "type_zh": "书写 第三部分",
+        "instruction_zh": "第46–50题：辨认汉字，选择正确的汉字填空",
+        "instruction_en": "Questions 46-50: Distinguish the characters and fill in the blanks.",
+        "items": [
+          {
+            "n": "例如",
+            "zh": "我不知道________个地方在________儿。",
+            "hint_zh": "（那、哪）",
+            "answer": "那、哪",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                67
+              ]
+            }
+          },
+          {
+            "n": 46,
+            "zh": "别________心，虽然题很多，________是我一定能做完。",
+            "hint_zh": "（但、担）",
+            "answer": "担、但",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                169
+              ]
+            }
+          },
+          {
+            "n": 47,
+            "zh": "这个学________的汉语老师比________好，我们在这儿学吧。",
+            "hint_zh": "（校、较）",
+            "answer": "校、较",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                169
+              ]
+            }
+          },
+          {
+            "n": 48,
+            "zh": "请________，这儿有人吗？我能坐在你们中________吗？",
+            "hint_zh": "（问、间）",
+            "answer": "问、间",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                169
+              ]
+            }
+          },
+          {
+            "n": 49,
+            "zh": "我去问问我________夫吧，他学过中________，能看懂这个。",
+            "hint_zh": "（文、丈）",
+            "answer": "丈、文",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                169
+              ]
+            }
+          },
+          {
+            "n": 50,
+            "zh": "给我买杯________啡吧，一会儿我要参________一个面试。",
+            "hint_zh": "（加、咖）",
+            "answer": "咖、加",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                169
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "三、书写 第四部分",
+        "type_zh": "书写 第四部分",
+        "instruction_zh": "第51–54题：用下边的汉字组词",
+        "instruction_en": "Questions 51-54: Make words using the following characters.",
+        "items": [
+          {
+            "n": "例如",
+            "zh": "找________、________",
+            "answer": "找人、找到",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                67
+              ]
+            }
+          },
+          {
+            "n": 51,
+            "zh": "住________、________",
+            "answer": "住在、住房",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                169
+              ]
+            }
+          },
+          {
+            "n": 52,
+            "zh": "请________、________",
+            "answer": "请坐、请问",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                169
+              ]
+            }
+          },
+          {
+            "n": 53,
+            "zh": "放________、________",
+            "answer": "放学、放心",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                169
+              ]
+            }
+          },
+          {
+            "n": 54,
+            "zh": "歌________、________",
+            "answer": "唱歌、老歌",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                169
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "四、复习",
+        "type_zh": "复习",
+        "instruction_zh": "第1–2题：根据课文内容填空",
+        "instruction_en": "Questions 1-2: Fill in the blanks based on the texts in the textbook.",
+        "items": [
+          {
+            "n": 1,
+            "zh": "大山觉得马可的汉语________了，但是马可觉得他们________李静的汉语更好，说得________中国人________。大山没听说过李静这个名字，其实，李静是马可的________老师。",
+            "answer": "越说越好、班、跟、一样好、汉语",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                169
+              ]
+            }
+          },
+          {
+            "n": 2,
+            "zh": "小丽爬山的时候有点儿害怕，因为山越高，路越难走，她________。小刚对这儿比较________，他让小丽别________。他们现在________休息一下，一会儿从________那条路上去。",
+            "answer": "越爬越冷、了解、担心、先、中间",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                169
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "audio": {
+    "textbook": [
+      "hsk3-textbook-0901.mp3",
+      "hsk3-textbook-0902.mp3",
+      "hsk3-textbook-0903.mp3",
+      "hsk3-textbook-0904.mp3",
+      "hsk3-textbook-0905.mp3"
+    ],
+    "workbook": [
+      "hsk3-workbook-09-part1.mp3",
+      "hsk3-workbook-09-part2.mp3",
+      "hsk3-workbook-09-part3.mp3",
+      "hsk3-workbook-09-part4.mp3"
+    ]
+  },
+  "unclear": [
+    "Сурах бичиг PDF х.89 课文2: хятад бичвэр «这是最后一块。» (儿-гүй), харин 拼音课文 (PDF х.90) «Zhè shì zuìhòu yíkuàir.» (儿-тэй) — хоёуланг номд байгаагаар нь үлдээсэн.",
+    "Багшийн ном PDF х.67 课文1 асуулт-хариулт: «王静» гэж 3 удаа хэвлэсэн (马可觉得谁的汉语好？——他觉得王静说得更好。／王静的中文怎么好？／王静是谁？), харин сурах бичиг, дасгалын ном (复习1) «李静». Мөн «是马可的中文老师» ↔ бичвэр «她是我们的汉语老师». Номд байгаагаар teacher.steps/text_questions-д.",
+    "Багшийн ном PDF х.68 课文4 асуулт «为什么——因为他这几天脚疼，没休息好。» — «为什么»-ийн ард асуултын тэмдэг хэвлэгдээгүй; номд байгаагаар.",
+    "Багшийн ном PDF х.68 课文3 提示词 «别担心» — бичвэрт «不用担心»; багшийн номын асуулт «从中间那条路上去» — бичвэрт «从中间这条路上去». Номд байгаагаар.",
+    "Багшийн ном PDF х.70 本课小结 «汉　字：形声词（左右结构）» — сурах бичиг, багшийн номын 汉字 хэсэгт «形声字»; номд байгаагаар.",
+    "Сурах бичиг PDF х.91 注释1 жишээ (2) «你的中文越说越好。» — 课文1-д «你的中文越说越好了！»; номд байгаагаар.",
+    "Сурах бичиг PDF х.89 生词 13 影响 «n. influence» гэж тэмдэглэсэн, харин 练习1 «他影响了我»、练习2⑤ «别________了学习»、练习3 «是哥哥影响了我» зэрэгт үйл үгээр хэрэглэгдэнэ — номд байгаагаар pos «n.».",
+    "Сурах бичиг PDF х.94 汉字知识 хүснэгтийн англи гарчиг «Pronounciation» (Pronunciation биш) — номд байгаагаар knowledge_en-д.",
+    "Сурах бичиг PDF х.96 俗语-ийн англи тайлбарт «“三人行必有我师”» (таслалгүй), хятад гарчиг «三人行，必有我师» — номд байгаагаар.",
+    "Сурах бичиг PDF х.88 热身1 ② 颜色 — зураг дээрх хоёр машин хоёулаа хар өнгөтэй харагдана (доод нь бага зэрэг улаавтар туяатай), харин багшийн номын зорилтот өгүүлбэр «第一辆汽车的颜色跟第二辆不一样。» (PDF х.66). Зургийн тайлбарт өнгө өөр гэж батлаагүй.",
+    "Сурах бичгийн 拼音课文-ын гарчгийн пиньинь (Zài jiàoshì / Zài dàngāo diàn / Zài shān shang / Zài Xiǎomíng jiā) болон ярилцагчийн нэрийн пиньинь (Dàshān, Mǎkě, Xiǎolì, Xiǎogāng, tóngxué, Xiǎomíng) схемд талбаргүй тул lines.pinyin-д зөвхөн яриаг оруулсан.",
+    "Сурах бичгийн 汉字知识 хүснэгт (汉字/发音/声旁/形旁) — knowledge_zh-д мөр мөрөөр, characters[]-д ханз бүрийн声旁/形旁-ийг note_zh-д «左形右声／右形左声：声旁…，形旁…» хэлбэрээр (хүснэгтийн баганыг нэгтгэсэн).",
+    "Сурах бичгийн 热身 1–2, 练一练 (2 дүрэм × 3), 练习2 选词填空 / 练习3 描述图片 / 练习4 回答问题 болон 运用 — хариулт сурах бичиг, багшийн номд хэвлэгдээгүй тул answer талбаргүй (жишээ нь 练习4② «小刚一共吃了几块蛋糕？» — номд хариулт байхгүй). Багшийн номын 课文 асуулт-хариулт (teacher.text_questions) нь 练习4-ийн асуултаас өөр асуултууд.",
+    "Багшийн номын 热身 хэсэгт хариулт хэвлэгдээгүй — 热身1/2-ыг语言点 оруулахад ашиглах заавар ба зорилтот өгүүлбэрүүдийг warmup_answers_zh-д (PDF х.64–66).",
+    "Багшийн номын 汉字辨认练习 (担/但 · 较/校 · 间/问 · 文/丈 · 加/咖 — 组词) хоосон зайтай, хариулт хэвлэгдээгүй. Номд хоёр баганаар хэвлэсэн; teacher.steps-д мөр болгон бичсэн.",
+    "Дасгалын ном 51–54 (用下边的汉字组词)-ийн хариулт багшийн номын хавсралтын «参考答案» (PDF х.169) — жишиг хариулт; өөр зөв үг байж болно.",
+    "Дасгалын ном 听力 17: «但是做姓的时候读“解”» — 解-ийн овог болох үеийн дуудлагын пиньинь номд өгөгдөөгүй.",
+    "Дасгалын номын сонсгол нэг CD тэмдэгтэй (09) — аудиог hsk3-workbook-09-part1…4.mp3 болгож хэсэг тус бүрт хуваасныг section.audio-д оноосон.",
+    "Дасгалын ном 听力 第三/四部分 — номд зөвхөн сонголтууд хэвлэгдсэн; item.zh-д багшийн номын хавсралтын «问：» асуултыг оруулсан (transcript_zh-д бүтнээр). Сонсголын бичвэр PDF х.167–169, хариулт PDF х.169.",
+    "Сурах бичгийн 练习3 ба 热身 болон дасгалын номын 听力 第一部分-ийн зургийн тайлбар (picture_desc_en / pictures_desc_en / [picture]) — номд текст байхгүй тул зургаас товч, объектив дүрсэлсэн.",
+    "Багшийн ном PDF х.65–66 语言点-ийн хүрээтэй томьёонуудыг (越＋动词＋越＋形容词 ／ A＋跟＋B＋一样／不一样(＋形容词)) teacher.steps-д «［框］» гэж тэмдэглэсэн.",
+    "HSK 3.0 нэмэлт үгс (BLCUP 课件 补充HSK3.0, слайд 5, 16, 25) hsk30-д."
+  ],
+  "verified_pages": [
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
     88,
     89,
     90,
@@ -17,2053 +2061,97 @@
     93,
     94,
     95,
-    96
-   ]
-  },
-  "warmup": [
-   {
-    "instruction_zh": "看图片，根据提示词说说图片中的情况是不是一样",
-    "instruction_en": "Look at the pictures and talk about if the things given are the same in each picture.",
-    "items": [
-     "①衣服 yīfu",
-     "②颜色 yánsè",
-     "③房子 fángzi",
-     "④天气 tiānqì",
-     "⑤杯子 bēizi",
-     "⑥胖瘦 pàngshòu"
-    ],
-    "pictures_desc_en": [
-     "①: two young girls (twins) in matching white floral jackets standing side by side",
-     "②: two black cars of the same model, one above the other (the lower one with a faint reddish tint)",
-     "③: a row of similar red-brick houses along a street",
-     "④: a man in a red shirt standing at a fork in the road under a signpost reading “Right Decision / Wrong Decision”; stormy sky with lightning on the left, sunshine on the right",
-     "⑤: two identical champagne glasses, each wearing a bow tie",
-     "⑥: two men in yellow shirts and caps on a golf course, one thin and one fat"
-    ]
-   },
-   {
-    "instruction_zh": "根据实际情况回答问题",
-    "instruction_en": "Answer the questions according to the actual situations.",
-    "items": [
-     "情况 | 怎么样",
-     "我现在吃得 Wǒ xiànzài chī de | 越来越多 yuè lái yuè duō",
-     "我汉语说得 Wǒ Hànyǔ shuō de |",
-     "我觉得语法 Wǒ juéde yǔfǎ |",
-     "我做的饭 Wǒ zuò de fàn |",
-     "我跑步跑得 Wǒ pǎo bù pǎo de |",
-     "我打篮球打得 Wǒ dǎ lánqiú dǎ de |"
-    ]
-   }
-  ],
-  "texts": [
-   {
-    "n": 1,
-    "title_zh": "在教室",
-    "title_en": "In the classroom",
-    "kind": "dialogue",
-    "audio": "hsk3-textbook-0901.mp3",
-    "lines": [
-     {
-      "speaker": "大山",
-      "zh": "马可，你的中文越说越好了！",
-      "pinyin": "Mǎkě, nǐ de Zhōngwén yuè shuō yuè hǎo le!"
-     },
-     {
-      "speaker": "马可",
-      "zh": "哪里哪里，我们班李静说得更好。",
-      "pinyin": "Nǎli nǎli, wǒmen bān Lǐ Jìng shuō de gèng hǎo."
-     },
-     {
-      "speaker": "大山",
-      "zh": "怎么好？",
-      "pinyin": "Zěnme hǎo?"
-     },
-     {
-      "speaker": "马可",
-      "zh": "她的汉语说得跟中国人一样好。",
-      "pinyin": "Tā de Hànyǔ shuō de gēn Zhōngguórén yíyàng hǎo."
-     },
-     {
-      "speaker": "大山",
-      "zh": "李静？我怎么没听说过这个名字？",
-      "pinyin": "Lǐ Jìng? Wǒ zěnme méi tīngshuōguo zhège míngzi?"
-     },
-     {
-      "speaker": "马可",
-      "zh": "她是我们的汉语老师。",
-      "pinyin": "Tā shì wǒmen de Hànyǔ lǎoshī."
-     }
-    ],
-    "new_words": [
-     {
-      "n": 1,
-      "zh": "中文",
-      "pinyin": "Zhōngwén",
-      "pos": "n.",
-      "en": "Chinese language",
-      "text": 1
-     },
-     {
-      "n": 2,
-      "zh": "班",
-      "pinyin": "bān",
-      "pos": "n.",
-      "en": "class",
-      "text": 1
-     },
-     {
-      "n": 3,
-      "zh": "一样",
-      "pinyin": "yíyàng",
-      "pos": "adj.",
-      "en": "same, as…as…",
-      "text": 1
-     }
-    ],
-    "proper_nouns": [
-     {
-      "zh": "大山",
-      "pinyin": "Dàshān",
-      "en": "Dashan, name of a person"
-     },
-     {
-      "zh": "李静",
-      "pinyin": "Lǐ Jìng",
-      "en": "Li Jing, name of a person"
-     }
-    ]
-   },
-   {
-    "n": 2,
-    "title_zh": "在蛋糕店",
-    "title_en": "In a bakery",
-    "kind": "dialogue",
-    "audio": "hsk3-textbook-0902.mp3",
-    "lines": [
-     {
-      "speaker": "小丽",
-      "zh": "别吃了，你已经吃了三块蛋糕了。",
-      "pinyin": "Bié chī le, nǐ yǐjīng chīle sān kuài dàngāo le."
-     },
-     {
-      "speaker": "小刚",
-      "zh": "这是最后一块。",
-      "pinyin": "Zhè shì zuìhòu yíkuàir."
-     },
-     {
-      "speaker": "小丽",
-      "zh": "你总是吃甜的东西，会越吃越胖。",
-      "pinyin": "Nǐ zǒngshì chī tián de dōngxi, huì yuè chī yuè pàng."
-     },
-     {
-      "speaker": "小刚",
-      "zh": "你放心，我一定不会变胖。",
-      "pinyin": "Nǐ fàng xīn, wǒ yídìng bú huì biàn pàng."
-     },
-     {
-      "speaker": "小丽",
-      "zh": "为什么？",
-      "pinyin": "Wèi shénme?"
-     },
-     {
-      "speaker": "小刚",
-      "zh": "我们家的人都很瘦，吃不胖。",
-      "pinyin": "Wǒmen jiā de rén dōu hěn shòu, chī bú pàng."
-     }
-    ],
-    "new_words": [
-     {
-      "n": 4,
-      "zh": "最后",
-      "pinyin": "zuìhòu",
-      "pos": "n.",
-      "en": "the last one",
-      "text": 2
-     },
-     {
-      "n": 5,
-      "zh": "放心",
-      "pinyin": "fàng xīn",
-      "pos": "v.",
-      "en": "to ease one’s mind, to rest assured",
-      "text": 2
-     },
-     {
-      "n": 6,
-      "zh": "一定",
-      "pinyin": "yídìng",
-      "pos": "adv.",
-      "en": "definitely, certainly",
-      "text": 2
-     }
-    ]
-   },
-   {
-    "n": 3,
-    "title_zh": "在山上",
-    "title_en": "On the mountain",
-    "kind": "dialogue",
-    "audio": "hsk3-textbook-0903.mp3",
-    "lines": [
-     {
-      "speaker": "小丽",
-      "zh": "我有点儿害怕。",
-      "pinyin": "Wǒ yǒudiǎnr hàipà."
-     },
-     {
-      "speaker": "小刚",
-      "zh": "怎么了？",
-      "pinyin": "Zěnme le?"
-     },
-     {
-      "speaker": "小丽",
-      "zh": "山越高，路越难走。我也越爬越冷。",
-      "pinyin": "Shān yuè gāo, lù yuè nán zǒu. Wǒ yě yuè pá yuè lěng."
-     },
-     {
-      "speaker": "小刚",
-      "zh": "不用担心，有我呢，我对这儿比较了解。",
-      "pinyin": "Bú yòng dān xīn, yǒu wǒ ne, wǒ duì zhèr bǐjiào liǎojiě."
-     },
-     {
-      "speaker": "小丽",
-      "zh": "那我们先休息一下，一会儿再爬。",
-      "pinyin": "Nà wǒmen xiān xiūxi yíxià, yíhuìr zài pá."
-     },
-     {
-      "speaker": "小刚",
-      "zh": "好，一会儿我们可以从中间这条路上去。",
-      "pinyin": "Hǎo, yíhuìr wǒmen kěyǐ cóng zhōngjiān zhè tiáo lù shàngqu."
-     }
-    ],
-    "new_words": [
-     {
-      "n": 7,
-      "zh": "担心",
-      "pinyin": "dān xīn",
-      "pos": "v.",
-      "en": "to worry",
-      "text": 3
-     },
-     {
-      "n": 8,
-      "zh": "比较",
-      "pinyin": "bǐjiào",
-      "pos": "adv.",
-      "en": "fairly, rather",
-      "text": 3
-     },
-     {
-      "n": 9,
-      "zh": "了解",
-      "pinyin": "liǎojiě",
-      "pos": "v.",
-      "en": "to know",
-      "text": 3
-     },
-     {
-      "n": 10,
-      "zh": "先",
-      "pinyin": "xiān",
-      "pos": "adv.",
-      "en": "first, in advance",
-      "text": 3
-     },
-     {
-      "n": 11,
-      "zh": "中间",
-      "pinyin": "zhōngjiān",
-      "pos": "n.",
-      "en": "middle",
-      "text": 3
-     }
-    ]
-   },
-   {
-    "n": 4,
-    "title_zh": "在小明家",
-    "title_en": "At Xiaoming’s home",
-    "kind": "dialogue",
-    "audio": "hsk3-textbook-0904.mp3",
-    "lines": [
-     {
-      "speaker": "同学",
-      "zh": "小明，你的眼睛怎么跟大熊猫一样了？",
-      "pinyin": "Xiǎomíng, nǐ de yǎnjing zěnme gēn dà xióngmāo yíyàng le?"
-     },
-     {
-      "speaker": "小明",
-      "zh": "我这几天脚疼，没休息好。",
-      "pinyin": "Wǒ zhè jǐ tiān jiǎo téng, méi xiūxi hǎo."
-     },
-     {
-      "speaker": "同学",
-      "zh": "去医院了吗？医生说什么？",
-      "pinyin": "Qù yīyuàn le ma? Yīshēng shuō shénme?"
-     },
-     {
-      "speaker": "小明",
-      "zh": "他让我多休息。休息得越多，好得越快。",
-      "pinyin": "Tā ràng wǒ duō xiūxi. Xiūxi de yuè duō, hǎo de yuè kuài."
-     },
-     {
-      "speaker": "同学",
-      "zh": "下个月的篮球比赛，你能参加吗？",
-      "pinyin": "Xià ge yuè de lánqiú bǐsài, nǐ néng cānjiā ma?"
-     },
-     {
-      "speaker": "小明",
-      "zh": "一定能参加，一点儿影响也没有。",
-      "pinyin": "Yídìng néng cānjiā, yìdiǎnr yǐngxiǎng yě méiyǒu."
-     }
-    ],
-    "new_words": [
-     {
-      "n": 12,
-      "zh": "参加",
-      "pinyin": "cānjiā",
-      "pos": "v.",
-      "en": "to participate",
-      "text": 4
-     },
-     {
-      "n": 13,
-      "zh": "影响",
-      "pinyin": "yǐngxiǎng",
-      "pos": "n.",
-      "en": "influence",
-      "text": 4
-     }
-    ]
-   }
-  ],
-  "grammar": [
-   {
-    "n": 1,
-    "title_zh": "越A越B",
-    "title_en": "The Structure “越A越B”",
-    "explanation_zh": "“越A越B”表示B随着A的变化而变化，例如：",
-    "explanation_en": "“越A越B” (the more A, the more B) means B changes with A. For example:",
-    "examples": [
-     {
-      "n": 1,
-      "zh": "雨越下越大。"
-     },
-     {
-      "n": 2,
-      "zh": "你的中文越说越好。"
-     },
-     {
-      "n": 3,
-      "zh": "越往南，天气越热。"
-     },
-     {
-      "n": 4,
-      "zh": "山越高，路越难走。"
-     }
-    ],
-    "practice_instruction_zh": "练一练　完成句子 Complete the sentences.",
-    "practice": [
-     {
-      "n": 1,
-      "zh": "这个电影越看________。"
-     },
-     {
-      "n": 2,
-      "zh": "我们越聊________。"
-     },
-     {
-      "n": 3,
-      "zh": "她________，我越担心。"
-     }
-    ]
-   },
-   {
-    "n": 2,
-    "title_zh": "比较句1：A跟B一样（+Adj）",
-    "title_en": "Comparative Sentences 1: A跟B一样 (+ Adj)",
-    "explanation_zh": "“A跟B一样”表示A和B两者相比较，结果相同。后边可以用形容词表示比较的某一方面，如“一样大”表示大小相同。否定式是在“一样”的前边加“不”。例如：",
-    "explanation_en": "“A跟B一样” means A and B are the same after comparison. The structure can take an adjective to indicate the aspect being compared, for example, “一样大” means “the same in size”. In the negative form, “不” is added before “一样”. For example:",
-    "examples": [
-     {
-      "n": 1,
-      "zh": "这本书跟那本书一样。"
-     },
-     {
-      "n": 2,
-      "zh": "儿子跟爸爸一样高。"
-     },
-     {
-      "n": 3,
-      "zh": "这辆车的颜色跟那辆车不一样。"
-     },
-     {
-      "n": 4,
-      "zh": "她的汉语说得跟中国人一样好。"
-     }
-    ],
-    "practice_instruction_zh": "练一练　完成句子 Complete the sentences.",
-    "practice": [
-     {
-      "n": 1,
-      "zh": "我的杯子________。"
-     },
-     {
-      "n": 2,
-      "zh": "今天的生词________。"
-     },
-     {
-      "n": 3,
-      "zh": "________一样聪明。"
-     }
-    ]
-   }
-  ],
-  "exercises": [
-   {
-    "n": 1,
-    "type_zh": "朗读",
-    "instruction_zh": "朗读下列短语和句子",
-    "instruction_en": "Read the following phrases and sentences aloud.",
-    "audio": "hsk3-textbook-0905.mp3",
-    "items": [
-     {
-      "n": 1,
-      "zh": "一样：不一样／一样好／这两件衣服一样／她的汉语说得跟中国人一样好。"
-     },
-     {
-      "n": 2,
-      "zh": "一定：一定来／不一定／这次我不一定能考好／我一定不会变胖。"
-     },
-     {
-      "n": 3,
-      "zh": "了解：比较了解／不了解／我很了解他／我对这儿比较了解。"
-     },
-     {
-      "n": 4,
-      "zh": "参加：参加比赛／参加考试／不想参加／你能参加吗？"
-     },
-     {
-      "n": 5,
-      "zh": "影响：没有影响／影响很大／他影响了我／一点儿影响也没有。"
-     }
-    ]
-   },
-   {
-    "n": 2,
-    "type_zh": "选词填空",
-    "instruction_zh": "选择恰当的词语填空",
-    "instruction_en": "Choose the proper words to fill in the blanks.",
-    "word_bank": [
-     [
-      "参加",
-      "班",
-      "担心",
-      "影响",
-      "比较"
-     ],
-     [
-      "放心",
-      "最后",
-      "先",
-      "中间",
-      "了解"
-     ]
-    ],
-    "items": [
-     {
-      "n": 1,
-      "zh": "你在哪个________学习汉语？"
-     },
-     {
-      "n": 2,
-      "zh": "别________，他马上就到家了。"
-     },
-     {
-      "n": 3,
-      "zh": "这件事________难，你再给我几天时间。"
-     },
-     {
-      "n": 4,
-      "zh": "你想不想去________爬山比赛？"
-     },
-     {
-      "n": 5,
-      "zh": "少玩儿一会儿电子游戏吧，别________了学习。"
-     },
-     {
-      "n": 6,
-      "zh": "A：你怎么又迟到了？ B：对不起，这是________一次，以后一定不迟到了。"
-     },
-     {
-      "n": 7,
-      "zh": "A：你吃这么多，会越来越胖。 B：________，我每天都运动。"
-     },
-     {
-      "n": 8,
-      "zh": "A：你怎么知道她会来？ B：我很________她，她每天都在这儿吃饭。"
-     },
-     {
-      "n": 9,
-      "zh": "A：你想要哪本书？ B：________的那本。"
-     },
-     {
-      "n": 10,
-      "zh": "A：下午你打算做什么？ B：我想________去超市买点儿东西。"
-     }
-    ]
-   },
-   {
-    "n": 3,
-    "type_zh": "描述图片",
-    "instruction_zh": "用本课新学的语言点和词语描述图片",
-    "instruction_en": "Describe the pictures using the newly-learned language points and words.",
-    "items": [
-     {
-      "n": 1,
-      "zh": "A：你给我的那本书我看完了。 B：你觉得怎么样？ A：很有意思，我越________。 B：我跟你________，也非常喜欢。",
-      "picture_desc_en": "A young man with a backpack and a young woman holding a blue folder, looking at a book together."
-     },
-     {
-      "n": 2,
-      "zh": "A：你________什么比赛？ B：篮球比赛。你呢？ A：我跟________，也对打篮球感兴趣。 B：对，我觉得打篮球越打越________。",
-      "picture_desc_en": "Two young men playing basketball on an outdoor court."
-     },
-     {
-      "n": 3,
-      "zh": "A：我很________这次的汉字考试。 B：你多练习写，越________。 A：你的汉字一直很好，这次考试一定没问题。 B：我跟________，我更担心语法。",
-      "picture_desc_en": "Students sitting in rows of desks, writing an exam in a classroom."
-     },
-     {
-      "n": 4,
-      "zh": "A：我最近变胖了，你几乎没变化，跟以前________。 B：是哥哥影响了我，每天跟他一起跑步，越跑________。 A：那我也开始跑步吧。 B：好，一定能变瘦。",
-      "picture_desc_en": "A man and a woman in sportswear jogging together along a riverside promenade, with city buildings behind."
-     }
-    ]
-   },
-   {
-    "n": 4,
-    "type_zh": "回答问题",
-    "instruction_zh": "根据课文回答问题",
-    "instruction_en": "Answer the questions according to the texts.",
-    "items": [
-     {
-      "n": 1,
-      "zh": "李静的汉语说得怎么样？为什么？"
-     },
-     {
-      "n": 2,
-      "zh": "小刚一共吃了几块蛋糕？"
-     },
-     {
-      "n": 3,
-      "zh": "小丽觉得小刚会越来越胖吗？为什么？"
-     },
-     {
-      "n": 4,
-      "zh": "小丽为什么害怕了？小刚害怕吗？"
-     },
-     {
-      "n": 5,
-      "zh": "小明怎么了？"
-     },
-     {
-      "n": 6,
-      "zh": "小明能参加篮球比赛吗？为什么？"
-     }
-    ]
-   }
-  ],
-  "characters": {
-   "knowledge_title_zh": "形声字1",
-   "knowledge_zh": "现代汉语中，70%左右的汉字都是形声字。形声字由形旁和声旁两部分组成。形旁提示汉字的意思，声旁提示汉字的发音。\n左右结构的形声字包括两种，一种是“左形右声”，即形旁在左边，声旁在右边，例如：\n汉字 | 发音 | 声旁 | 形旁\n妈 | mā | 马（mǎ） | 女\n住 | zhù | 主（zhǔ） | 亻\n另一种是“右形左声”，即形旁在右边，声旁在左边，例如：\n汉字 | 发音 | 声旁 | 形旁\n放 | fàng | 方（fāng） | 攵\n邻 | lín | 令（lìng） | 阝\n\n旧字新词：读读下面的词语，想想组成的新词是什么意思。",
-   "knowledge_en": "Pictophonetic Characters 1. Around 70% of Chinese characters are pictophonetic ones, which are composed of two components, one indicating meaning and the other sound.\nThe pictophonetic characters of a left-right structure fall into two types. One has the semantic component on the left and the phonetic component on the right. For example:\nCharacter | Pronounciation | Phonetic Component | Semantic Component\nThe other has the semantic component on the right and the phonetic component on the left. For example:\n\nWord Game: Read the following words and guess the meanings of the newly-formed ones.",
-   "characters": [
-    {
-     "zh": "妈",
-     "pinyin": "mā",
-     "note_zh": "左形右声：声旁 马（mǎ），形旁 女"
-    },
-    {
-     "zh": "住",
-     "pinyin": "zhù",
-     "note_zh": "左形右声：声旁 主（zhǔ），形旁 亻"
-    },
-    {
-     "zh": "放",
-     "pinyin": "fàng",
-     "note_zh": "右形左声：声旁 方（fāng），形旁 攵"
-    },
-    {
-     "zh": "邻",
-     "pinyin": "lín",
-     "note_zh": "右形左声：声旁 令（lìng），形旁 阝"
-    }
-   ],
-   "word_game": [
-    {
-     "parts": [
-      "上课",
-      "中间"
-     ],
-     "result": "课间"
-    },
-    {
-     "parts": [
-      "爬山",
-      "路上"
-     ],
-     "result": "山路"
-    },
-    {
-     "parts": [
-      "参加",
-      "比赛"
-     ],
-     "result": "参赛"
-    }
-   ],
-   "confusable_pairs": [
-    [
-     "担",
-     "但"
-    ],
-    [
-     "间",
-     "问"
-    ],
-    [
-     "加",
-     "咖"
-    ],
-    [
-     "较",
-     "校"
-    ],
-    [
-     "文",
-     "丈"
-    ]
-   ]
-  },
-  "application": [
-   {
-    "title_zh": "双人活动",
-    "instruction_zh": "两人一组，说说下边的做法好不好，并说明理由。请使用“越A越B”。",
-    "instruction_en": "Work in pairs. Discuss whether the following behaviours are good or not, and explain the reasons using “越A越B”.",
-    "example_zh": [
-     "表格：做法 | 好不好 | 为什么",
-     "很晚睡觉。 | 不好。 | 越晚睡觉，身体越不好。",
-     "很晚回家。 | |",
-     "每天锻炼身体。 | |",
-     "总是帮助同学。 | |",
-     "吃很多水果。 | |",
-     "用中文跟朋友聊天儿。 | |"
-    ]
-   },
-   {
-    "title_zh": "小组活动",
-    "instruction_zh": "3～4人一组，问问别人的实际情况，然后说说自己跟他们一样不一样。",
-    "instruction_en": "Work in groups of 3-4. Ask about others’ situations and talk about whether you are the same as them or not.",
-    "example_zh": [
-     "表格：问题 | 他的情况 | 我跟他（不）一样 | 我的情况",
-     "几点起床？ | 他7:00起床 | 我跟他不一样 | 我8:00起床",
-     "早上吃什么？ | | |",
-     "中午去哪儿吃饭？ | | |",
-     "怎么锻炼身体？ | | |",
-     "对什么感兴趣？ | | |",
-     "每天复习多长时间？ | | |"
-    ]
-   }
-  ],
-  "saying": {
-   "zh": "三人行，必有我师",
-   "pinyin": "Sān rén xíng, bì yǒu wǒ shī",
-   "en": "When I walk with two others, there must be one whom I can learn from",
-   "explanation_zh": "“三人行，必有我师”的意思是三个人一起走路，里边一定有一个人可以做我的老师。这句话用来比喻别人身上可能有我们没有的优点，我们要学习别人身上的优点。",
-   "explanation_en": "“三人行必有我师” means “When I walk with two others, there must be one whom I can learn from”. In the metaphorical sense, it means everybody may have some merits that we lack, so we should learn from others."
-  }
- },
- "teacher": {
-  "ref": {
-   "book": "teacher",
-   "pages": [
-    64,
-    65,
-    66,
-    67,
-    68,
-    69,
-    70
-   ]
-  },
-  "objectives_zh": [
-   "重点词语：学生能够熟练掌握：“担心、比较、了解、参加、影响”的词义和用法",
-   "语言点：学生能够了解并掌握：（1）“越A越B”表示B随着A的变化而变化（2）比较句1：A跟B一样（＋形容词）表示A和B相比结果一样",
-   "汉字：学生能够：（1）了解形声字的造字方法以及左右结构形声字（2）根据已学生词猜测出3个旧字新词“课间、山路、参赛”的意思",
-   "功能：学生能够：（1）用“越A越B”表达伴随的变化（2）用“A和B一样（＋形容词）”表达比较"
-  ],
-  "steps": [
-   {
-    "title_zh": "复习旧课",
-    "body_zh": "1 教师展示第8课的热身图片，请学生根据图片说出生词。\n2 教师根据第8课的内容进行提问。\n（1）以后你打算在什么地方工作？\n（2）旅游的时候你买哪家公司的飞机票？\n（3）今天我请你吃晚饭，你想去哪儿吃？\n（4）你打算送给朋友什么样的生日礼物？\n（5）什么地方你非常喜欢？你去过几次？是什么时候去的？"
-   },
-   {
-    "title_zh": "学习新课 1 热身",
-    "body_zh": "热身1：可留至语言点（2）“比较句1：A跟B一样（＋形容词）”导入时使用。\n热身2：可留至语言点（1）“越A越B”导入时使用。"
-   },
-   {
-    "title_zh": "2 生词",
-    "body_zh": "（1）生词快速认读及正音\n中文、班、一样、最后、放心、一定、担心、比较、了解、先、中间、参加、影响\n· 教师先带领学生快速认读一遍生词；\n· 取消拼音，带领学生再次认读；\n· 请单个学生独自认读2-3个生词；\n· 最后全班一起快速认读所有的生词。\n（2）生词讲解方式\n· 利用周围环境展示：班、最后、中间\n· 利用生活场景展示：老师有一本英文书，一本汉语书，先看哪本？——先看……\n· 对比法展示：知道—认识—了解、可能—一定、担心—放心\n· 联系旧课展示：汉语—中文\n（3）重点生词扩展及常用搭配\n· 担心—很担心—担心孩子的身体—妈妈很担心儿子的学习。\n　—不担心—明天的考试，我一点儿也不担心。\n· 比较—比较好—比较贵—你对什么比较有兴趣？\n· 了解—很了解—了解这个地方—不了解—我对他一点儿也不了解。\n· 参加—参加比赛—参加考试—你参加过面试吗？\n· 影响—影响学习—影响很大—不影响—我只是小感冒，不影响工作。\n练习册相关练习：第57页／一／第一部分，第60页／二／第二部分"
-   },
-   {
-    "title_zh": "3 语言点（1）越A越B",
-    "body_zh": "① 语言点解析\n“越A越B”表示B随着A的变化而变化。其中A一般是动词，B一般是形容词。\n［框］越＋动词＋越＋形容词\n② 语言点导入\n教师可利用本课热身2导入语言点。\n教师：他吃得越来越多还是越来越少？\n学生：他吃得越来越多。\n教师引导学生说出：他越吃越多。\n教师带领学生熟悉表格左栏内容，学生两人一组，合作完成热身2。\n③ 语言点操练\n教师可根据本课热身2表格操练语言点。\n目标句：语法越学越难／容易／多／有意思。\n　　　　我做饭越做越好／好吃／不好吃／快。\n　　　　越跑越累／快／慢。\n　　　　篮球越打越好。\n④ 语言点扩展练习\n教师根据实际情况提问，请学生回答。\n教师：请你给我介绍一本书，说说为什么？\n学生：我介绍你看……，因为越看越好看／喜欢／有意思。\n教师：明年你还学汉语吗？为什么？\n学生：我……，因为越学越……。\n注意：当有两个主语时，两个主语分别放在“越”的前边。如“汉语越难，我越觉得有意思”“天气越热，我越不想出去”。"
-   },
-   {
-    "title_zh": "3 语言点（2）比较句1：A跟B一样（＋形容词）",
-    "body_zh": "① 语言点解析\n“A跟B一样”表示A和B两者相比较，结果相同。后边可以用形容词表示比较的某一方面，如“一样大”表示大小相同。否定式是在“一样”的前边加“不”。\n［框］A＋跟＋B＋一样／不一样\n［框］A＋跟＋B＋一样／不一样＋形容词\n② 语言点导入\n教师可利用本课热身1导入语言点。\n教师展示图片（1）：姐姐和妹妹衣服一样吗？\n学生：她们的衣服一样。\n教师引导学生说出：姐姐的衣服跟妹妹的一样。\n教师展示图片（6）：哥哥和弟弟一样胖吗？\n学生：他们不一样胖。\n教师引导学生说出：哥哥跟弟弟不一样胖。\n③ 语言点操练\n教师可利用热身1的图片（2）（3）（4）（5）进行操练。\n目标句：第一辆汽车的颜色跟第二辆不一样。\n　　　　前边的房子和后边的房子一样。\n　　　　左边的天气和右边的天气不一样。\n　　　　左边的杯子跟右边的杯子一样大。\n④ 语言点扩展练习\n教师可就地取材，让全班同学比较两位学生的身高、年龄、爱好等。\n学生A跟学生B一样高／不一样高。\n学生A跟学生B一样大／不一样大。\n学生A的爱好跟学生B一样／不一样。\n学生A的字写得跟学生B一样漂亮。\n注意：“A跟B一样／不一样＋形容词”中，B中的中心语可以省略。如“这件衣服跟那件衣服一样好看”可以说成“这件衣服跟那件一样好看”。"
-   },
-   {
-    "title_zh": "4 课文 课文1",
-    "body_zh": "（1）让学生听两遍录音并回答下列问题：\n大山觉得马可的中文怎么样？——他觉得马可的中文越说越好。\n马可觉得谁的汉语好？——他觉得王静说得更好。\n王静的中文怎么好？——她说得跟中国人一样好。\n王静是谁？——是马可的中文老师。\n（2）教师领读课文两遍，让学生分角色朗读课文。\n（3）模仿练习\n学生两人一组，根据提示词模仿课文内容进行对话练习。\nA：……，你……越……越……了。\nB：哪里哪里，……更好。\nA：怎么好？\nB：他／她……跟……一样……。\nA：……？我怎么没……？\nB：他／她是……。"
-   },
-   {
-    "title_zh": "4 课文 课文2",
-    "body_zh": "（1）让学生听两遍录音并回答下列问题：\n女的（小丽）为什么不让男的（小刚）吃蛋糕了？——因为他已经吃三块了。\n小丽担心什么？——她担心小刚越吃越胖。\n小刚为什么一定不会变胖？——因为他们家的人都很瘦，吃不胖。\n（2）教师领读课文两遍，让学生分角色朗读课文，注意说话人的语气。\n（3）教师给提示词，带领学生复述课文。\n提示词：别……了、最后、总是、越……越……、放心、一定、吃不胖"
-   },
-   {
-    "title_zh": "4 课文 课文3",
-    "body_zh": "（1）让学生听两遍录音并回答下列问题：\n女的（小丽）为什么害怕？——因为山越高，路越难走，她也越爬越冷。\n男的（小刚）为什么让小丽别担心？——因为他对这个地方比较了解。\n小刚和小丽现在要做什么？——他们打算先休息一下，一会儿再爬。\n他们一会儿怎么上去？——他们一会儿从中间那条路上去。\n（2）教师领读课文两遍，让学生分角色朗读课文，注意说话人的语气。\n（3）教师给提示词，带领学生复述课文。\n提示词：有点儿、越……越……、别担心、比较、了解、先、中间"
-   },
-   {
-    "title_zh": "4 课文 课文4",
-    "body_zh": "（1）让学生听两遍录音并回答下列问题：\n小明的眼睛怎么了？——他的眼睛跟大熊猫一样。\n为什么——因为他这几天脚疼，没休息好。\n医生让小明做什么？——医生让小明多休息。休息得越多，好得越快。\n小明能参加下个月的篮球比赛吗？——他一定能参加，一点儿影响也没有。\n（2）教师领读课文两遍，让学生分角色朗读课文。\n（3）模仿练习\n学生两人一组，根据提示词模仿课文内容进行对话练习。\nA：……，你的……怎么跟……一样了？\nB：我……，没……。\nA：……了吗？……？\nB：……让我……。……得越……，……得越……。\nA：……，你能……吗？\nB：一定……，一点儿……也没有。\n练习册相关练习：第63页／四"
-   },
-   {
-    "title_zh": "5 汉字",
-    "body_zh": "形声字1：\n① 知识点解析：\n现代汉语中，70%左右的汉字都是形声字，形声字由形旁和声旁两部分组成。形旁提示汉字的意思，声旁提示汉字的发音。本课介绍左右结构的形声字，包括左形右声和右形左声。\n提示：\n教师逐一展示课本第78页左形右声表格中的字，请学生分别读出形旁和声旁，说说形旁的意思。\n妈：形旁是“女”，意思是女人；声旁是“马”（ma）。\n住：形旁是“亻”，意思是跟人有关系；声旁是“主”（zhu）。\n请学生归纳这些汉字的结构——声旁与形旁的位置：\n“妈”“住”的右边是声旁（发音），左边是形旁（意思）。\n教师展示更多左形右声的汉字，请学生说出形旁与声旁，如：吗、骑、请。\n教师逐一展示课本第78页右形左声表格中的字，请学生分别读出形旁和声旁，说说形旁的意思。\n放：形旁是“攵”，意思是手；声旁是“方”（fang）。\n邻：形旁是“阝”，意思是国家、地方；声旁是“令”（ling）。\n请学生归纳这些汉字的结构——声旁与形旁的位置：\n“放”“邻”的左边是声旁（发音），右边是形旁（意思）。\n教师展示更多右形左声的汉字，请学生说出形旁与声旁，如：静、瓶。\n② 汉字练习\n· 教师板书或者用手指在空中书写本课形声字“妈、住、放、邻”，带领学生一起识记形声字的笔画笔顺。\n· 请学生用本课所学形声字组词或扩展成短语：\n参考答案：\n妈：妈妈\n住：住在北京、住了三年\n放：放在桌子上、放好\n邻：邻居\n旧字新词：\n① 教师领读以前学过的词语和新词，并让学生猜猜新词的意思。\n· 领读：上课、中间、课间\n问学生：“课间”是什么意思？——两节课中间休息的时间。\n· 领读：爬山、路上、山路\n问学生：“山路”是什么意思？——爬山的时候走的路。\n· 领读：参加、比赛、参赛\n问学生：“参赛”是什么意思？——参加比赛\n扩展提问：还有什么“赛”？——大赛、球赛、赛前、赛后、赛跑、赛车。（根据实际情况选用）\n② 教师领读新词扩展，通过情景，理解新词的意思和用法：\n课间：课间休息／课间十分钟／课间你会做什么？\n山路：走山路／山路难走／你走过山路吗？\n参赛：参赛时间／打算参赛／参赛的学生我一个也不认识。\n汉字辨认练习：\n辨认下列汉字并组词。\n担：________、________　较：________、________\n但：________、________　校：________、________\n间：________、________　文：________、________\n问：________、________　丈：________、________\n加：________、________\n咖：________、________\n练习册相关练习：第63页／三／第三部分"
-   },
-   {
-    "title_zh": "6 补充课堂活动——找不同",
-    "body_zh": "教师准备两张相似的图片，将学生分成两组看图片，依次说出两张图片中相同与不同的地方，比比哪组说得又对又多。"
-   },
-   {
-    "title_zh": "7 俗语",
-    "body_zh": "教师引导学生理解俗语的含义，注意这里的“三人”并不一定指三个人，而是指多个人。“师”也不一定指老师，而是有的地方比自己好的人。比如：三人行，必有我师。我从同学们身上学到了很多东西。"
-   },
-   {
-    "title_zh": "8 本课小结",
-    "body_zh": "· 语言点：用“A跟B一样（＋形容词）”表示比较\n　　　　　用“越A越B”表示B随着A的变化而变化\n· 汉　字：形声词（左右结构）\n　　　　　旧字新词：课间、山路、参赛"
-   }
-  ],
-  "notes_zh": [
-   "注意：当有两个主语时，两个主语分别放在“越”的前边。如“汉语越难，我越觉得有意思”“天气越热，我越不想出去”。（语言点1）",
-   "注意：“A跟B一样／不一样＋形容词”中，B中的中心语可以省略。如“这件衣服跟那件衣服一样好看”可以说成“这件衣服跟那件一样好看”。（语言点2）",
-   "“越A越B”中A一般是动词，B一般是形容词。（语言点1 解析）",
-   "对比法展示：知道—认识—了解、可能—一定、担心—放心；联系旧课展示：汉语—中文。（生词）",
-   "注意这里的“三人”并不一定指三个人，而是指多个人。“师”也不一定指老师，而是有的地方比自己好的人。（俗语）"
-  ],
-  "warmup_answers_zh": [
-   "热身1：可留至语言点（2）“比较句1：A跟B一样（＋形容词）”导入时使用。",
-   "热身2：可留至语言点（1）“越A越B”导入时使用。",
-   "热身1 图片（1）：姐姐的衣服跟妹妹的一样。 图片（6）：哥哥跟弟弟不一样胖。（语言点2 导入）",
-   "热身1 图片（2）（3）（4）（5）目标句：第一辆汽车的颜色跟第二辆不一样。／前边的房子和后边的房子一样。／左边的天气和右边的天气不一样。／左边的杯子跟右边的杯子一样大。（语言点2 操练）",
-   "热身2：他吃得越来越多。→ 他越吃越多。（语言点1 导入）"
-  ],
-  "text_questions": [
-   {
-    "text": 1,
-    "q_zh": "大山觉得马可的中文怎么样？",
-    "a_zh": "他觉得马可的中文越说越好。"
-   },
-   {
-    "text": 1,
-    "q_zh": "马可觉得谁的汉语好？",
-    "a_zh": "他觉得王静说得更好。"
-   },
-   {
-    "text": 1,
-    "q_zh": "王静的中文怎么好？",
-    "a_zh": "她说得跟中国人一样好。"
-   },
-   {
-    "text": 1,
-    "q_zh": "王静是谁？",
-    "a_zh": "是马可的中文老师。"
-   },
-   {
-    "text": 2,
-    "q_zh": "女的（小丽）为什么不让男的（小刚）吃蛋糕了？",
-    "a_zh": "因为他已经吃三块了。"
-   },
-   {
-    "text": 2,
-    "q_zh": "小丽担心什么？",
-    "a_zh": "她担心小刚越吃越胖。"
-   },
-   {
-    "text": 2,
-    "q_zh": "小刚为什么一定不会变胖？",
-    "a_zh": "因为他们家的人都很瘦，吃不胖。"
-   },
-   {
-    "text": 3,
-    "q_zh": "女的（小丽）为什么害怕？",
-    "a_zh": "因为山越高，路越难走，她也越爬越冷。"
-   },
-   {
-    "text": 3,
-    "q_zh": "男的（小刚）为什么让小丽别担心？",
-    "a_zh": "因为他对这个地方比较了解。"
-   },
-   {
-    "text": 3,
-    "q_zh": "小刚和小丽现在要做什么？",
-    "a_zh": "他们打算先休息一下，一会儿再爬。"
-   },
-   {
-    "text": 3,
-    "q_zh": "他们一会儿怎么上去？",
-    "a_zh": "他们一会儿从中间那条路上去。"
-   },
-   {
-    "text": 4,
-    "q_zh": "小明的眼睛怎么了？",
-    "a_zh": "他的眼睛跟大熊猫一样。"
-   },
-   {
-    "text": 4,
-    "q_zh": "为什么",
-    "a_zh": "因为他这几天脚疼，没休息好。"
-   },
-   {
-    "text": 4,
-    "q_zh": "医生让小明做什么？",
-    "a_zh": "医生让小明多休息。休息得越多，好得越快。"
-   },
-   {
-    "text": 4,
-    "q_zh": "小明能参加下个月的篮球比赛吗？",
-    "a_zh": "他一定能参加，一点儿影响也没有。"
-   }
-  ],
-  "summary_zh": "语言点：用“A跟B一样（＋形容词）”表示比较；用“越A越B”表示B随着A的变化而变化。汉字：形声词（左右结构）；旧字新词：课间、山路、参赛。"
- },
- "workbook": {
-  "ref": {
-   "book": "workbook",
-   "pages": [
-    61,
-    62,
-    63,
-    64,
-    65,
-    66,
-    67
-   ]
-  },
-  "answers_ref": {
-   "book": "teacher",
-   "pages": [
+    96,
     167,
     168,
     169
-   ]
-  },
-  "sections": [
-   {
-    "n": "一、听力 第一部分",
-    "type_zh": "听力 第一部分",
-    "instruction_zh": "第1–5题：听对话，选择与对话内容一致的图片",
-    "instruction_en": "Questions 1-5: Choose the right picture for each dialogue you hear.",
-    "audio": "hsk3-workbook-09-part1.mp3",
-    "items": [
-     {
-      "n": "例如",
-      "zh": "男：喂，请问张经理在吗？ 女：他正在开会，您半个小时以后再打，好吗？",
-      "transcript_zh": "男：喂，请问张经理在吗？ 女：他正在开会，您半个小时以后再打，好吗？",
-      "options": {
-       "A": "[picture] a smiling schoolboy in a shirt and tie receiving a trophy, with adults and another boy standing behind",
-       "B": "[picture] two hikers with large backpacks standing on rocky mountain ground",
-       "C": "[picture] a group of smiling children and a young man gathered around a globe",
-       "D": "[picture] a smiling woman in a uniform talking on a telephone",
-       "E": "[picture] a tired-looking woman with long blonde hair holding a mug",
-       "F": "[picture] a woman standing among seated people who are smiling and clapping"
-      },
-      "answer": "D",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        61
-       ]
-      }
-     },
-     {
-      "n": 1,
-      "zh": "",
-      "options": {
-       "A": "[picture] a smiling schoolboy in a shirt and tie receiving a trophy, with adults and another boy standing behind",
-       "B": "[picture] two hikers with large backpacks standing on rocky mountain ground",
-       "C": "[picture] a group of smiling children and a young man gathered around a globe",
-       "D": "[picture] a smiling woman in a uniform talking on a telephone",
-       "E": "[picture] a tired-looking woman with long blonde hair holding a mug",
-       "F": "[picture] a woman standing among seated people who are smiling and clapping"
-      },
-      "transcript_zh": "女：大明，你看我的眼睛是不是跟熊猫一样了？ 男：怎么，昨天又没睡好？别总想工作的事，好好休息。",
-      "answer": "E",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        169
-       ]
-      }
-     },
-     {
-      "n": 2,
-      "zh": "",
-      "options": {
-       "A": "[picture] a smiling schoolboy in a shirt and tie receiving a trophy, with adults and another boy standing behind",
-       "B": "[picture] two hikers with large backpacks standing on rocky mountain ground",
-       "C": "[picture] a group of smiling children and a young man gathered around a globe",
-       "D": "[picture] a smiling woman in a uniform talking on a telephone",
-       "E": "[picture] a tired-looking woman with long blonde hair holding a mug",
-       "F": "[picture] a woman standing among seated people who are smiling and clapping"
-      },
-      "transcript_zh": "男：方老师，这次中文比赛的第一是您班的学生吗？ 女：是，这个小男孩叫天天，他第一次参赛就拿了第一。",
-      "answer": "A",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        169
-       ]
-      }
-     },
-     {
-      "n": 3,
-      "zh": "",
-      "options": {
-       "A": "[picture] a smiling schoolboy in a shirt and tie receiving a trophy, with adults and another boy standing behind",
-       "B": "[picture] two hikers with large backpacks standing on rocky mountain ground",
-       "C": "[picture] a group of smiling children and a young man gathered around a globe",
-       "D": "[picture] a smiling woman in a uniform talking on a telephone",
-       "E": "[picture] a tired-looking woman with long blonde hair holding a mug",
-       "F": "[picture] a woman standing among seated people who are smiling and clapping"
-      },
-      "transcript_zh": "女1：这山怎么越爬越高啊？还有多远？ 女2：我对这儿比较了解，再爬一个小时就到了。先休息会儿吧。",
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        169
-       ]
-      }
-     },
-     {
-      "n": 4,
-      "zh": "",
-      "options": {
-       "A": "[picture] a smiling schoolboy in a shirt and tie receiving a trophy, with adults and another boy standing behind",
-       "B": "[picture] two hikers with large backpacks standing on rocky mountain ground",
-       "C": "[picture] a group of smiling children and a young man gathered around a globe",
-       "D": "[picture] a smiling woman in a uniform talking on a telephone",
-       "E": "[picture] a tired-looking woman with long blonde hair holding a mug",
-       "F": "[picture] a woman standing among seated people who are smiling and clapping"
-      },
-      "transcript_zh": "男：你说得真好，几乎跟中国人一样！ 女：哪里哪里，大家说得都很好。",
-      "answer": "F",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        169
-       ]
-      }
-     },
-     {
-      "n": 5,
-      "zh": "",
-      "options": {
-       "A": "[picture] a smiling schoolboy in a shirt and tie receiving a trophy, with adults and another boy standing behind",
-       "B": "[picture] two hikers with large backpacks standing on rocky mountain ground",
-       "C": "[picture] a group of smiling children and a young man gathered around a globe",
-       "D": "[picture] a smiling woman in a uniform talking on a telephone",
-       "E": "[picture] a tired-looking woman with long blonde hair holding a mug",
-       "F": "[picture] a woman standing among seated people who are smiling and clapping"
-      },
-      "transcript_zh": "男：方方，这是你们班的照片吗？ 女：对，爸，我来给你介绍一下，中间这个是我们班周老师，周老师旁边这个男孩儿叫山山，他上课总是迟到。",
-      "answer": "C",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        169
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "一、听力 第二部分",
-    "type_zh": "听力 第二部分",
-    "instruction_zh": "第6–10题：听句子，判断对错",
-    "instruction_en": "Questions 6-10: Decide whether the statements are true or false based on the sentences you hear.",
-    "audio": "hsk3-workbook-09-part2.mp3",
-    "items": [
-     {
-      "n": "例如1",
-      "zh": "他希望自己很健康。",
-      "transcript_zh": "为了让自己更健康，他每天都花一个小时去锻炼身体。",
-      "answer": "√",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        62
-       ]
-      }
-     },
-     {
-      "n": "例如2",
-      "zh": "那块儿手表不是他的。",
-      "transcript_zh": "今天我想早点儿回家。看了看手表，才5点。过了一会儿再看表，还是5点，我这才发现我的手表不走了。",
-      "answer": "×",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        62
-       ]
-      }
-     },
-     {
-      "n": 6,
-      "zh": "南方十二月的时候房间里不太冷。",
-      "transcript_zh": "十二月的南方，房间里跟房间外一样冷，所以回家了大家也要穿很多衣服。",
-      "answer": "×",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        169
-       ]
-      }
-     },
-     {
-      "n": 7,
-      "zh": "他觉得这本书很有意思。",
-      "transcript_zh": "这本书写得真不错，越看越有意思，你也看看吧。",
-      "answer": "√",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        169
-       ]
-      }
-     },
-     {
-      "n": 8,
-      "zh": "现在不下雪了。",
-      "transcript_zh": "雪越下越大，外边的房子、树和路都变白了。",
-      "answer": "×",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        169
-       ]
-      }
-     },
-     {
-      "n": 9,
-      "zh": "他以前的手机和现在的是一样的。",
-      "transcript_zh": "我昨天新买的手机跟以前的不太一样，你来帮我看看怎么用，可以吗？",
-      "answer": "×",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        169
-       ]
-      }
-     },
-     {
-      "n": 10,
-      "zh": "周月喜欢手表。",
-      "transcript_zh": "我喜欢手表，周月也跟我一样，但是她更喜欢大一点儿的。",
-      "answer": "√",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        169
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "一、听力 第三部分",
-    "type_zh": "听力 第三部分",
-    "instruction_zh": "第11–15题：听短对话，选择正确答案",
-    "instruction_en": "Questions 11-15: Listen to the short dialogues and choose the right answers.",
-    "audio": "hsk3-workbook-09-part3.mp3",
-    "items": [
-     {
-      "n": "例如",
-      "zh": "男的想让小王做什么？",
-      "transcript_zh": "男：小王，帮我开一下门，好吗？谢谢！ 女：没问题。您去超市了？买了这么多东西。 问：男的想让小王做什么？",
-      "options": {
-       "A": "开门",
-       "B": "拿东西",
-       "C": "去超市买东西"
-      },
-      "answer": "A",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        62
-       ]
-      }
-     },
-     {
-      "n": 11,
-      "zh": "女的现在怎么样？",
-      "options": {
-       "A": "变胖了",
-       "B": "变瘦了",
-       "C": "头发变长了"
-      },
-      "transcript_zh": "男：这是什么时候的照片？照片上的你跟现在不太一样。 女：是去年夏天的，那时候我是长头发，也比较瘦。 问：女的现在怎么样？",
-      "answer": "A",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        169
-       ]
-      }
-     },
-     {
-      "n": 12,
-      "zh": "关于女的，可以知道什么？",
-      "options": {
-       "A": "学得不太好",
-       "B": "不用努力了",
-       "C": "考了第一"
-      },
-      "transcript_zh": "男：小方，我真为你高兴，希望你越学越好。 女：谢谢老师，我一定努力，下次考试还拿第一。 问：关于女的，可以知道什么？",
-      "answer": "C",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        169
-       ]
-      }
-     },
-     {
-      "n": 13,
-      "zh": "女的做鱼做得怎么样？",
-      "options": {
-       "A": "比饭馆的好吃",
-       "B": "特别好吃",
-       "C": "没有饭馆的好吃"
-      },
-      "transcript_zh": "男：妈，你的鱼越做越好，跟饭馆的一样好吃。 女：那你多吃点儿，以后我每个星期都给你做一次，怎么样？ 问：女的做鱼做得怎么样？",
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        169
-       ]
-      }
-     },
-     {
-      "n": 14,
-      "zh": "什么样的西瓜比较甜？",
-      "options": {
-       "A": "便宜的",
-       "B": "大的",
-       "C": "小的"
-      },
-      "transcript_zh": "女：您好，来一个西瓜，要甜点儿的，不要太大的。 男：现在西瓜便宜，给您来个大的吧，西瓜越大越甜。 问：什么样的西瓜比较甜？",
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        169
-       ]
-      }
-     },
-     {
-      "n": 15,
-      "zh": "女的以前觉得汉语怎么样？",
-      "options": {
-       "A": "特别有意思",
-       "B": "很容易",
-       "C": "很难"
-      },
-      "transcript_zh": "男：你汉语只学了不到半年，说得这么好。以前你不是不想学吗？ 女：其实汉语跟我以前想的一点儿也不一样，越学越有意思，也不觉得难了。 问：女的以前觉得汉语怎么样？",
-      "answer": "C",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        169
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "一、听力 第四部分",
-    "type_zh": "听力 第四部分",
-    "instruction_zh": "第16–20题：听长对话，选择正确答案",
-    "instruction_en": "Questions 16-20: Listen to the dialogues and choose the right answers.",
-    "audio": "hsk3-workbook-09-part4.mp3",
-    "items": [
-     {
-      "n": "例如",
-      "zh": "男的在做什么？",
-      "transcript_zh": "女：晚饭做好了，准备吃饭了。 男：等一会儿，比赛还有三分钟就结束了。 女：快点儿吧，一起吃，菜冷了就不好吃了。 男：你先吃，我马上就看完了。 问：男的在做什么？",
-      "options": {
-       "A": "洗澡",
-       "B": "吃饭",
-       "C": "看电视"
-      },
-      "answer": "C",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        63
-       ]
-      }
-     },
-     {
-      "n": 16,
-      "zh": "关于这次比赛，可以知道什么？",
-      "options": {
-       "A": "每人最少讲3分钟",
-       "B": "只要回答一个问题",
-       "C": "没有问题"
-      },
-      "transcript_zh": "女：老师，上次比赛每个人要讲3分钟，这次呢？ 男：跟上次一样，参赛的同学每人最少讲3分钟。 女：还要回答老师的问题吗？ 男：对，三个老师每人问一个问题。你一定没问题，不用担心。 问：关于这次比赛，可以知道什么？",
-      "answer": "A",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        169
-       ]
-      }
-     },
-     {
-      "n": 17,
-      "zh": "男的姓什么？",
-      "options": {
-       "A": "周",
-       "B": "谢",
-       "C": "解"
-      },
-      "transcript_zh": "女：你好，我叫周月。你叫什么名字？ 男：我叫解东。 女：你姓什么？是“谢谢”的“谢”吗？ 男：不是，跟“了解”的“解”一样，但是做姓的时候读“解”。 问：男的姓什么？",
-      "answer": "C",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        169
-       ]
-      }
-     },
-     {
-      "n": 18,
-      "zh": "他们现在要去做什么？",
-      "options": {
-       "A": "买伞",
-       "B": "叫出租车",
-       "C": "找朋友"
-      },
-      "transcript_zh": "男：刚才是大晴天，现在怎么下雨了，还越下越大。 女：夏天天气变得快，我们坐出租车回家吧。 男：大家想得都跟你一样，你看，你叫得到车吗？ 女：那先去路边小商店买把伞吧。 问：他们现在要去做什么？",
-      "answer": "A",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        169
-       ]
-      }
-     },
-     {
-      "n": 19,
-      "zh": "关于这次爬山，可以知道什么？",
-      "options": {
-       "A": "山下下雪了",
-       "B": "山上有雪",
-       "C": "山路好走"
-      },
-      "transcript_zh": "男：你们去爬山了？怎么样？一定很累吧？ 女：越高的地方越冷，山路也越难走，但是特别漂亮。虽然已经是春天了，可是山上跟山下一点儿也不一样，还都是白的。 男：我越听越想去看看，下次你们也带我一起去吧。 女：好，下次去一定告诉你。 问：关于这次爬山，可以知道什么？",
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        169
-       ]
-      }
-     },
-     {
-      "n": 20,
-      "zh": "天气热的时候，女的喝什么？",
-      "options": {
-       "A": "喝热的",
-       "B": "不喝热的",
-       "C": "喝饮料"
-      },
-      "transcript_zh": "男：天气真热，我们喝点儿东西吧，给你饮料。 女：谢谢，我带了热茶。 男：夏天喝热茶，那不是越喝越热吗？ 女：中国人跟你们不太一样，天气越热，我们越想喝点儿热的，比较舒服。 问：天气热的时候，女的喝什么？",
-      "answer": "A",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        169
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "二、阅读 第一部分",
-    "type_zh": "阅读 第一部分",
-    "instruction_zh": "第21–25题：选择合适的问答",
-    "instruction_en": "Questions 21-25: Match the two parts of the same dialogue.",
-    "items": [
-     {
-      "n": "例如",
-      "zh": "你知道怎么去那儿吗？",
-      "options": {
-       "A": "快睡吧，明天还要上班呢。",
-       "B": "请给我一杯热咖啡，不要牛奶。你要喝什么？",
-       "C": "我太冷了，想快点儿回家。",
-       "D": "小方，你是南方人还是北方人？",
-       "E": "当然。我们先坐公共汽车，然后换地铁。",
-       "F": "我看你们家孩子很爱唱歌啊。"
-      },
-      "answer": "E",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        64
-       ]
-      }
-     },
-     {
-      "n": 21,
-      "zh": "跟你一样，也要咖啡，但是我要放一些牛奶。",
-      "options": {
-       "A": "快睡吧，明天还要上班呢。",
-       "B": "请给我一杯热咖啡，不要牛奶。你要喝什么？",
-       "C": "我太冷了，想快点儿回家。",
-       "D": "小方，你是南方人还是北方人？",
-       "E": "当然。我们先坐公共汽车，然后换地铁。",
-       "F": "我看你们家孩子很爱唱歌啊。"
-      },
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        169
-       ]
-      }
-     },
-     {
-      "n": 22,
-      "zh": "我跟您一样，都是从南方来的。",
-      "options": {
-       "A": "快睡吧，明天还要上班呢。",
-       "B": "请给我一杯热咖啡，不要牛奶。你要喝什么？",
-       "C": "我太冷了，想快点儿回家。",
-       "D": "小方，你是南方人还是北方人？",
-       "E": "当然。我们先坐公共汽车，然后换地铁。",
-       "F": "我看你们家孩子很爱唱歌啊。"
-      },
-      "answer": "D",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        169
-       ]
-      }
-     },
-     {
-      "n": 23,
-      "zh": "你怎么越走越快？等等我。",
-      "options": {
-       "A": "快睡吧，明天还要上班呢。",
-       "B": "请给我一杯热咖啡，不要牛奶。你要喝什么？",
-       "C": "我太冷了，想快点儿回家。",
-       "D": "小方，你是南方人还是北方人？",
-       "E": "当然。我们先坐公共汽车，然后换地铁。",
-       "F": "我看你们家孩子很爱唱歌啊。"
-      },
-      "answer": "C",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        169
-       ]
-      }
-     },
-     {
-      "n": 24,
-      "zh": "对，跟他爸爸一样，都对音乐感兴趣。",
-      "options": {
-       "A": "快睡吧，明天还要上班呢。",
-       "B": "请给我一杯热咖啡，不要牛奶。你要喝什么？",
-       "C": "我太冷了，想快点儿回家。",
-       "D": "小方，你是南方人还是北方人？",
-       "E": "当然。我们先坐公共汽车，然后换地铁。",
-       "F": "我看你们家孩子很爱唱歌啊。"
-      },
-      "answer": "F",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        169
-       ]
-      }
-     },
-     {
-      "n": 25,
-      "zh": "小月还没回来，我有点儿不放心，再等等，你先睡。",
-      "options": {
-       "A": "快睡吧，明天还要上班呢。",
-       "B": "请给我一杯热咖啡，不要牛奶。你要喝什么？",
-       "C": "我太冷了，想快点儿回家。",
-       "D": "小方，你是南方人还是北方人？",
-       "E": "当然。我们先坐公共汽车，然后换地铁。",
-       "F": "我看你们家孩子很爱唱歌啊。"
-      },
-      "answer": "A",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        169
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "二、阅读 第二部分",
-    "type_zh": "阅读 第二部分",
-    "instruction_zh": "第26–30题：选择合适的词语填空",
-    "instruction_en": "Questions 26-30: Choose the proper words to fill in the brackets.",
-    "word_bank": [
-     [
-      "A 班",
-      "B 中间",
-      "C 了解",
-      "D 一样",
-      "E 声音",
-      "F 比较"
-     ]
-    ],
-    "items": [
-     {
-      "n": "例如",
-      "zh": "她说话的（　）多好听啊！",
-      "options": {
-       "A": "班",
-       "B": "中间",
-       "C": "了解",
-       "D": "一样",
-       "E": "声音",
-       "F": "比较"
-      },
-      "answer": "E",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        64
-       ]
-      }
-     },
-     {
-      "n": 26,
-      "zh": "你看，这两个汉字是不是（　）的？",
-      "options": {
-       "A": "班",
-       "B": "中间",
-       "C": "了解",
-       "D": "一样",
-       "E": "声音",
-       "F": "比较"
-      },
-      "answer": "D",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        169
-       ]
-      }
-     },
-     {
-      "n": 27,
-      "zh": "站在（　）的人叫周明，他是我们公司的经理。",
-      "options": {
-       "A": "班",
-       "B": "中间",
-       "C": "了解",
-       "D": "一样",
-       "E": "声音",
-       "F": "比较"
-      },
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        169
-       ]
-      }
-     },
-     {
-      "n": 28,
-      "zh": "外边（　）冷，你多穿一件衣服吧。",
-      "options": {
-       "A": "班",
-       "B": "中间",
-       "C": "了解",
-       "D": "一样",
-       "E": "声音",
-       "F": "比较"
-      },
-      "answer": "F",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        169
-       ]
-      }
-     },
-     {
-      "n": 29,
-      "zh": "A：刚才那个人，你认识吗？ B：我知道他的名字，但是不（　）他。",
-      "options": {
-       "A": "班",
-       "B": "中间",
-       "C": "了解",
-       "D": "一样",
-       "E": "声音",
-       "F": "比较"
-      },
-      "answer": "C",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        169
-       ]
-      }
-     },
-     {
-      "n": 30,
-      "zh": "A：你们（　）有多少个学生？ B：以前是16个，昨天来了个新同学，现在是17个。",
-      "options": {
-       "A": "班",
-       "B": "中间",
-       "C": "了解",
-       "D": "一样",
-       "E": "声音",
-       "F": "比较"
-      },
-      "answer": "A",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        169
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "二、阅读 第三部分",
-    "type_zh": "阅读 第三部分",
-    "instruction_zh": "第31–35题：选择正确答案",
-    "instruction_en": "Questions 31-35: Choose the right answers.",
-    "items": [
-     {
-      "n": "例如",
-      "zh": "您是来参加今天会议的吗？您来早了一点儿，现在才八点半。您先进来坐吧。 ★会议最可能几点开始？",
-      "options": {
-       "A": "8点",
-       "B": "8点半",
-       "C": "9点"
-      },
-      "answer": "C",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        65
-       ]
-      }
-     },
-     {
-      "n": 31,
-      "zh": "跟哥哥一样，我也觉得对我影响最大的人是妈妈。从我们学说话、学走路时开始，妈妈每天跟我们在一起，最重要的是她告诉我们怎样做人——做一个好人。 ★妈妈：",
-      "options": {
-       "A": "是老师",
-       "B": "对我很重要",
-       "C": "跟哥哥一样"
-      },
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        169
-       ]
-      }
-     },
-     {
-      "n": 32,
-      "zh": "听到“你中文说得真好”“你真漂亮”时，外国人总是说“谢谢”。中国人跟外国人不一样，我们说“哪里哪里”，这不是在问“在哪儿”，是客气。 ★听到“你做的饭几乎跟饭馆一样”时，中国人可能做什么？",
-      "options": {
-       "A": "说“谢谢”",
-       "B": "不说话",
-       "C": "说“哪里哪里”"
-      },
-      "answer": "C",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        169
-       ]
-      }
-     },
-     {
-      "n": 33,
-      "zh": "我女儿和白先生的儿子在一个学校上学。他儿子跟我女儿一样，都上三年级，但是不同班。他家孩子在一班，我女儿在四班。课间十分钟，他们总是一起玩儿，跟同班同学一样。 ★白先生的儿子：",
-      "options": {
-       "A": "和我是同学",
-       "B": "和我女儿同班",
-       "C": "课间总和我女儿见面"
-      },
-      "answer": "C",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        169
-       ]
-      }
-     },
-     {
-      "n": 34,
-      "zh": "学汉语时要多听、多说。有人害怕说错，所以不爱说。其实越害怕越不想说，越不想说越说不好。说错了没关系，这次错了，下次一定不会再错。 ★学汉语时不能：",
-      "options": {
-       "A": "说错",
-       "B": "说不好",
-       "C": "怕说错"
-      },
-      "answer": "C",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        169
-       ]
-      }
-     },
-     {
-      "n": 35,
-      "zh": "小时候，我女儿说她爸爸不喜欢她，因为爸爸没说过“女儿，我爱你”，也不说她漂亮。现在，女儿跟以前不一样了，因为她了解：其实爸爸跟妈妈一样爱她，只是爸爸不说，都在心里。 ★现在，女儿：",
-      "options": {
-       "A": "不爱爸爸",
-       "B": "不了解爸爸",
-       "C": "知道爸爸很爱她"
-      },
-      "answer": "C",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        169
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "三、书写 第一部分",
-    "type_zh": "书写 第一部分",
-    "instruction_zh": "第36–40题：连词成句",
-    "instruction_en": "Questions 36-40: Rearrange the words/phrases to make sentences.",
-    "items": [
-     {
-      "n": "例如",
-      "zh": "小船　上　一　河　条　有",
-      "answer": "河上有一条小船。",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        66
-       ]
-      }
-     },
-     {
-      "n": 36,
-      "zh": "快　越　那辆车　开　越",
-      "answer": "那辆车越开越快。",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        169
-       ]
-      }
-     },
-     {
-      "n": 37,
-      "zh": "跟　我弟弟　妈妈　高　一样",
-      "answer": "我弟弟跟妈妈一样高。",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        169
-       ]
-      }
-     },
-     {
-      "n": 38,
-      "zh": "越　我和老同学　高兴　聊　越",
-      "answer": "我和老同学越聊越高兴。",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        169
-       ]
-      }
-     },
-     {
-      "n": 39,
-      "zh": "新鲜　苹果　西瓜　跟　一样",
-      "answer": "苹果跟西瓜一样新鲜。",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        169
-       ]
-      }
-     },
-     {
-      "n": 40,
-      "zh": "吃甜的　越　越　你　身体　胖",
-      "answer": "你越吃甜的身体越胖。",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        169
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "三、书写 第二部分",
-    "type_zh": "书写 第二部分",
-    "instruction_zh": "第41–45题：看拼音，写汉字",
-    "instruction_en": "Questions 41-45: Write the characters based on their pinyin.",
-    "items": [
-     {
-      "n": "例如",
-      "zh": "没（　）系，别难过，高兴点儿。",
-      "hint_zh": "guān",
-      "answer": "关",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        66
-       ]
-      }
-     },
-     {
-      "n": 41,
-      "zh": "妈，给你介绍一下，这是我们（　）同学白乐。",
-      "hint_zh": "bān",
-      "answer": "班",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        169
-       ]
-      }
-     },
-     {
-      "n": 42,
-      "zh": "这么小的孩子一个人在家，我能不（　）心吗？",
-      "hint_zh": "dān",
-      "answer": "担",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        169
-       ]
-      }
-     },
-     {
-      "n": 43,
-      "zh": "这个地方环境比（　）安静，没有那么多车。",
-      "hint_zh": "jiào",
-      "answer": "较",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        169
-       ]
-      }
-     },
-     {
-      "n": 44,
-      "zh": "其实，我只跟这个人见过一两次面，一点儿也不了（　）她。",
-      "hint_zh": "jiě",
-      "answer": "解",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        169
-       ]
-      }
-     },
-     {
-      "n": 45,
-      "zh": "我（　）加过三次比赛，拿了两次第一，一次第二。",
-      "hint_zh": "cān",
-      "answer": "参",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        169
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "三、书写 第三部分",
-    "type_zh": "书写 第三部分",
-    "instruction_zh": "第46–50题：辨认汉字，选择正确的汉字填空",
-    "instruction_en": "Questions 46-50: Distinguish the characters and fill in the blanks.",
-    "items": [
-     {
-      "n": "例如",
-      "zh": "我不知道________个地方在________儿。",
-      "hint_zh": "（那、哪）",
-      "answer": "那、哪",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        67
-       ]
-      }
-     },
-     {
-      "n": 46,
-      "zh": "别________心，虽然题很多，________是我一定能做完。",
-      "hint_zh": "（但、担）",
-      "answer": "担、但",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        169
-       ]
-      }
-     },
-     {
-      "n": 47,
-      "zh": "这个学________的汉语老师比________好，我们在这儿学吧。",
-      "hint_zh": "（校、较）",
-      "answer": "校、较",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        169
-       ]
-      }
-     },
-     {
-      "n": 48,
-      "zh": "请________，这儿有人吗？我能坐在你们中________吗？",
-      "hint_zh": "（问、间）",
-      "answer": "问、间",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        169
-       ]
-      }
-     },
-     {
-      "n": 49,
-      "zh": "我去问问我________夫吧，他学过中________，能看懂这个。",
-      "hint_zh": "（文、丈）",
-      "answer": "丈、文",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        169
-       ]
-      }
-     },
-     {
-      "n": 50,
-      "zh": "给我买杯________啡吧，一会儿我要参________一个面试。",
-      "hint_zh": "（加、咖）",
-      "answer": "咖、加",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        169
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "三、书写 第四部分",
-    "type_zh": "书写 第四部分",
-    "instruction_zh": "第51–54题：用下边的汉字组词",
-    "instruction_en": "Questions 51-54: Make words using the following characters.",
-    "items": [
-     {
-      "n": "例如",
-      "zh": "找________、________",
-      "answer": "找人、找到",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        67
-       ]
-      }
-     },
-     {
-      "n": 51,
-      "zh": "住________、________",
-      "answer": "住在、住房",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        169
-       ]
-      }
-     },
-     {
-      "n": 52,
-      "zh": "请________、________",
-      "answer": "请坐、请问",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        169
-       ]
-      }
-     },
-     {
-      "n": 53,
-      "zh": "放________、________",
-      "answer": "放学、放心",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        169
-       ]
-      }
-     },
-     {
-      "n": 54,
-      "zh": "歌________、________",
-      "answer": "唱歌、老歌",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        169
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "四、复习",
-    "type_zh": "复习",
-    "instruction_zh": "第1–2题：根据课文内容填空",
-    "instruction_en": "Questions 1-2: Fill in the blanks based on the texts in the textbook.",
-    "items": [
-     {
-      "n": 1,
-      "zh": "大山觉得马可的汉语________了，但是马可觉得他们________李静的汉语更好，说得________中国人________。大山没听说过李静这个名字，其实，李静是马可的________老师。",
-      "answer": "越说越好、班、跟、一样好、汉语",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        169
-       ]
-      }
-     },
-     {
-      "n": 2,
-      "zh": "小丽爬山的时候有点儿害怕，因为山越高，路越难走，她________。小刚对这儿比较________，他让小丽别________。他们现在________休息一下，一会儿从________那条路上去。",
-      "answer": "越爬越冷、了解、担心、先、中间",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        169
-       ]
-      }
-     }
-    ]
-   }
-  ]
- },
- "audio": {
-  "textbook": [
-   "hsk3-textbook-0901.mp3",
-   "hsk3-textbook-0902.mp3",
-   "hsk3-textbook-0903.mp3",
-   "hsk3-textbook-0904.mp3",
-   "hsk3-textbook-0905.mp3"
   ],
-  "workbook": [
-   "hsk3-workbook-09-part1.mp3",
-   "hsk3-workbook-09-part2.mp3",
-   "hsk3-workbook-09-part3.mp3",
-   "hsk3-workbook-09-part4.mp3"
-  ]
- },
- "unclear": [
-  "Сурах бичиг PDF х.89 课文2: хятад бичвэр «这是最后一块。» (儿-гүй), харин 拼音课文 (PDF х.90) «Zhè shì zuìhòu yíkuàir.» (儿-тэй) — хоёуланг номд байгаагаар нь үлдээсэн.",
-  "Багшийн ном PDF х.67 课文1 асуулт-хариулт: «王静» гэж 3 удаа хэвлэсэн (马可觉得谁的汉语好？——他觉得王静说得更好。／王静的中文怎么好？／王静是谁？), харин сурах бичиг, дасгалын ном (复习1) «李静». Мөн «是马可的中文老师» ↔ бичвэр «她是我们的汉语老师». Номд байгаагаар teacher.steps/text_questions-д.",
-  "Багшийн ном PDF х.68 课文4 асуулт «为什么——因为他这几天脚疼，没休息好。» — «为什么»-ийн ард асуултын тэмдэг хэвлэгдээгүй; номд байгаагаар.",
-  "Багшийн ном PDF х.68 课文3 提示词 «别担心» — бичвэрт «不用担心»; багшийн номын асуулт «从中间那条路上去» — бичвэрт «从中间这条路上去». Номд байгаагаар.",
-  "Багшийн ном PDF х.70 本课小结 «汉　字：形声词（左右结构）» — сурах бичиг, багшийн номын 汉字 хэсэгт «形声字»; номд байгаагаар.",
-  "Сурах бичиг PDF х.91 注释1 жишээ (2) «你的中文越说越好。» — 课文1-д «你的中文越说越好了！»; номд байгаагаар.",
-  "Сурах бичиг PDF х.89 生词 13 影响 «n. influence» гэж тэмдэглэсэн, харин 练习1 «他影响了我»、练习2⑤ «别________了学习»、练习3 «是哥哥影响了我» зэрэгт үйл үгээр хэрэглэгдэнэ — номд байгаагаар pos «n.».",
-  "Сурах бичиг PDF х.94 汉字知识 хүснэгтийн англи гарчиг «Pronounciation» (Pronunciation биш) — номд байгаагаар knowledge_en-д.",
-  "Сурах бичиг PDF х.96 俗语-ийн англи тайлбарт «“三人行必有我师”» (таслалгүй), хятад гарчиг «三人行，必有我师» — номд байгаагаар.",
-  "Сурах бичиг PDF х.88 热身1 ② 颜色 — зураг дээрх хоёр машин хоёулаа хар өнгөтэй харагдана (доод нь бага зэрэг улаавтар туяатай), харин багшийн номын зорилтот өгүүлбэр «第一辆汽车的颜色跟第二辆不一样。» (PDF х.66). Зургийн тайлбарт өнгө өөр гэж батлаагүй.",
-  "Сурах бичгийн 拼音课文-ын гарчгийн пиньинь (Zài jiàoshì / Zài dàngāo diàn / Zài shān shang / Zài Xiǎomíng jiā) болон ярилцагчийн нэрийн пиньинь (Dàshān, Mǎkě, Xiǎolì, Xiǎogāng, tóngxué, Xiǎomíng) схемд талбаргүй тул lines.pinyin-д зөвхөн яриаг оруулсан.",
-  "Сурах бичгийн 汉字知识 хүснэгт (汉字/发音/声旁/形旁) — knowledge_zh-д мөр мөрөөр, characters[]-д ханз бүрийн声旁/形旁-ийг note_zh-д «左形右声／右形左声：声旁…，形旁…» хэлбэрээр (хүснэгтийн баганыг нэгтгэсэн).",
-  "Сурах бичгийн 热身 1–2, 练一练 (2 дүрэм × 3), 练习2 选词填空 / 练习3 描述图片 / 练习4 回答问题 болон 运用 — хариулт сурах бичиг, багшийн номд хэвлэгдээгүй тул answer талбаргүй (жишээ нь 练习4② «小刚一共吃了几块蛋糕？» — номд хариулт байхгүй). Багшийн номын 课文 асуулт-хариулт (teacher.text_questions) нь 练习4-ийн асуултаас өөр асуултууд.",
-  "Багшийн номын 热身 хэсэгт хариулт хэвлэгдээгүй — 热身1/2-ыг语言点 оруулахад ашиглах заавар ба зорилтот өгүүлбэрүүдийг warmup_answers_zh-д (PDF х.64–66).",
-  "Багшийн номын 汉字辨认练习 (担/但 · 较/校 · 间/问 · 文/丈 · 加/咖 — 组词) хоосон зайтай, хариулт хэвлэгдээгүй. Номд хоёр баганаар хэвлэсэн; teacher.steps-д мөр болгон бичсэн.",
-  "Дасгалын ном 51–54 (用下边的汉字组词)-ийн хариулт багшийн номын хавсралтын «参考答案» (PDF х.169) — жишиг хариулт; өөр зөв үг байж болно.",
-  "Дасгалын ном 听力 17: «但是做姓的时候读“解”» — 解-ийн овог болох үеийн дуудлагын пиньинь номд өгөгдөөгүй.",
-  "Дасгалын номын сонсгол нэг CD тэмдэгтэй (09) — аудиог hsk3-workbook-09-part1…4.mp3 болгож хэсэг тус бүрт хуваасныг section.audio-д оноосон.",
-  "Дасгалын ном 听力 第三/四部分 — номд зөвхөн сонголтууд хэвлэгдсэн; item.zh-д багшийн номын хавсралтын «问：» асуултыг оруулсан (transcript_zh-д бүтнээр). Сонсголын бичвэр PDF х.167–169, хариулт PDF х.169.",
-  "Сурах бичгийн 练习3 ба 热身 болон дасгалын номын 听力 第一部分-ийн зургийн тайлбар (picture_desc_en / pictures_desc_en / [picture]) — номд текст байхгүй тул зургаас товч, объектив дүрсэлсэн.",
-  "Багшийн ном PDF х.65–66 语言点-ийн хүрээтэй томьёонуудыг (越＋动词＋越＋形容词 ／ A＋跟＋B＋一样／不一样(＋形容词)) teacher.steps-д «［框］» гэж тэмдэглэсэн."
- ],
- "verified_pages": [
-  61,
-  62,
-  63,
-  64,
-  65,
-  66,
-  67,
-  68,
-  69,
-  70,
-  88,
-  89,
-  90,
-  91,
-  92,
-  93,
-  94,
-  95,
-  96,
-  167,
-  168,
-  169
- ],
- "schema_version": 1
+  "schema_version": 1,
+  "hsk30": {
+    "source": "courseware",
+    "ref": {
+      "book": "hsk30_courseware",
+      "pages": [
+        5,
+        16,
+        25
+      ]
+    },
+    "new_words": [
+      {
+        "n": 1,
+        "zh": "班级",
+        "pinyin": "bānjí",
+        "pos": "n.",
+        "en": "class",
+        "text": 1
+      },
+      {
+        "n": 2,
+        "zh": "课本",
+        "pinyin": "kèběn",
+        "pos": "n.",
+        "en": "textbook",
+        "text": 1
+      },
+      {
+        "n": 3,
+        "zh": "课文",
+        "pinyin": "kèwén",
+        "pos": "n.",
+        "en": "text",
+        "text": 1
+      },
+      {
+        "n": 4,
+        "zh": "笔记",
+        "pinyin": "bǐjì",
+        "pos": "n.",
+        "en": "notes",
+        "text": 1
+      },
+      {
+        "n": 5,
+        "zh": "练",
+        "pinyin": "liàn",
+        "pos": "v.",
+        "en": "practice",
+        "text": 1
+      },
+      {
+        "n": 6,
+        "zh": "外语",
+        "pinyin": "wàiyǔ",
+        "pos": "n.",
+        "en": "foreign language",
+        "text": 1
+      },
+      {
+        "n": 7,
+        "zh": "懂得",
+        "pinyin": "dǒngde",
+        "pos": "v.",
+        "en": "understand",
+        "text": 1
+      },
+      {
+        "n": 8,
+        "zh": "中",
+        "pinyin": "zhōng",
+        "pos": "n.",
+        "en": "middle; inside",
+        "text": 3
+      },
+      {
+        "n": 9,
+        "zh": "加",
+        "pinyin": "jiā",
+        "pos": "v.",
+        "en": "add",
+        "text": 4
+      }
+    ],
+    "grammar": [],
+    "exercises": []
+  }
 }

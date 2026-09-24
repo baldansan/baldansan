@@ -2010,6 +2010,126 @@
    ]
   }
  },
+ "hsk30": {
+  "source": "courseware",
+  "ref": {
+   "book": "hsk30_courseware",
+   "pages": [
+    5,
+    15,
+    34
+   ]
+  },
+  "new_words": [
+   {
+    "n": 1,
+    "zh": "山",
+    "pinyin": "shān",
+    "pos": "n.",
+    "en": "mountain",
+    "text": 1
+   },
+   {
+    "n": 2,
+    "zh": "爬",
+    "pinyin": "pá",
+    "pos": "v.",
+    "en": "climb",
+    "text": 1
+   },
+   {
+    "n": 3,
+    "zh": "雨衣",
+    "pinyin": "yǔyī",
+    "pos": "n.",
+    "en": "raincoat",
+    "text": 1
+   },
+   {
+    "n": 4,
+    "zh": "花园",
+    "pinyin": "huāyuán",
+    "pos": "n.",
+    "en": "(flower) garden",
+    "text": 1
+   },
+   {
+    "n": 5,
+    "zh": "大衣",
+    "pinyin": "dàyī",
+    "pos": "n.",
+    "en": "overcoat",
+    "text": 2
+   },
+   {
+    "n": 6,
+    "zh": "上衣",
+    "pinyin": "shàngyī",
+    "pos": "n.",
+    "en": "top",
+    "text": 2
+   },
+   {
+    "n": 7,
+    "zh": "短裤",
+    "pinyin": "duǎnkù",
+    "pos": "n.",
+    "en": "shorts",
+    "text": 2
+   },
+   {
+    "n": 8,
+    "zh": "鞋",
+    "pinyin": "xié",
+    "pos": "n.",
+    "en": "shoes",
+    "text": 2
+   },
+   {
+    "n": 9,
+    "zh": "大小",
+    "pinyin": "dàxiǎo",
+    "pos": "n.",
+    "en": "size",
+    "text": 2
+   },
+   {
+    "n": 10,
+    "zh": "记",
+    "pinyin": "jì",
+    "pos": "n.",
+    "en": "remember",
+    "text": 2
+   },
+   {
+    "n": 11,
+    "zh": "子",
+    "pinyin": "zi",
+    "pos": "suf.",
+    "en": "uesd after a noun, adjective or verb to form a noun",
+    "text": 2
+   },
+   {
+    "n": 12,
+    "zh": "或",
+    "pinyin": "huò",
+    "pos": "conj.",
+    "en": "or",
+    "text": 4
+   },
+   {
+    "n": 13,
+    "zh": "黄色",
+    "pinyin": "huángsè",
+    "pos": "n.",
+    "en": "yellow",
+    "text": 4
+   }
+  ],
+  "grammar": [],
+  "exercises": [],
+  "unclear": []
+ },
  "audio": {
   "textbook": [
    "hsk3-textbook-0301.mp3",
@@ -2037,7 +2157,8 @@
   "Сурах бичиг PDF х.39–40 注释2: гарчиг номд «存在的表达：Location Word+V着+Numeral+Measure Word+ N» (англи нэр томьёотой хятад гарчиг) — «＋»-ээр нэгтгэж бичсэн; хоёр хүснэгт (эерэг/үгүйсгэл) structure_rows-д, хүснэгтийн өгүүлбэрүүдийг examples-д (дугааргүй) оруулсан.",
   "Сурах бичиг 注释1, 注释3-т бүтцийн хүснэгт байхгүй; багшийн номын ［A还是B？］［A或者B。］ болон ［地方＋动词＋着＋名词（短语）］ хайрцгийг teacher.steps-д оруулсан.",
   "Сурах бичиг 课文2/3 «这上面写着» — пиньинь «zhè shàngmian» (mian саармаг) номд байгаагаар. Багшийн номын 课文3 хариулт «因为上面写着……» (这 байхгүй) — номд байгаагаар.",
-  "Сурах бичиг PDF х.44 小组活动 — «3~4人一组» — номд хагас өргөнтэй «~» хэвлэгдсэн, хэвээр нь үлдээсэн."
+  "Сурах бичиг PDF х.44 小组活动 — «3~4人一组» — номд хагас өргөнтэй «~» хэвлэгдсэн, хэвээр нь үлдээсэн.",
+  "HSK 3.0 нэмэлт үгс (BLCUP 课件 补充HSK3.0, слайд 5、15、34) hsk30-д"
  ],
  "verified_pages": [
   19,

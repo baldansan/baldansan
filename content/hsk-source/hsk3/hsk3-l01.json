@@ -2033,6 +2033,128 @@
    ]
   }
  },
+ "hsk30": {
+  "source": "courseware",
+  "ref": {
+   "book": "hsk30_courseware",
+   "pages": [
+    5,
+    17,
+    27,
+    28,
+    39
+   ]
+  },
+  "new_words": [
+   {
+    "n": 1,
+    "zh": "工作日",
+    "pinyin": "gōngzuòrì",
+    "pos": "n.",
+    "en": "weekday",
+    "text": 1
+   },
+   {
+    "n": 2,
+    "zh": "兴趣",
+    "pinyin": "xìngqù",
+    "pos": "n.",
+    "en": "interest",
+    "text": 2
+   },
+   {
+    "n": 3,
+    "zh": "初中",
+    "pinyin": "chūzhōng",
+    "pos": "n.",
+    "en": "junior high school",
+    "text": 2
+   },
+   {
+    "n": 4,
+    "zh": "北",
+    "pinyin": "běi",
+    "pos": "n.",
+    "en": "north",
+    "text": 3
+   },
+   {
+    "n": 5,
+    "zh": "东南",
+    "pinyin": "dōngnán",
+    "pos": "n.",
+    "en": "southeast",
+    "text": 3
+   },
+   {
+    "n": 6,
+    "zh": "东北",
+    "pinyin": "dōngběi",
+    "pos": "n.",
+    "en": "northeast；northeast China",
+    "text": 3
+   },
+   {
+    "n": 7,
+    "zh": "东方",
+    "pinyin": "dōngfāng",
+    "pos": "n.",
+    "en": "east; the East",
+    "text": 3
+   },
+   {
+    "n": 8,
+    "zh": "西方",
+    "pinyin": "xīfāng",
+    "pos": "n.",
+    "en": "west; the West",
+    "text": 3
+   },
+   {
+    "n": 9,
+    "zh": "西北",
+    "pinyin": "xīběi",
+    "pos": "n.",
+    "en": "northwest",
+    "text": 3
+   },
+   {
+    "n": 10,
+    "zh": "西南",
+    "pinyin": "xīnán",
+    "pos": "n.",
+    "en": "southwest",
+    "text": 3
+   },
+   {
+    "n": 11,
+    "zh": "搬家",
+    "pinyin": "bānjiā",
+    "pos": "v.",
+    "en": "move house",
+    "text": 4
+   },
+   {
+    "n": 12,
+    "zh": "一块儿",
+    "pinyin": "yíkuàir",
+    "pos": "n./adv.",
+    "en": "the same place/together",
+    "text": 4
+   },
+   {
+    "n": 13,
+    "zh": "园",
+    "pinyin": "yuán",
+    "pos": "n.",
+    "en": "garden；park",
+    "text": 4
+   }
+  ],
+  "grammar": [],
+  "exercises": [],
+  "unclear": []
+ },
  "audio": {
   "textbook": [
    "hsk3-textbook-0101.mp3",
@@ -2056,7 +2178,8 @@
   "Сонсгол 第一部分-ийн сонголт A–F нь зураг (номд текстгүй) — options-д зургийн объектив англи тайлбар '[picture] …' гэж оруулав.",
   "Сурах бичгийн 练习 1–4 болон 练一练-ийн албан ёсны хариулт багшийн номд хэвлэгдээгүй (зөвхөн 热身 1, 2-ын хариулт бий) — answer оруулаагүй.",
   "Сурах бичгийн 课文 гарчгийн пиньинь (Tán zhōumò de dǎsuàn / Zài jiā / Liáo lǚyóu jìhuà / Zhǔnbèi qù lǚyóu) — SourceText-д талбар байхгүй тул энд тэмдэглэв.",
-  "Дасгалын номын 例如 зүйлсийн хариулт (D / √ / × / A / C / E / E / C / 河上有一条小船。 / 关 / 那、哪 / 找人、找到) дасгалын номд өөрт нь хэвлэгдсэн (answer_ref = workbook)."
+  "Дасгалын номын 例如 зүйлсийн хариулт (D / √ / × / A / C / E / E / C / 河上有一条小船。 / 关 / 那、哪 / 找人、找到) дасгалын номд өөрт нь хэвлэгдсэн (answer_ref = workbook).",
+  "HSK 3.0 нэмэлт үгс (BLCUP 课件 补充HSK3.0, слайд 5、17、27、28、39) hsk30-д"
  ],
  "verified_pages": [
   17,

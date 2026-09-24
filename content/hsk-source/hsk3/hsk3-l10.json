@@ -1,14 +1,1986 @@
 {
- "level": "hsk3",
- "lesson": 10,
- "book": "HSK3",
- "title_zh": "数学比历史难多了",
- "title_pinyin": "Shùxué bǐ lìshǐ nánduō le",
- "title_en": "Maths is much harder than history",
- "textbook": {
-  "ref": {
-   "book": "textbook",
-   "pages": [
+  "level": "hsk3",
+  "lesson": 10,
+  "book": "HSK3",
+  "title_zh": "数学比历史难多了",
+  "title_pinyin": "Shùxué bǐ lìshǐ nánduō le",
+  "title_en": "Maths is much harder than history",
+  "textbook": {
+    "ref": {
+      "book": "textbook",
+      "pages": [
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105
+      ]
+    },
+    "warmup": [
+      {
+        "instruction_zh": "给下面的词语选择对应的图片",
+        "instruction_en": "Match the pictures with the words.",
+        "items": [
+          "①历史 lìshǐ",
+          "②体育 tǐyù",
+          "③个子 gèzi",
+          "④车站 chēzhàn",
+          "⑤数学 shùxué",
+          "⑥自行车 zìxíngchē"
+        ],
+        "pictures_desc_en": [
+          "A: a white mountain bike standing on a grass lawn",
+          "B: a green chalkboard covered with maths formulas (E=mc², functions, geometric figures)",
+          "C: an old book titled “HISTORY” with a compass, a globe and a quill pen",
+          "D: a little boy in a blue T-shirt and jeans with his hand on top of his head as if showing his height",
+          "E: a bus stop shelter with a bus sign by a field",
+          "F: various sports balls (basketball, football, American football, baseball, tennis ball) and a tennis racket"
+        ]
+      },
+      {
+        "instruction_zh": "写出下列词语的反义词",
+        "instruction_en": "Write down the antonym of each of the following words.",
+        "items": [
+          "例如：大—小",
+          "新 xīn—________",
+          "高 gāo—________",
+          "难 nán—________",
+          "远 yuǎn—________",
+          "贵 guì—________",
+          "胖 pàng—________"
+        ]
+      }
+    ],
+    "texts": [
+      {
+        "n": 1,
+        "title_zh": "在教室",
+        "title_en": "In the classroom",
+        "kind": "dialogue",
+        "audio": "hsk3-textbook-1001.mp3",
+        "lines": [
+          {
+            "speaker": "朋友",
+            "zh": "大山，你和马可谁个子高？",
+            "pinyin": "Dàshān, nǐ hé Mǎkě shéi gèzi gāo?"
+          },
+          {
+            "speaker": "大山",
+            "zh": "马可比我高，我比马可矮一点儿。",
+            "pinyin": "Mǎkě bǐ wǒ gāo, wǒ bǐ Mǎkě ǎi yìdiǎnr."
+          },
+          {
+            "speaker": "朋友",
+            "zh": "那你们谁大？",
+            "pinyin": "Nà nǐmen shéi dà?"
+          },
+          {
+            "speaker": "大山",
+            "zh": "我比马可大两岁。",
+            "pinyin": "Wǒ bǐ Mǎkě dà liǎng suì."
+          },
+          {
+            "speaker": "朋友",
+            "zh": "你们谁的汉语说得更好？",
+            "pinyin": "Nǐmen shéi de Hànyǔ shuō de gèng hǎo?"
+          },
+          {
+            "speaker": "大山",
+            "zh": "马可比我说得好一些，我的汉语没有他好。",
+            "pinyin": "Mǎkě bǐ wǒ shuō de hǎo yìxiē, wǒ de Hànyǔ méiyǒu tā hǎo."
+          }
+        ],
+        "new_words": [
+          {
+            "n": 1,
+            "zh": "个子",
+            "pinyin": "gèzi",
+            "pos": "n.",
+            "en": "height, stature",
+            "text": 1
+          },
+          {
+            "n": 2,
+            "zh": "矮",
+            "pinyin": "ǎi",
+            "pos": "adj.",
+            "en": "short",
+            "text": 1
+          }
+        ]
+      },
+      {
+        "n": 2,
+        "title_zh": "在教室",
+        "title_en": "In the classroom",
+        "kind": "dialogue",
+        "audio": "hsk3-textbook-1002.mp3",
+        "lines": [
+          {
+            "speaker": "小明",
+            "zh": "我喜欢历史课、体育课，不喜欢数学课。",
+            "pinyin": "Wǒ xǐhuan lìshǐ kè, tǐyù kè, bù xǐhuan shùxué kè."
+          },
+          {
+            "speaker": "同学",
+            "zh": "为什么？数学也很有意思啊。",
+            "pinyin": "Wèi shénme? Shùxué yě hěn yǒu yìsi a."
+          },
+          {
+            "speaker": "小明",
+            "zh": "我觉得数学比历史难多了，我听不懂。",
+            "pinyin": "Wǒ juéde shùxué bǐ lìshǐ nánduō le, wǒ tīng bu dǒng."
+          },
+          {
+            "speaker": "同学",
+            "zh": "别担心，我可以帮你。",
+            "pinyin": "Bié dān xīn, wǒ kěyǐ bāng nǐ."
+          },
+          {
+            "speaker": "小明",
+            "zh": "好啊，我们每天学多长时间？",
+            "pinyin": "Hǎo a, wǒmen měi tiān xué duō cháng shíjiān?"
+          },
+          {
+            "speaker": "同学",
+            "zh": "一两个小时吧。",
+            "pinyin": "Yì-liǎng ge xiǎoshí ba."
+          }
+        ],
+        "new_words": [
+          {
+            "n": 3,
+            "zh": "历史",
+            "pinyin": "lìshǐ",
+            "pos": "n.",
+            "en": "history",
+            "text": 2
+          },
+          {
+            "n": 4,
+            "zh": "体育",
+            "pinyin": "tǐyù",
+            "pos": "n.",
+            "en": "P.E., sports",
+            "text": 2
+          },
+          {
+            "n": 5,
+            "zh": "数学",
+            "pinyin": "shùxué",
+            "pos": "n.",
+            "en": "maths",
+            "text": 2
+          }
+        ]
+      },
+      {
+        "n": 3,
+        "title_zh": "在休息室",
+        "title_en": "In the lounge",
+        "kind": "dialogue",
+        "audio": "hsk3-textbook-1003.mp3",
+        "lines": [
+          {
+            "speaker": "同事",
+            "zh": "你最近比以前来得早多了，搬家了？",
+            "pinyin": "Nǐ zuìjìn bǐ yǐqián lái de zǎoduō le, bān jiā le?"
+          },
+          {
+            "speaker": "小丽",
+            "zh": "是啊，你不知道？我上个月就搬家了，走路二十分钟就到。",
+            "pinyin": "Shì a, nǐ bù zhīdào? Wǒ shàng ge yuè jiù bān jiā le, zǒu lù èrshí fēnzhōng jiù dào."
+          },
+          {
+            "speaker": "同事",
+            "zh": "那很方便啊。",
+            "pinyin": "Nà hěn fāngbiàn a."
+          },
+          {
+            "speaker": "小丽",
+            "zh": "我还打算买辆自行车，骑车七八分钟就能到。",
+            "pinyin": "Wǒ hái dǎsuàn mǎi liàng zìxíngchē, qí chē qī-bā fēnzhōng jiù néng dào."
+          },
+          {
+            "speaker": "同事",
+            "zh": "你不是有一辆吗？",
+            "pinyin": "Nǐ bú shì yǒu yí liàng ma?"
+          },
+          {
+            "speaker": "小丽",
+            "zh": "那辆太旧了，要换一辆，很便宜，两三百块钱。",
+            "pinyin": "Nà liàng tài jiù le, yào huàn yí liàng, hěn piányi, liǎng-sān bǎi kuài qián."
+          }
+        ],
+        "new_words": [
+          {
+            "n": 6,
+            "zh": "方便",
+            "pinyin": "fāngbiàn",
+            "pos": "adj.",
+            "en": "convenient",
+            "text": 3
+          },
+          {
+            "n": 7,
+            "zh": "自行车",
+            "pinyin": "zìxíngchē",
+            "pos": "n.",
+            "en": "bicycle",
+            "text": 3
+          },
+          {
+            "n": 8,
+            "zh": "骑",
+            "pinyin": "qí",
+            "pos": "v.",
+            "en": "to ride",
+            "text": 3
+          },
+          {
+            "n": 9,
+            "zh": "旧",
+            "pinyin": "jiù",
+            "pos": "adj.",
+            "en": "old, used, worn",
+            "text": 3
+          },
+          {
+            "n": 10,
+            "zh": "换",
+            "pinyin": "huàn",
+            "pos": "v.",
+            "en": "to change, to substitute",
+            "text": 3
+          }
+        ]
+      },
+      {
+        "n": 4,
+        "title_zh": "在看房子",
+        "title_en": "Seeing an apartment",
+        "kind": "dialogue",
+        "audio": "hsk3-textbook-1004.mp3",
+        "lines": [
+          {
+            "speaker": "大山",
+            "zh": "这两个地方的房子一样吗？",
+            "pinyin": "Zhè liǎng ge dìfang de fángzi yíyàng ma?"
+          },
+          {
+            "speaker": "中介",
+            "zh": "不一样。您看，学校外边的房子比学校里边的大一些。",
+            "pinyin": "Bù yíyàng. Nín kàn, xuéxiào wàibian de fángzi bǐ xuéxiào lǐbian de dà yìxiē."
+          },
+          {
+            "speaker": "大山",
+            "zh": "大小没关系，主要是环境，哪个更安静？",
+            "pinyin": "Dàxiǎo méi guānxi, zhǔyào shì huánjìng, nǎge gèng ānjìng?"
+          },
+          {
+            "speaker": "中介",
+            "zh": "学校里边的没有学校外边的那么安静。",
+            "pinyin": "Xuéxiào lǐbian de méiyǒu xuéxiào wàibian de nàme ānjìng."
+          },
+          {
+            "speaker": "大山",
+            "zh": "哪个方便一些呢？",
+            "pinyin": "Nǎge fāngbiàn yìxiē ne?"
+          },
+          {
+            "speaker": "中介",
+            "zh": "学校里边比学校外边方便，附近有三四个车站。",
+            "pinyin": "Xuéxiào lǐbian bǐ xuéxiào wàibian fāngbiàn, fùjìn yǒu sān-sì ge chēzhàn."
+          }
+        ],
+        "new_words": [
+          {
+            "n": 11,
+            "zh": "地方",
+            "pinyin": "dìfang",
+            "pos": "n.",
+            "en": "place",
+            "text": 4
+          },
+          {
+            "n": 12,
+            "zh": "中介",
+            "pinyin": "zhōngjiè",
+            "pos": "n.",
+            "en": "intermediary, agent",
+            "text": 4,
+            "star": true
+          },
+          {
+            "n": 13,
+            "zh": "主要",
+            "pinyin": "zhǔyào",
+            "pos": "adj.",
+            "en": "main",
+            "text": 4
+          },
+          {
+            "n": 14,
+            "zh": "环境",
+            "pinyin": "huánjìng",
+            "pos": "n.",
+            "en": "environment",
+            "text": 4
+          },
+          {
+            "n": 15,
+            "zh": "附近",
+            "pinyin": "fùjìn",
+            "pos": "n.",
+            "en": "nearby, vicinity",
+            "text": 4
+          }
+        ]
+      }
+    ],
+    "grammar": [
+      {
+        "n": 1,
+        "title_zh": "比较句2：A比B＋Adj＋一点儿／一些／得多／多了",
+        "title_en": "Comparative Sentences 2: A比B + Adj + 一点儿/一些/得多/多了",
+        "explanation_zh": "“一点儿”“一些”“得多”“多了”等词可以用于“比”字句中形容词的后边，表示事物之间的差别程度，“一点儿”和“一些”表示差别的程度不大，“得多”和“多了”表示差别的程度很大。例如：（1）–（4）\n否定形式为“A没有B（＋这么／那么）＋Adj”，例如：（5）–（8）",
+        "explanation_en": "“一点儿”, “一些”, “得多” or “多了” etc. can follow an adjective in a comparative sentence, indicating the degree of difference between things, among which “一点儿” and “一些” indicate a slight difference, while “得多” and “多了” indicate a big difference. For example: (1)–(4)\nThe negative form is “A没有B (+ 这么/那么) + Adj”. For example: (5)–(8)",
+        "structure_rows": [
+          "A比B＋Adj＋一点儿／一些／得多／多了",
+          "A没有B（＋这么／那么）＋Adj"
+        ],
+        "examples": [
+          {
+            "n": 1,
+            "zh": "大山比大卫矮一点儿。"
+          },
+          {
+            "n": 2,
+            "zh": "我今天起得比昨天晚一些。"
+          },
+          {
+            "n": 3,
+            "zh": "今天的作业比昨天多得多。"
+          },
+          {
+            "n": 4,
+            "zh": "数学比历史难多了。"
+          },
+          {
+            "n": 5,
+            "zh": "咖啡没有茶好喝。"
+          },
+          {
+            "n": 6,
+            "zh": "他没有我这么高。"
+          },
+          {
+            "n": 7,
+            "zh": "这个电影没有那个电影那么有意思。"
+          },
+          {
+            "n": 8,
+            "zh": "学校里边的（房子）没有学校外边的那么安静。"
+          }
+        ],
+        "practice_instruction_zh": "练一练　完成句子 Complete the sentences.",
+        "practice": [
+          {
+            "n": 1,
+            "zh": "今天的天气比________。"
+          },
+          {
+            "n": 2,
+            "zh": "我做的饭没有________。"
+          },
+          {
+            "n": 3,
+            "zh": "骑自行车________。"
+          }
+        ]
+      },
+      {
+        "n": 2,
+        "title_zh": "概数的表达1",
+        "title_en": "Expression of Approximate Numbers 1",
+        "explanation_zh": "汉语中，相邻两个数词连用可以表达概数。如“一二（两）、两三、三四、五六、七八、八九”等。例如：",
+        "explanation_en": "In Chinese, two adjacent numerals can be used together to indicate an approximate number, for example, “一二（两）(one or two)”, “两三 (two or three)”, “三四 (three or four)”, “五六 (five or six)”, “七八 (seven or eight)”, and “八九 (eight or nine)”. For example:",
+        "structure_rows": [
+          "一二（两）、两三、三四、五六、七八、八九"
+        ],
+        "examples": [
+          {
+            "n": 1,
+            "zh": "我每天学习一两个小时汉语。"
+          },
+          {
+            "n": 2,
+            "zh": "你都喝了三四杯咖啡了，别再喝了！"
+          },
+          {
+            "n": 3,
+            "zh": "从小丽家到公司骑车七八分钟就能到。"
+          },
+          {
+            "n": 4,
+            "zh": "学校里边比学校外边方便，附近有三四个车站。"
+          }
+        ],
+        "practice_instruction_zh": "练一练　完成句子 Complete the sentences.",
+        "practice": [
+          {
+            "n": 1,
+            "zh": "这辆自行车________。"
+          },
+          {
+            "n": 2,
+            "zh": "今天的作业我________能做完。"
+          },
+          {
+            "n": 3,
+            "zh": "我有________条黑色的裤子。"
+          }
+        ]
+      }
+    ],
+    "exercises": [
+      {
+        "n": 1,
+        "type_zh": "朗读",
+        "instruction_zh": "朗读下列短语和句子",
+        "instruction_en": "Read the following phrases and sentences aloud.",
+        "audio": "hsk3-textbook-1005.mp3",
+        "items": [
+          {
+            "n": 1,
+            "zh": "历史：历史课／中国历史／历史很长／数学比历史难多了。"
+          },
+          {
+            "n": 2,
+            "zh": "自行车：一辆自行车／骑自行车／这辆自行车太旧了／我还打算买辆自行车。"
+          },
+          {
+            "n": 3,
+            "zh": "换：换钱／换手机／换班／我要换一辆自行车。"
+          },
+          {
+            "n": 4,
+            "zh": "环境：环境很好／学校环境／环境问题／哪个环境更安静？"
+          },
+          {
+            "n": 5,
+            "zh": "附近：学校附近／附近的超市／我住在附近／学校附近有三四个车站。"
+          }
+        ]
+      },
+      {
+        "n": 2,
+        "type_zh": "选词填空",
+        "instruction_zh": "选择恰当的词语填空",
+        "instruction_en": "Choose the proper words to fill in the blanks.",
+        "word_bank": [
+          [
+            "安静",
+            "体育",
+            "个子",
+            "旧",
+            "骑"
+          ],
+          [
+            "方便",
+            "数学",
+            "换",
+            "附近",
+            "地方"
+          ]
+        ],
+        "items": [
+          {
+            "n": 1,
+            "zh": "我________比他高一点儿。"
+          },
+          {
+            "n": 2,
+            "zh": "我每天________车来学校。"
+          },
+          {
+            "n": 3,
+            "zh": "我最喜欢________课，多有意思啊。"
+          },
+          {
+            "n": 4,
+            "zh": "我喜欢住在这儿，主要是觉得这儿很________。"
+          },
+          {
+            "n": 5,
+            "zh": "这条裤子太________了，再买一条吧。"
+          },
+          {
+            "n": 6,
+            "zh": "A：我觉得你的比我的好。 B：你想要这个吗？没问题，我跟你________。"
+          },
+          {
+            "n": 7,
+            "zh": "A：你哪天比较________，我们见面聊聊天儿？ B：周末吧，来我家吃饭。"
+          },
+          {
+            "n": 8,
+            "zh": "A：这个________的天气怎么样？ B：非常好，夏天一点儿也不热。"
+          },
+          {
+            "n": 9,
+            "zh": "A：请问，这儿________有超市吗？ B：有，一直往前走就是。"
+          },
+          {
+            "n": 10,
+            "zh": "A：你怎么不太高兴？ B：我________考得不好。"
+          }
+        ]
+      },
+      {
+        "n": 3,
+        "type_zh": "完成对话",
+        "instruction_zh": "用本课新学的语言点和词语完成对话",
+        "instruction_en": "Complete the dialogues using the newly-learned language points and words.",
+        "items": [
+          {
+            "n": 1,
+            "zh": "A：你和妈妈谁起得早？ B：________。 A：她比你________起多长时间？ B：________。",
+            "picture_desc_en": "A smiling young woman sitting up in a bed with white sheets, stretching and rubbing one eye as if just woken up."
+          },
+          {
+            "n": 2,
+            "zh": "A：今天我们班来了多少学生？ B：今天来了________个学生。 A：昨天呢？ B：昨天比今天来得________。",
+            "picture_desc_en": "A teacher standing in front of a classroom full of students seated at desks, some of them raising their hands."
+          },
+          {
+            "n": 3,
+            "zh": "A：你们今天玩儿了多长时间游戏了？ B：玩儿了________了。 A：怎么玩儿了这么长时间？ B：昨天玩儿了三个小时，今天没有________。",
+            "picture_desc_en": "A father and a young son sitting on a sofa, each holding a game controller and playing a video game."
+          },
+          {
+            "n": 4,
+            "zh": "A：你看这条裤子怎么样？ B：太贵了，要________块钱。 A：那条呢？没有________。 B：我觉得还可以。",
+            "picture_desc_en": "A woman and a man in a clothing shop, each holding up a pair of blue jeans."
+          }
+        ]
+      },
+      {
+        "n": 4,
+        "type_zh": "回答问题",
+        "instruction_zh": "根据课文回答问题",
+        "instruction_en": "Answer the questions according to the texts.",
+        "items": [
+          {
+            "n": 1,
+            "zh": "马可和大山谁高？谁年龄大？谁的汉语说得好？"
+          },
+          {
+            "n": 2,
+            "zh": "小明为什么不喜欢数学课？"
+          },
+          {
+            "n": 3,
+            "zh": "小明和同学打算每天一起做什么？做多长时间？"
+          },
+          {
+            "n": 4,
+            "zh": "小丽为什么比以前来得早了？"
+          },
+          {
+            "n": 5,
+            "zh": "小丽为什么要买自行车？"
+          },
+          {
+            "n": 6,
+            "zh": "住在学校里边和学校外边有什么不一样？"
+          }
+        ]
+      }
+    ],
+    "characters": {
+      "knowledge_title_zh": "旧字新词",
+      "knowledge_zh": "读读下面的词语，想想组成的新词是什么意思。",
+      "knowledge_en": "Read the following words and guess the meanings of the newly-formed ones.",
+      "word_game": [
+        {
+          "parts": [
+            "换",
+            "季节"
+          ],
+          "result": "换季"
+        },
+        {
+          "parts": [
+            "地方",
+            "上面"
+          ],
+          "result": "地面"
+        },
+        {
+          "parts": [
+            "主要",
+            "菜"
+          ],
+          "result": "主菜"
+        }
+      ],
+      "confusable_pairs": [
+        [
+          "自",
+          "白"
+        ],
+        [
+          "更",
+          "史"
+        ],
+        [
+          "育",
+          "有"
+        ],
+        [
+          "数",
+          "楼"
+        ],
+        [
+          "骑",
+          "椅"
+        ]
+      ]
+    },
+    "application": [
+      {
+        "title_zh": "双人活动",
+        "instruction_zh": "两人一组，询问对方今年是否做过下列事情，做过多少次。用概数表达法回答。",
+        "instruction_en": "Work in pairs. Ask your partner whether or not he/she has done the following things this year, and how many times he/she has done them. Answer the questions using approximate numbers.",
+        "example_zh": [
+          "表格：| 事情 | 对方做过几次 |",
+          "| 爬山 | 爬过两三次 |",
+          "| 参加比赛 | |",
+          "| 听音乐会 | |",
+          "| 逛公园 | |",
+          "| 旅游 | |",
+          "| 上课迟到 | |"
+        ]
+      },
+      {
+        "title_zh": "小组活动",
+        "instruction_zh": "3～4人一组，通过比较，为每个人找到程度最高的方面。使用“A比B＋Adj＋一点儿／一些／得多／多了”和“A没有B（＋这么／那么）＋Adj”。",
+        "instruction_en": "Work in groups of 3-4. Compare and find each person’s most distinguishing aspect, using “A比B + Adj + 一点儿/一些/得多/多了” and “A没有B (+ 这么/那么) + Adj”.",
+        "example_zh": [
+          "例如：A：我每天听歌听半个小时。",
+          "B：我听歌的时间比A长得多，我听三个小时。",
+          "C：我听歌的时间没有B那么长。",
+          "D：我听歌的时间比B长一点儿，我听三个半小时。",
+          "D听歌的时间最长。",
+          "提示：学习的时间　看过的电影　旅游去过的地方　游泳游得远　作业写得快",
+          "表格：| 谁 | 最…… |"
+        ]
+      }
+    ],
+    "saying": {
+      "zh": "不可同日而语",
+      "pinyin": "Bù kě tóngrì’éryǔ",
+      "en": "The two cannot be mentioned in the same breath",
+      "explanation_zh": "“不可同日而语”的意思是不能放在同一个时间谈论，用来比喻差别很大，不能放在一起比较。例如：通信技术进步太快了，过去跟现在不可同日而语。",
+      "explanation_en": "“不可同日而语”, literally “(two things) cannot be mentioned in the same breath”, is used metaphorically to mean that there is no comparison between two people or two things because of the significant difference. For instance, in terms of science and technology, there is no comparison between the past and the present."
+    },
+    "culture": {
+      "title_zh": "中国人结婚时穿什么",
+      "body_zh": "以前中国人结婚时，新娘穿传统的红色旗袍。现在新娘既穿红色旗袍，也穿白色的婚纱，这表现了中国文化和西方文化的融合。在你们国家，人们结婚时穿什么呢？",
+      "body_en": "What Chinese People Wear on Their Wedding Day. In the past, brides in China wore traditional red cheongsams on their wedding days, and now they wear both red cheongsams and white wedding gowns, which mirrors that Chinese and Western cultures have been blended together. What do people wear on their wedding days in your country?"
+    }
+  },
+  "teacher": {
+    "ref": {
+      "book": "teacher",
+      "pages": [
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77
+      ]
+    },
+    "objectives_zh": [
+      "重点词语：学生能够熟练掌握：“骑、换、地方、主要、环境、附近”的词义和用法",
+      "语言点：学生能够了解并掌握：（1）“A比B＋形容词＋一点儿／一些／得多／多了”表示事物之间的差别程度（2）两个数词连用表达概数",
+      "汉字：学生能够：根据已学生词猜测出3个旧字新词“换季、地面、主菜”的意思",
+      "功能：学生能够：（1）根据两者之间的差别程度使用比较句（2）描述大概的数量"
+    ],
+    "steps": [
+      {
+        "title_zh": "复习旧课",
+        "body_zh": "1 教师展示第9课的热身图片，请学生根据图片说出生词。\n2 教师根据第9课的内容进行提问。\n（1）你学了多长时间汉语了？现在怎么样？\n（2）听、说、读、写都一样难吗？哪个容易？哪个难？\n（3）公共汽车很长时间不来，你会觉得怎么样？\n（4）你的爱好是什么？你妈妈呢？你们一样吗？\n（5）我们班有没有一样高的同学？说说他们是谁。"
+      },
+      {
+        "title_zh": "学习新课 1 热身",
+        "body_zh": "热身1：教师可依次朗读热身部分的词语，要求学生集体或单个说出图片对应的编号，教师评判正误；最后全体学生再次齐读热身环节的所有词语，要求语音标准、声调准确。\n答案：①C　②F　③D　④E　⑤B　⑥A\n热身2：可留至语言点（1）“比较句2：A比B＋形容词＋一点儿／一些／得多／多了”导入时使用。"
+      },
+      {
+        "title_zh": "2 生词",
+        "body_zh": "（1）生词快速认读及正音\n个子、矮、历史、体育、数学、方便、自行车、骑、旧、换、地方、中介、主要、环境、附近\n· 教师先带领学生快速认读一遍生词；\n· 取消拼音，带领学生再次认读；\n· 请单个学生独自认读2-3个生词；\n· 最后全班再快速认读所有的生词。\n（2）生词讲解方式\n· 直观法（如图片、照片、实物等）展示：个子、历史、体育、数学、自行车\n· 对比法展示：高—矮、新—旧\n· 启发式引导：方便\n教师给出句子部分内容让学生进行补充，如：他家楼下有一家超市，所以买东西很方便。\n（3）重点生词扩展及常用搭配\n骑—骑自行车—你会骑自行车吗？\n换—换一辆自行车—换一个手机—旧书换新书\n地方—这个地方—什么地方—每个地方都很漂亮。\n主要—主要学习语法—现在天气越来越不好，主要是环境的问题。\n环境—环境很好—公司的环境—学习环境—我们学校的学习环境很不错。\n附近—我家附近—附近的环境—请问，这儿附近有超市吗？\n练习册相关练习：P64／一／第一部分，P67／二／第二部分"
+      },
+      {
+        "title_zh": "3 语言点（1）比较句2：A比B＋形容词＋一点儿／一些／得多／多了",
+        "body_zh": "① 语言点解析\n“一点儿”“一些”“得多”“多了”等词可以用于“比”字句中形容词的后边，表示事物之间的差别程度，“一点儿”和“一些”表示差别的程度不大，“得多”和“多了”表示差别的程度很大，否定形式为“A没有B（＋这么／那么）＋形容词”。\n［框］A比B＋形容词＋一点儿\n［框］A比B＋形容词＋一些\n［框］A比B＋形容词＋得多\n［框］A比B＋形容词＋多了\n［框］A没有B（这么／那么）＋形容词\n② 语言点导入\n教师可利用本课热身2导入语言点。\n教师请学生完成填空，复习以前学过的形容词。\n答案：新—旧　高—低　难—容易　远—近　贵—便宜　胖—瘦\n教师给出情景，引导学生说出本课的目标句：\n教师：大卫1米9，小丽1米5，他们谁高？\n学生：大卫比小丽高。\n教师：大卫比小丽高一点儿还是高多了？\n学生：大卫比小丽高多了。\n③ 语言点操练\n教师给出情景，练习四种形式的比较句及其否定形式。\n例如：\n这个本子20块，那个本子18块。\n学生：这个本子比那个本子贵一点儿。\n　　　这个本子比那个本子贵一些。\n　　　那个本子没有这个本子贵。\n这本书89块，那本书18块。\n学生：这本书比那本书贵多了。\n　　　这本书比那本书贵得多。\n　　　那本书没有这本书贵。\n④ 语言点扩展练习\n教师可根据学生实际情况进行问答练习。\n你觉得历史难还是数学难？\n你觉得今天的作业多还是昨天的作业多？\n你觉得可乐好喝还是咖啡好喝？\n注意：本句型中的形容词前一般不能再有程度副词的修饰。"
+      },
+      {
+        "title_zh": "3 语言点（2）概数的表达",
+        "body_zh": "① 语言点解析\n相邻两个数词连用可以表达概数，例如“三四个”表示“三个或者四个”。\n② 语言点导入\n教师就地取材，收集几本学生的汉语书，引导学生说出目标句：\n教师：（不给学生看清楚具体多少本）这是多少本汉语书？\n学生1：六本。\n学生2：七本。\n教师：六本或者七本，老师有六七本汉语书。\n③ 语言点操练\n教师给出情景，请学生完成句子。\n例如：楼下有八辆或者九辆自行车。——楼下有八九辆自行车。\n　　　这些东西要三十或者四十块钱。\n　　　他买了四瓶或者五瓶牛奶。\n④ 语言点扩展练习\n教师提问，请学生用概数回答。\n你昨天学习了多长时间？\n你昨晚睡了几个小时？\n你现在身上有多少钱？\n注意：相邻的两个数字如果是“九十”则表示确定的数“90”，而不是概数。"
+      },
+      {
+        "title_zh": "4 课文 课文1",
+        "body_zh": "（1）让学生听两遍录音并回答下列问题：\n大山和马可谁高？——马可比大山高一点儿。\n大山和马可谁大？——大山比马可大两岁。\n大山和马可谁的汉语说得更好？——马可比大山说得更好一些。\n（2）教师领读课文两遍，让学生分角色朗读课文，注意说话人的语气。\n（3）模仿练习\n学生两人一组，根据提示词模仿课文内容进行对话练习。\nA：……，你和……个子高？\nB：……比我高，我比……。\nA：那你们……？\nB：我比……。\nA：你们谁……？\nB：……比我……，我的……。"
+      },
+      {
+        "title_zh": "4 课文 课文2",
+        "body_zh": "（1）让学生听两遍录音并回答下列问题：\n男的喜欢什么课？——他喜欢历史课、体育课。\n男的为什么不喜欢数学课？——他觉得数学比历史难多了。\n他们要每天一起学多长时间？——他们要每天一起学一两个小时。\n（2）教师领读课文两遍，让学生分角色朗读课文。\n（3）模仿练习\n学生两人一组，根据提示词模仿课文内容进行对话练习。\nA：我喜欢……，不喜欢……。\nB：为什么？……也……。\nA：我觉得……，我……。\nB：别……，我可以……。\nA：好，我们每天……？\nB：……吧。"
+      },
+      {
+        "title_zh": "4 课文 课文3",
+        "body_zh": "（1）让学生听两遍录音并回答下列问题：\n女的为什么比以前来得早多了？——因为她搬家了，走路二十分钟就到。\n女的打算买什么？——她打算买一辆自行车。\n换自行车贵不贵？多少钱？——不贵，很便宜，两三百块钱。\n（2）教师领读课文两遍，让学生分角色朗读课文。\n（3）教师给提示词，带领学生复述课文。\n提示词：最近、比、搬家、方便、自行车、换、便宜"
+      },
+      {
+        "title_zh": "4 课文 课文4",
+        "body_zh": "（1）让学生听两遍录音并回答下列问题：\n哪个房子大一些？——学校外边的房子比学校里边的大一些。\n男的觉得什么很重要？——他觉得环境更重要。\n哪个房子更方便？——学校里边的房子比学校外边的方便一些。\n（2）教师领读课文两遍，让学生分角色朗读课文，注意说话人的语气。\n（3）教师给提示词，带领学生复述课文。\n提示词：房子、一样、大、环境、安静、方便、车站\n练习册相关练习：第70页／四"
+      },
+      {
+        "title_zh": "5 汉字",
+        "body_zh": "旧字新词：\n① 教师领读以前学过的词语和新词，并让学生猜猜新词的意思。\n· 领读：换、季节、换季\n问学生：“换季”是什么意思？——换季节，季节变了。\n· 领读：地方、上面、地面\n问学生：“地面”是什么意思？——地的上面。\n扩展提问：地面的下边怎么说？——地下。（根据实际情况选用）\n· 领读：主要、菜、主菜\n问学生：“主菜”是什么意思？——吃饭的时候，主要吃的菜。\n② 教师领读新词扩展，通过情景，理解新词的意思和用法。\n换季：换季了／换季的衣服／什么时候换季？\n地面：地面上／地面上很干净／昨天下雨了，现在地面上有很多水。\n主菜：不吃主菜／今天的主菜是什么？／今天的主菜很好吃。\n汉字辨认练习：\n辨认下列汉字并组词。\n自：________、________　白：________、________\n更：________、________　史：________、________\n育：________、________　有：________、________\n数：________、________　楼：________、________\n骑：________、________　椅：________、________\n练习册相关练习：第70页／三／第三部分"
+      },
+      {
+        "title_zh": "6 补充课堂活动——我来做，你来猜",
+        "body_zh": "活动规则：A、B两个同学一组到教室前边完成，教师给A同学和其他同学出示词语卡片，B同学不能看。A同学要用动作表演出卡片上词语的内容，B同学根据A同学的表演猜出这个词语是什么，并用这个词语说一个句子。\n参考词语：个子、矮、体育、历史、数学、骑自行车、换手机、三四块钱……"
+      },
+      {
+        "title_zh": "7 俗语",
+        "body_zh": "教师引导学生理解俗语的含义，注意这里的“语”是“说”的意思，这句俗语的意思主要是强调变化大、变化快。"
+      },
+      {
+        "title_zh": "8 本课小结",
+        "body_zh": "· 语言点：用“A比B＋形容词＋一点儿／一些／得多／多了”表示差异程度\n　　　　　用相邻数词表示概数\n· 汉　字：旧字新词：换季、地面、主菜"
+      },
+      {
+        "title_zh": "文化：中国人结婚时穿什么",
+        "body_zh": "1 文化点解析\n① 中国人崇尚红色，因为它象征着喜庆和活力，所以传统的婚礼服饰是红色的，逢年过节，人们也喜欢用红色来进行装饰。\n② 中国人与西方人对颜色的看法不同，中国人相信主管杀戮的神是白虎神，认为白色象征着死亡、凶险。但是西方人却认为白色象征着纯洁、高雅，因此西方人结婚时喜欢穿白色的婚纱。\n③ 西方人穿白色婚纱的习俗在一百多年前传入中国，并被许多中国人接受，因此，我们现在也经常看到中国新娘结婚时穿白色的婚纱，这表现了中国文化和西方文化的融合。\n2 文化点参考处理方式\n· 教师介绍中国人的思想观念中红色和白色的象征意义。\n· 请学生说说自己国家的思想观念中，红色和白色的象征意义。\n· 教师请学生说说其他中国文化和西方文化融合的例子。"
+      }
+    ],
+    "notes_zh": [
+      "注意：本句型中的形容词前一般不能再有程度副词的修饰。（语言点1）",
+      "注意：相邻的两个数字如果是“九十”则表示确定的数“90”，而不是概数。（语言点2）",
+      "扩展提问：地面的下边怎么说？——地下。（根据实际情况选用）（汉字·旧字新词）",
+      "注意这里的“语”是“说”的意思，这句俗语的意思主要是强调变化大、变化快。（俗语）"
+    ],
+    "warmup_answers_zh": [
+      "热身1 答案：①C　②F　③D　④E　⑤B　⑥A",
+      "热身2：可留至语言点（1）导入时使用。答案：新—旧　高—低　难—容易　远—近　贵—便宜　胖—瘦"
+    ],
+    "text_questions": [
+      {
+        "text": 1,
+        "q_zh": "大山和马可谁高？",
+        "a_zh": "马可比大山高一点儿。"
+      },
+      {
+        "text": 1,
+        "q_zh": "大山和马可谁大？",
+        "a_zh": "大山比马可大两岁。"
+      },
+      {
+        "text": 1,
+        "q_zh": "大山和马可谁的汉语说得更好？",
+        "a_zh": "马可比大山说得更好一些。"
+      },
+      {
+        "text": 2,
+        "q_zh": "男的喜欢什么课？",
+        "a_zh": "他喜欢历史课、体育课。"
+      },
+      {
+        "text": 2,
+        "q_zh": "男的为什么不喜欢数学课？",
+        "a_zh": "他觉得数学比历史难多了。"
+      },
+      {
+        "text": 2,
+        "q_zh": "他们要每天一起学多长时间？",
+        "a_zh": "他们要每天一起学一两个小时。"
+      },
+      {
+        "text": 3,
+        "q_zh": "女的为什么比以前来得早多了？",
+        "a_zh": "因为她搬家了，走路二十分钟就到。"
+      },
+      {
+        "text": 3,
+        "q_zh": "女的打算买什么？",
+        "a_zh": "她打算买一辆自行车。"
+      },
+      {
+        "text": 3,
+        "q_zh": "换自行车贵不贵？多少钱？",
+        "a_zh": "不贵，很便宜，两三百块钱。"
+      },
+      {
+        "text": 4,
+        "q_zh": "哪个房子大一些？",
+        "a_zh": "学校外边的房子比学校里边的大一些。"
+      },
+      {
+        "text": 4,
+        "q_zh": "男的觉得什么很重要？",
+        "a_zh": "他觉得环境更重要。"
+      },
+      {
+        "text": 4,
+        "q_zh": "哪个房子更方便？",
+        "a_zh": "学校里边的房子比学校外边的方便一些。"
+      }
+    ],
+    "summary_zh": "语言点：用“A比B＋形容词＋一点儿／一些／得多／多了”表示差异程度；用相邻数词表示概数。汉字：旧字新词：换季、地面、主菜。"
+  },
+  "workbook": {
+    "ref": {
+      "book": "workbook",
+      "pages": [
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74
+      ]
+    },
+    "answers_ref": {
+      "book": "teacher",
+      "pages": [
+        170,
+        171,
+        172
+      ]
+    },
+    "sections": [
+      {
+        "n": "一、听力 第一部分",
+        "type_zh": "听力 第一部分",
+        "instruction_zh": "第1–5题：听对话，选择与对话内容一致的图片",
+        "instruction_en": "Questions 1-5: Choose the right picture for each dialogue you hear.",
+        "audio": "hsk3-workbook-10-part1.mp3",
+        "items": [
+          {
+            "n": "例",
+            "zh": "男：喂，请问张经理在吗？ 女：他正在开会，您半个小时以后再打，好吗？",
+            "transcript_zh": "男：喂，请问张经理在吗？ 女：他正在开会，您半个小时以后再打，好吗？",
+            "options": {
+              "A": "[picture] many children running and playing on a sports ground (with pitch lines) in front of a school building",
+              "B": "[picture] people clinking glasses at a restaurant table (a young woman and an older couple)",
+              "C": "[picture] a female teacher at a blackboard (with a triangle and formulas) explaining to a girl student, another student seated in the foreground",
+              "D": "[picture] a smiling woman in a uniform talking on a telephone",
+              "E": "[picture] a man in glasses talking on a mobile phone and covering one ear, beside a road with heavy traffic",
+              "F": "[picture] a salesman in a suit talking with a young couple next to a car in a car showroom"
+            },
+            "answer": "D",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                68
+              ]
+            }
+          },
+          {
+            "n": 1,
+            "zh": "",
+            "options": {
+              "A": "[picture] many children running and playing on a sports ground (with pitch lines) in front of a school building",
+              "B": "[picture] people clinking glasses at a restaurant table (a young woman and an older couple)",
+              "C": "[picture] a female teacher at a blackboard (with a triangle and formulas) explaining to a girl student, another student seated in the foreground",
+              "D": "[picture] a smiling woman in a uniform talking on a telephone",
+              "E": "[picture] a man in glasses talking on a mobile phone and covering one ear, beside a road with heavy traffic",
+              "F": "[picture] a salesman in a suit talking with a young couple next to a car in a car showroom"
+            },
+            "transcript_zh": "男：妈，你看，给笑笑讲题的那个就是我们班数学老师。 女：她个子真高，讲得怎么样？",
+            "answer": "C",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                172
+              ]
+            }
+          },
+          {
+            "n": 2,
+            "zh": "",
+            "options": {
+              "A": "[picture] many children running and playing on a sports ground (with pitch lines) in front of a school building",
+              "B": "[picture] people clinking glasses at a restaurant table (a young woman and an older couple)",
+              "C": "[picture] a female teacher at a blackboard (with a triangle and formulas) explaining to a girl student, another student seated in the foreground",
+              "D": "[picture] a smiling woman in a uniform talking on a telephone",
+              "E": "[picture] a man in glasses talking on a mobile phone and covering one ear, beside a road with heavy traffic",
+              "F": "[picture] a salesman in a suit talking with a young couple next to a car in a car showroom"
+            },
+            "transcript_zh": "女：喂，你听得见我说话吗？ 男：喂，喂，你等一会儿，我找个安静点儿的地方再跟你说。",
+            "answer": "E",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                172
+              ]
+            }
+          },
+          {
+            "n": 3,
+            "zh": "",
+            "options": {
+              "A": "[picture] many children running and playing on a sports ground (with pitch lines) in front of a school building",
+              "B": "[picture] people clinking glasses at a restaurant table (a young woman and an older couple)",
+              "C": "[picture] a female teacher at a blackboard (with a triangle and formulas) explaining to a girl student, another student seated in the foreground",
+              "D": "[picture] a smiling woman in a uniform talking on a telephone",
+              "E": "[picture] a man in glasses talking on a mobile phone and covering one ear, beside a road with heavy traffic",
+              "F": "[picture] a salesman in a suit talking with a young couple next to a car in a car showroom"
+            },
+            "transcript_zh": "男：谢谢你们请我们吃饭，这家饭馆的环境真好，菜也很好吃，特别是主菜。 女：我很高兴你们喜欢这个地方，下次我们再来。",
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                172
+              ]
+            }
+          },
+          {
+            "n": 4,
+            "zh": "",
+            "options": {
+              "A": "[picture] many children running and playing on a sports ground (with pitch lines) in front of a school building",
+              "B": "[picture] people clinking glasses at a restaurant table (a young woman and an older couple)",
+              "C": "[picture] a female teacher at a blackboard (with a triangle and formulas) explaining to a girl student, another student seated in the foreground",
+              "D": "[picture] a smiling woman in a uniform talking on a telephone",
+              "E": "[picture] a man in glasses talking on a mobile phone and covering one ear, beside a road with heavy traffic",
+              "F": "[picture] a salesman in a suit talking with a young couple next to a car in a car showroom"
+            },
+            "transcript_zh": "女：听说你们店可以用旧车换新车？ 男：对，这边请，我来给您介绍一下吧。您有旧车吗？",
+            "answer": "F",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                172
+              ]
+            }
+          },
+          {
+            "n": 5,
+            "zh": "",
+            "options": {
+              "A": "[picture] many children running and playing on a sports ground (with pitch lines) in front of a school building",
+              "B": "[picture] people clinking glasses at a restaurant table (a young woman and an older couple)",
+              "C": "[picture] a female teacher at a blackboard (with a triangle and formulas) explaining to a girl student, another student seated in the foreground",
+              "D": "[picture] a smiling woman in a uniform talking on a telephone",
+              "E": "[picture] a man in glasses talking on a mobile phone and covering one ear, beside a road with heavy traffic",
+              "F": "[picture] a salesman in a suit talking with a young couple next to a car in a car showroom"
+            },
+            "transcript_zh": "男：看，那么多人踢足球，他们在比赛吗？ 女：不是，他们在上体育课呢。",
+            "answer": "A",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                172
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "一、听力 第二部分",
+        "type_zh": "听力 第二部分",
+        "instruction_zh": "第6–10题：听句子，判断对错",
+        "instruction_en": "Questions 6-10: Decide whether the statements are true or false based on the sentences you hear.",
+        "audio": "hsk3-workbook-10-part2.mp3",
+        "items": [
+          {
+            "n": "例1",
+            "zh": "他希望自己很健康。",
+            "transcript_zh": "为了让自己更健康，他每天都花一个小时去锻炼身体。",
+            "answer": "√",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                69
+              ]
+            }
+          },
+          {
+            "n": "例2",
+            "zh": "那块儿手表不是他的。",
+            "transcript_zh": "今天我想早点儿回家。看了看手表，才5点。过了一会儿再看表，还是5点，我这才发现我的手表不走了。",
+            "answer": "×",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                69
+              ]
+            }
+          },
+          {
+            "n": 6,
+            "zh": "今天比昨天冷得多。",
+            "transcript_zh": "地面上怎么都是雪？昨天我女朋友还穿裙子呢，今天怎么就下雪了？",
+            "answer": "√",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                172
+              ]
+            }
+          },
+          {
+            "n": 7,
+            "zh": "他们要回家了。",
+            "transcript_zh": "走，找个环境好的地方，我早就想跟你聊聊了，这儿附近有没有安静点儿的咖啡店？",
+            "answer": "×",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                172
+              ]
+            }
+          },
+          {
+            "n": 8,
+            "zh": "爸爸很健康，因为他喜欢运动。",
+            "transcript_zh": "我爸爸身体那么好，主要是因为每天锻炼。",
+            "answer": "√",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                172
+              ]
+            }
+          },
+          {
+            "n": 9,
+            "zh": "他每天工作很累。",
+            "transcript_zh": "我每天工作八九个小时，中午也不能休息，能不累吗？",
+            "answer": "√",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                172
+              ]
+            }
+          },
+          {
+            "n": 10,
+            "zh": "以前儿子不喜欢学习。",
+            "transcript_zh": "我儿子的学习比以前好多了，主要是他有兴趣了。",
+            "answer": "√",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                172
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "一、听力 第三部分",
+        "type_zh": "听力 第三部分",
+        "instruction_zh": "第11–15题：听短对话，选择正确答案",
+        "instruction_en": "Questions 11-15: Listen to the short dialogues and choose the right answers.",
+        "audio": "hsk3-workbook-10-part3.mp3",
+        "items": [
+          {
+            "n": "例",
+            "zh": "男的想让小王做什么？",
+            "transcript_zh": "男：小王，帮我开一下门，好吗？谢谢！ 女：没问题。您去超市了？买了这么多东西。 问：男的想让小王做什么？",
+            "options": {
+              "A": "开门",
+              "B": "拿东西",
+              "C": "去超市买东西"
+            },
+            "answer": "A",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                69
+              ]
+            }
+          },
+          {
+            "n": 11,
+            "zh": "女的是什么意思？",
+            "options": {
+              "A": "买两个",
+              "B": "买三个",
+              "C": "少买一点儿"
+            },
+            "transcript_zh": "男：前边有卖水果的，我们买点儿苹果吧？ 女：现在是换季的时候，苹果不一定好吃，别买太多，买两三个就行。 问：女的是什么意思？",
+            "answer": "C",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                172
+              ]
+            }
+          },
+          {
+            "n": 12,
+            "zh": "女的现在怎么样了？",
+            "options": {
+              "A": "好点儿了",
+              "B": "好多了",
+              "C": "越来越不好"
+            },
+            "transcript_zh": "男：今天怎么样？还发烧吗？ 女：吃了药比昨天好一些了，但还头疼。 问：女的现在怎么样了？",
+            "answer": "A",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                172
+              ]
+            }
+          },
+          {
+            "n": 13,
+            "zh": "小刚和方明谁高？",
+            "options": {
+              "A": "小刚",
+              "B": "方明",
+              "C": "一样高"
+            },
+            "transcript_zh": "女：小刚，方明高还是你高？ 男：他个子也不高，只比我高一点儿。 问：小刚和方明谁高？",
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                172
+              ]
+            }
+          },
+          {
+            "n": 14,
+            "zh": "他们可能在哪儿？",
+            "options": {
+              "A": "飞机上",
+              "B": "电影院",
+              "C": "火车上"
+            },
+            "transcript_zh": "男：怎么还没到？我都看了三四个电影了。 女：我们是从中国到美国，还要再飞五六个小时。你睡一会儿，或者再看几个电影。 问：他们可能在哪儿？",
+            "answer": "A",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                172
+              ]
+            }
+          },
+          {
+            "n": 15,
+            "zh": "这个地方有几个姓王的老师？",
+            "options": {
+              "A": "三个",
+              "B": "三十个",
+              "C": "很多"
+            },
+            "transcript_zh": "女：喂，您好，请找一下王老师。 男：我们这儿有三四个姓王的老师呢，您找哪一个？ 问：这个地方有几个姓王的老师？",
+            "answer": "C",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                172
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "一、听力 第四部分",
+        "type_zh": "听力 第四部分",
+        "instruction_zh": "第16–20题：听长对话，选择正确答案",
+        "instruction_en": "Questions 16-20: Listen to the dialogues and choose the right answers.",
+        "audio": "hsk3-workbook-10-part4.mp3",
+        "items": [
+          {
+            "n": "例",
+            "zh": "男的在做什么？",
+            "transcript_zh": "女：晚饭做好了，准备吃饭了。 男：等一会儿，比赛还有三分钟就结束了。 女：快点儿吧，一起吃，菜冷了就不好吃了。 男：你先吃，我马上就看完了。 问：男的在做什么？",
+            "options": {
+              "A": "洗澡",
+              "B": "吃饭",
+              "C": "看电视"
+            },
+            "answer": "C",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                70
+              ]
+            }
+          },
+          {
+            "n": 16,
+            "zh": "关于男的，可以知道什么？",
+            "options": {
+              "A": "可能骑自行车",
+              "B": "可能坐公共汽车",
+              "C": "要去上课"
+            },
+            "transcript_zh": "女：你要出去吗？ 男：小丽，我问你，去中山南路骑自行车快还是坐公共汽车快？ 女：这个时间，骑车比坐公共汽车快得多。你这么着急，要去上课吗？ 男：不，我要去见女朋友。 问：关于男的，可以知道什么？",
+            "answer": "A",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                172
+              ]
+            }
+          },
+          {
+            "n": 17,
+            "zh": "男的是什么意思？",
+            "options": {
+              "A": "明天很冷",
+              "B": "明天是阴天",
+              "C": "下雪时最冷"
+            },
+            "transcript_zh": "女：明天是晴天还是阴天？ 男：上午下雪，下午就晴了。 女：太好了，明天可以穿我的新裙子了。 男：雪后晴天比下雪时冷得多，你不知道吗？ 问：男的是什么意思？",
+            "answer": "A",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                172
+              ]
+            }
+          },
+          {
+            "n": 18,
+            "zh": "关于男的，可以知道什么？",
+            "options": {
+              "A": "买了一辆旧车",
+              "B": "买的是自行车",
+              "C": "买了五辆车"
+            },
+            "transcript_zh": "男：我昨天换了辆新车，比那辆旧的舒服多了。 女：又换了？你已经换了四五辆了吧？多少钱？ 男：不贵，一百多。我那辆旧车送给你吧。 女：一百多？自行车啊！ 问：关于男的，可以知道什么？",
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                172
+              ]
+            }
+          },
+          {
+            "n": 19,
+            "zh": "关于女的和她女儿，可以知道什么？",
+            "options": {
+              "A": "妈妈高得多",
+              "B": "一样高",
+              "C": "女儿高得多"
+            },
+            "transcript_zh": "男：你女儿个子真高，比你高多了吧？ 女：其实我跟她一样高，只是她比我瘦多了。 男：她今年多大？十七八岁？在哪儿学习呢？ 女：今年十九了，正在国外学习，学历史和数学。 问：关于女的和她女儿，可以知道什么？",
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                172
+              ]
+            }
+          },
+          {
+            "n": 20,
+            "zh": "他们要做什么？",
+            "options": {
+              "A": "去咖啡店",
+              "B": "听音乐会",
+              "C": "买东西"
+            },
+            "transcript_zh": "男：走了两三个小时了，还买了这么多东西，真累。我们休息一会儿吧。 女：那就在这儿坐坐，喝点儿水。 男：楼上有个咖啡店，比这儿安静得多，环境也不错，还有音乐。 女：也好，我们上去喝点儿饮料。 问：他们要做什么？",
+            "answer": "A",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                172
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "二、阅读 第一部分",
+        "type_zh": "阅读 第一部分",
+        "instruction_zh": "第21–25题：选择合适的问答",
+        "instruction_en": "Questions 21-25: Match the two parts of the same dialogue.",
+        "items": [
+          {
+            "n": "例",
+            "zh": "你知道怎么去那儿吗？",
+            "options": {
+              "A": "好，你等我一两分钟，我去一下洗手间。",
+              "B": "你怎么在这么远的地方买房子？",
+              "C": "体育比数学容易多了，也有意思多了。",
+              "D": "今天我不上班，我昨天只睡了两三个小时，让我再睡一会儿。",
+              "E": "当然。我们先坐公共汽车，然后换地铁。",
+              "F": "小方，你跟小丽一样大吗？"
+            },
+            "answer": "E",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                71
+              ]
+            }
+          },
+          {
+            "n": 21,
+            "zh": "九点半了，你迟到了，快起床。",
+            "options": {
+              "A": "好，你等我一两分钟，我去一下洗手间。",
+              "B": "你怎么在这么远的地方买房子？",
+              "C": "体育比数学容易多了，也有意思多了。",
+              "D": "今天我不上班，我昨天只睡了两三个小时，让我再睡一会儿。",
+              "E": "当然。我们先坐公共汽车，然后换地铁。",
+              "F": "小方，你跟小丽一样大吗？"
+            },
+            "answer": "D",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                172
+              ]
+            }
+          },
+          {
+            "n": 22,
+            "zh": "我们去买点儿吃的吧，我早就饿了。",
+            "options": {
+              "A": "好，你等我一两分钟，我去一下洗手间。",
+              "B": "你怎么在这么远的地方买房子？",
+              "C": "体育比数学容易多了，也有意思多了。",
+              "D": "今天我不上班，我昨天只睡了两三个小时，让我再睡一会儿。",
+              "E": "当然。我们先坐公共汽车，然后换地铁。",
+              "F": "小方，你跟小丽一样大吗？"
+            },
+            "answer": "A",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                172
+              ]
+            }
+          },
+          {
+            "n": 23,
+            "zh": "她的生日是五月，我是一月，我比她大一点儿。",
+            "options": {
+              "A": "好，你等我一两分钟，我去一下洗手间。",
+              "B": "你怎么在这么远的地方买房子？",
+              "C": "体育比数学容易多了，也有意思多了。",
+              "D": "今天我不上班，我昨天只睡了两三个小时，让我再睡一会儿。",
+              "E": "当然。我们先坐公共汽车，然后换地铁。",
+              "F": "小方，你跟小丽一样大吗？"
+            },
+            "answer": "F",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                172
+              ]
+            }
+          },
+          {
+            "n": 24,
+            "zh": "你个子那么高，跑得也快，当然觉得容易。",
+            "options": {
+              "A": "好，你等我一两分钟，我去一下洗手间。",
+              "B": "你怎么在这么远的地方买房子？",
+              "C": "体育比数学容易多了，也有意思多了。",
+              "D": "今天我不上班，我昨天只睡了两三个小时，让我再睡一会儿。",
+              "E": "当然。我们先坐公共汽车，然后换地铁。",
+              "F": "小方，你跟小丽一样大吗？"
+            },
+            "answer": "C",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                172
+              ]
+            }
+          },
+          {
+            "n": 25,
+            "zh": "虽然远，但是附近有三四个车站，很方便。",
+            "options": {
+              "A": "好，你等我一两分钟，我去一下洗手间。",
+              "B": "你怎么在这么远的地方买房子？",
+              "C": "体育比数学容易多了，也有意思多了。",
+              "D": "今天我不上班，我昨天只睡了两三个小时，让我再睡一会儿。",
+              "E": "当然。我们先坐公共汽车，然后换地铁。",
+              "F": "小方，你跟小丽一样大吗？"
+            },
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                172
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "二、阅读 第二部分",
+        "type_zh": "阅读 第二部分",
+        "instruction_zh": "第26–30题：选择合适的词语填空",
+        "instruction_en": "Questions 26-30: Choose the proper words to fill in the brackets.",
+        "word_bank": [
+          [
+            "A 方便",
+            "B 骑",
+            "C 换",
+            "D 地方",
+            "E 声音",
+            "F 旧"
+          ]
+        ],
+        "items": [
+          {
+            "n": "例",
+            "zh": "她说话的（　）多好听啊！",
+            "options": {
+              "A": "方便",
+              "B": "骑",
+              "C": "换",
+              "D": "地方",
+              "E": "声音",
+              "F": "旧"
+            },
+            "answer": "E",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                71
+              ]
+            }
+          },
+          {
+            "n": 26,
+            "zh": "这件衣服有点儿（　）了，我不想穿了。",
+            "options": {
+              "A": "方便",
+              "B": "骑",
+              "C": "换",
+              "D": "地方",
+              "E": "声音",
+              "F": "旧"
+            },
+            "answer": "F",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                172
+              ]
+            }
+          },
+          {
+            "n": 27,
+            "zh": "我还没去过那个（　），漂亮吗？好玩儿吗？",
+            "options": {
+              "A": "方便",
+              "B": "骑",
+              "C": "换",
+              "D": "地方",
+              "E": "声音",
+              "F": "旧"
+            },
+            "answer": "D",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                172
+              ]
+            }
+          },
+          {
+            "n": 28,
+            "zh": "你（　）得太快了，慢点儿，小心前边的车。",
+            "options": {
+              "A": "方便",
+              "B": "骑",
+              "C": "换",
+              "D": "地方",
+              "E": "声音",
+              "F": "旧"
+            },
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                172
+              ]
+            }
+          },
+          {
+            "n": 29,
+            "zh": "A：你每天怎么去学校？坐车还是坐地铁？ B：坐地铁更快，也更（　）。",
+            "options": {
+              "A": "方便",
+              "B": "骑",
+              "C": "换",
+              "D": "地方",
+              "E": "声音",
+              "F": "旧"
+            },
+            "answer": "A",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                172
+              ]
+            }
+          },
+          {
+            "n": 30,
+            "zh": "A：这辆车买了十五六年了，总是出问题。 B：那（　）一辆新的吧，车出问题不是件小事儿。",
+            "options": {
+              "A": "方便",
+              "B": "骑",
+              "C": "换",
+              "D": "地方",
+              "E": "声音",
+              "F": "旧"
+            },
+            "answer": "C",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                172
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "二、阅读 第三部分",
+        "type_zh": "阅读 第三部分",
+        "instruction_zh": "第31–35题：选择正确答案",
+        "instruction_en": "Questions 31-35: Choose the right answers.",
+        "items": [
+          {
+            "n": "例",
+            "zh": "您是来参加今天会议的吗？您来早了一点儿，现在才八点半。您先进来坐吧。 ★会议最可能几点开始？",
+            "options": {
+              "A": "8点",
+              "B": "8点半",
+              "C": "9点"
+            },
+            "answer": "C",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                72
+              ]
+            }
+          },
+          {
+            "n": 31,
+            "zh": "每个周末，我们一家人都去公园或远的地方走走、玩儿玩儿。我们不坐公共汽车，也不坐出租车，我们骑自行车去。很多时候，骑车比开车、坐车方便得多，也快得多。最主要是因为骑车对身体好，对环境也好。 ★骑车：",
+            "options": {
+              "A": "没有坐车方便",
+              "B": "对环境很好",
+              "C": "不健康"
+            },
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                172
+              ]
+            }
+          },
+          {
+            "n": 32,
+            "zh": "以前中国有很多茶馆，但现在越来越少，咖啡店越来越多了，人们走累了可以去咖啡店坐坐，喝点儿咖啡，当然也有茶、牛奶和水。这样的咖啡店比以前的茶馆安静得多，环境也更好，大家很喜欢去。 ★咖啡店：",
+            "options": {
+              "A": "没有茶馆多",
+              "B": "不太安静",
+              "C": "环境比茶馆好"
+            },
+            "answer": "C",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                172
+              ]
+            }
+          },
+          {
+            "n": 33,
+            "zh": "我家楼下有一家旧车店，卖“二手”自行车。没有那么多钱买新车的人，可以到这儿来买辆旧的骑骑，特别便宜，也方便。 ★“二手”车的意思是：",
+            "options": {
+              "A": "便宜车",
+              "B": "新车",
+              "C": "旧车"
+            },
+            "answer": "C",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                172
+              ]
+            }
+          },
+          {
+            "n": 34,
+            "zh": "我女儿现在每天都要上历史课、体育课和数学课。她说她最喜欢历史课，因为历史课比数学课和体育课有意思多了。体育课比数学课容易一些，但是没有历史课那么好玩儿。 ★女儿最不喜欢上什么课？",
+            "options": {
+              "A": "数学课",
+              "B": "历史课",
+              "C": "体育课"
+            },
+            "answer": "A",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                172
+              ]
+            }
+          },
+          {
+            "n": 35,
+            "zh": "有时候，我真想回到以前。五年前这个地方比现在安静得多，这儿只有一条路，房子也没有现在多。现在这儿有四五条路，路上都是车，大楼也越来越多，饭馆有二三十个呢！ ★这个地方：",
+            "options": {
+              "A": "以前没有路",
+              "B": "现在有45条路",
+              "C": "现在的路比以前多"
+            },
+            "answer": "C",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                172
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "三、书写 第一部分",
+        "type_zh": "书写 第一部分",
+        "instruction_zh": "第36–40题：连词成句",
+        "instruction_en": "Questions 36-40: Rearrange the words/phrases to make sentences.",
+        "items": [
+          {
+            "n": "例",
+            "zh": "小船　上　一　河　条　有",
+            "answer": "河上有一条小船。",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                73
+              ]
+            }
+          },
+          {
+            "n": 36,
+            "zh": "这个地方　安静　比　那个地方　一些",
+            "answer": "这个地方比那个地方安静一些。",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                172
+              ]
+            }
+          },
+          {
+            "n": 37,
+            "zh": "周经理　都　一两杯　喝　咖啡　每天",
+            "answer": "周经理每天都喝一两杯咖啡。",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                172
+              ]
+            }
+          },
+          {
+            "n": 38,
+            "zh": "自行车　快　骑　比　得多　走路",
+            "answer": "骑自行车比走路快得多。",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                172
+              ]
+            }
+          },
+          {
+            "n": 39,
+            "zh": "矮　朋友　一点儿　我　比　个子",
+            "answer": "朋友比我个子矮一点儿。",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                172
+              ]
+            }
+          },
+          {
+            "n": 40,
+            "zh": "四　五　只有　教室里　个　学生",
+            "answer": "教室里只有四五个学生。",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                172
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "三、书写 第二部分",
+        "type_zh": "书写 第二部分",
+        "instruction_zh": "第41–45题：看拼音，写汉字",
+        "instruction_en": "Questions 41-45: Write the characters based on their pinyin.",
+        "items": [
+          {
+            "n": "例",
+            "zh": "没（　）系，别难过，高兴点儿。",
+            "hint_zh": "guān",
+            "answer": "关",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                73
+              ]
+            }
+          },
+          {
+            "n": 41,
+            "zh": "我们坐公共汽车去吧，我不会（　）自行车。",
+            "hint_zh": "qí",
+            "answer": "骑",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                172
+              ]
+            }
+          },
+          {
+            "n": 42,
+            "zh": "这条裙子有点儿瘦，我可以（　）一条吗？",
+            "hint_zh": "huàn",
+            "answer": "换",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                172
+              ]
+            }
+          },
+          {
+            "n": 43,
+            "zh": "我喜欢住在这个地方，因为（　）境特别好，最重要的是有很多商店。",
+            "hint_zh": "huán",
+            "answer": "环",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                172
+              ]
+            }
+          },
+          {
+            "n": 44,
+            "zh": "这儿（　）近有个学校，每天下午都有很多爸爸妈妈接孩子。",
+            "hint_zh": "fù",
+            "answer": "附",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                172
+              ]
+            }
+          },
+          {
+            "n": 45,
+            "zh": "在这个学校，我的工作（　）要是给学生上历史课。",
+            "hint_zh": "zhǔ",
+            "answer": "主",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                172
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "三、书写 第三部分",
+        "type_zh": "书写 第三部分",
+        "instruction_zh": "第46–50题：辨认汉字，选择正确的汉字填空",
+        "instruction_en": "Questions 46-50: Distinguish the characters and fill in the blanks.",
+        "items": [
+          {
+            "n": "例",
+            "zh": "我不知道________个地方在________儿。",
+            "hint_zh": "（那、哪）",
+            "answer": "那、哪",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                74
+              ]
+            }
+          },
+          {
+            "n": 46,
+            "zh": "弟弟新买了一辆________色的________行车。",
+            "hint_zh": "（自、白）",
+            "answer": "白、自",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                172
+              ]
+            }
+          },
+          {
+            "n": 47,
+            "zh": "________学老师的办公室不在这儿，在________上。",
+            "hint_zh": "（数、楼）",
+            "answer": "数、楼",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                172
+              ]
+            }
+          },
+          {
+            "n": 48,
+            "zh": "音乐课容易吗？我觉得音乐课比历________课________难。",
+            "hint_zh": "（更、史）",
+            "answer": "史、更",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                172
+              ]
+            }
+          },
+          {
+            "n": 49,
+            "zh": "请问，________子旁边的那辆车，我可以________一下吗？",
+            "hint_zh": "（骑、椅）",
+            "answer": "椅、骑",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                172
+              ]
+            }
+          },
+          {
+            "n": 50,
+            "zh": "我们每个星期都________两次体________课。",
+            "hint_zh": "（育、有）",
+            "answer": "有、育",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                172
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "四、复习",
+        "type_zh": "复习",
+        "instruction_zh": "第1–2题：根据课文内容填空",
+        "instruction_en": "Questions 1-2: Fill in the blanks based on the texts in the textbook.",
+        "items": [
+          {
+            "n": 1,
+            "zh": "小丽上个月搬家了，走路去公司二十分钟就到，很________，所以最近比以前来得________。她还打算________一辆________，因为以前那辆太________了。",
+            "answer": "方便、早多了、买、自行车、旧",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                172
+              ]
+            }
+          },
+          {
+            "n": 2,
+            "zh": "大山在看房子。中介公司的人告诉他，学校里边比学校外边方便一点儿，________有________个车站。学校外边的房子比学校里边的大________，也比学校里边的安静。大山觉得房子大小没关系，最________的是________。",
+            "answer": "附近、三四、一些、主要、环境",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                172
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "audio": {
+    "textbook": [
+      "hsk3-textbook-1001.mp3",
+      "hsk3-textbook-1002.mp3",
+      "hsk3-textbook-1003.mp3",
+      "hsk3-textbook-1004.mp3",
+      "hsk3-textbook-1005.mp3"
+    ],
+    "workbook": [
+      "hsk3-workbook-10-part1.mp3",
+      "hsk3-workbook-10-part2.mp3",
+      "hsk3-workbook-10-part3.mp3",
+      "hsk3-workbook-10-part4.mp3"
+    ]
+  },
+  "unclear": [
+    "Багшийн ном PDF х.73 (语言点1 导入 — 热身2-ын хариулт): «高—低» гэж хэвлэсэн; мөн номын PDF х.72 生词 对比法-д «高—矮», энэ хичээлийн шинэ үг 矮. Номд байгаагаар хоёуланг нь үлдээсэн.",
+    "Багшийн ном PDF х.74 课文1 хариулт «马可比大山说得更好一些» — 课文1-д «马可比我说得好一些» (更 байхгүй); багшийн номын өөрийн 注意 (х.73: 形容词前一般不能再有程度副词) -тэй ч зөрж болзошгүй. Номд байгаагаар.",
+    "Багшийн ном PDF х.75 课文4 хариулт «学校里边的房子比学校外边的方便一些» — 课文4-т «学校里边比学校外边方便» (一些 байхгүй); дасгалын ном 复习2 (PDF х.74) «方便一点儿». Бүгдийг номд байгаагаар.",
+    "Багшийн ном PDF х.73 语言点 гарчиг «（2）概数的表达» («1» дугааргүй), сурах бичиг PDF х.100 «概数的表达1». Тус тусад нь номд байгаагаар.",
+    "Багшийн ном PDF х.74 课文1 模仿练习 — «A：……，你和……个子高？» — 课文1-ийн «谁» хэвлэгдээгүй; номд байгаагаар.",
+    "Багшийн ном PDF х.72 生词 启发式引导 — «他家楼下有一家超市，所以买东西很方便。» — «很方便» доогуур зураастай (сурагч нөхөх хэсэг); текстэд тэмдэглэгээгүй оруулсан.",
+    "Багшийн номын 本课小结 (PDF х.77) 文化-г агуулаагүй; «文化：中国人结婚时穿什么» (文化点解析 + 参考处理方式) нь 小结-ийн дараа тусдаа хэсэг — teacher.steps-ийн сүүлийн алхам болгон оруулсан.",
+    "Дасгалын ном 15 (PDF х.69): бичвэр «我们这儿有三四个姓王的老师呢» — сонголт A 三个 / B 三十个 / C 很多 — номын хариулт C (багшийн ном PDF х.172). Номд байгаагаар.",
+    "Сурах бичгийн 练一练 (2 дүрэм × 3), 练习2 选词填空 / 练习3 完成对话 / 练习4 回答问题 / 运用 / багшийн номын 操练 (这些东西要三十或者四十块钱／他买了四瓶或者五瓶牛奶) / 汉字辨认练习 (组词) — хариулт номд хэвлэгдээгүй тул answer талбаргүй. Багшийн номын 课文 асуулт-хариулт (teacher.text_questions) нь 练习4-ийн асуултаас өөр.",
+    "Сурах бичгийн 练习3-ын гарчиг «用本课新学的语言点和词语完成对话» (L02 шиг «描述图片» биш) — type_zh-д «完成对话» гэж гарчгаас товчилсон.",
+    "Сурах бичгийн 拼音课文 (PDF х.99)-ын гарчгийн пиньинь (Zài jiàoshì / Zài jiàoshì / Zài xiūxishì / Zài kàn fángzi) болон ярилцагчийн нэрийн пиньинь (péngyou, Dàshān, Xiǎomíng, tóngxué, tóngshì, Xiǎolì, zhōngjiè) схемд талбаргүй тул lines.pinyin-д зөвхөн яриаг оруулсан.",
+    "Энэ хичээлд 专有名词 хүснэгт, 汉字知识 хэсэг байхгүй; 注释1 жишээ (1)-д 大卫 гардаг ч тусгай нэрийн хүснэгтэд ороогүй. 注释-ийн жишээ 1-(4), 1-(8), 2-(4) нь номд улаанаар (课文-ээс авсан) хэвлэгдсэн.",
+    "Дасгалын номын сонсгол нэг CD тэмдэгтэй (10) — аудиог hsk3-workbook-10-part1…4.mp3 болгож хэсэг тус бүрт хуваасныг section.audio-д оноосон.",
+    "Дасгалын ном 听力 第三/四部分 — номд зөвхөн сонголтууд хэвлэгдсэн; item.zh-д багшийн номын хавсралтын «问：» асуултыг оруулсан (transcript_zh-д бүтнээр).",
+    "Дасгалын номд 51–54 (组词) хэсэг байхгүй — нийт 1–50 + 复习 1–2.",
+    "verified_pages: сурах бичиг PDF х.97–105, багшийн ном PDF х.71–77 ба 170–172, дасгалын ном PDF х.68–74 (71–74 дугаар багшийн ном, дасгалын ном хоёуланд давхцана).",
+    "HSK 3.0 нэмэлт үгс (BLCUP 课件 补充HSK3.0, слайд 5, 16, 26) hsk30-д."
+  ],
+  "verified_pages": [
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
     97,
     98,
     99,
@@ -17,1981 +1989,113 @@
     102,
     103,
     104,
-    105
-   ]
-  },
-  "warmup": [
-   {
-    "instruction_zh": "给下面的词语选择对应的图片",
-    "instruction_en": "Match the pictures with the words.",
-    "items": [
-     "①历史 lìshǐ",
-     "②体育 tǐyù",
-     "③个子 gèzi",
-     "④车站 chēzhàn",
-     "⑤数学 shùxué",
-     "⑥自行车 zìxíngchē"
-    ],
-    "pictures_desc_en": [
-     "A: a white mountain bike standing on a grass lawn",
-     "B: a green chalkboard covered with maths formulas (E=mc², functions, geometric figures)",
-     "C: an old book titled “HISTORY” with a compass, a globe and a quill pen",
-     "D: a little boy in a blue T-shirt and jeans with his hand on top of his head as if showing his height",
-     "E: a bus stop shelter with a bus sign by a field",
-     "F: various sports balls (basketball, football, American football, baseball, tennis ball) and a tennis racket"
-    ]
-   },
-   {
-    "instruction_zh": "写出下列词语的反义词",
-    "instruction_en": "Write down the antonym of each of the following words.",
-    "items": [
-     "例如：大—小",
-     "新 xīn—________",
-     "高 gāo—________",
-     "难 nán—________",
-     "远 yuǎn—________",
-     "贵 guì—________",
-     "胖 pàng—________"
-    ]
-   }
-  ],
-  "texts": [
-   {
-    "n": 1,
-    "title_zh": "在教室",
-    "title_en": "In the classroom",
-    "kind": "dialogue",
-    "audio": "hsk3-textbook-1001.mp3",
-    "lines": [
-     {
-      "speaker": "朋友",
-      "zh": "大山，你和马可谁个子高？",
-      "pinyin": "Dàshān, nǐ hé Mǎkě shéi gèzi gāo?"
-     },
-     {
-      "speaker": "大山",
-      "zh": "马可比我高，我比马可矮一点儿。",
-      "pinyin": "Mǎkě bǐ wǒ gāo, wǒ bǐ Mǎkě ǎi yìdiǎnr."
-     },
-     {
-      "speaker": "朋友",
-      "zh": "那你们谁大？",
-      "pinyin": "Nà nǐmen shéi dà?"
-     },
-     {
-      "speaker": "大山",
-      "zh": "我比马可大两岁。",
-      "pinyin": "Wǒ bǐ Mǎkě dà liǎng suì."
-     },
-     {
-      "speaker": "朋友",
-      "zh": "你们谁的汉语说得更好？",
-      "pinyin": "Nǐmen shéi de Hànyǔ shuō de gèng hǎo?"
-     },
-     {
-      "speaker": "大山",
-      "zh": "马可比我说得好一些，我的汉语没有他好。",
-      "pinyin": "Mǎkě bǐ wǒ shuō de hǎo yìxiē, wǒ de Hànyǔ méiyǒu tā hǎo."
-     }
-    ],
-    "new_words": [
-     {
-      "n": 1,
-      "zh": "个子",
-      "pinyin": "gèzi",
-      "pos": "n.",
-      "en": "height, stature",
-      "text": 1
-     },
-     {
-      "n": 2,
-      "zh": "矮",
-      "pinyin": "ǎi",
-      "pos": "adj.",
-      "en": "short",
-      "text": 1
-     }
-    ]
-   },
-   {
-    "n": 2,
-    "title_zh": "在教室",
-    "title_en": "In the classroom",
-    "kind": "dialogue",
-    "audio": "hsk3-textbook-1002.mp3",
-    "lines": [
-     {
-      "speaker": "小明",
-      "zh": "我喜欢历史课、体育课，不喜欢数学课。",
-      "pinyin": "Wǒ xǐhuan lìshǐ kè, tǐyù kè, bù xǐhuan shùxué kè."
-     },
-     {
-      "speaker": "同学",
-      "zh": "为什么？数学也很有意思啊。",
-      "pinyin": "Wèi shénme? Shùxué yě hěn yǒu yìsi a."
-     },
-     {
-      "speaker": "小明",
-      "zh": "我觉得数学比历史难多了，我听不懂。",
-      "pinyin": "Wǒ juéde shùxué bǐ lìshǐ nánduō le, wǒ tīng bu dǒng."
-     },
-     {
-      "speaker": "同学",
-      "zh": "别担心，我可以帮你。",
-      "pinyin": "Bié dān xīn, wǒ kěyǐ bāng nǐ."
-     },
-     {
-      "speaker": "小明",
-      "zh": "好啊，我们每天学多长时间？",
-      "pinyin": "Hǎo a, wǒmen měi tiān xué duō cháng shíjiān?"
-     },
-     {
-      "speaker": "同学",
-      "zh": "一两个小时吧。",
-      "pinyin": "Yì-liǎng ge xiǎoshí ba."
-     }
-    ],
-    "new_words": [
-     {
-      "n": 3,
-      "zh": "历史",
-      "pinyin": "lìshǐ",
-      "pos": "n.",
-      "en": "history",
-      "text": 2
-     },
-     {
-      "n": 4,
-      "zh": "体育",
-      "pinyin": "tǐyù",
-      "pos": "n.",
-      "en": "P.E., sports",
-      "text": 2
-     },
-     {
-      "n": 5,
-      "zh": "数学",
-      "pinyin": "shùxué",
-      "pos": "n.",
-      "en": "maths",
-      "text": 2
-     }
-    ]
-   },
-   {
-    "n": 3,
-    "title_zh": "在休息室",
-    "title_en": "In the lounge",
-    "kind": "dialogue",
-    "audio": "hsk3-textbook-1003.mp3",
-    "lines": [
-     {
-      "speaker": "同事",
-      "zh": "你最近比以前来得早多了，搬家了？",
-      "pinyin": "Nǐ zuìjìn bǐ yǐqián lái de zǎoduō le, bān jiā le?"
-     },
-     {
-      "speaker": "小丽",
-      "zh": "是啊，你不知道？我上个月就搬家了，走路二十分钟就到。",
-      "pinyin": "Shì a, nǐ bù zhīdào? Wǒ shàng ge yuè jiù bān jiā le, zǒu lù èrshí fēnzhōng jiù dào."
-     },
-     {
-      "speaker": "同事",
-      "zh": "那很方便啊。",
-      "pinyin": "Nà hěn fāngbiàn a."
-     },
-     {
-      "speaker": "小丽",
-      "zh": "我还打算买辆自行车，骑车七八分钟就能到。",
-      "pinyin": "Wǒ hái dǎsuàn mǎi liàng zìxíngchē, qí chē qī-bā fēnzhōng jiù néng dào."
-     },
-     {
-      "speaker": "同事",
-      "zh": "你不是有一辆吗？",
-      "pinyin": "Nǐ bú shì yǒu yí liàng ma?"
-     },
-     {
-      "speaker": "小丽",
-      "zh": "那辆太旧了，要换一辆，很便宜，两三百块钱。",
-      "pinyin": "Nà liàng tài jiù le, yào huàn yí liàng, hěn piányi, liǎng-sān bǎi kuài qián."
-     }
-    ],
-    "new_words": [
-     {
-      "n": 6,
-      "zh": "方便",
-      "pinyin": "fāngbiàn",
-      "pos": "adj.",
-      "en": "convenient",
-      "text": 3
-     },
-     {
-      "n": 7,
-      "zh": "自行车",
-      "pinyin": "zìxíngchē",
-      "pos": "n.",
-      "en": "bicycle",
-      "text": 3
-     },
-     {
-      "n": 8,
-      "zh": "骑",
-      "pinyin": "qí",
-      "pos": "v.",
-      "en": "to ride",
-      "text": 3
-     },
-     {
-      "n": 9,
-      "zh": "旧",
-      "pinyin": "jiù",
-      "pos": "adj.",
-      "en": "old, used, worn",
-      "text": 3
-     },
-     {
-      "n": 10,
-      "zh": "换",
-      "pinyin": "huàn",
-      "pos": "v.",
-      "en": "to change, to substitute",
-      "text": 3
-     }
-    ]
-   },
-   {
-    "n": 4,
-    "title_zh": "在看房子",
-    "title_en": "Seeing an apartment",
-    "kind": "dialogue",
-    "audio": "hsk3-textbook-1004.mp3",
-    "lines": [
-     {
-      "speaker": "大山",
-      "zh": "这两个地方的房子一样吗？",
-      "pinyin": "Zhè liǎng ge dìfang de fángzi yíyàng ma?"
-     },
-     {
-      "speaker": "中介",
-      "zh": "不一样。您看，学校外边的房子比学校里边的大一些。",
-      "pinyin": "Bù yíyàng. Nín kàn, xuéxiào wàibian de fángzi bǐ xuéxiào lǐbian de dà yìxiē."
-     },
-     {
-      "speaker": "大山",
-      "zh": "大小没关系，主要是环境，哪个更安静？",
-      "pinyin": "Dàxiǎo méi guānxi, zhǔyào shì huánjìng, nǎge gèng ānjìng?"
-     },
-     {
-      "speaker": "中介",
-      "zh": "学校里边的没有学校外边的那么安静。",
-      "pinyin": "Xuéxiào lǐbian de méiyǒu xuéxiào wàibian de nàme ānjìng."
-     },
-     {
-      "speaker": "大山",
-      "zh": "哪个方便一些呢？",
-      "pinyin": "Nǎge fāngbiàn yìxiē ne?"
-     },
-     {
-      "speaker": "中介",
-      "zh": "学校里边比学校外边方便，附近有三四个车站。",
-      "pinyin": "Xuéxiào lǐbian bǐ xuéxiào wàibian fāngbiàn, fùjìn yǒu sān-sì ge chēzhàn."
-     }
-    ],
-    "new_words": [
-     {
-      "n": 11,
-      "zh": "地方",
-      "pinyin": "dìfang",
-      "pos": "n.",
-      "en": "place",
-      "text": 4
-     },
-     {
-      "n": 12,
-      "zh": "中介",
-      "pinyin": "zhōngjiè",
-      "pos": "n.",
-      "en": "intermediary, agent",
-      "text": 4,
-      "star": true
-     },
-     {
-      "n": 13,
-      "zh": "主要",
-      "pinyin": "zhǔyào",
-      "pos": "adj.",
-      "en": "main",
-      "text": 4
-     },
-     {
-      "n": 14,
-      "zh": "环境",
-      "pinyin": "huánjìng",
-      "pos": "n.",
-      "en": "environment",
-      "text": 4
-     },
-     {
-      "n": 15,
-      "zh": "附近",
-      "pinyin": "fùjìn",
-      "pos": "n.",
-      "en": "nearby, vicinity",
-      "text": 4
-     }
-    ]
-   }
-  ],
-  "grammar": [
-   {
-    "n": 1,
-    "title_zh": "比较句2：A比B＋Adj＋一点儿／一些／得多／多了",
-    "title_en": "Comparative Sentences 2: A比B + Adj + 一点儿/一些/得多/多了",
-    "explanation_zh": "“一点儿”“一些”“得多”“多了”等词可以用于“比”字句中形容词的后边，表示事物之间的差别程度，“一点儿”和“一些”表示差别的程度不大，“得多”和“多了”表示差别的程度很大。例如：（1）–（4）\n否定形式为“A没有B（＋这么／那么）＋Adj”，例如：（5）–（8）",
-    "explanation_en": "“一点儿”, “一些”, “得多” or “多了” etc. can follow an adjective in a comparative sentence, indicating the degree of difference between things, among which “一点儿” and “一些” indicate a slight difference, while “得多” and “多了” indicate a big difference. For example: (1)–(4)\nThe negative form is “A没有B (+ 这么/那么) + Adj”. For example: (5)–(8)",
-    "structure_rows": [
-     "A比B＋Adj＋一点儿／一些／得多／多了",
-     "A没有B（＋这么／那么）＋Adj"
-    ],
-    "examples": [
-     {
-      "n": 1,
-      "zh": "大山比大卫矮一点儿。"
-     },
-     {
-      "n": 2,
-      "zh": "我今天起得比昨天晚一些。"
-     },
-     {
-      "n": 3,
-      "zh": "今天的作业比昨天多得多。"
-     },
-     {
-      "n": 4,
-      "zh": "数学比历史难多了。"
-     },
-     {
-      "n": 5,
-      "zh": "咖啡没有茶好喝。"
-     },
-     {
-      "n": 6,
-      "zh": "他没有我这么高。"
-     },
-     {
-      "n": 7,
-      "zh": "这个电影没有那个电影那么有意思。"
-     },
-     {
-      "n": 8,
-      "zh": "学校里边的（房子）没有学校外边的那么安静。"
-     }
-    ],
-    "practice_instruction_zh": "练一练　完成句子 Complete the sentences.",
-    "practice": [
-     {
-      "n": 1,
-      "zh": "今天的天气比________。"
-     },
-     {
-      "n": 2,
-      "zh": "我做的饭没有________。"
-     },
-     {
-      "n": 3,
-      "zh": "骑自行车________。"
-     }
-    ]
-   },
-   {
-    "n": 2,
-    "title_zh": "概数的表达1",
-    "title_en": "Expression of Approximate Numbers 1",
-    "explanation_zh": "汉语中，相邻两个数词连用可以表达概数。如“一二（两）、两三、三四、五六、七八、八九”等。例如：",
-    "explanation_en": "In Chinese, two adjacent numerals can be used together to indicate an approximate number, for example, “一二（两）(one or two)”, “两三 (two or three)”, “三四 (three or four)”, “五六 (five or six)”, “七八 (seven or eight)”, and “八九 (eight or nine)”. For example:",
-    "structure_rows": [
-     "一二（两）、两三、三四、五六、七八、八九"
-    ],
-    "examples": [
-     {
-      "n": 1,
-      "zh": "我每天学习一两个小时汉语。"
-     },
-     {
-      "n": 2,
-      "zh": "你都喝了三四杯咖啡了，别再喝了！"
-     },
-     {
-      "n": 3,
-      "zh": "从小丽家到公司骑车七八分钟就能到。"
-     },
-     {
-      "n": 4,
-      "zh": "学校里边比学校外边方便，附近有三四个车站。"
-     }
-    ],
-    "practice_instruction_zh": "练一练　完成句子 Complete the sentences.",
-    "practice": [
-     {
-      "n": 1,
-      "zh": "这辆自行车________。"
-     },
-     {
-      "n": 2,
-      "zh": "今天的作业我________能做完。"
-     },
-     {
-      "n": 3,
-      "zh": "我有________条黑色的裤子。"
-     }
-    ]
-   }
-  ],
-  "exercises": [
-   {
-    "n": 1,
-    "type_zh": "朗读",
-    "instruction_zh": "朗读下列短语和句子",
-    "instruction_en": "Read the following phrases and sentences aloud.",
-    "audio": "hsk3-textbook-1005.mp3",
-    "items": [
-     {
-      "n": 1,
-      "zh": "历史：历史课／中国历史／历史很长／数学比历史难多了。"
-     },
-     {
-      "n": 2,
-      "zh": "自行车：一辆自行车／骑自行车／这辆自行车太旧了／我还打算买辆自行车。"
-     },
-     {
-      "n": 3,
-      "zh": "换：换钱／换手机／换班／我要换一辆自行车。"
-     },
-     {
-      "n": 4,
-      "zh": "环境：环境很好／学校环境／环境问题／哪个环境更安静？"
-     },
-     {
-      "n": 5,
-      "zh": "附近：学校附近／附近的超市／我住在附近／学校附近有三四个车站。"
-     }
-    ]
-   },
-   {
-    "n": 2,
-    "type_zh": "选词填空",
-    "instruction_zh": "选择恰当的词语填空",
-    "instruction_en": "Choose the proper words to fill in the blanks.",
-    "word_bank": [
-     [
-      "安静",
-      "体育",
-      "个子",
-      "旧",
-      "骑"
-     ],
-     [
-      "方便",
-      "数学",
-      "换",
-      "附近",
-      "地方"
-     ]
-    ],
-    "items": [
-     {
-      "n": 1,
-      "zh": "我________比他高一点儿。"
-     },
-     {
-      "n": 2,
-      "zh": "我每天________车来学校。"
-     },
-     {
-      "n": 3,
-      "zh": "我最喜欢________课，多有意思啊。"
-     },
-     {
-      "n": 4,
-      "zh": "我喜欢住在这儿，主要是觉得这儿很________。"
-     },
-     {
-      "n": 5,
-      "zh": "这条裤子太________了，再买一条吧。"
-     },
-     {
-      "n": 6,
-      "zh": "A：我觉得你的比我的好。 B：你想要这个吗？没问题，我跟你________。"
-     },
-     {
-      "n": 7,
-      "zh": "A：你哪天比较________，我们见面聊聊天儿？ B：周末吧，来我家吃饭。"
-     },
-     {
-      "n": 8,
-      "zh": "A：这个________的天气怎么样？ B：非常好，夏天一点儿也不热。"
-     },
-     {
-      "n": 9,
-      "zh": "A：请问，这儿________有超市吗？ B：有，一直往前走就是。"
-     },
-     {
-      "n": 10,
-      "zh": "A：你怎么不太高兴？ B：我________考得不好。"
-     }
-    ]
-   },
-   {
-    "n": 3,
-    "type_zh": "完成对话",
-    "instruction_zh": "用本课新学的语言点和词语完成对话",
-    "instruction_en": "Complete the dialogues using the newly-learned language points and words.",
-    "items": [
-     {
-      "n": 1,
-      "zh": "A：你和妈妈谁起得早？ B：________。 A：她比你________起多长时间？ B：________。",
-      "picture_desc_en": "A smiling young woman sitting up in a bed with white sheets, stretching and rubbing one eye as if just woken up."
-     },
-     {
-      "n": 2,
-      "zh": "A：今天我们班来了多少学生？ B：今天来了________个学生。 A：昨天呢？ B：昨天比今天来得________。",
-      "picture_desc_en": "A teacher standing in front of a classroom full of students seated at desks, some of them raising their hands."
-     },
-     {
-      "n": 3,
-      "zh": "A：你们今天玩儿了多长时间游戏了？ B：玩儿了________了。 A：怎么玩儿了这么长时间？ B：昨天玩儿了三个小时，今天没有________。",
-      "picture_desc_en": "A father and a young son sitting on a sofa, each holding a game controller and playing a video game."
-     },
-     {
-      "n": 4,
-      "zh": "A：你看这条裤子怎么样？ B：太贵了，要________块钱。 A：那条呢？没有________。 B：我觉得还可以。",
-      "picture_desc_en": "A woman and a man in a clothing shop, each holding up a pair of blue jeans."
-     }
-    ]
-   },
-   {
-    "n": 4,
-    "type_zh": "回答问题",
-    "instruction_zh": "根据课文回答问题",
-    "instruction_en": "Answer the questions according to the texts.",
-    "items": [
-     {
-      "n": 1,
-      "zh": "马可和大山谁高？谁年龄大？谁的汉语说得好？"
-     },
-     {
-      "n": 2,
-      "zh": "小明为什么不喜欢数学课？"
-     },
-     {
-      "n": 3,
-      "zh": "小明和同学打算每天一起做什么？做多长时间？"
-     },
-     {
-      "n": 4,
-      "zh": "小丽为什么比以前来得早了？"
-     },
-     {
-      "n": 5,
-      "zh": "小丽为什么要买自行车？"
-     },
-     {
-      "n": 6,
-      "zh": "住在学校里边和学校外边有什么不一样？"
-     }
-    ]
-   }
-  ],
-  "characters": {
-   "knowledge_title_zh": "旧字新词",
-   "knowledge_zh": "读读下面的词语，想想组成的新词是什么意思。",
-   "knowledge_en": "Read the following words and guess the meanings of the newly-formed ones.",
-   "word_game": [
-    {
-     "parts": [
-      "换",
-      "季节"
-     ],
-     "result": "换季"
-    },
-    {
-     "parts": [
-      "地方",
-      "上面"
-     ],
-     "result": "地面"
-    },
-    {
-     "parts": [
-      "主要",
-      "菜"
-     ],
-     "result": "主菜"
-    }
-   ],
-   "confusable_pairs": [
-    [
-     "自",
-     "白"
-    ],
-    [
-     "更",
-     "史"
-    ],
-    [
-     "育",
-     "有"
-    ],
-    [
-     "数",
-     "楼"
-    ],
-    [
-     "骑",
-     "椅"
-    ]
-   ]
-  },
-  "application": [
-   {
-    "title_zh": "双人活动",
-    "instruction_zh": "两人一组，询问对方今年是否做过下列事情，做过多少次。用概数表达法回答。",
-    "instruction_en": "Work in pairs. Ask your partner whether or not he/she has done the following things this year, and how many times he/she has done them. Answer the questions using approximate numbers.",
-    "example_zh": [
-     "表格：| 事情 | 对方做过几次 |",
-     "| 爬山 | 爬过两三次 |",
-     "| 参加比赛 | |",
-     "| 听音乐会 | |",
-     "| 逛公园 | |",
-     "| 旅游 | |",
-     "| 上课迟到 | |"
-    ]
-   },
-   {
-    "title_zh": "小组活动",
-    "instruction_zh": "3～4人一组，通过比较，为每个人找到程度最高的方面。使用“A比B＋Adj＋一点儿／一些／得多／多了”和“A没有B（＋这么／那么）＋Adj”。",
-    "instruction_en": "Work in groups of 3-4. Compare and find each person’s most distinguishing aspect, using “A比B + Adj + 一点儿/一些/得多/多了” and “A没有B (+ 这么/那么) + Adj”.",
-    "example_zh": [
-     "例如：A：我每天听歌听半个小时。",
-     "B：我听歌的时间比A长得多，我听三个小时。",
-     "C：我听歌的时间没有B那么长。",
-     "D：我听歌的时间比B长一点儿，我听三个半小时。",
-     "D听歌的时间最长。",
-     "提示：学习的时间　看过的电影　旅游去过的地方　游泳游得远　作业写得快",
-     "表格：| 谁 | 最…… |"
-    ]
-   }
-  ],
-  "saying": {
-   "zh": "不可同日而语",
-   "pinyin": "Bù kě tóngrì’éryǔ",
-   "en": "The two cannot be mentioned in the same breath",
-   "explanation_zh": "“不可同日而语”的意思是不能放在同一个时间谈论，用来比喻差别很大，不能放在一起比较。例如：通信技术进步太快了，过去跟现在不可同日而语。",
-   "explanation_en": "“不可同日而语”, literally “(two things) cannot be mentioned in the same breath”, is used metaphorically to mean that there is no comparison between two people or two things because of the significant difference. For instance, in terms of science and technology, there is no comparison between the past and the present."
-  },
-  "culture": {
-   "title_zh": "中国人结婚时穿什么",
-   "body_zh": "以前中国人结婚时，新娘穿传统的红色旗袍。现在新娘既穿红色旗袍，也穿白色的婚纱，这表现了中国文化和西方文化的融合。在你们国家，人们结婚时穿什么呢？",
-   "body_en": "What Chinese People Wear on Their Wedding Day. In the past, brides in China wore traditional red cheongsams on their wedding days, and now they wear both red cheongsams and white wedding gowns, which mirrors that Chinese and Western cultures have been blended together. What do people wear on their wedding days in your country?"
-  }
- },
- "teacher": {
-  "ref": {
-   "book": "teacher",
-   "pages": [
-    71,
-    72,
-    73,
-    74,
-    75,
-    76,
-    77
-   ]
-  },
-  "objectives_zh": [
-   "重点词语：学生能够熟练掌握：“骑、换、地方、主要、环境、附近”的词义和用法",
-   "语言点：学生能够了解并掌握：（1）“A比B＋形容词＋一点儿／一些／得多／多了”表示事物之间的差别程度（2）两个数词连用表达概数",
-   "汉字：学生能够：根据已学生词猜测出3个旧字新词“换季、地面、主菜”的意思",
-   "功能：学生能够：（1）根据两者之间的差别程度使用比较句（2）描述大概的数量"
-  ],
-  "steps": [
-   {
-    "title_zh": "复习旧课",
-    "body_zh": "1 教师展示第9课的热身图片，请学生根据图片说出生词。\n2 教师根据第9课的内容进行提问。\n（1）你学了多长时间汉语了？现在怎么样？\n（2）听、说、读、写都一样难吗？哪个容易？哪个难？\n（3）公共汽车很长时间不来，你会觉得怎么样？\n（4）你的爱好是什么？你妈妈呢？你们一样吗？\n（5）我们班有没有一样高的同学？说说他们是谁。"
-   },
-   {
-    "title_zh": "学习新课 1 热身",
-    "body_zh": "热身1：教师可依次朗读热身部分的词语，要求学生集体或单个说出图片对应的编号，教师评判正误；最后全体学生再次齐读热身环节的所有词语，要求语音标准、声调准确。\n答案：①C　②F　③D　④E　⑤B　⑥A\n热身2：可留至语言点（1）“比较句2：A比B＋形容词＋一点儿／一些／得多／多了”导入时使用。"
-   },
-   {
-    "title_zh": "2 生词",
-    "body_zh": "（1）生词快速认读及正音\n个子、矮、历史、体育、数学、方便、自行车、骑、旧、换、地方、中介、主要、环境、附近\n· 教师先带领学生快速认读一遍生词；\n· 取消拼音，带领学生再次认读；\n· 请单个学生独自认读2-3个生词；\n· 最后全班再快速认读所有的生词。\n（2）生词讲解方式\n· 直观法（如图片、照片、实物等）展示：个子、历史、体育、数学、自行车\n· 对比法展示：高—矮、新—旧\n· 启发式引导：方便\n教师给出句子部分内容让学生进行补充，如：他家楼下有一家超市，所以买东西很方便。\n（3）重点生词扩展及常用搭配\n骑—骑自行车—你会骑自行车吗？\n换—换一辆自行车—换一个手机—旧书换新书\n地方—这个地方—什么地方—每个地方都很漂亮。\n主要—主要学习语法—现在天气越来越不好，主要是环境的问题。\n环境—环境很好—公司的环境—学习环境—我们学校的学习环境很不错。\n附近—我家附近—附近的环境—请问，这儿附近有超市吗？\n练习册相关练习：P64／一／第一部分，P67／二／第二部分"
-   },
-   {
-    "title_zh": "3 语言点（1）比较句2：A比B＋形容词＋一点儿／一些／得多／多了",
-    "body_zh": "① 语言点解析\n“一点儿”“一些”“得多”“多了”等词可以用于“比”字句中形容词的后边，表示事物之间的差别程度，“一点儿”和“一些”表示差别的程度不大，“得多”和“多了”表示差别的程度很大，否定形式为“A没有B（＋这么／那么）＋形容词”。\n［框］A比B＋形容词＋一点儿\n［框］A比B＋形容词＋一些\n［框］A比B＋形容词＋得多\n［框］A比B＋形容词＋多了\n［框］A没有B（这么／那么）＋形容词\n② 语言点导入\n教师可利用本课热身2导入语言点。\n教师请学生完成填空，复习以前学过的形容词。\n答案：新—旧　高—低　难—容易　远—近　贵—便宜　胖—瘦\n教师给出情景，引导学生说出本课的目标句：\n教师：大卫1米9，小丽1米5，他们谁高？\n学生：大卫比小丽高。\n教师：大卫比小丽高一点儿还是高多了？\n学生：大卫比小丽高多了。\n③ 语言点操练\n教师给出情景，练习四种形式的比较句及其否定形式。\n例如：\n这个本子20块，那个本子18块。\n学生：这个本子比那个本子贵一点儿。\n　　　这个本子比那个本子贵一些。\n　　　那个本子没有这个本子贵。\n这本书89块，那本书18块。\n学生：这本书比那本书贵多了。\n　　　这本书比那本书贵得多。\n　　　那本书没有这本书贵。\n④ 语言点扩展练习\n教师可根据学生实际情况进行问答练习。\n你觉得历史难还是数学难？\n你觉得今天的作业多还是昨天的作业多？\n你觉得可乐好喝还是咖啡好喝？\n注意：本句型中的形容词前一般不能再有程度副词的修饰。"
-   },
-   {
-    "title_zh": "3 语言点（2）概数的表达",
-    "body_zh": "① 语言点解析\n相邻两个数词连用可以表达概数，例如“三四个”表示“三个或者四个”。\n② 语言点导入\n教师就地取材，收集几本学生的汉语书，引导学生说出目标句：\n教师：（不给学生看清楚具体多少本）这是多少本汉语书？\n学生1：六本。\n学生2：七本。\n教师：六本或者七本，老师有六七本汉语书。\n③ 语言点操练\n教师给出情景，请学生完成句子。\n例如：楼下有八辆或者九辆自行车。——楼下有八九辆自行车。\n　　　这些东西要三十或者四十块钱。\n　　　他买了四瓶或者五瓶牛奶。\n④ 语言点扩展练习\n教师提问，请学生用概数回答。\n你昨天学习了多长时间？\n你昨晚睡了几个小时？\n你现在身上有多少钱？\n注意：相邻的两个数字如果是“九十”则表示确定的数“90”，而不是概数。"
-   },
-   {
-    "title_zh": "4 课文 课文1",
-    "body_zh": "（1）让学生听两遍录音并回答下列问题：\n大山和马可谁高？——马可比大山高一点儿。\n大山和马可谁大？——大山比马可大两岁。\n大山和马可谁的汉语说得更好？——马可比大山说得更好一些。\n（2）教师领读课文两遍，让学生分角色朗读课文，注意说话人的语气。\n（3）模仿练习\n学生两人一组，根据提示词模仿课文内容进行对话练习。\nA：……，你和……个子高？\nB：……比我高，我比……。\nA：那你们……？\nB：我比……。\nA：你们谁……？\nB：……比我……，我的……。"
-   },
-   {
-    "title_zh": "4 课文 课文2",
-    "body_zh": "（1）让学生听两遍录音并回答下列问题：\n男的喜欢什么课？——他喜欢历史课、体育课。\n男的为什么不喜欢数学课？——他觉得数学比历史难多了。\n他们要每天一起学多长时间？——他们要每天一起学一两个小时。\n（2）教师领读课文两遍，让学生分角色朗读课文。\n（3）模仿练习\n学生两人一组，根据提示词模仿课文内容进行对话练习。\nA：我喜欢……，不喜欢……。\nB：为什么？……也……。\nA：我觉得……，我……。\nB：别……，我可以……。\nA：好，我们每天……？\nB：……吧。"
-   },
-   {
-    "title_zh": "4 课文 课文3",
-    "body_zh": "（1）让学生听两遍录音并回答下列问题：\n女的为什么比以前来得早多了？——因为她搬家了，走路二十分钟就到。\n女的打算买什么？——她打算买一辆自行车。\n换自行车贵不贵？多少钱？——不贵，很便宜，两三百块钱。\n（2）教师领读课文两遍，让学生分角色朗读课文。\n（3）教师给提示词，带领学生复述课文。\n提示词：最近、比、搬家、方便、自行车、换、便宜"
-   },
-   {
-    "title_zh": "4 课文 课文4",
-    "body_zh": "（1）让学生听两遍录音并回答下列问题：\n哪个房子大一些？——学校外边的房子比学校里边的大一些。\n男的觉得什么很重要？——他觉得环境更重要。\n哪个房子更方便？——学校里边的房子比学校外边的方便一些。\n（2）教师领读课文两遍，让学生分角色朗读课文，注意说话人的语气。\n（3）教师给提示词，带领学生复述课文。\n提示词：房子、一样、大、环境、安静、方便、车站\n练习册相关练习：第70页／四"
-   },
-   {
-    "title_zh": "5 汉字",
-    "body_zh": "旧字新词：\n① 教师领读以前学过的词语和新词，并让学生猜猜新词的意思。\n· 领读：换、季节、换季\n问学生：“换季”是什么意思？——换季节，季节变了。\n· 领读：地方、上面、地面\n问学生：“地面”是什么意思？——地的上面。\n扩展提问：地面的下边怎么说？——地下。（根据实际情况选用）\n· 领读：主要、菜、主菜\n问学生：“主菜”是什么意思？——吃饭的时候，主要吃的菜。\n② 教师领读新词扩展，通过情景，理解新词的意思和用法。\n换季：换季了／换季的衣服／什么时候换季？\n地面：地面上／地面上很干净／昨天下雨了，现在地面上有很多水。\n主菜：不吃主菜／今天的主菜是什么？／今天的主菜很好吃。\n汉字辨认练习：\n辨认下列汉字并组词。\n自：________、________　白：________、________\n更：________、________　史：________、________\n育：________、________　有：________、________\n数：________、________　楼：________、________\n骑：________、________　椅：________、________\n练习册相关练习：第70页／三／第三部分"
-   },
-   {
-    "title_zh": "6 补充课堂活动——我来做，你来猜",
-    "body_zh": "活动规则：A、B两个同学一组到教室前边完成，教师给A同学和其他同学出示词语卡片，B同学不能看。A同学要用动作表演出卡片上词语的内容，B同学根据A同学的表演猜出这个词语是什么，并用这个词语说一个句子。\n参考词语：个子、矮、体育、历史、数学、骑自行车、换手机、三四块钱……"
-   },
-   {
-    "title_zh": "7 俗语",
-    "body_zh": "教师引导学生理解俗语的含义，注意这里的“语”是“说”的意思，这句俗语的意思主要是强调变化大、变化快。"
-   },
-   {
-    "title_zh": "8 本课小结",
-    "body_zh": "· 语言点：用“A比B＋形容词＋一点儿／一些／得多／多了”表示差异程度\n　　　　　用相邻数词表示概数\n· 汉　字：旧字新词：换季、地面、主菜"
-   },
-   {
-    "title_zh": "文化：中国人结婚时穿什么",
-    "body_zh": "1 文化点解析\n① 中国人崇尚红色，因为它象征着喜庆和活力，所以传统的婚礼服饰是红色的，逢年过节，人们也喜欢用红色来进行装饰。\n② 中国人与西方人对颜色的看法不同，中国人相信主管杀戮的神是白虎神，认为白色象征着死亡、凶险。但是西方人却认为白色象征着纯洁、高雅，因此西方人结婚时喜欢穿白色的婚纱。\n③ 西方人穿白色婚纱的习俗在一百多年前传入中国，并被许多中国人接受，因此，我们现在也经常看到中国新娘结婚时穿白色的婚纱，这表现了中国文化和西方文化的融合。\n2 文化点参考处理方式\n· 教师介绍中国人的思想观念中红色和白色的象征意义。\n· 请学生说说自己国家的思想观念中，红色和白色的象征意义。\n· 教师请学生说说其他中国文化和西方文化融合的例子。"
-   }
-  ],
-  "notes_zh": [
-   "注意：本句型中的形容词前一般不能再有程度副词的修饰。（语言点1）",
-   "注意：相邻的两个数字如果是“九十”则表示确定的数“90”，而不是概数。（语言点2）",
-   "扩展提问：地面的下边怎么说？——地下。（根据实际情况选用）（汉字·旧字新词）",
-   "注意这里的“语”是“说”的意思，这句俗语的意思主要是强调变化大、变化快。（俗语）"
-  ],
-  "warmup_answers_zh": [
-   "热身1 答案：①C　②F　③D　④E　⑤B　⑥A",
-   "热身2：可留至语言点（1）导入时使用。答案：新—旧　高—低　难—容易　远—近　贵—便宜　胖—瘦"
-  ],
-  "text_questions": [
-   {
-    "text": 1,
-    "q_zh": "大山和马可谁高？",
-    "a_zh": "马可比大山高一点儿。"
-   },
-   {
-    "text": 1,
-    "q_zh": "大山和马可谁大？",
-    "a_zh": "大山比马可大两岁。"
-   },
-   {
-    "text": 1,
-    "q_zh": "大山和马可谁的汉语说得更好？",
-    "a_zh": "马可比大山说得更好一些。"
-   },
-   {
-    "text": 2,
-    "q_zh": "男的喜欢什么课？",
-    "a_zh": "他喜欢历史课、体育课。"
-   },
-   {
-    "text": 2,
-    "q_zh": "男的为什么不喜欢数学课？",
-    "a_zh": "他觉得数学比历史难多了。"
-   },
-   {
-    "text": 2,
-    "q_zh": "他们要每天一起学多长时间？",
-    "a_zh": "他们要每天一起学一两个小时。"
-   },
-   {
-    "text": 3,
-    "q_zh": "女的为什么比以前来得早多了？",
-    "a_zh": "因为她搬家了，走路二十分钟就到。"
-   },
-   {
-    "text": 3,
-    "q_zh": "女的打算买什么？",
-    "a_zh": "她打算买一辆自行车。"
-   },
-   {
-    "text": 3,
-    "q_zh": "换自行车贵不贵？多少钱？",
-    "a_zh": "不贵，很便宜，两三百块钱。"
-   },
-   {
-    "text": 4,
-    "q_zh": "哪个房子大一些？",
-    "a_zh": "学校外边的房子比学校里边的大一些。"
-   },
-   {
-    "text": 4,
-    "q_zh": "男的觉得什么很重要？",
-    "a_zh": "他觉得环境更重要。"
-   },
-   {
-    "text": 4,
-    "q_zh": "哪个房子更方便？",
-    "a_zh": "学校里边的房子比学校外边的方便一些。"
-   }
-  ],
-  "summary_zh": "语言点：用“A比B＋形容词＋一点儿／一些／得多／多了”表示差异程度；用相邻数词表示概数。汉字：旧字新词：换季、地面、主菜。"
- },
- "workbook": {
-  "ref": {
-   "book": "workbook",
-   "pages": [
-    68,
-    69,
-    70,
-    71,
-    72,
-    73,
-    74
-   ]
-  },
-  "answers_ref": {
-   "book": "teacher",
-   "pages": [
+    105,
     170,
     171,
     172
-   ]
-  },
-  "sections": [
-   {
-    "n": "一、听力 第一部分",
-    "type_zh": "听力 第一部分",
-    "instruction_zh": "第1–5题：听对话，选择与对话内容一致的图片",
-    "instruction_en": "Questions 1-5: Choose the right picture for each dialogue you hear.",
-    "audio": "hsk3-workbook-10-part1.mp3",
-    "items": [
-     {
-      "n": "例",
-      "zh": "男：喂，请问张经理在吗？ 女：他正在开会，您半个小时以后再打，好吗？",
-      "transcript_zh": "男：喂，请问张经理在吗？ 女：他正在开会，您半个小时以后再打，好吗？",
-      "options": {
-       "A": "[picture] many children running and playing on a sports ground (with pitch lines) in front of a school building",
-       "B": "[picture] people clinking glasses at a restaurant table (a young woman and an older couple)",
-       "C": "[picture] a female teacher at a blackboard (with a triangle and formulas) explaining to a girl student, another student seated in the foreground",
-       "D": "[picture] a smiling woman in a uniform talking on a telephone",
-       "E": "[picture] a man in glasses talking on a mobile phone and covering one ear, beside a road with heavy traffic",
-       "F": "[picture] a salesman in a suit talking with a young couple next to a car in a car showroom"
-      },
-      "answer": "D",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        68
-       ]
-      }
-     },
-     {
-      "n": 1,
-      "zh": "",
-      "options": {
-       "A": "[picture] many children running and playing on a sports ground (with pitch lines) in front of a school building",
-       "B": "[picture] people clinking glasses at a restaurant table (a young woman and an older couple)",
-       "C": "[picture] a female teacher at a blackboard (with a triangle and formulas) explaining to a girl student, another student seated in the foreground",
-       "D": "[picture] a smiling woman in a uniform talking on a telephone",
-       "E": "[picture] a man in glasses talking on a mobile phone and covering one ear, beside a road with heavy traffic",
-       "F": "[picture] a salesman in a suit talking with a young couple next to a car in a car showroom"
-      },
-      "transcript_zh": "男：妈，你看，给笑笑讲题的那个就是我们班数学老师。 女：她个子真高，讲得怎么样？",
-      "answer": "C",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        172
-       ]
-      }
-     },
-     {
-      "n": 2,
-      "zh": "",
-      "options": {
-       "A": "[picture] many children running and playing on a sports ground (with pitch lines) in front of a school building",
-       "B": "[picture] people clinking glasses at a restaurant table (a young woman and an older couple)",
-       "C": "[picture] a female teacher at a blackboard (with a triangle and formulas) explaining to a girl student, another student seated in the foreground",
-       "D": "[picture] a smiling woman in a uniform talking on a telephone",
-       "E": "[picture] a man in glasses talking on a mobile phone and covering one ear, beside a road with heavy traffic",
-       "F": "[picture] a salesman in a suit talking with a young couple next to a car in a car showroom"
-      },
-      "transcript_zh": "女：喂，你听得见我说话吗？ 男：喂，喂，你等一会儿，我找个安静点儿的地方再跟你说。",
-      "answer": "E",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        172
-       ]
-      }
-     },
-     {
-      "n": 3,
-      "zh": "",
-      "options": {
-       "A": "[picture] many children running and playing on a sports ground (with pitch lines) in front of a school building",
-       "B": "[picture] people clinking glasses at a restaurant table (a young woman and an older couple)",
-       "C": "[picture] a female teacher at a blackboard (with a triangle and formulas) explaining to a girl student, another student seated in the foreground",
-       "D": "[picture] a smiling woman in a uniform talking on a telephone",
-       "E": "[picture] a man in glasses talking on a mobile phone and covering one ear, beside a road with heavy traffic",
-       "F": "[picture] a salesman in a suit talking with a young couple next to a car in a car showroom"
-      },
-      "transcript_zh": "男：谢谢你们请我们吃饭，这家饭馆的环境真好，菜也很好吃，特别是主菜。 女：我很高兴你们喜欢这个地方，下次我们再来。",
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        172
-       ]
-      }
-     },
-     {
-      "n": 4,
-      "zh": "",
-      "options": {
-       "A": "[picture] many children running and playing on a sports ground (with pitch lines) in front of a school building",
-       "B": "[picture] people clinking glasses at a restaurant table (a young woman and an older couple)",
-       "C": "[picture] a female teacher at a blackboard (with a triangle and formulas) explaining to a girl student, another student seated in the foreground",
-       "D": "[picture] a smiling woman in a uniform talking on a telephone",
-       "E": "[picture] a man in glasses talking on a mobile phone and covering one ear, beside a road with heavy traffic",
-       "F": "[picture] a salesman in a suit talking with a young couple next to a car in a car showroom"
-      },
-      "transcript_zh": "女：听说你们店可以用旧车换新车？ 男：对，这边请，我来给您介绍一下吧。您有旧车吗？",
-      "answer": "F",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        172
-       ]
-      }
-     },
-     {
-      "n": 5,
-      "zh": "",
-      "options": {
-       "A": "[picture] many children running and playing on a sports ground (with pitch lines) in front of a school building",
-       "B": "[picture] people clinking glasses at a restaurant table (a young woman and an older couple)",
-       "C": "[picture] a female teacher at a blackboard (with a triangle and formulas) explaining to a girl student, another student seated in the foreground",
-       "D": "[picture] a smiling woman in a uniform talking on a telephone",
-       "E": "[picture] a man in glasses talking on a mobile phone and covering one ear, beside a road with heavy traffic",
-       "F": "[picture] a salesman in a suit talking with a young couple next to a car in a car showroom"
-      },
-      "transcript_zh": "男：看，那么多人踢足球，他们在比赛吗？ 女：不是，他们在上体育课呢。",
-      "answer": "A",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        172
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "一、听力 第二部分",
-    "type_zh": "听力 第二部分",
-    "instruction_zh": "第6–10题：听句子，判断对错",
-    "instruction_en": "Questions 6-10: Decide whether the statements are true or false based on the sentences you hear.",
-    "audio": "hsk3-workbook-10-part2.mp3",
-    "items": [
-     {
-      "n": "例1",
-      "zh": "他希望自己很健康。",
-      "transcript_zh": "为了让自己更健康，他每天都花一个小时去锻炼身体。",
-      "answer": "√",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        69
-       ]
-      }
-     },
-     {
-      "n": "例2",
-      "zh": "那块儿手表不是他的。",
-      "transcript_zh": "今天我想早点儿回家。看了看手表，才5点。过了一会儿再看表，还是5点，我这才发现我的手表不走了。",
-      "answer": "×",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        69
-       ]
-      }
-     },
-     {
-      "n": 6,
-      "zh": "今天比昨天冷得多。",
-      "transcript_zh": "地面上怎么都是雪？昨天我女朋友还穿裙子呢，今天怎么就下雪了？",
-      "answer": "√",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        172
-       ]
-      }
-     },
-     {
-      "n": 7,
-      "zh": "他们要回家了。",
-      "transcript_zh": "走，找个环境好的地方，我早就想跟你聊聊了，这儿附近有没有安静点儿的咖啡店？",
-      "answer": "×",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        172
-       ]
-      }
-     },
-     {
-      "n": 8,
-      "zh": "爸爸很健康，因为他喜欢运动。",
-      "transcript_zh": "我爸爸身体那么好，主要是因为每天锻炼。",
-      "answer": "√",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        172
-       ]
-      }
-     },
-     {
-      "n": 9,
-      "zh": "他每天工作很累。",
-      "transcript_zh": "我每天工作八九个小时，中午也不能休息，能不累吗？",
-      "answer": "√",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        172
-       ]
-      }
-     },
-     {
-      "n": 10,
-      "zh": "以前儿子不喜欢学习。",
-      "transcript_zh": "我儿子的学习比以前好多了，主要是他有兴趣了。",
-      "answer": "√",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        172
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "一、听力 第三部分",
-    "type_zh": "听力 第三部分",
-    "instruction_zh": "第11–15题：听短对话，选择正确答案",
-    "instruction_en": "Questions 11-15: Listen to the short dialogues and choose the right answers.",
-    "audio": "hsk3-workbook-10-part3.mp3",
-    "items": [
-     {
-      "n": "例",
-      "zh": "男的想让小王做什么？",
-      "transcript_zh": "男：小王，帮我开一下门，好吗？谢谢！ 女：没问题。您去超市了？买了这么多东西。 问：男的想让小王做什么？",
-      "options": {
-       "A": "开门",
-       "B": "拿东西",
-       "C": "去超市买东西"
-      },
-      "answer": "A",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        69
-       ]
-      }
-     },
-     {
-      "n": 11,
-      "zh": "女的是什么意思？",
-      "options": {
-       "A": "买两个",
-       "B": "买三个",
-       "C": "少买一点儿"
-      },
-      "transcript_zh": "男：前边有卖水果的，我们买点儿苹果吧？ 女：现在是换季的时候，苹果不一定好吃，别买太多，买两三个就行。 问：女的是什么意思？",
-      "answer": "C",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        172
-       ]
-      }
-     },
-     {
-      "n": 12,
-      "zh": "女的现在怎么样了？",
-      "options": {
-       "A": "好点儿了",
-       "B": "好多了",
-       "C": "越来越不好"
-      },
-      "transcript_zh": "男：今天怎么样？还发烧吗？ 女：吃了药比昨天好一些了，但还头疼。 问：女的现在怎么样了？",
-      "answer": "A",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        172
-       ]
-      }
-     },
-     {
-      "n": 13,
-      "zh": "小刚和方明谁高？",
-      "options": {
-       "A": "小刚",
-       "B": "方明",
-       "C": "一样高"
-      },
-      "transcript_zh": "女：小刚，方明高还是你高？ 男：他个子也不高，只比我高一点儿。 问：小刚和方明谁高？",
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        172
-       ]
-      }
-     },
-     {
-      "n": 14,
-      "zh": "他们可能在哪儿？",
-      "options": {
-       "A": "飞机上",
-       "B": "电影院",
-       "C": "火车上"
-      },
-      "transcript_zh": "男：怎么还没到？我都看了三四个电影了。 女：我们是从中国到美国，还要再飞五六个小时。你睡一会儿，或者再看几个电影。 问：他们可能在哪儿？",
-      "answer": "A",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        172
-       ]
-      }
-     },
-     {
-      "n": 15,
-      "zh": "这个地方有几个姓王的老师？",
-      "options": {
-       "A": "三个",
-       "B": "三十个",
-       "C": "很多"
-      },
-      "transcript_zh": "女：喂，您好，请找一下王老师。 男：我们这儿有三四个姓王的老师呢，您找哪一个？ 问：这个地方有几个姓王的老师？",
-      "answer": "C",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        172
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "一、听力 第四部分",
-    "type_zh": "听力 第四部分",
-    "instruction_zh": "第16–20题：听长对话，选择正确答案",
-    "instruction_en": "Questions 16-20: Listen to the dialogues and choose the right answers.",
-    "audio": "hsk3-workbook-10-part4.mp3",
-    "items": [
-     {
-      "n": "例",
-      "zh": "男的在做什么？",
-      "transcript_zh": "女：晚饭做好了，准备吃饭了。 男：等一会儿，比赛还有三分钟就结束了。 女：快点儿吧，一起吃，菜冷了就不好吃了。 男：你先吃，我马上就看完了。 问：男的在做什么？",
-      "options": {
-       "A": "洗澡",
-       "B": "吃饭",
-       "C": "看电视"
-      },
-      "answer": "C",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        70
-       ]
-      }
-     },
-     {
-      "n": 16,
-      "zh": "关于男的，可以知道什么？",
-      "options": {
-       "A": "可能骑自行车",
-       "B": "可能坐公共汽车",
-       "C": "要去上课"
-      },
-      "transcript_zh": "女：你要出去吗？ 男：小丽，我问你，去中山南路骑自行车快还是坐公共汽车快？ 女：这个时间，骑车比坐公共汽车快得多。你这么着急，要去上课吗？ 男：不，我要去见女朋友。 问：关于男的，可以知道什么？",
-      "answer": "A",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        172
-       ]
-      }
-     },
-     {
-      "n": 17,
-      "zh": "男的是什么意思？",
-      "options": {
-       "A": "明天很冷",
-       "B": "明天是阴天",
-       "C": "下雪时最冷"
-      },
-      "transcript_zh": "女：明天是晴天还是阴天？ 男：上午下雪，下午就晴了。 女：太好了，明天可以穿我的新裙子了。 男：雪后晴天比下雪时冷得多，你不知道吗？ 问：男的是什么意思？",
-      "answer": "A",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        172
-       ]
-      }
-     },
-     {
-      "n": 18,
-      "zh": "关于男的，可以知道什么？",
-      "options": {
-       "A": "买了一辆旧车",
-       "B": "买的是自行车",
-       "C": "买了五辆车"
-      },
-      "transcript_zh": "男：我昨天换了辆新车，比那辆旧的舒服多了。 女：又换了？你已经换了四五辆了吧？多少钱？ 男：不贵，一百多。我那辆旧车送给你吧。 女：一百多？自行车啊！ 问：关于男的，可以知道什么？",
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        172
-       ]
-      }
-     },
-     {
-      "n": 19,
-      "zh": "关于女的和她女儿，可以知道什么？",
-      "options": {
-       "A": "妈妈高得多",
-       "B": "一样高",
-       "C": "女儿高得多"
-      },
-      "transcript_zh": "男：你女儿个子真高，比你高多了吧？ 女：其实我跟她一样高，只是她比我瘦多了。 男：她今年多大？十七八岁？在哪儿学习呢？ 女：今年十九了，正在国外学习，学历史和数学。 问：关于女的和她女儿，可以知道什么？",
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        172
-       ]
-      }
-     },
-     {
-      "n": 20,
-      "zh": "他们要做什么？",
-      "options": {
-       "A": "去咖啡店",
-       "B": "听音乐会",
-       "C": "买东西"
-      },
-      "transcript_zh": "男：走了两三个小时了，还买了这么多东西，真累。我们休息一会儿吧。 女：那就在这儿坐坐，喝点儿水。 男：楼上有个咖啡店，比这儿安静得多，环境也不错，还有音乐。 女：也好，我们上去喝点儿饮料。 问：他们要做什么？",
-      "answer": "A",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        172
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "二、阅读 第一部分",
-    "type_zh": "阅读 第一部分",
-    "instruction_zh": "第21–25题：选择合适的问答",
-    "instruction_en": "Questions 21-25: Match the two parts of the same dialogue.",
-    "items": [
-     {
-      "n": "例",
-      "zh": "你知道怎么去那儿吗？",
-      "options": {
-       "A": "好，你等我一两分钟，我去一下洗手间。",
-       "B": "你怎么在这么远的地方买房子？",
-       "C": "体育比数学容易多了，也有意思多了。",
-       "D": "今天我不上班，我昨天只睡了两三个小时，让我再睡一会儿。",
-       "E": "当然。我们先坐公共汽车，然后换地铁。",
-       "F": "小方，你跟小丽一样大吗？"
-      },
-      "answer": "E",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        71
-       ]
-      }
-     },
-     {
-      "n": 21,
-      "zh": "九点半了，你迟到了，快起床。",
-      "options": {
-       "A": "好，你等我一两分钟，我去一下洗手间。",
-       "B": "你怎么在这么远的地方买房子？",
-       "C": "体育比数学容易多了，也有意思多了。",
-       "D": "今天我不上班，我昨天只睡了两三个小时，让我再睡一会儿。",
-       "E": "当然。我们先坐公共汽车，然后换地铁。",
-       "F": "小方，你跟小丽一样大吗？"
-      },
-      "answer": "D",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        172
-       ]
-      }
-     },
-     {
-      "n": 22,
-      "zh": "我们去买点儿吃的吧，我早就饿了。",
-      "options": {
-       "A": "好，你等我一两分钟，我去一下洗手间。",
-       "B": "你怎么在这么远的地方买房子？",
-       "C": "体育比数学容易多了，也有意思多了。",
-       "D": "今天我不上班，我昨天只睡了两三个小时，让我再睡一会儿。",
-       "E": "当然。我们先坐公共汽车，然后换地铁。",
-       "F": "小方，你跟小丽一样大吗？"
-      },
-      "answer": "A",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        172
-       ]
-      }
-     },
-     {
-      "n": 23,
-      "zh": "她的生日是五月，我是一月，我比她大一点儿。",
-      "options": {
-       "A": "好，你等我一两分钟，我去一下洗手间。",
-       "B": "你怎么在这么远的地方买房子？",
-       "C": "体育比数学容易多了，也有意思多了。",
-       "D": "今天我不上班，我昨天只睡了两三个小时，让我再睡一会儿。",
-       "E": "当然。我们先坐公共汽车，然后换地铁。",
-       "F": "小方，你跟小丽一样大吗？"
-      },
-      "answer": "F",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        172
-       ]
-      }
-     },
-     {
-      "n": 24,
-      "zh": "你个子那么高，跑得也快，当然觉得容易。",
-      "options": {
-       "A": "好，你等我一两分钟，我去一下洗手间。",
-       "B": "你怎么在这么远的地方买房子？",
-       "C": "体育比数学容易多了，也有意思多了。",
-       "D": "今天我不上班，我昨天只睡了两三个小时，让我再睡一会儿。",
-       "E": "当然。我们先坐公共汽车，然后换地铁。",
-       "F": "小方，你跟小丽一样大吗？"
-      },
-      "answer": "C",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        172
-       ]
-      }
-     },
-     {
-      "n": 25,
-      "zh": "虽然远，但是附近有三四个车站，很方便。",
-      "options": {
-       "A": "好，你等我一两分钟，我去一下洗手间。",
-       "B": "你怎么在这么远的地方买房子？",
-       "C": "体育比数学容易多了，也有意思多了。",
-       "D": "今天我不上班，我昨天只睡了两三个小时，让我再睡一会儿。",
-       "E": "当然。我们先坐公共汽车，然后换地铁。",
-       "F": "小方，你跟小丽一样大吗？"
-      },
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        172
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "二、阅读 第二部分",
-    "type_zh": "阅读 第二部分",
-    "instruction_zh": "第26–30题：选择合适的词语填空",
-    "instruction_en": "Questions 26-30: Choose the proper words to fill in the brackets.",
-    "word_bank": [
-     [
-      "A 方便",
-      "B 骑",
-      "C 换",
-      "D 地方",
-      "E 声音",
-      "F 旧"
-     ]
-    ],
-    "items": [
-     {
-      "n": "例",
-      "zh": "她说话的（　）多好听啊！",
-      "options": {
-       "A": "方便",
-       "B": "骑",
-       "C": "换",
-       "D": "地方",
-       "E": "声音",
-       "F": "旧"
-      },
-      "answer": "E",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        71
-       ]
-      }
-     },
-     {
-      "n": 26,
-      "zh": "这件衣服有点儿（　）了，我不想穿了。",
-      "options": {
-       "A": "方便",
-       "B": "骑",
-       "C": "换",
-       "D": "地方",
-       "E": "声音",
-       "F": "旧"
-      },
-      "answer": "F",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        172
-       ]
-      }
-     },
-     {
-      "n": 27,
-      "zh": "我还没去过那个（　），漂亮吗？好玩儿吗？",
-      "options": {
-       "A": "方便",
-       "B": "骑",
-       "C": "换",
-       "D": "地方",
-       "E": "声音",
-       "F": "旧"
-      },
-      "answer": "D",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        172
-       ]
-      }
-     },
-     {
-      "n": 28,
-      "zh": "你（　）得太快了，慢点儿，小心前边的车。",
-      "options": {
-       "A": "方便",
-       "B": "骑",
-       "C": "换",
-       "D": "地方",
-       "E": "声音",
-       "F": "旧"
-      },
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        172
-       ]
-      }
-     },
-     {
-      "n": 29,
-      "zh": "A：你每天怎么去学校？坐车还是坐地铁？ B：坐地铁更快，也更（　）。",
-      "options": {
-       "A": "方便",
-       "B": "骑",
-       "C": "换",
-       "D": "地方",
-       "E": "声音",
-       "F": "旧"
-      },
-      "answer": "A",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        172
-       ]
-      }
-     },
-     {
-      "n": 30,
-      "zh": "A：这辆车买了十五六年了，总是出问题。 B：那（　）一辆新的吧，车出问题不是件小事儿。",
-      "options": {
-       "A": "方便",
-       "B": "骑",
-       "C": "换",
-       "D": "地方",
-       "E": "声音",
-       "F": "旧"
-      },
-      "answer": "C",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        172
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "二、阅读 第三部分",
-    "type_zh": "阅读 第三部分",
-    "instruction_zh": "第31–35题：选择正确答案",
-    "instruction_en": "Questions 31-35: Choose the right answers.",
-    "items": [
-     {
-      "n": "例",
-      "zh": "您是来参加今天会议的吗？您来早了一点儿，现在才八点半。您先进来坐吧。 ★会议最可能几点开始？",
-      "options": {
-       "A": "8点",
-       "B": "8点半",
-       "C": "9点"
-      },
-      "answer": "C",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        72
-       ]
-      }
-     },
-     {
-      "n": 31,
-      "zh": "每个周末，我们一家人都去公园或远的地方走走、玩儿玩儿。我们不坐公共汽车，也不坐出租车，我们骑自行车去。很多时候，骑车比开车、坐车方便得多，也快得多。最主要是因为骑车对身体好，对环境也好。 ★骑车：",
-      "options": {
-       "A": "没有坐车方便",
-       "B": "对环境很好",
-       "C": "不健康"
-      },
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        172
-       ]
-      }
-     },
-     {
-      "n": 32,
-      "zh": "以前中国有很多茶馆，但现在越来越少，咖啡店越来越多了，人们走累了可以去咖啡店坐坐，喝点儿咖啡，当然也有茶、牛奶和水。这样的咖啡店比以前的茶馆安静得多，环境也更好，大家很喜欢去。 ★咖啡店：",
-      "options": {
-       "A": "没有茶馆多",
-       "B": "不太安静",
-       "C": "环境比茶馆好"
-      },
-      "answer": "C",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        172
-       ]
-      }
-     },
-     {
-      "n": 33,
-      "zh": "我家楼下有一家旧车店，卖“二手”自行车。没有那么多钱买新车的人，可以到这儿来买辆旧的骑骑，特别便宜，也方便。 ★“二手”车的意思是：",
-      "options": {
-       "A": "便宜车",
-       "B": "新车",
-       "C": "旧车"
-      },
-      "answer": "C",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        172
-       ]
-      }
-     },
-     {
-      "n": 34,
-      "zh": "我女儿现在每天都要上历史课、体育课和数学课。她说她最喜欢历史课，因为历史课比数学课和体育课有意思多了。体育课比数学课容易一些，但是没有历史课那么好玩儿。 ★女儿最不喜欢上什么课？",
-      "options": {
-       "A": "数学课",
-       "B": "历史课",
-       "C": "体育课"
-      },
-      "answer": "A",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        172
-       ]
-      }
-     },
-     {
-      "n": 35,
-      "zh": "有时候，我真想回到以前。五年前这个地方比现在安静得多，这儿只有一条路，房子也没有现在多。现在这儿有四五条路，路上都是车，大楼也越来越多，饭馆有二三十个呢！ ★这个地方：",
-      "options": {
-       "A": "以前没有路",
-       "B": "现在有45条路",
-       "C": "现在的路比以前多"
-      },
-      "answer": "C",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        172
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "三、书写 第一部分",
-    "type_zh": "书写 第一部分",
-    "instruction_zh": "第36–40题：连词成句",
-    "instruction_en": "Questions 36-40: Rearrange the words/phrases to make sentences.",
-    "items": [
-     {
-      "n": "例",
-      "zh": "小船　上　一　河　条　有",
-      "answer": "河上有一条小船。",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        73
-       ]
-      }
-     },
-     {
-      "n": 36,
-      "zh": "这个地方　安静　比　那个地方　一些",
-      "answer": "这个地方比那个地方安静一些。",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        172
-       ]
-      }
-     },
-     {
-      "n": 37,
-      "zh": "周经理　都　一两杯　喝　咖啡　每天",
-      "answer": "周经理每天都喝一两杯咖啡。",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        172
-       ]
-      }
-     },
-     {
-      "n": 38,
-      "zh": "自行车　快　骑　比　得多　走路",
-      "answer": "骑自行车比走路快得多。",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        172
-       ]
-      }
-     },
-     {
-      "n": 39,
-      "zh": "矮　朋友　一点儿　我　比　个子",
-      "answer": "朋友比我个子矮一点儿。",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        172
-       ]
-      }
-     },
-     {
-      "n": 40,
-      "zh": "四　五　只有　教室里　个　学生",
-      "answer": "教室里只有四五个学生。",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        172
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "三、书写 第二部分",
-    "type_zh": "书写 第二部分",
-    "instruction_zh": "第41–45题：看拼音，写汉字",
-    "instruction_en": "Questions 41-45: Write the characters based on their pinyin.",
-    "items": [
-     {
-      "n": "例",
-      "zh": "没（　）系，别难过，高兴点儿。",
-      "hint_zh": "guān",
-      "answer": "关",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        73
-       ]
-      }
-     },
-     {
-      "n": 41,
-      "zh": "我们坐公共汽车去吧，我不会（　）自行车。",
-      "hint_zh": "qí",
-      "answer": "骑",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        172
-       ]
-      }
-     },
-     {
-      "n": 42,
-      "zh": "这条裙子有点儿瘦，我可以（　）一条吗？",
-      "hint_zh": "huàn",
-      "answer": "换",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        172
-       ]
-      }
-     },
-     {
-      "n": 43,
-      "zh": "我喜欢住在这个地方，因为（　）境特别好，最重要的是有很多商店。",
-      "hint_zh": "huán",
-      "answer": "环",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        172
-       ]
-      }
-     },
-     {
-      "n": 44,
-      "zh": "这儿（　）近有个学校，每天下午都有很多爸爸妈妈接孩子。",
-      "hint_zh": "fù",
-      "answer": "附",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        172
-       ]
-      }
-     },
-     {
-      "n": 45,
-      "zh": "在这个学校，我的工作（　）要是给学生上历史课。",
-      "hint_zh": "zhǔ",
-      "answer": "主",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        172
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "三、书写 第三部分",
-    "type_zh": "书写 第三部分",
-    "instruction_zh": "第46–50题：辨认汉字，选择正确的汉字填空",
-    "instruction_en": "Questions 46-50: Distinguish the characters and fill in the blanks.",
-    "items": [
-     {
-      "n": "例",
-      "zh": "我不知道________个地方在________儿。",
-      "hint_zh": "（那、哪）",
-      "answer": "那、哪",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        74
-       ]
-      }
-     },
-     {
-      "n": 46,
-      "zh": "弟弟新买了一辆________色的________行车。",
-      "hint_zh": "（自、白）",
-      "answer": "白、自",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        172
-       ]
-      }
-     },
-     {
-      "n": 47,
-      "zh": "________学老师的办公室不在这儿，在________上。",
-      "hint_zh": "（数、楼）",
-      "answer": "数、楼",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        172
-       ]
-      }
-     },
-     {
-      "n": 48,
-      "zh": "音乐课容易吗？我觉得音乐课比历________课________难。",
-      "hint_zh": "（更、史）",
-      "answer": "史、更",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        172
-       ]
-      }
-     },
-     {
-      "n": 49,
-      "zh": "请问，________子旁边的那辆车，我可以________一下吗？",
-      "hint_zh": "（骑、椅）",
-      "answer": "椅、骑",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        172
-       ]
-      }
-     },
-     {
-      "n": 50,
-      "zh": "我们每个星期都________两次体________课。",
-      "hint_zh": "（育、有）",
-      "answer": "有、育",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        172
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "四、复习",
-    "type_zh": "复习",
-    "instruction_zh": "第1–2题：根据课文内容填空",
-    "instruction_en": "Questions 1-2: Fill in the blanks based on the texts in the textbook.",
-    "items": [
-     {
-      "n": 1,
-      "zh": "小丽上个月搬家了，走路去公司二十分钟就到，很________，所以最近比以前来得________。她还打算________一辆________，因为以前那辆太________了。",
-      "answer": "方便、早多了、买、自行车、旧",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        172
-       ]
-      }
-     },
-     {
-      "n": 2,
-      "zh": "大山在看房子。中介公司的人告诉他，学校里边比学校外边方便一点儿，________有________个车站。学校外边的房子比学校里边的大________，也比学校里边的安静。大山觉得房子大小没关系，最________的是________。",
-      "answer": "附近、三四、一些、主要、环境",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        172
-       ]
-      }
-     }
-    ]
-   }
-  ]
- },
- "audio": {
-  "textbook": [
-   "hsk3-textbook-1001.mp3",
-   "hsk3-textbook-1002.mp3",
-   "hsk3-textbook-1003.mp3",
-   "hsk3-textbook-1004.mp3",
-   "hsk3-textbook-1005.mp3"
   ],
-  "workbook": [
-   "hsk3-workbook-10-part1.mp3",
-   "hsk3-workbook-10-part2.mp3",
-   "hsk3-workbook-10-part3.mp3",
-   "hsk3-workbook-10-part4.mp3"
-  ]
- },
- "unclear": [
-  "Багшийн ном PDF х.73 (语言点1 导入 — 热身2-ын хариулт): «高—低» гэж хэвлэсэн; мөн номын PDF х.72 生词 对比法-д «高—矮», энэ хичээлийн шинэ үг 矮. Номд байгаагаар хоёуланг нь үлдээсэн.",
-  "Багшийн ном PDF х.74 课文1 хариулт «马可比大山说得更好一些» — 课文1-д «马可比我说得好一些» (更 байхгүй); багшийн номын өөрийн 注意 (х.73: 形容词前一般不能再有程度副词) -тэй ч зөрж болзошгүй. Номд байгаагаар.",
-  "Багшийн ном PDF х.75 课文4 хариулт «学校里边的房子比学校外边的方便一些» — 课文4-т «学校里边比学校外边方便» (一些 байхгүй); дасгалын ном 复习2 (PDF х.74) «方便一点儿». Бүгдийг номд байгаагаар.",
-  "Багшийн ном PDF х.73 语言点 гарчиг «（2）概数的表达» («1» дугааргүй), сурах бичиг PDF х.100 «概数的表达1». Тус тусад нь номд байгаагаар.",
-  "Багшийн ном PDF х.74 课文1 模仿练习 — «A：……，你和……个子高？» — 课文1-ийн «谁» хэвлэгдээгүй; номд байгаагаар.",
-  "Багшийн ном PDF х.72 生词 启发式引导 — «他家楼下有一家超市，所以买东西很方便。» — «很方便» доогуур зураастай (сурагч нөхөх хэсэг); текстэд тэмдэглэгээгүй оруулсан.",
-  "Багшийн номын 本课小结 (PDF х.77) 文化-г агуулаагүй; «文化：中国人结婚时穿什么» (文化点解析 + 参考处理方式) нь 小结-ийн дараа тусдаа хэсэг — teacher.steps-ийн сүүлийн алхам болгон оруулсан.",
-  "Дасгалын ном 15 (PDF х.69): бичвэр «我们这儿有三四个姓王的老师呢» — сонголт A 三个 / B 三十个 / C 很多 — номын хариулт C (багшийн ном PDF х.172). Номд байгаагаар.",
-  "Сурах бичгийн 练一练 (2 дүрэм × 3), 练习2 选词填空 / 练习3 完成对话 / 练习4 回答问题 / 运用 / багшийн номын 操练 (这些东西要三十或者四十块钱／他买了四瓶或者五瓶牛奶) / 汉字辨认练习 (组词) — хариулт номд хэвлэгдээгүй тул answer талбаргүй. Багшийн номын 课文 асуулт-хариулт (teacher.text_questions) нь 练习4-ийн асуултаас өөр.",
-  "Сурах бичгийн 练习3-ын гарчиг «用本课新学的语言点和词语完成对话» (L02 шиг «描述图片» биш) — type_zh-д «完成对话» гэж гарчгаас товчилсон.",
-  "Сурах бичгийн 拼音课文 (PDF х.99)-ын гарчгийн пиньинь (Zài jiàoshì / Zài jiàoshì / Zài xiūxishì / Zài kàn fángzi) болон ярилцагчийн нэрийн пиньинь (péngyou, Dàshān, Xiǎomíng, tóngxué, tóngshì, Xiǎolì, zhōngjiè) схемд талбаргүй тул lines.pinyin-д зөвхөн яриаг оруулсан.",
-  "Энэ хичээлд 专有名词 хүснэгт, 汉字知识 хэсэг байхгүй; 注释1 жишээ (1)-д 大卫 гардаг ч тусгай нэрийн хүснэгтэд ороогүй. 注释-ийн жишээ 1-(4), 1-(8), 2-(4) нь номд улаанаар (课文-ээс авсан) хэвлэгдсэн.",
-  "Дасгалын номын сонсгол нэг CD тэмдэгтэй (10) — аудиог hsk3-workbook-10-part1…4.mp3 болгож хэсэг тус бүрт хуваасныг section.audio-д оноосон.",
-  "Дасгалын ном 听力 第三/四部分 — номд зөвхөн сонголтууд хэвлэгдсэн; item.zh-д багшийн номын хавсралтын «问：» асуултыг оруулсан (transcript_zh-д бүтнээр).",
-  "Дасгалын номд 51–54 (组词) хэсэг байхгүй — нийт 1–50 + 复习 1–2.",
-  "verified_pages: сурах бичиг PDF х.97–105, багшийн ном PDF х.71–77 ба 170–172, дасгалын ном PDF х.68–74 (71–74 дугаар багшийн ном, дасгалын ном хоёуланд давхцана)."
- ],
- "verified_pages": [
-  68,
-  69,
-  70,
-  71,
-  72,
-  73,
-  74,
-  75,
-  76,
-  77,
-  97,
-  98,
-  99,
-  100,
-  101,
-  102,
-  103,
-  104,
-  105,
-  170,
-  171,
-  172
- ],
- "schema_version": 1
+  "schema_version": 1,
+  "hsk30": {
+    "source": "courseware",
+    "ref": {
+      "book": "hsk30_courseware",
+      "pages": [
+        5,
+        16,
+        26
+      ]
+    },
+    "new_words": [
+      {
+        "n": 1,
+        "zh": "身高",
+        "pinyin": "shēngāo",
+        "pos": "n.",
+        "en": "height",
+        "text": 1
+      },
+      {
+        "n": 2,
+        "zh": "直到",
+        "pinyin": "zhídào",
+        "pos": "v.",
+        "en": "until",
+        "text": 2
+      },
+      {
+        "n": 3,
+        "zh": "受",
+        "pinyin": "shòu",
+        "pos": "v.",
+        "en": "receive",
+        "text": 2
+      },
+      {
+        "n": 4,
+        "zh": "方便面",
+        "pinyin": "fāngbiànmiàn",
+        "pos": "n.",
+        "en": "instant noodles",
+        "text": 3
+      },
+      {
+        "n": 5,
+        "zh": "汽车",
+        "pinyin": "qìchē",
+        "pos": "n.",
+        "en": "car",
+        "text": 3
+      },
+      {
+        "n": 6,
+        "zh": "高铁",
+        "pinyin": "gāotiě",
+        "pos": "n.",
+        "en": "high-speed rail",
+        "text": 3
+      },
+      {
+        "n": 7,
+        "zh": "红绿灯",
+        "pinyin": "hóng-lǜdēng",
+        "pos": "n.",
+        "en": "traffic light",
+        "text": 3
+      },
+      {
+        "n": 8,
+        "zh": "街",
+        "pinyin": "jiē",
+        "pos": "n.",
+        "en": "street",
+        "text": 4
+      },
+      {
+        "n": 9,
+        "zh": "马路",
+        "pinyin": "mǎlù",
+        "pos": "n.",
+        "en": "road",
+        "text": 4
+      },
+      {
+        "n": 10,
+        "zh": "路边",
+        "pinyin": "lùbiān",
+        "pos": "n.",
+        "en": "roadside",
+        "text": 4
+      },
+      {
+        "n": 11,
+        "zh": "路口",
+        "pinyin": "lùkǒu",
+        "pos": "n.",
+        "en": "crossing",
+        "text": 4
+      }
+    ],
+    "grammar": [],
+    "exercises": []
+  }
 }

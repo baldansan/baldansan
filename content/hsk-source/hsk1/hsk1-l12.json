@@ -1570,7 +1570,8 @@
   "Багшийн ном PDF х.82–83 课文 асуултуудад тусдаа хариулт байхгүй (课文1–2-т нэгдсэн «叙述体» бичвэр л бий) — text_questions-д a_zh оруулаагүй.",
   "Багшийн ном 汉字 补充练习 «辨认下列汉字并组词» (大/太、气/吃、姐/妹、雨/水) — хариулт хэвлэгдээгүй; teacher.steps «6 汉字»-д.",
   "Сурах бичгийн 热身-ийн хариулт зөвхөн багшийн номд (PDF х.79): ①C ②D ③B ④A ⑤F ⑥E.",
-  "Зургийн тайлбарууд (picture_desc_en, pictures_desc_en, options «[picture]») зургаас товч, объектив дүрсэлсэн."
+  "Зургийн тайлбарууд (picture_desc_en, pictures_desc_en, options «[picture]») зургаас товч, объектив дүрсэлсэн.",
+  "HSK 3.0 нэмэлт үгс (BLCUP 课件 补充HSK3.0, слайд 20, 21, 22, 23, 24, 25, 41, 42, 43, 44) `hsk30`-д — зөвхөн ханз+пиньинь (слайдад pos/en байхгүй)."
  ],
  "verified_pages": [
   67,
@@ -1606,5 +1607,79 @@
   126,
   127
  ],
- "schema_version": 1
+ "schema_version": 1,
+ "hsk30": {
+  "source": "courseware",
+  "ref": {
+   "book": "hsk30_courseware",
+   "pages": [
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    41,
+    42,
+    43,
+    44
+   ]
+  },
+  "new_words": [
+   {
+    "n": 1,
+    "zh": "好看",
+    "pinyin": "hǎokàn"
+   },
+   {
+    "n": 2,
+    "zh": "好听",
+    "pinyin": "hǎotīng"
+   },
+   {
+    "n": 3,
+    "zh": "好玩儿",
+    "pinyin": "hǎowánr"
+   },
+   {
+    "n": 4,
+    "zh": "雨",
+    "pinyin": "yǔ"
+   }
+  ],
+  "grammar": [],
+  "exercises": [
+   {
+    "n": 1,
+    "type_zh": "描述图片",
+    "instruction_zh": "用本课新学的语言点和词语描述图片",
+    "instruction_en": "Describe the pictures using the newly-learned language points and words.",
+    "items": [
+     {
+      "n": 1,
+      "zh": "她的衣服很______。",
+      "pinyin": "Tā de yīfu hěn ______."
+     },
+     {
+      "n": 2,
+      "zh": "她说这歌不______。",
+      "pinyin": "Tā shuō zhè gē bù ______."
+     },
+     {
+      "n": 3,
+      "zh": "这个电影真______。",
+      "pinyin": "Zhège diànyǐng zhēn ______."
+     },
+     {
+      "n": 4,
+      "zh": "外面______很大。",
+      "pinyin": "Wàimiàn ______ hěn dà."
+     }
+    ]
+   }
+  ],
+  "unclear": [
+   "Курсын слайд (补充生词) зөвхөн ханз + пиньинь хэвлэдэг — pos/en номд байхгүй тул оруулаагүй (өмнө нэмсэн толь бичгийн тайлбарыг хассан)."
+  ]
+ }
 }

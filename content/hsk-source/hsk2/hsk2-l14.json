@@ -1,14 +1,1709 @@
 {
- "level": "hsk2",
- "lesson": 14,
- "book": "HSK2",
- "title_zh": "你看过那个电影吗",
- "title_pinyin": "Nǐ kànguo nàge diànyǐng ma",
- "title_en": "Have you seen that movie",
- "textbook": {
-  "ref": {
-   "book": "textbook",
-   "pages": [
+  "level": "hsk2",
+  "lesson": 14,
+  "book": "HSK2",
+  "title_zh": "你看过那个电影吗",
+  "title_pinyin": "Nǐ kànguo nàge diànyǐng ma",
+  "title_en": "Have you seen that movie",
+  "textbook": {
+    "ref": {
+      "book": "textbook",
+      "pages": [
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132
+      ]
+    },
+    "warmup": [
+      {
+        "instruction_zh": "给下面的词语选择对应的图片",
+        "instruction_en": "Match the pictures with the words/phrases.",
+        "items": [
+          "①电影院 diànyǐngyuàn",
+          "②等 děng",
+          "③晴 qíng",
+          "④一百 yìbǎi",
+          "⑤打电话 dǎ diànhuà",
+          "⑥玩儿 wánr"
+        ],
+        "pictures_desc_en": [
+          "A: a man in a suit sitting on a park bench, looking at his wristwatch, high-rise buildings behind",
+          "B: a baby lying on its front playing with a toy among letter blocks",
+          "C: a hand holding a telephone handset while another hand presses the keypad",
+          "D: an empty cinema hall: rows of seats facing a large screen",
+          "E: a white sail against a clear blue sky",
+          "F: the red number “100”"
+        ]
+      },
+      {
+        "instruction_zh": "看下面的图片，用汉语说出它们的名字",
+        "instruction_en": "Look at the pictures and say the names of the things in Chinese.",
+        "items": [
+          "①________",
+          "②________",
+          "③________",
+          "④________"
+        ],
+        "pictures_desc_en": [
+          "①: a flat-screen television",
+          "②: a strip of film frames numbered 1 and 2 with a clapperboard",
+          "③: a telephone with a handset and push-button keypad",
+          "④: a desktop computer with monitor, tower case, keyboard and mouse"
+        ]
+      }
+    ],
+    "pronunciation": [
+      {
+        "title_zh": "感叹句的句调",
+        "rows": [
+          "Jīntiān tiānqì zhēn hǎo a! （1）今天天气真好啊！↘",
+          "Zhège Hànzì zhēn nán xiě a! （2）这个汉字真难写啊！↘",
+          "Zhè jiàn yīfu tài piàoliang le! （3）这件衣服太漂亮了！↘"
+        ],
+        "notes_zh": [
+          "汉语感叹句的句调一般为降调。例如：",
+          "“↘”为书中句末的下降箭头（书中无文字说明）。"
+        ],
+        "notes_en": [
+          "Intonation of an Exclamatory Sentence",
+          "A Chinese exclamatory sentence usually has a falling intonation. For example:"
+        ]
+      }
+    ],
+    "texts": [
+      {
+        "n": 1,
+        "title_zh": "在教室",
+        "title_en": "In the classroom",
+        "kind": "dialogue",
+        "lines": [
+          {
+            "speaker": "A",
+            "zh": "你看过那个电影没有？",
+            "pinyin": "Nǐ kànguo nàge diànyǐng méiyǒu?"
+          },
+          {
+            "speaker": "B",
+            "zh": "没看过，听说很有意思。",
+            "pinyin": "Méi kànguo, tīngshuō hěn yǒu yìsi."
+          },
+          {
+            "speaker": "A",
+            "zh": "那我们下个星期一起去看吧？",
+            "pinyin": "Nà wǒmen xià ge xīngqī yìqǐ qù kàn ba?"
+          },
+          {
+            "speaker": "B",
+            "zh": "可以，但是我女朋友也想去。",
+            "pinyin": "Kěyǐ, dànshì wǒ nǚpéngyou yě xiǎng qù."
+          }
+        ],
+        "english_version": "A: Have you seen that movie?\nB: No. I was told it is fantastic.\nA: Why don’t we see it together next week?\nB: OK. But my girlfriend also wants to go.",
+        "new_words": [
+          {
+            "n": 1,
+            "zh": "有意思",
+            "pinyin": "yǒu yìsi",
+            "en": "interesting, fun",
+            "text": 1
+          },
+          {
+            "n": 2,
+            "zh": "但是",
+            "pinyin": "dànshì",
+            "pos": "conj.",
+            "en": "but, still, yet",
+            "text": 1
+          }
+        ]
+      },
+      {
+        "n": 2,
+        "title_zh": "在办公室",
+        "title_en": "In the office",
+        "kind": "dialogue",
+        "lines": [
+          {
+            "speaker": "A",
+            "zh": "听说你去过中国，还想去吗？",
+            "pinyin": "Tīngshuō nǐ qùguo Zhōngguó, hái xiǎng qù ma?"
+          },
+          {
+            "speaker": "B",
+            "zh": "我虽然去过好几次，但是还想再去玩儿玩儿。",
+            "pinyin": "Wǒ suīrán qùguo hǎojǐ cì, dànshì hái xiǎng zài qù wánrwanr."
+          },
+          {
+            "speaker": "A",
+            "zh": "那我们一起去吧。",
+            "pinyin": "Nà wǒmen yìqǐ qù ba."
+          },
+          {
+            "speaker": "B",
+            "zh": "好啊，到时候我给你打电话。",
+            "pinyin": "Hǎo a, dào shíhou wǒ gěi nǐ dǎ diànhuà."
+          }
+        ],
+        "english_version": "A: It’s said you’ve been to China. Do you want to go there again?\nB: Though I’ve been there several times, I still want to go for pleasure again.\nA: Let’s go together.\nB: Great. I’ll call you then.",
+        "new_words": [
+          {
+            "n": 3,
+            "zh": "虽然",
+            "pinyin": "suīrán",
+            "pos": "conj.",
+            "en": "although, though",
+            "text": 2
+          },
+          {
+            "n": 4,
+            "zh": "次",
+            "pinyin": "cì",
+            "pos": "m.",
+            "en": "time",
+            "text": 2
+          },
+          {
+            "n": 5,
+            "zh": "玩儿",
+            "pinyin": "wánr",
+            "pos": "v.",
+            "en": "to play, to have fun",
+            "text": 2
+          }
+        ]
+      },
+      {
+        "n": 3,
+        "title_zh": "在房间",
+        "title_en": "In the room",
+        "kind": "dialogue",
+        "lines": [
+          {
+            "speaker": "A",
+            "zh": "明天天气怎么样？",
+            "pinyin": "Míngtiān tiānqì zěnmeyàng?"
+          },
+          {
+            "speaker": "B",
+            "zh": "虽然是晴天，但是很冷。",
+            "pinyin": "Suīrán shì qíngtiān, dànshì hěn lěng."
+          },
+          {
+            "speaker": "A",
+            "zh": "那还能去跑步吗？",
+            "pinyin": "Nà hái néng qù pǎo bù ma?"
+          },
+          {
+            "speaker": "B",
+            "zh": "可以，但是你自己去吧，我还有很多事情要做。",
+            "pinyin": "Kěyǐ, dànshì nǐ zìjǐ qù ba, wǒ hái yǒu hěn duō shìqing yào zuò."
+          }
+        ],
+        "english_version": "A: How will the weather be tomorrow?\nB: It will be fine, but cold.\nA: In that case, is it OK to go jogging?\nB: I think so. But I’m afraid you have to go by yourself because I have a lot of work to do.",
+        "new_words": [
+          {
+            "n": 6,
+            "zh": "晴",
+            "pinyin": "qíng",
+            "pos": "adj.",
+            "en": "sunny, fine, clear",
+            "text": 3
+          }
+        ]
+      },
+      {
+        "n": 4,
+        "title_zh": "在商店",
+        "title_en": "In a store",
+        "kind": "dialogue",
+        "lines": [
+          {
+            "speaker": "A",
+            "zh": "你在这个商店买过东西没有？",
+            "pinyin": "Nǐ zài zhège shāngdiàn mǎiguo dōngxi méiyǒu?"
+          },
+          {
+            "speaker": "B",
+            "zh": "买过一次，这儿的东西还可以，就是不便宜。",
+            "pinyin": "Mǎiguo yí cì, zhèr de dōngxi hái kěyǐ, jiùshì bù piányi."
+          },
+          {
+            "speaker": "A",
+            "zh": "我喜欢这件衣服，但是觉得有点儿贵。",
+            "pinyin": "Wǒ xǐhuan zhè jiàn yīfu, dànshì juéde yǒudiǎnr guì."
+          },
+          {
+            "speaker": "B",
+            "zh": "两百块还可以，喜欢就买吧。",
+            "pinyin": "Liǎngbǎi kuài hái kěyǐ, xǐhuan jiù mǎi ba."
+          }
+        ],
+        "english_version": "A: Have you ever bought anything in this store?\nB: Yes, once. Things here are pretty good, not cheap though.\nA: I like this garment, but I think it’s a little expensive.\nB: Two hundred yuan is not that expensive. If you like it, just buy it.",
+        "new_words": [
+          {
+            "n": 7,
+            "zh": "百",
+            "pinyin": "bǎi",
+            "pos": "num.",
+            "en": "hundred",
+            "text": 4
+          }
+        ]
+      }
+    ],
+    "grammar": [
+      {
+        "n": 1,
+        "title_zh": "结构助词“过”",
+        "title_en": "The Structural Particle “过”",
+        "explanation_zh": "动词后加上结构助词“过”，一般用来表示过去有过的经历，这些动作行为没有持续到现在。例如：\n在动词前边加“没（有）”表示否定。例如：\n在句末加“没有”表示疑问。例如：",
+        "explanation_en": "A verb followed by the structural particle “过” usually indicates a past experience action which hasn’t lasted to the present. For example:\nIn the negative form, “没（有）” is added before the verb. For example:\nIn the interrogative form, “没有” is added at the end of the sentence. For example:",
+        "structure_rows": [
+          "Subject | Predicate: V | 过 | O",
+          "他们 | 来 | 过 | 我家。",
+          "我 | 看 | 过 | 那个电影。",
+          "我 | 去 | 过 | 中国。",
+          "Subject | Predicate: 没（有）＋V | 过 | O",
+          "他们 | 没（有）来 | 过 | 我家。",
+          "我 | 没（有）看 | 过 | 那个电影。",
+          "我 | 没（有）去 | 过 | 中国。",
+          "Subject | Predicate: V | 过 | O＋没有",
+          "他们 | 来 | 过 | 你家没有？",
+          "你 | 看 | 过 | 那个电影没有？",
+          "你 | 去 | 过 | 中国没有？"
+        ],
+        "examples": [
+          {
+            "n": 1,
+            "zh": "他们来过我家。"
+          },
+          {
+            "n": 2,
+            "zh": "我看过那个电影。"
+          },
+          {
+            "n": 3,
+            "zh": "我去过中国。"
+          },
+          {
+            "n": 4,
+            "zh": "他们没（有）来过我家。"
+          },
+          {
+            "n": 5,
+            "zh": "我没（有）看过那个电影。"
+          },
+          {
+            "n": 6,
+            "zh": "我没（有）去过中国。"
+          },
+          {
+            "n": 7,
+            "zh": "他们来过你家没有？"
+          },
+          {
+            "n": 8,
+            "zh": "你看过那个电影没有？"
+          },
+          {
+            "n": 9,
+            "zh": "你去过中国没有？"
+          }
+        ]
+      },
+      {
+        "n": 2,
+        "title_zh": "关联词“虽然……，但是……”",
+        "title_en": "The Pair of Conjunctions “虽然……，但是……”",
+        "explanation_zh": "“虽然……，但是……”连接两个分句，构成一种转折关系。例如：",
+        "explanation_en": "The conjunctions “虽然……，但是……” connect two clauses, forming a complex sentence indicating an adversative relation. For example:",
+        "examples": [
+          {
+            "n": 1,
+            "zh": "虽然外面很冷，但是房间里很热。"
+          },
+          {
+            "n": 2,
+            "zh": "虽然汉字很难，但是我很喜欢写汉字。"
+          },
+          {
+            "n": 3,
+            "zh": "虽然是晴天，但是很冷。"
+          }
+        ]
+      },
+      {
+        "n": 3,
+        "title_zh": "动量补语“次”",
+        "title_en": "The Complement of Frequency “次”",
+        "explanation_zh": "动量补语“次”常放在谓语动词的后边，用来表示动作发生、进行的次数。例如：\n宾语是表示地点的名词时，动量补语可以放在宾语前，也可以放在宾语后。例如：\n宾语是人称代词时，动量补语要放在宾语后。例如：",
+        "explanation_en": "The complement of frequency “次” is usually used after the predicate verb, indicating the number of times that an action has taken place. For example:\nWhen the object of a verb is a place, the complement of frequency can be put either before or after the object. For example:\nWhen the object is a personal pronoun, the complement of frequency should be put after the object. For example:",
+        "structure_rows": [
+          "Subject | Predicate: V | 过 | Num＋次 | O",
+          "我们 | 看 | 过 | 三次 | 电影。",
+          "他们 | 坐 | 过 | 一次 | 飞机。",
+          "我 | （在这个商店）买 | 过 | 一次 | （东西）。",
+          "Subject | Predicate: V | 过 | Num＋次 | O",
+          "我们 | 去 | 过 | 三次 | 北京。",
+          "他们 | 来 | 过 | 一次 | 中国。",
+          "我 | （上星期）去 | 过 | 一次 | 医院。",
+          "Subject | Predicate: V | 过 | O | Num＋次",
+          "我们 | 去 | 过 | 北京 | 三次。",
+          "他们 | 来 | 过 | 中国 | 一次。",
+          "我 | （上星期）去 | 过 | 医院 | 一次。",
+          "Subject | Predicate: V | 过 | O | Num＋次",
+          "我们 | 找 | 过 | 他 | 三次。",
+          "他们 | 看 | 过 | 我 | 一次。",
+          "老师 | 叫 | 过 | 我 | 两次。"
+        ],
+        "examples": [
+          {
+            "n": 1,
+            "zh": "我们看过三次电影。"
+          },
+          {
+            "n": 2,
+            "zh": "他们坐过一次飞机。"
+          },
+          {
+            "n": 3,
+            "zh": "我（在这个商店）买过一次（东西）。"
+          },
+          {
+            "n": 4,
+            "zh": "我们去过三次北京。"
+          },
+          {
+            "n": 5,
+            "zh": "他们来过一次中国。"
+          },
+          {
+            "n": 6,
+            "zh": "我（上星期）去过一次医院。"
+          },
+          {
+            "n": 7,
+            "zh": "我们去过北京三次。"
+          },
+          {
+            "n": 8,
+            "zh": "他们来过中国一次。"
+          },
+          {
+            "n": 9,
+            "zh": "我（上星期）去过医院一次。"
+          },
+          {
+            "n": 10,
+            "zh": "我们找过他三次。"
+          },
+          {
+            "n": 11,
+            "zh": "他们看过我一次。"
+          },
+          {
+            "n": 12,
+            "zh": "老师叫过我两次。"
+          }
+        ]
+      }
+    ],
+    "exercises": [
+      {
+        "n": 1,
+        "type_zh": "分角色朗读课文",
+        "instruction_zh": "分角色朗读课文",
+        "instruction_en": "Role-play the dialogs.",
+        "items": []
+      },
+      {
+        "n": 2,
+        "type_zh": "回答问题",
+        "instruction_zh": "根据课文内容回答问题",
+        "instruction_en": "Answer the questions based on the dialogs.",
+        "items": [
+          {
+            "n": 1,
+            "zh": "他们看过那个电影吗？",
+            "pinyin": "Tāmen kànguo nàge diànyǐng ma?"
+          },
+          {
+            "n": 2,
+            "zh": "他们想几个人去看电影？",
+            "pinyin": "Tāmen xiǎng jǐ ge rén qù kàn diànyǐng?"
+          },
+          {
+            "n": 3,
+            "zh": "他们想来中国做什么？",
+            "pinyin": "Tāmen xiǎng lái Zhōngguó zuò shénme?"
+          },
+          {
+            "n": 4,
+            "zh": "为什么她明天不能去跑步？",
+            "pinyin": "Wèi shénme tā míngtiān bù néng qù pǎo bù?"
+          },
+          {
+            "n": 5,
+            "zh": "女的觉得这个商店的东西怎么样？",
+            "pinyin": "Nǚde juéde zhège shāngdiàn de dōngxi zěnmeyàng?"
+          }
+        ]
+      },
+      {
+        "n": 3,
+        "type_zh": "描述图片",
+        "instruction_zh": "用本课新学的语言点和词语描述图片",
+        "instruction_en": "Describe the pictures using the newly-learned language points and words.",
+        "items": [
+          {
+            "n": 1,
+            "zh": "你以前________这种水果吗？",
+            "pinyin": "Nǐ yǐqián ______ zhè zhǒng shuǐguǒ ma?",
+            "picture_desc_en": "a pile of red cherries with stems on a wooden surface"
+          },
+          {
+            "n": 2,
+            "zh": "我去年________你姐姐一次。",
+            "pinyin": "Wǒ qùnián ______ nǐ jiějie yí cì.",
+            "picture_desc_en": "a smiling blonde woman in a white top, hand at her chin, tall grass behind her"
+          },
+          {
+            "n": 3,
+            "zh": "虽然天气很冷，但是他________。",
+            "pinyin": "Suīrán tiānqì hěn lěng, dànshì tā ______.",
+            "picture_desc_en": "a swimmer in a red swimming cap doing the front crawl in a pool"
+          },
+          {
+            "n": 4,
+            "zh": "虽然英语很难，但是她________。",
+            "pinyin": "Suīrán Yīngyǔ hěn nán, dànshì tā ______.",
+            "picture_desc_en": "a young woman with glasses reading a large open book in front of bookshelves"
+          }
+        ]
+      }
+    ],
+    "characters": {
+      "knowledge_title_zh": "汉字偏旁“⻗”和“贝”",
+      "knowledge_zh": "偏旁 | 解释 | 例字\n⻗ | 雨字头，一般与云、雨等天气现象有关系。 | 雪 xuě、雾 wù\n贝 | 贝字旁，一般与钱财、鼎类器物有关系。 | 财 cái、货 huò",
+      "knowledge_en": "Chinese Radicals: “⻗” and “贝” — The radical “⻗”, appearing at the top of a character, is usually related to such weather phenomena as clouds and rain: 雪 xuě snow; 雾 wù fog, mist. The radical “贝” is usually related to money or utensils like an ancient cooking vessel: 财 cái wealth, money; 货 huò goods, commodity.",
+      "characters": [
+        {
+          "zh": "雪",
+          "pinyin": "xuě",
+          "note_zh": "偏旁“⻗（雨字头）”例字（snow）"
+        },
+        {
+          "zh": "雾",
+          "pinyin": "wù",
+          "note_zh": "偏旁“⻗（雨字头）”例字（fog, mist）"
+        },
+        {
+          "zh": "财",
+          "pinyin": "cái",
+          "note_zh": "偏旁“贝（贝字旁）”例字（wealth, money）"
+        },
+        {
+          "zh": "货",
+          "pinyin": "huò",
+          "note_zh": "偏旁“贝（贝字旁）”例字（goods, commodity）"
+        }
+      ]
+    },
+    "application": [
+      {
+        "title_zh": "双人活动",
+        "instruction_zh": "两人一组，用“虽然A，但是B”练习说句子，其中一个人说A，另一个人说B。然后两人互换。",
+        "instruction_en": "Work in pairs and make sentences using “虽然A，但是B”. One says A and the other says B. Then switch the roles.",
+        "example_zh": [
+          "例如：A：虽然这件衣服很漂亮， Suīrán zhè jiàn yīfu hěn piàoliang,",
+          "B：但是太贵了，我没钱买。 dànshì tài guì le, wǒ méi qián mǎi.",
+          "A：虽然今天天气很冷， Suīrán jīntiān tiānqì hěn lěng,",
+          "B：……"
+        ]
+      },
+      {
+        "title_zh": "小组活动",
+        "instruction_zh": "3～4人一组，用结构助词“过”叙述自己在中国经历过的事情，尽量使用学过的词语。每组请一位同学报告情况。",
+        "instruction_en": "Work in groups of 3-4. Describe your experiences in China using the structural particle “过” with the words you’ve learned. Each group chooses a member to make a report.",
+        "example_zh": [
+          "表格：（序号） | 经历过的事情 Your Experiences",
+          "1 | 我在北京买过一件很漂亮的衣服。 Wǒ zài Běijīng mǎiguo yí jiàn hěn piàoliang de yīfu.",
+          "（另有3行空白）"
+        ]
+      }
+    ]
+  },
+  "teacher": {
+    "ref": {
+      "book": "teacher",
+      "pages": [
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107
+      ]
+    },
+    "objectives_zh": [
+      "重点词语：学生能够熟练掌握“有意思、玩儿、晴、百”的词义和用法",
+      "语言点：学生能够了解并掌握：（1）动态助词“过”（2）关联词“虽然……，但是……”（3）动量补语“次”",
+      "语音：学生能够掌握感叹句的句调，并能正确朗读",
+      "汉字：学生能够：（1）熟练认读本课生词（2）了解“⻗（雨字头）、贝（贝字旁）”所表示的意思",
+      "功能：学生能够：（1）表达过去的经历（动态助词“过”）（2）表达先让步，然后转折的逻辑（虽然……，但是……）（3）表达动作发生、进行的次数（动量补语“次”）"
+    ],
+    "steps": [
+      {
+        "title_zh": "一 复习旧课",
+        "body_zh": "1. 教师出示第13课生词卡片，要求学生快速认读下列生词：\n手、拿、铅笔、班、长、宾馆、一直、往、路口\n2. 教师带领学生辨析下列字形相近的汉字：\n笑____　住____　路____　铅____\n笔____　往____　跑____　识____\n3. 教师根据第13课重点内容，要求学生快速回答问题：\n大卫穿着什么颜色的衣服？\n手里拿着手机的那个人是谁？\n那个长着两个大眼睛的女孩是你的同学吗？\n你认识那个坐着学习的人吗？\n你能告诉我怎么去图书馆吗？\n这儿离医院远不远？你能告诉我怎么走吗？"
+      },
+      {
+        "title_zh": "二 学习新课 1 热身",
+        "body_zh": "热身1：教师先带领学生根据图片选出正确的词语，然后分组练习。一组学生看图片说出正确的词语；另一组学生看词语，说出图片的编号。\n答案：①D　②A　③E　④F　⑤C　⑥B\n热身2：教师说出编号，让学生用汉语说出它们的名字。\n参考答案：①电视　②电影　③电话　④电脑"
+      },
+      {
+        "title_zh": "2 生词",
+        "body_zh": "（1）生词快速认读及正音\n有意思、但是、虽然、次、玩儿、晴、百\n• 教师可以用PPT依次快速展示生词；\n• 教师领读，学生齐读；\n• 学生接龙式读一遍，每人读两个。\n（2）重点生词扩展及常用搭配\n有意思—很有意思—非常有意思—没（有）意思—有意思的书\n　—那个电影很有意思，星期天一起去看看吧？\n　—我觉得这本新买的书没意思。\n　—听说（这个电影）很有意思。\n玩儿—好玩儿—玩儿一会儿—玩儿电脑—玩儿玩儿\n　—这个周末不太忙，一起去玩儿吧。\n　—我告诉他不要每天晚上玩儿电脑。\n　—我虽然去过好几次，但是还想再去玩儿玩儿。\n晴—晴天\n　—你看，今天是晴天。\n　—我看电视上说明天晴，天气很好。\n　—虽然是晴天，但是很冷。\n百—两百—两百多—不到两百\n　—这个学校的学生不多，只有两百人。\n　—那件红色的衣服两百多块，不太贵。\n　—两百块还可以，喜欢就买吧。\n练习册相关练习：第124页／一／第一部分，第127-128页／二／第一、二部分"
+      },
+      {
+        "title_zh": "3 语言点（1）动态助词“过”",
+        "body_zh": "① 语言点解析：\n动态助词“过”表示曾经发生某一动作或存在某一状态，但现在已经不再进行，这种状态已经结束。\n［句型框］主语＋动词＋过＋宾语\n［句型框］主语＋没（有）＋动词＋过＋宾语\n［句型框］主语＋动词＋过＋宾语＋吗／没有？\n② 语言点导入：\n教师可以利用图片用提问的方式导入语言点，比如故宫、胡同、汉字的图片等。\n教师：你们去过故宫吗？\n学生：我们去过故宫。\n教师：来中国以前你学过汉语吗？\n学生：我没学过汉语。\n③ 语言点操练：\n教师提问，学生用肯定式和否定式回答。\n你去过王老师家没有？\n你看过中国电影没有？\n你吃过中国菜没有？\n你听过这首歌没有？\n④ 语言点扩展练习：\n教师带领学生做课本第112页的小组活动。"
+      },
+      {
+        "title_zh": "3 语言点（2）关联词“虽然……，但是……”",
+        "body_zh": "① 语言点解析：\n表示让步与转折关系。“虽然”多用在前一个分句中，引出表示让步的分句，后一分句常用“但是、可是”引出转折关系。\n② 语言点导入：\n教师给出情境，请学生用“虽然……，但是……”说句子。\n教师：今天天气不太好，同学们还想去踢足球。\n学生：虽然天气不太好，但是同学们还想去踢足球。\n教师：那个饭馆很小，做的菜很好吃。\n学生：虽然那个饭馆很小，但是做的菜很好吃。\n③ 语言点操练：\n让学生把下列句子填写完整。\n虽然我不会写汉字，但是________。\n虽然这件衣服很漂亮，但是________。\n虽然________，但是我没有时间。\n虽然________，但是天气不太冷。\n④ 语言点扩展练习：\n教师带领学生做课本第112页的双人活动。"
+      },
+      {
+        "title_zh": "3 语言点（3）动量补语“次”",
+        "body_zh": "① 语言点解析：\n动量补语用在动词的后边，表示动作、行为进行的数量、次数。\n［句型框］主语＋动词＋过＋数量词＋次＋宾语\n［句型框］主语＋动词＋过＋指人的名词／人称代词＋数量词＋次\n［注意］宾语是表示地点的名词时，动量补语可以放在宾语前，也可以放在宾语后。\n② 语言点导入：\n教师做动作，让学生来说。\n听一次、写一次、读一次、看一次\n③ 语言点操练：\n请学生想想已经学过哪些动词，把这些动词加上动量补语，然后大声说出来。\n例如：来一次　去一次　看一次　……\n④ 语言点扩展练习：\n用动量补语完成下列句子。\n这本书以前我________。\n我小的时候________北京。\n这个电影不错，我已经________。\n今天上午，小王________你________，你没在。"
+      },
+      {
+        "title_zh": "4 课文",
+        "body_zh": "课文1\n（1）让学生听两遍录音并回答下列问题：\nB看过那个电影没有？\nB听说过那个电影吗？\nA想什么时候去看电影？\nB想和谁一起去看电影？\n（2）教师领读课文两遍，然后让学生分角色朗读课文。\n（3）教师用PPT展示课文提示词，请学生再次通读一遍课文后，根据提示词复述课文。\nA：你……没有？\nB：没看过，听说……。\nA：那我们……吧？\nB：可以，但是……。\n课文2\n（1）让学生听两遍录音并回答下列问题：\n女的去过中国吗？\n女的还想去中国吗？\n男的想去中国吗？\n“到时候”是指什么时候？\n（2）教师带领学生齐读课文两遍，然后请学生分角色朗读课文。\n（3）教师用PPT展示课文提示词，请学生再次通读一遍课文后，根据提示词复述课文。\nA：听说……，还想去吗？\nB：我虽然……，但是……。\nA：那我们……吧。\nB：好啊，到时候……。\n课文3\n（1）让学生听两遍录音并回答下列问题：\n明天天气怎么样？\n谁想出去跑步？\n女的能出去跑步吗？为什么？\n（2）教师带领学生齐读课文两遍，然后请学生分角色朗读课文。\n（3）教师用PPT展示课文提示词，把学生分成两组，一组学生提问，一组学生回答。然后互换角色。\nA：明天天气……？\nB：虽然……，但是……。\nA：那还能……吗？\nB：可以，但是……，我还有……。\n（4）用女的的口气叙述本段课文的主要内容。\n明天……，虽然……，但是……，我的朋友想……，但是……。\n课文4\n（1）让学生听两遍录音并回答下列问题：\n他们在做什么呢？\n男的觉得这个商店的东西怎么样？\n女的想不想买这件衣服？\n男的觉得这件衣服贵不贵？\n（2）教师带领学生齐读课文两遍，然后请学生分角色朗读课文。\n（3）教师用PPT展示课文提示词，学生可以自己设计情景，分角色表演课文。\nA：你在这个商店……没有？\nB：买过一次，……还可以，就是……。\nA：我喜欢……，但是觉得……。\nB：……还可以，……吧。"
+      },
+      {
+        "title_zh": "5 语音",
+        "body_zh": "感叹句的句调：\n① 知识点解析\n感叹句是用来抒发喜悦、愤怒、惊讶或悲哀等强烈感情的。一般来说，表示悲哀、难过的感叹句一般用低而趋降的句调，表示喜悦、惊讶的感叹句可以用高而平的句调。\n你唱的歌真好听啊！↘\n快点儿回房间，天气多冷啊！→\n这次的汉语考试太难了！↘\n② 语音练习\n教师可利用课本第111页的语音练习部分进行练习。教师可先领读句子，使学生掌握感叹句的句调特点，然后让学生个别读，教师纠正错误。\n练习册相关练习：第131页／三"
+      },
+      {
+        "title_zh": "6 汉字",
+        "body_zh": "① 知识点解析：\n偏旁\n⻗：雨字头，由它构成的汉字一般与云、雨等天气现象有关系。\n贝：贝字旁，由它构成的汉字一般与钱财有关系。\n② 汉字练习：\n• 教师板书本课偏旁“斤、页”，提示学生注意这两个偏旁的笔画和笔顺，并书写各自的代表汉字，帮助学生识记该偏旁的意义。\n• 补充练习\na. 找出下列含有雨字头和贝字旁的汉字\n雪　货　财　雹\n览　雾　狈　觉\nb. 拆分下列汉字\n虽：____　____　玩：____　____\n然：____　____　意：____　____\nc. 用下列偏旁和部件组合成新汉字\n口　西　日　心　青　相　虫　女\n____　____　____　____\n练习册相关练习：第132页／四"
+      },
+      {
+        "title_zh": "7 补充课堂活动——去商店买东西",
+        "body_zh": "请学生2-3人组成小组，自己设计在商店里的购物场景，然后进行角色扮演。可以参考下面的提示。\n人物：两个人（同学、朋友）　三个人（同学、朋友、售货员）\n地点：商店里\n东西：衣服、水果、书……\n句式：在……买过……没有？\n　……还可以。\n　虽然……，但是……有点儿贵。\n　我喜欢……，你呢？\n　再看看……吧。"
+      },
+      {
+        "title_zh": "8 本课小结",
+        "body_zh": "• 语言点：动态助词“过”\n　关联词“虽然……，但是……”\n　动量补语“次”\n• 语音：感叹句的句调\n• 汉字：偏旁“⻗、贝”"
+      },
+      {
+        "title_zh": "附注：教学建议用具",
+        "body_zh": "1. 生词卡片：第13、14课生词卡片\n2. 图片：故宫、北京胡同、汉字等"
+      }
+    ],
+    "notes_zh": [
+      "注意：宾语是表示地点的名词时，动量补语可以放在宾语前，也可以放在宾语后。"
+    ],
+    "warmup_answers_zh": [
+      "热身1 答案：①D　②A　③E　④F　⑤C　⑥B",
+      "热身2 参考答案：①电视　②电影　③电话　④电脑"
+    ],
+    "text_questions": [
+      {
+        "text": 1,
+        "q_zh": "B看过那个电影没有？"
+      },
+      {
+        "text": 1,
+        "q_zh": "B听说过那个电影吗？"
+      },
+      {
+        "text": 1,
+        "q_zh": "A想什么时候去看电影？"
+      },
+      {
+        "text": 1,
+        "q_zh": "B想和谁一起去看电影？"
+      },
+      {
+        "text": 2,
+        "q_zh": "女的去过中国吗？"
+      },
+      {
+        "text": 2,
+        "q_zh": "女的还想去中国吗？"
+      },
+      {
+        "text": 2,
+        "q_zh": "男的想去中国吗？"
+      },
+      {
+        "text": 2,
+        "q_zh": "“到时候”是指什么时候？"
+      },
+      {
+        "text": 3,
+        "q_zh": "明天天气怎么样？"
+      },
+      {
+        "text": 3,
+        "q_zh": "谁想出去跑步？"
+      },
+      {
+        "text": 3,
+        "q_zh": "女的能出去跑步吗？为什么？"
+      },
+      {
+        "text": 4,
+        "q_zh": "他们在做什么呢？"
+      },
+      {
+        "text": 4,
+        "q_zh": "男的觉得这个商店的东西怎么样？"
+      },
+      {
+        "text": 4,
+        "q_zh": "女的想不想买这件衣服？"
+      },
+      {
+        "text": 4,
+        "q_zh": "男的觉得这件衣服贵不贵？"
+      }
+    ],
+    "summary_zh": "• 语言点：动态助词“过”\n　关联词“虽然……，但是……”\n　动量补语“次”\n• 语音：感叹句的句调\n• 汉字：偏旁“⻗、贝”"
+  },
+  "workbook": {
+    "ref": {
+      "book": "workbook",
+      "pages": [
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140
+      ]
+    },
+    "sections": [
+      {
+        "n": "一、听力 第一部分",
+        "type_zh": "听力 第一部分",
+        "instruction_zh": "第1–5题：听句子，判断对错",
+        "instruction_en": "Questions 1-5: Decide whether the pictures are right or wrong based on the sentences you hear.",
+        "items": [
+          {
+            "n": "例1",
+            "zh": "我们家有三个人。",
+            "pinyin": "Wǒmen jiā yǒu sān ge rén.",
+            "transcript_zh": "我们家有三个人。",
+            "picture_desc_en": "a smiling family outdoors: a man carrying a child on his shoulders and a woman",
+            "answer": "√",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                132
+              ]
+            }
+          },
+          {
+            "n": "例2",
+            "zh": "我每天坐公共汽车去上班。",
+            "pinyin": "Wǒ měi tiān zuò gōnggòngqìchē qù shàng bān.",
+            "transcript_zh": "我每天坐公共汽车去上班。",
+            "picture_desc_en": "a mountain bicycle",
+            "answer": "×",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                132
+              ]
+            }
+          },
+          {
+            "n": 1,
+            "zh": "",
+            "transcript_zh": "下个星期我要和女朋友去看一次电影。",
+            "picture_desc_en": "a young man and a young woman sitting close together at a table, the man writing, both smiling",
+            "answer": "×",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                142
+              ]
+            }
+          },
+          {
+            "n": 2,
+            "zh": "",
+            "transcript_zh": "虽然工作很忙，但是我每天都游泳。",
+            "picture_desc_en": "a swimmer in a white cap doing the front crawl in a pool",
+            "answer": "√",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                142
+              ]
+            }
+          },
+          {
+            "n": 3,
+            "zh": "",
+            "transcript_zh": "你自己去跑步吧，我还有事情要做呢。",
+            "picture_desc_en": "a man and a woman in sunglasses and sportswear outdoors, smiling",
+            "answer": "×",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                142
+              ]
+            }
+          },
+          {
+            "n": 4,
+            "zh": "",
+            "transcript_zh": "这本书我看过很多次了，真的很有意思。",
+            "picture_desc_en": "a smiling young woman holding an open book, library bookshelves behind her",
+            "answer": "√",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                142
+              ]
+            }
+          },
+          {
+            "n": 5,
+            "zh": "",
+            "transcript_zh": "长时间玩电脑对眼睛不好，但是儿子非常喜欢。",
+            "picture_desc_en": "a boy sitting at an open laptop, smiling",
+            "answer": "√",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                142
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "一、听力 第二部分",
+        "type_zh": "听力 第二部分",
+        "instruction_zh": "第6–10题：听对话，选择与对话内容一致的图片",
+        "instruction_en": "Questions 6-10: Choose the right picture for each dialogue you hear.",
+        "items": [
+          {
+            "n": "例",
+            "zh": "男：你喜欢什么运动？ Nǐ xǐhuan shénme yùndòng? (What sport do you like?) 女：我最喜欢踢足球。 Wǒ zuì xǐhuan tī zúqiú. (My favorite sport is playing football.)",
+            "transcript_zh": "男：你喜欢什么运动？ 女：我最喜欢踢足球。",
+            "options": {
+              "A": "[picture] a smiling man at a table with food (bowl, fruit), eating a meal",
+              "B": "[picture] a young woman holding her head in both hands over papers on a desk",
+              "C": "[picture] a smiling young woman holding up a bank card, a clothes rack with hangers in front of her",
+              "D": "[picture] a young woman juggling a football on her knee on a field",
+              "E": "[picture] a man and a girl looking at a tablet together, handholds of a bus/train overhead",
+              "F": "[picture] basketball players jumping at the hoop, seen from above"
+            },
+            "answer": "D",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                133
+              ]
+            }
+          },
+          {
+            "n": 6,
+            "zh": "",
+            "options": {
+              "A": "[picture] a smiling man at a table with food (bowl, fruit), eating a meal",
+              "B": "[picture] a young woman holding her head in both hands over papers on a desk",
+              "C": "[picture] a smiling young woman holding up a bank card, a clothes rack with hangers in front of her",
+              "D": "[picture] a young woman juggling a football on her knee on a field",
+              "E": "[picture] a man and a girl looking at a tablet together, handholds of a bus/train overhead",
+              "F": "[picture] basketball players jumping at the hoop, seen from above"
+            },
+            "transcript_zh": "女：爸爸，您看过这个电影吗？我同学说很有意思。 男：没看过，下星期我们一起去看吧。",
+            "answer": "E",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                142
+              ]
+            }
+          },
+          {
+            "n": 7,
+            "zh": "",
+            "options": {
+              "A": "[picture] a smiling man at a table with food (bowl, fruit), eating a meal",
+              "B": "[picture] a young woman holding her head in both hands over papers on a desk",
+              "C": "[picture] a smiling young woman holding up a bank card, a clothes rack with hangers in front of her",
+              "D": "[picture] a young woman juggling a football on her knee on a field",
+              "E": "[picture] a man and a girl looking at a tablet together, handholds of a bus/train overhead",
+              "F": "[picture] basketball players jumping at the hoop, seen from above"
+            },
+            "transcript_zh": "女：虽然是晴天，但是天气很冷。 男：没关系，我还要和同学们一起打篮球呢。",
+            "answer": "F",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                142
+              ]
+            }
+          },
+          {
+            "n": 8,
+            "zh": "",
+            "options": {
+              "A": "[picture] a smiling man at a table with food (bowl, fruit), eating a meal",
+              "B": "[picture] a young woman holding her head in both hands over papers on a desk",
+              "C": "[picture] a smiling young woman holding up a bank card, a clothes rack with hangers in front of her",
+              "D": "[picture] a young woman juggling a football on her knee on a field",
+              "E": "[picture] a man and a girl looking at a tablet together, handholds of a bus/train overhead",
+              "F": "[picture] basketball players jumping at the hoop, seen from above"
+            },
+            "transcript_zh": "男：一起吃早饭吧。 女：我已经吃过了，你自己吃吧。",
+            "answer": "A",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                142
+              ]
+            }
+          },
+          {
+            "n": 9,
+            "zh": "",
+            "options": {
+              "A": "[picture] a smiling man at a table with food (bowl, fruit), eating a meal",
+              "B": "[picture] a young woman holding her head in both hands over papers on a desk",
+              "C": "[picture] a smiling young woman holding up a bank card, a clothes rack with hangers in front of her",
+              "D": "[picture] a young woman juggling a football on her knee on a field",
+              "E": "[picture] a man and a girl looking at a tablet together, handholds of a bus/train overhead",
+              "F": "[picture] basketball players jumping at the hoop, seen from above"
+            },
+            "transcript_zh": "男：这次考试怎么样？ 女：别说了，很多学过的汉字我都不会写了。",
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                142
+              ]
+            }
+          },
+          {
+            "n": 10,
+            "zh": "",
+            "options": {
+              "A": "[picture] a smiling man at a table with food (bowl, fruit), eating a meal",
+              "B": "[picture] a young woman holding her head in both hands over papers on a desk",
+              "C": "[picture] a smiling young woman holding up a bank card, a clothes rack with hangers in front of her",
+              "D": "[picture] a young woman juggling a football on her knee on a field",
+              "E": "[picture] a man and a girl looking at a tablet together, handholds of a bus/train overhead",
+              "F": "[picture] basketball players jumping at the hoop, seen from above"
+            },
+            "transcript_zh": "男：别买衣服了，我没有那么多钱。 女：没关系，我这儿有钱。",
+            "answer": "C",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                142
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "一、听力 第三部分",
+        "type_zh": "听力 第三部分",
+        "instruction_zh": "第11–15题：听对话，选择正确答案",
+        "instruction_en": "Questions 11-15: Listen to the dialogues and answer the questions.",
+        "items": [
+          {
+            "n": "例",
+            "zh": "问：小王的杯子是什么颜色的？",
+            "pinyin": "Xiǎo Wáng de bēizi shì shénme yánsè de?",
+            "transcript_zh": "男：小王，这里有几个杯子，哪个是你的？ 女：左边那个红色的是我的。 问：小王的杯子是什么颜色的？",
+            "options": {
+              "A": "红色 hóngsè red",
+              "B": "黑色 hēisè black",
+              "C": "白色 báisè white"
+            },
+            "answer": "A",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                134
+              ]
+            }
+          },
+          {
+            "n": 11,
+            "zh": "",
+            "transcript_zh": "男：您是第一次来我们这儿吗？ 女：不是，去年九月我来过一次。 问：女的来过这里几次？",
+            "options": {
+              "A": "一次 yí cì",
+              "B": "两次 liǎng cì",
+              "C": "三次 sān cì"
+            },
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                142
+              ]
+            }
+          },
+          {
+            "n": 12,
+            "zh": "",
+            "transcript_zh": "男：你在这个商店买过东西没有？ 女：买过一次，这儿的东西还可以，就是不便宜。 问：女的是什么意思？",
+            "options": {
+              "A": "东西好，便宜 dōngxi hǎo, piányi",
+              "B": "东西不好，便宜 dōngxi bù hǎo, piányi",
+              "C": "东西好，不便宜 dōngxi hǎo, bù piányi"
+            },
+            "answer": "C",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                142
+              ]
+            }
+          },
+          {
+            "n": 13,
+            "zh": "",
+            "transcript_zh": "女：明天一起去跑步吧。 男：你自己去吧，我还有很多工作要做呢。 问：男的为什么不去跑步？",
+            "options": {
+              "A": "太忙 tài máng",
+              "B": "太累 tài lèi",
+              "C": "不喜欢跑步 bù xǐhuan pǎo bù"
+            },
+            "answer": "A",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                142
+              ]
+            }
+          },
+          {
+            "n": 14,
+            "zh": "",
+            "transcript_zh": "男：今天的报纸你看过了没有？ 女：没有，我在看昨天的报纸呢。 问：女的看的是哪天的报纸？",
+            "options": {
+              "A": "前天的 qiántiān de",
+              "B": "今天的 jīntiān de",
+              "C": "昨天的 zuótiān de"
+            },
+            "answer": "C",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                142
+              ]
+            }
+          },
+          {
+            "n": 15,
+            "zh": "",
+            "transcript_zh": "女：这件衣服不错，就是有点儿贵。 男：两百多块还可以，喜欢就买吧。 问：男的想让女的买这件衣服吗？",
+            "options": {
+              "A": "不想让女的买 bù xiǎng ràng nǚ de mǎi",
+              "B": "想让女的买 xiǎng ràng nǚ de mǎi",
+              "C": "两百多块太贵了 liǎng bǎi duō kuài tài guì le"
+            },
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                142
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "二、阅读 第一部分",
+        "type_zh": "阅读 第一部分",
+        "instruction_zh": "第16–20题：看图片，选择与句子内容一致的图片",
+        "instruction_en": "Questions 16-20: Choose the right picture for each sentence.",
+        "items": [
+          {
+            "n": "例",
+            "zh": "每个星期六，我都去打篮球。",
+            "pinyin": "Měi ge xīngqīliù, wǒ dōu qù dǎ lánqiú.",
+            "options": {
+              "A": "[picture] a smiling girl in a knitted winter hat and scarf, a snowman behind her",
+              "B": "[picture] a smiling young woman standing at a whiteboard with Chinese sentences written on it, holding a marker",
+              "C": "[picture] the Great Wall winding over hills",
+              "D": "[picture] a smiling young man holding a basketball above his head",
+              "E": "[picture] a young woman with a hand on her forehead, holding a tissue to her nose",
+              "F": "[picture] a smiling woman holding a closed umbrella outdoors, looking up at the sky"
+            },
+            "answer": "D",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                135
+              ]
+            }
+          },
+          {
+            "n": 16,
+            "zh": "长城很漂亮，我已经去过三次了。",
+            "pinyin": "Chángchéng hěn piàoliang, wǒ yǐjīng qùguo sān cì le.",
+            "options": {
+              "A": "[picture] a smiling girl in a knitted winter hat and scarf, a snowman behind her",
+              "B": "[picture] a smiling young woman standing at a whiteboard with Chinese sentences written on it, holding a marker",
+              "C": "[picture] the Great Wall winding over hills",
+              "D": "[picture] a smiling young man holding a basketball above his head",
+              "E": "[picture] a young woman with a hand on her forehead, holding a tissue to her nose",
+              "F": "[picture] a smiling woman holding a closed umbrella outdoors, looking up at the sky"
+            },
+            "answer": "C",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                142
+              ]
+            }
+          },
+          {
+            "n": 17,
+            "zh": "来中国以后，我已经得过两次病了。",
+            "pinyin": "Lái Zhōngguó yǐhòu, wǒ yǐjīng déguo liǎng cì bìng le.",
+            "options": {
+              "A": "[picture] a smiling girl in a knitted winter hat and scarf, a snowman behind her",
+              "B": "[picture] a smiling young woman standing at a whiteboard with Chinese sentences written on it, holding a marker",
+              "C": "[picture] the Great Wall winding over hills",
+              "D": "[picture] a smiling young man holding a basketball above his head",
+              "E": "[picture] a young woman with a hand on her forehead, holding a tissue to her nose",
+              "F": "[picture] a smiling woman holding a closed umbrella outdoors, looking up at the sky"
+            },
+            "answer": "E",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                142
+              ]
+            }
+          },
+          {
+            "n": 18,
+            "zh": "虽然是晴天，但是很冷。",
+            "pinyin": "Suīrán shì qíngtiān, dànshì hěn lěng.",
+            "options": {
+              "A": "[picture] a smiling girl in a knitted winter hat and scarf, a snowman behind her",
+              "B": "[picture] a smiling young woman standing at a whiteboard with Chinese sentences written on it, holding a marker",
+              "C": "[picture] the Great Wall winding over hills",
+              "D": "[picture] a smiling young man holding a basketball above his head",
+              "E": "[picture] a young woman with a hand on her forehead, holding a tissue to her nose",
+              "F": "[picture] a smiling woman holding a closed umbrella outdoors, looking up at the sky"
+            },
+            "answer": "A",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                142
+              ]
+            }
+          },
+          {
+            "n": 19,
+            "zh": "不下雨了，天晴了。",
+            "pinyin": "Bú xià yǔ le, tiān qíng le.",
+            "options": {
+              "A": "[picture] a smiling girl in a knitted winter hat and scarf, a snowman behind her",
+              "B": "[picture] a smiling young woman standing at a whiteboard with Chinese sentences written on it, holding a marker",
+              "C": "[picture] the Great Wall winding over hills",
+              "D": "[picture] a smiling young man holding a basketball above his head",
+              "E": "[picture] a young woman with a hand on her forehead, holding a tissue to her nose",
+              "F": "[picture] a smiling woman holding a closed umbrella outdoors, looking up at the sky"
+            },
+            "answer": "F",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                142
+              ]
+            }
+          },
+          {
+            "n": 20,
+            "zh": "我们已经学过这个汉字了。",
+            "pinyin": "Wǒmen yǐjīng xuéguo zhège Hànzì le.",
+            "options": {
+              "A": "[picture] a smiling girl in a knitted winter hat and scarf, a snowman behind her",
+              "B": "[picture] a smiling young woman standing at a whiteboard with Chinese sentences written on it, holding a marker",
+              "C": "[picture] the Great Wall winding over hills",
+              "D": "[picture] a smiling young man holding a basketball above his head",
+              "E": "[picture] a young woman with a hand on her forehead, holding a tissue to her nose",
+              "F": "[picture] a smiling woman holding a closed umbrella outdoors, looking up at the sky"
+            },
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                142
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "二、阅读 第二部分",
+        "type_zh": "阅读 第二部分",
+        "instruction_zh": "第21–25题：选择合适的词语填空",
+        "instruction_en": "Questions 21-25: Choose the proper words to fill in the brackets.",
+        "word_bank": [
+          [
+            "A 有意思 yǒu yìsi",
+            "B 但是 dànshì",
+            "C 意思 yìsi",
+            "D 过 guò",
+            "E 贵 guì",
+            "F 听说 tīngshuō"
+          ]
+        ],
+        "items": [
+          {
+            "n": "例",
+            "zh": "这儿的羊肉很好吃，但是也很（________）。",
+            "pinyin": "Zhèr de yángròu hěn hǎochī, dànshì yě hěn ______.",
+            "answer": "E",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                136
+              ]
+            }
+          },
+          {
+            "n": 21,
+            "zh": "老师的话是什么（________），我没听懂。",
+            "pinyin": "Lǎoshī de huà shì shénme ______, wǒ méi tīngdǒng.",
+            "answer": "C",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                142
+              ]
+            }
+          },
+          {
+            "n": 22,
+            "zh": "我（________）这本书非常好看，但是我还没看过。",
+            "pinyin": "Wǒ ______ zhè běn shū fēicháng hǎo kàn, dànshì wǒ hái méi kànguo.",
+            "answer": "F",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                142
+              ]
+            }
+          },
+          {
+            "n": 23,
+            "zh": "那个电影太（________）了，我已经看过两次了。",
+            "pinyin": "Nàge diànyǐng tài ______ le, wǒ yǐjīng kànguo liǎng cì le.",
+            "answer": "A",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                142
+              ]
+            }
+          },
+          {
+            "n": 24,
+            "zh": "虽然工作很忙，（________）我每个星期都要运动。",
+            "pinyin": "Suīrán gōngzuò hěn máng, ______ wǒ měi ge xīngqī dōu yào yùndòng.",
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                142
+              ]
+            }
+          },
+          {
+            "n": 25,
+            "zh": "我已经去（________）北京好几次了，但是还想再去玩儿玩儿。",
+            "pinyin": "Wǒ yǐjīng qù ______ Běijīng hǎo jǐ cì le, dànshì hái xiǎng zài qù wánrwanr.",
+            "answer": "D",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                142
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "二、阅读 第三部分",
+        "type_zh": "阅读 第三部分",
+        "instruction_zh": "第26–30题：判断下列句子的意思是否正确",
+        "instruction_en": "Questions 26-30: Decide whether the inferences are true or false.",
+        "items": [
+          {
+            "n": "例1",
+            "zh": "现在是11点30分，他们已经游了20分钟了。 ★他们11点10分开始游泳。",
+            "pinyin": "Xiànzài shì diǎn fēn, tāmen yǐjīng yóule fēnzhōng le. ★Tāmen diǎn fēn kāishǐ yóuyǒng.",
+            "answer": "√",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                137
+              ]
+            }
+          },
+          {
+            "n": "例2",
+            "zh": "我会跳舞，但跳得不怎么样。 ★我跳得非常好。",
+            "pinyin": "Wǒ huì tiàowǔ, dàn tiào de bù zěnmeyàng. ★Wǒ tiào de fēicháng hǎo.",
+            "answer": "×",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                137
+              ]
+            }
+          },
+          {
+            "n": 26,
+            "zh": "昨天和朋友们在外面玩儿了一个晚上，很累，但是非常高兴。 ★昨天玩儿得不好。",
+            "pinyin": "Zuótiān hé péngyoumen zài wàimian wánrle yí ge wǎnshang, hěn lèi, dànshì fēicháng gāoxìng. ★Zuótiān wánr de bù hǎo.",
+            "answer": "×",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                142
+              ]
+            }
+          },
+          {
+            "n": 27,
+            "zh": "他做的菜比我做的好吃，但是因为工作忙，他很少做。 ★他不会做菜。",
+            "pinyin": "Tā zuò de cài bǐ wǒ zuò de hǎochī, dànshì yīnwèi gōngzuò máng, tā hěn shǎo zuò. ★Tā bú huì zuò cài.",
+            "answer": "×",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                142
+              ]
+            }
+          },
+          {
+            "n": 28,
+            "zh": "我和朋友们去过这家商店，还在这儿买过两次东西。 ★这个商店他去过两次。",
+            "pinyin": "Wǒ hé péngyoumen qùguo zhè jiā shāngdiàn, hái zài zhèr mǎiguo liǎng cì dōngxi. ★Zhège shāngdiàn tā qùguo liǎng cì.",
+            "answer": "×",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                142
+              ]
+            }
+          },
+          {
+            "n": 29,
+            "zh": "从学校到机场，坐出租车要一个小时，我们10点的飞机，8点从学校走可以吗？ ★他们要坐8点的飞机。",
+            "pinyin": "Cóng xuéxiào dào jīchǎng, zuò chūzūchē yào yí ge xiǎoshí, wǒmen diǎn de fēijī, diǎn cóng xuéxiào zǒu kěyǐ ma? ★Tāmen yào zuò diǎn de fēijī.",
+            "answer": "×",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                142
+              ]
+            }
+          },
+          {
+            "n": 30,
+            "zh": "小李说这个电影很有意思，但是我没看过。 ★小李看过这个电影。",
+            "pinyin": "Xiǎo Lǐ shuō zhège diànyǐng hěn yǒu yìsi, dànshì wǒ méi kànguo. ★Xiǎo Lǐ kànguo zhège diànyǐng.",
+            "answer": "√",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                142
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "二、阅读 第四部分",
+        "type_zh": "阅读 第四部分",
+        "instruction_zh": "第31–35题：选择合适的问答",
+        "instruction_en": "Questions 31-35: Match the sentences to make dialogues.",
+        "items": [
+          {
+            "n": "例",
+            "zh": "他还在教室里学习。 (He is still studying in the classroom.)",
+            "pinyin": "Tā hái zài jiàoshì li xuéxí.",
+            "options": {
+              "A": "你出去的时候多穿些衣服。 Nǐ chūqu de shíhou duō chuān xiē yīfu.",
+              "B": "你在那个商店买过东西没有？ Nǐ zài nàge shāngdiàn mǎiguo dōngxi méiyǒu?",
+              "C": "妈妈告诉过我很多次，长时间玩儿电脑和手机对眼睛不好。 Māma gàosu guo wǒ hěn duō cì, cháng shíjiān wánr diànnǎo hé shǒujī duì yǎnjing bù hǎo.",
+              "D": "没学过，听说很难，但是很有意思。 Méi xuéguo, tīngshuō hěn nán, dànshì hěn yǒu yìsi.",
+              "E": "他在哪儿呢？你看见他了吗？ Tā zài nǎr ne? Nǐ kànjiàn tā le ma?",
+              "F": "没关系，喜欢就买吧。 Méi guānxi, xǐhuan jiù mǎi ba."
+            },
+            "answer": "E",
+            "answer_ref": {
+              "book": "workbook",
+              "pages": [
+                138
+              ]
+            }
+          },
+          {
+            "n": 31,
+            "zh": "你学过汉语吗？",
+            "pinyin": "Nǐ xuéguo Hànyǔ ma?",
+            "options": {
+              "A": "你出去的时候多穿些衣服。 Nǐ chūqu de shíhou duō chuān xiē yīfu.",
+              "B": "你在那个商店买过东西没有？ Nǐ zài nàge shāngdiàn mǎiguo dōngxi méiyǒu?",
+              "C": "妈妈告诉过我很多次，长时间玩儿电脑和手机对眼睛不好。 Māma gàosu guo wǒ hěn duō cì, cháng shíjiān wánr diànnǎo hé shǒujī duì yǎnjing bù hǎo.",
+              "D": "没学过，听说很难，但是很有意思。 Méi xuéguo, tīngshuō hěn nán, dànshì hěn yǒu yìsi.",
+              "E": "他在哪儿呢？你看见他了吗？ Tā zài nǎr ne? Nǐ kànjiàn tā le ma?",
+              "F": "没关系，喜欢就买吧。 Méi guānxi, xǐhuan jiù mǎi ba."
+            },
+            "answer": "D",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                142
+              ]
+            }
+          },
+          {
+            "n": 32,
+            "zh": "今天真冷，第一次到了零下10度。",
+            "pinyin": "Jīntiān zhēn lěng, dì yī cì dàole língxià dù.",
+            "options": {
+              "A": "你出去的时候多穿些衣服。 Nǐ chūqu de shíhou duō chuān xiē yīfu.",
+              "B": "你在那个商店买过东西没有？ Nǐ zài nàge shāngdiàn mǎiguo dōngxi méiyǒu?",
+              "C": "妈妈告诉过我很多次，长时间玩儿电脑和手机对眼睛不好。 Māma gàosu guo wǒ hěn duō cì, cháng shíjiān wánr diànnǎo hé shǒujī duì yǎnjing bù hǎo.",
+              "D": "没学过，听说很难，但是很有意思。 Méi xuéguo, tīngshuō hěn nán, dànshì hěn yǒu yìsi.",
+              "E": "他在哪儿呢？你看见他了吗？ Tā zài nǎr ne? Nǐ kànjiàn tā le ma?",
+              "F": "没关系，喜欢就买吧。 Méi guānxi, xǐhuan jiù mǎi ba."
+            },
+            "answer": "A",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                142
+              ]
+            }
+          },
+          {
+            "n": 33,
+            "zh": "所以我现在很少玩儿电脑和手机了。",
+            "pinyin": "Suǒyǐ wǒ xiànzài hěn shǎo wánr diànnǎo hé shǒujī le.",
+            "options": {
+              "A": "你出去的时候多穿些衣服。 Nǐ chūqu de shíhou duō chuān xiē yīfu.",
+              "B": "你在那个商店买过东西没有？ Nǐ zài nàge shāngdiàn mǎiguo dōngxi méiyǒu?",
+              "C": "妈妈告诉过我很多次，长时间玩儿电脑和手机对眼睛不好。 Māma gàosu guo wǒ hěn duō cì, cháng shíjiān wánr diànnǎo hé shǒujī duì yǎnjing bù hǎo.",
+              "D": "没学过，听说很难，但是很有意思。 Méi xuéguo, tīngshuō hěn nán, dànshì hěn yǒu yìsi.",
+              "E": "他在哪儿呢？你看见他了吗？ Tā zài nǎr ne? Nǐ kànjiàn tā le ma?",
+              "F": "没关系，喜欢就买吧。 Méi guānxi, xǐhuan jiù mǎi ba."
+            },
+            "answer": "C",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                142
+              ]
+            }
+          },
+          {
+            "n": 34,
+            "zh": "我很喜欢这件衣服，但是觉得有点儿贵。",
+            "pinyin": "Wǒ hěn xǐhuan zhè jiàn yīfu, dànshì juéde yǒudiǎnr guì.",
+            "options": {
+              "A": "你出去的时候多穿些衣服。 Nǐ chūqu de shíhou duō chuān xiē yīfu.",
+              "B": "你在那个商店买过东西没有？ Nǐ zài nàge shāngdiàn mǎiguo dōngxi méiyǒu?",
+              "C": "妈妈告诉过我很多次，长时间玩儿电脑和手机对眼睛不好。 Māma gàosu guo wǒ hěn duō cì, cháng shíjiān wánr diànnǎo hé shǒujī duì yǎnjing bù hǎo.",
+              "D": "没学过，听说很难，但是很有意思。 Méi xuéguo, tīngshuō hěn nán, dànshì hěn yǒu yìsi.",
+              "E": "他在哪儿呢？你看见他了吗？ Tā zài nǎr ne? Nǐ kànjiàn tā le ma?",
+              "F": "没关系，喜欢就买吧。 Méi guānxi, xǐhuan jiù mǎi ba."
+            },
+            "answer": "F",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                142
+              ]
+            }
+          },
+          {
+            "n": 35,
+            "zh": "东西还可以，而且很便宜。",
+            "pinyin": "Dōngxi hái kěyǐ, érqiě hěn piányi.",
+            "options": {
+              "A": "你出去的时候多穿些衣服。 Nǐ chūqu de shíhou duō chuān xiē yīfu.",
+              "B": "你在那个商店买过东西没有？ Nǐ zài nàge shāngdiàn mǎiguo dōngxi méiyǒu?",
+              "C": "妈妈告诉过我很多次，长时间玩儿电脑和手机对眼睛不好。 Māma gàosu guo wǒ hěn duō cì, cháng shíjiān wánr diànnǎo hé shǒujī duì yǎnjing bù hǎo.",
+              "D": "没学过，听说很难，但是很有意思。 Méi xuéguo, tīngshuō hěn nán, dànshì hěn yǒu yìsi.",
+              "E": "他在哪儿呢？你看见他了吗？ Tā zài nǎr ne? Nǐ kànjiàn tā le ma?",
+              "F": "没关系，喜欢就买吧。 Méi guānxi, xǐhuan jiù mǎi ba."
+            },
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                142
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "三、语音 第一部分",
+        "type_zh": "语音 第一部分 听录音",
+        "instruction_zh": "第1题：听录音，注意句末的升降调",
+        "instruction_en": "Question 1: Listen to the recording and pay attention to the intonation at the end of each sentence.",
+        "items": [
+          {
+            "n": "1-(1)",
+            "zh": "今天天气真好啊！↘",
+            "pinyin": "Jīntiān tiānqì zhēn hǎo a!",
+            "transcript_zh": "今天天气真好啊！"
+          },
+          {
+            "n": "1-(2)",
+            "zh": "他的汉字写得比我好多了！↘",
+            "pinyin": "Tā de Hànzì xiě de bǐ wǒ hǎo duō le!",
+            "transcript_zh": "他的汉字写得比我好多了！"
+          },
+          {
+            "n": "1-(3)",
+            "zh": "这么大的一个苹果呀！↘",
+            "pinyin": "Zhème dà de yí ge píngguǒ ya!",
+            "transcript_zh": "这么大的一个苹果呀！"
+          },
+          {
+            "n": "1-(4)",
+            "zh": "你的汉语说得多好啊！↘",
+            "pinyin": "Nǐ de Hànyǔ shuō de duō hǎo a!",
+            "transcript_zh": "你的汉语说得多好啊！"
+          }
+        ]
+      },
+      {
+        "n": "三、语音 第二部分",
+        "type_zh": "语音 第二部分 跟读",
+        "instruction_zh": "第2题：听录音并跟读下列句子，注意句末的升降调",
+        "instruction_en": "Question 2: Listen to the recording and repeat the following sentences, paying attention to the intonation at the end of each sentence.",
+        "items": [
+          {
+            "n": "2-(1)",
+            "zh": "我觉得中国真大呀！↘",
+            "pinyin": "Wǒ juéde Zhōngguó zhēn dà ya!",
+            "transcript_zh": "我觉得中国真大呀！"
+          },
+          {
+            "n": "2-(2)",
+            "zh": "昨天是星期天，商店的人好多呀！↘",
+            "pinyin": "Zuótiān shì xīngqītiān, shāngdiàn de rén hǎo duō ya!",
+            "transcript_zh": "昨天是星期天，商店的人好多呀！"
+          },
+          {
+            "n": "2-(3)",
+            "zh": "她的眼睛多漂亮啊！↘",
+            "pinyin": "Tā de yǎnjing duō piàoliang a!",
+            "transcript_zh": "她的眼睛多漂亮啊！"
+          },
+          {
+            "n": "2-(4)",
+            "zh": "希望你的身体快点儿好啊！↘",
+            "pinyin": "Xīwàng nǐ de shēntǐ kuàidiǎnr hǎo a!",
+            "transcript_zh": "希望你的身体快点儿好啊！"
+          }
+        ]
+      },
+      {
+        "n": "四、汉字 第一部分",
+        "type_zh": "汉字 偏旁归类",
+        "instruction_zh": "第1–2题：看汉字，按偏旁归类",
+        "instruction_en": "Questions 1-2: Group the characters with the same radical.",
+        "word_bank": [
+          [
+            "A 雪",
+            "B 赔",
+            "C 雷",
+            "D 员"
+          ],
+          [
+            "E 货",
+            "F 霜",
+            "G 零",
+            "H 账"
+          ]
+        ],
+        "items": [
+          {
+            "n": 1,
+            "zh": "⻗：________",
+            "answer": "A C F G",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                142
+              ]
+            }
+          },
+          {
+            "n": 2,
+            "zh": "贝：________",
+            "answer": "B D E H",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                142
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "n": "四、汉字 第二部分",
+        "type_zh": "汉字 猜词义",
+        "instruction_zh": "第3题：看生词和图片，猜出词义",
+        "instruction_en": "Question 3: Guess the meaning of each word based on the new words and pictures.",
+        "word_bank": [
+          [
+            "商品",
+            "商人",
+            "商店",
+            "顾客"
+          ]
+        ],
+        "items": [
+          {
+            "n": "3-商品",
+            "zh": "商品 ________",
+            "options": {
+              "A": "[picture] a tall department-store building with a sign on the roof",
+              "B": "[picture] many teddy bears displayed together for sale",
+              "C": "[picture] a man and a woman in business suits standing back to back, fists raised",
+              "D": "[picture] three smiling young women carrying shopping bags"
+            },
+            "answer": "B",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                142
+              ]
+            }
+          },
+          {
+            "n": "3-商人",
+            "zh": "商人 ________",
+            "options": {
+              "A": "[picture] a tall department-store building with a sign on the roof",
+              "B": "[picture] many teddy bears displayed together for sale",
+              "C": "[picture] a man and a woman in business suits standing back to back, fists raised",
+              "D": "[picture] three smiling young women carrying shopping bags"
+            },
+            "answer": "C",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                142
+              ]
+            }
+          },
+          {
+            "n": "3-商店",
+            "zh": "商店 ________",
+            "options": {
+              "A": "[picture] a tall department-store building with a sign on the roof",
+              "B": "[picture] many teddy bears displayed together for sale",
+              "C": "[picture] a man and a woman in business suits standing back to back, fists raised",
+              "D": "[picture] three smiling young women carrying shopping bags"
+            },
+            "answer": "A",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                142
+              ]
+            }
+          },
+          {
+            "n": "3-顾客",
+            "zh": "顾客 ________",
+            "options": {
+              "A": "[picture] a tall department-store building with a sign on the roof",
+              "B": "[picture] many teddy bears displayed together for sale",
+              "C": "[picture] a man and a woman in business suits standing back to back, fists raised",
+              "D": "[picture] three smiling young women carrying shopping bags"
+            },
+            "answer": "D",
+            "answer_ref": {
+              "book": "teacher",
+              "pages": [
+                142
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "answers_ref": {
+      "book": "teacher",
+      "pages": [
+        141,
+        142
+      ]
+    }
+  },
+  "unclear": [
+    "Гарчиг зөрүү: сурах бичиг (PDF х.125) ба багшийн ном (PDF х.101) «你看过那个电影吗 / Nǐ kànguo nàge diànyǐng ma», харин дасгалын ном (PDF х.132) ба багшийн номын хавсралт (PDF х.141) «你看过这个电影吗 / Nǐ kànguo zhège diànyǐng ma». Англи гарчиг хоёуланд «Have you seen that movie». title_zh-д сурах бичгийнхийг авсан.",
+    "«过»-ийн нэр томьёо: сурах бичгийн 注释1 (PDF х.128) ба 运用 小组活动 (PDF х.132) «结构助词“过” / The Structural Particle», багшийн ном (PDF х.101, 103, 107) «动态助词“过”» — номд байгаагаар тус тусад нь.",
+    "生词 1 «有意思 yǒu yìsi» — сурах бичиг PDF х.126-д үгийн ай (pos) хэвлэгдээгүй тул pos талбаргүй.",
+    "Багшийн ном PDF х.106 汉字练习 — «教师板书本课偏旁“斤、页”» гэж хэвлэгдсэн (эхний тэмдэгт «斤»-тэй төстэй, бүрэн тод биш) — энэ хичээлийн偏旁 «⻗、贝»-тэй таарахгүй, өөр хичээлээс үлдсэн алдаа байж магадгүй; харагдсанаар бичсэн.",
+    "偏旁 «雨字头» сурах бичиг, багшийн ном, дасгалын номд тусгай дээд хэлбэрээр хэвлэгдсэн — JSON-д Unicode «⻗» (U+2ED7) гэж бичсэн (L01 «⺩», «⻊» зэрэгтэй адил).",
+    "贝-ийн тайлбар: сурах бичиг «一般与钱财、鼎类器物有关系», багшийн ном PDF х.106 «一般与钱财有关系» — номд байгаагаар.",
+    "Багшийн номын 汉字 补充练习 a-д «雹»-ийн байрлалд хэвлэгдсэн тэмдэгт скан дээр «雹» мэт (дээр нь ⻗, доор нь 包) — 300dpi-д шалгасан. «狈» ч мөн адил. a/b/c-ийн хариулт хэвлэгдээгүй.",
+    "Хүйсийн зөрүү: сурах бичгийн 课文 мөрүүд зөвхөн A/B. Сурах бичгийн 练习2 (5) «女的觉得这个商店的东西怎么样？» (课文4), харин багшийн ном PDF х.105 课文4 «男的觉得这个商店的东西怎么样？», «女的想不想买这件衣服？», «男的觉得这件衣服贵不贵？» — B-г хэн гэж үзсэн нь хоёр номд зөрж байна. 课文2-т багшийн ном «女的去过中国吗？» (去过 гэж хэлсэн нь B), 课文3-т «女的能出去跑步吗？», сурах бичгийн 练习2 (4) «为什么她明天不能去跑步？» — номд байгаагаар.",
+    "Багшийн номын 语音 жишээнүүдийн сум (PDF х.106): 1 ба 3-т «↘», 2-т «→» (高而平). Сурах бичиг (PDF х.131) ба дасгалын ном (PDF х.139)-д бүх өгүүлбэрийн төгсгөлд доош муруй сум — JSON-д «↘» гэж тэмдэглэсэн (номд текстээр байхгүй). Энэ хичээлд 重读 цэг тэмдэглэгээ байхгүй.",
+    "Дасгалын номын 三、语音 (PDF х.139) 1-(2): ханз «他的汉字写得比我好多了！», пиньинь «bǐ wǒ hǎo duō le» — номд байгаагаар.",
+    "Дасгалын номын пиньинь мөрөнд тоо орхигдсон: 阅读 第三部分 例1 (11, 30, 20, 11, 10), 29 (10, 8, 8), 第四部分 32 («língxià dù», 10 орхигдсон) — номд байгаагаар.",
+    "Дасгалын номын 听力 бичвэр (transcript_zh) ба бүх хариулт — багшийн номын хавсралт PDF х.141–142 («参考答案» PDF х.142); 例-ийн хариулт дасгалын номд өөрт нь хэвлэгдсэн. 三、语音 хэсэгт хариулт шаардлагагүй.",
+    "Дасгалын номын 听力 第一部分 1-ийн хариулт «×» (бичвэр «下个星期我要和女朋友去看一次电影。», зураг: ширээнд хамт суусан залуу эрэгтэй, эмэгтэй) — зургийн агуулгаас хамаарах тул номд байгаагаар.",
+    "Багшийн номын «练习册相关练习» хуудас нь хэвлэсэн дугаараар (124, 127–128, 131, 132) = PDF х.132, 135–136, 139, 140. «课本第111/112页» = PDF х.131/132.",
+    "Сурах бичгийн 热身2 / 练习2 回答问题 / 练习3 描述图片 / 运用 — хариулт хэвлэгдээгүй. 热身1-ийн хариулт ба 热身2-ийн 参考答案 зөвхөн багшийн номд (PDF х.102).",
+    "Сурах бичгийн 注释 хүснэгтүүдийн улаан мөрүүд — 课文-ээс авсан өгүүлбэрүүд: «你看过那个电影没有？» (注释1), «虽然是晴天，但是很冷。» (注释2 (3)), «我（在这个商店）买过一次（东西）。» (注释3; 课文4-т «买过一次» гэж 东西-гүй). structure_rows ба examples-д энгийнээр оруулсан.",
+    "Аудио файлын нэр мэдэгдэхгүй тул audio талбар орхисон. Номын CD тэмдэг: сурах бичиг 课文1–4 = 14-1…14-4, 语音 14-5; дасгалын ном 听力 14-1, 语音 14-2.",
+    "Энэ хичээлд 课堂用语 / 文化 / 俗语 хэсэг байхгүй; 汉字 хэсэгт зөвхөн 偏旁 (笔画/独体字 байхгүй).",
+    "Зургийн тайлбарууд (picture_desc_en, pictures_desc_en, options «[picture]») зургаас товч, объектив дүрсэлсэн.",
+    "HSK 3.0 нэмэлт үгс (BLCUP 课件 补充HSK3.0, слайд 10, 11, 12, 13, 14, 15) hsk30-д — зөвхөн ханз+пиньинь (слайдад pos/en байхгүй)."
+  ],
+  "verified_pages": [
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
     125,
     126,
     127,
@@ -16,673 +1711,6 @@
     129,
     130,
     131,
-    132
-   ]
-  },
-  "warmup": [
-   {
-    "instruction_zh": "给下面的词语选择对应的图片",
-    "instruction_en": "Match the pictures with the words/phrases.",
-    "items": [
-     "①电影院 diànyǐngyuàn",
-     "②等 děng",
-     "③晴 qíng",
-     "④一百 yìbǎi",
-     "⑤打电话 dǎ diànhuà",
-     "⑥玩儿 wánr"
-    ],
-    "pictures_desc_en": [
-     "A: a man in a suit sitting on a park bench, looking at his wristwatch, high-rise buildings behind",
-     "B: a baby lying on its front playing with a toy among letter blocks",
-     "C: a hand holding a telephone handset while another hand presses the keypad",
-     "D: an empty cinema hall: rows of seats facing a large screen",
-     "E: a white sail against a clear blue sky",
-     "F: the red number “100”"
-    ]
-   },
-   {
-    "instruction_zh": "看下面的图片，用汉语说出它们的名字",
-    "instruction_en": "Look at the pictures and say the names of the things in Chinese.",
-    "items": [
-     "①________",
-     "②________",
-     "③________",
-     "④________"
-    ],
-    "pictures_desc_en": [
-     "①: a flat-screen television",
-     "②: a strip of film frames numbered 1 and 2 with a clapperboard",
-     "③: a telephone with a handset and push-button keypad",
-     "④: a desktop computer with monitor, tower case, keyboard and mouse"
-    ]
-   }
-  ],
-  "pronunciation": [
-   {
-    "title_zh": "感叹句的句调",
-    "rows": [
-     "Jīntiān tiānqì zhēn hǎo a! （1）今天天气真好啊！↘",
-     "Zhège Hànzì zhēn nán xiě a! （2）这个汉字真难写啊！↘",
-     "Zhè jiàn yīfu tài piàoliang le! （3）这件衣服太漂亮了！↘"
-    ],
-    "notes_zh": [
-     "汉语感叹句的句调一般为降调。例如：",
-     "“↘”为书中句末的下降箭头（书中无文字说明）。"
-    ],
-    "notes_en": [
-     "Intonation of an Exclamatory Sentence",
-     "A Chinese exclamatory sentence usually has a falling intonation. For example:"
-    ]
-   }
-  ],
-  "texts": [
-   {
-    "n": 1,
-    "title_zh": "在教室",
-    "title_en": "In the classroom",
-    "kind": "dialogue",
-    "lines": [
-     {
-      "speaker": "A",
-      "zh": "你看过那个电影没有？",
-      "pinyin": "Nǐ kànguo nàge diànyǐng méiyǒu?"
-     },
-     {
-      "speaker": "B",
-      "zh": "没看过，听说很有意思。",
-      "pinyin": "Méi kànguo, tīngshuō hěn yǒu yìsi."
-     },
-     {
-      "speaker": "A",
-      "zh": "那我们下个星期一起去看吧？",
-      "pinyin": "Nà wǒmen xià ge xīngqī yìqǐ qù kàn ba?"
-     },
-     {
-      "speaker": "B",
-      "zh": "可以，但是我女朋友也想去。",
-      "pinyin": "Kěyǐ, dànshì wǒ nǚpéngyou yě xiǎng qù."
-     }
-    ],
-    "english_version": "A: Have you seen that movie?\nB: No. I was told it is fantastic.\nA: Why don’t we see it together next week?\nB: OK. But my girlfriend also wants to go.",
-    "new_words": [
-     {
-      "n": 1,
-      "zh": "有意思",
-      "pinyin": "yǒu yìsi",
-      "en": "interesting, fun",
-      "text": 1
-     },
-     {
-      "n": 2,
-      "zh": "但是",
-      "pinyin": "dànshì",
-      "pos": "conj.",
-      "en": "but, still, yet",
-      "text": 1
-     }
-    ]
-   },
-   {
-    "n": 2,
-    "title_zh": "在办公室",
-    "title_en": "In the office",
-    "kind": "dialogue",
-    "lines": [
-     {
-      "speaker": "A",
-      "zh": "听说你去过中国，还想去吗？",
-      "pinyin": "Tīngshuō nǐ qùguo Zhōngguó, hái xiǎng qù ma?"
-     },
-     {
-      "speaker": "B",
-      "zh": "我虽然去过好几次，但是还想再去玩儿玩儿。",
-      "pinyin": "Wǒ suīrán qùguo hǎojǐ cì, dànshì hái xiǎng zài qù wánrwanr."
-     },
-     {
-      "speaker": "A",
-      "zh": "那我们一起去吧。",
-      "pinyin": "Nà wǒmen yìqǐ qù ba."
-     },
-     {
-      "speaker": "B",
-      "zh": "好啊，到时候我给你打电话。",
-      "pinyin": "Hǎo a, dào shíhou wǒ gěi nǐ dǎ diànhuà."
-     }
-    ],
-    "english_version": "A: It’s said you’ve been to China. Do you want to go there again?\nB: Though I’ve been there several times, I still want to go for pleasure again.\nA: Let’s go together.\nB: Great. I’ll call you then.",
-    "new_words": [
-     {
-      "n": 3,
-      "zh": "虽然",
-      "pinyin": "suīrán",
-      "pos": "conj.",
-      "en": "although, though",
-      "text": 2
-     },
-     {
-      "n": 4,
-      "zh": "次",
-      "pinyin": "cì",
-      "pos": "m.",
-      "en": "time",
-      "text": 2
-     },
-     {
-      "n": 5,
-      "zh": "玩儿",
-      "pinyin": "wánr",
-      "pos": "v.",
-      "en": "to play, to have fun",
-      "text": 2
-     }
-    ]
-   },
-   {
-    "n": 3,
-    "title_zh": "在房间",
-    "title_en": "In the room",
-    "kind": "dialogue",
-    "lines": [
-     {
-      "speaker": "A",
-      "zh": "明天天气怎么样？",
-      "pinyin": "Míngtiān tiānqì zěnmeyàng?"
-     },
-     {
-      "speaker": "B",
-      "zh": "虽然是晴天，但是很冷。",
-      "pinyin": "Suīrán shì qíngtiān, dànshì hěn lěng."
-     },
-     {
-      "speaker": "A",
-      "zh": "那还能去跑步吗？",
-      "pinyin": "Nà hái néng qù pǎo bù ma?"
-     },
-     {
-      "speaker": "B",
-      "zh": "可以，但是你自己去吧，我还有很多事情要做。",
-      "pinyin": "Kěyǐ, dànshì nǐ zìjǐ qù ba, wǒ hái yǒu hěn duō shìqing yào zuò."
-     }
-    ],
-    "english_version": "A: How will the weather be tomorrow?\nB: It will be fine, but cold.\nA: In that case, is it OK to go jogging?\nB: I think so. But I’m afraid you have to go by yourself because I have a lot of work to do.",
-    "new_words": [
-     {
-      "n": 6,
-      "zh": "晴",
-      "pinyin": "qíng",
-      "pos": "adj.",
-      "en": "sunny, fine, clear",
-      "text": 3
-     }
-    ]
-   },
-   {
-    "n": 4,
-    "title_zh": "在商店",
-    "title_en": "In a store",
-    "kind": "dialogue",
-    "lines": [
-     {
-      "speaker": "A",
-      "zh": "你在这个商店买过东西没有？",
-      "pinyin": "Nǐ zài zhège shāngdiàn mǎiguo dōngxi méiyǒu?"
-     },
-     {
-      "speaker": "B",
-      "zh": "买过一次，这儿的东西还可以，就是不便宜。",
-      "pinyin": "Mǎiguo yí cì, zhèr de dōngxi hái kěyǐ, jiùshì bù piányi."
-     },
-     {
-      "speaker": "A",
-      "zh": "我喜欢这件衣服，但是觉得有点儿贵。",
-      "pinyin": "Wǒ xǐhuan zhè jiàn yīfu, dànshì juéde yǒudiǎnr guì."
-     },
-     {
-      "speaker": "B",
-      "zh": "两百块还可以，喜欢就买吧。",
-      "pinyin": "Liǎngbǎi kuài hái kěyǐ, xǐhuan jiù mǎi ba."
-     }
-    ],
-    "english_version": "A: Have you ever bought anything in this store?\nB: Yes, once. Things here are pretty good, not cheap though.\nA: I like this garment, but I think it’s a little expensive.\nB: Two hundred yuan is not that expensive. If you like it, just buy it.",
-    "new_words": [
-     {
-      "n": 7,
-      "zh": "百",
-      "pinyin": "bǎi",
-      "pos": "num.",
-      "en": "hundred",
-      "text": 4
-     }
-    ]
-   }
-  ],
-  "grammar": [
-   {
-    "n": 1,
-    "title_zh": "结构助词“过”",
-    "title_en": "The Structural Particle “过”",
-    "explanation_zh": "动词后加上结构助词“过”，一般用来表示过去有过的经历，这些动作行为没有持续到现在。例如：\n在动词前边加“没（有）”表示否定。例如：\n在句末加“没有”表示疑问。例如：",
-    "explanation_en": "A verb followed by the structural particle “过” usually indicates a past experience action which hasn’t lasted to the present. For example:\nIn the negative form, “没（有）” is added before the verb. For example:\nIn the interrogative form, “没有” is added at the end of the sentence. For example:",
-    "structure_rows": [
-     "Subject | Predicate: V | 过 | O",
-     "他们 | 来 | 过 | 我家。",
-     "我 | 看 | 过 | 那个电影。",
-     "我 | 去 | 过 | 中国。",
-     "Subject | Predicate: 没（有）＋V | 过 | O",
-     "他们 | 没（有）来 | 过 | 我家。",
-     "我 | 没（有）看 | 过 | 那个电影。",
-     "我 | 没（有）去 | 过 | 中国。",
-     "Subject | Predicate: V | 过 | O＋没有",
-     "他们 | 来 | 过 | 你家没有？",
-     "你 | 看 | 过 | 那个电影没有？",
-     "你 | 去 | 过 | 中国没有？"
-    ],
-    "examples": [
-     {
-      "n": 1,
-      "zh": "他们来过我家。"
-     },
-     {
-      "n": 2,
-      "zh": "我看过那个电影。"
-     },
-     {
-      "n": 3,
-      "zh": "我去过中国。"
-     },
-     {
-      "n": 4,
-      "zh": "他们没（有）来过我家。"
-     },
-     {
-      "n": 5,
-      "zh": "我没（有）看过那个电影。"
-     },
-     {
-      "n": 6,
-      "zh": "我没（有）去过中国。"
-     },
-     {
-      "n": 7,
-      "zh": "他们来过你家没有？"
-     },
-     {
-      "n": 8,
-      "zh": "你看过那个电影没有？"
-     },
-     {
-      "n": 9,
-      "zh": "你去过中国没有？"
-     }
-    ]
-   },
-   {
-    "n": 2,
-    "title_zh": "关联词“虽然……，但是……”",
-    "title_en": "The Pair of Conjunctions “虽然……，但是……”",
-    "explanation_zh": "“虽然……，但是……”连接两个分句，构成一种转折关系。例如：",
-    "explanation_en": "The conjunctions “虽然……，但是……” connect two clauses, forming a complex sentence indicating an adversative relation. For example:",
-    "examples": [
-     {
-      "n": 1,
-      "zh": "虽然外面很冷，但是房间里很热。"
-     },
-     {
-      "n": 2,
-      "zh": "虽然汉字很难，但是我很喜欢写汉字。"
-     },
-     {
-      "n": 3,
-      "zh": "虽然是晴天，但是很冷。"
-     }
-    ]
-   },
-   {
-    "n": 3,
-    "title_zh": "动量补语“次”",
-    "title_en": "The Complement of Frequency “次”",
-    "explanation_zh": "动量补语“次”常放在谓语动词的后边，用来表示动作发生、进行的次数。例如：\n宾语是表示地点的名词时，动量补语可以放在宾语前，也可以放在宾语后。例如：\n宾语是人称代词时，动量补语要放在宾语后。例如：",
-    "explanation_en": "The complement of frequency “次” is usually used after the predicate verb, indicating the number of times that an action has taken place. For example:\nWhen the object of a verb is a place, the complement of frequency can be put either before or after the object. For example:\nWhen the object is a personal pronoun, the complement of frequency should be put after the object. For example:",
-    "structure_rows": [
-     "Subject | Predicate: V | 过 | Num＋次 | O",
-     "我们 | 看 | 过 | 三次 | 电影。",
-     "他们 | 坐 | 过 | 一次 | 飞机。",
-     "我 | （在这个商店）买 | 过 | 一次 | （东西）。",
-     "Subject | Predicate: V | 过 | Num＋次 | O",
-     "我们 | 去 | 过 | 三次 | 北京。",
-     "他们 | 来 | 过 | 一次 | 中国。",
-     "我 | （上星期）去 | 过 | 一次 | 医院。",
-     "Subject | Predicate: V | 过 | O | Num＋次",
-     "我们 | 去 | 过 | 北京 | 三次。",
-     "他们 | 来 | 过 | 中国 | 一次。",
-     "我 | （上星期）去 | 过 | 医院 | 一次。",
-     "Subject | Predicate: V | 过 | O | Num＋次",
-     "我们 | 找 | 过 | 他 | 三次。",
-     "他们 | 看 | 过 | 我 | 一次。",
-     "老师 | 叫 | 过 | 我 | 两次。"
-    ],
-    "examples": [
-     {
-      "n": 1,
-      "zh": "我们看过三次电影。"
-     },
-     {
-      "n": 2,
-      "zh": "他们坐过一次飞机。"
-     },
-     {
-      "n": 3,
-      "zh": "我（在这个商店）买过一次（东西）。"
-     },
-     {
-      "n": 4,
-      "zh": "我们去过三次北京。"
-     },
-     {
-      "n": 5,
-      "zh": "他们来过一次中国。"
-     },
-     {
-      "n": 6,
-      "zh": "我（上星期）去过一次医院。"
-     },
-     {
-      "n": 7,
-      "zh": "我们去过北京三次。"
-     },
-     {
-      "n": 8,
-      "zh": "他们来过中国一次。"
-     },
-     {
-      "n": 9,
-      "zh": "我（上星期）去过医院一次。"
-     },
-     {
-      "n": 10,
-      "zh": "我们找过他三次。"
-     },
-     {
-      "n": 11,
-      "zh": "他们看过我一次。"
-     },
-     {
-      "n": 12,
-      "zh": "老师叫过我两次。"
-     }
-    ]
-   }
-  ],
-  "exercises": [
-   {
-    "n": 1,
-    "type_zh": "分角色朗读课文",
-    "instruction_zh": "分角色朗读课文",
-    "instruction_en": "Role-play the dialogs.",
-    "items": []
-   },
-   {
-    "n": 2,
-    "type_zh": "回答问题",
-    "instruction_zh": "根据课文内容回答问题",
-    "instruction_en": "Answer the questions based on the dialogs.",
-    "items": [
-     {
-      "n": 1,
-      "zh": "他们看过那个电影吗？",
-      "pinyin": "Tāmen kànguo nàge diànyǐng ma?"
-     },
-     {
-      "n": 2,
-      "zh": "他们想几个人去看电影？",
-      "pinyin": "Tāmen xiǎng jǐ ge rén qù kàn diànyǐng?"
-     },
-     {
-      "n": 3,
-      "zh": "他们想来中国做什么？",
-      "pinyin": "Tāmen xiǎng lái Zhōngguó zuò shénme?"
-     },
-     {
-      "n": 4,
-      "zh": "为什么她明天不能去跑步？",
-      "pinyin": "Wèi shénme tā míngtiān bù néng qù pǎo bù?"
-     },
-     {
-      "n": 5,
-      "zh": "女的觉得这个商店的东西怎么样？",
-      "pinyin": "Nǚde juéde zhège shāngdiàn de dōngxi zěnmeyàng?"
-     }
-    ]
-   },
-   {
-    "n": 3,
-    "type_zh": "描述图片",
-    "instruction_zh": "用本课新学的语言点和词语描述图片",
-    "instruction_en": "Describe the pictures using the newly-learned language points and words.",
-    "items": [
-     {
-      "n": 1,
-      "zh": "你以前________这种水果吗？",
-      "pinyin": "Nǐ yǐqián ______ zhè zhǒng shuǐguǒ ma?",
-      "picture_desc_en": "a pile of red cherries with stems on a wooden surface"
-     },
-     {
-      "n": 2,
-      "zh": "我去年________你姐姐一次。",
-      "pinyin": "Wǒ qùnián ______ nǐ jiějie yí cì.",
-      "picture_desc_en": "a smiling blonde woman in a white top, hand at her chin, tall grass behind her"
-     },
-     {
-      "n": 3,
-      "zh": "虽然天气很冷，但是他________。",
-      "pinyin": "Suīrán tiānqì hěn lěng, dànshì tā ______.",
-      "picture_desc_en": "a swimmer in a red swimming cap doing the front crawl in a pool"
-     },
-     {
-      "n": 4,
-      "zh": "虽然英语很难，但是她________。",
-      "pinyin": "Suīrán Yīngyǔ hěn nán, dànshì tā ______.",
-      "picture_desc_en": "a young woman with glasses reading a large open book in front of bookshelves"
-     }
-    ]
-   }
-  ],
-  "characters": {
-   "knowledge_title_zh": "汉字偏旁“⻗”和“贝”",
-   "knowledge_zh": "偏旁 | 解释 | 例字\n⻗ | 雨字头，一般与云、雨等天气现象有关系。 | 雪 xuě、雾 wù\n贝 | 贝字旁，一般与钱财、鼎类器物有关系。 | 财 cái、货 huò",
-   "knowledge_en": "Chinese Radicals: “⻗” and “贝” — The radical “⻗”, appearing at the top of a character, is usually related to such weather phenomena as clouds and rain: 雪 xuě snow; 雾 wù fog, mist. The radical “贝” is usually related to money or utensils like an ancient cooking vessel: 财 cái wealth, money; 货 huò goods, commodity.",
-   "characters": [
-    {
-     "zh": "雪",
-     "pinyin": "xuě",
-     "note_zh": "偏旁“⻗（雨字头）”例字（snow）"
-    },
-    {
-     "zh": "雾",
-     "pinyin": "wù",
-     "note_zh": "偏旁“⻗（雨字头）”例字（fog, mist）"
-    },
-    {
-     "zh": "财",
-     "pinyin": "cái",
-     "note_zh": "偏旁“贝（贝字旁）”例字（wealth, money）"
-    },
-    {
-     "zh": "货",
-     "pinyin": "huò",
-     "note_zh": "偏旁“贝（贝字旁）”例字（goods, commodity）"
-    }
-   ]
-  },
-  "application": [
-   {
-    "title_zh": "双人活动",
-    "instruction_zh": "两人一组，用“虽然A，但是B”练习说句子，其中一个人说A，另一个人说B。然后两人互换。",
-    "instruction_en": "Work in pairs and make sentences using “虽然A，但是B”. One says A and the other says B. Then switch the roles.",
-    "example_zh": [
-     "例如：A：虽然这件衣服很漂亮， Suīrán zhè jiàn yīfu hěn piàoliang,",
-     "B：但是太贵了，我没钱买。 dànshì tài guì le, wǒ méi qián mǎi.",
-     "A：虽然今天天气很冷， Suīrán jīntiān tiānqì hěn lěng,",
-     "B：……"
-    ]
-   },
-   {
-    "title_zh": "小组活动",
-    "instruction_zh": "3～4人一组，用结构助词“过”叙述自己在中国经历过的事情，尽量使用学过的词语。每组请一位同学报告情况。",
-    "instruction_en": "Work in groups of 3-4. Describe your experiences in China using the structural particle “过” with the words you’ve learned. Each group chooses a member to make a report.",
-    "example_zh": [
-     "表格：（序号） | 经历过的事情 Your Experiences",
-     "1 | 我在北京买过一件很漂亮的衣服。 Wǒ zài Běijīng mǎiguo yí jiàn hěn piàoliang de yīfu.",
-     "（另有3行空白）"
-    ]
-   }
-  ]
- },
- "teacher": {
-  "ref": {
-   "book": "teacher",
-   "pages": [
-    101,
-    102,
-    103,
-    104,
-    105,
-    106,
-    107
-   ]
-  },
-  "objectives_zh": [
-   "重点词语：学生能够熟练掌握“有意思、玩儿、晴、百”的词义和用法",
-   "语言点：学生能够了解并掌握：（1）动态助词“过”（2）关联词“虽然……，但是……”（3）动量补语“次”",
-   "语音：学生能够掌握感叹句的句调，并能正确朗读",
-   "汉字：学生能够：（1）熟练认读本课生词（2）了解“⻗（雨字头）、贝（贝字旁）”所表示的意思",
-   "功能：学生能够：（1）表达过去的经历（动态助词“过”）（2）表达先让步，然后转折的逻辑（虽然……，但是……）（3）表达动作发生、进行的次数（动量补语“次”）"
-  ],
-  "steps": [
-   {
-    "title_zh": "一 复习旧课",
-    "body_zh": "1. 教师出示第13课生词卡片，要求学生快速认读下列生词：\n手、拿、铅笔、班、长、宾馆、一直、往、路口\n2. 教师带领学生辨析下列字形相近的汉字：\n笑____　住____　路____　铅____\n笔____　往____　跑____　识____\n3. 教师根据第13课重点内容，要求学生快速回答问题：\n大卫穿着什么颜色的衣服？\n手里拿着手机的那个人是谁？\n那个长着两个大眼睛的女孩是你的同学吗？\n你认识那个坐着学习的人吗？\n你能告诉我怎么去图书馆吗？\n这儿离医院远不远？你能告诉我怎么走吗？"
-   },
-   {
-    "title_zh": "二 学习新课 1 热身",
-    "body_zh": "热身1：教师先带领学生根据图片选出正确的词语，然后分组练习。一组学生看图片说出正确的词语；另一组学生看词语，说出图片的编号。\n答案：①D　②A　③E　④F　⑤C　⑥B\n热身2：教师说出编号，让学生用汉语说出它们的名字。\n参考答案：①电视　②电影　③电话　④电脑"
-   },
-   {
-    "title_zh": "2 生词",
-    "body_zh": "（1）生词快速认读及正音\n有意思、但是、虽然、次、玩儿、晴、百\n• 教师可以用PPT依次快速展示生词；\n• 教师领读，学生齐读；\n• 学生接龙式读一遍，每人读两个。\n（2）重点生词扩展及常用搭配\n有意思—很有意思—非常有意思—没（有）意思—有意思的书\n　—那个电影很有意思，星期天一起去看看吧？\n　—我觉得这本新买的书没意思。\n　—听说（这个电影）很有意思。\n玩儿—好玩儿—玩儿一会儿—玩儿电脑—玩儿玩儿\n　—这个周末不太忙，一起去玩儿吧。\n　—我告诉他不要每天晚上玩儿电脑。\n　—我虽然去过好几次，但是还想再去玩儿玩儿。\n晴—晴天\n　—你看，今天是晴天。\n　—我看电视上说明天晴，天气很好。\n　—虽然是晴天，但是很冷。\n百—两百—两百多—不到两百\n　—这个学校的学生不多，只有两百人。\n　—那件红色的衣服两百多块，不太贵。\n　—两百块还可以，喜欢就买吧。\n练习册相关练习：第124页／一／第一部分，第127-128页／二／第一、二部分"
-   },
-   {
-    "title_zh": "3 语言点（1）动态助词“过”",
-    "body_zh": "① 语言点解析：\n动态助词“过”表示曾经发生某一动作或存在某一状态，但现在已经不再进行，这种状态已经结束。\n［句型框］主语＋动词＋过＋宾语\n［句型框］主语＋没（有）＋动词＋过＋宾语\n［句型框］主语＋动词＋过＋宾语＋吗／没有？\n② 语言点导入：\n教师可以利用图片用提问的方式导入语言点，比如故宫、胡同、汉字的图片等。\n教师：你们去过故宫吗？\n学生：我们去过故宫。\n教师：来中国以前你学过汉语吗？\n学生：我没学过汉语。\n③ 语言点操练：\n教师提问，学生用肯定式和否定式回答。\n你去过王老师家没有？\n你看过中国电影没有？\n你吃过中国菜没有？\n你听过这首歌没有？\n④ 语言点扩展练习：\n教师带领学生做课本第112页的小组活动。"
-   },
-   {
-    "title_zh": "3 语言点（2）关联词“虽然……，但是……”",
-    "body_zh": "① 语言点解析：\n表示让步与转折关系。“虽然”多用在前一个分句中，引出表示让步的分句，后一分句常用“但是、可是”引出转折关系。\n② 语言点导入：\n教师给出情境，请学生用“虽然……，但是……”说句子。\n教师：今天天气不太好，同学们还想去踢足球。\n学生：虽然天气不太好，但是同学们还想去踢足球。\n教师：那个饭馆很小，做的菜很好吃。\n学生：虽然那个饭馆很小，但是做的菜很好吃。\n③ 语言点操练：\n让学生把下列句子填写完整。\n虽然我不会写汉字，但是________。\n虽然这件衣服很漂亮，但是________。\n虽然________，但是我没有时间。\n虽然________，但是天气不太冷。\n④ 语言点扩展练习：\n教师带领学生做课本第112页的双人活动。"
-   },
-   {
-    "title_zh": "3 语言点（3）动量补语“次”",
-    "body_zh": "① 语言点解析：\n动量补语用在动词的后边，表示动作、行为进行的数量、次数。\n［句型框］主语＋动词＋过＋数量词＋次＋宾语\n［句型框］主语＋动词＋过＋指人的名词／人称代词＋数量词＋次\n［注意］宾语是表示地点的名词时，动量补语可以放在宾语前，也可以放在宾语后。\n② 语言点导入：\n教师做动作，让学生来说。\n听一次、写一次、读一次、看一次\n③ 语言点操练：\n请学生想想已经学过哪些动词，把这些动词加上动量补语，然后大声说出来。\n例如：来一次　去一次　看一次　……\n④ 语言点扩展练习：\n用动量补语完成下列句子。\n这本书以前我________。\n我小的时候________北京。\n这个电影不错，我已经________。\n今天上午，小王________你________，你没在。"
-   },
-   {
-    "title_zh": "4 课文",
-    "body_zh": "课文1\n（1）让学生听两遍录音并回答下列问题：\nB看过那个电影没有？\nB听说过那个电影吗？\nA想什么时候去看电影？\nB想和谁一起去看电影？\n（2）教师领读课文两遍，然后让学生分角色朗读课文。\n（3）教师用PPT展示课文提示词，请学生再次通读一遍课文后，根据提示词复述课文。\nA：你……没有？\nB：没看过，听说……。\nA：那我们……吧？\nB：可以，但是……。\n课文2\n（1）让学生听两遍录音并回答下列问题：\n女的去过中国吗？\n女的还想去中国吗？\n男的想去中国吗？\n“到时候”是指什么时候？\n（2）教师带领学生齐读课文两遍，然后请学生分角色朗读课文。\n（3）教师用PPT展示课文提示词，请学生再次通读一遍课文后，根据提示词复述课文。\nA：听说……，还想去吗？\nB：我虽然……，但是……。\nA：那我们……吧。\nB：好啊，到时候……。\n课文3\n（1）让学生听两遍录音并回答下列问题：\n明天天气怎么样？\n谁想出去跑步？\n女的能出去跑步吗？为什么？\n（2）教师带领学生齐读课文两遍，然后请学生分角色朗读课文。\n（3）教师用PPT展示课文提示词，把学生分成两组，一组学生提问，一组学生回答。然后互换角色。\nA：明天天气……？\nB：虽然……，但是……。\nA：那还能……吗？\nB：可以，但是……，我还有……。\n（4）用女的的口气叙述本段课文的主要内容。\n明天……，虽然……，但是……，我的朋友想……，但是……。\n课文4\n（1）让学生听两遍录音并回答下列问题：\n他们在做什么呢？\n男的觉得这个商店的东西怎么样？\n女的想不想买这件衣服？\n男的觉得这件衣服贵不贵？\n（2）教师带领学生齐读课文两遍，然后请学生分角色朗读课文。\n（3）教师用PPT展示课文提示词，学生可以自己设计情景，分角色表演课文。\nA：你在这个商店……没有？\nB：买过一次，……还可以，就是……。\nA：我喜欢……，但是觉得……。\nB：……还可以，……吧。"
-   },
-   {
-    "title_zh": "5 语音",
-    "body_zh": "感叹句的句调：\n① 知识点解析\n感叹句是用来抒发喜悦、愤怒、惊讶或悲哀等强烈感情的。一般来说，表示悲哀、难过的感叹句一般用低而趋降的句调，表示喜悦、惊讶的感叹句可以用高而平的句调。\n你唱的歌真好听啊！↘\n快点儿回房间，天气多冷啊！→\n这次的汉语考试太难了！↘\n② 语音练习\n教师可利用课本第111页的语音练习部分进行练习。教师可先领读句子，使学生掌握感叹句的句调特点，然后让学生个别读，教师纠正错误。\n练习册相关练习：第131页／三"
-   },
-   {
-    "title_zh": "6 汉字",
-    "body_zh": "① 知识点解析：\n偏旁\n⻗：雨字头，由它构成的汉字一般与云、雨等天气现象有关系。\n贝：贝字旁，由它构成的汉字一般与钱财有关系。\n② 汉字练习：\n• 教师板书本课偏旁“斤、页”，提示学生注意这两个偏旁的笔画和笔顺，并书写各自的代表汉字，帮助学生识记该偏旁的意义。\n• 补充练习\na. 找出下列含有雨字头和贝字旁的汉字\n雪　货　财　雹\n览　雾　狈　觉\nb. 拆分下列汉字\n虽：____　____　玩：____　____\n然：____　____　意：____　____\nc. 用下列偏旁和部件组合成新汉字\n口　西　日　心　青　相　虫　女\n____　____　____　____\n练习册相关练习：第132页／四"
-   },
-   {
-    "title_zh": "7 补充课堂活动——去商店买东西",
-    "body_zh": "请学生2-3人组成小组，自己设计在商店里的购物场景，然后进行角色扮演。可以参考下面的提示。\n人物：两个人（同学、朋友）　三个人（同学、朋友、售货员）\n地点：商店里\n东西：衣服、水果、书……\n句式：在……买过……没有？\n　……还可以。\n　虽然……，但是……有点儿贵。\n　我喜欢……，你呢？\n　再看看……吧。"
-   },
-   {
-    "title_zh": "8 本课小结",
-    "body_zh": "• 语言点：动态助词“过”\n　关联词“虽然……，但是……”\n　动量补语“次”\n• 语音：感叹句的句调\n• 汉字：偏旁“⻗、贝”"
-   },
-   {
-    "title_zh": "附注：教学建议用具",
-    "body_zh": "1. 生词卡片：第13、14课生词卡片\n2. 图片：故宫、北京胡同、汉字等"
-   }
-  ],
-  "notes_zh": [
-   "注意：宾语是表示地点的名词时，动量补语可以放在宾语前，也可以放在宾语后。"
-  ],
-  "warmup_answers_zh": [
-   "热身1 答案：①D　②A　③E　④F　⑤C　⑥B",
-   "热身2 参考答案：①电视　②电影　③电话　④电脑"
-  ],
-  "text_questions": [
-   {
-    "text": 1,
-    "q_zh": "B看过那个电影没有？"
-   },
-   {
-    "text": 1,
-    "q_zh": "B听说过那个电影吗？"
-   },
-   {
-    "text": 1,
-    "q_zh": "A想什么时候去看电影？"
-   },
-   {
-    "text": 1,
-    "q_zh": "B想和谁一起去看电影？"
-   },
-   {
-    "text": 2,
-    "q_zh": "女的去过中国吗？"
-   },
-   {
-    "text": 2,
-    "q_zh": "女的还想去中国吗？"
-   },
-   {
-    "text": 2,
-    "q_zh": "男的想去中国吗？"
-   },
-   {
-    "text": 2,
-    "q_zh": "“到时候”是指什么时候？"
-   },
-   {
-    "text": 3,
-    "q_zh": "明天天气怎么样？"
-   },
-   {
-    "text": 3,
-    "q_zh": "谁想出去跑步？"
-   },
-   {
-    "text": 3,
-    "q_zh": "女的能出去跑步吗？为什么？"
-   },
-   {
-    "text": 4,
-    "q_zh": "他们在做什么呢？"
-   },
-   {
-    "text": 4,
-    "q_zh": "男的觉得这个商店的东西怎么样？"
-   },
-   {
-    "text": 4,
-    "q_zh": "女的想不想买这件衣服？"
-   },
-   {
-    "text": 4,
-    "q_zh": "男的觉得这件衣服贵不贵？"
-   }
-  ],
-  "summary_zh": "• 语言点：动态助词“过”\n　关联词“虽然……，但是……”\n　动量补语“次”\n• 语音：感叹句的句调\n• 汉字：偏旁“⻗、贝”"
- },
- "workbook": {
-  "ref": {
-   "book": "workbook",
-   "pages": [
     132,
     133,
     134,
@@ -691,1036 +1719,50 @@
     137,
     138,
     139,
-    140
-   ]
-  },
-  "sections": [
-   {
-    "n": "一、听力 第一部分",
-    "type_zh": "听力 第一部分",
-    "instruction_zh": "第1–5题：听句子，判断对错",
-    "instruction_en": "Questions 1-5: Decide whether the pictures are right or wrong based on the sentences you hear.",
-    "items": [
-     {
-      "n": "例1",
-      "zh": "我们家有三个人。",
-      "pinyin": "Wǒmen jiā yǒu sān ge rén.",
-      "transcript_zh": "我们家有三个人。",
-      "picture_desc_en": "a smiling family outdoors: a man carrying a child on his shoulders and a woman",
-      "answer": "√",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        132
-       ]
-      }
-     },
-     {
-      "n": "例2",
-      "zh": "我每天坐公共汽车去上班。",
-      "pinyin": "Wǒ měi tiān zuò gōnggòngqìchē qù shàng bān.",
-      "transcript_zh": "我每天坐公共汽车去上班。",
-      "picture_desc_en": "a mountain bicycle",
-      "answer": "×",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        132
-       ]
-      }
-     },
-     {
-      "n": 1,
-      "zh": "",
-      "transcript_zh": "下个星期我要和女朋友去看一次电影。",
-      "picture_desc_en": "a young man and a young woman sitting close together at a table, the man writing, both smiling",
-      "answer": "×",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        142
-       ]
-      }
-     },
-     {
-      "n": 2,
-      "zh": "",
-      "transcript_zh": "虽然工作很忙，但是我每天都游泳。",
-      "picture_desc_en": "a swimmer in a white cap doing the front crawl in a pool",
-      "answer": "√",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        142
-       ]
-      }
-     },
-     {
-      "n": 3,
-      "zh": "",
-      "transcript_zh": "你自己去跑步吧，我还有事情要做呢。",
-      "picture_desc_en": "a man and a woman in sunglasses and sportswear outdoors, smiling",
-      "answer": "×",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        142
-       ]
-      }
-     },
-     {
-      "n": 4,
-      "zh": "",
-      "transcript_zh": "这本书我看过很多次了，真的很有意思。",
-      "picture_desc_en": "a smiling young woman holding an open book, library bookshelves behind her",
-      "answer": "√",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        142
-       ]
-      }
-     },
-     {
-      "n": 5,
-      "zh": "",
-      "transcript_zh": "长时间玩电脑对眼睛不好，但是儿子非常喜欢。",
-      "picture_desc_en": "a boy sitting at an open laptop, smiling",
-      "answer": "√",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        142
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "一、听力 第二部分",
-    "type_zh": "听力 第二部分",
-    "instruction_zh": "第6–10题：听对话，选择与对话内容一致的图片",
-    "instruction_en": "Questions 6-10: Choose the right picture for each dialogue you hear.",
-    "items": [
-     {
-      "n": "例",
-      "zh": "男：你喜欢什么运动？ Nǐ xǐhuan shénme yùndòng? (What sport do you like?) 女：我最喜欢踢足球。 Wǒ zuì xǐhuan tī zúqiú. (My favorite sport is playing football.)",
-      "transcript_zh": "男：你喜欢什么运动？ 女：我最喜欢踢足球。",
-      "options": {
-       "A": "[picture] a smiling man at a table with food (bowl, fruit), eating a meal",
-       "B": "[picture] a young woman holding her head in both hands over papers on a desk",
-       "C": "[picture] a smiling young woman holding up a bank card, a clothes rack with hangers in front of her",
-       "D": "[picture] a young woman juggling a football on her knee on a field",
-       "E": "[picture] a man and a girl looking at a tablet together, handholds of a bus/train overhead",
-       "F": "[picture] basketball players jumping at the hoop, seen from above"
-      },
-      "answer": "D",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        133
-       ]
-      }
-     },
-     {
-      "n": 6,
-      "zh": "",
-      "options": {
-       "A": "[picture] a smiling man at a table with food (bowl, fruit), eating a meal",
-       "B": "[picture] a young woman holding her head in both hands over papers on a desk",
-       "C": "[picture] a smiling young woman holding up a bank card, a clothes rack with hangers in front of her",
-       "D": "[picture] a young woman juggling a football on her knee on a field",
-       "E": "[picture] a man and a girl looking at a tablet together, handholds of a bus/train overhead",
-       "F": "[picture] basketball players jumping at the hoop, seen from above"
-      },
-      "transcript_zh": "女：爸爸，您看过这个电影吗？我同学说很有意思。 男：没看过，下星期我们一起去看吧。",
-      "answer": "E",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        142
-       ]
-      }
-     },
-     {
-      "n": 7,
-      "zh": "",
-      "options": {
-       "A": "[picture] a smiling man at a table with food (bowl, fruit), eating a meal",
-       "B": "[picture] a young woman holding her head in both hands over papers on a desk",
-       "C": "[picture] a smiling young woman holding up a bank card, a clothes rack with hangers in front of her",
-       "D": "[picture] a young woman juggling a football on her knee on a field",
-       "E": "[picture] a man and a girl looking at a tablet together, handholds of a bus/train overhead",
-       "F": "[picture] basketball players jumping at the hoop, seen from above"
-      },
-      "transcript_zh": "女：虽然是晴天，但是天气很冷。 男：没关系，我还要和同学们一起打篮球呢。",
-      "answer": "F",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        142
-       ]
-      }
-     },
-     {
-      "n": 8,
-      "zh": "",
-      "options": {
-       "A": "[picture] a smiling man at a table with food (bowl, fruit), eating a meal",
-       "B": "[picture] a young woman holding her head in both hands over papers on a desk",
-       "C": "[picture] a smiling young woman holding up a bank card, a clothes rack with hangers in front of her",
-       "D": "[picture] a young woman juggling a football on her knee on a field",
-       "E": "[picture] a man and a girl looking at a tablet together, handholds of a bus/train overhead",
-       "F": "[picture] basketball players jumping at the hoop, seen from above"
-      },
-      "transcript_zh": "男：一起吃早饭吧。 女：我已经吃过了，你自己吃吧。",
-      "answer": "A",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        142
-       ]
-      }
-     },
-     {
-      "n": 9,
-      "zh": "",
-      "options": {
-       "A": "[picture] a smiling man at a table with food (bowl, fruit), eating a meal",
-       "B": "[picture] a young woman holding her head in both hands over papers on a desk",
-       "C": "[picture] a smiling young woman holding up a bank card, a clothes rack with hangers in front of her",
-       "D": "[picture] a young woman juggling a football on her knee on a field",
-       "E": "[picture] a man and a girl looking at a tablet together, handholds of a bus/train overhead",
-       "F": "[picture] basketball players jumping at the hoop, seen from above"
-      },
-      "transcript_zh": "男：这次考试怎么样？ 女：别说了，很多学过的汉字我都不会写了。",
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        142
-       ]
-      }
-     },
-     {
-      "n": 10,
-      "zh": "",
-      "options": {
-       "A": "[picture] a smiling man at a table with food (bowl, fruit), eating a meal",
-       "B": "[picture] a young woman holding her head in both hands over papers on a desk",
-       "C": "[picture] a smiling young woman holding up a bank card, a clothes rack with hangers in front of her",
-       "D": "[picture] a young woman juggling a football on her knee on a field",
-       "E": "[picture] a man and a girl looking at a tablet together, handholds of a bus/train overhead",
-       "F": "[picture] basketball players jumping at the hoop, seen from above"
-      },
-      "transcript_zh": "男：别买衣服了，我没有那么多钱。 女：没关系，我这儿有钱。",
-      "answer": "C",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        142
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "一、听力 第三部分",
-    "type_zh": "听力 第三部分",
-    "instruction_zh": "第11–15题：听对话，选择正确答案",
-    "instruction_en": "Questions 11-15: Listen to the dialogues and answer the questions.",
-    "items": [
-     {
-      "n": "例",
-      "zh": "问：小王的杯子是什么颜色的？",
-      "pinyin": "Xiǎo Wáng de bēizi shì shénme yánsè de?",
-      "transcript_zh": "男：小王，这里有几个杯子，哪个是你的？ 女：左边那个红色的是我的。 问：小王的杯子是什么颜色的？",
-      "options": {
-       "A": "红色 hóngsè red",
-       "B": "黑色 hēisè black",
-       "C": "白色 báisè white"
-      },
-      "answer": "A",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        134
-       ]
-      }
-     },
-     {
-      "n": 11,
-      "zh": "",
-      "transcript_zh": "男：您是第一次来我们这儿吗？ 女：不是，去年九月我来过一次。 问：女的来过这里几次？",
-      "options": {
-       "A": "一次 yí cì",
-       "B": "两次 liǎng cì",
-       "C": "三次 sān cì"
-      },
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        142
-       ]
-      }
-     },
-     {
-      "n": 12,
-      "zh": "",
-      "transcript_zh": "男：你在这个商店买过东西没有？ 女：买过一次，这儿的东西还可以，就是不便宜。 问：女的是什么意思？",
-      "options": {
-       "A": "东西好，便宜 dōngxi hǎo, piányi",
-       "B": "东西不好，便宜 dōngxi bù hǎo, piányi",
-       "C": "东西好，不便宜 dōngxi hǎo, bù piányi"
-      },
-      "answer": "C",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        142
-       ]
-      }
-     },
-     {
-      "n": 13,
-      "zh": "",
-      "transcript_zh": "女：明天一起去跑步吧。 男：你自己去吧，我还有很多工作要做呢。 问：男的为什么不去跑步？",
-      "options": {
-       "A": "太忙 tài máng",
-       "B": "太累 tài lèi",
-       "C": "不喜欢跑步 bù xǐhuan pǎo bù"
-      },
-      "answer": "A",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        142
-       ]
-      }
-     },
-     {
-      "n": 14,
-      "zh": "",
-      "transcript_zh": "男：今天的报纸你看过了没有？ 女：没有，我在看昨天的报纸呢。 问：女的看的是哪天的报纸？",
-      "options": {
-       "A": "前天的 qiántiān de",
-       "B": "今天的 jīntiān de",
-       "C": "昨天的 zuótiān de"
-      },
-      "answer": "C",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        142
-       ]
-      }
-     },
-     {
-      "n": 15,
-      "zh": "",
-      "transcript_zh": "女：这件衣服不错，就是有点儿贵。 男：两百多块还可以，喜欢就买吧。 问：男的想让女的买这件衣服吗？",
-      "options": {
-       "A": "不想让女的买 bù xiǎng ràng nǚ de mǎi",
-       "B": "想让女的买 xiǎng ràng nǚ de mǎi",
-       "C": "两百多块太贵了 liǎng bǎi duō kuài tài guì le"
-      },
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        142
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "二、阅读 第一部分",
-    "type_zh": "阅读 第一部分",
-    "instruction_zh": "第16–20题：看图片，选择与句子内容一致的图片",
-    "instruction_en": "Questions 16-20: Choose the right picture for each sentence.",
-    "items": [
-     {
-      "n": "例",
-      "zh": "每个星期六，我都去打篮球。",
-      "pinyin": "Měi ge xīngqīliù, wǒ dōu qù dǎ lánqiú.",
-      "options": {
-       "A": "[picture] a smiling girl in a knitted winter hat and scarf, a snowman behind her",
-       "B": "[picture] a smiling young woman standing at a whiteboard with Chinese sentences written on it, holding a marker",
-       "C": "[picture] the Great Wall winding over hills",
-       "D": "[picture] a smiling young man holding a basketball above his head",
-       "E": "[picture] a young woman with a hand on her forehead, holding a tissue to her nose",
-       "F": "[picture] a smiling woman holding a closed umbrella outdoors, looking up at the sky"
-      },
-      "answer": "D",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        135
-       ]
-      }
-     },
-     {
-      "n": 16,
-      "zh": "长城很漂亮，我已经去过三次了。",
-      "pinyin": "Chángchéng hěn piàoliang, wǒ yǐjīng qùguo sān cì le.",
-      "options": {
-       "A": "[picture] a smiling girl in a knitted winter hat and scarf, a snowman behind her",
-       "B": "[picture] a smiling young woman standing at a whiteboard with Chinese sentences written on it, holding a marker",
-       "C": "[picture] the Great Wall winding over hills",
-       "D": "[picture] a smiling young man holding a basketball above his head",
-       "E": "[picture] a young woman with a hand on her forehead, holding a tissue to her nose",
-       "F": "[picture] a smiling woman holding a closed umbrella outdoors, looking up at the sky"
-      },
-      "answer": "C",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        142
-       ]
-      }
-     },
-     {
-      "n": 17,
-      "zh": "来中国以后，我已经得过两次病了。",
-      "pinyin": "Lái Zhōngguó yǐhòu, wǒ yǐjīng déguo liǎng cì bìng le.",
-      "options": {
-       "A": "[picture] a smiling girl in a knitted winter hat and scarf, a snowman behind her",
-       "B": "[picture] a smiling young woman standing at a whiteboard with Chinese sentences written on it, holding a marker",
-       "C": "[picture] the Great Wall winding over hills",
-       "D": "[picture] a smiling young man holding a basketball above his head",
-       "E": "[picture] a young woman with a hand on her forehead, holding a tissue to her nose",
-       "F": "[picture] a smiling woman holding a closed umbrella outdoors, looking up at the sky"
-      },
-      "answer": "E",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        142
-       ]
-      }
-     },
-     {
-      "n": 18,
-      "zh": "虽然是晴天，但是很冷。",
-      "pinyin": "Suīrán shì qíngtiān, dànshì hěn lěng.",
-      "options": {
-       "A": "[picture] a smiling girl in a knitted winter hat and scarf, a snowman behind her",
-       "B": "[picture] a smiling young woman standing at a whiteboard with Chinese sentences written on it, holding a marker",
-       "C": "[picture] the Great Wall winding over hills",
-       "D": "[picture] a smiling young man holding a basketball above his head",
-       "E": "[picture] a young woman with a hand on her forehead, holding a tissue to her nose",
-       "F": "[picture] a smiling woman holding a closed umbrella outdoors, looking up at the sky"
-      },
-      "answer": "A",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        142
-       ]
-      }
-     },
-     {
-      "n": 19,
-      "zh": "不下雨了，天晴了。",
-      "pinyin": "Bú xià yǔ le, tiān qíng le.",
-      "options": {
-       "A": "[picture] a smiling girl in a knitted winter hat and scarf, a snowman behind her",
-       "B": "[picture] a smiling young woman standing at a whiteboard with Chinese sentences written on it, holding a marker",
-       "C": "[picture] the Great Wall winding over hills",
-       "D": "[picture] a smiling young man holding a basketball above his head",
-       "E": "[picture] a young woman with a hand on her forehead, holding a tissue to her nose",
-       "F": "[picture] a smiling woman holding a closed umbrella outdoors, looking up at the sky"
-      },
-      "answer": "F",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        142
-       ]
-      }
-     },
-     {
-      "n": 20,
-      "zh": "我们已经学过这个汉字了。",
-      "pinyin": "Wǒmen yǐjīng xuéguo zhège Hànzì le.",
-      "options": {
-       "A": "[picture] a smiling girl in a knitted winter hat and scarf, a snowman behind her",
-       "B": "[picture] a smiling young woman standing at a whiteboard with Chinese sentences written on it, holding a marker",
-       "C": "[picture] the Great Wall winding over hills",
-       "D": "[picture] a smiling young man holding a basketball above his head",
-       "E": "[picture] a young woman with a hand on her forehead, holding a tissue to her nose",
-       "F": "[picture] a smiling woman holding a closed umbrella outdoors, looking up at the sky"
-      },
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        142
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "二、阅读 第二部分",
-    "type_zh": "阅读 第二部分",
-    "instruction_zh": "第21–25题：选择合适的词语填空",
-    "instruction_en": "Questions 21-25: Choose the proper words to fill in the brackets.",
-    "word_bank": [
-     [
-      "A 有意思 yǒu yìsi",
-      "B 但是 dànshì",
-      "C 意思 yìsi",
-      "D 过 guò",
-      "E 贵 guì",
-      "F 听说 tīngshuō"
-     ]
-    ],
-    "items": [
-     {
-      "n": "例",
-      "zh": "这儿的羊肉很好吃，但是也很（________）。",
-      "pinyin": "Zhèr de yángròu hěn hǎochī, dànshì yě hěn ______.",
-      "answer": "E",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        136
-       ]
-      }
-     },
-     {
-      "n": 21,
-      "zh": "老师的话是什么（________），我没听懂。",
-      "pinyin": "Lǎoshī de huà shì shénme ______, wǒ méi tīngdǒng.",
-      "answer": "C",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        142
-       ]
-      }
-     },
-     {
-      "n": 22,
-      "zh": "我（________）这本书非常好看，但是我还没看过。",
-      "pinyin": "Wǒ ______ zhè běn shū fēicháng hǎo kàn, dànshì wǒ hái méi kànguo.",
-      "answer": "F",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        142
-       ]
-      }
-     },
-     {
-      "n": 23,
-      "zh": "那个电影太（________）了，我已经看过两次了。",
-      "pinyin": "Nàge diànyǐng tài ______ le, wǒ yǐjīng kànguo liǎng cì le.",
-      "answer": "A",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        142
-       ]
-      }
-     },
-     {
-      "n": 24,
-      "zh": "虽然工作很忙，（________）我每个星期都要运动。",
-      "pinyin": "Suīrán gōngzuò hěn máng, ______ wǒ měi ge xīngqī dōu yào yùndòng.",
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        142
-       ]
-      }
-     },
-     {
-      "n": 25,
-      "zh": "我已经去（________）北京好几次了，但是还想再去玩儿玩儿。",
-      "pinyin": "Wǒ yǐjīng qù ______ Běijīng hǎo jǐ cì le, dànshì hái xiǎng zài qù wánrwanr.",
-      "answer": "D",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        142
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "二、阅读 第三部分",
-    "type_zh": "阅读 第三部分",
-    "instruction_zh": "第26–30题：判断下列句子的意思是否正确",
-    "instruction_en": "Questions 26-30: Decide whether the inferences are true or false.",
-    "items": [
-     {
-      "n": "例1",
-      "zh": "现在是11点30分，他们已经游了20分钟了。 ★他们11点10分开始游泳。",
-      "pinyin": "Xiànzài shì diǎn fēn, tāmen yǐjīng yóule fēnzhōng le. ★Tāmen diǎn fēn kāishǐ yóuyǒng.",
-      "answer": "√",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        137
-       ]
-      }
-     },
-     {
-      "n": "例2",
-      "zh": "我会跳舞，但跳得不怎么样。 ★我跳得非常好。",
-      "pinyin": "Wǒ huì tiàowǔ, dàn tiào de bù zěnmeyàng. ★Wǒ tiào de fēicháng hǎo.",
-      "answer": "×",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        137
-       ]
-      }
-     },
-     {
-      "n": 26,
-      "zh": "昨天和朋友们在外面玩儿了一个晚上，很累，但是非常高兴。 ★昨天玩儿得不好。",
-      "pinyin": "Zuótiān hé péngyoumen zài wàimian wánrle yí ge wǎnshang, hěn lèi, dànshì fēicháng gāoxìng. ★Zuótiān wánr de bù hǎo.",
-      "answer": "×",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        142
-       ]
-      }
-     },
-     {
-      "n": 27,
-      "zh": "他做的菜比我做的好吃，但是因为工作忙，他很少做。 ★他不会做菜。",
-      "pinyin": "Tā zuò de cài bǐ wǒ zuò de hǎochī, dànshì yīnwèi gōngzuò máng, tā hěn shǎo zuò. ★Tā bú huì zuò cài.",
-      "answer": "×",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        142
-       ]
-      }
-     },
-     {
-      "n": 28,
-      "zh": "我和朋友们去过这家商店，还在这儿买过两次东西。 ★这个商店他去过两次。",
-      "pinyin": "Wǒ hé péngyoumen qùguo zhè jiā shāngdiàn, hái zài zhèr mǎiguo liǎng cì dōngxi. ★Zhège shāngdiàn tā qùguo liǎng cì.",
-      "answer": "×",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        142
-       ]
-      }
-     },
-     {
-      "n": 29,
-      "zh": "从学校到机场，坐出租车要一个小时，我们10点的飞机，8点从学校走可以吗？ ★他们要坐8点的飞机。",
-      "pinyin": "Cóng xuéxiào dào jīchǎng, zuò chūzūchē yào yí ge xiǎoshí, wǒmen diǎn de fēijī, diǎn cóng xuéxiào zǒu kěyǐ ma? ★Tāmen yào zuò diǎn de fēijī.",
-      "answer": "×",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        142
-       ]
-      }
-     },
-     {
-      "n": 30,
-      "zh": "小李说这个电影很有意思，但是我没看过。 ★小李看过这个电影。",
-      "pinyin": "Xiǎo Lǐ shuō zhège diànyǐng hěn yǒu yìsi, dànshì wǒ méi kànguo. ★Xiǎo Lǐ kànguo zhège diànyǐng.",
-      "answer": "√",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        142
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "二、阅读 第四部分",
-    "type_zh": "阅读 第四部分",
-    "instruction_zh": "第31–35题：选择合适的问答",
-    "instruction_en": "Questions 31-35: Match the sentences to make dialogues.",
-    "items": [
-     {
-      "n": "例",
-      "zh": "他还在教室里学习。 (He is still studying in the classroom.)",
-      "pinyin": "Tā hái zài jiàoshì li xuéxí.",
-      "options": {
-       "A": "你出去的时候多穿些衣服。 Nǐ chūqu de shíhou duō chuān xiē yīfu.",
-       "B": "你在那个商店买过东西没有？ Nǐ zài nàge shāngdiàn mǎiguo dōngxi méiyǒu?",
-       "C": "妈妈告诉过我很多次，长时间玩儿电脑和手机对眼睛不好。 Māma gàosu guo wǒ hěn duō cì, cháng shíjiān wánr diànnǎo hé shǒujī duì yǎnjing bù hǎo.",
-       "D": "没学过，听说很难，但是很有意思。 Méi xuéguo, tīngshuō hěn nán, dànshì hěn yǒu yìsi.",
-       "E": "他在哪儿呢？你看见他了吗？ Tā zài nǎr ne? Nǐ kànjiàn tā le ma?",
-       "F": "没关系，喜欢就买吧。 Méi guānxi, xǐhuan jiù mǎi ba."
-      },
-      "answer": "E",
-      "answer_ref": {
-       "book": "workbook",
-       "pages": [
-        138
-       ]
-      }
-     },
-     {
-      "n": 31,
-      "zh": "你学过汉语吗？",
-      "pinyin": "Nǐ xuéguo Hànyǔ ma?",
-      "options": {
-       "A": "你出去的时候多穿些衣服。 Nǐ chūqu de shíhou duō chuān xiē yīfu.",
-       "B": "你在那个商店买过东西没有？ Nǐ zài nàge shāngdiàn mǎiguo dōngxi méiyǒu?",
-       "C": "妈妈告诉过我很多次，长时间玩儿电脑和手机对眼睛不好。 Māma gàosu guo wǒ hěn duō cì, cháng shíjiān wánr diànnǎo hé shǒujī duì yǎnjing bù hǎo.",
-       "D": "没学过，听说很难，但是很有意思。 Méi xuéguo, tīngshuō hěn nán, dànshì hěn yǒu yìsi.",
-       "E": "他在哪儿呢？你看见他了吗？ Tā zài nǎr ne? Nǐ kànjiàn tā le ma?",
-       "F": "没关系，喜欢就买吧。 Méi guānxi, xǐhuan jiù mǎi ba."
-      },
-      "answer": "D",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        142
-       ]
-      }
-     },
-     {
-      "n": 32,
-      "zh": "今天真冷，第一次到了零下10度。",
-      "pinyin": "Jīntiān zhēn lěng, dì yī cì dàole língxià dù.",
-      "options": {
-       "A": "你出去的时候多穿些衣服。 Nǐ chūqu de shíhou duō chuān xiē yīfu.",
-       "B": "你在那个商店买过东西没有？ Nǐ zài nàge shāngdiàn mǎiguo dōngxi méiyǒu?",
-       "C": "妈妈告诉过我很多次，长时间玩儿电脑和手机对眼睛不好。 Māma gàosu guo wǒ hěn duō cì, cháng shíjiān wánr diànnǎo hé shǒujī duì yǎnjing bù hǎo.",
-       "D": "没学过，听说很难，但是很有意思。 Méi xuéguo, tīngshuō hěn nán, dànshì hěn yǒu yìsi.",
-       "E": "他在哪儿呢？你看见他了吗？ Tā zài nǎr ne? Nǐ kànjiàn tā le ma?",
-       "F": "没关系，喜欢就买吧。 Méi guānxi, xǐhuan jiù mǎi ba."
-      },
-      "answer": "A",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        142
-       ]
-      }
-     },
-     {
-      "n": 33,
-      "zh": "所以我现在很少玩儿电脑和手机了。",
-      "pinyin": "Suǒyǐ wǒ xiànzài hěn shǎo wánr diànnǎo hé shǒujī le.",
-      "options": {
-       "A": "你出去的时候多穿些衣服。 Nǐ chūqu de shíhou duō chuān xiē yīfu.",
-       "B": "你在那个商店买过东西没有？ Nǐ zài nàge shāngdiàn mǎiguo dōngxi méiyǒu?",
-       "C": "妈妈告诉过我很多次，长时间玩儿电脑和手机对眼睛不好。 Māma gàosu guo wǒ hěn duō cì, cháng shíjiān wánr diànnǎo hé shǒujī duì yǎnjing bù hǎo.",
-       "D": "没学过，听说很难，但是很有意思。 Méi xuéguo, tīngshuō hěn nán, dànshì hěn yǒu yìsi.",
-       "E": "他在哪儿呢？你看见他了吗？ Tā zài nǎr ne? Nǐ kànjiàn tā le ma?",
-       "F": "没关系，喜欢就买吧。 Méi guānxi, xǐhuan jiù mǎi ba."
-      },
-      "answer": "C",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        142
-       ]
-      }
-     },
-     {
-      "n": 34,
-      "zh": "我很喜欢这件衣服，但是觉得有点儿贵。",
-      "pinyin": "Wǒ hěn xǐhuan zhè jiàn yīfu, dànshì juéde yǒudiǎnr guì.",
-      "options": {
-       "A": "你出去的时候多穿些衣服。 Nǐ chūqu de shíhou duō chuān xiē yīfu.",
-       "B": "你在那个商店买过东西没有？ Nǐ zài nàge shāngdiàn mǎiguo dōngxi méiyǒu?",
-       "C": "妈妈告诉过我很多次，长时间玩儿电脑和手机对眼睛不好。 Māma gàosu guo wǒ hěn duō cì, cháng shíjiān wánr diànnǎo hé shǒujī duì yǎnjing bù hǎo.",
-       "D": "没学过，听说很难，但是很有意思。 Méi xuéguo, tīngshuō hěn nán, dànshì hěn yǒu yìsi.",
-       "E": "他在哪儿呢？你看见他了吗？ Tā zài nǎr ne? Nǐ kànjiàn tā le ma?",
-       "F": "没关系，喜欢就买吧。 Méi guānxi, xǐhuan jiù mǎi ba."
-      },
-      "answer": "F",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        142
-       ]
-      }
-     },
-     {
-      "n": 35,
-      "zh": "东西还可以，而且很便宜。",
-      "pinyin": "Dōngxi hái kěyǐ, érqiě hěn piányi.",
-      "options": {
-       "A": "你出去的时候多穿些衣服。 Nǐ chūqu de shíhou duō chuān xiē yīfu.",
-       "B": "你在那个商店买过东西没有？ Nǐ zài nàge shāngdiàn mǎiguo dōngxi méiyǒu?",
-       "C": "妈妈告诉过我很多次，长时间玩儿电脑和手机对眼睛不好。 Māma gàosu guo wǒ hěn duō cì, cháng shíjiān wánr diànnǎo hé shǒujī duì yǎnjing bù hǎo.",
-       "D": "没学过，听说很难，但是很有意思。 Méi xuéguo, tīngshuō hěn nán, dànshì hěn yǒu yìsi.",
-       "E": "他在哪儿呢？你看见他了吗？ Tā zài nǎr ne? Nǐ kànjiàn tā le ma?",
-       "F": "没关系，喜欢就买吧。 Méi guānxi, xǐhuan jiù mǎi ba."
-      },
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        142
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "三、语音 第一部分",
-    "type_zh": "语音 第一部分 听录音",
-    "instruction_zh": "第1题：听录音，注意句末的升降调",
-    "instruction_en": "Question 1: Listen to the recording and pay attention to the intonation at the end of each sentence.",
-    "items": [
-     {
-      "n": "1-(1)",
-      "zh": "今天天气真好啊！↘",
-      "pinyin": "Jīntiān tiānqì zhēn hǎo a!",
-      "transcript_zh": "今天天气真好啊！"
-     },
-     {
-      "n": "1-(2)",
-      "zh": "他的汉字写得比我好多了！↘",
-      "pinyin": "Tā de Hànzì xiě de bǐ wǒ hǎo duō le!",
-      "transcript_zh": "他的汉字写得比我好多了！"
-     },
-     {
-      "n": "1-(3)",
-      "zh": "这么大的一个苹果呀！↘",
-      "pinyin": "Zhème dà de yí ge píngguǒ ya!",
-      "transcript_zh": "这么大的一个苹果呀！"
-     },
-     {
-      "n": "1-(4)",
-      "zh": "你的汉语说得多好啊！↘",
-      "pinyin": "Nǐ de Hànyǔ shuō de duō hǎo a!",
-      "transcript_zh": "你的汉语说得多好啊！"
-     }
-    ]
-   },
-   {
-    "n": "三、语音 第二部分",
-    "type_zh": "语音 第二部分 跟读",
-    "instruction_zh": "第2题：听录音并跟读下列句子，注意句末的升降调",
-    "instruction_en": "Question 2: Listen to the recording and repeat the following sentences, paying attention to the intonation at the end of each sentence.",
-    "items": [
-     {
-      "n": "2-(1)",
-      "zh": "我觉得中国真大呀！↘",
-      "pinyin": "Wǒ juéde Zhōngguó zhēn dà ya!",
-      "transcript_zh": "我觉得中国真大呀！"
-     },
-     {
-      "n": "2-(2)",
-      "zh": "昨天是星期天，商店的人好多呀！↘",
-      "pinyin": "Zuótiān shì xīngqītiān, shāngdiàn de rén hǎo duō ya!",
-      "transcript_zh": "昨天是星期天，商店的人好多呀！"
-     },
-     {
-      "n": "2-(3)",
-      "zh": "她的眼睛多漂亮啊！↘",
-      "pinyin": "Tā de yǎnjing duō piàoliang a!",
-      "transcript_zh": "她的眼睛多漂亮啊！"
-     },
-     {
-      "n": "2-(4)",
-      "zh": "希望你的身体快点儿好啊！↘",
-      "pinyin": "Xīwàng nǐ de shēntǐ kuàidiǎnr hǎo a!",
-      "transcript_zh": "希望你的身体快点儿好啊！"
-     }
-    ]
-   },
-   {
-    "n": "四、汉字 第一部分",
-    "type_zh": "汉字 偏旁归类",
-    "instruction_zh": "第1–2题：看汉字，按偏旁归类",
-    "instruction_en": "Questions 1-2: Group the characters with the same radical.",
-    "word_bank": [
-     [
-      "A 雪",
-      "B 赔",
-      "C 雷",
-      "D 员"
-     ],
-     [
-      "E 货",
-      "F 霜",
-      "G 零",
-      "H 账"
-     ]
-    ],
-    "items": [
-     {
-      "n": 1,
-      "zh": "⻗：________",
-      "answer": "A C F G",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        142
-       ]
-      }
-     },
-     {
-      "n": 2,
-      "zh": "贝：________",
-      "answer": "B D E H",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        142
-       ]
-      }
-     }
-    ]
-   },
-   {
-    "n": "四、汉字 第二部分",
-    "type_zh": "汉字 猜词义",
-    "instruction_zh": "第3题：看生词和图片，猜出词义",
-    "instruction_en": "Question 3: Guess the meaning of each word based on the new words and pictures.",
-    "word_bank": [
-     [
-      "商品",
-      "商人",
-      "商店",
-      "顾客"
-     ]
-    ],
-    "items": [
-     {
-      "n": "3-商品",
-      "zh": "商品 ________",
-      "options": {
-       "A": "[picture] a tall department-store building with a sign on the roof",
-       "B": "[picture] many teddy bears displayed together for sale",
-       "C": "[picture] a man and a woman in business suits standing back to back, fists raised",
-       "D": "[picture] three smiling young women carrying shopping bags"
-      },
-      "answer": "B",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        142
-       ]
-      }
-     },
-     {
-      "n": "3-商人",
-      "zh": "商人 ________",
-      "options": {
-       "A": "[picture] a tall department-store building with a sign on the roof",
-       "B": "[picture] many teddy bears displayed together for sale",
-       "C": "[picture] a man and a woman in business suits standing back to back, fists raised",
-       "D": "[picture] three smiling young women carrying shopping bags"
-      },
-      "answer": "C",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        142
-       ]
-      }
-     },
-     {
-      "n": "3-商店",
-      "zh": "商店 ________",
-      "options": {
-       "A": "[picture] a tall department-store building with a sign on the roof",
-       "B": "[picture] many teddy bears displayed together for sale",
-       "C": "[picture] a man and a woman in business suits standing back to back, fists raised",
-       "D": "[picture] three smiling young women carrying shopping bags"
-      },
-      "answer": "A",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        142
-       ]
-      }
-     },
-     {
-      "n": "3-顾客",
-      "zh": "顾客 ________",
-      "options": {
-       "A": "[picture] a tall department-store building with a sign on the roof",
-       "B": "[picture] many teddy bears displayed together for sale",
-       "C": "[picture] a man and a woman in business suits standing back to back, fists raised",
-       "D": "[picture] three smiling young women carrying shopping bags"
-      },
-      "answer": "D",
-      "answer_ref": {
-       "book": "teacher",
-       "pages": [
-        142
-       ]
-      }
-     }
-    ]
-   }
-  ],
-  "answers_ref": {
-   "book": "teacher",
-   "pages": [
+    140,
     141,
     142
-   ]
+  ],
+  "schema_version": 1,
+  "hsk30": {
+    "source": "courseware",
+    "ref": {
+      "book": "hsk30_courseware",
+      "pages": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    "new_words": [
+      {
+        "n": 1,
+        "zh": "不好意思",
+        "pinyin": "bù hǎoyìsi"
+      },
+      {
+        "n": 2,
+        "zh": "没意思",
+        "pinyin": "méi yìsi"
+      },
+      {
+        "n": 3,
+        "zh": "有意思",
+        "pinyin": "yǒu yìsi"
+      },
+      {
+        "n": 4,
+        "zh": "但",
+        "pinyin": "dàn"
+      }
+    ],
+    "grammar": [],
+    "exercises": [],
+    "unclear": [
+      "Курсын слайд (补充生词Supplement New Words) зөвхөн ханз + пиньинь хэвлэдэг — pos/en номд байхгүй тул оруулаагүй (таамаглаагүй, толь бичгээс нэмээгүй)."
+    ]
   }
- },
- "unclear": [
-  "Гарчиг зөрүү: сурах бичиг (PDF х.125) ба багшийн ном (PDF х.101) «你看过那个电影吗 / Nǐ kànguo nàge diànyǐng ma», харин дасгалын ном (PDF х.132) ба багшийн номын хавсралт (PDF х.141) «你看过这个电影吗 / Nǐ kànguo zhège diànyǐng ma». Англи гарчиг хоёуланд «Have you seen that movie». title_zh-д сурах бичгийнхийг авсан.",
-  "«过»-ийн нэр томьёо: сурах бичгийн 注释1 (PDF х.128) ба 运用 小组活动 (PDF х.132) «结构助词“过” / The Structural Particle», багшийн ном (PDF х.101, 103, 107) «动态助词“过”» — номд байгаагаар тус тусад нь.",
-  "生词 1 «有意思 yǒu yìsi» — сурах бичиг PDF х.126-д үгийн ай (pos) хэвлэгдээгүй тул pos талбаргүй.",
-  "Багшийн ном PDF х.106 汉字练习 — «教师板书本课偏旁“斤、页”» гэж хэвлэгдсэн (эхний тэмдэгт «斤»-тэй төстэй, бүрэн тод биш) — энэ хичээлийн偏旁 «⻗、贝»-тэй таарахгүй, өөр хичээлээс үлдсэн алдаа байж магадгүй; харагдсанаар бичсэн.",
-  "偏旁 «雨字头» сурах бичиг, багшийн ном, дасгалын номд тусгай дээд хэлбэрээр хэвлэгдсэн — JSON-д Unicode «⻗» (U+2ED7) гэж бичсэн (L01 «⺩», «⻊» зэрэгтэй адил).",
-  "贝-ийн тайлбар: сурах бичиг «一般与钱财、鼎类器物有关系», багшийн ном PDF х.106 «一般与钱财有关系» — номд байгаагаар.",
-  "Багшийн номын 汉字 补充练习 a-д «雹»-ийн байрлалд хэвлэгдсэн тэмдэгт скан дээр «雹» мэт (дээр нь ⻗, доор нь 包) — 300dpi-д шалгасан. «狈» ч мөн адил. a/b/c-ийн хариулт хэвлэгдээгүй.",
-  "Хүйсийн зөрүү: сурах бичгийн 课文 мөрүүд зөвхөн A/B. Сурах бичгийн 练习2 (5) «女的觉得这个商店的东西怎么样？» (课文4), харин багшийн ном PDF х.105 课文4 «男的觉得这个商店的东西怎么样？», «女的想不想买这件衣服？», «男的觉得这件衣服贵不贵？» — B-г хэн гэж үзсэн нь хоёр номд зөрж байна. 课文2-т багшийн ном «女的去过中国吗？» (去过 гэж хэлсэн нь B), 课文3-т «女的能出去跑步吗？», сурах бичгийн 练习2 (4) «为什么她明天不能去跑步？» — номд байгаагаар.",
-  "Багшийн номын 语音 жишээнүүдийн сум (PDF х.106): 1 ба 3-т «↘», 2-т «→» (高而平). Сурах бичиг (PDF х.131) ба дасгалын ном (PDF х.139)-д бүх өгүүлбэрийн төгсгөлд доош муруй сум — JSON-д «↘» гэж тэмдэглэсэн (номд текстээр байхгүй). Энэ хичээлд 重读 цэг тэмдэглэгээ байхгүй.",
-  "Дасгалын номын 三、语音 (PDF х.139) 1-(2): ханз «他的汉字写得比我好多了！», пиньинь «bǐ wǒ hǎo duō le» — номд байгаагаар.",
-  "Дасгалын номын пиньинь мөрөнд тоо орхигдсон: 阅读 第三部分 例1 (11, 30, 20, 11, 10), 29 (10, 8, 8), 第四部分 32 («língxià dù», 10 орхигдсон) — номд байгаагаар.",
-  "Дасгалын номын 听力 бичвэр (transcript_zh) ба бүх хариулт — багшийн номын хавсралт PDF х.141–142 («参考答案» PDF х.142); 例-ийн хариулт дасгалын номд өөрт нь хэвлэгдсэн. 三、语音 хэсэгт хариулт шаардлагагүй.",
-  "Дасгалын номын 听力 第一部分 1-ийн хариулт «×» (бичвэр «下个星期我要和女朋友去看一次电影。», зураг: ширээнд хамт суусан залуу эрэгтэй, эмэгтэй) — зургийн агуулгаас хамаарах тул номд байгаагаар.",
-  "Багшийн номын «练习册相关练习» хуудас нь хэвлэсэн дугаараар (124, 127–128, 131, 132) = PDF х.132, 135–136, 139, 140. «课本第111/112页» = PDF х.131/132.",
-  "Сурах бичгийн 热身2 / 练习2 回答问题 / 练习3 描述图片 / 运用 — хариулт хэвлэгдээгүй. 热身1-ийн хариулт ба 热身2-ийн 参考答案 зөвхөн багшийн номд (PDF х.102).",
-  "Сурах бичгийн 注释 хүснэгтүүдийн улаан мөрүүд — 课文-ээс авсан өгүүлбэрүүд: «你看过那个电影没有？» (注释1), «虽然是晴天，但是很冷。» (注释2 (3)), «我（在这个商店）买过一次（东西）。» (注释3; 课文4-т «买过一次» гэж 东西-гүй). structure_rows ба examples-д энгийнээр оруулсан.",
-  "Аудио файлын нэр мэдэгдэхгүй тул audio талбар орхисон. Номын CD тэмдэг: сурах бичиг 课文1–4 = 14-1…14-4, 语音 14-5; дасгалын ном 听力 14-1, 语音 14-2.",
-  "Энэ хичээлд 课堂用语 / 文化 / 俗语 хэсэг байхгүй; 汉字 хэсэгт зөвхөн 偏旁 (笔画/独体字 байхгүй).",
-  "Зургийн тайлбарууд (picture_desc_en, pictures_desc_en, options «[picture]») зургаас товч, объектив дүрсэлсэн."
- ],
- "verified_pages": [
-  101,
-  102,
-  103,
-  104,
-  105,
-  106,
-  107,
-  125,
-  126,
-  127,
-  128,
-  129,
-  130,
-  131,
-  132,
-  133,
-  134,
-  135,
-  136,
-  137,
-  138,
-  139,
-  140,
-  141,
-  142
- ],
- "schema_version": 1
 }
