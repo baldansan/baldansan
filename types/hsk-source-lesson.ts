@@ -14,8 +14,8 @@
 export type PdfPage = number;
 
 export type SourceRef = {
-  /** "textbook" | "teacher" | "workbook" | "workbook_answers" */
-  book: "textbook" | "teacher" | "workbook" | "workbook_answers";
+  /** textbook | teacher | workbook | workbook_answers (дасгалын номын 录音文本及答案 товхимол / HSK1 хариултын ном) | textbook_answers (课本参考答案) */
+  book: "textbook" | "teacher" | "workbook" | "workbook_answers" | "textbook_answers";
   pages: PdfPage[];
 };
 
