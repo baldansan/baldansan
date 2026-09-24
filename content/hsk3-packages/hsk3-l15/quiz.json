@@ -1,0 +1,458 @@
+[
+ {
+  "type": "cloze",
+  "question": "王经理，电子邮件我已经给您________过去了。",
+  "options": [
+   "花",
+   "练习",
+   "提高",
+   "发",
+   "完成"
+  ],
+  "correct_answer": "发",
+  "explanation": "«发电子邮件» — имэйл илгээх. «发过去» — тийш нь илгээчихсэн.",
+  "order_index": 1,
+  "id": "hsk3-l15-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "已经夜里12点多了，但是今天的作业我还没________。",
+  "options": [
+   "完成",
+   "花",
+   "发",
+   "练习",
+   "提高"
+  ],
+  "correct_answer": "完成",
+  "explanation": "«完成作业» — даалгавраа хийж дуусгах. Шөнө 12 цаг өнгөрсөн ч даалгавраа дуусгаагүй байна.",
+  "order_index": 2,
+  "id": "hsk3-l15-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这个月我的钱都________完了，不能再买新衣服了。",
+  "options": [
+   "发",
+   "练习",
+   "提高",
+   "完成",
+   "花"
+  ],
+  "correct_answer": "花",
+  "explanation": "«花钱» — мөнгө зарах. «花完了» — зараад дуусгачихсан тул дахиж хувцас авч чадахгүй.",
+  "order_index": 3,
+  "id": "hsk3-l15-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我在这里只学了三个月汉语，但是水平________了不少。",
+  "options": [
+   "花",
+   "发",
+   "提高",
+   "练习",
+   "完成"
+  ],
+  "correct_answer": "提高",
+  "explanation": "«水平提高» — түвшин ахих. Гуравхан сар сурсан ч түвшин нэлээд ахисан.",
+  "order_index": 4,
+  "id": "hsk3-l15-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "A：今天听写五个________，请大家准备好笔和纸。 B：五个？老师，太多了！",
+  "options": [
+   "文化",
+   "句子",
+   "新闻",
+   "节日",
+   "世界"
+  ],
+  "correct_answer": "句子",
+  "explanation": "«听写句子» — өгүүлбэр цээж бичих. Үзэг цаас бэлдэх, «五个？太多了！» гэж байгаа тул өгүүлбэр.",
+  "order_index": 5,
+  "id": "hsk3-l15-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "A：________上有多少个国家？你知道吗？ B：这个……，我真不知道。",
+  "options": [
+   "文化",
+   "句子",
+   "新闻",
+   "世界",
+   "节日"
+  ],
+  "correct_answer": "世界",
+  "explanation": "«世界上» — дэлхий дээр. Хэдэн улс байдгийг асууж байна.",
+  "order_index": 6,
+  "id": "hsk3-l15-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "A：你们国家最重要的________是什么？ B：当然是春节！",
+  "options": [
+   "节日",
+   "文化",
+   "句子",
+   "新闻",
+   "世界"
+  ],
+  "correct_answer": "节日",
+  "explanation": "Хариулт нь «春节» (Хаврын баяр) тул хамгийн чухал баяр — 节日.",
+  "order_index": 7,
+  "id": "hsk3-l15-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "A：刚才电视上的那条________真有意思！ B：你快说说。",
+  "options": [
+   "文化",
+   "句子",
+   "节日",
+   "世界",
+   "新闻"
+  ],
+  "correct_answer": "新闻",
+  "explanation": "«电视上的新闻» — телевизийн мэдээ. «那条» нь мэдээнд хэрэглэгддэг хэмжээ үг.",
+  "order_index": 8,
+  "id": "hsk3-l15-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "cloze",
+  "question": "除了笑笑以外，别人________来了。",
+  "options": [
+   "还",
+   "就",
+   "都",
+   "才"
+  ],
+  "correct_answer": "都",
+  "explanation": "Сяосяог ХАСААД бусад нь бүгд ирсэн — хасах утгатай «都». Дасгалын номын 36-р асуултын албан хариулт.",
+  "order_index": 9,
+  "id": "hsk3-l15-q09",
+  "skillTags": [
+   "grammar",
+   "chule-yiwai"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "除了唱歌以外，他________喜欢跳舞。",
+  "options": [
+   "都",
+   "还",
+   "就",
+   "才"
+  ],
+  "correct_answer": "还",
+  "explanation": "Дуулахаас гадна бас бүжиглэх дуртай — нэмэх утгатай «还» (注释-ийн жишээ 5).",
+  "order_index": 10,
+  "id": "hsk3-l15-q10",
+  "skillTags": [
+   "grammar",
+   "chule-yiwai"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "周末你有没有________打算？",
+  "options": [
+   "哪儿",
+   "怎么",
+   "谁",
+   "什么"
+  ],
+  "correct_answer": "什么",
+  "explanation": "«有没有什么打算» — ямар нэг төлөвлөгөө байгаа юу? Энд 什么 нь «ямар нэг» гэсэн тодорхой бус утгатай.",
+  "order_index": 11,
+  "id": "hsk3-l15-q11",
+  "skillTags": [
+   "grammar",
+   "interrogative-pronoun-shenme"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我怕热啊，这儿的夏天热________，你不觉得吗？",
+  "options": [
+   "极了",
+   "很",
+   "非常",
+   "太"
+  ],
+  "correct_answer": "极了",
+  "explanation": "Тэмдэг нэрийн АРД ирдэг нь зөвхөн «极了»: 热极了 — аймаар халуун. 很/非常/太 нь тэмдэг нэрийн өмнө ордог. (Сонсгол 16)",
+  "order_index": 12,
+  "id": "hsk3-l15-q12",
+  "skillTags": [
+   "grammar",
+   "degree-jile"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：老师觉得大山的汉语怎么样？",
+  "options": [
+   "提高得一点儿也不快",
+   "作业里有很多问题",
+   "一直不错，作业也写得不错",
+   "句子的意思都不清楚"
+  ],
+  "correct_answer": "一直不错，作业也写得不错",
+  "explanation": "Багш «你每天认真学习……一直不错啊» гэж, даалгаврыг нь «写得不错» гэж үнэлсэн. «提高得一点儿也不快» гэдэг нь Дашань өөрөө тэгж боддог.",
+  "order_index": 13,
+  "id": "hsk3-l15-q13",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：大家都来参加比赛了吗？谁没来？",
+  "options": [
+   "除了小云，其他人都来了",
+   "大家都来了",
+   "小云来了，其他人没来",
+   "老师还没来"
+  ],
+  "correct_answer": "除了小云，其他人都来了",
+  "explanation": "Сурагч «老师，除了小云，其他人都来了。» гэсэн — Сяо Юнь л ирээгүй, тэр замдаа явж байгаа.",
+  "order_index": 14,
+  "id": "hsk3-l15-q14",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：老师现在在做什么？",
+  "options": [
+   "在给小云打电话",
+   "在等小云",
+   "在参加比赛",
+   "给大家讲讲比赛的要求和需要注意的地方"
+  ],
+  "correct_answer": "给大家讲讲比赛的要求和需要注意的地方",
+  "explanation": "Багш «不等她了，我先给大家讲讲这次比赛的要求和一些需要注意的地方» гэсэн — Сяо Юнийг хүлээхгүйгээр шаардлагыг тайлбарлаж байна.",
+  "order_index": 15,
+  "id": "hsk3-l15-q15",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：人们可以在网上做什么？",
+  "options": [
+   "只能看新闻",
+   "看新闻、听歌、看电影、买东西",
+   "只能买衣服",
+   "打电话"
+  ],
+  "correct_answer": "看新闻、听歌、看电影、买东西",
+  "explanation": "Сяо Ган «除了看新闻，人们还可以在网上听歌、看电影、买东西» гэсэн — мэдээнээс гадна бас олон зүйл хийж болно.",
+  "order_index": 16,
+  "id": "hsk3-l15-q16",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：小刚从网上买的那件衣服怎么了？",
+  "options": [
+   "颜色不好看，他不喜欢",
+   "太贵了，他没买",
+   "有点儿小，给他弟弟了",
+   "他每天都穿"
+  ],
+  "correct_answer": "有点儿小，给他弟弟了",
+  "explanation": "Сяо Ган «那件衣服我穿着有点儿小，给我弟弟了» гэсэн — жижигдсэн тул дүүдээ өгсөн.",
+  "order_index": 17,
+  "id": "hsk3-l15-q17",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文4：在啤酒节上可以做什么？",
+  "options": [
+   "喝到世界上不同地方的啤酒，看到不同地方的歌舞",
+   "只能喝啤酒",
+   "过春节和中秋节",
+   "学习中国文化"
+  ],
+  "correct_answer": "喝到世界上不同地方的啤酒，看到不同地方的歌舞",
+  "explanation": "Бичвэрт шар айрагны баяр дээр дэлхийн янз бүрийн газрын шар айраг ууж, гудамжны хоёр талаар янз бүрийн газрын дуу бүжиг үзэж болно гэсэн.",
+  "order_index": 18,
+  "id": "hsk3-l15-q18",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Сяо Юниас бусад нь бүгд ирсэн» — аль нь зөв бэ?",
+  "options": [
+   "除了小云，其他人还来了。",
+   "除了小云，其他人都来了。",
+   "除了小云，都其他人来了。",
+   "其他人除了小云来了都。"
+  ],
+  "correct_answer": "除了小云，其他人都来了。",
+  "explanation": "Сяо Юнийг хасаад бусад нь бүгд — хасах утгатай «都», «都» нь үйл үгийн (来) өмнө орно. (Яриа 2)",
+  "order_index": 19,
+  "id": "hsk3-l15-q19",
+  "skillTags": [
+   "grammar",
+   "chule-yiwai"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Би хятад хэлнээс гадна бас англиар ярьж чадна» — аль нь зөв бэ?",
+  "options": [
+   "除了汉语以外，我都会说英语。",
+   "除了汉语以外，还我会说英语。",
+   "除了汉语以外，我会还说英语。",
+   "除了汉语以外，我还会说英语。"
+  ],
+  "correct_answer": "除了汉语以外，我还会说英语。",
+  "explanation": "Нэмэх утгатай тул «还»; өгүүлэгдэхүүн (我) нь «还»-ийн яг өмнө, «还» нь «会»-ийн өмнө орно (注释-ийн жишээ 6).",
+  "order_index": 20,
+  "id": "hsk3-l15-q20",
+  "skillTags": [
+   "grammar",
+   "chule-yiwai"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«这个商店没有好看的衣服。» — «什么»-тэй, эелдгээр хэлбэл аль нь зөв бэ?",
+  "options": [
+   "这个商店没什么好看的衣服。",
+   "这个商店什么没有好看的衣服。",
+   "这个商店没有好看的什么衣服。",
+   "这个商店没好看的衣服什么。"
+  ],
+  "correct_answer": "这个商店没什么好看的衣服。",
+  "explanation": "«没 + 什么 + 好看的衣服» — онц гоё хувцас алга (багшийн номын зорилтот өгүүлбэр). 什么 нь тодотголтой нэр үгийн бүхэлд нь өмнө орно.",
+  "order_index": 21,
+  "id": "hsk3-l15-q21",
+  "skillTags": [
+   "grammar",
+   "interrogative-pronoun-shenme"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Үгийг зөв дараалалд оруул: 什么 / 有 / 好看 / 电影院 / 电影 / 吗 / 的",
+  "options": [
+   "电影院有好看的电影什么吗？",
+   "电影院有什么好看的电影吗？",
+   "有什么电影院好看的电影吗？",
+   "电影院什么有好看的电影吗？"
+  ],
+  "correct_answer": "电影院有什么好看的电影吗？",
+  "explanation": "«有 + 什么 + 好看的电影 + 吗？» — кино театрт үзэх сайхан ямар нэг кино байна уу? Дасгалын номын 39-р асуултын албан хариулт.",
+  "order_index": 22,
+  "id": "hsk3-l15-q22",
+  "skillTags": [
+   "grammar",
+   "interrogative-pronoun-shenme"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Тэр туйлын сэтгэл хангалуун байна» — аль нь зөв бэ?",
+  "options": [
+   "他很满意极了。",
+   "他极了满意。",
+   "他满意极了。",
+   "他满意了极。"
+  ],
+  "correct_answer": "他满意极了。",
+  "explanation": "«满意极了» — сэтгэлийн үйл үг + 极了; «很» давхар тавихгүй (яриа 3).",
+  "order_index": 23,
+  "id": "hsk3-l15-q23",
+  "skillTags": [
+   "grammar",
+   "degree-jile"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Үгийг зөв дараалалд оруул: 这个地方 / 极了 / 街道 / 干净 / 的",
+  "options": [
+   "这个地方的极了街道干净。",
+   "这个地方的街道极了干净。",
+   "极了这个地方的街道干净。",
+   "这个地方的街道干净极了。"
+  ],
+  "correct_answer": "这个地方的街道干净极了。",
+  "explanation": "«极了» нь тэмдэг нэрийн (干净) АРД, өгүүлбэрийн төгсгөлд орно. Дасгалын номын 37-р асуултын албан хариулт.",
+  "order_index": 24,
+  "id": "hsk3-l15-q24",
+  "skillTags": [
+   "grammar",
+   "degree-jile"
+  ],
+  "difficulty": "medium"
+ }
+]

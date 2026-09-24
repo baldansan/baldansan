@@ -1,0 +1,458 @@
+[
+ {
+  "type": "cloze",
+  "question": "老师，我不舒服，我想跟您________。",
+  "options": [
+   "爱好",
+   "冬天",
+   "为了",
+   "请假",
+   "后来"
+  ],
+  "correct_answer": "请假",
+  "explanation": "«跟 + хүн + 请假» — хэн нэгнээс чөлөө хүсэх. Бие тавгүй байгаа тул багшаасаа чөлөө хүсэж байна.",
+  "order_index": 1,
+  "id": "hsk3-l17-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "________了解中国文化，我常常去旅行。",
+  "options": [
+   "请假",
+   "后来",
+   "爱好",
+   "冬天",
+   "为了"
+  ],
+  "correct_answer": "为了",
+  "explanation": "«为了 + зорилго» — …-ийн тулд. Хятадын соёлтой танилцахын тулд аялдаг гэсэн зорилгыг заана.",
+  "order_index": 2,
+  "id": "hsk3-l17-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我以前在美国学习，________来中国留学。",
+  "options": [
+   "冬天",
+   "为了",
+   "请假",
+   "后来",
+   "爱好"
+  ],
+  "correct_answer": "后来",
+  "explanation": "«以前 … 后来 …» — өнгөрсөн үйл явдлын дараалал: өмнө нь Америкт сурч байсан, дараа нь Хятадад ирсэн.",
+  "order_index": 3,
+  "id": "hsk3-l17-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我的________跟你的不一样，我更喜欢游泳。",
+  "options": [
+   "后来",
+   "爱好",
+   "冬天",
+   "为了",
+   "请假"
+  ],
+  "correct_answer": "爱好",
+  "explanation": "«我更喜欢游泳» — илүү дуртай зүйлээ хэлж байгаа тул хобби (爱好) тохирно.",
+  "order_index": 4,
+  "id": "hsk3-l17-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "A：你认识那个人吗？ B：认识，他是我的新________。",
+  "options": [
+   "决定",
+   "办法",
+   "一共",
+   "饱",
+   "邻居"
+  ],
+  "correct_answer": "邻居",
+  "explanation": "«新邻居» — шинэ хөрш. Хүнийг заасан үг зөвхөн «邻居».",
+  "order_index": 5,
+  "id": "hsk3-l17-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "A：这次HSK你考得怎么样？ B：好极了，________考了280分。",
+  "options": [
+   "一共",
+   "饱",
+   "邻居",
+   "决定",
+   "办法"
+  ],
+  "correct_answer": "一共",
+  "explanation": "«一共» — нийт, бүгд дээрээ. Шалгалтын нийт оноог хэлж байна.",
+  "order_index": 6,
+  "id": "hsk3-l17-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "A：我的口语不太好，你帮我想想________吧。 B：你最好多跟中国人聊聊天儿。",
+  "options": [
+   "邻居",
+   "决定",
+   "办法",
+   "一共",
+   "饱"
+  ],
+  "correct_answer": "办法",
+  "explanation": "«想办法» — арга бодох. B нь ярианы чадвараа сайжруулах арга зөвлөж байна.",
+  "order_index": 7,
+  "id": "hsk3-l17-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "A：明年你打算回国吗？ B：我还没________呢。",
+  "options": [
+   "办法",
+   "一共",
+   "饱",
+   "邻居",
+   "决定"
+  ],
+  "correct_answer": "决定",
+  "explanation": "«还没决定呢» — хараахан шийдээгүй байна. Төлөвлөгөөний тухай асуултад шийдвэр гаргаагүй гэж хариулж байна.",
+  "order_index": 8,
+  "id": "hsk3-l17-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "cloze",
+  "question": "我不太舒服，我想去医院________。",
+  "options": [
+   "检检查查",
+   "检查一检查",
+   "检查检查",
+   "查检查检"
+  ],
+  "correct_answer": "检查检查",
+  "explanation": "Хоёр үетэй үйл үг ABAB хэлбэрээр давхарлагдана: 检查 → 检查检查 (нэг шалгуулж үзэх). Дунд нь «一» оруулахгүй.",
+  "order_index": 9,
+  "id": "hsk3-l17-q09",
+  "skillTags": [
+   "grammar",
+   "verb-reduplication"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "周太太：为了健康，我真应该多________了。",
+  "options": [
+   "锻炼锻炼",
+   "锻锻炼炼",
+   "锻炼一锻炼",
+   "炼锻炼锻"
+  ],
+  "correct_answer": "锻炼锻炼",
+  "explanation": "Яриа 3: «多锻炼锻炼» — AB → ABAB. «жаахан ч гэсэн дасгал хөдөлгөөн хийх» гэсэн утга.",
+  "order_index": 10,
+  "id": "hsk3-l17-q10",
+  "skillTags": [
+   "grammar",
+   "verb-reduplication"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "他有很多爱好，唱歌、画画儿、踢足球，什么________会。",
+  "options": [
+   "就",
+   "才",
+   "再",
+   "都"
+  ],
+  "correct_answer": "都",
+  "explanation": "«什么都会» — юуг ч чадна. Асуух үгийг «бүгд» гэсэн утгаар хэрэглэхэд ард нь «都» заавал орно.",
+  "order_index": 11,
+  "id": "hsk3-l17-q11",
+  "skillTags": [
+   "grammar",
+   "interrogative-pronoun-dou"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "最近我觉得________都不舒服，你带我去医院检查检查吧。",
+  "options": [
+   "谁",
+   "哪儿",
+   "什么",
+   "怎么"
+  ],
+  "correct_answer": "哪儿",
+  "explanation": "«哪儿都不舒服» — биеийн хаа сайгүй эвгүй байна. Биеийн хэсэг (газар)-ийг «哪儿» орлоно.",
+  "order_index": 12,
+  "id": "hsk3-l17-q12",
+  "skillTags": [
+   "grammar",
+   "interrogative-pronoun-dou"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：小丽为什么要请假？请几天假？",
+  "options": [
+   "她生病了，想请两天假",
+   "她的一个老朋友结婚，想请三天假",
+   "她要去旅游，想请三天假",
+   "她的一个老朋友结婚，想请两天假"
+  ],
+  "correct_answer": "她的一个老朋友结婚，想请三天假",
+  "explanation": "Сяо Ли «我的一个老朋友结婚» гэж хэлээд, «一共想请几天假？» гэсэн асуултад «三天» гэж хариулсан. «两年» нь найзтайгаа уулзаагүй хугацаа.",
+  "order_index": 13,
+  "id": "hsk3-l17-q13",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：那个高高的男人现在是小丽的什么人？",
+  "options": [
+   "邻居",
+   "大学同学",
+   "丈夫",
+   "经理"
+  ],
+  "correct_answer": "丈夫",
+  "explanation": "«我们过去是邻居，后来是大学同学» — энэ нь өнгөрсөн; төгсгөлд «现在他是我丈夫» гэсэн.",
+  "order_index": 14,
+  "id": "hsk3-l17-q14",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：小丽的丈夫有什么爱好？",
+  "options": [
+   "唱歌、跳舞、游泳",
+   "游泳、爬山、打篮球",
+   "画画儿、看电影、踢足球",
+   "唱歌、画画儿、踢足球"
+  ],
+  "correct_answer": "唱歌、画画儿、踢足球",
+  "explanation": "Сяо Ли «他有很多爱好，唱歌、画画儿、踢足球，什么都会» гэж хэлсэн.",
+  "order_index": 15,
+  "id": "hsk3-l17-q15",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：周太太为什么想去医院？",
+  "options": [
+   "她最近觉得哪儿都不舒服",
+   "她跑步的时候腿疼了",
+   "她吃得太饱了",
+   "她想去看朋友"
+  ],
+  "correct_answer": "她最近觉得哪儿都不舒服",
+  "explanation": "Жоу хатагтай «最近我觉得哪儿都不舒服，你带我去医院检查检查吧» гэж хэлсэн.",
+  "order_index": 16,
+  "id": "hsk3-l17-q16",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：为了健康，周太太有什么决定？",
+  "options": [
+   "明天去医院检查检查",
+   "从明天起每天去游泳",
+   "从明天起每天去长跑",
+   "每天吃饱了就睡"
+  ],
+  "correct_answer": "从明天起每天去长跑",
+  "explanation": "«从明天起，我决定每天去长跑» — маргаашнаас эхлэн өдөр бүр холын зайн гүйлт хийхээр шийдсэн. «吃饱了就睡» нь түүний муу зуршил.",
+  "order_index": 17,
+  "id": "hsk3-l17-q17",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文4：什么时间运动最好？",
+  "options": [
+   "早上9点，冬天要再早一些",
+   "晚上9点，冬天要再晚一些",
+   "早上9点，冬天要再晚一些",
+   "刚吃饱的时候"
+  ],
+  "correct_answer": "早上9点，冬天要再晚一些",
+  "explanation": "«一般来说，早上9点是最好的时间，冬天要再晚一些» — өвөл арай ХОЖУУ.",
+  "order_index": 18,
+  "id": "hsk3-l17-q18",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Биднийг танилцуулаач» — аль нь зөв бэ?",
+  "options": [
+   "你介绍我们认认识识吧。",
+   "你介绍我们认识一认识吧。",
+   "你认识认识介绍我们吧。",
+   "你介绍我们认识认识吧。"
+  ],
+  "correct_answer": "你介绍我们认识认识吧。",
+  "explanation": "Хоёр үетэй 认识 → 认识认识 (ABAB); дунд нь «一» оруулахгүй, AABB болгохгүй.",
+  "order_index": 19,
+  "id": "hsk3-l17-q19",
+  "skillTags": [
+   "grammar",
+   "verb-reduplication"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«请你介绍自己。» — илүү эелдгээр аль нь вэ?",
+  "options": [
+   "请你介绍介绍自己。",
+   "请你介介绍绍自己。",
+   "请你介绍自己介绍。",
+   "请你介绍一介绍自己。"
+  ],
+  "correct_answer": "请你介绍介绍自己。",
+  "explanation": "Давхарлалт хүсэлтийг зөөлрүүлнэ: 介绍 → 介绍介绍, тусагдахуун (自己) ард нь (багшийн ном).",
+  "order_index": 20,
+  "id": "hsk3-l17-q20",
+  "skillTags": [
+   "grammar",
+   "verb-reduplication"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Сяо Ган юуг ч идэх дуртай» — аль нь зөв бэ?",
+  "options": [
+   "小刚喜欢吃什么都。",
+   "小刚什么都喜欢吃。",
+   "小刚什么喜欢吃都。",
+   "小刚都什么喜欢吃。"
+  ],
+  "correct_answer": "小刚什么都喜欢吃。",
+  "explanation": "Асуух үг + 都 үйл үгийн өмнө: 什么都喜欢吃.",
+  "order_index": 21,
+  "id": "hsk3-l17-q21",
+  "skillTags": [
+   "grammar",
+   "interrogative-pronoun-dou"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Үгийг зөв дараалалд оруул (дасгалын ном 38): 可以 / 都 / 怎么 / 我们 / 去 / 那儿",
+  "options": [
+   "我们都怎么去那儿可以。",
+   "我们怎么都去那儿可以。",
+   "我们怎么去那儿都可以。",
+   "我们去那儿怎么可以都。"
+  ],
+  "correct_answer": "我们怎么去那儿都可以。",
+  "explanation": "«怎么去那儿» нэг хэсэг, «都» нь «可以»-ийн өмнө — яаж ч очсон болно (дасгалын номын хариулт).",
+  "order_index": 22,
+  "id": "hsk3-l17-q22",
+  "skillTags": [
+   "grammar",
+   "interrogative-pronoun-dou"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Үгийг зөв дараалалд оруул (дасгалын ном 36): 去 / 哪儿 / 都 / 妻子 / 没 / 过",
+  "options": [
+   "妻子都没去过哪儿。",
+   "妻子哪儿没都去过。",
+   "哪儿妻子都没去过。",
+   "妻子哪儿都没去过。"
+  ],
+  "correct_answer": "妻子哪儿都没去过。",
+  "explanation": "Өгүүлэгдэхүүн + 哪儿 + 都 + 没 + үйл үг + 过 — хаашаа ч явж үзээгүй (дасгалын номын хариулт).",
+  "order_index": 23,
+  "id": "hsk3-l17-q23",
+  "skillTags": [
+   "grammar",
+   "interrogative-pronoun-dou"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "明天的会议非常重要，谁都不能迟到。 — «谁都不能迟到» ямар утгатай вэ?",
+  "options": [
+   "Хэн хоцрох вэ?",
+   "Хэн ч хоцорч болохгүй",
+   "Зарим хүн хоцорч болно",
+   "Бүгд хоцорно"
+  ],
+  "correct_answer": "Хэн ч хоцорч болохгүй",
+  "explanation": "«谁都 + 不…» — хэн ч …-гүй, үл хамаарах хүнгүй. Асуух утгагүй (дасгалын ном, сонсгол 6).",
+  "order_index": 24,
+  "id": "hsk3-l17-q24",
+  "skillTags": [
+   "grammar",
+   "interrogative-pronoun-dou"
+  ],
+  "difficulty": "medium"
+ }
+]

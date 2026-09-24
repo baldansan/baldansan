@@ -1,0 +1,458 @@
+[
+ {
+  "type": "cloze",
+  "question": "每天晚上，爸爸都要给女儿讲一个________。",
+  "options": [
+   "节目",
+   "故事",
+   "菜单",
+   "香蕉",
+   "盘子"
+  ],
+  "correct_answer": "故事",
+  "explanation": "«讲故事» — үлгэр ярих. «讲» үйл үгтэй зохицох, охиндоо орой болгон ярьж өгөх юм нь үлгэр.",
+  "order_index": 1,
+  "id": "hsk3-l14-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我们买几斤________吧，家里没有水果了。",
+  "options": [
+   "盘子",
+   "菜单",
+   "故事",
+   "香蕉",
+   "节目"
+  ],
+  "correct_answer": "香蕉",
+  "explanation": "«家里没有水果了» — гэрт жимс дууссан тул жимс болох 香蕉 (гадил)-г 斤-ээр жинлэж авна.",
+  "order_index": 2,
+  "id": "hsk3-l14-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "跟朋友一起喝着饮料看电视________，是最快乐的事。",
+  "options": [
+   "节目",
+   "香蕉",
+   "盘子",
+   "故事",
+   "菜单"
+  ],
+  "correct_answer": "节目",
+  "explanation": "«看电视节目» — телевизийн нэвтрүүлэг үзэх. 电视-тэй хамт хэрэглэгддэг нь 节目.",
+  "order_index": 3,
+  "id": "hsk3-l14-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "服务员，请拿________过来，我们点菜。",
+  "options": [
+   "香蕉",
+   "故事",
+   "节目",
+   "盘子",
+   "菜单"
+  ],
+  "correct_answer": "菜单",
+  "explanation": "«点菜» (хоол захиалах) гэж байгаа тул зөөгчөөс хоолны цэс (菜单) авчрахыг хүсэж байна.",
+  "order_index": 4,
+  "id": "hsk3-l14-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "A：听！是谁在外边说话？ B：没有________啊。",
+  "options": [
+   "打扫",
+   "像",
+   "声音",
+   "干净",
+   "简单"
+  ],
+  "correct_answer": "声音",
+  "explanation": "A «听！…说话» гэж чимээ сонссон гэхэд B «没有声音啊» — ямар ч чимээ алга гэж хариулж байна.",
+  "order_index": 5,
+  "id": "hsk3-l14-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "A：你觉得洗衣服很________，可我觉得很难。 B：那你觉得做什么不难呢？",
+  "options": [
+   "干净",
+   "简单",
+   "打扫",
+   "声音",
+   "像"
+  ],
+  "correct_answer": "简单",
+  "explanation": "«可我觉得很难» (харин би хэцүү гэж боддог) — эсрэг утгатай үг хэрэгтэй: 简单 (амархан).",
+  "order_index": 6,
+  "id": "hsk3-l14-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "A：那么多衣服，终于洗完了！ B：都洗________了吗？",
+  "options": [
+   "像",
+   "声音",
+   "简单",
+   "打扫",
+   "干净"
+  ],
+  "correct_answer": "干净",
+  "explanation": "«洗干净» — угаагаад цэвэрхэн болгох (үр дүнгийн нөхбөр). B хувцас цэвэрхэн болсон эсэхийг асууж байна.",
+  "order_index": 7,
+  "id": "hsk3-l14-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "A：这个地方真美！ B：是啊，________画儿一样。",
+  "options": [
+   "像",
+   "打扫",
+   "干净",
+   "简单",
+   "声音"
+  ],
+  "correct_answer": "像",
+  "explanation": "«像……一样» — …шиг. «像画儿一样» — яг л зураг шиг (сайхан).",
+  "order_index": 8,
+  "id": "hsk3-l14-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "A：妈妈，让我再看一会儿这个节目吧。 B：好吧。你把这个节目________就去写作业。",
+  "options": [
+   "看",
+   "看完",
+   "完看",
+   "看过来"
+  ],
+  "correct_answer": "看完",
+  "explanation": "«把» өгүүлбэрт үйл үгийн ард үр дүн хэрэгтэй: «看完» — үзэж дуусгаад л даалгавраа хийнэ.",
+  "order_index": 9,
+  "id": "hsk3-l14-q09",
+  "skillTags": [
+   "grammar",
+   "ba-sentence"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "请大家把书________。",
+  "options": [
+   "出来拿",
+   "出拿来",
+   "拿",
+   "拿出来"
+  ],
+  "correct_answer": "拿出来",
+  "explanation": "Номыг цүнхнээсээ гаргах — «拿出来» (үйл үг + чиглэлийн нөхбөр). Дасгалын номын 36-р асуултын албан хариулт.",
+  "order_index": 10,
+  "id": "hsk3-l14-q10",
+  "skillTags": [
+   "grammar",
+   "ba-sentence"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "昨天我先去了银行，________去了超市。",
+  "options": [
+   "再",
+   "把",
+   "又",
+   "先"
+  ],
+  "correct_answer": "又",
+  "explanation": "«昨天…去了» — аль хэдийн болсон үйлдэл тул «又». «再» нь хараахан болоогүй үйлдэлд.",
+  "order_index": 11,
+  "id": "hsk3-l14-q11",
+  "skillTags": [
+   "grammar",
+   "action-sequence"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "游泳以前应该先吃点儿饭，________休息半个小时。",
+  "options": [
+   "然后",
+   "又",
+   "先",
+   "把"
+  ],
+  "correct_answer": "然后",
+  "explanation": "«先……，然后……» — эхлээд хоол идээд, тэгээд амрах. «应该» — зөвлөгөө тул «又» таарахгүй. Дасгалын номын 26-р асуултын албан хариулт.",
+  "order_index": 12,
+  "id": "hsk3-l14-q12",
+  "skillTags": [
+   "grammar",
+   "action-sequence"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：周太太让周明做什么？",
+  "options": [
+   "打扫房间，然后看电视",
+   "先把茶和杯子放好，然后把冰箱里的西瓜拿出来",
+   "让孩子们把房间打扫干净",
+   "先把空调打开，然后去买西瓜"
+  ],
+  "correct_answer": "先把茶和杯子放好，然后把冰箱里的西瓜拿出来",
+  "explanation": "Жоу хатагтай «先把茶和杯子放好，然后把冰箱里的西瓜拿出来» гэж хэлсэн. Өрөө цэвэрлэхийг Жоу Мин хүүхдүүддээ даалгасан.",
+  "order_index": 13,
+  "id": "hsk3-l14-q13",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：小刚为什么没接电话？",
+  "options": [
+   "他在看电视节目",
+   "他在公司开会",
+   "他的手机不在身边",
+   "他刚洗了个澡，没听见"
+  ],
+  "correct_answer": "他刚洗了个澡，没听见",
+  "explanation": "Сяо Ган «对不起，我刚洗了个澡，没听见» — саяхан усанд орж байсан болохоор сонсоогүй гэж хэлсэн.",
+  "order_index": 14,
+  "id": "hsk3-l14-q14",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：同事为什么给小刚打电话？",
+  "options": [
+   "想问问公司里的一些事情",
+   "想让他一起看电视节目",
+   "想请他来家里吃西瓜",
+   "想告诉他客人要来了"
+  ],
+  "correct_answer": "想问问公司里的一些事情",
+  "explanation": "Хамтран ажиллагч «我想问问你公司里的一些事情» — компанийн зарим асуудлыг асуух гэсэн юм гэж хэлсэн.",
+  "order_index": 15,
+  "id": "hsk3-l14-q15",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：小明和同学打算做什么？",
+  "options": [
+   "在家看电视节目",
+   "去大山家听故事",
+   "坐在外边一边看月亮一边吃东西",
+   "在外边打扫房间"
+  ],
+  "correct_answer": "坐在外边一边看月亮一边吃东西",
+  "explanation": "Сяо Мин «我们坐在外边一边看月亮一边吃东西，怎么样？» гэж санал болгож, ангийн найз нь зөвшөөрсөн.",
+  "order_index": 16,
+  "id": "hsk3-l14-q16",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文4：怎么做水果饭？",
+  "options": [
+   "先把水果放进去，然后再做米饭",
+   "先买新鲜的水果，然后去饭馆",
+   "把米饭和水果一起放进冰箱",
+   "先把米饭做好，然后再把新鲜的水果放进去"
+  ],
+  "correct_answer": "先把米饭做好，然后再把新鲜的水果放进去",
+  "explanation": "Бичвэрт «先把米饭做好，然后再把一块块新鲜的水果放进去» — эхлээд будаагаа болгоод, дараа нь жимсээ хийнэ гэсэн.",
+  "order_index": 17,
+  "id": "hsk3-l14-q17",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文4：为什么要多吃新鲜水果？",
+  "options": [
+   "因为水果饭很好吃",
+   "因为多吃新鲜水果对身体好",
+   "因为饭馆的菜单上有水果饭",
+   "因为做水果饭很简单"
+  ],
+  "correct_answer": "因为多吃新鲜水果对身体好",
+  "explanation": "Бичвэрийн төгсгөлд «多吃新鲜水果对身体好» — шинэхэн жимс их идэх нь биед сайн гэсэн.",
+  "order_index": 18,
+  "id": "hsk3-l14-q18",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Би хувцсаа цэвэрхэн угаачихлаа» — аль нь зөв бэ?",
+  "options": [
+   "我把衣服洗了干净。",
+   "我洗干净把衣服了。",
+   "我把衣服洗干净了。",
+   "我把衣服干净洗了。"
+  ],
+  "correct_answer": "我把衣服洗干净了。",
+  "explanation": "«把衣服» үйл үгийн өмнө, үр дүнгийн нөхбөр «干净» үйл үгийн яг ард, «了» хамгийн ард.",
+  "order_index": 19,
+  "id": "hsk3-l14-q19",
+  "skillTags": [
+   "grammar",
+   "ba-sentence"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Жимсээ наашаа авчир» — аль нь зөв бэ?",
+  "options": [
+   "你把水果拿过去。",
+   "你拿过来把水果。",
+   "你把拿水果过来。",
+   "你把水果拿过来。"
+  ],
+  "correct_answer": "你把水果拿过来。",
+  "explanation": "Өгүүлэгч рүү (наашаа) авчрах тул «过来»; «把水果» нь үйл үгийн (拿) өмнө орно.",
+  "order_index": 20,
+  "id": "hsk3-l14-q20",
+  "skillTags": [
+   "grammar",
+   "ba-sentence"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Ээж хоолоо хийж амжаагүй байна» — аль нь зөв бэ?",
+  "options": [
+   "妈妈还没把饭做好呢。",
+   "妈妈把饭还没做好呢。",
+   "妈妈还把饭没做好呢。",
+   "妈妈把饭做还没好呢。"
+  ],
+  "correct_answer": "妈妈还没把饭做好呢。",
+  "explanation": "«把» өгүүлбэрийн үгүйсгэлд «还没» нь «把»-ийн ӨМНӨ орно: 还没把饭做好.",
+  "order_index": 21,
+  "id": "hsk3-l14-q21",
+  "skillTags": [
+   "grammar",
+   "ba-sentence"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Өнөөдөр эхлээд супермаркет орчихоод дараа нь банк явна» — аль нь зөв бэ?",
+  "options": [
+   "今天我要先去超市，又去银行。",
+   "今天我要先去超市，再去银行。",
+   "今天先我要去超市，再去银行。",
+   "今天我要去超市先，再去银行。"
+  ],
+  "correct_answer": "今天我要先去超市，再去银行。",
+  "explanation": "Хараахан болоогүй үйлдэл тул «再»; «先» нь өгүүлэгдэхүүний ард, үйл үгийн өмнө орно.",
+  "order_index": 22,
+  "id": "hsk3-l14-q22",
+  "skillTags": [
+   "grammar",
+   "action-sequence"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль өгүүлбэр зөв бэ?",
+  "options": [
+   "我先坐了一个小时公共汽车，再坐了一会儿地铁才到小刚家。",
+   "先我坐了一个小时公共汽车，又坐了一会儿地铁才到小刚家。",
+   "我先坐了一个小时公共汽车，又坐了一会儿地铁才到小刚家。",
+   "我坐了一个小时公共汽车先，又坐了一会儿地铁才到小刚家。"
+  ],
+  "correct_answer": "我先坐了一个小时公共汽车，又坐了一会儿地铁才到小刚家。",
+  "explanation": "Аль хэдийн болсон үйлдэл (坐了) тул «又»; «先» нь «我»-ийн ард, үйл үгийн өмнө.",
+  "order_index": 23,
+  "id": "hsk3-l14-q23",
+  "skillTags": [
+   "grammar",
+   "action-sequence"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Үгийг зөв дараалалд оруул: 再 / 教 / 读音 / 先 / 汉字 / 教 / 老师",
+  "options": [
+   "老师先教读音再教汉字。",
+   "老师再教读音先教汉字。",
+   "先老师教读音再教汉字。",
+   "老师教读音先再教汉字。"
+  ],
+  "correct_answer": "老师先教读音再教汉字。",
+  "explanation": "Эхний үйлдлийн өмнө «先», дараагийнхын өмнө «再»; хоёулаа өгүүлэгдэхүүний (老师) ард. Дасгалын номын 39-р асуултын албан хариулт.",
+  "order_index": 24,
+  "id": "hsk3-l14-q24",
+  "skillTags": [
+   "grammar",
+   "action-sequence"
+  ],
+  "difficulty": "hard"
+ }
+]

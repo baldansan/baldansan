@@ -1,0 +1,458 @@
+[
+ {
+  "type": "cloze",
+  "question": "这条________一点儿也不贵，买吧。",
+  "options": [
+   "饮料",
+   "裤子",
+   "新鲜",
+   "记得",
+   "小心"
+  ],
+  "correct_answer": "裤子",
+  "explanation": "«这条» — 条 нь өмд шиг урт нарийн зүйлийн тоо нэр, «一点儿也不贵，买吧» гэж худалдан авах юмны тухай ярьж байгаа тул «裤子» (өмд).",
+  "order_index": 1,
+  "id": "hsk3-l03-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "你穿昨天新买的那件________吧。",
+  "options": [
+   "新鲜",
+   "饮料",
+   "衬衫",
+   "爬山",
+   "甜"
+  ],
+  "correct_answer": "衬衫",
+  "explanation": "«穿» (өмсөх) + «那件» — 件 нь цамц, дээд хувцасны тоо нэр. Өмсөх юм нь зөвхөн «衬衫» (цамц).",
+  "order_index": 2,
+  "id": "hsk3-l03-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我不喜欢南方，太热了，不________。",
+  "options": [
+   "裤子",
+   "饮料",
+   "元",
+   "爬山",
+   "舒服"
+  ],
+  "correct_answer": "舒服",
+  "explanation": "Хэт халуун газар «不舒服» — тухгүй, эвгүй. Бусад үг «不»-ийн ард утга гаргахгүй.",
+  "order_index": 3,
+  "id": "hsk3-l03-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "A：我们看过这个电影，你________是什么时候吗？ B：去年8月。",
+  "options": [
+   "小心",
+   "放",
+   "只",
+   "爬山",
+   "记得"
+  ],
+  "correct_answer": "记得",
+  "explanation": "B «Өнгөрсөн 8-р сард» гэж цагийг хэлж байгаа тул A «хэзээ байсныг санаж байна уу?» гэж асуусан — «记得» (санах).",
+  "order_index": 4,
+  "id": "hsk3-l03-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "A：你跟我一起出去走走吧。 B：我现在________想睡觉。",
+  "options": [
+   "只",
+   "记得",
+   "小心",
+   "放",
+   "甜"
+  ],
+  "correct_answer": "只",
+  "explanation": "B гадагшаа гарахаас татгалзаж «одоо ЗӨВХӨН унтмаар байна» гэж байна — «只» (зөвхөн) үйл үгийн өмнө орно.",
+  "order_index": 5,
+  "id": "hsk3-l03-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "A：您慢走，路上________点儿。 B：谢谢你，再见。",
+  "options": [
+   "记得",
+   "放",
+   "小心",
+   "爬山",
+   "元"
+  ],
+  "correct_answer": "小心",
+  "explanation": "Үдэж гаргахдаа «路上小心点儿» — «замдаа болгоомжтой яваарай» гэж сануулна.",
+  "order_index": 6,
+  "id": "hsk3-l03-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "A：上个周末你去哪儿了？ B：我跟朋友去________了。",
+  "options": [
+   "小心",
+   "记得",
+   "只",
+   "新鲜",
+   "爬山"
+  ],
+  "correct_answer": "爬山",
+  "explanation": "«去 + үйл» — «найзтайгаа ууланд авирахаар явсан». Бусад нь «去»-ийн ард үйл ажиллагаа болохгүй.",
+  "order_index": 7,
+  "id": "hsk3-l03-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "你看，这上面写着“西瓜不________不要钱”。",
+  "options": [
+   "甜",
+   "放",
+   "记得",
+   "爬山",
+   "元"
+  ],
+  "correct_answer": "甜",
+  "explanation": "Тарвасны гол чанар — чихэрлэг байх. «西瓜不甜不要钱» — «чихэрлэг биш бол мөнгө авахгүй».",
+  "order_index": 8,
+  "id": "hsk3-l03-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "你喜欢看书________玩儿电子游戏？",
+  "options": [
+   "或者",
+   "和",
+   "还是",
+   "也"
+  ],
+  "correct_answer": "还是",
+  "explanation": "Өгүүлбэр асуулт («？») — хоёрын аль нь вэ гэж асууж байгаа тул «还是». «或者» өгүүлэх өгүүлбэрт орно.",
+  "order_index": 9,
+  "id": "hsk3-l03-q09",
+  "skillTags": [
+   "grammar",
+   "haishi-vs-huozhe"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我们出去吧，买东西________看电影。",
+  "options": [
+   "或者",
+   "还是",
+   "跟",
+   "就"
+  ],
+  "correct_answer": "或者",
+  "explanation": "Асуулт биш, санал болгож өгүүлж байна («出去吧») — «дэлгүүр хэсэх юм уу, кино үзэх» тул «或者».",
+  "order_index": 10,
+  "id": "hsk3-l03-q10",
+  "skillTags": [
+   "grammar",
+   "haishi-vs-huozhe"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我的电脑旁边没放着________。",
+  "options": [
+   "一杯咖啡",
+   "这杯咖啡",
+   "咖啡",
+   "两杯咖啡"
+  ],
+  "correct_answer": "咖啡",
+  "explanation": "Оршихуйн өгүүлбэрийн үгүйсгэлд («没V着») нэр үгийн өмнө тоо + тоо нэр орохгүй — зөвхөн «咖啡».",
+  "order_index": 11,
+  "id": "hsk3-l03-q11",
+  "skillTags": [
+   "grammar",
+   "existence-location-v-zhe"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "cloze",
+  "question": "你穿得那么少，________感冒的。",
+  "options": [
+   "会",
+   "能",
+   "可以",
+   "想"
+  ],
+  "correct_answer": "会",
+  "explanation": "Нимгэн хувцасласнаас болж ханиад хүрэх МАГАДЛАЛ — «会…的» («ханиад хүрнэ шүү»).",
+  "order_index": 12,
+  "id": "hsk3-l03-q12",
+  "skillTags": [
+   "grammar",
+   "hui-possibility"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：明天小刚要去做什么？",
+  "options": [
+   "去商场",
+   "在家看电视",
+   "去看电影",
+   "去爬山"
+  ],
+  "correct_answer": "去爬山",
+  "explanation": "Сяоган «我们明天要去爬山» гэж хэлсэн — маргааш ууланд авирахаар явна.",
+  "order_index": 13,
+  "id": "hsk3-l03-q13",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：小丽为什么不去爬山？",
+  "options": [
+   "她有事",
+   "明天是阴天",
+   "她脚疼",
+   "她不喜欢爬山"
+  ],
+  "correct_answer": "她有事",
+  "explanation": "Сяоли «我不去，我有事» гэж хариулсан — ажилтай учраас явахгүй.",
+  "order_index": 14,
+  "id": "hsk3-l03-q14",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：周明为什么不让太太买那条裤子？",
+  "options": [
+   "裤子太贵了",
+   "他记得太太已经有两条这样的裤子了",
+   "裤子的颜色不好看",
+   "裤子太大了"
+  ],
+  "correct_answer": "他记得太太已经有两条这样的裤子了",
+  "explanation": "Жоу Мин «我记得你已经有两条这样的裤子了» гэсэн — эхнэрт нь ийм өмд аль хэдийн хоёр байгаа.",
+  "order_index": 15,
+  "id": "hsk3-l03-q15",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：周太太买的衬衫多少钱？",
+  "options": [
+   "230元",
+   "302元",
+   "320元",
+   "20元"
+  ],
+  "correct_answer": "320元",
+  "explanation": "Жоу Мин «这上面写着320元» гэж шошгыг уншсан — цамц 320 юань.",
+  "order_index": 16,
+  "id": "hsk3-l03-q16",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：周明和太太买了什么水果？",
+  "options": [
+   "一个大西瓜和几个苹果",
+   "只买了几个苹果",
+   "一个小西瓜",
+   "几个西瓜"
+  ],
+  "correct_answer": "一个大西瓜和几个苹果",
+  "explanation": "Тэд «买一个大点儿的» (томхон тарвас) аваад «再买几个苹果» гэж бас хэдэн алим авсан.",
+  "order_index": 17,
+  "id": "hsk3-l03-q17",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文4：小丽为什么喜欢喝热茶？",
+  "options": [
+   "热茶很便宜",
+   "天冷了或者工作累了的时候，喝杯热茶会很舒服",
+   "她不喜欢喝咖啡",
+   "医生让她多喝茶"
+  ],
+  "correct_answer": "天冷了或者工作累了的时候，喝杯热茶会很舒服",
+  "explanation": "Сяоли «天冷了或者工作累了的时候，喝杯热茶会很舒服» гэж шалтгаанаа хэлсэн.",
+  "order_index": 18,
+  "id": "hsk3-l03-q18",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Ширээн дээр нэг аяга кофе тавиатай байна» — аль нь зөв бэ?",
+  "options": [
+   "一杯咖啡放着桌子上。",
+   "桌子上放着一杯咖啡。",
+   "桌子上放着这杯咖啡。",
+   "桌子上一杯咖啡放着。"
+  ],
+  "correct_answer": "桌子上放着一杯咖啡。",
+  "explanation": "Оршихуйн өгүүлбэр: Байршил (桌子上) + 放着 + тодорхой бус NP (一杯咖啡). «这杯» тодорхой тул болохгүй.",
+  "order_index": 19,
+  "id": "hsk3-l03-q19",
+  "skillTags": [
+   "grammar",
+   "existence-location-v-zhe"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль өгүүлбэрт «或者» зөв хэрэглэгдсэн бэ?",
+  "options": [
+   "你喝茶或者咖啡？",
+   "我不知道他去或者不去。",
+   "你是学生或者老师？",
+   "茶或者咖啡都可以。"
+  ],
+  "correct_answer": "茶或者咖啡都可以。",
+  "explanation": "«或者» зөвхөн өгүүлэх өгүүлбэрт: «цай ч юм уу, кофе ч болно». Бусад нь асуулт эсвэл дотроо асуулттай тул «还是» хэрэгтэй.",
+  "order_index": 20,
+  "id": "hsk3-l03-q20",
+  "skillTags": [
+   "grammar",
+   "haishi-vs-huozhe"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "他的生日是10月________11月，我不记得了。",
+  "options": [
+   "还是",
+   "或者",
+   "和",
+   "都"
+  ],
+  "correct_answer": "还是",
+  "explanation": "Өгүүлэх өгүүлбэр боловч «10-р сар уу, 11-р сар уу?» гэсэн асуулт хэлбэрийн хэсэгтэй («我不记得了») — ийм үед зөвхөн «还是».",
+  "order_index": 21,
+  "id": "hsk3-l03-q21",
+  "skillTags": [
+   "grammar",
+   "haishi-vs-huozhe"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Манай дээд давхарт багш амьдардаггүй» — аль нь зөв бэ?",
+  "options": [
+   "我家楼上没住着一个老师。",
+   "我家楼上不住着老师。",
+   "我家楼上没住着老师。",
+   "我家楼上住着没老师。"
+  ],
+  "correct_answer": "我家楼上没住着老师。",
+  "explanation": "Оршихуйн өгүүлбэрийн үгүйсгэл: Байршил + 没V着 + NP, NP-ийн өмнө тоо нэр (一个) орохгүй.",
+  "order_index": 22,
+  "id": "hsk3-l03-q22",
+  "skillTags": [
+   "grammar",
+   "existence-location-v-zhe"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«喝杯热茶会很舒服» — энд «会» ямар утгатай вэ?",
+  "options": [
+   "магадлал (…байх болно)",
+   "чадвар (…чадна)",
+   "зөвшөөрөл (…болно, зөвшөөрнө)",
+   "хүсэл (…хүсч байна)"
+  ],
+  "correct_answer": "магадлал (…байх болно)",
+  "explanation": "Халуун цай уувал тухтай БАЙХ БОЛНО гэж таамаглаж байна — магадлалын «会». «我会说汉语» дахь чадварын 会-аас ялгаатай.",
+  "order_index": 23,
+  "id": "hsk3-l03-q23",
+  "skillTags": [
+   "grammar",
+   "hui-possibility"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Байнга чихэрлэг юм идвэл таргална» — аль нь зөв бэ?",
+  "options": [
+   "一直吃甜东西胖会。",
+   "会一直吃甜东西胖。",
+   "一直会吃甜东西胖。",
+   "一直吃甜东西会胖。"
+  ],
+  "correct_answer": "一直吃甜东西会胖。",
+  "explanation": "«会» нь үр дагаврыг заах үйл үг/тэмдэг нэрийн (胖) ЯГ ӨМНӨ орно: 一直吃甜东西 + 会胖.",
+  "order_index": 24,
+  "id": "hsk3-l03-q24",
+  "skillTags": [
+   "grammar",
+   "hui-possibility"
+  ],
+  "difficulty": "medium"
+ }
+]

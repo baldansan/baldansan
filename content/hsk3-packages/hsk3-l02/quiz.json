@@ -1,0 +1,466 @@
+[
+ {
+  "type": "cloze",
+  "question": "这是你的________吗？真大！",
+  "options": [
+   "其实",
+   "疼",
+   "办公室",
+   "瘦",
+   "拿"
+  ],
+  "correct_answer": "办公室",
+  "explanation": "«你的办公室» — чиний оффис. «真大» (ёстой том) гэж өрөө, байрыг тодорхойлж байгаа тул газрын нэр хэрэгтэй.",
+  "order_index": 1,
+  "id": "hsk3-l02-q01",
+  "skillTags": [
+   "vocabulary",
+   "hsk3-l02-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "上山________下山难，你不知道？",
+  "options": [
+   "胖",
+   "树",
+   "经理",
+   "容易",
+   "伞"
+  ],
+  "correct_answer": "容易",
+  "explanation": "«容易» (амархан) ↔ «难» (хэцүү): уул өгсөх амархан, уруудах хэцүү.",
+  "order_index": 2,
+  "id": "hsk3-l02-q02",
+  "skillTags": [
+   "vocabulary",
+   "hsk3-l02-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "你看，小狗在________下做什么呢？",
+  "options": [
+   "树",
+   "瘦",
+   "其实",
+   "疼",
+   "拿"
+  ],
+  "correct_answer": "树",
+  "explanation": "«树下» — модны доор. Байршил заах нэр үг зөвхөн «树» байна.",
+  "order_index": 3,
+  "id": "hsk3-l02-q03",
+  "skillTags": [
+   "vocabulary",
+   "hsk3-l02-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我太________了，不能吃那么多饭。",
+  "options": [
+   "树",
+   "辆",
+   "胖",
+   "伞",
+   "办公室"
+  ],
+  "correct_answer": "胖",
+  "explanation": "«太胖了» — хэт тарган болсон тул их хоол идэж болохгүй.",
+  "order_index": 4,
+  "id": "hsk3-l02-q04",
+  "skillTags": [
+   "vocabulary",
+   "hsk3-l02-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "A：下雨了！我没带________，怎么办？ B：去商店买一把吧。",
+  "options": [
+   "腿",
+   "楼",
+   "经理",
+   "容易",
+   "伞"
+  ],
+  "correct_answer": "伞",
+  "explanation": "Бороо орохоор «伞» (шүхэр) хэрэгтэй; «一把» нь шүхрийн тоо ногдол үг.",
+  "order_index": 5,
+  "id": "hsk3-l02-q05",
+  "skillTags": [
+   "vocabulary",
+   "hsk3-l02-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "A：我想买这________车。 B：太贵了，你有那么多钱吗？",
+  "options": [
+   "把",
+   "辆",
+   "楼",
+   "其实",
+   "瘦"
+  ],
+  "correct_answer": "辆",
+  "explanation": "Машин, унааны тоо ногдол үг — «辆» (一辆车). «把» бол бариултай зүйлд (一把伞).",
+  "order_index": 6,
+  "id": "hsk3-l02-q06",
+  "skillTags": [
+   "vocabulary",
+   "hsk3-l02-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "昨天走路走得太多了，左边这条________有点儿疼。",
+  "options": [
+   "树",
+   "伞",
+   "腿",
+   "经理",
+   "办公室"
+  ],
+  "correct_answer": "腿",
+  "explanation": "Их алхсан болохоор «腿» (хөл) өвдөнө; «这条腿» — «条» нь хөлийн тоо ногдол үг.",
+  "order_index": 7,
+  "id": "hsk3-l02-q07",
+  "skillTags": [
+   "vocabulary",
+   "hsk3-l02-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "A：你真爱看书，买了这么多！ B：________我一点儿也不喜欢看书，这是给我弟弟买的。",
+  "options": [
+   "容易",
+   "胖",
+   "拿",
+   "辆",
+   "其实"
+  ],
+  "correct_answer": "其实",
+  "explanation": "«其实» (үнэндээ) — нөгөө хүний бодсоноос өөр бодит байдлыг хэлэхэд хэрэглэнэ.",
+  "order_index": 8,
+  "id": "hsk3-l02-q08",
+  "skillTags": [
+   "vocabulary",
+   "hsk3-l02-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "你怎么还没________？我都在楼下等你半小时了。",
+  "options": [
+   "下去",
+   "上来",
+   "下来",
+   "上去"
+  ],
+  "correct_answer": "下来",
+  "explanation": "Өгүүлэгч доод давхарт (楼下) байгаа тул нөгөө хүн өгүүлэгч рүү бууж ирнэ — «下来».",
+  "order_index": 9,
+  "id": "hsk3-l02-q09",
+  "skillTags": [
+   "grammar",
+   "directional-complement"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "已经10点半了，快点儿________，别睡了。",
+  "options": [
+   "起去",
+   "上去",
+   "进去",
+   "起来"
+  ],
+  "correct_answer": "起来",
+  "explanation": "Орноосоо босох — «起来». «起去» гэж хэлдэггүй.",
+  "order_index": 10,
+  "id": "hsk3-l02-q10",
+  "skillTags": [
+   "grammar",
+   "directional-complement"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "A：你什么时候走？ B：他来了________。",
+  "options": [
+   "就我走",
+   "我就走",
+   "我走就",
+   "走我就"
+  ],
+  "correct_answer": "我就走",
+  "explanation": "«V1了…就V2»: хоёр дахь өгүүлэгдэхүүн (我) «就»-ийн өмнө, «就» нь үйл үгийн (走) өмнө орно.",
+  "order_index": 11,
+  "id": "hsk3-l02-q11",
+  "skillTags": [
+   "grammar",
+   "le-jiu-sequence"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "A：我怎么这么累啊？ B：你今天爬山爬得那么快，________？",
+  "options": [
+   "能累吗",
+   "不能累吗",
+   "能不累吗",
+   "能不累了"
+  ],
+  "correct_answer": "能不累吗",
+  "explanation": "«能不累吗？» — «ядрахгүй яах вэ дээ» (= мэдээж ядарна). Эсрэг асуултад дунд нь үгүйсгэл байвал утга нь батлах.",
+  "order_index": 12,
+  "id": "hsk3-l02-q12",
+  "skillTags": [
+   "grammar",
+   "rhetorical-neng-ma"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：小丽现在怎么了？",
+  "options": [
+   "她头疼",
+   "她腿也疼，脚也疼",
+   "她没带伞",
+   "她太胖了"
+  ],
+  "correct_answer": "她腿也疼，脚也疼",
+  "explanation": "Уулаас буух замд Сяоли «我现在腿也疼，脚也疼» гэж хэлсэн.",
+  "order_index": 13,
+  "id": "hsk3-l02-q13",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：周经理去哪儿了？什么时候回来？",
+  "options": [
+   "回家去了，下午回来",
+   "在办公室，晚上回来",
+   "出去办事了，下午回来",
+   "出去办事了，明天回来"
+  ],
+  "correct_answer": "出去办事了，下午回来",
+  "explanation": "Нарийн бичгийн дарга «他出去办事了，下午回来» гэж хариулсан.",
+  "order_index": 14,
+  "id": "hsk3-l02-q14",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：小丽怎么回去？",
+  "options": [
+   "小刚送她回去",
+   "叫辆出租车回去",
+   "坐公共汽车回去",
+   "走路回去"
+  ],
+  "correct_answer": "叫辆出租车回去",
+  "explanation": "Сяоли «我出去叫辆出租车就行了» гэж хэлсэн — такси бариад харина.",
+  "order_index": 15,
+  "id": "hsk3-l02-q15",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：小刚上楼去做什么？",
+  "options": [
+   "给小丽拿把伞",
+   "给周经理打电话",
+   "叫出租车",
+   "睡觉"
+  ],
+  "correct_answer": "给小丽拿把伞",
+  "explanation": "Сяоган «我上楼去给你拿把伞» гэж хэлсэн — бороо ширүүн тул Сяолид шүхэр авчирч өгөх гэж байна.",
+  "order_index": 16,
+  "id": "hsk3-l02-q16",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文4：周明说，周太太为什么这么胖？",
+  "options": [
+   "她每天都做饭",
+   "她不喜欢运动",
+   "她每天吃很多水果",
+   "她每天晚上吃了饭就睡觉，也不出去走走"
+  ],
+  "correct_answer": "她每天晚上吃了饭就睡觉，也不出去走走",
+  "explanation": "Жоу Мин «你每天晚上吃了饭就睡觉，也不出去走走，能不胖吗？» гэж хэлсэн.",
+  "order_index": 17,
+  "id": "hsk3-l02-q17",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文4：周太太说她每天都做什么运动？",
+  "options": [
+   "跑步",
+   "做饭",
+   "游泳",
+   "出去走走"
+  ],
+  "correct_answer": "做饭",
+  "explanation": "Жоу хатагтай «做饭啊» гэж хариулсан — хоол хийхийг л дасгал гэж бодож байгаа нь инээдтэй.",
+  "order_index": 18,
+  "id": "hsk3-l02-q18",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Багш анги руу орж ирлээ» — аль нь зөв бэ?",
+  "options": [
+   "老师进来教室了。",
+   "老师教室进来了。",
+   "老师进教室来了。",
+   "老师进了来教室。"
+  ],
+  "correct_answer": "老师进教室来了。",
+  "explanation": "教室 — газар. Газрын нэр объект нь үйл үг ба «来/去»-ийн ДУНД орно: 进教室来.",
+  "order_index": 19,
+  "id": "hsk3-l02-q19",
+  "skillTags": [
+   "grammar",
+   "directional-complement"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль өгүүлбэр БУРУУ вэ?",
+  "options": [
+   "明天要带作业来。",
+   "这次旅游，我想带去这本书。",
+   "朋友回家去了。",
+   "小狗下来楼了。"
+  ],
+  "correct_answer": "小狗下来楼了。",
+  "explanation": "楼 — газар тул «来»-ийн өмнө орох ёстой: 小狗下楼来了. Эд юм (作业, 书) бол өмнө ч, ард ч болно.",
+  "order_index": 20,
+  "id": "hsk3-l02-q20",
+  "skillTags": [
+   "grammar",
+   "directional-complement"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Түүнийг оффистоо ирмэгц би хэлье» — аль нь зөв бэ?",
+  "options": [
+   "他到了办公室就我告诉他。",
+   "他到了办公室我就告诉他。",
+   "我就他到了办公室告诉他。",
+   "他到办公室我告诉他就。"
+  ],
+  "correct_answer": "他到了办公室我就告诉他。",
+  "explanation": "Хоёр өгүүлэгдэхүүнтэй бол хоёр дахь нь (我) «就»-ийн өмнө орно: …我就告诉他.",
+  "order_index": 21,
+  "id": "hsk3-l02-q21",
+  "skillTags": [
+   "grammar",
+   "le-jiu-sequence"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Сяоган шүхрээ авмагцаа бууж ирнэ» — аль нь зөв бэ?",
+  "options": [
+   "小刚拿了伞下来就。",
+   "小刚就拿了伞下来。",
+   "小刚拿伞就了下来。",
+   "小刚拿了伞就下来。"
+  ],
+  "correct_answer": "小刚拿了伞就下来。",
+  "explanation": "«了» — эхний үйл үгийн (拿) ард, «就» — хоёр дахь үйл үгийн (下来) өмнө.",
+  "order_index": 22,
+  "id": "hsk3-l02-q22",
+  "skillTags": [
+   "grammar",
+   "le-jiu-sequence"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "你每天晚上吃了饭就睡觉，也不出去走走，能不胖吗？ — утга нь юу вэ?",
+  "options": [
+   "Заавал таргална",
+   "Таргалахгүй",
+   "«Таргалахгүй байж чадах уу?» гэж жинхэнэ асууж байна",
+   "Жингээ хасаж чадна"
+  ],
+  "correct_answer": "Заавал таргална",
+  "explanation": "«能不胖吗？» — «таргалахгүй яах вэ дээ». Дунд нь үгүйсгэл (不胖) тул утга нь батлах: заавал таргална.",
+  "order_index": 23,
+  "id": "hsk3-l02-q23",
+  "skillTags": [
+   "grammar",
+   "rhetorical-neng-ma"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "A：为什么我的汉语学得不好？ B：你不做作业，也不练习，能学好吗？ — B юу хэлэх гэсэн бэ?",
+  "options": [
+   "Сайн сурна",
+   "«Сайн сурч чадах уу?» гэж жинхэнэ асууж байна",
+   "Ингэвэл сайн сурч чадахгүй",
+   "Даалгавар хийх хэрэггүй"
+  ],
+  "correct_answer": "Ингэвэл сайн сурч чадахгүй",
+  "explanation": "«能学好吗？» — «яаж сайн сурах билээ». Дунд нь батлах хэлбэр (学好) тул утга нь үгүйсгэл: сайн сурч чадахгүй.",
+  "order_index": 24,
+  "id": "hsk3-l02-q24",
+  "skillTags": [
+   "grammar",
+   "rhetorical-neng-ma"
+  ],
+  "difficulty": "hard"
+ }
+]

@@ -1,0 +1,458 @@
+[
+ {
+  "type": "cloze",
+  "question": "你在哪个________学习汉语？",
+  "options": [
+   "参加",
+   "班",
+   "担心",
+   "影响",
+   "比较"
+  ],
+  "correct_answer": "班",
+  "explanation": "«哪个班» — аль анги. «在…学习» (…-д сурах) гэсэн газрыг заах нэр үг хэрэгтэй тул «班» (анги).",
+  "order_index": 1,
+  "id": "hsk3-l09-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "别________，他马上就到家了。",
+  "options": [
+   "担心",
+   "参加",
+   "班",
+   "比较",
+   "影响"
+  ],
+  "correct_answer": "担心",
+  "explanation": "«别担心» — санаа бүү зов. «他马上就到家了» (тэр удахгүй гэртээ ирнэ) гэж тайвшруулж байгаа тул «担心».",
+  "order_index": 2,
+  "id": "hsk3-l09-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这件事________难，你再给我几天时间。",
+  "options": [
+   "班",
+   "影响",
+   "参加",
+   "比较",
+   "担心"
+  ],
+  "correct_answer": "比较",
+  "explanation": "«比较难» — нэлээд хэцүү. «比较» энд дайвар үг, тэмдэг нэрийн (难) өмнө орж «харьцангуй, нэлээд» гэсэн утгатай.",
+  "order_index": 3,
+  "id": "hsk3-l09-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "你想不想去________爬山比赛？",
+  "options": [
+   "影响",
+   "比较",
+   "担心",
+   "班",
+   "参加"
+  ],
+  "correct_answer": "参加",
+  "explanation": "«参加比赛» — тэмцээнд оролцох. «比赛» (тэмцээн)-тэй хамт хэрэглэгддэг үйл үг нь «参加».",
+  "order_index": 4,
+  "id": "hsk3-l09-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "少玩儿一会儿电子游戏吧，别________了学习。",
+  "options": [
+   "比较",
+   "担心",
+   "影响",
+   "参加",
+   "班"
+  ],
+  "correct_answer": "影响",
+  "explanation": "«影响学习» — хичээлд нөлөөлөх. Энд «影响» үйл үгээр: тоглоом хэт их тоглож хичээлдээ бүү нөлөөл.",
+  "order_index": 5,
+  "id": "hsk3-l09-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "A：你怎么又迟到了？ B：对不起，这是________一次，以后一定不迟到了。",
+  "options": [
+   "放心",
+   "先",
+   "最后",
+   "中间",
+   "了解"
+  ],
+  "correct_answer": "最后",
+  "explanation": "«最后一次» — хамгийн сүүлийн удаа. «以后一定不迟到了» (цаашид хоцрохгүй) гэж амалж байгаа тул «最后».",
+  "order_index": 6,
+  "id": "hsk3-l09-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "A：你吃这么多，会越来越胖。 B：________，我每天都运动。",
+  "options": [
+   "中间",
+   "放心",
+   "了解",
+   "最后",
+   "先"
+  ],
+  "correct_answer": "放心",
+  "explanation": "«放心» — санаа зоволтгүй. B «我每天都运动» гэж A-гийн санааг амрааж байна (яриа 2-ын «你放心，我一定不会变胖»-тэй адил).",
+  "order_index": 7,
+  "id": "hsk3-l09-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "A：你怎么知道她会来？ B：我很________她，她每天都在这儿吃饭。",
+  "options": [
+   "先",
+   "最后",
+   "中间",
+   "了解",
+   "放心"
+  ],
+  "correct_answer": "了解",
+  "explanation": "«我很了解她» — би түүнийг сайн мэднэ. Хүний зан, дадлыг сайн мэдэх нь «了解» (知道 — баримт мэдэх, 了解 — сайн мэдэх, ойлгох).",
+  "order_index": 8,
+  "id": "hsk3-l09-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "雨越下________大。",
+  "options": [
+   "更",
+   "很",
+   "越",
+   "最"
+  ],
+  "correct_answer": "越",
+  "explanation": "«越A越B» — «越»-г хоёр удаа тавина: 雨越下越大 (бороо орох тусам улам ширүүсч байна).",
+  "order_index": 9,
+  "id": "hsk3-l09-q09",
+  "skillTags": [
+   "grammar",
+   "yue-a-yue-b"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "山越高，路________难走。",
+  "options": [
+   "越",
+   "更",
+   "也",
+   "很"
+  ],
+  "correct_answer": "越",
+  "explanation": "Эхний хэсэгт «山越高» гэсэн тул хоёр дахь хэсэг нь «路越难走» — уул өндөр болох тусам зам улам хэцүү. Хоёр өгүүлэгдэхүүн тус бүр «越»-ийн өмнө.",
+  "order_index": 10,
+  "id": "hsk3-l09-q10",
+  "skillTags": [
+   "grammar",
+   "yue-a-yue-b"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "儿子跟爸爸________高。",
+  "options": [
+   "比较",
+   "非常",
+   "一起",
+   "一样"
+  ],
+  "correct_answer": "一样",
+  "explanation": "«A跟B一样 + тэмдэг нэр» — хүү нь аавтайгаа адил өндөр. «跟…» нь «一样»-тэй хамт ирж харьцуулалт үүсгэнэ.",
+  "order_index": 11,
+  "id": "hsk3-l09-q11",
+  "skillTags": [
+   "grammar",
+   "gen-yiyang-comparison"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这辆车是红的，那辆车是黑的。这辆车的颜色跟那辆车________一样。",
+  "options": [
+   "没",
+   "不",
+   "很",
+   "也"
+  ],
+  "correct_answer": "不",
+  "explanation": "Нэг нь улаан, нөгөө нь хар — адилгүй. «A跟B一样»-ийн үгүйсгэл нь «一样»-ийн өмнө «不»: 不一样.",
+  "order_index": 12,
+  "id": "hsk3-l09-q12",
+  "skillTags": [
+   "grammar",
+   "gen-yiyang-comparison"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：李静是谁？",
+  "options": [
+   "马可的同学",
+   "马可的汉语老师",
+   "大山的朋友",
+   "中国学生"
+  ],
+  "correct_answer": "马可的汉语老师",
+  "explanation": "Марко «她是我们的汉语老师» гэж хэлсэн — Ли Жин бол тэдний хятад хэлний багш.",
+  "order_index": 13,
+  "id": "hsk3-l09-q13",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：小丽为什么不让小刚吃蛋糕了？",
+  "options": [
+   "蛋糕不好吃",
+   "蛋糕太贵了",
+   "他已经吃了三块蛋糕了",
+   "他们家的人都很胖"
+  ],
+  "correct_answer": "他已经吃了三块蛋糕了",
+  "explanation": "Сяоли «别吃了，你已经吃了三块蛋糕了» гэсэн — Сяоган аль хэдийн гурван хэсэг бялуу идчихсэн.",
+  "order_index": 14,
+  "id": "hsk3-l09-q14",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：小刚为什么说自己一定不会变胖？",
+  "options": [
+   "他每天都运动",
+   "他只吃一块蛋糕",
+   "蛋糕一点儿也不甜",
+   "他们家的人都很瘦，吃不胖"
+  ],
+  "correct_answer": "他们家的人都很瘦，吃不胖",
+  "explanation": "Сяоган «我们家的人都很瘦，吃不胖» гэсэн — гэр бүлийнхэн нь бүгд туранхай, идээд ч таргалдаггүй.",
+  "order_index": 15,
+  "id": "hsk3-l09-q15",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：小丽为什么害怕？",
+  "options": [
+   "小刚不认识路",
+   "山越高，路越难走",
+   "天快黑了",
+   "她的脚疼"
+  ],
+  "correct_answer": "山越高，路越难走",
+  "explanation": "Сяоли «山越高，路越难走。我也越爬越冷» гэсэн — уул өндөр болох тусам зам хэцүү, мөн улам даарч байна.",
+  "order_index": 16,
+  "id": "hsk3-l09-q16",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文4：小明的眼睛为什么跟大熊猫一样了？",
+  "options": [
+   "他去看大熊猫了",
+   "他参加了篮球比赛",
+   "他这几天脚疼，没休息好",
+   "他每天看电视看得很晚"
+  ],
+  "correct_answer": "他这几天脚疼，没休息好",
+  "explanation": "Сяо Мин «我这几天脚疼，没休息好» гэсэн — хөл нь өвдөж, сайн амарч чадаагүй тул нүд нь панданых шиг болсон.",
+  "order_index": 17,
+  "id": "hsk3-l09-q17",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文4：小明能参加下个月的篮球比赛吗？",
+  "options": [
+   "一定能参加",
+   "不能参加",
+   "不一定能参加",
+   "医生不让他参加"
+  ],
+  "correct_answer": "一定能参加",
+  "explanation": "Сяо Мин «一定能参加，一点儿影响也没有» гэсэн — гарцаагүй оролцоно, огт нөлөөлөхгүй.",
+  "order_index": 18,
+  "id": "hsk3-l09-q18",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Уул өндөр болох тусам зам улам явахад хэцүү» — аль нь зөв бэ?",
+  "options": [
+   "越山高，越路难走。",
+   "山越高，越路难走。",
+   "山高越，路难走越。",
+   "山越高，路越难走。"
+  ],
+  "correct_answer": "山越高，路越难走。",
+  "explanation": "Хоёр өгүүлэгдэхүүн (山, 路) тус бүр өөрийн «越»-ийн ӨМНӨ орно: 山越高，路越难走 (яриа 3).",
+  "order_index": 19,
+  "id": "hsk3-l09-q19",
+  "skillTags": [
+   "grammar",
+   "yue-a-yue-b"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«他吃得越来越多。» гэдгийг «越A越B»-ээр хэрхэн хэлэх вэ?",
+  "options": [
+   "他吃越越多。",
+   "他越多越吃。",
+   "他越吃越多。",
+   "他吃得越多越。"
+  ],
+  "correct_answer": "他越吃越多。",
+  "explanation": "«越 + үйл үг (吃) + 越 + тэмдэг нэр (多)» — тэр идэх тусмаа улам их идэж байна (багшийн номын оруулга).",
+  "order_index": 20,
+  "id": "hsk3-l09-q20",
+  "skillTags": [
+   "grammar",
+   "yue-a-yue-b"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«休息得越多，好得越快。» — ямар утгатай вэ?",
+  "options": [
+   "Их амарсан болохоор хурдан эдгэрсэн.",
+   "Хурдан эдгэрэхийн тулд бага амар.",
+   "Амрах тусам улам ядарна.",
+   "Их амрах тусам улам хурдан эдгэнэ."
+  ],
+  "correct_answer": "Их амрах тусам улам хурдан эдгэнэ.",
+  "explanation": "«V得越A，V得越B» — амрах нь ихсэх тусам эдгэрэх нь улам хурдан болно (яриа 4, эмчийн зөвлөгөө).",
+  "order_index": 21,
+  "id": "hsk3-l09-q21",
+  "skillTags": [
+   "grammar",
+   "yue-a-yue-b"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Хүү нь аавтайгаа адил өндөр» — аль нь зөв бэ?",
+  "options": [
+   "儿子跟爸爸高一样。",
+   "儿子跟爸爸一样高。",
+   "儿子一样高跟爸爸。",
+   "儿子跟爸爸一样很高。"
+  ],
+  "correct_answer": "儿子跟爸爸一样高。",
+  "explanation": "«A + 跟 + B + 一样 + тэмдэг нэр» — тэмдэг нэр (高) «一样»-ийн ард, «很» тавихгүй.",
+  "order_index": 22,
+  "id": "hsk3-l09-q22",
+  "skillTags": [
+   "grammar",
+   "gen-yiyang-comparison"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«哥哥跟弟弟不一样胖。» — ямар утгатай вэ?",
+  "options": [
+   "Ах, дүү хоёр хоёулаа тарган биш.",
+   "Ах, дүү хоёр адилхан тарган.",
+   "Ах дүүтэйгээ адил тарган биш (нэг нь тарган, нөгөө нь туранхай).",
+   "Ах дүүгээ таргалахыг хүсэхгүй байна."
+  ],
+  "correct_answer": "Ах дүүтэйгээ адил тарган биш (нэг нь тарган, нөгөө нь туранхай).",
+  "explanation": "«不一样胖» — таргалалт нь адил биш. «不» нь «一样»-ийн өмнө орж «адил биш» гэсэн утга өгнө (багшийн номын 热身 1 ⑥).",
+  "order_index": 23,
+  "id": "hsk3-l09-q23",
+  "skillTags": [
+   "grammar",
+   "gen-yiyang-comparison"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль өгүүлбэр зөв бэ?",
+  "options": [
+   "她的汉语说得跟中国人一样好。",
+   "她的汉语说跟中国人一样好。",
+   "她的汉语说得跟中国人好一样。",
+   "她的汉语说得一样好跟中国人。"
+  ],
+  "correct_answer": "她的汉语说得跟中国人一样好。",
+  "explanation": "Үйл үгийн ард «得», дараа нь «跟 + B + 一样 + тэмдэг нэр»: 说得跟中国人一样好 (яриа 1).",
+  "order_index": 24,
+  "id": "hsk3-l09-q24",
+  "skillTags": [
+   "grammar",
+   "gen-yiyang-comparison"
+  ],
+  "difficulty": "medium"
+ }
+]

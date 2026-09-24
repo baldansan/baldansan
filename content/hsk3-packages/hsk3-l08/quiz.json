@@ -1,0 +1,458 @@
+[
+ {
+  "type": "cloze",
+  "question": "________里人太多了，我们走上去吧。",
+  "options": [
+   "层",
+   "电梯",
+   "几乎",
+   "洗手间",
+   "害怕"
+  ],
+  "correct_answer": "电梯",
+  "explanation": "«走上去» (алхаж гаръя) гэж байгаа тул хүн ихтэй нь «电梯» (лифт) — лифтэнд хүн их байгаа тул шатаар гарна.",
+  "order_index": 1,
+  "id": "hsk3-l08-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "你家住几________？",
+  "options": [
+   "害怕",
+   "几乎",
+   "层",
+   "电梯",
+   "洗手间"
+  ],
+  "correct_answer": "层",
+  "explanation": "«几层» — хэдэн давхар. «层» нь давхрын тоо нэр: 你家住几层？ — Та хэдэн давхарт амьдардаг вэ?",
+  "order_index": 2,
+  "id": "hsk3-l08-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "没事儿，我一点儿也不________。",
+  "options": [
+   "洗手间",
+   "电梯",
+   "层",
+   "几乎",
+   "害怕"
+  ],
+  "correct_answer": "害怕",
+  "explanation": "«一点儿也不 + тэмдэг/сэтгэлийн байдал» — огт …гүй. «没事儿» (зүгээр) гэж тайвшруулж байгаа тул «害怕» (айх): огт айхгүй байна.",
+  "order_index": 3,
+  "id": "hsk3-l08-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我去一下________，马上回来。",
+  "options": [
+   "几乎",
+   "洗手间",
+   "害怕",
+   "层",
+   "电梯"
+  ],
+  "correct_answer": "洗手间",
+  "explanation": "«去一下…，马上回来» — хаа нэгтээ түр ороод ирэх. Газрын нэр нь «洗手间» (ариун цэврийн өрөө), яриа 3-тай адил.",
+  "order_index": 4,
+  "id": "hsk3-l08-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我现在________每天都要用电脑。",
+  "options": [
+   "电梯",
+   "层",
+   "洗手间",
+   "几乎",
+   "害怕"
+  ],
+  "correct_answer": "几乎",
+  "explanation": "«几乎每天» — бараг өдөр бүр. «几乎» (бараг) нь «每天都»-ийн өмнө ирж давтамжийг зөөлрүүлнэ.",
+  "order_index": 5,
+  "id": "hsk3-l08-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "A：您对我们的服务________吗？ B：不错，我玩儿得很高兴。",
+  "options": [
+   "满意",
+   "见面",
+   "变化",
+   "重要",
+   "熊猫"
+  ],
+  "correct_answer": "满意",
+  "explanation": "«对…满意» — …-д сэтгэл хангалуун байх. B «不错» гэж үнэлж байгаа тул «满意».",
+  "order_index": 6,
+  "id": "hsk3-l08-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "A：周末你做什么了？ B：我去看________了。",
+  "options": [
+   "变化",
+   "满意",
+   "重要",
+   "熊猫",
+   "见面"
+  ],
+  "correct_answer": "熊猫",
+  "explanation": "«去看…» — очиж үзэх юм нь амьтан байх ёстой: «熊猫» (панда).",
+  "order_index": 7,
+  "id": "hsk3-l08-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "A：你看你，这几年一点儿________都没有。 B：是啊，我每天都运动。",
+  "options": [
+   "见面",
+   "熊猫",
+   "变化",
+   "满意",
+   "重要"
+  ],
+  "correct_answer": "变化",
+  "explanation": "«一点儿变化都没有» — огт өөрчлөгдөөгүй. B өдөр бүр дасгал хийдэг тул хэвээрээ байна гэсэн утга.",
+  "order_index": 8,
+  "id": "hsk3-l08-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我上个星期去了那个中国饭馆，明天想________去一次。",
+  "options": [
+   "又",
+   "就",
+   "再",
+   "才"
+  ],
+  "correct_answer": "再",
+  "explanation": "Маргааш очих нь хараахан болоогүй давталт — «再». «又» аль хэдийн болсон давталтад орно.",
+  "order_index": 9,
+  "id": "hsk3-l08-q09",
+  "skillTags": [
+   "grammar",
+   "you-vs-zai"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "你怎么________买了一条裤子？不是已经有一条了吗？",
+  "options": [
+   "再",
+   "才",
+   "就",
+   "又"
+  ],
+  "correct_answer": "又",
+  "explanation": "Өмд авчихсан (买了) — давталт аль хэдийн болсон тул «又».",
+  "order_index": 10,
+  "id": "hsk3-l08-q10",
+  "skillTags": [
+   "grammar",
+   "you-vs-zai"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我在中国见过熊猫，昨天________去公园看熊猫了。",
+  "options": [
+   "再",
+   "又",
+   "还",
+   "没"
+  ],
+  "correct_answer": "又",
+  "explanation": "«昨天…了» — өчигдөр дахиад очсон, болчихсон давталт тул «又». «再» болоогүй давталтад орно.",
+  "order_index": 11,
+  "id": "hsk3-l08-q11",
+  "skillTags": [
+   "grammar",
+   "you-vs-zai"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "cloze",
+  "question": "A：你想喝点儿什么？ B：你喝什么我________喝什么。",
+  "options": [
+   "就",
+   "才",
+   "再",
+   "又"
+  ],
+  "correct_answer": "就",
+  "explanation": "«асуух үг + 就 + ижил асуух үг» — «чи юу уух юм, би тэрийг уунаа». Хоёр 什么-ийн дунд «就».",
+  "order_index": 12,
+  "id": "hsk3-l08-q12",
+  "skillTags": [
+   "grammar",
+   "interrogative-pronoun-jiu"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：小丽最近打算做什么？",
+  "options": [
+   "打算去旅游",
+   "打算换工作",
+   "打算买房子",
+   "打算学开车"
+  ],
+  "correct_answer": "打算买房子",
+  "explanation": "Хамтран ажиллагч «听说你最近打算买房子？» гэж асуухад Сяоли «是» гэж хариулсан — байр авахаар төлөвлөж байна.",
+  "order_index": 13,
+  "id": "hsk3-l08-q13",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：小丽为什么对第二个房子不满意？",
+  "options": [
+   "没有电梯",
+   "在二十层，太高了",
+   "房子太贵了",
+   "离公司太远"
+  ],
+  "correct_answer": "在二十层，太高了",
+  "explanation": "Хоёр дахь байр лифттэй ч 20-р давхарт — «太高了，往下看多害怕啊！». Лифтгүй нь нэг дэх байр.",
+  "order_index": 14,
+  "id": "hsk3-l08-q14",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：小明为什么不能去机场送马可？",
+  "options": [
+   "他生病了",
+   "他要上课",
+   "他不知道马可哪天走",
+   "他下星期不在北京"
+  ],
+  "correct_answer": "他下星期不在北京",
+  "explanation": "Сяомин «我下星期不在北京，不能去机场送你了» гэж хэлсэн.",
+  "order_index": 15,
+  "id": "hsk3-l08-q15",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：小明送给马可什么东西？",
+  "options": [
+   "一个小熊猫",
+   "一本书",
+   "一张地图",
+   "一杯咖啡"
+  ],
+  "correct_answer": "一个小熊猫",
+  "explanation": "«这个小熊猫送给你» — Сяомин бяцхан панда бэлэглэсэн.",
+  "order_index": 16,
+  "id": "hsk3-l08-q16",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：小刚想喝什么？",
+  "options": [
+   "咖啡",
+   "茶",
+   "牛奶",
+   "小丽喝什么，他就喝什么"
+  ],
+  "correct_answer": "小丽喝什么，他就喝什么",
+  "explanation": "Сяоган «你喝什么我就喝什么» гэсэн — Сяоли юу уувал тэр ч мөн тэрийг ууна.",
+  "order_index": 17,
+  "id": "hsk3-l08-q17",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文4：周太太为什么说自己胖了？",
+  "options": [
+   "周明说她胖了",
+   "以前的衣服都不能穿了",
+   "她不喜欢运动",
+   "她每天做很多饭"
+  ],
+  "correct_answer": "以前的衣服都不能穿了",
+  "explanation": "Жоу хатагтай «我胖了，以前的衣服都不能穿了» гэсэн — өмнөх хувцсаа өмсөж чадахаа больсон.",
+  "order_index": 18,
+  "id": "hsk3-l08-q18",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Би өчигдөр нэг кино үзсэн, өнөөдөр дахиад нэгийг үзлээ» — аль нь зөв бэ?",
+  "options": [
+   "我昨天看了一个电影，今天再看了一个。",
+   "我昨天看了一个电影，今天又看了一个。",
+   "我昨天看了一个电影，今天看了又一个。",
+   "我昨天看了一个电影，又今天看了一个。"
+  ],
+  "correct_answer": "我昨天看了一个电影，今天又看了一个。",
+  "explanation": "Өнөөдөр үзчихсэн — болчихсон давталт тул «又», мөн үйл үгийн (看) шууд өмнө орно.",
+  "order_index": 19,
+  "id": "hsk3-l08-q19",
+  "skillTags": [
+   "grammar",
+   "you-vs-zai"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "昨天去看了看，今天________去看了看，明天还要________去看看。 — хоосонд дарааллаар нь юу орох вэ?",
+  "options": [
+   "再 / 又",
+   "又 / 又",
+   "再 / 再",
+   "又 / 再"
+  ],
+  "correct_answer": "又 / 再",
+  "explanation": "Өнөөдөр очсон — болчихсон тул «又»; маргааш очих — болоогүй тул «再» (яриа 1).",
+  "order_index": 20,
+  "id": "hsk3-l08-q20",
+  "skillTags": [
+   "grammar",
+   "you-vs-zai"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«我不想再吃饺子了。» — ямар утгатай вэ?",
+  "options": [
+   "Би дахиж банш идмээргүй боллоо.",
+   "Би дахиад банш идмээр байна.",
+   "Би өчигдөр дахиад банш идсэн.",
+   "Би банш хэзээ ч идэж үзээгүй."
+  ],
+  "correct_answer": "Би дахиж банш идмээргүй боллоо.",
+  "explanation": "«不想再…了» — нөхцөл өөрчлөгдсөнийг заана: өмнө нь идэж байсан ч одоо дахиж идмээргүй боллоо (багшийн номын жишээ).",
+  "order_index": 21,
+  "id": "hsk3-l08-q21",
+  "skillTags": [
+   "grammar",
+   "you-vs-zai"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Чи хаашаа явна, би тийшээ явна» — аль нь зөв бэ?",
+  "options": [
+   "你去哪儿就我去哪儿。",
+   "我就去哪儿你去哪儿。",
+   "你去哪儿我去就哪儿。",
+   "你去哪儿我就去哪儿。"
+  ],
+  "correct_answer": "你去哪儿我就去哪儿。",
+  "explanation": "Өгүүлэгдэхүүн өөр (你 / 我) тул «我» нь «就»-ийн өмнө, «就» нь үйл үгийн (去) өмнө орно.",
+  "order_index": 22,
+  "id": "hsk3-l08-q22",
+  "skillTags": [
+   "grammar",
+   "interrogative-pronoun-jiu"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«你哪天有时间就哪天来我家吧。» — ямар утгатай вэ?",
+  "options": [
+   "Чи аль өдөр манайд ирэх вэ?",
+   "Аль өдөр завтай байна, тэр өдөр манайд ирээрэй.",
+   "Чи өнөөдөр манайд ирээрэй.",
+   "Чамд завтай өдөр байна уу?"
+  ],
+  "correct_answer": "Аль өдөр завтай байна, тэр өдөр манайд ирээрэй.",
+  "explanation": "«哪天…就哪天…» — асуулт биш; «аль өдөр …, тэр өдөр …» гэсэн тодорхой бус өдрийг заана.",
+  "order_index": 23,
+  "id": "hsk3-l08-q23",
+  "skillTags": [
+   "grammar",
+   "interrogative-pronoun-jiu"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль өгүүлбэр зөв бэ?",
+  "options": [
+   "什么东西便宜就我买什么。",
+   "什么东西便宜我买就什么。",
+   "什么东西便宜我就买什么。",
+   "什么东西便宜我就买什么？"
+  ],
+  "correct_answer": "什么东西便宜我就买什么。",
+  "explanation": "Хоёр дахь өгүүлэгдэхүүн (我) «就»-ийн өмнө, «就» нь үйл үгийн өмнө; асуулт биш тул «?» биш «。».",
+  "order_index": 24,
+  "id": "hsk3-l08-q24",
+  "skillTags": [
+   "grammar",
+   "interrogative-pronoun-jiu"
+  ],
+  "difficulty": "hard"
+ }
+]

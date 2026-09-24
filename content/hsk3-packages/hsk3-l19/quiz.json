@@ -1,0 +1,458 @@
+[
+ {
+  "type": "cloze",
+  "question": "帮我把这几________照片洗出来吧。",
+  "options": [
+   "秋天",
+   "过",
+   "张",
+   "船",
+   "鸟"
+  ],
+  "correct_answer": "张",
+  "explanation": "«张» нь зураг, цаас зэрэг хавтгай зүйлийн тоо ноогдол: 几张照片 — хэдэн зураг. «洗出来» — угаалгах (хэвлүүлэх).",
+  "order_index": 1,
+  "id": "hsk3-l19-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "你还记得18岁生日是在哪儿________的吗？",
+  "options": [
+   "过",
+   "鸟",
+   "秋天",
+   "张",
+   "船"
+  ],
+  "correct_answer": "过",
+  "explanation": "«过生日» — төрсөн өдрөө тэмдэглэх. 18 насны төрсөн өдрөө хаана тэмдэглэснээ санаж байна уу гэж асууж байна.",
+  "order_index": 2,
+  "id": "hsk3-l19-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "________是北京最好的季节。",
+  "options": [
+   "张",
+   "船",
+   "过",
+   "秋天",
+   "鸟"
+  ],
+  "correct_answer": "秋天",
+  "explanation": "Хоосон зайд улирлын нэр (季节) орох ёстой — «秋天» (намар) бол Бээжингийн хамгийн сайхан улирал.",
+  "order_index": 3,
+  "id": "hsk3-l19-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "她真爱说话，像只小________一样。",
+  "options": [
+   "船",
+   "张",
+   "秋天",
+   "过",
+   "鸟"
+  ],
+  "correct_answer": "鸟",
+  "explanation": "«像只小鸟一样» — бяцхан шувуу шиг (жиргэх мэт их ярьдаг). «只» нь шувууны тоо ноогдол.",
+  "order_index": 4,
+  "id": "hsk3-l19-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我希望能坐________去旅行一次。",
+  "options": [
+   "鸟",
+   "船",
+   "张",
+   "过",
+   "秋天"
+  ],
+  "correct_answer": "船",
+  "explanation": "«坐船» — завиар / усан онгоцоор явах. Нэг удаа усан онгоцоор аялахыг хүсэж байна.",
+  "order_index": 5,
+  "id": "hsk3-l19-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "A：你怎么又________了？ B：我想家了。",
+  "options": [
+   "哭",
+   "位",
+   "经过",
+   "马",
+   "耳朵"
+  ],
+  "correct_answer": "哭",
+  "explanation": "Гэрээ санасан тул уйлж байна — «又哭了» (дахиад уйлчихлаа).",
+  "order_index": 6,
+  "id": "hsk3-l19-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "A：你一会儿________超市吗？帮我买瓶水吧。 B：行，没问题。",
+  "options": [
+   "马",
+   "耳朵",
+   "哭",
+   "经过",
+   "位"
+  ],
+  "correct_answer": "经过",
+  "explanation": "«经过超市» — дэлгүүрийн хажуугаар өнгөрөх. Замдаа дайрвал ус авч өгөөч гэж гуйж байна.",
+  "order_index": 7,
+  "id": "hsk3-l19-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "A：您好，欢迎，请问您几________？ B：您好，我们一共是五个人。",
+  "options": [
+   "耳朵",
+   "哭",
+   "马",
+   "经过",
+   "位"
+  ],
+  "correct_answer": "位",
+  "explanation": "«您几位？» — «Хэдүүлээ вэ?» гэж хүнийг хүндэтгэн тоолох «位»-ээр асууна; хариулт нь «五个人».",
+  "order_index": 8,
+  "id": "hsk3-l19-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "cloze",
+  "question": "雨下了三个小时，现在终于小了________。",
+  "options": [
+   "出来",
+   "下来",
+   "起来",
+   "上去"
+  ],
+  "correct_answer": "下来",
+  "explanation": "Хүчтэйгээс СУЛ болох өөрчлөлтийг «下来» заана: 雨小下来了 — бороо намдлаа.",
+  "order_index": 9,
+  "id": "hsk3-l19-q09",
+  "skillTags": [
+   "grammar",
+   "direction-complement-extended"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "A：骑得最快的这位是谁？ B：你没看________吗？他是小刚啊。",
+  "options": [
+   "起来",
+   "上去",
+   "下来",
+   "出来"
+  ],
+  "correct_answer": "出来",
+  "explanation": "Ялгаж таних утгад «看出来»: «Чи танисангүй юу? Тэр чинь Сяо Ган шүү дээ.»",
+  "order_index": 10,
+  "id": "hsk3-l19-q10",
+  "skillTags": [
+   "grammar",
+   "direction-complement-extended"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "读书________我快乐。",
+  "options": [
+   "把",
+   "给",
+   "使",
+   "跟"
+  ],
+  "correct_answer": "使",
+  "explanation": "«A + 使 + хүн + тэмдэг нэр» — үйлдүүлэх утга: ном унших надад баяр баясал авчирдаг. «使» ихэвчлэн бичгийн хэлэнд.",
+  "order_index": 11,
+  "id": "hsk3-l19-q11",
+  "skillTags": [
+   "grammar",
+   "causative-shi-jiao-rang"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他上班穿西服，看上去像40多岁，还是穿运动服________他更年轻。",
+  "options": [
+   "让",
+   "把",
+   "对",
+   "从"
+  ],
+  "correct_answer": "让",
+  "explanation": "«穿运动服让他更年轻» — спорт хувцас өмсөхөөр тэр илүү залуу харагддаг. «让 + хүн + тэмдэг нэр».",
+  "order_index": 12,
+  "id": "hsk3-l19-q12",
+  "skillTags": [
+   "grammar",
+   "causative-shi-jiao-rang"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：女儿最近有什么变化？",
+  "options": [
+   "她又喜欢短头发了",
+   "她喜欢把头发放在耳朵后面",
+   "她开始像男孩子一样了",
+   "她的耳朵有点儿疼"
+  ],
+  "correct_answer": "她喜欢把头发放在耳朵后面",
+  "explanation": "Аав нь «女儿最近喜欢把头发放在耳朵后面» гэж хэлсэн. Богино үстэй, хүү шиг байсан нь багадаа.",
+  "order_index": 13,
+  "id": "hsk3-l19-q13",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：同事为什么没看出来照片里的小刚？",
+  "options": [
+   "照片洗得不太好",
+   "小刚没参加骑马比赛",
+   "小刚骑得太快了，看不清",
+   "比赛的时候他穿运动服，看上去跟现在不太一样"
+  ],
+  "correct_answer": "比赛的时候他穿运动服，看上去跟现在不太一样",
+  "explanation": "Сяо Ли: ажилдаа костюм, цамц өмсдөг, уралдааны үеэр спорт хувцас өмссөн — тиймээс одоогийнхоос өөр харагдсан.",
+  "order_index": 14,
+  "id": "hsk3-l19-q14",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：小刚今天穿什么？看上去怎么样？",
+  "options": [
+   "穿运动服，看上去很年轻",
+   "穿蓝衬衫，看上去像20多岁",
+   "穿蓝西服，看上去像40多岁",
+   "穿蓝西服，看上去更年轻"
+  ],
+  "correct_answer": "穿蓝西服，看上去像40多岁",
+  "explanation": "Хамт ажилладаг хүн: «他今天穿蓝西服，看上去像40多岁». Спорт хувцас л түүнийг илүү залуу харагдуулдаг.",
+  "order_index": 15,
+  "id": "hsk3-l19-q15",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：朋友的女儿是什么时候出生的？现在多大了？",
+  "options": [
+   "去年秋天出生的，刚过完一岁生日",
+   "去年冬天出生的，刚过完一岁生日",
+   "今年秋天出生的，还不到一岁",
+   "前年秋天出生的，已经两岁了"
+  ],
+  "correct_answer": "去年秋天出生的，刚过完一岁生日",
+  "explanation": "Найз нь «她去年秋天出生的，刚过完一岁生日» гэж хэлсэн — өнгөрсөн намар төрсөн, нэг насны төрсөн өдрөө саяхан тэмдэглэсэн.",
+  "order_index": 16,
+  "id": "hsk3-l19-q16",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：小丽为什么说“这个礼物我没办法送”？",
+  "options": [
+   "因为小丽没有钱买礼物",
+   "因为朋友的女儿不喜欢小鸟",
+   "因为朋友的女儿就喜欢听她爸爸学鸟叫",
+   "因为朋友不让她送礼物"
+  ],
+  "correct_answer": "因为朋友的女儿就喜欢听她爸爸学鸟叫",
+  "explanation": "Нялх охин зөвхөн аавынхаа шувуу дуурайхыг сонсох дуртай — үүнийг Сяо Ли бэлэг болгож өгч чадахгүй тул шоглож хэлсэн.",
+  "order_index": 17,
+  "id": "hsk3-l19-q17",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文4：“我”为什么想快点儿把照片发给大家？",
+  "options": [
+   "叫朋友们也高兴高兴",
+   "朋友们让“我”发照片",
+   "“我”想让朋友们也去黄河",
+   "“我”不记得去过哪些地方"
+  ],
+  "correct_answer": "叫朋友们也高兴高兴",
+  "explanation": "Өгүүлэгч «我想快点儿把照片发给大家，叫朋友们也高兴高兴» — найзуудаа ч бас баярлуулахын тулд.",
+  "order_index": 18,
+  "id": "hsk3-l19-q18",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Уучлаарай, би таны нэрийг санахгүй байна» — аль нь зөв бэ?",
+  "options": [
+   "对不起，我不想起来你的名字了。",
+   "对不起，我想起不来你的名字了。",
+   "对不起，我想不起来你的名字了。",
+   "对不起，我想不下来你的名字了。"
+  ],
+  "correct_answer": "对不起，我想不起来你的名字了。",
+  "explanation": "Санах утга — «想起来»; чадахгүй гэхдээ «不»-г дунд нь: 想不起来.",
+  "order_index": 19,
+  "id": "hsk3-l19-q19",
+  "skillTags": [
+   "grammar",
+   "direction-complement-extended"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "这是你做的饭吗？________很好吃。",
+  "options": [
+   "看起来",
+   "想起来",
+   "记起来",
+   "停下来"
+  ],
+  "correct_answer": "看起来",
+  "explanation": "Гаднаас нь харж үнэлэхэд «看起来» (харахад … харагдах): амттай харагдаж байна.",
+  "order_index": 20,
+  "id": "hsk3-l19-q20",
+  "skillTags": [
+   "grammar",
+   "direction-complement-extended"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "电影开始了，大家都________了。",
+  "options": [
+   "想起来",
+   "看出来",
+   "安静下来",
+   "看起来"
+  ],
+  "correct_answer": "安静下来",
+  "explanation": "Кино эхлэхэд шуугиантайгаас тайван болсон — «安静下来» (下来 — хөдөлгөөнөөс тайван болох өөрчлөлт).",
+  "order_index": 21,
+  "id": "hsk3-l19-q21",
+  "skillTags": [
+   "grammar",
+   "direction-complement-extended"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль өгүүлбэрт «出来» нь «ялгаж таних» утгатай вэ?",
+  "options": [
+   "你画得真快，一会儿就画出来了。",
+   "朋友想出来一个学汉语的好办法。",
+   "照片我选了几张洗出来了。",
+   "你听出来了吗？这是谁的声音？"
+  ],
+  "correct_answer": "你听出来了吗？这是谁的声音？",
+  "explanation": "«听出来» — дууг сонсоод хэнийх болохыг ялгаж таних. Бусад гурав нь «бий болох» (зурж дуусгах, бодож олох, угаалгах) утгатай.",
+  "order_index": 22,
+  "id": "hsk3-l19-q22",
+  "skillTags": [
+   "grammar",
+   "direction-complement-extended"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«我想快点儿把照片发给大家，叫朋友们也高兴高兴。» — энд «叫» ямар утгатай вэ?",
+  "options": [
+   "нэрлэгдэх, нэр нь …",
+   "шувуу жиргэх, дуугарах",
+   "дуудах, дуудаж ирүүлэх",
+   "үйлдүүлэх (= 让): баярлуулах"
+  ],
+  "correct_answer": "үйлдүүлэх (= 让): баярлуулах",
+  "explanation": "«叫 + 朋友们 + 高兴高兴» — найзуудаа баярлуулах гэсэн үйлдүүлэх утга; «叫» нь ярианы хэлэнд «让»-тай адил.",
+  "order_index": 23,
+  "id": "hsk3-l19-q23",
+  "skillTags": [
+   "grammar",
+   "causative-shi-jiao-rang"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Энэ хувцас нүүрийг чинь цагаан харагдуулж байна» — аль нь зөв бэ?",
+  "options": [
+   "这件衣服看上去让你的脸很白。",
+   "这件衣服让你的脸看上去很白。",
+   "让这件衣服你的脸看上去很白。",
+   "你的脸让这件衣服看上去很白。"
+  ],
+  "correct_answer": "这件衣服让你的脸看上去很白。",
+  "explanation": "Шалтгаан (这件衣服) + 让 + хүн/юм (你的脸) + 看上去很白 — дасгалын номын 40-р асуулт.",
+  "order_index": 24,
+  "id": "hsk3-l19-q24",
+  "skillTags": [
+   "grammar",
+   "causative-shi-jiao-rang"
+  ],
+  "difficulty": "hard"
+ }
+]

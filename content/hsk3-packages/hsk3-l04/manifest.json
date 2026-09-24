@@ -1,0 +1,22 @@
+{
+ "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+ "courseType": "chinese-hsk",
+ "courseId": "hsk3",
+ "lessonId": "hsk3-l04",
+ "hskLevel": 3,
+ "lessonNumber": 4,
+ "lessonProfile": "hsk3-dialogue-reading-writing-review",
+ "lessonType": "hsk3-dialogue-reading-writing-review",
+ "language": "zh-MN",
+ "targetLanguage": "zh",
+ "uiLanguage": "mn",
+ "title": "她总是笑着跟客人说话",
+ "mongolianTitle": "Тэр үргэлж инээмсэглэн үйлчлүүлэгчидтэй ярьдаг",
+ "source": "HSK Standard Course 3 · 第4课 (сурах бичиг, багшийн ном, дасгалын ном)",
+ "hasAudio": true,
+ "hasImages": false,
+ "verification": {
+  "answerStatus": "official_verified",
+  "textStatus": "source_verified (拼音课文-оор шалгасан)"
+ }
+}

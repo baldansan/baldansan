@@ -1,0 +1,458 @@
+[
+ {
+  "type": "cloze",
+  "question": "周末你们________在哪儿吃饭？在家吃还是出去吃？",
+  "options": [
+   "终于",
+   "一般",
+   "校长",
+   "礼物",
+   "坏"
+  ],
+  "correct_answer": "一般",
+  "explanation": "«一般» — ихэвчлэн: амралтын өдөр ихэвчлэн хаана хооллодог вэ гэж асууж байна (练习 2 ①).",
+  "order_index": 1,
+  "id": "hsk3-l13-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "________考完试了，我们去哪儿玩儿玩儿？",
+  "options": [
+   "爷爷",
+   "愿意",
+   "生活",
+   "终于",
+   "过去"
+  ],
+  "correct_answer": "终于",
+  "explanation": "«终于» — эцэст нь, арай гэж: шалгалт арай гэж дууссан тул тоглож амрахаар ярилцаж байна.",
+  "order_index": 2,
+  "id": "hsk3-l13-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "你________早睡早起，别睡得那么晚。",
+  "options": [
+   "应该",
+   "礼物",
+   "奶奶",
+   "校长",
+   "遇到"
+  ],
+  "correct_answer": "应该",
+  "explanation": "«应该» — …х ёстой: эрт унтаж эрт босох хэрэгтэй гэж зөвлөж байна.",
+  "order_index": 3,
+  "id": "hsk3-l13-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我不________去那个公司工作，太远，也太累。",
+  "options": [
+   "生活",
+   "爷爷",
+   "愿意",
+   "坏",
+   "礼物"
+  ],
+  "correct_answer": "愿意",
+  "explanation": "«不愿意» — хүсэхгүй байна: хол, ядаргаатай тул тэр компанид ажиллах дургүй.",
+  "order_index": 4,
+  "id": "hsk3-l13-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "那个饭馆离我们学校很近，我们________去。",
+  "options": [
+   "校长",
+   "奶奶",
+   "生活",
+   "礼物",
+   "经常"
+  ],
+  "correct_answer": "经常",
+  "explanation": "«经常» — байнга: сургуулиасаа ойрхон болохоор тэр гуанз руу байнга очдог.",
+  "order_index": 5,
+  "id": "hsk3-l13-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "A：前边那位老人是谁？ B：他是我们的________。",
+  "options": [
+   "过去",
+   "一边",
+   "校长",
+   "愿意",
+   "坏"
+  ],
+  "correct_answer": "校长",
+  "explanation": "«我们的校长» — манай сургуулийн захирал. Хүнийг тодорхойлж байгаа тул хүн заасан нэр үг хэрэгтэй.",
+  "order_index": 6,
+  "id": "hsk3-l13-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "A：你怎么回来这么晚？ B：回家的路上________张老师了，跟他聊了一会儿。",
+  "options": [
+   "一般",
+   "遇到",
+   "应该",
+   "生活",
+   "礼物"
+  ],
+  "correct_answer": "遇到",
+  "explanation": "«遇到» — (санамсаргүй) таарах: замдаа Жан багштай тааралдаад жаахан ярилцсан.",
+  "order_index": 7,
+  "id": "hsk3-l13-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "A：下个月是爷爷的生日，你有什么打算？ B：我要送他一件特别的________。",
+  "options": [
+   "奶奶",
+   "校长",
+   "礼物",
+   "生活",
+   "过去"
+  ],
+  "correct_answer": "礼物",
+  "explanation": "«送……礼物» — бэлэг өгөх: төрсөн өдөрт нь онцгой бэлэг өгөх гэж байна.",
+  "order_index": 8,
+  "id": "hsk3-l13-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "A：一会儿周经理走进来的时候，请大家站________。 B：好，我们知道了。",
+  "options": [
+   "起去",
+   "下去",
+   "起来",
+   "回去"
+  ],
+  "correct_answer": "起来",
+  "explanation": "Суудлаасаа босох — «站起来». «起»-д зөвхөн «来» залгана, «起去» гэж байдаггүй.",
+  "order_index": 9,
+  "id": "hsk3-l13-q09",
+  "skillTags": [
+   "grammar",
+   "compound-directional-complement"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "A：我忘了把这本书还给他了。 B：没关系，明天我帮你送________吧。",
+  "options": [
+   "过来",
+   "过去",
+   "上来",
+   "起来"
+  ],
+  "correct_answer": "过去",
+  "explanation": "Номыг өгүүлэгчээс хол, нөгөө хүн рүү аваачиж өгнө — «送过去». «送过来» бол өгүүлэгч рүү авчрах.",
+  "order_index": 10,
+  "id": "hsk3-l13-q10",
+  "skillTags": [
+   "grammar",
+   "compound-directional-complement"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "cloze",
+  "question": "我丈夫喜欢一边吃早饭________看报纸。",
+  "options": [
+   "一起",
+   "一般",
+   "一直",
+   "一边"
+  ],
+  "correct_answer": "一边",
+  "explanation": "Хоёр үйлдэл зэрэг: «一边吃早饭一边看报纸» — өглөөний хоолоо идэнгээ сонин уншина. «一边» хоёр удаа давтагдана.",
+  "order_index": 11,
+  "id": "hsk3-l13-q11",
+  "skillTags": [
+   "grammar",
+   "yibian-yibian"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "老师________说边笑。",
+  "options": [
+   "一",
+   "就",
+   "边",
+   "也"
+  ],
+  "correct_answer": "边",
+  "explanation": "«一»-г орхисон «边……边……» хэлбэр: «边说边笑» — ярингаа инээнэ.",
+  "order_index": 12,
+  "id": "hsk3-l13-q12",
+  "skillTags": [
+   "grammar",
+   "yibian-yibian"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：小刚买回来的红酒是给谁的？",
+  "options": [
+   "给小丽的礼物",
+   "他自己喝的",
+   "给爷爷的礼物",
+   "给同事的礼物"
+  ],
+  "correct_answer": "给爷爷的礼物",
+  "explanation": "Сяоган «这是给爷爷的礼物» гэсэн — өвөөд зориулсан бэлэг.",
+  "order_index": 13,
+  "id": "hsk3-l13-q13",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：小刚说小丽的礼物是什么？（小刚：我不是已经回来了吗？）",
+  "options": [
+   "一瓶红酒",
+   "还没买",
+   "一件衣服",
+   "小刚自己"
+  ],
+  "correct_answer": "小刚自己",
+  "explanation": "«我不是已经回来了吗？» — «Би өөрөө ирчихлээ биз дээ?» гэж хошигнож, өөрийгөө бэлэг гэж байна (багшийн ном: 小刚就是礼物).",
+  "order_index": 14,
+  "id": "hsk3-l13-q14",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：小刚为什么很晚才回家？",
+  "options": [
+   "没有公共汽车了，他是走回来的",
+   "他去商店买东西了",
+   "他的车坏了",
+   "他在公司开会"
+  ],
+  "correct_answer": "没有公共汽车了，他是走回来的",
+  "explanation": "Сяоган «没有公共汽车了，我是走回来的» гэсэн — автобус байхгүй болсон тул алхаж ирсэн.",
+  "order_index": 15,
+  "id": "hsk3-l13-q15",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：小丽为什么更愿意在家看电视？",
+  "options": [
+   "电影院太远了",
+   "小刚不喜欢看电影",
+   "电视上的电影更多",
+   "可以一边吃一边看"
+  ],
+  "correct_answer": "可以一边吃一边看",
+  "explanation": "Сяоли «可以一边吃一边看，坐久了还可以站起来休息一会儿» гэсэн — идэнгээ үзэж, удаан суувал босож амарч болдог.",
+  "order_index": 16,
+  "id": "hsk3-l13-q16",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文4：刚结婚的时候，“我”丈夫是做什么工作的？",
+  "options": [
+   "中学老师",
+   "校长",
+   "医生",
+   "经理"
+  ],
+  "correct_answer": "中学老师",
+  "explanation": "«刚结婚的时候，我丈夫是中学老师» — дөнгөж гэрлэхэд дунд сургуулийн багш байсан; одоо захирал болсон.",
+  "order_index": 17,
+  "id": "hsk3-l13-q17",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文4：“我”对丈夫有什么担心？",
+  "options": [
+   "怕他不喜欢孩子",
+   "怕他累坏了",
+   "怕他不看报纸",
+   "怕他不回家吃早饭"
+  ],
+  "correct_answer": "怕他累坏了",
+  "explanation": "«我真怕他累坏了» — хэт ядарчих вий гэж санаа зовж байна.",
+  "order_index": 18,
+  "id": "hsk3-l13-q18",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Багш анги руу алхаж орж ирлээ» — аль нь зөв бэ?",
+  "options": [
+   "老师走进来教室。",
+   "老师走教室进来。",
+   "老师走进教室来。",
+   "老师进走教室来。"
+  ],
+  "correct_answer": "老师走进教室来。",
+  "explanation": "教室 — газар тул «进» ба «来»-гийн дунд орно: 走进教室来.",
+  "order_index": 19,
+  "id": "hsk3-l13-q19",
+  "skillTags": [
+   "grammar",
+   "compound-directional-complement"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«哥哥买回一个西瓜来。» — аль өгүүлбэр ижил утгатай вэ?",
+  "options": [
+   "哥哥回来买一个西瓜。",
+   "哥哥买回来一个西瓜。",
+   "哥哥买来回一个西瓜。",
+   "哥哥买一个西瓜回。"
+  ],
+  "correct_answer": "哥哥买回来一个西瓜。",
+  "explanation": "西瓜 — эд юм тул «来»-гийн өмнө ч, ард ч орж болно: 买回一个西瓜来 = 买回来一个西瓜. «回来买» бол «ирээд худалдаж авах» гэсэн өөр утга.",
+  "order_index": 20,
+  "id": "hsk3-l13-q20",
+  "skillTags": [
+   "grammar",
+   "compound-directional-complement"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Үгийг зөв дараалалд оруул (дасгалын ном 40): 同学们 / 走 / 教室 / 去 / 出 / 都 / 了",
+  "options": [
+   "同学们都走出去教室了。",
+   "同学们走出教室都去了。",
+   "同学们都出走教室去了。",
+   "同学们都走出教室去了。"
+  ],
+  "correct_answer": "同学们都走出教室去了。",
+  "explanation": "教室 — газар тул «出» ба «去»-гийн дунд: 走出教室去; «都» үйл үгийн өмнө (дасгалын номын хариулт).",
+  "order_index": 21,
+  "id": "hsk3-l13-q21",
+  "skillTags": [
+   "grammar",
+   "compound-directional-complement"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Би хөгжим сонсонгоо даалгавраа хийдэг» — аль нь зөв бэ?",
+  "options": [
+   "我一边听音乐做作业。",
+   "我一边听音乐一边做作业。",
+   "一边我听音乐一边我做作业。",
+   "我听音乐一边做作业一边。"
+  ],
+  "correct_answer": "我一边听音乐一边做作业。",
+  "explanation": "Өгүүлэгдэхүүн (我) эхэнд, дараа нь хоёр үйл үгийн өмнө хоёуланд нь «一边».",
+  "order_index": 22,
+  "id": "hsk3-l13-q22",
+  "skillTags": [
+   "grammar",
+   "yibian-yibian"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Үгийг зөв дараалалд оруул (дасгалын ном 38): 别 / 开车 / 一边 / 打电话 / 请 / 一边",
+  "options": [
+   "请一边别开车一边打电话。",
+   "一边请别开车一边打电话。",
+   "请别开车一边打电话一边。",
+   "请别一边开车一边打电话。"
+  ],
+  "correct_answer": "请别一边开车一边打电话。",
+  "explanation": "«请别» + «一边开车一边打电话» — машин жолоодонгоо утсаар битгий яриарай (дасгалын номын хариулт).",
+  "order_index": 23,
+  "id": "hsk3-l13-q23",
+  "skillTags": [
+   "grammar",
+   "yibian-yibian"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«小丽和老同学边喝咖啡边聊天儿。» — ямар утгатай вэ?",
+  "options": [
+   "Кофе уусныхаа дараа ярилцсан",
+   "Кофе уунгаа ярилцсан",
+   "Кофе уухаасаа өмнө ярилцсан",
+   "Кофе уулгүй ярилцсан"
+  ],
+  "correct_answer": "Кофе уунгаа ярилцсан",
+  "explanation": "«边……边……» — хоёр үйлдэл НЭГЭН ЗЭРЭГ: кофе уух, ярилцах хоёр зэрэг явагдсан.",
+  "order_index": 24,
+  "id": "hsk3-l13-q24",
+  "skillTags": [
+   "grammar",
+   "yibian-yibian"
+  ],
+  "difficulty": "medium"
+ }
+]

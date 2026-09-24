@@ -1,0 +1,458 @@
+[
+ {
+  "type": "cloze",
+  "question": "________快到了，快去洗水果。",
+  "options": [
+   "客人",
+   "比赛",
+   "饿",
+   "超市",
+   "认真"
+  ],
+  "correct_answer": "客人",
+  "explanation": "Жимс угааж бэлтгэж байгаа нь хэн нэгнийг хүлээн авах гэж байгаа хэрэг — «客人快到了» (зочид удахгүй ирнэ).",
+  "order_index": 1,
+  "id": "hsk3-l04-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "工作到下午三点的时候，我常常很________。",
+  "options": [
+   "比赛",
+   "超市",
+   "饿",
+   "认真",
+   "客人"
+  ],
+  "correct_answer": "饿",
+  "explanation": "Үдээс хойш 3 цаг хүртэл ажиллахад «很饿» — их өлсдөг. «很»-ийн ард тэмдэг нэр орно.",
+  "order_index": 2,
+  "id": "hsk3-l04-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这是什么________？你能给我介绍一下吗？",
+  "options": [
+   "认真",
+   "客人",
+   "饿",
+   "超市",
+   "比赛"
+  ],
+  "correct_answer": "比赛",
+  "explanation": "«这是什么比赛？» — энэ ямар тэмцээн бэ? Танилцуулж өгөх юм нь тэмцээн.",
+  "order_index": 3,
+  "id": "hsk3-l04-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我下楼去________买点儿东西。",
+  "options": [
+   "饿",
+   "认真",
+   "超市",
+   "比赛",
+   "客人"
+  ],
+  "correct_answer": "超市",
+  "explanation": "«去 + газар + 买东西» — юм авахаар очих газар нь «超市» (супермаркет).",
+  "order_index": 4,
+  "id": "hsk3-l04-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "A：你怎么还看电视？不________学习，怎么能找到好工作呢？ B：我只看了半个小时。",
+  "options": [
+   "总是",
+   "努力",
+   "照片",
+   "年级",
+   "蛋糕"
+  ],
+  "correct_answer": "努力",
+  "explanation": "«努力学习» — хичээнгүйлэн сурах. Сайн ажил олохын тулд шаргуу сурах ёстой гэж зэмлэж байна.",
+  "order_index": 5,
+  "id": "hsk3-l04-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "A：这张________是什么时候的？ B：是我妈妈小时候的。",
+  "options": [
+   "年级",
+   "蛋糕",
+   "总是",
+   "照片",
+   "努力"
+  ],
+  "correct_answer": "照片",
+  "explanation": "«这张» — 张 нь хавтгай зүйлийн тоо нэр; «ээжийн бага байхын» гэж хариулсан тул «照片» (гэрэл зураг).",
+  "order_index": 6,
+  "id": "hsk3-l04-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "A：你怎么________想睡觉？ B：我工作太累了，起得早，睡得晚。",
+  "options": [
+   "照片",
+   "年级",
+   "努力",
+   "蛋糕",
+   "总是"
+  ],
+  "correct_answer": "总是",
+  "explanation": "«总是想睡觉» — үргэлж нойр хүрэх. Эрт босч, орой унтдаг тул байнга нойрмог байгаа.",
+  "order_index": 7,
+  "id": "hsk3-l04-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "A：这位老人是谁？ B：她是我一________时候的老师，现在已经70岁了。",
+  "options": [
+   "蛋糕",
+   "年级",
+   "照片",
+   "总是",
+   "努力"
+  ],
+  "correct_answer": "年级",
+  "explanation": "«一年级时候的老师» — нэгдүгээр ангид байхдаа сурсан багш.",
+  "order_index": 8,
+  "id": "hsk3-l04-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "cloze",
+  "question": "这家超市的蛋糕又便宜________好吃。",
+  "options": [
+   "也",
+   "很",
+   "又",
+   "还"
+  ],
+  "correct_answer": "又",
+  "explanation": "«又A又B» бүтэц — эхэнд «又便宜» байгаа тул хоёр дахь шинжийн өмнө ч «又»: 又便宜又好吃.",
+  "order_index": 9,
+  "id": "hsk3-l04-q09",
+  "skillTags": [
+   "grammar",
+   "you-you-two-qualities"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我现在又累又________，你让我休息一下吧。",
+  "options": [
+   "饿",
+   "暖和",
+   "高兴",
+   "年轻"
+  ],
+  "correct_answer": "饿",
+  "explanation": "«又累又饿» — ядарсан бас өлссөн; хоёулаа амрах шалтгаан болж, зэрэг байж болох байдал.",
+  "order_index": 10,
+  "id": "hsk3-l04-q10",
+  "skillTags": [
+   "grammar",
+   "you-you-two-qualities"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "她总是笑________跟客人说话。",
+  "options": [
+   "了",
+   "过",
+   "的",
+   "着"
+  ],
+  "correct_answer": "着",
+  "explanation": "«笑着» — дагалдах үйлдэл: инээмсэглэн ярих. V1-ийн ард «着» орж, гол үйлдэл (跟客人说话)-ийн байдлыг заана.",
+  "order_index": 11,
+  "id": "hsk3-l04-q11",
+  "skillTags": [
+   "grammar",
+   "accompanying-action-v-zhe"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我们不能________开车。",
+  "options": [
+   "打电话着",
+   "打着电话",
+   "着打电话",
+   "打电话了"
+  ],
+  "correct_answer": "打着电话",
+  "explanation": "V1着O1 + V2: «打着电话开车» — утсаар ярьсаар машин барих. «着» үйл үгийн ард, тусагдахууны өмнө.",
+  "order_index": 12,
+  "id": "hsk3-l04-q12",
+  "skillTags": [
+   "grammar",
+   "accompanying-action-v-zhe"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：那张照片是什么时候照的？",
+  "options": [
+   "比赛前照的",
+   "比赛后照的",
+   "上课的时候照的",
+   "二年级的时候照的"
+  ],
+  "correct_answer": "比赛后照的",
+  "explanation": "Марко «这是我们比赛后照的» гэж хэлсэн — тэмцээний дараа авахуулсан.",
+  "order_index": 13,
+  "id": "hsk3-l04-q13",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：照片里马可在做什么？",
+  "options": [
+   "站着看书",
+   "拿着鲜花站在门口",
+   "拿着书笑",
+   "跟女孩儿说话"
+  ],
+  "correct_answer": "拿着书笑",
+  "explanation": "Сяо Мин «旁边那个拿着书笑的人是谁？» гэж асуухад Марко «那是我！» гэсэн — ном барьчихаад инээж байгаа нь Марко.",
+  "order_index": 14,
+  "id": "hsk3-l04-q14",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：同学觉得小红怎么样？",
+  "options": [
+   "又高又漂亮",
+   "又年轻又认真",
+   "总是不高兴",
+   "又聪明又热情，也很努力"
+  ],
+  "correct_answer": "又聪明又热情，也很努力",
+  "explanation": "Ангийн хүү «她又聪明又热情，也很努力» гэж хариулсан.",
+  "order_index": 15,
+  "id": "hsk3-l04-q15",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：小刚和小丽为什么去超市？",
+  "options": [
+   "小刚有点儿饿了",
+   "小丽想买咖啡",
+   "超市的蛋糕很贵",
+   "他们要看电视"
+  ],
+  "correct_answer": "小刚有点儿饿了",
+  "explanation": "Сяоган «我有点儿饿了，我们进超市买点儿东西吧» гэсэн — өлссөн учраас орсон.",
+  "order_index": 16,
+  "id": "hsk3-l04-q16",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：小刚和小丽回家后打算做什么？",
+  "options": [
+   "去饭馆吃饭",
+   "站着喝咖啡",
+   "吃着蛋糕看电视",
+   "给朋友打电话"
+  ],
+  "correct_answer": "吃着蛋糕看电视",
+  "explanation": "Сяоган «回家吃着蛋糕看电视，怎么样？» гэж санал болгосон — бялуу идэнгээ зурагт үзэх.",
+  "order_index": 17,
+  "id": "hsk3-l04-q17",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文4：客人要找的服务员是谁？她怎么样？",
+  "options": [
+   "小红，她又聪明又热情",
+   "李小美，她又年轻又漂亮，总是笑着跟客人说话",
+   "李小美，她工作不太认真",
+   "经理，他又年轻又热情"
+  ],
+  "correct_answer": "李小美，她又年轻又漂亮，总是笑着跟客人说话",
+  "explanation": "Зочин «又年轻又漂亮…工作又认真又热情…总是笑着跟客人说话» гэж тайлбарлахад менежер «你说的是李小美吧？» гэсэн.",
+  "order_index": 18,
+  "id": "hsk3-l04-q18",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Тэр өндөр бас хөөрхөн» — аль нь зөв бэ?",
+  "options": [
+   "她又高漂亮。",
+   "她很又高又漂亮。",
+   "她高又又漂亮。",
+   "她又高又漂亮。"
+  ],
+  "correct_answer": "她又高又漂亮。",
+  "explanation": "Шинж бүрийн өмнө «又»: 又高又漂亮. Өмнө нь «很» тавихгүй, «又»-г орхихгүй.",
+  "order_index": 19,
+  "id": "hsk3-l04-q19",
+  "skillTags": [
+   "grammar",
+   "you-you-two-qualities"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль өгүүлбэр БУРУУ вэ?",
+  "options": [
+   "外边又黑又冷。",
+   "这个西瓜又大又甜。",
+   "今天又冷又暖和。",
+   "服务员又年轻又漂亮。"
+  ],
+  "correct_answer": "今天又冷又暖和。",
+  "explanation": "«冷» ба «暖和» зөрчилтэй — зэрэг байх боломжгүй тул «又……又……»-ээр холбохгүй (багшийн номын анхааруулга).",
+  "order_index": 20,
+  "id": "hsk3-l04-q20",
+  "skillTags": [
+   "grammar",
+   "you-you-two-qualities"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль өгүүлбэрт «又» нь «дахиад» биш, харин «…бас …» (хоёр шинж зэрэг) гэсэн утгатай вэ?",
+  "options": [
+   "这个蛋糕又便宜又好吃。",
+   "他又来了。",
+   "你怎么又没吃早饭？",
+   "他昨天又去超市了。"
+  ],
+  "correct_answer": "这个蛋糕又便宜又好吃。",
+  "explanation": "«又便宜又好吃» — хоёр шинжийг холбосон 又…又… бүтэц. Бусад өгүүлбэрт ганц «又» нь үйлдэл давтагдсаныг («дахиад») заана.",
+  "order_index": 21,
+  "id": "hsk3-l04-q21",
+  "skillTags": [
+   "grammar",
+   "you-you-two-qualities"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Дүү маань алим идэнгээ даалгавраа хийж байна» — аль нь зөв бэ?",
+  "options": [
+   "弟弟吃苹果着写作业。",
+   "弟弟吃着苹果写作业。",
+   "弟弟着吃苹果写作业。",
+   "弟弟吃着写作业苹果。"
+  ],
+  "correct_answer": "弟弟吃着苹果写作业。",
+  "explanation": "V1着O1 + V2O2: 吃着苹果 (дагалдах) + 写作业 (гол үйлдэл). «着» нь 吃-ийн ард, 苹果-ийн өмнө.",
+  "order_index": 22,
+  "id": "hsk3-l04-q22",
+  "skillTags": [
+   "grammar",
+   "accompanying-action-v-zhe"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«他们站着聊天儿。» — өгүүлбэрийн ГОЛ үйлдэл аль нь вэ?",
+  "options": [
+   "站",
+   "他们",
+   "站着",
+   "聊天儿"
+  ],
+  "correct_answer": "聊天儿",
+  "explanation": "Хоёр үйл үгийн ХОЁРДУГААР нь гол үйлдэл; «站着» нь хэрхэн (зогсоогоороо) ярилцаж байгааг заана.",
+  "order_index": 23,
+  "id": "hsk3-l04-q23",
+  "skillTags": [
+   "grammar",
+   "accompanying-action-v-zhe"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль өгүүлбэрт «着» хоёр үйлдлийг зэрэг явагдаж байгааг (дагалдах үйлдэл) заасан бэ?",
+  "options": [
+   "桌子上放着很多饮料。",
+   "教室里坐着15个学生。",
+   "门口站着很多人。",
+   "她总是笑着回答老师的问题。"
+  ],
+  "correct_answer": "她总是笑着回答老师的问题。",
+  "explanation": "«笑着回答» — инээмсэглэн хариулах: V1着 + V2. Бусад нь «Байршил + V着 + NP» оршихуйн өгүүлбэр (3-р хичээл).",
+  "order_index": 24,
+  "id": "hsk3-l04-q24",
+  "skillTags": [
+   "grammar",
+   "accompanying-action-v-zhe"
+  ],
+  "difficulty": "hard"
+ }
+]

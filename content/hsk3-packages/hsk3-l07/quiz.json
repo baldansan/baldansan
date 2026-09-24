@@ -1,0 +1,458 @@
+[
+ {
+  "type": "cloze",
+  "question": "我给你介绍一下，这是我的________小王。",
+  "options": [
+   "银行",
+   "同事",
+   "结婚",
+   "迟到",
+   "刻"
+  ],
+  "correct_answer": "同事",
+  "explanation": "«这是我的…小王» — хүнийг танилцуулж байгаа тул «同事» (хамт ажилладаг хүн) таарна.",
+  "order_index": 1,
+  "id": "hsk3-l07-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "________你来我家玩儿。",
+  "options": [
+   "同事",
+   "银行",
+   "迟到",
+   "刻",
+   "欢迎"
+  ],
+  "correct_answer": "欢迎",
+  "explanation": "«欢迎你来…» — «…ирээрэй, чамайг урьж байна» гэсэн урилгын хэллэг.",
+  "order_index": 2,
+  "id": "hsk3-l07-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我是________十分八点到公司的。",
+  "options": [
+   "差",
+   "以前",
+   "久",
+   "半",
+   "接"
+  ],
+  "correct_answer": "差",
+  "explanation": "«差十分八点» — найман цагт арван минут дутуу (7:50). «差» бүхэл цагийн өмнө ирнэ.",
+  "order_index": 3,
+  "id": "hsk3-l07-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "来中国________，我学了一年汉语。",
+  "options": [
+   "同事",
+   "久",
+   "以前",
+   "欢迎",
+   "差"
+  ],
+  "correct_answer": "以前",
+  "explanation": "«来中国以前» — Хятадад ирэхээсээ өмнө. «以前» үйл үгийн ард ирж «…-ээс өмнө» гэсэн утга өгнө.",
+  "order_index": 4,
+  "id": "hsk3-l07-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "A：你今天怎么________了？ B：对不起，我起晚了。",
+  "options": [
+   "结婚",
+   "迟到",
+   "欢迎",
+   "接",
+   "半"
+  ],
+  "correct_answer": "迟到",
+  "explanation": "«Уучлаарай, би хожуу боссон» гэсэн хариулт нь хоцорсон шалтгаан — «迟到».",
+  "order_index": 5,
+  "id": "hsk3-l07-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "A：你现在要去哪儿？ B：我去机场________一个朋友。",
+  "options": [
+   "迟到",
+   "银行",
+   "刻",
+   "接",
+   "以前"
+  ],
+  "correct_answer": "接",
+  "explanation": "«去机场接朋友» — нисэх буудал дээр найзаа тосох/очиж авах.",
+  "order_index": 6,
+  "id": "hsk3-l07-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "A：请问，哪儿有________？ B：一直往前走，超市的旁边。",
+  "options": [
+   "结婚",
+   "迟到",
+   "久",
+   "差",
+   "银行"
+  ],
+  "correct_answer": "银行",
+  "explanation": "«哪儿有…？» гэж газар асууж, «дэлгүүрийн хажууд» гэж хариулсан тул газрын нэр — «银行» (банк).",
+  "order_index": 7,
+  "id": "hsk3-l07-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "A：下个月我们就要________了。 B：什么？你们不是刚认识吗？",
+  "options": [
+   "结婚",
+   "银行",
+   "同事",
+   "刻",
+   "以前"
+  ],
+  "correct_answer": "结婚",
+  "explanation": "«Та хоёр саяхан л танилцсан биш билүү?» гэж гайхсан тул «结婚» (гэрлэх) — яриа 3-тай ижил нөхцөл.",
+  "order_index": 8,
+  "id": "hsk3-l07-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我们坐了________公共汽车。",
+  "options": [
+   "几点",
+   "七点半",
+   "一个小时",
+   "一点"
+  ],
+  "correct_answer": "一个小时",
+  "explanation": "Үйл үгийн ард, тусагдахууны өмнө хугацааны УРТ ирнэ: 坐了一个小时公共汽车 (нэг цаг автобусаар явсан). 几点、七点半 бол цагийн цэг.",
+  "order_index": 9,
+  "id": "hsk3-l07-q09",
+  "skillTags": [
+   "grammar",
+   "time-duration"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我学习了一年汉语________。（Одоо ч сурч байгаа.）",
+  "options": [
+   "的",
+   "过",
+   "着",
+   "了"
+  ],
+  "correct_answer": "了",
+  "explanation": "Одоо ч үргэлжилж буй үйлдлийн хугацааг «V + 了 + хугацаа + O + 了» гэж төгсгөлд дахин «了» нэмж хэлнэ.",
+  "order_index": 10,
+  "id": "hsk3-l07-q10",
+  "skillTags": [
+   "grammar",
+   "time-duration"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "他们________电影感兴趣。",
+  "options": [
+   "跟",
+   "对",
+   "给",
+   "在"
+  ],
+  "correct_answer": "对",
+  "explanation": "Сонирхох зүйлийг «对»-оор оруулна: 对电影感兴趣 — кино сонирхдог.",
+  "order_index": 11,
+  "id": "hsk3-l07-q11",
+  "skillTags": [
+   "grammar",
+   "interest"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "A：看一下手表，现在几点了？ B：________一刻八点。",
+  "options": [
+   "半",
+   "刻",
+   "差",
+   "久"
+  ],
+  "correct_answer": "差",
+  "explanation": "«差一刻八点» — найман цагт 15 минут дутуу (7:45); «差» бүхэл цагийн өмнө ирнэ (дасгалын ном 29).",
+  "order_index": 12,
+  "id": "hsk3-l07-q12",
+  "skillTags": [
+   "grammar",
+   "ban-ke-cha"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：小丽以前在哪儿工作？工作了多长时间？",
+  "options": [
+   "在银行工作了三年",
+   "在银行工作了两年",
+   "在学校工作了两年",
+   "在北京的公司工作了五年"
+  ],
+  "correct_answer": "在银行工作了两年",
+  "explanation": "Сяо Ган «她在银行工作了两年以后来的我们公司» гэсэн — банкинд хоёр жил ажилласан. «三年» бол Бээжинд ажилласан хугацаа.",
+  "order_index": 13,
+  "id": "hsk3-l07-q13",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：小刚和小丽周末做什么了？",
+  "options": [
+   "去看电影了",
+   "在家听了两个小时音乐",
+   "去唱了两个小时歌，晚上还去听音乐会了",
+   "去唱歌了，还去银行了"
+  ],
+  "correct_answer": "去唱了两个小时歌，晚上还去听音乐会了",
+  "explanation": "«我们唱了两个小时歌，晚上还去听音乐会了» — хоёр цаг дуулж, орой нь концерт сонсохоор явсан.",
+  "order_index": 14,
+  "id": "hsk3-l07-q14",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：小丽对什么感兴趣？小刚呢？",
+  "options": [
+   "小丽对音乐感兴趣，小刚对小丽更感兴趣",
+   "他们都对音乐不感兴趣",
+   "小丽对小刚感兴趣，小刚对音乐感兴趣",
+   "小丽对唱歌不感兴趣，小刚对音乐感兴趣"
+  ],
+  "correct_answer": "小丽对音乐感兴趣，小刚对小丽更感兴趣",
+  "explanation": "Сяо Ган «她对音乐感兴趣，我对她更感兴趣» гэж хошигносон — Сяо Ли дуу хөгжим, Сяо Ган Сяо Лиг илүү сонирхдог.",
+  "order_index": 15,
+  "id": "hsk3-l07-q15",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：小刚和小丽什么时候结婚？",
+  "options": [
+   "下个星期",
+   "明年",
+   "五年以后",
+   "下个月"
+  ],
+  "correct_answer": "下个月",
+  "explanation": "«我跟小丽下个月结婚» — ирэх сард гэрлэнэ.",
+  "order_index": 16,
+  "id": "hsk3-l07-q16",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：同事为什么觉得小刚结婚很突然？",
+  "options": [
+   "因为他觉得小刚和小丽刚认识",
+   "因为小刚没请他去",
+   "因为小丽要去银行工作",
+   "因为小刚迟到了"
+  ],
+  "correct_answer": "因为他觉得小刚和小丽刚认识",
+  "explanation": "Хамтран ажиллагч «你们不是刚认识吗？» (саяхан л танилцсан биш билүү?) гэж гайхсан; үнэндээ тэд таван жилийн өмнөөс танил.",
+  "order_index": 17,
+  "id": "hsk3-l07-q17",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文4：小刚迟到了吗？为什么？",
+  "options": [
+   "迟到了一刻钟，因为他起晚了",
+   "没迟到，小丽的手表快了一刻钟",
+   "迟到了半个小时",
+   "没迟到，小丽来晚了"
+  ],
+  "correct_answer": "没迟到，小丽的手表快了一刻钟",
+  "explanation": "«不是我迟到了，是你的表快了一刻钟» — Сяо Ган хоцроогүй, Сяо Лигийн цаг 15 минут түрүүлсэн байсан (багшийн номын хариулт).",
+  "order_index": 18,
+  "id": "hsk3-l07-q18",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Бид хоёр цаг дуу дуулсан» — аль нь зөв бэ?",
+  "options": [
+   "我们唱歌了两个小时。",
+   "我们唱了两个小时歌。",
+   "我们两个小时唱了歌。",
+   "我们唱了歌两个小时。"
+  ],
+  "correct_answer": "我们唱了两个小时歌。",
+  "explanation": "V + 了 + хугацаа + O: «了» үйл үгийн ард, дараа нь хугацаа (两个小时), тусагдахуун (歌) хамгийн сүүлд.",
+  "order_index": 19,
+  "id": "hsk3-l07-q19",
+  "skillTags": [
+   "grammar",
+   "time-duration"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文4：«我都在这儿坐了半个小时了。» — ямар утгатай вэ?",
+  "options": [
+   "Би энд хагас цагийн дараа сууна",
+   "Би энд долоон хагаст суусан",
+   "Би энд суугаад аль хэдийн хагас цаг боллоо (одоо ч сууж байна)",
+   "Бид бүгдээрээ энд хагас цаг суусан"
+  ],
+  "correct_answer": "Би энд суугаад аль хэдийн хагас цаг боллоо (одоо ч сууж байна)",
+  "explanation": "Төгсгөлийн «了» нь үйлдэл одоо ч үргэлжилж байгааг, «都……了» нь «аль хэдийн» гэсэн утгыг өгнө — «бүгд» гэсэн утга биш.",
+  "order_index": 20,
+  "id": "hsk3-l07-q20",
+  "skillTags": [
+   "grammar",
+   "time-duration"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Би хятад хэлийг их сонирхдог» — аль нь зөв бэ?",
+  "options": [
+   "我很对汉语感兴趣。",
+   "我感兴趣很对汉语。",
+   "我对很汉语感兴趣。",
+   "我对汉语很感兴趣。"
+  ],
+  "correct_answer": "我对汉语很感兴趣。",
+  "explanation": "A + 对 + B + 很 + 感兴趣: зэргийн дайвар үг «感兴趣»-ийн яг өмнө орно.",
+  "order_index": 21,
+  "id": "hsk3-l07-q21",
+  "skillTags": [
+   "grammar",
+   "interest"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Миний хүү сагсан бөмбөг тоглохыг сонирхдоггүй» — аль нь зөв бэ?",
+  "options": [
+   "我儿子对打篮球不有兴趣。",
+   "我儿子对打篮球不感兴趣。",
+   "我儿子感兴趣不打篮球。",
+   "我儿子不打篮球感兴趣。"
+  ],
+  "correct_answer": "我儿子对打篮球不感兴趣。",
+  "explanation": "Үгүйсгэл: 对……不感兴趣 (эсвэл 对……没有兴趣). «有»-ийг «不»-оор үгүйсгэхгүй.",
+  "order_index": 22,
+  "id": "hsk3-l07-q22",
+  "skillTags": [
+   "grammar",
+   "interest"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文4：«已经差一刻八点了！» — Сяо Лигийн цагаар хэдэн цаг болж байна?",
+  "options": [
+   "8:15",
+   "8:45",
+   "7:15",
+   "7:45"
+  ],
+  "correct_answer": "7:45",
+  "explanation": "«差一刻八点» = найман цагт 15 минут (一刻) дутуу = 7:45.",
+  "order_index": 23,
+  "id": "hsk3-l07-q23",
+  "skillTags": [
+   "grammar",
+   "ban-ke-cha"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Би чамайг 15 минут хүлээсэн» — аль нь зөв бэ?",
+  "options": [
+   "我等了你一刻。",
+   "我等了你一刻钟。",
+   "我一刻钟等了你。",
+   "我差一刻等了你。"
+  ],
+  "correct_answer": "我等了你一刻钟。",
+  "explanation": "Хугацааны урт (15 минут) бол «一刻钟», үйл үгийн ард ирнэ; «一刻» (钟-гүй) нь 八点一刻 гэх мэт цагийн цэгт.",
+  "order_index": 24,
+  "id": "hsk3-l07-q24",
+  "skillTags": [
+   "grammar",
+   "ban-ke-cha"
+  ],
+  "difficulty": "hard"
+ }
+]

@@ -1,0 +1,114 @@
+[
+ {
+  "chinese": "照相机",
+  "pinyin": "zhàoxiàngjī",
+  "mongolian": "зургийн аппарат, камер",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我的照相机被谁拿走了？怎么找不到了？",
+  "exampleMongolian": "Миний зургийн аппаратыг хэн авчихав аа? Яагаад олдохгүй байна аа?"
+ },
+ {
+  "chinese": "被",
+  "pinyin": "bèi",
+  "mongolian": "(үйлдэгдэх хэвийг заах угтвар) …-д, …-аар (үйлдэгдэх): 被他影响 — түүний нөлөөнд орох",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我们经常被别人认错。",
+  "exampleMongolian": "Биднийг хүмүүс байнга андуурдаг."
+ },
+ {
+  "chinese": "难过",
+  "pinyin": "nánguò",
+  "mongolian": "гунигтай, сэтгэл гонсгор (别难过 — битгий гуниглаарай)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "别难过，再买一个吧。",
+  "exampleMongolian": "Битгий гуниглаарай, дахиад нэгийг аваад л болоо."
+ },
+ {
+  "chinese": "东",
+  "pinyin": "dōng",
+  "mongolian": "зүүн (зүг) (东门 — зүүн хаалга, 东边 — зүүн тал)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "公司东门外不就有一个大商场吗？",
+  "exampleMongolian": "Компанийн зүүн хаалганы гадна том худалдааны төв байгаа биз дээ?"
+ },
+ {
+  "chinese": "信用卡",
+  "pinyin": "xìnyòngkǎ",
+  "mongolian": "зээлийн карт",
+  "hskLevel": "HSK3",
+  "exampleChinese": "但是我这个月信用卡里的钱已经花得差不多了。",
+  "exampleMongolian": "Гэхдээ энэ сард зээлийн картандаа байсан мөнгөө бараг дуусгачихсан юм."
+ },
+ {
+  "chinese": "关心",
+  "pinyin": "guānxīn",
+  "mongolian": "санаа тавих, анхаарал тавих; сонирхох (关心学生 — сурагчдад санаа тавих; 关心体育 — спорт сонирхох)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "你怎么突然关心起体育来了？",
+  "exampleMongolian": "Чи яагаад гэнэт спорт сонирхох болчихов?"
+ },
+ {
+  "chinese": "只有……才……",
+  "pinyin": "zhǐyǒu……cái……",
+  "mongolian": "зөвхөн …-сан тохиолдолд л … (цорын ганц нөхцөл)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "看来只有爱，才能让人有变化。",
+  "exampleMongolian": "Хүнийг зөвхөн хайр л өөрчилж чаддаг бололтой."
+ },
+ {
+  "chinese": "成绩",
+  "pinyin": "chéngjì",
+  "mongolian": "дүн, амжилт (考试成绩 — шалгалтын дүн)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我最近天天上网玩儿游戏，我的成绩差极了。",
+  "exampleMongolian": "Би сүүлийн үед өдөр бүр интернэтэд орж тоглоом тоглодог болсон, дүн маань маш муу болчихсон."
+ },
+ {
+  "chinese": "碗",
+  "pinyin": "wǎn",
+  "mongolian": "аяга (хоолны)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "那个拿着碗吃饭的人是你哥哥吗？",
+  "exampleMongolian": "Тэр аяга барьчихсан хоол идэж байгаа хүн чиний ах уу?"
+ },
+ {
+  "chinese": "分",
+  "pinyin": "fēn",
+  "mongolian": "ялгах (分出来 — ялгаж таних)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "只有你们的爸爸妈妈才能分出来哪个是哥哥，哪个是弟弟吧。",
+  "exampleMongolian": "Аль нь ах, аль нь дүү болохыг зөвхөн аав ээж чинь л ялгаж чадах байх даа."
+ },
+ {
+  "chinese": "解决",
+  "pinyin": "jiějué",
+  "mongolian": "шийдвэрлэх, шийдэх (解决问题 — асуудал шийдвэрлэх)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "其实，不同的问题有不同的解决办法。",
+  "exampleMongolian": "Үнэндээ өөр өөр асуудалд өөр өөр шийдэх арга байдаг."
+ },
+ {
+  "chinese": "试",
+  "pinyin": "shì",
+  "mongolian": "оролдох, туршиж үзэх (试一试 / 试试看 — оролдоод үз)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "有些问题得试着做做。",
+  "exampleMongolian": "Зарим асуудлыг оролдоод хийгээд үзэх хэрэгтэй."
+ },
+ {
+  "chinese": "真正",
+  "pinyin": "zhēnzhèng",
+  "mongolian": "жинхэнэ, үнэхээр",
+  "hskLevel": "HSK3",
+  "exampleChinese": "只有真正做事情的时候，才能了解有多难。",
+  "exampleMongolian": "Зөвхөн тэр ажлыг жинхэнэ хийж үзэх үедээ л хэр хэцүүг нь мэдэж чадна."
+ },
+ {
+  "chinese": "多么",
+  "pinyin": "duōme",
+  "mongolian": "ямар их, ямар… вэ (多么漂亮啊 — ямар гоё юм бэ); 多么…都… — хичнээн … ч гэсэн",
+  "hskLevel": "HSK3",
+  "exampleChinese": "多么难的问题，都会被解决的。",
+  "exampleMongolian": "Хичнээн хэцүү асуудал ч гэсэн заавал шийдэгдэнэ."
+ }
+]

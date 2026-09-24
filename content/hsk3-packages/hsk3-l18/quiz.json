@@ -1,0 +1,458 @@
+[
+ {
+  "type": "cloze",
+  "question": "你是从哪个________来的？",
+  "options": [
+   "动物",
+   "国家",
+   "地",
+   "向",
+   "而且"
+  ],
+  "correct_answer": "国家",
+  "explanation": "«从哪个国家来» — аль улсаас ирсэн бэ. Газар, улсыг заасан үг зөвхөн «国家».",
+  "order_index": 1,
+  "id": "hsk3-l18-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "坐火车的时候，我喜欢________外看。",
+  "options": [
+   "国家",
+   "地",
+   "动物",
+   "向",
+   "而且"
+  ],
+  "correct_answer": "向",
+  "explanation": "«向外看» — гадагш харах. «向» нь үйлдлийн чиглэлийг заадаг угтвар үг.",
+  "order_index": 2,
+  "id": "hsk3-l18-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "这家饭馆不但菜很好吃，________环境很好。",
+  "options": [
+   "而且",
+   "向",
+   "国家",
+   "地",
+   "动物"
+  ],
+  "correct_answer": "而且",
+  "explanation": "«不但……而且……» — хос холбоос: хоол нь амттай төдийгүй орчин нь бас сайхан.",
+  "order_index": 3,
+  "id": "hsk3-l18-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "小孩子喜欢快乐________学习。",
+  "options": [
+   "向",
+   "而且",
+   "动物",
+   "国家",
+   "地"
+  ],
+  "correct_answer": "地",
+  "explanation": "«快乐地学习» — баяр хөөртэй сурах. Үйл үгийн өмнөх байдлын тодотголыг «地»-оор холбоно.",
+  "order_index": 4,
+  "id": "hsk3-l18-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "A：你打算现在买房子吗？ B：过一________时间以后再说吧。",
+  "options": [
+   "机会",
+   "关于",
+   "段",
+   "同意",
+   "奇怪"
+  ],
+  "correct_answer": "段",
+  "explanation": "«一段时间» — хэсэг хугацаа. «段» нь хугацааны тооны нэр.",
+  "order_index": 5,
+  "id": "hsk3-l18-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "A：你怎么要去北京了？ B：那儿的工作________比较多。",
+  "options": [
+   "段",
+   "机会",
+   "奇怪",
+   "关于",
+   "同意"
+  ],
+  "correct_answer": "机会",
+  "explanation": "«工作机会» — ажлын боломж. Бээжинд ажлын боломж их гэдэг шалтгаанаа хэлж байна.",
+  "order_index": 6,
+  "id": "hsk3-l18-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "A：真________，桌子上的词典怎么不见了？ B：刚才马可拿走了。",
+  "options": [
+   "同意",
+   "段",
+   "机会",
+   "奇怪",
+   "关于"
+  ],
+  "correct_answer": "奇怪",
+  "explanation": "«真奇怪» — үнэхээр хачин юм. Толь бичиг алга болсонд гайхаж байна.",
+  "order_index": 7,
+  "id": "hsk3-l18-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "A：我觉得这儿的房子挺便宜的，我们在这儿买吧。 B：我不________，虽然很便宜，但是离公司太远了。",
+  "options": [
+   "同意",
+   "奇怪",
+   "关于",
+   "机会",
+   "段"
+  ],
+  "correct_answer": "同意",
+  "explanation": "«我不同意» — би зөвшөөрөхгүй (санал нийлэхгүй). Хямд ч ажлаас хол гэж татгалзаж байна.",
+  "order_index": 8,
+  "id": "hsk3-l18-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "A：你给我介绍几个________中国文化的电影吧。 B：好，没问题。",
+  "options": [
+   "只要",
+   "关于",
+   "向",
+   "而且"
+  ],
+  "correct_answer": "关于",
+  "explanation": "«关于中国文化的电影» — Хятадын соёлын тухай кино. «关于 + N + 的» нэр үгийг тодотгоно (сурах бичгийн 练习 2 ⑨).",
+  "order_index": 9,
+  "id": "hsk3-l18-q09",
+  "skillTags": [
+   "grammar",
+   "preposition-guanyu"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "A：爸爸，周末我想去公园玩儿。 B：好啊，________不下雨，我就带你去。",
+  "options": [
+   "关于",
+   "相信",
+   "只要",
+   "而且"
+  ],
+  "correct_answer": "只要",
+  "explanation": "«只要不下雨，我就带你去» — бороо л ороогүй бол аваачна. Ард нь «就» байгаа нь «只要» гэдгийг харуулна (дасгалын ном 30).",
+  "order_index": 10,
+  "id": "hsk3-l18-q10",
+  "skillTags": [
+   "grammar",
+   "zhiyao-jiu"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "只要我愿意，我相信他们________会同意的。",
+  "options": [
+   "才",
+   "地",
+   "向",
+   "就"
+  ],
+  "correct_answer": "就",
+  "explanation": "«只要……就……» хос: «Би л хүсвэл тэд зөвшөөрнө». «才» нь «只要»-тэй хослохгүй (яриа 3).",
+  "order_index": 11,
+  "id": "hsk3-l18-q11",
+  "skillTags": [
+   "grammar",
+   "zhiyao-jiu"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "________出国学习的事，妈妈已经同意了。",
+  "options": [
+   "关于",
+   "只要",
+   "向",
+   "地"
+  ],
+  "correct_answer": "关于",
+  "explanation": "Өгүүлбэрийн эхэнд «关于 + N，…» — юуны тухай ярьж байгааг урьдчилан хэлнэ: гадаадад сурах тухайд ээж зөвшөөрсөн (注释 жишээ).",
+  "order_index": 12,
+  "id": "hsk3-l18-q12",
+  "skillTags": [
+   "grammar",
+   "preposition-guanyu"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：朋友为什么向老周借钱？",
+  "options": [
+   "他要去旅游",
+   "他打算买房子",
+   "他生病了，要去医院",
+   "他要买车"
+  ],
+  "correct_answer": "他打算买房子",
+  "explanation": "Найз нь «我打算买房子了，想向你借点儿钱» гэж хэлсэн — байр авах гэж мөнгө зээлж байна.",
+  "order_index": 13,
+  "id": "hsk3-l18-q13",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：朋友还差多少钱？他打算在哪儿买房？",
+  "options": [
+   "还差3万块钱，在医院前面",
+   "还差5万块钱，在公司前面",
+   "还差5万块钱，在医院前面",
+   "还差5千块钱，在医院后面"
+  ],
+  "correct_answer": "还差5万块钱，在医院前面",
+  "explanation": "«还差5万块钱» (50 000 юань дутуу), «就在我们医院前面» (манай эмнэлгийн яг урд) гэж хэлсэн.",
+  "order_index": 14,
+  "id": "hsk3-l18-q14",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：小明的妈妈为什么觉得小明照顾不好小狗？",
+  "options": [
+   "小狗太小了",
+   "小明要上学，没有时间",
+   "家里已经有一只小猫了",
+   "这段时间小明自己的衣服都没洗"
+  ],
+  "correct_answer": "这段时间小明自己的衣服都没洗",
+  "explanation": "Ээж нь «这段时间你自己的衣服都没洗，你能照顾好它吗？» гэж хэлсэн — өөрийнхөө хувцсыг ч угаадаггүй хүүхэд нохойг сайн асрахгүй гэж бодож байна.",
+  "order_index": 15,
+  "id": "hsk3-l18-q15",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：学生为什么选择来这个公司工作？",
+  "options": [
+   "这个公司不但很有名，而且工作环境好",
+   "这个工作不累",
+   "这个公司离他家很近",
+   "这个工作不用经常去外地"
+  ],
+  "correct_answer": "这个公司不但很有名，而且工作环境好",
+  "explanation": "Оюутан «贵公司不但很有名，而且工作环境好» гэж хариулсан. Харин ажил нь ядаргаатай, байнга өөр хот руу явах хэрэгтэй.",
+  "order_index": 16,
+  "id": "hsk3-l18-q16",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：经理觉得这个工作怎么样？",
+  "options": [
+   "很轻松，工资很高",
+   "很有名，工作环境好",
+   "有点儿累，需要经常去外地",
+   "不累，不用去外地"
+  ],
+  "correct_answer": "有点儿累，需要经常去外地",
+  "explanation": "Менежер «做这个工作有点儿累，需要经常去外地» гэж хэлсэн. «很有名，工作环境好» гэдэг нь оюутны компанийн тухай хэлсэн үг.",
+  "order_index": 17,
+  "id": "hsk3-l18-q17",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文4：到了一个新环境，人们会怎么样？",
+  "options": [
+   "马上就会习惯",
+   "觉得什么都不新鲜",
+   "一直觉得很奇怪，不会习惯",
+   "觉得很新鲜，还有点奇怪，经过一段时间就会慢慢习惯"
+  ],
+  "correct_answer": "觉得很新鲜，还有点奇怪，经过一段时间就会慢慢习惯",
+  "explanation": "Бичвэрт: эхэндээ «什么都很新鲜，而且还会觉得有点奇怪», гэхдээ «只要经过一段时间，就会慢慢地习惯» гэжээ.",
+  "order_index": 18,
+  "id": "hsk3-l18-q18",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Чи л явмаар байвал би чамтай хамт явна» — аль нь зөв бэ?",
+  "options": [
+   "只要你想去，就我跟你去。",
+   "你想去只要，我就跟你去。",
+   "只要你想去，我就跟你去。",
+   "只要你想去，我跟你去就。"
+  ],
+  "correct_answer": "只要你想去，我就跟你去。",
+  "explanation": "«只要» нөхцөлийн эхэнд, хоёр дахь өгүүлэгч «我» нь «就»-ийн өмнө: 我就跟你去.",
+  "order_index": 19,
+  "id": "hsk3-l18-q19",
+  "skillTags": [
+   "grammar",
+   "zhiyao-jiu"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль өгүүлбэр БУРУУ вэ?",
+  "options": [
+   "只要你给我买，就我能照顾好它。",
+   "我只要喜欢，就一定会买。",
+   "只要我有时间，就一定跟你去旅游。",
+   "只要你给我买，我就能照顾好它。"
+  ],
+  "correct_answer": "只要你给我买，就我能照顾好它。",
+  "explanation": "Хоёр дахь өгүүлэгч «我» нь «就»-ийн ӨМНӨ орох ёстой: 我就能照顾好它. Өгүүлэгч «只要»-ийн өмнө ч (我只要喜欢), ард ч (只要我有时间) байж болно.",
+  "order_index": 20,
+  "id": "hsk3-l18-q20",
+  "skillTags": [
+   "grammar",
+   "zhiyao-jiu"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Би Хятадын соёлын тухай нэг ном уншсан» — аль нь зөв бэ?",
+  "options": [
+   "我看了一本书关于中国文化。",
+   "我看了一本关于中国文化的书。",
+   "我看了关于一本中国文化的书。",
+   "我看了一本关于中国文化书。"
+  ],
+  "correct_answer": "我看了一本关于中国文化的书。",
+  "explanation": "«一本 + 关于中国文化的 + 书»: «关于»-хэллэг нэр үгийн өмнө, «的»-тэй орно.",
+  "order_index": 21,
+  "id": "hsk3-l18-q21",
+  "skillTags": [
+   "grammar",
+   "preposition-guanyu"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Үгийг зөв дараалалд оруул (дасгалын ном 36): 关于 / 我想买 / 一本 / 动物 / 的 / 书",
+  "options": [
+   "我想买一本书关于动物的。",
+   "关于动物我想买一本的书。",
+   "我想买关于一本动物的书。",
+   "我想买一本关于动物的书。"
+  ],
+  "correct_answer": "我想买一本关于动物的书。",
+  "explanation": "Тоо-тооны нэр (一本) → «关于动物的» тодотгол → нэр үг (书). Дасгалын номын хариулт.",
+  "order_index": 22,
+  "id": "hsk3-l18-q22",
+  "skillTags": [
+   "grammar",
+   "preposition-guanyu"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«只要经过一段时间，就会慢慢地习惯。» — утга нь аль вэ?",
+  "options": [
+   "Хэсэг хугацаа л өнгөрвөл аажмаар дасна.",
+   "Хэсэг хугацаа өнгөрсөн ч дасахгүй.",
+   "Хэсэг хугацааны өмнө аль хэдийн дассан.",
+   "Хэсэг хугацаа өнгөрөхөөс өмнө дасах хэрэгтэй."
+  ],
+  "correct_answer": "Хэсэг хугацаа л өнгөрвөл аажмаар дасна.",
+  "explanation": "«只要 + нөхцөл (хэсэг хугацаа өнгөрөх), 就 + үр дүн (аажмаар дасах)» — энэ л нөхцөл хангагдвал хангалттай гэсэн утга.",
+  "order_index": 23,
+  "id": "hsk3-l18-q23",
+  "skillTags": [
+   "grammar",
+   "zhiyao-jiu"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Энэ ажлын талаар өөр асуулт байна уу?» — аль нь зөв бэ?",
+  "options": [
+   "还有什么问题吗关于这个工作？",
+   "这个工作关于，还有什么问题吗？",
+   "关于这个工作，还有什么问题吗？",
+   "关于的这个工作，还有什么问题吗？"
+  ],
+  "correct_answer": "关于这个工作，还有什么问题吗？",
+  "explanation": "«关于 + N» өгүүлбэрийн эхэнд таслалтай орно (яриа 3). Нэр үгийн ард эсвэл өгүүлбэрийн төгсгөлд тавихгүй.",
+  "order_index": 24,
+  "id": "hsk3-l18-q24",
+  "skillTags": [
+   "grammar",
+   "preposition-guanyu"
+  ],
+  "difficulty": "hard"
+ }
+]

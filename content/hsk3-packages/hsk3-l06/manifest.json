@@ -1,0 +1,22 @@
+{
+ "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+ "courseType": "chinese-hsk",
+ "courseId": "hsk3",
+ "lessonId": "hsk3-l06",
+ "hskLevel": 3,
+ "lessonNumber": 6,
+ "lessonProfile": "hsk3-dialogue-reading-writing-review",
+ "lessonType": "hsk3-dialogue-reading-writing-review",
+ "language": "zh-MN",
+ "targetLanguage": "zh",
+ "uiLanguage": "mn",
+ "title": "怎么突然找不到了",
+ "mongolianTitle": "Яагаад гэнэт олдохгүй болчихов",
+ "source": "HSK Standard Course 3 · 第6课 (сурах бичиг, багшийн ном, дасгалын ном)",
+ "hasAudio": true,
+ "hasImages": false,
+ "verification": {
+  "answerStatus": "official_verified",
+  "textStatus": "source_verified (拼音课文-оор шалгасан)"
+ }
+}

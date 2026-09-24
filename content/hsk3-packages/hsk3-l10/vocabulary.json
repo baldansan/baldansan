@@ -1,0 +1,122 @@
+[
+ {
+  "chinese": "个子",
+  "pinyin": "gèzi",
+  "mongolian": "нуруу, биеийн өндөр (个子高 — өндөр нуруутай)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "大山，你和马可谁个子高？",
+  "exampleMongolian": "Дашань аа, чи Марко хоёрын хэн нь өндөр нуруутай вэ?"
+ },
+ {
+  "chinese": "矮",
+  "pinyin": "ǎi",
+  "mongolian": "намхан, нам (хүний нуруу)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "马可比我高，我比马可矮一点儿。",
+  "exampleMongolian": "Марко надаас өндөр, би Маркогоос арай намхан."
+ },
+ {
+  "chinese": "历史",
+  "pinyin": "lìshǐ",
+  "mongolian": "түүх (历史课 — түүхийн хичээл)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我觉得数学比历史难多了，我听不懂。",
+  "exampleMongolian": "Миний бодлоор математик түүхээс хамаагүй хэцүү, би сонсоод ойлгодоггүй."
+ },
+ {
+  "chinese": "体育",
+  "pinyin": "tǐyù",
+  "mongolian": "биеийн тамир, спорт (体育课 — биеийн тамирын хичээл)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我喜欢历史课、体育课，不喜欢数学课。",
+  "exampleMongolian": "Би түүх, биеийн тамирын хичээлд дуртай, математикийн хичээлд дургүй."
+ },
+ {
+  "chinese": "数学",
+  "pinyin": "shùxué",
+  "mongolian": "математик",
+  "hskLevel": "HSK3",
+  "exampleChinese": "为什么？数学也很有意思啊。",
+  "exampleMongolian": "Яагаад? Математик ч бас их сонирхолтой шүү дээ."
+ },
+ {
+  "chinese": "方便",
+  "pinyin": "fāngbiàn",
+  "mongolian": "тохилог, дөхөм, эвтэйхэн",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我上个月就搬家了，走路二十分钟就到。——那很方便啊。",
+  "exampleMongolian": "Би өнгөрсөн сард л нүүчихсэн, алхаад хорин минутад л хүрдэг. — Тэгвэл их дөхөм байна шүү."
+ },
+ {
+  "chinese": "自行车",
+  "pinyin": "zìxíngchē",
+  "mongolian": "унадаг дугуй",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我还打算买辆自行车，骑车七八分钟就能到。",
+  "exampleMongolian": "Би бас унадаг дугуй авахаар төлөвлөж байгаа, дугуйгаар долоо найман минутад л хүрч чадна."
+ },
+ {
+  "chinese": "骑",
+  "pinyin": "qí",
+  "mongolian": "унах (骑车 — дугуй унах)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我们坐公共汽车去吧，我不会骑自行车。",
+  "exampleMongolian": "Автобусаар явъя, би дугуй унаж чаддаггүй."
+ },
+ {
+  "chinese": "旧",
+  "pinyin": "jiù",
+  "mongolian": "хуучин, элэгдсэн (эд юмс)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "这辆自行车太旧了。",
+  "exampleMongolian": "Энэ дугуй хэтэрхий хуучирсан."
+ },
+ {
+  "chinese": "换",
+  "pinyin": "huàn",
+  "mongolian": "солих",
+  "hskLevel": "HSK3",
+  "exampleChinese": "那辆太旧了，要换一辆，很便宜，两三百块钱。",
+  "exampleMongolian": "Тэр нь хэтэрхий хуучирсан, нэгийг солих хэрэгтэй. Их хямдхан, хоёр гурван зуун юань л."
+ },
+ {
+  "chinese": "地方",
+  "pinyin": "dìfang",
+  "mongolian": "газар",
+  "hskLevel": "HSK3",
+  "exampleChinese": "这两个地方的房子一样吗？",
+  "exampleMongolian": "Энэ хоёр газрын байр адилхан уу?"
+ },
+ {
+  "chinese": "中介",
+  "pinyin": "zhōngjiè",
+  "mongolian": "зуучлагч (байрны зуучлалын ажилтан)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "大山在看房子。中介公司的人告诉他，学校里边比学校外边方便一点儿。",
+  "exampleMongolian": "Дашань байр үзэж байна. Зуучлалын компанийн хүн түүнд сургуулийн дотор гаднахаасаа арай тохилог гэж хэлэв."
+ },
+ {
+  "chinese": "主要",
+  "pinyin": "zhǔyào",
+  "mongolian": "гол, үндсэн (主要是环境 — гол нь орчин)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "大小没关系，主要是环境。",
+  "exampleMongolian": "Том жижиг нь хамаагүй, гол нь орчин."
+ },
+ {
+  "chinese": "环境",
+  "pinyin": "huánjìng",
+  "mongolian": "орчин",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我们学校的学习环境很不错。",
+  "exampleMongolian": "Манай сургуулийн сурах орчин их сайн."
+ },
+ {
+  "chinese": "附近",
+  "pinyin": "fùjìn",
+  "mongolian": "ойролцоо, ойр орчим",
+  "hskLevel": "HSK3",
+  "exampleChinese": "学校里边比学校外边方便，附近有三四个车站。",
+  "exampleMongolian": "Сургууль дотор нь гаднахаасаа дөхөм, ойролцоо гурав дөрвөн зогсоол бий."
+ }
+]

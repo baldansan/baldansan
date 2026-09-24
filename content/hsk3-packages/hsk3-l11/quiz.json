@@ -1,0 +1,458 @@
+[
+ {
+  "type": "cloze",
+  "question": "拿两________筷子就可以了，今天爸爸不回来吃晚饭。",
+  "options": [
+   "双",
+   "口",
+   "瓶子",
+   "空调",
+   "词典"
+  ],
+  "correct_answer": "双",
+  "explanation": "Савхыг «双» (хос)-оор тоолно: 两双筷子 — хоёр хос савх.",
+  "order_index": 1,
+  "id": "hsk3-l11-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这本________是我朋友的，不是我的。",
+  "options": [
+   "瓶子",
+   "空调",
+   "词典",
+   "双",
+   "口"
+  ],
+  "correct_answer": "词典",
+  "explanation": "«这本…» — «本» гэдэг тоо нэр ном, толь бичигт хэрэглэгдэнэ; сангаас зөвхөн «词典» тохирно.",
+  "order_index": 2,
+  "id": "hsk3-l11-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这种咖啡特别好喝，你快来喝一________吧。",
+  "options": [
+   "瓶子",
+   "空调",
+   "词典",
+   "双",
+   "口"
+  ],
+  "correct_answer": "口",
+  "explanation": "«喝一口» — нэг балгах. «口» нь уух, идэх хэмжээг заасан тоо нэр.",
+  "order_index": 3,
+  "id": "hsk3-l11-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "桌子上有一个________，是谁的？",
+  "options": [
+   "词典",
+   "双",
+   "口",
+   "瓶子",
+   "空调"
+  ],
+  "correct_answer": "瓶子",
+  "explanation": "«一个…» — ширээн дээр байж болох эд юм; сангаас «瓶子» (шил, лонх) тохирно.",
+  "order_index": 4,
+  "id": "hsk3-l11-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "你怎么没开________？太热了！",
+  "options": [
+   "瓶子",
+   "空调",
+   "词典",
+   "双",
+   "口"
+  ],
+  "correct_answer": "空调",
+  "explanation": "«太热了» (хэтэрхий халуун) — тэгэхээр асаах ёстой юм нь «空调» (агааржуулагч).",
+  "order_index": 5,
+  "id": "hsk3-l11-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "A：你把灯________了吧，我要睡觉了。 B：好，我马上就去。",
+  "options": [
+   "结束",
+   "关",
+   "还",
+   "会议",
+   "习惯"
+  ],
+  "correct_answer": "关",
+  "explanation": "Унтах гэж байгаа тул гэрлээ «关» (унтраах): 把灯关了.",
+  "order_index": 6,
+  "id": "hsk3-l11-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "A：你可以帮我把书________了吗？ B：明天下午可以吗？",
+  "options": [
+   "还",
+   "会议",
+   "习惯",
+   "结束",
+   "关"
+  ],
+  "correct_answer": "还",
+  "explanation": "Номыг «还» (huán — буцааж өгөх): 把书还了 — номыг буцааж өгөх.",
+  "order_index": 7,
+  "id": "hsk3-l11-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "A：音乐会________以后，我们一起去饭馆吃饭吧。 B：还是回家吃吧。",
+  "options": [
+   "还",
+   "会议",
+   "习惯",
+   "结束",
+   "关"
+  ],
+  "correct_answer": "结束",
+  "explanation": "«…结束以后» — …дууссаны дараа. Тоглолт дууссаны дараа хоол идэхээр явна.",
+  "order_index": 8,
+  "id": "hsk3-l11-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "吃饭以前别忘了________手洗了。",
+  "options": [
+   "被",
+   "给",
+   "把",
+   "在"
+  ],
+  "correct_answer": "把",
+  "explanation": "«把 + 手 + 洗了» — тодорхой юманд (гараа) үйлдэл хийхийг сануулж байна; объектыг үйл үгийн өмнө гаргадаг нь «把».",
+  "order_index": 9,
+  "id": "hsk3-l11-q09",
+  "skillTags": [
+   "grammar",
+   "ba-sentence"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "你发烧还没好，快把药________。",
+  "options": [
+   "吃",
+   "了吃",
+   "没吃",
+   "吃了"
+  ],
+  "correct_answer": "吃了",
+  "explanation": "«把» өгүүлбэрт үйл үгийн ард ямар нэг гишүүн заавал ирнэ — хамгийн энгийн нь «了»: 把药吃了.",
+  "order_index": 10,
+  "id": "hsk3-l11-q10",
+  "skillTags": [
+   "grammar",
+   "ba-sentence"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "cloze",
+  "question": "A：你每天几点睡觉？ B：我每天十一点________睡觉。",
+  "options": [
+   "上",
+   "左右",
+   "了",
+   "过"
+  ],
+  "correct_answer": "左右",
+  "explanation": "«十一点左右» — арван нэгэн цагийн орчим; «左右» тооны ард орж ойролцоо тоог заана.",
+  "order_index": 11,
+  "id": "hsk3-l11-q11",
+  "skillTags": [
+   "grammar",
+   "approximate-zuoyou"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我们公司有五百人________。",
+  "options": [
+   "多少",
+   "几个",
+   "一点儿",
+   "左右"
+  ],
+  "correct_answer": "左右",
+  "explanation": "«五百人左右» — таван зуу орчим хүн. «左右» тоо + нэр үгийн ард ирнэ.",
+  "order_index": 12,
+  "id": "hsk3-l11-q12",
+  "skillTags": [
+   "grammar",
+   "approximate-zuoyou"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：同学请小明帮她做什么？",
+  "options": [
+   "借一本书",
+   "把词典还了",
+   "把灯关了",
+   "买一本词典"
+  ],
+  "correct_answer": "把词典还了",
+  "explanation": "Хамт сурдаг охин «帮我把这本词典还了吧» гэж гуйсан — толь бичгийг нь буцааж өгөх.",
+  "order_index": 13,
+  "id": "hsk3-l11-q13",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：王经理现在在哪儿？",
+  "options": [
+   "在会议室",
+   "在飞机上",
+   "在地铁上",
+   "在他的办公室"
+  ],
+  "correct_answer": "在地铁上",
+  "explanation": "Сяоли «他正坐地铁来我们公司呢» гэсэн — метрогоор компани руу ирж явна.",
+  "order_index": 14,
+  "id": "hsk3-l11-q14",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：妈妈今天为什么做了这么多菜？",
+  "options": [
+   "今天是爸爸的生日",
+   "今天有朋友来",
+   "今天是妈妈的生日",
+   "儿子今天回家"
+  ],
+  "correct_answer": "今天是爸爸的生日",
+  "explanation": "Ээж «今天是你爸爸的生日» гэж хэлсэн.",
+  "order_index": 15,
+  "id": "hsk3-l11-q15",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：爸爸为什么不能喝酒？",
+  "options": [
+   "他不喜欢喝啤酒",
+   "他明天要上班",
+   "家里没有啤酒了",
+   "医生说他一口酒都不能喝"
+  ],
+  "correct_answer": "医生说他一口酒都不能喝",
+  "explanation": "«医生说你爸爸一口酒都不能喝» — эмч ганц балга ч архи уухыг хориглосон.",
+  "order_index": 16,
+  "id": "hsk3-l11-q16",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文4：“我”想把这个笔记本电脑怎么样？",
+  "options": [
+   "送给朋友",
+   "卖了，再买一个更好的",
+   "借给同学",
+   "一直用下去"
+  ],
+  "correct_answer": "卖了，再买一个更好的",
+  "explanation": "«我想把这个电脑卖了，再买一个更好的» — зараад, илүү сайныг авах гэж байна.",
+  "order_index": 17,
+  "id": "hsk3-l11-q17",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文4：“我”每天起床后的第一件事是什么？",
+  "options": [
+   "写信",
+   "去图书馆",
+   "吃早饭",
+   "打开电脑，看电子邮件"
+  ],
+  "correct_answer": "打开电脑，看电子邮件",
+  "explanation": "«每天起床后的第一件事就是打开电脑，看电子邮件» — компьютераа асааж, цахим шуудангаа үзэх.",
+  "order_index": 18,
+  "id": "hsk3-l11-q18",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Гэрлээ унтраачих» — аль нь зөв бэ?",
+  "options": [
+   "你关了把灯吧。",
+   "你把灯关了吧。",
+   "你把关灯了吧。",
+   "把你灯关了吧。"
+  ],
+  "correct_answer": "你把灯关了吧。",
+  "explanation": "Бүтэц: A (你) + 把 + B (灯) + үйл үг (关) + 了. «把灯» үйл үгийн өмнө.",
+  "order_index": 19,
+  "id": "hsk3-l11-q19",
+  "skillTags": [
+   "grammar",
+   "ba-sentence"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Чи номыг надад өгөөгүй» — аль нь зөв бэ?",
+  "options": [
+   "你把书没给我。",
+   "你把没书给我。",
+   "你没把书给我。",
+   "你没把给我书。"
+  ],
+  "correct_answer": "你没把书给我。",
+  "explanation": "Үгүйсгэх «没» нь «把»-ийн ӨМНӨ орно, дараа нь 把 + 书 + 给我.",
+  "order_index": 20,
+  "id": "hsk3-l11-q20",
+  "skillTags": [
+   "grammar",
+   "ba-sentence"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль өгүүлбэр зөв бэ?",
+  "options": [
+   "请把空调关。",
+   "请关了把空调。",
+   "请把关空调了。",
+   "请把空调关了。"
+  ],
+  "correct_answer": "请把空调关了。",
+  "explanation": "«把» өгүүлбэрт үйл үгийн ард «了» заавал хэрэгтэй, «把空调» үйл үгийн өмнө орно.",
+  "order_index": 21,
+  "id": "hsk3-l11-q21",
+  "skillTags": [
+   "grammar",
+   "ba-sentence"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Манай компанид таван зуу орчим хүн бий» — аль нь зөв бэ?",
+  "options": [
+   "我们公司有五百人左右。",
+   "我们公司有左右五百人。",
+   "左右我们公司有五百人。",
+   "我们公司左右有五百人。"
+  ],
+  "correct_answer": "我们公司有五百人左右。",
+  "explanation": "«左右» нь тоо + нэр үгийн (五百人) АРД орно.",
+  "order_index": 22,
+  "id": "hsk3-l11-q22",
+  "skillTags": [
+   "grammar",
+   "approximate-zuoyou"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«王经理两点左右来了个电话。» — ямар утгатай вэ?",
+  "options": [
+   "Менежер Ван яг хоёр цагт утасдсан.",
+   "Менежер Ван хоёр удаа утасдсан.",
+   "Менежер Ван хоёр цагийн дараа утасдана.",
+   "Менежер Ван хоёр цагийн орчимд утасдсан."
+  ],
+  "correct_answer": "Менежер Ван хоёр цагийн орчимд утасдсан.",
+  "explanation": "«两点左右» — хоёр цагийн орчим (ойролцоо цаг). «来了个电话» — утасдсан (болчихсон).",
+  "order_index": 23,
+  "id": "hsk3-l11-q23",
+  "skillTags": [
+   "grammar",
+   "approximate-zuoyou"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Үгийг зөв дараалалд оруул: 左右 / 上地铁 / 我每天 / 七点",
+  "options": [
+   "我每天左右七点上地铁。",
+   "我每天七点左右上地铁。",
+   "我每天七点上地铁左右。",
+   "左右我每天七点上地铁。"
+  ],
+  "correct_answer": "我每天七点左右上地铁。",
+  "explanation": "«七点左右» — «左右» цагийн ард, дараа нь үйл үг «上地铁» (дасгалын ном 36-ын хариулт).",
+  "order_index": 24,
+  "id": "hsk3-l11-q24",
+  "skillTags": [
+   "grammar",
+   "approximate-zuoyou"
+  ],
+  "difficulty": "hard"
+ }
+]

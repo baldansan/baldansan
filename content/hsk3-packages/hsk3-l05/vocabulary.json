@@ -1,0 +1,114 @@
+[
+ {
+  "chinese": "发烧",
+  "pinyin": "fā shāo",
+  "mongolian": "халуурах, халуу гарах",
+  "hskLevel": "HSK3",
+  "exampleChinese": "前几天有点儿发烧，现在好多了。",
+  "exampleMongolian": "Хэд хоногийн өмнө жаахан халуурсан, одоо хамаагүй дээрдсэн."
+ },
+ {
+  "chinese": "为",
+  "pinyin": "wèi",
+  "mongolian": "…-д зориулж, …-ын төлөө (为你买的 — чамд зориулж авсан)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "这是我为你买的绿茶，很不错。",
+  "exampleMongolian": "Энэ чамд зориулж авсан ногоон цай, их сайхан шүү."
+ },
+ {
+  "chinese": "照顾",
+  "pinyin": "zhàogù",
+  "mongolian": "асрах, халамжлах",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我儿子生病了，我要在家照顾他。",
+  "exampleMongolian": "Хүү маань өвдчихлөө, би гэртээ түүнийгээ асрах хэрэгтэй."
+ },
+ {
+  "chinese": "用",
+  "pinyin": "yòng",
+  "mongolian": "хэрэгтэй байх (不用 — хэрэггүй, …-х шаардлагагүй)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "星期六不用上课。",
+  "exampleMongolian": "Бямба гарагт хичээлд суух хэрэггүй."
+ },
+ {
+  "chinese": "感冒",
+  "pinyin": "gǎnmào",
+  "mongolian": "ханиад хүрэх; ханиад (感冒药 — ханиадны эм)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "昨天吃了感冒药，现在好一些了。",
+  "exampleMongolian": "Өчигдөр ханиадны эм уусан, одоо арай дээрдсэн."
+ },
+ {
+  "chinese": "季节",
+  "pinyin": "jìjié",
+  "mongolian": "улирал",
+  "hskLevel": "HSK3",
+  "exampleChinese": "你最喜欢哪个季节？",
+  "exampleMongolian": "Чи аль улиралд хамгийн их дуртай вэ?"
+ },
+ {
+  "chinese": "当然",
+  "pinyin": "dāngrán",
+  "mongolian": "мэдээж, мэдээжийн хэрэг",
+  "hskLevel": "HSK3",
+  "exampleChinese": "当然是春天，天气不那么冷了。",
+  "exampleMongolian": "Мэдээж хавар! Тэр үед цаг агаар тийм хүйтэн байхаа больдог."
+ },
+ {
+  "chinese": "春天",
+  "pinyin": "chūntiān",
+  "mongolian": "хавар (улирал)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "大家都说北京的春天是最漂亮的。",
+  "exampleMongolian": "Бээжингийн хавар хамгийн үзэсгэлэнтэй гэж бүгд ярьдаг."
+ },
+ {
+  "chinese": "草",
+  "pinyin": "cǎo",
+  "mongolian": "өвс, өвс ногоо",
+  "hskLevel": "HSK3",
+  "exampleChinese": "草和树都绿了，花也开了。",
+  "exampleMongolian": "Өвс мод бүгд ногоорч, цэцэг ч дэлгэрлээ."
+ },
+ {
+  "chinese": "夏天",
+  "pinyin": "xiàtiān",
+  "mongolian": "зун (улирал)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我最喜欢夏天，因为我可以穿漂亮的裙子了。",
+  "exampleMongolian": "Би зунд хамгийн их дуртай. Учир нь зун болохоор гоё банзал өмсөж болно шүү дээ."
+ },
+ {
+  "chinese": "裙子",
+  "pinyin": "qúnzi",
+  "mongolian": "банзал; даашинз",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我喜欢看你穿漂亮的裙子。",
+  "exampleMongolian": "Би чамайг гоё банзал өмсөхөд харах дуртай."
+ },
+ {
+  "chinese": "最近",
+  "pinyin": "zuìjìn",
+  "mongolian": "сүүлийн үед, ойрд",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我最近越来越胖了。",
+  "exampleMongolian": "Би сүүлийн үед улам бүр таргалж байна."
+ },
+ {
+  "chinese": "越",
+  "pinyin": "yuè",
+  "mongolian": "улам (越来越 — улам бүр)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我觉得你越来越漂亮了。",
+  "exampleMongolian": "Миний бодлоор чи улам бүр хөөрхөн болж байна."
+ },
+ {
+  "chinese": "张",
+  "pinyin": "Zhāng",
+  "mongolian": "Жан (овог) — тусгай нэр",
+  "hskLevel": "HSK3",
+  "exampleChinese": "喂，请问张经理在吗？",
+  "exampleMongolian": "Байна уу, Жан менежер байна уу?"
+ }
+]

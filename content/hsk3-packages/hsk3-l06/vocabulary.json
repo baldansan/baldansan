@@ -1,0 +1,122 @@
+[
+ {
+  "chinese": "眼镜",
+  "pinyin": "yǎnjìng",
+  "mongolian": "нүдний шил",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我的眼镜呢？怎么突然找不到了？",
+  "exampleMongolian": "Миний нүдний шил хаана байна? Яагаад гэнэт олдохгүй болчихов?"
+ },
+ {
+  "chinese": "突然",
+  "pinyin": "tūrán",
+  "mongolian": "гэнэт, санаандгүй",
+  "hskLevel": "HSK3",
+  "exampleChinese": "他突然来了。",
+  "exampleMongolian": "Тэр гэнэт ирчихлээ."
+ },
+ {
+  "chinese": "离开",
+  "pinyin": "lí kāi",
+  "mongolian": "орхиж явах, …-аас гарах; салах (离不开 — …гүйгээр болохгүй)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我离不开眼镜。",
+  "exampleMongolian": "Би нүдний шилгүйгээр болохгүй."
+ },
+ {
+  "chinese": "清楚",
+  "pinyin": "qīngchu",
+  "mongolian": "тод, тодорхой (看不清楚 — тод харж чадахгүй)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "没有眼镜，我一个字也看不清楚。",
+  "exampleMongolian": "Нүдний шилгүй бол би нэг ч ханзыг тод харж чадахгүй."
+ },
+ {
+  "chinese": "刚才",
+  "pinyin": "gāngcái",
+  "mongolian": "сая, саяхан (хэдэн минутын өмнө)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "你去房间找找，是不是刚才放在桌子上了？",
+  "exampleMongolian": "Өрөө рүүгээ ороод хайгаад үз л дээ. Саяхан ширээн дээр тавьчихсан юм биш үү?"
+ },
+ {
+  "chinese": "帮忙",
+  "pinyin": "bāng máng",
+  "mongolian": "туслах, тус болох",
+  "hskLevel": "HSK3",
+  "exampleChinese": "你快过来帮忙啊。",
+  "exampleMongolian": "Хурдан наашаа ирээд туслаач."
+ },
+ {
+  "chinese": "特别",
+  "pinyin": "tèbié",
+  "mongolian": "онцгой, их, үнэхээр",
+  "hskLevel": "HSK3",
+  "exampleChinese": "今天这些题特别难。",
+  "exampleMongolian": "Өнөөдрийн эдгээр бодлого үнэхээр хэцүү."
+ },
+ {
+  "chinese": "讲",
+  "pinyin": "jiǎng",
+  "mongolian": "тайлбарлах, ярьж өгөх",
+  "hskLevel": "HSK3",
+  "exampleChinese": "你给我讲一下这个题吧。",
+  "exampleMongolian": "Энэ бодлогыг надад тайлбарлаад өгөөч."
+ },
+ {
+  "chinese": "明白",
+  "pinyin": "míngbai",
+  "mongolian": "ойлгомжтой, тодорхой; ойлгох (明白了 — ойлголоо)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "电话里讲不明白，你来我家吧。",
+  "exampleMongolian": "Утсаар ойлгомжтой тайлбарлаж чадахгүй. Манайд ир л дээ."
+ },
+ {
+  "chinese": "锻炼",
+  "pinyin": "duànliàn",
+  "mongolian": "биеийн тамирын дасгал хийх",
+  "hskLevel": "HSK3",
+  "exampleChinese": "好啊，我锻炼完了就过去。",
+  "exampleMongolian": "За тэгье, дасгалаа хийж дуусмагцаа очно."
+ },
+ {
+  "chinese": "音乐",
+  "pinyin": "yīnyuè",
+  "mongolian": "хөгжим (音乐会 — концерт)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "那你请她听音乐会吧，她喜欢听音乐。",
+  "exampleMongolian": "Тэгвэл түүнийг концертод урь л даа, тэр хөгжим сонсох дуртай."
+ },
+ {
+  "chinese": "公园",
+  "pinyin": "gōngyuán",
+  "mongolian": "цэцэрлэгт хүрээлэн",
+  "hskLevel": "HSK3",
+  "exampleChinese": "公园太大，多累啊。",
+  "exampleMongolian": "Цэцэрлэгт хүрээлэн хэтэрхий том, ямар их ядраах юм бэ."
+ },
+ {
+  "chinese": "聊天",
+  "pinyin": "liáo tiān",
+  "mongolian": "ярилцах, хөөрөлдөх",
+  "hskLevel": "HSK3",
+  "exampleChinese": "那去公园走走，聊聊天儿吧。",
+  "exampleMongolian": "Тэгвэл цэцэрлэгт хүрээлэнд очиж алхаад, хөөрөлдөөд суу л даа."
+ },
+ {
+  "chinese": "睡着",
+  "pinyin": "shuì zháo",
+  "mongolian": "унтах, нойрсох (睡不着 — унтаж чадахгүй)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "你不是说晚上睡不着觉吗？",
+  "exampleMongolian": "Чи орой унтаж чадахгүй байна гэж хэлээгүй билүү?"
+ },
+ {
+  "chinese": "更",
+  "pinyin": "gèng",
+  "mongolian": "илүү, бүр илүү",
+  "hskLevel": "HSK3",
+  "exampleChinese": "你还是喝杯牛奶吧，可以睡得更好些。",
+  "exampleMongolian": "Чи тэр оронд нэг аяга сүү уусан нь дээр, тэгвэл илүү сайн унтана."
+ }
+]

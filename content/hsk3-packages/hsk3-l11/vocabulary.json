@@ -1,0 +1,154 @@
+[
+ {
+  "chinese": "图书馆",
+  "pinyin": "túshūguǎn",
+  "mongolian": "номын сан",
+  "hskLevel": "HSK3",
+  "exampleChinese": "今天下了课我要去图书馆把书还了。",
+  "exampleMongolian": "Өнөөдөр хичээл тарсны дараа би номын сан руу очиж номоо буцааж өгнө."
+ },
+ {
+  "chinese": "借",
+  "pinyin": "jiè",
+  "mongolian": "зээлэх; зээлүүлэх (借本书 — ном зээлэх; 借我用用 — надад жаахан хэрэглүүлээч)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我去图书馆借本书。",
+  "exampleMongolian": "Номын сан орж нэг ном зээлнэ."
+ },
+ {
+  "chinese": "词典",
+  "pinyin": "cídiǎn",
+  "mongolian": "толь бичиг",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我从图书馆借了一本英汉词典。",
+  "exampleMongolian": "Би номын сангаас англи-хятад толь бичиг зээлсэн."
+ },
+ {
+  "chinese": "还",
+  "pinyin": "huán",
+  "mongolian": "буцааж өгөх (还书 — ном буцааж өгөх; 还钱 — мөнгө буцааж өгөх); hái (бас, одоо ч)-тай андуурахгүй",
+  "hskLevel": "HSK3",
+  "exampleChinese": "帮我把这本词典还了吧。",
+  "exampleMongolian": "Энэ толь бичгийг минь буцааж өгчихөөч."
+ },
+ {
+  "chinese": "灯",
+  "pinyin": "dēng",
+  "mongolian": "гэрэл, чийдэн (关灯 — гэрэл унтраах)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "房间里的灯怎么还开着呢？",
+  "exampleMongolian": "Өрөөний гэрэл яагаад одоо болтол асаалттай байгаа юм бэ?"
+ },
+ {
+  "chinese": "会议",
+  "pinyin": "huìyì",
+  "mongolian": "хурал",
+  "hskLevel": "HSK3",
+  "exampleChinese": "会议结束后，别忘记把空调关了。",
+  "exampleMongolian": "Хурал дууссаны дараа агааржуулагчаа унтраахаа бүү мартаарай."
+ },
+ {
+  "chinese": "结束",
+  "pinyin": "jiéshù",
+  "mongolian": "дуусах, төгсөх (会议结束后 — хурал дууссаны дараа)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "运动会什么时候结束？——五点左右吧。",
+  "exampleMongolian": "Спортын наадам хэзээ дуусах вэ? — Таван цагийн орчим байх."
+ },
+ {
+  "chinese": "忘记",
+  "pinyin": "wàngjì",
+  "mongolian": "мартах",
+  "hskLevel": "HSK3",
+  "exampleChinese": "你那个朋友姓什么，我忘记了，叫他也来吧。",
+  "exampleMongolian": "Чиний тэр найз ямар овогтой билээ, би мартчихлаа; түүнийг ч бас дуудаад ир."
+ },
+ {
+  "chinese": "空调",
+  "pinyin": "kōngtiáo",
+  "mongolian": "агааржуулагч",
+  "hskLevel": "HSK3",
+  "exampleChinese": "空调下面怎么这么多水？",
+  "exampleMongolian": "Агааржуулагчийн доор яагаад ийм их ус байна вэ?"
+ },
+ {
+  "chinese": "关",
+  "pinyin": "guān",
+  "mongolian": "унтраах; хаах (关灯 — гэрэл унтраах, 关门 — хаалга хаах)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "离开教室的时候，记得把灯关了。",
+  "exampleMongolian": "Ангиас гарахдаа гэрлээ унтраахаа санаарай."
+ },
+ {
+  "chinese": "地铁",
+  "pinyin": "dìtiě",
+  "mongolian": "метро",
+  "hskLevel": "HSK3",
+  "exampleChinese": "他正坐地铁来我们公司呢。",
+  "exampleMongolian": "Тэр одоо метрогоор манай компани руу ирж яваа."
+ },
+ {
+  "chinese": "双",
+  "pinyin": "shuāng",
+  "mongolian": "хос (тоо нэр: 一双筷子 — нэг хос савх)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "还差一双筷子，你去拿一下。",
+  "exampleMongolian": "Нэг хос савх дутуу байна, очоод аваад ирээч."
+ },
+ {
+  "chinese": "筷子",
+  "pinyin": "kuàizi",
+  "mongolian": "савх",
+  "hskLevel": "HSK3",
+  "exampleChinese": "服务员，这儿只有一双筷子，请再给我们拿一双。",
+  "exampleMongolian": "Зөөгч өө, энд ганцхан хос савх байна, бидэнд дахиад нэг хос авчирч өгөөч."
+ },
+ {
+  "chinese": "啤酒",
+  "pinyin": "píjiǔ",
+  "mongolian": "шар айраг, пиво",
+  "hskLevel": "HSK3",
+  "exampleChinese": "那我们今天喝点儿啤酒吧。",
+  "exampleMongolian": "Тэгвэл өнөөдөр жаахан шар айраг ууя л даа."
+ },
+ {
+  "chinese": "口",
+  "pinyin": "kǒu",
+  "mongolian": "балга, ам (тоо нэр: 一口酒 — нэг балга архи; 喝一口 — нэг балгах)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "医生说你爸爸一口酒都不能喝。",
+  "exampleMongolian": "Эмч аавыг чинь ганц балга ч архи ууж болохгүй гэсэн."
+ },
+ {
+  "chinese": "瓶子",
+  "pinyin": "píngzi",
+  "mongolian": "шил, лонх (酒瓶子 — архины шил)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "别让他看见酒瓶子。",
+  "exampleMongolian": "Архины шилийг ч түүнд битгий харуулаарай."
+ },
+ {
+  "chinese": "笔记本",
+  "pinyin": "bǐjìběn",
+  "mongolian": "зөөврийн компьютер, ноутбук (笔记本 дангаараа — тэмдэглэлийн дэвтэр)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "这个笔记本电脑我去年买的时候要五千块左右，现在便宜多了。",
+  "exampleMongolian": "Энэ зөөврийн компьютерыг би өнгөрсөн жил авахад таван мянга орчим юань байсан, одоо бол хамаагүй хямдарчихсан."
+ },
+ {
+  "chinese": "电子邮件",
+  "pinyin": "diànzǐ yóujiàn",
+  "mongolian": "цахим шуудан, и-мэйл",
+  "hskLevel": "HSK3",
+  "exampleChinese": "现在我每天起床后的第一件事就是打开电脑，看电子邮件。",
+  "exampleMongolian": "Одоо би өдөр бүр босоод хийдэг хамгийн эхний ажил бол компьютераа асааж, цахим шуудангаа үзэх."
+ },
+ {
+  "chinese": "习惯",
+  "pinyin": "xíguàn",
+  "mongolian": "дасах; зуршил (习惯用电脑 — компьютер хэрэглэхэд дассан; 好习惯 — сайн зуршил)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我已经习惯用电脑来学习和工作了。",
+  "exampleMongolian": "Би компьютераар сурч, ажиллахдаа аль хэдийн дасчихсан."
+ }
+]

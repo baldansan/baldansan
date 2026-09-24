@@ -1,0 +1,458 @@
+[
+ {
+  "type": "cloze",
+  "question": "我________比他高一点儿。",
+  "options": [
+   "旧",
+   "个子",
+   "安静",
+   "骑",
+   "体育"
+  ],
+  "correct_answer": "个子",
+  "explanation": "«个子比他高» — нуруу нь түүнээс өндөр. Өндөр намыг «个子» (нуруу)-гаар хэлнэ.",
+  "order_index": 1,
+  "id": "hsk3-l10-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我每天________车来学校。",
+  "options": [
+   "个子",
+   "安静",
+   "旧",
+   "体育",
+   "骑"
+  ],
+  "correct_answer": "骑",
+  "explanation": "«骑车» — дугуй унах. Өдөр бүр сургууль руу дугуйгаар ирдэг гэсэн утга.",
+  "order_index": 2,
+  "id": "hsk3-l10-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我喜欢住在这儿，主要是觉得这儿很________。",
+  "options": [
+   "安静",
+   "骑",
+   "体育",
+   "个子",
+   "旧"
+  ],
+  "correct_answer": "安静",
+  "explanation": "Амьдрах газрын давуу тал — «很安静» (их чимээгүй). Бусад үг «很 + …» болж газрыг тодорхойлохгүй.",
+  "order_index": 3,
+  "id": "hsk3-l10-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "这条裤子太________了，再买一条吧。",
+  "options": [
+   "体育",
+   "骑",
+   "个子",
+   "旧",
+   "安静"
+  ],
+  "correct_answer": "旧",
+  "explanation": "«太旧了» — хэтэрхий хуучирсан, тиймээс шинээр авъя гэж байна.",
+  "order_index": 4,
+  "id": "hsk3-l10-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "A：我觉得你的比我的好。 B：你想要这个吗？没问题，我跟你________。",
+  "options": [
+   "方便",
+   "地方",
+   "数学",
+   "附近",
+   "换"
+  ],
+  "correct_answer": "换",
+  "explanation": "«我跟你换» — чамтай солилцъё. A нөгөөгийнхийг илүү гэж байгаа тул B солилцохыг санал болгож байна.",
+  "order_index": 5,
+  "id": "hsk3-l10-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "A：你哪天比较________，我们见面聊聊天儿？ B：周末吧，来我家吃饭。",
+  "options": [
+   "附近",
+   "数学",
+   "方便",
+   "换",
+   "地方"
+  ],
+  "correct_answer": "方便",
+  "explanation": "«你哪天比较方便» — чамд аль өдөр илүү эвтэйхэн (завтай) вэ? Уулзах цаг тохиролцож байна.",
+  "order_index": 6,
+  "id": "hsk3-l10-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "A：这个________的天气怎么样？ B：非常好，夏天一点儿也不热。",
+  "options": [
+   "数学",
+   "换",
+   "附近",
+   "地方",
+   "方便"
+  ],
+  "correct_answer": "地方",
+  "explanation": "«这个地方的天气» — энэ газрын цаг агаар. «这个» + нэр үг хэрэгтэй.",
+  "order_index": 7,
+  "id": "hsk3-l10-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "A：请问，这儿________有超市吗？ B：有，一直往前走就是。",
+  "options": [
+   "附近",
+   "地方",
+   "方便",
+   "换",
+   "数学"
+  ],
+  "correct_answer": "附近",
+  "explanation": "«这儿附近» — энд ойр орчим. Ойролцоо дэлгүүр байгаа эсэхийг асууж байна.",
+  "order_index": 8,
+  "id": "hsk3-l10-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这本书89块，那本书18块，这本书比那本书贵________。",
+  "options": [
+   "一点儿",
+   "一些",
+   "多了",
+   "这么"
+  ],
+  "correct_answer": "多了",
+  "explanation": "89 ба 18 юань — ялгаа их тул «多了» (хамаагүй). «一点儿/一些» нь бага ялгаанд.",
+  "order_index": 9,
+  "id": "hsk3-l10-q09",
+  "skillTags": [
+   "grammar",
+   "comparative-bi-degree"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "马可比我说得好一些，我的汉语________他好。",
+  "options": [
+   "不是",
+   "没有",
+   "比",
+   "很"
+  ],
+  "correct_answer": "没有",
+  "explanation": "Үгүйсгэх харьцуулалт «A 没有 B + тэмдэг нэр» — миний хятад хэл түүнийх шиг сайн биш.",
+  "order_index": 10,
+  "id": "hsk3-l10-q10",
+  "skillTags": [
+   "grammar",
+   "comparative-bi-degree"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "楼下有________辆自行车。（八辆或者九辆）",
+  "options": [
+   "八个九",
+   "九八",
+   "八九",
+   "八或九个"
+  ],
+  "correct_answer": "八九",
+  "explanation": "Зэргэлдээ хоёр тоог шууд залгана: «八九辆» — найм есөн дугуй (багшийн номын дасгал).",
+  "order_index": 11,
+  "id": "hsk3-l10-q11",
+  "skillTags": [
+   "grammar",
+   "approximate-numbers"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "A：我们每天学多长时间？ B：________个小时吧。",
+  "options": [
+   "一两",
+   "一个两",
+   "两一",
+   "一和两"
+  ],
+  "correct_answer": "一两",
+  "explanation": "«一两个小时» — нэг хоёр цаг (яриа 2). Жижиг тоо нь урдаа, хэмжээний үг ард нь нэг удаа.",
+  "order_index": 12,
+  "id": "hsk3-l10-q12",
+  "skillTags": [
+   "grammar",
+   "approximate-numbers"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：马可和大山谁高？",
+  "options": [
+   "大山比马可高一点儿",
+   "他们一样高",
+   "马可比大山高一点儿",
+   "马可比大山高多了"
+  ],
+  "correct_answer": "马可比大山高一点儿",
+  "explanation": "Дашань «马可比我高，我比马可矮一点儿» гэсэн — Марко арай өндөр.",
+  "order_index": 13,
+  "id": "hsk3-l10-q13",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：小明为什么不喜欢数学课？",
+  "options": [
+   "数学老师不好",
+   "他觉得数学比历史难多了，他听不懂",
+   "他没有时间学数学",
+   "他觉得数学没有意思"
+  ],
+  "correct_answer": "他觉得数学比历史难多了，他听不懂",
+  "explanation": "Сяомин «我觉得数学比历史难多了，我听不懂» гэсэн. Харин «数学也很有意思» гэж хэлсэн нь ангийн хүүхэд.",
+  "order_index": 14,
+  "id": "hsk3-l10-q14",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：小明和同学每天要一起学多长时间？",
+  "options": [
+   "七八分钟",
+   "二十分钟",
+   "三四个小时",
+   "一两个小时"
+  ],
+  "correct_answer": "一两个小时",
+  "explanation": "Ангийн хүүхэд «一两个小时吧» гэж хариулсан — нэг хоёр цаг.",
+  "order_index": 15,
+  "id": "hsk3-l10-q15",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：小丽为什么比以前来得早多了？",
+  "options": [
+   "她买了一辆新自行车",
+   "她搬家了，走路二十分钟就到",
+   "她每天坐出租车",
+   "公司让她早点儿来"
+  ],
+  "correct_answer": "她搬家了，走路二十分钟就到",
+  "explanation": "Сяоли «我上个月就搬家了，走路二十分钟就到» гэсэн. Дугуй авах нь хараахан төлөвлөгөө л.",
+  "order_index": 16,
+  "id": "hsk3-l10-q16",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：小丽为什么要换一辆自行车？",
+  "options": [
+   "那辆太贵了",
+   "那辆太小了",
+   "那辆太旧了",
+   "她没有自行车"
+  ],
+  "correct_answer": "那辆太旧了",
+  "explanation": "«那辆太旧了，要换一辆» — хуучин нь хэтэрхий хуучирсан. «你不是有一辆吗？» гэснээс түүнд дугуй байгаа нь мэдэгдэнэ.",
+  "order_index": 17,
+  "id": "hsk3-l10-q17",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文4：关于学校里边和学校外边的房子，哪个说法是对的？",
+  "options": [
+   "学校里边的房子更大",
+   "学校外边的房子更安静",
+   "学校外边的房子更方便",
+   "学校外边附近有三四个车站"
+  ],
+  "correct_answer": "学校外边的房子更安静",
+  "explanation": "Зуучлагч «学校里边的没有学校外边的那么安静» гэсэн — гаднах нь илүү чимээгүй. Гаднах нь бас том; харин дотор нь тохилог, ойролцоо 3–4 зогсоолтой.",
+  "order_index": 18,
+  "id": "hsk3-l10-q18",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Би Маркогоос арай намхан» — аль нь зөв бэ?",
+  "options": [
+   "我比马可一点儿矮。",
+   "我比马可很矮。",
+   "我没有马可矮一点儿。",
+   "我比马可矮一点儿。"
+  ],
+  "correct_answer": "我比马可矮一点儿。",
+  "explanation": "«一点儿» тэмдэг нэрийн (矮) АРД орно; «比» өгүүлбэрт «很» тавихгүй; «没有» үгүйсгэлд «一点儿» залгахгүй.",
+  "order_index": 19,
+  "id": "hsk3-l10-q19",
+  "skillTags": [
+   "grammar",
+   "comparative-bi-degree"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Сургууль доторх нь гаднахынх шиг тийм чимээгүй биш» — аль нь зөв бэ?",
+  "options": [
+   "学校里边的没有学校外边的那么安静。",
+   "学校里边的比学校外边的那么安静。",
+   "学校里边的没有学校外边的安静多了。",
+   "学校里边的没有那么学校外边的安静。"
+  ],
+  "correct_answer": "学校里边的没有学校外边的那么安静。",
+  "explanation": "Үгүйсгэл: A 没有 B + 那么 + тэмдэг нэр. «那么» нь B-ийн ард, тэмдэг нэрийн шууд өмнө орно (яриа 4).",
+  "order_index": 20,
+  "id": "hsk3-l10-q20",
+  "skillTags": [
+   "grammar",
+   "comparative-bi-degree"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«马可比我说得好一些。» — ямар утгатай вэ?",
+  "options": [
+   "Марко надаас хамаагүй сайн ярьдаг.",
+   "Би Маркогоос арай сайн ярьдаг.",
+   "Марко надаас арай сайн ярьдаг.",
+   "Марко бид хоёр адилхан сайн ярьдаг."
+  ],
+  "correct_answer": "Марко надаас арай сайн ярьдаг.",
+  "explanation": "«一些» — ялгаа бага (арай). «хамаагүй» бол «好多了/好得多» болно.",
+  "order_index": 21,
+  "id": "hsk3-l10-q21",
+  "skillTags": [
+   "grammar",
+   "comparative-bi-degree"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Дугуйгаар долоо найман минутад л хүрнэ» — аль нь зөв бэ?",
+  "options": [
+   "骑车七分钟八分钟就能到。",
+   "骑车七八分钟就能到。",
+   "骑车八七分钟就能到。",
+   "骑车七八个分钟就能到。"
+  ],
+  "correct_answer": "骑车七八分钟就能到。",
+  "explanation": "Зэргэлдээ хоёр тоо жижгээс нь эхэлж шууд залгана: 七八分钟. «分钟»-д «个» хэрэггүй.",
+  "order_index": 22,
+  "id": "hsk3-l10-q22",
+  "skillTags": [
+   "grammar",
+   "approximate-numbers"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«两三百块钱» гэдэг хэдэн юань вэ?",
+  "options": [
+   "230 юань",
+   "2 юмуу 3 юань",
+   "Хоёр гурван зуун юань орчим",
+   "500 юань"
+  ],
+  "correct_answer": "Хоёр гурван зуун юань орчим",
+  "explanation": "«两三百» — хоёр зуу юмуу гурван зуу (ойролцоо тоо, яриа 3). 230 бол «二百三十».",
+  "order_index": 23,
+  "id": "hsk3-l10-q23",
+  "skillTags": [
+   "grammar",
+   "approximate-numbers"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль нь ойролцоо тоо БИШ вэ?",
+  "options": [
+   "一两",
+   "七八",
+   "九十",
+   "三四"
+  ],
+  "correct_answer": "九十",
+  "explanation": "Багшийн номын анхааруулга: «九十» нь зэргэлдээ тоо шиг харагдавч яг 90 гэсэн тодорхой тоо.",
+  "order_index": 24,
+  "id": "hsk3-l10-q24",
+  "skillTags": [
+   "grammar",
+   "approximate-numbers"
+  ],
+  "difficulty": "hard"
+ }
+]

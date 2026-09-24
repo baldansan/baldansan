@@ -1,0 +1,162 @@
+[
+ {
+  "chinese": "腿",
+  "pinyin": "tuǐ",
+  "mongolian": "хөл (гуянаас шагай хүртэл)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "昨天走路走得太多了，左边这条腿有点儿疼。",
+  "exampleMongolian": "Өчигдөр хэт их алхсан болохоор зүүн хөл минь жаахан өвдөж байна."
+ },
+ {
+  "chinese": "疼",
+  "pinyin": "téng",
+  "mongolian": "өвдөх, өвдөлттэй",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我现在腿也疼，脚也疼。",
+  "exampleMongolian": "Одоо хөл минь ч өвдөөд, тавхай минь ч өвдөөд байна."
+ },
+ {
+  "chinese": "脚",
+  "pinyin": "jiǎo",
+  "mongolian": "хөлийн тавхай (шагайнаас доош)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "今天不知道怎么了，脚一直疼。",
+  "exampleMongolian": "Өнөөдөр яасан юм бүү мэд, тавхай минь өвдөөд л байна."
+ },
+ {
+  "chinese": "树",
+  "pinyin": "shù",
+  "mongolian": "мод (ургамал)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "那边树多，我们过去坐一下吧。",
+  "exampleMongolian": "Тэр талд мод ихтэй юм байна, тийшээ очоод жаахан сууцгаая."
+ },
+ {
+  "chinese": "容易",
+  "pinyin": "róngyì",
+  "mongolian": "амархан, хялбар",
+  "hskLevel": "HSK3",
+  "exampleChinese": "上山容易下山难，你不知道？",
+  "exampleMongolian": "Уул өгсөх амархан, уруудах хэцүү гэдгийг чи мэддэггүй юм уу?"
+ },
+ {
+  "chinese": "难",
+  "pinyin": "nán",
+  "mongolian": "хэцүү, хүнд",
+  "hskLevel": "HSK3",
+  "exampleChinese": "今天的考试一点儿也不难。",
+  "exampleMongolian": "Өнөөдрийн шалгалт огтхон ч хэцүү биш байлаа."
+ },
+ {
+  "chinese": "太太",
+  "pinyin": "tàitai",
+  "mongolian": "хатагтай (гэрлэсэн эмэгтэйг нөхрийнх нь овгоор хүндэтгэн дуудах); эхнэр",
+  "hskLevel": "HSK3",
+  "exampleChinese": "周太太为什么这么胖？",
+  "exampleMongolian": "Жоу хатагтай яагаад ийм тарган байгаа юм бэ?"
+ },
+ {
+  "chinese": "秘书",
+  "pinyin": "mìshū",
+  "mongolian": "нарийн бичгийн дарга",
+  "hskLevel": "HSK3",
+  "exampleChinese": "秘书：周经理出去了，不在办公室。",
+  "exampleMongolian": "Нарийн бичгийн дарга: Жоу менежер гарчихсан, оффистоо алга."
+ },
+ {
+  "chinese": "经理",
+  "pinyin": "jīnglǐ",
+  "mongolian": "менежер, захирал",
+  "hskLevel": "HSK3",
+  "exampleChinese": "经理，我今天想早一点儿回家，可以吗？",
+  "exampleMongolian": "Захирал аа, өнөөдөр жаахан эрт харимаар байна, болох уу?"
+ },
+ {
+  "chinese": "办公室",
+  "pinyin": "bàngōngshì",
+  "mongolian": "оффис, албан өрөө",
+  "hskLevel": "HSK3",
+  "exampleChinese": "这是你的办公室吗？真大！",
+  "exampleMongolian": "Энэ чиний оффис уу? Ёстой том юм аа!"
+ },
+ {
+  "chinese": "辆",
+  "pinyin": "liàng",
+  "mongolian": "тээврийн хэрэгслийн тоо ногдол үг (一辆车)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我出去叫辆出租车就行了。",
+  "exampleMongolian": "Гараад такси бариад явчихна."
+ },
+ {
+  "chinese": "楼",
+  "pinyin": "lóu",
+  "mongolian": "олон давхар барилга; давхар (上楼/下楼/楼上/楼下)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我在505教室上课，我现在要上楼去。",
+  "exampleMongolian": "Би 505 тоот ангид хичээллэдэг, одоо дээд давхар луу гарах гэж байна."
+ },
+ {
+  "chinese": "拿",
+  "pinyin": "ná",
+  "mongolian": "авах, барих, авчрах",
+  "hskLevel": "HSK3",
+  "exampleChinese": "你在这儿等吧，我拿了伞就下来。",
+  "exampleMongolian": "Чи энд хүлээж бай, би шүхрээ авмагцаа буугаад ирнэ."
+ },
+ {
+  "chinese": "把",
+  "pinyin": "bǎ",
+  "mongolian": "бариултай зүйлийн тоо ногдол үг (一把伞、一把椅子)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "那你等等，我上楼去给你拿把伞。",
+  "exampleMongolian": "Тэгвэл түр хүлээж бай, би дээшээ гараад чамд шүхэр авчирч өгье."
+ },
+ {
+  "chinese": "伞",
+  "pinyin": "sǎn",
+  "mongolian": "шүхэр",
+  "hskLevel": "HSK3",
+  "exampleChinese": "下雨了！我没带伞，怎么办？",
+  "exampleMongolian": "Бороо орчихлоо! Би шүхэр авчраагүй, яах вэ?"
+ },
+ {
+  "chinese": "胖",
+  "pinyin": "pàng",
+  "mongolian": "тарган",
+  "hskLevel": "HSK3",
+  "exampleChinese": "你看，我这么胖，怎么办呢？",
+  "exampleMongolian": "Хараач, би ийм тарган болчихлоо, яах вэ дээ?"
+ },
+ {
+  "chinese": "其实",
+  "pinyin": "qíshí",
+  "mongolian": "үнэндээ, бодит байдал дээр",
+  "hskLevel": "HSK3",
+  "exampleChinese": "其实我每天都运动。",
+  "exampleMongolian": "Үнэндээ би өдөр бүр хөдөлгөөн хийдэг шүү дээ."
+ },
+ {
+  "chinese": "瘦",
+  "pinyin": "shòu",
+  "mongolian": "туранхай; турах",
+  "hskLevel": "HSK3",
+  "exampleChinese": "但是你一点儿也没瘦！",
+  "exampleMongolian": "Гэтэл чи огтхон ч турсангүй шүү дээ!"
+ },
+ {
+  "chinese": "周",
+  "pinyin": "Zhōu",
+  "mongolian": "Жоу (овог) — тусгай нэр",
+  "hskLevel": "HSK3",
+  "exampleChinese": "周太太每天做运动吗？",
+  "exampleMongolian": "Жоу хатагтай өдөр бүр дасгал хийдэг үү?"
+ },
+ {
+  "chinese": "周明",
+  "pinyin": "Zhōu Míng",
+  "mongolian": "Жоу Мин (хүний нэр) — тусгай нэр",
+  "hskLevel": "HSK3",
+  "exampleChinese": "喂，你好，请问周明在吗？",
+  "exampleMongolian": "Байна уу, сайн байна уу. Жоу Мин байгаа юу?"
+ }
+]

@@ -1,0 +1,15 @@
+{
+ "courseId": "hsk3",
+ "lessonId": "hsk3-l03",
+ "title": "HSK3 3-р хичээл — Ширээн дээр олон ундаа тавиатай байна",
+ "chineseTitle": "桌子上放着很多饮料",
+ "targetTitle": "桌子上放着很多饮料",
+ "mongolianTitle": "Ширээн дээр олон ундаа тавиатай байна",
+ "subtitle": "Сонголт (还是/或者), оршихуйн өгүүлбэр (Байршил + V着 + NP), магадлал (会)",
+ "description": "4 课文 (яриа) + 17 шинэ үг + 3 дүрэм (还是/或者 / Байршил + V着 + тоо + тоо нэр + нэр / 会 магадлал) + дасгалын номын 50 дасгал",
+ "duration": "40 min",
+ "status": "available",
+ "orderIndex": 3,
+ "icon": "🥤",
+ "sourceNote": "HSK Standard Course 3 — Lesson 3 《桌子上放着很多饮料》"
+}

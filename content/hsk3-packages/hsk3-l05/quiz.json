@@ -1,0 +1,458 @@
+[
+ {
+  "type": "cloze",
+  "question": "我是不是________了？怎么总是觉得冷？",
+  "options": [
+   "草",
+   "发烧",
+   "为",
+   "裙子",
+   "最近"
+  ],
+  "correct_answer": "发烧",
+  "explanation": "«Байнга даарч байна» гэдэг нь халуурсны шинж — «是不是发烧了？» (халуурчихсан юм биш биз?).",
+  "order_index": 1,
+  "id": "hsk3-l05-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "春天不冷不热，________都是绿的。",
+  "options": [
+   "草",
+   "当然",
+   "照顾",
+   "发烧",
+   "为"
+  ],
+  "correct_answer": "草",
+  "explanation": "Хавар ногоон өнгөтэй болдог нь өвс — «草都是绿的».",
+  "order_index": 2,
+  "id": "hsk3-l05-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "快来看一下，这是我________你买的衣服。",
+  "options": [
+   "用",
+   "为",
+   "最近",
+   "照顾",
+   "草"
+  ],
+  "correct_answer": "为",
+  "explanation": "«为 + хүн + үйл үг» — «чамд зориулж авсан хувцас»: 为你买的衣服.",
+  "order_index": 3,
+  "id": "hsk3-l05-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "这条________真好看，是新买的吗？",
+  "options": [
+   "季节",
+   "草",
+   "裙子",
+   "发烧",
+   "当然"
+  ],
+  "correct_answer": "裙子",
+  "explanation": "«这条» — 条 нь банзал, өмд зэрэг хувцасны тоо нэр; «гоё, шинээр авсан уу?» гэж хувцасны тухай ярьж байгаа тул «裙子».",
+  "order_index": 4,
+  "id": "hsk3-l05-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "小王在忙什么呢？你________见过他吗？",
+  "options": [
+   "为",
+   "当然",
+   "照顾",
+   "最近",
+   "裙子"
+  ],
+  "correct_answer": "最近",
+  "explanation": "«Сүүлийн үед түүнийг харсан уу?» — цаг хугацааг заах «最近».",
+  "order_index": 5,
+  "id": "hsk3-l05-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "A：来一个西瓜。 B：这个________的西瓜又大又甜，多来几个吧。",
+  "options": [
+   "季节",
+   "裙子",
+   "照顾",
+   "用",
+   "发烧"
+  ],
+  "correct_answer": "季节",
+  "explanation": "«这个季节的西瓜» — энэ улирлын тарвас; улирал нь тарвасны амтанд нөлөөлнө.",
+  "order_index": 6,
+  "id": "hsk3-l05-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "A：明天考试，你现在就睡觉了？不再看看书了？ B：不________看了，我已经复习好了。",
+  "options": [
+   "当然",
+   "用",
+   "为",
+   "照顾",
+   "草"
+  ],
+  "correct_answer": "用",
+  "explanation": "«不用 + V» — «…х хэрэггүй»: давтаж дуусгасан болохоор дахиж харах хэрэггүй.",
+  "order_index": 7,
+  "id": "hsk3-l05-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "A：这是你家的小狗吗？真漂亮！谁________它？ B：我妈妈。",
+  "options": [
+   "为",
+   "最近",
+   "季节",
+   "当然",
+   "照顾"
+  ],
+  "correct_answer": "照顾",
+  "explanation": "Нохойг хэн асардаг вэ? — «照顾» (асрах, халамжлах).",
+  "order_index": 8,
+  "id": "hsk3-l05-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "上个月很冷，现在天气不那么冷________。",
+  "options": [
+   "的",
+   "了",
+   "过",
+   "着"
+  ],
+  "correct_answer": "了",
+  "explanation": "Өмнө нь хүйтэн байсан → одоо тийм хүйтэн байхаа больсон: өөрчлөлтийг өгүүлбэрийн төгсгөлийн «了» заана.",
+  "order_index": 9,
+  "id": "hsk3-l05-q09",
+  "skillTags": [
+   "grammar",
+   "le-change"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我觉得你越来越________了。",
+  "options": [
+   "很漂亮",
+   "非常漂亮",
+   "漂亮",
+   "太漂亮"
+  ],
+  "correct_answer": "漂亮",
+  "explanation": "«越来越»-ийн ард шууд тэмдэг нэр орно; 很、非常、太 зэрэг зэргийн дайвар үг нэмэхгүй.",
+  "order_index": 10,
+  "id": "hsk3-l05-q10",
+  "skillTags": [
+   "grammar",
+   "yuelaiyue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "天气越来越热，大家穿得越来越________。",
+  "options": [
+   "很少",
+   "非常少",
+   "太少",
+   "少"
+  ],
+  "correct_answer": "少",
+  "explanation": "Халуун болох тусам хүмүүс нимгэн хувцасладаг — «穿得越来越少»; «越来越»-ийн ард 很/非常/太 орохгүй.",
+  "order_index": 11,
+  "id": "hsk3-l05-q11",
+  "skillTags": [
+   "grammar",
+   "yuelaiyue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "现在杯子里________水了。",
+  "options": [
+   "不",
+   "别",
+   "没有",
+   "不是"
+  ],
+  "correct_answer": "没有",
+  "explanation": "«Байхгүй болсон» — «没(有) + нэр үг + 了»: 没有水了. «不» нэр үгийг шууд үгүйсгэхгүй.",
+  "order_index": 12,
+  "id": "hsk3-l05-q12",
+  "skillTags": [
+   "grammar",
+   "le-change"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：小丽怎么不舒服了？",
+  "options": [
+   "前几天有点儿发烧，现在好多了",
+   "她感冒了，还没好",
+   "她腿疼",
+   "她越来越胖了"
+  ],
+  "correct_answer": "前几天有点儿发烧，现在好多了",
+  "explanation": "Сяо Ли «前几天有点儿发烧，现在好多了» гэж хэлсэн — хэдэн өдрийн өмнө халуурсан, одоо дээрдсэн.",
+  "order_index": 13,
+  "id": "hsk3-l05-q13",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：小丽为什么不喝绿茶？",
+  "options": [
+   "她不喜欢绿茶",
+   "绿茶不好喝",
+   "因为她要吃药",
+   "她想喝咖啡"
+  ],
+  "correct_answer": "因为她要吃药",
+  "explanation": "«我要吃药，不喝茶了» — эм уух гэж байгаа тул цай уухаа больсон.",
+  "order_index": 14,
+  "id": "hsk3-l05-q14",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：周太太为什么明天不能出去玩儿？",
+  "options": [
+   "她要去医院上班",
+   "她儿子生病了，她要在家照顾他",
+   "她自己感冒了",
+   "她要照顾小狗"
+  ],
+  "correct_answer": "她儿子生病了，她要在家照顾他",
+  "explanation": "Жоу хатагтай «我儿子生病了，我要在家照顾他» гэж хэлсэн.",
+  "order_index": 15,
+  "id": "hsk3-l05-q15",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：周太太的儿子现在怎么样了？",
+  "options": [
+   "要去医院",
+   "还在发烧",
+   "昨天吃了感冒药，现在好一些了",
+   "一点儿也没好"
+  ],
+  "correct_answer": "昨天吃了感冒药，现在好一些了",
+  "explanation": "«不用去医院，昨天吃了感冒药，现在好一些了» — эмнэлэгт очих хэрэггүй, эм уугаад арай дээрдсэн.",
+  "order_index": 16,
+  "id": "hsk3-l05-q16",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：小刚现在为什么也喜欢夏天了？",
+  "options": [
+   "因为夏天不那么冷",
+   "因为他也有漂亮的裙子",
+   "因为草和树都绿了",
+   "因为他喜欢看小丽穿漂亮的裙子"
+  ],
+  "correct_answer": "因为他喜欢看小丽穿漂亮的裙子",
+  "explanation": "Сяо Ган «我喜欢看你穿漂亮的裙子» гэж хэлсэн — Сяо Лиг гоё банзал өмсөхийг харах дуртай учраас.",
+  "order_index": 17,
+  "id": "hsk3-l05-q17",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文4：小丽为什么不能少吃？",
+  "options": [
+   "因为她越来越胖",
+   "因为她做的饭越来越好吃",
+   "因为她去年买了裙子",
+   "因为小刚让她多吃"
+  ],
+  "correct_answer": "因为她做的饭越来越好吃",
+  "explanation": "«我做的饭越来越好吃，我能少吃吗？» — өөрийнх нь хийсэн хоол улам бүр амттай болж байгаа тул бага идэж чадахгүй гэж байна.",
+  "order_index": 18,
+  "id": "hsk3-l05-q18",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Би одоо зунд дуртай болсон» — аль нь зөв бэ?",
+  "options": [
+   "我现在了喜欢夏天。",
+   "我了现在喜欢夏天。",
+   "我现在喜欢夏天了。",
+   "我现在喜欢了夏天。"
+  ],
+  "correct_answer": "我现在喜欢夏天了。",
+  "explanation": "Өөрчлөлтийн «了» өгүүлбэрийн ТӨГСГӨЛД, тусагдахуун (夏天)-ы ард орно.",
+  "order_index": 19,
+  "id": "hsk3-l05-q19",
+  "skillTags": [
+   "grammar",
+   "le-change"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：«我儿子生病了» ба «昨天吃了感冒药» — хоёр «了»-ийн зөв тайлбар аль нь вэ?",
+  "options": [
+   "Хоёулаа өөрчлөлтийн 了",
+   "生病了 — өөрчлөлт (шинэ нөхцөл), 吃了 — үйлдэл гүйцэтгэгдсэн",
+   "Хоёулаа гүйцэтгэлийн 了",
+   "生病了 — гүйцэтгэл, 吃了 — өөрчлөлт"
+  ],
+  "correct_answer": "生病了 — өөрчлөлт (шинэ нөхцөл), 吃了 — үйлдэл гүйцэтгэгдсэн",
+  "explanation": "«生病了» өгүүлбэрийн төгсгөлд ирж шинэ нөхцөл (өвдчихлөө)-ийг заана; «吃了感冒药» дахь 了 үйл үгийн ард, тусагдахууны өмнө ирж «уусан» гэсэн гүйцэтгэлийг заана.",
+  "order_index": 20,
+  "id": "hsk3-l05-q20",
+  "skillTags": [
+   "grammar",
+   "le-change"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：«我要吃药，不喝茶了。» — «不喝茶了» ямар утгатай вэ?",
+  "options": [
+   "Цай уугаагүй",
+   "Цай уучихсан",
+   "Цай уумаар байна",
+   "Цай уухаа больё (эм уух болсон тул)"
+  ],
+  "correct_answer": "Цай уухаа больё (эм уух болсон тул)",
+  "explanation": "«不 + V + 了» — «…хаа больсон/больё»: нөхцөл өөрчлөгдсөн (эм уух болсон) тул цай уухгүй болсон.",
+  "order_index": 21,
+  "id": "hsk3-l05-q21",
+  "skillTags": [
+   "grammar",
+   "le-change"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль нь зөв бэ?",
+  "options": [
+   "天气越来越很冷。",
+   "天气越来越冷。",
+   "天气很越来越冷。",
+   "天气越来越非常冷。"
+  ],
+  "correct_answer": "天气越来越冷。",
+  "explanation": "«越来越 + тэмдэг нэр» — дунд нь 很/非常 орохгүй, «越来越»-ийн өмнө ч «很» тавихгүй.",
+  "order_index": 22,
+  "id": "hsk3-l05-q22",
+  "skillTags": [
+   "grammar",
+   "yuelaiyue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Бид хятад хэл сурахад улам бүр дуртай болж байна» — аль нь зөв бэ?",
+  "options": [
+   "我们喜欢越来越学习汉语。",
+   "我们越来越很喜欢学习汉语。",
+   "越来越我们喜欢学习汉语。",
+   "我们越来越喜欢学习汉语。"
+  ],
+  "correct_answer": "我们越来越喜欢学习汉语。",
+  "explanation": "«越来越 + сэтгэлийн үйл үг (喜欢)» — «越来越» нь «喜欢»-ийн яг өмнө, зэргийн дайвар үггүй.",
+  "order_index": 23,
+  "id": "hsk3-l05-q23",
+  "skillTags": [
+   "grammar",
+   "yuelaiyue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Түүний бичдэг ханз улам бүр гоё болж байна» — аль нь зөв бэ?",
+  "options": [
+   "他的字越来越写得漂亮。",
+   "他越来越的字写得漂亮。",
+   "他的字写得越来越漂亮。",
+   "他的字写越来越得漂亮。"
+  ],
+  "correct_answer": "他的字写得越来越漂亮。",
+  "explanation": "Үйлдлийг «V得»-ээр үнэлэхэд «越来越» нь «得»-ийн ард, тэмдэг нэрийн (漂亮) яг өмнө орно.",
+  "order_index": 24,
+  "id": "hsk3-l05-q24",
+  "skillTags": [
+   "grammar",
+   "yuelaiyue"
+  ],
+  "difficulty": "hard"
+ }
+]

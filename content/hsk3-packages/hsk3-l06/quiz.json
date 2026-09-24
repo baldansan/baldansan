@@ -1,0 +1,458 @@
+[
+ {
+  "type": "cloze",
+  "question": "刚才还是晴天，怎么现在________就下雨了？",
+  "options": [
+   "清楚",
+   "突然",
+   "讲",
+   "明白",
+   "眼镜"
+  ],
+  "correct_answer": "突然",
+  "explanation": "«Сая цэлмэг байсан, одоо яагаад ГЭНЭТ бороо орчихов?» — санаандгүй өөрчлөлтийг «突然» заана.",
+  "order_index": 1,
+  "id": "hsk3-l06-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "你的意思我已经听________了。",
+  "options": [
+   "讲",
+   "突然",
+   "特别",
+   "公园",
+   "明白"
+  ],
+  "correct_answer": "明白",
+  "explanation": "«听明白» — сонсоод ойлгох. «Чиний санааг би аль хэдийн ойлгосон» гэсэн утгатай.",
+  "order_index": 2,
+  "id": "hsk3-l06-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "今天的语法课我没去，你给我________一下吧。",
+  "options": [
+   "讲",
+   "清楚",
+   "明白",
+   "突然",
+   "音乐"
+  ],
+  "correct_answer": "讲",
+  "explanation": "«给我讲一下» — надад тайлбарлаад өгөөч. Хичээлдээ ороогүй тул найзаасаа тайлбарлуулж байна.",
+  "order_index": 3,
+  "id": "hsk3-l06-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "今天天气________好，我们去爬山吧。",
+  "options": [
+   "清楚",
+   "讲",
+   "特别",
+   "明白",
+   "眼镜"
+  ],
+  "correct_answer": "特别",
+  "explanation": "«特别好» — онцгой сайхан. «特别» нь тэмдэг нэрийн өмнө ирж «их, үнэхээр» гэсэн зэрэг заана.",
+  "order_index": 4,
+  "id": "hsk3-l06-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "A：今天晚上做什么？ B：我跟小丽去听________。",
+  "options": [
+   "公园",
+   "离开",
+   "音乐会",
+   "刚才",
+   "聊天儿"
+  ],
+  "correct_answer": "音乐会",
+  "explanation": "«听音乐会» — концерт сонсох. Яриа 3-т ч «请她听音乐会» гэж гардаг.",
+  "order_index": 5,
+  "id": "hsk3-l06-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "A：你什么时候________北京？ B：明天的飞机。",
+  "options": [
+   "音乐会",
+   "公园",
+   "刚才",
+   "离开",
+   "聊天儿"
+  ],
+  "correct_answer": "离开",
+  "explanation": "«离开北京» — Бээжингээс явах. Хариулт нь «маргаашийн онгоцоор» гэсэн тул явах цагийг асууж байна.",
+  "order_index": 6,
+  "id": "hsk3-l06-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "A：请问，去________怎么走？ B：一直往前走就是。",
+  "options": [
+   "公园",
+   "音乐",
+   "离开",
+   "刚才",
+   "聊天儿"
+  ],
+  "correct_answer": "公园",
+  "explanation": "«去公园怎么走？» — цэцэрлэгт хүрээлэн рүү яаж явах вэ? Газрын нэр хэрэгтэй тул «公园».",
+  "order_index": 7,
+  "id": "hsk3-l06-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "A：你最喜欢做什么？ B：跟朋友________。",
+  "options": [
+   "公园",
+   "离开",
+   "刚才",
+   "聊天儿",
+   "眼镜"
+  ],
+  "correct_answer": "聊天儿",
+  "explanation": "«跟朋友聊天儿» — найзуудтайгаа ярилцаж хөөрөлдөх. «跟 + хүн + 聊天儿» хэлбэр.",
+  "order_index": 8,
+  "id": "hsk3-l06-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "cloze",
+  "question": "楼太高了，我上________去。",
+  "options": [
+   "得",
+   "不",
+   "了",
+   "没"
+  ],
+  "correct_answer": "不",
+  "explanation": "Байшин хэтэрхий өндөр тул «дээш гарч ЧАДАХГҮЙ» — боломжийн нөхбөрийн үгүйсгэл «上不去».",
+  "order_index": 9,
+  "id": "hsk3-l06-q09",
+  "skillTags": [
+   "grammar",
+   "potential-complement"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我的眼镜________？你看见了吗？",
+  "options": [
+   "吗",
+   "吧",
+   "呢",
+   "啊"
+  ],
+  "correct_answer": "呢",
+  "explanation": "«我的眼镜呢？» — Миний нүдний шил хаана байна? Нэр үг + 呢 нь байршил асууна.",
+  "order_index": 10,
+  "id": "hsk3-l06-q10",
+  "skillTags": [
+   "grammar",
+   "ne-location"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "老师，________您讲的那个语法我没听懂。",
+  "options": [
+   "刚才",
+   "刚",
+   "马上",
+   "已经"
+  ],
+  "correct_answer": "刚才",
+  "explanation": "Өгүүлэгдэхүүн «您»-ийн өмнө «刚» ирж чадахгүй; зөвхөн «刚才» (саяхан) ирнэ.",
+  "order_index": 11,
+  "id": "hsk3-l06-q11",
+  "skillTags": [
+   "grammar",
+   "gang-vs-gangcai"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我________来中国两个月。",
+  "options": [
+   "刚才",
+   "马上",
+   "刚",
+   "一会儿"
+  ],
+  "correct_answer": "刚",
+  "explanation": "Хоёр сар ярьж буй хүнд богино санагдаж байна — «刚» (дөнгөж). «刚才» бол хэдэн минутын өмнө.",
+  "order_index": 12,
+  "id": "hsk3-l06-q12",
+  "skillTags": [
+   "grammar",
+   "gang-vs-gangcai"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：周明在找什么？",
+  "options": [
+   "手机",
+   "眼镜",
+   "牛奶",
+   "作业"
+  ],
+  "correct_answer": "眼镜",
+  "explanation": "周明 «我的眼镜呢？怎么突然找不到了？» гэж нүдний шилээ хайж байна.",
+  "order_index": 13,
+  "id": "hsk3-l06-q13",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：周明为什么离不开眼镜？",
+  "options": [
+   "他要去房间找东西",
+   "眼镜是周太太买的",
+   "没有眼镜，他一个字也看不清楚",
+   "他要看电视"
+  ],
+  "correct_answer": "没有眼镜，他一个字也看不清楚",
+  "explanation": "Жоу Мин «没有眼镜，我一个字也看不清楚» гэж хэлсэн — шилгүй бол ганц ч үсэг тод харж чадахгүй.",
+  "order_index": 14,
+  "id": "hsk3-l06-q14",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：周明的儿子做完作业了吗？",
+  "options": [
+   "还没做完",
+   "不会做",
+   "刚做完",
+   "没有作业"
+  ],
+  "correct_answer": "刚做完",
+  "explanation": "Хүү «刚做完，你呢？» гэж хариулсан — дөнгөж хийж дуусгасан.",
+  "order_index": 15,
+  "id": "hsk3-l06-q15",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：同学锻炼完了要做什么？",
+  "options": [
+   "去公园走走",
+   "去听音乐会",
+   "在家做作业",
+   "去周明儿子家，请他讲题"
+  ],
+  "correct_answer": "去周明儿子家，请他讲题",
+  "explanation": "Утсаар ойлгомжтой тайлбарлаж чадахгүй тул хүү «你来我家吧，我给你讲讲» гэсэн; найз нь «我锻炼完了就过去» гэж хариулсан.",
+  "order_index": 16,
+  "id": "hsk3-l06-q16",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：小刚为什么不高兴？",
+  "options": [
+   "他想请小丽吃饭，但是找不到好饭馆",
+   "小丽不喜欢听音乐",
+   "他买到了音乐会的票",
+   "公园离他家太远"
+  ],
+  "correct_answer": "他想请小丽吃饭，但是找不到好饭馆",
+  "explanation": "Сяо Ган «我想请小丽吃饭，但是找不到好饭馆» гэж хэлсэн — сайн хоолны газар олж чадахгүй байгаа.",
+  "order_index": 17,
+  "id": "hsk3-l06-q17",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文4：周明喝牛奶了吗？为什么？",
+  "options": [
+   "喝了，因为可以睡得更好",
+   "没喝，因为他不喜欢喝牛奶",
+   "喝了一杯，然后睡着了",
+   "没喝，因为牛奶还没买呢"
+  ],
+  "correct_answer": "没喝，因为牛奶还没买呢",
+  "explanation": "Жоу Мин «牛奶呢？» гэж асуухад 周太太 «还没买呢» гэсэн — сүү хараахан аваагүй тул уугаагүй.",
+  "order_index": 18,
+  "id": "hsk3-l06-q18",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Би тэр ханзыг тод харж чадна» — аль нь зөв вэ?",
+  "options": [
+   "我看清楚得那个汉字。",
+   "我看得清楚那个汉字。",
+   "我清楚看得那个汉字。",
+   "我看不清楚那个汉字。"
+  ],
+  "correct_answer": "我看得清楚那个汉字。",
+  "explanation": "«得» нь үйл үгийн ард, нөхбөрийн өмнө: 看 + 得 + 清楚. «看不清楚» бол эсрэгээрээ «харж чадахгүй».",
+  "order_index": 19,
+  "id": "hsk3-l06-q19",
+  "skillTags": [
+   "grammar",
+   "potential-complement"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль өгүүлбэрт боломжийн нөхбөр (…ж чадна/чадахгүй) БАЙХГҮЙ вэ?",
+  "options": [
+   "电话里讲不明白。",
+   "音乐会人太多，买不到票。",
+   "我怎么看得到啊？",
+   "可以睡得更好些。"
+  ],
+  "correct_answer": "可以睡得更好些。",
+  "explanation": "«睡得更好些» нь «илүү сайн унтана» гэсэн зэргийн нөхбөр; бусад нь «…ж чадахгүй / чадах уу» гэсэн боломжийн нөхбөр.",
+  "order_index": 20,
+  "id": "hsk3-l06-q20",
+  "skillTags": [
+   "grammar",
+   "potential-complement"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Тэр чамайг оруулахгүй байгаа, чи орж болохгүй» — 他不让你进去，________。",
+  "options": [
+   "你进不去",
+   "你不能进去",
+   "你进得去",
+   "你不进得去"
+  ],
+  "correct_answer": "你不能进去",
+  "explanation": "Хориглох (зөвшөөрөхгүй) утгад «不能 + V» хэрэглэнэ; «进不去» нь бодит боломжгүйг л заана.",
+  "order_index": 21,
+  "id": "hsk3-l06-q21",
+  "skillTags": [
+   "grammar",
+   "potential-complement"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«你的车呢？» гэдэг нь юу гэсэн утгатай вэ?",
+  "options": [
+   "Чиний машин ямар вэ?",
+   "Чиний машин шинэ үү?",
+   "Чи машинтай юу?",
+   "Чиний машин хаана байна?"
+  ],
+  "correct_answer": "Чиний машин хаана байна?",
+  "explanation": "«Нэр үг + 呢？» = «Нэр үг + 在哪儿？» — юм хаана байгааг асууна.",
+  "order_index": 22,
+  "id": "hsk3-l06-q22",
+  "skillTags": [
+   "grammar",
+   "ne-location"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«A：你去哪儿？ B：我去超市，你呢？» — энд «你呢» юу гэж асууж байна вэ?",
+  "options": [
+   "Чи хаана байна?",
+   "Чи хаашаа явах вэ?",
+   "Чи сайн уу?",
+   "Чи юу авах вэ?"
+  ],
+  "correct_answer": "Чи хаашаа явах вэ?",
+  "explanation": "Өмнө нь асуулт байсан тул «你呢？» тэр асуултыг («你去哪儿？») давтаж байна — байршил асуугаагүй.",
+  "order_index": 23,
+  "id": "hsk3-l06-q23",
+  "skillTags": [
+   "grammar",
+   "ne-location"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль өгүүлбэр БУРУУ вэ?",
+  "options": [
+   "他刚才出去了。",
+   "刚才他出去了。",
+   "刚他出去了。",
+   "他刚出去。"
+  ],
+  "correct_answer": "刚他出去了。",
+  "explanation": "«刚» зөвхөн өгүүлэгдэхүүний ард, үйл үгийн өмнө ирнэ; өгүүлбэрийн эхэнд зөвхөн «刚才» ирнэ.",
+  "order_index": 24,
+  "id": "hsk3-l06-q24",
+  "skillTags": [
+   "grammar",
+   "gang-vs-gangcai"
+  ],
+  "difficulty": "medium"
+ }
+]

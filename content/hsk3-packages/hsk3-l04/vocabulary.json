@@ -1,0 +1,154 @@
+[
+ {
+  "chinese": "比赛",
+  "pinyin": "bǐsài",
+  "mongolian": "тэмцээн",
+  "hskLevel": "HSK3",
+  "exampleChinese": "是，这是我们比赛后照的。",
+  "exampleMongolian": "Тийм ээ, энэ бол бид тэмцээний дараа авахуулсан зураг."
+ },
+ {
+  "chinese": "照片",
+  "pinyin": "zhàopiàn",
+  "mongolian": "гэрэл зураг",
+  "hskLevel": "HSK3",
+  "exampleChinese": "这是你们比赛的照片吗？",
+  "exampleMongolian": "Энэ та нарын тэмцээний зураг уу?"
+ },
+ {
+  "chinese": "年级",
+  "pinyin": "niánjí",
+  "mongolian": "анги, курс (сургуулийн түвшин)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "你们都是一个年级的吗？",
+  "exampleMongolian": "Та нар бүгдээрээ нэг курсынх уу?"
+ },
+ {
+  "chinese": "又",
+  "pinyin": "yòu",
+  "mongolian": "(又…又…) …бас …, хоёр шинж зэрэг",
+  "hskLevel": "HSK3",
+  "exampleChinese": "那个又高又漂亮的女孩儿是二年级的。",
+  "exampleMongolian": "Тэр өндөр бас хөөрхөн охин хоёрдугаар курсынх."
+ },
+ {
+  "chinese": "聪明",
+  "pinyin": "cōngming",
+  "mongolian": "ухаалаг, сэргэлэн",
+  "hskLevel": "HSK3",
+  "exampleChinese": "她又聪明又热情，也很努力。",
+  "exampleMongolian": "Тэр ухаалаг бас найрсаг, бас их хичээнгүй."
+ },
+ {
+  "chinese": "热情",
+  "pinyin": "rèqíng",
+  "mongolian": "халуун дотно, найрсаг",
+  "hskLevel": "HSK3",
+  "exampleChinese": "她工作又认真又热情。",
+  "exampleMongolian": "Тэр ажилдаа нямбай бас найрсаг."
+ },
+ {
+  "chinese": "努力",
+  "pinyin": "nǔlì",
+  "mongolian": "хичээнгүй, шаргуу",
+  "hskLevel": "HSK3",
+  "exampleChinese": "弟弟回了家就复习，学习非常努力。",
+  "exampleMongolian": "Дүү маань гэртээ ирмэгцээ давтдаг, их шаргуу сурдаг."
+ },
+ {
+  "chinese": "总是",
+  "pinyin": "zǒngshì",
+  "mongolian": "үргэлж, байнга",
+  "hskLevel": "HSK3",
+  "exampleChinese": "她总是笑着跟客人说话。",
+  "exampleMongolian": "Тэр үргэлж инээмсэглэн үйлчлүүлэгчидтэй ярьдаг."
+ },
+ {
+  "chinese": "回答",
+  "pinyin": "huídá",
+  "mongolian": "хариулах",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我看她总是笑着回答老师的问题。",
+  "exampleMongolian": "Миний харж байгаагаар тэр багшийн асуултад үргэлж инээмсэглэн хариулдаг."
+ },
+ {
+  "chinese": "站",
+  "pinyin": "zhàn",
+  "mongolian": "зогсох",
+  "hskLevel": "HSK3",
+  "exampleChinese": "你看那些拿着鲜花站在门口的，都是等她的。",
+  "exampleMongolian": "Хар даа, тэр цэцэг барьчихаад үүдэнд зогсож байгаа хүмүүс бүгд түүнийг хүлээж байгаа юм."
+ },
+ {
+  "chinese": "饿",
+  "pinyin": "è",
+  "mongolian": "өлссөн; өлсөх",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我有点儿饿了，我们进超市买点儿东西吧。",
+  "exampleMongolian": "Би жаахан өлсчихлөө, супермаркет орж юм авцгаая."
+ },
+ {
+  "chinese": "超市",
+  "pinyin": "chāoshì",
+  "mongolian": "супермаркет",
+  "hskLevel": "HSK3",
+  "exampleChinese": "这家超市的蛋糕又便宜又好吃，一块只要2.99元。",
+  "exampleMongolian": "Энэ супермаркетын бялуу хямд бас амттай, нэг зүсэм нь ердөө 2.99 юань."
+ },
+ {
+  "chinese": "蛋糕",
+  "pinyin": "dàngāo",
+  "mongolian": "бялуу, торт",
+  "hskLevel": "HSK3",
+  "exampleChinese": "喝着咖啡吃蛋糕，太好了！",
+  "exampleMongolian": "Кофе уунгаа бялуу идэх — ямар гоё вэ!"
+ },
+ {
+  "chinese": "年轻",
+  "pinyin": "niánqīng",
+  "mongolian": "залуу",
+  "hskLevel": "HSK3",
+  "exampleChinese": "你们这儿是不是有一个又年轻又漂亮的服务员？",
+  "exampleMongolian": "Танайд нэг залуу бас хөөрхөн үйлчлэгч байдаг биз дээ?"
+ },
+ {
+  "chinese": "认真",
+  "pinyin": "rènzhēn",
+  "mongolian": "нухацтай, нямбай, хичээнгүй",
+  "hskLevel": "HSK3",
+  "exampleChinese": "他工作很认真，经理很喜欢他。",
+  "exampleMongolian": "Тэр ажилдаа их нямбай, менежер түүнд их дуртай."
+ },
+ {
+  "chinese": "客人",
+  "pinyin": "kèrén",
+  "mongolian": "зочин; үйлчлүүлэгч",
+  "hskLevel": "HSK3",
+  "exampleChinese": "小明，快回家吧！你家来客人了。",
+  "exampleMongolian": "Сяо Мин, хурдан гэртээ харь! Танайд зочин ирлээ."
+ },
+ {
+  "chinese": "小明",
+  "pinyin": "Xiǎomíng",
+  "mongolian": "Сяо Мин (хүний нэр) — тусгай нэр",
+  "hskLevel": "HSK3",
+  "exampleChinese": "小明：这是你们比赛的照片吗？",
+  "exampleMongolian": "Сяо Мин: Энэ та нарын тэмцээний зураг уу?"
+ },
+ {
+  "chinese": "马可",
+  "pinyin": "Mǎkě",
+  "mongolian": "Марко (хүний нэр) — тусгай нэр",
+  "hskLevel": "HSK3",
+  "exampleChinese": "照片里马可在做什么？",
+  "exampleMongolian": "Зурган дээр Марко юу хийж байна вэ?"
+ },
+ {
+  "chinese": "李小美",
+  "pinyin": "Lǐ Xiǎoměi",
+  "mongolian": "Ли Сяомэй (хүний нэр) — тусгай нэр",
+  "hskLevel": "HSK3",
+  "exampleChinese": "啊，我知道了，你说的是李小美吧？",
+  "exampleMongolian": "Аа, ойлголоо. Таны хэлээд байгаа хүн Ли Сяомэй биз дээ?"
+ }
+]

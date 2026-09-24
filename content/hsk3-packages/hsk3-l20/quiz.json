@@ -1,0 +1,458 @@
+[
+ {
+  "type": "cloze",
+  "question": "你每个月花多少钱？你有几张________？",
+  "options": [
+   "成绩",
+   "多么",
+   "信用卡",
+   "照相机",
+   "难过"
+  ],
+  "correct_answer": "信用卡",
+  "explanation": "Мөнгө зарцуулах тухай ярьж байгаа бөгөөд «张»-аар тоолдог хавтгай зүйл — «几张信用卡» (хэдэн зээлийн карт).",
+  "order_index": 1,
+  "id": "hsk3-l20-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这个地方真漂亮，你带________了吗？",
+  "options": [
+   "照相机",
+   "成绩",
+   "多么",
+   "信用卡",
+   "难过"
+  ],
+  "correct_answer": "照相机",
+  "explanation": "Газар үзэсгэлэнтэй тул зураг авах юм — «带照相机» (зургийн аппарат авч явах).",
+  "order_index": 2,
+  "id": "hsk3-l20-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "别________了，手机坏了就再买一个吧。",
+  "options": [
+   "成绩",
+   "多么",
+   "照相机",
+   "信用卡",
+   "难过"
+  ],
+  "correct_answer": "难过",
+  "explanation": "«别难过» — битгий гуниглаарай. Утас эвдэрсэнд сэтгэл гонсойж байгаа хүнийг тайвшруулж байна.",
+  "order_index": 3,
+  "id": "hsk3-l20-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我什么时候能知道这次考试的________？",
+  "options": [
+   "多么",
+   "成绩",
+   "照相机",
+   "信用卡",
+   "难过"
+  ],
+  "correct_answer": "成绩",
+  "explanation": "«考试的成绩» — шалгалтын дүн.",
+  "order_index": 4,
+  "id": "hsk3-l20-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "A：你想要什么结婚礼物？ B：你送给我几个漂亮的________吧。",
+  "options": [
+   "试",
+   "只有",
+   "东",
+   "碗",
+   "关心"
+  ],
+  "correct_answer": "碗",
+  "explanation": "«几个漂亮的碗» — хэдэн гоё аяга. Бэлэг болгон өгч болох эд зүйл нь сангаас зөвхөн «碗».",
+  "order_index": 5,
+  "id": "hsk3-l20-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "A：我的电脑又坏了。 B：我________一下，看看有什么问题。",
+  "options": [
+   "只有",
+   "试",
+   "碗",
+   "东",
+   "关心"
+  ],
+  "correct_answer": "试",
+  "explanation": "«我试一下» — би оролдоод (туршаад) үзье. Юу болсныг нь үзэхийн тулд оролдож байна.",
+  "order_index": 6,
+  "id": "hsk3-l20-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "A：你觉得周经理怎么样？ B：非常好，很________我们。",
+  "options": [
+   "关心",
+   "试",
+   "只有",
+   "碗",
+   "东"
+  ],
+  "correct_answer": "关心",
+  "explanation": "«很关心我们» — бидэнд их санаа тавьдаг. «很»-ийн араас хүнд хандах сэтгэлийг заах үйл үг хэрэгтэй.",
+  "order_index": 7,
+  "id": "hsk3-l20-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "A：请问，去中国银行怎么走？ B：一直往________走。",
+  "options": [
+   "试",
+   "只有",
+   "碗",
+   "关心",
+   "东"
+  ],
+  "correct_answer": "东",
+  "explanation": "Зам заахад чиглэл хэрэгтэй — «一直往东走» (чигээрээ зүүн тийш яв).",
+  "order_index": 8,
+  "id": "hsk3-l20-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "A：你怎么没带照相机？ B：照相机________爸爸用坏了。",
+  "options": [
+   "把",
+   "和",
+   "被",
+   "对"
+  ],
+  "correct_answer": "被",
+  "explanation": "Эзэн «照相机» нь үйлдлийг хүлээн авагч, «爸爸» нь үйлдэгч — «被» өгүүлбэр (багшийн номын 照相机被爸爸用坏了).",
+  "order_index": 9,
+  "id": "hsk3-l20-q09",
+  "skillTags": [
+   "grammar",
+   "bei-sentence"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "问题________解决呢。",
+  "options": [
+   "被还没有",
+   "还被没有",
+   "被没有还",
+   "还没有被"
+  ],
+  "correct_answer": "还没有被",
+  "explanation": "Үгүйсгэх дайвар үг «还没有» нь «被»-ийн ӨМНӨ орно: 问题还没有被解决呢 (сурах бичгийн 注意).",
+  "order_index": 10,
+  "id": "hsk3-l20-q10",
+  "skillTags": [
+   "grammar",
+   "bei-sentence"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "A：我的历史老师让我回家多复习。 B：对啊，________多复习才能提高成绩。",
+  "options": [
+   "只有",
+   "只要",
+   "虽然",
+   "因为"
+  ],
+  "correct_answer": "只有",
+  "explanation": "Ард нь «才能» ирж байгаа тул «只有……才……» — «олон давтаж байж л дүнгээ сайжруулна» (дасгалын ном 30).",
+  "order_index": 11,
+  "id": "hsk3-l20-q11",
+  "skillTags": [
+   "grammar",
+   "zhiyou-cai"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "那太好了，只有您来了，我们________能跳得更快乐。",
+  "options": [
+   "就",
+   "又",
+   "才",
+   "再"
+  ],
+  "correct_answer": "才",
+  "explanation": "«只有»-ын хос нь «才»: 只有您来了，我们才能跳得更快乐 (дасгалын номын сонсгол 19).",
+  "order_index": 12,
+  "id": "hsk3-l20-q12",
+  "skillTags": [
+   "grammar",
+   "zhiyou-cai"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：小丽找不到什么了？",
+  "options": [
+   "信用卡",
+   "照相机",
+   "手机",
+   "碗"
+  ],
+  "correct_answer": "照相机",
+  "explanation": "Сяо Ли «我的照相机被谁拿走了？怎么找不到了？» гэж асуусан — зургийн аппаратаа олохгүй байна.",
+  "order_index": 13,
+  "id": "hsk3-l20-q13",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：小丽现在能买一个新的照相机吗？为什么？",
+  "options": [
+   "能，因为公司东门外有大商场",
+   "能，因为同事给她钱",
+   "不能，因为商场离公司太远",
+   "不能，因为这个月信用卡里的钱已经花得差不多了"
+  ],
+  "correct_answer": "不能，因为这个月信用卡里的钱已经花得差不多了",
+  "explanation": "Сяо Ли «但是我这个月信用卡里的钱已经花得差不多了» гэсэн — энэ сарын картын мөнгөө бараг дуусгачихсан.",
+  "order_index": 14,
+  "id": "hsk3-l20-q14",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：小明的朋友为什么突然关心起体育来了？",
+  "options": [
+   "因为她的男朋友喜欢看足球比赛",
+   "因为她想提高成绩",
+   "因为小明喜欢踢足球",
+   "因为她天天上网玩儿游戏"
+  ],
+  "correct_answer": "因为她的男朋友喜欢看足球比赛",
+  "explanation": "«我的男朋友喜欢看足球比赛，我被他影响的» — найз залуугийнхаа нөлөөгөөр спорт сонирхох болсон.",
+  "order_index": 15,
+  "id": "hsk3-l20-q15",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：小明朋友的成绩为什么很差？",
+  "options": [
+   "她天天看球赛",
+   "她最近天天上网玩儿游戏",
+   "她不关心学习",
+   "她的男朋友不帮她"
+  ],
+  "correct_answer": "她最近天天上网玩儿游戏",
+  "explanation": "«我最近天天上网玩儿游戏，我的成绩差极了» — өдөр болгон интернэтэд тоглоом тоглодог болсноос дүн нь муудсан.",
+  "order_index": 16,
+  "id": "hsk3-l20-q16",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：谁能分出来哪个是哥哥，哪个是弟弟？",
+  "options": [
+   "只有他们的朋友",
+   "只有他们的爸爸妈妈",
+   "他们的爸爸妈妈和他们自己",
+   "谁都分不出来"
+  ],
+  "correct_answer": "他们的爸爸妈妈和他们自己",
+  "explanation": "Найз нь «只有你们的爸爸妈妈才能分出来» гэхэд Дэвид «除了父母以外，还有我们自己也能啊» гэж нэмсэн.",
+  "order_index": 17,
+  "id": "hsk3-l20-q17",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文4：我们在解决问题时一定要相信什么？",
+  "options": [
+   "看上去难的问题都很简单",
+   "年轻人不会遇到难题",
+   "多么难的问题，都会被解决的",
+   "只有简单的问题才能被解决"
+  ],
+  "correct_answer": "多么难的问题，都会被解决的",
+  "explanation": "Өгүүлэмжийн төгсгөлд «我们一定要相信：多么难的问题，都会被解决的» гэжээ.",
+  "order_index": 18,
+  "id": "hsk3-l20-q18",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Миний зургийн аппаратыг хэн авчихав аа?» — аль нь зөв бэ?",
+  "options": [
+   "我的照相机被谁拿走了？",
+   "谁被我的照相机拿走了？",
+   "我的照相机被谁拿了走？",
+   "我的照相机谁被拿走了？"
+  ],
+  "correct_answer": "我的照相机被谁拿走了？",
+  "explanation": "Эзэн (照相机) + 被 + үйлдэгч (谁) + үйл үг + үр дүн (拿走了) — яриа 1-ийн өгүүлбэр.",
+  "order_index": 19,
+  "id": "hsk3-l20-q19",
+  "skillTags": [
+   "grammar",
+   "bei-sentence"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль өгүүлбэр ЗӨВ бэ?",
+  "options": [
+   "蛋糕让吃完了。",
+   "弟弟让蛋糕吃完了。",
+   "蛋糕让弟弟吃完了。",
+   "蛋糕让弟弟吃。"
+  ],
+  "correct_answer": "蛋糕让弟弟吃完了。",
+  "explanation": "«让»-ийн дараа үйлдэгч (弟弟) заавал байна, эзэн нь хүлээн авагч (蛋糕), үйл үгийн ард «完了» ирнэ.",
+  "order_index": 20,
+  "id": "hsk3-l20-q20",
+  "skillTags": [
+   "grammar",
+   "bei-sentence"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Ирэх сард ээж нь түүнийг Америк руу явуулна» — аль нь зөв бэ?",
+  "options": [
+   "下个月她被妈妈会送到美国。",
+   "下个月她会被妈妈送到美国。",
+   "下个月她被会妈妈送到美国。",
+   "下个月她被妈妈送到会美国。"
+  ],
+  "correct_answer": "下个月她会被妈妈送到美国。",
+  "explanation": "Модаль үйл үг «会» нь «被»-ийн ӨМНӨ байрлана (сурах бичгийн 注意 (3)).",
+  "order_index": 21,
+  "id": "hsk3-l20-q21",
+  "skillTags": [
+   "grammar",
+   "bei-sentence"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Зөвхөн аав ээж нь л ялгаж чадна» — аль нь зөв бэ?",
+  "options": [
+   "只有爸爸、妈妈就能分出来。",
+   "才有爸爸、妈妈只能分出来。",
+   "只有爸爸、妈妈能才分出来。",
+   "只有爸爸、妈妈才能分出来。"
+  ],
+  "correct_answer": "只有爸爸、妈妈才能分出来。",
+  "explanation": "«只有» + цорын ганц нөхцөл, «才» нь «能»-ийн өмнө: 才能分出来.",
+  "order_index": 22,
+  "id": "hsk3-l20-q22",
+  "skillTags": [
+   "grammar",
+   "zhiyou-cai"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Тэр зөвхөн ээжийнхээ хийсэн хоолонд л дуртай» — аль нь зөв бэ?",
+  "options": [
+   "只有妈妈做的饭，才她爱吃。",
+   "只有妈妈做的饭，她才爱吃。",
+   "只有妈妈做的饭，她爱吃才。",
+   "才妈妈做的饭，她只有爱吃。"
+  ],
+  "correct_answer": "只有妈妈做的饭，她才爱吃。",
+  "explanation": "Хоёр дахь хэсэгт эзэн (她) байгаа тул «才» эзний ДАРАА, үйл үгийн өмнө орно.",
+  "order_index": 23,
+  "id": "hsk3-l20-q23",
+  "skillTags": [
+   "grammar",
+   "zhiyou-cai"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«只有……才……» бүтцэд «只有»-ын ард юу ордог вэ?",
+  "options": [
+   "Цорын ганц нөхцөл",
+   "Нөхцөлөөс гарах үр дүн",
+   "Хүрэлцээтэй олон нөхцөлийн нэг",
+   "Үйлдэл болсон цаг"
+  ],
+  "correct_answer": "Цорын ганц нөхцөл",
+  "explanation": "Сурах бичиг: «只有»-ын ард ЦОРЫН ГАНЦ нөхцөл, «才»-ын ард үр дүн. Хүрэлцээтэй нөхцөлийг «只要……就……» илэрхийлнэ (багшийн номын 注意).",
+  "order_index": 24,
+  "id": "hsk3-l20-q24",
+  "skillTags": [
+   "grammar",
+   "zhiyou-cai"
+  ],
+  "difficulty": "hard"
+ }
+]

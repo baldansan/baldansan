@@ -1,0 +1,458 @@
+[
+ {
+  "type": "cloze",
+  "question": "我回来了，真累啊，帮我把________放在桌子上吧。",
+  "options": [
+   "司机",
+   "起飞",
+   "发现",
+   "自己",
+   "包"
+  ],
+  "correct_answer": "包",
+  "explanation": "«把包放在桌子上» — цүнхээ ширээн дээр тавих. Гаднаас ирээд ширээн дээр тавьж болох юм нь цүнх (дасгалын ном 26).",
+  "order_index": 1,
+  "id": "hsk3-l12-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "你给________打个电话，让他下午三点来接我。",
+  "options": [
+   "起飞",
+   "司机",
+   "发现",
+   "自己",
+   "包"
+  ],
+  "correct_answer": "司机",
+  "explanation": "Хүнийг машинаар тосож авах хүн — жолооч (司机). «来接我» — намайг тосож ав (дасгалын ном 27).",
+  "order_index": 2,
+  "id": "hsk3-l12-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我________你最近总是上课睡觉，你晚上几点睡啊？",
+  "options": [
+   "发现",
+   "司机",
+   "起飞",
+   "自己",
+   "包"
+  ],
+  "correct_answer": "发现",
+  "explanation": "«我发现……» — би …гэдгийг анзаарсан. Хичээл дээр унтдагийг нь анзаарсан гэж байна (дасгалын ном 28).",
+  "order_index": 3,
+  "id": "hsk3-l12-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "A：我们的飞机几点________？ B：下午三点四十分，还有一个小时。",
+  "options": [
+   "司机",
+   "发现",
+   "起飞",
+   "自己",
+   "包"
+  ],
+  "correct_answer": "起飞",
+  "explanation": "Онгоцны тухай «几点起飞» — хэдэн цагт хөөрөх вэ (дасгалын ном 29).",
+  "order_index": 4,
+  "id": "hsk3-l12-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "A：你帮我把衣服洗了吧。 B：这些都是你的衣服，你________洗吧。",
+  "options": [
+   "司机",
+   "起飞",
+   "发现",
+   "自己",
+   "包"
+  ],
+  "correct_answer": "自己",
+  "explanation": "«你自己洗吧» — өөрөө угаа. Өөрийнх нь хувцас тул «өөрөө» гэсэн 自己 (дасгалын ном 30).",
+  "order_index": 5,
+  "id": "hsk3-l12-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "教室后边的那块________上写着几个字，你看得见吗？",
+  "options": [
+   "司机",
+   "画",
+   "包",
+   "黑板",
+   "护照"
+  ],
+  "correct_answer": "黑板",
+  "explanation": "Ангийн ард байгаа, дээр нь үсэг бичдэг юм — самбар (黑板). «那块黑板» — тэр самбар.",
+  "order_index": 6,
+  "id": "hsk3-l12-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "A：你怎么了？ B：今天我又迟到了，老师都________了。",
+  "options": [
+   "生气",
+   "发现",
+   "自己",
+   "行李箱",
+   "起飞"
+  ],
+  "correct_answer": "生气",
+  "explanation": "Дахин хоцорсон тул багш «уурласан» — 生气了.",
+  "order_index": 7,
+  "id": "hsk3-l12-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "A：我的衣服太多了！ B：你把衣服放在我的________里吧，我的箱子大。",
+  "options": [
+   "发现",
+   "生气",
+   "行李箱",
+   "自己",
+   "起飞"
+  ],
+  "correct_answer": "行李箱",
+  "explanation": "«我的箱子大» гэсэн тул хувцас хийх том юм — чемодан (行李箱).",
+  "order_index": 8,
+  "id": "hsk3-l12-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "八点上课，他九点________起床。",
+  "options": [
+   "就",
+   "才",
+   "都",
+   "还"
+  ],
+  "correct_answer": "才",
+  "explanation": "Хичээл найман цагт эхэлдэг атал есөн цагт босох нь оройтсон — «орой» гэсэн мэдрэмжийг «才» илэрхийлнэ.",
+  "order_index": 9,
+  "id": "hsk3-l12-q09",
+  "skillTags": [
+   "grammar",
+   "cai-vs-jiu"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "女：会议早就开始了，你怎么现在还没来？ 男：别生气，我十分钟________到。",
+  "options": [
+   "才",
+   "再",
+   "就",
+   "又"
+  ],
+  "correct_answer": "就",
+  "explanation": "«别生气» гэж тайвшруулж, «арван минутад л хүрнэ» гэж хурдан гэдгийг хэлж байгаа тул «就».",
+  "order_index": 10,
+  "id": "hsk3-l12-q10",
+  "skillTags": [
+   "grammar",
+   "cai-vs-jiu"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "cloze",
+  "question": "我帮你把衣服放________行李箱里吧。",
+  "options": [
+   "给",
+   "到",
+   "得",
+   "过"
+  ],
+  "correct_answer": "到",
+  "explanation": "Хувцсын байршил өөрчлөгдөж байгаа тул «放到 + газар» (яриа 2).",
+  "order_index": 11,
+  "id": "hsk3-l12-q11",
+  "skillTags": [
+   "grammar",
+   "ba-sentence-2"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我把鲜花送________老师了。",
+  "options": [
+   "在",
+   "到",
+   "得",
+   "给"
+  ],
+  "correct_answer": "给",
+  "explanation": "Цэцэг багшид шилжиж байгаа (хүнд өгөх) тул «送给 + хүн».",
+  "order_index": 12,
+  "id": "hsk3-l12-q12",
+  "skillTags": [
+   "grammar",
+   "ba-sentence-2"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：小刚以前一般几点睡觉？",
+  "options": [
+   "十点左右",
+   "十二点以后",
+   "八点以前",
+   "十一点"
+  ],
+  "correct_answer": "十二点以后",
+  "explanation": "Сяоли «以前都要12点以后才睡觉» гэж хэлсэн — өмнө нь шөнө 12-оос хойш л унтдаг байсан.",
+  "order_index": 13,
+  "id": "hsk3-l12-q13",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：小刚明天几点要到公司？",
+  "options": [
+   "七点",
+   "九点",
+   "十二点",
+   "八点"
+  ],
+  "correct_answer": "八点",
+  "explanation": "Сяоган «我明天8点就要到公司» гэсэн; менежер 8 цагт ирэхгүй бол цаашид битгий ир гэсэн.",
+  "order_index": 14,
+  "id": "hsk3-l12-q14",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：小刚什么时候回来？",
+  "options": [
+   "一个星期以后",
+   "明天",
+   "三天以后",
+   "一个月以后"
+  ],
+  "correct_answer": "一个星期以后",
+  "explanation": "Сяоган «一个星期就回来» гэхэд Сяоли «一个星期以后才回来？» гэж гайхсан.",
+  "order_index": 15,
+  "id": "hsk3-l12-q15",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：小丽把什么放在小刚的包里了？",
+  "options": [
+   "护照",
+   "吃的和喝的",
+   "她的照片",
+   "钱包"
+  ],
+  "correct_answer": "她的照片",
+  "explanation": "«我已经把我的照片放在你的包里了» — Сяоли өөрийн зургаа Сяоганы цүнхэнд хийсэн. Хоол, ундааг Сяоган Сяолид бэлдсэн.",
+  "order_index": 16,
+  "id": "hsk3-l12-q16",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：小刚今天忘带什么了？",
+  "options": [
+   "只有护照",
+   "护照和钱包",
+   "行李箱",
+   "手机和护照"
+  ],
+  "correct_answer": "护照和钱包",
+  "explanation": "Замдаа паспортоо мартсанаа мэдсэн, жолооч хүргэж өгөх үед түрийвчээ ч мартсанаа мэдсэн.",
+  "order_index": 17,
+  "id": "hsk3-l12-q17",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文4：老师为什么有点儿生气？",
+  "options": [
+   "因为学生没带铅笔",
+   "因为学生上课迟到",
+   "因为学生不会画画儿",
+   "因为学生没有好的学习习惯"
+  ],
+  "correct_answer": "因为学生没有好的学习习惯",
+  "explanation": "«不是因为他们没带铅笔，是因为他们没有好的学习习惯» — харандаа мартсандаа биш, сурах сайн зуршилгүйд нь уурласан.",
+  "order_index": 18,
+  "id": "hsk3-l12-q18",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Би өглөө таван цагт л босчихсон» — аль нь зөв бэ?",
+  "options": [
+   "我早上五点起床就了。",
+   "我就早上五点起床了。",
+   "我早上五点就起床了。",
+   "我早上五点才起床了。"
+  ],
+  "correct_answer": "我早上五点就起床了。",
+  "explanation": "«就» цаг заасан үгийн ард, үйл үгийн өмнө орж «эрт» гэсэн мэдрэмж өгнө; «才» бол «орой» гэсэн утгатай.",
+  "order_index": 19,
+  "id": "hsk3-l12-q19",
+  "skillTags": [
+   "grammar",
+   "cai-vs-jiu"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль өгүүлбэр «удаан, оройтсон» гэсэн мэдрэмж илэрхийлж байна вэ?",
+  "options": [
+   "弟弟三个小时才做完作业。",
+   "坐飞机一个小时就到了。",
+   "我很容易就找到了他的家。",
+   "我早上五点就起床了。"
+  ],
+  "correct_answer": "弟弟三个小时才做完作业。",
+  "explanation": "«才» — ярьж буй хүний бодлоор удаан, хэцүү; бусад нь «就»-тэй тул эрт, хурдан, амархан гэсэн утгатай.",
+  "order_index": 20,
+  "id": "hsk3-l12-q20",
+  "skillTags": [
+   "grammar",
+   "cai-vs-jiu"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Нэг долоо хоногийн дараа л буцаад ирнэ» (удахгүй гэсэн утгаар) — аль нь зөв бэ?",
+  "options": [
+   "一个星期才回来。",
+   "一个星期就回来。",
+   "一个星期回来就。",
+   "就一个星期回来才。"
+  ],
+  "correct_answer": "一个星期就回来。",
+  "explanation": "Сяоган нэг долоо хоногийг богино гэж бодож байгаа тул «就» (яриа 2). «才» гэвэл «тэгтлээ удаан» гэсэн утга гарна.",
+  "order_index": 21,
+  "id": "hsk3-l12-q21",
+  "skillTags": [
+   "grammar",
+   "cai-vs-jiu"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Багш даалгаврыг ширээн дээр тавьчихсан» — аль нь зөв бэ?",
+  "options": [
+   "老师把作业放桌子上在了。",
+   "老师作业把放在桌子上了。",
+   "老师放在桌子上把作业了。",
+   "老师把作业放在桌子上了。"
+  ],
+  "correct_answer": "老师把作业放在桌子上了。",
+  "explanation": "Бүтэц: A (老师) + 把 + B (作业) + үйл үг (放) + 在 + байршил (桌子上) + 了.",
+  "order_index": 22,
+  "id": "hsk3-l12-q22",
+  "skillTags": [
+   "grammar",
+   "ba-sentence-2"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Дүү мөнгийг ахдаа буцааж өгөөгүй» — аль нь зөв бэ?",
+  "options": [
+   "弟弟把钱没还给哥哥。",
+   "弟弟没把钱还给哥哥。",
+   "弟弟没把钱还哥哥给。",
+   "弟弟把没钱还给哥哥。"
+  ],
+  "correct_answer": "弟弟没把钱还给哥哥。",
+  "explanation": "«没» нь «把»-ийн өмнө, «给» нь үйл үгийн шууд ард: 没 + 把钱 + 还给 + 哥哥.",
+  "order_index": 23,
+  "id": "hsk3-l12-q23",
+  "skillTags": [
+   "grammar",
+   "ba-sentence-2"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль өгүүлбэр БУРУУ вэ?",
+  "options": [
+   "我朋友把书借给我了。",
+   "你帮我把这本书带给小刚。",
+   "我把一本书放在桌子上了。",
+   "我把这本书放在桌子上了。"
+  ],
+  "correct_answer": "我把一本书放在桌子上了。",
+  "explanation": "«把»-ийн объект тодорхой байх ёстой — «一本书» (ямар нэг ном) тодорхой бус тул буруу (багшийн номын анхааруулга).",
+  "order_index": 24,
+  "id": "hsk3-l12-q24",
+  "skillTags": [
+   "grammar",
+   "ba-sentence-2"
+  ],
+  "difficulty": "hard"
+ }
+]

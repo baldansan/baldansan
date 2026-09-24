@@ -1,0 +1,114 @@
+[
+ {
+  "chinese": "太阳",
+  "pinyin": "tàiyáng",
+  "mongolian": "нар (今天太阳不错 — өнөөдөр нар сайхан байна)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "今天太阳从西边出来了吗？",
+  "exampleMongolian": "Өнөөдөр нар баруунаасаа гарав уу? (ер бусын зүйл болоход гайхаж, шоглож хэлдэг хэллэг)"
+ },
+ {
+  "chinese": "西",
+  "pinyin": "xī",
+  "mongolian": "баруун (зүг) (西边 xībian — баруун тал; 西门 — баруун хаалга)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "地铁站西边有一个咖啡店。",
+  "exampleMongolian": "Метроны буудлын баруун талд нэг кофе шоп бий."
+ },
+ {
+  "chinese": "生气",
+  "pinyin": "shēng qì",
+  "mongolian": "уурлах (很生气 — их уурлах; 别生气 — битгий уурла)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "经理生气了，他告诉我，明天8点不到，以后就别来了。",
+  "exampleMongolian": "Менежер уурлачихсан. Тэр надад «маргааш 8 цагт ирэхгүй бол цаашид битгий ирээрэй» гэж хэлсэн."
+ },
+ {
+  "chinese": "行李箱",
+  "pinyin": "xínglixiāng",
+  "mongolian": "чемодан, аяллын цүнх",
+  "hskLevel": "HSK3",
+  "exampleChinese": "那我帮你把衣服放到行李箱里吧。",
+  "exampleMongolian": "Тэгвэл хувцсыг чинь чемоданд хийгээд өгье."
+ },
+ {
+  "chinese": "自己",
+  "pinyin": "zìjǐ",
+  "mongolian": "өөрөө; өөрийгөө (你自己去吧 — чи өөрөө яв)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "你要自己照顾好自己。",
+  "exampleMongolian": "Чи өөрөө өөрийгөө сайн халамжлаарай."
+ },
+ {
+  "chinese": "包",
+  "pinyin": "bāo",
+  "mongolian": "цүнх (钱包 — түрийвч; 书包 — номын цүнх)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我已经把我的照片放在你的包里了。",
+  "exampleMongolian": "Би зургаа чиний цүнхэнд аль хэдийн хийчихсэн."
+ },
+ {
+  "chinese": "发现",
+  "pinyin": "fāxiàn",
+  "mongolian": "олж мэдэх, анзаарах, (…болохыг) мэдэх",
+  "hskLevel": "HSK3",
+  "exampleChinese": "来机场的路上我才发现忘带护照了。",
+  "exampleMongolian": "Онгоцны буудал руу ирэх замдаа л паспортоо авахаа мартсанаа сая мэдлээ."
+ },
+ {
+  "chinese": "护照",
+  "pinyin": "hùzhào",
+  "mongolian": "гадаад паспорт",
+  "hskLevel": "HSK3",
+  "exampleChinese": "你把护照放在行李箱里了吗？",
+  "exampleMongolian": "Чи паспортоо чемодандаа хийсэн үү?"
+ },
+ {
+  "chinese": "起飞",
+  "pinyin": "qǐfēi",
+  "mongolian": "(онгоц) хөөрөх",
+  "hskLevel": "HSK3",
+  "exampleChinese": "飞机就要起飞了，请您坐好。",
+  "exampleMongolian": "Онгоц хөөрөх гэж байна, та сайн суугаарай."
+ },
+ {
+  "chinese": "司机",
+  "pinyin": "sījī",
+  "mongolian": "жолооч",
+  "hskLevel": "HSK3",
+  "exampleChinese": "司机把我送到机场的时候，我才发现忘记带钱包了。",
+  "exampleMongolian": "Жолооч намайг онгоцны буудал хүртэл хүргэж өгөх үед л түрийвчээ авахаа мартсанаа сая мэдсэн."
+ },
+ {
+  "chinese": "教",
+  "pinyin": "jiāo",
+  "mongolian": "заах (教汉语 — хятад хэл заах; 教室 jiàoshì-ийн «jiào»-тай андуурахгүй)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我是一个中学老师，教学生画画儿。",
+  "exampleMongolian": "Би дунд сургуулийн багш, сурагчдад зураг зурахыг заадаг."
+ },
+ {
+  "chinese": "画",
+  "pinyin": "huà",
+  "mongolian": "зурах; зураг (画画儿 huà huàr — зураг зурах)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "他会画中国画儿。",
+  "exampleMongolian": "Тэр хятад зураг зурж чаддаг."
+ },
+ {
+  "chinese": "需要",
+  "pinyin": "xūyào",
+  "mongolian": "хэрэгтэй, шаардлагатай байх",
+  "hskLevel": "HSK3",
+  "exampleChinese": "去旅游，需要带什么东西？",
+  "exampleMongolian": "Аялалд явахад ямар юм авч явах хэрэгтэй вэ?"
+ },
+ {
+  "chinese": "黑板",
+  "pinyin": "hēibǎn",
+  "mongolian": "самбар (хар самбар)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "黑板上的那个字怎么读？",
+  "exampleMongolian": "Самбар дээрх тэр ханзыг яаж уншдаг вэ?"
+ }
+]

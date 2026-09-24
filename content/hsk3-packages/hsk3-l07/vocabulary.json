@@ -1,0 +1,98 @@
+[
+ {
+  "chinese": "同事",
+  "pinyin": "tóngshì",
+  "mongolian": "хамт ажилладаг хүн, хамтран ажиллагч",
+  "hskLevel": "HSK3",
+  "exampleChinese": "那个漂亮的新同事是谁？",
+  "exampleMongolian": "Тэр хөөрхөн шинэ хамт ажиллагч чинь хэн бэ?"
+ },
+ {
+  "chinese": "以前",
+  "pinyin": "yǐqián",
+  "mongolian": "өмнө, урьд; өмнө нь (工作以前 — ажиллахаас өмнө; 两年以前 — хоёр жилийн өмнө)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "以前她在哪儿工作？",
+  "exampleMongolian": "Өмнө нь тэр хаана ажилладаг байсан бэ?"
+ },
+ {
+  "chinese": "银行",
+  "pinyin": "yínháng",
+  "mongolian": "банк",
+  "hskLevel": "HSK3",
+  "exampleChinese": "她在银行工作了两年以后来的我们公司。",
+  "exampleMongolian": "Тэр банкинд хоёр жил ажилласныхаа дараа манай компанид ирсэн юм."
+ },
+ {
+  "chinese": "久",
+  "pinyin": "jiǔ",
+  "mongolian": "удаан, удаан хугацаанд (多久 — хэр удаан; 好久不见 — уулзаагүй удлаа)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "你们唱了多久？",
+  "exampleMongolian": "Та нар хэр удаан дуулсан бэ?"
+ },
+ {
+  "chinese": "感兴趣",
+  "pinyin": "gǎn xìngqù",
+  "mongolian": "сонирхох, сонирхолтой байх (对……感兴趣 — …-г сонирхох)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "你们都对音乐感兴趣吗？",
+  "exampleMongolian": "Та хоёр хоёулаа дуу хөгжим сонирхдог юм уу?"
+ },
+ {
+  "chinese": "结婚",
+  "pinyin": "jié hūn",
+  "mongolian": "гэрлэх, хурим хийх (跟……结婚 — …-тэй гэрлэх)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我跟小丽下个月结婚。",
+  "exampleMongolian": "Би Сяолитай ирэх сард гэрлэнэ."
+ },
+ {
+  "chinese": "欢迎",
+  "pinyin": "huānyíng",
+  "mongolian": "угтах, тавтай морилно уу гэх (欢迎你来 — ирээрэй, чамайг урьж байна)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "到时候欢迎你来。",
+  "exampleMongolian": "Тэр үед чи заавал ирээрэй."
+ },
+ {
+  "chinese": "迟到",
+  "pinyin": "chídào",
+  "mongolian": "хоцрох",
+  "hskLevel": "HSK3",
+  "exampleChinese": "你看看手表，怎么迟到了？",
+  "exampleMongolian": "Бугуйн цагаа харж үз, яагаад хоцорсон юм бэ?"
+ },
+ {
+  "chinese": "半",
+  "pinyin": "bàn",
+  "mongolian": "хагас (七点半 — долоон цаг хагас; 半个小时 — хагас цаг)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我都在这儿坐了半个小时了。",
+  "exampleMongolian": "Би энд суугаад аль хэдийн хагас цаг боллоо."
+ },
+ {
+  "chinese": "接",
+  "pinyin": "jiē",
+  "mongolian": "тосох, (хүнийг) очиж авах (来接我 — намайг ирж авах)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "你不是说七点半来接我吗？",
+  "exampleMongolian": "Долоон цаг хагаст ирж намайг авна гэсэн биш билүү?"
+ },
+ {
+  "chinese": "刻",
+  "pinyin": "kè",
+  "mongolian": "(цагийн) улирал = 15 минут (一刻钟 — 15 минут; 八点一刻 — 8:15)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "你迟到了一刻钟。",
+  "exampleMongolian": "Чи арван таван минут хоцорсон."
+ },
+ {
+  "chinese": "差",
+  "pinyin": "chà",
+  "mongolian": "дутуу байх (差一刻八点 — 8 цагт 15 минут дутуу = 7:45)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "已经差一刻八点了！",
+  "exampleMongolian": "Найман цагт арван таван минут л дутуу боллоо шүү дээ!"
+ }
+]

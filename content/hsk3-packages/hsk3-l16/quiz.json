@@ -1,0 +1,458 @@
+[
+ {
+  "type": "cloze",
+  "question": "你觉得哪个________最好玩儿？",
+  "options": [
+   "关系",
+   "可爱",
+   "城市",
+   "鼻子",
+   "如果"
+  ],
+  "correct_answer": "城市",
+  "explanation": "«哪个城市最好玩儿» — аль хот хамгийн сонирхолтой вэ. «哪个» асуух үгийн ард газар оронд тохирох нэр үг хэрэгтэй.",
+  "order_index": 1,
+  "id": "hsk3-l16-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我和同屋的________不太好，怎么办？",
+  "options": [
+   "可爱",
+   "鼻子",
+   "城市",
+   "如果",
+   "关系"
+  ],
+  "correct_answer": "关系",
+  "explanation": "«我和同屋的关系» — өрөөний хөршөөсөө харилцаа. «A和B的关系» — хоёр хүний харилцаа.",
+  "order_index": 2,
+  "id": "hsk3-l16-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我女朋友________高高的、头发长长的，非常好看。",
+  "options": [
+   "鼻子",
+   "关系",
+   "可爱",
+   "城市",
+   "如果"
+  ],
+  "correct_answer": "鼻子",
+  "explanation": "«鼻子高高的» — хамар нь гозгор өндөр. «头发»-тэй зэрэгцэн нүүр царайн хэсгийг дүрсэлж байгаа тул 鼻子.",
+  "order_index": 3,
+  "id": "hsk3-l16-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "那个小狗真________，我们把它带回家吧。",
+  "options": [
+   "关系",
+   "鼻子",
+   "城市",
+   "可爱",
+   "如果"
+  ],
+  "correct_answer": "可爱",
+  "explanation": "«真可爱» — ёстой хөөрхөн. Гэртээ авч харимаар санагдсан шалтгаан нь гөлөг өхөөрдөм байгаа.",
+  "order_index": 4,
+  "id": "hsk3-l16-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "A：今天下午你去哪儿了？ B：我的车总是有问题，我去________了一下。",
+  "options": [
+   "米",
+   "检查",
+   "公斤",
+   "认为",
+   "刷牙"
+  ],
+  "correct_answer": "检查",
+  "explanation": "«检查一下» — шалгуулах. Машинд байнга асуудал гардаг тул шалгуулахаар очсон.",
+  "order_index": 5,
+  "id": "hsk3-l16-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "A：你想买点儿什么？ B：给我来一________苹果。",
+  "options": [
+   "米",
+   "检查",
+   "认为",
+   "公斤",
+   "刷牙"
+  ],
+  "correct_answer": "公斤",
+  "explanation": "«一公斤苹果» — нэг кг алим. Алимыг жингээр (公斤) худалдаж авна.",
+  "order_index": 6,
+  "id": "hsk3-l16-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "A：你有多高？ B：1________75。",
+  "options": [
+   "米",
+   "检查",
+   "公斤",
+   "认为",
+   "刷牙"
+  ],
+  "correct_answer": "米",
+  "explanation": "«1米75» — 1 метр 75 см. Өндрийг метрээр (米) хэмжинэ.",
+  "order_index": 7,
+  "id": "hsk3-l16-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "A：你怎么刚吃饭？ B：今天起晚了，________以后就来上课了。",
+  "options": [
+   "米",
+   "检查",
+   "公斤",
+   "认为",
+   "刷牙"
+  ],
+  "correct_answer": "刷牙",
+  "explanation": "«刷牙以后就来上课了» — шүдээ угаасан даруйдаа хичээлдээ ирсэн, тиймээс хоол идэж амжаагүй.",
+  "order_index": 8,
+  "id": "hsk3-l16-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "如果有钱的话，我________去旅游。",
+  "options": [
+   "把",
+   "很",
+   "就",
+   "的"
+  ],
+  "correct_answer": "就",
+  "explanation": "«如果……的话，我就……» — таамаглалын үр дүнг «就» заана.",
+  "order_index": 9,
+  "id": "hsk3-l16-q09",
+  "skillTags": [
+   "grammar",
+   "if-then"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "如果你喜欢，________给你买。",
+  "options": [
+   "我就",
+   "就我",
+   "我把",
+   "把我"
+  ],
+  "correct_answer": "我就",
+  "explanation": "Хоёр дахь хэсгийн эзэн (我) «就»-гийн ӨМНӨ орно: 我就给你买.",
+  "order_index": 10,
+  "id": "hsk3-l16-q10",
+  "skillTags": [
+   "grammar",
+   "if-then"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "弟弟高兴________跳起来了。",
+  "options": [
+   "的",
+   "把",
+   "很",
+   "得"
+  ],
+  "correct_answer": "得",
+  "explanation": "Байдлын нөхбөрийг «得»-ээр холбоно: 高兴得跳起来了. Дасгалын номын 36-р асуултын албан хариулт.",
+  "order_index": 11,
+  "id": "hsk3-l16-q11",
+  "skillTags": [
+   "grammar",
+   "complex-state-complement"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "小狗的眼睛大大________。",
+  "options": [
+   "得",
+   "的",
+   "了",
+   "就"
+  ],
+  "correct_answer": "的",
+  "explanation": "Давхарласан тэмдэг нэрийн ард «的» заавал: 大大的. Дасгалын номын 37-р асуултын албан хариулт.",
+  "order_index": 12,
+  "id": "hsk3-l16-q12",
+  "skillTags": [
+   "grammar",
+   "adjective-reduplication"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：周明年轻的时候为什么没去旅行？",
+  "options": [
+   "那时候没有时间",
+   "那时候没有钱",
+   "他不喜欢去其他城市",
+   "他工作太累了"
+  ],
+  "correct_answer": "那时候没有钱",
+  "explanation": "Жоу Мин «那时候没有钱，如果有钱，就去了» — тэр үед мөнгөгүй байсан гэж хэлсэн.",
+  "order_index": 13,
+  "id": "hsk3-l16-q13",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：现在周明为什么不能去旅行？",
+  "options": [
+   "钱还不够",
+   "他不想离开这个城市",
+   "他的牙很疼",
+   "主要是没有时间"
+  ],
+  "correct_answer": "主要是没有时间",
+  "explanation": "«现在钱不是问题了，主要是没有时间» — одоо мөнгө асуудал биш, гол нь цаг зав байхгүй.",
+  "order_index": 14,
+  "id": "hsk3-l16-q14",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：同事的女儿长得怎么样？",
+  "options": [
+   "白白的、胖胖的，很可爱",
+   "黑黑的、瘦瘦的",
+   "高高的、瘦瘦的",
+   "鼻子大大的，头发长长的"
+  ],
+  "correct_answer": "白白的、胖胖的，很可爱",
+  "explanation": "Сяо Ли «你女儿长得白白的、胖胖的，真可爱！» гэсэн; хамар нь жижигхэн (小小的), үс нь хар (黑黑的).",
+  "order_index": 15,
+  "id": "hsk3-l16-q15",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：小刚为什么牙疼？",
+  "options": [
+   "他没去医院检查",
+   "他工作太忙了",
+   "他没有好好儿刷牙",
+   "大夫没给他检查"
+  ],
+  "correct_answer": "他没有好好儿刷牙",
+  "explanation": "Эмч болгон «回家好好儿刷牙» гэж хэлдэг — өөрөөр хэлбэл шүдээ сайн угаадаггүй нь шалтгаан (багшийн ном: 他不好好刷牙).",
+  "order_index": 16,
+  "id": "hsk3-l16-q16",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文4：为什么现在人和人之间的关系冷冷的？",
+  "options": [
+   "大家都不喜欢说话",
+   "工作太忙，没时间跟别人见面，累得不愿意多说话",
+   "人们住在不同的城市",
+   "人们没有钱"
+  ],
+  "correct_answer": "工作太忙，没时间跟别人见面，累得不愿意多说话",
+  "explanation": "Бичвэрт «工作太忙，忙得没时间跟别人见面，累得不愿意和别人多说话» гэсэн.",
+  "order_index": 17,
+  "id": "hsk3-l16-q17",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文4：我们怎么做才能让关系变得更好？",
+  "options": [
+   "少跟别人见面",
+   "多工作，少休息",
+   "多给别人买礼物",
+   "多对别人笑笑，多用“您好”“谢谢”这样的词语"
+  ],
+  "correct_answer": "多对别人笑笑，多用“您好”“谢谢”这样的词语",
+  "explanation": "«我们应该多对别人笑笑，说话时如果能多用一些“您好”“谢谢”这样的词语，和别人的关系就会变得更好。»",
+  "order_index": 18,
+  "id": "hsk3-l16-q18",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Чамд таалагдвал би авч өгье» — аль нь зөв бэ?",
+  "options": [
+   "如果你喜欢，就我给你买。",
+   "如果你喜欢，我给你买就。",
+   "如果你喜欢，我就给你买。",
+   "我就如果你喜欢，给你买。"
+  ],
+  "correct_answer": "如果你喜欢，我就给你买。",
+  "explanation": "«如果» — таамаглалын эхэнд; хоёр дахь хэсгийн эзэн (我) «就»-гийн өмнө, «就» — үйл үгийн өмнө.",
+  "order_index": 19,
+  "id": "hsk3-l16-q19",
+  "skillTags": [
+   "grammar",
+   "if-then"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Үгийг зөв дараалалд оруул: 玩儿 / 天气 / 就 / 我们 / 明天 / 公园 / 去 / 好",
+  "options": [
+   "明天天气好就我们去公园玩儿。",
+   "明天天气好我们就去公园玩儿。",
+   "我们就明天天气好去公园玩儿。",
+   "明天天气好我们去公园就玩儿。"
+  ],
+  "correct_answer": "明天天气好我们就去公园玩儿。",
+  "explanation": "Эхлээд нөхцөл (明天天气好), дараа нь эзэн (我们) + 就 + үйлдэл. Дасгалын номын 38-р асуултын албан хариулт.",
+  "order_index": 20,
+  "id": "hsk3-l16-q20",
+  "skillTags": [
+   "grammar",
+   "if-then"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Тэр ярих ч дургүй болтлоо ядарсан» — аль нь зөв бэ?",
+  "options": [
+   "他累的不想说话。",
+   "他不想说话得累。",
+   "他累不想说话得。",
+   "他累得不想说话。"
+  ],
+  "correct_answer": "他累得不想说话。",
+  "explanation": "«得»-ийн өмнө байдал (累), ард нь үр дагавар (不想说话). «的» биш «得».",
+  "order_index": 21,
+  "id": "hsk3-l16-q21",
+  "skillTags": [
+   "grammar",
+   "complex-state-complement"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль нь НИЙЛМЭЛ байдлын нөхбөр (得-ийн ард үйл үгийн хэллэг) вэ?",
+  "options": [
+   "我忙得没有时间吃饭。",
+   "她笑得很开心。",
+   "他跑得很快。",
+   "他说汉语说得很好。"
+  ],
+  "correct_answer": "我忙得没有时间吃饭。",
+  "explanation": "«忙得没有时间吃饭» — «得»-ийн ард үйл үгийн хэллэг. Бусад нь «很 + тэмдэг нэр» бүхий энгийн байдлын нөхбөр (багшийн номын 注意: 笑得很开心 — энгийн).",
+  "order_index": 22,
+  "id": "hsk3-l16-q22",
+  "skillTags": [
+   "grammar",
+   "complex-state-complement"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Охин чинь цав цагаан, булцгар, ёстой хөөрхөн юм аа!» — аль нь зөв бэ?",
+  "options": [
+   "你女儿长得白白、胖胖，真可爱！",
+   "你女儿长得白白的、胖胖的，真可爱！",
+   "你女儿长得很白白的、很胖胖的，真可爱！",
+   "你女儿长得白的白的、胖的胖的，真可爱！"
+  ],
+  "correct_answer": "你女儿长得白白的、胖胖的，真可爱！",
+  "explanation": "Давхарласан тэмдэг нэрийн ард «的» заавал, урд нь «很» тавихгүй: 白白的、胖胖的.",
+  "order_index": 23,
+  "id": "hsk3-l16-q23",
+  "skillTags": [
+   "grammar",
+   "adjective-reduplication"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Үгийг зөв дараалалд оруул: 甜 / 的 / 甜 / 水果店 / 的 / 西瓜",
+  "options": [
+   "水果店的甜甜西瓜的。",
+   "西瓜的水果店甜甜的。",
+   "水果店的西瓜甜甜的。",
+   "水果店甜甜的的西瓜。"
+  ],
+  "correct_answer": "水果店的西瓜甜甜的。",
+  "explanation": "«水果店的西瓜» (жимсний дэлгүүрийн тарвас) + «甜甜的» (чихэрлэг сайхан). Дасгалын номын 40-р асуултын албан хариулт.",
+  "order_index": 24,
+  "id": "hsk3-l16-q24",
+  "skillTags": [
+   "grammar",
+   "adjective-reduplication"
+  ],
+  "difficulty": "hard"
+ }
+]

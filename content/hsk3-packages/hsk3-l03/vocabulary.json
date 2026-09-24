@@ -1,0 +1,138 @@
+[
+ {
+  "chinese": "还是",
+  "pinyin": "háishi",
+  "mongolian": "эсвэл (асуулт дотор: «…юм уу, …юм уу?»)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "明天是晴天还是阴天？",
+  "exampleMongolian": "Маргааш цэлмэг үү, үүлэрхэг үү?"
+ },
+ {
+  "chinese": "爬山",
+  "pinyin": "pá shān",
+  "mongolian": "ууланд авирах, ууланд гарах",
+  "hskLevel": "HSK3",
+  "exampleChinese": "没事，我们明天要去爬山。",
+  "exampleMongolian": "Юу ч үгүй, бид маргааш ууланд авирах гэж байгаа юм."
+ },
+ {
+  "chinese": "小心",
+  "pinyin": "xiǎoxīn",
+  "mongolian": "болгоомжтой; болгоомжлох",
+  "hskLevel": "HSK3",
+  "exampleChinese": "爬山的时候要小心点儿。",
+  "exampleMongolian": "Ууланд авирахдаа болгоомжтой байгаарай."
+ },
+ {
+  "chinese": "条",
+  "pinyin": "tiáo",
+  "mongolian": "урт нарийн зүйлийн тоо нэр (一条裤子、一条鱼、一条路)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我记得你已经有两条这样的裤子了。",
+  "exampleMongolian": "Миний санаж байгаагаар чамд ийм өмд аль хэдийн хоёр байгаа шүү дээ."
+ },
+ {
+  "chinese": "裤子",
+  "pinyin": "kùzi",
+  "mongolian": "өмд (доод хувцас)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "你觉得这条裤子怎么样？",
+  "exampleMongolian": "Энэ өмд ямар санагдаж байна?"
+ },
+ {
+  "chinese": "记得",
+  "pinyin": "jìde",
+  "mongolian": "санах, санаж байх",
+  "hskLevel": "HSK3",
+  "exampleChinese": "你还记得我吗？",
+  "exampleMongolian": "Чи намайг санаж байна уу?"
+ },
+ {
+  "chinese": "衬衫",
+  "pinyin": "chènshān",
+  "mongolian": "цамц (захтай)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "这件衬衫怎么样？",
+  "exampleMongolian": "Энэ цамц ямар вэ?"
+ },
+ {
+  "chinese": "元",
+  "pinyin": "yuán",
+  "mongolian": "юань (мөнгөний нэгж; ярианд 块)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "这上面写着320元。",
+  "exampleMongolian": "Үүн дээр 320 юань гэж бичээстэй байна."
+ },
+ {
+  "chinese": "新鲜",
+  "pinyin": "xīnxiān",
+  "mongolian": "шинэхэн, шинэ (хүнс)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "这些水果真新鲜。",
+  "exampleMongolian": "Энэ жимснүүд үнэхээр шинэхэн юм аа."
+ },
+ {
+  "chinese": "甜",
+  "pinyin": "tián",
+  "mongolian": "чихэрлэг, амттай",
+  "hskLevel": "HSK3",
+  "exampleChinese": "西瓜不甜不要钱。",
+  "exampleMongolian": "Тарвас чихэрлэг биш бол мөнгө авахгүй."
+ },
+ {
+  "chinese": "只",
+  "pinyin": "zhǐ",
+  "mongolian": "зөвхөн, ганцхан",
+  "hskLevel": "HSK3",
+  "exampleChinese": "今天晚上只吃水果不吃饭！",
+  "exampleMongolian": "Өнөө орой зөвхөн жимс идээд, хоол идэхгүй!"
+ },
+ {
+  "chinese": "放",
+  "pinyin": "fàng",
+  "mongolian": "тавих",
+  "hskLevel": "HSK3",
+  "exampleChinese": "桌子上放着很多饮料。",
+  "exampleMongolian": "Ширээн дээр олон ундаа тавиатай байна."
+ },
+ {
+  "chinese": "饮料",
+  "pinyin": "yǐnliào",
+  "mongolian": "ундаа",
+  "hskLevel": "HSK3",
+  "exampleChinese": "你喜欢喝什么饮料？",
+  "exampleMongolian": "Чи ямар ундаа уух дуртай вэ?"
+ },
+ {
+  "chinese": "或者",
+  "pinyin": "huòzhě",
+  "mongolian": "эсвэл (өгүүлэх өгүүлбэрт)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "茶或者咖啡都可以。",
+  "exampleMongolian": "Цай ч юм уу, кофе ч болно."
+ },
+ {
+  "chinese": "舒服",
+  "pinyin": "shūfu",
+  "mongolian": "тухтай, таатай, эвтэйхэн",
+  "hskLevel": "HSK3",
+  "exampleChinese": "喝杯热茶会很舒服。",
+  "exampleMongolian": "Нэг аяга халуун цай уувал их тухтай байх болно."
+ },
+ {
+  "chinese": "花",
+  "pinyin": "huā",
+  "mongolian": "цэцэг (花茶 — цэцгийн цай)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "花茶、绿茶、红茶，我都喜欢。",
+  "exampleMongolian": "Цэцгийн цай, ногоон цай, хар цай — бүгдэд нь дуртай."
+ },
+ {
+  "chinese": "绿",
+  "pinyin": "lǜ",
+  "mongolian": "ногоон (绿茶 — ногоон цай)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "你想喝花茶还是绿茶？",
+  "exampleMongolian": "Чи цэцгийн цай уух уу, ногоон цай уух уу?"
+ }
+]

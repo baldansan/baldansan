@@ -1,0 +1,122 @@
+[
+ {
+  "chinese": "中文",
+  "pinyin": "Zhōngwén",
+  "mongolian": "хятад хэл (= 汉语)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "马可，你的中文越说越好了！",
+  "exampleMongolian": "Марко, чиний хятад хэл ярих тусам улам сайжирч байна шүү!"
+ },
+ {
+  "chinese": "班",
+  "pinyin": "bān",
+  "mongolian": "анги (我们班 — манай анги; 哪个班 — аль анги)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "哪里哪里，我们班李静说得更好。",
+  "exampleMongolian": "Юу гэж дээ, манай ангийн Ли Жин илүү сайн ярьдаг."
+ },
+ {
+  "chinese": "一样",
+  "pinyin": "yíyàng",
+  "mongolian": "адилхан, ижил (跟…一样 — …-тэй адил; 不一样 — адилгүй, өөр)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "她的汉语说得跟中国人一样好。",
+  "exampleMongolian": "Тэр хятадаар яг хятад хүн шиг сайн ярьдаг."
+ },
+ {
+  "chinese": "最后",
+  "pinyin": "zuìhòu",
+  "mongolian": "хамгийн сүүлийнх, эцсийнх",
+  "hskLevel": "HSK3",
+  "exampleChinese": "这是最后一块。",
+  "exampleMongolian": "Энэ бол хамгийн сүүлийнх нь."
+ },
+ {
+  "chinese": "放心",
+  "pinyin": "fàng xīn",
+  "mongolian": "санаа амрах, санаа зовохгүй байх (你放心 — санаа зоволтгүй ээ)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "你放心，我一定不会变胖。",
+  "exampleMongolian": "Санаа зоволтгүй, би лав таргалахгүй."
+ },
+ {
+  "chinese": "一定",
+  "pinyin": "yídìng",
+  "mongolian": "гарцаагүй, лавтай, заавал (不一定 — заавал тийм биш)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "一定能参加，一点儿影响也没有。",
+  "exampleMongolian": "Гарцаагүй оролцоно, огт нөлөөлөхгүй."
+ },
+ {
+  "chinese": "担心",
+  "pinyin": "dān xīn",
+  "mongolian": "санаа зовох, сэтгэл түгших (不用担心 — санаа зовох хэрэггүй)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "不用担心，有我呢。",
+  "exampleMongolian": "Санаа зовох хэрэггүй, би байна шүү дээ."
+ },
+ {
+  "chinese": "比较",
+  "pinyin": "bǐjiào",
+  "mongolian": "харьцангуй, нэлээд (дайвар үг)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我对这儿比较了解。",
+  "exampleMongolian": "Би энэ газрыг нэлээд сайн мэднэ."
+ },
+ {
+  "chinese": "了解",
+  "pinyin": "liǎojiě",
+  "mongolian": "(сайн) мэдэх, ойлгох, танин мэдэх (对…了解 — …-ийг сайн мэддэг)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我知道他的名字，但是不了解他。",
+  "exampleMongolian": "Би түүний нэрийг мэднэ, гэхдээ түүнийг сайн мэдэхгүй."
+ },
+ {
+  "chinese": "先",
+  "pinyin": "xiān",
+  "mongolian": "эхлээд, түрүүлж",
+  "hskLevel": "HSK3",
+  "exampleChinese": "那我们先休息一下，一会儿再爬。",
+  "exampleMongolian": "Тэгвэл эхлээд жаахан амраад, хэсэг хугацааны дараа дахиад авиръя."
+ },
+ {
+  "chinese": "中间",
+  "pinyin": "zhōngjiān",
+  "mongolian": "дунд, голд (中间这条路 — дундах энэ зам)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "一会儿我们可以从中间这条路上去。",
+  "exampleMongolian": "Хэсэг хугацааны дараа бид дундах энэ замаар өгсөж болно."
+ },
+ {
+  "chinese": "参加",
+  "pinyin": "cānjiā",
+  "mongolian": "оролцох (参加比赛 — тэмцээнд оролцох)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "下个月的篮球比赛，你能参加吗？",
+  "exampleMongolian": "Ирэх сарын сагсан бөмбөгийн тэмцээнд чи оролцож чадах уу?"
+ },
+ {
+  "chinese": "影响",
+  "pinyin": "yǐngxiǎng",
+  "mongolian": "нөлөө; нөлөөлөх (一点儿影响也没有 — огт нөлөөгүй)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "他影响了我。",
+  "exampleMongolian": "Тэр надад нөлөөлсөн."
+ },
+ {
+  "chinese": "大山",
+  "pinyin": "Dàshān",
+  "mongolian": "Дашань (хүний нэр) — тусгай нэр",
+  "hskLevel": "HSK3",
+  "exampleChinese": "大山觉得马可的中文越说越好。",
+  "exampleMongolian": "Дашань Маркогийн хятад хэлийг ярих тусам улам сайжирч байна гэж боддог."
+ },
+ {
+  "chinese": "李静",
+  "pinyin": "Lǐ Jìng",
+  "mongolian": "Ли Жин (хүний нэр) — тусгай нэр",
+  "hskLevel": "HSK3",
+  "exampleChinese": "李静？我怎么没听说过这个名字？",
+  "exampleMongolian": "Ли Жин гэж үү? Би яагаад энэ нэрийг огт сонсоогүй юм бол?"
+ }
+]
