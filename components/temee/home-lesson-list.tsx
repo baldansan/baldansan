@@ -78,7 +78,9 @@ export function HomeLessonList({
                   <span className="bs-tm-lesson-zh hanzi">
                     {lesson.chineseTitle}
                   </span>
-                  <span className="bs-tm-lesson-mn">{lesson.title}</span>
+                  {locale === "zh" && lesson.chineseTitle ? null : (
+                    <span className="bs-tm-lesson-mn">{lesson.title}</span>
+                  )}
                 </span>
                 <span
                   className={`bs-tm-lesson-status ${

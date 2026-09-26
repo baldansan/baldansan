@@ -34,6 +34,7 @@ import { TeacherAssignmentCta } from "@/components/teacher/teacher-assignment-ct
 import { MobileCard } from "@/components/mobile/mobile-card";
 import { MobilePageHeader } from "@/components/mobile/mobile-page-header";
 import { secondaryScriptLabel } from "@/lib/course-display";
+import { getServerUiLocale } from "@/lib/i18n/server-locale";
 import { lessonPreviewPath } from "@/lib/lesson-publish";
 
 type PageProps = {
@@ -52,6 +53,7 @@ export default async function LessonDetailPage({
   searchParams,
 }: PageProps) {
   const { lessonId } = await params;
+  const uiLocale = await getServerUiLocale();
   const preview = await resolvePreviewFromPageSearchParams(searchParams);
   const access = await resolveLessonPageAccess(lessonId, { preview });
 
@@ -138,8 +140,8 @@ export default async function LessonDetailPage({
         </Link>
 
         <MobilePageHeader
-          title={lesson.title}
-          subtitle={`${secondaryScriptLabel(lesson.courseId)}: ${lesson.chineseTitle}`}
+          title={uiLocale === "zh" && lesson.chineseTitle ? lesson.chineseTitle : lesson.title}
+          subtitle={uiLocale === "zh" ? lesson.title : `${secondaryScriptLabel(lesson.courseId)}: ${lesson.chineseTitle}`}
           badge={`#${lesson.id}`}
         />
         {lesson.subtitle ? (

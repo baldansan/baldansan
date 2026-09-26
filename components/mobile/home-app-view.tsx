@@ -35,7 +35,7 @@ import {
 import { HelzuiHomeCard } from "@/components/helzui/helzui-home-card";
 import "@/components/helzui/helzui-course.css";
 import { tr } from "@/lib/i18n/translate";
-import { useUiLocale } from "@/lib/i18n/ui-locale";
+import { getUiLocale, useUiLocale } from "@/lib/i18n/ui-locale";
 import type { LessonContent } from "@/types/lesson-content";
 
 type Props = {
@@ -168,7 +168,9 @@ export function HomeAppView({ catalog, defaultChipId }: Props) {
           const lesson = lessons.find((l) => l.id === cont.lessonId);
           setContinueTitle(
             lesson
-              ? `${lesson.chineseTitle} · ${lesson.title}`
+              ? getUiLocale() === "zh" && lesson.chineseTitle
+                ? lesson.chineseTitle
+                : `${lesson.chineseTitle} · ${lesson.title}`
               : `Хичээл ${cont.lessonId}`
           );
         }

@@ -1,5 +1,7 @@
 "use client";
 
+import { useUiLocale } from "@/lib/i18n/ui-locale";
+
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import { useLearnerLanguageLessons } from "@/hooks/use-learner-language-lessons";
@@ -20,6 +22,7 @@ type Props = {
 };
 
 export function StudyAppView({ allLessons }: Props) {
+  const locale = useUiLocale();
   const { lessons, trackLabel, ready, lang } = useLearnerLanguageLessons(allLessons);
   const [statusByLesson, setStatusByLesson] = useState<
     Record<string, LessonStatus>
@@ -157,9 +160,11 @@ export function StudyAppView({ allLessons }: Props) {
                           <span className="block truncate font-semibold text-[var(--app-text)]">
                             {lesson.chineseTitle}
                           </span>
-                          <span className="block truncate text-xs text-[var(--app-muted)]">
-                            {lesson.title}
-                          </span>
+                          {locale === "zh" && lesson.chineseTitle ? null : (
+                            <span className="block truncate text-xs text-[var(--app-muted)]">
+                              {lesson.title}
+                            </span>
+                          )}
                         </span>
                         <span className="shrink-0 rounded-full bg-slate-100 px-2 py-0.5 text-[10px] font-semibold text-slate-600">
                           {progressStatusLabel}
