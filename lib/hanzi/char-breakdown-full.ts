@@ -25,6 +25,10 @@ export type FullBreakdownComponent = {
  * scripts/hanzi/build-char-breakdown.py (do not hand-edit).
  */
 export type FullBreakdownEntry = {
+  /** Ханзны пиньинь (makemeahanzi) */
+  p?: string;
+  /** Ханзны монгол утга (hsk_words, ганц ханзтай үг байвал) */
+  m?: string;
   /** Structure label (mn), e.g. "зүүн–баруун". */
   s?: string;
   /** Structure label (zh), e.g. "左右结构". */

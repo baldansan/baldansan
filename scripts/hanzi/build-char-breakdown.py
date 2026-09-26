@@ -108,6 +108,10 @@ def py(p):
     return (d.get("pinyin") or [""])[0] if d else ""
 
 
+HSK_CHAR_MN = {}
+for w in json.load(open(os.path.join(REPO, "data/hsk_words.json"), encoding="utf8")):
+    if len(w["simplified"]) == 1 and w["simplified"] not in HSK_CHAR_MN and w.get("meaning_mn"):
+        HSK_CHAR_MN[w["simplified"]] = w["meaning_mn"].split(";")[0].strip()[:40]
 out = {}
 stats = collections.Counter()
 for ch, d in D.items():
@@ -144,6 +148,10 @@ for ch, d in D.items():
                     c["py"] = py(p)
         comps.append(c)
     entry = {"s": STRUCT_MN.get(op, "дан"), "sz": STRUCT_ZH.get(op, "独体结构"), "ids": dec if not incomplete else dec, "c": comps}
+    if d.get("pinyin"):
+        entry["p"] = d["pinyin"][0]
+    if ch in HSK_CHAR_MN:
+        entry["m"] = HSK_CHAR_MN[ch]
     if incomplete:
         entry["inc"] = True
     if t:

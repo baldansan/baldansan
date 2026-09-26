@@ -58,8 +58,8 @@ export function buildHanziDataFromFullEntry(
 
   return {
     character: char,
-    pinyin: exactWord?.pinyin?.trim() ?? "",
-    meaningMn: exactWord?.mongolian?.trim() ?? "",
+    pinyin: exactWord?.pinyin?.trim() || entry.p?.trim() || "",
+    meaningMn: exactWord?.mongolian?.trim() || entry.m?.trim() || "",
     structure: mapStructure(entry.s),
     structureLabelMn: entry.s?.trim() || undefined,
     structureLabelZh: entry.sz?.trim() || undefined,
