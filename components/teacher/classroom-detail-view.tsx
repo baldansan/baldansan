@@ -12,6 +12,7 @@ import { NeedsAttentionCard } from "@/components/teacher/needs-attention-card";
 import { ReportExportCard } from "@/components/teacher/report-export-card";
 import { TeacherMetricCard } from "@/components/teacher/teacher-metric-card";
 import { ClassJoinCodeCard } from "@/components/teacher/class-join-code-card";
+import { ClassCurriculumEditor } from "@/components/teacher/class-curriculum-editor";
 import { ClassKidsSection } from "@/components/teacher/class-kids-section";
 import { PublicPageShell } from "@/components/public-page-shell";
 import { isCustomAssignment } from "@/lib/classroom/types";
@@ -116,6 +117,18 @@ export function ClassroomDetailView({ classroomId }: Props) {
         <ClassJoinCodeCard classroomId={classroomId} code={classroom.joinCode ?? null} />
       </section>
 
+      <section>
+        <h2 className="text-lg font-semibold text-slate-900">
+          {tr(locale, "Заавал хөтөлбөр")}
+        </h2>
+        <p className="mt-1 text-sm text-slate-600">
+          {tr(locale, "Ангийн бүх сурагч заавал дуусгах хичээлүүд. Бусад хичээл сонголтоор хэвээр үлдэнэ.")}
+        </p>
+        <div className="mt-3">
+          <ClassCurriculumEditor classroomId={classroomId} />
+        </div>
+      </section>
+
       <section className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         <TeacherMetricCard
           label="Сурагчид"
@@ -189,7 +202,9 @@ export function ClassroomDetailView({ classroomId }: Props) {
       <section>
         <h2 className="text-lg font-semibold text-slate-900">Даалгаврууд</h2>
         <ul className="mt-3 flex flex-col gap-2">
-          {analytics.assignmentSummaries.map((a) => (
+          {analytics.assignmentSummaries
+            .filter((a) => !a.isCurriculum)
+            .map((a) => (
             <li
               key={a.assignmentId}
               className="rounded-xl bg-white px-4 py-3 ring-1 ring-slate-200"

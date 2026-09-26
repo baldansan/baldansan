@@ -43,6 +43,8 @@ export type Classroom = {
   courseId: string | null;
   /** 6 оронтой ангийн код (migration 064); null бол migration ажиллаагүй. */
   joinCode: string | null;
+  /** Заавал хөтөлбөрийн түвшин (migration 066); null бол хөтөлбөр алга. */
+  curriculumCourseId: string | null;
 };
 
 export type ClassroomDeliveryMode = "in_person" | "online" | "hybrid";
@@ -104,6 +106,12 @@ export type Assignment = {
    */
   targetStudentUserId: string | null;
   attachment: AssignmentAttachment | null;
+  /** Ангийн заавал хөтөлбөрийн хичээл эсэх (migration 066). Хуучин DB дээр false. */
+  isCurriculum: boolean;
+  /** Заавал хөтөлбөр доторх дараалал (0-ээс); энгийн даалгаварт null. */
+  orderIndex: number | null;
+  /** Хөтөлбөрийн түвшин/курс (жишээ нь hsk1); энгийн даалгаварт null. */
+  courseId: string | null;
   createdAt?: string;
   updatedAt?: string;
   classroomName?: string;
@@ -133,6 +141,89 @@ export type StudentAssignment = Assignment & {
   quizTotal: number | null;
   completedAt: string | null;
   teacherLabel?: string | null;
+};
+
+// --- Ангийн заавал хөтөлбөр (migration 066) ---
+
+/** Заавал хөтөлбөр сонгож болох түвшнүүд (апп дахь курсын ID). */
+export const CURRICULUM_COURSE_IDS = [
+  "hsk1",
+  "hsk2",
+  "hsk3",
+  "hsk4",
+  "hsk5",
+  "hsk6",
+] as const;
+
+export type CurriculumCourseId = (typeof CURRICULUM_COURSE_IDS)[number];
+
+export function isCurriculumCourseId(value: unknown): value is CurriculumCourseId {
+  return (
+    typeof value === "string" &&
+    (CURRICULUM_COURSE_IDS as readonly string[]).includes(value)
+  );
+}
+
+/** "hsk3" → "HSK 3" */
+export function curriculumCourseLabel(courseId: string | null | undefined): string {
+  if (!courseId) return "";
+  const m = courseId.match(/^hsk(\d)$/i);
+  return m ? `HSK ${m[1]}` : courseId;
+}
+
+/** Хөтөлбөрт сонгож болох нэг хичээл (/api/curriculum/lessons). */
+export type CurriculumLessonOption = {
+  id: string;
+  title: string;
+  chineseTitle: string | null;
+};
+
+/** set_classroom_curriculum RPC-д өгөх нэг мөр. */
+export type CurriculumLessonInput = {
+  lessonId: string;
+  title: string;
+  orderIndex: number;
+};
+
+/** classroom_curriculum_progress RPC-ийн нэг мөр. */
+export type CurriculumProgressRow = {
+  studentUserId: string;
+  displayName: string;
+  total: number;
+  completed: number;
+  percent: number;
+  lastCompletedAt: string | null;
+};
+
+export type MyCurriculumLesson = {
+  assignmentId: string;
+  lessonId: string;
+  title: string;
+  orderIndex: number;
+  completed: boolean;
+  completedAt: string | null;
+};
+
+export type MyCurriculumClass = {
+  classroomId: string;
+  classroomName: string;
+  courseId: string | null;
+  lessons: MyCurriculumLesson[];
+  completedCount: number;
+  totalCount: number;
+  percent: number;
+  /** Дараагийн дуусаагүй хичээл; бүгд дууссан бол null. */
+  nextLessonId: string | null;
+  nextLessonTitle: string | null;
+};
+
+export type MyCurriculum = {
+  classes: MyCurriculumClass[];
+  completedCount: number;
+  totalCount: number;
+  /** Эхний дуусаагүй хичээл (анги дарааллаар); бүгд дууссан бол null. */
+  nextLessonId: string | null;
+  nextLessonTitle: string | null;
 };
 
 export type TeacherDashboardStats = {

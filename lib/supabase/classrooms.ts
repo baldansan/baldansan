@@ -78,6 +78,9 @@ export function mapClassroomFromRow(row: Record<string, unknown>): Classroom {
     scheduleNote: row.schedule_note ? String(row.schedule_note) : null,
     courseId: row.course_id ? String(row.course_id) : null,
     joinCode: row.join_code ? String(row.join_code) : null,
+    curriculumCourseId: row.curriculum_course_id
+      ? String(row.curriculum_course_id)
+      : null,
   };
 }
 
@@ -135,6 +138,9 @@ export function mapAssignmentFromRow(
       ? String(row.target_student_user_id)
       : null,
     attachment: mapAssignmentAttachment(row),
+    isCurriculum: row.is_curriculum === true,
+    orderIndex: row.order_index != null ? Number(row.order_index) : null,
+    courseId: row.course_id ? String(row.course_id) : null,
     createdAt: row.created_at ? String(row.created_at) : undefined,
     updatedAt: row.updated_at ? String(row.updated_at) : undefined,
     classroomName: name,

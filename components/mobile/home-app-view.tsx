@@ -66,6 +66,12 @@ export function HomeAppView({ catalog, defaultChipId }: Props) {
   >({});
   const [bichlegContinue, setBichlegContinue] =
     useState<BichlegContinueTarget | null>(null);
+  const [curriculumCard, setCurriculumCard] = useState<{
+    completed: number;
+    total: number;
+    nextTitle: string | null;
+    href: string;
+  } | null>(null);
 
   const visibleCatalog = useMemo(() => {
     let entries = catalog;
@@ -187,6 +193,37 @@ export function HomeAppView({ catalog, defaultChipId }: Props) {
     void load();
   }, [lessonIds, lessons]);
 
+  // Ангийн заавал хөтөлбөр (066) — байвал нэг жижиг карт. Алдаа гарвал чимээгүй нууна.
+  useEffect(() => {
+    if (!loggedIn) return;
+    let alive = true;
+    void (async () => {
+      try {
+        const [{ getMyCurriculum }, { lessonPath }] = await Promise.all([
+          import("@/lib/supabase/curriculum"),
+          import("@/lib/content"),
+        ]);
+        const { data } = await getMyCurriculum();
+        if (!alive) return;
+        if (!data || data.totalCount === 0) {
+          setCurriculumCard(null);
+          return;
+        }
+        setCurriculumCard({
+          completed: data.completedCount,
+          total: data.totalCount,
+          nextTitle: data.nextLessonTitle,
+          href: data.nextLessonId ? lessonPath(data.nextLessonId) : "/my-assignments",
+        });
+      } catch {
+        if (alive) setCurriculumCard(null);
+      }
+    })();
+    return () => {
+      alive = false;
+    };
+  }, [loggedIn]);
+
   const completedCount = useMemo(
     () =>
       lessonIds.filter((id) => (statusByLesson[id] ?? "not_started") === "completed")
@@ -247,6 +284,35 @@ export function HomeAppView({ catalog, defaultChipId }: Props) {
           />
         </div>
       </section>
+
+      {loggedIn && curriculumCard ? (
+        <Link href={curriculumCard.href} className="bs-tm-continue">
+          <span
+            className="bs-tm-continue-ic"
+            style={{ background: "linear-gradient(135deg, #f59e0b, #d97706)" }}
+            aria-hidden
+          >
+            {curriculumCard.nextTitle ? "📌" : "🎉"}
+          </span>
+          <span className="min-w-0 flex-1">
+            <p className="bs-tm-continue-kicker">
+              {tr(locale, "Заавал хичээл")} {curriculumCard.completed}/{curriculumCard.total}
+            </p>
+            <p className="bs-tm-continue-title">
+              {curriculumCard.nextTitle ? (
+                <>
+                  {tr(locale, "Дараагийн")}: <span translate="no">{curriculumCard.nextTitle}</span>
+                </>
+              ) : (
+                tr(locale, "Заавал хичээлүүдээ бүгдийг дуусгасан!")
+              )}
+            </p>
+          </span>
+          <span className="bs-tm-card-chev" aria-hidden>
+            ›
+          </span>
+        </Link>
+      ) : null}
 
       {activeCourse?.available && lessonIds.length > 0 ? (
         <Link href={continueHref} className="bs-tm-continue">

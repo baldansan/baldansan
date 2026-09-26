@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useCallback, useEffect, useState } from "react";
 import { KidCreateForm } from "@/components/kids/kid-create-form";
+import { KidCurriculumProgress } from "@/components/kids/kid-curriculum-progress";
 import { KidEditForm } from "@/components/kids/kid-edit-form";
 import { KidPinPad } from "@/components/kids/kid-pin-pad";
 import { KidsServiceRoleNotice } from "@/components/kids/kids-service-role-notice";
@@ -161,6 +162,9 @@ export function FamilyClient() {
                           {formatKidLastActive(locale, kid.lastActiveAt)}
                           {kid.currentStreak > 0 ? ` · 🔥 ${kid.currentStreak}` : ""}
                         </p>
+                        {kid.classroomId ? (
+                          <KidCurriculumProgress childUserId={kid.childUserId} classroomId={kid.classroomId} />
+                        ) : null}
                       </div>
                     </div>
 

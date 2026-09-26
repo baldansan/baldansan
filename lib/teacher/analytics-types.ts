@@ -62,6 +62,8 @@ export type AssignmentSummaryRow = {
   totalCount: number;
   completionRate: number;
   averageQuizPercentage: number | null;
+  /** Ангийн заавал хөтөлбөрийн хичээл (066) — даалгаврын жагсаалтаас тусад нь харуулна. */
+  isCurriculum: boolean;
 };
 
 export type AssignmentAnalytics = {

@@ -132,6 +132,8 @@ function buildNeedsAttention(
   }
 
   for (const a of assignmentSummaries) {
+    // Заавал хөтөлбөрийн дараа үзэх хичээлүүд 0% байх нь хэвийн — анхааруулга болгохгүй.
+    if (a.isCurriculum) continue;
     if (a.totalCount > 0 && a.completionRate < 50) {
       items.push({
         kind: "low_assignment_completion",
@@ -297,6 +299,7 @@ export async function getClassroomProgressAnalytics(
       totalCount: linkedCount,
       completionRate: rate(completed, linkedCount),
       averageQuizPercentage: avg(percents),
+      isCurriculum: a.isCurriculum,
     };
   });
 

@@ -4,10 +4,18 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { PublicPageShell } from "@/components/public-page-shell";
 import { AssignmentAttachmentLink } from "@/components/teacher/assignment-attachment-link";
+import { MyCurriculumSection } from "@/components/teacher/my-curriculum-section";
 import { useTeacherAuth } from "@/components/teacher/teacher-auth-gate";
 import { formatMongoliaDateTimeWithLabel } from "@/lib/datetime/mongolia-time";
-import { isCustomAssignment, type StudentAssignment } from "@/lib/classroom/types";
+import {
+  isCustomAssignment,
+  type MyCurriculumClass,
+  type StudentAssignment,
+} from "@/lib/classroom/types";
 import { getStudentAssignments } from "@/lib/supabase/classrooms";
+import { getMyCurriculum } from "@/lib/supabase/curriculum";
+import { tr } from "@/lib/i18n/translate";
+import { useUiLocale } from "@/lib/i18n/ui-locale";
 
 function statusLabel(status: string | null): string {
   if (!status || status === "not_started") return "Эхлээгүй";
@@ -30,7 +38,9 @@ function isCompleted(status: string | null): boolean {
 
 export function MyAssignmentsView() {
   const { loggedIn } = useTeacherAuth();
+  const locale = useUiLocale();
   const [assignments, setAssignments] = useState<StudentAssignment[]>([]);
+  const [curriculum, setCurriculum] = useState<MyCurriculumClass[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
@@ -40,10 +50,16 @@ export function MyAssignmentsView() {
       return;
     }
     async function load() {
-      const { data, error: loadError } = await getStudentAssignments();
+      const [{ data, error: loadError }, curriculumRes] = await Promise.all([
+        getStudentAssignments(),
+        getMyCurriculum(),
+      ]);
       setLoading(false);
       if (loadError) setError(loadError);
-      else setAssignments(data ?? []);
+      // Заавал хөтөлбөрийн хичээлүүд дээд хэсэгт тусдаа харагдана.
+      else setAssignments((data ?? []).filter((a) => !a.isCurriculum));
+      // 066 migration ажиллаагүй бол хөтөлбөрийн хэсгийг чимээгүй нууна.
+      setCurriculum(curriculumRes.data?.classes ?? []);
     }
     void load();
   }, [loggedIn]);
@@ -84,9 +100,16 @@ export function MyAssignmentsView() {
         </p>
       </section>
 
+      <MyCurriculumSection classes={curriculum} />
+      {curriculum.length > 0 && assignments.length > 0 ? (
+        <h2 className="text-lg font-semibold text-slate-900">
+          {tr(locale, "Бусад даалгавар")}
+        </h2>
+      ) : null}
+
       {error ? (
         <p className="rounded-lg bg-red-50 px-3 py-2 text-sm text-red-800">{error}</p>
-      ) : assignments.length === 0 ? (
+      ) : assignments.length === 0 && curriculum.length > 0 ? null : assignments.length === 0 ? (
         <section className="rounded-2xl border border-dashed border-slate-200 p-6 text-center">
           <p className="text-sm text-slate-600">Одоогоор даалгавар алга.</p>
           <p className="mt-2 text-xs text-slate-500">
