@@ -26,6 +26,9 @@ import { ProfileSrsStats } from "@/components/profile/profile-srs-stats";
 import { countCompletedLessonsAll } from "@/lib/progress";
 import { getStreakUnified } from "@/lib/retention/retention-service";
 import type { AuthUser } from "@/types/auth";
+import { exitKidMode } from "@/lib/kids/client";
+import { isKidEmail } from "@/lib/kids/types";
+import { useKidMode } from "@/lib/kids/use-kid-mode";
 
 type LoadState = "loading" | "ready" | "error";
 
@@ -60,6 +63,7 @@ export function ProfileAppView() {
   const locale = useUiLocale();
   const router = useRouter();
   const { level: activeLevel, hydrated } = useActiveHskLevel();
+  const { kid: kidMode } = useKidMode();
   const [loadState, setLoadState] = useState<LoadState>("loading");
   const [user, setUser] = useState<AuthUser | null>(null);
   const [isAdmin, setIsAdmin] = useState(false);
@@ -294,6 +298,57 @@ export function ProfileAppView() {
     );
   }
 
+  // Хүүхдийн бүртгэл: зөвхөн нэр/avatar/streak/статистик + «Эцэг эх рүү буцах»
+  // (ангид орох, бүртгэл удирдах, гарах зэргийг эцэг эх хийнэ)
+  if (isKidEmail(user.email)) {
+    const kidName = kidMode?.displayName || tr(locale, "Хүүхэд");
+    return (
+      <MobileAppShell activeTab="profile">
+        <div className="bs-tm-phead">
+          <div className="bs-tm-avatar">
+            <span className="bs-tm-avatar-initial" aria-hidden>
+              {kidMode?.avatar ?? "🧒"}
+            </span>
+          </div>
+          <h1 className="bs-tm-pname" translate="no">
+            {kidName}
+          </h1>
+          <p className="bs-tm-prank">
+            {hydrated
+              ? `${formatActiveHskLevel(activeLevel)} ${tr(locale, "суралцагч")}`
+              : tr(locale, "Суралцагч")}
+          </p>
+          {streak > 0 ? (
+            <span className="bs-tm-plvlbadge">🔥 {streak} {tr(locale, "өдөр дараалан")}</span>
+          ) : null}
+        </div>
+
+        <ProfileSrsStats
+          userId={user.id}
+          streak={streak}
+          completedLessons={completedLessons}
+        />
+
+        <button
+          type="button"
+          onClick={() => void exitKidMode("/family")}
+          className="bs-tm-card mt-2 w-full text-left"
+        >
+          <span className="bs-tm-card-ic" aria-hidden>
+            👨‍👩‍👧
+          </span>
+          <span className="flex-1">
+            <span className="bs-tm-card-title">{tr(locale, "Эцэг эх рүү буцах")}</span>
+            <span className="block text-xs text-[var(--app-muted)]">
+              {tr(locale, "Эцэг эх имэйлээрээ дахин нэвтэрнэ")}
+            </span>
+          </span>
+          <span className="bs-tm-card-chev" aria-hidden>›</span>
+        </button>
+      </MobileAppShell>
+    );
+  }
+
   const displayName = user.email?.split("@")[0] ?? tr(locale, "Хэрэглэгч");
 
   return (
@@ -338,6 +393,19 @@ export function ProfileAppView() {
         <span className="flex-1">
           <span className="bs-tm-card-title">{tr(locale, "Ангид орох")}</span>
           <span className="block text-xs text-[var(--app-muted)]">{tr(locale, "Багшийн өгсөн 6 оронтой код")}</span>
+        </span>
+        <span className="bs-tm-card-chev" aria-hidden>›</span>
+      </Link>
+
+      <Link href="/family" className="bs-tm-card mt-2">
+        <span className="bs-tm-card-ic" aria-hidden>
+          👨‍👩‍👧
+        </span>
+        <span className="flex-1">
+          <span className="bs-tm-card-title">{tr(locale, "Гэр бүл — хүүхдийн бүртгэл")}</span>
+          <span className="block text-xs text-[var(--app-muted)]">
+            {tr(locale, "Имэйлгүй хүүхдэд avatar + PIN-тэй бүртгэл")}
+          </span>
         </span>
         <span className="bs-tm-card-chev" aria-hidden>›</span>
       </Link>

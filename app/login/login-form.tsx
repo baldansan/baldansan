@@ -17,6 +17,7 @@ import {
 } from "@/lib/supabase/auth";
 import { RESEND_CONFIRMATION_SUCCESS_MESSAGE } from "@/lib/auth/auth-error-messages";
 import { resetProgressSyncDismiss } from "@/lib/supabase/progress-sync";
+import { clearKidMode, getRememberedGuardianEmail } from "@/lib/kids/client";
 
 export function LoginForm() {
   const locale = useUiLocale();
@@ -41,6 +42,9 @@ export function LoginForm() {
         return;
       }
       const { data } = await getCurrentUser();
+      // «Эцэг эх рүү буцах»: хүүхдийн горимоос ирсэн бол эцэг эхийн имэйлийг бөглөнө
+      const rememberedEmail = getRememberedGuardianEmail();
+      if (rememberedEmail) setEmail((current) => current || rememberedEmail);
       if (data) {
         setAlreadyLoggedIn(true);
         setLoggedInEmail(data.email);
@@ -70,6 +74,7 @@ export function LoginForm() {
     }
 
     if (data) {
+      clearKidMode();
       resetProgressSyncDismiss();
       router.push(nextPath);
       router.refresh();
@@ -207,6 +212,13 @@ export function LoginForm() {
                 {tr(locale, "Бүртгүүлэх")}
               </Link>
             </p>
+
+            <Link
+              href="/kids"
+              className="flex min-h-[44px] w-full items-center justify-center rounded-full border border-amber-200 bg-amber-50 px-6 py-3 text-sm font-semibold text-amber-900"
+            >
+              🧒 {tr(locale, "Хүүхэд нэвтрэх")}
+            </Link>
           </form>
         </MobileCard>
       )}

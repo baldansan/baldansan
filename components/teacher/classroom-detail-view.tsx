@@ -12,8 +12,11 @@ import { NeedsAttentionCard } from "@/components/teacher/needs-attention-card";
 import { ReportExportCard } from "@/components/teacher/report-export-card";
 import { TeacherMetricCard } from "@/components/teacher/teacher-metric-card";
 import { ClassJoinCodeCard } from "@/components/teacher/class-join-code-card";
+import { ClassKidsSection } from "@/components/teacher/class-kids-section";
 import { PublicPageShell } from "@/components/public-page-shell";
 import { isCustomAssignment } from "@/lib/classroom/types";
+import { tr } from "@/lib/i18n/translate";
+import { useUiLocale } from "@/lib/i18n/ui-locale";
 import type {
   ClassroomProgressAnalytics,
   StudentProgressRow,
@@ -29,6 +32,7 @@ type Props = {
 };
 
 export function ClassroomDetailView({ classroomId }: Props) {
+  const locale = useUiLocale();
   const [analytics, setAnalytics] = useState<ClassroomProgressAnalytics | null>(
     null
   );
@@ -277,6 +281,15 @@ export function ClassroomDetailView({ classroomId }: Props) {
       <section>
         <h2 className="text-lg font-semibold text-slate-900">Сурагч гараар нэмэх</h2>
         <AddStudentForm classroomId={classroomId} onAdded={() => void load()} />
+      </section>
+
+      <section>
+        <h2 className="text-lg font-semibold text-slate-900">
+          {tr(locale, "Хүүхдийн бүртгэл (имэйлгүй сурагч)")}
+        </h2>
+        <div className="mt-3">
+          <ClassKidsSection classroomId={classroomId} onChanged={() => void load()} />
+        </div>
       </section>
 
       <div className="flex flex-wrap gap-3">

@@ -7,6 +7,7 @@ import {
   createServiceRoleSupabaseClient,
   hasServiceRoleSupabaseConfig,
 } from "@/lib/supabase/service-role-server";
+import { deleteUserOwnedRows } from "@/lib/server/user-data-cleanup";
 
 /**
  * Permanently deletes the signed-in user's account and all their data.
@@ -16,33 +17,6 @@ import {
  * deleting the auth user needs admin privileges. RLS-protected rows in
  * newer tables cascade via FK; older tables are cleaned explicitly.
  */
-
-/** Tables whose rows belong to the user via a `user_id` column. */
-const USER_ID_TABLES = [
-  "user_lesson_progress",
-  "user_vocabulary_progress",
-  "user_quiz_attempts",
-  "user_daily_activity",
-  "user_daily_goals",
-  "user_streaks",
-  "user_achievements",
-  "user_notifications",
-  "user_study_reminders",
-  "user_saved_words",
-  "user_word_srs",
-  "user_video_progress",
-  "user_mock_attempts",
-  "user_test_attempts",
-  "question_attempts",
-  "reviews",
-  "feedback",
-  "student_profiles",
-  "teacher_profiles",
-  "organization_members",
-] as const;
-
-/** Tables whose rows belong to the user via a `student_user_id` column. */
-const STUDENT_USER_ID_TABLES = ["classroom_students", "assignment_results"] as const;
 
 export async function POST() {
   if (!hasServerSupabaseConfig) {
@@ -93,22 +67,7 @@ export async function POST() {
 
   // Best-effort data cleanup. Missing tables/columns are ignored —
   // the auth user delete below cascades FK-linked rows anyway.
-  const cleanupErrors: string[] = [];
-  for (const table of USER_ID_TABLES) {
-    const { error } = await service.from(table).delete().eq("user_id", userId);
-    if (error && !isIgnorableCleanupError(error.message)) {
-      cleanupErrors.push(`${table}: ${error.message}`);
-    }
-  }
-  for (const table of STUDENT_USER_ID_TABLES) {
-    const { error } = await service
-      .from(table)
-      .delete()
-      .eq("student_user_id", userId);
-    if (error && !isIgnorableCleanupError(error.message)) {
-      cleanupErrors.push(`${table}: ${error.message}`);
-    }
-  }
+  const cleanupErrors = await deleteUserOwnedRows(service, userId);
 
   if (cleanupErrors.length > 0) {
     // Do NOT delete the auth user if personal data could not be removed —
@@ -140,15 +99,4 @@ export async function POST() {
   await sessionClient.auth.signOut();
 
   return NextResponse.json({ ok: true, message: "Бүртгэл бүрмөсөн устлаа.", cleanupErrors });
-}
-
-function isIgnorableCleanupError(message: string): boolean {
-  const lower = message.toLowerCase();
-  // Only "table/column missing" style errors are ignorable — permission
-  // or RLS errors must surface, otherwise deletion silently leaves data.
-  return (
-    lower.includes("does not exist") ||
-    lower.includes("could not find") ||
-    lower.includes("schema cache")
-  );
 }

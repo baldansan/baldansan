@@ -17,6 +17,7 @@ import {
   languageTrackLabel,
 } from "@/lib/language-track";
 import { getCurrentUser, hasSupabaseConfig } from "@/lib/supabase/auth";
+import { isKidEmail } from "@/lib/kids/types";
 import { tr } from "@/lib/i18n/translate";
 import {
   setUiLocale,
@@ -173,7 +174,8 @@ export function SettingsAppView() {
         ) : null}
       </MobileCard>
 
-      {email ? <div className="mt-4"><DeleteAccountCard /></div> : null}
+      {/* Хүүхдийн бүртгэлийг зөвхөн эцэг эх /family-оос устгана */}
+      {email && !isKidEmail(email) ? <div className="mt-4"><DeleteAccountCard /></div> : null}
 
       <p className="mt-4 text-center text-xs text-[var(--app-muted)]">
         <Link href="/privacy" className="font-semibold text-emerald-600">

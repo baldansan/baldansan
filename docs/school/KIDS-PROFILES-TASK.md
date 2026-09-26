@@ -1,0 +1,29 @@
+# Task: child (kid) profiles — parent/teacher-created accounts with avatar + PIN login
+
+Repo /home/claude/repo (Next.js 16 app router — read node_modules/next/dist/docs when unsure; Supabase JS v2). UI text: Mongolian literals wrapped with `tr(locale, "...")` + add Chinese to `ZH_UI` in `lib/i18n/translate.ts` (`useUiLocale()`); content values (names) in `translate="no"`. Do NOT git commit. `npx tsc --noEmit` and `npm run build` must pass.
+
+## Why
+A 6-year-old (Тогтуун, class 1A, Shanghai School of Mongolia) has no email. The parent (Гүмүда) or the class teacher creates the child's profile; the child logs in on a phone by tapping their avatar and typing a 4-digit PIN. All existing progress tables key on `auth.uid()`, so **each child must be a real Supabase auth user** (no refactor of progress tables).
+
+## Design
+1. **Migration `supabase/migrations/065_kid_profiles.sql`** (idempotent):
+   - `public.kid_profiles (child_user_id uuid primary key references auth.users(id) on delete cascade, guardian_user_id uuid not null, display_name text not null, avatar text not null default '🐼', pin_hash text not null, birth_year int, classroom_id uuid references public.classrooms(id) on delete set null, created_at, updated_at)`; index on guardian_user_id.
+   - RLS: guardian can select/update/delete own rows; a classroom teacher (`public.can_manage_org_classroom(classroom_id)`) can select rows of their class. Inserts only via server (service role) — no insert policy for authenticated.
+   - Helper `public.is_guardian_of(child uuid)` → boolean (security definer) for later report RLS.
+   - Comment at top explaining the flow.
+2. **Server routes (service role)** — `lib/supabase/service-role-server.ts` has `createServiceRoleSupabaseClient()`; server-only. Add `lib/kids/server.ts` with:
+   - `createKid({guardianUserId, displayName, avatar, pin, classroomJoinCode?})`: validates PIN (4 digits), creates auth user via `admin.auth.admin.createUser({ email: `kid-${uuid}@kids.buunduu.mn`, email_confirm: true, password: derived, user_metadata: { kid: true, display_name } })` where `derived = HMAC-SHA256(process.env.KIDS_PASSWORD_SECRET ?? SUPABASE_SERVICE_ROLE_KEY, childUserId)` hex (never stored); inserts kid_profiles with `pin_hash = sha256(salt + pin)` (salt = child id); if a class join code is given, calls RPC `join_classroom_by_code` **as the child** (sign in with service client `auth.signInWithPassword` using the derived password, call rpc, sign out) — or simpler: insert into classroom_students directly with the service client (classroom looked up by `join_code`) with display_name; do that.
+   - `kidLogin({guardianUserId, childUserId, pin})`: checks kid_profiles.guardian_user_id == guardian OR the caller is the child's classroom teacher; verifies pin; signs in with derived password using a **fresh** `createClient(url, anonKey, {auth:{persistSession:false}})` and returns `{access_token, refresh_token}`.
+   - `deleteKid`, `updateKid` (name/avatar/pin/classroom).
+   - Route handlers under `app/api/kids/{create,login,update,delete}/route.ts` — require an authenticated guardian (read the session from cookies the way `app/api/account/delete/route.ts` does), return JSON, clear error strings in Mongolian when `SUPABASE_SERVICE_ROLE_KEY` is missing (reuse `ADMIN_SERVICE_ROLE_ENV_HINT` style).
+3. **Client**: `lib/kids/client.ts` wrappers (fetch the routes). After `kidLogin` returns tokens: `supabase.auth.setSession({access_token, refresh_token})`, set `localStorage["buunduu-kid-mode-v1"] = childUserId` and remember the guardian's email in `localStorage["buunduu-guardian-email-v1"]` so the "Эцэг эх рүү буцах" button can prefill the login form.
+4. **Pages/components**:
+   - `/family` (parent dashboard, `app/family/page.tsx` + client view): list of children (avatar, name, class if any, last active), "Хүүхэд нэмэх" form (name, avatar picker from ~12 emoji, 4-digit PIN twice, optional class code using `components/classroom/join-class-form.tsx` in `mode="peek"`), per child: "Хүүхдээр нэвтрэх" (PIN prompt → kidLogin), "Засах", "Устгах". Show a friendly explanation when service role is not configured.
+   - `/kids` (child chooser, big avatars, tap → PIN pad 4 digits → login → redirect `/home`). Reachable from the login page ("🧒 Хүүхэд нэвтрэх") and from `/family`.
+   - Kid mode: when `localStorage["buunduu-kid-mode-v1"]` is set, the app shell shows a small top badge "🧒 <name>" and a "Эцэг эх" button that signs out and goes to `/login?next=/family` (prefilled email). Hide "Профайл → Ангид орох / Устгах бүртгэл" for kids (they can't manage accounts) — simplest: in `components/mobile/profile-app-view.tsx` if kid mode, show only name/avatar/streak/stats + "Эцэг эх рүү буцах".
+   - Profile page: add card "👨‍👩‍👧 Гэр бүл — хүүхдийн бүртгэл" linking to `/family` (adults only).
+   - Teacher class page (`components/teacher/classroom-detail-view.tsx`): section "Хүүхдийн бүртгэл (имэйлгүй сурагч)" with a compact add form (name, avatar, PIN) that creates the kid with the teacher as guardian and joins them to this class; list of kids in the class (from kid_profiles where classroom_id = this class).
+5. Session/auth notes: `lib/supabase/auth.ts` has getSession/signOut/onAuthStateChange. The kid's auth user must not receive emails (synthetic domain) — fine. Onboarding guards (`components/learner-language-guard.tsx`, `lib/learner-onboarding.ts`) may redirect new users to /onboarding: when creating a kid session set the onboarding storage keys (`buunduu-onboarding-completed-v1`=true, `buunduu-selected-language-v1`=zh, `buunduu-selected-course-id-v1`=hsk1) so the child lands on /home directly.
+6. Docs: append a short section to `docs/school/README.md` (create) describing env vars (`SUPABASE_SERVICE_ROLE_KEY`, optional `KIDS_PASSWORD_SECRET`), the migration, and the flow.
+
+Report: files changed, the SQL the owner must run, env vars needed, and anything left undone.

@@ -1,5 +1,6 @@
 import type { BottomNavTab } from "@/components/BottomNav";
 import PhoneFrame from "@/components/layout/PhoneFrame";
+import { KidModeBar } from "@/components/kids/kid-mode-bar";
 import { BottomNavChrome } from "@/components/mobile/bottom-nav-chrome";
 import { MobileShellHeader } from "@/components/mobile/mobile-shell-header";
 import { resolveBottomNavTab } from "@/lib/bottom-nav";
@@ -42,6 +43,7 @@ export function AppShell({
 
   const content = (
     <>
+      {!immersive ? <KidModeBar /> : null}
       {!immersive ? <MobileShellHeader /> : null}
       {children}
     </>
