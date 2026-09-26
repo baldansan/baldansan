@@ -11,6 +11,7 @@ import { StudentWeakSpotsSection } from "@/components/teacher/student-weak-spots
 import { NeedsAttentionCard } from "@/components/teacher/needs-attention-card";
 import { ReportExportCard } from "@/components/teacher/report-export-card";
 import { TeacherMetricCard } from "@/components/teacher/teacher-metric-card";
+import { ClassJoinCodeCard } from "@/components/teacher/class-join-code-card";
 import { PublicPageShell } from "@/components/public-page-shell";
 import { isCustomAssignment } from "@/lib/classroom/types";
 import type {
@@ -105,6 +106,10 @@ export function ClassroomDetailView({ classroomId }: Props) {
             ))}
           </div>
         ) : null}
+      </section>
+
+      <section>
+        <ClassJoinCodeCard classroomId={classroomId} code={classroom.joinCode ?? null} />
       </section>
 
       <section className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">

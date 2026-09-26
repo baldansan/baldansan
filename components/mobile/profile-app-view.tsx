@@ -331,6 +331,17 @@ export function ProfileAppView() {
         completedLessons={completedLessons}
       />
 
+      <Link href="/join" className="bs-tm-card mt-2">
+        <span className="bs-tm-card-ic" aria-hidden>
+          🏫
+        </span>
+        <span className="flex-1">
+          <span className="bs-tm-card-title">{tr(locale, "Ангид орох")}</span>
+          <span className="block text-xs text-[var(--app-muted)]">{tr(locale, "Багшийн өгсөн 6 оронтой код")}</span>
+        </span>
+        <span className="bs-tm-card-chev" aria-hidden>›</span>
+      </Link>
+
       {isAdmin ? (
         <Link href="/admin" className="bs-tm-card mt-2">
           <span className="bs-tm-card-ic bs-tm-card-ic--purple" aria-hidden>

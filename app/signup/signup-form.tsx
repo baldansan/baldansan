@@ -11,6 +11,8 @@ import { MobileCard } from "@/components/mobile/mobile-card";
 import { getSafeRedirectPath } from "@/lib/auth/safe-redirect";
 import { getSession, hasSupabaseConfig, signUpWithEmail } from "@/lib/supabase/auth";
 import { resetProgressSyncDismiss } from "@/lib/supabase/progress-sync";
+import { JoinClassForm } from "@/components/classroom/join-class-form";
+import { joinClassroomByCode, setPendingClassCode } from "@/lib/supabase/classrooms";
 
 export function SignupForm() {
   const locale = useUiLocale();
@@ -24,6 +26,11 @@ export function SignupForm() {
   const [success, setSuccess] = useState(false);
   const [hasSession, setHasSession] = useState(false);
   const [submitting, setSubmitting] = useState(false);
+  // Ангийн код (заавал биш): ?code=482917 эсвэл гараар
+  const [classCode, setClassCode] = useState<string>(
+    (searchParams.get("code") ?? "").replace(/\D/g, "").slice(0, 6)
+  );
+  const [classCodeValid, setClassCodeValid] = useState(false);
 
   async function handleSubmit(event: React.FormEvent) {
     event.preventDefault();
@@ -50,6 +57,14 @@ export function SignupForm() {
 
     const { data: session } = await getSession();
     const signedIn = Boolean(session);
+    if (classCode.length === 6 && classCodeValid) {
+      // Шууд нэвтэрсэн бол одоо нэгдэнэ; үгүй бол имэйл баталгаажуулсны дараа автоматаар
+      setPendingClassCode(classCode);
+      if (signedIn) {
+        const { data: joined } = await joinClassroomByCode(classCode);
+        if (joined) setPendingClassCode(null);
+      }
+    }
     if (signedIn) {
       resetProgressSyncDismiss();
       router.push(nextPath);
@@ -143,6 +158,20 @@ export function SignupForm() {
                 className="mt-1 w-full rounded-xl border border-[var(--app-border)] px-4 py-3 text-sm outline-none focus:border-emerald-300 focus:ring-2 focus:ring-emerald-500"
               />
             </label>
+
+            <div className="rounded-2xl bg-slate-50 p-3 ring-1 ring-slate-200">
+              <JoinClassForm
+                initialCode={classCode}
+                mode="peek"
+                onCodeChange={(c, name) => {
+                  setClassCode(c);
+                  setClassCodeValid(Boolean(name));
+                }}
+              />
+              <p className="mt-1 text-xs text-[var(--app-muted)]">
+                {tr(locale, "Сургууль/ангийн сурагч биш бол хоосон орхино.")}
+              </p>
+            </div>
 
             {error ? (
               <p className="rounded-xl bg-red-50 px-4 py-3 text-sm text-red-800 ring-1 ring-red-200">
