@@ -100,6 +100,42 @@ export default function HelpPage() {
       <p className="text-xs text-slate-500">{AUDIO_CMN_ATTRIBUTION}</p>
       <p className="text-xs text-slate-500">{HANZI_DECOMPOSITION_ATTRIBUTION}</p>
 
+      <article className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:rounded-3xl">
+        <h2 className="font-semibold text-slate-900">
+          Уншлагын сан (文库) — эх сурвалж, лиценз
+        </h2>
+        <ul className="mt-2 space-y-1 text-xs leading-5 text-slate-600" translate="no">
+          <li>
+            Хүүхдийн зурагт ном: Global Storybooks / African Storybook (CC BY 4.0, CC BY 3.0;
+            globalstorybooks.net, africanstorybook.org) — зохиогч, зураач, уншигчийн нэр ном
+            бүрийн дор. StoryWeaver / Pratham Books (CC BY 4.0; storyweaver.org.in) — «Story
+            Attribution» текстийг ном бүрийн дор бүтнээр нь үзүүлнэ.
+          </li>
+          <li>
+            Сонгодог бичвэр (三字经, 弟子规, 千字文, 唐诗三百首, 宋词三百首 …): нийтийн өмч; өгөгдөл
+            chinese-poetry (github.com/chinese-poetry/chinese-poetry, MIT). Пиньинь — pypinyin
+            (MIT), олон дуудлагатай ханзыг багш шалгана.
+          </li>
+          <li>
+            成语 · 谚语 · 歇后语: Wiktionary (en.wiktionary.org, CC BY-SA 4.0) — хэллэг бүр дээр
+            эх хуудасны холбоос. 成语 үлгэр домгийн эх: Wikisource (нийтийн өмч).
+          </li>
+          <li>
+            Жишээ өгүүлбэр: Tatoeba (tatoeba.org, CC BY 2.0 FR — өгүүлбэр бүрийн зохиогч
+            attribution талбарт), Zhongdex by SayMei (github.com/saymei/zhongdex, CC BY-SA 4.0).
+          </li>
+          <li>
+            Үеийн дуудлага: audio-cmn (hugolpz/audio-cmn, CC BY-SA), Lingua Libre (CC BY-SA 4.0).
+            HSK 3.0 ханзны жагсаалт, 识字 300 (通用规范汉字表 — Хятадын засгийн газрын албан
+            баримт).
+          </li>
+          <li>
+            CC BY-SA материалаас үүсмэл жагсаалтууд мөн CC BY-SA нөхцөлтэй. Хятад–монгол
+            зэрэгцүүлсэн текст: NTREX-128 (CC BY-SA 4.0), Tatoeba (21 өгүүлбэр).
+          </li>
+        </ul>
+      </article>
+
       <section className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
         <Link href="/courses" className={ctaPrimaryClass}>
           Хичээлүүд

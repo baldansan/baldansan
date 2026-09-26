@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { BookCard } from "@/components/books/book-ui";
 import { L } from "@/components/books/book-ui";
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
@@ -68,6 +69,26 @@ export default async function BooksPage() {
           );
         })}
       </div>
+      <Link href="/library" className="app-card mt-3 block p-4 transition-colors active:bg-slate-50">
+        <div className="flex items-center gap-3">
+          <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-amber-50 text-3xl">
+            📚
+          </div>
+          <div className="min-w-0 flex-1">
+            <h2 className="text-base font-bold text-[var(--app-text)]">
+              {L(locale, "文库", "Уншлагын сан")}
+            </h2>
+            <p className="mt-1 text-sm leading-6 text-[var(--app-text)]">
+              {L(
+                locale,
+                "图画书、蒙学经典、成语谚语、例句 — 开放授权阅读材料。",
+                "Зурагт ном, сонгодог, хэлц үг, жишээ өгүүлбэр — нээлттэй лицензтэй уншлага.",
+              )}
+            </p>
+          </div>
+          <span className="text-lg text-[var(--app-muted)]">›</span>
+        </div>
+      </Link>
     </MobileAppShell>
   );
 }

@@ -5,6 +5,9 @@ const nextConfig: NextConfig = {
   // runtime; without tracing hints those files are missing on Vercel.
   outputFileTracingIncludes: {
     "/api/hanzi/[char]": ["./node_modules/hanzi-writer-data/**/*.json"],
+    // «Уншлагын сан / 文库» — content/open/ доторх JSON-уудыг fs-ээр уншина.
+    "/library": ["./content/open/**/*.json"],
+    "/library/**": ["./content/open/**/*.json"],
   },
 };
 
