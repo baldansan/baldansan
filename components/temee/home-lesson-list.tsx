@@ -74,7 +74,7 @@ export function HomeLessonList({
                     <img src={coverUrl} alt="" loading="lazy" />
                   </span>
                 ) : null}
-                <span className="bs-tm-lesson-body">
+                <span className="bs-tm-lesson-body" translate="no">
                   <span className="bs-tm-lesson-zh hanzi">
                     {lesson.chineseTitle}
                   </span>

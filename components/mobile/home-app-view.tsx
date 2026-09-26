@@ -276,7 +276,7 @@ export function HomeAppView({ catalog, defaultChipId }: Props) {
             <p className="bs-tm-continue-kicker">
               {tr(locale, "Бичлэг үргэлжлүүлэх")}
             </p>
-            <p className="bs-tm-continue-title">{bichlegContinue.title}</p>
+            <p className="bs-tm-continue-title" translate="no">{bichlegContinue.title}</p>
           </span>
           <span className="bs-tm-card-chev" aria-hidden>
             ›

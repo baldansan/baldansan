@@ -236,9 +236,9 @@ export function QuizEditor({
                 <span className="text-xs text-slate-500">
                   #{q.order_index} · {q.type} · {q.options.length} сонголт
                 </span>
-                <p className="mt-1 font-medium text-slate-900">{q.question}</p>
+                <p className="mt-1 font-medium text-slate-900" translate="no">{q.question}</p>
                 <p className="text-xs text-slate-500">
-                  Хариулт: {q.correct_answer}
+                  Хариулт: <span translate="no">{q.correct_answer}</span>
                 </p>
               </div>
               <button

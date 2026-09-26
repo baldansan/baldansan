@@ -386,7 +386,7 @@ export function ReviewDashboard({ lessons, lessonIds }: Props) {
                             <p className="mt-1 text-sm text-emerald-700">
                               {word.pinyin}
                             </p>
-                            <p className="mt-1 text-sm text-slate-600">
+                            <p className="mt-1 text-sm text-slate-600" translate="no">
                               {word.mongolian}
                             </p>
                           </>

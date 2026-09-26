@@ -99,7 +99,7 @@ export function MakeSentence({ item, instructionMn, onResult }: Props) {
         连词成句
       </div>
       {instructionMn ? (
-        <p className="mb-3 text-sm text-slate-600">{instructionMn}</p>
+        <p className="mb-3 text-sm text-slate-600" translate="no">{instructionMn}</p>
       ) : null}
 
       <div
@@ -157,7 +157,7 @@ export function MakeSentence({ item, instructionMn, onResult }: Props) {
 
       {showAnswer ? (
         <div className="mb-3 rounded-xl bg-amber-50 px-3 py-2 text-center text-sm text-amber-900 ring-1 ring-amber-200">
-          Зөв хариулт: <span className="font-semibold">{item.answer}</span>
+          Зөв хариулт: <span className="font-semibold" translate="no">{item.answer}</span>
         </div>
       ) : null}
 

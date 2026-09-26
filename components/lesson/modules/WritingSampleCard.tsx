@@ -17,7 +17,7 @@ export function WritingSampleCard({ sample, sectionTitle }: Props) {
 
   return (
     <div className="bs-txt-writing">
-      <div className="bs-label" style={{ margin: 0 }}>
+      <div translate="no" className="bs-label" style={{ margin: 0 }}>
         <span className="bs-dot" />
         {title}
       </div>

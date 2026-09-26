@@ -45,7 +45,7 @@ export function KoreanLesson0StartScreen({ lesson, adminPreview = false }: Props
       <p className="mt-1 text-base font-medium text-emerald-700">
         {KOREAN_LESSON0_DISPLAY_SUBTITLE}
       </p>
-      <p className="mt-4 text-sm leading-7 text-[var(--app-muted)]">
+      <p className="mt-4 text-sm leading-7 text-[var(--app-muted)]" translate="no">
         {lesson.description?.trim() || KOREAN_LESSON0_INTRO}
       </p>
 

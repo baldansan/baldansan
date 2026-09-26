@@ -23,7 +23,7 @@ export function BichlegSlangSheet({ note, onClose }: Props) {
         onClick={(event) => event.stopPropagation()}
       >
         <p className="bs-bichleg-sheet-title">{tr(locale, "Залуусын хэллэг")}</p>
-        <div className="bs-bl-slang-head">
+        <div className="bs-bl-slang-head" translate="no">
           {note.term ? (
             <p className="bs-bl-slang-term hanzi">{note.term}</p>
           ) : null}
@@ -34,9 +34,9 @@ export function BichlegSlangSheet({ note, onClose }: Props) {
           ) : null}
         </div>
         {note.meaning ? (
-          <p className="bs-bl-slang-meaning">{note.meaning}</p>
+          <p className="bs-bl-slang-meaning" translate="no">{note.meaning}</p>
         ) : null}
-        {note.usage ? <p className="bs-bl-slang-usage">{note.usage}</p> : null}
+        {note.usage ? <p className="bs-bl-slang-usage" translate="no">{note.usage}</p> : null}
         <button
           type="button"
           className="bs-bichleg-sheet-btn bs-bichleg-sheet-btn--full"

@@ -31,7 +31,7 @@ function ExerciseItem({ it }: { it: SourceExerciseItem }) {
       <div className="flex gap-2">
         {it.n != null ? <span className="shrink-0 text-xs text-slate-500">{it.n}.</span> : null}
         <div className="min-w-0 flex-1">
-          {it.zh ? <p className="hanzi text-base">{it.zh}</p> : null}
+          {it.zh ? <p className="hanzi text-base" translate="no">{it.zh}</p> : null}
           {it.hint_zh ? <p className="text-xs text-slate-500">（{it.hint_zh}）</p> : null}
           {it.picture_desc_en ? <p className="text-xs italic text-slate-500">[зураг] {it.picture_desc_en}</p> : null}
           {it.transcript_zh ? (
@@ -40,19 +40,19 @@ function ExerciseItem({ it }: { it: SourceExerciseItem }) {
             </p>
           ) : null}
           {it.options ? (
-            <ul className="mt-1 grid gap-x-4 gap-y-0.5 text-sm sm:grid-cols-2">
+            <ul className="mt-1 grid gap-x-4 gap-y-0.5 text-sm sm:grid-cols-2" translate="no">
               {Object.entries(it.options).map(([k, v]) => (
-                <li key={k} className={it.answer === k ? "font-semibold text-emerald-700" : ""}>
+                <li key={k} className={it.answer === k ? "src-answer-opt font-semibold text-emerald-700" : ""}>
                   {k}. {v}
                 </li>
               ))}
             </ul>
           ) : null}
           {it.answer && !it.options ? (
-            <p className="mt-1 text-sm text-emerald-700">✓ {it.answer}</p>
+            <p className="src-answer mt-1 text-sm text-emerald-700" translate="no">✓ {it.answer}</p>
           ) : null}
           {it.answer_ref ? (
-            <p className="text-[11px] text-slate-400">
+            <p className="src-answer text-[11px] text-slate-400">
               хариулт: {it.answer_ref.book} х. {it.answer_ref.pages.join(", ")}
             </p>
           ) : null}
@@ -66,11 +66,11 @@ function ExerciseItem({ it }: { it: SourceExerciseItem }) {
 function GrammarPoint({ g }: { g: SourceGrammarPoint }) {
   return (
     <Details title={`${g.n}. ${g.title_zh} ${g.title_en ? `· ${g.title_en}` : ""}`} open>
-      <p className="whitespace-pre-line text-slate-800">{g.explanation_zh}</p>
+      <p className="whitespace-pre-line text-slate-800" translate="no">{g.explanation_zh}</p>
       {g.structure_rows?.length ? (
         <pre className="hanzi overflow-x-auto rounded bg-slate-100 p-2 text-sm">{g.structure_rows.join("\n")}</pre>
       ) : null}
-      <ol className="space-y-0.5">
+      <ol className="space-y-0.5" translate="no">
         {g.examples.map((e, i) => (
           <li key={i} className="hanzi text-base">
             {e.n != null ? `(${e.n}) ` : ""}
@@ -148,7 +148,7 @@ export function HskSourceLessonView({ data }: { data: HskSourceLesson }) {
           {tb.texts.map((t) => (
             <Details key={t.n} title={`课文${t.n} ${t.title_zh ?? ""} ${t.title_en ? `· ${t.title_en}` : ""}`} open>
               {t.audio ? <p className="text-xs text-slate-500">🔊 {t.audio}</p> : null}
-              <div className="space-y-1">
+              <div className="space-y-1" translate="no">
                 {t.lines.map((l, i) => (
                   <div key={i}>
                     <p className="hanzi text-base">
@@ -160,7 +160,7 @@ export function HskSourceLessonView({ data }: { data: HskSourceLesson }) {
                 ))}
               </div>
               {t.new_words.length ? (
-                <table className="mt-2 w-full text-sm">
+                <table className="mt-2 w-full text-sm" translate="no">
                   <tbody>
                     {t.new_words.map((w) => (
                       <tr key={w.n} className="border-t border-slate-100">
@@ -191,7 +191,7 @@ export function HskSourceLessonView({ data }: { data: HskSourceLesson }) {
         <div className="space-y-3">
           {tb.grammar.map((g) => (
             <Details key={g.n} title={`${g.n}. ${g.title_zh} ${g.title_en ? `· ${g.title_en}` : ""}`} open>
-              <p className="whitespace-pre-line text-slate-800">{g.explanation_zh}</p>
+              <p className="whitespace-pre-line text-slate-800" translate="no">{g.explanation_zh}</p>
               {g.explanation_en ? (
                 <p className="whitespace-pre-line text-xs text-slate-500">{g.explanation_en}</p>
               ) : null}
@@ -200,7 +200,7 @@ export function HskSourceLessonView({ data }: { data: HskSourceLesson }) {
                   {g.structure_rows.join("\n")}
                 </pre>
               ) : null}
-              <ol className="space-y-0.5">
+              <ol className="space-y-0.5" translate="no">
                 {g.examples.map((e, i) => (
                   <li key={i} className="hanzi text-base">
                     {e.n != null ? `(${e.n}) ` : ""}
@@ -289,7 +289,7 @@ export function HskSourceLessonView({ data }: { data: HskSourceLesson }) {
       {data.teacher ? (
         <Section title="教师用书 Багшийн ном">
           <Details title="教学目标" open>
-            <ul className="list-disc pl-5 text-sm">
+            <ul className="list-disc pl-5 text-sm" translate="no">
               {data.teacher.objectives_zh.map((o, i) => (
                 <li key={i} className="whitespace-pre-line">{o}</li>
               ))}
@@ -298,13 +298,13 @@ export function HskSourceLessonView({ data }: { data: HskSourceLesson }) {
           <div className="mt-2 space-y-2">
             {data.teacher.steps.map((s, i) => (
               <Details key={i} title={s.title_zh}>
-                <p className="whitespace-pre-line text-sm">{s.body_zh}</p>
+                <p className="whitespace-pre-line text-sm" translate="no">{s.body_zh}</p>
               </Details>
             ))}
           </div>
           {data.teacher.notes_zh.length ? (
             <Details title="注意 / 辨析">
-              <ul className="list-disc pl-5 text-sm">
+              <ul className="list-disc pl-5 text-sm" translate="no">
                 {data.teacher.notes_zh.map((n, i) => (
                   <li key={i} className="whitespace-pre-line">{n}</li>
                 ))}
@@ -313,7 +313,7 @@ export function HskSourceLessonView({ data }: { data: HskSourceLesson }) {
           ) : null}
           {data.teacher.text_questions?.length ? (
             <Details title="课文 асуулт–хариулт">
-              <ul className="text-sm">
+              <ul className="text-sm" translate="no">
                 {data.teacher.text_questions.map((q, i) => (
                   <li key={i} className="hanzi">
                     <span className="text-xs text-slate-400">课文{q.text} </span>
@@ -325,7 +325,7 @@ export function HskSourceLessonView({ data }: { data: HskSourceLesson }) {
           ) : null}
           {data.teacher.summary_zh ? (
             <Details title="本课小结">
-              <p className="whitespace-pre-line text-sm">{data.teacher.summary_zh}</p>
+              <p className="whitespace-pre-line text-sm" translate="no">{data.teacher.summary_zh}</p>
             </Details>
           ) : null}
         </Section>
@@ -348,7 +348,7 @@ export function HskSourceLessonView({ data }: { data: HskSourceLesson }) {
         >
           <div className="space-y-3">
             {data.hsk30.new_words.length ? (
-              <table className="w-full text-sm">
+              <table className="w-full text-sm" translate="no">
                 <tbody>
                   {data.hsk30.new_words.map((w) => (
                     <tr key={w.n} className="border-b border-slate-100 align-top">
@@ -387,7 +387,7 @@ export function HskSourceLessonView({ data }: { data: HskSourceLesson }) {
                   ))}
                 </ol>
                 {data.hsk30.speaking.model_answer_zh ? (
-                  <p className="hanzi whitespace-pre-line rounded bg-emerald-50 p-2 text-sm">{data.hsk30.speaking.model_answer_zh}</p>
+                  <p className="src-answer hanzi whitespace-pre-line rounded bg-emerald-50 p-2 text-sm">{data.hsk30.speaking.model_answer_zh}</p>
                 ) : null}
               </Details>
             ) : null}
@@ -396,12 +396,12 @@ export function HskSourceLessonView({ data }: { data: HskSourceLesson }) {
                 <p className="text-sm text-slate-700">{data.hsk30.writing.instruction_zh}</p>
                 <p className="hanzi">{data.hsk30.writing.prompt_zh}</p>
                 {data.hsk30.writing.model_essay_zh ? (
-                  <p className="hanzi whitespace-pre-line rounded bg-emerald-50 p-2 text-sm">{data.hsk30.writing.model_essay_zh}</p>
+                  <p className="src-answer hanzi whitespace-pre-line rounded bg-emerald-50 p-2 text-sm">{data.hsk30.writing.model_essay_zh}</p>
                 ) : null}
               </Details>
             ) : null}
             {data.hsk30.unclear?.length ? (
-              <ul className="list-disc pl-5 text-xs text-slate-500">
+              <ul className="list-disc pl-5 text-xs text-slate-500" translate="no">
                 {data.hsk30.unclear.map((u, i) => (
                   <li key={i}>{u}</li>
                 ))}
@@ -413,7 +413,7 @@ export function HskSourceLessonView({ data }: { data: HskSourceLesson }) {
 
       {data.unclear.length ? (
         <Section title="Тодорхойгүй / номын өөрийн зөрүү">
-          <ul className="list-disc pl-5 text-sm text-slate-700">
+          <ul className="list-disc pl-5 text-sm text-slate-700" translate="no">
             {data.unclear.map((u, i) => (
               <li key={i}>{u}</li>
             ))}

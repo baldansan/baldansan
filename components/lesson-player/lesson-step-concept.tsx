@@ -20,11 +20,11 @@ export function LessonStepConcept({
   return (
     <LessonPlayerCard>
       <h1 className="text-lg font-bold text-slate-900">{title}</h1>
-      <p className="mt-4 whitespace-pre-line text-sm leading-7 text-slate-700">
+      <p className="mt-4 whitespace-pre-line text-sm leading-7 text-slate-700" translate="no">
         {content}
       </p>
       {items && items.length > 0 ? (
-        <div className="mt-5 flex flex-wrap justify-center gap-3">
+        <div className="mt-5 flex flex-wrap justify-center gap-3" translate="no">
           {items.map((item) => {
             const pronunciation = showPronunciation
               ? resolveHangulTextPronunciation(item)

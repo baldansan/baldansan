@@ -45,7 +45,7 @@ export function ExamLessonWatchClient({ lesson, adminPreview = false }: Props) {
         <p className="text-xs font-semibold uppercase tracking-wide text-amber-700">
           Шалгалт
         </p>
-        <h1 className="mt-1 text-xl font-bold leading-snug tracking-tight sm:text-3xl">
+        <h1 className="mt-1 text-xl font-bold leading-snug tracking-tight sm:text-3xl" translate="no">
           {lesson.title}
         </h1>
         {lesson.chineseTitle ? (
@@ -64,7 +64,7 @@ export function ExamLessonWatchClient({ lesson, adminPreview = false }: Props) {
           ) : null}
         </div>
         {lesson.description ? (
-          <p className="mt-3 text-sm leading-6 text-slate-700">
+          <p className="mt-3 text-sm leading-6 text-slate-700" translate="no">
             {lesson.description}
           </p>
         ) : null}

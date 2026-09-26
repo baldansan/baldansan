@@ -25,14 +25,14 @@ export function HelzuiModuleView({
 }: Props) {
   return (
     <div className="hz-module">
-      <div className="hz-mod-eyebrow">
+      <div className="hz-mod-eyebrow" translate="no">
         <span className="hz-mod-num">{module.number}</span>
         {module.mnTitle}
         <span className="hz-mod-pin zh">
           · {module.zh} {module.pinyin}
         </span>
       </div>
-      <h1 className="hz-mod-heading">{module.heading}</h1>
+      <h1 className="hz-mod-heading" translate="no">{module.heading}</h1>
 
       <div className="hz-teacher">
         <TemeeEmojiIcon
@@ -44,12 +44,12 @@ export function HelzuiModuleView({
         />
         <div>
           <p className="hz-t-name">Тэмээ багш</p>
-          <p className="hz-t-txt">{module.teacher}</p>
+          <p className="hz-t-txt" translate="no">{module.teacher}</p>
         </div>
       </div>
 
       <div className="hz-block">
-        <div className="hz-block-h">
+        <div className="hz-block-h" translate="no">
           <span className="hz-block-ic">💡</span>
           {module.concept.title}
         </div>
@@ -67,11 +67,11 @@ export function HelzuiModuleView({
 
       {module.patterns && module.patterns.items.length > 0 ? (
         <div className="hz-patterns">
-          <div className="hz-patterns-h">
+          <div className="hz-patterns-h" translate="no">
             <span className="hz-block-ic">🧩</span>
             {module.patterns.title}
           </div>
-          <div className="hz-pat-grid">
+          <div className="hz-pat-grid" translate="no">
             {module.patterns.items.map((row) => (
               <div key={row.zh} className="hz-pat">
                 <span className="hz-pat-z zh">{row.zh}</span>

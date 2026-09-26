@@ -320,6 +320,7 @@ export function MistakeBookClient() {
                   disabled={locked}
                   onClick={() => pickOption(option)}
                   className={cls}
+                  translate="no"
                 >
                   {option}
                 </button>
@@ -331,7 +332,7 @@ export function MistakeBookClient() {
           q.mistake.selectedAnswer &&
           q.mistake.selectedAnswer.trim() !== correct ? (
             <p className="mt-3 text-center text-xs text-[var(--app-muted)]">
-              {tr(locale, "Өмнө нь буруу:")} {q.mistake.selectedAnswer}
+              {tr(locale, "Өмнө нь буруу:")} <span translate="no">{q.mistake.selectedAnswer}</span>
             </p>
           ) : null}
 
@@ -514,13 +515,13 @@ export function MistakeBookClient() {
                   ) : null}
                 </div>
                 {m.correctAnswer ? (
-                  <p className="mt-2 break-words text-sm font-bold text-emerald-700">
+                  <p className="mt-2 break-words text-sm font-bold text-emerald-700" translate="no">
                     ✓ {m.correctAnswer}
                   </p>
                 ) : null}
                 {m.selectedAnswer &&
                 m.selectedAnswer !== m.correctAnswer ? (
-                  <p className="mt-1 break-words text-xs text-red-500 line-through">
+                  <p className="mt-1 break-words text-xs text-red-500 line-through" translate="no">
                     {m.selectedAnswer}
                   </p>
                 ) : null}

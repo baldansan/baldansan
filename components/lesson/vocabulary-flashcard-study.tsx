@@ -232,7 +232,7 @@ export function VocabularyFlashcardStudy({
           {showPronunciation ? (
             <MongolianMeaningHint meaning={meaning} className="mt-4" />
           ) : current.mongolian ? (
-            <p className="mt-4 text-base leading-relaxed text-slate-600">
+            <p className="mt-4 text-base leading-relaxed text-slate-600" translate="no">
               {current.mongolian}
             </p>
           ) : null}
@@ -255,7 +255,7 @@ export function VocabularyFlashcardStudy({
                 </div>
               ) : null}
               {current.exampleMongolian ? (
-                <p className="mt-2 text-sm text-slate-600">
+                <p className="mt-2 text-sm text-slate-600" translate="no">
                   {current.exampleMongolian}
                 </p>
               ) : null}

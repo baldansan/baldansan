@@ -89,7 +89,7 @@ export function ClassroomDetailView({ classroomId }: Props) {
         >
           ← Миний ангиуд
         </Link>
-        <h1 className="mt-3 text-3xl font-bold tracking-tight">{classroom.name}</h1>
+        <h1 className="mt-3 text-3xl font-bold tracking-tight" translate="no">{classroom.name}</h1>
         {classroom.level ? (
           <p className="mt-1 text-sm text-emerald-700">{classroom.level}</p>
         ) : null}
@@ -189,7 +189,7 @@ export function ClassroomDetailView({ classroomId }: Props) {
                 href={`/teacher/assignments/${a.assignmentId}`}
                 className="font-medium text-emerald-700 hover:text-emerald-800"
               >
-                {a.title}
+                <span translate="no">{a.title}</span>
               </Link>
               <p className="text-xs text-slate-500">
                 {isCustomAssignment(a.lessonId)

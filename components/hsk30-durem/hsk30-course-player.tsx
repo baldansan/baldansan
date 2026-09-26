@@ -31,12 +31,12 @@ export function Hsk30CoursePlayer({ course }: Props) {
           <span className="hz-course-dot" />
           {course.category}
         </span>
-        <h1 className="hz-course-hero-title">{course.title}</h1>
-        <p className="hz-course-hero-sub">{course.subtitle}</p>
+        <h1 className="hz-course-hero-title" translate="no">{course.title}</h1>
+        <p className="hz-course-hero-sub" translate="no">{course.subtitle}</p>
       </div>
 
       {course.source ? (
-        <p className="hz-meta">{course.source}</p>
+        <p className="hz-meta" translate="no">{course.source}</p>
       ) : null}
 
       <GrammarCourseSearch entries={searchEntries}>
@@ -44,7 +44,7 @@ export function Hsk30CoursePlayer({ course }: Props) {
           {course.levels.map((level) => (
             <Link key={level.levelId} href={hsk30LevelHref(level.levelId)}>
               <MobileCard className="hz-module-card active:bg-slate-50">
-                <div className="hz-mod-eyebrow" style={{ marginBottom: 4 }}>
+                <div className="hz-mod-eyebrow" style={{ marginBottom: 4 }} translate="no">
                   <span className="hz-mod-num">{level.level}</span>
                   {level.title}
                 </div>

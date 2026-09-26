@@ -1,0 +1,1034 @@
+[
+{
+"mn": "Шалгалтаас гарах уу?",
+"ctx": "components/mock-test/mock-test-exit-dialog.tsx"
+},
+{
+"mn": "Одоогийн хариулт хадгалагдахгүй. Дахин эхлэх шаардлагатай.",
+"ctx": "components/mock-test/mock-test-exit-dialog.tsx"
+},
+{
+"mn": "← Тоглоом",
+"ctx": "components/mock-test/mock-test-list-client.tsx"
+},
+{
+"mn": "Албан ёсны загварын бүтэн шалгалт — таймер, аудио, автомат оноо",
+"ctx": "components/mock-test/mock-test-list-client.tsx"
+},
+{
+"mn": "Тест олдсонгүй",
+"ctx": "components/mock-test/mock-test-list-client.tsx"
+},
+{
+"mn": "фолдер нэмээд",
+"ctx": "components/mock-test/mock-test-list-client.tsx"
+},
+{
+"mn": "Загвар",
+"ctx": "components/mock-test/mock-test-list-client.tsx"
+},
+{
+"mn": "🔊 Сонсгол тоглож байна…",
+"ctx": "components/mock-test/mock-test-listening-audio-once.tsx"
+},
+{
+"mn": "Аудио дууслаа — дахин сонсох боломжгүй",
+"ctx": "components/mock-test/mock-test-listening-audio-once.tsx"
+},
+{
+"mn": "Аудио автоматаар тоглохгүй байна. Хуудас дахин ачаална уу.",
+"ctx": "components/mock-test/mock-test-listening-audio-once.tsx"
+},
+{
+"mn": "← Дасгалын жагсаалт",
+"ctx": "components/mock-test/mock-test-practice-client.tsx"
+},
+{
+"mn": "Сурах горим · цаг хэмжихгүй · алдсан бүрд тайлбар гарна",
+"ctx": "components/mock-test/mock-test-practice-client.tsx"
+},
+{
+"mn": "Энэ бол шалгалт биш. Хариулт сонгонгуут зөв нь ямар байсныг шууд харуулна. Сонсголын аудиог хэдэн ч удаа сонсож болно.",
+"ctx": "components/mock-test/mock-test-practice-client.tsx"
+},
+{
+"mn": "Аль хэсгээс эхлэх вэ?",
+"ctx": "components/mock-test/mock-test-practice-client.tsx"
+},
+{
+"mn": "асуулт ·",
+"ctx": "components/mock-test/mock-test-practice-client.tsx"
+},
+{
+"mn": "Дахин үзэх асуултууд",
+"ctx": "components/mock-test/mock-test-practice-client.tsx"
+},
+{
+"mn": "Энэ хэсэгт алдаагүй дуусгалаа. Дараагийн хэсэг рүү оръё.",
+"ctx": "components/mock-test/mock-test-practice-client.tsx"
+},
+{
+"mn": "Энэ хэсгийг дахин",
+"ctx": "components/mock-test/mock-test-practice-client.tsx"
+},
+{
+"mn": "Өөр хэсэг сонгох",
+"ctx": "components/mock-test/mock-test-practice-client.tsx"
+},
+{
+"mn": "Миний сул тал →",
+"ctx": "components/mock-test/mock-test-practice-client.tsx"
+},
+{
+"mn": "← Гарах",
+"ctx": "components/mock-test/mock-test-practice-client.tsx"
+},
+{
+"mn": "Хэсгийн бүтэн бичлэг · асуулт солигдоход зогсохгүй",
+"ctx": "components/mock-test/mock-test-practice-client.tsx"
+},
+{
+"mn": "Энэ шалгалтын аудио нь хэсэг бүрээр нэг файл байдаг тул асуулт тус бүрээр тасалж өгөх боломжгүй. Жинхэнэ шалгалтын адил дараалан сонсоод, хүссэн газраа буцааж болно.",
+"ctx": "components/mock-test/mock-test-practice-client.tsx"
+},
+{
+"mn": "📘 Холбоотой хичээл:",
+"ctx": "components/mock-test/mock-test-practice-client.tsx"
+},
+{
+"mn": "Мэдэхгүй — хариултыг нь харах",
+"ctx": "components/mock-test/mock-test-practice-client.tsx"
+},
+{
+"mn": "Дүнг харах",
+"ctx": "components/mock-test/mock-test-practice-client.tsx"
+},
+{
+"mn": "Жинхэнэ HSK шалгалтын асуултууд — гэхдээ цаг хэмжихгүй. Хариулсан даруйд зөв хариулт, яагаад тэр болохыг нь шууд харуулна.",
+"ctx": "components/mock-test/mock-test-practice-list-client.tsx"
+},
+{
+"mn": "Одоогоор шалгалт ороогүй байна. Админ хэсэгт шалгалт нэмсний дараа энд гарч ирнэ.",
+"ctx": "components/mock-test/mock-test-practice-list-client.tsx"
+},
+{
+"mn": "Жинхэнэ цагтай шалгалт өгөхийг хүсвэл",
+"ctx": "components/mock-test/mock-test-practice-list-client.tsx"
+},
+{
+"mn": "хэсэг рүү ор.",
+"ctx": "components/mock-test/mock-test-practice-list-client.tsx"
+},
+{
+"mn": "⟲ Эхнээс",
+"ctx": "components/mock-test/mock-test-practice-question.tsx"
+},
+{
+"mn": "Таны эвлүүлсэн:",
+"ctx": "components/mock-test/mock-test-practice-question.tsx"
+},
+{
+"mn": "Таны бичсэн:",
+"ctx": "components/mock-test/mock-test-practice-question.tsx"
+},
+{
+"mn": "Хариултаа энд бичнэ үү…",
+"ctx": "components/mock-test/mock-test-practice-question.tsx"
+},
+{
+"mn": "Хариулт…",
+"ctx": "components/mock-test/mock-test-practice-question.tsx"
+},
+{
+"mn": "Сонссон бичвэр",
+"ctx": "components/mock-test/mock-test-practice-question.tsx"
+},
+{
+"mn": "Энэ бичвэрийг яриа таних програмаар автоматаар буулгасан тул нэр, ховор үг дээр алдаа гарсан байж болно. Албан ёсны HSK материалд сонсголын эх бичвэр нийтлэгддэггүй.",
+"ctx": "components/mock-test/mock-test-practice-question.tsx"
+},
+{
+"mn": "Зөв! 🎉",
+"ctx": "components/mock-test/mock-test-practice-question.tsx"
+},
+{
+"mn": "Буруу байна",
+"ctx": "components/mock-test/mock-test-practice-question.tsx"
+},
+{
+"mn": "Өөрөө үнэлнэ үү",
+"ctx": "components/mock-test/mock-test-practice-question.tsx"
+},
+{
+"mn": "Таны хариулт",
+"ctx": "components/mock-test/mock-test-practice-question.tsx"
+},
+{
+"mn": "Жишиг хариу",
+"ctx": "components/mock-test/mock-test-practice-question.tsx"
+},
+{
+"mn": "Зөв бичсэн",
+"ctx": "components/mock-test/mock-test-practice-question.tsx"
+},
+{
+"mn": "Алдсан",
+"ctx": "components/mock-test/mock-test-practice-question.tsx"
+},
+{
+"mn": "· хүлээгдэж байна",
+"ctx": "components/mock-test/mock-test-question.tsx"
+},
+{
+"mn": "Сонгох…",
+"ctx": "components/mock-test/mock-test-question.tsx"
+},
+{
+"mn": "Тэнцлээ ✓",
+"ctx": "components/mock-test/mock-test-result-view.tsx"
+},
+{
+"mn": "-д",
+"ctx": "components/mock-test/mock-test-result-view.tsx"
+},
+{
+"mn": "оноо дутлаа",
+"ctx": "components/mock-test/mock-test-result-view.tsx"
+},
+{
+"mn": "Бичих хэсэг: үнэлээгүй",
+"ctx": "components/mock-test/mock-test-result-view.tsx"
+},
+{
+"mn": "Хэсгийн оноо (100-балл)",
+"ctx": "components/mock-test/mock-test-result-view.tsx"
+},
+{
+"mn": ": үнэлээгүй",
+"ctx": "components/mock-test/mock-test-result-view.tsx"
+},
+{
+"mn": "Буруу хариултыг нуух",
+"ctx": "components/mock-test/mock-test-result-view.tsx"
+},
+{
+"mn": "Буруу хариултаа харах",
+"ctx": "components/mock-test/mock-test-result-view.tsx"
+},
+{
+"mn": "Сул талаа нөхөх хичээлүүд",
+"ctx": "components/mock-test/mock-test-result-view.tsx"
+},
+{
+"mn": "асуулт буруу",
+"ctx": "components/mock-test/mock-test-result-view.tsx"
+},
+{
+"mn": "Аудио автоматаар нэг удаа тоглоно. Дуусахаас өмнө дахин сонсох боломжгүй.",
+"ctx": "components/mock-test/mock-test-section-ready.tsx"
+},
+{
+"mn": "Цаг дуусахад энэ хэсэг автоматаар хаагдана. Өмнөх хэсэг рүү буцах боломжгүй.",
+"ctx": "components/mock-test/mock-test-section-ready.tsx"
+},
+{
+"mn": "✗ Буруу. Зөв хариулт:",
+"ctx": "components/mock-test/mock-test-sentence-order.tsx"
+},
+{
+"mn": "Тал",
+"ctx": "components/mock-test/mock-test-writing-grade.tsx"
+},
+{
+"mn": "Бүтэн",
+"ctx": "components/mock-test/mock-test-writing-grade.tsx"
+},
+{
+"mn": "Бичих хэсгээ үнэл",
+"ctx": "components/mock-test/mock-test-writing-grade.tsx"
+},
+{
+"mn": "Шударга өөрийн үнэлгээ — жишиг хариулттай харьцуулж 0, тал, эсвэл бүтэн оноо сонгоно.",
+"ctx": "components/mock-test/mock-test-writing-grade.tsx"
+},
+{
+"mn": "— хоосон —",
+"ctx": "components/mock-test/mock-test-writing-grade.tsx"
+},
+{
+"mn": "Жишиг хариулт",
+"ctx": "components/mock-test/mock-test-writing-grade.tsx"
+},
+{
+"mn": "Үнэлгээг хадгалах →",
+"ctx": "components/mock-test/mock-test-writing-grade.tsx"
+},
+{
+"mn": "Алгасах (Бичих «үнэлээгүй»)",
+"ctx": "components/mock-test/mock-test-writing-grade.tsx"
+},
+{
+"mn": "Нэвтрээгүй байна. Дахин нэвтэрнэ үү.",
+"ctx": "components/progress-sync-card.tsx"
+},
+{
+"mn": "Аккаунт руу хадгалахад алдаа гарлаа. Дахин оролдоно уу.",
+"ctx": "components/progress-sync-card.tsx"
+},
+{
+"mn": "Амжилттай хадгаллаа",
+"ctx": "components/progress-sync-card.tsx"
+},
+{
+"mn": "Энэ төхөөрөмж дээрх ахиц таны аккаунт руу холбогдлоо.",
+"ctx": "components/progress-sync-card.tsx"
+},
+{
+"mn": "Энэ төхөөрөмж дээрх ахицаа аккаунттай холбох уу?",
+"ctx": "components/progress-sync-card.tsx"
+},
+{
+"mn": "Guest үед сурсан ахицаа account дээрээ хадгалж болно.",
+"ctx": "components/progress-sync-card.tsx"
+},
+{
+"mn": "Эхэлсэн хичээл:",
+"ctx": "components/progress-sync-card.tsx"
+},
+{
+"mn": "Сурсан үг:",
+"ctx": "components/progress-sync-card.tsx"
+},
+{
+"mn": "Quiz үр дүн:",
+"ctx": "components/progress-sync-card.tsx"
+},
+{
+"mn": "Хадгалж байна...",
+"ctx": "components/progress-sync-card.tsx"
+},
+{
+"mn": "Account руу хадгалах",
+"ctx": "components/progress-sync-card.tsx"
+},
+{
+"mn": "Өнөөдрийн сургалтын зорилго — хичээл, үг, quiz.",
+"ctx": "components/retention/daily-goal-card.tsx"
+},
+{
+"mn": "✓ биелсэн",
+"ctx": "components/retention/daily-goal-card.tsx"
+},
+{
+"mn": "үргэлжлүүлээрэй",
+"ctx": "components/retention/daily-goal-card.tsx"
+},
+{
+"mn": "Зорилго ачааллаж байна…",
+"ctx": "components/retention/daily-goal-settings.tsx"
+},
+{
+"mn": "Account дээр хадгалагдана — бусад төхөөрөмж дээр sync хийнэ.",
+"ctx": "components/retention/daily-goal-settings.tsx"
+},
+{
+"mn": "Энэ төхөөрөмж дээр хадгалагдана. Нэвтэрсний дараа account руу sync хийж болно.",
+"ctx": "components/retention/daily-goal-settings.tsx"
+},
+{
+"mn": "Хичээл / өдөр",
+"ctx": "components/retention/daily-goal-settings.tsx"
+},
+{
+"mn": "Үг / өдөр",
+"ctx": "components/retention/daily-goal-settings.tsx"
+},
+{
+"mn": "Quiz / өдөр",
+"ctx": "components/retention/daily-goal-settings.tsx"
+},
+{
+"mn": "Хадгалагдлаа",
+"ctx": "components/retention/daily-goal-settings.tsx"
+},
+{
+"mn": "Да",
+"ctx": "components/retention/learning-consistency-card.tsx"
+},
+{
+"mn": "Мя",
+"ctx": "components/retention/learning-consistency-card.tsx"
+},
+{
+"mn": "Лх",
+"ctx": "components/retention/learning-consistency-card.tsx"
+},
+{
+"mn": "Пү",
+"ctx": "components/retention/learning-consistency-card.tsx"
+},
+{
+"mn": "Ба",
+"ctx": "components/retention/learning-consistency-card.tsx"
+},
+{
+"mn": "Бя",
+"ctx": "components/retention/learning-consistency-card.tsx"
+},
+{
+"mn": "Ня",
+"ctx": "components/retention/learning-consistency-card.tsx"
+},
+{
+"mn": "Өдөр бүр бага багаар сурах — streak болон өдрийн зорилго.",
+"ctx": "components/retention/learning-consistency-card.tsx"
+},
+{
+"mn": "Одоогийн streak",
+"ctx": "components/retention/learning-consistency-card.tsx"
+},
+{
+"mn": "Хамгийн урт streak",
+"ctx": "components/retention/learning-consistency-card.tsx"
+},
+{
+"mn": "Энэ 7 хоног",
+"ctx": "components/retention/learning-consistency-card.tsx"
+},
+{
+"mn": "Сануулагч (push notification) — ирээдүйд нэмэгдэнэ.",
+"ctx": "components/retention/learning-consistency-card.tsx"
+},
+{
+"mn": "Account руу хадгалахад алдаа гарлаа — одоогоор энэ төхөөрөмж дээрх өгөгдөл харагдаж байна.",
+"ctx": "components/retention/retention-source-note.tsx"
+},
+{
+"mn": "Нэвтрээгүй байна.",
+"ctx": "components/retention/retention-sync-card.tsx"
+},
+{
+"mn": "Daily goal/streak activity-г account руу хадгалахад алдаа гарлаа.",
+"ctx": "components/retention/retention-sync-card.tsx"
+},
+{
+"mn": "Retention activity хадгалагдлаа",
+"ctx": "components/retention/retention-sync-card.tsx"
+},
+{
+"mn": "Streak болон өдрийн activity таны account руу холбогдлоо.",
+"ctx": "components/retention/retention-sync-card.tsx"
+},
+{
+"mn": "Энэ төхөөрөмж дээрх daily goal/streak activity-г account руу хадгалах уу?",
+"ctx": "components/retention/retention-sync-card.tsx"
+},
+{
+"mn": "Guest үед бүртгэгдсэн streak болон өдрийн activity-г account дээрээ хадгалж, бусад төхөөрөмж дээр үргэлжлүүлэх боломжтой.",
+"ctx": "components/retention/retention-sync-card.tsx"
+},
+{
+"mn": "Идэвхтэй өдөр:",
+"ctx": "components/retention/retention-sync-card.tsx"
+},
+{
+"mn": "Retention sync хийх",
+"ctx": "components/retention/retention-sync-card.tsx"
+},
+{
+"mn": "Хамгийн урт:",
+"ctx": "components/retention/streak-card.tsx"
+},
+{
+"mn": "үргэлжлүүл",
+"ctx": "components/retention/streak-card.tsx"
+},
+{
+"mn": "Өнөөдрийн ахиц",
+"ctx": "components/retention/streak-card.tsx"
+},
+{
+"mn": "· Үг",
+"ctx": "components/retention/streak-card.tsx"
+},
+{
+"mn": "Өнөөдрийн review",
+"ctx": "components/retention/streak-card.tsx"
+},
+{
+"mn": "Зорилгоо биелүүлэх",
+"ctx": "components/retention/streak-card.tsx"
+},
+{
+"mn": "Миний сул тал",
+"ctx": "components/review/mistake-book-client.tsx"
+},
+{
+"mn": "Алдааны задаргаа, юуг давтах нь",
+"ctx": "components/review/mistake-book-client.tsx"
+},
+{
+"mn": "Сайн уу 👋",
+"ctx": "components/review/review-menu-hub-client.tsx"
+},
+{
+"mn": "Нэвтэрч орвол харагдана",
+"ctx": "components/review/review-menu-hub-client.tsx"
+},
+{
+"mn": "Цаггүй · алдсан бүрд тайлбар шууд гарна",
+"ctx": "components/review/review-menu-hub-client.tsx"
+},
+{
+"mn": "түвшинд шинэ эсвэл due карт байхгүй.",
+"ctx": "components/review/review-srs-client.tsx"
+},
+{
+"mn": "Дахин ачаалах",
+"ctx": "components/review/review-srs-client.tsx"
+},
+{
+"mn": "Өнөөдрийн давталт",
+"ctx": "components/review/review-srs-client.tsx"
+},
+{
+"mn": "✅ Өнөөдрийн давталт дууслаа!",
+"ctx": "components/review/review-srs-client.tsx"
+},
+{
+"mn": "Өнөөдрийн карт дууслаа.",
+"ctx": "components/review/review-srs-client.tsx"
+},
+{
+"mn": "Supabase тохиргоо дутуу байна.",
+"ctx": "components/review/today-review-client.tsx"
+},
+{
+"mn": "Нэвтэрнэ үү.",
+"ctx": "components/review/today-review-client.tsx"
+},
+{
+"mn": "Өнөөдрийн давталт дууслаа!",
+"ctx": "components/review/today-review-client.tsx"
+},
+{
+"mn": "Дараагийн картууд due_at хүрэхэд энд харагдана.",
+"ctx": "components/review/today-review-client.tsx"
+},
+{
+"mn": "Нүүр рүү",
+"ctx": "components/review/today-review-client.tsx"
+},
+{
+"mn": "Үг санах",
+"ctx": "components/review/today-review-client.tsx"
+},
+{
+"mn": "Хариултыг харуулах",
+"ctx": "components/review/today-review-client.tsx"
+},
+{
+"mn": "Хэр сайн санасныг үнэлнэ үү",
+"ctx": "components/review/today-review-client.tsx"
+},
+{
+"mn": "Нэвтэрч орвол сул талаа харах боломжтой",
+"ctx": "components/review/weak-spots-client.tsx"
+},
+{
+"mn": "Энэ хуудас зөвхөн таны өөрийн хариултууд дээр тулгуурлан бодогдоно.",
+"ctx": "components/review/weak-spots-client.tsx"
+},
+{
+"mn": "Зөвхөн таны өөрийн хариултууд дээр үндэслэв",
+"ctx": "components/review/weak-spots-client.tsx"
+},
+{
+"mn": "Мэдээлэл татахад алдаа гарлаа:",
+"ctx": "components/review/weak-spots-client.tsx"
+},
+{
+"mn": "хариултад дүн шинжилгээ хийв",
+"ctx": "components/review/weak-spots-client.tsx"
+},
+{
+"mn": "дээд хязгаар",
+"ctx": "components/review/weak-spots-client.tsx"
+},
+{
+"mn": "сүүлд",
+"ctx": "components/review/weak-spots-client.tsx"
+},
+{
+"mn": "Мэдээлэл хараахан алга",
+"ctx": "components/review/weak-spots-client.tsx"
+},
+{
+"mn": "Та одоогоор нэг ч асуулт хариулаагүй байна. Хичээл, дасгал хийж эхлэхэд сул талаа энд харна.",
+"ctx": "components/review/weak-spots-client.tsx"
+},
+{
+"mn": "Дүгнэлт гаргахад хангалтгүй",
+"ctx": "components/review/weak-spots-client.tsx"
+},
+{
+"mn": "Одоогоор",
+"ctx": "components/review/weak-spots-client.tsx"
+},
+{
+"mn": "хариулт бүртгэгдсэн байна. Нэг хэсэгт дор хаяж",
+"ctx": "components/review/weak-spots-client.tsx"
+},
+{
+"mn": "хариулт өгсний дараа хамгийн сул талыг нэрлэж чадна.",
+"ctx": "components/review/weak-spots-client.tsx"
+},
+{
+"mn": "Буруу хариулт алга",
+"ctx": "components/review/weak-spots-client.tsx"
+},
+{
+"mn": "хариултын аль нь ч буруу байгаагүй. Одоогоор сул тал илрээгүй байна.",
+"ctx": "components/review/weak-spots-client.tsx"
+},
+{
+"mn": "Хамгийн сул тал:",
+"ctx": "components/review/weak-spots-client.tsx"
+},
+{
+"mn": "хариултаас",
+"ctx": "components/review/weak-spots-client.tsx"
+},
+{
+"mn": "нь буруу — зөв хариултын хувь",
+"ctx": "components/review/weak-spots-client.tsx"
+},
+{
+"mn": "Харьцуулах өөр хэсэг хараахан хангалттай мэдээлэлгүй байна.",
+"ctx": "components/review/weak-spots-client.tsx"
+},
+{
+"mn": "Дараагийн хэсгээс",
+"ctx": "components/review/weak-spots-client.tsx"
+},
+{
+"mn": "пунктээр доогуур байна.",
+"ctx": "components/review/weak-spots-client.tsx"
+},
+{
+"mn": "Бусад хэсгээс ялгаа бага",
+"ctx": "components/review/weak-spots-client.tsx"
+},
+{
+"mn": "пункт",
+"ctx": "components/review/weak-spots-client.tsx"
+},
+{
+"mn": "Хаана оноогоо алдаж байна вэ?",
+"ctx": "components/review/weak-spots-client.tsx"
+},
+{
+"mn": "Хариултын мэдээлэл алга — дасгал хийсний дараа энд гарна.",
+"ctx": "components/review/weak-spots-client.tsx"
+},
+{
+"mn": "алдаа",
+"ctx": "components/review/weak-spots-client.tsx"
+},
+{
+"mn": "хариулт",
+"ctx": "components/review/weak-spots-client.tsx"
+},
+{
+"mn": "Аль хичээл рүү буцах вэ?",
+"ctx": "components/review/weak-spots-client.tsx"
+},
+{
+"mn": "Алдаа гарсан хичээл алга — давтах зүйл олдсонгүй.",
+"ctx": "components/review/weak-spots-client.tsx"
+},
+{
+"mn": "Аль дүрмийг илүү судлах вэ?",
+"ctx": "components/review/weak-spots-client.tsx"
+},
+{
+"mn": "Дүрмийн хэсэгт алдаа бүртгэгдээгүй байна. Доорх хичээлүүдээс дүрмээ давтаж болно.",
+"ctx": "components/review/weak-spots-client.tsx"
+},
+{
+"mn": "Аль үг чамайг байнга бүдрүүлэв?",
+"ctx": "components/review/weak-spots-client.tsx"
+},
+{
+"mn": "Алдсан хариултаас үгийн сангийн үг таарсангүй.",
+"ctx": "components/review/weak-spots-client.tsx"
+},
+{
+"mn": "хариулт шалгав",
+"ctx": "components/review/weak-spots-client.tsx"
+},
+{
+"mn": "Үгийн алдаа бүртгэгдээгүй байна — үгийн дасгал, хичээлийн шалгалт хийхэд энд цугларна.",
+"ctx": "components/review/weak-spots-client.tsx"
+},
+{
+"mn": "Хичээлийн шалгалт",
+"ctx": "components/review/weak-spots-client.tsx"
+},
+{
+"mn": "буруу хариулт үгийн сангаас олдсонгүй — тэдгээрийг жагсаалтад оруулаагүй.",
+"ctx": "components/review/weak-spots-client.tsx"
+},
+{
+"mn": "Нэмж байна…",
+"ctx": "components/review/weak-spots-client.tsx"
+},
+{
+"mn": "Алдсан үгсээ давталтад нэмэх",
+"ctx": "components/review/weak-spots-client.tsx"
+},
+{
+"mn": "Эдгээр үг давталтын системд ордоггүй (нөхцөл, хэрэглэгдэхүүн үг).",
+"ctx": "components/review/weak-spots-client.tsx"
+},
+{
+"mn": "Алдаа:",
+"ctx": "components/review/weak-spots-client.tsx"
+},
+{
+"mn": "үг маргаашаас давтагдана",
+"ctx": "components/review/weak-spots-client.tsx"
+},
+{
+"mn": "үг аль хэдийн давталтад байсан",
+"ctx": "components/review/weak-spots-client.tsx"
+},
+{
+"mn": "үг алгасав",
+"ctx": "components/review/weak-spots-client.tsx"
+},
+{
+"mn": "Миний үгс",
+"ctx": "components/review/weak-spots-client.tsx"
+},
+{
+"mn": "Нэвтэрч орно уу — үгсийн жагсаалт харагдана.",
+"ctx": "components/review/word-srs-words-client.tsx"
+},
+{
+"mn": "Давталтын системд бүртгэгдсэн HSK үгс",
+"ctx": "components/review/word-srs-words-client.tsx"
+},
+{
+"mn": "Бичлэгээс",
+"ctx": "components/review/word-srs-words-client.tsx"
+},
+{
+"mn": "Бичлэгээс нэмсэн SRS үг алга.",
+"ctx": "components/review/word-srs-words-client.tsx"
+},
+{
+"mn": "Одоогоор SRS-д үг бүртгэгдээгүй байна.",
+"ctx": "components/review/word-srs-words-client.tsx"
+},
+{
+"mn": "удаа сурсан",
+"ctx": "components/review/word-srs-words-client.tsx"
+},
+{
+"mn": "Толь бичигт байхгүй үгс",
+"ctx": "components/review/word-srs-words-client.tsx"
+},
+{
+"mn": "Эдгээр үг зөвхөн таны хадгалсан жагсаалтад байна — SRS-д орохгүй.",
+"ctx": "components/review/word-srs-words-client.tsx"
+},
+{
+"mn": "Солонгос (ko-KR)",
+"ctx": "components/tts/tts-settings-card.tsx"
+},
+{
+"mn": "Хятад (zh-CN)",
+"ctx": "components/tts/tts-settings-card.tsx"
+},
+{
+"mn": "Дуудлага (TTS)",
+"ctx": "components/tts/tts-settings-card.tsx"
+},
+{
+"mn": "Төхөөрөмж/хөтчийн дуут уншилт ашиглана. Сонгосон дуу, хурд, өндөр localStorage-д хадгалагдана. Жинхэнэ audio файл байвал тэрнийг эхлээд тоглуулна.",
+"ctx": "components/tts/tts-settings-card.tsx"
+},
+{
+"mn": "Дуу хоолой",
+"ctx": "components/tts/tts-settings-card.tsx"
+},
+{
+"mn": "Системийн default",
+"ctx": "components/tts/tts-settings-card.tsx"
+},
+{
+"mn": "Энэ хэлний дуу хоолой олдсонгүй. Утасныхаа системийн TTS тохиргооноос солонгос/хятад дуу нэмнэ үү.",
+"ctx": "components/tts/tts-settings-card.tsx"
+},
+{
+"mn": "Хурд (",
+"ctx": "components/tts/tts-settings-card.tsx"
+},
+{
+"mn": "Өндөр (",
+"ctx": "components/tts/tts-settings-card.tsx"
+},
+{
+"mn": "Дууны хэм (",
+"ctx": "components/tts/tts-settings-card.tsx"
+},
+{
+"mn": "Тест уншуулах",
+"ctx": "components/tts/tts-settings-card.tsx"
+},
+{
+"mn": "Дуу жагсаалт шинэчлэх",
+"ctx": "components/tts/tts-settings-card.tsx"
+},
+{
+"mn": "ҮНЭГҮЙ",
+"ctx": "components/zahialga/zahialga-home-card.tsx"
+},
+{
+"mn": "Захиалга хийж сур",
+"ctx": "components/zahialga/zahialga-home-card.tsx"
+},
+{
+"mn": "Хятад, Солонгос, Америкаас өөрөө захиалж сур",
+"ctx": "components/zahialga/zahialga-home-card.tsx"
+},
+{
+"mn": "Хичээлийн дасгал",
+"ctx": "lib/analytics/weak-spots.ts"
+},
+{
+"mn": "Хэт олон хүсэлт. Түр хүлээгээд дахин оролдоно уу.",
+"ctx": "lib/api/public-rate-limit.ts"
+},
+{
+"mn": "Имэйл хаягаа баталгаажуулаагүй байна. Бүртгүүлсэн имэйл хаягаараа орж, бидний явуулсан баталгаажуулах холбоос дээр дарна уу. Имэйл ирээгүй бол Spam/Junk хавтсаа шалгаарай.",
+"ctx": "lib/auth/auth-error-messages.ts"
+},
+{
+"mn": "Баталгаажуулах имэйл дахин илгээлээ. Inbox болон Spam/Junk хавтсаа шалгаарай.",
+"ctx": "lib/auth/auth-error-messages.ts"
+},
+{
+"mn": "Имэйл эсвэл нууц үг буруу байна.",
+"ctx": "lib/auth/auth-error-messages.ts"
+},
+{
+"mn": "Энэ имэйлээр бүртгэл аль хэдийн байна.",
+"ctx": "lib/auth/auth-error-messages.ts"
+},
+{
+"mn": "Имэйл хаяг буруу байна.",
+"ctx": "lib/auth/auth-error-messages.ts"
+},
+{
+"mn": "Хэт олон хүсэлт илгээлээ. Хэсэг хугацааны дараа дахин оролдоно уу.",
+"ctx": "lib/auth/auth-error-messages.ts"
+},
+{
+"mn": "Одоогоор шинэ бүртгэл хүлээн авахгүй байна.",
+"ctx": "lib/auth/auth-error-messages.ts"
+},
+{
+"mn": "Энэ бүртгэл түр хориглогдсон байна.",
+"ctx": "lib/auth/auth-error-messages.ts"
+},
+{
+"mn": "Нэвтрэх шалгалт хэт удаж байна. Дахин оролдоно уу.",
+"ctx": "lib/auth/auth-error-messages.ts"
+},
+{
+"mn": "Холболтын алдаа. Дахин оролдоно уу.",
+"ctx": "lib/auth/auth-error-messages.ts"
+},
+{
+"mn": "Сүлжээний алдаа. Интернэт холболтоо шалгаад дахин оролдоно уу.",
+"ctx": "lib/auth/auth-error-messages.ts"
+},
+{
+"mn": "Auth шалгалт амжилтгүй",
+"ctx": "lib/auth/client-auth-check.ts"
+},
+{
+"mn": "Судлах",
+"ctx": "lib/bichleg/types.ts"
+},
+{
+"mn": "Унтраах",
+"ctx": "lib/bichleg/types.ts"
+},
+{
+"mn": "И",
+"ctx": "lib/classroom/attendance-types.ts"
+},
+{
+"mn": "Т",
+"ctx": "lib/classroom/attendance-types.ts"
+},
+{
+"mn": "Х",
+"ctx": "lib/classroom/attendance-types.ts"
+},
+{
+"mn": "Ч",
+"ctx": "lib/classroom/attendance-types.ts"
+},
+{
+"mn": "Товлосон",
+"ctx": "lib/classroom/exam-types.ts"
+},
+{
+"mn": "Танхимаар",
+"ctx": "lib/classroom/types.ts"
+},
+{
+"mn": "Онлайнаар",
+"ctx": "lib/classroom/types.ts"
+},
+{
+"mn": "Танхим + онлайн",
+"ctx": "lib/classroom/types.ts"
+},
+{
+"mn": "Анхан шат — дуудлага ба үндсэн өгүүлбэр",
+"ctx": "lib/course-display-meta.ts"
+},
+{
+"mn": "Анхан шат — өдөр тутмын яриа",
+"ctx": "lib/course-display-meta.ts"
+},
+{
+"mn": "Дунд шатны эхлэл",
+"ctx": "lib/course-display-meta.ts"
+},
+{
+"mn": "Дунд шат",
+"ctx": "lib/course-display-meta.ts"
+},
+{
+"mn": "Ахисан шат",
+"ctx": "lib/course-display-meta.ts"
+},
+{
+"mn": "Мэргэшсэн шат",
+"ctx": "lib/course-display-meta.ts"
+},
+{
+"mn": "Солонгос",
+"ctx": "lib/course-display.ts"
+},
+{
+"mn": "Романжил",
+"ctx": "lib/course-display.ts"
+},
+{
+"mn": "Монгол цаг",
+"ctx": "lib/datetime/mongolia-time.ts"
+},
+{
+"mn": "In-app study reminder — цаг боллоо.",
+"ctx": "lib/engagement/achievement-service.ts"
+},
+{
+"mn": "Эхний алхам",
+"ctx": "lib/engagement/achievements.ts"
+},
+{
+"mn": "Анхны хичээлээ эхлүүллээ.",
+"ctx": "lib/engagement/achievements.ts"
+},
+{
+"mn": "Анхны quiz",
+"ctx": "lib/engagement/achievements.ts"
+},
+{
+"mn": "Анхны quiz-ээ дуусгалаа.",
+"ctx": "lib/engagement/achievements.ts"
+},
+{
+"mn": "100 оноо",
+"ctx": "lib/engagement/achievements.ts"
+},
+{
+"mn": "Quiz дээр 100% авлаа.",
+"ctx": "lib/engagement/achievements.ts"
+},
+{
+"mn": "5 үг сурлаа",
+"ctx": "lib/engagement/achievements.ts"
+},
+{
+"mn": "5 vocabulary learned болголоо.",
+"ctx": "lib/engagement/achievements.ts"
+},
+{
+"mn": "7 өдрийн streak",
+"ctx": "lib/engagement/achievements.ts"
+},
+{
+"mn": "7 өдөр дараалан суралцлаа.",
+"ctx": "lib/engagement/achievements.ts"
+},
+{
+"mn": "Хичээл дуусгалаа",
+"ctx": "lib/engagement/achievements.ts"
+},
+{
+"mn": "Нэг хичээлийн flow-г дуусгалаа.",
+"ctx": "lib/engagement/achievements.ts"
+},
+{
+"mn": "Давталт эхэллээ",
+"ctx": "lib/engagement/achievements.ts"
+},
+{
+"mn": "Review хэсгээ ашиглаж эхэллээ.",
+"ctx": "lib/engagement/achievements.ts"
+},
+{
+"mn": "Өнөөдрийн Хятад хэлээ сурах цаг",
+"ctx": "lib/engagement/types.ts"
+},
+{
+"mn": "Next week: 3 хичээл, 20 үг, 3 quiz оролд.",
+"ctx": "lib/engagement/weekly-report.ts"
+},
+{
+"mn": "Next week: vocabulary давтаж, 20 үг сурах зорилго тав.",
+"ctx": "lib/engagement/weekly-report.ts"
+},
+{
+"mn": "Next week: quiz дахин өгч, streak-ээ үргэлжлүүл.",
+"ctx": "lib/engagement/weekly-report.ts"
+},
+{
+"mn": "Сайн байна уу, танилцахад таатай байна.",
+"ctx": "lib/games/game-data.ts"
+},
+{
+"mn": "Сурах",
+"ctx": "lib/games/game-data.ts"
+},
+{
+"mn": "Би хятад хэл сурч байна.",
+"ctx": "lib/games/game-data.ts"
+},
+{
+"mn": "Найз",
+"ctx": "lib/games/game-data.ts"
+},
+{
+"mn": "Тэр миний сайн найз.",
+"ctx": "lib/games/game-data.ts"
+}
+]

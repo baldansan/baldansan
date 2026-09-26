@@ -102,12 +102,12 @@ export function ConfusableChars({ text, className }: Props) {
                   {entry.p}
                 </span>
                 {entry.r ? (
-                  <span className="text-[10px] font-semibold text-amber-700">
+                  <span className="text-[10px] font-semibold text-amber-700" translate="no">
                     {entry.r}
                     {entry.rm ? ` ${entry.rm}` : ""}
                   </span>
                 ) : null}
-                <span className="max-w-[9rem] truncate text-[11px] text-slate-500">
+                <span className="max-w-[9rem] truncate text-[11px] text-slate-500" translate="no">
                   {entry.m}
                 </span>
               </Link>

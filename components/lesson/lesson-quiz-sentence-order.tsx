@@ -89,7 +89,7 @@ export function LessonQuizSentenceOrder({
         Асуулт {index + 1} / {total}
       </p>
       <div className="mt-3 flex items-start gap-2">
-        <h2 className="min-w-0 flex-1 text-lg font-bold leading-snug text-slate-900">
+        <h2 className="min-w-0 flex-1 text-lg font-bold leading-snug text-slate-900" translate="no">
           {instruction}
         </h2>
         {containsTargetScript(question.correctAnswer) ? (
@@ -163,11 +163,11 @@ export function LessonQuizSentenceOrder({
             <span>✓ Зөв!</span>
           ) : (
             <span>
-              ✗ Буруу. <b className="hanzi">Зөв: {question.correctAnswer}</b>
+              ✗ Буруу. <b className="hanzi">Зөв: <span translate="no">{question.correctAnswer}</span></b>
             </span>
           )}
           {question.explanation ? (
-            <p className="mt-2 text-sm text-slate-700">{question.explanation}</p>
+            <p className="mt-2 text-sm text-slate-700" translate="no">{question.explanation}</p>
           ) : null}
         </div>
       ) : null}

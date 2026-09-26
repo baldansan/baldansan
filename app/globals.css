@@ -424,3 +424,10 @@ body {
   @apply bg-slate-100 text-slate-600 ring-slate-200;
 }
 
+
+/* UI орчуулагч дуустал (zh) body-г нуух — монгол текст анивчихгүй */
+html.ui-zh-pending body { visibility: hidden; }
+
+/* /books эх сурвалж — хариулт нуух горим */
+.src-hide-answers .src-answer { display: none; }
+.src-hide-answers .src-answer-opt { font-weight: inherit; color: inherit; }

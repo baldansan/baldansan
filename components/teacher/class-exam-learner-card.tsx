@@ -60,7 +60,7 @@ export function ClassExamLearnerCard() {
             className="rounded-xl bg-slate-50 px-3 py-2.5"
           >
             <div className="flex flex-wrap items-start justify-between gap-2">
-              <p className="font-medium text-slate-900">
+              <p className="font-medium text-slate-900" translate="no">
                 {examDisplayTitle(exam)}
               </p>
               <span

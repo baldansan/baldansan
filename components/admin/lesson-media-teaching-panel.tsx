@@ -46,7 +46,7 @@ export function LessonMediaTeachingPanel({ lesson }: Props) {
           <p className="text-xs font-medium uppercase tracking-wide text-slate-500">
             Оруулсан заах зургууд
           </p>
-          <ul className="mt-1 list-inside list-disc text-xs text-slate-600">
+          <ul className="mt-1 list-inside list-disc text-xs text-slate-600" translate="no">
             {teachingImages.map((image) => (
               <li key={image.url}>{image.title}</li>
             ))}

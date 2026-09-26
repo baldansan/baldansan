@@ -26,7 +26,7 @@ export function Hsk30LevelView({ level }: Props) {
           <span className="hz-course-dot" />
           HSK 3.0 дүрэм
         </span>
-        <h1 className="hz-course-hero-title">{level.title}</h1>
+        <h1 className="hz-course-hero-title" translate="no">{level.title}</h1>
         <p className="hz-course-hero-sub">
           {level.points.length} дүрмийн цэг — дарж дэлгэрэнгүй үзнэ үү
         </p>
@@ -47,7 +47,7 @@ export function Hsk30LevelView({ level }: Props) {
                   <p className="text-xs font-semibold text-[#1FB85A]">
                     {point.pin}
                   </p>
-                  <p className="mt-1 text-sm font-medium text-[var(--app-muted)] line-clamp-2">
+                  <p className="mt-1 text-sm font-medium text-[var(--app-muted)] line-clamp-2" translate="no">
                     {point.gloss}
                   </p>
                 </div>

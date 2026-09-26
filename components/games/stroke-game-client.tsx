@@ -173,7 +173,7 @@ export function StrokeGameClient({
                   {current.prompt}
                 </p>
                 <p className="mt-3 text-lg text-purple-700">{current.chinese}</p>
-                <p className="mt-1 text-sm text-[var(--app-muted)]">
+                <p className="mt-1 text-sm text-[var(--app-muted)]" translate="no">
                   {current.mongolian}
                 </p>
               </>
@@ -183,7 +183,7 @@ export function StrokeGameClient({
                   {current.chinese}
                 </p>
                 <p className="mt-2 text-lg text-emerald-700">{current.pinyin}</p>
-                <p className="mt-1 text-sm text-[var(--app-muted)]">
+                <p className="mt-1 text-sm text-[var(--app-muted)]" translate="no">
                   {current.mongolian}
                 </p>
                 {current.formulaPrompt ? (
@@ -244,7 +244,7 @@ export function StrokeGameClient({
             })}
           </div>
           {revealed && current.explanation ? (
-            <p className="mt-4 rounded-xl bg-emerald-50 px-3 py-3 text-sm leading-relaxed text-emerald-900 ring-1 ring-emerald-200">
+            <p className="mt-4 rounded-xl bg-emerald-50 px-3 py-3 text-sm leading-relaxed text-emerald-900 ring-1 ring-emerald-200" translate="no">
               {current.explanation}
             </p>
           ) : null}

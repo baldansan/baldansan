@@ -55,10 +55,10 @@ export function LessonEditSummaryHeader({
       <div className="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
         <div className="min-w-0 flex-1">
           <div className="flex flex-wrap items-center gap-2">
-            <h1 className="text-xl font-bold text-slate-900">{lesson.title}</h1>
+            <h1 className="text-xl font-bold text-slate-900" translate="no">{lesson.title}</h1>
             <LessonStatusBadge status={publishStatus} />
           </div>
-          <p className="mt-1 text-sm text-slate-600">{lesson.chineseTitle}</p>
+          <p className="mt-1 text-sm text-slate-600" translate="no">{lesson.chineseTitle}</p>
           <p className="mt-2 font-mono text-xs text-slate-500">
             {lesson.id} · {lesson.courseId}
           </p>

@@ -107,7 +107,7 @@ export function ListeningQuestion({
         Сонсох дасгал
       </div>
       {instructionMn ? (
-        <p className="mb-3 text-sm text-slate-600">{instructionMn}</p>
+        <p className="mb-3 text-sm text-slate-600" translate="no">{instructionMn}</p>
       ) : null}
 
       <div className="mb-4 flex justify-center">
@@ -165,7 +165,7 @@ export function ListeningQuestion({
                 >
                   {label}
                 </span>
-                <span className="pt-0.5 text-base leading-snug">{text}</span>
+                <span className="pt-0.5 text-base leading-snug" translate="no">{text}</span>
               </MotionButton>
             );          })}
         </div>

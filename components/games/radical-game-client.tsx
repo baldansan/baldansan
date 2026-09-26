@@ -327,7 +327,7 @@ export function RadicalGameClient({
                   <b className="block text-xl font-black text-[var(--app-text)]">
                     {comp.c}
                   </b>
-                  <span className="block text-[11px] text-[var(--app-muted)]">
+                  <span className="block text-[11px] text-[var(--app-muted)]" translate="no">
                     {comp.name}
                   </span>
                 </span>
@@ -360,12 +360,12 @@ export function RadicalGameClient({
             <h3 className="text-base font-bold text-[var(--app-text)]">
               {tr(locale, "✅ Зөв!")} +{lastGain} {tr(locale, "оноо")}
             </h3>
-            <div className="mt-2.5 rounded-[14px] border border-[var(--app-border)] bg-white p-3 text-sm">
+            <div className="mt-2.5 rounded-[14px] border border-[var(--app-border)] bg-white p-3 text-sm" translate="no">
               💡 <b>{current.char}</b> ({current.pinyin}) — {current.meaning_mn}
               <br />
               {current.etymology_mn}
             </div>
-            <div className="mt-2.5 grid gap-2">
+            <div className="mt-2.5 grid gap-2" translate="no">
               {current.breakdown.map((part, i) => (
                 <div
                   key={`${part.c}-${i}`}

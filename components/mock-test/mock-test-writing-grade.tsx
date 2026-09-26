@@ -44,16 +44,16 @@ export function MockTestWritingGrade({
                 Асуулт {question.q_no} · {SKILL_LABELS_MN.writing}
               </p>
               {question.stem ? (
-                <p className="bs-mt-q-text hanzi">{question.stem}</p>
+                <p className="bs-mt-q-text hanzi" translate="no">{question.stem}</p>
               ) : null}
               <p className="bs-mt-writing-label">Таны хариулт</p>
-              <p className="bs-mt-writing-answer hanzi">
+              <p className="bs-mt-writing-answer hanzi" translate="no">
                 {answer.trim() || "— хоосон —"}
               </p>
               {question.correct_answer ? (
                 <>
                   <p className="bs-mt-writing-label">Жишиг хариулт</p>
-                  <p className="bs-mt-writing-sample hanzi">
+                  <p className="bs-mt-writing-sample hanzi" translate="no">
                     {question.correct_answer}
                   </p>
                 </>

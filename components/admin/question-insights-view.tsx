@@ -172,9 +172,9 @@ export function QuestionInsightsView({ overview, initialLessonFilter }: Props) {
                       <tr key={`${row.lessonId}-${row.questionKey}`}>
                         <td className="px-4 py-3">
                           <span className="font-mono text-xs">{row.lessonId}</span>
-                          <p className="text-xs text-slate-500">{row.lessonTitle}</p>
+                          <p className="text-xs text-slate-500" translate="no">{row.lessonTitle}</p>
                         </td>
-                        <td className="max-w-xs px-4 py-3">{row.question}</td>
+                        <td className="max-w-xs px-4 py-3" translate="no">{row.question}</td>
                         <td className="px-4 py-3">
                           {QUESTION_TYPE_LABEL[row.type] ?? row.type}
                         </td>
@@ -191,7 +191,7 @@ export function QuestionInsightsView({ overview, initialLessonFilter }: Props) {
                             label={formatAccuracy(row.accuracyPercent)}
                           />
                         </td>
-                        <td className="px-4 py-3 text-xs">{row.correctAnswer}</td>
+                        <td className="px-4 py-3 text-xs" translate="no">{row.correctAnswer}</td>
                         <td className="px-4 py-3 text-xs text-slate-600">
                           {row.mostCommonWrongAnswers.length > 0
                             ? row.mostCommonWrongAnswers.join(", ")
@@ -295,7 +295,7 @@ export function QuestionInsightsView({ overview, initialLessonFilter }: Props) {
                         <td className="px-4 py-3 font-mono text-xs">
                           {row.lessonId}
                         </td>
-                        <td className="max-w-md px-4 py-3">{row.question}</td>
+                        <td className="max-w-md px-4 py-3" translate="no">{row.question}</td>
                         <td className="px-4 py-3">{row.attemptsCount}</td>
                         <td className="px-4 py-3">
                           {formatAccuracy(row.accuracyPercent)}

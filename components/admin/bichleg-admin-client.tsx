@@ -327,7 +327,7 @@ export function BichlegAdminClient({ initialSeries }: Props) {
                       className="cursor-pointer border-t border-slate-100 hover:bg-emerald-50/60"
                       onClick={() => void loadSeriesDetail(series.id)}
                     >
-                      <td className="px-4 py-3 font-semibold text-slate-900">
+                      <td className="px-4 py-3 font-semibold text-slate-900" translate="no">
                         {series.title_mn ?? series.title_zh ?? series.id}
                       </td>
                       <td className="px-4 py-3 text-slate-600">
@@ -450,7 +450,7 @@ export function BichlegAdminClient({ initialSeries }: Props) {
                         <td className="px-3 py-3 font-semibold text-slate-900">
                           {ep.episode_no ?? "—"}
                         </td>
-                        <td className="px-3 py-3 text-slate-700">
+                        <td className="px-3 py-3 text-slate-700" translate="no">
                           {ep.title_mn ?? ep.title_zh ?? ep.id}
                         </td>
                         <td className="px-3 py-3 font-mono text-xs text-slate-500">
@@ -518,7 +518,7 @@ export function BichlegAdminClient({ initialSeries }: Props) {
               <p className="mt-1 text-sm text-red-800">
                 Бүх анги болон хадмал нэг дор устана. Баталгаажуулахын тулд доор
                 цувралын нэрийг яг бичнэ үү:{" "}
-                <strong>{seriesDetail.title_mn}</strong>
+                <strong translate="no">{seriesDetail.title_mn}</strong>
               </p>
               <input
                 type="text"

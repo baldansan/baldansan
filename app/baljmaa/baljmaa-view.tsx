@@ -43,7 +43,7 @@ function SentenceCard({
       onClick={() => (hideMn || hidePy) && setRevealed((v) => !v)}
     >
       <div className="flex items-start gap-2">
-        <p className="hanzi min-w-0 flex-1 text-lg font-bold leading-8 text-[var(--app-text)]">
+        <p className="hanzi min-w-0 flex-1 text-lg font-bold leading-8 text-[var(--app-text)]" translate="no">
           {s.zh}
         </p>
         <button
@@ -59,14 +59,14 @@ function SentenceCard({
         </button>
       </div>
       {showPy ? (
-        <p className="mt-1 text-[13px] leading-6 text-emerald-700">{s.py}</p>
+        <p className="mt-1 text-[13px] leading-6 text-emerald-700" translate="no">{s.py}</p>
       ) : (
         <p className="mt-1 text-[13px] italic text-slate-300">
           пиньинь нуугдсан — дарж харна
         </p>
       )}
       {showMn ? (
-        <p className="mt-1 text-[13px] leading-6 text-[var(--app-muted)]">
+        <p className="mt-1 text-[13px] leading-6 text-[var(--app-muted)]" translate="no">
           {s.mn}
         </p>
       ) : (
@@ -143,13 +143,13 @@ export function BaljmaaView() {
               {i + 1}
             </span>
             <div>
-              <h2 className="hanzi text-base font-extrabold text-[var(--app-text)]">
+              <h2 className="hanzi text-base font-extrabold text-[var(--app-text)]" translate="no">
                 {sec.titleZh}
                 <span className="ml-2 text-xs font-semibold text-emerald-700">
                   {sec.titlePy}
                 </span>
               </h2>
-              <p className="text-xs text-[var(--app-muted)]">{sec.titleMn}</p>
+              <p className="text-xs text-[var(--app-muted)]" translate="no">{sec.titleMn}</p>
             </div>
           </div>
           <div className="flex flex-col gap-2">
@@ -182,11 +182,11 @@ export function BaljmaaView() {
               >
                 🔊
               </button>
-              <span className="hanzi text-base font-bold text-[var(--app-text)]">
+              <span className="hanzi text-base font-bold text-[var(--app-text)]" translate="no">
                 {w.zh}
               </span>
-              <span className="text-xs text-emerald-700">{w.py}</span>
-              <span className="ml-auto text-right text-xs text-[var(--app-muted)]">
+              <span className="text-xs text-emerald-700" translate="no">{w.py}</span>
+              <span className="ml-auto text-right text-xs text-[var(--app-muted)]" translate="no">
                 {w.mn}
               </span>
             </div>

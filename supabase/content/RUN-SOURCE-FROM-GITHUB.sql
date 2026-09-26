@@ -9,6 +9,7 @@ begin
   perform extensions.http_set_curlopt('CURLOPT_TIMEOUT_MS', '120000');
   foreach f in array array[
     'migrations/062_hsk_source_lessons.sql',
+    'migrations/063_hsk_source_lessons_public_read.sql',
     'content/006_hsk3_source_lessons.sql',
     'content/007_hsk1_source_lessons.sql',
     'content/008_hsk2_source_lessons.sql',

@@ -177,7 +177,7 @@ export function ArrangeGameClient({
                 />
               ) : null}
             </div>
-            <p className="mt-1 text-center text-xs text-[var(--app-muted)]">
+            <p className="mt-1 text-center text-xs text-[var(--app-muted)]" translate="no">
               {current.mongolianHint}
             </p>
           </GameCard>

@@ -137,7 +137,7 @@ function StemBlock({ question }: { question: MockTestQuestionRow }) {
         <img src={question.image_url} alt="" className="bs-mt-q-image" />
       ) : null}
       {question.stem ? (
-        <p className="bs-mt-q-text hanzi">{question.stem}</p>
+        <p className="bs-mt-q-text hanzi" translate="no">{question.stem}</p>
       ) : null}
     </>
   );
@@ -169,7 +169,7 @@ function ResultExtras({
         </p>
       ) : null}
       {question.explanation_mn ? (
-        <p className="bs-mt-explain">{question.explanation_mn}</p>
+        <p className="bs-mt-explain" translate="no">{question.explanation_mn}</p>
       ) : null}
     </>
   );
@@ -409,7 +409,7 @@ export function MockTestQuestion({
                   // eslint-disable-next-line @next/next/no-img-element
                   <img src={opt.image_url} alt="" />
                 ) : (
-                  <span className="hanzi">{opt.text}</span>
+                  <span className="hanzi" translate="no">{opt.text}</span>
                 )}
               </button>
             ))}
@@ -496,7 +496,7 @@ function TextOptions({
           onClick={() => onPick(opt.key)}
         >
           <span className="bs-mt-option-letter">{opt.key}</span>
-          <span className="hanzi">{opt.text}</span>
+          <span className="hanzi" translate="no">{opt.text}</span>
         </button>
       ))}
     </div>
@@ -541,7 +541,7 @@ function OrderQuestion({
         resultCorrect={resultCorrect}
       />
       <StemBlock question={question} />
-      <p className="bs-mt-word-sentence hanzi">{picked.join(" → ") || "…"}</p>
+      <p className="bs-mt-word-sentence hanzi" translate="no">{picked.join(" → ") || "…"}</p>
       <div className="bs-mt-chip-row">
         {options.map((opt) => (
           <button
@@ -549,6 +549,7 @@ function OrderQuestion({
             type="button"
             disabled={showResults || picked.includes(opt.key)}
             className={`bs-mt-chip hanzi ${picked.includes(opt.key) ? "bs-mt-chip--used" : ""}`}
+            translate="no"
             onClick={() => toggleKey(opt.key)}
           >
             {opt.key}

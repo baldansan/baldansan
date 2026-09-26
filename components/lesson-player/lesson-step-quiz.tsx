@@ -79,7 +79,7 @@ function LessonStepQuizInner({
         {tr(locale, "Асуулт")} {index + 1} / {total}
       </p>
       <div className="mt-3 flex items-start gap-2">
-        <h2 className="min-w-0 flex-1 text-lg font-bold leading-snug text-slate-900">
+        <h2 className="min-w-0 flex-1 text-lg font-bold leading-snug text-slate-900" translate="no">
           {question.question}
         </h2>
         {!question.audioUrl && containsTargetScript(question.question) ? (
@@ -108,6 +108,7 @@ function LessonStepQuizInner({
               disabled={revealed}
               onClick={() => onSelect(option)}
               className={`${optionClass(option)} flex-1`}
+              translate="no"
             >
               {option}
             </button>

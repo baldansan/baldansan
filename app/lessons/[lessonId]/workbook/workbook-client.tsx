@@ -28,7 +28,7 @@ function WorkbookAudioPlayer({ section }: { section: HskWorkbookSection }) {
         <track kind="captions" />
       </audio>
       {audio.note ? (
-        <p className="mt-1 text-[11px] text-slate-500">{audio.note}</p>
+        <p className="mt-1 text-[11px] text-slate-500" translate="no">{audio.note}</p>
       ) : null}
     </div>
   );
@@ -48,7 +48,7 @@ export function LessonWorkbookClient({ lesson, sections, adminPreview = false }:
           ← Хичээл рүү буцах
         </Link>
         <header>
-          <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">
+          <p className="text-xs font-semibold uppercase tracking-wide text-slate-500" translate="no">
             {lesson.chineseTitle || lesson.title}
           </p>
           <h1 className="mt-1 text-xl font-bold text-slate-900">Workbook дасгал</h1>
@@ -71,12 +71,12 @@ export function LessonWorkbookClient({ lesson, sections, adminPreview = false }:
                   {section.sectionLabel}
                 </span>
                 <div className="min-w-0 flex-1">
-                  <h2 className="text-base font-bold text-slate-900">{section.titleMn}</h2>
+                  <h2 className="text-base font-bold text-slate-900" translate="no">{section.titleMn}</h2>
                   {section.titleZh ? (
                     <p className="text-sm text-slate-500">{section.titleZh}</p>
                   ) : null}
                   {section.instructionsMn ? (
-                    <p className="mt-2 text-sm leading-6 text-slate-700">
+                    <p className="mt-2 text-sm leading-6 text-slate-700" translate="no">
                       {section.instructionsMn}
                     </p>
                   ) : null}
@@ -99,13 +99,13 @@ export function LessonWorkbookClient({ lesson, sections, adminPreview = false }:
               {adminPreview && section.answerKey ? (
                 <div className="mt-3 rounded-xl bg-amber-50 p-3 ring-1 ring-amber-100">
                   <p className="text-xs font-semibold text-amber-800">Хариулт (админ)</p>
-                  <p className="mt-1 text-sm text-amber-950">
+                  <p className="mt-1 text-sm text-amber-950" translate="no">
                     {Array.isArray(section.answerKey)
                       ? section.answerKey.join(" · ")
                       : section.answerKey}
                   </p>
                   {section.sourceRef ? (
-                    <p className="mt-1 text-[11px] text-amber-700">{section.sourceRef}</p>
+                    <p className="mt-1 text-[11px] text-amber-700" translate="no">{section.sourceRef}</p>
                   ) : null}
                 </div>
               ) : null}

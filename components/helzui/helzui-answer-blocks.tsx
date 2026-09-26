@@ -11,7 +11,7 @@ type Props = {
 
 export function HelzuiAnswerBlocks({ blocks, roleColors }: Props) {
   return (
-    <div className="hz-built" role="list">
+    <div className="hz-built" role="list" translate="no">
       {blocks.map((block, index) => {
         const def = roleColor(roleColors, block.role);
         const isPred = block.role === "pred" || def.isHeart;

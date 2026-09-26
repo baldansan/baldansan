@@ -46,11 +46,11 @@ export function KoreanTeachingVisuals({
                 className="w-full object-contain"
               />
               <figcaption className="border-t border-slate-100 px-4 py-3">
-                <p className="text-sm font-semibold text-[var(--app-text)]">
+                <p className="text-sm font-semibold text-[var(--app-text)]" translate="no">
                   {image.title}
                 </p>
                 {image.caption ? (
-                  <p className="mt-1 text-xs leading-5 text-[var(--app-muted)]">
+                  <p className="mt-1 text-xs leading-5 text-[var(--app-muted)]" translate="no">
                     {image.caption}
                   </p>
                 ) : null}
@@ -68,7 +68,7 @@ export function KoreanTeachingVisuals({
               <p className="font-mono text-2xl font-bold tracking-wide text-slate-900">
                 {item.equation}
               </p>
-              <p className="mt-2 text-xs text-[var(--app-muted)]">{item.caption}</p>
+              <p className="mt-2 text-xs text-[var(--app-muted)]" translate="no">{item.caption}</p>
             </div>
           ))}
         </div>

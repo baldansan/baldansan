@@ -67,7 +67,7 @@ export function ClassExamResults({ summary, onChanged }: Props) {
     <article className="flex flex-col gap-4 rounded-2xl bg-white p-5 ring-1 ring-slate-200 sm:p-6">
       <header className="flex flex-wrap items-start justify-between gap-3">
         <div>
-          <h3 className="text-lg font-semibold text-slate-900">
+          <h3 className="text-lg font-semibold text-slate-900" translate="no">
             {examDisplayTitle(exam)}
           </h3>
           <p className="mt-1 text-xs text-slate-500">

@@ -847,8 +847,8 @@ export default function ExercisesModule({
         </nav>
       )}
 
-      <div className="bs-ex-section">{q.section}</div>
-      {q.instruction && <div className="bs-ex-instr">{q.instruction}</div>}
+      <div className="bs-ex-section" translate="no">{q.section}</div>
+      {q.instruction && <div className="bs-ex-instr" translate="no">{q.instruction}</div>}
 
       {hasAudio && (
         <div className="bs-ex-audiobar">
@@ -884,7 +884,7 @@ export default function ExercisesModule({
             return (
               <div key={item.n ?? index} className="bs-ex-group-item">
                 {item.n != null && <div className="bs-ex-group-n">Асуулт {item.n}</div>}
-                {item.prompt && <div className="bs-ex-prompt">{item.prompt}</div>}
+                {item.prompt && <div className="bs-ex-prompt" translate="no">{item.prompt}</div>}
                 {item.kind === "choice" && (
                   <div className="bs-ex-opts">
                     {item.options.map((opt, i) => {
@@ -899,6 +899,7 @@ export default function ExercisesModule({
                           type="button"
                           className={cls}
                           onClick={() => pickChoiceInGroup(index, opt)}
+                          translate="no"
                           disabled={state.checked}
                         >
                           {opt}
@@ -939,7 +940,7 @@ export default function ExercisesModule({
                     ) : (
                       <span>
                         ✗ Буруу.{" "}
-                        {item.kind === "choice" && <b>Зөв: {item.answer}</b>}
+                        {item.kind === "choice" && <b>Зөв: <span translate="no">{item.answer}</span></b>}
                         {item.kind === "tf" && (
                           <b>Зөв: {item.answer ? "Үнэн" : "Худал"}</b>
                         )}
@@ -956,7 +957,7 @@ export default function ExercisesModule({
       {q.kind === "choice" && q.zh && <div className="bs-ex-zh">{q.zh}</div>}
 
       {(q.kind === "choice" || q.kind === "tf") && q.prompt && (
-        <div className="bs-ex-prompt">{q.prompt}</div>
+        <div className="bs-ex-prompt" translate="no">{q.prompt}</div>
       )}
 
       {q.kind === "choice" && (
@@ -973,6 +974,7 @@ export default function ExercisesModule({
                 type="button"
                 className={cls}
                 onClick={() => pickChoice(opt)}
+                translate="no"
                 disabled={checked}
               >
                 {opt}
@@ -1010,9 +1012,9 @@ export default function ExercisesModule({
 
       {(q.kind === "order" || q.kind === "scramble") && (
         <>
-          <div className="bs-ex-prompt">{renderPromptWithSvoHint(q.prompt)}</div>
+          <div className="bs-ex-prompt" translate="no">{renderPromptWithSvoHint(q.prompt)}</div>
           {q.instruction ? (
-            <div className="bs-ex-instr">{renderPromptWithSvoHint(q.instruction)}</div>
+            <div className="bs-ex-instr" translate="no">{renderPromptWithSvoHint(q.instruction)}</div>
           ) : null}
           <div className="bs-ex-build">
             {seq.length === 0 && <span className="bs-ex-ph">Доороос товшиж нэмнэ…</span>}
@@ -1064,9 +1066,9 @@ export default function ExercisesModule({
             ) : (
               <span>
                 ✗ Буруу.{" "}
-                {q.kind === "scramble" && <b>Зөв: {q.answer}</b>}
-                {q.kind === "order" && <b>Зөв: {q.answer.join(" → ")}</b>}
-                {q.kind === "choice" && <b>Зөв: {q.answer}</b>}
+                {q.kind === "scramble" && <b>Зөв: <span translate="no">{q.answer}</span></b>}
+                {q.kind === "order" && <b>Зөв: <span translate="no">{q.answer.join(" → ")}</span></b>}
+                {q.kind === "choice" && <b>Зөв: <span translate="no">{q.answer}</span></b>}
                 {q.kind === "tf" && <b>Зөв: {q.answer ? "Үнэн" : "Худал"}</b>}
               </span>
             )}

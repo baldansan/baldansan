@@ -35,15 +35,15 @@ export function KoreanAnswerPronunciationBlock({
 
   return (
     <div className={className}>
-      <p className="text-sm font-medium text-slate-800">{correctAnswer}</p>
+      <p className="text-sm font-medium text-slate-800" translate="no">{correctAnswer}</p>
       {romanization ? (
-        <p className="mt-0.5 text-sm text-slate-600">{romanization}</p>
+        <p className="mt-0.5 text-sm text-slate-600" translate="no">{romanization}</p>
       ) : null}
       {pronunciationLine ? (
         <p className="mt-1 text-sm font-medium text-sky-800">{pronunciationLine}</p>
       ) : null}
       {explanation ? (
-        <p className="mt-2 text-sm leading-relaxed text-slate-600">{explanation}</p>
+        <p className="mt-2 text-sm leading-relaxed text-slate-600" translate="no">{explanation}</p>
       ) : null}
     </div>
   );

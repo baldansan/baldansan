@@ -45,7 +45,7 @@ export default function RecapModule({
         </div>
 
         {/* Багшийн төгсгөлийн үг */}
-        {teacher && <div className="bs-rc-teacher">{teacher}</div>}
+        {teacher && <div translate="no" className="bs-rc-teacher">{teacher}</div>}
 
         {/* Өнөөдөр юу сурав */}
         <div className="bs-rc-learned">

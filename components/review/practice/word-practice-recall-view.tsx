@@ -120,7 +120,7 @@ export function WordPracticeRecallView({
 
       {/* Асуулт: утга + пиньинь + дуудлага. Ханзыг ХАРУУЛАХГҮЙ. */}
       <div className="mb-3 rounded-2xl bg-white px-4 py-3 text-center ring-1 ring-slate-200">
-        <p className="text-base font-bold text-[var(--app-text)]">
+        <p className="text-base font-bold text-[var(--app-text)]" translate="no">
           {current.meaning}
         </p>
         <div className="mt-1 flex items-center justify-center gap-2">

@@ -91,7 +91,7 @@ function ResultRow({ word }: { word: DictionaryWord }) {
               {word.pinyin}
             </span>
           </span>
-          <span className="mt-0.5 block text-sm text-[var(--app-muted)]">
+          <span className="mt-0.5 block text-sm text-[var(--app-muted)]" translate="no">
             {meaning}
           </span>
           <span className="mt-1 flex flex-wrap items-center gap-1.5">
@@ -125,7 +125,7 @@ function ResultRow({ word }: { word: DictionaryWord }) {
       {open && hasExample ? (
         <div className="border-t border-[var(--app-border)] px-4 py-3">
           <div className="flex items-start gap-2">
-            <div className="min-w-0 flex-1">
+            <div className="min-w-0 flex-1" translate="no">
               <p className="text-base font-semibold text-[var(--app-text)]">
                 {word.example_zh}
               </p>
@@ -277,6 +277,7 @@ export function DictionaryClient() {
                 type="button"
                 onClick={() => setQuery(ex)}
                 className="app-chip"
+                translate="no"
               >
                 {ex}
               </button>
@@ -297,7 +298,7 @@ export function DictionaryClient() {
                 className="inline-flex items-baseline gap-1 rounded-xl bg-white px-2.5 py-1.5 text-sm ring-1 ring-slate-200"
               >
                 <span className="font-bold">{item.r}</span>
-                <span className="text-[10px] text-slate-500">{item.mn}</span>
+                <span className="text-[10px] text-slate-500" translate="no">{item.mn}</span>
               </button>
             ))}
           </div>
@@ -307,7 +308,7 @@ export function DictionaryClient() {
       {radical && !loading && !query.trim() ? (
         <div className="mb-2 flex items-center gap-2">
           <p className="text-sm font-bold text-[var(--app-text)]">
-            {radical} {COMMON_RADICALS.find((x) => x.r === radical)?.mn ?? ""} ·{" "}
+            {radical} <span translate="no">{COMMON_RADICALS.find((x) => x.r === radical)?.mn ?? ""}</span> ·{" "}
             {results.length} {tr(locale, "үг")}
           </p>
           <button
@@ -335,7 +336,7 @@ export function DictionaryClient() {
       {!loading && searched && !error && results.length === 0 ? (
         <MobileCard className="text-center">
           <p className="text-sm text-[var(--app-muted)]">
-            &laquo;{query.trim()}&raquo; {tr(locale, "олдсонгүй. Өөр үгээр хайгаад үзээрэй.")}
+            &laquo;<span translate="no">{query.trim()}</span>&raquo; {tr(locale, "олдсонгүй. Өөр үгээр хайгаад үзээрэй.")}
           </p>
         </MobileCard>
       ) : null}

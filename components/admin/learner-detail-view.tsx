@@ -245,8 +245,8 @@ export function LearnerDetailView({ learners, detail }: Props) {
                 {detail.grammarHardSpots.map((row) => (
                   <tr key={`${row.lessonId}-${row.questionId}`}>
                     <td className="font-mono text-xs">{row.lessonId}</td>
-                    <td>{row.pointLabel}</td>
-                    <td>{row.questionLabel}</td>
+                    <td translate="no">{row.pointLabel}</td>
+                    <td translate="no">{row.questionLabel}</td>
                     <td className="text-center">{row.totalAttempts}</td>
                     <td className="text-center font-bold text-red-600">
                       {row.wrongCount}
@@ -281,8 +281,8 @@ export function LearnerDetailView({ learners, detail }: Props) {
               <tbody>
                 {detail.helzuiHardSpots.map((row) => (
                   <tr key={row.questionId}>
-                    <td>{row.moduleTitle}</td>
-                    <td className="zh text-base font-semibold">{row.sentenceZh}</td>
+                    <td translate="no">{row.moduleTitle}</td>
+                    <td className="zh text-base font-semibold" translate="no">{row.sentenceZh}</td>
                     <td className="text-center">{row.totalAttempts}</td>
                     <td className="text-center font-bold text-red-600">
                       {row.wrongCount}
@@ -326,7 +326,7 @@ export function LearnerDetailView({ learners, detail }: Props) {
                   ) : null}
                 </div>
                 {row.note ? (
-                  <p className="mt-1 text-slate-700">{row.note}</p>
+                  <p className="mt-1 text-slate-700" translate="no">{row.note}</p>
                 ) : null}
                 {row.pagePath ? (
                   <p className="mt-1 font-mono text-xs text-slate-400">

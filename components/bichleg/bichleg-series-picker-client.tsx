@@ -10,6 +10,7 @@ import { resolveSeriesThumbnailUrl } from "@/lib/bichleg/series-thumbnail";
 import type { SeriesWatchProgress, VideoSeriesCard } from "@/lib/bichleg/types";
 import { useUiLocale } from "@/lib/i18n/ui-locale";
 import { tr } from "@/lib/i18n/translate";
+import { MediaTabs } from "@/components/songs/media-tabs";
 
 type Props = {
   seriesList: VideoSeriesCard[];
@@ -25,7 +26,8 @@ export function BichlegSeriesPickerClient({
   const locale = useUiLocale();
   return (
     <MobileAppShell activeTab="clips" mainClassName={SHELL_MAIN_NARROW}>
-      <h1 className="bs-tm-page-title">{tr(locale, "Бичлэг")}</h1>
+      <h1 className="bs-tm-page-title">{tr(locale, "Дуу ба бичлэг")}</h1>
+      <MediaTabs active="videos" />
 
       <div className="bs-tm-bichleg-greet">
         <TemeeEmojiIcon

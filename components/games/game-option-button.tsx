@@ -42,6 +42,7 @@ export function GameOptionButton({
       onClick={onClick}
       disabled={disabled || (state !== "default" && state !== "selected")}
       className={`${stateClass[resolved]} ${className}`}
+      translate="no"
     >
       <span className="block text-base font-semibold">{label}</span>
       {sublabel ? (

@@ -1,0 +1,2162 @@
+[
+{
+"mn": "Зургийн тоо",
+"ctx": "components/admin/zip-import-summary.tsx"
+},
+{
+"mn": "Хариултын төлөв",
+"ctx": "components/admin/zip-import-summary.tsx"
+},
+{
+"mn": "Эх бичвэрийн төлөв",
+"ctx": "components/admin/zip-import-summary.tsx"
+},
+{
+"mn": "Ноцтой алдаа — оруулах боломжгүй",
+"ctx": "components/admin/zip-import-summary.tsx"
+},
+{
+"mn": "Анхааруулга — оруулж болно",
+"ctx": "components/admin/zip-import-summary.tsx"
+},
+{
+"mn": "Бүх шаардлагатай өгөгдөл бэлэн.",
+"ctx": "components/admin/zip-import-summary.tsx"
+},
+{
+"mn": "Шалгалтын алдаа (",
+"ctx": "components/admin/zip-import-validation-errors.tsx"
+},
+{
+"mn": "Дараах алдааг зассны дараа дахин «Шалгах» товчийг дарна уу.",
+"ctx": "components/admin/zip-import-validation-errors.tsx"
+},
+{
+"mn": "Байх ёстой",
+"ctx": "components/admin/zip-import-validation-errors.tsx"
+},
+{
+"mn": "Байгаа нь",
+"ctx": "components/admin/zip-import-validation-errors.tsx"
+},
+{
+"mn": "Admin preview — энэ хичээл олон нийтэд харагдахгүй.",
+"ctx": "components/admin-preview-banner.tsx"
+},
+{
+"mn": "Inquiry амжилттай илгээгдлээ.",
+"ctx": "components/b2b/school-inquiry-form.tsx"
+},
+{
+"mn": "Бид тантай удахгүй холбогдоно.",
+"ctx": "components/b2b/school-inquiry-form.tsx"
+},
+{
+"mn": "Дараагийн алхам: demo call → organization setup → pilot classroom.",
+"ctx": "components/b2b/school-inquiry-form.tsx"
+},
+{
+"mn": "Хууллаа!",
+"ctx": "components/b2b/school-inquiry-form.tsx"
+},
+{
+"mn": "Жишээ: Shine Mongol Training Center",
+"ctx": "components/b2b/school-inquiry-form.tsx"
+},
+{
+"mn": "Сургалтын төвийн хэрэгцээ, demo хүсэлт, асуулт...",
+"ctx": "components/b2b/school-inquiry-form.tsx"
+},
+{
+"mn": "Анги, оюутны бүртгэл",
+"ctx": "components/b2b/teacher-dashboard-view.tsx"
+},
+{
+"mn": "Анги үүсгээд оюутнуудаа имэйлээр эсвэл жагсаалтаар нэг дор урина.",
+"ctx": "components/b2b/teacher-dashboard-view.tsx"
+},
+{
+"mn": "Даалгавар оноох",
+"ctx": "components/b2b/teacher-dashboard-view.tsx"
+},
+{
+"mn": "HSK түвшин бүрийн хичээлээс сонгож, хугацаатай даалгавар өгнө.",
+"ctx": "components/b2b/teacher-dashboard-view.tsx"
+},
+{
+"mn": "Ахицын хяналт",
+"ctx": "components/b2b/teacher-dashboard-view.tsx"
+},
+{
+"mn": "Хэн дуусгасан, хэн хоцорч байгаа, дасгалын дундаж оноог хичээл тус бүрээр харна.",
+"ctx": "components/b2b/teacher-dashboard-view.tsx"
+},
+{
+"mn": "Тайлан татах",
+"ctx": "components/b2b/teacher-dashboard-view.tsx"
+},
+{
+"mn": "Ангийн гүйцэтгэлийг тайлан болгон гаргаж, хэлтэс дээрээ хуваалцана.",
+"ctx": "components/b2b/teacher-dashboard-view.tsx"
+},
+{
+"mn": "Ангийн тайлан",
+"ctx": "components/b2b/teacher-dashboard-view.tsx"
+},
+{
+"mn": "Даалгаврууд",
+"ctx": "components/b2b/teacher-dashboard-view.tsx"
+},
+{
+"mn": "Миний ангиуд",
+"ctx": "components/b2b/teacher-dashboard-view.tsx"
+},
+{
+"mn": "Багшийн самбар",
+"ctx": "components/b2b/teacher-dashboard-view.tsx"
+},
+{
+"mn": "Багшийн самбарт хандахын тулд нэвтэрнэ үү.",
+"ctx": "components/b2b/teacher-dashboard-view.tsx"
+},
+{
+"mn": "Танилцуулга үзэх",
+"ctx": "components/b2b/teacher-dashboard-view.tsx"
+},
+{
+"mn": "Самбарыг ачаалж байна…",
+"ctx": "components/b2b/teacher-dashboard-view.tsx"
+},
+{
+"mn": "Анги үүсгэж, оюутнуудаа урьж, даалгавар оноон, ахицыг нь нэг дороос хянана. Эхлэхийн тулд багшийн профайлаа үүсгэнэ үү — нэг минут болно.",
+"ctx": "components/b2b/teacher-dashboard-view.tsx"
+},
+{
+"mn": "Багшийн профайл үүсгэх →",
+"ctx": "components/b2b/teacher-dashboard-view.tsx"
+},
+{
+"mn": "Хичээлүүдийг үзэх",
+"ctx": "components/b2b/teacher-dashboard-view.tsx"
+},
+{
+"mn": "Анги, даалгавар, сурагчийн ахицыг нэг дор хянах хэсэг.",
+"ctx": "components/b2b/teacher-dashboard-view.tsx"
+},
+{
+"mn": "Миний байгууллагууд",
+"ctx": "components/b2b/teacher-dashboard-view.tsx"
+},
+{
+"mn": "Самбар нээх →",
+"ctx": "components/b2b/teacher-dashboard-view.tsx"
+},
+{
+"mn": "Байгууллагын бүртгэл хараахан холбогдоогүй байна.",
+"ctx": "components/b2b/teacher-dashboard-view.tsx"
+},
+{
+"mn": "Сургалтын төв / байгууллага холбох хүсэлт илгээх",
+"ctx": "components/b2b/teacher-dashboard-view.tsx"
+},
+{
+"mn": "Байгууллагын туршилт —",
+"ctx": "components/b2b/teacher-dashboard-view.tsx"
+},
+{
+"mn": "Хувийн ангиуд",
+"ctx": "components/b2b/teacher-dashboard-view.tsx"
+},
+{
+"mn": "Одоогоор хувийн анги алга.",
+"ctx": "components/b2b/teacher-dashboard-view.tsx"
+},
+{
+"mn": "Хувийн анги үүсгэх →",
+"ctx": "components/b2b/teacher-dashboard-view.tsx"
+},
+{
+"mn": "Байгууллагын анги алга. Байгууллагад нэгдэх эсвэл байгууллагын самбараас шинэ анги үүсгэнэ үү.",
+"ctx": "components/b2b/teacher-dashboard-view.tsx"
+},
+{
+"mn": "Байгууллагын анги үүсгэх →",
+"ctx": "components/b2b/teacher-dashboard-view.tsx"
+},
+{
+"mn": "Ангиуд",
+"ctx": "components/b2b/teacher-dashboard-view.tsx"
+},
+{
+"mn": "Сурагчид",
+"ctx": "components/b2b/teacher-dashboard-view.tsx"
+},
+{
+"mn": "даалгаврын үр дүн",
+"ctx": "components/b2b/teacher-dashboard-view.tsx"
+},
+{
+"mn": "Ангийн сүүлийн үйл ажиллагаа",
+"ctx": "components/b2b/teacher-dashboard-view.tsx"
+},
+{
+"mn": "Одоогоор бүртгэгдсэн үйл ажиллагаа алга.",
+"ctx": "components/b2b/teacher-dashboard-view.tsx"
+},
+{
+"mn": "Анхаарал шаардсан ангиуд",
+"ctx": "components/b2b/teacher-dashboard-view.tsx"
+},
+{
+"mn": "Түргэн тайлан",
+"ctx": "components/b2b/teacher-dashboard-view.tsx"
+},
+{
+"mn": "Ангийн ахиц, даалгаврын гүйцэтгэл, татаж авах боломжтой тайлан.",
+"ctx": "components/b2b/teacher-dashboard-view.tsx"
+},
+{
+"mn": "Ангийн тайлан нээх →",
+"ctx": "components/b2b/teacher-dashboard-view.tsx"
+},
+{
+"mn": "Ангитай ажиллах зөвлөмж",
+"ctx": "components/b2b/teacher-dashboard-view.tsx"
+},
+{
+"mn": "Email provider тохируулаагүй байна. Invite link copy fallback ашиглана уу.",
+"ctx": "components/invitations/send-invite-email-button.tsx"
+},
+{
+"mn": "Email provider тохируулаагүй бол skipped статус гарч, invite link copy fallback ашиглана.",
+"ctx": "components/invitations/send-invite-email-button.tsx"
+},
+{
+"mn": "Урилга ачааллаж байна…",
+"ctx": "components/organization/invite-accept-view.tsx"
+},
+{
+"mn": "Урилга амжилттай",
+"ctx": "components/organization/invite-accept-view.tsx"
+},
+{
+"mn": "Та classroom-д амжилттай нэгдлээ.",
+"ctx": "components/organization/invite-accept-view.tsx"
+},
+{
+"mn": "Та байгууллагад амжилттай нэгдлээ.",
+"ctx": "components/organization/invite-accept-view.tsx"
+},
+{
+"mn": "Миний даалгавар →",
+"ctx": "components/organization/invite-accept-view.tsx"
+},
+{
+"mn": "Урилга олдсонгүй",
+"ctx": "components/organization/invite-accept-view.tsx"
+},
+{
+"mn": "Энэ link хугацаа дууссан эсвэл аль хэдийн ашиглагдсан байж магадгүй. Байгууллагын админтай холбогдоно уу.",
+"ctx": "components/organization/invite-accept-view.tsx"
+},
+{
+"mn": "Таныг Бөөндөө Сурцгаая platform-д урьсан байна",
+"ctx": "components/organization/invite-accept-view.tsx"
+},
+{
+"mn": "Та email invitation link-ээр орж ирлээ.",
+"ctx": "components/organization/invite-accept-view.tsx"
+},
+{
+"mn": "classroom-д сурагчаар нэгдэх урилга.",
+"ctx": "components/organization/invite-accept-view.tsx"
+},
+{
+"mn": "байгууллагад",
+"ctx": "components/organization/invite-accept-view.tsx"
+},
+{
+"mn": "эрхээр урилга.",
+"ctx": "components/organization/invite-accept-view.tsx"
+},
+{
+"mn": "Нэр:",
+"ctx": "components/organization/invite-accept-view.tsx"
+},
+{
+"mn": "Имэйл:",
+"ctx": "components/organization/invite-accept-view.tsx"
+},
+{
+"mn": "Хүчинтэй хугацаа:",
+"ctx": "components/organization/invite-accept-view.tsx"
+},
+{
+"mn": "Энэ урилга",
+"ctx": "components/organization/invite-accept-view.tsx"
+},
+{
+"mn": "хаягт зориулагдсан. Өөр account-аар accept хийх гэж байгаа бол байгууллагатайгаа шалгана уу.",
+"ctx": "components/organization/invite-accept-view.tsx"
+},
+{
+"mn": "Баталгаажуулж байна…",
+"ctx": "components/organization/invite-accept-view.tsx"
+},
+{
+"mn": "Session шалгаж байна…",
+"ctx": "components/organization/invite-accept-view.tsx"
+},
+{
+"mn": "Нэвтэрсний дараа байгууллага харагдана.",
+"ctx": "components/organization/organization-home-view.tsx"
+},
+{
+"mn": "Сургалтын төв, сургуулийн multi-teacher team dashboard.",
+"ctx": "components/organization/organization-home-view.tsx"
+},
+{
+"mn": "Та одоогоор байгууллагад холбогдоогүй байна.",
+"ctx": "components/organization/organization-home-view.tsx"
+},
+{
+"mn": "Байгууллагын багш, менежер, туслах хэрэглэгчдийг CSV-ээр бөөнөөр нэмнэ.",
+"ctx": "components/organization/organization-members-import-view.tsx"
+},
+{
+"mn": "Pilot эхлүүлэхэд шаардлагатай байгууллага, багш, classroom, assignment тохиргоог алхамчилж бэлдэнэ.",
+"ctx": "components/organization/organization-setup-wizard-view.tsx"
+},
+{
+"mn": "Жишээ: 2 classroom, 20 students, HSK5 pilot 4 weeks",
+"ctx": "components/organization/organization-setup-wizard-view.tsx"
+},
+{
+"mn": "Бичиг ямар болзлоор олгогддог вэ",
+"ctx": "components/reports/certificate-picker.tsx"
+},
+{
+"mn": "Хичээл дуусгасан сурагчид",
+"ctx": "components/reports/certificate-picker.tsx"
+},
+{
+"mn": "Дор хаяж нэг хичээлээ дуусгасан сурагчид энд харагдана. Курс дээр дарвал болзол шалгагдаж, хангасан бол бичиг хэвлэгдэнэ.",
+"ctx": "components/reports/certificate-picker.tsx"
+},
+{
+"mn": "Сурагчийн нэрээр хайх…",
+"ctx": "components/reports/certificate-picker.tsx"
+},
+{
+"mn": "Сурагчийн нэрээр хайх",
+"ctx": "components/reports/certificate-picker.tsx"
+},
+{
+"mn": "Нэг ч сурагч хичээл дуусгасан бүртгэлгүй байна — олгох бичиг алга.",
+"ctx": "components/reports/certificate-picker.tsx"
+},
+{
+"mn": "Энэ хайлтад тохирох сурагч олдсонгүй.",
+"ctx": "components/reports/certificate-picker.tsx"
+},
+{
+"mn": "нэр бүртгэгдээгүй — бичиг олгох боломжгүй",
+"ctx": "components/reports/certificate-picker.tsx"
+},
+{
+"mn": "сурагчийн эхний",
+"ctx": "components/reports/certificate-picker.tsx"
+},
+{
+"mn": "нь харагдаж байна. Нэрээр хайж нарийвчилна уу.",
+"ctx": "components/reports/certificate-picker.tsx"
+},
+{
+"mn": "Хангасан",
+"ctx": "components/reports/certificate-refusal.tsx"
+},
+{
+"mn": "Хангаагүй",
+"ctx": "components/reports/certificate-refusal.tsx"
+},
+{
+"mn": "Шалгах өгөгдөл алга",
+"ctx": "components/reports/certificate-refusal.tsx"
+},
+{
+"mn": "Бичиг олгох боломжгүй",
+"ctx": "components/reports/certificate-refusal.tsx"
+},
+{
+"mn": "Энэ сурагч тухайн курсын дүүргэлтийн болзлыг бүрэн хангаагүй тул курс дүүргэлтийн бичиг хэвлэгдэхгүй. Дутуу зүйлийг доор тодорхой бичив.",
+"ctx": "components/reports/certificate-refusal.tsx"
+},
+{
+"mn": "Аппын сургалтын бүртгэлд үндэслэн гаргав",
+"ctx": "components/reports/certificate-sheet.tsx"
+},
+{
+"mn": "Энэхүү бичгийг",
+"ctx": "components/reports/certificate-sheet.tsx"
+},
+{
+"mn": "нь дараах курсын шаардлагыг хангасан тул олгов:",
+"ctx": "components/reports/certificate-sheet.tsx"
+},
+{
+"mn": "Бүлэг:",
+"ctx": "components/reports/certificate-sheet.tsx"
+},
+{
+"mn": "Хувь тооцогдоогүй",
+"ctx": "components/reports/certificate-sheet.tsx"
+},
+{
+"mn": "Оролдлого уншигдаагүй",
+"ctx": "components/reports/certificate-sheet.tsx"
+},
+{
+"mn": "Курсын дүн",
+"ctx": "components/reports/certificate-sheet.tsx"
+},
+{
+"mn": "Олгосон огноо",
+"ctx": "components/reports/certificate-sheet.tsx"
+},
+{
+"mn": "Сүүлийн хичээл дуусгасан:",
+"ctx": "components/reports/certificate-sheet.tsx"
+},
+{
+"mn": "Багш / сургалтын менежер",
+"ctx": "components/reports/certificate-sheet.tsx"
+},
+{
+"mn": "Гарын үсэг, нэр — гараар бөглөнө",
+"ctx": "components/reports/certificate-sheet.tsx"
+},
+{
+"mn": "Энэ бичиг ямар болзлоор олгогдов:",
+"ctx": "components/reports/certificate-sheet.tsx"
+},
+{
+"mn": "Үнэлгээ тооцогдсон сурагч алга тул тархалт харуулах зүйл алга.",
+"ctx": "components/reports/distribution-bars.tsx"
+},
+{
+"mn": "Markdown хуулах",
+"ctx": "components/reports/report-actions.tsx"
+},
+{
+"mn": "Хэвлэх (A4)",
+"ctx": "components/reports/report-actions.tsx"
+},
+{
+"mn": "Хуулагдлаа",
+"ctx": "components/reports/report-actions.tsx"
+},
+{
+"mn": "Markdown татаж авах",
+"ctx": "components/reports/report-actions.tsx"
+},
+{
+"mn": "Хуулж чадсангүй — хөтөч зөвшөөрөөгүй байна. «Markdown татаж авах» товчийг ашиглана уу.",
+"ctx": "components/reports/report-actions.tsx"
+},
+{
+"mn": "Татах холбоос үүсгэж чадсангүй.",
+"ctx": "components/teacher/assignment-attachment-link.tsx"
+},
+{
+"mn": "Бэлтгэж байна…",
+"ctx": "components/teacher/assignment-attachment-link.tsx"
+},
+{
+"mn": "· холбоос 10 минут хүчинтэй",
+"ctx": "components/teacher/assignment-attachment-link.tsx"
+},
+{
+"mn": "Файл хавсаргах (заавал биш)",
+"ctx": "components/teacher/assignment-attachment-picker.tsx"
+},
+{
+"mn": "Даалгавар олдсонгүй.",
+"ctx": "components/teacher/assignment-detail-view.tsx"
+},
+{
+"mn": "Багшийн даалгавар",
+"ctx": "components/teacher/assignment-detail-view.tsx"
+},
+{
+"mn": "Дуусах хугацаа:",
+"ctx": "components/teacher/assignment-detail-view.tsx"
+},
+{
+"mn": "Энэ бол нэг сурагчид онилж өгсөн даалгавар. Ангийн бусад сурагчид үүнийг огт харахгүй — доорх жагсаалтад бүх сурагч харагдах ч ажиллах мөр зөвхөн зорилтот сурагчид үүссэн.",
+"ctx": "components/teacher/assignment-detail-view.tsx"
+},
+{
+"mn": "Гүйцэтгэлийн хувь",
+"ctx": "components/teacher/assignment-detail-view.tsx"
+},
+{
+"mn": "Сурагчдын дүн",
+"ctx": "components/teacher/assignment-detail-view.tsx"
+},
+{
+"mn": "Даалгаврын тайлан",
+"ctx": "components/teacher/assignment-detail-view.tsx"
+},
+{
+"mn": "Ангийн хуудас",
+"ctx": "components/teacher/assignment-detail-view.tsx"
+},
+{
+"mn": "Ирцийн бүртгэлийг уншиж чадсангүй.",
+"ctx": "components/teacher/attendance-register.tsx"
+},
+{
+"mn": "Хадгалахын тулд ядаж нэг сурагчийн ирцийг тэмдэглэнэ үү.",
+"ctx": "components/teacher/attendance-register.tsx"
+},
+{
+"mn": "← Ангийн хуудас",
+"ctx": "components/teacher/attendance-register.tsx"
+},
+{
+"mn": "Ирцийн бүртгэл",
+"ctx": "components/teacher/attendance-register.tsx"
+},
+{
+"mn": "-аар",
+"ctx": "components/teacher/attendance-register.tsx"
+},
+{
+"mn": "Хичээлийн өдөр",
+"ctx": "components/teacher/attendance-register.tsx"
+},
+{
+"mn": "Тэмдэглээгүйг «Ирсэн» болгох",
+"ctx": "components/teacher/attendance-register.tsx"
+},
+{
+"mn": "(өнөөдөр)",
+"ctx": "components/teacher/attendance-register.tsx"
+},
+{
+"mn": "· Энэ өдрийн ирц хараахан бүртгэгдээгүй",
+"ctx": "components/teacher/attendance-register.tsx"
+},
+{
+"mn": "Ангид сурагч алга",
+"ctx": "components/teacher/attendance-register.tsx"
+},
+{
+"mn": "Ирц бүртгэхийн тулд эхлээд сурагчдаа нэмнэ үү. Урилга илгээсэн боловч хараахан бүртгэлээ үүсгээгүй сурагчийн ирцийг ч тэмдэглэж болно.",
+"ctx": "components/teacher/attendance-register.tsx"
+},
+{
+"mn": "Сурагч нэмэх",
+"ctx": "components/teacher/attendance-register.tsx"
+},
+{
+"mn": "Сурагчид (",
+"ctx": "components/teacher/attendance-register.tsx"
+},
+{
+"mn": "тэмдэглэсэн",
+"ctx": "components/teacher/attendance-register.tsx"
+},
+{
+"mn": "Бүртгэлээ хараахан үүсгээгүй",
+"ctx": "components/teacher/attendance-register.tsx"
+},
+{
+"mn": "Тэмдэглээгүй",
+"ctx": "components/teacher/attendance-register.tsx"
+},
+{
+"mn": "Жишээ нь: эмчид үзүүлсэн",
+"ctx": "components/teacher/attendance-register.tsx"
+},
+{
+"mn": "Ирц хадгалах",
+"ctx": "components/teacher/attendance-register.tsx"
+},
+{
+"mn": "Хадгалаагүй өөрчлөлт байна",
+"ctx": "components/teacher/attendance-register.tsx"
+},
+{
+"mn": "Тэмдэглээгүй сурагчийн ирц хадгалагдахгүй — «бүртгээгүй» гэж үлдэнэ. Нэг өдрийн ирцийг дахин хадгалахад хуучин бүртгэл шинэчлэгдэнэ.",
+"ctx": "components/teacher/attendance-register.tsx"
+},
+{
+"mn": "Ирц бүртгээгүй тул тооцоолох боломжгүй",
+"ctx": "components/teacher/attendance-summary-card.tsx"
+},
+{
+"mn": "хоногийн ирц",
+"ctx": "components/teacher/attendance-summary-card.tsx"
+},
+{
+"mn": "Ангид сурагч алга. Эхлээд сурагчдаа нэмбэл ирцийн дүн энд гарна.",
+"ctx": "components/teacher/attendance-summary-card.tsx"
+},
+{
+"mn": "Энэ хугацаанд ирц бүртгээгүй байна. Дээрх огноог сонгоод эхний бүртгэлээ хийвэл дүн шинжилгээ энд гарч ирнэ.",
+"ctx": "components/teacher/attendance-summary-card.tsx"
+},
+{
+"mn": "Ангийн дундаж ирц",
+"ctx": "components/teacher/attendance-summary-card.tsx"
+},
+{
+"mn": "Чөлөөтэй өдрийг тооцохгүй",
+"ctx": "components/teacher/attendance-summary-card.tsx"
+},
+{
+"mn": "Бүртгэсэн хичээл",
+"ctx": "components/teacher/attendance-summary-card.tsx"
+},
+{
+"mn": "Хамгийн сүүлд:",
+"ctx": "components/teacher/attendance-summary-card.tsx"
+},
+{
+"mn": "Дүнтэй сурагч",
+"ctx": "components/teacher/attendance-summary-card.tsx"
+},
+{
+"mn": "Бусдын ирц хараахан бүртгэгдээгүй",
+"ctx": "components/teacher/attendance-summary-card.tsx"
+},
+{
+"mn": "Хамгийн их анхаарал шаардаж буй сурагчид",
+"ctx": "components/teacher/attendance-summary-card.tsx"
+},
+{
+"mn": "Ирц тасалдсан сурагч алга — бүгд тогтмол ирж байна.",
+"ctx": "components/teacher/attendance-summary-card.tsx"
+},
+{
+"mn": "өдөр тасалсан",
+"ctx": "components/teacher/attendance-summary-card.tsx"
+},
+{
+"mn": "Ирц",
+"ctx": "components/teacher/attendance-summary-card.tsx"
+},
+{
+"mn": "Ирсэн",
+"ctx": "components/teacher/attendance-summary-card.tsx"
+},
+{
+"mn": "Хоцорсон",
+"ctx": "components/teacher/attendance-summary-card.tsx"
+},
+{
+"mn": "Тасалсан",
+"ctx": "components/teacher/attendance-summary-card.tsx"
+},
+{
+"mn": "Чөлөөтэй",
+"ctx": "components/teacher/attendance-summary-card.tsx"
+},
+{
+"mn": "Сүүлийн хичээл",
+"ctx": "components/teacher/attendance-summary-card.tsx"
+},
+{
+"mn": "Бүртгээгүй",
+"ctx": "components/teacher/attendance-summary-card.tsx"
+},
+{
+"mn": "«—» гэдэг нь тухайн сурагчийн ирц хараахан бүртгэгдээгүй гэсэн үг. Ирцийн хувь = (ирсэн + хоцорсон) ÷ (ирсэн + хоцорсон + тасалсан).",
+"ctx": "components/teacher/attendance-summary-card.tsx"
+},
+{
+"mn": "Бүтэн хичээл",
+"ctx": "components/teacher/class-assignment-composer.tsx"
+},
+{
+"mn": "Хичээлийн жагсаалтыг татаж чадсангүй.",
+"ctx": "components/teacher/class-assignment-composer.tsx"
+},
+{
+"mn": "сонгосон",
+"ctx": "components/teacher/class-assignment-composer.tsx"
+},
+{
+"mn": "Хичээл сонгоно уу.",
+"ctx": "components/teacher/class-assignment-composer.tsx"
+},
+{
+"mn": "Даалгавар үүсгэж чадсангүй.",
+"ctx": "components/teacher/class-assignment-composer.tsx"
+},
+{
+"mn": "Бэлэн хичээл өгөх",
+"ctx": "components/teacher/class-assignment-composer.tsx"
+},
+{
+"mn": "Өөрөө даалгавар бичих",
+"ctx": "components/teacher/class-assignment-composer.tsx"
+},
+{
+"mn": "Даалгаврын төрөл",
+"ctx": "components/teacher/class-assignment-composer.tsx"
+},
+{
+"mn": "Хичээл хавсаргахгүй — ангид хийх буюу гэрийн даалгаврыг өөрийн үгээр бичнэ. Сурагчид даалгаврын жагсаалтдаа гарчиг, зааврыг харна.",
+"ctx": "components/teacher/class-assignment-composer.tsx"
+},
+{
+"mn": "Жишээ: 3-р бүлгийн үгийн цээж бичиг",
+"ctx": "components/teacher/class-assignment-composer.tsx"
+},
+{
+"mn": "Юу хийх, хэрхэн шалгахаа бичнэ үү.",
+"ctx": "components/teacher/class-assignment-composer.tsx"
+},
+{
+"mn": "Дуусах хугацаа (заавал биш)",
+"ctx": "components/teacher/class-assignment-composer.tsx"
+},
+{
+"mn": "Хэнд өгөх",
+"ctx": "components/teacher/class-assignment-composer.tsx"
+},
+{
+"mn": "Бүх анги",
+"ctx": "components/teacher/class-assignment-composer.tsx"
+},
+{
+"mn": "Энэ даалгавар болон хавсралтыг зөвхөн",
+"ctx": "components/teacher/class-assignment-composer.tsx"
+},
+{
+"mn": "харна. Ангийн бусад сурагчид гарчиг нь ч харагдахгүй.",
+"ctx": "components/teacher/class-assignment-composer.tsx"
+},
+{
+"mn": "Ангийн бүх сурагч энэ даалгаврыг харна.",
+"ctx": "components/teacher/class-assignment-composer.tsx"
+},
+{
+"mn": "Нэг сурагчид онилж өгөхийн тулд тухайн сурагчийн апп дээрх бүртгэлийг ангийн жагсаалттай холбосон байх шаардлагатай.",
+"ctx": "components/teacher/class-assignment-composer.tsx"
+},
+{
+"mn": "Өгч байна…",
+"ctx": "components/teacher/class-assignment-composer.tsx"
+},
+{
+"mn": "Ангид даалгавар өгөх",
+"ctx": "components/teacher/class-assignment-composer.tsx"
+},
+{
+"mn": "Хавсаргасан файлыг зөвхөн энэ даалгаврыг харж буй хүн татна.",
+"ctx": "components/teacher/class-assignment-composer.tsx"
+},
+{
+"mn": "Шалгалт сонгоно уу.",
+"ctx": "components/teacher/class-exam-composer.tsx"
+},
+{
+"mn": "Дуусах огноо нь товлосон огнооноос өмнө байж болохгүй.",
+"ctx": "components/teacher/class-exam-composer.tsx"
+},
+{
+"mn": "Шалгалт товлож чадсангүй.",
+"ctx": "components/teacher/class-exam-composer.tsx"
+},
+{
+"mn": "Загвар шалгалт сонгох",
+"ctx": "components/teacher/class-exam-composer.tsx"
+},
+{
+"mn": "Шалгалт олдсонгүй",
+"ctx": "components/teacher/class-exam-composer.tsx"
+},
+{
+"mn": "Жишээ: Намрын улирлын HSK 4 шалгалт",
+"ctx": "components/teacher/class-exam-composer.tsx"
+},
+{
+"mn": "Шалгалтын өдөр",
+"ctx": "components/teacher/class-exam-composer.tsx"
+},
+{
+"mn": "Энэ өдрөөс хойш өгсөн оролдлогыг ангийн дүнд тооцно.",
+"ctx": "components/teacher/class-exam-composer.tsx"
+},
+{
+"mn": "Товлож байна…",
+"ctx": "components/teacher/class-exam-composer.tsx"
+},
+{
+"mn": "Ангид шалгалт товлох",
+"ctx": "components/teacher/class-exam-composer.tsx"
+},
+{
+"mn": "Нэг шалгалтыг нэг ангид нэг өдөрт давхар товлохгүй. Дахин товлох бол өдрөө өөрчилнө үү.",
+"ctx": "components/teacher/class-exam-composer.tsx"
+},
+{
+"mn": "Өгөөгүй",
+"ctx": "components/teacher/class-exam-learner-card.tsx"
+},
+{
+"mn": "Тэнцсэн",
+"ctx": "components/teacher/class-exam-learner-card.tsx"
+},
+{
+"mn": "Тэнцээгүй",
+"ctx": "components/teacher/class-exam-learner-card.tsx"
+},
+{
+"mn": "Дүн хүлээгдэж байна",
+"ctx": "components/teacher/class-exam-learner-card.tsx"
+},
+{
+"mn": "Багшийн товлосон шалгалт",
+"ctx": "components/teacher/class-exam-learner-card.tsx"
+},
+{
+"mn": "Ангид чинь товлогдсон HSK загвар шалгалт.",
+"ctx": "components/teacher/class-exam-learner-card.tsx"
+},
+{
+"mn": "Өдөр товлоогүй",
+"ctx": "components/teacher/class-exam-learner-card.tsx"
+},
+{
+"mn": "Шалгалт өгөх",
+"ctx": "components/teacher/class-exam-learner-card.tsx"
+},
+{
+"mn": "Ангийн дундаж",
+"ctx": "components/teacher/class-exam-results.tsx"
+},
+{
+"mn": "Өгсөн хүн алга",
+"ctx": "components/teacher/class-exam-results.tsx"
+},
+{
+"mn": "Тэнцсэн хувь",
+"ctx": "components/teacher/class-exam-results.tsx"
+},
+{
+"mn": "Тэнцэх босго",
+"ctx": "components/teacher/class-exam-results.tsx"
+},
+{
+"mn": "сурагчийн бичих хэсэг дүгнэгдээгүй тул тэнцсэн эсэх нь тодорхойгүй. Тэднийг тэнцсэн хувьд тооцоогүй.",
+"ctx": "components/teacher/class-exam-results.tsx"
+},
+{
+"mn": "Шалгалт өгсөн (",
+"ctx": "components/teacher/class-exam-results.tsx"
+},
+{
+"mn": "Одоогоор хэн ч өгөөгүй байна.",
+"ctx": "components/teacher/class-exam-results.tsx"
+},
+{
+"mn": "Хувь",
+"ctx": "components/teacher/class-exam-results.tsx"
+},
+{
+"mn": "Дүн",
+"ctx": "components/teacher/class-exam-results.tsx"
+},
+{
+"mn": "Бичих хэсэг дүгнэгдээгүй",
+"ctx": "components/teacher/class-exam-results.tsx"
+},
+{
+"mn": "Өгөөгүй (",
+"ctx": "components/teacher/class-exam-results.tsx"
+},
+{
+"mn": "Эдгээр сурагчийг 0 оноотой гэж тооцоогүй — дундаж, тэнцсэн хувиас гадуур байна.",
+"ctx": "components/teacher/class-exam-results.tsx"
+},
+{
+"mn": "Бүх сурагч шалгалтаа өгсөн байна.",
+"ctx": "components/teacher/class-exam-results.tsx"
+},
+{
+"mn": "· бүртгэл холбогдоогүй",
+"ctx": "components/teacher/class-exam-results.tsx"
+},
+{
+"mn": "Төлөв солих:",
+"ctx": "components/teacher/class-exam-results.tsx"
+},
+{
+"mn": "Устгахыг баталгаажуулах",
+"ctx": "components/teacher/class-exam-results.tsx"
+},
+{
+"mn": "Ангийн загвар шалгалт",
+"ctx": "components/teacher/class-exam-view.tsx"
+},
+{
+"mn": "HSK загвар шалгалтыг ангиараа товлож, хэн өгсөн, ангийн дундаж хэд, тэнцсэн хувь хэд болохыг нэг дэлгэцээс харна.",
+"ctx": "components/teacher/class-exam-view.tsx"
+},
+{
+"mn": "Шалгалт товлох",
+"ctx": "components/teacher/class-exam-view.tsx"
+},
+{
+"mn": "Одоогоор товлосон шалгалт алга. Дээрх маягтаар эхний шалгалтаа товлоно уу.",
+"ctx": "components/teacher/class-exam-view.tsx"
+},
+{
+"mn": "Урисан",
+"ctx": "components/teacher/class-progress-table.tsx"
+},
+{
+"mn": "Хасагдсан",
+"ctx": "components/teacher/class-progress-table.tsx"
+},
+{
+"mn": "Энэ ангид сурагч бүртгэгдээгүй.",
+"ctx": "components/teacher/class-progress-table.tsx"
+},
+{
+"mn": "Сүүлийн дасгал",
+"ctx": "components/teacher/class-progress-table.tsx"
+},
+{
+"mn": "Сүүлд идэвхтэй",
+"ctx": "components/teacher/class-progress-table.tsx"
+},
+{
+"mn": "Үнэлгээ нь сүүлийн дасгалын оноо, даалгаврын гүйцэтгэл, сурсан үгээс бүрдэнэ.",
+"ctx": "components/teacher/class-progress-table.tsx"
+},
+{
+"mn": "Нэг жагсаалтаар харах",
+"ctx": "components/teacher/class-progress-table.tsx"
+},
+{
+"mn": "Үнэлгээгээр бүлэглэх",
+"ctx": "components/teacher/class-progress-table.tsx"
+},
+{
+"mn": "Бөөндөө Сурцгаая · Ангийн тайлан",
+"ctx": "components/teacher/class-report-header.tsx"
+},
+{
+"mn": "Хичээллэх хэлбэр",
+"ctx": "components/teacher/class-report-header.tsx"
+},
+{
+"mn": "Хуваарь",
+"ctx": "components/teacher/class-report-header.tsx"
+},
+{
+"mn": "Хамрах хугацаа",
+"ctx": "components/teacher/class-report-header.tsx"
+},
+{
+"mn": "Бөөндөө Сурцгаая — сургалтын бүртгэлээс автоматаар гаргасан ангийн тайлан. Бүх тоо өгөгдлийн сангаас уншигдсан; хэмжигдээгүй зүйлийг «—» гэж тэмдэглэв.",
+"ctx": "components/teacher/class-report-sheet.tsx"
+},
+{
+"mn": "Сурагч бүрээр",
+"ctx": "components/teacher/class-report-student-table.tsx"
+},
+{
+"mn": "Ангид бүртгэлтэй сурагч алга.",
+"ctx": "components/teacher/class-report-student-table.tsx"
+},
+{
+"mn": "Дасгалын дээд оноо",
+"ctx": "components/teacher/class-report-student-table.tsx"
+},
+{
+"mn": "Сүүлийн бүртгэл",
+"ctx": "components/teacher/class-report-student-table.tsx"
+},
+{
+"mn": "Апп-д холбогдоогүй — хэмжилт алга",
+"ctx": "components/teacher/class-report-student-table.tsx"
+},
+{
+"mn": "«—» гэдэг нь хэмжилт байхгүй гэсэн үг. Тэг гэсэн үг биш.",
+"ctx": "components/teacher/class-report-student-table.tsx"
+},
+{
+"mn": "«Дасгалын дээд оноо» нь тухайн сурагчийн даалгаврын дүнгээс хамгийн өндөр нь.",
+"ctx": "components/teacher/class-report-student-table.tsx"
+},
+{
+"mn": "«Сүүлийн бүртгэл» нь даалгаврын дүн хамгийн сүүлд бүртгэгдсэн огноо — апп ашигласан бүх үйлдлийг хамрахгүй.",
+"ctx": "components/teacher/class-report-student-table.tsx"
+},
+{
+"mn": "Ангийн хураангуй",
+"ctx": "components/teacher/class-report-summary.tsx"
+},
+{
+"mn": "Дуусгасан даалгаврын дүнгээр",
+"ctx": "components/teacher/class-report-summary.tsx"
+},
+{
+"mn": "Үнэлгээний тархалт",
+"ctx": "components/teacher/class-report-summary.tsx"
+},
+{
+"mn": "Үнэлгээ нийт",
+"ctx": "components/teacher/class-report-summary.tsx"
+},
+{
+"mn": "сурагчийн дундаас",
+"ctx": "components/teacher/class-report-summary.tsx"
+},
+{
+"mn": "сурагчид тооцогдсон.",
+"ctx": "components/teacher/class-report-summary.tsx"
+},
+{
+"mn": "Анги олдсонгүй.",
+"ctx": "components/teacher/class-report-view.tsx"
+},
+{
+"mn": "Тайлан ачаалахад алдаа гарлаа.",
+"ctx": "components/teacher/class-report-view.tsx"
+},
+{
+"mn": "Хэвлэхэд хажуугийн цэс, товчнууд хасагдаж, A4 цаасанд хар цагаанаар буулгана. Хөтчийн хэвлэх цонхонд «Headers and footers» сонголтыг унтраавал илүү цэвэр гарна.",
+"ctx": "components/teacher/class-report-view.tsx"
+},
+{
+"mn": "← Миний ангиуд",
+"ctx": "components/teacher/classroom-detail-view.tsx"
+},
+{
+"mn": "Анхаарах зүйл",
+"ctx": "components/teacher/classroom-detail-view.tsx"
+},
+{
+"mn": "Сурагчдын ахиц",
+"ctx": "components/teacher/classroom-detail-view.tsx"
+},
+{
+"mn": "Сурагч бүрийн сул тал",
+"ctx": "components/teacher/classroom-detail-view.tsx"
+},
+{
+"mn": "Сурагч хаана, ямар хичээл дээр алдаж байгаа нь хамгийн их алдсанаас эхэлж жагсана. Хажуугийн товчоор тэр хичээлийг тухайн сурагчид онилж давтуулна.",
+"ctx": "components/teacher/classroom-detail-view.tsx"
+},
+{
+"mn": "Бэлэн хичээлийг сонгож өгөх, эсвэл ангид хийх ажлаа өөрөө бичиж өгнө.",
+"ctx": "components/teacher/classroom-detail-view.tsx"
+},
+{
+"mn": "Хичээл хавсаргаагүй",
+"ctx": "components/teacher/classroom-detail-view.tsx"
+},
+{
+"mn": "Ангийн хэрэгсэл",
+"ctx": "components/teacher/classroom-detail-view.tsx"
+},
+{
+"mn": "Ирц, шалгалт, хэвлэх тайлан — тус тусдаа хуудсанд.",
+"ctx": "components/teacher/classroom-detail-view.tsx"
+},
+{
+"mn": "🗓 Ирцийн бүртгэл →",
+"ctx": "components/teacher/classroom-detail-view.tsx"
+},
+{
+"mn": "📝 Ангийн шалгалт →",
+"ctx": "components/teacher/classroom-detail-view.tsx"
+},
+{
+"mn": "🖨 Хэвлэх тайлан →",
+"ctx": "components/teacher/classroom-detail-view.tsx"
+},
+{
+"mn": "Сурагчдыг бөөнөөр оруулах →",
+"ctx": "components/teacher/classroom-detail-view.tsx"
+},
+{
+"mn": "Урилгууд →",
+"ctx": "components/teacher/classroom-detail-view.tsx"
+},
+{
+"mn": "Сурагч гараар нэмэх",
+"ctx": "components/teacher/classroom-detail-view.tsx"
+},
+{
+"mn": "Даалгаврын дэлгэрэнгүй маягт",
+"ctx": "components/teacher/classroom-detail-view.tsx"
+},
+{
+"mn": "Бүх тайлан",
+"ctx": "components/teacher/classroom-detail-view.tsx"
+},
+{
+"mn": "Classroom-д сурагчдыг CSV-ээр бөөнөөр нэмнэ.",
+"ctx": "components/teacher/classroom-students-import-view.tsx"
+},
+{
+"mn": "Шинэ анги үүсгэх",
+"ctx": "components/teacher/create-class-form.tsx"
+},
+{
+"mn": "Энэ classroom байгууллагын classroom хэлбэрээр үүснэ.",
+"ctx": "components/teacher/create-class-form.tsx"
+},
+{
+"mn": "Жишээ: HSK5 Morning Group",
+"ctx": "components/teacher/create-class-form.tsx"
+},
+{
+"mn": "Миний даалгаврууд",
+"ctx": "components/teacher/my-assignments-view.tsx"
+},
+{
+"mn": "Даалгавраа харахын тулд нэвтэрнэ үү.",
+"ctx": "components/teacher/my-assignments-view.tsx"
+},
+{
+"mn": "Багшийн танд өгсөн даалгаврууд",
+"ctx": "components/teacher/my-assignments-view.tsx"
+},
+{
+"mn": "Одоогоор даалгавар алга.",
+"ctx": "components/teacher/my-assignments-view.tsx"
+},
+{
+"mn": "Багш таны бүртгэлийг ангийн жагсаалттай холбосон эсэхийг шалгаарай.",
+"ctx": "components/teacher/my-assignments-view.tsx"
+},
+{
+"mn": "Зөвхөн танд",
+"ctx": "components/teacher/my-assignments-view.tsx"
+},
+{
+"mn": "Багш:",
+"ctx": "components/teacher/my-assignments-view.tsx"
+},
+{
+"mn": "Дасгалын оноо:",
+"ctx": "components/teacher/my-assignments-view.tsx"
+},
+{
+"mn": "Дууссан:",
+"ctx": "components/teacher/my-assignments-view.tsx"
+},
+{
+"mn": "Хичээлийг дахин үзэх",
+"ctx": "components/teacher/my-assignments-view.tsx"
+},
+{
+"mn": "Даалгаврыг эхлүүлэх",
+"ctx": "components/teacher/my-assignments-view.tsx"
+},
+{
+"mn": "Яаралтай зүйл алга — анги хэвийн явж байна.",
+"ctx": "components/teacher/needs-attention-card.tsx"
+},
+{
+"mn": "Асуулт бүрийн оролдлогоос",
+"ctx": "components/teacher/student-weak-spots-section.tsx"
+},
+{
+"mn": "Дасгалын оноогоор",
+"ctx": "components/teacher/student-weak-spots-section.tsx"
+},
+{
+"mn": "Оролдлого ба дасгалын оноогоор",
+"ctx": "components/teacher/student-weak-spots-section.tsx"
+},
+{
+"mn": "алдаа ·",
+"ctx": "components/teacher/student-weak-spots-section.tsx"
+},
+{
+"mn": "Энэ хичээлийг давтуулах",
+"ctx": "components/teacher/student-weak-spots-section.tsx"
+},
+{
+"mn": "Сул талыг тооцож байна…",
+"ctx": "components/teacher/student-weak-spots-section.tsx"
+},
+{
+"mn": "Бүх тоо сурагчийн бодит оролдлогоос гарсан. Оролдлого бүртгэгдээгүй бол энд тоо харагдахгүй.",
+"ctx": "components/teacher/student-weak-spots-section.tsx"
+},
+{
+"mn": "Эндээс өгсөн давталтыг ЗӨВХӨН тухайн сурагч харна — ангийн бусад сурагчид гарчиг, заавар, хавсралт нь харагдахгүй. Сурагчийн нэрийг даалгаврын гарчигт бичихгүй.",
+"ctx": "components/teacher/student-weak-spots-section.tsx"
+},
+{
+"mn": "Бүх сурагч дээр мэдээлэл хоосон байна. Сурагчид үнэхээр дасгал хийгээгүй байж болно, эсвэл багшид харуулах эрх нээгдээгүй байж болзошгүй — Supabase дээр 055_teacher_reads_student_attempts.sql засварыг ажиллуулсан эсэхийг шалгана уу.",
+"ctx": "components/teacher/student-weak-spots-section.tsx"
+},
+{
+"mn": "Давталтын дуусах хугацаа (заавал биш)",
+"ctx": "components/teacher/student-weak-spots-section.tsx"
+},
+{
+"mn": "Давталтад файл хавсаргах (заавал биш)",
+"ctx": "components/teacher/student-weak-spots-section.tsx"
+},
+{
+"mn": "оролдлого ·",
+"ctx": "components/teacher/student-weak-spots-section.tsx"
+},
+{
+"mn": "Мэдээлэл алга.",
+"ctx": "components/teacher/student-weak-spots-section.tsx"
+},
+{
+"mn": "Бүртгэгдсэн оролдлогод алдаа алга — давтуулах хичээл одоогоор байхгүй.",
+"ctx": "components/teacher/student-weak-spots-section.tsx"
+},
+{
+"mn": "Багш нарт",
+"ctx": "components/teacher/teacher-assignment-cta.tsx"
+},
+{
+"mn": "Багшийн assignment-д ашиглах — Lesson",
+"ctx": "components/teacher/teacher-assignment-cta.tsx"
+},
+{
+"mn": "Assignment үүсгэх (preview) →",
+"ctx": "components/teacher/teacher-assignment-cta.tsx"
+},
+{
+"mn": "← Багшийн хяналтын самбар",
+"ctx": "components/teacher/teacher-assignments-list.tsx"
+},
+{
+"mn": "Зөвхөн нэг сурагчид",
+"ctx": "components/teacher/teacher-assignments-list.tsx"
+},
+{
+"mn": "📎 Хавсралттай",
+"ctx": "components/teacher/teacher-assignments-list.tsx"
+},
+{
+"mn": "Даалгавар үүсгэх →",
+"ctx": "components/teacher/teacher-assignments-list.tsx"
+},
+{
+"mn": "Энэ хэсэгт нэвтрэх шаардлагатай.",
+"ctx": "components/teacher/teacher-auth-gate.tsx"
+},
+{
+"mn": "Одоогоор анги үүсгээгүй байна.",
+"ctx": "components/teacher/teacher-classes-list.tsx"
+},
+{
+"mn": "% гүйцэтгэл · дундаж",
+"ctx": "components/teacher/teacher-reports-view.tsx"
+},
+{
+"mn": "Багшийн profile",
+"ctx": "components/teacher/teacher-setup-form.tsx"
+},
+{
+"mn": "Нэвтэрсний дараа profile үүсгэнэ.",
+"ctx": "components/teacher/teacher-setup-form.tsx"
+},
+{
+"mn": "Classroom үүсгэхийн өмнө багшийн profile-оо хадгална.",
+"ctx": "components/teacher/teacher-setup-form.tsx"
+},
+{
+"mn": "Сургалтын төв, сургууль...",
+"ctx": "components/teacher/teacher-setup-form.tsx"
+},
+{
+"mn": "Organization account (multi-teacher team) дараагийн шатанд холбогдоно. Одоогоор organization text field нь teacher profile-д хадгалагдана.",
+"ctx": "components/teacher/teacher-setup-form.tsx"
+},
+{
+"mn": "Эхлэхэд юу мэдэх вэ",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "Удирдлагын хэсгийн бүтэц, аль цэс юуны төлөө байдаг талаар товч танилцуулга.",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "Зүүн талын цэс хоёр бүлэгтэй",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "«Контент» бүлэгт хичээл, бичлэг, импорт байна — өдөр бүр хэрэглэнэ. «Тайлан ба хэрэглэгч» бүлэгт гүйцэтгэл, суралцагч, байгууллагын мэдээлэл байна — долоо хоног бүр харна.",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "«Нэмэлт хэрэгсэл» нь ховор хэрэглэгддэг зүйлс",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "Үйлдлийн лог, системийн шалгалт, гаргалтын баталгаа зэрэг нь энд хураагдсан. Дарж нээнэ.",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "Хяналтын самбараас өдрөө эхэл",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "«Таны анхаарал хэрэгтэй» самбар нь өнөөдөр хүн оролцох шаардлагатай зүйлсийг тоогоор харуулна. Тоо дээр дарвал холбогдох жагсаалт руу шилжинэ.",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "Дээд талын хугацааны товч",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "Сүүлийн 7 / 30 / 90 хоног гэсэн сонголт нь суралцах хугацаа, идэвхтэй суралцагчийн тоог тухайн хүрээгээр харуулна.",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "Хяналтын самбар нээх",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "Шинэ хичээл хэрхэн нэмэх вэ",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "Бэлэн ZIP багцаас хичээл оруулж, шалгаад нийтлэх бүрэн урсгал.",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "«ZIP импорт» цэс рүү ор",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "Хятад хэлний хичээлд «Хятад», солонгос хэлнийх «Солонгос» сонголтыг ашиглана.",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "ZIP файлаа сонгож «Parse» дар",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "Систем багцын бүтцийг уншиж, ямар хичээл, хэдэн үг, хэдэн дасгал байгааг харуулна. Энэ алхам өгөгдлийг хараахан хадгалахгүй.",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "«Critical» алдаа байгаа эсэхийг шалга",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "Улаан «Critical» бичиглэл гарвал багцад заавал засах алдаа бий гэсэн үг. Энэ тохиолдолд импортыг үргэлжлүүлэхгүй, багцаа засаад дахин оролдоно.",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "«Import as draft» дар",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "Хичээл ноорог төлөвтэйгээр орно — сурагчдад хараахан харагдахгүй. Оруулах хугацаа 30–60 секунд болж болно.",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "«Хичээлүүд» жагсаалтаас шалга",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "Үг, дасгалын тоо зөв эсэх, аудио тэмдэглэгээ байгаа эсэхийг хараад «Урьдчилж харах»-аар сурагчийн нүдээр шалгана.",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "«Нийтлэх» дар",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "«Хичээл нийтлэгдлээ» гэсэн мэдэгдэл гарсны дараа хичээл сурагчдын нүүр хуудсанд гарч ирнэ.",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "Импортын дараа жагсаалт ачаалахад хэсэг хугацаа шаардаж болно — хуудсыг сэргээж дахин шалга.",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "Ноорог хичээл хяналтын самбарт «Ноорог хичээл» тоон дотор харагдана.",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "ZIP импорт нээх",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "Хичээлүүд харах",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "Хичээл засах, буцаах",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "Гарчиг, үг, дасгал, багшийн давхаргыг хэрхэн өөрчлөх вэ.",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "«Хичээлүүд» жагсаалтаас хайлтын талбарыг ашигла",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "Гарчиг, ID, курсын нэрээр хайж болно. Дээд талын «Бүх статус» шүүлтүүрээр ноорог/нийтлэгдсэнээр нь ялгана.",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "«Засах» дар",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "Гарчиг, хятад гарчиг, тайлбар, үгсийн сан, дасгалын асуултуудыг энд шууд өөрчилнө.",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "«Багшийн давхарга»-г бүү мартаарай",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "Тайлбар, дүрмийн тэмдэглэл, багшийн зөвлөмж энд байрлана. Сурагчид хичээлийн дотор уншина.",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "Хэвлэхээс өмнө «Урьдчилж харах»",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "Сурагчид яг юу харахыг шалгах хамгийн хурдан арга.",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "Алдаатай нийтэлсэн бол «Буцаах»",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "Хичээл дахин ноорог төлөв рүү шилжиж, сурагчдад харагдахаа болино. Өгөгдөл устахгүй.",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "«Шалгах шаардлагатай» гэж юу гэсэн үг вэ",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "Улаан анхааруулгыг хэрхэн уншиж, аль нь яаралтай болохыг ялгах.",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "Үгсийн сан эсвэл дасгал байхгүй",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "Хамгийн ноцтой нь. Ийм хичээл нийтлэгдвэл сурагч хоосон хуудас харна — эхлээд агуулгыг нөх.",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "Тоо зөрүү",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "Хичээлийн тохиргоонд бичсэн үг/дасгалын тоо бодит бичлэгийн тоотой таарахгүй байна. Ихэвчлэн импортын дараа тохиргооны тоог шинэчлэхэд засагдана.",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "Мэдээлэл дутуу",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "Гарчиг эсвэл хятад гарчиг оруулаагүй байна.",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "Зөвхөн бичлэгийн хичээлд хамаарна. Номын хичээлд видео шаардахгүй тул анхааруулга гарахгүй.",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "Хичээл бүрийн доор «Advanced details» дарж бүх анхааруулгыг задлан харна.",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "Суралцагчдын үнэлгээ (A–F)",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "Суралцагч бүр хэрхэн үсгэн үнэлгээ авдаг, жагсаалтыг юунд ашиглах вэ.",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "«Суралцагчдын үнэлгээ» цэс рүү ор",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "Бүх суралцагч A, B, C, D, F бүлгээр хуваагдаж, бүлэг дотроо онооны дарааллаар жагсана.",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "Оноо дөрвөн хэсгээс бүрдэнэ",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "Дасгалын дундаж 40, шалгалтын дундаж 20, хичээл дуусгалт 25, идэвх (сурсан үг ба суралцсан хугацаа) 15 оноо. Нийт 100.",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "Өгөгдөлгүй хэсэг шийтгэдэггүй",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "Хэрэв суралцагч шалгалт өгөөгүй бол тэр 20 оноо үлдсэн хэсгүүдэд хуваарилагдана. Өөрөөр хэлбэл шалгалт өгөөгүйгээс болж дорд үнэлэгдэхгүй.",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "Үсгийн хуваарь",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "A нь 90-ээс дээш, B нь 80–89, C нь 70–79, D нь 60–69, F нь 60-аас доош оноо.",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "«Үнэлэхэд эрт» гэдэг нь",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "5-аас цөөн дасгал ажилласан хүнд үсэг олгохгүй. Хэт бага өгөгдлөөр хүнийг үнэлэх нь шударга бус тул тэднийг тусад нь харуулна.",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "Багш өөрийн ангиа тусад нь харна",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "Ангийн хуудсан дээрх жагсаалт нь тухайн ангийн даалгаврын гүйцэтгэл, сүүлийн дасгалын оноо, сурсан үгэнд тулгуурлана — өөрөөр хэлбэл багшийн харж чадах өгөгдлөөр л тооцно.",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "Бүлгийн картыг дарж тухайн бүлгийг онцолж харж болно.",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "Нэр дээр дарвал тухайн суралцагчийн дэлгэрэнгүй хуудас нээгдэнэ.",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "Үнэлгээний жагсаалт нээх",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "Тайлан унших",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "Сурагчид хаана бэрхшээлтэй байгааг олж, контентоо сайжруулах.",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "«Тайлан» цэс рүү ор",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "Хичээл бүрээр эхэлсэн, дуусгасан, дасгалын дундаж оноог харна.",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "Хүндрэлтэй асуултуудыг шалга",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "Зөв хариултын хувь 70%-иас доош асуултууд тусад нь жагсана. Ихэнх нь буруу хариулж байвал асуулт эсвэл заавар нь ойлгомжгүй байж магадгүй.",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "Хэн ч сураагүй үгсийг хар",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "Огт сураагүй үгс нь хичээлийн байрлал эсвэл давтамжийн асуудлыг илтгэнэ.",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "Суралцах хугацааны график",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "Хяналтын самбар дээрх график нь өдөр бүрийн нийт минутыг харуулна. Уналт гарвал шалтгааныг нь хайна.",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "Тайлан нээх",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "Сургууль, анги нэмэх",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "Байгууллагын бүртгэл, багшийн эрх, оюутны урилгын урсгал.",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "«Байгууллага» цэснээс шинэ бүртгэл үүсгэ",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "Сургуулийн нэр, холбоо барих хүн, багцын төрлийг оруулна.",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "Багшийг урь",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "Урилга имэйлээр очно. Багш өөрөө бүртгүүлж, өөрийн ангиа үүсгэнэ.",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "Оюутнуудыг нэмэх",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "Багш нэг бүрчлэн урих, эсвэл CSV жагсаалтаар нэг дор оруулах боломжтой.",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "Даалгавар өгөх",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "Багш тодорхой хичээлүүдийг анги дээрээ даалгавар болгон оноож, гүйцэтгэлийг тайлангаас хянана.",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "Байгууллага харах",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "Асуудал гарвал",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "Хамгийн түгээмэл гацаа, тэдгээрийг хэрхэн шийдэх.",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "Хуудас удаан ачаалж байна",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "Хичээлийн жагсаалт олон хичээлтэй үед хэдэн секунд шаардана. Хүлээгээд үзэж, дахин сэргээнэ.",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "«Нэвтрэх шаардлагатай» гэж гарвал",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "Нэвтрэлт дууссан байна. Гарч дахин нэвтэрнэ үү.",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "«Админ эрх шаардлагатай»",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "Таны хэрэглэгч контент удирдах эрхгүй байна. Эрх олгуулахаар системийн хариуцагчид хандана.",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "Импорт дуусахгүй байна",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "ZIP-ийн бүтэц буруу байж магадгүй. «Parse» алхмын үр дүнг уншиж, дутуу файлыг нөхнө.",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "«Нэмэлт хэрэгсэл → Системийн шалгалт» нь холболт, тохиргоо зөв эсэхийг нэг дор харуулна.",
+"ctx": "lib/admin/admin-guide-content.ts"
+},
+{
+"mn": "Өнөөдрийн төлөв, анхаарал шаардсан зүйлс.",
+"ctx": "lib/admin/admin-nav.ts"
+},
+{
+"mn": "Бүх хичээлийн жагсаалт, засвар, нийтлэл.",
+"ctx": "lib/admin/admin-nav.ts"
+},
+{
+"mn": "Гараар шинэ хичээл үүсгэх.",
+"ctx": "lib/admin/admin-nav.ts"
+},
+{
+"mn": "ZIP импорт",
+"ctx": "lib/admin/admin-nav.ts"
+},
+{
+"mn": "Бэлэн багцаас хичээл оруулах.",
+"ctx": "lib/admin/admin-nav.ts"
+},
+{
+"mn": "Эх сурвалж",
+"ctx": "lib/admin/admin-nav.ts"
+},
+{
+"mn": "HSK номын хичээл бүрийн бүх агуулга — номд байгаагаар.",
+"ctx": "lib/admin/admin-nav.ts"
+},
+{
+"mn": "Видео контент удирдах.",
+"ctx": "lib/admin/admin-nav.ts"
+},
+{
+"mn": "Суралцалтын гүйцэтгэл, хүндрэлтэй асуултууд.",
+"ctx": "lib/admin/admin-nav.ts"
+},
+{
+"mn": "A–F үнэлгээ, бүлэг тус бүрийн жагсаалт.",
+"ctx": "lib/admin/admin-nav.ts"
+},
+{
+"mn": "Нэг хэрэглэгчийн ахиц, гацсан цэг.",
+"ctx": "lib/admin/admin-nav.ts"
+},
+{
+"mn": "Бүх бүлгийг багш, түвшин, үнэлгээгээр нь харьцуулах.",
+"ctx": "lib/admin/admin-nav.ts"
+},
+{
+"mn": "Төвийн тайлан",
+"ctx": "lib/admin/admin-nav.ts"
+},
+{
+"mn": "Хэвлэхэд бэлэн нэгдсэн тайлан.",
+"ctx": "lib/admin/admin-nav.ts"
+},
+{
+"mn": "Курсээ дүүргэсэн сурагчид олгох бичиг.",
+"ctx": "lib/admin/admin-nav.ts"
+},
+{
+"mn": "Сургууль, анги, урилга, хүсэлт.",
+"ctx": "lib/admin/admin-nav.ts"
+},
+{
+"mn": "Контентын ажлын төв.",
+"ctx": "lib/admin/admin-nav.ts"
+},
+{
+"mn": "Админы бүх ажлын алхам алхмаар бичсэн заавар.",
+"ctx": "lib/admin/admin-nav.ts"
+},
+{
+"mn": "Бүх хэрэгслийн жагсаалт.",
+"ctx": "lib/admin/admin-nav.ts"
+},
+{
+"mn": "Үйлдлийн лог",
+"ctx": "lib/admin/admin-nav.ts"
+},
+{
+"mn": "Хэн юу өөрчилсөн бүртгэл.",
+"ctx": "lib/admin/admin-nav.ts"
+},
+{
+"mn": "Холболт, тохиргооны эрүүл мэнд.",
+"ctx": "lib/admin/admin-nav.ts"
+},
+{
+"mn": "Гаргалтын өмнөх шалгах хуудас.",
+"ctx": "lib/admin/admin-nav.ts"
+},
+{
+"mn": "Prompt сан",
+"ctx": "lib/admin/admin-nav.ts"
+},
+{
+"mn": "Контент бэлтгэх prompt-ууд.",
+"ctx": "lib/admin/admin-nav.ts"
+},
+{
+"mn": "Хичээл угсрагч",
+"ctx": "lib/admin/admin-nav.ts"
+},
+{
+"mn": "Багцын бүтэц угсрах хэрэгсэл.",
+"ctx": "lib/admin/admin-nav.ts"
+},
+{
+"mn": "Эцсийн шалгалт",
+"ctx": "lib/admin/admin-nav.ts"
+},
+{
+"mn": "Бүтээгдэхүүний нэгдсэн үзлэг.",
+"ctx": "lib/admin/admin-nav.ts"
+},
+{
+"mn": "RLS болон эрхийн шалгалт.",
+"ctx": "lib/admin/admin-nav.ts"
+},
+{
+"mn": "Хувилбарын бэлэн байдал",
+"ctx": "lib/admin/admin-nav.ts"
+},
+{
+"mn": "Гаргахад бэлэн эсэх.",
+"ctx": "lib/admin/admin-nav.ts"
+},
+{
+"mn": "Эцсийн зөвшөөрөл.",
+"ctx": "lib/admin/admin-nav.ts"
+},
+{
+"mn": "Хичээл, бичлэг, импорт",
+"ctx": "lib/admin/admin-nav.ts"
+},
+{
+"mn": "Гүйцэтгэл, суралцагч, байгууллага",
+"ctx": "lib/admin/admin-nav.ts"
+},
+{
+"mn": "Сурагчийн апп",
+"ctx": "lib/admin/admin-nav.ts"
+},
+{
+"mn": "Rollback энэ action дээр одоогоор дэмжигдээгүй.",
+"ctx": "lib/admin/admin-rollback-eligibility.ts"
+},
+{
+"mn": "Before snapshot байхгүй — rollback хийх боломжгүй.",
+"ctx": "lib/admin/admin-rollback-eligibility.ts"
+},
+{
+"mn": "Lesson ID байхгүй — rollback хийх боломжгүй.",
+"ctx": "lib/admin/admin-rollback-eligibility.ts"
+},
+{
+"mn": "Rollback төрөл тодорхойгүй.",
+"ctx": "lib/admin/admin-rollback-eligibility.ts"
+},
+{
+"mn": "Before snapshot-д сэргээх field олдсонгүй.",
+"ctx": "lib/admin/admin-rollback-eligibility.ts"
+},
+{
+"mn": "Supabase тохируулаагүй байна.",
+"ctx": "lib/admin/import-lesson-package.ts"
+},
+{
+"mn": "manifest.json дотор courseId алга байна.",
+"ctx": "lib/admin/import-lesson-package.ts"
+},
+{
+"mn": "manifest.json дотор lessonId алга байна.",
+"ctx": "lib/admin/import-lesson-package.ts"
+},
+{
+"mn": "ZIP багцын мэдээлэл алга. Дахин шалгана уу.",
+"ctx": "lib/admin/import-lesson-package.ts"
+},
+{
+"mn": "Admin эрх шаардлагатай.",
+"ctx": "lib/admin/import-lesson-package.ts"
+},
+{
+"mn": "ZIP багц шалгалт давсангүй.",
+"ctx": "lib/admin/import-lesson-package.ts"
+},
+{
+"mn": "Агуулгыг бөөнөөр оруулж чадсангүй.",
+"ctx": "lib/admin/import-lesson-package.ts"
+},
+{
+"mn": "Шинэ ноорог хичээл үүсгээд багцыг амжилттай оруулж дууслаа.",
+"ctx": "lib/admin/import-lesson-package.ts"
+},
+{
+"mn": "Одоо байгаа ноорог хичээл дээр багцыг оруулж дууслаа.",
+"ctx": "lib/admin/import-lesson-package.ts"
+},
+{
+"mn": "Хадмал алга.",
+"ctx": "lib/admin/import-qa.ts"
+},
+{
+"mn": "Үгсийн сан алга.",
+"ctx": "lib/admin/import-qa.ts"
+},
+{
+"mn": "Дасгалын асуулт алга.",
+"ctx": "lib/admin/import-qa.ts"
+},
+{
+"mn": "Ерөнхий мэдээлэл дутуу.",
+"ctx": "lib/admin/import-qa.ts"
+},
+{
+"mn": "дуудлага (romanization)",
+"ctx": "lib/admin/import-qa.ts"
+},
+{
+"mn": "пиньинь",
+"ctx": "lib/admin/import-qa.ts"
+},
+{
+"mn": "Дутуу агуулга",
+"ctx": "lib/admin/improvement-prompts.ts"
+},
+{
+"mn": "Дасгалын чанар",
+"ctx": "lib/admin/improvement-prompts.ts"
+},
+{
+"mn": "Асуулт засах",
+"ctx": "lib/admin/improvement-prompts.ts"
+},
+{
+"mn": "Үг засах",
+"ctx": "lib/admin/improvement-prompts.ts"
+},
+{
+"mn": "Оруулсны дараах цэгцлэл",
+"ctx": "lib/admin/improvement-prompts.ts"
+},
+{
+"mn": "Нийтийн /deployment-check хурдан шалгалт",
+"ctx": "lib/admin/launch-candidate-data.ts"
+},
+{
+"mn": "Админ талын Supabase холболтын шалгалт",
+"ctx": "lib/admin/launch-candidate-data.ts"
+},
+{
+"mn": "Ажлын орчны чанарын шалгалт",
+"ctx": "lib/admin/launch-candidate-data.ts"
+},
+{
+"mn": "Хуудас болон удирдлагын хэсгийн гар шалгалт",
+"ctx": "lib/admin/launch-candidate-data.ts"
+},
+{
+"mn": "RLS, нэвтрэлт, файл хадгалалт, харагдац",
+"ctx": "lib/admin/launch-candidate-data.ts"
+},
+{
+"mn": "Supabase-ийн шалгалт",
+"ctx": "lib/admin/launch-candidate-data.ts"
+},
+{
+"mn": "production_verification.sql — алдаатай мөр байхгүй",
+"ctx": "lib/admin/launch-candidate-data.ts"
+},
+{
+"mn": "Удирдлагын хэсгийн бэлэн байдал",
+"ctx": "lib/admin/launch-candidate-data.ts"
+},
+{
+"mn": "Үүсгэх, засах, нийтлэх урсгалыг шалгасан",
+"ctx": "lib/admin/launch-candidate-data.ts"
+},
+{
+"mn": "Нийтийн хуудсуудын бэлэн байдал",
+"ctx": "lib/admin/launch-candidate-data.ts"
+},
+{
+"mn": "Суралцагчийн хуудсууд ажлын хаяг дээр",
+"ctx": "lib/admin/launch-candidate-data.ts"
+},
+{
+"mn": "Саад болж буй зүйлийн тоо",
+"ctx": "lib/admin/launch-candidate-data.ts"
+},
+{
+"mn": "Доорх шалгалтын амжилтгүй зүйлсийг хянана уу",
+"ctx": "lib/admin/launch-candidate-data.ts"
+},
+{
+"mn": "Нүүр хуудас нээгдэнэ",
+"ctx": "lib/admin/launch-candidate-data.ts"
+},
+{
+"mn": "Курсын хуудас нээгдэнэ",
+"ctx": "lib/admin/launch-candidate-data.ts"
+},
+{
+"mn": "HSK5 курсын хуудас нээгдэнэ",
+"ctx": "lib/admin/launch-candidate-data.ts"
+},
+{
+"mn": "1-р хичээлийн хуудас нээгдэнэ",
+"ctx": "lib/admin/launch-candidate-data.ts"
+},
+{
+"mn": "1-р хичээлийн бичлэг нээгдэнэ",
+"ctx": "lib/admin/launch-candidate-data.ts"
+},
+{
+"mn": "1-р хичээлийн үгсийн сан нээгдэнэ",
+"ctx": "lib/admin/launch-candidate-data.ts"
+},
+{
+"mn": "1-р хичээлийн дасгал нээгдэнэ",
+"ctx": "lib/admin/launch-candidate-data.ts"
+},
+{
+"mn": "Нэвтрэх хуудас нээгдэнэ",
+"ctx": "lib/admin/launch-candidate-data.ts"
+},
+{
+"mn": "Бүртгүүлэх хуудас нээгдэнэ",
+"ctx": "lib/admin/launch-candidate-data.ts"
+},
+{
+"mn": "Нэвтэрсний дараа хувийн хуудас ажиллана",
+"ctx": "lib/admin/launch-candidate-data.ts"
+},
+{
+"mn": "Нэвтэрсний дараа давтлага ажиллана",
+"ctx": "lib/admin/launch-candidate-data.ts"
+},
+{
+"mn": "Хяналтын самбар нээгдэнэ",
+"ctx": "lib/admin/launch-candidate-data.ts"
+},
+{
+"mn": "Системийн шалгалт давна",
+"ctx": "lib/admin/launch-candidate-data.ts"
+},
+{
+"mn": "Чанарын шалгалтын хуудас байна",
+"ctx": "lib/admin/launch-candidate-data.ts"
+},
+{
+"mn": "Аюулгүй байдлын үзлэгийн хуудас байна",
+"ctx": "lib/admin/launch-candidate-data.ts"
+},
+{
+"mn": "Эцсийн үзлэгийн хуудас байна",
+"ctx": "lib/admin/launch-candidate-data.ts"
+},
+{
+"mn": "Хичээл засах хуудас нээгдэнэ",
+"ctx": "lib/admin/launch-candidate-data.ts"
+},
+{
+"mn": "Ажлын төв нээгдэнэ",
+"ctx": "lib/admin/launch-candidate-data.ts"
+},
+{
+"mn": "Үйлдлийн бүртгэл нээгдэнэ",
+"ctx": "lib/admin/launch-candidate-data.ts"
+},
+{
+"mn": "Тайлан нээгдэнэ",
+"ctx": "lib/admin/launch-candidate-data.ts"
+},
+{
+"mn": "Нэвтрэлт ажиллана",
+"ctx": "lib/admin/launch-candidate-data.ts"
+},
+{
+"mn": "Гарах товч ажиллана",
+"ctx": "lib/admin/launch-candidate-data.ts"
+},
+{
+"mn": "Дасгалын оролдлого хадгалагдана",
+"ctx": "lib/admin/launch-candidate-data.ts"
+},
+{
+"mn": "Сурсан үг хадгалагдана",
+"ctx": "lib/admin/launch-candidate-data.ts"
+},
+{
+"mn": "Хичээлийн ахиц хадгалагдана",
+"ctx": "lib/admin/launch-candidate-data.ts"
+},
+{
+"mn": "Нэвтрээгүй хэрэглэгчид ажиллаж байна",
+"ctx": "lib/admin/launch-candidate-data.ts"
+},
+{
+"mn": "Нийтийн хичээлүүд уншигдана",
+"ctx": "lib/admin/launch-candidate-data.ts"
+},
+{
+"mn": "Админы бүртгэл уншигдана",
+"ctx": "lib/admin/launch-candidate-data.ts"
+},
+{
+"mn": "Файл хадгалах сан ажиллана",
+"ctx": "lib/admin/launch-candidate-data.ts"
+},
+{
+"mn": "Нүүр зураг/медиа хаяг байвал нээгдэнэ",
+"ctx": "lib/admin/launch-candidate-data.ts"
+},
+{
+"mn": "Үйлдлийн бүртгэл бичигдэнэ",
+"ctx": "lib/admin/launch-candidate-data.ts"
+},
+{
+"mn": "Ажил хадгалагдаж үлдэнэ",
+"ctx": "lib/admin/launch-candidate-data.ts"
+},
+{
+"mn": "Нийтийн хуудсуудын шалгалт",
+"ctx": "lib/admin/launch-candidate-data.ts"
+},
+{
+"mn": "Удирдлагын хэсгийн шалгалт",
+"ctx": "lib/admin/launch-candidate-data.ts"
+},
+{
+"mn": "Нэвтрэлт ба ахиц",
+"ctx": "lib/admin/launch-candidate-data.ts"
+},
+{
+"mn": "Supabase ба медиа",
+"ctx": "lib/admin/launch-candidate-data.ts"
+},
+{
+"mn": "Төлбөрийн систем алга — 7-р үе шатанд",
+"ctx": "lib/admin/launch-candidate-data.ts"
+},
+{
+"mn": "Гар утасны тусдаа апп алга — 8-р үе шатанд",
+"ctx": "lib/admin/launch-candidate-data.ts"
+},
+{
+"mn": "Нэвтрээгүй үеийн ахицыг хувийн хуудсаар нэвтэрч синк хийнэ",
+"ctx": "lib/admin/launch-candidate-data.ts"
+},
+{
+"mn": "Үйлдлийн бүртгэлийг хөтөч дээр нэвтэрсэн админаар уншина",
+"ctx": "lib/admin/launch-candidate-data.ts"
+},
+{
+"mn": "Бичлэг хөрвүүлэх/CDN алга — гадаад хаяг эсвэл Supabase Storage-ийг шууд ашиглана",
+"ctx": "lib/admin/launch-candidate-data.ts"
+},
+{
+"mn": "Хурдан шалгалтын жагсаалтыг бөглөж, гаргалтын шийдвэрээ тэмдэглэнэ үү.",
+"ctx": "lib/admin/launch-candidate-report.ts"
+},
+{
+"mn": "Гаргахаас өмнө амжилтгүй зүйлс болон төлвийн картуудыг засна уу.",
+"ctx": "lib/admin/launch-candidate-report.ts"
+},
+{
+"mn": "Гаргахад нэр дэвшсэн хувилбар батлагдлаа — гаргахдаа GO_LIVE_NOTES.md-ийг дагана уу.",
+"ctx": "lib/admin/launch-candidate-report.ts"
+}
+]

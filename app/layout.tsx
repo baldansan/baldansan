@@ -2,6 +2,8 @@ import type { Metadata, Viewport } from "next";
 import { Geist_Mono, Noto_Sans_SC, Nunito } from "next/font/google";
 import { LearnerLanguageGuard } from "@/components/learner-language-guard";
 import { AppProviders } from "@/components/providers/app-providers";
+import { UiLocaleProvider } from "@/components/i18n/ui-locale-provider";
+import { getServerUiLocale } from "@/lib/i18n/server-locale";
 import { PwaServiceWorkerRegister } from "@/components/pwa-service-worker-register";
 import "./globals.css";
 import "./buunduu-theme.css";
@@ -94,22 +96,34 @@ export const viewport: Viewport = {
   viewportFit: "cover",
 };
 
-export default function RootLayout({
+/**
+ * Ачаалахад монгол текст анивчихгүй: cookie/localStorage-оор zh бол body-г
+ * орчуулагч дуустал нуух (UiTranslator классыг арилгана; 3с-ийн хамгаалалттай).
+ */
+const PENDING_SCRIPT = `(function(){try{var m=document.cookie.match(/(?:^|;\s*)buunduu-ui-locale=(zh|mn)/);var l=m?m[1]:(localStorage.getItem('buunduu-ui-locale-v1')||'zh');if(l==='zh'){document.documentElement.classList.add('ui-zh-pending');setTimeout(function(){document.documentElement.classList.remove('ui-zh-pending')},3000)}}catch(e){}})()`;
+
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const locale = await getServerUiLocale();
   return (
     <html
-      lang="mn"
+      lang={locale === "zh" ? "zh-CN" : "mn"}
       className={`${nunito.variable} ${notoSansSc.variable} ${geistMono.variable} h-full antialiased`}
     >
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: PENDING_SCRIPT }} />
+      </head>
       <body className="flex min-h-full flex-col font-sans">
-        <AppProviders>
-          <LearnerLanguageGuard />
-          {children}
-          <PwaServiceWorkerRegister />
-        </AppProviders>
+        <UiLocaleProvider locale={locale}>
+          <AppProviders>
+            <LearnerLanguageGuard />
+            {children}
+            <PwaServiceWorkerRegister />
+          </AppProviders>
+        </UiLocaleProvider>
       </body>
     </html>
   );

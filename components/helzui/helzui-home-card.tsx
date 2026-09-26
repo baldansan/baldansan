@@ -34,8 +34,8 @@ export function HelzuiHomeCard() {
             📐
           </span>
           <div className="min-w-0 flex-1">
-            <p className="hz-home-card-title">{summary.title}</p>
-            <p className="hz-home-card-sub">
+            <p className="hz-home-card-title" translate="no">{summary.title}</p>
+            <p className="hz-home-card-sub" translate="no">
               {summary.moduleCount} {tr(locale, "модуль")} · {summary.subtitle}
             </p>
           </div>

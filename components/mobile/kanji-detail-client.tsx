@@ -131,7 +131,7 @@ export function KanjiDetailClient({
 
       <MobileCard className="mb-4 text-center !p-5">
         <div className="flex items-start justify-center gap-2">
-          <p className="text-6xl font-bold text-[var(--app-text)]">{word.chinese}</p>
+          <p className="text-6xl font-bold text-[var(--app-text)]" translate="no">{word.chinese}</p>
           <SpeakerButton
             text={word.chinese}
             lang={ttsLang}
@@ -141,8 +141,8 @@ export function KanjiDetailClient({
             size="md"
           />
         </div>
-        <p className="mt-3 text-xl text-emerald-700">{word.pinyin}</p>
-        <p className="mt-2 text-base text-[var(--app-text)]">{word.mongolian}</p>
+        <p className="mt-3 text-xl text-emerald-700" translate="no">{word.pinyin}</p>
+        <p className="mt-2 text-base text-[var(--app-text)]" translate="no">{word.mongolian}</p>
         <p className="mt-3 text-xs text-[var(--app-muted)]">
           {taskCount} {tr(locale, "хичээлд орсон")}
         </p>
@@ -151,7 +151,7 @@ export function KanjiDetailClient({
       {word.exampleChinese ? (
         <MobileCard className="mb-4">
           <div className="flex items-start gap-2">
-            <p className="min-w-0 flex-1 text-sm font-medium text-[var(--app-text)]">
+            <p className="min-w-0 flex-1 text-sm font-medium text-[var(--app-text)]" translate="no">
               {word.exampleChinese}
             </p>
             <SpeakerButton
@@ -164,7 +164,7 @@ export function KanjiDetailClient({
             />
           </div>
           {word.exampleMongolian ? (
-            <p className="mt-2 text-sm text-[var(--app-muted)]">
+            <p className="mt-2 text-sm text-[var(--app-muted)]" translate="no">
               {word.exampleMongolian}
             </p>
           ) : null}

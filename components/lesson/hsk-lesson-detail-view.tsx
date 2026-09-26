@@ -103,7 +103,7 @@ export function HskLessonDetailView({ lesson, adminPreview = false }: Props) {
           </span>
           <span className="text-xs text-slate-600">{duration}</span>
         </div>
-        <h1 className="mt-2 text-xl font-bold text-slate-900">{lesson.title}</h1>
+        <h1 className="mt-2 text-xl font-bold text-slate-900" translate="no">{lesson.title}</h1>
         {lesson.chineseTitle ? (
           <p className="mt-0.5 text-lg text-emerald-800">{lesson.chineseTitle}</p>
         ) : null}

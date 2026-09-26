@@ -133,7 +133,7 @@ export default function TextsModule({
   return (
     <div className="bs-card bs-txt">
       <div className="bs-vtop">
-        <div className="bs-label" style={{ margin: 0 }}>
+        <div translate="no" className="bs-label" style={{ margin: 0 }}>
           <span className="bs-dot" />
           {text.title_mn?.trim() || "Богино эх"}
         </div>

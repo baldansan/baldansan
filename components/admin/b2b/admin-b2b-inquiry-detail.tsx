@@ -257,7 +257,7 @@ export function AdminB2BInquiryDetail({ inquiryId }: Props) {
           </div>
         </dl>
         {inquiry.message ? (
-          <p className="mt-4 rounded-xl bg-slate-50 p-4 text-sm text-slate-700">
+          <p className="mt-4 rounded-xl bg-slate-50 p-4 text-sm text-slate-700" translate="no">
             {inquiry.message}
           </p>
         ) : null}
@@ -373,7 +373,7 @@ export function AdminB2BInquiryDetail({ inquiryId }: Props) {
                 <span className="font-medium">
                   {ACTIVITY_ACTION_LABELS[a.action] ?? a.action}
                 </span>
-                {a.note ? <span> — {a.note}</span> : null}
+                {a.note ? <span translate="no"> — {a.note}</span> : null}
                 <span className="block text-xs text-slate-400">
                   {formatMongoliaDateTimeWithLabel(a.createdAt)}
                 </span>

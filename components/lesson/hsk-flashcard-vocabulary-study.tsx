@@ -285,10 +285,10 @@ export function HskFlashcardVocabularyStudy({
               <p className="text-lg font-medium text-emerald-700">{current.pinyin}</p>
             ) : null}
             {current?.mongolian ? (
-              <p className="text-base text-slate-700">{current.mongolian}</p>
+              <p className="text-base text-slate-700" translate="no">{current.mongolian}</p>
             ) : null}
             {toneHint ? (
-              <span className="mt-1 inline-flex rounded-full bg-emerald-50 px-3 py-1 text-xs font-medium text-emerald-800 ring-1 ring-emerald-200">
+              <span className="mt-1 inline-flex rounded-full bg-emerald-50 px-3 py-1 text-xs font-medium text-emerald-800 ring-1 ring-emerald-200" translate="no">
                 {toneHint}
               </span>
             ) : null}
@@ -314,7 +314,7 @@ export function HskFlashcardVocabularyStudy({
                   <p className="text-xs text-emerald-700">{current.examplePinyin}</p>
                 ) : null}
                 {current.exampleMongolian ? (
-                  <p className="mt-1 text-sm text-slate-600">
+                  <p className="mt-1 text-sm text-slate-600" translate="no">
                     {current.exampleMongolian}
                   </p>
                 ) : null}
@@ -330,7 +330,7 @@ export function HskFlashcardVocabularyStudy({
                     {current.components.map((c) => c.component).join(" + ")}
                   </p>
                 ) : null}
-                <p className="mt-1 text-sm text-amber-950">{current.memoryHintMn}</p>
+                <p className="mt-1 text-sm text-amber-950" translate="no">{current.memoryHintMn}</p>
                 {current.mnemonicStatus === "learning_aid_not_official_etymology" ? (
                   <p className="mt-1 text-[10px] text-amber-700">
                     Сурах тусламж — албан ёсны үүсэл биш

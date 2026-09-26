@@ -70,7 +70,7 @@ export function TeacherAssignmentsList() {
             >
               <Link href={`/teacher/assignments/${a.id}`} className="block">
                 <div className="flex flex-wrap items-start justify-between gap-2">
-                  <h2 className="font-semibold text-slate-900">{a.title}</h2>
+                  <h2 className="font-semibold text-slate-900" translate="no">{a.title}</h2>
                   <div className="flex flex-wrap gap-1.5">
                     {a.targetStudentUserId ? (
                       <span className="rounded-full bg-amber-100 px-2.5 py-0.5 text-xs font-semibold text-amber-900">

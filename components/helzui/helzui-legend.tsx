@@ -11,7 +11,7 @@ export function HelzuiLegend({ roleColors }: Props) {
       {LEGEND_ROLES.map((role) => {
         const def = roleColor(roleColors, role);
         return (
-          <span key={role} className="hz-chip">
+          <span key={role} className="hz-chip" translate="no">
             <i style={{ background: def.color }} aria-hidden />
             {def.label}
           </span>

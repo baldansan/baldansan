@@ -177,7 +177,7 @@ export function WordTapSheet({ word, anchor, onClose, onSaved }: Props) {
           <p className="bs-bichleg-sheet-py">{displayPinyin}</p>
         ) : null}
         {displayMn ? (
-          <p className="bs-bichleg-sheet-mn">{displayMn}</p>
+          <p className="bs-bichleg-sheet-mn" translate="no">{displayMn}</p>
         ) : missingFromCatalog ? (
           <p className="bs-bichleg-sheet-mn" style={{ color: "var(--bs-muted)" }}>
             {displayPinyin

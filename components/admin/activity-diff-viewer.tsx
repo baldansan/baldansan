@@ -51,10 +51,10 @@ export function ActivityDiffViewer({ activity, diff }: Props) {
                     <td className="py-2 pr-4 font-mono text-xs text-slate-700">
                       {row.field}
                     </td>
-                    <td className="py-2 pr-4 text-slate-600">
+                    <td className="py-2 pr-4 text-slate-600" translate="no">
                       {formatDiffValue(row.before)}
                     </td>
-                    <td className="py-2 text-emerald-800">
+                    <td className="py-2 text-emerald-800" translate="no">
                       {formatDiffValue(row.after)}
                     </td>
                   </tr>
@@ -75,7 +75,7 @@ export function ActivityDiffViewer({ activity, diff }: Props) {
               <li key={row.field}>
                 <span className="font-mono text-xs">{row.field}</span>
                 {" → "}
-                {formatDiffValue(row.after)}
+                <span translate="no">{formatDiffValue(row.after)}</span>
               </li>
             ))}
           </ul>
@@ -92,7 +92,7 @@ export function ActivityDiffViewer({ activity, diff }: Props) {
               <li key={row.field}>
                 <span className="font-mono text-xs">{row.field}</span>
                 {" өмнө нь "}
-                {formatDiffValue(row.before)}
+                <span translate="no">{formatDiffValue(row.before)}</span>
               </li>
             ))}
           </ul>

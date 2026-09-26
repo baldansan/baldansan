@@ -9,6 +9,7 @@ export function HelzuiRichHtml({ html, className = "", as = "div" }: Props) {
   const Tag = as;
   return (
     <Tag
+      translate="no"
       className={`hz-rich ${className}`.trim()}
       dangerouslySetInnerHTML={{ __html: html }}
     />

@@ -986,11 +986,11 @@ export function WordSrsStudySession({
                 />
               </div>
 
-              <p className="bs-srs-meaning">{word.meaning_mn ?? "—"}</p>
+              <p className="bs-srs-meaning" translate="no">{word.meaning_mn ?? "—"}</p>
 
               {word.example_zh ? (
 
-                <div className="bs-srs-example">
+                <div className="bs-srs-example" translate="no">
 
                   <p className="bs-srs-example-zh">{word.example_zh}</p>
 

@@ -66,7 +66,7 @@ export function LessonPackageSummary({
           <h2 className="text-base font-semibold text-slate-900">
             Хичээлийн багцын товч мэдээлэл
           </h2>
-          <p className="mt-1 text-sm text-slate-600">
+          <p className="mt-1 text-sm text-slate-600" translate="no">
             {lesson.title} · {lesson.chineseTitle}
           </p>
         </div>

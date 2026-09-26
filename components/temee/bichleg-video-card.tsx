@@ -115,9 +115,9 @@ export function BichlegVideoCard({
           ) : null}
         </div>
         <div className="bs-tm-video-body">
-          <p className="bs-tm-video-title">{titleMn}</p>
+          <p className="bs-tm-video-title" translate="no">{titleMn}</p>
           {titleZh ? (
-            <p className="bs-tm-video-zh hanzi">{titleZh}</p>
+            <p className="bs-tm-video-zh hanzi" translate="no">{titleZh}</p>
           ) : null}
           {showProgressBar && progressLabel ? (
             <div className="bs-tm-video-progress bs-tm-video-progress--inline">
@@ -149,7 +149,7 @@ export function BichlegVideoCard({
       <div className="bs-tm-video-body">
         <p className="bs-tm-video-title">{titleMn}</p>
         {titleZh ? (
-          <p className="bs-tm-video-zh hanzi">{titleZh}</p>
+          <p className="bs-tm-video-zh hanzi" translate="no">{titleZh}</p>
         ) : null}
         <div className="bs-tm-video-tags">
           {episodeBadge ? (

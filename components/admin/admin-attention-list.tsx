@@ -30,7 +30,7 @@ export function AdminAttentionList({
               <span className="font-mono text-xs text-slate-500">
                 {item.lessonId}
               </span>{" "}
-              · {item.title}
+              · <span translate="no">{item.title}</span>
             </p>
             <p className="mt-1 text-xs text-amber-800">
               {item.issues.join(" · ")}

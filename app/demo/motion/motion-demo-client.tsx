@@ -197,7 +197,7 @@ export function MotionDemoClient() {
                 </div>
               }
               back={
-                <div className="py-4">
+                <div className="py-4" translate="no">
                   <p className="text-lg font-medium text-emerald-600">xué</p>
                   <p className="text-sm text-slate-700">сурах</p>
                 </div>

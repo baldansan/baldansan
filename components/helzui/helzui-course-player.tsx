@@ -61,7 +61,7 @@ export function HelzuiCoursePlayer({
           {badge}
         </span>
         <h1 className="hz-course-hero-title">{heroTitle}</h1>
-        <p className="hz-course-hero-sub">{course.subtitle}</p>
+        <p className="hz-course-hero-sub" translate="no">{course.subtitle}</p>
       </div>
 
       <HelzuiLegend roleColors={course.roleColors} />
@@ -79,14 +79,14 @@ export function HelzuiCoursePlayer({
               href={helzuiModuleHref(module.id, modulesBase)}
             >
               <MobileCard className="hz-module-card active:bg-slate-50">
-                <div className="hz-mod-eyebrow" style={{ marginBottom: 4 }}>
+                <div className="hz-mod-eyebrow" style={{ marginBottom: 4 }} translate="no">
                   <span className="hz-mod-num">{module.number}</span>
                   {module.mnTitle}
                   <span className="hz-mod-pin zh">
                     · {module.zh} {module.pinyin}
                   </span>
                 </div>
-                <h2 className="hz-mod-heading" style={{ fontSize: 17 }}>
+                <h2 className="hz-mod-heading" style={{ fontSize: 17 }} translate="no">
                   {module.heading}
                 </h2>
                 <p className="mt-2 text-xs text-[var(--app-muted)]">

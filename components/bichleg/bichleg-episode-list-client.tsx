@@ -80,7 +80,7 @@ export function BichlegEpisodeListClient({
       <Link href="/bichleg" className="bs-mem-back">
         {tr(locale, "← Цуврал сонгох")}
       </Link>
-      <h1 className="bs-tm-page-title">{titleMn}</h1>
+      <h1 className="bs-tm-page-title" translate="no">{titleMn}</h1>
       <p className="mb-4 text-sm font-semibold text-[#7a8c82]">{headerMeta}</p>
 
       {episodes.length === 0 ? (

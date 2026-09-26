@@ -341,7 +341,7 @@ export default function LessonPathPlayer({
           </button>
           <div className="bs-ttl">
             <h1>{lesson.level} · {lesson.lesson_number}-р хичээл</h1>
-            <p>{lesson.title.mn}</p>
+            <p translate="no">{lesson.title.mn}</p>
           </div>
         </div>
         <LessonPathWarmupStage

@@ -13,7 +13,7 @@ export function LessonStepVisual({ title, lines, showPronunciation = false }: Pr
   return (
     <LessonPlayerCard>
       <h1 className="text-lg font-bold text-slate-900">{title}</h1>
-      <div className="mt-6 space-y-5">
+      <div className="mt-6 space-y-5" translate="no">
         {lines.map((line) => {
           const pronunciation = showPronunciation
             ? resolveVisualLinePronunciation(line)

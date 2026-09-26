@@ -70,7 +70,7 @@ export default function CharactersModule({
         <span className="bs-char-glyph">{current.hanzi}</span>
         {pinyin ? <span className="bs-char-pinyin">{pinyin}</span> : null}
         {current.meaningMn ? (
-          <span className="bs-char-meaning">{current.meaningMn}</span>
+          <span translate="no" className="bs-char-meaning">{current.meaningMn}</span>
         ) : null}
       </div>
 

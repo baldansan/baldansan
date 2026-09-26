@@ -64,7 +64,7 @@ export function LessonStepPractice({
       <p className="mt-1 text-sm text-slate-500">
         {tr(locale, "Дасгал")} {questionIndex + 1} / {total}
       </p>
-      <h2 className="mt-4 text-lg font-bold leading-snug text-slate-900">
+      <h2 className="mt-4 text-lg font-bold leading-snug text-slate-900" translate="no">
         {question.prompt}
       </h2>
 
@@ -76,6 +76,7 @@ export function LessonStepPractice({
             disabled={revealed}
             onClick={() => onSelect(option)}
             className={optionClass(option)}
+            translate="no"
           >
             {option}
           </button>

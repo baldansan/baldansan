@@ -280,12 +280,15 @@ export function SpeedChallengeClient() {
         <p className="text-center text-sm font-bold text-[var(--bs-muted)]">
           {current.promptLabel}
         </p>
-        <p className="mt-2 text-center text-base font-bold text-[var(--bs-ink)]">
+        <p className="mt-2 text-center text-base font-bold text-[var(--bs-ink)]" translate="no">
           {current.display}
         </p>
         {current.subDisplay &&
         !(current.kind === "word-recall" && !locked) ? (
-          <p className="text-center text-sm text-[var(--bs-green)]">
+          <p
+            className="text-center text-sm text-[var(--bs-green)]"
+            translate={current.kind === "radical-pick" ? undefined : "no"}
+          >
             {current.subDisplay}
           </p>
         ) : null}
@@ -309,6 +312,7 @@ export function SpeedChallengeClient() {
                 disabled={locked}
                 onClick={() => pickOption(option)}
                 className={cls}
+                translate="no"
               >
                 {option}
               </button>

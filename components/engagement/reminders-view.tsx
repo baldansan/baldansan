@@ -108,7 +108,7 @@ export function RemindersView() {
               >
                 <div className="flex flex-wrap items-start justify-between gap-3">
                   <div>
-                    <p className="font-semibold text-slate-900">{reminder.title}</p>
+                    <p className="font-semibold text-slate-900" translate="no">{reminder.title}</p>
                     <p className="mt-1 text-sm text-slate-600">
                       {reminder.reminderTime ?? "—"} ·{" "}
                       {reminder.daysOfWeek.map((d) => DAY_LABELS[d]).join(", ")}

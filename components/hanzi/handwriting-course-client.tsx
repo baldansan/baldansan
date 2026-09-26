@@ -237,7 +237,7 @@ export function HandwritingCourseClient() {
                       className="flex w-full items-center justify-between gap-2 px-4 py-3 text-left"
                     >
                       <span className="min-w-0">
-                        <span className="block truncate text-sm font-bold text-[var(--app-text)]">
+                        <span className="block truncate text-sm font-bold text-[var(--app-text)]" translate="no">
                           {group.title}
                         </span>
                         <span
@@ -344,12 +344,12 @@ export function HandwritingCourseClient() {
                 <p className="text-xs font-bold uppercase tracking-wide text-amber-700">
                   {tr(locale, "🧠 Толгойдоо ургуулж бод")}
                 </p>
-                <p className="mt-1 text-sm leading-6 text-amber-900">
+                <p className="mt-1 text-sm leading-6 text-amber-900" translate="no">
                   {stories[activeChar].story}
                 </p>
                 {stories[activeChar].m ? (
                   <p className="mt-1 text-xs font-semibold text-amber-700">
-                    {tr(locale, "Утга:")} {stories[activeChar].m}
+                    {tr(locale, "Утга:")} <span translate="no">{stories[activeChar].m}</span>
                   </p>
                 ) : null}
               </div>
@@ -390,7 +390,7 @@ export function HandwritingCourseClient() {
               return (
                 <>
                   <div className="mb-3 rounded-2xl bg-amber-50 px-4 py-3 text-center ring-1 ring-amber-200">
-                    <p className="text-base font-bold text-amber-900">
+                    <p className="text-base font-bold text-amber-900" translate="no">
                       {meaning}
                     </p>
                     <div className="mt-1 flex items-center justify-center gap-2">

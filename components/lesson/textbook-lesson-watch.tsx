@@ -67,7 +67,7 @@ export function TextbookLessonWatchClient({
       {adminPreview ? <AdminPreviewBanner /> : null}
 
       <section>
-        <h1 className="text-xl font-bold leading-snug tracking-tight sm:text-3xl">
+        <h1 className="text-xl font-bold leading-snug tracking-tight sm:text-3xl" translate="no">
           {lesson.title}
         </h1>
         {lesson.chineseTitle ? (
@@ -106,7 +106,7 @@ export function TextbookLessonWatchClient({
           {overview ? (
             <SectionCard>
               <h2 className="text-sm font-semibold text-slate-900">Тойм</h2>
-              <p className="mt-2 text-sm leading-6 text-slate-700">{overview}</p>
+              <p className="mt-2 text-sm leading-6 text-slate-700" translate="no">{overview}</p>
             </SectionCard>
           ) : null}
 

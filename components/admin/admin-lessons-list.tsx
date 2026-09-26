@@ -130,8 +130,8 @@ export function AdminLessonsList({ reports }: Props) {
                 return (
                   <tr key={lesson.id} className="align-top hover:bg-emerald-50/30">
                     <td className="px-4 py-3">
-                      <p className="font-medium text-slate-900">{lesson.title}</p>
-                      <p className="text-xs text-slate-500">{lesson.chineseTitle}</p>
+                      <p className="font-medium text-slate-900" translate="no">{lesson.title}</p>
+                      <p className="text-xs text-slate-500" translate="no">{lesson.chineseTitle}</p>
                       {shortWarnings.length > 0 ? (
                         <p className="mt-1 text-xs text-amber-800">
                           {shortWarnings.join(" · ")}

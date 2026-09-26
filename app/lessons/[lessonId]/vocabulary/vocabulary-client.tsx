@@ -266,9 +266,9 @@ export function LessonVocabularyClient({
 
       <section>
         <h1 className="text-xl font-bold leading-snug tracking-tight sm:text-3xl">
-          {pageTitle} — {lesson.title}
+          {pageTitle} — <span translate="no">{lesson.title}</span>
         </h1>
-        <p className="mt-1 text-lg text-slate-700">{lesson.chineseTitle}</p>
+        <p className="mt-1 text-lg text-slate-700" translate="no">{lesson.chineseTitle}</p>
         <p className="mt-2 text-sm text-slate-600 sm:text-base">{pageSubtitle}</p>
         <div className="mt-4 rounded-2xl bg-emerald-50 px-4 py-3 ring-1 ring-emerald-200 sm:rounded-3xl">
           <p className="text-xs font-semibold uppercase tracking-wide text-emerald-700">
@@ -474,7 +474,7 @@ export function LessonVocabularyClient({
                     </span>
                   </div>
                 </div>
-                <p className="mt-2 text-sm leading-6 text-slate-600 break-words">
+                <p className="mt-2 text-sm leading-6 text-slate-600 break-words" translate="no">
                   {word.mongolian}
                 </p>
 
@@ -495,7 +495,7 @@ export function LessonVocabularyClient({
                       />
                     ) : null}
                   </div>
-                  <p className="text-sm text-slate-600 break-words">
+                  <p className="text-sm text-slate-600 break-words" translate="no">
                     {word.exampleMongolian}
                   </p>
                 </div>
@@ -582,7 +582,7 @@ export function LessonVocabularyClient({
               >
                 <p className="text-2xl font-bold text-slate-900">{word.chinese}</p>
                 <p className="text-sm text-emerald-700">{word.pinyin}</p>
-                <p className="mt-1 text-sm text-slate-600">{word.mongolian}</p>
+                <p className="mt-1 text-sm text-slate-600" translate="no">{word.mongolian}</p>
                 <div className="mt-3 flex items-center gap-2">
                   <SpeakerButton
                     text={word.chinese}

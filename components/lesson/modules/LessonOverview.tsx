@@ -129,17 +129,17 @@ export default function LessonOverview({
     <>
       <div className="bs-card bs-hero">
         <h2>
-          {lesson.level} · Сэдэв: {lesson.theme.mn}
+          {lesson.level} · Сэдэв: <span translate="no">{lesson.theme.mn}</span>
         </h2>
         <div className="bs-zh-title">{lesson.title.zh}</div>
-        <div className="bs-mn-title">{lesson.title.mn}</div>
+        <div className="bs-mn-title" translate="no">{lesson.title.mn}</div>
         {lesson.title.pinyin && <div className="bs-py">{lesson.title.pinyin}</div>}
 
         <div className="bs-teacher">
           <div className="bs-mascot">🐫</div>
           <div>
             <div className="bs-who">Тэмээ багш</div>
-            <p>{lesson.hook.teacher_mn}</p>
+            <p translate="no">{lesson.hook.teacher_mn}</p>
           </div>
         </div>
 

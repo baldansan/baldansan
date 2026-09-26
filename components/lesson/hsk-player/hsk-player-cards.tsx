@@ -66,7 +66,7 @@ function HskStepImageSlot({
         variant={display.variant}
       />
       {display.caption ? (
-        <p
+        <p translate="no"
           className="mt-1.5 text-center text-xs leading-5"
           style={{ color: HSK_PLAYER.muted }}
         >
@@ -111,7 +111,7 @@ export function TeacherSpeechCard({
 }) {
   return (
     <HskPlayerCard>
-      <p className="text-xs font-bold uppercase tracking-wide" style={{ color: HSK_PLAYER.muted }}>
+      <p translate="no" className="text-xs font-bold uppercase tracking-wide" style={{ color: HSK_PLAYER.muted }}>
         {title}
       </p>
       <HskStepImageSlot
@@ -133,7 +133,7 @@ export function TeacherSpeechCard({
           className="relative min-w-0 flex-1 rounded-2xl rounded-tl-md px-4 py-3"
           style={{ backgroundColor: HSK_PLAYER.softYellow }}
         >
-          <ul className="space-y-2 text-sm leading-6" style={{ color: HSK_PLAYER.text }}>
+          <ul translate="no" className="space-y-2 text-sm leading-6" style={{ color: HSK_PLAYER.text }}>
             {bullets.map((line) => (
               <li key={line}>{line}</li>
             ))}
@@ -141,7 +141,7 @@ export function TeacherSpeechCard({
         </div>
       </div>
       {tip ? (
-        <p
+        <p translate="no"
           className="mt-3 rounded-xl px-3 py-2 text-xs leading-5"
           style={{ backgroundColor: HSK_PLAYER.softBlue, color: HSK_PLAYER.text }}
         >
@@ -195,18 +195,18 @@ export function KeyPhraseCard({
         <p className="mt-2 text-xl font-semibold" style={{ color: HSK_PLAYER.primary }}>
           {pinyin}
         </p>
-        <p className="mt-2 text-base" style={{ color: HSK_PLAYER.muted }}>
+        <p translate="no" className="mt-2 text-base" style={{ color: HSK_PLAYER.muted }}>
           {mongolian}
         </p>
         {breakdown ? (
-          <span
+          <span translate="no"
             className="mt-3 inline-block rounded-full px-3 py-1 text-sm font-medium"
             style={{ backgroundColor: HSK_PLAYER.softGreen, color: HSK_PLAYER.text }}
           >
             {breakdown}
           </span>
         ) : null}
-        <p className="mt-3 text-sm leading-6" style={{ color: HSK_PLAYER.muted }}>
+        <p translate="no" className="mt-3 text-sm leading-6" style={{ color: HSK_PLAYER.muted }}>
           {usage}
         </p>
         {containsTargetScript(chinese) ? (
@@ -253,7 +253,7 @@ export function PinyinPracticeCard({
         teachingImages={teachingImages}
         alt="Pinyin"
       />
-      <ul className="mt-3 space-y-2">
+      <ul translate="no" className="mt-3 space-y-2">
         {explainer.map((line) => (
           <li
             key={line}
@@ -278,7 +278,7 @@ export function PinyinPracticeCard({
                 {row.pinyin}
               </p>
               {row.hint ? (
-                <p className="text-xs" style={{ color: HSK_PLAYER.muted }}>
+                <p translate="no" className="text-xs" style={{ color: HSK_PLAYER.muted }}>
                   {row.hint}
                 </p>
               ) : null}
@@ -312,7 +312,7 @@ function ToneProductionCard({ tone }: { tone: HskToneItem }) {
       className="rounded-2xl px-4 py-4"
       style={{ backgroundColor: HSK_PLAYER.softGreen }}
     >
-      <p className="text-sm font-bold" style={{ color: HSK_PLAYER.text }}>
+      <p translate="no" className="text-sm font-bold" style={{ color: HSK_PLAYER.text }}>
         {tone.nameMn}
       </p>
       <div className="mt-3 space-y-2.5 text-sm" style={{ color: HSK_PLAYER.text }}>
@@ -337,7 +337,7 @@ function ToneProductionCard({ tone }: { tone: HskToneItem }) {
             <p className="text-xs font-semibold" style={{ color: HSK_PLAYER.muted }}>
               {HSK_TONE_LEARNER_LABELS.howToSay}
             </p>
-            <p>{howToSay}</p>
+            <p translate="no">{howToSay}</p>
           </div>
         ) : null}
         {tone.repeatMn ? (
@@ -345,7 +345,7 @@ function ToneProductionCard({ tone }: { tone: HskToneItem }) {
             <p className="text-xs font-semibold" style={{ color: HSK_PLAYER.muted }}>
               {HSK_TONE_LEARNER_LABELS.repeat}
             </p>
-            <p className="font-semibold">{tone.repeatMn}</p>
+            <p translate="no" className="font-semibold">{tone.repeatMn}</p>
           </div>
         ) : null}
         {tone.learnerHintMn ? (
@@ -353,7 +353,7 @@ function ToneProductionCard({ tone }: { tone: HskToneItem }) {
             <p className="text-xs font-semibold" style={{ color: HSK_PLAYER.muted }}>
               {HSK_TONE_LEARNER_LABELS.hint}
             </p>
-            <p>{tone.learnerHintMn}</p>
+            <p translate="no">{tone.learnerHintMn}</p>
           </div>
         ) : null}
       </div>
@@ -369,7 +369,7 @@ function ToneDetailCard({ tone }: { tone: HskToneItem }) {
       className="rounded-2xl px-3 py-3"
       style={{ backgroundColor: HSK_PLAYER.softGreen }}
     >
-      <p className="text-sm font-bold" style={{ color: HSK_PLAYER.text }}>
+      <p translate="no" className="text-sm font-bold" style={{ color: HSK_PLAYER.text }}>
         {tone.nameMn}
       </p>
       <div className="mt-2 space-y-2 text-sm" style={{ color: HSK_PLAYER.text }}>
@@ -384,7 +384,7 @@ function ToneDetailCard({ tone }: { tone: HskToneItem }) {
             <p className="text-xs font-semibold" style={{ color: HSK_PLAYER.muted }}>
               {HSK_TONE_LEARNER_LABELS.motion}
             </p>
-            <p>
+            <p translate="no">
               {tone.motionSymbol}
               {tone.motionMn ? ` · ${tone.motionMn}` : ""}
             </p>
@@ -395,7 +395,7 @@ function ToneDetailCard({ tone }: { tone: HskToneItem }) {
             <p className="text-xs font-semibold" style={{ color: HSK_PLAYER.muted }}>
               {HSK_TONE_LEARNER_LABELS.howToSay}
             </p>
-            <p>{howToSay}</p>
+            <p translate="no">{howToSay}</p>
           </div>
         ) : null}
         {tone.learnerHintMn ? (
@@ -403,7 +403,7 @@ function ToneDetailCard({ tone }: { tone: HskToneItem }) {
             <p className="text-xs font-semibold" style={{ color: HSK_PLAYER.muted }}>
               {HSK_TONE_LEARNER_LABELS.hint}
             </p>
-            <p>{tone.learnerHintMn}</p>
+            <p translate="no">{tone.learnerHintMn}</p>
           </div>
         ) : null}
       </div>
@@ -457,7 +457,7 @@ export function TonePracticeCard({
         )}
       </div>
       {toneNote ? (
-        <p
+        <p translate="no"
           className="mt-3 rounded-xl px-3 py-2.5 text-sm"
           style={{ backgroundColor: HSK_PLAYER.softYellow, color: HSK_PLAYER.text }}
         >
@@ -465,7 +465,7 @@ export function TonePracticeCard({
         </p>
       ) : null}
       {toneWarning ? (
-        <p
+        <p translate="no"
           className="mt-2 rounded-xl px-3 py-2 text-xs leading-5"
           style={{ backgroundColor: HSK_PLAYER.softPink, color: HSK_PLAYER.text }}
         >
@@ -601,7 +601,7 @@ export function CommonMistakesCard({
 
   return (
     <HskPlayerCard>
-      <p className="text-xs font-bold uppercase tracking-wide" style={{ color: HSK_PLAYER.muted }}>
+      <p translate="no" className="text-xs font-bold uppercase tracking-wide" style={{ color: HSK_PLAYER.muted }}>
         {step.titleMn || tr(locale, "Түгээмэл алдаа")}
       </p>
       <HskStepImageSlot
@@ -612,7 +612,7 @@ export function CommonMistakesCard({
         alt={step.titleMn}
       />
       {step.teacherSpeechMn || step.bulletsMn.length > 0 ? (
-        <p
+        <p translate="no"
           className="mt-3 rounded-xl px-3 py-2.5 text-sm leading-6"
           style={{ backgroundColor: HSK_PLAYER.softYellow, color: HSK_PLAYER.text }}
         >
@@ -647,7 +647,7 @@ export function CommonMistakesCard({
         ))}
       </div>
       {pairs[0]?.mongolian ? (
-        <p className="mt-3 text-sm leading-6" style={{ color: HSK_PLAYER.muted }}>
+        <p translate="no" className="mt-3 text-sm leading-6" style={{ color: HSK_PLAYER.muted }}>
           {pairs[0].mongolian}
         </p>
       ) : null}
@@ -760,7 +760,7 @@ export function LessonCompleteCard({
         <h2 className="mt-3 text-xl font-bold" style={{ color: HSK_PLAYER.text }}>
           {tr(locale, "Маш сайн!")}
         </h2>
-        <p className="mt-2 text-sm leading-6" style={{ color: HSK_PLAYER.muted }}>
+        <p translate="no" className="mt-2 text-sm leading-6" style={{ color: HSK_PLAYER.muted }}>
           {message}
         </p>
         {showSrsBlock ? (
@@ -827,7 +827,7 @@ export function PhraseBreakdownCard({
 
   return (
     <HskPlayerCard>
-      <h2 className="text-lg font-bold" style={{ color: HSK_PLAYER.text }}>
+      <h2 translate="no" className="text-lg font-bold" style={{ color: HSK_PLAYER.text }}>
         {step.titleMn || "你 + 好 = 你好"}
       </h2>
       <HskStepImageSlot
@@ -838,7 +838,7 @@ export function PhraseBreakdownCard({
         alt={step.titleMn}
       />
       {step.teacherSpeechMn ? (
-        <p className="mt-3 text-sm leading-6" style={{ color: HSK_PLAYER.muted }}>
+        <p translate="no" className="mt-3 text-sm leading-6" style={{ color: HSK_PLAYER.muted }}>
           {step.teacherSpeechMn}
         </p>
       ) : null}
@@ -856,7 +856,7 @@ export function PhraseBreakdownCard({
               <p className="text-sm font-medium" style={{ color: HSK_PLAYER.primary }}>
                 {part.pinyin}
               </p>
-              <p className="text-sm" style={{ color: HSK_PLAYER.muted }}>
+              <p translate="no" className="text-sm" style={{ color: HSK_PLAYER.muted }}>
                 {part.mongolian}
               </p>
             </div>
@@ -873,7 +873,7 @@ export function PhraseBreakdownCard({
         ))}
       </div>
       {step.bulletsMn.length > 0 ? (
-        <ul className="mt-4 space-y-2">
+        <ul translate="no" className="mt-4 space-y-2">
           {step.bulletsMn.map((line) => (
             <li
               key={line}
@@ -906,7 +906,7 @@ export function ToneSandhiCard({
 
   return (
     <HskPlayerCard>
-      <h2 className="text-lg font-bold" style={{ color: HSK_PLAYER.text }}>
+      <h2 translate="no" className="text-lg font-bold" style={{ color: HSK_PLAYER.text }}>
         {step.titleMn}
       </h2>
       <HskStepImageSlot
@@ -928,14 +928,14 @@ export function ToneSandhiCard({
             className="rounded-2xl px-3 py-3 text-center"
             style={{ backgroundColor: HSK_PLAYER.softGreen }}
           >
-            <p className="text-xs font-semibold" style={{ color: HSK_PLAYER.muted }}>
+            <p translate="no" className="text-xs font-semibold" style={{ color: HSK_PLAYER.muted }}>
               {row.label}
             </p>
             <p className="mt-1 text-xl font-bold" style={{ color: HSK_PLAYER.primary }}>
               {row.pinyin}
             </p>
             {row.mongolian ? (
-              <p className="mt-1 text-sm" style={{ color: HSK_PLAYER.text }}>
+              <p translate="no" className="mt-1 text-sm" style={{ color: HSK_PLAYER.text }}>
                 {row.mongolian}
               </p>
             ) : null}
@@ -943,7 +943,7 @@ export function ToneSandhiCard({
         ))}
       </div>
       {step.bulletsMn.length > 0 ? (
-        <ul className="mt-4 space-y-2">
+        <ul translate="no" className="mt-4 space-y-2">
           {step.bulletsMn.map((line) => (
             <li
               key={line}
@@ -956,7 +956,7 @@ export function ToneSandhiCard({
         </ul>
       ) : null}
       {step.teacherSpeechMn ? (
-        <p
+        <p translate="no"
           className="mt-3 rounded-xl px-3 py-2 text-xs leading-5"
           style={{ backgroundColor: HSK_PLAYER.softBlue, color: HSK_PLAYER.text }}
         >
@@ -988,7 +988,7 @@ export function CharactersLessonCard({
 
   return (
     <HskPlayerCard>
-      <h2 className="text-lg font-bold" style={{ color: HSK_PLAYER.text }}>
+      <h2 translate="no" className="text-lg font-bold" style={{ color: HSK_PLAYER.text }}>
         {step.titleMn || "Ханз ба зураас"}
       </h2>
       <HskStepImageSlot
@@ -999,7 +999,7 @@ export function CharactersLessonCard({
         alt={step.titleMn}
       />
       {step.bulletsMn.length > 0 ? (
-        <ul className="mt-3 space-y-2">
+        <ul translate="no" className="mt-3 space-y-2">
           {step.bulletsMn.map((line) => (
             <li
               key={line}
@@ -1024,11 +1024,11 @@ export function CharactersLessonCard({
             <p className="text-sm font-medium" style={{ color: HSK_PLAYER.primary }}>
               {ch.pinyin}
             </p>
-            <p className="text-xs" style={{ color: HSK_PLAYER.muted }}>
+            <p translate="no" className="text-xs" style={{ color: HSK_PLAYER.muted }}>
               {ch.mongolian}
             </p>
             {ch.label ? (
-              <p className="mt-1 text-[11px]" style={{ color: HSK_PLAYER.muted }}>
+              <p translate="no" className="mt-1 text-[11px]" style={{ color: HSK_PLAYER.muted }}>
                 {ch.label}
               </p>
             ) : null}
@@ -1062,7 +1062,7 @@ export function GuidedStepCard({
 
   return (
     <HskPlayerCard>
-      <p className="text-xs font-bold uppercase tracking-wide" style={{ color: HSK_PLAYER.muted }}>
+      <p translate="no" className="text-xs font-bold uppercase tracking-wide" style={{ color: HSK_PLAYER.muted }}>
         {step.titleMn}
       </p>
       <HskStepImageSlot
@@ -1083,12 +1083,12 @@ export function GuidedStepCard({
         </p>
       ) : null}
       {step.mongolian ? (
-        <p className="mt-1 text-center text-sm" style={{ color: HSK_PLAYER.muted }}>
+        <p translate="no" className="mt-1 text-center text-sm" style={{ color: HSK_PLAYER.muted }}>
           {step.mongolian}
         </p>
       ) : null}
       {step.bulletsMn.length > 0 ? (
-        <ul className="mt-4 space-y-2">
+        <ul translate="no" className="mt-4 space-y-2">
           {step.bulletsMn.map((line) => (
             <li
               key={line}
@@ -1109,13 +1109,13 @@ export function GuidedStepCard({
               style={{ backgroundColor: HSK_PLAYER.softGreen, color: HSK_PLAYER.text }}
             >
               {example.label ? (
-                <p className="text-xs font-semibold" style={{ color: HSK_PLAYER.muted }}>
+                <p translate="no" className="text-xs font-semibold" style={{ color: HSK_PLAYER.muted }}>
                   {example.label}
                 </p>
               ) : null}
               {example.chinese ? <p className="text-lg font-bold">{example.chinese}</p> : null}
               {example.pinyin ? <p style={{ color: HSK_PLAYER.primary }}>{example.pinyin}</p> : null}
-              {example.mongolian ? <p className="text-xs">{example.mongolian}</p> : null}
+              {example.mongolian ? <p translate="no" className="text-xs">{example.mongolian}</p> : null}
             </div>
           ))}
         </div>

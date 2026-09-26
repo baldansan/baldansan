@@ -127,7 +127,7 @@ export function WordPracticeStrokeView({
       </button>
       <header className="bs-wpl-stroke-head">
         <h2 className="bs-wpl-stroke-title">✏️ {tr(locale, "Зурлагын дасгал")}</h2>
-        <p className="bs-wpl-stroke-meta">
+        <p className="bs-wpl-stroke-meta" translate="no">
           {index + 1} / {total} · {current.word} ({current.meaning})
         </p>
       </header>

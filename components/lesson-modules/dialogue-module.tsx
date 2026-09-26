@@ -58,6 +58,7 @@ function DialogueBubble({
           <p
             className="mb-1 text-[10px] font-semibold uppercase tracking-wide"
             style={{ color: LESSON_MODULE.textSubtle }}
+            translate="no"
           >
             {line.speaker}
           </p>
@@ -82,6 +83,7 @@ function DialogueBubble({
               <p
                 className="mt-1.5 text-sm leading-relaxed"
                 style={{ color: LESSON_MODULE.textMuted }}
+                translate="no"
               >
                 {line.mongolian}
               </p>

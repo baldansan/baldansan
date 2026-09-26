@@ -80,6 +80,7 @@ export function RadicalHanziPanel({
               className={`mt-1 leading-snug text-[var(--app-muted)] ${
                 hideHanzi && !revealed ? "text-base font-bold text-[#33433b]" : "text-[13px]"
               }`}
+              translate="no"
             >
               {entry.meaning_mn}
             </p>

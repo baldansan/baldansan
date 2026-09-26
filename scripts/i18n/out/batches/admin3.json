@@ -1,0 +1,2162 @@
+[
+{
+"mn": "← Хичээлүүд",
+"ctx": "components/admin/lesson-edit-summary-header.tsx"
+},
+{
+"mn": "Гаргаж авахад алдаа гарлаа.",
+"ctx": "components/admin/lesson-export-card.tsx"
+},
+{
+"mn": "JSON нөөц хуулбар бэлэн боллоо.",
+"ctx": "components/admin/lesson-export-card.tsx"
+},
+{
+"mn": "Эхлээд «JSON нөөц үүсгэх» товчийг дарна уу.",
+"ctx": "components/admin/lesson-export-card.tsx"
+},
+{
+"mn": "JSON хуулагдлаа.",
+"ctx": "components/admin/lesson-export-card.tsx"
+},
+{
+"mn": "Хуулах боломжгүй байна. Доорх талбараас гараар хуулна уу.",
+"ctx": "components/admin/lesson-export-card.tsx"
+},
+{
+"mn": "Хичээлийн нөөц хуулбар гаргах",
+"ctx": "components/admin/lesson-export-card.tsx"
+},
+{
+"mn": "Энэ хичээлийн ерөнхий мэдээлэл, хадмал, үгсийн сан, дасгалыг JSON нөөц хуулбар болгон гаргана. Бөөнөөр оруулах хэсэгт агуулгын жагсаалтуудыг наан ашиглаж болно (`lesson` хэсгийг тооцохгүй).",
+"ctx": "components/admin/lesson-export-card.tsx"
+},
+{
+"mn": "Дасгал:",
+"ctx": "components/admin/lesson-export-card.tsx"
+},
+{
+"mn": "Гаргасан:",
+"ctx": "components/admin/lesson-export-card.tsx"
+},
+{
+"mn": "JSON нөөц үүсгэх",
+"ctx": "components/admin/lesson-export-card.tsx"
+},
+{
+"mn": "JSON татаж авах",
+"ctx": "components/admin/lesson-export-card.tsx"
+},
+{
+"mn": "Гаргасан JSON",
+"ctx": "components/admin/lesson-export-card.tsx"
+},
+{
+"mn": "«JSON нөөц үүсгэх» товчийг дарсны дараа энд харагдана.",
+"ctx": "components/admin/lesson-export-card.tsx"
+},
+{
+"mn": "Курсын ID",
+"ctx": "components/admin/lesson-form-fields.tsx"
+},
+{
+"mn": "Дэд гарчиг",
+"ctx": "components/admin/lesson-form-fields.tsx"
+},
+{
+"mn": "Тайлбар",
+"ctx": "components/admin/lesson-form-fields.tsx"
+},
+{
+"mn": "Үргэлжлэх хугацаа",
+"ctx": "components/admin/lesson-form-fields.tsx"
+},
+{
+"mn": "8 мин",
+"ctx": "components/admin/lesson-form-fields.tsx"
+},
+{
+"mn": "Дарааллын дугаар",
+"ctx": "components/admin/lesson-form-fields.tsx"
+},
+{
+"mn": "Курсын дарааллын дугаар (заавал).",
+"ctx": "components/admin/lesson-form-fields.tsx"
+},
+{
+"mn": "Хоосон бол курс доторх дараагийн дугаар автоматаар.",
+"ctx": "components/admin/lesson-form-fields.tsx"
+},
+{
+"mn": "Үгсийн тоо",
+"ctx": "components/admin/lesson-form-fields.tsx"
+},
+{
+"mn": "Дасгалын тоо",
+"ctx": "components/admin/lesson-form-fields.tsx"
+},
+{
+"mn": "Бүтэн хичээлийн JSON-г сайжруулах",
+"ctx": "components/admin/lesson-improvement-prompts.tsx"
+},
+{
+"mn": "Одоогийн анхааруулга болон хичээлийн агуулгад тулгуурлан бүхэлд нь сайжруулна.",
+"ctx": "components/admin/lesson-improvement-prompts.tsx"
+},
+{
+"mn": "Дутуу хадмал / үгсийн сан / дасгалыг нөхөх",
+"ctx": "components/admin/lesson-improvement-prompts.tsx"
+},
+{
+"mn": "Нийтлэхэд шаардлагатай доод хэмжээнд хүргэж хоосон хэсгүүдийг бөглөнө.",
+"ctx": "components/admin/lesson-improvement-prompts.tsx"
+},
+{
+"mn": "Дасгалын чанарыг сайжруулах",
+"ctx": "components/admin/lesson-improvement-prompts.tsx"
+},
+{
+"mn": "Асуултыг тодорхой болгож, буруу хариултуудыг сайжруулж, монгол тайлбар нэмнэ.",
+"ctx": "components/admin/lesson-improvement-prompts.tsx"
+},
+{
+"mn": "Үгийн жишээ өгүүлбэрийг сайжруулах",
+"ctx": "components/admin/lesson-improvement-prompts.tsx"
+},
+{
+"mn": "Илүү тодорхой жишээ өгүүлбэр, жам ёсны монгол орчуулга.",
+"ctx": "components/admin/lesson-improvement-prompts.tsx"
+},
+{
+"mn": "Хадмал засах (пиньинь + монгол)",
+"ctx": "components/admin/lesson-improvement-prompts.tsx"
+},
+{
+"mn": "Хадмалын мөрүүдэд дутуу байгаа орчуулгыг нөхнө.",
+"ctx": "components/admin/lesson-improvement-prompts.tsx"
+},
+{
+"mn": "Нийтлэхэд бэлэн агуулга бэлдэх",
+"ctx": "components/admin/lesson-improvement-prompts.tsx"
+},
+{
+"mn": "Шалгах жагсаалтад тулгуурлан чанарын шалгалтыг давж нийтлэхэд бэлэн JSON гаргана.",
+"ctx": "components/admin/lesson-improvement-prompts.tsx"
+},
+{
+"mn": "Хичээл нийтлэгдлээ.",
+"ctx": "components/admin/lesson-list-actions.tsx"
+},
+{
+"mn": "Хичээл ноорог боллоо.",
+"ctx": "components/admin/lesson-list-actions.tsx"
+},
+{
+"mn": "Хичээл устгагдлаа.",
+"ctx": "components/admin/lesson-list-actions.tsx"
+},
+{
+"mn": "Засах",
+"ctx": "components/admin/lesson-list-actions.tsx"
+},
+{
+"mn": "Нийтлэхээ болиж байна…",
+"ctx": "components/admin/lesson-list-actions.tsx"
+},
+{
+"mn": "Нийтлэхээ болих",
+"ctx": "components/admin/lesson-list-actions.tsx"
+},
+{
+"mn": "Нийтэлж байна…",
+"ctx": "components/admin/lesson-list-actions.tsx"
+},
+{
+"mn": "Медиа мэдээлэл хадгалагдлаа.",
+"ctx": "components/admin/lesson-media-editor.tsx"
+},
+{
+"mn": "Бичлэг, нүүр зураг, аудионы холбоос болон эх сурвалжийн тэмдэглэлийг цэвэрлэх үү?",
+"ctx": "components/admin/lesson-media-editor.tsx"
+},
+{
+"mn": "Медиа мэдээлэл цэвэрлэгдлээ.",
+"ctx": "components/admin/lesson-media-editor.tsx"
+},
+{
+"mn": "Медиа ба заах материал",
+"ctx": "components/admin/lesson-media-editor.tsx"
+},
+{
+"mn": "Нүүр зураг, хичээлийн аудио, бичлэг, солонгос хэлний заах зургууд.",
+"ctx": "components/admin/lesson-media-editor.tsx"
+},
+{
+"mn": "Медиа холбоос (гараар)",
+"ctx": "components/admin/lesson-media-editor.tsx"
+},
+{
+"mn": "Гадаад холбоос буулгах эсвэл байршуулсан холбоосыг солино.",
+"ctx": "components/admin/lesson-media-editor.tsx"
+},
+{
+"mn": "Одоогийн төлөв:",
+"ctx": "components/admin/lesson-media-editor.tsx"
+},
+{
+"mn": "Холбоосоос төлөвийг автоматаар тогтоох",
+"ctx": "components/admin/lesson-media-editor.tsx"
+},
+{
+"mn": "Нүүр зургийн урьдчилсан харагдац",
+"ctx": "components/admin/lesson-media-editor.tsx"
+},
+{
+"mn": "Аудио нээх",
+"ctx": "components/admin/lesson-media-editor.tsx"
+},
+{
+"mn": "Бичлэг нээх",
+"ctx": "components/admin/lesson-media-editor.tsx"
+},
+{
+"mn": "Нүүр зургийн холбоос",
+"ctx": "components/admin/lesson-media-editor.tsx"
+},
+{
+"mn": "Аудионы холбоос",
+"ctx": "components/admin/lesson-media-editor.tsx"
+},
+{
+"mn": "Эх сурвалжийн тэмдэглэл",
+"ctx": "components/admin/lesson-media-editor.tsx"
+},
+{
+"mn": "Эх сурвалж, зохиогчийн эрх, файлын анхны нэр…",
+"ctx": "components/admin/lesson-media-editor.tsx"
+},
+{
+"mn": "Холбоосыг хадгалах",
+"ctx": "components/admin/lesson-media-editor.tsx"
+},
+{
+"mn": "Цэвэрлэж байна…",
+"ctx": "components/admin/lesson-media-editor.tsx"
+},
+{
+"mn": "Медиаг цэвэрлэх",
+"ctx": "components/admin/lesson-media-editor.tsx"
+},
+{
+"mn": "✓ Нүүр зураг",
+"ctx": "components/admin/lesson-media-teaching-panel.tsx"
+},
+{
+"mn": "○ Нүүр зураг — дутуу",
+"ctx": "components/admin/lesson-media-teaching-panel.tsx"
+},
+{
+"mn": "✓ Хичээлийн аудио",
+"ctx": "components/admin/lesson-media-teaching-panel.tsx"
+},
+{
+"mn": "○ Хичээлийн аудио — байхгүй бол хиймэл дуу уншина",
+"ctx": "components/admin/lesson-media-teaching-panel.tsx"
+},
+{
+"mn": "✓ Бичлэгийн холбоос",
+"ctx": "components/admin/lesson-media-teaching-panel.tsx"
+},
+{
+"mn": "○ Бичлэг — солонгос хэлний сурах бичигт заавал биш",
+"ctx": "components/admin/lesson-media-teaching-panel.tsx"
+},
+{
+"mn": "○ Заах зураг — заавал биш",
+"ctx": "components/admin/lesson-media-teaching-panel.tsx"
+},
+{
+"mn": "Оруулсан заах зургууд",
+"ctx": "components/admin/lesson-media-teaching-panel.tsx"
+},
+{
+"mn": "Солонгос хэлний санал болгож буй заах зургууд",
+"ctx": "components/admin/lesson-media-teaching-panel.tsx"
+},
+{
+"mn": "Зургуудыг ZIP багцын",
+"ctx": "components/admin/lesson-media-teaching-panel.tsx"
+},
+{
+"mn": "хавтсанд хийж,",
+"ctx": "components/admin/lesson-media-teaching-panel.tsx"
+},
+{
+"mn": "файлын",
+"ctx": "components/admin/lesson-media-teaching-panel.tsx"
+},
+{
+"mn": "жагсаалтад бичнэ. Үг бүрийн аудио",
+"ctx": "components/admin/lesson-media-teaching-panel.tsx"
+},
+{
+"mn": "хавтсанд орж, үгийн мөрөнд",
+"ctx": "components/admin/lesson-media-teaching-panel.tsx"
+},
+{
+"mn": "гэж заана.",
+"ctx": "components/admin/lesson-media-teaching-panel.tsx"
+},
+{
+"mn": "Нүүр зураг, аудио, бичлэгээ дээр талд байршуулна уу. Гадаад холбоосыг доорх гараар бөглөх хэсэгт буулгаж болно.",
+"ctx": "components/admin/lesson-media-teaching-panel.tsx"
+},
+{
+"mn": "Файл сонгоно уу.",
+"ctx": "components/admin/lesson-media-upload-card.tsx"
+},
+{
+"mn": "Байршуулж чадсангүй.",
+"ctx": "components/admin/lesson-media-upload-card.tsx"
+},
+{
+"mn": "Аудио нээх →",
+"ctx": "components/admin/lesson-media-upload-card.tsx"
+},
+{
+"mn": "Бичлэг нээх →",
+"ctx": "components/admin/lesson-media-upload-card.tsx"
+},
+{
+"mn": "Одоогоор файл байршуулаагүй байна.",
+"ctx": "components/admin/lesson-media-upload-card.tsx"
+},
+{
+"mn": "Байршуулж байна…",
+"ctx": "components/admin/lesson-media-upload-card.tsx"
+},
+{
+"mn": "Медиа файл байршуулах",
+"ctx": "components/admin/lesson-media-upload-card.tsx"
+},
+{
+"mn": "Файлууд Supabase Storage-ийн",
+"ctx": "components/admin/lesson-media-upload-card.tsx"
+},
+{
+"mn": "хадгалалтад орно. Нээлттэй холбоос нь хичээлийн медиа талбарт автоматаар хадгалагдана.",
+"ctx": "components/admin/lesson-media-upload-card.tsx"
+},
+{
+"mn": "Ерөнхий мэдээлэл хадгалагдлаа.",
+"ctx": "components/admin/lesson-metadata-editor.tsx"
+},
+{
+"mn": "Тоо шинэчлэгдлээ.",
+"ctx": "components/admin/lesson-metadata-editor.tsx"
+},
+{
+"mn": "Хичээлийн ерөнхий мэдээлэл",
+"ctx": "components/admin/lesson-metadata-editor.tsx"
+},
+{
+"mn": "Гарчиг, тайлбар, төлөв, дарааллын дугаар, тоонуудыг хадгална.",
+"ctx": "components/admin/lesson-metadata-editor.tsx"
+},
+{
+"mn": "Үгсийн тоо бодит тоотой зөрж байна. (Бүртгэлд:",
+"ctx": "components/admin/lesson-metadata-editor.tsx"
+},
+{
+"mn": "· бодит:",
+"ctx": "components/admin/lesson-metadata-editor.tsx"
+},
+{
+"mn": "Дасгалын тоо бодит тоотой зөрж байна. (Бүртгэлд:",
+"ctx": "components/admin/lesson-metadata-editor.tsx"
+},
+{
+"mn": "Нийтлэхээс өмнө хадмал, үгсийн сан, дасгал бүрэн эсэхийг шалгана уу. Нийтлэх хэсэгт илүү нарийн шалгалт хийгдэнэ.",
+"ctx": "components/admin/lesson-metadata-editor.tsx"
+},
+{
+"mn": "Мэдээллийг хадгалах",
+"ctx": "components/admin/lesson-metadata-editor.tsx"
+},
+{
+"mn": "Шинэчилж байна…",
+"ctx": "components/admin/lesson-metadata-editor.tsx"
+},
+{
+"mn": "Тоог шинэчлэх",
+"ctx": "components/admin/lesson-metadata-editor.tsx"
+},
+{
+"mn": "Агуулга дутуу",
+"ctx": "components/admin/lesson-package-summary.tsx"
+},
+{
+"mn": "Хичээлийн багцын товч мэдээлэл",
+"ctx": "components/admin/lesson-package-summary.tsx"
+},
+{
+"mn": "Чанарын шалгалт хийж байна…",
+"ctx": "components/admin/lesson-package-summary.tsx"
+},
+{
+"mn": "Ерөнхий мэдээлэл",
+"ctx": "components/admin/lesson-package-summary.tsx"
+},
+{
+"mn": "Бүрэн",
+"ctx": "components/admin/lesson-package-summary.tsx"
+},
+{
+"mn": "Дутуу",
+"ctx": "components/admin/lesson-package-summary.tsx"
+},
+{
+"mn": "Монгол орчуулга дутуу:",
+"ctx": "components/admin/lesson-package-summary.tsx"
+},
+{
+"mn": "Дасгалын хариулт таарахгүй:",
+"ctx": "components/admin/lesson-package-summary.tsx"
+},
+{
+"mn": "Нийтлэхэд бэлэн эсэх:",
+"ctx": "components/admin/lesson-package-summary.tsx"
+},
+{
+"mn": "HSK түвшингийн хуваарилалт",
+"ctx": "components/admin/lesson-package-summary.tsx"
+},
+{
+"mn": "…бас",
+"ctx": "components/admin/lesson-package-summary.tsx"
+},
+{
+"mn": "анхааруулга байна",
+"ctx": "components/admin/lesson-package-summary.tsx"
+},
+{
+"mn": "Товч мэдээллийг харахын тулд хичээл сонгоно уу.",
+"ctx": "components/admin/lesson-package-summary.tsx"
+},
+{
+"mn": "Сэтгэл хөдөлгөм богино драм",
+"ctx": "components/admin/lesson-prompt-generator.tsx"
+},
+{
+"mn": "Өдөр тутмын яриа",
+"ctx": "components/admin/lesson-prompt-generator.tsx"
+},
+{
+"mn": "Taobao худалдааны хятад хэл",
+"ctx": "components/admin/lesson-prompt-generator.tsx"
+},
+{
+"mn": "Ажлын байрны яриа",
+"ctx": "components/admin/lesson-prompt-generator.tsx"
+},
+{
+"mn": "Хичээлийн агуулгын prompt үүсгэгч",
+"ctx": "components/admin/lesson-prompt-generator.tsx"
+},
+{
+"mn": "ChatGPT/Cursor-т өгөх JSON prompt үүсгэнэ. Ямар нэг үйлчилгээ рүү хандахгүй — зөвхөн текст бэлдэнэ.",
+"ctx": "components/admin/lesson-prompt-generator.tsx"
+},
+{
+"mn": "Өнгө аяс",
+"ctx": "components/admin/lesson-prompt-generator.tsx"
+},
+{
+"mn": "Хадмалын мөрийн тоо",
+"ctx": "components/admin/lesson-prompt-generator.tsx"
+},
+{
+"mn": "Үгийн тоо",
+"ctx": "components/admin/lesson-prompt-generator.tsx"
+},
+{
+"mn": "Пиньинь оруулах",
+"ctx": "components/admin/lesson-prompt-generator.tsx"
+},
+{
+"mn": "Хичээл:",
+"ctx": "components/admin/lesson-prompt-generator.tsx"
+},
+{
+"mn": "Жишээ prompt нуух",
+"ctx": "components/admin/lesson-prompt-generator.tsx"
+},
+{
+"mn": "Жишээ prompt харах",
+"ctx": "components/admin/lesson-prompt-generator.tsx"
+},
+{
+"mn": "Үүсгэсэн prompt (засаж болно)",
+"ctx": "components/admin/lesson-prompt-generator.tsx"
+},
+{
+"mn": "«Prompt үүсгэх» товчийг дарж эхэлнэ үү…",
+"ctx": "components/admin/lesson-prompt-generator.tsx"
+},
+{
+"mn": "Урьдчилж харах:",
+"ctx": "components/admin/lesson-prompt-generator.tsx"
+},
+{
+"mn": "Prompt үүсгэх",
+"ctx": "components/admin/lesson-prompt-generator.tsx"
+},
+{
+"mn": "Нөөц хуулбарын JSON зөв байна. Одоо сэргээж болно.",
+"ctx": "components/admin/lesson-restore-card.tsx"
+},
+{
+"mn": "солих",
+"ctx": "components/admin/lesson-restore-card.tsx"
+},
+{
+"mn": "нэмэх",
+"ctx": "components/admin/lesson-restore-card.tsx"
+},
+{
+"mn": ", ерөнхий мэдээлэлтэй",
+"ctx": "components/admin/lesson-restore-card.tsx"
+},
+{
+"mn": ", зөвхөн агуулга",
+"ctx": "components/admin/lesson-restore-card.tsx"
+},
+{
+"mn": "Нөөц хуулбараас амжилттай сэргээлээ.",
+"ctx": "components/admin/lesson-restore-card.tsx"
+},
+{
+"mn": "Нөөц хуулбараас сэргээх",
+"ctx": "components/admin/lesson-restore-card.tsx"
+},
+{
+"mn": "Гаргаж авсан JSON нөөц хуулбараа энд наагаад одоогийн хичээлд сэргээнэ. Хичээлийн ID өөрчлөгдөхгүй, суралцагчдын ахиц хөндөгдөхгүй.",
+"ctx": "components/admin/lesson-restore-card.tsx"
+},
+{
+"mn": "Нөөц хуулбарын JSON",
+"ctx": "components/admin/lesson-restore-card.tsx"
+},
+{
+"mn": "Гаргасан нөөц хуулбар эсвэл { \"lesson\", \"subtitles\", \"vocabulary\", \"quizQuestions\" }",
+"ctx": "components/admin/lesson-restore-card.tsx"
+},
+{
+"mn": "Одоогийн агуулга дээр нэмэх",
+"ctx": "components/admin/lesson-restore-card.tsx"
+},
+{
+"mn": "Одоогийн агуулгыг солих",
+"ctx": "components/admin/lesson-restore-card.tsx"
+},
+{
+"mn": "Солих сонголт нь одоогийн хадмал, үгсийн сан, дасгалыг устгаад нөөц хуулбараас дахин оруулна.",
+"ctx": "components/admin/lesson-restore-card.tsx"
+},
+{
+"mn": "Энэ үйлдлийг буцаах боломжгүй байж магадгүй. Нөөц хуулбараа өмнө нь гаргаж авсан эсэхээ шалгана уу.",
+"ctx": "components/admin/lesson-restore-card.tsx"
+},
+{
+"mn": "Юуг сэргээх вэ",
+"ctx": "components/admin/lesson-restore-card.tsx"
+},
+{
+"mn": "Зөвхөн агуулгыг сэргээх (ерөнхий мэдээллийг хөндөхгүй)",
+"ctx": "components/admin/lesson-restore-card.tsx"
+},
+{
+"mn": "Ерөнхий мэдээлэл + агуулгыг сэргээх (нөөц нь нийтлэгдсэн байсан бол төлөв нь ноорог болно)",
+"ctx": "components/admin/lesson-restore-card.tsx"
+},
+{
+"mn": "Нөөц хуулбарын товч мэдээлэл",
+"ctx": "components/admin/lesson-restore-card.tsx"
+},
+{
+"mn": "Эх хичээл:",
+"ctx": "components/admin/lesson-restore-card.tsx"
+},
+{
+"mn": "Гарчиг:",
+"ctx": "components/admin/lesson-restore-card.tsx"
+},
+{
+"mn": "Нөөц хуулбарыг шалгах",
+"ctx": "components/admin/lesson-restore-card.tsx"
+},
+{
+"mn": "Сэргээж байна…",
+"ctx": "components/admin/lesson-restore-card.tsx"
+},
+{
+"mn": "Нөөцөөс сэргээх",
+"ctx": "components/admin/lesson-restore-card.tsx"
+},
+{
+"mn": "(түгжээтэй)",
+"ctx": "components/admin/lesson-status-badge.tsx"
+},
+{
+"mn": "Энэ хичээлийн ажил",
+"ctx": "components/admin/lesson-tasks-card.tsx"
+},
+{
+"mn": "Энэ хичээлд хийх ажил алга.",
+"ctx": "components/admin/lesson-tasks-card.tsx"
+},
+{
+"mn": "Бүх зүйл хэвийн — яаралтай ажил алга.",
+"ctx": "components/admin/lesson-tasks-card.tsx"
+},
+{
+"mn": "Сүлжээний алдаа — дахин оролдоно уу.",
+"ctx": "components/admin/lesson-teacher-overlay-editor.tsx"
+},
+{
+"mn": "Энэ хичээл JSON",
+"ctx": "components/admin/lesson-teacher-overlay-editor.tsx"
+},
+{
+"mn": "ашигладаггүй тул энд засварлах боломжгүй. Эхлээд HSK ZIP импорт хийж JSON бүтэц үүсгэнэ үү.",
+"ctx": "components/admin/lesson-teacher-overlay-editor.tsx"
+},
+{
+"mn": "← Засвар руу буцах",
+"ctx": "components/admin/lesson-teacher-overlay-editor.tsx"
+},
+{
+"mn": "← Засвар",
+"ctx": "components/admin/lesson-teacher-overlay-editor.tsx"
+},
+{
+"mn": "Хадгалагдлаа — хичээлийн дэлгэц дээр шууд харагдана.",
+"ctx": "components/admin/lesson-teacher-overlay-editor.tsx"
+},
+{
+"mn": "Дүрэм ба үгийн тайлбар",
+"ctx": "components/admin/lesson-teacher-overlay-editor.tsx"
+},
+{
+"mn": "Дүрэм болон үгийн тайлбар — нэгийг нь сонгоод засна.",
+"ctx": "components/admin/lesson-teacher-overlay-editor.tsx"
+},
+{
+"mn": "Одоогоор юу ч алга.",
+"ctx": "components/admin/lesson-teacher-overlay-editor.tsx"
+},
+{
+"mn": "Үгийн тайлбар",
+"ctx": "components/admin/lesson-teacher-overlay-editor.tsx"
+},
+{
+"mn": "Форм",
+"ctx": "components/admin/lesson-teacher-overlay-editor.tsx"
+},
+{
+"mn": "JSON-оор засах",
+"ctx": "components/admin/lesson-teacher-overlay-editor.tsx"
+},
+{
+"mn": "Бэлэн блокыг энд буулгаж болно. Зөвхөн багшийн талбарууд (structure, teacher_notes, common_mistakes, check).",
+"ctx": "components/admin/lesson-teacher-overlay-editor.tsx"
+},
+{
+"mn": "JSON хэрэглэх",
+"ctx": "components/admin/lesson-teacher-overlay-editor.tsx"
+},
+{
+"mn": "Засах зүйлээ зүүн талаас сонгоно уу.",
+"ctx": "components/admin/lesson-teacher-overlay-editor.tsx"
+},
+{
+"mn": "Эх бичвэр (mainText)",
+"ctx": "components/admin/lesson-teacher-overlay-editor.tsx"
+},
+{
+"mn": "Өгүүлбэр бүрийн тайлбар, догол мөрийн утга, эргэцүүлэх асуултууд.",
+"ctx": "components/admin/lesson-teacher-overlay-editor.tsx"
+},
+{
+"mn": "mainText.sentences олдсонгүй — эх бичвэр импорт хийсний дараа энд гарна.",
+"ctx": "components/admin/lesson-teacher-overlay-editor.tsx"
+},
+{
+"mn": "Тайлбар (note)",
+"ctx": "components/admin/lesson-teacher-overlay-editor.tsx"
+},
+{
+"mn": "Түлхүүр бүтэц (таслалаар)",
+"ctx": "components/admin/lesson-teacher-overlay-editor.tsx"
+},
+{
+"mn": "Догол мөрийн утга",
+"ctx": "components/admin/lesson-teacher-overlay-editor.tsx"
+},
+{
+"mn": "+ Мөр нэмэх",
+"ctx": "components/admin/lesson-teacher-overlay-editor.tsx"
+},
+{
+"mn": "Эргэцүүлье",
+"ctx": "components/admin/lesson-teacher-overlay-editor.tsx"
+},
+{
+"mn": "+ Асуулт нэмэх",
+"ctx": "components/admin/lesson-teacher-overlay-editor.tsx"
+},
+{
+"mn": "Бүтэц (structure)",
+"ctx": "components/admin/lesson-teacher-overlay-editor.tsx"
+},
+{
+"mn": "该/应该 + 如何 + үйл үг",
+"ctx": "components/admin/lesson-teacher-overlay-editor.tsx"
+},
+{
+"mn": "Багшийн зөвлөгөө (teacher_notes)",
+"ctx": "components/admin/lesson-teacher-overlay-editor.tsx"
+},
+{
+"mn": "Буруу (wrong)",
+"ctx": "components/admin/lesson-teacher-overlay-editor.tsx"
+},
+{
+"mn": "Зөв (right)",
+"ctx": "components/admin/lesson-teacher-overlay-editor.tsx"
+},
+{
+"mn": "Яагаад (why)",
+"ctx": "components/admin/lesson-teacher-overlay-editor.tsx"
+},
+{
+"mn": "Шалгаад үз (check)",
+"ctx": "components/admin/lesson-teacher-overlay-editor.tsx"
+},
+{
+"mn": "Сонголтууд",
+"ctx": "components/admin/lesson-teacher-overlay-editor.tsx"
+},
+{
+"mn": "+ Сонголт",
+"ctx": "components/admin/lesson-teacher-overlay-editor.tsx"
+},
+{
+"mn": "Сонголт нэмэх",
+"ctx": "components/admin/lesson-teacher-overlay-editor.tsx"
+},
+{
+"mn": "ZIP файл сонгоно уу.",
+"ctx": "components/admin/lesson-zip-import-client.tsx"
+},
+{
+"mn": "Шалгалт давсангүй — доорх алдааг засна уу.",
+"ctx": "components/admin/lesson-zip-import-client.tsx"
+},
+{
+"mn": "ZIP файлыг уншихад алдаа гарлаа.",
+"ctx": "components/admin/lesson-zip-import-client.tsx"
+},
+{
+"mn": "ZIP-ийн мэдээлэл алга. Дахин шалгана уу.",
+"ctx": "components/admin/lesson-zip-import-client.tsx"
+},
+{
+"mn": "Хариу буруу байна",
+"ctx": "components/admin/lesson-zip-import-client.tsx"
+},
+{
+"mn": "course байхгүй байна",
+"ctx": "components/admin/lesson-zip-import-client.tsx"
+},
+{
+"mn": "Зөвхөн Хятад/HSK ZIP-ийг энд байршуулна. Солонгос багц бол",
+"ctx": "components/admin/lesson-zip-import-client.tsx"
+},
+{
+"mn": "Солонгос оруулах хуудас",
+"ctx": "components/admin/lesson-zip-import-client.tsx"
+},
+{
+"mn": "ашиглана.",
+"ctx": "components/admin/lesson-zip-import-client.tsx"
+},
+{
+"mn": "Зөвхөн Солонгос номын ZIP-ийг энд байршуулна. HSK багц бол",
+"ctx": "components/admin/lesson-zip-import-client.tsx"
+},
+{
+"mn": "Хятад оруулах хуудас",
+"ctx": "components/admin/lesson-zip-import-client.tsx"
+},
+{
+"mn": "Буруу оруулах хуудас сонгогджээ",
+"ctx": "components/admin/lesson-zip-import-client.tsx"
+},
+{
+"mn": "Илрүүлсэн төрөл:",
+"ctx": "components/admin/lesson-zip-import-client.tsx"
+},
+{
+"mn": "руу очих",
+"ctx": "components/admin/lesson-zip-import-client.tsx"
+},
+{
+"mn": "ZIP багц",
+"ctx": "components/admin/lesson-zip-import-client.tsx"
+},
+{
+"mn": "ZIP файлаа сонгоод «Шалгах» товчийг дарна.",
+"ctx": "components/admin/lesson-zip-import-client.tsx"
+},
+{
+"mn": "Сонгосон файл:",
+"ctx": "components/admin/lesson-zip-import-client.tsx"
+},
+{
+"mn": "korean-1 курс үүсгэх SQL",
+"ctx": "components/admin/lesson-zip-import-client.tsx"
+},
+{
+"mn": "Солонгос хичээл оруулахын өмнө Supabase-ийн SQL editor дээр ажиллуулна.",
+"ctx": "components/admin/lesson-zip-import-client.tsx"
+},
+{
+"mn": "Ноорог болгон оруулах",
+"ctx": "components/admin/lesson-zip-import-client.tsx"
+},
+{
+"mn": "Хичээлүүд рүү очих",
+"ctx": "components/admin/lesson-zip-import-client.tsx"
+},
+{
+"mn": "Оруулж чадсангүй",
+"ctx": "components/admin/lesson-zip-import-client.tsx"
+},
+{
+"mn": "Хичээлийн ID:",
+"ctx": "components/admin/lesson-zip-import-client.tsx"
+},
+{
+"mn": "Оруулж дууслаа",
+"ctx": "components/admin/lesson-zip-import-client.tsx"
+},
+{
+"mn": "Шинэ ноорог хичээл үүсгээд амжилттай орууллаа.",
+"ctx": "components/admin/lesson-zip-import-client.tsx"
+},
+{
+"mn": "Одоо байгаа ноорог хичээл рүү орууллаа.",
+"ctx": "components/admin/lesson-zip-import-client.tsx"
+},
+{
+"mn": "(багц:",
+"ctx": "components/admin/lesson-zip-import-client.tsx"
+},
+{
+"mn": ". Үгсийн сан:",
+"ctx": "components/admin/lesson-zip-import-client.tsx"
+},
+{
+"mn": ", дасгал:",
+"ctx": "components/admin/lesson-zip-import-client.tsx"
+},
+{
+"mn": "устгаж,",
+"ctx": "components/admin/lesson-zip-import-client.tsx"
+},
+{
+"mn": "нэмлээ)",
+"ctx": "components/admin/lesson-zip-import-client.tsx"
+},
+{
+"mn": ", хадмал:",
+"ctx": "components/admin/lesson-zip-import-client.tsx"
+},
+{
+"mn": "Байршуулсан медиа:",
+"ctx": "components/admin/lesson-zip-import-client.tsx"
+},
+{
+"mn": "зураг)",
+"ctx": "components/admin/lesson-zip-import-client.tsx"
+},
+{
+"mn": "Зургийн сан:",
+"ctx": "components/admin/lesson-zip-import-client.tsx"
+},
+{
+"mn": "Форматын лавлах",
+"ctx": "components/admin/lesson-zip-import-client.tsx"
+},
+{
+"mn": "Багцын бүтэц ба жишээ файлууд.",
+"ctx": "components/admin/lesson-zip-import-client.tsx"
+},
+{
+"mn": "Загвар:",
+"ctx": "components/admin/lesson-zip-import-client.tsx"
+},
+{
+"mn": ", заавар:",
+"ctx": "components/admin/lesson-zip-import-client.tsx"
+},
+{
+"mn": "Шалгуурын бүтэц (зөвхөн унших)",
+"ctx": "components/admin/lesson-zip-import-client.tsx"
+},
+{
+"mn": "Шалгалтын түүхий мэдээлэл",
+"ctx": "components/admin/lesson-zip-import-client.tsx"
+},
+{
+"mn": "Шалгалтын төлөв энэ хөтөч дээр хадгалагдана (localStorage). Байршуулалт бүрийн дараа тайлангаа гаргаж авна уу.",
+"ctx": "components/admin/production-qa-export-card.tsx"
+},
+{
+"mn": "Тайланг хуулах (JSON)",
+"ctx": "components/admin/production-qa-export-card.tsx"
+},
+{
+"mn": "Шалгалтын товчоо",
+"ctx": "components/admin/production-qa-summary.tsx"
+},
+{
+"mn": "Гаргалт:",
+"ctx": "components/admin/production-qa-summary.tsx"
+},
+{
+"mn": "Гараар шалгасан жагсаалтаас саад олдсонгүй.",
+"ctx": "components/admin/production-qa-summary.tsx"
+},
+{
+"mn": "Чанарын шалгалт ачаалж байна…",
+"ctx": "components/admin/production-qa-view.tsx"
+},
+{
+"mn": "Ажлын орчны хаяг",
+"ctx": "components/admin/production-qa-view.tsx"
+},
+{
+"mn": "Ажлын орчны хуудсыг шинэ цонхонд нээж гараар шалгаад доор төлөвийг нь тэмдэглэнэ үү. Автомат шалгалтууд:",
+"ctx": "components/admin/production-qa-view.tsx"
+},
+{
+"mn": "Ажлын нүүр хуудсыг нээх",
+"ctx": "components/admin/production-qa-view.tsx"
+},
+{
+"mn": "Байршуулалтын шалгалтыг нээх",
+"ctx": "components/admin/production-qa-view.tsx"
+},
+{
+"mn": "Ажлын орчны системийн шалгалтыг нээх",
+"ctx": "components/admin/production-qa-view.tsx"
+},
+{
+"mn": "Гаргалтын хувилбарын тайлан",
+"ctx": "components/admin/production-qa-view.tsx"
+},
+{
+"mn": "Хүлээгдэж буй:",
+"ctx": "components/admin/production-route-checklist.tsx"
+},
+{
+"mn": "— төлөв",
+"ctx": "components/admin/production-route-checklist.tsx"
+},
+{
+"mn": "Хичээл үүсгэх, засах, сайжруулахад ашиглах copy-ready prompt-ууд. ChatGPT эсвэл Cursor руу paste хийнэ — апп AI API дуудахгүй.",
+"ctx": "components/admin/prompt-library-view.tsx"
+},
+{
+"mn": "Ажлын урсгал",
+"ctx": "components/admin/prompt-library-view.tsx"
+},
+{
+"mn": "Тайлангаас асуудал олох → Prompt хуулах → ChatGPT JSON → Бөөнөөр оруулах → Чанарын шалгалт → Урьдчилж харах → Нөөц хуулбар → Нийтлэх",
+"ctx": "components/admin/prompt-library-view.tsx"
+},
+{
+"mn": "Нийтлэх удирдлага",
+"ctx": "components/admin/publishing-controls.tsx"
+},
+{
+"mn": "Нийтлэх, ноорог руу буцаах, архивлах.",
+"ctx": "components/admin/publishing-controls.tsx"
+},
+{
+"mn": "Шалгах жагсаалт бүрэн биш байна. Бэлтгэл хичээлд гарчиг, хятад гарчиг, 5-аас доошгүй үг, 3-аас доошгүй дасгал, мөн баталгаа эсвэл чанарын шалгалт давсан байх шаардлагатай. Бичлэг, аудио, хадмал заавал биш.",
+"ctx": "components/admin/publishing-controls.tsx"
+},
+{
+"mn": "Шалгах жагсаалт бүрэн биш байна. Ерөнхий мэдээлэл, хадмал, 5-аас доошгүй үг, 3-аас доошгүй дасгал, чанарын шалгалт давсан байх, баталгаа шаардлагатай.",
+"ctx": "components/admin/publishing-controls.tsx"
+},
+{
+"mn": "Хичээл нийтлэх",
+"ctx": "components/admin/publishing-controls.tsx"
+},
+{
+"mn": "Ноорог болгох",
+"ctx": "components/admin/publishing-controls.tsx"
+},
+{
+"mn": "Архивлаж байна…",
+"ctx": "components/admin/publishing-controls.tsx"
+},
+{
+"mn": "Хичээл архивлах",
+"ctx": "components/admin/publishing-controls.tsx"
+},
+{
+"mn": "(заавал биш)",
+"ctx": "components/admin/publishing-controls.tsx"
+},
+{
+"mn": "Баталгаа",
+"ctx": "components/admin/publishing-controls.tsx"
+},
+{
+"mn": "хүлээгдэж байна",
+"ctx": "components/admin/publishing-controls.tsx"
+},
+{
+"mn": "Дүрэм / дасгал",
+"ctx": "components/admin/question-attempts-analytics-section.tsx"
+},
+{
+"mn": "Үг дасгал",
+"ctx": "components/admin/question-attempts-analytics-section.tsx"
+},
+{
+"mn": "Мок",
+"ctx": "components/admin/question-attempts-analytics-section.tsx"
+},
+{
+"mn": "Үнэн/худал",
+"ctx": "components/admin/question-attempts-analytics-section.tsx"
+},
+{
+"mn": "Сурах аналитик — асуулт",
+"ctx": "components/admin/question-attempts-analytics-section.tsx"
+},
+{
+"mn": "Асуулт бүрийн оролдлогоос (",
+"ctx": "components/admin/question-attempts-analytics-section.tsx"
+},
+{
+"mn": "нийт).",
+"ctx": "components/admin/question-attempts-analytics-section.tsx"
+},
+{
+"mn": "Үе шатаар шүүх",
+"ctx": "components/admin/question-attempts-analytics-section.tsx"
+},
+{
+"mn": "Хамгийн их алдаатай асуултууд",
+"ctx": "components/admin/question-attempts-analytics-section.tsx"
+},
+{
+"mn": "Асуулт ID",
+"ctx": "components/admin/question-attempts-analytics-section.tsx"
+},
+{
+"mn": "Буруу %",
+"ctx": "components/admin/question-attempts-analytics-section.tsx"
+},
+{
+"mn": "Хичээл тус бүрийн дундаж зөв хувь",
+"ctx": "components/admin/question-attempts-analytics-section.tsx"
+},
+{
+"mn": "Зөв %",
+"ctx": "components/admin/question-attempts-analytics-section.tsx"
+},
+{
+"mn": "Сонголттой",
+"ctx": "components/admin/question-insights-view.tsx"
+},
+{
+"mn": "Дасгалын асуулт бүрийн зөв, буруу хариултын үзүүлэлт болон хүндрэлтэй асуултууд.",
+"ctx": "components/admin/question-insights-view.tsx"
+},
+{
+"mn": "Нийт дасгалын оролдлого",
+"ctx": "components/admin/question-insights-view.tsx"
+},
+{
+"mn": "Хариулсан асуулт",
+"ctx": "components/admin/question-insights-view.tsx"
+},
+{
+"mn": "Дундаж зөв хариултын хувь",
+"ctx": "components/admin/question-insights-view.tsx"
+},
+{
+"mn": "Хүндрэлтэй асуулт",
+"ctx": "components/admin/question-insights-view.tsx"
+},
+{
+"mn": "Зөв хариулт 70%-иас доош",
+"ctx": "components/admin/question-insights-view.tsx"
+},
+{
+"mn": "Асуулт тус бүрийн дүн шинжилгээ нь дасгалын оролдлогод дэлгэрэнгүй хариулт хадгалагдсаны дараа харагдана.",
+"ctx": "components/admin/question-insights-view.tsx"
+},
+{
+"mn": "Дасгал руу очих",
+"ctx": "components/admin/question-insights-view.tsx"
+},
+{
+"mn": "Хүндрэлтэй асуултууд",
+"ctx": "components/admin/question-insights-view.tsx"
+},
+{
+"mn": "Одоогийн шүүлтэд тохирох хүндрэлтэй асуулт алга.",
+"ctx": "components/admin/question-insights-view.tsx"
+},
+{
+"mn": "Түгээмэл буруу хариулт",
+"ctx": "components/admin/question-insights-view.tsx"
+},
+{
+"mn": "Бүх асуулт",
+"ctx": "components/admin/question-insights-view.tsx"
+},
+{
+"mn": "Асуултын үгээр хайх…",
+"ctx": "components/admin/question-insights-view.tsx"
+},
+{
+"mn": "Бүх хувь",
+"ctx": "components/admin/question-insights-view.tsx"
+},
+{
+"mn": "70%-иас доош",
+"ctx": "components/admin/question-insights-view.tsx"
+},
+{
+"mn": "90%-иас дээш",
+"ctx": "components/admin/question-insights-view.tsx"
+},
+{
+"mn": "асуулт харагдаж байна",
+"ctx": "components/admin/question-insights-view.tsx"
+},
+{
+"mn": "Тохирох асуулт алга.",
+"ctx": "components/admin/question-insights-view.tsx"
+},
+{
+"mn": "Асуултыг заавал бөглөнө үү.",
+"ctx": "components/admin/quiz-editor.tsx"
+},
+{
+"mn": "Хамгийн багадаа 2 сонголт оруулна уу.",
+"ctx": "components/admin/quiz-editor.tsx"
+},
+{
+"mn": "Зөв хариултыг заавал бөглөнө үү.",
+"ctx": "components/admin/quiz-editor.tsx"
+},
+{
+"mn": "Зөв хариулт нь сонголтуудын нэг байх ёстой.",
+"ctx": "components/admin/quiz-editor.tsx"
+},
+{
+"mn": "Асуулт нэмэгдлээ. Хичээлийн тоо шинэчлэгдлээ.",
+"ctx": "components/admin/quiz-editor.tsx"
+},
+{
+"mn": "Асуулт устгагдлаа. Хичээлийн тоо шинэчлэгдлээ.",
+"ctx": "components/admin/quiz-editor.tsx"
+},
+{
+"mn": "Сонголтын хэсэгт нэг мөрөнд нэг сонголт бичнэ.",
+"ctx": "components/admin/quiz-editor.tsx"
+},
+{
+"mn": "Сонголттой асуулт",
+"ctx": "components/admin/quiz-editor.tsx"
+},
+{
+"mn": "Нөхөх асуулт",
+"ctx": "components/admin/quiz-editor.tsx"
+},
+{
+"mn": "Сонголтууд (нэг мөрөнд нэг)",
+"ctx": "components/admin/quiz-editor.tsx"
+},
+{
+"mn": "Асуулт нэмэх",
+"ctx": "components/admin/quiz-editor.tsx"
+},
+{
+"mn": "Одоогоор асуулт алга",
+"ctx": "components/admin/quiz-editor.tsx"
+},
+{
+"mn": "сонголт",
+"ctx": "components/admin/quiz-editor.tsx"
+},
+{
+"mn": "Хариулт:",
+"ctx": "components/admin/quiz-editor.tsx"
+},
+{
+"mn": "Гарчиг, хятад гарчиг, тайлбар",
+"ctx": "components/admin/release-readiness-card.tsx"
+},
+{
+"mn": "Хадмал (заавал биш)",
+"ctx": "components/admin/release-readiness-card.tsx"
+},
+{
+"mn": "Бэлтгэл хичээлд хадмал заавал биш",
+"ctx": "components/admin/release-readiness-card.tsx"
+},
+{
+"mn": "Хадмал оруулах эсвэл нэмэх",
+"ctx": "components/admin/release-readiness-card.tsx"
+},
+{
+"mn": "Бөөнөөр оруулах",
+"ctx": "components/admin/release-readiness-card.tsx"
+},
+{
+"mn": "Үгсийн сан засах",
+"ctx": "components/admin/release-readiness-card.tsx"
+},
+{
+"mn": "Дасгал засах",
+"ctx": "components/admin/release-readiness-card.tsx"
+},
+{
+"mn": "Медиа бэлэн",
+"ctx": "components/admin/release-readiness-card.tsx"
+},
+{
+"mn": "Бичлэг байршуулах эсвэл медиагийн төлвийг тохируулах",
+"ctx": "components/admin/release-readiness-card.tsx"
+},
+{
+"mn": "Медиа байршуулах",
+"ctx": "components/admin/release-readiness-card.tsx"
+},
+{
+"mn": "Агуулгын чанарын шалгалт давсан",
+"ctx": "components/admin/release-readiness-card.tsx"
+},
+{
+"mn": "Чанарын шалгалтын алдааг засах",
+"ctx": "components/admin/release-readiness-card.tsx"
+},
+{
+"mn": "Нийтлэхээс өмнө JSON нөөц хуулбар гаргаж авах",
+"ctx": "components/admin/release-readiness-card.tsx"
+},
+{
+"mn": "Хичээлийн бүх хэсгийг урьдчилж шалгах",
+"ctx": "components/admin/release-readiness-card.tsx"
+},
+{
+"mn": "Хичээл урьдчилж харах",
+"ctx": "components/admin/release-readiness-card.tsx"
+},
+{
+"mn": "Чанарын шалгалт давсан гэж тэмдэглээд → Нийтлэхийг батлах",
+"ctx": "components/admin/release-readiness-card.tsx"
+},
+{
+"mn": "Баталгааны хэсэг",
+"ctx": "components/admin/release-readiness-card.tsx"
+},
+{
+"mn": "Нийтлэхэд бэлэн эсэх",
+"ctx": "components/admin/release-readiness-card.tsx"
+},
+{
+"mn": "Нийтлэхээс өмнө шалгах жагсаалт.",
+"ctx": "components/admin/release-readiness-card.tsx"
+},
+{
+"mn": "Батлахад бэлэн",
+"ctx": "components/admin/release-readiness-card.tsx"
+},
+{
+"mn": "давсан",
+"ctx": "components/admin/release-workflow-badges.tsx"
+},
+{
+"mn": "давсангүй",
+"ctx": "components/admin/release-workflow-badges.tsx"
+},
+{
+"mn": "Буцаах үйлдэл амжилтгүй боллоо.",
+"ctx": "components/admin/rollback-execution-card.tsx"
+},
+{
+"mn": "Өөрчлөлтийг буцаах",
+"ctx": "components/admin/rollback-execution-card.tsx"
+},
+{
+"mn": "Өмнөх хувилбарын хуулбараас дараах талбаруудыг сэргээнэ:",
+"ctx": "components/admin/rollback-execution-card.tsx"
+},
+{
+"mn": "Энэ үйлдлийг одоогоор буцаах боломжгүй.",
+"ctx": "components/admin/rollback-execution-card.tsx"
+},
+{
+"mn": "Буцаах үйлдэл нь зөвхөн ерөнхий мэдээлэл, төлөв, медиа, хувилбарын талбаруудыг сэргээнэ. Хадмал, үгсийн сан, дасгалыг бөөнөөр буцаах боломж одоогоор идэвхгүй.",
+"ctx": "components/admin/rollback-execution-card.tsx"
+},
+{
+"mn": "Би энэ өөрчлөлтийг буцаахыг ойлгож байна.",
+"ctx": "components/admin/rollback-execution-card.tsx"
+},
+{
+"mn": "Хичээл засах →",
+"ctx": "components/admin/rollback-execution-card.tsx"
+},
+{
+"mn": "Үйлдлийн бүртгэл →",
+"ctx": "components/admin/rollback-execution-card.tsx"
+},
+{
+"mn": "Буцааж байна…",
+"ctx": "components/admin/rollback-execution-card.tsx"
+},
+{
+"mn": "supabase/verify/production_verification.sql-ийг Supabase SQL Editor дээр ажиллуулна уу.",
+"ctx": "components/admin/security-audit-view.tsx"
+},
+{
+"mn": "Аюулгүй байдлын үзлэгийг дуусгаж чадсангүй.",
+"ctx": "components/admin/security-audit-view.tsx"
+},
+{
+"mn": "Товчоо",
+"ctx": "components/admin/security-audit-view.tsx"
+},
+{
+"mn": "Автомат болон гараар хийх шалгалтууд. Орчны утга, түлхүүрүүд хэзээ ч харагдахгүй.",
+"ctx": "components/admin/security-audit-view.tsx"
+},
+{
+"mn": "Ажиллаж байна…",
+"ctx": "components/admin/security-audit-view.tsx"
+},
+{
+"mn": "Дахин шалгах",
+"ctx": "components/admin/security-audit-view.tsx"
+},
+{
+"mn": "гараар · гаргалт:",
+"ctx": "components/admin/security-audit-view.tsx"
+},
+{
+"mn": "Холбоотой үзлэгүүд",
+"ctx": "components/admin/security-audit-view.tsx"
+},
+{
+"mn": "Аюулгүй байдлын үзлэг ачаалж байна…",
+"ctx": "components/admin/security-audit-view.tsx"
+},
+{
+"mn": "Автомат шалгалтаас саад олдсонгүй.",
+"ctx": "components/admin/security-audit-view.tsx"
+},
+{
+"mn": "Тайлан гаргах",
+"ctx": "components/admin/security-audit-view.tsx"
+},
+{
+"mn": "Аюулгүй байдлын тайланг хуулах",
+"ctx": "components/admin/security-audit-view.tsx"
+},
+{
+"mn": "JSON татах",
+"ctx": "components/admin/security-audit-view.tsx"
+},
+{
+"mn": "Markdown татах",
+"ctx": "components/admin/security-audit-view.tsx"
+},
+{
+"mn": "Эцсийн баталгааны шалгах жагсаалт",
+"ctx": "components/admin/signoff-checklist.tsx"
+},
+{
+"mn": "Гаргалтын баталгаа дууссан. Ажлын орчин гаргахад бэлэн байна.",
+"ctx": "components/admin/signoff-checklist.tsx"
+},
+{
+"mn": "Шийдвэр",
+"ctx": "components/admin/signoff-checklist.tsx"
+},
+{
+"mn": "байна — гаргахаас өмнө асуудлыг шийднэ үү.",
+"ctx": "components/admin/signoff-checklist.tsx"
+},
+{
+"mn": "Амжилтгүй зүйл алга. Гаргахаас өмнө шийдвэр, анхааруулгуудыг хянана уу.",
+"ctx": "components/admin/signoff-checklist.tsx"
+},
+{
+"mn": "Гаргая",
+"ctx": "components/admin/signoff-decision-card.tsx"
+},
+{
+"mn": "Түр зогсоосон",
+"ctx": "components/admin/signoff-decision-card.tsx"
+},
+{
+"mn": "Шийдээгүй",
+"ctx": "components/admin/signoff-decision-card.tsx"
+},
+{
+"mn": "Гаргах эсэх шийдвэр",
+"ctx": "components/admin/signoff-decision-card.tsx"
+},
+{
+"mn": "Гаргах хувилбар",
+"ctx": "components/admin/signoff-decision-card.tsx"
+},
+{
+"mn": "Нэр эсвэл баг",
+"ctx": "components/admin/signoff-decision-card.tsx"
+},
+{
+"mn": "Гаргалтын тэмдэглэл",
+"ctx": "components/admin/signoff-decision-card.tsx"
+},
+{
+"mn": "Хамрах хүрээ, хугацаа, зөвшөөрлийн товч",
+"ctx": "components/admin/signoff-decision-card.tsx"
+},
+{
+"mn": "Мэдэгдэж буй алдаа",
+"ctx": "components/admin/signoff-decision-card.tsx"
+},
+{
+"mn": "Хүлээн зөвшөөрсөн хязгаарлалт эсвэл засаагүй алдаа",
+"ctx": "components/admin/signoff-decision-card.tsx"
+},
+{
+"mn": "Эцсийн шийдвэрийн тэмдэглэл",
+"ctx": "components/admin/signoff-decision-card.tsx"
+},
+{
+"mn": "go_live, needs_review, blocked шийдвэрийн үндэслэл",
+"ctx": "components/admin/signoff-decision-card.tsx"
+},
+{
+"mn": "Түр зогсоох",
+"ctx": "components/admin/signoff-decision-card.tsx"
+},
+{
+"mn": "Энэ хөтөч дээр хадгалагдана (localStorage түлхүүр: buunduu-launch-signoff).",
+"ctx": "components/admin/signoff-report-export-card.tsx"
+},
+{
+"mn": "Баталгааг хадгалах",
+"ctx": "components/admin/signoff-report-export-card.tsx"
+},
+{
+"mn": "Баталгааг цэвэрлэх",
+"ctx": "components/admin/signoff-report-export-card.tsx"
+},
+{
+"mn": "Баталгааны тайланг хуулах",
+"ctx": "components/admin/signoff-report-export-card.tsx"
+},
+{
+"mn": "Баталгааны товчоо",
+"ctx": "components/admin/signoff-summary-cards.tsx"
+},
+{
+"mn": "[зураг]",
+"ctx": "components/admin/source/hsk-source-lesson-view.tsx"
+},
+{
+"mn": "хариулт:",
+"ctx": "components/admin/source/hsk-source-lesson-view.tsx"
+},
+{
+"mn": "х.",
+"ctx": "components/admin/source/hsk-source-lesson-view.tsx"
+},
+{
+"mn": "Сурах бичиг PDF х.",
+"ctx": "components/admin/source/hsk-source-lesson-view.tsx"
+},
+{
+"mn": "注释 Notes (дүрэм)",
+"ctx": "components/admin/source/hsk-source-lesson-view.tsx"
+},
+{
+"mn": "练习 Exercises (сурах бичиг)",
+"ctx": "components/admin/source/hsk-source-lesson-view.tsx"
+},
+{
+"mn": "教师用书 Багшийн ном",
+"ctx": "components/admin/source/hsk-source-lesson-view.tsx"
+},
+{
+"mn": "课文 асуулт–хариулт",
+"ctx": "components/admin/source/hsk-source-lesson-view.tsx"
+},
+{
+"mn": "练习册 Дасгалын ном",
+"ctx": "components/admin/source/hsk-source-lesson-view.tsx"
+},
+{
+"mn": "слайд",
+"ctx": "components/admin/source/hsk-source-lesson-view.tsx"
+},
+{
+"mn": "Тодорхойгүй / номын өөрийн зөрүү",
+"ctx": "components/admin/source/hsk-source-lesson-view.tsx"
+},
+{
+"mn": "Эхлэх, дуусах хугацааг заавал бөглөнө үү.",
+"ctx": "components/admin/subtitle-editor.tsx"
+},
+{
+"mn": "Хятад өгүүлбэрийг заавал бөглөнө үү.",
+"ctx": "components/admin/subtitle-editor.tsx"
+},
+{
+"mn": "Монгол орчуулгыг заавал бөглөнө үү.",
+"ctx": "components/admin/subtitle-editor.tsx"
+},
+{
+"mn": "Хадмал мөр нэмэгдлээ.",
+"ctx": "components/admin/subtitle-editor.tsx"
+},
+{
+"mn": "Хадмал мөр устгагдлаа.",
+"ctx": "components/admin/subtitle-editor.tsx"
+},
+{
+"mn": "Бичлэг үзэх хуудсанд хугацаагаар гарах мөрүүд.",
+"ctx": "components/admin/subtitle-editor.tsx"
+},
+{
+"mn": "Эхлэх хугацаа",
+"ctx": "components/admin/subtitle-editor.tsx"
+},
+{
+"mn": "Дуусах хугацаа",
+"ctx": "components/admin/subtitle-editor.tsx"
+},
+{
+"mn": "Хятад",
+"ctx": "components/admin/subtitle-editor.tsx"
+},
+{
+"mn": "Монгол",
+"ctx": "components/admin/subtitle-editor.tsx"
+},
+{
+"mn": "Хадмал мөр нэмэх",
+"ctx": "components/admin/subtitle-editor.tsx"
+},
+{
+"mn": "Одоогоор хадмал алга",
+"ctx": "components/admin/subtitle-editor.tsx"
+},
+{
+"mn": "Системийн шалгалтыг дуусгаж чадсангүй.",
+"ctx": "components/admin/system-check-view.tsx"
+},
+{
+"mn": "Одоогийн хөтчийн сешнээр аппын талаас шалгана. Орчны утга, түлхүүрүүд хэзээ ч харагдахгүй.",
+"ctx": "components/admin/system-check-view.tsx"
+},
+{
+"mn": "нийт",
+"ctx": "components/admin/system-check-view.tsx"
+},
+{
+"mn": "· сүүлд ажилласан",
+"ctx": "components/admin/system-check-view.tsx"
+},
+{
+"mn": "Supabase SQL шалгалт",
+"ctx": "components/admin/system-check-view.tsx"
+},
+{
+"mn": "pass/warn/fail-ийн утга болон түгээмэл засварыг supabase/verify/README.md файлаас үзнэ үү.",
+"ctx": "components/admin/system-check-view.tsx"
+},
+{
+"mn": "SQL шалгах зааврыг хуулах",
+"ctx": "components/admin/system-check-view.tsx"
+},
+{
+"mn": "Системийн шалгалт ачаалж байна…",
+"ctx": "components/admin/system-check-view.tsx"
+},
+{
+"mn": "Байршуулалтын баримт бичиг",
+"ctx": "components/admin/system-check-view.tsx"
+},
+{
+"mn": "Нийтийн байршуулалтын шалгалт",
+"ctx": "components/admin/system-check-view.tsx"
+},
+{
+"mn": "Ноцтой",
+"ctx": "components/admin/task-card-with-actions.tsx"
+},
+{
+"mn": "Мэдээлэл",
+"ctx": "components/admin/task-card-with-actions.tsx"
+},
+{
+"mn": "Амжилттай",
+"ctx": "components/admin/task-card-with-actions.tsx"
+},
+{
+"mn": "Энгийн",
+"ctx": "components/admin/task-card-with-actions.tsx"
+},
+{
+"mn": "Хувилбар",
+"ctx": "components/admin/task-card-with-actions.tsx"
+},
+{
+"mn": "Систем",
+"ctx": "components/admin/task-card-with-actions.tsx"
+},
+{
+"mn": "Дуусах",
+"ctx": "components/admin/task-card-with-actions.tsx"
+},
+{
+"mn": "· Хугацаа хэтэрсэн",
+"ctx": "components/admin/task-card-with-actions.tsx"
+},
+{
+"mn": "Тэмдэглэл:",
+"ctx": "components/admin/task-card-with-actions.tsx"
+},
+{
+"mn": "Шийдсэн болгох",
+"ctx": "components/admin/task-card-with-actions.tsx"
+},
+{
+"mn": "Дахин нээх",
+"ctx": "components/admin/task-card-with-actions.tsx"
+},
+{
+"mn": "Дэлгэрэнгүйг нуух",
+"ctx": "components/admin/task-card-with-actions.tsx"
+},
+{
+"mn": "Дэлгэрэнгүйг засах",
+"ctx": "components/admin/task-card-with-actions.tsx"
+},
+{
+"mn": "Ач холбогдол",
+"ctx": "components/admin/task-card-with-actions.tsx"
+},
+{
+"mn": "Дуусах огноо",
+"ctx": "components/admin/task-card-with-actions.tsx"
+},
+{
+"mn": "Энэ ажилд зориулсан дотоод тэмдэглэл…",
+"ctx": "components/admin/task-card-with-actions.tsx"
+},
+{
+"mn": "Бүх огноо",
+"ctx": "components/admin/task-filter-bar.tsx"
+},
+{
+"mn": "Энэ долоо хоногт дуусах",
+"ctx": "components/admin/task-filter-bar.tsx"
+},
+{
+"mn": "Огноогүй",
+"ctx": "components/admin/task-filter-bar.tsx"
+},
+{
+"mn": "Бүх ажил",
+"ctx": "components/admin/task-filter-bar.tsx"
+},
+{
+"mn": "Арга хэмжээ авах",
+"ctx": "components/admin/task-filter-bar.tsx"
+},
+{
+"mn": "Хичээлийн нэр, ID, ажлын нэр…",
+"ctx": "components/admin/task-filter-bar.tsx"
+},
+{
+"mn": "Түргэн шүүлт",
+"ctx": "components/admin/task-filter-bar.tsx"
+},
+{
+"mn": "Ангилал",
+"ctx": "components/admin/task-filter-bar.tsx"
+},
+{
+"mn": "Хэр ноцтой",
+"ctx": "components/admin/task-filter-bar.tsx"
+},
+{
+"mn": "ажил харагдаж байна",
+"ctx": "components/admin/task-filter-bar.tsx"
+},
+{
+"mn": "Идэвхтэй ажил",
+"ctx": "components/admin/task-summary-cards.tsx"
+},
+{
+"mn": "Медиагийн асуудал",
+"ctx": "components/admin/task-summary-cards.tsx"
+},
+{
+"mn": "Танхим",
+"ctx": "components/admin/training-center-board.tsx"
+},
+{
+"mn": "Онлайн",
+"ctx": "components/admin/training-center-board.tsx"
+},
+{
+"mn": "Холимог",
+"ctx": "components/admin/training-center-board.tsx"
+},
+{
+"mn": "Дундаж үнэлгээгээр",
+"ctx": "components/admin/training-center-board.tsx"
+},
+{
+"mn": "Хамгийн өндөр оноотой бүлэг эхэнд.",
+"ctx": "components/admin/training-center-board.tsx"
+},
+{
+"mn": "Даалгаврын гүйцэтгэлээр",
+"ctx": "components/admin/training-center-board.tsx"
+},
+{
+"mn": "Өгсөн даалгавраа хамгийн их дуусгасан бүлэг эхэнд.",
+"ctx": "components/admin/training-center-board.tsx"
+},
+{
+"mn": "Идэвхээр",
+"ctx": "components/admin/training-center-board.tsx"
+},
+{
+"mn": "Нэг сурагчид ногдох суралцсан хугацаагаар.",
+"ctx": "components/admin/training-center-board.tsx"
+},
+{
+"mn": "Хичээллэх хэлбэр бүртгэгдээгүй байна.",
+"ctx": "components/admin/training-center-board.tsx"
+},
+{
+"mn": "Үнэлэхэд хангалттай өгөгдөл алга.",
+"ctx": "components/admin/training-center-board.tsx"
+},
+{
+"mn": "сурагчаар",
+"ctx": "components/admin/training-center-board.tsx"
+},
+{
+"mn": "Үнэлгээ гаргах сурагч алга.",
+"ctx": "components/admin/training-center-board.tsx"
+},
+{
+"mn": "Бүлэгт сурагч бүртгэгдээгүй.",
+"ctx": "components/admin/training-center-board.tsx"
+},
+{
+"mn": "Апп руу нэвтэрсэн сурагч алга.",
+"ctx": "components/admin/training-center-board.tsx"
+},
+{
+"mn": "Даалгавар оноогоогүй, дасгал ажиллаагүй байна.",
+"ctx": "components/admin/training-center-board.tsx"
+},
+{
+"mn": "Үнэлэхэд хангалттай дасгалын бичлэг алга.",
+"ctx": "components/admin/training-center-board.tsx"
+},
+{
+"mn": "Хаягт заасан байгууллага олдсонгүй. Доор бүх бүлгийг харуулав.",
+"ctx": "components/admin/training-center-board.tsx"
+},
+{
+"mn": "Аль төвийн бүлгүүдийг харахаа сонгоно уу.",
+"ctx": "components/admin/training-center-board.tsx"
+},
+{
+"mn": "бүлэг",
+"ctx": "components/admin/training-center-board.tsx"
+},
+{
+"mn": "Бүх байгууллагын нийлбэр",
+"ctx": "components/admin/training-center-board.tsx"
+},
+{
+"mn": "Бүлэг хариуцсан багш",
+"ctx": "components/admin/training-center-board.tsx"
+},
+{
+"mn": "Үнэлэхэд хангалттай өгөгдөл алга",
+"ctx": "components/admin/training-center-board.tsx"
+},
+{
+"mn": "Нэвтэрсэн сурагч алга тул тооцох боломжгүй",
+"ctx": "components/admin/training-center-board.tsx"
+},
+{
+"mn": "Бүлэг алга",
+"ctx": "components/admin/training-center-board.tsx"
+},
+{
+"mn": "Одоогоор бүртгэлтэй бүлэг алга байна. Байгууллага үүсгээд бүлэг, багш нэмсний дараа энэ хуудас дүүрнэ.",
+"ctx": "components/admin/training-center-board.tsx"
+},
+{
+"mn": "Байгууллагын хэсэг",
+"ctx": "components/admin/training-center-board.tsx"
+},
+{
+"mn": "Эрэмбэлэх",
+"ctx": "components/admin/training-center-board.tsx"
+},
+{
+"mn": "Тоологдох өгөгдөлгүй бүлэг жагсаалтын төгсгөлд орно — «—» гэдэг нь тэг биш, тоолох боломжгүй гэсэн үг.",
+"ctx": "components/admin/training-center-board.tsx"
+},
+{
+"mn": "хоног идэвхгүй",
+"ctx": "components/admin/training-center-board.tsx"
+},
+{
+"mn": "Бүлгийн түвшин бүртгэгдээгүй.",
+"ctx": "components/admin/training-center-board.tsx"
+},
+{
+"mn": "нэвтэрсэн",
+"ctx": "components/admin/training-center-board.tsx"
+},
+{
+"mn": "Даалгавар оноогоогүй эсвэл нэвтэрсэн сурагч алга.",
+"ctx": "components/admin/training-center-board.tsx"
+},
+{
+"mn": "даалгавраас",
+"ctx": "components/admin/training-center-board.tsx"
+},
+{
+"mn": "Хугацааны хэмжилт идэвхгүй байна.",
+"ctx": "components/admin/training-center-board.tsx"
+},
+{
+"mn": "Нэвтэрсэн сурагч алга.",
+"ctx": "components/admin/training-center-board.tsx"
+},
+{
+"mn": "мин",
+"ctx": "components/admin/training-center-board.tsx"
+},
+{
+"mn": "нэг сурагчид",
+"ctx": "components/admin/training-center-board.tsx"
+},
+{
+"mn": "Бүлэг тус бүрийн үнэлгээний тархалт",
+"ctx": "components/admin/training-center-board.tsx"
+},
+{
+"mn": "Нэг бүлэгт хэдэн сурагч A, B, C, D, F авсныг харуулна. Дундаж оноо ижил боловч тархалт нь өөр хоёр бүлэг ялгаатай зааж байна гэсэн үг.",
+"ctx": "components/admin/training-center-board.tsx"
+},
+{
+"mn": "Түвшин тодорхойгүй",
+"ctx": "components/admin/training-center-board.tsx"
+},
+{
+"mn": "Хэлбэр тодорхойгүй",
+"ctx": "components/admin/training-center-board.tsx"
+},
+{
+"mn": "Багш бүрийн бүх бүлгийн сурагчдыг нэгтгэж үнэлэв. Ижил түвшний хоёр бүлгийг зэрэгцүүлэн харах боломжтой.",
+"ctx": "components/admin/training-center-board.tsx"
+},
+{
+"mn": "Энэ зөрүү зөвхөн багшийн ажлыг илэрхийлэхгүй. Бүлгийн хэмжээ, хичээллэх цагийн хуваарь, сурагчдын анхны түвшин, танхим эсвэл онлайн хэлбэр зэрэг олон зүйл нөлөөлдөг. Тоог яриа эхлүүлэх шалтгаан болгон ашиглаж, дүгнэлт болгож болохгүй.",
+"ctx": "components/admin/training-center-board.tsx"
+},
+{
+"mn": "Бүлэгт багш оноогоогүй байна.",
+"ctx": "components/admin/training-center-board.tsx"
+},
+{
+"mn": "бүлэг ·",
+"ctx": "components/admin/training-center-board.tsx"
+},
+{
+"mn": "Үнэлэгдсэн сурагч",
+"ctx": "components/admin/training-center-board.tsx"
+},
+{
+"mn": "Тоонууд хаанаас гардаг вэ",
+"ctx": "components/admin/training-center-board.tsx"
+},
+{
+"mn": "Дундаж оноо нь сурагч бүрийн сүүлийн дасгалын хувь, даалгаврын гүйцэтгэл, сурсан үгээс бүрдэх A–F үнэлгээний дундаж.",
+"ctx": "components/admin/training-center-board.tsx"
+},
+{
+"mn": "Даалгаврын гүйцэтгэл = дуусгасан даалгавар ÷ (нэвтэрсэн сурагчийн тоо × бүлэгт оноосон даалгаврын тоо).",
+"ctx": "components/admin/training-center-board.tsx"
+},
+{
+"mn": "Суралцсан хугацаа нь сүүлийн",
+"ctx": "components/admin/training-center-board.tsx"
+},
+{
+"mn": "хоногийн хэмжилтийг нэвтэрсэн сурагчийн тоонд хуваасан дундаж.",
+"ctx": "components/admin/training-center-board.tsx"
+},
+{
+"mn": "хоног идэвхгүй» баганад хичээл, дасгал, үг, даалгаврын аль нэгээр ч бичлэг үлдээгээгүй сурагчид ордог.",
+"ctx": "components/admin/training-center-board.tsx"
+},
+{
+"mn": "Апп руу нэвтрээгүй, зөвхөн урилга хүлээж буй сурагчийн өгөгдөл байхгүй тул үнэлгээ, гүйцэтгэлд тооцогдохгүй.",
+"ctx": "components/admin/training-center-board.tsx"
+},
+{
+"mn": "бүлэг ямар ч байгууллагад холбогдоогүй байна — тэднийг «Бүгд» харагдацад л харна.",
+"ctx": "components/admin/training-center-board.tsx"
+},
+{
+"mn": "Хятад үгийг заавал бөглөнө үү.",
+"ctx": "components/admin/vocabulary-editor.tsx"
+},
+{
+"mn": "Үг нэмэгдлээ. Хичээлийн тоо шинэчлэгдлээ.",
+"ctx": "components/admin/vocabulary-editor.tsx"
+},
+{
+"mn": "Үг устгагдлаа. Хичээлийн тоо шинэчлэгдлээ.",
+"ctx": "components/admin/vocabulary-editor.tsx"
+},
+{
+"mn": "Үгсийн сангийн хуудсанд гарах үгс, суралцагчийн ахицад холбогдоно.",
+"ctx": "components/admin/vocabulary-editor.tsx"
+},
+{
+"mn": "Хятад үг",
+"ctx": "components/admin/vocabulary-editor.tsx"
+},
+{
+"mn": "Монгол орчуулга",
+"ctx": "components/admin/vocabulary-editor.tsx"
+},
+{
+"mn": "Жишээ өгүүлбэр (хятад)",
+"ctx": "components/admin/vocabulary-editor.tsx"
+},
+{
+"mn": "Жишээ өгүүлбэр (монгол)",
+"ctx": "components/admin/vocabulary-editor.tsx"
+},
+{
+"mn": "Үг нэмэх",
+"ctx": "components/admin/vocabulary-editor.tsx"
+},
+{
+"mn": "Одоогоор үг алга",
+"ctx": "components/admin/vocabulary-editor.tsx"
+},
+{
+"mn": "Тохирох үг алга.",
+"ctx": "components/admin/vocabulary-insights-view.tsx"
+},
+{
+"mn": "Пиньинь",
+"ctx": "components/admin/vocabulary-insights-view.tsx"
+},
+{
+"mn": "Анхаарах",
+"ctx": "components/admin/vocabulary-insights-view.tsx"
+},
+{
+"mn": "Суралцагчид ямар үгсийг хамгийн их сурч, ямар үгс орхигдож байгааг харна.",
+"ctx": "components/admin/vocabulary-insights-view.tsx"
+},
+{
+"mn": "Огт сураагүй үг",
+"ctx": "components/admin/vocabulary-insights-view.tsx"
+},
+{
+"mn": "Шүүлт",
+"ctx": "components/admin/vocabulary-insights-view.tsx"
+},
+{
+"mn": "Хятад / пиньинь / монголоор хайх…",
+"ctx": "components/admin/vocabulary-insights-view.tsx"
+},
+{
+"mn": "Бүх HSK түвшин",
+"ctx": "components/admin/vocabulary-insights-view.tsx"
+},
+{
+"mn": "Бүх идэвх",
+"ctx": "components/admin/vocabulary-insights-view.tsx"
+},
+{
+"mn": "Хамгийн их сурсан үг",
+"ctx": "components/admin/vocabulary-insights-view.tsx"
+},
+{
+"mn": "Хамгийн бага сурсан / огт сураагүй үг",
+"ctx": "components/admin/vocabulary-insights-view.tsx"
+},
+{
+"mn": "Аудио алга — PreLesson тул зүгээр",
+"ctx": "components/admin/zip-import-summary.tsx"
+},
+{
+"mn": "Аудио алга (заавал биш)",
+"ctx": "components/admin/zip-import-summary.tsx"
+},
+{
+"mn": "Зураг алга — зүгээр",
+"ctx": "components/admin/zip-import-summary.tsx"
+},
+{
+"mn": "Зураг алга (заавал биш)",
+"ctx": "components/admin/zip-import-summary.tsx"
+},
+{
+"mn": "Хадмал алга — зүгээр",
+"ctx": "components/admin/zip-import-summary.tsx"
+},
+{
+"mn": "Хадмал алга (заавал биш)",
+"ctx": "components/admin/zip-import-summary.tsx"
+},
+{
+"mn": "Тайлбар: source_note хуучин текст хэлбэртэй байна (hskStudyContent JSON алга). Оруулж болно — үгсийн сан, дасгал нь ZIP-ээс ачаална.",
+"ctx": "components/admin/zip-import-summary.tsx"
+},
+{
+"mn": "Багцын тойм",
+"ctx": "components/admin/zip-import-summary.tsx"
+},
+{
+"mn": "Хичээлийн төрөл",
+"ctx": "components/admin/zip-import-summary.tsx"
+},
+{
+"mn": "Хичээлийн дугаар",
+"ctx": "components/admin/zip-import-summary.tsx"
+},
+{
+"mn": "Номын хэсэг",
+"ctx": "components/admin/zip-import-summary.tsx"
+},
+{
+"mn": "Хэл",
+"ctx": "components/admin/zip-import-summary.tsx"
+},
+{
+"mn": "Эх бичвэрийн тоо",
+"ctx": "components/admin/zip-import-summary.tsx"
+},
+{
+"mn": "Дасгалын ном — сонсгол",
+"ctx": "components/admin/zip-import-summary.tsx"
+},
+{
+"mn": "Дасгалын ном — унших",
+"ctx": "components/admin/zip-import-summary.tsx"
+},
+{
+"mn": "Дасгалын ном — бичих",
+"ctx": "components/admin/zip-import-summary.tsx"
+},
+{
+"mn": "Заавартай алхмын тоо",
+"ctx": "components/admin/zip-import-summary.tsx"
+},
+{
+"mn": "Судлах хэсгийн тоо",
+"ctx": "components/admin/zip-import-summary.tsx"
+},
+{
+"mn": "Пиньинь агуулга",
+"ctx": "components/admin/zip-import-summary.tsx"
+},
+{
+"mn": "Тийм",
+"ctx": "components/admin/zip-import-summary.tsx"
+},
+{
+"mn": "Үгүй",
+"ctx": "components/admin/zip-import-summary.tsx"
+},
+{
+"mn": "Аялгууны агуулга",
+"ctx": "components/admin/zip-import-summary.tsx"
+},
+{
+"mn": "Багшийн тэмдэглэл",
+"ctx": "components/admin/zip-import-summary.tsx"
+},
+{
+"mn": "source_note-ийн хэлбэр",
+"ctx": "components/admin/zip-import-summary.tsx"
+},
+{
+"mn": "хуучин текст — оруулах боломжгүй",
+"ctx": "components/admin/zip-import-summary.tsx"
+},
+{
+"mn": "Медиа зураг",
+"ctx": "components/admin/zip-import-summary.tsx"
+},
+{
+"mn": "Байршуулсан зураг",
+"ctx": "components/admin/zip-import-summary.tsx"
+},
+{
+"mn": "Нүүр зураг олдсон эсэх",
+"ctx": "components/admin/zip-import-summary.tsx"
+},
+{
+"mn": "Зургийн сангийн төлөв",
+"ctx": "components/admin/zip-import-summary.tsx"
+},
+{
+"mn": "Бичлэг заавал эсэх",
+"ctx": "components/admin/zip-import-summary.tsx"
+},
+{
+"mn": "Аудио файлын тоо",
+"ctx": "components/admin/zip-import-summary.tsx"
+}
+]

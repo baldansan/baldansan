@@ -110,7 +110,7 @@ export function LessonAnalyticsImprovementSection({ detail }: Props) {
             <ul className="mt-3 flex flex-col gap-3 divide-y divide-slate-100">
               {difficultQuestions.slice(0, 5).map((q) => (
                 <li key={q.questionKey} className="pt-3 first:pt-0">
-                  <p className="text-sm text-slate-800">{q.question}</p>
+                  <p className="text-sm text-slate-800" translate="no">{q.question}</p>
                   <p className="mt-1 text-xs text-slate-500">
                     Зөв {q.accuracyPercent}% · {q.attemptsCount} оролдлого
                   </p>
@@ -136,7 +136,7 @@ export function LessonAnalyticsImprovementSection({ detail }: Props) {
                 .slice(0, 5)
                 .map((w) => (
                   <li key={w.vocabularyWordId} className="pt-3 first:pt-0">
-                    <p className="text-sm font-medium text-slate-800">
+                    <p className="text-sm font-medium text-slate-800" translate="no">
                       {w.chinese}{" "}
                       <span className="font-normal text-slate-500">
                         {w.pinyin}

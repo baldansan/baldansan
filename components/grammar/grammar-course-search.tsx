@@ -72,7 +72,7 @@ export function GrammarCourseSearch({
                         <p className="text-xs font-semibold text-[#1FB85A]">
                           {entry.pin}
                         </p>
-                        <p className="mt-1 text-sm font-medium text-[var(--app-muted)] line-clamp-2">
+                        <p className="mt-1 text-sm font-medium text-[var(--app-muted)] line-clamp-2" translate="no">
                           {entry.gloss}
                         </p>
                       </div>

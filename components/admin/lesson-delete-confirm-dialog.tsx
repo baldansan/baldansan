@@ -44,7 +44,7 @@ export function LessonDeleteConfirmDialog({
           материал мөн устаж магадгүй.
         </p>
         {lessonTitle ? (
-          <p className="mt-2 break-words text-sm font-medium text-slate-800">
+          <p className="mt-2 break-words text-sm font-medium text-slate-800" translate="no">
             {lessonTitle}
           </p>
         ) : null}

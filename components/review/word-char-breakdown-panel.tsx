@@ -60,6 +60,7 @@ function BreakdownBlock({
               ? "bs-srs-decomp-etym"
               : "bs-srs-decomp-desc"
           }
+          translate="no"
         >
           {view.etymologyRich ? `💡 ${view.etymology_mn}` : view.etymology_mn}
         </p>

@@ -51,7 +51,7 @@ export function LessonPathHub({
           <h1>
             {lesson.level} · {lesson.lesson_number}-р хичээл
           </h1>
-          <p>{titleMn}</p>
+          <p translate="no">{titleMn}</p>
         </div>
       </div>
 
@@ -62,7 +62,7 @@ export function LessonPathHub({
           {formatPathDuration(plan.totalMinutes)}
         </p>
         {themeLabel ? (
-          <p className="bs-path-theme">Сэдэв: {themeLabel}</p>
+          <p className="bs-path-theme">Сэдэв: <span translate="no">{themeLabel}</span></p>
         ) : null}
       </div>
 

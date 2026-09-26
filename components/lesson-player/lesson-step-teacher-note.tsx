@@ -19,13 +19,13 @@ export function LessonStepTeacherNote({ title, body }: Props) {
       <div className="mt-5">
         <TeacherBubble>
           {lines.length > 1 ? (
-            <ul className="space-y-2">
+            <ul className="space-y-2" translate="no">
               {lines.map((line) => (
                 <li key={line}>{line}</li>
               ))}
             </ul>
           ) : (
-            <p>{body}</p>
+            <p translate="no">{body}</p>
           )}
         </TeacherBubble>
       </div>

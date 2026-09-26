@@ -185,6 +185,7 @@ export function MatchGameClient({
                         ? "border-[var(--app-purple)] bg-[var(--app-purple-light)] ring-2 ring-purple-200"
                         : "border-[var(--app-border)] bg-white shadow-sm active:bg-slate-50"
                 }`}
+                translate="no"
               >
                 {item.label}
               </button>

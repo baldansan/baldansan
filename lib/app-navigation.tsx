@@ -66,7 +66,7 @@ export const APP_NAV_ITEMS: AppNavItem[] = [
   },
   {
     key: "clips",
-    label: "Бичлэг",
+    label: "Дуу·Бичлэг",
     href: "/bichleg",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" aria-hidden>

@@ -28,7 +28,7 @@ export function CharacterDecompositionHint({
         )}
       </p>
       {parts.length > 0 ? (
-        <div className="bs-decomp-hint-row">
+        <div className="bs-decomp-hint-row" translate="no">
           {parts.map((part, index) => (
             <span key={`${part.c}-${index}`} className="bs-decomp-chip">
               <span className="bs-decomp-chip-icon" aria-hidden>
@@ -40,7 +40,7 @@ export function CharacterDecompositionHint({
           ))}
         </div>
       ) : null}
-      {etymology ? <p className="bs-decomp-etym">{etymology}</p> : null}
+      {etymology ? <p className="bs-decomp-etym" translate="no">{etymology}</p> : null}
     </div>
   );
 }

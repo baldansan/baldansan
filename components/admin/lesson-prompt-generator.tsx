@@ -190,10 +190,10 @@ export function LessonPromptGenerator({ lesson }: Props) {
         <div className="rounded-xl bg-slate-50 px-3 py-2 text-xs text-slate-600 ring-1 ring-slate-200">
           <p>
             <span className="font-medium text-slate-800">Хичээл:</span>{" "}
-            {lesson.title} · {lesson.chineseTitle}
+            <span translate="no">{lesson.title} · {lesson.chineseTitle}</span>
           </p>
           {lesson.subtitle ? (
-            <p className="mt-1">{lesson.subtitle}</p>
+            <p className="mt-1" translate="no">{lesson.subtitle}</p>
           ) : null}
         </div>
 

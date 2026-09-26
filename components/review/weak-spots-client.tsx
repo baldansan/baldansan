@@ -413,7 +413,7 @@ function LessonSection({
               📕
             </span>
             <span className="bs-tm-card-body">
-              <span className="bs-tm-card-title">{label(row.lessonId)}</span>
+              <span className="bs-tm-card-title" translate="no">{label(row.lessonId)}</span>
               <span className="bs-tm-card-sub">
                 {row.wrong} {tr(locale, "алдаа")} / {row.total}{" "}
                 {tr(locale, "хариулт")} · {formatPct(row.accuracyPct)}
@@ -458,7 +458,7 @@ function GrammarSection({
               🧩
             </span>
             <span className="bs-tm-card-body">
-              <span className="bs-tm-card-title">{label(row)}</span>
+              <span className="bs-tm-card-title" translate="no">{label(row)}</span>
               <span className="bs-tm-card-sub">
                 {row.wrong} {tr(locale, "алдаа")} / {row.total}{" "}
                 {tr(locale, "хариулт")} · {formatPct(row.accuracyPct)}
@@ -544,7 +544,7 @@ function WordSection({
                       </p>
                     ) : null}
                     {word.meaningMn ? (
-                      <p className="break-words text-sm font-semibold text-[var(--app-text)]">
+                      <p className="break-words text-sm font-semibold text-[var(--app-text)]" translate="no">
                         {word.meaningMn}
                       </p>
                     ) : null}

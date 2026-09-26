@@ -1,0 +1,1034 @@
+[
+{
+"mn": "Сонсох",
+"ctx": "app/baljmaa/baljmaa-view.tsx"
+},
+{
+"mn": "пиньинь нуугдсан — дарж харна",
+"ctx": "app/baljmaa/baljmaa-view.tsx"
+},
+{
+"mn": "орчуулга нуугдсан — дарж харна",
+"ctx": "app/baljmaa/baljmaa-view.tsx"
+},
+{
+"mn": "← Тохиргоо руу буцах",
+"ctx": "app/baljmaa/baljmaa-view.tsx"
+},
+{
+"mn": "Зөвхөн Балжмаад 🌟",
+"ctx": "app/baljmaa/baljmaa-view.tsx"
+},
+{
+"mn": "Шанхайн уулзалтын бэлтгэл — миний танилцуулга",
+"ctx": "app/baljmaa/baljmaa-view.tsx"
+},
+{
+"mn": "Танилцуулгынхаа гол өгүүлбэрүүд 1-р биеэр, хэсэг бүрээр. Ханз → пиньинь → монгол. 🔊 дарж сонсоод чангаар дагаж хэлээрэй. Цээжилснээ шалгахдаа доорх нуух горимыг асаагаад өгүүлбэр дээр дарж хариугаа шалгана.",
+"ctx": "app/baljmaa/baljmaa-view.tsx"
+},
+{
+"mn": "✓ Орчуулга нуусан",
+"ctx": "app/baljmaa/baljmaa-view.tsx"
+},
+{
+"mn": "Орчуулга нуух",
+"ctx": "app/baljmaa/baljmaa-view.tsx"
+},
+{
+"mn": "✓ Пиньинь нуусан",
+"ctx": "app/baljmaa/baljmaa-view.tsx"
+},
+{
+"mn": "Пиньинь нуух",
+"ctx": "app/baljmaa/baljmaa-view.tsx"
+},
+{
+"mn": "📚 Түлхүүр үгс (заавал цээжлэх)",
+"ctx": "app/baljmaa/baljmaa-view.tsx"
+},
+{
+"mn": "Танилцуулгад чинь орсон HSK4+ түвшний үгс — эдгээрийг мэдэхэд яриа чинь чөлөөтэй урсана.",
+"ctx": "app/baljmaa/baljmaa-view.tsx"
+},
+{
+"mn": "Амжилт хүсье, Балжмаа багш аа! 加油！🐫",
+"ctx": "app/baljmaa/baljmaa-view.tsx"
+},
+{
+"mn": "Зөвхөн Балжмаад — уулзалтын бэлтгэл",
+"ctx": "app/baljmaa/page.tsx"
+},
+{
+"mn": "Шанхайн уулзалтын танилцуулга — ханз, пиньинь, монгол.",
+"ctx": "app/baljmaa/page.tsx"
+},
+{
+"mn": "Бусад бичлэг — Бөөндөө Сурцгаая",
+"ctx": "app/bichleg/[seriesId]/page.tsx"
+},
+{
+"mn": "Бичлэг — Бөөндөө Сурцгаая",
+"ctx": "app/bichleg/page.tsx"
+},
+{
+"mn": "Модуль олдсонгүй",
+"ctx": "app/courses/helzui-suuri/[moduleId]/page.tsx"
+},
+{
+"mn": "← Модулууд",
+"ctx": "app/courses/helzui-suuri/[moduleId]/page.tsx"
+},
+{
+"mn": "Хэлзүйн суурь — Заавал сурах",
+"ctx": "app/courses/helzui-suuri/page.tsx"
+},
+{
+"mn": "Хятад өгүүлбэрийн бүтцийг алгоритмаар задлах статик курс.",
+"ctx": "app/courses/helzui-suuri/page.tsx"
+},
+{
+"mn": "HSK1 — Бөөндөө Сурцгаая",
+"ctx": "app/courses/hsk1/page.tsx"
+},
+{
+"mn": "HSK1 хичээлийн жагсаалт, ахиц.",
+"ctx": "app/courses/hsk1/page.tsx"
+},
+{
+"mn": "HSK2 — Бөөндөө Сурцгаая",
+"ctx": "app/courses/hsk2/page.tsx"
+},
+{
+"mn": "HSK2 хичээлийн жагсаалт, ахиц.",
+"ctx": "app/courses/hsk2/page.tsx"
+},
+{
+"mn": "HSK3 — Бөөндөө Сурцгаая",
+"ctx": "app/courses/hsk3/page.tsx"
+},
+{
+"mn": "HSK3 хичээлийн жагсаалт, ахиц.",
+"ctx": "app/courses/hsk3/page.tsx"
+},
+{
+"mn": "HSK4 — Бөөндөө Сурцгаая",
+"ctx": "app/courses/hsk4/page.tsx"
+},
+{
+"mn": "HSK4 хичээлийн жагсаалт, ахиц.",
+"ctx": "app/courses/hsk4/page.tsx"
+},
+{
+"mn": "Яваж байна",
+"ctx": "app/courses/hsk5/hsk5-lesson-list.tsx"
+},
+{
+"mn": "Эхлээгүй",
+"ctx": "app/courses/hsk5/hsk5-lesson-list.tsx"
+},
+{
+"mn": "Бэлэн",
+"ctx": "app/courses/hsk5/hsk5-lesson-list.tsx"
+},
+{
+"mn": "Түгжээтэй",
+"ctx": "app/courses/hsk5/hsk5-lesson-list.tsx"
+},
+{
+"mn": "Хичээл байхгүй",
+"ctx": "app/courses/hsk5/hsk5-lesson-list.tsx"
+},
+{
+"mn": "Энэ курс дээр хичээл одоогоор байхгүй байна. Дараа дахин шалгана уу.",
+"ctx": "app/courses/hsk5/hsk5-lesson-list.tsx"
+},
+{
+"mn": "Хичээл хайх",
+"ctx": "app/courses/hsk5/hsk5-lesson-list.tsx"
+},
+{
+"mn": "Хичээл хайх (гарчиг, тайлбар)...",
+"ctx": "app/courses/hsk5/hsk5-lesson-list.tsx"
+},
+{
+"mn": "Хайлтаар тохирох хичээл олдсонгүй. Өөр түлхүүр үгээр дахин оролдоно уу.",
+"ctx": "app/courses/hsk5/hsk5-lesson-list.tsx"
+},
+{
+"mn": "Хайлт цэвэрлэх",
+"ctx": "app/courses/hsk5/hsk5-lesson-list.tsx"
+},
+{
+"mn": "HSK5 — Бөөндөө Сурцгаая",
+"ctx": "app/courses/hsk5/page.tsx"
+},
+{
+"mn": "HSK5 хичээлийн жагсаалт, ахиц.",
+"ctx": "app/courses/hsk5/page.tsx"
+},
+{
+"mn": "HSK6 — Бөөндөө Сурцгаая",
+"ctx": "app/courses/hsk6/page.tsx"
+},
+{
+"mn": "HSK6 хичээлийн жагсаалт, ахиц.",
+"ctx": "app/courses/hsk6/page.tsx"
+},
+{
+"mn": "Korean Book 1 — Бөөндөө Сурцгаая",
+"ctx": "app/courses/korean-1/page.tsx"
+},
+{
+"mn": "Солонгос хэл 1 — хичээлийн жагсаалт.",
+"ctx": "app/courses/korean-1/page.tsx"
+},
+{
+"mn": "Солонгост ажиллахад хэрэгтэй Солонгос хэл",
+"ctx": "app/courses/korean-1/page.tsx"
+},
+{
+"mn": "Солонгос үсэг, үндсэн үг, ажил амьдралд хэрэгтэй хэллэг",
+"ctx": "app/courses/korean-1/page.tsx"
+},
+{
+"mn": "Korean Survival — Бөөндөө Сурцгаая",
+"ctx": "app/courses/korean-survival/page.tsx"
+},
+{
+"mn": "Солонгос хэл — ажил амьдралд хэрэгтэй хичээлүүд.",
+"ctx": "app/courses/korean-survival/page.tsx"
+},
+{
+"mn": "Ажилд явах Korean",
+"ctx": "app/courses/korean-survival/page.tsx"
+},
+{
+"mn": "Ажил амьдралд хэрэгтэй Солонгос хэллэг, үг, өгүүлбэр",
+"ctx": "app/courses/korean-survival/page.tsx"
+},
+{
+"mn": "Хичээлүүд — Бөөндөө Сурцгаая",
+"ctx": "app/courses/page.tsx"
+},
+{
+"mn": "Сурах чиглэлээ сонго — HSK4, HSK5, Korean.",
+"ctx": "app/courses/page.tsx"
+},
+{
+"mn": "Солонгос үсэг, үндсэн үг, ажил амьдралд хэрэгтэй хэллэг.",
+"ctx": "app/courses/page.tsx"
+},
+{
+"mn": "Миний самбар — Бөөндөө Сурцгаая",
+"ctx": "app/dashboard/page.tsx"
+},
+{
+"mn": "Миний ахиц, continue learning, quiz болон vocabulary статистик.",
+"ctx": "app/dashboard/page.tsx"
+},
+{
+"mn": "HSK үгс шалгах — debug",
+"ctx": "app/debug/hsk-words-check/page.tsx"
+},
+{
+"mn": "Ачаалахад алдаа гарлаа",
+"ctx": "app/debug/hsk-words-check/page.tsx"
+},
+{
+"mn": "DEBUG · түр шалгалт",
+"ctx": "app/debug/hsk-words-check/page.tsx"
+},
+{
+"mn": "HSK1 — эхний 10 үг",
+"ctx": "app/debug/hsk-words-check/page.tsx"
+},
+{
+"mn": "· нийт HSK1:",
+"ctx": "app/debug/hsk-words-check/page.tsx"
+},
+{
+"mn": "ажиллуулсан эсэхээ шалгана уу.",
+"ctx": "app/debug/hsk-words-check/page.tsx"
+},
+{
+"mn": "← Давтах руу",
+"ctx": "app/debug/hsk-words-check/page.tsx"
+},
+{
+"mn": "Сайн байна уу",
+"ctx": "app/demo/exercises-v2/exercises-v2-demo-client.tsx"
+},
+{
+"mn": "Үгсийг зөв дарааллаар сонгон өгүүлбэр бүтээнэ үү.",
+"ctx": "app/demo/exercises-v2/exercises-v2-demo-client.tsx"
+},
+{
+"mn": "Өгүүлбэрийг уншаад зөв эсэхийг сонгоно уу.",
+"ctx": "app/demo/exercises-v2/exercises-v2-demo-client.tsx"
+},
+{
+"mn": "Зөв хариултыг сонгоно уу.",
+"ctx": "app/demo/exercises-v2/exercises-v2-demo-client.tsx"
+},
+{
+"mn": "Дасгал хийхэд энд харагдана.",
+"ctx": "app/demo/exercises-v2/exercises-v2-demo-client.tsx"
+},
+{
+"mn": "Lesson v2 exercises demo — Бөөндөө Сурцгаая",
+"ctx": "app/demo/exercises-v2/page.tsx"
+},
+{
+"mn": "Lesson player demo — Бөөндөө Сурцгаая",
+"ctx": "app/demo/lesson-player/page.tsx"
+},
+{
+"mn": "сурах",
+"ctx": "app/demo/motion/motion-demo-client.tsx"
+},
+{
+"mn": "Motion layer demo — Бөөндөө Сурцгаая",
+"ctx": "app/demo/motion/page.tsx"
+},
+{
+"mn": "Demo — Бөөндөө Сурцгаая",
+"ctx": "app/demo/page.tsx"
+},
+{
+"mn": "Хятад хэлний demo learning flow — watch, vocabulary, quiz, review, progress. Сургалтын төв, багш нарт зориулсан.",
+"ctx": "app/demo/page.tsx"
+},
+{
+"mn": "Demo — суралцах flow",
+"ctx": "app/demo/page.tsx"
+},
+{
+"mn": "B2B demo — сургалтын төв, багш, сурагчид platform-ийн learning flow-г туршиж үзэх. Доорх алхмуудыг дараалан нээж болно.",
+"ctx": "app/demo/page.tsx"
+},
+{
+"mn": "Lesson 1 (HSK5) ашиглан бүрэн flow: watch → vocabulary → quiz → review → progress. Энэ нь сургалтын төвийн demo presentation-д ашиглах боломжтой.",
+"ctx": "app/demo/page.tsx"
+},
+{
+"mn": "Learning flow алхмууд",
+"ctx": "app/demo/page.tsx"
+},
+{
+"mn": "Нээх →",
+"ctx": "app/demo/page.tsx"
+},
+{
+"mn": "Багш Lesson 1-ийг ангидаа assignment болгон өгөх flow: class сонгох → lesson сонгох → due date → watch/vocab/quiz заавар. Одоогоор UI preview.",
+"ctx": "app/demo/page.tsx"
+},
+{
+"mn": "Demo class (HSK5 Demo Group) сонгоно",
+"ctx": "app/demo/page.tsx"
+},
+{
+"mn": "Сурагч watch → vocabulary → quiz дуусгана",
+"ctx": "app/demo/page.tsx"
+},
+{
+"mn": "Багш demo class progress харна",
+"ctx": "app/demo/page.tsx"
+},
+{
+"mn": "Assignment үүсгэх →",
+"ctx": "app/demo/page.tsx"
+},
+{
+"mn": "School package харах",
+"ctx": "app/demo/page.tsx"
+},
+{
+"mn": "Толь бичиг — Бөөндөө Сурцгаая",
+"ctx": "app/dictionary/page.tsx"
+},
+{
+"mn": "Ханз, пиньинь, монгол утгаар хайдаг HSK толь бичиг — дуудлагатай.",
+"ctx": "app/dictionary/page.tsx"
+},
+{
+"mn": "Санал хүсэлт",
+"ctx": "app/feedback/feedback-page-client.tsx"
+},
+{
+"mn": "Одоогоор feedback form backend-д хадгалахгүй. Доорх template-г copy хийгээд admin/developer рүү явуулж болно.",
+"ctx": "app/feedback/feedback-page-client.tsx"
+},
+{
+"mn": "Feedback — Бөөндөө Сурцгаая",
+"ctx": "app/feedback/page.tsx"
+},
+{
+"mn": "Санал хүсэлт илгээх template.",
+"ctx": "app/feedback/page.tsx"
+},
+{
+"mn": "Дараалал — Тоглоом",
+"ctx": "app/games/arrange/page.tsx"
+},
+{
+"mn": "Диктант — сонсоод бич | Бөөндөө Сурцгаая",
+"ctx": "app/games/dictation/page.tsx"
+},
+{
+"mn": "Холбох — Тоглоом",
+"ctx": "app/games/match/page.tsx"
+},
+{
+"mn": "Дутуу үг — Тоглоом",
+"ctx": "app/games/missing-word/page.tsx"
+},
+{
+"mn": "Тоглоом — Бөөндөө Сурцгаая",
+"ctx": "app/games/page.tsx"
+},
+{
+"mn": "Ханз задлах — Тоглоом",
+"ctx": "app/games/radical/page.tsx"
+},
+{
+"mn": "Дутуу бүрдэл — Тоглоом",
+"ctx": "app/games/stroke/page.tsx"
+},
+{
+"mn": "Орчуулах — Тоглоом",
+"ctx": "app/games/translate/page.tsx"
+},
+{
+"mn": "Тусламж — Бөөндөө Сурцгаая",
+"ctx": "app/help/page.tsx"
+},
+{
+"mn": "Түгээмэл асуултууд — account, ахиц, quiz, давталт.",
+"ctx": "app/help/page.tsx"
+},
+{
+"mn": "Энэ app яаж ажилладаг вэ?",
+"ctx": "app/help/page.tsx"
+},
+{
+"mn": "Курс сонго → хичээл үзэх → үгийн сан → quiz → давталт. Дэлгэрэнгүй: /onboarding",
+"ctx": "app/help/page.tsx"
+},
+{
+"mn": "Account хэрэгтэй юу?",
+"ctx": "app/help/page.tsx"
+},
+{
+"mn": "Заавал биш. Guest төхөөрөмж дээр ахиц хадгална. Account нэвтэрвэл ахиц cloud дээр хадгалагдана.",
+"ctx": "app/help/page.tsx"
+},
+{
+"mn": "Guest ахиц яах вэ?",
+"ctx": "app/help/page.tsx"
+},
+{
+"mn": "Профайл дээр нэвтэрсний дараа local ахицыг account руу sync хийх боломжтой.",
+"ctx": "app/help/page.tsx"
+},
+{
+"mn": "Quiz оноо хаана хадгалагдах вэ?",
+"ctx": "app/help/page.tsx"
+},
+{
+"mn": "Guest: browser localStorage. Нэвтэрсэн: Supabase account.",
+"ctx": "app/help/page.tsx"
+},
+{
+"mn": "Үгийн давталт гэж юу вэ?",
+"ctx": "app/help/page.tsx"
+},
+{
+"mn": "Сурсан гэж тэмдэглэсэн үгсийг /review хэсэгт давтан харах.",
+"ctx": "app/help/page.tsx"
+},
+{
+"mn": "Хятад хэлний түвшнээ яаж сонгох вэ?",
+"ctx": "app/help/page.tsx"
+},
+{
+"mn": "/courses дээр HSK4, HSK5, Taobao чиглэл байна. Одоогоор HSK5 бүрэн бэлэн.",
+"ctx": "app/help/page.tsx"
+},
+{
+"mn": "Төлбөртэй болох уу?",
+"ctx": "app/help/page.tsx"
+},
+{
+"mn": "Ирээдүйд төлөвлөгдсөн. Одоогоор /pricing — төлбөр идэвхгүй.",
+"ctx": "app/help/page.tsx"
+},
+{
+"mn": "Алдаа гарвал яах вэ?",
+"ctx": "app/help/page.tsx"
+},
+{
+"mn": "/feedback хуудас дээр template copy хийж илгээнэ үү.",
+"ctx": "app/help/page.tsx"
+},
+{
+"mn": "Тусламж / FAQ",
+"ctx": "app/help/page.tsx"
+},
+{
+"mn": "Түгээмэл асуултууд",
+"ctx": "app/help/page.tsx"
+},
+{
+"mn": "Нээлттэй эх сурвалжууд",
+"ctx": "app/help/page.tsx"
+},
+{
+"mn": "Ханзны зурлагын өгөгдөл: Hanzi Writer / Make Me a Hanzi (MIT, Arphic PL). HSK 3.0 үг, ханз, бичгийн жагсаалт:",
+"ctx": "app/help/page.tsx"
+},
+{
+"mn": "(CC BY-SA 4.0), CC-CEDICT толь (CC BY-SA 4.0). Эдгээр өгөгдлөөс үүсмэл жагсаалтууд мөн CC BY-SA 4.0 нөхцөлтэй. Гараар зурж ханз таних:",
+"ctx": "app/help/page.tsx"
+},
+{
+"mn": "(GPL; өгөгдөл нь Make Me a Hanzi-гаас, Arphic PL — лицензүүд /vendor/hanzilookup/ хавтаст хамт тархана).",
+"ctx": "app/help/page.tsx"
+},
+{
+"mn": "Заавар",
+"ctx": "app/help/page.tsx"
+},
+{
+"mn": "Нүүр — Бөөндөө Сурцгаая",
+"ctx": "app/home/page.tsx"
+},
+{
+"mn": "Хятад хэл сурах апп — үргэлжлүүлэх, курс, хичээлийн зам.",
+"ctx": "app/home/page.tsx"
+},
+{
+"mn": "Accept invitation — Бөөндөө Сурцгаая",
+"ctx": "app/invite/[token]/page.tsx"
+},
+{
+"mn": "Бичих сургалт · 写字练习 — Бөөндөө Сурцгаая",
+"ctx": "app/kanji/handwriting/page.tsx"
+},
+{
+"mn": "HSK 3.0 стандартын гараар бичиж сурах ёстой 1200 ханзыг дагаж + санаж бичиж сурна.",
+"ctx": "app/kanji/handwriting/page.tsx"
+},
+{
+"mn": "Үсэг — Бөөндөө Сурцгаая",
+"ctx": "app/kanji/page.tsx"
+},
+{
+"mn": "Бөөндөө Сурцгаая",
+"ctx": "app/layout.tsx"
+},
+{
+"mn": "Бөөндөө Сурцгаая — Хятад хэл сурах апп",
+"ctx": "app/layout.tsx"
+},
+{
+"mn": "%s | Бөөндөө Сурцгаая",
+"ctx": "app/layout.tsx"
+},
+{
+"mn": "Богино бичлэг, subtitle, vocabulary, quiz ашиглан Хятад хэлийг өдөр бүр бага багаар сур.",
+"ctx": "app/layout.tsx"
+},
+{
+"mn": "Хятад хэл",
+"ctx": "app/layout.tsx"
+},
+{
+"mn": "Сурцгаая",
+"ctx": "app/layout.tsx"
+},
+{
+"mn": "Богино бичлэг, subtitle, vocabulary, quiz ашиглан Хятад хэл сур.",
+"ctx": "app/layout.tsx"
+},
+{
+"mn": "← Курс руу буцах",
+"ctx": "app/lessons/[lessonId]/page.tsx"
+},
+{
+"mn": "Үгийн сан судлах",
+"ctx": "app/lessons/[lessonId]/page.tsx"
+},
+{
+"mn": "Хадмал урьдчилсан",
+"ctx": "app/lessons/[lessonId]/page.tsx"
+},
+{
+"mn": "Үгийн сан",
+"ctx": "app/lessons/[lessonId]/page.tsx"
+},
+{
+"mn": "Бүгд →",
+"ctx": "app/lessons/[lessonId]/page.tsx"
+},
+{
+"mn": "Сорил",
+"ctx": "app/lessons/[lessonId]/page.tsx"
+},
+{
+"mn": "quiz асуулт",
+"ctx": "app/lessons/[lessonId]/page.tsx"
+},
+{
+"mn": "Тоглоомоор давтах",
+"ctx": "app/lessons/[lessonId]/page.tsx"
+},
+{
+"mn": "Энэ хичээлийн үгээр солонгос дасгал тоглоомууд.",
+"ctx": "app/lessons/[lessonId]/page.tsx"
+},
+{
+"mn": "Энэ хичээлийн үгээр холбох, орчуулах, дараалал тоглоом тогло.",
+"ctx": "app/lessons/[lessonId]/page.tsx"
+},
+{
+"mn": "Маш сайн! Дараагийн хичээл рүү орж болно.",
+"ctx": "app/lessons/[lessonId]/quiz/quiz-client.tsx"
+},
+{
+"mn": "Сайн байна. Алдсан үгээ үгийн сан хэсгээс давтаарай.",
+"ctx": "app/lessons/[lessonId]/quiz/quiz-client.tsx"
+},
+{
+"mn": "Дахиад нэг удаа үзээд quiz-ээ давтаарай.",
+"ctx": "app/lessons/[lessonId]/quiz/quiz-client.tsx"
+},
+{
+"mn": "← Хичээл рүү буцах",
+"ctx": "app/lessons/[lessonId]/quiz/quiz-client.tsx"
+},
+{
+"mn": "Дасгал —",
+"ctx": "app/lessons/[lessonId]/quiz/quiz-client.tsx"
+},
+{
+"mn": "Сурсан үг, өгүүлбэрээ шалгаарай.",
+"ctx": "app/lessons/[lessonId]/quiz/quiz-client.tsx"
+},
+{
+"mn": "Дасгалын асуулт байхгүй",
+"ctx": "app/lessons/[lessonId]/quiz/quiz-client.tsx"
+},
+{
+"mn": "Энэ хичээлд дасгалын асуулт одоогоор байхгүй байна. Үгийн сан эсвэл хичээлээ үзэх хэсгээс үргэлжлүүлнэ үү.",
+"ctx": "app/lessons/[lessonId]/quiz/quiz-client.tsx"
+},
+{
+"mn": "Үр дүн",
+"ctx": "app/lessons/[lessonId]/quiz/quiz-client.tsx"
+},
+{
+"mn": "Буруу хариултууд",
+"ctx": "app/lessons/[lessonId]/quiz/quiz-client.tsx"
+},
+{
+"mn": ": зөв хариулт —",
+"ctx": "app/lessons/[lessonId]/quiz/quiz-client.tsx"
+},
+{
+"mn": "Сонгох",
+"ctx": "app/lessons/[lessonId]/quiz/quiz-client.tsx"
+},
+{
+"mn": "Нэг үг, нэг карт — Мэднэ эсвэл дахин давтана.",
+"ctx": "app/lessons/[lessonId]/vocabulary/vocabulary-client.tsx"
+},
+{
+"mn": "Нэг үсэг, нэг үг — картаар алхмаар сур.",
+"ctx": "app/lessons/[lessonId]/vocabulary/vocabulary-client.tsx"
+},
+{
+"mn": "Үг бүрийг pinyin, Монгол утга, жишээ өгүүлбэртэй сур.",
+"ctx": "app/lessons/[lessonId]/vocabulary/vocabulary-client.tsx"
+},
+{
+"mn": "Картаар сурах",
+"ctx": "app/lessons/[lessonId]/vocabulary/vocabulary-client.tsx"
+},
+{
+"mn": "Нэг үсэг, нэг үе — алхмаар давтана.",
+"ctx": "app/lessons/[lessonId]/vocabulary/vocabulary-client.tsx"
+},
+{
+"mn": "Жагсаалтаар харах горим — доорх үгс.",
+"ctx": "app/lessons/[lessonId]/vocabulary/vocabulary-client.tsx"
+},
+{
+"mn": "Жагсаалтаар харах",
+"ctx": "app/lessons/[lessonId]/vocabulary/vocabulary-client.tsx"
+},
+{
+"mn": "← Картаар сурах",
+"ctx": "app/lessons/[lessonId]/vocabulary/vocabulary-client.tsx"
+},
+{
+"mn": "Үг хайх",
+"ctx": "app/lessons/[lessonId]/vocabulary/vocabulary-client.tsx"
+},
+{
+"mn": "Үг хайх...",
+"ctx": "app/lessons/[lessonId]/vocabulary/vocabulary-client.tsx"
+},
+{
+"mn": "Харагдаж буй бүх үгийг сурсан гэж тэмдэглэх",
+"ctx": "app/lessons/[lessonId]/vocabulary/vocabulary-client.tsx"
+},
+{
+"mn": "Үгийн сан байхгүй",
+"ctx": "app/lessons/[lessonId]/vocabulary/vocabulary-client.tsx"
+},
+{
+"mn": "Энэ хичээлд үгийн жагсаалт одоогоор байхгүй байна.",
+"ctx": "app/lessons/[lessonId]/vocabulary/vocabulary-client.tsx"
+},
+{
+"mn": "Үг олдсонгүй",
+"ctx": "app/lessons/[lessonId]/vocabulary/vocabulary-client.tsx"
+},
+{
+"mn": "Хайлт эсвэл HSK шүүлтүүрт тохирох үг олдсонгүй.",
+"ctx": "app/lessons/[lessonId]/vocabulary/vocabulary-client.tsx"
+},
+{
+"mn": "Шүүлтүүр цэвэрлэх",
+"ctx": "app/lessons/[lessonId]/vocabulary/vocabulary-client.tsx"
+},
+{
+"mn": "Орчуулах тоглох",
+"ctx": "app/lessons/[lessonId]/vocabulary/vocabulary-client.tsx"
+},
+{
+"mn": "Холбох тоглох",
+"ctx": "app/lessons/[lessonId]/vocabulary/vocabulary-client.tsx"
+},
+{
+"mn": "✓ Сурсан",
+"ctx": "app/lessons/[lessonId]/vocabulary/vocabulary-client.tsx"
+},
+{
+"mn": "🔊 Сонсох дасгал",
+"ctx": "app/lessons/[lessonId]/workbook/workbook-client.tsx"
+},
+{
+"mn": "Номын дасгал —",
+"ctx": "app/lessons/[lessonId]/workbook/workbook-client.tsx"
+},
+{
+"mn": "Хариулт (админ)",
+"ctx": "app/lessons/[lessonId]/workbook/workbook-client.tsx"
+},
+{
+"mn": "Supabase тохиргоо олдсонгүй. .env.local файлд URL болон anon key нэмнэ үү.",
+"ctx": "app/login/login-form.tsx"
+},
+{
+"mn": "My assignments — Бөөндөө Сурцгаая",
+"ctx": "app/my-assignments/page.tsx"
+},
+{
+"mn": "Хуудас олдсонгүй",
+"ctx": "app/not-found.tsx"
+},
+{
+"mn": "Хайсан хуудас байхгүй эсвэл шилжсөн байж магадгүй.",
+"ctx": "app/not-found.tsx"
+},
+{
+"mn": "Notifications — Бөөндөө Сурцгаая",
+"ctx": "app/notifications/page.tsx"
+},
+{
+"mn": "Офлайн",
+"ctx": "app/offline/page.tsx"
+},
+{
+"mn": "Интернэт холболтгүй байна.",
+"ctx": "app/offline/page.tsx"
+},
+{
+"mn": "Интернэт холболтгүй байна",
+"ctx": "app/offline/page.tsx"
+},
+{
+"mn": "Сүлжээгээ шалгаад дахин оролдоно уу. Татсан хичээлүүдийн зарим хэсэг офлайн үед ч нээгдэж болно.",
+"ctx": "app/offline/page.tsx"
+},
+{
+"mn": "Дахин оролдох — Нүүр",
+"ctx": "app/offline/page.tsx"
+},
+{
+"mn": "Заавар — Бөөндөө Сурцгаая",
+"ctx": "app/onboarding/page.tsx"
+},
+{
+"mn": "Сурах хэл сонгох, app хэрхэн ажилладаг вэ — курс, хичээл, үгийн сан, quiz.",
+"ctx": "app/onboarding/page.tsx"
+},
+{
+"mn": "Үнийн мэдээлэл — Бөөндөө Сурцгаая",
+"ctx": "app/pricing/page.tsx"
+},
+{
+"mn": "Бөөндөө Сурцгаая app одоогоор бүрэн үнэгүй.",
+"ctx": "app/pricing/page.tsx"
+},
+{
+"mn": "Үнийн мэдээлэл",
+"ctx": "app/pricing/page.tsx"
+},
+{
+"mn": "Одоогоор бүрэн үнэгүй 🎉",
+"ctx": "app/pricing/page.tsx"
+},
+{
+"mn": "Бөөндөө Сурцгаая app-ийн бүх хичээл, үгийн сан, quiz, давталтын хэрэгслүүд одоогоор ямар ч төлбөргүй. Бүртгэл үүсгээд л суралцаж эхлээрэй — ахиц тань cloud дээр хадгалагдана.",
+"ctx": "app/pricing/page.tsx"
+},
+{
+"mn": "Ирээдүйд төлбөртэй нэмэлт багц гарвал энэ хуудсан дээр урьдчилан зарлана. Одоо байгаа хэрэглэгчдийн эрх ямар нэг байдлаар хумигдахгүй.",
+"ctx": "app/pricing/page.tsx"
+},
+{
+"mn": "Сургууль, багш нарт",
+"ctx": "app/pricing/page.tsx"
+},
+{
+"mn": "Ангиараа ашиглах сонирхолтой сургууль, багш нар бидэнтэй холбогдоорой — хамтран ажиллах боломжийг ярилцъя.",
+"ctx": "app/pricing/page.tsx"
+},
+{
+"mn": "Үнэгүй эхлэх",
+"ctx": "app/pricing/page.tsx"
+},
+{
+"mn": "Холбоо барих",
+"ctx": "app/pricing/page.tsx"
+},
+{
+"mn": "Нууцлалын бодлого — Бөөндөө Сурцгаая",
+"ctx": "app/privacy/page.tsx"
+},
+{
+"mn": "Бөөндөө Сурцгаая app ямар мэдээлэл цуглуулдаг, хэрхэн хамгаалдаг тухай.",
+"ctx": "app/privacy/page.tsx"
+},
+{
+"mn": "1. Ямар мэдээлэл цуглуулдаг вэ?",
+"ctx": "app/privacy/page.tsx"
+},
+{
+"mn": "Бүртгэл үүсгэхэд: имэйл хаяг, нууц үг (нууц үгийг Supabase аюулгүй хадгална — бид харах боломжгүй).",
+"ctx": "app/privacy/page.tsx"
+},
+{
+"mn": "Сурах явцад: хичээлийн ахиц, сурсан үгс, quiz оноо, давталтын түүх, өдрийн зорилго, streak.",
+"ctx": "app/privacy/page.tsx"
+},
+{
+"mn": "Зочноор (нэвтрэлгүй) ашиглавал ахиц зөвхөн таны төхөөрөмж дээр (browser storage) хадгалагдана — бидэнд илгээгдэхгүй.",
+"ctx": "app/privacy/page.tsx"
+},
+{
+"mn": "2. Мэдээллийг юунд ашигладаг вэ?",
+"ctx": "app/privacy/page.tsx"
+},
+{
+"mn": "Зөвхөн app-ийн үндсэн үйлчилгээнд: таны сурах явцыг хадгалах, төхөөрөмж хооронд sync хийх, давталтын хуваарь гаргах.",
+"ctx": "app/privacy/page.tsx"
+},
+{
+"mn": "Бид таны мэдээллийг хэнд ч зардаггүй, сурталчилгаанд ашигладаггүй, гуравдагч этгээдэд дамжуулдаггүй.",
+"ctx": "app/privacy/page.tsx"
+},
+{
+"mn": "3. Хаана хадгалагддаг вэ?",
+"ctx": "app/privacy/page.tsx"
+},
+{
+"mn": "Өгөгдөл Supabase (өгөгдлийн сан) болон Vercel (hosting) дээр хадгалагдана. Хэрэглэгч бүрийн мэдээлэл Row Level Security дүрмээр хамгаалагдсан — өөр хэрэглэгч таны мэдээлэлд хандах боломжгүй.",
+"ctx": "app/privacy/page.tsx"
+},
+{
+"mn": "Үгийн дуудлагын аудиог нээлттэй CDN-ээс татдаг — энэ үед таны хувийн мэдээлэл дамждаггүй.",
+"ctx": "app/privacy/page.tsx"
+},
+{
+"mn": "4. Бүртгэлээ устгах",
+"ctx": "app/privacy/page.tsx"
+},
+{
+"mn": "Тохиргоо → «Бүртгэл устгах» хэсгээс бүртгэлээ бүрмөсөн устгаж болно. Устгахад таны имэйл, бүх сурах явц, оноо өгөгдлийн сангаас бүрмөсөн арилна — сэргээх боломжгүй.",
+"ctx": "app/privacy/page.tsx"
+},
+{
+"mn": "5. Хүүхдийн мэдээлэл",
+"ctx": "app/privacy/page.tsx"
+},
+{
+"mn": "App нь хэл сурах зориулалттай бөгөөд насанд тохирсон контенттой. 13-аас доош насны хүүхэд эцэг эхийн зөвшөөрөлтэйгөөр ашиглахыг зөвлөнө.",
+"ctx": "app/privacy/page.tsx"
+},
+{
+"mn": "6. Өөрчлөлт ба холбоо барих",
+"ctx": "app/privacy/page.tsx"
+},
+{
+"mn": "Энэ бодлогод өөрчлөлт орвол энэ хуудсан дээр шинэчилж, огноог тэмдэглэнэ.",
+"ctx": "app/privacy/page.tsx"
+},
+{
+"mn": "Нууцлалын бодлого",
+"ctx": "app/privacy/page.tsx"
+},
+{
+"mn": "Сүүлд шинэчилсэн:",
+"ctx": "app/privacy/page.tsx"
+},
+{
+"mn": "Профайл — Бөөндөө Сурцгаая",
+"ctx": "app/profile/page.tsx"
+},
+{
+"mn": "Ачааллаж байна...",
+"ctx": "app/profile/profile-dashboard.tsx"
+},
+{
+"mn": "Миний суралцах ахиц",
+"ctx": "app/profile/profile-dashboard.tsx"
+},
+{
+"mn": "Аккаунт болон энэ төхөөрөмж дээрх ахиц.",
+"ctx": "app/profile/profile-dashboard.tsx"
+},
+{
+"mn": "Энэ төхөөрөмж дээр хадгалагдсан ахиц.",
+"ctx": "app/profile/profile-dashboard.tsx"
+},
+{
+"mn": "Энэ төхөөрөмж дээр хадгалагдсан ахиц мөн хадгалагдсан хэвээр байна.",
+"ctx": "app/profile/profile-dashboard.tsx"
+},
+{
+"mn": "Нэвтэрсний дараа хичээл, үг, quiz ахицыг аккаунтаар хадгална. Одоогоор зөвхөн энэ төхөөрөмж дээр хадгалагдана.",
+"ctx": "app/profile/profile-dashboard.tsx"
+},
+{
+"mn": "Эхлэх заавар",
+"ctx": "app/profile/profile-dashboard.tsx"
+},
+{
+"mn": "App хэрхэн ажилладагийг onboarding-оос үзээд HSK5-аар эхлээрэй.",
+"ctx": "app/profile/profile-dashboard.tsx"
+},
+{
+"mn": "Миний хэрэгслүүд",
+"ctx": "app/profile/profile-dashboard.tsx"
+},
+{
+"mn": "Сануулга",
+"ctx": "app/profile/profile-dashboard.tsx"
+},
+{
+"mn": "7 хоногийн тайлан",
+"ctx": "app/profile/profile-dashboard.tsx"
+},
+{
+"mn": "Мэдэгдэл",
+"ctx": "app/profile/profile-dashboard.tsx"
+},
+{
+"mn": "Миний даалгавар",
+"ctx": "app/profile/profile-dashboard.tsx"
+},
+{
+"mn": "Push/имэйл мэдэгдэл ирээдүйд нэмэгдэнэ.",
+"ctx": "app/profile/profile-dashboard.tsx"
+},
+{
+"mn": "Нэвтэрсэн хэрэглэгч",
+"ctx": "app/profile/profile-dashboard.tsx"
+},
+{
+"mn": "Admin эрхтэй хэрэглэгч",
+"ctx": "app/profile/profile-dashboard.tsx"
+},
+{
+"mn": "Энгийн хэрэглэгч",
+"ctx": "app/profile/profile-dashboard.tsx"
+},
+{
+"mn": "Admin самбар →",
+"ctx": "app/profile/profile-dashboard.tsx"
+},
+{
+"mn": "Одоогоор нэвтрээгүй байна.",
+"ctx": "app/profile/profile-dashboard.tsx"
+},
+{
+"mn": "Нэвтэрсний дараа ахицаа аккаунтаар хадгална.",
+"ctx": "app/profile/profile-dashboard.tsx"
+},
+{
+"mn": "Нэвтрэх →",
+"ctx": "app/profile/profile-dashboard.tsx"
+},
+{
+"mn": "Аккаунттай холбогдсон ахиц",
+"ctx": "app/profile/profile-dashboard.tsx"
+},
+{
+"mn": "Дууссан хичээл",
+"ctx": "app/profile/profile-dashboard.tsx"
+},
+{
+"mn": "Аккаунтанд хадгалсан үг",
+"ctx": "app/profile/profile-dashboard.tsx"
+},
+{
+"mn": "Дууссан хичээлүүд",
+"ctx": "app/profile/profile-dashboard.tsx"
+},
+{
+"mn": "Одоогоор ахиц хадгалагдаагүй байна.",
+"ctx": "app/profile/profile-dashboard.tsx"
+},
+{
+"mn": "Хичээл үзэж, үг сурч, quiz өгснөөр энд ахицаа харах боломжтой.",
+"ctx": "app/profile/profile-dashboard.tsx"
+},
+{
+"mn": "Суралцаж эхлэх",
+"ctx": "app/profile/profile-dashboard.tsx"
+},
+{
+"mn": "Сүүлд үзсэн хичээлээ үргэлжлүүлээрэй.",
+"ctx": "app/profile/profile-dashboard.tsx"
+},
+{
+"mn": "HSK5 курсаас эхлээрэй.",
+"ctx": "app/profile/profile-dashboard.tsx"
+},
+{
+"mn": "Аккаунттай холбогдсон quiz үр дүн",
+"ctx": "app/profile/profile-dashboard.tsx"
+},
+{
+"mn": "Нэвтэрсэн үед quiz оролдлого Supabase-д хадгалагдана. Энэ төхөөрөмж дээрх үр дүн мөн хадгалагдсан хэвээр байна.",
+"ctx": "app/profile/profile-dashboard.tsx"
+},
+{
+"mn": "Миний явц — Бөөндөө Сурцгаая",
+"ctx": "app/progress/page.tsx"
+}
+]

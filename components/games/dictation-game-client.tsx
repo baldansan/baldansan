@@ -403,7 +403,7 @@ export function DictationGameClient() {
                 <p className="text-sm font-extrabold text-[var(--bs-green)]">
                   {current.pinyin}
                 </p>
-                <p className="mt-1 text-sm text-[var(--bs-muted)]">
+                <p className="mt-1 text-sm text-[var(--bs-muted)]" translate="no">
                   {current.meaning}
                 </p>
               </div>

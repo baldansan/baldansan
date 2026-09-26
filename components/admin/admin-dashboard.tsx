@@ -443,6 +443,7 @@ export function AdminDashboard({
                   <Link
                     href={`/admin/lessons/${item.lessonId}`}
                     className="text-sm font-semibold text-slate-800 hover:text-emerald-700"
+                    translate="no"
                   >
                     {item.title}
                   </Link>

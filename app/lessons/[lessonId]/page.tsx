@@ -143,7 +143,7 @@ export default async function LessonDetailPage({
           badge={`#${lesson.id}`}
         />
         {lesson.subtitle ? (
-          <p className="-mt-2 text-sm leading-6 text-[var(--app-muted)]">
+          <p className="-mt-2 text-sm leading-6 text-[var(--app-muted)]" translate="no">
             {lesson.subtitle}
           </p>
         ) : null}

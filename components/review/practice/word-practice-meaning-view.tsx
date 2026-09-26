@@ -136,6 +136,7 @@ function WordPracticeMatchBoard({
                   else setSelectedLeft(selectedLeft === item.id ? null : item.id);
                 }}
                 className={`bs-wpl-match-btn${isMatched ? " bs-wpl-match-btn--ok" : ""}${isSelected ? " bs-wpl-match-btn--sel" : ""}${isWrong ? " bs-wpl-match-btn--bad" : ""}`}
+                translate="no"
               >
                 {item.label}
               </button>
@@ -268,6 +269,7 @@ function WordPracticeMeaningQuiz({
                 disabled={locked}
                 onClick={() => pickOption(option)}
                 className={cls}
+                translate="no"
               >
                 {option}
               </button>

@@ -1,0 +1,2162 @@
+[
+{
+"mn": "Үйлдлийн дэлгэрэнгүй",
+"ctx": "app/admin/activity/[activityId]/page.tsx"
+},
+{
+"mn": "Өөрчлөлтийн өмнөх, дараах хуулбар болон талбар бүрийн ялгааг харах.",
+"ctx": "app/admin/activity/[activityId]/page.tsx"
+},
+{
+"mn": "Үйлдлийн бүртгэл — Buunduu Surtsgaay",
+"ctx": "app/admin/activity/page.tsx"
+},
+{
+"mn": "Үйлдлийн бүртгэл",
+"ctx": "app/admin/activity/page.tsx"
+},
+{
+"mn": "Админ хэрэглэгчдийн хийсэн хичээл, контент, нийтлэлт, ажлын өөрчлөлтийн түүх.",
+"ctx": "app/admin/activity/page.tsx"
+},
+{
+"mn": "Хичээл",
+"ctx": "app/admin/activity/page.tsx"
+},
+{
+"mn": "Хичээл олдсонгүй",
+"ctx": "app/admin/analytics/lessons/[lessonId]/page.tsx"
+},
+{
+"mn": "← Суралцахуйн тайлан",
+"ctx": "app/admin/analytics/lessons/[lessonId]/page.tsx"
+},
+{
+"mn": "Суралцахуйн тайлан — Удирдлагын хэсэг",
+"ctx": "app/admin/analytics/page.tsx"
+},
+{
+"mn": "Суралцахуйн тайлан",
+"ctx": "app/admin/analytics/page.tsx"
+},
+{
+"mn": "Хичээл бүрийн суралцагчийн ахиц, дасгалын оноо, үгсийн сангийн ашиглалтыг харна.",
+"ctx": "app/admin/analytics/page.tsx"
+},
+{
+"mn": "Ажлууд харах",
+"ctx": "app/admin/analytics/page.tsx"
+},
+{
+"mn": "Тайлангийн тэмдэглэл",
+"ctx": "app/admin/analytics/page.tsx"
+},
+{
+"mn": "Ерөнхий байдал",
+"ctx": "app/admin/analytics/page.tsx"
+},
+{
+"mn": "Нийт хичээл",
+"ctx": "app/admin/analytics/page.tsx"
+},
+{
+"mn": "Эхэлсэн хичээл",
+"ctx": "app/admin/analytics/page.tsx"
+},
+{
+"mn": "Эхэлсэн суралцагчийн тоо",
+"ctx": "app/admin/analytics/page.tsx"
+},
+{
+"mn": "Дасгалын оролдлого",
+"ctx": "app/admin/analytics/page.tsx"
+},
+{
+"mn": "Дасгалын дундаж оноо",
+"ctx": "app/admin/analytics/page.tsx"
+},
+{
+"mn": "Ажлын төв",
+"ctx": "app/admin/analytics/page.tsx"
+},
+{
+"mn": "Тайлангийн дүн шинжилгээнээс админд хийх ажил автоматаар үүснэ (бага оноо, хүнд асуулт, үгсийн сан бага ашиглагдсан).",
+"ctx": "app/admin/analytics/page.tsx"
+},
+{
+"mn": "Үүссэн ажлуудыг харах",
+"ctx": "app/admin/analytics/page.tsx"
+},
+{
+"mn": "Ажлын төв нээх →",
+"ctx": "app/admin/analytics/page.tsx"
+},
+{
+"mn": "Дэлгэрэнгүй дүн шинжилгээ",
+"ctx": "app/admin/analytics/page.tsx"
+},
+{
+"mn": "Асуултын дүн шинжилгээ",
+"ctx": "app/admin/analytics/page.tsx"
+},
+{
+"mn": "Дасгалын асуулт бүрийн зөв, буруу хариултын үзүүлэлт.",
+"ctx": "app/admin/analytics/page.tsx"
+},
+{
+"mn": "Хүнд асуулт",
+"ctx": "app/admin/analytics/page.tsx"
+},
+{
+"mn": "Үгсийн сангийн дүн шинжилгээ",
+"ctx": "app/admin/analytics/page.tsx"
+},
+{
+"mn": "Хамгийн их, хамгийн бага сурсан үгс болон ашиглалт.",
+"ctx": "app/admin/analytics/page.tsx"
+},
+{
+"mn": "Сураагүй үг",
+"ctx": "app/admin/analytics/page.tsx"
+},
+{
+"mn": "Хичээл тус бүрийн тайлан",
+"ctx": "app/admin/analytics/page.tsx"
+},
+{
+"mn": "Асуултын дүн шинжилгээ — Тайлан",
+"ctx": "app/admin/analytics/questions/page.tsx"
+},
+{
+"mn": "Үгсийн сангийн дүн шинжилгээ — Тайлан",
+"ctx": "app/admin/analytics/vocabulary/page.tsx"
+},
+{
+"mn": "Хүсэлтийн дэлгэрэнгүй — B2B",
+"ctx": "app/admin/b2b/inquiries/[inquiryId]/page.tsx"
+},
+{
+"mn": "B2B хүсэлтүүд — Удирдлагын хэсэг",
+"ctx": "app/admin/b2b/inquiries/page.tsx"
+},
+{
+"mn": "Урилгын имэйл хүргэлт — B2B",
+"ctx": "app/admin/b2b/invitations/page.tsx"
+},
+{
+"mn": "Байгууллагын дэлгэрэнгүй — B2B",
+"ctx": "app/admin/b2b/organizations/[organizationId]/page.tsx"
+},
+{
+"mn": "Байгууллага үүсгэх — B2B",
+"ctx": "app/admin/b2b/organizations/new/page.tsx"
+},
+{
+"mn": "Байгууллагууд — B2B",
+"ctx": "app/admin/b2b/organizations/page.tsx"
+},
+{
+"mn": "Сургууль, байгууллага — Удирдлагын хэсэг",
+"ctx": "app/admin/b2b/page.tsx"
+},
+{
+"mn": "Бичлэг удирдах — Удирдлагын хэсэг",
+"ctx": "app/admin/bichleg/page.tsx"
+},
+{
+"mn": "Цуврал болон ангиудыг удирдах.",
+"ctx": "app/admin/bichleg/page.tsx"
+},
+{
+"mn": "Курс дүүргэлтийн бичиг — Удирдлагын хэсэг",
+"ctx": "app/admin/center/certificate/page.tsx"
+},
+{
+"mn": "Курсаа дүүргэсэн сурагчид олгох, A4 хэвтээ хэвлэхэд бэлэн курс дүүргэлтийн бичиг.",
+"ctx": "app/admin/center/certificate/page.tsx"
+},
+{
+"mn": "Нэр бүртгэгдээгүй сурагч",
+"ctx": "app/admin/center/certificate/page.tsx"
+},
+{
+"mn": "← Сурагч сонгох",
+"ctx": "app/admin/center/certificate/page.tsx"
+},
+{
+"mn": "Болзол хангаагүй тул хэвлэх боломжгүй",
+"ctx": "app/admin/center/certificate/page.tsx"
+},
+{
+"mn": "Курс дүүргэлтийн бичиг",
+"ctx": "app/admin/center/certificate/page.tsx"
+},
+{
+"mn": "Курсаа дүүргэсэн сурагчид олгох бичиг. Болзлыг өгөгдлийн сангийн бүртгэлээр шалгана — хангаагүй бол бичиг хэвлэгдэхгүй, юу дутуу байгааг шууд харуулна.",
+"ctx": "app/admin/center/certificate/page.tsx"
+},
+{
+"mn": "Хэвлэхдээ A4, хэвтээ (landscape) сонгоно уу — Ctrl/Cmd + P.",
+"ctx": "app/admin/center/certificate/page.tsx"
+},
+{
+"mn": "Сургалтын төв — Удирдлагын хэсэг",
+"ctx": "app/admin/center/page.tsx"
+},
+{
+"mn": "Сургалтын төв",
+"ctx": "app/admin/center/page.tsx"
+},
+{
+"mn": "Төвийн бүх бүлгийг нэг дэлгэцэнд харьцуулав: багш, HSK түвшин, танхим эсвэл онлайн, сурагчийн тоо, курсын явц, дундаж үнэлгээ, идэвх.",
+"ctx": "app/admin/center/page.tsx"
+},
+{
+"mn": "Төвийн тайлан — Удирдлагын хэсэг",
+"ctx": "app/admin/center/report/page.tsx"
+},
+{
+"mn": "Сургалтын төвийн хэвлэхэд бэлэн тайлан: бүлгүүд, багш нар, үнэлгээний тархалт.",
+"ctx": "app/admin/center/report/page.tsx"
+},
+{
+"mn": "← Сургалтын төв",
+"ctx": "app/admin/center/report/page.tsx"
+},
+{
+"mn": "Хэвлэхэд хажуугийн цэс, товчнууд хасагдаж, A4 цаасанд хар цагаанаар буулгана. Байгууллагаар шүүхийн тулд хаягт",
+"ctx": "app/admin/center/report/page.tsx"
+},
+{
+"mn": "нэмнэ.",
+"ctx": "app/admin/center/report/page.tsx"
+},
+{
+"mn": "Хуудас ачаалахад алдаа гарлаа",
+"ctx": "app/admin/error.tsx"
+},
+{
+"mn": "Энэ админ хуудсыг гаргах үед алдаа гарлаа. Дахин оролдох эсвэл тодорхой хэрэгсэл рүү шууд орно уу.",
+"ctx": "app/admin/error.tsx"
+},
+{
+"mn": "Хяналтын самбар →",
+"ctx": "app/admin/error.tsx"
+},
+{
+"mn": "Хятад импорт →",
+"ctx": "app/admin/error.tsx"
+},
+{
+"mn": "5-р үе шатны эцсийн үзлэг — Удирдлагын хэсэг",
+"ctx": "app/admin/final-audit/page.tsx"
+},
+{
+"mn": "5-р үе шатны эцсийн үзлэг",
+"ctx": "app/admin/final-audit/page.tsx"
+},
+{
+"mn": "Удирдлагын хэсэг, хувилбар гаргах урсгал, тайлан, ажил, үйлдлийн бүртгэл, буцаалт, аюулгүй байдлын бэлэн байдлыг харах шалгах жагсаалт.",
+"ctx": "app/admin/final-audit/page.tsx"
+},
+{
+"mn": "Хэрэглэгчийн заавар — Админ",
+"ctx": "app/admin/guide/page.tsx"
+},
+{
+"mn": "Хяналтын самбар",
+"ctx": "app/admin/guide/page.tsx"
+},
+{
+"mn": "› Хэрэглэгчийн заавар",
+"ctx": "app/admin/guide/page.tsx"
+},
+{
+"mn": "Хэрэглэгчийн заавар",
+"ctx": "app/admin/guide/page.tsx"
+},
+{
+"mn": "Удирдлагын хэсгийн ажлуудыг алхам алхмаар тайлбарласан гарын авлага. Зүүн талын сэдвээс сонгоно уу.",
+"ctx": "app/admin/guide/page.tsx"
+},
+{
+"mn": "Зааврын сэдвүүд",
+"ctx": "app/admin/guide/page.tsx"
+},
+{
+"mn": "💡 Санамж",
+"ctx": "app/admin/guide/page.tsx"
+},
+{
+"mn": "Дараагийн:",
+"ctx": "app/admin/guide/page.tsx"
+},
+{
+"mn": "Бичлэгийн хадмал оруулах — Удирдлагын хэсэг",
+"ctx": "app/admin/import/bichleg/page.tsx"
+},
+{
+"mn": "Богино бичлэгийн хадмалын JSON багцыг Supabase рүү байршуулах.",
+"ctx": "app/admin/import/bichleg/page.tsx"
+},
+{
+"mn": "Хятад / HSK хичээл оруулах — Удирдлагын хэсэг",
+"ctx": "app/admin/import/chinese/page.tsx"
+},
+{
+"mn": "HSK болон хятад хэлний хичээлийн ZIP багцыг ноороглон оруулах.",
+"ctx": "app/admin/import/chinese/page.tsx"
+},
+{
+"mn": "Хятад / HSK хичээл оруулах",
+"ctx": "app/admin/import/chinese/page.tsx"
+},
+{
+"mn": "HSK түвшинг таньдаг ZIP багц оруулалт — түвшин тус бүрийн шалгалттай, зөвхөн ноорог болгож оруулна.",
+"ctx": "app/admin/import/chinese/page.tsx"
+},
+{
+"mn": "Солонгос номын хичээл оруулах — Удирдлагын хэсэг",
+"ctx": "app/admin/import/korean/page.tsx"
+},
+{
+"mn": "Солонгос хэлний сурах бичгийн хичээлийн ZIP багцыг ноороглон оруулах.",
+"ctx": "app/admin/import/korean/page.tsx"
+},
+{
+"mn": "Солонгос номын хичээл оруулах",
+"ctx": "app/admin/import/korean/page.tsx"
+},
+{
+"mn": "Монгол хүнд зориулсан Солонгос хэлний номын хичээл, 한글, үгсийн сан, дасгалыг оруулах.",
+"ctx": "app/admin/import/korean/page.tsx"
+},
+{
+"mn": "Хуучин ZIP багц оруулах — Удирдлагын хэсэг",
+"ctx": "app/admin/import/legacy/page.tsx"
+},
+{
+"mn": "Хятад, солонгос хэлийг өөрөө таньдаг хуучин ZIP багц оруулалт.",
+"ctx": "app/admin/import/legacy/page.tsx"
+},
+{
+"mn": "Хуучин ZIP багц оруулах",
+"ctx": "app/admin/import/legacy/page.tsx"
+},
+{
+"mn": "Багцын мэдээллээс хятад эсвэл солонгос хэлийг өөрөө таньна (хуучин нэгдсэн оруулагч).",
+"ctx": "app/admin/import/legacy/page.tsx"
+},
+{
+"mn": "Хичээл оруулах — Удирдлагын хэсэг",
+"ctx": "app/admin/import/page.tsx"
+},
+{
+"mn": "Хятад/HSK эсвэл Солонгос номын хичээл оруулах аргаа сонгоно уу.",
+"ctx": "app/admin/import/page.tsx"
+},
+{
+"mn": "Гаргахад нэр дэвшсэн хувилбар — Удирдлагын хэсэг",
+"ctx": "app/admin/launch-candidate/page.tsx"
+},
+{
+"mn": "Гаргахад нэр дэвшсэн хувилбар",
+"ctx": "app/admin/launch-candidate/page.tsx"
+},
+{
+"mn": "Шинэ хувилбар гаргахын өмнөх эцсийн туршилт, аюулгүй байдал, чанарын шалгалт, буцаалт, хяналтын шалгах жагсаалт.",
+"ctx": "app/admin/launch-candidate/page.tsx"
+},
+{
+"mn": "Гаргалтын баталгаа — Удирдлагын хэсэг",
+"ctx": "app/admin/launch-signoff/page.tsx"
+},
+{
+"mn": "Гаргалтын баталгаа",
+"ctx": "app/admin/launch-signoff/page.tsx"
+},
+{
+"mn": "Хэрэглэгчдэд нээхийн өмнөх эцсийн баталгаажуулалт, шийдвэр, хяналтын бэлэн байдал.",
+"ctx": "app/admin/launch-signoff/page.tsx"
+},
+{
+"mn": "Суралцагч — Удирдлагын хэсэг",
+"ctx": "app/admin/learner/page.tsx"
+},
+{
+"mn": "Supabase тохируулагдаагүй эсвэл өгөгдөл ачаалахад алдаа гарлаа.",
+"ctx": "app/admin/learner/page.tsx"
+},
+{
+"mn": "Суралцагчийн дэлгэрэнгүй",
+"ctx": "app/admin/learner/page.tsx"
+},
+{
+"mn": "Нэг идэвхтэй туршигчийн жинхэнэ туршлага — оролдлого, гацсан цэг, санал хүсэлт.",
+"ctx": "app/admin/learner/page.tsx"
+},
+{
+"mn": "Суралцагчдын үнэлгээ — Удирдлагын хэсэг",
+"ctx": "app/admin/learners/page.tsx"
+},
+{
+"mn": "Суралцагчдын үнэлгээ",
+"ctx": "app/admin/learners/page.tsx"
+},
+{
+"mn": "Бүх суралцагчийг A–F үнэлгээгээр нь бүлэглэж, бүлэг тус бүрд онооны дарааллаар жагсаав.",
+"ctx": "app/admin/learners/page.tsx"
+},
+{
+"mn": "Хичээл бүтээгч — Удирдлагын хэсэг",
+"ctx": "app/admin/lesson-builder/page.tsx"
+},
+{
+"mn": "Шинэ хичээл — Удирдлагын хэсэг",
+"ctx": "app/admin/lessons/new/page.tsx"
+},
+{
+"mn": "Хичээлүүд — Удирдлагын хэсэг",
+"ctx": "app/admin/lessons/page.tsx"
+},
+{
+"mn": "Хяналтын самбар — Админ",
+"ctx": "app/admin/page.tsx"
+},
+{
+"mn": "Ажиллагааны чанарын шалгалт — Удирдлагын хэсэг",
+"ctx": "app/admin/production-qa/page.tsx"
+},
+{
+"mn": "Ажиллагааны чанарын шалгалт",
+"ctx": "app/admin/production-qa/page.tsx"
+},
+{
+"mn": "Ажиллаж буй байршуулалтын хуудсууд, нэвтрэлт, Supabase, удирдлагын хэсгийн бэлэн байдлыг шалгах жагсаалт.",
+"ctx": "app/admin/production-qa/page.tsx"
+},
+{
+"mn": "Prompt сан — Удирдлагын хэсэг",
+"ctx": "app/admin/prompts/page.tsx"
+},
+{
+"mn": "Аюулгүй байдал / RLS үзлэг — Удирдлагын хэсэг",
+"ctx": "app/admin/security-audit/page.tsx"
+},
+{
+"mn": "Аюулгүй байдал / RLS үзлэг",
+"ctx": "app/admin/security-audit/page.tsx"
+},
+{
+"mn": "Нээхийн өмнөх нэвтрэлт, RLS, файл хадгалалт, админы эрх, нууц түлхүүрийн аюулгүй байдлын шалгалт.",
+"ctx": "app/admin/security-audit/page.tsx"
+},
+{
+"mn": "Тохиргоо — Админ",
+"ctx": "app/admin/settings/page.tsx"
+},
+{
+"mn": "Админы бүх хэрэгслийн жагсаалт — өдөр тутмын ажилд ихэвчлэн хэрэггүй.",
+"ctx": "app/admin/settings/page.tsx"
+},
+{
+"mn": "Тайлан ба хэрэглэгч",
+"ctx": "app/admin/settings/page.tsx"
+},
+{
+"mn": "Сурагчдын идэвх, байгууллагын бүртгэл, даалгаврын төв.",
+"ctx": "app/admin/settings/page.tsx"
+},
+{
+"mn": "Нэмэлт хэрэгсэл",
+"ctx": "app/admin/settings/page.tsx"
+},
+{
+"mn": "Үйлдлийн лог, системийн шалгалт, гаргалтын баталгаа.",
+"ctx": "app/admin/settings/page.tsx"
+},
+{
+"mn": "← Сурагчийн апп руу буцах",
+"ctx": "app/admin/settings/page.tsx"
+},
+{
+"mn": "Номд байгаа агуулга, хэлбэрээрээ. Энэ хуудас юуг ч орчуулдаггүй, зохиодоггүй — хичээл үйлдвэрлэхийн эх сурвалж.",
+"ctx": "app/admin/source/[lessonId]/page.tsx"
+},
+{
+"mn": "← Жагсаалт",
+"ctx": "app/admin/source/[lessonId]/page.tsx"
+},
+{
+"mn": "Эх сурвалж — Удирдлагын хэсэг",
+"ctx": "app/admin/source/page.tsx"
+},
+{
+"mn": "Зөвхөн OCR",
+"ctx": "app/admin/source/page.tsx"
+},
+{
+"mn": "Зургаар тулгасан",
+"ctx": "app/admin/source/page.tsx"
+},
+{
+"mn": "Хүн хянасан",
+"ctx": "app/admin/source/page.tsx"
+},
+{
+"mn": "Эх сурвалжийн сан",
+"ctx": "app/admin/source/page.tsx"
+},
+{
+"mn": "HSK Standard Course номын хичээл бүрийн бүх агуулга — сурах бичиг, багшийн ном, дасгалын ном — номд байгаа хэлбэрээр. Хичээл үйлдвэрлэхийн суурь; монгол орчуулга, заах тайлбар энд ороогүй.",
+"ctx": "app/admin/source/page.tsx"
+},
+{
+"mn": "Одоогоор эх сурвалж ороогүй байна. Эхлээд",
+"ctx": "app/admin/source/page.tsx"
+},
+{
+"mn": ", дараа нь",
+"ctx": "app/admin/source/page.tsx"
+},
+{
+"mn": "файлуудыг Supabase SQL editor дээр ажиллуулна.",
+"ctx": "app/admin/source/page.tsx"
+},
+{
+"mn": "-р хичээл",
+"ctx": "app/admin/source/page.tsx"
+},
+{
+"mn": "Системийн шалгалт — Удирдлагын хэсэг",
+"ctx": "app/admin/system-check/page.tsx"
+},
+{
+"mn": "Системийн шалгалт",
+"ctx": "app/admin/system-check/page.tsx"
+},
+{
+"mn": "Supabase тохиргоо, нэвтрэлт, админы эрх, контент унших, ажил, үйлдлийн бүртгэл, файл хадгалалтын бэлэн байдлыг зөвхөн харах шалгалт.",
+"ctx": "app/admin/system-check/page.tsx"
+},
+{
+"mn": "Ажлын төв — Buunduu Surtsgaay",
+"ctx": "app/admin/tasks/page.tsx"
+},
+{
+"mn": "Контент, чанарын шалгалт, медиа, тайлан, хувилбар гаргах урсгалын хийх ажлуудыг нэг дор харна.",
+"ctx": "app/admin/tasks/page.tsx"
+},
+{
+"mn": "Organization assignments — Бөөндөө Сурцгаая",
+"ctx": "app/organization/[organizationId]/assignments/page.tsx"
+},
+{
+"mn": "Organization classrooms — Бөөндөө Сурцгаая",
+"ctx": "app/organization/[organizationId]/classrooms/page.tsx"
+},
+{
+"mn": "Pilot dashboard — Бөөндөө Сурцгаая",
+"ctx": "app/organization/[organizationId]/dashboard/page.tsx"
+},
+{
+"mn": "Organization members — Бөөндөө Сурцгаая",
+"ctx": "app/organization/[organizationId]/members/page.tsx"
+},
+{
+"mn": "Organization dashboard — Бөөндөө Сурцгаая",
+"ctx": "app/organization/[organizationId]/page.tsx"
+},
+{
+"mn": "Organization reports — Бөөндөө Сурцгаая",
+"ctx": "app/organization/[organizationId]/reports/page.tsx"
+},
+{
+"mn": "Organization setup wizard — Бөөндөө Сурцгаая",
+"ctx": "app/organization/[organizationId]/setup/page.tsx"
+},
+{
+"mn": "Organization — Бөөндөө Сурцгаая",
+"ctx": "app/organization/page.tsx"
+},
+{
+"mn": "Эхлээд анги үүсгэнэ үү.",
+"ctx": "app/teacher/assignments/new/new-assignment-form.tsx"
+},
+{
+"mn": "← Даалгаврууд",
+"ctx": "app/teacher/assignments/new/new-assignment-form.tsx"
+},
+{
+"mn": "Шинэ даалгавар",
+"ctx": "app/teacher/assignments/new/new-assignment-form.tsx"
+},
+{
+"mn": "Шинэ даалгавар — Багшийн dashboard",
+"ctx": "app/teacher/assignments/new/page.tsx"
+},
+{
+"mn": "Даалгаврууд — Багшийн dashboard",
+"ctx": "app/teacher/assignments/page.tsx"
+},
+{
+"mn": "Ирцийн бүртгэл — Багшийн хэсэг",
+"ctx": "app/teacher/classes/[classroomId]/attendance/page.tsx"
+},
+{
+"mn": "Нэг өдрийн ирцийг бүртгэж, сүүлийн 30 хоногийн дүнг харах.",
+"ctx": "app/teacher/classes/[classroomId]/attendance/page.tsx"
+},
+{
+"mn": "Ангийн загвар шалгалт — Багшийн хэсэг",
+"ctx": "app/teacher/classes/[classroomId]/exams/page.tsx"
+},
+{
+"mn": "Ангид HSK загвар шалгалт товлох, дүнг харах.",
+"ctx": "app/teacher/classes/[classroomId]/exams/page.tsx"
+},
+{
+"mn": "Ангийн тайлан — Багш",
+"ctx": "app/teacher/classes/[classroomId]/report/page.tsx"
+},
+{
+"mn": "Нэг ангийн хэвлэхэд бэлэн тайлан: хураангуй, үнэлгээний тархалт, сурагч бүрийн дүн.",
+"ctx": "app/teacher/classes/[classroomId]/report/page.tsx"
+},
+{
+"mn": "Шинэ анги — Teacher",
+"ctx": "app/teacher/classes/new/page.tsx"
+},
+{
+"mn": "Миний ангиуд — Багшийн dashboard",
+"ctx": "app/teacher/classes/page.tsx"
+},
+{
+"mn": "Class reports — Бөөндөө Сурцгаая",
+"ctx": "app/teacher/reports/page.tsx"
+},
+{
+"mn": "Багшийн profile — Teacher setup",
+"ctx": "app/teacher/setup/page.tsx"
+},
+{
+"mn": "Багшийн самбар — Бөөндөө Сурцгаая",
+"ctx": "app/teacher-dashboard/page.tsx"
+},
+{
+"mn": "Багшийн самбар — ангийн ахиц, даалгавар, тайлан.",
+"ctx": "app/teacher-dashboard/page.tsx"
+},
+{
+"mn": "Багш нарт зориулсан Хятад хэлний digital lesson package — Бөөндөө Сурцгаая",
+"ctx": "app/teachers/page.tsx"
+},
+{
+"mn": "Багш нарт зориулсан Хятад хэлний хичээл — subtitle, pinyin, vocabulary, quiz, student progress tracking.",
+"ctx": "app/teachers/page.tsx"
+},
+{
+"mn": "Багш нарт зориулсан lesson package",
+"ctx": "app/teachers/page.tsx"
+},
+{
+"mn": "Demo lesson үзэх",
+"ctx": "app/teachers/page.tsx"
+},
+{
+"mn": "Inquiry илгээх",
+"ctx": "app/teachers/page.tsx"
+},
+{
+"mn": "Багш юу авах вэ?",
+"ctx": "app/teachers/page.tsx"
+},
+{
+"mn": "Багшийн use case",
+"ctx": "app/teachers/page.tsx"
+},
+{
+"mn": "Багшийн workflow",
+"ctx": "app/teachers/page.tsx"
+},
+{
+"mn": "Course харах",
+"ctx": "app/teachers/page.tsx"
+},
+{
+"mn": "Хичээл үүсгэсэн",
+"ctx": "components/admin/activity-badge.tsx"
+},
+{
+"mn": "Хичээл нийтэлсэн",
+"ctx": "components/admin/activity-badge.tsx"
+},
+{
+"mn": "Нийтлэхээ болисон",
+"ctx": "components/admin/activity-badge.tsx"
+},
+{
+"mn": "Хичээл архивласан",
+"ctx": "components/admin/activity-badge.tsx"
+},
+{
+"mn": "Хичээл баталсан",
+"ctx": "components/admin/activity-badge.tsx"
+},
+{
+"mn": "Хичээл устгасан",
+"ctx": "components/admin/activity-badge.tsx"
+},
+{
+"mn": "Ерөнхий мэдээлэл засварласан",
+"ctx": "components/admin/activity-badge.tsx"
+},
+{
+"mn": "Ажил эхлүүлсэн",
+"ctx": "components/admin/activity-badge.tsx"
+},
+{
+"mn": "Ажил шийдсэн",
+"ctx": "components/admin/activity-badge.tsx"
+},
+{
+"mn": "Ажил хаасан",
+"ctx": "components/admin/activity-badge.tsx"
+},
+{
+"mn": "Ажил шинэчилсэн",
+"ctx": "components/admin/activity-badge.tsx"
+},
+{
+"mn": "Бөөнөөр оруулж дууссан",
+"ctx": "components/admin/activity-badge.tsx"
+},
+{
+"mn": "Нөөц хуулбар сэргээсэн",
+"ctx": "components/admin/activity-badge.tsx"
+},
+{
+"mn": "Нөөц хуулбар гаргасан",
+"ctx": "components/admin/activity-badge.tsx"
+},
+{
+"mn": "Медиа байршуулсан",
+"ctx": "components/admin/activity-badge.tsx"
+},
+{
+"mn": "Медиа шинэчилсэн",
+"ctx": "components/admin/activity-badge.tsx"
+},
+{
+"mn": "Хувилбарын тэмдэглэл шинэчилсэн",
+"ctx": "components/admin/activity-badge.tsx"
+},
+{
+"mn": "Хувилбарын төлөв шинэчилсэн",
+"ctx": "components/admin/activity-badge.tsx"
+},
+{
+"mn": "Буцаалт хийсэн",
+"ctx": "components/admin/activity-badge.tsx"
+},
+{
+"mn": "Чанарын шалгалтын төлөв шинэчилсэн",
+"ctx": "components/admin/activity-badge.tsx"
+},
+{
+"mn": "Төлөв шинэчилсэн",
+"ctx": "components/admin/activity-badge.tsx"
+},
+{
+"mn": "Шалгалт эхэлсэн",
+"ctx": "components/admin/activity-badge.tsx"
+},
+{
+"mn": "Хадмал нэмсэн",
+"ctx": "components/admin/activity-badge.tsx"
+},
+{
+"mn": "Хадмал устгасан",
+"ctx": "components/admin/activity-badge.tsx"
+},
+{
+"mn": "Үг нэмсэн",
+"ctx": "components/admin/activity-badge.tsx"
+},
+{
+"mn": "Үг устгасан",
+"ctx": "components/admin/activity-badge.tsx"
+},
+{
+"mn": "Дасгал нэмсэн",
+"ctx": "components/admin/activity-badge.tsx"
+},
+{
+"mn": "Дасгал устгасан",
+"ctx": "components/admin/activity-badge.tsx"
+},
+{
+"mn": "Байгууллага үүсгэсэн",
+"ctx": "components/admin/activity-badge.tsx"
+},
+{
+"mn": "Даалгавар үүсгэсэн",
+"ctx": "components/admin/activity-badge.tsx"
+},
+{
+"mn": "Үгсийн сан",
+"ctx": "components/admin/activity-badge.tsx"
+},
+{
+"mn": "Хадмал",
+"ctx": "components/admin/activity-badge.tsx"
+},
+{
+"mn": "Медиа",
+"ctx": "components/admin/activity-badge.tsx"
+},
+{
+"mn": "Ажил",
+"ctx": "components/admin/activity-badge.tsx"
+},
+{
+"mn": "Үйлдэл",
+"ctx": "components/admin/activity-badge.tsx"
+},
+{
+"mn": "Үйлдлийн дэлгэрэнгүйг ачаалж байна…",
+"ctx": "components/admin/activity-detail-loader.tsx"
+},
+{
+"mn": "← Үйлдлийн бүртгэл рүү буцах",
+"ctx": "components/admin/activity-detail-loader.tsx"
+},
+{
+"mn": "Үйлдэл олдсонгүй",
+"ctx": "components/admin/activity-detail-loader.tsx"
+},
+{
+"mn": "Гүйцэтгэсэн хүн",
+"ctx": "components/admin/activity-detail-view.tsx"
+},
+{
+"mn": "Бичлэгийн ID",
+"ctx": "components/admin/activity-detail-view.tsx"
+},
+{
+"mn": "Хичээлийн ID",
+"ctx": "components/admin/activity-detail-view.tsx"
+},
+{
+"mn": "Үйлдлийн ерөнхий мэдээлэл",
+"ctx": "components/admin/activity-detail-view.tsx"
+},
+{
+"mn": "Ерөнхий мэдээлэл бүртгэгдээгүй.",
+"ctx": "components/admin/activity-detail-view.tsx"
+},
+{
+"mn": "Өмнөх хувилбарын хуулбар",
+"ctx": "components/admin/activity-detail-view.tsx"
+},
+{
+"mn": "Дараах хувилбарын хуулбар",
+"ctx": "components/admin/activity-detail-view.tsx"
+},
+{
+"mn": "Хичээлийг засах",
+"ctx": "components/admin/activity-detail-view.tsx"
+},
+{
+"mn": "Талбарын өөрчлөлт",
+"ctx": "components/admin/activity-diff-viewer.tsx"
+},
+{
+"mn": "Талбар тус бүрийн өөрчлөлт бүртгэгдээгүй.",
+"ctx": "components/admin/activity-diff-viewer.tsx"
+},
+{
+"mn": "Өмнөх ба дараах хуулбарыг дээд түвшинд харьцуулав.",
+"ctx": "components/admin/activity-diff-viewer.tsx"
+},
+{
+"mn": "Өөрчлөгдсөн",
+"ctx": "components/admin/activity-diff-viewer.tsx"
+},
+{
+"mn": "Талбар",
+"ctx": "components/admin/activity-diff-viewer.tsx"
+},
+{
+"mn": "Өмнө",
+"ctx": "components/admin/activity-diff-viewer.tsx"
+},
+{
+"mn": "Нэмэгдсэн талбар",
+"ctx": "components/admin/activity-diff-viewer.tsx"
+},
+{
+"mn": "Хасагдсан талбар",
+"ctx": "components/admin/activity-diff-viewer.tsx"
+},
+{
+"mn": "өмнө нь",
+"ctx": "components/admin/activity-diff-viewer.tsx"
+},
+{
+"mn": "Гаргах үйлдлийн бүртгэл алга.",
+"ctx": "components/admin/activity-export-controls.tsx"
+},
+{
+"mn": "Хуулж чадсангүй.",
+"ctx": "components/admin/activity-export-controls.tsx"
+},
+{
+"mn": "Үйлдлийн бүртгэлийг гаргах",
+"ctx": "components/admin/activity-export-controls.tsx"
+},
+{
+"mn": "Одоогийн шүүлтээр",
+"ctx": "components/admin/activity-export-controls.tsx"
+},
+{
+"mn": "мөр харагдаж байна.",
+"ctx": "components/admin/activity-export-controls.tsx"
+},
+{
+"mn": "CSV гаргах",
+"ctx": "components/admin/activity-export-controls.tsx"
+},
+{
+"mn": "JSON гаргах",
+"ctx": "components/admin/activity-export-controls.tsx"
+},
+{
+"mn": "JSON хуулах",
+"ctx": "components/admin/activity-export-controls.tsx"
+},
+{
+"mn": "Хайх",
+"ctx": "components/admin/activity-filter-bar.tsx"
+},
+{
+"mn": "Гарчиг, тайлбар, үйлдэл…",
+"ctx": "components/admin/activity-filter-bar.tsx"
+},
+{
+"mn": "Юун дээр хийсэн",
+"ctx": "components/admin/activity-filter-bar.tsx"
+},
+{
+"mn": "Хугацаа",
+"ctx": "components/admin/activity-filter-bar.tsx"
+},
+{
+"mn": "Сүүлийн 7 хоног",
+"ctx": "components/admin/activity-filter-bar.tsx"
+},
+{
+"mn": "Сүүлийн 30 хоног",
+"ctx": "components/admin/activity-filter-bar.tsx"
+},
+{
+"mn": "Өөрчлөлт",
+"ctx": "components/admin/activity-filter-bar.tsx"
+},
+{
+"mn": "Өөрчлөлттэй",
+"ctx": "components/admin/activity-filter-bar.tsx"
+},
+{
+"mn": "Өөрчлөлтгүй",
+"ctx": "components/admin/activity-filter-bar.tsx"
+},
+{
+"mn": "Буцаах боломж",
+"ctx": "components/admin/activity-filter-bar.tsx"
+},
+{
+"mn": "Буцаах боломжтой",
+"ctx": "components/admin/activity-filter-bar.tsx"
+},
+{
+"mn": "Буцаах боломжгүй",
+"ctx": "components/admin/activity-filter-bar.tsx"
+},
+{
+"mn": "жишээ нь 5",
+"ctx": "components/admin/activity-filter-bar.tsx"
+},
+{
+"mn": "Гүйцэтгэсэн хүн (и-мэйлээр)",
+"ctx": "components/admin/activity-filter-bar.tsx"
+},
+{
+"mn": "Нийт",
+"ctx": "components/admin/activity-filter-bar.tsx"
+},
+{
+"mn": "үйлдэл харагдаж байна",
+"ctx": "components/admin/activity-filter-bar.tsx"
+},
+{
+"mn": "Одоогоор үйлдлийн бүртгэл алга.",
+"ctx": "components/admin/activity-log-list.tsx"
+},
+{
+"mn": "Дэлгэрэнгүй харах →",
+"ctx": "components/admin/activity-log-list.tsx"
+},
+{
+"mn": "Нийт бүртгэл",
+"ctx": "components/admin/activity-summary-cards.tsx"
+},
+{
+"mn": "Нийтлэлт / хувилбар",
+"ctx": "components/admin/activity-summary-cards.tsx"
+},
+{
+"mn": "Ажлын үйлдэл",
+"ctx": "components/admin/activity-summary-cards.tsx"
+},
+{
+"mn": "Контентын үйлдэл",
+"ctx": "components/admin/activity-summary-cards.tsx"
+},
+{
+"mn": "Давталт",
+"ctx": "components/admin/activity-time-section.tsx"
+},
+{
+"mn": "Идэвхийн цаг",
+"ctx": "components/admin/activity-time-section.tsx"
+},
+{
+"mn": "Сүүлийн",
+"ctx": "components/admin/activity-time-section.tsx"
+},
+{
+"mn": "өдөр: суралцагчдын гадаргуу бүр дээр зарцуулсан нийт минут (user_activity_sessions).",
+"ctx": "components/admin/activity-time-section.tsx"
+},
+{
+"mn": "мин ·",
+"ctx": "components/admin/activity-time-section.tsx"
+},
+{
+"mn": "Одоогоор бүртгэгдсэн идэвх алга. Суралцагчид нэвтэрч хичээл/тоглоом ашиглахад мөрүүд гарч ирнэ.",
+"ctx": "components/admin/activity-time-section.tsx"
+},
+{
+"mn": "Нийт мин",
+"ctx": "components/admin/activity-time-section.tsx"
+},
+{
+"mn": "Үйлдлийн бүртгэлийн анхааруулга",
+"ctx": "components/admin/admin-activity-center.tsx"
+},
+{
+"mn": "Үйлдлийн бүртгэлийг ачаалж байна…",
+"ctx": "components/admin/admin-activity-center.tsx"
+},
+{
+"mn": "Хураангуй",
+"ctx": "components/admin/admin-activity-center.tsx"
+},
+{
+"mn": "бүртгэл ачаалсан · шүүлтийн дараа",
+"ctx": "components/admin/admin-activity-center.tsx"
+},
+{
+"mn": "харагдаж байна.",
+"ctx": "components/admin/admin-activity-center.tsx"
+},
+{
+"mn": "· нийт",
+"ctx": "components/admin/admin-activity-chart.tsx"
+},
+{
+"mn": "минут",
+"ctx": "components/admin/admin-activity-chart.tsx"
+},
+{
+"mn": "Сүүлийн үйлдлүүд",
+"ctx": "components/admin/admin-activity-preview.tsx"
+},
+{
+"mn": "Хичээл, контент, ажлын үйлдлийн бүртгэл.",
+"ctx": "components/admin/admin-activity-preview.tsx"
+},
+{
+"mn": "Үйлдлийн бүртгэл харах",
+"ctx": "components/admin/admin-activity-preview.tsx"
+},
+{
+"mn": "Контент",
+"ctx": "components/admin/admin-activity-preview.tsx"
+},
+{
+"mn": "Одоогоор бүртгэл алга — үйлдэл хийсний дараа энд харагдана.",
+"ctx": "components/admin/admin-activity-preview.tsx"
+},
+{
+"mn": "Бүх хичээл хэвийн — яаралтай асуудал алга.",
+"ctx": "components/admin/admin-attention-list.tsx"
+},
+{
+"mn": "Засах →",
+"ctx": "components/admin/admin-attention-list.tsx"
+},
+{
+"mn": "Таны анхаарал хэрэгтэй",
+"ctx": "components/admin/admin-attention-panel.tsx"
+},
+{
+"mn": "Одоогоор хүлээгдэж буй зүйл алга.",
+"ctx": "components/admin/admin-attention-panel.tsx"
+},
+{
+"mn": "Самбарын үзүүлэлтийг ачаалж чадсангүй. Бусад хуудас (оруулах, хичээлүүд, тайлан) хэвийн ажиллах ёстой.",
+"ctx": "components/admin/admin-dashboard-error.tsx"
+},
+{
+"mn": "Хятад хэл оруулах →",
+"ctx": "components/admin/admin-dashboard-error.tsx"
+},
+{
+"mn": "Хичээлүүд →",
+"ctx": "components/admin/admin-dashboard-error.tsx"
+},
+{
+"mn": "Дотоод байдлын шалгалт →",
+"ctx": "components/admin/admin-dashboard-error.tsx"
+},
+{
+"mn": "90 хоног",
+"ctx": "components/admin/admin-dashboard.tsx"
+},
+{
+"mn": "хэрэглээний хүснэгт идэвхжээгүй",
+"ctx": "components/admin/admin-dashboard.tsx"
+},
+{
+"mn": "Ноорог хичээл",
+"ctx": "components/admin/admin-dashboard.tsx"
+},
+{
+"mn": "Бэлэн болмогц нийтлэх шаардлагатай.",
+"ctx": "components/admin/admin-dashboard.tsx"
+},
+{
+"mn": "Шалгах шаардлагатай",
+"ctx": "components/admin/admin-dashboard.tsx"
+},
+{
+"mn": "QA анхааруулгатай хичээлүүд.",
+"ctx": "components/admin/admin-dashboard.tsx"
+},
+{
+"mn": "Үгсийн сан дутуу",
+"ctx": "components/admin/admin-dashboard.tsx"
+},
+{
+"mn": "Нэг ч үг бүртгэгдээгүй хичээл.",
+"ctx": "components/admin/admin-dashboard.tsx"
+},
+{
+"mn": "Дасгал дутуу",
+"ctx": "components/admin/admin-dashboard.tsx"
+},
+{
+"mn": "Асуулт байхгүй хичээл.",
+"ctx": "components/admin/admin-dashboard.tsx"
+},
+{
+"mn": "Медиа дутуу",
+"ctx": "components/admin/admin-dashboard.tsx"
+},
+{
+"mn": "Аудио эсвэл бичлэг нь дутуу.",
+"ctx": "components/admin/admin-dashboard.tsx"
+},
+{
+"mn": "Нийт анхааруулга",
+"ctx": "components/admin/admin-dashboard.tsx"
+},
+{
+"mn": "Дэлгэрэнгүйг доорх жагсаалтаас үз.",
+"ctx": "components/admin/admin-dashboard.tsx"
+},
+{
+"mn": "Тавтай морил 👋",
+"ctx": "components/admin/admin-dashboard.tsx"
+},
+{
+"mn": "Бөөндөө Сурцгаая — контент болон суралцагчдын нэгдсэн төлөв.",
+"ctx": "components/admin/admin-dashboard.tsx"
+},
+{
+"mn": "Хугацааны хүрээ",
+"ctx": "components/admin/admin-dashboard.tsx"
+},
+{
+"mn": "Гол үзүүлэлт",
+"ctx": "components/admin/admin-dashboard.tsx"
+},
+{
+"mn": "Суралцсан хугацаа",
+"ctx": "components/admin/admin-dashboard.tsx"
+},
+{
+"mn": "харьцуулах өмнөх өгөгдөл алга",
+"ctx": "components/admin/admin-dashboard.tsx"
+},
+{
+"mn": "Идэвхтэй суралцагч",
+"ctx": "components/admin/admin-dashboard.tsx"
+},
+{
+"mn": "хичээл эхлүүлсэн нийт хүн",
+"ctx": "components/admin/admin-dashboard.tsx"
+},
+{
+"mn": "Идэвхтэй өдөр",
+"ctx": "components/admin/admin-dashboard.tsx"
+},
+{
+"mn": "хэрэглээ бүртгэгдсэн өдөр",
+"ctx": "components/admin/admin-dashboard.tsx"
+},
+{
+"mn": "Дасгалын дундаж",
+"ctx": "components/admin/admin-dashboard.tsx"
+},
+{
+"mn": "Энэ хугацаанд бүртгэгдсэн хэрэглээ алга.",
+"ctx": "components/admin/admin-dashboard.tsx"
+},
+{
+"mn": "Хэрэглээний хэмжилт идэвхжээгүй байна — Supabase дээр 050_learner_activity.sql миграцыг ажиллуулснаар энэ график дүүрнэ.",
+"ctx": "components/admin/admin-dashboard.tsx"
+},
+{
+"mn": "Контентын сан",
+"ctx": "components/admin/admin-dashboard.tsx"
+},
+{
+"mn": "Бүх түвшний хичээл, үг, дасгалын нэгдсэн тоо.",
+"ctx": "components/admin/admin-dashboard.tsx"
+},
+{
+"mn": "Бүртгэлтэй үг",
+"ctx": "components/admin/admin-dashboard.tsx"
+},
+{
+"mn": "Дасгалын асуулт",
+"ctx": "components/admin/admin-dashboard.tsx"
+},
+{
+"mn": "Бүх түвшин",
+"ctx": "components/admin/admin-dashboard.tsx"
+},
+{
+"mn": "Нийтлэхэд бэлэн",
+"ctx": "components/admin/admin-dashboard.tsx"
+},
+{
+"mn": "суралцагч үнэлэгдсэн",
+"ctx": "components/admin/admin-dashboard.tsx"
+},
+{
+"mn": "Бүтэн жагсаалт →",
+"ctx": "components/admin/admin-dashboard.tsx"
+},
+{
+"mn": "Суралцагчдын үр дүн",
+"ctx": "components/admin/admin-dashboard.tsx"
+},
+{
+"mn": "Апп дээр бүртгэгдсэн ахиц.",
+"ctx": "components/admin/admin-dashboard.tsx"
+},
+{
+"mn": "Хичээл эхэлсэн",
+"ctx": "components/admin/admin-dashboard.tsx"
+},
+{
+"mn": "Суралцагчийн тоо",
+"ctx": "components/admin/admin-dashboard.tsx"
+},
+{
+"mn": "Дуусгасан хичээл",
+"ctx": "components/admin/admin-dashboard.tsx"
+},
+{
+"mn": "Зарим тоо RLS-ийн улмаас хязгаарлагдсан байж болно.",
+"ctx": "components/admin/admin-dashboard.tsx"
+},
+{
+"mn": "Анхаарал шаардсан хичээл",
+"ctx": "components/admin/admin-dashboard.tsx"
+},
+{
+"mn": "Бүгдийг харах →",
+"ctx": "components/admin/admin-dashboard.tsx"
+},
+{
+"mn": "Бүх хичээл шалгалтаа давсан байна. 🎉",
+"ctx": "components/admin/admin-dashboard.tsx"
+},
+{
+"mn": "хичээл мөн жагсаалтад байна.",
+"ctx": "components/admin/admin-dashboard.tsx"
+},
+{
+"mn": "Сүүлийн дасгалын оролдлого",
+"ctx": "components/admin/admin-dashboard.tsx"
+},
+{
+"mn": "Тайлан →",
+"ctx": "components/admin/admin-dashboard.tsx"
+},
+{
+"mn": "Одоогоор бүртгэгдсэн оролдлого алга.",
+"ctx": "components/admin/admin-dashboard.tsx"
+},
+{
+"mn": "Системийн анхааруулга",
+"ctx": "components/admin/admin-dashboard.tsx"
+},
+{
+"mn": "Хөгжүүлэлтийн горимын урьдчилсан харагдац",
+"ctx": "components/admin/admin-dev-import-warning.tsx"
+},
+{
+"mn": "Админ эрхийн шалгалт хугацаандаа дуусаагүй. Оруулах хэсгийг зөвхөн дотоод туршилтад харуулж байна.",
+"ctx": "components/admin/admin-dev-import-warning.tsx"
+},
+{
+"mn": "Хичээл ачаалж байна…",
+"ctx": "components/admin/admin-edit-lesson-not-found.tsx"
+},
+{
+"mn": "← Хичээлүүд рүү буцах",
+"ctx": "components/admin/admin-edit-lesson-not-found.tsx"
+},
+{
+"mn": "Админ эрхийн шалгалт амжилтгүй боллоо",
+"ctx": "components/admin/admin-guard.tsx"
+},
+{
+"mn": "Админ эрхийг шалгаж байна…",
+"ctx": "components/admin/admin-guard.tsx"
+},
+{
+"mn": "Нэвтрэлт болон эрхийг баталгаажуулж байна.",
+"ctx": "components/admin/admin-guard.tsx"
+},
+{
+"mn": "Админ эрхийн шалгалт амжилтгүй",
+"ctx": "components/admin/admin-guard.tsx"
+},
+{
+"mn": "Админ эрх шалгах үед алдаа гарлаа. Supabase холболт эсвэл нэвтрэлтийг шалгана уу.",
+"ctx": "components/admin/admin-guard.tsx"
+},
+{
+"mn": "Админ хэсэгт нэвтрэх шаардлагатай",
+"ctx": "components/admin/admin-guard.tsx"
+},
+{
+"mn": "Контент удирдах хэсэгт хандахын тулд эхлээд нэвтэрнэ үү.",
+"ctx": "components/admin/admin-guard.tsx"
+},
+{
+"mn": "Supabase тохиргоо олдсонгүй. .env.local файлд NEXT_PUBLIC_SUPABASE_URL болон NEXT_PUBLIC_SUPABASE_ANON_KEY нэмнэ үү.",
+"ctx": "components/admin/admin-guard.tsx"
+},
+{
+"mn": "Админ эрх шаардлагатай",
+"ctx": "components/admin/admin-guard.tsx"
+},
+{
+"mn": "Энэ хэсэг зөвхөн контент удирдах эрхтэй хэрэглэгчдэд зориулагдсан.",
+"ctx": "components/admin/admin-guard.tsx"
+},
+{
+"mn": "Нүүр хуудас руу →",
+"ctx": "components/admin/admin-guard.tsx"
+},
+{
+"mn": "Админ",
+"ctx": "components/admin/admin-header.tsx"
+},
+{
+"mn": "← Админ",
+"ctx": "components/admin/admin-header.tsx"
+},
+{
+"mn": "Сургууль, байгууллага",
+"ctx": "components/admin/admin-header.tsx"
+},
+{
+"mn": "Эцсийн үзлэг",
+"ctx": "components/admin/admin-header.tsx"
+},
+{
+"mn": "Ажлууд",
+"ctx": "components/admin/admin-header.tsx"
+},
+{
+"mn": "Хичээл угсрах",
+"ctx": "components/admin/admin-header.tsx"
+},
+{
+"mn": "Prompt-ууд",
+"ctx": "components/admin/admin-header.tsx"
+},
+{
+"mn": "Тайлан",
+"ctx": "components/admin/admin-header.tsx"
+},
+{
+"mn": "Апп руу буцах",
+"ctx": "components/admin/admin-header.tsx"
+},
+{
+"mn": "Хайх: гарчиг, ID, курс...",
+"ctx": "components/admin/admin-lessons-list.tsx"
+},
+{
+"mn": "Статус шүүлт",
+"ctx": "components/admin/admin-lessons-list.tsx"
+},
+{
+"mn": "Бүх статус",
+"ctx": "components/admin/admin-lessons-list.tsx"
+},
+{
+"mn": "Ноорог",
+"ctx": "components/admin/admin-lessons-list.tsx"
+},
+{
+"mn": "Нийтлэгдсэн",
+"ctx": "components/admin/admin-lessons-list.tsx"
+},
+{
+"mn": "Архив",
+"ctx": "components/admin/admin-lessons-list.tsx"
+},
+{
+"mn": "Одоогоор хичээл байхгүй. ZIP импорт хийх эсвэл шинэ хичээл үүсгэнэ үү.",
+"ctx": "components/admin/admin-lessons-list.tsx"
+},
+{
+"mn": "Хайлт эсвэл шүүлтийг өөрчилж үзнэ үү.",
+"ctx": "components/admin/admin-lessons-list.tsx"
+},
+{
+"mn": "Курс",
+"ctx": "components/admin/admin-lessons-list.tsx"
+},
+{
+"mn": "Статус",
+"ctx": "components/admin/admin-lessons-list.tsx"
+},
+{
+"mn": "Үг",
+"ctx": "components/admin/admin-lessons-list.tsx"
+},
+{
+"mn": "Аудио",
+"ctx": "components/admin/admin-lessons-list.tsx"
+},
+{
+"mn": "Хураах",
+"ctx": "components/admin/admin-lessons-list.tsx"
+},
+{
+"mn": "Дэлгэрэнгүй",
+"ctx": "components/admin/admin-lessons-list.tsx"
+},
+{
+"mn": "Админы RLS дүрмүүд",
+"ctx": "components/admin/admin-production-safety.tsx"
+},
+{
+"mn": "Медиа хадгалах сан (lesson-media)",
+"ctx": "components/admin/admin-production-safety.tsx"
+},
+{
+"mn": "Supabase Storage-ийн дүрмүүд тохируулсан",
+"ctx": "components/admin/admin-production-safety.tsx"
+},
+{
+"mn": "Админы ажлын хүснэгт",
+"ctx": "components/admin/admin-production-safety.tsx"
+},
+{
+"mn": "Хувилбар гаргах урсгал",
+"ctx": "components/admin/admin-production-safety.tsx"
+},
+{
+"mn": "005_lesson_release_workflow migration-ийг ажиллуулна",
+"ctx": "components/admin/admin-production-safety.tsx"
+},
+{
+"mn": "Хувилбарын багана бэлэн",
+"ctx": "components/admin/admin-production-safety.tsx"
+},
+{
+"mn": "Одоогоор бүртгэгдсэн үйлдэл алга.",
+"ctx": "components/admin/admin-production-safety.tsx"
+},
+{
+"mn": "Бүх үйлдлийн бүртгэл →",
+"ctx": "components/admin/admin-production-safety.tsx"
+},
+{
+"mn": "Шийдэгдээгүй ноцтой ажлууд",
+"ctx": "components/admin/admin-production-safety.tsx"
+},
+{
+"mn": "Ноцтой ажил алга.",
+"ctx": "components/admin/admin-production-safety.tsx"
+},
+{
+"mn": "Ажлын төв →",
+"ctx": "components/admin/admin-production-safety.tsx"
+},
+{
+"mn": "Дасгалын оролдлого харагдахгүй байна (RLS-ээс болж зөвхөн өөрийн мөрүүд харагдаж болно).",
+"ctx": "components/admin/admin-recent-activity.tsx"
+},
+{
+"mn": "Хэзээ",
+"ctx": "components/admin/admin-recent-activity.tsx"
+},
+{
+"mn": "Хичээлийн сүүлийн ахиц",
+"ctx": "components/admin/admin-recent-activity.tsx"
+},
+{
+"mn": "Ахицын мөр харагдахгүй байна (RLS-ээс болж зөвхөн өөрийн мөрүүд харагдаж болно).",
+"ctx": "components/admin/admin-recent-activity.tsx"
+},
+{
+"mn": "Төлөв",
+"ctx": "components/admin/admin-recent-activity.tsx"
+},
+{
+"mn": "Шинэчилсэн",
+"ctx": "components/admin/admin-recent-activity.tsx"
+},
+{
+"mn": "Нэмэлт хэрэгсэл ▾",
+"ctx": "components/admin/admin-sidebar.tsx"
+},
+{
+"mn": "Удирдлагын хэсэг",
+"ctx": "components/admin/admin-sidebar.tsx"
+},
+{
+"mn": "Админ цэс",
+"ctx": "components/admin/admin-sidebar.tsx"
+},
+{
+"mn": "Системээс үүссэн ажлууд — төлөв, ач холбогдол, дуусах огноо, тэмдэглэлтэй.",
+"ctx": "components/admin/admin-task-center-preview.tsx"
+},
+{
+"mn": "Ажлын төв нээх",
+"ctx": "components/admin/admin-task-center-preview.tsx"
+},
+{
+"mn": "Нээлттэй",
+"ctx": "components/admin/admin-task-center-preview.tsx"
+},
+{
+"mn": "Хийгдэж байна",
+"ctx": "components/admin/admin-task-center-preview.tsx"
+},
+{
+"mn": "Хугацаа хэтэрсэн",
+"ctx": "components/admin/admin-task-center-preview.tsx"
+},
+{
+"mn": "Яаралтай",
+"ctx": "components/admin/admin-task-center-preview.tsx"
+},
+{
+"mn": "Идэвхтэй",
+"ctx": "components/admin/admin-task-center-preview.tsx"
+},
+{
+"mn": "Шийдэгдсэн",
+"ctx": "components/admin/admin-task-center-preview.tsx"
+},
+{
+"mn": "Хамгийн чухал ажлууд",
+"ctx": "components/admin/admin-task-center-preview.tsx"
+},
+{
+"mn": "Идэвхтэй ажил алга — бүх зүйл хэвийн.",
+"ctx": "components/admin/admin-task-center-preview.tsx"
+},
+{
+"mn": "Ажлын төлөвийг хадгалахын тулд 006_admin_tasks.sql migration хэрэгтэй.",
+"ctx": "components/admin/admin-task-center.tsx"
+},
+{
+"mn": "Ажлын төвийн анхааруулга",
+"ctx": "components/admin/admin-task-center.tsx"
+},
+{
+"mn": "Бүх зүйл хэвийн байна. Одоогоор яаралтай хийх ажил алга.",
+"ctx": "components/admin/admin-task-center.tsx"
+},
+{
+"mn": "Цэс нээх",
+"ctx": "components/admin/admin-topbar.tsx"
+},
+{
+"mn": "Бөөндөө Сурцгаая · Удирдлага",
+"ctx": "components/admin/admin-topbar.tsx"
+},
+{
+"mn": "Сурагчийн апп →",
+"ctx": "components/admin/admin-topbar.tsx"
+},
+{
+"mn": "Холбоо барьсан",
+"ctx": "components/admin/b2b/admin-b2b-crm-home.tsx"
+},
+{
+"mn": "Танилцуулга товлосон",
+"ctx": "components/admin/b2b/admin-b2b-crm-home.tsx"
+},
+{
+"mn": "Санал илгээсэн",
+"ctx": "components/admin/b2b/admin-b2b-crm-home.tsx"
+},
+{
+"mn": "Туршилт",
+"ctx": "components/admin/b2b/admin-b2b-crm-home.tsx"
+},
+{
+"mn": "Гэрээ байгуулсан",
+"ctx": "components/admin/b2b/admin-b2b-crm-home.tsx"
+},
+{
+"mn": "Татгалзсан",
+"ctx": "components/admin/b2b/admin-b2b-crm-home.tsx"
+},
+{
+"mn": "Архивласан",
+"ctx": "components/admin/b2b/admin-b2b-crm-home.tsx"
+},
+{
+"mn": "Сургалтын төв, сургууль, багш, байгууллагаас ирсэн хүсэлт болон хамтран ажиллаж буй байгууллагууд.",
+"ctx": "components/admin/b2b/admin-b2b-crm-home.tsx"
+},
+{
+"mn": "Бэлтгэл эхлээгүй",
+"ctx": "components/admin/b2b/admin-b2b-crm-home.tsx"
+},
+{
+"mn": "Туршилтад бэлэн",
+"ctx": "components/admin/b2b/admin-b2b-crm-home.tsx"
+},
+{
+"mn": "Туршилт явж байна",
+"ctx": "components/admin/b2b/admin-b2b-crm-home.tsx"
+},
+{
+"mn": "Түр зогссон",
+"ctx": "components/admin/b2b/admin-b2b-crm-home.tsx"
+},
+{
+"mn": "Урилгын и-мэйл",
+"ctx": "components/admin/b2b/admin-b2b-crm-home.tsx"
+},
+{
+"mn": "Илгээсэн",
+"ctx": "components/admin/b2b/admin-b2b-crm-home.tsx"
+},
+{
+"mn": "· Амжилтгүй",
+"ctx": "components/admin/b2b/admin-b2b-crm-home.tsx"
+},
+{
+"mn": "· Алгассан",
+"ctx": "components/admin/b2b/admin-b2b-crm-home.tsx"
+},
+{
+"mn": "Илгээлтийн бүртгэл харах →",
+"ctx": "components/admin/b2b/admin-b2b-crm-home.tsx"
+},
+{
+"mn": "Хүсэлтүүд",
+"ctx": "components/admin/b2b/admin-b2b-crm-home.tsx"
+},
+{
+"mn": "Байгууллагууд (",
+"ctx": "components/admin/b2b/admin-b2b-crm-home.tsx"
+},
+{
+"mn": "Байгууллага үүсгэх",
+"ctx": "components/admin/b2b/admin-b2b-crm-home.tsx"
+},
+{
+"mn": "Сүүлд ирсэн хүсэлт",
+"ctx": "components/admin/b2b/admin-b2b-crm-home.tsx"
+},
+{
+"mn": "Одоогоор хүсэлт алга.",
+"ctx": "components/admin/b2b/admin-b2b-crm-home.tsx"
+},
+{
+"mn": "Сургууль",
+"ctx": "components/admin/b2b/admin-b2b-inquiry-detail.tsx"
+},
+{
+"mn": "Их сургууль",
+"ctx": "components/admin/b2b/admin-b2b-inquiry-detail.tsx"
+},
+{
+"mn": "Багш (хувь хүн)",
+"ctx": "components/admin/b2b/admin-b2b-inquiry-detail.tsx"
+},
+{
+"mn": "Компани",
+"ctx": "components/admin/b2b/admin-b2b-inquiry-detail.tsx"
+},
+{
+"mn": "Багшийн багц",
+"ctx": "components/admin/b2b/admin-b2b-inquiry-detail.tsx"
+},
+{
+"mn": "Сургуулийн багц",
+"ctx": "components/admin/b2b/admin-b2b-inquiry-detail.tsx"
+},
+{
+"mn": "Сургалтын төвийн багц",
+"ctx": "components/admin/b2b/admin-b2b-inquiry-detail.tsx"
+},
+{
+"mn": "Тусгай багц",
+"ctx": "components/admin/b2b/admin-b2b-inquiry-detail.tsx"
+},
+{
+"mn": "Сургуулийн хүсэлтийн хуудас",
+"ctx": "components/admin/b2b/admin-b2b-inquiry-detail.tsx"
+},
+{
+"mn": "Тэмдэглэл нэмсэн",
+"ctx": "components/admin/b2b/admin-b2b-inquiry-detail.tsx"
+},
+{
+"mn": "Төлөв өөрчилсөн",
+"ctx": "components/admin/b2b/admin-b2b-inquiry-detail.tsx"
+},
+{
+"mn": "Хүсэлт олдсонгүй.",
+"ctx": "components/admin/b2b/admin-b2b-inquiry-detail.tsx"
+},
+{
+"mn": "← Хүсэлтүүд",
+"ctx": "components/admin/b2b/admin-b2b-inquiry-detail.tsx"
+},
+{
+"mn": "Хүсэлтийн мэдээлэл",
+"ctx": "components/admin/b2b/admin-b2b-inquiry-detail.tsx"
+},
+{
+"mn": "Төрөл",
+"ctx": "components/admin/b2b/admin-b2b-inquiry-detail.tsx"
+},
+{
+"mn": "Сурагчийн тоо",
+"ctx": "components/admin/b2b/admin-b2b-inquiry-detail.tsx"
+},
+{
+"mn": "Хаанаас ирсэн",
+"ctx": "components/admin/b2b/admin-b2b-inquiry-detail.tsx"
+},
+{
+"mn": "Ирсэн огноо",
+"ctx": "components/admin/b2b/admin-b2b-inquiry-detail.tsx"
+},
+{
+"mn": "Хариуцагч",
+"ctx": "components/admin/b2b/admin-b2b-inquiry-detail.tsx"
+},
+{
+"mn": "Хариуцагч тодорхойгүй",
+"ctx": "components/admin/b2b/admin-b2b-inquiry-detail.tsx"
+},
+{
+"mn": "Хадгалж байна…",
+"ctx": "components/admin/b2b/admin-b2b-inquiry-detail.tsx"
+},
+{
+"mn": "Төлөв хадгалах",
+"ctx": "components/admin/b2b/admin-b2b-inquiry-detail.tsx"
+},
+{
+"mn": "Админы тэмдэглэл",
+"ctx": "components/admin/b2b/admin-b2b-inquiry-detail.tsx"
+},
+{
+"mn": "Тэмдэглэл хадгалах",
+"ctx": "components/admin/b2b/admin-b2b-inquiry-detail.tsx"
+},
+{
+"mn": "Энэ хүсэлтээс байгууллага үүсгэх",
+"ctx": "components/admin/b2b/admin-b2b-inquiry-detail.tsx"
+},
+{
+"mn": "Байгууллагыг харах →",
+"ctx": "components/admin/b2b/admin-b2b-inquiry-detail.tsx"
+},
+{
+"mn": "Дараагийн алхам: гишүүдийг бөөнөөр оруулах",
+"ctx": "components/admin/b2b/admin-b2b-inquiry-detail.tsx"
+},
+{
+"mn": "Туршилтын бэлтгэл хийх үедээ багш, сурагчдыг бөөнөөр оруулна.",
+"ctx": "components/admin/b2b/admin-b2b-inquiry-detail.tsx"
+},
+{
+"mn": "Гишүүдийг бөөнөөр оруулах →",
+"ctx": "components/admin/b2b/admin-b2b-inquiry-detail.tsx"
+},
+{
+"mn": "Тохиргооны алхмууд →",
+"ctx": "components/admin/b2b/admin-b2b-inquiry-detail.tsx"
+},
+{
+"mn": "Эхлээд байгууллагаа үүсгэсний дараа гишүүдийг бөөнөөр оруулах боломжтой болно.",
+"ctx": "components/admin/b2b/admin-b2b-inquiry-detail.tsx"
+},
+{
+"mn": "Одоогоор үйлдэл алга.",
+"ctx": "components/admin/b2b/admin-b2b-inquiry-detail.tsx"
+},
+{
+"mn": "Тэмдэглэл бичих…",
+"ctx": "components/admin/b2b/admin-b2b-inquiry-detail.tsx"
+},
+{
+"mn": "Тэмдэглэл нэмэх",
+"ctx": "components/admin/b2b/admin-b2b-inquiry-detail.tsx"
+},
+{
+"mn": "← Сургууль, байгууллага",
+"ctx": "components/admin/b2b/admin-b2b-inquiry-list.tsx"
+},
+{
+"mn": "Ирсэн хүсэлтүүд",
+"ctx": "components/admin/b2b/admin-b2b-inquiry-list.tsx"
+},
+{
+"mn": "Байгууллага, холбоо барих хүн, и-мэйлээр хайх…",
+"ctx": "components/admin/b2b/admin-b2b-inquiry-list.tsx"
+},
+{
+"mn": "Бүх төлөв",
+"ctx": "components/admin/b2b/admin-b2b-inquiry-list.tsx"
+},
+{
+"mn": "Бүх төрөл",
+"ctx": "components/admin/b2b/admin-b2b-inquiry-list.tsx"
+},
+{
+"mn": "Байгууллага",
+"ctx": "components/admin/b2b/admin-b2b-inquiry-list.tsx"
+},
+{
+"mn": "Харах",
+"ctx": "components/admin/b2b/admin-b2b-inquiry-list.tsx"
+},
+{
+"mn": "Шүүлтэд тохирох хүсэлт олдсонгүй.",
+"ctx": "components/admin/b2b/admin-b2b-inquiry-list.tsx"
+},
+{
+"mn": "Амжилтгүй",
+"ctx": "components/admin/b2b/admin-b2b-invitations-view.tsx"
+},
+{
+"mn": "Алгассан",
+"ctx": "components/admin/b2b/admin-b2b-invitations-view.tsx"
+},
+{
+"mn": "Дараалалд",
+"ctx": "components/admin/b2b/admin-b2b-invitations-view.tsx"
+},
+{
+"mn": "Гараар хуулсан",
+"ctx": "components/admin/b2b/admin-b2b-invitations-view.tsx"
+},
+{
+"mn": "Байгууллагын гишүүн",
+"ctx": "components/admin/b2b/admin-b2b-invitations-view.tsx"
+},
+{
+"mn": "Ангийн сурагч",
+"ctx": "components/admin/b2b/admin-b2b-invitations-view.tsx"
+},
+{
+"mn": "Урилгын и-мэйлийн бүртгэл",
+"ctx": "components/admin/b2b/admin-b2b-invitations-view.tsx"
+},
+{
+"mn": "Байгууллага болон ангийн урилга илгээх сүүлийн оролдлогууд.",
+"ctx": "components/admin/b2b/admin-b2b-invitations-view.tsx"
+},
+{
+"mn": "Илгээгч үйлчилгээ",
+"ctx": "components/admin/b2b/admin-b2b-invitations-view.tsx"
+},
+{
+"mn": "И-мэйлээр хайх",
+"ctx": "components/admin/b2b/admin-b2b-invitations-view.tsx"
+},
+{
+"mn": "Шүүлтэд тохирох бүртгэл олдсонгүй.",
+"ctx": "components/admin/b2b/admin-b2b-invitations-view.tsx"
+},
+{
+"mn": "Урилга",
+"ctx": "components/admin/b2b/admin-b2b-invitations-view.tsx"
+},
+{
+"mn": "Сонирхсон",
+"ctx": "components/admin/b2b/admin-b2b-organization-detail.tsx"
+},
+{
+"mn": "Хаасан",
+"ctx": "components/admin/b2b/admin-b2b-organization-detail.tsx"
+},
+{
+"mn": "Эзэмшигч",
+"ctx": "components/admin/b2b/admin-b2b-organization-detail.tsx"
+},
+{
+"mn": "Менежер",
+"ctx": "components/admin/b2b/admin-b2b-organization-detail.tsx"
+},
+{
+"mn": "Багш",
+"ctx": "components/admin/b2b/admin-b2b-organization-detail.tsx"
+},
+{
+"mn": "Туслах",
+"ctx": "components/admin/b2b/admin-b2b-organization-detail.tsx"
+},
+{
+"mn": "Сурагч",
+"ctx": "components/admin/b2b/admin-b2b-organization-detail.tsx"
+},
+{
+"mn": "Уригдсан",
+"ctx": "components/admin/b2b/admin-b2b-organization-detail.tsx"
+},
+{
+"mn": "Идэвхгүй",
+"ctx": "components/admin/b2b/admin-b2b-organization-detail.tsx"
+},
+{
+"mn": "Хүсэлт ирсэн",
+"ctx": "components/admin/b2b/admin-b2b-organization-detail.tsx"
+},
+{
+"mn": "Байгууллагын тохиргоо",
+"ctx": "components/admin/b2b/admin-b2b-organization-detail.tsx"
+},
+{
+"mn": "Багш бүртгэх",
+"ctx": "components/admin/b2b/admin-b2b-organization-detail.tsx"
+},
+{
+"mn": "Анги үүсгэх",
+"ctx": "components/admin/b2b/admin-b2b-organization-detail.tsx"
+},
+{
+"mn": "Даалгавар үүсгэх",
+"ctx": "components/admin/b2b/admin-b2b-organization-detail.tsx"
+},
+{
+"mn": "Сурагч урих",
+"ctx": "components/admin/b2b/admin-b2b-organization-detail.tsx"
+},
+{
+"mn": "Туршилтын дүгнэлт",
+"ctx": "components/admin/b2b/admin-b2b-organization-detail.tsx"
+},
+{
+"mn": "Хаалттай",
+"ctx": "components/admin/b2b/admin-b2b-organization-detail.tsx"
+},
+{
+"mn": "Байгууллагын",
+"ctx": "components/admin/b2b/admin-b2b-organization-detail.tsx"
+},
+{
+"mn": "Өгсөн",
+"ctx": "components/admin/b2b/admin-b2b-organization-detail.tsx"
+},
+{
+"mn": "Байгууллага олдсонгүй.",
+"ctx": "components/admin/b2b/admin-b2b-organization-detail.tsx"
+},
+{
+"mn": "← Байгууллагууд",
+"ctx": "components/admin/b2b/admin-b2b-organization-detail.tsx"
+},
+{
+"mn": "Байгууллагын самбар нээх →",
+"ctx": "components/admin/b2b/admin-b2b-organization-detail.tsx"
+},
+{
+"mn": "Байгууллагын тайлан →",
+"ctx": "components/admin/b2b/admin-b2b-organization-detail.tsx"
+},
+{
+"mn": "Хүлээгдэж байна",
+"ctx": "components/admin/b2b/admin-b2b-organization-detail.tsx"
+},
+{
+"mn": "· Хүлээн авсан",
+"ctx": "components/admin/b2b/admin-b2b-organization-detail.tsx"
+},
+{
+"mn": "· Хугацаа дууссан/цуцалсан",
+"ctx": "components/admin/b2b/admin-b2b-organization-detail.tsx"
+},
+{
+"mn": "И-мэйл илгээлт — илгээсэн",
+"ctx": "components/admin/b2b/admin-b2b-organization-detail.tsx"
+},
+{
+"mn": "· амжилтгүй",
+"ctx": "components/admin/b2b/admin-b2b-organization-detail.tsx"
+},
+{
+"mn": "· алгассан",
+"ctx": "components/admin/b2b/admin-b2b-organization-detail.tsx"
+},
+{
+"mn": "Байгууллагын урилгууд →",
+"ctx": "components/admin/b2b/admin-b2b-organization-detail.tsx"
+},
+{
+"mn": "Гишүүд ба урилга үүсгэх →",
+"ctx": "components/admin/b2b/admin-b2b-organization-detail.tsx"
+},
+{
+"mn": "Туршилтын бэлтгэл",
+"ctx": "components/admin/b2b/admin-b2b-organization-detail.tsx"
+},
+{
+"mn": "Төлөв:",
+"ctx": "components/admin/b2b/admin-b2b-organization-detail.tsx"
+},
+{
+"mn": "· Алхам:",
+"ctx": "components/admin/b2b/admin-b2b-organization-detail.tsx"
+},
+{
+"mn": "· Бэлэн байдал:",
+"ctx": "components/admin/b2b/admin-b2b-organization-detail.tsx"
+},
+{
+"mn": "Эхлэх огноо:",
+"ctx": "components/admin/b2b/admin-b2b-organization-detail.tsx"
+},
+{
+"mn": "· Сурагчийн тоо:",
+"ctx": "components/admin/b2b/admin-b2b-organization-detail.tsx"
+},
+{
+"mn": "Зорилго:",
+"ctx": "components/admin/b2b/admin-b2b-organization-detail.tsx"
+},
+{
+"mn": "Бэлтгэлийн бүртгэл хараахан үүсээгүй байна.",
+"ctx": "components/admin/b2b/admin-b2b-organization-detail.tsx"
+},
+{
+"mn": "Бэлтгэлийн ажлуудыг үүсгэх",
+"ctx": "components/admin/b2b/admin-b2b-organization-detail.tsx"
+},
+{
+"mn": "«Хийгдэж байна» болгох",
+"ctx": "components/admin/b2b/admin-b2b-organization-detail.tsx"
+},
+{
+"mn": "«Туршилтад бэлэн» болгох",
+"ctx": "components/admin/b2b/admin-b2b-organization-detail.tsx"
+},
+{
+"mn": "Бэлтгэлийг түр зогсоох",
+"ctx": "components/admin/b2b/admin-b2b-organization-detail.tsx"
+},
+{
+"mn": "Нэр",
+"ctx": "components/admin/b2b/admin-b2b-organization-detail.tsx"
+},
+{
+"mn": "И-мэйл",
+"ctx": "components/admin/b2b/admin-b2b-organization-detail.tsx"
+},
+{
+"mn": "Утас",
+"ctx": "components/admin/b2b/admin-b2b-organization-detail.tsx"
+},
+{
+"mn": "Вэбсайт",
+"ctx": "components/admin/b2b/admin-b2b-organization-detail.tsx"
+},
+{
+"mn": "Хаяг",
+"ctx": "components/admin/b2b/admin-b2b-organization-detail.tsx"
+},
+{
+"mn": "Тэмдэглэл",
+"ctx": "components/admin/b2b/admin-b2b-organization-detail.tsx"
+},
+{
+"mn": "Гишүүд",
+"ctx": "components/admin/b2b/admin-b2b-organization-detail.tsx"
+},
+{
+"mn": "уригдсан ·",
+"ctx": "components/admin/b2b/admin-b2b-organization-detail.tsx"
+},
+{
+"mn": "идэвхтэй",
+"ctx": "components/admin/b2b/admin-b2b-organization-detail.tsx"
+},
+{
+"mn": "Одоогоор гишүүн алга.",
+"ctx": "components/admin/b2b/admin-b2b-organization-detail.tsx"
+},
+{
+"mn": "Гишүүн",
+"ctx": "components/admin/b2b/admin-b2b-organization-detail.tsx"
+},
+{
+"mn": "Хасах",
+"ctx": "components/admin/b2b/admin-b2b-organization-detail.tsx"
+},
+{
+"mn": "Гишүүн нэмэх",
+"ctx": "components/admin/b2b/admin-b2b-organization-detail.tsx"
+},
+{
+"mn": "Харагдах нэр",
+"ctx": "components/admin/b2b/admin-b2b-organization-detail.tsx"
+}
+]

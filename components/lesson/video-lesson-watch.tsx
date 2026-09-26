@@ -37,7 +37,7 @@ function SubtitleLines({
   ttsLang: string;
 }) {
   if (mode === "mongolian") {
-    return <p className="text-sm leading-6 text-slate-700">{line.mongolian}</p>;
+    return <p className="text-sm leading-6 text-slate-700" translate="no">{line.mongolian}</p>;
   }
 
   return (
@@ -52,7 +52,7 @@ function SubtitleLines({
         <p className="mt-1 text-sm text-emerald-700">{line.pinyin}</p>
       )}
       {mode === "both" && (
-        <p className="mt-2 text-sm leading-6 text-slate-600">{line.mongolian}</p>
+        <p className="mt-2 text-sm leading-6 text-slate-600" translate="no">{line.mongolian}</p>
       )}
     </>
   );
@@ -86,7 +86,7 @@ export function VideoLessonWatchClient({
 
       <section>
         <h1 className="text-xl font-bold leading-snug tracking-tight sm:text-3xl">
-          {LEARNER_LESSON.watch} — {lesson.title}
+          {LEARNER_LESSON.watch} — <span translate="no">{lesson.title}</span>
         </h1>
         <p className="mt-1 text-lg text-slate-700">{lesson.chineseTitle}</p>
         <p className="mt-2 text-sm text-slate-600 sm:text-base">

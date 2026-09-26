@@ -130,7 +130,7 @@ export function MockTestResultView({
                     </p>
                     <p className="bs-mt-wrong-user">
                       Таны хариулт:{" "}
-                      <span className="hanzi">
+                      <span className="hanzi" translate="no">
                         {formatMockTestAnswer(question, detail.userAnswer)}
                       </span>
                     </p>
@@ -163,7 +163,7 @@ export function MockTestResultView({
                 className="bs-mt-weak-card"
               >
                 <p className="bs-mt-weak-title">
-                  {lesson.title}
+                  <span translate="no">{lesson.title}</span>
                   {completedSet.has(lesson.lessonId) ? (
                     <span className="bs-mt-weak-done" aria-label="Дууссан">
                       {" "}

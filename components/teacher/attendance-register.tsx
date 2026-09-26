@@ -241,7 +241,7 @@ export function AttendanceRegisterView({ classroomId }: Props) {
             </span>
           ) : null}
           {classroom?.scheduleNote ? (
-            <span className="rounded-full bg-slate-100 px-3 py-1 text-slate-700">
+            <span className="rounded-full bg-slate-100 px-3 py-1 text-slate-700" translate="no">
               {classroom.scheduleNote}
             </span>
           ) : null}

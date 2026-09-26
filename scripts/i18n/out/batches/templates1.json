@@ -1,0 +1,1590 @@
+[
+{
+"mn": "Үйлдэл {0} — Удирдлагын хэсэг",
+"ctx": "app/admin/activity/[activityId]/page.tsx"
+},
+{
+"mn": "Хичээл {0} — Тайлан — Удирдлагын хэсэг",
+"ctx": "app/admin/analytics/lessons/[lessonId]/page.tsx"
+},
+{
+"mn": "\"{0}\" ID-тай хичээл тайланд байхгүй байна.",
+"ctx": "app/admin/analytics/lessons/[lessonId]/page.tsx"
+},
+{
+"mn": "Хүнд асуулт {0}.",
+"ctx": "app/admin/analytics/page.tsx"
+},
+{
+"mn": "Сураагүй үг {0}.",
+"ctx": "app/admin/analytics/page.tsx"
+},
+{
+"mn": "Хичээл {0} засах — Удирдлагын хэсэг",
+"ctx": "app/admin/lessons/[lessonId]/edit/page.tsx"
+},
+{
+"mn": "Багшийн давхарга — {0} — Удирдлагын хэсэг",
+"ctx": "app/admin/lessons/[lessonId]/teacher/page.tsx"
+},
+{
+"mn": "Эх сурвалж · {0}",
+"ctx": "app/admin/source/[lessonId]/page.tsx"
+},
+{
+"mn": "{0} · {1}-р хичээл — {2}",
+"ctx": "app/admin/source/[lessonId]/page.tsx"
+},
+{
+"mn": "Бичлэг — {0}",
+"ctx": "app/bichleg/[seriesId]/[videoId]/page.tsx"
+},
+{
+"mn": "{0} — Хэлзүйн суурь",
+"ctx": "app/courses/helzui-suuri/[moduleId]/page.tsx"
+},
+{
+"mn": "{0}-р хичээл",
+"ctx": "app/courses/hsk5/hsk5-lesson-list.tsx"
+},
+{
+"mn": "{0} — Үсэг",
+"ctx": "app/kanji/[vocabId]/page.tsx"
+},
+{
+"mn": "· Энэ удаа: {0}%",
+"ctx": "app/lessons/[lessonId]/quiz/quiz-client.tsx"
+},
+{
+"mn": "Сонголт уншуулах: {0}",
+"ctx": "app/lessons/[lessonId]/quiz/quiz-client.tsx"
+},
+{
+"mn": "Жишээ уншуулах: {0}",
+"ctx": "app/lessons/[lessonId]/vocabulary/vocabulary-client.tsx"
+},
+{
+"mn": "Эсвэл {0} хаяг руу имэйл илгээж устгуулах хүсэлт гаргаж болно — 30 хоногийн дотор биелүүлнэ.",
+"ctx": "app/privacy/page.tsx"
+},
+{
+"mn": "Асуулт байвал: {0}",
+"ctx": "app/privacy/page.tsx"
+},
+{
+"mn": "{0} — HSK 3.0 дүрэм",
+"ctx": "app/review/grammar/hsk30/[levelId]/page.tsx"
+},
+{
+"mn": "{0} — Өгүүлбэрийн бүтэц",
+"ctx": "app/review/grammar/structure/[moduleId]/page.tsx"
+},
+{
+"mn": "{0} — сурах горим",
+"ctx": "app/review/practice/[testId]/page.tsx"
+},
+{
+"mn": "Дасгал {0}",
+"ctx": "app/review/practice/[testId]/page.tsx"
+},
+{
+"mn": "Шалгалт {0}",
+"ctx": "app/test/[testId]/page.tsx"
+},
+{
+"mn": "\"{0}\" дугаартай үйлдлийн бүртгэл алга.",
+"ctx": "components/admin/activity-detail-loader.tsx"
+},
+{
+"mn": "{0} мөр CSV татагдлаа.",
+"ctx": "components/admin/activity-export-controls.tsx"
+},
+{
+"mn": "{0} мөр JSON татагдлаа.",
+"ctx": "components/admin/activity-export-controls.tsx"
+},
+{
+"mn": "{0} мөр JSON хуулагдлаа.",
+"ctx": "components/admin/activity-export-controls.tsx"
+},
+{
+"mn": "{0}: өдөр тутмын суралцсан минут",
+"ctx": "components/admin/admin-activity-chart.tsx"
+},
+{
+"mn": "{0}: {1} минут · {2} суралцагч",
+"ctx": "components/admin/admin-activity-chart.tsx"
+},
+{
+"mn": "Өнөөдөр {0} · ажлын үйлдэл {1}",
+"ctx": "components/admin/admin-activity-preview.tsx"
+},
+{
+"mn": "{0} зүйл хүн хүлээж байна.",
+"ctx": "components/admin/admin-attention-panel.tsx"
+},
+{
+"mn": "өмнөх {0} хоногтой харьцуулахад",
+"ctx": "components/admin/admin-dashboard.tsx"
+},
+{
+"mn": "{0} мин",
+"ctx": "components/admin/admin-dashboard.tsx"
+},
+{
+"mn": "{0} оролдлого",
+"ctx": "components/admin/admin-dashboard.tsx"
+},
+{
+"mn": "Сүүлийн {0} хоногийн суралцах хугацаа",
+"ctx": "components/admin/admin-dashboard.tsx"
+},
+{
+"mn": "{0} нийтлэгдсэн · {1} ноорог",
+"ctx": "components/admin/admin-dashboard.tsx"
+},
+{
+"mn": "Медиа бэлэн: {0}",
+"ctx": "components/admin/admin-dashboard.tsx"
+},
+{
+"mn": "· дундаж {0} оноо",
+"ctx": "components/admin/admin-dashboard.tsx"
+},
+{
+"mn": "· {0} жишээ мөрийг оруулаагүй",
+"ctx": "components/admin/admin-dashboard.tsx"
+},
+{
+"mn": "\"{0}\" — оруулсан ноорог хичээлийг ачаалж байна.",
+"ctx": "components/admin/admin-edit-lesson-not-found.tsx"
+},
+{
+"mn": "\"{0}\" ID-тай хичээл олдсонгүй. Хичээл устсан эсвэл ID буруу байж магадгүй.{1}",
+"ctx": "components/admin/admin-edit-lesson-not-found.tsx"
+},
+{
+"mn": "Энэ төхөөрөмж дээр хадгалагдсан ноорог: {0}",
+"ctx": "components/admin/admin-edit-lesson-not-found.tsx"
+},
+{
+"mn": "{0} бүртгэгдсэн үйлдэл",
+"ctx": "components/admin/admin-production-safety.tsx"
+},
+{
+"mn": "Идэвхтэй {0} · хугацаа хэтэрсэн {1} · яаралтай {2}",
+"ctx": "components/admin/admin-task-center-preview.tsx"
+},
+{
+"mn": "Байгууллага үүсгэлээ: {0}",
+"ctx": "components/admin/b2b/admin-b2b-inquiry-detail.tsx"
+},
+{
+"mn": "«{0}» ангийг устгах уу? Хадмал хамт устана.",
+"ctx": "components/admin/bichleg-admin-client.tsx"
+},
+{
+"mn": "Баталгаажуулахын тулд «{0}» гэж яг бичнэ үү.",
+"ctx": "components/admin/bichleg-admin-client.tsx"
+},
+{
+"mn": "«{0}» цуврал болон бүх {1} ангийг бүхэлд нь устгах уу?",
+"ctx": "components/admin/bichleg-admin-client.tsx"
+},
+{
+"mn": "{0} анги · HSK {1}",
+"ctx": "components/admin/bichleg-admin-client.tsx"
+},
+{
+"mn": "{0}-р анги",
+"ctx": "components/admin/bichleg-admin-client.tsx"
+},
+{
+"mn": "Оруулахад алдаа ({0}): {1}",
+"ctx": "components/admin/bichleg-import-client.tsx"
+},
+{
+"mn": "Оруулж байна… {0}/{1}",
+"ctx": "components/admin/bichleg-import-client.tsx"
+},
+{
+"mn": "{0}: амжилттай",
+"ctx": "components/admin/bichleg-import-client.tsx"
+},
+{
+"mn": "{0}: алдаа",
+"ctx": "components/admin/bichleg-import-client.tsx"
+},
+{
+"mn": "({0} анхааруулга — оруулж болно)",
+"ctx": "components/admin/bulk-import-editor.tsx"
+},
+{
+"mn": "Шалгалт давлаа: {0} хадмал, {1} үг, {2} дасгал.{3}",
+"ctx": "components/admin/bulk-import-editor.tsx"
+},
+{
+"mn": "Амжилттай орууллаа. ({0}: +{1} хадмал, +{2} үг, +{3} дасгал)",
+"ctx": "components/admin/bulk-import-editor.tsx"
+},
+{
+"mn": "Бүх байгууллага ({0})",
+"ctx": "components/admin/center-report-header.tsx"
+},
+{
+"mn": "Сүүлийн {0} хоног",
+"ctx": "components/admin/center-report-header.tsx"
+},
+{
+"mn": "Апп-д холбогдсон {0}",
+"ctx": "components/admin/center-report-summary.tsx"
+},
+{
+"mn": "{0} оноо",
+"ctx": "components/admin/center-report-summary.tsx"
+},
+{
+"mn": "Үнэлэгдсэн сурагч {0}",
+"ctx": "components/admin/center-report-summary.tsx"
+},
+{
+"mn": "Сүүлийн {0} хоног — бүртгэл алга",
+"ctx": "components/admin/center-report-summary.tsx"
+},
+{
+"mn": "{0} сурагч, сүүлийн {1} хоногт",
+"ctx": "components/admin/center-report-summary.tsx"
+},
+{
+"mn": "Нийтлэхэд бэлэн болох нөхцөл: {0}-аас доошгүй үг, {1}-аас доошгүй дасгал, хариулт зөрөхгүй, монгол орчуулга бүрэн.",
+"ctx": "components/admin/import-qa-summary.tsx"
+},
+{
+"mn": "{0} — төлөв",
+"ctx": "components/admin/launch-status-card.tsx"
+},
+{
+"mn": "Суралцагч {0}",
+"ctx": "components/admin/learner-grade-board.tsx"
+},
+{
+"mn": "{0} жишээ суралцагчийг нуусан байна — эдгээр нь үзүүлэх зорилгоор үүсгэсэн өгөгдөл.",
+"ctx": "components/admin/learner-grade-board.tsx"
+},
+{
+"mn": "Сүүлийн {0} үйлдэл.",
+"ctx": "components/admin/lesson-activity-card.tsx"
+},
+{
+"mn": "Дасгалын дундаж оноо бага ({0}%) — prompt-д тусгав.",
+"ctx": "components/admin/lesson-analytics-improvement-section.tsx"
+},
+{
+"mn": "Дуусгалт бага ({0}%) — prompt-д тусгав.",
+"ctx": "components/admin/lesson-analytics-improvement-section.tsx"
+},
+{
+"mn": "{0} — амжилттай.",
+"ctx": "components/admin/lesson-approval-controls.tsx"
+},
+{
+"mn": "{0} хичээлийн ажлууд",
+"ctx": "components/admin/lesson-builder-checklist.tsx"
+},
+{
+"mn": "{0} — хуулбар",
+"ctx": "components/admin/lesson-duplicate-card.tsx"
+},
+{
+"mn": "Файл татагдлаа: lesson-{0}-backup.json",
+"ctx": "components/admin/lesson-export-card.tsx"
+},
+{
+"mn": "✓ Заах зураг ({0})",
+"ctx": "components/admin/lesson-media-teaching-panel.tsx"
+},
+{
+"mn": "{0} амжилттай байршууллаа.",
+"ctx": "components/admin/lesson-media-upload-card.tsx"
+},
+{
+"mn": "{0} — нүүр зураг",
+"ctx": "components/admin/lesson-media-upload-card.tsx"
+},
+{
+"mn": "{0} байршуулах",
+"ctx": "components/admin/lesson-media-upload-card.tsx"
+},
+{
+"mn": "нийтлэхэд хамгийн багадаа {0}",
+"ctx": "components/admin/lesson-package-summary.tsx"
+},
+{
+"mn": "Нөөц хуулбараас амжилттай сэргээлээ ({0}{1}).",
+"ctx": "components/admin/lesson-restore-card.tsx"
+},
+{
+"mn": "Хийх ажил {0}.",
+"ctx": "components/admin/lesson-tasks-card.tsx"
+},
+{
+"mn": "Оруулж чадсангүй ({0}): {1}",
+"ctx": "components/admin/lesson-zip-import-client.tsx"
+},
+{
+"mn": "Оруулж чадсангүй {0}",
+"ctx": "components/admin/lesson-zip-import-client.tsx"
+},
+{
+"mn": "Оруулж чадсангүй (алдааны код {0}).",
+"ctx": "components/admin/lesson-zip-import-client.tsx"
+},
+{
+"mn": "Сонсголын дасгал: {0} асуултад аудио холбогдлоо.",
+"ctx": "components/admin/lesson-zip-import-client.tsx"
+},
+{
+"mn": "Дасгал засварлах ({0})",
+"ctx": "components/admin/quiz-editor.tsx"
+},
+{
+"mn": "{0} мөр",
+"ctx": "components/admin/release-readiness-card.tsx"
+},
+{
+"mn": "{0} үг (хамгийн багадаа 5)",
+"ctx": "components/admin/release-readiness-card.tsx"
+},
+{
+"mn": "{0} асуулт (хамгийн багадаа 3)",
+"ctx": "components/admin/release-readiness-card.tsx"
+},
+{
+"mn": "Чанарын шалгалт {0}",
+"ctx": "components/admin/release-workflow-badges.tsx"
+},
+{
+"mn": "Амжилттай буцаалаа. {0} сэргээгдлээ.",
+"ctx": "components/admin/rollback-execution-card.tsx"
+},
+{
+"mn": "· Багшийн ном х. {0}",
+"ctx": "components/admin/source/hsk-source-lesson-view.tsx"
+},
+{
+"mn": "· Дасгалын ном х. {0}",
+"ctx": "components/admin/source/hsk-source-lesson-view.tsx"
+},
+{
+"mn": "HSK 3.0 нэмэлт · {0} {1} {2} {3}",
+"ctx": "components/admin/source/hsk-source-lesson-view.tsx"
+},
+{
+"mn": "Хадмал засварлах ({0})",
+"ctx": "components/admin/subtitle-editor.tsx"
+},
+{
+"mn": "{0}: {1} сурагч",
+"ctx": "components/admin/training-center-board.tsx"
+},
+{
+"mn": "{0} нь апп руу нэвтэрсэн",
+"ctx": "components/admin/training-center-board.tsx"
+},
+{
+"mn": "{0} · {1} үнэлгээгээр",
+"ctx": "components/admin/training-center-board.tsx"
+},
+{
+"mn": "Сүүлийн {0} хоногт идэвхтэй",
+"ctx": "components/admin/training-center-board.tsx"
+},
+{
+"mn": "{0} / {1} сурагч",
+"ctx": "components/admin/training-center-board.tsx"
+},
+{
+"mn": "«{0}» байгууллагад бүртгэлтэй бүлэг алга байна.",
+"ctx": "components/admin/training-center-board.tsx"
+},
+{
+"mn": "Үгсийн сан засварлах ({0})",
+"ctx": "components/admin/vocabulary-editor.tsx"
+},
+{
+"mn": "{0} идэвхтэй",
+"ctx": "components/b2b/teacher-dashboard-view.tsx"
+},
+{
+"mn": "{0} үзсэн",
+"ctx": "components/bichleg/bichleg-episode-list-client.tsx"
+},
+{
+"mn": "{0} өдөр",
+"ctx": "components/engagement/home-engagement-section.tsx"
+},
+{
+"mn": "{0} · Үндэс",
+"ctx": "components/helzui/helzui-course-player.tsx"
+},
+{
+"mn": "{0} даалгавар",
+"ctx": "components/helzui/helzui-module-view.tsx"
+},
+{
+"mn": "{0} дасгал · өөрөө бод",
+"ctx": "components/helzui/helzui-module-view.tsx"
+},
+{
+"mn": "Миний явц · {0}",
+"ctx": "components/learner-dashboard.tsx"
+},
+{
+"mn": "Зөв хариулт: {0}",
+"ctx": "components/lesson/deep/deep-grammar-drill.tsx"
+},
+{
+"mn": "· {0} зурлага",
+"ctx": "components/lesson/deep/deep-teaching-blocks.tsx"
+},
+{
+"mn": "Татаж байна… {0}/{1}",
+"ctx": "components/lesson/download-lesson-button.tsx"
+},
+{
+"mn": "{0} — шалгалт эхлэхэд тоолуур энд харагдана.",
+"ctx": "components/lesson/exam-lesson-watch.tsx"
+},
+{
+"mn": "Уншуулах: {0}",
+"ctx": "components/lesson/hsk-flashcard-vocabulary-study.tsx"
+},
+{
+"mn": "{0} / {1} үг сурсан",
+"ctx": "components/lesson/hsk-lesson-detail-view.tsx"
+},
+{
+"mn": "{0} үг · flashcard",
+"ctx": "components/lesson/hsk-lesson-detail-view.tsx"
+},
+{
+"mn": "{0} асуулт",
+"ctx": "components/lesson/hsk-lesson-detail-view.tsx"
+},
+{
+"mn": "Асуулт {0}",
+"ctx": "components/lesson/lesson-path-quiz-stage.tsx"
+},
+{
+"mn": "{0} үг нэмэгдлээ, {1} аль хэдийн байсан",
+"ctx": "components/lesson/lesson-path-summary-stage.tsx"
+},
+{
+"mn": "{0} шинэ үг",
+"ctx": "components/lesson/lesson-path-warmup-stage.tsx"
+},
+{
+"mn": "{0} яриа",
+"ctx": "components/lesson/lesson-path-warmup-stage.tsx"
+},
+{
+"mn": "{0} — тайлбар харах",
+"ctx": "components/lesson/mn-grammar-term-text.tsx"
+},
+{
+"mn": "{0} дуудлага",
+"ctx": "components/lesson/modules/VocabularyCard.tsx"
+},
+{
+"mn": "Буруу. Зөв хариулт: {0}",
+"ctx": "components/lesson/modules/teacher-overlay-fields.tsx"
+},
+{
+"mn": "{0} — үгийн тайлбар",
+"ctx": "components/lesson/word-tap-sheet.tsx"
+},
+{
+"mn": "{0} — тольд алга",
+"ctx": "components/lesson/word-tap-sheet.tsx"
+},
+{
+"mn": "{0} үг",
+"ctx": "components/lesson-detail-overview.tsx"
+},
+{
+"mn": "{0} — зөвхөн сонгосон хэлний курсууд",
+"ctx": "components/mobile/courses-list-app-view.tsx"
+},
+{
+"mn": "Хичээл {0}",
+"ctx": "components/mobile/home-app-view.tsx"
+},
+{
+"mn": "Асуулт {0}{1}",
+"ctx": "components/mock-test/mock-test-answer-sheet.tsx"
+},
+{
+"mn": "· {0} хариулаагүй",
+"ctx": "components/mock-test/mock-test-exam-client.tsx"
+},
+{
+"mn": "Сүүлд: {0}/{1}",
+"ctx": "components/mock-test/mock-test-list-client.tsx"
+},
+{
+"mn": "{0} эхлүүлэх",
+"ctx": "components/mock-test/mock-test-list-client.tsx"
+},
+{
+"mn": "{0}-р хэсэг",
+"ctx": "components/mock-test/mock-test-practice-client.tsx"
+},
+{
+"mn": "{0} удаа",
+"ctx": "components/reports/certificate-sheet.tsx"
+},
+{
+"mn": "{0}: {1} сурагч, {2}%",
+"ctx": "components/reports/distribution-bars.tsx"
+},
+{
+"mn": "{0} өдрийн дараа",
+"ctx": "components/review/word-srs-words-client.tsx"
+},
+{
+"mn": "Хавсралт татаж авах: {0}",
+"ctx": "components/teacher/assignment-attachment-link.tsx"
+},
+{
+"mn": "{0} хичээл",
+"ctx": "components/teacher/assignment-detail-view.tsx"
+},
+{
+"mn": "Дасгалын дундаж {0}%",
+"ctx": "components/teacher/assignment-detail-view.tsx"
+},
+{
+"mn": "· Энэ өдрийн ирц бүртгэгдсэн байна{0}",
+"ctx": "components/teacher/attendance-register.tsx"
+},
+{
+"mn": "— сүүлд {0}",
+"ctx": "components/teacher/attendance-register.tsx"
+},
+{
+"mn": "{0} — ирцийн төлөв",
+"ctx": "components/teacher/attendance-register.tsx"
+},
+{
+"mn": ", {0} өдөр хоцорсон",
+"ctx": "components/teacher/attendance-summary-card.tsx"
+},
+{
+"mn": "{0} — даалгавар",
+"ctx": "components/teacher/class-assignment-composer.tsx"
+},
+{
+"mn": "Даалгавар үүссэн ч файл хавсаргаж чадсангүй: {0}",
+"ctx": "components/teacher/class-assignment-composer.tsx"
+},
+{
+"mn": "«{0}» даалгаврыг {1} сурагчид өглөө. Ангийн бусад сурагчид энэ даалгавар харагдахгүй.",
+"ctx": "components/teacher/class-assignment-composer.tsx"
+},
+{
+"mn": "«{0}» даалгаврыг ангид өглөө.",
+"ctx": "components/teacher/class-assignment-composer.tsx"
+},
+{
+"mn": "{0} — ангийн шалгалт",
+"ctx": "components/teacher/class-exam-composer.tsx"
+},
+{
+"mn": "«{0}» шалгалтыг ангид товлолоо.",
+"ctx": "components/teacher/class-exam-composer.tsx"
+},
+{
+"mn": "Шалгалтын өдөр {0}",
+"ctx": "components/teacher/class-exam-learner-card.tsx"
+},
+{
+"mn": "· Дуусах {0}",
+"ctx": "components/teacher/class-exam-learner-card.tsx"
+},
+{
+"mn": "Тэнцэх босго: {0}/{1} оноо ({2}%) — аппын HSK оноолтын дагуу.",
+"ctx": "components/teacher/class-exam-results.tsx"
+},
+{
+"mn": "Тэнцэх босго: {0}% — энэ шалгалтын HSK түвшин олдоогүй тул түр ашиглаж буй тоо. Албан ёсны HSK босго БИШ.",
+"ctx": "components/teacher/class-exam-results.tsx"
+},
+{
+"mn": "· Шалгалтын өдөр {0}",
+"ctx": "components/teacher/class-exam-results.tsx"
+},
+{
+"mn": "{0} өгөөгүй",
+"ctx": "components/teacher/class-exam-results.tsx"
+},
+{
+"mn": "{0} тэнцсэн · {1} тэнцээгүй",
+"ctx": "components/teacher/class-exam-results.tsx"
+},
+{
+"mn": "{0} онооноос",
+"ctx": "components/teacher/class-exam-results.tsx"
+},
+{
+"mn": "Оноосон даалгавар {0}",
+"ctx": "components/teacher/class-report-summary.tsx"
+},
+{
+"mn": "· дундаж {0}%",
+"ctx": "components/teacher/classroom-detail-view.tsx"
+},
+{
+"mn": "· сүүлд {0}",
+"ctx": "components/teacher/student-weak-spots-section.tsx"
+},
+{
+"mn": "«{0}» даалгаврыг {1} сурагчид өглөө. Энэ даалгаврыг зөвхөн тэр сурагч харна.",
+"ctx": "components/teacher/student-weak-spots-section.tsx"
+},
+{
+"mn": "· зөв хариултын хувь {0}%",
+"ctx": "components/teacher/student-weak-spots-section.tsx"
+},
+{
+"mn": "· Хугацаа {0}",
+"ctx": "components/teacher/teacher-reports-view.tsx"
+},
+{
+"mn": "{0}: цуврал шалгалт амжилтгүй",
+"ctx": "lib/admin/import-bichleg-server.ts"
+},
+{
+"mn": "{0}: цуврал оруулахад алдаа",
+"ctx": "lib/admin/import-bichleg-server.ts"
+},
+{
+"mn": "{0}: цуврал бэлэн ✓",
+"ctx": "lib/admin/import-bichleg-server.ts"
+},
+{
+"mn": "{0}: шалгалт амжилтгүй",
+"ctx": "lib/admin/import-bichleg-server.ts"
+},
+{
+"mn": "Цуврал «{0}» олдсонгүй — эхлээд series.json оруулна уу.",
+"ctx": "lib/admin/import-bichleg-server.ts"
+},
+{
+"mn": "{0}: цуврал олдсонгүй",
+"ctx": "lib/admin/import-bichleg-server.ts"
+},
+{
+"mn": "{0}: видео оруулахад алдаа",
+"ctx": "lib/admin/import-bichleg-server.ts"
+},
+{
+"mn": "{0}: хадмал оруулахад алдаа",
+"ctx": "lib/admin/import-bichleg-server.ts"
+},
+{
+"mn": "· {0}-р анги",
+"ctx": "lib/admin/import-bichleg-server.ts"
+},
+{
+"mn": "{0}: {1} мөр орлоо ✓",
+"ctx": "lib/admin/import-bichleg-server.ts"
+},
+{
+"mn": "{0}-р хадмал: монгол орчуулга хэт богино байна.",
+"ctx": "lib/admin/import-qa.ts"
+},
+{
+"mn": "Хадмалын {0}–{1} хугацаа давхардсан ({2} ба {3}-р мөр).",
+"ctx": "lib/admin/import-qa.ts"
+},
+{
+"mn": "\"{0}\" үг: HSK түвшин дутуу.",
+"ctx": "lib/admin/import-qa.ts"
+},
+{
+"mn": "\"{0}\" үг: монгол орчуулга хэт богино байна.",
+"ctx": "lib/admin/import-qa.ts"
+},
+{
+"mn": "{0}-р дасгал: зөв хариулт (correctAnswer) сонголтуудын дунд алга.",
+"ctx": "lib/admin/import-qa.ts"
+},
+{
+"mn": "Давхардсан хятад үг: {0}",
+"ctx": "lib/admin/import-qa.ts"
+},
+{
+"mn": "Хадмалын {0}–{1} хугацаа давхардсан ({2} ба {3} дугаарт).",
+"ctx": "lib/admin/import-qa.ts"
+},
+{
+"mn": "subtitles[{0}]: {1} дутуу.",
+"ctx": "lib/admin/import-qa.ts"
+},
+{
+"mn": "subtitles[{0}]: монгол орчуулга хэт богино байна.",
+"ctx": "lib/admin/import-qa.ts"
+},
+{
+"mn": "vocabulary[{0}]: {1} дутуу.",
+"ctx": "lib/admin/import-qa.ts"
+},
+{
+"mn": "vocabulary[{0}] \"{1}\": {2} дутуу.",
+"ctx": "lib/admin/import-qa.ts"
+},
+{
+"mn": "vocabulary[{0}] \"{1}\": монгол орчуулга хэт богино байна.",
+"ctx": "lib/admin/import-qa.ts"
+},
+{
+"mn": "vocabulary[{0}] \"{1}\": жишээ өгүүлбэр дутуу.",
+"ctx": "lib/admin/import-qa.ts"
+},
+{
+"mn": "\"{0}\" үг давхардсан ({1} ба {2} дугаарт).",
+"ctx": "lib/admin/import-qa.ts"
+},
+{
+"mn": "quizQuestions[{0}]: зөв хариулт (correctAnswer) сонголтуудын дунд алга.",
+"ctx": "lib/admin/import-qa.ts"
+},
+{
+"mn": "- **Ажлын орчны URL:** {0}",
+"ctx": "lib/admin/launch-candidate-report.ts"
+},
+{
+"mn": "- **Үүсгэсэн:** {0}",
+"ctx": "lib/admin/launch-candidate-report.ts"
+},
+{
+"mn": "- **Шийдвэр:** {0}",
+"ctx": "lib/admin/launch-candidate-report.ts"
+},
+{
+"mn": "- **Шийдвэр шинэчлэгдсэн:** {0}",
+"ctx": "lib/admin/launch-candidate-report.ts"
+},
+{
+"mn": "- **Дараагийн санал болгох алхам:** {0}",
+"ctx": "lib/admin/launch-candidate-report.ts"
+},
+{
+"mn": "| Амжилттай | {0} |",
+"ctx": "lib/admin/launch-candidate-report.ts"
+},
+{
+"mn": "| Анхааруулга | {0} |",
+"ctx": "lib/admin/launch-candidate-report.ts"
+},
+{
+"mn": "| Амжилтгүй | {0} |",
+"ctx": "lib/admin/launch-candidate-report.ts"
+},
+{
+"mn": "| Шалгаагүй | {0} |",
+"ctx": "lib/admin/launch-candidate-report.ts"
+},
+{
+"mn": "| Амжилтгүй төлвийн карт | {0} |",
+"ctx": "lib/admin/launch-candidate-report.ts"
+},
+{
+"mn": "- **Хувилбар:** {0}",
+"ctx": "lib/admin/launch-signoff-report.ts"
+},
+{
+"mn": "- **Хариуцагч:** {0}",
+"ctx": "lib/admin/launch-signoff-report.ts"
+},
+{
+"mn": "Quiz audio \"{0}\" Storage URL олдсонгүй — асуулт audio-гүй импортлогдлоо.",
+"ctx": "lib/admin/package-media-import.ts"
+},
+{
+"mn": "Quiz audio \"{0}\" Storage URL олдсонгүй — асуулт audio-гүй үлдлээ.",
+"ctx": "lib/admin/package-media-import.ts"
+},
+{
+"mn": "Quiz audio URL хадгалахад алдаа (\"{0}\"): {1}",
+"ctx": "lib/admin/package-media-import.ts"
+},
+{
+"mn": "Lesson media URLs хадгалахад алдаа: {0}",
+"ctx": "lib/admin/package-media-import.ts"
+},
+{
+"mn": "Гаргахаас өмнө амжилтгүй болсон {0} шалгалтыг засах шаардлагатай.",
+"ctx": "lib/admin/production-qa-report.ts"
+},
+{
+"mn": "{0} анхааруулга",
+"ctx": "lib/admin/production-qa-report.ts"
+},
+{
+"mn": "{0} шалгаагүй",
+"ctx": "lib/admin/production-qa-report.ts"
+},
+{
+"mn": "Үлдсэн зүйлсийг хянана уу: {0}.",
+"ctx": "lib/admin/production-qa-report.ts"
+},
+{
+"mn": "- **Гаргалтын зөвлөмж:** {0}",
+"ctx": "lib/admin/production-qa-report.ts"
+},
+{
+"mn": "- **Шалтгаан:** {0}",
+"ctx": "lib/admin/production-qa-report.ts"
+},
+{
+"mn": "| **Нийт** | **{0}** |",
+"ctx": "lib/admin/production-qa-report.ts"
+},
+{
+"mn": "Үгсийн сан хүрэлцэхгүй ({0}/{1})",
+"ctx": "lib/admin/release-readiness.ts"
+},
+{
+"mn": "Дасгал хүрэлцэхгүй ({0}/{1})",
+"ctx": "lib/admin/release-readiness.ts"
+},
+{
+"mn": "Эрх: {0}",
+"ctx": "lib/admin/security-audit-checks.ts"
+},
+{
+"mn": "{0}+ нийтлэгдсэн хичээл уншигдаж байна.",
+"ctx": "lib/admin/security-audit-checks.ts"
+},
+{
+"mn": "Supabase Auth-ийн Site URL нь {0} байх ёстой",
+"ctx": "lib/admin/security-audit-checks.ts"
+},
+{
+"mn": "Хичээл {0}: хадмал алга",
+"ctx": "lib/admin/task-generator.ts"
+},
+{
+"mn": "{0} — хадмалын мөр алга. Багцаар оруулах эсвэл засварлагчаар нэмнэ үү.",
+"ctx": "lib/admin/task-generator.ts"
+},
+{
+"mn": "Хичээл {0}: үгсийн сан алга",
+"ctx": "lib/admin/task-generator.ts"
+},
+{
+"mn": "{0} — үгсийн сан хоосон байна.",
+"ctx": "lib/admin/task-generator.ts"
+},
+{
+"mn": "Хичээл {0}: үгсийн сан хүрэлцэхгүй",
+"ctx": "lib/admin/task-generator.ts"
+},
+{
+"mn": "{0}/{1} үг — нийтлэхэд хүрэлцэхгүй.",
+"ctx": "lib/admin/task-generator.ts"
+},
+{
+"mn": "Хичээл {0}: дасгалын асуулт алга",
+"ctx": "lib/admin/task-generator.ts"
+},
+{
+"mn": "{0} — дасгалын асуулт алга.",
+"ctx": "lib/admin/task-generator.ts"
+},
+{
+"mn": "Хичээл {0}: дасгал хүрэлцэхгүй",
+"ctx": "lib/admin/task-generator.ts"
+},
+{
+"mn": "{0}/{1} асуулт — нийтлэхэд хүрэлцэхгүй.",
+"ctx": "lib/admin/task-generator.ts"
+},
+{
+"mn": "Ноорог хичээл {0}: агуулга дутуу",
+"ctx": "lib/admin/task-generator.ts"
+},
+{
+"mn": "{0} — ноорог хичээл, агуулга дутуу байна.",
+"ctx": "lib/admin/task-generator.ts"
+},
+{
+"mn": "Хичээл {0}: чанарын шалгалт давсангүй",
+"ctx": "lib/admin/task-generator.ts"
+},
+{
+"mn": "{0} — чанарын шалгалт давсангүй. Засвар хийж дахин шалгана уу.",
+"ctx": "lib/admin/task-generator.ts"
+},
+{
+"mn": "Хичээл {0}: шалгалтад байна",
+"ctx": "lib/admin/task-generator.ts"
+},
+{
+"mn": "{0} — хувилбар гаргах урсгалд шалгалтын төлөвт байна.",
+"ctx": "lib/admin/task-generator.ts"
+},
+{
+"mn": "Хичээл {0}: чанарын шалгалт хүлээж байна",
+"ctx": "lib/admin/task-generator.ts"
+},
+{
+"mn": "{0} — агуулга хангалттай, чанарын шалгалт хүлээж байна.",
+"ctx": "lib/admin/task-generator.ts"
+},
+{
+"mn": "Хичээл {0}: медиа алга",
+"ctx": "lib/admin/task-generator.ts"
+},
+{
+"mn": "{0} — медиа байршуулаагүй байна (media_status: missing).",
+"ctx": "lib/admin/task-generator.ts"
+},
+{
+"mn": "Хичээл {0}: медиа хүлээгдэж байна",
+"ctx": "lib/admin/task-generator.ts"
+},
+{
+"mn": "{0} — медиа байршуулж эхэлсэн, бичлэгийн URL нэмнэ үү.",
+"ctx": "lib/admin/task-generator.ts"
+},
+{
+"mn": "Хичээл {0}: бичлэггүй нийтлэгдсэн",
+"ctx": "lib/admin/task-generator.ts"
+},
+{
+"mn": "{0} — нийтлэгдсэн боловч бичлэгийн URL алга.",
+"ctx": "lib/admin/task-generator.ts"
+},
+{
+"mn": "Хичээл {0}: нүүр зураг алга",
+"ctx": "lib/admin/task-generator.ts"
+},
+{
+"mn": "{0} — нүүр зургийн URL нэмэхийг зөвлөж байна.",
+"ctx": "lib/admin/task-generator.ts"
+},
+{
+"mn": "Хичээл {0}: батлахад бэлэн",
+"ctx": "lib/admin/task-generator.ts"
+},
+{
+"mn": "{0} — агуулга бэлэн, админы баталгаа хүлээж байна.",
+"ctx": "lib/admin/task-generator.ts"
+},
+{
+"mn": "Хичээл {0}: нийтлэхэд бэлэн",
+"ctx": "lib/admin/task-generator.ts"
+},
+{
+"mn": "{0} — баталгаа, чанарын шалгалт давсан. Одоо нийтэлж болно.",
+"ctx": "lib/admin/task-generator.ts"
+},
+{
+"mn": "Хичээл {0}: нийтлэгдсэн ч төлөв тохирохгүй",
+"ctx": "lib/admin/task-generator.ts"
+},
+{
+"mn": "{0} — хэрэглэгчид харагдаж байгаа ч release_status-ыг тааруулах шаардлагатай.",
+"ctx": "lib/admin/task-generator.ts"
+},
+{
+"mn": "Хичээл {0}: төлөв зөрчилдөж байна",
+"ctx": "lib/admin/task-generator.ts"
+},
+{
+"mn": "{0} — нийтлэлийн төлөв ({1}) ба release_status ({2}) хоёр зөрж байна.",
+"ctx": "lib/admin/task-generator.ts"
+},
+{
+"mn": "Хичээл {0}: нөөц хуулбар авахыг зөвлөж байна",
+"ctx": "lib/admin/task-generator.ts"
+},
+{
+"mn": "{0} — нийтлэхийн өмнө JSON нөөц хуулбар гаргахыг зөвлөж байна.",
+"ctx": "lib/admin/task-generator.ts"
+},
+{
+"mn": "Хичээл {0}: дасгалын дундаж оноо бага",
+"ctx": "lib/admin/task-generator.ts"
+},
+{
+"mn": "{0} — дундаж {1}% (< {2}%).",
+"ctx": "lib/admin/task-generator.ts"
+},
+{
+"mn": "Хичээл {0}: дасгал хийсэн оролдлого алга",
+"ctx": "lib/admin/task-generator.ts"
+},
+{
+"mn": "{0} — нийтлэгдсэн боловч суралцагчид дасгалыг хийж үзээгүй байна.",
+"ctx": "lib/admin/task-generator.ts"
+},
+{
+"mn": "Хичээл {0}: дуусгасан хувь бага",
+"ctx": "lib/admin/task-generator.ts"
+},
+{
+"mn": "{0} — дуусгасан {1}% (< {2}%).",
+"ctx": "lib/admin/task-generator.ts"
+},
+{
+"mn": "Хичээл {0}: хэцүү асуултууд байна",
+"ctx": "lib/admin/task-generator.ts"
+},
+{
+"mn": "{0} — {1} асуултын зөв хариултын хувь {2}%-иас бага.",
+"ctx": "lib/admin/task-generator.ts"
+},
+{
+"mn": "Хичээл {0}: үгсийн санг бага давтаж байна",
+"ctx": "lib/admin/task-generator.ts"
+},
+{
+"mn": "{0} — {1} үгийг суралцагчид бараг давтахгүй байна.",
+"ctx": "lib/admin/task-generator.ts"
+},
+{
+"mn": "{0} шинэ B2B хүсэлттэй хараахан холбогдоогүй",
+"ctx": "lib/admin/task-generator.ts"
+},
+{
+"mn": "{0} хүсэлтэд танилцуулга товлосон",
+"ctx": "lib/admin/task-generator.ts"
+},
+{
+"mn": "{0} идэвхтэй/туршилтын байгууллага",
+"ctx": "lib/admin/task-generator.ts"
+},
+{
+"mn": "Курсийг шалгаж чадсангүй: {0}",
+"ctx": "lib/admin/upsert-draft-lesson-from-package.ts"
+},
+{
+"mn": "{0} курс байхгүй байна. Эхлээд курсээ үүсгэнэ үү.",
+"ctx": "lib/admin/upsert-draft-lesson-from-package.ts"
+},
+{
+"mn": "{0} курс олдсонгүй. {1}",
+"ctx": "lib/admin/upsert-draft-lesson-from-package.ts"
+},
+{
+"mn": "\"{0}\" курс автоматаар үүслээ ({1}).",
+"ctx": "lib/admin/upsert-draft-lesson-from-package.ts"
+},
+{
+"mn": "Багцын lessonId \"{0}\"-ийг source_note дотор хадгаллаа; өгөгдлийн сан дахь id нь \"{1}\".",
+"ctx": "lib/admin/upsert-draft-lesson-from-package.ts"
+},
+{
+"mn": "{0} анги",
+"ctx": "lib/bichleg/episode-label.ts"
+},
+{
+"mn": "+{0}с",
+"ctx": "lib/bichleg/subtitle-offset.ts"
+},
+{
+"mn": "{0}с",
+"ctx": "lib/bichleg/subtitle-offset.ts"
+},
+{
+"mn": "wordIds хэт их (хамгийн ихдээ {0}).",
+"ctx": "lib/games/game-deck-route.ts"
+},
+{
+"mn": "{0} нь {1}",
+"ctx": "lib/games/hanzi-component-data.ts"
+},
+{
+"mn": "{0} нь {1} гэсэн бүтэцтэй. {2}.",
+"ctx": "lib/games/hanzi-component-data.ts"
+},
+{
+"mn": "{0} дотор {1} бүрдэл",
+"ctx": "lib/games/hanzi-stroke-game.ts"
+},
+{
+"mn": "{0} ямар утгатай вэ?",
+"ctx": "lib/games/hanzi-stroke-game.ts"
+},
+{
+"mn": "{0} — 偏旁 бүтэц",
+"ctx": "lib/games/hanzi-stroke-game.ts"
+},
+{
+"mn": "Радикал: {0}",
+"ctx": "lib/games/hsk-quiz-builders.ts"
+},
+{
+"mn": "{0} {1} авиа",
+"ctx": "lib/games/korean-game-data.ts"
+},
+{
+"mn": "{0} ({1}) — {2}. {3} нь «{4}».",
+"ctx": "lib/games/radical-decompose-game.ts"
+},
+{
+"mn": "{0} нь {1} гэсэн бүрдэлтэй.",
+"ctx": "lib/games/radical-decompose-game.ts"
+},
+{
+"mn": "Модуль {0}",
+"ctx": "lib/grammar/grammar-search.ts"
+},
+{
+"mn": "{0}: start тоо биш.",
+"ctx": "lib/import/bichleg-video-validate.ts"
+},
+{
+"mn": "{0}: end тоо биш.",
+"ctx": "lib/import/bichleg-video-validate.ts"
+},
+{
+"mn": "{0}: start ({1}) end ({2})-ээс бага байх ёстой.",
+"ctx": "lib/import/bichleg-video-validate.ts"
+},
+{
+"mn": "{0}: хугацаа давхцаж байна — start ({1}) өмнөх end ({2})-ээс бага.",
+"ctx": "lib/import/bichleg-video-validate.ts"
+},
+{
+"mn": "{0}: zh байхгүй.",
+"ctx": "lib/import/bichleg-video-validate.ts"
+},
+{
+"mn": "{0}: pinyin байхгүй.",
+"ctx": "lib/import/bichleg-video-validate.ts"
+},
+{
+"mn": "{0}: mn байхгүй.",
+"ctx": "lib/import/bichleg-video-validate.ts"
+},
+{
+"mn": "{0}: words[] хоосон эсвэл байхгүй.",
+"ctx": "lib/import/bichleg-video-validate.ts"
+},
+{
+"mn": "{0}: words[].zh нийлбэр («{1}») мөрийн zh («{2}»)-тай таарахгүй.",
+"ctx": "lib/import/bichleg-video-validate.ts"
+},
+{
+"mn": "{0} · цуврал · {1}",
+"ctx": "lib/import/bichleg-video-validate.ts"
+},
+{
+"mn": "{0} · {1} · {2} мөр · {3}",
+"ctx": "lib/import/bichleg-video-validate.ts"
+},
+{
+"mn": "listening_quiz_draft.json: {0} сонсголын асуулт quiz-д нэгтгэгдэнэ.",
+"ctx": "lib/import/chinese-hsk-package.ts"
+},
+{
+"mn": "{0} заавал байх ёстой",
+"ctx": "lib/import/format-validation-error.ts"
+},
+{
+"mn": "хоосон биш {0}",
+"ctx": "lib/import/format-validation-error.ts"
+},
+{
+"mn": "{0} төрөлтэй байх ёстой",
+"ctx": "lib/import/format-validation-error.ts"
+},
+{
+"mn": "Сайн байна уу, {0}.",
+"ctx": "lib/invitations/invite-message-templates.ts"
+},
+{
+"mn": "Таныг {0} байгууллагын Бөөндөө Сурцгаая сургалтын platform-д {1} эрхээр урьж байна.",
+"ctx": "lib/invitations/invite-message-templates.ts"
+},
+{
+"mn": "Бөөндөө Сурцгаая: {0} урилга. {1}",
+"ctx": "lib/invitations/invite-message-templates.ts"
+},
+{
+"mn": "Таныг {0} classroom-д сурагчаар нэгдэхээр урьж байна.",
+"ctx": "lib/invitations/invite-message-templates.ts"
+},
+{
+"mn": "Үнэлэхэд {0} дасгал шаардлагатай (одоо {1}).",
+"ctx": "lib/learner-grade.ts"
+},
+{
+"mn": "{0}-аас цөөн дасгал",
+"ctx": "lib/learner-grade.ts"
+},
+{
+"mn": "{0} / {1} үг харагдаж байна",
+"ctx": "lib/learner-labels.ts"
+},
+{
+"mn": "Асуулт {0} / {1}",
+"ctx": "lib/learner-labels.ts"
+},
+{
+"mn": "{0} — солонгос үсэг, дуудлага, дасгал.",
+"ctx": "lib/lesson-player/build-lesson-steps.ts"
+},
+{
+"mn": "{0} — үг, дүрэм, дасгал.",
+"ctx": "lib/lesson-player/build-lesson-steps.ts"
+},
+{
+"mn": "Идэвхтэй сурагчийн хувь «—» — сүүлийн {0} хоногийн хэрэглээ бүртгэгдээгүй байна.",
+"ctx": "lib/reports/center-report.ts"
+},
+{
+"mn": "{0} бүлэг ямар ч байгууллагад хамаараагүй байна — байгууллагаар шүүхэд эдгээр нь харагдахгүй.",
+"ctx": "lib/reports/center-report.ts"
+},
+{
+"mn": "Тайлан {0} бүлэг, {1} багш, жагсаалтын {2} сурагчийг хамарлаа.",
+"ctx": "lib/reports/center-report.ts"
+},
+{
+"mn": "Эдгээрийн {0} нь апп-д бүртгэлээ холбосон — үлдсэн {1} сурагчийн талаар ямар ч хэмжилт алга.",
+"ctx": "lib/reports/center-report.ts"
+},
+{
+"mn": "Үнэлэгдсэн {0} сурагчийн дундаж {1} оноо буюу {2}.",
+"ctx": "lib/reports/center-report.ts"
+},
+{
+"mn": "Оноосон даалгаврын {0}% гүйцэтгэгдсэн байна.",
+"ctx": "lib/reports/center-report.ts"
+},
+{
+"mn": "Сүүлийн {0} хоногт холбогдсон сурагчдын {1}% буюу {2} нь идэвхтэй байжээ.",
+"ctx": "lib/reports/center-report.ts"
+},
+{
+"mn": "Үнэлэгдсэн {0} бүлгийн хамгийн өндөр нь «{1}» ({2} оноо), хамгийн доод нь «{3}» ({4} оноо) — зөрүү {5} оноо.",
+"ctx": "lib/reports/center-report.ts"
+},
+{
+"mn": "Ганц бүлэг л үнэлэгдсэн байна («{0}») тул бүлэг хооронд харьцуулалт хийх боломжгүй.",
+"ctx": "lib/reports/center-report.ts"
+},
+{
+"mn": "Бүлгүүдийн дүнг нийлүүлбэл {0} нь A эсвэл B, {1} нь D эсвэл F, {2} нь үнэлэхэд эрт байна.",
+"ctx": "lib/reports/center-report.ts"
+},
+{
+"mn": "Багш тус бүрийн дундаж {0} багшид тооцогдсон. {1}",
+"ctx": "lib/reports/center-report.ts"
+},
+{
+"mn": "# Сургалтын төвийн тайлан — {0}",
+"ctx": "lib/reports/center-report.ts"
+},
+{
+"mn": "- **Хамрах хүрээ:** {0}",
+"ctx": "lib/reports/center-report.ts"
+},
+{
+"mn": "- **Тайлан гаргасан:** {0}",
+"ctx": "lib/reports/center-report.ts"
+},
+{
+"mn": "- **Идэвхийн хугацаа:** сүүлийн {0} хоног",
+"ctx": "lib/reports/center-report.ts"
+},
+{
+"mn": "| Бүлэг | {0} |",
+"ctx": "lib/reports/center-report.ts"
+},
+{
+"mn": "| Багш | {0} |",
+"ctx": "lib/reports/center-report.ts"
+},
+{
+"mn": "| Сурагч (жагсаалт) | {0} |",
+"ctx": "lib/reports/center-report.ts"
+},
+{
+"mn": "| Апп-д холбогдсон сурагч | {0} |",
+"ctx": "lib/reports/center-report.ts"
+},
+{
+"mn": "| Үнэлэгдсэн сурагч | {0} |",
+"ctx": "lib/reports/center-report.ts"
+},
+{
+"mn": "| Дундаж үнэлгээ | {0} |",
+"ctx": "lib/reports/center-report.ts"
+},
+{
+"mn": "| Даалгаврын гүйцэтгэл | {0} |",
+"ctx": "lib/reports/center-report.ts"
+},
+{
+"mn": "| Идэвхтэй сурагчийн хувь | {0} |",
+"ctx": "lib/reports/center-report.ts"
+},
+{
+"mn": "{0} уншиж чадсангүй: {1}",
+"ctx": "lib/reports/certificate-data.ts"
+},
+{
+"mn": "«{0}» гэсэн курс бүртгэлд алга.",
+"ctx": "lib/reports/certificate-data.ts"
+},
+{
+"mn": "Нийтлэгдсэн хичээлийн дор хаяж {0}%-ийг «дууссан» төлөвт хүргэсэн байх.",
+"ctx": "lib/reports/certificate.ts"
+},
+{
+"mn": "Тухайн курсын хичээлүүдийн дасгалыг дор хаяж {0} удаа өгсөн, дундаж нь {1}%-аас доошгүй байх.",
+"ctx": "lib/reports/certificate.ts"
+},
+{
+"mn": "Дүн = дасгалын дундаж × {0} + хичээл дуусгалт × {1}.",
+"ctx": "lib/reports/certificate.ts"
+},
+{
+"mn": "Нийтлэгдсэн {0} хичээл.",
+"ctx": "lib/reports/certificate.ts"
+},
+{
+"mn": "{0} хичээлийн {1} нь дууссан ({2}%).",
+"ctx": "lib/reports/certificate.ts"
+},
+{
+"mn": "Энэ курсын дасгалыг {0} удаа өгсөн — шаардлага {1}.",
+"ctx": "lib/reports/certificate.ts"
+},
+{
+"mn": "{0} дасгалын дундаж {1}% — шаардлага {2}%.",
+"ctx": "lib/reports/certificate.ts"
+},
+{
+"mn": "{0} дасгалын дундаж {1}%.",
+"ctx": "lib/reports/certificate.ts"
+},
+{
+"mn": "Ангийн нэмэлт мэдээлэл уншиж чадсангүй: {0}",
+"ctx": "lib/reports/class-report-data.ts"
+},
+{
+"mn": "Жагсаалтад {0} сурагч байгаа боловч хэн нь ч апп-д бүртгэлээ холбоогүй байна.",
+"ctx": "lib/reports/class-report.ts"
+},
+{
+"mn": "Ангид {0} сурагч холбогдсон ч одоогоор нэг ч даалгавар оноогоогүй байна.",
+"ctx": "lib/reports/class-report.ts"
+},
+{
+"mn": "{0} холбогдсон сурагчийн нэг нь ч үнэлэгдэх хэмжээний дүн бүртгүүлээгүй байна.",
+"ctx": "lib/reports/class-report.ts"
+},
+{
+"mn": "Оноосон {0} даалгаврын хариу ирээгүй тул энэ тайлангаас ангийн түвшний талаар дүгнэлт гаргах боломжгүй.",
+"ctx": "lib/reports/class-report.ts"
+},
+{
+"mn": "Үнэлгээ нийт {0} сурагчийн дундаас {1} сурагчид тооцогдсон.",
+"ctx": "lib/reports/class-report.ts"
+},
+{
+"mn": "Үлдсэн {0} сурагчийн талаар энэ тайлан юу ч хэлэхгүй — тэдний мөрөнд хэмжилт алга.",
+"ctx": "lib/reports/class-report.ts"
+},
+{
+"mn": "Үнэлэгдсэн сурагчдын дундаж {0} оноо буюу {1}.",
+"ctx": "lib/reports/class-report.ts"
+},
+{
+"mn": "Оноосон {0} даалгаврын {1}% гүйцэтгэгдсэн — {2}.",
+"ctx": "lib/reports/class-report.ts"
+},
+{
+"mn": "Дуусгасан даалгаврын дасгалын дундаж {0}%.",
+"ctx": "lib/reports/class-report.ts"
+},
+{
+"mn": "Үнэлэгдсэн {0} сурагчийн {1} нь A эсвэл B, {2} нь D эсвэл F үнэлгээтэй байна.",
+"ctx": "lib/reports/class-report.ts"
+},
+{
+"mn": "Нэг ч даалгавар дуусгаагүй сурагч: {0}.",
+"ctx": "lib/reports/class-report.ts"
+},
+{
+"mn": "Нэг ч даалгавар дуусгаагүй {0} сурагч байна, тухайлбал: {1}.",
+"ctx": "lib/reports/class-report.ts"
+},
+{
+"mn": "# Ангийн тайлан — {0}",
+"ctx": "lib/reports/class-report.ts"
+},
+{
+"mn": "- **Түвшин:** {0}",
+"ctx": "lib/reports/class-report.ts"
+},
+{
+"mn": "- **Хичээллэх хэлбэр:** {0}",
+"ctx": "lib/reports/class-report.ts"
+},
+{
+"mn": "- **Хуваарь:** {0}",
+"ctx": "lib/reports/class-report.ts"
+},
+{
+"mn": "- **Багш:** {0}",
+"ctx": "lib/reports/class-report.ts"
+},
+{
+"mn": "- **Хамрах хугацаа:** {0}",
+"ctx": "lib/reports/class-report.ts"
+},
+{
+"mn": "| Сурагчийн тоо | {0} (апп-д холбогдсон {1}) |",
+"ctx": "lib/reports/class-report.ts"
+},
+{
+"mn": "| Оноосон даалгавар | {0} |",
+"ctx": "lib/reports/class-report.ts"
+},
+{
+"mn": "| Дасгалын дундаж | {0} |",
+"ctx": "lib/reports/class-report.ts"
+},
+{
+"mn": "{0} оноо — {1}",
+"ctx": "lib/reports/class-report.ts"
+},
+{
+"mn": "| Үнэлэгдсэн сурагч | {0} / {1} |",
+"ctx": "lib/reports/class-report.ts"
+},
+{
+"mn": "{0} оны {1} сарын {2}",
+"ctx": "lib/reports/format.ts"
+},
+{
+"mn": "{0} · {1}-р хичээл",
+"ctx": "lib/study-plan/study-plan-server.ts"
+},
+{
+"mn": "Үргэлжлүүлэх: {0}",
+"ctx": "lib/study-plan/study-plan-server.ts"
+},
+{
+"mn": "Сул талаа нөхөх: {0}",
+"ctx": "lib/study-plan/study-plan-server.ts"
+},
+{
+"mn": "{0} үг давтах",
+"ctx": "lib/study-plan/study-plan-server.ts"
+},
+{
+"mn": "user_activity_sessions уншиж чадсангүй: {0} (050 migration ажилласан эсэхийг шалга).",
+"ctx": "lib/supabase/activity-time-analytics.ts"
+},
+{
+"mn": "Үгсийн сан {0}-аас цөөн",
+"ctx": "lib/supabase/admin-analytics.ts"
+},
+{
+"mn": "Дасгал {0}-аас цөөн",
+"ctx": "lib/supabase/admin-analytics.ts"
+},
+{
+"mn": "Lesson ID \"{0}\" аль хэдийн байна.",
+"ctx": "lib/supabase/admin-duplicate.ts"
+},
+{
+"mn": "classrooms уншиж чадсангүй: {0}",
+"ctx": "lib/supabase/admin-training-center.ts"
+},
+{
+"mn": "Байгууллага {0}",
+"ctx": "lib/supabase/admin-training-center.ts"
+},
+{
+"mn": "Багш {0}",
+"ctx": "lib/supabase/admin-training-center.ts"
+},
+{
+"mn": "Бүлэг {0}",
+"ctx": "lib/supabase/admin-training-center.ts"
+},
+{
+"mn": "{0} сурагч апп дээрх бүртгэлтэй холбогдоогүй тул дүн нь татагдахгүй.",
+"ctx": "lib/supabase/class-mock-exams.ts"
+},
+{
+"mn": "{0} · дээд тал нь {1}MB",
+"ctx": "lib/supabase/classrooms.ts"
+},
+{
+"mn": "Зөвшөөрөгдөх файлын төрөл: {0}.",
+"ctx": "lib/supabase/classrooms.ts"
+},
+{
+"mn": "Файл хэтэрхий том байна. Дээд хэмжээ {0}MB.",
+"ctx": "lib/supabase/classrooms.ts"
+},
+{
+"mn": "{0} · дээд тал нь {1}",
+"ctx": "lib/supabase/media-upload.ts"
+},
+{
+"mn": "Гүйцэтгэл {0}%",
+"ctx": "lib/supabase/teacher-analytics.ts"
+},
+{
+"mn": "Зөвхөн хамгийн сүүлийн {0} оролдлогыг тооцлоо — түүнээс өмнөх алдаа энд ороогүй.",
+"ctx": "lib/supabase/teacher-weak-spots.ts"
+},
+{
+"mn": "{0} асуулт дээр алдсан (нийт {1} буруу оролдлого)",
+"ctx": "lib/supabase/teacher-weak-spots.ts"
+},
+{
+"mn": "зөв хариултын хувь {0}%",
+"ctx": "lib/supabase/teacher-weak-spots.ts"
+},
+{
+"mn": "сүүлийн дасгал {0}/{1} ({2}%)",
+"ctx": "lib/supabase/teacher-weak-spots.ts"
+},
+{
+"mn": "{0} — дахин давтах",
+"ctx": "lib/supabase/teacher-weak-spots.ts"
+},
+{
+"mn": "Шалтгаан: {0}.",
+"ctx": "lib/supabase/teacher-weak-spots.ts"
+},
+{
+"mn": "Хамгийн их алдсан хэсэг: {0}.",
+"ctx": "lib/supabase/teacher-weak-spots.ts"
+},
+{
+"mn": "{0} — {1} алдаа",
+"ctx": "lib/supabase/teacher-weak-spots.ts"
+},
+{
+"mn": "{0} · үргэлжлүүлэх",
+"ctx": "lib/supabase/video-progress-client.ts"
+},
+{
+"mn": "{0} номын бүтэн хичээл",
+"ctx": "lib/temee/home-course-display.ts"
+}
+]

@@ -41,6 +41,7 @@ export function LessonProgressHeader({
           <p
             className="truncate text-sm font-semibold"
             style={{ color: LESSON_MODULE.text }}
+            translate="no"
           >
             {title}
           </p>
@@ -48,6 +49,7 @@ export function LessonProgressHeader({
             <p
               className="truncate text-xs"
               style={{ color: LESSON_MODULE.textMuted }}
+              translate="no"
             >
               {subtitle}
             </p>

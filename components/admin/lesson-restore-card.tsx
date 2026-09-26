@@ -199,7 +199,7 @@ export function LessonRestoreCard({
               <li>Эх хичээл: {preview.summary.sourceLessonId}</li>
             ) : null}
             {preview.summary.title ? (
-              <li>Гарчиг: {preview.summary.title}</li>
+              <li>Гарчиг: <span translate="no">{preview.summary.title}</span></li>
             ) : null}
             <li>Хадмал: {preview.summary.subtitleCount}</li>
             <li>Үгсийн сан: {preview.summary.vocabularyCount}</li>

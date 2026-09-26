@@ -63,7 +63,7 @@ export function DeepGrammarDrill({ lessonId, pointKey, drills }: Props) {
 
           return (
             <li key={index} className="bs-deep-drill">
-              <p className="bs-deep-drill-q hanzi">{drill.question}</p>
+              <p translate="no" className="bs-deep-drill-q hanzi">{drill.question}</p>
 
               {drill.type === "choice" && drill.options?.length ? (
                 <div className="bs-deep-drill-options">
@@ -86,7 +86,7 @@ export function DeepGrammarDrill({ lessonId, pointKey, drills }: Props) {
                         className={`bs-deep-opt${tone}`}
                         onClick={() => submit(index, drill, option)}
                       >
-                        <span className="hanzi">{option}</span>
+                        <span translate="no" className="hanzi">{option}</span>
                       </button>
                     );
                   })}
@@ -128,7 +128,7 @@ export function DeepGrammarDrill({ lessonId, pointKey, drills }: Props) {
               {drill.type === "fill" ? (
                 answered ? (
                   <p className="bs-deep-your hanzi">
-                    Таны хариулт: {given || "—"}
+                    Таны хариулт: <span translate="no">{given || "—"}</span>
                   </p>
                 ) : (
                   <div className="bs-deep-fill">
@@ -178,7 +178,7 @@ export function DeepGrammarDrill({ lessonId, pointKey, drills }: Props) {
                         : drill.answer
                     }`}
                   </p>
-                  <p className="bs-deep-why">{drill.why_mn}</p>
+                  <p translate="no" className="bs-deep-why">{drill.why_mn}</p>
                 </div>
               ) : null}
             </li>

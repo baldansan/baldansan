@@ -175,10 +175,10 @@ export function LessonBuilderWorkflow({
                         />
                         <LessonQaBadge status={report.qaStatus} />
                       </span>
-                      <span className="font-medium text-slate-900">
+                      <span className="font-medium text-slate-900" translate="no">
                         {lesson.title}
                       </span>
-                      <span className="text-xs text-slate-500">
+                      <span className="text-xs text-slate-500" translate="no">
                         {lesson.chineseTitle}
                       </span>
                     </button>
@@ -209,11 +209,11 @@ export function LessonBuilderWorkflow({
               </div>
               <div>
                 <dt className="text-slate-500">Гарчиг</dt>
-                <dd className="text-slate-900">{selectedLesson.title}</dd>
+                <dd className="text-slate-900" translate="no">{selectedLesson.title}</dd>
               </div>
               <div>
                 <dt className="text-slate-500">Хятад гарчиг</dt>
-                <dd className="text-slate-900">{selectedLesson.chineseTitle}</dd>
+                <dd className="text-slate-900" translate="no">{selectedLesson.chineseTitle}</dd>
               </div>
               <div>
                 <dt className="text-slate-500">Хадмал</dt>

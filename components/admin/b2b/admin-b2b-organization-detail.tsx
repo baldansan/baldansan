@@ -678,7 +678,7 @@ export function AdminB2BOrganizationDetail({ organizationId }: Props) {
                 key={a.id}
                 className="rounded-lg bg-slate-50 px-3 py-2 text-sm"
               >
-                {a.title} · {a.classroomName ?? "Анги"} ·{" "}
+                <span translate="no">{a.title}</span> · {a.classroomName ?? "Анги"} ·{" "}
                 {ASSIGNMENT_STATUS_LABELS[a.status] ?? a.status}
                 <Link
                   href={`/teacher/assignments/${a.id}`}

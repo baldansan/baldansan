@@ -65,6 +65,7 @@ function VocabWordCard({
           <p
             className="mt-2 text-base leading-snug"
             style={{ color: LESSON_MODULE.textMuted }}
+            translate="no"
           >
             {word.mongolian}
           </p>

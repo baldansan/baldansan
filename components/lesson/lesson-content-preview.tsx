@@ -29,7 +29,7 @@ export function LessonSubtitlePreviewSection({ lines, courseId }: SubtitleProps)
               <p className="mt-0.5 text-xs text-emerald-700">
                 {romLabel}: {line.pinyin}
               </p>
-              <p className="mt-1.5 text-sm text-[var(--app-muted)]">
+              <p className="mt-1.5 text-sm text-[var(--app-muted)]" translate="no">
                 {line.mongolian}
               </p>
             </div>
@@ -66,7 +66,7 @@ export function LessonVocabPreviewSection({ words, courseId }: VocabProps) {
                 <p className="mt-0.5 truncate text-xs text-emerald-700">
                   {romLabel}: {word.pinyin}
                 </p>
-                <p className="mt-1 text-sm text-[var(--app-muted)]">
+                <p className="mt-1 text-sm text-[var(--app-muted)]" translate="no">
                   {word.mongolian}
                 </p>
               </div>

@@ -139,7 +139,7 @@ export function LessonPathSummaryStage({
             <span className="bs-dot" />
             Сурсан бүтэц
           </div>
-          <div className="bs-chips">
+          <div className="bs-chips" translate="no">
             {summary.structureChips.map((chip) => (
               <span key={chip} className="bs-chip">
                 {chip}
@@ -170,7 +170,7 @@ export function LessonPathSummaryStage({
           <div className="bs-path-reflection-list">
             {summary.reflectionQuestions.map((question, index) => (
               <label key={`${index}-${question}`} className="bs-path-reflection-item">
-                <span className="bs-path-reflection-q">{question}</span>
+                <span className="bs-path-reflection-q" translate="no">{question}</span>
                 <textarea
                   className="bs-path-reflection-input"
                   rows={3}

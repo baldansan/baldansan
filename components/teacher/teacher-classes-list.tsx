@@ -57,7 +57,7 @@ export function TeacherClassesList() {
               className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200"
             >
               <div className="flex flex-wrap items-start justify-between gap-2">
-                <h2 className="font-semibold text-slate-900">{cls.name}</h2>
+                <h2 className="font-semibold text-slate-900" translate="no">{cls.name}</h2>
                 <span className="text-xs text-slate-500">{cls.status}</span>
               </div>
               {cls.level ? (

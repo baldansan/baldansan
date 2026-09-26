@@ -211,7 +211,7 @@ export function SubtitleEditor({
               key={line.id}
               className="flex flex-col gap-2 rounded-xl bg-slate-50 p-3 ring-1 ring-slate-100 sm:flex-row sm:items-start sm:justify-between"
             >
-              <div className="min-w-0 flex-1 text-sm">
+              <div className="min-w-0 flex-1 text-sm" translate="no">
                 <span className="font-mono text-xs text-slate-500">
                   #{line.order_index} · {line.start_time} – {line.end_time}
                 </span>

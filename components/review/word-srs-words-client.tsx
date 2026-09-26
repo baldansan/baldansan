@@ -147,7 +147,7 @@ export function WordSrsWordsClient() {
                   <p className="bs-srs-words-pinyin">{word.pinyin}</p>
                 ) : null}
                 {word.meaning_mn ? (
-                  <p className="bs-srs-words-meaning">{word.meaning_mn}</p>
+                  <p className="bs-srs-words-meaning" translate="no">{word.meaning_mn}</p>
                 ) : null}
                 <div className="bs-srs-words-meta">
                   {word.hsk_level ? (
@@ -183,7 +183,7 @@ export function WordSrsWordsClient() {
                     <p className="bs-srs-words-pinyin">{row.pinyin}</p>
                   ) : null}
                   {row.mn ? (
-                    <p className="bs-srs-words-meaning">{row.mn}</p>
+                    <p className="bs-srs-words-meaning" translate="no">{row.mn}</p>
                   ) : null}
                 </div>
                 <button

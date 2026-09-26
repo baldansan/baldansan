@@ -1,0 +1,2146 @@
+[
+{
+"mn": "Үлдсэн анхааруулгуудыг тэмдэглэж, хувилбар гаргахын өмнө баталгаа аваарай.",
+"ctx": "lib/admin/launch-candidate-report.ts"
+},
+{
+"mn": "Шалгаагүй зүйлсийг дуусгаж, анхааруулгуудыг хянана уу.",
+"ctx": "lib/admin/launch-candidate-report.ts"
+},
+{
+"mn": "# Бөөндөө Сурцгаая — Гаргахад нэр дэвшсэн хувилбарын тайлан",
+"ctx": "lib/admin/launch-candidate-report.ts"
+},
+{
+"mn": "## Хураангуй",
+"ctx": "lib/admin/launch-candidate-report.ts"
+},
+{
+"mn": "| Үзүүлэлт | Тоо |",
+"ctx": "lib/admin/launch-candidate-report.ts"
+},
+{
+"mn": "## Гаргахад саад болж буй зүйлс (амжилтгүй)",
+"ctx": "lib/admin/launch-candidate-report.ts"
+},
+{
+"mn": "## Анхааруулга",
+"ctx": "lib/admin/launch-candidate-report.ts"
+},
+{
+"mn": "## Гаргалтын төлвийн картууд",
+"ctx": "lib/admin/launch-candidate-report.ts"
+},
+{
+"mn": "| Карт | Төлөв |",
+"ctx": "lib/admin/launch-candidate-report.ts"
+},
+{
+"mn": "| Шалгалт | Төлөв | Тэмдэглэл |",
+"ctx": "lib/admin/launch-candidate-report.ts"
+},
+{
+"mn": "## Мэдэгдэж буй хязгаарлалт",
+"ctx": "lib/admin/launch-candidate-report.ts"
+},
+{
+"mn": "Байршуулалтын бэлэн байдал",
+"ctx": "lib/admin/launch-signoff-data.ts"
+},
+{
+"mn": "Vercel дээрх ажлын орчны байршуулалт болон /deployment-check",
+"ctx": "lib/admin/launch-signoff-data.ts"
+},
+{
+"mn": "Supabase-ийн бэлэн байдал",
+"ctx": "lib/admin/launch-signoff-data.ts"
+},
+{
+"mn": "Нэвтрэлтийн бэлэн байдал",
+"ctx": "lib/admin/launch-signoff-data.ts"
+},
+{
+"mn": "Site URL, redirect URL-ууд, нэвтрэх/гарах",
+"ctx": "lib/admin/launch-signoff-data.ts"
+},
+{
+"mn": "Үүсгэх/засах/нийтлэх болон админ хуудсууд",
+"ctx": "lib/admin/launch-signoff-data.ts"
+},
+{
+"mn": "Аюулгүй байдлын бэлэн байдал",
+"ctx": "lib/admin/launch-signoff-data.ts"
+},
+{
+"mn": "RLS үзлэг, клиент талд service_role байхгүй",
+"ctx": "lib/admin/launch-signoff-data.ts"
+},
+{
+"mn": "Гаргалтын шийдвэр",
+"ctx": "lib/admin/launch-signoff-data.ts"
+},
+{
+"mn": "Гаргахад нэр дэвшсэн хувилбар ба эцсийн баталгаа нийцсэн",
+"ctx": "lib/admin/launch-signoff-data.ts"
+},
+{
+"mn": "Ажлын орчны байршуулалт ажиллаж байна",
+"ctx": "lib/admin/launch-signoff-data.ts"
+},
+{
+"mn": "/deployment-check амжилттай",
+"ctx": "lib/admin/launch-signoff-data.ts"
+},
+{
+"mn": "/admin/system-check амжилттай",
+"ctx": "lib/admin/launch-signoff-data.ts"
+},
+{
+"mn": "/admin/production-qa хуудсыг шалгасан",
+"ctx": "lib/admin/launch-signoff-data.ts"
+},
+{
+"mn": "/admin/security-audit хуудсыг шалгасан",
+"ctx": "lib/admin/launch-signoff-data.ts"
+},
+{
+"mn": "Supabase-ийн production_verification.sql-ийг шалгасан",
+"ctx": "lib/admin/launch-signoff-data.ts"
+},
+{
+"mn": "Supabase Auth URL-ууд тохируулагдсан",
+"ctx": "lib/admin/launch-signoff-data.ts"
+},
+{
+"mn": "Админ хэрэглэгч шалгагдсан",
+"ctx": "lib/admin/launch-signoff-data.ts"
+},
+{
+"mn": "Нийтийн хичээлийн хуудсыг шалгасан",
+"ctx": "lib/admin/launch-signoff-data.ts"
+},
+{
+"mn": "Нэвтрэх/гарахыг шалгасан",
+"ctx": "lib/admin/launch-signoff-data.ts"
+},
+{
+"mn": "Дасгалын оролдлого хадгалагдахыг шалгасан",
+"ctx": "lib/admin/launch-signoff-data.ts"
+},
+{
+"mn": "Сурсан үг хадгалагдахыг шалгасан",
+"ctx": "lib/admin/launch-signoff-data.ts"
+},
+{
+"mn": "Хичээлийн ахиц хадгалагдахыг шалгасан",
+"ctx": "lib/admin/launch-signoff-data.ts"
+},
+{
+"mn": "Медиа болон файл хадгалалтыг шалгасан",
+"ctx": "lib/admin/launch-signoff-data.ts"
+},
+{
+"mn": "Үйлдлийн бүртгэлийг шалгасан",
+"ctx": "lib/admin/launch-signoff-data.ts"
+},
+{
+"mn": "Ажлын төвийг шалгасан",
+"ctx": "lib/admin/launch-signoff-data.ts"
+},
+{
+"mn": "Буцаах төлөвлөгөөг үзсэн",
+"ctx": "lib/admin/launch-signoff-data.ts"
+},
+{
+"mn": "Гаргасны дараах хяналтын төлөвлөгөөг үзсэн",
+"ctx": "lib/admin/launch-signoff-data.ts"
+},
+{
+"mn": "Эцсийн баталгааны жагсаалтыг бөглөж, гаргах эсэх шийдвэрээ тэмдэглэнэ үү.",
+"ctx": "lib/admin/launch-signoff-report.ts"
+},
+{
+"mn": "Гаргахаас өмнө саад болж буй зүйлсийг засна уу. Шаардлагатай бол ROLLBACK_PLAN.md-ийг үзнэ үү.",
+"ctx": "lib/admin/launch-signoff-report.ts"
+},
+{
+"mn": "Гаргахыг зөвшөөрлөө — GO_LIVE_NOTES.md болон POST_LAUNCH_MONITORING.md-ийг дагана уу.",
+"ctx": "lib/admin/launch-signoff-report.ts"
+},
+{
+"mn": "Үлдсэн анхааруулгуудыг тэмдэглэж, хариуцагчдаас баталгаа аваарай.",
+"ctx": "lib/admin/launch-signoff-report.ts"
+},
+{
+"mn": "Гаргахаас өмнө шалгаагүй зүйлсийг дуусгаж, анхааруулгуудыг хянана уу.",
+"ctx": "lib/admin/launch-signoff-report.ts"
+},
+{
+"mn": "# Бөөндөө Сурцгаая — Ажлын орчинд гаргах баталгааны тайлан",
+"ctx": "lib/admin/launch-signoff-report.ts"
+},
+{
+"mn": "## Гаргалтын тэмдэглэл",
+"ctx": "lib/admin/launch-signoff-report.ts"
+},
+{
+"mn": "## Мэдэгдэж буй алдаа",
+"ctx": "lib/admin/launch-signoff-report.ts"
+},
+{
+"mn": "## Эцсийн шийдвэрийн тэмдэглэл",
+"ctx": "lib/admin/launch-signoff-report.ts"
+},
+{
+"mn": "## Баталгааны хураангуй картууд",
+"ctx": "lib/admin/launch-signoff-report.ts"
+},
+{
+"mn": "## Эцсийн баталгааны шалгах жагсаалт",
+"ctx": "lib/admin/launch-signoff-report.ts"
+},
+{
+"mn": "Мэдээлэл дутуу (гарчиг ба зорилтот гарчиг шаардлагатай)",
+"ctx": "lib/admin/lesson-qa.ts"
+},
+{
+"mn": "Хадмал алга",
+"ctx": "lib/admin/lesson-qa.ts"
+},
+{
+"mn": "Үгсийн сан алга",
+"ctx": "lib/admin/lesson-qa.ts"
+},
+{
+"mn": "Дасгалын асуулт алга",
+"ctx": "lib/admin/lesson-qa.ts"
+},
+{
+"mn": "Тоо зөрүүтэй",
+"ctx": "lib/admin/lesson-qa.ts"
+},
+{
+"mn": "Аудио алга",
+"ctx": "lib/admin/lesson-short-warnings.ts"
+},
+{
+"mn": "Багцын зураг — Storage хэрэгтэй",
+"ctx": "lib/admin/lesson-short-warnings.ts"
+},
+{
+"mn": "Зураг алга",
+"ctx": "lib/admin/lesson-short-warnings.ts"
+},
+{
+"mn": "Public URL үүсгэж чадсангүй.",
+"ctx": "lib/admin/package-media-import.ts"
+},
+{
+"mn": "Supabase тохиргоогүй — quiz audio URL хадгалагдсангүй.",
+"ctx": "lib/admin/package-media-import.ts"
+},
+{
+"mn": "ZIP-д media файл байсан ч Storage upload амжилтгүй — текст контент импортлогдсон.",
+"ctx": "lib/admin/package-media-import.ts"
+},
+{
+"mn": "Хуудас алдаагүй харагдана",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Нийтэд нээлттэй байршуулалтын шалгалт",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Шалгалтууд давсан; нууц мэдээлэл харагдахгүй",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Курсууд",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Курсууд харагдана",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "HSK5 курс",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Зөвхөн нийтлэгдсэн хичээлүүд",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Зөвхөн нийтлэгдсэн хичээл жагсаана",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "1-р хичээлийн хуудас",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Хичээлийн дэлгэрэнгүй хуудас",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Хичээлийн агуулга ачаална",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "1-р хичээлийн бичлэг",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Бичлэг ба хадмал",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Бичлэг, хадмалын хэсэг нээгдэнэ",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "1-р хичээлийн үгсийн сан",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Үгсийн жагсаалт",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Үгс харагдана",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "1-р хичээлийн дасгал",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Дасгалын урсгал",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Дасгал нээгдэж, хариу илгээгдэнэ",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Нэвтрэх хуудас",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Маягт харагдана; redirect URL тохируулсны дараа нэвтрэлт ажиллана",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Бүртгүүлэх хуудас",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Маягт харагдана; бүртгэл үүснэ",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Хувийн хуудас",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Хэрэглэгчийн самбар",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Нэвтэрсэн үед нээгдэнэ",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Давтлага",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Сурсан үгийн давтлага",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Хуудас харагдана",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Санал хүсэлтийн хуудас",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Маягт нээгдэнэ",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Нийтийн хуудсууд давсан",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Үндсэн суралцагчийн хуудсууд ажлын орчинд нээгдэнэ",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Нүүр, курсууд, HSK5, 1-р хичээлийн урсгал — 500 алдаагүй",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Нэвтрэлт давсан",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Нэвтрэх, бүртгүүлэх, сешн хадгалагдах",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Нэвтрэлт ажиллана; нэвтэрсний дараа хувийн самбар нээгдэнэ",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Ахиц давсан",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Үг, дасгал, хичээлийн ахиц хадгалагдана",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Нэвтрээгүй үед төхөөрөмж дээр, нэвтэрсэн үед бүртгэлд синк хийгдэнэ",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Гар утас давсан",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Үндсэн хуудсууд 375px өргөнд",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Цэс эвдрээгүй, товчнууд уншигдана, хичээлийн алхмын мөр ажиллана",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Ноорог хичээл нуугдсан",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Нийтийн жагсаалтад ноорог орохгүй",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "HSK5 жагсаалтад ноорог байхгүй; шууд хаягаар орвол байхгүй гэж гарна",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Саад болох зүйл байхгүй",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "V1_LAUNCH_BLOCKERS.md дахь ноцтой саадууд",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Ноцтой зүйлс бүгд давсан; V1_STABILIZATION_REPORT.md-ийг үзнэ үү",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Админы нүүр",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Тоон үзүүлэлт, картууд ачаална",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Supabase холболтын шалгалт",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Админаар нэвтэрсэн үед амжилтгүй мөр байхгүй",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "5-р үе шатны бэлэн байдлын жагсаалт",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Шалгах жагсаалт харагдана",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Хичээл угсрах хэсэг",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Алхам алхмаар хичээл үүсгэх",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Хэсэг нээгдэнэ",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Контентын чанарын хүснэгт",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Чанарын тэмдэгтэй хичээлийн жагсаалт гарна",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Ноорог үүсгэх",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Үүсгэх маягт нээгдэнэ",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "5-р хичээлийг засах",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Ноорог/агуулга засах",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Засах хуудас нээгдэнэ (эсвэл хичээл олдсонгүй гэж гарна)",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Шалгах ажлын дараалал",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Ажлууд ачаална",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Хийсэн үйлдлийн түүх",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Бүртгэл ачаална (хөтчийн сешнээр)",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Сургалтын үзүүлэлт",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Тайлангийн самбар нээгдэнэ",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "AI prompt-ын загварууд",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Prompt-ын сан нээгдэнэ",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Гаргалтын шалгах жагсаалт",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Энэ хуудас нээгдэнэ",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Бүртгэл рүү орох боломжтой",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Ажлын орчинд бүртгүүлэх маягт харагдана",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Нэвтрэх рүү орох боломжтой",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Ажлын орчинд нэвтрэх маягт харагдана",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Админ нэвтэрч чадна",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Админы нэвтрэх мэдээлэл ажиллана",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Ажлын хаяг дээр админ нэвтэрнэ",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Гарах ажиллана",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Сешн цэвэрлэгдэнэ",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Гарсны дараа нэвтрээгүй төлөвт шилжинэ",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Хувийн хуудсанд хэрэглэгч харагдана",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Нэвтэрсэн хэрэглэгчийн хуудас",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Нэвтэрсэн үед и-мэйл/хэрэглэгч харагдана",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Нэвтрээгүй үед админ хаагдана",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "AdminGuard хамгаалалт",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "/admin нь админ биш хэрэглэгчийг оруулахгүй",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Нэвтэрсэн үед админ ажиллана",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Админ хэрэглэгчид админы хуудсууд нээгдэнэ",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Supabase redirect URL тохируулсан",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Нэвтрэлтийн буцах хаяг",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Ажлын хаяг Supabase Auth Redirect URL-д байна",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Аюулгүй байдлын үзлэг дууссан",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Аюулгүй байдал / RLS-ийн эцсийн үзлэг",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "/admin/security-audit дээр автомат алдаа байхгүй; гар шалгалтуудыг хянасан",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Нийтийн контент уншигдана",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Суралцагчийн контент",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "/deployment-check эсвэл /courses/hsk5 өгөгдөл харуулна",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Хичээлийн хүснэгт уншигдана",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Контент татах",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Системийн эсвэл байршуулалтын шалгалт давна",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Админы эрх",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Системийн шалгалтын админы бүртгэл давна",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Нэвтэрсний дараа ахицын хүснэгтүүд",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Хэрэглэгчийн ахицын RLS",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Нэвтэрсэн үед хувийн хуудас, ахиц ажиллана",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Админы ажлын хүснэгт нээгдэнэ",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Ажлын төвийн өгөгдөл",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "/admin/tasks ажлуудыг ачаална",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Админы үйлдлийн хүснэгт нээгдэнэ",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Үйлдлийн бүртгэлийн өгөгдөл",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Нэвтэрсэн үед /admin/activity мөрүүд харуулна",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Файл хадгалах нийтийн хаяг ажиллана",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "lesson-media сан",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Системийн шалгалтын хадгалалт давна",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Медиа нүүр зураг нээгдэнэ",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Хичээлийн медиа харагдац",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Байршуулсан бол хичээл дээр нүүр зураг харагдана",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Шинэ контент",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Ноорог Supabase-д хадгалагдана",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Хичээлийн талбарууд",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Ерөнхий мэдээлэл амжилттай хадгалагдана",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Оруулсан өгөгдөл шалгагдаж хадгалагдана",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Хадмал гараар нэмэх",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Хадмалын мөр хадгалагдана",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Үг гараар нэмэх",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Үгийн мөр хадгалагдана",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Дасгал гараар нэмэх",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Асуултын мөр хадгалагдана",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Файл байршуулах",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Файл lesson-media руу байршина",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "JSON файл татагдана",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Нийтлэх / нийтлэхээ болих",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Харагдац",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Төлөв өөрчлөгдөхөд /courses/hsk5 дээр тусна",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Үйлдлийн бүртгэл үүснэ",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Үйлдэл /admin/activity дээр гарч ирнэ",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Ажил хаах / шийдэх",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Ажлын төлвийн өөрчлөлт хадгалагдана",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Буцаах урьдчилсан харагдац байна",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Аюулгүй буцаалт",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Үйлдлийн дэлгэрэнгүйд буцаах урьдчилсан харагдац гарна",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Нийтийн хуудсуудын жагсаалт",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "v1.0 суралцагчийн гаргалтын жагсаалт",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Удирдлагын хуудсуудын жагсаалт",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Нэвтрэлтийн жагсаалт",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Supabase-ийн жагсаалт",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Удирдлагын хэсгийн урсгалын жагсаалт",
+"ctx": "lib/admin/production-qa-data.ts"
+},
+{
+"mn": "Шалгах жагсаалтын бүх зүйл амжилттай.",
+"ctx": "lib/admin/production-qa-report.ts"
+},
+{
+"mn": "# Бөөндөө Сурцгаая — Ажлын орчны чанарын шалгалтын тайлан",
+"ctx": "lib/admin/production-qa-report.ts"
+},
+{
+"mn": "| Төлөв | Тоо |",
+"ctx": "lib/admin/production-qa-report.ts"
+},
+{
+"mn": "## Анхааруулга / шалгаагүй",
+"ctx": "lib/admin/production-qa-report.ts"
+},
+{
+"mn": "| Зүйл | Хуудас | Төлөв | Тэмдэглэл |",
+"ctx": "lib/admin/production-qa-report.ts"
+},
+{
+"mn": "Ерөнхий мэдээлэл дутуу (гарчиг, гадаад хэл дээрх гарчиг заавал)",
+"ctx": "lib/admin/release-readiness.ts"
+},
+{
+"mn": "Ерөнхий мэдээлэл дутуу (гарчиг, хятад гарчиг, тайлбар)",
+"ctx": "lib/admin/release-readiness.ts"
+},
+{
+"mn": "Бэлтгэл хичээл: хадмал алга (нийтлэхэд заавал биш)",
+"ctx": "lib/admin/release-readiness.ts"
+},
+{
+"mn": "Медиа бэлэн гэж тэмдэглэгдээгүй (бичлэгийн URL эсвэл media_status)",
+"ctx": "lib/admin/release-readiness.ts"
+},
+{
+"mn": "Бэлтгэл хичээл: бичлэг/аудио/нүүр зураг алга (нийтлэхэд заавал биш)",
+"ctx": "lib/admin/release-readiness.ts"
+},
+{
+"mn": "Нийтлэхийн тулд админы баталгаа хүлээж байна",
+"ctx": "lib/admin/release-readiness.ts"
+},
+{
+"mn": "Supabase холболт байхгүй байна.",
+"ctx": "lib/admin/security-audit-checks.ts"
+},
+{
+"mn": "Уншиж чадлаа.",
+"ctx": "lib/admin/security-audit-checks.ts"
+},
+{
+"mn": "Хүсэлт амжилтгүй боллоо.",
+"ctx": "lib/admin/security-audit-checks.ts"
+},
+{
+"mn": "RLS хаасан — эрхийн дүрмийг шалгана уу.",
+"ctx": "lib/admin/security-audit-checks.ts"
+},
+{
+"mn": "Хүснэгт алга — migration ажиллуулна уу.",
+"ctx": "lib/admin/security-audit-checks.ts"
+},
+{
+"mn": "Уншигдаж байна, гэхдээ хоосон.",
+"ctx": "lib/admin/security-audit-checks.ts"
+},
+{
+"mn": "RLS-ээр уншиж чадлаа.",
+"ctx": "lib/admin/security-audit-checks.ts"
+},
+{
+"mn": "NEXT_PUBLIC_SUPABASE_URL тохируулагдсан",
+"ctx": "lib/admin/security-audit-checks.ts"
+},
+{
+"mn": "Дутуу — зөвхөн дотоод нөөц өгөгдөл ажиллана.",
+"ctx": "lib/admin/security-audit-checks.ts"
+},
+{
+"mn": "NEXT_PUBLIC_SUPABASE_ANON_KEY тохируулагдсан",
+"ctx": "lib/admin/security-audit-checks.ts"
+},
+{
+"mn": "Орчны хувьсагчийн утга харагдахгүй",
+"ctx": "lib/admin/security-audit-checks.ts"
+},
+{
+"mn": "Энэ хуудас нууц утгыг хэзээ ч харуулахгүй.",
+"ctx": "lib/admin/security-audit-checks.ts"
+},
+{
+"mn": ".env.local файлыг git-д оруулахгүй сануулга",
+"ctx": "lib/admin/security-audit-checks.ts"
+},
+{
+"mn": ".env.local файлыг хэзээ ч git-д бүү оруул — зөвхөн .env.example загварыг ашигла.",
+"ctx": "lib/admin/security-audit-checks.ts"
+},
+{
+"mn": "Клиент талд service_role байж болохгүй",
+"ctx": "lib/admin/security-audit-checks.ts"
+},
+{
+"mn": "Апп зөвхөн anon түлхүүр ашиглана — Vercel-ийн клиент орчинд service_role хэзээ ч бүү нэм.",
+"ctx": "lib/admin/security-audit-checks.ts"
+},
+{
+"mn": "Тохируулагдсан (утга нь нуугдсан).",
+"ctx": "lib/admin/security-audit-checks.ts"
+},
+{
+"mn": "Одоогийн хэрэглэгч нэвтэрсэн",
+"ctx": "lib/admin/security-audit-checks.ts"
+},
+{
+"mn": "Одоогийн хэрэглэгч админ мөн",
+"ctx": "lib/admin/security-audit-checks.ts"
+},
+{
+"mn": "Админ профайл уншигдаж байна",
+"ctx": "lib/admin/security-audit-checks.ts"
+},
+{
+"mn": "Админ хуудсуудыг AdminGuard хамгаалж байна",
+"ctx": "lib/admin/security-audit-checks.ts"
+},
+{
+"mn": "Бүх /admin хуудас admin-layout-shell дотор AdminGuard ашиглана.",
+"ctx": "lib/admin/security-audit-checks.ts"
+},
+{
+"mn": "Админ бус хэрэглэгчийг оруулахгүй",
+"ctx": "lib/admin/security-audit-checks.ts"
+},
+{
+"mn": "Гараад /admin руу орно уу — нэвтрэх хуудас эсвэл хориглосон мэдэгдэл гарах ёстой.",
+"ctx": "lib/admin/security-audit-checks.ts"
+},
+{
+"mn": "Нэвтэрсэн.",
+"ctx": "lib/admin/security-audit-checks.ts"
+},
+{
+"mn": "Эхлээд нэвтэрнэ үү.",
+"ctx": "lib/admin/security-audit-checks.ts"
+},
+{
+"mn": "/admin хуудсанд AdminGuard идэвхтэй.",
+"ctx": "lib/admin/security-audit-checks.ts"
+},
+{
+"mn": "Та нэвтрээгүй байна — /admin нэвтрэх хуудсыг харуулах ёстой.",
+"ctx": "lib/admin/security-audit-checks.ts"
+},
+{
+"mn": "Админ эрх баталгаажсан.",
+"ctx": "lib/admin/security-audit-checks.ts"
+},
+{
+"mn": "admin_profiles хүснэгтэд мөр алга — админ хуудсууд хориглох ёстой.",
+"ctx": "lib/admin/security-audit-checks.ts"
+},
+{
+"mn": "Профайлын мөр олдсонгүй.",
+"ctx": "lib/admin/security-audit-checks.ts"
+},
+{
+"mn": "AdminGuard бүх /admin хуудсыг хамарна.",
+"ctx": "lib/admin/security-audit-checks.ts"
+},
+{
+"mn": "Гарах эсвэл нууц цонхоор админ бус хэрэглэгчээр орж үзнэ үү — /admin нэвтрүүлэхгүй байх ёстой.",
+"ctx": "lib/admin/security-audit-checks.ts"
+},
+{
+"mn": "Одоогийн хэрэглэгч админ биш — админы агуулга харагдах ёсгүй.",
+"ctx": "lib/admin/security-audit-checks.ts"
+},
+{
+"mn": "Нийтлэгдсэн хичээлүүд нээлттэй",
+"ctx": "lib/admin/security-audit-checks.ts"
+},
+{
+"mn": "Supabase тохируулаагүй — дотоод нөөц өгөгдөл ашиглаж байна.",
+"ctx": "lib/admin/security-audit-checks.ts"
+},
+{
+"mn": "Ноорог хичээл курсын жагсаалтад харагдахгүй",
+"ctx": "lib/admin/security-audit-checks.ts"
+},
+{
+"mn": "Байршуулсны дараа ажлын орчны /courses/hsk5 хуудсыг шалгана уу.",
+"ctx": "lib/admin/security-audit-checks.ts"
+},
+{
+"mn": "Ноорог хичээлийн шууд хуудас нээгдэхгүй",
+"ctx": "lib/admin/security-audit-checks.ts"
+},
+{
+"mn": "/lessons/5 хуудсыг урьдчилж харахгүйгээр нээнэ үү — нээгдэхгүй байх ёстой.",
+"ctx": "lib/admin/security-audit-checks.ts"
+},
+{
+"mn": "Админаар урьдчилж харахад админ эрх шаардана",
+"ctx": "lib/admin/security-audit-checks.ts"
+},
+{
+"mn": "?preview=admin-ыг админ бус хэрэглэгчээр шалгана уу — хориглох ёстой.",
+"ctx": "lib/admin/security-audit-checks.ts"
+},
+{
+"mn": "Нийтлэгдсэн хичээл алга — шалгахын тулд нэгийг нийтэлнэ үү.",
+"ctx": "lib/admin/security-audit-checks.ts"
+},
+{
+"mn": "Ноорог хичээл нийтийн жагсаалтад харагдаж байна — RLS болон шүүлтийг шалгана уу.",
+"ctx": "lib/admin/security-audit-checks.ts"
+},
+{
+"mn": "Ноорог байгаа ч нийтийн жагсаалтад ороогүй.",
+"ctx": "lib/admin/security-audit-checks.ts"
+},
+{
+"mn": "Шалгах ноорог хичээл алга — шалгахын тулд ноорог үүсгэнэ үү.",
+"ctx": "lib/admin/security-audit-checks.ts"
+},
+{
+"mn": "RLS энэ сессэд ноорог хичээл уншихыг хаасан.",
+"ctx": "lib/admin/security-audit-checks.ts"
+},
+{
+"mn": "5-р ноорог хичээл админ эрхгүйгээр уншигдаж байна — RLS хэт нээлттэй байж магадгүй.",
+"ctx": "lib/admin/security-audit-checks.ts"
+},
+{
+"mn": "Та админ тул ноорог уншиж чадна — ажлын орчинд гарсан байдалтай /lessons/5-ыг шалгана уу.",
+"ctx": "lib/admin/security-audit-checks.ts"
+},
+{
+"mn": "5-р хичээл ноорог биш эсвэл олдсонгүй — ноорог хуудсыг гараар шалгана уу.",
+"ctx": "lib/admin/security-audit-checks.ts"
+},
+{
+"mn": "Ажлын орчинд админ бус хэрэглэгч /lessons/{draftId}?preview=admin руу орж чадах ёсгүй.",
+"ctx": "lib/admin/security-audit-checks.ts"
+},
+{
+"mn": "RLS хүснэгтийн шалгалт",
+"ctx": "lib/admin/security-audit-checks.ts"
+},
+{
+"mn": "Контент: lessons",
+"ctx": "lib/admin/security-audit-checks.ts"
+},
+{
+"mn": "Контент: subtitle_lines",
+"ctx": "lib/admin/security-audit-checks.ts"
+},
+{
+"mn": "Контент: vocabulary_words",
+"ctx": "lib/admin/security-audit-checks.ts"
+},
+{
+"mn": "Контент: quiz_questions",
+"ctx": "lib/admin/security-audit-checks.ts"
+},
+{
+"mn": "production_verification.sql-ийг ажиллуулж storage.objects-ийн дүрмийг шалгана уу.",
+"ctx": "lib/admin/security-audit-checks.ts"
+},
+{
+"mn": "Нийтэд унших боломжтой",
+"ctx": "lib/admin/security-audit-checks.ts"
+},
+{
+"mn": "Админы байршуулах дүрмийн сануулга",
+"ctx": "lib/admin/security-audit-checks.ts"
+},
+{
+"mn": "supabase/storage/001_lesson_media_bucket_policies.sql-ийг ажиллуулна уу",
+"ctx": "lib/admin/security-audit-checks.ts"
+},
+{
+"mn": "Нийтэд бичих эрх байхгүй",
+"ctx": "lib/admin/security-audit-checks.ts"
+},
+{
+"mn": "Файл хадгалалтын дүрэм нэргүй хэрэглэгчийн байршуулалтыг хориглож байгааг шалгана уу.",
+"ctx": "lib/admin/security-audit-checks.ts"
+},
+{
+"mn": "Сан холбогдож байна.",
+"ctx": "lib/admin/security-audit-checks.ts"
+},
+{
+"mn": "Сан олдсонгүй.",
+"ctx": "lib/admin/security-audit-checks.ts"
+},
+{
+"mn": "Нийтэд унших URL-ийн загвар",
+"ctx": "lib/admin/security-audit-checks.ts"
+},
+{
+"mn": "Нийтийн URL үүсгэгч ажиллаж байна.",
+"ctx": "lib/admin/security-audit-checks.ts"
+},
+{
+"mn": "Нийтийн URL үүсгэж чадсангүй.",
+"ctx": "lib/admin/security-audit-checks.ts"
+},
+{
+"mn": "Админ байршуулахад админ JWT болон storage RLS шаардана — SECURITY_RLS_AUDIT.md-ийг үзнэ үү.",
+"ctx": "lib/admin/security-audit-checks.ts"
+},
+{
+"mn": "Файл хадгалалтын дүрэм нэргүй INSERT-ийг хааж байгааг SQL шалгалтаар баталгаажуулна уу.",
+"ctx": "lib/admin/security-audit-checks.ts"
+},
+{
+"mn": "Site URL ажлын орчин руу тохируулагдсан",
+"ctx": "lib/admin/security-audit-checks.ts"
+},
+{
+"mn": "Redirect URL-ууд тохируулагдсан",
+"ctx": "lib/admin/security-audit-checks.ts"
+},
+{
+"mn": "Supabase Dashboard дээр ажлын орчны URL, /login, /profile болон localhost/** хаягуудыг нэмнэ үү.",
+"ctx": "lib/admin/security-audit-checks.ts"
+},
+{
+"mn": "Хөгжүүлэлтэд localhost үлдээсэн",
+"ctx": "lib/admin/security-audit-checks.ts"
+},
+{
+"mn": "Дотоод хөгжүүлэлтэд зориулж Redirect URLs дотор http://localhost:3000/** хаягийг үлдээнэ үү.",
+"ctx": "lib/admin/security-audit-checks.ts"
+},
+{
+"mn": "Ажлын орчинд имэйл баталгаажуулах эсэх шийдвэр",
+"ctx": "lib/admin/security-audit-checks.ts"
+},
+{
+"mn": "Ажлын орчинд асаалттай байхыг зөвлөнө — унтраалттай бол зөвхөн туршилтын орчинд гэж тэмдэглэнэ үү.",
+"ctx": "lib/admin/security-audit-checks.ts"
+},
+{
+"mn": "# Бөөндөө Сурцгаая — Аюулгүй байдал / RLS-ийн үзлэгийн тайлан",
+"ctx": "lib/admin/security-audit-report.ts"
+},
+{
+"mn": "## Товч дүн",
+"ctx": "lib/admin/security-audit-report.ts"
+},
+{
+"mn": "## Гаргалтыг зогсоох асуудлууд",
+"ctx": "lib/admin/security-audit-report.ts"
+},
+{
+"mn": "| Шалгалт | Үр дүн | Тайлбар |",
+"ctx": "lib/admin/security-audit-report.ts"
+},
+{
+"mn": "Хичээл бүтээгч нээх",
+"ctx": "lib/admin/task-generator.ts"
+},
+{
+"mn": "Шалгалт харах",
+"ctx": "lib/admin/task-generator.ts"
+},
+{
+"mn": "Шалгаад батлах",
+"ctx": "lib/admin/task-generator.ts"
+},
+{
+"mn": "Бичлэг нэмэх",
+"ctx": "lib/admin/task-generator.ts"
+},
+{
+"mn": "Нүүр зураг байршуулах",
+"ctx": "lib/admin/task-generator.ts"
+},
+{
+"mn": "Хичээл батлах",
+"ctx": "lib/admin/task-generator.ts"
+},
+{
+"mn": "Нийтлэх хэсэг нээх",
+"ctx": "lib/admin/task-generator.ts"
+},
+{
+"mn": "Нийтлэх хэсэг",
+"ctx": "lib/admin/task-generator.ts"
+},
+{
+"mn": "Төлөв засах",
+"ctx": "lib/admin/task-generator.ts"
+},
+{
+"mn": "Засаад гаргах",
+"ctx": "lib/admin/task-generator.ts"
+},
+{
+"mn": "Тайлан харах",
+"ctx": "lib/admin/task-generator.ts"
+},
+{
+"mn": "Суралцагчийн тайлан дутуу байж магадгүй",
+"ctx": "lib/admin/task-generator.ts"
+},
+{
+"mn": "Зарим суралцагчийн ахицыг харахад админы унших эрх (RLS дүрэм) шаардлагатай.",
+"ctx": "lib/admin/task-generator.ts"
+},
+{
+"mn": "Supabase тохируулаагүй байна",
+"ctx": "lib/admin/task-generator.ts"
+},
+{
+"mn": "Ажлын төв түр өгөгдлөөр ажиллаж байна — бүрэн тайлан гаргахын тулд Supabase-ээ тохируулна уу.",
+"ctx": "lib/admin/task-generator.ts"
+},
+{
+"mn": "Өгөгдлийн сангийн шинэчлэл хүлээгдэж байна",
+"ctx": "lib/admin/task-generator.ts"
+},
+{
+"mn": "Хувилбар гаргах заавар",
+"ctx": "lib/admin/task-generator.ts"
+},
+{
+"mn": "Сургуулийн хүсэлт шинэчлэл хүлээж байна",
+"ctx": "lib/admin/task-generator.ts"
+},
+{
+"mn": "Хүсэлт, байгууллагуудыг харахын тулд supabase/migrations/012_school_organizations_b2b_crm.sql файлыг ажиллуулна уу.",
+"ctx": "lib/admin/task-generator.ts"
+},
+{
+"mn": "Сургууль, байгууллагын хэсэгт хүсэлтийн төлөвийг шалгаж шинэчилнэ үү.",
+"ctx": "lib/admin/task-generator.ts"
+},
+{
+"mn": "Хүсэлтүүд харах",
+"ctx": "lib/admin/task-generator.ts"
+},
+{
+"mn": "Танилцуулгын дараа эргэж холбогдоод хүсэлтийн төлөвийг шинэчилнэ үү.",
+"ctx": "lib/admin/task-generator.ts"
+},
+{
+"mn": "Туршилтын байгууллага, гишүүдийн тохиргоог шалгана уу.",
+"ctx": "lib/admin/task-generator.ts"
+},
+{
+"mn": "courseId болон lessonId заавал шаардлагатай.",
+"ctx": "lib/admin/upsert-draft-lesson-from-package.ts"
+},
+{
+"mn": "Зөвхөн JPEG, PNG, WebP зураг оруулна уу.",
+"ctx": "lib/admin/video-series-thumbnail.ts"
+},
+{
+"mn": "Зураг 5MB-аас хэтрэхгүй байх ёстой.",
+"ctx": "lib/admin/video-series-thumbnail.ts"
+},
+{
+"mn": "Зургийн төрөл тодорхойгүй.",
+"ctx": "lib/admin/video-series-thumbnail.ts"
+},
+{
+"mn": "JSON бүтэц буруу — объект байх ёстой.",
+"ctx": "lib/import/bichleg-video-validate.ts"
+},
+{
+"mn": "id байхгүй.",
+"ctx": "lib/import/bichleg-video-validate.ts"
+},
+{
+"mn": "title_mn байхгүй.",
+"ctx": "lib/import/bichleg-video-validate.ts"
+},
+{
+"mn": "video_id байхгүй.",
+"ctx": "lib/import/bichleg-video-validate.ts"
+},
+{
+"mn": "youtube_id байхгүй.",
+"ctx": "lib/import/bichleg-video-validate.ts"
+},
+{
+"mn": "series_id байвал episode_no заавал.",
+"ctx": "lib/import/bichleg-video-validate.ts"
+},
+{
+"mn": "episode_no байвал series_id заавал.",
+"ctx": "lib/import/bichleg-video-validate.ts"
+},
+{
+"mn": "episode_no эерэг бүхэл тоо байх ёстой.",
+"ctx": "lib/import/bichleg-video-validate.ts"
+},
+{
+"mn": "subtitles[] хоосон эсвэл байхгүй.",
+"ctx": "lib/import/bichleg-video-validate.ts"
+},
+{
+"mn": "JSON уншихад алдаа гарлаа — формат буруу байна.",
+"ctx": "lib/import/bichleg-video-validate.ts"
+},
+{
+"mn": "бичлэг",
+"ctx": "lib/import/bichleg-video-validate.ts"
+},
+{
+"mn": "Сонсоод зөв хариуг сонго.",
+"ctx": "lib/import/chinese-hsk-listening-quiz.ts"
+},
+{
+"mn": "HSK түвшин ба lessonProfile зөрж байна.",
+"ctx": "lib/import/chinese-hsk-normalize.ts"
+},
+{
+"mn": "ZIP файл уншихад алдаа гарлаа.",
+"ctx": "lib/import/chinese-hsk-package.ts"
+},
+{
+"mn": "Хөг / Дууны өнгө",
+"ctx": "lib/import/chinese-hsk-study-bundle.ts"
+},
+{
+"mn": "Ярианы дасгал",
+"ctx": "lib/import/chinese-hsk-study-bundle.ts"
+},
+{
+"mn": "(дутуу эсвэл хоосон)",
+"ctx": "lib/import/format-validation-error.ts"
+},
+{
+"mn": "буруу төрөл эсвэл дутуу",
+"ctx": "lib/import/format-validation-error.ts"
+},
+{
+"mn": "ZIP багцаас файл эсвэл талбар олдсонгүй",
+"ctx": "lib/import/format-validation-error.ts"
+},
+{
+"mn": "ZIP багц дотор байх ёстой",
+"ctx": "lib/import/format-validation-error.ts"
+},
+{
+"mn": "дутуу",
+"ctx": "lib/import/format-validation-error.ts"
+},
+{
+"mn": "Урьдчилж харах хэсгийг үүсгэж чадсангүй — manifest.json, lesson.json болон importContext-ийг шалгана уу.",
+"ctx": "lib/import/format-validation-error.ts"
+},
+{
+"mn": "Оруулах өгөгдөл дутуу — бөөнөөр оруулах өгөгдөл үүсээгүй (эхлээд дээрх алдаануудыг засна уу).",
+"ctx": "lib/import/format-validation-error.ts"
+},
+{
+"mn": "Шалгалт амжилтгүй — доорх «Шалгалтын түүхий мэдээлэл» хэсгийг харна уу.",
+"ctx": "lib/import/format-validation-error.ts"
+},
+{
+"mn": "Audio байхгүй — төхөөрөмжийн TTS fallback ашиглана.",
+"ctx": "lib/import/korean-lesson-normalize.ts"
+},
+{
+"mn": "Images байхгүй — заавал биш.",
+"ctx": "lib/import/korean-lesson-normalize.ts"
+},
+{
+"mn": "subtitles.json байхгүй — Hangul/prelesson хичээлд OK.",
+"ctx": "lib/import/korean-lesson-normalize.ts"
+},
+{
+"mn": "-- Run in Supabase SQL editor before Korean import insert into public.courses (id, title, description, level, status, order_index) values ( 'korean-1', 'Солонгост ажиллахад хэрэгтэй Солонгос хэл', 'Korean Book 1 course shell for admin import.', 'Beginner', 'available', 10 ) on conflict (id) do nothing;",
+"ctx": "lib/import/korean-lesson-normalize.ts"
+},
+{
+"mn": "Энэ ZIP нь Солонгос хичээлийн package байна. Korean importer ашиглана уу.",
+"ctx": "lib/import/wrong-importer-validation.ts"
+},
+{
+"mn": "Энэ ZIP нь Хятад/HSK хичээлийн package байна. Chinese importer ашиглана уу.",
+"ctx": "lib/import/wrong-importer-validation.ts"
+},
+{
+"mn": "Багш хоорондын зөрүү нь заах чадварыг шууд хэмжихгүй. Бүлгийн хүний тоо, хичээлийн хуваарь, сурагчдын эхлэх түвшин, тэр ч байтугай бүлэг хэдэн сартай байгаа нь энэ тоонд адилхан нөлөөлнө. Эдгээр тоог багш үнэлэх шийдвэрийн үндэслэл болгож болохгүй — ярилцлага эхлүүлэх асуулт болгож ашиглана уу.",
+"ctx": "lib/reports/center-report.ts"
+},
+{
+"mn": "Бүх байгууллага",
+"ctx": "lib/reports/center-report.ts"
+},
+{
+"mn": "Төвийн дундаж үнэлгээ «—» — үнэлэхэд хүрэлцэх дүнтэй сурагч алга.",
+"ctx": "lib/reports/center-report.ts"
+},
+{
+"mn": "Даалгаврын гүйцэтгэл «—» — оноосон даалгавар, эсвэл апп-д холбогдсон сурагч алга.",
+"ctx": "lib/reports/center-report.ts"
+},
+{
+"mn": "Суралцсан хугацаа огт уншигдаагүй тул бүлгүүдийн «дундаж цаг» багана «—» байна.",
+"ctx": "lib/reports/center-report.ts"
+},
+{
+"mn": "Хаягт заасан байгууллага олдсонгүй — тайлан бүх байгууллагыг хамруулсан.",
+"ctx": "lib/reports/center-report.ts"
+},
+{
+"mn": "Тархалт нь бүлэг бүрийн сурагчдын нийлбэр. Хоёр бүлэгт зэрэг суудаг сурагч хоёр удаа тоологдоно.",
+"ctx": "lib/reports/center-report.ts"
+},
+{
+"mn": "Энэ шүүлтэд нэг ч бүлэг алга тул харьцуулах зүйл алга.",
+"ctx": "lib/reports/center-report.ts"
+},
+{
+"mn": "Нэг ч сурагч үнэлэгдэх хэмжээний дүн бүртгүүлээгүй тул төвийн түвшний талаар дүгнэлт гаргах боломжгүй.",
+"ctx": "lib/reports/center-report.ts"
+},
+{
+"mn": "Эхлээд бүлгүүдэд даалгавар оноож, дүн бүртгэгдэж эхэлсний дараа энэ тайлан утга учиртай болно.",
+"ctx": "lib/reports/center-report.ts"
+},
+{
+"mn": "Ийм хэмжээний зөрүү нь ихэвчлэн бүлгүүд өөр үе шатанд явж байгаа, эсвэл сурагчдын эхлэх түвшин өөр байснаас үүсдэг тул шалтгааныг нь бүлэг тус бүрээр тодруулах хэрэгтэй.",
+"ctx": "lib/reports/center-report.ts"
+},
+{
+"mn": "Нэг ч бүлэг бүхэлдээ үнэлэгдээгүй тул бүлэг хооронд харьцуулалт хийх боломжгүй.",
+"ctx": "lib/reports/center-report.ts"
+},
+{
+"mn": "Үнэлэгдээгүй сурагч үнэлэгдсэнээс олон байгаа тул дээрх дундаж тоонууд төвийн бодит дүр зургийг бүрэн илэрхийлэхгүй.",
+"ctx": "lib/reports/center-report.ts"
+},
+{
+"mn": "Бөөндөө Сурцгаая — сургалтын бүртгэлээс автоматаар гаргав.",
+"ctx": "lib/reports/center-report.ts"
+},
+{
+"mn": "## Төвийн хураангуй",
+"ctx": "lib/reports/center-report.ts"
+},
+{
+"mn": "| Үзүүлэлт | Утга |",
+"ctx": "lib/reports/center-report.ts"
+},
+{
+"mn": "### Үнэлгээний тархалт",
+"ctx": "lib/reports/center-report.ts"
+},
+{
+"mn": "| Үнэлгээ | Сурагч |",
+"ctx": "lib/reports/center-report.ts"
+},
+{
+"mn": "## Эдгээр тоо юу хэлж байна вэ",
+"ctx": "lib/reports/center-report.ts"
+},
+{
+"mn": "## Бүлгүүдийн харьцуулалт",
+"ctx": "lib/reports/center-report.ts"
+},
+{
+"mn": "| Бүлэг | Түвшин | Хэлбэр | Багш | Сурагч | Даалгавар | Гүйцэтгэл | Дундаж үнэлгээ | Үнэлэгдсэн |",
+"ctx": "lib/reports/center-report.ts"
+},
+{
+"mn": "## Багш нарын харьцуулалт",
+"ctx": "lib/reports/center-report.ts"
+},
+{
+"mn": "| Багш | Бүлэг | Сурагч | Үнэлэгдсэн | Дундаж үнэлгээ | Гүйцэтгэл |",
+"ctx": "lib/reports/center-report.ts"
+},
+{
+"mn": "## Хэмжигдээгүй зүйлс",
+"ctx": "lib/reports/center-report.ts"
+},
+{
+"mn": "## Тоонуудын эх сурвалж",
+"ctx": "lib/reports/center-report.ts"
+},
+{
+"mn": "- Бүх тоо сургалтын өгөгдлийн сангаас уншигдсан. Хэмжигдээгүй зүйлийг «—» гэж тэмдэглэв, 0 гэж бичээгүй.",
+"ctx": "lib/reports/center-report.ts"
+},
+{
+"mn": "- «Сурагч» баганын хаалтан доторх тоо нь апп-д бүртгэлээ холбосон сурагчдын тоо. Зөвхөн тэдний дүн хэмжигдэнэ.",
+"ctx": "lib/reports/center-report.ts"
+},
+{
+"mn": "- Үнэлгээ нь бүлгийн хэмжилт дээр тооцогдоно: сүүлийн дасгал, даалгаврын гүйцэтгэл, сурсан үг.",
+"ctx": "lib/reports/center-report.ts"
+},
+{
+"mn": "Supabase тохиргоо алга — бичиг олгох өгөгдөл унших боломжгүй.",
+"ctx": "lib/reports/certificate-data.ts"
+},
+{
+"mn": "Supabase холболт үүсгэж чадсангүй.",
+"ctx": "lib/reports/certificate-data.ts"
+},
+{
+"mn": "Хичээлийн ахиц уншигдаагүй тул нэг ч бичиг олгох боломжгүй — шалгах өгөгдөл байхгүй.",
+"ctx": "lib/reports/certificate-data.ts"
+},
+{
+"mn": "Сурагчийн нэр бүртгэлд байх.",
+"ctx": "lib/reports/certificate.ts"
+},
+{
+"mn": "Курст нийтлэгдсэн хичээл бүртгэгдсэн байх.",
+"ctx": "lib/reports/certificate.ts"
+},
+{
+"mn": "Энэ бол «Бөөндөө Сурцгаая» аппын сургалтын бүртгэлээс гаргасан курс дүүргэлтийн бичиг. Энэ нь улсын болон олон улсын шалгалтын гэрчилгээ биш, HSK-ийн албан ёсны түвшин баталгаажуулсан бичиг биш, ямар нэг магадлан итгэмжлэлийн үнэлгээ илэрхийлэхгүй.",
+"ctx": "lib/reports/certificate.ts"
+},
+{
+"mn": "Бүртгэлд сурагчийн нэр алга — нэргүй бичиг олгох боломжгүй.",
+"ctx": "lib/reports/certificate.ts"
+},
+{
+"mn": "Курсын хичээлийн жагсаалт уншигдсангүй.",
+"ctx": "lib/reports/certificate.ts"
+},
+{
+"mn": "Энэ курст нийтлэгдсэн хичээл алга — дүүргэх зүйл алга.",
+"ctx": "lib/reports/certificate.ts"
+},
+{
+"mn": "Сурагчийн хичээлийн ахиц уншигдсангүй.",
+"ctx": "lib/reports/certificate.ts"
+},
+{
+"mn": "Хичээлийн тоо тодорхойгүй тул хувь тооцох боломжгүй.",
+"ctx": "lib/reports/certificate.ts"
+},
+{
+"mn": "Дасгалын оноо уншигдсангүй.",
+"ctx": "lib/reports/certificate.ts"
+},
+{
+"mn": "Дасгалын дундаж тооцогдохгүй байна.",
+"ctx": "lib/reports/certificate.ts"
+},
+{
+"mn": "Supabase тохиргоо алга — толгой хэсгийн зарим талбар «—» байна.",
+"ctx": "lib/reports/class-report-data.ts"
+},
+{
+"mn": "Хичээллэх хэлбэр, хуваарь, курс хадгалагдаагүй байна — 054_classroom_delivery_mode.sql миграцыг ажиллуулна уу. Эдгээр талбар «—» харагдана.",
+"ctx": "lib/reports/class-report-data.ts"
+},
+{
+"mn": "Багшийн нэр уншигдсангүй — тайланд «—» гэж үлдэв.",
+"ctx": "lib/reports/class-report-data.ts"
+},
+{
+"mn": "Багшийн профайлд нэр бичигдээгүй байна.",
+"ctx": "lib/reports/class-report-data.ts"
+},
+{
+"mn": "Энэ ангид багш оноогоогүй байна.",
+"ctx": "lib/reports/class-report-data.ts"
+},
+{
+"mn": "Гүйцэтгэлийн хувь «—» — энэ ангид даалгавар оноогоогүй тул хувааж тооцох зүйл алга.",
+"ctx": "lib/reports/class-report.ts"
+},
+{
+"mn": "Гүйцэтгэлийн хувь «—» — жагсаалтын сурагчдын хэн нь ч апп-д холбогдоогүй тул дүн бүртгэгдэхгүй.",
+"ctx": "lib/reports/class-report.ts"
+},
+{
+"mn": "Дасгалын дундаж «—» — дуусгасан даалгаврын дасгалын оноо бүртгэгдээгүй байна.",
+"ctx": "lib/reports/class-report.ts"
+},
+{
+"mn": "Дундаж үнэлгээ «—» — үнэлэхэд хүрэлцэх өгөгдөлтэй сурагч алга.",
+"ctx": "lib/reports/class-report.ts"
+},
+{
+"mn": "Зарим сурагчийн сурсан үгийн тоо «—» — багшийн эрхээр тэр мөрийг унших боломжгүй байна.",
+"ctx": "lib/reports/class-report.ts"
+},
+{
+"mn": "Энэ ангид бүртгэлтэй сурагч алга тул дүгнэх зүйл алга. Сурагч нэмсний дараа тайлан утга учиртай болно.",
+"ctx": "lib/reports/class-report.ts"
+},
+{
+"mn": "Тиймээс энэ тайланд ямар ч хэмжилт байхгүй — доорх хүснэгтийн бүх багана «—» байгаа нь сурагчид муу сурч байна гэсэн үг биш, огт хэмжигдээгүй гэсэн үг.",
+"ctx": "lib/reports/class-report.ts"
+},
+{
+"mn": "Гүйцэтгэл, дасгалын дундаж, үнэлгээ гэсэн үзүүлэлтүүд даалгаврын дүн дээр тооцогддог тул энэ тайлан сурагчдын ахицын талаар дүгнэлт гаргахгүй.",
+"ctx": "lib/reports/class-report.ts"
+},
+{
+"mn": "оноосон ажлын дийлэнх нь хийгдсэн байна",
+"ctx": "lib/reports/class-report.ts"
+},
+{
+"mn": "оноосон ажлын талаас илүү нь хийгдсэн ч дутуу үлдсэн хэсэг бий",
+"ctx": "lib/reports/class-report.ts"
+},
+{
+"mn": "оноосон ажлын талаас олонх нь хийгдээгүй үлдсэн байна",
+"ctx": "lib/reports/class-report.ts"
+},
+{
+"mn": "Үнэлэгдсэн сурагчийн тоо цөөн тул дээрх дундаж тоонууд нэг хоёр сурагчийн дүнгээс хэт хамаарна — ангийн ерөнхий чанарын нотолгоо болгож болохгүй.",
+"ctx": "lib/reports/class-report.ts"
+},
+{
+"mn": "## Ангийн хураангуй",
+"ctx": "lib/reports/class-report.ts"
+},
+{
+"mn": "## Сурагч бүрээр",
+"ctx": "lib/reports/class-report.ts"
+},
+{
+"mn": "| Сурагч | Үнэлгээ | Оноо | Гүйцэтгэл | Дасгалын дээд оноо | Сурсан үг | Сүүлийн бүртгэл |",
+"ctx": "lib/reports/class-report.ts"
+},
+{
+"mn": "- «Дасгалын дээд оноо» гэдэг нь тухайн сурагчийн даалгаврын дүнгээс хамгийн өндөр нь.",
+"ctx": "lib/reports/class-report.ts"
+},
+{
+"mn": "- «Сүүлийн бүртгэл» нь даалгаврын дүн бүртгэгдсэн хамгийн сүүлийн огноо — апп ашигласан бүх үйлдлийг хамрахгүй.",
+"ctx": "lib/reports/class-report.ts"
+},
+{
+"mn": "- Үнэлгээ нь ангийн хэмжилт дээр тооцогдоно: сүүлийн дасгал, даалгаврын гүйцэтгэл, сурсан үг. Хэмжилт дутуу сурагч «Үнэлэхэд эрт» гэж үлдэнэ.",
+"ctx": "lib/reports/class-report.ts"
+},
+{
+"mn": "Admin эрх шаардлагатай activity log уншихад.",
+"ctx": "lib/supabase/admin-activity-read.ts"
+},
+{
+"mn": "Admin эрх шаардлагатай activity detail уншихад.",
+"ctx": "lib/supabase/admin-activity-read.ts"
+},
+{
+"mn": "Хадмал дутуу",
+"ctx": "lib/supabase/admin-analytics.ts"
+},
+{
+"mn": "Ийм ID-тай lesson аль хэдийн байна.",
+"ctx": "lib/supabase/admin-content.ts"
+},
+{
+"mn": "Order index тооцоолоход алдаа гарлаа.",
+"ctx": "lib/supabase/admin-content.ts"
+},
+{
+"mn": "Хичээл үүсгэхэд алдаа гарлаа.",
+"ctx": "lib/supabase/admin-content.ts"
+},
+{
+"mn": "Title заавал.",
+"ctx": "lib/supabase/admin-content.ts"
+},
+{
+"mn": "Chinese title заавал.",
+"ctx": "lib/supabase/admin-content.ts"
+},
+{
+"mn": "Status: draft, available, archived л сонгоно уу.",
+"ctx": "lib/supabase/admin-content.ts"
+},
+{
+"mn": "Order index 1-ээс эхлэх тоо байх ёстой.",
+"ctx": "lib/supabase/admin-content.ts"
+},
+{
+"mn": "Vocabulary count 0 буюу түүнээс их байх ёстой.",
+"ctx": "lib/supabase/admin-content.ts"
+},
+{
+"mn": "Quiz count 0 буюу түүнээс их байх ёстой.",
+"ctx": "lib/supabase/admin-content.ts"
+},
+{
+"mn": "Metadata уншихад алдаа гарлаа.",
+"ctx": "lib/supabase/admin-content.ts"
+},
+{
+"mn": "Metadata хадгалахад алдаа гарлаа.",
+"ctx": "lib/supabase/admin-content.ts"
+},
+{
+"mn": "Media metadata хадгалахад алдаа гарлаа.",
+"ctx": "lib/supabase/admin-content.ts"
+},
+{
+"mn": "Буруу статус: draft, available, archived л зөвшөөрнө.",
+"ctx": "lib/supabase/admin-content.ts"
+},
+{
+"mn": "Status шинэчлэхэд алдаа гарлаа.",
+"ctx": "lib/supabase/admin-content.ts"
+},
+{
+"mn": "Хичээл устгахад алдаа гарлаа.",
+"ctx": "lib/supabase/admin-content.ts"
+},
+{
+"mn": "Бүрэн байдлыг шалгахад алдаа гарлаа.",
+"ctx": "lib/supabase/admin-content.ts"
+},
+{
+"mn": "Тоо уншихад алдаа гарлаа.",
+"ctx": "lib/supabase/admin-content.ts"
+},
+{
+"mn": "Тоо шинэчлэхэд алдаа гарлаа.",
+"ctx": "lib/supabase/admin-content.ts"
+},
+{
+"mn": "Subtitle уншихад алдаа гарлаа.",
+"ctx": "lib/supabase/admin-content.ts"
+},
+{
+"mn": "Subtitle нэмэхэд алдаа гарлаа.",
+"ctx": "lib/supabase/admin-content.ts"
+},
+{
+"mn": "Subtitle устгахад алдаа гарлаа.",
+"ctx": "lib/supabase/admin-content.ts"
+},
+{
+"mn": "Vocabulary уншихад алдаа гарлаа.",
+"ctx": "lib/supabase/admin-content.ts"
+},
+{
+"mn": "Vocabulary нэмэхэд алдаа гарлаа.",
+"ctx": "lib/supabase/admin-content.ts"
+},
+{
+"mn": "Vocabulary устгахад алдаа гарлаа.",
+"ctx": "lib/supabase/admin-content.ts"
+},
+{
+"mn": "Quiz уншихад алдаа гарлаа.",
+"ctx": "lib/supabase/admin-content.ts"
+},
+{
+"mn": "Quiz нэмэхэд алдаа гарлаа.",
+"ctx": "lib/supabase/admin-content.ts"
+},
+{
+"mn": "Quiz устгахад алдаа гарлаа.",
+"ctx": "lib/supabase/admin-content.ts"
+},
+{
+"mn": "Хуулбарлахад алдаа гарлаа.",
+"ctx": "lib/supabase/admin-duplicate.ts"
+},
+{
+"mn": "Санал болгох шинэ ID олдсонгүй.",
+"ctx": "lib/supabase/admin-duplicate.ts"
+},
+{
+"mn": "New lesson ID заавал.",
+"ctx": "lib/supabase/admin-duplicate.ts"
+},
+{
+"mn": "Эх хичээл олдсонгүй.",
+"ctx": "lib/supabase/admin-duplicate.ts"
+},
+{
+"mn": "New title заавал.",
+"ctx": "lib/supabase/admin-duplicate.ts"
+},
+{
+"mn": "New Chinese title заавал.",
+"ctx": "lib/supabase/admin-duplicate.ts"
+},
+{
+"mn": "Хичээл хуулбарлахад алдаа гарлаа.",
+"ctx": "lib/supabase/admin-duplicate.ts"
+},
+{
+"mn": "Import хийхэд алдаа гарлаа.",
+"ctx": "lib/supabase/admin-import.ts"
+},
+{
+"mn": "JSON хоосон байна.",
+"ctx": "lib/supabase/admin-import.ts"
+},
+{
+"mn": "Буруу JSON формат. Syntax-ийг шалгана уу.",
+"ctx": "lib/supabase/admin-import.ts"
+},
+{
+"mn": "Import хийх контент байхгүй (subtitles, vocabulary, quiz хоосон).",
+"ctx": "lib/supabase/admin-import.ts"
+},
+{
+"mn": "Bulk import хийхэд алдаа гарлаа.",
+"ctx": "lib/supabase/admin-import.ts"
+},
+{
+"mn": "Supabase тохиргоо алга.",
+"ctx": "lib/supabase/admin-learner-grades.ts"
+},
+{
+"mn": "Хэрэглээний хэмжилт унших боломжгүй байна — 050_learner_activity.sql миграцыг шалгана уу.",
+"ctx": "lib/supabase/admin-learner-grades.ts"
+},
+{
+"mn": "Одоогоор бүртгэгдсэн суралцагчийн оролдлого байхгүй.",
+"ctx": "lib/supabase/admin-learner.ts"
+},
+{
+"mn": "Admin RLS policy шаардлагатай — supabase/policies/002_admin_content_policies.sql",
+"ctx": "lib/supabase/admin-release.ts"
+},
+{
+"mn": "Release status шинэчлэхэд алдаа гарлаа.",
+"ctx": "lib/supabase/admin-release.ts"
+},
+{
+"mn": "QA status шинэчлэхэд алдаа гарлаа.",
+"ctx": "lib/supabase/admin-release.ts"
+},
+{
+"mn": "Approve хийхэд алдаа гарлаа.",
+"ctx": "lib/supabase/admin-release.ts"
+},
+{
+"mn": "Review тэмдэглэхэд алдаа гарлаа.",
+"ctx": "lib/supabase/admin-release.ts"
+},
+{
+"mn": "Release notes хадгалахад алдаа гарлаа.",
+"ctx": "lib/supabase/admin-release.ts"
+},
+{
+"mn": "Release sync алдаа.",
+"ctx": "lib/supabase/admin-release.ts"
+},
+{
+"mn": "Backup JSON буруу байна.",
+"ctx": "lib/supabase/admin-restore.ts"
+},
+{
+"mn": "Backup-д restore хийх контент байхгүй.",
+"ctx": "lib/supabase/admin-restore.ts"
+},
+{
+"mn": "Activity log олдсонгүй.",
+"ctx": "lib/supabase/admin-rollback.ts"
+},
+{
+"mn": "Сэргээх field байхгүй.",
+"ctx": "lib/supabase/admin-rollback.ts"
+},
+{
+"mn": "Rollback хадгалахад алдаа.",
+"ctx": "lib/supabase/admin-rollback.ts"
+},
+{
+"mn": "Rollback дэмжигдэхгүй.",
+"ctx": "lib/supabase/admin-rollback.ts"
+},
+{
+"mn": "Хичээл олдсонгүй — rollback хийх боломжгүй.",
+"ctx": "lib/supabase/admin-rollback.ts"
+},
+{
+"mn": "Rollback амжилтгүй.",
+"ctx": "lib/supabase/admin-rollback.ts"
+},
+{
+"mn": "Activity олдсонгүй.",
+"ctx": "lib/supabase/admin-rollback.ts"
+},
+{
+"mn": "Metadata rollback зөвхөн metadata action дээр.",
+"ctx": "lib/supabase/admin-rollback.ts"
+},
+{
+"mn": "Media rollback зөвхөн media action дээр.",
+"ctx": "lib/supabase/admin-rollback.ts"
+},
+{
+"mn": "Status rollback зөвхөн status action дээр.",
+"ctx": "lib/supabase/admin-rollback.ts"
+},
+{
+"mn": "Release rollback зөвхөн release action дээр.",
+"ctx": "lib/supabase/admin-rollback.ts"
+},
+{
+"mn": "Vercel → Settings → Environment Variables дээр SUPABASE_SERVICE_ROLE_KEY нэмнэ үү",
+"ctx": "lib/supabase/admin-service-role-client.ts"
+},
+{
+"mn": "(утга: Supabase Dashboard → Settings → API → service_role).",
+"ctx": "lib/supabase/admin-service-role-client.ts"
+},
+{
+"mn": "Зөвхөн server route-д ашиглана — client bundle-д орохгүй.",
+"ctx": "lib/supabase/admin-service-role-client.ts"
+},
+{
+"mn": "Эсвэл admin эрхтэйгээр нэвтэрсэн байхад импорт admin session-ээр ажиллана.",
+"ctx": "lib/supabase/admin-service-role-client.ts"
+},
+{
+"mn": "Supabase тохируулагдаагүй.",
+"ctx": "lib/supabase/admin-service-role-client.ts"
+},
+{
+"mn": "Admin RLS policy шаардлагатай — run supabase/migrations/006_admin_tasks.sql",
+"ctx": "lib/supabase/admin-task-persistence.ts"
+},
+{
+"mn": "Admin tasks уншихад алдаа гарлаа.",
+"ctx": "lib/supabase/admin-task-persistence.ts"
+},
+{
+"mn": "Task хадгалахад алдаа гарлаа.",
+"ctx": "lib/supabase/admin-task-persistence.ts"
+},
+{
+"mn": "Task шинэчлэхэд алдаа гарлаа.",
+"ctx": "lib/supabase/admin-task-persistence.ts"
+},
+{
+"mn": "Хичээллэх хэлбэр (танхим/онлайн) хадгалагдаагүй байна — 054_classroom_delivery_mode.sql миграцыг ажиллуулна уу.",
+"ctx": "lib/supabase/admin-training-center.ts"
+},
+{
+"mn": "Суралцсан хугацаа унших боломжгүй байна — 050_learner_activity.sql миграцыг шалгана уу. Хугацааны багана «—» харагдана.",
+"ctx": "lib/supabase/admin-training-center.ts"
+},
+{
+"mn": "Багш оноогоогүй",
+"ctx": "lib/supabase/admin-training-center.ts"
+},
+{
+"mn": "Сурагч бүртгэгдээгүй.",
+"ctx": "lib/supabase/admin-training-center.ts"
+},
+{
+"mn": "Сурагчид урилгаа хүлээж аваагүй тул өгөгдөл алга.",
+"ctx": "lib/supabase/admin-training-center.ts"
+},
+{
+"mn": "Даалгавар оноогоогүй тул гүйцэтгэл тооцох боломжгүй.",
+"ctx": "lib/supabase/admin-training-center.ts"
+},
+{
+"mn": "Нэргүй сурагч",
+"ctx": "lib/supabase/class-mock-exams.ts"
+},
+{
+"mn": "Нэвтэрч орно уу.",
+"ctx": "lib/supabase/classroom-attendance.ts"
+},
+{
+"mn": "Файл хоосон байна.",
+"ctx": "lib/supabase/classrooms.ts"
+},
+{
+"mn": "Ангийн багш",
+"ctx": "lib/supabase/classrooms.ts"
+},
+{
+"mn": "Supabase тохиргоо байхгүй.",
+"ctx": "lib/supabase/hsk-words.ts"
+},
+{
+"mn": "Upload хийхэд алдаа гарлаа.",
+"ctx": "lib/supabase/media-upload.ts"
+},
+{
+"mn": "Оролдлого хадгалахад алдаа.",
+"ctx": "lib/supabase/mock-tests-client.ts"
+},
+{
+"mn": "Байгууллагын мэдээлэл бөглөх",
+"ctx": "lib/supabase/organization-onboarding.ts"
+},
+{
+"mn": "Owner/manager эрхтэй хэрэглэгч баталгаажуулах",
+"ctx": "lib/supabase/organization-onboarding.ts"
+},
+{
+"mn": "Эхний багшийг нэмэх",
+"ctx": "lib/supabase/organization-onboarding.ts"
+},
+{
+"mn": "Эхний classroom үүсгэх",
+"ctx": "lib/supabase/organization-onboarding.ts"
+},
+{
+"mn": "Demo сурагчид нэмэх",
+"ctx": "lib/supabase/organization-onboarding.ts"
+},
+{
+"mn": "Эхний assignment үүсгэх",
+"ctx": "lib/supabase/organization-onboarding.ts"
+},
+{
+"mn": "Сурагчийн assignment flow шалгах",
+"ctx": "lib/supabase/organization-onboarding.ts"
+},
+{
+"mn": "Багшийн report шалгах",
+"ctx": "lib/supabase/organization-onboarding.ts"
+},
+{
+"mn": "Pilot plan export хийх",
+"ctx": "lib/supabase/organization-onboarding.ts"
+},
+{
+"mn": "Pilot эхлүүлэхэд бэлэн гэж тэмдэглэх",
+"ctx": "lib/supabase/organization-onboarding.ts"
+},
+{
+"mn": "Account дээр хадгалагдаж байна",
+"ctx": "lib/supabase/retention.ts"
+},
+{
+"mn": "Апп дээрх бүртгэлтэй холбогдоогүй",
+"ctx": "lib/supabase/teacher-analytics.ts"
+},
+{
+"mn": "Нэг ч даалгавар дуусгаагүй",
+"ctx": "lib/supabase/teacher-analytics.ts"
+},
+{
+"mn": "Ангийн дасгалын дундаж",
+"ctx": "lib/supabase/teacher-analytics.ts"
+},
+{
+"mn": "Сурагч бүртгэгдээгүй",
+"ctx": "lib/supabase/teacher-analytics.ts"
+},
+{
+"mn": "Даалгавар хараахан өгөөгүй",
+"ctx": "lib/supabase/teacher-analytics.ts"
+},
+{
+"mn": "Апп дээрх бүртгэл нь ангийн жагсаалттай холбогдоогүй тул алдааны мэдээлэл алга.",
+"ctx": "lib/supabase/teacher-weak-spots.ts"
+},
+{
+"mn": "Асуулт бүрийн оролдлогыг уншиж чадсангүй. Supabase дээр 055_teacher_reads_student_attempts.sql засвар ажиллуулсан эсэхийг шалгана уу.",
+"ctx": "lib/supabase/teacher-weak-spots.ts"
+},
+{
+"mn": "Дасгалын оноог уншиж чадсангүй. Supabase дээр 055_teacher_reads_student_attempts.sql засвар ажиллуулсан эсэхийг шалгана уу.",
+"ctx": "lib/supabase/teacher-weak-spots.ts"
+},
+{
+"mn": "Оролдлогын мэдээллийг унших эрх алга — 055 засварыг ажиллуулаагүй байж болзошгүй.",
+"ctx": "lib/supabase/teacher-weak-spots.ts"
+},
+{
+"mn": "Бүртгэгдсэн оролдлого алга.",
+"ctx": "lib/supabase/teacher-weak-spots.ts"
+},
+{
+"mn": "Энэ даалгаврыг зөвхөн та харж байна.",
+"ctx": "lib/supabase/teacher-weak-spots.ts"
+},
+{
+"mn": "Үг татахад алдаа",
+"ctx": "lib/supabase/user-word-srs.ts"
+}
+]

@@ -79,7 +79,7 @@ export function AssignmentDetailView({ assignmentId }: Props) {
         >
           ← Даалгаврууд
         </Link>
-        <h1 className="mt-3 text-3xl font-bold tracking-tight">{assignment.title}</h1>
+        <h1 className="mt-3 text-3xl font-bold tracking-tight" translate="no">{assignment.title}</h1>
         <p className="mt-2 text-sm text-slate-600">
           {assignment.classroomName} ·{" "}
           {custom ? "Багшийн даалгавар" : `${assignment.lessonId} хичээл`} ·{" "}
@@ -98,7 +98,7 @@ export function AssignmentDetailView({ assignmentId }: Props) {
           </p>
         ) : null}
         {assignment.instructions ? (
-          <p className="mt-3 whitespace-pre-line rounded-xl bg-slate-50 p-4 text-sm text-slate-700">
+          <p className="mt-3 whitespace-pre-line rounded-xl bg-slate-50 p-4 text-sm text-slate-700" translate="no">
             {assignment.instructions}
           </p>
         ) : null}

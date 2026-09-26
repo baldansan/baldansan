@@ -48,7 +48,7 @@ function TextbookDetailMediaSection({
         {prelesson ? "Үсэг сурах хичээл" : "Номын хичээл"}
       </h2>
       {lesson.description ? (
-        <p className="mt-2 text-sm leading-6 text-[var(--app-muted)]">
+        <p className="mt-2 text-sm leading-6 text-[var(--app-muted)]" translate="no">
           {lesson.description}
         </p>
       ) : (
@@ -97,7 +97,7 @@ function ExamDetailMediaSection({
       <p className="text-xs font-semibold uppercase tracking-wide text-amber-700">
         Шалгалт
       </p>
-      <h2 className="mt-1 text-sm font-bold text-[var(--app-text)]">
+      <h2 className="mt-1 text-sm font-bold text-[var(--app-text)]" translate="no">
         {lesson.title}
       </h2>
       <p className="mt-2 text-sm text-[var(--app-muted)]">

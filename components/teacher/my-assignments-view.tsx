@@ -104,7 +104,7 @@ export function MyAssignmentsView() {
                 className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200"
               >
                 <div className="flex flex-wrap items-start justify-between gap-2">
-                  <h2 className="font-semibold text-slate-900">{a.title}</h2>
+                  <h2 className="font-semibold text-slate-900" translate="no">{a.title}</h2>
                   <div className="flex flex-wrap gap-1.5">
                     {a.targetStudentUserId ? (
                       <span className="rounded-full bg-amber-100 px-3 py-1 text-xs font-semibold text-amber-900">
@@ -133,7 +133,7 @@ export function MyAssignmentsView() {
                   </p>
                 ) : null}
                 {a.instructions ? (
-                  <p className="mt-2 whitespace-pre-line rounded-xl bg-slate-50 p-3 text-sm text-slate-700">
+                  <p className="mt-2 whitespace-pre-line rounded-xl bg-slate-50 p-3 text-sm text-slate-700" translate="no">
                     {a.instructions}
                   </p>
                 ) : null}

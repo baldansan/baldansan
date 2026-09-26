@@ -121,7 +121,7 @@ export default function PronunciationModule({
       </div>
 
       {/* Багшийн коучинг мөр */}
-      {teacher && <div className="bs-pr-teacher">{teacher}</div>}
+      {teacher && <div className="bs-pr-teacher" translate="no">{teacher}</div>}
 
       {/* Үгийн карт */}
       <div className="bs-vcard">
@@ -158,7 +158,7 @@ export default function PronunciationModule({
           <span className="bs-pr-tip-ic" aria-hidden>
             💡
           </span>
-          <span>{item.tip_mn}</span>
+          <span translate="no">{item.tip_mn}</span>
         </div>
       )}
 

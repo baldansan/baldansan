@@ -129,7 +129,7 @@ export function LessonTeacherOverlayEditor({ lesson, initial }: Props) {
         <div className="flex flex-wrap items-start justify-between gap-3">
           <div>
             <h1 className="text-xl font-bold text-slate-900">Багшийн давхарга</h1>
-            <p className="mt-1 text-sm text-slate-600">{lesson.title}</p>
+            <p className="mt-1 text-sm text-slate-600" translate="no">{lesson.title}</p>
             <p className="mt-1 font-mono text-xs text-slate-500">{lesson.id}</p>
           </div>
           <div className="flex flex-wrap gap-2">
@@ -188,7 +188,7 @@ export function LessonTeacherOverlayEditor({ lesson, initial }: Props) {
                     <span className="block text-[10px] font-bold uppercase tracking-wide text-slate-400">
                       {item.kind === "grammar" ? "Дүрэм" : "Үгийн тайлбар"}
                     </span>
-                    {item.label}
+                    <span translate="no">{item.label}</span>
                   </button>
                 </li>
               ))
@@ -279,7 +279,7 @@ export function LessonTeacherOverlayEditor({ lesson, initial }: Props) {
                 key={sentence.index}
                 className="rounded-xl border border-slate-200 bg-slate-50/50 p-4"
               >
-                <p className="text-sm font-semibold text-slate-800">
+                <p className="text-sm font-semibold text-slate-800" translate="no">
                   {idx + 1}. {sentence.zh || "—"}
                 </p>
                 <label className="admin-label mt-3 block">

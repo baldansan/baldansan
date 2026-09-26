@@ -613,7 +613,7 @@ export function BichlegFeedClient({
   function renderZh(sub: VideoSubtitleRow) {
     const words = sub.words?.length ? sub.words : [{ zh: sub.zh ?? "" }];
     return (
-      <p className="bs-bl-zh hanzi">
+      <p className="bs-bl-zh hanzi" translate="no">
         {words.map((w, i) => (
           <span key={`${sub.idx}-${i}`}>
             <button
@@ -752,14 +752,14 @@ export function BichlegFeedClient({
                           {formatSubtitleClock(activeSubtitle.start_sec)}
                         </span>
                         {activeSubtitle.speaker ? (
-                          <p className="bs-bl-speaker">{activeSubtitle.speaker}</p>
+                          <p className="bs-bl-speaker" translate="no">{activeSubtitle.speaker}</p>
                         ) : null}
                         {showPinyin && activeSubtitle.pinyin ? (
-                          <p className="bs-bl-pinyin">{activeSubtitle.pinyin}</p>
+                          <p className="bs-bl-pinyin" translate="no">{activeSubtitle.pinyin}</p>
                         ) : null}
                         {activeSubtitle.zh ? renderZh(activeSubtitle) : null}
                         {showMn && activeSubtitle.mn ? (
-                          <p className="bs-bl-mn">{activeSubtitle.mn}</p>
+                          <p className="bs-bl-mn" translate="no">{activeSubtitle.mn}</p>
                         ) : null}
                       </button>
                       {activeSubtitle.slang_note ? (
@@ -894,12 +894,12 @@ export function BichlegFeedClient({
               className="bs-bichleg-sheet"
               onClick={(e) => e.stopPropagation()}
             >
-              <p className="bs-bichleg-sheet-zh hanzi">{pickedWord.zh}</p>
+              <p className="bs-bichleg-sheet-zh hanzi" translate="no">{pickedWord.zh}</p>
               {pickedWord.pinyin ? (
-                <p className="bs-bichleg-sheet-py">{pickedWord.pinyin}</p>
+                <p className="bs-bichleg-sheet-py" translate="no">{pickedWord.pinyin}</p>
               ) : null}
               {pickedWord.mn ? (
-                <p className="bs-bichleg-sheet-mn">{pickedWord.mn}</p>
+                <p className="bs-bichleg-sheet-mn" translate="no">{pickedWord.mn}</p>
               ) : null}
               {wordStatus?.saved &&
               !wordStatus.inCatalog &&
@@ -963,6 +963,7 @@ export function BichlegFeedClient({
                       <button
                         type="button"
                         className="bs-bichleg-key-item"
+                        translate="no"
                         onClick={() => {
                           setShowKeys(false);
                           handleWordPick(w);

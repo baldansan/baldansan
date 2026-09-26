@@ -186,7 +186,7 @@ export function WordPracticeLauncher({
                           <span className="bs-wpl-word-hanzi hanzi">
                             {word.simplified}
                           </span>
-                          <span className="bs-wpl-word-meta">
+                          <span className="bs-wpl-word-meta" translate="no">
                             {word.pinyin ?? "—"} · {word.meaning_mn ?? "—"}
                           </span>
                         </label>
@@ -220,7 +220,7 @@ export function WordPracticeLauncher({
                       <span className="bs-wpl-word-hanzi hanzi">
                         {word.simplified}
                       </span>
-                      <span className="bs-wpl-word-meta">
+                      <span className="bs-wpl-word-meta" translate="no">
                         {word.pinyin ?? "—"} · {word.meaning_mn ?? "—"}
                       </span>
                     </label>

@@ -5,6 +5,8 @@ import { useState } from "react";
 import { MobileCard } from "@/components/mobile/mobile-card";
 
 const CONFIRM_WORD = "УСТГАХ";
+/** UI хятад үед харагдах үг (DOM орчуулагч) — хоёуланг нь хүлээн авна. */
+const CONFIRM_WORDS = new Set([CONFIRM_WORD, "删除"]);
 
 /**
  * Permanent account deletion card (Settings → Account).
@@ -18,7 +20,7 @@ export function DeleteAccountCard() {
   const [error, setError] = useState<string | null>(null);
 
   async function handleDelete() {
-    if (confirmText.trim() !== CONFIRM_WORD || busy) return;
+    if (!CONFIRM_WORDS.has(confirmText.trim()) || busy) return;
     setBusy(true);
     setError(null);
     try {
@@ -83,7 +85,7 @@ export function DeleteAccountCard() {
             <button
               type="button"
               onClick={() => void handleDelete()}
-              disabled={confirmText.trim() !== CONFIRM_WORD || busy}
+              disabled={!CONFIRM_WORDS.has(confirmText.trim()) || busy}
               className="rounded-full bg-red-600 px-4 py-2 text-xs font-semibold text-white transition-colors hover:bg-red-700 disabled:cursor-not-allowed disabled:bg-red-200"
             >
               {busy ? "Устгаж байна…" : "Бүрмөсөн устгах"}

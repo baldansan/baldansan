@@ -1,0 +1,1022 @@
+[
+{
+"mn": "Баярлалаа",
+"ctx": "lib/games/game-data.ts"
+},
+{
+"mn": "Туслалдлагад баярлалаа.",
+"ctx": "lib/games/game-data.ts"
+},
+{
+"mn": "Энэ түвшинд хангалттай асуулт бүрдэж чадсангүй.",
+"ctx": "lib/games/game-deck-route.ts"
+},
+{
+"mn": "偏旁 / зураасны дараалал — ханзны бүтэц таних",
+"ctx": "lib/games/game-lesson-meta.ts"
+},
+{
+"mn": "Үндэстэй ханзын бүлэг",
+"ctx": "lib/games/game-lesson-meta.ts"
+},
+{
+"mn": "Үсэг таних",
+"ctx": "lib/games/game-lesson-meta.ts"
+},
+{
+"mn": "Солонгос үг ↔ орчуулга холбох",
+"ctx": "lib/games/game-lesson-meta.ts"
+},
+{
+"mn": "Утга сонгох",
+"ctx": "lib/games/game-lesson-meta.ts"
+},
+{
+"mn": "Зөв утга / авиаг сонго",
+"ctx": "lib/games/game-lesson-meta.ts"
+},
+{
+"mn": "Солонгос → Монгол",
+"ctx": "lib/games/game-lesson-meta.ts"
+},
+{
+"mn": "Дутуу үсэг",
+"ctx": "lib/games/game-lesson-meta.ts"
+},
+{
+"mn": "Дутуу үсэг, үгийг бөглө",
+"ctx": "lib/games/game-lesson-meta.ts"
+},
+{
+"mn": "Үе/үг эвлүүлэх",
+"ctx": "lib/games/game-lesson-meta.ts"
+},
+{
+"mn": "Солонгос үе, үгийг зөв эвлүүл",
+"ctx": "lib/games/game-lesson-meta.ts"
+},
+{
+"mn": "Үсэг бүтээх",
+"ctx": "lib/games/game-lesson-meta.ts"
+},
+{
+"mn": "Хангыль үсэг бүтээх дасгал",
+"ctx": "lib/games/game-lesson-meta.ts"
+},
+{
+"mn": "Энэ хичээлд үсэг бүтээх дасгал үүсгэхэд хангалттай өгөгдөл алга.",
+"ctx": "lib/games/game-lesson-meta.ts"
+},
+{
+"mn": "Энэ хичээлд үе/үг эвлүүлэх дасгал үүсгэхэд хангалттай үг алга.",
+"ctx": "lib/games/game-lesson-meta.ts"
+},
+{
+"mn": "Энэ хичээлд дутуу үсэг/үг дасгал үүсгэхэд хангалттай үг алга.",
+"ctx": "lib/games/game-lesson-meta.ts"
+},
+{
+"mn": "Хангыль үсэг бүтээх — дутуу хэсгийг сонго",
+"ctx": "lib/games/game-lesson-meta.ts"
+},
+{
+"mn": "Энэ хичээлд ханзны бүрдэл тоглоом үүсгэхэд хангалттай өгөгдөл алга.",
+"ctx": "lib/games/game-lesson-meta.ts"
+},
+{
+"mn": "Авиа сонгох",
+"ctx": "lib/games/game-lesson-meta.ts"
+},
+{
+"mn": "Эгшиг, авианы зөв утгыг сонго",
+"ctx": "lib/games/game-lesson-meta.ts"
+},
+{
+"mn": "Үе бүтээх",
+"ctx": "lib/games/game-lesson-meta.ts"
+},
+{
+"mn": "Солонгос үе, үгийг зөв бүтээ",
+"ctx": "lib/games/game-lesson-meta.ts"
+},
+{
+"mn": "зүүн",
+"ctx": "lib/games/hanzi-breakdown-catalog-server.ts"
+},
+{
+"mn": "дээд",
+"ctx": "lib/games/hanzi-breakdown-catalog-server.ts"
+},
+{
+"mn": "дээр",
+"ctx": "lib/games/hanzi-breakdown-catalog-server.ts"
+},
+{
+"mn": "хүрээ",
+"ctx": "lib/games/hanzi-breakdown-catalog-server.ts"
+},
+{
+"mn": "давхар",
+"ctx": "lib/games/hanzi-breakdown-catalog-server.ts"
+},
+{
+"mn": "Зүүн–баруун бүтэц",
+"ctx": "lib/games/hanzi-component-data.ts"
+},
+{
+"mn": "Дээр–доор бүтэц",
+"ctx": "lib/games/hanzi-component-data.ts"
+},
+{
+"mn": "Хүрээлсэн бүтэц",
+"ctx": "lib/games/hanzi-component-data.ts"
+},
+{
+"mn": "Давхарласан бүтэц",
+"ctx": "lib/games/hanzi-component-data.ts"
+},
+{
+"mn": "Ганц бүрдэл",
+"ctx": "lib/games/hanzi-component-data.ts"
+},
+{
+"mn": "нэг",
+"ctx": "lib/games/hanzi-component-data.ts"
+},
+{
+"mn": "нэг хэвтээ зураас",
+"ctx": "lib/games/hanzi-component-data.ts"
+},
+{
+"mn": "хоёр",
+"ctx": "lib/games/hanzi-component-data.ts"
+},
+{
+"mn": "хоёр хэвтээ зураас",
+"ctx": "lib/games/hanzi-component-data.ts"
+},
+{
+"mn": "гурван",
+"ctx": "lib/games/hanzi-component-data.ts"
+},
+{
+"mn": "гурван хэвтээ зураас",
+"ctx": "lib/games/hanzi-component-data.ts"
+},
+{
+"mn": "арав",
+"ctx": "lib/games/hanzi-component-data.ts"
+},
+{
+"mn": "хэвтээ + босоо зураас",
+"ctx": "lib/games/hanzi-component-data.ts"
+},
+{
+"mn": "найм",
+"ctx": "lib/games/hanzi-component-data.ts"
+},
+{
+"mn": "зүүн шидэх + баруун доош зураас",
+"ctx": "lib/games/hanzi-component-data.ts"
+},
+{
+"mn": "зургаа",
+"ctx": "lib/games/hanzi-component-data.ts"
+},
+{
+"mn": "цэг + хэвтээ + зүүн/баруун зураас",
+"ctx": "lib/games/hanzi-component-data.ts"
+},
+{
+"mn": "амрах",
+"ctx": "lib/games/hanzi-component-data.ts"
+},
+{
+"mn": "хүн radical",
+"ctx": "lib/games/hanzi-component-data.ts"
+},
+{
+"mn": "Хүн модны хажууд амарч байна гэж төсөөлж болно.",
+"ctx": "lib/games/hanzi-component-data.ts"
+},
+{
+"mn": "чи, та",
+"ctx": "lib/games/hanzi-component-data.ts"
+},
+{
+"mn": "чам, та",
+"ctx": "lib/games/hanzi-component-data.ts"
+},
+{
+"mn": "сайн",
+"ctx": "lib/games/hanzi-component-data.ts"
+},
+{
+"mn": "эм",
+"ctx": "lib/games/hanzi-component-data.ts"
+},
+{
+"mn": "хүүхэд",
+"ctx": "lib/games/hanzi-component-data.ts"
+},
+{
+"mn": "Эм хүүхэдтэй бол «сайн» гэж бодож болно.",
+"ctx": "lib/games/hanzi-component-data.ts"
+},
+{
+"mn": "баярлах",
+"ctx": "lib/games/hanzi-component-data.ts"
+},
+{
+"mn": "яриа radical",
+"ctx": "lib/games/hanzi-component-data.ts"
+},
+{
+"mn": "яриа, хэл",
+"ctx": "lib/games/hanzi-component-data.ts"
+},
+{
+"mn": "шидэх",
+"ctx": "lib/games/hanzi-component-data.ts"
+},
+{
+"mn": "зөв, хариулт",
+"ctx": "lib/games/hanzi-component-data.ts"
+},
+{
+"mn": "дахин",
+"ctx": "lib/games/hanzi-component-data.ts"
+},
+{
+"mn": "дахин, гар",
+"ctx": "lib/games/hanzi-component-data.ts"
+},
+{
+"mn": "цун",
+"ctx": "lib/games/hanzi-component-data.ts"
+},
+{
+"mn": "хэмжээ",
+"ctx": "lib/games/hanzi-component-data.ts"
+},
+{
+"mn": "биш",
+"ctx": "lib/games/hanzi-component-data.ts"
+},
+{
+"mn": "байхгүй",
+"ctx": "lib/games/hanzi-component-data.ts"
+},
+{
+"mn": "ус radical",
+"ctx": "lib/games/hanzi-component-data.ts"
+},
+{
+"mn": "зэвсэг",
+"ctx": "lib/games/hanzi-component-data.ts"
+},
+{
+"mn": "холбоотой",
+"ctx": "lib/games/hanzi-component-data.ts"
+},
+{
+"mn": "дээд хэсэг",
+"ctx": "lib/games/hanzi-component-data.ts"
+},
+{
+"mn": "тэнгэр",
+"ctx": "lib/games/hanzi-component-data.ts"
+},
+{
+"mn": "холбоо",
+"ctx": "lib/games/hanzi-component-data.ts"
+},
+{
+"mn": "жижиг",
+"ctx": "lib/games/hanzi-component-data.ts"
+},
+{
+"mn": "Зүүн",
+"ctx": "lib/games/hanzi-component-data.ts"
+},
+{
+"mn": "Баруун",
+"ctx": "lib/games/hanzi-component-data.ts"
+},
+{
+"mn": "Дээр",
+"ctx": "lib/games/hanzi-component-data.ts"
+},
+{
+"mn": "Доор",
+"ctx": "lib/games/hanzi-component-data.ts"
+},
+{
+"mn": "Дутуу бүрдэлийг сонго",
+"ctx": "lib/games/hanzi-stroke-game.ts"
+},
+{
+"mn": "Зүүн бүрдэлийг сонго",
+"ctx": "lib/games/hanzi-stroke-game.ts"
+},
+{
+"mn": "Ханзны бүтэц аль вэ?",
+"ctx": "lib/games/hanzi-stroke-game.ts"
+},
+{
+"mn": "Зөв ханзыг сонго",
+"ctx": "lib/games/hsk-quiz-builders.ts"
+},
+{
+"mn": "Зөв пиньинь сонго",
+"ctx": "lib/games/hsk-quiz-builders.ts"
+},
+{
+"mn": "Дутуу үгийг бөглө",
+"ctx": "lib/games/hsk-quiz-builders.ts"
+},
+{
+"mn": "Энэ радикалтай ханз аль вэ?",
+"ctx": "lib/games/hsk-quiz-builders.ts"
+},
+{
+"mn": "Сонссон үгээ сонго",
+"ctx": "lib/games/hsk-quiz-builders.ts"
+},
+{
+"mn": "Үг сорих",
+"ctx": "lib/games/hsk-quiz-presets.ts"
+},
+{
+"mn": "Пиньинь сонгох",
+"ctx": "lib/games/hsk-quiz-presets.ts"
+},
+{
+"mn": "Жишээ бөглөх",
+"ctx": "lib/games/hsk-quiz-presets.ts"
+},
+{
+"mn": "Радикал таних",
+"ctx": "lib/games/hsk-quiz-presets.ts"
+},
+{
+"mn": "Сонсоод олох",
+"ctx": "lib/games/hsk-quiz-presets.ts"
+},
+{
+"mn": "Солонгос үндсэн эгшиг:",
+"ctx": "lib/games/korean-game-data.ts"
+},
+{
+"mn": "Эгшиг ㅏ-тай үе",
+"ctx": "lib/games/korean-game-data.ts"
+},
+{
+"mn": "ㄱ + эгшиг",
+"ctx": "lib/games/korean-game-data.ts"
+},
+{
+"mn": "Эгшиг ㅓ",
+"ctx": "lib/games/korean-game-data.ts"
+},
+{
+"mn": "Эгшиг ㅏ",
+"ctx": "lib/games/korean-game-data.ts"
+},
+{
+"mn": "Солонгос бичиг",
+"ctx": "lib/games/korean-game-data.ts"
+},
+{
+"mn": "Солонгос улс",
+"ctx": "lib/games/korean-game-data.ts"
+},
+{
+"mn": "Оюутан",
+"ctx": "lib/games/korean-game-data.ts"
+},
+{
+"mn": "Хүн",
+"ctx": "lib/games/korean-game-data.ts"
+},
+{
+"mn": "Солонгос бичиг унших",
+"ctx": "lib/games/korean-game-data.ts"
+},
+{
+"mn": "Би монгол хүн",
+"ctx": "lib/games/korean-game-data.ts"
+},
+{
+"mn": "Би оюутан",
+"ctx": "lib/games/korean-game-data.ts"
+},
+{
+"mn": "Би солонгос хүн",
+"ctx": "lib/games/korean-game-data.ts"
+},
+{
+"mn": "байгууллага",
+"ctx": "lib/invitations/invite-message-templates.ts"
+},
+{
+"mn": "Бөөндөө Сурцгаая platform-д багшаар нэгдэх урилга",
+"ctx": "lib/invitations/invite-message-templates.ts"
+},
+{
+"mn": "Доорх link-ээр орж account-аа холбож урилгаа баталгаажуулна уу:",
+"ctx": "lib/invitations/invite-message-templates.ts"
+},
+{
+"mn": "Энэ link тодорхой хугацаанд хүчинтэй.",
+"ctx": "lib/invitations/invite-message-templates.ts"
+},
+{
+"mn": "Бөөндөө Сурцгаая хичээлд нэгдэх урилга",
+"ctx": "lib/invitations/invite-message-templates.ts"
+},
+{
+"mn": "Доорх link-ээр орж account-аа холбож хичээлээ эхлүүлнэ үү:",
+"ctx": "lib/invitations/invite-message-templates.ts"
+},
+{
+"mn": "Шалгалтын дундаж",
+"ctx": "lib/learner-grade.ts"
+},
+{
+"mn": "Хичээл дуусгалт",
+"ctx": "lib/learner-grade.ts"
+},
+{
+"mn": "Үнэлэх өгөгдөл алга.",
+"ctx": "lib/learner-grade.ts"
+},
+{
+"mn": "A — Маш сайн",
+"ctx": "lib/learner-grade.ts"
+},
+{
+"mn": "B — Сайн",
+"ctx": "lib/learner-grade.ts"
+},
+{
+"mn": "C — Дунд",
+"ctx": "lib/learner-grade.ts"
+},
+{
+"mn": "D — Сул",
+"ctx": "lib/learner-grade.ts"
+},
+{
+"mn": "F — Хангалтгүй",
+"ctx": "lib/learner-grade.ts"
+},
+{
+"mn": "Үнэлэхэд эрт",
+"ctx": "lib/learner-grade.ts"
+},
+{
+"mn": "90–100 оноо",
+"ctx": "lib/learner-grade.ts"
+},
+{
+"mn": "80–89 оноо",
+"ctx": "lib/learner-grade.ts"
+},
+{
+"mn": "70–79 оноо",
+"ctx": "lib/learner-grade.ts"
+},
+{
+"mn": "60–69 оноо",
+"ctx": "lib/learner-grade.ts"
+},
+{
+"mn": "60-аас доош",
+"ctx": "lib/learner-grade.ts"
+},
+{
+"mn": "Хичээлээ эхлэх",
+"ctx": "lib/learner-labels.ts"
+},
+{
+"mn": "Үгийн сангаа flashcard-аар давтах",
+"ctx": "lib/learner-labels.ts"
+},
+{
+"mn": "Видео хараахан ороогүй байна",
+"ctx": "lib/learner-labels.ts"
+},
+{
+"mn": "Видео байхгүй ч үгийн сан болон quiz-ээр сурч болно.",
+"ctx": "lib/learner-labels.ts"
+},
+{
+"mn": "Нэмэлт видео",
+"ctx": "lib/learner-labels.ts"
+},
+{
+"mn": "Хүсвэл богино тайлбар видео үзэж болно",
+"ctx": "lib/learner-labels.ts"
+},
+{
+"mn": "Видео хараахан нэмэгдээгүй — номын хичээлээр үргэлжлүүлнэ.",
+"ctx": "lib/learner-labels.ts"
+},
+{
+"mn": "Видео үзэх",
+"ctx": "lib/learner-labels.ts"
+},
+{
+"mn": "Дахин өгөх",
+"ctx": "lib/learner-labels.ts"
+},
+{
+"mn": "Хамгийн сайн оноо",
+"ctx": "lib/learner-labels.ts"
+},
+{
+"mn": "Сүүлийн хичээлээ үргэлжлүүлэх",
+"ctx": "lib/learner-progress.ts"
+},
+{
+"mn": "Үзэх",
+"ctx": "lib/lesson-content-type.ts"
+},
+{
+"mn": "Бичлэг алга",
+"ctx": "lib/lesson-media.ts"
+},
+{
+"mn": "Медиа хүлээгдэж байна",
+"ctx": "lib/lesson-media.ts"
+},
+{
+"mn": "Багцад зураг бий — Storage-д байршуулах хэрэгтэй",
+"ctx": "lib/lesson-media.ts"
+},
+{
+"mn": "Нүүр зураг алга",
+"ctx": "lib/lesson-media.ts"
+},
+{
+"mn": "ㄱ (гийгүүлэгч) + ㅏ (эгшиг) = 가",
+"ctx": "lib/lesson-player/build-lesson-steps.ts"
+},
+{
+"mn": "「a» гэсэн эгшиг аль вэ?",
+"ctx": "lib/lesson-player/build-lesson-steps.ts"
+},
+{
+"mn": "Аль үед 받침 (доод гийгүүлэгч) байна вэ?",
+"ctx": "lib/lesson-player/build-lesson-steps.ts"
+},
+{
+"mn": "한 — доод ㄴ нь 받침.",
+"ctx": "lib/lesson-player/build-lesson-steps.ts"
+},
+{
+"mn": "Товч танилцуулга",
+"ctx": "lib/lesson-player/build-lesson-steps.ts"
+},
+{
+"mn": "Энэ хичээлээр солонгос үсэг буюу 한글-ийн үндэс, эгшиг, гийгүүлэгч, үе бүтээх, 받침-ийн ойлголтыг сурна.",
+"ctx": "lib/lesson-player/build-lesson-steps.ts"
+},
+{
+"mn": "한글 гэж юу вэ?",
+"ctx": "lib/lesson-player/build-lesson-steps.ts"
+},
+{
+"mn": "한글 бол Солонгос хэлний бичиг үсэг. Үсгүүдийг зүгээр цуваа бичихгүй, үеийн блок болгон бичдэг.",
+"ctx": "lib/lesson-player/build-lesson-steps.ts"
+},
+{
+"mn": "Солонгос хэл хэдэн үсэгтэй вэ?",
+"ctx": "lib/lesson-player/build-lesson-steps.ts"
+},
+{
+"mn": "14 үндсэн гийгүүлэгч 10 үндсэн эгшиг нийлмэл эгшиг, хос гийгүүлэгч нэмэгдэнэ.",
+"ctx": "lib/lesson-player/build-lesson-steps.ts"
+},
+{
+"mn": "Үеийн бүтэц",
+"ctx": "lib/lesson-player/build-lesson-steps.ts"
+},
+{
+"mn": "Үндсэн эгшиг",
+"ctx": "lib/lesson-player/build-lesson-steps.ts"
+},
+{
+"mn": "Солонгос эгшиг — дуудлагын үндсэн дуу. Эхлээд эдгээрийг сурна.",
+"ctx": "lib/lesson-player/build-lesson-steps.ts"
+},
+{
+"mn": "Үндсэн гийгүүлэгч",
+"ctx": "lib/lesson-player/build-lesson-steps.ts"
+},
+{
+"mn": "Гийгүүлэгч — эгшигийн өмнө эсвэл дараа залгана.",
+"ctx": "lib/lesson-player/build-lesson-steps.ts"
+},
+{
+"mn": "받침 (батчим) нь үеийн доод гийгүүлэгч. Жишээ нь 한 — доод ㄴ нь 받침.",
+"ctx": "lib/lesson-player/build-lesson-steps.ts"
+},
+{
+"mn": "Андуурагддаг дуудлага",
+"ctx": "lib/lesson-player/build-lesson-steps.ts"
+},
+{
+"mn": "Одоо богино дасгал ажиллаад хэр ойлгосноо шалгаарай.",
+"ctx": "lib/lesson-player/build-lesson-steps.ts"
+},
+{
+"mn": "Сурсан зүйлээ шалгаарай.",
+"ctx": "lib/lesson-player/build-lesson-steps.ts"
+},
+{
+"mn": "Dev хариулт.",
+"ctx": "lib/mock-test/dev-quick-fill.ts"
+},
+{
+"mn": "Хариулаагүй",
+"ctx": "lib/mock-test/format-answer.ts"
+},
+{
+"mn": "Зөв (√)",
+"ctx": "lib/mock-test/format-answer.ts"
+},
+{
+"mn": "Буруу (×)",
+"ctx": "lib/mock-test/format-answer.ts"
+},
+{
+"mn": "Энэ даалгаврыг компьютер дүгнэхгүй. Дээрх жишиг хариутай өөрийнхөө бичсэнийг харьцуулж, өөрөө үнэлээрэй.",
+"ctx": "lib/mock-test/practice-feedback.ts"
+},
+{
+"mn": "Сонсголын асуулт. Аудиог дахин тоглуулж, зөв хариултын үгийг сонсоод ол — ингэж давтвал чих дасна.",
+"ctx": "lib/mock-test/practice-feedback.ts"
+},
+{
+"mn": "Үгийн дараалал: эхлээд өгүүлэгдэхүүн, дараа нь цаг/газар, дараа нь үйл үг гэж эрэмбэлж бод.",
+"ctx": "lib/mock-test/practice-feedback.ts"
+},
+{
+"mn": "Цоорхойн өмнөх, хойдох үгийг хамтад нь унш — ямар үг таарахыг дүрэм нь заана.",
+"ctx": "lib/mock-test/practice-feedback.ts"
+},
+{
+"mn": "Өгүүлбэр бүрийг үгийн дараалал, тийн ялгал, цагийн үгийн байрлалаар нь шалга.",
+"ctx": "lib/mock-test/practice-feedback.ts"
+},
+{
+"mn": "Өгүүлбэр дэх ГОЛ үгийг эх бичвэртэй үг үгээр нь тулгаж үз.",
+"ctx": "lib/mock-test/practice-feedback.ts"
+},
+{
+"mn": "Түлхүүр үгийг нь ол: хоёр талд давхардаж байгаа үг, сэдэв ихэвчлэн хариултыг заана.",
+"ctx": "lib/mock-test/practice-feedback.ts"
+},
+{
+"mn": "Эх бичвэрээс зөв хариултыг батлах хэсгийг олж, бусад сонголт яагаад таарахгүйг нь харьцуул.",
+"ctx": "lib/mock-test/practice-feedback.ts"
+},
+{
+"mn": "Үгсийг зөв дарааллаар эвлүүлнэ үү.",
+"ctx": "lib/mock-test/sentence-order.ts"
+},
+{
+"mn": "Сонсоод зураг сонгох",
+"ctx": "lib/mock-test/skill-tag-labels.ts"
+},
+{
+"mn": "Сонсоод зураг тохирч байгаа эсэхийг шийдэх",
+"ctx": "lib/mock-test/skill-tag-labels.ts"
+},
+{
+"mn": "Сонсоод зураг тааруулах",
+"ctx": "lib/mock-test/skill-tag-labels.ts"
+},
+{
+"mn": "Сонсоод өгүүлбэр зөв эсэхийг шийдэх",
+"ctx": "lib/mock-test/skill-tag-labels.ts"
+},
+{
+"mn": "Богино яриа сонсох",
+"ctx": "lib/mock-test/skill-tag-labels.ts"
+},
+{
+"mn": "Ярилцлага сонсох",
+"ctx": "lib/mock-test/skill-tag-labels.ts"
+},
+{
+"mn": "Урт яриа сонсох",
+"ctx": "lib/mock-test/skill-tag-labels.ts"
+},
+{
+"mn": "Богино мэдээ сонсох",
+"ctx": "lib/mock-test/skill-tag-labels.ts"
+},
+{
+"mn": "Үг ↔ зураг тааруулах",
+"ctx": "lib/mock-test/skill-tag-labels.ts"
+},
+{
+"mn": "Өгүүлбэр ↔ зураг тааруулах",
+"ctx": "lib/mock-test/skill-tag-labels.ts"
+},
+{
+"mn": "Асуулт ↔ хариу тааруулах",
+"ctx": "lib/mock-test/skill-tag-labels.ts"
+},
+{
+"mn": "Өгүүлбэр тааруулах",
+"ctx": "lib/mock-test/skill-tag-labels.ts"
+},
+{
+"mn": "Агуулгад тохирох өгүүлбэр сонгох",
+"ctx": "lib/mock-test/skill-tag-labels.ts"
+},
+{
+"mn": "Уншаад зөв эсэхийг шийдэх",
+"ctx": "lib/mock-test/skill-tag-labels.ts"
+},
+{
+"mn": "Цоорхой нөхөх (үг сонгох)",
+"ctx": "lib/mock-test/skill-tag-labels.ts"
+},
+{
+"mn": "Цоорхойд тохирох өгүүлбэр сонгох",
+"ctx": "lib/mock-test/skill-tag-labels.ts"
+},
+{
+"mn": "Уншиж ойлгох",
+"ctx": "lib/mock-test/skill-tag-labels.ts"
+},
+{
+"mn": "Өгүүлбэр дараалуулах",
+"ctx": "lib/mock-test/skill-tag-labels.ts"
+},
+{
+"mn": "Алдаатай өгүүлбэр олох",
+"ctx": "lib/mock-test/skill-tag-labels.ts"
+},
+{
+"mn": "Үг эмхэтгэж өгүүлбэр болгох",
+"ctx": "lib/mock-test/skill-tag-labels.ts"
+},
+{
+"mn": "Өгсөн үгээр өгүүлбэр зохиох",
+"ctx": "lib/mock-test/skill-tag-labels.ts"
+},
+{
+"mn": "Зураг харж өгүүлбэр бичих",
+"ctx": "lib/mock-test/skill-tag-labels.ts"
+},
+{
+"mn": "Эссэ бичих",
+"ctx": "lib/mock-test/skill-tag-labels.ts"
+},
+{
+"mn": "Зурагт тулгуурлан эссэ бичих",
+"ctx": "lib/mock-test/skill-tag-labels.ts"
+},
+{
+"mn": "Уншсанаа товчлон бичих",
+"ctx": "lib/mock-test/skill-tag-labels.ts"
+},
+{
+"mn": "Дайвар үгийн байрлал",
+"ctx": "lib/mock-test/skill-tag-labels.ts"
+},
+{
+"mn": "已经 (аль хэдийн)",
+"ctx": "lib/mock-test/skill-tag-labels.ts"
+},
+{
+"mn": "把 бүтэц",
+"ctx": "lib/mock-test/skill-tag-labels.ts"
+},
+{
+"mn": "把 + үр дүнгийн гишүүн",
+"ctx": "lib/mock-test/skill-tag-labels.ts"
+},
+{
+"mn": "把 бүтцийн орчуулга",
+"ctx": "lib/mock-test/skill-tag-labels.ts"
+},
+{
+"mn": "不允许 (зөвшөөрөхгүй)",
+"ctx": "lib/mock-test/skill-tag-labels.ts"
+},
+{
+"mn": "出生在 (хаана төрсөн)",
+"ctx": "lib/mock-test/skill-tag-labels.ts"
+},
+{
+"mn": "Үйлийн гишүүн (补语)",
+"ctx": "lib/mock-test/skill-tag-labels.ts"
+},
+{
+"mn": "Хэмжээ, зэргийн илэрхийлэл",
+"ctx": "lib/mock-test/skill-tag-labels.ts"
+},
+{
+"mn": "对…的 хэлбэр",
+"ctx": "lib/mock-test/skill-tag-labels.ts"
+},
+{
+"mn": "Өгүүлбэрийн алдаа олох",
+"ctx": "lib/mock-test/skill-tag-labels.ts"
+},
+{
+"mn": "Бутархай, хувь илэрхийлэх",
+"ctx": "lib/mock-test/skill-tag-labels.ts"
+},
+{
+"mn": "跟…差不多 (…-тай ойролцоо)",
+"ctx": "lib/mock-test/skill-tag-labels.ts"
+},
+{
+"mn": "将 (ирээдүй цаг)",
+"ctx": "lib/mock-test/skill-tag-labels.ts"
+},
+{
+"mn": "究竟 (эцэст нь, яг)",
+"ctx": "lib/mock-test/skill-tag-labels.ts"
+},
+{
+"mn": "Өгүүлбэрийн үгийн дараалал",
+"ctx": "lib/mock-test/skill-tag-labels.ts"
+},
+{
+"mn": "上 / 出来 чиглэлийн гишүүн",
+"ctx": "lib/mock-test/skill-tag-labels.ts"
+},
+{
+"mn": "是…的 бүтэц",
+"ctx": "lib/mock-test/skill-tag-labels.ts"
+},
+{
+"mn": "太…了 (хэт …)",
+"ctx": "lib/mock-test/skill-tag-labels.ts"
+},
+{
+"mn": "又 (дахин, бас)",
+"ctx": "lib/mock-test/skill-tag-labels.ts"
+},
+{
+"mn": "有…的 хэлбэр",
+"ctx": "lib/mock-test/skill-tag-labels.ts"
+},
+{
+"mn": "再次 (дахин нэг удаа)",
+"ctx": "lib/mock-test/skill-tag-labels.ts"
+},
+{
+"mn": "HSK 1 үгийн сан",
+"ctx": "lib/mock-test/skill-tag-labels.ts"
+},
+{
+"mn": "HSK 2 үгийн сан",
+"ctx": "lib/mock-test/skill-tag-labels.ts"
+},
+{
+"mn": "HSK 3 үгийн сан",
+"ctx": "lib/mock-test/skill-tag-labels.ts"
+},
+{
+"mn": "HSK 4 үгийн сан",
+"ctx": "lib/mock-test/skill-tag-labels.ts"
+},
+{
+"mn": "HSK 5 үгийн сан",
+"ctx": "lib/mock-test/skill-tag-labels.ts"
+},
+{
+"mn": "HSK 6 үгийн сан",
+"ctx": "lib/mock-test/skill-tag-labels.ts"
+},
+{
+"mn": "Чадвар",
+"ctx": "lib/mock-test/skill-tag-labels.ts"
+},
+{
+"mn": "Унших",
+"ctx": "lib/mock-test/types.ts"
+},
+{
+"mn": "email,display_name,role teacher@example.com,Багш A,teacher student@example.com,Сурагч B,student",
+"ctx": "lib/organization/csv-invite-parser.ts"
+},
+{
+"mn": "Энэ төхөөрөмж дээр хадгалагдаж байна",
+"ctx": "lib/retention/daily-activity.ts"
+},
+{
+"mn": "өөр утгатай",
+"ctx": "lib/review/practice-decks.ts"
+},
+{
+"mn": "буруу хариулт",
+"ctx": "lib/review/practice-decks.ts"
+},
+{
+"mn": "сонгох боломж",
+"ctx": "lib/review/practice-decks.ts"
+},
+{
+"mn": "Өгүүлбэрийг монгол руу орчуулаад дахин шалгана уу.",
+"ctx": "lib/reviews/resolve-review-display.ts"
+},
+{
+"mn": "Дахин сонсоод ойлгосноо баталгаажуулна уу.",
+"ctx": "lib/reviews/resolve-review-display.ts"
+},
+{
+"mn": "Бөөндөө Сурцгаая platform-д нэгдэх урилга",
+"ctx": "lib/server/email/invitation-email.ts"
+},
+{
+"mn": "<p><em>Энэ link тодорхой хугацаанд хүчинтэй.</em></p>",
+"ctx": "lib/server/email/invitation-email.ts"
+},
+{
+"mn": "Бөөндөө Сурцгаая classroom-д нэгдэх урилга",
+"ctx": "lib/server/email/invitation-email.ts"
+},
+{
+"mn": "Үг давталтад нэмэхэд алдаа гарлаа.",
+"ctx": "lib/srs/seed-weak-words.ts"
+},
+{
+"mn": "Үргэлжлүүлэх хичээл",
+"ctx": "lib/study-plan/study-plan-server.ts"
+},
+{
+"mn": "Дараагийн анги",
+"ctx": "lib/study-plan/study-plan-server.ts"
+},
+{
+"mn": "Сул тал",
+"ctx": "lib/study-plan/study-plan-server.ts"
+},
+{
+"mn": "Бүртгэлд хадгалагдаж байна",
+"ctx": "lib/study-plan/study-plan-server.ts"
+},
+{
+"mn": "Өнөөдрийн давталт дууссан ✓",
+"ctx": "lib/study-plan/study-plan-server.ts"
+},
+{
+"mn": "Даваа",
+"ctx": "lib/study-plan/weekly-plan.ts"
+},
+{
+"mn": "Мягмар",
+"ctx": "lib/study-plan/weekly-plan.ts"
+},
+{
+"mn": "Лхагва",
+"ctx": "lib/study-plan/weekly-plan.ts"
+},
+{
+"mn": "Пүрэв",
+"ctx": "lib/study-plan/weekly-plan.ts"
+},
+{
+"mn": "Баасан",
+"ctx": "lib/study-plan/weekly-plan.ts"
+},
+{
+"mn": "Бямба",
+"ctx": "lib/study-plan/weekly-plan.ts"
+},
+{
+"mn": "Давтлага + сорил дахих",
+"ctx": "lib/study-plan/weekly-plan.ts"
+},
+{
+"mn": "Ням",
+"ctx": "lib/study-plan/weekly-plan.ts"
+},
+{
+"mn": "Долоо хоногийн тайлан",
+"ctx": "lib/study-plan/weekly-plan.ts"
+},
+{
+"mn": "Үгийн дуудлага: audio-cmn (Hugo Lopez / Shtooka), HSK-3.0 (krmanik), CC BY-SA",
+"ctx": "lib/tts/audio-cmn.ts"
+},
+{
+"mn": "Энэ төхөөрөмж дээр уншуулах боломжгүй байна.",
+"ctx": "lib/tts/speech.ts"
+},
+{
+"mn": "Хоосон текст.",
+"ctx": "lib/tts/speech.ts"
+}
+]

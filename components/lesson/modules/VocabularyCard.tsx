@@ -207,7 +207,7 @@ export default function VocabularyCard({
         <div className="bs-vpy">{w.pinyin}</div>
         {meaning.text ? (
           <div className={meaning.pending ? "bs-vmn bs-vmn-pending" : "bs-vmn"}>
-            {meaning.text}
+            <span translate="no">{meaning.text}</span>
             {meaning.pending ? (
               <span className="bs-vmn-badge">орчуулга хүлээгдэж буй</span>
             ) : null}
@@ -220,7 +220,7 @@ export default function VocabularyCard({
               <span className="bs-vbadge-hsk">{enrichment.hskBadge}</span>
             ) : null}
             {enrichment.posAuto.map((pos) => (
-              <span key={pos} className="bs-vchip-pos">
+              <span key={pos} className="bs-vchip-pos" translate="no">
                 {pos}
               </span>
             ))}
@@ -252,7 +252,7 @@ export default function VocabularyCard({
 
         <div>
           {enrichment.posAuto.length === 0 && w.pos ? (
-            <span className="bs-pos">{w.pos}</span>
+            <span className="bs-pos" translate="no">{w.pos}</span>
           ) : null}
           {w.beyond_syllabus && <span className="bs-beyond">超纲</span>}
         </div>
@@ -264,7 +264,7 @@ export default function VocabularyCard({
             <div>
               <div className="bs-ex-zh">{w.example_zh}</div>
               {w.example_pinyin ? <div className="bs-ex-py">{w.example_pinyin}</div> : null}
-              {w.example_mn ? <div className="bs-ex-mn">{w.example_mn}</div> : null}
+              {w.example_mn ? <div className="bs-ex-mn" translate="no">{w.example_mn}</div> : null}
             </div>
             <SpeakButton text={w.example_zh as string} title="Жишээг сонсох" />
           </div>

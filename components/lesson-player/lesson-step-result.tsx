@@ -185,9 +185,9 @@ export function LessonStepNextLesson({
   return (
     <LessonPlayerCard>
       <h1 className="text-lg font-bold text-slate-900">{tr(locale, "Баяр хүргэе!")}</h1>
-      <p className="mt-2 break-words text-sm text-slate-600">{title}</p>
+      <p className="mt-2 break-words text-sm text-slate-600" translate="no">{title}</p>
       {subtitle ? (
-        <p className="mt-1 text-base font-semibold text-emerald-700">{subtitle}</p>
+        <p className="mt-1 text-base font-semibold text-emerald-700" translate="no">{subtitle}</p>
       ) : null}
       <div className="mt-6 flex flex-col gap-2.5">
         {nextTrainingHref ? (

@@ -15,7 +15,7 @@ export function MongolianPronunciationHint({
       <span className="text-[10px] font-semibold uppercase tracking-wide text-sky-700">
         Монгол дуудлага
       </span>
-      <span className="inline-flex max-w-full rounded-full bg-sky-50 px-3 py-1 text-sm font-semibold text-sky-900 ring-1 ring-sky-200">
+      <span className="inline-flex max-w-full rounded-full bg-sky-50 px-3 py-1 text-sm font-semibold text-sky-900 ring-1 ring-sky-200" translate="no">
         {pronunciation}
       </span>
     </div>
@@ -33,7 +33,7 @@ export function MongolianMeaningHint({ meaning, className = "" }: MeaningProps) 
   return (
     <p className={`text-sm leading-relaxed text-slate-600 ${className}`}>
       <span className="font-semibold text-slate-700">Утга/тайлбар: </span>
-      {meaning}
+      <span translate="no">{meaning}</span>
     </p>
   );
 }

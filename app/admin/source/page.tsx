@@ -49,8 +49,8 @@ export default async function AdminSourcePage() {
                     <div className="text-xs text-slate-500">
                       {r.book} · {r.lesson}-р хичээл
                     </div>
-                    <div className="text-base font-semibold text-slate-900">{r.title_zh}</div>
-                    <div className="text-xs text-slate-600">{r.title_pinyin}</div>
+                    <div className="text-base font-semibold text-slate-900" translate="no">{r.title_zh}</div>
+                    <div className="text-xs text-slate-600" translate="no">{r.title_pinyin}</div>
                     <div className="mt-1 text-[11px] text-emerald-700">
                       {STATUS_MN[r.status] ?? r.status}
                     </div>

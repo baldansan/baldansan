@@ -39,7 +39,7 @@ export function Hsk30QuizBlock({ item, levelId }: Props) {
   return (
     <div className="ex">
       <div className="qtag">{qtag}</div>
-      <div className="q">{highlightZh(item.q)}</div>
+      <div className="q" translate="no">{highlightZh(item.q)}</div>
       <div className="opts">
         {item.opts.map((opt, index) => {
           const isPicked = pickedIndex === index;
@@ -62,14 +62,14 @@ export function Hsk30QuizBlock({ item, levelId }: Props) {
               disabled={answered}
               onClick={() => handlePick(index)}
             >
-              <span className={isZh ? "zh" : undefined}>{opt}</span>
+              <span className={isZh ? "zh" : undefined} translate="no">{opt}</span>
               {mark ? <span className="mk">{mark}</span> : null}
             </button>
           );
         })}
       </div>
       {answered && explanation ? (
-        <div className={`fb ${correct ? "ok" : "no"}`}>{explanation}</div>
+        <div className={`fb ${correct ? "ok" : "no"}`} translate="no">{explanation}</div>
       ) : null}
     </div>
   );

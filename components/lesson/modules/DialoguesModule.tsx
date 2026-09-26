@@ -181,8 +181,8 @@ export default function DialoguesModule({
         <span className="bs-counter">{di + 1} / {total}</span>
       </div>
 
-      {f(dialogue, "title_mn", "title") && <div className="bs-dlg-title">{f(dialogue, "title_mn", "title")}</div>}
-      {f(dialogue, "scene_mn") && <div className="bs-dlg-scene">{f(dialogue, "scene_mn")}</div>}
+      {f(dialogue, "title_mn", "title") && <div className="bs-dlg-title" translate="no">{f(dialogue, "title_mn", "title")}</div>}
+      {f(dialogue, "scene_mn") && <div className="bs-dlg-scene" translate="no">{f(dialogue, "scene_mn")}</div>}
 
       <div className="bs-dlg-bar">
         <div className="bs-speeds" role="group" aria-label="Тоглуулах хурд">
@@ -211,7 +211,7 @@ export default function DialoguesModule({
           return (
             <div key={idx} className={`bs-row bs-${side}`}>
               <div className="bs-bubble">
-                {showName && <div className="bs-spk">{sp}</div>}
+                {showName && <div className="bs-spk" translate="no">{sp}</div>}
                 <div className="bs-line">
                   <div className="bs-line-tx">
                     <div className="bs-py">{f(line, "pinyin")}</div>
@@ -224,7 +224,7 @@ export default function DialoguesModule({
                         )
                       )}
                     </div>
-                    <div className="bs-mn">{f(line, "mn", "mongolian")}</div>
+                    <div className="bs-mn" translate="no">{f(line, "mn", "mongolian")}</div>
                   </div>
                 </div>
               </div>
@@ -245,7 +245,7 @@ export default function DialoguesModule({
             >
               <div className="bs-pop-zh">{tapped.v.zh}</div>
               {tapped.v.pinyin && <div className="bs-pop-py">{tapped.v.pinyin}</div>}
-              <div className="bs-pop-mn">{tapped.v.mn}</div>
+              <div className="bs-pop-mn" translate="no">{tapped.v.mn}</div>
             </div>
           </>
         )}

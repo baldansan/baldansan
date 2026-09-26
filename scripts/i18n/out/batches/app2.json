@@ -1,0 +1,1034 @@
+[
+{
+"mn": "Миний ахиц, quiz болон vocabulary статистик.",
+"ctx": "app/progress/page.tsx"
+},
+{
+"mn": "Study reminders — Бөөндөө Сурцгаая",
+"ctx": "app/reminders/page.tsx"
+},
+{
+"mn": "Өнөөдрийн давталт — Бөөндөө Сурцгаая",
+"ctx": "app/review/daily/page.tsx"
+},
+{
+"mn": "Дүрэм олдсонгүй",
+"ctx": "app/review/grammar/hsk30/[levelId]/[pointId]/page.tsx"
+},
+{
+"mn": "Түвшин олдсонгүй",
+"ctx": "app/review/grammar/hsk30/[levelId]/page.tsx"
+},
+{
+"mn": "HSK 3.0 дүрэм — Давтах",
+"ctx": "app/review/grammar/hsk30/page.tsx"
+},
+{
+"mn": "Өгүүлбэрийн бүтэц — Давтах",
+"ctx": "app/review/grammar/structure/page.tsx"
+},
+{
+"mn": "Давтах · 9 модуль",
+"ctx": "app/review/grammar/structure/page.tsx"
+},
+{
+"mn": "Шинэ үг цээжлэх — Бөөндөө Сурцгаая",
+"ctx": "app/review/memorize/page.tsx"
+},
+{
+"mn": "Миний алдаанууд — Бөөндөө Сурцгаая",
+"ctx": "app/review/mistakes/page.tsx"
+},
+{
+"mn": "Давтах — Бөөндөө Сурцгаая",
+"ctx": "app/review/page.tsx"
+},
+{
+"mn": "Шалгалтын дасгал — Бөөндөө Сурцгаая",
+"ctx": "app/review/practice/page.tsx"
+},
+{
+"mn": "Давтах үгс",
+"ctx": "app/review/review-dashboard.tsx"
+},
+{
+"mn": "Энэ төхөөрөмж дээр хадгалагдсан сурсан үгс болон quiz ахиц.",
+"ctx": "app/review/review-dashboard.tsx"
+},
+{
+"mn": "Нэвтэрсэн үед сурсан үгс аккаунттай холбогдож хадгалагдана.",
+"ctx": "app/review/review-dashboard.tsx"
+},
+{
+"mn": "Та нэвтэрсэн — сурсан үгс Supabase-д хадгалагдана.",
+"ctx": "app/review/review-dashboard.tsx"
+},
+{
+"mn": "Үг давтах тоглоомууд",
+"ctx": "app/review/review-dashboard.tsx"
+},
+{
+"mn": "Сурсан үгээ тоглоомоор бататга.",
+"ctx": "app/review/review-dashboard.tsx"
+},
+{
+"mn": "Review хийж streak, achievement, weekly report-оо үргэлжлүүл.",
+"ctx": "app/review/review-dashboard.tsx"
+},
+{
+"mn": "Сүүлд сурсан хичээлээ үргэлжлүүлээрэй.",
+"ctx": "app/review/review-dashboard.tsx"
+},
+{
+"mn": "Аккаунттай холбогдсон quiz",
+"ctx": "app/review/review-dashboard.tsx"
+},
+{
+"mn": "Одоогоор review хийх үг алга.",
+"ctx": "app/review/review-dashboard.tsx"
+},
+{
+"mn": "Vocabulary page дээрээс үг нэмээрэй.",
+"ctx": "app/review/review-dashboard.tsx"
+},
+{
+"mn": "HSK загвар шалгалт — Бөөндөө Сурцгаая",
+"ctx": "app/review/tests/page.tsx"
+},
+{
+"mn": "Миний сул тал — Бөөндөө Сурцгаая",
+"ctx": "app/review/weak-spots/page.tsx"
+},
+{
+"mn": "Миний үгс — Бөөндөө Сурцгаая",
+"ctx": "app/review/words/page.tsx"
+},
+{
+"mn": "Бичих давталт — Бөөндөө Сурцгаая",
+"ctx": "app/review/writing/page.tsx"
+},
+{
+"mn": "School inquiry — Бөөндөө Сурцгаая",
+"ctx": "app/school-inquiry/page.tsx"
+},
+{
+"mn": "Сургалтын төв, сургууль, багш нарт зориулсан Хятад хэлний platform-ийн inquiry form.",
+"ctx": "app/school-inquiry/page.tsx"
+},
+{
+"mn": "Сургалтын төв, сургууль, багш нар platform-ийн demo, package, onboarding-ийн талаар холбогдох. Inquiry admin CRM руу илгээгдэнэ.",
+"ctx": "app/school-inquiry/page.tsx"
+},
+{
+"mn": "Сургалтын төвд зориулсан Хятад хэлний platform — Бөөндөө Сурцгаая",
+"ctx": "app/schools/page.tsx"
+},
+{
+"mn": "Сургалтын төв, сургууль, багш нарт зориулсан Хятад хэлний digital lesson platform — subtitle, vocabulary, quiz, progress tracking.",
+"ctx": "app/schools/page.tsx"
+},
+{
+"mn": "Сургалтын төв, сургуульд зориулсан Хятад хэлний digital lesson platform",
+"ctx": "app/schools/page.tsx"
+},
+{
+"mn": "Demo үзэх",
+"ctx": "app/schools/page.tsx"
+},
+{
+"mn": "Багшийн багц харах",
+"ctx": "app/schools/page.tsx"
+},
+{
+"mn": "Inquiry илгээх (admin CRM)",
+"ctx": "app/schools/page.tsx"
+},
+{
+"mn": "Асуудал",
+"ctx": "app/schools/page.tsx"
+},
+{
+"mn": "Сургалтын төв, сургуулийн түгээмэл сорилт",
+"ctx": "app/schools/page.tsx"
+},
+{
+"mn": "Шийдэл",
+"ctx": "app/schools/page.tsx"
+},
+{
+"mn": "Бөөндөө Сурцгаая-ийн бүрэлдэхүүн",
+"ctx": "app/schools/page.tsx"
+},
+{
+"mn": "Хэнд зориулагдсан бэ?",
+"ctx": "app/schools/page.tsx"
+},
+{
+"mn": "Сургуулийн workflow",
+"ctx": "app/schools/page.tsx"
+},
+{
+"mn": "Inquiry илгээнэ",
+"ctx": "app/schools/page.tsx"
+},
+{
+"mn": "Сургалтын төвийн rollout",
+"ctx": "app/schools/page.tsx"
+},
+{
+"mn": "Classrooms болон assignments одоо foundation түвшинд идэвхтэй — teacher setup → create class → add students → assign lesson → track via assignment results.",
+"ctx": "app/schools/page.tsx"
+},
+{
+"mn": "Package сонголтууд",
+"ctx": "app/schools/page.tsx"
+},
+{
+"mn": "Сургалтын төвийн demo авах",
+"ctx": "app/schools/page.tsx"
+},
+{
+"mn": "Demo хичээл үзэж, package-ийн талаар асууж, onboarding-ийн төлөвлөгөө аваарай.",
+"ctx": "app/schools/page.tsx"
+},
+{
+"mn": "Тохиргоо — Бөөндөө Сурцгаая",
+"ctx": "app/settings/page.tsx"
+},
+{
+"mn": "Account, курс сонголт, app тохиргоо.",
+"ctx": "app/settings/page.tsx"
+},
+{
+"mn": "Дасгалжуулалтын төв — Бөөндөө Сурцгаая",
+"ctx": "app/study/page.tsx"
+},
+{
+"mn": "Сургалтын төлөвлөгөө — Бөөндөө Сурцгаая",
+"ctx": "app/study-plan/page.tsx"
+},
+{
+"mn": "Өдрийн зорилго, долоо хоногийн төлөвлөгөө — нэг дэлгэцэд.",
+"ctx": "app/study-plan/page.tsx"
+},
+{
+"mn": "Тестийн үр дүн",
+"ctx": "app/test/[testId]/attempt/[attemptId]/page.tsx"
+},
+{
+"mn": "HSK загвар шалгалт",
+"ctx": "app/test/page.tsx"
+},
+{
+"mn": "Weekly report — Бөөндөө Сурцгаая",
+"ctx": "app/weekly-report/page.tsx"
+},
+{
+"mn": "Захиалгын сургалт — Бөөндөө Сурцгаая",
+"ctx": "app/zahialga/page.tsx"
+},
+{
+"mn": "Хятад, Солонгос, Америкаас онлайн захиалахыг эхнээс нь зааж байна. Taobao бүртгэл, бараа хайх заавар.",
+"ctx": "app/zahialga/page.tsx"
+},
+{
+"mn": "Захиалгын сургалт",
+"ctx": "app/zahialga/page.tsx"
+},
+{
+"mn": "应用介绍 — Бөөндөө Сурцгаая",
+"ctx": "app/zh/page.tsx"
+},
+{
+"mn": "«Бөөндөө Сурцгаая» 是一款为蒙古学习者设计的汉语学习应用。课程以 HSK 标准教材为基础，每一课包含：课文（带拼音和蒙古语翻译）、生词、语法注释、练习、听力（配官方音频）以及约34道测验题。",
+"ctx": "app/zh/page.tsx"
+},
+{
+"mn": "Багш нарт зориулсан хятад хэл дээрх танилцуулга",
+"ctx": "app/zh/page.tsx"
+},
+{
+"mn": "开始体验 / Эхлэх",
+"ctx": "app/zh/page.tsx"
+},
+{
+"mn": "УСТГАХ",
+"ctx": "components/account/delete-account-card.tsx"
+},
+{
+"mn": "Алдаа гарлаа. Дахин оролдоно уу.",
+"ctx": "components/account/delete-account-card.tsx"
+},
+{
+"mn": "Сүлжээний алдаа гарлаа. Дахин оролдоно уу.",
+"ctx": "components/account/delete-account-card.tsx"
+},
+{
+"mn": "Бүртгэл устгах",
+"ctx": "components/account/delete-account-card.tsx"
+},
+{
+"mn": "Бүртгэл устгавал таны имэйл, сурах явц, оноо бүгд бүрмөсөн устана — сэргээх боломжгүй.",
+"ctx": "components/account/delete-account-card.tsx"
+},
+{
+"mn": "Бүртгэл устгах…",
+"ctx": "components/account/delete-account-card.tsx"
+},
+{
+"mn": "Баталгаажуулахын тулд",
+"ctx": "components/account/delete-account-card.tsx"
+},
+{
+"mn": "гэж бичнэ үү:",
+"ctx": "components/account/delete-account-card.tsx"
+},
+{
+"mn": "Устгаж байна…",
+"ctx": "components/account/delete-account-card.tsx"
+},
+{
+"mn": "Бүрмөсөн устгах",
+"ctx": "components/account/delete-account-card.tsx"
+},
+{
+"mn": "Болих",
+"ctx": "components/account/delete-account-card.tsx"
+},
+{
+"mn": "Үндсэн цэс",
+"ctx": "components/app/app-sidebar.tsx"
+},
+{
+"mn": "Хятад хэл сурах",
+"ctx": "components/app/app-sidebar.tsx"
+},
+{
+"mn": "Үнийн санал",
+"ctx": "components/app-footer.tsx"
+},
+{
+"mn": "Суралцах",
+"ctx": "components/app-footer.tsx"
+},
+{
+"mn": "Байгууллага / B2B",
+"ctx": "components/app-footer.tsx"
+},
+{
+"mn": "— богино бичлэг, үгийн сан, quiz-ээр Хятад хэл сур.",
+"ctx": "components/app-footer.tsx"
+},
+{
+"mn": ".env.local файлд NEXT_PUBLIC_SUPABASE_URL болон NEXT_PUBLIC_SUPABASE_ANON_KEY нэмнэ үү.",
+"ctx": "components/auth/auth-load-error-card.tsx"
+},
+{
+"mn": "Нэвтэрсэн",
+"ctx": "components/auth-status.tsx"
+},
+{
+"mn": "наргиа",
+"ctx": "components/bichleg/bichleg-slang-sheet.tsx"
+},
+{
+"mn": "Deployment check ачааллаж байна…",
+"ctx": "components/deployment-check-view.tsx"
+},
+{
+"mn": "уух",
+"ctx": "components/dictionary/dictionary-client.tsx"
+},
+{
+"mn": "ус",
+"ctx": "components/dictionary/dictionary-client.tsx"
+},
+{
+"mn": "хүн",
+"ctx": "components/dictionary/dictionary-client.tsx"
+},
+{
+"mn": "ам",
+"ctx": "components/dictionary/dictionary-client.tsx"
+},
+{
+"mn": "гар",
+"ctx": "components/dictionary/dictionary-client.tsx"
+},
+{
+"mn": "зүрх",
+"ctx": "components/dictionary/dictionary-client.tsx"
+},
+{
+"mn": "мод",
+"ctx": "components/dictionary/dictionary-client.tsx"
+},
+{
+"mn": "өвс",
+"ctx": "components/dictionary/dictionary-client.tsx"
+},
+{
+"mn": "дээвэр",
+"ctx": "components/dictionary/dictionary-client.tsx"
+},
+{
+"mn": "явах",
+"ctx": "components/dictionary/dictionary-client.tsx"
+},
+{
+"mn": "эмэгтэй",
+"ctx": "components/dictionary/dictionary-client.tsx"
+},
+{
+"mn": "нар",
+"ctx": "components/dictionary/dictionary-client.tsx"
+},
+{
+"mn": "сар · мах",
+"ctx": "components/dictionary/dictionary-client.tsx"
+},
+{
+"mn": "гал",
+"ctx": "components/dictionary/dictionary-client.tsx"
+},
+{
+"mn": "шороо",
+"ctx": "components/dictionary/dictionary-client.tsx"
+},
+{
+"mn": "төмөр",
+"ctx": "components/dictionary/dictionary-client.tsx"
+},
+{
+"mn": "утас",
+"ctx": "components/dictionary/dictionary-client.tsx"
+},
+{
+"mn": "хулс",
+"ctx": "components/dictionary/dictionary-client.tsx"
+},
+{
+"mn": "бороо",
+"ctx": "components/dictionary/dictionary-client.tsx"
+},
+{
+"mn": "шавж",
+"ctx": "components/dictionary/dictionary-client.tsx"
+},
+{
+"mn": "爱 / ai / хайр …",
+"ctx": "components/dictionary/dictionary-client.tsx"
+},
+{
+"mn": "Өдөр бүр бага багаар",
+"ctx": "components/engagement/home-engagement-section.tsx"
+},
+{
+"mn": "Одоогоор notification алга.",
+"ctx": "components/engagement/notifications-view.tsx"
+},
+{
+"mn": "Өдөр бүр сурах цагаа сануулах in-app reminder тохируулна.",
+"ctx": "components/engagement/reminders-view.tsx"
+},
+{
+"mn": "Guest: reminder энэ төхөөрөмж дээр хадгалагдана.",
+"ctx": "components/engagement/reminders-view.tsx"
+},
+{
+"mn": "Нэвтэрч",
+"ctx": "components/engagement/reminders-view.tsx"
+},
+{
+"mn": "cross-device sync хийх.",
+"ctx": "components/engagement/reminders-view.tsx"
+},
+{
+"mn": "Account дээр хадгалагдаж байна.",
+"ctx": "components/engagement/reminders-view.tsx"
+},
+{
+"mn": "Reminder байхгүй байна.",
+"ctx": "components/engagement/reminders-view.tsx"
+},
+{
+"mn": "Одоогоор энэ нь in-app reminder. Push/email reminder дараагийн шатанд нэмэгдэнэ.",
+"ctx": "components/engagement/reminders-view.tsx"
+},
+{
+"mn": "Сургалтын төлөвлөгөө",
+"ctx": "components/engagement/study-plan-content.tsx"
+},
+{
+"mn": "Нэвтэрсний дараа өнөөдрийн хичээл, давталт, бичлэгийг эндээс харна.",
+"ctx": "components/engagement/study-plan-content.tsx"
+},
+{
+"mn": "Өдрийн зорилго",
+"ctx": "components/engagement/study-plan-content.tsx"
+},
+{
+"mn": "хичээл дуусгацгаая!",
+"ctx": "components/engagement/study-plan-content.tsx"
+},
+{
+"mn": "Долоо хоногийн төлөвлөгөө",
+"ctx": "components/engagement/study-plan-content.tsx"
+},
+{
+"mn": "· Өнөөдөр",
+"ctx": "components/engagement/study-plan-content.tsx"
+},
+{
+"mn": "Хүнд",
+"ctx": "components/feedback/lesson-difficulty-feedback.tsx"
+},
+{
+"mn": "Амар",
+"ctx": "components/feedback/lesson-difficulty-feedback.tsx"
+},
+{
+"mn": "Баярлалаа!",
+"ctx": "components/feedback/lesson-difficulty-feedback.tsx"
+},
+{
+"mn": "санал хүлээн авлаа.",
+"ctx": "components/feedback/lesson-difficulty-feedback.tsx"
+},
+{
+"mn": "Энэ хичээл хэр хүнд байсан бэ?",
+"ctx": "components/feedback/lesson-difficulty-feedback.tsx"
+},
+{
+"mn": "Нэмэлт сэтгэгдэл (заавал биш)",
+"ctx": "components/feedback/lesson-difficulty-feedback.tsx"
+},
+{
+"mn": "Юу сайн, юу хүнд байсан бэ?",
+"ctx": "components/feedback/lesson-difficulty-feedback.tsx"
+},
+{
+"mn": "👍 Баярлалаа!",
+"ctx": "components/feedback/question-feedback-buttons.tsx"
+},
+{
+"mn": "👎 Санал хүлээн авлаа.",
+"ctx": "components/feedback/question-feedback-buttons.tsx"
+},
+{
+"mn": "Энэ асуулт хэрэгтэй юу?",
+"ctx": "components/feedback/question-feedback-buttons.tsx"
+},
+{
+"mn": "Сайн",
+"ctx": "components/feedback/question-feedback-buttons.tsx"
+},
+{
+"mn": "Сайжруулах",
+"ctx": "components/feedback/question-feedback-buttons.tsx"
+},
+{
+"mn": "Юу болохгүй/ойлгомжгүй байна?",
+"ctx": "components/feedback/question-feedback-buttons.tsx"
+},
+{
+"mn": "Заавал биш — бичвэл илүү тус болно",
+"ctx": "components/feedback/question-feedback-buttons.tsx"
+},
+{
+"mn": "Илгээх",
+"ctx": "components/feedback/question-feedback-buttons.tsx"
+},
+{
+"mn": "💬 Алдаа мэдээлэх",
+"ctx": "components/feedback/report-issue-link.tsx"
+},
+{
+"mn": "Алдаа мэдээлэх",
+"ctx": "components/feedback/report-issue-link.tsx"
+},
+{
+"mn": "Хуудас:",
+"ctx": "components/feedback/report-issue-link.tsx"
+},
+{
+"mn": "Илгээгдлээ. Баярлалаа!",
+"ctx": "components/feedback/report-issue-link.tsx"
+},
+{
+"mn": "Юу болсон, юу хийж байсан бэ?",
+"ctx": "components/feedback/report-issue-link.tsx"
+},
+{
+"mn": "— утга, ханз, пиньинь, сонсгол, жишээ, радикал",
+"ctx": "components/games/hsk-vocab-quiz-client.tsx"
+},
+{
+"mn": "· нэр нуугдсан",
+"ctx": "components/games/radical-challenge-client.tsx"
+},
+{
+"mn": "Дүрэм хайх... (ж: 把, өнгөрсөн цаг, 了)",
+"ctx": "components/grammar/grammar-course-search.tsx"
+},
+{
+"mn": "Дүрэм хайх",
+"ctx": "components/grammar/grammar-course-search.tsx"
+},
+{
+"mn": "Тохирох дүрэм олдсонгүй",
+"ctx": "components/grammar/grammar-course-search.tsx"
+},
+{
+"mn": "Өөр түлхүүр үг, хятад бичиг эсвэл монгол нэрээр дахин хайна уу.",
+"ctx": "components/grammar/grammar-course-search.tsx"
+},
+{
+"mn": "· Бүрдэл",
+"ctx": "components/hanzi/CharacterDecompositionHint.tsx"
+},
+{
+"mn": "Гол гишүүд",
+"ctx": "components/helzui/helzui-course-player.tsx"
+},
+{
+"mn": "← Давтах",
+"ctx": "components/helzui/helzui-course-player.tsx"
+},
+{
+"mn": ", нийт",
+"ctx": "components/helzui/helzui-course-player.tsx"
+},
+{
+"mn": "— бүгд хариутай.",
+"ctx": "components/helzui/helzui-course-player.tsx"
+},
+{
+"mn": "Хариу харах",
+"ctx": "components/helzui/helzui-exam-item.tsx"
+},
+{
+"mn": "Холилдсон үгс",
+"ctx": "components/helzui/helzui-exam-item.tsx"
+},
+{
+"mn": "Өөрийн үнэлгээ",
+"ctx": "components/helzui/helzui-exam-item.tsx"
+},
+{
+"mn": "Зөв таасан ✓",
+"ctx": "components/helzui/helzui-exam-item.tsx"
+},
+{
+"mn": "Андуурсан ✗",
+"ctx": "components/helzui/helzui-exam-item.tsx"
+},
+{
+"mn": "Тэмээ багш",
+"ctx": "components/helzui/helzui-module-view.tsx"
+},
+{
+"mn": "Тэмдэг үг",
+"ctx": "components/helzui/helzui-module-view.tsx"
+},
+{
+"mn": "Бодох алгоритм",
+"ctx": "components/helzui/helzui-module-view.tsx"
+},
+{
+"mn": "🔗 Хослол бичих",
+"ctx": "components/helzui/helzui-module-view.tsx"
+},
+{
+"mn": "Тохирох хослолыг санаж ав",
+"ctx": "components/helzui/helzui-module-view.tsx"
+},
+{
+"mn": "← Өмнөх модуль",
+"ctx": "components/helzui/helzui-module-view.tsx"
+},
+{
+"mn": "Дараагийн модуль →",
+"ctx": "components/helzui/helzui-module-view.tsx"
+},
+{
+"mn": "Сүүлд үзсэн хичээлээ үргэлжлүүлэх",
+"ctx": "components/home-continue-section.tsx"
+},
+{
+"mn": "Дууссан хичээл:",
+"ctx": "components/home-continue-section.tsx"
+},
+{
+"mn": "үргэлжлүүлэх →",
+"ctx": "components/home-continue-section.tsx"
+},
+{
+"mn": "HSK5 курс үргэлжлүүлэх →",
+"ctx": "components/home-continue-section.tsx"
+},
+{
+"mn": "Эхний хичээлээ эхлүүлээрэй",
+"ctx": "components/home-continue-section.tsx"
+},
+{
+"mn": "HSK5 курсаас өнөөдөр эхлээрэй.",
+"ctx": "components/home-continue-section.tsx"
+},
+{
+"mn": "HSK5 курс эхлэх →",
+"ctx": "components/home-continue-section.tsx"
+},
+{
+"mn": "Хичээлүүд үзэх",
+"ctx": "components/home-hero-actions.tsx"
+},
+{
+"mn": "HSK5 эхлэх",
+"ctx": "components/home-hero-actions.tsx"
+},
+{
+"mn": "Миний самбар",
+"ctx": "components/home-hero-actions.tsx"
+},
+{
+"mn": "дүрмийн цэг",
+"ctx": "components/hsk30-durem/hsk30-course-player.tsx"
+},
+{
+"mn": "📖 Жишээ · орчуулга дээр дар",
+"ctx": "components/hsk30-durem/hsk30-examples-list.tsx"
+},
+{
+"mn": "← Түвшнүүд",
+"ctx": "components/hsk30-durem/hsk30-level-view.tsx"
+},
+{
+"mn": "дүрмийн цэг — дарж дэлгэрэнгүй үзнэ үү",
+"ctx": "components/hsk30-durem/hsk30-level-view.tsx"
+},
+{
+"mn": "Бүтэц",
+"ctx": "components/hsk30-durem/hsk30-point-view.tsx"
+},
+{
+"mn": "⚠️ Түгээмэл алдаа",
+"ctx": "components/hsk30-durem/hsk30-point-view.tsx"
+},
+{
+"mn": "✗ Буруу",
+"ctx": "components/hsk30-durem/hsk30-point-view.tsx"
+},
+{
+"mn": "✓ Зөв",
+"ctx": "components/hsk30-durem/hsk30-point-view.tsx"
+},
+{
+"mn": "Яагаад:",
+"ctx": "components/hsk30-durem/hsk30-point-view.tsx"
+},
+{
+"mn": "✍️ Дасгал",
+"ctx": "components/hsk30-durem/hsk30-point-view.tsx"
+},
+{
+"mn": "⚡ Хурдан шалгалт",
+"ctx": "components/hsk30-durem/hsk30-point-view.tsx"
+},
+{
+"mn": "← Өмнөх",
+"ctx": "components/hsk30-durem/hsk30-point-view.tsx"
+},
+{
+"mn": "Жагсаалт руу →",
+"ctx": "components/hsk30-durem/hsk30-point-view.tsx"
+},
+{
+"mn": "Зөв / Буруу",
+"ctx": "components/hsk30-durem/hsk30-quiz-block.tsx"
+},
+{
+"mn": "Дараагийн хичээл рүү шууд орно.",
+"ctx": "components/hsk5-continue-learning.tsx"
+},
+{
+"mn": "Таны ахиц",
+"ctx": "components/hsk5-course-progress.tsx"
+},
+{
+"mn": "Example CSV нуух",
+"ctx": "components/import/csv-import-card.tsx"
+},
+{
+"mn": "Example CSV харах",
+"ctx": "components/import/csv-import-card.tsx"
+},
+{
+"mn": "Миний сургалт",
+"ctx": "components/learner-dashboard.tsx"
+},
+{
+"mn": "Ахиц, quiz, streak",
+"ctx": "components/learner-dashboard.tsx"
+},
+{
+"mn": "Нэвтрэх шаардлагатай",
+"ctx": "components/learner-dashboard.tsx"
+},
+{
+"mn": "Dashboard дээр ахицаа харахын тулд account үүсгээрэй эсвэл нэвтэрнэ үү. Guest хэрэглэгч Courses хэсгээс үргэлжлүүлж болно.",
+"ctx": "components/learner-dashboard.tsx"
+},
+{
+"mn": "Guest — HSK5 үзэх",
+"ctx": "components/learner-dashboard.tsx"
+},
+{
+"mn": "Дараагийн хичээлээ үргэлжлүүлээрэй.",
+"ctx": "components/learner-dashboard.tsx"
+},
+{
+"mn": "Quiz оролдлого",
+"ctx": "components/learner-dashboard.tsx"
+},
+{
+"mn": "Quiz дундаж",
+"ctx": "components/learner-dashboard.tsx"
+},
+{
+"mn": "Одоогийн курс",
+"ctx": "components/learner-dashboard.tsx"
+},
+{
+"mn": "Одоогоор хичээл алга. Import ZIP-ээр нэмнэ үү.",
+"ctx": "components/learner-dashboard.tsx"
+},
+{
+"mn": "хичээл идэвхтэй",
+"ctx": "components/learner-dashboard.tsx"
+},
+{
+"mn": "Курсын жагсаалт",
+"ctx": "components/learner-dashboard.tsx"
+},
+{
+"mn": "Сүүлийн quiz",
+"ctx": "components/learner-dashboard.tsx"
+},
+{
+"mn": "Хичээл рүү →",
+"ctx": "components/learner-dashboard.tsx"
+},
+{
+"mn": "Дуу гаргаж чадсангүй — Safari/Chrome хөтчөөр нээгээд үзээрэй (WeChat доторх хөтөч дуу дэмждэггүй). 无法播放 — 请用 Safari/Chrome 打开（微信内置浏览器不支持发音）。",
+"ctx": "components/lesson/SpeakButton.tsx"
+},
+{
+"mn": "Шалгаад үзье",
+"ctx": "components/lesson/deep/deep-grammar-drill.tsx"
+},
+{
+"mn": "Хариултаа бич…",
+"ctx": "components/lesson/deep/deep-grammar-drill.tsx"
+},
+{
+"mn": "Жишээ",
+"ctx": "components/lesson/deep/deep-teaching-blocks.tsx"
+},
+{
+"mn": "Дэлгэрэнгүй тайлбар",
+"ctx": "components/lesson/deep/deep-teaching-blocks.tsx"
+},
+{
+"mn": "Хэрэглээ",
+"ctx": "components/lesson/deep/deep-teaching-blocks.tsx"
+},
+{
+"mn": "Ойролцоо үгтэй харьцуулбал",
+"ctx": "components/lesson/deep/deep-teaching-blocks.tsx"
+},
+{
+"mn": "Бусад жишээ",
+"ctx": "components/lesson/deep/deep-teaching-blocks.tsx"
+},
+{
+"mn": "Ханзны бүтэц, түүх",
+"ctx": "components/lesson/deep/deep-teaching-blocks.tsx"
+},
+{
+"mn": "Бүрэлдэхүүн хэсэг",
+"ctx": "components/lesson/deep/deep-teaching-blocks.tsx"
+},
+{
+"mn": "язгуур",
+"ctx": "components/lesson/deep/deep-teaching-blocks.tsx"
+},
+{
+"mn": "Санахад тус болох нь",
+"ctx": "components/lesson/deep/deep-teaching-blocks.tsx"
+},
+{
+"mn": "Бичих дараалал",
+"ctx": "components/lesson/deep/deep-teaching-blocks.tsx"
+},
+{
+"mn": "Андуурч болзошгүй ханз",
+"ctx": "components/lesson/deep/deep-teaching-blocks.tsx"
+},
+{
+"mn": "Энэ ханз орсон үгс",
+"ctx": "components/lesson/deep/deep-teaching-blocks.tsx"
+},
+{
+"mn": "Дуудлагын дасгал",
+"ctx": "components/lesson/deep/deep-teaching-blocks.tsx"
+},
+{
+"mn": "Зөвлөгөө",
+"ctx": "components/lesson/deep/deep-teaching-blocks.tsx"
+},
+{
+"mn": "Татаж байна…",
+"ctx": "components/lesson/download-lesson-button.tsx"
+},
+{
+"mn": "✓ Татагдсан — оффлайн үзэж болно",
+"ctx": "components/lesson/download-lesson-button.tsx"
+},
+{
+"mn": "Алдаа гарлаа — интернэтээ шалгаад дахин дарна уу",
+"ctx": "components/lesson/download-lesson-button.tsx"
+},
+{
+"mn": "⬇ Хичээл татах (оффлайн үзэх)",
+"ctx": "components/lesson/download-lesson-button.tsx"
+},
+{
+"mn": "Хэсгүүд",
+"ctx": "components/lesson/exam-lesson-watch.tsx"
+},
+{
+"mn": "Асуултууд —",
+"ctx": "components/lesson/exam-lesson-watch.tsx"
+},
+{
+"mn": "⏱ Хугацаа",
+"ctx": "components/lesson/exam-lesson-watch.tsx"
+},
+{
+"mn": "Шалгалт эхлэхэд тоолуур энд харагдана.",
+"ctx": "components/lesson/exam-lesson-watch.tsx"
+},
+{
+"mn": "Оноо / дүгнэлт",
+"ctx": "components/lesson/exam-lesson-watch.tsx"
+},
+{
+"mn": "Шалгалт дууссаны дараа оноо болон хариултын дүгнэлтүүд энд харагдана.",
+"ctx": "components/lesson/exam-lesson-watch.tsx"
+},
+{
+"mn": "Сонсох хэсэг",
+"ctx": "components/lesson/exam-lesson-watch.tsx"
+},
+{
+"mn": "Энэ хичээлд үгийн сан одоогоор байхгүй байна.",
+"ctx": "components/lesson/hsk-flashcard-vocabulary-study.tsx"
+},
+{
+"mn": "Үгийн сан дууслаа",
+"ctx": "components/lesson/hsk-flashcard-vocabulary-study.tsx"
+},
+{
+"mn": "Мэддэг болсон:",
+"ctx": "components/lesson/hsk-flashcard-vocabulary-study.tsx"
+},
+{
+"mn": "· Дахин давтана:",
+"ctx": "components/lesson/hsk-flashcard-vocabulary-study.tsx"
+},
+{
+"mn": "Картын урд тал руу буцах",
+"ctx": "components/lesson/hsk-flashcard-vocabulary-study.tsx"
+},
+{
+"mn": "Утга, pinyin харах",
+"ctx": "components/lesson/hsk-flashcard-vocabulary-study.tsx"
+},
+{
+"mn": "Мэдэхгүй бол дарж хараарай",
+"ctx": "components/lesson/hsk-flashcard-vocabulary-study.tsx"
+},
+{
+"mn": "Тогтоох тусламж",
+"ctx": "components/lesson/hsk-flashcard-vocabulary-study.tsx"
+},
+{
+"mn": "Сурах тусламж — албан ёсны үүсэл биш",
+"ctx": "components/lesson/hsk-flashcard-vocabulary-study.tsx"
+},
+{
+"mn": "Мэднэ",
+"ctx": "components/lesson/hsk-flashcard-vocabulary-study.tsx"
+},
+{
+"mn": "Дахин давтана",
+"ctx": "components/lesson/hsk-flashcard-vocabulary-study.tsx"
+},
+{
+"mn": "Бүтэн хуудас",
+"ctx": "components/lesson/hsk-flashcard-vocabulary-study.tsx"
+},
+{
+"mn": "5–10 мин",
+"ctx": "components/lesson/hsk-lesson-detail-view.tsx"
+},
+{
+"mn": "Хичээл судлах",
+"ctx": "components/lesson/hsk-lesson-detail-view.tsx"
+},
+{
+"mn": "Багшийн тайлбар, pinyin, tone",
+"ctx": "components/lesson/hsk-lesson-detail-view.tsx"
+},
+{
+"mn": "Дасгал / тоглоом",
+"ctx": "components/lesson/hsk-lesson-detail-view.tsx"
+},
+{
+"mn": "Холбох, орчуулах",
+"ctx": "components/lesson/hsk-lesson-detail-view.tsx"
+},
+{
+"mn": "Номын хичээл",
+"ctx": "components/lesson/hsk-lesson-detail-view.tsx"
+},
+{
+"mn": "Хичээлийн алхам",
+"ctx": "components/lesson/hsk-lesson-detail-view.tsx"
+},
+{
+"mn": "Энэ хичээлийн үгээр холбох, орчуулах тоглоом тогло.",
+"ctx": "components/lesson/hsk-lesson-detail-view.tsx"
+},
+{
+"mn": "Хөгний зураглал",
+"ctx": "components/lesson/hsk-lesson-study-content.tsx"
+},
+{
+"mn": "Үгийн сан хараахан ороогүй байна.",
+"ctx": "components/lesson/hsk-lesson-study-content.tsx"
+},
+{
+"mn": "Сайн байна уу!",
+"ctx": "components/lesson/hsk-lesson-study-content.tsx"
+},
+{
+"mn": "Уучлаарай!",
+"ctx": "components/lesson/hsk-lesson-study-content.tsx"
+},
+{
+"mn": "Зүгээр!",
+"ctx": "components/lesson/hsk-lesson-study-content.tsx"
+}
+]

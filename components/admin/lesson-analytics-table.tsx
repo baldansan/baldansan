@@ -156,7 +156,7 @@ export function LessonAnalyticsTable({ lessons }: Props) {
                   <span className="font-mono text-xs text-slate-500">
                     {lesson.lessonId}
                   </span>{" "}
-                  {lesson.title} — {attentionReasons(lesson).join(" · ")}
+                  <span translate="no">{lesson.title}</span> — {attentionReasons(lesson).join(" · ")}
                 </span>
                 <Link
                   href={`/admin/analytics/lessons/${lesson.lessonId}`}
@@ -193,8 +193,8 @@ export function LessonAnalyticsTable({ lessons }: Props) {
                   <p className="font-mono text-xs text-slate-500">
                     {lesson.lessonId}
                   </p>
-                  <p className="font-medium text-slate-900">{lesson.title}</p>
-                  <p className="text-xs text-slate-500">{lesson.chineseTitle}</p>
+                  <p className="font-medium text-slate-900" translate="no">{lesson.title}</p>
+                  <p className="text-xs text-slate-500" translate="no">{lesson.chineseTitle}</p>
                 </td>
                 <td className="px-3 py-3">
                   <LessonStatusBadge

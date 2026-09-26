@@ -35,6 +35,7 @@ export function Hsk30ExamplesList({ examples }: Props) {
             {ex.p ? <div className="p">{ex.p}</div> : null}
             <div
               className="m"
+              translate="no"
               role="button"
               tabIndex={0}
               onClick={() => toggleReveal(idx)}

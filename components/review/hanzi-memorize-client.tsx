@@ -360,7 +360,7 @@ export function HanziMemorizeClient({ restoreLevel }: Props = {}) {
                       {isDone ? "⭐" : (b.icon ?? "📦")}
                     </span>
                   </span>
-                  <span className="bs-mem-map-title">{nodeTitle(b, locale)}</span>
+                  <span className="bs-mem-map-title" translate="no">{nodeTitle(b, locale)}</span>
                   <span className="bs-mem-map-count">
                     {b.studiedCount}/{total} {tr(locale, "үзсэн")}
                   </span>

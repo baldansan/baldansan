@@ -231,7 +231,7 @@ export function VocabularyEditor({
             >
               <div className="text-sm">
                 <span className="text-xs text-slate-500">#{word.order_index}</span>
-                <p className="font-medium text-slate-900">
+                <p className="font-medium text-slate-900" translate="no">
                   {word.chinese}
                   {word.hsk_level ? (
                     <span className="ml-2 text-xs text-emerald-700">
@@ -240,9 +240,9 @@ export function VocabularyEditor({
                   ) : null}
                 </p>
                 {word.pinyin ? (
-                  <p className="text-slate-500">{word.pinyin}</p>
+                  <p className="text-slate-500" translate="no">{word.pinyin}</p>
                 ) : null}
-                <p className="text-slate-600">{word.mongolian}</p>
+                <p className="text-slate-600" translate="no">{word.mongolian}</p>
               </div>
               <button
                 type="button"

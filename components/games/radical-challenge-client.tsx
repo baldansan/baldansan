@@ -449,7 +449,7 @@ export function RadicalChallengeClient({
                 ) : null}
                 <b className="block text-[22px] font-black">{glyph}</b>
                 {tier.showNames ? (
-                  <span className="block text-[10px] text-[var(--app-muted)]">
+                  <span className="block text-[10px] text-[var(--app-muted)]" translate="no">
                     {meta.name}
                   </span>
                 ) : null}
@@ -494,10 +494,10 @@ export function RadicalChallengeClient({
                 {tr(locale, "цуваа")} {lastGain.streakBonus})
               </span>
             </h3>
-            <div className="mt-2 rounded-xl border border-[var(--app-border)] bg-white p-2.5 text-[13px]">
+            <div className="mt-2 rounded-xl border border-[var(--app-border)] bg-white p-2.5 text-[13px]" translate="no">
               💡 {current.etymology_mn}
             </div>
-            <div className="mt-2 flex flex-wrap gap-1.5">
+            <div className="mt-2 flex flex-wrap gap-1.5" translate="no">
               {breakdown.map((part, i) => (
                 <div
                   key={`${part.c}-${i}`}

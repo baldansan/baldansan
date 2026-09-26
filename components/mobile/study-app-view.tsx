@@ -153,7 +153,7 @@ export function StudyAppView({ allLessons }: Props) {
                         <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-emerald-50 text-xs font-bold text-emerald-700">
                           {lesson.id}
                         </span>
-                        <span className="min-w-0 flex-1">
+                        <span className="min-w-0 flex-1" translate="no">
                           <span className="block truncate font-semibold text-[var(--app-text)]">
                             {lesson.chineseTitle}
                           </span>

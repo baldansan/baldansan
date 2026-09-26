@@ -89,7 +89,7 @@ export function LessonPathWarmupStage({
           сурна 🌸
         </p>
         <p className="bs-tm-intro-bubble-sub">
-          «{lessonDisplayTitleMn(lesson.title.mn)}» — {lesson.level}{" "}
+          «<span translate="no">{lessonDisplayTitleMn(lesson.title.mn)}</span>» — {lesson.level}{" "}
           {lesson.lesson_number}-р хичээл
         </p>
       </div>
@@ -124,7 +124,7 @@ export function LessonPathWarmupStage({
             {warmWords.map((word) => (
               <div key={word.id ?? word.zh} className="bs-tm-warm-word">
                 <div className="bs-tm-warm-word-zh">{word.zh}</div>
-                <div className="bs-tm-warm-word-mn">
+                <div className="bs-tm-warm-word-mn" translate="no">
                   {word.meaning_mn ?? word.mn}
                 </div>
               </div>

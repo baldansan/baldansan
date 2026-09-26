@@ -158,7 +158,7 @@ export default function LessonPlayer({
             {locale === "zh"
               ? `第${lesson.lesson_number}课`
               : `${lesson.lesson_number}-р хичээл`}{" "}
-            — {lesson.title.mn}
+            — <span translate="no">{lesson.title.mn}</span>
           </h1>
           <p>{lesson.title.zh}</p>
         </div>

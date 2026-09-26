@@ -121,6 +121,7 @@ export function MockTestSentenceOrder({
               key={`${index}-${pos}`}
               type="button"
               className="bs-mt-chip hanzi bs-mt-chip--built"
+              translate="no"
               disabled={locked}
               onClick={() => toggleToken(index)}
             >
@@ -137,6 +138,7 @@ export function MockTestSentenceOrder({
               key={index}
               type="button"
               className="bs-mt-chip hanzi"
+              translate="no"
               disabled={locked}
               onClick={() => toggleToken(index)}
             >
@@ -173,11 +175,11 @@ export function MockTestSentenceOrder({
           ) : (
             <p>
               ✗ Буруу. Зөв хариулт:{" "}
-              <span className="hanzi">{question.correct_answer ?? "—"}</span>
+              <span className="hanzi" translate="no">{question.correct_answer ?? "—"}</span>
             </p>
           )}
           {question.explanation_mn ? (
-            <p className="bs-mt-explain">{question.explanation_mn}</p>
+            <p className="bs-mt-explain" translate="no">{question.explanation_mn}</p>
           ) : null}
           {onAdvanceNext && !showResults ? (
             <button

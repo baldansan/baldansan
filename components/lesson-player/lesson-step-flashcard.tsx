@@ -216,7 +216,7 @@ export function LessonStepFlashcard({
 
         ) : current.mongolian ? (
 
-          <p className="mt-2 text-sm font-medium text-emerald-700">{current.mongolian}</p>
+          <p className="mt-2 text-sm font-medium text-emerald-700" translate="no">{current.mongolian}</p>
 
         ) : null}
 

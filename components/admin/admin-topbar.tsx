@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { AdminNavBody } from "@/components/admin/admin-sidebar";
 import { resolveAdminPageTitle } from "@/lib/admin/admin-nav";
+import { LocaleToggle } from "@/components/i18n/locale-toggle";
 
 export function AdminTopbar() {
   const pathname = usePathname();
@@ -40,6 +41,7 @@ export function AdminTopbar() {
         </div>
 
         <div className="flex shrink-0 items-center gap-2">
+          <LocaleToggle />
           <span className="hidden rounded-full bg-emerald-50 px-3 py-1 text-xs font-semibold text-emerald-700 ring-1 ring-emerald-200 sm:inline">
             Админ
           </span>

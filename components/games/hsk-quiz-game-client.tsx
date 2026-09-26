@@ -348,19 +348,22 @@ export function HskQuizGameClient({ config }: { config: HskQuizGameConfig }) {
           isHanziDisplay && current.kind !== "example-cloze" ? (
             <p className="bs-meaning-hanzi">{current.display}</p>
           ) : (
-            <p className="mt-3 text-center text-base font-bold leading-relaxed text-[var(--bs-ink)]">
+            <p className="mt-3 text-center text-base font-bold leading-relaxed text-[var(--bs-ink)]" translate="no">
               {current.display}
             </p>
           )
         ) : null}
         {current.subDisplay &&
         !(current.kind === "word-recall" && !locked) ? (
-          <p className="text-center text-sm font-extrabold text-[var(--bs-green)]">
+          <p
+            className="text-center text-sm font-extrabold text-[var(--bs-green)]"
+            translate={current.kind === "radical-pick" ? undefined : "no"}
+          >
             {current.subDisplay}
           </p>
         ) : null}
         {current.hint ? (
-          <p className="mt-1 text-center text-xs text-[var(--bs-muted)]">
+          <p className="mt-1 text-center text-xs text-[var(--bs-muted)]" translate="no">
             {current.hint}
           </p>
         ) : null}
@@ -386,6 +389,7 @@ export function HskQuizGameClient({ config }: { config: HskQuizGameConfig }) {
                 disabled={locked}
                 onClick={() => pickOption(option)}
                 className={cls}
+                translate="no"
               >
                 {option}
               </button>

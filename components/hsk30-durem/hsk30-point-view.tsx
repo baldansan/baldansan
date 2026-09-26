@@ -31,7 +31,7 @@ export function Hsk30PointView({
 
   return (
     <div className="hsk30-pt">
-      <div className="p-head">
+      <div className="p-head" translate="no">
         <span className="p-num">{pointIndex + 1}</span>
         <span className="p-zh zh">{point.zh}</span>
         <span className="p-pin">{point.pin}</span>
@@ -46,7 +46,7 @@ export function Hsk30PointView({
           height={34}
           emojiScale={0.5}
         />
-        <div className="t-txt">{point.teacher}</div>
+        <div className="t-txt" translate="no">{point.teacher}</div>
       </div>
 
       {point.structure ? (
@@ -75,7 +75,7 @@ export function Hsk30PointView({
               </div>
               {row.why ? (
                 <div className="why">
-                  <b>Яагаад:</b> {row.why}
+                  <b>Яагаад:</b> <span translate="no">{row.why}</span>
                 </div>
               ) : null}
             </div>
@@ -84,7 +84,7 @@ export function Hsk30PointView({
       ) : null}
 
       {point.notes ? (
-        <div className="note">🐫 {highlightZh(point.notes)}</div>
+        <div className="note" translate="no">🐫 {highlightZh(point.notes)}</div>
       ) : null}
 
       {exercises.length > 0 ? (

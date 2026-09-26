@@ -66,7 +66,7 @@ export function VocabCard({
       <p className="text-lg font-medium" style={{ color: EXERCISE_PRIMARY }}>
         {word.pinyin}
       </p>
-      <p className="text-base text-slate-700">{word.mn}</p>
+      <p className="text-base text-slate-700" translate="no">{word.mn}</p>
       {word.example_zh ? (
         <p
           className="mt-1 rounded-xl px-3 py-2 text-sm text-slate-600"

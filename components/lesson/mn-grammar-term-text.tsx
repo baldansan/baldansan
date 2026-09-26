@@ -98,12 +98,12 @@ function TermPopover({
         style={pos}
         onClick={(e) => e.stopPropagation()}
       >
-        <p id="bs-mn-term-popover-title" className="bs-mn-term-popover-title">
+        <p id="bs-mn-term-popover-title" className="bs-mn-term-popover-title" translate="no">
           {entry.title}
         </p>
-        <p className="bs-mn-term-popover-desc">{entry.description}</p>
+        <p className="bs-mn-term-popover-desc" translate="no">{entry.description}</p>
         {entry.examples.length > 0 ? (
-          <ul className="bs-mn-term-popover-examples">
+          <ul className="bs-mn-term-popover-examples" translate="no">
             {entry.examples.map((ex) => (
               <li key={ex}>{ex}</li>
             ))}
@@ -130,7 +130,7 @@ export function MnGrammarTermText({ text, className, nested = false }: Props) {
 
   const hasTerms = segments.some((seg) => seg.kind === "term");
   if (!hasTerms) {
-    return <span className={className}>{text}</span>;
+    return <span className={className} translate="no">{text}</span>;
   }
 
   function openTerm(
@@ -151,7 +151,7 @@ export function MnGrammarTermText({ text, className, nested = false }: Props) {
 
   return (
     <>
-      <span className={className}>
+      <span className={className} translate="no">
         {segments.map((seg, i) => {
           if (seg.kind === "text") {
             return <span key={i}>{seg.value}</span>;

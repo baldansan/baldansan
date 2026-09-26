@@ -325,7 +325,7 @@ export function MockTestPracticeClient({ test, questions, lessonTitles }: Props)
                   return (
                     <div key={row.questionId} className="bs-mtp-wrong-row">
                       <span className="bs-mtp-wrong-no">№{row.qNo}</span>
-                      <span className="bs-mtp-wrong-text hanzi">
+                      <span className="bs-mtp-wrong-text hanzi" translate="no">
                         {source?.stem?.trim() ||
                           source?.options
                             ?.map((opt) => opt.text)
@@ -338,7 +338,7 @@ export function MockTestPracticeClient({ test, questions, lessonTitles }: Props)
                           href={`/lessons/${lessonId}`}
                           className="bs-mtp-wrong-lesson"
                         >
-                          {lessonTitle} →
+                          <span translate="no">{lessonTitle}</span> →
                         </Link>
                       ) : null}
                     </div>

@@ -199,7 +199,7 @@ export function TeacherReportsView() {
                 key={row.classroomId}
                 className="rounded-2xl bg-white p-5 ring-1 ring-slate-200"
               >
-                <h3 className="font-semibold text-slate-900">{row.name}</h3>
+                <h3 className="font-semibold text-slate-900" translate="no">{row.name}</h3>
                 <p className="mt-1 text-xs text-slate-500">
                   {row.analytics.totalStudents} students ·{" "}
                   {row.analytics.assignmentsCount} assignments ·{" "}
@@ -240,7 +240,7 @@ export function TeacherReportsView() {
                   href={`/teacher/assignments/${a.assignmentId}`}
                   className="font-medium text-emerald-700 hover:text-emerald-800"
                 >
-                  {a.title}
+                  <span translate="no">{a.title}</span>
                 </Link>
                 <p className="text-xs text-slate-500">
                   {a.classroomName} · {assignmentLessonLabel(a.lessonId)}

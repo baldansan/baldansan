@@ -51,7 +51,7 @@ function TeacherSpeechBubble({ children }: { children: string }) {
         className="absolute -left-1 top-4 h-3 w-3 rotate-45 bg-amber-50 ring-1 ring-amber-100"
         aria-hidden
       />
-      <p className="text-sm leading-7 text-slate-800">&ldquo;{children}&rdquo;</p>
+      <p className="text-sm leading-7 text-slate-800" translate="no">&ldquo;{children}&rdquo;</p>
     </div>
   );
 }
@@ -71,7 +71,7 @@ function ToneSection({ content, lessonToneNote }: { content: HskStudyContent; le
             className="rounded-xl bg-emerald-50 px-3 py-3 ring-1 ring-emerald-100"
           >
             <div className="flex items-center justify-between gap-2">
-              <p className="text-xs font-semibold text-emerald-800">{tone.nameMn}</p>
+              <p className="text-xs font-semibold text-emerald-800" translate="no">{tone.nameMn}</p>
               <span className="text-lg text-emerald-600" aria-hidden>
                 {tone.motionSymbol}
               </span>
@@ -81,12 +81,12 @@ function ToneSection({ content, lessonToneNote }: { content: HskStudyContent; le
             </p>
             <p className="text-xl font-bold text-slate-900">{tone.example}</p>
             {tone.explanationMn ? (
-              <p className="mt-1 text-sm text-slate-600">{tone.explanationMn}</p>
+              <p className="mt-1 text-sm text-slate-600" translate="no">{tone.explanationMn}</p>
             ) : null}
           </div>
         ))}
       </div>
-      <p className="rounded-xl bg-emerald-50/80 px-3 py-2.5 text-sm text-emerald-900 ring-1 ring-emerald-100">
+      <p className="rounded-xl bg-emerald-50/80 px-3 py-2.5 text-sm text-emerald-900 ring-1 ring-emerald-100" translate="no">
         {lessonToneNote}
       </p>
       <div className="flex flex-wrap gap-2 rounded-xl bg-slate-50 px-3 py-2.5 ring-1 ring-slate-200">
@@ -135,7 +135,7 @@ function KeyWordsPreview({
             <div className="min-w-0">
               <p className="text-xl font-bold text-slate-900">{word.chinese}</p>
               <p className="text-sm text-emerald-700">{word.pinyin}</p>
-              <p className="text-sm text-slate-600">{word.mongolian}</p>
+              <p className="text-sm text-slate-600" translate="no">{word.mongolian}</p>
             </div>
             {containsTargetScript(word.chinese) ? (
               <SpeakerButton
@@ -254,7 +254,7 @@ function DialogueBubble({
           : "max-w-[85%] rounded-2xl rounded-br-md bg-white px-3.5 py-3 ring-1 ring-slate-200"
       }
     >
-      <p className="text-xs font-bold text-slate-500">{line.speaker ?? (isLeft ? "A" : "B")}</p>
+      <p className="text-xs font-bold text-slate-500" translate="no">{line.speaker ?? (isLeft ? "A" : "B")}</p>
       <div className="flex items-start gap-2">
         <div className="min-w-0 flex-1">
           <p className="text-base font-semibold text-slate-900">{line.chinese}</p>
@@ -264,7 +264,7 @@ function DialogueBubble({
             </p>
           ) : null}
           {line.mongolian ? (
-            <p className="mt-1 text-sm text-slate-600">{line.mongolian}</p>
+            <p className="mt-1 text-sm text-slate-600" translate="no">{line.mongolian}</p>
           ) : null}
         </div>
         {containsTargetScript(line.chinese) ? (
@@ -320,6 +320,7 @@ export function HskLessonStudyContent({
             <li
               key={item}
               className="flex gap-2 text-sm leading-6 text-slate-700"
+              translate="no"
             >
               <span className="text-emerald-500" aria-hidden>
                 ✓
@@ -337,6 +338,7 @@ export function HskLessonStudyContent({
             <li
               key={line}
               className="rounded-xl bg-emerald-50/60 px-3 py-2.5 text-sm leading-6 text-slate-700 ring-1 ring-emerald-100"
+              translate="no"
             >
               {line}
             </li>

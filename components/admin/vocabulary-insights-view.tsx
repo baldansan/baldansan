@@ -135,9 +135,9 @@ export function VocabularyInsightsView({
           <tbody className="divide-y divide-slate-100">
             {rows.map((row) => (
               <tr key={row.vocabularyWordId}>
-                <td className="px-4 py-3 font-medium">{row.chinese}</td>
-                <td className="px-4 py-3 text-slate-600">{row.pinyin || "—"}</td>
-                <td className="px-4 py-3">{row.mongolian}</td>
+                <td className="px-4 py-3 font-medium" translate="no">{row.chinese}</td>
+                <td className="px-4 py-3 text-slate-600" translate="no">{row.pinyin || "—"}</td>
+                <td className="px-4 py-3" translate="no">{row.mongolian}</td>
                 <td className="px-4 py-3">{row.hskLevel || "—"}</td>
                 <td className="px-4 py-3">{row.learnedCount}</td>
                 <td className="px-4 py-3">

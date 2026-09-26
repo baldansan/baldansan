@@ -20,9 +20,9 @@ function ExampleRow({ example }: { example: DeepExample }) {
       {example.pinyin ? (
         <p className="bs-deep-ex-py">{example.pinyin}</p>
       ) : null}
-      <p className="bs-deep-ex-mn">{example.mn}</p>
+      <p translate="no" className="bs-deep-ex-mn">{example.mn}</p>
       {example.note_mn ? (
-        <p className="bs-deep-ex-note">{example.note_mn}</p>
+        <p translate="no" className="bs-deep-ex-note">{example.note_mn}</p>
       ) : null}
     </li>
   );
@@ -62,7 +62,7 @@ function MistakeList({ mistakes }: { mistakes?: DeepMistake[] }) {
             <p className="bs-deep-right hanzi">
               <span aria-hidden>✓</span> {mistake.right}
             </p>
-            <p className="bs-deep-why">{mistake.why_mn}</p>
+            <p translate="no" className="bs-deep-why">{mistake.why_mn}</p>
           </li>
         ))}
       </ul>
@@ -85,11 +85,11 @@ function CompareList({
         {compare.map((row, index) => (
           <li key={`${row.zh}-${index}`} className="bs-deep-compare-row">
             <span className="bs-deep-compare-zh hanzi">{row.zh}</span>
-            <span className="bs-deep-compare-meta">
+            <span translate="no" className="bs-deep-compare-meta">
               {row.pinyin ? `${row.pinyin} · ` : ""}
               {row.mn}
             </span>
-            <span className="bs-deep-compare-diff">{row.diff_mn}</span>
+            <span translate="no" className="bs-deep-compare-diff">{row.diff_mn}</span>
           </li>
         ))}
       </ul>
@@ -133,12 +133,12 @@ export function DeepDisclosure({
 export function DeepWordPanel({ word }: { word: DeepWord }) {
   return (
     <DeepDisclosure label="Дэлгэрэнгүй тайлбар" tone="accent">
-      <p className="bs-deep-teach">{word.teach_mn}</p>
+      <p translate="no" className="bs-deep-teach">{word.teach_mn}</p>
 
       {word.usage_mn?.length ? (
         <div className="bs-deep-block">
           <p className="bs-deep-block-title">Хэрэглээ</p>
-          <ul className="bs-deep-bullets">
+          <ul translate="no" className="bs-deep-bullets">
             {word.usage_mn.map((line, index) => (
               <li key={index}>{line}</li>
             ))}
@@ -166,15 +166,15 @@ export function DeepGrammarPanel({ grammar }: { grammar: DeepGrammar }) {
         <ol className="bs-deep-steps">
           {grammar.steps.map((step, index) => (
             <li key={index} className="bs-deep-step">
-              <p className="bs-deep-step-title">{step.title_mn}</p>
-              <p className="bs-deep-step-body">{step.body_mn}</p>
+              <p translate="no" className="bs-deep-step-title">{step.title_mn}</p>
+              <p translate="no" className="bs-deep-step-body">{step.body_mn}</p>
               {step.example ? (
                 <div className="bs-deep-step-example">
                   <p className="bs-deep-ex-zh hanzi">{step.example.zh}</p>
                   {step.example.pinyin ? (
                     <p className="bs-deep-ex-py">{step.example.pinyin}</p>
                   ) : null}
-                  <p className="bs-deep-ex-mn">{step.example.mn}</p>
+                  <p translate="no" className="bs-deep-ex-mn">{step.example.mn}</p>
                 </div>
               ) : null}
             </li>
@@ -199,7 +199,7 @@ export function DeepHanziPanel({ hanzi }: { hanzi: DeepHanzi }) {
   return (
     <DeepDisclosure label="Ханзны бүтэц, түүх">
       {hanzi.meaning_mn ? (
-        <p className="bs-deep-teach">
+        <p translate="no" className="bs-deep-teach">
           <span className="hanzi">{hanzi.hanzi}</span>
           {hanzi.pinyin ? ` (${hanzi.pinyin})` : ""} — {hanzi.meaning_mn}
         </p>
@@ -212,9 +212,9 @@ export function DeepHanziPanel({ hanzi }: { hanzi: DeepHanzi }) {
             {parts.map((part, index) => (
               <li key={`${part.c}-${index}`} className="bs-deep-part">
                 <span className="bs-deep-part-c hanzi">{part.c}</span>
-                <span className="bs-deep-part-meaning">{part.meaning_mn}</span>
+                <span translate="no" className="bs-deep-part-meaning">{part.meaning_mn}</span>
                 {part.role_mn ? (
-                  <span className="bs-deep-part-role">{part.role_mn}</span>
+                  <span translate="no" className="bs-deep-part-role">{part.role_mn}</span>
                 ) : null}
                 {part.isRadical ? (
                   <span className="bs-deep-part-badge">язгуур</span>
@@ -228,7 +228,7 @@ export function DeepHanziPanel({ hanzi }: { hanzi: DeepHanzi }) {
       {hanzi.story_mn ? (
         <div className="bs-deep-block">
           <p className="bs-deep-block-title">Санахад тус болох нь</p>
-          <p className="bs-deep-step-body">{hanzi.story_mn}</p>
+          <p translate="no" className="bs-deep-step-body">{hanzi.story_mn}</p>
         </div>
       ) : null}
 
@@ -238,7 +238,7 @@ export function DeepHanziPanel({ hanzi }: { hanzi: DeepHanzi }) {
             Бичих дараалал
             {hanzi.stroke_count ? ` · ${hanzi.stroke_count} зурлага` : ""}
           </p>
-          <ul className="bs-deep-bullets">
+          <ul translate="no" className="bs-deep-bullets">
             {hanzi.stroke_tips_mn.map((tip, index) => (
               <li key={index}>{tip}</li>
             ))}
@@ -258,7 +258,7 @@ export function DeepHanziPanel({ hanzi }: { hanzi: DeepHanzi }) {
             {hanzi.words.map((word, index) => (
               <li key={`${word.zh}-${index}`}>
                 <span className="hanzi">{word.zh}</span>
-                <span className="bs-deep-compare-meta">
+                <span translate="no" className="bs-deep-compare-meta">
                   {word.pinyin ? `${word.pinyin} · ` : ""}
                   {word.mn}
                 </span>
@@ -286,14 +286,14 @@ export function DeepPronunciationPanel({
   return (
     <DeepDisclosure label="Дуудлагын дасгал" tone="accent">
       {pronunciation.focus_mn ? (
-        <p className="bs-deep-teach">{pronunciation.focus_mn}</p>
+        <p translate="no" className="bs-deep-teach">{pronunciation.focus_mn}</p>
       ) : null}
 
       {pronunciation.drills?.map((drill, index) => (
         <div key={index} className="bs-deep-block">
-          <p className="bs-deep-block-title">{drill.title_mn}</p>
+          <p translate="no" className="bs-deep-block-title">{drill.title_mn}</p>
           {drill.instruction_mn ? (
-            <p className="bs-deep-step-body">{drill.instruction_mn}</p>
+            <p translate="no" className="bs-deep-step-body">{drill.instruction_mn}</p>
           ) : null}
           <ul className="bs-deep-pairs">
             {drill.pairs.map((pair, pairIndex) => (
@@ -302,7 +302,7 @@ export function DeepPronunciationPanel({
                   <span className="bs-deep-pair-side">
                     <b className="hanzi">{pair.a.zh}</b>
                     <span>{pair.a.pinyin}</span>
-                    <span className="bs-deep-pair-mn">{pair.a.mn}</span>
+                    <span translate="no" className="bs-deep-pair-mn">{pair.a.mn}</span>
                   </span>
                   <span className="bs-deep-pair-vs" aria-hidden>
                     ↔
@@ -310,11 +310,11 @@ export function DeepPronunciationPanel({
                   <span className="bs-deep-pair-side">
                     <b className="hanzi">{pair.b.zh}</b>
                     <span>{pair.b.pinyin}</span>
-                    <span className="bs-deep-pair-mn">{pair.b.mn}</span>
+                    <span translate="no" className="bs-deep-pair-mn">{pair.b.mn}</span>
                   </span>
                 </div>
                 {pair.note_mn ? (
-                  <p className="bs-deep-why">{pair.note_mn}</p>
+                  <p translate="no" className="bs-deep-why">{pair.note_mn}</p>
                 ) : null}
               </li>
             ))}
@@ -325,7 +325,7 @@ export function DeepPronunciationPanel({
       {pronunciation.tips_mn?.length ? (
         <div className="bs-deep-block">
           <p className="bs-deep-block-title">Зөвлөгөө</p>
-          <ul className="bs-deep-bullets">
+          <ul translate="no" className="bs-deep-bullets">
             {pronunciation.tips_mn.map((tip, index) => (
               <li key={index}>{tip}</li>
             ))}

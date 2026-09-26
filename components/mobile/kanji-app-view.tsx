@@ -196,13 +196,13 @@ export function KanjiAppView({ entries, lessonVocab, lang = null }: Props) {
                         isLearned ? "app-kanji-cell-learned" : ""
                       }`}
                     >
-                      <p className="text-2xl font-bold text-[var(--app-text)]">
+                      <p className="text-2xl font-bold text-[var(--app-text)]" translate="no">
                         {entry.chinese}
                       </p>
-                      <p className="mt-0.5 truncate text-[10px] text-emerald-700">
+                      <p className="mt-0.5 truncate text-[10px] text-emerald-700" translate="no">
                         {entry.pinyin}
                       </p>
-                      <p className="mt-0.5 line-clamp-2 text-[10px] leading-tight text-[var(--app-muted)]">
+                      <p className="mt-0.5 line-clamp-2 text-[10px] leading-tight text-[var(--app-muted)]" translate="no">
                         {entry.mongolian}
                       </p>
                     </Link>

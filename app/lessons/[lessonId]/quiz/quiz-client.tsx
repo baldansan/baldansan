@@ -338,9 +338,9 @@ export function LessonQuizClient({
 
       <section className="overflow-hidden">
         <h1 className="break-words text-xl font-bold leading-snug tracking-tight sm:text-3xl">
-          Дасгал — {lesson.title}
+          Дасгал — <span translate="no">{lesson.title}</span>
         </h1>
-        <p className="mt-1 break-words text-lg text-slate-700">{lesson.chineseTitle}</p>
+        <p className="mt-1 break-words text-lg text-slate-700" translate="no">{lesson.chineseTitle}</p>
         <p className="mt-2 text-sm text-slate-600 sm:text-base">
           Сурсан үг, өгүүлбэрээ шалгаарай.
         </p>
@@ -395,7 +395,7 @@ export function LessonQuizClient({
                   .filter((a) => !a.isCorrect)
                   .map((a, i) => (
                     <li key={`${a.orderIndex}-${i}`} className="break-words">
-                      {a.question}: зөв хариулт — {a.correctAnswer}
+                      <span translate="no">{a.question}</span>: зөв хариулт — <span translate="no">{a.correctAnswer}</span>
                     </li>
                   ))}
               </ul>
@@ -483,7 +483,7 @@ export function LessonQuizClient({
                 {current.type === "cloze" ? "Нөхөх" : "Сонгох"}
               </p>
               <div className="mt-2 flex items-start gap-2">
-                <h2 className="min-w-0 flex-1 text-lg font-semibold leading-snug text-slate-900 sm:text-xl">
+                <h2 className="min-w-0 flex-1 text-lg font-semibold leading-snug text-slate-900 sm:text-xl" translate="no">
                   {current.question}
                 </h2>
                 {!current.audioUrl && containsTargetScript(current.question) ? (
@@ -512,6 +512,7 @@ export function LessonQuizClient({
                       onClick={() => handleSelect(option)}
                       disabled={revealed}
                       className={`${optionClass(option)} flex-1`}
+                      translate="no"
                     >
                       {option}
                     </button>

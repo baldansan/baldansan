@@ -166,7 +166,7 @@ function Stem({ question }: { question: MockTestQuestionRow }) {
         <img src={question.image_url} alt="" className="bs-mtp-image" />
       ) : null}
       {question.stem ? (
-        <p className="bs-mtp-stem hanzi">{question.stem}</p>
+        <p className="bs-mtp-stem hanzi" translate="no">{question.stem}</p>
       ) : null}
     </>
   );
@@ -198,7 +198,7 @@ function TextOptionList({
             className={`bs-mtp-option${OPTION_STATE_CLASS[state]}`}
           >
             <span className="bs-mtp-option-key">{opt.key}</span>
-            <span className="bs-mtp-option-text hanzi">{opt.text}</span>
+            <span className="bs-mtp-option-text hanzi" translate="no">{opt.text}</span>
             <OptionMark state={state} />
           </button>
         );
@@ -237,7 +237,7 @@ function ImageOptionList({
               // eslint-disable-next-line @next/next/no-img-element
               <img src={opt.image_url} alt="" />
             ) : (
-              <span className="hanzi">{opt.text}</span>
+              <span className="hanzi" translate="no">{opt.text}</span>
             )}
             <OptionMark state={state} />
           </button>
@@ -306,7 +306,7 @@ function SentenceOrderBuilder({
       <p className="bs-mtp-order-hint">
         {sentenceOrderInstruction(question.stem)}
       </p>
-      <p className="bs-mtp-order-built hanzi">{built || "…"}</p>
+      <p className="bs-mtp-order-built hanzi" translate="no">{built || "…"}</p>
       <div className="bs-mtp-chip-row">
         {tokens.map((token, index) => (
           <button
@@ -314,6 +314,7 @@ function SentenceOrderBuilder({
             type="button"
             disabled={revealed || picked.includes(index)}
             className={`bs-mtp-chip hanzi${picked.includes(index) ? " bs-mtp-chip--used" : ""}`}
+            translate="no"
             onClick={() => setPicked((prev) => [...prev, index])}
           >
             {token}
@@ -494,7 +495,7 @@ export function MockTestPracticeQuestion({
       {revealed && question.audio_transcript?.trim() ? (
         <section className="bs-mtp-transcript">
           <p className="bs-mtp-transcript-label">Сонссон бичвэр</p>
-          <p className="bs-mtp-transcript-text hanzi">
+          <p className="bs-mtp-transcript-text hanzi" translate="no">
             {question.audio_transcript.trim()}
           </p>
           <p className="bs-mtp-transcript-note">
@@ -546,18 +547,18 @@ function PracticeFeedbackPanel({
       {feedback.isCorrect === false && feedback.yourText ? (
         <p className="bs-mtp-feedback-row">
           <span>Таны хариулт</span>
-          <b className="hanzi">{feedback.yourText}</b>
+          <b className="hanzi" translate="no">{feedback.yourText}</b>
         </p>
       ) : null}
 
       <p className="bs-mtp-feedback-row">
         <span>{selfGraded ? "Жишиг хариу" : "Зөв хариулт"}</span>
-        <b className="hanzi">{feedback.correctText}</b>
+        <b className="hanzi" translate="no">{feedback.correctText}</b>
       </p>
 
       {feedback.explanation ? (
         <p className="bs-mtp-feedback-why">
-          <b>Яагаад:</b> {feedback.explanation}
+          <b>Яагаад:</b> <span translate="no">{feedback.explanation}</span>
         </p>
       ) : null}
 

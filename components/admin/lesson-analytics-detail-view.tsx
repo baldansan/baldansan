@@ -48,10 +48,10 @@ export function LessonAnalyticsDetailView({ detail }: Props) {
     <div className="flex flex-col gap-8">
       <section>
         <p className="text-sm font-medium text-emerald-700">Хичээлийн тайлан</p>
-        <h1 className="mt-1 text-2xl font-bold text-slate-900 sm:text-3xl">
+        <h1 className="mt-1 text-2xl font-bold text-slate-900 sm:text-3xl" translate="no">
           {metrics.title}
         </h1>
-        <p className="mt-1 text-lg text-slate-600">{metrics.chineseTitle}</p>
+        <p className="mt-1 text-lg text-slate-600" translate="no">{metrics.chineseTitle}</p>
         <div className="mt-3 flex flex-wrap items-center gap-2">
           <span className="font-mono text-sm text-slate-500">
             ID {metrics.lessonId}
@@ -167,7 +167,7 @@ export function LessonAnalyticsDetailView({ detail }: Props) {
               <tbody className="divide-y divide-slate-100">
                 {questionPerformance.map((row) => (
                   <tr key={row.questionKey}>
-                    <td className="max-w-md px-4 py-3">{row.question}</td>
+                    <td className="max-w-md px-4 py-3" translate="no">{row.question}</td>
                     <td className="px-4 py-3">{row.attemptsCount}</td>
                     <td className="px-4 py-3">
                       {formatRate(row.accuracyPercent)}
@@ -177,7 +177,7 @@ export function LessonAnalyticsDetailView({ detail }: Props) {
                         </span>
                       ) : null}
                     </td>
-                    <td className="px-4 py-3 text-xs">{row.correctAnswer}</td>
+                    <td className="px-4 py-3 text-xs" translate="no">{row.correctAnswer}</td>
                   </tr>
                 ))}
               </tbody>
@@ -216,7 +216,7 @@ export function LessonAnalyticsDetailView({ detail }: Props) {
               <tbody className="divide-y divide-slate-100">
                 {vocabularyEngagement.slice(0, 20).map((row) => (
                   <tr key={row.vocabularyWordId}>
-                    <td className="px-4 py-3">
+                    <td className="px-4 py-3" translate="no">
                       <span className="font-medium">{row.chinese}</span>
                       {row.pinyin ? (
                         <span className="ml-2 text-xs text-slate-500">
