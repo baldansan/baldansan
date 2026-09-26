@@ -41,6 +41,8 @@ export type Classroom = {
   deliveryMode: ClassroomDeliveryMode | null;
   scheduleNote: string | null;
   courseId: string | null;
+  /** 6 оронтой ангийн код (migration 064); null бол migration ажиллаагүй. */
+  joinCode: string | null;
 };
 
 export type ClassroomDeliveryMode = "in_person" | "online" | "hybrid";

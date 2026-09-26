@@ -1,0 +1,2617 @@
+{
+"丁": {
+"char": "丁",
+"ids": "丁",
+"parts": [],
+"reason": "独体字",
+"zh": "独体字，像一颗钉子",
+"mn": "Салгахгүй ханз, хадаасны дүрс."
+},
+"万": {
+"char": "万",
+"ids": "万",
+"parts": [],
+"reason": "独体字",
+"zh": "独体字，不再拆分",
+"mn": "Салгахгүй, бие даасан ганц үсэг."
+},
+"丈": {
+"char": "丈",
+"ids": "丈",
+"parts": [],
+"reason": "独体字: 又 not visually present (strokes are 一 丿 ㇏)",
+"zh": "独体字：一横，一撇，一捺",
+"mn": "Салгахгүй ханз: хэвтээ, зүүн налуу, баруун налуу зураас."
+},
+"不": {
+"char": "不",
+"ids": "不",
+"parts": [],
+"reason": "独体字",
+"zh": "独体字，不再拆分",
+"mn": "Салгахгүй, бие даасан ганц үсэг."
+},
+"与": {
+"char": "与",
+"ids": "与",
+"parts": [],
+"reason": "独体字",
+"zh": "独体字，不再拆分",
+"mn": "Салгахгүй, бие даасан ганц үсэг."
+},
+"丐": {
+"char": "丐",
+"ids": "丐",
+"parts": [],
+"reason": "独体字",
+"zh": "独体字，不再拆分",
+"mn": "Салгахгүй, бие даасан ганц үсэг."
+},
+"丑": {
+"char": "丑",
+"ids": "丑",
+"parts": [],
+"reason": "独体字: 刀 not visually present (strokes 横折 丨 一 一, no 撇)",
+"zh": "独体字，不再拆分",
+"mn": "Салгахгүй, бие даасан ганц үсэг."
+},
+"专": {
+"char": "专",
+"ids": "专",
+"parts": [],
+"reason": "独体字",
+"zh": "独体字，不再拆分",
+"mn": "Салгахгүй, бие даасан ганц үсэг."
+},
+"且": {
+"char": "且",
+"ids": "且",
+"parts": [],
+"reason": "独体字: 月 not visually present (且 is 丨+横折 with inner 横, no 撇/钩)",
+"zh": "独体字：框里两横，下一长横",
+"mn": "Салгахгүй ханз: хүрээ дотор хоёр хэвтээ, доор урт хэвтээ."
+},
+"世": {
+"char": "世",
+"ids": "世",
+"parts": [],
+"reason": "独体字",
+"zh": "独体字，不再拆分",
+"mn": "Салгахгүй, бие даасан ганц үсэг."
+},
+"丘": {
+"char": "丘",
+"ids": "丘",
+"parts": [],
+"reason": "独体字: 斤 not visually present (only one 撇)",
+"zh": "独体字，不再拆分",
+"mn": "Салгахгүй, бие даасан ганц үсэг."
+},
+"业": {
+"char": "业",
+"ids": "业",
+"parts": [],
+"reason": "独体字",
+"zh": "独体字，不再拆分",
+"mn": "Салгахгүй, бие даасан ганц үсэг."
+},
+"东": {
+"char": "东",
+"ids": "东",
+"parts": [],
+"reason": "独体字: 七 not visually present (strokes 一 撇折 竖钩 丿 丶)",
+"zh": "独体字，不再拆分",
+"mn": "Салгахгүй, бие даасан ганц үсэг."
+},
+"丝": {
+"char": "丝",
+"ids": "丝",
+"parts": [],
+"reason": "独体字: halves are 撇折+撇点 pairs (not 纟/幺/厶); no standard part split",
+"zh": "独体字：两组折笔，下面一横",
+"mn": "Салгахгүй ханз: хоёр хос тахир зураас, доор хэвтээ."
+},
+"严": {
+"char": "严",
+"ids": "⿻亚丿",
+"parts": [
+"亚",
+"丿"
+],
+"reason": "亚+厂 overlap (6+2=8≠7): glyph is 亚 whose bottom 横 plus a 撇 forms 厂",
+"zh": "亚的下横左端加一撇",
+"mn": "亚 үсгийн доод хэвтээний зүүн үзүүрт налуу зураас нэмнэ."
+},
+"丧": {
+"char": "丧",
+"ids": "⿱⿻土丷𧘇",
+"parts": [
+"土",
+"丷",
+"𧘇"
+],
+"reason": "亡 not present; top is 土 with 丷, bottom is 𧘇 (衣 bottom) (3+2+3=8)",
+"zh": "土加两点，下面衣字底",
+"mn": "Дээр 土 ба хоёр цэг, доор нь 衣-ийн доод хэсэг 𧘇."
+},
+"临": {
+"char": "临",
+"ids": "⿰〢⿱⿱𠂉丶𫩏",
+"parts": [
+"〢",
+"𠂉",
+"丶",
+"𫩏"
+],
+"reason": "Unknown parts filled: two verticals 〢, then 𠂉 + 丶 over boxed 𫩏 (⿴囗丨) (2+2+1+4=9)",
+"zh": "左两竖，右上𠂉加点，下方格",
+"mn": "Зүүн талд хоёр босоо, баруун дээр 𠂉 ба цэг, доор нь хоёр нүдтэй хайрцаг."
+},
+"举": {
+"char": "举",
+"ids": "⿱兴⿻二丨",
+"parts": [
+"兴",
+"二",
+"丨"
+],
+"reason": "扌 not visually present (no hook/提): bottom is 二 crossed by 丨 (6+2+1=9)",
+"zh": "兴下面两横一竖",
+"mn": "兴 доор хоёр хэвтээ, нэг босоо зураас."
+},
+"乃": {
+"char": "乃",
+"ids": "乃",
+"parts": [],
+"reason": "独体字",
+"zh": "独体字，不再拆分",
+"mn": "Салгахгүй, бие даасан ганц үсэг."
+},
+"久": {
+"char": "久",
+"ids": "久",
+"parts": [],
+"reason": "独体字",
+"zh": "独体字，不再拆分",
+"mn": "Салгахгүй, бие даасан ганц үсэг."
+},
+"之": {
+"char": "之",
+"ids": "之",
+"parts": [],
+"reason": "独体字",
+"zh": "独体字，不再拆分",
+"mn": "Салгахгүй, бие даасан ганц үсэг."
+},
+"乌": {
+"char": "乌",
+"ids": "乌",
+"parts": [],
+"reason": "独体字",
+"zh": "独体字，不再拆分",
+"mn": "Салгахгүй, бие даасан ганц үсэг."
+},
+"乎": {
+"char": "乎",
+"ids": "⿱丿⿻丷丁",
+"parts": [
+"丿",
+"丷",
+"丁"
+],
+"reason": "Unknown part filled: 丿 on top, 丷, then 丁 whose 竖钩 runs up between the dots (1+2+2=5)",
+"zh": "一撇，两点，下面一个丁",
+"mn": "Дээр налуу зураас, хоёр цэг, доор нь 丁."
+},
+"乐": {
+"char": "乐",
+"ids": "乐",
+"parts": [],
+"reason": "独体字",
+"zh": "独体字，不再拆分",
+"mn": "Салгахгүй, бие даасан ганц үсэг."
+},
+"乞": {
+"char": "乞",
+"ids": "⿱𠂉乙",
+"parts": [
+"𠂉",
+"乙"
+],
+"reason": "Unknown top filled: 𠂉 (丿+一) over 乙 (2+1=3)",
+"zh": "上面𠂉（一撇一横），下面乙",
+"mn": "Дээр налуу ба хэвтээ зураас (𠂉), доор нь 乙."
+},
+"也": {
+"char": "也",
+"ids": "也",
+"parts": [],
+"reason": "独体字",
+"zh": "独体字，不再拆分",
+"mn": "Салгахгүй, бие даасан ганц үсэг."
+},
+"习": {
+"char": "习",
+"ids": "⿹乛冫",
+"parts": [
+"乛",
+"冫"
+],
+"reason": "Unknown part filled: one 横折钩 (乛-type stroke) wrapping 冫 (1+2=3)",
+"zh": "横折钩里面两点",
+"mn": "Тахир дэгээтэй зураас дотор нь хоёр цэг 冫."
+},
+"乡": {
+"char": "乡",
+"ids": "乡",
+"parts": [],
+"reason": "独体字: 幺 not visually present (last stroke is 撇, not 点)",
+"zh": "独体字，不再拆分",
+"mn": "Салгахгүй, бие даасан ганц үсэг."
+},
+"书": {
+"char": "书",
+"ids": "书",
+"parts": [],
+"reason": "独体字",
+"zh": "独体字，不再拆分",
+"mn": "Салгахгүй, бие даасан ганц үсэг."
+},
+"予": {
+"char": "予",
+"ids": "予",
+"parts": [],
+"reason": "独体字: bottom is 横钩+竖钩, not 丁; no clean split",
+"zh": "独体字，不再拆分",
+"mn": "Салгахгүй, бие даасан ганц үсэг."
+},
+"亏": {
+"char": "亏",
+"ids": "⿱一丂",
+"parts": [
+"一",
+"丂"
+],
+"reason": "二 overlaps the 丂 top: glyph is 一 over 丂, as in 号/巧 (1+2=3)",
+"zh": "一横下面一个丂",
+"mn": "Дээр хэвтээ зураас, доор нь 丂."
+},
+"互": {
+"char": "互",
+"ids": "互",
+"parts": [],
+"reason": "独体字",
+"zh": "独体字，不再拆分",
+"mn": "Салгахгүй, бие даасан ганц үсэг."
+},
+"五": {
+"char": "五",
+"ids": "五",
+"parts": [],
+"reason": "独体字",
+"zh": "独体字，不再拆分",
+"mn": "Салгахгүй, бие даасан ганц үсэг."
+},
+"井": {
+"char": "井",
+"ids": "井",
+"parts": [],
+"reason": "独体字",
+"zh": "独体字，不再拆分",
+"mn": "Салгахгүй, бие даасан ганц үсэг."
+},
+"亡": {
+"char": "亡",
+"ids": "⿱亠𠃊",
+"parts": [
+"亠",
+"𠃊"
+],
+"reason": "Unknown part filled: 亠 over the L-shaped 竖折 𠃊 (2+1=3)",
+"zh": "亠下面一个竖折",
+"mn": "Дээр 亠, доор нь булан хэлбэрийн зураас 𠃊."
+},
+"亦": {
+"char": "亦",
+"ids": "⿱亠⿻丿小",
+"parts": [
+"亠",
+"丿",
+"小"
+],
+"reason": "Unknown bottom filled: 亠 over 小 with an extra 撇 through the middle (2+1+3=6); no single standard part",
+"zh": "亠下面小，中间多一撇",
+"mn": "亠 доор 小, дундуур нь нэмэлт налуу зураас."
+},
+"今": {
+"char": "今",
+"ids": "⿱人⿱丶乛",
+"parts": [
+"人",
+"丶",
+"乛"
+],
+"reason": "Unknown bottom filled: 人, then 丶, then 横撇 (乛) (2+1+1=4)",
+"zh": "人下一点，再加横撇",
+"mn": "人 доор цэг, дараа нь хэвтээ-налуу зураас."
+},
+"介": {
+"char": "介",
+"ids": "⿱人⿰丿丨",
+"parts": [
+"人",
+"丿",
+"丨"
+],
+"reason": "Unknown bottom filled: 人 over 丿 and 丨 (2+1+1=4)",
+"zh": "人下面一撇一竖",
+"mn": "人 доор налуу ба босоо зураас."
+},
+"令": {
+"char": "令",
+"ids": "⿱今丶",
+"parts": [
+"今",
+"丶"
+],
+"reason": "Unknown bottom filled: glyph is 今 with one more 点 below (4+1=5)",
+"zh": "今字下面加一点",
+"mn": "今 үсгийн доор нэг цэг нэмнэ."
+},
+"以": {
+"char": "以",
+"ids": "以",
+"parts": [],
+"reason": "独体字",
+"zh": "独体字，不再拆分",
+"mn": "Салгахгүй, бие даасан ганц үсэг."
+},
+"伞": {
+"char": "伞",
+"ids": "⿱人⿻丷十",
+"parts": [
+"人",
+"丷",
+"十"
+],
+"reason": "Unknown bottom filled: 人 over 丷 and 十 (2+2+2=6)",
+"zh": "人字头，两点，下面十",
+"mn": "Дээр 人, хоёр цэг, доор нь 十."
+},
+"伤": {
+"char": "伤",
+"ids": "⿰亻⿱𠂉力",
+"parts": [
+"亻",
+"𠂉",
+"力"
+],
+"reason": "Unknown part filled: right is 𠂉 over 力 (2+2+2=6)",
+"zh": "单人旁，右边𠂉下面力",
+"mn": "Зүүн талд хүн 亻, баруун талд 𠂉 доор хүч 力."
+},
+"余": {
+"char": "余",
+"ids": "⿱亼⿻一小",
+"parts": [
+"亼",
+"一",
+"小"
+],
+"reason": "Unknown bottom filled: 亼 (人+一) over 一 with 小 hanging from it (3+1+3=7)",
+"zh": "人一盖，下面一横加小",
+"mn": "Дээр 亼, доор нь хэвтээ зураас ба 小."
+},
+"佩": {
+"char": "佩",
+"ids": "⿰亻⿵几⿱一巾",
+"parts": [
+"亻",
+"几",
+"一",
+"巾"
+],
+"reason": "凡 not visually present (no 丶); inside 几 is 一 + 巾 (2+2+1+3=8)",
+"zh": "单人旁，几里面一横加巾",
+"mn": "Зүүн талд 亻, баруун талд 几 дотор хэвтээ зураас ба 巾."
+},
+"修": {
+"char": "修",
+"ids": "⿰⿰亻丨⿱夂彡",
+"parts": [
+"亻",
+"丨",
+"夂",
+"彡"
+],
+"reason": "攸 contains 攵 (4 strokes) but glyph has 夂 (3): 亻+丨+夂+彡 (2+1+3+3=9)",
+"zh": "亻，一竖，夂下面彡",
+"mn": "亻, босоо зураас, 夂 доор 彡."
+},
+"候": {
+"char": "候",
+"ids": "⿻侯丨",
+"parts": [
+"侯",
+"丨"
+],
+"reason": "矦 not visually present; glyph is 侯 with an extra 丨 after 亻 (9+1=10)",
+"zh": "侯字的亻后面加一竖",
+"mn": "侯 үсгийн 亻-ийн ард нэг босоо зураас нэмнэ."
+},
+"兆": {
+"char": "兆",
+"ids": "兆",
+"parts": [],
+"reason": "独体字",
+"zh": "独体字，不再拆分",
+"mn": "Салгахгүй, бие даасан ганц үсэг."
+},
+"先": {
+"char": "先",
+"ids": "⿱⺧儿",
+"parts": [
+"⺧",
+"儿"
+],
+"reason": "Unknown top filled: 牛字头 ⺧ (丿一丨一) over 儿 (4+2=6)",
+"zh": "牛字头下面一个儿",
+"mn": "Дээр 牛-ийн толгой ⺧, доор нь 儿."
+},
+"党": {
+"char": "党",
+"ids": "⿱⺌⿱冖兄",
+"parts": [
+"⺌",
+"冖",
+"兄"
+],
+"reason": "尚 not present (cover is 冖, not 冂): 尚字头 ⺌+冖 over 兄 (3+2+5=10)",
+"zh": "尚字头（⺌冖）下面兄",
+"mn": "Дээр ⺌ ба 冖, доор нь 兄."
+},
+"兜": {
+"char": "兜",
+"ids": "⿱白儿",
+"parts": [
+"白",
+"儿"
+],
+"reason": "Kept approx: 白 is flanked by a 4-stroke bracket (丿+竖提 left, コ right) with no standard part, over 儿; stroke total off by 4",
+"zh": "白两边有半框，下面儿",
+"mn": "Хоёр талдаа хагас хүрээтэй 白, доор нь 儿."
+},
+"全": {
+"char": "全",
+"ids": "⿱人王",
+"parts": [
+"人",
+"王"
+],
+"reason": "入/玉 not visually present: glyph is 人 over 王 (2+4=6)",
+"zh": "人字头下面一个王",
+"mn": "Дээр 人, доор нь 王."
+},
+"兹": {
+"char": "兹",
+"ids": "⿳丷一⿰幺幺",
+"parts": [
+"丷",
+"一",
+"幺",
+"幺"
+],
+"reason": "Top is 丷 (converging 点+撇), not 八 (2+1+3+3=9)",
+"zh": "两点一横，下面两个幺",
+"mn": "Хоёр цэг, хэвтээ зураас, доор нь хоёр 幺."
+},
+"养": {
+"char": "养",
+"ids": "⿱丷⿻三介",
+"parts": [
+"丷",
+"三",
+"介"
+],
+"reason": "羊+儿 not visually present: 丷 + 三 with 介 (人 crossing the 三, plus 丿丨) (2+3+4=9)",
+"zh": "两点三横，下面介",
+"mn": "Хоёр цэг, гурван хэвтээ, доор нь 介."
+},
+"兼": {
+"char": "兼",
+"ids": "⿳丷⿻卄彐八",
+"parts": [
+"丷",
+"卄",
+"彐",
+"八"
+],
+"reason": "禾禾 not visually present: 丷, 一 with two 丨 (卄) running through 彐, then 八 (2+3+3+2=10)",
+"zh": "两点一横，彐穿两竖，下八",
+"mn": "Хоёр цэг, хэвтээ, 彐-г хоёр босоо зураас нэвтэлнэ, доор 八."
+},
+"农": {
+"char": "农",
+"ids": "农",
+"parts": [],
+"reason": "独体字",
+"zh": "独体字，不再拆分",
+"mn": "Салгахгүй, бие даасан ганц үсэг."
+},
+"凸": {
+"char": "凸",
+"ids": "凸",
+"parts": [],
+"reason": "独体字",
+"zh": "独体字，不再拆分",
+"mn": "Салгахгүй, бие даасан ганц үсэг."
+},
+"凹": {
+"char": "凹",
+"ids": "凹",
+"parts": [],
+"reason": "独体字",
+"zh": "独体字，不再拆分",
+"mn": "Салгахгүй, бие даасан ганц үсэг."
+},
+"击": {
+"char": "击",
+"ids": "⿻二山",
+"parts": [
+"二",
+"山"
+],
+"reason": "Unknown part filled: 二 crossed by the middle 丨 of 山 (2+3=5)",
+"zh": "山的中竖穿过两横",
+"mn": "山-ийн дунд босоо зураас хоёр хэвтээг нэвтэлнэ."
+},
+"刀": {
+"char": "刀",
+"ids": "刀",
+"parts": [],
+"reason": "独体字",
+"zh": "独体字，不再拆分",
+"mn": "Салгахгүй, бие даасан ганц үсэг."
+},
+"制": {
+"char": "制",
+"ids": "⿰⿻牛冂刂",
+"parts": [
+"牛",
+"冂",
+"刂"
+],
+"reason": "Unknown part filled: left is 牛 overlapped by 冂 (looks like 巾), then 刂 (4+2+2=8)",
+"zh": "牛加冂，右边立刀旁",
+"mn": "牛 ба 冂, баруун талд хутга 刂."
+},
+"力": {
+"char": "力",
+"ids": "力",
+"parts": [],
+"reason": "独体字",
+"zh": "独体字，不再拆分",
+"mn": "Салгахгүй, бие даасан ганц үсэг."
+},
+"办": {
+"char": "办",
+"ids": "⿲丶力丶",
+"parts": [
+"丶",
+"力",
+"丶"
+],
+"reason": "八 not visually present: two separate 点 flank 力 (1+2+1=4)",
+"zh": "力字两边各一点",
+"mn": "力 үсгийн хоёр талд нэг нэг цэг."
+},
+"劲": {
+"char": "劲",
+"ids": "⿰⿱又工力",
+"parts": [
+"又",
+"工",
+"力"
+],
+"reason": "Unknown part filled: left is ス-shape shown as 又 over 工 (as in 经/径), then 力 (2+3+2=7)",
+"zh": "左边又下工，右边力",
+"mn": "Зүүн талд 又 доор 工, баруун талд хүч 力."
+},
+"北": {
+"char": "北",
+"ids": "北",
+"parts": [],
+"reason": "独体字",
+"zh": "独体字，不再拆分",
+"mn": "Салгахгүй, бие даасан ганц үсэг."
+},
+"升": {
+"char": "升",
+"ids": "升",
+"parts": [],
+"reason": "独体字",
+"zh": "独体字，不再拆分",
+"mn": "Салгахгүй, бие даасан ганц үсэг."
+},
+"半": {
+"char": "半",
+"ids": "⿱丷⿻二丨",
+"parts": [
+"丷",
+"二",
+"丨"
+],
+"reason": "牛 not visually present: 丷 over two 横 crossed by 丨 (2+2+1=5)",
+"zh": "两点，两横，一竖穿过",
+"mn": "Хоёр цэг, хоёр хэвтээ, дундуур нь босоо зураас."
+},
+"卑": {
+"char": "卑",
+"ids": "⿱白⿻丿十",
+"parts": [
+"白",
+"丿",
+"十"
+],
+"reason": "Missing 撇: glyph is 白 + 丿 + 十 (5+1+2=8)",
+"zh": "白下一撇，再加十",
+"mn": "白 доор налуу зураас, дараа нь 十."
+},
+"单": {
+"char": "单",
+"ids": "⿱丷⿻甲一",
+"parts": [
+"丷",
+"甲",
+"一"
+],
+"reason": "Unknown part filled: 丷 over 甲 crossed by a long 一 (2+5+1=8)",
+"zh": "两点，甲，中间一长横",
+"mn": "Хоёр цэг, 甲, дундуур нь урт хэвтээ зураас."
+},
+"卫": {
+"char": "卫",
+"ids": "⿱卩一",
+"parts": [
+"卩",
+"一"
+],
+"reason": "乛+一 misses the 竖: glyph is 卩 over a long 一 (2+1=3)",
+"zh": "卩下面一长横",
+"mn": "卩 доор урт хэвтээ зураас."
+},
+"印": {
+"char": "印",
+"ids": "⿰⿱丿⿺𠄌一卩",
+"parts": [
+"丿",
+"𠄌",
+"一",
+"卩"
+],
+"reason": "Unknown left filled: 丿 + 竖提 𠄌 + 一 (no standard part), then 卩 (1+1+1+2=5)",
+"zh": "左边撇、竖提、横，右边卩",
+"mn": "Зүүн талд налуу, босоо-дэгээ, хэвтээ зураас; баруун талд 卩."
+},
+"即": {
+"char": "即",
+"ids": "⿰艮卩",
+"parts": [
+"艮",
+"卩"
+],
+"reason": "Kept approx: left (5 strokes) has no encoded part; it looks like 艮 without its 撇, so total is off by 1",
+"zh": "左边像艮少一撇，右边卩",
+"mn": "Зүүн тал нь налуугүй 艮 шиг, баруун талд 卩."
+},
+"卵": {
+"char": "卵",
+"ids": "卵",
+"parts": [],
+"reason": "独体字",
+"zh": "独体字，不再拆分",
+"mn": "Салгахгүй, бие даасан ганц үсэг."
+},
+"卸": {
+"char": "卸",
+"ids": "⿰⿱午止卩",
+"parts": [
+"午",
+"止",
+"卩"
+],
+"reason": "No change: standard split, but 午 and 止 share the long 竖, so 4+4+2 counts one stroke twice",
+"zh": "午下接止（共用一竖），右卩",
+"mn": "午 доор 止 (босоо зураасаа хуваалцана), баруун талд 卩."
+},
+"原": {
+"char": "原",
+"ids": "⿸厂⿱白小",
+"parts": [
+"厂",
+"白",
+"小"
+],
+"reason": "泉 not visually present (no 水): glyph is 厂 + 白 + 小 (2+5+3=10)",
+"zh": "厂字头，里面白下小",
+"mn": "厂 дотор 白, доор нь 小."
+},
+"及": {
+"char": "及",
+"ids": "及",
+"parts": [],
+"reason": "独体字",
+"zh": "独体字，不再拆分",
+"mn": "Салгахгүй, бие даасан ганц үсэг."
+},
+"友": {
+"char": "友",
+"ids": "⿸𠂇又",
+"parts": [
+"𠂇",
+"又"
+],
+"reason": "Unknown filled: 𠂇 (一+丿) over 又 (2+2=4)",
+"zh": "上面𠂇（一横一撇），下面又",
+"mn": "Дээр нь 𠂇 (хэвтээ ба налуу), доор нь 又."
+},
+"发": {
+"char": "发",
+"ids": "发",
+"parts": [],
+"reason": "独体字",
+"zh": "独体字，不再拆分",
+"mn": "Салгахгүй, бие даасан ганц үсэг."
+},
+"右": {
+"char": "右",
+"ids": "⿸𠂇口",
+"parts": [
+"𠂇",
+"口"
+],
+"reason": "Unknown filled: 𠂇 (一+丿) over 口 (2+3=5)",
+"zh": "上面𠂇（一横一撇），下面口",
+"mn": "Дээр нь 𠂇 (хэвтээ ба налуу), доор нь ам 口."
+},
+"司": {
+"char": "司",
+"ids": "⿹乛⿱一口",
+"parts": [
+"乛",
+"一",
+"口"
+],
+"reason": "Unknown part filled: 横折钩 (乛-type) wrapping 一 + 口 (1+1+3=5)",
+"zh": "横折钩里面一横加口",
+"mn": "Тахир дэгээ дотор хэвтээ зураас ба 口."
+},
+"同": {
+"char": "同",
+"ids": "⿵冂⿱一口",
+"parts": [
+"冂",
+"一",
+"口"
+],
+"reason": "凡 not visually present (no 丶): glyph is 冂 + 一 + 口 (2+1+3=6)",
+"zh": "冂里面一横加口",
+"mn": "冂 дотор хэвтээ зураас ба 口."
+},
+"后": {
+"char": "后",
+"ids": "⿱丿⿸厂口",
+"parts": [
+"丿",
+"厂",
+"口"
+],
+"reason": "Unknown part filled: short 丿 on top, then 厂 enclosing 口 (1+2+3=6)",
+"zh": "一撇，下面厂包着口",
+"mn": "Дээр налуу зураас, доор 厂 дотор 口."
+},
+"向": {
+"char": "向",
+"ids": "⿱丿⿵冂口",
+"parts": [
+"丿",
+"冂",
+"口"
+],
+"reason": "Unknown part filled: 丿 on top of 冂 enclosing 口 (1+2+3=6)",
+"zh": "一撇，冂里面一个口",
+"mn": "Дээр налуу зураас, 冂 дотор 口."
+},
+"命": {
+"char": "命",
+"ids": "⿱亼⿰口卩",
+"parts": [
+"亼",
+"口",
+"卩"
+],
+"reason": "令 bottom (横撇+点) not present: glyph is 亼 + 口 + 卩 (3+3+2=8)",
+"zh": "人一盖下，左口右卩",
+"mn": "Дээр 亼, доор зүүн талд 口, баруун талд 卩."
+},
+"囊": {
+"char": "囊",
+"ids": "⿱⿻一中襄",
+"parts": [
+"一",
+"中",
+"襄"
+],
+"reason": "Unknown filled: 一 crossed by 中 on top, below is 襄 with its 亠 written as 冖 (1+4+17=22)",
+"zh": "一加中，下面像襄（亠变冖）",
+"mn": "一 ба 中, доор нь 襄 (亠-ийн оронд 冖)."
+},
+"囱": {
+"char": "囱",
+"ids": "⿱丿⿴囗夂",
+"parts": [
+"丿",
+"囗",
+"夂"
+],
+"reason": "Missing top 撇: glyph is 丿 over 囗 enclosing 夂 (1+3+3=7)",
+"zh": "一撇，方框里面夂",
+"mn": "Дээр налуу зураас, хүрээ дотор 夂."
+},
+"场": {
+"char": "场",
+"ids": "⿰土𠃓",
+"parts": [
+"土",
+"𠃓"
+],
+"reason": "勿 not present; simplified right side is the 3-stroke shape 𠃓 (昜的简化), kept as one part (3+3=6)",
+"zh": "提土旁，右边𠃓（昜的简化）",
+"mn": "Зүүн талд шороо 土, баруун талд 𠃓 хэлбэр (昜-ийн хялбаршсан)."
+},
+"坚": {
+"char": "坚",
+"ids": "⿱⿰〢又土",
+"parts": [
+"〢",
+"又",
+"土"
+],
+"reason": "Unknown top-left part is two verticals 〢 (as in 紧) (2+2+3=7)",
+"zh": "两竖加又，下面土",
+"mn": "Хоёр босоо зураас ба 又, доор нь шороо 土."
+},
+"垂": {
+"char": "垂",
+"ids": "垂",
+"parts": [],
+"reason": "独体字",
+"zh": "独体字，不再拆分",
+"mn": "Салгахгүй, бие даасан ганц үсэг."
+},
+"堂": {
+"char": "堂",
+"ids": "⿱⺌⿱冖⿱口土",
+"parts": [
+"⺌",
+"冖",
+"口",
+"土"
+],
+"reason": "尚 not present (cover is 冖, not 冂): 尚字头 ⺌+冖, 口, 土 (3+2+3+3=11)",
+"zh": "尚字头，口，下面土",
+"mn": "Дээр ⺌ ба 冖, 口, доор нь шороо 土."
+},
+"塞": {
+"char": "塞",
+"ids": "⿱宀⿱⿻共一土",
+"parts": [
+"宀",
+"共",
+"一",
+"土"
+],
+"reason": "Unknown middle filled: 7-stroke middle looks like 共 with one extra 横 (3+6+1+3=13)",
+"zh": "宀下像共多一横，下面土",
+"mn": "宀 доор нэмэлт хэвтээтэй 共, доор нь 土."
+},
+"声": {
+"char": "声",
+"ids": "⿱士尸",
+"parts": [
+"士",
+"尸"
+],
+"reason": "Kept approx: bottom 𠃜 looks like 尸 but is written in 4 strokes (横、竖、横、撇), so total is off by 1",
+"zh": "士下面一个像尸的部分",
+"mn": "士 доор 尸 шиг хэсэг."
+},
+"夜": {
+"char": "夜",
+"ids": "⿱亠⿰亻⿻夕乀",
+"parts": [
+"亠",
+"亻",
+"夕",
+"乀"
+],
+"reason": "Right side is 夕 plus a long 捺 (乀), 4 strokes not 3 (2+2+3+1=8)",
+"zh": "亠下亻，右边夕加一捺",
+"mn": "Дээр 亠, доор 亻, баруун талд 夕 ба урт налуу зураас."
+},
+"奉": {
+"char": "奉",
+"ids": "⿱⿻三人干",
+"parts": [
+"三",
+"人",
+"干"
+],
+"reason": "Unknown parts filled: top 𡗗 = 三 crossed by 人 (春字头), bottom = 二 with 丨 (≈干) (3+2+3=8)",
+"zh": "三横加人，下面像干",
+"mn": "Гурван хэвтээ ба 人, доор нь 干 шиг хэсэг."
+},
+"奏": {
+"char": "奏",
+"ids": "⿱⿻三人天",
+"parts": [
+"三",
+"人",
+"天"
+],
+"reason": "Unknown top filled: 𡗗 = 三 crossed by 人 (春字头), over 天 (3+2+4=9)",
+"zh": "三横加人，下面天",
+"mn": "Гурван хэвтээ ба 人, доор нь 天."
+},
+"奥": {
+"char": "奥",
+"ids": "⿱⿱丿⿵冂米大",
+"parts": [
+"丿",
+"冂",
+"米",
+"大"
+],
+"reason": "宀 not visually present: top is 丿 + 冂 enclosing 米, then 大 (1+2+6+3=12)",
+"zh": "一撇，冂里有米，下面大",
+"mn": "Налуу зураас, 冂 дотор 米, доор нь 大."
+},
+"媲": {
+"char": "媲",
+"ids": "⿰女⿱囟比",
+"parts": [
+"女",
+"囟",
+"比"
+],
+"reason": "Unknown part filled: right is 囟 over 比 (3+6+4=13)",
+"zh": "女字旁，右边囟下比",
+"mn": "Зүүн талд эмэгтэй 女, баруун талд 囟 доор 比."
+},
+"寒": {
+"char": "寒",
+"ids": "⿱宀⿱⿻共一⺀",
+"parts": [
+"宀",
+"共",
+"一",
+"⺀"
+],
+"reason": "Unknown middle filled: 7-stroke middle looks like 共 with one extra 横, then two dots ⺀ (3+6+1+2=12)",
+"zh": "宀下像共多一横，下两点",
+"mn": "宀 доор нэмэлт хэвтээтэй 共, доор хоёр цэг."
+},
+"寨": {
+"char": "寨",
+"ids": "⿱宀⿱⿻共一木",
+"parts": [
+"宀",
+"共",
+"一",
+"木"
+],
+"reason": "Unknown middle filled: 7-stroke middle looks like 共 with one extra 横, then 木 (3+6+1+4=14)",
+"zh": "宀下像共多一横，下面木",
+"mn": "宀 доор нэмэлт хэвтээтэй 共, доор нь мод 木."
+},
+"尝": {
+"char": "尝",
+"ids": "⿱⺌⿱冖云",
+"parts": [
+"⺌",
+"冖",
+"云"
+],
+"reason": "尚 not present (cover is 冖, not 冂): 尚字头 ⺌+冖 over 云 (3+2+4=9)",
+"zh": "尚字头（⺌冖）下面云",
+"mn": "Дээр ⺌ ба 冖, доор нь 云."
+},
+"尸": {
+"char": "尸",
+"ids": "尸",
+"parts": [],
+"reason": "独体字",
+"zh": "独体字，不再拆分",
+"mn": "Салгахгүй, бие даасан ганц үсэг."
+},
+"居": {
+"char": "居",
+"ids": "⿸尸古",
+"parts": [
+"尸",
+"古"
+],
+"reason": "户 not visually present (no top 点): glyph is 尸 + 古 (3+5=8)",
+"zh": "尸字头，下面古",
+"mn": "尸 дотор/доор 古."
+},
+"屏": {
+"char": "屏",
+"ids": "⿸尸并",
+"parts": [
+"尸",
+"并"
+],
+"reason": "户 not visually present (no top 点): glyph is 尸 + 并 (3+6=9)",
+"zh": "尸字头，下面并",
+"mn": "尸 дотор/доор 并."
+},
+"展": {
+"char": "展",
+"ids": "⿸尸⿱廿𧘇",
+"parts": [
+"尸",
+"廿",
+"𧘇"
+],
+"reason": "Unknown part filled: 尸 over 廿 and 𧘇 (衣 bottom) (3+4+3=10)",
+"zh": "尸下廿，再加衣字底",
+"mn": "尸 доор 廿, дараа нь 衣-ийн доод хэсэг 𧘇."
+},
+"岛": {
+"char": "岛",
+"ids": "⿹鸟山",
+"parts": [
+"鸟",
+"山"
+],
+"reason": "Kept approx: standard 鸟+山 split, but 鸟 drops its bottom 横 here (4 strokes), so total is off by 1",
+"zh": "鸟去掉下面一横，里面山",
+"mn": "Доод хэвтээгүй 鸟, дотор нь уул 山."
+},
+"州": {
+"char": "州",
+"ids": "⿻川⿲丶丶丶",
+"parts": [
+"川",
+"丶",
+"丶",
+"丶"
+],
+"reason": "Unknown part filled: 川 with three 点 between the strokes (3+1+1+1=6)",
+"zh": "川字中间加三点",
+"mn": "川 үсгийн завсарт гурван цэг."
+},
+"左": {
+"char": "左",
+"ids": "⿸𠂇工",
+"parts": [
+"𠂇",
+"工"
+],
+"reason": "Unknown filled: 𠂇 (一+丿) over 工 (2+3=5)",
+"zh": "上面𠂇（一横一撇），下面工",
+"mn": "Дээр нь 𠂇 (хэвтээ ба налуу), доор нь 工."
+},
+"巨": {
+"char": "巨",
+"ids": "巨",
+"parts": [],
+"reason": "独体字",
+"zh": "独体字，不再拆分",
+"mn": "Салгахгүй, бие даасан ганц үсэг."
+},
+"己": {
+"char": "己",
+"ids": "己",
+"parts": [],
+"reason": "独体字",
+"zh": "独体字，不再拆分",
+"mn": "Салгахгүй, бие даасан ганц үсэг."
+},
+"巴": {
+"char": "巴",
+"ids": "巴",
+"parts": [],
+"reason": "独体字",
+"zh": "独体字，不再拆分",
+"mn": "Салгахгүй, бие даасан ганц үсэг."
+},
+"布": {
+"char": "布",
+"ids": "⿸𠂇巾",
+"parts": [
+"𠂇",
+"巾"
+],
+"reason": "Unknown filled: 𠂇 (一+丿) over 巾 (2+3=5)",
+"zh": "上面𠂇（一横一撇），下面巾",
+"mn": "Дээр нь 𠂇 (хэвтээ ба налуу), доор нь даавуу 巾."
+},
+"帝": {
+"char": "帝",
+"ids": "⿱⿱亠丷⿱冖巾",
+"parts": [
+"亠",
+"丷",
+"冖",
+"巾"
+],
+"reason": "立 not visually present (no bottom 横): 亠 + 丷 + 冖 + 巾 (2+2+2+3=9)",
+"zh": "亠，两点，秃宝盖，巾",
+"mn": "亠, хоёр цэг, 冖, доор нь 巾."
+},
+"常": {
+"char": "常",
+"ids": "⿱⺌⿱冖⿱口巾",
+"parts": [
+"⺌",
+"冖",
+"口",
+"巾"
+],
+"reason": "尚 not present (cover is 冖, not 冂): 尚字头 ⺌+冖, 口, 巾 (3+2+3+3=11)",
+"zh": "尚字头，口，下面巾",
+"mn": "Дээр ⺌ ба 冖, 口, доор нь даавуу 巾."
+},
+"年": {
+"char": "年",
+"ids": "年",
+"parts": [],
+"reason": "独体字",
+"zh": "独体字，不再拆分",
+"mn": "Салгахгүй, бие даасан ганц үсэг."
+},
+"幻": {
+"char": "幻",
+"ids": "⿰幺乛",
+"parts": [
+"幺",
+"乛"
+],
+"reason": "Unknown part filled: 幺 + one 横折钩 (乛-type stroke) (3+1=4)",
+"zh": "幺右边一个横折钩",
+"mn": "幺-ийн баруун талд тахир дэгээтэй зураас."
+},
+"弄": {
+"char": "弄",
+"ids": "⿱王廾",
+"parts": [
+"王",
+"廾"
+],
+"reason": "玉 not visually present (no 丶): glyph is 王 over 廾 (4+3=7)",
+"zh": "王下面廾",
+"mn": "王 доор 廾."
+},
+"弟": {
+"char": "弟",
+"ids": "⿱丷⿻弓⿰丨丿",
+"parts": [
+"丷",
+"弓",
+"丨",
+"丿"
+],
+"reason": "Unknown part filled: 丷 + 弓 crossed by 丨, plus 丿 (2+3+1+1=7)",
+"zh": "两点，弓，一竖一撇",
+"mn": "Хоёр цэг, 弓, босоо ба налуу зураас."
+},
+"归": {
+"char": "归",
+"ids": "⿰⿰丨丿彐",
+"parts": [
+"丨",
+"丿",
+"彐"
+],
+"reason": "Unknown left filled: short 丨 + 丿, then 彐 (1+1+3=5)",
+"zh": "左边一竖一撇，右边彐",
+"mn": "Зүүн талд босоо ба налуу, баруун талд 彐."
+},
+"往": {
+"char": "往",
+"ids": "⿰彳主",
+"parts": [
+"彳",
+"主"
+],
+"reason": "Unknown part filled: right side is 主 (丶+王) (3+5=8)",
+"zh": "双人旁，右边主",
+"mn": "Зүүн талд 彳, баруун талд 主."
+},
+"惠": {
+"char": "惠",
+"ids": "⿱叀心",
+"parts": [
+"叀",
+"心"
+],
+"reason": "Unknown top filled: glyph is 叀 over 心 (8+4=12)",
+"zh": "上面叀，下面心",
+"mn": "Дээр нь 叀, доор нь зүрх 心."
+},
+"扁": {
+"char": "扁",
+"ids": "⿸户冊",
+"parts": [
+"户",
+"冊"
+],
+"reason": "Unknown part filled: 户 over 冊 (the 5-stroke 册 form)",
+"zh": "户字头，下面是冊（册）",
+"mn": "Дээр нь хаалга 户, доор нь ном 冊 (册)."
+},
+"扬": {
+"char": "扬",
+"ids": "⿰扌𠃓",
+"parts": [
+"扌",
+"𠃓"
+],
+"reason": "昜 (9 strokes) is the traditional form; simplified right side is the 3-stroke shape 𠃓, kept as one part",
+"zh": "提手旁，右边𠃓（昜的简化）",
+"mn": "Зүүн талд гар 扌, баруун талд 𠃓 хэлбэр (昜-ийн хялбаршсан)."
+},
+"杨": {
+"char": "杨",
+"ids": "⿰木𠃓",
+"parts": [
+"木",
+"𠃓"
+],
+"reason": "昜 (9 strokes) is the traditional form; simplified right side is the 3-stroke shape 𠃓, kept as one part",
+"zh": "木字旁，右边𠃓（昜的简化）",
+"mn": "Зүүн талд мод 木, баруун талд 𠃓 хэлбэр (昜-ийн хялбаршсан)."
+},
+"汤": {
+"char": "汤",
+"ids": "⿰氵𠃓",
+"parts": [
+"氵",
+"𠃓"
+],
+"reason": "昜 (9 strokes) is the traditional form; simplified right side is the 3-stroke shape 𠃓, kept as one part",
+"zh": "三点水，右边𠃓（昜的简化）",
+"mn": "Зүүн талд ус 氵, баруун талд 𠃓 хэлбэр (昜-ийн хялбаршсан)."
+},
+"畅": {
+"char": "畅",
+"ids": "⿰申𠃓",
+"parts": [
+"申",
+"𠃓"
+],
+"reason": "昜 (9 strokes) is the traditional form; simplified right side is the 3-stroke shape 𠃓, kept as one part",
+"zh": "左边申，右边𠃓（昜的简化）",
+"mn": "Зүүн талд 申, баруун талд 𠃓 хэлбэр (昜-ийн хялбаршсан)."
+},
+"承": {
+"char": "承",
+"ids": "承",
+"parts": [],
+"reason": "独体字: no clean visual split (了+三+side strokes is not a standard 部件 split)",
+"zh": "独体字，不再拆分",
+"mn": "Салгахгүй, бие даасан ганц үсэг."
+},
+"拜": {
+"char": "拜",
+"ids": "⿰龵⿱丰一",
+"parts": [
+"龵",
+"丰",
+"一"
+],
+"reason": "Not 手+手 (8≠9): left is 龵 (手 top form, 4 strokes), right is 丰 plus a bottom 一 (four horizontals, one vertical)",
+"zh": "左边手的变形，右边四横一竖",
+"mn": "Зүүн талд гарын хувилбар, баруун талд дөрвөн хэвтээ нэг босоо."
+},
+"拣": {
+"char": "拣",
+"ids": "⿰扌东",
+"parts": [
+"扌",
+"东"
+],
+"reason": "Simplified 柬 on the right is a 5-stroke 东-like shape, not full 柬 (9); 东 is the nearest real part (bottom two strokes are dots)",
+"zh": "提手旁，右边像东（下面两点）",
+"mn": "Зүүн талд гар 扌, баруун тал нь 东-тэй төстэй."
+},
+"炼": {
+"char": "炼",
+"ids": "⿰火东",
+"parts": [
+"火",
+"东"
+],
+"reason": "Simplified 柬 on the right is a 5-stroke 东-like shape, not full 柬 (9); 东 is the nearest real part (bottom two strokes are dots)",
+"zh": "火字旁，右边像东（下面两点）",
+"mn": "Зүүн талд гал 火, баруун тал нь 东-тэй төстэй."
+},
+"择": {
+"char": "择",
+"ids": "⿰扌⿱又干",
+"parts": [
+"扌",
+"又",
+"干"
+],
+"reason": "Unknown right side (simplified 睪) is visually 又 over 干",
+"zh": "提手旁，右上又，右下干",
+"mn": "Зүүн талд гар 扌, баруун дээр 又, доор нь 干."
+},
+"泽": {
+"char": "泽",
+"ids": "⿰氵⿱又干",
+"parts": [
+"氵",
+"又",
+"干"
+],
+"reason": "Unknown right side (simplified 睪) is visually 又 over 干",
+"zh": "三点水，右上又，右下干",
+"mn": "Зүүн талд ус 氵, баруун дээр 又, доор нь 干."
+},
+"探": {
+"char": "探",
+"ids": "⿰扌罙",
+"parts": [
+"扌",
+"罙"
+],
+"reason": "Unknown part filled: right side is 罙 (冖+八+木), same as 深",
+"zh": "提手旁，右边罙（冖八木）",
+"mn": "Гар 扌, баруун талд 罙 (冖, 八, 木)."
+},
+"敢": {
+"char": "敢",
+"ids": "⿰⿱乛耳攵",
+"parts": [
+"乛",
+"耳",
+"攵"
+],
+"reason": "Unknown top-left filled: 乛 cap over 耳, then 攵 (1+6+4=11)",
+"zh": "左边乛下耳，右边反文",
+"mn": "Зүүн дээр 乛, доор нь чих 耳, баруун талд 攵."
+},
+"散": {
+"char": "散",
+"ids": "⿰⿱龷⺼攵",
+"parts": [
+"龷",
+"⺼",
+"攵"
+],
+"reason": "Unknown top-left filled: 龷 (卄 with long 一) over 月, then 攵 (4+4+4=12)",
+"zh": "左上龷，左下月，右边反文",
+"mn": "Зүүн дээр 龷, доор нь сар 月, баруун талд 攵."
+},
+"斗": {
+"char": "斗",
+"ids": "斗",
+"parts": [],
+"reason": "独体字",
+"zh": "独体字，不再拆分",
+"mn": "Салгахгүй, бие даасан ганц үсэг."
+},
+"斤": {
+"char": "斤",
+"ids": "斤",
+"parts": [],
+"reason": "独体字: 厂+下 is not visually present",
+"zh": "独体字，不再拆分",
+"mn": "Салгахгүй, бие даасан ганц үсэг."
+},
+"断": {
+"char": "断",
+"ids": "⿰⿺𠃊米斤",
+"parts": [
+"𠃊",
+"米",
+"斤"
+],
+"reason": "Unknown part filled: 米 enclosed by 𠃊 (竖折), then 斤",
+"zh": "米被竖折包住，右边斤",
+"mn": "Будаа 米-г 𠃊 зураас хүрээлнэ, баруун талд сүх 斤."
+},
+"方": {
+"char": "方",
+"ids": "方",
+"parts": [],
+"reason": "独体字",
+"zh": "独体字，不再拆分",
+"mn": "Салгахгүй, бие даасан ганц үсэг."
+},
+"旁": {
+"char": "旁",
+"ids": "⿳⿱亠丷冖方",
+"parts": [
+"亠",
+"丷",
+"冖",
+"方"
+],
+"reason": "Top is not 立 (立 ends with 一; 旁 has 冖 there): glyph is 亠+丷+冖+方 (2+2+2+4=10)",
+"zh": "点横、两点、秃宝盖、方",
+"mn": "Дээрээс 亠, 丷, 冖, доор нь 方."
+},
+"旅": {
+"char": "旅",
+"ids": "⿰方⿱𠂉𧘇",
+"parts": [
+"方",
+"𠂉",
+"𧘇"
+],
+"reason": "Unknown filled with 𠂉; bottom-right is the 𧘇-like shape (竖提撇撇捺), 氏 is not visually present",
+"zh": "方字旁，右上𠂉，右下像衣字底",
+"mn": "Зүүн талд 方, баруун дээр 𠂉, доор нь 衣-ийн доод хэсэг шиг."
+},
+"旋": {
+"char": "旋",
+"ids": "⿰方⿱𠂉疋",
+"parts": [
+"方",
+"𠂉",
+"疋"
+],
+"reason": "Unknown filled with 𠂉 (2 strokes); bottom-right is slightly modified 疋",
+"zh": "方字旁，右上𠂉，右下疋",
+"mn": "Зүүн талд 方, баруун дээр 𠂉, доор нь 疋."
+},
+"族": {
+"char": "族",
+"ids": "⿰方⿱𠂉矢",
+"parts": [
+"方",
+"𠂉",
+"矢"
+],
+"reason": "Unknown filled with 𠂉 (2 strokes): 4+2+5=11",
+"zh": "方字旁，右上𠂉，右下矢",
+"mn": "Зүүн талд 方, баруун дээр 𠂉, доор нь сум 矢."
+},
+"旗": {
+"char": "旗",
+"ids": "⿰方⿱𠂉其",
+"parts": [
+"方",
+"𠂉",
+"其"
+],
+"reason": "Unknown filled with 𠂉 (2 strokes): 4+2+8=14",
+"zh": "方字旁，右上𠂉，右下其",
+"mn": "Зүүн талд 方, баруун дээр 𠂉, доор нь 其."
+},
+"既": {
+"char": "既",
+"ids": "⿰艮旡",
+"parts": [
+"艮",
+"旡"
+],
+"reason": "Unknown left filled: left is a 艮 variant (last 丿㇏ written as one dot, 5 strokes); 艮 is the nearest real part",
+"zh": "左边艮的变形（末笔为点），右边旡",
+"mn": "Зүүн тал нь 艮-ийн хувилбар (сүүлд цэг), баруун талд 旡."
+},
+"春": {
+"char": "春",
+"ids": "⿱⿻三人日",
+"parts": [
+"三",
+"人",
+"日"
+],
+"reason": "Unknown top filled: 春字头 is 三 crossed by 人 (𡗗), over 日 (3+2+4=9)",
+"zh": "三横加人，下面日",
+"mn": "Гурван хэвтээ дээр хүн 人, доор нь нар 日."
+},
+"暴": {
+"char": "暴",
+"ids": "⿱日⿱共氺",
+"parts": [
+"日",
+"共",
+"氺"
+],
+"reason": "Bottom is 氺 (5 strokes), not 水 (4): 4+6+5=15",
+"zh": "上日，中共，下面氺",
+"mn": "Дээр нь нар 日, дунд нь 共, доор нь ус 氺."
+},
+"曾": {
+"char": "曾",
+"ids": "⿳丷田日",
+"parts": [
+"丷",
+"田",
+"日"
+],
+"reason": "Unknown middle filled: a 田-like box with 丷 inside (6 strokes); 田 is the nearest real part",
+"zh": "上两点，中间像田，下面日",
+"mn": "Дээр нь 丷, дунд нь 田 шиг, доор нь 日."
+},
+"有": {
+"char": "有",
+"ids": "⿸𠂇月",
+"parts": [
+"𠂇",
+"月"
+],
+"reason": "Unknown filled: 𠂇 (一+丿) over 月 (2+4=6)",
+"zh": "上面𠂇（一横一撇），下面月",
+"mn": "Дээр нь 𠂇 (хэвтээ ба налуу), доор нь сар 月."
+},
+"朗": {
+"char": "朗",
+"ids": "⿰良月",
+"parts": [
+"良",
+"月"
+],
+"reason": "Split kept: left is 良 with its last two strokes merged into a dot (6 strokes, hence mismatch); 良 is the standard part",
+"zh": "左边良（末笔变点），右边月",
+"mn": "Зүүн талд 良 (сүүлийн зураас цэг болно), баруун талд 月."
+},
+"朱": {
+"char": "朱",
+"ids": "⿻丿未",
+"parts": [
+"丿",
+"未"
+],
+"reason": "Not 一+木 (5≠6): glyph is 未 with a 丿 at the top-left",
+"zh": "未字加一撇",
+"mn": "未 үсэг дээр нэг налуу 丿 нэмсэн."
+},
+"果": {
+"char": "果",
+"ids": "⿱田木",
+"parts": [
+"田",
+"木"
+],
+"reason": "Split kept (standard): 田 and 木 share the middle vertical, so part strokes overcount by one",
+"zh": "上田下木，中间一竖相连",
+"mn": "Дээр нь тариалан 田, доор нь мод 木, дундаа нэг босоо."
+},
+"栽": {
+"char": "栽",
+"ids": "⿻⿱十木戈",
+"parts": [
+"十",
+"木",
+"戈"
+],
+"reason": "戈 frame also contains 十 at the top-left: 十+木+戈 (2+4+4=10)",
+"zh": "左上十，下面木，右边戈",
+"mn": "Зүүн дээр 十, доор нь мод 木, баруун талд жад 戈."
+},
+"桌": {
+"char": "桌",
+"ids": "⿳⺊日木",
+"parts": [
+"⺊",
+"日",
+"木"
+],
+"reason": "Not 卓+木 (12≠10): bottom 十 of 卓 is replaced by 木, glyph is ⺊+日+木",
+"zh": "上⺊，中日，下木",
+"mn": "Дээр нь ⺊, дунд нь нар 日, доор нь мод 木."
+},
+"步": {
+"char": "步",
+"ids": "⿱止少",
+"parts": [
+"止",
+"少"
+],
+"reason": "Unknown bottom filled: it is 少 without the left dot (3 strokes); 少 is the nearest real part",
+"zh": "上止，下面是少去掉一点",
+"mn": "Дээр нь 止, доор нь 少 (зүүн цэггүй)."
+},
+"段": {
+"char": "段",
+"ids": "⿰⿰⿱丿丨三殳",
+"parts": [
+"丿",
+"丨",
+"三",
+"殳"
+],
+"reason": "Unknown left filled: 丿 on top of 丨 with three short horizontals (last one rising), no standard single part",
+"zh": "左边撇竖加三横，右边殳",
+"mn": "Зүүн талд налуу, босоо, гурван хэвтээ; баруун талд 殳."
+},
+"每": {
+"char": "每",
+"ids": "⿱𠂉母",
+"parts": [
+"𠂉",
+"母"
+],
+"reason": "Unknown top filled: 𠂉 (丿+一) over 母 (2+5=7)",
+"zh": "上面𠂉，下面母",
+"mn": "Дээр нь 𠂉, доор нь ээж 母."
+},
+"民": {
+"char": "民",
+"ids": "民",
+"parts": [],
+"reason": "独体字: 巳+戈 is not visually present",
+"zh": "独体字，不再拆分",
+"mn": "Салгахгүй, бие даасан ганц үсэг."
+},
+"气": {
+"char": "气",
+"ids": "气",
+"parts": [],
+"reason": "独体字",
+"zh": "独体字，不再拆分",
+"mn": "Салгахгүй, бие даасан ганц үсэг."
+},
+"水": {
+"char": "水",
+"ids": "水",
+"parts": [],
+"reason": "独体字",
+"zh": "独体字，不再拆分",
+"mn": "Салгахгүй, бие даасан ганц үсэг."
+},
+"永": {
+"char": "永",
+"ids": "永",
+"parts": [],
+"reason": "独体字",
+"zh": "独体字，不再拆分",
+"mn": "Салгахгүй, бие даасан ганц үсэг."
+},
+"求": {
+"char": "求",
+"ids": "求",
+"parts": [],
+"reason": "独体字: 一+氺 misses the top-right dot; no standard split",
+"zh": "独体字，不再拆分",
+"mn": "Салгахгүй, бие даасан ганц үсэг."
+},
+"泰": {
+"char": "泰",
+"ids": "⿱⿻三人氺",
+"parts": [
+"三",
+"人",
+"氺"
+],
+"reason": "Unknown top filled: 春字头 (三 crossed by 人) over 氺 (3+2+5=10)",
+"zh": "三横加人，下面氺",
+"mn": "Гурван хэвтээ дээр хүн 人, доор нь ус 氺."
+},
+"派": {
+"char": "派",
+"ids": "⿰氵𠂢",
+"parts": [
+"氵",
+"𠂢"
+],
+"reason": "Right side is 𠂢 (6 strokes), not 氏 (4)",
+"zh": "三点水，右边𠂢",
+"mn": "Зүүн талд ус 氵, баруун талд 𠂢."
+},
+"渊": {
+"char": "渊",
+"ids": "⿰氵⿲丿米丨",
+"parts": [
+"氵",
+"丿",
+"米",
+"丨"
+],
+"reason": "Unknown filled: right side is 米 between a 丿 and a 丨 (1+6+1=8)",
+"zh": "三点水，右边撇、米、竖",
+"mn": "Ус 氵, баруун талд налуу, будаа 米, босоо."
+},
+"灰": {
+"char": "灰",
+"ids": "⿸𠂇火",
+"parts": [
+"𠂇",
+"火"
+],
+"reason": "Unknown filled: 𠂇 (一+丿) over 火 (2+4=6)",
+"zh": "上面𠂇，下面火",
+"mn": "Дээр нь 𠂇, доор нь гал 火."
+},
+"熏": {
+"char": "熏",
+"ids": "⿱千黑",
+"parts": [
+"千",
+"黑"
+],
+"reason": "Unknown top filled: glyph is 千 sitting on 黑, sharing the vertical (hence one stroke overcount); no cleaner split",
+"zh": "上面千，下面黑，一竖相连",
+"mn": "Дээр нь 千, доор нь хар 黑, босоо зураасаар холбогдоно."
+},
+"爪": {
+"char": "爪",
+"ids": "爪",
+"parts": [],
+"reason": "独体字",
+"zh": "独体字，不再拆分",
+"mn": "Салгахгүй, бие даасан ганц үсэг."
+},
+"率": {
+"char": "率",
+"ids": "⿱⿻玄⿰冫⺀十",
+"parts": [
+"玄",
+"冫",
+"⺀",
+"十"
+],
+"reason": "Unknown filled: 玄 (亠+幺) with two dots on each side, then 十 (5+2+2+2=11)",
+"zh": "玄字左右各两点，下面十",
+"mn": "玄 үсгийн хоёр талд хоёр цэг, доор нь 十."
+},
+"瓜": {
+"char": "瓜",
+"ids": "瓜",
+"parts": [],
+"reason": "独体字",
+"zh": "独体字，不再拆分",
+"mn": "Салгахгүй, бие даасан ганц үсэг."
+},
+"生": {
+"char": "生",
+"ids": "生",
+"parts": [],
+"reason": "独体字: 一+土 is not visually present (top is 丿+一)",
+"zh": "独体字，不再拆分",
+"mn": "Салгахгүй, бие даасан ганц үсэг."
+},
+"用": {
+"char": "用",
+"ids": "用",
+"parts": [],
+"reason": "独体字",
+"zh": "独体字，不再拆分",
+"mn": "Салгахгүй, бие даасан ганц үсэг."
+},
+"甲": {
+"char": "甲",
+"ids": "甲",
+"parts": [],
+"reason": "独体字",
+"zh": "独体字，不再拆分",
+"mn": "Салгахгүй, бие даасан ганц үсэг."
+},
+"畏": {
+"char": "畏",
+"ids": "⿱田𧘇",
+"parts": [
+"田",
+"𧘇"
+],
+"reason": "Unknown bottom filled: bottom is a 𧘇-like shape (一 then 竖提撇捺); no cleaner standard part",
+"zh": "上面田，下面像衣字底",
+"mn": "Дээр нь 田, доор нь 衣-ийн доод хэсэг шиг."
+},
+"番": {
+"char": "番",
+"ids": "⿱釆田",
+"parts": [
+"釆",
+"田"
+],
+"reason": "Unknown filled: top is 釆 (丿+米), over 田 (7+5=12)",
+"zh": "上面釆，下面田",
+"mn": "Дээр нь 釆, доор нь тариалан 田."
+},
+"疑": {
+"char": "疑",
+"ids": "⿰⿱匕矢⿱龴疋",
+"parts": [
+"匕",
+"矢",
+"龴",
+"疋"
+],
+"reason": "Unknown filled: right side is 龴 (マ) over 疋 (2+5=7)",
+"zh": "左匕下矢，右マ下疋",
+"mn": "Зүүн талд 匕, 矢; баруун талд マ хэлбэр, 疋."
+},
+"白": {
+"char": "白",
+"ids": "白",
+"parts": [],
+"reason": "独体字",
+"zh": "独体字，不再拆分",
+"mn": "Салгахгүй, бие даасан ганц үсэг."
+},
+"皮": {
+"char": "皮",
+"ids": "皮",
+"parts": [],
+"reason": "独体字",
+"zh": "独体字，不再拆分",
+"mn": "Салгахгүй, бие даасан ганц үсэг."
+},
+"益": {
+"char": "益",
+"ids": "⿱⿳丷一八皿",
+"parts": [
+"丷",
+"一",
+"八",
+"皿"
+],
+"reason": "Top is not 水: glyph is 丷+一+八 (5 strokes) over 皿",
+"zh": "上两点一横，下八，底皿",
+"mn": "Дээр нь 丷, 一, 八, доор нь сав 皿."
+},
+"监": {
+"char": "监",
+"ids": "⿱⿰刂⿱𠂉丶皿",
+"parts": [
+"刂",
+"𠂉",
+"丶",
+"皿"
+],
+"reason": "Unknown top filled: two verticals (written 刂 as in 竖) + 𠂉 + 丶, over 皿 (2+2+1+5=10)",
+"zh": "左上两竖，右上𠂉加点，下皿",
+"mn": "Зүүн дээр хоёр босоо, баруун дээр 𠂉 ба цэг, доор нь 皿."
+},
+"眉": {
+"char": "眉",
+"ids": "⿸⿻尸丨目",
+"parts": [
+"尸",
+"丨",
+"目"
+],
+"reason": "Top frame is 尸 plus a short 丨 (4 strokes), not bare 尸: 3+1+5=9",
+"zh": "尸加一竖，里面目",
+"mn": "尸 дээр нэг босоо, дотор нь нүд 目."
+},
+"祭": {
+"char": "祭",
+"ids": "⿱⿰⺼又示",
+"parts": [
+"⺼",
+"又",
+"示"
+],
+"reason": "Top-right is 又 (2 strokes), not 寸: 4+2+5=11",
+"zh": "左上月（斜），右上又，下示",
+"mn": "Зүүн дээр мах 月, баруун дээр гар 又, доор нь 示."
+},
+"离": {
+"char": "离",
+"ids": "⿱⿱亠凶禸",
+"parts": [
+"亠",
+"凶",
+"禸"
+],
+"reason": "Split kept (visually correct): mismatch only because 禸 is counted 5 strokes; in simplified 离 it is 4",
+"zh": "上亠，中凶，下禸",
+"mn": "Дээр нь 亠, дунд нь 凶, доор нь 禸."
+},
+"由": {
+"char": "由",
+"ids": "由",
+"parts": [],
+"reason": "独体字: ids '田' names a different character; 由 is 田 with the vertical extended up",
+"zh": "独体字，不再拆分",
+"mn": "Салгахгүй, бие даасан ганц үсэг."
+},
+"真": {
+"char": "真",
+"ids": "⿱十具",
+"parts": [
+"十",
+"具"
+],
+"reason": "直+几 not visually present (真 has no 直 left stroke and ends in 八): glyph is 十 over 具 (2+8=10)",
+"zh": "上面十，下面具",
+"mn": "Дээр нь 十, доор нь 具."
+},
+"掌": {
+"char": "掌",
+"ids": "⿱⿳⺌冖口手",
+"parts": [
+"⺌",
+"冖",
+"口",
+"手"
+],
+"reason": "Top is not 尚 (冂 enclosing 口) but ⺌+冖+口, as in 党/尝",
+"zh": "上面⺌冖口，下面手",
+"mn": "Дээр нь ⺌, 冖, 口, доор нь гар 手."
+},
+"第": {
+"char": "第",
+"ids": "⿱⺮弟",
+"parts": [
+"⺮",
+"弟"
+],
+"reason": "Kept: bottom is 弟 minus its top 丷 (弟省/𢎨); no common part, so stroke total is off by 2",
+"zh": "竹字头，下面是弟去掉两点",
+"mn": "Дээр хулсны тэмдэг, доор нь хоёр цэггүй 弟"
+},
+"紧": {
+"char": "紧",
+"ids": "⿱⿰〢又糸",
+"parts": [
+"〢",
+"又",
+"糸"
+],
+"reason": "Unknown top-left part is two verticals 〢 (not 刂)",
+"zh": "两竖加又，下面是糸",
+"mn": "Хоёр босоо зураас, 又, доор нь 糸 утас"
+},
+"练": {
+"char": "练",
+"ids": "⿰纟东",
+"parts": [
+"纟",
+"东"
+],
+"reason": "柬 not visually present; simplified right side (𫠣) looks like 东, 2nd stroke is 竖折 not 撇折",
+"zh": "绞丝旁，右边形似东",
+"mn": "Зүүн талд утас, баруун тал нь 东-тэй төстэй"
+},
+"绎": {
+"char": "绎",
+"ids": "⿰纟⿱又⿻二丨",
+"parts": [
+"纟",
+"又",
+"二",
+"丨"
+],
+"reason": "Unknown right part is 𠬤 = 又 over 二 crossed by 丨",
+"zh": "绞丝旁，右边又下二加一竖",
+"mn": "Утас, баруун талд 又, доор нь 二-г босоо зураас огтолно"
+},
+"经": {
+"char": "经",
+"ids": "⿰纟⿱又工",
+"parts": [
+"纟",
+"又",
+"工"
+],
+"reason": "Unknown top-right is ス-shape (横撇+点), shown as 又 as in 轻/径",
+"zh": "绞丝旁，右边上似又下工",
+"mn": "Утас, баруун дээр 又 хэлбэр, доор нь 工"
+},
+"继": {
+"char": "继",
+"ids": "⿰纟⿺𠃊米",
+"parts": [
+"纟",
+"𠃊",
+"米"
+],
+"reason": "Unknown part is L-shaped 竖折 𠃊 wrapping 米",
+"zh": "绞丝旁，右边竖折包着米",
+"mn": "Утас, баруун талд 米-г булан зураас хүрээлнэ"
+},
+"羊": {
+"char": "羊",
+"ids": "羊",
+"parts": [],
+"reason": "独体字",
+"zh": "独体字，像羊头和两只角",
+"mn": "Салгахгүй ханз, хонины толгой ба эвэр"
+},
+"耳": {
+"char": "耳",
+"ids": "耳",
+"parts": [],
+"reason": "独体字",
+"zh": "独体字，像一只耳朵",
+"mn": "Салгахгүй ханз, чихний дүрс"
+},
+"肃": {
+"char": "肃",
+"ids": "肃",
+"parts": [],
+"reason": "独体字: no clean standard part split",
+"zh": "独体字，按笔顺整体记",
+"mn": "Салгахгүй ханз, зураасын дарааллаар бүтнээр нь цээжил"
+},
+"肠": {
+"char": "肠",
+"ids": "⿰⺼𠃓",
+"parts": [
+"⺼",
+"𠃓"
+],
+"reason": "昜 not present in simplified glyph; right side is 𠃓 (as in 汤/场), kept as one part",
+"zh": "月字旁，右边像汤的右半",
+"mn": "Мах (月), баруун тал нь 汤-ийн баруун хэсэг"
+},
+"肾": {
+"char": "肾",
+"ids": "⿱⿰〢又⺼",
+"parts": [
+"〢",
+"又",
+"⺼"
+],
+"reason": "Unknown top-left part is two verticals 〢",
+"zh": "两竖加又，下面是月",
+"mn": "Хоёр босоо зураас, 又, доор нь 月 (мах)"
+},
+"脊": {
+"char": "脊",
+"ids": "⿱⿻人⿱丷八⺼",
+"parts": [
+"人",
+"丷",
+"八",
+"⺼"
+],
+"reason": "Unknown part: top is 人 crossed by small stroke pairs (丷 above 八)",
+"zh": "人字两边各两笔，下面月",
+"mn": "人-ийн хоёр талд хоёр жижиг зураас, доор 月"
+},
+"臣": {
+"char": "臣",
+"ids": "臣",
+"parts": [],
+"reason": "独体字",
+"zh": "独体字，像竖起的眼睛",
+"mn": "Салгахгүй ханз, босоо нүдний дүрс"
+},
+"自": {
+"char": "自",
+"ids": "⿱丿目",
+"parts": [
+"丿",
+"目"
+],
+"reason": "Glyph is 丿 on top of 目",
+"zh": "一撇加个目，像鼻子",
+"mn": "Дээр нэг налуу зураас, доор 目 — хамрын дүрс"
+},
+"舆": {
+"char": "舆",
+"ids": "⿶舁车",
+"parts": [
+"舁",
+"车"
+],
+"reason": "Kept: frame is 舁 split around 车 (臼 halves + 一八); no simpler standard parts, stroke total differs",
+"zh": "舁字框里面一个车",
+"mn": "舁 хүрээн дотор 车 тэрэг"
+},
+"舞": {
+"char": "舞",
+"ids": "⿱⿳𠂉卌一舛",
+"parts": [
+"𠂉",
+"卌",
+"一",
+"舛"
+],
+"reason": "灬 of 無 not present; top is 𠂉+卌+一",
+"zh": "上面𠂉、卌、一，下面是舛",
+"mn": "Дээр 𠂉, 卌, 一; доор нь 舛"
+},
+"节": {
+"char": "节",
+"ids": "⿱艹卩",
+"parts": [
+"艹",
+"卩"
+],
+"reason": "Unknown bottom part is 卩",
+"zh": "草字头，下面是卩",
+"mn": "Дээр өвс, доор нь 卩"
+},
+"茎": {
+"char": "茎",
+"ids": "⿱艹⿱又工",
+"parts": [
+"艹",
+"又",
+"工"
+],
+"reason": "Unknown bottom is ス-shape over 工, shown as 又+工 as in 轻/经",
+"zh": "草字头，下面上似又下工",
+"mn": "Дээр өвс, доор 又 хэлбэр ба 工"
+},
+"虫": {
+"char": "虫",
+"ids": "虫",
+"parts": [],
+"reason": "独体字",
+"zh": "独体字，像一条小虫",
+"mn": "Салгахгүй ханз, хорхойн дүрс"
+},
+"衣": {
+"char": "衣",
+"ids": "衣",
+"parts": [],
+"reason": "独体字",
+"zh": "独体字，像一件上衣",
+"mn": "Салгахгүй ханз, дээлний дүрс"
+},
+"表": {
+"char": "表",
+"ids": "⿱龶𧘇",
+"parts": [
+"龶",
+"𧘇"
+],
+"reason": "毛 and full 衣 not present; glyph is 龶 over lower 衣 (𧘇)",
+"zh": "上面三横一竖，下面衣字底",
+"mn": "Дээр гурван хэвтээ нэг босоо, доор 衣-ийн доод хэсэг"
+},
+"览": {
+"char": "览",
+"ids": "⿱⿰〢⿱𠂉丶见",
+"parts": [
+"〢",
+"𠂉",
+"丶",
+"见"
+],
+"reason": "Unknown top is 〢 + 𠂉 + 丶 (same top as 监)",
+"zh": "上面两竖、𠂉和点，下面见",
+"mn": "Дээр хоёр босоо, 𠂉 ба цэг; доор нь 见"
+},
+"译": {
+"char": "译",
+"ids": "⿰讠⿱又⿻二丨",
+"parts": [
+"讠",
+"又",
+"二",
+"丨"
+],
+"reason": "Unknown right part is 𠬤 = 又 over 二 crossed by 丨",
+"zh": "言字旁，右边又下二加一竖",
+"mn": "Үг, баруун талд 又, доор нь 二-г босоо зураас огтолно"
+},
+"象": {
+"char": "象",
+"ids": "⿳⺈口豕",
+"parts": [
+"⺈",
+"口",
+"豕"
+],
+"reason": "Kept: 口 bottom stroke is shared with 豕 top 横 (lower part is 豕省), so stroke total is off by 1",
+"zh": "⺈加口，下面像豕",
+"mn": "⺈, 口, доор нь 豕 (гахай)-тай төстэй"
+},
+"豪": {
+"char": "豪",
+"ids": "⿱⿳亠口冖豕",
+"parts": [
+"亠",
+"口",
+"冖",
+"豕"
+],
+"reason": "高 not fully present: 高字头 (亠口冖) over 豕",
+"zh": "高字头下面加豕",
+"mn": "高-ийн дээд хэсэг, доор нь 豕 гахай"
+},
+"贤": {
+"char": "贤",
+"ids": "⿱⿰〢又贝",
+"parts": [
+"〢",
+"又",
+"贝"
+],
+"reason": "Unknown top-left part is two verticals 〢",
+"zh": "两竖加又，下面是贝",
+"mn": "Хоёр босоо зураас, 又, доор нь 贝"
+},
+"赛": {
+"char": "赛",
+"ids": "⿱⿳宀𠀎八贝",
+"parts": [
+"宀",
+"𠀎",
+"八",
+"贝"
+],
+"reason": "Unknown middle is 𠀎 + 八 (as in 塞/寒)",
+"zh": "宝盖下三横两竖加八，底贝",
+"mn": "Дээвэр, гурван хэвтээ хоёр босоо, 八, доор 贝"
+},
+"赢": {
+"char": "赢",
+"ids": "⿱吂⿲⺼贝凡",
+"parts": [
+"吂",
+"⺼",
+"贝",
+"凡"
+],
+"reason": "Unknown bottom-right part is 凡",
+"zh": "上面亡口，下面月、贝、凡",
+"mn": "Дээр 亡 ба 口, доор 月, 贝, 凡"
+},
+"足": {
+"char": "足",
+"ids": "⿱口龰",
+"parts": [
+"口",
+"龰"
+],
+"reason": "Unknown bottom part is 龰 (竖横撇捺), a variant of 止",
+"zh": "上面口，下面是止的变形",
+"mn": "Дээр 口, доор нь 止-ийн өөрчлөгдсөн хэлбэр"
+},
+"载": {
+"char": "载",
+"ids": "⿹⿱十戈车",
+"parts": [
+"十",
+"戈",
+"车"
+],
+"reason": "哉 not present (no 口); 十+戈 wrap 车, same as 裁",
+"zh": "十和戈包着车",
+"mn": "十 ба 戈 нь 车 тэргийг хүрээлнэ"
+},
+"辰": {
+"char": "辰",
+"ids": "辰",
+"parts": [],
+"reason": "独体字",
+"zh": "独体字，按笔顺整体记",
+"mn": "Салгахгүй ханз, зураасын дарааллаар бүтнээр нь цээжил"
+},
+"那": {
+"char": "那",
+"ids": "⿰⿻刀二阝",
+"parts": [
+"刀",
+"二",
+"阝"
+],
+"reason": "Unknown left part is 刀 with 二 inside",
+"zh": "左边刀里加二，右边耳刀",
+"mn": "Зүүн талд 刀 дотор 二, баруун талд 阝"
+},
+"郎": {
+"char": "郎",
+"ids": "⿰良阝",
+"parts": [
+"良",
+"阝"
+],
+"reason": "Kept: left is 良 without its last 捺 (良省); stroke total off by 1",
+"zh": "左边良去末笔，右边耳刀",
+"mn": "Зүүн талд сүүлчийн зураасгүй 良, баруун талд 阝"
+},
+"释": {
+"char": "释",
+"ids": "⿰釆⿱又⿻二丨",
+"parts": [
+"釆",
+"又",
+"二",
+"丨"
+],
+"reason": "Unknown right part is 𠬤 = 又 over 二 crossed by 丨",
+"zh": "釆字旁，右边又下二加一竖",
+"mn": "釆, баруун талд 又, доор нь 二-г босоо зураас огтолно"
+},
+"里": {
+"char": "里",
+"ids": "里",
+"parts": [],
+"reason": "独体字: 田 and 土 share strokes, no clean split",
+"zh": "独体字，田下加土形",
+"mn": "Салгахгүй ханз, 田 ба 土 зураасаа хуваалцдаг"
+},
+"重": {
+"char": "重",
+"ids": "重",
+"parts": [],
+"reason": "独体字: 千 and 里 overlap sharing 丨, no clean split",
+"zh": "独体字，可记作千里相叠",
+"mn": "Салгахгүй ханз; 千 ба 里 давхцсан гэж санаж болно"
+},
+"鉴": {
+"char": "鉴",
+"ids": "⿱⿰〢⿱𠂉丶金",
+"parts": [
+"〢",
+"𠂉",
+"丶",
+"金"
+],
+"reason": "Unknown top is 〢 + 𠂉 + 丶 (same top as 监)",
+"zh": "上面两竖、𠂉和点，下面金",
+"mn": "Дээр хоёр босоо, 𠂉 ба цэг; доор нь 金"
+},
+"长": {
+"char": "长",
+"ids": "长",
+"parts": [],
+"reason": "独体字",
+"zh": "独体字，按笔顺整体记",
+"mn": "Салгахгүй ханз, зураасын дарааллаар бүтнээр нь цээжил"
+},
+"门": {
+"char": "门",
+"ids": "门",
+"parts": [],
+"reason": "独体字",
+"zh": "独体字，像两扇门",
+"mn": "Салгахгүй ханз, хоёр хаалганы дүрс"
+},
+"雨": {
+"char": "雨",
+"ids": "雨",
+"parts": [],
+"reason": "独体字",
+"zh": "独体字，像天上落雨点",
+"mn": "Салгахгүй ханз, тэнгэрээс бороо дусаж буй дүрс"
+},
+"革": {
+"char": "革",
+"ids": "革",
+"parts": [],
+"reason": "独体字",
+"zh": "独体字，像摊开的兽皮",
+"mn": "Салгахгүй ханз, дэлгэсэн амьтны арьсны дүрс"
+},
+"页": {
+"char": "页",
+"ids": "页",
+"parts": [],
+"reason": "独体字",
+"zh": "独体字，像人头",
+"mn": "Салгахгүй ханз, хүний толгойн дүрс"
+},
+"颈": {
+"char": "颈",
+"ids": "⿰⿱又工页",
+"parts": [
+"又",
+"工",
+"页"
+],
+"reason": "Unknown left is ス-shape over 工, shown as 又+工 as in 轻/经",
+"zh": "左边上似又下工，右边页",
+"mn": "Зүүн дээр 又 хэлбэр, доор 工, баруун талд 页"
+},
+"饰": {
+"char": "饰",
+"ids": "⿰饣⿱𠂉巾",
+"parts": [
+"饣",
+"𠂉",
+"巾"
+],
+"reason": "Unknown part is 𠂉 above 巾",
+"zh": "食字旁，右边𠂉下面巾",
+"mn": "Хоол (饣), баруун талд 𠂉, доор нь 巾"
+},
+"馋": {
+"char": "馋",
+"ids": "⿰饣⿱免⺀",
+"parts": [
+"饣",
+"免",
+"⺀"
+],
+"reason": "兔 is not the right part; glyph right side (𫥎) is 免 + two dots",
+"zh": "食字旁，右边免加两点",
+"mn": "Хоол (饣), баруун талд 免 ба хоёр цэг"
+},
+"首": {
+"char": "首",
+"ids": "⿳丷一自",
+"parts": [
+"丷",
+"一",
+"自"
+],
+"reason": "Stroke total: top is 丷 + 一 (䒑), not only 丷",
+"zh": "两点一横，下面是自",
+"mn": "Хоёр цэг, нэг хэвтээ, доор нь 自"
+},
+"马": {
+"char": "马",
+"ids": "马",
+"parts": [],
+"reason": "独体字",
+"zh": "独体字，像一匹马",
+"mn": "Салгахгүй ханз, морины дүрс"
+},
+"髓": {
+"char": "髓",
+"ids": "⿰骨⿺辶⿱左月",
+"parts": [
+"骨",
+"辶",
+"左",
+"月"
+],
+"reason": "Unknown right part is 遀: 辶 around 左 over 月",
+"zh": "骨字旁，右边辶包左和月",
+"mn": "Яс (骨), баруун талд 辶 нь 左 ба 月-г хүрээлнэ"
+},
+"鬼": {
+"char": "鬼",
+"ids": "鬼",
+"parts": [],
+"reason": "独体字: 田 stroke runs into 儿, no clean split",
+"zh": "独体字，按笔顺整体记",
+"mn": "Салгахгүй ханз, зураасын дарааллаар бүтнээр нь цээжил"
+},
+"鹿": {
+"char": "鹿",
+"ids": "鹿",
+"parts": [],
+"reason": "独体字: middle (コ+丨丨) has no standard part",
+"zh": "独体字，像一只鹿",
+"mn": "Салгахгүй ханз, бугын дүрс"
+},
+"黄": {
+"char": "黄",
+"ids": "⿳龷由八",
+"parts": [
+"龷",
+"由",
+"八"
+],
+"reason": "Unknown top part is 龷",
+"zh": "上面龷，中间由，下面八",
+"mn": "Дээр 龷, дунд нь 由, доор нь 八"
+},
+"黎": {
+"char": "黎",
+"ids": "⿱⿰禾勿⿱人氺",
+"parts": [
+"禾",
+"勿",
+"人",
+"氺"
+],
+"reason": "黍 not a visual unit; top-right is 勿 minus one 撇 (勹+丿), kept as 勿; stroke total off by 1",
+"zh": "禾加勿形，下面人和氺",
+"mn": "禾, 勿 хэлбэр, доор нь 人 ба 氺"
+},
+"黑": {
+"char": "黑",
+"ids": "黑",
+"parts": [],
+"reason": "独体字: top part has no clean standard part",
+"zh": "独体字，下面是四点底",
+"mn": "Салгахгүй ханз, доор нь дөрвөн цэг"
+},
+"鼎": {
+"char": "鼎",
+"ids": "鼎",
+"parts": [],
+"reason": "独体字",
+"zh": "独体字，像三足鼎",
+"mn": "Салгахгүй ханз, гурван хөлтэй тогооны дүрс"
+},
+"鼠": {
+"char": "鼠",
+"ids": "鼠",
+"parts": [],
+"reason": "独体字",
+"zh": "独体字，像一只老鼠",
+"mn": "Салгахгүй ханз, хулганы дүрс"
+},
+"齐": {
+"char": "齐",
+"ids": "⿱文⿰丿丨",
+"parts": [
+"文",
+"丿",
+"丨"
+],
+"reason": "Unknown bottom is 丿 + 丨",
+"zh": "上面文，下面一撇一竖",
+"mn": "Дээр 文, доор нэг налуу, нэг босоо зураас"
+},
+"竖": {
+"char": "竖",
+"ids": "⿱⿰〢又立",
+"parts": [
+"〢",
+"又",
+"立"
+],
+"reason": "刂 not present: 2nd stroke has no hook; top-left is 〢 as in 紧/坚",
+"zh": "两竖加又，下面是立",
+"mn": "Хоёр босоо зураас, 又, доор нь 立"
+},
+"车": {
+"char": "车",
+"ids": "车",
+"parts": [],
+"reason": "七 not visually present (2nd stroke is 撇折); 车 is 独体字",
+"zh": "独体字，像车的样子",
+"mn": "Салгахгүй ханз, тэрэгний дүрс"
+},
+"算": {
+"char": "算",
+"ids": "⿱⺮⿱目廾",
+"parts": [
+"⺮",
+"目",
+"廾"
+],
+"reason": "具 not present: bottom legs are 廾 (丿丨), not 一+八",
+"zh": "竹字头，中间目，下面廾",
+"mn": "Дээр хулс, дунд нь 目, доор нь 廾"
+},
+"辨": {
+"char": "辨",
+"ids": "⿲辛⿰丶丿辛",
+"parts": [
+"辛",
+"丶",
+"丿",
+"辛"
+],
+"reason": "刂 not present: middle of 辨 is 点+撇",
+"zh": "两个辛中间一点一撇",
+"mn": "Хоёр 辛-ийн дунд нэг цэг, нэг налуу зураас"
+},
+"赖": {
+"char": "赖",
+"ids": "⿰束负",
+"parts": [
+"束",
+"负"
+],
+"reason": "刂 of 剌 not present; glyph is 束 + 负",
+"zh": "左边束，右边负",
+"mn": "Зүүн талд 束, баруун талд 负"
+},
+"走": {
+"char": "走",
+"ids": "⿱土龰",
+"parts": [
+"土",
+"龰"
+],
+"reason": "Bottom is 龰 (竖横撇捺), not 止; same as 足",
+"zh": "上面土，下面是止的变形",
+"mn": "Дээр 土, доор нь 止-ийн өөрчлөгдсөн хэлбэр"
+},
+"虐": {
+"char": "虐",
+"ids": "⿸虍⿻匚一",
+"parts": [
+"虍",
+"匚",
+"一"
+],
+"reason": "彐 is mirrored in glyph: bottom is 匚 + 一 (E-shape)",
+"zh": "虎字头，下面反写的彐",
+"mn": "Барын толгой, доор нь эсрэг эргэсэн 彐"
+}
+}

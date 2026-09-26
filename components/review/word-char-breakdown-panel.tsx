@@ -46,7 +46,7 @@ function BreakdownBlock({
         </p>
       ) : null}
       {view.parts.length > 0 ? (
-        <HanziBreakdownParts parts={view.parts} locale={locale} />
+        <HanziBreakdownParts parts={view.parts} locale={locale} parent={view.char} />
       ) : null}
       {structure ? (
         <p className="bs-srs-decomp-line">

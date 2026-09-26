@@ -72,7 +72,7 @@ export function CharacterDecompositionHint({
         <HanziTypeBadge type={view.type} locale={locale} />
       </p>
       {parts.length > 0 ? (
-        <HanziBreakdownParts parts={parts} locale={locale} />
+        <HanziBreakdownParts parts={parts} locale={locale} parent={char} />
       ) : null}
       {view.radicalLine ? (
         <HanziRadicalLine

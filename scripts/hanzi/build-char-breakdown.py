@@ -74,6 +74,11 @@ for ch, e in old_full.items():
     if e.get("r") and e.get("rmn") and e["r"] not in legacy_names:
         legacy_names[e["r"]] = e["rmn"]
 
+overrides = {}
+ovp = os.path.join(SRC, "batches/overrides.json")
+if os.path.exists(ovp):
+    overrides = json.load(open(ovp, encoding="utf8"))
+
 hints = {}
 for f in glob.glob(os.path.join(SRC, "batches/hints*.out.json")):
     for row in json.load(open(f, encoding="utf8")):
@@ -124,6 +129,14 @@ for ch, d in D.items():
     parts = flatten(tree)
     incomplete = "？" in parts
     parts = [p for p in parts if p != "？"]
+    ov = overrides.get(ch)
+    if ov:
+        # Хүний хянасан, нүдэнд харагдах задаргаа (docs/hanzi/decomposition-overrides.json)
+        parts = list(ov.get("parts") or [])
+        incomplete = False
+        tree, _ = parse(ov.get("ids") or dec)
+        op = tree[1] if tree and tree[0] == "op" else None
+        dec = ov.get("ids") or dec
     et = d.get("etymology") or {}
     t = TYPE.get(et.get("type"))
     sem, pho = et.get("semantic"), et.get("phonetic")
@@ -190,6 +203,15 @@ for ch, d in D.items():
         named = [f"{c['ch']} {c['mn']}" for c in comps if c.get("mn")]
         if named:
             entry["e"] = " + ".join(named)
+    if ov:
+        entry["ov"] = True
+        if len(parts) == 0:
+            entry["s"] = "дан"
+            entry["sz"] = "独体字"
+        if ov.get("mn"):
+            entry["e"] = (f"{t}字 — " if t else "") + ov["mn"]
+        if ov.get("zh"):
+            entry["ez"] = (f"{t}字：" if t else "") + ov["zh"]
     # 2-р түвшин
     sub = {}
     for p in parts:

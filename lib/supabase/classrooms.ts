@@ -77,6 +77,7 @@ export function mapClassroomFromRow(row: Record<string, unknown>): Classroom {
       : null,
     scheduleNote: row.schedule_note ? String(row.schedule_note) : null,
     courseId: row.course_id ? String(row.course_id) : null,
+    joinCode: row.join_code ? String(row.join_code) : null,
   };
 }
 
@@ -1287,4 +1288,94 @@ export async function getTeacherDashboardStats(): Promise<
     },
     error: null,
   };
+}
+
+// --- Ангийн код (migration 064) ---
+
+/** Багш: ангийн кодыг шинээр үүсгэнэ. */
+export async function regenerateClassroomJoinCode(
+  classroomId: string
+): Promise<ClassroomResult<string>> {
+  if (!supabase) return notConfigured();
+  const { data, error } = await supabase.rpc("regenerate_classroom_join_code", {
+    p_classroom_id: classroomId,
+  });
+  if (error) return { data: null, error: toError(error) };
+  return { data: String(data), error: null };
+}
+
+export type JoinByCodeResult = {
+  classroomId: string;
+  classroomName: string;
+  alreadyMember: boolean;
+};
+
+/** Сурагч: 6 оронтой кодоор ангид нэгдэнэ (нэвтэрсэн байх). */
+export async function joinClassroomByCode(
+  code: string,
+  displayName?: string | null
+): Promise<ClassroomResult<JoinByCodeResult>> {
+  if (!supabase) return notConfigured();
+  const clean = code.replace(/\D/g, "");
+  if (clean.length !== 6) return { data: null, error: "Код 6 оронтой байх ёстой." };
+  const { data, error } = await supabase.rpc("join_classroom_by_code", {
+    p_code: clean,
+    p_display_name: displayName?.trim() || null,
+  });
+  if (error) {
+    const msg = error.message.includes("invalid code")
+      ? "Ийм кодтой анги олдсонгүй."
+      : error.message.includes("not signed in")
+        ? "Эхлээд нэвтэрнэ үү."
+        : error.message;
+    return { data: null, error: msg };
+  }
+  const row = (Array.isArray(data) ? data[0] : data) as Record<string, unknown> | undefined;
+  if (!row) return { data: null, error: "Ийм кодтой анги олдсонгүй." };
+  return {
+    data: {
+      classroomId: String(row.out_classroom_id),
+      classroomName: String(row.out_classroom_name),
+      alreadyMember: Boolean(row.out_already_member),
+    },
+    error: null,
+  };
+}
+
+/** Кодыг шалгаад ангийн нэрийг харуулна (нэвтрээгүй ч болно). */
+export async function peekClassroomByCode(
+  code: string
+): Promise<{ classroomName: string; organizationName: string | null } | null> {
+  if (!supabase) return null;
+  const clean = code.replace(/\D/g, "");
+  if (clean.length !== 6) return null;
+  const { data, error } = await supabase.rpc("peek_classroom_by_code", { p_code: clean });
+  if (error) return null;
+  const row = (Array.isArray(data) ? data[0] : data) as Record<string, unknown> | undefined;
+  if (!row?.out_classroom_name) return null;
+  return {
+    classroomName: String(row.out_classroom_name),
+    organizationName: row.out_organization_name ? String(row.out_organization_name) : null,
+  };
+}
+
+const PENDING_CLASS_CODE_KEY = "buunduu-pending-class-code-v1";
+
+/** Бүртгүүлэхдээ код оруулсан ч имэйл баталгаажуулалт хүлээж байгаа үед хадгална. */
+export function setPendingClassCode(code: string | null): void {
+  try {
+    if (code) localStorage.setItem(PENDING_CLASS_CODE_KEY, code.replace(/\D/g, ""));
+    else localStorage.removeItem(PENDING_CLASS_CODE_KEY);
+  } catch {
+    // ignore
+  }
+}
+
+export function getPendingClassCode(): string | null {
+  try {
+    const v = localStorage.getItem(PENDING_CLASS_CODE_KEY);
+    return v && v.length === 6 ? v : null;
+  } catch {
+    return null;
+  }
 }

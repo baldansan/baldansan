@@ -23,6 +23,7 @@ import { useActivityTracker } from "@/lib/analytics/activity-tracker";
 import { useUiLocale } from "@/lib/i18n/ui-locale";
 import { tr } from "@/lib/i18n/translate";
 import { pickBreakdownLabel } from "@/components/hanzi/hanzi-breakdown-parts";
+import { HanziPartPopover } from "@/components/hanzi/hanzi-part-popover";
 
 type Props = {
   lessonId: string;
@@ -61,6 +62,8 @@ export function StrokeGameClient({
   const [correctCount, setCorrectCount] = useState(0);
   const [score, setScore] = useState(0);
   const [finished, setFinished] = useState(false);
+  /** Index of the formula part whose info card is open (never an answer). */
+  const [partPop, setPartPop] = useState<number | null>(null);
 
   const current = questions[index];
   const total = questions.length;
@@ -75,6 +78,13 @@ export function StrokeGameClient({
     () => resolveLessonPracticeHanzi(lessonId, vocabulary),
     [lessonId, vocabulary]
   );
+  /** Formula glyphs; the hidden slot shows its answer only after answering. */
+  const formulaGlyphs =
+    current?.parts?.map((p) =>
+      p.hidden ? (revealed ? current.correctComponent : "?") : p.glyph
+    ) ?? [];
+  const popGlyph = partPop != null ? formulaGlyphs[partPop] : undefined;
+  const popPartData = partPop != null ? current?.parts?.[partPop] : undefined;
   const writingChar =
     current && !isHangul
       ? extractHanziCharacters(current.chinese)[0] ?? current.chinese
@@ -118,6 +128,7 @@ export function StrokeGameClient({
     setIndex((i) => i + 1);
     setSelected(null);
     setRevealed(false);
+    setPartPop(null);
   }
 
   function restart() {
@@ -127,6 +138,7 @@ export function StrokeGameClient({
     setCorrectCount(0);
     setScore(0);
     setFinished(false);
+    setPartPop(null);
   }
 
   if (questions.length === 0) {
@@ -213,50 +225,71 @@ export function StrokeGameClient({
                         part.labelMn,
                         part.labelZh
                       );
+                      const glyph = formulaGlyphs[i] ?? part.glyph;
+                      const tappable = glyph !== "?";
+                      const glyphClass = `text-3xl font-bold ${
+                        part.hidden
+                          ? revealed
+                            ? "rounded-lg bg-emerald-50 px-2 text-emerald-700 ring-1 ring-emerald-200"
+                            : "rounded-lg bg-amber-50 px-2 text-amber-600 ring-1 ring-amber-200"
+                          : ""
+                      }`;
+                      const inner = (
+                        <>
+                          <span className={glyphClass} translate="no">
+                            {glyph}
+                          </span>
+                          {label ? (
+                            <span
+                              className="text-[11px] leading-tight text-[var(--app-muted)]"
+                              translate="no"
+                            >
+                              {label}
+                            </span>
+                          ) : null}
+                          {part.role ? (
+                            <span
+                              className={`rounded-full px-2 text-[10px] font-bold leading-relaxed ${
+                                part.role === "sem"
+                                  ? "bg-emerald-50 text-emerald-700 ring-1 ring-emerald-200"
+                                  : "bg-indigo-50 text-indigo-700 ring-1 ring-indigo-200"
+                              }`}
+                            >
+                              {part.role === "sem"
+                                ? tr(locale, "утга заагч")
+                                : tr(locale, "дуудлага заагч")}
+                            </span>
+                          ) : null}
+                        </>
+                      );
                       return (
                         <Fragment key={`${part.glyph}-${i}`}>
                           {i > 0 ? (
-                            <span className="pt-1 text-2xl font-semibold" aria-hidden>
+                            <span className="pt-2 text-2xl font-semibold" aria-hidden>
                               +
                             </span>
                           ) : null}
-                          <span className="flex min-w-[56px] flex-col items-center gap-0.5">
-                            <span
-                              className={`text-3xl font-bold ${
-                                part.hidden
-                                  ? "rounded-lg bg-amber-50 px-2 text-amber-600 ring-1 ring-amber-200"
-                                  : ""
-                              }`}
-                              translate="no"
+                          {tappable ? (
+                            <button
+                              type="button"
+                              aria-haspopup="dialog"
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                setPartPop(i);
+                              }}
+                              className="flex min-w-[56px] cursor-pointer flex-col items-center gap-0.5 rounded-xl border border-dashed border-purple-200 bg-white/60 px-1.5 py-1 text-purple-700 transition active:scale-95"
                             >
-                              {part.glyph}
+                              {inner}
+                            </button>
+                          ) : (
+                            <span className="flex min-w-[56px] flex-col items-center gap-0.5 py-1">
+                              {inner}
                             </span>
-                            {label ? (
-                              <span
-                                className="text-[11px] leading-tight text-[var(--app-muted)]"
-                                translate="no"
-                              >
-                                {label}
-                              </span>
-                            ) : null}
-                            {part.role ? (
-                              <span
-                                className={`rounded-full px-2 text-[10px] font-bold leading-relaxed ${
-                                  part.role === "sem"
-                                    ? "bg-emerald-50 text-emerald-700 ring-1 ring-emerald-200"
-                                    : "bg-indigo-50 text-indigo-700 ring-1 ring-indigo-200"
-                                }`}
-                              >
-                                {part.role === "sem"
-                                  ? tr(locale, "утга заагч")
-                                  : tr(locale, "дуудлага заагч")}
-                              </span>
-                            ) : null}
-                          </span>
+                          )}
                         </Fragment>
                       );
                     })}
-                    <span className="pt-1 text-2xl font-semibold" translate="no">
+                    <span className="pt-2 text-2xl font-semibold" translate="no">
                       = {current.chinese}
                     </span>
                   </div>
@@ -344,6 +377,18 @@ export function StrokeGameClient({
                 </p>
               ) : null}
             </div>
+          ) : null}
+          {popGlyph && popGlyph !== "?" && current ? (
+            <HanziPartPopover
+              glyph={popGlyph}
+              parent={current.chinese}
+              parts={formulaGlyphs}
+              partIndex={partPop ?? undefined}
+              fallbackMn={popPartData?.labelMn}
+              fallbackZh={popPartData?.labelZh}
+              role={popPartData?.role}
+              onClose={() => setPartPop(null)}
+            />
           ) : null}
           {revealed && writingHref ? (
             <Link
