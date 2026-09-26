@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useMemo, useState } from "react";
+import { Fragment, useMemo, useState } from "react";
 import { GameCard } from "@/components/games/game-card";
 import { GameEmptyState } from "@/components/games/game-empty-state";
 import { GameHeader } from "@/components/games/game-header";
@@ -22,6 +22,7 @@ import type { HskCharacterNote } from "@/lib/lesson/hsk-lesson-content";
 import { useActivityTracker } from "@/lib/analytics/activity-tracker";
 import { useUiLocale } from "@/lib/i18n/ui-locale";
 import { tr } from "@/lib/i18n/translate";
+import { pickBreakdownLabel } from "@/components/hanzi/hanzi-breakdown-parts";
 
 type Props = {
   lessonId: string;
@@ -66,6 +67,10 @@ export function StrokeGameClient({
   const isHangul = current?.mode === "hangul";
   const isStrokeOrder = current?.mode === "stroke-order";
   const isComponent = current?.mode === "component";
+  const structureLabel =
+    current && current.mode === "component" && current.questionType !== "structure"
+      ? pickBreakdownLabel(locale, current.structure, current.structureZh)
+      : "";
   const lessonPracticeHanzi = useMemo(
     () => resolveLessonPracticeHanzi(lessonId, vocabulary),
     [lessonId, vocabulary]
@@ -186,13 +191,82 @@ export function StrokeGameClient({
                 <p className="mt-1 text-sm text-[var(--app-muted)]" translate="no">
                   {current.mongolian}
                 </p>
-                {current.formulaPrompt ? (
+                {current.charType ? (
+                  <p className="mt-2">
+                    <span className="inline-block rounded-full bg-amber-50 px-2.5 py-0.5 text-[11px] font-bold text-amber-800 ring-1 ring-amber-200">
+                      {current.charType === "形声"
+                        ? tr(locale, "Утга-дуудлагын ханз")
+                        : current.charType === "会意"
+                          ? tr(locale, "Утга нийлсэн ханз")
+                          : tr(locale, "Зураг ханз")}
+                      {locale === "zh" ? null : (
+                        <span translate="no"> · {current.charType}字</span>
+                      )}
+                    </span>
+                  </p>
+                ) : null}
+                {current.parts && current.parts.length > 0 ? (
+                  <div className="mt-4 flex flex-wrap items-start justify-center gap-x-2 gap-y-3 text-purple-700">
+                    {current.parts.map((part, i) => {
+                      const label = pickBreakdownLabel(
+                        locale,
+                        part.labelMn,
+                        part.labelZh
+                      );
+                      return (
+                        <Fragment key={`${part.glyph}-${i}`}>
+                          {i > 0 ? (
+                            <span className="pt-1 text-2xl font-semibold" aria-hidden>
+                              +
+                            </span>
+                          ) : null}
+                          <span className="flex min-w-[56px] flex-col items-center gap-0.5">
+                            <span
+                              className={`text-3xl font-bold ${
+                                part.hidden
+                                  ? "rounded-lg bg-amber-50 px-2 text-amber-600 ring-1 ring-amber-200"
+                                  : ""
+                              }`}
+                              translate="no"
+                            >
+                              {part.glyph}
+                            </span>
+                            {label ? (
+                              <span
+                                className="text-[11px] leading-tight text-[var(--app-muted)]"
+                                translate="no"
+                              >
+                                {label}
+                              </span>
+                            ) : null}
+                            {part.role ? (
+                              <span
+                                className={`rounded-full px-2 text-[10px] font-bold leading-relaxed ${
+                                  part.role === "sem"
+                                    ? "bg-emerald-50 text-emerald-700 ring-1 ring-emerald-200"
+                                    : "bg-indigo-50 text-indigo-700 ring-1 ring-indigo-200"
+                                }`}
+                              >
+                                {part.role === "sem"
+                                  ? tr(locale, "утга заагч")
+                                  : tr(locale, "дуудлага заагч")}
+                              </span>
+                            ) : null}
+                          </span>
+                        </Fragment>
+                      );
+                    })}
+                    <span className="pt-1 text-2xl font-semibold" translate="no">
+                      = {current.chinese}
+                    </span>
+                  </div>
+                ) : current.formulaPrompt ? (
                   <p className="mt-4 text-xl font-semibold tracking-wide text-purple-700">
                     {current.formulaPrompt}
                   </p>
                 ) : null}
                 <p className="mt-2 text-sm font-medium text-[var(--app-text)]">
-                  {current.prompt}
+                  {tr(locale, current.prompt)}
                 </p>
                 {isStrokeOrder ? (
                   <p className="mt-1 text-xs text-[var(--app-muted)]">
@@ -230,7 +304,15 @@ export function StrokeGameClient({
               return (
                 <GameOptionButton
                   key={option}
-                  label={option}
+                  label={
+                    current.optionLabels?.[option]
+                      ? pickBreakdownLabel(
+                          locale,
+                          current.optionLabels[option]!.mn,
+                          current.optionLabels[option]!.zh
+                        ) || option
+                      : option
+                  }
                   state={state}
                   disabled={revealed}
                   onClick={() => handleSelect(option)}
@@ -243,10 +325,25 @@ export function StrokeGameClient({
               );
             })}
           </div>
-          {revealed && current.explanation ? (
-            <p className="mt-4 rounded-xl bg-emerald-50 px-3 py-3 text-sm leading-relaxed text-emerald-900 ring-1 ring-emerald-200" translate="no">
-              {current.explanation}
-            </p>
+          {revealed && (current.explanation || current.explanationZh) ? (
+            <div className="mt-4 rounded-xl bg-emerald-50 px-3 py-3 text-sm leading-relaxed text-emerald-900 ring-1 ring-emerald-200">
+              <p translate="no">
+                {locale === "zh"
+                  ? current.explanationZh || current.explanation
+                  : current.explanation || current.explanationZh}
+              </p>
+              {current.formula ? (
+                <p className="mt-1 text-base font-semibold tracking-wide" translate="no">
+                  {current.formula}
+                </p>
+              ) : null}
+              {structureLabel ? (
+                <p className="mt-1 text-xs text-emerald-800">
+                  {tr(locale, "Бүтэц")}:{" "}
+                  <span translate="no">{structureLabel}</span>
+                </p>
+              ) : null}
+            </div>
           ) : null}
           {revealed && writingHref ? (
             <Link

@@ -9,17 +9,18 @@ import {
   type CharBreakdownView,
 } from "@/lib/hanzi/char-breakdown-data";
 import { ConfusableChars } from "@/components/hanzi/confusable-chars";
+import {
+  HanziBreakdownParts,
+  HanziRadicalLine,
+  HanziTypeBadge,
+  pickBreakdownLabel,
+} from "@/components/hanzi/hanzi-breakdown-parts";
 
 type Props = {
   text: string;
   /** Catalog radical for last-resort fallback when no breakdown entry exists. */
   wordRadical?: string | null;
 };
-
-function formatComponentPart(part: CharBreakdownView["parts"][number]): string {
-  if (part.name) return `${part.c} (${part.name})`;
-  return part.c;
-}
 
 function BreakdownBlock({
   view,
@@ -30,39 +31,50 @@ function BreakdownBlock({
 }) {
   const locale = useUiLocale();
   const radical = view.radicalLine ?? view.radicalFallback;
+  const structure = pickBreakdownLabel(locale, view.structure, view.structureZh);
+  const explanation =
+    locale === "zh"
+      ? view.explanationZh || view.etymology_mn
+      : view.etymology_mn || view.explanationZh;
 
   return (
     <div className="bs-srs-decomp-block">
-      {showCharLabel ? (
-        <p className="bs-srs-decomp-char">{view.char}</p>
-      ) : null}
-      {view.parts.length > 0 ? (
-        <p className="bs-srs-decomp-line">
-          <span className="bs-srs-decomp-k">{tr(locale, "Бүрэлдэхүүн:")}</span>{" "}
-          {view.parts.map(formatComponentPart).join(" + ")}
+      {showCharLabel || view.type ? (
+        <p className="bs-srs-decomp-char">
+          {showCharLabel ? <span translate="no">{view.char}</span> : null}
+          <HanziTypeBadge type={view.type} locale={locale} />
         </p>
       ) : null}
-      {view.structure ? (
+      {view.parts.length > 0 ? (
+        <HanziBreakdownParts parts={view.parts} locale={locale} />
+      ) : null}
+      {structure ? (
         <p className="bs-srs-decomp-line">
-          <span className="bs-srs-decomp-k">{tr(locale, "Бүтэц:")}</span> {view.structure}
+          <span className="bs-srs-decomp-k">{tr(locale, "Бүтэц:")}</span>{" "}
+          <span translate="no">{structure}</span>
         </p>
       ) : null}
       {radical ? (
-        <p className="bs-srs-decomp-line">
-          <span className="bs-srs-decomp-k">{tr(locale, "Язгуур:")}</span> {radical.glyph}
-          {radical.labelMn ? ` (${radical.labelMn})` : null}
-        </p>
+        <HanziRadicalLine
+          glyph={radical.glyph}
+          labelMn={radical.labelMn}
+          labelZh={view.radicalLine?.labelZh ?? null}
+          locale={locale}
+        />
       ) : null}
-      {view.etymology_mn ? (
+      {explanation ? (
         <p
           className={
-            view.etymologyRich
-              ? "bs-srs-decomp-etym"
-              : "bs-srs-decomp-desc"
+            view.etymologyRich ? "bs-srs-decomp-etym" : "bs-srs-decomp-desc"
           }
           translate="no"
         >
-          {view.etymologyRich ? `💡 ${view.etymology_mn}` : view.etymology_mn}
+          {view.etymologyRich ? `💡 ${explanation}` : explanation}
+        </p>
+      ) : null}
+      {locale === "mn" && view.mnemonic_mn ? (
+        <p className="bs-srs-decomp-etym" translate="no">
+          💡 {view.mnemonic_mn}
         </p>
       ) : null}
     </div>
@@ -71,18 +83,22 @@ function BreakdownBlock({
 
 export function WordCharBreakdownPanel({ text, wordRadical }: Props) {
   const locale = useUiLocale();
-  const [views, setViews] = useState<CharBreakdownView[] | null>(null);
+  const requestKey = `${text}\u0000${wordRadical ?? ""}`;
+  const [loaded, setLoaded] = useState<{
+    key: string;
+    views: CharBreakdownView[];
+  } | null>(null);
 
   useEffect(() => {
     let cancelled = false;
-    setViews(null);
+    const key = `${text}\u0000${wordRadical ?? ""}`;
 
     void resolveWordBreakdownViewsAsync(text, wordRadical)
       .then((resolved) => {
-        if (!cancelled) setViews(resolved);
+        if (!cancelled) setLoaded({ key, views: resolved });
       })
       .catch(() => {
-        if (!cancelled) setViews([]);
+        if (!cancelled) setLoaded({ key, views: [] });
       });
 
     return () => {
@@ -90,6 +106,7 @@ export function WordCharBreakdownPanel({ text, wordRadical }: Props) {
     };
   }, [text, wordRadical]);
 
+  const views = loaded?.key === requestKey ? loaded.views : null;
   if (!views || views.length === 0) return null;
 
   const showCharLabels = views.length > 1;

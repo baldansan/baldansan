@@ -2,6 +2,7 @@ import Link from "next/link";
 import { PublicPageShell } from "@/components/public-page-shell";
 import { ctaOutlineClass, ctaPrimaryClass } from "@/components/ui/cta-button-row";
 import { AUDIO_CMN_ATTRIBUTION } from "@/lib/tts/audio-cmn";
+import { HANZI_DECOMPOSITION_ATTRIBUTION } from "@/lib/hanzi/char-breakdown-full";
 
 export const metadata = {
   title: "Тусламж — Бөөндөө Сурцгаая",
@@ -97,6 +98,7 @@ export default function HelpPage() {
       </article>
 
       <p className="text-xs text-slate-500">{AUDIO_CMN_ATTRIBUTION}</p>
+      <p className="text-xs text-slate-500">{HANZI_DECOMPOSITION_ATTRIBUTION}</p>
 
       <section className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
         <Link href="/courses" className={ctaPrimaryClass}>

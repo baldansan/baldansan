@@ -1,21 +1,16 @@
 import { readFile } from "fs/promises";
 import path from "path";
+import type {
+  FullBreakdownComponent,
+  FullBreakdownEntry,
+  FullComponentMeaning,
+} from "@/lib/hanzi/char-breakdown-full";
 
-export type ServerFullBreakdownComponent = {
-  ch: string;
-  mn?: string;
-};
-
-export type ServerFullBreakdownEntry = {
-  s?: string;
-  c?: ServerFullBreakdownComponent[];
-  r?: string;
-  rmn?: string;
-  e?: string;
-};
+export type ServerFullBreakdownComponent = FullBreakdownComponent;
+export type ServerFullBreakdownEntry = FullBreakdownEntry;
 
 let fullDataCache: Record<string, ServerFullBreakdownEntry> | null = null;
-let componentMnCache: Record<string, { mn?: string }> | null = null;
+let componentMnCache: Record<string, FullComponentMeaning> | null = null;
 let loadPromise: Promise<boolean> | null = null;
 
 export async function ensureServerBreakdownFullLoaded(): Promise<boolean> {
@@ -33,9 +28,13 @@ export async function ensureServerBreakdownFullLoaded(): Promise<boolean> {
         string,
         ServerFullBreakdownEntry
       >;
-      componentMnCache = JSON.parse(mnRaw) as Record<string, { mn?: string }>;
+      componentMnCache = JSON.parse(mnRaw) as Record<
+        string,
+        FullComponentMeaning
+      >;
       return true;
     } catch {
+      loadPromise = null;
       return false;
     }
   })();
@@ -54,4 +53,10 @@ export function getServerFullComponentMn(glyph: string): string {
   const key = glyph.trim();
   if (!key || !componentMnCache) return "";
   return componentMnCache[key]?.mn?.trim() ?? "";
+}
+
+export function getServerFullComponentZh(glyph: string): string {
+  const key = glyph.trim();
+  if (!key || !componentMnCache) return "";
+  return componentMnCache[key]?.zh?.trim() ?? "";
 }

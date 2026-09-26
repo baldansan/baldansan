@@ -66,6 +66,16 @@ export type ComponentQuestionType =
   | "meaning"
   | "structure";
 
+/** One part shown in the question card formula (hidden = the "?" slot). */
+export type StrokeQuestionPart = {
+  glyph: string;
+  hidden?: boolean;
+  /** sem = утга заагч / 形旁, pho = дуудлага заагч / 声旁. */
+  role?: "sem" | "pho";
+  labelMn?: string;
+  labelZh?: string;
+};
+
 export type StrokeQuestion = {
   id: string;
   chinese: string;
@@ -79,6 +89,20 @@ export type StrokeQuestion = {
   questionType?: ComponentQuestionType;
   /** e.g. 亻 + ? = 休 */
   formulaPrompt?: string;
+  /** Structured formula for the question card (role tags, labels). */
+  parts?: StrokeQuestionPart[];
+  /** 形声 / 会意 / 象形 badge. */
+  charType?: "形声" | "会意" | "象形";
+  /** Mongolian explanation (dataset `e`, or a fallback sentence). */
   explanation?: string;
+  /** Chinese explanation (dataset `ez`). */
+  explanationZh?: string;
+  /** Full formula line shown after answering, e.g. "讠 + 射 = 谢". */
+  formula?: string;
+  /** Structure label (mn). */
   structure?: string;
+  /** Structure label (zh). */
+  structureZh?: string;
+  /** Per-option display labels (content) — option value stays the key. */
+  optionLabels?: Record<string, { mn?: string; zh?: string }>;
 };

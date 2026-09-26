@@ -19,8 +19,9 @@ export default async function StrokeGamePage({ searchParams }: PageProps) {
   const { lessonId = "1" } = await searchParams;
   const context = await getLessonGameContext(lessonId);
 
-  // Hanzi lessons: build the questions on the server, backed by the full
-  // char-breakdown catalog (~9500 chars) so imported lessons are covered.
+  // Hanzi lessons: build the questions on the server from the verified
+  // makemeahanzi-based dataset (char_breakdown_full.json, ~3.4k chars) — the
+  // single source of parts, roles and explanations.
   let initialQuestions: StrokeQuestion[] | undefined;
   if (!context.isKorean) {
     const chars = collectLessonCharacters(context.vocabulary);

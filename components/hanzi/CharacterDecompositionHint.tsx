@@ -1,4 +1,17 @@
-import { getCharBreakdownView } from "@/lib/hanzi/char-breakdown-data";
+"use client";
+
+import { useEffect, useState } from "react";
+import {
+  loadFullCharBreakdownView,
+  type CharBreakdownView,
+} from "@/lib/hanzi/char-breakdown-data";
+import { tr } from "@/lib/i18n/translate";
+import { useUiLocale } from "@/lib/i18n/ui-locale";
+import {
+  HanziBreakdownParts,
+  HanziRadicalLine,
+  HanziTypeBadge,
+} from "@/components/hanzi/hanzi-breakdown-parts";
 
 type Props = {
   char: string;
@@ -6,41 +19,79 @@ type Props = {
   showCharLabel?: boolean;
 };
 
+/**
+ * Compact breakdown hint from the verified dataset (char_breakdown_full.json):
+ * type badge, parts with role tags (tap to expand second level), 部首 line,
+ * explanation by UI locale.
+ */
 export function CharacterDecompositionHint({
   char,
   showCharLabel = false,
 }: Props) {
-  const breakdown = getCharBreakdownView(char);
-  if (!breakdown) return null;
+  const locale = useUiLocale();
+  const [loaded, setLoaded] = useState<{
+    char: string;
+    view: CharBreakdownView | null;
+  } | null>(null);
 
-  const { parts, etymology_mn: etymology } = breakdown;
-  if (parts.length === 0 && !etymology) return null;
+  useEffect(() => {
+    let cancelled = false;
+    void loadFullCharBreakdownView(char)
+      .then((v) => {
+        if (!cancelled) setLoaded({ char, view: v });
+      })
+      .catch(() => {
+        if (!cancelled) setLoaded({ char, view: null });
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [char]);
+
+  const view = loaded?.char === char ? loaded.view : null;
+  if (!view) return null;
+
+  const parts = view.incomplete || view.parts.length < 2 ? [] : view.parts;
+  const explanation =
+    locale === "zh"
+      ? view.explanationZh || view.etymology_mn
+      : view.etymology_mn || view.explanationZh;
+  if (parts.length === 0 && !explanation) return null;
 
   return (
     <div className="bs-decomp-hint">
       <p className="bs-decomp-hint-label">
         {showCharLabel ? (
           <>
-            <span className="bs-decomp-hint-char">{char}</span> · Бүрдэл
+            <span className="bs-decomp-hint-char">{char}</span> ·{" "}
+            {tr(locale, "Бүрдэл")}
           </>
         ) : (
-          "Бүрдэл"
-        )}
+          tr(locale, "Бүрдэл")
+        )}{" "}
+        <HanziTypeBadge type={view.type} locale={locale} />
       </p>
       {parts.length > 0 ? (
-        <div className="bs-decomp-hint-row" translate="no">
-          {parts.map((part, index) => (
-            <span key={`${part.c}-${index}`} className="bs-decomp-chip">
-              <span className="bs-decomp-chip-icon" aria-hidden>
-                {part.icon}
-              </span>
-              <span className="bs-decomp-chip-glyph">{part.c}</span>
-              <span className="bs-decomp-chip-name">{part.name}</span>
-            </span>
-          ))}
-        </div>
+        <HanziBreakdownParts parts={parts} locale={locale} />
       ) : null}
-      {etymology ? <p className="bs-decomp-etym" translate="no">{etymology}</p> : null}
+      {view.radicalLine ? (
+        <HanziRadicalLine
+          glyph={view.radicalLine.glyph}
+          labelMn={view.radicalLine.labelMn}
+          labelZh={view.radicalLine.labelZh}
+          locale={locale}
+        />
+      ) : null}
+      {explanation ? (
+        <p className="bs-decomp-etym" translate="no">
+          {explanation}
+        </p>
+      ) : null}
+      {locale === "mn" && view.mnemonic_mn ? (
+        <p className="bs-decomp-etym" translate="no">
+          💡 {view.mnemonic_mn}
+        </p>
+      ) : null}
     </div>
   );
 }
