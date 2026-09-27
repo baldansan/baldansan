@@ -33,6 +33,7 @@ import {
   resolveLessonHskLevel,
 } from "@/lib/hsk/active-hsk-level";
 import { HelzuiHomeCard } from "@/components/helzui/helzui-home-card";
+import { DailyToneHomeCard } from "@/components/pronunciation/daily-tone-card";
 import "@/components/helzui/helzui-course.css";
 import { tr } from "@/lib/i18n/translate";
 import { getUiLocale, useUiLocale } from "@/lib/i18n/ui-locale";
@@ -328,6 +329,8 @@ export function HomeAppView({ catalog, defaultChipId }: Props) {
           </span>
         </Link>
       ) : null}
+
+      <DailyToneHomeCard />
 
       {bichlegContinue ? (
         <Link href={bichlegContinue.href} className="bs-tm-continue">

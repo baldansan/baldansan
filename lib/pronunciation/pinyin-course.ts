@@ -29,6 +29,33 @@ export type CourseRule = {
   examples: Array<{ text: string; pinyin: string; mn?: string; syl?: string; tone?: number }>;
 };
 
+/** «Монголчуудын алдаа» нэгжийн хос: самбарын түлхүүр + аялгуу (toneB өгөхгүй бол ижил) */
+export type ErrorPair = {
+  a: string;
+  b: string;
+  tone: number;
+  toneB?: number;
+  /** Жинхэнэ алдааны хэв бол аль нь зөв (нөгөө нь «монголчлоод хэлдэг»); байхгүй бол зүгээр A / B */
+  right?: "a" | "b";
+};
+
+export type ErrorWord = { zh: string; pinyin: string; mn: string };
+
+export type ErrorSection = {
+  id: string;
+  title: string;
+  titleZh: string;
+  /** Яагаад монголчууд алддаг вэ (1–2 өгүүлбэр) */
+  why: string;
+  /** Яаж засах вэ (2–3 өгүүлбэр: хэл, уруул, агаар) */
+  fix: string;
+  /** Амны хэлбэр — хэрэгтэй газарт */
+  mouth?: MouthShapeKind;
+  pairs: ErrorPair[];
+  words: ErrorWord[];
+  drill: "pick" | "tone";
+};
+
 export type CourseUnit = {
   id: string;
   order: number;
@@ -44,11 +71,20 @@ export type CourseUnit = {
   pairs?: [string, string][];
   /** Дүрмийн нэгж (аудиогүй) */
   rules?: CourseRule[];
+  /** Тусгай нэгж: «Монголчуудын алдаа» — хэсэг бүр өөрийн дасгалтай */
+  kind?: "errors";
+  sections?: ErrorSection[];
 };
 
 export const PINYIN_COURSE_STORAGE_KEY = "buunduu-pinyin-course-v1";
 
-export type UnitProgress = { listened: string[]; testScore?: number; done: boolean };
+export type UnitProgress = {
+  listened: string[];
+  testScore?: number;
+  done: boolean;
+  /** «Монголчуудын алдаа» — хэсэг бүрийн хамгийн сайн оноо (8-аас) */
+  sections?: Record<string, number>;
+};
 export type CourseProgress = Record<string, UnitProgress | undefined>;
 
 /** Шалгалт тэнцэх доод оноо (8-аас) */
@@ -95,8 +131,18 @@ export function unitSyllableKeys(unit: CourseUnit): string[] {
     for (const i of unit.blend.initials) for (const f of unit.blend.finals) keys.add(blendKey(i, f));
   }
   for (const r of unit.rules ?? []) for (const ex of r.examples) if (ex.syl) keys.add(ex.syl);
+  for (const s of unit.sections ?? []) {
+    for (const p of s.pairs) {
+      keys.add(p.a);
+      keys.add(p.b);
+    }
+  }
   return [...keys];
 }
+
+/** «Монголчуудын 6 алдаа» нэгжийн id (замд: /pronunciation/basics/mongol-aldaa) */
+export const ERRORS_UNIT_ID = "mongol-aldaa";
+export const ERROR_SECTION_COUNT = 6;
 
 /** Амны хэлбэр — эгшгийн эхний үсгээр (гийгүүлэгч бол түүний үеийн эгшгээр: b → bo → дугуй) */
 export type MouthShapeKind = "round" | "spread" | "open" | "neutral";
@@ -497,6 +543,164 @@ export const PINYIN_COURSE: CourseUnit[] = [
           { text: "西", pinyin: "xī", mn: "баруун", syl: "xi", tone: 1 },
           { text: "安", pinyin: "ān", mn: "амар", syl: "an", tone: 1 },
         ],
+      },
+    ],
+  },
+  {
+    id: ERRORS_UNIT_ID,
+    order: 14,
+    title: "Монголчуудын 6 алдаа",
+    titleZh: "蒙古学生的 6 个易错点",
+    emoji: "🇲🇳",
+    intro: "Монгол хэлтэй хүн хятадаар ярихад хамгийн олон давтагддаг 6 алдаа. Хэсэг бүрд: яагаад, яаж засах, зөв ↔ монголчилсон дуу, үгс, дасгал.",
+    introZh: "蒙古语母语者最常见的 6 个发音问题：为什么、怎么改、对比听、词语、练习。",
+    items: [],
+    kind: "errors",
+    sections: [
+      {
+        id: "z-zh",
+        title: "z c s ↔ zh ch sh",
+        titleZh: "平舌 ↔ 翘舌",
+        why: "Монголд «з, ц, с» л байдаг, хэл эргүүлэх (卷舌) авиа байхгүй. Тиймээс zhi, chi, shi-г бүгдийг нь zi, ci, si шиг тэгш хэлээр хэлчихдэг.",
+        fix: "zh ch sh хэлэхдээ хэлний үзүүрийг дээш, тагнайн урд хэсэг рүү эргүүл — хэл тагнайд хүрэхгүй, ойрхон л байна. z c s-д харин хэл тэгш, үзүүр нь дээд шүдний ард. Толинд хараад: zhi гэхэд хэлний үзүүр дээшээ, zi гэхэд доошоо байх ёстой.",
+        mouth: "neutral",
+        pairs: [
+          { a: "zi", b: "zhi", tone: 4, right: "b" },
+          { a: "ci", b: "chi", tone: 1, right: "b" },
+          { a: "si", b: "shi", tone: 4, right: "b" },
+          { a: "za", b: "zha", tone: 2, right: "b" },
+          { a: "cu", b: "chu", tone: 1, right: "b" },
+          { a: "san", b: "shan", tone: 1, right: "b" },
+        ],
+        words: [
+          { zh: "四", pinyin: "sì", mn: "дөрөв" },
+          { zh: "十", pinyin: "shí", mn: "арав" },
+          { zh: "早", pinyin: "zǎo", mn: "эрт" },
+          { zh: "找", pinyin: "zhǎo", mn: "хайх" },
+          { zh: "菜", pinyin: "cài", mn: "хоол, ногоо" },
+          { zh: "茶", pinyin: "chá", mn: "цай" },
+          { zh: "三", pinyin: "sān", mn: "гурав" },
+          { zh: "山", pinyin: "shān", mn: "уул" },
+        ],
+        drill: "pick",
+      },
+      {
+        id: "an-ang",
+        title: "an ↔ ang, en ↔ eng, in ↔ ing",
+        titleZh: "前鼻音 ↔ 后鼻音",
+        why: "Монголд «нг» (ᠩ) үгийн төгсгөлд байдаг ч «н»-тэй ялгаж сонсох дасгал хийдэггүй. Тиймээс an/ang, in/ing чихэнд адилхан сонсогдоод, хэлэхдээ ч холилдоно.",
+        fix: "an en in — төгсгөлд хэлний ҮЗҮҮР дээд буйланд хүрнэ (монгол «н»). ang eng ing — хэлний УГ тагнайн ар руу өргөгдөж, үзүүр хаана ч хүрэхгүй, дуу хамраар гүн гарна («аң»). Гараа хоолой дээрээ тавиад ang гэхэд хоолойн гүнд чичиргээ мэдрэгдэнэ, an гэхэд үгүй.",
+        pairs: [
+          { a: "an", b: "ang", tone: 1 },
+          { a: "en", b: "eng", tone: 1 },
+          { a: "yin", b: "ying", tone: 1 },
+          { a: "ban", b: "bang", tone: 1 },
+          { a: "fen", b: "feng", tone: 1 },
+          { a: "lin", b: "ling", tone: 2 },
+          { a: "wan", b: "wang", tone: 4 },
+        ],
+        words: [
+          { zh: "班", pinyin: "bān", mn: "анги, бүлэг" },
+          { zh: "帮", pinyin: "bāng", mn: "туслах" },
+          { zh: "分", pinyin: "fēn", mn: "минут, хуваах" },
+          { zh: "风", pinyin: "fēng", mn: "салхи" },
+          { zh: "新", pinyin: "xīn", mn: "шинэ" },
+          { zh: "星", pinyin: "xīng", mn: "од" },
+        ],
+        drill: "pick",
+      },
+      {
+        id: "f",
+        title: "f",
+        titleZh: "f",
+        why: "Монгол хэлэнд «ф» авиа байхгүй (зөвхөн гадаад үгэнд). Тиймээс fàn-г «пан», fēijī-г «вэйжи» гэж уруулаар хэлчихдэг.",
+        fix: "Дээд шүдээ доод уруулын дотор тал дээр зөөлөн тавь. Тэр завсраар агаар шуугиулан гарга — «ф-ф-ф». Уруул хоёулаа нийлэх ёсгүй (тэгвэл p болно), дуу хоолойгоос гарах ёсгүй (тэгвэл v болно). Гараа амны өмнө барихад тасралтгүй салхи мэдрэгдэнэ.",
+        pairs: [
+          { a: "fo", b: "po", tone: 2, right: "a" },
+          { a: "fa", b: "pa", tone: 4, right: "a" },
+          { a: "fu", b: "pu", tone: 4, right: "a" },
+          { a: "fei", b: "pei", tone: 1, right: "a" },
+        ],
+        words: [
+          { zh: "饭", pinyin: "fàn", mn: "хоол, будаа" },
+          { zh: "飞机", pinyin: "fēijī", mn: "нисэх онгоц" },
+          { zh: "房子", pinyin: "fángzi", mn: "байшин" },
+          { zh: "发", pinyin: "fā", mn: "илгээх" },
+        ],
+        drill: "pick",
+      },
+      {
+        id: "u-v",
+        title: "ü ба ju qu xu yu",
+        titleZh: "ü 与 ju qu xu yu",
+        why: "Монголд «ү» байдаг тул ü өөрөө хэцүү биш. Гэвч j q x y-ийн дараа цэг нь унадаг тул ju-г «жу», qu-г «чу» гэж «у»-гаар уншчихдаг.",
+        fix: "ju qu xu yu — үргэлж «ү»! Уруулаа монгол «ү» хэлэх шиг дугуйлж урагш түр, хэлний нурууг тагнай руу өргө. «Жү, чү, шү, ү» гэж бод. Харин zhu chu shu wu л жинхэнэ «у» (уруул илүү дугуй, хэл эргэсэн).",
+        mouth: "round",
+        pairs: [
+          { a: "ju", b: "zhu", tone: 1, right: "a" },
+          { a: "qu", b: "chu", tone: 4, right: "a" },
+          { a: "xu", b: "shu", tone: 1, right: "a" },
+          { a: "yu", b: "wu", tone: 2 },
+          { a: "nü", b: "nu", tone: 3 },
+          { a: "lü", b: "lu", tone: 4 },
+        ],
+        words: [
+          { zh: "去", pinyin: "qù", mn: "явах" },
+          { zh: "句子", pinyin: "jùzi", mn: "өгүүлбэр" },
+          { zh: "需要", pinyin: "xūyào", mn: "хэрэгтэй" },
+          { zh: "女", pinyin: "nǚ", mn: "эмэгтэй" },
+          { zh: "绿", pinyin: "lǜ", mn: "ногоон" },
+        ],
+        drill: "pick",
+      },
+      {
+        id: "t2-t3",
+        title: "2-р ↔ 3-р аялгуу",
+        titleZh: "第二声 ↔ 第三声",
+        why: "3-р аялгууг «бүтэн буугаад дахин өгсөнө» гэж хэт цээжилснээс сүүлийн өгсөлтийг нь хүчтэй хэлж, 2-р аялгуу шиг сонсогдуулна. Эсвэл 2-рыг доороос эхлүүлж 3-тэй андуурна.",
+        fix: "3-р аялгуу үнэндээ НАМ, БОГИНО аялгуу: дуугаа доош даруулаад тэндээ бага зэрэг үлдээ, өгсөх хэсэг нь бараг сонсогдохгүй (½ аялгуу). 2-р аялгуу харин ДУНДААС ДЭЭШ, гайхаж асууж байгаа юм шиг «á?». Гараараа зур: 2 = дээш налуу, 3 = доош даруулсан тэвш.",
+        pairs: [
+          { a: "ma", b: "ma", tone: 2, toneB: 3 },
+          { a: "wu", b: "wu", tone: 2, toneB: 3 },
+          { a: "yi", b: "yi", tone: 2, toneB: 3 },
+          { a: "shi", b: "shi", tone: 2, toneB: 3 },
+          { a: "xi", b: "xi", tone: 2, toneB: 3 },
+          { a: "hu", b: "hu", tone: 2, toneB: 3 },
+        ],
+        words: [
+          { zh: "买", pinyin: "mǎi", mn: "худалдаж авах" },
+          { zh: "埋", pinyin: "mái", mn: "булах" },
+          { zh: "五", pinyin: "wǔ", mn: "тав" },
+          { zh: "无", pinyin: "wú", mn: "үгүй, байхгүй" },
+          { zh: "眼", pinyin: "yǎn", mn: "нүд" },
+          { zh: "言", pinyin: "yán", mn: "үг, яриа" },
+        ],
+        drill: "tone",
+      },
+      {
+        id: "j-zh-r",
+        title: "j q x ↔ zh ch sh ба r",
+        titleZh: "j q x ↔ zh ch sh 与 r",
+        why: "Зөөлөн j q x (хэлний нуруу) ба эргэсэн zh ch sh (хэлний үзүүр)-ийг хоёуланг нь монголын «ж, ч, ш»-ээр хэлчихдэг. r-ийг монгол «р» шиг чичрүүлж хэлдэг — гэтэл хятад r огт чичирдэггүй.",
+        fix: "j q x: хэлний үзүүр ДООД шүдний ард, хэлний нуруу тагнайд ойртоно, уруул инээмсэглэсэн — «дзи, чи, си» шиг зөөлөн. zh ch sh: хэлний үзүүр ДЭЭШ эргэсэн, уруул бага зэрэг түрсэн. r: sh-ийн байрлалд хэлээ байлгаад хоолойгоо ажиллуул — «ж»-тэй төстэй, чичиргээгүй, зөөлөн.",
+        mouth: "spread",
+        pairs: [
+          { a: "ji", b: "zhi", tone: 1 },
+          { a: "qi", b: "chi", tone: 1 },
+          { a: "xi", b: "shi", tone: 1 },
+          { a: "ri", b: "li", tone: 4 },
+          { a: "rou", b: "lou", tone: 4 },
+          { a: "re", b: "le", tone: 4 },
+        ],
+        words: [
+          { zh: "日", pinyin: "rì", mn: "нар, өдөр" },
+          { zh: "热", pinyin: "rè", mn: "халуун" },
+          { zh: "肉", pinyin: "ròu", mn: "мах" },
+          { zh: "人", pinyin: "rén", mn: "хүн" },
+          { zh: "鸡", pinyin: "jī", mn: "тахиа" },
+          { zh: "知", pinyin: "zhī", mn: "мэдэх" },
+        ],
+        drill: "pick",
       },
     ],
   },

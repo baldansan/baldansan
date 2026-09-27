@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { tr } from "@/lib/i18n/translate";
 import { useUiLocale } from "@/lib/i18n/ui-locale";
+import { DAILY_TONE_STORAGE_KEY, EMPTY_DAILY, computeStreak, type DailyToneStore } from "@/lib/pronunciation/daily-tone";
 import { PINYIN_COURSE, PINYIN_COURSE_STORAGE_KEY, type CourseProgress } from "@/lib/pronunciation/pinyin-course";
 import { useStoredJson } from "@/lib/pronunciation/use-stored-json";
 
@@ -12,6 +13,8 @@ const EMPTY: CourseProgress = {};
 export function PinyinCourseMap() {
   const locale = useUiLocale();
   const progress = useStoredJson<CourseProgress>(PINYIN_COURSE_STORAGE_KEY, EMPTY);
+  const daily = useStoredJson<Partial<DailyToneStore>>(DAILY_TONE_STORAGE_KEY, EMPTY_DAILY);
+  const dailyStreak = computeStreak(daily.history ?? {});
 
   const doneCount = PINYIN_COURSE.filter((u) => progress[u.id]?.done).length;
   const anyStarted = PINYIN_COURSE.some((u) => {
@@ -25,11 +28,18 @@ export function PinyinCourseMap() {
   return (
     <div>
       <div className="app-card p-4">
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between gap-2">
           <p className="text-sm font-bold text-[var(--app-text)]">
             {doneCount}/{PINYIN_COURSE.length} {tr(locale, "дууссан")}
           </p>
-          <span className="h-2 w-28 overflow-hidden rounded-full bg-slate-100">
+          <Link
+            href="/pronunciation/daily"
+            className="ml-auto rounded-full bg-orange-50 px-2.5 py-1 text-xs font-extrabold text-orange-700 ring-1 ring-orange-200"
+            title={tr(locale, "Өдрийн аялгуу")}
+          >
+            🔥 {dailyStreak}
+          </Link>
+          <span className="h-2 w-20 overflow-hidden rounded-full bg-slate-100">
             <span
               className="block h-full bg-emerald-500"
               style={{ width: `${Math.round((100 * doneCount) / PINYIN_COURSE.length)}%` }}
@@ -52,8 +62,9 @@ export function PinyinCourseMap() {
           const p = progress[u.id];
           const isDone = !!p?.done;
           const isCurrent = i === currentIdx;
-          const total = u.items.length || (u.rules?.length ?? 0);
-          const seen = Math.min(total, p?.listened.length ?? 0);
+          const isErrors = u.kind === "errors";
+          const total = isErrors ? (u.sections?.length ?? 0) : u.items.length || (u.rules?.length ?? 0);
+          const seen = Math.min(total, isErrors ? Object.keys(p?.sections ?? {}).length : (p?.listened.length ?? 0));
           const pct = isDone ? 100 : total > 0 ? Math.round((100 * seen) / total) : 0;
           const state = isDone ? "done" : isCurrent ? "current" : seen > 0 ? "started" : "todo";
           return (
@@ -68,12 +79,17 @@ export function PinyinCourseMap() {
                   </span>
                 </span>
                 <span className="bs-mem-map-title" translate="no">
-                  {u.order}. {locale === "zh" ? u.titleZh : u.title}
-                  {locale !== "zh" && u.titleZh !== u.title ? <span className="block text-[10px] font-semibold text-slate-400">{u.titleZh}</span> : null}
+                  {isErrors ? (
+                    <span className="mr-1 inline-block rounded-full bg-rose-50 px-1.5 text-[10px] font-extrabold text-rose-700 ring-1 ring-rose-200">🇲🇳</span>
+                  ) : (
+                    `${u.order}. `
+                  )}
+                  {locale === "zh" ? u.titleZh : u.title}
+                  {locale !== "zh" && u.titleZh !== u.title && !isErrors ? <span className="block text-[10px] font-semibold text-slate-400">{u.titleZh}</span> : null}
                 </span>
                 <span className="bs-mem-map-count">
                   {isDone
-                    ? `${tr(locale, "дууссан")}${p?.testScore != null ? ` · ${p.testScore}/8` : ""}`
+                    ? `${tr(locale, "дууссан")}${p?.testScore != null && !isErrors ? ` · ${p.testScore}/8` : ""}`
                     : `${seen}/${total}`}
                 </span>
               </Link>

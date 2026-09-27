@@ -284,6 +284,8 @@ type Props = {
   audioUrl?: string | null;
   /** Доод талд «🎤 Дуудлагын дасгал» холбоос (үндсэн: харуулна) */
   sectionLink?: boolean;
+  /** Оролдлого дуусахад (таних + аялгын оноо) — өдрийн дасгал зэрэгт оноо өгөхөд */
+  onDone?: (info: { verdict: Verdict | null; result: ToneScoreResult | null }) => void;
 };
 
 const LISTEN_TIMEOUT_MS = 5000;
@@ -315,6 +317,7 @@ export function PronunciationPractice({
   mode = "auto",
   audioUrl,
   sectionLink = true,
+  onDone,
 }: Props) {
   const locale = useUiLocale();
   const [phase, setPhase] = useState<Phase>("idle");
@@ -341,6 +344,11 @@ export function PronunciationPractice({
   const recordingUrlRef = useRef<string | null>(null);
   const myAudioRef = useRef<HTMLAudioElement | null>(null);
   const listeningRef = useRef(false);
+  const verdictRef = useRef<Verdict | null>(null);
+  const onDoneRef = useRef(onDone);
+  useEffect(() => {
+    onDoneRef.current = onDone;
+  }, [onDone]);
 
   const syllables = useMemo(
     () => (pinyin ? applyToneSandhi(parsePinyinSyllables(pinyin)) : []),
@@ -451,7 +459,9 @@ export function PronunciationPractice({
         }
       });
     }
-    setResult(pinyin ? scoreTones(samplesRef.current, pinyin) : null);
+    const scored = pinyin ? scoreTones(samplesRef.current, pinyin) : null;
+    setResult(scored);
+    onDoneRef.current?.({ verdict: verdictRef.current, result: scored });
 
     // Зөрчил илрүүлэх: дуу бичигдсэн атлаа таних систем юу ч сонсоогүй бол
     // энэ төхөөрөмж дээр микрофоныг хуваалцаж чадахгүй гэж үзээд
@@ -474,6 +484,7 @@ export function PronunciationPractice({
 
   const start = useCallback(
     async (wanted?: RoundMode) => {
+      verdictRef.current = null;
       setVerdict(null);
       setHeard("");
       setResult(null);
@@ -537,6 +548,7 @@ export function PronunciationPractice({
               alts.push(r[i].transcript);
             }
             const j = judge(text, alts);
+            verdictRef.current = j.verdict;
             setVerdict(j.verdict);
             setHeard(j.heard);
           };

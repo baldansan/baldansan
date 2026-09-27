@@ -10,6 +10,16 @@ import {
   resolveGameLabels,
 } from "@/lib/games/game-lesson-meta";
 import { getGameStats } from "@/lib/games/game-progress";
+import {
+  LEVEL_GAMES,
+  TOTAL_LEVELS,
+  isLevelGame,
+  levelMapHref,
+  levelSummary,
+  lowestCurrentLevelGame,
+  totalStarsAllGames,
+  type LevelGame,
+} from "@/lib/games/levels";
 import { useUiLocale } from "@/lib/i18n/ui-locale";
 import { tr } from "@/lib/i18n/translate";
 import { resolveContinueLearning } from "@/lib/learner-progress";
@@ -109,6 +119,24 @@ function gamesForLanguage(
       badge: "Дараалал",
     },
     {
+      id: "translate",
+      slug: "translate",
+      title: labels.translateTitle,
+      desc: labels.translateDesc,
+      icon: "🈯",
+      gradient: "linear-gradient(145deg, #60a5fa, #2563eb)",
+      badge: "Орчуулга",
+    },
+    {
+      id: "missing-word",
+      slug: "missing-word",
+      title: labels.missingWordTitle,
+      desc: labels.missingWordDesc,
+      icon: "✏️",
+      gradient: "linear-gradient(145deg, #fbbf24, #d97706)",
+      badge: "Дутуу үг",
+    },
+    {
       id: "stroke",
       slug: "stroke",
       title: labels.strokeTitle,
@@ -120,9 +148,20 @@ function gamesForLanguage(
   ];
 }
 
-function GameTile({ game, href }: { game: GameCard; href: string }) {
+type LevelInfo = { current: number; stars: number };
+
+function GameTile({
+  game,
+  href,
+  level,
+}: {
+  game: GameCard;
+  href: string;
+  /** «Үе давах» мэдээлэл — 4 кампанит тоглоомд. */
+  level?: LevelInfo;
+}) {
   const locale = useUiLocale();
-  return (
+  const tile = (
     <Link href={href} className="bs-tm-game-tile">
       <span className="bs-tm-game-tile-badge">{tr(locale, game.badge)}</span>
       <span
@@ -134,7 +173,25 @@ function GameTile({ game, href }: { game: GameCard; href: string }) {
       </span>
       <p className="bs-tm-game-tile-title">{tr(locale, game.title)}</p>
       <p className="bs-tm-game-tile-sub">{tr(locale, game.desc)}</p>
+      {level ? (
+        <p className="bs-tm-game-tile-sub !mt-1.5 !text-[11px] font-bold !text-[#6d28d9]">
+          {tr(locale, "Үе")} {level.current} · ⭐ {level.stars}
+        </p>
+      ) : null}
     </Link>
+  );
+  if (!level || !isLevelGame(game.slug)) return tile;
+  return (
+    <div className="relative">
+      {tile}
+      <Link
+        href={levelMapHref(game.slug)}
+        className="absolute bottom-2 right-2 rounded-full bg-[#efe6ff] px-2.5 py-1 text-[10px] font-extrabold text-[#6d28d9] ring-1 ring-purple-200 active:scale-95"
+        aria-label={`${tr(locale, game.title)} — ${tr(locale, "Үе давах")}`}
+      >
+        🗺 {tr(locale, "Үе давах")}
+      </Link>
+    </div>
   );
 }
 
@@ -146,6 +203,9 @@ export function GamesAppView({ lessonIds, lessonTitles }: Props) {
   const [avgAccuracy, setAvgAccuracy] = useState(0);
   const [currentLessonId, setCurrentLessonId] = useState("1");
   const [lessonTitle, setLessonTitle] = useState<string | null>(null);
+  const [levelInfo, setLevelInfo] = useState<Partial<Record<LevelGame, LevelInfo>>>({});
+  const [campaignStars, setCampaignStars] = useState(0);
+  const [campaignGame, setCampaignGame] = useState<LevelGame>("arrange");
 
   const isPrelesson = isPrelessonLessonId(currentLessonId);
   const games = useMemo(
@@ -175,11 +235,21 @@ export function GamesAppView({ lessonIds, lessonTitles }: Props) {
       setLessonTitle(lessonTitles[lessonId] ?? null);
     });
 
+    const refreshLevels = () => {
+      const info: Partial<Record<LevelGame, LevelInfo>> = {};
+      for (const g of LEVEL_GAMES) info[g] = levelSummary(g);
+      setLevelInfo(info);
+      setCampaignStars(totalStarsAllGames());
+      setCampaignGame(lowestCurrentLevelGame());
+    };
+    refreshLevels();
+
     const refresh = () => {
       const s = getGameStats();
       setPlayed(s.played);
       setBestScore(s.bestScore);
       setAvgAccuracy(s.avgAccuracy);
+      refreshLevels();
     };
     window.addEventListener("focus", refresh);
     return () => {
@@ -189,6 +259,8 @@ export function GamesAppView({ lessonIds, lessonTitles }: Props) {
   }, [lessonIds, lessonTitles]);
 
   const marathonHref = "/games/srs-marathon";
+  // «Үе давах» — хятад үгийн кампанит; солонгос хэл сонгосон бол харуулахгүй.
+  const showCampaign = lang !== "ko";
 
   return (
     <MobileAppShell activeTab="games" mainClassName={SHELL_MAIN_NARROW}>
@@ -217,6 +289,29 @@ export function GamesAppView({ lessonIds, lessonTitles }: Props) {
           <div className="bs-tm-stat-l">{tr(locale, "Нарийвчлал")}</div>
         </div>
       </div>
+
+      {showCampaign ? (
+        <Link
+          href={levelMapHref(campaignGame)}
+          className="bs-tm-game-feat !bg-[linear-gradient(135deg,#f59e0b,#d97706)] !shadow-[0_8px_20px_rgba(217,119,6,0.35)]"
+          data-testid="campaign-card"
+        >
+          <span className="bs-tm-game-feat-img grid place-items-center text-4xl" aria-hidden>
+            🏆
+          </span>
+          <span className="flex-1 min-w-0">
+            <p className="bs-tm-game-feat-kicker">
+              {TOTAL_LEVELS} {tr(locale, "үе")} · HSK 1–9
+            </p>
+            <p className="bs-tm-game-feat-title">
+              🏆 {tr(locale, "Үе давах")} — 4 {tr(locale, "тоглоом")} · ⭐ {campaignStars}
+            </p>
+            <p className="bs-tm-game-feat-sub">
+              {tr(locale, "Үе")} {levelInfo[campaignGame]?.current ?? 1} · {tr(locale, "Үргэлжлүүлэх →")}
+            </p>
+          </span>
+        </Link>
+      ) : null}
 
       {lang === "zh" ? (
         <>
@@ -255,7 +350,9 @@ export function GamesAppView({ lessonIds, lessonTitles }: Props) {
           const href = game.global
             ? `/games/${game.slug}`
             : `/games/${game.slug}?lessonId=${currentLessonId}`;
-          return <GameTile key={game.id} game={game} href={href} />;
+          const level =
+            showCampaign && isLevelGame(game.slug) ? levelInfo[game.slug] : undefined;
+          return <GameTile key={game.id} game={game} href={href} level={level} />;
         })}
       </div>
 

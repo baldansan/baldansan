@@ -1,14 +1,21 @@
 "use client";
 
-import { useCallback, useMemo, useState } from "react";
+import { useCallback, useMemo, useRef, useState } from "react";
 import { GameCard } from "@/components/games/game-card";
 import { GameEmptyState } from "@/components/games/game-empty-state";
 import { GameHeader } from "@/components/games/game-header";
 import { GameResultCard } from "@/components/games/game-result-card";
 import { GameShell } from "@/components/games/game-shell";
+import { LevelResultCard } from "@/components/games/level-result-card";
 import { buildMatchGameItems, shuffleArray } from "@/lib/games/game-data";
 import { resolveGameLabels, type GameLabels } from "@/lib/games/game-lesson-meta";
 import { saveGameResult } from "@/lib/games/game-progress";
+import {
+  TOTAL_LEVELS,
+  levelHeaderInfo,
+  levelShellClass,
+  type LevelMode,
+} from "@/lib/games/level-core";
 import { SpeakerButton } from "@/components/tts/speaker-button";
 import { resolveTtsLang } from "@/lib/tts/infer-lang";
 import type { GameVocabItem, MatchPair } from "@/lib/games/game-types";
@@ -23,6 +30,8 @@ type Props = {
   isKorean?: boolean;
   isPrelesson?: boolean;
   labels?: GameLabels;
+  /** «Үе давах» горим — level-game-host дамжуулна. Буруу оролдлого бүр нэг «зөв»-ийг хасна. */
+  levelMode?: LevelMode;
 };
 
 export function MatchGameClient({
@@ -32,14 +41,15 @@ export function MatchGameClient({
   isKorean = false,
   isPrelesson = false,
   labels: labelsProp,
+  levelMode,
 }: Props) {
   useActivityTracker("game", "match");
   const locale = useUiLocale();
   const labels = labelsProp ?? resolveGameLabels(isKorean, isPrelesson);
   const gameContext = { isPrelesson };
   const pairs = useMemo(
-    () => buildMatchGameItems(vocabulary, 6, gameContext),
-    [vocabulary, isPrelesson]
+    () => buildMatchGameItems(vocabulary, levelMode?.total ?? 6, gameContext),
+    [vocabulary, isPrelesson, levelMode?.total]
   );
   const leftItems = useMemo(
     () => shuffleArray(pairs.map((p) => ({ id: p.id, label: p.mongolian }))),
@@ -63,6 +73,9 @@ export function MatchGameClient({
   const [wrongFlash, setWrongFlash] = useState<string | null>(null);
   const [score, setScore] = useState(0);
   const [finished, setFinished] = useState(false);
+  /** Үеийн горимд буруу оролдлогын тоо (од тооцоход). */
+  const wrongRef = useRef(0);
+  const [levelCorrect, setLevelCorrect] = useState(0);
 
   const total = pairs.length;
   const matchedCount = matched.size;
@@ -76,6 +89,14 @@ export function MatchGameClient({
           const newCount = next.size;
           if (newCount >= total) {
             const finalScore = newCount * 10;
+            if (levelMode) {
+              const correct = Math.max(0, total - wrongRef.current);
+              setLevelCorrect(correct);
+              setScore(correct * 10);
+              setFinished(true);
+              levelMode.onFinished(correct, total);
+              return next;
+            }
             saveGameResult({
               gameType: "match",
               lessonId,
@@ -93,13 +114,14 @@ export function MatchGameClient({
           return next;
         });
       } else {
+        wrongRef.current += 1;
         setWrongFlash(`${leftId}-${rightId}`);
         setTimeout(() => setWrongFlash(null), 600);
       }
       setSelectedLeft(null);
       setSelectedRight(null);
     },
-    [lessonId, total]
+    [lessonId, total, levelMode]
   );
 
   function handleLeft(id: string) {
@@ -126,6 +148,8 @@ export function MatchGameClient({
     setSelectedRight(null);
     setScore(0);
     setFinished(false);
+    wrongRef.current = 0;
+    setLevelCorrect(0);
   }
 
   if (pairs.length < 4) {
@@ -135,6 +159,32 @@ export function MatchGameClient({
         <GameEmptyState
           lessonId={lessonId}
           message="Энэ хичээлд тоглоом үүсгэхэд хангалттай үг алга. Дор хаяж 4 үг шаардлагатай."
+        />
+      </GameShell>
+    );
+  }
+
+  const headerLevel = levelMode ? levelHeaderInfo(levelMode) : undefined;
+  const backHref = levelMode?.mapHref;
+  const shellClass = levelShellClass(levelMode);
+
+  if (finished && levelMode) {
+    return (
+      <GameShell mainClassName={shellClass}>
+        <GameHeader
+          title={labels.matchTitle}
+          backHref={backHref}
+          level={headerLevel}
+          score={score}
+        />
+        <LevelResultCard
+          meta={levelMode.meta}
+          correct={levelCorrect}
+          total={total}
+          onNextLevel={levelMode.onNextLevel}
+          onRetry={restart}
+          mapHref={levelMode.mapHref}
+          isLast={levelMode.level >= TOTAL_LEVELS}
         />
       </GameShell>
     );
@@ -158,9 +208,11 @@ export function MatchGameClient({
   }
 
   return (
-    <GameShell>
+    <GameShell mainClassName={shellClass}>
       <GameHeader
         title={labels.matchTitle}
+        backHref={backHref}
+        level={headerLevel}
         progress={`${matchedCount}/${total}`}
         score={score}
       />

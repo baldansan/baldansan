@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import { BookCrumbs, L } from "@/components/books/book-ui";
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
 import { MobilePageHeader } from "@/components/mobile/mobile-page-header";
+import { PinyinErrorsUnit } from "@/components/pronunciation/pinyin-errors-unit";
 import { PinyinUnit, type UnitTones } from "@/components/pronunciation/pinyin-unit";
 import { SHELL_MAIN_NARROW } from "@/lib/app-shell-classes";
 import { getServerUiLocale } from "@/lib/i18n/server-locale";
@@ -45,9 +46,13 @@ export default async function PinyinUnitPage({ params }: PageProps) {
       <MobilePageHeader
         title={`${unit.emoji} ${title}`}
         subtitle={locale !== "zh" && unit.title !== unit.titleZh ? unit.titleZh : undefined}
-        badge={`${unit.order}/${PINYIN_COURSE.length}`}
+        badge={unit.kind === "errors" ? "🇲🇳" : `${unit.order}/${PINYIN_COURSE.length}`}
       />
-      <PinyinUnit unit={unit} tones={tones} next={next ? { id: next.id, title: next.title, titleZh: next.titleZh } : null} />
+      {unit.kind === "errors" ? (
+        <PinyinErrorsUnit unit={unit} tones={tones} />
+      ) : (
+        <PinyinUnit unit={unit} tones={tones} next={next ? { id: next.id, title: next.title, titleZh: next.titleZh } : null} />
+      )}
     </MobileAppShell>
   );
 }

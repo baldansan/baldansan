@@ -2,6 +2,7 @@ import Link from "next/link";
 import { L } from "@/components/books/book-ui";
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
 import { MobilePageHeader } from "@/components/mobile/mobile-page-header";
+import { DailyToneCard } from "@/components/pronunciation/daily-tone-card";
 import { SHELL_MAIN_NARROW } from "@/lib/app-shell-classes";
 import { getServerUiLocale } from "@/lib/i18n/server-locale";
 import { AUDIO_CMN_ATTRIBUTION } from "@/lib/tts/audio-cmn";
@@ -21,8 +22,8 @@ export default async function PronunciationPage() {
       emoji: "🔤",
       zh: "拼音基础",
       mn: "Пиньинь суурь",
-      descZh: "像一年级小朋友一样：a o e → b p m f → 复韵母 → 鼻韵母 → 整体认读 → 规则。听、跟读、练、测。",
-      descMn: "Пиньинь суурь — бо по мо фо-оос эхэлнэ. 13 нэгж: сонс, дагаж хэл, дасгал, шалгалт. Хүүхэд, том хүнд.",
+      descZh: "像一年级小朋友一样：a o e → b p m f → 复韵母 → 鼻韵母 → 整体认读 → 规则 + 蒙古学生易错点。听、跟读、练、测。",
+      descMn: "Пиньинь суурь — бо по мо фо-оос эхэлнэ. 13 нэгж + 🇲🇳 Монголчуудын 6 алдаа: сонс, дагаж хэл, дасгал, шалгалт.",
       bg: "bg-violet-50",
     },
     {
@@ -73,6 +74,7 @@ export default async function PronunciationPage() {
           "Пиньинь, аялгуу, ойрхон дуу — хүний дуугаар сонсоод микрофоноор дагаж хэл, аялгуугийн муруйгаар шалгуул.",
         )}
       />
+      <DailyToneCard />
       <div className="grid grid-cols-1 gap-3">
         {sections.map((s) => (
           <Link key={s.href} href={s.href} className="app-card block p-4 transition-colors active:bg-slate-50">

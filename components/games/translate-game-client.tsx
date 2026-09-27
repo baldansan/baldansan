@@ -8,9 +8,16 @@ import { GameOptionButton } from "@/components/games/game-option-button";
 import { GameProgressPill } from "@/components/games/game-progress-pill";
 import { GameResultCard } from "@/components/games/game-result-card";
 import { GameShell } from "@/components/games/game-shell";
+import { LevelResultCard } from "@/components/games/level-result-card";
 import { buildTranslateGameItems } from "@/lib/games/game-data";
 import { resolveGameLabels, type GameLabels } from "@/lib/games/game-lesson-meta";
 import { saveGameResult } from "@/lib/games/game-progress";
+import {
+  TOTAL_LEVELS,
+  levelHeaderInfo,
+  levelShellClass,
+  type LevelMode,
+} from "@/lib/games/level-core";
 import { SpeakerButton } from "@/components/tts/speaker-button";
 import { resolveTtsLang } from "@/lib/tts/infer-lang";
 import type { GameVocabItem } from "@/lib/games/game-types";
@@ -25,6 +32,8 @@ type Props = {
   isKorean?: boolean;
   isPrelesson?: boolean;
   labels?: GameLabels;
+  /** «Үе давах» горим — level-game-host дамжуулна. */
+  levelMode?: LevelMode;
 };
 
 export function TranslateGameClient({
@@ -34,14 +43,15 @@ export function TranslateGameClient({
   isKorean = false,
   isPrelesson = false,
   labels: labelsProp,
+  levelMode,
 }: Props) {
   useActivityTracker("game", "translate");
   const locale = useUiLocale();
   const labels = labelsProp ?? resolveGameLabels(isKorean, isPrelesson);
   const gameContext = { isKorean, isPrelesson, vocabulary };
   const questions = useMemo(
-    () => buildTranslateGameItems(vocabulary, 10, gameContext),
-    [vocabulary, isKorean, isPrelesson]
+    () => buildTranslateGameItems(vocabulary, levelMode?.total ?? 10, gameContext),
+    [vocabulary, isKorean, isPrelesson, levelMode?.total]
   );
   const [index, setIndex] = useState(0);
   const [selected, setSelected] = useState<string | null>(null);
@@ -56,6 +66,12 @@ export function TranslateGameClient({
 
   function finishGame(finalCorrect: number) {
     const finalScore = finalCorrect * 10;
+    if (levelMode) {
+      levelMode.onFinished(finalCorrect, total);
+      setScore(finalScore);
+      setFinished(true);
+      return;
+    }
     const accuracy = Math.round((finalCorrect / total) * 100);
     saveGameResult({
       gameType: "translate",
@@ -112,6 +128,32 @@ export function TranslateGameClient({
     );
   }
 
+  const headerLevel = levelMode ? levelHeaderInfo(levelMode) : undefined;
+  const backHref = levelMode?.mapHref;
+  const shellClass = levelShellClass(levelMode);
+
+  if (finished && levelMode) {
+    return (
+      <GameShell mainClassName={shellClass}>
+        <GameHeader
+          title={labels.translateTitle}
+          backHref={backHref}
+          level={headerLevel}
+          score={score}
+        />
+        <LevelResultCard
+          meta={levelMode.meta}
+          correct={correctCount}
+          total={total}
+          onNextLevel={levelMode.onNextLevel}
+          onRetry={restart}
+          mapHref={levelMode.mapHref}
+          isLast={levelMode.level >= TOTAL_LEVELS}
+        />
+      </GameShell>
+    );
+  }
+
   if (finished) {
     return (
       <GameShell>
@@ -130,9 +172,11 @@ export function TranslateGameClient({
   }
 
   return (
-    <GameShell>
+    <GameShell mainClassName={shellClass}>
       <GameHeader
         title={labels.translateTitle}
+        backHref={backHref}
+        level={headerLevel}
         progress={`${index + 1}/${total}`}
         score={score}
       />
