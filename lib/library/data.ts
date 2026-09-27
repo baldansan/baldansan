@@ -192,6 +192,26 @@ export function getSongci(): Promise<{ poems: Poem[]; license: string; attributi
 
 /* ---------------- 成语 · 谚语 · 歇后语 · 寓言 ---------------- */
 
+/** Монгол хэл дээрх гүнзгий тайлбар — багш/Claude-ийн бичсэн, эх сурвалжид байхгүй нэмэлт давхарга. */
+export type IdiomMn = {
+  /** Далд/гол утга — нэг мөрөнд */
+  keyMn: string;
+  /** Үгчилсэн (үг үгээр нь) орчуулга */
+  literalMn: string;
+  /** Утгачилсан орчуулга — жинхэнэ монгол хэлээр юу гэсэн үг бэ */
+  meaningMn: string;
+  /** Гарал үүсэл — яагаад ийм болсон бэ (товч түүх) */
+  originMn: string;
+  /** Хэзээ, ямар нөхцөлд хэрэглэдэг вэ */
+  usageMn: string;
+  /** Жишээ өгүүлбэр (хятадаар) — байгаа бол source_quotes-оос, үгүй бол зохиосон энгийн жишээ */
+  exampleZh?: string;
+  examplePinyin?: string;
+  exampleMn?: string;
+  /** Утга нь ойролцоо монгол зүйр цэцэн үг/хэллэг — байвал */
+  similarMn?: string;
+};
+
 export type Idiom = {
   id: string;
   zh: string;
@@ -208,14 +228,30 @@ export type Idiom = {
   level: number;
   in_hsk_list?: boolean;
   source_url: string;
+  mn?: IdiomMn;
 };
 
 export type IdiomKind = "idioms" | "proverbs" | "xiehouyu";
 
+const idiomMnCache = new Map<IdiomKind, Promise<Record<string, IdiomMn>>>();
+function getIdiomsMn(kind: IdiomKind): Promise<Record<string, IdiomMn>> {
+  let p = idiomMnCache.get(kind);
+  if (!p) {
+    p = readJson<{ items: (IdiomMn & { id: string })[] }>(`wiktionary-zh/${kind}-mn.json`)
+      .then((d) => Object.fromEntries(d.items.map(({ id, ...rest }) => [id, rest])))
+      .catch(() => ({}) as Record<string, IdiomMn>);
+    idiomMnCache.set(kind, p);
+  }
+  return p;
+}
+
 export async function getIdioms(kind: IdiomKind): Promise<Idiom[]> {
-  const d = await readJson<{ items: Idiom[] }>(`wiktionary-zh/${kind}.json`);
+  const [d, mnMap] = await Promise.all([
+    readJson<{ items: Idiom[] }>(`wiktionary-zh/${kind}.json`),
+    getIdiomsMn(kind),
+  ]);
   // Зөвхөн путунхуа (Mandarin) хэллэгүүд; кантон гэх мэт аялгууныхыг хасна.
-  return d.items.filter((x) => x.mandarin);
+  return d.items.filter((x) => x.mandarin).map((x) => (mnMap[x.id] ? { ...x, mn: mnMap[x.id] } : x));
 }
 
 export type Fable = {
