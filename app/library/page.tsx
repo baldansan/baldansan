@@ -4,7 +4,7 @@ import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
 import { MobilePageHeader } from "@/components/mobile/mobile-page-header";
 import { SHELL_MAIN_NARROW } from "@/lib/app-shell-classes";
 import { getServerUiLocale } from "@/lib/i18n/server-locale";
-import { getFables, getIdioms, getStories } from "@/lib/library/data";
+import { getIdioms, getStories } from "@/lib/library/data";
 
 export const dynamic = "force-dynamic";
 
@@ -20,13 +20,12 @@ export const metadata = {
  * устгаагүй, зөвхөн орчуулгатай болмогц буцааж холбоно.
  */
 export default async function LibraryPage() {
-  const [locale, stories, idioms, proverbs, xiehouyu, fables] = await Promise.all([
+  const [locale, stories, idioms, proverbs, xiehouyu] = await Promise.all([
     getServerUiLocale(),
     getStories(),
     getIdioms("idioms"),
     getIdioms("proverbs"),
     getIdioms("xiehouyu"),
-    getFables(),
   ]);
   const withAudio = stories.filter((s) => s.provider === "gsb").length;
 
@@ -45,8 +44,8 @@ export default async function LibraryPage() {
       emoji: "🀄",
       zh: "成语 · 谚语 · 歇后语",
       mn: "Хэлц үг · Зүйр цэцэн үг",
-      descZh: `${idioms.length} 条成语、${proverbs.length} 条谚语、${xiehouyu.length} 条歇后语，${fables.items.length} 篇成语寓言原文。`,
-      descMn: `${idioms.length} хэлц (成语), ${proverbs.length} зүйр үг, ${xiehouyu.length} 歇后语, ${fables.items.length} үлгэр домгийн эх.`,
+      descZh: `${idioms.length} 条成语、${proverbs.length} 条谚语、${xiehouyu.length} 条歇后语。`,
+      descMn: `${idioms.length} хэлц (成语), ${proverbs.length} зүйр үг, ${xiehouyu.length} 歇后语.`,
       bg: "bg-emerald-50",
     },
   ];

@@ -7,12 +7,10 @@ import { SHELL_MAIN_NARROW } from "@/lib/app-shell-classes";
 import type { UiLocale } from "@/lib/i18n/locale-types";
 import { getServerUiLocale } from "@/lib/i18n/server-locale";
 import {
-  getFables,
   getIdioms,
   intParam,
   paginate,
   strParam,
-  type Fable,
   type Idiom,
   type IdiomKind,
 } from "@/lib/library/data";
@@ -26,12 +24,11 @@ export const metadata = {
 const PER_PAGE = 40;
 const LEVELS = [1, 2, 3, 4, 5, 6, 7];
 
-type Kind = IdiomKind | "fables";
+type Kind = IdiomKind;
 const KINDS: Array<{ key: Kind; zh: string; mn: string }> = [
   { key: "idioms", zh: "成语", mn: "Хэлц үг" },
   { key: "proverbs", zh: "谚语", mn: "Зүйр цэцэн үг" },
   { key: "xiehouyu", zh: "歇后语", mn: "Ёгт хэллэг (歇后语)" },
-  { key: "fables", zh: "寓言", mn: "Үлгэр (寓言)" },
 ];
 
 function parseKind(v: string): Kind {
@@ -118,28 +115,6 @@ function IdiomCard({ x }: { x: Idiom }) {
   );
 }
 
-function FableCard({ f }: { f: Fable }) {
-  const meta = [f.book, f.chapter].filter(Boolean).join(" · ");
-  const preview = f.zh.length > 60 ? `${f.zh.slice(0, 60)}…` : f.zh;
-  return (
-    <li>
-      <Link
-        href={`/library/idioms/${encodeURIComponent(f.id)}`}
-        className="app-card block p-4 transition-colors active:bg-slate-50"
-      >
-        <div translate="no">
-          <p className="hanzi text-xl font-bold text-[var(--app-text)]">{f.idiom}</p>
-          {f.title && f.title !== f.idiom ? (
-            <p className="text-sm text-[var(--app-text)]">{f.title}</p>
-          ) : null}
-          {meta ? <p className="mt-0.5 text-xs text-[var(--app-muted)]">{meta}</p> : null}
-          <p className="hanzi mt-1.5 text-sm leading-6 text-[var(--app-text)]">{preview}</p>
-        </div>
-      </Link>
-    </li>
-  );
-}
-
 /* ---------------- Хуудас ---------------- */
 
 export default async function LibraryIdiomsPage({ searchParams }: Props) {
@@ -166,43 +141,6 @@ export default async function LibraryIdiomsPage({ searchParams }: Props) {
       ]}
     />
   );
-
-  /* ---- 寓言 ---- */
-  if (kind === "fables") {
-    const fables = await getFables();
-    const { items, page, pages, total } = paginate(fables.items, pageNo, PER_PAGE);
-    return (
-      <MobileAppShell activeTab="study" mainClassName={SHELL_MAIN_NARROW}>
-        {crumbs}
-        <MobilePageHeader
-          title={L(locale, "成语寓言", "Хэлц үгийн үлгэр (寓言)")}
-          subtitle={L(
-            locale,
-            `${fables.items.length} 篇文言原文 · 全文注音`,
-            `${fables.items.length} эртний бичгийн (文言) эх · бүгд пиньинтэй`,
-          )}
-        />
-        <Chips items={kindChips} />
-        <ul className="grid grid-cols-1 gap-3">
-          {items.map((f) => (
-            <FableCard key={f.id} f={f} />
-          ))}
-        </ul>
-        <Pager
-          locale={locale}
-          page={page}
-          pages={pages}
-          total={total}
-          hrefFor={(p) => hrefFor({ kind, level: 0, q: "", hsk: false, page: p })}
-        />
-        <SourceNote>
-          {fables.license ? `${fables.license} · ` : null}
-          zh.wikisource.org (维基文库)
-          {fables.source_url ? ` · ${fables.source_url}` : null}
-        </SourceNote>
-      </MobileAppShell>
-    );
-  }
 
   /* ---- 成语 / 谚语 / 歇后语 ---- */
   const all = await getSortedIdioms(kind);
