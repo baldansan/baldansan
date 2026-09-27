@@ -17,7 +17,8 @@
   "meaning_mn": "-ийн; (хамаатуулах нөхцөл)",
   "example_zh": "这是我的书。",
   "example_pinyin": "zhè shì wǒ de shū 。",
-  "example_mn": "Энэ бол миний ном."
+  "example_mn": "Энэ миний ном.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "了",
@@ -73,10 +74,11 @@
    1
   ],
   "meaning_en": "to be (followed by substantives only); correct; right; true; (respectful acknowledgement of a command) very well",
-  "meaning_mn": "байх, мөн",
+  "meaning_mn": "мөн, бол (холбох үйл үг)",
   "example_zh": "他是老师。",
   "example_pinyin": "tā shì lǎo shī 。",
-  "example_mn": "Тэр багш мөн."
+  "example_mn": "Тэр багш.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "你",
@@ -151,10 +153,11 @@
    1
   ],
   "meaning_en": "to have; there is; (bound form) having; with; -ful; -ed; -al (as in 意 intentional)",
-  "meaning_mn": "байх, эзэмших",
+  "meaning_mn": "байх, -тай байх",
   "example_zh": "我有一本书。",
   "example_pinyin": "wǒ yǒu yī běn shū 。",
-  "example_mn": "Надад нэг ном бий."
+  "example_mn": "Надад нэг ном бий.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "他",
@@ -173,7 +176,8 @@
   "meaning_mn": "тэр (эр)",
   "example_zh": "他是我朋友。",
   "example_pinyin": "tā shì wǒ péng yǒu 。",
-  "example_mn": "Тэр бол миний найз."
+  "example_mn": "Тэр миний найз.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "这",
@@ -209,10 +213,11 @@
    1
   ],
   "meaning_en": "used in 自个儿",
-  "meaning_mn": "ширхэг (тоолох үг)",
+  "meaning_mn": "(ерөнхий тоолох үг)",
   "example_zh": "一个人。",
   "example_pinyin": "yī gè rén 。",
-  "example_mn": "Нэг хүн."
+  "example_mn": "Нэг хүн.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "和",
@@ -236,7 +241,8 @@
   "meaning_mn": "ба, болон; -тай",
   "example_zh": "我和你",
   "example_pinyin": "wǒ hé nǐ",
-  "example_mn": "би чамтай"
+  "example_mn": "би чи хоёр",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "人",
@@ -438,7 +444,8 @@
   "meaning_mn": "зөв; -руу",
   "example_zh": "你说得对。",
   "example_pinyin": "nǐ shuō dé duì 。",
-  "example_mn": "Чиний хэлсэн зөв."
+  "example_mn": "Чи зөв хэлж байна.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "到",
@@ -518,10 +525,11 @@
    1
   ],
   "meaning_en": "(adverb of degree); quite; very",
-  "meaning_mn": "маш, нэн",
+  "meaning_mn": "их, маш",
   "example_zh": "我很高兴。",
   "example_pinyin": "wǒ hěn gāo xīng 。",
-  "example_mn": "Би их баяртай байна."
+  "example_mn": "Би их баяртай байна.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "还",
@@ -539,10 +547,11 @@
    2
   ],
   "meaning_en": "surname Huan",
-  "meaning_mn": "бас; одоо хүртэл",
+  "meaning_mn": "одоо болтол; бас",
   "example_zh": "他还没来。",
   "example_pinyin": "tā hái méi lái 。",
-  "example_mn": "Тэр одоо хүртэл ирээгүй."
+  "example_mn": "Тэр одоо болтол ирээгүй байна.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "去",
@@ -561,7 +570,8 @@
   "meaning_mn": "явах",
   "example_zh": "我去学校。",
   "example_pinyin": "wǒ qù xué xiào 。",
-  "example_mn": "Би сургууль руу явна."
+  "example_mn": "Би сургуульдаа явна.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "她",
@@ -810,10 +820,11 @@
    2
   ],
   "meaning_en": "can; may; possible",
-  "meaning_mn": "болно, болж болох",
+  "meaning_mn": "болох, болно",
   "example_zh": "我可以进来吗？",
   "example_pinyin": "wǒ kě yǐ jìn lái ma ？",
-  "example_mn": "Би орж болох уу?"
+  "example_mn": "Би орж болох уу?",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "大",
@@ -835,7 +846,8 @@
   "meaning_mn": "том",
   "example_zh": "这个房子很大。",
   "example_pinyin": "zhè gè fáng zi hěn dà 。",
-  "example_mn": "Энэ байшин том юм."
+  "example_mn": "Энэ байшин том байна.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "下",
@@ -854,10 +866,11 @@
    1
   ],
   "meaning_en": "down; downwards; below",
-  "meaning_mn": "доош; бууx; дараагийн",
+  "meaning_mn": "доош; буух; дараагийн",
   "example_zh": "下雨了。",
   "example_pinyin": "xià yǔ le 。",
-  "example_mn": "Бороо орлоо."
+  "example_mn": "Бороо орлоо.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "里",
@@ -938,7 +951,8 @@
   "meaning_mn": "жил",
   "example_zh": "今年是2026年。",
   "example_pinyin": "jīn nián shì 2 0 2 6 nián 。",
-  "example_mn": "Энэ жил бол 2026 он."
+  "example_mn": "Энэ жил 2026 он.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "多",
@@ -962,7 +976,8 @@
   "meaning_mn": "олон, их",
   "example_zh": "他有很多书。",
   "example_pinyin": "tā yǒu hěn duō shū 。",
-  "example_mn": "Түүнд олон ном бий."
+  "example_mn": "Тэр олон номтой.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "两",
@@ -982,7 +997,8 @@
   "meaning_mn": "хоёр",
   "example_zh": "我有两个孩子。",
   "example_pinyin": "wǒ yǒu liǎng gè hái zi 。",
-  "example_mn": "Надад хоёр хүүхэд бий."
+  "example_mn": "Би хоёр хүүхэдтэй.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "吗",
@@ -1059,7 +1075,8 @@
   "meaning_mn": "дахин, дахиад",
   "example_zh": "明天再说。",
   "example_pinyin": "míng tiān zài shuō 。",
-  "example_mn": "Маргааш дахин ярилцъя."
+  "example_mn": "Маргааш ярья.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "呢",
@@ -1078,7 +1095,8 @@
   "meaning_mn": "(асуултын аялга)",
   "example_zh": "你呢？",
   "example_pinyin": "nǐ ne ？",
-  "example_mn": "Чи яах вэ?"
+  "example_mn": "Харин чи?",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "只",
@@ -1234,7 +1252,8 @@
   "meaning_mn": "тэр (амьтан/эд юм)",
   "example_zh": "它是我的猫。",
   "example_pinyin": "tā shì wǒ de māo 。",
-  "example_mn": "Энэ бол миний муур."
+  "example_mn": "Энэ миний муур.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "后",
@@ -1463,7 +1482,8 @@
   "meaning_mn": "шинэ",
   "example_zh": "这是我的新手机。",
   "example_pinyin": "zhè shì wǒ de xīn shǒu jī 。",
-  "example_mn": "Энэ бол миний шинэ утас."
+  "example_mn": "Энэ миний шинэ утас.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "找",
@@ -1520,7 +1540,8 @@
   "meaning_mn": "...гэж бодох/санах",
   "example_zh": "我觉得这个很好。",
   "example_pinyin": "wǒ jué dé zhè gè hěn hǎo 。",
-  "example_mn": "Би үүнийг сайн гэж бодож байна."
+  "example_mn": "Надад энэ сайн санагдаж байна.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "月",
@@ -1596,7 +1617,8 @@
   "meaning_mn": "машин, тэрэг",
   "example_zh": "这是我的车。",
   "example_pinyin": "zhè shì wǒ de chē 。",
-  "example_mn": "Энэ бол миний машин."
+  "example_mn": "Энэ миний машин.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "一些",
@@ -1630,10 +1652,11 @@
    2
   ],
   "meaning_en": "everyone; influential family; great expert",
-  "meaning_mn": "бүгдээрээ, олон нийт",
+  "meaning_mn": "бүгд, бүгдээрээ",
   "example_zh": "大家好！",
   "example_pinyin": "dà jiā hǎo ！",
-  "example_mn": "Бүгдээрээ сайн уу!"
+  "example_mn": "Бүгдээрээ сайн уу!",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "听",
@@ -1669,10 +1692,11 @@
    2
   ],
   "meaning_en": "very; really; unusual; extraordinary",
-  "meaning_mn": "нэн, маш",
+  "meaning_mn": "маш, үнэхээр",
   "example_zh": "这个菜非常好吃。",
   "example_pinyin": "zhè gè cài fēi cháng hǎo chī 。",
-  "example_mn": "Энэ хоол маш амттай."
+  "example_mn": "Энэ хоол маш амттай.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "开",
@@ -1732,7 +1756,8 @@
   "meaning_mn": "хүүхэд",
   "example_zh": "他有两个孩子。",
   "example_pinyin": "tā yǒu liǎng gè hái zi 。",
-  "example_mn": "Түүнд хоёр хүүхэд бий."
+  "example_mn": "Тэр хоёр хүүхэдтэй.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "这里",
@@ -1887,7 +1912,8 @@
   "meaning_mn": "юм, эд зүйл",
   "example_zh": "我要买东西。",
   "example_pinyin": "wǒ yào mǎi dōng xī 。",
-  "example_mn": "Би юм авах гэсэн юм."
+  "example_mn": "Би юм авах гэж байна.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "三",
@@ -1987,7 +2013,8 @@
   "meaning_mn": "өдөр (огноо); дугаар",
   "example_zh": "今天是五号。",
   "example_pinyin": "jīn tiān shì wǔ hào 。",
-  "example_mn": "Өнөөдөр тавны өдөр."
+  "example_mn": "Өнөөдөр сарын тав.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "朋友",
@@ -2006,7 +2033,8 @@
   "meaning_mn": "найз",
   "example_zh": "他是我的好朋友。",
   "example_pinyin": "tā shì wǒ de hǎo péng yǒu 。",
-  "example_mn": "Тэр бол миний сайн найз."
+  "example_mn": "Тэр миний сайн найз.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "住",
@@ -2062,7 +2090,8 @@
   "meaning_mn": "тэдгээр",
   "example_zh": "那些人是学生。",
   "example_pinyin": "nà xiē rén shì xué shēng 。",
-  "example_mn": "Тэдгээр хүмүүс оюутнууд."
+  "example_mn": "Тэр хүмүүс оюутнууд.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "水",
@@ -2136,7 +2165,8 @@
   "meaning_mn": "утас (яриа)",
   "example_zh": "请给我打电话。",
   "example_pinyin": "qǐng gěi wǒ dǎ diàn huà 。",
-  "example_mn": "Надад утсаар яриарай."
+  "example_mn": "Надад утасдаарай.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "女",
@@ -2154,7 +2184,8 @@
   "meaning_mn": "эмэгтэй",
   "example_zh": "她是我女儿。",
   "example_pinyin": "tā shì wǒ nǚ ér 。",
-  "example_mn": "Тэр бол миний охин."
+  "example_mn": "Тэр миний охин.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "分",
@@ -2237,7 +2268,8 @@
   "meaning_mn": "өдөр",
   "example_zh": "今天是十日。",
   "example_pinyin": "jīn tiān shì shí rì 。",
-  "example_mn": "Өнөөдөр арваны өдөр."
+  "example_mn": "Өнөөдөр сарын арав.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "玩",
@@ -2275,7 +2307,8 @@
   "meaning_mn": "яг ...ж байх",
   "example_zh": "我正在吃饭。",
   "example_pinyin": "wǒ zhèng zài chī fàn 。",
-  "example_mn": "Би яг хоол идэж байна."
+  "example_mn": "Би хоол идэж байна.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "喝",
@@ -2388,7 +2421,8 @@
   "meaning_mn": "(олон тоо заах нөхцөл)",
   "example_zh": "同学们好！",
   "example_pinyin": "tóng xué men hǎo ！",
-  "example_mn": "Анги нийгэмлэгийнхэн ээ, сайн уу!"
+  "example_mn": "Сурагчид аа, сайн уу!",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "认识",
@@ -2502,10 +2536,11 @@
    1
   ],
   "meaning_en": "lump; chunk; piece; classifier for pieces of cloth, cake, soap etc; (coll.) classifier for money and currency units",
-  "meaning_mn": "төгрөг/юань (зоос); хэсэг",
+  "meaning_mn": "юань (ярианы хэлэнд); хэсэг",
   "example_zh": "这个三块钱。",
   "example_pinyin": "zhè gè sān kuài qián 。",
-  "example_mn": "Энэ гурван юань."
+  "example_mn": "Энэ гурван юань.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "外",
@@ -2599,7 +2634,8 @@
   "meaning_mn": "хэд, хэдэн",
   "example_zh": "这个多少钱？",
   "example_pinyin": "zhè gè duō shǎo qián ？",
-  "example_mn": "Энэ хэдэн төгрөг вэ?"
+  "example_mn": "Энэ ямар үнэтэй вэ?",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "妈妈",
@@ -2738,7 +2774,8 @@
   "meaning_mn": "ном",
   "example_zh": "我喜欢看书。",
   "example_pinyin": "wǒ xǐ huān kàn shū 。",
-  "example_mn": "Би ном уншиx дуртай."
+  "example_mn": "Би ном унших дуртай.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "五",
@@ -2774,10 +2811,11 @@
    1
   ],
   "meaning_en": "teacher; gentleman; sir; mister (Mr.); husband",
-  "meaning_mn": "ноён, эрхэм",
+  "meaning_mn": "ноён, гуай",
   "example_zh": "王先生在吗？",
   "example_pinyin": "wáng xiān shēng zài ma ？",
-  "example_mn": "Ван ноён байна уу?"
+  "example_mn": "Ван гуай байна уу?",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "男",
@@ -2795,7 +2833,8 @@
   "meaning_mn": "эрэгтэй",
   "example_zh": "他是男孩子。",
   "example_pinyin": "tā shì nán hái zi 。",
-  "example_mn": "Тэр эр хүүхэд."
+  "example_mn": "Тэр эрэгтэй хүүхэд.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "卖",
@@ -2930,7 +2969,8 @@
   "meaning_mn": "хоёр",
   "example_zh": "二加二是四。",
   "example_pinyin": "èr jiā èr shì sì 。",
-  "example_mn": "Хоёр дээр хоёр нэмбэл дөрөв."
+  "example_mn": "Хоёр дээр хоёрыг нэмбэл дөрөв.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "儿子",
@@ -3022,7 +3062,8 @@
   "meaning_mn": "дэлгүүр, лангуу",
   "example_zh": "前面有一家店。",
   "example_pinyin": "qián miàn yǒu yī jiā diàn 。",
-  "example_mn": "Урд нь нэг дэлгүүр бий."
+  "example_mn": "Урд нэг дэлгүүр байна.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "元",
@@ -3114,7 +3155,8 @@
   "meaning_mn": "үдээс хойш",
   "example_zh": "下午我有课。",
   "example_pinyin": "xià wǔ wǒ yǒu kè 。",
-  "example_mn": "Үдээс хойш надад хичээл бий."
+  "example_mn": "Үдээс хойш би хичээлтэй.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "学习",
@@ -3151,7 +3193,8 @@
   "meaning_mn": "тэдгээр (эд юм/амьтан)",
   "example_zh": "它们是我的猫。",
   "example_pinyin": "tā men shì wǒ de māo 。",
-  "example_mn": "Эдгээр бол миний муурнууд."
+  "example_mn": "Энэ миний муурнууд.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "老师",
@@ -3352,7 +3395,8 @@
   "meaning_mn": "гар утас",
   "example_zh": "我的手机没电了。",
   "example_pinyin": "wǒ de shǒu jī méi diàn le 。",
-  "example_mn": "Миний утас цэнэггүй боллоо."
+  "example_mn": "Утасны цэнэг дууслаа.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "忙",
@@ -3433,7 +3477,8 @@
   "meaning_mn": "охин",
   "example_zh": "她有一个女儿。",
   "example_pinyin": "tā yǒu yī gè nǚ ér 。",
-  "example_mn": "Түүнд нэг охин бий."
+  "example_mn": "Тэр нэг охинтой.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "说话",
@@ -3510,7 +3555,8 @@
   "meaning_mn": "гоё, үзэсгэлэнтэй",
   "example_zh": "这件衣服很漂亮。",
   "example_pinyin": "zhè jiàn yī fú hěn piāo liàng 。",
-  "example_mn": "Энэ хувцас гоё юм."
+  "example_mn": "Энэ хувцас гоё байна.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "高兴",
@@ -3611,7 +3657,8 @@
   "meaning_mn": "компьютер",
   "example_zh": "这是我的电脑。",
   "example_pinyin": "zhè shì wǒ de diàn nǎo 。",
-  "example_mn": "Энэ бол миний компьютер."
+  "example_mn": "Энэ миний компьютер.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "第",
@@ -3745,7 +3792,8 @@
   "meaning_mn": "утсаар ярих",
   "example_zh": "我给妈妈打电话。",
   "example_pinyin": "wǒ gěi mā mā dǎ diàn huà 。",
-  "example_mn": "Би ээждээ утсаар ярьдаг."
+  "example_mn": "Би ээждээ утасдана.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "休息",
@@ -3976,7 +4024,8 @@
   "meaning_mn": "хичээл",
   "example_zh": "今天我有三节课。",
   "example_pinyin": "jīn tiān wǒ yǒu sān jié kè 。",
-  "example_mn": "Өнөөдөр надад гурван хичээл бий."
+  "example_mn": "Өнөөдөр би гурван хичээлтэй.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "国",
@@ -4010,7 +4059,8 @@
   "meaning_mn": "хоол, будаа",
   "example_zh": "我们一起吃饭。",
   "example_pinyin": "wǒ men yī qǐ chī fàn 。",
-  "example_mn": "Бид хамт хоол идэцгээнэ."
+  "example_mn": "Бид хамт хооллоно.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "一半",
@@ -4138,10 +4188,11 @@
    1
   ],
   "meaning_en": "to study at the same school; fellow student; classmate",
-  "meaning_mn": "ангийн найз, цуг сурагч",
+  "meaning_mn": "ангийн найз, ангийнхан",
   "example_zh": "他是我的同学。",
   "example_pinyin": "tā shì wǒ de tóng xué 。",
-  "example_mn": "Тэр бол миний ангийн найз."
+  "example_mn": "Тэр миний ангийн найз.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "好看",
@@ -4158,7 +4209,8 @@
   "meaning_mn": "сайхан харагдах, гоё",
   "example_zh": "这件衣服很好看。",
   "example_pinyin": "zhè jiàn yī fú hěn hǎo kàn 。",
-  "example_mn": "Энэ хувцас гоё харагдаж байна."
+  "example_mn": "Энэ хувцас гоё байна.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "茶",
@@ -4271,10 +4323,11 @@
    2
   ],
   "meaning_en": "younger sister; young woman",
-  "meaning_mn": "дүү охин",
+  "meaning_mn": "эмэгтэй дүү",
   "example_zh": "我妹妹很可爱。",
   "example_pinyin": "wǒ mèi mèi hěn kě ài 。",
-  "example_mn": "Манай дүү охин хөөрхөн."
+  "example_mn": "Манай дүү хөөрхөн.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "女士",
@@ -4312,7 +4365,8 @@
   "meaning_mn": "үдээс өмнө",
   "example_zh": "上午我有会。",
   "example_pinyin": "shàng wǔ wǒ yǒu huì 。",
-  "example_mn": "Үдээс өмнө надад хурал бий."
+  "example_mn": "Үдээс өмнө би хуралтай.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "贵",
@@ -4348,10 +4402,11 @@
   "hsk_level": "1",
   "hsk_old": [],
   "meaning_en": "over there; yonder",
-  "meaning_mn": "тэр тал, цаана",
+  "meaning_mn": "тэр тал, тэнд",
   "example_zh": "商店在那边。",
   "example_pinyin": "shāng diàn zài nà biān 。",
-  "example_mn": "Дэлгүүр тэр талд байна."
+  "example_mn": "Дэлгүүр тэр талд байна.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "弟弟",
@@ -4367,10 +4422,11 @@
    2
   ],
   "meaning_en": "younger brother",
-  "meaning_mn": "дүү хүү",
+  "meaning_mn": "эрэгтэй дүү",
   "example_zh": "我弟弟在上学。",
   "example_pinyin": "wǒ dì dì zài shàng xué 。",
-  "example_mn": "Манай дүү сургуульд сурдаг."
+  "example_mn": "Манай дүү сургуульд сурдаг.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "百",
@@ -4479,7 +4535,8 @@
   "meaning_mn": "хаана",
   "example_zh": "你去哪儿？",
   "example_pinyin": "nǐ qù nǎ ér ？",
-  "example_mn": "Чи хаашаа явах вэ?"
+  "example_mn": "Чи хаашаа явж байна?",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "苹果",
@@ -4590,7 +4647,8 @@
   "meaning_mn": "энэ тал",
   "example_zh": "请到这边来。",
   "example_pinyin": "qǐng dào zhè biān lái 。",
-  "example_mn": "Энэ тал руу ирээрэй."
+  "example_mn": "Наашаа ирээрэй.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "火车",
@@ -4824,7 +4882,8 @@
   "meaning_mn": "дэлгүүр",
   "example_zh": "我去商店买东西。",
   "example_pinyin": "wǒ qù shāng diàn mǎi dōng xī 。",
-  "example_mn": "Би дэлгүүрээс юм авах гэж байна."
+  "example_mn": "Би дэлгүүр орж юм авна.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "鸡蛋",
@@ -4862,7 +4921,8 @@
   "meaning_mn": "зүгээр, хамаагүй",
   "example_zh": "没关系，别担心。",
   "example_pinyin": "méi guān xì ， bié dān xīn 。",
-  "example_mn": "Зүгээр ээ, бүү санаа зов."
+  "example_mn": "Зүгээр ээ, санаа зовох хэрэггүй.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "零",
@@ -4883,7 +4943,8 @@
   "meaning_mn": "тэг",
   "example_zh": "现在十点零五分。",
   "example_pinyin": "xiàn zài shí diǎn líng wǔ fēn 。",
-  "example_mn": "Одоо арван цаг тав минут."
+  "example_mn": "Одоо арван цаг таван минут.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "桌子",
@@ -4933,10 +4994,11 @@
   "hsk_level": "1",
   "hsk_old": [],
   "meaning_en": "Excuse me, may I ask...?",
-  "meaning_mn": "өршөөгөөрэй, асууя",
+  "meaning_mn": "уучлаарай (асуухын өмнө)",
   "example_zh": "请问，洗手间在哪儿？",
   "example_pinyin": "qǐng wèn ， xǐ shǒu jiān zài nǎ ér ？",
-  "example_mn": "Уучлаарай, бие засах газар хаана байна вэ?"
+  "example_mn": "Уучлаарай, бие засах газар хаана байна вэ?",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "哪些",
@@ -5004,7 +5066,8 @@
   "meaning_mn": "зоогийн газар, ресторан",
   "example_zh": "我们在饭店吃饭。",
   "example_pinyin": "wǒ men zài fàn diàn chī fàn 。",
-  "example_mn": "Бид рестораны хоол иднэ."
+  "example_mn": "Бид ресторанд хооллоно.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "中学",
@@ -5059,7 +5122,8 @@
   "meaning_mn": "өвдөх",
   "example_zh": "他生病了，没来上班。",
   "example_pinyin": "tā shēng bìng le ， méi lái shàng bān 。",
-  "example_mn": "Тэр өвдөж ажилдаа ирээгүй."
+  "example_mn": "Тэр өвдөөд ажилдаа ирээгүй.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "好听",
@@ -5073,10 +5137,11 @@
   "hsk_level": "1",
   "hsk_old": [],
   "meaning_en": "pleasant to hear",
-  "meaning_mn": "чихэнд сайхан, аятайхан",
+  "meaning_mn": "сонсголонтой, сайхан",
   "example_zh": "这首歌很好听。",
   "example_pinyin": "zhè shǒu gē hěn hǎo tīng 。",
-  "example_mn": "Энэ дуу чихэнд сайхан."
+  "example_mn": "Энэ дуу их сайхан.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "大学生",
@@ -5112,7 +5177,8 @@
   "meaning_mn": "супермаркет, томоохон дэлгүүр",
   "example_zh": "我去超市买菜。",
   "example_pinyin": "wǒ qù chāo shì mǎi cài 。",
-  "example_mn": "Би супермаркетаас хоол авна."
+  "example_mn": "Би супермаркет орж хүнс авна.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "椅子",
@@ -5145,10 +5211,11 @@
   "hsk_level": "1",
   "hsk_old": [],
   "meaning_en": "child",
-  "meaning_mn": "бяцхан үрс, хүүхэд",
+  "meaning_mn": "хүүхэд (бага насны)",
   "example_zh": "小朋友们，你们好！",
   "example_pinyin": "xiǎo péng yǒu men ， nǐ men hǎo ！",
-  "example_mn": "Хүүхдүүд ээ, сайн уу!"
+  "example_mn": "Хүүхдүүд ээ, сайн уу!",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "午饭",
@@ -5360,7 +5427,8 @@
   "meaning_mn": "хичээл тарах",
   "example_zh": "下课后我们去吃饭。",
   "example_pinyin": "xià kè hòu wǒ men qù chī fàn 。",
-  "example_mn": "Хичээл тарсны дараа бид хоол идэхээр явна."
+  "example_mn": "Хичээл тараад бид хоол идэхээр явна.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "米饭",
@@ -5413,7 +5481,8 @@
   "meaning_mn": "банш",
   "example_zh": "过年我们吃饺子。",
   "example_pinyin": "guò nián wǒ men chī jiǎo zi 。",
-  "example_mn": "Шинэ жилээр бид банш иддэг."
+  "example_mn": "Цагаан сараар бид банш иддэг.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "小学生",
@@ -5500,7 +5569,8 @@
   "meaning_mn": "хятад хэл",
   "example_zh": "我学汉语两年了。",
   "example_pinyin": "wǒ xué hàn yǔ liǎng nián le 。",
-  "example_mn": "Би хоёр жил хятад хэл сурч байна."
+  "example_mn": "Би хятад хэл сураад хоёр жил болж байна.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "包子",
@@ -5516,10 +5586,11 @@
    5
   ],
   "meaning_en": "bao (steamed stuffed bun)",
-  "meaning_mn": "бууз (Хятадын чимхдэг чанасан бууз)",
+  "meaning_mn": "бууз (хятад)",
   "example_zh": "我喜欢吃包子。",
   "example_pinyin": "wǒ xǐ huān chī bāo zi 。",
-  "example_mn": "Би бууз идэх дуртай."
+  "example_mn": "Би бууз идэх дуртай.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "不客气",
@@ -5533,10 +5604,11 @@
    1
   ],
   "meaning_en": "you're welcome; don't mention it; impolite",
-  "meaning_mn": "зүгээр ээ, гачгүй",
+  "meaning_mn": "зүгээр ээ, юу ч биш",
   "example_zh": "不客气！",
   "example_pinyin": "bù kè qì ！",
-  "example_mn": "Зүгээр ээ!"
+  "example_mn": "Зүгээр ээ!",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "汉字",
@@ -5603,9 +5675,9 @@
   "meaning_mn": "зүгээр, юу ч биш, завтай байх",
   "example_zh": "没事，你别担心。",
   "example_pinyin": "méi shì ， nǐ bié dān xīn 。",
-  "example_mn": "Зүгээр ээ, чи бүү санаа зов.",
+  "example_mn": "Зүгээр ээ, санаа зовох хэрэггүй.",
   "added": "hsk30-2025",
-  "mn_status": "draft"
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "那个",
@@ -5622,9 +5694,9 @@
   "meaning_mn": "тэр, тэр нэг",
   "example_zh": "那个人是我的老师。",
   "example_pinyin": "nà ge rén shì wǒ de lǎo shī 。",
-  "example_mn": "Тэр хүн бол миний багш.",
+  "example_mn": "Тэр хүн миний багш.",
   "added": "hsk30-2025",
-  "mn_status": "draft"
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "哪个",
@@ -5641,9 +5713,9 @@
   "meaning_mn": "аль, аль нь",
   "example_zh": "你喜欢哪个？",
   "example_pinyin": "nǐ xǐ huān nǎ ge ？",
-  "example_mn": "Чи алийг нь илүү таашаадаг вэ?",
+  "example_mn": "Чи алинд нь дуртай вэ?",
   "added": "hsk30-2025",
-  "mn_status": "draft"
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "你好",
@@ -5698,9 +5770,9 @@
   "meaning_mn": "энэ, энэ нэг",
   "example_zh": "这个是我的书。",
   "example_pinyin": "zhè ge shì wǒ de shū 。",
-  "example_mn": "Энэ бол миний ном.",
+  "example_mn": "Энэ миний ном.",
   "added": "hsk30-2025",
-  "mn_status": "draft"
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "就",
@@ -5722,7 +5794,8 @@
   "meaning_mn": "даруй, шууд; л",
   "example_zh": "我马上就来。",
   "example_pinyin": "wǒ mǎ shàng jiù lái 。",
-  "example_mn": "Би тэр даруй ирнэ."
+  "example_mn": "Би одоохон ирнэ.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "着",
@@ -5744,7 +5817,8 @@
   "meaning_mn": "(үргэлжлэх байдлын нөхцөл)",
   "example_zh": "他笑着说。",
   "example_pinyin": "tā xiào zhe shuō 。",
-  "example_mn": "Тэр инээнгээ хэлэв."
+  "example_mn": "Тэр инээгээд хэллээ.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "啊",
@@ -5783,7 +5857,8 @@
   "meaning_mn": "зөвшөөрөх, болгох; өгөх",
   "example_zh": "妈妈让我休息。",
   "example_pinyin": "mā mā ràng wǒ xiū xī 。",
-  "example_mn": "Ээж намайг амар гэв."
+  "example_mn": "Ээж намайг амар гэлээ.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "但",
@@ -5821,7 +5896,8 @@
   "meaning_mn": "өөрөө",
   "example_zh": "这是我自己做的。",
   "example_pinyin": "zhè shì wǒ zì jǐ zuò de 。",
-  "example_mn": "Энэ миний өөрөө хийсэн зүйл."
+  "example_mn": "Үүнийг би өөрөө хийсэн.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "得",
@@ -6099,7 +6175,8 @@
   "meaning_mn": "магадгүй; боломж",
   "example_zh": "他可能不来。",
   "example_pinyin": "tā kě néng bù lái 。",
-  "example_mn": "Тэр магадгүй ирэхгүй."
+  "example_mn": "Тэр ирэхгүй байх.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "地",
@@ -6119,7 +6196,8 @@
   "meaning_mn": "(дайвар нөхцөл, -аар); газар",
   "example_zh": "他认真地学习。",
   "example_pinyin": "tā rèn zhēn dì xué xí 。",
-  "example_mn": "Тэр нухацтай суралцдаг."
+  "example_mn": "Тэр хичээнгүй сурдаг.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "开始",
@@ -6277,7 +6355,8 @@
   "meaning_mn": "тийм; тэгвэл",
   "example_zh": "别那么着急。",
   "example_pinyin": "bié nà me zhe jí 。",
-  "example_mn": "Тэгж бүү яар."
+  "example_mn": "Битгий тэгж яар.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "这么",
@@ -6334,7 +6413,8 @@
   "meaning_mn": "хамт",
   "example_zh": "我们一起吃饭。",
   "example_pinyin": "wǒ men yī qǐ chī fàn 。",
-  "example_mn": "Бид хамт хооллоё."
+  "example_mn": "Хамтдаа хоол идье.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "位",
@@ -6351,10 +6431,11 @@
    3
   ],
   "meaning_en": "position; location; place",
-  "meaning_mn": "(хүний хүндэтгэлийн тоолох үг)",
+  "meaning_mn": "(хүн тоолох хүндэтгэлийн үг)",
   "example_zh": "这位老师很好。",
   "example_pinyin": "zhè wèi lǎo shī hěn hǎo 。",
-  "example_mn": "Энэ багш сайхан хүн."
+  "example_mn": "Энэ багш их сайн.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "希望",
@@ -6375,7 +6456,8 @@
   "meaning_mn": "найдах, хүсэх",
   "example_zh": "我希望你成功。",
   "example_pinyin": "wǒ xī wàng nǐ chéng gōng 。",
-  "example_mn": "Чамайг амжилт хүсье."
+  "example_mn": "Чамайг амжилтад хүрээсэй гэж найдаж байна.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "手",
@@ -6393,7 +6475,8 @@
   "meaning_mn": "гар",
   "example_zh": "请举手。",
   "example_pinyin": "qǐng jǔ shǒu 。",
-  "example_mn": "Гараа өргөнө үү."
+  "example_mn": "Гараа өргөөрэй.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "别",
@@ -6412,10 +6495,11 @@
    2
   ],
   "meaning_en": "surname Bie",
-  "meaning_mn": "битгий",
+  "meaning_mn": "битгий, бүү",
   "example_zh": "别说话。",
   "example_pinyin": "bié shuō huà 。",
-  "example_mn": "Битгий ярь."
+  "example_mn": "Битгий ярь.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "名",
@@ -6453,10 +6537,11 @@
    2
   ],
   "meaning_en": "length; long; forever",
-  "meaning_mn": "урт; (zhǎng) ургах",
+  "meaning_mn": "урт",
   "example_zh": "这条路很长。",
   "example_pinyin": "zhè tiáo lù hěn zhǎng 。",
-  "example_mn": "Энэ зам урт."
+  "example_mn": "Энэ зам их урт.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "告诉",
@@ -6492,7 +6577,8 @@
   "meaning_mn": "гарч ирэх",
   "example_zh": "他从房间里出来了。",
   "example_pinyin": "tā cóng fáng jiān lǐ chū lái le 。",
-  "example_mn": "Тэр өрөөнөөс гарч ирэв."
+  "example_mn": "Тэр өрөөнөөсөө гарч ирлээ.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "事情",
@@ -6511,7 +6597,8 @@
   "meaning_mn": "хэрэг, явдал",
   "example_zh": "我有很多事情要做。",
   "example_pinyin": "wǒ yǒu hěn duō shì qíng yào zuò 。",
-  "example_mn": "Надад хийх олон ажил бий."
+  "example_mn": "Надад хийх ажил их байна.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "条",
@@ -6549,7 +6636,8 @@
   "meaning_mn": "авах, барих",
   "example_zh": "请拿着这个。",
   "example_pinyin": "qǐng ná zhe zhè gè 。",
-  "example_mn": "Үүнийг бариарай."
+  "example_mn": "Үүнийг барьж байгаарай.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "高",
@@ -6590,10 +6678,11 @@
    5
   ],
   "meaning_en": "first month of the lunar year",
-  "meaning_mn": "яг; зөв; (яг ...ж байх)",
+  "meaning_mn": "яг (одоо ...ж байна), зөв",
   "example_zh": "我正在吃饭。",
   "example_pinyin": "wǒ zhèng zài chī fàn 。",
-  "example_mn": "Би яг хоол идэж байна."
+  "example_mn": "Би яг одоо хоол идэж байна.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "为什么",
@@ -6687,10 +6776,11 @@
    2
   ],
   "meaning_en": "each; every",
-  "meaning_mn": "тус бүр, бүр",
+  "meaning_mn": "бүр, тутам",
   "example_zh": "我每天学习。",
   "example_pinyin": "wǒ měi tiān xué xí 。",
-  "example_mn": "Би өдөр бүр сурдаг."
+  "example_mn": "Би өдөр бүр сурдаг.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "周",
@@ -6731,7 +6821,8 @@
   "meaning_mn": "өнгөрсөн; өнгөрөх",
   "example_zh": "过去的事别想了。",
   "example_pinyin": "guò qù de shì bié xiǎng le 。",
-  "example_mn": "Өнгөрсөн зүйлийг бүү бод."
+  "example_mn": "Өнгөрсөн юмаа битгий бод.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "送",
@@ -6750,7 +6841,8 @@
   "meaning_mn": "өгөх, хүргэх; үдэх",
   "example_zh": "我送你回家。",
   "example_pinyin": "wǒ sòng nǐ huí jiā 。",
-  "example_mn": "Би чамайг гэрт нь хүргэж өгье."
+  "example_mn": "Би чамайг гэрт чинь хүргэж өгье.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "笑",
@@ -6770,7 +6862,8 @@
   "meaning_mn": "инээх",
   "example_zh": "他笑了。",
   "example_pinyin": "tā xiào le 。",
-  "example_mn": "Тэр инээв."
+  "example_mn": "Тэр инээлээ.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "不错",
@@ -6787,7 +6880,8 @@
   "meaning_mn": "гайгүй, сайн",
   "example_zh": "你做得不错。",
   "example_pinyin": "nǐ zuò dé bù cuò 。",
-  "example_mn": "Чи сайн хийжээ."
+  "example_mn": "Чи гайгүй сайн хийжээ.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "帮",
@@ -6865,7 +6959,8 @@
   "meaning_mn": "зам",
   "example_zh": "这条路很宽。",
   "example_pinyin": "zhè tiáo lù hěn kuān 。",
-  "example_mn": "Энэ зам өргөн."
+  "example_mn": "Энэ зам их өргөн.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "门",
@@ -6903,10 +6998,11 @@
    3
   ],
   "meaning_en": "surname Hua",
-  "meaning_mn": "цэцэг; зарцуулах",
+  "meaning_mn": "цэцэг, зарцуулах",
   "example_zh": "这朵花很美。",
   "example_pinyin": "zhè duǒ huā hěn měi 。",
-  "example_mn": "Энэ цэцэг үзэсгэлэнтэй."
+  "example_mn": "Энэ цэцэг их гоё.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "虽然",
@@ -6925,7 +7021,8 @@
   "meaning_mn": "хэдийгээр",
   "example_zh": "虽然累，但很开心。",
   "example_pinyin": "suī rán lèi ， dàn hěn kāi xīn 。",
-  "example_mn": "Ядарсан ч их хөгжилтэй."
+  "example_mn": "Ядарсан ч их баяртай байна.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "回来",
@@ -6942,7 +7039,8 @@
   "meaning_mn": "буцаж ирэх",
   "example_zh": "他回来了。",
   "example_pinyin": "tā huí lái le 。",
-  "example_mn": "Тэр буцаж ирэв."
+  "example_mn": "Тэр буцаж ирлээ.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "球",
@@ -6979,7 +7077,8 @@
   "meaning_mn": "буруу",
   "example_zh": "你错了。",
   "example_pinyin": "nǐ cuò le 。",
-  "example_mn": "Чи буруудлаа."
+  "example_mn": "Чи буруу байна.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "间",
@@ -7016,7 +7115,8 @@
   "meaning_mn": "гүйх",
   "example_zh": "他跑得很快。",
   "example_pinyin": "tā pǎo dé hěn kuài 。",
-  "example_mn": "Тэр хурдан гүйдэг."
+  "example_mn": "Тэр их хурдан гүйдэг.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "万",
@@ -7033,10 +7133,11 @@
    3
   ],
   "meaning_en": "used in 俟",
-  "meaning_mn": "түм (10,000)",
+  "meaning_mn": "арван мянга, түм",
   "example_zh": "这个一万块。",
   "example_pinyin": "zhè gè yī wàn kuài 。",
-  "example_mn": "Энэ арван мянган юань."
+  "example_mn": "Энэ арван мянган юанийн үнэтэй.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "动",
@@ -7071,10 +7172,11 @@
   "hsk_level": "2",
   "hsk_old": [],
   "meaning_en": "face; side; surface",
-  "meaning_mn": "нүүр; тал; гоймон",
+  "meaning_mn": "гоймон, тал, нүүр",
   "example_zh": "我喜欢吃面。",
   "example_pinyin": "wǒ xǐ huān chī miàn 。",
-  "example_mn": "Би гоймон идэх дуртай."
+  "example_mn": "Би гоймон идэх дуртай.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "下来",
@@ -7111,7 +7213,8 @@
   "meaning_mn": "хол",
   "example_zh": "学校离这儿很远。",
   "example_pinyin": "xué xiào lí zhè ér hěn yuǎn 。",
-  "example_mn": "Сургууль эндээс хол."
+  "example_mn": "Сургууль эндээс их хол.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "快乐",
@@ -7148,7 +7251,8 @@
   "meaning_mn": "дотор",
   "example_zh": "包里面有钱。",
   "example_pinyin": "bāo lǐ miàn yǒu qián 。",
-  "example_mn": "Цүхэн дотор мөнгө бий."
+  "example_mn": "Цүнхэнд мөнгө байгаа.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "懂",
@@ -7181,10 +7285,11 @@
   "hsk_level": "2",
   "hsk_old": [],
   "meaning_en": "to come over; to manage; to handle",
-  "meaning_mn": "энэ тийш ирэх",
+  "meaning_mn": "наашаа ирэх",
   "example_zh": "请过来。",
   "example_pinyin": "qǐng guò lái 。",
-  "example_mn": "Энэ тийшээ ирээрэй."
+  "example_mn": "Наашаа ирээрэй.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "记得",
@@ -7238,10 +7343,11 @@
    2
   ],
   "meaning_en": "the body; one's health; in person",
-  "meaning_mn": "бие, бие махбод",
+  "meaning_mn": "бие, эрүүл мэнд",
   "example_zh": "注意身体。",
   "example_pinyin": "zhù yì shēn tǐ 。",
-  "example_mn": "Биеэ анхаараарай."
+  "example_mn": "Биеэ анхаараарай.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "包",
@@ -7276,10 +7382,11 @@
   "hsk_level": "2",
   "hsk_old": [],
   "meaning_en": "that kind; that sort",
-  "meaning_mn": "тийм маягийн",
+  "meaning_mn": "тийм, тэгж",
   "example_zh": "别那样说。",
   "example_pinyin": "bié nà yàng shuō 。",
-  "example_mn": "Тэгж бүү хэл."
+  "example_mn": "Тэгж битгий хэл.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "往",
@@ -7296,10 +7403,11 @@
    4
   ],
   "meaning_en": "to go (in a direction); to; towards",
-  "meaning_mn": "зүг, өөд",
+  "meaning_mn": "зүг, руу",
   "example_zh": "一直往前走。",
   "example_pinyin": "yī zhí wǎng qián zǒu 。",
-  "example_mn": "Шууд урагшаа яв."
+  "example_mn": "Чигээрээ урагшаа яв.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "楼",
@@ -7315,10 +7423,11 @@
    3
   ],
   "meaning_en": "surname Lou",
-  "meaning_mn": "давхар; барилга",
+  "meaning_mn": "давхар, барилга",
   "example_zh": "我住在三楼。",
   "example_pinyin": "wǒ zhù zài sān lóu 。",
-  "example_mn": "Би гурван давхарт амьдардаг."
+  "example_mn": "Би гуравдугаар давхарт байдаг.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "飞",
@@ -7393,7 +7502,8 @@
   "meaning_mn": "нүд",
   "example_zh": "她的眼睛很大。",
   "example_pinyin": "tā de yǎn jīng hěn dà 。",
-  "example_mn": "Түүний нүд том."
+  "example_mn": "Тэр том нүдтэй.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "近",
@@ -7427,10 +7537,11 @@
   "hsk_level": "2",
   "hsk_old": [],
   "meaning_en": "to go down; to descend; to go on",
-  "meaning_mn": "доош явах; үргэлжлэх",
+  "meaning_mn": "доош явах, үргэлжлэх",
   "example_zh": "请说下去。",
   "example_pinyin": "qǐng shuō xià qù 。",
-  "example_mn": "Үргэлжлүүлэн яриарай."
+  "example_mn": "Цааш нь яриарай.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "离",
@@ -7447,10 +7558,11 @@
    2
   ],
   "meaning_en": "mythical beast (archaic)",
-  "meaning_mn": "-аас (зай)",
+  "meaning_mn": "-аас (зай заана)",
   "example_zh": "学校离我家不远。",
   "example_pinyin": "xué xiào lí wǒ jiā bù yuǎn 。",
-  "example_mn": "Сургууль манай гэрээс хол биш."
+  "example_mn": "Сургууль манай гэрээс холгүй.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "经常",
@@ -7508,7 +7620,8 @@
   "meaning_mn": "ор",
   "example_zh": "我的床很舒服。",
   "example_pinyin": "wǒ de chuáng hěn shū fú 。",
-  "example_mn": "Миний ор тухтай."
+  "example_mn": "Миний ор их тухтай.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "教",
@@ -7545,10 +7658,11 @@
    2
   ],
   "meaning_en": "idea; opinion; meaning",
-  "meaning_mn": "утга; санаа",
+  "meaning_mn": "утга, санаа",
   "example_zh": "这个词是什么意思？",
   "example_pinyin": "zhè gè cí shì shén me yì sī ？",
-  "example_mn": "Энэ үгийн утга юу вэ?"
+  "example_mn": "Энэ үг ямар утгатай вэ?",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "忘",
@@ -7565,7 +7679,8 @@
   "meaning_mn": "мартах",
   "example_zh": "我忘了带钱。",
   "example_pinyin": "wǒ wàng le dài qián 。",
-  "example_mn": "Би мөнгө авахаа мартжээ."
+  "example_mn": "Би мөнгө авахаа мартчихжээ.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "画",
@@ -7607,7 +7722,8 @@
   "meaning_mn": "дасгал, спорт",
   "example_zh": "每天运动对身体好。",
   "example_pinyin": "měi tiān yùn dòng duì shēn tǐ hǎo 。",
-  "example_mn": "Өдөр бүр дасгал хийх биед сайн."
+  "example_mn": "Өдөр бүр дасгал хийх нь биед сайн.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "回去",
@@ -7624,7 +7740,8 @@
   "meaning_mn": "буцаж явах",
   "example_zh": "我要回去了。",
   "example_pinyin": "wǒ yào huí qù le 。",
-  "example_mn": "Би буцах гэж байна."
+  "example_mn": "Би буцлаа.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "妻子",
@@ -7643,7 +7760,8 @@
   "meaning_mn": "эхнэр",
   "example_zh": "这是我的妻子。",
   "example_pinyin": "zhè shì wǒ de qī zi 。",
-  "example_mn": "Энэ бол миний эхнэр."
+  "example_mn": "Энэ миний эхнэр.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "鱼",
@@ -7717,7 +7835,8 @@
   "meaning_mn": "мах",
   "example_zh": "我不太爱吃肉。",
   "example_pinyin": "wǒ bù tài ài chī ròu 。",
-  "example_mn": "Би мах төдийлөн дургүй."
+  "example_mn": "Би мах идэх тийм ч дургүй.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "班",
@@ -7776,7 +7895,8 @@
   "meaning_mn": "үзэг",
   "example_zh": "请借我一支笔。",
   "example_pinyin": "qǐng jiè wǒ yī zhī bǐ 。",
-  "example_mn": "Надад нэг үзэг зээлдүүлээч."
+  "example_mn": "Надад нэг үзэг зээлээч.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "上面",
@@ -7885,7 +8005,8 @@
   "meaning_mn": "зүүн",
   "example_zh": "请向左走。",
   "example_pinyin": "qǐng xiàng zuǒ zǒu 。",
-  "example_mn": "Зүүн тийшээ яв."
+  "example_mn": "Зүүн тийшээ яваарай.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "下面",
@@ -7992,7 +8113,8 @@
   "meaning_mn": "шувуу",
   "example_zh": "树上有一只鸟。",
   "example_pinyin": "shù shàng yǒu yī zhǐ niǎo 。",
-  "example_mn": "Мод дээр нэг шувуу байна."
+  "example_mn": "Модон дээр нэг шувуу сууж байна.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "进去",
@@ -8009,7 +8131,8 @@
   "meaning_mn": "орох (дотогш)",
   "example_zh": "请进去吧。",
   "example_pinyin": "qǐng jìn qù ba 。",
-  "example_mn": "Ороорой."
+  "example_mn": "Дотогшоо ороорой.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "疼",
@@ -8063,7 +8186,8 @@
   "meaning_mn": "зочид буудал",
   "example_zh": "我们住在酒店。",
   "example_pinyin": "wǒ men zhù zài jiǔ diàn 。",
-  "example_mn": "Бид зочид буудалд буусан."
+  "example_mn": "Бид зочид буудалд байрлаж байгаа.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "咖啡",
@@ -8122,7 +8246,8 @@
   "meaning_mn": "удаан",
   "example_zh": "请说慢一点。",
   "example_pinyin": "qǐng shuō màn yī diǎn 。",
-  "example_mn": "Жаахан удаан яриач."
+  "example_mn": "Жаахан аажуу яриач.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "前面",
@@ -8251,7 +8376,8 @@
   "meaning_mn": "шалгах, шалгалт өгөх",
   "example_zh": "我要考大学。",
   "example_pinyin": "wǒ yào kǎo dà xué 。",
-  "example_mn": "Би их сургуульд элсэх шалгалт өгнө."
+  "example_mn": "Би их сургуулийн шалгалт өгнө.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "上去",
@@ -8323,7 +8449,8 @@
   "meaning_mn": "хэсэг зуур",
   "example_zh": "请等一会儿。",
   "example_pinyin": "qǐng děng yī huì ér 。",
-  "example_mn": "Хэсэг хүлээгээрэй."
+  "example_mn": "Жаахан хүлээгээрэй.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "机场",
@@ -8342,7 +8469,8 @@
   "meaning_mn": "нисэх онгоцны буудал",
   "example_zh": "我去机场接朋友。",
   "example_pinyin": "wǒ qù jī chǎng jiē péng yǒu 。",
-  "example_mn": "Би найзаа онгоцны буудлаас тосно."
+  "example_mn": "Би найзаа тосохоор онгоцны буудал явна.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "踢",
@@ -8380,7 +8508,8 @@
   "meaning_mn": "тухтай, эвтэйхэн",
   "example_zh": "这个椅子很舒服。",
   "example_pinyin": "zhè gè yǐ zi hěn shū fú 。",
-  "example_mn": "Энэ сандал тухтай."
+  "example_mn": "Энэ сандал их тухтай.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "黑色",
@@ -8561,7 +8690,8 @@
   "meaning_mn": "эмээ (аавын ээж)",
   "example_zh": "我奶奶很慈祥。",
   "example_pinyin": "wǒ nǎi nǎi hěn cí xiáng 。",
-  "example_mn": "Манай эмээ энэрэнгүй."
+  "example_mn": "Манай эмээ их сайхан сэтгэлтэй.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "右边",
@@ -8705,10 +8835,11 @@
    2
   ],
   "meaning_en": "family name; surname; to be surnamed",
-  "meaning_mn": "овог; овоглох",
+  "meaning_mn": "овог, овогтой байх",
   "example_zh": "我姓王。",
   "example_pinyin": "wǒ xìng wáng 。",
-  "example_mn": "Намайг Ван овогтой."
+  "example_mn": "Би Ван овогтой.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "篮球",
@@ -8803,10 +8934,11 @@
    2
   ],
   "meaning_en": "surname Yin",
-  "meaning_mn": "үүлэрхэг; сүүдэр",
+  "meaning_mn": "бүрхэг, үүлэрхэг",
   "example_zh": "今天是阴天。",
   "example_pinyin": "jīn tiān shì yīn tiān 。",
-  "example_mn": "Өнөөдөр үүлэрхэг өдөр."
+  "example_mn": "Өнөөдөр бүрхэг байна.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "上网",
@@ -8965,10 +9097,11 @@
    3
   ],
   "meaning_en": "to like; to be fond of; to take pleasure in; to be keen on; interest; hobby",
-  "meaning_mn": "сонирхол, хобби",
+  "meaning_mn": "хобби, сонирхол",
   "example_zh": "我的爱好是看书。",
   "example_pinyin": "wǒ de ài hǎo shì kàn shū 。",
-  "example_mn": "Миний сонирхол бол ном унших."
+  "example_mn": "Миний хобби ном унших.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "教室",
@@ -9021,7 +9154,8 @@
   "meaning_mn": "нэвтрэх тасалбар",
   "example_zh": "门票多少钱？",
   "example_pinyin": "mén piào duō shǎo qián ？",
-  "example_mn": "Тасалбар хэдэн төгрөг вэ?"
+  "example_mn": "Тасалбар нь хэд вэ?",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "机票",
@@ -9057,7 +9191,8 @@
   "meaning_mn": "бугуйн цаг",
   "example_zh": "这块手表很贵。",
   "example_pinyin": "zhè kuài shǒu biǎo hěn guì 。",
-  "example_mn": "Энэ бугуйн цаг үнэтэй."
+  "example_mn": "Энэ бугуйн цаг их үнэтэй.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "出国",
@@ -9075,7 +9210,8 @@
   "meaning_mn": "гадаад явах",
   "example_zh": "他想出国留学。",
   "example_pinyin": "tā xiǎng chū guó liú xué 。",
-  "example_mn": "Тэр гадаадад сурахаар явмаар байна."
+  "example_mn": "Тэр гадаадад сурмаар байна.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "跑步",
@@ -9200,10 +9336,11 @@
   "hsk_level": "2",
   "hsk_old": [],
   "meaning_en": "boring; of no interest",
-  "meaning_mn": "сонирхолгүй, уйтай",
+  "meaning_mn": "сонирхолгүй, уйтгартай",
   "example_zh": "这个电影没意思。",
   "example_pinyin": "zhè gè diàn yǐng méi yì sī 。",
-  "example_mn": "Энэ кино сонирхолгүй."
+  "example_mn": "Энэ кино уйтгартай.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "书包",
@@ -9251,10 +9388,11 @@
   "hsk_level": "2",
   "hsk_old": [],
   "meaning_en": "to celebrate the Chinese New Year",
-  "meaning_mn": "шинэ жил (цагаан сар) тэмдэглэх",
+  "meaning_mn": "шинэ жил тэмдэглэх, цагаан сар өнгөрүүлэх",
   "example_zh": "我们回家过年。",
   "example_pinyin": "wǒ men huí jiā guò nián 。",
-  "example_mn": "Бид шинэ жилээ тэмдэглэхээр гэртээ харьдаг."
+  "example_mn": "Бид шинэ жилээр гэртээ харьдаг.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "绿茶",
@@ -9441,10 +9579,11 @@
    3
   ],
   "meaning_en": "quilt; to cover (with); (literary) to suffer (a misfortune)",
-  "meaning_mn": "(идэвхгүй хэвийн нөхцөл -гдсэн); хөнжил",
+  "meaning_mn": "(идэвхгүй хэв -гдах), хөнжил",
   "example_zh": "他被老师批评了。",
   "example_pinyin": "tā bèi lǎo shī pī píng le 。",
-  "example_mn": "Түүнийг багш загнав."
+  "example_mn": "Түүнийг багш нь загнасан.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "为",
@@ -9461,10 +9600,11 @@
    2
   ],
   "meaning_en": "as (in the capacity of); to take sth as; to act as",
-  "meaning_mn": "төлөө; болгож",
+  "meaning_mn": "төлөө, болгох",
   "example_zh": "为人民服务",
   "example_pinyin": "wèi rén mín fú wù",
-  "example_mn": "ард түмний төлөө үйлчлэх"
+  "example_mn": "ард түмний төлөө үйлчлэх",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "中",
@@ -9480,10 +9620,11 @@
   "hsk_level": "3",
   "hsk_old": [],
   "meaning_en": "China; Chinese; surname Zhong",
-  "meaning_mn": "дунд; дотор",
+  "meaning_mn": "дунд, дотор",
   "example_zh": "在我心中",
   "example_pinyin": "zài wǒ xīn zhōng",
-  "example_mn": "миний зүрх сэтгэлд"
+  "example_mn": "миний сэтгэлд",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "用",
@@ -9524,7 +9665,8 @@
   "meaning_mn": "хэрэв",
   "example_zh": "如果下雨，我就不去。",
   "example_pinyin": "rú guǒ xià yǔ ， wǒ jiù bù qù 。",
-  "example_mn": "Хэрэв бороо орвол би явахгүй."
+  "example_mn": "Бороо орвол би явахгүй.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "又",
@@ -9560,10 +9702,11 @@
   "hsk_level": "3",
   "hsk_old": [],
   "meaning_en": "(prefix) can; may; able to; -able; to approve; to permit; to suit",
-  "meaning_mn": "болох; гэвч",
+  "meaning_mn": "болох, гэхдээ",
   "example_zh": "这件事可大可小。",
   "example_pinyin": "zhè jiàn shì kě dà kě xiǎo 。",
-  "example_mn": "Энэ хэрэг том ч байж болно, жижиг ч байж болно."
+  "example_mn": "Энэ хэргийг том ч гэж болно, жижиг ч гэж болно.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "该",
@@ -9578,10 +9721,11 @@
   "hsk_level": "3",
   "hsk_old": [],
   "meaning_en": "should; ought to; probably",
-  "meaning_mn": "ёстой; ээлж",
+  "meaning_mn": "ёстой, ээлж",
   "example_zh": "你该休息了。",
   "example_pinyin": "nǐ gāi xiū xī le 。",
-  "example_mn": "Чи амрах цаг болсон."
+  "example_mn": "Чи амрах цаг боллоо.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "更",
@@ -9600,7 +9744,8 @@
   "meaning_mn": "улам, бүр",
   "example_zh": "今天比昨天更冷。",
   "example_pinyin": "jīn tiān bǐ zuó tiān gèng lěng 。",
-  "example_mn": "Өнөөдөр өчигдрөөс улам хүйтэн."
+  "example_mn": "Өнөөдөр өчигдрөөс ч хүйтэн байна.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "需要",
@@ -9639,10 +9784,11 @@
    3
   ],
   "meaning_en": "ability; talent; sb of a certain type; a capable individual",
-  "meaning_mn": "сая, дөнгөж; л",
+  "meaning_mn": "сая, дөнгөж, л",
   "example_zh": "他现在才来。",
   "example_pinyin": "tā xiàn zài cái lái 。",
-  "example_mn": "Тэр дөнгөж одоо ирлээ."
+  "example_mn": "Тэр сая л ирлээ.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "像",
@@ -9661,10 +9807,11 @@
    3
   ],
   "meaning_en": "to resemble; to be like; to look as if",
-  "meaning_mn": "төстэй; адил",
+  "meaning_mn": "төстэй, адилхан",
   "example_zh": "他像他爸爸。",
   "example_pinyin": "tā xiàng tā bà bà 。",
-  "example_mn": "Тэр аавтайгаа адил."
+  "example_mn": "Тэр аавтайгаа адилхан.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "向",
@@ -9704,7 +9851,8 @@
   "meaning_mn": "үзэх, бодох",
   "example_zh": "我认为这是对的。",
   "example_pinyin": "wǒ rèn wèi zhè shì duì de 。",
-  "example_mn": "Би үүнийг зөв гэж үзэж байна."
+  "example_mn": "Би үүнийг зөв гэж бодож байна.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "起",
@@ -9742,7 +9890,8 @@
   "meaning_mn": "ёстой, хэрэгтэй",
   "example_zh": "你应该多喝水。",
   "example_pinyin": "nǐ yīng gāi duō hē shuǐ 。",
-  "example_mn": "Чи их ус уух хэрэгтэй."
+  "example_mn": "Чи ус их уух хэрэгтэй.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "带",
@@ -9758,10 +9907,11 @@
    3
   ],
   "meaning_en": "band; belt; girdle",
-  "meaning_mn": "авч явах; бүс",
+  "meaning_mn": "авч явах, бүс",
   "example_zh": "出门别忘了带钱。",
   "example_pinyin": "chū mén bié wàng le dài qián 。",
-  "example_mn": "Гарахдаа мөнгө авахаа бүү март."
+  "example_mn": "Гарахдаа мөнгө авахаа битгий мартаарай.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "种",
@@ -9779,10 +9929,11 @@
    3
   ],
   "meaning_en": "seed; species; kind",
-  "meaning_mn": "төрөл; үр",
+  "meaning_mn": "төрөл, зүйл, үр",
   "example_zh": "这种水果很甜。",
   "example_pinyin": "zhè zhǒng shuǐ guǒ hěn tián 。",
-  "example_mn": "Энэ төрлийн жимс амтлаг."
+  "example_mn": "Энэ жимс их амттай.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "发现",
@@ -9802,7 +9953,8 @@
   "meaning_mn": "олж мэдэх, илрүүлэх",
   "example_zh": "我发现了一个问题。",
   "example_pinyin": "wǒ fā xiàn le yī gè wèn tí 。",
-  "example_mn": "Би нэг асуудал олж илрүүллээ."
+  "example_mn": "Би нэг асуудал олж мэдлээ.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "一定",
@@ -9822,7 +9974,8 @@
   "meaning_mn": "заавал, гарцаагүй",
   "example_zh": "你一定会成功。",
   "example_pinyin": "nǐ yī dìng huì chéng gōng 。",
-  "example_mn": "Чи заавал амжилтад хүрнэ."
+  "example_mn": "Чи гарцаагүй амжилтад хүрнэ.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "生活",
@@ -9839,10 +9992,11 @@
    4
   ],
   "meaning_en": "to live; life; livelihood",
-  "meaning_mn": "амьдрал; амьдрах",
+  "meaning_mn": "амьдрал, амьдрах",
   "example_zh": "他的生活很简单。",
   "example_pinyin": "tā de shēng huó hěn jiǎn dān 。",
-  "example_mn": "Түүний амьдрал энгийн."
+  "example_mn": "Түүний амьдрал их энгийн.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "一直",
@@ -9861,7 +10015,8 @@
   "meaning_mn": "байнга, шууд",
   "example_zh": "他一直在等你。",
   "example_pinyin": "tā yī zhí zài děng nǐ 。",
-  "example_mn": "Тэр чамайг байнга хүлээж байсан."
+  "example_mn": "Тэр чамайг хүлээгээд л байсан.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "发生",
@@ -9938,10 +10093,11 @@
   "hsk_level": "3",
   "hsk_old": [],
   "meaning_en": "merely; only; just; nothing but; simply; but; however",
-  "meaning_mn": "зүгээр л; гэхдээ",
+  "meaning_mn": "зүгээр л, гэхдээ",
   "example_zh": "我只是开玩笑。",
   "example_pinyin": "wǒ zhǐ shì kāi wán xiào 。",
-  "example_mn": "Би зүгээр л тоглоом хийсэн юм."
+  "example_mn": "Би зүгээр л тоглоом хийсэн.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "世界",
@@ -9979,7 +10135,8 @@
   "meaning_mn": "түүнчлэн, бас",
   "example_zh": "他聪明而且努力。",
   "example_pinyin": "tā cōng míng ér qiě nǔ lì 。",
-  "example_mn": "Тэр ухаантай бөгөөд хичээнгүй."
+  "example_mn": "Тэр ухаантай, бас хичээнгүй.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "重要",
@@ -10014,10 +10171,11 @@
    3
   ],
   "meaning_en": "to have to; must; compulsory",
-  "meaning_mn": "заавал, ёсзүйтэй",
+  "meaning_mn": "заавал, ёстой",
   "example_zh": "你必须按时来。",
   "example_pinyin": "nǐ bì xū àn shí lái 。",
-  "example_mn": "Чи цагтаа заавал ирэх ёстой."
+  "example_mn": "Чи цагтаа ирэх ёстой.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "地方",
@@ -10033,10 +10191,11 @@
    3
   ],
   "meaning_en": "region; regional (away from the central administration); local",
-  "meaning_mn": "газар; нутаг",
+  "meaning_mn": "газар, нутаг",
   "example_zh": "这个地方很美。",
   "example_pinyin": "zhè gè dì fāng hěn měi 。",
-  "example_mn": "Энэ газар үзэсгэлэнтэй."
+  "example_mn": "Энэ газар их сайхан.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "最后",
@@ -10157,7 +10316,8 @@
   "meaning_mn": "дараа нь",
   "example_zh": "先吃饭，然后休息。",
   "example_pinyin": "xiān chī fàn ， rán hòu xiū xī 。",
-  "example_mn": "Эхлээд хооллож, дараа нь амар."
+  "example_mn": "Эхлээд хоолоо ид, дараа нь амар.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "担心",
@@ -10177,7 +10337,8 @@
   "meaning_mn": "санаа зовох",
   "example_zh": "别担心，没事的。",
   "example_pinyin": "bié dān xīn ， méi shì de 。",
-  "example_mn": "Бүү санаа зов, зүгээр."
+  "example_mn": "Санаа зовох хэрэггүй, зүгээр.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "放",
@@ -10234,7 +10395,8 @@
   "meaning_mn": "эсвэл",
   "example_zh": "你或他都可以。",
   "example_pinyin": "nǐ huò tā dōu kě yǐ 。",
-  "example_mn": "Чи юм уу тэр аль аль нь болно."
+  "example_mn": "Чи ч болно, тэр ч болно.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "得到",
@@ -10251,7 +10413,8 @@
   "meaning_mn": "олж авах",
   "example_zh": "他得到了第一名。",
   "example_pinyin": "tā dé dào le dì yī míng 。",
-  "example_mn": "Тэр нэгдүгээр байр эзэллээ."
+  "example_mn": "Тэр нэгдүгээр байр авлаа.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "张",
@@ -10370,7 +10533,8 @@
   "meaning_mn": "улс орон",
   "example_zh": "中国是一个大国家。",
   "example_pinyin": "zhōng guó shì yī gè dà guó jiā 。",
-  "example_mn": "Хятад бол том улс."
+  "example_mn": "Хятад том улс.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "安全",
@@ -10389,10 +10553,11 @@
    4
   ],
   "meaning_en": "safe; secure; safety; security",
-  "meaning_mn": "аюулгүй; аюулгүй байдал",
+  "meaning_mn": "аюулгүй, аюулгүй байдал",
   "example_zh": "注意安全。",
   "example_pinyin": "zhù yì ān quán 。",
-  "example_mn": "Аюулгүй байдалд анхаараарай."
+  "example_mn": "Болгоомжтой байгаарай.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "决定",
@@ -10429,10 +10594,11 @@
    3
   ],
   "meaning_en": "to select; to pick; choice",
-  "meaning_mn": "сонгох; сонголт",
+  "meaning_mn": "сонгох, сонголт",
   "example_zh": "你可以自由选择。",
   "example_pinyin": "nǐ kě yǐ zì yóu xuǎn zé 。",
-  "example_mn": "Чи чөлөөтэй сонгож болно."
+  "example_mn": "Чи дуртайгаа сонгож болно.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "只有",
@@ -10451,7 +10617,8 @@
   "meaning_mn": "зөвхөн ... л",
   "example_zh": "只有努力才能成功。",
   "example_pinyin": "zhǐ yǒu nǔ lì cái néng chéng gōng 。",
-  "example_mn": "Зөвхөн хичээж байж амжилтад хүрнэ."
+  "example_mn": "Хичээж байж л амжилтад хүрнэ.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "或者",
@@ -10471,7 +10638,8 @@
   "meaning_mn": "эсвэл",
   "example_zh": "茶或者咖啡都行。",
   "example_pinyin": "chá huò zhě kā fēi dōu xíng 。",
-  "example_mn": "Цай юм уу кофе аль аль нь болно."
+  "example_mn": "Цай ч болно, кофе ч болно.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "女人",
@@ -10490,7 +10658,8 @@
   "meaning_mn": "эмэгтэй хүн",
   "example_zh": "她是一个坚强的女人。",
   "example_pinyin": "tā shì yī gè jiān qiáng de nǚ rén 。",
-  "example_mn": "Тэр бол хатуужилтай эмэгтэй."
+  "example_mn": "Тэр хатуужилтай эмэгтэй.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "机会",
@@ -10509,7 +10678,8 @@
   "meaning_mn": "боломж, завшаан",
   "example_zh": "这是一个好机会。",
   "example_pinyin": "zhè shì yī gè hǎo jī huì 。",
-  "example_mn": "Энэ бол сайн боломж."
+  "example_mn": "Энэ сайхан боломж.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "受",
@@ -10526,7 +10696,8 @@
   "meaning_mn": "хүртэх, тусах",
   "example_zh": "他受了伤。",
   "example_pinyin": "tā shòu le shāng 。",
-  "example_mn": "Тэр гэмтэл авав."
+  "example_mn": "Тэр бэртчихсэн.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "别人",
@@ -10542,10 +10713,11 @@
    3
   ],
   "meaning_en": "other people; others; other person",
-  "meaning_mn": "бусад хүн",
+  "meaning_mn": "бусад хүн, өөр хүн",
   "example_zh": "别管别人怎么说。",
   "example_pinyin": "bié guǎn bié rén zěn me shuō 。",
-  "example_mn": "Бусад хүн юу гэж хэлэхээс үл хамаар."
+  "example_mn": "Бусад хүн юу гэж хэлэхийг битгий тоо.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "发",
@@ -10562,10 +10734,11 @@
    4
   ],
   "meaning_en": "to send out; to show (one's feeling); to issue",
-  "meaning_mn": "илгээх; ургах",
+  "meaning_mn": "илгээх, явуулах, ургах",
   "example_zh": "我给你发消息。",
   "example_pinyin": "wǒ gěi nǐ fā xiāo xī 。",
-  "example_mn": "Би чамд мессеж илгээе."
+  "example_mn": "Би чамд мессеж явуулъя.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "可是",
@@ -10680,10 +10853,11 @@
    3
   ],
   "meaning_en": "letter; mail; to trust",
-  "meaning_mn": "захидал; итгэх",
+  "meaning_mn": "захидал, итгэх",
   "example_zh": "我给他写了一封信。",
   "example_pinyin": "wǒ gěi tā xiě le yī fēng xìn 。",
-  "example_mn": "Би түүнд нэг захидал бичсэн."
+  "example_mn": "Би түүнд захидал бичсэн.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "当然",
@@ -10719,10 +10893,11 @@
    3
   ],
   "meaning_en": "to receive; to answer (the phone); to meet or welcome sb",
-  "meaning_mn": "авах; тосох; залгах",
+  "meaning_mn": "авах, тосох, залгах",
   "example_zh": "我去机场接她。",
   "example_pinyin": "wǒ qù jī chǎng jiē tā 。",
-  "example_mn": "Би түүнийг буудлаас тосно."
+  "example_mn": "Би түүнийг онгоцны буудлаас тосно.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "相信",
@@ -10759,7 +10934,8 @@
   "meaning_mn": "сая, дөнгөж",
   "example_zh": "他刚走。",
   "example_pinyin": "tā gāng zǒu 。",
-  "example_mn": "Тэр дөнгөж явсан."
+  "example_mn": "Тэр саяхан явлаа.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "只要",
@@ -10796,7 +10972,8 @@
   "meaning_mn": "өөр, ялгаатай",
   "example_zh": "我们的看法不同。",
   "example_pinyin": "wǒ men de kàn fǎ bù tóng 。",
-  "example_mn": "Бидний үзэл ялгаатай."
+  "example_mn": "Бидний бодол өөр.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "解决",
@@ -10816,7 +10993,8 @@
   "meaning_mn": "шийдэх",
   "example_zh": "我们一起解决问题。",
   "example_pinyin": "wǒ men yī qǐ jiě jué wèn tí 。",
-  "example_mn": "Бид хамтдаа асуудлыг шийдье."
+  "example_mn": "Асуудлыг хамтдаа шийдье.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "干",
@@ -10855,7 +11033,8 @@
   "meaning_mn": "тухай",
   "example_zh": "这是关于历史的书。",
   "example_pinyin": "zhè shì guān yú lì shǐ de shū 。",
-  "example_mn": "Энэ бол түүхийн тухай ном."
+  "example_mn": "Энэ түүхийн тухай ном.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "完成",
@@ -10875,7 +11054,8 @@
   "meaning_mn": "дуусгах, гүйцэтгэх",
   "example_zh": "我完成了作业。",
   "example_pinyin": "wǒ wán chéng le zuò yè 。",
-  "example_mn": "Би даалгавраа гүйцэтгэлээ."
+  "example_mn": "Би даалгавраа хийж дууслаа.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "结束",
@@ -11045,10 +11225,11 @@
    3
   ],
   "meaning_en": "unusual; special; very; especially; particularly; expressly; for a specific purpose",
-  "meaning_mn": "онцгой; ялангуяа",
+  "meaning_mn": "онцгой, ялангуяа",
   "example_zh": "今天特别热。",
   "example_pinyin": "jīn tiān tè bié rè 。",
-  "example_mn": "Өнөөдөр онцгой халуун."
+  "example_mn": "Өнөөдөр ер бусын халуун байна.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "别的",
@@ -11107,7 +11288,8 @@
   "meaning_mn": "анхаарах",
   "example_zh": "注意安全。",
   "example_pinyin": "zhù yì ān quán 。",
-  "example_mn": "Аюулгүй байдалд анхаараарай."
+  "example_mn": "Болгоомжтой байгаарай.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "讲",
@@ -11145,7 +11327,8 @@
   "meaning_mn": "орхих, явах",
   "example_zh": "他离开了家。",
   "example_pinyin": "tā lí kāi le jiā 。",
-  "example_mn": "Тэр гэрээсээ явав."
+  "example_mn": "Тэр гэрээсээ явчихсан.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "以为",
@@ -11185,7 +11368,8 @@
   "meaning_mn": "улам (越...越...)",
   "example_zh": "越学越有意思。",
   "example_pinyin": "yuè xué yuè yǒu yì sī 。",
-  "example_mn": "Сурах тусам сонирхолтой болж байна."
+  "example_mn": "Сурах тусам сонирхолтой.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "方法",
@@ -11223,7 +11407,8 @@
   "meaning_mn": "дуу, чимээ",
   "example_zh": "大声一点。",
   "example_pinyin": "dà shēng yī diǎn 。",
-  "example_mn": "Жаахан чанга."
+  "example_mn": "Жаахан чанга ярь.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "选",
@@ -11260,7 +11445,8 @@
   "meaning_mn": "хот",
   "example_zh": "北京是一座大城市。",
   "example_pinyin": "běi jīng shì yī zuò dà chéng shì 。",
-  "example_mn": "Бээжин бол том хот."
+  "example_mn": "Бээжин том хот.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "句",
@@ -11339,7 +11525,8 @@
   "meaning_mn": "морь",
   "example_zh": "他骑着一匹马。",
   "example_pinyin": "tā qí zhe yī pǐ mǎ 。",
-  "example_mn": "Тэр нэг морь унаж байна."
+  "example_mn": "Тэр морь унаж байна.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "比较",
@@ -11432,10 +11619,11 @@
   "hsk_level": "3",
   "hsk_old": [],
   "meaning_en": "son; child; seed",
-  "meaning_mn": "хүү; (нэр үгийн дагавар)",
+  "meaning_mn": "хүү, (нэр үгийн дагавар)",
   "example_zh": "这是我的儿子。",
   "example_pinyin": "zhè shì wǒ de ér zi 。",
-  "example_mn": "Энэ бол миний хүү."
+  "example_mn": "Энэ миний хүү.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "脸",
@@ -11455,7 +11643,8 @@
   "meaning_mn": "нүүр",
   "example_zh": "他的脸红了。",
   "example_pinyin": "tā de liǎn hóng le 。",
-  "example_mn": "Түүний нүүр улайв."
+  "example_mn": "Түүний нүүр улайлаа.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "除了",
@@ -11553,7 +11742,8 @@
   "meaning_mn": "гэнэт",
   "example_zh": "他突然哭了。",
   "example_pinyin": "tā tū rán kū le 。",
-  "example_mn": "Тэр гэнэт уйлав."
+  "example_mn": "Тэр гэнэт уйлчихлаа.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "段",
@@ -11590,10 +11780,11 @@
    3
   ],
   "meaning_en": "inspection; to examine; to inspect",
-  "meaning_mn": "шалгах; үзлэг",
+  "meaning_mn": "шалгах, үзлэг",
   "example_zh": "医生给我检查身体。",
   "example_pinyin": "yī shēng gěi wǒ jiǎn chá shēn tǐ 。",
-  "example_mn": "Эмч намайг биеийн үзлэг хийв."
+  "example_mn": "Эмч миний биеийг үзлээ.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "米",
@@ -11708,10 +11899,11 @@
   "hsk_level": "3",
   "hsk_old": [],
   "meaning_en": "to do; to manage; to handle",
-  "meaning_mn": "хийх, гүйцэтгэх",
+  "meaning_mn": "хийх, зохицуулах",
   "example_zh": "这件事很难办。",
   "example_pinyin": "zhè jiàn shì hěn nán bàn 。",
-  "example_mn": "Энэ хэргийг гүйцэтгэхэд хэцүү."
+  "example_mn": "Энэ асуудлыг шийдэхэд хэцүү.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "根据",
@@ -11732,7 +11924,8 @@
   "meaning_mn": "үндэслэн, дагуу",
   "example_zh": "根据天气，明天会下雨。",
   "example_pinyin": "gēn jù tiān qì ， míng tiān huì xià yǔ 。",
-  "example_mn": "Цаг агаараас үзвэл маргааш бороо орно."
+  "example_mn": "Цаг агаарын мэдээгээр маргааш бороо орно.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "辆",
@@ -11770,7 +11963,8 @@
   "meaning_mn": "саяхан, дөнгөж",
   "example_zh": "他刚刚出去了。",
   "example_pinyin": "tā gāng gāng chū qù le 。",
-  "example_mn": "Тэр дөнгөж гарч явлаа."
+  "example_mn": "Тэр сая л гараад явлаа.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "简单",
@@ -11790,7 +11984,8 @@
   "meaning_mn": "энгийн, хялбар",
   "example_zh": "这个问题很简单。",
   "example_pinyin": "zhè gè wèn tí hěn jiǎn dān 。",
-  "example_mn": "Энэ асуудал хялбар."
+  "example_mn": "Энэ асуулт их амархан.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "服务",
@@ -11849,7 +12044,8 @@
   "meaning_mn": "юм шиг санагдах",
   "example_zh": "他好像生病了。",
   "example_pinyin": "tā hǎo xiàng shēng bìng le 。",
-  "example_mn": "Тэр өвдсөн юм шиг."
+  "example_mn": "Тэр өвдсөн бололтой.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "愿意",
@@ -11865,10 +12061,11 @@
    3
   ],
   "meaning_en": "to wish; to want; ready",
-  "meaning_mn": "хүсэх, зөвшөөрөх",
+  "meaning_mn": "хүсэх, бэлэн байх",
   "example_zh": "我愿意帮助你。",
   "example_pinyin": "wǒ yuàn yì bāng zhù nǐ 。",
-  "example_mn": "Би чамд туслахдаа баяртай."
+  "example_mn": "Би чамд туслахад бэлэн.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "音乐",
@@ -11903,10 +12100,11 @@
    4
   ],
   "meaning_en": "to persevere with; to persist in; to insist on",
-  "meaning_mn": "тэвчих, тууштай байх",
+  "meaning_mn": "тууштай байх, зүтгэх",
   "example_zh": "坚持就是胜利。",
   "example_pinyin": "jiān chí jiù shì shèng lì 。",
-  "example_mn": "Тэвчээр бол ялалт."
+  "example_mn": "Тэвчээр бол ялалт.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "感到",
@@ -12020,7 +12218,8 @@
   "meaning_mn": "харахад, бололтой",
   "example_zh": "看来他不会来了。",
   "example_pinyin": "kàn lái tā bù huì lái le 。",
-  "example_mn": "Харахад тэр ирэхгүй бололтой."
+  "example_mn": "Тэр ирэхгүй бололтой.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "酒",
@@ -12057,7 +12256,8 @@
   "meaning_mn": "угтах, тавтай морил",
   "example_zh": "欢迎你来我家。",
   "example_pinyin": "huān yíng nǐ lái wǒ jiā 。",
-  "example_mn": "Манайд ирсэнд тавтай морил."
+  "example_mn": "Манайд тавтай морил.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "一般",
@@ -12133,7 +12333,8 @@
   "meaning_mn": "яаж, ямар",
   "example_zh": "你觉得怎样？",
   "example_pinyin": "nǐ jué dé zěn yàng ？",
-  "example_mn": "Чи яаж бодож байна?"
+  "example_mn": "Чи юу гэж бодож байна?",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "收",
@@ -12152,7 +12353,8 @@
   "meaning_mn": "авах, хүлээж авах",
   "example_zh": "我收到了你的信。",
   "example_pinyin": "wǒ shōu dào le nǐ de xìn 。",
-  "example_mn": "Би чиний захидлыг хүлээж авлаа."
+  "example_mn": "Би захидлыг чинь авлаа.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "声音",
@@ -12171,7 +12373,8 @@
   "meaning_mn": "дуу хоолой",
   "example_zh": "她的声音很好听。",
   "example_pinyin": "tā de shēng yīn hěn hǎo tīng 。",
-  "example_mn": "Түүний дуу хоолой сайхан."
+  "example_mn": "Түүний хоолой их сайхан.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "马上",
@@ -12188,10 +12391,11 @@
    3
   ],
   "meaning_en": "at once; right away; immediately",
-  "meaning_mn": "тэр даруй",
+  "meaning_mn": "одоохон, тэр даруй",
   "example_zh": "我马上就来。",
   "example_pinyin": "wǒ mǎ shàng jiù lái 。",
-  "example_mn": "Би тэр даруй ирнэ."
+  "example_mn": "Би одоохон очно.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "变成",
@@ -12208,7 +12412,8 @@
   "meaning_mn": "болж хувирах",
   "example_zh": "水变成了冰。",
   "example_pinyin": "shuǐ biàn chéng le bīng 。",
-  "example_mn": "Ус мөс болж хувирав."
+  "example_mn": "Ус мөс болчихлоо.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "受到",
@@ -12285,7 +12490,8 @@
   "meaning_mn": "зөвхөн ... л чадна",
   "example_zh": "我只能等他。",
   "example_pinyin": "wǒ zhǐ néng děng tā 。",
-  "example_mn": "Би зөвхөн түүнийг хүлээж л чадна."
+  "example_mn": "Би түүнийг хүлээхээс өөр аргагүй.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "历史",
@@ -12323,7 +12529,8 @@
   "meaning_mn": "уйлах",
   "example_zh": "孩子哭了。",
   "example_pinyin": "hái zi kū le 。",
-  "example_mn": "Хүүхэд уйлав."
+  "example_mn": "Хүүхэд уйлчихлаа.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "汽车",
@@ -12340,7 +12547,8 @@
   "meaning_mn": "машин",
   "example_zh": "他买了一辆汽车。",
   "example_pinyin": "tā mǎi le yī liàng qì chē 。",
-  "example_mn": "Тэр нэг машин авлаа."
+  "example_mn": "Тэр машин авлаа.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "怕",
@@ -12376,7 +12584,8 @@
   "meaning_mn": "хурал",
   "example_zh": "下午有一个会议。",
   "example_pinyin": "xià wǔ yǒu yī gè huì yì 。",
-  "example_mn": "Үдээс хойш нэг хурал бий."
+  "example_mn": "Үдээс хойш хурал бий.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "试",
@@ -12396,7 +12605,8 @@
   "meaning_mn": "туршиж үзэх",
   "example_zh": "你试一下吧。",
   "example_pinyin": "nǐ shì yī xià ba 。",
-  "example_mn": "Чи туршаад үз."
+  "example_mn": "Чи нэг туршаад үз.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "面前",
@@ -12491,10 +12701,11 @@
    3
   ],
   "meaning_en": "difference; discrepancy; (math.) difference (amount remaining after a subtraction); (literary) a little; somewhat; slightly",
-  "meaning_mn": "муу; дутах; зөрөх",
+  "meaning_mn": "муу, дутах, зөрөх",
   "example_zh": "他的成绩很差。",
   "example_pinyin": "tā de chéng jì hěn chà 。",
-  "example_mn": "Түүний дүн муу."
+  "example_mn": "Түүний дүн их муу.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "结婚",
@@ -12531,7 +12742,8 @@
   "meaning_mn": "дэргэд",
   "example_zh": "我想在你身边。",
   "example_pinyin": "wǒ xiǎng zài nǐ shēn biān 。",
-  "example_mn": "Би чиний дэргэд байхыг хүснэ."
+  "example_mn": "Би чиний дэргэд байхыг хүсэж байна.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "短",
@@ -12570,7 +12782,8 @@
   "meaning_mn": "зөвшөөрөх",
   "example_zh": "我同意你的看法。",
   "example_pinyin": "wǒ tóng yì nǐ de kàn fǎ 。",
-  "example_mn": "Би чиний саналыг зөвшөөрч байна."
+  "example_mn": "Би чиний саналтай санал нэг байна.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "几乎",
@@ -12589,7 +12802,8 @@
   "meaning_mn": "бараг",
   "example_zh": "我几乎忘了。",
   "example_pinyin": "wǒ jǐ hū wàng le 。",
-  "example_mn": "Би бараг мартсан."
+  "example_mn": "Би бараг л мартчихсан.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "查",
@@ -12606,7 +12820,8 @@
   "meaning_mn": "шалгах, хайх",
   "example_zh": "请查一下词典。",
   "example_pinyin": "qǐng chá yī xià cí diǎn 。",
-  "example_mn": "Толь бичгээ нэг хараач."
+  "example_mn": "Толь бичгээс нэг хараач.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "不用",
@@ -12623,7 +12838,8 @@
   "meaning_mn": "хэрэггүй",
   "example_zh": "不用谢。",
   "example_pinyin": "bù yòng xiè 。",
-  "example_mn": "Талархах хэрэггүй."
+  "example_mn": "Баярлах хэрэггүй ээ.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "附近",
@@ -12639,10 +12855,11 @@
    3
   ],
   "meaning_en": "nearby; neighboring; (in the) vicinity (of); neighborhood",
-  "meaning_mn": "ойролцоо",
+  "meaning_mn": "ойрхон, ойролцоо",
   "example_zh": "附近有一家超市。",
   "example_pinyin": "fù jìn yǒu yī jiā chāo shì 。",
-  "example_mn": "Ойролцоо нэг дэлгүүр бий."
+  "example_mn": "Ойрхон нэг супермаркет байгаа.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "认真",
@@ -12659,10 +12876,11 @@
    3
   ],
   "meaning_en": "conscientious; earnest; serious",
-  "meaning_mn": "нухацтай, нягт",
+  "meaning_mn": "нухацтай, хичээнгүй",
   "example_zh": "他学习很认真。",
   "example_pinyin": "tā xué xí hěn rèn zhēn 。",
-  "example_mn": "Тэр нухацтай суралцдаг."
+  "example_mn": "Тэр хичээлдээ их нухацтай.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "脚",
@@ -12682,7 +12900,8 @@
   "meaning_mn": "хөл",
   "example_zh": "我的脚很疼。",
   "example_pinyin": "wǒ de jiǎo hěn téng 。",
-  "example_mn": "Хөл минь өвдөж байна."
+  "example_mn": "Хөл минь их өвдөж байна.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "电",
@@ -12696,10 +12915,11 @@
   "hsk_level": "3",
   "hsk_old": [],
   "meaning_en": "lightning; electricity; electric (bound form)",
-  "meaning_mn": "цахилгаан",
+  "meaning_mn": "цахилгаан, цэнэг",
   "example_zh": "手机没电了。",
   "example_pinyin": "shǒu jī méi diàn le 。",
-  "example_mn": "Утас цэнэггүй боллоо."
+  "example_mn": "Утасны цэнэг дууслаа.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "房子",
@@ -12716,7 +12936,8 @@
   "meaning_mn": "байшин, гэр",
   "example_zh": "他们买了一座房子。",
   "example_pinyin": "tā men mǎi le yī zuò fáng zi 。",
-  "example_mn": "Тэд нэг байшин худалдаж авав."
+  "example_mn": "Тэд байшин худалдаж авсан.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "山",
@@ -12767,10 +12988,11 @@
   "hsk_level": "3",
   "hsk_old": [],
   "meaning_en": "market; city",
-  "meaning_mn": "хот, зах зээл",
+  "meaning_mn": "хот; зах",
   "example_zh": "北京市很大。",
   "example_pinyin": "běi jīng shì hěn dà 。",
-  "example_mn": "Бээжин хот том."
+  "example_mn": "Бээжин хот их том.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "比如",
@@ -12789,7 +13011,8 @@
   "meaning_mn": "жишээ нь",
   "example_zh": "我喜欢运动，比如跑步。",
   "example_pinyin": "wǒ xǐ huān yùn dòng ， bǐ rú pǎo bù 。",
-  "example_mn": "Би спортод, жишээ нь гүйхэд дуртай."
+  "example_mn": "Би спортод дуртай, жишээ нь гүйх.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "后来",
@@ -12845,7 +13068,8 @@
   "meaning_mn": "ам",
   "example_zh": "他闭上了嘴。",
   "example_pinyin": "tā bì shàng le zuǐ 。",
-  "example_mn": "Тэр амаа таглав."
+  "example_mn": "Тэр амаа хамхилаа.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "遇到",
@@ -12940,7 +13164,8 @@
   "meaning_mn": "залуу",
   "example_zh": "他还很年轻。",
   "example_pinyin": "tā hái hěn nián qīng 。",
-  "example_mn": "Тэр одоо ч залуу."
+  "example_mn": "Тэр одоохондоо залуу.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "久",
@@ -12961,7 +13186,8 @@
   "meaning_mn": "удаан (хугацаа)",
   "example_zh": "好久不见。",
   "example_pinyin": "hǎo jiǔ bù jiàn 。",
-  "example_mn": "Удаан уулзсангүй."
+  "example_mn": "Удаан уулзаагүй шүү.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "记",
@@ -12977,10 +13203,11 @@
   "hsk_level": "3",
   "hsk_old": [],
   "meaning_en": "to record; to note; to memorize",
-  "meaning_mn": "тэмдэглэх, цээжлэх",
+  "meaning_mn": "тэмдэглэх, тогтоох, цээжлэх",
   "example_zh": "请记好我的电话。",
   "example_pinyin": "qǐng jì hǎo wǒ de diàn huà 。",
-  "example_mn": "Утсыг минь сайн тэмдэглэ."
+  "example_mn": "Утасны дугаарыг минь сайн тогтоож ав.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "关注",
@@ -12995,10 +13222,11 @@
   "hsk_level": "3",
   "hsk_old": [],
   "meaning_en": "to pay attention to; to follow sth closely; to follow (on social media)",
-  "meaning_mn": "анхаарал хандуулах",
+  "meaning_mn": "анхаарах, анхаарал хандуулах; дагах (сошиал)",
   "example_zh": "大家都很关注这件事。",
   "example_pinyin": "dà jiā dōu hěn guān zhù zhè jiàn shì 。",
-  "example_mn": "Бүгд энэ хэрэгт анхаарал хандуулж байна."
+  "example_mn": "Бүгд энэ асуудлыг их анхаарч байна.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "表演",
@@ -13018,7 +13246,8 @@
   "meaning_mn": "тоглолт; тоглох",
   "example_zh": "他们的表演很精彩。",
   "example_pinyin": "tā men de biǎo yǎn hěn jīng cǎi 。",
-  "example_mn": "Тэдний тоглолт гайхалтай."
+  "example_mn": "Тэдний тоглолт үнэхээр гоё байлаа.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "关",
@@ -13058,7 +13287,8 @@
   "meaning_mn": "үхэр",
   "example_zh": "农民养了几头牛。",
   "example_pinyin": "nóng mín yǎng le jǐ tóu niú 。",
-  "example_mn": "Тариачин хэдэн үхэр тэжээжээ."
+  "example_mn": "Тариачин хэдэн үхэр тэжээдэг.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "刚才",
@@ -13074,10 +13304,11 @@
    3
   ],
   "meaning_en": "just now; a moment ago",
-  "meaning_mn": "саяхан",
+  "meaning_mn": "сая, дөнгөж сая",
   "example_zh": "刚才谁来了？",
   "example_pinyin": "gāng cái shuí lái le ？",
-  "example_mn": "Саяхан хэн ирэв?"
+  "example_mn": "Сая хэн ирсэн бэ?",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "风",
@@ -13095,7 +13326,8 @@
   "meaning_mn": "салхи",
   "example_zh": "今天风很大。",
   "example_pinyin": "jīn tiān fēng hěn dà 。",
-  "example_mn": "Өнөөдөр салхи их."
+  "example_mn": "Өнөөдөр салхи их байна.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "办公室",
@@ -13114,7 +13346,8 @@
   "meaning_mn": "ажлын өрөө, оффис",
   "example_zh": "经理在办公室。",
   "example_pinyin": "jīng lǐ zài bàn gōng shì 。",
-  "example_mn": "Менежер оффист байна."
+  "example_mn": "Менежер оффисдоо байгаа.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "照",
@@ -13131,10 +13364,11 @@
   "hsk_level": "3",
   "hsk_old": [],
   "meaning_en": "variant of 照; to shine; to illuminate",
-  "meaning_mn": "гэрэлтүүлэх; зураг авах",
+  "meaning_mn": "тусах, гэрэлтүүлэх; зураг авах",
   "example_zh": "太阳照着大地。",
   "example_pinyin": "tài yáng zhào zhe dà dì 。",
-  "example_mn": "Нар газрыг гэрэлтүүлж байна."
+  "example_mn": "Нар газар дэлхийг гийгүүлж байна.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "环境",
@@ -13153,7 +13387,8 @@
   "meaning_mn": "орчин, хүрээлэн буй орчин",
   "example_zh": "这里的环境很好。",
   "example_pinyin": "zhè lǐ de huán jìng hěn hǎo 。",
-  "example_mn": "Энд орчин сайхан."
+  "example_mn": "Эндхийн орчин их сайхан.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "收到",
@@ -13189,7 +13424,8 @@
   "meaning_mn": "зүг чиг",
   "example_zh": "我们走错了方向。",
   "example_pinyin": "wǒ men zǒu cuò le fāng xiàng 。",
-  "example_mn": "Бид буруу зүг рүү явжээ."
+  "example_mn": "Бид буруу зүг рүү явчихжээ.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "关心",
@@ -13206,10 +13442,11 @@
    3
   ],
   "meaning_en": "to be concerned about; to care about",
-  "meaning_mn": "анхаарал тавих",
+  "meaning_mn": "санаа тавих, анхаарал халамж тавих",
   "example_zh": "谢谢你的关心。",
   "example_pinyin": "xiè xiè nǐ de guān xīn 。",
-  "example_mn": "Анхаарал тавьсанд баярлалаа."
+  "example_mn": "Санаа тавьсанд баярлалаа.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "节",
@@ -13228,10 +13465,11 @@
    5
   ],
   "meaning_en": "see 节骨眼",
-  "meaning_mn": "баяр; (хэсгийн тоолох үг)",
+  "meaning_mn": "баяр; (хичээлийн цагийн тоолох үг)",
   "example_zh": "今天有两节课。",
   "example_pinyin": "jīn tiān yǒu liǎng jié kè 。",
-  "example_mn": "Өнөөдөр хоёр хичээл бий."
+  "example_mn": "Өнөөдөр хоёр цаг хичээлтэй.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "层",
@@ -13251,7 +13489,8 @@
   "meaning_mn": "давхар; үе",
   "example_zh": "他住在五层。",
   "example_pinyin": "tā zhù zài wǔ céng 。",
-  "example_mn": "Тэр таван давхарт амьдардаг."
+  "example_mn": "Тэр тав давхарт амьдардаг.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "病人",
@@ -13268,7 +13507,8 @@
   "meaning_mn": "өвчтөн",
   "example_zh": "医生在照顾病人。",
   "example_pinyin": "yī shēng zài zhào gù bìng rén 。",
-  "example_mn": "Эмч өвчтөнг асарч байна."
+  "example_mn": "Эмч өвчтөнийг асарч байна.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "心里",
@@ -13282,10 +13522,11 @@
   "hsk_level": "3",
   "hsk_old": [],
   "meaning_en": "chest; heart; mind",
-  "meaning_mn": "сэтгэлд, дотроо",
+  "meaning_mn": "дотроо, сэтгэлдээ",
   "example_zh": "我心里很难过。",
   "example_pinyin": "wǒ xīn lǐ hěn nán guò 。",
-  "example_mn": "Сэтгэл минь их гунихтай байна."
+  "example_mn": "Дотор минь их муухай байна.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "腿",
@@ -13301,10 +13542,11 @@
    3
   ],
   "meaning_en": "leg",
-  "meaning_mn": "хөл (шилбэ)",
+  "meaning_mn": "хөл (гуя, шилбэ)",
   "example_zh": "我的腿很疼。",
   "example_pinyin": "wǒ de tuǐ hěn téng 。",
-  "example_mn": "Хөл минь их өвдөж байна."
+  "example_mn": "Хөл минь их өвдөж байна.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "街",
@@ -13338,10 +13580,11 @@
    3
   ],
   "meaning_en": "one side; either side; on the one hand",
-  "meaning_mn": "нэг тал; (нэгэн зэрэг)",
+  "meaning_mn": "нэг тал; -нгаа ... -нгаа (зэрэг хийх)",
   "example_zh": "他一边走一边唱。",
   "example_pinyin": "tā yī biān zǒu yī biān chàng 。",
-  "example_mn": "Тэр алхангаа дуулна."
+  "example_mn": "Тэр алхангаа дуулж байна.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "鞋",
@@ -13380,7 +13623,8 @@
   "meaning_mn": "зуршил; дасах",
   "example_zh": "我习惯早起。",
   "example_pinyin": "wǒ xí guàn zǎo qǐ 。",
-  "example_mn": "Би эрт босох зуршилтай."
+  "example_mn": "Би эрт босож дассан.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "变化",
@@ -13419,7 +13663,8 @@
   "meaning_mn": "амралтын өдөр",
   "example_zh": "周末你做什么？",
   "example_pinyin": "zhōu mò nǐ zuò shén me ？",
-  "example_mn": "Амралтын өдөр чи юу хийдэг вэ?"
+  "example_mn": "Амралтын өдрөөр чи юу хийдэг вэ?",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "听说",
@@ -13433,10 +13678,11 @@
   "hsk_level": "3",
   "hsk_old": [],
   "meaning_en": "to hear (sth said); one hears (that); hearsay",
-  "meaning_mn": "сонссон, дуулсан",
+  "meaning_mn": "дуулсан, сонссон (гэнэ)",
   "example_zh": "听说你要结婚了。",
   "example_pinyin": "tīng shuō nǐ yào jié hūn le 。",
-  "example_mn": "Чамайг гэрлэх гэж байна гэж дуулсан."
+  "example_mn": "Чамайг гэрлэх гэж байгаа гэж дуулсан шүү.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "直到",
@@ -13453,7 +13699,8 @@
   "meaning_mn": "хүртэл",
   "example_zh": "我等到直到他来。",
   "example_pinyin": "wǒ děng dào zhí dào tā lái 。",
-  "example_mn": "Би түүнийг иртэл хүлээв."
+  "example_mn": "Би түүнийг иртэл нь хүлээсэн.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "毛",
@@ -13471,10 +13718,11 @@
    5
   ],
   "meaning_en": "surname Mao",
-  "meaning_mn": "ноос; үс; мао (зоос)",
+  "meaning_mn": "ноос, үс; мао (мөнгөний нэгж)",
   "example_zh": "这件衣服是羊毛的。",
   "example_pinyin": "zhè jiàn yī fú shì yáng máo de 。",
-  "example_mn": "Энэ хувцас хонины ноосон."
+  "example_mn": "Энэ хувцас хонины ноосоор хийсэн.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "忘记",
@@ -13493,7 +13741,8 @@
   "meaning_mn": "мартах",
   "example_zh": "我忘记了他的名字。",
   "example_pinyin": "wǒ wàng jì le tā de míng zì 。",
-  "example_mn": "Би түүний нэрийг мартжээ."
+  "example_mn": "Би түүний нэрийг мартчихлаа.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "船",
@@ -13512,7 +13761,8 @@
   "meaning_mn": "завь, хөлөг онгоц",
   "example_zh": "我们坐船过河。",
   "example_pinyin": "wǒ men zuò chuán guò hé 。",
-  "example_mn": "Бид завиар голыг гатлав."
+  "example_mn": "Бид завиар гол гатласан.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "养",
@@ -13529,7 +13779,8 @@
   "meaning_mn": "тэжээх, өсгөх",
   "example_zh": "他养了一只狗。",
   "example_pinyin": "tā yǎng le yī zhǐ gǒu 。",
-  "example_mn": "Тэр нэг нохой тэжээдэг."
+  "example_mn": "Тэр нохой тэжээдэг.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "鸡",
@@ -13565,10 +13816,11 @@
    4
   ],
   "meaning_en": "variant of 遍",
-  "meaning_mn": "(давталтын тоолох үг — удаа)",
+  "meaning_mn": "удаа (эхнээс нь дуустал)",
   "example_zh": "请再说一遍。",
   "example_pinyin": "qǐng zài shuō yī biàn 。",
-  "example_mn": "Дахиад нэг удаа хэлээч."
+  "example_mn": "Дахиад нэг хэлээч.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "打算",
@@ -13586,10 +13838,11 @@
    3
   ],
   "meaning_en": "to plan; to intend; to calculate",
-  "meaning_mn": "төлөвлөх; төлөвлөгөө",
+  "meaning_mn": "-х гэж байх, төлөвлөх, санаархах",
   "example_zh": "你打算去哪儿？",
   "example_pinyin": "nǐ dǎ suàn qù nǎ ér ？",
-  "example_mn": "Чи хаашаа явахаар төлөвлөж байна?"
+  "example_mn": "Чи хаашаа явах гэж байна?",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "室",
@@ -13606,7 +13859,8 @@
   "meaning_mn": "өрөө, тасалгаа",
   "example_zh": "这是会议室。",
   "example_pinyin": "zhè shì huì yì shì 。",
-  "example_mn": "Энэ бол хурлын өрөө."
+  "example_mn": "Энэ хурлын өрөө.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "极",
@@ -13623,10 +13877,11 @@
    3
   ],
   "meaning_en": "extremely; pole (geography, physics); utmost",
-  "meaning_mn": "туйлын, маш",
+  "meaning_mn": "маш, туйлын; туйл",
   "example_zh": "这里的风景美极了。",
   "example_pinyin": "zhè lǐ de fēng jǐng měi jí le 。",
-  "example_mn": "Эндхийн байгаль үзэсгэлэнтэй ээ."
+  "example_mn": "Эндхийн байгаль үнэхээр үзэсгэлэнтэй.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "咱们",
@@ -13642,10 +13897,11 @@
    4
   ],
   "meaning_en": "we or us (including both the speaker and the person(s) spoken to); (dialect) I or me; (dialect) (in a coaxing or familiar way) you",
-  "meaning_mn": "бид (хоёул)",
+  "meaning_mn": "бид (ярьж буй хүнийг оролцуулаад)",
   "example_zh": "咱们一起去吧。",
   "example_pinyin": "zán men yī qǐ qù ba 。",
-  "example_mn": "Хоюулаа хамт явъя."
+  "example_mn": "Хоюулаа хамт явъя.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "小心",
@@ -13684,7 +13940,8 @@
   "meaning_mn": "яах вэ",
   "example_zh": "没钱了，怎么办？",
   "example_pinyin": "méi qián le ， zěn me bàn ？",
-  "example_mn": "Мөнгөгүй боллоо, яах вэ?"
+  "example_mn": "Мөнгө дууслаа, яах вэ?",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "动物",
@@ -13703,7 +13960,8 @@
   "meaning_mn": "амьтан",
   "example_zh": "我喜欢小动物。",
   "example_pinyin": "wǒ xǐ huān xiǎo dòng wù 。",
-  "example_mn": "Би бяцхан амьтанд дуртай."
+  "example_mn": "Би бяцхан амьтдад дуртай.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "不行",
@@ -13760,7 +14018,8 @@
   "meaning_mn": "мод",
   "example_zh": "门前有一棵树。",
   "example_pinyin": "mén qián yǒu yī kē shù 。",
-  "example_mn": "Үүдэнд нэг мод бий."
+  "example_mn": "Хаалганы урд нэг мод бий.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "水平",
@@ -13819,7 +14078,8 @@
   "meaning_mn": "зүүн",
   "example_zh": "太阳从东边升起。",
   "example_pinyin": "tài yáng cóng dōng biān shēng qǐ 。",
-  "example_mn": "Нар зүүн зүгээс мандана."
+  "example_mn": "Нар зүүнээс мандана.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "头发",
@@ -13838,7 +14098,8 @@
   "meaning_mn": "үс (толгойн)",
   "example_zh": "她的头发很长。",
   "example_pinyin": "tā de tóu fā hěn zhǎng 。",
-  "example_mn": "Түүний үс урт."
+  "example_mn": "Тэр урт үстэй.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "封",
@@ -13877,7 +14138,8 @@
   "meaning_mn": "айх",
   "example_zh": "别害怕。",
   "example_pinyin": "bié hài pà 。",
-  "example_mn": "Бүү ай."
+  "example_mn": "Битгий ай.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "季",
@@ -13913,10 +14175,11 @@
    4
   ],
   "meaning_en": "roughly; probably; rough",
-  "meaning_mn": "барагцаагаар, магадгүй",
+  "meaning_mn": "ойролцоогоор, барагцаагаар; магадгүй",
   "example_zh": "大概十个人。",
   "example_pinyin": "dà gài shí gè rén 。",
-  "example_mn": "Барагцаагаар арван хүн."
+  "example_mn": "Арваад хүн байх.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "蓝",
@@ -13993,7 +14256,8 @@
   "meaning_mn": "соёл",
   "example_zh": "中国文化很丰富。",
   "example_pinyin": "zhōng guó wén huà hěn fēng fù 。",
-  "example_mn": "Хятадын соёл баялаг."
+  "example_mn": "Хятадын соёл их баялаг.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "急",
@@ -14012,7 +14276,8 @@
   "meaning_mn": "яаралтай; яарах",
   "example_zh": "别急，慢慢来。",
   "example_pinyin": "bié jí ， màn màn lái 。",
-  "example_mn": "Бүү яар, аажуухан."
+  "example_mn": "Битгий яар, аажуухан.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "丢",
@@ -14048,10 +14313,11 @@
    3
   ],
   "meaning_en": "strange; odd; to marvel",
-  "meaning_mn": "хачин, гайхалтай",
+  "meaning_mn": "хачин, сонин",
   "example_zh": "这件事很奇怪。",
   "example_pinyin": "zhè jiàn shì hěn qí guài 。",
-  "example_mn": "Энэ хэрэг хачин."
+  "example_mn": "Энэ хачин юм байна.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "礼物",
@@ -14070,7 +14336,8 @@
   "meaning_mn": "бэлэг",
   "example_zh": "这是给你的礼物。",
   "example_pinyin": "zhè shì gěi nǐ de lǐ wù 。",
-  "example_mn": "Энэ бол чамд өгөх бэлэг."
+  "example_mn": "Энэ чамд өгөх бэлэг.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "最好",
@@ -14106,10 +14373,11 @@
    3
   ],
   "meaning_en": "surname Nan",
-  "meaning_mn": "өмнө",
+  "meaning_mn": "урд, өмнө зүг",
   "example_zh": "他住在城市的南边。",
   "example_pinyin": "tā zhù zài chéng shì de nán biān 。",
-  "example_mn": "Тэр хотын урд хэсэгт амьдардаг."
+  "example_mn": "Тэр хотын урд хэсэгт амьдардаг.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "出发",
@@ -14145,10 +14413,11 @@
    3
   ],
   "meaning_en": "to raise; to increase; to improve",
-  "meaning_mn": "дээшлүүлэх",
+  "meaning_mn": "дээшлүүлэх, сайжруулах",
   "example_zh": "我想提高汉语水平。",
   "example_pinyin": "wǒ xiǎng tí gāo hàn yǔ shuǐ píng 。",
-  "example_mn": "Би хятад хэлний түвшнээ дээшлүүлмээр байна."
+  "example_mn": "Би хятад хэлээ сайжруулмаар байна.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "满意",
@@ -14168,7 +14437,8 @@
   "meaning_mn": "сэтгэл хангалуун",
   "example_zh": "老师对我很满意。",
   "example_pinyin": "lǎo shī duì wǒ hěn mǎn yì 。",
-  "example_mn": "Багш надад сэтгэл хангалуун байна."
+  "example_mn": "Багш надад их сэтгэл хангалуун байгаа.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "旧",
@@ -14188,7 +14458,8 @@
   "meaning_mn": "хуучин",
   "example_zh": "这件衣服太旧了。",
   "example_pinyin": "zhè jiàn yī fú tài jiù le 。",
-  "example_mn": "Энэ хувцас хэт хуучирчээ."
+  "example_mn": "Энэ хувцас дэндүү хуучин байна.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "司机",
@@ -14207,7 +14478,8 @@
   "meaning_mn": "жолооч",
   "example_zh": "出租车司机很热情。",
   "example_pinyin": "chū zū chē sī jī hěn rè qíng 。",
-  "example_mn": "Таксины жолооч найрсаг."
+  "example_mn": "Таксины жолооч их найрсаг байсан.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "北",
@@ -14221,10 +14493,11 @@
   "hsk_level": "3",
   "hsk_old": [],
   "meaning_en": "north; (classical) to be defeated",
-  "meaning_mn": "хойд",
+  "meaning_mn": "хойд, умард",
   "example_zh": "他来自北方。",
   "example_pinyin": "tā lái zì běi fāng 。",
-  "example_mn": "Тэр хойд нутгаас ирсэн."
+  "example_mn": "Тэр хойд нутгийнх.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "好多",
@@ -14241,7 +14514,8 @@
   "meaning_mn": "олон, их",
   "example_zh": "今天来了好多人。",
   "example_pinyin": "jīn tiān lái le hǎo duō rén 。",
-  "example_mn": "Өнөөдөр олон хүн ирлээ."
+  "example_mn": "Өнөөдөр маш олон хүн ирлээ.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "经理",
@@ -14279,7 +14553,8 @@
   "meaning_mn": "сонирхол",
   "example_zh": "我对音乐很有兴趣。",
   "example_pinyin": "wǒ duì yīn lè hěn yǒu xīng qù 。",
-  "example_mn": "Би хөгжимд их сонирхолтой."
+  "example_mn": "Би хөгжим их сонирхдог.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "员",
@@ -14333,10 +14608,11 @@
    3
   ],
   "meaning_en": "achievement; performance records; grades",
-  "meaning_mn": "амжилт, дүн",
+  "meaning_mn": "дүн, амжилт",
   "example_zh": "他的成绩很好。",
   "example_pinyin": "tā de chéng jì hěn hǎo 。",
-  "example_mn": "Түүний дүн сайн."
+  "example_mn": "Тэр сайн дүнтэй.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "中间",
@@ -14352,10 +14628,11 @@
    3
   ],
   "meaning_en": "the middle; the inside; in the middle; within; between; among; during; in the meantime",
-  "meaning_mn": "голд, дунд",
+  "meaning_mn": "дунд, гол",
   "example_zh": "他坐在中间。",
   "example_pinyin": "tā zuò zài zhōng jiān 。",
-  "example_mn": "Тэр голд сууж байна."
+  "example_mn": "Тэр голд нь сууж байна.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "女生",
@@ -14370,10 +14647,11 @@
   "hsk_level": "3",
   "hsk_old": [],
   "meaning_en": "schoolgirl; female student; girl",
-  "meaning_mn": "эмэгтэй сурагч",
+  "meaning_mn": "охин (сурагч, оюутан)",
   "example_zh": "我们班女生很多。",
   "example_pinyin": "wǒ men bān nǚ shēng hěn duō 。",
-  "example_mn": "Манай ангид эмэгтэй сурагч их."
+  "example_mn": "Манай ангид охид олон.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "聪明",
@@ -14393,7 +14671,8 @@
   "meaning_mn": "ухаантай",
   "example_zh": "这个孩子很聪明。",
   "example_pinyin": "zhè gè hái zi hěn cōng míng 。",
-  "example_mn": "Энэ хүүхэд ухаантай."
+  "example_mn": "Энэ хүүхэд их ухаантай.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "地点",
@@ -14426,10 +14705,11 @@
    4
   ],
   "meaning_en": "language",
-  "meaning_mn": "хэл, хэл шинжлэл",
+  "meaning_mn": "хэл",
   "example_zh": "汉语是一门难的语言。",
   "example_pinyin": "hàn yǔ shì yī mén nán de yǔ yán 。",
-  "example_mn": "Хятад хэл бол хэцүү хэл."
+  "example_mn": "Хятад хэл хэцүү хэл шүү.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "网站",
@@ -14448,7 +14728,8 @@
   "meaning_mn": "вэбсайт",
   "example_zh": "这个网站很有用。",
   "example_pinyin": "zhè gè wǎng zhàn hěn yǒu yòng 。",
-  "example_mn": "Энэ вэбсайт хэрэгтэй."
+  "example_mn": "Энэ вэбсайт их хэрэгтэй.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "灯",
@@ -14486,7 +14767,8 @@
   "meaning_mn": "нар",
   "example_zh": "今天太阳很大。",
   "example_pinyin": "jīn tiān tài yáng hěn dà 。",
-  "example_mn": "Өнөөдөр нар их."
+  "example_mn": "Өнөөдөр нар их ширүүн байна.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "方便",
@@ -14504,10 +14786,11 @@
    3
   ],
   "meaning_en": "convenient; suitable; to facilitate",
-  "meaning_mn": "тохиромжтой, ая тухтай",
+  "meaning_mn": "амар, тохиромжтой",
   "example_zh": "坐地铁很方便。",
   "example_pinyin": "zuò dì tiě hěn fāng biàn 。",
-  "example_mn": "Метрогоор явахад тохиромжтой."
+  "example_mn": "Метрогоор явахад амар.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "爬",
@@ -14540,10 +14823,11 @@
    4
   ],
   "meaning_en": "almost; nearly; more or less",
-  "meaning_mn": "бараг ижил, ойролцоо",
+  "meaning_mn": "бараг, ойролцоо; бараг адил",
   "example_zh": "我们差不多大。",
   "example_pinyin": "wǒ men chà bù duō dà 。",
-  "example_mn": "Бид бараг чацуу."
+  "example_mn": "Бид бараг чацуу.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "冰",
@@ -14560,7 +14844,8 @@
   "meaning_mn": "мөс",
   "example_zh": "水里有冰。",
   "example_pinyin": "shuǐ lǐ yǒu bīng 。",
-  "example_mn": "Усанд мөс бий."
+  "example_mn": "Усанд мөс байна.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "糖",
@@ -14615,7 +14900,8 @@
   "meaning_mn": "тохиромжтой",
   "example_zh": "这件衣服很合适。",
   "example_pinyin": "zhè jiàn yī fú hěn hé shì 。",
-  "example_mn": "Энэ хувцас тохирч байна."
+  "example_mn": "Энэ хувцас яг таарч байна.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "号码",
@@ -14676,7 +14962,8 @@
   "meaning_mn": "уурлах",
   "example_zh": "他生气了。",
   "example_pinyin": "tā shēng qì le 。",
-  "example_mn": "Тэр уурлав."
+  "example_mn": "Тэр уурлачихлаа.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "以上",
@@ -14710,7 +14997,8 @@
   "meaning_mn": "нэрсийн жагсаалт",
   "example_zh": "你的名字在名单上。",
   "example_pinyin": "nǐ de míng zì zài míng dān shàng 。",
-  "example_mn": "Чиний нэр жагсаалтад бий."
+  "example_mn": "Чиний нэр жагсаалтад байгаа.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "公园",
@@ -14750,7 +15038,8 @@
   "meaning_mn": "халуун дотно, найрсаг",
   "example_zh": "他对人很热情。",
   "example_pinyin": "tā duì rén hěn rè qíng 。",
-  "example_mn": "Тэр хүнд найрсаг."
+  "example_mn": "Тэр хүмүүст их дотно ханддаг.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "到处",
@@ -14766,10 +15055,11 @@
    4
   ],
   "meaning_en": "everywhere",
-  "meaning_mn": "газар сайгүй",
+  "meaning_mn": "хаа сайгүй, газар сайгүй",
   "example_zh": "到处都是人。",
   "example_pinyin": "dào chù dōu shì rén 。",
-  "example_mn": "Газар сайгүй хүн."
+  "example_mn": "Хаа сайгүй хүн.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "的话",
@@ -14783,10 +15073,11 @@
   "hsk_level": "3",
   "hsk_old": [],
   "meaning_en": "if (coming after a conditional clause)",
-  "meaning_mn": "-вал (нөхцөл)",
+  "meaning_mn": "(нөхцөл: ...бол, -вал)",
   "example_zh": "有时间的话，来我家吧。",
   "example_pinyin": "yǒu shí jiān de huà ， lái wǒ jiā ba 。",
-  "example_mn": "Цаг гарвал манайд ирээрэй."
+  "example_mn": "Цаг гарвал манайд ирээрэй.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "骑",
@@ -14843,7 +15134,8 @@
   "meaning_mn": "гол",
   "example_zh": "河里有很多鱼。",
   "example_pinyin": "hé lǐ yǒu hěn duō yú 。",
-  "example_mn": "Голд олон загас бий."
+  "example_mn": "Голд загас их байдаг.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "搬",
@@ -14862,7 +15154,8 @@
   "meaning_mn": "зөөх, нүүх",
   "example_zh": "我们下个月搬家。",
   "example_pinyin": "wǒ men xià gè yuè bān jiā 。",
-  "example_mn": "Бид дараа сар нүүнэ."
+  "example_mn": "Бид дараа сард нүүнэ.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "练",
@@ -14876,10 +15169,11 @@
   "hsk_level": "3",
   "hsk_old": [],
   "meaning_en": "to practice; to train; to drill",
-  "meaning_mn": "дасгал хийх, бэлтгэх",
+  "meaning_mn": "дасгал хийх, сургуулилах",
   "example_zh": "他每天练书法。",
   "example_pinyin": "tā měi tiān liàn shū fǎ 。",
-  "example_mn": "Тэр өдөр бүр уран бичлэг дасгалддаг."
+  "example_mn": "Тэр өдөр бүр уран бичлэгээр хичээллэдэг.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "聊",
@@ -14893,10 +15187,11 @@
   "hsk_level": "3",
   "hsk_old": [],
   "meaning_en": "to chat; to depend upon (literary); temporarily",
-  "meaning_mn": "ярилцах",
+  "meaning_mn": "хөөрөлдөх, ярилцах",
   "example_zh": "我们聊了一会儿。",
   "example_pinyin": "wǒ men liáo le yī huì ér 。",
-  "example_mn": "Бид жаахан ярилцлаа."
+  "example_mn": "Бид жаахан хөөрөлдлөө.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "同事",
@@ -14912,10 +15207,11 @@
    3
   ],
   "meaning_en": "colleague; co-worker",
-  "meaning_mn": "хамт ажиллагсад",
+  "meaning_mn": "хамт ажилладаг хүн",
   "example_zh": "他是我的同事。",
   "example_pinyin": "tā shì wǒ de tóng shì 。",
-  "example_mn": "Тэр бол миний хамт олон."
+  "example_mn": "Тэр надтай хамт ажилладаг.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "体育",
@@ -14951,7 +15247,8 @@
   "meaning_mn": "том хүн, насанд хүрэгчид",
   "example_zh": "这是大人的事。",
   "example_pinyin": "zhè shì dà rén de shì 。",
-  "example_mn": "Энэ бол том хүний хэрэг."
+  "example_mn": "Энэ том хүмүүсийн хэрэг.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "角",
@@ -14969,10 +15266,11 @@
    3
   ],
   "meaning_en": "surname Jue",
-  "meaning_mn": "булан; өнцөг",
+  "meaning_mn": "булан, өнцөг; жяо (мөнгөний нэгж)",
   "example_zh": "桌子的角",
   "example_pinyin": "zhuō zi de jiǎo",
-  "example_mn": "ширээний булан"
+  "example_mn": "ширээний булан",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "老人",
@@ -14986,10 +15284,11 @@
   "hsk_level": "3",
   "hsk_old": [],
   "meaning_en": "old man or woman; the elderly; one's aged parents or grandparents",
-  "meaning_mn": "өндөр настан",
+  "meaning_mn": "өндөр настан, ахмад хүн",
   "example_zh": "我们要尊重老人。",
   "example_pinyin": "wǒ men yào zūn zhòng lǎo rén 。",
-  "example_mn": "Бид өндөр настныг хүндлэх ёстой."
+  "example_mn": "Бид ахмад хүмүүсээ хүндлэх ёстой.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "胖",
@@ -15028,7 +15327,8 @@
   "meaning_mn": "хуудас",
   "example_zh": "请翻到第十页。",
   "example_pinyin": "qǐng fān dào dì shí yè 。",
-  "example_mn": "Аравдугаар хуудас руу эргүүлээрэй."
+  "example_mn": "Аравдугаар хуудсыг нээгээрэй.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "不见",
@@ -15065,7 +15365,8 @@
   "meaning_mn": "цэвэрхэн",
   "example_zh": "房间很干净。",
   "example_pinyin": "fáng jiān hěn gàn jìng 。",
-  "example_mn": "Өрөө цэвэрхэн."
+  "example_mn": "Өрөө цэвэрхэн байна.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "放心",
@@ -15082,10 +15383,11 @@
    3
   ],
   "meaning_en": "to feel relieved; to feel reassured; to be at ease",
-  "meaning_mn": "санаа амрах",
+  "meaning_mn": "санаа амрах, санаа зоволтгүй байх",
   "example_zh": "你放心吧。",
   "example_pinyin": "nǐ fàng xīn ba 。",
-  "example_mn": "Санаа амар байгаарай."
+  "example_mn": "Чи санаа зоволтгүй.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "草",
@@ -15104,7 +15406,8 @@
   "meaning_mn": "өвс",
   "example_zh": "草地上有很多花。",
   "example_pinyin": "cǎo dì shàng yǒu hěn duō huā 。",
-  "example_mn": "Зүлгэн дээр олон цэцэг бий."
+  "example_mn": "Зүлгэн дээр цэцэг их байна.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "甜",
@@ -15123,7 +15426,8 @@
   "meaning_mn": "чихэрлэг, амтлаг",
   "example_zh": "这个西瓜很甜。",
   "example_pinyin": "zhè gè xī guā hěn tián 。",
-  "example_mn": "Энэ тарвас амтлаг."
+  "example_mn": "Энэ тарвас их чихэрлэг.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "安静",
@@ -15139,10 +15443,11 @@
    3
   ],
   "meaning_en": "quiet; peaceful; calm",
-  "meaning_mn": "нам гүм, тайван",
+  "meaning_mn": "чимээгүй, нам гүм, тайван",
   "example_zh": "请安静！",
   "example_pinyin": "qǐng ān jìng ！",
-  "example_mn": "Нам гүм байгаарай!"
+  "example_mn": "Чимээгүй байгаарай!",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "牙",
@@ -15159,7 +15464,8 @@
   "meaning_mn": "шүд",
   "example_zh": "我的牙很疼。",
   "example_pinyin": "wǒ de yá hěn téng 。",
-  "example_mn": "Шүд минь өвдөж байна."
+  "example_mn": "Шүд минь их өвдөж байна.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "羊",
@@ -15176,7 +15482,8 @@
   "meaning_mn": "хонь",
   "example_zh": "草地上有很多羊。",
   "example_pinyin": "cǎo dì shàng yǒu hěn duō yáng 。",
-  "example_mn": "Бэлчээрт олон хонь бий."
+  "example_mn": "Бэлчээрт хонь их байна.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "作业",
@@ -15197,7 +15504,8 @@
   "meaning_mn": "даалгавар (гэрийн)",
   "example_zh": "我做完了作业。",
   "example_pinyin": "wǒ zuò wán le zuò yè 。",
-  "example_mn": "Би даалгавраа дуусгалаа."
+  "example_mn": "Би даалгавраа хийж дууслаа.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "瘦",
@@ -15216,7 +15524,8 @@
   "meaning_mn": "туранхай",
   "example_zh": "她很瘦。",
   "example_pinyin": "tā hěn shòu 。",
-  "example_mn": "Тэр туранхай."
+  "example_mn": "Тэр их туранхай.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "啤酒",
@@ -15235,7 +15544,8 @@
   "meaning_mn": "шар айраг",
   "example_zh": "他喝了一瓶啤酒。",
   "example_pinyin": "tā hē le yī píng pí jiǔ 。",
-  "example_mn": "Тэр нэг шил шар айраг уув."
+  "example_mn": "Тэр нэг шил шар айраг уусан.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "蛋糕",
@@ -15273,7 +15583,8 @@
   "meaning_mn": "шинэхэн",
   "example_zh": "这些水果很新鲜。",
   "example_pinyin": "zhè xiē shuǐ guǒ hěn xīn xiān 。",
-  "example_mn": "Эдгээр жимс шинэхэн."
+  "example_mn": "Энэ жимс их шинэхэн байна.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "难过",
@@ -15289,10 +15600,11 @@
    3
   ],
   "meaning_en": "to feel sad; to feel unwell; (of life) to be difficult",
-  "meaning_mn": "гунигтай, харамсалтай",
+  "meaning_mn": "гунигтай, сэтгэл зовох",
   "example_zh": "听到这个消息我很难过。",
   "example_pinyin": "tīng dào zhè gè xiāo xī wǒ hěn nán guò 。",
-  "example_mn": "Энэ мэдээг сонсоод би гунихтай байна."
+  "example_mn": "Энэ мэдээг сонсоод дотор минь их муухай байна.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "不久",
@@ -15311,7 +15623,8 @@
   "meaning_mn": "удалгүй",
   "example_zh": "他不久就会回来。",
   "example_pinyin": "tā bù jiǔ jiù huì huí lái 。",
-  "example_mn": "Тэр удалгүй буцаж ирнэ."
+  "example_mn": "Тэр удахгүй буцаад ирнэ.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "客人",
@@ -15363,10 +15676,11 @@
    4
   ],
   "meaning_en": "ordinarily; in normal times; in peacetime",
-  "meaning_mn": "ердийн үед",
+  "meaning_mn": "ердийн үед, ер нь",
   "example_zh": "我平时很忙。",
   "example_pinyin": "wǒ píng shí hěn máng 。",
-  "example_mn": "Би ердийн үедээ их завгүй."
+  "example_mn": "Би ер нь их завгүй.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "男生",
@@ -15380,10 +15694,11 @@
   "hsk_level": "3",
   "hsk_old": [],
   "meaning_en": "schoolboy; male student; boy",
-  "meaning_mn": "эрэгтэй сурагч",
+  "meaning_mn": "хүү (сурагч, оюутан)",
   "example_zh": "男生在踢足球。",
   "example_pinyin": "nán shēng zài tī zú qiú 。",
-  "example_mn": "Эрэгтэй сурагчид хөл бөмбөг тоглож байна."
+  "example_mn": "Хөвгүүд хөл бөмбөг тоглож байна.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "碗",
@@ -15420,7 +15735,8 @@
   "meaning_mn": "ойлгох, мэдэх",
   "example_zh": "他懂得很多道理。",
   "example_pinyin": "tā dǒng dé hěn duō dào lǐ 。",
-  "example_mn": "Тэр олон зүйлийг ойлгодог."
+  "example_mn": "Тэр олон юм мэддэг.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "好久",
@@ -15437,7 +15753,8 @@
   "meaning_mn": "удаан хугацаа",
   "example_zh": "我们好久没见了。",
   "example_pinyin": "wǒ men hǎo jiǔ méi jiàn le 。",
-  "example_mn": "Бид удаан уулзаагүй."
+  "example_mn": "Бид уулзаагүй удлаа.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "夏天",
@@ -15490,7 +15807,8 @@
   "meaning_mn": "математик",
   "example_zh": "我数学不太好。",
   "example_pinyin": "wǒ shù xué bù tài hǎo 。",
-  "example_mn": "Би математикт төдийлөн сайн биш."
+  "example_mn": "Би математикт тааруу.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "刷",
@@ -15507,10 +15825,11 @@
    3
   ],
   "meaning_en": "to brush; to paint; to daub",
-  "meaning_mn": "угаах, шүүрдэх",
+  "meaning_mn": "угаах (шүд); сойзоор арчих",
   "example_zh": "我每天刷牙。",
   "example_pinyin": "wǒ měi tiān shuā yá 。",
-  "example_mn": "Би өдөр бүр шүдээ угаадаг."
+  "example_mn": "Би өдөр бүр шүдээ угаадаг.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "练习",
@@ -15564,7 +15883,8 @@
   "meaning_mn": "тамирчин",
   "example_zh": "他是一名运动员。",
   "example_pinyin": "tā shì yī míng yùn dòng yuán 。",
-  "example_mn": "Тэр бол тамирчин."
+  "example_mn": "Тэр тамирчин.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "姐妹",
@@ -15581,7 +15901,8 @@
   "meaning_mn": "эгч дүүс",
   "example_zh": "她们是姐妹。",
   "example_pinyin": "tā men shì jiě mèi 。",
-  "example_mn": "Тэд эгч дүүс."
+  "example_mn": "Тэд эгч дүү хоёр.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "南方",
@@ -15596,10 +15917,11 @@
   "hsk_level": "3",
   "hsk_old": [],
   "meaning_en": "south; the southern part of the country; the South",
-  "meaning_mn": "өмнөд",
+  "meaning_mn": "урд нутаг, өмнөд",
   "example_zh": "南方天气很热。",
   "example_pinyin": "nán fāng tiān qì hěn rè 。",
-  "example_mn": "Өмнөд нутгийн цаг агаар халуун."
+  "example_mn": "Урд нутагт халуун.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "尝",
@@ -15618,7 +15940,8 @@
   "meaning_mn": "амтлах",
   "example_zh": "你尝一下这个菜。",
   "example_pinyin": "nǐ cháng yī xià zhè gè cài 。",
-  "example_mn": "Энэ хоолыг амталж үз."
+  "example_mn": "Энэ хоолыг амталж үзээч.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "对话",
@@ -15635,10 +15958,11 @@
    4
   ],
   "meaning_en": "to talk (with sb); dialogue; conversation",
-  "meaning_mn": "яриа; ярилцах",
+  "meaning_mn": "харилцан яриа; ярилцах",
   "example_zh": "这是一段对话。",
   "example_pinyin": "zhè shì yī duàn duì huà 。",
-  "example_mn": "Энэ бол нэг яриа."
+  "example_mn": "Энэ нэг харилцан яриа.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "冬天",
@@ -15674,7 +15998,8 @@
   "meaning_mn": "хөрш",
   "example_zh": "我的邻居很友好。",
   "example_pinyin": "wǒ de lín jū hěn yǒu hǎo 。",
-  "example_mn": "Манай хөрш найрсаг."
+  "example_mn": "Манай хөрш их найрсаг.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "分开",
@@ -15711,7 +16036,8 @@
   "meaning_mn": "сургуулийн захирал",
   "example_zh": "校长在开会。",
   "example_pinyin": "xiào zhǎng zài kāi huì 。",
-  "example_mn": "Захирал хуралдаж байна."
+  "example_mn": "Захирал хурал дээр байгаа.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "自行车",
@@ -15766,7 +16092,8 @@
   "meaning_mn": "цэцэрлэг (цэцгийн)",
   "example_zh": "他家有一个花园。",
   "example_pinyin": "tā jiā yǒu yī gè huā yuán 。",
-  "example_mn": "Тэдний гэрт цэцэрлэгтэй."
+  "example_mn": "Тэднийд цэцэрлэг бий.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "遇见",
@@ -15783,7 +16110,8 @@
   "meaning_mn": "тааралдах",
   "example_zh": "我在路上遇见了她。",
   "example_pinyin": "wǒ zài lù shàng yù jiàn le tā 。",
-  "example_mn": "Би замд түүнтэй тааралдсан."
+  "example_mn": "Би замд түүнтэй таарсан.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "夫妻",
@@ -15800,7 +16128,8 @@
   "meaning_mn": "эхнэр нөхөр",
   "example_zh": "他们是一对夫妻。",
   "example_pinyin": "tā men shì yī duì fū qī 。",
-  "example_mn": "Тэд бол эхнэр нөхөр хоёр."
+  "example_mn": "Тэд эхнэр нөхөр хоёр.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "耳朵",
@@ -15876,7 +16205,8 @@
   "meaning_mn": "авга ах (аавын дүү)",
   "example_zh": "这是我叔叔。",
   "example_pinyin": "zhè shì wǒ shū shū 。",
-  "example_mn": "Энэ бол миний авга ах."
+  "example_mn": "Энэ манай авга ах.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "洗澡",
@@ -15929,10 +16259,11 @@
   "hsk_level": "3",
   "hsk_old": [],
   "meaning_en": "evening party",
-  "meaning_mn": "үдшийн цэнгүүн",
+  "meaning_mn": "үдэшлэг",
   "example_zh": "今晚有一个晚会。",
   "example_pinyin": "jīn wǎn yǒu yī gè wǎn huì 。",
-  "example_mn": "Өнөө орой нэг цэнгүүн бий."
+  "example_mn": "Өнөө орой нэг үдэшлэг болно.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "感冒",
@@ -16007,7 +16338,8 @@
   "meaning_mn": "оноо авах",
   "example_zh": "他得了三分。",
   "example_pinyin": "tā dé le sān fēn 。",
-  "example_mn": "Тэр гурван оноо авав."
+  "example_mn": "Тэр гурван оноо авлаа.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "刻",
@@ -16024,10 +16356,11 @@
    3
   ],
   "meaning_en": "quarter (hour); moment; to carve",
-  "meaning_mn": "улирах; (15 минут); сийлэх",
+  "meaning_mn": "15 минут (цагийн дөрөвний нэг); сийлэх",
   "example_zh": "现在三点一刻。",
   "example_pinyin": "xiàn zài sān diǎn yī kè 。",
-  "example_mn": "Одоо гурван цаг арван таван минут."
+  "example_mn": "Одоо гурав цаг арван тав.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "锻炼",
@@ -16047,7 +16380,8 @@
   "meaning_mn": "дасгал хийх, чийрэгжүүлэх",
   "example_zh": "锻炼对身体好。",
   "example_pinyin": "duàn liàn duì shēn tǐ hǎo 。",
-  "example_mn": "Дасгал хийх биед сайн."
+  "example_mn": "Дасгал хөдөлгөөн хийх биед сайн.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "拍照",
@@ -16120,7 +16454,8 @@
   "meaning_mn": "алдартай хүн",
   "example_zh": "他是一位名人。",
   "example_pinyin": "tā shì yī wèi míng rén 。",
-  "example_mn": "Тэр бол алдартай хүн."
+  "example_mn": "Тэр алдартай хүн.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "电梯",
@@ -16139,7 +16474,8 @@
   "meaning_mn": "цахилгаан шат",
   "example_zh": "电梯坏了。",
   "example_pinyin": "diàn tī huài le 。",
-  "example_mn": "Цахилгаан шат эвдэрчээ."
+  "example_mn": "Цахилгаан шат эвдэрчихсэн байна.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "刮",
@@ -16155,10 +16491,11 @@
    3
   ],
   "meaning_en": "to scrape; to blow; to shave",
-  "meaning_mn": "үлээх (салхи); хусах",
+  "meaning_mn": "салхилах; хусах",
   "example_zh": "今天刮大风。",
   "example_pinyin": "jīn tiān guā dà fēng 。",
-  "example_mn": "Өнөөдөр их салхи салхилж байна."
+  "example_mn": "Өнөөдөр салхи их байна.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "笔记本",
@@ -16197,7 +16534,8 @@
   "meaning_mn": "намхан",
   "example_zh": "他个子很矮。",
   "example_pinyin": "tā gè zi hěn ǎi 。",
-  "example_mn": "Тэр намхан нуруутай."
+  "example_mn": "Тэр намхан.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "信用卡",
@@ -16233,7 +16571,8 @@
   "meaning_mn": "шуудан, имэйл",
   "example_zh": "我给他发了邮件。",
   "example_pinyin": "wǒ gěi tā fā le yóu jiàn 。",
-  "example_mn": "Би түүнд имэйл илгээсэн."
+  "example_mn": "Би түүн рүү имэйл явуулсан.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "不但",
@@ -16249,10 +16588,11 @@
    4
   ],
   "meaning_en": "not only (... but also ...)",
-  "meaning_mn": "зөвхөн ... төдийгүй",
+  "meaning_mn": "... төдийгүй, зөвхөн ... биш",
   "example_zh": "他不但聪明，而且努力。",
   "example_pinyin": "tā bù dàn cōng míng ， ér qiě nǔ lì 。",
-  "example_mn": "Тэр зөвхөн ухаантай төдийгүй хичээнгүй."
+  "example_mn": "Тэр ухаантай төдийгүй хичээнгүй.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "冰箱",
@@ -16271,7 +16611,8 @@
   "meaning_mn": "хөргөгч",
   "example_zh": "冰箱里有牛奶。",
   "example_pinyin": "bīng xiāng lǐ yǒu niú nǎi 。",
-  "example_mn": "Хөргөгчинд сүү бий."
+  "example_mn": "Хөргөгчинд сүү байгаа.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "黄色",
@@ -16325,7 +16666,8 @@
   "meaning_mn": "өрөө",
   "example_zh": "屋子里很暖和。",
   "example_pinyin": "wū zi lǐ hěn nuǎn hé 。",
-  "example_mn": "Өрөөнд дулаахан."
+  "example_mn": "Өрөөнд дулаахан байна.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "校园",
@@ -16339,10 +16681,11 @@
   "hsk_level": "3",
   "hsk_old": [],
   "meaning_en": "campus",
-  "meaning_mn": "сургуулийн талбай",
+  "meaning_mn": "сургуулийн хашаа, кампус",
   "example_zh": "校园很大。",
   "example_pinyin": "xiào yuán hěn dà 。",
-  "example_mn": "Сургуулийн талбай том."
+  "example_mn": "Сургуулийн хашаа том.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "阿姨",
@@ -16358,10 +16701,11 @@
    3
   ],
   "meaning_en": "maternal aunt; step-mother; childcare worker",
-  "meaning_mn": "нагац эгч; туслах эгч",
+  "meaning_mn": "нагац эгч; эгч (насаар ах эмэгтэйд хандах); асрагч",
   "example_zh": "阿姨来照顾孩子。",
   "example_pinyin": "ā yí lái zhào gù hái zi 。",
-  "example_mn": "Туслах эгч хүүхэд асрахаар ирлээ."
+  "example_mn": "Асрагч эгч хүүхэд харахаар ирлээ.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "爱人",
@@ -16378,7 +16722,8 @@
   "meaning_mn": "эхнэр/нөхөр",
   "example_zh": "这是我爱人。",
   "example_pinyin": "zhè shì wǒ ài rén 。",
-  "example_mn": "Энэ бол миний хань."
+  "example_mn": "Энэ миний хань.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "西方",
@@ -16393,10 +16738,11 @@
   "hsk_level": "3",
   "hsk_old": [],
   "meaning_en": "the West; the Occident; Western countries",
-  "meaning_mn": "барууны (орнууд)",
+  "meaning_mn": "баруун; барууны орнууд",
   "example_zh": "他来自西方国家。",
   "example_pinyin": "tā lái zì xī fāng guó jiā 。",
-  "example_mn": "Тэр барууны орноос ирсэн."
+  "example_mn": "Тэр барууны орноос ирсэн.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "开会",
@@ -16447,7 +16793,8 @@
   "meaning_mn": "талбай (тоглоомын)",
   "example_zh": "球场上有很多人。",
   "example_pinyin": "qiú chǎng shàng yǒu hěn duō rén 。",
-  "example_mn": "Талбайд олон хүн байна."
+  "example_mn": "Талбай дээр хүн их байна.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "着急",
@@ -16467,7 +16814,8 @@
   "meaning_mn": "яарах, сандрах",
   "example_zh": "别着急，慢慢说。",
   "example_pinyin": "bié zhe jí ， màn màn shuō 。",
-  "example_mn": "Бүү сандар, аажуухан хэл."
+  "example_mn": "Битгий сандар, аажуухан хэл.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "住院",
@@ -16485,7 +16833,8 @@
   "meaning_mn": "эмнэлэгт хэвтэх",
   "example_zh": "他住院了。",
   "example_pinyin": "tā zhù yuàn le 。",
-  "example_mn": "Тэр эмнэлэгт хэвтлээ."
+  "example_mn": "Тэр эмнэлэгт хэвтчихлээ.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "假期",
@@ -16519,7 +16868,8 @@
   "meaning_mn": "жуулчин",
   "example_zh": "这里有很多游客。",
   "example_pinyin": "zhè lǐ yǒu hěn duō yóu kè 。",
-  "example_mn": "Энд олон жуулчин бий."
+  "example_mn": "Энд жуулчин их байна.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "扫",
@@ -16653,7 +17003,8 @@
   "meaning_mn": "сар (тэнгэрийн)",
   "example_zh": "今晚的月亮很圆。",
   "example_pinyin": "jīn wǎn de yuè liàng hěn yuán 。",
-  "example_mn": "Өнөө орой сар дугуй."
+  "example_mn": "Өнөө орой сар дүүрэн байна.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "公斤",
@@ -16690,7 +17041,8 @@
   "meaning_mn": "хэрэгтэй",
   "example_zh": "这本书很有用。",
   "example_pinyin": "zhè běn shū hěn yǒu yòng 。",
-  "example_mn": "Энэ ном хэрэгтэй."
+  "example_mn": "Энэ ном их хэрэгтэй.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "园",
@@ -16707,7 +17059,8 @@
   "meaning_mn": "цэцэрлэг, хүрээлэн",
   "example_zh": "我们去动物园。",
   "example_pinyin": "wǒ men qù dòng wù yuán 。",
-  "example_mn": "Бид амьтны хүрээлэн рүү явъя."
+  "example_mn": "Бид амьтны хүрээлэн явъя.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "北方",
@@ -16727,7 +17080,8 @@
   "meaning_mn": "хойд (нутаг)",
   "example_zh": "北方冬天很冷。",
   "example_pinyin": "běi fāng dōng tiān hěn lěng 。",
-  "example_mn": "Хойд нутгийн өвөл хүйтэн."
+  "example_mn": "Хойд нутагт өвөл хүйтэн.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "行李",
@@ -16744,7 +17098,8 @@
   "meaning_mn": "ачаа тээш",
   "example_zh": "我的行李很重。",
   "example_pinyin": "wǒ de xíng lǐ hěn zhòng 。",
-  "example_mn": "Миний ачаа хүнд."
+  "example_mn": "Миний ачаа их хүнд.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "衬衫",
@@ -16763,7 +17118,8 @@
   "meaning_mn": "цамц",
   "example_zh": "他穿着白衬衫。",
   "example_pinyin": "tā chuān zhe bái chèn shān 。",
-  "example_mn": "Тэр цагаан цамц өмссөн."
+  "example_mn": "Тэр цагаан цамц өмссөн байна.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "宾馆",
@@ -16799,7 +17155,8 @@
   "meaning_mn": "зам, гудамж",
   "example_zh": "过马路要小心。",
   "example_pinyin": "guò mǎ lù yào xiǎo xīn 。",
-  "example_mn": "Зам гарахдаа болгоомжтой."
+  "example_mn": "Зам гарахдаа болгоомжтой байгаарай.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "东方",
@@ -16814,10 +17171,11 @@
   "hsk_level": "3",
   "hsk_old": [],
   "meaning_en": "the East; the Orient; two-character surname Dongfang",
-  "meaning_mn": "дорно (зүгийн)",
+  "meaning_mn": "зүүн зүг, дорно; Дорнод",
   "example_zh": "太阳从东方升起。",
   "example_pinyin": "tài yáng cóng dōng fāng shēng qǐ 。",
-  "example_mn": "Нар дорно зүгээс мандана."
+  "example_mn": "Нар зүүнээс мандана.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "常见",
@@ -16835,7 +17193,8 @@
   "meaning_mn": "түгээмэл, элбэг тохиолддог",
   "example_zh": "这是一个常见的问题。",
   "example_pinyin": "zhè shì yī gè cháng jiàn de wèn tí 。",
-  "example_mn": "Энэ бол түгээмэл асуудал."
+  "example_mn": "Энэ түгээмэл асуудал.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "楼梯",
@@ -16852,7 +17211,8 @@
   "meaning_mn": "шат (барилгын)",
   "example_zh": "他从楼梯上下来。",
   "example_pinyin": "tā cóng lóu tī shàng xià lái 。",
-  "example_mn": "Тэр шатаар буув."
+  "example_mn": "Тэр шатаар бууж ирлээ.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "身高",
@@ -16869,7 +17229,8 @@
   "meaning_mn": "биеийн өндөр",
   "example_zh": "他的身高一米八。",
   "example_pinyin": "tā de shēn gāo yī mǐ bā 。",
-  "example_mn": "Түүний өндөр нэг метр наян."
+  "example_mn": "Тэр нэг наян өндөр.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "起飞",
@@ -16927,7 +17288,8 @@
   "meaning_mn": "даашинз, банзал",
   "example_zh": "这条裙子很漂亮。",
   "example_pinyin": "zhè tiáo qún zi hěn piāo liàng 。",
-  "example_mn": "Энэ даашинз гоё."
+  "example_mn": "Энэ даашинз их гоё.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "香蕉",
@@ -16984,7 +17346,8 @@
   "meaning_mn": "халуурах",
   "example_zh": "孩子发烧了。",
   "example_pinyin": "hái zi fā shāo le 。",
-  "example_mn": "Хүүхэд халуурлаа."
+  "example_mn": "Хүүхэд халуурчихлаа.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "箱子",
@@ -17001,7 +17364,8 @@
   "meaning_mn": "авдар, чемодан",
   "example_zh": "这个箱子很重。",
   "example_pinyin": "zhè gè xiāng zi hěn zhòng 。",
-  "example_mn": "Энэ чемодан хүнд."
+  "example_mn": "Энэ чемодан их хүнд.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "学期",
@@ -17054,7 +17418,8 @@
   "meaning_mn": "хүндрэлтэй асуудал",
   "example_zh": "这是一个难题。",
   "example_pinyin": "zhè shì yī gè nán tí 。",
-  "example_mn": "Энэ бол хэцүү асуудал."
+  "example_mn": "Энэ хэцүү асуудал.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "伞",
@@ -17073,7 +17438,8 @@
   "meaning_mn": "шүхэр",
   "example_zh": "下雨了，带把伞吧。",
   "example_pinyin": "xià yǔ le ， dài bǎ sǎn ba 。",
-  "example_mn": "Бороо орлоо, шүхэр аваарай."
+  "example_mn": "Бороо орж байна, шүхэр аваарай.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "放假",
@@ -17107,7 +17473,8 @@
   "meaning_mn": "уулзвар",
   "example_zh": "在路口向左转。",
   "example_pinyin": "zài lù kǒu xiàng zuǒ zhuǎn 。",
-  "example_mn": "Уулзвар дээр зүүн тийш эргэ."
+  "example_mn": "Уулзвар дээр зүүн тийш эргээрэй.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "有名",
@@ -17126,7 +17493,8 @@
   "meaning_mn": "алдартай",
   "example_zh": "他是一位有名的画家。",
   "example_pinyin": "tā shì yī wèi yǒu míng de huà jiā 。",
-  "example_mn": "Тэр бол алдартай зураач."
+  "example_mn": "Тэр алдартай зураач.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "打扫",
@@ -17162,7 +17530,8 @@
   "meaning_mn": "зүүн хойд",
   "example_zh": "他来自东北。",
   "example_pinyin": "tā lái zì dōng běi 。",
-  "example_mn": "Тэр зүүн хойноос ирсэн."
+  "example_mn": "Тэр зүүн хойд нутгаас ирсэн.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "瓶子",
@@ -17181,7 +17550,8 @@
   "meaning_mn": "шил, лонх",
   "example_zh": "桌子上有一个瓶子。",
   "example_pinyin": "zhuō zi shàng yǒu yī gè píng zi 。",
-  "example_mn": "Ширээн дээр нэг шил байна."
+  "example_mn": "Ширээн дээр нэг лонх байна.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "复习",
@@ -17235,7 +17605,8 @@
   "meaning_mn": "намар",
   "example_zh": "秋天天气很好。",
   "example_pinyin": "qiū tiān tiān qì hěn hǎo 。",
-  "example_mn": "Намар цаг агаар сайхан."
+  "example_mn": "Намар цаг агаар сайхан байдаг.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "护照",
@@ -17254,7 +17625,8 @@
   "meaning_mn": "гадаад паспорт",
   "example_zh": "别忘了带护照。",
   "example_pinyin": "bié wàng le dài hù zhào 。",
-  "example_mn": "Паспортоо авахаа бүү март."
+  "example_mn": "Паспортоо авахаа битгий мартаарай.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "耳机",
@@ -17305,7 +17677,8 @@
   "meaning_mn": "хичээл тарах",
   "example_zh": "放学后我们去玩。",
   "example_pinyin": "fàng xué hòu wǒ men qù wán 。",
-  "example_mn": "Хичээл тарсны дараа бид тоглоё."
+  "example_mn": "Хичээл тарсны дараа тоглоцгооё.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "画家",
@@ -17322,7 +17695,8 @@
   "meaning_mn": "зураач",
   "example_zh": "他是一位有名的画家。",
   "example_pinyin": "tā shì yī wèi yǒu míng de huà jiā 。",
-  "example_mn": "Тэр бол алдартай зураач."
+  "example_mn": "Тэр алдартай зураач.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "西南",
@@ -17341,7 +17715,8 @@
   "meaning_mn": "баруун урд",
   "example_zh": "他住在西南方。",
   "example_pinyin": "tā zhù zài xī nán fāng 。",
-  "example_mn": "Тэр баруун урд зүгт амьдардаг."
+  "example_mn": "Тэр баруун урд талд амьдардаг.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "西北",
@@ -17360,7 +17735,8 @@
   "meaning_mn": "баруун хойд",
   "example_zh": "西北地区很干燥。",
   "example_pinyin": "xī běi dì qū hěn gàn zào 。",
-  "example_mn": "Баруун хойд бүс хуурай."
+  "example_mn": "Баруун хойд нутаг хуурай уур амьсгалтай.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "卫生间",
@@ -17379,7 +17755,8 @@
   "meaning_mn": "ариун цэврийн өрөө",
   "example_zh": "卫生间在哪儿？",
   "example_pinyin": "wèi shēng jiān zài nǎ ér ？",
-  "example_mn": "Ариун цэврийн өрөө хаана байна вэ?"
+  "example_mn": "Ариун цэврийн өрөө хаана байна?",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "出院",
@@ -17449,7 +17826,8 @@
   "meaning_mn": "дээд хувцас, цамц",
   "example_zh": "这件上衣很好看。",
   "example_pinyin": "zhè jiàn shàng yī hěn hǎo kàn 。",
-  "example_mn": "Энэ цамц гоё."
+  "example_mn": "Энэ цамц их гоё.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "菜单",
@@ -17536,10 +17914,11 @@
   "hsk_level": "3",
   "hsk_old": [],
   "meaning_en": "parts of the country other than where one is",
-  "meaning_mn": "өөр газар, хөдөө орон нутаг",
+  "meaning_mn": "өөр газар, орон нутаг",
   "example_zh": "他从外地来。",
   "example_pinyin": "tā cóng wài dì lái 。",
-  "example_mn": "Тэр өөр газраас ирсэн."
+  "example_mn": "Тэр орон нутгаас ирсэн.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "休假",
@@ -17558,7 +17937,8 @@
   "meaning_mn": "амралт авах",
   "example_zh": "他下周休假。",
   "example_pinyin": "tā xià zhōu xiū jiǎ 。",
-  "example_mn": "Тэр дараа долоо хоногт амарна."
+  "example_mn": "Тэр дараа долоо хоногт амралтаа авна.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "前天",
@@ -17645,7 +18025,8 @@
   "meaning_mn": "хоцрох (тээвэр)",
   "example_zh": "火车晚点了。",
   "example_pinyin": "huǒ chē wǎn diǎn le 。",
-  "example_mn": "Галт тэрэг хоцорлоо."
+  "example_mn": "Галт тэрэг хоцорчихлоо.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "照相",
@@ -17680,7 +18061,8 @@
   "meaning_mn": "амьтны хүрээлэн",
   "example_zh": "我们带孩子去动物园。",
   "example_pinyin": "wǒ men dài hái zi qù dòng wù yuán 。",
-  "example_mn": "Бид хүүхдээ амьтны хүрээлэн рүү аваачлаа."
+  "example_mn": "Бид хүүхдээ дагуулаад амьтны хүрээлэн явлаа.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "盘子",
@@ -17754,7 +18136,8 @@
   "meaning_mn": "харандаа",
   "example_zh": "请借我一支铅笔。",
   "example_pinyin": "qǐng jiè wǒ yī zhī qiān bǐ 。",
-  "example_mn": "Надад нэг харандаа зээлдүүлээч."
+  "example_mn": "Надад харандаа нэг зээлээч.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "认得",
@@ -17860,7 +18243,8 @@
   "meaning_mn": "түгээмэл хэрэглэгддэг",
   "example_zh": "这是一个常用词。",
   "example_pinyin": "zhè shì yī gè cháng yòng cí 。",
-  "example_mn": "Энэ бол түгээмэл үг."
+  "example_mn": "Энэ түгээмэл хэрэглэдэг үг.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "请客",
@@ -17879,7 +18263,8 @@
   "meaning_mn": "зочлох, дайлах",
   "example_zh": "今天我请客。",
   "example_pinyin": "jīn tiān wǒ qǐng kè 。",
-  "example_mn": "Өнөөдөр би дайлъя."
+  "example_mn": "Өнөөдөр би дайлна.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "请假",
@@ -17917,7 +18302,8 @@
   "meaning_mn": "угаалгын машин",
   "example_zh": "洗衣机坏了。",
   "example_pinyin": "xǐ yī jī huài le 。",
-  "example_mn": "Угаалгын машин эвдэрчээ."
+  "example_mn": "Угаалгын машин эвдэрчихсэн.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "句子",
@@ -17953,7 +18339,8 @@
   "meaning_mn": "анги (хамт олон)",
   "example_zh": "我们班级有三十个人。",
   "example_pinyin": "wǒ men bān jí yǒu sān shí gè rén 。",
-  "example_mn": "Манай ангид гучин хүн бий."
+  "example_mn": "Манай анги гучин хүнтэй.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "筷子",
@@ -18008,7 +18395,8 @@
   "meaning_mn": "муухай, муу харагдах",
   "example_zh": "这件衣服很难看。",
   "example_pinyin": "zhè jiàn yī fú hěn nán kàn 。",
-  "example_mn": "Энэ хувцас муухай."
+  "example_mn": "Энэ хувцас муухай байна.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "外语",
@@ -18025,7 +18413,8 @@
   "meaning_mn": "гадаад хэл",
   "example_zh": "学外语很有用。",
   "example_pinyin": "xué wài yǔ hěn yǒu yòng 。",
-  "example_mn": "Гадаад хэл сурах хэрэгтэй."
+  "example_mn": "Гадаад хэл сурах их хэрэгтэй.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "一块儿",
@@ -18060,7 +18449,8 @@
   "meaning_mn": "сонирхох",
   "example_zh": "我对历史感兴趣。",
   "example_pinyin": "wǒ duì lì shǐ gǎn xīng qù 。",
-  "example_mn": "Би түүхэнд сонирхолтой."
+  "example_mn": "Би түүх сонирхдог.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "运动会",
@@ -18077,7 +18467,8 @@
   "meaning_mn": "спортын наадам",
   "example_zh": "学校举行运动会。",
   "example_pinyin": "xué xiào jǔ xíng yùn dòng huì 。",
-  "example_mn": "Сургууль спортын наадам зохион байгуулав."
+  "example_mn": "Сургууль спортын наадам зохион байгуулж байна.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "开花",
@@ -18198,7 +18589,8 @@
   "meaning_mn": "зочлох (айлд)",
   "example_zh": "周末我去朋友家做客。",
   "example_pinyin": "zhōu mò wǒ qù péng yǒu jiā zuò kè 。",
-  "example_mn": "Амралтаар би найзынд зочлоход очно."
+  "example_mn": "Амралтын өдөр би найзындаа зочилно.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "字典",
@@ -18217,7 +18609,8 @@
   "meaning_mn": "үсгийн толь",
   "example_zh": "我查了字典。",
   "example_pinyin": "wǒ chá le zì diǎn 。",
-  "example_mn": "Би толь бичгээс хайв."
+  "example_mn": "Би толь бичгээс хайлаа.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "工作日",
@@ -18234,7 +18627,8 @@
   "meaning_mn": "ажлын өдөр",
   "example_zh": "工作日我很忙。",
   "example_pinyin": "gōng zuò rì wǒ hěn máng 。",
-  "example_mn": "Ажлын өдрүүдэд би завгүй."
+  "example_mn": "Ажлын өдрүүдэд би их завгүй.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "黑板",
@@ -18304,10 +18698,11 @@
   "hsk_level": "3",
   "hsk_old": [],
   "meaning_en": "(of a restaurant) to provide a takeout or home delivery meal; takeout (business); takeout (meal)",
-  "meaning_mn": "хүргэлтийн хоол",
+  "meaning_mn": "хүргэлтийн хоол, захиалгын хоол",
   "example_zh": "今天我们点外卖吧。",
   "example_pinyin": "jīn tiān wǒ men diǎn wài mài ba 。",
-  "example_mn": "Өнөөдөр хүргэлтийн хоол захиалъя."
+  "example_mn": "Өнөөдөр хоол захиалъя.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "方便面",
@@ -18324,7 +18719,8 @@
   "meaning_mn": "бэлэн гоймон",
   "example_zh": "我经常吃方便面。",
   "example_pinyin": "wǒ jīng cháng chī fāng biàn miàn 。",
-  "example_mn": "Би байнга бэлэн гоймон иддэг."
+  "example_mn": "Би бэлэн гоймон их иддэг.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "羽毛球",
@@ -18340,10 +18736,11 @@
    4
   ],
   "meaning_en": "shuttlecock; badminton",
-  "meaning_mn": "өдөн бөмбөг (бадминтон)",
+  "meaning_mn": "бадминтон",
   "example_zh": "我们去打羽毛球。",
   "example_pinyin": "wǒ men qù dǎ yǔ máo qiú 。",
-  "example_mn": "Бид бадминтон тоглоё."
+  "example_mn": "Бид бадминтон тоглоё.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "难听",
@@ -18361,7 +18758,8 @@
   "meaning_mn": "чихэнд эвгүй",
   "example_zh": "这首歌很难听。",
   "example_pinyin": "zhè shǒu gē hěn nán tīng 。",
-  "example_mn": "Энэ дуу чихэнд эвгүй."
+  "example_mn": "Энэ дуу муухай сонсогдож байна.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "前年",
@@ -18416,7 +18814,8 @@
   "meaning_mn": "сэрүүхэн",
   "example_zh": "树下很凉快。",
   "example_pinyin": "shù xià hěn liáng kuài 。",
-  "example_mn": "Модны доор сэрүүхэн."
+  "example_mn": "Модны сүүдэрт сэрүүхэн.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "大熊猫",
@@ -18430,10 +18829,11 @@
   "hsk_level": "3",
   "hsk_old": [],
   "meaning_en": "giant panda (Ailuropoda melanoleuca)",
-  "meaning_mn": "том панда",
+  "meaning_mn": "панда",
   "example_zh": "大熊猫很可爱。",
   "example_pinyin": "dà xióng māo hěn kě ài 。",
-  "example_mn": "Том панда хөөрхөн."
+  "example_mn": "Панда их хөөрхөн.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "雨衣",
@@ -18450,7 +18850,8 @@
   "meaning_mn": "борооны цув",
   "example_zh": "下雨了，穿上雨衣。",
   "example_pinyin": "xià yǔ le ， chuān shàng yǔ yī 。",
-  "example_mn": "Бороо орлоо, борооны цуваа өмс."
+  "example_mn": "Бороо орж байна, цуваа өмс.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "留学生",
@@ -18467,7 +18868,8 @@
   "meaning_mn": "гадаад оюутан",
   "example_zh": "他是一名留学生。",
   "example_pinyin": "tā shì yī míng liú xué shēng 。",
-  "example_mn": "Тэр бол гадаад оюутан."
+  "example_mn": "Тэр гадаад оюутан.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "高铁",
@@ -18546,7 +18948,8 @@
   "meaning_mn": "банкны карт",
   "example_zh": "我的银行卡丢了。",
   "example_pinyin": "wǒ de yín xíng kǎ diū le 。",
-  "example_mn": "Миний банкны карт алга болсон."
+  "example_mn": "Миний банкны карт алга боллоо.",
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "冰激凌",
@@ -18620,9 +19023,9 @@
   "meaning_mn": "тасалбар шалгах",
   "example_zh": "上车前要先检票。",
   "example_pinyin": "shàng chē qián yào xiān jiǎn piào 。",
-  "example_mn": "Тэрэгт суухын өмнө тасалбар шалгуулна.",
+  "example_mn": "Тэрэгт суухын өмнө тасалбараа шалгуулна.",
   "added": "hsk30-2025",
-  "mn_status": "draft"
+  "mn_status": "natural-v1"
  },
  {
   "simplified": "而",
