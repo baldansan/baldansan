@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { GameCard } from "@/components/games/game-card";
 import { GameEmptyState } from "@/components/games/game-empty-state";
 import { GameHeader } from "@/components/games/game-header";
@@ -34,6 +34,26 @@ type Props = {
   levelMode?: LevelMode;
 };
 
+/** Нэг үед харуулах хос — хэт олон болохоос сэргийлнэ. */
+const ROUND_SIZE = 6;
+
+/**
+ * Бүх хосыг ROUND_SIZE-аар үед хуваана. Сүүлийн үлдэгдэл хэт бага (4-с бага,
+ * тоглоомын доод босго) бол өмнөх үедээ нэгтгэнэ — «1 үгтэй үе» гарахгүй.
+ */
+function chunkPairs(pairs: MatchPair[], size: number): MatchPair[][] {
+  if (pairs.length === 0) return [];
+  const rounds: MatchPair[][] = [];
+  for (let i = 0; i < pairs.length; i += size) {
+    rounds.push(pairs.slice(i, i + size));
+  }
+  if (rounds.length > 1 && rounds[rounds.length - 1].length < 4) {
+    const last = rounds.pop()!;
+    rounds[rounds.length - 1] = [...rounds[rounds.length - 1], ...last];
+  }
+  return rounds;
+}
+
 export function MatchGameClient({
   lessonId,
   courseId,
@@ -47,10 +67,28 @@ export function MatchGameClient({
   const locale = useUiLocale();
   const labels = labelsProp ?? resolveGameLabels(isKorean, isPrelesson);
   const gameContext = { isPrelesson };
-  const pairs = useMemo(
-    () => buildMatchGameItems(vocabulary, levelMode?.total ?? 6, gameContext),
+
+  // «Үе давах» горимд зөвхөн тухайн үеийн үгс (levelMode.total ширхэг).
+  // Хичээлийн дасгалд ЭНЭ хичээлийн БҮХ үгийг ROUND_SIZE-аар үе үе дамжина —
+  // өмнө нь үргэлж зөвхөн эхний 6 үгийг л ашигладаг байсан тул нэг товч
+  // үедээ дуусаад «дараагийн үе» гэж байдаггүй байсныг засав.
+  const allPairs = useMemo(
+    () =>
+      buildMatchGameItems(
+        vocabulary,
+        levelMode ? levelMode.total : vocabulary.length,
+        gameContext
+      ),
     [vocabulary, isPrelesson, levelMode?.total]
   );
+  const rounds = useMemo(
+    () => (levelMode ? [allPairs] : chunkPairs(allPairs, ROUND_SIZE)),
+    [allPairs, levelMode]
+  );
+
+  const [roundIndex, setRoundIndex] = useState(0);
+  const pairs = rounds[roundIndex] ?? [];
+
   const leftItems = useMemo(
     () => shuffleArray(pairs.map((p) => ({ id: p.id, label: p.mongolian }))),
     [pairs]
@@ -72,47 +110,66 @@ export function MatchGameClient({
   const [selectedRight, setSelectedRight] = useState<string | null>(null);
   const [wrongFlash, setWrongFlash] = useState<string | null>(null);
   const [score, setScore] = useState(0);
+  const [roundComplete, setRoundComplete] = useState(false);
   const [finished, setFinished] = useState(false);
-  /** Үеийн горимд буруу оролдлогын тоо (од тооцоход). */
+  /** Үеийн горимд болон нийт дасгалд буруу оролдлогын тоо (нарийвчлал/од тооцоход). */
   const wrongRef = useRef(0);
   const [levelCorrect, setLevelCorrect] = useState(0);
+  /** Тухайн үеийг аль хэдийн боловсруулсан эсэх — StrictMode давхар дуудахаас хамгаална. */
+  const handledRef = useRef(false);
 
   const total = pairs.length;
   const matchedCount = matched.size;
+  const isLastRound = roundIndex >= rounds.length - 1;
   const ttsLang = resolveTtsLang({ courseId });
+
+  useEffect(() => {
+    handledRef.current = false;
+  }, [roundIndex]);
+
+  // Тухайн үеийн бүх хос олдоход дуудагдана.
+  useEffect(() => {
+    if (handledRef.current) return;
+    if (total === 0 || matchedCount < total) return;
+    handledRef.current = true;
+
+    if (levelMode) {
+      const correct = Math.max(0, total - wrongRef.current);
+      setLevelCorrect(correct);
+      setScore(correct * 10);
+      setFinished(true);
+      levelMode.onFinished(correct, total);
+      return;
+    }
+
+    setScore((prev) => prev + total * 10);
+
+    if (isLastRound) {
+      const totalPairs = allPairs.length;
+      const accuracy =
+        totalPairs > 0
+          ? Math.round((totalPairs / (totalPairs + wrongRef.current)) * 100)
+          : 100;
+      saveGameResult({
+        gameType: "match",
+        lessonId,
+        score: (score + total * 10),
+        correct: totalPairs,
+        total: totalPairs,
+        accuracy,
+        playedAt: new Date().toISOString(),
+      });
+      setFinished(true);
+    } else {
+      setRoundComplete(true);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [matchedCount, total, levelMode, isLastRound]);
 
   const tryMatch = useCallback(
     (leftId: string, rightId: string) => {
       if (leftId === rightId) {
-        setMatched((prev) => {
-          const next = new Set(prev).add(leftId);
-          const newCount = next.size;
-          if (newCount >= total) {
-            const finalScore = newCount * 10;
-            if (levelMode) {
-              const correct = Math.max(0, total - wrongRef.current);
-              setLevelCorrect(correct);
-              setScore(correct * 10);
-              setFinished(true);
-              levelMode.onFinished(correct, total);
-              return next;
-            }
-            saveGameResult({
-              gameType: "match",
-              lessonId,
-              score: finalScore,
-              correct: newCount,
-              total,
-              accuracy: Math.round((newCount / total) * 100),
-              playedAt: new Date().toISOString(),
-            });
-            setScore(finalScore);
-            setFinished(true);
-          } else {
-            setScore(newCount * 10);
-          }
-          return next;
-        });
+        setMatched((prev) => new Set(prev).add(leftId));
       } else {
         wrongRef.current += 1;
         setWrongFlash(`${leftId}-${rightId}`);
@@ -121,11 +178,11 @@ export function MatchGameClient({
       setSelectedLeft(null);
       setSelectedRight(null);
     },
-    [lessonId, total, levelMode]
+    []
   );
 
   function handleLeft(id: string) {
-    if (matched.has(id) || finished) return;
+    if (matched.has(id) || finished || roundComplete) return;
     if (selectedRight) {
       tryMatch(id, selectedRight);
       return;
@@ -134,7 +191,7 @@ export function MatchGameClient({
   }
 
   function handleRight(id: string) {
-    if (matched.has(id) || finished) return;
+    if (matched.has(id) || finished || roundComplete) return;
     if (selectedLeft) {
       tryMatch(selectedLeft, id);
       return;
@@ -142,20 +199,33 @@ export function MatchGameClient({
     setSelectedRight(selectedRight === id ? null : id);
   }
 
+  function startNextRound() {
+    setMatched(new Set());
+    setSelectedLeft(null);
+    setSelectedRight(null);
+    setRoundComplete(false);
+    setRoundIndex((i) => i + 1);
+  }
+
   function restart() {
     setMatched(new Set());
     setSelectedLeft(null);
     setSelectedRight(null);
     setScore(0);
+    setRoundComplete(false);
     setFinished(false);
+    setRoundIndex(0);
     wrongRef.current = 0;
     setLevelCorrect(0);
   }
 
-  if (pairs.length < 4) {
+  if (allPairs.length < 4) {
     return (
       <GameShell>
-        <GameHeader title={labels.matchTitle} />
+        <GameHeader
+          title={labels.matchTitle}
+          backHref={levelMode ? undefined : `/lessons/${lessonId}`}
+        />
         <GameEmptyState
           lessonId={lessonId}
           message="Энэ хичээлд тоглоом үүсгэхэд хангалттай үг алга. Дор хаяж 4 үг шаардлагатай."
@@ -165,8 +235,15 @@ export function MatchGameClient({
   }
 
   const headerLevel = levelMode ? levelHeaderInfo(levelMode) : undefined;
-  const backHref = levelMode?.mapHref;
+  // Хичээлийн горимд × товч ЭНЭ хичээл рүү буцаана — өмнө нь үргэлж /games
+  // хэсэг рүү шууд гардаг байсныг засав.
+  const backHref = levelMode ? levelMode.mapHref : `/lessons/${lessonId}`;
   const shellClass = levelShellClass(levelMode);
+  const overallProgress = !levelMode
+    ? `${roundIndex * ROUND_SIZE + matchedCount}/${allPairs.length}${
+        rounds.length > 1 ? ` · ${tr(locale, "Үе")} ${roundIndex + 1}/${rounds.length}` : ""
+      }`
+    : undefined;
 
   if (finished && levelMode) {
     return (
@@ -191,18 +268,58 @@ export function MatchGameClient({
   }
 
   if (finished) {
+    const totalPairs = allPairs.length;
+    const accuracy =
+      totalPairs > 0
+        ? Math.round((totalPairs / (totalPairs + wrongRef.current)) * 100)
+        : 100;
     return (
       <GameShell>
-        <GameHeader title={labels.matchTitle} score={score} />
+        <GameHeader title={labels.matchTitle} backHref={backHref} score={score} />
         <GameResultCard
           score={score}
-          correct={total}
-          total={total}
-          accuracy={100}
+          correct={totalPairs}
+          total={totalPairs}
+          accuracy={accuracy}
           xpGained={score}
           lessonId={lessonId}
           onPlayAgain={restart}
         />
+      </GameShell>
+    );
+  }
+
+  if (roundComplete) {
+    const nextRound = rounds[roundIndex + 1] ?? [];
+    return (
+      <GameShell>
+        <GameHeader
+          title={labels.matchTitle}
+          backHref={backHref}
+          progress={overallProgress}
+          score={score}
+        />
+        <GameCard className="text-center">
+          <div className="mx-auto mb-3 flex h-14 w-14 items-center justify-center rounded-full bg-[var(--app-primary-light)] text-2xl">
+            🎉
+          </div>
+          <p className="text-sm font-bold text-[var(--app-primary-dark)]">
+            {tr(locale, "Үе")} {roundIndex + 1} {tr(locale, "дуусла!")}
+          </p>
+          <p className="mt-1 text-xs text-[var(--app-muted)]">
+            {roundIndex * ROUND_SIZE + matchedCount}/{allPairs.length}{" "}
+            {tr(locale, "үг давлаа")}
+          </p>
+          <div className="mt-5 flex flex-col gap-2">
+            <button
+              type="button"
+              onClick={startNextRound}
+              className="app-btn-game w-full"
+            >
+              {tr(locale, "Дараагийн")} {nextRound.length} {tr(locale, "үг →")}
+            </button>
+          </div>
+        </GameCard>
       </GameShell>
     );
   }
@@ -213,7 +330,7 @@ export function MatchGameClient({
         title={labels.matchTitle}
         backHref={backHref}
         level={headerLevel}
-        progress={`${matchedCount}/${total}`}
+        progress={levelMode ? `${matchedCount}/${total}` : overallProgress}
         score={score}
       />
       <div className="grid grid-cols-2 gap-3">
