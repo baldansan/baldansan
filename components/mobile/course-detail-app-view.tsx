@@ -6,6 +6,7 @@ import { MobileCard } from "@/components/mobile/mobile-card";
 import { MobilePageHeader } from "@/components/mobile/mobile-page-header";
 import { CourseLessonList } from "@/app/courses/hsk5/hsk5-lesson-list";
 import { courseCardAccentClass, courseChipBadge } from "@/lib/course-display";
+import { Hsk1PronunciationIntroCard } from "@/components/mobile/hsk1-pronunciation-intro-card";
 
 type Props = {
   courseId: string;
@@ -60,6 +61,8 @@ export function CourseDetailAppView({
           </span>
         </div>
       </div>
+
+      {courseId === "hsk1" ? <Hsk1PronunciationIntroCard /> : null}
 
       <section>
         <MobilePageHeader title="Хичээлийн жагсаалт" />
