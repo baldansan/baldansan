@@ -45,6 +45,10 @@ export type VideoRow = {
   episode_no: number | null;
   series: VideoSeriesInfo | null;
   created_at: string;
+  /** Дуу (068): 'video' | 'song' — хуучин мөрөнд undefined. */
+  kind?: "video" | "song" | null;
+  artist?: string | null;
+  year?: number | null;
 };
 
 export type VideoEpisodeItem = VideoRow & {

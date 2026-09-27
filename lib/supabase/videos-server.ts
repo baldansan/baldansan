@@ -65,8 +65,13 @@ function mapVideo(raw: Record<string, unknown>): VideoRow {
     episode_no: raw.episode_no != null ? Number(raw.episode_no) : null,
     series: mapSeries(seriesRaw ?? null),
     created_at: String(raw.created_at),
+    kind: raw.kind === "song" ? "song" : raw.kind === "video" ? "video" : null,
+    artist: raw.artist ? String(raw.artist) : null,
+    year: raw.year != null && Number.isFinite(Number(raw.year)) ? Number(raw.year) : null,
   };
 }
+
+export { mapVideo as mapVideoRow };
 
 const VIDEO_SERIES_SELECT =
   "id, title_zh, title_mn, description_mn, hsk_level, cover_url, thumbnail_url";

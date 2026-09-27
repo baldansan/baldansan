@@ -5,6 +5,8 @@ import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
 import { MobilePageHeader } from "@/components/mobile/mobile-page-header";
 import { SHELL_MAIN_NARROW } from "@/lib/app-shell-classes";
 import { getServerUiLocale } from "@/lib/i18n/server-locale";
+import { fetchSongVideos } from "@/lib/songs/supabase";
+import { groupSongsBySeries } from "@/lib/songs/song-groups";
 import {
   fetchSeriesWatchProgressMap,
   isServerUserAuthenticated,
@@ -25,7 +27,11 @@ type Props = { searchParams: Promise<{ tab?: string }> };
 export default async function BichlegPage({ searchParams }: Props) {
   const { tab } = await searchParams;
   if (tab === "songs") {
-    const locale = await getServerUiLocale();
+    const [locale, songVideos] = await Promise.all([
+      getServerUiLocale(),
+      fetchSongVideos(),
+    ]);
+    const songGroups = groupSongsBySeries(songVideos);
     return (
       <MobileAppShell activeTab="clips" mainClassName={SHELL_MAIN_NARROW}>
         <MobilePageHeader
@@ -33,7 +39,7 @@ export default async function BichlegPage({ searchParams }: Props) {
           subtitle={locale === "zh" ? "跟着歌曲学中文：2000–2026年热门歌曲与儿歌。" : "Дуугаар хятад хэл сур: 2000–2026 оны хит дуу, хүүхдийн дуу."}
         />
         <MediaTabs active="songs" />
-        <SongsClient />
+        <SongsClient groups={songGroups} />
       </MobileAppShell>
     );
   }

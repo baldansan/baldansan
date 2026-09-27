@@ -34,6 +34,7 @@ export async function upsertBichlegSeriesOnServer(
         description_mn: series.descriptionMn,
         cover_url: series.coverUrl,
         hsk_level: series.hskLevel,
+        kind: series.kind,
       },
       "series.json"
     );
@@ -58,6 +59,8 @@ export async function upsertBichlegSeriesOnServer(
         description_mn: row.descriptionMn,
         cover_url: row.coverUrl,
         hsk_level: row.hskLevel,
+        // kind багана 068 migration-оор нэмэгдсэн — дуу биш бол илгээхгүй.
+        ...(row.kind === "song" ? { kind: "song" } : {}),
       },
       { onConflict: "id" }
     );
@@ -106,6 +109,9 @@ async function importOneVideo(
       tags: pkg.tags,
       series_id: pkg.seriesId,
       episode_no: pkg.episodeNo,
+      kind: pkg.kind,
+      artist: pkg.artist,
+      year: pkg.year,
       subtitles: pkg.subtitles.map((s) => ({
         index: s.idx,
         start: s.startSec,
@@ -165,6 +171,10 @@ async function importOneVideo(
     tags: payload.tags,
     series_id: payload.seriesId,
     episode_no: payload.episodeNo,
+    // Дууны мета (068 migration): энгийн бичлэгт илгээхгүй — хуучин схемтэй ч ажиллана.
+    ...(payload.kind === "song"
+      ? { kind: "song", artist: payload.artist, year: payload.year }
+      : {}),
   };
 
   const { error: videoErr } = await client

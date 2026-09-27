@@ -17,6 +17,7 @@ import {
   formatFilePreviewLine,
   parseBichlegJsonFileText,
 } from "@/lib/import/bichleg-video-validate";
+import { SongLrcImport, type SongSeriesOption } from "@/components/admin/song-lrc-import";
 
 const btnPrimary =
   "inline-flex rounded-full bg-emerald-500 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-emerald-600 disabled:cursor-not-allowed disabled:opacity-50";
@@ -42,7 +43,13 @@ async function readJsonFiles(files: File[]): Promise<FileEntry[]> {
   return entries;
 }
 
-export function BichlegImportClient() {
+type Props = {
+  /** songs-* цувралууд (server page-ээс) — «Дуу нэмэх» хэсгийн сонголт. */
+  songSeries?: SongSeriesOption[];
+};
+
+export function BichlegImportClient({ songSeries = [] }: Props) {
+  const [section, setSection] = useState<"json" | "song">("json");
   const [entries, setEntries] = useState<FileEntry[]>([]);
   const [importResult, setImportResult] = useState<BichlegImportApiResult | null>(
     null
@@ -225,6 +232,30 @@ export function BichlegImportClient() {
         </p>
       </div>
 
+      <div className="flex gap-2" role="tablist">
+        <button
+          type="button"
+          role="tab"
+          aria-selected={section === "json"}
+          className={section === "json" ? btnPrimary : btnGhost}
+          onClick={() => setSection("json")}
+        >
+          📄 JSON хадмал
+        </button>
+        <button
+          type="button"
+          role="tab"
+          aria-selected={section === "song"}
+          className={section === "song" ? btnPrimary : btnGhost}
+          onClick={() => setSection("song")}
+        >
+          🎵 Дуу нэмэх
+        </button>
+      </div>
+
+      {section === "song" ? <SongLrcImport songSeries={songSeries} /> : null}
+
+      <div className={section === "song" ? "hidden" : "flex flex-col gap-6"}>
       <AdminEditorSection
         title="JSON файлууд"
         description="Нэг эсвэл хэд хэдэн .json файлыг чирч оруулах эсвэл сонгоно уу."
@@ -452,7 +483,13 @@ export function BichlegImportClient() {
           Терминалаар оруулах: <code>npm run load:videos</code> (энэ хуудас нэмэлт
           зам).
         </p>
+        <p className="text-sm text-slate-600">
+          Дуу (kind: &quot;song&quot;): <code>subtitles</code>-ийн оронд{" "}
+          <code>&quot;lrc&quot;: &quot;[00:12.50]歌词…&quot;</code>,{" "}
+          <code>pinyin_lines[]</code>, <code>mn_lines[]</code> өгч болно; pinyin/mn/words заавал биш.
+        </p>
       </AdminCollapsibleSection>
+      </div>
     </div>
   );
 }

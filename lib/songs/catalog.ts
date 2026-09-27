@@ -40,6 +40,17 @@ export const SONGS: Song[] = [
     level: 1,
     noteZh: "传统儿歌（旋律来自法国童谣）。",
     noteMn: "Уламжлалт хүүхдийн дуу (аялгуу нь Францын хүүхдийн дуунаас).",
+    // Нийтийн өмч (уламжлалт үг) — karaoke demo (?demo=1) энэ мөрүүдийг ашиглана.
+    lyrics: [
+      { zh: "两只老虎", pinyin: "Liǎng zhī lǎohǔ", mn: "Хоёр бар" },
+      { zh: "两只老虎", pinyin: "Liǎng zhī lǎohǔ", mn: "Хоёр бар" },
+      { zh: "跑得快", pinyin: "Pǎo de kuài", mn: "Хурдан гүйнэ" },
+      { zh: "跑得快", pinyin: "Pǎo de kuài", mn: "Хурдан гүйнэ" },
+      { zh: "一只没有眼睛", pinyin: "Yì zhī méiyǒu yǎnjing", mn: "Нэг нь нүдгүй" },
+      { zh: "一只没有尾巴", pinyin: "Yì zhī méiyǒu wěiba", mn: "Нэг нь сүүлгүй" },
+      { zh: "真奇怪", pinyin: "Zhēn qíguài", mn: "Үнэхээр хачин" },
+      { zh: "真奇怪", pinyin: "Zhēn qíguài", mn: "Үнэхээр хачин" },
+    ],
     vocab: [
       { zh: "老虎", pinyin: "lǎohǔ", mn: "бар" },
       { zh: "跑", pinyin: "pǎo", mn: "гүйх" },

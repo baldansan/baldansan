@@ -1113,3 +1113,51 @@ body{
 .bs-deep-drill-verdict{margin:0;font-size:13.5px;font-weight:800;color:var(--bs-ink)}
 .bs-deep-drill-feedback--ok .bs-deep-drill-verdict{color:#15803d}
 .bs-deep-drill-feedback--bad .bs-deep-drill-verdict{color:#b91c1c}
+
+/* ---- Дуу (karaoke): /bichleg/song/[id] — song-karaoke-client.tsx ---- */
+.bs-song{display:flex;flex-direction:column;gap:10px;padding-bottom:8px}
+.bs-song-back{display:inline-flex;align-self:flex-start;font-size:13px;font-weight:800;color:var(--bs-muted);text-decoration:none}
+.bs-song-back:hover{color:#15803d}
+.bs-song-head{display:flex;flex-direction:column;gap:4px}
+.bs-song-title{margin:0;font-family:var(--bs-zh);font-size:24px;font-weight:900;line-height:1.2;color:var(--bs-ink)}
+.bs-song-meta{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;margin:0;font-size:12px;font-weight:700;color:var(--bs-muted)}
+.bs-song-chip{display:inline-flex;align-items:center;padding:2px 8px;border-radius:999px;background:#e9f9ef;color:#15803d;font-size:11px;font-weight:800}
+.bs-song-chip--demo{background:#fff7ed;color:#b45309}
+.bs-song-player{position:relative;width:100%;aspect-ratio:16/9;overflow:hidden;border-radius:16px;background:#0a0f0c}
+.bs-song-player .bs-bichleg-player-mount-inner{position:absolute;inset:0}
+.bs-song-player iframe{position:absolute;inset:0;width:100%!important;height:100%!important}
+.bs-song-controls{display:flex;flex-wrap:wrap;align-items:center;gap:6px}
+.bs-song-ctrl{display:inline-flex;align-items:center;justify-content:center;min-height:34px;padding:0 12px;border:1px solid var(--bs-line);border-radius:999px;background:#fff;color:var(--bs-ink);font-size:12px;font-weight:800;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.bs-song-ctrl:disabled{opacity:.5;cursor:default}
+.bs-song-ctrl--on{border-color:#1FB85A;background:#1FB85A;color:#fff}
+.bs-song-ctrl--play{min-width:44px;font-size:16px;border-color:#1FB85A;background:#1FB85A;color:#fff}
+.bs-song-ctrl--warn{border-color:#f59e0b;background:#fff7ed;color:#b45309}
+.bs-song-ctrl--sing{border-color:#1FB85A;color:#15803d}
+.bs-song-progress{margin-left:auto;font-size:12px;font-weight:800;color:var(--bs-muted);font-variant-numeric:tabular-nums}
+.bs-song-sheet{position:relative;max-height:min(52dvh,520px);overflow-y:auto;padding:10px 4px 40dvh;border-radius:16px;background:#fff;border:1px solid var(--bs-line);scroll-behavior:smooth;-webkit-overflow-scrolling:touch}
+.bs-song-line{display:flex;flex-direction:column;align-items:flex-start;gap:2px;width:100%;padding:10px 12px;border:0;border-radius:12px;background:transparent;text-align:left;color:inherit;font:inherit;cursor:pointer;transition:background .15s ease,opacity .15s ease;-webkit-tap-highlight-color:transparent}
+.bs-song-line:active{background:#f3f7f4}
+.bs-song-line-time{font-size:10px;font-weight:800;color:var(--bs-muted);font-variant-numeric:tabular-nums}
+.bs-song-line-py{font-size:13px;font-weight:600;color:var(--bs-muted);line-height:1.3}
+.bs-song-line-zh{font-family:var(--bs-zh);font-size:20px;font-weight:800;line-height:1.35;color:var(--bs-ink)}
+.bs-song-line-mn{font-size:13px;font-weight:600;color:var(--bs-ink-2,#3a4a40);line-height:1.4}
+.bs-song-line--past{opacity:.45}
+.bs-song-line--current{background:#e9f9ef}
+.bs-song-line--current .bs-song-line-zh{font-size:28px;color:#15803d}
+.bs-song-line--current .bs-song-line-py{color:#15803d;font-size:14px}
+.bs-song-line--current .bs-song-line-mn{color:var(--bs-ink);font-size:14px}
+.bs-song-word{border:none;background:transparent;padding:0;margin:0;color:inherit;font:inherit;cursor:pointer;border-radius:4px}
+.bs-song-word:active{background:rgba(31,184,90,.18)}
+.bs-song-word--key{text-decoration:underline;text-decoration-color:#1FB85A;text-underline-offset:4px}
+.bs-song-empty{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:36dvh;padding:24px;border-radius:16px;background:#fff;border:1px dashed var(--bs-line);text-align:center}
+.bs-song-empty-title{margin:0;font-size:16px;font-weight:900;color:var(--bs-ink)}
+.bs-song-empty-sub{margin:8px 0 0;font-size:13px;font-weight:600;color:var(--bs-muted);line-height:1.5}
+.bs-song-sing{display:flex;flex-direction:column;gap:6px}
+.bs-song-sheet-backdrop{position:fixed;z-index:80}
+.bs-song-toast{position:fixed;bottom:5rem;z-index:90}
+/* Хүүхдийн горим: том үг */
+.bs-song--kid .bs-song-line-zh{font-size:26px}
+.bs-song--kid .bs-song-line--current .bs-song-line-zh{font-size:36px}
+.bs-song--kid .bs-song-line-py{font-size:15px}
+.bs-song--kid .bs-song-line--current .bs-song-line-py{font-size:17px}
+.bs-song--kid .bs-song-line-mn{font-size:15px}

@@ -40,6 +40,15 @@ export type RawBichlegVideo = {
   tags?: string[];
   series_id?: string;
   episode_no?: number;
+  /** 'video' | 'song' — дуу бол pinyin/mn/words заавал биш. */
+  kind?: string;
+  artist?: string;
+  year?: number;
+  /** Дуу: `[mm:ss.xx]歌词` мөрүүд — subtitles байхгүй үед эндээс үүсгэнэ. */
+  lrc?: string;
+  /** LRC-тэй хамт: мөр бүрд нэг пиньинь / монгол мөр. */
+  pinyin_lines?: string[];
+  mn_lines?: string[];
   subtitles?: RawBichlegSubtitle[];
 };
 
@@ -50,6 +59,7 @@ export type RawBichlegSeries = {
   description_mn?: string;
   cover_url?: string;
   hsk_level?: number;
+  kind?: string;
 };
 
 export type BichlegSubtitleWord = {
@@ -91,6 +101,10 @@ export type BichlegVideoPayload = {
   tags: string[];
   seriesId: string | null;
   episodeNo: number | null;
+  /** 'video' (үндсэн) | 'song' */
+  kind: "video" | "song";
+  artist: string | null;
+  year: number | null;
   subtitles: BichlegSubtitlePayload[];
 };
 
@@ -101,6 +115,7 @@ export type BichlegSeriesPayload = {
   descriptionMn: string | null;
   coverUrl: string | null;
   hskLevel: number | null;
+  kind?: "video" | "song";
 };
 
 export type BichlegFileKind = "video" | "series";

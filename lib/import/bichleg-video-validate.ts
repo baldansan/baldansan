@@ -1,4 +1,5 @@
 import { mapSlangNote } from "@/lib/bichleg/map-subtitle";
+import { buildSongLyricLines, parseLrc } from "@/lib/songs/lrc";
 import type {
   BichlegFileValidation,
   BichlegSeriesPayload,
@@ -79,6 +80,7 @@ export function validateBichlegSeriesJson(
     descriptionMn: nonEmpty(data.description_mn) ? data.description_mn.trim() : null,
     coverUrl: nonEmpty(data.cover_url) ? data.cover_url.trim() : null,
     hskLevel: data.hsk_level != null ? Number(data.hsk_level) : null,
+    kind: data.kind === "song" ? "song" : undefined,
   };
 
   return {
@@ -125,9 +127,38 @@ export function validateBichlegVideoJson(
       ? Number(episodeRaw)
       : null;
 
+  const isSong =
+    data.kind === "song" ||
+    (Array.isArray(data.tags) && data.tags.map(String).includes("song"));
+
   if (!videoId) errors.push("video_id байхгүй.");
   if (!youtubeId) errors.push("youtube_id байхгүй.");
-  if (!titleMn) errors.push("title_mn байхгүй.");
+  // Дуу: title_mn заавал биш (title_zh байхад болно).
+  if (!titleMn && !(isSong && nonEmpty(data.title_zh))) {
+    errors.push("title_mn байхгүй.");
+  }
+
+  // Дуу + LRC: subtitles байхгүй бол LRC-ээс үүсгэнэ.
+  let rawSubtitles = data.subtitles;
+  if (
+    isSong &&
+    (!Array.isArray(rawSubtitles) || rawSubtitles.length === 0) &&
+    nonEmpty(data.lrc)
+  ) {
+    const lines = buildSongLyricLines(
+      parseLrc(data.lrc),
+      Array.isArray(data.pinyin_lines) ? data.pinyin_lines.map(String) : [],
+      Array.isArray(data.mn_lines) ? data.mn_lines.map(String) : []
+    );
+    rawSubtitles = lines.map((l) => ({
+      index: l.idx,
+      start: l.start_sec,
+      end: l.end_sec,
+      zh: l.zh,
+      pinyin: l.pinyin,
+      mn: l.mn,
+    }));
+  }
 
   if (seriesId && episodeNo == null) {
     errors.push("series_id байвал episode_no заавал.");
@@ -139,13 +170,17 @@ export function validateBichlegVideoJson(
     errors.push("episode_no эерэг бүхэл тоо байх ёстой.");
   }
 
-  if (!Array.isArray(data.subtitles) || data.subtitles.length === 0) {
-    errors.push("subtitles[] хоосон эсвэл байхгүй.");
+  if (!Array.isArray(rawSubtitles) || rawSubtitles.length === 0) {
+    errors.push(
+      isSong
+        ? "subtitles[] эсвэл lrc хоосон — цагтай мөр олдсонгүй."
+        : "subtitles[] хоосон эсвэл байхгүй."
+    );
     return { fileName, kind: "video", ok: false, errors };
   }
 
   const subtitles: BichlegSubtitlePayload[] = [];
-  const sorted = [...data.subtitles].map((row, i) => ({
+  const sorted = [...rawSubtitles].map((row, i) => ({
     row,
     idx: subtitleIndex(row, i + 1),
     order: i,
@@ -178,11 +213,28 @@ export function validateBichlegVideoJson(
     }
 
     if (!nonEmpty(row.zh)) errors.push(`${path}: zh байхгүй.`);
-    if (!nonEmpty(row.pinyin)) errors.push(`${path}: pinyin байхгүй.`);
-    if (!nonEmpty(row.mn)) errors.push(`${path}: mn байхгүй.`);
+    if (!isSong && !nonEmpty(row.pinyin)) errors.push(`${path}: pinyin байхгүй.`);
+    if (!isSong && !nonEmpty(row.mn)) errors.push(`${path}: mn байхгүй.`);
 
     if (!Array.isArray(row.words) || row.words.length === 0) {
-      errors.push(`${path}: words[] хоосон эсвэл байхгүй.`);
+      if (!isSong) {
+        errors.push(`${path}: words[] хоосон эсвэл байхгүй.`);
+        continue;
+      }
+      // Дуу: words[] заавал биш — үг дарахад /api/writing/lookup ашиглана.
+      if (nonEmpty(row.zh) && Number.isFinite(start) && Number.isFinite(end)) {
+        subtitles.push({
+          idx,
+          startSec: start,
+          endSec: end,
+          speaker: nonEmpty(row.speaker) ? row.speaker.trim() : null,
+          zh: row.zh.trim(),
+          pinyin: nonEmpty(row.pinyin) ? row.pinyin.trim() : "",
+          mn: nonEmpty(row.mn) ? row.mn.trim() : "",
+          words: [],
+          slangNote: row.slang_note ? mapSlangNote(row.slang_note) : null,
+        });
+      }
       continue;
     }
 
@@ -212,8 +264,7 @@ export function validateBichlegVideoJson(
 
     if (
       nonEmpty(row.zh) &&
-      nonEmpty(row.pinyin) &&
-      nonEmpty(row.mn) &&
+      (isSong || (nonEmpty(row.pinyin) && nonEmpty(row.mn))) &&
       Number.isFinite(start) &&
       Number.isFinite(end)
     ) {
@@ -225,8 +276,8 @@ export function validateBichlegVideoJson(
         endSec: end,
         speaker: nonEmpty(row.speaker) ? row.speaker.trim() : null,
         zh: row.zh.trim(),
-        pinyin: row.pinyin.trim(),
-        mn: row.mn.trim(),
+        pinyin: nonEmpty(row.pinyin) ? row.pinyin.trim() : "",
+        mn: nonEmpty(row.mn) ? row.mn.trim() : "",
         words,
         slangNote,
       });
@@ -241,15 +292,26 @@ export function validateBichlegVideoJson(
     videoId,
     youtubeId,
     titleZh: nonEmpty(data.title_zh) ? data.title_zh.trim() : null,
-    titleMn,
+    titleMn: titleMn || (nonEmpty(data.title_zh) ? data.title_zh.trim() : ""),
     source: nonEmpty(data.source) ? data.source.trim() : null,
     sourceUrl: nonEmpty(data.source_url) ? data.source_url.trim() : null,
     hskLevel: data.hsk_level != null ? Number(data.hsk_level) : null,
     durationSec: data.duration_sec != null ? Number(data.duration_sec) : null,
     syncOffsetSec: Number(data.sync_offset_sec ?? 0),
-    tags: Array.isArray(data.tags) ? data.tags.map(String) : [],
+    tags: Array.from(
+      new Set([
+        ...(Array.isArray(data.tags) ? data.tags.map(String) : []),
+        ...(isSong ? ["song"] : []),
+      ])
+    ),
     seriesId,
     episodeNo,
+    kind: isSong ? "song" : "video",
+    artist: nonEmpty(data.artist) ? data.artist.trim() : null,
+    year:
+      data.year != null && Number.isFinite(Number(data.year))
+        ? Number(data.year)
+        : null,
     subtitles,
   };
 
