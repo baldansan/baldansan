@@ -18,3 +18,11 @@
 ## Caveats
 - The upstream README says "5,596 HSK_2000 words"; the actual `64k/hsk` folder has 8,596 files (words and single characters from the HSK 2000 list). There is no audio for about 580 HSK 2012 words, and the list is not HSK 3.0. Of the 8,596 words, 6,811 are in `data/hsk_words.json`.
 - All word recordings are by one speaker and were recorded as isolated words (citation tones).
+
+## Derived files for the «Дуудлага / 发音» section
+`python3 scripts/open/build-pinyin-chart.py` (from the repo root) reads `manifest.json` + `data/hsk_words.json` and writes:
+
+- `public/data/pinyin_chart.json` (~95 KB) — `{ source, initials[], finals[], cells: { "<syllable>": { initial, final, tones: { "1": "/open/audio-cmn/syllables/cmn-…mp3", "2", "3", "4", "5"? } } } }`. 414 syllables, 1,674 tone files. `initials` are the 21 standard initials in chart order plus `"∅"` (zero initial: a/e/o and the y-/w- spellings, keyed by the spelled syllable, e.g. `yi` sits in the `i` column, `wu` in `u`, `yu` in `ü`). j/q/x + u… are placed in the ü columns (`ju` → final `ü`). `"5"` is the neutral-tone recording where one exists (19 syllables). Dropped as non-standard: `fe`, `fiao`, `yai`, `jü` (duplicate of `ju`) and all 28 marginal syllables (`hm`, `hng`, `m`, `n`, `ng`, `lüan`, `nia`).
+- `public/data/tone_pairs.json` (~33 KB) — HSK 1–3 two-character words grouped by tone pattern `"<t1><t2>"` (1–4, `0` = neutral second syllable) → `[{ zh, pinyin, mn, level }]`, at most 25 per pattern, lowest HSK level first. Tones are read from the tone marks of `pinyin` with the same rule as `lib/speech/pinyin-tones.ts` (`parsePinyinSyllables`). Words whose pinyin is not written as two space-separated syllables (一些 `yìxiē`, erhua 这儿) and words with a neutral first syllable (的话) are skipped.
+
+Both files are served statically from `/data/…` and are also read with `fs` by the `/pronunciation/**` server pages (see `outputFileTracingIncludes` in `next.config.ts`).
