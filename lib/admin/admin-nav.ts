@@ -61,6 +61,13 @@ export const ADMIN_NAV_PRIMARY: AdminNavItem[] = [
     hint: "Видео контент удирдах.",
     match: (p) => p.startsWith("/admin/bichleg"),
   },
+  {
+    href: "/admin/mock-tests/tutor-notes",
+    label: "Багшийн тайлбар",
+    icon: "🎓",
+    hint: "Загвар шалгалтын асуултын экспорт ба «Хувийн багш» тайлбарын импорт.",
+    match: (p) => p.startsWith("/admin/mock-tests"),
+  },
 ];
 
 /** Reporting and people — reviewed weekly rather than daily. */

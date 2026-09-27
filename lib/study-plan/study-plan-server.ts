@@ -299,6 +299,7 @@ function mapQuestion(raw: Record<string, unknown>): MockTestQuestionRow {
     audio_start_sec: null,
     audio_end_sec: null,
     audio_transcript: null,
+    tutor_note: null,
   };
 }
 

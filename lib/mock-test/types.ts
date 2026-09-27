@@ -1,3 +1,5 @@
+import type { TutorNote } from "@/lib/mock-test/tutor-note";
+
 export type MockTestExamMode = "real" | "practice";
 
 export type MockTestSection = {
@@ -53,6 +55,8 @@ export type MockTestQuestionRow = {
   audio_end_sec: number | null;
   /** Бичлэгийн хятад текст — АВТОМАТААР гаргасан, алдаатай байж болно. */
   audio_transcript: string | null;
+  /** «Хувийн багш»-ийн бүтэцтэй тайлбар (069). null бол explanation_mn-ээ харуулна. */
+  tutor_note: TutorNote | null;
 };
 
 export type MockTestAnswers = Record<string, string>;

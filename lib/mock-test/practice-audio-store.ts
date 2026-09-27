@@ -61,3 +61,44 @@ export function writePracticeAutoplay(on: boolean) {
     // ignore
   }
 }
+
+/**
+ * «🔊 Дахин сонс» — багшийн тайлбараас асуултын аудио хэсгийг дахин тоглуулна.
+ * PracticeAudio-гийн кэшлэсэн элементийг дахин ашиглана (файл дахин татахгүй);
+ * `endSec` өгвөл тэнд зогсооно.
+ */
+export function replayPracticeAudio(
+  url: string,
+  startSec: number | null = null,
+  endSec: number | null = null
+): void {
+  if (typeof window === "undefined" || !url) return;
+  const el = getPracticeAudio(url);
+  pauseOtherPracticeAudio(el);
+
+  const seekAndPlay = () => {
+    try {
+      el.currentTime = startSec ?? 0;
+    } catch {
+      // seek дэмжигдэхгүй бол байгаагаас нь
+    }
+    if (endSec != null) {
+      const stopAtEnd = () => {
+        if (el.currentTime >= endSec) {
+          el.pause();
+          el.removeEventListener("timeupdate", stopAtEnd);
+        }
+      };
+      el.addEventListener("timeupdate", stopAtEnd);
+      el.addEventListener("pause", () => el.removeEventListener("timeupdate", stopAtEnd), {
+        once: true,
+      });
+    }
+    el.play().catch(() => {
+      /* хөтөч тоглуулалтыг хориглосон */
+    });
+  };
+
+  if (el.readyState >= 1) seekAndPlay();
+  else el.addEventListener("loadedmetadata", seekAndPlay, { once: true });
+}

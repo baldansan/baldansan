@@ -13,6 +13,7 @@ import {
   type WritingSelfGrade,
 } from "@/lib/mock-test/hsk-scoring";
 import { scoreResultFromSavedResponses } from "@/lib/mock-test/scoring";
+import { parseTutorNote } from "@/lib/mock-test/tutor-note";
 import type {
   MockTestQuestionRow,
   MockTestRow,
@@ -104,6 +105,7 @@ function mapQuestion(raw: Record<string, unknown>): MockTestQuestionRow {
     audio_transcript: raw.audio_transcript
       ? String(raw.audio_transcript)
       : null,
+    tutor_note: parseTutorNote(raw.tutor_note),
   };
 }
 
@@ -161,6 +163,34 @@ export async function fetchMockTestQuestions(
 
   if (error || !data) return [];
   return data.map((row) => mapQuestion(row as Record<string, unknown>));
+}
+
+/**
+ * Шалгалт бүрд «багшийн тайлбартай» асуултын тоо — дасгалын жагсаалтын
+ * «🎓 N/M тайлбартай» тэмдэгт. Зөвхөн (test_id) багана татдаг хөнгөн асуулга;
+ * алдаа гарвал хоосон объект буцаана (тэмдэг харагдахгүй).
+ */
+export async function fetchTutorNoteCounts(
+  testIds: string[]
+): Promise<Record<string, number>> {
+  if (!hasServerSupabaseConfig || testIds.length === 0) return {};
+  const client = await createServerSupabaseClient();
+  if (!client) return {};
+
+  const { data, error } = await client
+    .from("mock_test_questions")
+    .select("test_id")
+    .in("test_id", testIds)
+    .not("tutor_note", "is", null);
+
+  if (error || !data) return {};
+  const counts: Record<string, number> = {};
+  for (const row of data) {
+    const testId = row.test_id ? String(row.test_id) : "";
+    if (!testId) continue;
+    counts[testId] = (counts[testId] ?? 0) + 1;
+  }
+  return counts;
 }
 
 export type MockTestLatestScore = {

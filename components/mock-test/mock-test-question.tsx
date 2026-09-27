@@ -4,7 +4,8 @@ import { useRef } from "react";
 import { useQuestionTimer } from "@/lib/analytics/attempt-metrics";
 import { MockTestSentenceOrder } from "@/components/mock-test/mock-test-sentence-order";
 import { QuestionFeedbackButtons } from "@/components/feedback/question-feedback-buttons";
-import { formatCorrectAnswer } from "@/lib/mock-test/format-answer";
+import { TutorNoteCard } from "@/components/mock-test/tutor-note-card";
+import { formatCorrectAnswer, formatMockTestAnswer } from "@/lib/mock-test/format-answer";
 import { gradeQuestion } from "@/lib/mock-test/scoring";
 import {
   mapMockQuestionType,
@@ -148,13 +149,32 @@ function ResultExtras({
   showResults,
   resultCorrect,
   hideCorrectLine = false,
+  userAnswer = "",
 }: {
   question: MockTestQuestionRow;
   showResults: boolean;
   resultCorrect: boolean | null;
   hideCorrectLine?: boolean;
+  /** Суралцагчийн хариулт — багшийн тайлбар «чи яагаад бурууг сонгов» гэж хэлэхэд. */
+  userAnswer?: string;
 }) {
   if (!showResults) return null;
+
+  // Багшийн бүтэцтэй тайлбар байвал энгийн тайлбарын оронд түүнийг харуулна.
+  if (question.tutor_note) {
+    const answered = userAnswer.trim();
+    return (
+      <TutorNoteCard
+        question={question}
+        note={question.tutor_note}
+        isCorrect={resultCorrect}
+        yourKey={answered || null}
+        yourText={answered ? formatMockTestAnswer(question, answered) : null}
+        correctText={formatCorrectAnswer(question)}
+        selfGraded={question.autograde === "manual"}
+      />
+    );
+  }
 
   const showCorrect =
     !hideCorrectLine &&
@@ -229,6 +249,7 @@ export function MockTestQuestion({
         </div>
         <ResultExtras
           question={question}
+          userAnswer={value}
           showResults={showResults}
           resultCorrect={resultCorrect}
         />
@@ -276,6 +297,7 @@ export function MockTestQuestion({
         />
         <ResultExtras
           question={question}
+          userAnswer={value}
           showResults={showResults}
           resultCorrect={resultCorrect}
         />
@@ -306,6 +328,7 @@ export function MockTestQuestion({
           {showResults ? (
             <ResultExtras
               question={question}
+              userAnswer={value}
               showResults={showResults}
               resultCorrect={resultCorrect}
               hideCorrectLine
@@ -333,6 +356,7 @@ export function MockTestQuestion({
         />
         <ResultExtras
           question={question}
+          userAnswer={value}
           showResults={showResults}
           resultCorrect={resultCorrect}
         />
@@ -364,6 +388,7 @@ export function MockTestQuestion({
         </select>
         <ResultExtras
           question={question}
+          userAnswer={value}
           showResults={showResults}
           resultCorrect={resultCorrect}
         />
@@ -426,6 +451,7 @@ export function MockTestQuestion({
         )}
         <ResultExtras
           question={question}
+          userAnswer={value}
           showResults={showResults}
           resultCorrect={resultCorrect}
         />
@@ -460,6 +486,7 @@ export function MockTestQuestion({
       />
       <ResultExtras
         question={question}
+        userAnswer={value}
         showResults={showResults}
         resultCorrect={resultCorrect}
       />
@@ -564,6 +591,7 @@ function OrderQuestion({
       ) : null}
       <ResultExtras
         question={question}
+        userAnswer={value}
         showResults={showResults}
         resultCorrect={resultCorrect}
       />

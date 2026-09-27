@@ -1038,6 +1038,75 @@ body{
 .bs-mtp-transcript-text{margin:0;font-size:15px;line-height:1.75;color:var(--bs-ink)}
 .bs-mtp-transcript-note{margin:8px 0 0;font-size:11px;line-height:1.5;color:var(--bs-muted)}
 
+/* --- 🎓 Багшийн тайлбар (私教讲解) --- */
+.bs-tn{margin-top:14px;padding:13px 14px;border-radius:16px;border:1px solid var(--bs-line);background:#fafcfb}
+.bs-tn--ok{border-color:#bbe8cb}
+.bs-tn--bad{border-color:#f3c0c0}
+.bs-tn--pending{border-color:#f5d9ac}
+.bs-tn-head{display:flex;align-items:center;gap:6px;margin:0;font-size:12px;font-weight:900;letter-spacing:.03em;text-transform:uppercase;color:var(--bs-green-700)}
+.bs-tn-head-zh{margin-left:auto;font-size:12px;font-weight:700;letter-spacing:0;text-transform:none;color:var(--bs-muted)}
+.bs-tn-verdict{margin-top:8px;padding:10px 12px;border-radius:12px;background:#fff;border:1px solid var(--bs-line)}
+.bs-tn--ok .bs-tn-verdict{background:#f0fbf4;border-color:#bbe8cb}
+.bs-tn--bad .bs-tn-verdict{background:#fef6f6;border-color:#f3c0c0}
+.bs-tn--pending .bs-tn-verdict{background:#fffaf0;border-color:#f5d9ac}
+.bs-tn-verdict-title{margin:0;font-size:15px;font-weight:900;color:var(--bs-ink)}
+.bs-tn--ok .bs-tn-verdict-title{color:#15803d}
+.bs-tn--bad .bs-tn-verdict-title{color:#b91c1c}
+.bs-tn--pending .bs-tn-verdict-title{color:#b45309}
+.bs-tn-verdict-row{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px;margin:6px 0 0;font-size:12.5px;color:var(--bs-muted)}
+.bs-tn-verdict-row>b{font-size:15px;font-weight:800;color:var(--bs-ink);line-height:1.45}
+
+.bs-tn-sec{margin-top:10px;border:1px solid var(--bs-line);border-radius:12px;background:#fff;overflow:hidden}
+.bs-tn-sec--static{padding:10px 12px}
+.bs-tn-sec-toggle{display:flex;align-items:center;justify-content:space-between;gap:10px;width:100%;min-height:42px;padding:0 12px;border:none;background:none;font-family:inherit;cursor:pointer;text-align:left}
+.bs-tn-sec-title{font-size:13px;font-weight:800;color:var(--bs-ink)}
+.bs-tn-sec-title--static{margin:0}
+.bs-tn-sec-chev{flex-shrink:0;font-size:12px;color:var(--bs-muted)}
+.bs-tn-sec-body{padding:0 12px 12px}
+
+.bs-tn-toolbar{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.bs-tn-replay{min-height:34px;padding:0 12px;border:none;border-radius:999px;background:var(--bs-green);font-size:12.5px;font-weight:800;color:#fff;cursor:pointer;font-family:inherit}
+.bs-tn-toggle{min-height:34px;padding:0 12px;border:1px solid var(--bs-line);border-radius:999px;background:#fff;font-size:12px;font-weight:800;color:var(--bs-muted);cursor:pointer;font-family:inherit}
+.bs-tn-toggle--on{border-color:var(--bs-green-100);background:var(--bs-green-50);color:var(--bs-green-700)}
+.bs-tn-lines{list-style:none;margin:10px 0 0;padding:0;display:flex;flex-direction:column;gap:8px}
+.bs-tn-line{padding:8px 10px;border-radius:10px;background:#f5f8f6;border:1px solid transparent}
+.bs-tn-line--key{background:#fff8e1;border-color:#f5d9ac}
+.bs-tn-line-zh{margin:0;font-size:16px;font-weight:700;line-height:1.6;color:var(--bs-ink)}
+.bs-tn-key-mark{margin-right:6px;font-size:14px}
+.bs-tn-line-py{margin:2px 0 0;font-size:12px;line-height:1.5;color:var(--bs-green-700)}
+.bs-tn-line-mn{margin:3px 0 0;font-size:13px;line-height:1.55;color:var(--bs-ink-2)}
+
+.bs-tn-keyline{margin-top:10px;padding:10px 12px;border-radius:12px;background:#fff8e1;border:1px solid #f5d9ac}
+.bs-tn-keyline-label{margin:0 0 4px;font-size:11px;font-weight:800;letter-spacing:.04em;text-transform:uppercase;color:#b45309}
+.bs-tn-keyline-zh{margin:0;font-size:16px;font-weight:700;line-height:1.6;color:var(--bs-ink)}
+.bs-tn-keyline-mn{margin:3px 0 0;font-size:13px;line-height:1.55;color:var(--bs-ink-2)}
+
+.bs-tn-why{margin:0;font-size:14px;line-height:1.7;color:var(--bs-ink-2)}
+.bs-tn-yourwrong{margin-top:10px;padding:10px 12px;border-radius:12px;background:#fff7ed;border:1px solid #fbd38d}
+.bs-tn-yourwrong-title{margin:0 0 4px;font-size:12px;font-weight:900;color:#b45309}
+.bs-tn-yourwrong-text{margin:0;font-size:13.5px;line-height:1.65;color:#7c2d12}
+.bs-tn-yourwrong-text>b{color:#9a3412}
+.bs-tn-others{margin-top:10px}
+.bs-tn-others-toggle{border:none;background:none;padding:0;font-family:inherit;font-size:12.5px;font-weight:800;color:var(--bs-green-700);cursor:pointer}
+.bs-tn-others-compact{margin:4px 0 0;font-size:12px;font-weight:700;letter-spacing:.06em;color:var(--bs-muted)}
+.bs-tn-others-list{list-style:none;margin:8px 0 0;padding:0;display:flex;flex-direction:column;gap:6px}
+.bs-tn-others-item{display:flex;gap:8px;font-size:13px;line-height:1.6;color:var(--bs-ink-2)}
+.bs-tn-others-key{flex-shrink:0;display:grid;place-items:center;width:22px;height:22px;border-radius:7px;background:#eef2f0;font-size:12px;font-weight:900;color:var(--bs-ink)}
+
+.bs-tn-chips{display:flex;flex-direction:column;gap:6px}
+.bs-tn-chip{margin:0;padding:8px 11px;border-radius:10px;font-size:13px;line-height:1.6;color:var(--bs-ink-2)}
+.bs-tn-chip>b{color:var(--bs-ink)}
+.bs-tn-chip--trap{background:#fef2f2;border:1px solid #fecaca}
+.bs-tn-chip--tip{background:#eef2ff;border:1px solid #c7d2fe}
+
+.bs-tn-words{display:flex;flex-wrap:wrap;gap:8px}
+.bs-tn-word{display:flex;flex-direction:column;gap:1px;min-width:0;padding:7px 11px;border-radius:11px;background:var(--bs-green-50);border:1px solid var(--bs-green-100);text-decoration:none}
+.bs-tn-word-zh{font-size:16px;font-weight:800;color:var(--bs-ink);line-height:1.3}
+.bs-tn-word-py{font-size:11.5px;color:var(--bs-green-700)}
+.bs-tn-word-mn{font-size:12px;color:var(--bs-ink-2)}
+
+.bs-mtp-hub-tutor{display:inline-flex;align-items:center;gap:4px;margin-top:4px;padding:2px 8px;border-radius:999px;background:#fff8e1;border:1px solid #f5d9ac;font-size:11px;font-weight:800;color:#b45309}
+
 /* ===== Гүнзгий заах блокууд (deep teaching) ============================== */
 .bs-deep{margin-top:12px;border:1px solid var(--bs-line);border-radius:14px;background:#fafcfb;overflow:hidden}
 .bs-deep--accent{border-color:var(--bs-green-100);background:var(--bs-green-50)}

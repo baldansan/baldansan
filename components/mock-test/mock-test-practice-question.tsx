@@ -19,6 +19,7 @@ import {
   sentenceOrderInstruction,
 } from "@/lib/mock-test/sentence-order";
 import type { MockOption, MockTestQuestionRow } from "@/lib/mock-test/types";
+import { TutorNoteCard } from "@/components/mock-test/tutor-note-card";
 
 type Props = {
   question: MockTestQuestionRow;
@@ -545,7 +546,10 @@ export function MockTestPracticeQuestion({
       ) : null}
       <Stem question={question} />
       {body}
-      {revealed && question.audio_transcript?.trim() ? (
+      {/* Багшийн тайлбар өөрийн бичвэртэй бол автомат бичвэрийг давхардуулахгүй. */}
+      {revealed &&
+      question.audio_transcript?.trim() &&
+      !(question.tutor_note?.transcript?.length) ? (
         <section className="bs-mtp-transcript">
           <p className="bs-mtp-transcript-label">Сонссон бичвэр</p>
           <p className="bs-mtp-transcript-text hanzi" translate="no">
@@ -559,7 +563,33 @@ export function MockTestPracticeQuestion({
         </section>
       ) : null}
 
-      {revealed && feedback ? (
+      {revealed && feedback && question.tutor_note ? (
+        <TutorNoteCard
+          question={question}
+          note={question.tutor_note}
+          isCorrect={feedback.isCorrect}
+          yourKey={answer?.trim() || null}
+          yourText={feedback.yourText}
+          correctText={feedback.correctText}
+          selfGraded={selfGraded}
+          footer={
+            <>
+              {feedback.tags.length > 0 ? (
+                <div className="bs-mtp-tag-row">
+                  {feedback.tags.map((tag) => (
+                    <span key={tag.tag} className={`bs-mtp-tag bs-mtp-tag--${tag.category}`}>
+                      {tag.label}
+                    </span>
+                  ))}
+                </div>
+              ) : null}
+              {selfGraded && feedback.isCorrect == null ? (
+                <SelfGradeButtons onSelfGrade={onSelfGrade} />
+              ) : null}
+            </>
+          }
+        />
+      ) : revealed && feedback ? (
         <PracticeFeedbackPanel
           feedback={feedback}
           selfGraded={selfGraded}
@@ -630,23 +660,33 @@ function PracticeFeedbackPanel({
       ) : null}
 
       {selfGraded && feedback.isCorrect == null ? (
-        <div className="bs-mtp-self-grade">
-          <button
-            type="button"
-            className="bs-mtp-self-btn bs-mtp-self-btn--ok"
-            onClick={() => onSelfGrade(true)}
-          >
-            Зөв бичсэн
-          </button>
-          <button
-            type="button"
-            className="bs-mtp-self-btn bs-mtp-self-btn--bad"
-            onClick={() => onSelfGrade(false)}
-          >
-            Алдсан
-          </button>
-        </div>
+        <SelfGradeButtons onSelfGrade={onSelfGrade} />
       ) : null}
+    </div>
+  );
+}
+
+function SelfGradeButtons({
+  onSelfGrade,
+}: {
+  onSelfGrade: (isCorrect: boolean) => void;
+}) {
+  return (
+    <div className="bs-mtp-self-grade">
+      <button
+        type="button"
+        className="bs-mtp-self-btn bs-mtp-self-btn--ok"
+        onClick={() => onSelfGrade(true)}
+      >
+        Зөв бичсэн
+      </button>
+      <button
+        type="button"
+        className="bs-mtp-self-btn bs-mtp-self-btn--bad"
+        onClick={() => onSelfGrade(false)}
+      >
+        Алдсан
+      </button>
     </div>
   );
 }

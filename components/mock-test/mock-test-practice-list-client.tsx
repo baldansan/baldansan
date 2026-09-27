@@ -6,13 +6,15 @@ import { SKILL_LABELS_MN, type MockTestRow } from "@/lib/mock-test/types";
 
 type Props = {
   tests: MockTestRow[];
+  /** test_id → багшийн тайлбартай асуултын тоо («🎓 N/M тайлбартай»). */
+  tutorCounts?: Record<string, number>;
 };
 
 function levelLabel(level: number): string {
   return `HSK ${level}`;
 }
 
-export function MockTestPracticeListClient({ tests }: Props) {
+export function MockTestPracticeListClient({ tests, tutorCounts = {} }: Props) {
   const levels = useMemo(
     () => [...new Set(tests.map((test) => test.hsk_level))].sort((a, b) => a - b),
     [tests]
@@ -74,6 +76,11 @@ export function MockTestPracticeListClient({ tests }: Props) {
                   .map((section) => SKILL_LABELS_MN[section.skill] ?? section.skill)
                   .join(", ")}
               </span>
+              {(tutorCounts[test.id] ?? 0) > 0 ? (
+                <span className="bs-mtp-hub-tutor">
+                  🎓 {tutorCounts[test.id]}/{test.total_questions} тайлбартай
+                </span>
+              ) : null}
             </span>
             <span className="bs-mtp-hub-chev" aria-hidden>
               ›
