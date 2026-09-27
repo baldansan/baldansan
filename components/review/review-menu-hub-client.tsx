@@ -431,6 +431,36 @@ export function ReviewMenuHubClient({
         </Link>
 
         <p className="bs-tm-sec" style={{ marginTop: 18 }}>
+          {tr(locale, "Материал")}
+        </p>
+
+        <Link href="/books" className="bs-tm-card">
+          <span className="bs-tm-card-ic bs-tm-card-ic--blue" aria-hidden>
+            📖
+          </span>
+          <span className="bs-tm-card-body">
+            <span className="bs-tm-card-title">{tr(locale, "Ном сонгох")}</span>
+            <span className="bs-tm-card-sub">
+              {tr(locale, "HSK标准教程 · 146 хичээл · YCT, бусад ном удахгүй")}
+            </span>
+          </span>
+          <span className="bs-tm-card-chev" aria-hidden>›</span>
+        </Link>
+
+        <Link href="/library" className="bs-tm-card">
+          <span className="bs-tm-card-ic bs-tm-card-ic--green" aria-hidden>
+            📚
+          </span>
+          <span className="bs-tm-card-body">
+            <span className="bs-tm-card-title">{tr(locale, "Уншлагын сан")}</span>
+            <span className="bs-tm-card-sub">
+              {tr(locale, "Зурагт ном, сонгодог, хэлц үг, жишээ өгүүлбэр")}
+            </span>
+          </span>
+          <span className="bs-tm-card-chev" aria-hidden>›</span>
+        </Link>
+
+        <p className="bs-tm-sec" style={{ marginTop: 18 }}>
           {tr(locale, "Дүрэм")}
         </p>
 
