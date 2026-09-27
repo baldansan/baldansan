@@ -1,5 +1,7 @@
 import charBreakdownData from "@/data/char_breakdown.json";
 import componentMeaningsData from "@/data/component_meanings.json";
+import partNamesMn from "@/public/data/component_meanings_mn.json";
+import charGloss from "@/public/data/hsk_char_gloss.json";
 import { resolveComponentIcon } from "@/lib/hanzi/component-icon-map";
 import type { DecompositionComponent } from "@/lib/hanzi/character-decomposition";
 import type {
@@ -81,7 +83,14 @@ export function getComponentMeaning(glyph: string): ComponentMeaning | null {
   const key = glyph.trim();
   if (!key) return null;
   const row = COMPONENT_MEANINGS[key];
-  if (!row) return null;
+  if (!row) {
+    // Нөөц: makemeahanzi-ийн бүрдэл хэсгийн нэр (1020), дараа нь ханзны морфемийн утга (3088).
+    const part = (partNamesMn as Record<string, { mn?: string }>)[key];
+    const gloss = (charGloss as Record<string, { mn?: string }>)[key];
+    const mn = part?.mn?.trim() || gloss?.mn?.trim() || "";
+    if (!mn) return null;
+    return { mn, en: "", icon: resolveComponentIcon(key) };
+  }
   return {
     mn: row.mn?.trim() ?? "",
     en: row.en?.trim() ?? "",

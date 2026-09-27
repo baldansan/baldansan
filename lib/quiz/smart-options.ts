@@ -819,7 +819,27 @@ export function prepareLessonQuizQuestions(
 ): QuizQuestion[] {
   const sanitized = questions.map((q) => sanitizeQuizQuestionOptions(q));
   if (!options.rewriteOptions) {
-    return sanitized;
+    // Өгөгдлийн сангийн сонголтууд: зөв хариулт үргэлж эхэнд, эсвэл олон асуулт
+    // нэг ижил буруу сонголттой (жишээ: 印象/接受/熟悉/共同 давтагдах) ирдэг
+    // алдаа байсан. Давтагдсан багцыг үгийн сангаас дахин үүсгэж, бусдыг нь холино.
+    const signature = (q: QuizQuestion) =>
+      q.options
+        .filter((o) => o !== q.correctAnswer)
+        .slice()
+        .sort()
+        .join("|");
+    const counts = new Map<string, number>();
+    for (const q of sanitized) {
+      if (isTrueFalseQuestion(q)) continue;
+      const sig = signature(q);
+      if (sig) counts.set(sig, (counts.get(sig) ?? 0) + 1);
+    }
+    return sanitized.map((q) => {
+      if (isTrueFalseQuestion(q)) return q;
+      const repeated = (counts.get(signature(q)) ?? 0) >= 3;
+      if (repeated) return enhanceQuizQuestionOptions(q, vocabulary, sanitized);
+      return { ...q, options: shuffleArray(q.options) };
+    });
   }
   return enhanceLessonQuizQuestions(sanitized, vocabulary);
 }
