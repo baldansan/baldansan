@@ -34,6 +34,7 @@ import {
 } from "@/lib/hsk/active-hsk-level";
 import { HelzuiHomeCard } from "@/components/helzui/helzui-home-card";
 import { DailyToneHomeCard } from "@/components/pronunciation/daily-tone-card";
+import { KidPathHomeCard } from "@/components/kids/kid-path-home-card";
 import "@/components/helzui/helzui-course.css";
 import { tr } from "@/lib/i18n/translate";
 import { getUiLocale, useUiLocale } from "@/lib/i18n/ui-locale";
@@ -285,6 +286,9 @@ export function HomeAppView({ catalog, defaultChipId }: Props) {
           />
         </div>
       </section>
+
+      {/* Хүүхдийн горим эсвэл зам эхэлсэн бол — хамгийн эхний карт */}
+      <KidPathHomeCard />
 
       {loggedIn && curriculumCard ? (
         <Link href={curriculumCard.href} className="bs-tm-continue">

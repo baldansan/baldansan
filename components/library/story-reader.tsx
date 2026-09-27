@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useCallback, useEffect, useRef, useState, useSyncExternalStore, type TouchEvent } from "react";
 import type { UiLocale } from "@/lib/i18n/locale-types";
 import { L } from "@/components/books/book-ui";
+import { markStoryFinished, readStoryPage, writeStoryPage } from "@/lib/library/story-progress";
 
 /**
  * Зурагт номын уншигч — нэг удаад нэг хуудас. Контент (хятад, пиньинь, англи, нэрс)
@@ -33,30 +34,8 @@ export type ReaderStory = {
   pages: ReaderPage[];
 };
 
-const PROGRESS_KEY = "buunduu-story-progress-v1";
-
-function readProgress(id: string): number {
-  try {
-    const raw = localStorage.getItem(PROGRESS_KEY);
-    if (!raw) return 0;
-    const obj = JSON.parse(raw) as Record<string, unknown>;
-    const n = obj[id];
-    return typeof n === "number" && Number.isFinite(n) && n > 0 ? Math.floor(n) : 0;
-  } catch {
-    return 0;
-  }
-}
-
-function writeProgress(id: string, page: number): void {
-  try {
-    const raw = localStorage.getItem(PROGRESS_KEY);
-    const obj = raw ? (JSON.parse(raw) as Record<string, unknown>) : {};
-    obj[id] = page;
-    localStorage.setItem(PROGRESS_KEY, JSON.stringify(obj));
-  } catch {
-    // ignore
-  }
-}
+const readProgress = readStoryPage;
+const writeProgress = writeStoryPage;
 
 function subscribeStorage(cb: () => void): () => void {
   window.addEventListener("storage", cb);
@@ -116,7 +95,11 @@ export function StoryReader({ story, locale }: { story: ReaderStory; locale: UiL
       stopPageAudio();
       setIdx(n);
       if (n >= 1 && n <= total) writeProgress(story.id, n);
-      else if (n === total + 1) writeProgress(story.id, 0);
+      else if (n === total + 1) {
+        // Дууссан: хуудсыг 0 болгоод (дахин эхнээс нь) «уншиж дууссан» тэмдэг тавина
+        writeProgress(story.id, 0);
+        markStoryFinished(story.id);
+      }
       if (typeof window !== "undefined") window.scrollTo({ top: 0 });
     },
     [total, story.id, stopPageAudio],
