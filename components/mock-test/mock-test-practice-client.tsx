@@ -444,6 +444,9 @@ export function MockTestPracticeClient({ test, questions, lessonTitles }: Props)
           onSelfGrade={handleSelfGrade}
           feedback={feedback}
           hideAudio={Boolean(sharedAudioUrl)}
+          prefetchAudioUrls={activeQuestions
+            .slice(index + 1, index + 3)
+            .map((item) => item.audio_url)}
         />
 
         {revealed && lessonId && lessonTitle ? (

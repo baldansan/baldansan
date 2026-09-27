@@ -1,6 +1,13 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import {
+  getPracticeAudio,
+  pauseOtherPracticeAudio,
+  prefetchPracticeAudio,
+  readPracticeAutoplay,
+  writePracticeAutoplay,
+} from "@/lib/mock-test/practice-audio-store";
 import {
   isSelfGradedPracticeQuestion,
   type PracticeFeedback,
@@ -27,6 +34,8 @@ type Props = {
    * картан дотор давхардуулахгүй.
    */
   hideAudio?: boolean;
+  /** Дараагийн асуултуудын аудио url — урьдчилж татахад. */
+  prefetchAudioUrls?: Array<string | null | undefined>;
 };
 
 /** Сонголт бүрийн харагдах төлөв — будаж харуулахад хэрэглэнэ. */
@@ -62,98 +71,140 @@ function OptionMark({ state }: { state: OptionState }) {
  * Аудио тоглуулагч. Шалгалтаас ялгаатай нь ХЯЗГААРГҮЙ дахин сонсоно —
  * сурах горимын гол утга нь энэ.
  *
- * Асуулт солигдоход дуудагч талаас `key={url}` өгч дахин мountлуулна —
- * effect дотор setState хийхээс зайлсхийсэн.
+ * Аудио элементийг url-аар нь кэшлэсэн (practice-audio-store) тул асуулт
+ * солигдоход файл дахин татагдахгүй; автомат тоглуулалт асаалттай бол
+ * дараагийн асуулт руу шилжмэгц тэр хэсэг нь шууд эхэлнэ.
  */
 export function PracticeAudio({
   url,
   startSec = null,
   endSec = null,
+  prefetchUrls = [],
 }: {
   url: string;
   /** Хэсгийн бүтэн бичлэг дэх энэ асуултын эхлэх секунд. */
   startSec?: number | null;
   endSec?: number | null;
+  /** Дараагийн асуултуудын аудио — урьдчилж татна. */
+  prefetchUrls?: Array<string | null | undefined>;
 }) {
-  const ref = useRef<HTMLAudioElement>(null);
-  const [playing, setPlaying] = useState(false);
   const sliced = startSec != null;
+  const [playing, setPlaying] = useState(false);
+  const [progress, setProgress] = useState(0);
+  const [autoplay, setAutoplay] = useState(true);
+  const elRef = useRef<HTMLAudioElement | null>(null);
 
-  /**
-   * Зөвхөн энэ асуултын хэсгийг тоглуулна: эхлэхдээ startSec рүү үсэрч,
-   * endSec дээр зогсоно. Хэрэглэгч гар аргаар хэсгээс гарвал таслахгүй —
-   * зөвхөн энэ хэсгийг дуусгах үед л зогсооно.
-   */
+  useEffect(() => {
+    const el = getPracticeAudio(url);
+    elRef.current = el;
+    pauseOtherPracticeAudio(el);
+    const auto = readPracticeAutoplay();
+    setAutoplay(auto);
+    setProgress(0);
+
+    const seekStart = () => {
+      if (!sliced) return;
+      try {
+        if (Math.abs(el.currentTime - startSec) > 0.3) el.currentTime = startSec;
+      } catch {
+        // seek дэмжигдэхгүй бол эхнээс нь
+      }
+    };
+    const onPlay = () => setPlaying(true);
+    const onPause = () => setPlaying(false);
+    const onTime = () => {
+      if (endSec != null && el.currentTime >= endSec) {
+        el.pause();
+        setProgress(1);
+        return;
+      }
+      const s = sliced ? startSec : 0;
+      const e = endSec ?? (Number.isFinite(el.duration) ? el.duration : 0);
+      if (e > s) setProgress(Math.min(1, Math.max(0, (el.currentTime - s) / (e - s))));
+    };
+    el.addEventListener("play", onPlay);
+    el.addEventListener("pause", onPause);
+    el.addEventListener("ended", onPause);
+    el.addEventListener("timeupdate", onTime);
+
+    let cancelled = false;
+    const start = () => {
+      if (cancelled) return;
+      seekStart();
+      if (auto) {
+        el.play().catch(() => {
+          /* хөтөч автомат тоглуулалтыг хориглосон — товч дарна */
+        });
+      }
+    };
+    if (el.readyState >= 1) start();
+    else el.addEventListener("loadedmetadata", start, { once: true });
+
+    prefetchPracticeAudio(prefetchUrls);
+
+    return () => {
+      cancelled = true;
+      el.removeEventListener("play", onPlay);
+      el.removeEventListener("pause", onPause);
+      el.removeEventListener("ended", onPause);
+      el.removeEventListener("timeupdate", onTime);
+      el.removeEventListener("loadedmetadata", start);
+      el.pause();
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [url, startSec, endSec]);
+
   const playFromStart = () => {
-    const el = ref.current;
+    const el = elRef.current;
     if (!el) return;
+    pauseOtherPracticeAudio(el);
     if (sliced) el.currentTime = startSec;
+    else el.currentTime = 0;
     void el.play();
   };
 
-  const handleTimeUpdate = () => {
-    const el = ref.current;
-    if (!el || endSec == null) return;
-    if (el.currentTime >= endSec) el.pause();
-  };
-
-  /**
-   * `#t=` хэлтэрхий заримдаа ажиллахгүй (хөтөч, серверээс хамаарна) тул
-   * мета мэдээлэл ачаалагдмагц гараар нь эхлэх цэг рүү нь аваачна.
-   */
-  const handleLoadedMetadata = () => {
-    const el = ref.current;
-    if (!el || !sliced) return;
-    if (el.currentTime < startSec) {
-      try {
-        el.currentTime = startSec;
-      } catch {
-        // seek дэмжигдэхгүй бол эхнээс нь тоглоно — эвдрэхээсээ дээр.
-      }
+  const toggle = () => {
+    const el = elRef.current;
+    if (!el) return;
+    if (playing) {
+      el.pause();
+      return;
     }
+    pauseOtherPracticeAudio(el);
+    if (
+      sliced &&
+      (el.currentTime < startSec || (endSec != null && el.currentTime >= endSec - 0.05))
+    ) {
+      el.currentTime = startSec;
+    }
+    void el.play();
   };
 
   return (
     <div className="bs-mtp-audio">
-      <button
-        type="button"
-        className="bs-mtp-audio-btn"
-        onClick={() => {
-          const el = ref.current;
-          if (!el) return;
-          if (playing) {
-            el.pause();
-            return;
-          }
-          // Хэсгээс гадуур байвал эхнээс нь эхэлнэ.
-          if (
-            sliced &&
-            (el.currentTime < startSec ||
-              (endSec != null && el.currentTime >= endSec))
-          ) {
-            el.currentTime = startSec;
-          }
-          void el.play();
-        }}
-      >
+      <button type="button" className="bs-mtp-audio-btn" onClick={toggle}>
         <span aria-hidden>{playing ? "⏸" : "▶"}</span>
         {playing ? "Түр зогсоох" : "Сонсох"}
       </button>
       <button type="button" className="bs-mtp-audio-again" onClick={playFromStart}>
         ⟲ Эхнээс
       </button>
-      <audio
-        ref={ref}
-        src={sliced ? `${url}#t=${startSec}` : url}
-        preload="metadata"
-        controls
-        className="bs-mtp-audio-el"
-        onPlay={() => setPlaying(true)}
-        onPause={() => setPlaying(false)}
-        onEnded={() => setPlaying(false)}
-        onTimeUpdate={handleTimeUpdate}
-        onLoadedMetadata={handleLoadedMetadata}
-      />
+      <button
+        type="button"
+        className="bs-mtp-audio-again"
+        aria-pressed={autoplay}
+        title="Дараагийн асуулт руу шилжихэд аудио шууд эхлэх"
+        onClick={() => {
+          const next = !autoplay;
+          setAutoplay(next);
+          writePracticeAutoplay(next);
+        }}
+      >
+        {autoplay ? "🔁 Автомат: асаалттай" : "🔁 Автомат: унтраалттай"}
+      </button>
+      <div className="bs-mtp-audio-bar" aria-hidden>
+        <span style={{ width: `${Math.round(progress * 100)}%` }} />
+      </div>
     </div>
   );
 }
@@ -406,6 +457,7 @@ export function MockTestPracticeQuestion({
   onSelfGrade,
   feedback,
   hideAudio = false,
+  prefetchAudioUrls = [],
 }: Props) {
   const options = question.options ?? [];
   const hasImageOptions = options.some((opt) => opt.image_url);
@@ -488,6 +540,7 @@ export function MockTestPracticeQuestion({
           url={question.audio_url}
           startSec={question.audio_start_sec}
           endSec={question.audio_end_sec}
+          prefetchUrls={prefetchAudioUrls}
         />
       ) : null}
       <Stem question={question} />
