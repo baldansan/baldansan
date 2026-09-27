@@ -14,8 +14,10 @@ import { TeacherMetricCard } from "@/components/teacher/teacher-metric-card";
 import { ClassJoinCodeCard } from "@/components/teacher/class-join-code-card";
 import { ClassCurriculumEditor } from "@/components/teacher/class-curriculum-editor";
 import { ClassKidsSection } from "@/components/teacher/class-kids-section";
+import { ClassWritingHomework } from "@/components/teacher/class-writing-homework";
 import { PublicPageShell } from "@/components/public-page-shell";
 import { isCustomAssignment } from "@/lib/classroom/types";
+import { writingListIdFromLessonId } from "@/lib/writing/types";
 import { tr } from "@/lib/i18n/translate";
 import { useUiLocale } from "@/lib/i18n/ui-locale";
 import type {
@@ -129,6 +131,18 @@ export function ClassroomDetailView({ classroomId }: Props) {
         </div>
       </section>
 
+      <section>
+        <h2 className="text-lg font-semibold text-slate-900">
+          ✍️ {tr(locale, "Бичих даалгавар өгөх")}
+        </h2>
+        <p className="mt-1 text-sm text-slate-600">
+          {tr(locale, "Ханз, үгээ оруулаад хэдэн удаа дагаж, санаж бичихийг заана — сурагч апп дээрээ дэвтэртээ бичнэ.")}
+        </p>
+        <div className="mt-3">
+          <ClassWritingHomework classroomId={classroomId} onCreated={() => void load()} />
+        </div>
+      </section>
+
       <section className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         <TeacherMetricCard
           label="Сурагчид"
@@ -216,9 +230,11 @@ export function ClassroomDetailView({ classroomId }: Props) {
                 <span translate="no">{a.title}</span>
               </Link>
               <p className="text-xs text-slate-500">
-                {isCustomAssignment(a.lessonId)
-                  ? "Хичээл хавсаргаагүй"
-                  : `Хичээл ${a.lessonId}`}
+                {writingListIdFromLessonId(a.lessonId)
+                  ? `✍️ ${tr(locale, "Бичих дэвтэр")}`
+                  : isCustomAssignment(a.lessonId)
+                    ? "Хичээл хавсаргаагүй"
+                    : `Хичээл ${a.lessonId}`}
                 {a.dueDate ? ` · Дуусах ${a.dueDate}` : ""} · {a.completedCount}/
                 {a.totalCount} ({a.completionRate}%)
                 {a.averageQuizPercentage != null

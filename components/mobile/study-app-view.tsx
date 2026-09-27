@@ -1,6 +1,7 @@
 "use client";
 
 import { useUiLocale } from "@/lib/i18n/ui-locale";
+import { tr } from "@/lib/i18n/translate";
 
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
@@ -117,6 +118,20 @@ export function StudyAppView({ allLessons }: Props) {
             <p className="font-semibold text-[var(--app-text)]">Уншлагын сан</p>
             <p className="mt-0.5 text-xs text-[var(--app-muted)]">
               Зурагт ном, сонгодог, хэлц үг, жишээ өгүүлбэр
+            </p>
+          </div>
+          <span className="text-lg text-[var(--app-muted)]">›</span>
+        </MobileCard>
+      </Link>
+
+      <Link href="/writing" className="mb-5 block">
+        <MobileCard className="flex items-center justify-between gap-3">
+          <div>
+            <p className="font-semibold text-[var(--app-text)]">
+              ✍️ {tr(locale, "Бичих дэвтэр")}
+            </p>
+            <p className="mt-0.5 text-xs text-[var(--app-muted)]">
+              {tr(locale, "Даалгаврын ханзаа оруулаад бичиж сур")}
             </p>
           </div>
           <span className="text-lg text-[var(--app-muted)]">›</span>

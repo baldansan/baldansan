@@ -8,6 +8,8 @@ const nextConfig: NextConfig = {
     // «Уншлагын сан / 文库» — content/open/ доторх JSON-уудыг fs-ээр уншина.
     "/library": ["./content/open/**/*.json"],
     "/library/**": ["./content/open/**/*.json"],
+    // «Бичих дэвтэр» — ханз таних API нь үгийн сан + ханзны толийг fs-ээр уншина.
+    "/api/writing/**": ["./data/hsk_words.json", "./public/data/hsk_char_gloss.json"],
   },
 };
 

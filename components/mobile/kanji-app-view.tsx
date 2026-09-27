@@ -140,6 +140,28 @@ export function KanjiAppView({ entries, lessonVocab, lang = null }: Props) {
         </Link>
       ) : null}
 
+      {lang !== "ko" ? (
+        <Link
+          href="/writing"
+          className="mb-4 flex items-center gap-3 rounded-2xl bg-white px-4 py-3.5 shadow-sm ring-1 ring-emerald-200"
+        >
+          <span className="text-2xl" aria-hidden>
+            📓
+          </span>
+          <span className="min-w-0 flex-1">
+            <span className="block text-sm font-bold text-[var(--app-text)]">
+              {tr(locale, "Бичих дэвтэр")}
+            </span>
+            <span className="block text-xs text-[var(--app-muted)]">
+              {tr(locale, "Даалгаврын ханзаа оруулаад бичиж сур")}
+            </span>
+          </span>
+          <span aria-hidden className="text-[var(--app-muted)]">
+            ›
+          </span>
+        </Link>
+      ) : null}
+
       <div className="mb-4">
         <input
           type="search"

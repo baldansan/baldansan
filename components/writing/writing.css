@@ -1,0 +1,197 @@
+/* «Бичих дэвтэр» (写字本) — 田字格 нүд, бичих самбар, хэвлэх хуудас */
+
+/* --- Жижиг 田字格 нүд (дэвтрийн мөр) --- */
+.wn-cells {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+.wn-cell {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border: 1px dashed #cbd5e1;
+  border-radius: 4px;
+  background-color: #fff;
+  background-image:
+    linear-gradient(to right, transparent calc(50% - 0.5px), #e2e8f0 calc(50% - 0.5px), #e2e8f0 calc(50% + 0.5px), transparent calc(50% + 0.5px)),
+    linear-gradient(to bottom, transparent calc(50% - 0.5px), #e2e8f0 calc(50% - 0.5px), #e2e8f0 calc(50% + 0.5px), transparent calc(50% + 0.5px));
+  display: grid;
+  place-items: center;
+  font-size: 15px;
+  line-height: 1;
+  color: transparent;
+  flex: 0 0 auto;
+}
+.wn-cell.is-trace {
+  border-style: solid;
+  border-color: #6ee7b7;
+  background-color: #d1fae5;
+  color: #047857;
+}
+.wn-cell.is-memory {
+  border-style: solid;
+  border-color: #059669;
+  background-color: #10b981;
+  background-image: none;
+  color: #fff;
+}
+.wn-cell.is-memory-todo {
+  border-style: dashed;
+  border-color: #a7f3d0;
+}
+.wn-cell-sep {
+  width: 6px;
+  flex: 0 0 auto;
+}
+
+/* --- Бичих самбар (hanzi-writer) --- */
+.wn-pad {
+  position: relative;
+  margin: 0 auto;
+  border: 2px solid #c5cfc8;
+  border-radius: 14px;
+  background: #fff;
+  overflow: hidden;
+  color: #d1d5db;
+  touch-action: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.wn-pad-lines {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+.wn-pad-canvas {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+.wn-pad-overlay {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  font-size: 13px;
+  color: #6b7280;
+  z-index: 2;
+  padding: 12px;
+  text-align: center;
+}
+.wn-pad-badge {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  z-index: 2;
+  font-size: 11px;
+  font-weight: 700;
+  color: #047857;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 999px;
+  padding: 2px 8px;
+}
+
+/* --- Хэвлэх хуудас (A4) --- */
+.wn-print-page {
+  background: #fff;
+  color: #111827;
+  font-family: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", "Noto Sans", system-ui, sans-serif;
+}
+.wn-print-sheet {
+  max-width: 190mm;
+  margin: 0 auto;
+  padding: 10mm 8mm;
+}
+.wn-print-row {
+  break-inside: avoid;
+  page-break-inside: avoid;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 3mm 0;
+}
+.wn-print-strokes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+  margin-bottom: 2mm;
+}
+.wn-print-stroke {
+  width: 9mm;
+  height: 9mm;
+  border: 1px solid #e5e7eb;
+  flex: 0 0 auto;
+}
+.wn-print-grid {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 0;
+  overflow-x: auto;
+}
+@media print {
+  .wn-print-grid {
+    overflow: visible;
+  }
+}
+.wn-print-cell {
+  position: relative;
+  width: 16mm;
+  height: 16mm;
+  flex: 0 0 auto;
+  border: 1px solid #9ca3af;
+  margin-right: -1px;
+  background-image:
+    repeating-linear-gradient(to right, transparent 0 calc(50% - 0.3mm), #d1d5db calc(50% - 0.3mm) calc(50% + 0.3mm), transparent calc(50% + 0.3mm) 100%),
+    repeating-linear-gradient(to bottom, transparent 0 calc(50% - 0.3mm), #d1d5db calc(50% - 0.3mm) calc(50% + 0.3mm), transparent calc(50% + 0.3mm) 100%);
+  display: grid;
+  place-items: center;
+  font-size: 12mm;
+  line-height: 1;
+}
+.wn-print-cell.is-trace {
+  color: #d1d5db;
+}
+.wn-print-cell.is-faint {
+  color: #b3b3b3;
+  opacity: 0.55;
+}
+.wn-print-cell.is-empty {
+  color: transparent;
+}
+.wn-print-meta {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  margin-bottom: 1.5mm;
+  font-size: 12px;
+  color: #374151;
+}
+.wn-print-meta b {
+  font-size: 18px;
+  color: #111827;
+}
+
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 10mm;
+  }
+  html,
+  body {
+    background: #fff !important;
+  }
+  .wn-no-print,
+  .bs-fb-report-fab {
+    display: none !important;
+  }
+  .wn-print-sheet {
+    max-width: none;
+    padding: 0;
+  }
+  .wn-print-row {
+    padding: 2.5mm 0;
+  }
+}

@@ -14,6 +14,7 @@ import {
 } from "@/lib/classroom/types";
 import { getStudentAssignments } from "@/lib/supabase/classrooms";
 import { getMyCurriculum } from "@/lib/supabase/curriculum";
+import { writingListIdFromLessonId } from "@/lib/writing/types";
 import { tr } from "@/lib/i18n/translate";
 import { useUiLocale } from "@/lib/i18n/ui-locale";
 
@@ -30,6 +31,7 @@ const ASSIGNMENT_TYPE_LABELS: Record<string, string> = {
   vocabulary: "Үгсийн сан",
   quiz: "Дасгал",
   review: "Давталт",
+  writing: "Бичих дэвтэр",
 };
 
 function isCompleted(status: string | null): boolean {
@@ -120,7 +122,9 @@ export function MyAssignmentsView() {
         <ul className="flex flex-col gap-3">
           {assignments.map((a) => {
             const completed = isCompleted(a.resultStatus);
-            const custom = isCustomAssignment(a.lessonId);
+            // «Бичих дэвтэр» даалгавар: lesson_id = "writing:<listId>" — хичээл биш.
+            const writingListId = writingListIdFromLessonId(a.lessonId);
+            const custom = !writingListId && isCustomAssignment(a.lessonId);
             return (
               <li
                 key={a.id}
@@ -144,7 +148,12 @@ export function MyAssignmentsView() {
                 <p className="mt-1 text-xs text-slate-500">
                   {a.classroomName}
                   {a.organizationName ? ` · ${a.organizationName}` : ""} ·{" "}
-                  {custom ? "Багшийн даалгавар" : `${a.lessonId} хичээл`} ·{" "}
+                  {writingListId
+                    ? tr(locale, "Бичих дэвтэр")
+                    : custom
+                      ? "Багшийн даалгавар"
+                      : `${a.lessonId} хичээл`}{" "}
+                  ·{" "}
                   {ASSIGNMENT_TYPE_LABELS[a.assignmentType] ?? a.assignmentType}
                 </p>
                 {a.teacherLabel ? (
@@ -182,7 +191,14 @@ export function MyAssignmentsView() {
                   className="mt-3"
                 />
 
-                {custom ? null : (
+                {writingListId ? (
+                  <Link
+                    href={`/writing/${writingListId}`}
+                    className="mt-3 inline-flex rounded-full bg-emerald-500 px-4 py-2 text-sm font-semibold text-white"
+                  >
+                    ✍️ {tr(locale, "Бичих")}
+                  </Link>
+                ) : custom ? null : (
                   <Link
                     href={`/lessons/${a.lessonId}`}
                     className="mt-3 inline-flex rounded-full bg-emerald-500 px-4 py-2 text-sm font-semibold text-white"
