@@ -17,6 +17,15 @@ export default async function PronunciationPage() {
 
   const sections = [
     {
+      href: "/pronunciation/basics",
+      emoji: "🔤",
+      zh: "拼音基础",
+      mn: "Пиньинь суурь",
+      descZh: "像一年级小朋友一样：a o e → b p m f → 复韵母 → 鼻韵母 → 整体认读 → 规则。听、跟读、练、测。",
+      descMn: "Пиньинь суурь — бо по мо фо-оос эхэлнэ. 13 нэгж: сонс, дагаж хэл, дасгал, шалгалт. Хүүхэд, том хүнд.",
+      bg: "bg-violet-50",
+    },
+    {
       href: "/pronunciation/chart",
       emoji: "🔤",
       zh: "拼音表",
