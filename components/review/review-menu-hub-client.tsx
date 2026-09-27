@@ -454,7 +454,7 @@ export function ReviewMenuHubClient({
           <span className="bs-tm-card-body">
             <span className="bs-tm-card-title">{tr(locale, "Уншлагын сан")}</span>
             <span className="bs-tm-card-sub">
-              {tr(locale, "Зурагт ном, сонгодог, хэлц үг, жишээ өгүүлбэр")}
+              {tr(locale, "Зурагт ном, хэлц·зүйр цэцэн үг")}
             </span>
           </span>
           <span className="bs-tm-card-chev" aria-hidden>›</span>

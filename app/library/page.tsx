@@ -4,7 +4,7 @@ import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
 import { MobilePageHeader } from "@/components/mobile/mobile-page-header";
 import { SHELL_MAIN_NARROW } from "@/lib/app-shell-classes";
 import { getServerUiLocale } from "@/lib/i18n/server-locale";
-import { getFables, getIdioms, getMengxue, getSentences, getStories, getTangshi } from "@/lib/library/data";
+import { getFables, getIdioms, getStories } from "@/lib/library/data";
 
 export const dynamic = "force-dynamic";
 
@@ -12,20 +12,22 @@ export const metadata = {
   title: "文库 — Бөөндөө Сурцгаая",
 };
 
+/**
+ * ЗӨВХӨН монгол тайлбартай/дагаж сурч болохуйц агуулгыг эндээс холбоно.
+ * 蒙学经典·唐诗 (/library/classics) болон 例句 (/library/sentences) нь
+ * зөвхөн хятад+пиньинь(+англи) — монгол орчуулга/тайлбаргүй тул суралцагчид
+ * ойлгомжгүй, ашиггүй байсан тул энэ жагсаалтаас түр хассан. Кодыг
+ * устгаагүй, зөвхөн орчуулгатай болмогц буцааж холбоно.
+ */
 export default async function LibraryPage() {
-  const [locale, stories, mengxue, tangshi, idioms, proverbs, xiehouyu, fables, tatoeba, zhongdex] =
-    await Promise.all([
-      getServerUiLocale(),
-      getStories(),
-      getMengxue(),
-      getTangshi(),
-      getIdioms("idioms"),
-      getIdioms("proverbs"),
-      getIdioms("xiehouyu"),
-      getFables(),
-      getSentences("tatoeba"),
-      getSentences("zhongdex"),
-    ]);
+  const [locale, stories, idioms, proverbs, xiehouyu, fables] = await Promise.all([
+    getServerUiLocale(),
+    getStories(),
+    getIdioms("idioms"),
+    getIdioms("proverbs"),
+    getIdioms("xiehouyu"),
+    getFables(),
+  ]);
   const withAudio = stories.filter((s) => s.provider === "gsb").length;
 
   const sections = [
@@ -39,15 +41,6 @@ export default async function LibraryPage() {
       bg: "bg-amber-50",
     },
     {
-      href: "/library/classics",
-      emoji: "📜",
-      zh: "蒙学经典 · 唐诗",
-      mn: "Сонгодог бичвэр · Тан шүлэг",
-      descZh: `《三字经》《弟子规》《千字文》等 ${mengxue.works.length} 部蒙学经典，唐诗三百首 ${tangshi.poems.length} 首，全部注音。`,
-      descMn: `三字经, 弟子规, 千字文 зэрэг ${mengxue.works.length} сонгодог, Тан шүлэг ${tangshi.poems.length}. Бүгд пиньинтэй.`,
-      bg: "bg-rose-50",
-    },
-    {
       href: "/library/idioms",
       emoji: "🀄",
       zh: "成语 · 谚语 · 歇后语",
@@ -55,15 +48,6 @@ export default async function LibraryPage() {
       descZh: `${idioms.length} 条成语、${proverbs.length} 条谚语、${xiehouyu.length} 条歇后语，${fables.items.length} 篇成语寓言原文。`,
       descMn: `${idioms.length} хэлц (成语), ${proverbs.length} зүйр үг, ${xiehouyu.length} 歇后语, ${fables.items.length} үлгэр домгийн эх.`,
       bg: "bg-emerald-50",
-    },
-    {
-      href: "/library/sentences",
-      emoji: "💬",
-      zh: "例句",
-      mn: "Жишээ өгүүлбэр",
-      descZh: `${(tatoeba.length + zhongdex.length).toLocaleString("en-US")} 个例句，按 HSK 级别筛选，带拼音和英文。`,
-      descMn: `${(tatoeba.length + zhongdex.length).toLocaleString("en-US")} өгүүлбэр, HSK түвшнээр шүүнэ, пиньинь + англи.`,
-      bg: "bg-sky-50",
     },
   ];
 
@@ -73,8 +57,8 @@ export default async function LibraryPage() {
         title={L(locale, "文库", "Уншлагын сан")}
         subtitle={L(
           locale,
-          "开放授权的中文阅读材料：图画书、经典、成语、例句。",
-          "Нээлттэй лицензтэй хятад уншлагын материал: зурагт ном, сонгодог, хэлц, жишээ өгүүлбэр.",
+          "开放授权的中文阅读材料：图画书、成语。",
+          "Нээлттэй лицензтэй хятад уншлагын материал: зурагт ном, хэлц үг.",
         )}
       />
       <div className="grid grid-cols-1 gap-3">
