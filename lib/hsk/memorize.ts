@@ -2,6 +2,7 @@ import { createClient } from "@supabase/supabase-js";
 import type { HskLevel, HskWord } from "@/lib/hsk";
 import { MEMORIZE_BATCH_SIZE } from "@/lib/hsk/pos-catalog";
 import {
+  getCharFamilyGroups,
   getWordThemeGroup,
   getWordThemeGroups,
 } from "@/lib/hsk/word-themes";
@@ -182,10 +183,17 @@ export type MemorizeThemeGroupSummary = {
   icon: string;
   wordIds: number[];
   wordCount: number;
+  /** Бүлгийн төрөл (байхгүй бол "theme"). */
+  kind?: "theme" | "family";
+  /** Ханзны гэр бүл: ханз ба богино утга. */
+  char?: string;
+  charMn?: string;
 };
 
-/** Сэдэвчилсэн бүлгүүдийн жагсаалт. Theme файл эсвэл Supabase байхгүй бол
- * null буцаана → дуудагч тал хуучин пиньинь багц руу fallback хийнэ. */
+/** Сэдэвчилсэн бүлгүүдийн жагсаалт (араас нь ханзны гэр бүлүүд). Theme файл
+ * эсвэл Supabase байхгүй бол null буцаана → дуудагч тал хуучин пиньинь багц
+ * руу fallback хийнэ. totalWords нь зөвхөн сэдвийн бүлгүүдийн нийлбэр
+ * (гэр бүлүүд давхцдаг тул давхар тоолохгүй). */
 export async function fetchMemorizeThemeSummaries(level: HskLevel): Promise<{
   groups: MemorizeThemeGroupSummary[];
   totalWords: number;
@@ -214,11 +222,32 @@ export async function fetchMemorizeThemeSummaries(level: HskLevel): Promise<{
       icon: group.icon,
       wordIds,
       wordCount: wordIds.length,
+      kind: "theme",
     });
   }
 
   if (groups.length === 0) return null;
   const totalWords = groups.reduce((sum, g) => sum + g.wordCount, 0);
+
+  const familyGroups = await getCharFamilyGroups(level);
+  for (const group of familyGroups ?? []) {
+    const wordIds = group.words
+      .map((s) => idBySimplified.get(s))
+      .filter((id): id is number => typeof id === "number");
+    if (wordIds.length === 0) continue;
+    groups.push({
+      batchIndex: groups.length,
+      groupId: group.id,
+      title: group.title,
+      icon: group.icon,
+      wordIds,
+      wordCount: wordIds.length,
+      kind: "family",
+      char: group.char,
+      charMn: group.charMn,
+    });
+  }
+
   return { groups, totalWords };
 }
 
@@ -232,13 +261,29 @@ export async function fetchMemorizeThemeGroup(
   groupId: string;
   title: string;
   icon: string;
+  kind?: "theme" | "family";
+  char?: string;
+  charPinyin?: string;
+  charMn?: string;
+  known?: string[];
 } | null> {
   const group = await getWordThemeGroup(level, groupId);
   if (!group) return null;
 
+  const meta = {
+    groupId: group.id,
+    title: group.title,
+    icon: group.icon,
+    kind: group.kind ?? "theme",
+    char: group.char,
+    charPinyin: group.charPinyin,
+    charMn: group.charMn,
+    known: group.known,
+  };
+
   const supabase = catalogClient();
   if (!supabase) {
-    return { words: [], wordIds: [], groupId: group.id, title: group.title, icon: group.icon };
+    return { words: [], wordIds: [], ...meta };
   }
 
   const { data, error } = await supabase
@@ -261,9 +306,7 @@ export async function fetchMemorizeThemeGroup(
   return {
     words,
     wordIds: words.map((w) => w.id),
-    groupId: group.id,
-    title: group.title,
-    icon: group.icon,
+    ...meta,
   };
 }
 

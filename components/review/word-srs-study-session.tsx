@@ -23,6 +23,7 @@ import {
 import { SpeakerButton } from "@/components/tts/speaker-button";
 import { PronunciationPractice } from "@/components/speech/pronunciation-practice";
 import { WordCharBreakdownPanel } from "@/components/review/word-char-breakdown-panel";
+import { WordPartsLine } from "@/components/review/word-parts-line";
 import { WordPracticeLauncher } from "@/components/review/word-practice-launcher";
 import { WordPracticeDonePanel } from "@/components/review/practice/word-practice-done-panel";
 import { WordPracticeMeaningView } from "@/components/review/practice/word-practice-meaning-view";
@@ -987,6 +988,8 @@ export function WordSrsStudySession({
               </div>
 
               <p className="bs-srs-meaning" translate="no">{word.meaning_mn ?? "—"}</p>
+
+              <WordPartsLine text={word.simplified} />
 
               {word.example_zh ? (
 

@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import { WordCharBreakdownPanel } from "@/components/review/word-char-breakdown-panel";
+import { WordPartsLine } from "@/components/review/word-parts-line";
 import SpeakButton from "@/components/lesson/SpeakButton";
 import {
   getBichlegWordStatus,
@@ -185,6 +186,8 @@ export function WordTapSheet({ word, anchor, onClose, onSaved }: Props) {
               : "Тольд алга"}
           </p>
         ) : null}
+
+        <WordPartsLine text={word.zh} />
 
         <WordCharBreakdownPanel
           text={word.zh}
