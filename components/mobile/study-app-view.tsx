@@ -66,7 +66,7 @@ export function StudyAppView({ allLessons }: Props) {
   return (
     <MobileAppShell activeTab="study" >
       <MobilePageHeader
-        title="Давтах"
+        title={tr(locale, "Хичээлүүд")}
         subtitle={trackLabel || "Хичээл, үгс"}
       />
 

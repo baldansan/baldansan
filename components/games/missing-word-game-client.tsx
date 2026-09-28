@@ -120,7 +120,10 @@ export function MissingWordGameClient({
   if (questions.length === 0) {
     return (
       <GameShell>
-        <GameHeader title={labels.missingWordTitle} />
+        <GameHeader
+          title={labels.missingWordTitle}
+          backHref={levelMode ? levelMode.mapHref : `/lessons/${lessonId}`}
+        />
         <GameEmptyState
           lessonId={lessonId}
           message={labels.missingEmptyMessage}
@@ -130,7 +133,7 @@ export function MissingWordGameClient({
   }
 
   const headerLevel = levelMode ? levelHeaderInfo(levelMode) : undefined;
-  const backHref = levelMode?.mapHref;
+  const backHref = levelMode ? levelMode.mapHref : `/lessons/${lessonId}`;
   const shellClass = levelShellClass(levelMode);
 
   if (finished && levelMode) {

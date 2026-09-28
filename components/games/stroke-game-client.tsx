@@ -141,10 +141,12 @@ export function StrokeGameClient({
     setPartPop(null);
   }
 
+  const backHref = `/lessons/${lessonId}`;
+
   if (questions.length === 0) {
     return (
       <GameShell>
-        <GameHeader title={labels.strokeTitle} />
+        <GameHeader title={labels.strokeTitle} backHref={backHref} />
         <GameEmptyState
           lessonId={lessonId}
           message={labels.strokeEmptyMessage}
@@ -156,7 +158,7 @@ export function StrokeGameClient({
   if (finished) {
     return (
       <GameShell>
-        <GameHeader title={labels.strokeTitle} score={score} />
+        <GameHeader title={labels.strokeTitle} backHref={backHref} score={score} />
         <GameResultCard
           score={score}
           correct={correctCount}
@@ -174,6 +176,7 @@ export function StrokeGameClient({
     <GameShell>
       <GameHeader
         title={labels.strokeTitle}
+        backHref={backHref}
         progress={`${index + 1}/${total}`}
         score={score}
       />

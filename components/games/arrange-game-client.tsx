@@ -145,7 +145,10 @@ export function ArrangeGameClient({
   if (questions.length === 0) {
     return (
       <GameShell>
-        <GameHeader title={labels.arrangeTitle} />
+        <GameHeader
+          title={labels.arrangeTitle}
+          backHref={levelMode ? levelMode.mapHref : `/lessons/${lessonId}`}
+        />
         <GameEmptyState
           lessonId={lessonId}
           message={labels.arrangeEmptyMessage}
@@ -155,7 +158,7 @@ export function ArrangeGameClient({
   }
 
   const headerLevel = levelMode ? levelHeaderInfo(levelMode) : undefined;
-  const backHref = levelMode?.mapHref;
+  const backHref = levelMode ? levelMode.mapHref : `/lessons/${lessonId}`;
   const shellClass = levelShellClass(levelMode);
 
   if (finished && levelMode) {

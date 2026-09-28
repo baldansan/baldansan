@@ -119,7 +119,10 @@ export function TranslateGameClient({
   if (questions.length === 0) {
     return (
       <GameShell>
-        <GameHeader title={labels.translateTitle} />
+        <GameHeader
+          title={labels.translateTitle}
+          backHref={levelMode ? levelMode.mapHref : `/lessons/${lessonId}`}
+        />
         <GameEmptyState
           lessonId={lessonId}
           message="Энэ хичээлд тоглоом үүсгэхэд хангалттай үг алга."
@@ -129,7 +132,7 @@ export function TranslateGameClient({
   }
 
   const headerLevel = levelMode ? levelHeaderInfo(levelMode) : undefined;
-  const backHref = levelMode?.mapHref;
+  const backHref = levelMode ? levelMode.mapHref : `/lessons/${lessonId}`;
   const shellClass = levelShellClass(levelMode);
 
   if (finished && levelMode) {

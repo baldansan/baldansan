@@ -431,6 +431,25 @@ export function ReviewMenuHubClient({
         </Link>
 
         <p className="bs-tm-sec" style={{ marginTop: 18 }}>
+          {tr(locale, "Ханз · Дуудлага")}
+        </p>
+
+        <Link href="/kanji" className="bs-tm-card">
+          <span className="bs-tm-card-ic bs-tm-card-ic--green" aria-hidden>
+            🈴
+          </span>
+          <span className="bs-tm-card-body">
+            <span className="bs-tm-card-title">
+              {tr(locale, "Ханз, дуудлага, бичих дэвтэр")}
+            </span>
+            <span className="bs-tm-card-sub">
+              {tr(locale, "Толь бичиг, бичих дадлага, дэвтэр, дуудлага")}
+            </span>
+          </span>
+          <span className="bs-tm-card-chev" aria-hidden>›</span>
+        </Link>
+
+        <p className="bs-tm-sec" style={{ marginTop: 18 }}>
           {tr(locale, "Материал")}
         </p>
 
