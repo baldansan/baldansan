@@ -1,10 +1,10 @@
 import type { Metadata, Viewport } from "next";
 import {
   Geist_Mono,
+  Ma_Shan_Zheng,
   Noto_Sans_SC,
   Noto_Serif_SC,
   Nunito,
-  Zhi_Mang_Xing,
 } from "next/font/google";
 import { LearnerLanguageGuard } from "@/components/learner-language-guard";
 import { AppProviders } from "@/components/providers/app-providers";
@@ -38,8 +38,8 @@ const notoSerifSc = Noto_Serif_SC({
   display: "swap",
 });
 
-/** Гар бичлэг/самбар дээрх бичлэгтэй төстэй донж (志莽行书). */
-const zhiMangXing = Zhi_Mang_Xing({
+/** Гар бичлэг/самбар дээрх бичлэгтэй төстэй донж — нарийн зураастай (马善政楷书). */
+const maShanZheng = Ma_Shan_Zheng({
   variable: "--font-zh-brush",
   subsets: ["latin"],
   weight: "400",
@@ -139,7 +139,7 @@ export default async function RootLayout({
   return (
     <html
       lang={locale === "zh" ? "zh-CN" : "mn"}
-      className={`${nunito.variable} ${notoSansSc.variable} ${notoSerifSc.variable} ${zhiMangXing.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${nunito.variable} ${notoSansSc.variable} ${notoSerifSc.variable} ${maShanZheng.variable} ${geistMono.variable} h-full antialiased`}
     >
       <head>
         <script dangerouslySetInnerHTML={{ __html: PENDING_SCRIPT }} />

@@ -53,7 +53,7 @@
   --bs-zh:var(--font-noto-serif-sc, 'Noto Serif SC'),serif;
 }
 :root[data-hanzi-font="brush"]{
-  --bs-zh:var(--font-zh-brush, 'Zhi Mang Xing'),cursive;
+  --bs-zh:var(--font-zh-brush, 'Ma Shan Zheng'),cursive;
 }
 
 /* === Үндсэн стиль === */

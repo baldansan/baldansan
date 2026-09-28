@@ -38,7 +38,7 @@ export const HANZI_FONT_OPTIONS: {
     id: "brush",
     labelMn: "Гар бичлэг",
     descMn: "Багш самбар дээр бичдэгтэй төстэй донж",
-    fontFamily: "var(--font-zh-brush, 'Zhi Mang Xing'), cursive",
+    fontFamily: "var(--font-zh-brush, 'Ma Shan Zheng'), cursive",
   },
 ];
 
