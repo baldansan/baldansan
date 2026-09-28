@@ -100,7 +100,9 @@ function IdiomCard({ x }: { x: Idiom }) {
               </span>
             ) : null}
           </p>
-          {x.en.length > 0 ? (
+          {x.mn ? (
+            <p className="mt-1 text-sm leading-5 text-emerald-800">💡 {x.mn.keyMn}</p>
+          ) : x.en.length > 0 ? (
             <p className="mt-1 text-sm leading-5 text-[var(--app-text)]">{x.en.join("; ")}</p>
           ) : null}
           {x.literal ? (

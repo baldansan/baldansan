@@ -112,6 +112,51 @@ function IdiomDetail({ found, locale }: { found: Extract<Found, { type: "idiom" 
           <p className="hanzi mt-0.5 text-xs text-[var(--app-muted)]">{x.zh_trad}</p>
         ) : null}
 
+        {x.mn ? (
+          <div className="mt-3 space-y-3 rounded-2xl bg-emerald-50 p-4 ring-1 ring-emerald-200">
+            <p className="text-sm font-bold text-emerald-900">💡 {x.mn.keyMn}</p>
+
+            <div className="space-y-1.5 text-sm leading-6 text-[var(--app-text)]">
+              <p>
+                <span className="font-semibold">Үгчилбэл:</span> {x.mn.literalMn}
+              </p>
+              <p>
+                <span className="font-semibold">Утгачилбал:</span> {x.mn.meaningMn}
+              </p>
+            </div>
+
+            <p className="text-sm leading-6 text-[var(--app-text)]">
+              <span className="font-semibold">Гарал үүсэл:</span> {x.mn.originMn}
+            </p>
+
+            <p className="text-sm leading-6 text-[var(--app-text)]">
+              <span className="font-semibold">Хэзээ хэлдэг вэ:</span> {x.mn.usageMn}
+            </p>
+
+            {x.mn.exampleZh ? (
+              <div className="rounded-xl bg-white p-3 ring-1 ring-emerald-100" translate="no">
+                <p className="hanzi text-base text-[var(--app-text)]">{x.mn.exampleZh}</p>
+                {x.mn.examplePinyin ? (
+                  <p className="mt-0.5 text-xs text-[var(--app-muted)]">{x.mn.examplePinyin}</p>
+                ) : null}
+                {x.mn.exampleMn ? (
+                  <p className="mt-1 text-sm text-[var(--app-text)]">— {x.mn.exampleMn}</p>
+                ) : null}
+              </div>
+            ) : null}
+
+            {x.mn.similarMn ? (
+              <p className="text-sm leading-6 text-[var(--app-muted)]">
+                <span className="font-semibold">Монгол зүйрлэл:</span> {x.mn.similarMn}
+              </p>
+            ) : null}
+          </div>
+        ) : (
+          <p className="mt-3 text-xs text-[var(--app-muted)]">
+            {L(locale, "蒙古语翻译将在老师审核后逐步加入。", "Монгол орчуулга удахгүй нэмэгдэнэ.")}
+          </p>
+        )}
+
         {x.en.length > 0 ? (
           <ul className="mt-3 list-disc space-y-1 pl-5 text-sm leading-6 text-[var(--app-text)]">
             {x.en.map((e, i) => (
