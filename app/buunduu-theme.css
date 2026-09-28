@@ -43,6 +43,19 @@
   --bs-zh:var(--font-noto-sc, 'Noto Sans SC'),sans-serif;
 }
 
+/*
+ * Ханзны фонт сонголт (Тохиргоо хуудас, lib/hanzi-font).
+ * html[data-hanzi-font] нь --bs-zh-ийг дарж бичих тул .hanzi/.zh/.bs-zh классуудыг
+ * ашигладаг бүх хуудас (үг, хэлц, толь бичиг, хичээл гэх мэт) шууд шинэ фонтоор
+ * харагдана. Өгөгдмөл (attribute байхгүй үед) — Noto Sans SC хэвээрээ.
+ */
+:root[data-hanzi-font="serif"]{
+  --bs-zh:var(--font-noto-serif-sc, 'Noto Serif SC'),serif;
+}
+:root[data-hanzi-font="brush"]{
+  --bs-zh:var(--font-zh-brush, 'Zhi Mang Xing'),cursive;
+}
+
 /* === Үндсэн стиль === */
 body{
   background:

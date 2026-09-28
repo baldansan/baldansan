@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { DeleteAccountCard } from "@/components/account/delete-account-card";
+import { HanziFontSetting } from "@/components/settings/hanzi-font-setting";
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
 import { MobileCard } from "@/components/mobile/mobile-card";
 import { MobilePageHeader } from "@/components/mobile/mobile-page-header";
@@ -113,6 +114,8 @@ export function SettingsAppView() {
           </button>
         </div>
       </MobileCard>
+
+      <HanziFontSetting />
 
       {!language ? (
         <MobileCard className="mb-4 border-amber-200 bg-amber-50">

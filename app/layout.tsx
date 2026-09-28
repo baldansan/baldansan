@@ -1,5 +1,11 @@
 import type { Metadata, Viewport } from "next";
-import { Geist_Mono, Noto_Sans_SC, Nunito } from "next/font/google";
+import {
+  Geist_Mono,
+  Noto_Sans_SC,
+  Noto_Serif_SC,
+  Nunito,
+  Zhi_Mang_Xing,
+} from "next/font/google";
 import { LearnerLanguageGuard } from "@/components/learner-language-guard";
 import { AppProviders } from "@/components/providers/app-providers";
 import { UiLocaleProvider } from "@/components/i18n/ui-locale-provider";
@@ -21,6 +27,22 @@ const notoSansSc = Noto_Sans_SC({
   variable: "--font-noto-sc",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
+  display: "swap",
+});
+
+/** Ханз фонт сонголт — Тохиргоо хуудсанд сурагч сонгоно (lib/hanzi-font). */
+const notoSerifSc = Noto_Serif_SC({
+  variable: "--font-noto-serif-sc",
+  subsets: ["latin"],
+  weight: ["400", "600", "700"],
+  display: "swap",
+});
+
+/** Гар бичлэг/самбар дээрх бичлэгтэй төстэй донж (志莽行书). */
+const zhiMangXing = Zhi_Mang_Xing({
+  variable: "--font-zh-brush",
+  subsets: ["latin"],
+  weight: "400",
   display: "swap",
 });
 
@@ -102,6 +124,12 @@ export const viewport: Viewport = {
  */
 const PENDING_SCRIPT = `(function(){try{var m=document.cookie.match(/(?:^|;\s*)buunduu-ui-locale=(zh|mn)/);var l=m?m[1]:(localStorage.getItem('buunduu-ui-locale-v1')||'zh');if(l==='zh'){document.documentElement.classList.add('ui-zh-pending');setTimeout(function(){document.documentElement.classList.remove('ui-zh-pending')},3000)}}catch(e){}})()`;
 
+/**
+ * Ханзны фонтын сонголт (Тохиргоо: Энгийн/Сурах бичиг/Самбар) — localStorage-оос
+ * унших ба CSS-ийн зурагдахаас (flash) өмнө html дээр data-hanzi-font тавина.
+ */
+const HANZI_FONT_SCRIPT = `(function(){try{var f=localStorage.getItem('buunduu-hanzi-font-v1');if(f==='serif'||f==='brush'){document.documentElement.setAttribute('data-hanzi-font',f)}}catch(e){}})()`;
+
 export default async function RootLayout({
   children,
 }: Readonly<{
@@ -111,10 +139,11 @@ export default async function RootLayout({
   return (
     <html
       lang={locale === "zh" ? "zh-CN" : "mn"}
-      className={`${nunito.variable} ${notoSansSc.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${nunito.variable} ${notoSansSc.variable} ${notoSerifSc.variable} ${zhiMangXing.variable} ${geistMono.variable} h-full antialiased`}
     >
       <head>
         <script dangerouslySetInnerHTML={{ __html: PENDING_SCRIPT }} />
+        <script dangerouslySetInnerHTML={{ __html: HANZI_FONT_SCRIPT }} />
       </head>
       <body className="flex min-h-full flex-col font-sans">
         <UiLocaleProvider locale={locale}>
