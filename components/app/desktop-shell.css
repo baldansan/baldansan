@@ -434,3 +434,71 @@
     grid-column: auto;
   }
 }
+
+/* ---- Толь бичиг 2 самбар (PC) ---- */
+.bs-dict-two {
+  display: contents;
+}
+@media (min-width: 920px) {
+  .bs-dict-two {
+    display: grid;
+    grid-template-columns: 460px minmax(0, 1fr);
+    gap: 24px;
+    align-items: start;
+  }
+  .bs-dict-list {
+    position: sticky;
+    top: 80px;
+    max-height: calc(100vh - 100px);
+    overflow-y: auto;
+    padding-right: 4px;
+    scrollbar-width: thin;
+  }
+  .bs-dict-detail {
+    min-height: 420px;
+  }
+  .bs-dict-panel {
+    background: #fff;
+    border-radius: 20px;
+    padding: 22px 24px;
+    box-shadow: 0 2px 12px rgba(15, 23, 42, 0.06);
+  }
+  .bs-dict-empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 320px;
+    border-radius: 20px;
+    border: 1px dashed #c8d1cb;
+    text-align: center;
+  }
+}
+
+/* Холбох / Дараалал: гарын товчны дугаар (PC) */
+.bs-desk-only-inline {
+  display: none;
+}
+@media (min-width: 920px) {
+  .bs-desk-only-inline {
+    display: inline;
+  }
+  .app-game-hotkey--inline {
+    position: static;
+    transform: none;
+    margin-right: 8px;
+    width: 22px;
+    height: 22px;
+    font-size: 11px;
+    vertical-align: middle;
+  }
+  .app-game-hotkey--corner {
+    position: absolute;
+    left: -6px;
+    top: -6px;
+    transform: none;
+    width: 18px;
+    height: 18px;
+    font-size: 10px;
+  }
+}

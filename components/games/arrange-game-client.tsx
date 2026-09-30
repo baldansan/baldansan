@@ -164,6 +164,28 @@ export function ArrangeGameClient({
     juice.reset();
   }
 
+  // PC гарын товч: 1–9 хавтанг сонгох, Backspace сүүлийнхийг буцаах, Enter шалгах/дараах
+  useEffect(() => {
+    function onKey(e: KeyboardEvent) {
+      if (finished || !current) return;
+      const target = e.target as HTMLElement | null;
+      if (target && (target.tagName === "INPUT" || target.tagName === "TEXTAREA")) return;
+      if (e.metaKey || e.ctrlKey || e.altKey) return;
+      if (e.key >= "1" && e.key <= "9" && !checked) {
+        const i = Number(e.key) - 1;
+        if (pool[i] != null) pickTile(pool[i], i);
+      } else if (e.key === "Backspace" && !checked && picked.length > 0) {
+        e.preventDefault();
+        unpick(picked.length - 1);
+      } else if (e.key === "Enter" && (checked || picked.length > 0)) {
+        e.preventDefault();
+        handleCheckOrNext();
+      }
+    }
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  });
+
   if (questions.length === 0) {
     return (
       <GameShell>
@@ -277,8 +299,9 @@ export function ArrangeGameClient({
                 key={`${tile}-${i}`}
                 type="button"
                 onClick={() => pickTile(tile, i)}
-                className="flex h-12 w-12 items-center justify-center rounded-xl border border-slate-200 bg-white text-lg font-bold shadow-sm active:bg-slate-50"
+                className="relative flex h-12 min-w-12 items-center justify-center rounded-xl border border-slate-200 bg-white px-2 text-lg font-bold shadow-sm active:bg-slate-50"
               >
+                {i < 9 ? <kbd className="app-game-hotkey app-game-hotkey--corner">{i + 1}</kbd> : null}
                 {tile}
               </button>
             ))}

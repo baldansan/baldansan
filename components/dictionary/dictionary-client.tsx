@@ -7,6 +7,8 @@ import { useUiLocale } from "@/lib/i18n/ui-locale";
 import { DrawInputSheet } from "@/components/dictionary/draw-input-sheet";
 import { ConfusableChars } from "@/components/hanzi/confusable-chars";
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
+import { WordDetailPanel } from "@/components/dictionary/word-detail-panel";
+import { useIsDesktop } from "@/lib/use-is-desktop";
 import { MobileCard } from "@/components/mobile/mobile-card";
 import { MobilePageHeader } from "@/components/mobile/mobile-page-header";
 import { SpeakerButton } from "@/components/tts/speaker-button";
@@ -63,7 +65,15 @@ function levelBadge(word: DictionaryWord): string | null {
   return `HSK ${level}`;
 }
 
-function ResultRow({ word }: { word: DictionaryWord }) {
+function ResultRow({
+  word,
+  selected = false,
+  onSelect,
+}: {
+  word: DictionaryWord;
+  selected?: boolean;
+  onSelect?: () => void;
+}) {
   const locale = useUiLocale();
   const [open, setOpen] = useState(false);
   const badge = levelBadge(word);
@@ -73,11 +83,12 @@ function ResultRow({ word }: { word: DictionaryWord }) {
     word.traditional && word.traditional !== word.simplified;
 
   return (
-    <div className="rounded-2xl border border-[var(--app-border)] bg-white">
+    <div className={`rounded-2xl border bg-white bs-dict-row${selected ? " bs-dict-row--on border-emerald-400 ring-2 ring-emerald-200" : " border-[var(--app-border)]"}`}>
       <button
         type="button"
-        onClick={() => hasExample && setOpen((v) => !v)}
+        onClick={() => (onSelect ? onSelect() : hasExample && setOpen((v) => !v))}
         className="flex w-full items-center gap-3 px-4 py-3 text-left"
+        aria-current={selected ? "true" : undefined}
       >
         <span className="min-w-0 flex-1">
           <span className="flex flex-wrap items-baseline gap-x-2">
@@ -105,7 +116,7 @@ function ResultRow({ word }: { word: DictionaryWord }) {
                 {word.pos}
               </span>
             ) : null}
-            {hasExample ? (
+            {hasExample && !onSelect ? (
               <span className="text-[10px] text-slate-400">
                 {tr(locale, open ? "жишээ хаах ▴" : "жишээ ▾")}
               </span>
@@ -122,7 +133,7 @@ function ResultRow({ word }: { word: DictionaryWord }) {
         />
       </button>
 
-      {open && hasExample ? (
+      {open && hasExample && !onSelect ? (
         <div className="border-t border-[var(--app-border)] px-4 py-3">
           <div className="flex items-start gap-2">
             <div className="min-w-0 flex-1" translate="no">
@@ -167,7 +178,38 @@ export function DictionaryClient() {
   const [error, setError] = useState<string | null>(null);
   const [searched, setSearched] = useState(false);
   const [drawOpen, setDrawOpen] = useState(false);
+  const [selectedId, setSelectedId] = useState<number | null>(null);
+  const desktop = useIsDesktop();
   const requestIdRef = useRef(0);
+  const selectedWord = results.find((w) => w.id === selectedId) ?? null;
+
+  // PC: хайлтын үр дүн ирэхэд эхний үгийг автоматаар сонгоно
+  useEffect(() => {
+    if (!desktop) return;
+    if (results.length === 0) {
+      setSelectedId(null);
+      return;
+    }
+    if (!results.some((w) => w.id === selectedId)) setSelectedId(results[0].id);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [results, desktop]);
+
+  // PC: ↑↓ товчоор үг солих
+  useEffect(() => {
+    if (!desktop || results.length === 0) return;
+    function onKey(e: KeyboardEvent) {
+      if (e.key !== "ArrowDown" && e.key !== "ArrowUp") return;
+      const target = e.target as HTMLElement | null;
+      if (target && target.tagName === "INPUT" && e.key === "ArrowUp") return;
+      e.preventDefault();
+      const i = results.findIndex((w) => w.id === selectedId);
+      const next = e.key === "ArrowDown" ? Math.min(results.length - 1, i + 1) : Math.max(0, i - 1);
+      setSelectedId(results[next]?.id ?? null);
+      document.querySelector<HTMLElement>(`[data-word-id="${results[next]?.id}"]`)?.scrollIntoView({ block: "nearest" });
+    }
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [desktop, results, selectedId]);
 
   // /dictionary?q=清 маягийн шууд линк (андуурагдах ханзны чипээс)
   useEffect(() => {
@@ -222,7 +264,9 @@ export function DictionaryClient() {
   }, [query, radical]);
 
   return (
-    <MobileAppShell activeTab="kanji" mainClassName={SHELL_MAIN_NARROW}>
+    <MobileAppShell activeTab="kanji" mainClassName={SHELL_MAIN_NARROW} desktopWidth="wide">
+      <div className="bs-dict-two">
+      <div className="bs-dict-list">
       <MobilePageHeader
         title={`${tr(locale, "Толь бичиг")} 📖`}
         subtitle={tr(locale, "Ханз · пиньинь · монгол утгаар хайх")}
@@ -344,10 +388,21 @@ export function DictionaryClient() {
       {results.length > 0 ? (
         <div className="space-y-2 pb-6">
           {results.map((word) => (
-            <ResultRow key={word.id} word={word} />
+            <div key={word.id} data-word-id={word.id}>
+              <ResultRow
+                word={word}
+                selected={desktop && word.id === selectedId}
+                onSelect={desktop ? () => setSelectedId(word.id) : undefined}
+              />
+            </div>
           ))}
         </div>
       ) : null}
+      </div>
+      <aside className="bs-dict-detail bs-desk-only">
+        <WordDetailPanel word={selectedWord} />
+      </aside>
+      </div>
     </MobileAppShell>
   );
 }

@@ -17,6 +17,7 @@ import { authDevLog } from "@/lib/auth/auth-dev-log";
 import { useLoadingWatchdog } from "@/lib/hooks/use-loading-watchdog";
 import { withTimeout } from "@/lib/async/with-timeout";
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
+import { ProfileStatsRail } from "@/components/profile/profile-stats-rail";
 import { MobileCard } from "@/components/mobile/mobile-card";
 import { useActiveHskLevel } from "@/components/providers/active-hsk-level-provider";
 import { formatActiveHskLevel } from "@/lib/hsk/active-hsk-level";
@@ -246,6 +247,8 @@ export function ProfileAppView() {
     return (
       <MobileAppShell
         activeTab="profile"
+        desktopWidth="wide"
+        rightRail={<ProfileStatsRail />}
         >
         <div className="bs-tm-phead">
           <ProfileAvatar displayName={tr(locale, "Зочин")} guest />
@@ -354,6 +357,8 @@ export function ProfileAppView() {
   return (
     <MobileAppShell
       activeTab="profile"
+      desktopWidth="wide"
+      rightRail={<ProfileStatsRail />}
       >
       <div className="bs-tm-phead">
         <ProfileAvatar displayName={displayName} />

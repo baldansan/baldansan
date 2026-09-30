@@ -232,6 +232,29 @@ export function MatchGameClient({
     juice.reset();
   }
 
+  // PC гарын товч: 1–6 зүүн багана, Q W E R T Y баруун багана
+  useEffect(() => {
+    const RIGHT_KEYS = ["q", "w", "e", "r", "t", "y"];
+    function onKey(e: KeyboardEvent) {
+      if (finished || roundComplete) return;
+      const target = e.target as HTMLElement | null;
+      if (target && (target.tagName === "INPUT" || target.tagName === "TEXTAREA")) return;
+      if (e.metaKey || e.ctrlKey || e.altKey) return;
+      if (e.key >= "1" && e.key <= "6") {
+        const item = leftItems[Number(e.key) - 1];
+        if (item && !matched.has(item.id)) handleLeft(item.id);
+      } else {
+        const ri = RIGHT_KEYS.indexOf(e.key.toLowerCase());
+        if (ri >= 0) {
+          const item = rightItems[ri];
+          if (item && !matched.has(item.id)) handleRight(item.id);
+        }
+      }
+    }
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  });
+
   if (allPairs.length < 4) {
     return (
       <GameShell>
@@ -351,7 +374,7 @@ export function MatchGameClient({
       <JuiceBar lives={juice.lives} combo={juice.combo} multiplier={juice.multiplier} showLives={false} />
       <div className="grid grid-cols-2 gap-3">
         <GameCard className="flex min-h-[340px] flex-col gap-2 !p-2">
-          {leftItems.map((item) => {
+          {leftItems.map((item, li) => {
             const isMatched = matched.has(item.id);
             const isSelected = selectedLeft === item.id;
             const isWrong = wrongFlash?.startsWith(item.id);
@@ -372,13 +395,14 @@ export function MatchGameClient({
                 }`}
                 translate="no"
               >
+                <kbd className="app-game-hotkey app-game-hotkey--inline">{li + 1}</kbd>
                 {item.label}
               </button>
             );
           })}
         </GameCard>
         <GameCard className="flex min-h-[340px] flex-col gap-2 !p-2">
-          {rightItems.map((item) => {
+          {rightItems.map((item, ri) => {
             const isMatched = matched.has(item.id);
             const isSelected = selectedRight === item.id;
             const isWrong = wrongFlash?.endsWith(item.id);
@@ -401,7 +425,10 @@ export function MatchGameClient({
                   onClick={() => handleRight(item.id)}
                   className="min-w-0 flex-1 text-left active:bg-slate-50 disabled:cursor-default"
                 >
-                  <span className="block text-base font-bold">{item.label}</span>
+                  <span className="block text-base font-bold">
+                    <kbd className="app-game-hotkey app-game-hotkey--inline">{["Q", "W", "E", "R", "T", "Y"][ri] ?? ""}</kbd>
+                    {item.label}
+                  </span>
                   <span className="text-xs text-emerald-700">{item.sub}</span>
                 </button>
                 <SpeakerButton
@@ -417,6 +444,7 @@ export function MatchGameClient({
       </div>
       <p className="mt-3 text-center text-xs text-[var(--app-muted)]">
         {tr(locale, "Зүүн ба баруун талаас нэг нэгийг сонгоно уу")}
+        <span className="bs-desk-only-inline"> · <kbd className="app-game-hotkey app-game-hotkey--inline">1–6</kbd> + <kbd className="app-game-hotkey app-game-hotkey--inline">Q–Y</kbd></span>
       </p>
     </GameShell>
   );

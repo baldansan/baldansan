@@ -1,0 +1,115 @@
+/* PC профайлын баруун самбар */
+.bs-pr {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.bs-pr-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 16px 18px;
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.04);
+}
+.bs-pr-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 13px;
+  font-weight: 900;
+  color: #1a2e22;
+}
+.bs-pr-muted {
+  font-size: 12px;
+  font-weight: 600;
+  color: #7a8c82;
+}
+.bs-pr-link {
+  font-size: 12px;
+  font-weight: 800;
+  color: #149247;
+  text-decoration: none;
+}
+.bs-pr-bars {
+  display: grid;
+  grid-template-columns: repeat(14, minmax(0, 1fr));
+  gap: 4px;
+  height: 96px;
+}
+.bs-pr-bar-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  min-width: 0;
+}
+.bs-pr-bar-track {
+  flex: 1 1 auto;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+.bs-pr-bar {
+  width: 100%;
+  border-radius: 4px 4px 2px 2px;
+  background: #e7ece8;
+  transition: height 0.4s ease;
+}
+.bs-pr-bar--on {
+  background: #1fb85a;
+}
+.bs-pr-bar--today {
+  outline: 2px solid #0f7338;
+  outline-offset: 1px;
+}
+.bs-pr-bar-label {
+  font-size: 9px;
+  font-weight: 700;
+  color: #7a8c82;
+}
+.bs-pr-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  margin-top: 12px;
+}
+.bs-pr-stats div {
+  padding: 8px 6px;
+  border-radius: 12px;
+  background: #f6f8f6;
+  text-align: center;
+}
+.bs-pr-stats b {
+  display: block;
+  font-size: 16px;
+  font-weight: 900;
+  color: #1a2e22;
+}
+.bs-pr-stats span {
+  font-size: 10px;
+  font-weight: 700;
+  color: #7a8c82;
+}
+.bs-pr-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.bs-pr-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #1a2e22;
+}
+.bs-pr-done {
+  color: #7a8c82;
+}
+.bs-pr-score {
+  color: #7c3aed;
+}
