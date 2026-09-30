@@ -4,6 +4,8 @@ import Link from "next/link";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { AppShell } from "@/components/app/app-shell";
 import { BichlegYouTubePlayer } from "@/components/bichleg/bichleg-youtube-player";
+import { BichlegEpisodeQuiz } from "@/components/bichleg/bichleg-episode-quiz";
+import { familiarityOf, fetchKnownWordSets, type KnownWordSets } from "@/lib/bichleg/known-words";
 import {
   formatEpisodeLabel,
   type SubtitleWord,
@@ -159,6 +161,9 @@ export function BichlegDesktopClient({
   const [statusLoading, setStatusLoading] = useState(false);
   const [toast, setToast] = useState<string | null>(null);
   const [savedWords, setSavedWords] = useState<Set<string>>(new Set());
+  const [knownSets, setKnownSets] = useState<KnownWordSets | null>(null);
+  const [quizOpen, setQuizOpen] = useState(false);
+  const [ended, setEnded] = useState(false);
   const [progress, setProgress] = useState<UserVideoProgress | null>(
     activeVideo ? (initialProgress[activeVideo.id] ?? null) : null
   );
@@ -214,6 +219,35 @@ export function BichlegDesktopClient({
     };
   }, [activeVideo?.id]);
 
+  useEffect(() => {
+    let cancelled = false;
+    void fetchKnownWordSets().then((sets) => {
+      if (!cancelled) setKnownSets(sets);
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+
+  /** Хадгалсан үг → «сурч байгаа» болно. */
+  const fam = (zh: string) => (savedWords.has(zh) ? "learning" : familiarityOf(zh, knownSets));
+  const allWords = useMemo(() => {
+    const seen = new Set<string>();
+    const out: SubtitleWord[] = [];
+    for (const sub of subtitles) for (const w of sub.words ?? []) {
+      if (!w.zh || !w.mn || seen.has(w.zh)) continue;
+      seen.add(w.zh);
+      out.push(w);
+    }
+    return out;
+  }, [subtitles]);
+  const keyStats = useMemo(() => {
+    let known = 0;
+    for (const w of keyWords) if (fam(w.zh) === "known") known += 1;
+    return { known, fresh: keyWords.length - known };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [keyWords, knownSets, savedWords]);
+
   /* ---------- тоглуулагч ---------- */
   const runOnPlayer = useCallback((fn: (player: YtPlayer) => void) => {
     const player = playerRef.current;
@@ -250,8 +284,15 @@ export function BichlegDesktopClient({
   }, [muted, playerReady, runOnPlayer]);
 
   function handlePlayerStateChange(state: number) {
-    if (state === YT.PlayerState.PLAYING) setIsPlaying(true);
-    else if (state === YT.PlayerState.PAUSED || state === YT.PlayerState.ENDED) setIsPlaying(false);
+    if (state === YT.PlayerState.PLAYING) {
+      setIsPlaying(true);
+      setEnded(false);
+    } else if (state === YT.PlayerState.PAUSED) {
+      setIsPlaying(false);
+    } else if (state === YT.PlayerState.ENDED) {
+      setIsPlaying(false);
+      setEnded(true);
+    }
   }
 
   // 150мс тутам цаг унших: хадмал, давталт, өгүүлбэр бүрд зогсох
@@ -567,7 +608,7 @@ export function BichlegDesktopClient({
           <button
             key={`${sub.idx}-${i}`}
             type="button"
-            className={`bs-bd-word${w.key ? " bs-bd-word--key" : ""}${pickedWord?.zh === w.zh ? " bs-bd-word--on" : ""}${savedWords.has(w.zh) ? " bs-bd-word--saved" : ""}`}
+            className={`bs-bd-word bs-bd-word--${fam(w.zh)}${w.key ? " bs-bd-word--key" : ""}${pickedWord?.zh === w.zh ? " bs-bd-word--on" : ""}`}
             onClick={() => handleWordPick(w)}
             title={w.mn ?? undefined}
           >
@@ -665,6 +706,11 @@ export function BichlegDesktopClient({
             {muted ? (
               <button type="button" className="bs-bd-unmute" onClick={() => setMuted(false)}>
                 {tr(locale, "Дууг асаах")}
+              </button>
+            ) : null}
+            {ended && !quizOpen && keyWords.length >= 4 ? (
+              <button type="button" className="bs-bd-paused" onClick={() => setQuizOpen(true)}>
+                🏁 {tr(locale, "Ангийн шалгалт өгөх")} · {Math.min(10, keyWords.length)} {tr(locale, "асуулт")}
               </button>
             ) : null}
             {pausedAtSentence ? (
@@ -805,6 +851,7 @@ export function BichlegDesktopClient({
                 {episodeLabel ? `${episodeLabel} · ` : ""}
                 {duration > 0 ? `${formatSubtitleClock(duration)} · ` : ""}
                 {keyWords.length} {tr(locale, "түлхүүр үг")}
+                {keyWords.length > 0 ? ` · ${keyStats.fresh} ${tr(locale, "шинэ")} · ${keyStats.known} ${tr(locale, "мэдэх")}` : ""}
                 {progress?.completed ? ` · ${tr(locale, "үзсэн")} ✓` : ""}
               </p>
             </div>
@@ -828,7 +875,10 @@ export function BichlegDesktopClient({
               <>
                 <div className="bs-bd-card-top">
                   <span className="bs-bd-speaker">{activeSubtitle.speaker ?? formatSubtitleClock(activeSubtitle.start_sec)}</span>
-                  <span className="bs-bd-hint">
+                  <span className="bs-bd-hint bs-bd-legend">
+                    <i className="bs-bd-dot bs-bd-dot--known" /> {tr(locale, "мэдэх")}
+                    <i className="bs-bd-dot bs-bd-dot--learning" /> {tr(locale, "сурч байгаа")}
+                    <i className="bs-bd-dot bs-bd-dot--key" /> {tr(locale, "шинэ")}
                     <button type="button" className={`bs-bd-chip${showPinyin ? " bs-bd-chip--on" : ""}`} onClick={() => setShowPinyin((v) => !v)}>
                       {tr(locale, "Пиньинь")}
                     </button>
@@ -876,6 +926,16 @@ export function BichlegDesktopClient({
             )}
           </div>
 
+          {quizOpen ? (
+            <BichlegEpisodeQuiz
+              videoId={activeVideo.id}
+              keyWords={keyWords}
+              allWords={allWords}
+              onClose={() => setQuizOpen(false)}
+              onSaveWord={(w) => void handleSaveWord({ ...w, sourceVideoId: activeVideo.id })}
+            />
+          ) : null}
+
           {/* Сонгосон үг */}
           {pickedWord ? (
             <div className="bs-bd-card bs-bd-card--word">
@@ -914,7 +974,7 @@ export function BichlegDesktopClient({
                 {sentenceWords.map((w) => (
                   <li key={w.zh}>
                     <button type="button" className="bs-bd-wrow" onClick={() => handleWordPick(w)} translate="no">
-                      <span className={`bs-bd-dot${w.key ? " bs-bd-dot--key" : ""}`} />
+                      <span className={`bs-bd-dot bs-bd-dot--${fam(w.zh)}`} />
                       <span className="bs-bd-wrow-zh hanzi">{w.zh}</span>
                       <span className="bs-bd-wrow-py">{w.pinyin}</span>
                       <span className="bs-bd-wrow-mn">{w.mn}</span>
@@ -945,7 +1005,13 @@ export function BichlegDesktopClient({
             <div className="bs-bd-card bs-bd-card--keys">
               <div className="bs-bd-card-top">
                 <span className="bs-bd-sec">{tr(locale, "Энэ ангийн түлхүүр үгс")}</span>
-                <span className="bs-bd-hint">{keyWords.length}</span>
+                {keyWords.length >= 4 && !quizOpen ? (
+                  <button type="button" className="bs-bd-chip" onClick={() => { pause(); setQuizOpen(true); }}>
+                    🏁 {tr(locale, "Шалгалт")}
+                  </button>
+                ) : (
+                  <span className="bs-bd-hint">{keyWords.length}</span>
+                )}
               </div>
               <div className="bs-bd-keychips" translate="no">
                 {keyWords.map((w) => (
