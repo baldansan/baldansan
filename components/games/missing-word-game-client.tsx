@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { GameCard } from "@/components/games/game-card";
 import { GameEmptyState } from "@/components/games/game-empty-state";
 import { GameHeader } from "@/components/games/game-header";
@@ -11,7 +11,14 @@ import { GameShell } from "@/components/games/game-shell";
 import { LevelResultCard } from "@/components/games/level-result-card";
 import { buildMissingWordItems } from "@/lib/games/game-data";
 import { resolveGameLabels, type GameLabels } from "@/lib/games/game-lesson-meta";
-import { saveGameResult } from "@/lib/games/game-progress";
+import { getBestScore, saveGameResult } from "@/lib/games/game-progress";
+import {
+  JuiceBar,
+  OutOfLivesCard,
+  PointsPop,
+  TemeeReaction,
+  useGameJuice,
+} from "@/components/games/game-juice";
 import {
   TOTAL_LEVELS,
   levelHeaderInfo,
@@ -63,13 +70,18 @@ export function MissingWordGameClient({
   const [correctCount, setCorrectCount] = useState(0);
   const [score, setScore] = useState(0);
   const [finished, setFinished] = useState(false);
+  const [outOfLives, setOutOfLives] = useState(false);
+  const juice = useGameJuice({ lives: !levelMode });
+  const previousBestRef = useRef<number | null>(null);
+  if (previousBestRef.current === null && typeof window !== "undefined") {
+    previousBestRef.current = levelMode ? 0 : getBestScore("missing-word", lessonId);
+  }
 
   const current = questions[index];
   const total = questions.length;
   const ttsLang = resolveTtsLang({ courseId });
 
-  function finishGame(finalCorrect: number) {
-    const finalScore = finalCorrect * 10;
+  function finishGame(finalCorrect: number, finalScore: number) {
     if (levelMode) {
       levelMode.onFinished(finalCorrect, total);
       setScore(finalScore);
@@ -94,18 +106,28 @@ export function MissingWordGameClient({
     setSelected(option);
     setRevealed(true);
     const isCorrect = option === current.correctAnswer;
-    const next = isCorrect ? correctCount + 1 : correctCount;
+    const res = juice.answer(isCorrect);
+    const nextCorrect = isCorrect ? correctCount + 1 : correctCount;
+    const nextScore = score + res.points;
     if (isCorrect) {
       setCorrectCount((c) => c + 1);
-      setScore((s) => s + 10);
+      setScore(nextScore);
     }
-    if (index >= total - 1) finishGame(next);
+    if (res.outOfLives) {
+      setOutOfLives(true);
+      finishGame(nextCorrect, nextScore);
+      return;
+    }
+    if (index >= total - 1) {
+      finishGame(nextCorrect, nextScore);
+    }
   }
 
   function handleNext() {
     setIndex((i) => i + 1);
     setSelected(null);
     setRevealed(false);
+    juice.newQuestion();
   }
 
   function restart() {
@@ -115,6 +137,8 @@ export function MissingWordGameClient({
     setCorrectCount(0);
     setScore(0);
     setFinished(false);
+    setOutOfLives(false);
+    juice.reset();
   }
 
   // PC гарын товч: 1-4 хариулт, Enter дараах
@@ -179,16 +203,22 @@ export function MissingWordGameClient({
   if (finished) {
     return (
       <GameShell>
-        <GameHeader title={labels.missingWordTitle} score={score} />
-        <GameResultCard
-          score={score}
-          correct={correctCount}
-          total={total}
-          accuracy={Math.round((correctCount / total) * 100)}
-          xpGained={score}
-          lessonId={lessonId}
-          onPlayAgain={restart}
-        />
+        <GameHeader title={labels.missingWordTitle} backHref={backHref} score={score} />
+        {outOfLives ? (
+          <OutOfLivesCard onRetry={restart} correct={correctCount} total={total} />
+        ) : (
+          <GameResultCard
+            score={score}
+            correct={correctCount}
+            total={total}
+            accuracy={Math.round((correctCount / total) * 100)}
+            xpGained={score}
+            lessonId={lessonId}
+            onPlayAgain={restart}
+            previousBest={previousBestRef.current ?? 0}
+            bestCombo={juice.bestCombo}
+          />
+        )}
       </GameShell>
     );
   }
@@ -202,10 +232,14 @@ export function MissingWordGameClient({
         progress={`${index + 1}/${total}`}
         score={score}
       />
+      <JuiceBar lives={juice.lives} combo={juice.combo} multiplier={juice.multiplier} showLives={!levelMode} />
       <GameProgressPill current={index + 1} total={total} />
       {current ? (
         <>
-          <GameCard className="mb-4">
+          <div className="relative mb-4">
+          <PointsPop outcome={juice.lastOutcome} />
+          <TemeeReaction reaction={juice.reaction} />
+          <GameCard className={juice.shake ? "bs-gj-shake" : ""}>
             <div className="flex items-start justify-center gap-2">
               <p className="text-center text-xl font-medium leading-relaxed text-[var(--app-text)]">
                 {current.sentence}
@@ -222,6 +256,7 @@ export function MissingWordGameClient({
               {current.mongolianHint}
             </p>
           </GameCard>
+          </div>
           <div className="app-game-options flex flex-col gap-2">
             {current.options.map((option, optionIndex) => {
               let state: "default" | "correct" | "wrong" = "default";

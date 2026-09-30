@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { GameCard } from "@/components/games/game-card";
 import { GameEmptyState } from "@/components/games/game-empty-state";
 import { GameHeader } from "@/components/games/game-header";
@@ -9,7 +9,14 @@ import { GameShell } from "@/components/games/game-shell";
 import { LevelResultCard } from "@/components/games/level-result-card";
 import { buildArrangeGameItems } from "@/lib/games/game-data";
 import { resolveGameLabels, type GameLabels } from "@/lib/games/game-lesson-meta";
-import { saveGameResult } from "@/lib/games/game-progress";
+import { getBestScore, saveGameResult } from "@/lib/games/game-progress";
+import {
+  JuiceBar,
+  OutOfLivesCard,
+  PointsPop,
+  TemeeReaction,
+  useGameJuice,
+} from "@/components/games/game-juice";
 import {
   TOTAL_LEVELS,
   levelHeaderInfo,
@@ -59,6 +66,12 @@ export function ArrangeGameClient({
   const [correctCount, setCorrectCount] = useState(0);
   const [score, setScore] = useState(0);
   const [finished, setFinished] = useState(false);
+  const [outOfLives, setOutOfLives] = useState(false);
+  const juice = useGameJuice({ lives: !levelMode });
+  const previousBestRef = useRef<number | null>(null);
+  if (previousBestRef.current === null && typeof window !== "undefined") {
+    previousBestRef.current = levelMode ? 0 : getBestScore("arrange", lessonId);
+  }
 
   const current = questions[qIndex];
   const total = questions.length;
@@ -86,8 +99,7 @@ export function ArrangeGameClient({
     setPool((p) => [...p, tile]);
   }
 
-  function finishGame(finalCorrect: number) {
-    const finalScore = finalCorrect * 10;
+  function finishGame(finalCorrect: number, finalScore: number) {
     if (levelMode) {
       levelMode.onFinished(finalCorrect, total);
       setScore(finalScore);
@@ -115,22 +127,30 @@ export function ArrangeGameClient({
       const ok = picked.join("") === current.target;
       setIsCorrect(ok);
       setChecked(true);
+      const res = juice.answer(ok);
       const nextCorrect = ok ? correctCount + 1 : correctCount;
+      const nextScore = score + res.points;
       if (ok) {
         setCorrectCount(nextCorrect);
-        setScore((s) => s + 10);
+        setScore(nextScore);
+      }
+      if (res.outOfLives) {
+        setOutOfLives(true);
+        finishGame(nextCorrect, nextScore);
+        return;
       }
       if (qIndex >= total - 1) {
-        finishGame(nextCorrect);
+        finishGame(nextCorrect, nextScore);
       }
       return;
     }
 
     if (qIndex >= total - 1) {
-      finishGame(correctCount);
+      finishGame(correctCount, score);
       return;
     }
     setQIndex((i) => i + 1);
+    juice.newQuestion();
   }
 
   function restart() {
@@ -140,6 +160,8 @@ export function ArrangeGameClient({
     setCorrectCount(0);
     setScore(0);
     setFinished(false);
+    setOutOfLives(false);
+    juice.reset();
   }
 
   if (questions.length === 0) {
@@ -186,16 +208,22 @@ export function ArrangeGameClient({
   if (finished) {
     return (
       <GameShell>
-        <GameHeader title={labels.arrangeTitle} score={score} />
-        <GameResultCard
-          score={score}
-          correct={correctCount}
-          total={total}
-          accuracy={Math.round((correctCount / total) * 100)}
-          xpGained={score}
-          lessonId={lessonId}
-          onPlayAgain={restart}
-        />
+        <GameHeader title={labels.arrangeTitle} backHref={backHref} score={score} />
+        {outOfLives ? (
+          <OutOfLivesCard onRetry={restart} correct={correctCount} total={total} />
+        ) : (
+          <GameResultCard
+            score={score}
+            correct={correctCount}
+            total={total}
+            accuracy={Math.round((correctCount / total) * 100)}
+            xpGained={score}
+            lessonId={lessonId}
+            onPlayAgain={restart}
+            previousBest={previousBestRef.current ?? 0}
+            bestCombo={juice.bestCombo}
+          />
+        )}
       </GameShell>
     );
   }
@@ -209,9 +237,13 @@ export function ArrangeGameClient({
         progress={`${qIndex + 1}/${total}`}
         score={score}
       />
+      <JuiceBar lives={juice.lives} combo={juice.combo} multiplier={juice.multiplier} showLives={!levelMode} />
       {current ? (
         <>
-          <GameCard className="mb-3 min-h-[56px]">
+          <div className="relative mb-3">
+          <PointsPop outcome={juice.lastOutcome} />
+          <TemeeReaction reaction={juice.reaction} />
+          <GameCard className={`min-h-[56px]${juice.shake ? " bs-gj-shake" : ""}`}>
             <div className="flex items-center justify-center gap-2">
               <p className="text-center text-xl font-bold tracking-widest text-[var(--app-text)]">
                 {picked.length > 0 ? picked.join("") : "—"}
@@ -229,6 +261,7 @@ export function ArrangeGameClient({
               {current.mongolianHint}
             </p>
           </GameCard>
+          </div>
           {checked ? (
             <p
               className={`mb-3 text-center text-sm font-semibold ${isCorrect ? "text-emerald-600" : "text-red-600"}`}

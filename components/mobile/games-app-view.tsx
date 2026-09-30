@@ -10,6 +10,7 @@ import {
   resolveGameLabels,
 } from "@/lib/games/game-lesson-meta";
 import { getGameStats } from "@/lib/games/game-progress";
+import { getDailyMissions, type DailyMission } from "@/lib/games/game-fx";
 import {
   LEVEL_GAMES,
   TOTAL_LEVELS,
@@ -206,6 +207,10 @@ export function GamesAppView({ lessonIds, lessonTitles }: Props) {
   const [levelInfo, setLevelInfo] = useState<Partial<Record<LevelGame, LevelInfo>>>({});
   const [campaignStars, setCampaignStars] = useState(0);
   const [campaignGame, setCampaignGame] = useState<LevelGame>("arrange");
+  const [missions, setMissions] = useState<DailyMission[]>([]);
+  useEffect(() => {
+    setMissions(getDailyMissions());
+  }, []);
 
   const isPrelesson = isPrelessonLessonId(currentLessonId);
   const games = useMemo(
@@ -289,6 +294,29 @@ export function GamesAppView({ lessonIds, lessonTitles }: Props) {
           <div className="bs-tm-stat-l">{tr(locale, "Нарийвчлал")}</div>
         </div>
       </div>
+
+      {missions.length > 0 ? (
+        <div className="bs-tm-missions">
+          <div className="bs-tm-missions-head">
+            <span>🎯 {tr(locale, "Өдрийн даалгавар")}</span>
+            <span className="bs-tm-missions-count">
+              {missions.every((m) => m.done)
+                ? tr(locale, "Бүгд биелэв!")
+                : `${missions.filter((m) => m.done).length}/${missions.length}`}
+            </span>
+          </div>
+          <ul className="bs-tm-missions-list">
+            {missions.map((m) => (
+              <li key={m.id} className={m.done ? "bs-tm-mission bs-tm-mission--done" : "bs-tm-mission"}>
+                <span className="bs-tm-mission-check" aria-hidden>{m.done ? "✓" : ""}</span>
+                <span className="bs-tm-mission-label">{tr(locale, m.label)}</span>
+                <span className="bs-tm-mission-bar"><i style={{ width: `${Math.round((m.current / m.target) * 100)}%` }} /></span>
+                <span className="bs-tm-mission-num">{m.current}/{m.target}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ) : null}
 
       {showCampaign ? (
         <Link

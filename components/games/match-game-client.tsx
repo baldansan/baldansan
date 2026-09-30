@@ -9,7 +9,8 @@ import { GameShell } from "@/components/games/game-shell";
 import { LevelResultCard } from "@/components/games/level-result-card";
 import { buildMatchGameItems, shuffleArray } from "@/lib/games/game-data";
 import { resolveGameLabels, type GameLabels } from "@/lib/games/game-lesson-meta";
-import { saveGameResult } from "@/lib/games/game-progress";
+import { getBestScore, saveGameResult } from "@/lib/games/game-progress";
+import { JuiceBar, useGameJuice } from "@/components/games/game-juice";
 import {
   TOTAL_LEVELS,
   levelHeaderInfo,
@@ -117,6 +118,11 @@ export function MatchGameClient({
   const [levelCorrect, setLevelCorrect] = useState(0);
   /** Тухайн үеийг аль хэдийн боловсруулсан эсэх — StrictMode давхар дуудахаас хамгаална. */
   const handledRef = useRef(false);
+  const juice = useGameJuice({ lives: false });
+  const previousBestRef = useRef<number | null>(null);
+  if (previousBestRef.current === null && typeof window !== "undefined") {
+    previousBestRef.current = levelMode ? 0 : getBestScore("match", lessonId);
+  }
 
   const total = pairs.length;
   const matchedCount = matched.size;
@@ -169,15 +175,21 @@ export function MatchGameClient({
   const tryMatch = useCallback(
     (leftId: string, rightId: string) => {
       if (leftId === rightId) {
+        const res = juice.answer(true);
+        // Хос бүр 10 оноо (үеийн төгсгөлд нэмэгдэнэ); combo/хурдны урамшуулал энд шууд
+        if (res.points > 10) setScore((s) => s + (res.points - 10));
         setMatched((prev) => new Set(prev).add(leftId));
       } else {
+        juice.answer(false);
         wrongRef.current += 1;
         setWrongFlash(`${leftId}-${rightId}`);
         setTimeout(() => setWrongFlash(null), 600);
       }
       setSelectedLeft(null);
       setSelectedRight(null);
+      juice.newQuestion();
     },
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     []
   );
 
@@ -217,6 +229,7 @@ export function MatchGameClient({
     setRoundIndex(0);
     wrongRef.current = 0;
     setLevelCorrect(0);
+    juice.reset();
   }
 
   if (allPairs.length < 4) {
@@ -284,6 +297,8 @@ export function MatchGameClient({
           xpGained={score}
           lessonId={lessonId}
           onPlayAgain={restart}
+          previousBest={previousBestRef.current ?? 0}
+          bestCombo={juice.bestCombo}
         />
       </GameShell>
     );
@@ -333,6 +348,7 @@ export function MatchGameClient({
         progress={levelMode ? `${matchedCount}/${total}` : overallProgress}
         score={score}
       />
+      <JuiceBar lives={juice.lives} combo={juice.combo} multiplier={juice.multiplier} showLives={false} />
       <div className="grid grid-cols-2 gap-3">
         <GameCard className="flex min-h-[340px] flex-col gap-2 !p-2">
           {leftItems.map((item) => {
