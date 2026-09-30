@@ -25,7 +25,7 @@ export function BichlegSeriesPickerClient({
 }: Props) {
   const locale = useUiLocale();
   return (
-    <MobileAppShell activeTab="clips" mainClassName={SHELL_MAIN_NARROW}>
+    <MobileAppShell activeTab="clips" mainClassName={SHELL_MAIN_NARROW} desktopWidth="wide">
       <h1 className="bs-tm-page-title">{tr(locale, "Дуу ба бичлэг")}</h1>
       <MediaTabs active="videos" />
 

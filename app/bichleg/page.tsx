@@ -33,7 +33,7 @@ export default async function BichlegPage({ searchParams }: Props) {
     ]);
     const songGroups = groupSongsBySeries(songVideos);
     return (
-      <MobileAppShell activeTab="clips" mainClassName={SHELL_MAIN_NARROW}>
+      <MobileAppShell activeTab="clips" mainClassName={SHELL_MAIN_NARROW} desktopWidth="wide">
         <MobilePageHeader
           title={locale === "zh" ? "歌曲与视频" : "Дуу ба бичлэг"}
           subtitle={locale === "zh" ? "跟着歌曲学中文：2000–2026年热门歌曲与儿歌。" : "Дуугаар хятад хэл сур: 2000–2026 оны хит дуу, хүүхдийн дуу."}

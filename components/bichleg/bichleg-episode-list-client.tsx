@@ -76,7 +76,7 @@ export function BichlegEpisodeListClient({
     );
 
   return (
-    <MobileAppShell activeTab="clips" mainClassName={SHELL_MAIN_NARROW}>
+    <MobileAppShell activeTab="clips" mainClassName={SHELL_MAIN_NARROW} desktopWidth="wide">
       <Link href="/bichleg" className="bs-mem-back">
         {tr(locale, "← Цуврал сонгох")}
       </Link>
@@ -112,6 +112,7 @@ export function BichlegEpisodeListClient({
               </span>
             </Link>
           ) : null}
+          <div className="bs-bichleg-ep-grid">
           {episodes.map((episode, index) => {
             const progress = progressByVideoId[episode.id];
             const completed = Boolean(progress?.completed);
@@ -168,6 +169,7 @@ export function BichlegEpisodeListClient({
               />
             );
           })}
+          </div>
         </>
       )}
     </MobileAppShell>

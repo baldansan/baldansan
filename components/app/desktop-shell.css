@@ -389,3 +389,48 @@
     display: none;
   }
 }
+
+/* ---- Дуу·Бичлэг: цуврал / ангиудын grid, дууны хуудас (PC) ---- */
+.bs-bichleg-ep-grid {
+  display: contents;
+}
+@media (min-width: 920px) {
+  .bs-desk-col--wide .bs-tm-bichleg-list,
+  .bs-bichleg-ep-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+  }
+  .bs-bichleg-ep-grid .bs-tm-video-card--stack {
+    margin-bottom: 0;
+  }
+  .bs-desk-col--wide .bs-tm-bichleg-greet {
+    max-width: 720px;
+  }
+  /* Дууны хуудас: зүүн тоглуулагч + удирдлага, баруун үг */
+  .bs-desk-col--wide .bs-song {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 480px;
+    gap: 12px 24px;
+    align-items: start;
+  }
+  .bs-desk-col--wide .bs-song > * {
+    grid-column: 1;
+  }
+  .bs-desk-col--wide .bs-song > .bs-song-back,
+  .bs-desk-col--wide .bs-song > .bs-song-head {
+    grid-column: 1 / -1;
+  }
+  .bs-desk-col--wide .bs-song > .bs-song-sheet,
+  .bs-desk-col--wide .bs-song > .bs-song-empty {
+    grid-column: 2;
+    grid-row: 3 / span 8;
+    max-height: calc(100vh - 210px);
+    position: sticky;
+    top: 84px;
+  }
+  .bs-desk-col--wide .bs-song > .bs-song-sheet-backdrop,
+  .bs-desk-col--wide .bs-song > .bs-song-toast {
+    grid-column: auto;
+  }
+}
