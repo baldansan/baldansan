@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import { BichlegFeedClient } from "@/components/bichleg/bichleg-feed-client";
+import { BichlegPlayerSwitch } from "@/components/bichleg/bichleg-player-switch";
 import { fetchUserVideoProgressMap } from "@/lib/supabase/video-progress-server";
 import {
   fetchOrphanEpisodes,
@@ -52,7 +52,7 @@ export default async function BichlegEpisodePlayerPage({ params }: Props) {
       : (series?.title_mn ?? series?.title_zh ?? seriesId);
 
   return (
-    <BichlegFeedClient
+    <BichlegPlayerSwitch
       videos={episodes}
       backHref={listHref}
       feedTitle={feedTitle}
