@@ -242,8 +242,64 @@ export function HomeAppView({ catalog, defaultChipId }: Props) {
     ? formatHomeCourseListHeading(activeCourse)
     : "";
 
+  /* PC (≥920px) баруун самбар — утсан дээр нуугдана (AppShell). */
+  const rightRail = (
+    <div className="bs-home-rail">
+      {activeCourse?.available && lessonIds.length > 0 ? (
+        <div className="bs-home-rail-card">
+          <p className="bs-tm-sec">{tr(locale, "Миний явц")}</p>
+          <p className="bs-home-rail-big">{progressPercent}%</p>
+          <p className="bs-home-rail-sub">
+            {completedCount}/{lessonIds.length} {tr(locale, "хичээл дууссан")}
+            {activeCourse ? ` · ${activeCourse.chipLabel}` : ""}
+          </p>
+          <div className="bs-tm-lesson-catalog-bar">
+            <i style={{ width: `${progressPercent}%` }} />
+          </div>
+          <Link href={continueHref} className="app-btn-primary mt-3 inline-flex w-full justify-center">
+            {tr(locale, "Үргэлжлүүлэх")} →
+          </Link>
+        </div>
+      ) : null}
+
+      {bichlegContinue ? (
+        <Link href={bichlegContinue.href} className="bs-tm-continue">
+          <span
+            className="bs-tm-continue-ic"
+            style={{ background: "linear-gradient(135deg, #4d9fff, #2563eb)" }}
+            aria-hidden
+          >
+            📺
+          </span>
+          <span className="min-w-0 flex-1">
+            <p className="bs-tm-continue-kicker">{tr(locale, "Бичлэг үргэлжлүүлэх")}</p>
+            <p className="bs-tm-continue-title" translate="no">{bichlegContinue.title}</p>
+          </span>
+          <span className="bs-tm-card-chev" aria-hidden>›</span>
+        </Link>
+      ) : null}
+
+      <div className="bs-home-rail-card">
+        <p className="bs-tm-sec">{tr(locale, "Хурдан эхлэх")}</p>
+        <div className="bs-home-rail-links">
+          <Link href="/review/daily">🔥 {tr(locale, "Өнөөдрийн давталт")}</Link>
+          <Link href="/games">🎮 {tr(locale, "Тоглоом")}</Link>
+          <Link href="/bichleg">📺 {tr(locale, "Дуу·Бичлэг")}</Link>
+          <Link href="/dictionary">🔍 {tr(locale, "Толь бичиг")}</Link>
+          <Link href="/library">📚 {tr(locale, "Уншлагын сан")}</Link>
+          <Link href="/books">📖 {tr(locale, "Ном сонгох")}</Link>
+        </div>
+      </div>
+    </div>
+  );
+
   return (
-    <MobileAppShell activeTab="home" mainClassName={SHELL_MAIN_NARROW}>
+    <MobileAppShell
+      activeTab="home"
+      mainClassName={SHELL_MAIN_NARROW}
+      desktopWidth="wide"
+      rightRail={rightRail}
+    >
       <section className="relative mb-4 overflow-hidden rounded-[24px] bg-gradient-to-br from-[#1FB85A] via-emerald-500 to-emerald-700 p-5 text-white shadow-[0_10px_30px_rgba(31,184,90,0.28)]">
         <div
           aria-hidden
@@ -337,7 +393,7 @@ export function HomeAppView({ catalog, defaultChipId }: Props) {
       <DailyToneHomeCard />
 
       {bichlegContinue ? (
-        <Link href={bichlegContinue.href} className="bs-tm-continue">
+        <Link href={bichlegContinue.href} className="bs-tm-continue bs-desk-hide">
           <span
             className="bs-tm-continue-ic"
             style={{

@@ -217,3 +217,84 @@
     max-width: 1200px !important;
   }
 }
+
+/* ---- Давтах hub (components/review/review-menu-hub-client.tsx) PC ---- */
+@media (min-width: 920px) {
+  .bs-review-hub .bs-tm-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+    margin-bottom: 11px;
+  }
+  .bs-review-hub .bs-tm-grid > .bs-tm-card {
+    margin-bottom: 0;
+  }
+  .bs-review-hub .bs-tm-cols {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    align-items: start;
+  }
+  .bs-review-hub--rail .bs-tm-stat-row {
+    margin-bottom: 11px;
+  }
+  .bs-review-hub--rail .bs-tm-sec:first-child {
+    margin-top: 0;
+  }
+}
+
+/* ---- Нүүр (components/mobile/home-app-view.tsx) PC ---- */
+.bs-home-rail {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.bs-home-rail-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 16px 18px;
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.04);
+}
+.bs-home-rail-card .bs-tm-sec {
+  margin-top: 0;
+}
+.bs-home-rail-big {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 1;
+  color: #1a2e22;
+}
+.bs-home-rail-sub {
+  margin: 4px 0 10px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #7a8c82;
+}
+.bs-home-rail-links {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.bs-home-rail-links a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 40px;
+  padding: 0 10px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #1a2e22;
+  text-decoration: none;
+}
+.bs-home-rail-links a:hover {
+  background: #f2f6f3;
+}
+@media (min-width: 920px) {
+  .bs-desk-col--wide .bs-tm-lesson-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+}

@@ -222,11 +222,84 @@ export function ReviewMenuHubClient({
       ? `${testCount} ${tr(locale, "шалгалт бэлэн")}`
       : tr(locale, "Тест оруулаагүй байна");
 
+  const studyPlanCard = (
+    <Link href="/study-plan" className="bs-tm-card">
+      <span className="bs-tm-card-ic bs-tm-card-ic--green" aria-hidden>
+        📅
+      </span>
+      <span className="bs-tm-card-body">
+        <span className="bs-tm-card-title">{tr(locale, "Сурах төлөвлөгөө")}</span>
+        <span className="bs-tm-card-sub">{tr(locale, "Хичээл, давталт, бичлэг")}</span>
+      </span>
+      <span className="bs-tm-card-chev" aria-hidden>›</span>
+    </Link>
+  );
+
+  const bichlegCard = bichlegContinue ? (
+    <Link href={bichlegContinue.href} className="bs-tm-card">
+      <span className="bs-tm-card-ic bs-tm-card-ic--blue" aria-hidden>
+        📺
+      </span>
+      <span className="bs-tm-card-body">
+        <span className="bs-tm-card-title">{tr(locale, "Бичлэг үргэлжлүүлэх")}</span>
+        <span className="bs-tm-card-sub">
+          {bichlegContinue.title} · {bichlegContinue.subtitle}
+        </span>
+      </span>
+      <span className="bs-tm-card-chev" aria-hidden>›</span>
+    </Link>
+  ) : null;
+
+  /* PC (≥920px) баруун самбар — утсан дээр нуугдана (AppShell). */
+  const rightRail = (
+    <div className="bs-review-hub bs-review-hub--rail">
+      <p className="bs-tm-sec">{tr(locale, "Өнөөдөр")}</p>
+      <div className="bs-tm-stat-row">
+        <div className="bs-tm-stat">
+          <div className="bs-tm-stat-ic" aria-hidden>🔥</div>
+          <div className="bs-tm-stat-n">{loading ? "—" : stats.streak}</div>
+          <div className="bs-tm-stat-l">{tr(locale, "өдөр")}</div>
+        </div>
+        <div className="bs-tm-stat">
+          <div className="bs-tm-stat-ic" aria-hidden>⚡</div>
+          <div className="bs-tm-stat-n">{loading ? "—" : `${stats.dailyDone}/${stats.dailyGoal}`}</div>
+          <div className="bs-tm-stat-l">{tr(locale, "карт")}</div>
+        </div>
+        <div className="bs-tm-stat">
+          <div className="bs-tm-stat-ic" aria-hidden>✍️</div>
+          <div className="bs-tm-stat-n">{writingDue}</div>
+          <div className="bs-tm-stat-l">{tr(locale, "бичих")}</div>
+        </div>
+      </div>
+      {studyPlanCard}
+      {bichlegCard}
+      <p className="bs-tm-sec">{tr(locale, "Материал")}</p>
+      <Link href="/books" className="bs-tm-card">
+        <span className="bs-tm-card-ic bs-tm-card-ic--blue" aria-hidden>📖</span>
+        <span className="bs-tm-card-body">
+          <span className="bs-tm-card-title">{tr(locale, "Ном сонгох")}</span>
+          <span className="bs-tm-card-sub">{tr(locale, "HSK标准教程 · 146 хичээл · YCT, бусад ном удахгүй")}</span>
+        </span>
+        <span className="bs-tm-card-chev" aria-hidden>›</span>
+      </Link>
+      <Link href="/library" className="bs-tm-card">
+        <span className="bs-tm-card-ic bs-tm-card-ic--green" aria-hidden>📚</span>
+        <span className="bs-tm-card-body">
+          <span className="bs-tm-card-title">{tr(locale, "Уншлагын сан")}</span>
+          <span className="bs-tm-card-sub">{tr(locale, "Зурагт ном, хэлц·зүйр цэцэн үг")}</span>
+        </span>
+        <span className="bs-tm-card-chev" aria-hidden>›</span>
+      </Link>
+    </div>
+  );
+
   return (
     <MobileAppShell
       activeTab="study"
       showBottomNav
       mainClassName={SHELL_MAIN_REVIEW}
+      desktopWidth="wide"
+      rightRail={rightRail}
     >
       <div className="bs-review-hub">
         <div className="bs-tm-topbar">
@@ -310,32 +383,12 @@ export function ReviewMenuHubClient({
           </div>
         </Link>
 
-        <Link href="/study-plan" className="bs-tm-card">
-          <span className="bs-tm-card-ic bs-tm-card-ic--green" aria-hidden>
-            📅
-          </span>
-          <span className="bs-tm-card-body">
-            <span className="bs-tm-card-title">{tr(locale, "Сурах төлөвлөгөө")}</span>
-            <span className="bs-tm-card-sub">{tr(locale, "Хичээл, давталт, бичлэг")}</span>
-          </span>
-          <span className="bs-tm-card-chev" aria-hidden>›</span>
-        </Link>
+        <div className="bs-desk-hide">
+          {studyPlanCard}
+          {bichlegCard}
+        </div>
 
-        {bichlegContinue ? (
-          <Link href={bichlegContinue.href} className="bs-tm-card">
-            <span className="bs-tm-card-ic bs-tm-card-ic--blue" aria-hidden>
-              📺
-            </span>
-            <span className="bs-tm-card-body">
-              <span className="bs-tm-card-title">{tr(locale, "Бичлэг үргэлжлүүлэх")}</span>
-              <span className="bs-tm-card-sub">
-                {bichlegContinue.title} · {bichlegContinue.subtitle}
-              </span>
-            </span>
-            <span className="bs-tm-card-chev" aria-hidden>›</span>
-          </Link>
-        ) : null}
-
+        <div className="bs-tm-grid">
         <Link href="/review/memorize" className="bs-tm-card">
           <span className="bs-tm-card-ic bs-tm-card-ic--blue" aria-hidden>
             💡
@@ -429,7 +482,10 @@ export function ReviewMenuHubClient({
           </span>
           <span className="bs-tm-card-chev" aria-hidden>›</span>
         </Link>
+        </div>
 
+        <div className="bs-tm-cols">
+        <div className="bs-tm-col">
         <p className="bs-tm-sec" style={{ marginTop: 18 }}>
           {tr(locale, "Ханз · Дуудлага")}
         </p>
@@ -449,6 +505,8 @@ export function ReviewMenuHubClient({
           <span className="bs-tm-card-chev" aria-hidden>›</span>
         </Link>
 
+        </div>
+        <div className="bs-tm-col bs-desk-hide">
         <p className="bs-tm-sec" style={{ marginTop: 18 }}>
           {tr(locale, "Материал")}
         </p>
@@ -479,6 +537,8 @@ export function ReviewMenuHubClient({
           <span className="bs-tm-card-chev" aria-hidden>›</span>
         </Link>
 
+        </div>
+        <div className="bs-tm-col">
         <p className="bs-tm-sec" style={{ marginTop: 18 }}>
           {tr(locale, "Дүрэм")}
         </p>
@@ -508,6 +568,8 @@ export function ReviewMenuHubClient({
           </span>
           <span className="bs-tm-badge-new">{tr(locale, "ШИНЭ")}</span>
         </Link>
+        </div>
+        </div>
       </div>
     </MobileAppShell>
   );
