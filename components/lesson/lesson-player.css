@@ -176,3 +176,34 @@
 .bs-decomp-chip-name{color:var(--bs-muted);font-weight:600}
 .bs-decomp-etym{margin:8px 0 0;font-size:11px;line-height:1.45;color:var(--bs-ink-2)}
 .bs-cta-muted{margin-top:8px;background:#fff;color:var(--bs-ink-2);border:1px solid var(--bs-line);box-shadow:none}
+
+/* ---- PC (≥920px): зүүн үеийн жагсаалт · голд .bs-root · баруун үгс (lesson-path-player.tsx) ---- */
+.bs-lp-grid{display:contents}
+.bs-lp-nav,.bs-lp-vocab{display:none}
+@media (min-width:920px){
+  .bs-lp-grid{display:grid;grid-template-columns:260px minmax(0,1fr) 320px;gap:20px;align-items:start;width:100%;max-width:1320px;margin:0 auto;padding:20px 24px 40px;box-sizing:border-box}
+  .bs-lp-grid>.bs-root{max-width:none;width:100%;margin:0;padding:0 4px 28px}
+  .bs-lp-nav,.bs-lp-vocab{position:sticky;top:80px;display:flex;flex-direction:column;gap:4px;max-height:calc(100vh - 104px);overflow-y:auto;background:var(--bs-card);border-radius:var(--bs-radius);box-shadow:var(--bs-shadow);padding:14px 10px;scrollbar-width:thin}
+  .bs-lp-nav-head{padding:4px 8px 12px;border-bottom:1px solid var(--bs-line);margin-bottom:6px}
+  .bs-lp-nav-kicker{margin:0;font-size:11px;font-weight:800;letter-spacing:.06em;color:var(--bs-green-700);text-transform:uppercase}
+  .bs-lp-nav-title{margin:2px 0 0;font-size:16px;font-weight:800;line-height:1.25}
+  .bs-lp-nav-zh{margin:0;font-family:var(--bs-zh);font-size:14px;color:var(--bs-ink-2)}
+  .bs-lp-nav-meta{margin:6px 0 0;font-size:11px;font-weight:600;color:var(--bs-muted)}
+  .bs-lp-nav-item{display:flex;align-items:center;gap:10px;padding:8px 10px;border:0;border-radius:12px;background:transparent;color:var(--bs-ink);text-align:left;cursor:pointer;font:inherit}
+  .bs-lp-nav-item:hover{background:var(--bs-bg)}
+  .bs-lp-nav-item--on{background:var(--bs-green-50)}
+  .bs-lp-nav-dot{flex:none;display:grid;place-items:center;width:28px;height:28px;border-radius:999px;border:2px solid var(--bs-line);font-size:12px;font-weight:800;color:var(--bs-muted)}
+  .bs-lp-nav-item--done .bs-lp-nav-dot{background:var(--bs-green);border-color:var(--bs-green);color:#fff}
+  .bs-lp-nav-item--on .bs-lp-nav-dot{background:var(--bs-ink);border-color:var(--bs-ink);color:#fff}
+  .bs-lp-nav-label{display:flex;flex-direction:column;font-size:13px;font-weight:800;line-height:1.2}
+  .bs-lp-nav-label small{font-size:11px;font-weight:600;color:var(--bs-muted);margin-top:2px}
+  .bs-lp-vocab-head{display:flex;align-items:center;justify-content:space-between;padding:4px 8px 10px;font-size:11px;font-weight:800;letter-spacing:.06em;color:var(--bs-muted);text-transform:uppercase}
+  .bs-lp-vocab-count{background:var(--bs-bg);border-radius:999px;padding:2px 8px}
+  .bs-lp-vocab-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:2px}
+  .bs-lp-vocab-row{display:flex;align-items:center;gap:10px;padding:6px 8px;border-radius:10px}
+  .bs-lp-vocab-row:hover{background:var(--bs-bg)}
+  .bs-lp-vocab-zh{flex:none;min-width:56px;font-family:var(--bs-zh);font-size:18px;font-weight:700}
+  .bs-lp-vocab-body{flex:1 1 auto;min-width:0;display:flex;flex-direction:column}
+  .bs-lp-vocab-py{font-size:11px;color:var(--bs-muted)}
+  .bs-lp-vocab-mn{font-size:13px;font-weight:700;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+}

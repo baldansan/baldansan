@@ -263,7 +263,7 @@ export function GamesAppView({ lessonIds, lessonTitles }: Props) {
   const showCampaign = lang !== "ko";
 
   return (
-    <MobileAppShell activeTab="games" mainClassName={SHELL_MAIN_NARROW}>
+    <MobileAppShell activeTab="games" mainClassName={SHELL_MAIN_NARROW} desktopWidth="wide">
       <h1 className="bs-tm-page-title">{tr(locale, "Тоглоом")} 🎮</h1>
 
       <div className="bs-tm-stat-row">

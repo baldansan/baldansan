@@ -2,8 +2,8 @@
 
 import { useRouter } from "next/navigation";
 import nextDynamic from "next/dynamic";
+import { AppShell } from "@/components/app/app-shell";
 import { AdminPreviewBanner } from "@/components/admin-preview-banner";
-import PhoneFrame from "@/components/layout/PhoneFrame";
 import LessonPathPlayer from "@/components/lesson/lesson-path-player";
 import { ExamLessonWatchClient } from "@/components/lesson/exam-lesson-watch";
 import { TextbookLessonWatchClient } from "@/components/lesson/textbook-lesson-watch";
@@ -63,7 +63,7 @@ function SchemaLessonWatchPlayer({
   const router = useRouter();
 
   return (
-    <PhoneFrame>
+    <AppShell activeTab="study" showBottomNav={false} immersive>
       <div className="bs-app-shell-inner">
         {adminPreview ? <AdminPreviewBanner /> : null}
         <LessonPathPlayer
@@ -78,7 +78,7 @@ function SchemaLessonWatchPlayer({
           onExit={() => router.back()}
         />
       </div>
-    </PhoneFrame>
+    </AppShell>
   );
 }
 

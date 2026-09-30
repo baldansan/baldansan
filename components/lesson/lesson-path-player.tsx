@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import {
   buildLessonPathPlan,
   type LessonPathPlan,
@@ -26,6 +26,7 @@ import { LessonPathWarmupStage } from "./lesson-path-warmup-stage";
 import { LessonPathQuizStage } from "./lesson-path-quiz-stage";
 import { LessonPathSummaryStage } from "./lesson-path-summary-stage";
 import VocabularyCard from "./modules/VocabularyCard";
+import SpeakButton from "./SpeakButton";
 import CharactersModule from "./modules/CharactersModule";
 import TextsModule from "./modules/TextsModule";
 import GrammarModule from "./modules/GrammarModule";
@@ -317,6 +318,81 @@ export default function LessonPathPlayer({
     activeStage.id !== "goal_warmup";
   const showPracticeStageFooter = isPracticeStage && practiceFooter != null;
 
+  /* ---- PC (≥920px) хажуугийн самбарууд — утсан дээр CSS-ээр нуугдана (lesson-player.css .bs-lp-*) ---- */
+  const firstIncompleteIndex = plan.stages.findIndex(
+    (s) => !progress.completedStageIds.includes(s.id)
+  );
+  const deskNav = (
+    <aside className="bs-lp-nav" aria-label="Хичээлийн үеүүд">
+      <div className="bs-lp-nav-head">
+        <p className="bs-lp-nav-kicker">{lesson.level} · {lesson.lesson_number}-р хичээл</p>
+        <p className="bs-lp-nav-title" translate="no">{lesson.title.mn}</p>
+        <p className="bs-lp-nav-zh" translate="no">{lesson.title.zh}</p>
+        <div className="bs-progress" style={{ margin: "10px 0 0" }}>
+          <span
+            style={{
+              width: `${plan.stages.length ? (progress.completedStageIds.length / plan.stages.length) * 100 : 0}%`,
+            }}
+          />
+        </div>
+        <p className="bs-lp-nav-meta">
+          {progress.completedStageIds.length}/{plan.stages.length} үе дууссан
+        </p>
+      </div>
+      <button type="button" className="bs-lp-nav-item" onClick={goToHub}>
+        <span className="bs-lp-nav-dot">☰</span>
+        <span className="bs-lp-nav-label">Хичээлийн зам</span>
+      </button>
+      {plan.stages.map((stage, index) => {
+        const done = progress.completedStageIds.includes(stage.id);
+        const active = view === "stage" && activeStage?.id === stage.id;
+        const skippedAhead = firstIncompleteIndex >= 0 && index > firstIncompleteIndex;
+        return (
+          <button
+            key={stage.id}
+            type="button"
+            className={`bs-lp-nav-item${active ? " bs-lp-nav-item--on" : ""}${done ? " bs-lp-nav-item--done" : ""}`}
+            onClick={() => openStage(stage, skippedAhead)}
+            aria-current={active ? "step" : undefined}
+          >
+            <span className="bs-lp-nav-dot">{done ? "✓" : stage.number}</span>
+            <span className="bs-lp-nav-label">
+              {stage.label}
+              <small>{stage.minutes} мин · {stage.hint}</small>
+            </span>
+          </button>
+        );
+      })}
+    </aside>
+  );
+  const deskVocab = (
+    <aside className="bs-lp-vocab" aria-label="Энэ хичээлийн үгс">
+      <div className="bs-lp-vocab-head">
+        <span>Энэ хичээлийн үгс</span>
+        <span className="bs-lp-vocab-count">{lesson.vocabulary.length}</span>
+      </div>
+      <ul className="bs-lp-vocab-list">
+        {lesson.vocabulary.map((w) => (
+          <li key={w.id} className="bs-lp-vocab-row" translate="no">
+            <span className="bs-lp-vocab-zh">{w.zh}</span>
+            <span className="bs-lp-vocab-body">
+              <span className="bs-lp-vocab-py">{w.pinyin}{w.pos ? ` · ${w.pos}` : ""}</span>
+              <span className="bs-lp-vocab-mn">{w.meaning_mn ?? w.mn}</span>
+            </span>
+            <SpeakButton text={w.zh} />
+          </li>
+        ))}
+      </ul>
+    </aside>
+  );
+  const withDesk = (node: ReactNode) => (
+    <div className="bs-lp-grid">
+      {deskNav}
+      {node}
+      {deskVocab}
+    </div>
+  );
+
   if (!hydrated) {
     return (
       <div className="bs-root">
@@ -328,7 +404,7 @@ export default function LessonPathPlayer({
   }
 
   if (view === "intro") {
-    return (
+    return withDesk(
       <div className="bs-root">
         <div className="bs-topbar">
           <button
@@ -354,7 +430,7 @@ export default function LessonPathPlayer({
   }
 
   if (view === "hub" || !activeStage) {
-    return (
+    return withDesk(
       <div className="bs-root">
         <LessonPathHub
           lesson={lesson}
@@ -367,7 +443,7 @@ export default function LessonPathPlayer({
     );
   }
 
-  return (
+  return withDesk(
     <div className="bs-root bs-path-active">
       <div className="bs-path-stage-header">
         <button

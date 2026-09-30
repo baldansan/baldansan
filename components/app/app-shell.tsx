@@ -46,7 +46,7 @@ export function AppShell({
   const navTab = resolveBottomNavTab(activeTab);
 
   const mainClasses = immersive
-    ? `relative flex-1 overflow-hidden p-0 ${mainClassName}`
+    ? `bs-desk-main--immersive relative flex-1 overflow-hidden p-0 ${mainClassName}`
     : `bs-desk-main flex w-full flex-1 min-w-0 justify-center overflow-x-hidden pt-5 ${
         showBottomNav ? "pb-32" : "pb-6"
       }`;

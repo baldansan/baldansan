@@ -8,6 +8,8 @@ type Props = {
   onClick?: () => void;
   disabled?: boolean;
   className?: string;
+  /** PC гарын товч (1-4) — bs-desk-only, утсан дээр нуугдана. */
+  hotkey?: string;
 };
 
 const stateClass = {
@@ -26,6 +28,7 @@ export function GameOptionButton({
   onClick,
   disabled,
   className = "",
+  hotkey,
 }: Props) {
   const resolved =
     disabled && state === "default"
@@ -41,9 +44,10 @@ export function GameOptionButton({
       type="button"
       onClick={onClick}
       disabled={disabled || (state !== "default" && state !== "selected")}
-      className={`${stateClass[resolved]} ${className}`}
+      className={`${stateClass[resolved]} ${className}${hotkey ? " app-game-option--hotkey" : ""}`}
       translate="no"
     >
+      {hotkey ? <kbd className="app-game-hotkey" aria-hidden>{hotkey}</kbd> : null}
       <span className="block text-base font-semibold">{label}</span>
       {sublabel ? (
         <span className="mt-0.5 block text-xs text-[var(--app-muted)]">

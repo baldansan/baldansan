@@ -175,6 +175,9 @@
   }
 
   /* ---- Агуулга ---- */
+  .bs-app-root .bs-app-shell-inner > main.bs-desk-main--immersive {
+    overflow: visible;
+  }
   .bs-app-root .bs-app-shell-inner > main.bs-desk-main {
     justify-content: center;
     align-items: flex-start;
@@ -296,5 +299,53 @@
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 10px;
+  }
+}
+
+/* ---- Тоглоом PC: 2×2 хариулт, гарын товчны дугаар ---- */
+.app-game-hotkey {
+  display: none;
+}
+@media (min-width: 920px) {
+  .app-game-options {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px !important;
+  }
+  .app-game-option--hotkey {
+    position: relative;
+    padding-left: 52px !important;
+    min-height: 64px !important;
+  }
+  .app-game-hotkey {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 26px;
+    height: 26px;
+    border-radius: 7px;
+    background: #0f1b14;
+    color: #fff;
+    font: 800 12px/1 var(--bs-ui, system-ui, sans-serif);
+  }
+  .app-game-option-correct .app-game-hotkey {
+    background: #1fb85a;
+  }
+  .app-game-option-wrong .app-game-hotkey {
+    background: #ef4444;
+  }
+}
+
+/* ---- Тоглоомын hub PC ---- */
+@media (min-width: 920px) {
+  .bs-desk-col--wide .bs-tm-game-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  }
+  .bs-desk-col--wide .bs-tm-stat-row {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }

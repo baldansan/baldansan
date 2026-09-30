@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { GameCard } from "@/components/games/game-card";
 import { GameEmptyState } from "@/components/games/game-empty-state";
 import { GameHeader } from "@/components/games/game-header";
@@ -116,6 +116,24 @@ export function TranslateGameClient({
     setFinished(false);
   }
 
+  // PC гарын товч: 1-4 хариулт, Enter дараах
+  useEffect(() => {
+    function onKey(e: KeyboardEvent) {
+      if (finished || !current) return;
+      const target = e.target as HTMLElement | null;
+      if (target && (target.tagName === "INPUT" || target.tagName === "TEXTAREA")) return;
+      if (e.key >= "1" && e.key <= "4" && !revealed) {
+        const opt = current.options[Number(e.key) - 1];
+        if (opt) handleSelect(opt);
+      } else if (e.key === "Enter" && revealed && index < total - 1) {
+        e.preventDefault();
+        handleNext();
+      }
+    }
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  });
+
   if (questions.length === 0) {
     return (
       <GameShell>
@@ -208,8 +226,8 @@ export function TranslateGameClient({
               {tr(locale, "Зөв хариултыг сонгоно уу")}
             </p>
           </GameCard>
-          <div className="flex flex-col gap-2">
-            {current.options.map((option) => {
+          <div className="app-game-options flex flex-col gap-2">
+            {current.options.map((option, optionIndex) => {
               let state: "default" | "correct" | "wrong" = "default";
               if (revealed) {
                 if (option === current.correctAnswer) state = "correct";
@@ -222,6 +240,7 @@ export function TranslateGameClient({
                   state={state}
                   disabled={revealed}
                   onClick={() => handleSelect(option)}
+                  hotkey={String(optionIndex + 1)}
                 />
               );
             })}
