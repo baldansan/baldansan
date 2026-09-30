@@ -502,3 +502,152 @@
     font-size: 10px;
   }
 }
+
+/* ---------- Загвар шалгалт (/test, /mock-tests) — PC ---------- */
+@media (min-width: 920px) {
+  .bs-mt-exam-topbar {
+    position: sticky;
+    top: 64px;
+    z-index: 5;
+    padding: 10px 32px;
+  }
+  .bs-mt-exam-topbar-title {
+    font-size: 15px;
+  }
+  .bs-mt-exam-page > :not(.bs-mt-exam--fullscreen) {
+    max-width: 900px;
+    margin: 0 auto;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 40px;
+  }
+  .bs-mt-exam--fullscreen {
+    flex-direction: row;
+    align-items: stretch;
+    min-height: calc(100vh - 64px - 49px);
+  }
+  .bs-mt-exam-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 auto;
+    min-width: 0;
+    overflow: visible;
+    padding: 24px 40px 40px;
+  }
+  .bs-mt-exam-body > * {
+    width: 100%;
+    max-width: 860px;
+  }
+  .bs-mt-exam-body .bs-mt-questions {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .bs-mt-question,
+  .bs-mt-single-question > .bs-mt-question {
+    padding: 20px 24px;
+  }
+  .bs-mt-q-text {
+    font-size: 17px;
+  }
+  .bs-mt-option {
+    padding: 12px 16px;
+    font-size: 15px;
+  }
+  .bs-mt-option:hover:not(:disabled) {
+    border-color: var(--bs-green);
+    background: #f4faf6;
+  }
+  .bs-mt-finish-btn {
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* Хариултын хуудас: доод туузаас → баруун самбар (sticky, бүх асуулт тороор) */
+  .bs-mt-answer-sheet {
+    flex: none;
+    width: 300px;
+    align-self: flex-start;
+    position: sticky;
+    top: calc(64px + 49px);
+    max-height: calc(100vh - 64px - 49px);
+    overflow-y: auto;
+    padding: 18px 18px 22px;
+    border-top: 0;
+    border-left: 1px solid var(--bs-line);
+    min-height: calc(100vh - 64px - 49px);
+  }
+  .bs-mt-answer-sheet-label {
+    font-size: 11px;
+    margin-bottom: 10px;
+  }
+  .bs-mt-answer-sheet-scroll {
+    overflow: visible;
+  }
+  .bs-mt-answer-sheet-grid {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 6px;
+    min-width: 0;
+  }
+  .bs-mt-answer-cell {
+    width: auto;
+    height: 38px;
+  }
+  .bs-mt-answer-sheet-keys {
+    display: block;
+    margin: 16px 0 0;
+    font-size: 11px;
+    line-height: 1.9;
+    font-weight: 600;
+    color: var(--bs-muted);
+  }
+  .bs-mt-answer-sheet-keys kbd {
+    display: inline-block;
+    min-width: 20px;
+    padding: 0 5px;
+    border: 1px solid var(--bs-line);
+    border-radius: 6px;
+    background: #fff;
+    font: inherit;
+    font-size: 10px;
+    font-weight: 800;
+    color: var(--bs-ink-2);
+    text-align: center;
+  }
+  .bs-mt-answer-sheet-sum {
+    display: flex;
+    justify-content: space-between;
+    margin: 12px 0 0;
+    font-size: 12px;
+    font-weight: 800;
+    color: var(--bs-ink-2);
+  }
+  /* Дасгалын бүлгүүд (/review/practice/[id]) — 2 багана */
+  .bs-desk-col--wide .bs-mtp-group-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+  .bs-mtp-wrap {
+    padding-bottom: 40px;
+  }
+  /* Загвар шалгалтын жагсаалт, танилцуулга */
+  .bs-mt-list,
+  .bs-mt-intro {
+    max-width: 860px;
+    margin: 0 auto;
+  }
+  .bs-mt-mode-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: stretch;
+  }
+}
+@media (max-width: 919px) {
+  .bs-mt-answer-sheet-keys,
+  .bs-mt-answer-sheet-sum {
+    display: none;
+  }
+}

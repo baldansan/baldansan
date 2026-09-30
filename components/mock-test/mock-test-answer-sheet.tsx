@@ -16,6 +16,7 @@ export function MockTestAnswerSheet({
   onSelect,
 }: Props) {
   if (!questions.length) return null;
+  const answeredCount = questions.filter((q) => Boolean((answers[String(q.q_no)] ?? "").trim())).length;
 
   return (
     <div className="bs-mt-answer-sheet" aria-label="Хариултын хуудас">
@@ -40,6 +41,15 @@ export function MockTestAnswerSheet({
           })}
         </div>
       </div>
+      <p className="bs-mt-answer-sheet-sum">
+        <span>Хариулсан</span>
+        <span>{answeredCount} / {questions.length}</span>
+      </p>
+      <p className="bs-mt-answer-sheet-keys">
+        <kbd>A</kbd> <kbd>B</kbd> <kbd>C</kbd> <kbd>D</kbd> эсвэл <kbd>1</kbd>–<kbd>4</kbd> хариулт сонгох
+        <br />
+        <kbd>←</kbd> <kbd>→</kbd> өмнөх / дараагийн асуулт
+      </p>
     </div>
   );
 }

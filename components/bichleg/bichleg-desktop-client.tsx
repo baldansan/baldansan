@@ -7,6 +7,11 @@ import { BichlegYouTubePlayer } from "@/components/bichleg/bichleg-youtube-playe
 import { BichlegEpisodeQuiz } from "@/components/bichleg/bichleg-episode-quiz";
 import { familiarityOf, fetchKnownWordSets, type KnownWordSets } from "@/lib/bichleg/known-words";
 import {
+  countSentenceCards,
+  saveSentenceCard,
+  savedSentenceIdxSet,
+} from "@/lib/bichleg/sentence-cards";
+import {
   formatEpisodeLabel,
   type SubtitleWord,
   type UserVideoProgress,
@@ -87,7 +92,7 @@ function collectKeyWords(subtitles: VideoSubtitleRow[]): SubtitleWord[] {
   return out;
 }
 
-function Icon({ name }: { name: "play" | "pause" | "prev" | "next" | "loop" | "mic" | "stop" | "sound" | "back" }) {
+function Icon({ name }: { name: "play" | "pause" | "prev" | "next" | "loop" | "mic" | "stop" | "sound" | "back" | "bookmark" }) {
   const common = {
     viewBox: "0 0 24 24",
     width: 18,
@@ -113,6 +118,8 @@ function Icon({ name }: { name: "play" | "pause" | "prev" | "next" | "loop" | "m
       return <svg {...common} fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round"><path d="M4 9v6h4l5 4V5L8 9z" /><path d="M16 9a4 4 0 0 1 0 6" /></svg>;
     case "back":
       return <svg {...common} fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M14 6l-6 6 6 6" /></svg>;
+    case "bookmark":
+      return <svg {...common} fill="none" stroke="currentColor" strokeWidth="2" strokeLinejoin="round"><path d="M6 4h12v17l-6-4-6 4z" /></svg>;
   }
 }
 
@@ -161,6 +168,8 @@ export function BichlegDesktopClient({
   const [statusLoading, setStatusLoading] = useState(false);
   const [toast, setToast] = useState<string | null>(null);
   const [savedWords, setSavedWords] = useState<Set<string>>(new Set());
+  const [savedSentences, setSavedSentences] = useState<Set<number>>(() => new Set());
+  const [sentenceCount, setSentenceCount] = useState(0);
   const [knownSets, setKnownSets] = useState<KnownWordSets | null>(null);
   const [quizOpen, setQuizOpen] = useState(false);
   const [ended, setEnded] = useState(false);
@@ -213,6 +222,8 @@ export function BichlegDesktopClient({
       if (!cancelled) setVideoLayout(layout);
     });
     setUserSubtitleOffset(readUserSubtitleOffset(activeVideo.id));
+    setSavedSentences(savedSentenceIdxSet(activeVideo.id));
+    setSentenceCount(countSentenceCards().total);
     peakRef.current = initialProgress[activeVideo.id]?.watched_sec ?? 0;
     return () => {
       cancelled = true;
@@ -264,12 +275,26 @@ export function BichlegDesktopClient({
     if (!player) setPlayerReady(false);
   }, []);
 
+  // ?t=SEC — өгүүлбэрийн картаас ирэхэд яг тэр цагаас эхлүүлнэ (нэг л удаа)
+  const initialSeekRef = useRef<number | null>(null);
+  if (initialSeekRef.current === null && typeof window !== "undefined") {
+    const t = Number(new URLSearchParams(window.location.search).get("t"));
+    initialSeekRef.current = Number.isFinite(t) && t > 0 ? t : -1;
+  }
+
   const handlePlayerReady = useCallback(() => {
     setPlayerReady(true);
     runOnPlayer((player) => {
       setDisplaySpeed(applyPlaybackRate(player, preferredSpeed));
       const d = safePlayerDuration(player);
       if (d != null && d > 0) setDuration(d);
+      const t = initialSeekRef.current;
+      if (t != null && t > 0) {
+        initialSeekRef.current = -1;
+        player.seekTo(t, true);
+        currentTimeRef.current = t;
+        setCurrentTime(t);
+      }
     });
   }, [preferredSpeed, runOnPlayer]);
 
@@ -501,6 +526,10 @@ export function BichlegDesktopClient({
         case "S":
           cycleMode();
           break;
+        case "b":
+        case "B":
+          handleSaveSentence();
+          break;
         case "Escape":
           setPickedWord(null);
           break;
@@ -552,6 +581,26 @@ export function BichlegDesktopClient({
     } else if (result.error) {
       setToast(result.error);
     }
+  }
+
+  /** Бүтэн өгүүлбэрийг цагтай нь өгүүлбэрийн карт болгон хадгална (SRS). */
+  function handleSaveSentence(sub?: VideoSubtitleRow | null) {
+    const target = sub ?? activeSubtitle;
+    if (!activeVideo || !target || !target.zh) return;
+    const res = saveSentenceCard({
+      videoId: activeVideo.id,
+      seriesId: activeVideo.series_id,
+      videoTitle: activeVideo.title_mn ?? activeVideo.title_zh,
+      idx: target.idx,
+      startSec: target.start_sec,
+      endSec: target.end_sec,
+      zh: target.zh,
+      pinyin: target.pinyin,
+      mn: target.mn,
+    });
+    setSavedSentences((prev) => new Set(prev).add(target.idx));
+    setSentenceCount(countSentenceCards().total);
+    setToast(res.duplicate ? tr(locale, "Энэ өгүүлбэр аль хэдийн хадгалагдсан") : tr(locale, "Өгүүлбэр хадгаллаа ✓ — Давтах › Өгүүлбэрийн карт"));
   }
 
   /* ---------- дуурайж хэлэх ---------- */
@@ -827,6 +876,14 @@ export function BichlegDesktopClient({
                   ) : null}
                   <button
                     type="button"
+                    className={`bs-bd-line-btn${savedSentences.has(sub.idx) ? " bs-bd-line-btn--on" : ""}`}
+                    title={savedSentences.has(sub.idx) ? tr(locale, "Хадгалсан өгүүлбэр") : tr(locale, "Өгүүлбэр хадгалах")}
+                    onClick={() => handleSaveSentence(sub)}
+                  >
+                    <Icon name="bookmark" />
+                  </button>
+                  <button
+                    type="button"
                     className="bs-bd-line-btn"
                     title={`${tr(locale, "Давтах")} ×${REPEAT_COUNT}`}
                     onClick={() => {
@@ -916,6 +973,15 @@ export function BichlegDesktopClient({
                       <Icon name="play" /> {tr(locale, "Миний дуу")}
                     </button>
                   ) : null}
+                  <button
+                    type="button"
+                    className={`bs-bd-chip${savedSentences.has(activeSubtitle.idx) ? " bs-bd-chip--on" : ""}`}
+                    onClick={() => handleSaveSentence()}
+                    title="B"
+                  >
+                    <Icon name="bookmark" />{" "}
+                    {savedSentences.has(activeSubtitle.idx) ? tr(locale, "Хадгалсан") : tr(locale, "Өгүүлбэр хадгалах")}
+                  </button>
                   {activeSubtitle.slang_note ? (
                     <span className="bs-bd-chip bs-bd-chip--slang">💬 {tr(locale, "Залуусын хэллэг")}</span>
                   ) : null}
@@ -1031,8 +1097,13 @@ export function BichlegDesktopClient({
           ) : null}
 
           <p className="bs-bd-keys-help">
-            <kbd>Space</kbd> {tr(locale, "тоглуулах")} · <kbd>←</kbd><kbd>→</kbd> {tr(locale, "өгүүлбэр")} · <kbd>Shift</kbd>+<kbd>←→</kbd> 3{tr(locale, "с")} · <kbd>R</kbd> {tr(locale, "дахин")} · <kbd>L</kbd> ×3 · <kbd>P</kbd> {tr(locale, "зогсох")} · <kbd>S</kbd> {tr(locale, "горим")}
+            <kbd>Space</kbd> {tr(locale, "тоглуулах")} · <kbd>←</kbd><kbd>→</kbd> {tr(locale, "өгүүлбэр")} · <kbd>Shift</kbd>+<kbd>←→</kbd> 3{tr(locale, "с")} · <kbd>R</kbd> {tr(locale, "дахин")} · <kbd>L</kbd> ×3 · <kbd>P</kbd> {tr(locale, "зогсох")} · <kbd>S</kbd> {tr(locale, "горим")} · <kbd>B</kbd> {tr(locale, "өгүүлбэр хадгалах")}
           </p>
+          {sentenceCount > 0 ? (
+            <Link href="/review/sentences" className="bs-bd-sent-link">
+              <Icon name="bookmark" /> {tr(locale, "Өгүүлбэрийн карт")} · {sentenceCount} →
+            </Link>
+          ) : null}
         </aside>
 
         {toast ? <div className="bs-bd-toast">{toast}</div> : null}

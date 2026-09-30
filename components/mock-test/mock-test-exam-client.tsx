@@ -335,6 +335,36 @@ export function MockTestExamClient({
     selectQuestion(next.q_no);
   }
 
+  // PC гарын товч: A–D / 1–4 хариулт, √/× шүүлт, ←/→ асуулт солих (зөвхөн шалгалтын үед)
+  useEffect(() => {
+    if (phase !== "exam" || showExitDialog || showUnansweredPrompt) return;
+    function onKey(e: KeyboardEvent) {
+      const target = e.target as HTMLElement | null;
+      if (target && (target.tagName === "INPUT" || target.tagName === "TEXTAREA" || target.isContentEditable)) return;
+      if (e.metaKey || e.ctrlKey || e.altKey) return;
+      const q = currentQuestion;
+      if (e.key === "ArrowRight" || e.key === "ArrowLeft") {
+        e.preventDefault();
+        goToQuestionOffset(e.key === "ArrowRight" ? 1 : -1);
+        return;
+      }
+      if (!q) return;
+      if (q.q_type === "judge") {
+        if (e.key === "1" || e.key.toLowerCase() === "y") setAnswer(q.q_no, "√");
+        else if (e.key === "2" || e.key.toLowerCase() === "n") setAnswer(q.q_no, "×");
+        return;
+      }
+      const opts = q.options ?? [];
+      if (!opts.length) return;
+      const upper = e.key.toUpperCase();
+      let pick = opts.find((o) => o.key.toUpperCase() === upper);
+      if (!pick && /^[1-9]$/.test(e.key)) pick = opts[Number(e.key) - 1];
+      if (pick) setAnswer(q.q_no, pick.key);
+    }
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  });
+
   function advanceFromQuestion(qNo: number) {
     const index = skillQuestions.findIndex((item) => item.q_no === qNo);
     const next = skillQuestions[index + 1];
@@ -501,7 +531,7 @@ export function MockTestExamClient({
         </button>
         <span className="bs-mt-exam-topbar-title">{test.title}</span>
       </div>
-      {children}
+      <div className="bs-mt-exam-page">{children}</div>
       {showExitDialog ? (
         <MockTestExitDialog
           onCancel={() => setShowExitDialog(false)}

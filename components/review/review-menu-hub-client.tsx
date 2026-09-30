@@ -30,6 +30,7 @@ import {
   getUserWordSrsStats,
 } from "@/lib/supabase/user-word-srs";
 import type { BichlegContinueTarget } from "@/lib/bichleg/types";
+import { countSentenceCards } from "@/lib/bichleg/sentence-cards";
 import { fetchBichlegContinueTargetClient } from "@/lib/supabase/video-progress-client";
 import { fetchMistakes } from "@/lib/supabase/mistake-book";
 import { countDueLocalWriting } from "@/lib/srs/writing-srs";
@@ -72,6 +73,7 @@ export function ReviewMenuHubClient({
     useState<BichlegContinueTarget | null>(null);
   const [mistakeCount, setMistakeCount] = useState<number | null>(null);
   const [writingDue, setWritingDue] = useState(0);
+  const [sentenceCards, setSentenceCards] = useState({ total: 0, due: 0 });
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   const loadStats = useCallback(async () => {
@@ -80,6 +82,7 @@ export function ReviewMenuHubClient({
 
     const retention = await getStreakUnified().catch(() => null);
     const streak = retention?.currentStreak ?? 0;
+    setSentenceCards(countSentenceCards());
 
     let dueCards = 0;
     let dailyDone = 0;
@@ -413,6 +416,26 @@ export function ReviewMenuHubClient({
               {writingDue > 0
                 ? `${writingDue} ${tr(locale, "ханз бичихээр хүлээж байна")}`
                 : tr(locale, "Бичсэн ханзууд чинь энд давтагдана")}
+            </span>
+          </span>
+          <span className="bs-tm-card-chev" aria-hidden>›</span>
+        </Link>
+
+        <Link href="/review/sentences" className="bs-tm-card">
+          <span className="bs-tm-card-ic bs-tm-card-ic--blue" aria-hidden>
+            🔖
+          </span>
+          <span className="bs-tm-card-body">
+            <span className="bs-tm-card-title">
+              {tr(locale, "Өгүүлбэрийн карт")}
+              {sentenceCards.due > 0 ? ` · ${sentenceCards.due}` : ""}
+            </span>
+            <span className="bs-tm-card-sub">
+              {sentenceCards.total === 0
+                ? tr(locale, "Бичлэгээс хадгалсан өгүүлбэрүүд энд давтагдана")
+                : sentenceCards.due > 0
+                  ? `${sentenceCards.due} ${tr(locale, "өгүүлбэр давтахаар хүлээж байна")}`
+                  : `${sentenceCards.total} ${tr(locale, "өгүүлбэр хадгалсан")}`}
             </span>
           </span>
           <span className="bs-tm-card-chev" aria-hidden>›</span>

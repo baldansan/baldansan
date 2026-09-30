@@ -853,3 +853,21 @@
   font-size: 26px;
   font-weight: 900;
 }
+
+/* Өгүүлбэрийн карт руу холбоос (баруун самбарын доод) */
+.bs-bd-sent-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin: 4px 16px 14px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(31, 184, 90, 0.14);
+  color: var(--bd-green-2);
+  font-size: 12px;
+  font-weight: 800;
+  text-decoration: none;
+}
+.bs-bd-sent-link:hover {
+  background: rgba(31, 184, 90, 0.24);
+}

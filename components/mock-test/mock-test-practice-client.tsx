@@ -242,7 +242,7 @@ export function MockTestPracticeClient({ test, questions, lessonTitles }: Props)
   // ---------------------------------------------------------------- pick ---
   if (phase === "pick" || !activeGroup || !question) {
     return (
-      <MobileAppShell activeTab="study" showBottomNav>
+      <MobileAppShell activeTab="study" showBottomNav desktopWidth="wide">
         <div className="bs-mtp-wrap">
           <Link href="/review/practice" className="bs-mtp-back">
             ← Дасгалын жагсаалт
