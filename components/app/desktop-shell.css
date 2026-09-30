@@ -349,3 +349,43 @@
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
+
+/* ---- Уншлагын сан: хэлц үг 2 самбар (app/library/idioms) ---- */
+.bs-desk-only {
+  display: none;
+}
+.bs-lib-two {
+  display: contents;
+}
+@media (min-width: 920px) {
+  .bs-desk-only {
+    display: block;
+  }
+  .bs-lib-two {
+    display: grid;
+    grid-template-columns: 440px minmax(0, 1fr);
+    gap: 24px;
+    align-items: start;
+  }
+  .bs-lib-list {
+    position: sticky;
+    top: 80px;
+    max-height: calc(100vh - 100px);
+    overflow-y: auto;
+    padding-right: 4px;
+    scrollbar-width: thin;
+  }
+  .bs-lib-two .bs-lib-card {
+    padding: 12px 14px;
+  }
+  .bs-lib-two .bs-lib-card-extra {
+    display: none;
+  }
+  .bs-lib-card--on {
+    outline: 2px solid #1fb85a;
+    background: #eaf8f0;
+  }
+  .bs-lib-two--detail .bs-lib-detail nav[aria-label="breadcrumb"] {
+    display: none;
+  }
+}
