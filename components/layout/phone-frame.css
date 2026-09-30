@@ -1,49 +1,13 @@
 /* components/layout/phone-frame.css
-   Десктоп (≥920px): төвд утасны багана + хоёр талд саарал фон.
-   Утас (≤919px): хүрээгүй — бүтэн дэлгэц (passthrough), одоогийнх шиг. */
+   PhoneFrame — одоо бүх өргөнд passthrough (display: contents).
+   Утас (≤919px): өмнөх шигээ бүтэн дэлгэц.
+   Десктоп (≥920px): утасны хүрээ (bezel) БАЙХГҮЙ — components/app/desktop-shell.css
+   дээд цэс + өргөн агуулга + баруун самбар зурна. */
 
-/* --- Десктоп төвлөрсөн багана --- */
-.bs-frame-root {
-  min-height: 100vh;
-  display: flex;
-  align-items: stretch;
-  justify-content: center;
-  padding: 0;
-  background:
-    radial-gradient(1200px 600px at 50% -10%, #f1f5f4 0%, transparent 60%),
-    linear-gradient(160deg, #e9eef1 0%, #dde4e8 100%);
-}
-
-.bs-frame {
-  position: relative;
-  width: 100%;
-  max-width: 480px;
-  min-height: 100vh;
-  background: transparent;
-  border-radius: 0;
-  padding: 0;
-  box-shadow: none;
-}
-
+.bs-frame-root,
+.bs-frame,
 .bs-frame-screen {
-  position: relative;
-  width: 100%;
-  min-height: 100vh;
-  background: var(--app-bg, #eef2ef);
-  border-radius: 0;
-  overflow-y: auto;
-  overflow-x: hidden;
-  -webkit-overflow-scrolling: touch;
-  transform: translateZ(0);
-}
-
-.bs-frame-screen::-webkit-scrollbar {
-  width: 8px;
-}
-
-.bs-frame-screen::-webkit-scrollbar-thumb {
-  background: rgba(0, 0, 0, 0.14);
-  border-radius: 8px;
+  display: contents;
 }
 
 .bs-frame-notch {
@@ -54,42 +18,9 @@
 .bs-app-shell-inner {
   position: relative;
   display: flex;
-  min-height: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
   flex-direction: column;
   width: 100%;
   background: var(--app-bg, #eef2ef);
-}
-
-@media (max-width: 919px) {
-  .bs-app-shell-inner {
-    min-height: 100vh;
-    min-height: 100dvh;
-  }
-}
-
-/* --- Утас / нарийн дэлгэц: хүрээ АЛГА (passthrough) — одоогийн mobile харагдац --- */
-@media (max-width: 919px) {
-  .bs-frame-root,
-  .bs-frame,
-  .bs-frame-screen {
-    display: contents;
-  }
-
-  .bs-frame-root {
-    background: none;
-    padding: 0;
-    min-height: 0;
-  }
-}
-
-/* Desktop: shell inner fills the 480px column */
-@media (min-width: 920px) {
-  .bs-app-root .bs-app-shell-inner {
-    min-height: 100vh;
-    background: var(--app-bg, #eef2ef);
-  }
-
-  .bs-app-root .bs-app-shell-inner > main {
-    width: 100%;
-  }
 }

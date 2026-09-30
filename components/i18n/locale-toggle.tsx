@@ -28,7 +28,7 @@ export function FloatingLocaleToggle() {
   // Админ topbar өөрийн солигчтой; бичлэг тоглуулагч бүтэн дэлгэц
   if (pathname.startsWith("/admin") || /^\/bichleg\/[^/]+/.test(pathname)) return null;
   return (
-    <div className="pointer-events-none fixed inset-x-0 top-0 z-[60] flex justify-end px-3 pt-[max(0.5rem,env(safe-area-inset-top))] print:hidden">
+    <div className="bs-desk-hide pointer-events-none fixed inset-x-0 top-0 z-[60] flex justify-end px-3 pt-[max(0.5rem,env(safe-area-inset-top))] print:hidden">
       <LocaleToggle className="pointer-events-auto" />
     </div>
   );

@@ -1,0 +1,219 @@
+/* components/app/desktop-shell.css
+   PC / laptop (≥920px) харагдац. Утас (<920px) дээр эндхийн юу ч хэрэгжихгүй.
+   Бүтэц: дээд цэс (sticky) → main { агуулгын багана + баруун самбар } */
+
+.bs-desknav {
+  display: none;
+}
+
+.bs-desk-rail {
+  display: none;
+}
+
+@media (min-width: 920px) {
+  /* Доод таб, утасны толгой — PC дээр нуугдана */
+  .bs-desk-hide {
+    display: none !important;
+  }
+
+  .bs-app-shell-inner {
+    min-height: calc(100vh - 64px);
+  }
+
+  /* ---- Дээд цэс ---- */
+  .bs-desknav {
+    white-space: nowrap;
+    position: sticky;
+    top: 0;
+    z-index: 60;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    height: 64px;
+    padding: 0 28px;
+    background: #fff;
+    border-bottom: 1px solid var(--app-border, #e7ece8);
+  }
+  .bs-desknav-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: 22px;
+    text-decoration: none;
+    color: var(--app-text, #0f1b14);
+  }
+  .bs-desknav-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    background: #1fb85a;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: var(--bs-zh), "Noto Sans SC", sans-serif;
+  }
+  .bs-desknav-title {
+    font-size: 18px;
+    font-weight: 800;
+    white-space: nowrap;
+  }
+  .bs-desknav-tabs {
+    display: flex;
+    align-items: stretch;
+    height: 64px;
+  }
+  .bs-desknav-tab {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0 16px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #3c4a41;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+    box-sizing: border-box;
+    transition: color 0.15s ease, background 0.15s ease;
+  }
+  .bs-desknav-tab:hover {
+    color: var(--app-text, #0f1b14);
+    background: #f6f8f6;
+  }
+  .bs-desknav-tab svg {
+    width: 20px;
+    height: 20px;
+    flex: none;
+  }
+  .bs-desknav-tab.bs-on {
+    color: #149247;
+    border-bottom-color: #1fb85a;
+  }
+  .bs-desknav-spacer {
+    flex: 1 1 auto;
+  }
+  .bs-desknav-search {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 300px;
+    height: 40px;
+    padding: 0 12px;
+    box-sizing: border-box;
+    border-radius: 12px;
+    background: var(--app-bg, #eef2ef);
+    border: 1px solid transparent;
+    margin-right: 10px;
+  }
+  .bs-desknav-search:focus-within {
+    border-color: #1fb85a;
+    background: #fff;
+  }
+  .bs-desknav-search svg {
+    width: 18px;
+    height: 18px;
+    flex: none;
+    color: #5b6962;
+  }
+  .bs-desknav-search input {
+    flex: 1 1 auto;
+    min-width: 0;
+    border: 0;
+    background: transparent;
+    font: inherit;
+    font-size: 14px;
+    color: var(--app-text, #0f1b14);
+    outline: none;
+  }
+  .bs-desknav-search input::placeholder {
+    color: #7e8b83;
+  }
+  .bs-desknav-seg {
+    display: inline-flex;
+    align-items: center;
+    height: 32px;
+    padding: 2px;
+    border-radius: 999px;
+    background: var(--app-bg, #eef2ef);
+    margin: 0 4px;
+  }
+  .bs-desknav-seg button {
+    height: 28px;
+    padding: 0 12px;
+    border: 0;
+    border-radius: 999px;
+    background: transparent;
+    font: inherit;
+    font-size: 12px;
+    font-weight: 800;
+    color: #5b6962;
+    cursor: pointer;
+  }
+  .bs-desknav-seg button.bs-on {
+    background: #fff;
+    color: #149247;
+    box-shadow: 0 1px 2px rgba(15, 27, 20, 0.08);
+  }
+  .bs-desknav-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    color: #3c4a41;
+    text-decoration: none;
+  }
+  .bs-desknav-icon:hover {
+    background: #f6f8f6;
+  }
+  .bs-desknav-icon svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  /* ---- Агуулга ---- */
+  .bs-app-root .bs-app-shell-inner > main.bs-desk-main {
+    justify-content: center;
+    align-items: flex-start;
+    gap: 28px;
+    padding: 28px 32px 56px;
+  }
+  .bs-desk-col {
+    flex: 0 1 auto;
+    width: 100%;
+    padding: 0 !important;
+  }
+  .bs-desk-col--narrow {
+    max-width: 760px !important;
+  }
+  .bs-desk-col--wide {
+    max-width: 1120px !important;
+  }
+  .bs-desk-col--full {
+    max-width: none !important;
+  }
+  .bs-desk-rail {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 320px;
+    flex: none;
+    position: sticky;
+    top: 92px;
+  }
+
+  /* Утасны хуучин зурвасууд PC дээр */
+  .bs-app-root .bs-bichleg-shell {
+    max-width: none;
+  }
+}
+
+/* Том дэлгэц — баруун самбартай үед агуулгыг арай өргөн */
+@media (min-width: 1400px) {
+  .bs-desk-col--wide {
+    max-width: 1200px !important;
+  }
+}
