@@ -3,6 +3,11 @@
 -- Мөн 039 (admin бичих RLS) бодлогыг дахин тавина — /admin/import/bichleg цаашид ажиллана.
 create extension if not exists http with schema extensions;
 
+-- 037 / 043 / 044 багана (байхгүй бол нэмнэ)
+alter table public.video_subtitles add column if not exists speaker text;
+alter table public.video_subtitles add column if not exists slang_note jsonb;
+alter table public.videos add column if not exists subtitle_offset_sec numeric not null default 0;
+
 drop policy if exists "video_series_admin_write" on public.video_series;
 create policy "video_series_admin_write" on public.video_series for all to authenticated
   using ((select public.is_admin())) with check ((select public.is_admin()));
