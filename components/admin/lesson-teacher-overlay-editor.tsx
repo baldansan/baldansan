@@ -10,6 +10,7 @@ import {
   type TeacherOverlayAdminState,
 } from "@/lib/lesson/teacher-overlay-admin";
 import { lessonPreviewPath } from "@/lib/lesson-publish";
+import { saveLessonTeacherOverlay } from "@/lib/supabase/admin-teacher-overlay";
 import type { LessonContent } from "@/types/lesson-content";
 
 type Props = {
@@ -87,14 +88,14 @@ export function LessonTeacherOverlayEditor({ lesson, initial }: Props) {
     setSaveError(null);
     setSaveOk(false);
     try {
-      const res = await fetch(`/api/admin/lessons/${lesson.id}/teacher`, {
-        method: "PATCH",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ overlay: state }),
-      });
-      const data = (await res.json()) as { error?: string; ok?: boolean };
-      if (!res.ok) {
-        setSaveError(data.error ?? "Хадгалахад алдаа гарлаа.");
+      // Call the save function directly from the client (not through a
+      // Next.js API route / Route Handler). lib/supabase/admin-teacher-overlay.ts
+      // authorizes via the browser Supabase session, which only exists here,
+      // in the browser — a server-side route handler has no such session and
+      // would always report "Admin эрх шаардлагатай" even for a real admin.
+      const result = await saveLessonTeacherOverlay(lesson.id, state);
+      if (result.error) {
+        setSaveError(result.error);
         return;
       }
       setSaveOk(true);

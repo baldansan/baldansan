@@ -17,6 +17,17 @@ function notConfigured<T>(): AdminContentResult<T> {
   return { data: null, error: "Supabase тохируулагдаагүй." };
 }
 
+// IMPORTANT: isCurrentUserAdmin() (and the plain `supabase` client used below
+// for the actual table reads/writes) relies on the browser Supabase client
+// from lib/supabase/client.ts, which carries the signed-in user's session via
+// cookies managed by @supabase/ssr's createBrowserClient. That only works
+// when this code executes IN THE BROWSER (e.g. called directly from a
+// "use client" component), the same way every other admin-write module in
+// this codebase is used (admin-content.ts, admin-release.ts, etc.) — never
+// from inside a Next.js Route Handler / Server Action, where this client has
+// no request cookies attached and always resolves to "not admin". Call
+// loadLessonTeacherOverlay/saveLessonTeacherOverlay directly from client
+// components; do not wrap them in an API route.
 async function requireAdmin(): Promise<AdminContentResult<true>> {
   const isAdmin = await isCurrentUserAdmin();
   if (!isAdmin) {
