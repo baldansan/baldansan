@@ -43,7 +43,11 @@ import type { LessonContent } from "@/types/lesson-content";
 type Props = {
   catalog: MobileCourseCatalogEntry[];
   defaultChipId: string;
+  fazhanCatalog: MobileCourseCatalogEntry[];
+  fazhanDefaultChipId: string;
 };
+
+type BookSeries = "standard" | "fazhan";
 
 function resolveCatalogChipLevel(entry: MobileCourseCatalogEntry): number | null {
   const fromCourse = resolveLessonHskLevel({ courseId: entry.courseId });
@@ -53,10 +57,16 @@ function resolveCatalogChipLevel(entry: MobileCourseCatalogEntry): number | null
   return match ? Number(match[1]) : null;
 }
 
-export function HomeAppView({ catalog, defaultChipId }: Props) {
+export function HomeAppView({
+  catalog,
+  defaultChipId,
+  fazhanCatalog,
+  fazhanDefaultChipId,
+}: Props) {
   const locale = useUiLocale();
   const { level: activeHskLevel, hydrated: hskHydrated } = useActiveHskLevel();
   const [selectedLang, setSelectedLang] = useState<ReturnType<typeof getSelectedLanguage>>(null);
+  const [activeSeries, setActiveSeries] = useState<BookSeries>("standard");
   const [activeChip, setActiveChip] = useState(defaultChipId);
   const [displayName, setDisplayName] = useState("Суралцагч");
   const [loggedIn, setLoggedIn] = useState(false);
@@ -76,6 +86,11 @@ export function HomeAppView({ catalog, defaultChipId }: Props) {
   } | null>(null);
 
   const visibleCatalog = useMemo(() => {
+    // 发展汉语 (Fazhan Hanyu) is its own catalog, shown as-is — the HSK
+    // active-level and zh/ko language-track filters below are tuned for
+    // courseIds like "hsk4" and don't apply to "fazhan-*" courseIds.
+    if (activeSeries === "fazhan") return fazhanCatalog;
+
     let entries = catalog;
     if (selectedLang) {
       entries = entries.filter((entry) => {
@@ -97,7 +112,7 @@ export function HomeAppView({ catalog, defaultChipId }: Props) {
       });
     }
     return entries;
-  }, [catalog, selectedLang, activeHskLevel, hskHydrated]);
+  }, [activeSeries, fazhanCatalog, catalog, selectedLang, activeHskLevel, hskHydrated]);
 
   useRegisterLessonHskLevels(catalog.flatMap((entry) => entry.lessons));
 
@@ -114,10 +129,18 @@ export function HomeAppView({ catalog, defaultChipId }: Props) {
   const [showStartGuide, setShowStartGuide] = useState(false);
   useEffect(() => {
     try {
+      const savedSeries = window.localStorage.getItem("bs:homeSeries");
+      const series: BookSeries = savedSeries === "fazhan" ? "fazhan" : "standard";
+      const savedCatalog = series === "fazhan" ? fazhanCatalog : catalog;
+      setActiveSeries(series);
+
       const saved = window.localStorage.getItem("bs:homeChip");
-      if (saved && catalog.some((entry) => entry.chipId === saved && entry.available)) {
+      if (
+        saved &&
+        savedCatalog.some((entry) => entry.chipId === saved && entry.available)
+      ) {
         setActiveChip(saved);
-      } else if (!saved) {
+      } else if (!saved && series === "standard") {
         setShowStartGuide(true);
       }
     } catch {
@@ -131,6 +154,19 @@ export function HomeAppView({ catalog, defaultChipId }: Props) {
     setShowStartGuide(false);
     try {
       window.localStorage.setItem("bs:homeChip", chipId);
+    } catch {
+      // ignore
+    }
+  };
+
+  const pickSeries = (series: BookSeries) => {
+    setActiveSeries(series);
+    setShowStartGuide(false);
+    const nextChip = series === "fazhan" ? fazhanDefaultChipId : defaultChipId;
+    setActiveChip(nextChip);
+    try {
+      window.localStorage.setItem("bs:homeSeries", series);
+      window.localStorage.setItem("bs:homeChip", nextChip);
     } catch {
       // ignore
     }
@@ -442,6 +478,32 @@ export function HomeAppView({ catalog, defaultChipId }: Props) {
               {tr(locale, "Би түвшнээ мэднэ")}
             </button>
           </div>
+        </div>
+      ) : null}
+
+      {selectedLang !== "ko" ? (
+        <div className="mb-2">
+          <div className="bs-tm-chip-row">
+            <button
+              type="button"
+              onClick={() => activeSeries !== "standard" && pickSeries("standard")}
+              className={`bs-tm-chip ${activeSeries === "standard" ? "bs-tm-chip--on" : ""}`}
+            >
+              {tr(locale, "Стандарт")}
+            </button>
+            <button
+              type="button"
+              onClick={() => activeSeries !== "fazhan" && pickSeries("fazhan")}
+              className={`bs-tm-chip ${activeSeries === "fazhan" ? "bs-tm-chip--on" : ""}`}
+            >
+              发展汉语
+            </button>
+          </div>
+          <p className="mt-1 px-1 text-[11px] leading-4 text-[var(--app-muted)]">
+            {activeSeries === "standard"
+              ? tr(locale, "Олон улсын HSK шалгалтын стандарт хөтөлбөр")
+              : tr(locale, "Жинхэнэ ангид (Хятадад) хэрэглэдэг сурах бичиг")}
+          </p>
         </div>
       ) : null}
 

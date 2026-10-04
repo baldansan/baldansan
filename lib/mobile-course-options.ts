@@ -132,3 +132,65 @@ export function defaultHomeChipId(
     "hsk1"
   );
 }
+
+/**
+ * 发展汉语 (Fazhan Hanyu) — textbook used in real classrooms (Hohhot school
+ * partner), distinct from the official HSK course books above. Only the
+ * levels that already have at least a draft lesson in progress are listed
+ * here; add more as content starts. courseId values must match exactly what
+ * the ZIP importer wrote to lessons.source_note.manifest.courseId.
+ */
+export const FAZHAN_HOME_LEVELS = [
+  {
+    chipId: "fazhanChuji1",
+    chipLabel: "初级综合 I",
+    courseId: "fazhan-chuji1",
+    hskEquivalent: "HSK1-2 түвшин",
+  },
+  {
+    chipId: "fazhanZhongji1",
+    chipLabel: "中级综合 I",
+    courseId: "fazhan-zhongji-1",
+    hskEquivalent: "HSK4 түвшин",
+  },
+] as const;
+
+function placeholderFazhanEntry(
+  level: (typeof FAZHAN_HOME_LEVELS)[number]
+): MobileCourseCatalogEntry {
+  return {
+    chipId: level.chipId,
+    chipLabel: level.chipLabel,
+    courseId: level.courseId,
+    available: false,
+    title: level.chipLabel,
+    subtitle: `${level.hskEquivalent} · Удахгүй`,
+    lessons: [],
+    allLessonsHref: null,
+  };
+}
+
+/** Home course chips for the 发展汉语 textbook tab. */
+export function buildFazhanCourseCatalog(
+  byCourseId: Partial<Record<string, CourseMeta | null | undefined>>
+): MobileCourseCatalogEntry[] {
+  return FAZHAN_HOME_LEVELS.map((level) => {
+    const meta = byCourseId[level.courseId];
+    if (meta && meta.lessons.length > 0) {
+      return liveCourseEntry(level.chipId, level.chipLabel, level.courseId, {
+        ...meta,
+        subtitle: meta.subtitle || level.hskEquivalent,
+      });
+    }
+    return placeholderFazhanEntry(level);
+  });
+}
+
+export function defaultFazhanChipId(
+  catalog: MobileCourseCatalogEntry[]
+): string {
+  return (
+    catalog.find((entry) => entry.available)?.chipId ??
+    FAZHAN_HOME_LEVELS[0].chipId
+  );
+}

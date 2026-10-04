@@ -1,6 +1,9 @@
 import {
+  buildFazhanCourseCatalog,
   buildHomeCourseCatalog,
+  defaultFazhanChipId,
   defaultHomeChipId,
+  FAZHAN_HOME_LEVELS,
   type HskHomeLevelId,
   type MobileCourseCatalogEntry,
 } from "@/lib/mobile-course-options";
@@ -13,6 +16,8 @@ import {
 export type MobileHomeData = {
   catalog: MobileCourseCatalogEntry[];
   defaultChipId: string;
+  fazhanCatalog: MobileCourseCatalogEntry[];
+  fazhanDefaultChipId: string;
 };
 
 type KoreanLoadResult = {
@@ -78,10 +83,28 @@ async function loadHskLevelForHome(courseId: HskHomeLevelId) {
   };
 }
 
+async function loadFazhanCourseForHome(courseId: string) {
+  const [lessons, course] = await Promise.all([
+    getPublicLessonSummariesByCourseId(courseId),
+    getCourseContentById(courseId),
+  ]);
+
+  return {
+    courseId,
+    title: course?.title ?? "",
+    subtitle: course?.subtitle ?? "",
+    coverUrl: course?.coverUrl ?? null,
+    lessons,
+  };
+}
+
 export async function loadMobileHomeData(): Promise<MobileHomeData> {
-  const [hskLevels, korean] = await Promise.all([
+  const [hskLevels, korean, fazhanLevels] = await Promise.all([
     Promise.all(HSK_LEVEL_IDS.map((id) => loadHskLevelForHome(id))),
     loadKoreanCourseForHome(),
+    Promise.all(
+      FAZHAN_HOME_LEVELS.map((level) => loadFazhanCourseForHome(level.courseId))
+    ),
   ]);
 
   const hsk: Partial<
@@ -104,8 +127,18 @@ export async function loadMobileHomeData(): Promise<MobileHomeData> {
       : null
   );
 
+  const fazhanByCourseId: Partial<
+    Record<string, Awaited<ReturnType<typeof loadFazhanCourseForHome>>>
+  > = {};
+  for (let i = 0; i < FAZHAN_HOME_LEVELS.length; i++) {
+    fazhanByCourseId[FAZHAN_HOME_LEVELS[i]!.courseId] = fazhanLevels[i];
+  }
+  const fazhanCatalog = buildFazhanCourseCatalog(fazhanByCourseId);
+
   return {
     catalog,
     defaultChipId: defaultHomeChipId(catalog),
+    fazhanCatalog,
+    fazhanDefaultChipId: defaultFazhanChipId(fazhanCatalog),
   };
 }

@@ -9,9 +9,15 @@ export const metadata = {
 };
 
 export default async function HomeAppPage() {
-  const { catalog, defaultChipId } = await loadMobileHomeData();
+  const { catalog, defaultChipId, fazhanCatalog, fazhanDefaultChipId } =
+    await loadMobileHomeData();
 
   return (
-    <HomeAppView catalog={catalog} defaultChipId={defaultChipId} />
+    <HomeAppView
+      catalog={catalog}
+      defaultChipId={defaultChipId}
+      fazhanCatalog={fazhanCatalog}
+      fazhanDefaultChipId={fazhanDefaultChipId}
+    />
   );
 }
