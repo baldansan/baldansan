@@ -5,7 +5,7 @@ from vocab import VOCAB, PROPER
 from text import TEXT, SOURCE_NOTE
 from grammar import GRAMMAR
 from extra import *
-from workbook_quiz import WB_READING, QUIZ
+from workbook_quiz import WB_READING, QUIZ, SHIYISHI
 
 OUT = ".."; os.makedirs(OUT, exist_ok=True)
 COURSE, LID, N = "fazhan-zhongji1", "fazhan-zhongji1-l01", 1
@@ -128,7 +128,7 @@ text_ex = {
 }
 texts = {"unit": {"number": N, "title": "北京的四季", "mongolianTitle": "Бээжингийн дөрвөн улирал — төрсөн нутгийн улирал, санагалзал"},
          "lessonIntro": INTRO, "warmup": {"mongolian": INTRO["warmup_mn"]},
-         "mainText": main_text, "wordExplanation": word_expl, "collocations": colloc, "wordComparison": word_cmp,
+         "mainText": main_text, "properNouns": [{"chinese": z, "pinyin": p, "mongolian": m} for z, p, m in PROPER], "wordExplanation": word_expl, "collocations": colloc, "wordComparison": word_cmp,
          "textExercises": text_ex, "grammarNotes": grammar, "culture": CULTURE,
          "applicationDiscussionOrWriting": {
              "background": "Хичээлийн сэдэв — төрсөн нутгийн дөрвөн улирал, тэндхийн зуршил, хоол, мартагдашгүй зүйлс. Зохиолчийн санагалзал.",
@@ -154,6 +154,8 @@ for p in WB_READING:
     part = {"part": p["part"], "type": p["answer_type"], "instruction_mn": p["instruction_mn"], "items": items}
     if p.get("bank") and p["answer_type"] == "word": part["bank"] = p["bank"]
     parts.append(part)
+parts.insert(0, {"part": 0, "type": "sentence", "instruction_mn": "综合注释 试一试 1–5 — дүрэм бүрийн номын дасгал БҮГД (21), хариулт 参考答案; grammar.json-д эдгээрээс 10-ыг интерактив болгосон.",
+    "items": [{"n": f"{g[0]}-{n}", "question_zh": q, "answer": a, "explanation_mn": e, "grammar": g} for g, items in SHIYISHI for n, q, a, e in items]})
 workbook = {"reading": {"parts": parts}, "writing": {"items": [
     {"n": 1, "prompt_mn": "综合练习 九 — 写一写: 《家乡的四季》 150+ ханз", "question_zh": "以《家乡的四季》为题写一篇作文，向大家介绍你的家乡。（150字以上）参考词语和格式：美丽 安静 清新 热闹 想念 / 好像/仿佛……一样 / 跟……一样/不一样 / A比B…… / （就）拿……来说（吧） / 最难忘的是……",
      "answer": WRITING["zh"], "explanation_mn": "Загвар эссе (zh/mn) texts.json → mainText.writingSample-д. Нээлттэй даалгавар — автомат шалгахгүй."}]},
