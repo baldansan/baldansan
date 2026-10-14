@@ -1,0 +1,628 @@
+[
+ {
+  "type": "cloze",
+  "question": "\"不行！\"他的（ ）很坚决。",
+  "options": [
+   "语气",
+   "态度",
+   "理由",
+   "志愿"
+  ],
+  "correct_answer": "态度",
+  "explanation": "态度坚决 — байр суурь хатуу. 理由 — үндэслэл, 语气 — өнгө аяс, 志愿 — сонголт.",
+  "order_index": 1,
+  "id": "fazhan-zhongji1-l03-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "第三天，他只好（ ）同意给我改名。",
+  "options": [
+   "取",
+   "答应",
+   "宣布",
+   "报"
+  ],
+  "correct_answer": "宣布",
+  "explanation": "宣布同意 — зөвшөөрснөө зарлах. 答应 нь «зөвшөөрөх» ч 宣布同意 гэсэн дараалалд 宣布 л тохирно.",
+  "order_index": 2,
+  "id": "fazhan-zhongji1-l03-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我想去外地上大学，好（ ）他的控制。",
+  "options": [
+   "持续",
+   "停止",
+   "摆脱",
+   "培养"
+  ],
+  "correct_answer": "摆脱",
+  "explanation": "摆脱……的控制 — хяналтаас мултрах. 停止 — зогсоох, 持续 — үргэлжлэх, 培养 — хүмүүжүүлэх.",
+  "order_index": 3,
+  "id": "fazhan-zhongji1-l03-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我是成年人了，自己的事情可以自己（ ）。",
+  "options": [
+   "失败",
+   "做主",
+   "道歉",
+   "胜利"
+  ],
+  "correct_answer": "做主",
+  "explanation": "自己做主 — өөрөө шийдэх. 道歉 — уучлалт гуйх, 失败/胜利 — ялагдах/ялах.",
+  "order_index": 4,
+  "id": "fazhan-zhongji1-l03-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "好不容易考个好高中，（ ）不想去上。",
+  "options": [
+   "悄悄",
+   "依然",
+   "仍旧",
+   "居然"
+  ],
+  "correct_answer": "居然",
+  "explanation": "Гайхал (бодсоноос өөр) → 居然. 依然/仍旧 — мөн л, 悄悄 — сэмхэн.",
+  "order_index": 5,
+  "id": "fazhan-zhongji1-l03-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "人的一生不可能总是（ ）的。",
+  "options": [
+   "人来人往",
+   "坚强自立",
+   "不吃不喝",
+   "一帆风顺"
+  ],
+  "correct_answer": "一帆风顺",
+  "explanation": "一帆风顺 — бүх зүйл саадгүй. Бусад нь утгаараа тохирохгүй.",
+  "order_index": 6,
+  "id": "fazhan-zhongji1-l03-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "忘记以前的一切，（ ）开始，好吗？",
+  "options": [
+   "再",
+   "又",
+   "仍旧",
+   "重新"
+  ],
+  "correct_answer": "重新",
+  "explanation": "重新开始 — шинээр, эхнээс нь эхлэх. 再/又 — дахиад (нэг удаа), 仍旧 — мөн л.",
+  "order_index": 7,
+  "id": "fazhan-zhongji1-l03-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "这是我第一次听到他用这么温柔的（ ）跟我说话。",
+  "options": [
+   "态度",
+   "语气",
+   "理由",
+   "笑容"
+  ],
+  "correct_answer": "语气",
+  "explanation": "用……的语气说话 — … өнгөөр ярих.",
+  "order_index": 8,
+  "id": "fazhan-zhongji1-l03-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我（ ）地看了他一眼，他的脸上竟然挂着笑容。",
+  "options": [
+   "悄悄",
+   "故意",
+   "明显",
+   "坚决"
+  ],
+  "correct_answer": "悄悄",
+  "explanation": "悄悄地看 — сэмхэн харах. 故意 — зориуд, 明显 — илт, 坚决 — хатуу.",
+  "order_index": 9,
+  "id": "fazhan-zhongji1-l03-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我和父亲的\"战争\"却依然（ ）着。",
+  "options": [
+   "进行",
+   "停止",
+   "持续",
+   "控制"
+  ],
+  "correct_answer": "持续",
+  "explanation": "依然持续着 — мөн л үргэлжилсээр. 进行 ч «явуулах» гэсэн үйл үг боловч 依然……着 хэлбэрт эх бичвэрт 持续.",
+  "order_index": 10,
+  "id": "fazhan-zhongji1-l03-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "喜欢在（ ）个深夜发条短信给他。",
+  "options": [
+   "哪",
+   "这",
+   "某",
+   "每"
+  ],
+  "correct_answer": "某",
+  "explanation": "某个深夜 — хэзээ нэгэн шөнө (тодорхойгүй). 每 — бүр, 这 — энэ, 哪 — аль.",
+  "order_index": 11,
+  "id": "fazhan-zhongji1-l03-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "你知道我和你妈妈多（ ）你、担心你吗？",
+  "options": [
+   "道歉",
+   "批评",
+   "控制",
+   "心疼"
+  ],
+  "correct_answer": "心疼",
+  "explanation": "心疼你 — чамайг хайрлан өрөвдөх. 批评 — зэмлэх.",
+  "order_index": 12,
+  "id": "fazhan-zhongji1-l03-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这件旗袍很（ ）你，你穿上很合适。",
+  "options": [
+   "合适",
+   "保险",
+   "适合",
+   "明显"
+  ],
+  "correct_answer": "适合",
+  "explanation": "Ард нь тусагдахуун (你) → үйл үг 适合; 合适 тэмдэг нэр, тусагдахуун авахгүй.",
+  "order_index": 13,
+  "id": "fazhan-zhongji1-l03-q13",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "cloze",
+  "question": "老师说我（ ）本地的大学是最保险的。",
+  "options": [
+   "取",
+   "答应",
+   "进行",
+   "报"
+  ],
+  "correct_answer": "报",
+  "explanation": "报大学 — их сургуульд өргөдөл өгөх. 取 — нэр өгөх, 答应 — зөвшөөрөх.",
+  "order_index": 14,
+  "id": "fazhan-zhongji1-l03-q14",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "名字是你爷爷取的，怎么能________？",
+  "options": [
+   "说改就换",
+   "想改就改",
+   "说改就改"
+  ],
+  "correct_answer": "说改就改",
+  "explanation": "说V就V — хоёр V ижил; «солино гэснээрээ солих» хурдан өөрчлөлт.",
+  "order_index": 15,
+  "id": "fazhan-zhongji1-l03-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Аль өгүүлбэрт 说V就V ЗӨВ хэрэглэсэн бэ?",
+  "options": [
+   "这天气说变就变，刚才还好好儿的。",
+   "你说吃什么就吃什么吧。",
+   "他说去就来了。"
+  ],
+  "correct_answer": "这天气说变就变，刚才还好好儿的。",
+  "explanation": "Цаг агаар гэнэт өөрчлөгдөх = 说变就变. Чөлөөт сонголт бол 想……就……; 说去就来 — V ижил биш.",
+  "order_index": 16,
+  "id": "fazhan-zhongji1-l03-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "他不答应，我就不吃饭，________。",
+  "options": [
+   "为止他答应",
+   "一直他答应为止",
+   "直到他答应为止"
+  ],
+  "correct_answer": "直到他答应为止",
+  "explanation": "直到 + үйл явдал + 为止.",
+  "order_index": 17,
+  "id": "fazhan-zhongji1-l03-q17",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Дахин бич: 一定要做好服务，一直到客人们满意。",
+  "options": [
+   "一定要做好服务，直到客人们满意为止。",
+   "一定要做好服务，直到为止客人们满意。",
+   "一定要做好服务，客人们满意直到为止。"
+  ],
+  "correct_answer": "一定要做好服务，直到客人们满意为止。",
+  "explanation": "直到……为止 — 为止 заавал төгсгөлд.",
+  "order_index": 18,
+  "id": "fazhan-zhongji1-l03-q18",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "我要了她的手机号码，________。",
+  "options": [
+   "为了有事儿给她打电话",
+   "好有事儿给她打电话了",
+   "有事儿好给她打电话"
+  ],
+  "correct_answer": "有事儿好给她打电话",
+  "explanation": "……，好…… — 好 нь зорилгын салааны эхэнд, шууд үйл үгийн өмнө (有事儿 нөхцөл нь өмнө).",
+  "order_index": 19,
+  "id": "fazhan-zhongji1-l03-q19",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Аль өгүүлбэрийн 好 нь «…-ын тулд» гэсэн утгатай вэ?",
+  "options": [
+   "他好不容易才找到工作。",
+   "那一夜，我哭得好伤心。",
+   "请您留个电话，到时候我们好通知您。"
+  ],
+  "correct_answer": "请您留个电话，到时候我们好通知您。",
+  "explanation": "好通知您 — мэдэгдэхийн тулд (ДҮРЭМ 3). 好伤心 — маш (= 很), 好不容易 — арай ядан.",
+  "order_index": 20,
+  "id": "fazhan-zhongji1-l03-q20",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "你们________这样，________到大街上去吵。",
+  "options": [
+   "又 / 就",
+   "再 / 才",
+   "再 / 就"
+  ],
+  "correct_answer": "再 / 就",
+  "explanation": "再……，就…… — нөхцөлт сануулга; 又 нь өнгөрсөн давталт, 才 энд тохирохгүй.",
+  "order_index": 21,
+  "id": "fazhan-zhongji1-l03-q21",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "A：那个人唱得太难听了！ B：________，大家就都走了。",
+  "options": [
+   "他再不唱",
+   "他再唱下去",
+   "他又唱下去"
+  ],
+  "correct_answer": "他再唱下去",
+  "explanation": "再V下去 — ингэсээр байвал. 再不唱 бол «дуулахгүй бол» — утга эсрэг.",
+  "order_index": 22,
+  "id": "fazhan-zhongji1-l03-q22",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "A：他已经一个星期没来上课了！ B：他再不来上课，________。",
+  "options": [
+   "才能参加考试了",
+   "就能参加考试了",
+   "就不能参加考试了"
+  ],
+  "correct_answer": "就不能参加考试了",
+  "explanation": "Ирэхгүй байсаар байвал → шалгалтад орж ЧАДАХГҮЙ (сөрөг үр дүн).",
+  "order_index": 23,
+  "id": "fazhan-zhongji1-l03-q23",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "我和父亲的\"战争\"依然持续着，________改变了\"战争\"的方式________。",
+  "options": [
+   "只是 / 为止",
+   "只不过是 / 而已",
+   "只不过 / 了"
+  ],
+  "correct_answer": "只不过是 / 而已",
+  "explanation": "只不过（是）……而已 — зөвхөн … төдий.",
+  "order_index": 24,
+  "id": "fazhan-zhongji1-l03-q24",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Дахин бич: 她唱歌挺好的，只是不习惯在大家面前唱。",
+  "options": [
+   "她唱歌挺好的，而已不习惯在大家面前唱。",
+   "她唱歌挺好的，只不过是不习惯在大家面前唱而已了。",
+   "她唱歌挺好的，只不过是不习惯在大家面前唱罢了。"
+  ],
+  "correct_answer": "她唱歌挺好的，只不过是不习惯在大家面前唱罢了。",
+  "explanation": "罢了 = 而已 (ярианы); 而已-ийн ард 了 нэмэхгүй; 而已 эхэнд орохгүй.",
+  "order_index": 25,
+  "id": "fazhan-zhongji1-l03-q25",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "你眼里还有父母吗？— энэ өгүүлбэр ямар утгатай вэ?",
+  "options": [
+   "Чиний нүдэнд эцэг эх чинь харагдаж байна уу (энгийн асуулт)",
+   "Эцэг эх чинь амьд байгаа юу",
+   "Чи эцэг эхээ хүндэлдэггүй юм уу (дургүйцэл)"
+  ],
+  "correct_answer": "Чи эцэг эхээ хүндэлдэггүй юм уу (дургүйцэл)",
+  "explanation": "注释①: 你眼里还有……吗？— эсрэг асуулт, «…-ыг хүндэлдэггүй, тоодоггүй» гэсэн дургүйцэл.",
+  "order_index": 26,
+  "id": "fazhan-zhongji1-l03-q26",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "第一次\"战争\"是因为什么？",
+  "options": [
+   "\"我\"要上职业中学",
+   "\"我\"要改名字",
+   "\"我\"要去外地上大学"
+  ],
+  "correct_answer": "\"我\"要改名字",
+  "explanation": "1-р догол мөр: 我要改名字，我的名字不好听.",
+  "order_index": 27,
+  "id": "fazhan-zhongji1-l03-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "第一次\"战争\"\"我\"是怎么胜利的？",
+  "options": [
+   "请妈妈帮忙",
+   "哭着跑回家",
+   "不吃饭，直到父亲答应为止"
+  ],
+  "correct_answer": "不吃饭，直到父亲答应为止",
+  "explanation": "2-р догол мөр: 他不答应，我就不吃饭，直到他答应为止.",
+  "order_index": 28,
+  "id": "fazhan-zhongji1-l03-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "第三次\"战争\"中，父亲希望\"我\"在本地上学的理由是什么？",
+  "options": [
+   "本地的大学更好",
+   "女孩子离家近点儿好",
+   "外地太贵"
+  ],
+  "correct_answer": "女孩子离家近点儿好",
+  "explanation": "8-р догол мөр: 理由是，女孩子离家近点儿好.",
+  "order_index": 29,
+  "id": "fazhan-zhongji1-l03-q29",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "填志愿那天发生了什么？",
+  "options": [
+   "父亲帮\"我\"填了志愿",
+   "\"我\"自己报了外地的大学",
+   "父亲和老师谈话，老师劝\"我\"报本地的大学"
+  ],
+  "correct_answer": "父亲和老师谈话，老师劝\"我\"报本地的大学",
+  "explanation": "8-р догол мөр.",
+  "order_index": 30,
+  "id": "fazhan-zhongji1-l03-q30",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "\"我\"失恋时，父亲有什么不同？",
+  "options": [
+   "大声批评\"我\"",
+   "用温柔的语气跟\"我\"说话，还擦眼泪",
+   "根本不理\"我\""
+  ],
+  "correct_answer": "用温柔的语气跟\"我\"说话，还擦眼泪",
+  "explanation": "9-р догол мөр: 这是我第一次听到他用这么温柔的语气跟我说话.",
+  "order_index": 31,
+  "id": "fazhan-zhongji1-l03-q31",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "现在\"我\"和父亲的\"战争\"是怎样进行的？",
+  "options": [
+   "已经停止了",
+   "通过电话线，吵完再道歉",
+   "面对面地吵"
+  ],
+  "correct_answer": "通过电话线，吵完再道歉",
+  "explanation": "10-р догол мөр: 通过一根电话线进行着\"战争\"，喜欢和他吵，然后道歉.",
+  "order_index": 32,
+  "id": "fazhan-zhongji1-l03-q32",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 答应 / 直到 / 为止 / 他",
+  "options": [
+   "为止直到他答应",
+   "他直到答应为止",
+   "直到他答应为止"
+  ],
+  "correct_answer": "直到他答应为止",
+  "explanation": "直到 + S + V + 为止.",
+  "order_index": 33,
+  "id": "fazhan-zhongji1-l03-q33",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 培养 / 把 / 你 / 成 / 坚强自立的女孩子 / 我希望",
+  "options": [
+   "我希望把你成培养坚强自立的女孩子",
+   "我希望培养把你成坚强自立的女孩子",
+   "我希望把你培养成坚强自立的女孩子"
+  ],
+  "correct_answer": "我希望把你培养成坚强自立的女孩子",
+  "explanation": "把 + O + V + 成 + үр дүн.",
+  "order_index": 34,
+  "id": "fazhan-zhongji1-l03-q34",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 而已 / 只不过 / 她 / 开个玩笑",
+  "options": [
+   "她只不过开个玩笑而已",
+   "只不过她而已开个玩笑",
+   "她开个玩笑只不过而已"
+  ],
+  "correct_answer": "她只不过开个玩笑而已",
+  "explanation": "只不过 + үйл + 而已.",
+  "order_index": 35,
+  "id": "fazhan-zhongji1-l03-q35",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 好 / 我要带爸爸妈妈去那家饭馆 / 让他们尝尝真正的中国菜",
+  "options": [
+   "好让他们尝尝真正的中国菜，我要带爸爸妈妈去那家饭馆",
+   "我要带爸爸妈妈去那家饭馆让他们尝尝真正的中国菜好",
+   "我要带爸爸妈妈去那家饭馆，好让他们尝尝真正的中国菜"
+  ],
+  "correct_answer": "我要带爸爸妈妈去那家饭馆，好让他们尝尝真正的中国菜",
+  "explanation": "……，好…… — зорилго АРД нь.",
+  "order_index": 36,
+  "id": "fazhan-zhongji1-l03-q36",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "hard"
+ }
+]

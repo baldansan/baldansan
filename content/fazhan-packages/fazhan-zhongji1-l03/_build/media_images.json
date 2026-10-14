@@ -1,0 +1,72 @@
+[
+ {
+  "id": "fuqin-nver",
+  "file": "images/fuqin-nver.jpg",
+  "title": "父亲和女儿 — Аав охин хоёр («我和父亲的“战争”»)",
+  "role": "hero",
+  "section": "teacher-intro"
+ },
+ {
+  "id": "fuai",
+  "file": "images/fuai.jpg",
+  "title": "父母和孩子 — 父爱",
+  "role": "illustration",
+  "section": "teacher-intro"
+ },
+ {
+  "id": "zhiye-zhongxue",
+  "file": "images/zhiye-zhongxue.jpg",
+  "title": "职业中学",
+  "role": "illustration",
+  "section": "vocabulary"
+ },
+ {
+  "id": "xuanbu",
+  "file": "images/xuanbu.jpg",
+  "title": "宣布",
+  "role": "illustration",
+  "section": "vocabulary"
+ },
+ {
+  "id": "shengli",
+  "file": "images/shengli.jpg",
+  "title": "胜利",
+  "role": "illustration",
+  "section": "vocabulary"
+ },
+ {
+  "id": "xinteng",
+  "file": "images/xinteng.jpg",
+  "title": "心疼",
+  "role": "illustration",
+  "section": "vocabulary"
+ },
+ {
+  "id": "kunao",
+  "file": "images/kunao.jpg",
+  "title": "哭闹 — 孩子哭了",
+  "role": "illustration",
+  "section": "dialogue"
+ },
+ {
+  "id": "gaokao",
+  "file": "images/gaokao.jpg",
+  "title": "高考 — 黑色的六月",
+  "role": "illustration",
+  "section": "dialogue"
+ },
+ {
+  "id": "qiaoqiao",
+  "file": "images/qiaoqiao.jpg",
+  "title": "悄悄",
+  "role": "illustration",
+  "section": "vocabulary"
+ },
+ {
+  "id": "yifanfengshun",
+  "file": "images/yifanfengshun.jpg",
+  "title": "一帆风顺",
+  "role": "illustration",
+  "section": "vocabulary"
+ }
+]
