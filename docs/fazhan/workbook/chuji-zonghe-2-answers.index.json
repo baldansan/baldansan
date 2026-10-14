@@ -1,0 +1,102 @@
+{
+ "book": "chuji-zonghe-2-answers",
+ "pages": 31,
+ "expected_lessons": 25,
+ "lessons": [
+  {
+   "lesson": 1,
+   "start_page": 1,
+   "end_page": 1
+  },
+  {
+   "lesson": 2,
+   "start_page": 2,
+   "end_page": 2
+  },
+  {
+   "lesson": 3,
+   "start_page": 3,
+   "end_page": 5
+  },
+  {
+   "lesson": 5,
+   "start_page": 6,
+   "end_page": 6
+  },
+  {
+   "lesson": 6,
+   "start_page": 7,
+   "end_page": 9
+  },
+  {
+   "lesson": 8,
+   "start_page": 10,
+   "end_page": 10
+  },
+  {
+   "lesson": 9,
+   "start_page": 11,
+   "end_page": 13
+  },
+  {
+   "lesson": 11,
+   "start_page": 14,
+   "end_page": 15
+  },
+  {
+   "lesson": 12,
+   "start_page": 16,
+   "end_page": 17
+  },
+  {
+   "lesson": 14,
+   "start_page": 18,
+   "end_page": 19
+  },
+  {
+   "lesson": 16,
+   "start_page": 20,
+   "end_page": 20
+  },
+  {
+   "lesson": 17,
+   "start_page": 21,
+   "end_page": 23
+  },
+  {
+   "lesson": 19,
+   "start_page": 24,
+   "end_page": 24
+  },
+  {
+   "lesson": 20,
+   "start_page": 25,
+   "end_page": 25
+  },
+  {
+   "lesson": 21,
+   "start_page": 26,
+   "end_page": 26
+  },
+  {
+   "lesson": 22,
+   "start_page": 27,
+   "end_page": 27
+  },
+  {
+   "lesson": 23,
+   "start_page": 28,
+   "end_page": 28
+  },
+  {
+   "lesson": 24,
+   "start_page": 29,
+   "end_page": 29
+  },
+  {
+   "lesson": 25,
+   "start_page": 30,
+   "end_page": 31
+  }
+ ]
+}

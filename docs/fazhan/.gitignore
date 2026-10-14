@@ -1,0 +1,6 @@
+# OCR ажлын завсрын файлууд — эцсийн гаралт textbooks/teacher/workbook-д хуулагдана
+_ocr/pages/
+_ocr/books/
+_ocr/progress.log
+_ocr/run.out
+_ocr/STOP
