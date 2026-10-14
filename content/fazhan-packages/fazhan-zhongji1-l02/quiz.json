@@ -1,0 +1,628 @@
+[
+ {
+  "type": "cloze",
+  "question": "一个同事向我（ ）了一套住房。",
+  "options": [
+   "考虑",
+   "推荐",
+   "提到",
+   "装修"
+  ],
+  "correct_answer": "推荐",
+  "explanation": "推荐 = санал болгох. 考虑 — бодож үзэх, 提到 — дурдах, 装修 — засал хийх.",
+  "order_index": 1,
+  "id": "fazhan-zhongji1-l02-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "虽然是老房子，但是（ ）的配套设施很齐全。",
+  "options": [
+   "中介",
+   "周边",
+   "档次",
+   "地位"
+  ],
+  "correct_answer": "周边",
+  "explanation": "周边的配套设施 — эргэн тойрны дагалдах байгууламж. 中介 — зуучлал, 档次 — зэрэглэл, 地位 — байр суурь.",
+  "order_index": 2,
+  "id": "fazhan-zhongji1-l02-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "那是一套新房，装修以后就（ ）住过。",
+  "options": [
+   "没有怎么样",
+   "怎么没",
+   "没怎么",
+   "不怎么"
+  ],
+  "correct_answer": "没怎么",
+  "explanation": "没怎么+V (өнгөрсөн) — бараг амьдраагүй. 不怎么 — ерөнхий байдалд (不怎么爱说话).",
+  "order_index": 3,
+  "id": "fazhan-zhongji1-l02-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "你那位朋友住进去，一定会感觉生活（ ）提高了。",
+  "options": [
+   "设施",
+   "档次",
+   "困境",
+   "条件"
+  ],
+  "correct_answer": "档次",
+  "explanation": "生活档次提高 — амьдралын түвшин дээшлэх. 条件 — нөхцөл, 设施 — байгууламж, 困境 — хүнд байдал.",
+  "order_index": 4,
+  "id": "fazhan-zhongji1-l02-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "对她来说，孩子上学是件大事，这房子可以（ ）。",
+  "options": [
+   "推荐",
+   "加班",
+   "逛",
+   "考虑"
+  ],
+  "correct_answer": "考虑",
+  "explanation": "可以考虑 — бодож үзэж болно. 推荐 — санал болгох, 逛 — хэсэх, 加班 — илүү цаг.",
+  "order_index": 5,
+  "id": "fazhan-zhongji1-l02-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "从家里（ ）开窗户，可以远远地看见湖面。",
+  "options": [
+   "拉",
+   "运",
+   "推",
+   "逛"
+  ],
+  "correct_answer": "推",
+  "explanation": "推开窗户 — цонх түлхэж нээх. 拉 — татах (эсрэг), 逛 — хэсэх, 运 — тээвэрлэх.",
+  "order_index": 6,
+  "id": "fazhan-zhongji1-l02-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "（ ）十几分钟就能够到公司。",
+  "options": [
+   "根本",
+   "步行",
+   "能够",
+   "一一"
+  ],
+  "correct_answer": "步行",
+  "explanation": "步行+хугацаа — явганаар … минут. 能够 — чадах, 根本 — огт, 一一 — нэг нэгээр.",
+  "order_index": 7,
+  "id": "fazhan-zhongji1-l02-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "房子旧点儿，（ ）少点儿，也没有关系。",
+  "options": [
+   "设施",
+   "家具",
+   "窗户",
+   "家居"
+  ],
+  "correct_answer": "家具",
+  "explanation": "家具 — тавилга (家居 jiājū — гэр ахуй, өөр үг). 窗户 — цонх, 设施 — байгууламж.",
+  "order_index": 8,
+  "id": "fazhan-zhongji1-l02-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我很少（ ）商店超市，更没有时间去美容健身。",
+  "options": [
+   "逛",
+   "绕",
+   "争",
+   "推"
+  ],
+  "correct_answer": "逛",
+  "explanation": "逛商店超市 — дэлгүүр хэсэх. 推 — түлхэх, 争 — өрсөлдөх, 绕 — тойрох (L1).",
+  "order_index": 9,
+  "id": "fazhan-zhongji1-l02-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "朋友看出我的（ ），就解释说……",
+  "options": [
+   "骄傲",
+   "困境",
+   "困惑",
+   "地位"
+  ],
+  "correct_answer": "困惑",
+  "explanation": "困惑 — эргэлзээ (ойлгохгүй). 困境 — хүнд байдал, 骄傲 — бахархал, 地位 — байр суурь.",
+  "order_index": 10,
+  "id": "fazhan-zhongji1-l02-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我经常要（ ），不能照顾孩子。",
+  "options": [
+   "装修",
+   "步行",
+   "加班",
+   "上市"
+  ],
+  "correct_answer": "加班",
+  "explanation": "加班 — илүү цагаар ажиллах. 步行 — явган явах, 装修 — засал, 上市 — худалдаанд гарах (L1).",
+  "order_index": 11,
+  "id": "fazhan-zhongji1-l02-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "介绍房子的人，（ ）没有提到图书馆。",
+  "options": [
+   "格外",
+   "纷纷",
+   "根本",
+   "一一"
+  ],
+  "correct_answer": "根本",
+  "explanation": "根本没有 — огт …-гүй. 格外 — онцгой, 纷纷 — ар араасаа (L1), 一一 — нэг нэгээр.",
+  "order_index": 12,
+  "id": "fazhan-zhongji1-l02-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "同学还（ ）地说：\"住在那个小区的人，都是有钱、有地位的人。\"",
+  "options": [
+   "困惑",
+   "骄傲",
+   "热情",
+   "吃惊"
+  ],
+  "correct_answer": "骄傲",
+  "explanation": "骄傲地说 — бахархангуй хэлэх (хотхоноо дөвийлгөж). 热情地说 нь өмнөх өгүүлбэрт. 困惑/吃惊 — утга таарахгүй.",
+  "order_index": 13,
+  "id": "fazhan-zhongji1-l02-q13",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我经常把孩子放在超市的（ ）活动区里玩儿。",
+  "options": [
+   "女性",
+   "儿童",
+   "妇人",
+   "少女"
+  ],
+  "correct_answer": "儿童",
+  "explanation": "儿童活动区 — хүүхдийн тоглоомын талбай. 女性 — эмэгтэй, 少女/妇人 — L1 үгс.",
+  "order_index": 14,
+  "id": "fazhan-zhongji1-l02-q14",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "我喜欢一个人旅行，________，非常自由。",
+  "options": [
+   "想去哪儿就去",
+   "想哪儿就去哪儿",
+   "想去哪儿就去哪儿"
+  ],
+  "correct_answer": "想去哪儿就去哪儿",
+  "explanation": "想+V+асуух үг … 就+V+ижил асуух үг — 哪儿 хоёр талд.",
+  "order_index": 15,
+  "id": "fazhan-zhongji1-l02-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "女：你不能问我几点回家。 男：好，________。",
+  "options": [
+   "你想什么时候回家就什么时候回家",
+   "你想几点就回家",
+   "你什么时候想回家就回家"
+  ],
+  "correct_answer": "你想什么时候回家就什么时候回家",
+  "explanation": "什么时候 хоёр талд бүтнээрээ давтагдана.",
+  "order_index": 16,
+  "id": "fazhan-zhongji1-l02-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Аль өгүүлбэр ЗӨВ бэ?",
+  "options": [
+   "在价格看来，您可以考虑买这种电视机。",
+   "从价格来看，您可以考虑买这种电视机。",
+   "从我来看，您可以考虑买这种电视机。"
+  ],
+  "correct_answer": "从价格来看，您可以考虑买这种电视机。",
+  "explanation": "从……来看 — тал/үзүүлэлт (价格); 从我来看 ×; 在……看来 — хүн.",
+  "order_index": 17,
+  "id": "fazhan-zhongji1-l02-q17",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "从________来看，这次考试的试题比较容易。",
+  "options": [
+   "大家的成绩",
+   "我",
+   "老师"
+  ],
+  "correct_answer": "大家的成绩",
+  "explanation": "Үнэлгээний ҮЗҮҮЛЭЛТ (成绩); хүн орохгүй.",
+  "order_index": 18,
+  "id": "fazhan-zhongji1-l02-q18",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Миний бодлоор эрт унтаж эрт босох нь дээр» — аль нь зөв бэ?",
+  "options": [
+   "在我来看，早睡早起比晚睡晚起好。",
+   "在我看来，早睡早起比晚睡晚起好。",
+   "从我来看，早睡早起比晚睡晚起好。"
+  ],
+  "correct_answer": "在我看来，早睡早起比晚睡晚起好。",
+  "explanation": "Хүний бодол → 在+хүн+看来.",
+  "order_index": 19,
+  "id": "fazhan-zhongji1-l02-q19",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "在学生看来，考试不太重要，但是________，考试非常重要。",
+  "options": [
+   "从学校看来",
+   "从学校方面来看",
+   "在学校方面看来"
+  ],
+  "correct_answer": "从学校方面来看",
+  "explanation": "方面 = тал → 从……方面来看 (教案-ийн жишээ).",
+  "order_index": 20,
+  "id": "fazhan-zhongji1-l02-q20",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "Өөрчилж бич: 妈妈做的饭菜最好吃了！（再……不过了）",
+  "options": [
+   "妈妈做的饭菜再好吃不过了！",
+   "妈妈做的饭菜最再好吃不过了！",
+   "妈妈做的饭菜再不过好吃了！"
+  ],
+  "correct_answer": "妈妈做的饭菜再好吃不过了！",
+  "explanation": "再 + adj. + 不过了; 最-г хасна.",
+  "order_index": 21,
+  "id": "fazhan-zhongji1-l02-q21",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "我的朋友又不会开车，这房子是________。",
+  "options": [
+   "再合适不过了",
+   "最合适不过",
+   "再不合适了"
+  ],
+  "correct_answer": "再合适不过了",
+  "explanation": "再……不过了 = 最…… (төгсгөлд 了 заавал).",
+  "order_index": 22,
+  "id": "fazhan-zhongji1-l02-q22",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "A: 我们能准时到那儿吗？ B: 那个地方不远，________，一定能准时到。",
+  "options": [
+   "所以我们又开车去",
+   "况且我们不开车去",
+   "况且我们又开车去"
+  ],
+  "correct_answer": "况且我们又开车去",
+  "explanation": "况且 + 又 — нэмэлт шалтгаан, дүгнэлттэй нэг чиглэлд.",
+  "order_index": 23,
+  "id": "fazhan-zhongji1-l02-q23",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Аль өгүүлбэрт 况且 БУРУУ хэрэглэсэн бэ?",
+  "options": [
+   "外面下雨了，况且大家也都累了，明天再干吧。",
+   "况且外面下雨了，明天再干吧。",
+   "北京那么大，况且你还不知道他的地址，你怎么找啊？"
+  ],
+  "correct_answer": "况且外面下雨了，明天再干吧。",
+  "explanation": "况且-ийн өмнө эхний шалтгаан заавал байна; өгүүлбэрийн эхэнд ганцаараа орохгүй.",
+  "order_index": 24,
+  "id": "fazhan-zhongji1-l02-q24",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "A: 为什么现在很多年轻人选择单身？ B: ________，单身更自由。",
+  "options": [
+   "在他们看来",
+   "他们看来",
+   "从他们来看"
+  ],
+  "correct_answer": "在他们看来",
+  "explanation": "在+хүн+看来 — тэдний бодлоор. 看来 ганцаараа = «бололтой» (өөр утга).",
+  "order_index": 25,
+  "id": "fazhan-zhongji1-l02-q25",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "虽然她一直吃药，可是病还是________。",
+  "options": [
+   "不怎么好了",
+   "怎么没好",
+   "没怎么好"
+  ],
+  "correct_answer": "没怎么好",
+  "explanation": "没怎么+adj./V — нэг их …-гүй (注释①). 怎么没好 — «яагаад сайжраагүй юм» асуулт.",
+  "order_index": 26,
+  "id": "fazhan-zhongji1-l02-q26",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "飞机场的工作人员________。（一一，检查）",
+  "options": [
+   "对大家的行李一一进行了检查",
+   "对大家的行李进行了一一检查了",
+   "一一对大家的行李进行了检查了"
+  ],
+  "correct_answer": "对大家的行李一一进行了检查",
+  "explanation": "一一 нь үйл үгийн (进行) шууд өмнө; 了 нэг л удаа.",
+  "order_index": 27,
+  "id": "fazhan-zhongji1-l02-q27",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "comprehension",
+  "question": "外地来的朋友让\"我\"帮她做什么？",
+  "options": [
+   "找一家图书馆",
+   "买一套学区房",
+   "在市区租套房子"
+  ],
+  "correct_answer": "在市区租套房子",
+  "explanation": "1-р догол мөр: 让我帮她在市区租套房子.",
+  "order_index": 28,
+  "id": "fazhan-zhongji1-l02-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "同学推荐的房子为什么\"更适合\"女性？",
+  "options": [
+   "离农贸市场很近",
+   "小区外边有美容院、健身房、咖啡厅",
+   "附近有图书馆"
+  ],
+  "correct_answer": "小区外边有美容院、健身房、咖啡厅",
+  "explanation": "3-р догол мөр.",
+  "order_index": 29,
+  "id": "fazhan-zhongji1-l02-q29",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "为什么\"我\"觉得第三套房子\"再合适不过了\"？",
+  "options": [
+   "周边的配套设施很齐全",
+   "能看见湖景",
+   "离朋友上班的地方很近，朋友又不会开车"
+  ],
+  "correct_answer": "离朋友上班的地方很近，朋友又不会开车",
+  "explanation": "7-р догол мөр.",
+  "order_index": 30,
+  "id": "fazhan-zhongji1-l02-q30",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "朋友租房只要一个什么条件？",
+  "options": [
+   "房子要新、家具要多",
+   "离农贸市场近",
+   "附近一定要有书店或者图书馆"
+  ],
+  "correct_answer": "附近一定要有书店或者图书馆",
+  "explanation": "10-р догол мөр: 附近一定要有一家大一点儿的书店，或者图书馆.",
+  "order_index": 31,
+  "id": "fazhan-zhongji1-l02-q31",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "朋友为什么常常把孩子送到书店或者图书馆？",
+  "options": [
+   "她经常加班，不能照顾孩子",
+   "书店离家很近",
+   "孩子喜欢买书"
+  ],
+  "correct_answer": "她经常加班，不能照顾孩子",
+  "explanation": "12-р догол мөр.",
+  "order_index": 32,
+  "id": "fazhan-zhongji1-l02-q32",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "介绍房子的人为什么没有提到附近的省图书馆？",
+  "options": [
+   "图书馆太远了",
+   "在他看来，图书馆不是重要的配套设施",
+   "他不知道那里有图书馆"
+  ],
+  "correct_answer": "在他看来，图书馆不是重要的配套设施",
+  "explanation": "14-р догол мөр: 也许在他看来，图书馆根本就不是什么重要的配套设施吧.",
+  "order_index": 33,
+  "id": "fazhan-zhongji1-l02-q33",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 向我 / 一个同事 / 一套住房 / 推荐了",
+  "options": [
+   "一个同事推荐了向我一套住房",
+   "向我一个同事一套住房推荐了",
+   "一个同事向我推荐了一套住房"
+  ],
+  "correct_answer": "一个同事向我推荐了一套住房",
+  "explanation": "S + 向+хүн + 推荐了 + O.",
+  "order_index": 34,
+  "id": "fazhan-zhongji1-l02-q34",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 来看 / 离朋友上班的地方 / 从地点 / 很近",
+  "options": [
+   "离朋友上班的地方从地点来看很近",
+   "从地点很近来看，离朋友上班的地方",
+   "从地点来看，离朋友上班的地方很近"
+  ],
+  "correct_answer": "从地点来看，离朋友上班的地方很近",
+  "explanation": "从……来看 өгүүлбэрийн эхэнд, дараа нь дүгнэлт.",
+  "order_index": 35,
+  "id": "fazhan-zhongji1-l02-q35",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 不是 / 图书馆 / 在他看来 / 什么重要的配套设施 / 根本就",
+  "options": [
+   "在他看来，图书馆根本就不是什么重要的配套设施",
+   "图书馆在他看来根本就什么重要的配套设施不是",
+   "在他看来，根本就图书馆不是什么重要的配套设施"
+  ],
+  "correct_answer": "在他看来，图书馆根本就不是什么重要的配套设施",
+  "explanation": "在……看来 + S + 根本就不是 + N.",
+  "order_index": 36,
+  "id": "fazhan-zhongji1-l02-q36",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "hard"
+ }
+]

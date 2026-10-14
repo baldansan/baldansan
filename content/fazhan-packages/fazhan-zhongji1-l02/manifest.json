@@ -1,0 +1,112 @@
+{
+ "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+ "courseType": "chinese-hsk",
+ "courseId": "fazhan-zhongji1",
+ "lessonId": "fazhan-zhongji1-l02",
+ "hskLevel": 4,
+ "lessonNumber": 2,
+ "lessonProfile": "hsk4-dialogue-shorttext-exam-workbook",
+ "lessonType": "hsk4-dialogue-shorttext-exam-workbook",
+ "language": "zh-MN",
+ "targetLanguage": "zh",
+ "uiLanguage": "mn",
+ "title": "租房只要一个条件",
+ "mongolianTitle": "Байр түрээслэхэд ганцхан нөхцөл",
+ "series": "发展汉语（第二版）中级综合 I",
+ "seriesLabel_mn": "发展汉语 дунд I (≈HSK4)",
+ "source": "发展汉语（第二版）中级综合 I · 第2课 (сурах бичиг, 教案, 课件, 参考答案, албан mp3)",
+ "hasAudio": true,
+ "hasImages": true,
+ "audio": {
+  "text": "audio/fazhan-zhongji1-02-text.mp3",
+  "words": "audio/fazhan-zhongji1-02-words.mp3",
+  "vocabularyClips": "audio/words/w01..w33.mp3 (албан 生词 бичлэгээс хайчилсан)"
+ },
+ "media": {
+  "lessonId": "fazhan-zhongji1-l02",
+  "images": [
+   {
+    "id": "xiaoqu",
+    "file": "images/xiaoqu.jpg",
+    "title": "小区 — орон сууцны хотхон (хичээлийн сэдэв: байр түрээслэх)",
+    "role": "hero",
+    "section": "teacher-intro"
+   },
+   {
+    "id": "nongmao-shichang",
+    "file": "images/nongmao-shichang.jpg",
+    "title": "农贸市场",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "jianshenfang",
+    "file": "images/jianshenfang.jpg",
+    "title": "健身房",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "meirongyuan",
+    "file": "images/meirongyuan.jpg",
+    "title": "美容院",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "wuxingji",
+    "file": "images/wuxingji.jpg",
+    "title": "五星级",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "zhongjie",
+    "file": "images/zhongjie.jpg",
+    "title": "中介",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "jiaju",
+    "file": "images/jiaju.jpg",
+    "title": "家具",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "tui-la",
+    "file": "images/tui-la.jpg",
+    "title": "推",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "guang",
+    "file": "images/guang.jpg",
+    "title": "逛",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "jiaban",
+    "file": "images/jiaban.jpg",
+    "title": "加班",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "kunhuo",
+    "file": "images/kunhuo.jpg",
+    "title": "困惑",
+    "role": "illustration",
+    "section": "vocabulary"
+   }
+  ]
+ },
+ "verification": {
+  "answerStatus": "official_answer_key_verified (参考答案)",
+  "textStatus": "source_verified (сурах бичгийн хуудсыг зургаар уншсан)",
+  "teacherLayer": "教案 + PPT 课件-д тулгуурласан"
+ }
+}
