@@ -30,7 +30,7 @@
 | `textbooks/zhongji-zonghe-1.md` | 222 | 15 / 15 | OCR |
 | `textbooks/zhongji-zonghe-2.md` | 296 | 15 / 15 | OCR |
 | `textbooks/gaoji-zonghe-1.md` | 226 | 15 / 15 | OCR |
-| `textbooks/gaoji-zonghe-2.md` | 255 | (OCR явагдаж байна) / 15 | OCR |
+| `textbooks/gaoji-zonghe-2.md` | 255 | 15 / 15 | OCR |
 | `workbook/chuji-zonghe-1-answers.md` | 34 | 30 / 30 | pdftotext |
 | `workbook/chuji-zonghe-2-answers.md` | 31 | 25 / 25 | pdftotext |
 | `workbook/zhongji-zonghe-1-answers.md` | 26 | 15 / 15 | pdftotext |

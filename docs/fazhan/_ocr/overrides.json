@@ -1,11 +1,23 @@
 {
  "zhongji-zonghe-1": {
-  "exclude_starts": [5, 220]
+  "exclude_starts": [
+   5,
+   220
+  ]
  },
  "zhongji-zonghe-2": {
-  "exclude_starts": [1]
+  "exclude_starts": [
+   1
+  ]
  },
  "gaoji-zonghe-1": {
-  "exclude_starts": [1]
+  "exclude_starts": [
+   1
+  ]
+ },
+ "gaoji-zonghe-2": {
+  "exclude_starts": [
+   1
+  ]
  }
 }

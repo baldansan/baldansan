@@ -1,0 +1,82 @@
+{
+ "book": "gaoji-zonghe-2",
+ "pages": 255,
+ "expected_lessons": 15,
+ "lessons": [
+  {
+   "lesson": 1,
+   "start_page": 18,
+   "end_page": 33
+  },
+  {
+   "lesson": 2,
+   "start_page": 34,
+   "end_page": 49
+  },
+  {
+   "lesson": 3,
+   "start_page": 50,
+   "end_page": 61
+  },
+  {
+   "lesson": 4,
+   "start_page": 62,
+   "end_page": 77
+  },
+  {
+   "lesson": 5,
+   "start_page": 78,
+   "end_page": 93
+  },
+  {
+   "lesson": 6,
+   "start_page": 94,
+   "end_page": 117
+  },
+  {
+   "lesson": 7,
+   "start_page": 118,
+   "end_page": 139
+  },
+  {
+   "lesson": 8,
+   "start_page": 140,
+   "end_page": 152
+  },
+  {
+   "lesson": 9,
+   "start_page": 153,
+   "end_page": 165
+  },
+  {
+   "lesson": 10,
+   "start_page": 166,
+   "end_page": 183
+  },
+  {
+   "lesson": 11,
+   "start_page": 184,
+   "end_page": 197
+  },
+  {
+   "lesson": 12,
+   "start_page": 198,
+   "end_page": 216
+  },
+  {
+   "lesson": 13,
+   "start_page": 217,
+   "end_page": 230
+  },
+  {
+   "lesson": 14,
+   "start_page": 231,
+   "end_page": 244
+  },
+  {
+   "lesson": 15,
+   "start_page": 245,
+   "end_page": 255
+  }
+ ]
+}
