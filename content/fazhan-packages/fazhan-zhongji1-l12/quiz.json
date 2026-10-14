@@ -1,0 +1,564 @@
+[
+ {
+  "type": "cloze",
+  "question": "她一个劲儿地盯着（ ）笑。",
+  "options": [
+   "键盘",
+   "耗子",
+   "屏幕",
+   "手机"
+  ],
+  "correct_answer": "屏幕",
+  "explanation": "盯着+зүйл үзэх объект → 屏幕 (дэлгэц). 键盘 — товчлуур, 手机 — утас (хэт ерөнхий), 耗子 — хулгана.",
+  "order_index": 1,
+  "id": "fazhan-zhongji1-l12-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "人们把这种热衷于发短信的人，称为\"（ ）\"。",
+  "options": [
+   "用户",
+   "新新人类",
+   "学者",
+   "拇指族"
+  ],
+  "correct_answer": "拇指族",
+  "explanation": "Хичээлийн гол нэр томьёо — «拇指族». 新新人类 нь илүү өргөн ойлголт.",
+  "order_index": 2,
+  "id": "fazhan-zhongji1-l12-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "\"短信服务\"，（ ）SMS。",
+  "options": [
+   "通病",
+   "过程",
+   "花样",
+   "简称"
+  ],
+  "correct_answer": "简称",
+  "explanation": "简称 = товчилж нэрлэх. Бусад нь утга тохирохгүй.",
+  "order_index": 3,
+  "id": "fazhan-zhongji1-l12-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "到底是什么样的（ ），让\"拇指族\"就算指头酸痛也乐此不疲呢？",
+  "options": [
+   "功能",
+   "魅力",
+   "花样",
+   "速度"
+  ],
+  "correct_answer": "魅力",
+  "explanation": "魅力 = сэтгэл татах хүч. Асуулт нь «юу гэсэн татам зүйл» гэсэн утгатай.",
+  "order_index": 4,
+  "id": "fazhan-zhongji1-l12-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "小唐……是（ ）的玩儿（手）机一族。",
+  "options": [
+   "确实",
+   "无聊",
+   "快捷",
+   "典型"
+  ],
+  "correct_answer": "典型",
+  "explanation": "典型 = төлөөлөл болсон, яг л тийм төрлийн.",
+  "order_index": 5,
+  "id": "fazhan-zhongji1-l12-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "正在她（ ）的时候，一个朋友发来了短信。",
+  "options": [
+   "乐此不疲",
+   "痛苦不堪",
+   "怪怪的",
+   "情愿"
+  ],
+  "correct_answer": "痛苦不堪",
+  "explanation": "痛苦不堪 = тэсэхийн аргагүй зовсон. Энэ нь失恋 хийсний дараах сэтгэл зүй.",
+  "order_index": 6,
+  "id": "fazhan-zhongji1-l12-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "从此，小唐就（ ）发短信了。",
+  "options": [
+   "写上",
+   "听上",
+   "迷上",
+   "看上"
+  ],
+  "correct_answer": "迷上",
+  "explanation": "迷上 = донтох. Бусад хослол хэрэглэгддэггүй.",
+  "order_index": 7,
+  "id": "fazhan-zhongji1-l12-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "全中国手机（ ）共发送了2000多万条短信。",
+  "options": [
+   "都市人",
+   "年轻人",
+   "用户",
+   "学者"
+  ],
+  "correct_answer": "用户",
+  "explanation": "用户 = хэрэглэгч, гар утасны тухайд тохирно.",
+  "order_index": 8,
+  "id": "fazhan-zhongji1-l12-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "近年来，都市人拜年的方式一直在经历着变化，几乎每年都有新（ ）。",
+  "options": [
+   "过程",
+   "速度",
+   "花样",
+   "功能"
+  ],
+  "correct_answer": "花样",
+  "explanation": "花样 = шинэ хэлбэр, арга. 过程 — явц, 速度 — хурд, 功能 — үүрэг.",
+  "order_index": 9,
+  "id": "fazhan-zhongji1-l12-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "从登门拜年到（ ）贺卡、从打电话到打寻呼……",
+  "options": [
+   "输入",
+   "邮寄",
+   "寻呼",
+   "操作"
+  ],
+  "correct_answer": "邮寄",
+  "explanation": "邮寄 = шуудангаар явуулах (贺卡-той хослоно).",
+  "order_index": 10,
+  "id": "fazhan-zhongji1-l12-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "一位（ ）人类学研究的学者指出，拇指确实非常适合输入文字。",
+  "options": [
+   "从事",
+   "指出",
+   "操作",
+   "输入"
+  ],
+  "correct_answer": "从事",
+  "explanation": "从事 + судалгаа/ажил. Бусад нь энд өгүүлбэрийн бусад хэсэгт аль хэдийн орсон.",
+  "order_index": 11,
+  "id": "fazhan-zhongji1-l12-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "过去被认为又粗又短、（ ）创造力的拇指，在这个手机时代，竟然变得这么有用。",
+  "options": [
+   "输入",
+   "操作",
+   "确实",
+   "缺乏"
+  ],
+  "correct_answer": "缺乏",
+  "explanation": "缺乏 + N (创造力) = дутагдалтай байх.",
+  "order_index": 12,
+  "id": "fazhan-zhongji1-l12-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "哪个句子正确？",
+  "options": [
+   "人们这种人称为\"拇指族\"。",
+   "人们把\"拇指族\"称为这种热衷于发短信的人。",
+   "人们把这种热衷于发短信的人称为\"拇指族\"。"
+  ],
+  "correct_answer": "人们把这种热衷于发短信的人称为\"拇指族\"。",
+  "explanation": "把A称为B — А (жинхэнэ зүйл) 把-гийн ард, В (нэр) 称为-гийн ард, 把 заавал орно.",
+  "order_index": 13,
+  "id": "fazhan-zhongji1-l12-q13",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "A: 幼儿园的老师，人们有时候把他们叫做什么？ B: ________。",
+  "options": [
+   "\"孩子王\"",
+   "老师",
+   "幼儿园"
+  ],
+  "correct_answer": "\"孩子王\"",
+  "explanation": "把A称为/叫做B — хариулт В (өгсөн нэр) байх ёстой.",
+  "order_index": 14,
+  "id": "fazhan-zhongji1-l12-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "\"短信服务\"原来是一种又快又省钱的信息服务，（ ）却更多地变成了一种游戏。",
+  "options": [
+   "原来",
+   "以前",
+   "现在"
+  ],
+  "correct_answer": "现在",
+  "explanation": "原来……，现在…… эсрэгцүүлэл — хоёр дахь хэсэгт 现在 ирнэ.",
+  "order_index": 15,
+  "id": "fazhan-zhongji1-l12-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "哪个符合\"原来……，现在……\"结构？",
+  "options": [
+   "这里原来到处都是大楼，没有现在那么多。",
+   "现在这里没有大楼，原来到处都是。",
+   "原来这里没有这么多大楼，现在到处都是了。"
+  ],
+  "correct_answer": "原来这里没有这么多大楼，现在到处都是了。",
+  "explanation": "原来 эхэнд (өмнөх байдал), 现在 ардаа (одоогийн байдал) ирэх ёстой.",
+  "order_index": 16,
+  "id": "fazhan-zhongji1-l12-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "脑子里想的（ ）短信（ ）短信，干什么都干不下去。",
+  "options": [
+   "除了 / 还是",
+   "除了 / 也是",
+   "只有 / 还是"
+  ],
+  "correct_answer": "除了 / 还是",
+  "explanation": "除了……还是…… — хоёр хэсэгт ИЖИЛ үг давтагдана.",
+  "order_index": 17,
+  "id": "fazhan-zhongji1-l12-q17",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "哪个用法正确？",
+  "options": [
+   "运动员的生活很简单，每天除了训练还是训练。",
+   "运动员的生活很简单，除了每天还是训练。",
+   "运动员的生活很简单，每天除了训练还是比赛。"
+  ],
+  "correct_answer": "运动员的生活很简单，每天除了训练还是训练。",
+  "explanation": "除了……还是…… дотор ИЖИЛ үг (训练) давтагдах ёстой.",
+  "order_index": 18,
+  "id": "fazhan-zhongji1-l12-q18",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "这种洗衣粉不好，（ ）洗不干净。",
+  "options": [
+   "都洗什么",
+   "洗什么都",
+   "什么洗都"
+  ],
+  "correct_answer": "洗什么都",
+  "explanation": "（V）什么（N）都V不+C — V1 эхэнд, дараа нь 什么, 都, эцэст нь V1不+C.",
+  "order_index": 19,
+  "id": "fazhan-zhongji1-l12-q19",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "哪个符合\"（V）什么（N）都V不+C\"？",
+  "options": [
+   "他做什么都不做好，太让大家失望了。",
+   "他什么都做不好做，太让大家失望了。",
+   "他做什么都做不好，太让大家失望了。"
+  ],
+  "correct_answer": "他做什么都做不好，太让大家失望了。",
+  "explanation": "V1 (做) хоёр удаа давтагдах ёстой: 做什么都做不好.",
+  "order_index": 20,
+  "id": "fazhan-zhongji1-l12-q20",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "怪不得（ ）发不出去呢，原来网络堵车了。",
+  "options": [
+   "说什么都",
+   "都说什么",
+   "什么说都"
+  ],
+  "correct_answer": "说什么都",
+  "explanation": "说什么都/也…… — «юу ч гэсэн» гэсэн онцлох хэллэг.",
+  "order_index": 21,
+  "id": "fazhan-zhongji1-l12-q21",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "哪个符合\"说什么都/也……\"？",
+  "options": [
+   "为了表示感谢，他说什么都要请大家吃饭。",
+   "为了表示感谢，他都说什么要请大家吃饭。",
+   "为了表示感谢，他要说什么都请大家吃饭。"
+  ],
+  "correct_answer": "为了表示感谢，他说什么都要请大家吃饭。",
+  "explanation": "说什么都 нь нэгдмэл байрлалаар эхэлж, ард нь VP ирнэ.",
+  "order_index": 22,
+  "id": "fazhan-zhongji1-l12-q22",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "comprehension",
+  "question": "小唐是做什么工作的？",
+  "options": [
+   "网页设计",
+   "广告设计",
+   "人类学研究",
+   "记者"
+  ],
+  "correct_answer": "广告设计",
+  "explanation": "课文: 小唐……做广告设计，是典型的玩儿（手）机一族。",
+  "order_index": 23,
+  "id": "fazhan-zhongji1-l12-q23",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "小唐为什么痛苦不堪？",
+  "options": [
+   "没收到短信",
+   "去年情人节前失恋了",
+   "工作太累",
+   "手机坏了"
+  ],
+  "correct_answer": "去年情人节前失恋了",
+  "explanation": "去年情人节前，她失恋了，正在她痛苦不堪的时候……",
+  "order_index": 24,
+  "id": "fazhan-zhongji1-l12-q24",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "全中国手机用户在哪段时间共发送了2000多万条短信？",
+  "options": [
+   "除夕当天全天",
+   "元旦前一个月",
+   "春节那一周",
+   "12月31日23点30分到1月1日0点30分"
+  ],
+  "correct_answer": "12月31日23点30分到1月1日0点30分",
+  "explanation": "课文明确给出这个短短的一个小时的时间段。",
+  "order_index": 25,
+  "id": "fazhan-zhongji1-l12-q25",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "拇指为什么适合输入文字？",
+  "options": [
+   "拇指比较长",
+   "拇指比较粗",
+   "只有两个关节、操作键盘更方便",
+   "拇指力气最大"
+  ],
+  "correct_answer": "只有两个关节、操作键盘更方便",
+  "explanation": "因为拇指只有两个关节，与其他手指相比，操作小小的手机键盘更方便。",
+  "order_index": 26,
+  "id": "fazhan-zhongji1-l12-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "\"拇指族\"的通病是什么？",
+  "options": [
+   "头痛",
+   "失眠",
+   "近视",
+   "从拇指到手腕的肌肉发疼"
+  ],
+  "correct_answer": "从拇指到手腕的肌肉发疼",
+  "explanation": "很多人都会感到从拇指到手腕的肌肉发疼，这恐怕是\"拇指族\"的通病吧。",
+  "order_index": 27,
+  "id": "fazhan-zhongji1-l12-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "为什么很多年轻人情愿用拇指说话？",
+  "options": [
+   "因为他们不会说话",
+   "因为嘴巴受伤了",
+   "打字速度快、可以写出不好意思说的话",
+   "因为手机没有通话功能"
+  ],
+  "correct_answer": "打字速度快、可以写出不好意思说的话",
+  "explanation": "按键盘的速度几乎跟用嘴说话一样快，而且不好意思说出口的话可以写出来。",
+  "order_index": 28,
+  "id": "fazhan-zhongji1-l12-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 拇指 / 她 / 按动 / 用 / 键盘",
+  "options": [
+   "用她拇指按动键盘",
+   "她按动用拇指键盘",
+   "她用拇指按动键盘"
+  ],
+  "correct_answer": "她用拇指按动键盘",
+  "explanation": "S + 用 + Багаж(拇指) + V(按动) + O(键盘).",
+  "order_index": 29,
+  "id": "fazhan-zhongji1-l12-q29",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 把 / 热衷于发短信的人 / 人们 / 称为\"拇指族\"",
+  "options": [
+   "人们称为\"拇指族\"把热衷于发短信的人",
+   "把人们热衷于发短信的人称为\"拇指族\"",
+   "人们把热衷于发短信的人称为\"拇指族\""
+  ],
+  "correct_answer": "人们把热衷于发短信的人称为\"拇指族\"",
+  "explanation": "S(人们) + 把 + A + 称为 + B.",
+  "order_index": 30,
+  "id": "fazhan-zhongji1-l12-q30",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 都市人 / 拜年的方式 / 一直 / 经历着变化 / 近年来",
+  "options": [
+   "近年来，一直都市人拜年的方式经历着变化",
+   "近年来，都市人拜年的方式一直经历着变化",
+   "都市人近年来拜年的方式经历着变化一直"
+  ],
+  "correct_answer": "近年来，都市人拜年的方式一直经历着变化",
+  "explanation": "Цаг заасан үг (近年来) эхэнд, дараа нь эзэн, дайвар үг, илтгэгч.",
+  "order_index": 31,
+  "id": "fazhan-zhongji1-l12-q31",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 跟用嘴说话 / 几乎 / 一样快 / 按键盘的速度 / 人们",
+  "options": [
+   "人们按键盘的速度几乎跟用嘴说话一样快",
+   "人们几乎按键盘的速度跟用嘴说话一样快",
+   "人们按键盘的速度跟几乎用嘴说话一样快"
+  ],
+  "correct_answer": "人们按键盘的速度几乎跟用嘴说话一样快",
+  "explanation": "Эзэн+тодотгол (按键盘的速度) + 几乎 + 跟……一样快.",
+  "order_index": 32,
+  "id": "fazhan-zhongji1-l12-q32",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "hard"
+ }
+]

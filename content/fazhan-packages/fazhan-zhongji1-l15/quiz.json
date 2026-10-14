@@ -1,0 +1,595 @@
+[
+ {
+  "type": "cloze",
+  "question": "谁不想（ ）一下自己动手种菜的乐趣呢？",
+  "options": [
+   "体验",
+   "检查",
+   "实现",
+   "体会"
+  ],
+  "correct_answer": "体验",
+  "explanation": "体验 = биеэр оролцож мэдрэх. 体会 — дотоод ойлгох, 检查 — шалгах, 实现 — биелүүлэх.",
+  "order_index": 1,
+  "id": "fazhan-zhongji1-l15-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这家公司让城里人（ ）了在都市里种出绿色蔬菜的梦想。",
+  "options": [
+   "实现",
+   "改善",
+   "提供",
+   "完成"
+  ],
+  "correct_answer": "实现",
+  "explanation": "实现梦想 = мөрөөдлийг биелүүлэх. 完成 — даалгавар дуусгах, 提供 — хангах, 改善 — сайжруулах.",
+  "order_index": 2,
+  "id": "fazhan-zhongji1-l15-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "医生说她得了\"电脑综合征\"，最（ ）的治疗方法就是到大自然中走一走。",
+  "options": [
+   "有效",
+   "绝对",
+   "浓厚",
+   "周到"
+  ],
+  "correct_answer": "有效",
+  "explanation": "有效 = үр дүнтэй. 周到 — нямбай, 浓厚 — (сонирхол) хүчтэй, 绝对 — үнэмлэхүй.",
+  "order_index": 3,
+  "id": "fazhan-zhongji1-l15-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "一次公司（ ）郊游，看到景色秀丽的绿色田野。",
+  "options": [
+   "议论",
+   "种植",
+   "闲置",
+   "组织"
+  ],
+  "correct_answer": "组织",
+  "explanation": "组织郊游 = зугаалга зохион байгуулах. 议论 — ярилцах, 种植 — тариалах, 闲置 — ашиглагдалгүй байх.",
+  "order_index": 4,
+  "id": "fazhan-zhongji1-l15-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "如果在上面（ ）一层厚厚的土，不就可以种植花草了吗？",
+  "options": [
+   "摘",
+   "提供",
+   "承建",
+   "铺"
+  ],
+  "correct_answer": "铺",
+  "explanation": "铺土 = шороо дэвсэх. 摘 — тасдах, 提供 — хангах, 承建 — барих.",
+  "order_index": 5,
+  "id": "fazhan-zhongji1-l15-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "摘下一（ ）草莓放到嘴里，真好吃！",
+  "options": [
+   "朵",
+   "种",
+   "片",
+   "颗"
+  ],
+  "correct_answer": "颗",
+  "explanation": "颗 = жижиг бөөрөнхий зүйлийн хэмжих нэгж (颗草莓). 片 — хавтгай зүйлд, 朵 — цэцэгт, 种 — төрөлд.",
+  "order_index": 6,
+  "id": "fazhan-zhongji1-l15-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "她吃不完，就（ ）送给同事和朋友。",
+  "options": [
+   "干脆",
+   "绝对",
+   "自豪",
+   "欣然"
+  ],
+  "correct_answer": "干脆",
+  "explanation": "干脆 = шууд, эргэлзэлгүй. 绝对 — үнэмлэхүй, 欣然 — баяртайгаар, 自豪 — бахархах.",
+  "order_index": 7,
+  "id": "fazhan-zhongji1-l15-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "她还（ ）地说：\"这可是我亲手种的！\"",
+  "options": [
+   "浓厚",
+   "周到",
+   "欣然",
+   "自豪"
+  ],
+  "correct_answer": "自豪",
+  "explanation": "自豪地说 = бахархан хэлэх. 欣然 — баяртайгаар зөвшөөрөх, 周到 — нямбай, 浓厚 — хүчтэй.",
+  "order_index": 8,
+  "id": "fazhan-zhongji1-l15-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "老板问她能不能帮忙建屋顶农场，\"清新\"（ ）答应。",
+  "options": [
+   "干脆",
+   "欣然",
+   "自豪",
+   "绝对"
+  ],
+  "correct_answer": "欣然",
+  "explanation": "欣然答应 = баяртайгаар зөвшөөрөх. 干脆 — шууд, 绝对 — үнэмлэхүй, 自豪 — бахархах.",
+  "order_index": 9,
+  "id": "fazhan-zhongji1-l15-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "由于服务（ ），她的公司渐渐有了名气。",
+  "options": [
+   "有效",
+   "周到",
+   "闲置",
+   "浓厚"
+  ],
+  "correct_answer": "周到",
+  "explanation": "服务周到 = үйлчилгээ нямбай. 浓厚 — (сонирхол) хүчтэй, 闲置 — ашиглагдалгүй, 有效 — үр дүнтэй.",
+  "order_index": 10,
+  "id": "fazhan-zhongji1-l15-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "\"屋顶绿化\"最早（ ）于美国。",
+  "options": [
+   "提供",
+   "闲置",
+   "起源",
+   "改善"
+  ],
+  "correct_answer": "起源",
+  "explanation": "起源于 = …-аас үүсэх. 改善 — сайжруулах, 提供 — хангах, 闲置 — ашиглагдалгүй байх.",
+  "order_index": 11,
+  "id": "fazhan-zhongji1-l15-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "现在中国许多城市的楼顶还（ ）着，正等待着人们去绿化。",
+  "options": [
+   "组织",
+   "承建",
+   "体验",
+   "闲置"
+  ],
+  "correct_answer": "闲置",
+  "explanation": "闲置着 = ашиглагдалгүй хэвтэх. 组织 — зохион байгуулах, 体验 — мэдрэх, 承建 — барих.",
+  "order_index": 12,
+  "id": "fazhan-zhongji1-l15-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Мөрөөдөл бол мөрөөдөл, бодит байдал бол бодит байдал» — аль нь зөв бэ?",
+  "options": [
+   "理想和现实是一样的。",
+   "理想就是现实。",
+   "理想是理想，现实是现实。"
+  ],
+  "correct_answer": "理想是理想，现实是现实。",
+  "explanation": "A是A，B是B — хоёр зүйлийг ялгахад.",
+  "order_index": 13,
+  "id": "fazhan-zhongji1-l15-q13",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Аль өгүүлбэрт «A是A，B是B» зөв хэрэглэгдсэн бэ?",
+  "options": [
+   "我的决定是我的决定，她的决定是她的决定，二者无关。",
+   "我的决定是她的决定一样的。",
+   "我的决定和她的决定差不多一样。"
+  ],
+  "correct_answer": "我的决定是我的决定，她的决定是她的决定，二者无关。",
+  "explanation": "A是A，B是B нь хоёр зүйл ОГТ ХАМААРАЛГҮЙГ онцолно.",
+  "order_index": 14,
+  "id": "fazhan-zhongji1-l15-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "楼顶变漂亮了不说，________。",
+  "options": [
+   "不说还吃到了绿色食品",
+   "还不说吃到了绿色食品",
+   "还吃到了自己亲手种的绿色食品"
+  ],
+  "correct_answer": "还吃到了自己亲手种的绿色食品",
+  "explanation": "……不说，还…… — эхний зүйлийн ард 还 + нэмэлт зүйл.",
+  "order_index": 15,
+  "id": "fazhan-zhongji1-l15-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Аль нь «……不说，还……»-ийг зөв хэрэглэсэн бэ?",
+  "options": [
+   "他没挣到钱不说，还欠了十几万元的债。",
+   "他不说没挣到钱，还欠了债。",
+   "他没挣到钱，不说还欠了债。"
+  ],
+  "correct_answer": "他没挣到钱不说，还欠了十几万元的债。",
+  "explanation": "不说 нь эхний өгүүлбэрийн ТӨГСГӨЛД ордог.",
+  "order_index": 16,
+  "id": "fazhan-zhongji1-l15-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Үзэхийн зэрэгцээ хөдөлмөрлөж, идэхийн зэрэгцээ авч явна» — аль нь зөв бэ?",
+  "options": [
+   "参观带劳动，吃带拿。",
+   "连带参观劳动，连带吃拿。",
+   "连参观带劳动，连吃带拿。"
+  ],
+  "correct_answer": "连参观带劳动，连吃带拿。",
+  "explanation": "连……带…… — X-ийн өмнө 连, Y-ийн өмнө 带.",
+  "order_index": 17,
+  "id": "fazhan-zhongji1-l15-q17",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Аль нь «连……带……»-г зөв хэрэглэсэн бэ?",
+  "options": [
+   "连老师带学生差不多有800人。",
+   "老师带学生差不多有800人。",
+   "连老师学生差不多有800人。"
+  ],
+  "correct_answer": "连老师带学生差不多有800人。",
+  "explanation": "连 ба 带 хоёул X, Y-ийн өмнө байрлана.",
+  "order_index": 18,
+  "id": "fazhan-zhongji1-l15-q18",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "后来活儿太多了，________干脆辞去了工作。",
+  "options": [
+   "以至于",
+   "因为",
+   "所以",
+   "于是"
+  ],
+  "correct_answer": "以至于",
+  "explanation": "以至于 — хэт их зэргийн шалтгаанаас гарсан онцгой үр дагавар.",
+  "order_index": 19,
+  "id": "fazhan-zhongji1-l15-q19",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Аль өгүүлбэрт «以至于» зохимжтой хэрэглэгдсэн бэ？",
+  "options": [
+   "他喜欢喝茶，以至于每天喝一杯。",
+   "他说话的声音太大了，以至于我在房间外面都听得清清楚楚。",
+   "他在家，我在办公室，以至于我们见不到面。"
+  ],
+  "correct_answer": "他说话的声音太大了，以至于我在房间外面都听得清清楚楚。",
+  "explanation": "以至于-ийн өмнө 太……了 зэрэг ИХ ЗЭРГИЙН шалтгаан байх ёстой.",
+  "order_index": 20,
+  "id": "fazhan-zhongji1-l15-q20",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "一方面它能美化环境，________它还能提供绿色食品。",
+  "options": [
+   "（另）一方面",
+   "所以",
+   "不说",
+   "以至于"
+  ],
+  "correct_answer": "（另）一方面",
+  "explanation": "一方面……（另）一方面…… — хоёр холбоотой талыг жагсаах.",
+  "order_index": 21,
+  "id": "fazhan-zhongji1-l15-q21",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Аль өгүүлбэрт «一方面……（另）一方面……» зөв хэрэглэгдсэн бэ?",
+  "options": [
+   "我跟父母一起住，一方面照顾他们，二方面帮我照顾孩子。",
+   "我跟父母一起住，可以照顾他们，也可以帮我照顾孩子。",
+   "我跟父母一起住，一方面我可以照顾他们，（另）一方面他们也可以帮我照顾孩子。"
+  ],
+  "correct_answer": "我跟父母一起住，一方面我可以照顾他们，（另）一方面他们也可以帮我照顾孩子。",
+  "explanation": "一方面……（另）一方面…… бүтцийг бүрэн ашигласан.",
+  "order_index": 22,
+  "id": "fazhan-zhongji1-l15-q22",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "一方面……（另）一方面……-ийг хэдэн тал/шалтгаан жагсаахад хэрэглэдэг вэ?",
+  "options": [
+   "гурав, дөрөв ч болно",
+   "хязгааргүй олон",
+   "зөвхөн хоёр"
+  ],
+  "correct_answer": "зөвхөн хоёр",
+  "explanation": "Энэ бүтэц зөвхөн ХОЁР холбоотой талыг жагсаана.",
+  "order_index": 23,
+  "id": "fazhan-zhongji1-l15-q23",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "她最近特别辛苦，一方面要准备考试，（ ）要照顾生病的孩子。",
+  "options": [
+   "以至于",
+   "所以",
+   "（另）一方面又",
+   "不说还"
+  ],
+  "correct_answer": "（另）一方面又",
+  "explanation": "Хоёр дахь хэсэгт ихэвчлэн 又/还/也 орж эхний хэсэгтэй зэрэгцэнэ.",
+  "order_index": 24,
+  "id": "fazhan-zhongji1-l15-q24",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "\"清新\"为什么取这个网名？",
+  "options": [
+   "因为这是她的真名",
+   "表达了她对清新生活的渴望",
+   "因为她喜欢吃清新的蔬菜"
+  ],
+  "correct_answer": "表达了她对清新生活的渴望",
+  "explanation": "2-р догол мөр.",
+  "order_index": 25,
+  "id": "fazhan-zhongji1-l15-q25",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "\"清新\"得了什么病？原因是什么？",
+  "options": [
+   "感冒，因为天气冷",
+   "\"电脑综合征\"，因为每天盯着屏幕、夜里加班",
+   "心脏病，因为工作压力大"
+  ],
+  "correct_answer": "\"电脑综合征\"，因为每天盯着屏幕、夜里加班",
+  "explanation": "2-р догол мөр.",
+  "order_index": 26,
+  "id": "fazhan-zhongji1-l15-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "\"清新\"是怎么想到在屋顶种菜的？",
+  "options": [
+   "她想到公寓顶层有一大片空地，铺上厚厚的土就能种植",
+   "她的朋友建议她这样做",
+   "她在网上看到了别人的做法"
+  ],
+  "correct_answer": "她想到公寓顶层有一大片空地，铺上厚厚的土就能种植",
+  "explanation": "4-р догол мөр.",
+  "order_index": 27,
+  "id": "fazhan-zhongji1-l15-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "\"清新\"为什么成立了\"绿色屋顶公司\"？",
+  "options": [
+   "她想多挣钱",
+   "后来请她建菜园的人太多了，她干脆辞去工作专门做这件事",
+   "她原来的工作不满意"
+  ],
+  "correct_answer": "后来请她建菜园的人太多了，她干脆辞去工作专门做这件事",
+  "explanation": "10-р догол мөр.",
+  "order_index": 28,
+  "id": "fazhan-zhongji1-l15-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "\"屋顶绿化\"起源于哪个国家？",
+  "options": [
+   "美国",
+   "上海",
+   "中国"
+  ],
+  "correct_answer": "美国",
+  "explanation": "12-р догол мөр.",
+  "order_index": 29,
+  "id": "fazhan-zhongji1-l15-q29",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "\"屋顶绿化\"的两个方面的优越性是什么？",
+  "options": [
+   "只能提供绿色食品",
+   "美化环境、改善空气质量、节约土地；提供绿色食品、体验劳动的快乐",
+   "只能美化环境"
+  ],
+  "correct_answer": "美化环境、改善空气质量、节约土地；提供绿色食品、体验劳动的快乐",
+  "explanation": "12-р догол мөр.",
+  "order_index": 30,
+  "id": "fazhan-zhongji1-l15-q30",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 她 / 不说 / 变漂亮 / 楼顶 / 了",
+  "options": [
+   "楼顶变漂亮了不说",
+   "楼顶不说变漂亮了",
+   "不说楼顶变漂亮了"
+  ],
+  "correct_answer": "楼顶变漂亮了不说",
+  "explanation": "S + …… + 不说.",
+  "order_index": 31,
+  "id": "fazhan-zhongji1-l15-q31",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 连 / 带 / 参观 / 劳动",
+  "options": [
+   "参观连带劳动",
+   "连参观带劳动",
+   "连带参观劳动"
+  ],
+  "correct_answer": "连参观带劳动",
+  "explanation": "连 + X + 带 + Y.",
+  "order_index": 32,
+  "id": "fazhan-zhongji1-l15-q32",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 清新 / 辞去 / 干脆 / 工作 / 了",
+  "options": [
+   "干脆清新辞去了工作",
+   "清新辞去干脆了工作",
+   "清新干脆辞去了工作"
+  ],
+  "correct_answer": "清新干脆辞去了工作",
+  "explanation": "干脆 — дайвар үг, үйл үгийн өмнө.",
+  "order_index": 33,
+  "id": "fazhan-zhongji1-l15-q33",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 一方面 / 美化环境 / 它能 / 改善空气质量 / 另一方面",
+  "options": [
+   "美化环境一方面它能，另一方面……",
+   "它能一方面美化环境，另一方面……",
+   "一方面它能美化环境，另一方面……"
+  ],
+  "correct_answer": "一方面它能美化环境，另一方面……",
+  "explanation": "一方面 + S + V.",
+  "order_index": 34,
+  "id": "fazhan-zhongji1-l15-q34",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "hard"
+ }
+]

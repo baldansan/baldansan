@@ -1,0 +1,558 @@
+[
+ {
+  "type": "cloze",
+  "question": "门铃响了，打开门，（ ）进一个头发乱乱的脑袋。",
+  "options": [
+   "凑",
+   "抓",
+   "塞",
+   "伸"
+  ],
+  "correct_answer": "伸",
+  "explanation": "伸进 = дотогш сунгаж оруулах. 塞 — шахаж хийх, 抓 — атгах, 凑 — дөхөх.",
+  "order_index": 1,
+  "id": "fazhan-zhongji1-l14-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我早就把烟（ ）了，抽烟太费钱了。",
+  "options": [
+   "戒",
+   "催",
+   "替",
+   "离"
+  ],
+  "correct_answer": "戒",
+  "explanation": "戒烟 = тамхи хаях. 离婚 — гэрлэлт цуцлах, 催 — яаравчлах, 替 — оронд нь.",
+  "order_index": 2,
+  "id": "fazhan-zhongji1-l14-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "你这房子够（ ）的啊。",
+  "options": [
+   "气派",
+   "没准儿",
+   "肩膀",
+   "决心"
+  ],
+  "correct_answer": "气派",
+  "explanation": "气派 = гоё сайхан (байшин). Бусад нь энд утгын хувьд тохирохгүй.",
+  "order_index": 3,
+  "id": "fazhan-zhongji1-l14-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我成了'（ ）'了，现在每月还在还房贷呢。",
+  "options": [
+   "房客",
+   "夫妻",
+   "房东",
+   "房奴"
+  ],
+  "correct_answer": "房奴",
+  "explanation": "房奴 = байшингийн зээлийн боол. 房东 — эзэн, 房客 — түрээслэгч.",
+  "order_index": 4,
+  "id": "fazhan-zhongji1-l14-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "你们（ ）俩都是白领，债也还得快。",
+  "options": [
+   "老婆",
+   "朋友",
+   "夫妻",
+   "兄弟"
+  ],
+  "correct_answer": "夫妻",
+  "explanation": "夫妻俩 = эхнэр нөхөр хоёул. 兄弟 — ах дүү, 老婆 — зөвхөн эхнэрийг заана (хос биш).",
+  "order_index": 5,
+  "id": "fazhan-zhongji1-l14-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我不喜欢做保安，我倒是想过自己租个（ ）做个小买卖。",
+  "options": [
+   "锁",
+   "肩膀",
+   "地板",
+   "门面"
+  ],
+  "correct_answer": "门面",
+  "explanation": "门面 = дэлгүүрийн талбай. 地板 — шал, 锁 — цоож, 肩膀 — мөр.",
+  "order_index": 6,
+  "id": "fazhan-zhongji1-l14-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "李阳高兴地拍了一下罗伟的（ ）。",
+  "options": [
+   "肩膀",
+   "脚步",
+   "眼睛",
+   "脑袋"
+  ],
+  "correct_answer": "肩膀",
+  "explanation": "肩膀 = мөр. Бусад нь энд утгын хувьд тохирохгүй биеийн эрхтэн.",
+  "order_index": 7,
+  "id": "fazhan-zhongji1-l14-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "说明我没有白（ ）你。",
+  "options": [
+   "替",
+   "催",
+   "惦记",
+   "传来"
+  ],
+  "correct_answer": "惦记",
+  "explanation": "惦记 = санаа зовж бодож явах. 传来 — сонсогдох, 催 — яаравчлах, 替 — оронд нь.",
+  "order_index": 8,
+  "id": "fazhan-zhongji1-l14-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "罗伟感动得不知说什么好，忽然觉得脸有点儿（ ）。",
+  "options": [
+   "发热",
+   "发苦",
+   "发火",
+   "发愁"
+  ],
+  "correct_answer": "发热",
+  "explanation": "脸发热 = нүүр халуурах (ичих/сэтгэл хөдлөхөд). Бусад нь '发+X' бусад утгууд.",
+  "order_index": 9,
+  "id": "fazhan-zhongji1-l14-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "从西城骑车到这儿，（ ）要一个小时。",
+  "options": [
+   "尽管",
+   "偏偏",
+   "没准儿",
+   "起码"
+  ],
+  "correct_answer": "起码",
+  "explanation": "起码 = дор хаяж. 没准儿 — тодорхойгүй, 尽管 — чөлөөтэй, 偏偏 — яг эсрэгээрээ.",
+  "order_index": 10,
+  "id": "fazhan-zhongji1-l14-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "一醒来，我心里就（ ）的，什么也干不下去。",
+  "options": [
+   "乱七八糟",
+   "七零八落",
+   "丢三落四",
+   "七上八下"
+  ],
+  "correct_answer": "七上八下",
+  "explanation": "七上八下 = зүрх дэлсэх. Бусад нь утга өөр хэлцүүд.",
+  "order_index": 11,
+  "id": "fazhan-zhongji1-l14-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "cloze",
+  "question": "唉！我这人还真（ ）。",
+  "options": [
+   "惦记",
+   "气派",
+   "迷信",
+   "起码"
+  ],
+  "correct_answer": "迷信",
+  "explanation": "迷信 = мухар сүсэглэх. Энд өгүүлбэрийн санаанд зөвхөн энэ үг тохирно.",
+  "order_index": 12,
+  "id": "fazhan-zhongji1-l14-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "哪像我们，还买房呢，________。",
+  "options": [
+   "买房子也不难",
+   "还有很多钱呢",
+   "能吃饱饭、不生病、孩子上得起学就不错了"
+  ],
+  "correct_answer": "能吃饱饭、不生病、孩子上得起学就不错了",
+  "explanation": "还……呢，能……就不错了 — өндөр хүсэлт биелэхгүй, бодит доод түвшин л хангалттай.",
+  "order_index": 13,
+  "id": "fazhan-zhongji1-l14-q13",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "这样的天气，________，我们能来就不错了。",
+  "options": [
+   "来得及呢",
+   "还不迟到呢",
+   "不能迟到呢"
+  ],
+  "correct_answer": "还不迟到呢",
+  "explanation": "'还X呢' хэсэгт А-гийн асуусан өндөр хүлээлтийг давтана.",
+  "order_index": 14,
+  "id": "fazhan-zhongji1-l14-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "两人聊起小时候的朋友，（ ）离婚了，（ ）出国了。",
+  "options": [
+   "谁谁谁 / 谁谁谁",
+   "某人 / 某人",
+   "谁 / 谁"
+  ],
+  "correct_answer": "谁谁谁 / 谁谁谁",
+  "explanation": "疑问词 давталт (谁谁谁) — тодорхойгүй хүнийг заана, ярианы хэллэг.",
+  "order_index": 15,
+  "id": "fazhan-zhongji1-l14-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "你还说（ ），其实他特别小气。",
+  "options": [
+   "多好多好",
+   "怎么怎么",
+   "多么多么"
+  ],
+  "correct_answer": "多好多好",
+  "explanation": "'多好多好' — зэргийг онцолсон давталт. '多么多么' буруу хэлбэр.",
+  "order_index": 16,
+  "id": "fazhan-zhongji1-l14-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "罗伟见他没有走的意思，（ ）自己下午还有个会。",
+  "options": [
+   "然而",
+   "偏偏",
+   "于是"
+  ],
+  "correct_answer": "偏偏",
+  "explanation": "偏偏 — хүсэл, хүлээлттэй яг эсрэгээрээ болохыг онцолно.",
+  "order_index": 17,
+  "id": "fazhan-zhongji1-l14-q17",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "我就今天没带雨伞，可（ ）下雨了。",
+  "options": [
+   "偏偏",
+   "没准儿",
+   "尽管"
+  ],
+  "correct_answer": "偏偏",
+  "explanation": "Яг тэр өдөр шүхрээ аваагүй байхад яг тэр өдөр бороо орсон — 偏偏.",
+  "order_index": 18,
+  "id": "fazhan-zhongji1-l14-q18",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "他这么远来我家，没事（ ）呢。",
+  "options": [
+   "才好",
+   "才怪",
+   "才对"
+  ],
+  "correct_answer": "才怪",
+  "explanation": "（没/不）……才怪呢 — батлан онцолсон хэллэг.",
+  "order_index": 19,
+  "id": "fazhan-zhongji1-l14-q19",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "他那么爱吃肉，又不锻炼，（ ）发胖才怪呢！",
+  "options": [
+   "很",
+   "没",
+   "不"
+  ],
+  "correct_answer": "不",
+  "explanation": "'тарга авахгүй гэдэг гайхалтай' гэдгийг илэрхийлэхийн тулд ҮГҮЙСГЭХ хэлбэр '不发胖' хэрэглэнэ.",
+  "order_index": 20,
+  "id": "fazhan-zhongji1-l14-q20",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "你有什么需要的话，（ ）开口，只要我办得到，一定帮忙。",
+  "options": [
+   "既然",
+   "尽管",
+   "虽然"
+  ],
+  "correct_answer": "尽管",
+  "explanation": "尽管 (副词) — ямар ч болзолгүйгээр чөлөөтэй зөвшөөрнө. 虽然/既然 нь холбоос, утга өөр.",
+  "order_index": 21,
+  "id": "fazhan-zhongji1-l14-q21",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "这本词典我不用，你（ ）用吧，什么时候还给我都行。",
+  "options": [
+   "尽管",
+   "偏偏",
+   "尽管不"
+  ],
+  "correct_answer": "尽管",
+  "explanation": "尽管 (зөвшөөрөл)-ийн ард ЭЕРЭГ хэлбэрийн үйл үг ордог.",
+  "order_index": 22,
+  "id": "fazhan-zhongji1-l14-q22",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Аль нь '尽管' (энэ хичээлийн утгаар) зөв хэрэглэсэн вэ?",
+  "options": [
+   "尽管他很忙，但是还是来了。",
+   "尽管下雨，他还是出去了。",
+   "你有什么困难尽管开口，我能帮的一定帮你。"
+  ],
+  "correct_answer": "你有什么困难尽管开口，我能帮的一定帮你。",
+  "explanation": "Бусад хоёр нь '尽管…但是…' холбоосын утгаар ('虽然'-тэй ижил) хэрэглэгдсэн, энэ хичээлийн зөвшөөрлийн утга биш.",
+  "order_index": 23,
+  "id": "fazhan-zhongji1-l14-q23",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "comprehension",
+  "question": "罗伟刚要出门，发生了什么事？",
+  "options": [
+   "接到公司的电话，说他升职了",
+   "接到老婆的电话，让他回家吃饭",
+   "接到李阳的电话，说他就在楼下"
+  ],
+  "correct_answer": "接到李阳的电话，说他就在楼下",
+  "explanation": "¶1: 罗伟刚要出门，就接到一个电话，说李阳就在他家楼下。",
+  "order_index": 24,
+  "id": "fazhan-zhongji1-l14-q24",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "李阳为什么戒烟了？",
+  "options": [
+   "因为抽烟太费钱了",
+   "因为老婆不让他抽烟",
+   "因为医生让他戒烟"
+  ],
+  "correct_answer": "因为抽烟太费钱了",
+  "explanation": "¶4: 我早就戒了，抽烟太费钱了。",
+  "order_index": 25,
+  "id": "fazhan-zhongji1-l14-q25",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "罗伟觉得李阳来找他的原因是什么？",
+  "options": [
+   "来升职的",
+   "来借钱的",
+   "来旅游的"
+  ],
+  "correct_answer": "来借钱的",
+  "explanation": "¶9: 罗伟想，这是要借钱的开场白吧？",
+  "order_index": 26,
+  "id": "fazhan-zhongji1-l14-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "李阳给罗伟带来了什么东西？",
+  "options": [
+   "一瓶酒",
+   "他小时候最喜欢吃的鱼干儿",
+   "一本书"
+  ],
+  "correct_answer": "他小时候最喜欢吃的鱼干儿",
+  "explanation": "¶22: 原来是自己小时候最喜欢吃的鱼干儿。",
+  "order_index": 27,
+  "id": "fazhan-zhongji1-l14-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "李阳为什么又回来了？",
+  "options": [
+   "因为小区像迷宫，他找不到大门",
+   "因为他忘了带东西",
+   "因为他想再聊一会儿"
+  ],
+  "correct_answer": "因为小区像迷宫，他找不到大门",
+  "explanation": "¶25: 你们这个小区像个迷宫，我绕来绕去就是找不到大门。",
+  "order_index": 28,
+  "id": "fazhan-zhongji1-l14-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "李阳来看罗伟的真正原因是什么？",
+  "options": [
+   "他想请罗伟吃饭",
+   "他做了一个梦，梦见罗伟得了重病，很担心他",
+   "他想向罗伟借钱"
+  ],
+  "correct_answer": "他做了一个梦，梦见罗伟得了重病，很担心他",
+  "explanation": "¶31: 我昨晚做了一个梦，梦见你得了重病……我心里就七上八下的。",
+  "order_index": 29,
+  "id": "fazhan-zhongji1-l14-q29",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 肩膀 / 拍了一下 / 李阳 / 罗伟的",
+  "options": [
+   "李阳罗伟的拍了一下肩膀",
+   "肩膀李阳拍了一下罗伟的",
+   "李阳拍了一下罗伟的肩膀"
+  ],
+  "correct_answer": "李阳拍了一下罗伟的肩膀",
+  "explanation": "S + V + 了一下 + O (定语+中心语).",
+  "order_index": 30,
+  "id": "fazhan-zhongji1-l14-q30",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 起码 / 一个小时 / 骑车 / 要",
+  "options": [
+   "起码骑车要一个小时",
+   "骑车要起码一个小时",
+   "骑车起码要一个小时"
+  ],
+  "correct_answer": "骑车起码要一个小时",
+  "explanation": "起码 (дайвар үг) нь предикатын (要) ӨМНӨ ордог.",
+  "order_index": 31,
+  "id": "fazhan-zhongji1-l14-q31",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 罗伟 / 叫 / 李阳 / 抱住 / 了一声",
+  "options": [
+   "罗伟叫了一声抱住李阳",
+   "罗伟抱住李阳叫了一声",
+   "李阳抱住罗伟叫了一声"
+  ],
+  "correct_answer": "罗伟抱住李阳叫了一声",
+  "explanation": "S(罗伟) + V1(抱住) + O(李阳) + V2(叫了一声).",
+  "order_index": 32,
+  "id": "fazhan-zhongji1-l14-q32",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "hard"
+ }
+]

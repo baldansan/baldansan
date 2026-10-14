@@ -1,0 +1,593 @@
+[
+ {
+  "type": "cloze",
+  "question": "'SOHO'成为了时尚的（ ）。",
+  "options": [
+   "代名词",
+   "缩写",
+   "形式",
+   "任务"
+  ],
+  "correct_answer": "代名词",
+  "explanation": "代名词 = бэлгэдэл (тухайн зүйлийг төлөөлөх нэр). 缩写 — товчлол, 形式 — хэлбэр, 任务 — даалгавар.",
+  "order_index": 1,
+  "id": "fazhan-zhongji1-l11-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "访问人数已经（ ）了10万。",
+  "options": [
+   "达到",
+   "感受",
+   "超过",
+   "交换"
+  ],
+  "correct_answer": "超过",
+  "explanation": "超过 = давах. 达到 — хүрэх (хэмжээнд яг хүрэх), 交换 — солилцох, 感受 — мэдрэх.",
+  "order_index": 2,
+  "id": "fazhan-zhongji1-l11-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "和网友（ ）好心情，交换有用的信息。",
+  "options": [
+   "留言",
+   "渴望",
+   "享受",
+   "分享"
+  ],
+  "correct_answer": "分享",
+  "explanation": "分享 = (баяр баясгалан) хуваалцах. 享受 — өөрөө эдлэх, 留言 — зурвас, 渴望 — тэсч ядан хүсэх.",
+  "order_index": 3,
+  "id": "fazhan-zhongji1-l11-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我也好（ ）这个机会休息一下眼睛。",
+  "options": [
+   "达到",
+   "趁",
+   "敲打",
+   "超过"
+  ],
+  "correct_answer": "趁",
+  "explanation": "趁 + боломж = тэр завшааныг ашиглан. Бусад нь утгын хувьд таарахгүй.",
+  "order_index": 4,
+  "id": "fazhan-zhongji1-l11-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "只不过不是每天都这么顺心（ ）而已。",
+  "options": [
+   "强烈",
+   "如意",
+   "固定",
+   "悦耳"
+  ],
+  "correct_answer": "如意",
+  "explanation": "顺心如意 — хос үг, бодсоноороо болох. 强烈 — хүчтэй, 固定 — тогтмол, 悦耳 — сонсголонтой.",
+  "order_index": 5,
+  "id": "fazhan-zhongji1-l11-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "几天后，我真的（ ）去了工作。",
+  "options": [
+   "逃",
+   "考勤",
+   "辞",
+   "泡"
+  ],
+  "correct_answer": "辞",
+  "explanation": "辞去工作 = ажлаасаа гарах. 逃 — зугтах, 泡 — норгох, 考勤 — ирц шалгах.",
+  "order_index": 6,
+  "id": "fazhan-zhongji1-l11-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我并没有感受到……的轻松与愉快，（ ），却感受到了生活的压力。",
+  "options": [
+   "于是",
+   "相反",
+   "因为",
+   "虽然"
+  ],
+  "correct_answer": "相反",
+  "explanation": "相反 = эсрэгээрээ. 于是 — тэгээд, 虽然 — хэдийгээр, 因为 — учир нь.",
+  "order_index": 7,
+  "id": "fazhan-zhongji1-l11-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "没有了（ ）的工资收入，心中就开始不安。",
+  "options": [
+   "业余",
+   "固定",
+   "强烈",
+   "悦耳"
+  ],
+  "correct_answer": "固定",
+  "explanation": "固定 = тогтмол. 强烈 — хүчтэй, 悦耳 — сонсголонтой, 业余 — чөлөөт цагийн.",
+  "order_index": 8,
+  "id": "fazhan-zhongji1-l11-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "长期一个人在家，（ ）感到寂寞孤独。",
+  "options": [
+   "总算",
+   "动不动",
+   "难免",
+   "相反"
+  ],
+  "correct_answer": "难免",
+  "explanation": "难免 = зайлшгүй тохиолдох. 动不动 — байнга давтагдах, 相反 — эсрэгээрээ, 总算 — эцэст нь.",
+  "order_index": 9,
+  "id": "fazhan-zhongji1-l11-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "于是，烟抽得越来越多，（ ）就发脾气。",
+  "options": [
+   "不禁",
+   "总算",
+   "动不动",
+   "难免"
+  ],
+  "correct_answer": "动不动",
+  "explanation": "动不动就…… — болгон л …. 难免 — зайлшгүй (нэг удаагийн), 不禁 — өөрийн эрхгүй, 总算 — эцэст нь.",
+  "order_index": 10,
+  "id": "fazhan-zhongji1-l11-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "有时望着窗外来来往往的人们，（ ）羡慕起上班族来。",
+  "options": [
+   "动不动",
+   "不禁",
+   "相反",
+   "难免"
+  ],
+  "correct_answer": "不禁",
+  "explanation": "不禁 = өөрийн эрхгүй. 难免/动不动/相反 нь энд утгын хувьд тохирохгүй.",
+  "order_index": 11,
+  "id": "fazhan-zhongji1-l11-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "努力干了四个小时，（ ）完成了任务。",
+  "options": [
+   "相反",
+   "不禁",
+   "总算",
+   "难免"
+  ],
+  "correct_answer": "总算",
+  "explanation": "总算 = удаан хичээлийн эцэст биелэх (脚注①). Бусад нь энд таарахгүй.",
+  "order_index": 12,
+  "id": "fazhan-zhongji1-l11-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "一上午盯着电脑看，眼睛也（ ）累的了。",
+  "options": [
+   "超过",
+   "总算",
+   "够",
+   "达到"
+  ],
+  "correct_answer": "够",
+  "explanation": "够+adj.+的 = зэрэг их байгааг онцлох (脚注②). Бусад нь энэ бүтцэд таарахгүй.",
+  "order_index": 13,
+  "id": "fazhan-zhongji1-l11-q13",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Аль нь зөв бэ? «Өмнөхтэй харьцуулахад, өнөөдрийн Хятадад их өөрчлөлт гарсан»",
+  "options": [
+   "过去相比，今天的中国确实发生了巨大的变化。",
+   "与过去相比，今天的中国确实发生了巨大的变化。",
+   "今天的中国与过去确实发生了巨大的变化相比。"
+  ],
+  "correct_answer": "与过去相比，今天的中国确实发生了巨大的变化。",
+  "explanation": "与/和 + A + 相比，+ B — зөв дараалал.",
+  "order_index": 14,
+  "id": "fazhan-zhongji1-l11-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Аль нь ЗӨВ бэ?",
+  "options": [
+   "我要趁（着）放假的机会，去中国旅行。",
+   "我要放假的机会趁（着），去中国旅行。",
+   "我要去中国旅行，趁（着）放假的机会。"
+  ],
+  "correct_answer": "我要趁（着）放假的机会，去中国旅行。",
+  "explanation": "趁(着) + нөхцлийн бүтэн хэллэг (放假的机会) заавал үйл үгийн ӨМНӨ ирнэ.",
+  "order_index": 15,
+  "id": "fazhan-zhongji1-l11-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "这是我自己的事情，跟别人________。",
+  "options": [
+   "没有关",
+   "无关",
+   "不有关"
+  ],
+  "correct_answer": "无关",
+  "explanation": "无关 нь цул үг (эсрэг нь 有关), задалж хэлдэггүй.",
+  "order_index": 16,
+  "id": "fazhan-zhongji1-l11-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Аль өгүүлбэрт 跟/和/与B有关 БУРУУ хэрэглэсэн бэ?",
+  "options": [
+   "人的工作能力跟他的学历有关。",
+   "人的工作能力有关他的学历。",
+   "人的工作能力和他的学历有关。"
+  ],
+  "correct_answer": "人的工作能力有关他的学历。",
+  "explanation": "和/跟/与 + B нь 有关-ийн ӨМНӨ орох ёстой; 有关-ийн ард В ирж болохгүй.",
+  "order_index": 17,
+  "id": "fazhan-zhongji1-l11-q17",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "A: 姐姐和妹妹的性格一样吗？ B: 不一样，姐姐喜欢热闹，相反，________。",
+  "options": [
+   "她们都喜欢安静",
+   "妹妹也喜欢热闹",
+   "妹妹喜欢安静"
+  ],
+  "correct_answer": "妹妹喜欢安静",
+  "explanation": "相反-ийн ард ЭСРЭГ шинж ирнэ — эгч нь хөл хөдөлгөөнтэйг, дүү нь нам гүмийг дуртай.",
+  "order_index": 18,
+  "id": "fazhan-zhongji1-l11-q18",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Аль өгүүлбэрт 相反 БУРУУ хэрэглэсэн бэ?",
+  "options": [
+   "她相反喜欢安静。",
+   "我们都以为他会失败，相反，他却成功了。",
+   "姐姐喜欢热闹，相反，妹妹喜欢安静。"
+  ],
+  "correct_answer": "她相反喜欢安静。",
+  "explanation": "相反 ганцаараа нэг өгүүлбэрт дайвар үг шиг зогсож болохгүй — өмнөх ЭСРЭГ агуулгатай өгүүлбэр шаардана.",
+  "order_index": 19,
+  "id": "fazhan-zhongji1-l11-q19",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "她太害羞了，和大家说话时，________。",
+  "options": [
+   "动不动就脸红",
+   "就动不动脸红",
+   "脸红动不动就"
+  ],
+  "correct_answer": "动不动就脸红",
+  "explanation": "动不动 ЗААВАЛ 就-ийн ӨМНӨ ирнэ.",
+  "order_index": 20,
+  "id": "fazhan-zhongji1-l11-q20",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "运动员在比赛中有压力是（ ）的。",
+  "options": [
+   "相反",
+   "动不动",
+   "难免"
+  ],
+  "correct_answer": "难免",
+  "explanation": "难免 — зайлшгүй тохиолдох нэг удаагийн үр дагавар. 动不动 — байнга давтагдах зан.",
+  "order_index": 21,
+  "id": "fazhan-zhongji1-l11-q21",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "他刚刚失恋，（ ）情绪低落。",
+  "options": [
+   "动不动",
+   "难免",
+   "不禁"
+  ],
+  "correct_answer": "难免",
+  "explanation": "难免情绪低落 — зайлшгүй үр дагавар. 动不动 бол давтамжтай зан чанарт хэрэглэгдэнэ, нэг удаагийн шалтгаант үр дагаварт таарахгүй.",
+  "order_index": 22,
+  "id": "fazhan-zhongji1-l11-q22",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "A: 你弟弟的身体怎么样？ B: 他的身体很差，________。",
+  "options": [
+   "动不动就生病",
+   "难免生病",
+   "相反生病"
+  ],
+  "correct_answer": "动不动就生病",
+  "explanation": "动不动就…… — байнга давтагдах (эрүүл мэнд муу тул байнга өвддөг).",
+  "order_index": 23,
+  "id": "fazhan-zhongji1-l11-q23",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "我去了好几个图书馆，（ ）借到了那本书。",
+  "options": [
+   "总算",
+   "难免",
+   "不禁"
+  ],
+  "correct_answer": "总算",
+  "explanation": "总算 — удаан хичээлийн эцэст биелэх (脚注①).",
+  "order_index": 24,
+  "id": "fazhan-zhongji1-l11-q24",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "\"SOHO\"翻译成中文是什么意思？",
+  "options": [
+   "在家办公",
+   "网上购物",
+   "在公司上班"
+  ],
+  "correct_answer": "在家办公",
+  "explanation": "1-р догол мөр: 翻译成中文就叫\"在家办公\"。",
+  "order_index": 25,
+  "id": "fazhan-zhongji1-l11-q25",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "SOHO女孩儿今天的工作任务是什么？",
+  "options": [
+   "撰稿",
+   "广告设计",
+   "考勤"
+  ],
+  "correct_answer": "广告设计",
+  "explanation": "3-р догол мөр: 今天公司总部给我的任务是：广告设计。",
+  "order_index": 26,
+  "id": "fazhan-zhongji1-l11-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "SOHO女孩儿的个人网页怎么样？",
+  "options": [
+   "访问人数不多，没有人关注",
+   "访问人数已经超过了10万，还有公司在上面做广告",
+   "每天都要更新很多次"
+  ],
+  "correct_answer": "访问人数已经超过了10万，还有公司在上面做广告",
+  "explanation": "4-р догол мөр。",
+  "order_index": 27,
+  "id": "fazhan-zhongji1-l11-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "为什么\"坐家\"要辞去原来的工作？",
+  "options": [
+   "他想多挣钱",
+   "朋友描绘的SOHO生活情景强烈地吸引着他",
+   "公司要求他辞职"
+  ],
+  "correct_answer": "朋友描绘的SOHO生活情景强烈地吸引着他",
+  "explanation": "11-р догол мөр。",
+  "order_index": 28,
+  "id": "fazhan-zhongji1-l11-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "\"坐家\"的SOHO生活实际上怎么样？",
+  "options": [
+   "和以前上班一样轻松",
+   "并不像朋友描述的那么美好，感受到了生活的压力",
+   "比朋友描述的还要美好"
+  ],
+  "correct_answer": "并不像朋友描述的那么美好，感受到了生活的压力",
+  "explanation": "13-р догол мөр。",
+  "order_index": 29,
+  "id": "fazhan-zhongji1-l11-q29",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "\"坐家\"最后选择了什么样的生活？",
+  "options": [
+   "回到原来的公司，公司立刻同意了他的要求",
+   "继续做SOHO，再也没有回去上班",
+   "重新找到工作，开始了\"上班族\"的生活"
+  ],
+  "correct_answer": "重新找到工作，开始了\"上班族\"的生活",
+  "explanation": "15-р догол мөр: 公司没有同意，所以他另外找了半年多，好不容易找到了新工作。",
+  "order_index": 30,
+  "id": "fazhan-zhongji1-l11-q30",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 相比 / 与 / 发达国家 / ，中国的SOHO一族还不够多",
+  "options": [
+   "与发达国家相比，中国的SOHO一族还不够多",
+   "相比与发达国家，中国的SOHO一族还不够多",
+   "发达国家与相比，中国的SOHO一族还不够多"
+  ],
+  "correct_answer": "与发达国家相比，中国的SOHO一族还不够多",
+  "explanation": "与 + A + 相比 — зөв дараалал.",
+  "order_index": 31,
+  "id": "fazhan-zhongji1-l11-q31",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 这个机会 / 趁 / 休息一下眼睛 / 我也好",
+  "options": [
+   "趁我也好这个机会休息一下眼睛",
+   "我也好这个机会趁休息一下眼睛",
+   "我也好趁这个机会休息一下眼睛"
+  ],
+  "correct_answer": "我也好趁这个机会休息一下眼睛",
+  "explanation": "趁 + нөхцөл (这个机会) + үйл үг (休息一下眼睛).",
+  "order_index": 32,
+  "id": "fazhan-zhongji1-l11-q32",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 跟 / 这种人的职业 / 网络 / 大多 / 有关",
+  "options": [
+   "这种人的职业大多跟网络有关",
+   "这种人的职业跟大多网络有关",
+   "网络跟这种人的职业大多有关"
+  ],
+  "correct_answer": "这种人的职业大多跟网络有关",
+  "explanation": "A (职业) 跟 B (网络) 有关, 大多 нь дайвар үг тул 跟-ийн өмнө.",
+  "order_index": 33,
+  "id": "fazhan-zhongji1-l11-q33",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 发脾气 / 动不动 / 就 / 她",
+  "options": [
+   "动不动她就发脾气",
+   "她就动不动发脾气",
+   "她动不动就发脾气"
+  ],
+  "correct_answer": "她动不动就发脾气",
+  "explanation": "S + 动不动 + 就 + V — зөв дараалал.",
+  "order_index": 34,
+  "id": "fazhan-zhongji1-l11-q34",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ }
+]

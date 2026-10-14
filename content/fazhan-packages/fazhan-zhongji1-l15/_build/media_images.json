@@ -1,0 +1,11 @@
+[
+ {"id": "roof-farm", "file": "images/roof-farm.jpg", "title": "屋顶农场 — дээврийн аж ахуйн төсөөлөл", "role": "hero", "section": "teacher-intro"},
+ {"id": "tianye", "file": "images/tianye.jpg", "title": "田野 — ногоон тал хээр", "role": "illustration", "section": "vocabulary"},
+ {"id": "xiangxia", "file": "images/xiangxia.jpg", "title": "乡下 — хөдөөгийн тосгон", "role": "illustration", "section": "vocabulary"},
+ {"id": "shuini", "file": "images/shuini.jpg", "title": "水泥 — бетон шал бүхий өрөө", "role": "illustration", "section": "vocabulary"},
+ {"id": "feiliao", "file": "images/feiliao.jpg", "title": "肥料 — тариаланд бордоо цацах", "role": "illustration", "section": "vocabulary"},
+ {"id": "miao", "file": "images/miao.jpg", "title": "苗 — улаан ооролтын соёолж", "role": "illustration", "section": "vocabulary"},
+ {"id": "huafei", "file": "images/huafei.jpg", "title": "化肥 — хими бордооны мөхлөг", "role": "illustration", "section": "vocabulary"},
+ {"id": "nongyao", "file": "images/nongyao.jpg", "title": "农药 — хортон шавьжны эсрэг эм цацах", "role": "illustration", "section": "vocabulary"},
+ {"id": "nongchang", "file": "images/nongchang.jpg", "title": "农场 — агаарын өнцгөөс харсан аж ахуй", "role": "illustration", "section": "vocabulary"}
+]

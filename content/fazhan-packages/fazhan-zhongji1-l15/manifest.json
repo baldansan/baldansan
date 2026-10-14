@@ -1,0 +1,98 @@
+{
+ "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+ "courseType": "chinese-hsk",
+ "courseId": "fazhan-zhongji1",
+ "lessonId": "fazhan-zhongji1-l15",
+ "hskLevel": 4,
+ "lessonNumber": 15,
+ "lessonProfile": "hsk4-dialogue-shorttext-exam-workbook",
+ "lessonType": "hsk4-dialogue-shorttext-exam-workbook",
+ "language": "zh-MN",
+ "targetLanguage": "zh",
+ "uiLanguage": "mn",
+ "title": "绿色屋顶",
+ "mongolianTitle": "Ногоон дээвэр",
+ "series": "发展汉语（第二版）中级综合 I",
+ "seriesLabel_mn": "发展汉语 дунд I (≈HSK4)",
+ "source": "发展汉语（第二版）中级综合 I · 第15课 (сурах бичиг, 教案, 课件, 参考答案, албан mp3)",
+ "hasAudio": true,
+ "hasImages": true,
+ "audio": {
+  "text": "audio/fazhan-zhongji1-15-text.mp3",
+  "words": "audio/fazhan-zhongji1-15-words.mp3",
+  "vocabularyClips": "audio/words/w01..w52.mp3 (албан 生词 бичлэгээс хайчилсан)"
+ },
+ "media": {
+  "lessonId": "fazhan-zhongji1-l15",
+  "images": [
+   {
+    "id": "roof-farm",
+    "file": "images/roof-farm.jpg",
+    "title": "屋顶农场 — дээврийн аж ахуйн төсөөлөл",
+    "role": "hero",
+    "section": "teacher-intro"
+   },
+   {
+    "id": "tianye",
+    "file": "images/tianye.jpg",
+    "title": "田野 — ногоон тал хээр",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "xiangxia",
+    "file": "images/xiangxia.jpg",
+    "title": "乡下 — хөдөөгийн тосгон",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "shuini",
+    "file": "images/shuini.jpg",
+    "title": "水泥 — бетон шал бүхий өрөө",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "feiliao",
+    "file": "images/feiliao.jpg",
+    "title": "肥料 — тариаланд бордоо цацах",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "miao",
+    "file": "images/miao.jpg",
+    "title": "苗 — улаан ооролтын соёолж",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "huafei",
+    "file": "images/huafei.jpg",
+    "title": "化肥 — хими бордооны мөхлөг",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "nongyao",
+    "file": "images/nongyao.jpg",
+    "title": "农药 — хортон шавьжны эсрэг эм цацах",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "nongchang",
+    "file": "images/nongchang.jpg",
+    "title": "农场 — агаарын өнцгөөс харсан аж ахуй",
+    "role": "illustration",
+    "section": "vocabulary"
+   }
+  ]
+ },
+ "verification": {
+  "answerStatus": "official_answer_key_verified (参考答案)",
+  "textStatus": "source_verified (сурах бичгийн хуудсыг зургаар уншсан)",
+  "teacherLayer": "教案 + PPT 课件-д тулгуурласан"
+ }
+}

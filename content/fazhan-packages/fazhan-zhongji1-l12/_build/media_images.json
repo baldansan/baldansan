@@ -1,0 +1,8 @@
+[
+ {"id": "lantern-festival", "file": "images/lantern-festival.jpg", "title": "元宵节 — Гэрлийн баяр", "role": "hero", "section": "teacher-intro"},
+ {"id": "spring-festival-niangao", "file": "images/spring-festival-niangao.jpg", "title": "春节 — жилийн бин (年糕)", "role": "illustration", "section": "vocabulary"},
+ {"id": "spring-festival-dumplings", "file": "images/spring-festival-dumplings.jpg", "title": "春节 — бууз (饺子)", "role": "illustration", "section": "vocabulary"},
+ {"id": "dragon-boat-festival", "file": "images/dragon-boat-festival.jpg", "title": "端午节 — луу завины уралдаан (赛龙舟)", "role": "illustration", "section": "vocabulary"},
+ {"id": "mid-autumn-mooncake", "file": "images/mid-autumn-mooncake.jpg", "title": "中秋节 — сарны боов (月饼)", "role": "illustration", "section": "vocabulary"},
+ {"id": "qingming-tree-planting", "file": "images/qingming-tree-planting.jpg", "title": "清明节 — мод тарих (植树)", "role": "illustration", "section": "vocabulary"}
+]

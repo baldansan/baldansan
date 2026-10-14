@@ -1,0 +1,540 @@
+[
+ {
+  "type": "cloze",
+  "question": "正因为他不想一辈子像父母那样生活，才（ ）读书。",
+  "options": [
+   "早晚",
+   "公正",
+   "反而",
+   "用功"
+  ],
+  "correct_answer": "用功",
+  "explanation": "用功 = сурахдаа хичээнгүй. 公正 — шударга, 早晚 — эрт орой, 反而 — эсрэгээрээ.",
+  "order_index": 1,
+  "id": "fazhan-zhongji1-l13-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "因为生活（ ）会给他们最公正的分数。",
+  "options": [
+   "当初",
+   "本身",
+   "资金",
+   "作用"
+  ],
+  "correct_answer": "本身",
+  "explanation": "本身 = өөрөө нь. 当初 — анх, 作用 — нөлөө, 资金 — хөрөнгө.",
+  "order_index": 2,
+  "id": "fazhan-zhongji1-l13-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他见到了（ ）多年的同学和已经退休了的老师。",
+  "options": [
+   "报答",
+   "回想",
+   "分别",
+   "反而"
+  ],
+  "correct_answer": "分别",
+  "explanation": "分别 = салах. 回想 — дурсах, 反而 — эсрэгээрээ, 报答 — хариу хайрлах.",
+  "order_index": 3,
+  "id": "fazhan-zhongji1-l13-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这件礼物深深地（ ）了他。",
+  "options": [
+   "感动",
+   "感受",
+   "感觉",
+   "感谢"
+  ],
+  "correct_answer": "感动",
+  "explanation": "感动 = сэтгэлийг хөдөлгөх. 感觉/感受 — мэдрэх, 感谢 — талархах.",
+  "order_index": 4,
+  "id": "fazhan-zhongji1-l13-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "这些青春时代的梦想，他（ ）认为是生命中最重要的事。",
+  "options": [
+   "当初",
+   "反而",
+   "早晚",
+   "曾"
+  ],
+  "correct_answer": "曾",
+  "explanation": "曾 = хэзээ нэгэн цагт (曾经). 早晚 — ирээдүйд заавал, 反而 — эсрэгээрээ, 当初 — нэр үг тул энд тохирохгүй.",
+  "order_index": 5,
+  "id": "fazhan-zhongji1-l13-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "一年后，由于（ ）的原因，公司经营不下去了。",
+  "options": [
+   "积蓄",
+   "作用",
+   "真情",
+   "资金"
+  ],
+  "correct_answer": "资金",
+  "explanation": "资金 = хөрөнгө. 作用 — нөлөө, 积蓄 — хуримтлал (хувь хүний), 真情 — жинхэнэ сэтгэл.",
+  "order_index": 6,
+  "id": "fazhan-zhongji1-l13-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "心灰意冷的我甚至想到了（ ）。",
+  "options": [
+   "自杀",
+   "辞职",
+   "攒",
+   "心灰意冷"
+  ],
+  "correct_answer": "自杀",
+  "explanation": "自杀 = амиа хорлох. 辞职 — ажлаасаа гарах, 攒 — хуримтлуулах.",
+  "order_index": 7,
+  "id": "fazhan-zhongji1-l13-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "那些钱是他一点点（ ）起来的。",
+  "options": [
+   "经营",
+   "攒",
+   "赚",
+   "投"
+  ],
+  "correct_answer": "攒",
+  "explanation": "攒 = хуримтлуулах. 投 — хийх/хөрөнгө оруулах, 赚 — олох, 经营 — эрхлэх.",
+  "order_index": 8,
+  "id": "fazhan-zhongji1-l13-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "手术前夜，我担心自己会因手术失败而变（ ）。",
+  "options": [
+   "聋",
+   "病",
+   "哑",
+   "瞎"
+  ],
+  "correct_answer": "聋",
+  "explanation": "聋 = дүлий. Эх бичвэрт яг энэ үг хэрэглэгдсэн.",
+  "order_index": 9,
+  "id": "fazhan-zhongji1-l13-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "20年前，你们写在纸上的答案（ ）。",
+  "options": [
+   "意味深长",
+   "五花八门",
+   "晕头转向",
+   "心灰意冷"
+  ],
+  "correct_answer": "五花八门",
+  "explanation": "五花八门 = олон янзын. 意味深长 — гүн утгатай, 心灰意冷 — найдвар алдах, 晕头转向 — эргэлзэх.",
+  "order_index": 10,
+  "id": "fazhan-zhongji1-l13-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "人生最重要的是（ ）！",
+  "options": [
+   "真情",
+   "资金",
+   "未来",
+   "青春"
+  ],
+  "correct_answer": "真情",
+  "explanation": "真情 = жинхэнэ сэтгэл — өгүүллэгийн гол дүгнэлт.",
+  "order_index": 11,
+  "id": "fazhan-zhongji1-l13-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "正因为他老实又认真，________让他当经理。",
+  "options": [
+   "我们就",
+   "我们也",
+   "我们才"
+  ],
+  "correct_answer": "我们才",
+  "explanation": "正因为……才…… — тогтсон хос бүтэц.",
+  "order_index": 12,
+  "id": "fazhan-zhongji1-l13-q12",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Аль нь зөв бэ? «Хоёр удаа уулзсан хэрнээ л танилцсан гэж тооцъё»",
+  "options": [
+   "我和他见过两次面，算就是认识了。",
+   "我和他见过两次面，就算是认识了。",
+   "我和他见过两次面，认识了就算是。"
+  ],
+  "correct_answer": "我和他见过两次面，就算是认识了。",
+  "explanation": "就算是 нь тогтсон бүтэц, 就 эхэнд, 是 ард нь ордог.",
+  "order_index": 13,
+  "id": "fazhan-zhongji1-l13-q13",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "\"SOHO一族\"的收入并不低，________上班族。",
+  "options": [
+   "可以比得过",
+   "比得过可以",
+   "可以比得过了"
+  ],
+  "correct_answer": "可以比得过",
+  "explanation": "得 нь 比 ба 过-ийн хооронд ордог, 比得过 бүхэл тогтсон хэлбэр.",
+  "order_index": 14,
+  "id": "fazhan-zhongji1-l13-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "他住得最远，________最早到了。",
+  "options": [
+   "可是",
+   "反而",
+   "相反"
+  ],
+  "correct_answer": "反而",
+  "explanation": "反而 — нэг өгүүлбэр доторх хүлээгдээгүй эсрэг үр дүн.",
+  "order_index": 15,
+  "id": "fazhan-zhongji1-l13-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "比赛之前，所有运动员都要（ ）起来，进行训练。",
+  "options": [
+   "存",
+   "连",
+   "集中"
+  ],
+  "correct_answer": "集中",
+  "explanation": "集中起来 — тамирчид нэг дор цугларч бэлтгэх.",
+  "order_index": 16,
+  "id": "fazhan-zhongji1-l13-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Аль нь БУРУУ бэ?",
+  "options": [
+   "他的技术比得上专业运动员。",
+   "技术却比得上专业运动员。",
+   "技术却比上得专业运动员。"
+  ],
+  "correct_answer": "技术却比上得专业运动员。",
+  "explanation": "得 нь 比 ба 上/过/了-ийн ХООРОНД ордог, дараалал 比得上 байх ёстой, 比上得 буруу.",
+  "order_index": 17,
+  "id": "fazhan-zhongji1-l13-q17",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "他吃药以后，病不但没好，________更严重了。",
+  "options": [
+   "因为",
+   "相反",
+   "反而"
+  ],
+  "correct_answer": "反而",
+  "explanation": "不但没……反而…… тогтсон хос бүтэц.",
+  "order_index": 18,
+  "id": "fazhan-zhongji1-l13-q18",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "她每个月都把收入的一半（ ）起来。",
+  "options": [
+   "存",
+   "连",
+   "集中"
+  ],
+  "correct_answer": "存",
+  "explanation": "存起来 — мөнгийг хадгалж цуглуулах.",
+  "order_index": 19,
+  "id": "fazhan-zhongji1-l13-q19",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "早知今日，何必________？",
+  "options": [
+   "本身",
+   "当初",
+   "早晚"
+  ],
+  "correct_answer": "当初",
+  "explanation": "何必当初 — хэлц хэллэг, анхнаасаа яагаад тэгсэн бэ гэсэн харамсал.",
+  "order_index": 20,
+  "id": "fazhan-zhongji1-l13-q20",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "我（ ）跟他一起工作过，后来他辞职了。",
+  "options": [
+   "曾",
+   "早晚",
+   "反而"
+  ],
+  "correct_answer": "曾",
+  "explanation": "曾 + V + 过 — өнгөрсөн туршлага.",
+  "order_index": 21,
+  "id": "fazhan-zhongji1-l13-q21",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "他把所有的积蓄都（ ）进了这个项目。",
+  "options": [
+   "投",
+   "攒",
+   "赚"
+  ],
+  "correct_answer": "投",
+  "explanation": "投进 + зүйл — хөрөнгийг хийх, зарцуулах.",
+  "order_index": 22,
+  "id": "fazhan-zhongji1-l13-q22",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "\"他\"18岁那年写出的三件最重要的事是什么？",
+  "options": [
+   "考上名牌大学、找到好工作、结婚生子",
+   "赚一万块钱、住有阳台的楼房、看明星演唱会",
+   "母亲的饺子、好友的存折、妻子的字条"
+  ],
+  "correct_answer": "赚一万块钱、住有阳台的楼房、看明星演唱会",
+  "explanation": "3-р догол мөр: 他在稿纸上写出答案.",
+  "order_index": 23,
+  "id": "fazhan-zhongji1-l13-q23",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "20年后，\"他\"写下的三件最重要的事是什么？",
+  "options": [
+   "健康、快乐、平安",
+   "赚一万块钱、住有阳台的楼房、看明星演唱会",
+   "母亲的饺子、好友的存折、妻子的字条"
+  ],
+  "correct_answer": "母亲的饺子、好友的存折、妻子的字条",
+  "explanation": "9-р догол мөр.",
+  "order_index": 24,
+  "id": "fazhan-zhongji1-l13-q24",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "初一晚上，是谁来敲门？",
+  "options": [
+   "妻子",
+   "母亲",
+   "好友"
+  ],
+  "correct_answer": "母亲",
+  "explanation": "11-р догол мөр: 她坐了12个小时的火车，给儿子送饺子来了.",
+  "order_index": 25,
+  "id": "fazhan-zhongji1-l13-q25",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "朋友给\"他\"的存折上有多少钱？",
+  "options": [
+   "一万元",
+   "六千五百元",
+   "几十万元"
+  ],
+  "correct_answer": "六千五百元",
+  "explanation": "12-р догол мөр.",
+  "order_index": 26,
+  "id": "fazhan-zhongji1-l13-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "妻子在字条上写了什么？",
+  "options": [
+   "亲爱的，别担心，我愿意永远做你的耳朵",
+   "祝你手术成功",
+   "我爱你、我想你"
+  ],
+  "correct_answer": "亲爱的，别担心，我愿意永远做你的耳朵",
+  "explanation": "14-р догол мөр.",
+  "order_index": 27,
+  "id": "fazhan-zhongji1-l13-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "老师最后说，人生最重要的是什么？",
+  "options": [
+   "真情",
+   "地位",
+   "金钱"
+  ],
+  "correct_answer": "真情",
+  "explanation": "15-р догол мөр: 人生最重要的是真情！",
+  "order_index": 28,
+  "id": "fazhan-zhongji1-l13-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 读书 / 正因为 / 他 / 才 / 用功 / 不想一辈子像父母那样生活",
+  "options": [
+   "他才正因为不想一辈子像父母那样生活用功读书",
+   "用功读书正因为他不想一辈子像父母那样生活才",
+   "正因为他不想一辈子像父母那样生活，才用功读书"
+  ],
+  "correct_answer": "正因为他不想一辈子像父母那样生活，才用功读书",
+  "explanation": "正因为 + шалтгаан，才 + үр дүн.",
+  "order_index": 29,
+  "id": "fazhan-zhongji1-l13-q29",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 那些钱 / 一点点 / 攒 / 他 / 起来 / 是 / 的",
+  "options": [
+   "那些钱一点点是他攒起来的",
+   "那些钱是他一点点攒起来的",
+   "他是那些钱一点点攒起来的"
+  ],
+  "correct_answer": "那些钱是他一点点攒起来的",
+  "explanation": "是……的 бүтэц дотор 攒起来 байрших ёстой.",
+  "order_index": 30,
+  "id": "fazhan-zhongji1-l13-q30",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 反而 / 他 / 最早 / 住得最远 / 到了",
+  "options": [
+   "住得最远反而他最早到了",
+   "他反而住得最远最早到了",
+   "他住得最远，反而最早到了"
+  ],
+  "correct_answer": "他住得最远，反而最早到了",
+  "explanation": "Эхний хагас нөхцөл,反而 хоёр дахь хагасын эхэнд.",
+  "order_index": 31,
+  "id": "fazhan-zhongji1-l13-q31",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ }
+]

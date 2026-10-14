@@ -1,0 +1,56 @@
+{
+ "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+ "courseType": "chinese-hsk",
+ "courseId": "fazhan-zhongji1",
+ "lessonId": "fazhan-zhongji1-l13",
+ "hskLevel": 4,
+ "lessonNumber": 13,
+ "lessonProfile": "hsk4-dialogue-shorttext-exam-workbook",
+ "lessonType": "hsk4-dialogue-shorttext-exam-workbook",
+ "language": "zh-MN",
+ "targetLanguage": "zh",
+ "uiLanguage": "mn",
+ "title": "人生最重要的三件事",
+ "mongolianTitle": "Амьдралд хамгийн чухал гурван зүйл",
+ "series": "发展汉语（第二版）中级综合 I",
+ "seriesLabel_mn": "发展汉语 дунд I (≈HSK4)",
+ "source": "发展汉语（第二版）中级综合 I · 第13课 (сурах бичиг, 教案, 课件, 参考答案, албан mp3)",
+ "hasAudio": true,
+ "hasImages": true,
+ "audio": {
+  "text": "audio/fazhan-zhongji1-13-text.mp3",
+  "words": "audio/fazhan-zhongji1-13-words.mp3",
+  "vocabularyClips": "audio/words/w01..w49.mp3 (албан 生词 бичлэгээс хайчилсан)"
+ },
+ "media": {
+  "lessonId": "fazhan-zhongji1-l13",
+  "images": [
+   {
+    "id": "img1",
+    "file": "images/cunzhe.jpg",
+    "title": "存折 — хадгаламжийн дэвтэр",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "img2",
+    "file": "images/shoushu.jpg",
+    "title": "手术 — мэс засал",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "img3",
+    "file": "images/zan-qian.jpg",
+    "title": "攒 — мөнгө хуримтлуулах",
+    "role": "illustration",
+    "section": "vocabulary"
+   }
+  ]
+ },
+ "verification": {
+  "answerStatus": "official_answer_key_verified (参考答案)",
+  "textStatus": "source_verified (сурах бичгийн хуудсыг зургаар уншсан)",
+  "teacherLayer": "教案 + PPT 课件-д тулгуурласан"
+ }
+}

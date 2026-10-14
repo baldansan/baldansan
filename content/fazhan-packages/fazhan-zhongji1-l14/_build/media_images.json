@@ -1,0 +1,8 @@
+[
+ {"id": "xiongdi", "file": "images/xiongdi.jpg", "title": "兄弟 — ах дүү шиг найрамдал", "role": "hero", "section": "teacher-intro"},
+ {"id": "shengzhi", "file": "images/shengzhi.jpg", "title": "升职 — ажилд дэвших", "role": "illustration", "section": "vocabulary"},
+ {"id": "jieyan", "file": "images/jieyan.jpg", "title": "戒烟 — тамхиа хаях", "role": "illustration", "section": "vocabulary"},
+ {"id": "qipai", "file": "images/qipai.jpg", "title": "气派 — гоё сайхан", "role": "illustration", "section": "vocabulary"},
+ {"id": "baiditanr", "file": "images/baiditanr.jpg", "title": "摆地摊儿 / 买卖 — гудамжинд дэлгүүр дэлгэх", "role": "illustration", "section": "vocabulary"},
+ {"id": "yuganr", "file": "images/yuganr.jpg", "title": "干儿 — хатаасан хүнс (鱼干儿)", "role": "illustration", "section": "dialogue"}
+]

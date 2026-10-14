@@ -1,0 +1,77 @@
+{
+ "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+ "courseType": "chinese-hsk",
+ "courseId": "fazhan-zhongji1",
+ "lessonId": "fazhan-zhongji1-l14",
+ "hskLevel": 4,
+ "lessonNumber": 14,
+ "lessonProfile": "hsk4-dialogue-shorttext-exam-workbook",
+ "lessonType": "hsk4-dialogue-shorttext-exam-workbook",
+ "language": "zh-MN",
+ "targetLanguage": "zh",
+ "uiLanguage": "mn",
+ "title": "梦里有你",
+ "mongolianTitle": "Зүүдэндээ чамайг үзлээ",
+ "series": "发展汉语（第二版）中级综合 I",
+ "seriesLabel_mn": "发展汉语 дунд I (≈HSK4)",
+ "source": "发展汉语（第二版）中级综合 I · 第14课 (сурах бичиг, 教案, 课件, 参考答案, албан mp3)",
+ "hasAudio": true,
+ "hasImages": true,
+ "audio": {
+  "text": "audio/fazhan-zhongji1-14-text.mp3",
+  "words": "audio/fazhan-zhongji1-14-words.mp3",
+  "vocabularyClips": "audio/words/w01..w36.mp3 (албан 生词 бичлэгээс хайчилсан)"
+ },
+ "media": {
+  "lessonId": "fazhan-zhongji1-l14",
+  "images": [
+   {
+    "id": "xiongdi",
+    "file": "images/xiongdi.jpg",
+    "title": "兄弟 — ах дүү шиг найрамдал",
+    "role": "hero",
+    "section": "teacher-intro"
+   },
+   {
+    "id": "shengzhi",
+    "file": "images/shengzhi.jpg",
+    "title": "升职 — ажилд дэвших",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "jieyan",
+    "file": "images/jieyan.jpg",
+    "title": "戒烟 — тамхиа хаях",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "qipai",
+    "file": "images/qipai.jpg",
+    "title": "气派 — гоё сайхан",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "baiditanr",
+    "file": "images/baiditanr.jpg",
+    "title": "摆地摊儿 / 买卖 — гудамжинд дэлгүүр дэлгэх",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "yuganr",
+    "file": "images/yuganr.jpg",
+    "title": "干儿 — хатаасан хүнс (鱼干儿)",
+    "role": "illustration",
+    "section": "dialogue"
+   }
+  ]
+ },
+ "verification": {
+  "answerStatus": "official_answer_key_verified (参考答案)",
+  "textStatus": "source_verified (сурах бичгийн хуудсыг зургаар уншсан)",
+  "teacherLayer": "教案 + PPT 课件-д тулгуурласан"
+ }
+}

@@ -1,0 +1,77 @@
+{
+ "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+ "courseType": "chinese-hsk",
+ "courseId": "fazhan-zhongji1",
+ "lessonId": "fazhan-zhongji1-l12",
+ "hskLevel": 4,
+ "lessonNumber": 12,
+ "lessonProfile": "hsk4-dialogue-shorttext-exam-workbook",
+ "lessonType": "hsk4-dialogue-shorttext-exam-workbook",
+ "language": "zh-MN",
+ "targetLanguage": "zh",
+ "uiLanguage": "mn",
+ "title": "让拇指说话",
+ "mongolianTitle": "Эрхий хуруугаар ярилцах нь",
+ "series": "发展汉语（第二版）中级综合 I",
+ "seriesLabel_mn": "发展汉语 дунд I (≈HSK4)",
+ "source": "发展汉语（第二版）中级综合 I · 第12课 (сурах бичиг, 教案, 课件, 参考答案, албан mp3)",
+ "hasAudio": true,
+ "hasImages": true,
+ "audio": {
+  "text": "audio/fazhan-zhongji1-12-text.mp3",
+  "words": "audio/fazhan-zhongji1-12-words.mp3",
+  "vocabularyClips": "audio/words/w01..w44.mp3 (албан 生词 бичлэгээс хайчилсан)"
+ },
+ "media": {
+  "lessonId": "fazhan-zhongji1-l12",
+  "images": [
+   {
+    "id": "lantern-festival",
+    "file": "images/lantern-festival.jpg",
+    "title": "元宵节 — Гэрлийн баяр",
+    "role": "hero",
+    "section": "teacher-intro"
+   },
+   {
+    "id": "spring-festival-niangao",
+    "file": "images/spring-festival-niangao.jpg",
+    "title": "春节 — жилийн бин (年糕)",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "spring-festival-dumplings",
+    "file": "images/spring-festival-dumplings.jpg",
+    "title": "春节 — бууз (饺子)",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "dragon-boat-festival",
+    "file": "images/dragon-boat-festival.jpg",
+    "title": "端午节 — луу завины уралдаан (赛龙舟)",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "mid-autumn-mooncake",
+    "file": "images/mid-autumn-mooncake.jpg",
+    "title": "中秋节 — сарны боов (月饼)",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "qingming-tree-planting",
+    "file": "images/qingming-tree-planting.jpg",
+    "title": "清明节 — мод тарих (植树)",
+    "role": "illustration",
+    "section": "vocabulary"
+   }
+  ]
+ },
+ "verification": {
+  "answerStatus": "official_answer_key_verified (参考答案)",
+  "textStatus": "source_verified (сурах бичгийн хуудсыг зургаар уншсан)",
+  "teacherLayer": "教案 + PPT 课件-д тулгуурласан"
+ }
+}

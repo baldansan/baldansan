@@ -21,8 +21,12 @@ for si, slide in enumerate(prs.slides, 1):
         except Exception: continue
         w, h = im.size
         if w < 180 or h < 120: continue
-        k += 1; fn = f"s{si:02d}_{k}.jpg"
-        im.convert("RGB").save(f"{out}/{fn}", quality=88)
+        fn = f"s{si:02d}_{k+1}.jpg"
+        try:
+            im.convert("RGB").save(f"{out}/{fn}", quality=88)
+        except Exception:
+            continue
+        k += 1
         rows.append({"file": fn, "slide": si, "w": w, "h": h, "slide_text": texts[:160]})
 json.dump(rows, open(f"{out}/index.json", "w"), ensure_ascii=False, indent=1)
 print(len(rows), "images →", out)
