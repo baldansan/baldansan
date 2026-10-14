@@ -1,0 +1,65 @@
+[
+ {
+  "id": "linhaiyin",
+  "file": "images/linhaiyin.jpg",
+  "title": "林海音",
+  "role": "illustration",
+  "section": "dialogue"
+ },
+ {
+  "id": "mudanhua",
+  "file": "images/mudanhua.jpg",
+  "title": "牡丹花",
+  "role": "illustration",
+  "section": "vocabulary"
+ },
+ {
+  "id": "shaoyaohua",
+  "file": "images/shaoyaohua.jpg",
+  "title": "芍药花",
+  "role": "illustration",
+  "section": "vocabulary"
+ },
+ {
+  "id": "xishan",
+  "file": "images/xishan.jpg",
+  "title": "北京西山红叶 — Си Шаний намрын улаан навч",
+  "role": "hero",
+  "section": "teacher-intro"
+ },
+ {
+  "id": "chan",
+  "file": "images/chan.jpg",
+  "title": "蝉",
+  "role": "illustration",
+  "section": "vocabulary"
+ },
+ {
+  "id": "hongqianglvwa",
+  "file": "images/hongqianglvwa.jpg",
+  "title": "红墙绿瓦",
+  "role": "illustration",
+  "section": "vocabulary"
+ },
+ {
+  "id": "beihai",
+  "file": "images/beihai.jpg",
+  "title": "北海公园",
+  "role": "illustration",
+  "section": "dialogue"
+ },
+ {
+  "id": "zao",
+  "file": "images/zao.jpg",
+  "title": "枣",
+  "role": "illustration",
+  "section": "vocabulary"
+ },
+ {
+  "id": "xinrlimei",
+  "file": "images/xinrlimei.jpg",
+  "title": "心儿里美",
+  "role": "illustration",
+  "section": "vocabulary"
+ }
+]

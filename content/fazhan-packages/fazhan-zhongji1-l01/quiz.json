@@ -180,6 +180,42 @@
   "difficulty": "easy"
  },
  {
+  "type": "cloze",
+  "question": "每天（ ）的时候，他都出去散步，他喜欢快要落山的太阳。",
+  "options": [
+   "暴雨",
+   "招牌",
+   "黄昏",
+   "清新"
+  ],
+  "correct_answer": "黄昏",
+  "explanation": "PPT 填空: нар жаргах үе = 黄昏.",
+  "order_index": 11,
+  "id": "fazhan-zhongji1-l01-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我去邮局（ ）超市，可以顺便买面包。",
+  "options": [
+   "运",
+   "属于",
+   "经过",
+   "绕"
+  ],
+  "correct_answer": "经过",
+  "explanation": "PPT 填空: дэлгүүрээр ДАЙРАХ = 经过.",
+  "order_index": 12,
+  "id": "fazhan-zhongji1-l01-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
   "type": "usage",
   "question": "Аль нь зөв бэ? «Салхи цэцгийг танигдахгүй болтол хийсгэв»",
   "options": [
@@ -189,8 +225,8 @@
   ],
   "correct_answer": "大风把花儿吹得不成样子了。",
   "explanation": "把 + O + V + 得 + C: 得 нь үйл үгийн ард, нөхцөлийн өмнө.",
-  "order_index": 11,
-  "id": "fazhan-zhongji1-l01-q11",
+  "order_index": 13,
+  "id": "fazhan-zhongji1-l01-q13",
   "skillTags": [
    "grammar"
   ],
@@ -201,13 +237,13 @@
   "question": "Аль нь ЗӨВ бэ?",
   "options": [
    "老师把这个词解释得清清楚楚上课的时候。",
-   "老师上课的时候把这个词解释得清清楚楚。",
-   "老师把这个词上课的时候解释得清清楚楚。"
+   "老师把这个词上课的时候解释得清清楚楚。",
+   "老师上课的时候把这个词解释得清清楚楚。"
   ],
   "correct_answer": "老师上课的时候把这个词解释得清清楚楚。",
   "explanation": "Хугацааны үг (上课的时候) 把-гийн ӨМНӨ.",
-  "order_index": 12,
-  "id": "fazhan-zhongji1-l01-q12",
+  "order_index": 14,
+  "id": "fazhan-zhongji1-l01-q14",
   "skillTags": [
    "grammar"
   ],
@@ -217,14 +253,14 @@
   "type": "usage",
   "question": "这儿的生活很方便，________，地铁站就在附近。",
   "options": [
-   "比如交通",
+   "就拿交通来说吧",
    "拿交通",
-   "就拿交通来说吧"
+   "比如交通"
   ],
   "correct_answer": "就拿交通来说吧",
   "explanation": "（就）拿……来说（吧） + тодорхой тайлбар.",
-  "order_index": 13,
-  "id": "fazhan-zhongji1-l01-q13",
+  "order_index": 15,
+  "id": "fazhan-zhongji1-l01-q15",
   "skillTags": [
    "grammar"
   ],
@@ -235,13 +271,13 @@
   "question": "Аль өгүүлбэрт 拿……来说 БУРУУ хэрэглэсэн бэ?",
   "options": [
    "汉语很难，比如四声。",
-   "汉语很难，就拿四声来说吧，我怎么说也说不对。",
-   "汉语很难，就拿四声来说吧。"
+   "汉语很难，就拿四声来说吧。",
+   "汉语很难，就拿四声来说吧，我怎么说也说不对。"
   ],
   "correct_answer": "汉语很难，就拿四声来说吧。",
   "explanation": "拿……来说-ийн ард заавал тодорхой тайлбар дагана; тайлбаргүй орхисон нь буруу.",
-  "order_index": 14,
-  "id": "fazhan-zhongji1-l01-q14",
+  "order_index": 16,
+  "id": "fazhan-zhongji1-l01-q16",
   "skillTags": [
    "grammar"
   ],
@@ -252,13 +288,13 @@
   "question": "Аль өгүүлбэрт 一 нь «бүтэн, дүүрэн» гэсэн утгатай вэ?",
   "options": [
    "一屋子的人都笑了起来。",
-   "他有一个姐姐。",
-   "我买了一本书。"
+   "我买了一本书。",
+   "他有一个姐姐。"
   ],
   "correct_answer": "一屋子的人都笑了起来。",
   "explanation": "一屋子 = өрөө дүүрэн (ДҮРЭМ 3); бусад нь тоо «нэг».",
-  "order_index": 15,
-  "id": "fazhan-zhongji1-l01-q15",
+  "order_index": 17,
+  "id": "fazhan-zhongji1-l01-q17",
   "skillTags": [
    "grammar"
   ],
@@ -268,14 +304,14 @@
   "type": "usage",
   "question": "去年（ ）都没下雪，真奇怪。",
   "options": [
-   "一次冬",
+   "一个冬",
    "一冬",
-   "一个冬"
+   "一次冬"
   ],
   "correct_answer": "一冬",
   "explanation": "一 + N = бүтэн (一冬 = бүтэн өвөл); тоо нэр оруулахгүй.",
-  "order_index": 16,
-  "id": "fazhan-zhongji1-l01-q16",
+  "order_index": 18,
+  "id": "fazhan-zhongji1-l01-q18",
   "skillTags": [
    "grammar"
   ],
@@ -285,14 +321,14 @@
   "type": "usage",
   "question": "他太喜欢旅行了，不知道已经去了（ ）个国家了！",
   "options": [
-   "多少",
    "多么",
+   "多少",
    "多"
   ],
   "correct_answer": "多少",
   "explanation": "Тоо хэмжээ (国家) онцлох → 多少; 多/多么 нь тэмдэг нэрийн өмнө.",
-  "order_index": 17,
-  "id": "fazhan-zhongji1-l01-q17",
+  "order_index": 19,
+  "id": "fazhan-zhongji1-l01-q19",
   "skillTags": [
    "grammar"
   ],
@@ -308,8 +344,8 @@
   ],
   "correct_answer": "多",
   "explanation": "Зэрэг (高兴) → 不知道得多 + adj.",
-  "order_index": 18,
-  "id": "fazhan-zhongji1-l01-q18",
+  "order_index": 20,
+  "id": "fazhan-zhongji1-l01-q20",
   "skillTags": [
    "grammar"
   ],
@@ -319,14 +355,14 @@
   "type": "usage",
   "question": "«Хятадууд гадаадынхныг 老外 гэж дууддаг» — аль нь зөв бэ?",
   "options": [
-   "中国人管\"老外\"叫外国人。",
    "中国人管外国人叫\"老外\"。",
-   "中国人叫外国人管\"老外\"。"
+   "中国人叫外国人管\"老外\"。",
+   "中国人管\"老外\"叫外国人。"
   ],
   "correct_answer": "中国人管外国人叫\"老外\"。",
   "explanation": "管 + A (жинхэнэ: 外国人) + 叫 + B (нэр: 老外).",
-  "order_index": 19,
-  "id": "fazhan-zhongji1-l01-q19",
+  "order_index": 21,
+  "id": "fazhan-zhongji1-l01-q21",
   "skillTags": [
    "grammar"
   ],
@@ -336,14 +372,14 @@
   "type": "usage",
   "question": "A: 什么是\"网友\"？ B: ________。",
   "options": [
-   "我们管\"网友\"叫在网络上认识的朋友",
    "我们管在网络上认识的朋友叫\"网友\"",
+   "我们管\"网友\"叫在网络上认识的朋友",
    "网友叫在网络上认识的朋友"
   ],
   "correct_answer": "我们管在网络上认识的朋友叫\"网友\"",
   "explanation": "А = тодорхойлолт (сүлжээгээр танилцсан найз), Б = нэр (网友).",
-  "order_index": 20,
-  "id": "fazhan-zhongji1-l01-q20",
+  "order_index": 22,
+  "id": "fazhan-zhongji1-l01-q22",
   "skillTags": [
    "grammar"
   ],
@@ -353,46 +389,12 @@
   "type": "comprehension",
   "question": "\"我\"为什么永远不能忘记北京？",
   "options": [
-   "因为在那里住得太久了，仿佛树生了根一样",
    "因为北京的冬天很冷",
-   "因为北京的水果很多"
+   "因为北京的水果很多",
+   "因为在那里住得太久了，仿佛树生了根一样"
   ],
   "correct_answer": "因为在那里住得太久了，仿佛树生了根一样",
   "explanation": "1-р догол мөр: 住得太久了，仿佛树生了根一样.",
-  "order_index": 21,
-  "id": "fazhan-zhongji1-l01-q21",
-  "skillTags": [
-   "reading"
-  ],
-  "difficulty": "easy"
- },
- {
-  "type": "comprehension",
-  "question": "北京的春天为什么短暂？",
-  "options": [
-   "几阵大风就送走了春天",
-   "春天没有花",
-   "春天太冷了"
-  ],
-  "correct_answer": "几阵大风就送走了春天",
-  "explanation": "3-р догол мөр: цэцэг салхинаас айдаг, хэдэн удаагийн салхи хаврыг үдээд явуулна.",
-  "order_index": 22,
-  "id": "fazhan-zhongji1-l01-q22",
-  "skillTags": [
-   "reading"
-  ],
-  "difficulty": "easy"
- },
- {
-  "type": "comprehension",
-  "question": "西来顺门前的两面招牌上写着什么？",
-  "options": [
-   "\"梨\"和\"枣\"",
-   "\"春\"和\"秋\"",
-   "\"涮\"和\"烤\""
-  ],
-  "correct_answer": "\"涮\"和\"烤\"",
-  "explanation": "7-р догол мөр: 一面写着\"涮\"，一面写着\"烤\" — намар ирснийг зарлана.",
   "order_index": 23,
   "id": "fazhan-zhongji1-l01-q23",
   "skillTags": [
@@ -402,14 +404,14 @@
  },
  {
   "type": "comprehension",
-  "question": "\"心儿里美\"是什么？",
+  "question": "北京的春天为什么短暂？",
   "options": [
-   "一种茶",
-   "一种秋天的水果",
-   "一种绿皮红心儿的萝卜"
+   "春天太冷了",
+   "春天没有花",
+   "几阵大风就送走了春天"
   ],
-  "correct_answer": "一种绿皮红心儿的萝卜",
-  "explanation": "10-р догол мөр: 北京人管一种绿皮红心儿的萝卜叫\"心儿里美\".",
+  "correct_answer": "几阵大风就送走了春天",
+  "explanation": "3-р догол мөр: цэцэг салхинаас айдаг, хэдэн удаагийн салхи хаврыг үдээд явуулна.",
   "order_index": 24,
   "id": "fazhan-zhongji1-l01-q24",
   "skillTags": [
@@ -419,16 +421,50 @@
  },
  {
   "type": "comprehension",
+  "question": "西来顺门前的两面招牌上写着什么？",
+  "options": [
+   "\"春\"和\"秋\"",
+   "\"涮\"和\"烤\"",
+   "\"梨\"和\"枣\""
+  ],
+  "correct_answer": "\"涮\"和\"烤\"",
+  "explanation": "7-р догол мөр: 一面写着\"涮\"，一面写着\"烤\" — намар ирснийг зарлана.",
+  "order_index": 25,
+  "id": "fazhan-zhongji1-l01-q25",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "\"心儿里美\"是什么？",
+  "options": [
+   "一种秋天的水果",
+   "一种茶",
+   "一种绿皮红心儿的萝卜"
+  ],
+  "correct_answer": "一种绿皮红心儿的萝卜",
+  "explanation": "10-р догол мөр: 北京人管一种绿皮红心儿的萝卜叫\"心儿里美\".",
+  "order_index": 26,
+  "id": "fazhan-zhongji1-l01-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
   "question": "秋深了，年轻人为什么把冰鞋擦得亮亮的？",
   "options": [
-   "要把冰鞋卖掉",
+   "冬天要去西山",
    "等着北海结冰去滑冰",
-   "冬天要去西山"
+   "要把冰鞋卖掉"
   ],
   "correct_answer": "等着北海结冰去滑冰",
   "explanation": "9-р догол мөр: 等着北海结冰.",
-  "order_index": 25,
-  "id": "fazhan-zhongji1-l01-q25",
+  "order_index": 27,
+  "id": "fazhan-zhongji1-l01-q27",
   "skillTags": [
    "reading"
   ],
@@ -438,31 +474,99 @@
   "type": "comprehension",
   "question": "\"我\"离开北京时的心情是怎样的？",
   "options": [
-   "很高兴",
+   "像离开母亲一样难过",
    "没有什么感觉",
-   "像离开母亲一样难过"
+   "很高兴"
   ],
   "correct_answer": "像离开母亲一样难过",
   "explanation": "11-р догол мөр: 我的心在流泪，那是一种离开母亲的感觉.",
-  "order_index": 26,
-  "id": "fazhan-zhongji1-l01-q26",
+  "order_index": 28,
+  "id": "fazhan-zhongji1-l01-q28",
   "skillTags": [
    "reading"
   ],
   "difficulty": "medium"
  },
  {
+  "type": "comprehension",
+  "question": "春天，北京人有个什么习惯？",
+  "options": [
+   "在家里喝茉莉花茶",
+   "去北海公园滑冰",
+   "纷纷来到西山，争着往山上爬"
+  ],
+  "correct_answer": "纷纷来到西山，争着往山上爬",
+  "explanation": "2-р догол мөр.",
+  "order_index": 29,
+  "id": "fazhan-zhongji1-l01-q29",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "雨后\"我\"喜欢做什么？",
+  "options": [
+   "看红墙绿瓦，到北海公园划小船",
+   "去西山看红叶",
+   "吃涮羊肉"
+  ],
+  "correct_answer": "看红墙绿瓦，到北海公园划小船",
+  "explanation": "5-р догол мөр.",
+  "order_index": 30,
+  "id": "fazhan-zhongji1-l01-q30",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "秋的第一个消息是什么？",
+  "options": [
+   "水果上市",
+   "北海结冰",
+   "树叶变黄"
+  ],
+  "correct_answer": "水果上市",
+  "explanation": "6-р догол мөр: 秋的第一个消息，就是水果上市.",
+  "order_index": 31,
+  "id": "fazhan-zhongji1-l01-q31",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "最先去寻找秋天的人大部分是什么人？",
+  "options": [
+   "外地人",
+   "老人",
+   "青年学生"
+  ],
+  "correct_answer": "青年学生",
+  "explanation": "8-р догол мөр.",
+  "order_index": 32,
+  "id": "fazhan-zhongji1-l01-q32",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
   "type": "order",
   "question": "Үгсийг эвлүүл: 冰鞋 / 把 / 擦得 / 年轻人 / 亮亮的",
   "options": [
-   "冰鞋把年轻人擦得亮亮的",
+   "年轻人擦得把冰鞋亮亮的",
    "年轻人把冰鞋擦得亮亮的",
-   "年轻人擦得把冰鞋亮亮的"
+   "冰鞋把年轻人擦得亮亮的"
   ],
   "correct_answer": "年轻人把冰鞋擦得亮亮的",
   "explanation": "S + 把 + O + V得 + C.",
-  "order_index": 27,
-  "id": "fazhan-zhongji1-l01-q27",
+  "order_index": 33,
+  "id": "fazhan-zhongji1-l01-q33",
   "skillTags": [
    "writing"
   ],
@@ -472,14 +576,14 @@
   "type": "order",
   "question": "Үгсийг эвлүүл: 一路上 / 烤肉香 / 都 / 能 / 闻到",
   "options": [
+   "都能一路上闻到烤肉香",
    "一路上都能闻到烤肉香",
-   "闻到烤肉香一路上都能",
-   "都能一路上闻到烤肉香"
+   "闻到烤肉香一路上都能"
   ],
   "correct_answer": "一路上都能闻到烤肉香",
   "explanation": "一路上 (цаг/байрлал) эхэнд, 都能 + V.",
-  "order_index": 28,
-  "id": "fazhan-zhongji1-l01-q28",
+  "order_index": 34,
+  "id": "fazhan-zhongji1-l01-q34",
   "skillTags": [
    "writing"
   ],
@@ -489,14 +593,14 @@
   "type": "order",
   "question": "Үгсийг эвлүүл: 萝卜 / 管 / 北京人 / 叫 / \"心儿里美\" / 这种",
   "options": [
-   "北京人叫这种萝卜管\"心儿里美\"",
    "这种萝卜管北京人叫\"心儿里美\"",
-   "北京人管这种萝卜叫\"心儿里美\""
+   "北京人管这种萝卜叫\"心儿里美\"",
+   "北京人叫这种萝卜管\"心儿里美\""
   ],
   "correct_answer": "北京人管这种萝卜叫\"心儿里美\"",
   "explanation": "S + 管 + A + 叫 + B.",
-  "order_index": 29,
-  "id": "fazhan-zhongji1-l01-q29",
+  "order_index": 35,
+  "id": "fazhan-zhongji1-l01-q35",
   "skillTags": [
    "writing"
   ],
@@ -506,14 +610,14 @@
   "type": "order",
   "question": "Үгсийг эвлүүл: 不知道 / 多少次 / 我 / 电话 / 给你 / 打了",
   "options": [
+   "我打了多少次电话不知道给你",
    "我不知道给你打了多少次电话",
-   "我给你打了不知道多少次电话",
-   "我打了多少次电话不知道给你"
+   "我给你打了不知道多少次电话"
   ],
   "correct_answer": "我不知道给你打了多少次电话",
   "explanation": "不知道 + V + 多少 + N.",
-  "order_index": 30,
-  "id": "fazhan-zhongji1-l01-q30",
+  "order_index": 36,
+  "id": "fazhan-zhongji1-l01-q36",
   "skillTags": [
    "writing"
   ],

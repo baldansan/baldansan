@@ -18,21 +18,36 @@ load_phrases_dict({"住得": [["zhù"], ["de"]], "吹得": [["chuī"], ["de"]], 
                    "一路上": [["yí"], ["lù"], ["shàng"]], "一面": [["yí"], ["miàn"]], "一种": [["yì"], ["zhǒng"]], "一眼": [["yì"], ["yǎn"]],
                    "不怕": [["bú"], ["pà"]], "不成样子": [["bù"], ["chéng"], ["yàng"], ["zi"]], "心儿里美": [["xīn"], ["r"], ["lǐ"], ["měi"]],
                    "红心儿": [["hóng"], ["xīn"], ["r"]], "花儿": [["huā"], ["r"]], "馋嘴": [["chán"], ["zuǐ"]], "少女": [["shào"], ["nǚ"]],
-                   "着": [["zhe"]], "等着": [["děng"], ["zhe"]], "听着": [["tīng"], ["zhe"]], "争着": [["zhēng"], ["zhe"]], "吃着": [["chī"], ["zhe"]],
+                   "哪儿": [["nǎr"]], "这儿": [["zhèr"]], "那儿": [["nàr"]], "一会儿": [["yí"], ["huì"], ["r"]], "心儿": [["xīn"], ["r"]], "着": [["zhe"]], "等着": [["děng"], ["zhe"]], "听着": [["tīng"], ["zhe"]], "争着": [["zhēng"], ["zhe"]], "吃着": [["chī"], ["zhe"]],
                    "写着": [["xiě"], ["zhe"]], "下着": [["xià"], ["zhe"]], "了": [["le"]], "得": [["de"]]})
 
 PUNCT = set("，。！？：；、“”\"（）——……·《》 ")
-def py_token(zh):
-    if all(c in PUNCT or not re.match(r"[一-鿿]", c) for c in zh): return ""
-    return "".join(x[0] for x in pinyin(zh, style=Style.TONE))
 PMAP = {"，": ", ", "。": ". ", "！": "! ", "？": "? ", "：": ": ", "；": "; ", "、": ", ", "“": ' "', "”": '" ', "\"": '"', "（": " (", "）": ") ", "——": " — ", "……": "… ", "《": " «", "》": "» "}
 def _fix(s):
     for k, v in PMAP.items(): s = s.replace(k, v)
     return re.sub(r"\s+", " ", s).replace(" ,", ",").replace(" .", ".").replace(" !", "!").replace(" ?", "?").replace('( ', '(').replace(' )', ')').strip()
+PROPER_PY = {"北京": "Běijīng", "北平": "Běipíng", "西山": "Xīshān", "北海": "Běihǎi", "北海公园": "Běihǎi Gōngyuán", "文津街": "Wénjīn Jiē", "西来顺": "Xīláishùn",
+             "西单": "Xīdān", "协和医院": "Xiéhé Yīyuàn", "林海音": "Lín Hǎiyīn", "中国": "Zhōngguó", "上海": "Shànghǎi", "蒙古": "Měnggǔ", "乌兰巴托": "Wūlánbātuō",
+             "香山": "Xiāngshān", "太平洋": "Tàipíngyáng", "桂林": "Guìlín", "河北省": "Héběi Shěng", "马克": "Mǎkè", "小王": "Xiǎo Wáng", "北京人": "Běijīngrén", "北京城": "Běijīngchéng", "中国人": "Zhōngguórén"}
+EXTRA_WORDS = ["我们","你们","他们","大家","什么","怎么","为什么","因为","所以","但是","可是","虽然","如果","要是","已经","还是","现在","今天","明天","昨天","去年","今年","每天","时候","地方","这里","那里","这儿","那儿","哪儿","东西","朋友","老师","学生","同学","孩子","父母","妻子","丈夫","工作","学习","生活","时间","手机","电脑","电话","汉语","普通话","中国菜","饭馆","学校","银行","交通","地铁站","公共汽车站","附近","方便","喜欢","知道","觉得","认真","努力","完成","作业","留学","留学生","国外","父亲","儿子","妹妹","妹夫","师母","老爸老妈","老公","岳父","计算机","电脑","外国人","老外","网友","网络","认识","爱人","情人","意思","房间","屋子","衣服","自行车","新年","打扫","干干净净","清清楚楚","乱七八糟","亮亮的","漂亮","极了","不成样子","圣诞节","河流","乘船","游泳","太阳","落山","散步","关系","同屋","姐妹","树叶","树干","毕业","离开","怀念","家乡","故乡","情况","一切","风景","想家","高兴","生气","迟到","约会","换","满意","回来","以后","可能","肯定","非常","特别","连续","小时","电影院","半个","着急","出生","上大学","一直","住","照片","夹","书里","亚洲","机会","有关","电子词典","荧光笔","中国通","熟悉","蔬菜","水果","西红柿","礼物","生日","从此","粮食","农村","城市","市场","南方","香蕉","芒果","荔枝","熟透","湿透","红透","西瓜","苹果","星期","下星期","季节","春天","夏天","秋天","冬天","春季","夏季","秋季","冬季","草原","骑马","温度","零下","干冷","哪种","方法","更好","试一试","比一比","报名","参加","活动","排好队","上车","发言","课堂","活跃","狗粮","小狗","考试","旅行","国家","工作","接","原来","这些","新来","了解","睡觉","身边","四声","说不对","多么","仿佛","度过","然而","短暂","格外","经过","属于","假如","郊游","寻找","大部分","来不及","来得及","不知道","不知","多少"]
+_dict = set(EXTRA_WORDS) | set(PROPER_PY) | {z.split("（")[0] for z, *_ in VOCAB} | {z for z, *_ in PROPER}
+for _p, _ss in TEXT:
+    for _t, *_ in _ss: _dict |= {x for x in _t.split("|") if len(x) > 1}
+_maxlen = max(len(w) for w in _dict)
+def segment(zh):
+    i, out = 0, []
+    while i < len(zh):
+        for L in range(min(_maxlen, len(zh) - i), 1, -1):
+            if zh[i:i+L] in _dict: out.append(zh[i:i+L]); i += L; break
+        else: out.append(zh[i]); i += 1
+    return out
+def py_token(zh):
+    if zh in PROPER_PY: return PROPER_PY[zh]
+    if all(c in PUNCT or not re.match(r"[\u4e00-\u9fff]", c) for c in zh): return ""
+    return "".join(x[0] for x in pinyin(zh, style=Style.TONE))
 def py_sent(zh, tokens=None):
-    if tokens:
-        return _fix(" ".join(py_token(t) or t for t in tokens))
-    return _fix(" ".join(x[0] for x in pinyin(zh, style=Style.TONE)))
+    toks = tokens or segment(zh)
+    return _fix(" ".join(py_token(t) or t for t in toks))
 def cap(s): return s[:1].upper() + s[1:]
 import random
 def shuffle(options, correct_idx, seed):
@@ -175,15 +190,23 @@ json.dump(quiz, open(f"{OUT}/quiz.json", "w"), ensure_ascii=False, indent=1)
 lesson = {"courseId": COURSE, "lessonId": LID, "title": "发展汉语 中级I 1-р хичээл — Бээжингийн дөрвөн улирал", "chineseTitle": "北京的四季", "targetTitle": "北京的四季",
           "mongolianTitle": "Бээжингийн дөрвөн улирал", "subtitle": "把……V得+C · （就）拿……来说（吧） · 一+N · 不知道……多少 · 管A叫B",
           "description": "Линь Хайины «苦念北平»-ийн хэсэг (11 догол мөр) + 42 шинэ үг + 5 дүрэм (综合注释) + 10 гол үгийн задаргаа + 综合练习 9 даалгавар (参考答案-аар баталгаажсан) + албан аудио (生词/课文)",
-          "duration": "3 × 90 мин (教案)", "status": "draft", "orderIndex": 1, "icon": "🍂",
+          "duration": "3 × 90 мин (教案)", "status": "draft", "orderIndex": 1, "icon": "🍂", "thumbnailFile": "images/xishan.jpg", "audioFile": AUDIO_TEXT,
           "sourceNote": "发展汉语（第二版）中级综合 I — 第1课《北京的四季》 [hskLevel=4] [lessonNumber=1]; эх: docs/fazhan/textbooks/zhongji-zonghe-1.md (PDF х.15–27), teacher/zhongji-zonghe-1/l01.md, courseware/zhongji-zonghe-1/l01.md, workbook/zhongji-zonghe-1-answers.md"}
 json.dump(lesson, open(f"{OUT}/lesson.json", "w"), ensure_ascii=False, indent=1)
 manifest = {"packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1", "courseType": "chinese-hsk", "courseId": COURSE, "lessonId": LID, "hskLevel": 4, "lessonNumber": 1,
             "lessonProfile": "hsk4-dialogue-shorttext-exam-workbook", "lessonType": "hsk4-dialogue-shorttext-exam-workbook", "language": "zh-MN", "targetLanguage": "zh", "uiLanguage": "mn",
             "title": "北京的四季", "mongolianTitle": "Бээжингийн дөрвөн улирал", "series": "发展汉语（第二版）中级综合 I", "seriesLabel_mn": "发展汉语 дунд I (≈HSK4)",
-            "source": "发展汉语（第二版）中级综合 I · 第1课 (сурах бичиг, 教案, 课件, 参考答案, албан mp3)", "hasAudio": True, "hasImages": False,
+            "source": "发展汉语（第二版）中级综合 I · 第1课 (сурах бичиг, 教案, 课件, 参考答案, албан mp3)", "hasAudio": True, "hasImages": True,
             "audio": {"text": AUDIO_TEXT, "words": AUDIO_WORDS},
+            "media": {"lessonId": LID, "images": json.load(open("./media_images.json"))},
             "verification": {"answerStatus": "official_answer_key_verified (参考答案)", "textStatus": "source_verified (сурах бичгийн хуудсыг зургаар уншсан, OCR биш)", "teacherLayer": "教案 (徐桂梅) + PPT 课件-д тулгуурласан"}}
 json.dump(manifest, open(f"{OUT}/manifest.json", "w"), ensure_ascii=False, indent=1)
+# subtitles.json (өгүүлбэр бүрийн цаг, whisper-ээр) — байвал
+import os as _os
+if _os.path.exists("./subtitles.json"):
+    subs = json.load(open("./subtitles.json"))
+    by_zh = {x["chinese"]: x for x in subs}
+    rows = [{"start": by_zh[sn["zh"]]["start"], "end": by_zh[sn["zh"]]["end"], "chinese": sn["zh"], "pinyin": sn["pinyin"], "mongolian": sn["mn"]} for sn in sentences if sn["zh"] in by_zh]
+    json.dump(rows, open(f"{OUT}/subtitles.json", "w"), ensure_ascii=False, indent=1); print("subtitles:", len(rows))
 print("built:", {f: os.path.getsize(f"{OUT}/{f}") for f in os.listdir(OUT) if f.endswith(".json")})
 print("sentences:", len(sentences), "chars:", main_text["charCount"], "vocab:", len(vocab), "grammar:", len(grammar), "wordExpl:", len(word_expl), "quiz:", len(quiz), "wb parts:", len(parts))

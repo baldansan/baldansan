@@ -11,5 +11,7 @@
  "status": "draft",
  "orderIndex": 1,
  "icon": "🍂",
+ "thumbnailFile": "images/xishan.jpg",
+ "audioFile": "audio/fazhan-zhongji1-01-text.mp3",
  "sourceNote": "发展汉语（第二版）中级综合 I — 第1课《北京的四季》 [hskLevel=4] [lessonNumber=1]; эх: docs/fazhan/textbooks/zhongji-zonghe-1.md (PDF х.15–27), teacher/zhongji-zonghe-1/l01.md, courseware/zhongji-zonghe-1/l01.md, workbook/zhongji-zonghe-1-answers.md"
 }

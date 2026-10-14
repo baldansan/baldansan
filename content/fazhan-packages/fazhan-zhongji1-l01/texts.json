@@ -27,7 +27,7 @@
   "sentences": [
    {
     "zh": "永远不能忘记的是北京，因为我在那里住得太久了，仿佛树生了根一样。",
-    "pinyin": "Yǒngyuǎn bùnéng wàngjì de shì běijīng, yīnwèi wǒ zài nàlǐ zhù de tài jiǔ le, fǎngfú shù shēng le gēn yíyàng.",
+    "pinyin": "Yǒngyuǎn bùnéng wàngjì de shì Běijīng, yīnwèi wǒ zài nàlǐ zhù de tài jiǔ le, fǎngfú shù shēng le gēn yíyàng.",
     "mn": "Хэзээ ч мартаж чадахгүй газар минь бол Бээжин. Учир нь би тэнд хэтэрхий удаан амьдарсан болохоор яг л мод үндэслэсэн юм шиг болчихсон.",
     "paragraph": 1,
     "tokens": [
@@ -53,7 +53,7 @@
      },
      {
       "zh": "北京",
-      "py": "běijīng"
+      "py": "Běijīng"
      },
      {
       "zh": "，",
@@ -212,11 +212,6 @@
       "zh": "。",
       "py": ""
      }
-    ],
-    "note": "从A到B又到C — «А-гаас Б, тэгээд В хүртэл» гурван үе шат. 是……的 бүтэц ХААНА өнгөрөөснийг онцолж байна.",
-    "key_structures": [
-     "从……到……又到……",
-     "是……的"
     ]
    },
    {
@@ -273,7 +268,7 @@
    },
    {
     "zh": "春天，人们纷纷来到西山，争着往山上爬，看谁先爬上那个最高的山头。",
-    "pinyin": "Chūntiān, rénmen fēnfēn láidào xīshān, zhēng zhe wǎng shānshàng pá, kàn shuí xiān pá shàng nàge zuì gāo de shāntóu.",
+    "pinyin": "Chūntiān, rénmen fēnfēn láidào Xīshān, zhēng zhe wǎng shānshàng pá, kàn shuí xiān pá shàng nàge zuì gāo de shāntóu.",
     "mn": "Хавар хүмүүс ар араасаа Си Шань уул руу ирж, хэн нь түрүүлж хамгийн өндөр оргилд гарахаар уралдан авирдаг.",
     "paragraph": 2,
     "tokens": [
@@ -299,7 +294,7 @@
      },
      {
       "zh": "西山",
-      "py": "xīshān"
+      "py": "Xīshān"
      },
      {
       "zh": "，",
@@ -383,7 +378,7 @@
    },
    {
     "zh": "春天先看牡丹花，接着就是芍药花，北京的春天多么美丽呀！",
-    "pinyin": "Chūntiān xiān kàn mǔdānhuā, jiēzhe jiùshì sháoyàohuā, běijīng de chūntiān duōme měilì ya!",
+    "pinyin": "Chūntiān xiān kàn mǔdānhuā, jiēzhe jiùshì sháoyàohuā, Běijīng de chūntiān duōme měilì ya!",
     "mn": "Хавар эхлээд цээнэ цэцэг, дараа нь улаан цээнэ дэлгэрнэ — Бээжингийн хавар ямар үзэсгэлэнтэй вэ!",
     "paragraph": 3,
     "tokens": [
@@ -425,7 +420,7 @@
      },
      {
       "zh": "北京",
-      "py": "běijīng"
+      "py": "Běijīng"
      },
      {
       "zh": "的",
@@ -451,16 +446,11 @@
       "zh": "！",
       "py": ""
      }
-    ],
-    "note": "先……接着…… — «эхлээд …, дараа нь …» дараалал.",
-    "key_structures": [
-     "先……接着……",
-     "多么……啊/呀"
     ]
    },
    {
     "zh": "然而，美丽的花儿不怕雨，却怕风，有时一夜大风，就把花儿吹得不成样子了，几阵大风就送走了春天，北京的春天又是多么短暂啊！",
-    "pinyin": "Ránér, měilì de huār búpà yǔ, què pà fēng, yǒushí yíyè dàfēng, jiù bǎ huār chuī de bùchéngyàngzi le, jǐzhèn dàfēng jiù sòngzǒu le chūntiān, běijīng de chūntiān yòushì duōme duǎnzàn a!",
+    "pinyin": "Ránér, měilì de huār búpà yǔ, què pà fēng, yǒushí yíyè dàfēng, jiù bǎ huār chuī de bùchéngyàngzi le, jǐzhèn dàfēng jiù sòngzǒu le chūntiān, Běijīng de chūntiān yòushì duōme duǎnzàn a!",
     "mn": "Гэвч тэр сайхан цэцэгс борооноос биш, салхинаас айдаг. Заримдаа ганц шөнийн их салхи цэцгийг танигдахын аргагүй болтол нь хийсгэчихдэг. Хэдхэн удаагийн их салхи хаврыг үдээд явуулна — Бээжингийн хавар бас ямар богинохон вэ!",
     "paragraph": 3,
     "tokens": [
@@ -590,7 +580,7 @@
      },
      {
       "zh": "北京",
-      "py": "běijīng"
+      "py": "Běijīng"
      },
      {
       "zh": "的",
@@ -730,10 +720,6 @@
       "zh": "。",
       "py": ""
      }
-    ],
-    "note": "Эзэнгүй өгүүлбэр — «би» гэж хэлэлгүй дөрвөн үйлдлийг зэрэгцүүлсэн: 喝…，看…，听着…，享受… (уран зохиолын хэллэг).",
-    "key_structures": [
-     "V着 (зэрэгцсэн үйлдэл)"
     ]
    },
    {
@@ -867,7 +853,7 @@
    },
    {
     "zh": "我特别喜欢看雨后的红墙和绿瓦，喜欢雨后到北海公园划小船。",
-    "pinyin": "Wǒ tèbié xǐhuān kàn yǔhòu de hóngqiáng hé lǜwǎ, xǐhuān yǔhòu dào běihǎigōngyuán huà xiǎochuán.",
+    "pinyin": "Wǒ tèbié xǐhuān kàn yǔhòu de hóngqiáng hé lǜwǎ, xǐhuān yǔhòu dào Běihǎi Gōngyuán huà xiǎochuán.",
     "mn": "Би борооны дараах улаан хана, ногоон дээврийг харах, борооны дараа Бэйхай цэцэрлэгт очиж завь сэлүүрдэх их дуртай.",
     "paragraph": 5,
     "tokens": [
@@ -925,7 +911,7 @@
      },
      {
       "zh": "北海公园",
-      "py": "běihǎigōngyuán"
+      "py": "Běihǎi Gōngyuán"
      },
      {
       "zh": "划",
@@ -943,7 +929,7 @@
    },
    {
     "zh": "到北海要经过文津街。",
-    "pinyin": "Dào běihǎi yào jīngguò wénjīnjiē.",
+    "pinyin": "Dào Běihǎi yào jīngguò Wénjīn Jiē.",
     "mn": "Бэйхай руу очихдоо Вэньжинь гудамжаар дайрна.",
     "paragraph": 5,
     "tokens": [
@@ -953,7 +939,7 @@
      },
      {
       "zh": "北海",
-      "py": "běihǎi"
+      "py": "Běihǎi"
      },
      {
       "zh": "要",
@@ -965,27 +951,23 @@
      },
      {
       "zh": "文津街",
-      "py": "wénjīnjiē"
+      "py": "Wénjīn Jiē"
      },
      {
       "zh": "。",
       "py": ""
      }
-    ],
-    "note": "经过 — (газраар) дайран өнгөрөх; энд үйл үг.",
-    "key_structures": [
-     "经过"
     ]
    },
    {
     "zh": "文津街是北京城里我最喜爱的一条路，走过那里，就会想起历史。",
-    "pinyin": "Wénjīnjiē shì běijīngchéng lǐ wǒ zuì xǐài de yìtiáo lù, zǒuguò nàlǐ, jiù huì xiǎngqǐ lìshǐ.",
+    "pinyin": "Wénjīn Jiē shì Běijīngchéng lǐ wǒ zuì xǐài de yìtiáo lù, zǒuguò nàlǐ, jiù huì xiǎngqǐ lìshǐ.",
     "mn": "Вэньжинь гудамж бол Бээжин хотод миний хамгийн дуртай зам. Тэнд алхахаар түүх санаанд ордог.",
     "paragraph": 5,
     "tokens": [
      {
       "zh": "文津街",
-      "py": "wénjīnjiē"
+      "py": "Wénjīn Jiē"
      },
      {
       "zh": "是",
@@ -993,7 +975,7 @@
      },
      {
       "zh": "北京城",
-      "py": "běijīngchéng"
+      "py": "Běijīngchéng"
      },
      {
       "zh": "里",
@@ -1059,10 +1041,6 @@
       "zh": "。",
       "py": ""
      }
-    ],
-    "note": "走过那里，就会…… — «…-аар алхахаар л … болдог»: нөхцөл → үр дүн (就).",
-    "key_structures": [
-     "……，就……"
     ]
    },
    {
@@ -1073,7 +1051,7 @@
     "tokens": [
      {
       "zh": "北京",
-      "py": "běijīng"
+      "py": "Běijīng"
      },
      {
       "zh": "的",
@@ -1119,10 +1097,6 @@
       "zh": "。",
       "py": ""
      }
-    ],
-    "note": "可是……却…… — эсрэгцүүлэл; 却 нь өгүүлэхүүний өмнө ордог.",
-    "key_structures": [
-     "可是……却……"
     ]
    },
    {
@@ -1350,7 +1324,7 @@
     "tokens": [
      {
       "zh": "西来顺",
-      "py": "xīláishùn"
+      "py": "Xīláishùn"
      },
      {
       "zh": "门前",
@@ -1509,7 +1483,7 @@
    },
    {
     "zh": "从人来人往的西单向南，一路上都能闻到烤肉香。",
-    "pinyin": "Cóng rénláirénwǎng de xīdān xiàng nán, yílùshàng dōu néng wéndào kǎoròu xiāng.",
+    "pinyin": "Cóng rénláirénwǎng de Xīdān xiàng nán, yílùshàng dōu néng wéndào kǎoròu xiāng.",
     "mn": "Хөл ихтэй Сиданиас урагш явахад зам дагуу бүхэлдээ шарсан махны үнэр ханхийнэ.",
     "paragraph": 7,
     "tokens": [
@@ -1527,7 +1501,7 @@
      },
      {
       "zh": "西单",
-      "py": "xīdān"
+      "py": "Xīdān"
      },
      {
       "zh": "向",
@@ -1578,7 +1552,7 @@
    },
    {
     "zh": "从那时起，一天不知要从外地运来多少只羊，才能满足北京人的馋嘴呢！",
-    "pinyin": "Cóng nàshí qǐ, yītiān bùzhī yào cóng wàidì yùnlái duōshǎo zhǐ yáng, cái néng mǎnzú běijīngrén de chánzuǐ ne!",
+    "pinyin": "Cóng nàshí qǐ, yītiān bùzhī yào cóng wàidì yùnlái duōshǎo zhǐ yáng, cái néng mǎnzú Běijīngrén de chánzuǐ ne!",
     "mn": "Тэр цагаас эхлээд өдөрт хэчнээн хонь өөр нутгаас тээвэрлэж байж Бээжингийнхний идэх хүслийг хангадгийг бүү мэд!",
     "paragraph": 7,
     "tokens": [
@@ -1652,7 +1626,7 @@
      },
      {
       "zh": "北京人",
-      "py": "běijīngrén"
+      "py": "Běijīngrén"
      },
      {
       "zh": "的",
@@ -1724,15 +1698,11 @@
       "zh": "。",
       "py": ""
      }
-    ],
-    "note": "每……都…… — «… бүр … заавал».",
-    "key_structures": [
-     "每……都……"
     ]
    },
    {
     "zh": "最先去寻找秋天的人，大部分是青年学生，他们带来西山红叶已经红透的消息，于是去西山的路上都是去看红叶的人。",
-    "pinyin": "Zuìxiān qù xúnzhǎo qiūtiān de rén, dàbùfèn shì qīngnián xuéshēng, tāmen dàilái xīshān hóngyè yǐjīng hóngtòu de xiāoxī, yúshì qù xīshān de lù shàng dōushì qù kàn hóngyè de rén.",
+    "pinyin": "Zuìxiān qù xúnzhǎo qiūtiān de rén, dàbùfèn shì qīngnián xuéshēng, tāmen dàilái Xīshān hóngyè yǐjīng hóngtòu de xiāoxī, yúshì qù Xīshān de lù shàng dōushì qù kàn hóngyè de rén.",
     "mn": "Хамгийн түрүүнд намрыг хайж явдаг нь ихэвчлэн залуу оюутнууд. Тэд Си Шаний навч бүрэн улайсан мэдээг авчирна. Тэгээд Си Шань руу явах зам дүүрэн улаан навч үзэх хүмүүс болдог.",
     "paragraph": 8,
     "tokens": [
@@ -1794,7 +1764,7 @@
      },
      {
       "zh": "西山",
-      "py": "xīshān"
+      "py": "Xīshān"
      },
      {
       "zh": "红叶",
@@ -1830,7 +1800,7 @@
      },
      {
       "zh": "西山",
-      "py": "xīshān"
+      "py": "Xīshān"
      },
      {
       "zh": "的",
@@ -1881,7 +1851,7 @@
    },
    {
     "zh": "带几片红叶回来，夹在书里，好像成了北京人的习惯。",
-    "pinyin": "Dài jǐpiàn hóngyè huílái, jiā zài shū lǐ, hǎoxiàng chéng le běijīngrén de xíguàn.",
+    "pinyin": "Dài jǐpiàn hóngyè huílái, jiā zài shū lǐ, hǎoxiàng chéng le Běijīngrén de xíguàn.",
     "mn": "Хэдэн улаан навч авчирч номондоо хавчуулах нь бээжингийнхний зуршил болсон бололтой.",
     "paragraph": 8,
     "tokens": [
@@ -1939,7 +1909,7 @@
      },
      {
       "zh": "北京人",
-      "py": "běijīngrén"
+      "py": "Běijīngrén"
      },
      {
       "zh": "的",
@@ -1953,15 +1923,11 @@
       "zh": "。",
       "py": ""
      }
-    ],
-    "note": "夹在书里 — номын хуудасны завсар хавчуулах (夹 jiā).",
-    "key_structures": [
-     "V在+газар"
     ]
    },
    {
     "zh": "秋深了，冬天快到了，年轻人从床底下拿出休息了一年的冰鞋，把它擦得亮亮的，等着北海结冰。",
-    "pinyin": "Qiū shēn le, dōngtiān kuài dào le, niánqīngrén cóng chuáng dǐxià náchū xiūxī le yīnián de bīngxié, bǎ tā cā de liàngliàng de, děng zhe běihǎi jiébīng.",
+    "pinyin": "Qiū shēn le, dōngtiān kuài dào le, niánqīngrén cóng chuáng dǐxià náchū xiūxī le yīnián de bīngxié, bǎ tā cā de liàngliàng de, děng zhe Běihǎi jiébīng.",
     "mn": "Намар гүнзгийрч өвөл ойртоход залуус орныхоо доороос бүтэн жил хэвтсэн тэшүүрээ гаргаж, гялалзтал нь арчаад Бэйхай хөлдөхийг хүлээнэ.",
     "paragraph": 9,
     "tokens": [
@@ -2083,7 +2049,7 @@
      },
      {
       "zh": "北海",
-      "py": "běihǎi"
+      "py": "Běihǎi"
      },
      {
       "zh": "结冰",
@@ -2102,7 +2068,7 @@
    },
    {
     "zh": "现在，应该正是北京的初冬，窗外也许正下着大雪，在温暖的屋子里吃着像梨一样甜的\"心儿里美\"，真可口。",
-    "pinyin": "Xiànzài, yīnggāi zhèngshì běijīng de chūdōng, chuāngwài yěxǔ zhèng xià zhe dàxuě, zài wēnnuǎn de wūzi lǐ chī zhe xiàng lí yíyàng tián de \" xīnrlǐměi \", zhēn kěkǒu.",
+    "pinyin": "Xiànzài, yīnggāi zhèngshì Běijīng de chūdōng, chuāngwài yěxǔ zhèng xià zhe dàxuě, zài wēnnuǎn de wūzi lǐ chī zhe xiàng lí yíyàng tián de \" xīnrlǐměi \", zhēn kěkǒu.",
     "mn": "Одоо яг Бээжингийн өвлийн эхэн байх ёстой. Цонхны гадаа их цас орж байгаа байх. Дулаахан өрөөндөө лийр шиг амтат «Синьэрлимэй» идэхэд үнэхээр амттай.",
     "paragraph": 10,
     "tokens": [
@@ -2124,7 +2090,7 @@
      },
      {
       "zh": "北京",
-      "py": "běijīng"
+      "py": "Běijīng"
      },
      {
       "zh": "的",
@@ -2242,11 +2208,6 @@
       "zh": "。",
       "py": ""
      }
-    ],
-    "note": "应该正是…… — таамаг: «яг … байх ёстой». 像……一样 — … шиг.",
-    "key_structures": [
-     "像……一样",
-     "正+V着"
     ]
    },
    {
@@ -2257,7 +2218,7 @@
     "tokens": [
      {
       "zh": "北京人",
-      "py": "běijīngrén"
+      "py": "Běijīngrén"
      },
      {
       "zh": "管",
@@ -2311,7 +2272,7 @@
    },
    {
     "zh": "离开北京的那年，正是秋叶红了的时候，但是冰鞋还来不及拿出来，我就离开了她。",
-    "pinyin": "Líkāi běijīng de nànián, zhèngshì qiūyè hóng le de shíhòu, dànshì bīngxié hái láibùjí ná chūlái, wǒ jiù líkāi le tā.",
+    "pinyin": "Líkāi Běijīng de nànián, zhèngshì qiūyè hóng le de shíhòu, dànshì bīngxié hái láibùjí ná chūlái, wǒ jiù líkāi le tā.",
     "mn": "Бээжингээс явсан тэр жил яг намрын навч улайсан үе байлаа. Гэвч тэшүүрээ гаргаж ч амжилгүй би түүнээс салж явсан.",
     "paragraph": 11,
     "tokens": [
@@ -2321,7 +2282,7 @@
      },
      {
       "zh": "北京",
-      "py": "běijīng"
+      "py": "Běijīng"
      },
      {
       "zh": "的",
@@ -2423,7 +2384,7 @@
    },
    {
     "zh": "飞机在北京的上空绕了一圈，协和医院的绿瓦是我难忘的最后一眼，我的心在流泪，那是一种离开母亲的感觉。",
-    "pinyin": "Fēijī zài běijīng de shàngkōng rào le yìquān, xiéhéyīyuàn de lǜwǎ shì wǒ nánwàng de zuìhòu yìyǎn, wǒ de xīn zài liúlèi, nà shì yìzhǒng líkāi mǔqīn de gǎnjué.",
+    "pinyin": "Fēijī zài Běijīng de shàngkōng rào le yìquān, Xiéhé Yīyuàn de lǜwǎ shì wǒ nánwàng de zuìhòu yìyǎn, wǒ de xīn zài liúlèi, nà shì yìzhǒng líkāi mǔqīn de gǎnjué.",
     "mn": "Онгоц Бээжингийн дээгүүр нэг тойроход Сехэ эмнэлгийн ногоон дээвэр миний мартагдашгүй сүүлчийн харц болсон. Зүрх минь уйлж байлаа — эхээсээ салж буй мэт мэдрэмж.",
     "paragraph": 11,
     "tokens": [
@@ -2437,7 +2398,7 @@
      },
      {
       "zh": "北京",
-      "py": "běijīng"
+      "py": "Běijīng"
      },
      {
       "zh": "的",
@@ -2465,7 +2426,7 @@
      },
      {
       "zh": "协和医院",
-      "py": "xiéhéyīyuàn"
+      "py": "Xiéhé Yīyuàn"
      },
      {
       "zh": "的",
@@ -2559,10 +2520,6 @@
       "zh": "。",
       "py": ""
      }
-    ],
-    "note": "绕了一圈 — нэг тойрох (圈 тоо нэр). 最后一眼 — сүүлчийн харц.",
-    "key_structures": [
-     "V了+тоо нэр"
     ]
    }
   ],
@@ -2622,7 +2579,7 @@
   "writingSample": {
    "title_mn": "写作 · Загвар бичлэг — «家乡的四季» (Миний нутгийн дөрвөн улирал)",
    "zh": "我的家乡乌兰巴托，四季很不一样。春天很短，风特别大，有时一夜大风就把天空吹得黄黄的。夏天不热，雨后的草原格外清新，人们纷纷去郊外骑马。秋天也短暂，然而秋天的天空是多么蓝啊！最难忘的是冬天，就拿温度来说吧，常常是零下三十度。我们管这种冷叫\"干冷\"。虽然冷，但我永远不能忘记家乡的冬天。",
-   "pinyin": "Wǒ de jiā xiāng wū lán bā tuō, sì jì hěn bù yí yàng. chūn tiān hěn duǎn, fēng tè bié dà, yǒu shí yí yè dà fēng jiù bǎ tiān kōng chuī de huáng huáng de. xià tiān bù rè, yǔ hòu de cǎo yuán gé wài qīng xīn, rén men fēn fēn qù jiāo wài qí mǎ. qiū tiān yě duǎn zàn, rán ér qiū tiān de tiān kōng shì duō me lán a! zuì nán wàng de shì dōng tiān, jiù ná wēn dù lái shuō ba, cháng cháng shì líng xià sān shí dù. wǒ men guǎn zhè zhǒng lěng jiào \" gān lěng \". suī rán lěng, dàn wǒ yǒng yuǎn bù néng wàng jì jiā xiāng de dōng tiān.",
+   "pinyin": "Wǒ de jiāxiāng Wūlánbātuō, sìjì hěn bù yíyàng. chūntiān hěn duǎn, fēng tèbié dà, yǒushí yíyè dàfēng jiù bǎ tiānkōng chuī de huáng huáng de. xiàtiān bù rè, yǔhòu de cǎoyuán géwài qīngxīn, rénmen fēnfēn qù jiāo wài qímǎ. qiūtiān yě duǎnzàn, ránér qiūtiān de tiānkōng shì duōme lán a! zuì nánwàng de shì dōngtiān, jiù ná wēndù láishuō ba, cháng cháng shì língxià sān shí dù. wǒmen guǎn zhè zhǒng lěng jiào \" gānlěng \". suīrán lěng, dàn wǒ yǒngyuǎn bùnéng wàngjì jiāxiāng de dōngtiān.",
    "mn": "Миний нутаг Улаанбаатарын дөрвөн улирал тэс өөр. Хавар богино, салхи их — заримдаа ганц шөнийн салхи тэнгэрийг шар болтол нь хийсгэнэ. Зун халуун биш, борооны дараах тал онцгой цэнгэг, хүмүүс ар араасаа хотын захаар морь унахаар явна. Намар бас богинохон, гэвч намрын тэнгэр ямар цэнхэр вэ! Хамгийн мартагдашгүй нь өвөл. Хүйтнийг л гэхэд ихэвчлэн хасах гуч хүрнэ. Энэ хүйтнийг бид «хуурай хүйтэн» гэж нэрлэдэг. Хүйтэн ч гэсэн нутгийнхаа өвлийг би хэзээ ч мартахгүй."
   },
   "writingPrompt_mn": "«家乡的四季» сэдвээр 150-аас дээш ханзаар бич (номын 练习九). Заавал: 4 улирлыг тус бүр 1–2 өгүүлбэрээр; дараах үг, бүтцээс дор хаяж 5-ыг хэрэглэ: 美丽 安静 清新 热闹 想念 / 好像/仿佛……一样 / 跟……一样/不一样 / A比B…… / （就）拿……来说（吧） / 最难忘的是…… / 把……V得+C / 管A叫B. Нутгийнхаа зургийг хавсаргаж болно."
@@ -2694,17 +2651,17 @@
    "examples": [
     {
      "chinese": "我在北京度过了一段美好的时光。",
-     "pinyin": "Wǒ zài běi jīng dù guò le yī duàn měi hǎo de shí guāng.",
+     "pinyin": "Wǒ zài Běijīng dùguò le yī duàn měi hǎo de shí guāng.",
      "mongolian": "Би Бээжинд нэг сайхан цагийг өнгөрөөсөн."
     },
     {
      "chinese": "他和我一起度过了小学和中学时代。",
-     "pinyin": "Tā hé wǒ yì qǐ dù guò le xiǎo xué hé zhōng xué shí dài.",
+     "pinyin": "Tā hé wǒ yī qǐ dùguò le xiǎo xué hé zhōng xué shí dài.",
      "mongolian": "Тэр бид хоёр бага, дунд сургуулиа хамт өнгөрөөсөн."
     },
     {
      "chinese": "他们乘船渡过了太平洋，来到中国。",
-     "pinyin": "Tā men chéng chuán dù guò le tài píng yáng, lái dào zhōng guó.",
+     "pinyin": "Tāmen chéngchuán dù guò le Tàipíngyáng, láidào Zhōngguó.",
      "mongolian": "Тэд хөлгөөр Номхон далайг гатлан Хятадад ирсэн."
     }
    ],
@@ -2746,17 +2703,17 @@
    "examples": [
     {
      "chinese": "我是多么熟悉那里的每个季节啊！",
-     "pinyin": "Wǒ shì duō me shú xī nà lǐ de měi gè jì jié a!",
+     "pinyin": "Wǒ shì duōme shúxī nàlǐ de měigè jìjié a!",
      "mongolian": "Би тэндхийн улирал бүрийг ямар сайн мэдэх вэ!"
     },
     {
      "chinese": "我刚来到这里，对这儿不太熟悉。",
-     "pinyin": "Wǒ gāng lái dào zhè lǐ, duì zhè ér bù tài shú xī.",
+     "pinyin": "Wǒ gāng láidào zhèlǐ, duì zhèr bù tài shúxī.",
      "mongolian": "Би дөнгөж ирсэн болохоор энд сайн дасаагүй."
     },
     {
      "chinese": "我在那儿住过很多年，熟悉那儿的情况。",
-     "pinyin": "Wǒ zài nà ér zhù guò hěn duō nián, shú xī nà ér de qíng kuàng.",
+     "pinyin": "Wǒ zài nàr zhù guò hěn duō nián, shúxī nàr de qíngkuàng.",
      "mongolian": "Би тэнд олон жил амьдарсан болохоор тэндхийн байдлыг сайн мэднэ."
     }
    ],
@@ -2795,26 +2752,26 @@
    "gloss": "fēnfēn — ар араасаа, нэг нэгээрээ",
    "explanation": "Олон хүн эсвэл зүйл ДАРААЛАН, ар араасаа ямар нэг зүйл хийх. Нэг зэрэг (一齐) биш! Эзэн нь заавал олон тоо: 人们, 大家, 树叶, 学生们.",
    "structure": "олон хүн/зүйл + 纷纷 + V",
-   "teacher_notes": "教案: «纷纷 — 很多人或事物先后做或发生什么事，而不是一齐». Ганц хүнд хэрэглэхгүй.",
+   "teacher_notes": "教案: «纷纷 — 很多人或事物先后做或发生什么事，而不是一齐». Ганц хүнд хэрэглэхгүй. Хамт гардаг 争着+V — «уралдан … хийх» (争着往山上爬, 争着发言, 争着上车): энэ ч бас олон хүнд л хэрэглэнэ.",
    "examples": [
     {
      "chinese": "春天，人们纷纷来到西山。",
-     "pinyin": "Chūn tiān, rén men fēn fēn lái dào xī shān.",
+     "pinyin": "Chūntiān, rénmen fēnfēn láidào Xīshān.",
      "mongolian": "Хавар хүмүүс ар араасаа Си Шань уул руу ирдэг."
     },
     {
      "chinese": "大家纷纷表示同意。",
-     "pinyin": "Dà jiā fēn fēn biǎo shì tóng yì.",
+     "pinyin": "Dàjiā fēnfēn biǎo shì tóng yì.",
      "mongolian": "Бүгд ар араасаа зөвшөөрлөө илэрхийлэв."
     },
     {
      "chinese": "秋风吹过，树叶纷纷落下。",
-     "pinyin": "Qiū fēng chuī guò, shù yè fēn fēn là xià.",
+     "pinyin": "Qiū fēng chuī guò, shùyè fēnfēn luò xià.",
      "mongolian": "Намрын салхи үлээхэд навчис нэг нэгээрээ унана."
     },
     {
      "chinese": "下课了，学生们纷纷回家了。",
-     "pinyin": "Xià kè le, xué shēng men fēn fēn huí jiā le.",
+     "pinyin": "Xià kè le, xuéshēng men fēnfēn huí jiā le.",
      "mongolian": "Хичээл тарахад сурагчид ар араасаа гэр лүүгээ явлаа."
     }
    ],
@@ -2850,51 +2807,6 @@
    ]
   },
   {
-   "word": "争着＋V",
-   "gloss": "zhēngzhe — уралдан … хийх, түрүүлэхийг хичээх",
-   "explanation": "Хоёр ба түүнээс олон хүн (амьтан) ямар нэг зүйлийг ТҮРҮҮЛЖ хийхийг хичээх. 争着上车 — уралдан машинд суух, 争着发言 — уралдан үг хэлэх.",
-   "structure": "争着 + V   ·  争 + 第一 / 名次",
-   "teacher_notes": "教案: «争着+V，表示两个以上的人或动物争先做某事，不想落后».",
-   "examples": [
-    {
-     "chinese": "人们争着往山上爬。",
-     "pinyin": "Rén men zhēng zhe wǎng shān shàng pá.",
-     "mongolian": "Хүмүүс уралдан уул өөд авирна."
-    },
-    {
-     "chinese": "大家热情很高，都争着报名参加活动。",
-     "pinyin": "Dà jiā rè qíng hěn gāo, dōu zhēng zhe bào míng cān jiā huó dòng.",
-     "mongolian": "Бүгд урам зоригтой, уралдан бүртгүүлж байна."
-    },
-    {
-     "chinese": "别争着上车，请排好队一个一个上车。",
-     "pinyin": "Bié zhēng zhe shàng chē, qǐng pái hǎo duì yí gè yí gè shàng chē.",
-     "mongolian": "Уралдан бүү суу, дараалалд орж нэг нэгээрээ суугаарай."
-    },
-    {
-     "chinese": "口语课堂很活跃，同学们争着发言。",
-     "pinyin": "Kǒu yǔ kè táng hěn huó yuè, tóng xué men zhēng zhe fā yán.",
-     "mongolian": "Ярианы хичээл идэвхтэй, сурагчид уралдан үг хэлнэ."
-    }
-   ],
-   "common_mistakes": [
-    {
-     "wrong": "我争着看书。",
-     "right": "我们争着回答问题。",
-     "why": "Ганц хүн өөрөө уралдахгүй — 争着 нь олон хүний өрсөлдөөн."
-    }
-   ],
-   "check": {
-    "question": "«Хүүхдүүд уралдан бялуу иднэ» — аль нь зөв бэ?",
-    "options": [
-     "孩子们吃争着蛋糕。",
-     "孩子们争着吃蛋糕。"
-    ],
-    "answer": "1"
-   },
-   "practice": []
-  },
-  {
    "word": "看＋疑问词＋比较结果",
    "gloss": "kàn — «… вэ гэдгийг харъя» (харьцуулж үр дүн гаргах)",
    "explanation": "Энд 看 нь «үзэх» биш — харьцуулалт, тэмцээнээр ҮР ДҮН гаргахыг хэлнэ: 看谁跑得快 (хэн хурдан гүйхийг үзье), 看哪个方法好 (аль арга нь сайныг үзье).",
@@ -2903,22 +2815,22 @@
    "examples": [
     {
      "chinese": "看谁先爬上那个最高的山头。",
-     "pinyin": "Kàn shuí xiān pá shàng nà ge zuì gāo de shān tóu.",
+     "pinyin": "Kàn shuí xiān pá shàng nàge zuì gāo de shāntóu.",
      "mongolian": "Хэн нь түрүүлж хамгийн өндөр оргилд гарахыг үзье."
     },
     {
      "chinese": "我们比一比，看谁跑得快。",
-     "pinyin": "Wǒ men bǐ yī bǐ, kàn shuí pǎo de kuài.",
+     "pinyin": "Wǒmen bǐyībǐ, kàn shuí pǎo de kuài.",
      "mongolian": "Хэн хурдан гүйхийг уралдаж үзье."
     },
     {
      "chinese": "两种方法都试一试，看哪个方法好。",
-     "pinyin": "Liǎng zhǒng fāng fǎ dōu shì yī shì, kàn nǎ ge fāng fǎ hǎo.",
+     "pinyin": "Liǎng zhǒng fāngfǎ dōu shìyīshì, kàn nǎ gè fāngfǎ hǎo.",
      "mongolian": "Хоёр аргыг хоёуланг нь туршаад аль нь дээр болохыг үзье."
     },
     {
      "chinese": "比较一下，看哪件衣服更适合你。",
-     "pinyin": "Bǐ jiào yī xià, kàn nǎ jiàn yī fú gèng shì hé nǐ.",
+     "pinyin": "Bǐ jiào yī xià, kàn nǎ jiàn yīfú gèng shì hé nǐ.",
      "mongolian": "Харьцуулаад аль хувцас чамд илүү зохихыг үзье."
     }
    ],
@@ -2933,21 +2845,21 @@
     "question": "综合练习 二 (2). 咱们比赛，（ ）谁先爬上那个最高的山头！",
     "options": [
      "找",
-     "看",
-     "想"
+     "想",
+     "看"
     ],
-    "answer": "1"
+    "answer": "2"
    },
    "practice": [
     {
      "type": "choice",
      "question": "综合练习 四 (1). 两种方法都试一试，________。（看 更好）",
      "options": [
-      "更好看哪种方法",
+      "看哪种方法更好",
       "看方法哪种更好",
-      "看哪种方法更好"
+      "更好看哪种方法"
      ],
-     "answer": "2",
+     "answer": "0",
      "explanation_correct_mn": "Зөв. 看 + 哪种方法 + 更好.",
      "explanation_wrong_mn": "看 + асуух үгтэй хэсэг + харьцуулсан үр дүн (更好) дараалал."
     }
@@ -2962,22 +2874,22 @@
    "examples": [
     {
      "chinese": "北京的春天多么美丽呀！",
-     "pinyin": "Běi jīng de chūn tiān duō me měi lì ya!",
+     "pinyin": "Běijīng de chūntiān duōme měilì ya!",
      "mongolian": "Бээжингийн хавар ямар үзэсгэлэнтэй вэ!"
     },
     {
      "chinese": "我多么熟悉这里的一切啊！",
-     "pinyin": "Wǒ duō me shú xī zhè lǐ de yī qiè a!",
+     "pinyin": "Wǒ duōme shúxī zhèlǐ de yīqiè a!",
      "mongolian": "Би эндхийн бүхнийг ямар сайн мэдэх вэ!"
     },
     {
      "chinese": "孩子们多么想家啊！",
-     "pinyin": "Hái zi men duō me xiǎng jiā a!",
+     "pinyin": "Háizi men duōme xiǎngjiā a!",
      "mongolian": "Хүүхдүүд гэрээ ямар их санаж байна вэ!"
     },
     {
      "chinese": "要是我的汉语说得像中国人一样，那该多么好啊！",
-     "pinyin": "Yào shì wǒ de hàn yǔ shuō de xiàng zhōng guó rén yí yàng, nà gāi duō me hǎo a!",
+     "pinyin": "Yàoshì wǒ de hànyǔ shuō de xiàng Zhōngguórén yíyàng, nà gāi duōme hǎo a!",
      "mongolian": "Хятад хэлээ хятад хүн шиг ярьдаг бол ямар сайхан байх вэ!"
     }
    ],
@@ -2991,10 +2903,10 @@
    "check": {
     "question": "Аль нь зөв бэ?",
     "options": [
-     "北京的春天多么短暂啊！",
-     "北京的春天多么来了啊！"
+     "北京的春天多么来了啊！",
+     "北京的春天多么短暂啊！"
     ],
-    "answer": "0"
+    "answer": "1"
    },
    "practice": []
   },
@@ -3007,17 +2919,17 @@
    "examples": [
     {
      "chinese": "从树叶变黄，到水面结冰，都属于秋季。",
-     "pinyin": "Cóng shù yè biàn huáng, dào shuǐ miàn jié bīng, dōu shǔ yú qiū jì.",
+     "pinyin": "Cóng shùyè biànhuáng, dào shuǐmiàn jiébīng, dōu shǔyú qiūjì.",
      "mongolian": "Навч шарлахаас ус хөлдөх хүртэл бүгд намарт хамаарна."
     },
     {
      "chinese": "这是我送给你的礼物，现在它就属于你了。",
-     "pinyin": "Zhè shì wǒ sòng gěi nǐ de lǐ wù, xiàn zài tā jiù shǔ yú nǐ le.",
+     "pinyin": "Zhè shì wǒ sòng gěi nǐ de lǐwù, xiànzài tā jiù shǔyú nǐ le.",
      "mongolian": "Энэ чамд өгсөн бэлэг, одоо чинийх боллоо."
     },
     {
      "chinese": "北京在河北省，但不属于河北省。",
-     "pinyin": "Běi jīng zài hé běi shěng, dàn bù shǔ yú hé běi shěng.",
+     "pinyin": "Běijīng zài Héběi Shěng, dàn bù shǔyú Héběi Shěng.",
      "mongolian": "Бээжин Хэбэй мужийн дотор байдаг ч Хэбэйд хамаардаггүй."
     }
    ],
@@ -3031,11 +2943,11 @@
    "check": {
     "question": "综合练习 二 (3). 这是我送给你的礼物，现在它就（ ）你了。",
     "options": [
+     "属于",
      "熟悉",
-     "经过",
-     "属于"
+     "经过"
     ],
-    "answer": "2"
+    "answer": "0"
    },
    "practice": [
     {
@@ -3053,46 +2965,6 @@
    ]
   },
   {
-   "word": "透",
-   "gloss": "tòu — бүрэн, гүйцэд (adj./V+透)",
-   "explanation": "Тэмдэг нэр, үйл үгийн ард орж «дотроос гадна хүртэл бүрэн, гүйцэд» гэсэн утга нэмнэ: 红透 бүрэн улайсан, 熟透 гүйцэд боловсорсон, 湿透 бүхэлдээ норсон.",
-   "structure": "adj./V + 透 (+了)：红透, 熟透, 湿透",
-   "teacher_notes": "教案 PPT(16): 熟透：（西红柿）已经熟透了，很甜。湿透：下雨了，（衣服）湿透了。红透：香山的红叶（现在）还没红透.",
-   "examples": [
-    {
-     "chinese": "西山红叶已经红透了。",
-     "pinyin": "Xī shān hóng yè yǐ jīng hóng tòu le.",
-     "mongolian": "Си Шаний навч бүрэн улайчихжээ."
-    },
-    {
-     "chinese": "西红柿已经熟透了，很甜。",
-     "pinyin": "Xī hóng shì yǐ jīng shú tòu le, hěn tián.",
-     "mongolian": "Улаан лооль гүйцэд болсон, их амттай."
-    },
-    {
-     "chinese": "下雨了，衣服湿透了。",
-     "pinyin": "Xià yǔ le, yī fú shī tòu le.",
-     "mongolian": "Бороо орж хувцас бүхэлдээ норчихлоо."
-    }
-   ],
-   "common_mistakes": [
-    {
-     "wrong": "苹果透熟了。",
-     "right": "苹果熟透了。",
-     "why": "透 нь тэмдэг нэрийн АРД ордог."
-    }
-   ],
-   "check": {
-    "question": "«Навч бүрэн улайгаагүй» — аль нь зөв бэ?",
-    "options": [
-     "红叶还没红透。",
-     "红叶还没透红。"
-    ],
-    "answer": "0"
-   },
-   "practice": []
-  },
-  {
    "word": "来不及 / 来得及",
    "gloss": "láibují / láidejí — амжихгүй / амжина",
    "explanation": "Цаг хүрэлцэх эсэхийг хэлнэ: 来不及 — цаг хүрэхгүй, амжихгүй; 来得及 — амжина. Ард нь үйл үг дагана: 来不及吃早饭, 来不及拿出来.",
@@ -3101,17 +2973,17 @@
    "examples": [
     {
      "chinese": "冰鞋还来不及拿出来，我就离开了她。",
-     "pinyin": "Bīng xié hái lái bù jí ná chū lái, wǒ jiù lí kāi le tā.",
+     "pinyin": "Bīngxié hái láibùjí náchū lái, wǒ jiù líkāi le tā.",
      "mongolian": "Тэшүүрээ гаргаж ч амжилгүй би түүнээс салж явлаа."
     },
     {
      "chinese": "快上课了，来不及吃早饭了，快走吧！",
-     "pinyin": "Kuài shàng kè le, lái bù jí chī zǎo fàn le, kuài zǒu ba!",
+     "pinyin": "Kuài shàng kè le, láibùjí chī zǎo fàn le, kuài zǒu ba!",
      "mongolian": "Хичээл болох гэж байна, өглөөний цай уух амжихгүй, явцгаая!"
     },
     {
      "chinese": "别着急，还有半个小时呢，来得及。",
-     "pinyin": "Bié zháo jí, hái yǒu bàn gè xiǎo shí ne, lái de jí.",
+     "pinyin": "Bié zháojí, hái yǒu bàngè xiǎoshí ne, láidejí.",
      "mongolian": "Бүү яар, хагас цаг байна, амжина."
     }
    ],
@@ -3135,50 +3007,15 @@
      "type": "choice",
      "question": "综合练习 五 (4). A: ________？ B: 别着急，还有半个小时呢，来得及。",
      "options": [
-      "现在去电影院还来得及吗",
+      "你着急吗",
       "现在去电影院来不及",
-      "你着急吗"
+      "现在去电影院还来得及吗"
      ],
-     "answer": "0",
+     "answer": "2",
      "explanation_correct_mn": "Зөв. «Амжих уу?» гэж асуусан тул «амжина» гэж хариулж байна.",
      "explanation_wrong_mn": "B «бүү яар, амжина» гэж хариулсан тул асуулт нь 还来得及吗 байх ёстой."
     }
    ]
-  },
-  {
-   "word": "可口 / 可-",
-   "gloss": "kěkǒu — амттай; 可 язгуурын 3 утга",
-   "explanation": "可口 — «аманд таатай» = амттай. 可 язгуур гурван утгатай: ① 可口、可心、可意 — таатай, сэтгэлд нийцсэн; ② 可爱 (хайрламаар), 可怜 (өрөвдмөөр), 可惜 (харамсалтай) — «…-маар»; ③ 可行 (болно), 可买可不买 (авч ч болно, авахгүй ч болно).",
-   "structure": "可 + 口/心/意 (сэтгэл хангалуун)  ·  可 + 爱/怜/惜 (…-маар)  ·  可 + 行/买 (болно)",
-   "teacher_notes": "教案 (3-р цаг): «可» язгуурын 3 утгыг үгсээр нь бүлэглэн заана.",
-   "examples": [
-    {
-     "chinese": "在温暖的屋子里吃着\"心儿里美\"，真可口。",
-     "pinyin": "Zài wēn nuǎn de wū zi lǐ chī zhe \" xīn r lǐ měi \", zhēn kě kǒu.",
-     "mongolian": "Дулаахан өрөөндөө «Синьэрлимэй» идэхэд үнэхээр амттай."
-    },
-    {
-     "chinese": "这个孩子真可爱。",
-     "pinyin": "Zhè ge hái zi zhēn kě ài.",
-     "mongolian": "Энэ хүүхэд үнэхээр хөөрхөн."
-    },
-    {
-     "chinese": "这个办法可行。",
-     "pinyin": "Zhè ge bàn fǎ kě xíng.",
-     "mongolian": "Энэ арга боломжтой."
-    }
-   ],
-   "common_mistakes": [],
-   "check": {
-    "question": "可口-гийн утга аль нь вэ?",
-    "options": [
-     "хайрламаар",
-     "амттай",
-     "болно"
-    ],
-    "answer": "1"
-   },
-   "practice": []
   }
  ],
  "collocations": [
@@ -3192,7 +3029,7 @@
      "usage_mn": "Тусагдахуун дандаа хугацаа. 是在……度过的 — ХААНА өнгөрөөснийг онцлох.",
      "example": {
       "chinese": "我的童年是在农村度过的。",
-      "pinyin": "Wǒ de tóng nián shì zài nóng cūn dù guò de.",
+      "pinyin": "Wǒ de tóngnián shì zài nóngcūn dùguò de.",
       "mongolian": "Миний бага нас хөдөө өнгөрсөн."
      }
     }
@@ -3208,7 +3045,7 @@
      "usage_mn": "对+зүйл+熟悉 бүтэц түгээмэл.",
      "example": {
       "chinese": "我对这儿的情况还不太熟悉。",
-      "pinyin": "Wǒ duì zhè ér de qíng kuàng hái bù tài shú xī.",
+      "pinyin": "Wǒ duì zhèr de qíngkuàng hái bù tài shúxī.",
       "mongolian": "Би эндхийн байдалд сайн дасаагүй байна."
      }
     }
@@ -3224,7 +3061,7 @@
      "usage_mn": "找-гийн бичгийн, илүү хүндэтгэлтэй хэлбэр; уран зохиолд 寻找秋天 гэж ч хэлнэ.",
      "example": {
       "chinese": "最先去寻找秋天的人，大部分是青年学生。",
-      "pinyin": "Zuì xiān qù xún zhǎo qiū tiān de rén, dà bù fèn shì qīng nián xué shēng.",
+      "pinyin": "Zuìxiān qù xúnzhǎo qiūtiān de rén, dàbùfèn shì qīngnián xuéshēng.",
       "mongolian": "Хамгийн түрүүнд намрыг хайж явдаг нь ихэвчлэн залуу оюутнууд."
      }
     },
@@ -3235,7 +3072,7 @@
      "usage_mn": "大部分 + N эсвэл 大部分是 + N.",
      "example": {
       "chinese": "我们班大部分都是亚洲同学。",
-      "pinyin": "Wǒ men bān dà bù fèn dōu shì yà zhōu tóng xué.",
+      "pinyin": "Wǒmen bān dàbùfèn dōushì yàzhōu tóngxué.",
       "mongolian": "Манай ангийн ихэнх нь Азийн оюутнууд."
      }
     }
@@ -3251,7 +3088,7 @@
      "usage_mn": "运+货, 运来/运去, 从A运到B.",
      "example": {
       "chinese": "粮食从农村运到城市。",
-      "pinyin": "Liáng shí cóng nóng cūn yùn dào chéng shì.",
+      "pinyin": "Liángshí cóng nóngcūn yùn dào chéngshì.",
       "mongolian": "Үр тариаг хөдөөнөөс хот руу тээвэрлэнэ."
      }
     },
@@ -3262,7 +3099,7 @@
      "usage_mn": "Газар (дайрах) ба хугацаа/үйл явц (дамжих) хоёуланд нь.",
      "example": {
       "chinese": "我去邮局经过超市，可以顺便买面包。",
-      "pinyin": "Wǒ qù yóu jú jīng guò chāo shì, kě yǐ shùn biàn mǎi miàn bāo.",
+      "pinyin": "Wǒ qù yóu jú jīngguò chāo shì, kě yǐ shùn biàn mǎi miàn bāo.",
       "mongolian": "Шуудан руу явахдаа дэлгүүрээр дайрна, завшаанд нь талх авч болно."
      }
     }
@@ -3272,13 +3109,24 @@
    "type": "格外 / 清新 / 短暂 (онцгой / цэнгэг / богинохон)",
    "rows": [
     {
+     "head": "透",
+     "with": "红透 / 熟透 / 湿透",
+     "mn": "бүрэн улайсан / гүйцэд болсон / бүхэлдээ норсон",
+     "usage_mn": "adj./V + 透 = дотроос гадна хүртэл бүрэн (教案 PPT 16).",
+     "example": {
+      "chinese": "西山红叶已经红透了。",
+      "pinyin": "Xīshān hóngyè yǐjīng hóngtòu le.",
+      "mongolian": "Си Шаний навч бүрэн улайчихжээ."
+     }
+    },
+    {
      "head": "格外",
      "with": "格外清新 / 格外高兴 / 格外热闹",
      "mn": "онцгой цэнгэг / онцгой баяртай / онцгой хөл хөдөлгөөнтэй",
      "usage_mn": "格外 + adj. — 特别-тэй ойролцоо, бичгийн.",
      "example": {
       "chinese": "雨后的空气格外清新。",
-      "pinyin": "Yǔ hòu de kōng qì gé wài qīng xīn.",
+      "pinyin": "Yǔhòu de kōngqì géwài qīngxīn.",
       "mongolian": "Борооны дараах агаар онцгой цэнгэг."
      }
     },
@@ -3289,7 +3137,7 @@
      "usage_mn": "ЗӨВХӨН цаг хугацаанд; юмны уртад (头发短) хэрэглэхгүй.",
      "example": {
       "chinese": "青春是短暂的，要好好儿度过。",
-      "pinyin": "Qīng chūn shì duǎn zàn de, yào hǎo hǎo ér dù guò.",
+      "pinyin": "Qīng chūn shì duǎnzàn de, yào hǎo hǎo ér dùguò.",
       "mongolian": "Залуу нас богинохон, сайхан өнгөрөөх хэрэгтэй."
      }
     }
@@ -3588,27 +3436,27 @@
    "examples": [
     {
      "chinese": "一夜大风就把牡丹花吹得不成样子了。",
-     "pinyin": "Yí yè dà fēng jiù bǎ mǔ dān huā chuī de bù chéng yàng zi le.",
+     "pinyin": "Yíyè dàfēng jiù bǎ mǔdānhuā chuī de bùchéngyàngzi le.",
      "mongolian": "Ганц шөнийн их салхи цээнэ цэцгийг танигдахын аргагүй болтол нь хийсгэчихлээ."
     },
     {
      "chinese": "那些年轻人已经把冰鞋擦得亮亮的了。",
-     "pinyin": "Nà xiē nián qīng rén yǐ jīng bǎ bīng xié cā de liàng liàng de le.",
+     "pinyin": "Nà xiē niánqīngrén yǐjīng bǎ bīngxié cā de liàngliàngde le.",
      "mongolian": "Тэр залуус тэшүүрээ аль хэдийн гялалзтал нь арччихсан."
     },
     {
      "chinese": "老师上课的时候把这个词的意思解释得清清楚楚。",
-     "pinyin": "Lǎo shī shàng kè de shí hòu bǎ zhè ge cí de yì si jiě shì de qīng qīng chǔ chǔ.",
+     "pinyin": "Lǎoshī shàng kè de shíhòu bǎ zhè gè cí de yìsi jiě shì de qīngqīngchǔchǔ.",
      "mongolian": "Багш хичээл дээр энэ үгийн утгыг маш тодорхой тайлбарласан."
     },
     {
      "chinese": "弟弟把屋子弄得乱七八糟。",
-     "pinyin": "Dì di bǎ wū zi nòng de luàn qī bā zāo.",
+     "pinyin": "Dì dì bǎ wūzi nòng de luànqībāzāo.",
      "mongolian": "Дүү өрөөг замбараагүй болгочихжээ."
     },
     {
      "chinese": "小王把事情办得漂亮极了。",
-     "pinyin": "Xiǎo wáng bǎ shì qíng bàn de piào liàng jí le.",
+     "pinyin": "Xiǎo Wáng bǎ shì qíng bàn de piàoliàng jíle.",
      "mongolian": "Сяо Ван ажлыг маш сайхан гүйцэтгэлээ."
     }
    ],
@@ -3682,22 +3530,22 @@
    "examples": [
     {
      "chinese": "就拿水果的种类来说吧，那真是太多了：枣、葡萄、梨……",
-     "pinyin": "Jiù ná shuǐ guǒ de zhǒng lèi lái shuō ba, nà zhēn shì tài duō le : zǎo, pú táo, lí …",
+     "pinyin": "Jiù ná shuǐguǒ de zhǒnglèi láishuō ba, nà zhēnshì tài duō le : zǎo, pútáo, lí …",
      "mongolian": "Жимсний төрлийг л гэхэд үнэхээр олон: чавга, усан үзэм, лийр…"
     },
     {
      "chinese": "我们这些新来的学生，什么都不了解，就拿我来说吧，连银行在哪儿还不知道呢。",
-     "pinyin": "Wǒ men zhè xiē xīn lái de xué shēng, shén me dōu bù liǎo jiě, jiù ná wǒ lái shuō ba, lián yín háng zài nǎ ér hái bù zhī dào ne.",
+     "pinyin": "Wǒmen zhèxiē xīnlái de xuéshēng, shénme dōu bù liǎojiě, jiù ná wǒ láishuō ba, lián yínháng zài nǎr hái bùzhīdào ne.",
      "mongolian": "Бид шинэ ирсэн оюутнууд юу ч мэдэхгүй. Намайг л гэхэд банк хаана байдгийг ч мэдэхгүй."
     },
     {
      "chinese": "年轻人已经离不开手机了，拿我儿子来说吧，他连睡觉的时候也把手机放在身边。",
-     "pinyin": "Nián qīng rén yǐ jīng lí bù kāi shǒu jī le, ná wǒ ér zi lái shuō ba, tā lián shuì jiào de shí hòu yě bǎ shǒu jī fàng zài shēn biān.",
+     "pinyin": "Niánqīngrén yǐjīng lí bù kāi shǒujī le, ná wǒ érzi láishuō ba, tā lián shuìjiào de shíhòu yě bǎ shǒujī fàng zài shēnbiān.",
      "mongolian": "Залуус утасгүй болохоо больжээ. Миний хүүг л гэхэд унтахдаа ч утсаа дэргэдээ тавьдаг."
     },
     {
      "chinese": "汉语对我来说太难了，就拿四声来说吧，我怎么说也说不对。",
-     "pinyin": "Hàn yǔ duì wǒ lái shuō tài nán le, jiù ná sì shēng lái shuō ba, wǒ zěn me shuō yě shuō bú duì.",
+     "pinyin": "Hànyǔ duì wǒ láishuō tài nán le, jiù ná sìshēng láishuō ba, wǒ zěnme shuō yě shuōbúduì.",
      "mongolian": "Хятад хэл надад хэтэрхий хэцүү. Дөрвөн аяыг л гэхэд би яаж ч хэлсэн зөв болдоггүй."
     }
    ],
@@ -3755,22 +3603,22 @@
    "examples": [
     {
      "chinese": "一路上都能闻到烤肉香。",
-     "pinyin": "Yí lù shàng dōu néng wén dào kǎo ròu xiāng.",
+     "pinyin": "Yílùshàng dōu néng wéndào kǎoròu xiāng.",
      "mongolian": "Бүх зам дагуу шарсан махны үнэр ханхийнэ."
     },
     {
      "chinese": "去年一冬都没下雪，真奇怪。",
-     "pinyin": "Qù nián yī dōng dōu méi xià xuě, zhēn qí guài.",
+     "pinyin": "Qùnián yī dōng dōu méi xià xuě, zhēn qí guài.",
      "mongolian": "Ноднин бүтэн өвөл цас ороогүй, үнэхээр хачин."
     },
     {
      "chinese": "一屋子的人都笑了起来。",
-     "pinyin": "Yī wū zi de rén dōu xiào le qǐ lái.",
+     "pinyin": "Yī wūzi de rén dōu xiào le qǐ lái.",
      "mongolian": "Өрөө дүүрэн хүмүүс бүгд инээлдэж эхлэв."
     },
     {
      "chinese": "一夜大风，就把花儿吹得不成样子了。",
-     "pinyin": "Yí yè dà fēng, jiù bǎ huā r chuī de bù chéng yàng zi le.",
+     "pinyin": "Yíyè dàfēng, jiù bǎ huār chuī de bùchéngyàngzi le.",
      "mongolian": "Бүтэн шөнийн их салхи цэцгийг танигдахгүй болтол нь хийсгэчихлээ."
     }
    ],
@@ -3838,22 +3686,22 @@
    "examples": [
     {
      "chinese": "一天不知要从外地运来多少只羊，才能满足北京人的馋嘴呢！",
-     "pinyin": "Yī tiān bù zhī yào cóng wài dì yùn lái duō shǎo zhǐ yáng, cái néng mǎn zú běi jīng rén de chán zuǐ ne!",
+     "pinyin": "Yītiān bùzhī yào cóng wàidì yùnlái duōshǎo zhǐ yáng, cái néng mǎnzú Běijīngrén de chánzuǐ ne!",
      "mongolian": "Өдөрт хэчнээн хонь өөр нутгаас тээвэрлэж байж бээжингийнхний идэх хүслийг хангадгийг бүү мэд!"
     },
     {
      "chinese": "我不知道给你打了多少次电话，你怎么不接呢？",
-     "pinyin": "Wǒ bù zhī dào gěi nǐ dǎ le duō shǎo cì diàn huà, nǐ zěn me bù jiē ne?",
+     "pinyin": "Wǒ bùzhīdào gěi nǐ dǎ le duōshǎo cì diànhuà, nǐ zěnme bù jiē ne?",
      "mongolian": "Би чам руу хэчнээн удаа залгасныг бүү мэд, чи яагаад авахгүй байгаа юм бэ?"
     },
     {
      "chinese": "他在国外留学，不知道得花他父母多少钱！",
-     "pinyin": "Tā zài guó wài liú xué, bù zhī dào de huā tā fù mǔ duō shǎo qián!",
+     "pinyin": "Tā zài guówài liúxué, bùzhīdào de huā tā fùmǔ duōshǎo qián!",
      "mongolian": "Тэр гадаадад сурдаг, эцэг эхийнх нь хэчнээн их мөнгө зарцуулдгийг бүү мэд!"
     },
     {
      "chinese": "要是他知道了这个消息，不知道得多高兴！",
-     "pinyin": "Yào shì tā zhī dào le zhè ge xiāo xī, bù zhī dào de duō gāo xìng!",
+     "pinyin": "Yàoshì tā zhīdào le zhè gè xiāoxī, bùzhīdào de duō gāoxìng!",
      "mongolian": "Хэрвээ тэр энэ мэдээг сонсвол хэчнээн их баярлахыг бүү мэд!"
     }
    ],
@@ -3911,27 +3759,27 @@
    "examples": [
     {
      "chinese": "北京人管一种绿皮红心儿的萝卜叫\"心儿里美\"。",
-     "pinyin": "Běi jīng rén guǎn yì zhǒng lǜ pí hóng xīn r de luó bo jiào \" xīn r lǐ měi \".",
+     "pinyin": "Běijīngrén guǎn yìzhǒng lǜpí hóngxīnr de luóbo jiào \" xīnrlǐměi \".",
      "mongolian": "Бээжингийнхэн ногоон хальстай улаан голтой лууванг «Синьэрлимэй» гэж нэрлэдэг."
     },
     {
      "chinese": "有的年轻人管父母叫老爸老妈。",
-     "pinyin": "Yǒu de nián qīng rén guǎn fù mǔ jiào lǎo bà lǎo mā.",
+     "pinyin": "Yǒu de niánqīngrén guǎn fùmǔ jiào lǎobàlǎomā.",
      "mongolian": "Зарим залуус эцэг эхээ 老爸老妈 (аавдаа, ээждээ) гэж дууддаг."
     },
     {
      "chinese": "中国人管计算机叫电脑。",
-     "pinyin": "Zhōng guó rén guǎn jì suàn jī jiào diàn nǎo.",
+     "pinyin": "Zhōngguórén guǎn jìsuànjī jiào diànnǎo.",
      "mongolian": "Хятадууд компьютерийг 电脑 гэж нэрлэдэг."
     },
     {
      "chinese": "中国人管妻子的父亲叫岳父。",
-     "pinyin": "Zhōng guó rén guǎn qī zǐ de fù qīn jiào yuè fù.",
+     "pinyin": "Zhōngguórén guǎn qīzǐ de fùqīn jiào yuèfù.",
      "mongolian": "Хятадууд эхнэрийнхээ аавыг 岳父 гэж нэрлэдэг."
     },
     {
      "chinese": "很多中国女人管自己的丈夫叫老公。",
-     "pinyin": "Hěn duō zhōng guó nǚ rén guǎn zì jǐ de zhàng fū jiào lǎo gōng.",
+     "pinyin": "Hěn duō Zhōngguó nǚ rén guǎn zì jǐ de zhàngfū jiào lǎogōng.",
      "mongolian": "Олон хятад эмэгтэй нөхрөө 老公 гэж дууддаг."
     }
    ],
