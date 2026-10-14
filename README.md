@@ -353,3 +353,5 @@ Phase 6 complete. Run checklists on production before launch sign-off.
 - [SECURITY_RLS_AUDIT.md](./SECURITY_RLS_AUDIT.md) — RLS and security audit
 - [LAUNCH_CANDIDATE_CHECKLIST.md](./LAUNCH_CANDIDATE_CHECKLIST.md) — launch sign-off
 - [PRODUCTION_ROUTE_TESTING.md](./PRODUCTION_ROUTE_TESTING.md) — live route testing
+
+<!-- push-test 2026-10-14T05:57:03Z -->
