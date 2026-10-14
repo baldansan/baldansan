@@ -35,12 +35,19 @@ def cn_to_int(s):
     return None
 
 ANSWERS_LESSON_RE = re.compile(r"第\s*([一二三四五六七八九十]{1,4})\s*课")
-# Лавлагаа: "语音练习/题解/词语学习" эхний нэр зөвхөн фонетикийн хичээлүүдэд байдаг
-# (анхны 10 орчим хичээл) — дундаас хойш алга болдог тул 9/30-аар дутуу олсон.
-# "Part One" (第一部分) бол лавлагаагаар бүх хичээлийн гарчгийн хуудасны дараа шууд
-# ордог тогтмол загвар (chuji-zonghe-1 дээр 29/30 олсон) — үүнийг гол тэмдэг болгов.
-TEXTBOOK_START_RE = re.compile(r"\bPart\s+One\b")
-TEXTBOOK_START_FALLBACK_RE = re.compile(r"语音练习|Phonetic Exercises|题\s*解|词语学习")
+# Ном бүрт хичээлийн эхний дэд хэсгийн нэр өөр байдаг (chuji-1: "Part One"
+# фонетик дасгал; chuji-2: "题解 Introduction"; zhongji/gaoji тодорхойгүй) —
+# тул нэг тогтмол regex-ээр барихгүй, олон кандидатаас EXPECTED тоонд хамгийн
+# ойр тохирохыг нь сонгоно (доорх CANDIDATE_RES).
+CANDIDATE_RES = [
+    re.compile(r"\bPart\s+One\b"),
+    re.compile(r"\bIntroduction\b"),
+    re.compile(r"语音练习|Phonetic Exercises"),
+    re.compile(r"题\s*解"),
+    re.compile(r"词语学习"),
+    re.compile(r"\bNotes\b"),
+    re.compile(r"\bVocabulary\b"),
+]
 
 # 教案 (per-lesson teacher-plan files) тооноос гарсан хүлээгдсэн хичээлийн тоо.
 EXPECTED = {
@@ -81,35 +88,33 @@ def answers_lesson_starts(files):
                 out.setdefault(n, []).append(k); last = k
     return out
 
-def textbook_lesson_starts(files, book):
-    """Үндсэн сурах бичиг: эхний удаа '语音练习/题解/词语学习' тохиолдсон хуудсыг
-    хичээлийн эхлэл гэж үзнэ (ойролцоо хуудсуудыг нэгтгэнэ)."""
-    if book in OVERRIDES and OVERRIDES[book].get("starts"):
-        return [int(x) for x in OVERRIDES[book]["starts"]]
-    cands = []
-    for f in files:
-        n = page_no(f)
-        text = open(f, encoding="utf-8", errors="replace").read()
-        head = "\n".join(text.splitlines()[:15])
-        if TEXTBOOK_START_RE.search(head):
-            cands.append(n)
-    if len(cands) < 5:
-        # "Part One" олдоогүй бол (OCR чанар муу эсвэл загвар өөр) хуучин
-        # тэмдгүүдээр оролдоно.
-        cands = []
-        for f in files:
-            n = page_no(f)
-            text = open(f, encoding="utf-8", errors="replace").read()
-            head = "\n".join(text.splitlines()[:12])
-            if TEXTBOOK_START_FALLBACK_RE.search(head):
-                cands.append(n)
+def _merge(cands):
     merged = []
     for n in cands:
         if merged and n - merged[-1] <= 2: continue
         merged.append(n)
+    return merged
+
+def textbook_lesson_starts(files, book):
+    """Үндсэн сурах бичиг: хичээлийн эхний дэд хэсгийн нэрийг ном бүрт өөр байдаг
+    тул CANDIDATE_RES-ээс EXPECTED тоонд хамгийн ойр тохирохыг нь сонгоно."""
+    if book in OVERRIDES and OVERRIDES[book].get("starts"):
+        return [int(x) for x in OVERRIDES[book]["starts"]]
+    exp = EXPECTED.get(book)
+    heads = []
+    for f in files:
+        n = page_no(f)
+        text = open(f, encoding="utf-8", errors="replace").read()
+        heads.append((n, "\n".join(text.splitlines()[:15])))
+    best, best_score = [], float("-inf")
+    for rx in CANDIDATE_RES:
+        cands = _merge([n for n, head in heads if rx.search(head)])
+        score = -abs(len(cands) - exp) if exp else len(cands)
+        if len(cands) >= 3 and score > best_score:
+            best, best_score = cands, score
     extra = OVERRIDES.get(book, {}).get("extra_starts", [])
     excl = set(int(x) for x in OVERRIDES.get(book, {}).get("exclude_starts", []))
-    merged = sorted((set(merged) | set(int(x) for x in extra)) - excl)
+    merged = sorted((set(best) | set(int(x) for x in extra)) - excl)
     return merged
 
 def assemble(book):
