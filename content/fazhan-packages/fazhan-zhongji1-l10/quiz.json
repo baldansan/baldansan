@@ -1,0 +1,560 @@
+[
+ {
+  "type": "cloze",
+  "question": "他在咖啡里（ ）了点儿盐。",
+  "options": [
+   "配",
+   "集中",
+   "引起",
+   "加"
+  ],
+  "correct_answer": "加",
+  "explanation": "加 = нэмэх, хийх (идээнд). 配 — зохицох, 引起 — үүсгэх, 集中 — төвлөрөх.",
+  "order_index": 1,
+  "id": "fazhan-zhongji1-l10-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "尽管他明明知道自己（ ）她，可是他却一下子爱上了她。",
+  "options": [
+   "配不下",
+   "配不上",
+   "配不到",
+   "配不了"
+  ],
+  "correct_answer": "配不上",
+  "explanation": "配不上 — хүрэлцэхгүй (чадвар, байдлаараа). Бусад хэлбэрүүд ийм утгаар хэрэглэгддэггүй.",
+  "order_index": 2,
+  "id": "fazhan-zhongji1-l10-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "他（ ）地邀请她一块儿去喝咖啡。",
+  "options": [
+   "富有",
+   "贫穷",
+   "频繁",
+   "勇敢"
+  ],
+  "correct_answer": "勇敢",
+  "explanation": "勇敢地 + V — зоригтойгоор ямар нэг зүйл хийх. Бусад нь утгаараа тохирохгүй.",
+  "order_index": 3,
+  "id": "fazhan-zhongji1-l10-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "别的客人的目光也一下子（ ）到了他的身上。",
+  "options": [
+   "错过",
+   "征服",
+   "集中",
+   "引起"
+  ],
+  "correct_answer": "集中",
+  "explanation": "目光集中到……身上 — харц нэг газарт төвлөрөх.",
+  "order_index": 4,
+  "id": "fazhan-zhongji1-l10-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这奇怪的举动（ ）了她的好奇心。",
+  "options": [
+   "集中",
+   "引起",
+   "实践",
+   "原谅"
+  ],
+  "correct_answer": "引起",
+  "explanation": "引起 + 好奇心 — сониуч зан төрүүлэх.",
+  "order_index": 5,
+  "id": "fazhan-zhongji1-l10-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "海水进到嘴里，又（ ）又咸。",
+  "options": [
+   "甜",
+   "酸",
+   "苦",
+   "辣"
+  ],
+  "correct_answer": "苦",
+  "explanation": "又苦又咸 — гашуун бас давстай (课文原句). 甜 - чихэрлэг, 辣 - халуун, 酸 - хүчтэй.",
+  "order_index": 6,
+  "id": "fazhan-zhongji1-l10-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "从那以后，两个人（ ）地约会。",
+  "options": [
+   "频繁",
+   "频率",
+   "频繁性",
+   "频道"
+  ],
+  "correct_answer": "频繁",
+  "explanation": "频繁地 + V — байнга, тогтмол (约会 хийх). Бусад нь ийм хэлбэрээр хэрэглэгддэггүй.",
+  "order_index": 7,
+  "id": "fazhan-zhongji1-l10-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "她完全被他给（ ）了。",
+  "options": [
+   "征服",
+   "实践",
+   "原谅",
+   "错过"
+  ],
+  "correct_answer": "征服",
+  "explanation": "被……给征服了 — бүрэн автсан. 错过 — алдах, 原谅 — уучлах, 实践 — хэрэгжүүлэх.",
+  "order_index": 8,
+  "id": "fazhan-zhongji1-l10-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "幸亏当时自己没拒绝他的邀请，要不然就和他（ ）了。",
+  "options": [
+   "引起",
+   "征服",
+   "集中",
+   "错过"
+  ],
+  "correct_answer": "错过",
+  "explanation": "错过 — боломж алдах (энд хосолж чадахгүй болох).",
+  "order_index": 9,
+  "id": "fazhan-zhongji1-l10-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "不管是富有还是（ ），始终相爱。",
+  "options": [
+   "谎言",
+   "贫穷",
+   "勇敢",
+   "频繁"
+  ],
+  "correct_answer": "贫穷",
+  "explanation": "富有⇄贫穷 — баян ⇄ ядуу, эсрэг хос үг.",
+  "order_index": 10,
+  "id": "fazhan-zhongji1-l10-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "亲爱的，（ ）我欺骗了你四十多年。",
+  "options": [
+   "实践",
+   "原谅",
+   "欺骗",
+   "征服"
+  ],
+  "correct_answer": "原谅",
+  "explanation": "原谅 + хуурсан зүйл — уучлах. Өгүүлбэрт 欺骗 аль хэдийн өөр хэсэгт байгаа тул давхцахгүй.",
+  "order_index": 11,
+  "id": "fazhan-zhongji1-l10-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "不过至于加盐咖啡的味道，我现在得说（ ），那简直是太难喝了。",
+  "options": [
+   "童话",
+   "实话",
+   "遗言",
+   "谎言"
+  ],
+  "correct_answer": "实话",
+  "explanation": "说实话 — үнэнийг хэлэх (тогтсон хэллэг).",
+  "order_index": 12,
+  "id": "fazhan-zhongji1-l10-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "«Тэр тодхон мэдсэн хэрнээ, яагаад хэлээгүй юм бэ?» — аль нь зөв бэ?",
+  "options": [
+   "他知道明明，为什么不说呢？",
+   "明明他知道，为什么不说呢？",
+   "他明明知道，为什么不说呢？"
+  ],
+  "correct_answer": "他明明知道，为什么不说呢？",
+  "explanation": "明明 нь мэдэж байгаа зүйлийн (知道) ӨМНӨ ордог.",
+  "order_index": 13,
+  "id": "fazhan-zhongji1-l10-q13",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "出于________，他拨通了那个电话号码。",
+  "options": [
+   "那个女人的好奇对",
+   "对那个女人的好奇",
+   "好奇对那个女人的"
+  ],
+  "correct_answer": "对那个女人的好奇",
+  "explanation": "出于 + 对……的 + сэтгэл хөдлөл — тогтсон бүтэц.",
+  "order_index": 14,
+  "id": "fazhan-zhongji1-l10-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "我之所以越来越在乎\"面子\"了，________。",
+  "options": [
+   "因为是受了中国朋友的影响",
+   "是因为受了中国朋友的影响",
+   "受了中国朋友的影响是因为"
+  ],
+  "correct_answer": "是因为受了中国朋友的影响",
+  "explanation": "之所以……，是因为…… — тогтсон хос бүтэц, дараалал өөрчлөгдөхгүй.",
+  "order_index": 15,
+  "id": "fazhan-zhongji1-l10-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Аль өгүүлбэрт 之所以……是因为…… БУРУУ хэрэглэсэн бэ？",
+  "options": [
+   "我之所以受了中国朋友的影响，是因为越来越在乎面子了。",
+   "我之所以越来越在乎面子了，是因为受了中国朋友的影响。",
+   "他之所以能成功，是因为有很多朋友帮助了他。"
+  ],
+  "correct_answer": "我之所以受了中国朋友的影响，是因为越来越在乎面子了。",
+  "explanation": "Энд ҮР ДҮН, ШАЛТГАА-ны байрлал сольж буруу хэрэглэсэн байна.",
+  "order_index": 16,
+  "id": "fazhan-zhongji1-l10-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "窗户________大风给吹开了。",
+  "options": [
+   "让",
+   "把",
+   "对",
+   "跟"
+  ],
+  "correct_answer": "让",
+  "explanation": "让……给+VP — ярианы идэвхгүй бүтэц. 把 нь идэвхтэй объект шилжүүлэх бүтэц, тохирохгүй.",
+  "order_index": 17,
+  "id": "fazhan-zhongji1-l10-q17",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "我的邀请被她________拒绝了。",
+  "options": [
+   "让",
+   "给",
+   "跟",
+   "把"
+  ],
+  "correct_answer": "给",
+  "explanation": "被……给+VP — 被-ийн ард, VP-ийн өмнө 给 орно.",
+  "order_index": 18,
+  "id": "fazhan-zhongji1-l10-q18",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "这儿的生活很方便，________，地铁站就在附近。",
+  "options": [
+   "比如交通",
+   "就拿交通来说吧",
+   "至于交通"
+  ],
+  "correct_answer": "就拿交通来说吧",
+  "explanation": "就拿……来说吧 — жишээ татах бүтэц; 至于 нь энэ context-д тохирохгүй (至于 нь шинэ, тодорхойгүй сэдэв рүү шилжихэд).",
+  "order_index": 19,
+  "id": "fazhan-zhongji1-l10-q19",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "比赛的地点已经决定了，________，还没有决定。",
+  "options": [
+   "出于比赛的时间",
+   "至于比赛的时间",
+   "就拿比赛的时间来说吧"
+  ],
+  "correct_answer": "至于比赛的时间",
+  "explanation": "至于 + шинэ сэдэв (比赛的时间) — өмнөх сэдвээс шилжих.",
+  "order_index": 20,
+  "id": "fazhan-zhongji1-l10-q20",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Хятадууд гадаад хүнийг 老外 гэж нэрлэдэг» шиг, энд 被/让/叫……给VP ашиглан «Тэр бороонд норсон» гэдгийг хэлбэл аль нь зөв бэ?",
+  "options": [
+   "他把大雨给淋透了。",
+   "他对大雨给淋透了。",
+   "他被大雨给淋透了。"
+  ],
+  "correct_answer": "他被大雨给淋透了。",
+  "explanation": "被……给+VP — идэвхгүй өгүүлбэр, 把 нь идэвхтэй объект шилжүүлэх бүтэц тул энд тохирохгүй.",
+  "order_index": 21,
+  "id": "fazhan-zhongji1-l10-q21",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "出于________，他必须每天都穿西装上班。",
+  "options": [
+   "需要工作的",
+   "工作的需要",
+   "工作需要的"
+  ],
+  "correct_answer": "工作的需要",
+  "explanation": "出于 + нэр үгийн бүлэг (工作的需要), дараалал зөв байх ёстой.",
+  "order_index": 22,
+  "id": "fazhan-zhongji1-l10-q22",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "\"他\"和\"她\"是怎么认识的？",
+  "options": [
+   "在学校里认识的",
+   "在一个晚会上认识的",
+   "在咖啡馆工作时认识的"
+  ],
+  "correct_answer": "在一个晚会上认识的",
+  "explanation": "1-р догол мөр: 他和她是在一个晚会上认识的。",
+  "order_index": 23,
+  "id": "fazhan-zhongji1-l10-q23",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "服务员把咖啡端上来的时候，\"他\"说了什么话？",
+  "options": [
+   "麻烦您拿点儿糖过来",
+   "麻烦您拿点儿盐过来",
+   "麻烦您拿杯水来"
+  ],
+  "correct_answer": "麻烦您拿点儿盐过来",
+  "explanation": "3-р догол мөр: 他结结巴巴地说：\"麻、麻、麻烦您拿点儿盐过来。\"",
+  "order_index": 24,
+  "id": "fazhan-zhongji1-l10-q24",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "\"他\"为什么喜欢在咖啡里放盐（他自己当时说的原因）？",
+  "options": [
+   "因为他喜欢咸的东西",
+   "小时候家住海边，可能是想家了",
+   "因为服务员拿错了"
+  ],
+  "correct_answer": "小时候家住海边，可能是想家了",
+  "explanation": "3-р догол мөр: 之所以喜欢在咖啡里放盐，可能是因为想家了吧。",
+  "order_index": 25,
+  "id": "fazhan-zhongji1-l10-q25",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "那封信里，\"他\"真正想对服务小姐说的是什么？",
+  "options": [
+   "拿些糖来",
+   "拿杯水来",
+   "拿些盐来"
+  ],
+  "correct_answer": "拿些糖来",
+  "explanation": "8-р догол мөр: 其实我是想说\"糖\"，我喝咖啡从来不放盐。",
+  "order_index": 26,
+  "id": "fazhan-zhongji1-l10-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "\"他\"为什么用一生实践这个谎言？",
+  "options": [
+   "怕服务员生气",
+   "觉得加盐的咖啡更好喝",
+   "怕她不原谅他说谎，怕她会离开他"
+  ],
+  "correct_answer": "怕她不原谅他说谎，怕她会离开他",
+  "explanation": "8-р догол мөр: 我怕你不原谅我说谎，我怕你会因此离开我。",
+  "order_index": 27,
+  "id": "fazhan-zhongji1-l10-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "这段爱情最后的结果是什么？",
+  "options": [
+   "两人很快就分手了",
+   "她一直没有原谅他",
+   "他们结婚幸福生活了四十多年，直到他去世"
+  ],
+  "correct_answer": "他们结婚幸福生活了四十多年，直到他去世",
+  "explanation": "6-р догол мөр: 他们在一起幸福地过了四十多年……一直到他得病去世。",
+  "order_index": 28,
+  "id": "fazhan-zhongji1-l10-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 她 / 被 / 征服 / 完全 / 他 / 给 / 了",
+  "options": [
+   "她被完全他给征服了",
+   "她完全被他给征服了",
+   "她完全被给他征服了"
+  ],
+  "correct_answer": "她完全被他给征服了",
+  "explanation": "S + 完全 + 被 + A + 给 + VP+了 — 完全 нь 被-ийн өмнө байрлана.",
+  "order_index": 29,
+  "id": "fazhan-zhongji1-l10-q29",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 出于 / 礼貌 / 答应 / 了 / 还是",
+  "options": [
+   "答应了出于礼貌，还是",
+   "还是出于礼貌答应了",
+   "出于礼貌，还是答应了"
+  ],
+  "correct_answer": "出于礼貌，还是答应了",
+  "explanation": "出于 + шалтгаан (礼貌)，+ үр дүн (还是答应了).",
+  "order_index": 30,
+  "id": "fazhan-zhongji1-l10-q30",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 至于 / 房价贵不贵 / 我 / 就 / 不知道了",
+  "options": [
+   "我至于房价贵不贵，就不知道了",
+   "房价贵不贵至于，我就不知道了",
+   "至于房价贵不贵，我就不知道了"
+  ],
+  "correct_answer": "至于房价贵不贵，我就不知道了",
+  "explanation": "至于 + шинэ сэдэв (房价贵不贵) эхэнд, дараа нь тайлбар.",
+  "order_index": 31,
+  "id": "fazhan-zhongji1-l10-q31",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 之所以 / 是因为 / 想家了 / 喜欢放盐 / 他",
+  "options": [
+   "他是因为想家了，之所以喜欢放盐",
+   "他之所以喜欢放盐，是因为想家了",
+   "之所以他喜欢放盐，是因为想家了"
+  ],
+  "correct_answer": "他之所以喜欢放盐，是因为想家了",
+  "explanation": "S + 之所以 + үр дүн，+ 是因为 + шалтгаан.",
+  "order_index": 32,
+  "id": "fazhan-zhongji1-l10-q32",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "hard"
+ }
+]

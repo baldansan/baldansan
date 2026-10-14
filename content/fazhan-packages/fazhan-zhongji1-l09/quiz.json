@@ -1,0 +1,558 @@
+[
+ {
+  "type": "cloze",
+  "question": "人类早就发现，许多生物都有很强的\"时间（ ）\"。",
+  "options": [
+   "观念",
+   "规律",
+   "信息",
+   "误差"
+  ],
+  "correct_answer": "观念",
+  "explanation": "时间观念 — цаг хугацааг мэдэрч захирагддаг чадвар. 信息 — мэдээлэл, 规律 — зүй тогтол, 误差 — алдаа.",
+  "order_index": 1,
+  "id": "fazhan-zhongji1-l09-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "误差只有15秒，因此那里的（ ）把它叫做\"鸟钟\"。",
+  "options": [
+   "居民",
+   "科学家",
+   "医生",
+   "学生"
+  ],
+  "correct_answer": "居民",
+  "explanation": "居民 — оршин суугч.",
+  "order_index": 2,
+  "id": "fazhan-zhongji1-l09-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "在那里生活的人们就把这种小虫（ ）回家，拿它当\"虫钟\"。",
+  "options": [
+   "买",
+   "捉",
+   "养",
+   "放"
+  ],
+  "correct_answer": "捉",
+  "explanation": "捉 — барих, бариад авах.",
+  "order_index": 3,
+  "id": "fazhan-zhongji1-l09-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "科学家们早就注意到了这种生物钟的（ ）。",
+  "options": [
+   "器官",
+   "激素",
+   "现象",
+   "苦恼"
+  ],
+  "correct_answer": "现象",
+  "explanation": "现象 — үзэгдэл.",
+  "order_index": 4,
+  "id": "fazhan-zhongji1-l09-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "甚至人的（ ）的变化，等等，都受到生物钟的控制。",
+  "options": [
+   "视觉",
+   "记忆力",
+   "情绪",
+   "体温"
+  ],
+  "correct_answer": "情绪",
+  "explanation": "情绪 — сэтгэл хөдлөл. 视觉 — хараа, 体温 — биеийн халуун (өмнө нь аль хэдийн дурдсан), 记忆力 — санах ой.",
+  "order_index": 5,
+  "id": "fazhan-zhongji1-l09-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "可以说，无论动物、植物、微生物，（ ）生物，都有自己的生物钟。",
+  "options": [
+   "因为",
+   "如果",
+   "凡是",
+   "甚至"
+  ],
+  "correct_answer": "凡是",
+  "explanation": "凡是……，都…… — юу ч бай … бүгд.",
+  "order_index": 6,
+  "id": "fazhan-zhongji1-l09-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "但实验证明眼睛虽然是人体最重要的（ ）器官，但与生物钟无关。",
+  "options": [
+   "视觉",
+   "味觉",
+   "触觉",
+   "听觉"
+  ],
+  "correct_answer": "视觉",
+  "explanation": "视觉器官 — харааны эрхтэн (нүд).",
+  "order_index": 7,
+  "id": "fazhan-zhongji1-l09-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "盲人也有（ ）的苦恼，这就是一个证据。",
+  "options": [
+   "时差",
+   "信息",
+   "误差",
+   "情绪"
+  ],
+  "correct_answer": "时差",
+  "explanation": "时差的苦恼 — цаг хугацааны зөрүүний зовлон.",
+  "order_index": 8,
+  "id": "fazhan-zhongji1-l09-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "这个实验结果不但给经过长途飞行而需要（ ）时差的人带来福音。",
+  "options": [
+   "调",
+   "倒",
+   "治",
+   "变"
+  ],
+  "correct_answer": "倒",
+  "explanation": "倒时差 — цаг хугацааны зөрүүг эргүүлэн тохируулах.",
+  "order_index": 9,
+  "id": "fazhan-zhongji1-l09-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "也给季节性情绪（ ）的人和睡眠不好的人带来了希望。",
+  "options": [
+   "调整",
+   "影响",
+   "高涨",
+   "低落"
+  ],
+  "correct_answer": "低落",
+  "explanation": "情绪低落 — сэтгэл гутралтай.",
+  "order_index": 10,
+  "id": "fazhan-zhongji1-l09-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "半夜0点～1点，人体内产生的生长（ ）最多。",
+  "options": [
+   "器官",
+   "信息",
+   "细胞",
+   "激素"
+  ],
+  "correct_answer": "激素",
+  "explanation": "生长激素 — өсөлтийн даавар.",
+  "order_index": 11,
+  "id": "fazhan-zhongji1-l09-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "16点～18点是运动的理想时间，因为这时人的（ ）最好。",
+  "options": [
+   "体力",
+   "血压",
+   "体温",
+   "心率"
+  ],
+  "correct_answer": "体力",
+  "explanation": "体力 — биеийн хүч.",
+  "order_index": 12,
+  "id": "fazhan-zhongji1-l09-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Аль нь зөв бэ? «Бид 5 өдөр ажиллаад 2 өдөр амардаг»",
+  "options": [
+   "每我们工作五天，就休息两天。",
+   "我们现在是每五天工作，就休息两天都。",
+   "我们现在是每工作五天，就休息两天。"
+  ],
+  "correct_answer": "我们现在是每工作五天，就休息两天。",
+  "explanation": "每+V(工作五天)+就+休息两天 — 每 нь эзний ард, давтагдах үйлдлийн өмнө ордог.",
+  "order_index": 13,
+  "id": "fazhan-zhongji1-l09-q13",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Аль нь зөв бэ? «Тэр хоёр эгч дүүгийн нэрийг ихэвчлэн андуурдаг»",
+  "options": [
+   "我们常常当姐姐拿妹妹，当妹妹拿姐姐。",
+   "我们常常拿姐姐当妹妹，拿妹妹当姐姐。",
+   "我们常常姐姐拿当妹妹，妹妹拿当姐姐。"
+  ],
+  "correct_answer": "我们常常拿姐姐当妹妹，拿妹妹当姐姐。",
+  "explanation": "拿+А+当+Б тогтсон дараалал.",
+  "order_index": 14,
+  "id": "fazhan-zhongji1-l09-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Аль нь зөв бэ? (……，为的是……)",
+  "options": [
+   "她为的是努力学习让家人高兴。",
+   "她努力学习，为的是让家人高兴。",
+   "她努力学习为了是让家人高兴。"
+  ],
+  "correct_answer": "她努力学习，为的是让家人高兴。",
+  "explanation": "为的是 нь үйлдлийн АРД, зорилгыг тайлбарлахад ордог.",
+  "order_index": 15,
+  "id": "fazhan-zhongji1-l09-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Аль өгүүлбэрт 甚至 зөв хэрэглэгдсэн бэ?",
+  "options": [
+   "不但中国人知道他的名字，甚至外国人也知道他的名字。",
+   "甚至不但中国人知道他的名字，外国人也知道他的名字。",
+   "外国人也知道他的名字，不但中国人甚至知道。"
+  ],
+  "correct_answer": "不但中国人知道他的名字，甚至外国人也知道他的名字。",
+  "explanation": "不但……, 甚至……也…… — ерөнхий жишээ эхэнд, туйлширсан жишээ ард.",
+  "order_index": 16,
+  "id": "fazhan-zhongji1-l09-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "Аль нь зөв бэ? (凡是……，都……)",
+  "options": [
+   "到北京旅游的人凡是，都想去参观长城、故宫。",
+   "凡是都到北京旅游的人，想去参观长城、故宫。",
+   "凡是到北京旅游的人，都想去参观长城、故宫。"
+  ],
+  "correct_answer": "凡是到北京旅游的人，都想去参观长城、故宫。",
+  "explanation": "凡是 нь хамрах хүрээг заасан хэсгийн ЭХЭНД ордог.",
+  "order_index": 17,
+  "id": "fazhan-zhongji1-l09-q17",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "凡是中国菜，（ ）他不喜欢吃。",
+  "options": [
+   "都没有哪个",
+   "没有哪个",
+   "没有都"
+  ],
+  "correct_answer": "没有哪个",
+  "explanation": "没有+哪个+эзэн+不+V — тогтсон дараалал.",
+  "order_index": 18,
+  "id": "fazhan-zhongji1-l09-q18",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "他从来（ ）拿分数当考试的目标。",
+  "options": [
+   "不",
+   "没",
+   "别"
+  ],
+  "correct_answer": "不",
+  "explanation": "不拿A当B — 不 нь 拿-гийн өмнө ордог.",
+  "order_index": 19,
+  "id": "fazhan-zhongji1-l09-q19",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "弟弟每天走路去公司上班，（ ）是锻炼身体。",
+  "options": [
+   "为的",
+   "因为",
+   "为了"
+  ],
+  "correct_answer": "为的",
+  "explanation": "……，为的是…… — тогтсон хэллэг (为的+是).",
+  "order_index": 20,
+  "id": "fazhan-zhongji1-l09-q20",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "姐妹两个人长得太像了，不但朋友常常弄错，（ ）她们的父母有时也分不清楚。",
+  "options": [
+   "甚至",
+   "凡是",
+   "一般来说"
+  ],
+  "correct_answer": "甚至",
+  "explanation": "甚至 — хамгийн туйлширсан жишээ нэмнэ.",
+  "order_index": 21,
+  "id": "fazhan-zhongji1-l09-q21",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "只要是运动，他都喜欢。→",
+  "options": [
+   "运动凡是，他都喜欢。",
+   "凡是运动，他都喜欢。",
+   "凡是运动都，他喜欢。"
+  ],
+  "correct_answer": "凡是运动，他都喜欢。",
+  "explanation": "凡是+хүрээ+，эзэн+都+V.",
+  "order_index": 22,
+  "id": "fazhan-zhongji1-l09-q22",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "\"鸟钟\"每过多长时间就会叫一次？",
+  "options": [
+   "30分钟",
+   "2小时",
+   "1小时"
+  ],
+  "correct_answer": "30分钟",
+  "explanation": "1-р догол мөр: 它每过30分钟就会叫上一阵子。",
+  "order_index": 23,
+  "id": "fazhan-zhongji1-l09-q23",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "盲人也有时差的苦恼，这说明什么？",
+  "options": [
+   "盲人没有生物钟",
+   "眼睛是最重要的器官",
+   "生物钟与眼睛无关"
+  ],
+  "correct_answer": "生物钟与眼睛无关",
+  "explanation": "5-р догол мөр: 这就是一个证据（生物钟与视觉器官无关）。",
+  "order_index": 24,
+  "id": "fazhan-zhongji1-l09-q24",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "科学家用什么办法证明人的腿上也有生物钟？",
+  "options": [
+   "给腿打激素",
+   "测量腿的体温",
+   "用很强的光照射腿"
+  ],
+  "correct_answer": "用很强的光照射腿",
+  "explanation": "6-р догол мөр: 当用很强的光照射腿时，就能调整人体的生物钟。",
+  "order_index": 25,
+  "id": "fazhan-zhongji1-l09-q25",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "\"美容睡眠期\"指的是哪个时间段？",
+  "options": [
+   "上午6点～9点",
+   "半夜0点～1点",
+   "下午16点～18点"
+  ],
+  "correct_answer": "半夜0点～1点",
+  "explanation": "8-р догол мөр.",
+  "order_index": 26,
+  "id": "fazhan-zhongji1-l09-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "为什么说中国黄海的\"驴钟\"很准？",
+  "options": [
+   "误差只有15秒",
+   "从不出错",
+   "误差只有3分钟"
+  ],
+  "correct_answer": "误差只有3分钟",
+  "explanation": "1-р догол мөр.",
+  "order_index": 27,
+  "id": "fazhan-zhongji1-l09-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "文章最后说，我们应该怎么做才能保证健康？",
+  "options": [
+   "遵守自己的生物钟",
+   "经常倒时差",
+   "尽量少睡觉"
+  ],
+  "correct_answer": "遵守自己的生物钟",
+  "explanation": "9-р догол мөр: 只有遵守了生物钟，才能保证健康。",
+  "order_index": 28,
+  "id": "fazhan-zhongji1-l09-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 生物钟 / 都 / 凡是 / 有 / 自己的 / 生物 / ，",
+  "options": [
+   "生物凡是，都有自己的生物钟。",
+   "凡是生物都，有自己的生物钟。",
+   "凡是生物，都有自己的生物钟。"
+  ],
+  "correct_answer": "凡是生物，都有自己的生物钟。",
+  "explanation": "凡是+хүрээ，都+V.",
+  "order_index": 29,
+  "id": "fazhan-zhongji1-l09-q29",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 把 / 拿 / 它 / 虫钟 / 当",
+  "options": [
+   "把它当拿虫钟",
+   "拿它当虫钟",
+   "当它拿虫钟"
+  ],
+  "correct_answer": "拿它当虫钟",
+  "explanation": "拿+A(它)+当+B(虫钟).",
+  "order_index": 30,
+  "id": "fazhan-zhongji1-l09-q30",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 为的是 / 养驴 / 报时 / 让它 / 当地有很多人家，",
+  "options": [
+   "当地有很多人家养驴，为的是让它报时。",
+   "当地有很多人家，为的是养驴让它报时。",
+   "当地有很多人家养驴为的是，让它报时。"
+  ],
+  "correct_answer": "当地有很多人家养驴，为的是让它报时。",
+  "explanation": "Үйлдэл，为的是＋зорилго.",
+  "order_index": 31,
+  "id": "fazhan-zhongji1-l09-q31",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 甚至 / 变化 / 情绪的 / 人的 / 都受到生物钟的控制",
+  "options": [
+   "甚至人的情绪的变化都受到生物钟的控制",
+   "甚至都受到生物钟的控制人的情绪的变化",
+   "人的情绪的变化甚至都受到生物钟的控制"
+  ],
+  "correct_answer": "甚至人的情绪的变化都受到生物钟的控制",
+  "explanation": "甚至 нэмэлт жишээний ӨМНӨ.",
+  "order_index": 32,
+  "id": "fazhan-zhongji1-l09-q32",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "hard"
+ }
+]

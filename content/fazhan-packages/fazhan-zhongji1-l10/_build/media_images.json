@@ -1,0 +1,8 @@
+[
+ {"id": "love-couple", "file": "images/love-couple.jpg", "title": "爱情 — хайр дурлал, хос", "role": "hero", "section": "teacher-intro"},
+ {"id": "muguang-gaze", "file": "images/muguang-gaze.jpg", "title": "目光 — харц, хараа", "role": "illustration", "section": "vocabulary"},
+ {"id": "yonggan-brave", "file": "images/yonggan-brave.jpg", "title": "勇敢 — зоригтой", "role": "illustration", "section": "vocabulary"},
+ {"id": "tonghua-fairytale", "file": "images/tonghua-fairytale.jpg", "title": "童话 —王子、公主 (үлгэр, хунтайж, гүнж)", "role": "illustration", "section": "vocabulary"},
+ {"id": "zhengfu-conquer", "file": "images/zhengfu-conquer.jpg", "title": "征服 — эзэмдэх, даван туулах", "role": "illustration", "section": "vocabulary"},
+ {"id": "huangyan-lie", "file": "images/huangyan-lie.jpg", "title": "谎言 — худал ам", "role": "illustration", "section": "vocabulary"}
+]

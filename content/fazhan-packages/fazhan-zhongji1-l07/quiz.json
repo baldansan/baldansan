@@ -1,0 +1,577 @@
+[
+ {
+  "type": "cloze",
+  "question": "新年期间，我第一次被（ ）参加一个中国朋友的婚礼。",
+  "options": [
+   "邀请",
+   "评价",
+   "捐",
+   "说明"
+  ],
+  "correct_answer": "邀请",
+  "explanation": "邀请 = урих. 说明 — илтгэх, 评价 — үнэлэх, 捐 — хандивлах.",
+  "order_index": 1,
+  "id": "fazhan-zhongji1-l07-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "是贺卡？还是一种（ ）的护身符？",
+  "options": [
+   "优雅",
+   "神秘",
+   "理想",
+   "自然"
+  ],
+  "correct_answer": "神秘",
+  "explanation": "神秘 = нууцлаг. 优雅 — дэгжин, 自然 — байгалийн жамаар, 理想 — тохиромжтой.",
+  "order_index": 2,
+  "id": "fazhan-zhongji1-l07-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "反正你是外国人，不懂中国的习惯，不送也（ ）。",
+  "options": [
+   "需要",
+   "可以",
+   "必须",
+   "应该"
+  ],
+  "correct_answer": "可以",
+  "explanation": "不送也可以 — өгөхгүй ч болно. 应该/需要/必须 нь үүргийг онцолно, өгүүлбэрт тохирохгүй.",
+  "order_index": 3,
+  "id": "fazhan-zhongji1-l07-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我宁可变成（ ），也不愿意被人当成小气鬼。",
+  "options": [
+   "标准",
+   "能力",
+   "穷鬼",
+   "富人"
+  ],
+  "correct_answer": "穷鬼",
+  "explanation": "穷鬼 = ядуу хүн (басамжилсан). 富人 — баян хүн, 能力/标准 нэр үг боловч утга тохирохгүй.",
+  "order_index": 4,
+  "id": "fazhan-zhongji1-l07-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "因为不用付小费而感到（ ）。",
+  "options": [
+   "马虎",
+   "轻松",
+   "压力",
+   "惊喜"
+  ],
+  "correct_answer": "轻松",
+  "explanation": "轻松 = хөнгөн (сэтгэл санаа). 惊喜 — гэнэтийн баяр (өмнөх хэсэгт аль хэдийн хэрэглэсэн), 压力 — дарамт, 马虎 — хайхрамжгүй.",
+  "order_index": 5,
+  "id": "fazhan-zhongji1-l07-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我开始为中国朋友一次次的请客而感到不好意思，感到有（ ）了。",
+  "options": [
+   "观念",
+   "面子",
+   "收入",
+   "压力"
+  ],
+  "correct_answer": "压力",
+  "explanation": "有压力 = дарамттай болох. 面子 — нүүр царай, 观念 — үзэл бодол, 收入 — орлого.",
+  "order_index": 6,
+  "id": "fazhan-zhongji1-l07-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我和这里的人们一样，似乎越来越（ ）\"面子\"了。",
+  "options": [
+   "说明",
+   "在乎",
+   "捐",
+   "评价"
+  ],
+  "correct_answer": "在乎",
+  "explanation": "在乎 = тоох, анхаарах. 说明 — илтгэх, 评价 — үнэлэх, 捐 — хандивлах.",
+  "order_index": 7,
+  "id": "fazhan-zhongji1-l07-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "不论餐厅环境多么（ ），都一定得抢着付钱。",
+  "options": [
+   "优雅",
+   "神秘",
+   "自然",
+   "理想"
+  ],
+  "correct_answer": "优雅",
+  "explanation": "优雅 = дэгжин сайхан (орчны тухай). 神秘 — нууцлаг, 理想 — тохиромжтой, 自然 — байгалийн жамаар.",
+  "order_index": 8,
+  "id": "fazhan-zhongji1-l07-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "\"不小心\"忘记（ ）价签，那是聪明的小花招，而不是马虎。",
+  "options": [
+   "抢着",
+   "说明",
+   "撕掉",
+   "捐给"
+  ],
+  "correct_answer": "撕掉",
+  "explanation": "撕掉 = урж хаях. 抢着 — түрүүлж авах, 捐给 — хандивлах, 说明 — илтгэх.",
+  "order_index": 9,
+  "id": "fazhan-zhongji1-l07-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "小气的人，就算他很有（ ），也没有朋友。",
+  "options": [
+   "观念",
+   "能力",
+   "面子",
+   "场所"
+  ],
+  "correct_answer": "能力",
+  "explanation": "能力 = чадвар. 面子 — нүүр царай, 场所 — газар, 观念 — үзэл бодол.",
+  "order_index": 10,
+  "id": "fazhan-zhongji1-l07-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "朋友聚会，最理想的（ ）是咖啡馆。",
+  "options": [
+   "场所",
+   "环境",
+   "传统",
+   "标准"
+  ],
+  "correct_answer": "场所",
+  "explanation": "场所 = газар (үйл ажиллагаа явагдах). 标准 — шалгуур, 传统 — уламжлал, 环境 — орчин (илүү өргөн утгатай, 场所-той адил биш).",
+  "order_index": 11,
+  "id": "fazhan-zhongji1-l07-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "越来越多的人开始（ ）钱办学、修路、帮助有困难的人。",
+  "options": [
+   "抢",
+   "掏",
+   "捐",
+   "塞"
+  ],
+  "correct_answer": "捐",
+  "explanation": "捐 = хандивлах. 掏 — халаасаас гаргах, 塞 — шахаж хийх, 抢 — түрүүлж авах.",
+  "order_index": 12,
+  "id": "fazhan-zhongji1-l07-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "追求姑娘的小伙子们，有时还是应该大方地（ ）请客的。",
+  "options": [
+   "存钱",
+   "掏钱",
+   "付钱",
+   "捐钱"
+  ],
+  "correct_answer": "掏钱",
+  "explanation": "掏钱 = (халаасаа ухаж) мөнгө гаргах. 捐钱 — хандивлах, 付钱 — төлөх (боломжтой ч эх бичвэр 掏钱), 存钱 — хуримтлуулах.",
+  "order_index": 13,
+  "id": "fazhan-zhongji1-l07-q13",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "«Чи яаж ч хэлсэн, би яахав ч гэсэн явахгүй» — аль нь зөв бэ?",
+  "options": [
+   "无论你怎么说，反正我是不会去的。",
+   "你怎么说无论，反正我不会去的。",
+   "反正你怎么说，我是不会去的。"
+  ],
+  "correct_answer": "无论你怎么说，反正我是不会去的。",
+  "explanation": "无论/不论……，反正…… — ямар ч нөхцөлд өөрчлөгдөхгүй дүгнэлт.",
+  "order_index": 14,
+  "id": "fazhan-zhongji1-l07-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Аль нь зөв бэ? «Яахав ч гэсэн ойрхон, явган явъя»",
+  "options": [
+   "反正不远，我们走着去吧。",
+   "我们走着去吧反正不远。",
+   "不远反正，我们走着去吧。"
+  ],
+  "correct_answer": "反正不远，我们走着去吧。",
+  "explanation": "反正 нь өгүүлбэрийн эхэнд ордог.",
+  "order_index": 15,
+  "id": "fazhan-zhongji1-l07-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "我们（ ）共同的爱好（ ）成为好朋友。",
+  "options": [
+   "就算 / 也",
+   "因为 / 而",
+   "为 / 而"
+  ],
+  "correct_answer": "因为 / 而",
+  "explanation": "因为……而…… — шалтгаан (共同的爱好) → үр дүн (成为好朋友).",
+  "order_index": 16,
+  "id": "fazhan-zhongji1-l07-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "她（ ）自己的不礼貌（ ）向大家道歉。",
+  "options": [
+   "为 / 而",
+   "因为 / 而",
+   "反正 / 就"
+  ],
+  "correct_answer": "为 / 而",
+  "explanation": "为……而…… — 为-гийн ард шалтгаан/объект, 而-гийн ард үйлдэл (道歉).",
+  "order_index": 17,
+  "id": "fazhan-zhongji1-l07-q17",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Аль нь ЗӨВ бэ?",
+  "options": [
+   "全家人都为我考上名牌大学而高兴。",
+   "全家人都我考上名牌大学而高兴。",
+   "全家人都因为我考上名牌大学高兴。"
+  ],
+  "correct_answer": "全家人都为我考上名牌大学而高兴。",
+  "explanation": "为……而…… бүтцэд 而-г орхиж болохгүй, 为 ч мөн адил.",
+  "order_index": 18,
+  "id": "fazhan-zhongji1-l07-q18",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "小气的人，（ ）他很有能力，（ ）没有朋友。",
+  "options": [
+   "就算 / 也",
+   "因为 / 而",
+   "反正 / 就"
+  ],
+  "correct_answer": "就算 / 也",
+  "explanation": "就算……，也…… — тэгсэн ч гэсэн, өөрчлөгдөхгүй үр дүн.",
+  "order_index": 19,
+  "id": "fazhan-zhongji1-l07-q19",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Аль нь зөв бэ? «Чи их уурласан байсан ч, хүн цохиж болохгүй»",
+  "options": [
+   "就算你很生气，不应该打人也。",
+   "就算你很生气，也不应该打人。",
+   "你很生气就算，也不应该打人。"
+  ],
+  "correct_answer": "就算你很生气，也不应该打人。",
+  "explanation": "就算 нь нөхцлийн эхэнд, 也 нь үр дүнгийн өмнө ордог.",
+  "order_index": 20,
+  "id": "fazhan-zhongji1-l07-q20",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "就算是那些富人们，他们一般也不会（ ）很多钱请客。",
+  "options": [
+   "捐",
+   "花",
+   "赚",
+   "存"
+  ],
+  "correct_answer": "花",
+  "explanation": "花钱 = мөнгө үрэх/зарцуулах. 捐 — хандивлах (дараагийн өгүүлбэрт орсон), 存 — хуримтлуулах, 赚 — олох.",
+  "order_index": 21,
+  "id": "fazhan-zhongji1-l07-q21",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "我得早点儿睡觉，（ ），我明天早上会迟到的。",
+  "options": [
+   "要不然",
+   "反正",
+   "就算"
+  ],
+  "correct_answer": "要不然",
+  "explanation": "要不然 = эс тэгвэл (муу үр дагавар анхааруулах).",
+  "order_index": 22,
+  "id": "fazhan-zhongji1-l07-q22",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Аль нь зөв бэ? «Чи миний үгэнд итгэвэл дээр, эс тэгвэл харамсах болно»",
+  "options": [
+   "你最好相信我的话，要不然，你会后悔的。",
+   "你最好相信我的话，你会后悔的要不然。",
+   "要不然你最好相信我的话，你会后悔的。"
+  ],
+  "correct_answer": "你最好相信我的话，要不然，你会后悔的。",
+  "explanation": "要不然 нь зөвлөгөөний ард, муу үр дагаврын өмнө ордог.",
+  "order_index": 23,
+  "id": "fazhan-zhongji1-l07-q23",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Аль өгүүлбэрт 要不然 БУРУУ байрлалд байна вэ?",
+  "options": [
+   "快打电话告诉他吧，要不然他就赶不上飞机了。",
+   "你们快打电话告诉他，要不然，他就赶不上飞机了。",
+   "要不然你们快打电话告诉他，他就赶不上飞机了。"
+  ],
+  "correct_answer": "要不然你们快打电话告诉他，他就赶不上飞机了。",
+  "explanation": "要不然 нь өгүүлбэрийн эхэнд биш, зөвлөгөөний ард орох ёстой.",
+  "order_index": 24,
+  "id": "fazhan-zhongji1-l07-q24",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "他（ ）找到一份理想的工作而努力学习。",
+  "options": [
+   "因为",
+   "为",
+   "就算"
+  ],
+  "correct_answer": "为",
+  "explanation": "为……而…… — ажил олох нь ЗОРИЛГО тул 为.",
+  "order_index": 25,
+  "id": "fazhan-zhongji1-l07-q25",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "新郎和新娘给大家敬酒时，客人们都要送上什么？",
+  "options": [
+   "一瓶酒",
+   "一张贺卡",
+   "一个红色的小信封（里面是钱）"
+  ],
+  "correct_answer": "一个红色的小信封（里面是钱）",
+  "explanation": "1-р догол мөр: 每位客人都送上一个红色的小信封.",
+  "order_index": 26,
+  "id": "fazhan-zhongji1-l07-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "信封里钱数的多少说明什么？",
+  "options": [
+   "和新人的关系越近",
+   "客人越有钱",
+   "新人越喜欢这个客人"
+  ],
+  "correct_answer": "和新人的关系越近",
+  "explanation": "1-р догол мөр: 送得越多说明和新人的关系越近.",
+  "order_index": 27,
+  "id": "fazhan-zhongji1-l07-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "刚到中国时，\"我\"因为什么而感到惊喜和轻松？",
+  "options": [
+   "婚礼很热闹",
+   "中国朋友很大方",
+   "物价低，不用付小费"
+  ],
+  "correct_answer": "物价低，不用付小费",
+  "explanation": "2-р догол мөр.",
+  "order_index": 28,
+  "id": "fazhan-zhongji1-l07-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "\"我\"明白了买贵重礼物时可以怎么做？",
+  "options": [
+   "可以不撕掉价签",
+   "一定要撕掉价签",
+   "不能送贵重礼物"
+  ],
+  "correct_answer": "可以不撕掉价签",
+  "explanation": "3-р догол мөр.",
+  "order_index": 29,
+  "id": "fazhan-zhongji1-l07-q29",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "在中国人的文化传统里，什么是评价人的重要标准？",
+  "options": [
+   "收入",
+   "能力",
+   "大方"
+  ],
+  "correct_answer": "大方",
+  "explanation": "4-р догол мөр：\"大方\"是评价人的重要标准。",
+  "order_index": 30,
+  "id": "fazhan-zhongji1-l07-q30",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "那些富人们更愿意把钱用在哪儿？",
+  "options": [
+   "请朋友吃饭",
+   "捐给学校、医院或教堂",
+   "买贵重的礼物"
+  ],
+  "correct_answer": "捐给学校、医院或教堂",
+  "explanation": "5-р догол мөр.",
+  "order_index": 31,
+  "id": "fazhan-zhongji1-l07-q31",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 很有能力 / 就算 / 他 / 也没有朋友 / 小气的人",
+  "options": [
+   "小气的人，就算他很有能力，也没有朋友",
+   "小气的人很有能力，就算也没有朋友",
+   "就算小气的人，他很有能力，也没有朋友"
+  ],
+  "correct_answer": "小气的人，就算他很有能力，也没有朋友",
+  "explanation": "эзэн(小气的人)，就算+нөхцөл，也+үр дүн.",
+  "order_index": 32,
+  "id": "fazhan-zhongji1-l07-q32",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 要不然 / 早点儿睡觉 / 我得 / 会迟到的 / 我明天早上",
+  "options": [
+   "我得早点儿睡觉，我明天早上会迟到的要不然",
+   "要不然我得早点儿睡觉，我明天早上会迟到的",
+   "我得早点儿睡觉，要不然，我明天早上会迟到的"
+  ],
+  "correct_answer": "我得早点儿睡觉，要不然，我明天早上会迟到的",
+  "explanation": "зөвлөгөө，要不然，муу үр дагавар.",
+  "order_index": 33,
+  "id": "fazhan-zhongji1-l07-q33",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ }
+]

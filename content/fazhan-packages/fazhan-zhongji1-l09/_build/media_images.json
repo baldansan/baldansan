@@ -1,0 +1,7 @@
+[
+ {"id":"hero","file":"images/shengwuzhong-hero.jpg","title":"生物钟 — хүний биеийн цаг (сэрэх дохио)","role":"hero","section":"teacher-intro"},
+ {"id":"weishengwu","file":"images/weishengwu.jpg","title":"微生物 — цармагтсан микробын зураг","role":"illustration","section":"vocabulary"},
+ {"id":"dao","file":"images/dao-island.jpg","title":"岛 — далайн дунд байх жижиг арал («驴钟»-ийн тухай хэсэгт)","role":"illustration","section":"vocabulary"},
+ {"id":"shuailao","file":"images/shuailao.jpg","title":"衰老 — настай ба залуу хоёр эмэгтэйг харьцуулсан зураг","role":"illustration","section":"vocabulary"},
+ {"id":"zhengju","file":"images/zhengju.jpg","title":"证据 — шүүх дээр баримт бичиг үзүүлж буй эрэгтэй (证据 үгийн жишээ)","role":"illustration","section":"vocabulary"}
+]

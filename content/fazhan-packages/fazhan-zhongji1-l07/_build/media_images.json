@@ -1,0 +1,8 @@
+[
+ {"id": "img1", "file": "images/hunli-xinren.jpg", "title": "婚礼 — хурим (сурагч, бэр)", "role": "hero", "section": "teacher-intro"},
+ {"id": "img2", "file": "images/yingqin-duiwu.jpg", "title": "迎亲队伍 — хуримын цуваа (уламжлалт)", "role": "illustration", "section": "vocabulary"},
+ {"id": "img3", "file": "images/huajiao.jpg", "title": "花轿 — уламжлалт улаан сэнтий", "role": "illustration", "section": "vocabulary"},
+ {"id": "img4", "file": "images/jingjiu-yishi.jpg", "title": "敬酒 — хуримын ёслол, аяга өргөх", "role": "illustration", "section": "dialogue"},
+ {"id": "img5", "file": "images/jingyan.jpg", "title": "敬酒/敬烟 — ахмад хүнд тамхи, архи санал болгох ёс", "role": "illustration", "section": "vocabulary"},
+ {"id": "img6", "file": "images/zaoshengguizi.jpg", "title": "早生贵子 — 莲子/栗子 (аяны тоглоом, адислал)", "role": "illustration", "section": "culture"}
+]

@@ -1,0 +1,77 @@
+{
+ "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+ "courseType": "chinese-hsk",
+ "courseId": "fazhan-zhongji1",
+ "lessonId": "fazhan-zhongji1-l10",
+ "hskLevel": 4,
+ "lessonNumber": 10,
+ "lessonProfile": "hsk4-dialogue-shorttext-exam-workbook",
+ "lessonType": "hsk4-dialogue-shorttext-exam-workbook",
+ "language": "zh-MN",
+ "targetLanguage": "zh",
+ "uiLanguage": "mn",
+ "title": "给咖啡加点儿盐",
+ "mongolianTitle": "Кофенд давс нэмэх нь",
+ "series": "发展汉语（第二版）中级综合 I",
+ "seriesLabel_mn": "发展汉语 дунд I (≈HSK4)",
+ "source": "发展汉语（第二版）中级综合 I · 第10课 (сурах бичиг, 教案, 课件, 参考答案, албан mp3)",
+ "hasAudio": true,
+ "hasImages": true,
+ "audio": {
+  "text": "audio/fazhan-zhongji1-10-text.mp3",
+  "words": "audio/fazhan-zhongji1-10-words.mp3",
+  "vocabularyClips": "audio/words/w01..w33.mp3 (албан 生词 бичлэгээс хайчилсан)"
+ },
+ "media": {
+  "lessonId": "fazhan-zhongji1-l10",
+  "images": [
+   {
+    "id": "love-couple",
+    "file": "images/love-couple.jpg",
+    "title": "爱情 — хайр дурлал, хос",
+    "role": "hero",
+    "section": "teacher-intro"
+   },
+   {
+    "id": "muguang-gaze",
+    "file": "images/muguang-gaze.jpg",
+    "title": "目光 — харц, хараа",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "yonggan-brave",
+    "file": "images/yonggan-brave.jpg",
+    "title": "勇敢 — зоригтой",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "tonghua-fairytale",
+    "file": "images/tonghua-fairytale.jpg",
+    "title": "童话 —王子、公主 (үлгэр, хунтайж, гүнж)",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "zhengfu-conquer",
+    "file": "images/zhengfu-conquer.jpg",
+    "title": "征服 — эзэмдэх, даван туулах",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "huangyan-lie",
+    "file": "images/huangyan-lie.jpg",
+    "title": "谎言 — худал ам",
+    "role": "illustration",
+    "section": "vocabulary"
+   }
+  ]
+ },
+ "verification": {
+  "answerStatus": "official_answer_key_verified (参考答案)",
+  "textStatus": "source_verified (сурах бичгийн хуудсыг зургаар уншсан)",
+  "teacherLayer": "教案 + PPT 课件-д тулгуурласан"
+ }
+}

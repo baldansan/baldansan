@@ -15,8 +15,9 @@ for si, slide in enumerate(prs.slides, 1):
     k = 0
     for sh in slide.shapes:
         if sh.shape_type != 13: continue
-        img = sh.image; ext = img.ext.lower()
-        try: im = Image.open(io.BytesIO(img.blob))
+        try:
+            img = sh.image
+            im = Image.open(io.BytesIO(img.blob))
         except Exception: continue
         w, h = im.size
         if w < 180 or h < 120: continue

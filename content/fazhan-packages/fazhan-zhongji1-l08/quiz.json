@@ -1,0 +1,592 @@
+[
+ {
+  "type": "cloze",
+  "question": "妈妈指着街上一个骑自行车的男人说：\"那个人肯定是（ ）。\"",
+  "options": [
+   "编辑",
+   "天使",
+   "疯子",
+   "魔鬼"
+  ],
+  "correct_answer": "疯子",
+  "explanation": "疯子 = галзуу хүн. 天使 — тэнгэр элч, 魔鬼 — чөтгөр, 编辑 — редактор.",
+  "order_index": 1,
+  "id": "fazhan-zhongji1-l08-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我随便翻了翻，立即就被（ ）住了。",
+  "options": [
+   "关注",
+   "掌握",
+   "比喻",
+   "吸引"
+  ],
+  "correct_answer": "吸引",
+  "explanation": "吸引住 = татагдах. 关注 — анхаарал тавих, 比喻 — зүйрлэх, 掌握 — эзэмших.",
+  "order_index": 2,
+  "id": "fazhan-zhongji1-l08-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "从此，我就开始（ ）那个遥远而神秘的国家。",
+  "options": [
+   "研究",
+   "吸引",
+   "关注",
+   "翻译"
+  ],
+  "correct_answer": "关注",
+  "explanation": "关注 = тогтмол анхаарч ажиглах. 吸引 — татах (эзэн солигдоно), 研究 — судлах, 翻译 — орчуулах.",
+  "order_index": 3,
+  "id": "fazhan-zhongji1-l08-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "那天夜里我失眠了，躺在床上（ ）地想。",
+  "options": [
+   "随便",
+   "反复",
+   "早已",
+   "一再"
+  ],
+  "correct_answer": "反复",
+  "explanation": "反复地想 = давтан бодох. 随便 — дураараа, 早已 — аль эрт, 一再 — дахин дахин (өөр бүтэцтэй).",
+  "order_index": 4,
+  "id": "fazhan-zhongji1-l08-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "第二天早晨，我（ ）拨通了爱丁堡大学的电话。",
+  "options": [
+   "忍不住",
+   "随便",
+   "简直",
+   "早已"
+  ],
+  "correct_answer": "忍不住",
+  "explanation": "忍不住+V = тэвчихийн аргагүй хийчих. 随便 — дураараа, 早已 — аль эрт, 简直 — хэтрүүлэх.",
+  "order_index": 5,
+  "id": "fazhan-zhongji1-l08-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "那位办公室主任，早已把这件事忘得（ ）了。",
+  "options": [
+   "反反复复",
+   "干干净净",
+   "随随便便",
+   "清清楚楚"
+  ],
+  "correct_answer": "干干净净",
+  "explanation": "忘得干干净净 = бүрмөсөн мартах. Бусад давталт нь утгын хувьд энд тохирохгүй.",
+  "order_index": 6,
+  "id": "fazhan-zhongji1-l08-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "怪不得西方人把中文叫做（ ），原来这种语言这么难！",
+  "options": [
+   "天书",
+   "诗集",
+   "迷宫",
+   "教材"
+  ],
+  "correct_answer": "天书",
+  "explanation": "天书 = ойлгоход хэцүү бичиг. 诗集 — шүлгийн түүвэр, 教材 — сурах бичиг, 迷宫 — лабиринт.",
+  "order_index": 7,
+  "id": "fazhan-zhongji1-l08-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "中文语法？那种语言不是早就（ ）了吗？",
+  "options": [
+   "研究",
+   "掌握",
+   "废除",
+   "开设"
+  ],
+  "correct_answer": "废除",
+  "explanation": "废除 = хүчингүй болгох. 开设 — нээх, 掌握 — эзэмших, 研究 — судлах.",
+  "order_index": 8,
+  "id": "fazhan-zhongji1-l08-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "英语里有Chinese Puzzle（中国（ )）一词，用来比喻非常难懂的问题。",
+  "options": [
+   "规则",
+   "迷宫",
+   "盒子",
+   "围棋"
+  ],
+  "correct_answer": "迷宫",
+  "explanation": "中国迷宫 = Chinese Puzzle. 盒子 — Chinese boxes-той холбоотой, 围棋 — go тоглоом, 规则 — дүрэм.",
+  "order_index": 9,
+  "id": "fazhan-zhongji1-l08-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "大学毕业以后，我一面研究中国古代哲学和文学，一面为报刊写（ ）。",
+  "options": [
+   "教材",
+   "散文",
+   "诗歌",
+   "文章"
+  ],
+  "correct_answer": "文章",
+  "explanation": "写文章 = нийтлэл бичих (课文原句). 诗歌 — шүлэг, 散文 — эссе (ард нь гардаг ч энд биш), 教材 — сурах бичиг.",
+  "order_index": 10,
+  "id": "fazhan-zhongji1-l08-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我的文章（ ）让编辑们感到新鲜。",
+  "options": [
+   "教材",
+   "规则",
+   "风格",
+   "哲学"
+  ],
+  "correct_answer": "风格",
+  "explanation": "文章风格 = өгүүллэгийн хэв маяг. Бусад үг энд тохирохгүй.",
+  "order_index": 11,
+  "id": "fazhan-zhongji1-l08-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "一直到现在，我还在用这支\"笔\"来写英语（ ）。",
+  "options": [
+   "教材",
+   "报刊",
+   "散文",
+   "诗歌"
+  ],
+  "correct_answer": "散文",
+  "explanation": "写散文 = эссе бичих (课文原句). 诗歌 — шүлэг, 教材 — сурах бичиг, 报刊 — хэвлэл мэдээлэл (газар биш зохиол төрөл)。",
+  "order_index": 12,
+  "id": "fazhan-zhongji1-l08-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "«Энэ зун бид Бээжин, эсвэл Шанхайд аялна (аль нэгийг)» — аль нь зөв бэ?",
+  "options": [
+   "这个暑假我们要么去北京旅游，要么去上海旅游。",
+   "这个暑假我们要么去北京旅游，又去上海旅游。",
+   "这个暑假我们或者去北京旅游，又去上海旅游。"
+  ],
+  "correct_answer": "这个暑假我们要么去北京旅游，要么去上海旅游。",
+  "explanation": "要么……，要么…… — хоёр хэсэгт адил холбоос давтана.",
+  "order_index": 13,
+  "id": "fazhan-zhongji1-l08-q13",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "这些学生（ ）会说英语，（ ）会说德语。（хоёуланг нь ч мэддэг байж болно）",
+  "options": [
+   "要么 / 要么",
+   "既 / 又",
+   "或者 / 或者"
+  ],
+  "correct_answer": "或者 / 或者",
+  "explanation": "Хоёулаа зэрэг үнэн байж болох тул 或者……，或者……; 要么 бол зөвхөн нэгийг сонгоно гэсэн утгатай.",
+  "order_index": 14,
+  "id": "fazhan-zhongji1-l08-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "我们是老朋友了，________这么客气呢？",
+  "options": [
+   "怪不得",
+   "何必",
+   "简直"
+  ],
+  "correct_answer": "何必",
+  "explanation": "何必……呢 = хэрэггүй гэдгийг онцлох риторик асуулт.",
+  "order_index": 15,
+  "id": "fazhan-zhongji1-l08-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "你何必不去呢？— энэ өгүүлбэр яагаад буруу вэ?",
+  "options": [
+   "何必-ийн ард ихэвчлэн эерэг үйл үг ордог, үгүйсгэх биш",
+   "何必 нь эзний өмнө ордог учраас",
+   "何必-ийн ард заавал 呢 байх ёстой учраас"
+  ],
+  "correct_answer": "何必-ийн ард ихэвчлэн эерэг үйл үг ордог, үгүйсгэх биш",
+  "explanation": "何必去 гэвэл «яагаад заавал явах ёстой гэж» утгатай; 何必不去 утга будлиантай.",
+  "order_index": 16,
+  "id": "fazhan-zhongji1-l08-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "他简直是一台电脑，________。",
+  "options": [
+   "他喜欢用电脑学习",
+   "100多个生词1个小时就记住了",
+   "电脑已经坏了"
+  ],
+  "correct_answer": "100多个生词1个小时就记住了",
+  "explanation": "简直是 + хэтрүүлсэн харьцуулалт, ард нь нотолгоо дагана.",
+  "order_index": 17,
+  "id": "fazhan-zhongji1-l08-q17",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "她竟然说出那么难听的话，我简直________自己的耳朵。",
+  "options": [
+   "不敢相信",
+   "不相信了",
+   "相信"
+  ],
+  "correct_answer": "不敢相信",
+  "explanation": "简直 + хэтрүүлсэн сэтгэл хөдлөл (итгэхгүй байх зэрэг).",
+  "order_index": 18,
+  "id": "fazhan-zhongji1-l08-q18",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "怪不得他今天没来上课，________他病了。",
+  "options": [
+   "何必",
+   "原来",
+   "简直"
+  ],
+  "correct_answer": "原来",
+  "explanation": "怪不得……，原来…… — шалтгааныг олж мэдэх бүтэц.",
+  "order_index": 19,
+  "id": "fazhan-zhongji1-l08-q19",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "原来下雪了怪不得这么冷。— энэ өгүүлбэр яагаад буруу вэ?",
+  "options": [
+   "Хоёр хэсгийн хооронд таслал тавиагүй, дараалал буруу",
+   "原来 ашигласан нь буруу",
+   "怪不得 ашигласан нь буруу"
+  ],
+  "correct_answer": "Хоёр хэсгийн хооронд таслал тавиагүй, дараалал буруу",
+  "explanation": "Зөв хэлбэр: 怪不得这么冷，原来下雪了。／原来下雪了，怪不得这么冷。",
+  "order_index": 20,
+  "id": "fazhan-zhongji1-l08-q20",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "昨天是她的生日，我（ ）忘了给她买礼物。（事实上没忘）",
+  "options": [
+   "差一点儿",
+   "差一点儿没",
+   "差一点儿就"
+  ],
+  "correct_answer": "差一点儿",
+  "explanation": "Хүсээгүй зүйл (мартах) бараг болоод болоогүй — эерэг хэлбэр ч утга адилхан.",
+  "order_index": 21,
+  "id": "fazhan-zhongji1-l08-q21",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "真可惜，他们（ ）成功了。（事实上没成功）",
+  "options": [
+   "差一点儿没",
+   "差一点儿就",
+   "差一点儿都"
+  ],
+  "correct_answer": "差一点儿就",
+  "explanation": "Хүссэн зүйл бараг болоод эцэст нь болоогүй тохиолдолд 就+эерэг V.",
+  "order_index": 22,
+  "id": "fazhan-zhongji1-l08-q22",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "那个问题可真难，他（ ）回答出来。（事实上回答出来了）",
+  "options": [
+   "差一点儿都",
+   "差一点儿就",
+   "差一点儿没"
+  ],
+  "correct_answer": "差一点儿没",
+  "explanation": "Хүссэн зүйл (хариулах) бараг боломжгүй байгаад гэнэт болсон — үйл үг заавал үгүйсгэх хэлбэртэй.",
+  "order_index": 23,
+  "id": "fazhan-zhongji1-l08-q23",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "大学毕业以后，我（ ）研究中国古代哲学和文学，（ ）为报刊写文章。",
+  "options": [
+   "一面 / 一面",
+   "一再 / 一再",
+   "反复 / 反复"
+  ],
+  "correct_answer": "一面 / 一面",
+  "explanation": "一面……，一面…… — хоёр үйлийг нэгэн зэрэг хийх.",
+  "order_index": 24,
+  "id": "fazhan-zhongji1-l08-q24",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "妈妈为什么说那个骑自行车的男人\"是疯子\"？",
+  "options": [
+   "因为他居然能看懂中文",
+   "因为他穿得很奇怪",
+   "因为他骑自行车很快"
+  ],
+  "correct_answer": "因为他居然能看懂中文",
+  "explanation": "1-р догол мөр: 他居然能看懂中文.",
+  "order_index": 25,
+  "id": "fazhan-zhongji1-l08-q25",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "\"我\"是怎么发现那本中国古典诗歌集的？",
+  "options": [
+   "老师送给\"我\"的",
+   "在书店专门买的",
+   "抽出庞德的诗集时，紧贴着的小册子掉了下来"
+  ],
+  "correct_answer": "抽出庞德的诗集时，紧贴着的小册子掉了下来",
+  "explanation": "2-р догол мөр.",
+  "order_index": 26,
+  "id": "fazhan-zhongji1-l08-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "爱丁堡大学的办公室主任为什么让\"我\"失望地回家了？",
+  "options": [
+   "他早已把\"我\"想学中文的事忘得干干净净了",
+   "他说中文已经废除了",
+   "他拒绝了\"我\"的请求"
+  ],
+  "correct_answer": "他早已把\"我\"想学中文的事忘得干干净净了",
+  "explanation": "3-р догол мөр.",
+  "order_index": 27,
+  "id": "fazhan-zhongji1-l08-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "第一次从录音机里听到中国话时，\"我\"是什么感觉？",
+  "options": [
+   "觉得很简单",
+   "非常兴奋",
+   "简直灰心极了"
+  ],
+  "correct_answer": "简直灰心极了",
+  "explanation": "4-р догол мөр.",
+  "order_index": 28,
+  "id": "fazhan-zhongji1-l08-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "\"我\"为什么说中国文化\"好像围棋一样\"？",
+  "options": [
+   "围棋和中文的字一样多",
+   "游戏规则简单，但真正玩儿起来才发现非常难",
+   "中国人都喜欢下围棋"
+  ],
+  "correct_answer": "游戏规则简单，但真正玩儿起来才发现非常难",
+  "explanation": "5-р догол мөр.",
+  "order_index": 29,
+  "id": "fazhan-zhongji1-l08-q29",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "编辑们是怎样评价\"我\"的文章的？",
+  "options": [
+   "文章写得太复杂",
+   "文章风格让人感到新鲜，\"像天使一样美好\"",
+   "文章完全没有风格"
+  ],
+  "correct_answer": "文章风格让人感到新鲜，\"像天使一样美好\"",
+  "explanation": "6-р догол мөр.",
+  "order_index": 30,
+  "id": "fazhan-zhongji1-l08-q30",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 都 大家 吸引住 她精彩的表演 被 了",
+  "options": [
+   "大家吸引住都被她精彩的表演了",
+   "大家都被她精彩的表演吸引住了",
+   "被她精彩的表演大家都吸引住了"
+  ],
+  "correct_answer": "大家都被她精彩的表演吸引住了",
+  "explanation": "S(大家)+都+被+O(她精彩的表演)+V得补语(吸引住了).",
+  "order_index": 31,
+  "id": "fazhan-zhongji1-l08-q31",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 把 忘得 他 见面的事 早已 干干净净了",
+  "options": [
+   "他早已把见面的事忘得干干净净了",
+   "他把早已见面的事忘得干干净净了",
+   "早已他把见面的事忘得干干净净了"
+  ],
+  "correct_answer": "他早已把见面的事忘得干干净净了",
+  "explanation": "早已 нь эзний дараа, 把-гийн ӨМНӨ.",
+  "order_index": 32,
+  "id": "fazhan-zhongji1-l08-q32",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 我们 大学 中文系 全英国 招来了 五名学生 从 才",
+  "options": [
+   "才大学中文系从全英国招来了五名学生",
+   "大学中文系从全英国才招来了五名学生",
+   "大学中文系才从全英国招来了五名学生"
+  ],
+  "correct_answer": "大学中文系才从全英国招来了五名学生",
+  "explanation": "才 — эзний дараа, 从……招来 бүтцийн өмнө (эцэст нь гэдгийг онцолно).",
+  "order_index": 33,
+  "id": "fazhan-zhongji1-l08-q33",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 让 文章风格 编辑们 感到 我的 新鲜",
+  "options": [
+   "我的文章风格感到编辑们让新鲜。",
+   "我的文章风格让编辑们感到新鲜。",
+   "编辑们让我的文章风格感到新鲜。"
+  ],
+  "correct_answer": "我的文章风格让编辑们感到新鲜。",
+  "explanation": "S(我的文章风格)+让+O(编辑们)+感到+新鲜(使动句).",
+  "order_index": 34,
+  "id": "fazhan-zhongji1-l08-q34",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ }
+]

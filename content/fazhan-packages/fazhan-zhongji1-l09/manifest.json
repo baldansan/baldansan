@@ -1,0 +1,70 @@
+{
+ "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+ "courseType": "chinese-hsk",
+ "courseId": "fazhan-zhongji1",
+ "lessonId": "fazhan-zhongji1-l09",
+ "hskLevel": 4,
+ "lessonNumber": 9,
+ "lessonProfile": "hsk4-dialogue-shorttext-exam-workbook",
+ "lessonType": "hsk4-dialogue-shorttext-exam-workbook",
+ "language": "zh-MN",
+ "targetLanguage": "zh",
+ "uiLanguage": "mn",
+ "title": "生物钟",
+ "mongolianTitle": "Биеийн цаг (生物钟)",
+ "series": "发展汉语（第二版）中级综合 I",
+ "seriesLabel_mn": "发展汉语 дунд I (≈HSK4)",
+ "source": "发展汉语（第二版）中级综合 I · 第9课 (сурах бичиг, 教案, 课件, 参考答案, албан mp3)",
+ "hasAudio": true,
+ "hasImages": true,
+ "audio": {
+  "text": "audio/fazhan-zhongji1-09-text.mp3",
+  "words": "audio/fazhan-zhongji1-09-words.mp3",
+  "vocabularyClips": "audio/words/w01..w54.mp3 (албан 生词 бичлэгээс хайчилсан)"
+ },
+ "media": {
+  "lessonId": "fazhan-zhongji1-l09",
+  "images": [
+   {
+    "id": "hero",
+    "file": "images/shengwuzhong-hero.jpg",
+    "title": "生物钟 — хүний биеийн цаг (сэрэх дохио)",
+    "role": "hero",
+    "section": "teacher-intro"
+   },
+   {
+    "id": "weishengwu",
+    "file": "images/weishengwu.jpg",
+    "title": "微生物 — цармагтсан микробын зураг",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "dao",
+    "file": "images/dao-island.jpg",
+    "title": "岛 — далайн дунд байх жижиг арал («驴钟»-ийн тухай хэсэгт)",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "shuailao",
+    "file": "images/shuailao.jpg",
+    "title": "衰老 — настай ба залуу хоёр эмэгтэйг харьцуулсан зураг",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "zhengju",
+    "file": "images/zhengju.jpg",
+    "title": "证据 — шүүх дээр баримт бичиг үзүүлж буй эрэгтэй (证据 үгийн жишээ)",
+    "role": "illustration",
+    "section": "vocabulary"
+   }
+  ]
+ },
+ "verification": {
+  "answerStatus": "official_answer_key_verified (参考答案)",
+  "textStatus": "source_verified (сурах бичгийн хуудсыг зургаар уншсан)",
+  "teacherLayer": "教案 + PPT 课件-д тулгуурласан"
+ }
+}
