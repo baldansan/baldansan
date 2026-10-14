@@ -95,9 +95,43 @@ def _merge(cands):
         merged.append(n)
     return merged
 
+# zhongji/gaoji (англи орчуулгагүй, цэвэр хятад) номд хуудасны толгойд ном/
+# хичээлийн нэр ээлжлэн давтагддаг (left/right running header): тэгш хуудсанд
+# хичээлийн нэр, сондгойд "中级综合 Intermediate Comprehensive Course" гэх мэт
+# номын нэр. Хичээлийн нэрийн МӨР ӨӨРЧЛӨГДӨХ үед шинэ хичээл эхэлсэн гэж үзнэ.
+RUNNING_HEADER_GENERIC = re.compile(
+    r"Intermediate|Developing|Comprehensive|Contents|说明|语言点|语法术语|"
+    r"适用对象|编写|前言|目录|Elementary|Advanced|总表|在版编目|CIP", re.I)
+RUNNING_HEADER_JUNK = re.compile(r"^[IVXLCDMivxlcdm]{1,6}$|^\d{1,3}$|^[@®»]")
+
+def running_title_starts(files, exp):
+    stage1, last_key = [], None
+    for f in files:
+        n = page_no(f)
+        lines = [l.strip() for l in open(f, encoding="utf-8", errors="replace").read().splitlines() if l.strip()]
+        first = lines[0] if lines else ""
+        if not first or RUNNING_HEADER_GENERIC.search(first) or RUNNING_HEADER_JUNK.match(first):
+            continue
+        cjk = re.findall(r"[一-鿿]", first)
+        if len(cjk) < 2:
+            continue
+        key = "".join(cjk[:4])
+        if last_key is None or key[:3] != last_key[:3]:
+            stage1.append(n)
+        last_key = key
+    if not exp:
+        return _merge(stage1)
+    avg = len(files) / exp
+    accepted = []
+    for n in stage1:
+        if not accepted or n - accepted[-1] >= avg * 0.6:
+            accepted.append(n)
+    return accepted
+
 def textbook_lesson_starts(files, book):
     """Үндсэн сурах бичиг: хичээлийн эхний дэд хэсгийн нэрийг ном бүрт өөр байдаг
-    тул CANDIDATE_RES-ээс EXPECTED тоонд хамгийн ойр тохирохыг нь сонгоно."""
+    тул олон аргаас (тогтмол дэд гарчиг / давтагддаг хуудасны толгой) EXPECTED
+    тоонд хамгийн ойр тохирохыг нь сонгоно."""
     if book in OVERRIDES and OVERRIDES[book].get("starts"):
         return [int(x) for x in OVERRIDES[book]["starts"]]
     exp = EXPECTED.get(book)
@@ -112,6 +146,10 @@ def textbook_lesson_starts(files, book):
         score = -abs(len(cands) - exp) if exp else len(cands)
         if len(cands) >= 3 and score > best_score:
             best, best_score = cands, score
+    rt = running_title_starts(files, exp)
+    rt_score = -abs(len(rt) - exp) if exp else len(rt)
+    if len(rt) >= 3 and rt_score > best_score:
+        best, best_score = rt, rt_score
     extra = OVERRIDES.get(book, {}).get("extra_starts", [])
     excl = set(int(x) for x in OVERRIDES.get(book, {}).get("exclude_starts", []))
     merged = sorted((set(best) | set(int(x) for x in extra)) - excl)

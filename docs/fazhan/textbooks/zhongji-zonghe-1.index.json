@@ -1,0 +1,82 @@
+{
+ "book": "zhongji-zonghe-1",
+ "pages": 222,
+ "expected_lessons": 15,
+ "lessons": [
+  {
+   "lesson": 1,
+   "start_page": 15,
+   "end_page": 29
+  },
+  {
+   "lesson": 2,
+   "start_page": 30,
+   "end_page": 43
+  },
+  {
+   "lesson": 3,
+   "start_page": 44,
+   "end_page": 53
+  },
+  {
+   "lesson": 4,
+   "start_page": 54,
+   "end_page": 67
+  },
+  {
+   "lesson": 5,
+   "start_page": 68,
+   "end_page": 79
+  },
+  {
+   "lesson": 6,
+   "start_page": 80,
+   "end_page": 88
+  },
+  {
+   "lesson": 7,
+   "start_page": 89,
+   "end_page": 105
+  },
+  {
+   "lesson": 8,
+   "start_page": 106,
+   "end_page": 116
+  },
+  {
+   "lesson": 9,
+   "start_page": 117,
+   "end_page": 131
+  },
+  {
+   "lesson": 10,
+   "start_page": 132,
+   "end_page": 143
+  },
+  {
+   "lesson": 11,
+   "start_page": 144,
+   "end_page": 157
+  },
+  {
+   "lesson": 12,
+   "start_page": 158,
+   "end_page": 171
+  },
+  {
+   "lesson": 13,
+   "start_page": 172,
+   "end_page": 183
+  },
+  {
+   "lesson": 14,
+   "start_page": 184,
+   "end_page": 195
+  },
+  {
+   "lesson": 15,
+   "start_page": 196,
+   "end_page": 222
+  }
+ ]
+}

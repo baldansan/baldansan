@@ -1,1 +1,5 @@
-{}
+{
+ "zhongji-zonghe-1": {
+  "exclude_starts": [5, 220]
+ }
+}
