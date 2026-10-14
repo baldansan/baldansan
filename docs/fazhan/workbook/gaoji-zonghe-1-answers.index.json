@@ -16,21 +16,56 @@
   {
    "lesson": 3,
    "start_page": 4,
+   "end_page": 5
+  },
+  {
+   "lesson": 4,
+   "start_page": 6,
    "end_page": 7
   },
   {
    "lesson": 5,
    "start_page": 8,
+   "end_page": 8
+  },
+  {
+   "lesson": 6,
+   "start_page": 9,
+   "end_page": 10
+  },
+  {
+   "lesson": 7,
+   "start_page": 11,
    "end_page": 12
   },
   {
    "lesson": 8,
    "start_page": 13,
+   "end_page": 13
+  },
+  {
+   "lesson": 9,
+   "start_page": 14,
+   "end_page": 15
+  },
+  {
+   "lesson": 10,
+   "start_page": 16,
+   "end_page": 17
+  },
+  {
+   "lesson": 11,
+   "start_page": 18,
    "end_page": 19
   },
   {
    "lesson": 12,
    "start_page": 20,
+   "end_page": 21
+  },
+  {
+   "lesson": 13,
+   "start_page": 22,
    "end_page": 23
   },
   {

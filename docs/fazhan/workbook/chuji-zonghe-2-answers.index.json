@@ -16,6 +16,11 @@
   {
    "lesson": 3,
    "start_page": 3,
+   "end_page": 3
+  },
+  {
+   "lesson": 4,
+   "start_page": 4,
    "end_page": 5
   },
   {
@@ -26,6 +31,11 @@
   {
    "lesson": 6,
    "start_page": 7,
+   "end_page": 8
+  },
+  {
+   "lesson": 7,
+   "start_page": 9,
    "end_page": 9
   },
   {
@@ -36,6 +46,11 @@
   {
    "lesson": 9,
    "start_page": 11,
+   "end_page": 12
+  },
+  {
+   "lesson": 10,
+   "start_page": 13,
    "end_page": 13
   },
   {
@@ -46,11 +61,21 @@
   {
    "lesson": 12,
    "start_page": 16,
+   "end_page": 16
+  },
+  {
+   "lesson": 13,
+   "start_page": 17,
    "end_page": 17
   },
   {
    "lesson": 14,
    "start_page": 18,
+   "end_page": 18
+  },
+  {
+   "lesson": 15,
+   "start_page": 19,
    "end_page": 19
   },
   {
@@ -61,6 +86,11 @@
   {
    "lesson": 17,
    "start_page": 21,
+   "end_page": 22
+  },
+  {
+   "lesson": 18,
+   "start_page": 23,
    "end_page": 23
   },
   {

@@ -16,6 +16,16 @@
   {
    "lesson": 3,
    "start_page": 5,
+   "end_page": 5
+  },
+  {
+   "lesson": 4,
+   "start_page": 6,
+   "end_page": 7
+  },
+  {
+   "lesson": 5,
+   "start_page": 8,
    "end_page": 8
   },
   {
@@ -26,11 +36,21 @@
   {
    "lesson": 7,
    "start_page": 11,
+   "end_page": 11
+  },
+  {
+   "lesson": 8,
+   "start_page": 12,
    "end_page": 13
   },
   {
    "lesson": 9,
    "start_page": 14,
+   "end_page": 15
+  },
+  {
+   "lesson": 10,
+   "start_page": 16,
    "end_page": 17
   },
   {

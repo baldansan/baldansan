@@ -55,6 +55,12 @@ EXPECTED = {
     "zhongji-zonghe-1": 15, "zhongji-zonghe-2": 15,
     "gaoji-zonghe-1": 15, "gaoji-zonghe-2": 15,
 }
+# Эдгээр 参考答案 PDF жинхэнэ текст давхаргатай → tesseract биш `pdftotext`-ээр
+# хуудас бүрчлэн гаргасан (pages/<book>/pNNN.txt ижил бүтэцтэй, чанар хамаагүй
+# сайн: ханз зөв, пиньинийн хөг бүтэн). zhongji-zonghe-2-answers (21 МБ) скан
+# тул OCR хэвээр.
+NATIVE_TEXT = {"chuji-zonghe-1-answers", "chuji-zonghe-2-answers", "zhongji-zonghe-1-answers",
+               "gaoji-zonghe-1-answers", "gaoji-zonghe-2-answers"}
 OVERRIDES_FILE = os.path.join(BASE, "overrides.json")
 OVERRIDES = json.load(open(OVERRIDES_FILE)) if os.path.exists(OVERRIDES_FILE) else {}
 
@@ -165,8 +171,9 @@ def assemble(book):
     else:
         starts = textbook_lesson_starts(files, book)
         start_to_lessons = {n: [first_lesson + i] for i, n in enumerate(starts)}
+    src = "pdftotext (PDF-ийн өөрийн текст давхарга, OCR биш)" if book in NATIVE_TEXT else "OCR (tesseract chi_sim+eng)"
     md = [f"# {book}", "",
-          f"_OCR (tesseract chi_sim+eng), {len(files)} PDF хуудас. Хичээлийн эхлэлийг "
+          f"_{src}, {len(files)} PDF хуудас. Хичээлийн эхлэлийг "
           f"{'хятад тоон \"第N课\" гарчгаар' if is_answers else '\"语音练习/题解/词语学习\" анхны дэд гарчгаар'} "
           f"автоматаар таньсан — 100% биш, overrides.json-оор гараар засч болно._", ""]
     index = []
