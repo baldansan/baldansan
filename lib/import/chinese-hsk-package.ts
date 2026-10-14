@@ -126,6 +126,13 @@ function trim(value: unknown): string {
   return String(value ?? "").trim();
 }
 
+function unwrapMediaManifest(value: unknown): unknown | null {
+  if (!isRecord(value)) return null;
+  if (Array.isArray(value.images)) return value;
+  if (isRecord(value.media) && Array.isArray(value.media.images)) return value.media;
+  return null;
+}
+
 function buildHskImportPreview(
   pkg: LessonZipPackage,
   manifest: ChineseHskManifest,
@@ -252,6 +259,9 @@ export async function parseChineseHskLessonZip(file: File): Promise<LessonZipVal
       "media.json",
       "media/manifest.json",
     ]);
+    // "media/manifest.json" нь basename-ээр top-level manifest.json-той таардаг тул
+    // {media:{images:[…]}} хэлбэртэй ирвэл дотор талыг нь авна; мөн manifest.media fallback.
+    const mediaData = unwrapMediaManifest(mediaResult.data) ?? unwrapMediaManifest(manifestResult.data);
 
     const charactersResult = await readJsonFile(zip, "characters.json");
 
@@ -268,7 +278,7 @@ export async function parseChineseHskLessonZip(file: File): Promise<LessonZipVal
       audioManifest: (await readJsonFile(zip, "audio-manifest.json")).data,
       subtitles: (await readJsonFile(zip, "subtitles.json")).data,
       studyContent: studyContentResult.data,
-      media: mediaResult.data,
+      media: mediaData,
     });
 
     if (charactersResult.error) {

@@ -59,6 +59,10 @@ export type ChineseHskPackageMeta = {
   grammarPayload: unknown;
   notesPayload: unknown;
   studyContentPayload: unknown;
+  /** Raw lesson.json (unnormalized) — extra keys (level, hook, icon…) → hskStudyContent.lessonTeaching. */
+  lessonPayload?: unknown;
+  /** Media manifest ({images:[…]}) — from media.json / manifest.json → media. */
+  mediaPayload?: unknown;
 };
 
 function trim(value: unknown): string {
@@ -409,6 +413,8 @@ export function buildChineseHskPackageMeta(
     grammarPayload: raw.grammar ?? null,
     notesPayload: raw.notes ?? null,
     studyContentPayload: raw.studyContent ?? null,
+    lessonPayload: raw.lesson ?? null,
+    mediaPayload: raw.media ?? null,
   };
 }
 

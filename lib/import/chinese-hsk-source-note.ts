@@ -36,7 +36,9 @@ function rawFilesFromValidation(
 
   return {
     manifest: validation.manifest,
-    lesson: validation.lesson,
+    // Raw lesson.json (level/hook/icon зэрэг нэмэлт түлхүүрүүд lessonTeaching-д орно);
+    // хуучин validation-д lessonPayload байхгүй бол normalized lesson.
+    lesson: hskMeta.lessonPayload ?? validation.lesson,
     texts: hskMeta.textsPayload,
     vocabulary: validation.vocabulary,
     grammar: hskMeta.grammarPayload,
@@ -47,7 +49,7 @@ function rawFilesFromValidation(
     audioManifest: null,
     subtitles: validation.subtitles,
     studyContent: hskMeta.studyContentPayload,
-    media: null,
+    media: hskMeta.mediaPayload ?? null,
   };
 }
 
