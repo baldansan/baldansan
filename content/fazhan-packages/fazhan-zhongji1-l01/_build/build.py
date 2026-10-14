@@ -1,5 +1,5 @@
 import json, os, re, hashlib, sys
-sys.path.insert(0, ".")
+sys.path.insert(0, "/tmp/l01")
 from pypinyin import pinyin, Style, load_phrases_dict
 from vocab import VOCAB, PROPER
 from text import TEXT, SOURCE_NOTE
@@ -7,7 +7,7 @@ from grammar import GRAMMAR
 from extra import *
 from workbook_quiz import WB_READING, QUIZ, SHIYISHI
 
-OUT = ".."; os.makedirs(OUT, exist_ok=True)
+OUT = "/tmp/l01/pkg"; os.makedirs(OUT, exist_ok=True)
 COURSE, LID, N = "fazhan-zhongji1", "fazhan-zhongji1-l01", 1
 AUDIO_TEXT, AUDIO_WORDS = "audio/fazhan-zhongji1-01-text.mp3", "audio/fazhan-zhongji1-01-words.mp3"
 
@@ -143,6 +143,7 @@ text_ex = {
 }
 texts = {"unit": {"number": N, "title": "北京的四季", "mongolianTitle": "Бээжингийн дөрвөн улирал — төрсөн нутгийн улирал, санагалзал"},
          "lessonIntro": INTRO, "warmup": {"mongolian": INTRO["warmup_mn"]},
+         "vocabularyAudio": json.load(open("/tmp/l01/vocab_audio_map.json")),
          "mainText": main_text, "properNouns": [{"chinese": z, "pinyin": p, "mongolian": m} for z, p, m in PROPER], "wordExplanation": word_expl, "collocations": colloc, "wordComparison": word_cmp,
          "textExercises": text_ex, "grammarNotes": grammar, "culture": CULTURE,
          "applicationDiscussionOrWriting": {
@@ -191,20 +192,21 @@ lesson = {"courseId": COURSE, "lessonId": LID, "title": "发展汉语 中级I 1-
           "mongolianTitle": "Бээжингийн дөрвөн улирал", "subtitle": "把……V得+C · （就）拿……来说（吧） · 一+N · 不知道……多少 · 管A叫B",
           "description": "Линь Хайины «苦念北平»-ийн хэсэг (11 догол мөр) + 42 шинэ үг + 5 дүрэм (综合注释) + 10 гол үгийн задаргаа + 综合练习 9 даалгавар (参考答案-аар баталгаажсан) + албан аудио (生词/课文)",
           "duration": "3 × 90 мин (教案)", "status": "draft", "orderIndex": 1, "icon": "🍂", "thumbnailFile": "images/xishan.jpg", "audioFile": AUDIO_TEXT,
+          "level": "发展汉语 中级 I", "hook": {"teacher_mn": INTRO["teacher_mn"], "warmup_mn": INTRO["warmup_mn"]},
           "sourceNote": "发展汉语（第二版）中级综合 I — 第1课《北京的四季》 [hskLevel=4] [lessonNumber=1]; эх: docs/fazhan/textbooks/zhongji-zonghe-1.md (PDF х.15–27), teacher/zhongji-zonghe-1/l01.md, courseware/zhongji-zonghe-1/l01.md, workbook/zhongji-zonghe-1-answers.md"}
 json.dump(lesson, open(f"{OUT}/lesson.json", "w"), ensure_ascii=False, indent=1)
 manifest = {"packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1", "courseType": "chinese-hsk", "courseId": COURSE, "lessonId": LID, "hskLevel": 4, "lessonNumber": 1,
             "lessonProfile": "hsk4-dialogue-shorttext-exam-workbook", "lessonType": "hsk4-dialogue-shorttext-exam-workbook", "language": "zh-MN", "targetLanguage": "zh", "uiLanguage": "mn",
             "title": "北京的四季", "mongolianTitle": "Бээжингийн дөрвөн улирал", "series": "发展汉语（第二版）中级综合 I", "seriesLabel_mn": "发展汉语 дунд I (≈HSK4)",
             "source": "发展汉语（第二版）中级综合 I · 第1课 (сурах бичиг, 教案, 课件, 参考答案, албан mp3)", "hasAudio": True, "hasImages": True,
-            "audio": {"text": AUDIO_TEXT, "words": AUDIO_WORDS},
-            "media": {"lessonId": LID, "images": json.load(open("./media_images.json"))},
+            "audio": {"text": AUDIO_TEXT, "words": AUDIO_WORDS, "vocabularyClips": "audio/words/w01..w42.mp3 (42, албан 生词 бичлэгээс хайчилсан)"},
+            "media": {"lessonId": LID, "images": json.load(open("/tmp/l01/media_images.json"))},
             "verification": {"answerStatus": "official_answer_key_verified (参考答案)", "textStatus": "source_verified (сурах бичгийн хуудсыг зургаар уншсан, OCR биш)", "teacherLayer": "教案 (徐桂梅) + PPT 课件-д тулгуурласан"}}
 json.dump(manifest, open(f"{OUT}/manifest.json", "w"), ensure_ascii=False, indent=1)
 # subtitles.json (өгүүлбэр бүрийн цаг, whisper-ээр) — байвал
 import os as _os
-if _os.path.exists("./subtitles.json"):
-    subs = json.load(open("./subtitles.json"))
+if _os.path.exists("/tmp/l01/subtitles.json"):
+    subs = json.load(open("/tmp/l01/subtitles.json"))
     by_zh = {x["chinese"]: x for x in subs}
     rows = [{"start": by_zh[sn["zh"]]["start"], "end": by_zh[sn["zh"]]["end"], "chinese": sn["zh"], "pinyin": sn["pinyin"], "mongolian": sn["mn"]} for sn in sentences if sn["zh"] in by_zh]
     json.dump(rows, open(f"{OUT}/subtitles.json", "w"), ensure_ascii=False, indent=1); print("subtitles:", len(rows))

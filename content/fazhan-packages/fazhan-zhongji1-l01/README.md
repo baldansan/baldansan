@@ -15,3 +15,8 @@ FLAT багц (`/admin/import/chinese` → «Ноорог болгон оруу�
 | `audio/` | Албан mp3: `fazhan-zhongji1-01-words.mp3` (生词, 48kbps mono), `fazhan-zhongji1-01-text.mp3` (课文, 5:00) |
 
 Эх: `docs/fazhan/textbooks/zhongji-zonghe-1.md` (PDF х. 15–27, хуудсыг зургаар уншсан), `teacher/zhongji-zonghe-1/l01.md`, `courseware/zhongji-zonghe-1/l01.md`, `workbook/zhongji-zonghe-1-answers.md`. Build: `content/fazhan-packages/fazhan-zhongji1-l01/_build/` (vocab.py, text.py, grammar.py, extra.py, workbook_quiz.py → build.py).
+
+## v3 (2026-10-14) — нэмэлт
+- `audio/words/w01..w42.mp3` — үг бүрийн тусдаа дуу (албан 生词 бичлэгээс whisper цагаар хайчилсан); `texts.json → vocabularyAudio` {ханз: зам}.
+- `lesson.json → level: "发展汉语 中级 I"`, `hook: {teacher_mn, warmup_mn}` — аппын хичээлийн замын багшийн оршил.
+- Апп тал: курсын нэр "HSK4"-ийн оронд "发展汉语 中级 I", `/courses/fazhan-zhongji1` хуудас, зураг + оршил хичээлийн зам дээр, үг бүрийн дуу.

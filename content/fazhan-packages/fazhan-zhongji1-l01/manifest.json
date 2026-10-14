@@ -19,7 +19,8 @@
  "hasImages": true,
  "audio": {
   "text": "audio/fazhan-zhongji1-01-text.mp3",
-  "words": "audio/fazhan-zhongji1-01-words.mp3"
+  "words": "audio/fazhan-zhongji1-01-words.mp3",
+  "vocabularyClips": "audio/words/w01..w42.mp3 (42, албан 生词 бичлэгээс хайчилсан)"
  },
  "media": {
   "lessonId": "fazhan-zhongji1-l01",
