@@ -1,0 +1,84 @@
+{
+ "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+ "courseType": "chinese-hsk",
+ "courseId": "fazhan-zhongji1",
+ "lessonId": "fazhan-zhongji1-l06",
+ "hskLevel": 4,
+ "lessonNumber": 6,
+ "lessonProfile": "hsk4-dialogue-shorttext-exam-workbook",
+ "lessonType": "hsk4-dialogue-shorttext-exam-workbook",
+ "language": "zh-MN",
+ "targetLanguage": "zh",
+ "uiLanguage": "mn",
+ "title": "电梯里的1分27秒",
+ "mongolianTitle": "Өргөөн доторх 1 минут 27 секунд",
+ "series": "发展汉语（第二版）中级综合 I",
+ "seriesLabel_mn": "发展汉语 дунд I (≈HSK4)",
+ "source": "发展汉语（第二版）中级综合 I · 第6课 (сурах бичиг, 教案, 课件, 参考答案, албан mp3)",
+ "hasAudio": true,
+ "hasImages": true,
+ "audio": {
+  "text": "audio/fazhan-zhongji1-06-text.mp3",
+  "words": "audio/fazhan-zhongji1-06-words.mp3",
+  "vocabularyClips": "audio/words/w01..w36.mp3 (албан 生词 бичлэгээс хайчилсан)"
+ },
+ "media": {
+  "lessonId": "fazhan-zhongji1-l06",
+  "images": [
+   {
+    "id": "zoulang",
+    "file": "images/zoulang.jpg",
+    "title": "走廊 — коридор (офисын захын урт коридор)",
+    "role": "hero",
+    "section": "teacher-intro"
+   },
+   {
+    "id": "bumen",
+    "file": "images/bumen.jpg",
+    "title": "部门 — компанийн хэлтэс, алба (зохион байгуулалтын бүдүүвч)",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "baowei",
+    "file": "images/baowei.jpg",
+    "title": "包围 — хүрээлэх (тэмцээнд хэд хэдэн тоглогчид нэг тоглогчийг хүрээлэв)",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "shangsheng",
+    "file": "images/shangsheng.jpg",
+    "title": "上升 — дээшлэх (далбаа өргөх ёслол)",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "zaoyu",
+    "file": "images/zaoyu.jpg",
+    "title": "遭遇 / 气喘吁吁 — туйлдах, амьсгаадах (тамирчин ялагдлаа тэвчихгүй байна)",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "nanao",
+    "file": "images/nanao.jpg",
+    "title": "难熬 — тэвчихэд хэцүү (халуунд салхилж суух өвгөд эмгэд)",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "guli",
+    "file": "images/guli.jpg",
+    "title": "鼓励 — урам хайрлах, дэмжих (эрхий хуруугаа өргөж байна)",
+    "role": "illustration",
+    "section": "vocabulary"
+   }
+  ]
+ },
+ "verification": {
+  "answerStatus": "official_answer_key_verified (参考答案)",
+  "textStatus": "source_verified (сурах бичгийн хуудсыг зургаар уншсан)",
+  "teacherLayer": "教案 + PPT 课件-д тулгуурласан"
+ }
+}

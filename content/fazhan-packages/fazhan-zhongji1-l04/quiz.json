@@ -1,0 +1,563 @@
+[
+ {
+  "type": "cloze",
+  "question": "20岁（ ），戴着厚厚的眼镜。",
+  "options": [
+   "出来",
+   "出头",
+   "出发",
+   "出去"
+  ],
+  "correct_answer": "出头",
+  "explanation": "出头 — тоо хэмжээний ард «гаруй». 出来/出去/出发 утга өөр.",
+  "order_index": 1,
+  "id": "fazhan-zhongji1-l04-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他只说了自己是（ ）公司的快递员。",
+  "options": [
+   "快件",
+   "业务",
+   "快递",
+   "行业"
+  ],
+  "correct_answer": "快递",
+  "explanation": "快递公司 — шуурхай хүргэлтийн компани. 快件 — илгээмж (тус компанийн биш).",
+  "order_index": 2,
+  "id": "fazhan-zhongji1-l04-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他恭恭敬敬地用双手（ ）上名片就走了。",
+  "options": [
+   "填",
+   "递",
+   "找",
+   "签"
+  ],
+  "correct_answer": "递",
+  "explanation": "递上 — гардуулах. 找 — олох/хариулт өгөх, 填 — бөглөх, 签 — гарын үсэг зурах.",
+  "order_index": 3,
+  "id": "fazhan-zhongji1-l04-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "填完单子，他要认真地看过好几遍，才一边说谢谢，一边礼貌地用双手接钱、（ ）钱。",
+  "options": [
+   "递",
+   "找",
+   "确认",
+   "签"
+  ],
+  "correct_answer": "找",
+  "explanation": "接钱、找钱 — мөнгө авч хариулт өгөх. 递 — гардуулах, 签 — гарын үсэг зурах.",
+  "order_index": 4,
+  "id": "fazhan-zhongji1-l04-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他每次都要认真（ ）签收人的身份和物品。",
+  "options": [
+   "推算",
+   "确认",
+   "完成",
+   "投诉"
+  ],
+  "correct_answer": "确认",
+  "explanation": "确认身份 — биеийн байцаалтыг баталгаажуулах. 推算 — тооцоолох, 投诉 — гомдол гаргах.",
+  "order_index": 5,
+  "id": "fazhan-zhongji1-l04-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "因此我们（ ）：他挣的钱一定比别的快递员少。",
+  "options": [
+   "签收",
+   "确认",
+   "推算",
+   "投诉"
+  ],
+  "correct_answer": "推算",
+  "explanation": "推算 — өгөгдлөөс үндэслэн тооцоолох. 确认 — баталгаажуулах.",
+  "order_index": 6,
+  "id": "fazhan-zhongji1-l04-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "这（ ）是他说过的最长的一句话，好像事先练习过，很流利。",
+  "options": [
+   "始终",
+   "老",
+   "恐怕",
+   "倒"
+  ],
+  "correct_answer": "恐怕",
+  "explanation": "恐怕 — таамаглал. 始终/老 — тогтмол/байнга, 倒 — эсрэгцүүлэл.",
+  "order_index": 7,
+  "id": "fazhan-zhongji1-l04-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "他在热天里也要穿着衬衣，大多是白色的，（ ）穿着皮鞋。",
+  "options": [
+   "恐怕",
+   "事先",
+   "老",
+   "始终"
+  ],
+  "correct_answer": "始终",
+  "explanation": "始终 — эхнээс дуустал тогтмол (бичгийн). 老 — ярианы «байнга».",
+  "order_index": 8,
+  "id": "fazhan-zhongji1-l04-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "你（ ）穿得这么规矩，一点儿也不像送快递的。",
+  "options": [
+   "始终",
+   "事先",
+   "老",
+   "恐怕"
+  ],
+  "correct_answer": "老",
+  "explanation": "老 — ярианы «байнга». 始终 нь энд арай хэт бичгийн, яриа дотор 老 илүү зохимжтой.",
+  "order_index": 9,
+  "id": "fazhan-zhongji1-l04-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "去见客户一定要（ ）整洁，这是对客户的尊重。",
+  "options": [
+   "衬衣",
+   "衣衫",
+   "西装",
+   "打扮"
+  ],
+  "correct_answer": "衣衫",
+  "explanation": "衣衫整洁 — хувцас цэвэрхэн (ерөнхий бичгийн илэрхийлэл). 西装/衬衣 — тодорхой хувцасны төрөл.",
+  "order_index": 10,
+  "id": "fazhan-zhongji1-l04-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "真有这么（ ）的快递员！这么简单的工作，他做得比别人辛苦多了。",
+  "options": [
+   "规矩",
+   "恭敬",
+   "听话",
+   "流利"
+  ],
+  "correct_answer": "听话",
+  "explanation": "听话 — дуулгавартай. Бусад үгс өөр утгатай.",
+  "order_index": 11,
+  "id": "fazhan-zhongji1-l04-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "那个穿西装的（ ）当经理了？",
+  "options": [
+   "小伙子",
+   "傻小子",
+   "同事",
+   "客户"
+  ],
+  "correct_answer": "小伙子",
+  "explanation": "小伙子 — залуу эр. 傻小子 илүү доромжилсон найрсаг хэллэг, энд зохисгүй.",
+  "order_index": 12,
+  "id": "fazhan-zhongji1-l04-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "是唯一没有接到客户（ ）的快递员。",
+  "options": [
+   "推算",
+   "投诉",
+   "仪式",
+   "确认"
+  ],
+  "correct_answer": "投诉",
+  "explanation": "接到投诉 — гомдол хүлээн авах.",
+  "order_index": 13,
+  "id": "fazhan-zhongji1-l04-q13",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Аль нь зөв бэ? «Хаалгаар орсон ч ярьж амжаагүй байхад нүүр нь улайчихав»",
+  "options": [
+   "他进了门还说话没，脸就红了。",
+   "他进了门还没说话，脸就红了。",
+   "他进了门没说话还，脸就红了。"
+  ],
+  "correct_answer": "他进了门还没说话，脸就红了。",
+  "explanation": "还没 + V, 就 + V₂ дараалал зөв.",
+  "order_index": 14,
+  "id": "fazhan-zhongji1-l04-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "今天是最后一天打折，早上商店（ ），就有很多人在门口等着了。",
+  "options": [
+   "还没关门",
+   "已经开门",
+   "还没开门"
+  ],
+  "correct_answer": "还没开门",
+  "explanation": "还没 + V(开门), 就 + V₂ — дэлгүүр нээгдээгүй байхад л хүлээж байсан.",
+  "order_index": 15,
+  "id": "fazhan-zhongji1-l04-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Аль нь ЗӨВ бэ?",
+  "options": [
+   "他这样做是不对的，批评他非不可。",
+   "他这样做是不对的，我非批评他不可。",
+   "他这样做是不对的，我非批评他。"
+  ],
+  "correct_answer": "他这样做是不对的，我非批评他不可。",
+  "explanation": "非 + V (要/得 ороогүй) үед ард нь 不可/不行/不成 заавал ирнэ.",
+  "order_index": 16,
+  "id": "fazhan-zhongji1-l04-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "她一定要买那套湖景房，我也没办法。→ Хувиргавал аль нь зөв бэ?",
+  "options": [
+   "她要非买那套湖景房不成，我也没办法。",
+   "她非买那套湖景房不成不要，我也没办法。",
+   "她非要买那套湖景房不成，我也没办法。"
+  ],
+  "correct_answer": "她非要买那套湖景房不成，我也没办法。",
+  "explanation": "一定要 + V → 非要 + V + 不成 дараалал.",
+  "order_index": 17,
+  "id": "fazhan-zhongji1-l04-q17",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "她是一个非常优秀的主持人，男女老少都喜欢她。→ Хувиргавал аль нь зөв бэ?",
+  "options": [
+   "没有男女老少都喜欢她。",
+   "男女老少没有谁不喜欢她。",
+   "男女老少没有喜欢她。"
+  ],
+  "correct_answer": "男女老少没有谁不喜欢她。",
+  "explanation": "都 + V → 没有 + асуух үг(谁) + 不 + V (давхар үгүйсгэл).",
+  "order_index": 18,
+  "id": "fazhan-zhongji1-l04-q18",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "只要是中国菜，她都喜欢吃。→ Хувиргавал аль нь зөв бэ?",
+  "options": [
+   "只要是中国菜，没有哪个她不喜欢吃。",
+   "只要是中国菜，她没有不喜欢吃哪个。",
+   "只要是中国菜，没有她喜欢吃。"
+  ],
+  "correct_answer": "只要是中国菜，没有哪个她不喜欢吃。",
+  "explanation": "没有 + 哪个 + S + 不 + V бүтэц.",
+  "order_index": 19,
+  "id": "fazhan-zhongji1-l04-q19",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "你老穿得这么规矩，一点儿也不像送快递的，（ ）像卖保险的。",
+  "options": [
+   "倒",
+   "就",
+   "却",
+   "才"
+  ],
+  "correct_answer": "倒",
+  "explanation": "倒 — эсрэгцүүлэл, хоёр дахь хэсэгт орно. 却 ч боломжтой ч энэ хичээлийн тусгай дүрэм 倒.",
+  "order_index": 20,
+  "id": "fazhan-zhongji1-l04-q20",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "那个商店不太大，东西（ ）挺齐全。",
+  "options": [
+   "倒是",
+   "就是",
+   "还是",
+   "才是"
+  ],
+  "correct_answer": "倒是",
+  "explanation": "倒是 = 倒 + 是 — эсрэгцүүлэл баталгаажсан хэлбэр.",
+  "order_index": 21,
+  "id": "fazhan-zhongji1-l04-q21",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "他一干（ ）两年。",
+  "options": [
+   "也是",
+   "就是",
+   "才是",
+   "就有"
+  ],
+  "correct_answer": "就是",
+  "explanation": "一……就是…… — хэмжээ (хугацаа) ихийг онцолно.",
+  "order_index": 22,
+  "id": "fazhan-zhongji1-l04-q22",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "我今天去图书馆借书，一借（ ）六本。",
+  "options": [
+   "就有",
+   "还是",
+   "才是",
+   "就是"
+  ],
+  "correct_answer": "就是",
+  "explanation": "一借就是六本 — тоо хэмжээ ихийг онцолно.",
+  "order_index": 23,
+  "id": "fazhan-zhongji1-l04-q23",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "他毕业以后就进了我们公司，________。（一……就是……）",
+  "options": [
+   "一做就是五年",
+   "一做五年就是",
+   "做就是一五年"
+  ],
+  "correct_answer": "一做就是五年",
+  "explanation": "一 + V(做) + 就是 + тоо хэмжээ(五年) дараалал.",
+  "order_index": 24,
+  "id": "fazhan-zhongji1-l04-q24",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "为什么一看就知道“他”刚做快递员这行？",
+  "options": [
+   "他说话很流利",
+   "20岁出头，戴着厚厚的眼镜，说话时脸红红的",
+   "他穿着破旧的衣服"
+  ],
+  "correct_answer": "20岁出头，戴着厚厚的眼镜，说话时脸红红的",
+  "explanation": "1-р догол мөр.",
+  "order_index": 25,
+  "id": "fazhan-zhongji1-l04-q25",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "为什么“他”的打扮给人留下了很深的印象？",
+  "options": [
+   "他从不穿皮鞋",
+   "他穿得和别人一样",
+   "别的快递员都穿T恤和运动鞋，他却穿着西装打着领带"
+  ],
+  "correct_answer": "别的快递员都穿T恤和运动鞋，他却穿着西装打着领带",
+  "explanation": "1-р догол мөр.",
+  "order_index": 26,
+  "id": "fazhan-zhongji1-l04-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "“五一”放假前一天，“他”为什么提着一袋橘子来？",
+  "options": [
+   "感谢大家照顾他的工作，因为第一份业务是在这里拿到的",
+   "公司要求他这样做",
+   "想认识新客户"
+  ],
+  "correct_answer": "感谢大家照顾他的工作，因为第一份业务是在这里拿到的",
+  "explanation": "6-7-р догол мөр.",
+  "order_index": 27,
+  "id": "fazhan-zhongji1-l04-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "有同事跟“他”开玩笑说他穿得像什么人？",
+  "options": [
+   "卖保险的",
+   "经理",
+   "客户"
+  ],
+  "correct_answer": "卖保险的",
+  "explanation": "11-р догол мөр：倒像卖保险的。",
+  "order_index": 28,
+  "id": "fazhan-zhongji1-l04-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "两年里“他”发生了什么变化？",
+  "options": [
+   "换了很多身打扮",
+   "只换了一副眼镜，别的都没有变化",
+   "不再穿西装了"
+  ],
+  "correct_answer": "只换了一副眼镜，别的都没有变化",
+  "explanation": "15-р догол мөр.",
+  "order_index": 29,
+  "id": "fazhan-zhongji1-l04-q29",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "“他”能当上经理的原因是什么？",
+  "options": [
+   "他是老板的亲戚",
+   "他年龄最大",
+   "他是公司干的时间最长、唯一坚持穿西装、唯一没有接到客户投诉、最认真的快递员"
+  ],
+  "correct_answer": "他是公司干的时间最长、唯一坚持穿西装、唯一没有接到客户投诉、最认真的快递员",
+  "explanation": "16-р догол мөр (төгсгөл).",
+  "order_index": 30,
+  "id": "fazhan-zhongji1-l04-q30",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 第一份 / 我的 / 在 / 是……的 / 这里 / 拿到 / 业务",
+  "options": [
+   "我的业务是第一份在这里拿到的",
+   "在这里我的第一份是业务拿到的",
+   "我的第一份业务是在这里拿到的"
+  ],
+  "correct_answer": "我的第一份业务是在这里拿到的",
+  "explanation": "是……的 — ХААНА хийгдсэнийг онцолно.",
+  "order_index": 31,
+  "id": "fazhan-zhongji1-l04-q31",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 唯一 / 他 / 我们公司 / 是 / 客户投诉 / 没有 / 接到 / 的 / 快递员",
+  "options": [
+   "他是唯一我们公司没有接到客户投诉的快递员",
+   "他唯一是我们公司没有接到客户投诉的快递员",
+   "他是我们公司唯一没有接到客户投诉的快递员"
+  ],
+  "correct_answer": "他是我们公司唯一没有接到客户投诉的快递员",
+  "explanation": "唯一……的 бүтэц зөв байрлал.",
+  "order_index": 32,
+  "id": "fazhan-zhongji1-l04-q32",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "hard"
+ }
+]

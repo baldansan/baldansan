@@ -1,0 +1,558 @@
+[
+ {
+  "type": "cloze",
+  "question": "我最大的问题是不会和陌生人（ ）。",
+  "options": [
+   "包围",
+   "遭遇",
+   "调查",
+   "打交道"
+  ],
+  "correct_answer": "打交道",
+  "explanation": "打交道 = хүнтэй харьцах. 调查 — судалгаа, 包围 — хүрээлэх, 遭遇 — таарах (сөрөг).",
+  "order_index": 1,
+  "id": "fazhan-zhongji1-l06-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "一天早晨，我在电梯里（ ）了我的顶头上司。",
+  "options": [
+   "包围",
+   "等候",
+   "消失",
+   "遇见"
+  ],
+  "correct_answer": "遇见",
+  "explanation": "遇见 = санамсаргүй таарах. 等候 — хүлээх, 包围 — хүрээлэх, 消失 — алга болох.",
+  "order_index": 2,
+  "id": "fazhan-zhongji1-l06-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "巨大的压力立刻（ ）了我。",
+  "options": [
+   "优先",
+   "调查",
+   "呼吸",
+   "包围"
+  ],
+  "correct_answer": "包围",
+  "explanation": "包围 = хүрээлэх. 优先 — түрүүлэх, 调查 — судлах, 呼吸 — амьсгаа авах.",
+  "order_index": 3,
+  "id": "fazhan-zhongji1-l06-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "什么客户？（ ）是做什么调查？",
+  "options": [
+   "根本",
+   "具体",
+   "仅仅",
+   "尤其"
+  ],
+  "correct_answer": "具体",
+  "explanation": "具体 = тодорхой. 仅仅 — ердөө, 尤其 — ялангуяа, 根本 — огт.",
+  "order_index": 4,
+  "id": "fazhan-zhongji1-l06-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我忽然（ ）起来，脸上开始流汗。",
+  "options": [
+   "支支吾吾",
+   "机灵",
+   "害羞",
+   "气喘吁吁"
+  ],
+  "correct_answer": "支支吾吾",
+  "explanation": "支支吾吾 = мэгсэглэх. 气喘吁吁 — амьсгаадах, 机灵 — сэргэлэн, 害羞 — ичимхий.",
+  "order_index": 5,
+  "id": "fazhan-zhongji1-l06-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "看着他的身影（ ）在走廊另一端。",
+  "options": [
+   "上升",
+   "包围",
+   "消失",
+   "出现"
+  ],
+  "correct_answer": "消失",
+  "explanation": "消失 = алга болох. 出现 — гарч ирэх (эсрэг утга), 包围 — хүрээлэх, 上升 — дээшлэх.",
+  "order_index": 6,
+  "id": "fazhan-zhongji1-l06-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我宁可爬十七楼，也不想再（ ）这样难受的事了。",
+  "options": [
+   "调查",
+   "鼓励",
+   "打交道",
+   "遭遇"
+  ],
+  "correct_answer": "遭遇",
+  "explanation": "遭遇 = (муу зүйлтэй) таарах. 打交道 — харьцах, 调查 — судлах, 鼓励 — урамшуулах.",
+  "order_index": 7,
+  "id": "fazhan-zhongji1-l06-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我真的不坐电梯了，开始（ ）地爬十七楼。",
+  "options": [
+   "机灵",
+   "气喘吁吁",
+   "支支吾吾",
+   "害羞"
+  ],
+  "correct_answer": "气喘吁吁",
+  "explanation": "气喘吁吁 = амьсгаадан. 支支吾吾 — мэгсэглэх (ярианд), 机灵 — сэргэлэн, 害羞 — ичимхий.",
+  "order_index": 8,
+  "id": "fazhan-zhongji1-l06-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "同事们都（ ）我在运动减肥。",
+  "options": [
+   "认为",
+   "以为",
+   "知道",
+   "觉得"
+  ],
+  "correct_answer": "以为",
+  "explanation": "以为 = (буруу) гэж бодох. 认为 — үзэл бодол илэрхийлэх, 知道 — мэдэх, 觉得 — санагдах.",
+  "order_index": 9,
+  "id": "fazhan-zhongji1-l06-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我知道自己不是一个（ ）的女孩。",
+  "options": [
+   "害羞",
+   "难熬",
+   "陌生",
+   "机灵"
+  ],
+  "correct_answer": "机灵",
+  "explanation": "机灵 = сэргэлэн. 害羞 — ичимхий, 陌生 — танихгүй, 难熬 — тэвчихэд хэцүү.",
+  "order_index": 10,
+  "id": "fazhan-zhongji1-l06-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "您昨晚看温布尔登网球公开赛了吗？很（ ）的。",
+  "options": [
+   "精彩",
+   "优先",
+   "具体",
+   "鼓励"
+  ],
+  "correct_answer": "精彩",
+  "explanation": "精彩 = сонирхолтой. 鼓励 — урамшуулах, 优先 — түрүүлэх, 具体 — тодорхой.",
+  "order_index": 11,
+  "id": "fazhan-zhongji1-l06-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他给我的（ ）却留在我心里。",
+  "options": [
+   "调查",
+   "身影",
+   "鼓励",
+   "压力"
+  ],
+  "correct_answer": "鼓励",
+  "explanation": "鼓励 = урам зориг. 压力 — дарамт, 身影 — дүрс, 调查 — судалгаа.",
+  "order_index": 12,
+  "id": "fazhan-zhongji1-l06-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "大家都为他感到骄傲，________。",
+  "options": [
+   "他尤其是的老师",
+   "尤其是他的学生",
+   "尤其是他的老师"
+  ],
+  "correct_answer": "尤其是他的老师",
+  "explanation": "……，尤其是…… — ерөнхий мэдэгдлийн ард, онцлох хэсгийг тодруулна.",
+  "order_index": 13,
+  "id": "fazhan-zhongji1-l06-q13",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "________，不然咱们就白去了。",
+  "options": [
+   "你幸亏事先打电话问了一下",
+   "幸亏你事先打电话问了一下",
+   "事先打电话问了一下幸亏"
+  ],
+  "correct_answer": "幸亏你事先打电话问了一下",
+  "explanation": "幸亏 нь өгүүлбэрийн ЭХЭНД, өгүүлэгдэхүүний ӨМНӨ ордог.",
+  "order_index": 14,
+  "id": "fazhan-zhongji1-l06-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "在我看来，________。",
+  "options": [
+   "没有比教师更重要的职业了",
+   "教师没有比更重要的职业了",
+   "没有教师比更重要的职业了"
+  ],
+  "correct_answer": "没有比教师更重要的职业了",
+  "explanation": "没有比……更……了 — 没有比 нэг бүхэл хэллэг, ард нь 了 заавал орно.",
+  "order_index": 15,
+  "id": "fazhan-zhongji1-l06-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "我宁愿不买车，________。",
+  "options": [
+   "也不花钱去旅游",
+   "也要花钱去旅游",
+   "也要不花钱去旅游"
+  ],
+  "correct_answer": "也要花钱去旅游",
+  "explanation": "Зорилго (аялах)-д хүрэхийн тулд машингүй байхыг сонгов — 也要.",
+  "order_index": 16,
+  "id": "fazhan-zhongji1-l06-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "他怕麻烦，宁可天天吃方便面，________。",
+  "options": [
+   "也不想吃方便面",
+   "也不学着做饭",
+   "也要学着做饭"
+  ],
+  "correct_answer": "也不学着做饭",
+  "explanation": "Зайлсхийх зүйл нь «хоол хийж сурах» тул 也不.",
+  "order_index": 17,
+  "id": "fazhan-zhongji1-l06-q17",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "大家________，可是怎么也想不出一个好办法来。",
+  "options": [
+   "想了来想了去",
+   "想来想去",
+   "想过来想过去"
+  ],
+  "correct_answer": "想来想去",
+  "explanation": "V来V去 стандарт хэлбэр — 想来想去, нэмэлт 过/了 орохгүй.",
+  "order_index": 18,
+  "id": "fazhan-zhongji1-l06-q18",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "坐车人太多了，________。",
+  "options": [
+   "我宁可走路，也要坐公交车",
+   "我宁愿坐公交车，也不走路",
+   "我宁可走路，也不坐公交车"
+  ],
+  "correct_answer": "我宁可走路，也不坐公交车",
+  "explanation": "宁可……也不…… — автобуснаас (B) зайлсхийхийн тулд алхахыг (A) сонгов.",
+  "order_index": 19,
+  "id": "fazhan-zhongji1-l06-q19",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "她常常容易紧张，________。",
+  "options": [
+   "尤其是在家休息的时候",
+   "尤其是和朋友聊天的时候",
+   "尤其是和陌生人打交道的时候"
+  ],
+  "correct_answer": "尤其是和陌生人打交道的时候",
+  "explanation": "尤其是 — хамгийн их цочирддог тод тохиолдлыг онцолно.",
+  "order_index": 20,
+  "id": "fazhan-zhongji1-l06-q20",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "那时候我真不知道该怎么办，________。",
+  "options": [
+   "妈妈幸亏打电话安慰了我",
+   "打电话安慰了我幸亏妈妈",
+   "幸亏妈妈打电话安慰了我"
+  ],
+  "correct_answer": "幸亏妈妈打电话安慰了我",
+  "explanation": "幸亏 нь өгүүлэгдэхүүний (妈妈) ӨМНӨ, өгүүлбэрийн эхэнд ордог.",
+  "order_index": 21,
+  "id": "fazhan-zhongji1-l06-q21",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "她觉得________。",
+  "options": [
+   "失恋没有比再难过的事情了",
+   "没有比失恋再难过的事情了",
+   "没有再比失恋难过的事情了"
+  ],
+  "correct_answer": "没有比失恋再难过的事情了",
+  "explanation": "没有比……再……的了 — 比 ба 再-ийн дараалал: 没有比+зүйл+再+тэмдэг нэр.",
+  "order_index": 22,
+  "id": "fazhan-zhongji1-l06-q22",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "comprehension",
+  "question": "\"我\"最大的问题是什么？",
+  "options": [
+   "不会做调查",
+   "不喜欢运动",
+   "不会和陌生人打交道"
+  ],
+  "correct_answer": "不会和陌生人打交道",
+  "explanation": "2-р догол мөр: 我最大的问题是不会和陌生人打交道，尤其是上司。",
+  "order_index": 23,
+  "id": "fazhan-zhongji1-l06-q23",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "\"我\"为什么支支吾吾起来？",
+  "options": [
+   "看到了奇怪的东西",
+   "回答不出李总接连的问题",
+   "电梯坏了"
+  ],
+  "correct_answer": "回答不出李总接连的问题",
+  "explanation": "4–6-р догол мөр: Ли даргын дараалсан асуултад хариулж чадсангүй.",
+  "order_index": 24,
+  "id": "fazhan-zhongji1-l06-q24",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "\"我\"决定不坐电梯的原因是什么？",
+  "options": [
+   "同事让她锻炼",
+   "电梯坏了",
+   "不想再遭遇这样难受的事"
+  ],
+  "correct_answer": "不想再遭遇这样难受的事",
+  "explanation": "8-р догол мөр: 我宁可爬十七楼，也不想再遭遇这样难受的事了。",
+  "order_index": 25,
+  "id": "fazhan-zhongji1-l06-q25",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "\"我\"爬了多长时间的楼梯？",
+  "options": [
+   "整整一个月",
+   "一个星期",
+   "半年"
+  ],
+  "correct_answer": "整整一个月",
+  "explanation": "9-р догол мөр: 我整整爬了一个月的楼梯。",
+  "order_index": 26,
+  "id": "fazhan-zhongji1-l06-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "第二次电梯相遇，\"我\"为什么主动聊网球？",
+  "options": [
+   "因为知道李总也是网球迷",
+   "因为电梯里有网球广告",
+   "因为李总先问的"
+  ],
+  "correct_answer": "因为知道李总也是网球迷",
+  "explanation": "13-р догол мөр: 我已经知道李总和我一样是个网球迷。",
+  "order_index": 27,
+  "id": "fazhan-zhongji1-l06-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "为什么这一次的1分27秒令人难忘？",
+  "options": [
+   "因为电梯坏了很久",
+   "因为\"我\"主动改变了自己，和上司愉快交流",
+   "因为李总生气了"
+  ],
+  "correct_answer": "因为\"我\"主动改变了自己，和上司愉快交流",
+  "explanation": "21-р догол мөр ба бүх өгүүллэгийн гол санаа.",
+  "order_index": 28,
+  "id": "fazhan-zhongji1-l06-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 压力 / 巨大的 / 我 / 立刻 / 包围了",
+  "options": [
+   "压力包围了巨大的我立刻",
+   "巨大的压力立刻包围了我",
+   "我立刻包围了巨大的压力"
+  ],
+  "correct_answer": "巨大的压力立刻包围了我",
+  "explanation": "S(巨大的压力) + 立刻 + V(包围) + 了 + O(我).",
+  "order_index": 29,
+  "id": "fazhan-zhongji1-l06-q29",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 身影 / 他的 / 消失 / 走廊另一端 / 在",
+  "options": [
+   "他的身影消失在走廊另一端",
+   "他的身影在走廊另一端消失了",
+   "身影他的消失在走廊另一端"
+  ],
+  "correct_answer": "他的身影消失在走廊另一端",
+  "explanation": "S(他的身影) + V(消失) + 在+газар.",
+  "order_index": 30,
+  "id": "fazhan-zhongji1-l06-q30",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 也不想 / 这样难受的事 / 我宁可 / 爬十七楼 / 再遭遇 / 了",
+  "options": [
+   "我宁可爬十七楼，也不想再遭遇这样难受的事了",
+   "也不想我宁可爬十七楼，再遭遇这样难受的事了",
+   "我宁可也不想爬十七楼，再遭遇这样难受的事了"
+  ],
+  "correct_answer": "我宁可爬十七楼，也不想再遭遇这样难受的事了",
+  "explanation": "宁可+A（爬十七楼），也不想+B（再遭遇……事了）.",
+  "order_index": 31,
+  "id": "fazhan-zhongji1-l06-q31",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 没有比 / 了 / 这次考试 / 更糟糕的",
+  "options": [
+   "这次考试没有比更糟糕的了",
+   "没有这次考试比更糟糕的了",
+   "没有比这次考试更糟糕的了"
+  ],
+  "correct_answer": "没有比这次考试更糟糕的了",
+  "explanation": "没有比+зүйл+更+тэмдэг нэр+的+了.",
+  "order_index": 32,
+  "id": "fazhan-zhongji1-l06-q32",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ }
+]

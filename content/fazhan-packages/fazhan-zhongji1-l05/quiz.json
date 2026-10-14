@@ -1,0 +1,558 @@
+[
+ {
+  "type": "cloze",
+  "question": "亲戚说：不错是不错，可（ ）不是自个儿的家。",
+  "options": [
+   "当场",
+   "无论",
+   "生怕",
+   "毕竟"
+  ],
+  "correct_answer": "毕竟",
+  "explanation": "毕竟 — эцсийн эцэст (бодит байдлыг онцолно). 当场 — тэр дор нь, 生怕 — их айх, 无论 — ямар ч байсан.",
+  "order_index": 1,
+  "id": "fazhan-zhongji1-l05-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "只要（ ）瞧得起（ ）就行了。",
+  "options": [
+   "人家",
+   "助手",
+   "手下",
+   "自个儿"
+  ],
+  "correct_answer": "自个儿",
+  "explanation": "自个儿 — өөрөө, өөрийнхөө (ярианы). 人家 — бусад хүн, 手下 — захирагдагч, 助手 — туслах.",
+  "order_index": 2,
+  "id": "fazhan-zhongji1-l05-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "看到丢弃的碎布也（ ）起来再利用。",
+  "options": [
+   "劝",
+   "捡",
+   "盖",
+   "掀"
+  ],
+  "correct_answer": "捡",
+  "explanation": "捡 — түүж авах. 劝 — ятгах, 掀 — дэвсэх, 盖 — хучих.",
+  "order_index": 3,
+  "id": "fazhan-zhongji1-l05-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "亲戚怎么（ ）也劝不住他。",
+  "options": [
+   "劝",
+   "捡",
+   "握",
+   "端"
+  ],
+  "correct_answer": "劝",
+  "explanation": "劝 — ятгах. 捡 — түүх, 握 — атгах, 端 — барих.",
+  "order_index": 4,
+  "id": "fazhan-zhongji1-l05-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "老板看到东西都好好儿的，（ ）要给他加薪。",
+  "options": [
+   "毕竟",
+   "生怕",
+   "终于",
+   "当场"
+  ],
+  "correct_answer": "当场",
+  "explanation": "当场 — тэр дор нь. 毕竟 — эцсийн эцэст, 生怕 — их айх, 终于 — эцэст нь.",
+  "order_index": 5,
+  "id": "fazhan-zhongji1-l05-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "老板见他这么老实，又有（ ），就想让他当经理。",
+  "options": [
+   "爱心",
+   "信心",
+   "责任心",
+   "好奇心"
+  ],
+  "correct_answer": "责任心",
+  "explanation": "责任心 — хариуцлагын мэдрэмж. 好奇心 — сониуч зан, 信心 — итгэл, 爱心 — хайр энэрэл.",
+  "order_index": 6,
+  "id": "fazhan-zhongji1-l05-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这几个受过高等教育的年轻人心里有点儿不（ ）他。",
+  "options": [
+   "老实",
+   "服",
+   "剩下",
+   "发展"
+  ],
+  "correct_answer": "服",
+  "explanation": "服 — захирагдах, хүлээн зөвшөөрөх. 老实 — шулуун шударга, 发展 — хөгжих, 剩下 — үлдэх.",
+  "order_index": 7,
+  "id": "fazhan-zhongji1-l05-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "一个外商听说这个公司（ ）得不错，想和他们合作。",
+  "options": [
+   "剩下",
+   "发展",
+   "合作",
+   "特色"
+  ],
+  "correct_answer": "发展",
+  "explanation": "发展得不错 — сайн хөгжиж байна. 合作 — хамтран ажиллах, 特色 — онцлог, 剩下 — үлдэх.",
+  "order_index": 8,
+  "id": "fazhan-zhongji1-l05-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "所有的菜都吃光了，只（ ）两个小包子。",
+  "options": [
+   "利用",
+   "捡",
+   "剩下",
+   "丢弃"
+  ],
+  "correct_answer": "剩下",
+  "explanation": "剩下 — үлдэх. 捡 — түүх, 丢弃 — хаях, 利用 — ашиглах.",
+  "order_index": 9,
+  "id": "fazhan-zhongji1-l05-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "助手不住地看那外商，（ ）外商觉得中国人小气。",
+  "options": [
+   "毕竟",
+   "生怕",
+   "服",
+   "当场"
+  ],
+  "correct_answer": "生怕",
+  "explanation": "生怕 — муу зүйл болохоос их айх. 毕竟 — эцсийн эцэст, 当场 — тэр дор нь, 服 — захирагдах.",
+  "order_index": 10,
+  "id": "fazhan-zhongji1-l05-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "聊着聊着，（ ）转到王强的学历上。",
+  "options": [
+   "气氛",
+   "责任心",
+   "特色",
+   "话题"
+  ],
+  "correct_answer": "话题",
+  "explanation": "话题 — ярианы сэдэв. 气氛 — уур амьсгал, 责任心 — хариуцлага, 特色 — онцлог.",
+  "order_index": 11,
+  "id": "fazhan-zhongji1-l05-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "父母教育我和弟弟（ ）一粒米、一滴水。",
+  "options": [
+   "捡",
+   "珍惜",
+   "丢弃",
+   "利用"
+  ],
+  "correct_answer": "珍惜",
+  "explanation": "珍惜 — хайрлан эрхэмлэх. 丢弃 — хаях, 利用 — ашиглах, 捡 — түүх.",
+  "order_index": 12,
+  "id": "fazhan-zhongji1-l05-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Аль нь зөв бэ? «Байшин жижиг ч, эцсийн эцэст өөрсдийн гэр»",
+  "options": [
+   "可毕竟是我们自己的家，房子小是小。",
+   "房子小是小，因为毕竟是我们自己的家。",
+   "房子小是小，可毕竟是我们自己的家。"
+  ],
+  "correct_answer": "房子小是小，可毕竟是我们自己的家。",
+  "explanation": "Зөвшөөрлийн хэсэг (房子小是小) ЭХЭНД, 可毕竟 ТҮҮНИЙ ДАРАА ирнэ.",
+  "order_index": 13,
+  "id": "fazhan-zhongji1-l05-q13",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "东西好是好，________太贵了，我还是不买了。",
+  "options": [
+   "毕竟（可 орхисон）",
+   "可毕竟",
+   "因为毕竟"
+  ],
+  "correct_answer": "可毕竟",
+  "explanation": "可毕竟 хос нэгдлээр ирнэ, 可-г орхивол эргэлтийн утга суларна.",
+  "order_index": 14,
+  "id": "fazhan-zhongji1-l05-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "这把锁坏了，________。",
+  "options": [
+   "怎么也打不开打",
+   "怎么打也打不开",
+   "打怎么也不开"
+  ],
+  "correct_answer": "怎么打也打不开",
+  "explanation": "怎么+V1+也+V2+不+C — дараалал тогтсон бүтэц.",
+  "order_index": 15,
+  "id": "fazhan-zhongji1-l05-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "这首歌真好听，我________。",
+  "options": [
+   "怎么也听不够听",
+   "听怎么也不够",
+   "怎么听也听不够"
+  ],
+  "correct_answer": "怎么听也听不够",
+  "explanation": "听不够 бүхэл хэллэг тул 听-ийг дахин давтахгүй.",
+  "order_index": 16,
+  "id": "fazhan-zhongji1-l05-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "Аль нь зөв бэ?",
+  "options": [
+   "我们谈着谈着，老板进来了。",
+   "我们谈谈着着，老板进来了。",
+   "我们谈着，老板进来了。"
+  ],
+  "correct_answer": "我们谈着谈着，老板进来了。",
+  "explanation": "V着V着 — V+着 бүхэлдээ хоёр удаа давтагдана.",
+  "order_index": 17,
+  "id": "fazhan-zhongji1-l05-q17",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "聊着聊着，话题转到王强的学历上。— энэ өгүүлбэр ямар утга илэрхийлж байна вэ?",
+  "options": [
+   "Ярилцахаасаа өмнө сэдвээ төлөвлөсөн",
+   "Ярилцсаар байтал сэдэв гэнэт шилжсэн",
+   "Хоёр удаа ярилцсан"
+  ],
+  "correct_answer": "Ярилцсаар байтал сэдэв гэнэт шилжсэн",
+  "explanation": "V着V着，…… — үргэлжилж буй үйлдлийн дундуур өөр зүйл гарч ирэхийг заана.",
+  "order_index": 18,
+  "id": "fazhan-zhongji1-l05-q18",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "无论走到哪儿，我________不会忘记自己的祖国。",
+  "options": [
+   "就",
+   "都",
+   "也"
+  ],
+  "correct_answer": "都",
+  "explanation": "无论……都…… — главная清句д 都/也 заавал орно (都 илүү түгээмэл).",
+  "order_index": 19,
+  "id": "fazhan-zhongji1-l05-q19",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Аль нь зөв бэ? «Том жижиг хэрэг хамаагүй, тэр өөрөө шийдвэр гаргадаг»",
+  "options": [
+   "不论大事小事，他都自己做决定。",
+   "不论他都自己做决定，大事小事。",
+   "大事小事不论，他都自己做决定。"
+  ],
+  "correct_answer": "不论大事小事，他都自己做决定。",
+  "explanation": "不论/无论 + эерэг-сөрөг хос үг (大事小事)，+ 都 — дараалал.",
+  "order_index": 20,
+  "id": "fazhan-zhongji1-l05-q20",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "做事无论大小，都要________自己的责任。",
+  "options": [
+   "尽量",
+   "尽到",
+   "尽快"
+  ],
+  "correct_answer": "尽到",
+  "explanation": "尽到+责任 — хариуцлагыг бүрэн гүйцэтгэх. 尽量 — аль болох, 尽快 — аль болох хурдан.",
+  "order_index": 21,
+  "id": "fazhan-zhongji1-l05-q21",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "只要是中国菜，不管________，哪种味道我都喜欢。",
+  "options": [
+   "贵不贵",
+   "好不好吃",
+   "酸、甜、苦、辣"
+  ],
+  "correct_answer": "酸、甜、苦、辣",
+  "explanation": "不管/无论-ийн ард жагсаалт хэлбэр (酸、甜、苦、辣) ирж болно.",
+  "order_index": 22,
+  "id": "fazhan-zhongji1-l05-q22",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "王强为什么没有去上大学？",
+  "options": [
+   "他没有被大学录取",
+   "他家附近没有大学",
+   "他用借来的钱送弟弟上了大学，自己去打工了"
+  ],
+  "correct_answer": "他用借来的钱送弟弟上了大学，自己去打工了",
+  "explanation": "第1段：王强用借来的钱送弟弟上了大学，自己打工。",
+  "order_index": 23,
+  "id": "fazhan-zhongji1-l05-q23",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "亲戚为什么骂王强是笨蛋？",
+  "options": [
+   "他怎么劝也劝不住王强冲进大雨里盖篷布",
+   "王强把公司的货物弄坏了",
+   "王强不听亲戚的建议去上大学"
+  ],
+  "correct_answer": "他怎么劝也劝不住王强冲进大雨里盖篷布",
+  "explanation": "第4段：夜里下大雨，王强冲进雨里去盖篷布，亲戚劝不住他。",
+  "order_index": 24,
+  "id": "fazhan-zhongji1-l05-q24",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "老板为什么想让王强当经理？",
+  "options": [
+   "王强学历很高",
+   "王强年纪最大",
+   "王强老实，又有责任心"
+  ],
+  "correct_answer": "王强老实，又有责任心",
+  "explanation": "第6段：老板见他这么老实，又有责任心，就想让他当经理。",
+  "order_index": 25,
+  "id": "fazhan-zhongji1-l05-q25",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "王强的助手为什么紧张起来了？",
+  "options": [
+   "生怕外商觉得中国人小气",
+   "生怕外商不喜欢这道菜",
+   "生怕服务员打包错了"
+  ],
+  "correct_answer": "生怕外商觉得中国人小气",
+  "explanation": "第10段：助手不住地看外商，生怕外商觉得中国人小气。",
+  "order_index": 26,
+  "id": "fazhan-zhongji1-l05-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "外商为什么感动得端起酒杯敬王强父母？",
+  "options": [
+   "因为王强请他吃了一顿丰盛的晚餐",
+   "因为王强的外语说得特别流利",
+   "因为王强讲述了父母从小教他珍惜、尽责任的家教"
+  ],
+  "correct_answer": "因为王强讲述了父母从小教他珍惜、尽责任的家教",
+  "explanation": "第12、13段：王强讲了父母的教育，外商说这是人生最好的教育。",
+  "order_index": 27,
+  "id": "fazhan-zhongji1-l05-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "这篇文章主要想告诉我们什么道理？",
+  "options": [
+   "只有上大学才能成功",
+   "家教和责任心比学历更能决定一个人的成功",
+   "外商很容易被感动"
+  ],
+  "correct_answer": "家教和责任心比学历更能决定一个人的成功",
+  "explanation": "全文通过王强的经历，说明家教、老实、责任心的重要性。",
+  "order_index": 28,
+  "id": "fazhan-zhongji1-l05-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 可毕竟 / 是我们自己的家 / 房子小是小",
+  "options": [
+   "可毕竟是我们自己的家，房子小是小",
+   "房子小可毕竟是小，我们自己的家",
+   "房子小是小，可毕竟是我们自己的家"
+  ],
+  "correct_answer": "房子小是小，可毕竟是我们自己的家",
+  "explanation": "A是A，可毕竟B — зөвшөөрлийн хэсэг эхэнд, 可毕竟 дараа нь.",
+  "order_index": 29,
+  "id": "fazhan-zhongji1-l05-q29",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 也 / 怎么 / 打不开 / 这把锁坏了 / 打",
+  "options": [
+   "这把锁坏了，怎么打也打不开",
+   "这把锁坏了，打怎么也打不开",
+   "这把锁坏了，怎么也打打不开"
+  ],
+  "correct_answer": "这把锁坏了，怎么打也打不开",
+  "explanation": "怎么+V1+也+V2+不+C дараалал.",
+  "order_index": 30,
+  "id": "fazhan-zhongji1-l05-q30",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 转到 / 王强的学历上 / 话题 / 聊着聊着",
+  "options": [
+   "话题聊着聊着，转到王强的学历上",
+   "聊着聊着，话题转到王强的学历上",
+   "聊着聊着，王强的学历上话题转到"
+  ],
+  "correct_answer": "聊着聊着，话题转到王强的学历上",
+  "explanation": "V着V着，S+V+O дараалал.",
+  "order_index": 31,
+  "id": "fazhan-zhongji1-l05-q31",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 都 / 无论 / 尽到 / 大小 / 自己的责任 / 要 / 做事",
+  "options": [
+   "做事无论大小，都要尽到自己的责任",
+   "无论做事大小，都要尽到自己的责任",
+   "做事大小无论，都要尽到自己的责任"
+  ],
+  "correct_answer": "做事无论大小，都要尽到自己的责任",
+  "explanation": "无论+нөхцөл(大小)，都+V дараалал; 做事 нь гол өгүүлбэрийн сэдэв тул эхэнд.",
+  "order_index": 32,
+  "id": "fazhan-zhongji1-l05-q32",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "hard"
+ }
+]

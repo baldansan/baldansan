@@ -1,0 +1,77 @@
+{
+ "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+ "courseType": "chinese-hsk",
+ "courseId": "fazhan-zhongji1",
+ "lessonId": "fazhan-zhongji1-l05",
+ "hskLevel": 4,
+ "lessonNumber": 5,
+ "lessonProfile": "hsk4-dialogue-shorttext-exam-workbook",
+ "lessonType": "hsk4-dialogue-shorttext-exam-workbook",
+ "language": "zh-MN",
+ "targetLanguage": "zh",
+ "uiLanguage": "mn",
+ "title": "最好的教育",
+ "mongolianTitle": "Хамгийн сайн боловсрол",
+ "series": "发展汉语（第二版）中级综合 I",
+ "seriesLabel_mn": "发展汉语 дунд I (≈HSK4)",
+ "source": "发展汉语（第二版）中级综合 I · 第5课 (сурах бичиг, 教案, 课件, 参考答案, албан mp3)",
+ "hasAudio": true,
+ "hasImages": true,
+ "audio": {
+  "text": "audio/fazhan-zhongji1-05-text.mp3",
+  "words": "audio/fazhan-zhongji1-05-words.mp3",
+  "vocabularyClips": "audio/words/w01..w46.mp3 (албан 生词 бичлэгээс хайчилсан)"
+ },
+ "media": {
+  "lessonId": "fazhan-zhongji1-l05",
+  "images": [
+   {
+    "id": "handshake",
+    "file": "images/handshake-hero.jpg",
+    "title": "握手 — гэрээ байгуулах мөч",
+    "role": "hero",
+    "section": "teacher-intro"
+   },
+   {
+    "id": "pengbu",
+    "file": "images/pengbu.jpg",
+    "title": "篷布 — тент даавуу",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "fengbu",
+    "file": "images/fengbu.jpg",
+    "title": "缝补 — оёж засах",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "qianyue",
+    "file": "images/qianyue.jpg",
+    "title": "签约 — гэрээ байгуулах",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "xueli",
+    "file": "images/xueli.jpg",
+    "title": "学历 — боловсролын зэрэг (төгсөлтийн дээл)",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "sui",
+    "file": "images/sui.jpg",
+    "title": "碎 — эмтэрсэн (心碎了)",
+    "role": "illustration",
+    "section": "vocabulary"
+   }
+  ]
+ },
+ "verification": {
+  "answerStatus": "official_answer_key_verified (参考答案)",
+  "textStatus": "source_verified (сурах бичгийн хуудсыг зургаар уншсан)",
+  "teacherLayer": "教案 + PPT 课件-д тулгуурласан"
+ }
+}
