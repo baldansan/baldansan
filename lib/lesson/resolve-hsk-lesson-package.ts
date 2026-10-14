@@ -40,6 +40,7 @@ import type {
   HskTeacherOverlayFields,
 } from "@/types/hsk-lesson-package";
 import type { LessonContent } from "@/types/lesson-content";
+import { courseSeriesLabel } from "@/lib/lesson/course-series-label";
 
 function isRecord(value: unknown): value is Record<string, unknown> {
   return typeof value === "object" && value !== null && !Array.isArray(value);
@@ -104,6 +105,7 @@ function mapVocabulary(lesson: LessonContent): HskPackageVocabItem[] {
     example_zh: word.exampleChinese || null,
     example_mn: word.exampleMongolian || null,
     en: word.hskLevel || undefined,
+    audio: word.audioUrl || undefined,
   }));
 }
 
@@ -875,6 +877,9 @@ function resolvePackageAudioBasePath(
 }
 
 function resolveLevel(lesson: LessonContent, teaching: Record<string, unknown> | null): string {
+  // 发展汉语 г.м. сурах бичгийн курс — HSK дугаар биш цувралын нэр.
+  const series = courseSeriesLabel(lesson.courseId);
+  if (series) return series;
   const fromTeaching = teaching ? trim(teaching.level) : "";
   if (fromTeaching) return fromTeaching;
 

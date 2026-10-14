@@ -1274,3 +1274,105 @@
   font-size: 11px;
   color: #7a8c82;
 }
+
+/* ---- Багцын зураг (hero + зурагт тайлбар) ба багшийн оршил — 发展汉语 г.м. ---- */
+.bs-tm-hero {
+  margin: 0 0 14px;
+  overflow: hidden;
+  border-radius: 18px;
+  background: #e6efe9;
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.04);
+}
+
+.bs-tm-hero img {
+  display: block;
+  width: 100%;
+  max-height: 220px;
+  object-fit: cover;
+}
+
+.bs-tm-hero figcaption,
+.bs-tm-illus-item figcaption {
+  padding: 6px 10px;
+  font-size: 11.5px;
+  font-weight: 700;
+  color: #4f6457;
+  text-align: center;
+}
+
+.bs-tm-intro-bubble-teacher {
+  margin: 10px 0 0;
+  font-size: 14px;
+  line-height: 1.55;
+  color: #1a2e22;
+}
+
+.bs-tm-warmup-q {
+  margin-bottom: 16px;
+  padding: 13px;
+  border: 2px solid #cfe9d8;
+  border-radius: 18px;
+  background: #eef9f2;
+}
+
+.bs-tm-warmup-q .bs-tm-warm-head {
+  color: #2f7a4c;
+}
+
+.bs-tm-warmup-q p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #1a2e22;
+}
+
+.bs-tm-illus {
+  margin-bottom: 16px;
+}
+
+.bs-tm-illus .bs-tm-warm-head {
+  color: #7a8c82;
+}
+
+.bs-tm-illus-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 10px;
+}
+
+.bs-tm-illus-item {
+  margin: 0;
+  overflow: hidden;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.04);
+}
+
+.bs-tm-illus-item img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+/* Үгийн карт дээрх зураг */
+.bs-vcard .bs-vimg {
+  margin: 12px auto 4px;
+  max-width: 260px;
+  overflow: hidden;
+  border-radius: 14px;
+  background: #f3f6f4;
+}
+
+.bs-vcard .bs-vimg img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.bs-vcard .bs-vimg figcaption {
+  padding: 5px 8px;
+  font-size: 12px;
+  color: #4f6457;
+}

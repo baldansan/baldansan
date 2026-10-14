@@ -18,6 +18,7 @@ import { resolveDecompositionCharacters } from "@/lib/hanzi/character-decomposit
 import SpeakButton from "../SpeakButton";
 import { DeepWordPanel } from "@/components/lesson/deep/deep-teaching-blocks";
 import { findDeepWord, type LessonDeepTeaching } from "@/types/lesson-deep-teaching";
+import { findImageForWord, type LessonPathImage } from "@/lib/lesson/lesson-path-images";
 
 function vocabKey(w: VocabItem): string {
   return String(w.id ?? w.zh);
@@ -43,12 +44,15 @@ export default function VocabularyCard({
   lesson,
   deep = null,
   onDone,
+  images = [],
 }: {
   lessonId: string;
   lesson: Lesson;
   /** Нэмэлт, гүнзгий тайлбар — байхгүй бол юу ч өөрчлөгдөхгүй. */
   deep?: LessonDeepTeaching | null;
   onDone: () => void;
+  /** Багцын зурагт тайлбар — title нь үгтэй таарвал картад харуулна. */
+  images?: LessonPathImage[];
 }) {
   const words: VocabItem[] = lesson.vocabulary ?? [];
   const [i, setI] = useState(0);
@@ -59,6 +63,7 @@ export default function VocabularyCard({
   const total = words.length;
   const w = words[i];
   const deepWord = findDeepWord(deep, w?.zh ?? "");
+  const wordImage = w ? findImageForWord(images, w.zh) : null;
 
   const hasExample = useMemo(
     () => Boolean(w && w.example_zh && w.example_zh.trim().length > 0),
@@ -257,7 +262,15 @@ export default function VocabularyCard({
           {w.beyond_syllabus && <span className="bs-beyond">超纲</span>}
         </div>
 
-        <SpeakButton text={w.zh} large title={`${w.zh} дуудлага`} />
+        <SpeakButton text={w.zh} src={w.audio} large title={`${w.zh} дуудлага`} />
+
+        {wordImage ? (
+          <figure className="bs-vimg">
+            {/* eslint-disable-next-line @next/next/no-img-element -- Supabase public URL */}
+            <img src={wordImage.url} alt={wordImage.title} loading="lazy" />
+            <figcaption translate="no">{wordImage.title}</figcaption>
+          </figure>
+        ) : null}
 
         {hasExample && (
           <div className="bs-example">

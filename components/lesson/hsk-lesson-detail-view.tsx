@@ -18,6 +18,7 @@ import { hskVocabularyStudyCtaLabel } from "@/lib/lesson/hsk-vocabulary-ui";
 import { lessonPreviewPath } from "@/lib/lesson-publish";
 import { quizStepSummary, getStudiedWordsCount } from "@/lib/lesson/bs-step-progress";
 import type { LessonContent } from "@/types/lesson-content";
+import { courseSeriesLabel } from "@/lib/lesson/course-series-label";
 
 type Props = {
   lesson: LessonContent;
@@ -26,7 +27,9 @@ type Props = {
 
 export function HskLessonDetailView({ lesson, adminPreview = false }: Props) {
   const content = lesson.hskStudy ?? parseHskStudyContentFromLesson(lesson);
-  const hskBadge = content.hskLevel ? `HSK${content.hskLevel}` : "HSK";
+  const hskBadge =
+    courseSeriesLabel(lesson.courseId) ??
+    (content.hskLevel ? `HSK${content.hskLevel}` : "HSK");
   const duration = lesson.duration?.trim() || "5–10 мин";
   const isPrelesson = isPrelessonPackage(lesson);
   const isKorean = inferLessonLanguage(lesson) === "ko";

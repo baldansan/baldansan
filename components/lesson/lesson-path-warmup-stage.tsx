@@ -8,6 +8,7 @@ import type { HskLessonPackage } from "@/types/hsk-lesson-package";
 import { lessonDisplayTitleMn } from "@/lib/course-display-meta";
 import { DeepPronunciationPanel } from "@/components/lesson/deep/deep-teaching-blocks";
 import type { LessonDeepTeaching } from "@/types/lesson-deep-teaching";
+import type { LessonPathImages } from "@/lib/lesson/lesson-path-images";
 
 type Props = {
   lesson: HskLessonPackage;
@@ -17,7 +18,15 @@ type Props = {
   showWarmupModules?: boolean;
   /** Нэмэлт, гүнзгий тайлбар — байхгүй бол юу ч өөрчлөгдөхгүй. */
   deep?: LessonDeepTeaching | null;
+  /** Багцын зураг (hero + зурагт тайлбар) — байхгүй бол юу ч өөрчлөгдөхгүй. */
+  images?: LessonPathImages | null;
 };
+
+/** Resolver-ийн "Сайн уу." / тайлбар fallback биш, жинхэнэ багшийн оршил эсэх. */
+function hasRealTeacherIntro(text: string | undefined): boolean {
+  const t = (text ?? "").trim();
+  return t.length > 40;
+}
 
 function count<T>(arr: T[] | undefined): number {
   return Array.isArray(arr) ? arr.length : 0;
@@ -33,7 +42,14 @@ export function LessonPathWarmupStage({
   onStart,
   showWarmupModules = false,
   deep = null,
+  images = null,
 }: Props) {
+  const teacherIntro = hasRealTeacherIntro(lesson.hook?.teacher_mn)
+    ? lesson.hook.teacher_mn.trim()
+    : null;
+  const warmupQuestion = lesson.hook?.warmup_mn?.trim() || null;
+  const hero = images?.hero ?? null;
+  const illustrations = images?.illustrations ?? [];
   const vocabN = count(lesson.vocabulary);
   const grammarN = count(lesson.grammar);
   const dialogueN = count(lesson.dialogues);
@@ -70,6 +86,13 @@ export function LessonPathWarmupStage({
 
   return (
     <div className="bs-path-warmup">
+      {hero ? (
+        <figure className="bs-tm-hero">
+          {/* eslint-disable-next-line @next/next/no-img-element -- Supabase public URL, хэмжээ урьдчилж мэдэгдэхгүй */}
+          <img src={hero.url} alt={hero.title} loading="lazy" />
+          <figcaption translate="no">{hero.title}</figcaption>
+        </figure>
+      ) : null}
       <div className="bs-tm-intro">
         <TemeeEmojiIcon
           variant="teach"
@@ -92,7 +115,34 @@ export function LessonPathWarmupStage({
           «<span translate="no">{lessonDisplayTitleMn(lesson.title.mn)}</span>» — {lesson.level}{" "}
           {lesson.lesson_number}-р хичээл
         </p>
+        {teacherIntro ? (
+          <p className="bs-tm-intro-bubble-teacher" translate="no">
+            {teacherIntro}
+          </p>
+        ) : null}
       </div>
+
+      {warmupQuestion ? (
+        <div className="bs-tm-warmup-q">
+          <div className="bs-tm-warm-head">🗣️ Халаалт — эхлээд бодоод үзье</div>
+          <p translate="no">{warmupQuestion}</p>
+        </div>
+      ) : null}
+
+      {illustrations.length > 0 ? (
+        <div className="bs-tm-illus">
+          <div className="bs-tm-warm-head">🖼️ Энэ хичээлд гарах зүйлс</div>
+          <div className="bs-tm-illus-grid">
+            {illustrations.map((img) => (
+              <figure key={img.id} className="bs-tm-illus-item">
+                {/* eslint-disable-next-line @next/next/no-img-element -- Supabase public URL */}
+                <img src={img.url} alt={img.title} loading="lazy" />
+                <figcaption translate="no">{img.title}</figcaption>
+              </figure>
+            ))}
+          </div>
+        </div>
+      ) : null}
 
       {goals.length > 0 ? (
         <>

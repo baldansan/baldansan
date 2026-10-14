@@ -83,6 +83,8 @@ export interface HskPackageVocabItem extends HskVocabEnrichment {
   example_mn?: string | null;
   srs?: boolean;
   beyond_syllabus?: boolean;
+  /** Үгийн жинхэнэ дуудлагын бичлэг (sourceNote.vocabAudio → audioUrl); байхгүй бол TTS. */
+  audio?: string;
 }
 
 export interface HskPackageDialogueLine {

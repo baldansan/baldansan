@@ -257,7 +257,38 @@ export function patchSourceNotePackageAudioUrls(
     patchDialoguesAndTextsAudio(data.hskLessonPackage, resolve);
   }
 
+  // Үг бүрийн дуудлагын бичлэг: texts.json → `vocabularyAudio: { "<ханз>": "audio/words/01.mp3" }`
+  // → sourceNote.vocabAudio { "<ханз>": public URL } (teaching-media.ts → word.audioUrl → SpeakButton src).
+  const vocabAudio = resolveVocabularyAudioMap(hskStudy, resolve);
+  if (vocabAudio) {
+    data.vocabAudio = { ...(isRecord(data.vocabAudio) ? data.vocabAudio : {}), ...vocabAudio };
+  }
+
   return JSON.stringify(data);
+}
+
+function resolveVocabularyAudioMap(
+  hskStudy: unknown,
+  resolve: (path: string) => string | undefined
+): Record<string, string> | null {
+  if (!isRecord(hskStudy)) return null;
+  const candidates: unknown[] = [
+    hskStudy.vocabularyAudio,
+    isRecord(hskStudy.texts) ? hskStudy.texts.vocabularyAudio : null,
+    isRecord(hskStudy.lessonTeaching) ? hskStudy.lessonTeaching.vocabularyAudio : null,
+  ];
+  const out: Record<string, string> = {};
+  for (const raw of candidates) {
+    if (!isRecord(raw)) continue;
+    for (const [word, file] of Object.entries(raw)) {
+      const key = trim(word);
+      const path = trim(file);
+      if (!key || !path) continue;
+      const url = /^https?:\/\//i.test(path) ? path : resolve(path);
+      if (url) out[key] = url;
+    }
+  }
+  return Object.keys(out).length ? out : null;
 }
 
 /** Import ZIP / lesson.json may use `audio`, `audioFile`, or `audio_file`. */

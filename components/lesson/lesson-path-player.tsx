@@ -34,6 +34,7 @@ import ExercisesModule, {
   type PathExerciseFooterMeta,
 } from "./modules/ExercisesModule";
 import { moduleHasContent } from "@/lib/lesson/resolve-hsk-lesson-package";
+import { resolveLessonPathImages } from "@/lib/lesson/lesson-path-images";
 import "./lesson-player.css";
 import "./lesson-path.css";
 
@@ -66,6 +67,10 @@ export default function LessonPathPlayer({
   const plan = useMemo(
     () => buildLessonPathPlan(lesson, quizQuestions),
     [lesson, quizQuestions]
+  );
+  const pathImages = useMemo(
+    () => resolveLessonPathImages(lessonContent),
+    [lessonContent]
   );
 
   const [view, setView] = useState<View>("hub");
@@ -230,6 +235,7 @@ export default function LessonPathPlayer({
             onStart={handleFinishStage}
             showWarmupModules
             deep={deep}
+            images={pathImages}
           />
         );
       case "vocabulary":
@@ -241,6 +247,7 @@ export default function LessonPathPlayer({
                 lesson={lesson}
                 deep={deep}
                 onDone={finishModuleStage}
+                images={pathImages.illustrations}
               />
             ) : null}
             {moduleHasContent(lesson, "characters") ? (
@@ -379,7 +386,7 @@ export default function LessonPathPlayer({
               <span className="bs-lp-vocab-py">{w.pinyin}{w.pos ? ` · ${w.pos}` : ""}</span>
               <span className="bs-lp-vocab-mn">{w.meaning_mn ?? w.mn}</span>
             </span>
-            <SpeakButton text={w.zh} />
+            <SpeakButton text={w.zh} src={w.audio} />
           </li>
         ))}
       </ul>
@@ -424,6 +431,7 @@ export default function LessonPathPlayer({
           lesson={lesson}
           plan={plan}
           onStart={handleIntroStart}
+          images={pathImages}
         />
       </div>
     );
