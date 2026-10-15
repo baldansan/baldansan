@@ -92,6 +92,29 @@ export function setOnboardingCompleted(completed: boolean): void {
   }
 }
 
+/** Нүүрний «1 минутад 5 үг сур» хурдан онбординг — дууссан эсэх (localStorage). */
+const QUICK_START_DONE_KEY = "buunduu-quick-start-done-v1";
+
+export function getQuickStartCompleted(): boolean {
+  if (!isBrowser()) return true;
+  try {
+    return localStorage.getItem(QUICK_START_DONE_KEY) === "true";
+  } catch {
+    return true;
+  }
+}
+
+export function setQuickStartCompleted(completed: boolean): void {
+  if (!isBrowser()) return;
+  try {
+    localStorage.setItem(QUICK_START_DONE_KEY, completed ? "true" : "false");
+    // Хурдан онбординг дууссан бол ерөнхий онбордингийг ч дууссанд тооцно.
+    if (completed) setOnboardingCompleted(true);
+  } catch {
+    /* ignore */
+  }
+}
+
 export function getSelectedLanguage(): SelectedLanguage | null {
   if (!isBrowser()) return null;
   try {

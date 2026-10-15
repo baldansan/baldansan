@@ -1376,3 +1376,122 @@
   font-size: 12px;
   color: #4f6457;
 }
+
+/* ------------------------------------------------------------------ */
+/* Нүүр: «Өнөөдөр» 3 карт + статус мөр                                 */
+/* ------------------------------------------------------------------ */
+.bs-home-today {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 9px;
+}
+
+.bs-home-today-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  min-height: 112px;
+  padding: 12px 12px 11px;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.04);
+  text-decoration: none;
+  color: #1a2e22;
+  transition: transform 0.12s ease, border-color 0.12s ease;
+}
+
+.bs-home-today-card:active {
+  transform: scale(0.97);
+}
+
+.bs-home-today-card--amber {
+  background: linear-gradient(160deg, #fff7e6, #ffefc7);
+}
+
+.bs-home-today-card--green {
+  background: linear-gradient(160deg, #e8f8ee, #d4f3e0);
+}
+
+.bs-home-today-card--blue {
+  background: linear-gradient(160deg, #e7f0ff, #d6e6ff);
+}
+
+.bs-home-today-card:hover {
+  border-color: rgba(31, 184, 90, 0.35);
+}
+
+.bs-home-today-ic {
+  font-size: 20px;
+  line-height: 1;
+}
+
+.bs-home-today-n {
+  margin-top: auto;
+  font-size: 26px;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.bs-home-today-t {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-top: auto;
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1.25;
+}
+
+.bs-home-today-l {
+  font-size: 10.5px;
+  font-weight: 700;
+  color: #4f6457;
+  line-height: 1.2;
+}
+
+.bs-home-status {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 6px;
+  margin: 0 0 12px;
+  padding: 0;
+  list-style: none;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.bs-home-status::-webkit-scrollbar {
+  display: none;
+}
+
+.bs-home-status li,
+.bs-home-status a {
+  display: inline-flex;
+  flex: 1 1 0;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  min-width: 0;
+  padding: 7px 10px;
+  border-radius: 999px;
+  background: #fff;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.04);
+  font-size: 12px;
+  font-weight: 800;
+  color: #1a2e22;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.bs-home-status a:hover {
+  background: #f3faf6;
+}
+
+.bs-home-status .bs-home-status-sub {
+  font-size: 10px;
+  font-weight: 700;
+  color: #7a8c82;
+}

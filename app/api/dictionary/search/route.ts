@@ -50,6 +50,12 @@ export async function GET(request: Request) {
     const { searchParams } = new URL(request.url);
     const q = sanitizeQuery(searchParams.get("q") ?? "");
     const radical = sanitizeQuery(searchParams.get("radical") ?? "");
+    // ?limit=8 — нүүрний хурдан хайлт (dropdown) цөөн мөр авна.
+    const limitRaw = Number(searchParams.get("limit"));
+    const limit =
+      Number.isFinite(limitRaw) && limitRaw > 0
+        ? Math.min(MAX_RESULTS, Math.floor(limitRaw))
+        : MAX_RESULTS;
 
     if (q.length < 1 && radical.length < 1) {
       return Response.json({ query: q, results: [] });
@@ -101,7 +107,7 @@ export async function GET(request: Request) {
       return (a.frequency ?? 999999) - (b.frequency ?? 999999);
     });
 
-    return Response.json({ query: q, results });
+    return Response.json({ query: q, results: results.slice(0, limit) });
   } catch (err) {
     const message = err instanceof Error ? err.message : "Хайлтад алдаа гарлаа";
     return Response.json({ error: message }, { status: 500 });

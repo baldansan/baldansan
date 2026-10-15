@@ -10,8 +10,14 @@ export const metadata = {
 };
 
 export default async function HomeAppPage() {
-  const { catalog, defaultChipId, fazhanCatalog, fazhanDefaultChipId, libraryPreview } =
-    await loadMobileHomeData();
+  const {
+    catalog,
+    defaultChipId,
+    fazhanCatalog,
+    fazhanDefaultChipId,
+    libraryPreview,
+    bichlegSuggestion,
+  } = await loadMobileHomeData();
 
   return (
     <HomeAppView
@@ -21,6 +27,7 @@ export default async function HomeAppPage() {
       fazhanDefaultChipId={fazhanDefaultChipId}
       libraryPreview={libraryPreview}
       helzuiSummary={helzuiHomeSummary()}
+      bichlegSuggestion={bichlegSuggestion}
     />
   );
 }

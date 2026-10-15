@@ -199,6 +199,47 @@ export async function fetchClassPointsSummary(
   }));
 }
 
+/** Серверийн points_today()-той ижил: Улаанбаатарын цагаар өнөөдрийн огноо (YYYY-MM-DD). */
+export function pointsTodayKey(now: Date = new Date()): string {
+  try {
+    return new Intl.DateTimeFormat("en-CA", {
+      timeZone: "Asia/Ulaanbaatar",
+      year: "numeric",
+      month: "2-digit",
+      day: "2-digit",
+    }).format(now);
+  } catch {
+    return now.toISOString().slice(0, 10);
+  }
+}
+
+/** Өнөөдөр цуглуулсан оноо (user_points_daily). Нэвтрээгүй бол null. */
+export async function fetchMyPointsToday(): Promise<number | null> {
+  if (!hasSupabaseConfig || !supabase) return null;
+  const { userId } = await getAuthenticatedUserId();
+  if (!userId) return null;
+  const { data, error } = await supabase
+    .from("user_points_daily")
+    .select("points")
+    .eq("user_id", userId)
+    .eq("day", pointsTodayKey())
+    .maybeSingle();
+  if (error) {
+    console.warn("[points] today fetch failed:", error.message);
+    return null;
+  }
+  return Number(data?.points ?? 0);
+}
+
+/** Ангийн зэрэглэл (my_rank_summary → scope=class). Ангигүй / RPC байхгүй бол null. */
+export async function fetchMyClassRank(): Promise<MyRank | null> {
+  if (!hasSupabaseConfig || !supabase) return null;
+  const { userId } = await getAuthenticatedUserId();
+  if (!userId) return null;
+  const ranks = await fetchMyRanks("all");
+  return ranks.find((r) => r.scope === "class" && r.rank > 0) ?? null;
+}
+
 /** "Та эхний 15%-д" — rank/participants-аас. */
 export function topPercent(rank: number, participants: number): number {
   if (participants <= 0 || rank <= 0) return 100;

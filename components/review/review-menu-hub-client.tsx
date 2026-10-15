@@ -9,26 +9,13 @@ import { SHELL_MAIN_REVIEW } from "@/lib/app-shell-classes";
 import { getStreakUnified } from "@/lib/retention/retention-service";
 import { tr } from "@/lib/i18n/translate";
 import { useUiLocale } from "@/lib/i18n/ui-locale";
-import {
-  buildLocalQueue,
-  getLocalWordSrsStats,
-  readLocalStudiedWordIds,
-} from "@/lib/srs/local-word-srs";
 import { DAILY_SRS_GOAL } from "@/lib/srs/word-srs-types";
 import {
   getAuthenticatedUserId,
   getSession,
   hasSupabaseConfig,
 } from "@/lib/supabase/auth";
-import {
-  fetchHskLevelTotals,
-  fetchHskWordsByIds,
-  fetchHskWordsByLevel,
-} from "@/lib/supabase/hsk-words";
-import {
-  getDueWordQueue,
-  getUserWordSrsStats,
-} from "@/lib/supabase/user-word-srs";
+import { loadSrsHubStats } from "@/lib/review/srs-hub-stats";
 import type { BichlegContinueTarget } from "@/lib/bichleg/types";
 import { countSentenceCards } from "@/lib/bichleg/sentence-cards";
 import { fetchBichlegContinueTargetClient } from "@/lib/supabase/video-progress-client";
@@ -92,11 +79,6 @@ export function ReviewMenuHubClient({
     const streak = retention?.currentStreak ?? 0;
     setSentenceCards(countSentenceCards());
 
-    let dueCards = 0;
-    let dailyDone = 0;
-    let dailyGoal = DAILY_SRS_GOAL;
-    let studiedCount = 0;
-    let accuracyPct = 0;
     const userId: string | null = auth.userId ?? null;
     let bichlegClip: BichlegContinueTarget | null = null;
 
@@ -105,73 +87,27 @@ export function ReviewMenuHubClient({
       if (email) {
         setDisplayName(email.split("@")[0] ?? "Суралцагч");
       }
-
       setIsLoggedIn(Boolean(userId));
       if (userId) {
         void fetchMistakes(userId)
           .then(({ mistakes }) => setMistakeCount(mistakes.length))
           .catch(() => setMistakeCount(null));
-        const [{ data }, clip] = await Promise.all([
-          getUserWordSrsStats(userId),
-          fetchBichlegContinueTargetClient().catch(() => null),
-        ]);
-        bichlegClip = clip;
-        if (data) {
-          dueCards = data.dueToday;
-          dailyDone = data.dailyDone;
-          dailyGoal = data.dailyGoal;
-          studiedCount = data.studiedCount;
-          accuracyPct = data.accuracyPct;
-        } else {
-          const { items } = await getDueWordQueue(userId, activeLevel);
-          dueCards = items.length;
-        }
-      } else {
-        const [{ totals }, { data: studiedWords }] = await Promise.all([
-          fetchHskLevelTotals(),
-          fetchHskWordsByIds(readLocalStudiedWordIds()),
-        ]);
-        const studiedWordLevels = new Map<number, number>();
-        for (const word of studiedWords ?? []) {
-          if (word.id == null) continue;
-          const raw = word.hsk_level;
-          if (raw == null || raw === "7-9") continue;
-          const level = Number(raw);
-          if (Number.isInteger(level) && level >= 1 && level <= 6) {
-            studiedWordLevels.set(word.id, level);
-          }
-        }
-        const local = getLocalWordSrsStats(totals, studiedWordLevels);
-        dueCards = local.dueToday;
-        dailyDone = local.dailyDone;
-        dailyGoal = local.dailyGoal;
-        studiedCount = local.studiedCount;
-        accuracyPct = local.accuracyPct;
       }
-    } else {
-      const [{ totals }, { data: studiedWords }, { data: words }] =
-        await Promise.all([
-          fetchHskLevelTotals(),
-          fetchHskWordsByIds(readLocalStudiedWordIds()),
-          fetchHskWordsByLevel(activeLevel, { limit: 500 }),
-        ]);
-      const studiedWordLevels = new Map<number, number>();
-      for (const word of studiedWords ?? []) {
-        if (word.id == null) continue;
-        const raw = word.hsk_level;
-        if (raw == null || raw === "7-9") continue;
-        const level = Number(raw);
-        if (Number.isInteger(level) && level >= 1 && level <= 6) {
-          studiedWordLevels.set(word.id, level);
-        }
-      }
-      const local = getLocalWordSrsStats(totals, studiedWordLevels);
-      dueCards = buildLocalQueue(words, activeLevel).length;
-      dailyDone = local.dailyDone;
-      dailyGoal = local.dailyGoal;
-      studiedCount = local.studiedCount;
-      accuracyPct = local.accuracyPct;
     }
+
+    // Хүлээж буй карт, өдрийн зорилт — /home «Өнөөдөр» хэсэгтэй нэг эх сурвалж.
+    const [srs, clip] = await Promise.all([
+      loadSrsHubStats({ userId, activeLevel }).catch(() => null),
+      userId ? fetchBichlegContinueTargetClient().catch(() => null) : Promise.resolve(null),
+    ]);
+    bichlegClip = clip;
+    const { dueCards, dailyDone, dailyGoal, studiedCount, accuracyPct } = srs ?? {
+      dueCards: 0,
+      dailyDone: 0,
+      dailyGoal: DAILY_SRS_GOAL,
+      studiedCount: 0,
+      accuracyPct: 0,
+    };
 
     setStats({
       streak,
