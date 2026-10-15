@@ -44,7 +44,7 @@ async function loadKoreanCourseForHome(): Promise<KoreanLoadResult> {
 
   for (const courseId of candidates) {
     const [lessons, course] = await Promise.all([
-      getPublicLessonSummariesByCourseId(courseId),
+      loadPublishedSummaries(courseId),
       getCourseContentById(courseId),
     ]);
 
@@ -63,9 +63,19 @@ async function loadKoreanCourseForHome(): Promise<KoreanLoadResult> {
   return null;
 }
 
+/**
+ * Home only ever lists lessons a learner can open. The public query is
+ * meant to return `available` rows only, but be explicit here so a draft
+ * can never be counted toward "N хичээл нээлттэй" on the hero.
+ */
+async function loadPublishedSummaries(courseId: string) {
+  const lessons = await getPublicLessonSummariesByCourseId(courseId);
+  return lessons.filter((lesson) => lesson.publishStatus === "available");
+}
+
 async function loadHskLevelForHome(courseId: HskHomeLevelId) {
   const [lessons, course] = await Promise.all([
-    getPublicLessonSummariesByCourseId(courseId),
+    loadPublishedSummaries(courseId),
     getCourseContentById(courseId),
   ]);
 
@@ -88,7 +98,7 @@ async function loadHskLevelForHome(courseId: HskHomeLevelId) {
 
 async function loadFazhanCourseForHome(courseId: string) {
   const [lessons, course] = await Promise.all([
-    getPublicLessonSummariesByCourseId(courseId),
+    loadPublishedSummaries(courseId),
     getCourseContentById(courseId),
   ]);
 

@@ -134,7 +134,7 @@ export function BookPickerGrid({ entries, activeKey, onSelect }: Props) {
           </p>
         ) : null}
       </div>
-      <div className="grid grid-cols-3 gap-2.5 sm:grid-cols-4">
+      <div className="grid grid-cols-3 gap-2.5 sm:grid-cols-4 lg:grid-cols-6">
         {ordered.map((entry) => {
           const isActive = entry.key === activeKey;
           const isFav = favorites.includes(entry.key);

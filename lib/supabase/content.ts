@@ -478,11 +478,18 @@ async function fetchSupabaseLessonsByCourse(
 
   if (error) {
     if (isMissingColumnSelectError(error.message)) {
-      const { data: fallbackData, error: fallbackError } = await client
+      // The core-column fallback used to drop the status filter, so any
+      // course on a DB missing an optional column leaked its drafts into
+      // public lists (they showed up locked). Keep publicOnly here too.
+      let fallbackQuery = client
         .from("lessons")
         .select(LESSON_ROW_SELECT_CORE)
-        .eq("course_id", courseId)
-        .order("order_index", { ascending: true });
+        .eq("course_id", courseId);
+      if (publicOnly) {
+        fallbackQuery = fallbackQuery.eq("status", "available");
+      }
+      const { data: fallbackData, error: fallbackError } =
+        await fallbackQuery.order("order_index", { ascending: true });
 
       if (fallbackError) throw fallbackError;
       if (!fallbackData?.length) return [];
