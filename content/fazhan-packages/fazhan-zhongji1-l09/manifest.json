@@ -59,6 +59,13 @@
     "title": "证据 — шүүх дээр баримт бичиг үзүүлж буй эрэгтэй (证据 үгийн жишээ)",
     "role": "illustration",
     "section": "vocabulary"
+   },
+   {
+    "id": "ai-illustration",
+    "file": "images/ai-illustration.png",
+    "title": "Биеийн цаг (AI зураг)",
+    "role": "illustration",
+    "section": "teacher-intro"
    }
   ]
  },

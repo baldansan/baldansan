@@ -87,6 +87,13 @@
     "title": "农场 — агаарын өнцгөөс харсан аж ахуй",
     "role": "illustration",
     "section": "vocabulary"
+   },
+   {
+    "id": "ai-illustration",
+    "file": "images/ai-illustration.png",
+    "title": "Ногоон дээвэр (AI зураг)",
+    "role": "illustration",
+    "section": "teacher-intro"
    }
   ]
  },

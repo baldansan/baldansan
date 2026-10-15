@@ -1,9 +1,58 @@
 [
- {"id": "zoulang", "file": "images/zoulang.jpg", "title": "走廊 — коридор (офисын захын урт коридор)", "role": "hero", "section": "teacher-intro"},
- {"id": "bumen", "file": "images/bumen.jpg", "title": "部门 — компанийн хэлтэс, алба (зохион байгуулалтын бүдүүвч)", "role": "illustration", "section": "vocabulary"},
- {"id": "baowei", "file": "images/baowei.jpg", "title": "包围 — хүрээлэх (тэмцээнд хэд хэдэн тоглогчид нэг тоглогчийг хүрээлэв)", "role": "illustration", "section": "vocabulary"},
- {"id": "shangsheng", "file": "images/shangsheng.jpg", "title": "上升 — дээшлэх (далбаа өргөх ёслол)", "role": "illustration", "section": "vocabulary"},
- {"id": "zaoyu", "file": "images/zaoyu.jpg", "title": "遭遇 / 气喘吁吁 — туйлдах, амьсгаадах (тамирчин ялагдлаа тэвчихгүй байна)", "role": "illustration", "section": "vocabulary"},
- {"id": "nanao", "file": "images/nanao.jpg", "title": "难熬 — тэвчихэд хэцүү (халуунд салхилж суух өвгөд эмгэд)", "role": "illustration", "section": "vocabulary"},
- {"id": "guli", "file": "images/guli.jpg", "title": "鼓励 — урам хайрлах, дэмжих (эрхий хуруугаа өргөж байна)", "role": "illustration", "section": "vocabulary"}
+ {
+  "id": "zoulang",
+  "file": "images/zoulang.jpg",
+  "title": "走廊 — коридор (офисын захын урт коридор)",
+  "role": "hero",
+  "section": "teacher-intro"
+ },
+ {
+  "id": "bumen",
+  "file": "images/bumen.jpg",
+  "title": "部门 — компанийн хэлтэс, алба (зохион байгуулалтын бүдүүвч)",
+  "role": "illustration",
+  "section": "vocabulary"
+ },
+ {
+  "id": "baowei",
+  "file": "images/baowei.jpg",
+  "title": "包围 — хүрээлэх (тэмцээнд хэд хэдэн тоглогчид нэг тоглогчийг хүрээлэв)",
+  "role": "illustration",
+  "section": "vocabulary"
+ },
+ {
+  "id": "shangsheng",
+  "file": "images/shangsheng.jpg",
+  "title": "上升 — дээшлэх (далбаа өргөх ёслол)",
+  "role": "illustration",
+  "section": "vocabulary"
+ },
+ {
+  "id": "zaoyu",
+  "file": "images/zaoyu.jpg",
+  "title": "遭遇 / 气喘吁吁 — туйлдах, амьсгаадах (тамирчин ялагдлаа тэвчихгүй байна)",
+  "role": "illustration",
+  "section": "vocabulary"
+ },
+ {
+  "id": "nanao",
+  "file": "images/nanao.jpg",
+  "title": "难熬 — тэвчихэд хэцүү (халуунд салхилж суух өвгөд эмгэд)",
+  "role": "illustration",
+  "section": "vocabulary"
+ },
+ {
+  "id": "guli",
+  "file": "images/guli.jpg",
+  "title": "鼓励 — урам хайрлах, дэмжих (эрхий хуруугаа өргөж байна)",
+  "role": "illustration",
+  "section": "vocabulary"
+ },
+ {
+  "id": "ai-illustration",
+  "file": "images/ai-illustration.png",
+  "title": "Цахилгаан шат дахь агшин (AI зураг)",
+  "role": "illustration",
+  "section": "teacher-intro"
+ }
 ]

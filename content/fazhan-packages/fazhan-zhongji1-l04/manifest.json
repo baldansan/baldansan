@@ -45,6 +45,13 @@
     "title": "投诉 — гомдол гаргах",
     "role": "illustration",
     "section": "vocabulary"
+   },
+   {
+    "id": "ai-illustration",
+    "file": "images/ai-illustration.png",
+    "title": "Хамгийн хичээнгүй хүргэгч (AI зураг)",
+    "role": "illustration",
+    "section": "teacher-intro"
    }
   ]
  },

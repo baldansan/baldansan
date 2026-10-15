@@ -66,6 +66,13 @@
     "title": "干儿 — хатаасан хүнс (鱼干儿)",
     "role": "illustration",
     "section": "dialogue"
+   },
+   {
+    "id": "ai-illustration",
+    "file": "images/ai-illustration.png",
+    "title": "Зүүдэн дэх хайртай хүн (AI зураг)",
+    "role": "illustration",
+    "section": "teacher-intro"
    }
   ]
  },

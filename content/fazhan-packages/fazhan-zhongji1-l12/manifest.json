@@ -66,6 +66,13 @@
     "title": "清明节 — мод тарих (植树)",
     "role": "illustration",
     "section": "vocabulary"
+   },
+   {
+    "id": "ai-illustration",
+    "file": "images/ai-illustration.png",
+    "title": "Эрхий хуруугаар ярилцах нь (AI зураг)",
+    "role": "illustration",
+    "section": "teacher-intro"
    }
   ]
  },

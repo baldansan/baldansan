@@ -59,6 +59,13 @@
     "title": "代名词 — 秦陵兵马俑, \"第八大奇迹\"-ийн бэлгэдэл болсон жишээ",
     "role": "illustration",
     "section": "vocabulary"
+   },
+   {
+    "id": "ai-illustration",
+    "file": "images/ai-illustration.png",
+    "title": "Чөлөөт ажилтны баяр, зовлон (AI зураг)",
+    "role": "illustration",
+    "section": "teacher-intro"
    }
   ]
  },

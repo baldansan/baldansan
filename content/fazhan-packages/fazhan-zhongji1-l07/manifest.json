@@ -66,6 +66,13 @@
     "title": "早生贵子 — 莲子/栗子 (аяны тоглоом, адислал)",
     "role": "illustration",
     "section": "culture"
+   },
+   {
+    "id": "ai-illustration",
+    "file": "images/ai-illustration.png",
+    "title": "Өгөөмөр байдал сурсан нь (AI зураг)",
+    "role": "illustration",
+    "section": "teacher-intro"
    }
   ]
  },

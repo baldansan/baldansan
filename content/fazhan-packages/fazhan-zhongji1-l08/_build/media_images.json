@@ -1,6 +1,37 @@
 [
- {"id": "pangde", "file": "images/pangde.jpg", "title": "庞德 (Эзра Паунд)", "role": "hero", "section": "teacher-intro"},
- {"id": "chuanshuo-moguei", "file": "images/chuanshuo-moguei.jpg", "title": "传说 / 魔鬼", "role": "illustration", "section": "vocabulary"},
- {"id": "migong", "file": "images/migong.jpg", "title": "迷宫", "role": "illustration", "section": "vocabulary"},
- {"id": "biyu-haizi-taiyang", "file": "images/biyu-haizi-taiyang.jpg", "title": "比喻 — 孩子们是明天的太阳", "role": "illustration", "section": "vocabulary"}
+ {
+  "id": "pangde",
+  "file": "images/pangde.jpg",
+  "title": "庞德 (Эзра Паунд)",
+  "role": "hero",
+  "section": "teacher-intro"
+ },
+ {
+  "id": "chuanshuo-moguei",
+  "file": "images/chuanshuo-moguei.jpg",
+  "title": "传说 / 魔鬼",
+  "role": "illustration",
+  "section": "vocabulary"
+ },
+ {
+  "id": "migong",
+  "file": "images/migong.jpg",
+  "title": "迷宫",
+  "role": "illustration",
+  "section": "vocabulary"
+ },
+ {
+  "id": "biyu-haizi-taiyang",
+  "file": "images/biyu-haizi-taiyang.jpg",
+  "title": "比喻 — 孩子们是明天的太阳",
+  "role": "illustration",
+  "section": "vocabulary"
+ },
+ {
+  "id": "ai-illustration",
+  "file": "images/ai-illustration.png",
+  "title": "Тэнгэр элчийн үзэг (AI зураг)",
+  "role": "illustration",
+  "section": "teacher-intro"
+ }
 ]

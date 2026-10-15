@@ -73,6 +73,13 @@
     "title": "鼓励 — урам хайрлах, дэмжих (эрхий хуруугаа өргөж байна)",
     "role": "illustration",
     "section": "vocabulary"
+   },
+   {
+    "id": "ai-illustration",
+    "file": "images/ai-illustration.png",
+    "title": "Цахилгаан шат дахь агшин (AI зураг)",
+    "role": "illustration",
+    "section": "teacher-intro"
    }
   ]
  },

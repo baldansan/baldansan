@@ -1,7 +1,44 @@
 [
- {"id":"img1","file":"images/soho-home-office.jpg","title":"坐家 — гэртээ ажиллаж буй чөлөөт зохиолч (сурах бичгийн зураг)","role":"hero","section":"teacher-intro"},
- {"id":"img2","file":"images/keyboard.jpg","title":"键盘 — гар товчлуур","role":"illustration","section":"vocabulary"},
- {"id":"img3","file":"images/pao-rose-bath.jpg","title":"泡 — (цэцгийн усанд) норгох, амрах","role":"illustration","section":"vocabulary"},
- {"id":"img4","file":"images/gudu-lonely.jpg","title":"孤独 — ганцаардал","role":"illustration","section":"vocabulary"},
- {"id":"img5","file":"images/terracotta-army.jpg","title":"代名词 — 秦陵兵马俑, \"第八大奇迹\"-ийн бэлгэдэл болсон жишээ","role":"illustration","section":"vocabulary"}
+ {
+  "id": "img1",
+  "file": "images/soho-home-office.jpg",
+  "title": "坐家 — гэртээ ажиллаж буй чөлөөт зохиолч (сурах бичгийн зураг)",
+  "role": "hero",
+  "section": "teacher-intro"
+ },
+ {
+  "id": "img2",
+  "file": "images/keyboard.jpg",
+  "title": "键盘 — гар товчлуур",
+  "role": "illustration",
+  "section": "vocabulary"
+ },
+ {
+  "id": "img3",
+  "file": "images/pao-rose-bath.jpg",
+  "title": "泡 — (цэцгийн усанд) норгох, амрах",
+  "role": "illustration",
+  "section": "vocabulary"
+ },
+ {
+  "id": "img4",
+  "file": "images/gudu-lonely.jpg",
+  "title": "孤独 — ганцаардал",
+  "role": "illustration",
+  "section": "vocabulary"
+ },
+ {
+  "id": "img5",
+  "file": "images/terracotta-army.jpg",
+  "title": "代名词 — 秦陵兵马俑, \"第八大奇迹\"-ийн бэлгэдэл болсон жишээ",
+  "role": "illustration",
+  "section": "vocabulary"
+ },
+ {
+  "id": "ai-illustration",
+  "file": "images/ai-illustration.png",
+  "title": "Чөлөөт ажилтны баяр, зовлон (AI зураг)",
+  "role": "illustration",
+  "section": "teacher-intro"
+ }
 ]

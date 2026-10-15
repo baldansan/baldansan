@@ -94,6 +94,13 @@
     "title": "一帆风顺",
     "role": "illustration",
     "section": "vocabulary"
+   },
+   {
+    "id": "ai-illustration",
+    "file": "images/ai-illustration.png",
+    "title": "Аав, хүүхдийн маргаан (AI зураг)",
+    "role": "illustration",
+    "section": "teacher-intro"
    }
   ]
  },

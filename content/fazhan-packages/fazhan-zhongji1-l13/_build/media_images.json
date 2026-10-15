@@ -1,5 +1,30 @@
 [
- {"id":"img1","file":"images/cunzhe.jpg","title":"存折 — хадгаламжийн дэвтэр","role":"illustration","section":"vocabulary"},
- {"id":"img2","file":"images/shoushu.jpg","title":"手术 — мэс засал","role":"illustration","section":"vocabulary"},
- {"id":"img3","file":"images/zan-qian.jpg","title":"攒 — мөнгө хуримтлуулах","role":"illustration","section":"vocabulary"}
+ {
+  "id": "img1",
+  "file": "images/cunzhe.jpg",
+  "title": "存折 — хадгаламжийн дэвтэр",
+  "role": "illustration",
+  "section": "vocabulary"
+ },
+ {
+  "id": "img2",
+  "file": "images/shoushu.jpg",
+  "title": "手术 — мэс засал",
+  "role": "illustration",
+  "section": "vocabulary"
+ },
+ {
+  "id": "img3",
+  "file": "images/zan-qian.jpg",
+  "title": "攒 — мөнгө хуримтлуулах",
+  "role": "illustration",
+  "section": "vocabulary"
+ },
+ {
+  "id": "ai-illustration",
+  "file": "images/ai-illustration.png",
+  "title": "Амьдралын гурван чухал зүйл (AI зураг)",
+  "role": "illustration",
+  "section": "teacher-intro"
+ }
 ]

@@ -1,8 +1,51 @@
 [
- {"id": "handshake", "file": "images/handshake-hero.jpg", "title": "握手 — гэрээ байгуулах мөч", "role": "hero", "section": "teacher-intro"},
- {"id": "pengbu", "file": "images/pengbu.jpg", "title": "篷布 — тент даавуу", "role": "illustration", "section": "vocabulary"},
- {"id": "fengbu", "file": "images/fengbu.jpg", "title": "缝补 — оёж засах", "role": "illustration", "section": "vocabulary"},
- {"id": "qianyue", "file": "images/qianyue.jpg", "title": "签约 — гэрээ байгуулах", "role": "illustration", "section": "vocabulary"},
- {"id": "xueli", "file": "images/xueli.jpg", "title": "学历 — боловсролын зэрэг (төгсөлтийн дээл)", "role": "illustration", "section": "vocabulary"},
- {"id": "sui", "file": "images/sui.jpg", "title": "碎 — эмтэрсэн (心碎了)", "role": "illustration", "section": "vocabulary"}
+ {
+  "id": "handshake",
+  "file": "images/handshake-hero.jpg",
+  "title": "握手 — гэрээ байгуулах мөч",
+  "role": "hero",
+  "section": "teacher-intro"
+ },
+ {
+  "id": "pengbu",
+  "file": "images/pengbu.jpg",
+  "title": "篷布 — тент даавуу",
+  "role": "illustration",
+  "section": "vocabulary"
+ },
+ {
+  "id": "fengbu",
+  "file": "images/fengbu.jpg",
+  "title": "缝补 — оёж засах",
+  "role": "illustration",
+  "section": "vocabulary"
+ },
+ {
+  "id": "qianyue",
+  "file": "images/qianyue.jpg",
+  "title": "签约 — гэрээ байгуулах",
+  "role": "illustration",
+  "section": "vocabulary"
+ },
+ {
+  "id": "xueli",
+  "file": "images/xueli.jpg",
+  "title": "学历 — боловсролын зэрэг (төгсөлтийн дээл)",
+  "role": "illustration",
+  "section": "vocabulary"
+ },
+ {
+  "id": "sui",
+  "file": "images/sui.jpg",
+  "title": "碎 — эмтэрсэн (心碎了)",
+  "role": "illustration",
+  "section": "vocabulary"
+ },
+ {
+  "id": "ai-illustration",
+  "file": "images/ai-illustration.png",
+  "title": "Хамгийн сайн сургалт (AI зураг)",
+  "role": "illustration",
+  "section": "teacher-intro"
+ }
 ]

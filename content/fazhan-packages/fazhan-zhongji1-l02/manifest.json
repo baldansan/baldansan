@@ -101,6 +101,13 @@
     "title": "困惑",
     "role": "illustration",
     "section": "vocabulary"
+   },
+   {
+    "id": "ai-illustration",
+    "file": "images/ai-illustration.png",
+    "title": "Байр түрээслэх нь (AI зураг)",
+    "role": "illustration",
+    "section": "teacher-intro"
    }
   ]
  },

@@ -1,13 +1,86 @@
 [
- {"id": "xiaoqu", "file": "images/xiaoqu.jpg", "title": "小区 — орон сууцны хотхон (хичээлийн сэдэв: байр түрээслэх)", "role": "hero", "section": "teacher-intro"},
- {"id": "nongmao-shichang", "file": "images/nongmao-shichang.jpg", "title": "农贸市场", "role": "illustration", "section": "vocabulary"},
- {"id": "jianshenfang", "file": "images/jianshenfang.jpg", "title": "健身房", "role": "illustration", "section": "vocabulary"},
- {"id": "meirongyuan", "file": "images/meirongyuan.jpg", "title": "美容院", "role": "illustration", "section": "vocabulary"},
- {"id": "wuxingji", "file": "images/wuxingji.jpg", "title": "五星级", "role": "illustration", "section": "vocabulary"},
- {"id": "zhongjie", "file": "images/zhongjie.jpg", "title": "中介", "role": "illustration", "section": "vocabulary"},
- {"id": "jiaju", "file": "images/jiaju.jpg", "title": "家具", "role": "illustration", "section": "vocabulary"},
- {"id": "tui-la", "file": "images/tui-la.jpg", "title": "推", "role": "illustration", "section": "vocabulary"},
- {"id": "guang", "file": "images/guang.jpg", "title": "逛", "role": "illustration", "section": "vocabulary"},
- {"id": "jiaban", "file": "images/jiaban.jpg", "title": "加班", "role": "illustration", "section": "vocabulary"},
- {"id": "kunhuo", "file": "images/kunhuo.jpg", "title": "困惑", "role": "illustration", "section": "vocabulary"}
+ {
+  "id": "xiaoqu",
+  "file": "images/xiaoqu.jpg",
+  "title": "小区 — орон сууцны хотхон (хичээлийн сэдэв: байр түрээслэх)",
+  "role": "hero",
+  "section": "teacher-intro"
+ },
+ {
+  "id": "nongmao-shichang",
+  "file": "images/nongmao-shichang.jpg",
+  "title": "农贸市场",
+  "role": "illustration",
+  "section": "vocabulary"
+ },
+ {
+  "id": "jianshenfang",
+  "file": "images/jianshenfang.jpg",
+  "title": "健身房",
+  "role": "illustration",
+  "section": "vocabulary"
+ },
+ {
+  "id": "meirongyuan",
+  "file": "images/meirongyuan.jpg",
+  "title": "美容院",
+  "role": "illustration",
+  "section": "vocabulary"
+ },
+ {
+  "id": "wuxingji",
+  "file": "images/wuxingji.jpg",
+  "title": "五星级",
+  "role": "illustration",
+  "section": "vocabulary"
+ },
+ {
+  "id": "zhongjie",
+  "file": "images/zhongjie.jpg",
+  "title": "中介",
+  "role": "illustration",
+  "section": "vocabulary"
+ },
+ {
+  "id": "jiaju",
+  "file": "images/jiaju.jpg",
+  "title": "家具",
+  "role": "illustration",
+  "section": "vocabulary"
+ },
+ {
+  "id": "tui-la",
+  "file": "images/tui-la.jpg",
+  "title": "推",
+  "role": "illustration",
+  "section": "vocabulary"
+ },
+ {
+  "id": "guang",
+  "file": "images/guang.jpg",
+  "title": "逛",
+  "role": "illustration",
+  "section": "vocabulary"
+ },
+ {
+  "id": "jiaban",
+  "file": "images/jiaban.jpg",
+  "title": "加班",
+  "role": "illustration",
+  "section": "vocabulary"
+ },
+ {
+  "id": "kunhuo",
+  "file": "images/kunhuo.jpg",
+  "title": "困惑",
+  "role": "illustration",
+  "section": "vocabulary"
+ },
+ {
+  "id": "ai-illustration",
+  "file": "images/ai-illustration.png",
+  "title": "Байр түрээслэх нь (AI зураг)",
+  "role": "illustration",
+  "section": "teacher-intro"
+ }
 ]

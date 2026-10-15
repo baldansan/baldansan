@@ -66,6 +66,13 @@
     "title": "谎言 — худал ам",
     "role": "illustration",
     "section": "vocabulary"
+   },
+   {
+    "id": "ai-illustration",
+    "file": "images/ai-illustration.png",
+    "title": "Кофенд давс нэмэх нь (AI зураг)",
+    "role": "illustration",
+    "section": "teacher-intro"
    }
   ]
  },

@@ -45,6 +45,13 @@
     "title": "攒 — мөнгө хуримтлуулах",
     "role": "illustration",
     "section": "vocabulary"
+   },
+   {
+    "id": "ai-illustration",
+    "file": "images/ai-illustration.png",
+    "title": "Амьдралын гурван чухал зүйл (AI зураг)",
+    "role": "illustration",
+    "section": "teacher-intro"
    }
   ]
  },

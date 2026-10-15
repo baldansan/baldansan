@@ -66,6 +66,13 @@
     "title": "碎 — эмтэрсэн (心碎了)",
     "role": "illustration",
     "section": "vocabulary"
+   },
+   {
+    "id": "ai-illustration",
+    "file": "images/ai-illustration.png",
+    "title": "Хамгийн сайн сургалт (AI зураг)",
+    "role": "illustration",
+    "section": "teacher-intro"
    }
   ]
  },
