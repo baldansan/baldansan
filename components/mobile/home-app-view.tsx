@@ -34,7 +34,6 @@ import { getCurrentUser, hasSupabaseConfig } from "@/lib/supabase/auth";
 import { getStreakUnified } from "@/lib/retention/retention-service";
 import {
   filterLessonsByActiveHskLevel,
-  lessonMatchesActiveHskLevel,
   resolveLessonHskLevel,
 } from "@/lib/hsk/active-hsk-level";
 import { HelzuiHomeCard } from "@/components/helzui/helzui-home-card";
@@ -70,7 +69,11 @@ export function HomeAppView({
   libraryPreview,
 }: Props) {
   const locale = useUiLocale();
-  const { level: activeHskLevel, hydrated: hskHydrated } = useActiveHskLevel();
+  const {
+    level: activeHskLevel,
+    hydrated: hskHydrated,
+    setLevel: setActiveHskLevel,
+  } = useActiveHskLevel();
   const [selectedLang, setSelectedLang] = useState<ReturnType<typeof getSelectedLanguage>>(null);
   const [activeSeries, setActiveSeries] = useState<BookSeries>("standard");
   const [activeChip, setActiveChip] = useState(defaultChipId);
@@ -92,11 +95,14 @@ export function HomeAppView({
   } | null>(null);
 
   const visibleCatalog = useMemo(() => {
-    // 发展汉语 (Fazhan Hanyu) is its own catalog, shown as-is — the HSK
-    // active-level and zh/ko language-track filters below are tuned for
-    // courseIds like "hsk4" and don't apply to "fazhan-*" courseIds.
+    // 发展汉语 (Fazhan Hanyu) is its own catalog, shown as-is — the zh/ko
+    // language-track filter below is tuned for courseIds like "hsk4" and
+    // doesn't apply to "fazhan-*" courseIds.
     if (activeSeries === "fazhan") return fazhanCatalog;
 
+    // Every book of the chosen language is listed. The global HSK-level
+    // picker no longer hides books here: the whole point of Home is to see
+    // all of them at once and pick one — picking a book sets the level.
     let entries = catalog;
     if (selectedLang) {
       entries = entries.filter((entry) => {
@@ -108,17 +114,8 @@ export function HomeAppView({
         return catalogEntryMatchesLanguage(entry, selectedLang);
       });
     }
-    if (selectedLang === "zh" && hskHydrated) {
-      entries = entries.filter((entry) => {
-        const chipLevel = resolveCatalogChipLevel(entry);
-        if (chipLevel == null) return entry.courseId.includes("hsk");
-        return lessonMatchesActiveHskLevel(activeHskLevel, {
-          courseId: `hsk${chipLevel}`,
-        });
-      });
-    }
     return entries;
-  }, [activeSeries, fazhanCatalog, catalog, selectedLang, activeHskLevel, hskHydrated]);
+  }, [activeSeries, fazhanCatalog, catalog, selectedLang]);
 
   useRegisterLessonHskLevels(catalog.flatMap((entry) => entry.lessons));
 
@@ -130,9 +127,8 @@ export function HomeAppView({
     if (chip) setActiveChip(chip);
   }, [visibleCatalog]);
 
-  // Restore the last course the user picked; first-time visitors get a
-  // start guide instead (defaultChipId already points them at HSK 1).
-  const [showStartGuide, setShowStartGuide] = useState(false);
+  // Restore the last course the user picked (defaultChipId already points
+  // first-time visitors at HSK 1 — the book grid itself is the start guide).
   useEffect(() => {
     try {
       const savedSeries = window.localStorage.getItem("bs:homeSeries");
@@ -146,8 +142,6 @@ export function HomeAppView({
         savedCatalog.some((entry) => entry.chipId === saved && entry.available)
       ) {
         setActiveChip(saved);
-      } else if (!saved && series === "standard") {
-        setShowStartGuide(true);
       }
     } catch {
       // ignore
@@ -155,21 +149,17 @@ export function HomeAppView({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  const pickChip = (chipId: string) => {
-    setActiveChip(chipId);
-    setShowStartGuide(false);
-    try {
-      window.localStorage.setItem("bs:homeChip", chipId);
-    } catch {
-      // ignore
-    }
-  };
-
-  /** Unified "pick a book" from the Home grid — sets both series and chip in one go. */
+  /**
+   * Unified "pick a book" from the Home grid — sets series + chip, and
+   * moves the global HSK level to the book's level so the lesson list
+   * underneath (which is filtered by that level) actually shows the book.
+   */
   const pickBook = (entry: BookPickerEntry) => {
     setActiveSeries(entry.series);
     setActiveChip(entry.chipId);
-    setShowStartGuide(false);
+    if (entry.reviewLevel != null) {
+      setActiveHskLevel(entry.reviewLevel as 1 | 2 | 3 | 4 | 5 | 6);
+    }
     try {
       window.localStorage.setItem("bs:homeSeries", entry.series);
       window.localStorage.setItem("bs:homeChip", entry.chipId);
@@ -188,6 +178,7 @@ export function HomeAppView({
       subtitle: entry.subtitle,
       coverUrl: entry.coverUrl,
       available: entry.available,
+      lessonCount: entry.lessons.length,
       reviewLevel: resolveCatalogChipLevel(entry),
     }));
     if (selectedLang === "ko") return standardEntries;
@@ -200,12 +191,22 @@ export function HomeAppView({
       subtitle: entry.subtitle,
       coverUrl: entry.coverUrl,
       available: entry.available,
+      lessonCount: entry.lessons.length,
       reviewLevel: resolveCatalogChipLevel(entry),
     }));
     return [...standardEntries, ...fazhanEntries];
   }, [visibleCatalog, fazhanCatalog, selectedLang]);
 
   const activePickerKey = `${activeSeries}:${activeChip}`;
+
+  /** Hero numbers — "free" is only convincing with real counts behind it. */
+  const totals = useMemo(() => {
+    const open = pickerEntries.filter((e) => e.available);
+    return {
+      books: open.length,
+      lessons: open.reduce((sum, e) => sum + e.lessonCount, 0),
+    };
+  }, [pickerEntries]);
 
   useEffect(() => {
     if (visibleCatalog.some((entry) => entry.chipId === activeChip)) return;
@@ -382,11 +383,23 @@ export function HomeAppView({
         />
         <div className="relative z-10 flex items-center gap-3">
           <div className="min-w-0 flex-1">
-            <p className="text-sm font-semibold text-emerald-50">
-              {tr(locale, "Сайн уу")} 👋
+            <p className="text-xs font-semibold text-emerald-50">
+              {tr(locale, "Сайн уу")} 👋{" "}
+              <span className="font-extrabold">
+                {displayName === "Суралцагч" ? tr(locale, "Суралцагч") : displayName}
+              </span>
             </p>
-            <p className="truncate text-2xl font-extrabold leading-tight">
-              {displayName === "Суралцагч" ? tr(locale, "Суралцагч") : displayName}
+            <p className="mt-1.5 text-[22px] font-black leading-[1.15] sm:text-2xl">
+              {tr(locale, "Бүх номын бүх дасгал — үнэгүй")}
+            </p>
+            <p className="mt-1.5 text-[13px] font-medium leading-5 text-emerald-50">
+              {tr(locale, "Номоо сонгоод л эхэл.")}{" "}
+              {totals.books > 0 ? (
+                <span className="font-bold text-white">
+                  {totals.books} {tr(locale, "ном")} · {totals.lessons}{" "}
+                  {tr(locale, "хичээл нээлттэй")}
+                </span>
+              ) : null}
             </p>
             <div className="mt-3 flex flex-wrap items-center gap-2">
               <span className="inline-flex items-center gap-1.5 rounded-full bg-white/15 px-3 py-1.5 text-xs font-bold ring-1 ring-white/25">
@@ -461,61 +474,6 @@ export function HomeAppView({
         </Link>
       ) : null}
 
-      <DailyToneHomeCard />
-
-      {bichlegContinue ? (
-        <Link href={bichlegContinue.href} className="bs-tm-continue bs-desk-hide">
-          <span
-            className="bs-tm-continue-ic"
-            style={{
-              background: "linear-gradient(135deg, #4d9fff, #2563eb)",
-            }}
-            aria-hidden
-          >
-            📺
-          </span>
-          <span className="min-w-0 flex-1">
-            <p className="bs-tm-continue-kicker">
-              {tr(locale, "Бичлэг үргэлжлүүлэх")}
-            </p>
-            <p className="bs-tm-continue-title" translate="no">{bichlegContinue.title}</p>
-          </span>
-          <span className="bs-tm-card-chev" aria-hidden>
-            ›
-          </span>
-        </Link>
-      ) : null}
-
-      {showStartGuide ? (
-        <div className="mb-3 rounded-[20px] bg-white p-4 shadow-sm ring-1 ring-emerald-100">
-          <p className="text-sm font-bold text-[var(--app-text)]">
-            👋 {tr(locale, "Хятад хэлийг шинээр эхэлж байна уу?")}
-          </p>
-          <p className="mt-1 text-xs leading-5 text-[var(--app-muted)]">
-            {tr(
-              locale,
-              "HSK 1-ээс эхлээрэй — дуудлага, хөгөөс эхлээд алхам алхмаар заана. Аль хэдийн суралцдаг бол доороос түвшнээ сонгоорой."
-            )}
-          </p>
-          <div className="mt-3 flex flex-wrap gap-2">
-            <button
-              type="button"
-              onClick={() => pickChip("hsk1")}
-              className="inline-flex items-center rounded-full bg-emerald-600 px-4 py-2 text-xs font-extrabold text-white shadow-sm active:bg-emerald-700"
-            >
-              {tr(locale, "HSK 1-ээс эхлэх")} →
-            </button>
-            <button
-              type="button"
-              onClick={() => pickChip(activeChip)}
-              className="inline-flex items-center rounded-full bg-slate-100 px-4 py-2 text-xs font-bold text-slate-600 active:bg-slate-200"
-            >
-              {tr(locale, "Би түвшнээ мэднэ")}
-            </button>
-          </div>
-        </div>
-      ) : null}
-
       {pickerEntries.length > 1 ? (
         <BookPickerGrid
           entries={pickerEntries}
@@ -523,10 +481,6 @@ export function HomeAppView({
           onSelect={pickBook}
         />
       ) : null}
-
-      <LibraryPreviewRow items={libraryPreview} />
-
-      {selectedLang !== "ko" ? <HelzuiHomeCard /> : null}
 
       {activeCourse && !activeCourse.available ? (
         <div className="mt-2 flex flex-col items-center gap-3 rounded-[24px] bg-white px-6 py-8 text-center shadow-sm ring-1 ring-slate-100">
@@ -557,6 +511,36 @@ export function HomeAppView({
           progressPercent={progressPercent}
           allLessonsHref={activeCourse.allLessonsHref}
         />
+      ) : null}
+
+      {/* Нэмэлт — номын жагсаалт ба хичээлийн доор, нүүрийг чөлөөтэй үлдээнэ */}
+      <LibraryPreviewRow items={libraryPreview} />
+
+      <DailyToneHomeCard />
+
+      {selectedLang !== "ko" ? <HelzuiHomeCard /> : null}
+
+      {bichlegContinue ? (
+        <Link href={bichlegContinue.href} className="bs-tm-continue bs-desk-hide">
+          <span
+            className="bs-tm-continue-ic"
+            style={{
+              background: "linear-gradient(135deg, #4d9fff, #2563eb)",
+            }}
+            aria-hidden
+          >
+            📺
+          </span>
+          <span className="min-w-0 flex-1">
+            <p className="bs-tm-continue-kicker">
+              {tr(locale, "Бичлэг үргэлжлүүлэх")}
+            </p>
+            <p className="bs-tm-continue-title" translate="no">{bichlegContinue.title}</p>
+          </span>
+          <span className="bs-tm-card-chev" aria-hidden>
+            ›
+          </span>
+        </Link>
       ) : null}
     </MobileAppShell>
   );

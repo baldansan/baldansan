@@ -148,10 +148,34 @@ export const FAZHAN_HOME_LEVELS = [
     hskEquivalent: "HSK1-2 түвшин",
   },
   {
+    chipId: "fazhanChuji2",
+    chipLabel: "初级综合 II",
+    courseId: "fazhan-chuji2",
+    hskEquivalent: "HSK2-3 түвшин",
+  },
+  {
     chipId: "fazhanZhongji1",
     chipLabel: "中级综合 I",
     courseId: "fazhan-zhongji1",
     hskEquivalent: "HSK4 түвшин",
+  },
+  {
+    chipId: "fazhanZhongji2",
+    chipLabel: "中级综合 II",
+    courseId: "fazhan-zhongji2",
+    hskEquivalent: "HSK4-5 түвшин",
+  },
+  {
+    chipId: "fazhanGaoji1",
+    chipLabel: "高级综合 I",
+    courseId: "fazhan-gaoji1",
+    hskEquivalent: "HSK5-6 түвшин",
+  },
+  {
+    chipId: "fazhanGaoji2",
+    chipLabel: "高级综合 II",
+    courseId: "fazhan-gaoji2",
+    hskEquivalent: "HSK6 түвшин",
   },
 ] as const;
 
