@@ -301,10 +301,14 @@ security definer
 set search_path = public
 as $$
 begin
+  -- Эзэмшигч нь auth.users-д байхгүй (жишээ багш) бол owner-гүй үүсгэнэ
   insert into public.chat_rooms
     (kind, title, owner_user_id, classroom_id, is_open, language, max_members)
   values
-    ('class', left(new.name, 80), new.teacher_user_id, new.id, false, 'zh', null)
+    ('class', left(new.name, 80),
+     case when exists (select 1 from auth.users u where u.id = new.teacher_user_id)
+          then new.teacher_user_id else null end,
+     new.id, false, 'zh', null)
   on conflict do nothing;
   return new;
 end;
@@ -360,7 +364,8 @@ begin
     return new;
   end if;
 
-  if new.student_user_id is not null and new.status = 'active' then
+  if new.student_user_id is not null and new.status = 'active'
+     and exists (select 1 from auth.users u where u.id = new.student_user_id) then
     insert into public.chat_members (room_id, user_id, role)
     values (rid, new.student_user_id, 'member')
     on conflict (room_id, user_id) do nothing;
@@ -431,7 +436,10 @@ where not exists (
 
 -- Одоо байгаа ангиудад өрөө + гишүүд (нэг удаагийн backfill)
 insert into public.chat_rooms (kind, title, owner_user_id, classroom_id, is_open, language)
-select 'class', left(c.name, 80), c.teacher_user_id, c.id, false, 'zh'
+select 'class', left(c.name, 80),
+  case when exists (select 1 from auth.users u where u.id = c.teacher_user_id)
+       then c.teacher_user_id else null end,
+  c.id, false, 'zh'
 from public.classrooms c
 where not exists (
   select 1 from public.chat_rooms r where r.kind = 'class' and r.classroom_id = c.id
