@@ -14,6 +14,8 @@ import type {
   HskPackageVocabItem as VocabItem,
 } from "@/types/hsk-lesson-package";
 import { CharacterDecompositionHint } from "@/components/hanzi/CharacterDecompositionHint";
+import { ToneHanzi, ToneLegend } from "@/components/hanzi/ToneHanzi";
+import { WordWriterPanel } from "@/components/hanzi/WordWriterPanel";
 import { resolveDecompositionCharacters } from "@/lib/hanzi/character-decomposition";
 import SpeakButton from "../SpeakButton";
 import { DeepWordPanel } from "@/components/lesson/deep/deep-teaching-blocks";
@@ -197,7 +199,22 @@ export default function VocabularyCard({
       </div>
 
       <div className="bs-vcard">
-        <div className="bs-hanzi">{w.zh}</div>
+        {/* Пиньинь ханзныхаа яг дээр, хөг бүр өөр өнгөтэй — утга нь шууд доор нь */}
+        <div className="bs-hanzi bs-hanzi--tone">
+          <ToneHanzi word={w.zh} pinyin={w.pinyin} size="xl" />
+        </div>
+        {meaning.text ? (
+          <div className={meaning.pending ? "bs-vmn bs-vmn-pending" : "bs-vmn"}>
+            <span translate="no">{meaning.text}</span>
+            {meaning.pending ? (
+              <span className="bs-vmn-badge">орчуулга хүлээгдэж буй</span>
+            ) : null}
+          </div>
+        ) : null}
+        <div className="bs-tone-legend-row">
+          <ToneLegend />
+        </div>
+        <WordWriterPanel word={w.zh} />
         {decompositionCharacters.length > 0 ? (
           <div className="bs-decomp-hint-stack">
             {decompositionCharacters.map((view) => (
@@ -207,15 +224,6 @@ export default function VocabularyCard({
                 showCharLabel={decompositionCharacters.length > 1}
               />
             ))}
-          </div>
-        ) : null}
-        <div className="bs-vpy">{w.pinyin}</div>
-        {meaning.text ? (
-          <div className={meaning.pending ? "bs-vmn bs-vmn-pending" : "bs-vmn"}>
-            <span translate="no">{meaning.text}</span>
-            {meaning.pending ? (
-              <span className="bs-vmn-badge">орчуулга хүлээгдэж буй</span>
-            ) : null}
           </div>
         ) : null}
 

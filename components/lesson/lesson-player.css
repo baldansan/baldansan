@@ -207,3 +207,9 @@
   .bs-lp-vocab-py{font-size:11px;color:var(--bs-muted)}
   .bs-lp-vocab-mn{font-size:13px;font-weight:700;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 }
+
+/* Үгийн карт: пиньинь ханз дээрээ, хөгийн өнгөтэй (ToneHanzi) */
+.bs-vcard .bs-hanzi--tone{font-size:inherit;letter-spacing:0;line-height:1;display:flex;justify-content:center}
+.bs-vcard .bs-hanzi--tone .bs-tone-zh{font-size:60px;letter-spacing:.04em}
+.bs-vcard .bs-tone-legend-row{margin-top:10px}
+.bs-vcard .bs-word-writer{margin-top:12px}
