@@ -94,28 +94,28 @@ export function HomeAppView({
     href: string;
   } | null>(null);
 
-  const visibleCatalog = useMemo(() => {
-    // 发展汉语 (Fazhan Hanyu) is its own catalog, shown as-is — the zh/ko
-    // language-track filter below is tuned for courseIds like "hsk4" and
-    // doesn't apply to "fazhan-*" courseIds.
-    if (activeSeries === "fazhan") return fazhanCatalog;
+  // Every standard book of the chosen language. The global HSK-level
+  // picker no longer hides books here: the whole point of Home is to see
+  // all of them at once and pick one — picking a book sets the level.
+  const standardCatalog = useMemo(() => {
+    if (!selectedLang) return catalog;
+    return catalog.filter((entry) => {
+      if (!entry.available) {
+        return selectedLang === "zh"
+          ? entry.courseId.includes("hsk")
+          : entry.courseId.startsWith("korean");
+      }
+      return catalogEntryMatchesLanguage(entry, selectedLang);
+    });
+  }, [catalog, selectedLang]);
 
-    // Every book of the chosen language is listed. The global HSK-level
-    // picker no longer hides books here: the whole point of Home is to see
-    // all of them at once and pick one — picking a book sets the level.
-    let entries = catalog;
-    if (selectedLang) {
-      entries = entries.filter((entry) => {
-        if (!entry.available) {
-          return selectedLang === "zh"
-            ? entry.courseId.includes("hsk")
-            : entry.courseId.startsWith("korean");
-        }
-        return catalogEntryMatchesLanguage(entry, selectedLang);
-      });
-    }
-    return entries;
-  }, [activeSeries, fazhanCatalog, catalog, selectedLang]);
+  // The catalog the *selected* book lives in. 发展汉语 (Fazhan Hanyu) is
+  // its own catalog — the zh/ko language-track filter above is tuned for
+  // courseIds like "hsk4" and doesn't apply to "fazhan-*" courseIds.
+  const visibleCatalog = useMemo(
+    () => (activeSeries === "fazhan" ? fazhanCatalog : standardCatalog),
+    [activeSeries, fazhanCatalog, standardCatalog]
+  );
 
   useRegisterLessonHskLevels(catalog.flatMap((entry) => entry.lessons));
 
@@ -123,9 +123,13 @@ export function HomeAppView({
     const lang = getSelectedLanguage();
     setSelectedLang(lang);
     if (!lang) return;
+    // Seed a language-appropriate book once on mount. This used to re-run
+    // on every catalog change, which snapped the selection back to the
+    // first book each time the learner picked a 发展汉语 volume.
     const chip = resolveDefaultChipForLanguage(lang, visibleCatalog);
     if (chip) setActiveChip(chip);
-  }, [visibleCatalog]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   // Restore the last course the user picked (defaultChipId already points
   // first-time visitors at HSK 1 — the book grid itself is the start guide).
@@ -168,8 +172,9 @@ export function HomeAppView({
     }
   };
 
+  // The grid always shows both series, whichever one the selected book is in.
   const pickerEntries: BookPickerEntry[] = useMemo(() => {
-    const standardEntries: BookPickerEntry[] = visibleCatalog.map((entry) => ({
+    const standardEntries: BookPickerEntry[] = standardCatalog.map((entry) => ({
       key: `standard:${entry.chipId}`,
       chipId: entry.chipId,
       series: "standard",
@@ -195,7 +200,7 @@ export function HomeAppView({
       reviewLevel: resolveCatalogChipLevel(entry),
     }));
     return [...standardEntries, ...fazhanEntries];
-  }, [visibleCatalog, fazhanCatalog, selectedLang]);
+  }, [standardCatalog, fazhanCatalog, selectedLang]);
 
   const activePickerKey = `${activeSeries}:${activeChip}`;
 
