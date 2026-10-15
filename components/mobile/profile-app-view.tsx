@@ -30,6 +30,8 @@ import type { AuthUser } from "@/types/auth";
 import { exitKidMode } from "@/lib/kids/client";
 import { isKidEmail } from "@/lib/kids/types";
 import { useKidMode } from "@/lib/kids/use-kid-mode";
+import { ChatProfileSettings } from "@/components/social/chat-profile-settings";
+import { ts } from "@/lib/social/i18n";
 
 type LoadState = "loading" | "ready" | "error";
 
@@ -404,6 +406,19 @@ export function ProfileAppView() {
         <span className="bs-tm-card-chev" aria-hidden>›</span>
       </Link>
 
+      <Link href="/chat" className="bs-tm-card mt-2">
+        <span className="bs-tm-card-ic" aria-hidden>
+          💬
+        </span>
+        <span className="flex-1">
+          <span className="bs-tm-card-title">{ts(locale, "Чат")} · 聊天</span>
+          <span className="block text-xs text-[var(--app-muted)]">
+            {ts(locale, "Хятадаар ярилцъя")}
+          </span>
+        </span>
+        <span className="bs-tm-card-chev" aria-hidden>›</span>
+      </Link>
+
       <Link href="/join" className="bs-tm-card mt-2">
         <span className="bs-tm-card-ic" aria-hidden>
           🏫
@@ -427,6 +442,10 @@ export function ProfileAppView() {
         </span>
         <span className="bs-tm-card-chev" aria-hidden>›</span>
       </Link>
+
+      <div className="mt-4">
+        <ChatProfileSettings userId={user.id} defaultName={displayName} />
+      </div>
 
       {isAdmin ? (
         <Link href="/admin" className="bs-tm-card mt-2">
