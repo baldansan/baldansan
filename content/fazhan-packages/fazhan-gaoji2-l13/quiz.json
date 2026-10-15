@@ -1,0 +1,578 @@
+[
+ {
+  "type": "cloze",
+  "question": "居贤住的是本市一家新（ ）的肿瘤医院。",
+  "options": [
+   "渗",
+   "探视",
+   "孕育",
+   "筹建"
+  ],
+  "correct_answer": "筹建",
+  "explanation": "筹建 = байгуулахаар төлөвлөх. 探视 — эргэх, 孕育 — бүрэлдэх, 渗 — шүүрэх.",
+  "order_index": 1,
+  "id": "fazhan-gaoji2-l13-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "医生、护士都是从各个医院（ ）来的。",
+  "options": [
+   "觉察",
+   "散发",
+   "掺杂",
+   "抽调"
+  ],
+  "correct_answer": "抽调",
+  "explanation": "抽调 = сонгон шилжүүлэх.",
+  "order_index": 2,
+  "id": "fazhan-gaoji2-l13-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "居家的雕手个个都（ ）酒如命，很难有高寿之人。",
+  "options": [
+   "渗",
+   "耗",
+   "熏",
+   "嗜"
+  ],
+  "correct_answer": "嗜",
+  "explanation": "嗜酒如命 = архинд амь шигээ дуртай.",
+  "order_index": 3,
+  "id": "fazhan-gaoji2-l13-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "雕手临睡前必喝酒，说是要在腹中（ ）一团酒气。",
+  "options": [
+   "洗漱",
+   "孕育",
+   "探视",
+   "呕吐"
+  ],
+  "correct_answer": "孕育",
+  "explanation": "孕育 = бүрэлдүүлэх. 洗漱 — нүүр гараа угаах, 呕吐 — бөөлжих.",
+  "order_index": 4,
+  "id": "fazhan-gaoji2-l13-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "让核儿从外到里（ ）入人气和酒气。",
+  "options": [
+   "熏",
+   "耗",
+   "渗",
+   "抽"
+  ],
+  "correct_answer": "渗",
+  "explanation": "渗入 = шингэх, норох.",
+  "order_index": 5,
+  "id": "fazhan-gaoji2-l13-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "cloze",
+  "question": "他说这病他早就（ ）了。",
+  "options": [
+   "散发",
+   "觉察",
+   "畏惧",
+   "掺杂"
+  ],
+  "correct_answer": "觉察",
+  "explanation": "觉察 = мэдэрч олох. 掺杂 — хольж оруулах, 畏惧 — айх, 散发 — ялгаруулах.",
+  "order_index": 6,
+  "id": "fazhan-gaoji2-l13-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "这个女子有（ ），一闻到酒气就呕吐。",
+  "options": [
+   "手艺",
+   "世家",
+   "行当",
+   "洁癖"
+  ],
+  "correct_answer": "洁癖",
+  "explanation": "洁癖 = хэт цэвэрч зан.",
+  "order_index": 7,
+  "id": "fazhan-gaoji2-l13-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "居贤的（ ），让人望而生畏。",
+  "options": [
+   "前车之鉴",
+   "溘然长逝",
+   "津津有味",
+   "火上加油"
+  ],
+  "correct_answer": "前车之鉴",
+  "explanation": "前车之鉴 = өмнөх хүний алдаа сургамж болох.",
+  "order_index": 8,
+  "id": "fazhan-gaoji2-l13-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "房里散发着挥之不去的酒气，在酒气中还（ ）着橄榄核的气味。",
+  "options": [
+   "掺杂",
+   "觉察",
+   "抽调",
+   "耗"
+  ],
+  "correct_answer": "掺杂",
+  "explanation": "掺杂 = хольж оруулах, холилдох.",
+  "order_index": 9,
+  "id": "fazhan-gaoji2-l13-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "居贤（ ）地小口喝着酒。",
+  "options": [
+   "巧夺天工",
+   "津津有味",
+   "望而生畏",
+   "可嗟可叹"
+  ],
+  "correct_answer": "津津有味",
+  "explanation": "津津有味 = амтархан, сонирхон.",
+  "order_index": 10,
+  "id": "fazhan-gaoji2-l13-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "男的（ ）是居贤，女的很漂亮，但认不出是谁。",
+  "options": [
+   "奋力",
+   "年轮",
+   "眼力",
+   "分明"
+  ],
+  "correct_answer": "分明",
+  "explanation": "分明 = илт, ойлгомжтой.",
+  "order_index": 11,
+  "id": "fazhan-gaoji2-l13-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "许多年前泛舟西湖的那一份（ ），竟一直镂刻在他们生命的年轮里。",
+  "options": [
+   "洁癖",
+   "质地",
+   "温馨",
+   "病历"
+  ],
+  "correct_answer": "温馨",
+  "explanation": "温馨 = дулаахан сайхан.",
+  "order_index": 12,
+  "id": "fazhan-gaoji2-l13-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "五个月后，居贤（ ）。",
+  "options": [
+   "望而生畏",
+   "溘然长逝",
+   "津津有味",
+   "火上加油"
+  ],
+  "correct_answer": "溘然长逝",
+  "explanation": "溘然长逝 = гэнэт өөд болох.",
+  "order_index": 13,
+  "id": "fazhan-gaoji2-l13-q13",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "“管他呢”在这里的意思是：",
+  "options": [
+   "我问问他",
+   "我关心他",
+   "他不管我",
+   "（我）不管他"
+  ],
+  "correct_answer": "（我）不管他",
+  "explanation": "«管他呢» нь эсрэг асуулт хэлбэртэй, утга нь «би түүнийг тоохгүй».",
+  "order_index": 14,
+  "id": "fazhan-gaoji2-l13-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "A：好像要变天啊，我们还出门吗？B：（ ），马上出发。",
+  "options": [
+   "管天气什么它",
+   "它管什么天气",
+   "管它什么天气",
+   "管什么它天气"
+  ],
+  "correct_answer": "管它什么天气",
+  "explanation": "«管他/它 + асуух үгтэй хэллэг» — ямар ч байсан.",
+  "order_index": 15,
+  "id": "fazhan-gaoji2-l13-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "“橄榄核形状如舟，质地坚硬，故题材往往与舟船相关”中的“故”是什么意思？",
+  "options": [
+   "故意",
+   "从前",
+   "老的",
+   "所以"
+  ],
+  "correct_answer": "所以",
+  "explanation": "«故» = 所以 (бичгийн).",
+  "order_index": 16,
+  "id": "fazhan-gaoji2-l13-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "由于他的作品放映得不多，（ ）观众对他并不熟悉。",
+  "options": [
+   "虽",
+   "但",
+   "却",
+   "故"
+  ],
+  "correct_answer": "故",
+  "explanation": "«由于……，故……» — шалтгаан, үр дүн.",
+  "order_index": 17,
+  "id": "fazhan-gaoji2-l13-q17",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "我觉得还是把两件事分开（ ）。",
+  "options": [
+   "好的",
+   "为好",
+   "为好了",
+   "好为"
+  ],
+  "correct_answer": "为好",
+  "explanation": "«还是……为好» — зөвлөмж.",
+  "order_index": 18,
+  "id": "fazhan-gaoji2-l13-q18",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "有什么问题，（ ）。",
+  "options": [
+   "就行直接给我打电话",
+   "直接就行给我打电话",
+   "直接给我打电话就行",
+   "直接给我为好打电话"
+  ],
+  "correct_answer": "直接给我打电话就行",
+  "explanation": "«V就行» — шаардлагатай зүйлийн хүрээг заана.",
+  "order_index": 19,
+  "id": "fazhan-gaoji2-l13-q19",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "“酒伤身体，也‘伤’家庭”用了什么修辞手法？",
+  "options": [
+   "对比",
+   "夸张",
+   "拈连",
+   "排比"
+  ],
+  "correct_answer": "拈连",
+  "explanation": "拈连 — үйл үгийг бодит зүйлээс хийсвэр зүйл рүү шилжүүлэх.",
+  "order_index": 20,
+  "id": "fazhan-gaoji2-l13-q20",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "choice",
+  "question": "再穷不能穷教育，再苦不能苦（ ）。",
+  "options": [
+   "老师",
+   "农民",
+   "孩子",
+   "工人"
+  ],
+  "correct_answer": "孩子",
+  "explanation": "参考答案: 孩子 — 拈连.",
+  "order_index": 21,
+  "id": "fazhan-gaoji2-l13-q21",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "他不来，是我（ ）把他拉来的。",
+  "options": [
+   "难",
+   "硬",
+   "轻",
+   "重"
+  ],
+  "correct_answer": "硬",
+  "explanation": "«硬把……» — хүчээр.",
+  "order_index": 22,
+  "id": "fazhan-gaoji2-l13-q22",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "哪个句子里的“硬”是副词，表示勉强或坚持做某事？",
+  "options": [
+   "这张床太硬了",
+   "他的态度很硬",
+   "这块石头很硬",
+   "吃不了就算了，不要硬吃"
+  ],
+  "correct_answer": "吃不了就算了，不要硬吃",
+  "explanation": "«硬» нь дайвар үг: хүчээр хийх.",
+  "order_index": 23,
+  "id": "fazhan-gaoji2-l13-q23",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "把“在昆明湖荡舟”改成动宾组合带宾语的形式：",
+  "options": [
+   "在荡舟昆明湖",
+   "荡昆明湖舟",
+   "荡舟昆明湖",
+   "昆明湖荡舟在"
+  ],
+  "correct_answer": "荡舟昆明湖",
+  "explanation": "参考答案: 荡舟昆明湖.",
+  "order_index": 24,
+  "id": "fazhan-gaoji2-l13-q24",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "居贤得的是什么病？",
+  "options": [
+   "肝癌晚期",
+   "肾病",
+   "心脏病",
+   "肺癌"
+  ],
+  "correct_answer": "肝癌晚期",
+  "explanation": "Р2.",
+  "order_index": 25,
+  "id": "fazhan-gaoji2-l13-q25",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "居贤的妻子为什么跟他分手？",
+  "options": [
+   "他不爱她",
+   "她有洁癖，一闻到酒气就呕吐",
+   "他没有钱",
+   "她去了外地"
+  ],
+  "correct_answer": "她有洁癖，一闻到酒气就呕吐",
+  "explanation": "Р8.",
+  "order_index": 26,
+  "id": "fazhan-gaoji2-l13-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "居贤为什么不肯做手术、不肯打针？",
+  "options": [
+   "他早就觉察了这病，不再想治疗",
+   "医生不同意",
+   "他没有钱",
+   "他害怕疼"
+  ],
+  "correct_answer": "他早就觉察了这病，不再想治疗",
+  "explanation": "Р11.",
+  "order_index": 27,
+  "id": "fazhan-gaoji2-l13-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "居贤说庄大夫知道他喝酒，她是怎么说的？",
+  "options": [
+   "“你应该回家”",
+   "“你就当我不知道就是”",
+   "“你快去手术”",
+   "“你必须马上戒酒”"
+  ],
+  "correct_answer": "“你就当我不知道就是”",
+  "explanation": "Р14.",
+  "order_index": 28,
+  "id": "fazhan-gaoji2-l13-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "居贤留下的第二件核雕作品舱门上刻着什么？",
+  "options": [
+   "难忘西湖四月天。留赠庄敏。",
+   "金鼓龙舟。留赠古城雕艺厂。",
+   "居贤遗作",
+   "谢谢关心，敬勿探视"
+  ],
+  "correct_answer": "难忘西湖四月天。留赠庄敏。",
+  "explanation": "Р17.",
+  "order_index": 29,
+  "id": "fazhan-gaoji2-l13-q29",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 管他呢 / 反正我决定 / 下午三点以后 / 到医院去",
+  "options": [
+   "到医院去，管他呢，反正我决定下午三点以后",
+   "管他呢，下午三点以后反正我决定到医院去",
+   "管他呢，反正我决定下午三点以后到医院去",
+   "反正我决定管他呢，下午三点以后到医院去"
+  ],
+  "correct_answer": "管他呢，反正我决定下午三点以后到医院去",
+  "explanation": "«管他呢，反正……» — тоохгүй, ямар ч байсан…",
+  "order_index": 30,
+  "id": "fazhan-gaoji2-l13-q30",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 度蜜月时 / 他们去杭州 / 过了一个星期",
+  "options": [
+   "过了一个星期，度蜜月时他们去杭州",
+   "度蜜月时，他们去杭州过了一个星期",
+   "度蜜月时，过了一个星期他们去杭州",
+   "他们去杭州度蜜月时，过了一个星期"
+  ],
+  "correct_answer": "度蜜月时，他们去杭州过了一个星期",
+  "explanation": "Цаг хугацаа, үйл үг дараалал.",
+  "order_index": 31,
+  "id": "fazhan-gaoji2-l13-q31",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 橄榄核形状如舟 / 质地坚硬 / 故题材往往 / 与舟船相关",
+  "options": [
+   "质地坚硬，橄榄核形状如舟，故题材往往与舟船相关",
+   "故题材往往与舟船相关，橄榄核形状如舟，质地坚硬",
+   "橄榄核形状如舟，质地坚硬，故题材往往与舟船相关",
+   "橄榄核形状如舟，故质地坚硬，题材往往与舟船相关"
+  ],
+  "correct_answer": "橄榄核形状如舟，质地坚硬，故题材往往与舟船相关",
+  "explanation": "Шалтгаан эхэнд, «故» + үр дүн.",
+  "order_index": 32,
+  "id": "fazhan-gaoji2-l13-q32",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "hard"
+ }
+]

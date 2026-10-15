@@ -1,0 +1,578 @@
+[
+ {
+  "type": "cloze",
+  "question": "他收到了录取通知书，（ ）地打开信封。",
+  "options": [
+   "不谋而合",
+   "迫不及待",
+   "不以为然",
+   "顺理成章"
+  ],
+  "correct_answer": "迫不及待",
+  "explanation": "迫不及待 = тэсэж ядах, хүлээж чадахгүй. 不以为然 — зөвшөөрөхгүй, 不谋而合 — санамсаргүй давхцах.",
+  "order_index": 1,
+  "id": "fazhan-gaoji1-l02-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "月底了，我（ ），只好在家吃面条。",
+  "options": [
+   "随心所欲",
+   "无所不谈",
+   "喜气洋洋",
+   "囊中羞涩"
+  ],
+  "correct_answer": "囊中羞涩",
+  "explanation": "囊中羞涩 = халаасны мөнгө хүрэхгүй. 喜气洋洋 — баяр хөөртэй.",
+  "order_index": 2,
+  "id": "fazhan-gaoji1-l02-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "刚到一个新地方，（ ）会想家。",
+  "options": [
+   "免不了",
+   "来不及",
+   "比不上",
+   "看不起"
+  ],
+  "correct_answer": "免不了",
+  "explanation": "免不了 = зайлшгүй гарна. 来不及 — амжихгүй.",
+  "order_index": 3,
+  "id": "fazhan-gaoji1-l02-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "祖父取名字的特点是（ ）。",
+  "options": [
+   "俗",
+   "特定",
+   "随意",
+   "响亮"
+  ],
+  "correct_answer": "随意",
+  "explanation": "随意 = чөлөөтэй, хайнга. 响亮 — алдартай, 特定 — тусгай.",
+  "order_index": 4,
+  "id": "fazhan-gaoji1-l02-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "“莲花”是“年年发财”的（ ）。",
+  "options": [
+   "谐音",
+   "专利",
+   "典故",
+   "商标"
+  ],
+  "correct_answer": "谐音",
+  "explanation": "谐音 = ижил/төстэй дуудлагатай үг.",
+  "order_index": 5,
+  "id": "fazhan-gaoji1-l02-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "“邓林”这个笔名用了“夸父逐日”的（ ）。",
+  "options": [
+   "典故",
+   "货币",
+   "伦理",
+   "谐音"
+  ],
+  "correct_answer": "典故",
+  "explanation": "典故 = эртний номын түүх, хэллэг.",
+  "order_index": 6,
+  "id": "fazhan-gaoji1-l02-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "要得到祖父的（ ）并不容易。",
+  "options": [
+   "分辨",
+   "注册",
+   "赞许",
+   "撞车"
+  ],
+  "correct_answer": "赞许",
+  "explanation": "赞许 = зөвшөөрч сайшаах.",
+  "order_index": 7,
+  "id": "fazhan-gaoji1-l02-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "现在想起来，当时的误会真是（ ）透了。",
+  "options": [
+   "滑稽",
+   "赞许",
+   "雷同",
+   "信赖"
+  ],
+  "correct_answer": "滑稽",
+  "explanation": "滑稽 = инээдтэй.",
+  "order_index": 8,
+  "id": "fazhan-gaoji1-l02-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我住的城市也有（ ）的情况。",
+  "options": [
+   "顺口",
+   "随笔",
+   "省事",
+   "类似"
+  ],
+  "correct_answer": "类似",
+  "explanation": "类似 = төстэй.",
+  "order_index": 9,
+  "id": "fazhan-gaoji1-l02-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "因为有点儿（ ），给女儿起名字就考虑得不全面。",
+  "options": [
+   "赌气",
+   "落空",
+   "留心",
+   "过失"
+  ],
+  "correct_answer": "赌气",
+  "explanation": "赌气 = дургүйцэн зориуд.",
+  "order_index": 10,
+  "id": "fazhan-gaoji1-l02-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "中国因为人多，起名字就有可能（ ）。",
+  "options": [
+   "顺口",
+   "特定",
+   "雷同",
+   "响亮"
+  ],
+  "correct_answer": "雷同",
+  "explanation": "雷同 = нэр, бичвэр давхцах.",
+  "order_index": 11,
+  "id": "fazhan-gaoji1-l02-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "名字再好听，如果（ ）不对，也不会被人信赖。",
+  "options": [
+   "货色",
+   "注册",
+   "风尚",
+   "专利"
+  ],
+  "correct_answer": "货色",
+  "explanation": "货色 = барааны чанар, хүний чанар (зүйрлэл).",
+  "order_index": 12,
+  "id": "fazhan-gaoji1-l02-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "同名的人太多，老师说起名字就不得不加上班级才能（ ）。",
+  "options": [
+   "信赖",
+   "留心",
+   "分辨",
+   "赞许"
+  ],
+  "correct_answer": "分辨",
+  "explanation": "分辨 = ялгах, таних.",
+  "order_index": 13,
+  "id": "fazhan-gaoji1-l02-q13",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "下面哪一句是“转折”关系的复句？",
+  "options": [
+   "如果问题大，就不能解决。",
+   "问题虽大，但也还是能解决。",
+   "只要问题不大，就能解决。",
+   "因为问题大，所以不能解决。"
+  ],
+  "correct_answer": "问题虽大，但也还是能解决。",
+  "explanation": "虽……但…… = 转折; 因为……所以 = 因果; 只要……就 = 条件; 如果……就 = 假设.",
+  "order_index": 14,
+  "id": "fazhan-gaoji1-l02-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "哪一句“却”的位置是正确的？",
+  "options": [
+   "却雨小了，风更大了。",
+   "雨小了，风却更大了。",
+   "雨小了，却风更大了。",
+   "雨却小了，风更大了了。"
+  ],
+  "correct_answer": "雨小了，风却更大了。",
+  "explanation": "却 — дайвар үг, 主语-ийн ард, 谓语-ийн өмнө.",
+  "order_index": 15,
+  "id": "fazhan-gaoji1-l02-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "“事情（ ）小，影响却不容忽视。”空格里应填：",
+  "options": [
+   "虽",
+   "虽然他",
+   "然而",
+   "尽管他"
+  ],
+  "correct_answer": "虽",
+  "explanation": "虽 — 谓语-ийн өмнө ордог дайвар үг (бичгийн). 虽然 нь холбоос.",
+  "order_index": 16,
+  "id": "fazhan-gaoji1-l02-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "我很累，但（ ）睡不着。",
+  "options": [
+   "再",
+   "却",
+   "才",
+   "就"
+  ],
+  "correct_answer": "却",
+  "explanation": "但却 — 却 + но, 转折-ийг бататгана.",
+  "order_index": 17,
+  "id": "fazhan-gaoji1-l02-q17",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "所谓外星人，（ ）地球以外与人类相似的生命。",
+  "options": [
+   "不是",
+   "是指",
+   "因为",
+   "也是"
+  ],
+  "correct_answer": "是指",
+  "explanation": "所谓A，是指B — ойлголтыг тайлбарлах.",
+  "order_index": 18,
+  "id": "fazhan-gaoji1-l02-q18",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "“所谓留学生”后面最合适的说明是：",
+  "options": [
+   "学习汉语",
+   "很好",
+   "学生很多",
+   "是指离开自己的国家到外国学习的学生"
+  ],
+  "correct_answer": "是指离开自己的国家到外国学习的学生",
+  "explanation": "所谓A，是指B — A-ийн тодорхойлолтыг өгнө.",
+  "order_index": 19,
+  "id": "fazhan-gaoji1-l02-q19",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "这样的解释已经再清楚（ ）了。",
+  "options": [
+   "过",
+   "很",
+   "更",
+   "不过"
+  ],
+  "correct_answer": "不过",
+  "explanation": "再 + тэмдэг нэр + 不过 = дээд зэрэг.",
+  "order_index": 20,
+  "id": "fazhan-gaoji1-l02-q20",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "下面哪一句“最（再）……不过”用得不对？",
+  "options": [
+   "这样的价格是最便宜不过的。",
+   "他干这工作很熟练不过了。",
+   "做翻译工作，对她来说，再合适不过。",
+   "如果能这样解决问题，那再好不过。"
+  ],
+  "correct_answer": "他干这工作很熟练不过了。",
+  "explanation": "Заавал 最/再 хэрэглэнэ; 很 болохгүй.",
+  "order_index": 21,
+  "id": "fazhan-gaoji1-l02-q21",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "今天的作业是预习新课，（ ），请大家把生词写一遍。",
+  "options": [
+   "然而",
+   "所谓",
+   "鉴于",
+   "此外"
+  ],
+  "correct_answer": "此外",
+  "explanation": "此外 — дээр хэлснээс гадна нэмэлт.",
+  "order_index": 22,
+  "id": "fazhan-gaoji1-l02-q22",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "下面哪一句“鉴于”用得正确？",
+  "options": [
+   "学校停课鉴于天气。",
+   "我鉴于天气情况，决定去。",
+   "鉴于天气不好。",
+   "鉴于天气情况，学校决定停课一天。"
+  ],
+  "correct_answer": "鉴于天气情况，学校决定停课一天。",
+  "explanation": "鉴于 — өгүүлбэрийн эхэнд, ард нь шийдвэр.",
+  "order_index": 23,
+  "id": "fazhan-gaoji1-l02-q23",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "（ ），代表们建议增加孩子们锻炼的时间。",
+  "options": [
+   "所谓孩子们的体质",
+   "虽然目前孩子们的体质很好",
+   "只要孩子们锻炼",
+   "鉴于目前孩子们的体质下降"
+  ],
+  "correct_answer": "鉴于目前孩子们的体质下降",
+  "explanation": "鉴于 + үндэслэл → санал.",
+  "order_index": 24,
+  "id": "fazhan-gaoji1-l02-q24",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "下面哪个词最常用于书面语，并常用来连接语段表示转折？",
+  "options": [
+   "然而",
+   "但是",
+   "只是",
+   "可"
+  ],
+  "correct_answer": "然而",
+  "explanation": "然而 — бичгийн хэлний холбоос, догол мөрийг холбоход ч хэрэглэгдэнэ.",
+  "order_index": 25,
+  "id": "fazhan-gaoji1-l02-q25",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "reading",
+  "question": "作者的名字“叶兆言”是怎么来的？",
+  "options": [
+   "祖父请人算命取的",
+   "是出版社起的",
+   "根据出生的年份和属相取的",
+   "母亲姓姚的一半是“兆”，父亲名“诚”是“言”字旁"
+  ],
+  "correct_answer": "母亲姓姚的一半是“兆”，父亲名“诚”是“言”字旁",
+  "explanation": "2-р догол мөр.",
+  "order_index": 26,
+  "id": "fazhan-gaoji1-l02-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "祖父为什么故意把父亲的名字从“至真”改成“至诚”？",
+  "options": [
+   "因为“至真”谁都会想到，他偏偏要让大家的想法落空",
+   "因为父亲不喜欢",
+   "因为伯父反对",
+   "因为“至真”不好听"
+  ],
+  "correct_answer": "因为“至真”谁都会想到，他偏偏要让大家的想法落空",
+  "explanation": "3-р догол мөр: 偏偏改成“至诚”，让大家的想法都落空.",
+  "order_index": 27,
+  "id": "fazhan-gaoji1-l02-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "“刘克”这个笔名是怎么来的？",
+  "options": [
+   "是“留客”的谐音",
+   "因为作者姓刘",
+   "因为朋友叫刘克",
+   "本来想用“马克”，后来把“马”改成“牛”，又把“牛”改为“刘”"
+  ],
+  "correct_answer": "本来想用“马克”，后来把“马”改成“牛”，又把“牛”改为“刘”",
+  "explanation": "6-р догол мөр.",
+  "order_index": 28,
+  "id": "fazhan-gaoji1-l02-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "reading",
+  "question": "女儿叫“叶子”以后遇到了什么麻烦？",
+  "options": [
+   "老师不让她叫这个名字",
+   "女儿不喜欢这个名字",
+   "同学们都笑她",
+   "同年级有三个孩子叫叶子，老师只好按出生年月叫大叶子、小叶子"
+  ],
+  "correct_answer": "同年级有三个孩子叫叶子，老师只好按出生年月叫大叶子、小叶子",
+  "explanation": "9-р догол мөр.",
+  "order_index": 29,
+  "id": "fazhan-gaoji1-l02-q29",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "根据课文，作者最后对名字的看法是什么？",
+  "options": [
+   "名字完全不重要",
+   "名字越独特越好",
+   "名字只是符号，名字再好听，如果货色不对，也不会被人信赖",
+   "名字一定要和祖父商量"
+  ],
+  "correct_answer": "名字只是符号，名字再好听，如果货色不对，也不会被人信赖",
+  "explanation": "11-р догол мөр: 符号说到底只是符号.",
+  "order_index": 30,
+  "id": "fazhan-gaoji1-l02-q30",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Утгыг зөв илэрхийлсэн нь аль вэ? «Нэр ямар сайхан сонсогдсон ч бараа (чанар) таарахгүй бол хүмүүсийн итгэлийг олохгүй»",
+  "options": [
+   "货色名字再好听，如果不对，也不会被人信赖",
+   "名字好听再，如果货色不对，被人信赖也不会",
+   "如果货色不对，再名字好听，也被人不会信赖",
+   "名字再好听，如果货色不对，也不会被人信赖"
+  ],
+  "correct_answer": "名字再好听，如果货色不对，也不会被人信赖",
+  "explanation": "再……，如果……也不…… — «ямар ч ... ч гэсэн» бүтэц.",
+  "order_index": 31,
+  "id": "fazhan-gaoji1-l02-q31",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "你想说“起名字要考虑同名同姓的麻烦”。最合适的说法是：",
+  "options": [
+   "鉴于同名同姓带来的麻烦，起名字还是要费点儿心思。",
+   "最好不过同名同姓带来的麻烦。",
+   "此外同名同姓带来的麻烦，起名字要费点儿心思。",
+   "所谓同名同姓，起名字还是要费点儿心思。"
+  ],
+  "correct_answer": "鉴于同名同姓带来的麻烦，起名字还是要费点儿心思。",
+  "explanation": "鉴于 + үндэслэл → шийдвэр/зөвлөмж.",
+  "order_index": 32,
+  "id": "fazhan-gaoji1-l02-q32",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ }
+]

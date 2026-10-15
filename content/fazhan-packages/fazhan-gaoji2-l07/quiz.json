@@ -1,0 +1,578 @@
+[
+ {
+  "type": "cloze",
+  "question": "这首乐曲得到国际（ ）。",
+  "options": [
+   "请示",
+   "控诉",
+   "崇拜",
+   "公认"
+  ],
+  "correct_answer": "公认",
+  "explanation": "公认 = бүгд хүлээн зөвшөөрсөн. 崇拜 — шүтэх, 控诉 — гомдол мэдүүлэх, 请示 — заавар хүсэх.",
+  "order_index": 1,
+  "id": "fazhan-gaoji2-l07-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "祝英台从小就（ ）历史上的才女，一心想出去求学。",
+  "options": [
+   "悔恨",
+   "崇拜",
+   "揭示",
+   "适宜"
+  ],
+  "correct_answer": "崇拜",
+  "explanation": "崇拜 = шүтэн биширэх. 悔恨 — харамсах, 揭示 — илчлэх, 适宜 — тохиромжтой.",
+  "order_index": 2,
+  "id": "fazhan-gaoji2-l07-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "忠厚纯朴的梁山伯始终没有（ ）她的表白。",
+  "options": [
+   "做主",
+   "体现",
+   "领悟",
+   "勾"
+  ],
+  "correct_answer": "领悟",
+  "explanation": "领悟 = ухаж ойлгох. 做主 — шийдэх, 体现 — илэрхийлэх.",
+  "order_index": 3,
+  "id": "fazhan-gaoji2-l07-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "英台已经由父亲（ ）许配了别人。",
+  "options": [
+   "领悟",
+   "请示",
+   "做主",
+   "演奏"
+  ],
+  "correct_answer": "做主",
+  "explanation": "由……做主 = «…шийдэж». 请示 — заавар хүсэх.",
+  "order_index": 4,
+  "id": "fazhan-gaoji2-l07-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "梁山伯（ ）、忧郁、悲愤，不久就生病离开了人世。",
+  "options": [
+   "悔恨",
+   "结晶",
+   "适宜",
+   "着实"
+  ],
+  "correct_answer": "悔恨",
+  "explanation": "悔恨 = харамсан гомдох. 适宜 — тохиромжтой, 着实 — үнэхээр, 结晶 — үр шим.",
+  "order_index": 5,
+  "id": "fazhan-gaoji2-l07-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "祝英台来到梁山伯的墓前，向苍天发出对封建礼教的血泪（ ）。",
+  "options": [
+   "升华",
+   "演奏",
+   "一统",
+   "控诉"
+  ],
+  "correct_answer": "控诉",
+  "explanation": "控诉 = гомдол мэдүүлж буруутгах.",
+  "order_index": 6,
+  "id": "fazhan-gaoji2-l07-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "由何占豪写信向学院的孟波书记（ ）。",
+  "options": [
+   "请示",
+   "领悟",
+   "公认",
+   "适宜"
+  ],
+  "correct_answer": "请示",
+  "explanation": "请示 = дээд талаасаа заавар хүсэх.",
+  "order_index": 7,
+  "id": "fazhan-gaoji2-l07-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "如果他当时勾了前两者，也许就没有了今天这曲（ ）之作。",
+  "options": [
+   "纯朴",
+   "浓郁",
+   "不朽",
+   "凄婉"
+  ],
+  "correct_answer": "不朽",
+  "explanation": "不朽之作 = мөнхийн бүтээл.",
+  "order_index": 8,
+  "id": "fazhan-gaoji2-l07-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "这个结果（ ）出乎大家的意料。",
+  "options": [
+   "着实",
+   "勾",
+   "一统",
+   "凑数"
+  ],
+  "correct_answer": "着实",
+  "explanation": "着实 = үнэхээр (zhuó-shí).",
+  "order_index": 9,
+  "id": "fazhan-gaoji2-l07-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "越剧《梁祝》曲调柔美，（ ）用小提琴体现。",
+  "options": [
+   "升华",
+   "控诉",
+   "崇拜",
+   "适宜"
+  ],
+  "correct_answer": "适宜",
+  "explanation": "适宜 + V = «…-д тохиромжтой».",
+  "order_index": 10,
+  "id": "fazhan-gaoji2-l07-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "在地震中发生的很多事情都（ ）出母爱的伟大。",
+  "options": [
+   "表现",
+   "认识",
+   "结识",
+   "体现"
+  ],
+  "correct_answer": "体现",
+  "explanation": "хийсвэр шинж чанар (母爱的伟大) — 体现. 表现 — гүйцэтгэл.",
+  "order_index": 11,
+  "id": "fazhan-gaoji2-l07-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "cloze",
+  "question": "小提琴协奏曲《梁祝》，是集体智慧的（ ）。",
+  "options": [
+   "结局",
+   "结算",
+   "结拜",
+   "结晶"
+  ],
+  "correct_answer": "结晶",
+  "explanation": "结晶 = үнэ цэнтэй үр дүн.",
+  "order_index": 12,
+  "id": "fazhan-gaoji2-l07-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "《梁祝》用成功的艺术实践（ ）了一个真理。",
+  "options": [
+   "揭示",
+   "领悟",
+   "请示",
+   "勾"
+  ],
+  "correct_answer": "揭示",
+  "explanation": "揭示 = ёс жам, үнэнийг илчлэх.",
+  "order_index": 13,
+  "id": "fazhan-gaoji2-l07-q13",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Аль нь «被……所 + V» хэлбэрээр ЗӨВ бичигдсэн бэ?",
+  "options": [
+   "影片中男主角所被杀。",
+   "影片中男主角被情敌所杀。",
+   "影片中男主角被所情敌杀。",
+   "影片中男主角被所杀。"
+  ],
+  "correct_answer": "影片中男主角被情敌所杀。",
+  "explanation": "«被» ба «所»-ийн хооронд хийгч заавал байх ёстой.",
+  "order_index": 14,
+  "id": "fazhan-gaoji2-l07-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Аль өгүүлбэр «被……着» хэлбэрээр дүр зургийг дүрсэлж байна вэ?",
+  "options": [
+   "照片上，他被我们同情。",
+   "照片上，他被一群球迷簇拥着，神采飞扬。",
+   "照片上，他被所吸引。",
+   "照片上，他被打碎了。"
+  ],
+  "correct_answer": "照片上，他被一群球迷簇拥着，神采飞扬。",
+  "explanation": "«被……着» нь байдал, зураглалыг дүрсэлнэ.",
+  "order_index": 15,
+  "id": "fazhan-gaoji2-l07-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "А：小张呢？ Б：小张不来了，______。 Сэдвийг хадгалсан хариулт аль нь вэ?",
+  "options": [
+   "他被车撞了",
+   "车撞了小张的腿",
+   "一辆车撞了他",
+   "撞车的事故很多"
+  ],
+  "correct_answer": "他被车撞了",
+  "explanation": "Сэдэв «小张/他» хэвээр үлдэх ёстой.",
+  "order_index": 16,
+  "id": "fazhan-gaoji2-l07-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "Аль «被» өгүүлбэр ЗАСАХ шаардлагатай буруу өгүүлбэр вэ?",
+  "options": [
+   "电视机被弟弟给弄坏了。",
+   "她的遭遇被我们很同情。",
+   "这首作品被誉为中国的“文化符号”。",
+   "我们被歌声所吸引。"
+  ],
+  "correct_answer": "她的遭遇被我们很同情。",
+  "explanation": "«同情» нь сэтгэлийн үйл үг, үр дүн заахгүй тул «被» хэрэглэхгүй.",
+  "order_index": 17,
+  "id": "fazhan-gaoji2-l07-q17",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "Аль нь «ямар сайхан Хятадын «Ромео ба Жульетта» вэ!» гэсэн дуу алдах бичгийн хэв вэ?",
+  "options": [
+   "好部一中国的《罗密欧与朱丽叶》！",
+   "很一部中国的《罗密欧与朱丽叶》！",
+   "好一部中国的《罗密欧与朱丽叶》！",
+   "一好部中国的《罗密欧与朱丽叶》！"
+  ],
+  "correct_answer": "好一部中国的《罗密欧与朱丽叶》！",
+  "explanation": "好 + 一 + 量词 + 名词.",
+  "order_index": 18,
+  "id": "fazhan-gaoji2-l07-q18",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Дараахаас «好/真/太»-ийн ЗӨВ хэрэглээ аль нь вэ?",
+  "options": [
+   "我买了一个太便宜的手机。",
+   "好一场大雪！",
+   "他是一个真好的老师。",
+   "我买了好便宜的一部手机。"
+  ],
+  "correct_answer": "好一场大雪！",
+  "explanation": "«好/真/太» ихэвчлэн дуу алдах өгүүлбэрт.",
+  "order_index": 19,
+  "id": "fazhan-gaoji2-l07-q19",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«好不快活» нь юу гэсэн утгатай вэ?",
+  "options": [
+   "огт баяргүй",
+   "сайн биш хөгжилтэй",
+   "ямар сайхан цэнгэг вэ",
+   "баярлахыг хориглох"
+  ],
+  "correct_answer": "ямар сайхан цэнгэг вэ",
+  "explanation": "«好不 + тэмдэг нэр» нь «好 + тэмдэг нэр» шиг эрчимжүүлнэ.",
+  "order_index": 20,
+  "id": "fazhan-gaoji2-l07-q20",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«爷爷昨天晚上走了» гэж хэлэхэд «走了» нь юу гэсэн үг вэ?",
+  "options": [
+   "өвөө хотод очсон",
+   "өвөө өөд болсон",
+   "өвөө хурдан алхсан",
+   "өвөө гэрээс гарсан"
+  ],
+  "correct_answer": "өвөө өөд болсон",
+  "explanation": "婉曲: «走了» = «死了»-г зөөлрүүлсэн хэлбэр.",
+  "order_index": 21,
+  "id": "fazhan-gaoji2-l07-q21",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«喝西北风» гэж юуг хэлж байна вэ?",
+  "options": [
+   "хүйтэнд гарах",
+   "хойд зүгт аялах",
+   "хоол идэх юмгүй, өлсөх",
+   "цаг агаарыг ажиглах"
+  ],
+  "correct_answer": "хоол идэх юмгүй, өлсөх",
+  "explanation": "参考答案: 没有东西吃，饿肚子.",
+  "order_index": 22,
+  "id": "fazhan-gaoji2-l07-q22",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«这本书出版后，整个学界都轰动了» -ийг «……的VP» хэлбэрт зөв шилжүүлсэн нь аль вэ?",
+  "options": [
+   "这本书出版，的轰动了整个学界。",
+   "这本书的出版后，轰动了整个学界。",
+   "这本书的出版，轰动了整个学界。",
+   "这本书出版的，轰动了整个学界。"
+  ],
+  "correct_answer": "这本书的出版，轰动了整个学界。",
+  "explanation": "«的» нь «这本书» ба «出版»-ийн хооронд орно.",
+  "order_index": 23,
+  "id": "fazhan-gaoji2-l07-q23",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«父亲去世了，他的生活受到极大的影响» -ийг бичгийн хэвээр зөв бичсэн нь аль вэ?",
+  "options": [
+   "父亲去世了的使他生活受影响。",
+   "父亲去世的，使他的生活受到了极大的影响。",
+   "父亲的去世，使他的生活受到了极大的影响。",
+   "父亲的去世后，他的生活受到了极大的影响。"
+  ],
+  "correct_answer": "父亲的去世，使他的生活受到了极大的影响。",
+  "explanation": "……的VP，使…… бичгийн хэв.",
+  "order_index": 24,
+  "id": "fazhan-gaoji2-l07-q24",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "choice",
+  "question": "«……的VP» бүтцийн төв үйл үг ихэвчлэн ямар байх вэ?",
+  "options": [
+   "тоолуур",
+   "хоёр үет үйл үг",
+   "дайвар үг",
+   "нэг үет үйл үг"
+  ],
+  "correct_answer": "хоёр үет үйл үг",
+  "explanation": "Ном дээр: «一般是双音节动词».",
+  "order_index": 25,
+  "id": "fazhan-gaoji2-l07-q25",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "《梁祝》的作曲者是谁？",
+  "options": [
+   "梁山伯、祝英台",
+   "孟波、俞丽拿",
+   "艾萨·斯特恩、丁芝诺",
+   "何占豪、陈钢"
+  ],
+  "correct_answer": "何占豪、陈钢",
+  "explanation": "Р1.",
+  "order_index": 26,
+  "id": "fazhan-gaoji2-l07-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "祝英台是怎样去求学的？",
+  "options": [
+   "偷偷离家出走",
+   "女扮男装",
+   "由父亲陪同",
+   "嫁给别人"
+  ],
+  "correct_answer": "女扮男装",
+  "explanation": "Р3.",
+  "order_index": 27,
+  "id": "fazhan-gaoji2-l07-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "梁山伯去世后，祝英台做了什么？",
+  "options": [
+   "写了一封信",
+   "回到家里生活",
+   "去外地求学",
+   "投入墓中，二人化成彩蝶"
+  ],
+  "correct_answer": "投入墓中，二人化成彩蝶",
+  "explanation": "Р4.",
+  "order_index": 28,
+  "id": "fazhan-gaoji2-l07-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "孟波书记在三个选题中选了哪个？",
+  "options": [
+   "越剧《梁山伯与祝英台》曲调基础上的“梁祝”",
+   "大炼钢铁",
+   "都没选",
+   "女民兵"
+  ],
+  "correct_answer": "越剧《梁山伯与祝英台》曲调基础上的“梁祝”",
+  "explanation": "Р7.",
+  "order_index": 29,
+  "id": "fazhan-gaoji2-l07-q29",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "孟波为什么要求写“化蝶”？",
+  "options": [
+   "为了让故事更悲伤",
+   "因为领导要求",
+   "艺术中的浪漫主义是对美好的向往，不能等同于迷信",
+   "为了让曲子更长"
+  ],
+  "correct_answer": "艺术中的浪漫主义是对美好的向往，不能等同于迷信",
+  "explanation": "Р8.",
+  "order_index": 30,
+  "id": "fazhan-gaoji2-l07-q30",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 这本书 / 的出版 / 轰动了 / 整个学界",
+  "options": [
+   "这本书的出版，轰动了整个学界",
+   "轰动了这本书的出版整个学界",
+   "整个学界的出版轰动了这本书",
+   "这本书出版的，轰动了整个学界"
+  ],
+  "correct_answer": "这本书的出版，轰动了整个学界",
+  "explanation": "…的VP + үр дагавар.",
+  "order_index": 31,
+  "id": "fazhan-gaoji2-l07-q31",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 照片上 / 被 / 一群球迷 / 簇拥着 / 他",
+  "options": [
+   "照片上，一群球迷被他簇拥着",
+   "照片上，他被一群球迷簇拥着",
+   "簇拥着他被照片上一群球迷",
+   "他被照片上一群球迷簇拥着"
+  ],
+  "correct_answer": "照片上，他被一群球迷簇拥着",
+  "explanation": "被 + хийгч + V着.",
+  "order_index": 32,
+  "id": "fazhan-gaoji2-l07-q32",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "hard"
+ }
+]

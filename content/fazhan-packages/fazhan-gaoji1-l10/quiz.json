@@ -1,0 +1,596 @@
+[
+ {
+  "type": "cloze",
+  "question": "陈其对别人的议论表面上（ ）满不在乎，其实还是颇为苦恼的。",
+  "options": [
+   "更换",
+   "假装",
+   "戒备",
+   "捉弄"
+  ],
+  "correct_answer": "假装",
+  "explanation": "假装 = дүр эсгэх.",
+  "order_index": 1,
+  "id": "fazhan-gaoji1-l10-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "他对着天空赌咒（ ），三十岁以前决不再交什么女朋友了。",
+  "options": [
+   "自责",
+   "回避",
+   "反省",
+   "发誓"
+  ],
+  "correct_answer": "发誓",
+  "explanation": "赌咒发誓 — тангараглах.",
+  "order_index": 2,
+  "id": "fazhan-gaoji1-l10-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "仅仅才一个月，他的（ ）就被傍晚清凉的风吹得无影无踪。",
+  "options": [
+   "绰号",
+   "誓言",
+   "车闸",
+   "膝盖"
+  ],
+  "correct_answer": "誓言",
+  "explanation": "誓言 = андгай.",
+  "order_index": 3,
+  "id": "fazhan-gaoji1-l10-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "放在路边的自行车（ ）了。",
+  "options": [
+   "龇牙咧嘴",
+   "不翼而飞",
+   "惊慌失措",
+   "一如既往"
+  ],
+  "correct_answer": "不翼而飞",
+  "explanation": "不翼而飞 — гэнэт алга болох.",
+  "order_index": 4,
+  "id": "fazhan-gaoji1-l10-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "事前他并不知道这车的（ ）不好。",
+  "options": [
+   "肝炎",
+   "膝盖",
+   "绰号",
+   "车闸"
+  ],
+  "correct_answer": "车闸",
+  "explanation": "车闸 = тоормос.",
+  "order_index": 5,
+  "id": "fazhan-gaoji1-l10-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他（ ）地大叫：“闪开！闪开！”",
+  "options": [
+   "默默",
+   "惊慌失措",
+   "潇洒",
+   "羞耻"
+  ],
+  "correct_answer": "惊慌失措",
+  "explanation": "惊慌失措 — сандран балмагдах.",
+  "order_index": 6,
+  "id": "fazhan-gaoji1-l10-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "陈其痛得（ ）地说：“这车怎么办？”",
+  "options": [
+   "连连",
+   "支支吾吾",
+   "默默",
+   "龇牙咧嘴"
+  ],
+  "correct_answer": "龇牙咧嘴",
+  "explanation": "龇牙咧嘴 — өвдөөд шүдээ ярзайлах.",
+  "order_index": 7,
+  "id": "fazhan-gaoji1-l10-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "cloze",
+  "question": "陈其（ ）地解释：“我、我的车被偷了……”",
+  "options": [
+   "支支吾吾",
+   "连连",
+   "潇洒",
+   "默默"
+  ],
+  "correct_answer": "支支吾吾",
+  "explanation": "支吾 → 支支吾吾.",
+  "order_index": 8,
+  "id": "fazhan-gaoji1-l10-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "她很随意就（ ）了矛盾。",
+  "options": [
+   "化解",
+   "磕",
+   "撬",
+   "更换"
+  ],
+  "correct_answer": "化解",
+  "explanation": "化解 — зөрчил арилгах.",
+  "order_index": 9,
+  "id": "fazhan-gaoji1-l10-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "经过一番反反复复的自责（ ）后，他渐渐平静下来。",
+  "options": [
+   "反省",
+   "溜达",
+   "戒备",
+   "回避"
+  ],
+  "correct_answer": "反省",
+  "explanation": "自责反省.",
+  "order_index": 10,
+  "id": "fazhan-gaoji1-l10-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "陈其可以正常走路后，谭乐诗则（ ）地自然、和善。",
+  "options": [
+   "一如既往",
+   "前所未有",
+   "不翼而飞",
+   "无影无踪"
+  ],
+  "correct_answer": "一如既往",
+  "explanation": "一如既往 — урьдын адил.",
+  "order_index": 11,
+  "id": "fazhan-gaoji1-l10-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "这种情况以前从来没有发生过，是（ ）的。",
+  "options": [
+   "一如既往",
+   "无影无踪",
+   "惊慌失措",
+   "前所未有"
+  ],
+  "correct_answer": "前所未有",
+  "explanation": "前所未有 — урьд хожид байгаагүй.",
+  "order_index": 12,
+  "id": "fazhan-gaoji1-l10-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "医生（ ）摇头，拒绝了他。",
+  "options": [
+   "颇",
+   "皆",
+   "默默",
+   "连连"
+  ],
+  "correct_answer": "连连",
+  "explanation": "连连 + 摇头.",
+  "order_index": 13,
+  "id": "fazhan-gaoji1-l10-q13",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "哪句话用“既然”正确？",
+  "options": [
+   "既然你很忙，因为我不打扰你了。",
+   "既然他没来，所以我们开始吧。",
+   "既然明天可能下雨，我们不去了。",
+   "既然要查资料，那就去图书馆吧。"
+  ],
+  "correct_answer": "既然要查资料，那就去图书馆吧。",
+  "explanation": "既然 + тодорхой нөхцөл, 那就 + санал.",
+  "order_index": 14,
+  "id": "fazhan-gaoji1-l10-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "“既然……就……”与“因为……所以……”最大的区别是？",
+  "options": [
+   "两者没有区别",
+   "既然……就……重点是作出推论、判断",
+   "因为……所以……只能用于书面语",
+   "既然……就……的后一句一定是事实"
+  ],
+  "correct_answer": "既然……就……重点是作出推论、判断",
+  "explanation": "既然 = дүгнэлт, санал; 因为 = шалтгаан тайлбар.",
+  "order_index": 15,
+  "id": "fazhan-gaoji1-l10-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "哪句话用“未免”正确？",
+  "options": [
+   "这本书未免我很喜欢。",
+   "这间房子的租金是五千？未免贵了一点儿。",
+   "你的汉语未免说得非常好。",
+   "这个女孩儿未免很漂亮。"
+  ],
+  "correct_answer": "这间房子的租金是五千？未免贵了一点儿。",
+  "explanation": "未免 + сөрөг үнэлгээ + 一点儿.",
+  "order_index": 16,
+  "id": "fazhan-gaoji1-l10-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "“第一次出国，（ ）会有点儿紧张”，应该填：",
+  "options": [
+   "未免",
+   "幸好",
+   "偏偏",
+   "难免"
+  ],
+  "correct_answer": "难免",
+  "explanation": "Зайлсхийхэд хэцүү байдал → 难免.",
+  "order_index": 17,
+  "id": "fazhan-gaoji1-l10-q17",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "“才”在哪个句子里表示时间早、数量少？",
+  "options": [
+   "现在才六点，还可以再睡一会儿。",
+   "我感冒了，休息了两个星期才上班。",
+   "他毕业一年后才找到工作。",
+   "他四十岁才结婚。"
+  ],
+  "correct_answer": "现在才六点，还可以再睡一会儿。",
+  "explanation": "才 + хугацаа = эрт, бага.",
+  "order_index": 18,
+  "id": "fazhan-gaoji1-l10-q18",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "“他早上九点才起床”中的“才”表示：",
+  "options": [
+   "数量少",
+   "时间短",
+   "时间早",
+   "时间晚"
+  ],
+  "correct_answer": "时间晚",
+  "explanation": "Хугацааны үгийн хойно 才 = оройтсон.",
+  "order_index": 19,
+  "id": "fazhan-gaoji1-l10-q19",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "哪句话用“幸好”正确？",
+  "options": [
+   "幸好你提醒我，所以我就忘了。",
+   "幸好你提醒我，要不我就忘了。",
+   "幸好你提醒我，因为我就忘了。",
+   "幸好你提醒我，虽然我就忘了。"
+  ],
+  "correct_answer": "幸好你提醒我，要不我就忘了。",
+  "explanation": "幸好……，要不/否则/不然……",
+  "order_index": 20,
+  "id": "fazhan-gaoji1-l10-q20",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "“幸好护照找到了，否则……”后面最合适的是：",
+  "options": [
+   "我都不知怎么办",
+   "我很高兴",
+   "我去旅行",
+   "护照很漂亮"
+  ],
+  "correct_answer": "我都不知怎么办",
+  "explanation": "否则-н хойно хүсээгүй үр дагавар.",
+  "order_index": 21,
+  "id": "fazhan-gaoji1-l10-q21",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "“连连”的后面常常是：",
+  "options": [
+   "形容词",
+   "双音节动词（点头、摇头）",
+   "数量词",
+   "名词"
+  ],
+  "correct_answer": "双音节动词（点头、摇头）",
+  "explanation": "连连 + 点头/摇头/道歉.",
+  "order_index": 22,
+  "id": "fazhan-gaoji1-l10-q22",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "哪个句子里“连连”用得正确？",
+  "options": [
+   "他连连笑。",
+   "医生连连摇头，拒绝了他。",
+   "我连连很高兴。",
+   "天气连连变冷。"
+  ],
+  "correct_answer": "医生连连摇头，拒绝了他。",
+  "explanation": "连连 + 摇头 (хоёр үетэй хөдөлгөөн).",
+  "order_index": 23,
+  "id": "fazhan-gaoji1-l10-q23",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "陈其为什么骑走了那辆淡蓝色的女式车？",
+  "options": [
+   "因为他喜欢这辆车的颜色",
+   "因为女孩儿请他骑",
+   "因为自己的车不见了，觉得这辆车没锁，也许会被偷走",
+   "因为他要去买东西"
+  ],
+  "correct_answer": "因为自己的车不见了，觉得这辆车没锁，也许会被偷走",
+  "explanation": "Өөрийн дугуй алга болсон тул түгжээгүй дугуйг «олсон» гэж үзсэн.",
+  "order_index": 24,
+  "id": "fazhan-gaoji1-l10-q24",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "陈其摔倒以后，为什么“情愿更惨地摔一下，摔个昏迷不醒”？",
+  "options": [
+   "因为他很痛",
+   "因为他发现那辆车就是女孩儿的，觉得羞愧",
+   "因为他想去医院",
+   "因为他不想回学校"
+  ],
+  "correct_answer": "因为他发现那辆车就是女孩儿的，觉得羞愧",
+  "explanation": "Охин дугуйгаа таньсан нь тодорхой болоход ичсэн.",
+  "order_index": 25,
+  "id": "fazhan-gaoji1-l10-q25",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "谭乐诗听了陈其的解释以后，是怎么反应的？",
+  "options": [
+   "让他赔偿自行车",
+   "很生气地骂了他",
+   "马上走开了",
+   "轻轻地笑了，大大方方地说老天爷要让他代替自己受罪"
+  ],
+  "correct_answer": "轻轻地笑了，大大方方地说老天爷要让他代替自己受罪",
+  "explanation": "Тан Лэшы инээмсэглэн хөнгөнөөр хэлсэн.",
+  "order_index": 26,
+  "id": "fazhan-gaoji1-l10-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "陈其为什么觉得半个月一拐一拐地走路“很好”？",
+  "options": [
+   "他想让女孩儿看见",
+   "医生让他这样走",
+   "他觉得这是自己应得的惩罚",
+   "他喜欢走路"
+  ],
+  "correct_answer": "他觉得这是自己应得的惩罚",
+  "explanation": "课文 10: 他觉得这是自己应得的惩罚.",
+  "order_index": 27,
+  "id": "fazhan-gaoji1-l10-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "陈其为什么开始回避谭乐诗？",
+  "options": [
+   "他没有勇气再和她“偶然相遇”，觉得羞耻",
+   "她要求他离开",
+   "他要出国",
+   "他不喜欢她"
+  ],
+  "correct_answer": "他没有勇气再和她“偶然相遇”，觉得羞耻",
+  "explanation": "没有勇气再“偶然相遇”; 羞耻之心，人皆有之.",
+  "order_index": 28,
+  "id": "fazhan-gaoji1-l10-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "谭乐诗为什么住在医务所的传染病房里？",
+  "options": [
+   "她摔伤了",
+   "她得了急性肝炎",
+   "她在休息",
+   "她骑车出了事故"
+  ],
+  "correct_answer": "她得了急性肝炎",
+  "explanation": "谭乐诗得了急性肝炎，得休学回家治病.",
+  "order_index": 29,
+  "id": "fazhan-gaoji1-l10-q29",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "课文的结尾是什么？",
+  "options": [
+   "陈其赶到医院时，谭乐诗已经离开医院了",
+   "陈其把车还给了她",
+   "陈其向谭乐诗道歉了",
+   "陈其和谭乐诗成了朋友"
+  ],
+  "correct_answer": "陈其赶到医院时，谭乐诗已经离开医院了",
+  "explanation": "Нээлттэй төгсгөл — 综合练习 九 续写.",
+  "order_index": 30,
+  "id": "fazhan-gaoji1-l10-q30",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "order",
+  "question": "排列：a.否则就会造成重大伤亡 b.人们又及时采取了措施 c.幸好这里房屋的建筑质量都不错 d.这次地震强度达到七级，强度很大",
+  "options": [
+   "a b c d",
+   "d b c a",
+   "c d b a",
+   "d c b a"
+  ],
+  "correct_answer": "d c b a",
+  "explanation": "地震强度很大，幸好建筑质量不错，人们又及时采取措施，否则就会造成重大伤亡。",
+  "order_index": 31,
+  "id": "fazhan-gaoji1-l10-q31",
+  "skillTags": [
+   "order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "order",
+  "question": "排列：a.学习他们的长处 b.那么我们就应该注意了解对方 c.既然这次象棋比赛只是为了互相学习 d.而不是为了比输赢",
+  "options": [
+   "c b d a",
+   "b c a d",
+   "c d b a",
+   "a b c d"
+  ],
+  "correct_answer": "c d b a",
+  "explanation": "既然……而不是……，那么……学习他们的长处。",
+  "order_index": 32,
+  "id": "fazhan-gaoji1-l10-q32",
+  "skillTags": [
+   "order"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "排列：a.我宁可教给他们独立生活的道理 b.与其把钱财留给孩子 c.这样才是长远之计 d.有些人老想着给孩子多留点儿财产 e.可是我觉得",
+  "options": [
+   "a b c d e",
+   "d e b a c",
+   "d b e a c",
+   "e d b a c"
+  ],
+  "correct_answer": "d e b a c",
+  "explanation": "有些人……，可是我觉得，与其……我宁可……，这样才是长远之计。",
+  "order_index": 33,
+  "id": "fazhan-gaoji1-l10-q33",
+  "skillTags": [
+   "order"
+  ],
+  "difficulty": "hard"
+ }
+]

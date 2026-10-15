@@ -1,0 +1,578 @@
+[
+ {
+  "type": "cloze",
+  "question": "国际广告同国内广告相比，它的交流对象要（ ）异国的传统和文化。",
+  "options": [
+   "招徕",
+   "涉及",
+   "玷污",
+   "触犯"
+  ],
+  "correct_answer": "涉及",
+  "explanation": "涉及 = хамаарах, хөндөх. 触犯 — зөрчих, 招徕 — татах, 玷污 — гутаах.",
+  "order_index": 1,
+  "id": "fazhan-gaoji2-l08-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "在开展国际广告活动时，（ ）简单地从一种文字翻译成另一种文字。",
+  "options": [
+   "标榜",
+   "沟通",
+   "构思",
+   "切忌"
+  ],
+  "correct_answer": "切忌",
+  "explanation": "切忌 = хэзээ ч бүү хий. 标榜 — сайхан нэрээр сурталчлах.",
+  "order_index": 2,
+  "id": "fazhan-gaoji2-l08-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "如果不（ ）其中的差异，说不定还会引起外交麻烦。",
+  "options": [
+   "触犯",
+   "平息",
+   "注重",
+   "招致"
+  ],
+  "correct_answer": "注重",
+  "explanation": "注重 = анхаарч чухалчлах.",
+  "order_index": 3,
+  "id": "fazhan-gaoji2-l08-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这个名字可以使人（ ）到“百事大吉大利”的意思。",
+  "options": [
+   "沟通",
+   "联想",
+   "涉及",
+   "标榜"
+  ],
+  "correct_answer": "联想",
+  "explanation": "联想 = санан бодох, холбон санах.",
+  "order_index": 4,
+  "id": "fazhan-gaoji2-l08-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这两种品牌的中译名在中国的风行，实在是（ ）。",
+  "options": [
+   "入乡随俗",
+   "比比皆是",
+   "大惊小怪",
+   "功不可没"
+  ],
+  "correct_answer": "功不可没",
+  "explanation": "功不可没 = гавьяа нь мартагдашгүй.",
+  "order_index": 5,
+  "id": "fazhan-gaoji2-l08-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "当其打入香港市场时，企业在广告（ ）中则强调该酒用山东崂山泉水酿制。",
+  "options": [
+   "策略",
+   "信仰",
+   "风波",
+   "禁忌"
+  ],
+  "correct_answer": "策略",
+  "explanation": "策略 = стратеги, арга хэмжээ.",
+  "order_index": 6,
+  "id": "fazhan-gaoji2-l08-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "这一广告在（ ）个性自由的美国是不会大惊小怪的。",
+  "options": [
+   "平息",
+   "标榜",
+   "触犯",
+   "投诉"
+  ],
+  "correct_answer": "标榜",
+  "explanation": "标榜 = нэрэмжлэн дэвшүүлэх.",
+  "order_index": 7,
+  "id": "fazhan-gaoji2-l08-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "不少消费者认为该广告有（ ）青少年干坏事之嫌。",
+  "options": [
+   "诱导",
+   "沟通",
+   "招徕",
+   "玷污"
+  ],
+  "correct_answer": "诱导",
+  "explanation": "诱导 = уруу татан чиглүүлэх.",
+  "order_index": 8,
+  "id": "fazhan-gaoji2-l08-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "后来，广告词改成“应做就去做”，才（ ）这场风波。",
+  "options": [
+   "平息",
+   "招致",
+   "投诉",
+   "联想"
+  ],
+  "correct_answer": "平息",
+  "explanation": "平息 = (шуугиан) намжаах.",
+  "order_index": 9,
+  "id": "fazhan-gaoji2-l08-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "皮鞋底下磨穿的两个窟窿格外（ ）。",
+  "options": [
+   "醒目",
+   "醇香",
+   "清醇",
+   "古色古香"
+  ],
+  "correct_answer": "醒目",
+  "explanation": "醒目 = нүдэнд тод тусах.",
+  "order_index": 10,
+  "id": "fazhan-gaoji2-l08-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "希腊人认为广告（ ）了其宗教信仰，此广告不得不收回。",
+  "options": [
+   "沟通",
+   "标榜",
+   "玷污",
+   "诱导"
+  ],
+  "correct_answer": "玷污",
+  "explanation": "玷污 = гутаах, бохирдуулах.",
+  "order_index": 11,
+  "id": "fazhan-gaoji2-l08-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "这则广告的确独具匠心，但却（ ）外交抗议。",
+  "options": [
+   "招致",
+   "招徕",
+   "涉及",
+   "注重"
+  ],
+  "correct_answer": "招致",
+  "explanation": "招致 = (муу үр дагавар) татах.",
+  "order_index": 12,
+  "id": "fazhan-gaoji2-l08-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "要充分考虑目标市场上的文化特点，使（ ）在实施过程中不会触犯当地的文化传统。",
+  "options": [
+   "嫌",
+   "亦",
+   "顷",
+   "决策"
+  ],
+  "correct_answer": "决策",
+  "explanation": "决策 = шийдвэр, стратеги.",
+  "order_index": 13,
+  "id": "fazhan-gaoji2-l08-q13",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Аль өгүүлбэр «同……相比» бүтцийг ЗӨВ хэрэглэсэн бэ?",
+  "options": [
+   "相比同国内广告，国际广告的特点更突出。",
+   "同国内广告相比，国际广告的特点更突出。",
+   "同相比国内广告，国际广告的特点更突出。",
+   "国际广告的特点相比同国内广告更突出。"
+  ],
+  "correct_answer": "同国内广告相比，国际广告的特点更突出。",
+  "explanation": "«同 + A + 相比» — «同» A-гийн өмнө, «相比» түүний ард.",
+  "order_index": 14,
+  "id": "fazhan-gaoji2-l08-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Аль нь зөв засагдсан өгүүлбэр вэ? (Алдаа: 他的个子比我差不多。)",
+  "options": [
+   "他的个子跟我差不多。",
+   "他的个子比较我差不多。",
+   "他的个子比我很差不多。",
+   "他的个子比我更差不多。"
+  ],
+  "correct_answer": "他的个子跟我差不多。",
+  "explanation": "«差不多» нь «跟……差不多» хэлбэрт.",
+  "order_index": 15,
+  "id": "fazhan-gaoji2-l08-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "如果借钱不还，不仅会失去做人的信誉，________。 Хамгийн зөв хоослох нь аль вэ?",
+  "options": [
+   "因此有朋友",
+   "还会失去朋友",
+   "所以失去朋友",
+   "而是有朋友"
+  ],
+  "correct_answer": "还会失去朋友",
+  "explanation": "«不仅……，还……» хоёр дахь хэсгийг гүйцээнэ.",
+  "order_index": 16,
+  "id": "fazhan-gaoji2-l08-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Аль өгүүлбэр «如果……，不仅……，还……» бүтцийг бүрэн, зөв хэрэглэсэн бэ?",
+  "options": [
+   "如果盲目投资，不能挣钱还会亏本不仅。",
+   "盲目投资，不仅不能挣钱，因为亏本。",
+   "如果盲目投资，不仅不能挣钱，还会亏本。",
+   "如果盲目投资，不仅不能挣钱。"
+  ],
+  "correct_answer": "如果盲目投资，不仅不能挣钱，还会亏本。",
+  "explanation": "«不仅» ба «还» хослол заавал.",
+  "order_index": 17,
+  "id": "fazhan-gaoji2-l08-q17",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«香港曾播放过一则美国香烟广告。……不少消费者认为________广告有诱导青少年干坏事之嫌。» Хоосонд аль нь зохих вэ?",
+  "options": [
+   "每",
+   "该",
+   "你",
+   "那样"
+  ],
+  "correct_answer": "该",
+  "explanation": "该 + нэр үг (该广告) — бичгийн орлуулах хэлбэр.",
+  "order_index": 18,
+  "id": "fazhan-gaoji2-l08-q18",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Түүний сурталчилгаа» (它的广告) гэдгийг «其» ашиглан бичсэн нь аль вэ?",
+  "options": [
+   "其的广告",
+   "它们广告",
+   "其广告",
+   "该的广告"
+  ],
+  "correct_answer": "其广告",
+  "explanation": "其 + нэр үг = «түүний …».",
+  "order_index": 19,
+  "id": "fazhan-gaoji2-l08-q19",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Coca Cola 的中译名为“可口可乐”，这一名称既符合原来的读音…… 更重要的是______还含有…… 的意思». «这一名称»-ийг давтахгүйн тулд аль нь тохиромжтой вэ?",
+  "options": [
+   "你们",
+   "他",
+   "她们",
+   "它"
+  ],
+  "correct_answer": "它",
+  "explanation": "它 нь юмыг орлоно.",
+  "order_index": 20,
+  "id": "fazhan-gaoji2-l08-q20",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«谐音» гэж юу вэ?",
+  "options": [
+   "дуу нь адил буюу ойролцоо үсгээр орлуулах засал",
+   "утга нь адил үгээр орлуулах",
+   "шүлгийн ая",
+   "нэг үсгийг давтах"
+  ],
+  "correct_answer": "дуу нь адил буюу ойролцоо үсгээр орлуулах засал",
+  "explanation": "«谐音» = «字音相同或相近».",
+  "order_index": 21,
+  "id": "fazhan-gaoji2-l08-q21",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«骑乐无穷» нь ямар бүтээгдэхүүний сурталчилгаа вэ?",
+  "options": [
+   "薯片",
+   "电视",
+   "洗衣机",
+   "自行车"
+  ],
+  "correct_answer": "自行车",
+  "explanation": "«骑» ≈ «其»; «其乐无穷».",
+  "order_index": 22,
+  "id": "fazhan-gaoji2-l08-q22",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "失败是一时的，胜利________是绝对的。",
+  "options": [
+   "却是",
+   "也是",
+   "则",
+   "就是"
+  ],
+  "correct_answer": "则",
+  "explanation": "«则» — сэдвийн ард, эсрэгцүүлэх.",
+  "order_index": 23,
+  "id": "fazhan-gaoji2-l08-q23",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Аль нь «则»-ийн ЗӨВ байрлал вэ?",
+  "options": [
+   "西门内富丽堂皇，东门内则朴素简单。",
+   "西门内富丽堂皇，则东门内朴素简单。",
+   "则西门内富丽堂皇，东门内朴素简单。",
+   "西门内富丽堂皇，东门内朴素简单则。"
+  ],
+  "correct_answer": "西门内富丽堂皇，东门内则朴素简单。",
+  "explanation": "«则» нь сэдвийн ард, үйл үгийн өмнө.",
+  "order_index": 24,
+  "id": "fazhan-gaoji2-l08-q24",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "choice",
+  "question": "«则» ямар үүрэгтэй холбоос үг вэ?",
+  "options": [
+   "чиглэлийн нөхөлт",
+   "эсрэгцүүлэх, харьцуулах бичгийн холбоос",
+   "шалтгааны холбоос",
+   "тоолуур"
+  ],
+  "correct_answer": "эсрэгцүүлэх, харьцуулах бичгийн холбоос",
+  "explanation": "Ном: «句与句之间一般是对立或对比的并列关系».",
+  "order_index": 25,
+  "id": "fazhan-gaoji2-l08-q25",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "“可口可乐”这个中译名好在哪里？",
+  "options": [
+   "价格很便宜",
+   "符合原来的读音和汉语的音韵特点，还含有“既可口又可乐”的意思",
+   "只是翻译得很准确",
+   "字很简单"
+  ],
+  "correct_answer": "符合原来的读音和汉语的音韵特点，还含有“既可口又可乐”的意思",
+  "explanation": "Р2.",
+  "order_index": 26,
+  "id": "fazhan-gaoji2-l08-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "日本东芝的广告语为什么出了问题？",
+  "options": [
+   "被年轻人用谐音念成“偷去吧”，使严肃性大降",
+   "画面不美",
+   "翻译错了意思",
+   "价格太高"
+  ],
+  "correct_answer": "被年轻人用谐音念成“偷去吧”，使严肃性大降",
+  "explanation": "Р3.",
+  "order_index": 27,
+  "id": "fazhan-gaoji2-l08-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "人头马在华人市场用了什么广告语？",
+  "options": [
+   "人头马一开，好事自然来",
+   "美不美，家乡的水",
+   "想做就去做",
+   "干邑艺术，似火浓情"
+  ],
+  "correct_answer": "人头马一开，好事自然来",
+  "explanation": "Р4.",
+  "order_index": 28,
+  "id": "fazhan-gaoji2-l08-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "香港那则美国香烟广告为什么引起投诉？",
+  "options": [
+   "有诱导青少年干坏事之嫌",
+   "广告太长",
+   "价格太高",
+   "图像不美"
+  ],
+  "correct_answer": "有诱导青少年干坏事之嫌",
+  "explanation": "Р6.",
+  "order_index": 29,
+  "id": "fazhan-gaoji2-l08-q29",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "这篇文章的结论是什么？",
+  "options": [
+   "国际广告要入乡随俗，适应异国文化",
+   "广告不用翻译",
+   "国际广告越贵越好",
+   "只要创意好就行"
+  ],
+  "correct_answer": "国际广告要入乡随俗，适应异国文化",
+  "explanation": "Р9.",
+  "order_index": 30,
+  "id": "fazhan-gaoji2-l08-q30",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 同国内广告 / 相比 / 国际广告 / 的最大特点 / 是涉及异国文化",
+  "options": [
+   "同相比国内广告，国际广告的最大特点是涉及异国文化",
+   "国际广告相比同国内广告的最大特点是涉及异国文化",
+   "涉及异国文化的最大特点，国际广告同国内广告相比",
+   "同国内广告相比，国际广告的最大特点是涉及异国文化"
+  ],
+  "correct_answer": "同国内广告相比，国际广告的最大特点是涉及异国文化",
+  "explanation": "同……相比 өгүүлбэрийн эхэнд.",
+  "order_index": 31,
+  "id": "fazhan-gaoji2-l08-q31",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 失败 / 是 / 一时的 / 胜利 / 则 / 是绝对的",
+  "options": [
+   "失败是一时的，胜利则是绝对的",
+   "失败是一时的，则胜利是绝对的",
+   "胜利则失败是一时的，是绝对的",
+   "则失败是一时的，胜利是绝对的"
+  ],
+  "correct_answer": "失败是一时的，胜利则是绝对的",
+  "explanation": "则 — сэдвийн ард.",
+  "order_index": 32,
+  "id": "fazhan-gaoji2-l08-q32",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ }
+]

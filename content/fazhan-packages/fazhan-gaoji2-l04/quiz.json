@@ -1,0 +1,578 @@
+[
+ {
+  "type": "cloze",
+  "question": "司徒雷登还曾被同学（ ）为不会说英语的怪物。",
+  "options": [
+   "流露",
+   "融合",
+   "讥笑",
+   "封闭"
+  ],
+  "correct_answer": "讥笑",
+  "explanation": "讥笑 = шоолох.",
+  "order_index": 1,
+  "id": "fazhan-gaoji2-l04-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这并不是作秀，而是司徒雷登的真情（ ）。",
+  "options": [
+   "授予",
+   "流露",
+   "策划",
+   "磋商"
+  ],
+  "correct_answer": "流露",
+  "explanation": "真情流露 = жинхэнэ сэтгэлийн илрэл.",
+  "order_index": 2,
+  "id": "fazhan-gaoji2-l04-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "他一生的事业、心血都在中国，他怎能割舍下对中国的（ ）？",
+  "options": [
+   "称号",
+   "事宜",
+   "留恋",
+   "遗嘱"
+  ],
+  "correct_answer": "留恋",
+  "explanation": "留恋 = салахыг хүсэхгүй байх.",
+  "order_index": 3,
+  "id": "fazhan-gaoji2-l04-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "司徒雷登被（ ）杭州市荣誉市民的称号。",
+  "options": [
+   "授予",
+   "召回",
+   "任命",
+   "组建"
+  ],
+  "correct_answer": "授予",
+  "explanation": "授予称号 = цол олгох.",
+  "order_index": 4,
+  "id": "fazhan-gaoji2-l04-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "司徒雷登一边改善原有的小摊子，一边（ ）另起炉灶。",
+  "options": [
+   "融合",
+   "策划",
+   "封闭",
+   "拘押"
+  ],
+  "correct_answer": "策划",
+  "explanation": "策划 = төлөвлөх.",
+  "order_index": 5,
+  "id": "fazhan-gaoji2-l04-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "新建的燕京大学校园（ ）了中西文化。",
+  "options": [
+   "融合",
+   "召回",
+   "磋商",
+   "拘押"
+  ],
+  "correct_answer": "融合",
+  "explanation": "融合 = нэгтгэх.",
+  "order_index": 6,
+  "id": "fazhan-gaoji2-l04-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "中国正处于（ ）的关头，青年学子纷纷投入到爱国运动中。",
+  "options": [
+   "声名狼藉",
+   "危急存亡",
+   "魂牵梦绕",
+   "家喻户晓"
+  ],
+  "correct_answer": "危急存亡",
+  "explanation": "危急存亡的关头.",
+  "order_index": 7,
+  "id": "fazhan-gaoji2-l04-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "太平洋战争爆发后，燕京大学即被日军（ ）。",
+  "options": [
+   "倾注",
+   "封闭",
+   "任命",
+   "授予"
+  ],
+  "correct_answer": "封闭",
+  "explanation": "被日军封闭 = хаагдсан.",
+  "order_index": 8,
+  "id": "fazhan-gaoji2-l04-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "司徒雷登致力于中国的教育事业，为此（ ）的心血，中国人不会忘记。",
+  "options": [
+   "磋商",
+   "倾注",
+   "遗留",
+   "召回"
+  ],
+  "correct_answer": "倾注",
+  "explanation": "倾注心血.",
+  "order_index": 9,
+  "id": "fazhan-gaoji2-l04-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "他被（ ）为美国驻华大使。",
+  "options": [
+   "封闭",
+   "召回",
+   "授予",
+   "任命"
+  ],
+  "correct_answer": "任命",
+  "explanation": "任命为大使.",
+  "order_index": 10,
+  "id": "fazhan-gaoji2-l04-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "“司徒雷登”这个名字也因此（ ），同时也成了声名狼藉和失败的代名词。",
+  "options": [
+   "家喻户晓",
+   "有板有眼",
+   "魂牵梦绕",
+   "招兵买马"
+  ],
+  "correct_answer": "家喻户晓",
+  "explanation": "家喻户晓 = бүгдэд алдартай.",
+  "order_index": 11,
+  "id": "fazhan-gaoji2-l04-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "他在遗嘱中希望能够将骨灰送到中国，那个令他（ ）的地方。",
+  "options": [
+   "声名狼藉",
+   "另起炉灶",
+   "有板有眼",
+   "魂牵梦绕"
+  ],
+  "correct_answer": "魂牵梦绕",
+  "explanation": "魂牵梦绕 = зүүдэндээ ч санасан.",
+  "order_index": 12,
+  "id": "fazhan-gaoji2-l04-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "cloze",
+  "question": "他打算前往北京（ ）美国承认中华人民共和国政府事宜。",
+  "options": [
+   "留恋",
+   "讥笑",
+   "磋商",
+   "流露"
+  ],
+  "correct_answer": "磋商",
+  "explanation": "磋商 = зөвлөлдөх.",
+  "order_index": 13,
+  "id": "fazhan-gaoji2-l04-q13",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "choice",
+  "question": "“（ ）司徒雷登的话来说，自己是一个中国人。”",
+  "options": [
+   "用",
+   "给",
+   "把",
+   "被"
+  ],
+  "correct_answer": "用",
+  "explanation": "用……话来说.",
+  "order_index": 14,
+  "id": "fazhan-gaoji2-l04-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "这种病，只要治疗及时，（ ）是能治好的。",
+  "options": [
+   "一般要说",
+   "一般来说",
+   "就一般",
+   "用一般"
+  ],
+  "correct_answer": "一般来说",
+  "explanation": "一般来说 (综合注释 1).",
+  "order_index": 15,
+  "id": "fazhan-gaoji2-l04-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "“今年的成绩好（ ）去年。” 这里的“于”相当于：",
+  "options": [
+   "比",
+   "对",
+   "在",
+   "把"
+  ],
+  "correct_answer": "比",
+  "explanation": "好于 = 比……好.",
+  "order_index": 16,
+  "id": "fazhan-gaoji2-l04-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "中国正（ ）危急存亡的关头。",
+  "options": [
+   "处于",
+   "比于",
+   "属于",
+   "致于"
+  ],
+  "correct_answer": "处于",
+  "explanation": "处于 = 在……状态.",
+  "order_index": 17,
+  "id": "fazhan-gaoji2-l04-q17",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "你用了我的车，怎么问（ ）不问我一声？",
+  "options": [
+   "就",
+   "才",
+   "也",
+   "都"
+  ],
+  "correct_answer": "都",
+  "explanation": "V都不V (综合注释 3).",
+  "order_index": 18,
+  "id": "fazhan-gaoji2-l04-q18",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "她最小气了，找她借钱，最好想都（ ）。",
+  "options": [
+   "不想",
+   "想想",
+   "想了",
+   "别想"
+  ],
+  "correct_answer": "别想",
+  "explanation": "想都别想.",
+  "order_index": 19,
+  "id": "fazhan-gaoji2-l04-q19",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "经过（ ）年建设，新校址于1929年正式投入使用。",
+  "options": [
+   "多",
+   "二",
+   "把",
+   "数"
+  ],
+  "correct_answer": "数",
+  "explanation": "数年 (综合注释 4).",
+  "order_index": 20,
+  "id": "fazhan-gaoji2-l04-q20",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "海啸造成了一百（ ）人受伤。",
+  "options": [
+   "把",
+   "几十",
+   "余",
+   "数"
+  ],
+  "correct_answer": "余",
+  "explanation": "一百余人.",
+  "order_index": 21,
+  "id": "fazhan-gaoji2-l04-q21",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "对此，司徒雷登一直（ ）同情、支持态度。",
+  "options": [
+   "做",
+   "带",
+   "持",
+   "有"
+  ],
+  "correct_answer": "持",
+  "explanation": "持……态度 (综合注释 5).",
+  "order_index": 22,
+  "id": "fazhan-gaoji2-l04-q22",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "提前考试须（ ）教务处批准。",
+  "options": [
+   "经",
+   "向",
+   "被",
+   "把"
+  ],
+  "correct_answer": "经",
+  "explanation": "须经……批准.",
+  "order_index": 23,
+  "id": "fazhan-gaoji2-l04-q23",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "他（ ）杭州当作自己的第二故乡。",
+  "options": [
+   "给",
+   "对",
+   "将",
+   "于"
+  ],
+  "correct_answer": "将",
+  "explanation": "将……当作…… (书面语).",
+  "order_index": 24,
+  "id": "fazhan-gaoji2-l04-q24",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "司徒雷登的父母是做什么的？",
+  "options": [
+   "中国商人",
+   "大学教授",
+   "外交官",
+   "美国传教士"
+  ],
+  "correct_answer": "美国传教士",
+  "explanation": "Р1.",
+  "order_index": 25,
+  "id": "fazhan-gaoji2-l04-q25",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "司徒雷登11岁到美国上学时，同学怎样对待他？",
+  "options": [
+   "讥笑他是不会说英语的怪物",
+   "请他教杭州话",
+   "让他当班长",
+   "送给他金钥匙"
+  ],
+  "correct_answer": "讥笑他是不会说英语的怪物",
+  "explanation": "Р2.",
+  "order_index": 26,
+  "id": "fazhan-gaoji2-l04-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "1919年两所教会大学合并为燕京大学，司徒雷登担任什么职务？",
+  "options": [
+   "出版社社长",
+   "历史学家",
+   "第一任校长",
+   "驻华大使"
+  ],
+  "correct_answer": "第一任校长",
+  "explanation": "Р4.",
+  "order_index": 27,
+  "id": "fazhan-gaoji2-l04-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "毛泽东发表《别了，司徒雷登》一文后，“司徒雷登”这个名字成了什么？",
+  "options": [
+   "最受欢迎的名字",
+   "家喻户晓，也是失败和声名狼藉的代名词",
+   "教育的象征",
+   "荣誉市民的象征"
+  ],
+  "correct_answer": "家喻户晓，也是失败和声名狼藉的代名词",
+  "explanation": "Р8.",
+  "order_index": 28,
+  "id": "fazhan-gaoji2-l04-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "司徒雷登的骨灰最后被安放在哪里？",
+  "options": [
+   "华盛顿",
+   "北京大学未名湖畔",
+   "重庆",
+   "杭州安贤园"
+  ],
+  "correct_answer": "杭州安贤园",
+  "explanation": "Р3, Р10.",
+  "order_index": 29,
+  "id": "fazhan-gaoji2-l04-q29",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "“我们现在的汉语水平完全可以满足（ ）生活的需要。”",
+  "options": [
+   "通常",
+   "经常",
+   "日常",
+   "平常"
+  ],
+  "correct_answer": "日常",
+  "explanation": "日常生活 — өдөр тутмын.",
+  "order_index": 30,
+  "id": "fazhan-gaoji2-l04-q30",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "“在这次大会上，制订了本市今后十年的发展（ ）。”",
+  "options": [
+   "规划",
+   "计划书",
+   "策划",
+   "划分"
+  ],
+  "correct_answer": "规划",
+  "explanation": "发展规划 — урт хугацааны.",
+  "order_index": 31,
+  "id": "fazhan-gaoji2-l04-q31",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "“电脑的日常（ ）工作是非常重要的。”",
+  "options": [
+   "保护",
+   "维护",
+   "保持",
+   "维持"
+  ],
+  "correct_answer": "维护",
+  "explanation": "维护 = засвар үйлчилгээ.",
+  "order_index": 32,
+  "id": "fazhan-gaoji2-l04-q32",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ }
+]

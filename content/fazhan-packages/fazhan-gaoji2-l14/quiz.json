@@ -1,0 +1,578 @@
+[
+ {
+  "type": "cloze",
+  "question": "1950年，国家正式（ ）了新的《婚姻法》。",
+  "options": [
+   "颁布",
+   "谴责",
+   "冷落",
+   "起草"
+  ],
+  "correct_answer": "颁布",
+  "explanation": "颁布 = хууль албан ёсоор зарлах. 谴责 — буруушаах, 冷落 — хайхрамжгүй хандах, 起草 — төсөл боловсруулах.",
+  "order_index": 1,
+  "id": "fazhan-gaoji2-l14-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这部《婚姻法》为中国人的婚姻带来了（ ）的变化。",
+  "options": [
+   "应接不暇",
+   "五花大绑",
+   "翻天覆地",
+   "门当户对"
+  ],
+  "correct_answer": "翻天覆地",
+  "explanation": "翻天覆地 = маш том өөрчлөлт.",
+  "order_index": 2,
+  "id": "fazhan-gaoji2-l14-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "战场上的英雄、职场上的模范都是那时（ ）的对象。",
+  "options": [
+   "无意",
+   "依然如故",
+   "炙手可热",
+   "不置可否"
+  ],
+  "correct_answer": "炙手可热",
+  "explanation": "炙手可热 = эрэлт хэрэгцээ маш өндөр.",
+  "order_index": 3,
+  "id": "fazhan-gaoji2-l14-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "“红五类”普遍受到（ ），“黑五类”则遭遇冷落。",
+  "options": [
+   "青睐",
+   "谴责",
+   "焦虑",
+   "经受"
+  ],
+  "correct_answer": "青睐",
+  "explanation": "受到青睐 ↔ 遭遇冷落.",
+  "order_index": 4,
+  "id": "fazhan-gaoji2-l14-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "强烈的道德（ ）足以给离婚者带来比不幸婚姻更大的痛苦。",
+  "options": [
+   "谴责",
+   "确立",
+   "起草",
+   "认同"
+  ],
+  "correct_answer": "谴责",
+  "explanation": "谴责 = хатуу буруушаах.",
+  "order_index": 5,
+  "id": "fazhan-gaoji2-l14-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "大学生曾是众多年轻人心仪的（ ）。",
+  "options": [
+   "欲望",
+   "思潮",
+   "进程",
+   "伴侣"
+  ],
+  "correct_answer": "伴侣",
+  "explanation": "伴侣 = хань, хамтрагч.",
+  "order_index": 6,
+  "id": "fazhan-gaoji2-l14-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "“万元户”在婚姻市场上变得（ ）。",
+  "options": [
+   "没落",
+   "严峻",
+   "迷茫",
+   "抢手"
+  ],
+  "correct_answer": "抢手",
+  "explanation": "抢手 = эрэлттэй, булаацалдах.",
+  "order_index": 7,
+  "id": "fazhan-gaoji2-l14-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "社会生活的变化之剧，令置身其中的人们感受真切而又（ ）。",
+  "options": [
+   "翻天覆地",
+   "门当户对",
+   "一笑置之",
+   "应接不暇"
+  ],
+  "correct_answer": "应接不暇",
+  "explanation": "应接不暇 = нүд дөхөхгүй.",
+  "order_index": 8,
+  "id": "fazhan-gaoji2-l14-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "cloze",
+  "question": "婚外恋从（ ）让人强烈谴责的问题，慢慢退居为供人消遣的话题。",
+  "options": [
+   "一度",
+   "一定",
+   "一直",
+   "一概"
+  ],
+  "correct_answer": "一度",
+  "explanation": "一度 = нэг үед.",
+  "order_index": 9,
+  "id": "fazhan-gaoji2-l14-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "在选择多元与社会（ ）的同时，人们也不得不接受由此带来的迷茫与痛苦。",
+  "options": [
+   "确立",
+   "认同",
+   "严峻",
+   "宽容"
+  ],
+  "correct_answer": "宽容",
+  "explanation": "宽容 = хүлцэнгүй.",
+  "order_index": 10,
+  "id": "fazhan-gaoji2-l14-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "科学家们（ ），爱情实为人脑分泌多巴胺的结果。",
+  "options": [
+   "认同",
+   "起草",
+   "认定",
+   "确立"
+  ],
+  "correct_answer": "认定",
+  "explanation": "认定 = баттай тогтоох.",
+  "order_index": 11,
+  "id": "fazhan-gaoji2-l14-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "大部分年轻人在（ ）时还强调“门当户对”。",
+  "options": [
+   "经受",
+   "颁布",
+   "择偶",
+   "参与"
+  ],
+  "correct_answer": "择偶",
+  "explanation": "择偶 = хань сонгох.",
+  "order_index": 12,
+  "id": "fazhan-gaoji2-l14-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "忠诚与信任的缺失使这个年代的婚姻（ ）着严峻的考验。",
+  "options": [
+   "分泌",
+   "起草",
+   "经受",
+   "谴责"
+  ],
+  "correct_answer": "经受",
+  "explanation": "经受考验 = сорилтыг даван туулах.",
+  "order_index": 13,
+  "id": "fazhan-gaoji2-l14-q13",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "“包办如故，买卖依旧”用了什么修辞手法？",
+  "options": [
+   "比喻",
+   "夸张",
+   "拈连",
+   "对偶"
+  ],
+  "correct_answer": "对偶",
+  "explanation": "Бүтэц ижил, үсгийн тоо тэнцүү — 对偶.",
+  "order_index": 14,
+  "id": "fazhan-gaoji2-l14-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "对偶的特点不包括：",
+  "options": [
+   "字数相等",
+   "排列对称",
+   "结构相同",
+   "字数不等"
+  ],
+  "correct_answer": "字数不等",
+  "explanation": "对偶 нь үсгийн тоо тэнцүү байх ёстой.",
+  "order_index": 15,
+  "id": "fazhan-gaoji2-l14-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "“我的婚姻我做主”，可以；“谁的婚姻谁负责”，（ ）。",
+  "options": [
+   "也许",
+   "可能",
+   "必须",
+   "有时"
+  ],
+  "correct_answer": "必须",
+  "explanation": "Хос өгүүлбэр: «可以 / 必须».",
+  "order_index": 16,
+  "id": "fazhan-gaoji2-l14-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "下面哪个“把”字句只能出现在唱词（歌词）里？",
+  "options": [
+   "把书放在桌子上",
+   "他把作业做完了",
+   "人人都把他夸",
+   "把门打开了"
+  ],
+  "correct_answer": "人人都把他夸",
+  "explanation": "«把» + ганц үйл үг (光杆) — зөвхөн дуу, шүлэгт.",
+  "order_index": 17,
+  "id": "fazhan-gaoji2-l14-q17",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "大家再加一把劲，争取把工期（ ）到春节前完工。",
+  "options": [
+   "提前",
+   "早",
+   "前",
+   "提"
+  ],
+  "correct_answer": "提前",
+  "explanation": "参考答案: 提前.",
+  "order_index": 18,
+  "id": "fazhan-gaoji2-l14-q18",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "“后院有棵木菠萝树，大概有三四十米之高。”中“之”相当于：",
+  "options": [
+   "那么",
+   "它",
+   "不",
+   "的"
+  ],
+  "correct_answer": "那么",
+  "explanation": "«之 + 高» — «那么»: тоо хэмжээг онцлоно.",
+  "order_index": 19,
+  "id": "fazhan-gaoji2-l14-q19",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "“粮食是宝中之宝”中“之”相当于：",
+  "options": [
+   "它",
+   "的",
+   "那么",
+   "去"
+  ],
+  "correct_answer": "的",
+  "explanation": "«宝中之宝» — «宝中的宝».",
+  "order_index": 20,
+  "id": "fazhan-gaoji2-l14-q20",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "“该地粮食产量已达三亿斤之多”中“之”强调：",
+  "options": [
+   "严",
+   "多",
+   "高",
+   "久"
+  ],
+  "correct_answer": "多",
+  "explanation": "参考答案: 之:相当于“那么”，强调“多”.",
+  "order_index": 21,
+  "id": "fazhan-gaoji2-l14-q21",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "“他一度失业，现在有了工作”中“一度”的意思是：",
+  "options": [
+   "每年一次",
+   "永远",
+   "曾经有一段时间",
+   "一定"
+  ],
+  "correct_answer": "曾经有一段时间",
+  "explanation": "«一度» — өнгөрсөн үед нэг хэсэг.",
+  "order_index": 22,
+  "id": "fazhan-gaoji2-l14-q22",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "“一年一度的春节”中“一度”是：",
+  "options": [
+   "一直",
+   "一次",
+   "一切",
+   "一边"
+  ],
+  "correct_answer": "一次",
+  "explanation": "Тэмдэг нэрийн хэрэглээ: «一次, 一阵».",
+  "order_index": 23,
+  "id": "fazhan-gaoji2-l14-q23",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "把“有话就长点儿，没话就短点儿”改成用“则”的句子：",
+  "options": [
+   "有话则长，无话则短",
+   "则有话长，则没话短",
+   "有话长则，没话短则",
+   "有话长，则无话短"
+  ],
+  "correct_answer": "有话则长，无话则短",
+  "explanation": "参考答案: 有话则长，无话则短.",
+  "order_index": 24,
+  "id": "fazhan-gaoji2-l14-q24",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "reading",
+  "question": "1950年《婚姻法》规定了什么？",
+  "options": [
+   "允许一夫多妻",
+   "禁止离婚",
+   "男女平等、婚姻自由和一夫一妻制",
+   "只允许包办婚姻"
+  ],
+  "correct_answer": "男女平等、婚姻自由和一夫一妻制",
+  "explanation": "Р1.",
+  "order_index": 25,
+  "id": "fazhan-gaoji2-l14-q25",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "上世纪五十年代，嫁给军人等于嫁给了什么？",
+  "options": [
+   "金钱",
+   "知识",
+   "自由",
+   "光荣"
+  ],
+  "correct_answer": "光荣",
+  "explanation": "Р5.",
+  "order_index": 26,
+  "id": "fazhan-gaoji2-l14-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "改革开放之初，大学生之后在婚姻市场上变得抢手的是：",
+  "options": [
+   "农民",
+   "军人",
+   "万元户",
+   "教师"
+  ],
+  "correct_answer": "万元户",
+  "explanation": "Р14.",
+  "order_index": 27,
+  "id": "fazhan-gaoji2-l14-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "2009年的调查中，认同“门当户对”或“相似的家庭背景”的受访者占多少？",
+  "options": [
+   "69%",
+   "100%",
+   "50%",
+   "26%"
+  ],
+  "correct_answer": "69%",
+  "explanation": "Р21.",
+  "order_index": 28,
+  "id": "fazhan-gaoji2-l14-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "作者认为，现代婚姻立法的新理念是：",
+  "options": [
+   "限制离婚",
+   "恢复包办",
+   "强调自己的责任",
+   "禁止同居"
+  ],
+  "correct_answer": "强调自己的责任",
+  "explanation": "Р22.",
+  "order_index": 29,
+  "id": "fazhan-gaoji2-l14-q29",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 包办如故 / 买卖依旧 / 于是 / 政府发起运动",
+  "options": [
+   "于是，政府发起运动，包办如故，买卖依旧",
+   "政府发起运动，于是包办如故，买卖依旧",
+   "包办如故，于是买卖依旧，政府发起运动",
+   "于是，包办如故，买卖依旧，政府发起运动"
+  ],
+  "correct_answer": "于是，包办如故，买卖依旧，政府发起运动",
+  "explanation": "Шалтгаан → үр дүн дараалал.",
+  "order_index": 30,
+  "id": "fazhan-gaoji2-l14-q30",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 对上世纪五十年代的中国女人而言 / 嫁给军人 / 就等于嫁给了光荣",
+  "options": [
+   "就等于嫁给了光荣，对上世纪五十年代的中国女人而言嫁给军人",
+   "对上世纪五十年代的中国女人，嫁给军人而言就等于嫁给了光荣",
+   "对上世纪五十年代的中国女人而言，嫁给军人就等于嫁给了光荣",
+   "嫁给军人，对上世纪五十年代的中国女人而言就等于嫁给了光荣"
+  ],
+  "correct_answer": "对上世纪五十年代的中国女人而言，嫁给军人就等于嫁给了光荣",
+  "explanation": "«对……而言，……» бүтэц.",
+  "order_index": 31,
+  "id": "fazhan-gaoji2-l14-q31",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 在选择多元与社会宽容的同时 / 人们也不得不 / 接受迷茫与痛苦",
+  "options": [
+   "接受迷茫与痛苦，在选择多元与社会宽容的同时人们也不得不",
+   "人们也不得不在选择多元与社会宽容的同时，接受迷茫与痛苦",
+   "在选择多元与社会宽容，人们也不得不的同时接受迷茫与痛苦",
+   "在选择多元与社会宽容的同时，人们也不得不接受迷茫与痛苦"
+  ],
+  "correct_answer": "在选择多元与社会宽容的同时，人们也不得不接受迷茫与痛苦",
+  "explanation": "«在……的同时，……» бүтэц.",
+  "order_index": 32,
+  "id": "fazhan-gaoji2-l14-q32",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "hard"
+ }
+]

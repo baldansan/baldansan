@@ -1,0 +1,596 @@
+[
+ {
+  "type": "cloze",
+  "question": "主张“高薪可以养廉”的人，其（ ）就在于这样两个方面。",
+  "options": [
+   "职务",
+   "代价",
+   "根据",
+   "金额"
+  ],
+  "correct_answer": "根据",
+  "explanation": "根据 = үндэслэл. 代价 — үнэ, 金额 — мөнгөн дүн, 职务 — албан тушаал.",
+  "order_index": 1,
+  "id": "fazhan-gaoji1-l09-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "只要有了高薪，那些地位高的公务员就可以有较高的生活（ ），衣食无忧。",
+  "options": [
+   "水准",
+   "证据",
+   "欲望",
+   "实惠"
+  ],
+  "correct_answer": "水准",
+  "explanation": "生活水准 = амьжиргааны түвшин.",
+  "order_index": 2,
+  "id": "fazhan-gaoji1-l09-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "这个官员（ ）了，而且数额巨大。",
+  "options": [
+   "贪污",
+   "阐述",
+   "珍惜",
+   "监督"
+  ],
+  "correct_answer": "贪污",
+  "explanation": "贪污 = хөрөнгө завших.",
+  "order_index": 3,
+  "id": "fazhan-gaoji1-l09-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他利用职务的方便，接受别人的钱财，这叫（ ）。",
+  "options": [
+   "畏惧",
+   "珍惜",
+   "受贿",
+   "阐述"
+  ],
+  "correct_answer": "受贿",
+  "explanation": "受贿 = хахууль авах.",
+  "order_index": 4,
+  "id": "fazhan-gaoji1-l09-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "人的（ ）是难以满足的。",
+  "options": [
+   "职务",
+   "证据",
+   "欲望",
+   "水准"
+  ],
+  "correct_answer": "欲望",
+  "explanation": "欲望 = шунал хүсэл.",
+  "order_index": 5,
+  "id": "fazhan-gaoji1-l09-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "开始时，他们做这类事情还小心翼翼、（ ），拿个红包都会脸红、手颤。",
+  "options": [
+   "见钱眼开",
+   "衣食无忧",
+   "可想而知",
+   "战战兢兢"
+  ],
+  "correct_answer": "战战兢兢",
+  "explanation": "战战兢兢 = чичирч айсан.",
+  "order_index": 6,
+  "id": "fazhan-gaoji1-l09-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "这一次我原谅你，可是（ ）。",
+  "options": [
+   "缘木求鱼",
+   "见利忘义",
+   "下不为例",
+   "可想而知"
+  ],
+  "correct_answer": "下不为例",
+  "explanation": "下不为例 = дахиж болохгүй.",
+  "order_index": 7,
+  "id": "fazhan-gaoji1-l09-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "做生意要讲道德，不能（ ）。",
+  "options": [
+   "可想而知",
+   "见利忘义",
+   "下不为例",
+   "衣食无忧"
+  ],
+  "correct_answer": "见利忘义",
+  "explanation": "见利忘义 = ашгийн төлөө ёсоо мартах.",
+  "order_index": 8,
+  "id": "fazhan-gaoji1-l09-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "这件事很重要，要经过大家讨论，我不能（ ）决定。",
+  "options": [
+   "额外",
+   "相关",
+   "依法",
+   "擅自"
+  ],
+  "correct_answer": "擅自",
+  "explanation": "擅自 = дур мэдэн.",
+  "order_index": 9,
+  "id": "fazhan-gaoji1-l09-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "生命的危险都可以去冒，（ ），还有什么危险的事不敢去做呢？",
+  "options": [
+   "可想而知",
+   "衣食无忧",
+   "下不为例",
+   "缘木求鱼"
+  ],
+  "correct_answer": "可想而知",
+  "explanation": "可想而知 = ойлгомжтой.",
+  "order_index": 10,
+  "id": "fazhan-gaoji1-l09-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "只有使法律完善、公正，才会使人有所（ ）。",
+  "options": [
+   "珍惜",
+   "阐述",
+   "监督",
+   "畏惧"
+  ],
+  "correct_answer": "畏惧",
+  "explanation": "畏惧 = айх, эмээх.",
+  "order_index": 11,
+  "id": "fazhan-gaoji1-l09-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我只是靠每个月的薪水生活，没有（ ）收入。",
+  "options": [
+   "平衡",
+   "相关",
+   "擅自",
+   "额外"
+  ],
+  "correct_answer": "额外",
+  "explanation": "额外收入 = нэмэлт орлого.",
+  "order_index": 12,
+  "id": "fazhan-gaoji1-l09-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "廉洁不是“养”出来的，而是（ ）出来的。",
+  "options": [
+   "阐述",
+   "珍惜",
+   "监督",
+   "治理"
+  ],
+  "correct_answer": "治理",
+  "explanation": "廉洁是治理出来的.",
+  "order_index": 13,
+  "id": "fazhan-gaoji1-l09-q13",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "哪个句子用“之所以”正确？",
+  "options": [
+   "他们之所以这样，所以欲望越来越大。",
+   "他们之所以这样，虽然欲望越来越大。",
+   "之所以他们这样，因为欲望越来越大。",
+   "他们之所以这样，是因为欲望越来越大。"
+  ],
+  "correct_answer": "他们之所以这样，是因为欲望越来越大。",
+  "explanation": "之所以……是因为……",
+  "order_index": 14,
+  "id": "fazhan-gaoji1-l09-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "“由于”和“因为”的区别是？",
+  "options": [
+   "两个没有区别",
+   "由于只用于口语",
+   "由于只用于前一个分句",
+   "由于只用于后一个分句"
+  ],
+  "correct_answer": "由于只用于前一个分句",
+  "explanation": "由于 бичгийн, зөвхөн өмнөх хэсэгт.",
+  "order_index": 15,
+  "id": "fazhan-gaoji1-l09-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "哪句话是对的？",
+  "options": [
+   "他没来开会，由于有别的事。",
+   "他没来开会，虽然有别的事。",
+   "他没来开会，所以有别的事。",
+   "他没来开会，因为有别的事。"
+  ],
+  "correct_answer": "他没来开会，因为有别的事。",
+  "explanation": "Шалтгаан хойно хэсэгт — 因为.",
+  "order_index": 16,
+  "id": "fazhan-gaoji1-l09-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "“多到户外锻炼，对老人的健康有好处”可以改写为？",
+  "options": [
+   "多到户外锻炼，老人有益于健康。",
+   "多到户外锻炼，有益于老人的健康。",
+   "多到户外锻炼，有对老人的健康。",
+   "多到户外锻炼，对于有益老人的健康。"
+  ],
+  "correct_answer": "多到户外锻炼，有益于老人的健康。",
+  "explanation": "有益于 + N.",
+  "order_index": 17,
+  "id": "fazhan-gaoji1-l09-q17",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "“有助于”表示什么意思？",
+  "options": [
+   "对……有帮助",
+   "对……不利",
+   "对……没关系",
+   "对……很危险"
+  ],
+  "correct_answer": "对……有帮助",
+  "explanation": "有助于 = «… -д тус болох».",
+  "order_index": 18,
+  "id": "fazhan-gaoji1-l09-q18",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "“你们可以看看中国报纸，从而了解中国社会。”中“从而”的意思是？",
+  "options": [
+   "但是",
+   "如果",
+   "因此、通过这样",
+   "虽然"
+  ],
+  "correct_answer": "因此、通过这样",
+  "explanation": "从而 = улмаар.",
+  "order_index": 19,
+  "id": "fazhan-gaoji1-l09-q19",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "“靠不住”的意思是？",
+  "options": [
+   "很重",
+   "很快",
+   "很可靠",
+   "不可靠"
+  ],
+  "correct_answer": "不可靠",
+  "explanation": "靠不住 = найдваргүй.",
+  "order_index": 20,
+  "id": "fazhan-gaoji1-l09-q20",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "哪句话中“擅自”用得最合适？",
+  "options": [
+   "没有同意，学生不能擅自离开学校。",
+   "我擅自帮助了他，他很感谢。",
+   "她擅自地很好。",
+   "擅自你的朋友。"
+  ],
+  "correct_answer": "没有同意，学生不能擅自离开学校。",
+  "explanation": "擅自 + V, сөрөг өнгөтэй.",
+  "order_index": 21,
+  "id": "fazhan-gaoji1-l09-q21",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "“其月薪是五千多元”中，“其”指的是？",
+  "options": [
+   "我的",
+   "你的",
+   "他的",
+   "我们的"
+  ],
+  "correct_answer": "他的",
+  "explanation": "其 = 他的/它的.",
+  "order_index": 22,
+  "id": "fazhan-gaoji1-l09-q22",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "“医生擅自给我换了药，我很不高兴。”说明“擅自”有什么特点？",
+  "options": [
+   "带有感谢的语气",
+   "没有任何感情",
+   "只能用于好事",
+   "带有不满、批评的语气"
+  ],
+  "correct_answer": "带有不满、批评的语气",
+  "explanation": "擅自 — сөрөг өнгө.",
+  "order_index": 23,
+  "id": "fazhan-gaoji1-l09-q23",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "reading",
+  "question": "主张“高薪养廉”的人有几条根据？",
+  "options": [
+   "四条",
+   "两条",
+   "五条",
+   "三条"
+  ],
+  "correct_answer": "两条",
+  "explanation": "1-р догол мөр: 两个方面.",
+  "order_index": 24,
+  "id": "fazhan-gaoji1-l09-q24",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "作者认为“高薪养廉”的第一条理由是对什么的误解？",
+  "options": [
+   "人性",
+   "法律",
+   "政策",
+   "经济"
+  ],
+  "correct_answer": "人性",
+  "explanation": "3-р догол мөр: 这是对人性的误解。",
+  "order_index": 25,
+  "id": "fazhan-gaoji1-l09-q25",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "“人欲无边蛇吞象”的意思是？",
+  "options": [
+   "大象很小",
+   "人很高",
+   "蛇很大",
+   "人的欲望很大"
+  ],
+  "correct_answer": "人的欲望很大",
+  "explanation": "脚注①: хүний шунал хязгааргүй.",
+  "order_index": 26,
+  "id": "fazhan-gaoji1-l09-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "作者认为第二条根据要真正发挥作用，还需要什么？",
+  "options": [
+   "更长的假期",
+   "更高的薪水",
+   "有力的监督制度和惩罚制度",
+   "更多的官员"
+  ],
+  "correct_answer": "有力的监督制度和惩罚制度",
+  "explanation": "4-р догол мөр: 还得有非常有力的监督制度、惩罚制度来保证.",
+  "order_index": 27,
+  "id": "fazhan-gaoji1-l09-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "下面哪条不是作者补充的理由？",
+  "options": [
+   "高薪违背了公平原则",
+   "高薪可以防止腐败",
+   "薪水与贪污所得不成比例",
+   "高薪可能引起更多腐败"
+  ],
+  "correct_answer": "高薪可以防止腐败",
+  "explanation": "5-р догол мөр: 三条理由 (不成比例, 违背公平, 引起更多腐败).",
+  "order_index": 28,
+  "id": "fazhan-gaoji1-l09-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "reading",
+  "question": "作者认为“高薪养廉”是什么？",
+  "options": [
+   "守株待兔",
+   "缘木求鱼",
+   "画蛇添足",
+   "亡羊补牢"
+  ],
+  "correct_answer": "缘木求鱼",
+  "explanation": "6-р догол мөр: “高薪养廉”是“缘木求鱼”.",
+  "order_index": 29,
+  "id": "fazhan-gaoji1-l09-q29",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "作者认为廉洁是怎么来的？",
+  "options": [
+   "教出来的",
+   "养出来的",
+   "治理出来的",
+   "买出来的"
+  ],
+  "correct_answer": "治理出来的",
+  "explanation": "6-р догол мөр: 廉洁是治理出来的.",
+  "order_index": 30,
+  "id": "fazhan-gaoji1-l09-q30",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "order",
+  "question": "Зөв дарааллыг сонго: «Хууль төгс, шударга байж л хүнд эмээх сэтгэл төрнө»",
+  "options": [
+   "只有才会使法律完善、公正使人有所畏惧",
+   "才会使人有所畏惧只有使法律完善、公正",
+   "使法律完善、公正只有才会人有所畏惧",
+   "只有使法律完善、公正，才会使人有所畏惧"
+  ],
+  "correct_answer": "只有使法律完善、公正，才会使人有所畏惧",
+  "explanation": "只有……才…… бүтэц.",
+  "order_index": 31,
+  "id": "fazhan-gaoji1-l09-q31",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Зөв дарааллыг сонго: «Тэдний ингэж байгаа шалтгаан нь хүсэл шунал томорч байгаагаас»",
+  "options": [
+   "他们这样之所以是因为欲望越来越大",
+   "之所以是因为他们这样欲望越来越大",
+   "是因为他们之所以这样，欲望越来越大",
+   "他们之所以这样，是因为欲望越来越大"
+  ],
+  "correct_answer": "他们之所以这样，是因为欲望越来越大",
+  "explanation": "之所以……是因为……",
+  "order_index": 32,
+  "id": "fazhan-gaoji1-l09-q32",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "order",
+  "question": "Зөв дарааллыг сонго: «Би дур мэдэн шийдэж болохгүй»",
+  "options": [
+   "我决定不能擅自",
+   "擅自我不能决定",
+   "我不能擅自决定",
+   "我擅自不能决定"
+  ],
+  "correct_answer": "我不能擅自决定",
+  "explanation": "不能 + 擅自 + V.",
+  "order_index": 33,
+  "id": "fazhan-gaoji1-l09-q33",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ }
+]

@@ -1,0 +1,578 @@
+[
+ {
+  "type": "cloze",
+  "question": "其实，学好汉语口语没什么（ ），最重要的是多说多练。",
+  "options": [
+   "尊严",
+   "缺憾",
+   "秘诀",
+   "资源"
+  ],
+  "correct_answer": "秘诀",
+  "explanation": "秘诀 = нууц арга.",
+  "order_index": 1,
+  "id": "fazhan-gaoji1-l15-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "一个人生活（ ），但他不向富人谄媚。",
+  "options": [
+   "谦恭",
+   "贫贱",
+   "奢侈",
+   "坦然"
+  ],
+  "correct_answer": "贫贱",
+  "explanation": "贫贱 = ядуу, доогуй зэрэглэлтэй.",
+  "order_index": 2,
+  "id": "fazhan-gaoji1-l15-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "他从不向有钱人（ ）。",
+  "options": [
+   "纠缠",
+   "谄媚",
+   "倡导",
+   "弥补"
+  ],
+  "correct_answer": "谄媚",
+  "explanation": "谄媚 = зусардах.",
+  "order_index": 3,
+  "id": "fazhan-gaoji1-l15-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "每个人不论贫富，都有做人的（ ）。",
+  "options": [
+   "资源",
+   "秘诀",
+   "效率",
+   "尊严"
+  ],
+  "correct_answer": "尊严",
+  "explanation": "尊严 = нэр төр.",
+  "order_index": 4,
+  "id": "fazhan-gaoji1-l15-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "任何人都不能（ ）别人受教育的权利。",
+  "options": [
+   "纠缠",
+   "弥补",
+   "剥夺",
+   "倡导"
+  ],
+  "correct_answer": "剥夺",
+  "explanation": "剥夺 = хүчээр булаах.",
+  "order_index": 5,
+  "id": "fazhan-gaoji1-l15-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "一个人即便是非常富有，生活上也不应该过分（ ）。",
+  "options": [
+   "进取",
+   "谦恭",
+   "奢侈",
+   "坦然"
+  ],
+  "correct_answer": "奢侈",
+  "explanation": "奢侈 = үрэлгэн.",
+  "order_index": 6,
+  "id": "fazhan-gaoji1-l15-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他不愿意为了做这个官而向人（ ）。",
+  "options": [
+   "手足兄弟",
+   "光明磊落",
+   "无止无休",
+   "低三下四"
+  ],
+  "correct_answer": "低三下四",
+  "explanation": "低三下四 = маш доошилж зусарсан.",
+  "order_index": 7,
+  "id": "fazhan-gaoji1-l15-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "（ ），在现代人眼中颇有些不思进取的味道。",
+  "options": [
+   "傲气凌人",
+   "以德报怨",
+   "安贫乐道",
+   "光明磊落"
+  ],
+  "correct_answer": "安贫乐道",
+  "explanation": "安贫乐道 = ядуу боловч ёс зүйдээ жаргах.",
+  "order_index": 8,
+  "id": "fazhan-gaoji1-l15-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "cloze",
+  "question": "君子应保持一颗（ ）的心，减少过失。",
+  "options": [
+   "纠缠",
+   "诚敬",
+   "奢侈",
+   "荒芜"
+  ],
+  "correct_answer": "诚敬",
+  "explanation": "诚敬 = үнэнч хүндэтгэлтэй.",
+  "order_index": 9,
+  "id": "fazhan-gaoji1-l15-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我们要用自己的努力去（ ）这个遗憾。",
+  "options": [
+   "剥夺",
+   "弥补",
+   "倡导",
+   "谄媚"
+  ],
+  "correct_answer": "弥补",
+  "explanation": "弥补 = нөхөх.",
+  "order_index": 10,
+  "id": "fazhan-gaoji1-l15-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "孔子特别强调做事情的（ ）。",
+  "options": [
+   "资源",
+   "秘诀",
+   "精华",
+   "分寸"
+  ],
+  "correct_answer": "分寸",
+  "explanation": "分寸 = зохистой хэмжээ.",
+  "order_index": 11,
+  "id": "fazhan-gaoji1-l15-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "用自己高尚的人格，（ ）面对这一切。",
+  "options": [
+   "谄媚",
+   "坦然",
+   "荒芜",
+   "纠缠"
+  ],
+  "correct_answer": "坦然",
+  "explanation": "坦然 = санаа зоволтгүй, тайван.",
+  "order_index": 12,
+  "id": "fazhan-gaoji1-l15-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "他是一个心地坦白、有什么就说什么的（ ）的人。",
+  "options": [
+   "进取",
+   "率直",
+   "奢侈",
+   "谦恭"
+  ],
+  "correct_answer": "率直",
+  "explanation": "率直 = шулуун шударга.",
+  "order_index": 13,
+  "id": "fazhan-gaoji1-l15-q13",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«无止无休» бол …",
+  "options": [
+   "зогсох цаггүй, төгсгөлгүй",
+   "чимээгүй",
+   "хоёр хүний дунд",
+   "маш өндөр"
+  ],
+  "correct_answer": "зогсох цаггүй, төгсгөлгүй",
+  "explanation": "无止无休 — 无……无…… загвар, «зогсохгүй, дуусахгүй».",
+  "order_index": 14,
+  "id": "fazhan-gaoji1-l15-q14",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "我（ ）回到家（ ）打开电脑看邮件。",
+  "options": [
+   "既……又……",
+   "不是……就是……",
+   "时而……时而……",
+   "一……就……"
+  ],
+  "correct_answer": "一……就……",
+  "explanation": "一……就…… — «… мэгц …» (紧缩句).",
+  "order_index": 15,
+  "id": "fazhan-gaoji1-l15-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "哪个是 紧缩句？",
+  "options": [
+   "你不说我也能知道。",
+   "因为你不说，所以我不知道。",
+   "你不说，我也能知道，对吗？",
+   "如果你不说，那么我就不知道，对。"
+  ],
+  "correct_answer": "你不说我也能知道。",
+  "explanation": "紧缩句-д таслал байхгүй, нэг энгийн өгүүлбэр хэлбэртэй.",
+  "order_index": 16,
+  "id": "fazhan-gaoji1-l15-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "他（ ）有钱，我（ ）不跟他结婚。",
+  "options": [
+   "再……也……",
+   "又……又……",
+   "不但……而且……",
+   "一边……一边……"
+  ],
+  "correct_answer": "再……也……",
+  "explanation": "再……也…… — хичнээн … ч (紧缩句).",
+  "order_index": 17,
+  "id": "fazhan-gaoji1-l15-q17",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "他（ ）生活不规律（ ）得了胃病。",
+  "options": [
+   "因……而……",
+   "因为……所以……",
+   "既然……就……",
+   "虽然……但是……"
+  ],
+  "correct_answer": "因……而……",
+  "explanation": "因……而…… — шалтгаан-үр дагавар (бичгийн хэл).",
+  "order_index": 18,
+  "id": "fazhan-gaoji1-l15-q18",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "工程（ ）经费的困难（ ）中断。",
+  "options": [
+   "因……而……",
+   "由……向……",
+   "把……被……",
+   "对……来说"
+  ],
+  "correct_answer": "因……而……",
+  "explanation": "因经费的困难而中断 — номын жишээ ①.",
+  "order_index": 19,
+  "id": "fazhan-gaoji1-l15-q19",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "“因……而……” 中，“而”后面一般是什么？",
+  "options": [
+   "动词或形容词短语（结果）",
+   "数词",
+   "原因",
+   "时间词"
+  ],
+  "correct_answer": "动词或形容词短语（结果）",
+  "explanation": "而 + V / Adj хэллэг (үр дагавар).",
+  "order_index": 20,
+  "id": "fazhan-gaoji1-l15-q20",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "（ ）天气如此寒冷，我们也坚持去游泳。",
+  "options": [
+   "因为",
+   "于是",
+   "纵然",
+   "如果"
+  ],
+  "correct_answer": "纵然",
+  "explanation": "纵然……，也…… — таамаглалын буулт.",
+  "order_index": 21,
+  "id": "fazhan-gaoji1-l15-q21",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "下面哪一句用“纵然”是对的？",
+  "options": [
+   "纵然他很忙，但是他来了，所以高兴。",
+   "因为纵然有困难，我去。",
+   "纵然有天大的困难，我也要继续下去。",
+   "纵然有天大的困难，所以我要继续下去。"
+  ],
+  "correct_answer": "纵然有天大的困难，我也要继续下去。",
+  "explanation": "纵然 + нөхцөл，也 + үр дагавар.",
+  "order_index": 22,
+  "id": "fazhan-gaoji1-l15-q22",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "她急得（ ）热锅上的蚂蚁，不知如何是好。",
+  "options": [
+   "不如",
+   "比",
+   "与其",
+   "如同"
+  ],
+  "correct_answer": "如同",
+  "explanation": "如同 + N — зүйрлэл.",
+  "order_index": 23,
+  "id": "fazhan-gaoji1-l15-q23",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "“如同……那样（一样）” 和什么意思、用法一样？",
+  "options": [
+   "不但……而且……",
+   "虽然……但是……",
+   "像（跟）……一样",
+   "因为……所以……"
+  ],
+  "correct_answer": "像（跟）……一样",
+  "explanation": "如同……一样 = 像……一样 (бичгийн хэл).",
+  "order_index": 24,
+  "id": "fazhan-gaoji1-l15-q24",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "这几个孩子失去了父母，已经（ ）了，我们得帮他们。",
+  "options": [
+   "无影无踪",
+   "无依无靠",
+   "无边无际",
+   "无穷无尽"
+  ],
+  "correct_answer": "无依无靠",
+  "explanation": "无依无靠 — тулгуургүй, тусгүй.",
+  "order_index": 25,
+  "id": "fazhan-gaoji1-l15-q25",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "你（ ），为什么这么说？",
+  "options": [
+   "无影无踪",
+   "无边无际",
+   "无凭无据",
+   "无依无靠"
+  ],
+  "correct_answer": "无凭无据",
+  "explanation": "无凭无据 — баримтгүй, нотолгоогүй.",
+  "order_index": 26,
+  "id": "fazhan-gaoji1-l15-q26",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "reading",
+  "question": "子贡问孔子什么？",
+  "options": [
+   "贫而不谄、富而不骄这样怎么样",
+   "怎样才能有兄弟",
+   "怎样才能当官",
+   "怎样才能长寿"
+  ],
+  "correct_answer": "贫而不谄、富而不骄这样怎么样",
+  "explanation": "子贡: «假如一个人生活贫贱，但不向富人谄媚… 这怎么样?»",
+  "order_index": 27,
+  "id": "fazhan-gaoji1-l15-q27",
+  "skillTags": [
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "孔子说的更高的境界是什么？",
+  "options": [
+   "贫而思进取",
+   "贫而乐，富而好礼者也",
+   "贫而无怨，富而无骄",
+   "富而不奢侈"
+  ],
+  "correct_answer": "贫而乐，富而好礼者也",
+  "explanation": "Күнз: «贫而乐，富而好礼者也».",
+  "order_index": 28,
+  "id": "fazhan-gaoji1-l15-q28",
+  "skillTags": [
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "陶渊明为什么决定弃官回家？",
+  "options": [
+   "他不愿意为五斗米向人低三下四",
+   "他想做生意",
+   "他生病了",
+   "他被免职了"
+  ],
+  "correct_answer": "他不愿意为五斗米向人低三下四",
+  "explanation": "不为五斗米而折腰 — зусардахыг хүсээгүй.",
+  "order_index": 29,
+  "id": "fazhan-gaoji1-l15-q29",
+  "skillTags": [
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "孔子说，有一个字可以终身行之，是什么字？",
+  "options": [
+   "德",
+   "恕",
+   "仁",
+   "礼"
+  ],
+  "correct_answer": "恕",
+  "explanation": "其恕乎! — «恕».",
+  "order_index": 30,
+  "id": "fazhan-gaoji1-l15-q30",
+  "skillTags": [
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "司马牛说“别人都有兄弟，偏偏我没有”，子夏劝他什么？",
+  "options": [
+   "君子敬而无失，四海之内皆兄弟",
+   "别再难过",
+   "要努力工作",
+   "去找亲人"
+  ],
+  "correct_answer": "君子敬而无失，四海之内皆兄弟",
+  "explanation": "子夏: 君子敬而无失，与人恭而有礼，四海之内，皆兄弟也.",
+  "order_index": 31,
+  "id": "fazhan-gaoji1-l15-q31",
+  "skillTags": [
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "孔子对“以德报怨”的回答是什么？",
+  "options": [
+   "以德报德，以德报怨",
+   "以直报怨，以德报德",
+   "以怨报怨",
+   "不要报怨"
+  ],
+  "correct_answer": "以直报怨，以德报德",
+  "explanation": "Күнз: «以直报怨，以德报德».",
+  "order_index": 32,
+  "id": "fazhan-gaoji1-l15-q32",
+  "skillTags": [
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ }
+]

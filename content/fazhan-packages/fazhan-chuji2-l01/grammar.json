@@ -109,7 +109,7 @@
    },
    {
     "chinese": "我们没有人不愿意。",
-    "pinyin": "Wǒmen méiyǒu rén bù yuànyì.",
+    "pinyin": "Wǒmen méiyǒu rén bú yuànyì.",
     "mongolian": "Бид бүгдээрээ дуртай (бидний хэн ч дургүй биш)."
    },
    {
@@ -312,7 +312,7 @@
    },
    {
     "chinese": "因为我的汉语听力不太好，所以经常听错。",
-    "pinyin": "Yīnwèi wǒ de Hànyǔ tīnglì bù tài hǎo, suǒyǐ jīngcháng tīng cuò.",
+    "pinyin": "Yīnwèi wǒ de Hànyǔ tīnglì bú tài hǎo, suǒyǐ jīngcháng tīng cuò.",
     "mongolian": "Миний хятад хэлний сонсгол төдийлөн сайн биш учир байнга буруу сонсдог."
    }
   ],
@@ -401,7 +401,7 @@
    },
    {
     "chinese": "他很努力，成绩却不太好。",
-    "pinyin": "Tā hěn nǔlì, chéngjì què bù tài hǎo.",
+    "pinyin": "Tā hěn nǔlì, chéngjì què bú tài hǎo.",
     "mongolian": "Тэр маш хичээнгүй ч, дүн нь төдийлөн сайн биш."
    }
   ],

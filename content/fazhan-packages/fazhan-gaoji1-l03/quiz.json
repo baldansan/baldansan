@@ -1,0 +1,578 @@
+[
+ {
+  "type": "cloze",
+  "question": "做荷西的太太，语言上就得（ ）他。",
+  "options": [
+   "将就",
+   "接济",
+   "痛恨",
+   "尚且"
+  ],
+  "correct_answer": "将就",
+  "explanation": "将就 = дургүйхэн зохицох. 尚且 — харьцуулах холбоос; 接济 — тусламж; 痛恨 — үзэн ядах.",
+  "order_index": 1,
+  "id": "fazhan-gaoji1-l03-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我不愿意在婚后失去独立的（ ）。",
+  "options": [
+   "余地",
+   "功劳",
+   "人格",
+   "世面"
+  ],
+  "correct_answer": "人格",
+  "explanation": "人格 = хүний зан чанар, хүн чанар.",
+  "order_index": 2,
+  "id": "fazhan-gaoji1-l03-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他看我这个“大厨”（ ），对我也生起信心来了。",
+  "options": [
+   "爱不释手",
+   "神气活现",
+   "受宠若惊",
+   "莞尔一笑"
+  ],
+  "correct_answer": "神气活现",
+  "explanation": "神气活现 = сүрхий, омголон дүр.",
+  "order_index": 3,
+  "id": "fazhan-gaoji1-l03-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我收到这么多珍贵的食品，乐得（ ）。",
+  "options": [
+   "胡说八道",
+   "心血来潮",
+   "不置可否",
+   "爱不释手"
+  ],
+  "correct_answer": "爱不释手",
+  "explanation": "爱不释手 = гараасаа салгаж чадахгүй.",
+  "order_index": 4,
+  "id": "fazhan-gaoji1-l03-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "后来家中航空包裹飞来（ ），我们才有中国食品吃。",
+  "options": [
+   "接济",
+   "将就",
+   "痛恨",
+   "挑"
+  ],
+  "correct_answer": "接济",
+  "explanation": "接济 = мөнгө, эд зүйлээр туслах.",
+  "order_index": 5,
+  "id": "fazhan-gaoji1-l03-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "婚后他第一次含情脉脉地望着我，使我（ ）。",
+  "options": [
+   "莞尔一笑",
+   "受宠若惊",
+   "不置可否",
+   "神气活现"
+  ],
+  "correct_answer": "受宠若惊",
+  "explanation": "受宠若惊 = гэнэт хайр хүртэж гайхах.",
+  "order_index": 6,
+  "id": "fazhan-gaoji1-l03-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "你问我要不要？我（ ），只是笑了笑。",
+  "options": [
+   "心血来潮",
+   "爱不释手",
+   "胡说八道",
+   "不置可否"
+  ],
+  "correct_answer": "不置可否",
+  "explanation": "不置可否 = «тийм» ч «үгүй» ч гэхгүй.",
+  "order_index": 7,
+  "id": "fazhan-gaoji1-l03-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "说话一定要有根据，不能（ ）。",
+  "options": [
+   "莞尔一笑",
+   "受宠若惊",
+   "我行我素",
+   "胡说八道"
+  ],
+  "correct_answer": "胡说八道",
+  "explanation": "胡说八道 = үндэслэлгүй дэмий яриа.",
+  "order_index": 8,
+  "id": "fazhan-gaoji1-l03-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "钱是荷西赚的，我毫无选择（ ）。",
+  "options": [
+   "功劳",
+   "名堂",
+   "世面",
+   "余地"
+  ],
+  "correct_answer": "余地",
+  "explanation": "余地 = боломж, зай.",
+  "order_index": 9,
+  "id": "fazhan-gaoji1-l03-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "这都是“笋片炒冬菇”的（ ）！",
+  "options": [
+   "功劳",
+   "人格",
+   "余地",
+   "世面"
+  ],
+  "correct_answer": "功劳",
+  "explanation": "功劳 = гавьяа.",
+  "order_index": 10,
+  "id": "fazhan-gaoji1-l03-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "乖乖，真是个见过（ ）的老板，不要小看外国人。",
+  "options": [
+   "功劳",
+   "心地",
+   "世面",
+   "余地"
+  ],
+  "correct_answer": "世面",
+  "explanation": "见过世面 = дэлхий үзсэн.",
+  "order_index": 11,
+  "id": "fazhan-gaoji1-l03-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "他的性情不好，（ ）却是很好的。",
+  "options": [
+   "世面",
+   "人格",
+   "心地",
+   "名堂"
+  ],
+  "correct_answer": "心地",
+  "explanation": "心地 = сэтгэлийн сайн муу.",
+  "order_index": 12,
+  "id": "fazhan-gaoji1-l03-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我用筷子（ ）起一根粉丝。",
+  "options": [
+   "白",
+   "绞",
+   "唬",
+   "挑"
+  ],
+  "correct_answer": "挑",
+  "explanation": "挑 = урт зүйлийг үзүүрээр өргөх.",
+  "order_index": 13,
+  "id": "fazhan-gaoji1-l03-q13",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "下面哪一句是“递进”关系的复句？",
+  "options": [
+   "他不但学习好，而且为人也很好。",
+   "如果他学习好，就能去。",
+   "他虽然学习好，但是不努力。",
+   "因为他学习好，所以得了奖。"
+  ],
+  "correct_answer": "他不但学习好，而且为人也很好。",
+  "explanation": "不但……而且…… = 递进; 因为……所以 = 因果; 如果……就 = 假设; 虽然……但是 = 转折.",
+  "order_index": 14,
+  "id": "fazhan-gaoji1-l03-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "“不但他学习好，其他人的学习（ ）很好。”空格里应填：",
+  "options": [
+   "才",
+   "也",
+   "却",
+   "就"
+  ],
+  "correct_answer": "也",
+  "explanation": "主语 өөр үед 不但 нь 主语-ийн өмнө, 也 нь хоёр дахь 主语-ийн ард.",
+  "order_index": 15,
+  "id": "fazhan-gaoji1-l03-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "哪一句“尚且”的位置是正确的？",
+  "options": [
+   "老师不懂尚且他的话，何况我们学生呢？",
+   "老师不懂他的话，尚且何况我们学生呢？",
+   "老师尚且不懂他的话，何况我们学生呢？",
+   "尚且老师不懂他的话，何况我们学生呢？"
+  ],
+  "correct_answer": "老师尚且不懂他的话，何况我们学生呢？",
+  "explanation": "尚且 нь 主语-ийн ард, 谓语-ийн өмнө орно.",
+  "order_index": 16,
+  "id": "fazhan-gaoji1-l03-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "“小学生（ ）明白这些道理，（ ）大学生呢？”",
+  "options": [
+   "尚且；何况",
+   "虽然；但是",
+   "因为；所以",
+   "不但；而且"
+  ],
+  "correct_answer": "尚且；何况",
+  "explanation": "尚且……何况…… — «... ч ... бүр ч».",
+  "order_index": 17,
+  "id": "fazhan-gaoji1-l03-q17",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "“我（ ）没去过那么高级的饭店吃饭。”空格里最合适的是：",
+  "options": [
+   "一向",
+   "一直",
+   "刚才",
+   "从来"
+  ],
+  "correct_answer": "从来",
+  "explanation": "从来 + 没… — «хэзээ ч … байгаагүй».",
+  "order_index": 18,
+  "id": "fazhan-gaoji1-l03-q18",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "“一向”用错了的是哪一句？",
+  "options": [
+   "他一向不喜欢抽烟。",
+   "我爷爷身体一向很好。",
+   "我们一向都是自己在家里做饭。",
+   "我昨天一向在家看书。"
+  ],
+  "correct_answer": "我昨天一向在家看书。",
+  "explanation": "一向 нь удаан хугацааны тогтвортой байдал; нэг өдөрт 一直.",
+  "order_index": 19,
+  "id": "fazhan-gaoji1-l03-q19",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "“医生一检查，果然是肺炎。”这个“一”表示：",
+  "options": [
+   "数量是一个",
+   "动作重复很多次",
+   "动作很短暂，马上就出现结果",
+   "动作很长时间"
+  ],
+  "correct_answer": "动作很短暂，马上就出现结果",
+  "explanation": "一 + 动 + 结果 — богино үйлдлийн дараа үр дүн.",
+  "order_index": 20,
+  "id": "fazhan-gaoji1-l03-q20",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "“他常常几天不睡，可是一睡（ ）十多个小时。”空格里应填：",
+  "options": [
+   "也是",
+   "就是",
+   "才是",
+   "又是"
+  ],
+  "correct_answer": "就是",
+  "explanation": "一V就是 + хэмжээ.",
+  "order_index": 21,
+  "id": "fazhan-gaoji1-l03-q21",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "哪一句“因为……的关系”的结构是正确的？",
+  "options": [
+   "因为时间的关系，今天的会到此结束。",
+   "因为的关系时间，今天的会到此结束。",
+   "时间因为的关系，今天的会到此结束。",
+   "因为时间关系的，今天的会到此结束。"
+  ],
+  "correct_answer": "因为时间的关系，今天的会到此结束。",
+  "explanation": "因为 + шалтгаан + 的关系.",
+  "order_index": 22,
+  "id": "fazhan-gaoji1-l03-q22",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "“（ ）资金不足的原因，这项工作暂时停止。”空格里应填：",
+  "options": [
+   "如果",
+   "即使",
+   "由于",
+   "虽然"
+  ],
+  "correct_answer": "由于",
+  "explanation": "由于……的原因 — шалтгаан.",
+  "order_index": 23,
+  "id": "fazhan-gaoji1-l03-q23",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "“他鸡蛋都不会炒，（ ）晚餐呢？”空格里应填：",
+  "options": [
+   "所以",
+   "而且",
+   "因为",
+   "何况"
+  ],
+  "correct_answer": "何况",
+  "explanation": "何况 + (呢)? — «бүр ч».",
+  "order_index": 24,
+  "id": "fazhan-gaoji1-l03-q24",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "根据课文，荷西在“我”决定结婚的时候怎么说？",
+  "options": [
+   "你一定要改变你的个性才能结婚",
+   "我知道你性情不好，心地却是很好的，我们还是要结婚",
+   "结婚以后你不能工作",
+   "我们不要结婚，因为国籍不同"
+  ],
+  "correct_answer": "我知道你性情不好，心地却是很好的，我们还是要结婚",
+  "explanation": "1-р догол мөр: Хэси «чиний зан муу ч сэтгэл сайн, гэрлэнэ» гэсэн.",
+  "order_index": 25,
+  "id": "fazhan-gaoji1-l03-q25",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "课文中第一道“中国饭店”的菜是什么？",
+  "options": [
+   "粉丝煮鸡汤",
+   "蚂蚁上树",
+   "饭卷",
+   "合子饼"
+  ],
+  "correct_answer": "粉丝煮鸡汤",
+  "explanation": "6-р догол мөр: эхний хоол «粉丝煮鸡汤».",
+  "order_index": 26,
+  "id": "fazhan-gaoji1-l03-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "“我”把粉丝叫做什么？",
+  "options": [
+   "笋",
+   "尼龙线",
+   "海苔",
+   "雨 / 春雨"
+  ],
+  "correct_answer": "雨 / 春雨",
+  "explanation": "6-р догол мөр: фэнсыг «雨» гэж нэрлэсэн.",
+  "order_index": 27,
+  "id": "fazhan-gaoji1-l03-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "荷西吃了很多“饭卷”，最后他说里面是什么？",
+  "options": [
+   "塑胶",
+   "复写纸",
+   "肉松",
+   "海苔"
+  ],
+  "correct_answer": "海苔",
+  "explanation": "8-р догол мөр: 是了，是海苔.",
+  "order_index": 28,
+  "id": "fazhan-gaoji1-l03-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "荷西老板吃的“笋片炒冬菇”，其实“我”是用什么做的？",
+  "options": [
+   "小黄瓜",
+   "冬瓜",
+   "笋",
+   "粉丝"
+  ],
+  "correct_answer": "小黄瓜",
+  "explanation": "12-р догол мөр: 你是说小黄瓜炒冬菇吗？",
+  "order_index": 29,
+  "id": "fazhan-gaoji1-l03-q29",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Утгыг зөв илэрхийлсэн нь аль вэ? «Цагийн хязгаартай учраас өнөөдөр бид энд хүртэл хэлэлцье»",
+  "options": [
+   "今天我们因为讨论的关系时间到这儿",
+   "因为的关系时间，我们今天讨论到这儿",
+   "因为时间的关系，今天我们讨论到这儿",
+   "时间因为的关系，今天我们讨论到这儿"
+  ],
+  "correct_answer": "因为时间的关系，今天我们讨论到这儿",
+  "explanation": "因为 + нэр үг + 的关系 бүтэц.",
+  "order_index": 30,
+  "id": "fazhan-gaoji1-l03-q30",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "你想说“旅行不仅愉快，而且是学习的机会”。最合适的说法是：",
+  "options": [
+   "旅行一向是一件愉快的事情，所以是学习机会。",
+   "旅行因为的关系愉快，也是学习机会。",
+   "旅行不仅是一件愉快的事情，而且是很好的学习机会。",
+   "旅行尚且是一件愉快的事情，何况是学习机会。"
+  ],
+  "correct_answer": "旅行不仅是一件愉快的事情，而且是很好的学习机会。",
+  "explanation": "不仅……而且……: нэмэлт дэвшилт.",
+  "order_index": 31,
+  "id": "fazhan-gaoji1-l03-q31",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "你想对朋友说“考试前我一紧张，什么都想不起来”。最自然的说法是：",
+  "options": [
+   "一我紧张，脑子里的词语都忘。",
+   "我一向紧张，所以忘了词语。",
+   "我紧张一，词语脑子里都忘了。",
+   "我一紧张，脑子里的词语都忘了。"
+  ],
+  "correct_answer": "我一紧张，脑子里的词语都忘了。",
+  "explanation": "一 + V + үр дүн; 都忘了.",
+  "order_index": 32,
+  "id": "fazhan-gaoji1-l03-q32",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ }
+]

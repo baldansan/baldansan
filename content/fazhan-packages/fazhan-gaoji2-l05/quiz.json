@@ -1,0 +1,578 @@
+[
+ {
+  "type": "cloze",
+  "question": "老王看到这个消息，（ ）晕了过去。",
+  "options": [
+   "总是",
+   "宁可",
+   "险些",
+   "偶尔"
+  ],
+  "correct_answer": "险些",
+  "explanation": "险些 =差一点儿.",
+  "order_index": 1,
+  "id": "fazhan-gaoji2-l05-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "找工作非常不顺，（ ）被拒，心里很是憋气。",
+  "options": [
+   "刚刚",
+   "略略",
+   "屡屡",
+   "偶尔"
+  ],
+  "correct_answer": "屡屡",
+  "explanation": "屡屡 = 一次又一次.",
+  "order_index": 2,
+  "id": "fazhan-gaoji2-l05-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "主裁拒绝无视那名裸奔者，向他出示了红牌，这可算是足坛上的头一（ ）。",
+  "options": [
+   "场",
+   "遭",
+   "幕",
+   "声"
+  ],
+  "correct_answer": "遭",
+  "explanation": "头一遭 = 第一回.",
+  "order_index": 3,
+  "id": "fazhan-gaoji2-l05-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "他在课间说笑话，让大家（ ）。",
+  "options": [
+   "无所适从",
+   "坐视不管",
+   "哄堂大笑",
+   "默默无闻"
+  ],
+  "correct_answer": "哄堂大笑",
+  "explanation": "哄堂大笑 = 全屋子的人一起大笑.",
+  "order_index": 4,
+  "id": "fazhan-gaoji2-l05-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "妈妈让她这样做，爸爸让她那样做，让她（ ）。",
+  "options": [
+   "忍俊不禁",
+   "哄堂大笑",
+   "礼尚往来",
+   "无所适从"
+  ],
+  "correct_answer": "无所适从",
+  "explanation": "无所适从 = 不知道怎么办.",
+  "order_index": 5,
+  "id": "fazhan-gaoji2-l05-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "这位主裁在雪片般派发完红牌之后，快速转移到更衣室（ ）骚乱。",
+  "options": [
+   "回敬",
+   "崇尚",
+   "躲避",
+   "追随"
+  ],
+  "correct_answer": "躲避",
+  "explanation": "躲避 = 躲.",
+  "order_index": 6,
+  "id": "fazhan-gaoji2-l05-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "这场红牌大战也（ ）了足坛历史的先河。",
+  "options": [
+   "走",
+   "关",
+   "开",
+   "打"
+  ],
+  "correct_answer": "开",
+  "explanation": "开……之先河.",
+  "order_index": 7,
+  "id": "fazhan-gaoji2-l05-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "cloze",
+  "question": "队员们不满裁判，客队球员也（ ）着一股窝囊气。",
+  "options": [
+   "拿",
+   "憋",
+   "站",
+   "送"
+  ],
+  "correct_answer": "憋",
+  "explanation": "憋着一股气 (课文).",
+  "order_index": 8,
+  "id": "fazhan-gaoji2-l05-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "choice",
+  "question": "车突然走不动了，（ ）我今天又得迟到了。",
+  "options": [
+   "这么",
+   "这点",
+   "这下",
+   "这是"
+  ],
+  "correct_answer": "这下",
+  "explanation": "这下 + үр дүн (综合注释 1).",
+  "order_index": 9,
+  "id": "fazhan-gaoji2-l05-q09",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "我把什么东西都吐光了，（ ）反倒觉得轻松。",
+  "options": [
+   "这么来说",
+   "这样一来",
+   "这个一下",
+   "这样来去"
+  ],
+  "correct_answer": "这样一来",
+  "explanation": "这样一来 (综合注释 1).",
+  "order_index": 10,
+  "id": "fazhan-gaoji2-l05-q10",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "“你的皮肤白，穿上这件粉的，显得特青春！” “特青春”的意思是：",
+  "options": [
+   "特别有青春活力",
+   "特别老",
+   "特别瘦",
+   "特别胖"
+  ],
+  "correct_answer": "特别有青春活力",
+  "explanation": "副+名 (综合注释 2).",
+  "order_index": 11,
+  "id": "fazhan-gaoji2-l05-q11",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "我很男子汉（ ）答应了下来。",
+  "options": [
+   "地",
+   "的",
+   "了",
+   "得"
+  ],
+  "correct_answer": "地",
+  "explanation": "很 + N + 地 + V.",
+  "order_index": 12,
+  "id": "fazhan-gaoji2-l05-q12",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "choice",
+  "question": "终于考完了，我们几个一起去游乐场玩（ ）痛快。",
+  "options": [
+   "了",
+   "一",
+   "得",
+   "个"
+  ],
+  "correct_answer": "个",
+  "explanation": "V + 个 + 补语 (综合注释 3).",
+  "order_index": 13,
+  "id": "fazhan-gaoji2-l05-q13",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "拿到通知，他心里这个（ ）啊！",
+  "options": [
+   "很美",
+   "美",
+   "美的",
+   "美了"
+  ],
+  "correct_answer": "美",
+  "explanation": "这个 + adj + 啊.",
+  "order_index": 14,
+  "id": "fazhan-gaoji2-l05-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "刚才一个不（ ），把手割破了。",
+  "options": [
+   "小心",
+   "小心地",
+   "当心地",
+   "当心了"
+  ],
+  "correct_answer": "小心",
+  "explanation": "一个不小心.",
+  "order_index": 15,
+  "id": "fazhan-gaoji2-l05-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "卡拉斯科本人并没（ ）。",
+  "options": [
+   "出事儿",
+   "办事儿",
+   "当回事儿",
+   "省事儿"
+  ],
+  "correct_answer": "当回事儿",
+  "explanation": "当回事儿 (综合注释 4).",
+  "order_index": 16,
+  "id": "fazhan-gaoji2-l05-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "我身体好着呢，小小的感冒不（ ）。",
+  "options": [
+   "当事儿",
+   "出事儿",
+   "碍事儿",
+   "管事儿"
+  ],
+  "correct_answer": "碍事儿",
+  "explanation": "不碍事儿 = саад болохгүй.",
+  "order_index": 17,
+  "id": "fazhan-gaoji2-l05-q17",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "你的手机用坏了，（ ）？",
+  "options": [
+   "出什么事儿",
+   "关我什么事儿",
+   "没你的事儿",
+   "省什么事儿"
+  ],
+  "correct_answer": "关我什么事儿",
+  "explanation": "关我什么事儿 (参考答案).",
+  "order_index": 18,
+  "id": "fazhan-gaoji2-l05-q18",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "choice",
+  "question": "……另一所大学的硕士生小张也有过同样的遭遇。前面应该加：",
+  "options": [
+   "因此",
+   "无独有偶",
+   "于是",
+   "相反"
+  ],
+  "correct_answer": "无独有偶",
+  "explanation": "无独有偶 (综合注释 5).",
+  "order_index": 19,
+  "id": "fazhan-gaoji2-l05-q19",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "谁被主裁向红牌罚下，是足坛上的头一遭？",
+  "options": [
+   "鹦鹉",
+   "门将",
+   "教练",
+   "裸奔者"
+  ],
+  "correct_answer": "裸奔者",
+  "explanation": "Р1.",
+  "order_index": 20,
+  "id": "fazhan-gaoji2-l05-q20",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "鹦鹉米图被红牌罚出场是因为：",
+  "options": [
+   "它咬了球员",
+   "它学裁判吹哨，不停地吹",
+   "它偷了球",
+   "它飞进球场"
+  ],
+  "correct_answer": "它学裁判吹哨，不停地吹",
+  "explanation": "Р2.",
+  "order_index": 21,
+  "id": "fazhan-gaoji2-l05-q21",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "第3段的裁判为什么把自己罚下？",
+  "options": [
+   "赛前亲友意外死亡，他心神大乱，觉得再执法是对职业的亵渎",
+   "他受伤了",
+   "他不喜欢足球",
+   "他和裁判吵架"
+  ],
+  "correct_answer": "赛前亲友意外死亡，他心神大乱，觉得再执法是对职业的亵渎",
+  "explanation": "Р3.",
+  "order_index": 22,
+  "id": "fazhan-gaoji2-l05-q22",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "卡马萨为什么对卡拉斯科出示红牌？",
+  "options": [
+   "卡拉斯科打了他",
+   "卡拉斯科踢倒了他",
+   "比赛已经结束",
+   "他失恋了，拿球员出气"
+  ],
+  "correct_answer": "他失恋了，拿球员出气",
+  "explanation": "Р4.",
+  "order_index": 23,
+  "id": "fazhan-gaoji2-l05-q23",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "卡马萨最后受到的处罚是：",
+  "options": [
+   "终身禁赛",
+   "没有处罚",
+   "罚款",
+   "停哨一年"
+  ],
+  "correct_answer": "停哨一年",
+  "explanation": "Р4.",
+  "order_index": 24,
+  "id": "fazhan-gaoji2-l05-q24",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "1986年墨西哥联赛中，主裁一共出示了多少张红牌？",
+  "options": [
+   "18张",
+   "19张",
+   "22张",
+   "11张"
+  ],
+  "correct_answer": "22张",
+  "explanation": "Р6.",
+  "order_index": 25,
+  "id": "fazhan-gaoji2-l05-q25",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "艾斯坎东为什么快速转移到更衣室？",
+  "options": [
+   "为了自保，躲避骚乱",
+   "他要换衣服",
+   "他受伤了",
+   "他累了"
+  ],
+  "correct_answer": "为了自保，躲避骚乱",
+  "explanation": "Р6.",
+  "order_index": 26,
+  "id": "fazhan-gaoji2-l05-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "巴斯蒂亚诺的18张红牌，是给了谁？",
+  "options": [
+   "记者",
+   "同一支球队的球员",
+   "观众",
+   "两队的教练"
+  ],
+  "correct_answer": "同一支球队的球员",
+  "explanation": "Р7.",
+  "order_index": 27,
+  "id": "fazhan-gaoji2-l05-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "“小李一下子成了名人，经常在一些公开（ ）露面。”",
+  "options": [
+   "场面",
+   "场所",
+   "场景",
+   "场合"
+  ],
+  "correct_answer": "场合",
+  "explanation": "公开场合.",
+  "order_index": 28,
+  "id": "fazhan-gaoji2-l05-q28",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "“学校是学习（ ），不能完全对外开放。”",
+  "options": [
+   "场地",
+   "场面",
+   "场合",
+   "场所"
+  ],
+  "correct_answer": "场所",
+  "explanation": "学习场所.",
+  "order_index": 29,
+  "id": "fazhan-gaoji2-l05-q29",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "“在这个问题上，目前还存在很大的（ ）。”",
+  "options": [
+   "争议",
+   "争吵",
+   "争论",
+   "争执"
+  ],
+  "correct_answer": "争议",
+  "explanation": "存在争议 (нэр үг).",
+  "order_index": 30,
+  "id": "fazhan-gaoji2-l05-q30",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "“这夫妻俩，常常因为一点儿小事就（ ）起来。”",
+  "options": [
+   "挑战",
+   "挑衅",
+   "争吵",
+   "争议"
+  ],
+  "correct_answer": "争吵",
+  "explanation": "争吵 = дуу хүчтэй хэрүүл.",
+  "order_index": 31,
+  "id": "fazhan-gaoji2-l05-q31",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "“虽然他说这话的时候带着笑，但谁都能听出话里明显带着敌意和（ ）。”",
+  "options": [
+   "挑战",
+   "挑衅",
+   "争议",
+   "争执"
+  ],
+  "correct_answer": "挑衅",
+  "explanation": "敌意和挑衅.",
+  "order_index": 32,
+  "id": "fazhan-gaoji2-l05-q32",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "hard"
+ }
+]

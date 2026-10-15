@@ -1,0 +1,632 @@
+[
+ {
+  "type": "cloze",
+  "question": "回家吃饭，还是去应酬交际？这成了他眼前的（ ）选择。",
+  "options": [
+   "红火",
+   "两难",
+   "舒畅",
+   "固执"
+  ],
+  "correct_answer": "两难",
+  "explanation": "两难 = хоёр талаас хэцүү сонголт. 固执 — зөрүүд, 舒畅 — таатай, 红火 — цэцэглэсэн.",
+  "order_index": 1,
+  "id": "fazhan-gaoji1-l12-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "作为商人，连自己吃饭、睡觉的时间都要（ ）。",
+  "options": [
+   "报答",
+   "盘算",
+   "体谅",
+   "表态"
+  ],
+  "correct_answer": "盘算",
+  "explanation": "盘算 = нарийн тооцоолох, төлөвлөх. Бусад нь энэ утгад тохирохгүй.",
+  "order_index": 2,
+  "id": "fazhan-gaoji1-l12-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "第一个电话打给蔡经理，他们的感情很（ ），两个人经常合作。",
+  "options": [
+   "融洽",
+   "懒洋洋",
+   "固执",
+   "清贫"
+  ],
+  "correct_answer": "融洽",
+  "explanation": "融洽 = харилцаа найрсаг, зохицсон.",
+  "order_index": 3,
+  "id": "fazhan-gaoji1-l12-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "这个女人不仅有漂亮的外表，还有优雅的气质、得体的（ ）。",
+  "options": [
+   "谈吐",
+   "档次",
+   "情理",
+   "效益"
+  ],
+  "correct_answer": "谈吐",
+  "explanation": "谈吐 = яриа хэллэг, ярианы хэв маяг.",
+  "order_index": 4,
+  "id": "fazhan-gaoji1-l12-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "索重阳从来没想过要她（ ）。",
+  "options": [
+   "表态",
+   "报答",
+   "体谅",
+   "光顾"
+  ],
+  "correct_answer": "报答",
+  "explanation": "报答 = (сайн сайханд) хариу барих.",
+  "order_index": 5,
+  "id": "fazhan-gaoji1-l12-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他下了很大力气帮她，使她感激得（ ）。",
+  "options": [
+   "兴致勃勃",
+   "如释重负",
+   "热泪盈眶",
+   "思前想后"
+  ],
+  "correct_answer": "热泪盈眶",
+  "explanation": "热泪盈眶 = талархан нулимс мэлтэлзэх.",
+  "order_index": 6,
+  "id": "fazhan-gaoji1-l12-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "这个让我日夜不安的难关终于渡过了，我（ ）。",
+  "options": [
+   "一本正经",
+   "热泪盈眶",
+   "如释重负",
+   "兴致勃勃"
+  ],
+  "correct_answer": "如释重负",
+  "explanation": "如释重负 = ачаа буулгасан мэт амсхийх.",
+  "order_index": 7,
+  "id": "fazhan-gaoji1-l12-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "别看他平时（ ），私下里其实很爱开玩笑。",
+  "options": [
+   "思前想后",
+   "重温旧梦",
+   "兴致勃勃",
+   "一本正经"
+  ],
+  "correct_answer": "一本正经",
+  "explanation": "一本正经 = нухацтай царайтай.",
+  "order_index": 8,
+  "id": "fazhan-gaoji1-l12-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "cloze",
+  "question": "说了一（ ），他才注意到王丰没表态。",
+  "options": [
+   "通",
+   "阵",
+   "口",
+   "顿"
+  ],
+  "correct_answer": "通",
+  "explanation": "一通 — удаан үргэлжилсэн яриа; 说了一通 гэж хэлнэ.",
+  "order_index": 9,
+  "id": "fazhan-gaoji1-l12-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "王丰生活（ ），没有几次机会光顾那种地方。",
+  "options": [
+   "豪华",
+   "红火",
+   "清贫",
+   "融洽"
+  ],
+  "correct_answer": "清贫",
+  "explanation": "清贫 = ядуу даруухан, орлого бага.",
+  "order_index": 10,
+  "id": "fazhan-gaoji1-l12-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "家里也没有热饭热菜等着自己，索重阳很（ ）。",
+  "options": [
+   "红火",
+   "融洽",
+   "扫兴",
+   "舒畅"
+  ],
+  "correct_answer": "扫兴",
+  "explanation": "扫兴 = урам хугарах.",
+  "order_index": 11,
+  "id": "fazhan-gaoji1-l12-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "索重阳（ ）地转动着椅子，今天怎么了？",
+  "options": [
+   "热泪盈眶",
+   "如释重负",
+   "懒洋洋",
+   "兴致勃勃"
+  ],
+  "correct_answer": "懒洋洋",
+  "explanation": "懒洋洋地 = залхуутайгаар. 兴致勃勃 нь урам зоригтой — эсрэг.",
+  "order_index": 12,
+  "id": "fazhan-gaoji1-l12-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "王丰没去过大明堂，但也知道那是本市（ ）最高的酒楼。",
+  "options": [
+   "效益",
+   "档次",
+   "功利",
+   "部下"
+  ],
+  "correct_answer": "档次",
+  "explanation": "档次 = зэрэглэл.",
+  "order_index": 13,
+  "id": "fazhan-gaoji1-l12-q13",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "哎哟，真不（ ），我这儿走不开，改天吧！",
+  "options": [
+   "凑巧",
+   "情理",
+   "瞬间",
+   "嘀咕"
+  ],
+  "correct_answer": "凑巧",
+  "explanation": "不凑巧 = таарсангүй (эелдэг татгалзал).",
+  "order_index": 14,
+  "id": "fazhan-gaoji1-l12-q14",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "你喝咖啡（ ）喝茶？",
+  "options": [
+   "与其",
+   "还是",
+   "宁可",
+   "或者"
+  ],
+  "correct_answer": "还是",
+  "explanation": "Сонгох асуултад «还是» хэрэглэнэ.",
+  "order_index": 15,
+  "id": "fazhan-gaoji1-l12-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "下面哪一句是对的？",
+  "options": [
+   "你们是坐火车或者坐飞机去？",
+   "我们还是坐火车，还是坐飞机去。",
+   "我们或者坐火车，或者坐飞机去。",
+   "你喝茶或者喝咖啡？"
+  ],
+  "correct_answer": "我们或者坐火车，或者坐飞机去。",
+  "explanation": "«或者» зөвхөн өгүүлэх өгүүлбэрт; асуултад «还是».",
+  "order_index": 16,
+  "id": "fazhan-gaoji1-l12-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "我宁愿坐汽车，（ ）坐飞机。",
+  "options": [
+   "就是",
+   "还是",
+   "不如",
+   "也不"
+  ],
+  "correct_answer": "也不",
+  "explanation": "宁愿 A，也不 B — «也不» заавал хэрэгтэй.",
+  "order_index": 17,
+  "id": "fazhan-gaoji1-l12-q17",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "（ ）回家吃，不如打电话叫几个朋友一起吃。",
+  "options": [
+   "与其",
+   "宁可",
+   "虽然",
+   "既然"
+  ],
+  "correct_answer": "与其",
+  "explanation": "与其……不如…… — А-аас Б нь дээр.",
+  "order_index": 18,
+  "id": "fazhan-gaoji1-l12-q18",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "下面哪一句有语病？",
+  "options": [
+   "与其吵架，不如坐下来好好商量。",
+   "她宁可不睡觉，也要做完这件事。",
+   "我宁可走路去，也不骑自行车。",
+   "我宁愿坐汽车，也坐飞机。"
+  ],
+  "correct_answer": "我宁愿坐汽车，也坐飞机。",
+  "explanation": "«也» хойно «不» дутуу: «也不坐飞机».",
+  "order_index": 19,
+  "id": "fazhan-gaoji1-l12-q19",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "她没来，（ ）是生气了。",
+  "options": [
+   "特别",
+   "幸亏",
+   "一向",
+   "多半"
+  ],
+  "correct_answer": "多半",
+  "explanation": "多半是 = магадгүй (таамаглал).",
+  "order_index": 20,
+  "id": "fazhan-gaoji1-l12-q20",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "下面哪一句“多半”的用法正确？",
+  "options": [
+   "今天他多半不会来了。",
+   "今天多半他一定来。",
+   "今天他多半一定不会来了。",
+   "今天他不会来了多半。"
+  ],
+  "correct_answer": "今天他多半不会来了。",
+  "explanation": "多半 — үйл үгийн өмнө; 一定-тэй хамт хэрэглэхгүй.",
+  "order_index": 21,
+  "id": "fazhan-gaoji1-l12-q21",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "这几天天气不好，不是刮风，（ ）下雨。",
+  "options": [
+   "只是",
+   "就是",
+   "而是",
+   "还是"
+  ],
+  "correct_answer": "就是",
+  "explanation": "不是……就是…… — хоёрын аль нэг.",
+  "order_index": 22,
+  "id": "fazhan-gaoji1-l12-q22",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "他不是自私的人，他这样做不是为了自己，（ ）为了大家。",
+  "options": [
+   "还是",
+   "而是",
+   "才是",
+   "就是"
+  ],
+  "correct_answer": "而是",
+  "explanation": "不是……而是…… — үгүйсгэж онцлох.",
+  "order_index": 23,
+  "id": "fazhan-gaoji1-l12-q23",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "年底，大家都忙（ ）不可开交。",
+  "options": [
+   "了",
+   "得",
+   "地",
+   "的"
+  ],
+  "correct_answer": "得",
+  "explanation": "不可开交 нь «得»-ийн дараах нөхөх үг.",
+  "order_index": 24,
+  "id": "fazhan-gaoji1-l12-q24",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "下面哪一句有语病？",
+  "options": [
+   "他们吵得不可开交。",
+   "这两个公司打得不可开交。",
+   "他今天很不可开交。",
+   "他今天忙得不可开交。"
+  ],
+  "correct_answer": "他今天很不可开交。",
+  "explanation": "不可开交 «很»-ийн ард шууд ордоггүй.",
+  "order_index": 25,
+  "id": "fazhan-gaoji1-l12-q25",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "考试不及格，妈妈说了我（ ）。",
+  "options": [
+   "一杯",
+   "一通",
+   "一座",
+   "一辆"
+  ],
+  "correct_answer": "一通",
+  "explanation": "说了一通 — нэлээд удаан зэмлэх.",
+  "order_index": 26,
+  "id": "fazhan-gaoji1-l12-q26",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "下面哪一句“一通”用得不对？",
+  "options": [
+   "他看了一通书。",
+   "大家发了一通牢骚。",
+   "她在这儿闹了一通。",
+   "妈妈说了我一通。"
+  ],
+  "correct_answer": "他看了一通书。",
+  "explanation": "一通 — хэлэх, зэмлэх, шуугих зэрэг хэлний үйлдэлд; «看书»-д 一会儿.",
+  "order_index": 27,
+  "id": "fazhan-gaoji1-l12-q27",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "reading",
+  "question": "索重阳下班后为什么决定不了去哪儿吃饭？",
+  "options": [
+   "秘书没有给他预订",
+   "他一点儿也不饿",
+   "回家吃饭还是去应酬交际，两种选择都让他为难",
+   "他今天没有钱吃饭"
+  ],
+  "correct_answer": "回家吃饭还是去应酬交际，两种选择都让他为难",
+  "explanation": "1-р догол мөр: 两难选择.",
+  "order_index": 28,
+  "id": "fazhan-gaoji1-l12-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "柳眉在电话里最后说了什么，让索重阳气得要命？",
+  "options": [
+   "她说他是个小偷",
+   "她说他是个穷人",
+   "她说他太胖了",
+   "她嘀咕说他是个色鬼"
+  ],
+  "correct_answer": "她嘀咕说他是个色鬼",
+  "explanation": "4-р догол мөр.",
+  "order_index": 29,
+  "id": "fazhan-gaoji1-l12-q29",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "王丰为什么说“下次吧”？",
+  "options": [
+   "他不想见索重阳",
+   "他不喜欢吃西餐",
+   "他真的明天有个重要的会",
+   "他自尊心很强，不愿意去豪华酒楼，怕被人怜悯或轻视"
+  ],
+  "correct_answer": "他自尊心很强，不愿意去豪华酒楼，怕被人怜悯或轻视",
+  "explanation": "5-р догол мөр: 索重阳突然明白了.",
+  "order_index": 30,
+  "id": "fazhan-gaoji1-l12-q30",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "reading",
+  "question": "妻子听说索重阳要回家吃饭，是什么反应？",
+  "options": [
+   "说他不必回来",
+   "高兴地做了一桌子菜",
+   "让他先去看医生",
+   "声音提高了，问怎么还没吃饭，然后去厨房看有什么菜"
+  ],
+  "correct_answer": "声音提高了，问怎么还没吃饭，然后去厨房看有什么菜",
+  "explanation": "6-р догол мөр.",
+  "order_index": 31,
+  "id": "fazhan-gaoji1-l12-q31",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "部下们接到老板的电话来了以后，为什么放松下来？",
+  "options": [
+   "因为老板请他们喝酒",
+   "因为他们想早点回家",
+   "因为他们还没吃饭，很饿",
+   "他们确信老板没有急事，只是想请大家吃饭"
+  ],
+  "correct_answer": "他们确信老板没有急事，只是想请大家吃饭",
+  "explanation": "7-р догол мөр.",
+  "order_index": 32,
+  "id": "fazhan-gaoji1-l12-q32",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "课文最后，索重阳在饭店里是什么感受？",
+  "options": [
+   "非常开心",
+   "食欲很好",
+   "内心格外孤独",
+   "很满足"
+  ],
+  "correct_answer": "内心格外孤独",
+  "explanation": "7, 8-р догол мөр: 内心却格外孤独.",
+  "order_index": 33,
+  "id": "fazhan-gaoji1-l12-q33",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "order",
+  "question": "Утгыг зөв илэрхийлсэн нь аль вэ? «Гэртээ идэхээс хэдэн найзаа дуудаж хамт идсэн нь дээр»",
+  "options": [
+   "与其回家吃，不如打电话叫几个朋友一起吃",
+   "与其不如回家吃，打电话叫朋友",
+   "宁可回家吃，也不如打电话叫朋友",
+   "回家吃与其，不如叫朋友"
+  ],
+  "correct_answer": "与其回家吃，不如打电话叫几个朋友一起吃",
+  "explanation": "与其 + татгалзсан зүйл，不如 + сонгосон зүйл.",
+  "order_index": 34,
+  "id": "fazhan-gaoji1-l12-q34",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "你想约朋友今晚吃饭，朋友说今晚有别的安排。最合适的说法是：",
+  "options": [
+   "真多半，我今晚有安排，改天吧。",
+   "真不可开交，我今晚有安排，改天吧。",
+   "真一通，我今晚有安排，改天吧。",
+   "真不凑巧，我今晚有安排，改天吧。"
+  ],
+  "correct_answer": "真不凑巧，我今晚有安排，改天吧。",
+  "explanation": "不凑巧 — эелдэг татгалзлын хэв.",
+  "order_index": 35,
+  "id": "fazhan-gaoji1-l12-q35",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ }
+]

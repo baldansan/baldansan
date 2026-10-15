@@ -1,0 +1,596 @@
+[
+ {
+  "type": "cloze",
+  "question": "常言道：“一句话能把人说笑，也能把人说跳。”这是一种值得（ ）的现象。",
+  "options": [
+   "深思",
+   "暗示",
+   "琢磨",
+   "激发"
+  ],
+  "correct_answer": "深思",
+  "explanation": "深思 = гүнзгий бодох.",
+  "order_index": 1,
+  "id": "fazhan-gaoji1-l11-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "“把人说跳”的话不但收不到（ ）的效果，还会激化矛盾。",
+  "options": [
+   "引导",
+   "恳求",
+   "预期",
+   "局限"
+  ],
+  "correct_answer": "预期",
+  "explanation": "预期的效果 = урьдчилан хүлээсэн үр дүн.",
+  "order_index": 2,
+  "id": "fazhan-gaoji1-l11-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "国王做了一个（ ），他梦见自己的牙齿全掉光了。",
+  "options": [
+   "噩梦",
+   "寓言",
+   "危机",
+   "对手"
+  ],
+  "correct_answer": "噩梦",
+  "explanation": "噩梦 = муу зүүд.",
+  "order_index": 3,
+  "id": "fazhan-gaoji1-l11-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "醒来后，他越（ ）越觉得不舒服。",
+  "options": [
+   "回敬",
+   "恭喜",
+   "挑衅",
+   "琢磨"
+  ],
+  "correct_answer": "琢磨",
+  "explanation": "越琢磨越…",
+  "order_index": 4,
+  "id": "fazhan-gaoji1-l11-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "巫师说：“这可不是个好（ ）啊！”",
+  "options": [
+   "修养",
+   "形象",
+   "对手",
+   "兆头"
+  ],
+  "correct_answer": "兆头",
+  "explanation": "好兆头 = сайн зөгнөл.",
+  "order_index": 5,
+  "id": "fazhan-gaoji1-l11-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "您所有的家人将会在您之前（ ）死去。",
+  "options": [
+   "确实",
+   "立即",
+   "一起",
+   "相继"
+  ],
+  "correct_answer": "相继",
+  "explanation": "相继 = дараалан.",
+  "order_index": 6,
+  "id": "fazhan-gaoji1-l11-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "这个巫师（ ）思考了一下，说：“恭喜您了！”",
+  "options": [
+   "交代",
+   "略微",
+   "发布",
+   "断定"
+  ],
+  "correct_answer": "略微",
+  "explanation": "略微 + V + 一下.",
+  "order_index": 7,
+  "id": "fazhan-gaoji1-l11-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "交谈中如果语气诚恳，（ ）委婉，表达得体，就会有较强的说服力。",
+  "options": [
+   "措辞",
+   "兆头",
+   "寓言",
+   "危机"
+  ],
+  "correct_answer": "措辞",
+  "explanation": "措辞 = үг хэллэг.",
+  "order_index": 8,
+  "id": "fazhan-gaoji1-l11-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "当你需要别人帮助时，使用商讨口气，常常会使你如愿以（ ）。",
+  "options": [
+   "偿",
+   "收",
+   "还",
+   "求"
+  ],
+  "correct_answer": "偿",
+  "explanation": "如愿以偿.",
+  "order_index": 9,
+  "id": "fazhan-gaoji1-l11-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这样的例子在现实生活中（ ）。",
+  "options": [
+   "不胜枚举",
+   "对牛弹琴",
+   "理直气壮",
+   "无理取闹"
+  ],
+  "correct_answer": "不胜枚举",
+  "explanation": "不胜枚举 = тоолж барахгүй олон.",
+  "order_index": 10,
+  "id": "fazhan-gaoji1-l11-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "如果有人（ ），你不必过于生气，也不必以无礼之言回敬。",
+  "options": [
+   "无理取闹",
+   "火上加油",
+   "塞翁失马",
+   "义正词严"
+  ],
+  "correct_answer": "无理取闹",
+  "explanation": "无理取闹 = учиргүй хэрүүл.",
+  "order_index": 11,
+  "id": "fazhan-gaoji1-l11-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "对那种丧失了人性的人，很可能是（ ）。",
+  "options": [
+   "如愿以偿",
+   "理直气壮",
+   "对牛弹琴",
+   "不胜枚举"
+  ],
+  "correct_answer": "对牛弹琴",
+  "explanation": "对牛弹琴 = ойлгохгүй хүнд хэлэх.",
+  "order_index": 12,
+  "id": "fazhan-gaoji1-l11-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "她的温和中包含着（ ），委婉中也含有批评。",
+  "options": [
+   "局限",
+   "引导",
+   "修养",
+   "对手"
+  ],
+  "correct_answer": "引导",
+  "explanation": "引导 = чиглүүлэх.",
+  "order_index": 13,
+  "id": "fazhan-gaoji1-l11-q13",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "哪个句子用了“目的复句”的“以免”？",
+  "options": [
+   "我们说话小声点，以免很好。",
+   "以免我们说话小声点。",
+   "太晚了，我们说话小声点，以免影响别人休息。",
+   "以免影响别人休息，我们说话小声点。"
+  ],
+  "correct_answer": "太晚了，我们说话小声点，以免影响别人休息。",
+  "explanation": "以免 + хүсээгүй үр дагавар, хойно хэсэгт.",
+  "order_index": 14,
+  "id": "fazhan-gaoji1-l11-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "“你赶快给她打个电话，（ ）她着急。”应填：",
+  "options": [
+   "免得",
+   "好让",
+   "以便",
+   "为了"
+  ],
+  "correct_answer": "免得",
+  "explanation": "免得 = ярианы, зайлсхийх зорилго.",
+  "order_index": 15,
+  "id": "fazhan-gaoji1-l11-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "“我们应该把问题解释清楚，（ ）消除误解。”应填：",
+  "options": [
+   "以免",
+   "免得",
+   "以便",
+   "省得"
+  ],
+  "correct_answer": "以便",
+  "explanation": "以便 + хүсэж буй үр дүн.",
+  "order_index": 16,
+  "id": "fazhan-gaoji1-l11-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "哪句使用“反之”正确？",
+  "options": [
+   "雨水多，气候就比较湿润，反之，所以大家高兴。",
+   "反之，雨水多。",
+   "雨水多，气候就比较湿润，反之，雨水少，气候就比较干燥。",
+   "雨水多，反之，很湿润。"
+  ],
+  "correct_answer": "雨水多，气候就比较湿润，反之，雨水少，气候就比较干燥。",
+  "explanation": "反之 + эсрэг нөхцөл + эсрэг үр дүн.",
+  "order_index": 17,
+  "id": "fazhan-gaoji1-l11-q17",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "哪句使用“略微”正确？",
+  "options": [
+   "这篇文章略微长。",
+   "他略微高兴。",
+   "请你们略微等一下，她马上就来。",
+   "我略微很累。"
+  ],
+  "correct_answer": "请你们略微等一下，她马上就来。",
+  "explanation": "略微 + V + 一下 / 一点儿.",
+  "order_index": 18,
+  "id": "fazhan-gaoji1-l11-q18",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "“她尽量把字写得大一些，（ ）让老人看清楚。”应填：",
+  "options": [
+   "以免",
+   "为了",
+   "省得",
+   "好"
+  ],
+  "correct_answer": "好",
+  "explanation": "好让 + 人 + V (ярианы зорилго).",
+  "order_index": 19,
+  "id": "fazhan-gaoji1-l11-q19",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "“他这样做不是为了自己，（ ）为了大家。”应填：",
+  "options": [
+   "可是",
+   "而是",
+   "虽然",
+   "而不是"
+  ],
+  "correct_answer": "而是",
+  "explanation": "不是……而是……",
+  "order_index": 20,
+  "id": "fazhan-gaoji1-l11-q20",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "“有问题请尽早告诉我，我（ ）及时解决。”中“好”的位置在：",
+  "options": [
+   "句子的最前面",
+   "动词的后面",
+   "句尾",
+   "主语“我”的后面"
+  ],
+  "correct_answer": "主语“我”的后面",
+  "explanation": "Хойно хэсэгт өгүүлэгдэхүүн байвал 好 нь өгүүлэгдэхүүний ХОЙНО орно.",
+  "order_index": 21,
+  "id": "fazhan-gaoji1-l11-q21",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "下面哪个是“委婉”的说法？",
+  "options": [
+   "我不去，别说了。",
+   "我今天可能没有时间，下次吧。",
+   "我才不想去呢！",
+   "你烦不烦？"
+  ],
+  "correct_answer": "我今天可能没有时间，下次吧。",
+  "explanation": "委婉 = зөөлөн татгалзах.",
+  "order_index": 22,
+  "id": "fazhan-gaoji1-l11-q22",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "“火上加油”最接近的意思是：",
+  "options": [
+   "让矛盾更严重",
+   "帮助解决问题",
+   "让火更旺",
+   "给汽车加油"
+  ],
+  "correct_answer": "让矛盾更严重",
+  "explanation": "火上加油 — зөрчлийг улам хурцатгах.",
+  "order_index": 23,
+  "id": "fazhan-gaoji1-l11-q23",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "第一个巫师为什么被国王杀了？",
+  "options": [
+   "因为他解释得太慢",
+   "因为他没来",
+   "因为他说国王的家人会在国王之前相继死去",
+   "因为他要钱"
+  ],
+  "correct_answer": "因为他说国王的家人会在国王之前相继死去",
+  "explanation": "课文 2: 直接说家人相继死去。",
+  "order_index": 24,
+  "id": "fazhan-gaoji1-l11-q24",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "第二个巫师为什么得到了奖励？",
+  "options": [
+   "因为他害怕国王",
+   "因为他说了梦的意思相反",
+   "因为他是国王的朋友",
+   "因为他说国王是家族成员中最长寿的"
+  ],
+  "correct_answer": "因为他说国王是家族成员中最长寿的",
+  "explanation": "课文 2: 同一意思，换了角度说。",
+  "order_index": 25,
+  "id": "fazhan-gaoji1-l11-q25",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "课文认为“把人说笑”的交谈方式是：",
+  "options": [
+   "没用的方式",
+   "不太礼貌的方式",
+   "智慧的、能收到预期效果的方式",
+   "危险的方式"
+  ],
+  "correct_answer": "智慧的、能收到预期效果的方式",
+  "explanation": "课文 1.",
+  "order_index": 26,
+  "id": "fazhan-gaoji1-l11-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "戴花帽子的姑娘用什么方式战胜了几个轻浮青年？",
+  "options": [
+   "叫警察",
+   "委婉的语言，激发对方的自尊心",
+   "跑开",
+   "大声骂他们"
+  ],
+  "correct_answer": "委婉的语言，激发对方的自尊心",
+  "explanation": "课文 5.",
+  "order_index": 27,
+  "id": "fazhan-gaoji1-l11-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "老人用恳求的方式，唤起了女老板的什么？",
+  "options": [
+   "同情心和信誉感",
+   "害怕",
+   "愤怒",
+   "嫉妒"
+  ],
+  "correct_answer": "同情心和信誉感",
+  "explanation": "课文 6.",
+  "order_index": 28,
+  "id": "fazhan-gaoji1-l11-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "课文说“义正词严式”适用于哪种人？",
+  "options": [
+   "所有的人",
+   "丧失了人性、不讲道理的人",
+   "小孩子",
+   "老人"
+  ],
+  "correct_answer": "丧失了人性、不讲道理的人",
+  "explanation": "课文 7.",
+  "order_index": 29,
+  "id": "fazhan-gaoji1-l11-q29",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "课文最后认为交谈的智慧不但体现在语言表达上，还体现在：",
+  "options": [
+   "声音的大小上",
+   "思想方法的修养上",
+   "说话的场合上",
+   "说话的速度上"
+  ],
+  "correct_answer": "思想方法的修养上",
+  "explanation": "课文 8.",
+  "order_index": 30,
+  "id": "fazhan-gaoji1-l11-q30",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "排列：a.这女孩儿生下来就有点儿缺陷，做过手术 b.反之，他觉得自己的女儿是天下最可爱的孩子 c.但孩子的父亲并不这样认为 d.许多人都认为这女孩儿长得不好看",
+  "options": [
+   "a b c d",
+   "c b a d",
+   "a d c b",
+   "d a b c"
+  ],
+  "correct_answer": "a d c b",
+  "explanation": "综合练习 六 1.",
+  "order_index": 31,
+  "id": "fazhan-gaoji1-l11-q31",
+  "skillTags": [
+   "order"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "排列：a.好分享生日蛋糕的美味 b.大家盼着那一天快点儿到来 c.小东的生日就在这个周末 d.这可是入学后第一个同学的生日啊",
+  "options": [
+   "d c a b",
+   "b a c d",
+   "a b c d",
+   "c d b a"
+  ],
+  "correct_answer": "c d b a",
+  "explanation": "综合练习 六 3.",
+  "order_index": 32,
+  "id": "fazhan-gaoji1-l11-q32",
+  "skillTags": [
+   "order"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "排列：a.或者听点儿轻音乐 b.工作压力太大的时候 c.以便使紧张的神经放松一些 d.我们大家就一起说说笑话",
+  "options": [
+   "a b c d",
+   "b a d c",
+   "d b a c",
+   "b d a c"
+  ],
+  "correct_answer": "b d a c",
+  "explanation": "综合练习 六 5.",
+  "order_index": 33,
+  "id": "fazhan-gaoji1-l11-q33",
+  "skillTags": [
+   "order"
+  ],
+  "difficulty": "medium"
+ }
+]

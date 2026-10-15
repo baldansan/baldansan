@@ -109,7 +109,7 @@
    },
    {
     "chinese": "北京的秋天不冷不热，很舒服。",
-    "pinyin": "Běijīng de qiūtiān bù lěng bù rè, hěn shūfú.",
+    "pinyin": "Běijīng de qiūtiān bù lěng bú rè, hěn shūfú.",
     "mongolian": "Бээжингийн намар хүйтэн ч биш, халуун ч биш, их тухтай."
    },
    {
@@ -203,12 +203,12 @@
    },
    {
     "chinese": "门口停着一辆出租车。",
-    "pinyin": "Mén kǒu tíng zhe yī liàng chūzūchē.",
+    "pinyin": "Mén kǒu tíng zhe yí liàng chūzūchē.",
     "mongolian": "Үүдэнд нэг такси зогсож байна."
    },
    {
     "chinese": "墙上挂着一幅地图。",
-    "pinyin": "Qiáng shàng guà zhe yī fú dìtú.",
+    "pinyin": "Qiáng shàng guà zhe yì fú dìtú.",
     "mongolian": "Ханан дээр нэг газрын зураг өлгөөтэй байна."
    },
    {
@@ -292,7 +292,7 @@
   "examples": [
    {
     "chinese": "A：我们什么时候出发？ B：明天上午9点。对了，你问问马丁去不去。",
-    "pinyin": "A : wǒmen shénme shíhòu chū fā? B : míngtiān shàng wǔ 9 diǎn. duìle, nǐ wèn wèn mǎ dīng qù bù qù.",
+    "pinyin": "A : wǒmen shénme shíhòu chū fā? B : míngtiān shàng wǔ 9 diǎn. duìle, nǐ wèn wèn mǎ dīng qù bú qù.",
     "mongolian": "А: Бид хэзээ гарах вэ? Б: Маргааш өглөөний 9 цагт. Аан тийм, Мартинаас явах эсэхийг нь асуугаарай."
    },
    {

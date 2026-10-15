@@ -1,0 +1,553 @@
+[
+ {
+  "type": "cloze",
+  "question": "咫尺之隔，竟成____之遥。",
+  "options": [
+   "海天",
+   "山川",
+   "陆地",
+   "江河"
+  ],
+  "correct_answer": "海天",
+  "explanation": "咫尺之隔，竟成海天之遥 — ойрхон зай байсан хэрнээ тэнгэр, далайн зай мэт хол болов.",
+  "order_index": 1,
+  "id": "fazhan-gaoji2-l15-q01",
+  "skillTags": [
+   "vocab"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "“咫尺”的意思最接近：",
+  "options": [
+   "不确定的距离",
+   "很远的距离",
+   "很近的距离"
+  ],
+  "correct_answer": "很近的距离",
+  "explanation": "«咫尺»比喻很近的距离，与“天涯”相对。",
+  "order_index": 2,
+  "id": "fazhan-gaoji2-l15-q02",
+  "skillTags": [
+   "vocab"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我们两家是____，两家联姻是门当户对。",
+  "options": [
+   "困扰",
+   "倡议",
+   "振兴",
+   "世交"
+  ],
+  "correct_answer": "世交",
+  "explanation": "«世交»指上一代就有交情的人或人家。",
+  "order_index": 3,
+  "id": "fazhan-gaoji2-l15-q03",
+  "skillTags": [
+   "vocab"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "“妥协”最恰当的意思是：",
+  "options": [
+   "图谋",
+   "监督",
+   "拒绝",
+   "让步"
+  ],
+  "correct_answer": "让步",
+  "explanation": "«妥协»即让步，常用于谈判、冲突语境。",
+  "order_index": 4,
+  "id": "fazhan-gaoji2-l15-q04",
+  "skillTags": [
+   "vocab"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "台湾同胞可____，两岸人民可解骨肉分离之痛。",
+  "options": [
+   "未雨绸缪",
+   "变幻莫测",
+   "安居乐业",
+   "前仆后继"
+  ],
+  "correct_answer": "安居乐业",
+  "explanation": "«安居乐业»指安定地生活，愉快地工作。",
+  "order_index": 5,
+  "id": "fazhan-gaoji2-l15-q05",
+  "skillTags": [
+   "vocab"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "“局势”常用来形容什么？",
+  "options": [
+   "个人的心情",
+   "天气变化",
+   "政治、军事等方面的发展状况"
+  ],
+  "correct_answer": "政治、军事等方面的发展状况",
+  "explanation": "«局势»多指一个时期内政治、军事等方面的发展状况。",
+  "order_index": 6,
+  "id": "fazhan-gaoji2-l15-q06",
+  "skillTags": [
+   "vocab"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "如迁延不决，吾弟将难____其咎。",
+  "options": [
+   "免",
+   "辞",
+   "舍",
+   "推"
+  ],
+  "correct_answer": "辞",
+  "explanation": "«难辞其咎»即很难推托掉责任。",
+  "order_index": 7,
+  "id": "fazhan-gaoji2-l15-q07",
+  "skillTags": [
+   "vocab"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "choice",
+  "question": "“困扰”的意思是：",
+  "options": [
+   "围困并骚扰",
+   "监督",
+   "帮助"
+  ],
+  "correct_answer": "围困并骚扰",
+  "explanation": "«困扰»指围困并骚扰，使人感到烦恼。",
+  "order_index": 8,
+  "id": "fazhan-gaoji2-l15-q08",
+  "skillTags": [
+   "vocab"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "“艰辛”形容什么？",
+  "options": [
+   "轻松愉快",
+   "富裕美满",
+   "艰难辛苦"
+  ],
+  "correct_answer": "艰难辛苦",
+  "explanation": "«艰辛»即艰难辛苦。",
+  "order_index": 9,
+  "id": "fazhan-gaoji2-l15-q09",
+  "skillTags": [
+   "vocab"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "无数先烈____，终于推翻帝制。",
+  "options": [
+   "知难而退",
+   "前仆后继",
+   "隔岸观火",
+   "袖手旁观"
+  ],
+  "correct_answer": "前仆后继",
+  "explanation": "«前仆后继»指前面的人倒下去，后面的人紧紧跟上。",
+  "order_index": 10,
+  "id": "fazhan-gaoji2-l15-q10",
+  "skillTags": [
+   "vocab"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "“展望未来”中的“展望”意思最接近：",
+  "options": [
+   "放弃未来",
+   "向远处和大处看，预测未来",
+   "回顾过去"
+  ],
+  "correct_answer": "向远处和大处看，预测未来",
+  "explanation": "«展望»与“回顾”相对，指对未来的估计。",
+  "order_index": 11,
+  "id": "fazhan-gaoji2-l15-q11",
+  "skillTags": [
+   "vocab"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "“振兴中华”中的“振兴”意思是：",
+  "options": [
+   "使停止",
+   "使奋发兴盛",
+   "使衰落"
+  ],
+  "correct_answer": "使奋发兴盛",
+  "explanation": "«振兴»即使奋发兴盛。",
+  "order_index": 12,
+  "id": "fazhan-gaoji2-l15-q12",
+  "skillTags": [
+   "vocab"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "当今国际风云____，台湾上下众议纷纭。",
+  "options": [
+   "安居乐业",
+   "振兴中华",
+   "变幻莫测",
+   "心中有数"
+  ],
+  "correct_answer": "变幻莫测",
+  "explanation": "«变幻莫测»指变换突然，无法预测。",
+  "order_index": 13,
+  "id": "fazhan-gaoji2-l15-q13",
+  "skillTags": [
+   "vocab"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "“深为悬念”中“为”的读音是：",
+  "options": [
+   "wéi",
+   "wèi",
+   "wěi"
+  ],
+  "correct_answer": "wéi",
+  "explanation": "作副词词头，与后面双音节词构成音步时，“为”读wéi。",
+  "order_index": 14,
+  "id": "fazhan-gaoji2-l15-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "“必为举国尊敬，世人推崇”中“为”的意思最接近：",
+  "options": [
+   "作为",
+   "被",
+   "因为"
+  ],
+  "correct_answer": "被",
+  "explanation": "此处“为”(wéi)表被动，相当于“被”。",
+  "order_index": 15,
+  "id": "fazhan-gaoji2-l15-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "choice",
+  "question": "“试为贵党计”中“为”的意思是：",
+  "options": [
+   "替",
+   "被",
+   "成为"
+  ],
+  "correct_answer": "替",
+  "explanation": "此处“为”读wèi，相当于介词“替”。",
+  "order_index": 16,
+  "id": "fazhan-gaoji2-l15-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "judge",
+  "question": "“善为抉择”中“为”读wéi。",
+  "options": [
+   "Буруу",
+   "Зөв"
+  ],
+  "correct_answer": "Зөв",
+  "explanation": "作副词词头修饰“抉择”，“为”读wéi。",
+  "order_index": 17,
+  "id": "fazhan-gaoji2-l15-q17",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "“再者”的作用是：",
+  "options": [
+   "补充说明另一个理由",
+   "表示转折",
+   "表示结果"
+  ],
+  "correct_answer": "补充说明另一个理由",
+  "explanation": "«再者»常用于在已说明的理由基础上再追加一个理由。",
+  "order_index": 18,
+  "id": "fazhan-gaoji2-l15-q18",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "order",
+  "question": "请把下列句子排成正确顺序（用上“再者”）：a.我实在无法忍受这里饭菜的奇特口味 b.刚来时的新奇和激动只持续了几天我就有些不适应了 c.我开始想家了 d.白天家里人都去上班，留下我一个人在家，四周静得出奇，我真是闷得发慌",
+  "options": [
+   "a→b→c→d",
+   "b→d→再者a→c",
+   "c→再者a→b→d",
+   "d→c→b→再者a"
+  ],
+  "correct_answer": "b→d→再者a→c",
+  "explanation": "参考答案顺序为：b（新奇消失）→d（独自在家闷得慌）→再者a（无法忍受饭菜）→c（开始想家）。",
+  "order_index": 19,
+  "id": "fazhan-gaoji2-l15-q19",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "choice",
+  "question": "“何必”常用于：",
+  "options": [
+   "反问句，表示没有必要",
+   "感叹句表示程度浅",
+   "陈述句"
+  ],
+  "correct_answer": "反问句，表示没有必要",
+  "explanation": "«何必»用于反问句，表示“没有必要”。",
+  "order_index": 20,
+  "id": "fazhan-gaoji2-l15-q20",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "“这些孩子，何等可爱！”中“何等”表示：",
+  "options": [
+   "强烈的感叹语气",
+   "否定",
+   "疑问"
+  ],
+  "correct_answer": "强烈的感叹语气",
+  "explanation": "«何等»用于感叹句，加强感叹语气。",
+  "order_index": 21,
+  "id": "fazhan-gaoji2-l15-q21",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "judge",
+  "question": "“寥廓海天，不归何待？”中“何待”等于现代汉语的“待何”。",
+  "options": [
+   "Буруу",
+   "Зөв"
+  ],
+  "correct_answer": "Зөв",
+  "explanation": "古代汉语否定句、疑问句中代词宾语常前置，“何待”即“待何”（等什么）。",
+  "order_index": 22,
+  "id": "fazhan-gaoji2-l15-q22",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "choice",
+  "question": "“咱们是老朋友了，何必客气？”中“何必”意思是：",
+  "options": [
+   "曾经",
+   "没有必要",
+   "一定要"
+  ],
+  "correct_answer": "没有必要",
+  "explanation": "«何必»=没有必要。",
+  "order_index": 23,
+  "id": "fazhan-gaoji2-l15-q23",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "judge",
+  "question": "“再者”只能用在书面语中，口语中绝对不能使用。",
+  "options": [
+   "Буруу",
+   "Зөв"
+  ],
+  "correct_answer": "Буруу",
+  "explanation": "口语中也可说“再者说”“再者说了”，并非只能用于书面语。",
+  "order_index": 24,
+  "id": "fazhan-gaoji2-l15-q24",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "这封信的作者是谁？",
+  "options": [
+   "毛泽东",
+   "蒋经国",
+   "孙中山",
+   "廖承志"
+  ],
+  "correct_answer": "廖承志",
+  "explanation": "此信是廖承志写给蒋经国的。",
+  "order_index": 25,
+  "id": "fazhan-gaoji2-l15-q25",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "信中提到，廖承志和蒋经国曾经在哪里是同学？",
+  "options": [
+   "莫斯科中山大学",
+   "北京大学",
+   "台湾大学",
+   "延安抗大"
+  ],
+  "correct_answer": "莫斯科中山大学",
+  "explanation": "注1：二人既是儿时的好友，又是莫斯科中山大学的同学。",
+  "order_index": 26,
+  "id": "fazhan-gaoji2-l15-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "廖承志希望蒋经国把对父亲的孝心怎么办？",
+  "options": [
+   "写成文章发表",
+   "扩大为民族感情，奉献于国家",
+   "只放在心里"
+  ],
+  "correct_answer": "扩大为民族感情，奉献于国家",
+  "explanation": "第5段：要把孝顺的心，扩大为民族感情，去敬爱民族，奉献于国家。",
+  "order_index": 27,
+  "id": "fazhan-gaoji2-l15-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "信的最后，廖承志请代为问安的人是谁？",
+  "options": [
+   "孙中山",
+   "毛泽东",
+   "老夫人（宋美龄）"
+  ],
+  "correct_answer": "老夫人（宋美龄）",
+  "explanation": "注25：老夫人指蒋夫人宋美龄。",
+  "order_index": 28,
+  "id": "fazhan-gaoji2-l15-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "廖承志认为“罪人”之说如何？",
+  "options": [
+   "完全正确",
+   "无法判断",
+   "实相悖谬（不合常理）"
+  ],
+  "correct_answer": "实相悖谬（不合常理）",
+  "explanation": "第3段：所谓“罪人”之说，实相悖谬。",
+  "order_index": 29,
+  "id": "fazhan-gaoji2-l15-q29",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "哪一句的“再者”用法正确？",
+  "options": [
+   "再者，你吃饭了吗？",
+   "这个房子采光好，再者交通方便，所以我们决定买下它。",
+   "今天很热，再者。"
+  ],
+  "correct_answer": "这个房子采光好，再者交通方便，所以我们决定买下它。",
+  "explanation": "«再者»须紧接前一个理由之后，补充第二个理由。",
+  "order_index": 30,
+  "id": "fazhan-gaoji2-l15-q30",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "哪一句的“何必”用法正确？",
+  "options": [
+   "你跟我这么熟，何必这么客气？",
+   "何必你来晚了？",
+   "他考上大学了，何必这么高兴？"
+  ],
+  "correct_answer": "你跟我这么熟，何必这么客气？",
+  "explanation": "«何必»用于反问没有必要的事；不能用于表达正面高兴的情绪或单独使用。",
+  "order_index": 31,
+  "id": "fazhan-gaoji2-l15-q31",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "哪一句的“困扰”用法正确？",
+  "options": [
+   "请不要困扰这张桌子。",
+   "这个问题一直困扰着我，让我睡不好觉。",
+   "他昨天很困扰地笑了。"
+  ],
+  "correct_answer": "这个问题一直困扰着我，让我睡不好觉。",
+  "explanation": "«困扰»指围困并骚扰、使人烦恼，不能用来形容“笑”或“桌子”。",
+  "order_index": 32,
+  "id": "fazhan-gaoji2-l15-q32",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "easy"
+ }
+]

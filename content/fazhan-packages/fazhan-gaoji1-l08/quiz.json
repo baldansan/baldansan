@@ -1,0 +1,596 @@
+[
+ {
+  "type": "cloze",
+  "question": "在许多沉闷无聊的时段，我们创造了许多方法来（ ）时间。",
+  "options": [
+   "切换",
+   "辐射",
+   "消磨",
+   "嵌入"
+  ],
+  "correct_answer": "消磨",
+  "explanation": "消磨时间 = цаг өнгөрүүлэх. 切换 — шилжих, 嵌入 — суулгах, 辐射 — цацрах.",
+  "order_index": 1,
+  "id": "fazhan-gaoji1-l08-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "现在技术很发达，新科技产品（ ）。",
+  "options": [
+   "层出不穷",
+   "十全十美",
+   "心甘情愿",
+   "全神贯注"
+  ],
+  "correct_answer": "层出不穷",
+  "explanation": "层出不穷 = тасралтгүй гарах. 十全十美 — төгс.",
+  "order_index": 2,
+  "id": "fazhan-gaoji1-l08-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "开会时，我们（ ）地接电话。",
+  "options": [
+   "全神贯注",
+   "忙里偷闲",
+   "随时随地",
+   "心甘情愿"
+  ],
+  "correct_answer": "忙里偷闲",
+  "explanation": "忙里偷闲 = завгүй дундаа чөлөө олох.",
+  "order_index": 3,
+  "id": "fazhan-gaoji1-l08-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "他们可以闲聊一整个下午，再用一整个晚上（ ）棋艺。",
+  "options": [
+   "嵌入",
+   "切磋",
+   "印证",
+   "携带"
+  ],
+  "correct_answer": "切磋",
+  "explanation": "切磋棋艺 = шатрын ур чадвар солилцох.",
+  "order_index": 4,
+  "id": "fazhan-gaoji1-l08-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "这种情况会不断（ ），说这样的过程只会被强化而不可逆转。",
+  "options": [
+   "魔力",
+   "提示",
+   "消磨",
+   "加剧"
+  ],
+  "correct_answer": "加剧",
+  "explanation": "加剧 = даамжрах.",
+  "order_index": 5,
+  "id": "fazhan-gaoji1-l08-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "未来学家的预言现在显然已得到了（ ）。",
+  "options": [
+   "婉转",
+   "印证",
+   "携带",
+   "粉碎"
+  ],
+  "correct_answer": "印证",
+  "explanation": "得到印证 = батлагдах.",
+  "order_index": 6,
+  "id": "fazhan-gaoji1-l08-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "上帝说要有可以随身（ ）的电脑，于是就有了掌上电脑。",
+  "options": [
+   "认知",
+   "携带",
+   "印证",
+   "辐射"
+  ],
+  "correct_answer": "携带",
+  "explanation": "随身携带 = биедээ авч явах.",
+  "order_index": 7,
+  "id": "fazhan-gaoji1-l08-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "网络服务的提供者可以在几秒之内处理（ ）的信息。",
+  "options": [
+   "忙里偷闲",
+   "数以亿计",
+   "十全十美",
+   "层出不穷"
+  ],
+  "correct_answer": "数以亿计",
+  "explanation": "数以亿计 = олон зуун сая.",
+  "order_index": 8,
+  "id": "fazhan-gaoji1-l08-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "商家会（ ）地提醒你要看一眼。",
+  "options": [
+   "梦游",
+   "焦虑",
+   "婉转",
+   "粉碎"
+  ],
+  "correct_answer": "婉转",
+  "explanation": "婉转地提醒 = эвтэйхэн сануулах.",
+  "order_index": 9,
+  "id": "fazhan-gaoji1-l08-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "当电话或者信息频繁需要我们回应时，我们会变得（ ）不安。",
+  "options": [
+   "焦虑",
+   "畅销",
+   "婉转",
+   "悠然"
+  ],
+  "correct_answer": "焦虑",
+  "explanation": "焦虑不安 = түгшүүртэй.",
+  "order_index": 10,
+  "id": "fazhan-gaoji1-l08-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我们（ ）地让它把我们大块的时间打破。",
+  "options": [
+   "心甘情愿",
+   "层出不穷",
+   "随时随地",
+   "十全十美"
+  ],
+  "correct_answer": "心甘情愿",
+  "explanation": "心甘情愿 = дуртайяа.",
+  "order_index": 11,
+  "id": "fazhan-gaoji1-l08-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "小孩子在玩儿的时候（ ）。",
+  "options": [
+   "层出不穷",
+   "随时随地",
+   "忙里偷闲",
+   "全神贯注"
+  ],
+  "correct_answer": "全神贯注",
+  "explanation": "全神贯注 = бүх анхаарлаа төвлөрүүлэх.",
+  "order_index": 12,
+  "id": "fazhan-gaoji1-l08-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我们还会（ ）自得，自由自在。",
+  "options": [
+   "悠然",
+   "困惑",
+   "粉碎",
+   "焦虑"
+  ],
+  "correct_answer": "悠然",
+  "explanation": "悠然自得 = тайван таатай.",
+  "order_index": 13,
+  "id": "fazhan-gaoji1-l08-q13",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "哪句话表示“你去不去我都去”的意思？",
+  "options": [
+   "因为你不去，所以我去。",
+   "即使你不去，我也去。",
+   "如果你不去，我就去。",
+   "虽然你去，但是我不去。"
+  ],
+  "correct_answer": "即使你不去，我也去。",
+  "explanation": "即使……也…… — нөхцөл өөрчлөгдөхгүй.",
+  "order_index": 14,
+  "id": "fazhan-gaoji1-l08-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "“就算在没什么可玩儿的时候，自己也能自由自在地想象”中，“就算”最接近哪个词？",
+  "options": [
+   "虽然",
+   "即使",
+   "因为",
+   "如果……就"
+  ],
+  "correct_answer": "即使",
+  "explanation": "就算 = 即使 (яриа).",
+  "order_index": 15,
+  "id": "fazhan-gaoji1-l08-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "下面哪个句子中“即使”用得最合适？",
+  "options": [
+   "即使下大雨，但是我们到达。",
+   "即使下大雨，我们也要按时到达。",
+   "即使下大雨，我们就要按时到达。",
+   "即使下大雨，所以我们到达。"
+  ],
+  "correct_answer": "即使下大雨，我们也要按时到达。",
+  "explanation": "即使……也…… хос.",
+  "order_index": 16,
+  "id": "fazhan-gaoji1-l08-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "“冬天虽然很冷，但春天终究会到来的”中“终究”的意思是？",
+  "options": [
+   "突然",
+   "最终一定会",
+   "已经",
+   "可能不会"
+  ],
+  "correct_answer": "最终一定会",
+  "explanation": "终究 + 会 = эцэст нь заавал.",
+  "order_index": 17,
+  "id": "fazhan-gaoji1-l08-q17",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "哪句话中“终究”用错了？",
+  "options": [
+   "春天终究会到来。",
+   "你终究想吃什么？",
+   "他终究是个孩子。",
+   "这些规定终究会被淘汰。"
+  ],
+  "correct_answer": "你终究想吃什么？",
+  "explanation": "终究 асуултад хэрэглэгдэхгүй (到底/究竟).",
+  "order_index": 18,
+  "id": "fazhan-gaoji1-l08-q18",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "“数以万计的游客”的意思是？",
+  "options": [
+   "数不清的游客",
+   "一万个游客",
+   "几万个游客",
+   "很少游客"
+  ],
+  "correct_answer": "数不清的游客",
+  "explanation": "数以万计 = арван мянгаар тоологдохоор их.",
+  "order_index": 19,
+  "id": "fazhan-gaoji1-l08-q19",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "哪个句子正确？",
+  "options": [
+   "这条高速路长达三千多公里。",
+   "这条高速路很达三千多公里。",
+   "这条高速路达长三千多公里。",
+   "这条高速路长三千多公里达。"
+  ],
+  "correct_answer": "这条高速路长达三千多公里。",
+  "explanation": "形容词 + 达 + 数量.",
+  "order_index": 20,
+  "id": "fazhan-gaoji1-l08-q20",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "“你们俩好好儿商量吧，何苦吵架呢？”表示什么意思？",
+  "options": [
+   "没有吵架",
+   "一定要吵架",
+   "不值得吵架",
+   "应该吵架"
+  ],
+  "correct_answer": "不值得吵架",
+  "explanation": "何苦……呢 = яах гэж…",
+  "order_index": 21,
+  "id": "fazhan-gaoji1-l08-q21",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "“即便”与“就算”的区别是？",
+  "options": [
+   "即便偏口语，就算偏书面语",
+   "意思完全不同",
+   "即便偏书面语，就算偏口语",
+   "都不能用"
+  ],
+  "correct_answer": "即便偏书面语，就算偏口语",
+  "explanation": "即使 хоёуланд, 即便 — бичгийн, 就算 — яриа.",
+  "order_index": 22,
+  "id": "fazhan-gaoji1-l08-q22",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "“这几天的气温高达35度”强调什么？",
+  "options": [
+   "温度没变化",
+   "温度不知道",
+   "温度很高",
+   "温度很低"
+  ],
+  "correct_answer": "温度很高",
+  "explanation": "高达 = маш өндөр хүрэх.",
+  "order_index": 23,
+  "id": "fazhan-gaoji1-l08-q23",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "作者认为现代人拥有的时间是怎样的？",
+  "options": [
+   "很长的时间",
+   "完整的时间",
+   "充满碎片的时间",
+   "没有价值的时间"
+  ],
+  "correct_answer": "充满碎片的时间",
+  "explanation": "1-р догол мөр: 现代人拥有的，就是个充满碎片的时间。",
+  "order_index": 24,
+  "id": "fazhan-gaoji1-l08-q24",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "作者认为“帮凶”和“主犯”分别指什么？",
+  "options": [
+   "时钟；手机",
+   "时钟；现代化的交通和通信方式",
+   "手机；电脑",
+   "古人；今人"
+  ],
+  "correct_answer": "时钟；现代化的交通和通信方式",
+  "explanation": "4-р догол мөр: 时钟真是个“帮凶”……“主犯”则是我们现代化的交通和通信方式。",
+  "order_index": 25,
+  "id": "fazhan-gaoji1-l08-q25",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "上一代人的时间是怎样计算的？",
+  "options": [
+   "按照分钟",
+   "按照小时",
+   "按照上午、下午",
+   "按照秒"
+  ],
+  "correct_answer": "按照上午、下午",
+  "explanation": "3-р догол мөр: 按照上午、下午计算，而不是小时。",
+  "order_index": 26,
+  "id": "fazhan-gaoji1-l08-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "“云计算”技术的结果是什么？",
+  "options": [
+   "我们的时间被打得更碎",
+   "我们有更多的空闲时间",
+   "我们不需要手机",
+   "我们不用上班"
+  ],
+  "correct_answer": "我们的时间被打得更碎",
+  "explanation": "8-р догол мөр: 将我们的时间打得更碎。",
+  "order_index": 27,
+  "id": "fazhan-gaoji1-l08-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "大脑被电话或网络打断后，会怎样？",
+  "options": [
+   "变得更聪明",
+   "马上回到工作状态",
+   "需要一定时间才能回到工作状态",
+   "永远回不去"
+  ],
+  "correct_answer": "需要一定时间才能回到工作状态",
+  "explanation": "12-р догол мөр: 它需要一定的时间才能进入工作状态。",
+  "order_index": 28,
+  "id": "fazhan-gaoji1-l08-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "作者认为我们现在缺乏什么能力？",
+  "options": [
+   "向外探索的能力",
+   "玩手机的能力",
+   "工作的能力",
+   "向内自省的能力"
+  ],
+  "correct_answer": "向内自省的能力",
+  "explanation": "15-р догол мөр: 我们缺乏的是向内自省的能力。",
+  "order_index": 29,
+  "id": "fazhan-gaoji1-l08-q29",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "作者最后建议我们怎么做？",
+  "options": [
+   "有意识地锻炼自己，不被手机控制",
+   "扔掉所有手机",
+   "只用电脑",
+   "不去上班"
+  ],
+  "correct_answer": "有意识地锻炼自己，不被手机控制",
+  "explanation": "16-р догол мөр: 我们能不能现在开始有意识地锻炼一下自己……",
+  "order_index": 30,
+  "id": "fazhan-gaoji1-l08-q30",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "order",
+  "question": "Зөв дарааллыг сонго: «Гар утсаа унтлагын өрөөнд оруулах уу, үгүй юу гэж маргаж байна»",
+  "options": [
+   "争论很多人在要不要把手机带入卧室",
+   "把手机带入卧室很多人要不要在争论",
+   "很多人要不要把手机带入卧室在争论",
+   "很多人在争论要不要把手机带入卧室"
+  ],
+  "correct_answer": "很多人在争论要不要把手机带入卧室",
+  "explanation": "Subject + 在争论 + асуулт.",
+  "order_index": 31,
+  "id": "fazhan-gaoji1-l08-q31",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Зөв дарааллыг сонго: «Ингэсэн ч гэсэн зарим хүн гар утас интернетэд холбогдох ёстой гэж боддог»",
+  "options": [
+   "手机即便这样有的人认为还应该能上网",
+   "有的人即便这样认为手机还应该上网能",
+   "即便有的人这样认为还手机应该能上网",
+   "即便这样，有的人认为手机还应该能上网"
+  ],
+  "correct_answer": "即便这样，有的人认为手机还应该能上网",
+  "explanation": "即便这样 — өгүүлбэрийн эхэнд.",
+  "order_index": 32,
+  "id": "fazhan-gaoji1-l08-q32",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "order",
+  "question": "Зөв дарааллыг сонго: «Сүүлийн 5 жилд гар утасны романы ашиг 100 сая доллар хүртэл өссөн»",
+  "options": [
+   "高达1亿美元过去5年手机小说赢利",
+   "手机小说过去5年赢利1亿美元高达",
+   "过去5年，手机小说的赢利高达1亿美元",
+   "1亿美元手机小说高达过去5年赢利"
+  ],
+  "correct_answer": "过去5年，手机小说的赢利高达1亿美元",
+  "explanation": "高达 + тоо хэмжээ.",
+  "order_index": 33,
+  "id": "fazhan-gaoji1-l08-q33",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ }
+]

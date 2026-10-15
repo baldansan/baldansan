@@ -1,0 +1,578 @@
+[
+ {
+  "type": "cloze",
+  "question": "我背起简单的行李，踏上了去深圳的（ ）之路。",
+  "options": [
+   "打工",
+   "淘汰",
+   "反馈",
+   "诱惑"
+  ],
+  "correct_answer": "打工",
+  "explanation": "打工 = хөлсөөр ажиллах.",
+  "order_index": 1,
+  "id": "fazhan-gaoji1-l04-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "毕业（ ），为了尽快适应社会，我想提前走进社会的大门。",
+  "options": [
+   "告终",
+   "冷场",
+   "踌躇",
+   "在即"
+  ],
+  "correct_answer": "在即",
+  "explanation": "在即 = удахгүй болох.",
+  "order_index": 2,
+  "id": "fazhan-gaoji1-l04-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我高兴得（ ），再看应聘的地点，是深圳市人才交流大市场。",
+  "options": [
+   "马不停蹄",
+   "与众不同",
+   "漫无目的",
+   "眉飞色舞"
+  ],
+  "correct_answer": "眉飞色舞",
+  "explanation": "眉飞色舞 = баярласандаа дэгдэх.",
+  "order_index": 3,
+  "id": "fazhan-gaoji1-l04-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "站在这座楼下，我（ ）起来，不知道这座庙有多大。",
+  "options": [
+   "诱惑",
+   "浏览",
+   "抵达",
+   "踌躇"
+  ],
+  "correct_answer": "踌躇",
+  "explanation": "踌躇 = эргэлзэх.",
+  "order_index": 4,
+  "id": "fazhan-gaoji1-l04-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "对方工作人员（ ）了一下，马上就与我约定了面试的时间。",
+  "options": [
+   "核算",
+   "叮嘱",
+   "浏览",
+   "安置"
+  ],
+  "correct_answer": "浏览",
+  "explanation": "浏览 = хурдан үзэх.",
+  "order_index": 5,
+  "id": "fazhan-gaoji1-l04-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我整理了领带，（ ）地把简历递了过去。",
+  "options": [
+   "果断",
+   "腼腆",
+   "胆怯",
+   "松弛"
+  ],
+  "correct_answer": "果断",
+  "explanation": "果断 = шийдэмгий.",
+  "order_index": 6,
+  "id": "fazhan-gaoji1-l04-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "没想到深圳空气这么（ ），满眼都是绿色。",
+  "options": [
+   "私营",
+   "和谐",
+   "湿润",
+   "一体化"
+  ],
+  "correct_answer": "湿润",
+  "explanation": "湿润 = чийглэг.",
+  "order_index": 7,
+  "id": "fazhan-gaoji1-l04-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他们谈话时双方一直保持较好的合作态度，气氛很（ ）。",
+  "options": [
+   "踌躇",
+   "和谐",
+   "冷场",
+   "争执"
+  ],
+  "correct_answer": "和谐",
+  "explanation": "和谐 = зохицолтой.",
+  "order_index": 8,
+  "id": "fazhan-gaoji1-l04-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "双方谈到（ ），都会掏出计算器核算半天。",
+  "options": [
+   "程序",
+   "折扣",
+   "细节",
+   "现场"
+  ],
+  "correct_answer": "折扣",
+  "explanation": "折扣 = хөнгөлөлт.",
+  "order_index": 9,
+  "id": "fazhan-gaoji1-l04-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "论文做完了，但学习不但没有完成，反而又揭开了新的一页，真是学无（ ）啊！",
+  "options": [
+   "程序",
+   "止境",
+   "时分",
+   "意料"
+  ],
+  "correct_answer": "止境",
+  "explanation": "学无止境 = сурахад хязгаар үгүй.",
+  "order_index": 10,
+  "id": "fazhan-gaoji1-l04-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "直到这时候我才（ ）到了应聘的技巧。",
+  "options": [
+   "叠",
+   "悟",
+   "赴",
+   "叮"
+  ],
+  "correct_answer": "悟",
+  "explanation": "悟到 = ухаарах.",
+  "order_index": 11,
+  "id": "fazhan-gaoji1-l04-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "一个高个儿的年轻女子（ ）地向我递上她的简历。",
+  "options": [
+   "腼腆",
+   "果断",
+   "眉飞色舞",
+   "漫无目的"
+  ],
+  "correct_answer": "腼腆",
+  "explanation": "腼腆 = ичимтгий.",
+  "order_index": 12,
+  "id": "fazhan-gaoji1-l04-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我们从她身上看到了自己第一次来找工作时的影子，也是这样的（ ）。",
+  "options": [
+   "胆怯",
+   "松弛",
+   "湿润",
+   "和谐"
+  ],
+  "correct_answer": "胆怯",
+  "explanation": "胆怯 = зориггүй.",
+  "order_index": 13,
+  "id": "fazhan-gaoji1-l04-q13",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "下面哪一句是“反递”关系的复句？",
+  "options": [
+   "这场雨不但很大，而且很冷。",
+   "这场雨不但没停，反而更大了。",
+   "这场雨虽然很大，但是我们还是去了。",
+   "因为雨很大，所以我们没去。"
+  ],
+  "correct_answer": "这场雨不但没停，反而更大了。",
+  "explanation": "不但没……反而…… = эсрэг дэвшүүлэх.",
+  "order_index": 14,
+  "id": "fazhan-gaoji1-l04-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "“她吃了很多减肥的食品，可是不但没瘦，（ ）更胖了。”空格里应填：",
+  "options": [
+   "而且",
+   "所以",
+   "即使",
+   "反而"
+  ],
+  "correct_answer": "反而",
+  "explanation": "不但没……反而……",
+  "order_index": 15,
+  "id": "fazhan-gaoji1-l04-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "下面哪一句“反而”的用法是错的？",
+  "options": [
+   "父亲吃了药，病不但没好转，反而更严重了。",
+   "收入增加了，生活没有好起来，反而更糟了。",
+   "我送她礼物，她不但不高兴，反而很开心。",
+   "天气没凉快起来，反倒更热了。"
+  ],
+  "correct_answer": "我送她礼物，她不但不高兴，反而很开心。",
+  "explanation": "反而 нь хүлээлтийн ЭСРЭГ үр дүнг заана; 不高兴 → 很开心 нь 反而-ийн тохиолдол биш.",
+  "order_index": 16,
+  "id": "fazhan-gaoji1-l04-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "你的朋友想去泰山，你正好也想去，你应该说：",
+  "options": [
+   "真不巧！我不想去。",
+   "没关系。",
+   "太巧了！我正好也想去。",
+   "太可惜了！"
+  ],
+  "correct_answer": "太巧了！我正好也想去。",
+  "explanation": "太巧了 = таатай давхцал.",
+  "order_index": 17,
+  "id": "fazhan-gaoji1-l04-q17",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "“巧了，我正要去找你呢，你来了。”这句话里“巧了”表示：",
+  "options": [
+   "很可惜没碰上",
+   "两件事正好碰在一起",
+   "很难过",
+   "不同意"
+  ],
+  "correct_answer": "两件事正好碰在一起",
+  "explanation": "巧了 = давхцал.",
+  "order_index": 18,
+  "id": "fazhan-gaoji1-l04-q18",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "“天气很冷，外出时多穿点儿，（ ）感冒。”空格里应填：",
+  "options": [
+   "以免",
+   "于是",
+   "以便",
+   "即使"
+  ],
+  "correct_answer": "以免",
+  "explanation": "以免 + муу үр дагавар.",
+  "order_index": 19,
+  "id": "fazhan-gaoji1-l04-q19",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "下面哪一句“以免”的用法是正确的？",
+  "options": [
+   "把护照保管好，以免找到。",
+   "把护照保管好，以免很高兴。",
+   "以免丢失，把护照保管好。",
+   "把护照保管好，以免丢失。"
+  ],
+  "correct_answer": "把护照保管好，以免丢失。",
+  "explanation": "以免 нь хойд 分句-ийн эхэнд, ард нь муу үр дагавар.",
+  "order_index": 20,
+  "id": "fazhan-gaoji1-l04-q20",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "“我得加油，以免被社会淘汰。”这句话的意思是：",
+  "options": [
+   "我要努力，不想被社会淘汰",
+   "别人要被淘汰",
+   "我已经被淘汰了",
+   "我想被社会淘汰"
+  ],
+  "correct_answer": "我要努力，不想被社会淘汰",
+  "explanation": "以免 = зайлсхийх зорилго.",
+  "order_index": 21,
+  "id": "fazhan-gaoji1-l04-q21",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "“这篇文章写了三个小时，（ ）写完了。”空格里应填：",
+  "options": [
+   "总算",
+   "以免",
+   "反倒",
+   "固然"
+  ],
+  "correct_answer": "总算",
+  "explanation": "总算 = хичээсний эцэст биелэх.",
+  "order_index": 22,
+  "id": "fazhan-gaoji1-l04-q22",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "哪一句“总算”用得不合适？",
+  "options": [
+   "双方商谈了好几次，总算签订了协议。",
+   "我考了三年，总算没通过。",
+   "我找了半天，总算找到了那份文件。",
+   "他解释了半天，总算让她明白了。"
+  ],
+  "correct_answer": "我考了三年，总算没通过。",
+  "explanation": "总算 нь хүссэн, таатай үр дүнд.",
+  "order_index": 23,
+  "id": "fazhan-gaoji1-l04-q23",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "“漂亮的简历（ ）重要，但你与众不同的特点更为重要。”空格里应填：",
+  "options": [
+   "以免",
+   "总算",
+   "反而",
+   "固然"
+  ],
+  "correct_answer": "固然",
+  "explanation": "固然 + 但…… = хүлээн зөвшөөрч, эргэлт.",
+  "order_index": 24,
+  "id": "fazhan-gaoji1-l04-q24",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "哪一句“固然”的位置是正确的？",
+  "options": [
+   "网络固然给我们带来了方便，但也带来了问题。",
+   "网络给我们带来了固然方便，但也带来了问题。",
+   "固然网络给我们带来了方便，但也带来了问题。",
+   "网络给我们固然带来了方便，但也带来了问题。"
+  ],
+  "correct_answer": "网络固然给我们带来了方便，但也带来了问题。",
+  "explanation": "固然 нь 主语-ийн ард, 谓语-ийн өмнө.",
+  "order_index": 25,
+  "id": "fazhan-gaoji1-l04-q25",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "“赢了固然值得高兴，输了（ ）是一次锻炼。”空格里应填：",
+  "options": [
+   "就",
+   "却",
+   "才",
+   "也"
+  ],
+  "correct_answer": "也",
+  "explanation": "固然 A，也 B — хоёр баримтыг хүлээн зөвшөөрөх.",
+  "order_index": 26,
+  "id": "fazhan-gaoji1-l04-q26",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "课文里“我”为什么去深圳？",
+  "options": [
+   "想提前走进社会，去打工找工作",
+   "去读博士",
+   "去看朋友",
+   "去旅游"
+  ],
+  "correct_answer": "想提前走进社会，去打工找工作",
+  "explanation": "1-р догол мөр: нийгэмд хурдан дасахын тулд ажил хайхаар очсон.",
+  "order_index": 27,
+  "id": "fazhan-gaoji1-l04-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "“我”应聘的是哪一家公司的什么职位？",
+  "options": [
+   "一家国营企业的经理",
+   "一家私营企业的业务员",
+   "一家香港电子设备公司的总工程师",
+   "一家合资公司的秘书"
+  ],
+  "correct_answer": "一家香港电子设备公司的总工程师",
+  "explanation": "5-р догол мөр.",
+  "order_index": 28,
+  "id": "fazhan-gaoji1-l04-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "面试时，老板最后用什么语言问“我”到公司以后的打算？",
+  "options": [
+   "英语",
+   "日语",
+   "汉语",
+   "法语"
+  ],
+  "correct_answer": "英语",
+  "explanation": "7-р догол мөр: 老板用英语对我说.",
+  "order_index": 29,
+  "id": "fazhan-gaoji1-l04-q29",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "在上海的宴会上，给“我”印象最深的词是：",
+  "options": [
+   "业务",
+   "折扣",
+   "价格",
+   "程序"
+  ],
+  "correct_answer": "折扣",
+  "explanation": "9-р догол мөр: 反反复复地用了“折扣”这个词.",
+  "order_index": 30,
+  "id": "fazhan-gaoji1-l04-q30",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "根据课文，“我”在招聘现场悟到了什么应聘技巧？",
+  "options": [
+   "必须会说英语",
+   "漂亮的简历固然重要，但与众不同的特点更为重要",
+   "说话越多越好",
+   "简历越长越好"
+  ],
+  "correct_answer": "漂亮的简历固然重要，但与众不同的特点更为重要",
+  "explanation": "11-р догол мөр.",
+  "order_index": 31,
+  "id": "fazhan-gaoji1-l04-q31",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "把下面几句话排成通顺的语段：a 目的地已经到达了 b 我应该放松一点儿了 c 可我不但没有放松下来 d 反而更紧张了",
+  "options": [
+   "b a c d",
+   "a b c d",
+   "a b d c",
+   "a c b d"
+  ],
+  "correct_answer": "a b c d",
+  "explanation": "Хүрсэн → амрах хэрэгтэй → гэвч амарсангүй → харин улам түгшив.",
+  "order_index": 32,
+  "id": "fazhan-gaoji1-l04-q32",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "hard"
+ }
+]

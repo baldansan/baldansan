@@ -1,0 +1,578 @@
+[
+ {
+  "type": "cloze",
+  "question": "不管是（ ）的还是真实的，网络时代的爱情，都悄悄走进了我们的生活。",
+  "options": [
+   "纯粹",
+   "拘束",
+   "隐蔽",
+   "虚幻"
+  ],
+  "correct_answer": "虚幻",
+  "explanation": "虚幻 = бодит бус, хуурмаг.",
+  "order_index": 1,
+  "id": "fazhan-gaoji1-l06-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "互联网开始（ ）月老手中的红线。",
+  "options": [
+   "展示",
+   "忽略",
+   "确认",
+   "取代"
+  ],
+  "correct_answer": "取代",
+  "explanation": "取代 = халж орлох.",
+  "order_index": 2,
+  "id": "fazhan-gaoji1-l06-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "一张虚幻的、不可触摸的网，为什么具有如此巨大的（ ）呢？",
+  "options": [
+   "土壤",
+   "场所",
+   "魅力",
+   "天性"
+  ],
+  "correct_answer": "魅力",
+  "explanation": "魅力 = сэтгэл татам хүч.",
+  "order_index": 3,
+  "id": "fazhan-gaoji1-l06-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "聊天儿的网友中，有一位就是你的（ ）。",
+  "options": [
+   "爪子",
+   "键盘",
+   "知己",
+   "异性"
+  ],
+  "correct_answer": "知己",
+  "explanation": "知己 = дотны найз.",
+  "order_index": 4,
+  "id": "fazhan-gaoji1-l06-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "如果对方是一位（ ），就有可能发展为一段网络爱情故事。",
+  "options": [
+   "天使",
+   "网友",
+   "知己",
+   "异性"
+  ],
+  "correct_answer": "异性",
+  "explanation": "异性 = эсрэг хүйсийн хүн.",
+  "order_index": 5,
+  "id": "fazhan-gaoji1-l06-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这张漫画指出了网上交往的特点：（ ）性——真实身份的（ ）。",
+  "options": [
+   "隐蔽",
+   "尴尬",
+   "拘束",
+   "纯粹"
+  ],
+  "correct_answer": "隐蔽",
+  "explanation": "隐蔽 = нуугдмал.",
+  "order_index": 6,
+  "id": "fazhan-gaoji1-l06-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "这张漫画（ ）地指出了网上交往的特点。",
+  "options": [
+   "轻而易举",
+   "毫无顾忌",
+   "一针见血",
+   "全心全意"
+  ],
+  "correct_answer": "一针见血",
+  "explanation": "一针见血 = яг гол цэгт хүрэх.",
+  "order_index": 7,
+  "id": "fazhan-gaoji1-l06-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "网上聊天儿中，异性之间的交往是无所（ ）的。",
+  "options": [
+   "取代",
+   "追查",
+   "拘束",
+   "获取"
+  ],
+  "correct_answer": "拘束",
+  "explanation": "无所拘束 = хязгаарлалтгүй.",
+  "order_index": 8,
+  "id": "fazhan-gaoji1-l06-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "这样的聊天儿甚至无需开场白或客套话，可以（ ）地说出自己想说的话。",
+  "options": [
+   "隐蔽",
+   "拘谨",
+   "尴尬",
+   "直率"
+  ],
+  "correct_answer": "直率",
+  "explanation": "直率 = шулуун, шууд.",
+  "order_index": 9,
+  "id": "fazhan-gaoji1-l06-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "说错了也没关系，没有人会（ ）。",
+  "options": [
+   "获取",
+   "指责",
+   "追查",
+   "确认"
+  ],
+  "correct_answer": "追查",
+  "explanation": "追查 = мөрдөж шалгах.",
+  "order_index": 10,
+  "id": "fazhan-gaoji1-l06-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "这在网络中是（ ）的，是它的优势。",
+  "options": [
+   "毫无顾忌",
+   "全心全意",
+   "轻而易举",
+   "一针见血"
+  ],
+  "correct_answer": "轻而易举",
+  "explanation": "轻而易举 = маш амархан.",
+  "order_index": 11,
+  "id": "fazhan-gaoji1-l06-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "别的一切都可以（ ）不管，只注重语言和思想的交流。",
+  "options": [
+   "展示",
+   "获取",
+   "取代",
+   "忽略"
+  ],
+  "correct_answer": "忽略",
+  "explanation": "忽略 = анзааралгүй өнгөрөх.",
+  "order_index": 12,
+  "id": "fazhan-gaoji1-l06-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "即使是内向的人也会变得（ ）表白。",
+  "options": [
+   "急于",
+   "善于",
+   "勇于",
+   "富于"
+  ],
+  "correct_answer": "勇于",
+  "explanation": "勇于 + V = зоригтойгоор хийх.",
+  "order_index": 13,
+  "id": "fazhan-gaoji1-l06-q13",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "“（ ）你同意不同意，我都这样做。”空格里应填：",
+  "options": [
+   "不管",
+   "除非",
+   "只有",
+   "既然"
+  ],
+  "correct_answer": "不管",
+  "explanation": "不管 + A不A，都……",
+  "order_index": 14,
+  "id": "fazhan-gaoji1-l06-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "“不论红茶还是绿茶，我（ ）喜欢。”空格里应填：",
+  "options": [
+   "都",
+   "就",
+   "才",
+   "却"
+  ],
+  "correct_answer": "都",
+  "explanation": "无条件复句-д хойд 分句-д 都 орно.",
+  "order_index": 15,
+  "id": "fazhan-gaoji1-l06-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "下面哪个句子是正确的？",
+  "options": [
+   "不管天气多冷，他早上都坚持锻炼。",
+   "不管天气冷，他早上坚持锻炼。",
+   "不管天气非常冷，他早上都坚持锻炼。",
+   "因为天气多冷，他早上都坚持锻炼。"
+  ],
+  "correct_answer": "不管天气多冷，他早上都坚持锻炼。",
+  "explanation": "不管-ийн ард хоёр ба түүнээс олон боломжийг илэрхийлэх 多冷.",
+  "order_index": 16,
+  "id": "fazhan-gaoji1-l06-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "用“未曾”改写：分手之后，我们俩还没有相遇过。",
+  "options": [
+   "分手之后，我们俩还未曾相遇过。",
+   "分手之后，我们俩还不曾要相遇过。",
+   "分手之后，我们俩还未曾没相遇过。",
+   "分手之后，我们俩未曾相遇了。"
+  ],
+  "correct_answer": "分手之后，我们俩还未曾相遇过。",
+  "explanation": "没有……过 → 未曾……过.",
+  "order_index": 17,
+  "id": "fazhan-gaoji1-l06-q17",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "下面哪个句子用法错误？",
+  "options": [
+   "我未曾遇到过这种情况。",
+   "历史上这里还未曾发生过这么严重的地震。",
+   "她的这种人生信念未曾动摇过。",
+   "明天我未曾去北京。"
+  ],
+  "correct_answer": "明天我未曾去北京。",
+  "explanation": "未曾 нь ирээдүйд хэрэглэгдэхгүй.",
+  "order_index": 18,
+  "id": "fazhan-gaoji1-l06-q18",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "“他们（ ）一开始就以寻找爱情为目的去上网。”空格里应填：",
+  "options": [
+   "并已",
+   "并将",
+   "并非",
+   "并无"
+  ],
+  "correct_answer": "并非",
+  "explanation": "并非 + 一开始就…… (буруу ойлголтыг засах).",
+  "order_index": 19,
+  "id": "fazhan-gaoji1-l06-q19",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "“她并非我的女朋友，我们只是比较要好的同学。”这句话的意思是：",
+  "options": [
+   "她其实不是我的女朋友",
+   "她将来会是我的女朋友",
+   "她是我的女朋友",
+   "她以前不是我的女朋友"
+  ],
+  "correct_answer": "她其实不是我的女朋友",
+  "explanation": "并非 = 其实不是.",
+  "order_index": 20,
+  "id": "fazhan-gaoji1-l06-q20",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "“（ ）了解，网络恋情的成功率并不像人们期望的那么高。”空格里应填：",
+  "options": [
+   "对",
+   "把",
+   "被",
+   "据"
+  ],
+  "correct_answer": "据",
+  "explanation": "据了解 — бичгийн хэлний угтвар.",
+  "order_index": 21,
+  "id": "fazhan-gaoji1-l06-q21",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "用“据……”改写：记者报告说，这场大风造成了数十万美元的损失。",
+  "options": [
+   "记者报告据，这场大风造成了损失。",
+   "记者据报告说，这场大风造成了损失。",
+   "据记者报告，这场大风造成了数十万美元的损失。",
+   "据说记者，这场大风造成了损失。"
+  ],
+  "correct_answer": "据记者报告，这场大风造成了数十万美元的损失。",
+  "explanation": "据 + 记者报告.",
+  "order_index": 22,
+  "id": "fazhan-gaoji1-l06-q22",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "“（ ）整体来看，人类的活动领域在不断扩大。”空格里应填：",
+  "options": [
+   "把",
+   "就",
+   "被",
+   "给"
+  ],
+  "correct_answer": "就",
+  "explanation": "就……来看.",
+  "order_index": 23,
+  "id": "fazhan-gaoji1-l06-q23",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "下面哪个句子是正确的？",
+  "options": [
+   "就理论水平来说，老张比老刘高。",
+   "就来说理论水平，老张比老刘高。",
+   "理论水平就来说，老张比老刘高。",
+   "就理论水平，老张比老刘高来说。"
+  ],
+  "correct_answer": "就理论水平来说，老张比老刘高。",
+  "explanation": "就 + 名 + 来说.",
+  "order_index": 24,
+  "id": "fazhan-gaoji1-l06-q24",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "“无论性格内向拘谨（ ）外向随和，在网络交流中都可以直率表达。”空格里应填：",
+  "options": [
+   "和",
+   "但是",
+   "所以",
+   "还是"
+  ],
+  "correct_answer": "还是",
+  "explanation": "无论 A 还是 B，都…… .",
+  "order_index": 25,
+  "id": "fazhan-gaoji1-l06-q25",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "“（ ）能这样，就是因为网络交往有隐蔽性。”空格里应填：",
+  "options": [
+   "既然",
+   "因为",
+   "所以",
+   "之所以"
+  ],
+  "correct_answer": "之所以",
+  "explanation": "之所以……，就是因为……",
+  "order_index": 26,
+  "id": "fazhan-gaoji1-l06-q26",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "reading",
+  "question": "课文说，网上恋情通常是怎样开始的？",
+  "options": [
+   "在婚姻介绍所里开始",
+   "在平平常常的聊天儿中开始",
+   "通过朋友介绍",
+   "一开始就以寻找爱情为目的"
+  ],
+  "correct_answer": "在平平常常的聊天儿中开始",
+  "explanation": "3-р догол мөр.",
+  "order_index": 27,
+  "id": "fazhan-gaoji1-l06-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "漫画里“敲键盘的狗”说了什么？",
+  "options": [
+   "放心吧，在网上，没人知道你是一只狗",
+   "你不要看我",
+   "请你离开这里",
+   "我是一只聪明的狗"
+  ],
+  "correct_answer": "放心吧，在网上，没人知道你是一只狗",
+  "explanation": "5-р догол мөр.",
+  "order_index": 28,
+  "id": "fazhan-gaoji1-l06-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "平等性的两点是：首先是地位上的平等，其次是：",
+  "options": [
+   "大家见过面",
+   "相互之间没有利益冲突",
+   "每个人都有钱",
+   "性别相同"
+  ],
+  "correct_answer": "相互之间没有利益冲突",
+  "explanation": "6-р догол мөр.",
+  "order_index": 29,
+  "id": "fazhan-gaoji1-l06-q29",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "课文认为网络的神秘性来源于什么？",
+  "options": [
+   "陌生",
+   "金钱",
+   "竞争",
+   "孤独"
+  ],
+  "correct_answer": "陌生",
+  "explanation": "7-р догол мөр: 神秘来源于陌生.",
+  "order_index": 30,
+  "id": "fazhan-gaoji1-l06-q30",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "根据课文，为什么说网上恋情是都市人追求更高生活质量的表现？",
+  "options": [
+   "因为网络比现实生活便宜",
+   "因为网上聊天儿不需要时间",
+   "因为人在满足衣食住行的需求之后，必将在精神上有更多的期待",
+   "因为都市人没有朋友"
+  ],
+  "correct_answer": "因为人在满足衣食住行的需求之后，必将在精神上有更多的期待",
+  "explanation": "9-р догол мөр.",
+  "order_index": 31,
+  "id": "fazhan-gaoji1-l06-q31",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "把下面几句话排成通顺的语段：a 他与别人都是平等的 b 有多少财富 c 在人格上，在法律上 d 无论他的地位有多高",
+  "options": [
+   "b a d c",
+   "a b c d",
+   "d b c a",
+   "c d b a"
+  ],
+  "correct_answer": "d b c a",
+  "explanation": "综合练习 五-1.",
+  "order_index": 32,
+  "id": "fazhan-gaoji1-l06-q32",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "hard"
+ }
+]

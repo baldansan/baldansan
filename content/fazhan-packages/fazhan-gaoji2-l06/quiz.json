@@ -1,0 +1,578 @@
+[
+ {
+  "type": "cloze",
+  "question": "洪水（ ）了村庄，给当地人民的生活造成很大的损失。",
+  "options": [
+   "感慨",
+   "淹没",
+   "吻合",
+   "标记"
+  ],
+  "correct_answer": "淹没",
+  "explanation": "淹没 = (усанд) дарагдах.",
+  "order_index": 1,
+  "id": "fazhan-gaoji2-l06-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "对于中国人来说，红色常常代表着喜庆、（ ）。",
+  "options": [
+   "可观",
+   "确切",
+   "吉祥",
+   "精湛"
+  ],
+  "correct_answer": "吉祥",
+  "explanation": "吉祥 = аз жаргал.",
+  "order_index": 2,
+  "id": "fazhan-gaoji2-l06-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "今年的考试如何安排，至今还没有一个（ ）的说法。",
+  "options": [
+   "淹没",
+   "确切",
+   "吉祥",
+   "兴致"
+  ],
+  "correct_answer": "确切",
+  "explanation": "确切 = нарийн үнэн.",
+  "order_index": 3,
+  "id": "fazhan-gaoji2-l06-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "这些白瓷制品工艺（ ），线条柔美，一上市就销售一空。",
+  "options": [
+   "精湛",
+   "源远流长",
+   "息息相关",
+   "络绎不绝"
+  ],
+  "correct_answer": "精湛",
+  "explanation": "工艺精湛.",
+  "order_index": 4,
+  "id": "fazhan-gaoji2-l06-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "每到花开的季节，游人（ ）。",
+  "options": [
+   "一目了然",
+   "络绎不绝",
+   "身体力行",
+   "源远流长"
+  ],
+  "correct_answer": "络绎不绝",
+  "explanation": "络绎不绝 = тасралтгүй ирэх.",
+  "order_index": 5,
+  "id": "fazhan-gaoji2-l06-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "长江最枯水位大约十年为一个（ ），与石鱼的记录颇为吻合。",
+  "options": [
+   "往年",
+   "逐年",
+   "周期",
+   "同期"
+  ],
+  "correct_answer": "周期",
+  "explanation": "周期 = мөчлөг.",
+  "order_index": 6,
+  "id": "fazhan-gaoji2-l06-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "今年的雨水比（ ）多，所以庄稼长得很好。",
+  "options": [
+   "往年",
+   "周期",
+   "同期",
+   "逐年"
+  ],
+  "correct_answer": "往年",
+  "explanation": "往年 = урьд жилүүд.",
+  "order_index": 7,
+  "id": "fazhan-gaoji2-l06-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "面对这些大自然的杰作，自然而然地会心生（ ）。",
+  "options": [
+   "确切",
+   "敬畏",
+   "可观",
+   "遗产"
+  ],
+  "correct_answer": "敬畏",
+  "explanation": "敬畏 = хүндэтгэл ба эмээл.",
+  "order_index": 8,
+  "id": "fazhan-gaoji2-l06-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "choice",
+  "question": "记录了（ ）公元763年至20世纪初1200多年间的70多个最低枯水年份线。",
+  "options": [
+   "在",
+   "自",
+   "把",
+   "对"
+  ],
+  "correct_answer": "自",
+  "explanation": "自……至…… (综合注释 1).",
+  "order_index": 9,
+  "id": "fazhan-gaoji2-l06-q09",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "（ ）至王公贵族，下至文人墨客，兴致所至，挥毫泼墨。",
+  "options": [
+   "外",
+   "前",
+   "东",
+   "上"
+  ],
+  "correct_answer": "上",
+  "explanation": "上至……下至…….",
+  "order_index": 10,
+  "id": "fazhan-gaoji2-l06-q10",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "还记录了远自唐宋元明清，（ ）至现代百姓的情感及思想轨迹。",
+  "options": [
+   "近",
+   "小",
+   "下",
+   "少"
+  ],
+  "correct_answer": "近",
+  "explanation": "远自……近至…….",
+  "order_index": 11,
+  "id": "fazhan-gaoji2-l06-q11",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "“尤以其特殊的科学价值而更加引人注目”中的“以……而……”表示：",
+  "options": [
+   "原因",
+   "方式",
+   "对象",
+   "目的"
+  ],
+  "correct_answer": "原因",
+  "explanation": "以……而…… = шалтгаан (综合注释 2).",
+  "order_index": 12,
+  "id": "fazhan-gaoji2-l06-q12",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "“留在石壁、梁柱上以示后人”中的“以”表示：",
+  "options": [
+   "对象",
+   "原因",
+   "工具",
+   "目的"
+  ],
+  "correct_answer": "目的",
+  "explanation": "以 + V = зорилго.",
+  "order_index": 13,
+  "id": "fazhan-gaoji2-l06-q13",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "“就以石鱼为标准”中的“以……为……”大致相当于：",
+  "options": [
+   "自……至……",
+   "用……来……",
+   "把……看作/当作……",
+   "因为……所以……"
+  ],
+  "correct_answer": "把……看作/当作……",
+  "explanation": "以……为…… (综合注释 2).",
+  "order_index": 14,
+  "id": "fazhan-gaoji2-l06-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "我们公司的业务以出口为主，以进口（ ）辅。",
+  "options": [
+   "为",
+   "当",
+   "是",
+   "作"
+  ],
+  "correct_answer": "为",
+  "explanation": "以……为主，以……为辅.",
+  "order_index": 15,
+  "id": "fazhan-gaoji2-l06-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "长江最枯水位的出现，与石鱼的记录（ ）吻合。",
+  "options": [
+   "颇为",
+   "颇了",
+   "颇不",
+   "颇的"
+  ],
+  "correct_answer": "颇为",
+  "explanation": "颇为 (综合注释 3).",
+  "order_index": 16,
+  "id": "fazhan-gaoji2-l06-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "这是一幅唐代名画，（ ）珍贵。",
+  "options": [
+   "颇为",
+   "不为",
+   "没为",
+   "颇不"
+  ],
+  "correct_answer": "颇为",
+  "explanation": "颇为珍贵 (综合练习 六-1).",
+  "order_index": 17,
+  "id": "fazhan-gaoji2-l06-q17",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "来报名的人中也（ ）看热闹者。",
+  "options": [
+   "不乏",
+   "不过",
+   "不够",
+   "不是"
+  ],
+  "correct_answer": "不乏",
+  "explanation": "不乏……者 (综合练习 六-2).",
+  "order_index": 18,
+  "id": "fazhan-gaoji2-l06-q18",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "这些出土文物，（ ）清代的器物。",
+  "options": [
+   "颇是",
+   "多为",
+   "大为",
+   "多是为"
+  ],
+  "correct_answer": "多为",
+  "explanation": "多为 (综合练习 六-3).",
+  "order_index": 19,
+  "id": "fazhan-gaoji2-l06-q19",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "白鹤梁位于哪里？",
+  "options": [
+   "北京",
+   "重庆市区",
+   "涪陵城北长江江心",
+   "三峡大坝"
+  ],
+  "correct_answer": "涪陵城北长江江心",
+  "explanation": "Р1.",
+  "order_index": 20,
+  "id": "fazhan-gaoji2-l06-q20",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "联合国教科文组织对白鹤梁的评价是：",
+  "options": [
+   "保存完好的世界唯一古代水文站",
+   "世界最大的水电站",
+   "最古老的博物馆",
+   "最长的石梁"
+  ],
+  "correct_answer": "保存完好的世界唯一古代水文站",
+  "explanation": "Р1.",
+  "order_index": 21,
+  "id": "fazhan-gaoji2-l06-q21",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "古人为什么选择鱼作为水标？",
+  "options": [
+   "鱼很容易刻",
+   "鱼是吉祥之物，又能与环境浑然一体",
+   "鱼很贵",
+   "鱼是唯一的动物"
+  ],
+  "correct_answer": "鱼是吉祥之物，又能与环境浑然一体",
+  "explanation": "Р5.",
+  "order_index": 22,
+  "id": "fazhan-gaoji2-l06-q22",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "石鱼水标最迟在什么时候就已经有了？",
+  "options": [
+   "宋朝",
+   "20世纪初",
+   "明朝",
+   "唐广德元年（公元763年）"
+  ],
+  "correct_answer": "唐广德元年（公元763年）",
+  "explanation": "Р7.",
+  "order_index": 23,
+  "id": "fazhan-gaoji2-l06-q23",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "白鹤梁题刻为哪两项工程提供了科学依据？",
+  "options": [
+   "故宫和兵马俑",
+   "葛洲坝水利工程和三峡水利枢纽工程",
+   "京杭大运河",
+   "南水北调和西气东输"
+  ],
+  "correct_answer": "葛洲坝水利工程和三峡水利枢纽工程",
+  "explanation": "Р7.",
+  "order_index": 24,
+  "id": "fazhan-gaoji2-l06-q24",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "长江最枯水位大约多少年为一个周期？",
+  "options": [
+   "三年",
+   "十年",
+   "一年",
+   "百年"
+  ],
+  "correct_answer": "十年",
+  "explanation": "Р8.",
+  "order_index": 25,
+  "id": "fazhan-gaoji2-l06-q25",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "“鱼出不节用，年丰难为丰”告诉人们：",
+  "options": [
+   "丰年也不要忘记节俭",
+   "要少种地",
+   "鱼比粮食重要",
+   "要多捕鱼"
+  ],
+  "correct_answer": "丰年也不要忘记节俭",
+  "explanation": "Р9.",
+  "order_index": 26,
+  "id": "fazhan-gaoji2-l06-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "三峡工程建成后，人们怎样看白鹤梁题刻？",
+  "options": [
+   "通过水下博物馆参观",
+   "不能看",
+   "去北京看",
+   "直接在江面上看"
+  ],
+  "correct_answer": "通过水下博物馆参观",
+  "explanation": "Р11.",
+  "order_index": 27,
+  "id": "fazhan-gaoji2-l06-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "“老人一生生活（ ），为人厚道。”",
+  "options": [
+   "节俭",
+   "节制",
+   "节约",
+   "节省"
+  ],
+  "correct_answer": "节俭",
+  "explanation": "节俭 = хүний зан (参考答案).",
+  "order_index": 28,
+  "id": "fazhan-gaoji2-l06-q28",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "“我们要（ ）每一滴水。”",
+  "options": [
+   "节省",
+   "节俭",
+   "节制",
+   "节约"
+  ],
+  "correct_answer": "节约",
+  "explanation": "节约 = нөөцийг хэмнэх (参考答案).",
+  "order_index": 29,
+  "id": "fazhan-gaoji2-l06-q29",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "“运用新的技术，可以（ ）很多人力和资金。”",
+  "options": [
+   "节拍",
+   "节省",
+   "节约",
+   "节俭"
+  ],
+  "correct_answer": "节省",
+  "explanation": "节省 (参考答案).",
+  "order_index": 30,
+  "id": "fazhan-gaoji2-l06-q30",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "“姐姐送给我一（ ）手套。”",
+  "options": [
+   "张",
+   "副",
+   "幅",
+   "条"
+  ],
+  "correct_answer": "副",
+  "explanation": "一副手套 (参考答案).",
+  "order_index": 31,
+  "id": "fazhan-gaoji2-l06-q31",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "“四周墙壁上贴着巨（ ）名人肖像画。”",
+  "options": [
+   "副",
+   "幅",
+   "块",
+   "张"
+  ],
+  "correct_answer": "幅",
+  "explanation": "巨幅 (参考答案).",
+  "order_index": 32,
+  "id": "fazhan-gaoji2-l06-q32",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ }
+]

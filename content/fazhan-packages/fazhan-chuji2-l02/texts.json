@@ -21,7 +21,7 @@
   "title_mn": "课文 · 儿子要回家 (Хүү гэртээ ирэх гэнэ)",
   "audioFile": "audio/fazhan-chuji2-02-text.mp3",
   "charCount": 413,
-  "source": "发展汉语（第二版）中级综合 I — 第2课 课文 （选自《青年参考》，作者：〔美〕布赫瓦尔德，张元军译；发展汉语 第二版 初级综合II 第2课 课文 (х.12-14)）",
+  "source": "发展汉语（第二版）初级综合 II — 第2课 课文 （选自《青年参考》，作者：〔美〕布赫瓦尔德，张元军译；发展汉语 第二版 初级综合II 第2课 课文 (х.12-14)）",
   "author_zh": "《青年参考》，〔美〕布赫瓦尔德，张元军译",
   "intro_zh": "儿子毕业了，要回家，母亲却为了这个很担心。她的医生朋友不关心儿子的健康问题，却总是问儿子宿舍的情况……这是为什么呢？",
   "intro_mn": "Хүү нь сургуулиа төгсөөд гэртээ ирэх гэж байна, гэтэл ээж нь үүнд санаа зовоод байна. Эмч найз нь хүүгийн эрүүл мэндийн талаар огт асуухгүй, харин дотуур байрных нь байдлыг л байнга асууж байна… Яагаад вэ?",
@@ -1247,7 +1247,7 @@
    },
    {
     "zh": "刚上大学的时候，他说要自由，不让我们去他的宿舍。我们是最近才发现了这个问题。",
-    "pinyin": "Gāng shàng dàxué de shíhòu, tā shuō yào zìyóu, bù ràng wǒmen qù tā de sùshè. wǒmen shì zuìjìn cái fāxiàn le zhège wèntí.",
+    "pinyin": "Gāng shàng dàxué de shíhòu, tā shuō yào zìyóu, bú ràng wǒmen qù tā de sùshè. wǒmen shì zuìjìn cái fāxiàn le zhège wèntí.",
     "mn": "Дөнгөж их сургуульд ороход тэр «чөлөөтэй байна» гээд биднийг дотуур байрандаа оруулдаггүй байсан. Бид саяхан л энэ асуудлыг анзаарсан. (ээж)",
     "paragraph": 5,
     "tokens": [
@@ -1638,7 +1638,7 @@
   "writingSample": {
    "title_mn": "Бичгийн дасгал · 十、说一说，写一写 — «Миний өрөө» (60 ханзаас дээш богино эссе)",
    "zh": "我的房间不大不小，一个人住正合适。靠墙摆着一张床，床上放着一个枕头。桌子上摆着一台电脑和几本书，旁边放着茶。墙上挂着一张地图，还贴着几张我喜欢的照片。衣柜里挂着很多衣服，也装着几个旅行包。有的时候我的房间有点儿乱七八糟的，不过我从来没有找不到东西。我最喜欢我的房间，因为它是我自己的小世界。",
-   "pinyin": "Wǒ de fángjiān búdàbùxiǎo, yígè rén zhù zhèng héshì. kào qiáng bǎi zhe yìzhāng chuáng, chuáng shàng fàng zhe yígè zhěntou. zhuōzi shàng bǎi zhe yìtái diànnǎo hé jǐ běn shū, páng biān fàng zhe chá. qiáng shàng guà zhe yìzhāng dìtú, hái tiē zhe jǐzhāng wǒ xǐhuān de zhàopiān. yīguì lǐ guà zhe hěn duō yīfú, yě zhuāng zhe jǐ gè lǚxíngbāo. yǒu de shíhòu wǒ de fángjiān yǒu diǎnér luànqībāzāo de, búguò wǒ cónglái méiyǒu zhǎo bù dào dōngxī. wǒ zuì xǐhuān wǒ de fángjiān, yīnwèi tā shì wǒ zìjǐ de xiǎo shìjiè.",
+   "pinyin": "Wǒ de fángjiān búdàbùxiǎo, yígè rén zhù zhèng héshì. kào qiáng bǎi zhe yìzhāng chuáng, chuáng shàng fàng zhe yígè zhěntou. zhuōzi shàng bǎi zhe yìtái diànnǎo hé jǐ běn shū, páng biān fàng zhe chá. qiáng shàng guà zhe yìzhāng dìtú, hái tiē zhe jǐzhāng wǒ xǐhuān de zhàopiān. yīguì lǐ guà zhe hěn duō yīfú, yě zhuāng zhe jǐ gè lǚxíngbāo. yǒu de shíhòu wǒ de fángjiān yǒu diǎnér luànqībāzāo de, búguò wǒ cónglái méiyǒu zhǎo bú dào dōngxī. wǒ zuì xǐhuān wǒ de fángjiān, yīnwèi tā shì wǒ zìjǐ de xiǎo shìjiè.",
    "mn": "Миний өрөө дунд зэрэг, нэг хүнд яг тохиромжтой. Хананд тулгаад нэг ор тавьсан, орон дээр нэг дэр байна. Ширээн дээр нэг компьютер, хэдэн ном байрласан, хажууд нь нэг аяга цай байна. Ханан дээр нэг газрын зураг өлгөөтэй, мөн миний дуртай хэдэн зураг наасан. Шүүгээнд олон хувцас өлгөөтэй, хэдэн аяллын цүнх хийсэн байдаг. Заримдаа өрөө жаахан эмх замбараагүй болдог ч, би юмаа хэзээ ч олдоггүй байгаагүй. Миний өрөө миний хувийн жижиг ертөнц учраас би хамгийн их дуртай."
   },
   "writingPrompt_mn": "Өрөөнийхөө зургийг авч, өрөөний байрлалыг тодорхойл. Өгөгдсөн үгсийг аль болох ашиглан 60 орчим ханзтай богино эссе бич. Үгс: 摆着 放着 装着 挂着 贴着 不大不小 乱七八糟"
@@ -1789,7 +1789,7 @@
     },
     {
      "chinese": "路上车多人多，骑自行车小心一点儿！",
-     "pinyin": "Lù shàng chē duō rén duō, qí zìxíngchē xiǎoxīn yī diǎnér!",
+     "pinyin": "Lù shàng chē duō rén duō, qí zìxíngchē xiǎoxīn yì diǎnér!",
      "mongolian": "Замд машин, хүн олон, дугуй унахдаа болгоомжтой бай!"
     },
     {
@@ -1913,7 +1913,7 @@
     },
     {
      "chinese": "这个房间不错，不过有点儿小。",
-     "pinyin": "Zhège fángjiān bù cuò, búguò yǒu diǎnér xiǎo.",
+     "pinyin": "Zhège fángjiān bú cuò, búguò yǒu diǎnér xiǎo.",
      "mongolian": "Энэ өрөө муугүй, гэхдээ жаахан жижиг."
     }
    ],
@@ -1978,7 +1978,7 @@
     },
     {
      "chinese": "你的房间乱不乱跟我没关系。",
-     "pinyin": "Nǐ de fángjiān luàn bù luàn gēn wǒ méiguānxì.",
+     "pinyin": "Nǐ de fángjiān luàn bú luàn gēn wǒ méiguānxì.",
      "mongolian": "Чиний өрөө эмх замбараагүй эсэх надад хамаагүй."
     },
     {
@@ -2166,7 +2166,7 @@
      "usage_mn": "电+影 — хөдөлгөөнт зураг.",
      "example": {
       "chinese": "我昨天和朋友一起看了一个新电影，很晚才回来。",
-      "pinyin": "Wǒ zuótiān hé péngyǒu yī qǐ kàn le yígè xīn diànyǐng, hěn wǎn cái huílái.",
+      "pinyin": "Wǒ zuótiān hé péngyǒu yì qǐ kàn le yígè xīn diànyǐng, hěn wǎn cái huílái.",
       "mongolian": "Би өчигдөр найзтайгаа шинэ кино үзээд орой болсон хойно ирсэн."
      }
     },
@@ -2177,7 +2177,7 @@
      "usage_mn": "电+视 — цахилгаан хараа.",
      "example": {
       "chinese": "我很喜欢一边吃饭，一边看电视。",
-      "pinyin": "Wǒ hěn xǐhuān yī biān chī fàn, yī biān kàn diànshì.",
+      "pinyin": "Wǒ hěn xǐhuān yì biān chī fàn, yì biān kàn diànshì.",
       "mongolian": "Би хоол идэхдээ нэг талаас зурагт үзэх дуртай."
      }
     },
@@ -2494,7 +2494,7 @@
     },
     {
      "chinese": "北京的秋天不冷不热，很舒服。",
-     "pinyin": "Běijīng de qiūtiān bù lěng bù rè, hěn shūfú.",
+     "pinyin": "Běijīng de qiūtiān bù lěng bú rè, hěn shūfú.",
      "mongolian": "Бээжингийн намар хүйтэн ч биш, халуун ч биш, их тухтай."
     },
     {
@@ -2588,12 +2588,12 @@
     },
     {
      "chinese": "门口停着一辆出租车。",
-     "pinyin": "Mén kǒu tíng zhe yī liàng chūzūchē.",
+     "pinyin": "Mén kǒu tíng zhe yí liàng chūzūchē.",
      "mongolian": "Үүдэнд нэг такси зогсож байна."
     },
     {
      "chinese": "墙上挂着一幅地图。",
-     "pinyin": "Qiáng shàng guà zhe yī fú dìtú.",
+     "pinyin": "Qiáng shàng guà zhe yì fú dìtú.",
      "mongolian": "Ханан дээр нэг газрын зураг өлгөөтэй байна."
     },
     {
@@ -2677,7 +2677,7 @@
    "examples": [
     {
      "chinese": "A：我们什么时候出发？ B：明天上午9点。对了，你问问马丁去不去。",
-     "pinyin": "A : wǒmen shénme shíhòu chū fā? B : míngtiān shàng wǔ 9 diǎn. duìle, nǐ wèn wèn mǎ dīng qù bù qù.",
+     "pinyin": "A : wǒmen shénme shíhòu chū fā? B : míngtiān shàng wǔ 9 diǎn. duìle, nǐ wèn wèn mǎ dīng qù bú qù.",
      "mongolian": "А: Бид хэзээ гарах вэ? Б: Маргааш өглөөний 9 цагт. Аан тийм, Мартинаас явах эсэхийг нь асуугаарай."
     },
     {

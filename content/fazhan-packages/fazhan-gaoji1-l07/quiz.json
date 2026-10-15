@@ -1,0 +1,560 @@
+[
+ {
+  "type": "cloze",
+  "question": "北京人毕竟是古老文明最（ ）的继承者。",
+  "options": [
+   "逊色",
+   "正宗",
+   "傲气",
+   "浅薄"
+  ],
+  "correct_answer": "正宗",
+  "explanation": "正宗 = жинхэнэ, уламжлалт. 浅薄 — өнгөц, 逊色 — дутуу, 傲气 — бардам.",
+  "order_index": 1,
+  "id": "fazhan-gaoji1-l07-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "上海人有很多优点可以和北京人（ ）。",
+  "options": [
+   "精打细算",
+   "称兄道弟",
+   "取长补短",
+   "相提并论"
+  ],
+  "correct_answer": "相提并论",
+  "explanation": "相提并论 = зэрэгцүүлж харьцуулах. 称兄道弟 — ах дүү дотночлох, 取长补短 — давуу талаа авах.",
+  "order_index": 2,
+  "id": "fazhan-gaoji1-l07-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "今天来参加考试的人很多，但安排得好，考场（ ）。",
+  "options": [
+   "彬彬有礼",
+   "井然有序",
+   "一好百好",
+   "油腔滑调"
+  ],
+  "correct_answer": "井然有序",
+  "explanation": "井然有序 = эмх цэгцтэй. 彬彬有礼 — эелдэг, 油腔滑调 — цайлган бус.",
+  "order_index": 3,
+  "id": "fazhan-gaoji1-l07-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "他受过很好的教育，对人（ ）。",
+  "options": [
+   "彬彬有礼",
+   "油腔滑调",
+   "精打细算",
+   "称兄道弟"
+  ],
+  "correct_answer": "彬彬有礼",
+  "explanation": "彬彬有礼 = эелдэг ёсорхог. 油腔滑调 — зальжин.",
+  "order_index": 4,
+  "id": "fazhan-gaoji1-l07-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我这个月只有一千块钱了，我得（ ），否则就不够用了。",
+  "options": [
+   "称兄道弟",
+   "精打细算",
+   "取长补短",
+   "相提并论"
+  ],
+  "correct_answer": "精打细算",
+  "explanation": "精打细算 = нарийн тооцоолж зарцуулах.",
+  "order_index": 5,
+  "id": "fazhan-gaoji1-l07-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他们和陌生人接触时，有时显得比较冷淡，彬彬有礼的后面是可以感觉到的（ ）和距离。",
+  "options": [
+   "疏远",
+   "豪爽",
+   "敷衍",
+   "傲气"
+  ],
+  "correct_answer": "疏远",
+  "explanation": "疏远 = хол бололт. 豪爽 — шулуун өгөөмөр, 敷衍 — хайхрамжгүй.",
+  "order_index": 6,
+  "id": "fazhan-gaoji1-l07-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "他们答应的事，极少（ ）的。",
+  "options": [
+   "起劲",
+   "务实",
+   "失信",
+   "守信"
+  ],
+  "correct_answer": "失信",
+  "explanation": "失信 = амлалтаа зөрчих. 守信 нь эсрэг утгатай.",
+  "order_index": 7,
+  "id": "fazhan-gaoji1-l07-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "要是有事相求，他们就会尽心尽力，决不（ ）。",
+  "options": [
+   "哼",
+   "掩饰",
+   "敷衍",
+   "坑"
+  ],
+  "correct_answer": "敷衍",
+  "explanation": "敷衍 = хайхрамжгүй хандах. 掩饰 — нуух, 坑 — хохироох.",
+  "order_index": 8,
+  "id": "fazhan-gaoji1-l07-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "假如谈到“外地人”，他们就可能（ ）不住自己的轻视。",
+  "options": [
+   "敷衍",
+   "怀旧",
+   "掩饰",
+   "提防"
+  ],
+  "correct_answer": "掩饰",
+  "explanation": "掩饰不住 = нууж чадахгүй.",
+  "order_index": 9,
+  "id": "fazhan-gaoji1-l07-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "最近，上海刮起了一股（ ）风，老房子、老公寓都恢复了原貌。",
+  "options": [
+   "务实",
+   "豪爽",
+   "怀旧",
+   "时髦"
+  ],
+  "correct_answer": "怀旧",
+  "explanation": "怀旧 = хуучин цагийг санах.",
+  "order_index": 10,
+  "id": "fazhan-gaoji1-l07-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "北京人也许不小气，但往往有些（ ）、“大爷”气。",
+  "options": [
+   "节俭",
+   "傲气",
+   "守信",
+   "勤奋"
+  ],
+  "correct_answer": "傲气",
+  "explanation": "傲气 = бардам зан.",
+  "order_index": 11,
+  "id": "fazhan-gaoji1-l07-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "上海人还有一些北京人没有的优点，例如（ ）、勤奋、守时。",
+  "options": [
+   "茫然",
+   "傲气",
+   "浅薄",
+   "节俭"
+  ],
+  "correct_answer": "节俭",
+  "explanation": "节俭 = хэмнэлттэй; бусад сөрөг утгатай.",
+  "order_index": 12,
+  "id": "fazhan-gaoji1-l07-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这种精神（ ）可贵！",
+  "options": [
+   "毕竟",
+   "何等",
+   "唯独",
+   "一律"
+  ],
+  "correct_answer": "何等",
+  "explanation": "何等 + тэмдэг нэр + ！ — «ямар их … вэ».",
+  "order_index": 13,
+  "id": "fazhan-gaoji1-l07-q13",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "下面哪一句是“假设”关系的复句？",
+  "options": [
+   "因为天气太热，所以他不参加了。",
+   "虽然天气太热，但他参加了。",
+   "他不但参加了，还跑得很快。",
+   "要是天气太热，你就可以不参加了吗？"
+  ],
+  "correct_answer": "要是天气太热，你就可以不参加了吗？",
+  "explanation": "要是……就…… = 假设. 因为……所以 = 因果, 虽然……但 = 转折, 不但……还 = 递进.",
+  "order_index": 14,
+  "id": "fazhan-gaoji1-l07-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "“如果”“要是”“倘若”三个词中，哪个主要用于书面语？",
+  "options": [
+   "如果",
+   "倘若",
+   "要是",
+   "都一样"
+  ],
+  "correct_answer": "倘若",
+  "explanation": "倘若 — бичгийн хэл; 要是 — яриа; 如果 — хамгийн түгээмэл.",
+  "order_index": 15,
+  "id": "fazhan-gaoji1-l07-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "“若有问题，请即告知”中的“若”相当于什么？",
+  "options": [
+   "虽然",
+   "既然",
+   "如果",
+   "因为"
+  ],
+  "correct_answer": "如果",
+  "explanation": "若 = 如果 (бичгийн нэг үет 假设 холбоос).",
+  "order_index": 16,
+  "id": "fazhan-gaoji1-l07-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "“大家都愿意去，（ ）她不愿意。”",
+  "options": [
+   "倘若",
+   "何等",
+   "一律",
+   "唯独"
+  ],
+  "correct_answer": "唯独",
+  "explanation": "«Бүгд ≠ ганц» — 唯独.",
+  "order_index": 17,
+  "id": "fazhan-gaoji1-l07-q17",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "下面哪一句“唯独”用得正确？",
+  "options": [
+   "唯独大家都愿意去。",
+   "这些人都不可靠，唯独他是可靠的。",
+   "他唯独不唯独去。",
+   "唯独我们都同意。"
+  ],
+  "correct_answer": "这些人都不可靠，唯独他是可靠的。",
+  "explanation": "唯独 + ганцаараа онцгой зүйл; «бүгд»-ийн өмнө хэрэглэхгүй.",
+  "order_index": 18,
+  "id": "fazhan-gaoji1-l07-q18",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "学汉语和学英语都不容易，（ ）难在发音和汉字，（ ）难在语法。",
+  "options": [
+   "后者……前者",
+   "唯独……何等",
+   "前者……后者",
+   "如果……就"
+  ],
+  "correct_answer": "前者……后者",
+  "explanation": "Эхнийх (学汉语) → 前者, сүүлийнх (学英语) → 后者.",
+  "order_index": 19,
+  "id": "fazhan-gaoji1-l07-q19",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "“苹果、香蕉和橙子我都喜欢，前者最甜。”这句话有什么问题？",
+  "options": [
+   "前者只能指两个事物",
+   "后者位置不对",
+   "没有“唯独”",
+   "没有“何等”"
+  ],
+  "correct_answer": "前者只能指两个事物",
+  "explanation": "前者/后者 нь зөвхөн ХОЁР зүйлийн хувьд.",
+  "order_index": 20,
+  "id": "fazhan-gaoji1-l07-q20",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "“有这样的孩子，父母该（ ）欣喜！”",
+  "options": [
+   "何等",
+   "一律",
+   "唯独",
+   "毕竟"
+  ],
+  "correct_answer": "何等",
+  "explanation": "何等欣喜 = ямар их баярлах вэ.",
+  "order_index": 21,
+  "id": "fazhan-gaoji1-l07-q21",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "下面哪一句“何等”用得最自然？",
+  "options": [
+   "你今天何等去哪儿？",
+   "这个菜何等好吃吗？",
+   "他何等跑得快不快？",
+   "在那个饥荒的年代，人们的生活何等艰难。"
+  ],
+  "correct_answer": "在那个饥荒的年代，人们的生活何等艰难。",
+  "explanation": "何等 — аялга өгүүлбэр (感叹句)-д л хэрэглэнэ, асуултад биш.",
+  "order_index": 22,
+  "id": "fazhan-gaoji1-l07-q22",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "“扫清这个障碍，这项工程就一顺百顺了”中，“一顺百顺”是什么意思？",
+  "options": [
+   "一个人顺利，一百个人不顺利",
+   "工程需要一百天完成",
+   "每天都顺利一次",
+   "一个障碍消除后，所有的事情都顺利了"
+  ],
+  "correct_answer": "一个障碍消除后，所有的事情都顺利了",
+  "explanation": "一……百…… — нэг нөхцөл бүгдэд ижил нөлөөтэй.",
+  "order_index": 23,
+  "id": "fazhan-gaoji1-l07-q23",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "“任何做法和作风都不是一好百好的”最接近下面哪个意思？",
+  "options": [
+   "所有做法都很好",
+   "没有一种做法在所有方面都好",
+   "做法越多越好",
+   "一百种做法中只有一种好"
+  ],
+  "correct_answer": "没有一种做法在所有方面都好",
+  "explanation": "不是一好百好 = нэг нь сайн гэж бүхэн сайн биш.",
+  "order_index": 24,
+  "id": "fazhan-gaoji1-l07-q24",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "reading",
+  "question": "作者认为北京人的“油”是怎样的？",
+  "options": [
+   "非常浅薄，没有文化",
+   "有点儿油，但并不浅薄，俗中有雅",
+   "很油，所以不可爱",
+   "完全不油，很严肃"
+  ],
+  "correct_answer": "有点儿油，但并不浅薄，俗中有雅",
+  "explanation": "2-р догол мөр: 不错，是有点儿油，但并不浅薄。",
+  "order_index": 25,
+  "id": "fazhan-gaoji1-l07-q25",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "上海人为什么可以和北京人相提并论？",
+  "options": [
+   "上海比北京历史更悠久",
+   "上海人从不看不起外地人",
+   "上海的酒吧比北京多",
+   "上海人素质高、有文化、守时守信、勤奋节俭"
+  ],
+  "correct_answer": "上海人素质高、有文化、守时守信、勤奋节俭",
+  "explanation": "5-р догол мөр: 上海人有很多优点可以和北京人相提并论。",
+  "order_index": 26,
+  "id": "fazhan-gaoji1-l07-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "北京的售票员和上海在公共汽车上让座的做法有什么不同？",
+  "options": [
+   "两个城市都不让座",
+   "北京靠管理，上海靠道德教育",
+   "两个城市的做法完全一样",
+   "北京靠道德教育，上海靠管理（站队和坐队）"
+  ],
+  "correct_answer": "北京靠道德教育，上海靠管理（站队和坐队）",
+  "explanation": "6-р догол мөр: 北京的做法靠道德教育，上海的做法靠管理。",
+  "order_index": 27,
+  "id": "fazhan-gaoji1-l07-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "北京为什么成为“五四运动”和“中国新文化运动”的发源地？",
+  "options": [
+   "北京的人口最多",
+   "北京的交通最方便",
+   "北京人敢于发表自己的意见，有理论思考精神",
+   "北京的经济最发达"
+  ],
+  "correct_answer": "北京人敢于发表自己的意见，有理论思考精神",
+  "explanation": "6-р догол мөр: 他们敢于发表自己的意见，也正因为如此，北京才成为…的发源地。",
+  "order_index": 28,
+  "id": "fazhan-gaoji1-l07-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "reading",
+  "question": "作者最后希望北京人和上海人怎样做？",
+  "options": [
+   "互相批评，保持距离",
+   "互相学习，取长补短",
+   "搬到对方的城市去住",
+   "各过各的，互不影响"
+  ],
+  "correct_answer": "互相学习，取长补短",
+  "explanation": "Төгсгөл: 我们还是互相学习，取长补短吧。",
+  "order_index": 29,
+  "id": "fazhan-gaoji1-l07-q29",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "order",
+  "question": "Утгыг зөв илэрхийлсэн нь аль вэ? «Шанхайд хуучин цагийг санах салхи үлээж эхэллээ»",
+  "options": [
+   "刮起了上海一股怀旧风",
+   "上海刮起了一股怀旧风",
+   "一股怀旧风上海了刮起",
+   "上海一股怀旧风刮起了"
+  ],
+  "correct_answer": "上海刮起了一股怀旧风",
+  "explanation": "刮起 + 一股 + 怀旧风 — зөв дараалал.",
+  "order_index": 30,
+  "id": "fazhan-gaoji1-l07-q30",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "你想说“老人和孩子都应该被照顾，前者为社会作过贡献，后者是我们的希望”，下面哪句最合适？",
+  "options": [
+   "老人、孩子和年轻人都应该得到照顾，前者为社会作过贡献。",
+   "老人和孩子都应该得到照顾，后者为社会作过贡献，前者是未来的希望。",
+   "老人和孩子都应该得到照顾，前者为社会作过贡献，后者是未来的希望。",
+   "唯独老人和孩子都应该得到照顾。"
+  ],
+  "correct_answer": "老人和孩子都应该得到照顾，前者为社会作过贡献，后者是未来的希望。",
+  "explanation": "前者 = 老人, 后者 = 孩子 — дараалал нь өгүүлбэрийн эхэнд дурдсантай таарна.",
+  "order_index": 31,
+  "id": "fazhan-gaoji1-l07-q31",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ }
+]

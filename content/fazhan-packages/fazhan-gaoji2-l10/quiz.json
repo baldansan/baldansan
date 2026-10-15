@@ -1,0 +1,578 @@
+[
+ {
+  "type": "cloze",
+  "question": "考试时还有哪些应该注意的（ ），你也跟他说一说。",
+  "options": [
+   "财务",
+   "误区",
+   "法则",
+   "事项"
+  ],
+  "correct_answer": "事项",
+  "explanation": "事项 = анхаарах зүйл. 误区 — андуу ойлголт, 法则 — хууль, 财务 — санхүү.",
+  "order_index": 1,
+  "id": "fazhan-gaoji2-l10-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他在这家公司干了三年，就（ ）去了另一家公司。",
+  "options": [
+   "效力",
+   "搜索",
+   "裁员",
+   "跳槽"
+  ],
+  "correct_answer": "跳槽",
+  "explanation": "跳槽 = өөр компанид шилжих. 裁员 — цомхотгох, 效力 — алба хаах, 搜索 — хайх.",
+  "order_index": 2,
+  "id": "fazhan-gaoji2-l10-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "受经济影响，公司决定下个月（ ），不少人很担心。",
+  "options": [
+   "汇报",
+   "启用",
+   "裁员",
+   "登录"
+  ],
+  "correct_answer": "裁员",
+  "explanation": "裁员 = ажилтан цомхотгох. 启用 — ашиглаж эхлэх, 登录 — нэвтрэх, 汇报 — тайлагнах.",
+  "order_index": 3,
+  "id": "fazhan-gaoji2-l10-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他早早出门，（ ）迟到。",
+  "options": [
+   "自行",
+   "一贯",
+   "生怕",
+   "暂且"
+  ],
+  "correct_answer": "生怕",
+  "explanation": "生怕 = …вий гэж эмээх. 暂且 — түр, 一贯 — урьд өмнөөс, 自行 — өөрөө.",
+  "order_index": 4,
+  "id": "fazhan-gaoji2-l10-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "老板每天工作（ ），很难把每件小事都记在心里。",
+  "options": [
+   "事无巨细",
+   "不可胜数",
+   "千头万绪",
+   "鸡毛蒜皮"
+  ],
+  "correct_answer": "千头万绪",
+  "explanation": "千头万绪 = олон үзүүртэй, ээдрээтэй. 鸡毛蒜皮 — жижиг сажиг.",
+  "order_index": 5,
+  "id": "fazhan-gaoji2-l10-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "别为这些（ ）的小事吵架，没必要。",
+  "options": [
+   "煞费苦心",
+   "千头万绪",
+   "畅通无阻",
+   "鸡毛蒜皮"
+  ],
+  "correct_answer": "鸡毛蒜皮",
+  "explanation": "鸡毛蒜皮 = ач холбогдолгүй жижиг зүйл.",
+  "order_index": 6,
+  "id": "fazhan-gaoji2-l10-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这位客户非常（ ），什么都要最好的，还常常提出不合理的要求。",
+  "options": [
+   "赏识",
+   "挑剔",
+   "哄",
+   "搜索"
+  ],
+  "correct_answer": "挑剔",
+  "explanation": "挑剔 = хэт няхуур ташүүр хайх. 赏识 — үнэлэх, 哄 — тайвшруулах.",
+  "order_index": 7,
+  "id": "fazhan-gaoji2-l10-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "他每周都要向经理（ ）一次工作进度。",
+  "options": [
+   "延展",
+   "汇报",
+   "防范",
+   "监控"
+  ],
+  "correct_answer": "汇报",
+  "explanation": "汇报 = (дээд албанд) тайлагнах. 防范 — сэргийлэх, 监控 — хянах.",
+  "order_index": 8,
+  "id": "fazhan-gaoji2-l10-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "设计者（ ）现代电邮战争的奥妙，才能做出这么贴心的服务。",
+  "options": [
+   "深谙",
+   "逼近",
+   "悟",
+   "启用"
+  ],
+  "correct_answer": "深谙",
+  "explanation": "深谙 = маш сайн мэддэг. 启用 — ашиглаж эхлэх, 悟 — гэнэт ойлгох.",
+  "order_index": 9,
+  "id": "fazhan-gaoji2-l10-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "cloze",
+  "question": "对方突然不说话了，我被搞得（ ）。",
+  "options": [
+   "煞费苦心",
+   "不动声色",
+   "一头雾水",
+   "胡搅蛮缠"
+  ],
+  "correct_answer": "一头雾水",
+  "explanation": "一头雾水 = юу ч ойлгохгүй толгой эргэх.",
+  "order_index": 10,
+  "id": "fazhan-gaoji2-l10-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "听到这个消息，他心里很激动，却（ ）地继续工作。",
+  "options": [
+   "畅通无阻",
+   "小心翼翼",
+   "不可胜数",
+   "不动声色"
+  ],
+  "correct_answer": "不动声色",
+  "explanation": "不动声色 = царай алдалгүй тайван. 小心翼翼 — болгоомжтой.",
+  "order_index": 11,
+  "id": "fazhan-gaoji2-l10-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "孩子哭闹不止，妈妈好言好语地（ ）了半天。",
+  "options": [
+   "哄",
+   "悟",
+   "启用",
+   "搜索"
+  ],
+  "correct_answer": "哄",
+  "explanation": "哄 = (үг, үйлдлээр) баярлуулан тайвшруулах.",
+  "order_index": 12,
+  "id": "fazhan-gaoji2-l10-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "有了这张通行证，到哪儿都（ ）。",
+  "options": [
+   "不动声色",
+   "事无巨细",
+   "小心翼翼",
+   "畅通无阻"
+  ],
+  "correct_answer": "畅通无阻",
+  "explanation": "畅通无阻 = саадгүй чөлөөтэй өнгөрөх.",
+  "order_index": 13,
+  "id": "fazhan-gaoji2-l10-q13",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Аль өгүүлбэр «即使……也……» -г ЗӨВ хэрэглэсэн бэ?",
+  "options": [
+   "即使下班在家休息，所以他也登录公司邮箱。",
+   "即使下班在家休息，他也要登录公司邮箱。",
+   "即使下班在家休息，但是他登录公司邮箱。",
+   "即使下班在家休息，他要登录公司邮箱。"
+  ],
+  "correct_answer": "即使下班在家休息，他也要登录公司邮箱。",
+  "explanation": "«即使» -ийн хариуд «也» хэрэгтэй; «所以», «但是» -тэй хослуулахгүй.",
+  "order_index": 14,
+  "id": "fazhan-gaoji2-l10-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "他早早出门，（ ）迟到。",
+  "options": [
+   "免得不",
+   "就是",
+   "生怕",
+   "即使"
+  ],
+  "correct_answer": "生怕",
+  "explanation": "«生怕» + хүсээгүй үр дагавар (迟到).",
+  "order_index": 15,
+  "id": "fazhan-gaoji2-l10-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Аль өгүүлбэрт «生怕» ЗӨВ хэрэглэгдсэн бэ?",
+  "options": [
+   "她捧着花瓶小心地走，生怕花瓶不打碎。",
+   "她捧着花瓶小心地走，生怕了花瓶。",
+   "她捧着花瓶小心地走，生怕很高兴。",
+   "她捧着花瓶小心地走，生怕一不小心把花瓶打碎了。"
+  ],
+  "correct_answer": "她捧着花瓶小心地走，生怕一不小心把花瓶打碎了。",
+  "explanation": "«生怕» дараа хүсээгүй үр дагавар (打碎) орно.",
+  "order_index": 16,
+  "id": "fazhan-gaoji2-l10-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "就算不吃饭不睡觉也要等，（ ）错过了这个机会。",
+  "options": [
+   "因为",
+   "免得",
+   "所以",
+   "然而"
+  ],
+  "correct_answer": "免得",
+  "explanation": "«免得 / 以免 / 省得» нь «…гэхгүйн тулд» гэсэн зорилго.",
+  "order_index": 17,
+  "id": "fazhan-gaoji2-l10-q17",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "虽然钱不多，（ ）这样不明不白地被拿走了，心里还是很不舒服。",
+  "options": [
+   "但是",
+   "所以",
+   "如果",
+   "因此"
+  ],
+  "correct_answer": "但是",
+  "explanation": "«虽然» -ийн хариуд «但是» (эсрэг).",
+  "order_index": 18,
+  "id": "fazhan-gaoji2-l10-q18",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Аль нь «虽然……但（因为……所以……）» хэвийг зөв бичсэн бэ?",
+  "options": [
+   "虽然我们是同龄人，因为生活经历太不相同了，所以但是没有共同语言。",
+   "虽然我们是同龄人，但是生活经历太不相同了，所以没有共同语言。",
+   "虽然我们是同龄人，所以生活经历太不相同了，但是没有共同语言。",
+   "虽然我们是同龄人，但是所以生活经历太不相同了。"
+  ],
+  "correct_answer": "虽然我们是同龄人，但是生活经历太不相同了，所以没有共同语言。",
+  "explanation": "«虽然 + A，但是 + B，所以 + C» — эсрэг ба үр дагавар дараалсан.",
+  "order_index": 19,
+  "id": "fazhan-gaoji2-l10-q19",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "choice",
+  "question": "«千头万绪» дахь «千, 万» ямар утгатай вэ?",
+  "options": [
+   "мянга ба арван мянга",
+   "онцлох",
+   "цөөн",
+   "олон"
+  ],
+  "correct_answer": "олон",
+  "explanation": "千头万绪 = олон үзүүртэй, ээдрээтэй; «千, 万» нь «олон».",
+  "order_index": 20,
+  "id": "fazhan-gaoji2-l10-q20",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«三言两语» ямар утгатай вэ?",
+  "options": [
+   "цөөн үгээр, товчхон",
+   "олон үгээр удаан",
+   "найз нөхдийн яриа",
+   "гурван үг хоёр үг гэсэн тоо"
+  ],
+  "correct_answer": "цөөн үгээр, товчхон",
+  "explanation": "Ном: «有时也可以表示少» — цөөн.",
+  "order_index": 21,
+  "id": "fazhan-gaoji2-l10-q21",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«一帆风顺» дахь «一» ямар утгатай вэ?",
+  "options": [
+   "эхний",
+   "нэг ширхэг",
+   "бүгд, бүхэлд нь (бүх зүйл жигдхэн)",
+   "ганц хүн"
+  ],
+  "correct_answer": "бүгд, бүхэлд нь (бүх зүйл жигдхэн)",
+  "explanation": "Ном: «有的成语中“一”有“全部”的意思» (一帆风顺, 一无所有, 一心一意).",
+  "order_index": 22,
+  "id": "fazhan-gaoji2-l10-q22",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«碰了一鼻子灰» ямар утгатай вэ?",
+  "options": [
+   "уурласан",
+   "татгалзуулж, ичгэвтэр байдалд орсон",
+   "хөлс гарсан",
+   "бохирдсон"
+  ],
+  "correct_answer": "татгалзуулж, ичгэвтэр байдалд орсон",
+  "explanation": "Ном: «因为被拒绝或者被斥责而弄得很没面子、很为难».",
+  "order_index": 23,
+  "id": "fazhan-gaoji2-l10-q23",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«打交道» — 离合 хэвшмэл хэллэг. Аль нь ЗӨВ вэ?",
+  "options": [
+   "我跟他打交道几十年的了。",
+   "我跟他打交道了几十年。",
+   "我跟他打了几十年的交道了。",
+   "我打交道跟他几十年了。"
+  ],
+  "correct_answer": "我跟他打了几十年的交道了。",
+  "explanation": "«打交道» дундуур хугацаа (几十年的) оруулна: «打了几十年的交道».",
+  "order_index": 24,
+  "id": "fazhan-gaoji2-l10-q24",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "choice",
+  "question": "«不费吹灰之力» ямар утгатай вэ?",
+  "options": [
+   "огт хүчин чармайлт шаардахгүй, маш амархан",
+   "маш их хүч шаардах",
+   "арга олдохгүй",
+   "тоос үлээх"
+  ],
+  "correct_answer": "огт хүчин чармайлт шаардахгүй, маш амархан",
+  "explanation": "Ном: «不必用一点儿力气，非常轻松、容易».",
+  "order_index": 25,
+  "id": "fazhan-gaoji2-l10-q25",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "小林被公司辞退之后才明白什么？",
+  "options": [
+   "她的简历被别的公司退回了",
+   "公司的邮箱服务出了问题",
+   "她用的公司邮箱不是自己的邮箱，有人在监控",
+   "同事向公司透露了她的打算"
+  ],
+  "correct_answer": "她用的公司邮箱不是自己的邮箱，有人在监控",
+  "explanation": "Р4: «原来，它不是我的邮箱».",
+  "order_index": 26,
+  "id": "fazhan-gaoji2-l10-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "老板向阿杰提出了哪三个问题？",
+  "options": [
+   "为什么常常迟到、早退、请假",
+   "为什么不及时回复邮件、不抄送重要邮件、不书面汇报",
+   "为什么不用密送、不用附件、不用转发",
+   "为什么不加班、不出差、不开会"
+  ],
+  "correct_answer": "为什么不及时回复邮件、不抄送重要邮件、不书面汇报",
+  "explanation": "Р6: 及时回复, 抄送团队同事, 书面汇报进度.",
+  "order_index": 27,
+  "id": "fazhan-gaoji2-l10-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "凯文为什么在客户那儿总讨不到好？",
+  "options": [
+   "他对客户态度非常傲慢",
+   "他总是不回复客户的邮件",
+   "他是个急性子，邮件常有拼写错误或发错附件",
+   "他的工作能力不够"
+  ],
+  "correct_answer": "他是个急性子，邮件常有拼写错误或发错附件",
+  "explanation": "Р10: «凯文是个急性子，发给客户的邮件经常出现拼写错误，或者发错了附件».",
+  "order_index": 28,
+  "id": "fazhan-gaoji2-l10-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "大老板为什么批评凯文？",
+  "options": [
+   "他没有按时完成工作",
+   "他把客户的资料弄丢了",
+   "他在邮件里抱怨客户，邮件一旦被转发会很危险",
+   "他回复邮件太慢"
+  ],
+  "correct_answer": "他在邮件里抱怨客户，邮件一旦被转发会很危险",
+  "explanation": "Р11-12: 凯文说客户“超级变态”，大老板说转发一封邮件不费吹灰之力.",
+  "order_index": 29,
+  "id": "fazhan-gaoji2-l10-q29",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "课文说每个人的电邮是什么？",
+  "options": [
+   "一面镜子",
+   "一件武器",
+   "一把钥匙",
+   "一张通行证"
+  ],
+  "correct_answer": "一张通行证",
+  "explanation": "Р13: «每个人的电邮都是一张通行证，只有善用你的通行权，才能在职场上畅通无阻».",
+  "order_index": 30,
+  "id": "fazhan-gaoji2-l10-q30",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 即使 / 下班或周末 / 在家休息 / 也要 / 登录公司邮箱",
+  "options": [
+   "即使下班或周末在家休息，也要登录公司邮箱",
+   "下班或周末即使，在家休息登录公司邮箱也要",
+   "即使登录公司邮箱，下班或周末在家休息也要",
+   "也要下班或周末在家休息，即使登录公司邮箱"
+  ],
+  "correct_answer": "即使下班或周末在家休息，也要登录公司邮箱",
+  "explanation": "«即使 + нөхцөл，也要 + үр дүн».",
+  "order_index": 31,
+  "id": "fazhan-gaoji2-l10-q31",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 要想不忘事、不误事 / 还是 / 通过邮件书面记录 / 来得保险",
+  "options": [
+   "来得保险，要想不忘事、不误事通过邮件书面记录还是",
+   "还是要想不忘事、不误事，来得保险通过邮件书面记录",
+   "要想不忘事、不误事，还是通过邮件书面记录来得保险",
+   "通过邮件书面记录，还是来得保险要想不忘事、不误事"
+  ],
+  "correct_answer": "要想不忘事、不误事，还是通过邮件书面记录来得保险",
+  "explanation": "«要想…，还是…来得保险» — «…гэвэл … нь илүү найдвартай».",
+  "order_index": 32,
+  "id": "fazhan-gaoji2-l10-q32",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "hard"
+ }
+]

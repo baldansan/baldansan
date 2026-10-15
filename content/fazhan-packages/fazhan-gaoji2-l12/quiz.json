@@ -1,0 +1,578 @@
+[
+ {
+  "type": "cloze",
+  "question": "庄子醒来后感到很（ ）：是庄周做梦变成了蝴蝶，还是蝴蝶做梦变成了庄周？",
+  "options": [
+   "达观",
+   "疑惑",
+   "专注",
+   "托付"
+  ],
+  "correct_answer": "疑惑",
+  "explanation": "疑惑 = эргэлзэх. 达观 — цайлган, 专注 — анхаарлаа төвлөрүүлсэн, 托付 — даатгах.",
+  "order_index": 1,
+  "id": "fazhan-gaoji2-l12-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "一条鱼摇着尾巴游来，（ ）庄子的爱情。",
+  "options": [
+   "乞求",
+   "腐烂",
+   "搜查",
+   "吓唬"
+  ],
+  "correct_answer": "乞求",
+  "explanation": "乞求 = гуйх. 搜查 — нэгжих, 吓唬 — айлгах, 腐烂 — ялзрах.",
+  "order_index": 2,
+  "id": "fazhan-gaoji2-l12-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "朋友惠施来（ ），竟然发现他盘腿坐在地上敲盆唱歌。",
+  "options": [
+   "挑拨",
+   "受累",
+   "吊唁",
+   "理睬"
+  ],
+  "correct_answer": "吊唁",
+  "explanation": "吊唁 = талийгаачид хүндэтгэл үзүүлэх.",
+  "order_index": 3,
+  "id": "fazhan-gaoji2-l12-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "这不就像春夏秋冬四季（ ）一样自然吗？",
+  "options": [
+   "挑拨",
+   "更替",
+   "托付",
+   "专注"
+  ],
+  "correct_answer": "更替",
+  "explanation": "更替 = солигдох.",
+  "order_index": 4,
+  "id": "fazhan-gaoji2-l12-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "说完，庄子不再（ ）惠施。",
+  "options": [
+   "供奉",
+   "展翅",
+   "搜查",
+   "理睬"
+  ],
+  "correct_answer": "理睬",
+  "explanation": "理睬 = тоох.",
+  "order_index": 5,
+  "id": "fazhan-gaoji2-l12-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "大王愿意把我们的国家（ ）给您。",
+  "options": [
+   "吓唬",
+   "乞求",
+   "理睬",
+   "托付"
+  ],
+  "correct_answer": "托付",
+  "explanation": "托付 = даатгах.",
+  "order_index": 6,
+  "id": "fazhan-gaoji2-l12-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "有人向惠子（ ）说：“庄子来，是想取代你，自己做宰相。”",
+  "options": [
+   "劈",
+   "挑拨",
+   "托付",
+   "理睬"
+  ],
+  "correct_answer": "挑拨",
+  "explanation": "挑拨 = хутгах.",
+  "order_index": 7,
+  "id": "fazhan-gaoji2-l12-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "惠子很害怕，想阻止庄子，派人（ ）了三天三夜。",
+  "options": [
+   "吓唬",
+   "搜查",
+   "吊唁",
+   "更替"
+  ],
+  "correct_answer": "搜查",
+  "explanation": "搜查 = нэгжих.",
+  "order_index": 8,
+  "id": "fazhan-gaoji2-l12-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "猫头鹰正（ ）地吃着一只腐烂的老鼠。",
+  "options": [
+   "相濡以沫",
+   "面不改色",
+   "悠然自得",
+   "津津有味"
+  ],
+  "correct_answer": "津津有味",
+  "explanation": "津津有味 = амтархан. 悠然自得 — тайван сайхан, 面不改色 — царай алдахгүй.",
+  "order_index": 9,
+  "id": "fazhan-gaoji2-l12-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "你问“你怎么知道鱼快乐”，就（ ）你已经肯定我知道鱼的快乐了。",
+  "options": [
+   "疑惑",
+   "损伤",
+   "表明",
+   "吓唬"
+  ],
+  "correct_answer": "表明",
+  "explanation": "表明 = илтгэх, нотлон харуулах.",
+  "order_index": 10,
+  "id": "fazhan-gaoji2-l12-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "木匠挥动斧头，呼地一声随手（ ）下去，石灰削掉了。",
+  "options": [
+   "乞",
+   "劈",
+   "栖",
+   "托"
+  ],
+  "correct_answer": "劈",
+  "explanation": "劈 = цавчих (斧头劈).",
+  "order_index": 11,
+  "id": "fazhan-gaoji2-l12-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "cloze",
+  "question": "那个楚国人（ ）地站在那里，面不改色。",
+  "options": [
+   "绿油油",
+   "暖洋洋",
+   "好端端",
+   "红通通"
+  ],
+  "correct_answer": "好端端",
+  "explanation": "好端端 = сайн сайхан, хэвийн.",
+  "order_index": 12,
+  "id": "fazhan-gaoji2-l12-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "幸亏我是个（ ）的人，否则真要伤心死呢。",
+  "options": [
+   "专制",
+   "达观",
+   "可观",
+   "专注"
+  ],
+  "correct_answer": "达观",
+  "explanation": "达观 = цайлган, зүйлийг өргөнөөр хүлээн авах.",
+  "order_index": 13,
+  "id": "fazhan-gaoji2-l12-q13",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "“庄周是庄周，蝴蝶是蝴蝶”的格式用来说明：",
+  "options": [
+   "X、Y两者区分得很清楚",
+   "X变成了Y",
+   "X比Y好",
+   "X、Y两者完全一样"
+  ],
+  "correct_answer": "X、Y两者区分得很清楚",
+  "explanation": "«X是X，Y是Y» = хоёрыг тодорхой ялгах.",
+  "order_index": 14,
+  "id": "fazhan-gaoji2-l12-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "“鼻子不是鼻子，脸不是脸”表示：",
+  "options": [
+   "疑问",
+   "消极评价，很不像样",
+   "积极评价，非常漂亮",
+   "中性描述"
+  ],
+  "correct_answer": "消极评价，很不像样",
+  "explanation": "X不是X，Y不是Y = сөрөг үнэлгээ.",
+  "order_index": 15,
+  "id": "fazhan-gaoji2-l12-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "哪个句子用“……也罢，……也罢”是正确的？",
+  "options": [
+   "穷也罢，富也罢，到时候都一样",
+   "穷也罢，富，到时候都一样",
+   "也罢穷，也罢富，都一样",
+   "穷也罢，富也，一样"
+  ],
+  "correct_answer": "穷也罢，富也罢，到时候都一样",
+  "explanation": "«A也罢，B也罢，都……» нэгтгэсэн үр дүнтэй.",
+  "order_index": 16,
+  "id": "fazhan-gaoji2-l12-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "他不愿参加（ ），何必为难他呢？",
+  "options": [
+   "也罢也",
+   "罢了就",
+   "罢也了",
+   "就罢了"
+  ],
+  "correct_answer": "就罢了",
+  "explanation": "«就罢了/也就罢了» — яахав, зүгээр.",
+  "order_index": 17,
+  "id": "fazhan-gaoji2-l12-q17",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "爸爸这么说，无非是想吓唬吓唬你（ ）。",
+  "options": [
+   "就是",
+   "一下",
+   "吧了",
+   "罢了"
+  ],
+  "correct_answer": "罢了",
+  "explanation": "«无非……罢了» — «…л болохоос».",
+  "order_index": 18,
+  "id": "fazhan-gaoji2-l12-q18",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "哪个是书面语意味较强的反问句？",
+  "options": [
+   "如果不努力，力争第一岂不是一句空话？",
+   "你怎么不去吗？",
+   "你还不去吗？",
+   "不就是一两百块钱的事儿吗？"
+  ],
+  "correct_answer": "如果不努力，力争第一岂不是一句空话？",
+  "explanation": "«岂不……» = бичгийн өнгө; «不……吗» = ярианы.",
+  "order_index": 19,
+  "id": "fazhan-gaoji2-l12-q19",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "你是姐姐，弟弟结婚你都不去，（ ）？",
+  "options": [
+   "岂不是有点儿过分",
+   "岂是有点儿过分",
+   "不有点儿过分",
+   "是不是有点儿过分你"
+  ],
+  "correct_answer": "岂不是有点儿过分",
+  "explanation": "«岂不是……» гэсэн бүтэн хэлбэр.",
+  "order_index": 20,
+  "id": "fazhan-gaoji2-l12-q20",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "哪个句子表达“你唱你的歌，他看他的电视”？",
+  "options": [
+   "你的唱歌，他的看电视",
+   "你唱歌你的，他看电视他的",
+   "你唱你的歌，他看他的电视",
+   "你唱你歌，他看他电视"
+  ],
+  "correct_answer": "你唱你的歌，他看他的电视",
+  "explanation": "X+V+X的+N.",
+  "order_index": 21,
+  "id": "fazhan-gaoji2-l12-q21",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "A：这种东西好不好吃？B：你（ ）。",
+  "options": [
+   "吃了看",
+   "看吃吃",
+   "吃吃看",
+   "吃看看"
+  ],
+  "correct_answer": "吃吃看",
+  "explanation": "V(V)看 — оролдож үзэх.",
+  "order_index": 22,
+  "id": "fazhan-gaoji2-l12-q22",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "“你也替我削削看”中的“看”表示：",
+  "options": [
+   "看望",
+   "认为",
+   "尝试",
+   "观看"
+  ],
+  "correct_answer": "尝试",
+  "explanation": "V(V)看 = оролдох.",
+  "order_index": 23,
+  "id": "fazhan-gaoji2-l12-q23",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "“山上开满红（ ）的杜鹃花”应填：",
+  "options": [
+   "汪汪",
+   "声声",
+   "朗朗",
+   "通通"
+  ],
+  "correct_answer": "通通",
+  "explanation": "红通通 — ABB дүрслэл.",
+  "order_index": 24,
+  "id": "fazhan-gaoji2-l12-q24",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "reading",
+  "question": "庄子认为“庄周”和“蝴蝶”的关系是：",
+  "options": [
+   "本质上没有区别，都只是一种形态、一个阶段",
+   "蝴蝶是庄周的梦",
+   "庄周变成了蝴蝶就不是庄周",
+   "庄周比蝴蝶好"
+  ],
+  "correct_answer": "本质上没有区别，都只是一种形态、一个阶段",
+  "explanation": "Р2.",
+  "order_index": 25,
+  "id": "fazhan-gaoji2-l12-q25",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "庄子的老婆死了，他为什么敲盆唱歌？",
+  "options": [
+   "他认为生死像四季更替一样自然",
+   "他喝醉了",
+   "他不爱老婆",
+   "他想让惠施高兴"
+  ],
+  "correct_answer": "他认为生死像四季更替一样自然",
+  "explanation": "Р4.",
+  "order_index": 26,
+  "id": "fazhan-gaoji2-l12-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "庄子为什么拒绝楚王做宰相？",
+  "options": [
+   "他不识字",
+   "他年纪太大",
+   "他不喜欢楚国人",
+   "他宁愿像神龟一样自由地在泥里爬"
+  ],
+  "correct_answer": "他宁愿像神龟一样自由地在泥里爬",
+  "explanation": "Р5.",
+  "order_index": 27,
+  "id": "fazhan-gaoji2-l12-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "庄子用凤凰和猫头鹰的故事想说明：",
+  "options": [
+   "凤凰比猫头鹰漂亮",
+   "南方有只鸟",
+   "惠子是猫头鹰",
+   "宰相的官位就像腐烂的老鼠，他不稀罕"
+  ],
+  "correct_answer": "宰相的官位就像腐烂的老鼠，他不稀罕",
+  "explanation": "Р6.",
+  "order_index": 28,
+  "id": "fazhan-gaoji2-l12-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "“濠梁之辩”中，惠子认为庄子不能知道什么？",
+  "options": [
+   "他自己是谁",
+   "桥有多长",
+   "水有多深",
+   "鱼是不是快乐"
+  ],
+  "correct_answer": "鱼是不是快乐",
+  "explanation": "Р8.",
+  "order_index": 29,
+  "id": "fazhan-gaoji2-l12-q29",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 穷也罢 / 富也罢 / 到时候 / 都一样",
+  "options": [
+   "穷也罢，到时候富也罢，都一样",
+   "到时候穷也罢，富也罢都一样",
+   "穷也罢，富也罢，到时候都一样",
+   "都一样，到时候穷也罢，富也罢"
+  ],
+  "correct_answer": "穷也罢，富也罢，到时候都一样",
+  "explanation": "«A也罢，B也罢» дараа нь нэгтгэсэн үр дүн.",
+  "order_index": 30,
+  "id": "fazhan-gaoji2-l12-q30",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 他不愿参加 / 就罢了 / 何必 / 为难他呢",
+  "options": [
+   "他不愿参加就罢了，何必为难他呢",
+   "就罢了他不愿参加，何必为难他呢",
+   "他不愿参加，何必就罢了为难他呢",
+   "何必他不愿参加就罢了为难他呢"
+  ],
+  "correct_answer": "他不愿参加就罢了，何必为难他呢",
+  "explanation": "«V就罢了，何必……»",
+  "order_index": 31,
+  "id": "fazhan-gaoji2-l12-q31",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 你说你的 / 他玩他的 / 别理他",
+  "options": [
+   "他玩他的，别理他你说你的",
+   "你说你的，别理他，他玩他的！",
+   "别理他！你说你的，他玩他的",
+   "别理他他玩他的你说你的！"
+  ],
+  "correct_answer": "别理他！你说你的，他玩他的",
+  "explanation": "X+V+X的+N + бусад ярианы өгүүлбэр.",
+  "order_index": 32,
+  "id": "fazhan-gaoji2-l12-q32",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "hard"
+ }
+]

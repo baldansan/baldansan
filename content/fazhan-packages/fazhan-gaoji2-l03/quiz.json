@@ -1,0 +1,578 @@
+[
+ {
+  "type": "cloze",
+  "question": "她随领导到（ ）的可可西里地区去慰问养路工。",
+  "options": [
+   "偏僻",
+   "庄重",
+   "臃肿",
+   "朦胧"
+  ],
+  "correct_answer": "偏僻",
+  "explanation": "偏僻 = хот төвөөс хол, зэлүүд.",
+  "order_index": 1,
+  "id": "fazhan-gaoji2-l03-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "算我（ ）你，不过我们先商量商量。",
+  "options": [
+   "掩饰",
+   "炫耀",
+   "恳请",
+   "迟疑"
+  ],
+  "correct_answer": "恳请",
+  "explanation": "恳请 = чин сэтгэлээсээ гуйх.",
+  "order_index": 2,
+  "id": "fazhan-gaoji2-l03-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "李局长（ ）而缓慢地说：“谁的纸条，要牵记者的手？”",
+  "options": [
+   "爽朗",
+   "庄重",
+   "臃肿",
+   "急促"
+  ],
+  "correct_answer": "庄重",
+  "explanation": "庄重 = хүндэтгэлтэй, ноцтой.",
+  "order_index": 3,
+  "id": "fazhan-gaoji2-l03-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "他羞红着脸，（ ）不动。",
+  "options": [
+   "迟疑",
+   "恳请",
+   "透露",
+   "贪"
+  ],
+  "correct_answer": "迟疑",
+  "explanation": "迟疑不动 = эргэлзэн хөдлөхгүй.",
+  "order_index": 4,
+  "id": "fazhan-gaoji2-l03-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "赤的临近使他（ ），其他人也不推他了。",
+  "options": [
+   "乐不可支",
+   "手足无措",
+   "若有所思",
+   "追悔莫及"
+  ],
+  "correct_answer": "手足无措",
+  "explanation": "手足无措 = гар хөлөө хаахаа мэдэхгүй.",
+  "order_index": 5,
+  "id": "fazhan-gaoji2-l03-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "于是她（ ）就看兵马俑与大雁塔之类。",
+  "options": [
+   "透露",
+   "收敛",
+   "出没",
+   "抽空"
+  ],
+  "correct_answer": "抽空",
+  "explanation": "抽空 = цаг гаргах.",
+  "order_index": 6,
+  "id": "fazhan-gaoji2-l03-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "她为自己当时的行为（ ），一再谴责自己。",
+  "options": [
+   "追悔莫及",
+   "若有所思",
+   "乐不可支",
+   "众所周知"
+  ],
+  "correct_answer": "追悔莫及",
+  "explanation": "追悔莫及 = харамсаж ч хэтэрсэн.",
+  "order_index": 7,
+  "id": "fazhan-gaoji2-l03-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "绿把自己的心事（ ）给她的一个同学。",
+  "options": [
+   "炫耀",
+   "透露",
+   "恳请",
+   "掩饰"
+  ],
+  "correct_answer": "透露",
+  "explanation": "透露 = задруулах, ярьж өгөх.",
+  "order_index": 8,
+  "id": "fazhan-gaoji2-l03-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我还以为你多占多（ ）了九十万元呢！",
+  "options": [
+   "贪",
+   "缝",
+   "揽",
+   "羞"
+  ],
+  "correct_answer": "贪",
+  "explanation": "多占多贪 = илүү завшсан.",
+  "order_index": 9,
+  "id": "fazhan-gaoji2-l03-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "cloze",
+  "question": "对青称呼他为叔叔，方社长总是（ ）。",
+  "options": [
+   "追悔莫及",
+   "坐卧不宁",
+   "乐不可支",
+   "手足无措"
+  ],
+  "correct_answer": "乐不可支",
+  "explanation": "乐不可支 = баярласнаа тэвчихгүй.",
+  "order_index": 10,
+  "id": "fazhan-gaoji2-l03-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "单位有一个有夫之妇对方社长显得过分地（ ）。",
+  "options": [
+   "爽朗",
+   "简陋",
+   "庄重",
+   "亲昵"
+  ],
+  "correct_answer": "亲昵",
+  "explanation": "亲昵 = хэт дотно.",
+  "order_index": 11,
+  "id": "fazhan-gaoji2-l03-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "大家似乎达成了（ ），都耐着性子观察一场变故。",
+  "options": [
+   "默契",
+   "威信",
+   "性子",
+   "变故"
+  ],
+  "correct_answer": "默契",
+  "explanation": "达成默契 = чимээгүй тохиролцох.",
+  "order_index": 12,
+  "id": "fazhan-gaoji2-l03-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "这样下去你会没有（ ）的。",
+  "options": [
+   "变故",
+   "威信",
+   "性子",
+   "默契"
+  ],
+  "correct_answer": "威信",
+  "explanation": "没有威信 = нэр хүнд буурна.",
+  "order_index": 13,
+  "id": "fazhan-gaoji2-l03-q13",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "“结束之际”中的“之际”，用口语词来说是什么？",
+  "options": [
+   "的时候",
+   "的结果",
+   "的话",
+   "的样子"
+  ],
+  "correct_answer": "的时候",
+  "explanation": "之际 = 的时候 (бичгийн ↔ яриа).",
+  "order_index": 14,
+  "id": "fazhan-gaoji2-l03-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "获奖者（ ）为我校师生。（бичгийн хэллэг）",
+  "options": [
+   "只",
+   "也",
+   "均",
+   "都"
+  ],
+  "correct_answer": "均",
+  "explanation": "均 = 都 (бичгийн).",
+  "order_index": 15,
+  "id": "fazhan-gaoji2-l03-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Аль нь бичгийн хэллэгийн өнгө аястай вэ?",
+  "options": [
+   "他还没出生，爸爸就走了。",
+   "他没出生爸爸就不在了。",
+   "他还未出世父亲便去世了。",
+   "他还没出世爸爸就死了。"
+  ],
+  "correct_answer": "他还未出世父亲便去世了。",
+  "explanation": "未 / 父亲 / 便 / 去世 — бичгийн.",
+  "order_index": 16,
+  "id": "fazhan-gaoji2-l03-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "邻居郑家爷爷死了，（ ）七十一岁。",
+  "options": [
+   "年近",
+   "享年",
+   "现年",
+   "年过"
+  ],
+  "correct_answer": "享年",
+  "explanation": "享年 = нас барсан хүний нас.",
+  "order_index": 17,
+  "id": "fazhan-gaoji2-l03-q17",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "choice",
+  "question": "李局长（ ）六十，也是一个养路工出身的人。",
+  "options": [
+   "年近",
+   "现年",
+   "享年",
+   "年过"
+  ],
+  "correct_answer": "年近",
+  "explanation": "年近六十 = жаран дөхсөн.",
+  "order_index": 18,
+  "id": "fazhan-gaoji2-l03-q18",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "A：小宝，别闹了，快来吃饭吧。 B：别管他，（ ），随他去！",
+  "options": [
+   "不吃就吃",
+   "吃了就吃",
+   "吃不吃",
+   "吃就吃，不吃就不吃"
+  ],
+  "correct_answer": "吃就吃，不吃就不吃",
+  "explanation": "X就X，Y就Y.",
+  "order_index": 19,
+  "id": "fazhan-gaoji2-l03-q19",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Аль нь «X就X，Y就Y» бүтцийн зөв хэрэглээ вэ?",
+  "options": [
+   "考上就考上，考不上就考不上，你管那么多干什么！",
+   "考上就考上，不考。",
+   "考不上就考。",
+   "考上就考不上。"
+  ],
+  "correct_answer": "考上就考上，考不上就考不上，你管那么多干什么！",
+  "explanation": "Хоёр хэсэг давталттай.",
+  "order_index": 20,
+  "id": "fazhan-gaoji2-l03-q20",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "一路上（ ），难走极了。（замын гадаргуу тэгш бус）",
+  "options": [
+   "说说笑笑",
+   "点点滴滴",
+   "坑坑洼洼",
+   "口口声声"
+  ],
+  "correct_answer": "坑坑洼洼",
+  "explanation": "坑坑洼洼 = өндөр нам.",
+  "order_index": 21,
+  "id": "fazhan-gaoji2-l03-q21",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "你曾经（ ）说爱我，现在看起来你都是在骗我。",
+  "options": [
+   "口口声声",
+   "时时处处",
+   "家家户户",
+   "点点滴滴"
+  ],
+  "correct_answer": "口口声声",
+  "explanation": "口口声声 = байнга хэлж.",
+  "order_index": 22,
+  "id": "fazhan-gaoji2-l03-q22",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Дараах өгүүлбэрээс утгын талбар (语义场) нэг дүрд төвлөрсөн нь аль вэ?",
+  "options": [
+   "小女孩儿接过钱，转身就跑，房子很大，我喜欢吃面。",
+   "小女孩儿接过钱，今天下雨，我去买书。",
+   "小女孩儿接过钱，转身就跑，脸涨得通红，心跳得急促起来。",
+   "小女孩儿接过钱，转身就跑，天气很好，今天星期五。"
+  ],
+  "correct_answer": "小女孩儿接过钱，转身就跑，脸涨得通红，心跳得急促起来。",
+  "explanation": "身 / 脸 / 心 — нэг дүрийн талбар.",
+  "order_index": 23,
+  "id": "fazhan-gaoji2-l03-q23",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "choice",
+  "question": "所有的服务员和周围的消费者，（ ）向她投来赞许的目光。",
+  "options": [
+   "没有",
+   "无不",
+   "不无",
+   "无有"
+  ],
+  "correct_answer": "无不",
+  "explanation": "……无不…… (综合注释 6).",
+  "order_index": 24,
+  "id": "fazhan-gaoji2-l03-q24",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "赤当年做什么工作？",
+  "options": [
+   "养路工",
+   "出版社编辑",
+   "大学老师",
+   "报社记者"
+  ],
+  "correct_answer": "报社记者",
+  "explanation": "Р1.",
+  "order_index": 25,
+  "id": "fazhan-gaoji2-l03-q25",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "养路工传给李局长的纸条上写了什么要求？",
+  "options": [
+   "希望赤给他们唱歌",
+   "希望赤写一篇文章",
+   "希望拥抱赤一下",
+   "希望赤留在这里"
+  ],
+  "correct_answer": "希望拥抱赤一下",
+  "explanation": "Р2.",
+  "order_index": 26,
+  "id": "fazhan-gaoji2-l03-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "绿为什么害怕离开大学？",
+  "options": [
+   "怕老师批评",
+   "怕被同学笑话",
+   "怕小吃店的服务员在街上认出她、抓她",
+   "怕找不到工作"
+  ],
+  "correct_answer": "怕小吃店的服务员在街上认出她、抓她",
+  "explanation": "Р7.",
+  "order_index": 27,
+  "id": "fazhan-gaoji2-l03-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "绿还钱的时候，小吃店的服务员做了什么？",
+  "options": [
+   "用纸包了一堆麻团送给她",
+   "责备了她",
+   "没有理她",
+   "让她写检查"
+  ],
+  "correct_answer": "用纸包了一堆麻团送给她",
+  "explanation": "Р9.",
+  "order_index": 28,
+  "id": "fazhan-gaoji2-l03-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "方社长听了青的意见以后，说了什么？",
+  "options": [
+   "你应该离开出版社。",
+   "你长大了！谢谢你提的意见。",
+   "我不想再听了。",
+   "你不该管这件事。"
+  ],
+  "correct_answer": "你长大了！谢谢你提的意见。",
+  "explanation": "Р14.",
+  "order_index": 29,
+  "id": "fazhan-gaoji2-l03-q29",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "“脚印很快被积雪（ ）住了。”",
+  "options": [
+   "掩饰",
+   "收敛",
+   "透露",
+   "掩盖"
+  ],
+  "correct_answer": "掩盖",
+  "explanation": "Байгалийн таглалт — 掩盖.",
+  "order_index": 30,
+  "id": "fazhan-gaoji2-l03-q30",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "“让大家都没想到的是，小王竟毫不（ ）自己的感情。”",
+  "options": [
+   "偏见",
+   "偏爱",
+   "掩盖",
+   "掩饰"
+  ],
+  "correct_answer": "掩饰",
+  "explanation": "掩饰感情.",
+  "order_index": 31,
+  "id": "fazhan-gaoji2-l03-q31",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "“教授的（ ）落在一位穿运动衣的青年身上。”",
+  "options": [
+   "随手",
+   "目光",
+   "眼光",
+   "顺手"
+  ],
+  "correct_answer": "目光",
+  "explanation": "目光 = харц.",
+  "order_index": 32,
+  "id": "fazhan-gaoji2-l03-q32",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ }
+]

@@ -1,0 +1,578 @@
+[
+ {
+  "type": "cloze",
+  "question": "我曾经是一个非常不（ ）时间的人。",
+  "options": [
+   "享乐",
+   "晃荡",
+   "珍惜",
+   "更改"
+  ],
+  "correct_answer": "珍惜",
+  "explanation": "珍惜 = үнэлэх, хайрлах. 晃荡 — тэнэх, 更改 — өөрчлөх, 享乐 — таашаал эдлэх.",
+  "order_index": 1,
+  "id": "fazhan-gaoji2-l02-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "高中时，我的成绩在北一女也还（ ）。",
+  "options": [
+   "柳暗花明",
+   "名列前茅",
+   "苦口婆心",
+   "日积月累"
+  ],
+  "correct_answer": "名列前茅",
+  "explanation": "名列前茅 = тэргүүн эгнээнд. Бусад нь утгад нийцэхгүй.",
+  "order_index": 2,
+  "id": "fazhan-gaoji2-l02-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "不过，我什么都（ ）做。",
+  "options": [
+   "号称",
+   "微妙",
+   "懒得",
+   "致力"
+  ],
+  "correct_answer": "懒得",
+  "explanation": "懒得 + V = ...хийх дургүй.",
+  "order_index": 3,
+  "id": "fazhan-gaoji2-l02-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "宝宝不愿意上幼儿园，（ ）在家里不出门。",
+  "options": [
+   "更改",
+   "指令",
+   "累积",
+   "赖"
+  ],
+  "correct_answer": "赖",
+  "explanation": "赖在 = наалдаж явахгүй байх.",
+  "order_index": 4,
+  "id": "fazhan-gaoji2-l02-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "那时候有一位“（ ）”的同社团学长。",
+  "options": [
+   "期刊",
+   "通史",
+   "嘉宾",
+   "多事"
+  ],
+  "correct_answer": "多事",
+  "explanation": "多事 = хошуу дүрэгч.",
+  "order_index": 5,
+  "id": "fazhan-gaoji2-l02-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "学长曾经（ ）地对我说：我看你这样下去不是办法。",
+  "options": [
+   "伶牙俐齿",
+   "苦口婆心",
+   "初出茅庐",
+   "兢兢业业"
+  ],
+  "correct_answer": "苦口婆心",
+  "explanation": "苦口婆心 = давтан чин сэтгэлээсээ захих.",
+  "order_index": 6,
+  "id": "fazhan-gaoji2-l02-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "修一位（ ）“谢九九”的老师的课。",
+  "options": [
+   "更改",
+   "指令",
+   "享乐",
+   "号称"
+  ],
+  "correct_answer": "号称",
+  "explanation": "号称 = ...гэж алдаршсан.",
+  "order_index": 7,
+  "id": "fazhan-gaoji2-l02-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我当时是一个（ ）的小编辑。",
+  "options": [
+   "初出茅庐",
+   "柳暗花明",
+   "名列前茅",
+   "日积月累"
+  ],
+  "correct_answer": "初出茅庐",
+  "explanation": "初出茅庐 = шинэхэн, туршлагагүй.",
+  "order_index": 8,
+  "id": "fazhan-gaoji2-l02-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "每一个瓶颈都是一个转折点，只要继续下去就会（ ）。",
+  "options": [
+   "伶牙俐齿",
+   "苦口婆心",
+   "柳暗花明",
+   "兢兢业业"
+  ],
+  "correct_answer": "柳暗花明",
+  "explanation": "柳暗花明 = гарц нээгдэх.",
+  "order_index": 9,
+  "id": "fazhan-gaoji2-l02-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "cloze",
+  "question": "那种（ ）的感觉很难形容。",
+  "options": [
+   "沉闷",
+   "科幻",
+   "狂热",
+   "微妙"
+  ],
+  "correct_answer": "微妙",
+  "explanation": "微妙 = нарийн, тайлбарлахад хэцүү.",
+  "order_index": 10,
+  "id": "fazhan-gaoji2-l02-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "在情节（ ）的时候，你还是要忍耐着。",
+  "options": [
+   "享乐",
+   "微妙",
+   "沉闷",
+   "宿命"
+  ],
+  "correct_answer": "沉闷",
+  "explanation": "沉闷 = уйтгартай, дарамттай.",
+  "order_index": 11,
+  "id": "fazhan-gaoji2-l02-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "如果你爱它，它就不是苦（ ），你是在享乐。",
+  "options": [
+   "期刊",
+   "补考",
+   "通史",
+   "差事"
+  ],
+  "correct_answer": "差事",
+  "explanation": "苦差事 = зовлонт ажил.",
+  "order_index": 12,
+  "id": "fazhan-gaoji2-l02-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "（ ）于修改剧情，让故事继续演播下去。",
+  "options": [
+   "指令",
+   "致力",
+   "号称",
+   "更改"
+  ],
+  "correct_answer": "致力",
+  "explanation": "致力于 + нэр/үйл үг.",
+  "order_index": 13,
+  "id": "fazhan-gaoji2-l02-q13",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "A：最近工作很忙吧？ B：（ ）。",
+  "options": [
+   "不是办法",
+   "还好",
+   "可是",
+   "就算"
+  ],
+  "correct_answer": "还好",
+  "explanation": "还好 = «хэвийн, азаар» — ярианы хариулт.",
+  "order_index": 14,
+  "id": "fazhan-gaoji2-l02-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Аль нь «Таны ачаар» гэж ХҮНД талархаж хэлсэн өгүүлбэр вэ?",
+  "options": [
+   "今天不是你，我才进得了考场。",
+   "今天好在你，我才进得了考场。",
+   "今天多亏了你，我才进得了考场。",
+   "今天还算你，我才进得了考场。"
+  ],
+  "correct_answer": "今天多亏了你，我才进得了考场。",
+  "explanation": "多亏/亏了 + хүн — талархал; 好在 муу зүйлийн хөнгөн тал.",
+  "order_index": 15,
+  "id": "fazhan-gaoji2-l02-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "我的钱包丢了，（ ）里面没有什么重要的东西。",
+  "options": [
+   "亏了",
+   "多亏",
+   "还算",
+   "好在"
+  ],
+  "correct_answer": "好在",
+  "explanation": "好在 = муу зүйлийн дундаас хөнгөн тал; 多亏 хүнд талархана.",
+  "order_index": 16,
+  "id": "fazhan-gaoji2-l02-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "choice",
+  "question": "你这样下去（ ）办法。",
+  "options": [
+   "不是",
+   "不要",
+   "没有",
+   "不会"
+  ],
+  "correct_answer": "不是",
+  "explanation": "不是办法 = «болохгүй» (不是+名词).",
+  "order_index": 17,
+  "id": "fazhan-gaoji2-l02-q17",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Аль нь МАГТААЛ утгатай вэ?",
+  "options": [
+   "他放得不是地方。",
+   "他不是事儿。",
+   "他不是东西。",
+   "他可是个人物。"
+  ],
+  "correct_answer": "他可是个人物。",
+  "explanation": "是+名词 = сайн үнэлгээ.",
+  "order_index": 18,
+  "id": "fazhan-gaoji2-l02-q18",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "「看到她这么痛苦，我心里很不是味儿」— «不是味儿» юу гэсэн үг вэ?",
+  "options": [
+   "халуун сайхан",
+   "амт сайн",
+   "амархан",
+   "сэтгэл тавгүй, хэцүү"
+  ],
+  "correct_answer": "сэтгэл тавгүй, хэцүү",
+  "explanation": "不是味儿 = сэтгэл тавгүй.",
+  "order_index": 19,
+  "id": "fazhan-gaoji2-l02-q19",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "（ ）没有天分，只要你愿意每天花一点时间，你就会走得很远。",
+  "options": [
+   "因为",
+   "所以",
+   "如果说",
+   "就算"
+  ],
+  "correct_answer": "就算",
+  "explanation": "就算……，只要……就……",
+  "order_index": 20,
+  "id": "fazhan-gaoji2-l02-q20",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "只要你真的努力过，就算失败了，（ ）没有什么可后悔的。",
+  "options": [
+   "却",
+   "也",
+   "才",
+   "就"
+  ],
+  "correct_answer": "也",
+  "explanation": "就算……也……",
+  "order_index": 21,
+  "id": "fazhan-gaoji2-l02-q21",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Аль нь «就算……，只要……就……» бүтэцтэй ЗӨВ өгүүлбэр вэ?",
+  "options": [
+   "就算有点儿难，只要用心写，就能写好。",
+   "只算有点儿难，只要用心写，就能写好。",
+   "就算有点儿难，只有用心写，也能写好吧。",
+   "就算有点儿难，因为用心写，就能写好。"
+  ],
+  "correct_answer": "就算有点儿难，只要用心写，就能写好。",
+  "explanation": "Нөхцөл «只要……就……», буулт «就算……».",
+  "order_index": 22,
+  "id": "fazhan-gaoji2-l02-q22",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "choice",
+  "question": "如果天气不好，路又远，（ ）我们改天再去吧。",
+  "options": [
+   "不过",
+   "于是",
+   "那么",
+   "因此"
+  ],
+  "correct_answer": "那么",
+  "explanation": "如果……，又……，那么……",
+  "order_index": 23,
+  "id": "fazhan-gaoji2-l02-q23",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Давталтаар сэдвийг ахиулах 16-р догол мөрийн түлхүүр үг аль нь вэ?",
+  "options": [
+   "看",
+   "听",
+   "写",
+   "说"
+  ],
+  "correct_answer": "写",
+  "explanation": "«写» давтагдаж бичих хүсэл тэмүүллийг гүнзгийрүүлнэ.",
+  "order_index": 24,
+  "id": "fazhan-gaoji2-l02-q24",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "作者考上台大以后，以为大学生活是什么？",
+  "options": [
+   "运动、画画和演讲",
+   "郊游、烤肉和恋爱",
+   "读书、考试和写作",
+   "打工、旅行和做饭"
+  ],
+  "correct_answer": "郊游、烤肉和恋爱",
+  "explanation": "Р4.",
+  "order_index": 25,
+  "id": "fazhan-gaoji2-l02-q25",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "学长对作者说了什么？",
+  "options": [
+   "这样下去不是办法，过不了多久一定有人会赶上你",
+   "你应该转学",
+   "你很聪明，一定会成功",
+   "你应该去打工"
+  ],
+  "correct_answer": "这样下去不是办法，过不了多久一定有人会赶上你",
+  "explanation": "Р7.",
+  "order_index": 26,
+  "id": "fazhan-gaoji2-l02-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "室友每天早上做什么？",
+  "options": [
+   "念一小时日文",
+   "打台球",
+   "练习写作",
+   "去图书馆借书"
+  ],
+  "correct_answer": "念一小时日文",
+  "explanation": "Р11.",
+  "order_index": 27,
+  "id": "fazhan-gaoji2-l02-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "林清玄先生每天写多少字？",
+  "options": [
+   "三千字",
+   "五百字",
+   "两千字",
+   "一千字"
+  ],
+  "correct_answer": "三千字",
+  "explanation": "Р14.",
+  "order_index": 28,
+  "id": "fazhan-gaoji2-l02-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "作者认为时间管理哲学的奥秘之一是什么？",
+  "options": [
+   "“节约”与“储蓄”",
+   "“拒绝”与“忍耐”",
+   "“放下”与“转移”",
+   "“快进”与“暂停”"
+  ],
+  "correct_answer": "“放下”与“转移”",
+  "explanation": "Р25.",
+  "order_index": 29,
+  "id": "fazhan-gaoji2-l02-q29",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 日积月累 / 是笨功夫 / 但也是 / 最聪明的事",
+  "options": [
+   "是笨功夫日积月累，但也是最聪明的事",
+   "日积月累但也是笨功夫，是最聪明的事",
+   "日积月累是笨功夫，但也是最聪明的事",
+   "最聪明的事日积月累，是笨功夫但也是"
+  ],
+  "correct_answer": "日积月累是笨功夫，但也是最聪明的事",
+  "explanation": "是……，但也是…… бүтэц.",
+  "order_index": 30,
+  "id": "fazhan-gaoji2-l02-q30",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 真正体会到 / 是从 / 日文水平悬殊 / 开始的",
+  "options": [
+   "真正体会到“累积时间的力量”，大概就是开始日文水平悬殊从的",
+   "真正体会到“累积时间的力量”，大概就是从日文水平悬殊开始的",
+   "是从日文水平悬殊真正体会到“累积时间的力量”开始的",
+   "大概就是真正体会到从日文水平悬殊开始的累积时间的力量"
+  ],
+  "correct_answer": "真正体会到“累积时间的力量”，大概就是从日文水平悬殊开始的",
+  "explanation": "是从……开始的.",
+  "order_index": 31,
+  "id": "fazhan-gaoji2-l02-q31",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "Хашилтын 反语 (хошин) хэрэглээ аль нь вэ?",
+  "options": [
+   "“为什么你那么忙，还有时间写作呢？”",
+   "这是时间管理哲学的奥秘之一：“放下”与“转移”。",
+   "我当时以为自己很有“才华”。",
+   "他说：“我明天来。”"
+  ],
+  "correct_answer": "我当时以为自己很有“才华”。",
+  "explanation": "“才华” — жинхэнэ утгаар биш, өөрийгөө доромжлон хэлсэн.",
+  "order_index": 32,
+  "id": "fazhan-gaoji2-l02-q32",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "hard"
+ }
+]

@@ -1,0 +1,578 @@
+[
+ {
+  "type": "cloze",
+  "question": "犯了罪的人主动向公安部门说出自己的犯罪事实，叫做（ ）。",
+  "options": [
+   "流浪",
+   "抢劫",
+   "沟通",
+   "自首"
+  ],
+  "correct_answer": "自首",
+  "explanation": "自首 = өөрөө очиж гэмээ хүлээх.",
+  "order_index": 1,
+  "id": "fazhan-gaoji1-l05-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "一天下午，一封（ ）信放到了程洁桌上。",
+  "options": [
+   "茫茫",
+   "年迈",
+   "匿名",
+   "谨慎"
+  ],
+  "correct_answer": "匿名",
+  "explanation": "匿名 = нэр нууцлах.",
+  "order_index": 2,
+  "id": "fazhan-gaoji1-l05-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "来信人曾经持枪（ ），逃到外地两年了。",
+  "options": [
+   "抢劫",
+   "沟通",
+   "承诺",
+   "处罚"
+  ],
+  "correct_answer": "抢劫",
+  "explanation": "抢劫 = дээрэмдэх.",
+  "order_index": 3,
+  "id": "fazhan-gaoji1-l05-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他不知道自己犯这样的罪会被（ ）多少年徒刑。",
+  "options": [
+   "试探",
+   "附加",
+   "颤",
+   "判处"
+  ],
+  "correct_answer": "判处",
+  "explanation": "判处 = ял оноох.",
+  "order_index": 4,
+  "id": "fazhan-gaoji1-l05-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "上级让程洁与来信者（ ），劝他到公安部门自首。",
+  "options": [
+   "流浪",
+   "牵涉",
+   "赴约",
+   "沟通"
+  ],
+  "correct_answer": "沟通",
+  "explanation": "沟通 = харилцан ойлголцох.",
+  "order_index": 5,
+  "id": "fazhan-gaoji1-l05-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "受罪的不仅仅是你，也（ ）你的家人。",
+  "options": [
+   "预测",
+   "描绘",
+   "触动",
+   "牵涉"
+  ],
+  "correct_answer": "牵涉",
+  "explanation": "牵涉 = холбогдож нөлөөлөх.",
+  "order_index": 6,
+  "id": "fazhan-gaoji1-l05-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "只要自首，就会得到（ ）处理。",
+  "options": [
+   "小心翼翼",
+   "谨慎",
+   "从宽",
+   "年迈"
+  ],
+  "correct_answer": "从宽",
+  "explanation": "从宽处理 = хөнгөрүүлсэн шийдвэр.",
+  "order_index": 7,
+  "id": "fazhan-gaoji1-l05-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "她（ ）地问：“你离我远吗？”",
+  "options": [
+   "左顾右盼",
+   "不堪回首",
+   "漫无目的",
+   "小心翼翼"
+  ],
+  "correct_answer": "小心翼翼",
+  "explanation": "小心翼翼 = маш болгоомжтой.",
+  "order_index": 8,
+  "id": "fazhan-gaoji1-l05-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我没有再提他的经历，我知道这是个（ ）的故事。",
+  "options": [
+   "左顾右盼",
+   "小心翼翼",
+   "不堪回首",
+   "过意不去"
+  ],
+  "correct_answer": "不堪回首",
+  "explanation": "不堪回首 = эргэн дурсахад хэцүү.",
+  "order_index": 9,
+  "id": "fazhan-gaoji1-l05-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "黄继伟吃饭时无法安心，（ ）的，好像有人马上要来抓他。",
+  "options": [
+   "过意不去",
+   "不堪回首",
+   "左顾右盼",
+   "小心翼翼"
+  ],
+  "correct_answer": "左顾右盼",
+  "explanation": "左顾右盼 = эргэн тойрноо харах.",
+  "order_index": 10,
+  "id": "fazhan-gaoji1-l05-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "他递给她一盒感冒药，说心里很（ ）。",
+  "options": [
+   "不堪回首",
+   "茫茫",
+   "过意不去",
+   "小心翼翼"
+  ],
+  "correct_answer": "过意不去",
+  "explanation": "过意不去 = сэтгэл эвгүй.",
+  "order_index": 11,
+  "id": "fazhan-gaoji1-l05-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "只有自首，才是他和家人（ ）解脱的唯一途径。",
+  "options": [
+   "勿",
+   "乃至",
+   "得以",
+   "务必"
+  ],
+  "correct_answer": "得以",
+  "explanation": "得以 = боломжтой болох.",
+  "order_index": 12,
+  "id": "fazhan-gaoji1-l05-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "经过一个多小时的（ ），黄继伟终于作出去自首的决定。",
+  "options": [
+   "描绘",
+   "劝说",
+   "预测",
+   "承诺"
+  ],
+  "correct_answer": "劝说",
+  "explanation": "劝说 = ятгах.",
+  "order_index": 13,
+  "id": "fazhan-gaoji1-l05-q13",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "“（ ）你愿意，就给我打电话吧。”空格里应填：",
+  "options": [
+   "只要",
+   "即使",
+   "除非",
+   "只有"
+  ],
+  "correct_answer": "只要",
+  "explanation": "只要……就…… — суурь нөхцөл.",
+  "order_index": 14,
+  "id": "fazhan-gaoji1-l05-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "“（ ）老家，才是自己真正的家。”空格里应填：",
+  "options": [
+   "不管",
+   "除非",
+   "只要",
+   "只有"
+  ],
+  "correct_answer": "只有",
+  "explanation": "只有……才…… — цорын ганц нөхцөл.",
+  "order_index": 15,
+  "id": "fazhan-gaoji1-l05-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "下面哪一句是正确的？",
+  "options": [
+   "只有你去，我就去。",
+   "只要你去，我就去。",
+   "只要你去，就我去。",
+   "只有你去，就我去。"
+  ],
+  "correct_answer": "只要你去，我就去。",
+  "explanation": "就 / 才 нь 主语-ийн ард.",
+  "order_index": 16,
+  "id": "fazhan-gaoji1-l05-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "“（ ）你自己真的想做，否则无法做好。”空格里应填：",
+  "options": [
+   "只要",
+   "因为",
+   "除非",
+   "假如"
+  ],
+  "correct_answer": "除非",
+  "explanation": "除非……，否则…….",
+  "order_index": 17,
+  "id": "fazhan-gaoji1-l05-q17",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "“我（ ）一杯橙汁，不要其他的。”这里的“只要”是：",
+  "options": [
+   "表示转折关系的关联词",
+   "“只”是副词，意思是“仅仅要”",
+   "表示递进关系的关联词",
+   "表示条件关系的关联词"
+  ],
+  "correct_answer": "“只”是副词，意思是“仅仅要”",
+  "explanation": "注意 (二): 只 нь дайвар үг.",
+  "order_index": 18,
+  "id": "fazhan-gaoji1-l05-q18",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "“你虽然年轻，但（ ）成年了，该对自己负责。”空格里最合适的是：",
+  "options": [
+   "反而",
+   "到底是不是",
+   "何必",
+   "毕竟"
+  ],
+  "correct_answer": "毕竟",
+  "explanation": "毕竟 — баримтыг онцлох.",
+  "order_index": 19,
+  "id": "fazhan-gaoji1-l05-q19",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "哪一句不能用“毕竟”，只能用“到底”？",
+  "options": [
+   "住在这里毕竟不是自己的家。",
+   "别灰心，你毕竟还年轻。",
+   "他毕竟是个孩子。",
+   "你到底去不去？"
+  ],
+  "correct_answer": "你到底去不去？",
+  "explanation": "Асуух өгүүлбэрт 到底.",
+  "order_index": 20,
+  "id": "fazhan-gaoji1-l05-q20",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "“没关系，中国人尚且会写错字，（ ）你这个外国人呢？”空格里应填：",
+  "options": [
+   "况且",
+   "而且",
+   "何况",
+   "毕竟"
+  ],
+  "correct_answer": "何况",
+  "explanation": "尚且……何况……呢? — 况且 бол биш.",
+  "order_index": 21,
+  "id": "fazhan-gaoji1-l05-q21",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "“我不去了，今天天气不好，（ ）我还有点儿不舒服。”空格里可以填：",
+  "options": [
+   "乃至",
+   "何况 / 况且",
+   "毕竟",
+   "到底"
+  ],
+  "correct_answer": "何况 / 况且",
+  "explanation": "Шалтгаан нэмэх хэрэглээ.",
+  "order_index": 22,
+  "id": "fazhan-gaoji1-l05-q22",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "“我（ ）着你的回信。”空格里应填：",
+  "options": [
+   "期待",
+   "需要",
+   "希望",
+   "打算"
+  ],
+  "correct_answer": "期待",
+  "explanation": "期待着 + нэр үгийн бүрэлдэхүүн.",
+  "order_index": 23,
+  "id": "fazhan-gaoji1-l05-q23",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "“今天太冷了，我们（ ）明天暖和一些。”空格里应填：",
+  "options": [
+   "期待着",
+   "想念",
+   "盼着着",
+   "希望"
+  ],
+  "correct_answer": "希望",
+  "explanation": "希望 + нөхцөл байдал.",
+  "order_index": 24,
+  "id": "fazhan-gaoji1-l05-q24",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "“他非常喜欢旅游，亚洲、欧洲、美洲（ ）非洲都留下了他的脚印。”空格里应填：",
+  "options": [
+   "而且",
+   "乃至",
+   "因为",
+   "所以"
+  ],
+  "correct_answer": "乃至",
+  "explanation": "乃至 — жагсаалтын төгсгөл.",
+  "order_index": 25,
+  "id": "fazhan-gaoji1-l05-q25",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "哪一句“乃至”的用法是正确的？",
+  "options": [
+   "乃至老人、青年人、小孩儿都知道她。",
+   "老人、青年人乃至小孩儿都知道她。",
+   "老人乃至青年人、小孩儿都知道她。",
+   "老人、青年人和乃至小孩儿都知道她。"
+  ],
+  "correct_answer": "老人、青年人乃至小孩儿都知道她。",
+  "explanation": "乃至 нь жагсаалтын төгсгөлд.",
+  "order_index": 26,
+  "id": "fazhan-gaoji1-l05-q26",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "reading",
+  "question": "程洁是谁？",
+  "options": [
+   "杭州《都市快报》的女记者",
+   "大学老师",
+   "公安局长",
+   "律师"
+  ],
+  "correct_answer": "杭州《都市快报》的女记者",
+  "explanation": "1-р догол мөр.",
+  "order_index": 27,
+  "id": "fazhan-gaoji1-l05-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "匿名信的作者是谁？",
+  "options": [
+   "一个年迈的父母",
+   "公安局的人",
+   "程洁的姐姐",
+   "一个曾经持枪抢劫、逃到外地的人"
+  ],
+  "correct_answer": "一个曾经持枪抢劫、逃到外地的人",
+  "explanation": "2-р догол мөр.",
+  "order_index": 28,
+  "id": "fazhan-gaoji1-l05-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "黄继伟说他最想去的地方是哪里？",
+  "options": [
+   "公安局",
+   "杭州",
+   "温岭",
+   "他的家"
+  ],
+  "correct_answer": "他的家",
+  "explanation": "4-р догол мөр: 唯一没有去过、也是最想去的地方就是我的家.",
+  "order_index": 29,
+  "id": "fazhan-gaoji1-l05-q29",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "程洁见到黄继伟时，他把见面地点最后改到了哪里？",
+  "options": [
+   "马路对面的一个医院里",
+   "小饭馆",
+   "火车站",
+   "报社门口"
+  ],
+  "correct_answer": "马路对面的一个医院里",
+  "explanation": "10-р догол мөр.",
+  "order_index": 30,
+  "id": "fazhan-gaoji1-l05-q30",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "晚上，黄继伟最后去了哪里？",
+  "options": [
+   "火车站",
+   "医院",
+   "报社餐厅",
+   "公安局"
+  ],
+  "correct_answer": "公安局",
+  "explanation": "15-р догол мөр.",
+  "order_index": 31,
+  "id": "fazhan-gaoji1-l05-q31",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "order",
+  "question": "把下面几句话排成通顺的语段：a 才能开始正式工作 b 只有通过这次培训的考试 c 这个培训课程非常重要 d 全体新的工作人员都得参加",
+  "options": [
+   "a b c d",
+   "d c a b",
+   "b a d c",
+   "c d b a"
+  ],
+  "correct_answer": "c d b a",
+  "explanation": "综合练习 六-1.",
+  "order_index": 32,
+  "id": "fazhan-gaoji1-l05-q32",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "hard"
+ }
+]

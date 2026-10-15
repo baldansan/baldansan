@@ -1,0 +1,578 @@
+[
+ {
+  "type": "cloze",
+  "question": "这篇课文他背得（ ）。",
+  "options": [
+   "滚瓜烂熟",
+   "暴跳如雷",
+   "自暴自弃",
+   "先发制人"
+  ],
+  "correct_answer": "滚瓜烂熟",
+  "explanation": "滚瓜烂熟 = цээжээр гулгамтгай. 自暴自弃 — өөрийгөө хаях, 暴跳如雷 — уурлан дэвхцэх.",
+  "order_index": 1,
+  "id": "fazhan-gaoji2-l09-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "遇到困难也不能（ ），要坚持下去。",
+  "options": [
+   "调兵遣将",
+   "滚瓜烂熟",
+   "自暴自弃",
+   "独断专行"
+  ],
+  "correct_answer": "自暴自弃",
+  "explanation": "自暴自弃 = өөрийгөө хаясан, ахиц эрэлхийлэхээ больсон.",
+  "order_index": 2,
+  "id": "fazhan-gaoji2-l09-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "艰苦的生活（ ）了他的意志，使他变得更加坚强。",
+  "options": [
+   "触动",
+   "涌现",
+   "削弱",
+   "磨炼"
+  ],
+  "correct_answer": "磨炼",
+  "explanation": "磨炼 = (хүнд нөхцөлд) хатаах. 涌现 — олноор гарч ирэх, 削弱 — сулруулах, 触动 — хөдөлгөх.",
+  "order_index": 3,
+  "id": "fazhan-gaoji2-l09-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "他（ ）着自己有后台，不把经理放在眼里。",
+  "options": [
+   "抗",
+   "仗",
+   "杖",
+   "丈"
+  ],
+  "correct_answer": "仗",
+  "explanation": "仗着 = түшиж, найдаж.",
+  "order_index": 4,
+  "id": "fazhan-gaoji2-l09-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "警方怀疑他和国外的犯罪集团（ ）。",
+  "options": [
+   "讨伐",
+   "拉拢",
+   "勾结",
+   "投降"
+  ],
+  "correct_answer": "勾结",
+  "explanation": "勾结 = (бузар зорилгоор) нууцаар нийлэх.",
+  "order_index": 5,
+  "id": "fazhan-gaoji2-l09-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "老板正在（ ）新的总经理人选。",
+  "options": [
+   "物色",
+   "打趣",
+   "涌现",
+   "触动"
+  ],
+  "correct_answer": "物色",
+  "explanation": "物色 = хайж олох (хэрэгтэй хүн, юм).",
+  "order_index": 6,
+  "id": "fazhan-gaoji2-l09-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "在长辈面前，说话不能这么（ ）。",
+  "options": [
+   "辽阔",
+   "放肆",
+   "雄厚",
+   "健壮"
+  ],
+  "correct_answer": "放肆",
+  "explanation": "放肆 = (үг, үйлдэл) хайхрамжгүй, хязгааргүй.",
+  "order_index": 7,
+  "id": "fazhan-gaoji2-l09-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "同学们常常互相（ ），关系非常好。",
+  "options": [
+   "融会",
+   "惩办",
+   "诬告",
+   "打趣"
+  ],
+  "correct_answer": "打趣",
+  "explanation": "打趣 = бусдыг наргих.",
+  "order_index": 8,
+  "id": "fazhan-gaoji2-l09-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这家公司（ ）雄厚，在行业里数一数二。",
+  "options": [
+   "朝政",
+   "形势",
+   "实力",
+   "政务"
+  ],
+  "correct_answer": "实力",
+  "explanation": "实力雄厚 = бодит хүч чадал сайтай.",
+  "order_index": 9,
+  "id": "fazhan-gaoji2-l09-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "他被人（ ）犯了大罪，差一点儿被抓起来。",
+  "options": [
+   "惩办",
+   "诬告",
+   "打趣",
+   "投降"
+  ],
+  "correct_answer": "诬告",
+  "explanation": "诬告 = үндэслэлгүйгээр хэрэгт буруутгах.",
+  "order_index": 10,
+  "id": "fazhan-gaoji2-l09-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "看到形势对自己不利，敌人只好（ ）了。",
+  "options": [
+   "撑腰",
+   "投降",
+   "拉拢",
+   "讨伐"
+  ],
+  "correct_answer": "投降",
+  "explanation": "投降 = ялагдлаа хүлээн дагаар орох.",
+  "order_index": 11,
+  "id": "fazhan-gaoji2-l09-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他一直在国外，对国内的（ ）不太了解。",
+  "options": [
+   "门槛",
+   "侍卫",
+   "领地",
+   "形势"
+  ],
+  "correct_answer": "形势",
+  "explanation": "形势 = нөхцөл байдал.",
+  "order_index": 12,
+  "id": "fazhan-gaoji2-l09-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "这位将军在战争中（ ），指挥有方，很快取得了胜利。",
+  "options": [
+   "调兵遣将",
+   "怀恨在心",
+   "先发制人",
+   "暴跳如雷"
+  ],
+  "correct_answer": "调兵遣将",
+  "explanation": "调兵遣将 = цэрэг, жанжнаа зохион байгуулах.",
+  "order_index": 13,
+  "id": "fazhan-gaoji2-l09-q13",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Аль өгүүлбэр өгүүлэгдэхүүнийг ЗӨВ хасаж бичсэн бэ?",
+  "options": [
+   "我有一个中国朋友叫大伟，今年21岁，大伟能说很流利的他的韩国语。",
+   "我有一个中国朋友叫大伟，今年21岁，能说很流利的韩国语。",
+   "我有一个中国朋友叫大伟，我今年21岁，我能说很流利的韩国语。",
+   "我有一个中国朋友叫大伟，他今年21岁，他能说很流利的韩国语。"
+  ],
+  "correct_answer": "我有一个中国朋友叫大伟，今年21岁，能说很流利的韩国语。",
+  "explanation": "Нэг хүний тухай үргэлжлэх мөрүүдэд «他»-г давтахгүй.",
+  "order_index": 14,
+  "id": "fazhan-gaoji2-l09-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Аль нь «吴三桂 — 清兵 — 吴三桂» гэж өгүүлэгдэхүүн солигдох үед ЗӨВ бичигдсэн бэ?",
+  "options": [
+   "吴三桂开始打了一些胜仗，后来清兵越来越多，越打越强，吴三桂的力量渐渐被削弱。",
+   "吴三桂开始打了一些胜仗，后来他越来越多，越打越强，他渐渐被削弱。",
+   "吴三桂开始打了一些胜仗，后来越来越多，越打越强，力量渐渐被削弱。",
+   "开始打了一些胜仗，后来越来越多，越打越强，吴三桂渐渐被削弱。"
+  ],
+  "correct_answer": "吴三桂开始打了一些胜仗，后来清兵越来越多，越打越强，吴三桂的力量渐渐被削弱。",
+  "explanation": "Хүн солигдох үед өгүүлэгдэхүүнийг хасаж болохгүй.",
+  "order_index": 15,
+  "id": "fazhan-gaoji2-l09-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "在几个孩子里头，________最有出息。",
+  "options": [
+   "小芳是",
+   "数小芳",
+   "就小芳的",
+   "小芳数"
+  ],
+  "correct_answer": "数小芳",
+  "explanation": "«数 + хүн + 最……» — хамгийн тод нэгийг шалгаруулна.",
+  "order_index": 16,
+  "id": "fazhan-gaoji2-l09-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "川菜品种很多，其中最大众化的________鱼香肉丝。",
+  "options": [
+   "当作",
+   "当时",
+   "当数",
+   "当然"
+  ],
+  "correct_answer": "当数",
+  "explanation": "«最……的 + 当数 + нэр үг» — бичгийн «数» өгүүлбэр.",
+  "order_index": 17,
+  "id": "fazhan-gaoji2-l09-q17",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Аль өгүүлбэр «数» бүтцийг ЗӨВ хэрэглэсэн бэ?",
+  "options": [
+   "在班上数最大年龄他。",
+   "在班上年龄最大数。",
+   "在班上数他年龄最大。",
+   "在班上他数年龄最大。"
+  ],
+  "correct_answer": "在班上数他年龄最大。",
+  "explanation": "«数 + хүн + үнэлгээ».",
+  "order_index": 18,
+  "id": "fazhan-gaoji2-l09-q18",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«小陈的成绩，在班里数一数二。» гэж юу гэсэн үг вэ?",
+  "options": [
+   "дунд зэрэг",
+   "нэгдүгээр эсвэл хоёрдугаарт орох сайн түвшинд",
+   "нэгээс хоёр хүртэл тоолох",
+   "хамгийн сүүлд орох"
+  ],
+  "correct_answer": "нэгдүгээр эсвэл хоёрдугаарт орох сайн түвшинд",
+  "explanation": "«数一数二» = «нэгд, хоёрт тоологдох».",
+  "order_index": 19,
+  "id": "fazhan-gaoji2-l09-q19",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "你同意，我要去；你不同意，我________要去。",
+  "options": [
+   "却",
+   "就",
+   "才",
+   "也"
+  ],
+  "correct_answer": "也",
+  "explanation": "«不X也Y» — хоёр дахь хэсэгт «也» заавал.",
+  "order_index": 20,
+  "id": "fazhan-gaoji2-l09-q20",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "价格已经谈好了，买也不合适，________也不合适。",
+  "options": [
+   "别买",
+   "买不",
+   "不买",
+   "没买"
+  ],
+  "correct_answer": "不买",
+  "explanation": "«X也Y，不X也Y» — «买也不合适，不买也不合适».",
+  "order_index": 21,
+  "id": "fazhan-gaoji2-l09-q21",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«你想上就上，不想上就不上。» нь «X也Y，不X也Y»-тэй хэрхэн ялгагдах вэ?",
+  "options": [
+   "үр дүн X-ээс хамаарч ЭСРЭГ байна (хийвэл хийнэ, хийхгүй бол хийхгүй)",
+   "өнгөрсөн үйлдлийг заана",
+   "хоёр хэсэг адил үр дүнтэй",
+   "өгүүлэгдэхүүнтэй байж болохгүй"
+  ],
+  "correct_answer": "үр дүн X-ээс хамаарч ЭСРЭГ байна (хийвэл хийнэ, хийхгүй бол хийхгүй)",
+  "explanation": "«X就Y，不X就不Y» — эсрэг үр дүнтэй хэв.",
+  "order_index": 22,
+  "id": "fazhan-gaoji2-l09-q22",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "Аль нь «аль ч тохиолдолд ижил үр дүн» гэсэн утгыг ЗӨВ илэрхийлсэн бэ?",
+  "options": [
+   "我的话你听得听，不听也不听。",
+   "我的话你听也得听，也不听得听。",
+   "我的话你听也得听，不听得听。",
+   "我的话你听也得听，不听也得听。"
+  ],
+  "correct_answer": "我的话你听也得听，不听也得听。",
+  "explanation": "«X（也得）Y，不X也（得）Y».",
+  "order_index": 23,
+  "id": "fazhan-gaoji2-l09-q23",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "这孩子，________也好，没有时间也好，从来想不着回来看我。",
+  "options": [
+   "有没时间",
+   "不有时间",
+   "有时间",
+   "时间有"
+  ],
+  "correct_answer": "有时间",
+  "explanation": "«X也好，不X也好» — адил утгатай нийлмэл.",
+  "order_index": 24,
+  "id": "fazhan-gaoji2-l09-q24",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«由他把苏克萨哈杀了» (текст) дахь «由» ямар утгатай вэ?",
+  "options": [
+   "нийлбэр",
+   "газар заах",
+   "«түүнд … -г хийхийг зөвшөөрөх» (хэнд үлдээх)",
+   "шалтгаан заах"
+  ],
+  "correct_answer": "«түүнд … -г хийхийг зөвшөөрөх» (хэнд үлдээх)",
+  "explanation": "由 + хүн + V — «түүнд үлдээх, түүнийг хийлгэх».",
+  "order_index": 25,
+  "id": "fazhan-gaoji2-l09-q25",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "reading",
+  "question": "康熙五岁开始读书，满族师傅教他什么？",
+  "options": [
+   "四书",
+   "算学",
+   "三字经",
+   "满语和骑射"
+  ],
+  "correct_answer": "满语和骑射",
+  "explanation": "Р2: «满族师傅教他满语骑射»; хятад багш «三百千» заасан.",
+  "order_index": 26,
+  "id": "fazhan-gaoji2-l09-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "康熙的童年很不幸，但他是怎样面对的？",
+  "options": [
+   "没有自暴自弃，而是更加努力学习，磨炼意志",
+   "放弃学习",
+   "依靠大臣",
+   "离开皇宫"
+  ],
+  "correct_answer": "没有自暴自弃，而是更加努力学习，磨炼意志",
+  "explanation": "Р3.",
+  "order_index": 27,
+  "id": "fazhan-gaoji2-l09-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "康熙是怎样除掉鳌拜的？",
+  "options": [
+   "把他杀死在朝廷上",
+   "派军队包围他的家",
+   "派一批少年练摔跤，鳌拜单独进宫时把他抓了起来",
+   "请别的大臣审判他"
+  ],
+  "correct_answer": "派一批少年练摔跤，鳌拜单独进宫时把他抓了起来",
+  "explanation": "Р5-6.",
+  "order_index": 28,
+  "id": "fazhan-gaoji2-l09-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "康熙为什么批准尚可喜退休，却不让他儿子接替王位？",
+  "options": [
+   "尚可喜犯了罪",
+   "想削弱藩王的势力",
+   "儿子能力太差",
+   "儿子年纪太小"
+  ],
+  "correct_answer": "想削弱藩王的势力",
+  "explanation": "Р9: «必须得找机会削弱他们的势力».",
+  "order_index": 29,
+  "id": "fazhan-gaoji2-l09-q29",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "吴三桂起兵八年后结果怎样？",
+  "options": [
+   "清军平定叛乱，统一了南方",
+   "康熙投降",
+   "三藩建立新王朝",
+   "吴三桂统一南方"
+  ],
+  "correct_answer": "清军平定叛乱，统一了南方",
+  "explanation": "Р12.",
+  "order_index": 30,
+  "id": "fazhan-gaoji2-l09-q30",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 康熙 / 当 / 皇帝 / 的时候 / 才 / 八岁",
+  "options": [
+   "当皇帝的时候康熙才八岁",
+   "康熙当皇帝的时候才八岁",
+   "八岁康熙才当皇帝的时候",
+   "康熙才当皇帝的时候八岁"
+  ],
+  "correct_answer": "康熙当皇帝的时候才八岁",
+  "explanation": "Р4.",
+  "order_index": 31,
+  "id": "fazhan-gaoji2-l09-q31",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 批准 / 他要反 / 不批准 / 他迟早也要反",
+  "options": [
+   "批准他要反，他迟早也要反不批准",
+   "批准，他要反；不批准，他迟早也要反",
+   "不批准，他要反；批准，他迟早也要反",
+   "批准，他迟早也要反；不批准，他要反"
+  ],
+  "correct_answer": "批准，他要反；不批准，他迟早也要反",
+  "explanation": "«X（也）（要）Y，不X也（要）Y».",
+  "order_index": 32,
+  "id": "fazhan-gaoji2-l09-q32",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ }
+]

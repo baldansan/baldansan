@@ -1,0 +1,578 @@
+[
+ {
+  "type": "cloze",
+  "question": "他们在河边建起高高的堤坝，（ ）洪水的侵入。",
+  "options": [
+   "传递",
+   "忽略",
+   "回味",
+   "抵御"
+  ],
+  "correct_answer": "抵御",
+  "explanation": "抵御 = гаднаас ирэх аюулаас хамгаалах.",
+  "order_index": 1,
+  "id": "fazhan-gaoji1-l14-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我在写作的时候，常常（ ）标点符号。",
+  "options": [
+   "沉浸",
+   "忽略",
+   "降临",
+   "抵御"
+  ],
+  "correct_answer": "忽略",
+  "explanation": "忽略 = анзааралгүй алгасах.",
+  "order_index": 2,
+  "id": "fazhan-gaoji1-l14-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "她的家里布置得让人感觉很（ ）。",
+  "options": [
+   "恐惧",
+   "温馨",
+   "庞大",
+   "孤独"
+  ],
+  "correct_answer": "温馨",
+  "explanation": "温馨 = дулаан, тухтай.",
+  "order_index": 3,
+  "id": "fazhan-gaoji1-l14-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "全球气温升高，北极那些（ ）的冰块开始融化。",
+  "options": [
+   "从容",
+   "温馨",
+   "忧愁",
+   "庞大"
+  ],
+  "correct_answer": "庞大",
+  "explanation": "庞大 = асар том.",
+  "order_index": 4,
+  "id": "fazhan-gaoji1-l14-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我常常（ ）和他在一起时的生活。",
+  "options": [
+   "回味",
+   "传递",
+   "抵御",
+   "忽略"
+  ],
+  "correct_answer": "回味",
+  "explanation": "回味 = сайхан дурсамжийг эргэн амсах.",
+  "order_index": 5,
+  "id": "fazhan-gaoji1-l14-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "外婆病了，母亲非常（ ）。",
+  "options": [
+   "忧愁",
+   "轰轰烈烈",
+   "庞大",
+   "温馨"
+  ],
+  "correct_answer": "忧愁",
+  "explanation": "忧愁 = санаа зовсон, гунигтай.",
+  "order_index": 6,
+  "id": "fazhan-gaoji1-l14-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这样的小事情，（ ），那是我应该做的。",
+  "options": [
+   "不足挂齿",
+   "天涯海角",
+   "大惊小怪",
+   "南辕北辙"
+  ],
+  "correct_answer": "不足挂齿",
+  "explanation": "不足挂齿 — дурдах хэрэггүй жижиг зүйл.",
+  "order_index": 7,
+  "id": "fazhan-gaoji1-l14-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "母亲（ ）儿子，吸烟对身体有害。",
+  "options": [
+   "荣辱不惊",
+   "天涯海角",
+   "谆谆告诫",
+   "轰轰烈烈"
+  ],
+  "correct_answer": "谆谆告诫",
+  "explanation": "谆谆告诫 — нарийн сэтгэлээр сануулах.",
+  "order_index": 8,
+  "id": "fazhan-gaoji1-l14-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "作研究如果方法不对，也可能会（ ）。",
+  "options": [
+   "南辕北辙",
+   "白发苍苍",
+   "大惊小怪",
+   "不足挂齿"
+  ],
+  "correct_answer": "南辕北辙",
+  "explanation": "南辕北辙 — зорилгоосоо эсрэг.",
+  "order_index": 9,
+  "id": "fazhan-gaoji1-l14-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "cloze",
+  "question": "你不必（ ），这里每天晚上在广场跳舞的老人多的是。",
+  "options": [
+   "大惊小怪",
+   "天涯海角",
+   "南辕北辙",
+   "荣辱不惊"
+  ],
+  "correct_answer": "大惊小怪",
+  "explanation": "大惊小怪 — үл хэрэгтэй сандрах.",
+  "order_index": 10,
+  "id": "fazhan-gaoji1-l14-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "在工作中，大的问题我们要重视，小的问题我们也不能完全（ ）。",
+  "options": [
+   "忽视",
+   "重视",
+   "把握",
+   "珍惜"
+  ],
+  "correct_answer": "忽视",
+  "explanation": "忽视 — үл тоох; 重视-тэй эсрэг.",
+  "order_index": 11,
+  "id": "fazhan-gaoji1-l14-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "经过多方调查，我们找到了这起爆炸事件的（ ）。",
+  "options": [
+   "真相",
+   "真实",
+   "真谛",
+   "真心"
+  ],
+  "correct_answer": "真相",
+  "explanation": "真相 = үйл явдлын жинхэнэ байдал.",
+  "order_index": 12,
+  "id": "fazhan-gaoji1-l14-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "幸福的（ ）在于安安静静地体验。",
+  "options": [
+   "真心",
+   "真相",
+   "重视",
+   "真谛"
+  ],
+  "correct_answer": "真谛",
+  "explanation": "真谛 = жинхэнэ утга.",
+  "order_index": 13,
+  "id": "fazhan-gaoji1-l14-q13",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "choice",
+  "question": "«轰轰烈烈» бол …",
+  "options": [
+   "дуу цуутай, хүчтэй",
+   "чимээгүй, тайван",
+   "цөөн хүнтэй",
+   "удаан үргэлжлэх"
+  ],
+  "correct_answer": "дуу цуутай, хүчтэй",
+  "explanation": "轰轰烈烈 — дуу цуутай, асар том.",
+  "order_index": 14,
+  "id": "fazhan-gaoji1-l14-q14",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "天气刚变化，妈妈（ ）说：“别忘了多穿衣服！”",
+  "options": [
+   "则",
+   "简言之",
+   "就",
+   "何尝"
+  ],
+  "correct_answer": "就",
+  "explanation": "连贯复句: 就 — дараалсан үйлдэл.",
+  "order_index": 15,
+  "id": "fazhan-gaoji1-l14-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "我租了学校附近的一套房子，（ ）把行李搬过去住。",
+  "options": [
+   "何尝",
+   "于是",
+   "岂不是",
+   "则"
+  ],
+  "correct_answer": "于是",
+  "explanation": "于是 — тиймээс, дараа нь.",
+  "order_index": 16,
+  "id": "fazhan-gaoji1-l14-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "他（ ）回答第一个问题，（ ）回答第二个问题。",
+  "options": [
+   "时而……时而……",
+   "先……接着……",
+   "宁可……也不……",
+   "既……又……"
+  ],
+  "correct_answer": "先……接着……",
+  "explanation": "先……接着…… — дараалсан үйлдлүүд.",
+  "order_index": 17,
+  "id": "fazhan-gaoji1-l14-q17",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "我（ ）不想回老家看看？只是没有时间罢了。",
+  "options": [
+   "何尝",
+   "何必",
+   "难道",
+   "岂止"
+  ],
+  "correct_answer": "何尝",
+  "explanation": "何尝不想 — «яагаад хүсэхгүй байх билээ» → хүсч байна.",
+  "order_index": 18,
+  "id": "fazhan-gaoji1-l14-q18",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "下面哪一句话和“我何尝说过这样的话呢？”意思相同？",
+  "options": [
+   "我说过这样的话",
+   "我不知道说什么",
+   "我想说这样的话",
+   "我没有说过这样的话"
+  ],
+  "correct_answer": "我没有说过这样的话",
+  "explanation": "何尝 + V过 → «огт хэлээгүй».",
+  "order_index": 19,
+  "id": "fazhan-gaoji1-l14-q19",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "艰难的生活环境，炼（ ）了年轻人克服困难的意志。",
+  "options": [
+   "就",
+   "而",
+   "于",
+   "则"
+  ],
+  "correct_answer": "就",
+  "explanation": "V+就 — амжилттай бүтээх (炼就).",
+  "order_index": 20,
+  "id": "fazhan-gaoji1-l14-q20",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "正是军队的艰苦生活（ ）了他。",
+  "options": [
+   "铸成了",
+   "铸就",
+   "铸造",
+   "铸出来"
+  ],
+  "correct_answer": "铸就",
+  "explanation": "铸就 — тарган бүтээх (V+就).",
+  "order_index": 21,
+  "id": "fazhan-gaoji1-l14-q21",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "这个城市很美，到处都是绿树、流水、鸟语、花香，（ ），这是一个令人感到舒适的城市。",
+  "options": [
+   "于是",
+   "简言之",
+   "何尝",
+   "时而"
+  ],
+  "correct_answer": "简言之",
+  "explanation": "简言之 — дээрх зүйлийг товчхон дүгнэх.",
+  "order_index": 22,
+  "id": "fazhan-gaoji1-l14-q22",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "上次的考试题很容易，这次的考试题（ ）很难。",
+  "options": [
+   "则",
+   "于是",
+   "就",
+   "简言之"
+  ],
+  "correct_answer": "则",
+  "explanation": "则 — харьцуулалт, эсрэгцүүлэл.",
+  "order_index": 23,
+  "id": "fazhan-gaoji1-l14-q23",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "下面哪一句是对的？",
+  "options": [
+   "春天万物复苏，则冬天万物凋谢。",
+   "春天万物复苏，冬天凋谢则万物。",
+   "春天万物复苏，冬天则万物凋谢。",
+   "春天则万物复苏，冬天万物凋谢。"
+  ],
+  "correct_answer": "春天万物复苏，冬天则万物凋谢。",
+  "explanation": "则 — хоёр дахь хэсгийн эхэнд (өгүүлэгдэхүүний дараа).",
+  "order_index": 24,
+  "id": "fazhan-gaoji1-l14-q24",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "下面哪一句有语病？",
+  "options": [
+   "成功能使人增加信心，失败则使人增加经验。",
+   "小李外向乐观，小王则比较内向。",
+   "成功能使人增加信心，则失败使人增加经验。",
+   "上次容易，这次则很难。"
+  ],
+  "correct_answer": "成功能使人增加信心，则失败使人增加经验。",
+  "explanation": "则 нь дэд өгүүлбэрийн ХОЁР ДАХЬ хэсэгт, subject-ийн ДАРАА орно: «失败则使…».",
+  "order_index": 25,
+  "id": "fazhan-gaoji1-l14-q25",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "“则”的用法，下面哪项说得对？",
+  "options": [
+   "表示强调",
+   "书面语，表示不同情况的对比",
+   "口语，表示因果",
+   "只用在句首"
+  ],
+  "correct_answer": "书面语，表示不同情况的对比",
+  "explanation": "则 нь бичгийн хэл, харьцуулалт.",
+  "order_index": 26,
+  "id": "fazhan-gaoji1-l14-q26",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "课文说，我们从小就习惯了什么？",
+  "options": [
+   "在快乐中过日子",
+   "在“提醒”中过日子",
+   "一个人生活",
+   "不听别人的话"
+  ],
+  "correct_answer": "在“提醒”中过日子",
+  "explanation": "Хичээлийн эхэнд: 我们从小就习惯了在“提醒”中过日子.",
+  "order_index": 27,
+  "id": "fazhan-gaoji1-l14-q27",
+  "skillTags": [
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "“提醒”被比作什么？",
+  "options": [
+   "一个小孩",
+   "一位老师",
+   "一个医生",
+   "一位智慧的老人"
+  ],
+  "correct_answer": "一位智慧的老人",
+  "explanation": "智慧老人 — «сануулга»-ын дүр.",
+  "order_index": 28,
+  "id": "fazhan-gaoji1-l14-q28",
+  "skillTags": [
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "课文中，智慧老人一万零一次地提醒我们什么，却从不提醒我们什么？",
+  "options": [
+   "努力学习；休息",
+   "多吃饭；少睡觉",
+   "注意幸福；注意灾难",
+   "注意灾难；注意幸福"
+  ],
+  "correct_answer": "注意灾难；注意幸福",
+  "explanation": "Сануулга гай гамшгийг сануулсан ч аз жаргалыг хэзээ ч сануулаагүй.",
+  "order_index": 29,
+  "id": "fazhan-gaoji1-l14-q29",
+  "skillTags": [
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "作者认为，幸福是什么？",
+  "options": [
+   "一次成功的婚姻",
+   "一个高的地位",
+   "一大笔财富",
+   "一种心灵的颤动"
+  ],
+  "correct_answer": "一种心灵的颤动",
+  "explanation": "Тайлбарт: 幸福是一种心灵的颤动.",
+  "order_index": 30,
+  "id": "fazhan-gaoji1-l14-q30",
+  "skillTags": [
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "作者认为，幸福并不与什么同步？",
+  "options": [
+   "天气、季节、时间",
+   "朋友、家人、父母",
+   "音乐、艺术、文学",
+   "财富、地位、声望、婚姻"
+  ],
+  "correct_answer": "财富、地位、声望、婚姻",
+  "explanation": "幸福并不与财富、地位、声望、婚姻同步.",
+  "order_index": 31,
+  "id": "fazhan-gaoji1-l14-q31",
+  "skillTags": [
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "作者要我们怎样对待幸福？",
+  "options": [
+   "安安静静地体验幸福的真谛",
+   "轰轰烈烈地追求幸福",
+   "等待幸福自己来",
+   "不必提醒自己"
+  ],
+  "correct_answer": "安安静静地体验幸福的真谛",
+  "explanation": "Дүгнэлт: 安安静静地体验幸福的真谛.",
+  "order_index": 32,
+  "id": "fazhan-gaoji1-l14-q32",
+  "skillTags": [
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ }
+]

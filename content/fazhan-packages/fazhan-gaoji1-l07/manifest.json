@@ -1,0 +1,25 @@
+{
+ "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+ "courseType": "chinese-hsk",
+ "courseId": "fazhan-gaoji1",
+ "lessonId": "fazhan-gaoji1-l07",
+ "hskLevel": 6,
+ "lessonNumber": 7,
+ "lessonProfile": "hsk4-dialogue-shorttext-exam-workbook",
+ "lessonType": "hsk4-dialogue-shorttext-exam-workbook",
+ "language": "zh-MN",
+ "targetLanguage": "zh",
+ "uiLanguage": "mn",
+ "title": "北京人与上海人",
+ "mongolianTitle": "Бээжингийнхэн ба Шанхайчууд",
+ "series": "发展汉语（第二版）高级综合 I",
+ "seriesLabel_mn": "发展汉语 ахисан I (≈HSK5-6)",
+ "source": "发展汉语（第二版）高级综合 I · 第7课 (сурах бичиг, 参考答案 (АУДИО, 课件, 教案 байхгүй))",
+ "hasAudio": false,
+ "hasImages": false,
+ "verification": {
+  "answerStatus": "official_answer_key_verified (参考答案)",
+  "textStatus": "source_verified (сурах бичгийн хуудсыг зургаар уншсан)",
+  "teacherLayer": "агентаар бичигдсэн (албан 教案 байхгүй тул)"
+ }
+}

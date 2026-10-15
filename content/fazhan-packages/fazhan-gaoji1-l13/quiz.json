@@ -1,0 +1,632 @@
+[
+ {
+  "type": "cloze",
+  "question": "外面，（ ）是隆隆的飞机盘旋声，（ ）是震耳的炮火声。",
+  "options": [
+   "时而",
+   "于是",
+   "忽然",
+   "然而"
+  ],
+  "correct_answer": "时而",
+  "explanation": "时而……时而…… — хоёр байдал ээлжлэн. Бусад нь энэ бүтэцтэй зохихгүй.",
+  "order_index": 1,
+  "id": "fazhan-gaoji1-l13-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这幅（ ）的画面恰巧被记者拍摄了下来。",
+  "options": [
+   "凄惨",
+   "慈爱",
+   "单薄",
+   "敏感"
+  ],
+  "correct_answer": "凄惨",
+  "explanation": "凄惨 = эмгэнэлтэй, зүрх өвтгөм. 单薄 — нимгэн, 敏感 — мэдрэмтгий.",
+  "order_index": 2,
+  "id": "fazhan-gaoji1-l13-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "她觉得后背和左臂（ ）被扔进了一个大火炉。",
+  "options": [
+   "假如",
+   "犹如",
+   "如何",
+   "宁愿"
+  ],
+  "correct_answer": "犹如",
+  "explanation": "犹如 = яг л …шиг (好像).",
+  "order_index": 3,
+  "id": "fazhan-gaoji1-l13-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "他看着孩子痛苦的面容，（ ）了。",
+  "options": [
+   "康复",
+   "播放",
+   "震惊",
+   "愈合"
+  ],
+  "correct_answer": "震惊",
+  "explanation": "震惊 = маш их цочирдох.",
+  "order_index": 4,
+  "id": "fazhan-gaoji1-l13-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "经过17次艰难的手术，金梅终于逐渐（ ）。",
+  "options": [
+   "麻痹",
+   "康复",
+   "克制",
+   "洋溢"
+  ],
+  "correct_answer": "康复",
+  "explanation": "康复 = эрүүл болох, эдгэрэх.",
+  "order_index": 5,
+  "id": "fazhan-gaoji1-l13-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "留在她心里那些可怕的阴影和伤痕却难以（ ）。",
+  "options": [
+   "愈合",
+   "盘旋",
+   "转交",
+   "播放"
+  ],
+  "correct_answer": "愈合",
+  "explanation": "愈合 — шарх, сорви эдгэх.",
+  "order_index": 6,
+  "id": "fazhan-gaoji1-l13-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "他只有不断喝酒，让自己的心暂时（ ），忘记那些孩子们。",
+  "options": [
+   "麻痹",
+   "凝固",
+   "跨越",
+   "洋溢"
+  ],
+  "correct_answer": "麻痹",
+  "explanation": "麻痹 = мэдээгүй болгох.",
+  "order_index": 7,
+  "id": "fazhan-gaoji1-l13-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "cloze",
+  "question": "自责感再次如影随形（ ）令他无处逃避。",
+  "options": [
+   "着",
+   "了",
+   "的",
+   "般"
+  ],
+  "correct_answer": "般",
+  "explanation": "如影随形般 — «…шиг» гэсэн утгатай хэлбэр.",
+  "order_index": 8,
+  "id": "fazhan-gaoji1-l13-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "choice",
+  "question": "这个洋溢着甜美微笑的女人，就是留在他脑海中的小女孩儿。 «洋溢» бол …",
+  "options": [
+   "хэлэлцэх",
+   "чанга хашгирах",
+   "хаалга нээх",
+   "оргилох, дүүрэн асгарах"
+  ],
+  "correct_answer": "оргилох, дүүрэн асгарах",
+  "explanation": "洋溢着 + сэтгэл, инээмсэглэл — оргилж дүүрэх.",
+  "order_index": 9,
+  "id": "fazhan-gaoji1-l13-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "她显然是在尽力（ ）一下自己激动的情绪。",
+  "options": [
+   "播放",
+   "转交",
+   "移植",
+   "克制"
+  ],
+  "correct_answer": "克制",
+  "explanation": "克制 = сэтгэл хөдлөлөө барих.",
+  "order_index": 10,
+  "id": "fazhan-gaoji1-l13-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "他把纸条递给警卫，小声恳求道：“请你务必把这个（ ）给阮金梅。”",
+  "options": [
+   "轰炸",
+   "盘旋",
+   "凝固",
+   "转交"
+  ],
+  "correct_answer": "转交",
+  "explanation": "转交 = дамжуулан өгөх.",
+  "order_index": 11,
+  "id": "fazhan-gaoji1-l13-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他感到（ ）无从说起，只是一遍遍重复地说着：“我很抱歉。”",
+  "options": [
+   "千言万语",
+   "东躲西藏",
+   "如影随形",
+   "所见所闻"
+  ],
+  "correct_answer": "千言万语",
+  "explanation": "千言万语 = хэлэх үг тэр чигтээ олон.",
+  "order_index": 12,
+  "id": "fazhan-gaoji1-l13-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "（ ）历史不要重演，（ ）噩梦不要重来。",
+  "options": [
+   "但愿",
+   "情愿",
+   "宁愿",
+   "以便"
+  ],
+  "correct_answer": "但愿",
+  "explanation": "但愿 = …л болоосой (найдвар).",
+  "order_index": 13,
+  "id": "fazhan-gaoji1-l13-q13",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "一个年幼（ ）的孩子，在战火中如此痛苦。",
+  "options": [
+   "无辜",
+   "单薄",
+   "惊恐",
+   "敏感"
+  ],
+  "correct_answer": "无辜",
+  "explanation": "无辜 = гэм зэмгүй.",
+  "order_index": 14,
+  "id": "fazhan-gaoji1-l13-q14",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "我们（ ）预订饭店房间，（ ）收拾行李。",
+  "options": [
+   "一边……一边……",
+   "不是……就是……",
+   "既……又……",
+   "一会儿……一会儿……"
+  ],
+  "correct_answer": "一边……一边……",
+  "explanation": "Хоёр үйлдэл нэгэн зэрэг — 一边……一边……",
+  "order_index": 15,
+  "id": "fazhan-gaoji1-l13-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "这位教授（ ）有丰富的知识，（ ）有很幽默的性格。",
+  "options": [
+   "既……又……",
+   "时而……时而……",
+   "宁可……也不……",
+   "一边……一边……"
+  ],
+  "correct_answer": "既……又……",
+  "explanation": "Хоёр шинж — 既……又……",
+  "order_index": 16,
+  "id": "fazhan-gaoji1-l13-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "孩子们（ ）唱歌，（ ）跳舞，玩得很高兴。",
+  "options": [
+   "一会儿……一会儿……",
+   "既……又……",
+   "一方面……一方面……",
+   "一边……一边……"
+  ],
+  "correct_answer": "一会儿……一会儿……",
+  "explanation": "Богино хугацаанд ээлжлэх — 一会儿……一会儿……",
+  "order_index": 17,
+  "id": "fazhan-gaoji1-l13-q17",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "冬天这里的天气不太好，（ ）下雪，（ ）下雨。",
+  "options": [
+   "一方面……一方面……",
+   "时而……时而……",
+   "一边……一边……",
+   "既……又……"
+  ],
+  "correct_answer": "时而……时而……",
+  "explanation": "Тодорхойгүй цагт ээлжлэх байдал — 时而……时而……",
+  "order_index": 18,
+  "id": "fazhan-gaoji1-l13-q18",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "下面哪一句有语病？",
+  "options": [
+   "他一边看书，一边听音乐。",
+   "他时而看书，一边听音乐。",
+   "他既看书，又听音乐。",
+   "他时而看书，时而听音乐。"
+  ],
+  "correct_answer": "他时而看书，一边听音乐。",
+  "explanation": "时而-ийн хос нь «时而»; «一边» нь өөр бүтэц.",
+  "order_index": 19,
+  "id": "fazhan-gaoji1-l13-q19",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "（ ）我所知，他是北京大学毕业的。",
+  "options": [
+   "把",
+   "被",
+   "据",
+   "对"
+  ],
+  "correct_answer": "据",
+  "explanation": "据我所知 — «所» хасагдахгүй хэвшмэл хэллэг.",
+  "order_index": 20,
+  "id": "fazhan-gaoji1-l13-q20",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "我（ ）找到的资料，都是解放以前的。",
+  "options": [
+   "被",
+   "所",
+   "让",
+   "把"
+  ],
+  "correct_answer": "所",
+  "explanation": "我所找到的资料 — «所»-ийн тодотгол.",
+  "order_index": 21,
+  "id": "fazhan-gaoji1-l13-q21",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "下面哪一句是对的？",
+  "options": [
+   "谈谈你们的见所闻所。",
+   "谈谈你们的所见所闻。",
+   "谈谈你们所的见闻。",
+   "谈谈你们的所见闻所。"
+  ],
+  "correct_answer": "谈谈你们的所见所闻。",
+  "explanation": "所见所闻 — «所» үйл үгийн өмнө.",
+  "order_index": 22,
+  "id": "fazhan-gaoji1-l13-q22",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "前面的（ ）高山挡住了去路。",
+  "options": [
+   "一座",
+   "一座座",
+   "两座座",
+   "三座座"
+  ],
+  "correct_answer": "一座座",
+  "explanation": "Давтагдсан хэмжих үгийн өмнө зөвхөн «一».",
+  "order_index": 23,
+  "id": "fazhan-gaoji1-l13-q23",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "我（ ）地回忆那些美好的往事。",
+  "options": [
+   "两遍遍",
+   "一遍遍",
+   "一遍",
+   "一遍的"
+  ],
+  "correct_answer": "一遍遍",
+  "explanation": "«дахин дахин» — 一遍遍.",
+  "order_index": 24,
+  "id": "fazhan-gaoji1-l13-q24",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "听了他的话，我（ ）大笑起来。",
+  "options": [
+   "立即去",
+   "顿时",
+   "一边",
+   "明天"
+  ],
+  "correct_answer": "顿时",
+  "explanation": "顿时 — болсон явдалд «тэр дор нь».",
+  "order_index": 25,
+  "id": "fazhan-gaoji1-l13-q25",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "下面哪一句不能说？",
+  "options": [
+   "被车一撞，她顿时昏过去了。",
+   "你顿时来！",
+   "听了他的话，我顿时大笑起来。",
+   "母亲进来一看，顿时脸色变了。"
+  ],
+  "correct_answer": "你顿时来！",
+  "explanation": "顿时 нь тушаалд хэрэглэгдэхгүй; «马上» хэрэглэнэ.",
+  "order_index": 26,
+  "id": "fazhan-gaoji1-l13-q26",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "顿时 нь «马上»-аас ялгаатай нь …",
+  "options": [
+   "хэзээ ч өгүүлбэрийн эхэнд ордоггүй",
+   "ирээдүйн явдалд хэрэглэнэ",
+   "өгүүлбэрийн эхэнд орж чадна, зөвхөн болсон явдалд",
+   "тушаалд хэрэглэнэ"
+  ],
+  "correct_answer": "өгүүлбэрийн эхэнд орж чадна, зөвхөн болсон явдалд",
+  "explanation": "顿时 — болсон явдал; эхэнд ч орж чадна.",
+  "order_index": 27,
+  "id": "fazhan-gaoji1-l13-q27",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "reading",
+  "question": "阮金梅是哪国人？",
+  "options": [
+   "加拿大人",
+   "美国人",
+   "越南人",
+   "中国人"
+  ],
+  "correct_answer": "越南人",
+  "explanation": "Өгүүллийн эхэнд: 越南小姑娘阮金梅.",
+  "order_index": 28,
+  "id": "fazhan-gaoji1-l13-q28",
+  "skillTags": [
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "谁拍摄了小金梅奔跑的照片？",
+  "options": [
+   "一个越南士兵",
+   "约翰·柏拉默",
+   "金梅的母亲",
+   "美国联合新闻社的越南籍记者黄功吾"
+  ],
+  "correct_answer": "美国联合新闻社的越南籍记者黄功吾",
+  "explanation": "Хичээлд: 越南籍记者——黄功吾拍摄了下来.",
+  "order_index": 29,
+  "id": "fazhan-gaoji1-l13-q29",
+  "skillTags": [
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "柏拉默看到照片后为什么震惊？",
+  "options": [
+   "他不喜欢报纸",
+   "他意识到那是自己下令攻击的地区，孩子是战争的受害者",
+   "他想买那张照片",
+   "他认识照片上的孩子"
+  ],
+  "correct_answer": "他意识到那是自己下令攻击的地区，孩子是战争的受害者",
+  "explanation": "Зургийн доор «一号公路» гэж байв — өчигдрийн өмнөх өдөр тушаасан бүс.",
+  "order_index": 30,
+  "id": "fazhan-gaoji1-l13-q30",
+  "skillTags": [
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "柏拉默为什么不断喝酒？",
+  "options": [
+   "因为他是医生",
+   "因为他想庆祝",
+   "为了让自己的心暂时麻痹，忘记那些孩子",
+   "因为他喜欢喝酒"
+  ],
+  "correct_answer": "为了让自己的心暂时麻痹，忘记那些孩子",
+  "explanation": "Хичээлд: 让自己的心暂时麻痹，忘记那些孩子们.",
+  "order_index": 31,
+  "id": "fazhan-gaoji1-l13-q31",
+  "skillTags": [
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "柏拉默是怎么知道金梅还活着的？",
+  "options": [
+   "金梅给他写信",
+   "在电视的专题节目《他们在哪里》里看到",
+   "在报纸上看到",
+   "朋友告诉他"
+  ],
+  "correct_answer": "在电视的专题节目《他们在哪里》里看到",
+  "explanation": "1996 оны 6-р сард телевизээр «Тэд хаана байна вэ?» нэвтрүүлгийг үзсэн.",
+  "order_index": 32,
+  "id": "fazhan-gaoji1-l13-q32",
+  "skillTags": [
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "金梅在集会上对柏拉默说了什么？",
+  "options": [
+   "这不是你的错，而是战争的罪恶，我原谅你",
+   "我不认识你",
+   "你永远别来见我",
+   "请你回美国"
+  ],
+  "correct_answer": "这不是你的错，而是战争的罪恶，我原谅你",
+  "explanation": "Цзиньмэй: «这不是你的错，而是战争的罪恶！我原谅你.»",
+  "order_index": 33,
+  "id": "fazhan-gaoji1-l13-q33",
+  "skillTags": [
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "“所见所闻”中的“所”用在什么前面？",
+  "options": [
+   "及物动词",
+   "形容词",
+   "数词",
+   "名词"
+  ],
+  "correct_answer": "及物动词",
+  "explanation": "«所» нь шилжих үйл үгийн өмнө орно: 所见, 所闻, 所知.",
+  "order_index": 34,
+  "id": "fazhan-gaoji1-l13-q34",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "“一群群”“一幕幕”前面的数词只能是：",
+  "options": [
+   "多",
+   "三",
+   "二",
+   "一"
+  ],
+  "correct_answer": "一",
+  "explanation": "一 + 量词重叠 — тоо зөвхөн «一».",
+  "order_index": 35,
+  "id": "fazhan-gaoji1-l13-q35",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ }
+]
