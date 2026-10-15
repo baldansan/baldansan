@@ -80,7 +80,15 @@ export function ReviewMenuHubClient({
     if (!hydrated) return;
     setLoading(true);
 
-    const retention = await getStreakUnified().catch(() => null);
+    // Урьд нь 6-8 дуудлага дараалж (streak → auth → session → srs → bichleg) явдаг байсан —
+    // Монголоос Токио хүртэлх roundtrip бүр 0.3–0.5с тул бүгдийг 2 үе шатаар зэрэг явуулна.
+    const [retention, auth, session] = await Promise.all([
+      getStreakUnified().catch(() => null),
+      hasSupabaseConfig
+        ? getAuthenticatedUserId().catch(() => ({ userId: null }))
+        : Promise.resolve({ userId: null }),
+      hasSupabaseConfig ? getSession().catch(() => ({ data: null })) : Promise.resolve({ data: null }),
+    ]);
     const streak = retention?.currentStreak ?? 0;
     setSentenceCards(countSentenceCards());
 
@@ -89,13 +97,10 @@ export function ReviewMenuHubClient({
     let dailyGoal = DAILY_SRS_GOAL;
     let studiedCount = 0;
     let accuracyPct = 0;
-    let userId: string | null = null;
+    const userId: string | null = auth.userId ?? null;
+    let bichlegClip: BichlegContinueTarget | null = null;
 
     if (hasSupabaseConfig) {
-      const auth = await getAuthenticatedUserId();
-      userId = auth.userId;
-
-      const session = await getSession();
       const email = session.data?.user?.email;
       if (email) {
         setDisplayName(email.split("@")[0] ?? "Суралцагч");
@@ -106,7 +111,11 @@ export function ReviewMenuHubClient({
         void fetchMistakes(userId)
           .then(({ mistakes }) => setMistakeCount(mistakes.length))
           .catch(() => setMistakeCount(null));
-        const { data } = await getUserWordSrsStats(userId);
+        const [{ data }, clip] = await Promise.all([
+          getUserWordSrsStats(userId),
+          fetchBichlegContinueTargetClient().catch(() => null),
+        ]);
+        bichlegClip = clip;
         if (data) {
           dueCards = data.dueToday;
           dailyDone = data.dailyDone;
@@ -173,12 +182,7 @@ export function ReviewMenuHubClient({
       accuracyPct,
     });
 
-    if (userId) {
-      const clip = await fetchBichlegContinueTargetClient();
-      setBichlegContinue(clip);
-    } else {
-      setBichlegContinue(null);
-    }
+    setBichlegContinue(userId ? bichlegClip : null);
 
     setLoading(false);
   }, [activeLevel, hydrated]);
