@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import { PrefetchLink } from "@/components/navigation/prefetch-link";
 import { APP_NAV_ITEMS, type AppNavTab } from "@/lib/app-navigation";
 import { tr } from "@/lib/i18n/translate";
 import { useUiLocale } from "@/lib/i18n/ui-locale";
@@ -22,14 +22,15 @@ export default function BottomNav({
       aria-label="App navigation"
     >
       {APP_NAV_ITEMS.map((item) => (
-        <Link
+        <PrefetchLink
           key={item.key}
           href={item.href}
           className={active === item.key ? "bs-on" : ""}
+          aria-current={active === item.key ? "page" : undefined}
         >
           {item.icon}
           {tr(locale, item.label)}
-        </Link>
+        </PrefetchLink>
       ))}
     </nav>
   );

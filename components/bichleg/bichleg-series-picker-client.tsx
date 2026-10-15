@@ -26,7 +26,7 @@ export function BichlegSeriesPickerClient({
   const locale = useUiLocale();
   return (
     <MobileAppShell activeTab="clips" mainClassName={SHELL_MAIN_NARROW} desktopWidth="wide">
-      <h1 className="bs-tm-page-title">{tr(locale, "Дуу ба бичлэг")}</h1>
+      <h1 className="bs-tm-page-title bs-page-in">{tr(locale, "Дуу ба бичлэг")}</h1>
       <MediaTabs active="videos" />
 
       <div className="bs-tm-bichleg-greet">
@@ -57,7 +57,7 @@ export function BichlegSeriesPickerClient({
           </p>
         </div>
       ) : (
-        <div className="bs-tm-bichleg-list">
+        <div className="bs-tm-bichleg-list bs-stagger">
           {seriesList.map((series, index) => {
             const titleMn = series.title_mn ?? series.title_zh ?? series.id;
             const progress = seriesProgress[series.id];

@@ -13,6 +13,7 @@ import { getServerUiLocale } from "@/lib/i18n/server-locale";
 import { PwaServiceWorkerRegister } from "@/components/pwa-service-worker-register";
 import "./globals.css";
 import "./buunduu-theme.css";
+import "./motion.css";
 import "@/components/temee/temee-redesign.css";
 
 const nunito = Nunito({

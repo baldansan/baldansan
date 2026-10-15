@@ -3,7 +3,8 @@
 // Хятад текстийг дуудна: audio-cmn бичлэг → алдаа бол zh-CN TTS (удаан).
 // Аль нь ч болохгүй бол 🔇 + тайлбар харуулна (чимээгүй унтрахгүй).
 
-import { useCallback, useRef, useState } from "react";
+import { useCallback, useState } from "react";
+import { globalAudio } from "@/lib/audio/global-audio-store";
 import { playChineseWordAudio } from "@/lib/tts/play-chinese-word-audio";
 
 interface SpeakButtonProps {
@@ -17,7 +18,6 @@ const FAIL_MESSAGE =
   "Дуу гаргаж чадсангүй — Safari/Chrome хөтчөөр нээгээд үзээрэй (WeChat доторх хөтөч дуу дэмждэггүй). 无法播放 — 请用 Safari/Chrome 打开（微信内置浏览器不支持发音）。";
 
 export default function SpeakButton({ text, src, large, title }: SpeakButtonProps) {
-  const audioRef = useRef<HTMLAudioElement | null>(null);
   const [failed, setFailed] = useState(false);
 
   const handleFail = useCallback(() => {
@@ -33,17 +33,11 @@ export default function SpeakButton({ text, src, large, title }: SpeakButtonProp
   const speak = useCallback(() => {
     setFailed(false);
     if (src) {
-      try {
-        if (!audioRef.current) audioRef.current = new Audio(src);
-        else audioRef.current.src = src;
-        audioRef.current.currentTime = 0;
-        void audioRef.current.play().catch(() => {
-          void speakViaChain();
-        });
-        return;
-      } catch {
-        /* доош audio-cmn / TTS */
-      }
+      // Глобал clip суваг — хичээлийн урт аудио тоглож байвал түр зогсооно.
+      void globalAudio.playClip(src).then((result) => {
+        if (!result.ok) void speakViaChain();
+      });
+      return;
     }
     void speakViaChain();
   }, [src, speakViaChain]);

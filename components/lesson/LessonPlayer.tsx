@@ -114,9 +114,21 @@ export default function LessonPlayer({
           <CharactersModule lessonId={lessonId} lesson={lesson} onDone={next} />
         );
       case "dialogues":
-        return <DialoguesModule lesson={lesson} onDone={next} />;
+        return (
+          <DialoguesModule
+            lesson={lesson}
+            onDone={next}
+            trackHref={`/lessons/${lessonId}/watch`}
+          />
+        );
       case "texts":
-        return <TextsModule lesson={lesson} onDone={next} />;
+        return (
+          <TextsModule
+            lesson={lesson}
+            onDone={next}
+            trackHref={`/lessons/${lessonId}/watch`}
+          />
+        );
       case "pronunciation":
         return <PronunciationModule lesson={lesson} onDone={next} />;
       case "grammar":

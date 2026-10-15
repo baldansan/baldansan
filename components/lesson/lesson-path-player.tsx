@@ -266,6 +266,7 @@ export default function LessonPathPlayer({
             lesson={lesson}
             timedSubtitles={lessonContent.timedSubtitles}
             onDone={finishModuleStage}
+            trackHref={`/lessons/${lessonId}/watch`}
           />
         );
       case "grammar":

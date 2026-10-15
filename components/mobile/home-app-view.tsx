@@ -2,6 +2,8 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { PrefetchLink } from "@/components/navigation/prefetch-link";
+import { useLocalSnapshot, writeLocalSnapshot } from "@/lib/cache/local-snapshot";
 import { useEffect, useMemo, useState } from "react";
 import { getSelectedLanguage } from "@/lib/learner-onboarding";
 import {
@@ -58,6 +60,20 @@ type Props = {
 
 type BookSeries = "standard" | "fazhan";
 
+/** Нүүрний сүүлийн харагдац — localStorage (stale-while-revalidate). */
+type HomeSnapshot = {
+  displayName: string;
+  loggedIn: boolean;
+  streak: number;
+  points: number | null;
+  continueHref: string;
+  continueTitle: string;
+  statusByLesson: Record<string, LessonStatus>;
+  bichlegContinue: BichlegContinueTarget | null;
+};
+
+const HOME_SNAPSHOT_KEY = "home:v1";
+
 function resolveCatalogChipLevel(entry: MobileCourseCatalogEntry): number | null {
   const fromCourse = resolveLessonHskLevel({ courseId: entry.courseId });
   if (fromCourse != null) return fromCourse;
@@ -82,17 +98,36 @@ export function HomeAppView({
   const [selectedLang, setSelectedLang] = useState<ReturnType<typeof getSelectedLanguage>>(null);
   const [activeSeries, setActiveSeries] = useState<BookSeries>("standard");
   const [activeChip, setActiveChip] = useState(defaultChipId);
-  const [displayName, setDisplayName] = useState("Суралцагч");
-  const [loggedIn, setLoggedIn] = useState(false);
-  const [streak, setStreak] = useState(0);
-  const [points, setPoints] = useState<number | null>(null);
-  const [continueHref, setContinueHref] = useState("/lessons/1");
-  const [continueTitle, setContinueTitle] = useState("Хичээл 1");
-  const [statusByLesson, setStatusByLesson] = useState<
+  const [freshName, setDisplayName] = useState("Суралцагч");
+  const [freshLoggedIn, setLoggedIn] = useState(false);
+  const [freshStreak, setStreak] = useState(0);
+  const [freshPoints, setPoints] = useState<number | null>(null);
+  const [freshContinueHref, setContinueHref] = useState("/lessons/1");
+  const [freshContinueTitle, setContinueTitle] = useState("Хичээл 1");
+  /** Үргэлжлүүлэх холбоос бодит утгаа авсны дараа л бүтэн prefetch (eager) хийнэ. */
+  const [continueResolved, setContinueResolved] = useState(false);
+  const [freshStatusByLesson, setStatusByLesson] = useState<
     Record<string, LessonStatus>
   >({});
-  const [bichlegContinue, setBichlegContinue] =
+  const [freshBichleg, setBichlegContinue] =
     useState<BichlegContinueTarget | null>(null);
+
+  // Stale-while-revalidate: сүүлийн харагдацыг (явц, үргэлжлүүлэх, streak) эхний
+  // render-д шууд харуулна; Supabase-аас шинэ утга ирмэгц солино.
+  const snapshot = useLocalSnapshot<HomeSnapshot>(HOME_SNAPSHOT_KEY);
+  const useSnap = !continueResolved && snapshot != null;
+  const displayName = useSnap ? snapshot.displayName || "Суралцагч" : freshName;
+  const loggedIn = useSnap ? Boolean(snapshot.loggedIn) : freshLoggedIn;
+  const streak = useSnap ? snapshot.streak || 0 : freshStreak;
+  const points = useSnap ? (snapshot.points ?? null) : freshPoints;
+  const continueHref = useSnap ? snapshot.continueHref || "/lessons/1" : freshContinueHref;
+  const continueTitle = useSnap ? snapshot.continueTitle || "Хичээл 1" : freshContinueTitle;
+  const snapshotStatus = useSnap ? snapshot.statusByLesson : null;
+  const statusByLesson = useMemo(
+    () => snapshotStatus ?? freshStatusByLesson,
+    [snapshotStatus, freshStatusByLesson]
+  );
+  const bichlegContinue = useSnap ? (snapshot.bichlegContinue ?? null) : freshBichleg;
   const [curriculumCard, setCurriculumCard] = useState<{
     completed: number;
     total: number;
@@ -269,12 +304,14 @@ export function HomeAppView({
     let alive = true;
     async function load() {
       let isLoggedIn = false;
+      let name = "Суралцагч";
       if (hasSupabaseConfig) {
         const { data } = await getCurrentUser();
         if (!alive) return;
         isLoggedIn = Boolean(data);
+        name = data?.email?.split("@")[0] ?? "Суралцагч";
         setLoggedIn(isLoggedIn);
-        setDisplayName(data?.email?.split("@")[0] ?? "Суралцагч");
+        setDisplayName(name);
       }
       // Урьд нь 4 дуудлага дараалж (streak → continue → progress → bichleg) явдаг байсан —
       // бие биенээсээ хамаарахгүй тул зэрэг явуулна (нэг roundtrip-ийн хугацаа).
@@ -290,21 +327,36 @@ export function HomeAppView({
         isLoggedIn ? fetchMyPoints().catch(() => null) : Promise.resolve(null),
       ]);
       if (!alive) return;
-      setStreak(retention?.currentStreak ?? 0);
-      setPoints(pts ? pts.total : null);
+      const nextStreak = retention?.currentStreak ?? 0;
+      const nextPoints = pts ? pts.total : null;
+      let nextHref = "/lessons/1";
+      let nextTitle = "Хичээл 1";
+      setStreak(nextStreak);
+      setPoints(nextPoints);
       if (cont) {
-        setContinueHref(cont.href);
+        nextHref = cont.href;
         const lesson = lessons.find((l) => l.id === cont.lessonId);
-        setContinueTitle(
-          lesson
-            ? getUiLocale() === "zh" && lesson.chineseTitle
-              ? lesson.chineseTitle
-              : `${lesson.chineseTitle} · ${lesson.title}`
-            : `Хичээл ${cont.lessonId}`
-        );
+        nextTitle = lesson
+          ? getUiLocale() === "zh" && lesson.chineseTitle
+            ? lesson.chineseTitle
+            : `${lesson.chineseTitle} · ${lesson.title}`
+          : `Хичээл ${cont.lessonId}`;
+        setContinueHref(nextHref);
+        setContinueTitle(nextTitle);
       }
       if (progress) setStatusByLesson(progress.byLesson);
       setBichlegContinue(isLoggedIn ? clip : null);
+      setContinueResolved(true);
+      writeLocalSnapshot<HomeSnapshot>(HOME_SNAPSHOT_KEY, {
+        displayName: name,
+        loggedIn: isLoggedIn,
+        streak: nextStreak,
+        points: nextPoints,
+        continueHref: nextHref,
+        continueTitle: nextTitle,
+        statusByLesson: progress?.byLesson ?? {},
+        bichlegContinue: isLoggedIn ? clip : null,
+      });
     }
     void load();
     return () => {
@@ -373,14 +425,18 @@ export function HomeAppView({
           <div className="bs-tm-lesson-catalog-bar">
             <i style={{ width: `${progressPercent}%` }} />
           </div>
-          <Link href={continueHref} className="app-btn-primary mt-3 inline-flex w-full justify-center">
+          <PrefetchLink
+            href={continueHref}
+            eager={continueResolved}
+            className="app-btn-primary mt-3 inline-flex w-full justify-center"
+          >
             {tr(locale, "Үргэлжлүүлэх")} →
-          </Link>
+          </PrefetchLink>
         </div>
       ) : null}
 
       {bichlegContinue ? (
-        <Link href={bichlegContinue.href} className="bs-tm-continue">
+        <PrefetchLink href={bichlegContinue.href} className="bs-tm-continue">
           <span
             className="bs-tm-continue-ic"
             style={{ background: "linear-gradient(135deg, #4d9fff, #2563eb)" }}
@@ -393,7 +449,7 @@ export function HomeAppView({
             <p className="bs-tm-continue-title" translate="no">{bichlegContinue.title}</p>
           </span>
           <span className="bs-tm-card-chev" aria-hidden>›</span>
-        </Link>
+        </PrefetchLink>
       ) : null}
 
     </div>
@@ -406,7 +462,7 @@ export function HomeAppView({
       desktopWidth="wide"
       rightRail={rightRail}
     >
-      <section className="relative mb-4 overflow-hidden rounded-[24px] bg-gradient-to-br from-[#1FB85A] via-emerald-500 to-emerald-700 p-5 text-white shadow-[0_10px_30px_rgba(31,184,90,0.28)]">
+      <section className="bs-page-in relative mb-4 overflow-hidden rounded-[24px] bg-gradient-to-br from-[#1FB85A] via-emerald-500 to-emerald-700 p-5 text-white shadow-[0_10px_30px_rgba(31,184,90,0.28)]">
         <div
           aria-hidden
           className="absolute -right-10 -top-12 h-40 w-40 rounded-full bg-white/10"
@@ -479,7 +535,7 @@ export function HomeAppView({
       <KidPathHomeCard />
 
       {loggedIn && curriculumCard ? (
-        <Link href={curriculumCard.href} className="bs-tm-continue">
+        <PrefetchLink href={curriculumCard.href} className="bs-tm-continue">
           <span
             className="bs-tm-continue-ic"
             style={{ background: "linear-gradient(135deg, #f59e0b, #d97706)" }}
@@ -504,13 +560,13 @@ export function HomeAppView({
           <span className="bs-tm-card-chev" aria-hidden>
             ›
           </span>
-        </Link>
+        </PrefetchLink>
       ) : null}
 
       <OpenClassQuizBanner />
 
       {activeCourse?.available && lessonIds.length > 0 ? (
-        <Link href={continueHref} className="bs-tm-continue">
+        <PrefetchLink href={continueHref} eager={continueResolved} className="bs-tm-continue">
           <span className="bs-tm-continue-ic" aria-hidden>
             ▶
           </span>
@@ -521,7 +577,7 @@ export function HomeAppView({
           <span className="bs-tm-card-chev" aria-hidden>
             ›
           </span>
-        </Link>
+        </PrefetchLink>
       ) : null}
 
       {pickerEntries.length > 1 ? (
@@ -579,7 +635,7 @@ export function HomeAppView({
       </details>
 
       {bichlegContinue ? (
-        <Link href={bichlegContinue.href} className="bs-tm-continue bs-desk-hide">
+        <PrefetchLink href={bichlegContinue.href} className="bs-tm-continue bs-desk-hide">
           <span
             className="bs-tm-continue-ic"
             style={{
@@ -598,7 +654,7 @@ export function HomeAppView({
           <span className="bs-tm-card-chev" aria-hidden>
             ›
           </span>
-        </Link>
+        </PrefetchLink>
       ) : null}
     </MobileAppShell>
   );

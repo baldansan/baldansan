@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { MobileCard } from "@/components/mobile/mobile-card";
+import { LessonAudioButton } from "@/components/audio/lesson-audio-button";
 import { isDirectAudioUrl, isDirectVideoUrl } from "@/lib/media-url";
 import {
   hasAudioUrl,
@@ -240,8 +241,13 @@ export function LessonWatchMediaSection({ lesson }: WatchProps) {
   if (audioReady && audioUrl && isDirectAudioUrl(audioUrl)) {
     return (
       <MobileCard>
-        <p className="text-sm font-semibold text-[var(--app-text)]">Audio</p>
-        <audio controls className="mt-2 w-full" src={audioUrl} />
+        <p className="text-sm font-semibold text-[var(--app-text)]">Аудио</p>
+        <LessonAudioButton
+          src={audioUrl}
+          title={lesson.title}
+          subtitle={lesson.chineseTitle || undefined}
+          href={`/lessons/${lesson.id}/watch`}
+        />
       </MobileCard>
     );
   }

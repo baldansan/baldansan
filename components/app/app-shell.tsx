@@ -4,6 +4,7 @@ import { KidModeBar } from "@/components/kids/kid-mode-bar";
 import { BottomNavChrome } from "@/components/mobile/bottom-nav-chrome";
 import { MobileShellHeader } from "@/components/mobile/mobile-shell-header";
 import { DesktopTopNav } from "@/components/app/desktop-top-nav";
+import { RouteViewTransition } from "@/components/app/route-view-transition";
 import { resolveBottomNavTab } from "@/lib/bottom-nav";
 import type { MobileNavTab } from "@/lib/mobile-nav";
 import type { ReactNode } from "react";
@@ -73,17 +74,23 @@ export function AppShell({
       <PhoneFrame>
         <div className="bs-app-shell-inner">
           <main className={mainClasses}>
-            {immersive ? (
-              content
-            ) : (
-              <>
-                <div className={columnClasses}>{content}</div>
-                {rightRail ? <aside className="bs-desk-rail">{rightRail}</aside> : null}
-              </>
-            )}
+            <RouteViewTransition>
+              {immersive ? (
+                content
+              ) : (
+                <>
+                  <div className={columnClasses}>{content}</div>
+                  {rightRail ? <aside className="bs-desk-rail">{rightRail}</aside> : null}
+                </>
+              )}
+            </RouteViewTransition>
           </main>
           {showBottomNav ? (
-            <div className="bs-desk-hide absolute inset-x-0 bottom-0 z-50 px-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] pt-2">
+            <div
+              className="bs-desk-hide absolute inset-x-0 bottom-0 z-50 px-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] pt-2"
+              /* Хуудас солиход доод цэс хөдлөхгүй (app/motion.css: bs-bottom-nav) */
+              style={{ viewTransitionName: "bs-bottom-nav" }}
+            >
               <BottomNavChrome active={navTab} />
             </div>
           ) : null}

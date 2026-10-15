@@ -3,8 +3,9 @@
 // Богино эх / mainText — LiveTextReader (үг дарах + toggle).
 // subtitles.json (subtitle_lines) байвал 课文 сонсох үед өгүүлбэр highlight хийнэ.
 
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useMemo, useState } from "react";
 import { LiveTextReader } from "@/components/lesson/live-text-reader";
+import { useGlobalAudio } from "@/components/providers/global-audio-provider";
 import { WritingSampleCard } from "@/components/lesson/modules/WritingSampleCard";
 import { resolveLessonPackagePlayableUrl } from "@/lib/lesson/package-audio-resolve";
 import {
@@ -27,25 +28,33 @@ export default function TextsModule({
   lesson,
   timedSubtitles = [],
   onDone,
+  trackHref,
 }: {
   lesson: HskLessonPackage;
   /** subtitle_lines rows — enables sentence highlight while 课文 audio plays. */
   timedSubtitles?: TimedSubtitle[];
   onDone: () => void;
+  /** Mini-player дээрх гарчиг дарахад буцах холбоос (хичээлийн watch хуудас). */
+  trackHref?: string;
 }) {
   const texts: HskPackageShortText[] = lesson.texts ?? [];
   const base = lesson.audio_base_path;
 
   const [ti, setTi] = useState(0);
   const [speed, setSpeed] = useState<Speed>(1);
-  const [playing, setPlaying] = useState(false);
-  const [activeSentence, setActiveSentence] = useState<number | null>(null);
 
-  const audioRef = useRef<HTMLAudioElement | null>(null);
+  // Глобал тоглуулагч — хуудас солиход 课文 аудио тасрахгүй, доод mini-player-т үргэлжилнэ.
+  const audio = useGlobalAudio();
+  const lessonTitle = lesson.title?.mn?.trim() || lesson.title?.zh?.trim() || "Хичээл";
 
   const text = texts[ti];
   const total = texts.length;
   const sentences: HskPackageTextSentence[] = text?.sentences ?? [];
+
+  const src = resolveLessonPackagePlayableUrl(text?.audio, { packageAudioBase: base });
+  const trackId = src ? `texts:${src}` : `texts:none:${ti}`;
+  const playing = audio.isActive(trackId);
+  const currentTime = audio.isCurrent(trackId) ? audio.state.currentTime : 0;
 
   const fullZh = useMemo(
     () => sentences.map((s) => s.zh).join(""),
@@ -58,47 +67,36 @@ export default function TextsModule({
     [sentences, timedSubtitles]
   );
 
+  /** Тоглож буй секундээр идэвхтэй өгүүлбэр — глобал store-ийн currentTime-аас. */
+  const activeSentence = useMemo(
+    () =>
+      playing && sentenceWindows
+        ? findActiveSentenceIndex(sentenceWindows, currentTime)
+        : null,
+    [playing, sentenceWindows, currentTime]
+  );
+
   const stopAudio = useCallback(() => {
-    if (audioRef.current) {
-      audioRef.current.pause();
-      audioRef.current = null;
-    }
-    setPlaying(false);
-    setActiveSentence(null);
-  }, []);
+    audio.stopIf(trackId);
+  }, [audio, trackId]);
 
   function playAudio() {
-    const src = resolveLessonPackagePlayableUrl(text?.audio, { packageAudioBase: base });
     if (!src) return;
-    if (playing) return stopAudio();
-    stopAudio();
-    const a = new Audio(src);
-    a.playbackRate = speed;
-    audioRef.current = a;
-    setPlaying(true);
-    const clear = () => {
-      setPlaying(false);
-      setActiveSentence(null);
-    };
-    a.onended = () => {
-      if (audioRef.current === a) audioRef.current = null;
-      clear();
-    };
-    a.onerror = clear;
-    if (sentenceWindows) {
-      a.ontimeupdate = () => {
-        if (audioRef.current !== a) return;
-        setActiveSentence(
-          findActiveSentenceIndex(sentenceWindows, a.currentTime)
-        );
-      };
-    }
-    void a.play().catch(clear);
+    void audio.toggle(
+      {
+        id: trackId,
+        src,
+        title: text?.title_mn?.trim() || "Богино эх",
+        subtitle: lessonTitle,
+        href: trackHref,
+      },
+      { rate: speed }
+    );
   }
 
   function changeSpeed(s: Speed) {
     setSpeed(s);
-    if (audioRef.current) audioRef.current.playbackRate = s;
+    if (audio.isCurrent(trackId)) audio.setRate(s);
   }
 
   function goPrev() {
@@ -114,7 +112,7 @@ export default function TextsModule({
     else onDone();
   }
 
-  useEffect(() => () => stopAudio(), [stopAudio]);
+  // Модуль хаагдахад (хуудас солиход) аудио ЗОГСООХГҮЙ — mini-player үргэлжлүүлнэ.
 
   if (!text || (sentences.length === 0 && !text.writingSample)) {
     return (

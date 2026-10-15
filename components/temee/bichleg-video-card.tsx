@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import { PrefetchLink } from "@/components/navigation/prefetch-link";
 import { useState } from "react";
 
 const THUMB_GRADS = [
@@ -87,7 +87,7 @@ export function BichlegVideoCard({
 
   if (isCatalog) {
     return (
-      <Link
+      <PrefetchLink
         href={href}
         className="bs-tm-video-card bs-tm-video-card--catalog"
       >
@@ -128,12 +128,12 @@ export function BichlegVideoCard({
             </div>
           ) : null}
         </div>
-      </Link>
+      </PrefetchLink>
     );
   }
 
   return (
-    <Link href={href} className="bs-tm-video-card bs-tm-video-card--stack">
+    <PrefetchLink href={href} className="bs-tm-video-card bs-tm-video-card--stack">
       <div className="bs-tm-video-hero">
         <ThumbArea
           showCover={showCover}
@@ -172,6 +172,6 @@ export function BichlegVideoCard({
           </div>
         ) : null}
       </div>
-    </Link>
+    </PrefetchLink>
   );
 }

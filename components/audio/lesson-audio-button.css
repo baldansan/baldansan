@@ -1,0 +1,76 @@
+/* components/audio/lesson-audio-button.css — <audio controls>-ийн оронд, глобал тоглуулагч руу. */
+
+.bs-lesson-audio-btn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px 12px;
+  border: 1.5px solid var(--app-border, #e7ece8);
+  border-radius: 16px;
+  background: #fff;
+  color: var(--app-text, #0f1b14);
+  text-align: left;
+  cursor: pointer;
+  transition: transform var(--bs-dur-fast, 150ms) var(--bs-ease, cubic-bezier(0.2, 0, 0, 1)),
+    border-color var(--bs-dur-fast, 150ms) var(--bs-ease, cubic-bezier(0.2, 0, 0, 1)),
+    box-shadow var(--bs-dur-fast, 150ms) var(--bs-ease, cubic-bezier(0.2, 0, 0, 1));
+}
+
+.bs-lesson-audio-btn:active {
+  transform: scale(0.98);
+}
+
+.bs-lesson-audio-btn.bs-on {
+  border-color: #bfe8cf;
+  background: #f1faf4;
+}
+
+.bs-lesson-audio-ic {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  background: var(--app-primary, #1fb85a);
+  color: #fff;
+  font-size: 15px;
+  box-shadow: 0 4px 12px rgba(31, 184, 90, 0.3);
+}
+
+.bs-lesson-audio-body {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.bs-lesson-audio-label {
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.bs-lesson-audio-time {
+  font-size: 11px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: var(--app-muted, #7e8b83);
+}
+
+.bs-lesson-audio-bar {
+  display: block;
+  height: 4px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: #e3ede7;
+}
+
+.bs-lesson-audio-bar > i {
+  display: block;
+  height: 100%;
+  background: var(--app-primary, #1fb85a);
+  transition: width 0.25s linear;
+}

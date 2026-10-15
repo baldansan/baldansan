@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { PrefetchLink } from "@/components/navigation/prefetch-link";
 import { useEffect, useState } from "react";
 import { APP_NAV_ITEMS, type AppNavTab } from "@/lib/app-navigation";
 import { tr } from "@/lib/i18n/translate";
@@ -25,7 +26,12 @@ export function DesktopTopNav({ active }: Props) {
   }, [pathname]);
 
   return (
-    <header className="bs-desknav" aria-label="Үндсэн цэс">
+    <header
+      className="bs-desknav"
+      aria-label="Үндсэн цэс"
+      /* Хуудас солиход дээд цэс хөдлөхгүй (app/motion.css: bs-desk-nav) */
+      style={{ viewTransitionName: "bs-desk-nav" }}
+    >
       <Link href="/home" className="bs-desknav-brand">
         <span className="bs-desknav-logo" aria-hidden>
           学
@@ -35,7 +41,7 @@ export function DesktopTopNav({ active }: Props) {
 
       <nav className="bs-desknav-tabs" aria-label="App navigation">
         {APP_NAV_ITEMS.map((item) => (
-          <Link
+          <PrefetchLink
             key={item.key}
             href={item.href}
             className={`bs-desknav-tab${active === item.key ? " bs-on" : ""}`}
@@ -43,7 +49,7 @@ export function DesktopTopNav({ active }: Props) {
           >
             {item.icon}
             {tr(locale, item.label)}
-          </Link>
+          </PrefetchLink>
         ))}
       </nav>
 

@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { AdminPreviewBanner } from "@/components/admin-preview-banner";
+import { LessonAudioButton } from "@/components/audio/lesson-audio-button";
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
 import { lessonPreviewPath } from "@/lib/lesson-publish";
 import { HSK_PLAYER } from "@/lib/lesson/hsk-player/hsk-player-theme";
@@ -14,7 +15,13 @@ type Props = {
   adminPreview?: boolean;
 };
 
-function WorkbookAudioPlayer({ section }: { section: HskWorkbookSection }) {
+function WorkbookAudioPlayer({
+  section,
+  lesson,
+}: {
+  section: HskWorkbookSection;
+  lesson: LessonContent;
+}) {
   const audio = section.audio;
   if (!audio?.url && !audio?.file) return null;
 
@@ -24,9 +31,12 @@ function WorkbookAudioPlayer({ section }: { section: HskWorkbookSection }) {
   return (
     <div className="mt-3 rounded-xl bg-slate-50 p-3 ring-1 ring-slate-100">
       <p className="text-xs font-semibold text-slate-600">🔊 Сонсох дасгал</p>
-      <audio controls className="mt-2 w-full" src={src} preload="none">
-        <track kind="captions" />
-      </audio>
+      <LessonAudioButton
+        src={src}
+        title={section.titleMn || "Сонсох дасгал"}
+        subtitle={lesson.title}
+        href={`/lessons/${lesson.id}/workbook`}
+      />
       {audio.note ? (
         <p className="mt-1 text-[11px] text-slate-500" translate="no">{audio.note}</p>
       ) : null}
@@ -94,7 +104,7 @@ export function LessonWorkbookClient({ lesson, sections, adminPreview = false }:
                 </div>
               ) : null}
 
-              <WorkbookAudioPlayer section={section} />
+              <WorkbookAudioPlayer section={section} lesson={lesson} />
 
               {adminPreview && section.answerKey ? (
                 <div className="mt-3 rounded-xl bg-amber-50 p-3 ring-1 ring-amber-100">

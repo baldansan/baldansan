@@ -1,3 +1,4 @@
+import { globalAudio } from "@/lib/audio/global-audio-store";
 import { getLangTtsSettings } from "@/lib/tts/tts-settings";
 import { speakText, stopSpeaking, type SpeakResult } from "@/lib/tts/speech";
 
@@ -19,33 +20,13 @@ export function stopPronunciation(): void {
   stopSpeaking();
 }
 
+/**
+ * Богино клип (үгийн дуудлага) — глобал тоглуулагчийн clip сувгаар. Хичээлийн
+ * урт аудио (track) тоглож байвал түр зогсооно, давхцахгүй.
+ */
 export async function playAudioUrl(url: string): Promise<{ ok: boolean; error?: string }> {
   if (typeof window === "undefined") {
     return { ok: false, error: "Audio unavailable" };
   }
-
-  return new Promise((resolve) => {
-    const audio = new Audio(url);
-    audio.preload = "auto";
-
-    const cleanup = () => {
-      audio.onended = null;
-      audio.onerror = null;
-    };
-
-    audio.onended = () => {
-      cleanup();
-      resolve({ ok: true });
-    };
-
-    audio.onerror = () => {
-      cleanup();
-      resolve({ ok: false, error: "Audio playback failed" });
-    };
-
-    void audio.play().catch(() => {
-      cleanup();
-      resolve({ ok: false, error: "Audio playback failed" });
-    });
-  });
+  return globalAudio.playClip(url);
 }

@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { PrefetchLink } from "@/components/navigation/prefetch-link";
 import { useEffect, useMemo, useState } from "react";
 import { TemeeEmojiIcon } from "@/components/temee/temee-emoji-icon";
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
@@ -163,7 +164,7 @@ function GameTile({
 }) {
   const locale = useUiLocale();
   const tile = (
-    <Link href={href} className="bs-tm-game-tile">
+    <PrefetchLink href={href} className="bs-tm-game-tile">
       <span className="bs-tm-game-tile-badge">{tr(locale, game.badge)}</span>
       <span
         className="bs-tm-game-tile-ic"
@@ -179,7 +180,7 @@ function GameTile({
           {tr(locale, "Үе")} {level.current} · ⭐ {level.stars}
         </p>
       ) : null}
-    </Link>
+    </PrefetchLink>
   );
   if (!level || !isLevelGame(game.slug)) return tile;
   return (
@@ -269,9 +270,9 @@ export function GamesAppView({ lessonIds, lessonTitles }: Props) {
 
   return (
     <MobileAppShell activeTab="games" mainClassName={SHELL_MAIN_NARROW} desktopWidth="wide">
-      <h1 className="bs-tm-page-title">{tr(locale, "Тоглоом")} 🎮</h1>
+      <h1 className="bs-tm-page-title bs-page-in">{tr(locale, "Тоглоом")} 🎮</h1>
 
-      <div className="bs-tm-stat-row">
+      <div className="bs-tm-stat-row bs-page-in">
         <div className="bs-tm-stat">
           <div className="bs-tm-stat-ic" aria-hidden>
             🎮
@@ -319,7 +320,7 @@ export function GamesAppView({ lessonIds, lessonTitles }: Props) {
       ) : null}
 
       {showCampaign ? (
-        <Link
+        <PrefetchLink
           href={levelMapHref(campaignGame)}
           className="bs-tm-game-feat !bg-[linear-gradient(135deg,#f59e0b,#d97706)] !shadow-[0_8px_20px_rgba(217,119,6,0.35)]"
           data-testid="campaign-card"
@@ -338,13 +339,13 @@ export function GamesAppView({ lessonIds, lessonTitles }: Props) {
               {tr(locale, "Үе")} {levelInfo[campaignGame]?.current ?? 1} · {tr(locale, "Үргэлжлүүлэх →")}
             </p>
           </span>
-        </Link>
+        </PrefetchLink>
       ) : null}
 
       {lang === "zh" ? (
         <>
           <p className="bs-tm-sec">{tr(locale, "Тоглоомууд")}</p>
-          <div className="bs-tm-game-grid">
+          <div className="bs-tm-game-grid bs-stagger">
             {CHINESE_HSK_GAMES.map((game) => (
               <GameTile
                 key={game.id}
@@ -356,7 +357,7 @@ export function GamesAppView({ lessonIds, lessonTitles }: Props) {
         </>
       ) : null}
 
-      <Link href={marathonHref} className="bs-tm-game-feat">
+      <PrefetchLink href={marathonHref} className="bs-tm-game-feat">
         <TemeeEmojiIcon
           variant="games"
           className="bs-tm-game-feat-img"
@@ -370,10 +371,10 @@ export function GamesAppView({ lessonIds, lessonTitles }: Props) {
           </p>
           <p className="bs-tm-game-feat-sub">{tr(locale, "SRS марафон эхлүүлэх →")}</p>
         </span>
-      </Link>
+      </PrefetchLink>
 
       <p className="bs-tm-sec">{tr(locale, "Хичээлийн дасгалууд")}</p>
-      <div className="bs-tm-game-grid">
+      <div className="bs-tm-game-grid bs-stagger">
         {games.map((game) => {
           const href = game.global
             ? `/games/${game.slug}`

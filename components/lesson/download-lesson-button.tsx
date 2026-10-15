@@ -3,15 +3,26 @@
 import { useEffect, useState } from "react";
 
 /**
- * «Хичээл татах» — caches the lesson's pages (detail, watch, quiz,
- * vocabulary, workbook) and every referenced Supabase Storage file
- * (audio, covers) into the service-worker caches, so the whole lesson
- * works offline (e.g. on a flight).
+ * «Хичээл татах (оффлайн үзэх)» — тухайн хичээлийн хуудсууд (detail, watch,
+ * quiz, vocabulary, workbook) болон бүх аудио/зургийн файлыг service-worker
+ * кэшэнд урьдчилан хийнэ.
+ *
+ * Файлын жагсаалтыг /api/lessons/{id}/offline-manifest (server дээр бүрэн
+ * resolve хийсэн багц) өгнө; аудио нь public/sw.js-ийн buunduu-audio
+ * (cache-first, ~150МБ LRU) кэшэнд ордог. HTML-ээс regex-ээр URL түүх хуучин
+ * аргыг нөөц (fallback) болгон үлдээв.
  */
 const STORAGE_URL_RE =
-  /https:\/\/[a-z0-9]+\.supabase\.co\/storage\/v1\/object\/public\/[^\s"'\\)<>]+/g;
+  /https:\/\/[a-z0-9-]+\.supabase\.co\/storage\/v1\/object\/public\/[^\s"'\\)<>]+/g;
 
 const SUBPATHS = ["", "/watch", "/quiz", "/vocabulary", "/workbook"];
+
+type Manifest = {
+  lessonId: string;
+  pages: string[];
+  audio: string[];
+  media: string[];
+};
 
 function markerKey(lessonId: string) {
   return `bs:offline-lesson:${lessonId}`;
@@ -25,19 +36,56 @@ function extractStorageUrls(text: string): string[] {
   return normalized.match(STORAGE_URL_RE) ?? [];
 }
 
+async function fetchManifest(lessonId: string): Promise<Manifest | null> {
+  try {
+    const res = await fetch(
+      `/api/lessons/${encodeURIComponent(lessonId)}/offline-manifest`,
+      { credentials: "same-origin" }
+    );
+    if (!res.ok) return null;
+    const data = (await res.json()) as Partial<Manifest>;
+    return {
+      lessonId: String(data.lessonId ?? lessonId),
+      pages: Array.isArray(data.pages) ? data.pages : [],
+      audio: Array.isArray(data.audio) ? data.audio : [],
+      media: Array.isArray(data.media) ? data.media : [],
+    };
+  } catch {
+    return null;
+  }
+}
+
+async function waitForServiceWorker(): Promise<void> {
+  if (typeof navigator === "undefined" || !("serviceWorker" in navigator)) return;
+  try {
+    await Promise.race([
+      navigator.serviceWorker.ready,
+      new Promise((resolve) => setTimeout(resolve, 4000)),
+    ]);
+  } catch {
+    // SW байхгүй бол хөтчийн HTTP кэш л ажиллана
+  }
+}
+
 async function downloadLesson(
   lessonId: string,
   onProgress: (done: number, total: number) => void
-): Promise<number> {
-  const mediaUrls = new Set<string>();
+): Promise<{ files: number; audio: number }> {
+  await waitForServiceWorker();
 
-  // 1. Fetch each lesson page → SW caches the HTML for offline navigation.
-  for (const sub of SUBPATHS) {
+  const manifest = await fetchManifest(lessonId);
+  const mediaUrls = new Set<string>(manifest ? [...manifest.audio, ...manifest.media] : []);
+  const pages =
+    manifest && manifest.pages.length > 0
+      ? manifest.pages
+      : SUBPATHS.map((sub) => `/lessons/${encodeURIComponent(lessonId)}${sub}`);
+
+  // 1. Хуудас бүрийг татна → SW HTML-ийг кэшилнэ (оффлайн navigation).
+  //    Manifest ирээгүй бол HTML-ээс URL түүнэ (нөөц арга).
+  for (const page of pages) {
     try {
-      const res = await fetch(`/lessons/${lessonId}${sub}`, {
-        credentials: "same-origin",
-      });
-      if (res.ok) {
+      const res = await fetch(page, { credentials: "same-origin" });
+      if (res.ok && !manifest) {
         const html = await res.text();
         for (const url of extractStorageUrls(html)) mediaUrls.add(url);
       }
@@ -46,7 +94,7 @@ async function downloadLesson(
     }
   }
 
-  // 2. Fetch every referenced media file → SW media cache.
+  // 2. Аудио + зураг бүрийг cors горимоор татна → SW аудио/медиа кэшэнд хийнэ.
   const urls = Array.from(mediaUrls);
   const total = urls.length;
   let done = 0;
@@ -60,14 +108,14 @@ async function downloadLesson(
       try {
         await fetch(url, { mode: "cors", credentials: "omit" });
       } catch {
-        // keep going — a single failed file shouldn't abort the download
+        // нэг файл алдвал бүхэл татах ажлыг зогсоохгүй
       }
       done += 1;
       onProgress(done, total);
     }
   });
   await Promise.all(workers);
-  return total;
+  return { files: total, audio: manifest?.audio.length ?? 0 };
 }
 
 type State =
@@ -105,7 +153,7 @@ export function DownloadLessonButton({ lessonId }: { lessonId: string }) {
     }
     setState({ kind: "downloading", done: 0, total: 0 });
     try {
-      const files = await downloadLesson(lessonId, (done, total) =>
+      const { files } = await downloadLesson(lessonId, (done, total) =>
         setState({ kind: "downloading", done, total })
       );
       try {
@@ -123,9 +171,9 @@ export function DownloadLessonButton({ lessonId }: { lessonId: string }) {
     state.kind === "downloading"
       ? state.total > 0
         ? `Татаж байна… ${state.done}/${state.total}`
-        : "Татаж байна…"
+        : "Бэлдэж байна…"
       : state.kind === "done"
-        ? "✓ Татагдсан — оффлайн үзэж болно"
+        ? `✓ Татагдсан — оффлайн үзэж болно${state.files > 0 ? ` (${state.files} файл)` : ""}`
         : state.kind === "error"
           ? "Алдаа гарлаа — интернэтээ шалгаад дахин дарна уу"
           : "⬇ Хичээл татах (оффлайн үзэх)";
@@ -135,7 +183,7 @@ export function DownloadLessonButton({ lessonId }: { lessonId: string }) {
       type="button"
       onClick={start}
       disabled={state.kind === "downloading"}
-      className={`inline-flex w-full items-center justify-center rounded-2xl px-4 py-3 text-sm font-semibold transition-colors ${
+      className={`bs-interactive inline-flex w-full items-center justify-center rounded-2xl px-4 py-3 text-sm font-semibold ${
         state.kind === "done"
           ? "bg-emerald-50 text-emerald-700 ring-1 ring-emerald-200"
           : state.kind === "error"

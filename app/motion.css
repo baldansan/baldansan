@@ -1,0 +1,249 @@
+/* app/motion.css — нэг easing / хугацааны систем (суралцагчийн хэсэг).
+   • Карт/товч: дарахад scale(0.98), hover-т 2px өргөгдөнө (зөвхөн hover-той төхөөрөмж).
+   • Жагсаалт: .bs-stagger доторх хүүхдүүд ээлжлэн fade-up (40ms алхам).
+   • Хуудас хооронд: React <ViewTransition> (components/app/route-view-transition) + доорх CSS.
+   • prefers-reduced-motion: бүх хөдөлгөөн унтарна. */
+
+:root {
+  --bs-ease: cubic-bezier(0.2, 0, 0, 1);
+  --bs-ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --bs-dur-fast: 150ms;
+  --bs-dur: 200ms;
+  --bs-dur-slow: 250ms;
+  --bs-press: 0.98;
+  --bs-lift: -2px;
+}
+
+/* ---- Интерактив гадаргуу (карт, плита, үргэлжлүүлэх мөр) ---- */
+.bs-tm-card,
+.bs-tm-continue,
+.bs-tm-feat,
+.bs-tm-game-feat,
+.bs-tm-game-tile,
+.bs-tm-video-card,
+.bs-tm-lesson-row,
+.bs-tm-lesson-catalog-all,
+.bs-interactive {
+  transition:
+    transform var(--bs-dur-fast) var(--bs-ease),
+    box-shadow var(--bs-dur) var(--bs-ease),
+    border-color var(--bs-dur-fast) var(--bs-ease),
+    background-color var(--bs-dur-fast) var(--bs-ease);
+}
+
+.bs-tm-card:active,
+.bs-tm-continue:active,
+.bs-tm-feat:active,
+.bs-tm-game-feat:active,
+.bs-tm-game-tile:active,
+.bs-tm-video-card:active,
+.bs-tm-lesson-row:active,
+.bs-tm-lesson-catalog-all:active,
+.bs-interactive:active {
+  transform: scale(var(--bs-press));
+  transition-duration: 80ms;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .bs-tm-card:hover,
+  .bs-tm-continue:hover,
+  .bs-tm-game-tile:hover,
+  .bs-tm-video-card:hover,
+  .bs-tm-lesson-row:hover,
+  .bs-interactive:hover {
+    transform: translateY(var(--bs-lift));
+    box-shadow: 0 10px 24px rgba(15, 27, 20, 0.09);
+  }
+  .bs-tm-feat:hover,
+  .bs-tm-game-feat:hover {
+    transform: translateY(var(--bs-lift));
+    filter: brightness(1.03);
+  }
+  /* hover + дарах: өргөгдсөн байрнаас шууд жижгэрнэ */
+  .bs-tm-card:hover:active,
+  .bs-tm-continue:hover:active,
+  .bs-tm-game-tile:hover:active,
+  .bs-tm-video-card:hover:active,
+  .bs-tm-lesson-row:hover:active,
+  .bs-tm-feat:hover:active,
+  .bs-tm-game-feat:hover:active,
+  .bs-interactive:hover:active {
+    transform: translateY(0) scale(var(--bs-press));
+  }
+}
+
+/* ---- Товчнууд ---- */
+.app-btn-primary,
+.app-btn-secondary,
+.app-btn-game,
+.app-btn-outline-green,
+.bs-cta,
+.bs-navbtn,
+.bs-txt-play,
+.bs-dlg-full,
+.bs-speed,
+.bs-speak,
+.bs-bottomnav a,
+.bs-desknav-link,
+.bs-desknav-icon {
+  transition:
+    transform var(--bs-dur-fast) var(--bs-ease),
+    background-color var(--bs-dur-fast) var(--bs-ease),
+    color var(--bs-dur-fast) var(--bs-ease),
+    opacity var(--bs-dur-fast) var(--bs-ease),
+    box-shadow var(--bs-dur) var(--bs-ease);
+}
+
+.app-btn-primary:active,
+.app-btn-secondary:active,
+.app-btn-game:active,
+.app-btn-outline-green:active,
+.bs-cta:not(:disabled):active,
+.bs-navbtn:not(:disabled):active,
+.bs-txt-play:active,
+.bs-dlg-full:active,
+.bs-speed:active,
+.bs-speak:active {
+  transform: scale(0.97);
+  transition-duration: 80ms;
+}
+
+.bs-bottomnav a:active {
+  transform: scale(0.92);
+}
+
+.bs-bottomnav a svg {
+  transition: transform var(--bs-dur) var(--bs-ease), color var(--bs-dur-fast) var(--bs-ease);
+}
+
+.bs-bottomnav a.bs-on svg {
+  transform: translateY(-1px) scale(1.06);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .app-btn-primary:hover,
+  .app-btn-game:hover,
+  .bs-cta:not(:disabled):hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(15, 27, 20, 0.14);
+  }
+  .app-btn-primary:hover:active,
+  .app-btn-game:hover:active,
+  .bs-cta:not(:disabled):hover:active {
+    transform: scale(0.97);
+  }
+}
+
+/* ---- Жагсаалт орж ирэх (stagger) ---- */
+@keyframes bs-stagger-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.bs-stagger > * {
+  animation: bs-stagger-in var(--bs-dur-slow) var(--bs-ease-out) both;
+}
+
+.bs-stagger > :nth-child(1) { animation-delay: 0ms; }
+.bs-stagger > :nth-child(2) { animation-delay: 40ms; }
+.bs-stagger > :nth-child(3) { animation-delay: 80ms; }
+.bs-stagger > :nth-child(4) { animation-delay: 120ms; }
+.bs-stagger > :nth-child(5) { animation-delay: 160ms; }
+.bs-stagger > :nth-child(6) { animation-delay: 200ms; }
+.bs-stagger > :nth-child(7) { animation-delay: 240ms; }
+.bs-stagger > :nth-child(8) { animation-delay: 280ms; }
+.bs-stagger > :nth-child(9) { animation-delay: 320ms; }
+.bs-stagger > :nth-child(10) { animation-delay: 360ms; }
+.bs-stagger > :nth-child(n + 11) { animation-delay: 400ms; }
+
+/* Хуудасны дээд хэсэг (толгой, статистик) — нэг л fade */
+.bs-page-in {
+  animation: bs-stagger-in var(--bs-dur-slow) var(--bs-ease-out) both;
+}
+
+/* ---- Хуудас хоорондын шилжилт (React ViewTransition классууд) ----
+   Хуучин агуулга хурдан буурч (120ms), шинэ нь бага зэрэг дээшээ гулсан орж ирнэ (220ms). */
+@keyframes bs-vt-fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes bs-vt-fade-out {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+@keyframes bs-vt-rise {
+  from { transform: translateY(10px); }
+  to { transform: none; }
+}
+@keyframes bs-vt-sink {
+  from { transform: none; }
+  to { transform: translateY(-6px); }
+}
+
+::view-transition-old(.bs-page-out),
+::view-transition-old(.bs-page-swap) {
+  animation:
+    120ms var(--bs-ease) both bs-vt-fade-out,
+    120ms var(--bs-ease) both bs-vt-sink;
+}
+
+::view-transition-new(.bs-page-in),
+::view-transition-new(.bs-page-swap) {
+  animation:
+    220ms var(--bs-ease-out) 60ms both bs-vt-fade-in,
+    260ms var(--bs-ease-out) both bs-vt-rise;
+}
+
+/* Хуудас солигдоход доод цэс, дээд цэс хөдлөхгүй — нэг тогтмол цэг. */
+::view-transition-group(bs-bottom-nav),
+::view-transition-group(bs-desk-nav) {
+  animation: none;
+  z-index: 100;
+}
+::view-transition-old(bs-bottom-nav),
+::view-transition-old(bs-desk-nav) {
+  display: none;
+}
+::view-transition-new(bs-bottom-nav),
+::view-transition-new(bs-desk-nav) {
+  animation: none;
+}
+
+/* Root-ийн default crossfade-ийг бүрэн унтраах — агуулгын групп л хөдөлнө. */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+}
+
+/* ---- Хөдөлгөөн багасгах тохиргоо ---- */
+@media (prefers-reduced-motion: reduce) {
+  .bs-stagger > *,
+  .bs-page-in {
+    animation: none;
+  }
+  .bs-tm-card,
+  .bs-tm-continue,
+  .bs-tm-feat,
+  .bs-tm-game-feat,
+  .bs-tm-game-tile,
+  .bs-tm-video-card,
+  .bs-tm-lesson-row,
+  .bs-interactive,
+  .app-btn-primary,
+  .bs-cta,
+  .bs-navbtn {
+    transition: none;
+  }
+  ::view-transition-old(*),
+  ::view-transition-new(*),
+  ::view-transition-group(*) {
+    animation-duration: 0s !important;
+    animation-delay: 0s !important;
+  }
+}

@@ -14,6 +14,7 @@ import {
 } from "@/components/ui/cta-button-row";
 import { SectionCard } from "@/components/ui/section-card";
 import { MobileCard } from "@/components/mobile/mobile-card";
+import { LessonAudioButton } from "@/components/audio/lesson-audio-button";
 import { lessonPreviewPath } from "@/lib/lesson-publish";
 import { LEARNER_LESSON } from "@/lib/learner-labels";
 import { isDirectAudioUrl } from "@/lib/media-url";
@@ -85,7 +86,12 @@ export function TextbookLessonWatchClient({
               <p className="mt-1 text-xs text-[var(--app-muted)]">
                 Дуудлага, tone-г сонсоод дуурайж хэлээрэй.
               </p>
-              <audio controls className="mt-2 w-full" src={audioUrl} />
+              <LessonAudioButton
+                src={audioUrl}
+                title={lesson.title}
+                subtitle={lesson.chineseTitle || undefined}
+                href={`/lessons/${lesson.id}/watch`}
+              />
             </MobileCard>
           ) : null}
           <HskLessonStudyContent
@@ -113,7 +119,12 @@ export function TextbookLessonWatchClient({
           {audioReady && audioUrl && isDirectAudioUrl(audioUrl) ? (
             <MobileCard>
               <h2 className="text-sm font-semibold text-[var(--app-text)]">Аудио</h2>
-              <audio controls className="mt-2 w-full" src={audioUrl} />
+              <LessonAudioButton
+                src={audioUrl}
+                title={lesson.title}
+                subtitle={lesson.chineseTitle || undefined}
+                href={`/lessons/${lesson.id}/watch`}
+              />
             </MobileCard>
           ) : null}
 

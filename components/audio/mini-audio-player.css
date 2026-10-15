@@ -1,0 +1,185 @@
+/* components/audio/mini-audio-player.css
+   Доод талын жижиг аудио тоглуулагч. Утас: доод цэсний дээр; PC: баруун доод буланд. */
+
+.bs-mini-player {
+  position: fixed;
+  left: 12px;
+  right: 12px;
+  bottom: calc(env(safe-area-inset-bottom, 0px) + 92px);
+  z-index: 70;
+  overflow: hidden;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.94);
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 10px 30px rgba(15, 27, 20, 0.16), 0 0 0 1px rgba(15, 27, 20, 0.05);
+  animation: bs-mini-in var(--bs-dur-slow, 240ms) var(--bs-ease-out, cubic-bezier(0, 0, 0.2, 1)) both;
+}
+
+@keyframes bs-mini-in {
+  from {
+    opacity: 0;
+    transform: translateY(14px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.bs-mini-bar {
+  height: 4px;
+  background: #e3ede7;
+  cursor: pointer;
+}
+
+.bs-mini-bar > i {
+  display: block;
+  height: 100%;
+  background: var(--app-primary, #1fb85a);
+  transition: width 0.25s linear;
+}
+
+.bs-mini-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 10px 8px 8px;
+}
+
+.bs-mini-btn {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--app-text, #0f1b14);
+  cursor: pointer;
+  transition: transform var(--bs-dur-fast, 150ms) var(--bs-ease, cubic-bezier(0.2, 0, 0, 1)),
+    background-color var(--bs-dur-fast, 150ms) var(--bs-ease, cubic-bezier(0.2, 0, 0, 1));
+}
+
+.bs-mini-btn:active {
+  transform: scale(0.92);
+}
+
+.bs-mini-btn--play {
+  background: var(--app-primary, #1fb85a);
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(31, 184, 90, 0.35);
+}
+
+.bs-mini-btn--play svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.bs-mini-btn--close {
+  width: 34px;
+  height: 34px;
+  color: var(--app-muted, #7e8b83);
+}
+
+.bs-mini-btn--close:hover {
+  background: #f1f5f2;
+}
+
+.bs-mini-btn--close svg {
+  width: 16px;
+  height: 16px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+
+.bs-mini-spin {
+  width: 18px;
+  height: 18px;
+  border-radius: 999px;
+  border: 2.5px solid rgba(255, 255, 255, 0.45);
+  border-top-color: #fff;
+  animation: bs-mini-spin 0.8s linear infinite;
+}
+
+@keyframes bs-mini-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.bs-mini-body {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.bs-mini-title {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--app-text, #0f1b14);
+}
+
+.bs-mini-sub {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--app-muted, #7e8b83);
+}
+
+.bs-mini-time {
+  flex: none;
+  font-size: 11px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: var(--app-muted, #7e8b83);
+}
+
+.bs-mini-rate {
+  flex: none;
+  border: 0;
+  border-radius: 999px;
+  padding: 4px 8px;
+  background: #eef5f0;
+  font-size: 11px;
+  font-weight: 800;
+  color: var(--app-primary-dark, #149247);
+  cursor: pointer;
+}
+
+@media (max-width: 400px) {
+  .bs-mini-time {
+    display: none;
+  }
+}
+
+@media (min-width: 920px) {
+  .bs-mini-player {
+    left: auto;
+    right: 24px;
+    bottom: 20px;
+    width: 380px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bs-mini-player {
+    animation: none;
+  }
+  .bs-mini-bar > i {
+    transition: none;
+  }
+}

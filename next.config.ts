@@ -1,6 +1,10 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  experimental: {
+    // Хуудас хоорондын зөөлөн шилжилт — React <ViewTransition> (components/app/route-view-transition).
+    viewTransition: true,
+  },
   // Ханзны зурлага (hanzi-writer-data, 47MB) одоо jsdelivr CDN-ээс — function-д багцлахгүй.
   outputFileTracingIncludes: {
     // «Уншлагын сан / 文库» — content/open/ доторх JSON-уудыг fs-ээр уншина.

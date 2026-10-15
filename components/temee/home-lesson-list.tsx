@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { PrefetchLink } from "@/components/navigation/prefetch-link";
 import { lessonPath } from "@/lib/content";
 import { tr } from "@/lib/i18n/translate";
 import { useUiLocale } from "@/lib/i18n/ui-locale";
@@ -47,7 +48,7 @@ export function HomeLessonList({
         </div>
       </header>
 
-      <ol className="bs-tm-lesson-list">
+      <ol className="bs-tm-lesson-list bs-stagger">
         {lessons.map((lesson, index) => {
           const status = statusByLesson[lesson.id] ?? "not_started";
           const completed = status === "completed";
@@ -56,7 +57,7 @@ export function HomeLessonList({
 
           return (
             <li key={lesson.id}>
-              <Link
+              <PrefetchLink
                 href={lessonPath(lesson.id)}
                 className="bs-tm-lesson-row"
               >
@@ -90,7 +91,7 @@ export function HomeLessonList({
                 >
                   {completed ? "✓" : "›"}
                 </span>
-              </Link>
+              </PrefetchLink>
             </li>
           );
         })}

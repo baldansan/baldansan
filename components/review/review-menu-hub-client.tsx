@@ -1,7 +1,12 @@
 "use client";
 
-import Link from "next/link";
 import { useCallback, useEffect, useState } from "react";
+import { PrefetchLink } from "@/components/navigation/prefetch-link";
+import {
+  readLocalSnapshot,
+  useLocalSnapshot,
+  writeLocalSnapshot,
+} from "@/lib/cache/local-snapshot";
 import { TemeeEmojiIcon } from "@/components/temee/temee-emoji-icon";
 import { useActiveHskLevel } from "@/components/providers/active-hsk-level-provider";
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
@@ -51,6 +56,17 @@ type HubStats = {
   accuracyPct: number;
 };
 
+/** localStorage-д хадгалах сүүлийн харагдац (stale-while-revalidate). */
+type HubSnapshot = {
+  stats: HubStats;
+  displayName: string;
+  isLoggedIn: boolean;
+  mistakeCount: number | null;
+  bichlegContinue: BichlegContinueTarget | null;
+};
+
+const HUB_SNAPSHOT_KEY = "review-hub:v1";
+
 export function ReviewMenuHubClient({
   testCount,
   helzuiModuleCount,
@@ -59,8 +75,8 @@ export function ReviewMenuHubClient({
 }: Props) {
   const locale = useUiLocale();
   const { level: activeLevel, hydrated } = useActiveHskLevel();
-  const [displayName, setDisplayName] = useState("Суралцагч");
-  const [stats, setStats] = useState<HubStats>({
+  const [freshName, setDisplayName] = useState("Суралцагч");
+  const [freshStats, setStats] = useState<HubStats>({
     streak: 0,
     dueCards: 0,
     dailyDone: 0,
@@ -68,13 +84,26 @@ export function ReviewMenuHubClient({
     studiedCount: 0,
     accuracyPct: 0,
   });
-  const [loading, setLoading] = useState(true);
-  const [bichlegContinue, setBichlegContinue] =
+  const [fetching, setLoading] = useState(true);
+  /** Шинэ утга Supabase-аас нэг удаа ирсэн үү (ирэхээс өмнө snapshot харуулна). */
+  const [fresh, setFresh] = useState(false);
+  const [freshBichleg, setBichlegContinue] =
     useState<BichlegContinueTarget | null>(null);
-  const [mistakeCount, setMistakeCount] = useState<number | null>(null);
+  const [freshMistakes, setMistakeCount] = useState<number | null>(null);
   const [writingDue, setWritingDue] = useState(0);
   const [sentenceCards, setSentenceCards] = useState({ total: 0, due: 0 });
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [freshLoggedIn, setIsLoggedIn] = useState(false);
+
+  // Stale-while-revalidate: localStorage дээрх сүүлийн утгыг эхний render-д
+  // шууд харуулна (hydration-д аюулгүй hook); loadStats ард нь шинийг татаад солино.
+  const snapshot = useLocalSnapshot<HubSnapshot>(HUB_SNAPSHOT_KEY);
+  const useSnapshot = !fresh && snapshot != null && snapshot.stats != null;
+  const stats = useSnapshot ? snapshot.stats : freshStats;
+  const displayName = useSnapshot ? snapshot.displayName || "Суралцагч" : freshName;
+  const isLoggedIn = useSnapshot ? Boolean(snapshot.isLoggedIn) : freshLoggedIn;
+  const mistakeCount = useSnapshot ? (snapshot.mistakeCount ?? null) : freshMistakes;
+  const bichlegContinue = useSnapshot ? (snapshot.bichlegContinue ?? null) : freshBichleg;
+  const loading = fetching && !useSnapshot;
 
   const loadStats = useCallback(async () => {
     if (!hydrated) return;
@@ -99,17 +128,25 @@ export function ReviewMenuHubClient({
     let accuracyPct = 0;
     const userId: string | null = auth.userId ?? null;
     let bichlegClip: BichlegContinueTarget | null = null;
+    let resolvedName = "Суралцагч";
+    let resolvedMistakes: number | null = null;
 
     if (hasSupabaseConfig) {
       const email = session.data?.user?.email;
       if (email) {
-        setDisplayName(email.split("@")[0] ?? "Суралцагч");
+        resolvedName = email.split("@")[0] ?? "Суралцагч";
+        setDisplayName(resolvedName);
       }
 
       setIsLoggedIn(Boolean(userId));
       if (userId) {
         void fetchMistakes(userId)
-          .then(({ mistakes }) => setMistakeCount(mistakes.length))
+          .then(({ mistakes }) => {
+            resolvedMistakes = mistakes.length;
+            setMistakeCount(mistakes.length);
+            const prev = readLocalSnapshot<HubSnapshot>(HUB_SNAPSHOT_KEY);
+            if (prev) writeLocalSnapshot(HUB_SNAPSHOT_KEY, { ...prev, mistakeCount: mistakes.length });
+          })
           .catch(() => setMistakeCount(null));
         const [{ data }, clip] = await Promise.all([
           getUserWordSrsStats(userId),
@@ -173,18 +210,27 @@ export function ReviewMenuHubClient({
       accuracyPct = local.accuracyPct;
     }
 
-    setStats({
+    const nextStats: HubStats = {
       streak,
       dueCards,
       dailyDone,
       dailyGoal,
       studiedCount,
       accuracyPct,
-    });
+    };
+    setStats(nextStats);
 
     setBichlegContinue(userId ? bichlegClip : null);
 
     setLoading(false);
+    setFresh(true);
+    writeLocalSnapshot<HubSnapshot>(HUB_SNAPSHOT_KEY, {
+      stats: nextStats,
+      displayName: resolvedName,
+      isLoggedIn: Boolean(userId),
+      mistakeCount: resolvedMistakes,
+      bichlegContinue: userId ? bichlegClip : null,
+    });
   }, [activeLevel, hydrated]);
 
   useEffect(() => {
@@ -230,7 +276,7 @@ export function ReviewMenuHubClient({
       : tr(locale, "Тест оруулаагүй байна");
 
   const studyPlanCard = (
-    <Link href="/study-plan" className="bs-tm-card">
+    <PrefetchLink href="/study-plan" className="bs-tm-card">
       <span className="bs-tm-card-ic bs-tm-card-ic--green" aria-hidden>
         📅
       </span>
@@ -239,11 +285,11 @@ export function ReviewMenuHubClient({
         <span className="bs-tm-card-sub">{tr(locale, "Хичээл, давталт, бичлэг")}</span>
       </span>
       <span className="bs-tm-card-chev" aria-hidden>›</span>
-    </Link>
+    </PrefetchLink>
   );
 
   const bichlegCard = bichlegContinue ? (
-    <Link href={bichlegContinue.href} className="bs-tm-card">
+    <PrefetchLink href={bichlegContinue.href} className="bs-tm-card">
       <span className="bs-tm-card-ic bs-tm-card-ic--blue" aria-hidden>
         📺
       </span>
@@ -254,7 +300,7 @@ export function ReviewMenuHubClient({
         </span>
       </span>
       <span className="bs-tm-card-chev" aria-hidden>›</span>
-    </Link>
+    </PrefetchLink>
   ) : null;
 
   /* PC (≥920px) баруун самбар — утсан дээр нуугдана (AppShell). */
@@ -281,22 +327,22 @@ export function ReviewMenuHubClient({
       {studyPlanCard}
       {bichlegCard}
       <p className="bs-tm-sec">{tr(locale, "Материал")}</p>
-      <Link href="/books" className="bs-tm-card">
+      <PrefetchLink href="/books" className="bs-tm-card">
         <span className="bs-tm-card-ic bs-tm-card-ic--blue" aria-hidden>📖</span>
         <span className="bs-tm-card-body">
           <span className="bs-tm-card-title">{tr(locale, "Ном сонгох")}</span>
           <span className="bs-tm-card-sub">{tr(locale, "HSK标准教程 · 146 хичээл · YCT, бусад ном удахгүй")}</span>
         </span>
         <span className="bs-tm-card-chev" aria-hidden>›</span>
-      </Link>
-      <Link href="/library" className="bs-tm-card">
+      </PrefetchLink>
+      <PrefetchLink href="/library" className="bs-tm-card">
         <span className="bs-tm-card-ic bs-tm-card-ic--green" aria-hidden>📚</span>
         <span className="bs-tm-card-body">
           <span className="bs-tm-card-title">{tr(locale, "Уншлагын сан")}</span>
           <span className="bs-tm-card-sub">{tr(locale, "Зурагт ном, хэлц·зүйр цэцэн үг")}</span>
         </span>
         <span className="bs-tm-card-chev" aria-hidden>›</span>
-      </Link>
+      </PrefetchLink>
     </div>
   );
 
@@ -309,7 +355,7 @@ export function ReviewMenuHubClient({
       rightRail={rightRail}
     >
       <div className="bs-review-hub">
-        <div className="bs-tm-topbar">
+        <div className="bs-tm-topbar bs-page-in">
           <div className="bs-tm-hello">
             {tr(locale, "Сайн уу 👋")}
             <b>{shownName}</b>
@@ -372,7 +418,7 @@ export function ReviewMenuHubClient({
 
         <p className="bs-tm-sec">{tr(locale, "Өнөөдөр юу хийх вэ?")}</p>
 
-        <Link href="/review/daily" className="bs-tm-feat">
+        <PrefetchLink href="/review/daily" className="bs-tm-feat">
           <TemeeEmojiIcon
             variant="featured"
             className="bs-tm-feat-img"
@@ -388,15 +434,15 @@ export function ReviewMenuHubClient({
               <i style={{ width: `${loading ? 0 : progressPct}%` }} />
             </div>
           </div>
-        </Link>
+        </PrefetchLink>
 
         <div className="bs-desk-hide">
           {studyPlanCard}
           {bichlegCard}
         </div>
 
-        <div className="bs-tm-grid">
-        <Link href="/review/memorize" className="bs-tm-card">
+        <div className="bs-tm-grid bs-stagger">
+        <PrefetchLink href="/review/memorize" className="bs-tm-card">
           <span className="bs-tm-card-ic bs-tm-card-ic--blue" aria-hidden>
             💡
           </span>
@@ -405,9 +451,9 @@ export function ReviewMenuHubClient({
             <span className="bs-tm-card-sub">{memorizeStatus}</span>
           </span>
           <span className="bs-tm-card-chev" aria-hidden>›</span>
-        </Link>
+        </PrefetchLink>
 
-        <Link href="/review/writing" className="bs-tm-card">
+        <PrefetchLink href="/review/writing" className="bs-tm-card">
           <span className="bs-tm-card-ic bs-tm-card-ic--blue" aria-hidden>
             ✍️
           </span>
@@ -423,9 +469,9 @@ export function ReviewMenuHubClient({
             </span>
           </span>
           <span className="bs-tm-card-chev" aria-hidden>›</span>
-        </Link>
+        </PrefetchLink>
 
-        <Link href="/review/sentences" className="bs-tm-card">
+        <PrefetchLink href="/review/sentences" className="bs-tm-card">
           <span className="bs-tm-card-ic bs-tm-card-ic--blue" aria-hidden>
             🔖
           </span>
@@ -443,9 +489,9 @@ export function ReviewMenuHubClient({
             </span>
           </span>
           <span className="bs-tm-card-chev" aria-hidden>›</span>
-        </Link>
+        </PrefetchLink>
 
-        <Link href="/review/mistakes" className="bs-tm-card">
+        <PrefetchLink href="/review/mistakes" className="bs-tm-card">
           <span className="bs-tm-card-ic bs-tm-card-ic--red" aria-hidden>
             ❌
           </span>
@@ -467,9 +513,9 @@ export function ReviewMenuHubClient({
             </span>
           </span>
           <span className="bs-tm-card-chev" aria-hidden>›</span>
-        </Link>
+        </PrefetchLink>
 
-        <Link href="/review/weak-spots" className="bs-tm-card">
+        <PrefetchLink href="/review/weak-spots" className="bs-tm-card">
           <span className="bs-tm-card-ic bs-tm-card-ic--purple" aria-hidden>
             📉
           </span>
@@ -482,9 +528,9 @@ export function ReviewMenuHubClient({
             </span>
           </span>
           <span className="bs-tm-card-chev" aria-hidden>›</span>
-        </Link>
+        </PrefetchLink>
 
-        <Link href="/review/practice" className="bs-tm-card">
+        <PrefetchLink href="/review/practice" className="bs-tm-card">
           <span className="bs-tm-card-ic bs-tm-card-ic--green" aria-hidden>
             🎯
           </span>
@@ -497,9 +543,9 @@ export function ReviewMenuHubClient({
             </span>
           </span>
           <span className="bs-tm-badge-new">{tr(locale, "ШИНЭ")}</span>
-        </Link>
+        </PrefetchLink>
 
-        <Link href="/review/tests" className="bs-tm-card">
+        <PrefetchLink href="/review/tests" className="bs-tm-card">
           <span className="bs-tm-card-ic bs-tm-card-ic--purple" aria-hidden>
             📝
           </span>
@@ -508,7 +554,7 @@ export function ReviewMenuHubClient({
             <span className="bs-tm-card-sub">{testStatus}</span>
           </span>
           <span className="bs-tm-card-chev" aria-hidden>›</span>
-        </Link>
+        </PrefetchLink>
         </div>
 
         <div className="bs-tm-cols">
@@ -517,7 +563,7 @@ export function ReviewMenuHubClient({
           {tr(locale, "Ханз · Дуудлага")}
         </p>
 
-        <Link href="/kanji" className="bs-tm-card">
+        <PrefetchLink href="/kanji" className="bs-tm-card">
           <span className="bs-tm-card-ic bs-tm-card-ic--green" aria-hidden>
             🈴
           </span>
@@ -530,7 +576,7 @@ export function ReviewMenuHubClient({
             </span>
           </span>
           <span className="bs-tm-card-chev" aria-hidden>›</span>
-        </Link>
+        </PrefetchLink>
 
         </div>
         <div className="bs-tm-col bs-desk-hide">
@@ -538,7 +584,7 @@ export function ReviewMenuHubClient({
           {tr(locale, "Материал")}
         </p>
 
-        <Link href="/books" className="bs-tm-card">
+        <PrefetchLink href="/books" className="bs-tm-card">
           <span className="bs-tm-card-ic bs-tm-card-ic--blue" aria-hidden>
             📖
           </span>
@@ -549,9 +595,9 @@ export function ReviewMenuHubClient({
             </span>
           </span>
           <span className="bs-tm-card-chev" aria-hidden>›</span>
-        </Link>
+        </PrefetchLink>
 
-        <Link href="/library" className="bs-tm-card">
+        <PrefetchLink href="/library" className="bs-tm-card">
           <span className="bs-tm-card-ic bs-tm-card-ic--green" aria-hidden>
             📚
           </span>
@@ -562,7 +608,7 @@ export function ReviewMenuHubClient({
             </span>
           </span>
           <span className="bs-tm-card-chev" aria-hidden>›</span>
-        </Link>
+        </PrefetchLink>
 
         </div>
         <div className="bs-tm-col">
@@ -570,7 +616,7 @@ export function ReviewMenuHubClient({
           {tr(locale, "Дүрэм")}
         </p>
 
-        <Link href="/review/grammar/structure" className="bs-tm-card">
+        <PrefetchLink href="/review/grammar/structure" className="bs-tm-card">
           <span className="bs-tm-card-ic bs-tm-card-ic--green" aria-hidden>
             🧩
           </span>
@@ -581,9 +627,9 @@ export function ReviewMenuHubClient({
             </span>
           </span>
           <span className="bs-tm-card-chev" aria-hidden>›</span>
-        </Link>
+        </PrefetchLink>
 
-        <Link href="/review/grammar/hsk30" className="bs-tm-card">
+        <PrefetchLink href="/review/grammar/hsk30" className="bs-tm-card">
           <span className="bs-tm-card-ic bs-tm-card-ic--red" aria-hidden>
             📚
           </span>
@@ -594,7 +640,7 @@ export function ReviewMenuHubClient({
             </span>
           </span>
           <span className="bs-tm-badge-new">{tr(locale, "ШИНЭ")}</span>
-        </Link>
+        </PrefetchLink>
         </div>
         </div>
       </div>

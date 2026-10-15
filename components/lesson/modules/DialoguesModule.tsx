@@ -4,7 +4,8 @@
 // Шинэ үг дээр дарвал пиньинь+монгол попап (богино эхтэй ижил).
 // Гэрээ: { lesson, onDone }.
 
-import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useLayoutEffect, useMemo, useRef, useState } from "react";
+import { useGlobalAudio } from "@/components/providers/global-audio-provider";
 import { resolveLessonPackagePlayableUrl } from "@/lib/lesson/package-audio-resolve";
 import { playChineseWordAudio } from "@/lib/tts/play-chinese-word-audio";
 import type { HskLessonPackage } from "@/types/hsk-lesson-package";
@@ -70,9 +71,12 @@ function refineVocabPop(container: HTMLElement, pop: HTMLElement, anchor: VocabP
 export default function DialoguesModule({
   lesson,
   onDone,
+  trackHref,
 }: {
   lesson: HskLessonPackage;
   onDone: () => void;
+  /** Mini-player дээрх гарчиг дарахад буцах холбоос (хичээлийн watch хуудас). */
+  trackHref?: string;
 }) {
   const dialogues = lesson.dialogues ?? [];
   const base = lesson.audio_base_path;
@@ -104,15 +108,18 @@ export default function DialoguesModule({
 
   const [di, setDi] = useState(0);
   const [speed, setSpeed] = useState<Speed>(1);
-  const [playing, setPlaying] = useState(false);
   const [tapped, setTapped] = useState<VocabPop | null>(null);
-  const audioRef = useRef<HTMLAudioElement | null>(null);
+  // Глобал тоглуулагч — хуудас солиход ярианы аудио тасрахгүй (mini-player).
+  const audio = useGlobalAudio();
   const chatRef = useRef<HTMLDivElement | null>(null);
   const popRef = useRef<HTMLDivElement | null>(null);
 
   const dialogue = dialogues[di];
   const total = dialogues.length;
   const fullSrc = audioUrl(base, f(dialogue, "audio", "audioFile") || null);
+  const trackId = fullSrc ? `dialogue:${fullSrc}` : `dialogue:none:${di}`;
+  const playing = audio.isActive(trackId);
+  const lessonTitle = lesson.title?.mn?.trim() || lesson.title?.zh?.trim() || "Хичээл";
 
   const sides = useMemo(() => {
     const map: Record<string, "l" | "r"> = {};
@@ -125,24 +132,23 @@ export default function DialoguesModule({
   }, [dialogue]);
 
   const stopAll = useCallback(() => {
-    if (audioRef.current) { audioRef.current.pause(); audioRef.current = null; }
-    setPlaying(false);
-  }, []);
+    audio.stopIf(trackId);
+  }, [audio, trackId]);
 
   function playFull() {
     if (!fullSrc) return;
-    if (playing) return stopAll();
-    stopAll();
-    const a = new Audio(fullSrc);
-    a.playbackRate = speed;
-    audioRef.current = a;
-    setPlaying(true);
-    const clear = () => setPlaying(false);
-    a.onended = () => { if (audioRef.current === a) audioRef.current = null; clear(); };
-    a.onerror = clear;
-    void a.play().catch(clear);
+    void audio.toggle(
+      {
+        id: trackId,
+        src: fullSrc,
+        title: f(dialogue, "title_mn", "title") || "Яриа",
+        subtitle: lessonTitle,
+        href: trackHref,
+      },
+      { rate: speed }
+    );
   }
-  function changeSpeed(s: Speed) { setSpeed(s); if (audioRef.current) audioRef.current.playbackRate = s; }
+  function changeSpeed(s: Speed) { setSpeed(s); if (audio.isCurrent(trackId)) audio.setRate(s); }
 
   function tapWord(e: React.MouseEvent, v: Vocab) {
     void playChineseWordAudio(v.zh);
@@ -156,8 +162,8 @@ export default function DialoguesModule({
   function goPrev() { if (di > 0) { stopAll(); clearPop(); setDi(di - 1); } }
   function goNext() { stopAll(); clearPop(); if (di < total - 1) setDi(di + 1); else onDone(); }
 
-  useEffect(() => () => stopAll(), [stopAll]);
-  useEffect(() => { stopAll(); clearPop(); }, [di, stopAll]);
+  // Модуль хаагдахад (хуудас солиход) аудио ЗОГСООХГҮЙ — mini-player үргэлжлүүлнэ.
+  // Яриа солигдоход goPrev/goNext өөрсдөө аудиог зогсоож, попапыг хаана.
 
   useLayoutEffect(() => {
     if (!tapped || !popRef.current || !chatRef.current) return;
