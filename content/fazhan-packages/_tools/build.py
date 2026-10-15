@@ -14,9 +14,17 @@ import extra as X
 from workbook_quiz import WB_READING, QUIZ, SHIYISHI
 
 OUT = f"{D}/pkg"; os.makedirs(OUT, exist_ok=True)
-N = META["n"]; COURSE = "fazhan-zhongji1"; LID = f"fazhan-zhongji1-l{N:02d}"
-AUDIO_TEXT, AUDIO_WORDS = f"audio/fazhan-zhongji1-{N:02d}-text.mp3", f"audio/fazhan-zhongji1-{N:02d}-words.mp3"
+N = META["n"]; COURSE = META.get("course_id", os.environ.get("FAZHAN_BOOK", "fazhan-zhongji1")); LID = f"{COURSE}-l{N:02d}"
+AUDIO_TEXT, AUDIO_WORDS = f"audio/{COURSE}-{N:02d}-text.mp3", f"audio/{COURSE}-{N:02d}-words.mp3"
 TITLE_ZH, TITLE_MN = META["title_zh"], META["title_mn"]
+# Ном бүрийн загвар мэдээлэл (meta.py-гаас дарж болно — zhongji-1-ийн анхны утга хэвээр хэвийн)
+BOOK_SLUG = META.get("book_slug", "zhongji-zonghe-1")  # docs/fazhan/.../{BOOK_SLUG}.md гэх мэт
+BOOK_LABEL_MN = META.get("book_label_mn", "发展汉语 中级I")  # lesson.json title-д ордог
+LEVEL_LABEL = META.get("level_label", "发展汉语 中级 I")  # lesson.json "level" талбар
+SERIES_ZH = META.get("series_zh", "发展汉语（第二版）中级综合 I")
+SERIES_LABEL_MN = META.get("series_label_mn", "发展汉语 дунд I (≈HSK4)")
+SOURCE_DESC = META.get("source_desc", "сурах бичиг, 教案, 课件, 参考答案, албан mp3")
+TEACHER_LAYER_DESC = META.get("teacher_layer_desc", "教案 + PPT 课件-д тулгуурласан")
 
 COMMON_PHRASES = {"一样": [["yí"], ["yàng"]], "一半": [["yí"], ["bàn"]], "一阵": [["yí"], ["zhèn"]], "一夜": [["yí"], ["yè"]], "一会儿": [["yí"], ["huì"], ["r"]],
                   "一种": [["yì"], ["zhǒng"]], "一条": [["yì"], ["tiáo"]], "一杯": [["yì"], ["bēi"]], "一本": [["yì"], ["běn"]], "一面": [["yí"], ["miàn"]], "一眼": [["yì"], ["yǎn"]],
@@ -77,7 +85,7 @@ vocab = []
 for i, (zh, py, pos, mn, key, ezh, emn) in enumerate(VOCAB, 1):
     vocab.append({"chinese": zh, "pinyin": py, "mongolian": mn, "notes": pos + (" · гол үг" if key else ""),
                   "exampleChinese": ezh, "examplePinyin": cap(py_sent(ezh)), "exampleMongolian": emn,
-                  "hskLevel": "发展汉语 中级I", "keyWord": key, "orderIndex": i})
+                  "hskLevel": BOOK_LABEL_MN, "keyWord": key, "orderIndex": i})
 json.dump(vocab, open(f"{OUT}/vocabulary.json", "w"), ensure_ascii=False, indent=1)
 
 # ---------- grammar.json ----------
@@ -181,21 +189,22 @@ json.dump(quiz, open(f"{OUT}/quiz.json", "w"), ensure_ascii=False, indent=1)
 # ---------- lesson.json / manifest.json ----------
 images = load_opt("media_images.json", [])
 has_clips = os.path.isdir(f"{OUT}/audio/words") and len(os.listdir(f"{OUT}/audio/words")) > 0
-lesson = {"courseId": COURSE, "lessonId": LID, "title": f"发展汉语 中级I {N}-р хичээл — {TITLE_MN}", "chineseTitle": TITLE_ZH, "targetTitle": TITLE_ZH,
+has_audio = os.path.exists(f"{OUT}/{AUDIO_TEXT}")
+lesson = {"courseId": COURSE, "lessonId": LID, "title": f"{BOOK_LABEL_MN} {N}-р хичээл — {TITLE_MN}", "chineseTitle": TITLE_ZH, "targetTitle": TITLE_ZH,
           "mongolianTitle": TITLE_MN, "subtitle": " · ".join(g["point"] for g in GRAMMAR),
           "description": META["description"],
           "duration": META.get("duration", "3 × 90 мин (教案)"), "status": "draft", "orderIndex": N, "icon": META.get("icon", "📘"),
-          **({"thumbnailFile": META["thumbnail"]} if META.get("thumbnail") else {}), "audioFile": AUDIO_TEXT,
-          "level": "发展汉语 中级 I", "hook": {"teacher_mn": X.INTRO["teacher_mn"], "warmup_mn": X.INTRO["warmup_mn"]},
-          "sourceNote": f"发展汉语（第二版）中级综合 I — 第{N}课《{TITLE_ZH}》 [hskLevel=4] [lessonNumber={N}]; эх: docs/fazhan/textbooks/zhongji-zonghe-1.md, teacher/zhongji-zonghe-1/l{N:02d}.md, courseware/zhongji-zonghe-1/l{N:02d}.md, workbook/zhongji-zonghe-1-answers.md"}
+          **({"thumbnailFile": META["thumbnail"]} if META.get("thumbnail") else {}), **({"audioFile": AUDIO_TEXT} if has_audio else {}),
+          "level": LEVEL_LABEL, "hook": {"teacher_mn": X.INTRO["teacher_mn"], "warmup_mn": X.INTRO["warmup_mn"]},
+          "sourceNote": f"{SERIES_ZH} — 第{N}课《{TITLE_ZH}》 [hskLevel={META.get('hsk_level', 4)}] [lessonNumber={N}]; эх: docs/fazhan/textbooks/{BOOK_SLUG}.md, teacher/{BOOK_SLUG}/l{N:02d}.md, courseware/{BOOK_SLUG}/l{N:02d}.md, workbook/{BOOK_SLUG}-answers.md"}
 json.dump(lesson, open(f"{OUT}/lesson.json", "w"), ensure_ascii=False, indent=1)
-manifest = {"packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1", "courseType": "chinese-hsk", "courseId": COURSE, "lessonId": LID, "hskLevel": 4, "lessonNumber": N,
+manifest = {"packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1", "courseType": "chinese-hsk", "courseId": COURSE, "lessonId": LID, "hskLevel": META.get("hsk_level", 4), "lessonNumber": N,
             "lessonProfile": "hsk4-dialogue-shorttext-exam-workbook", "lessonType": "hsk4-dialogue-shorttext-exam-workbook", "language": "zh-MN", "targetLanguage": "zh", "uiLanguage": "mn",
-            "title": TITLE_ZH, "mongolianTitle": TITLE_MN, "series": "发展汉语（第二版）中级综合 I", "seriesLabel_mn": "发展汉语 дунд I (≈HSK4)",
-            "source": f"发展汉语（第二版）中级综合 I · 第{N}课 (сурах бичиг, 教案, 课件, 参考答案, албан mp3)", "hasAudio": True, "hasImages": bool(images),
-            "audio": {"text": AUDIO_TEXT, "words": AUDIO_WORDS, **({"vocabularyClips": f"audio/words/w01..w{len(VOCAB):02d}.mp3 (албан 生词 бичлэгээс хайчилсан)"} if has_clips else {})},
+            "title": TITLE_ZH, "mongolianTitle": TITLE_MN, "series": SERIES_ZH, "seriesLabel_mn": SERIES_LABEL_MN,
+            "source": f"{SERIES_ZH} · 第{N}课 ({SOURCE_DESC})", "hasAudio": has_audio, "hasImages": bool(images),
+            **({"audio": {"text": AUDIO_TEXT, "words": AUDIO_WORDS, **({"vocabularyClips": f"audio/words/w01..w{len(VOCAB):02d}.mp3 (албан 生词 бичлэгээс хайчилсан)"} if has_clips else {})}} if has_audio else {}),
             **({"media": {"lessonId": LID, "images": images}} if images else {}),
-            "verification": {"answerStatus": "official_answer_key_verified (参考答案)", "textStatus": "source_verified (сурах бичгийн хуудсыг зургаар уншсан)", "teacherLayer": "教案 + PPT 课件-д тулгуурласан"}}
+            "verification": {"answerStatus": "official_answer_key_verified (参考答案)", "textStatus": "source_verified (сурах бичгийн хуудсыг зургаар уншсан)", "teacherLayer": TEACHER_LAYER_DESC}}
 json.dump(manifest, open(f"{OUT}/manifest.json", "w"), ensure_ascii=False, indent=1)
 subs = load_opt("subtitles.json", None)
 if subs:

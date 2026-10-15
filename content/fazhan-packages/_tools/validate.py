@@ -1,6 +1,10 @@
-"""Багцын шалгалт. Usage: validate.py LESSON_DIR  → exit 1 if hard errors."""
+"""Багцын шалгалт. Usage: validate.py LESSON_DIR [--no-audio]
+--no-audio: албан ёсны аудио/PPT эх сурвалжгүй ном (жишээ нь zhongji-2+) — үгийн клип,
+audio/text, audio/words, vocabularyAudio бүрэн байхыг шаардахгүй (апп өөрөө TTS-ээр уншина).
+Зураг бас сонголттой болно (warn, err биш). exit 1 if hard errors."""
 import sys, os, json, re, glob
 D = os.path.abspath(sys.argv[1]); P = f"{D}/pkg"; err, warn = [], []
+NO_AUDIO = "--no-audio" in sys.argv[2:]
 J = {f: json.load(open(f"{P}/{f}.json")) for f in ["lesson", "manifest", "vocabulary", "texts", "grammar", "quiz", "workbook"]}
 subs = json.load(open(f"{P}/subtitles.json")) if os.path.exists(f"{P}/subtitles.json") else []
 V, T, G, Q, W, M = J["vocabulary"], J["texts"], J["grammar"], J["quiz"], J["workbook"], J["manifest"]
@@ -10,18 +14,26 @@ if len(V) < 20: err.append(f"vocab {len(V)} < 20")
 if len(G) < 3: err.append(f"grammar {len(G)} < 3")
 if len(Q) < 25: err.append(f"quiz {len(Q)} < 25")
 if len(T["wordExplanation"]) < 5: warn.append(f"wordExplanation {len(T['wordExplanation'])} < 5")
-if len(subs) != len(sents): err.append(f"subtitles {len(subs)} != sentences {len(sents)}")
+if not NO_AUDIO and len(subs) != len(sents): err.append(f"subtitles {len(subs)} != sentences {len(sents)}")
+elif NO_AUDIO and subs and len(subs) != len(sents): warn.append(f"subtitles {len(subs)} != sentences {len(sents)}")
 clips = sorted(glob.glob(f"{P}/audio/words/w*.mp3"))
-if len(clips) != len(V): err.append(f"word clips {len(clips)} != vocab {len(V)}")
+if not NO_AUDIO and len(clips) != len(V): err.append(f"word clips {len(clips)} != vocab {len(V)}")
+elif NO_AUDIO and clips and len(clips) != len(V): warn.append(f"word clips {len(clips)} != vocab {len(V)} (хэсэгчилсэн, үлдсэнийг апп TTS-ээр унших)")
 va = T.get("vocabularyAudio", {})
 for v in V:
-    if v["chinese"] not in va: err.append(f"vocabularyAudio дутуу: {v['chinese']}")
-for f in ["audio/" + os.path.basename(M["audio"]["text"]), "audio/" + os.path.basename(M["audio"]["words"])]:
-    if not os.path.exists(f"{P}/{f}"): err.append(f"audio дутуу {f}")
+    if v["chinese"] not in va:
+        (warn if NO_AUDIO else err).append(f"vocabularyAudio дутуу (TTS уншина): {v['chinese']}" if NO_AUDIO else f"vocabularyAudio дутуу: {v['chinese']}")
+if not NO_AUDIO:
+    for f in ["audio/" + os.path.basename(M["audio"]["text"]), "audio/" + os.path.basename(M["audio"]["words"])]:
+        if not os.path.exists(f"{P}/{f}"): err.append(f"audio дутуу {f}")
+elif M.get("audio", {}).get("text") or M.get("audio", {}).get("words"):
+    for f in ["audio/" + os.path.basename(M["audio"].get("text") or ""), "audio/" + os.path.basename(M["audio"].get("words") or "")]:
+        if f != "audio/" and not os.path.exists(f"{P}/{f}"): warn.append(f"audio дутуу {f}")
 for im in M.get("media", {}).get("images", []):
-    if not os.path.exists(f"{P}/{im['file']}"): err.append(f"image дутуу {im['file']}")
+    if not os.path.exists(f"{P}/{im['file']}"): (warn if NO_AUDIO else err).append(f"image дутуу {im['file']}")
     if not im.get("title"): warn.append(f"image title хоосон {im['id']}")
-if J["lesson"].get("thumbnailFile") and not os.path.exists(f"{P}/{J['lesson']['thumbnailFile']}"): err.append("thumbnail дутуу")
+if NO_AUDIO and not M.get("media", {}).get("images"): warn.append("зураг огт алга (албан 课件 эх сурвалж байхгүй тул)")
+if J["lesson"].get("thumbnailFile") and not os.path.exists(f"{P}/{J['lesson']['thumbnailFile']}"): (warn if NO_AUDIO else err).append("thumbnail дутуу")
 # quiz / exercises sanity + answer balance
 pos = {}
 for q in Q:

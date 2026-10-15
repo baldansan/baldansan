@@ -1,0 +1,560 @@
+[
+ {
+  "type": "cloze",
+  "question": "那位年轻的女老师（ ）地抬起头。",
+  "options": [
+   "从容",
+   "轻易",
+   "开心",
+   "惊讶"
+  ],
+  "correct_answer": "惊讶",
+  "explanation": "惊讶 = гайхширах. 开心 — баяртай, 从容 — тайван, 轻易 — хялбархан.",
+  "order_index": 1,
+  "id": "fazhan-zhongji2-l01-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "她不敢相信（ ）问小男孩儿。",
+  "options": [
+   "一样",
+   "着呢",
+   "似的",
+   "的话"
+  ],
+  "correct_answer": "似的",
+  "explanation": "好像……似的 = яг л … шиг.",
+  "order_index": 2,
+  "id": "fazhan-zhongji2-l01-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我们把花儿插在瓶子里，（ ），办公桌上冒出一丛丛玫瑰。",
+  "options": [
+   "最初",
+   "即将",
+   "顿时",
+   "随即"
+  ],
+  "correct_answer": "顿时",
+  "explanation": "顿时 = тэр даруй (өнгөрсөн явдал). 即将 — удахгүй, 随即 — тэр мөчид (ойролцоо ч жишээнд 顿时 тохирно), 最初 — хамгийн эхэнд.",
+  "order_index": 3,
+  "id": "fazhan-zhongji2-l01-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "美丽和快乐也能（ ）这种方式得到。",
+  "options": [
+   "理",
+   "凭",
+   "隔",
+   "随"
+  ],
+  "correct_answer": "凭",
+  "explanation": "凭 = …-ээр тулгуурлан. 随 — дагах, 理 — тоох, 隔 — тусгаарлах.",
+  "order_index": 4,
+  "id": "fazhan-zhongji2-l01-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "所有的生活都（ ）挤压在一只皮箱里。",
+  "options": [
+   "随手",
+   "随时",
+   "随即",
+   "随便"
+  ],
+  "correct_answer": "随手",
+  "explanation": "随手 = гар дээрээ. 随便 — дур мэдэн, 随即 — тэр дор нь, 随时 — хэзээ ч.",
+  "order_index": 5,
+  "id": "fazhan-zhongji2-l01-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "她提着皮箱，（ ）地到处奔忙着。",
+  "options": [
+   "惊讶",
+   "孤单",
+   "从容",
+   "可惜"
+  ],
+  "correct_answer": "从容",
+  "explanation": "从容 = яарахгүй, тайван.",
+  "order_index": 6,
+  "id": "fazhan-zhongji2-l01-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "最初是大学毕业那一年，小小的行李箱放不下更多的东西，没有（ ）的留恋。",
+  "options": [
+   "一连",
+   "丛",
+   "丝毫",
+   "一辈子"
+  ],
+  "correct_answer": "丝毫",
+  "explanation": "丝毫 = (үгүйсгэлд) бага ч гэсэн.",
+  "order_index": 7,
+  "id": "fazhan-zhongji2-l01-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "只有（ ）进入新生活的兴奋与希望。",
+  "options": [
+   "顿时",
+   "一连",
+   "随即",
+   "即将"
+  ],
+  "correct_answer": "即将",
+  "explanation": "即将 = удахгүй (ирээдүй). 顿时/随即 — өнгөрсөн явдалд, 一连 — дараалан.",
+  "order_index": 8,
+  "id": "fazhan-zhongji2-l01-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "减法生活就是丢掉生命以外可有可无的东西，不被（ ）左右。",
+  "options": [
+   "协作",
+   "方式",
+   "景象",
+   "欲望"
+  ],
+  "correct_answer": "欲望",
+  "explanation": "欲望 = хүсэл.",
+  "order_index": 9,
+  "id": "fazhan-zhongji2-l01-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "让我们生活得更真实，更自然，更（ ）。",
+  "options": [
+   "宁静",
+   "温暖",
+   "惊讶",
+   "灿烂"
+  ],
+  "correct_answer": "宁静",
+  "explanation": "宁静 = тайван (орчин, сэтгэл).",
+  "order_index": 10,
+  "id": "fazhan-zhongji2-l01-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "节约了一辈子的婆婆（ ），说了她几次。",
+  "options": [
+   "看上去",
+   "看得下去",
+   "看不下去",
+   "看起来"
+  ],
+  "correct_answer": "看不下去",
+  "explanation": "看不下去 = тэвчиж чадахгүй.",
+  "order_index": 11,
+  "id": "fazhan-zhongji2-l01-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "朋友（ ）约了她两次，正好她都有事。",
+  "options": [
+   "一丛",
+   "一连",
+   "一脸",
+   "一辈子"
+  ],
+  "correct_answer": "一连",
+  "explanation": "一连 = дараалан, ар араасаа.",
+  "order_index": 12,
+  "id": "fazhan-zhongji2-l01-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "一个同事（ ）她在老板面前讲了他的坏话。",
+  "options": [
+   "信任",
+   "怀疑",
+   "珍惜",
+   "协作"
+  ],
+  "correct_answer": "怀疑",
+  "explanation": "怀疑 = сэжиглэх. Эсрэг нь 信任 (итгэх).",
+  "order_index": 13,
+  "id": "fazhan-zhongji2-l01-q13",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Цаашдын шийдвэр чиний дээр л байна» гэдгийг илэрхийлэхэд аль нь зөв бэ?",
+  "options": [
+   "下面的决定就看你的了。",
+   "下面的决定看你了的。",
+   "下面的决定你就看的了。"
+  ],
+  "correct_answer": "下面的决定就看你的了。",
+  "explanation": "（就/全）看N的了/吧 — N нь 看 ба 的-ийн хооронд.",
+  "order_index": 14,
+  "id": "fazhan-zhongji2-l01-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Аль нь ЗӨВ бэ?",
+  "options": [
+   "每朵花儿都用玻璃纸包裹了，又裹包了。",
+   "每朵花儿都用玻璃纸又包又裹了。",
+   "每朵花儿都用玻璃纸包了又裹，裹了又包。"
+  ],
+  "correct_answer": "每朵花儿都用玻璃纸包了又裹，裹了又包。",
+  "explanation": "V₁了（又）V₂，V₂了（又）V₁ — 了/又 байрлал тогтмол.",
+  "order_index": 15,
+  "id": "fazhan-zhongji2-l01-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Чи чинийхээ ярь, би минийхээ бичье» гэдгийг илэрхийлэхэд аль нь зөв бэ?",
+  "options": [
+   "你和我说写各自的。",
+   "你说你的，我写我的。",
+   "你说的你，我写的我。"
+  ],
+  "correct_answer": "你说你的，我写我的。",
+  "explanation": "你V你的，我V我的 — 的 нь V-ийн ард, N-ийн өмнө.",
+  "order_index": 16,
+  "id": "fazhan-zhongji2-l01-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Алдвал алдлаа л даа, юунд уйтгарлах вэ?» гэдгийг илэрхийлэхэд аль нь зөв бэ?",
+  "options": [
+   "丢了就丢了呗，有什么好伤心的？",
+   "丢呗了就丢了，有什么好伤心的？",
+   "就丢了呗丢了，有什么好伤心的？"
+  ],
+  "correct_answer": "丢了就丢了呗，有什么好伤心的？",
+  "explanation": "V(了)就V(了)(呗) — 呗 нь ХАМГИЙН ТӨГСГӨЛД.",
+  "order_index": 17,
+  "id": "fazhan-zhongji2-l01-q17",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Аль өгүүлбэрт «V(了)就V(了)呗» бүтцийг БУРУУ хэрэглэсэн бэ？",
+  "options": [
+   "饭做得不好就不好呗。",
+   "饭做得不好就坏呗。",
+   "他不干了就不干了呗。"
+  ],
+  "correct_answer": "饭做得不好就坏呗。",
+  "explanation": "就-ийн өмнө, ард ижил үг байх ёстой (不好/不好); 不好 ба 坏 өөр үг тул буруу.",
+  "order_index": 18,
+  "id": "fazhan-zhongji2-l01-q18",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "«Тэр яаж бодохыг хүсвэл тэгж бодог» гэдгийг илэрхийлэхэд аль нь зөв бэ?",
+  "options": [
+   "他爱怎么认为就怎么认为吧。",
+   "他爱怎么认为怎么认为吧。",
+   "他怎么爱认为就认为吧。"
+  ],
+  "correct_answer": "他爱怎么认为就怎么认为吧。",
+  "explanation": "爱怎么V就怎么V — 就 заавал байна.",
+  "order_index": 19,
+  "id": "fazhan-zhongji2-l01-q19",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Аль нь БУРУУ бэ?",
+  "options": [
+   "我爱怎么用就怎么花。",
+   "我爱怎么用就怎么用。",
+   "你爱怎么走就怎么走。"
+  ],
+  "correct_answer": "我爱怎么用就怎么花。",
+  "explanation": "Хоёр 怎么V ХОЁУЛАА ИЖИЛ байх ёстой (用/用), 用/花 өөр үг тул буруу.",
+  "order_index": 20,
+  "id": "fazhan-zhongji2-l01-q20",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "«Бүгд үнэхээр ядарсан ч, хэн ч явсангүй» гэдгийг онцлон баталгаажуулж илэрхийлэхэд аль нь зөв бэ?",
+  "options": [
+   "大家很是累，可是没有一个人离开自己的岗位。",
+   "大家是很累，可是没有一个人离开自己的岗位。",
+   "大家累是很，可是没有一个人离开自己的岗位。"
+  ],
+  "correct_answer": "大家是很累，可是没有一个人离开自己的岗位。",
+  "explanation": "是(强调) — предикатив хэсгийн (很累) ЭХЭНД ордог.",
+  "order_index": 21,
+  "id": "fazhan-zhongji2-l01-q21",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "综合练习 六-4. 这套房子不是我买的，（ ）我的收入，就是一辈子不吃不喝也买不起。",
+  "options": [
+   "理",
+   "随",
+   "隔",
+   "凭"
+  ],
+  "correct_answer": "凭",
+  "explanation": "凭 = …-д тулгуурлан.",
+  "order_index": 22,
+  "id": "fazhan-zhongji2-l01-q22",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«似的» нь хаана байрладаг вэ?",
+  "options": [
+   "өгүүлбэрийн эхэнд",
+   "V/Adj хэсгийн ТӨГСГӨЛД",
+   "V/Adj хэсгийн ЭХЭНД"
+  ],
+  "correct_answer": "V/Adj хэсгийн ТӨГСГӨЛД",
+  "explanation": "似的 нь зүйрлэх хэллэгийн ТӨГСГӨЛД орж, 好像-ийн хамтрагч.",
+  "order_index": 23,
+  "id": "fazhan-zhongji2-l01-q23",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "年轻漂亮的女老师有什么反应？",
+  "options": [
+   "立刻生气了",
+   "没有任何反应",
+   "惊讶地抬起头，脸一下子红了"
+  ],
+  "correct_answer": "惊讶地抬起头，脸一下子红了",
+  "explanation": "1-р догол мөр.",
+  "order_index": 24,
+  "id": "fazhan-zhongji2-l01-q24",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "小男孩儿送的花儿是从哪儿来的？",
+  "options": [
+   "他捡来的",
+   "老师给他的",
+   "他买的"
+  ],
+  "correct_answer": "他捡来的",
+  "explanation": "3-р догол мөр: 原来是捡的啊！",
+  "order_index": 25,
+  "id": "fazhan-zhongji2-l01-q25",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "最初是大学毕业那一年，她是怎样开始新生活的？",
+  "options": [
+   "没有搬家",
+   "买了很多新东西",
+   "把许多旧东西、旧书全都扔掉"
+  ],
+  "correct_answer": "把许多旧东西、旧书全都扔掉",
+  "explanation": "7-р догол мөр.",
+  "order_index": 26,
+  "id": "fazhan-zhongji2-l01-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "她是怎样总结自己的\"减法生活\"的？",
+  "options": [
+   "多买东西让生活更丰富",
+   "经常和朋友聚会",
+   "丢掉生命以外可有可无的东西，不被欲望左右"
+  ],
+  "correct_answer": "丢掉生命以外可有可无的东西，不被欲望左右",
+  "explanation": "8-р догол мөр.",
+  "order_index": 27,
+  "id": "fazhan-zhongji2-l01-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "工作中，她是怎样处理与同事的关系的？",
+  "options": [
+   "和同事大吵一架",
+   "立刻去找老板解释",
+   "同事怀疑她讲坏话，她只是一笑，不去解释"
+  ],
+  "correct_answer": "同事怀疑她讲坏话，她只是一笑，不去解释",
+  "explanation": "11-р догол мөр.",
+  "order_index": 28,
+  "id": "fazhan-zhongji2-l01-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "时间长了，她都失去了什么？",
+  "options": [
+   "家人的爱护、爱情的滋润、朋友的信任、同事的协作",
+   "什么都没失去",
+   "只失去了工作"
+  ],
+  "correct_answer": "家人的爱护、爱情的滋润、朋友的信任、同事的协作",
+  "explanation": "12-р догол мөр.",
+  "order_index": 29,
+  "id": "fazhan-zhongji2-l01-q29",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 就看 / 下面的工作 / 你的 / 了",
+  "options": [
+   "下面的工作就看你的了",
+   "下面的工作你的就看了",
+   "就看下面的工作你的了"
+  ],
+  "correct_answer": "下面的工作就看你的了",
+  "explanation": "（就/全）看N的了/吧: S + 就 + 看 + N + 的 + 了.",
+  "order_index": 30,
+  "id": "fazhan-zhongji2-l01-q30",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 爱怎么 / 他 / 就怎么 / 认为 / 认为",
+  "options": [
+   "他爱怎么认为就怎么认为",
+   "他认为爱怎么就怎么认为",
+   "爱他怎么认为就怎么认为"
+  ],
+  "correct_answer": "他爱怎么认为就怎么认为",
+  "explanation": "S + 爱 + 怎么V + 就 + 怎么V.",
+  "order_index": 31,
+  "id": "fazhan-zhongji2-l01-q31",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 可有可无 / 丢掉 / 生命以外 / 的东西 / 就是",
+  "options": [
+   "减法生活可有可无就是丢掉生命以外的东西",
+   "减法生活就是丢掉生命以外可有可无的东西",
+   "减法生活丢掉就是可有可无生命以外的东西"
+  ],
+  "correct_answer": "减法生活就是丢掉生命以外可有可无的东西",
+  "explanation": "就是 + V + O(以外可有可无的东西) дараалал.",
+  "order_index": 32,
+  "id": "fazhan-zhongji2-l01-q32",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "hard"
+ }
+]
